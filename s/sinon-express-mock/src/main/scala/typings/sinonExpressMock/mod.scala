@@ -5,22 +5,24 @@ import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import typings.sinon.mod.SinonStub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-express-mock", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object mockReq extends js.Object {
+  object mockReq {
     
+    @JSImport("sinon-express-mock", "mockReq")
+    @js.native
     def apply[T /* <: js.Object */](): MockReq with T with (Request_[ParamsDictionary, _, _, Query]) = js.native
+    @JSImport("sinon-express-mock", "mockReq")
+    @js.native
     def apply[T /* <: js.Object */](options: T): MockReq with T with (Request_[ParamsDictionary, _, _, Query]) = js.native
     
     @js.native
-    trait MockReq extends js.Object {
+    trait MockReq extends StObject {
       
       // Methods
       def accepts(
@@ -82,14 +84,17 @@ object mod extends js.Object {
     }
   }
   
-  @js.native
-  object mockRes extends js.Object {
+  object mockRes {
     
+    @JSImport("sinon-express-mock", "mockRes")
+    @js.native
     def apply[T /* <: js.Object */](): MockRes with T with Response_[_] = js.native
+    @JSImport("sinon-express-mock", "mockRes")
+    @js.native
     def apply[T /* <: js.Object */](options: T): MockRes with T with Response_[_] = js.native
     
     @js.native
-    trait MockRes extends js.Object {
+    trait MockRes extends StObject {
       
       // Methods
       def append(

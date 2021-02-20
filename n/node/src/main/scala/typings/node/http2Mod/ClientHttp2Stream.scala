@@ -4,6 +4,7 @@ import typings.node.nodeStrings.continue
 import typings.node.nodeStrings.headers
 import typings.node.nodeStrings.push
 import typings.node.nodeStrings.response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

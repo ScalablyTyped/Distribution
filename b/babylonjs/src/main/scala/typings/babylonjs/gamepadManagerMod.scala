@@ -3,20 +3,20 @@ package typings.babylonjs
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gamepads/gamepadManager", JSImport.Namespace)
-@js.native
-object gamepadManagerMod extends js.Object {
+object gamepadManagerMod {
   
+  @JSImport("babylonjs/Gamepads/gamepadManager", "GamepadManager")
   @js.native
   /**
     * Initializes the gamepad manager
     * @param _scene BabylonJS scene
     */
-  class GamepadManager () extends js.Object {
+  class GamepadManager () extends StObject {
     def this(_scene: Scene) = this()
     
     var _addNewGamepad: js.Any = js.native

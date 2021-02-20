@@ -1,5 +1,6 @@
 package typings.reactInspector.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,33 +29,21 @@ object ObjectInspectorProps {
   }
   
   @scala.inline
-  implicit class ObjectInspectorPropsOps[Self <: ObjectInspectorProps] (val x: Self) extends AnyVal {
+  implicit class ObjectInspectorPropsMutableBuilder[Self <: ObjectInspectorProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShowNonenumerable(value: Boolean): Self = StObject.set(x, "showNonenumerable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowNonenumerableUndefined: Self = StObject.set(x, "showNonenumerable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSortObjectKeys(value: Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])): Self = StObject.set(x, "sortObjectKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNonenumerable(value: Boolean): Self = this.set("showNonenumerable", value.asInstanceOf[js.Any])
+    def setSortObjectKeysFunction2(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sortObjectKeys", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteShowNonenumerable: Self = this.set("showNonenumerable", js.undefined)
-    
-    @scala.inline
-    def setSortObjectKeysFunction2(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = this.set("sortObjectKeys", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSortObjectKeys(value: Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])): Self = this.set("sortObjectKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortObjectKeys: Self = this.set("sortObjectKeys", js.undefined)
+    def setSortObjectKeysUndefined: Self = StObject.set(x, "sortObjectKeys", js.undefined)
   }
 }

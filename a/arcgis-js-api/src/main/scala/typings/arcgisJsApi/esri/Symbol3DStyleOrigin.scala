@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,33 +45,21 @@ object Symbol3DStyleOrigin {
   }
   
   @scala.inline
-  implicit class Symbol3DStyleOriginOps[Self <: Symbol3DStyleOrigin] (val x: Self) extends AnyVal {
+  implicit class Symbol3DStyleOriginMutableBuilder[Self <: Symbol3DStyleOrigin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleName(value: String): Self = this.set("styleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleName: Self = this.set("styleName", js.undefined)
-    
-    @scala.inline
-    def setStyleUrl(value: String): Self = this.set("styleUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleUrl: Self = this.set("styleUrl", js.undefined)
+    def setStyleUrlUndefined: Self = StObject.set(x, "styleUrl", js.undefined)
   }
 }

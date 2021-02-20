@@ -1,11 +1,12 @@
 package typings.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INxCell extends js.Object {
+trait INxCell extends StObject {
   
   /**
     * Attribute dimensions values.
@@ -113,60 +114,48 @@ object INxCell {
   }
   
   @scala.inline
-  implicit class INxCellOps[Self <: INxCell] (val x: Self) extends AnyVal {
+  implicit class INxCellMutableBuilder[Self <: INxCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQElemNumber(value: Double): Self = StObject.set(x, "qElemNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttrDims(value: INxAttributeDimValues): Self = this.set("qAttrDims", value.asInstanceOf[js.Any])
+    def setQFrequency(value: String): Self = StObject.set(x, "qFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttrExps(value: INxAttributeExpressionValues): Self = this.set("qAttrExps", value.asInstanceOf[js.Any])
+    def setQHighlightRanges(value: INxHighlightRanges): Self = StObject.set(x, "qHighlightRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQElemNumber(value: Double): Self = this.set("qElemNumber", value.asInstanceOf[js.Any])
+    def setQIsEmpty(value: Boolean): Self = StObject.set(x, "qIsEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFrequency(value: String): Self = this.set("qFrequency", value.asInstanceOf[js.Any])
+    def setQIsNull(value: Boolean): Self = StObject.set(x, "qIsNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHighlightRanges(value: INxHighlightRanges): Self = this.set("qHighlightRanges", value.asInstanceOf[js.Any])
+    def setQIsOtherCell(value: Boolean): Self = StObject.set(x, "qIsOtherCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsEmpty(value: Boolean): Self = this.set("qIsEmpty", value.asInstanceOf[js.Any])
+    def setQIsTotalCell(value: Boolean): Self = StObject.set(x, "qIsTotalCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsNull(value: Boolean): Self = this.set("qIsNull", value.asInstanceOf[js.Any])
+    def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsOtherCell(value: Boolean): Self = this.set("qIsOtherCell", value.asInstanceOf[js.Any])
+    def setQNumUndefined: Self = StObject.set(x, "qNum", js.undefined)
     
     @scala.inline
-    def setQIsTotalCell(value: Boolean): Self = this.set("qIsTotalCell", value.asInstanceOf[js.Any])
+    def setQState(value: StateType): Self = StObject.set(x, "qState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQState(value: StateType): Self = this.set("qState", value.asInstanceOf[js.Any])
+    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNum(value: Double): Self = this.set("qNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQNum: Self = this.set("qNum", js.undefined)
-    
-    @scala.inline
-    def setQText(value: String): Self = this.set("qText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQText: Self = this.set("qText", js.undefined)
+    def setQTextUndefined: Self = StObject.set(x, "qText", js.undefined)
   }
 }

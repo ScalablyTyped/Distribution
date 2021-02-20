@@ -11,16 +11,16 @@ import typings.agGrid.gridApiMod.GridApi
 import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
 import typings.agGrid.rowNodeMod.RowNode
 import typings.agGrid.selectionControllerMod.SelectionController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/clientSide/clientSideNodeManager", JSImport.Namespace)
-@js.native
-object clientSideNodeManagerMod extends js.Object {
+object clientSideNodeManagerMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/clientSide/clientSideNodeManager", "ClientSideNodeManager")
   @js.native
-  class ClientSideNodeManager protected () extends js.Object {
+  class ClientSideNodeManager protected () extends StObject {
     def this(
       rootNode: RowNode,
       gridOptionsWrapper: GridOptionsWrapper,
@@ -95,11 +95,22 @@ object clientSideNodeManagerMod extends js.Object {
     /* private */ def updatedRowNode(rowNode: js.Any, data: js.Any, update: js.Any): js.Any = js.native
   }
   /* static members */
-  @js.native
-  object ClientSideNodeManager extends js.Object {
+  object ClientSideNodeManager {
     
-    var ROOT_NODE_ID: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rowModels/clientSide/clientSideNodeManager", "ClientSideNodeManager")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var TOP_LEVEL: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rowModels/clientSide/clientSideNodeManager", "ClientSideNodeManager.ROOT_NODE_ID")
+    @js.native
+    def ROOT_NODE_ID: js.Any = js.native
+    @scala.inline
+    def ROOT_NODE_ID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_NODE_ID")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ag-grid/dist/lib/rowModels/clientSide/clientSideNodeManager", "ClientSideNodeManager.TOP_LEVEL")
+    @js.native
+    def TOP_LEVEL: js.Any = js.native
+    @scala.inline
+    def TOP_LEVEL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_LEVEL")(x.asInstanceOf[js.Any])
   }
 }

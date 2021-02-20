@@ -3,14 +3,14 @@ package typings.rxjs
 import org.scalablytyped.runtime.Instantiable2
 import typings.rxjs.actionMod.Action
 import typings.rxjs.typesMod.SchedulerLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/Scheduler", JSImport.Namespace)
-@js.native
-object schedulerMod extends js.Object {
+object schedulerMod {
   
+  @JSImport("rxjs/internal/Scheduler", "Scheduler")
   @js.native
   class Scheduler protected () extends SchedulerLike {
     def this(SchedulerAction: Instantiable2[
@@ -38,14 +38,15 @@ object schedulerMod extends js.Object {
     var SchedulerAction: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Scheduler extends js.Object {
+  object Scheduler {
     
     /**
       * Note: the extra arrow function wrapper is to make testing by overriding
       * Date.now easier.
       * @nocollapse
       */
+    @JSImport("rxjs/internal/Scheduler", "Scheduler.now")
+    @js.native
     def now(): Double = js.native
   }
 }

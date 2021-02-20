@@ -4,13 +4,14 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataproc/v1beta2", "dataproc_v1beta2.Resource$Projects$Regions$Operations")
 @js.native
-class ResourceProjectsRegionsOperations protected () extends js.Object {
+class ResourceProjectsRegionsOperations protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   /**

@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.util
 
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,72 +75,60 @@ object IPoint {
   }
   
   @scala.inline
-  implicit class IPointOps[Self <: IPoint] (val x: Self) extends AnyVal {
+  implicit class IPointMutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone_(value: () => IPoint): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopy(value: () => IPoint): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: () => IPoint): Self = this.set("clone", js.Any.fromFunction0(value))
+    def setCopyFrom(value: /* point */ js.UndefOr[js.Any] => IPoint): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClone: Self = this.set("clone", js.undefined)
+    def setCopyFromUndefined: Self = StObject.set(x, "copyFrom", js.undefined)
     
     @scala.inline
-    def setCopy(value: () => IPoint): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
     @scala.inline
-    def deleteCopy: Self = this.set("copy", js.undefined)
+    def setEquals_(value: /* point */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopyFrom(value: /* point */ js.UndefOr[js.Any] => IPoint): Self = this.set("copyFrom", js.Any.fromFunction1(value))
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def deleteCopyFrom: Self = this.set("copyFrom", js.undefined)
+    def setIsCloseTo(value: (/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "isCloseTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEquals(value: /* point */ js.UndefOr[js.Any] => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setIsCloseToUndefined: Self = StObject.set(x, "isCloseTo", js.undefined)
     
     @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setIsWithin(value: () => Boolean): Self = StObject.set(x, "isWithin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsCloseTo(value: (/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean): Self = this.set("isCloseTo", js.Any.fromFunction2(value))
+    def setIsWithinUndefined: Self = StObject.set(x, "isWithin", js.undefined)
     
     @scala.inline
-    def deleteIsCloseTo: Self = this.set("isCloseTo", js.undefined)
+    def setRoundedEquals(value: /* point */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "roundedEquals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsWithin(value: () => Boolean): Self = this.set("isWithin", js.Any.fromFunction0(value))
+    def setRoundedEqualsUndefined: Self = StObject.set(x, "roundedEquals", js.undefined)
     
     @scala.inline
-    def deleteIsWithin: Self = this.set("isWithin", js.undefined)
+    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRoundedEquals(value: /* point */ js.UndefOr[js.Any] => Boolean): Self = this.set("roundedEquals", js.Any.fromFunction1(value))
+    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     
     @scala.inline
-    def deleteRoundedEquals: Self = this.set("roundedEquals", js.undefined)
+    def setTranslate(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToString: Self = this.set("toString", js.undefined)
-    
-    @scala.inline
-    def setTranslate(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean): Self = this.set("translate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
   }
 }

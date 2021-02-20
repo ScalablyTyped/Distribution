@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * properties of the current business app in Customer Engagement.
   */
 @js.native
-trait AppProperties extends js.Object {
+trait AppProperties extends StObject {
   
   var appId: js.UndefOr[String] = js.native
   
@@ -35,66 +36,54 @@ object AppProperties {
   }
   
   @scala.inline
-  implicit class AppPropertiesOps[Self <: AppProperties] (val x: Self) extends AnyVal {
+  implicit class AppPropertiesMutableBuilder[Self <: AppProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniqueName(value: String): Self = this.set("uniqueName", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteUniqueName: Self = this.set("uniqueName", js.undefined)
+    def setWebResourceId(value: String): Self = StObject.set(x, "webResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setWebResourceIdUndefined: Self = StObject.set(x, "webResourceId", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setWebResourceName(value: String): Self = StObject.set(x, "webResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebResourceId(value: String): Self = this.set("webResourceId", value.asInstanceOf[js.Any])
+    def setWebResourceNameUndefined: Self = StObject.set(x, "webResourceName", js.undefined)
     
     @scala.inline
-    def deleteWebResourceId: Self = this.set("webResourceId", js.undefined)
+    def setWelcomePageId(value: String): Self = StObject.set(x, "welcomePageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebResourceName(value: String): Self = this.set("webResourceName", value.asInstanceOf[js.Any])
+    def setWelcomePageIdUndefined: Self = StObject.set(x, "welcomePageId", js.undefined)
     
     @scala.inline
-    def deleteWebResourceName: Self = this.set("webResourceName", js.undefined)
+    def setWelcomePageName(value: String): Self = StObject.set(x, "welcomePageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWelcomePageId(value: String): Self = this.set("welcomePageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWelcomePageId: Self = this.set("welcomePageId", js.undefined)
-    
-    @scala.inline
-    def setWelcomePageName(value: String): Self = this.set("welcomePageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWelcomePageName: Self = this.set("welcomePageName", js.undefined)
+    def setWelcomePageNameUndefined: Self = StObject.set(x, "welcomePageName", js.undefined)
   }
 }

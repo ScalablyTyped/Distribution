@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextReadingDirection extends js.Object
+sealed trait TextReadingDirection extends StObject
 @JSGlobal("__esri.CIM.TextReadingDirection")
 @js.native
-object TextReadingDirection extends js.Object {
+object TextReadingDirection extends StObject {
   
   /**
     * Text is drawn from left-to-right.

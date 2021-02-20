@@ -1,11 +1,12 @@
 package typings.openlayers.mod.olx.interaction
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoubleClickZoomOptions extends js.Object {
+trait DoubleClickZoomOptions extends StObject {
   
   var delta: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object DoubleClickZoomOptions {
   }
   
   @scala.inline
-  implicit class DoubleClickZoomOptionsOps[Self <: DoubleClickZoomOptions] (val x: Self) extends AnyVal {
+  implicit class DoubleClickZoomOptionsMutableBuilder[Self <: DoubleClickZoomOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelta: Self = this.set("delta", js.undefined)
-    
-    @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

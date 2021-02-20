@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Core
 
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the definition of a face detection video effect. */
 @js.native
-trait FaceDetectionEffectDefinition extends js.Object {
+trait FaceDetectionEffectDefinition extends StObject {
   
   /** Gets a string containing the activatable class ID of the face detection effect definition. */
   var activatableClassId: String = js.native
@@ -35,30 +36,18 @@ object FaceDetectionEffectDefinition {
   }
   
   @scala.inline
-  implicit class FaceDetectionEffectDefinitionOps[Self <: FaceDetectionEffectDefinition] (val x: Self) extends AnyVal {
+  implicit class FaceDetectionEffectDefinitionMutableBuilder[Self <: FaceDetectionEffectDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectionMode(value: FaceDetectionMode): Self = StObject.set(x, "detectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatableClassId(value: String): Self = this.set("activatableClassId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetectionMode(value: FaceDetectionMode): Self = this.set("detectionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSynchronousDetectionEnabled(value: Boolean): Self = this.set("synchronousDetectionEnabled", value.asInstanceOf[js.Any])
+    def setSynchronousDetectionEnabled(value: Boolean): Self = StObject.set(x, "synchronousDetectionEnabled", value.asInstanceOf[js.Any])
   }
 }

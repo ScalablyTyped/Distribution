@@ -1,11 +1,12 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExecuteOptions extends js.Object {
+trait IExecuteOptions extends StObject {
   
   /**
     * Whether to allow stdin requests.
@@ -47,48 +48,36 @@ object IExecuteOptions {
   }
   
   @scala.inline
-  implicit class IExecuteOptionsOps[Self <: IExecuteOptions] (val x: Self) extends AnyVal {
+  implicit class IExecuteOptionsMutableBuilder[Self <: IExecuteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_stdin(value: Boolean): Self = StObject.set(x, "allow_stdin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_stdinUndefined: Self = StObject.set(x, "allow_stdin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_stdin(value: Boolean): Self = this.set("allow_stdin", value.asInstanceOf[js.Any])
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def deleteAllow_stdin: Self = this.set("allow_stdin", js.undefined)
+    def setStop_on_error(value: Boolean): Self = StObject.set(x, "stop_on_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    def setStop_on_errorUndefined: Self = StObject.set(x, "stop_on_error", js.undefined)
     
     @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setStore_history(value: Boolean): Self = StObject.set(x, "store_history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop_on_error(value: Boolean): Self = this.set("stop_on_error", value.asInstanceOf[js.Any])
+    def setStore_historyUndefined: Self = StObject.set(x, "store_history", js.undefined)
     
     @scala.inline
-    def deleteStop_on_error: Self = this.set("stop_on_error", js.undefined)
+    def setUser_expressions(value: js.Object): Self = StObject.set(x, "user_expressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStore_history(value: Boolean): Self = this.set("store_history", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStore_history: Self = this.set("store_history", js.undefined)
-    
-    @scala.inline
-    def setUser_expressions(value: js.Object): Self = this.set("user_expressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_expressions: Self = this.set("user_expressions", js.undefined)
+    def setUser_expressionsUndefined: Self = StObject.set(x, "user_expressions", js.undefined)
   }
 }

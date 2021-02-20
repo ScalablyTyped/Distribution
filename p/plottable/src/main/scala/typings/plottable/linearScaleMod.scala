@@ -1,14 +1,14 @@
 package typings.plottable
 
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/scales/linearScale", JSImport.Namespace)
-@js.native
-object linearScaleMod extends js.Object {
+object linearScaleMod {
   
+  @JSImport("plottable/build/src/scales/linearScale", "Linear")
   @js.native
   /**
     * @constructor

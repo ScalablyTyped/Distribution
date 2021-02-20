@@ -1,5 +1,6 @@
 package typings.officeJs.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait ListItemLoadOptions extends js.Object {
+trait ListItemLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -52,42 +53,30 @@ object ListItemLoadOptions {
   }
   
   @scala.inline
-  implicit class ListItemLoadOptionsOps[Self <: ListItemLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ListItemLoadOptionsMutableBuilder[Self <: ListItemLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setListString(value: Boolean): Self = StObject.set(x, "listString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Boolean): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setListStringUndefined: Self = StObject.set(x, "listString", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setSiblingIndex(value: Boolean): Self = StObject.set(x, "siblingIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListString(value: Boolean): Self = this.set("listString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListString: Self = this.set("listString", js.undefined)
-    
-    @scala.inline
-    def setSiblingIndex(value: Boolean): Self = this.set("siblingIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiblingIndex: Self = this.set("siblingIndex", js.undefined)
+    def setSiblingIndexUndefined: Self = StObject.set(x, "siblingIndex", js.undefined)
   }
 }

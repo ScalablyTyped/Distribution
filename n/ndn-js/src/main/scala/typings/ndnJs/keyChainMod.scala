@@ -1,23 +1,23 @@
 package typings.ndnJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.ndnJs.dataMod.Data
 import typings.ndnJs.interestMod.Interest
 import typings.ndnJs.keyChainMod.SigningInfo.SignerType
 import typings.ndnJs.nameMod.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ndn-js/key-chain", JSImport.Namespace)
-@js.native
-object keyChainMod extends js.Object {
+object keyChainMod {
   
+  @JSImport("ndn-js/key-chain", "CertificateV2")
   @js.native
-  class CertificateV2 () extends js.Object
+  class CertificateV2 () extends StObject
   
+  @JSImport("ndn-js/key-chain", "KeyChain")
   @js.native
-  class KeyChain () extends js.Object {
+  class KeyChain () extends StObject {
     def this(pibLocator: String, tpmLocator: String) = this()
     def this(pibLocator: String, tpmLocator: String, allowReset: Boolean) = this()
     
@@ -183,26 +183,32 @@ object keyChainMod extends js.Object {
     def signWithSha256(packet: Interest): Unit = js.native
   }
   /* static members */
-  @js.native
-  object KeyChain extends js.Object {
+  object KeyChain {
     
+    @JSImport("ndn-js/key-chain", "KeyChain.getDefaultKeyParams")
+    @js.native
     def getDefaultKeyParams(): KeyParams = js.native
   }
   
+  @JSImport("ndn-js/key-chain", "KeyParams")
   @js.native
-  class KeyParams () extends js.Object
+  class KeyParams () extends StObject
   
+  @JSImport("ndn-js/key-chain", "Pib")
   @js.native
-  class Pib () extends js.Object
+  class Pib () extends StObject
   
+  @JSImport("ndn-js/key-chain", "PibIdentity")
   @js.native
-  class PibIdentity () extends js.Object
+  class PibIdentity () extends StObject
   
+  @JSImport("ndn-js/key-chain", "PibKey")
   @js.native
-  class PibKey () extends js.Object
+  class PibKey () extends StObject
   
+  @JSImport("ndn-js/key-chain", "SigningInfo")
   @js.native
-  class SigningInfo () extends js.Object {
+  class SigningInfo () extends StObject {
     def this(arg: String) = this()
     def this(arg: PibIdentity) = this()
     def this(arg: PibKey) = this()
@@ -213,44 +219,40 @@ object keyChainMod extends js.Object {
     
     def getSignerType(): SignerType = js.native
   }
-  @js.native
-  object SigningInfo extends js.Object {
+  object SigningInfo {
     
     @js.native
-    sealed trait SignerType extends js.Object
+    sealed trait SignerType extends StObject
+    @JSImport("ndn-js/key-chain", "SigningInfo.SignerType")
     @js.native
-    object SignerType extends js.Object {
+    object SignerType extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[SignerType with Double] = js.native
       
       @js.native
       sealed trait CERT extends SignerType
-      /* 3 */ @js.native
-      object CERT extends TopLevel[CERT with Double]
+      /* 3 */ val CERT: typings.ndnJs.keyChainMod.SigningInfo.SignerType.CERT with Double = js.native
       
       @js.native
       sealed trait ID extends SignerType
-      /* 1 */ @js.native
-      object ID extends TopLevel[ID with Double]
+      /* 1 */ val ID: typings.ndnJs.keyChainMod.SigningInfo.SignerType.ID with Double = js.native
       
       @js.native
       sealed trait KEY extends SignerType
-      /* 2 */ @js.native
-      object KEY extends TopLevel[KEY with Double]
+      /* 2 */ val KEY: typings.ndnJs.keyChainMod.SigningInfo.SignerType.KEY with Double = js.native
       
       @js.native
       sealed trait NULL extends SignerType
-      /* 0 */ @js.native
-      object NULL extends TopLevel[NULL with Double]
+      /* 0 */ val NULL: typings.ndnJs.keyChainMod.SigningInfo.SignerType.NULL with Double = js.native
       
       @js.native
       sealed trait SHA256 extends SignerType
-      /* 4 */ @js.native
-      object SHA256 extends TopLevel[SHA256 with Double]
+      /* 4 */ val SHA256: typings.ndnJs.keyChainMod.SigningInfo.SignerType.SHA256 with Double = js.native
     }
   }
   
+  @JSImport("ndn-js/key-chain", "Tpm")
   @js.native
-  class Tpm () extends js.Object
+  class Tpm () extends StObject
 }

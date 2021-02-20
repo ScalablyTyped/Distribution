@@ -1,12 +1,13 @@
 package typings.grommet.anon
 
 import typings.grommet.utilsMod.ColorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Style extends js.Object {
+trait Style extends StObject {
   
   var color: js.UndefOr[ColorType] = js.native
   
@@ -25,42 +26,30 @@ object Style {
   }
   
   @scala.inline
-  implicit class StyleOps[Self <: Style] (val x: Self) extends AnyVal {
+  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSide(value: String): Self = this.set("side", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSide: Self = this.set("side", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

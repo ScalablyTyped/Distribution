@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,30 +70,18 @@ object XDataSource {
   }
   
   @scala.inline
-  implicit class XDataSourceOps[Self <: XDataSource] (val x: Self) extends AnyVal {
+  implicit class XDataSourceMutableBuilder[Self <: XDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetConnection(value: (String, String) => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLoginTimeout(value: () => Double): Self = StObject.set(x, "getLoginTimeout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoginTimeout(value: Double): Self = StObject.set(x, "LoginTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginTimeout(value: Double): Self = this.set("LoginTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetConnection(value: (String, String) => XConnection): Self = this.set("getConnection", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetLoginTimeout(value: () => Double): Self = this.set("getLoginTimeout", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetLoginTimeout(value: Double => Unit): Self = this.set("setLoginTimeout", js.Any.fromFunction1(value))
+    def setSetLoginTimeout(value: Double => Unit): Self = StObject.set(x, "setLoginTimeout", js.Any.fromFunction1(value))
   }
 }

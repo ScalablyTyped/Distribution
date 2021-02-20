@@ -1,11 +1,12 @@
 package typings.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragOptions extends js.Object {
+trait DragOptions extends StObject {
   
   var containment: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object DragOptions {
   }
   
   @scala.inline
-  implicit class DragOptionsOps[Self <: DragOptions] (val x: Self) extends AnyVal {
+  implicit class DragOptionsMutableBuilder[Self <: DragOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainment(value: String): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainment(value: String): Self = this.set("containment", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteContainment: Self = this.set("containment", js.undefined)
+    def setDrag(value: /* params */ DragEventCallbackOptions => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setStart(value: /* params */ DragEventCallbackOptions => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrag(value: /* params */ DragEventCallbackOptions => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setStop(value: /* params */ DragEventCallbackOptions => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStart(value: /* params */ DragEventCallbackOptions => Unit): Self = this.set("start", js.Any.fromFunction1(value))
+    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop(value: /* params */ DragEventCallbackOptions => Unit): Self = this.set("stop", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStop: Self = this.set("stop", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Alt
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Key
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Language
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListingsResource extends js.Object {
+trait ListingsResource extends StObject {
   
   /** Deletes a localized store listing. */
   def delete(): Request[Unit] = js.native

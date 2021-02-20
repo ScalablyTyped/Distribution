@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IValueListItemsWithPermissions extends js.Object {
+trait IValueListItemsWithPermissions extends StObject {
   
   val Permissions: IAccessControlLists = js.native
   
@@ -20,24 +21,12 @@ object IValueListItemsWithPermissions {
   }
   
   @scala.inline
-  implicit class IValueListItemsWithPermissionsOps[Self <: IValueListItemsWithPermissions] (val x: Self) extends AnyVal {
+  implicit class IValueListItemsWithPermissionsMutableBuilder[Self <: IValueListItemsWithPermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermissions(value: IAccessControlLists): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPermissions(value: IAccessControlLists): Self = this.set("Permissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueListItems(value: IValueListItems): Self = this.set("ValueListItems", value.asInstanceOf[js.Any])
+    def setValueListItems(value: IValueListItems): Self = StObject.set(x, "ValueListItems", value.asInstanceOf[js.Any])
   }
 }

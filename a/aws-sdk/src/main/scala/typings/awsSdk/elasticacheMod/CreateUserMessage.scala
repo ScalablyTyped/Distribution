@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateUserMessage extends js.Object {
+trait CreateUserMessage extends StObject {
   
   /**
     * Access permissions string used for this user account.
@@ -46,45 +47,33 @@ object CreateUserMessage {
   }
   
   @scala.inline
-  implicit class CreateUserMessageOps[Self <: CreateUserMessage] (val x: Self) extends AnyVal {
+  implicit class CreateUserMessageMutableBuilder[Self <: CreateUserMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessString(value: AccessString): Self = StObject.set(x, "AccessString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoPasswordRequired(value: BooleanOptional): Self = StObject.set(x, "NoPasswordRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessString(value: AccessString): Self = this.set("AccessString", value.asInstanceOf[js.Any])
+    def setNoPasswordRequiredUndefined: Self = StObject.set(x, "NoPasswordRequired", js.undefined)
     
     @scala.inline
-    def setEngine(value: EngineType): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setPasswords(value: PasswordListInput): Self = StObject.set(x, "Passwords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: UserId): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    def setPasswordsUndefined: Self = StObject.set(x, "Passwords", js.undefined)
     
     @scala.inline
-    def setUserName(value: UserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setPasswordsVarargs(value: String*): Self = StObject.set(x, "Passwords", js.Array(value :_*))
     
     @scala.inline
-    def setNoPasswordRequired(value: BooleanOptional): Self = this.set("NoPasswordRequired", value.asInstanceOf[js.Any])
+    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoPasswordRequired: Self = this.set("NoPasswordRequired", js.undefined)
-    
-    @scala.inline
-    def setPasswordsVarargs(value: String*): Self = this.set("Passwords", js.Array(value :_*))
-    
-    @scala.inline
-    def setPasswords(value: PasswordListInput): Self = this.set("Passwords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswords: Self = this.set("Passwords", js.undefined)
+    def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,12 +14,13 @@ import typings.bootstrapFilestyle.bootstrapFilestyleStrings.input
 import typings.bootstrapFilestyle.bootstrapFilestyleStrings.placeholder
 import typings.bootstrapFilestyle.bootstrapFilestyleStrings.pushNameFiles
 import typings.bootstrapFilestyle.bootstrapFilestyleStrings.size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def filestyle(): JQuery = js.native
   def filestyle(options: FilestyleOptions): JQuery = js.native

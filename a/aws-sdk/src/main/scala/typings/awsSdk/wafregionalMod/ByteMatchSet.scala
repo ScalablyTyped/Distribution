@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ByteMatchSet extends js.Object {
+trait ByteMatchSet extends StObject {
   
   /**
     * The ByteMatchSetId for a ByteMatchSet. You use ByteMatchSetId to get information about a ByteMatchSet (see GetByteMatchSet), update a ByteMatchSet (see UpdateByteMatchSet), insert a ByteMatchSet into a Rule or delete one from a Rule (see UpdateRule), and delete a ByteMatchSet from AWS WAF (see DeleteByteMatchSet).  ByteMatchSetId is returned by CreateByteMatchSet and by ListByteMatchSets.
@@ -31,33 +32,21 @@ object ByteMatchSet {
   }
   
   @scala.inline
-  implicit class ByteMatchSetOps[Self <: ByteMatchSet] (val x: Self) extends AnyVal {
+  implicit class ByteMatchSetMutableBuilder[Self <: ByteMatchSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByteMatchTuples(value: ByteMatchTuples): Self = StObject.set(x, "ByteMatchTuples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByteMatchTuplesVarargs(value: ByteMatchTuple*): Self = StObject.set(x, "ByteMatchTuples", js.Array(value :_*))
     
     @scala.inline
-    def setByteMatchSetId(value: ResourceId): Self = this.set("ByteMatchSetId", value.asInstanceOf[js.Any])
+    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteMatchTuplesVarargs(value: ByteMatchTuple*): Self = this.set("ByteMatchTuples", js.Array(value :_*))
-    
-    @scala.inline
-    def setByteMatchTuples(value: ByteMatchTuples): Self = this.set("ByteMatchTuples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

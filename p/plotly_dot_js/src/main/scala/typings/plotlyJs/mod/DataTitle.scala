@@ -8,12 +8,13 @@ import typings.plotlyJs.plotlyJsStrings.`middle center`
 import typings.plotlyJs.plotlyJsStrings.`top center`
 import typings.plotlyJs.plotlyJsStrings.`top left`
 import typings.plotlyJs.plotlyJsStrings.`top right`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTitle extends js.Object {
+trait DataTitle extends StObject {
   
   var font: PartialFont = js.native
   
@@ -37,32 +38,20 @@ object DataTitle {
   }
   
   @scala.inline
-  implicit class DataTitleOps[Self <: DataTitle] (val x: Self) extends AnyVal {
+  implicit class DataTitleMutableBuilder[Self <: DataTitle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFont(value: PartialFont): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPosition(
       value: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
-    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandoff(value: Double): Self = this.set("standoff", value.asInstanceOf[js.Any])
+    def setStandoff(value: Double): Self = StObject.set(x, "standoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,7 @@ import typings.node.Buffer
 import typings.node.streamMod.Readable
 import typings.node.urlMod.URL_
 import typings.podium.mod.Podium
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.System.RemoteSystems
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RemoteSystemAccessStatus extends js.Object
+sealed trait RemoteSystemAccessStatus extends StObject
 /** Contains the values that describe an app's access to use the Remote Systems feature. */
 @JSGlobal("Windows.System.RemoteSystems.RemoteSystemAccessStatus")
 @js.native
-object RemoteSystemAccessStatus extends js.Object {
+object RemoteSystemAccessStatus extends StObject {
   
   /** Access is allowed */
   @js.native

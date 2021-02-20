@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanaryScheduleInput extends js.Object {
+trait CanaryScheduleInput extends StObject {
   
   /**
     * How long, in seconds, for the canary to continue making regular runs according to the schedule in the Expression value. If you specify 0, the canary continues making runs until you stop it. If you omit this field, the default of 0 is used.
@@ -26,27 +27,15 @@ object CanaryScheduleInput {
   }
   
   @scala.inline
-  implicit class CanaryScheduleInputOps[Self <: CanaryScheduleInput] (val x: Self) extends AnyVal {
+  implicit class CanaryScheduleInputMutableBuilder[Self <: CanaryScheduleInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationInSeconds(value: MaxOneYearInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpression(value: String): Self = this.set("Expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDurationInSeconds(value: MaxOneYearInSeconds): Self = this.set("DurationInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDurationInSeconds: Self = this.set("DurationInSeconds", js.undefined)
+    def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
   }
 }

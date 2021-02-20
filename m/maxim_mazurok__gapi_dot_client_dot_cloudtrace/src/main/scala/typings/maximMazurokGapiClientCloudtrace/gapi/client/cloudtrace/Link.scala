@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Link extends js.Object {
+trait Link extends StObject {
   
   /** A set of attributes on the link. You have have up to 32 attributes per link. */
   var attributes: js.UndefOr[Attributes] = js.native
@@ -28,42 +29,30 @@ object Link {
   }
   
   @scala.inline
-  implicit class LinkOps[Self <: Link] (val x: Self) extends AnyVal {
+  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpanId(value: String): Self = this.set("spanId", value.asInstanceOf[js.Any])
+    def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
     
     @scala.inline
-    def deleteSpanId: Self = this.set("spanId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraceId(value: String): Self = this.set("traceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceId: Self = this.set("traceId", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

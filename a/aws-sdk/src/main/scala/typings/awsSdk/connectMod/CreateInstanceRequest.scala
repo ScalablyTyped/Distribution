@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateInstanceRequest extends js.Object {
+trait CreateInstanceRequest extends StObject {
   
   /**
     * The idempotency token.
@@ -50,45 +51,33 @@ object CreateInstanceRequest {
   }
   
   @scala.inline
-  implicit class CreateInstanceRequestOps[Self <: CreateInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class CreateInstanceRequestMutableBuilder[Self <: CreateInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityManagementType(value: DirectoryType): Self = this.set("IdentityManagementType", value.asInstanceOf[js.Any])
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def setInboundCallsEnabled(value: InboundCallsEnabled): Self = this.set("InboundCallsEnabled", value.asInstanceOf[js.Any])
+    def setIdentityManagementType(value: DirectoryType): Self = StObject.set(x, "IdentityManagementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutboundCallsEnabled(value: OutboundCallsEnabled): Self = this.set("OutboundCallsEnabled", value.asInstanceOf[js.Any])
+    def setInboundCallsEnabled(value: InboundCallsEnabled): Self = StObject.set(x, "InboundCallsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setInstanceAlias(value: DirectoryAlias): Self = StObject.set(x, "InstanceAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setInstanceAliasUndefined: Self = StObject.set(x, "InstanceAlias", js.undefined)
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
-    
-    @scala.inline
-    def setInstanceAlias(value: DirectoryAlias): Self = this.set("InstanceAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceAlias: Self = this.set("InstanceAlias", js.undefined)
+    def setOutboundCallsEnabled(value: OutboundCallsEnabled): Self = StObject.set(x, "OutboundCallsEnabled", value.asInstanceOf[js.Any])
   }
 }

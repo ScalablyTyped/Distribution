@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobManifest extends js.Object {
+trait JobManifest extends StObject {
   
   /**
     * Contains the information required to locate the specified job's manifest.
@@ -26,24 +27,12 @@ object JobManifest {
   }
   
   @scala.inline
-  implicit class JobManifestOps[Self <: JobManifest] (val x: Self) extends AnyVal {
+  implicit class JobManifestMutableBuilder[Self <: JobManifest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: JobManifestLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocation(value: JobManifestLocation): Self = this.set("Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpec(value: JobManifestSpec): Self = this.set("Spec", value.asInstanceOf[js.Any])
+    def setSpec(value: JobManifestSpec): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
   }
 }

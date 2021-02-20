@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScriptingCompleteResult extends js.Object {
+trait ScriptingCompleteResult extends StObject {
   
   var canceled: Boolean = js.native
   
@@ -35,36 +36,24 @@ object ScriptingCompleteResult {
   }
   
   @scala.inline
-  implicit class ScriptingCompleteResultOps[Self <: ScriptingCompleteResult] (val x: Self) extends AnyVal {
+  implicit class ScriptingCompleteResultMutableBuilder[Self <: ScriptingCompleteResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanceled(value: Boolean): Self = this.set("canceled", value.asInstanceOf[js.Any])
+    def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: String): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasError(value: Boolean): Self = this.set("hasError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

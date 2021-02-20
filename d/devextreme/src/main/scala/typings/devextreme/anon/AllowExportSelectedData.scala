@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowExportSelectedData extends js.Object {
+trait AllowExportSelectedData extends StObject {
   
   var allowExportSelectedData: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object AllowExportSelectedData {
   }
   
   @scala.inline
-  implicit class AllowExportSelectedDataOps[Self <: AllowExportSelectedData] (val x: Self) extends AnyVal {
+  implicit class AllowExportSelectedDataMutableBuilder[Self <: AllowExportSelectedData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowExportSelectedData(value: Boolean): Self = StObject.set(x, "allowExportSelectedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowExportSelectedDataUndefined: Self = StObject.set(x, "allowExportSelectedData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomizeExcelCell(value: /* options */ FillPatternColor => _): Self = StObject.set(x, "customizeExcelCell", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllowExportSelectedData(value: Boolean): Self = this.set("allowExportSelectedData", value.asInstanceOf[js.Any])
+    def setCustomizeExcelCellUndefined: Self = StObject.set(x, "customizeExcelCell", js.undefined)
     
     @scala.inline
-    def deleteAllowExportSelectedData: Self = this.set("allowExportSelectedData", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeExcelCell(value: /* options */ FillPatternColor => _): Self = this.set("customizeExcelCell", js.Any.fromFunction1(value))
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteCustomizeExcelCell: Self = this.set("customizeExcelCell", js.undefined)
+    def setExcelFilterEnabled(value: Boolean): Self = StObject.set(x, "excelFilterEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setExcelFilterEnabledUndefined: Self = StObject.set(x, "excelFilterEnabled", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setExcelWrapTextEnabled(value: Boolean): Self = StObject.set(x, "excelWrapTextEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelFilterEnabled(value: Boolean): Self = this.set("excelFilterEnabled", value.asInstanceOf[js.Any])
+    def setExcelWrapTextEnabledUndefined: Self = StObject.set(x, "excelWrapTextEnabled", js.undefined)
     
     @scala.inline
-    def deleteExcelFilterEnabled: Self = this.set("excelFilterEnabled", js.undefined)
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelWrapTextEnabled(value: Boolean): Self = this.set("excelWrapTextEnabled", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def deleteExcelWrapTextEnabled: Self = this.set("excelWrapTextEnabled", js.undefined)
+    def setIgnoreExcelErrors(value: Boolean): Self = StObject.set(x, "ignoreExcelErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setIgnoreExcelErrorsUndefined: Self = StObject.set(x, "ignoreExcelErrors", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreExcelErrors(value: Boolean): Self = this.set("ignoreExcelErrors", value.asInstanceOf[js.Any])
+    def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     
     @scala.inline
-    def deleteIgnoreExcelErrors: Self = this.set("ignoreExcelErrors", js.undefined)
+    def setTexts(value: ExportAll): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyUrl(value: String): Self = this.set("proxyUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyUrl: Self = this.set("proxyUrl", js.undefined)
-    
-    @scala.inline
-    def setTexts(value: ExportAll): Self = this.set("texts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTexts: Self = this.set("texts", js.undefined)
+    def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
   }
 }

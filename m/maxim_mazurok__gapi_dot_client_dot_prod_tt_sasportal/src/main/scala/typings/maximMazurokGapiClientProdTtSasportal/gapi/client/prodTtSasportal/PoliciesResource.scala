@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientProdTtSasportal.anon.CallbackFields
 import typings.maximMazurokGapiClientProdTtSasportal.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientProdTtSasportal.anon.OauthtokenPrettyPrint
 import typings.maximMazurokGapiClientProdTtSasportal.anon.PrettyPrintQuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PoliciesResource extends js.Object {
+trait PoliciesResource extends StObject {
   
   def get(request: CallbackFields, body: SasPortalGetPolicyRequest): Request[SasPortalPolicy] = js.native
   /** Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. */

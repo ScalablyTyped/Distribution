@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeType extends js.Object {
+trait TreeType extends StObject {
   
   def checkbox(obj: js.Any, common: js.Any): String = js.native
   
@@ -29,30 +30,18 @@ object TreeType {
   }
   
   @scala.inline
-  implicit class TreeTypeOps[Self <: TreeType] (val x: Self) extends AnyVal {
+  implicit class TreeTypeMutableBuilder[Self <: TreeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckbox(value: (js.Any, js.Any) => String): Self = StObject.set(x, "checkbox", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolder(value: (js.Any, js.Any) => String): Self = StObject.set(x, "folder", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcon(value: (js.Any, js.Any) => String): Self = StObject.set(x, "icon", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCheckbox(value: (js.Any, js.Any) => String): Self = this.set("checkbox", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setFolder(value: (js.Any, js.Any) => String): Self = this.set("folder", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setIcon(value: (js.Any, js.Any) => String): Self = this.set("icon", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSpace(value: (js.Any, js.Any) => String): Self = this.set("space", js.Any.fromFunction2(value))
+    def setSpace(value: (js.Any, js.Any) => String): Self = StObject.set(x, "space", js.Any.fromFunction2(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides information about the inserted node that raised the nodeInserted event.
   */
 @js.native
-trait NodeInsertedEventArgs extends js.Object {
+trait NodeInsertedEventArgs extends StObject {
   
   /**
     * Gets whether the node was inserted as part of an Undo/Redo action by the user.
@@ -31,24 +32,12 @@ object NodeInsertedEventArgs {
   }
   
   @scala.inline
-  implicit class NodeInsertedEventArgsOps[Self <: NodeInsertedEventArgs] (val x: Self) extends AnyVal {
+  implicit class NodeInsertedEventArgsMutableBuilder[Self <: NodeInsertedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "isUndoRedo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsUndoRedo(value: Boolean): Self = this.set("isUndoRedo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewNode(value: CustomXmlNode): Self = this.set("newNode", value.asInstanceOf[js.Any])
+    def setNewNode(value: CustomXmlNode): Self = StObject.set(x, "newNode", value.asInstanceOf[js.Any])
   }
 }

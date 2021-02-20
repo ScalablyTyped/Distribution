@@ -1,11 +1,12 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Color extends js.Object {
+trait Color extends StObject {
   
   var alpha: Double = js.native
   
@@ -24,30 +25,18 @@ object Color {
   }
   
   @scala.inline
-  implicit class ColorOps[Self <: Color] (val x: Self) extends AnyVal {
+  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBlue(value: Double): Self = this.set("blue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGreen(value: Double): Self = this.set("green", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRed(value: Double): Self = this.set("red", value.asInstanceOf[js.Any])
+    def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.nodeSql2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Column[Name, T] extends js.Object {
+trait Column[Name, T] extends StObject {
   
   def as[OtherName](name: OtherName): Column[OtherName, T] = js.native
   

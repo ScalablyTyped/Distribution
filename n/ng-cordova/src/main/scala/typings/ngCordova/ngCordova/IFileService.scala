@@ -7,12 +7,13 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.EventTarget
 import typings.std.ProgressEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFileService extends js.Object {
+trait IFileService extends StObject {
   
   def checkDir(path: String, directory: String): IFilePromise[DirectoryEntry] = js.native
   

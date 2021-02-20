@@ -1,17 +1,18 @@
 package typings.webcl.WEBCL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.9.1
 @js.native
-trait WebCLKernelArgInfo extends js.Object {
+trait WebCLKernelArgInfo extends StObject {
   
-   // 'global', 'local', 'constant', or 'private'
+  // 'global', 'local', 'constant', or 'private'
   var accessQualifier: String = js.native
   
-           // 'char', 'float', 'uint4', 'image2d_t', 'sampler_t', etc.
+  // 'char', 'float', 'uint4', 'image2d_t', 'sampler_t', etc.
   var addressQualifier: String = js.native
   
   var name: String = js.native
@@ -27,30 +28,18 @@ object WebCLKernelArgInfo {
   }
   
   @scala.inline
-  implicit class WebCLKernelArgInfoOps[Self <: WebCLKernelArgInfo] (val x: Self) extends AnyVal {
+  implicit class WebCLKernelArgInfoMutableBuilder[Self <: WebCLKernelArgInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessQualifier(value: String): Self = StObject.set(x, "accessQualifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressQualifier(value: String): Self = StObject.set(x, "addressQualifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessQualifier(value: String): Self = this.set("accessQualifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAddressQualifier(value: String): Self = this.set("addressQualifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeName(value: String): Self = this.set("typeName", value.asInstanceOf[js.Any])
+    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
   }
 }

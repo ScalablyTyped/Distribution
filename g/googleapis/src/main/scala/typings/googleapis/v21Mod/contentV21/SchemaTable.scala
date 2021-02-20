@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTable extends js.Object {
+trait SchemaTable extends StObject {
   
   /**
     * Headers of the table&#39;s columns. Optional: if not set then the table
@@ -38,45 +39,33 @@ object SchemaTable {
   }
   
   @scala.inline
-  implicit class SchemaTableOps[Self <: SchemaTable] (val x: Self) extends AnyVal {
+  implicit class SchemaTableMutableBuilder[Self <: SchemaTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnHeaders(value: SchemaHeaders): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHeaders(value: SchemaHeaders): Self = this.set("columnHeaders", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteColumnHeaders: Self = this.set("columnHeaders", js.undefined)
+    def setRowHeaders(value: SchemaHeaders): Self = StObject.set(x, "rowHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRowHeadersUndefined: Self = StObject.set(x, "rowHeaders", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRows(value: js.Array[SchemaRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeaders(value: SchemaHeaders): Self = this.set("rowHeaders", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRowHeaders: Self = this.set("rowHeaders", js.undefined)
-    
-    @scala.inline
-    def setRowsVarargs(value: SchemaRow*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[SchemaRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setRowsVarargs(value: SchemaRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

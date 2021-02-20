@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetId extends js.Object {
+trait AssetId extends StObject {
   
   var accessToken: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object AssetId {
   }
   
   @scala.inline
-  implicit class AssetIdOps[Self <: AssetId] (val x: Self) extends AnyVal {
+  implicit class AssetIdMutableBuilder[Self <: AssetId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetId(value: Double): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: Double): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
-    
-    @scala.inline
-    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

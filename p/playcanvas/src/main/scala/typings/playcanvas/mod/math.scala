@@ -1,5 +1,6 @@
 package typings.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Math API.
   */
-@JSImport("playcanvas", "math")
-@js.native
-object math extends js.Object {
+object math {
   
   /**
     * Conversion factor between degrees and radians.
@@ -17,6 +16,8 @@ object math extends js.Object {
     * // Convert 180 degrees to pi radians
     * var rad = 180 * pc.math.DEG_TO_RAD;
     */
+  @JSImport("playcanvas", "math.DEG_TO_RAD")
+  @js.native
   val DEG_TO_RAD: Double = js.native
   
   /**
@@ -25,6 +26,8 @@ object math extends js.Object {
     * // Convert pi radians to 180 degrees
     * var deg = Math.PI * pc.math.RAD_TO_DEG;
     */
+  @JSImport("playcanvas", "math.RAD_TO_DEG")
+  @js.native
   val RAD_TO_DEG: Double = js.native
   
   /**
@@ -40,6 +43,8 @@ object math extends js.Object {
     * @param b - A single byte (0-255).
     * @returns A single unsigned 24 bit Number.
     */
+  @JSImport("playcanvas", "math.bytesToInt24")
+  @js.native
   def bytesToInt24(r: Double, g: Double, b: Double): Double = js.native
   
   /**
@@ -56,6 +61,8 @@ object math extends js.Object {
     * @param a - A single byte (0-255).
     * @returns A single unsigned 32bit Number.
     */
+  @JSImport("playcanvas", "math.bytesToInt32")
+  @js.native
   def bytesToInt32(r: Double, g: Double, b: Double, a: Double): Double = js.native
   
   /**
@@ -65,6 +72,8 @@ object math extends js.Object {
     * @param max - Max value.
     * @returns The clamped value.
     */
+  @JSImport("playcanvas", "math.clamp")
+  @js.native
   def clamp(value: Double, min: Double, max: Double): Double = js.native
   
   /**
@@ -72,6 +81,8 @@ object math extends js.Object {
     * @param val - The float number.
     * @returns A 16 bit number representing half float representation as used by GPU.
     */
+  @JSImport("playcanvas", "math.float2Half")
+  @js.native
   def float2Half(`val`: Double): Double = js.native
   
   /**
@@ -82,6 +93,8 @@ object math extends js.Object {
     * @param i - Number holding an integer value.
     * @returns An array of 3 bytes.
     */
+  @JSImport("playcanvas", "math.intToBytes24")
+  @js.native
   def intToBytes24(i: Double): js.Array[Double] = js.native
   
   /**
@@ -92,6 +105,8 @@ object math extends js.Object {
     * @param i - Number holding an integer value.
     * @returns An array of 4 bytes.
     */
+  @JSImport("playcanvas", "math.intToBytes32")
+  @js.native
   def intToBytes32(i: Double): js.Array[Double] = js.native
   
   /**
@@ -103,6 +118,8 @@ object math extends js.Object {
     * a and b is returned. alpha is clamped between 0 and 1.
     * @returns The linear interpolation of two numbers.
     */
+  @JSImport("playcanvas", "math.lerp")
+  @js.native
   def lerp(a: Double, b: Double, alpha: Double): Double = js.native
   
   /**
@@ -115,6 +132,8 @@ object math extends js.Object {
     * a and b is returned. alpha is clamped between 0 and 1.
     * @returns The linear interpolation of two angles.
     */
+  @JSImport("playcanvas", "math.lerpAngle")
+  @js.native
   def lerpAngle(a: Double, b: Double, alpha: Double): Double = js.native
   
   /**
@@ -122,6 +141,8 @@ object math extends js.Object {
     * @param val - The value for which to calculate the next power of 2.
     * @returns The next power of 2.
     */
+  @JSImport("playcanvas", "math.nextPowerOfTwo")
+  @js.native
   def nextPowerOfTwo(`val`: Double): Double = js.native
   
   /**
@@ -129,6 +150,8 @@ object math extends js.Object {
     * @param x - Number to check for power-of-two property.
     * @returns True if power-of-two and false otherwise.
     */
+  @JSImport("playcanvas", "math.powerOfTwo")
+  @js.native
   def powerOfTwo(x: Double): Boolean = js.native
   
   /**
@@ -138,6 +161,8 @@ object math extends js.Object {
     * @param max - Upper bound for range.
     * @returns Pseudo-random number between the supplied range.
     */
+  @JSImport("playcanvas", "math.random")
+  @js.native
   def random(min: Double, max: Double): Double = js.native
   
   /**
@@ -146,6 +171,8 @@ object math extends js.Object {
     * @param multiple - The multiple to round up to.
     * @returns A number rounded up to nearest multiple.
     */
+  @JSImport("playcanvas", "math.roundUp")
+  @js.native
   def roundUp(numToRound: Double, multiple: Double): Double = js.native
   
   /**
@@ -157,6 +184,8 @@ object math extends js.Object {
     * @param x - The value to interpolate.
     * @returns The smoothly interpolated value clamped between zero and one.
     */
+  @JSImport("playcanvas", "math.smootherstep")
+  @js.native
   def smootherstep(min: Double, max: Double, x: Double): Double = js.native
   
   /**
@@ -172,5 +201,7 @@ object math extends js.Object {
     * @param x - The value to interpolate.
     * @returns The smoothly interpolated value clamped between zero and one.
     */
+  @JSImport("playcanvas", "math.smoothstep")
+  @js.native
   def smoothstep(min: Double, max: Double, x: Double): Double = js.native
 }

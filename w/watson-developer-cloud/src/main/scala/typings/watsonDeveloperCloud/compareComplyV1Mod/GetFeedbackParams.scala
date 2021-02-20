@@ -1,13 +1,14 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import typings.watsonDeveloperCloud.compareComplyV1Mod.GetFeedbackConstants.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `getFeedback` operation. */
 @js.native
-trait GetFeedbackParams extends js.Object {
+trait GetFeedbackParams extends StObject {
   
   /** A string that specifies the feedback entry to be included in the output. */
   var feedback_id: String = js.native
@@ -28,39 +29,27 @@ object GetFeedbackParams {
   }
   
   @scala.inline
-  implicit class GetFeedbackParamsOps[Self <: GetFeedbackParams] (val x: Self) extends AnyVal {
+  implicit class GetFeedbackParamsMutableBuilder[Self <: GetFeedbackParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeedback_id(value: String): Self = StObject.set(x, "feedback_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setFeedback_id(value: String): Self = this.set("feedback_id", value.asInstanceOf[js.Any])
+    def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: Model | String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

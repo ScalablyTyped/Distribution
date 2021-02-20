@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,111 +96,99 @@ object Type {
   }
   
   @scala.inline
-  implicit class TypeOps[Self <: Type] (val x: Self) extends AnyVal {
+  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasSymbol(value: Symbol): Self = StObject.set(x, "aliasSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasSymbolUndefined: Self = StObject.set(x, "aliasSymbol", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasTypeArguments(value: js.Array[Type]): Self = StObject.set(x, "aliasTypeArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: TypeFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setAliasTypeArgumentsUndefined: Self = StObject.set(x, "aliasTypeArguments", js.undefined)
     
     @scala.inline
-    def setGetApparentProperties(value: () => js.Array[Symbol]): Self = this.set("getApparentProperties", js.Any.fromFunction0(value))
+    def setAliasTypeArgumentsVarargs(value: Type*): Self = StObject.set(x, "aliasTypeArguments", js.Array(value :_*))
     
     @scala.inline
-    def setGetBaseTypes(value: () => js.UndefOr[js.Array[BaseType]]): Self = this.set("getBaseTypes", js.Any.fromFunction0(value))
+    def setFlags(value: TypeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCallSignatures(value: () => js.Array[Signature]): Self = this.set("getCallSignatures", js.Any.fromFunction0(value))
+    def setGetApparentProperties(value: () => js.Array[Symbol]): Self = StObject.set(x, "getApparentProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConstraint(value: () => js.UndefOr[Type]): Self = this.set("getConstraint", js.Any.fromFunction0(value))
+    def setGetBaseTypes(value: () => js.UndefOr[js.Array[BaseType]]): Self = StObject.set(x, "getBaseTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConstructSignatures(value: () => js.Array[Signature]): Self = this.set("getConstructSignatures", js.Any.fromFunction0(value))
+    def setGetCallSignatures(value: () => js.Array[Signature]): Self = StObject.set(x, "getCallSignatures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefault(value: () => js.UndefOr[Type]): Self = this.set("getDefault", js.Any.fromFunction0(value))
+    def setGetConstraint(value: () => js.UndefOr[Type]): Self = StObject.set(x, "getConstraint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFlags(value: () => TypeFlags): Self = this.set("getFlags", js.Any.fromFunction0(value))
+    def setGetConstructSignatures(value: () => js.Array[Signature]): Self = StObject.set(x, "getConstructSignatures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNonNullableType(value: () => Type): Self = this.set("getNonNullableType", js.Any.fromFunction0(value))
+    def setGetDefault(value: () => js.UndefOr[Type]): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNumberIndexType(value: () => js.UndefOr[Type]): Self = this.set("getNumberIndexType", js.Any.fromFunction0(value))
+    def setGetFlags(value: () => TypeFlags): Self = StObject.set(x, "getFlags", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetProperties(value: () => js.Array[Symbol]): Self = this.set("getProperties", js.Any.fromFunction0(value))
+    def setGetNonNullableType(value: () => Type): Self = StObject.set(x, "getNonNullableType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetProperty(value: java.lang.String => js.UndefOr[Symbol]): Self = this.set("getProperty", js.Any.fromFunction1(value))
+    def setGetNumberIndexType(value: () => js.UndefOr[Type]): Self = StObject.set(x, "getNumberIndexType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStringIndexType(value: () => js.UndefOr[Type]): Self = this.set("getStringIndexType", js.Any.fromFunction0(value))
+    def setGetProperties(value: () => js.Array[Symbol]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSymbol(value: () => js.UndefOr[Symbol]): Self = this.set("getSymbol", js.Any.fromFunction0(value))
+    def setGetProperty(value: java.lang.String => js.UndefOr[Symbol]): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsClass(value: () => /* is typescript.typescript.InterfaceType */ Boolean): Self = this.set("isClass", js.Any.fromFunction0(value))
+    def setGetStringIndexType(value: () => js.UndefOr[Type]): Self = StObject.set(x, "getStringIndexType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsClassOrInterface(value: () => /* is typescript.typescript.InterfaceType */ Boolean): Self = this.set("isClassOrInterface", js.Any.fromFunction0(value))
+    def setGetSymbol(value: () => js.UndefOr[Symbol]): Self = StObject.set(x, "getSymbol", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsIntersection(value: () => /* is typescript.typescript.IntersectionType */ Boolean): Self = this.set("isIntersection", js.Any.fromFunction0(value))
+    def setIsClass(value: () => /* is typescript.typescript.InterfaceType */ Boolean): Self = StObject.set(x, "isClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsLiteral(value: () => /* is typescript.typescript.LiteralType */ Boolean): Self = this.set("isLiteral", js.Any.fromFunction0(value))
+    def setIsClassOrInterface(value: () => /* is typescript.typescript.InterfaceType */ Boolean): Self = StObject.set(x, "isClassOrInterface", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsNumberLiteral(value: () => /* is typescript.typescript.NumberLiteralType */ Boolean): Self = this.set("isNumberLiteral", js.Any.fromFunction0(value))
+    def setIsIntersection(value: () => /* is typescript.typescript.IntersectionType */ Boolean): Self = StObject.set(x, "isIntersection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsStringLiteral(value: () => /* is typescript.typescript.StringLiteralType */ Boolean): Self = this.set("isStringLiteral", js.Any.fromFunction0(value))
+    def setIsLiteral(value: () => /* is typescript.typescript.LiteralType */ Boolean): Self = StObject.set(x, "isLiteral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsTypeParameter(value: () => /* is typescript.typescript.TypeParameter */ Boolean): Self = this.set("isTypeParameter", js.Any.fromFunction0(value))
+    def setIsNumberLiteral(value: () => /* is typescript.typescript.NumberLiteralType */ Boolean): Self = StObject.set(x, "isNumberLiteral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsUnion(value: () => /* is typescript.typescript.UnionType */ Boolean): Self = this.set("isUnion", js.Any.fromFunction0(value))
+    def setIsStringLiteral(value: () => /* is typescript.typescript.StringLiteralType */ Boolean): Self = StObject.set(x, "isStringLiteral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsUnionOrIntersection(value: () => /* is typescript.typescript.UnionOrIntersectionType */ Boolean): Self = this.set("isUnionOrIntersection", js.Any.fromFunction0(value))
+    def setIsTypeParameter(value: () => /* is typescript.typescript.TypeParameter */ Boolean): Self = StObject.set(x, "isTypeParameter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSymbol(value: Symbol): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setIsUnion(value: () => /* is typescript.typescript.UnionType */ Boolean): Self = StObject.set(x, "isUnion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAliasSymbol(value: Symbol): Self = this.set("aliasSymbol", value.asInstanceOf[js.Any])
+    def setIsUnionOrIntersection(value: () => /* is typescript.typescript.UnionOrIntersectionType */ Boolean): Self = StObject.set(x, "isUnionOrIntersection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteAliasSymbol: Self = this.set("aliasSymbol", js.undefined)
+    def setPattern(value: DestructuringPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasTypeArgumentsVarargs(value: Type*): Self = this.set("aliasTypeArguments", js.Array(value :_*))
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def setAliasTypeArguments(value: js.Array[Type]): Self = this.set("aliasTypeArguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAliasTypeArguments: Self = this.set("aliasTypeArguments", js.undefined)
-    
-    @scala.inline
-    def setPattern(value: DestructuringPattern): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setSymbol(value: Symbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

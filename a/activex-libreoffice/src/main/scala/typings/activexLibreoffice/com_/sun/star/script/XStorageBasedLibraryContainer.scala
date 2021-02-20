@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,24 +82,12 @@ object XStorageBasedLibraryContainer {
   }
   
   @scala.inline
-  implicit class XStorageBasedLibraryContainerOps[Self <: XStorageBasedLibraryContainer] (val x: Self) extends AnyVal {
+  implicit class XStorageBasedLibraryContainerMutableBuilder[Self <: XStorageBasedLibraryContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRootStorage(value: XStorage): Self = StObject.set(x, "RootStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRootStorage(value: XStorage): Self = this.set("RootStorage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStoreLibrariesToStorage(value: XStorage => Unit): Self = this.set("storeLibrariesToStorage", js.Any.fromFunction1(value))
+    def setStoreLibrariesToStorage(value: XStorage => Unit): Self = StObject.set(x, "storeLibrariesToStorage", js.Any.fromFunction1(value))
   }
 }

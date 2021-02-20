@@ -8,6 +8,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Integer
 import typings.officeJsPreview.officeJsPreviewStrings.RichValue
 import typings.officeJsPreview.officeJsPreviewStrings.String
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait ChangedEventDetail extends js.Object {
+trait ChangedEventDetail extends StObject {
   
   /**
     *
@@ -67,30 +68,18 @@ object ChangedEventDetail {
   }
   
   @scala.inline
-  implicit class ChangedEventDetailOps[Self <: ChangedEventDetail] (val x: Self) extends AnyVal {
+  implicit class ChangedEventDetailMutableBuilder[Self <: ChangedEventDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValueAfter(value: js.Any): Self = StObject.set(x, "valueAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueBefore(value: js.Any): Self = StObject.set(x, "valueBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueTypeAfter(value: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue): Self = StObject.set(x, "valueTypeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueAfter(value: js.Any): Self = this.set("valueAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueBefore(value: js.Any): Self = this.set("valueBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueTypeAfter(value: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue): Self = this.set("valueTypeAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueTypeBefore(value: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue): Self = this.set("valueTypeBefore", value.asInstanceOf[js.Any])
+    def setValueTypeBefore(value: RangeValueType | Unknown_ | Empty | String | Integer | Double | Boolean | Error | RichValue): Self = StObject.set(x, "valueTypeBefore", value.asInstanceOf[js.Any])
   }
 }

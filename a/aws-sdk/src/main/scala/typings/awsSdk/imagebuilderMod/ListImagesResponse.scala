@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListImagesResponse extends js.Object {
+trait ListImagesResponse extends StObject {
   
   /**
     * The list of image semantic versions. 
@@ -31,39 +32,27 @@ object ListImagesResponse {
   }
   
   @scala.inline
-  implicit class ListImagesResponseOps[Self <: ListImagesResponse] (val x: Self) extends AnyVal {
+  implicit class ListImagesResponseMutableBuilder[Self <: ListImagesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageVersionList(value: ImageVersionList): Self = StObject.set(x, "imageVersionList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageVersionListUndefined: Self = StObject.set(x, "imageVersionList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageVersionListVarargs(value: ImageVersion*): Self = StObject.set(x, "imageVersionList", js.Array(value :_*))
     
     @scala.inline
-    def setImageVersionListVarargs(value: ImageVersion*): Self = this.set("imageVersionList", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVersionList(value: ImageVersionList): Self = this.set("imageVersionList", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteImageVersionList: Self = this.set("imageVersionList", js.undefined)
+    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

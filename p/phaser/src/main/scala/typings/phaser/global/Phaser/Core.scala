@@ -1,41 +1,17 @@
 package typings.phaser.global.Phaser
 
 import typings.phaser.Phaser.Types.Core.FPSConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Core")
-@js.native
-object Core extends js.Object {
-  
-  /**
-    * Called automatically by Phaser.Game and responsible for creating the renderer it will use.
-    * 
-    * Relies upon two webpack global flags to be defined: `WEBGL_RENDERER` and `CANVAS_RENDERER` during build time, but not at run-time.
-    * @param game The Phaser.Game instance on which the renderer will be set.
-    */
-  def CreateRenderer(game: typings.phaser.Phaser.Game): Unit = js.native
-  
-  /**
-    * Called automatically by Phaser.Game and responsible for creating the console.log debug header.
-    * 
-    * You can customize or disable the header via the Game Config object.
-    * @param game The Phaser.Game instance which will output this debug header.
-    */
-  def DebugHeader(game: typings.phaser.Phaser.Game): Unit = js.native
-  
-  /**
-    * The Visibility Handler is responsible for listening out for document level visibility change events.
-    * This includes `visibilitychange` if the browser supports it, and blur and focus events. It then uses
-    * the provided Event Emitter and fires the related events.
-    * @param game The Game instance this Visibility Handler is working on.
-    */
-  def VisibilityHandler(game: typings.phaser.Phaser.Game): Unit = js.native
+object Core {
   
   /**
     * The active game configuration settings, parsed from a {@link Phaser.Types.Core.GameConfig} object.
     */
+  @JSGlobal("Phaser.Core.Config")
   @js.native
   /**
     * 
@@ -46,8 +22,27 @@ object Core extends js.Object {
     def this(GameConfig: typings.phaser.Phaser.Types.Core.GameConfig) = this()
   }
   
+  /**
+    * Called automatically by Phaser.Game and responsible for creating the renderer it will use.
+    * 
+    * Relies upon two webpack global flags to be defined: `WEBGL_RENDERER` and `CANVAS_RENDERER` during build time, but not at run-time.
+    * @param game The Phaser.Game instance on which the renderer will be set.
+    */
+  @JSGlobal("Phaser.Core.CreateRenderer")
   @js.native
-  object Events extends js.Object {
+  def CreateRenderer(game: typings.phaser.Phaser.Game): Unit = js.native
+  
+  /**
+    * Called automatically by Phaser.Game and responsible for creating the console.log debug header.
+    * 
+    * You can customize or disable the header via the Game Config object.
+    * @param game The Phaser.Game instance which will output this debug header.
+    */
+  @JSGlobal("Phaser.Core.DebugHeader")
+  @js.native
+  def DebugHeader(game: typings.phaser.Phaser.Game): Unit = js.native
+  
+  object Events {
     
     /**
       * The Game Blur Event.
@@ -56,6 +51,8 @@ object Core extends js.Object {
       * enters a blurred state. The blur event is raised when the window loses focus. This can happen if a user swaps
       * tab, or if they simply remove focus from the browser to another app.
       */
+    @JSGlobal("Phaser.Core.Events.BLUR")
+    @js.native
     val BLUR: js.Any = js.native
     
     /**
@@ -64,6 +61,8 @@ object Core extends js.Object {
       * This event is dispatched when the Phaser Game instance has finished booting, but before it is ready to start running.
       * The global systems use this event to know when to set themselves up, dispatching their own `ready` events as required.
       */
+    @JSGlobal("Phaser.Core.Events.BOOT")
+    @js.native
     val BOOT: js.Any = js.native
     
     /**
@@ -73,6 +72,8 @@ object Core extends js.Object {
       * 
       * The partner event is `CONTEXT_RESTORED`.
       */
+    @JSGlobal("Phaser.Core.Events.CONTEXT_LOST")
+    @js.native
     val CONTEXT_LOST: js.Any = js.native
     
     /**
@@ -82,6 +83,8 @@ object Core extends js.Object {
       * 
       * The partner event is `CONTEXT_LOST`.
       */
+    @JSGlobal("Phaser.Core.Events.CONTEXT_RESTORED")
+    @js.native
     val CONTEXT_RESTORED: js.Any = js.native
     
     /**
@@ -91,6 +94,8 @@ object Core extends js.Object {
       * Lots of internal systems listen to this event in order to clear themselves out.
       * Custom plugins and game code should also do the same.
       */
+    @JSGlobal("Phaser.Core.Events.DESTROY")
+    @js.native
     val DESTROY: js.Any = js.native
     
     /**
@@ -99,6 +104,8 @@ object Core extends js.Object {
       * This event is dispatched by the Game Visibility Handler when the window in which the Game instance is embedded
       * enters a focused state. The focus event is raised when the window re-gains focus, having previously lost it.
       */
+    @JSGlobal("Phaser.Core.Events.FOCUS")
+    @js.native
     val FOCUS: js.Any = js.native
     
     /**
@@ -111,6 +118,8 @@ object Core extends js.Object {
       * control the main game loop, will automatically pause. There is no way to stop this from happening. It is something
       * your game should account for in its own code, should the pause be an issue (i.e. for multiplayer games)
       */
+    @JSGlobal("Phaser.Core.Events.HIDDEN")
+    @js.native
     val HIDDEN: js.Any = js.native
     
     /**
@@ -118,6 +127,8 @@ object Core extends js.Object {
       * 
       * This event is dispatched when the Game loop enters a paused state, usually as a result of the Visibility Handler.
       */
+    @JSGlobal("Phaser.Core.Events.PAUSE")
+    @js.native
     val PAUSE: js.Any = js.native
     
     /**
@@ -128,6 +139,8 @@ object Core extends js.Object {
       * Every Scene will have rendered and been drawn to the canvas by the time this event is fired.
       * Use it for any last minute post-processing before the next game step begins.
       */
+    @JSGlobal("Phaser.Core.Events.POST_RENDER")
+    @js.native
     val POST_RENDER: js.Any = js.native
     
     /**
@@ -136,6 +149,8 @@ object Core extends js.Object {
       * This event is dispatched after the Scene Manager has updated.
       * Hook into it from plugins or systems that need to do things before the render starts.
       */
+    @JSGlobal("Phaser.Core.Events.POST_STEP")
+    @js.native
     val POST_STEP: js.Any = js.native
     
     /**
@@ -145,6 +160,8 @@ object Core extends js.Object {
       * 
       * The renderer will already have been initialized this frame, clearing itself and preparing to receive the Scenes for rendering, but it won't have actually drawn anything yet.
       */
+    @JSGlobal("Phaser.Core.Events.PRE_RENDER")
+    @js.native
     val PRE_RENDER: js.Any = js.native
     
     /**
@@ -153,6 +170,8 @@ object Core extends js.Object {
       * This event is dispatched before the main Game Step starts. By this point in the game cycle none of the Scene updates have yet happened.
       * Hook into it from plugins or systems that need to update before the Scene Manager does.
       */
+    @JSGlobal("Phaser.Core.Events.PRE_STEP")
+    @js.native
     val PRE_STEP: js.Any = js.native
     
     /**
@@ -161,6 +180,8 @@ object Core extends js.Object {
       * This event is dispatched when the Phaser Game instance has finished booting, the Texture Manager is fully ready,
       * and all local systems are now able to start.
       */
+    @JSGlobal("Phaser.Core.Events.READY")
+    @js.native
     val READY: js.Any = js.native
     
     /**
@@ -168,6 +189,8 @@ object Core extends js.Object {
       * 
       * This event is dispatched when the game loop leaves a paused state and resumes running.
       */
+    @JSGlobal("Phaser.Core.Events.RESUME")
+    @js.native
     val RESUME: js.Any = js.native
     
     /**
@@ -176,6 +199,8 @@ object Core extends js.Object {
       * This event is dispatched after the Game Pre-Step and before the Scene Manager steps.
       * Hook into it from plugins or systems that need to update before the Scene Manager does, but after the core Systems have.
       */
+    @JSGlobal("Phaser.Core.Events.STEP")
+    @js.native
     val STEP: js.Any = js.native
     
     /**
@@ -186,6 +211,8 @@ object Core extends js.Object {
       * 
       * Only browsers that support the Visibility API will cause this event to be emitted.
       */
+    @JSGlobal("Phaser.Core.Events.VISIBLE")
+    @js.native
     val VISIBLE: js.Any = js.native
   }
   
@@ -203,6 +230,7 @@ object Core extends js.Object {
     * this situation, all you can do is use the visibility events the browser, and Phaser, provide to detect when
     * it has happened and then gracefully recover.
     */
+  @JSGlobal("Phaser.Core.TimeStep")
   @js.native
   class TimeStep protected ()
     extends typings.phaser.Phaser.Core.TimeStep {
@@ -212,4 +240,14 @@ object Core extends js.Object {
       */
     def this(game: typings.phaser.Phaser.Game, config: FPSConfig) = this()
   }
+  
+  /**
+    * The Visibility Handler is responsible for listening out for document level visibility change events.
+    * This includes `visibilitychange` if the browser supports it, and blur and focus events. It then uses
+    * the provided Event Emitter and fires the related events.
+    * @param game The Game instance this Visibility Handler is working on.
+    */
+  @JSGlobal("Phaser.Core.VisibilityHandler")
+  @js.native
+  def VisibilityHandler(game: typings.phaser.Phaser.Game): Unit = js.native
 }

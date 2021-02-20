@@ -4,16 +4,16 @@ import typings.libp2pGossipsub.interfacesMod.MessageIdFunction
 import typings.libp2pInterfaces.pubsubMod.InMessage
 import typings.std.Map
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libp2p-gossipsub/src/tracer", JSImport.Namespace)
-@js.native
-object tracerMod extends js.Object {
+object tracerMod {
   
+  @JSImport("libp2p-gossipsub/src/tracer", "IWantTracer")
   @js.native
-  class IWantTracer protected () extends js.Object {
+  class IWantTracer protected () extends StObject {
     def this(getMsgId: MessageIdFunction) = this()
     
     /**

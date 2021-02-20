@@ -8,14 +8,14 @@ import typings.awsSdkClientGlacierNode.typesUploadArchiveOutputMod.UploadArchive
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/commands/UploadArchiveCommand", JSImport.Namespace)
-@js.native
-object uploadArchiveCommandMod extends js.Object {
+object uploadArchiveCommandMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/commands/UploadArchiveCommand", "UploadArchiveCommand")
   @js.native
   class UploadArchiveCommand protected () extends Command[
           InputTypesUnion, 

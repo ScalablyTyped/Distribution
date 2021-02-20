@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentQueryParameters extends js.Object {
+trait DeploymentQueryParameters extends StObject {
   
   var artifactSourceId: String = js.native
   
@@ -66,72 +67,60 @@ object DeploymentQueryParameters {
   }
   
   @scala.inline
-  implicit class DeploymentQueryParametersOps[Self <: DeploymentQueryParameters] (val x: Self) extends AnyVal {
+  implicit class DeploymentQueryParametersMutableBuilder[Self <: DeploymentQueryParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactSourceId(value: String): Self = StObject.set(x, "artifactSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactTypeId(value: String): Self = StObject.set(x, "artifactTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtifactVersions(value: js.Array[String]): Self = StObject.set(x, "artifactVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactSourceId(value: String): Self = this.set("artifactSourceId", value.asInstanceOf[js.Any])
+    def setArtifactVersionsVarargs(value: String*): Self = StObject.set(x, "artifactVersions", js.Array(value :_*))
     
     @scala.inline
-    def setArtifactTypeId(value: String): Self = this.set("artifactTypeId", value.asInstanceOf[js.Any])
+    def setDeploymentStatus(value: DeploymentStatus): Self = StObject.set(x, "deploymentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactVersionsVarargs(value: String*): Self = this.set("artifactVersions", js.Array(value :_*))
+    def setDeploymentsPerEnvironment(value: Double): Self = StObject.set(x, "deploymentsPerEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactVersions(value: js.Array[String]): Self = this.set("artifactVersions", value.asInstanceOf[js.Any])
+    def setEnvironments(value: js.Array[DefinitionEnvironmentReference]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentStatus(value: DeploymentStatus): Self = this.set("deploymentStatus", value.asInstanceOf[js.Any])
+    def setEnvironmentsVarargs(value: DefinitionEnvironmentReference*): Self = StObject.set(x, "environments", js.Array(value :_*))
     
     @scala.inline
-    def setDeploymentsPerEnvironment(value: Double): Self = this.set("deploymentsPerEnvironment", value.asInstanceOf[js.Any])
+    def setExpands(value: DeploymentExpands): Self = StObject.set(x, "expands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentsVarargs(value: DefinitionEnvironmentReference*): Self = this.set("environments", js.Array(value :_*))
+    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironments(value: js.Array[DefinitionEnvironmentReference]): Self = this.set("environments", value.asInstanceOf[js.Any])
+    def setLatestDeploymentsOnly(value: Boolean): Self = StObject.set(x, "latestDeploymentsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpands(value: DeploymentExpands): Self = this.set("expands", value.asInstanceOf[js.Any])
+    def setMaxDeploymentsPerEnvironment(value: Double): Self = StObject.set(x, "maxDeploymentsPerEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeleted(value: Boolean): Self = this.set("isDeleted", value.asInstanceOf[js.Any])
+    def setMaxModifiedTime(value: Date): Self = StObject.set(x, "maxModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestDeploymentsOnly(value: Boolean): Self = this.set("latestDeploymentsOnly", value.asInstanceOf[js.Any])
+    def setMinModifiedTime(value: Date): Self = StObject.set(x, "minModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDeploymentsPerEnvironment(value: Double): Self = this.set("maxDeploymentsPerEnvironment", value.asInstanceOf[js.Any])
+    def setOperationStatus(value: DeploymentOperationStatus): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxModifiedTime(value: Date): Self = this.set("maxModifiedTime", value.asInstanceOf[js.Any])
+    def setQueryOrder(value: ReleaseQueryOrder): Self = StObject.set(x, "queryOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinModifiedTime(value: Date): Self = this.set("minModifiedTime", value.asInstanceOf[js.Any])
+    def setQueryType(value: DeploymentsQueryType): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationStatus(value: DeploymentOperationStatus): Self = this.set("operationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryOrder(value: ReleaseQueryOrder): Self = this.set("queryOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryType(value: DeploymentsQueryType): Self = this.set("queryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceBranch(value: String): Self = this.set("sourceBranch", value.asInstanceOf[js.Any])
+    def setSourceBranch(value: String): Self = StObject.set(x, "sourceBranch", value.asInstanceOf[js.Any])
   }
 }

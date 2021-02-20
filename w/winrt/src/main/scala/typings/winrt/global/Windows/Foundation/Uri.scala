@@ -1,5 +1,6 @@
 package typings.winrt.global.Windows.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,13 @@ class Uri protected ()
   def this(baseUri: String, relativeUri: String) = this()
 }
 /* static members */
-@JSGlobal("Windows.Foundation.Uri")
-@js.native
-object Uri extends js.Object {
+object Uri {
   
+  @JSGlobal("Windows.Foundation.Uri.escapeComponent")
+  @js.native
   def escapeComponent(toEscape: String): String = js.native
   
+  @JSGlobal("Windows.Foundation.Uri.unescapeComponent")
+  @js.native
   def unescapeComponent(toUnescape: String): String = js.native
 }

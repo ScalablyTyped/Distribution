@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeServiceErrorsResult extends js.Object {
+trait DescribeServiceErrorsResult extends StObject {
   
   /**
     * An array of ServiceError objects that describe the specified service errors.
@@ -21,27 +22,15 @@ object DescribeServiceErrorsResult {
   }
   
   @scala.inline
-  implicit class DescribeServiceErrorsResultOps[Self <: DescribeServiceErrorsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeServiceErrorsResultMutableBuilder[Self <: DescribeServiceErrorsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServiceErrors(value: ServiceErrors): Self = StObject.set(x, "ServiceErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceErrorsUndefined: Self = StObject.set(x, "ServiceErrors", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServiceErrorsVarargs(value: ServiceError*): Self = this.set("ServiceErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceErrors(value: ServiceErrors): Self = this.set("ServiceErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceErrors: Self = this.set("ServiceErrors", js.undefined)
+    def setServiceErrorsVarargs(value: ServiceError*): Self = StObject.set(x, "ServiceErrors", js.Array(value :_*))
   }
 }

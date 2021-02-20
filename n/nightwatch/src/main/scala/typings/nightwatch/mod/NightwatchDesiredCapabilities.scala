@@ -1,12 +1,13 @@
 package typings.nightwatch.mod
 
 import typings.nightwatch.anon.Browser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchDesiredCapabilities extends js.Object {
+trait NightwatchDesiredCapabilities extends StObject {
   
   /**
     * Whether the session should accept all SSL certs by default.
@@ -117,132 +118,120 @@ object NightwatchDesiredCapabilities {
   }
   
   @scala.inline
-  implicit class NightwatchDesiredCapabilitiesOps[Self <: NightwatchDesiredCapabilities] (val x: Self) extends AnyVal {
+  implicit class NightwatchDesiredCapabilitiesMutableBuilder[Self <: NightwatchDesiredCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptSslCerts(value: Boolean): Self = StObject.set(x, "acceptSslCerts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptSslCertsUndefined: Self = StObject.set(x, "acceptSslCerts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationCacheEnabled(value: Boolean): Self = StObject.set(x, "applicationCacheEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptSslCerts(value: Boolean): Self = this.set("acceptSslCerts", value.asInstanceOf[js.Any])
+    def setApplicationCacheEnabledUndefined: Self = StObject.set(x, "applicationCacheEnabled", js.undefined)
     
     @scala.inline
-    def deleteAcceptSslCerts: Self = this.set("acceptSslCerts", js.undefined)
+    def setBrowserConnectionEnabled(value: Boolean): Self = StObject.set(x, "browserConnectionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationCacheEnabled(value: Boolean): Self = this.set("applicationCacheEnabled", value.asInstanceOf[js.Any])
+    def setBrowserConnectionEnabledUndefined: Self = StObject.set(x, "browserConnectionEnabled", js.undefined)
     
     @scala.inline
-    def deleteApplicationCacheEnabled: Self = this.set("applicationCacheEnabled", js.undefined)
+    def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserConnectionEnabled(value: Boolean): Self = this.set("browserConnectionEnabled", value.asInstanceOf[js.Any])
+    def setBrowserNameUndefined: Self = StObject.set(x, "browserName", js.undefined)
     
     @scala.inline
-    def deleteBrowserConnectionEnabled: Self = this.set("browserConnectionEnabled", js.undefined)
+    def setChromeOptions(value: ChromeOptions): Self = StObject.set(x, "chromeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserName(value: String): Self = this.set("browserName", value.asInstanceOf[js.Any])
+    def setChromeOptionsUndefined: Self = StObject.set(x, "chromeOptions", js.undefined)
     
     @scala.inline
-    def deleteBrowserName: Self = this.set("browserName", js.undefined)
+    def setCssSelectorsEnabled(value: Boolean): Self = StObject.set(x, "cssSelectorsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChromeOptions(value: ChromeOptions): Self = this.set("chromeOptions", value.asInstanceOf[js.Any])
+    def setCssSelectorsEnabledUndefined: Self = StObject.set(x, "cssSelectorsEnabled", js.undefined)
     
     @scala.inline
-    def deleteChromeOptions: Self = this.set("chromeOptions", js.undefined)
+    def setDatabaseEnabled(value: Boolean): Self = StObject.set(x, "databaseEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssSelectorsEnabled(value: Boolean): Self = this.set("cssSelectorsEnabled", value.asInstanceOf[js.Any])
+    def setDatabaseEnabledUndefined: Self = StObject.set(x, "databaseEnabled", js.undefined)
     
     @scala.inline
-    def deleteCssSelectorsEnabled: Self = this.set("cssSelectorsEnabled", js.undefined)
+    def setElementScrollBehaviour(value: Double): Self = StObject.set(x, "elementScrollBehaviour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseEnabled(value: Boolean): Self = this.set("databaseEnabled", value.asInstanceOf[js.Any])
+    def setElementScrollBehaviourUndefined: Self = StObject.set(x, "elementScrollBehaviour", js.undefined)
     
     @scala.inline
-    def deleteDatabaseEnabled: Self = this.set("databaseEnabled", js.undefined)
+    def setHandlesAlerts(value: Boolean): Self = StObject.set(x, "handlesAlerts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementScrollBehaviour(value: Double): Self = this.set("elementScrollBehaviour", value.asInstanceOf[js.Any])
+    def setHandlesAlertsUndefined: Self = StObject.set(x, "handlesAlerts", js.undefined)
     
     @scala.inline
-    def deleteElementScrollBehaviour: Self = this.set("elementScrollBehaviour", js.undefined)
+    def setJavascriptEnabled(value: Boolean): Self = StObject.set(x, "javascriptEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandlesAlerts(value: Boolean): Self = this.set("handlesAlerts", value.asInstanceOf[js.Any])
+    def setJavascriptEnabledUndefined: Self = StObject.set(x, "javascriptEnabled", js.undefined)
     
     @scala.inline
-    def deleteHandlesAlerts: Self = this.set("handlesAlerts", js.undefined)
+    def setLocationContextEnabled(value: Boolean): Self = StObject.set(x, "locationContextEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavascriptEnabled(value: Boolean): Self = this.set("javascriptEnabled", value.asInstanceOf[js.Any])
+    def setLocationContextEnabledUndefined: Self = StObject.set(x, "locationContextEnabled", js.undefined)
     
     @scala.inline
-    def deleteJavascriptEnabled: Self = this.set("javascriptEnabled", js.undefined)
+    def setLoggingPrefs(value: Browser): Self = StObject.set(x, "loggingPrefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationContextEnabled(value: Boolean): Self = this.set("locationContextEnabled", value.asInstanceOf[js.Any])
+    def setLoggingPrefsUndefined: Self = StObject.set(x, "loggingPrefs", js.undefined)
     
     @scala.inline
-    def deleteLocationContextEnabled: Self = this.set("locationContextEnabled", js.undefined)
+    def setNativeEvents(value: Boolean): Self = StObject.set(x, "nativeEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingPrefs(value: Browser): Self = this.set("loggingPrefs", value.asInstanceOf[js.Any])
+    def setNativeEventsUndefined: Self = StObject.set(x, "nativeEvents", js.undefined)
     
     @scala.inline
-    def deleteLoggingPrefs: Self = this.set("loggingPrefs", js.undefined)
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeEvents(value: Boolean): Self = this.set("nativeEvents", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteNativeEvents: Self = this.set("nativeEvents", js.undefined)
+    def setRotatable(value: Boolean): Self = StObject.set(x, "rotatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setRotatableUndefined: Self = StObject.set(x, "rotatable", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setTakesScreenShot(value: Boolean): Self = StObject.set(x, "takesScreenShot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotatable(value: Boolean): Self = this.set("rotatable", value.asInstanceOf[js.Any])
+    def setTakesScreenShotUndefined: Self = StObject.set(x, "takesScreenShot", js.undefined)
     
     @scala.inline
-    def deleteRotatable: Self = this.set("rotatable", js.undefined)
+    def setUnexpectedAlertBehaviour(value: String): Self = StObject.set(x, "unexpectedAlertBehaviour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTakesScreenShot(value: Boolean): Self = this.set("takesScreenShot", value.asInstanceOf[js.Any])
+    def setUnexpectedAlertBehaviourUndefined: Self = StObject.set(x, "unexpectedAlertBehaviour", js.undefined)
     
     @scala.inline
-    def deleteTakesScreenShot: Self = this.set("takesScreenShot", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnexpectedAlertBehaviour(value: String): Self = this.set("unexpectedAlertBehaviour", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteUnexpectedAlertBehaviour: Self = this.set("unexpectedAlertBehaviour", js.undefined)
+    def setWebStorageEnabled(value: Boolean): Self = StObject.set(x, "webStorageEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setWebStorageEnabled(value: Boolean): Self = this.set("webStorageEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebStorageEnabled: Self = this.set("webStorageEnabled", js.undefined)
+    def setWebStorageEnabledUndefined: Self = StObject.set(x, "webStorageEnabled", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICreateCapsuleOptions extends js.Object {
+trait ICreateCapsuleOptions extends StObject {
   
   /** Overwrite for the bottom capSubdivisions. */
   var bottomCapSubdivisions: js.UndefOr[Double] = js.native
@@ -52,63 +53,51 @@ object ICreateCapsuleOptions {
   }
   
   @scala.inline
-  implicit class ICreateCapsuleOptionsOps[Self <: ICreateCapsuleOptions] (val x: Self) extends AnyVal {
+  implicit class ICreateCapsuleOptionsMutableBuilder[Self <: ICreateCapsuleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomCapSubdivisions(value: Double): Self = StObject.set(x, "bottomCapSubdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomCapSubdivisionsUndefined: Self = StObject.set(x, "bottomCapSubdivisions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapSubdivisions(value: Double): Self = StObject.set(x, "capSubdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapSubdivisions(value: Double): Self = this.set("capSubdivisions", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOrientation(value: Vector3): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def setSubdivisions(value: Double): Self = this.set("subdivisions", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTessellation(value: Double): Self = this.set("tessellation", value.asInstanceOf[js.Any])
+    def setRadiusBottom(value: Double): Self = StObject.set(x, "radiusBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomCapSubdivisions(value: Double): Self = this.set("bottomCapSubdivisions", value.asInstanceOf[js.Any])
+    def setRadiusBottomUndefined: Self = StObject.set(x, "radiusBottom", js.undefined)
     
     @scala.inline
-    def deleteBottomCapSubdivisions: Self = this.set("bottomCapSubdivisions", js.undefined)
+    def setRadiusTop(value: Double): Self = StObject.set(x, "radiusTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Vector3): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setRadiusTopUndefined: Self = StObject.set(x, "radiusTop", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setSubdivisions(value: Double): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusBottom(value: Double): Self = this.set("radiusBottom", value.asInstanceOf[js.Any])
+    def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadiusBottom: Self = this.set("radiusBottom", js.undefined)
+    def setTopCapSubdivisions(value: Double): Self = StObject.set(x, "topCapSubdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusTop(value: Double): Self = this.set("radiusTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadiusTop: Self = this.set("radiusTop", js.undefined)
-    
-    @scala.inline
-    def setTopCapSubdivisions(value: Double): Self = this.set("topCapSubdivisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopCapSubdivisions: Self = this.set("topCapSubdivisions", js.undefined)
+    def setTopCapSubdivisionsUndefined: Self = StObject.set(x, "topCapSubdivisions", js.undefined)
   }
 }

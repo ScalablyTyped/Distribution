@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOperationsForResourceResult extends js.Object {
+trait GetOperationsForResourceResult extends StObject {
   
   /**
     * (Deprecated) Returns the number of pages of results that remain.  In releases prior to June 12, 2017, this parameter returned null by the API. It is now deprecated, and the API returns the next page token parameter instead. 
@@ -31,39 +32,27 @@ object GetOperationsForResourceResult {
   }
   
   @scala.inline
-  implicit class GetOperationsForResourceResultOps[Self <: GetOperationsForResourceResult] (val x: Self) extends AnyVal {
+  implicit class GetOperationsForResourceResultMutableBuilder[Self <: GetOperationsForResourceResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageCount(value: String): Self = StObject.set(x, "nextPageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageCountUndefined: Self = StObject.set(x, "nextPageCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageCount(value: String): Self = this.set("nextPageCount", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteNextPageCount: Self = this.set("nextPageCount", js.undefined)
+    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = this.set("operations", js.Array(value :_*))
-    
-    @scala.inline
-    def setOperations(value: OperationList): Self = this.set("operations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperations: Self = this.set("operations", js.undefined)
+    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

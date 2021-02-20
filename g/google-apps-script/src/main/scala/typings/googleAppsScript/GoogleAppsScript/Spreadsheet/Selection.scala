@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     Logger.log('Active Sheet: ' + selection.getActiveSheet().getName());
   */
 @js.native
-trait Selection extends js.Object {
+trait Selection extends StObject {
   
   def getActiveRange(): Range | Null = js.native
   
@@ -54,33 +55,21 @@ object Selection {
   }
   
   @scala.inline
-  implicit class SelectionOps[Self <: Selection] (val x: Self) extends AnyVal {
+  implicit class SelectionMutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetActiveRange(value: () => Range | Null): Self = StObject.set(x, "getActiveRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetActiveRangeList(value: () => RangeList | Null): Self = StObject.set(x, "getActiveRangeList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetActiveSheet(value: () => Sheet): Self = StObject.set(x, "getActiveSheet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveRange(value: () => Range | Null): Self = this.set("getActiveRange", js.Any.fromFunction0(value))
+    def setGetCurrentCell(value: () => Range | Null): Self = StObject.set(x, "getCurrentCell", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveRangeList(value: () => RangeList | Null): Self = this.set("getActiveRangeList", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetActiveSheet(value: () => Sheet): Self = this.set("getActiveSheet", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCurrentCell(value: () => Range | Null): Self = this.set("getCurrentCell", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNextDataRange(value: Direction => Range | Null): Self = this.set("getNextDataRange", js.Any.fromFunction1(value))
+    def setGetNextDataRange(value: Direction => Range | Null): Self = StObject.set(x, "getNextDataRange", js.Any.fromFunction1(value))
   }
 }

@@ -3,6 +3,7 @@ package typings.winrt.Windows.Web.Syndication
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,27 +38,15 @@ object ISyndicationCategory {
   }
   
   @scala.inline
-  implicit class ISyndicationCategoryOps[Self <: ISyndicationCategory] (val x: Self) extends AnyVal {
+  implicit class ISyndicationCategoryMutableBuilder[Self <: ISyndicationCategory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTerm(value: String): Self = this.set("term", value.asInstanceOf[js.Any])
+    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
   }
 }

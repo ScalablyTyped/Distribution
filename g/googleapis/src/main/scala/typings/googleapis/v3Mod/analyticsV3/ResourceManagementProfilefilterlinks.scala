@@ -4,13 +4,14 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Profilefilterlinks")
 @js.native
-class ResourceManagementProfilefilterlinks protected () extends js.Object {
+class ResourceManagementProfilefilterlinks protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native

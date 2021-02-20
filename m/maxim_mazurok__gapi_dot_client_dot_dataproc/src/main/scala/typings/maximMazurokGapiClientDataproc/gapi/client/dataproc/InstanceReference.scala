@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceReference extends js.Object {
+trait InstanceReference extends StObject {
   
   /** The unique identifier of the Compute Engine instance. */
   var instanceId: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object InstanceReference {
   }
   
   @scala.inline
-  implicit class InstanceReferenceOps[Self <: InstanceReference] (val x: Self) extends AnyVal {
+  implicit class InstanceReferenceMutableBuilder[Self <: InstanceReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
-    
-    @scala.inline
-    def setInstanceName(value: String): Self = this.set("instanceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
   }
 }

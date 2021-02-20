@@ -1,6 +1,7 @@
 package typings.dynogels.mod.AWS
 
 import typings.awsSdk.chainableTemporaryCredentialsMod.ChainableTemporaryCredentials.ChainableTemporaryCredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +16,4 @@ class ChainableTemporaryCredentials ()
   def this(options: ChainableTemporaryCredentialsOptions) = this()
 }
 // Needed to expose interfaces on the class
-@JSImport("dynogels", "AWS.ChainableTemporaryCredentials")
-@js.native
-object ChainableTemporaryCredentials extends js.Object
+object ChainableTemporaryCredentials

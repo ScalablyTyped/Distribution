@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Location extends js.Object {
+trait S3Location extends StObject {
   
   /**
     * A list of grants that control access to the staged results.
@@ -53,66 +54,54 @@ object S3Location {
   }
   
   @scala.inline
-  implicit class S3LocationOps[Self <: S3Location] (val x: Self) extends AnyVal {
+  implicit class S3LocationMutableBuilder[Self <: S3Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlList(value: Grants): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessControlListVarargs(value: Grant*): Self = StObject.set(x, "AccessControlList", js.Array(value :_*))
     
     @scala.inline
-    def setBucketName(value: BucketName): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    def setBucketName(value: BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: LocationPrefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    def setCannedACL(value: ObjectCannedACL): Self = StObject.set(x, "CannedACL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlListVarargs(value: Grant*): Self = this.set("AccessControlList", js.Array(value :_*))
+    def setCannedACLUndefined: Self = StObject.set(x, "CannedACL", js.undefined)
     
     @scala.inline
-    def setAccessControlList(value: Grants): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessControlList: Self = this.set("AccessControlList", js.undefined)
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def setCannedACL(value: ObjectCannedACL): Self = this.set("CannedACL", value.asInstanceOf[js.Any])
+    def setPrefix(value: LocationPrefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCannedACL: Self = this.set("CannedACL", js.undefined)
+    def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setTagging(value: Tagging): Self = StObject.set(x, "Tagging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    def setTaggingUndefined: Self = StObject.set(x, "Tagging", js.undefined)
     
     @scala.inline
-    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    def setUserMetadata(value: UserMetadata): Self = StObject.set(x, "UserMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagging(value: Tagging): Self = this.set("Tagging", value.asInstanceOf[js.Any])
+    def setUserMetadataUndefined: Self = StObject.set(x, "UserMetadata", js.undefined)
     
     @scala.inline
-    def deleteTagging: Self = this.set("Tagging", js.undefined)
-    
-    @scala.inline
-    def setUserMetadataVarargs(value: MetadataEntry*): Self = this.set("UserMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserMetadata(value: UserMetadata): Self = this.set("UserMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserMetadata: Self = this.set("UserMetadata", js.undefined)
+    def setUserMetadataVarargs(value: MetadataEntry*): Self = StObject.set(x, "UserMetadata", js.Array(value :_*))
   }
 }

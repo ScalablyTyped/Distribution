@@ -3,13 +3,14 @@ package typings.googleAdwordsScripts
 import typings.googleAppsScript.GoogleAppsScript.Base.Blob
 import typings.googleAppsScript.GoogleAppsScript.Drive.File
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Sheet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Bulk Uploads
 @js.native
-trait BulkUploads extends js.Object {
+trait BulkUploads extends StObject {
   
   def newCsvUpload(columnNames: js.Array[String], optArgs: FileUploadArguments): CsvUpload = js.native
   

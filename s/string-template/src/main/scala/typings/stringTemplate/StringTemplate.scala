@@ -1,18 +1,22 @@
 package typings.stringTemplate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("StringTemplate")
-@js.native
-object StringTemplate extends js.Object {
+object StringTemplate {
+  
+  /**
+    * Compile
+    */
+  type Compile = js.Function2[/* string */ String, /* inline */ js.UndefOr[Boolean], Template]
   
   /**
     * Format
     */
   @js.native
-  trait Format extends js.Object {
+  trait Format extends StObject {
     
     // Escape {} pairs by using double {{}} 
     def apply(string: String): String = js.native
@@ -25,15 +29,10 @@ object StringTemplate extends js.Object {
   }
   
   @js.native
-  trait Template extends js.Object {
+  trait Template extends StObject {
     
     def apply(array: js.Any*): String = js.native
     def apply(array: js.Array[_]): String = js.native
     def apply(`object`: js.Any): String = js.native
   }
-  
-  /**
-    * Compile
-    */
-  type Compile = js.Function2[/* string */ String, /* inline */ js.UndefOr[Boolean], Template]
 }

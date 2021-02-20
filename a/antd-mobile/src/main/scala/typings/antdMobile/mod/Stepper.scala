@@ -2,6 +2,7 @@ package typings.antdMobile.mod
 
 import typings.antdMobile.anon.FocusOnUpDown
 import typings.antdMobile.stepperMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Stepper () extends default
 /* static members */
-@JSImport("antd-mobile", "Stepper")
-@js.native
-object Stepper extends js.Object {
+object Stepper {
   
-  var defaultProps: FocusOnUpDown = js.native
+  @JSImport("antd-mobile", "Stepper")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile", "Stepper.defaultProps")
+  @js.native
+  def defaultProps: FocusOnUpDown = js.native
+  @scala.inline
+  def defaultProps_=(x: FocusOnUpDown): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

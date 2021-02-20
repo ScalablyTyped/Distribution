@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateImageBuilderRequest extends js.Object {
+trait CreateImageBuilderRequest extends StObject {
   
   /**
     * The list of interface VPC endpoint (interface endpoint) objects. Administrators can connect to the image builder only through the specified endpoints.
@@ -81,93 +82,81 @@ object CreateImageBuilderRequest {
   }
   
   @scala.inline
-  implicit class CreateImageBuilderRequestOps[Self <: CreateImageBuilderRequest] (val x: Self) extends AnyVal {
+  implicit class CreateImageBuilderRequestMutableBuilder[Self <: CreateImageBuilderRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessEndpoints(value: AccessEndpointList): Self = StObject.set(x, "AccessEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessEndpointsUndefined: Self = StObject.set(x, "AccessEndpoints", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setAppstreamAgentVersionUndefined: Self = StObject.set(x, "AppstreamAgentVersion", js.undefined)
     
     @scala.inline
-    def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = this.set("AccessEndpoints", js.Array(value :_*))
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessEndpoints(value: AccessEndpointList): Self = this.set("AccessEndpoints", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteAccessEndpoints: Self = this.set("AccessEndpoints", js.undefined)
+    def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = this.set("AppstreamAgentVersion", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def deleteAppstreamAgentVersion: Self = this.set("AppstreamAgentVersion", js.undefined)
+    def setDomainJoinInfo(value: DomainJoinInfo): Self = StObject.set(x, "DomainJoinInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDomainJoinInfoUndefined: Self = StObject.set(x, "DomainJoinInfo", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEnableDefaultInternetAccess(value: BooleanObject): Self = StObject.set(x, "EnableDefaultInternetAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: DisplayName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setEnableDefaultInternetAccessUndefined: Self = StObject.set(x, "EnableDefaultInternetAccess", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setIamRoleArn(value: Arn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainJoinInfo(value: DomainJoinInfo): Self = this.set("DomainJoinInfo", value.asInstanceOf[js.Any])
+    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
     @scala.inline
-    def deleteDomainJoinInfo: Self = this.set("DomainJoinInfo", js.undefined)
+    def setImageArn(value: Arn): Self = StObject.set(x, "ImageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDefaultInternetAccess(value: BooleanObject): Self = this.set("EnableDefaultInternetAccess", value.asInstanceOf[js.Any])
+    def setImageArnUndefined: Self = StObject.set(x, "ImageArn", js.undefined)
     
     @scala.inline
-    def deleteEnableDefaultInternetAccess: Self = this.set("EnableDefaultInternetAccess", js.undefined)
+    def setImageName(value: String): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRoleArn(value: Arn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    def setImageNameUndefined: Self = StObject.set(x, "ImageName", js.undefined)
     
     @scala.inline
-    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageArn(value: Arn): Self = this.set("ImageArn", value.asInstanceOf[js.Any])
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageArn: Self = this.set("ImageArn", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageName(value: String): Self = this.set("ImageName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteImageName: Self = this.set("ImageName", js.undefined)
+    def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the type of a media track. */
 @JSGlobal("Windows.Media.Core.MediaTrackKind")
 @js.native
-object MediaTrackKind extends js.Object {
+object MediaTrackKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Core.MediaTrackKind with Double] = js.native

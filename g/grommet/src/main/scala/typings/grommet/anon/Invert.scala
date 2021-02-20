@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Invert extends js.Object {
+trait Invert extends StObject {
   
   var invert: js.UndefOr[`3`] = js.native
 }
@@ -18,24 +19,12 @@ object Invert {
   }
   
   @scala.inline
-  implicit class InvertOps[Self <: Invert] (val x: Self) extends AnyVal {
+  implicit class InvertMutableBuilder[Self <: Invert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvert(value: `3`): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInvert(value: `3`): Self = this.set("invert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvert: Self = this.set("invert", js.undefined)
+    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
   }
 }

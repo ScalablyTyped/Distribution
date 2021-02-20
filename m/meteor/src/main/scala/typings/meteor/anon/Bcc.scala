@@ -1,12 +1,13 @@
 package typings.meteor.anon
 
 import typings.meteor.MailComposer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bcc extends js.Object {
+trait Bcc extends StObject {
   
   var attachments: js.UndefOr[js.Array[js.Object]] = js.native
   
@@ -39,99 +40,87 @@ object Bcc {
   }
   
   @scala.inline
-  implicit class BccOps[Self <: Bcc] (val x: Self) extends AnyVal {
+  implicit class BccMutableBuilder[Self <: Bcc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: js.Array[js.Object]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsVarargs(value: js.Object*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentsVarargs(value: js.Object*): Self = this.set("attachments", js.Array(value :_*))
+    def setBcc(value: String | js.Array[String]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: js.Array[js.Object]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value :_*))
     
     @scala.inline
-    def setBccVarargs(value: String*): Self = this.set("bcc", js.Array(value :_*))
+    def setCc(value: String | js.Array[String]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBcc(value: String | js.Array[String]): Self = this.set("bcc", value.asInstanceOf[js.Any])
+    def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
     
     @scala.inline
-    def deleteBcc: Self = this.set("bcc", js.undefined)
+    def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value :_*))
     
     @scala.inline
-    def setCcVarargs(value: String*): Self = this.set("cc", js.Array(value :_*))
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCc(value: String | js.Array[String]): Self = this.set("cc", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteCc: Self = this.set("cc", js.undefined)
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setMailComposer(value: MailComposer): Self = StObject.set(x, "mailComposer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setMailComposerUndefined: Self = StObject.set(x, "mailComposer", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setReplyTo(value: String | js.Array[String]): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailComposer(value: MailComposer): Self = this.set("mailComposer", value.asInstanceOf[js.Any])
+    def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
     
     @scala.inline
-    def deleteMailComposer: Self = this.set("mailComposer", js.undefined)
+    def setReplyToVarargs(value: String*): Self = StObject.set(x, "replyTo", js.Array(value :_*))
     
     @scala.inline
-    def setReplyToVarargs(value: String*): Self = this.set("replyTo", js.Array(value :_*))
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyTo(value: String | js.Array[String]): Self = this.set("replyTo", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteReplyTo: Self = this.set("replyTo", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setTo(value: String | js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setToVarargs(value: String*): Self = this.set("to", js.Array(value :_*))
-    
-    @scala.inline
-    def setTo(value: String | js.Array[String]): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
   }
 }

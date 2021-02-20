@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LambdaFunctionInfo extends js.Object {
+trait LambdaFunctionInfo extends StObject {
   
   /**
     *  The version of a Lambda function that production traffic points to. 
@@ -41,48 +42,36 @@ object LambdaFunctionInfo {
   }
   
   @scala.inline
-  implicit class LambdaFunctionInfoOps[Self <: LambdaFunctionInfo] (val x: Self) extends AnyVal {
+  implicit class LambdaFunctionInfoMutableBuilder[Self <: LambdaFunctionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentVersion(value: Version): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionAlias(value: LambdaFunctionAlias): Self = StObject.set(x, "functionAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentVersion(value: Version): Self = this.set("currentVersion", value.asInstanceOf[js.Any])
+    def setFunctionAliasUndefined: Self = StObject.set(x, "functionAlias", js.undefined)
     
     @scala.inline
-    def deleteCurrentVersion: Self = this.set("currentVersion", js.undefined)
+    def setFunctionName(value: LambdaFunctionName): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionAlias(value: LambdaFunctionAlias): Self = this.set("functionAlias", value.asInstanceOf[js.Any])
+    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
     @scala.inline
-    def deleteFunctionAlias: Self = this.set("functionAlias", js.undefined)
+    def setTargetVersion(value: Version): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: LambdaFunctionName): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
     
     @scala.inline
-    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    def setTargetVersionWeight(value: TrafficWeight): Self = StObject.set(x, "targetVersionWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetVersion(value: Version): Self = this.set("targetVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetVersion: Self = this.set("targetVersion", js.undefined)
-    
-    @scala.inline
-    def setTargetVersionWeight(value: TrafficWeight): Self = this.set("targetVersionWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetVersionWeight: Self = this.set("targetVersionWeight", js.undefined)
+    def setTargetVersionWeightUndefined: Self = StObject.set(x, "targetVersionWeight", js.undefined)
   }
 }

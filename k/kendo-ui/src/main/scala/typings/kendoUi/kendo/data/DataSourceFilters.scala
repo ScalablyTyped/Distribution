@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,33 +21,21 @@ object DataSourceFilters {
   }
   
   @scala.inline
-  implicit class DataSourceFiltersOps[Self <: DataSourceFilters] (val x: Self) extends AnyVal {
+  implicit class DataSourceFiltersMutableBuilder[Self <: DataSourceFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: js.Array[DataSourceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: DataSourceFilter*): Self = this.set("filters", js.Array(value :_*))
+    def setLogic(value: String): Self = StObject.set(x, "logic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[DataSourceFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
-    
-    @scala.inline
-    def setLogic(value: String): Self = this.set("logic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogic: Self = this.set("logic", js.undefined)
+    def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
   }
 }

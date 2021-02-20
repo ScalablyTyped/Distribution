@@ -13,6 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Date
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -225,51 +226,39 @@ object RowSet {
   }
   
   @scala.inline
-  implicit class RowSetOps[Self <: RowSet] (val x: Self) extends AnyVal {
+  implicit class RowSetMutableBuilder[Self <: RowSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceName(value: String): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setMaxFieldSize(value: Double): Self = StObject.set(x, "MaxFieldSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceName(value: String): Self = this.set("DataSourceName", value.asInstanceOf[js.Any])
+    def setMaxRows(value: Double): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeProcessing(value: Boolean): Self = this.set("EscapeProcessing", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFieldSize(value: Double): Self = this.set("MaxFieldSize", value.asInstanceOf[js.Any])
+    def setQueryTimeOut(value: Double): Self = StObject.set(x, "QueryTimeOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("MaxRows", value.asInstanceOf[js.Any])
+    def setTransactionIsolation(value: Double): Self = StObject.set(x, "TransactionIsolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setTypeMap(value: XNameAccess): Self = StObject.set(x, "TypeMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryTimeOut(value: Double): Self = this.set("QueryTimeOut", value.asInstanceOf[js.Any])
+    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionIsolation(value: Double): Self = this.set("TransactionIsolation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeMap(value: XNameAccess): Self = this.set("TypeMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("User", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
   }
 }

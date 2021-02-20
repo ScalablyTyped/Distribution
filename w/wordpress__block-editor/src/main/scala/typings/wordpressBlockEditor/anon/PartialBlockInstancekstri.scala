@@ -2,13 +2,14 @@ package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.wordpressBlocks.mod.BlockInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.BlockInstance<{[k: string] : any}>> */
 @js.native
-trait PartialBlockInstancekstri extends js.Object {
+trait PartialBlockInstancekstri extends StObject {
   
   var attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
   
@@ -31,57 +32,45 @@ object PartialBlockInstancekstri {
   }
   
   @scala.inline
-  implicit class PartialBlockInstancekstriOps[Self <: PartialBlockInstancekstri] (val x: Self) extends AnyVal {
+  implicit class PartialBlockInstancekstriMutableBuilder[Self <: PartialBlockInstancekstri] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: StringDictionary[js.Any]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[_]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setInnerBlocksUndefined: Self = StObject.set(x, "innerBlocks", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = this.set("innerBlocks", js.Array(value :_*))
+    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[_]]]): Self = this.set("innerBlocks", value.asInstanceOf[js.Any])
+    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
     @scala.inline
-    def deleteInnerBlocks: Self = this.set("innerBlocks", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValid(value: Boolean): Self = this.set("isValid", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIsValid: Self = this.set("isValid", js.undefined)
+    def setOriginalContent(value: String): Self = StObject.set(x, "originalContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOriginalContent(value: String): Self = this.set("originalContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalContent: Self = this.set("originalContent", js.undefined)
+    def setOriginalContentUndefined: Self = StObject.set(x, "originalContent", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateUserProfileRequest extends js.Object {
+trait UpdateUserProfileRequest extends StObject {
   
   /**
     * Whether users can specify their own SSH public key through the My Settings page. For more information, see Managing User Permissions.
@@ -36,39 +37,27 @@ object UpdateUserProfileRequest {
   }
   
   @scala.inline
-  implicit class UpdateUserProfileRequestOps[Self <: UpdateUserProfileRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateUserProfileRequestMutableBuilder[Self <: UpdateUserProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSelfManagement(value: Boolean): Self = StObject.set(x, "AllowSelfManagement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSelfManagementUndefined: Self = StObject.set(x, "AllowSelfManagement", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamUserArn(value: String): Self = this.set("IamUserArn", value.asInstanceOf[js.Any])
+    def setSshPublicKey(value: String): Self = StObject.set(x, "SshPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSelfManagement(value: Boolean): Self = this.set("AllowSelfManagement", value.asInstanceOf[js.Any])
+    def setSshPublicKeyUndefined: Self = StObject.set(x, "SshPublicKey", js.undefined)
     
     @scala.inline
-    def deleteAllowSelfManagement: Self = this.set("AllowSelfManagement", js.undefined)
+    def setSshUsername(value: String): Self = StObject.set(x, "SshUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshPublicKey(value: String): Self = this.set("SshPublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSshPublicKey: Self = this.set("SshPublicKey", js.undefined)
-    
-    @scala.inline
-    def setSshUsername(value: String): Self = this.set("SshUsername", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSshUsername: Self = this.set("SshUsername", js.undefined)
+    def setSshUsernameUndefined: Self = StObject.set(x, "SshUsername", js.undefined)
   }
 }

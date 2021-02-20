@@ -2,6 +2,7 @@ package typings.officeJs.Office
 
 import typings.officeJs.officeJsStrings.edit
 import typings.officeJs.officeJsStrings.read
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **Hosts**: Excel, PowerPoint, Project, Word
   */
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
   
   /**
     * Adds an event handler for a Document object event.

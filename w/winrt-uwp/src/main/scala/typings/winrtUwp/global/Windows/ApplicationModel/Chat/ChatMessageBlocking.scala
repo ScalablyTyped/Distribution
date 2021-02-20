@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Chat
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class ChatMessageBlocking ()
   extends typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageBlocking
-/* static members */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageBlocking")
-@js.native
-object ChatMessageBlocking extends js.Object {
+object ChatMessageBlocking {
   
   /**
     * Asynchronously marks a message as blocked or unblocked.
@@ -21,5 +19,8 @@ object ChatMessageBlocking extends js.Object {
     * @param blocked TRUE if the message should be blocked, FALSE if it should be unblocked.
     * @return An async action indicating that the operation has completed.
     */
+  /* static member */
+  @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageBlocking.markMessageAsBlockedAsync")
+  @js.native
   def markMessageAsBlockedAsync(localChatMessageId: String, blocked: Boolean): IPromiseWithIAsyncAction = js.native
 }

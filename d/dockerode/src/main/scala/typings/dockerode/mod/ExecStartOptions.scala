@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecStartOptions extends js.Object {
+trait ExecStartOptions extends StObject {
   
   // Detach and Tty are used by Docker's API
   var Detach: js.UndefOr[Boolean] = js.native
@@ -26,42 +27,30 @@ object ExecStartOptions {
   }
   
   @scala.inline
-  implicit class ExecStartOptionsOps[Self <: ExecStartOptions] (val x: Self) extends AnyVal {
+  implicit class ExecStartOptionsMutableBuilder[Self <: ExecStartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetach(value: Boolean): Self = StObject.set(x, "Detach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetachUndefined: Self = StObject.set(x, "Detach", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHijack(value: Boolean): Self = StObject.set(x, "hijack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetach(value: Boolean): Self = this.set("Detach", value.asInstanceOf[js.Any])
+    def setHijackUndefined: Self = StObject.set(x, "hijack", js.undefined)
     
     @scala.inline
-    def deleteDetach: Self = this.set("Detach", js.undefined)
+    def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTty(value: Boolean): Self = this.set("Tty", value.asInstanceOf[js.Any])
+    def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     
     @scala.inline
-    def deleteTty: Self = this.set("Tty", js.undefined)
+    def setTty(value: Boolean): Self = StObject.set(x, "Tty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHijack(value: Boolean): Self = this.set("hijack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHijack: Self = this.set("hijack", js.undefined)
-    
-    @scala.inline
-    def setStdin(value: Boolean): Self = this.set("stdin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdin: Self = this.set("stdin", js.undefined)
+    def setTtyUndefined: Self = StObject.set(x, "Tty", js.undefined)
   }
 }

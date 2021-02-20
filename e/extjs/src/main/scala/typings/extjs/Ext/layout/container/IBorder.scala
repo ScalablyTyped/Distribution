@@ -1,6 +1,7 @@
 package typings.extjs.Ext.layout.container
 
 import typings.extjs.Ext.layout.ISizePolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,54 +43,42 @@ object IBorder {
   }
   
   @scala.inline
-  implicit class IBorderOps[Self <: IBorder] (val x: Self) extends AnyVal {
+  implicit class IBorderMutableBuilder[Self <: IBorder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("calculate", js.Any.fromFunction1(value))
+    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
     @scala.inline
-    def deleteCalculate: Self = this.set("calculate", js.undefined)
+    def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = this.set("getItemSizePolicy", js.Any.fromFunction1(value))
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteGetItemSizePolicy: Self = this.set("getItemSizePolicy", js.undefined)
+    def setRegionWeights(value: js.Any): Self = StObject.set(x, "regionWeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: js.Any): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setRegionWeightsUndefined: Self = StObject.set(x, "regionWeights", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionWeights(value: js.Any): Self = this.set("regionWeights", value.asInstanceOf[js.Any])
+    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     
     @scala.inline
-    def deleteRegionWeights: Self = this.set("regionWeights", js.undefined)
+    def setSplitterResize(value: Boolean): Self = StObject.set(x, "splitterResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplit(value: Boolean): Self = this.set("split", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplit: Self = this.set("split", js.undefined)
-    
-    @scala.inline
-    def setSplitterResize(value: Boolean): Self = this.set("splitterResize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplitterResize: Self = this.set("splitterResize", js.undefined)
+    def setSplitterResizeUndefined: Self = StObject.set(x, "splitterResize", js.undefined)
   }
 }

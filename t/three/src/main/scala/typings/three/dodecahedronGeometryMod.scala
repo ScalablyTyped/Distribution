@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.anon.Detail
 import typings.three.geometryMod.Geometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/DodecahedronGeometry", JSImport.Namespace)
-@js.native
-object dodecahedronGeometryMod extends js.Object {
+object dodecahedronGeometryMod {
   
+  @JSImport("three/src/geometries/DodecahedronGeometry", "DodecahedronGeometry")
   @js.native
   /**
   	 * @param [radius=1]

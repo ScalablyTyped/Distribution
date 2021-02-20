@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,33 +26,40 @@ class CascadedShadowGenerator protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "CascadedShadowGenerator")
-@js.native
-object CascadedShadowGenerator extends js.Object {
+object CascadedShadowGenerator {
+  
+  @JSImport("babylonjs", "CascadedShadowGenerator")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Name of the CSM class
     */
-  var CLASSNAME: String = js.native
+  @JSImport("babylonjs", "CascadedShadowGenerator.CLASSNAME")
+  @js.native
+  def CLASSNAME: String = js.native
+  @scala.inline
+  def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
   
   /**
     * Defines the default number of cascades used by the CSM.
     */
+  @JSImport("babylonjs", "CascadedShadowGenerator.DEFAULT_CASCADES_COUNT")
+  @js.native
   val DEFAULT_CASCADES_COUNT: Double = js.native
-  
-  /**
-    *  Support test.
-    */
-  def IsSupported: Boolean = js.native
   
   /**
     * Defines the maximum number of cascades used by the CSM.
     */
+  @JSImport("babylonjs", "CascadedShadowGenerator.MAX_CASCADES_COUNT")
+  @js.native
   val MAX_CASCADES_COUNT: Double = js.native
   
   /**
     * Defines the minimum number of cascades used by the CSM.
     */
+  @JSImport("babylonjs", "CascadedShadowGenerator.MIN_CASCADES_COUNT")
+  @js.native
   val MIN_CASCADES_COUNT: Double = js.native
   
   /**
@@ -60,10 +68,16 @@ object CascadedShadowGenerator extends js.Object {
     * @param scene The scene to create the shadow map for
     * @returns The parsed shadow generator
     */
+  @JSImport("babylonjs", "CascadedShadowGenerator.Parse")
+  @js.native
   def Parse(parsedShadowGenerator: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = js.native
   
   /** @hidden */
+  @JSImport("babylonjs", "CascadedShadowGenerator._SceneComponentInitialization")
+  @js.native
   def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
   
+  @JSImport("babylonjs", "CascadedShadowGenerator.frustumCornersNDCSpace")
+  @js.native
   val frustumCornersNDCSpace: js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.protractor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofpromise extends js.Object {
+trait Typeofpromise extends StObject {
   
   /**
     * Wraps a function that expects a node-style callback as its final

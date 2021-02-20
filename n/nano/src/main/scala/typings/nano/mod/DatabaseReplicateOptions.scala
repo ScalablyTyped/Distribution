@@ -1,12 +1,13 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
 @js.native
-trait DatabaseReplicateOptions extends js.Object {
+trait DatabaseReplicateOptions extends StObject {
   
   // Cancels the replication
   var cancel: js.UndefOr[Boolean] = js.native
@@ -41,69 +42,57 @@ object DatabaseReplicateOptions {
   }
   
   @scala.inline
-  implicit class DatabaseReplicateOptionsOps[Self <: DatabaseReplicateOptions] (val x: Self) extends AnyVal {
+  implicit class DatabaseReplicateOptionsMutableBuilder[Self <: DatabaseReplicateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setCreate_target(value: Boolean): Self = StObject.set(x, "create_target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuous(value: Boolean): Self = this.set("continuous", value.asInstanceOf[js.Any])
+    def setCreate_targetUndefined: Self = StObject.set(x, "create_target", js.undefined)
     
     @scala.inline
-    def deleteContinuous: Self = this.set("continuous", js.undefined)
+    def setDoc_ids(value: js.Array[String]): Self = StObject.set(x, "doc_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate_target(value: Boolean): Self = this.set("create_target", value.asInstanceOf[js.Any])
+    def setDoc_idsUndefined: Self = StObject.set(x, "doc_ids", js.undefined)
     
     @scala.inline
-    def deleteCreate_target: Self = this.set("create_target", js.undefined)
+    def setDoc_idsVarargs(value: String*): Self = StObject.set(x, "doc_ids", js.Array(value :_*))
     
     @scala.inline
-    def setDoc_idsVarargs(value: String*): Self = this.set("doc_ids", js.Array(value :_*))
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc_ids(value: js.Array[String]): Self = this.set("doc_ids", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteDoc_ids: Self = this.set("doc_ids", js.undefined)
+    def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxy(value: String): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

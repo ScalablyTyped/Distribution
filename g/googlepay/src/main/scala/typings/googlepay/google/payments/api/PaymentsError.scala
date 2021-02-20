@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * methods. Errors might not be displayed in a user-facing dialog.
   */
 @js.native
-trait PaymentsError extends js.Object {
+trait PaymentsError extends StObject {
   
   /**
     * Short code that describes the type of error.
@@ -31,24 +32,12 @@ object PaymentsError {
   }
   
   @scala.inline
-  implicit class PaymentsErrorOps[Self <: PaymentsError] (val x: Self) extends AnyVal {
+  implicit class PaymentsErrorMutableBuilder[Self <: PaymentsError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatusCode(value: PaymentsErrorStatusCode | String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatusCode(value: PaymentsErrorStatusCode | String): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

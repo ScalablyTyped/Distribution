@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
 @js.native
-trait PlusMapsRoute extends js.Object {
+trait PlusMapsRoute extends StObject {
   
   /**
     * 路线总距离
@@ -67,57 +68,45 @@ object PlusMapsRoute {
   }
   
   @scala.inline
-  implicit class PlusMapsRouteOps[Self <: PlusMapsRoute] (val x: Self) extends AnyVal {
+  implicit class PlusMapsRouteMutableBuilder[Self <: PlusMapsRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndPoint(value: PlusMapsPoint): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setEndPointUndefined: Self = StObject.set(x, "endPoint", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setPointCount(value: PlusMapsPoint): Self = StObject.set(x, "pointCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPoint(value: PlusMapsPoint): Self = this.set("endPoint", value.asInstanceOf[js.Any])
+    def setPointCountUndefined: Self = StObject.set(x, "pointCount", js.undefined)
     
     @scala.inline
-    def deleteEndPoint: Self = this.set("endPoint", js.undefined)
+    def setPointList(value: js.Array[_]): Self = StObject.set(x, "pointList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointCount(value: PlusMapsPoint): Self = this.set("pointCount", value.asInstanceOf[js.Any])
+    def setPointListUndefined: Self = StObject.set(x, "pointList", js.undefined)
     
     @scala.inline
-    def deletePointCount: Self = this.set("pointCount", js.undefined)
+    def setPointListVarargs(value: js.Any*): Self = StObject.set(x, "pointList", js.Array(value :_*))
     
     @scala.inline
-    def setPointListVarargs(value: js.Any*): Self = this.set("pointList", js.Array(value :_*))
+    def setRouteTip(value: String): Self = StObject.set(x, "routeTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointList(value: js.Array[_]): Self = this.set("pointList", value.asInstanceOf[js.Any])
+    def setRouteTipUndefined: Self = StObject.set(x, "routeTip", js.undefined)
     
     @scala.inline
-    def deletePointList: Self = this.set("pointList", js.undefined)
+    def setStartPoint(value: PlusMapsPoint): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteTip(value: String): Self = this.set("routeTip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouteTip: Self = this.set("routeTip", js.undefined)
-    
-    @scala.inline
-    def setStartPoint(value: PlusMapsPoint): Self = this.set("startPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartPoint: Self = this.set("startPoint", js.undefined)
+    def setStartPointUndefined: Self = StObject.set(x, "startPoint", js.undefined)
   }
 }

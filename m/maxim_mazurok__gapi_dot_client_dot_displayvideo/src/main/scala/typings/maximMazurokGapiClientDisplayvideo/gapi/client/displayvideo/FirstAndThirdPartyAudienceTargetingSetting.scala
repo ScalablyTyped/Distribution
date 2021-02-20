@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirstAndThirdPartyAudienceTargetingSetting extends js.Object {
+trait FirstAndThirdPartyAudienceTargetingSetting extends StObject {
   
   /** Required. First and third party audience id of the first and third party audience targeting setting. This id is first_and_third_party_audience_id. */
   var firstAndThirdPartyAudienceId: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object FirstAndThirdPartyAudienceTargetingSetting {
   }
   
   @scala.inline
-  implicit class FirstAndThirdPartyAudienceTargetingSettingOps[Self <: FirstAndThirdPartyAudienceTargetingSetting] (val x: Self) extends AnyVal {
+  implicit class FirstAndThirdPartyAudienceTargetingSettingMutableBuilder[Self <: FirstAndThirdPartyAudienceTargetingSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstAndThirdPartyAudienceId(value: String): Self = StObject.set(x, "firstAndThirdPartyAudienceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstAndThirdPartyAudienceIdUndefined: Self = StObject.set(x, "firstAndThirdPartyAudienceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecency(value: String): Self = StObject.set(x, "recency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstAndThirdPartyAudienceId(value: String): Self = this.set("firstAndThirdPartyAudienceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirstAndThirdPartyAudienceId: Self = this.set("firstAndThirdPartyAudienceId", js.undefined)
-    
-    @scala.inline
-    def setRecency(value: String): Self = this.set("recency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecency: Self = this.set("recency", js.undefined)
+    def setRecencyUndefined: Self = StObject.set(x, "recency", js.undefined)
   }
 }

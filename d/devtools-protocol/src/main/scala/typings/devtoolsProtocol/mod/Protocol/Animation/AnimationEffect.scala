@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Animation
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationEffect extends js.Object {
+trait AnimationEffect extends StObject {
   
   /**
     * `AnimationEffect`'s target node.
@@ -76,54 +77,42 @@ object AnimationEffect {
   }
   
   @scala.inline
-  implicit class AnimationEffectOps[Self <: AnimationEffect] (val x: Self) extends AnyVal {
+  implicit class AnimationEffectMutableBuilder[Self <: AnimationEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setEndDelay(value: Double): Self = StObject.set(x, "endDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDelay(value: Double): Self = this.set("endDelay", value.asInstanceOf[js.Any])
+    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setIterationStart(value: Double): Self = StObject.set(x, "iterationStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterationStart(value: Double): Self = this.set("iterationStart", value.asInstanceOf[js.Any])
+    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
+    def setKeyframesRule(value: KeyframesRule): Self = StObject.set(x, "keyframesRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = this.set("backendNodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackendNodeId: Self = this.set("backendNodeId", js.undefined)
-    
-    @scala.inline
-    def setKeyframesRule(value: KeyframesRule): Self = this.set("keyframesRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyframesRule: Self = this.set("keyframesRule", js.undefined)
+    def setKeyframesRuleUndefined: Self = StObject.set(x, "keyframesRule", js.undefined)
   }
 }

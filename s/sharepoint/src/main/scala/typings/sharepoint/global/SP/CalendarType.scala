@@ -1,12 +1,13 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.CalendarType")
 @js.native
-object CalendarType extends js.Object {
+object CalendarType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.SP.CalendarType with Double] = js.native

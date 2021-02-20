@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssessmentTarget extends js.Object {
+trait AssessmentTarget extends StObject {
   
   /**
     * The ARN that specifies the Amazon Inspector assessment target.
@@ -41,36 +42,24 @@ object AssessmentTarget {
   }
   
   @scala.inline
-  implicit class AssessmentTargetOps[Self <: AssessmentTarget] (val x: Self) extends AnyVal {
+  implicit class AssessmentTargetMutableBuilder[Self <: AssessmentTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: AssessmentTargetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setResourceGroupArnUndefined: Self = StObject.set(x, "resourceGroupArn", js.undefined)
     
     @scala.inline
-    def setName(value: AssessmentTargetName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceGroupArn(value: Arn): Self = this.set("resourceGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceGroupArn: Self = this.set("resourceGroupArn", js.undefined)
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

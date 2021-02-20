@@ -1,12 +1,13 @@
 package typings.lyricist.mod
 
 import typings.lyricist.anon.Features
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   var api_path: String = js.native
   
@@ -51,51 +52,39 @@ object User {
   }
   
   @scala.inline
-  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrent_user_metadata(value: Features): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_path(value: String): Self = this.set("api_path", value.asInstanceOf[js.Any])
+    def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatar(value: Avatar): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    def setHuman_readable_role_for_display(value: String): Self = StObject.set(x, "human_readable_role_for_display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent_user_metadata(value: Features): Self = this.set("current_user_metadata", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader_image_url(value: String): Self = this.set("header_image_url", value.asInstanceOf[js.Any])
+    def setIq(value: Double): Self = StObject.set(x, "iq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHuman_readable_role_for_display(value: String): Self = this.set("human_readable_role_for_display", value.asInstanceOf[js.Any])
+    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIq(value: Double): Self = this.set("iq", value.asInstanceOf[js.Any])
+    def setRole_for_display(value: String): Self = StObject.set(x, "role_for_display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRole_for_display(value: String): Self = this.set("role_for_display", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

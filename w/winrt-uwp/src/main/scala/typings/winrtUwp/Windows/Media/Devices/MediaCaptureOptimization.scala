@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaCaptureOptimization extends js.Object
+sealed trait MediaCaptureOptimization extends StObject
 /** Defines the optimizations that the media capture device can use. */
 @JSGlobal("Windows.Media.Devices.MediaCaptureOptimization")
 @js.native
-object MediaCaptureOptimization extends js.Object {
+object MediaCaptureOptimization extends StObject {
   
   /** The default driver settings are used. */
   @js.native

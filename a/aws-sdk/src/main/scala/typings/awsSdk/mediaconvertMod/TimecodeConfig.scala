@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimecodeConfig extends js.Object {
+trait TimecodeConfig extends StObject {
   
   /**
     * If you use an editing platform that relies on an anchor timecode, use Anchor Timecode (Anchor) to specify a timecode that will match the input video frame to the output video frame. Use 24-hour format with frame number, (HH:MM:SS:FF) or (HH:MM:SS;FF). This setting ignores frame rate conversion. System behavior for Anchor Timecode varies depending on your setting for Source (TimecodeSource). * If Source (TimecodeSource) is set to Specified Start (SPECIFIEDSTART), the first input frame is the specified value in Start Timecode (Start). Anchor Timecode (Anchor) and Start Timecode (Start) are used calculate output timecode. * If Source (TimecodeSource) is set to Start at 0 (ZEROBASED)  the  first frame is 00:00:00:00. * If Source (TimecodeSource) is set to Embedded (EMBEDDED), the  first frame is the timecode value on the first input frame of the input.
@@ -36,42 +37,30 @@ object TimecodeConfig {
   }
   
   @scala.inline
-  implicit class TimecodeConfigOps[Self <: TimecodeConfig] (val x: Self) extends AnyVal {
+  implicit class TimecodeConfigMutableBuilder[Self <: TimecodeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: stringPattern010920405090509092): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "Anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: TimecodeSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: stringPattern010920405090509092): Self = this.set("Anchor", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("Anchor", js.undefined)
+    def setStart(value: stringPattern010920405090509092): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: TimecodeSource): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
+    def setTimestampOffset(value: stringPattern0940191020191209301): Self = StObject.set(x, "TimestampOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: stringPattern010920405090509092): Self = this.set("Start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("Start", js.undefined)
-    
-    @scala.inline
-    def setTimestampOffset(value: stringPattern0940191020191209301): Self = this.set("TimestampOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampOffset: Self = this.set("TimestampOffset", js.undefined)
+    def setTimestampOffsetUndefined: Self = StObject.set(x, "TimestampOffset", js.undefined)
   }
 }

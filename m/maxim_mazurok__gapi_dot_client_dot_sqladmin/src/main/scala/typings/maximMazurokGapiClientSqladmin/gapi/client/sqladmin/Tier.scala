@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tier extends js.Object {
+trait Tier extends StObject {
   
   /** The maximum disk size of this tier in bytes. */
   var DiskQuota: js.UndefOr[String] = js.native
@@ -31,51 +32,39 @@ object Tier {
   }
   
   @scala.inline
-  implicit class TierOps[Self <: Tier] (val x: Self) extends AnyVal {
+  implicit class TierMutableBuilder[Self <: Tier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiskQuota(value: String): Self = StObject.set(x, "DiskQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskQuotaUndefined: Self = StObject.set(x, "DiskQuota", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskQuota(value: String): Self = this.set("DiskQuota", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDiskQuota: Self = this.set("DiskQuota", js.undefined)
+    def setRAM(value: String): Self = StObject.set(x, "RAM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRAM(value: String): Self = this.set("RAM", value.asInstanceOf[js.Any])
+    def setRAMUndefined: Self = StObject.set(x, "RAM", js.undefined)
     
     @scala.inline
-    def deleteRAM: Self = this.set("RAM", js.undefined)
+    def setRegion(value: js.Array[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRegionVarargs(value: String*): Self = StObject.set(x, "region", js.Array(value :_*))
     
     @scala.inline
-    def setRegionVarargs(value: String*): Self = this.set("region", js.Array(value :_*))
+    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: js.Array[String]): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
-    
-    @scala.inline
-    def setTier(value: String): Self = this.set("tier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTier: Self = this.set("tier", js.undefined)
+    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

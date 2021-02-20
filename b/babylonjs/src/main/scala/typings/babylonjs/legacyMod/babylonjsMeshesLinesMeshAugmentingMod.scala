@@ -1,16 +1,15 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("babylonjs/Legacy/legacy", "babylonjs/Meshes/linesMesh")
-@js.native
-object babylonjsMeshesLinesMeshAugmentingMod extends js.Object {
+object babylonjsMeshesLinesMeshAugmentingMod {
   
   @js.native
-  trait InstancedLinesMesh extends js.Object {
+  trait InstancedLinesMesh extends StObject {
     
     /**
       * Enables the edge rendering mode on the mesh.
@@ -27,7 +26,7 @@ object babylonjsMeshesLinesMeshAugmentingMod extends js.Object {
   }
   
   @js.native
-  trait LinesMesh extends js.Object {
+  trait LinesMesh extends StObject {
     
     /**
       * Enables the edge rendering mode on the mesh.

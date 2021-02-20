@@ -1,5 +1,6 @@
 package typings.cordovaPluginQrscanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * An object representing the current status of QRScanner.
 */
 @js.native
-trait QRScannerStatus extends js.Object {
+trait QRScannerStatus extends StObject {
   
   /**
     * On iOS and Android 6.0+, camera access is granted at runtime by the user (by
@@ -100,51 +101,39 @@ object QRScannerStatus {
   }
   
   @scala.inline
-  implicit class QRScannerStatusOps[Self <: QRScannerStatus] (val x: Self) extends AnyVal {
+  implicit class QRScannerStatusMutableBuilder[Self <: QRScannerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorized(value: Boolean): Self = StObject.set(x, "authorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanEnableLight(value: Boolean): Self = StObject.set(x, "canEnableLight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanOpenSettings(value: Boolean): Self = StObject.set(x, "canOpenSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorized(value: Boolean): Self = this.set("authorized", value.asInstanceOf[js.Any])
+    def setCurrentCamera(value: Double): Self = StObject.set(x, "currentCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanEnableLight(value: Boolean): Self = this.set("canEnableLight", value.asInstanceOf[js.Any])
+    def setDenied(value: Boolean): Self = StObject.set(x, "denied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanOpenSettings(value: Boolean): Self = this.set("canOpenSettings", value.asInstanceOf[js.Any])
+    def setLightEnabled(value: Boolean): Self = StObject.set(x, "lightEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentCamera(value: Double): Self = this.set("currentCamera", value.asInstanceOf[js.Any])
+    def setPrepared(value: Boolean): Self = StObject.set(x, "prepared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDenied(value: Boolean): Self = this.set("denied", value.asInstanceOf[js.Any])
+    def setPreviewing(value: Boolean): Self = StObject.set(x, "previewing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightEnabled(value: Boolean): Self = this.set("lightEnabled", value.asInstanceOf[js.Any])
+    def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepared(value: Boolean): Self = this.set("prepared", value.asInstanceOf[js.Any])
+    def setScanning(value: Boolean): Self = StObject.set(x, "scanning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewing(value: Boolean): Self = this.set("previewing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestricted(value: Boolean): Self = this.set("restricted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScanning(value: Boolean): Self = this.set("scanning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebviewBackgroundIsTransparent(value: Boolean): Self = this.set("webviewBackgroundIsTransparent", value.asInstanceOf[js.Any])
+    def setWebviewBackgroundIsTransparent(value: Boolean): Self = StObject.set(x, "webviewBackgroundIsTransparent", value.asInstanceOf[js.Any])
   }
 }

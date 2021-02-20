@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.outputMod.flowcontrol.v1alpha1
 
 import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
 import typings.pulumiKubernetes.pulumiKubernetesStrings.flowcontrolDotapiserverDotk8sDotioSlashv1alpha1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * FlowSchema defines the schema of a group of flows. Note that a flow is made up of a set of inbound API requests with similar attributes and is identified by a pair of strings: the name of the FlowSchema and a "flow distinguisher".
   */
 @js.native
-trait FlowSchema extends js.Object {
+trait FlowSchema extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
@@ -52,33 +53,21 @@ object FlowSchema {
   }
   
   @scala.inline
-  implicit class FlowSchemaOps[Self <: FlowSchema] (val x: Self) extends AnyVal {
+  implicit class FlowSchemaMutableBuilder[Self <: FlowSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.FlowSchema): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: flowcontrolDotapiserverDotk8sDotioSlashv1alpha1): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setSpec(value: FlowSchemaSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.FlowSchema): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpec(value: FlowSchemaSpec): Self = this.set("spec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: FlowSchemaStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: FlowSchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

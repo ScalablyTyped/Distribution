@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoundTrack extends js.Object {
+trait SoundTrack extends StObject {
   
   var _connectedAnalyser: js.Any = js.native
   
@@ -101,66 +102,54 @@ object SoundTrack {
   }
   
   @scala.inline
-  implicit class SoundTrackOps[Self <: SoundTrack] (val x: Self) extends AnyVal {
+  implicit class SoundTrackMutableBuilder[Self <: SoundTrack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSound(value: Sound => Unit): Self = StObject.set(x, "addSound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectToAnalyser(value: Analyser => Unit): Self = StObject.set(x, "connectToAnalyser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_connectedAnalyser(value: js.Any): Self = this.set("_connectedAnalyser", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initializeSoundTrackAudioGraph(value: js.Any): Self = this.set("_initializeSoundTrackAudioGraph", value.asInstanceOf[js.Any])
+    def setRemoveSound(value: Sound => Unit): Self = StObject.set(x, "removeSound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_isInitialized(value: js.Any): Self = this.set("_isInitialized", value.asInstanceOf[js.Any])
+    def setSetVolume(value: Double => Unit): Self = StObject.set(x, "setVolume", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_options(value: js.Any): Self = this.set("_options", value.asInstanceOf[js.Any])
+    def setSoundCollection(value: js.Array[Sound]): Self = StObject.set(x, "soundCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_outputAudioNode(value: js.Any): Self = this.set("_outputAudioNode", value.asInstanceOf[js.Any])
+    def setSoundCollectionVarargs(value: Sound*): Self = StObject.set(x, "soundCollection", js.Array(value :_*))
     
     @scala.inline
-    def set_scene(value: js.Any): Self = this.set("_scene", value.asInstanceOf[js.Any])
+    def setSwitchPanningModelToEqualPower(value: () => Unit): Self = StObject.set(x, "switchPanningModelToEqualPower", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSound(value: Sound => Unit): Self = this.set("addSound", js.Any.fromFunction1(value))
+    def setSwitchPanningModelToHRTF(value: () => Unit): Self = StObject.set(x, "switchPanningModelToHRTF", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectToAnalyser(value: Analyser => Unit): Self = this.set("connectToAnalyser", js.Any.fromFunction1(value))
+    def set_connectedAnalyser(value: js.Any): Self = StObject.set(x, "_connectedAnalyser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def set_initializeSoundTrackAudioGraph(value: js.Any): Self = StObject.set(x, "_initializeSoundTrackAudioGraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def set_isInitialized(value: js.Any): Self = StObject.set(x, "_isInitialized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveSound(value: Sound => Unit): Self = this.set("removeSound", js.Any.fromFunction1(value))
+    def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetVolume(value: Double => Unit): Self = this.set("setVolume", js.Any.fromFunction1(value))
+    def set_outputAudioNode(value: js.Any): Self = StObject.set(x, "_outputAudioNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoundCollectionVarargs(value: Sound*): Self = this.set("soundCollection", js.Array(value :_*))
-    
-    @scala.inline
-    def setSoundCollection(value: js.Array[Sound]): Self = this.set("soundCollection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwitchPanningModelToEqualPower(value: () => Unit): Self = this.set("switchPanningModelToEqualPower", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSwitchPanningModelToHRTF(value: () => Unit): Self = this.set("switchPanningModelToHRTF", js.Any.fromFunction0(value))
+    def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
   }
 }

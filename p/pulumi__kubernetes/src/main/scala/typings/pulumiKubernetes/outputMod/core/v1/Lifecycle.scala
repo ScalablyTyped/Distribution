@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Lifecycle describes actions that the management system should take in response to container lifecycle events. For the PostStart and PreStop lifecycle handlers, management of the container blocks until the action is complete, unless the container process fails, in which case the handler is aborted.
   */
 @js.native
-trait Lifecycle extends js.Object {
+trait Lifecycle extends StObject {
   
   /**
     * PostStart is called immediately after a container is created. If the handler fails, the container is terminated and restarted according to its restart policy. Other management of the container blocks until the hook completes. More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
@@ -29,24 +30,12 @@ object Lifecycle {
   }
   
   @scala.inline
-  implicit class LifecycleOps[Self <: Lifecycle] (val x: Self) extends AnyVal {
+  implicit class LifecycleMutableBuilder[Self <: Lifecycle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostStart(value: Handler): Self = StObject.set(x, "postStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPostStart(value: Handler): Self = this.set("postStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreStop(value: Handler): Self = this.set("preStop", value.asInstanceOf[js.Any])
+    def setPreStop(value: Handler): Self = StObject.set(x, "preStop", value.asInstanceOf[js.Any])
   }
 }

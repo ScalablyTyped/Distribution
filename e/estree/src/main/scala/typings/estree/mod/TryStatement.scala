@@ -1,5 +1,6 @@
 package typings.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,42 +29,30 @@ object TryStatement {
   }
   
   @scala.inline
-  implicit class TryStatementOps[Self <: TryStatement] (val x: Self) extends AnyVal {
+  implicit class TryStatementMutableBuilder[Self <: TryStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: BlockStatement): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalizer(value: BlockStatement): Self = StObject.set(x, "finalizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinalizerNull: Self = StObject.set(x, "finalizer", null)
     
     @scala.inline
-    def setBlock(value: BlockStatement): Self = this.set("block", value.asInstanceOf[js.Any])
+    def setFinalizerUndefined: Self = StObject.set(x, "finalizer", js.undefined)
     
     @scala.inline
-    def setType(value: typings.estree.estreeStrings.TryStatement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setHandler(value: CatchClause): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalizer(value: BlockStatement): Self = this.set("finalizer", value.asInstanceOf[js.Any])
+    def setHandlerNull: Self = StObject.set(x, "handler", null)
     
     @scala.inline
-    def deleteFinalizer: Self = this.set("finalizer", js.undefined)
+    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
     @scala.inline
-    def setFinalizerNull: Self = this.set("finalizer", null)
-    
-    @scala.inline
-    def setHandler(value: CatchClause): Self = this.set("handler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandler: Self = this.set("handler", js.undefined)
-    
-    @scala.inline
-    def setHandlerNull: Self = this.set("handler", null)
+    def setType(value: typings.estree.estreeStrings.TryStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

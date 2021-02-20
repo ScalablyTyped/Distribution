@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,22 +78,25 @@ class Shape () extends GraphObject {
   /**Gets or sets the name of the kind of arrowhead that this shape should take when this shape is an element of a Link.*/
   var toArrow: String = js.native
 }
-/* static members */
-@JSImport("go", "Shape")
-@js.native
-object Shape extends js.Object {
+object Shape {
   
   /**
     * This static function defines a named arrowhead geometry.
     * @param {string} name the new arrowhead name must start with an uppercase letter, and must not be "None"
     * @param {Geometry} geo the Geometry for the arrowhead
     */
+  /* static member */
+  @JSImport("go", "Shape.defineArrowheadGeometry")
+  @js.native
   def defineArrowheadGeometry(name: String, geo: Geometry): Unit = js.native
   /**
     * This static function defines a named arrowhead geometry.
     * @param {string} name the new arrowhead name must start with an uppercase letter, and must not be "None"
     * @param {string} pathstr a geometry path string that will be passed to Geometry.parse
     */
+  /* static member */
+  @JSImport("go", "Shape.defineArrowheadGeometry")
+  @js.native
   def defineArrowheadGeometry(name: String, pathstr: String): Unit = js.native
   
   /**
@@ -100,29 +104,41 @@ object Shape extends js.Object {
     * @param {string} name new figure name must start with an uppercase letter, and must not be "None"
     * @param {function(Shape, number, number):Geometry} func returns a Geometry for the given Shape, width, and height
     */
+  /* static member */
+  @JSImport("go", "Shape.defineFigureGenerator")
+  @js.native
   def defineFigureGenerator(
     name: String,
-    func: js.Function3[/* shape */ this.type, /* width */ Double, /* height */ Double, Geometry]
+    func: js.Function3[/* shape */ Shape, /* width */ Double, /* height */ Double, Geometry]
   ): Unit = js.native
   /**
     * This static function defines a synonym for a named figure geometry generator.
     * @param {string} name the new figure name must start with an uppercase letter, and must not be "None"
     * @param {string} synonym an existing figure name
     */
+  /* static member */
+  @JSImport("go", "Shape.defineFigureGenerator")
+  @js.native
   def defineFigureGenerator(name: String, synonym: String): Unit = js.native
   
   /**
     * This static function returns a read-only Map of named arrowhead geometries.
     * @return {Map} the keys are arrowhead names; the values are Geometry objects
     */
+  /* static member */
+  @JSImport("go", "Shape.getArrowheadGeometries")
+  @js.native
   def getArrowheadGeometries(): Map[String, Geometry] = js.native
   
   /**
     * This static function returns a read-only Map of named geometry generators.
     * @return {Map} the keys are figure names; the values are either synonymed names or generator functions
     */
+  /* static member */
+  @JSImport("go", "Shape.getFigureGenerators")
+  @js.native
   def getFigureGenerators(): Map[
     String, 
-    js.Function3[/* shape */ this.type, /* width */ Double, /* height */ Double, Geometry]
+    js.Function3[/* shape */ Shape, /* width */ Double, /* height */ Double, Geometry]
   ] = js.native
 }

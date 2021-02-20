@@ -1,5 +1,6 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.luxon.luxonStrings.casual
   - typings.luxon.luxonStrings.longterm
 */
-trait ConversionAccuracy extends js.Object
+trait ConversionAccuracy extends StObject
 object ConversionAccuracy {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogflowV1Context extends js.Object {
+trait DialogflowV1Context extends StObject {
   
   var lifespan: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object DialogflowV1Context {
   }
   
   @scala.inline
-  implicit class DialogflowV1ContextOps[Self <: DialogflowV1Context] (val x: Self) extends AnyVal {
+  implicit class DialogflowV1ContextMutableBuilder[Self <: DialogflowV1Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLifespanUndefined: Self = StObject.set(x, "lifespan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifespan(value: Double): Self = this.set("lifespan", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLifespan: Self = this.set("lifespan", js.undefined)
+    def setParameters(value: DialogflowV1Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setParameters(value: DialogflowV1Parameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

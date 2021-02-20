@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateWebhookInput extends js.Object {
+trait CreateWebhookInput extends StObject {
   
   /**
     * A regular expression used to determine which repository branches are built when a webhook is triggered. If the name of a branch matches the regular expression, then it is built. If branchFilter is empty, then all branches are built.  It is recommended that you use filterGroups instead of branchFilter.  
@@ -36,42 +37,30 @@ object CreateWebhookInput {
   }
   
   @scala.inline
-  implicit class CreateWebhookInputOps[Self <: CreateWebhookInput] (val x: Self) extends AnyVal {
+  implicit class CreateWebhookInputMutableBuilder[Self <: CreateWebhookInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchFilter(value: String): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildType(value: WebhookBuildType): Self = StObject.set(x, "buildType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectName(value: ProjectName): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    def setBuildTypeUndefined: Self = StObject.set(x, "buildType", js.undefined)
     
     @scala.inline
-    def setBranchFilter(value: String): Self = this.set("branchFilter", value.asInstanceOf[js.Any])
+    def setFilterGroups(value: FilterGroups): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBranchFilter: Self = this.set("branchFilter", js.undefined)
+    def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
     
     @scala.inline
-    def setBuildType(value: WebhookBuildType): Self = this.set("buildType", value.asInstanceOf[js.Any])
+    def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
     
     @scala.inline
-    def deleteBuildType: Self = this.set("buildType", js.undefined)
-    
-    @scala.inline
-    def setFilterGroupsVarargs(value: FilterGroup*): Self = this.set("filterGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilterGroups(value: FilterGroups): Self = this.set("filterGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterGroups: Self = this.set("filterGroups", js.undefined)
+    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.ssUtils.ssutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseError extends js.Object {
+trait ResponseError extends StObject {
   
   var errorCode: String = js.native
   
@@ -22,27 +23,15 @@ object ResponseError {
   }
   
   @scala.inline
-  implicit class ResponseErrorOps[Self <: ResponseError] (val x: Self) extends AnyVal {
+  implicit class ResponseErrorMutableBuilder[Self <: ResponseError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrorCode(value: String): Self = this.set("errorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

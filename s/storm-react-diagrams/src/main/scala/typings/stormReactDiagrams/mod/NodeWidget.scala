@@ -1,6 +1,7 @@
 package typings.stormReactDiagrams.mod
 
 import typings.stormReactDiagrams.nodeWidgetMod.NodeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

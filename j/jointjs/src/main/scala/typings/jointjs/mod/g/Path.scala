@@ -1,13 +1,14 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "g.Path")
 @js.native
- // getter
-class Path () extends js.Object {
+// getter
+class Path () extends StObject {
   def this(pathData: String) = this()
   def this(polyline: Polyline) = this()
   def this(segments: PathObjectUnit | PathSegmentUnit) = this()
@@ -42,7 +43,7 @@ class Path () extends js.Object {
   def divideAtLength(length: Double): (js.Tuple2[Path, Path]) | Null = js.native
   def divideAtLength(length: Double, opt: SegmentSubdivisionsOpt): (js.Tuple2[Path, Path]) | Null = js.native
   
-   // getter
+  // getter
   var end: Point | Null = js.native
   
   def equals(p: Path): Boolean = js.native
@@ -131,16 +132,31 @@ class Path () extends js.Object {
   
   /* private */ def updateSubpathStartSegment(segment: Segment): Unit = js.native
 }
-/* static members */
-@JSImport("jointjs", "g.Path")
-@js.native
-object Path extends js.Object {
+object Path {
   
+  @JSImport("jointjs", "g.Path")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("jointjs", "g.Path.createSegment")
+  @js.native
   def createSegment(`type`: SegmentType, args: js.Any*): PathSegmentUnit = js.native
   
+  /* static member */
+  @JSImport("jointjs", "g.Path.isDataSupported")
+  @js.native
   def isDataSupported(pathData: String): Boolean = js.native
   
+  /* static member */
+  @JSImport("jointjs", "g.Path.parse")
+  @js.native
   def parse(pathData: String): Path = js.native
   
-  var segmentTypes: SegmentTypes = js.native
+  /* static member */
+  @JSImport("jointjs", "g.Path.segmentTypes")
+  @js.native
+  def segmentTypes: SegmentTypes = js.native
+  @scala.inline
+  def segmentTypes_=(x: SegmentTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("segmentTypes")(x.asInstanceOf[js.Any])
 }

@@ -2,16 +2,19 @@ package typings.ol
 
 import typings.std.Document
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/format/XML", JSImport.Namespace)
-@js.native
-object xmlMod extends js.Object {
+object xmlMod {
+  
+  @JSImport("ol/format/XML", JSImport.Default)
+  @js.native
+  abstract class default () extends XML
   
   @js.native
-  trait XML extends js.Object {
+  trait XML extends StObject {
     
     def read(source: String): js.Any = js.native
     /**
@@ -24,7 +27,4 @@ object xmlMod extends js.Object {
     
     def readFromNode(node: Element): js.Any = js.native
   }
-  
-  @js.native
-  abstract class default () extends XML
 }

@@ -4,12 +4,13 @@ import typings.jui.juiStrings.daily
 import typings.jui.juiStrings.monthly
 import typings.jui.juiStrings.now
 import typings.jui.juiStrings.yearly
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Date extends js.Object {
+trait Date extends StObject {
   
   /**
     * @cfg {Date} [date="now"]
@@ -60,66 +61,54 @@ object Date {
   }
   
   @scala.inline
-  implicit class DateOps[Self <: Date] (val x: Self) extends AnyVal {
+  implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: now | typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: now | typings.std.Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setMaxDate(value: typings.std.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMinDate(value: typings.std.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDate(value: typings.std.Date): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
     @scala.inline
-    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    def setTitleFormat(value: String): Self = StObject.set(x, "titleFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDate(value: typings.std.Date): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    def setTitleFormatUndefined: Self = StObject.set(x, "titleFormat", js.undefined)
     
     @scala.inline
-    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleFormat(value: String): Self = this.set("titleFormat", value.asInstanceOf[js.Any])
+    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     
     @scala.inline
-    def deleteTitleFormat: Self = this.set("titleFormat", js.undefined)
+    def setType(value: daily | monthly | yearly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpl: Self = this.set("tpl", js.undefined)
-    
-    @scala.inline
-    def setType(value: daily | monthly | yearly): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

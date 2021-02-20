@@ -1,11 +1,12 @@
 package typings.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToolConfig extends js.Object {
+trait ToolConfig extends StObject {
   
   val data: js.UndefOr[StringList] = js.native
   
@@ -22,36 +23,24 @@ object ToolConfig {
   }
   
   @scala.inline
-  implicit class ToolConfigOps[Self <: ToolConfig] (val x: Self) extends AnyVal {
+  implicit class ToolConfigMutableBuilder[Self <: ToolConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: StringList): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StringList): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

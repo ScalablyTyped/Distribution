@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.extensions.v1beta1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DEPRECATED 1.9 - This group version of IPBlock is deprecated by networking/v1/IPBlock. IPBlock describes a particular CIDR (Ex. "192.168.1.1/24") that is allowed to the pods matched by a NetworkPolicySpec's podSelector. The except entry describes CIDRs that should not be included within this rule.
   */
 @js.native
-trait IPBlock extends js.Object {
+trait IPBlock extends StObject {
   
   /**
     * CIDR is a string representing the IP Block Valid examples are "192.168.1.1/24"
@@ -30,30 +31,18 @@ object IPBlock {
   }
   
   @scala.inline
-  implicit class IPBlockOps[Self <: IPBlock] (val x: Self) extends AnyVal {
+  implicit class IPBlockMutableBuilder[Self <: IPBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidr(value: Input[String]): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcept(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
     
     @scala.inline
-    def setCidr(value: Input[String]): Self = this.set("cidr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExceptVarargs(value: Input[String]*): Self = this.set("except", js.Array(value :_*))
-    
-    @scala.inline
-    def setExcept(value: Input[js.Array[Input[String]]]): Self = this.set("except", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcept: Self = this.set("except", js.undefined)
+    def setExceptVarargs(value: Input[String]*): Self = StObject.set(x, "except", js.Array(value :_*))
   }
 }

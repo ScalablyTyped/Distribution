@@ -7,16 +7,16 @@ import typings.typeorm.namingStrategyNamingStrategyInterfaceMod.NamingStrategyIn
 import typings.typeorm.typesDeferrableTypeMod.DeferrableType
 import typings.typeorm.typesOnDeleteTypeMod.OnDeleteType
 import typings.typeorm.typesOnUpdateTypeMod.OnUpdateType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/metadata/ForeignKeyMetadata", JSImport.Namespace)
-@js.native
-object metadataForeignKeyMetadataMod extends js.Object {
+object metadataForeignKeyMetadataMod {
   
+  @JSImport("typeorm/metadata/ForeignKeyMetadata", "ForeignKeyMetadata")
   @js.native
-  class ForeignKeyMetadata protected () extends js.Object {
+  class ForeignKeyMetadata protected () extends StObject {
     def this(options: Deferrable) = this()
     
     /**

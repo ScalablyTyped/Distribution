@@ -5,12 +5,13 @@ import typings.jquery.JQueryInputEventObject
 import typings.jquery.JQueryKeyEventObject
 import typings.jquery.JQueryMouseEventObject
 import typings.rx.Rx.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def animateAsObservable(properties: js.Any, duration: Double): Observable[_] = js.native
   def animateAsObservable(properties: js.Any, duration: Double, easing: String): Observable[_] = js.native

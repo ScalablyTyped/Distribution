@@ -1,5 +1,6 @@
 package typings.ionicCore.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ionicCore.ionicCoreStrings.document
   - typings.ionicCore.ionicCoreStrings.window
 */
-trait ListenTargetOptions extends js.Object
+trait ListenTargetOptions extends StObject
 object ListenTargetOptions {
   
   @scala.inline

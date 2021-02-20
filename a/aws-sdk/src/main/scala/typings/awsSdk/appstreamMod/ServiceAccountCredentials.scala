@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceAccountCredentials extends js.Object {
+trait ServiceAccountCredentials extends StObject {
   
   /**
     * The user name of the account. This account must have the following privileges: create computer objects, join computers to the domain, and change/reset the password on descendant computer objects for the organizational units specified.
@@ -26,24 +27,12 @@ object ServiceAccountCredentials {
   }
   
   @scala.inline
-  implicit class ServiceAccountCredentialsOps[Self <: ServiceAccountCredentials] (val x: Self) extends AnyVal {
+  implicit class ServiceAccountCredentialsMutableBuilder[Self <: ServiceAccountCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountName(value: AccountName): Self = this.set("AccountName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccountPassword(value: AccountPassword): Self = this.set("AccountPassword", value.asInstanceOf[js.Any])
+    def setAccountPassword(value: AccountPassword): Self = StObject.set(x, "AccountPassword", value.asInstanceOf[js.Any])
   }
 }

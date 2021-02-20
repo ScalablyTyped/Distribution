@@ -1,6 +1,7 @@
 package typings.reactNative.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class RefreshControl ()
   extends Component[RefreshControlProps, js.Object, js.Any]
 /* static members */
-@JSImport("react-native", "RefreshControl")
-@js.native
-object RefreshControl extends js.Object {
+object RefreshControl {
   
-  var SIZE: js.Object = js.native
+  @JSImport("react-native", "RefreshControl")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native", "RefreshControl.SIZE")
+  @js.native
+  def SIZE: js.Object = js.native
+  @scala.inline
+  def SIZE_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIZE")(x.asInstanceOf[js.Any])
 }

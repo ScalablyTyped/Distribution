@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,129 +95,117 @@ object ContractTerm {
   }
   
   @scala.inline
-  implicit class ContractTermOps[Self <: ContractTerm] (val x: Self) extends AnyVal {
+  implicit class ContractTermMutableBuilder[Self <: ContractTerm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "actionReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionReasonUndefined: Self = StObject.set(x, "actionReason", js.undefined)
     
     @scala.inline
-    def set_issued(value: Element): Self = this.set("_issued", value.asInstanceOf[js.Any])
+    def setActionReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "actionReason", js.Array(value :_*))
     
     @scala.inline
-    def delete_issued: Self = this.set("_issued", js.undefined)
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set_text(value: Element): Self = this.set("_text", value.asInstanceOf[js.Any])
+    def setActionVarargs(value: CodeableConcept*): Self = StObject.set(x, "action", js.Array(value :_*))
     
     @scala.inline
-    def delete_text: Self = this.set("_text", js.undefined)
+    def setAgent(value: js.Array[ContractTermAgent]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionVarargs(value: CodeableConcept*): Self = this.set("action", js.Array(value :_*))
+    def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
     
     @scala.inline
-    def setAction(value: js.Array[CodeableConcept]): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setAgentVarargs(value: ContractTermAgent*): Self = StObject.set(x, "agent", js.Array(value :_*))
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setApplies(value: Period): Self = StObject.set(x, "applies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionReasonVarargs(value: CodeableConcept*): Self = this.set("actionReason", js.Array(value :_*))
+    def setAppliesUndefined: Self = StObject.set(x, "applies", js.undefined)
     
     @scala.inline
-    def setActionReason(value: js.Array[CodeableConcept]): Self = this.set("actionReason", value.asInstanceOf[js.Any])
+    def setGroup(value: js.Array[ContractTerm]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionReason: Self = this.set("actionReason", js.undefined)
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setAgentVarargs(value: ContractTermAgent*): Self = this.set("agent", js.Array(value :_*))
+    def setGroupVarargs(value: ContractTerm*): Self = StObject.set(x, "group", js.Array(value :_*))
     
     @scala.inline
-    def setAgent(value: js.Array[ContractTermAgent]): Self = this.set("agent", value.asInstanceOf[js.Any])
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAgent: Self = this.set("agent", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setApplies(value: Period): Self = this.set("applies", value.asInstanceOf[js.Any])
+    def setIssued(value: dateTime): Self = StObject.set(x, "issued", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplies: Self = this.set("applies", js.undefined)
+    def setIssuedUndefined: Self = StObject.set(x, "issued", js.undefined)
     
     @scala.inline
-    def setGroupVarargs(value: ContractTerm*): Self = this.set("group", js.Array(value :_*))
+    def setSecurityLabel(value: js.Array[Coding]): Self = StObject.set(x, "securityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: js.Array[ContractTerm]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setSecurityLabelUndefined: Self = StObject.set(x, "securityLabel", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setSecurityLabelVarargs(value: Coding*): Self = StObject.set(x, "securityLabel", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setSubType(value: CodeableConcept): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
     
     @scala.inline
-    def setIssued(value: dateTime): Self = this.set("issued", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIssued: Self = this.set("issued", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setSecurityLabelVarargs(value: Coding*): Self = this.set("securityLabel", js.Array(value :_*))
+    def setTopic(value: js.Array[Reference]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityLabel(value: js.Array[Coding]): Self = this.set("securityLabel", value.asInstanceOf[js.Any])
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
     @scala.inline
-    def deleteSecurityLabel: Self = this.set("securityLabel", js.undefined)
+    def setTopicVarargs(value: Reference*): Self = StObject.set(x, "topic", js.Array(value :_*))
     
     @scala.inline
-    def setSubType(value: CodeableConcept): Self = this.set("subType", value.asInstanceOf[js.Any])
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubType: Self = this.set("subType", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setValuedItem(value: js.Array[ContractTermValuedItem]): Self = StObject.set(x, "valuedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setValuedItemUndefined: Self = StObject.set(x, "valuedItem", js.undefined)
     
     @scala.inline
-    def setTopicVarargs(value: Reference*): Self = this.set("topic", js.Array(value :_*))
+    def setValuedItemVarargs(value: ContractTermValuedItem*): Self = StObject.set(x, "valuedItem", js.Array(value :_*))
     
     @scala.inline
-    def setTopic(value: js.Array[Reference]): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def set_issued(value: Element): Self = StObject.set(x, "_issued", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
+    def set_issuedUndefined: Self = StObject.set(x, "_issued", js.undefined)
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValuedItemVarargs(value: ContractTermValuedItem*): Self = this.set("valuedItem", js.Array(value :_*))
-    
-    @scala.inline
-    def setValuedItem(value: js.Array[ContractTermValuedItem]): Self = this.set("valuedItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValuedItem: Self = this.set("valuedItem", js.undefined)
+    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
   }
 }

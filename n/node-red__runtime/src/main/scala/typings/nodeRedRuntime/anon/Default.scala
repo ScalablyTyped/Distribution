@@ -1,12 +1,13 @@
 package typings.nodeRedRuntime.anon
 
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.credentials
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Default extends js.Object {
+trait Default extends StObject {
   
   var default: js.UndefOr[Permissions] = js.native
   
@@ -24,33 +25,21 @@ object Default {
   }
   
   @scala.inline
-  implicit class DefaultOps[Self <: Default] (val x: Self) extends AnyVal {
+  implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: Permissions): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: credentials): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: credentials): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUsers(value: js.Array[Password]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsersVarargs(value: Password*): Self = this.set("users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: js.Array[Password]): Self = this.set("users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefault(value: Permissions): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setUsersVarargs(value: Password*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

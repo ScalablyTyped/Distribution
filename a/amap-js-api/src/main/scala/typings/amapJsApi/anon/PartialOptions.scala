@@ -2,13 +2,14 @@ package typings.amapJsApi.anon
 
 import typings.amapJsApi.AMap.Bounds
 import typings.amapJsApi.AMap.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<amap-js-api.AMap.MediaLayer.Options> */
 @js.native
-trait PartialOptions extends js.Object {
+trait PartialOptions extends StObject {
   
   var bounds: js.UndefOr[Bounds] = js.native
   
@@ -29,48 +30,36 @@ object PartialOptions {
   }
   
   @scala.inline
-  implicit class PartialOptionsOps[Self <: PartialOptions] (val x: Self) extends AnyVal {
+  implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: Bounds): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setZooms(value: js.Tuple2[Double, Double]): Self = this.set("zooms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZooms: Self = this.set("zooms", js.undefined)
+    def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
   }
 }

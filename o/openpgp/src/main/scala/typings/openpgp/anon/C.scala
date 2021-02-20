@@ -1,11 +1,12 @@
 package typings.openpgp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait C extends js.Object {
+trait C extends StObject {
   
   var C: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
   
@@ -23,28 +24,16 @@ object C {
   }
   
   @scala.inline
-  implicit class COps[Self <: C] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class CMutableBuilder[Self <: C] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setC(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-    ): Self = this.set("C", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setV(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-    ): Self = this.set("V", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
   }
 }

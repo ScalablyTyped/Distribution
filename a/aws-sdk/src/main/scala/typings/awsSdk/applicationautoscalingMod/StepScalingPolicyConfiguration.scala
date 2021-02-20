@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepScalingPolicyConfiguration extends js.Object {
+trait StepScalingPolicyConfiguration extends StObject {
   
   /**
     * Specifies how the ScalingAdjustment value in a StepAdjustment is interpreted (for example, an absolute number or a percentage). The valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity.   AdjustmentType is required if you are adding a new step scaling policy configuration.
@@ -41,51 +42,39 @@ object StepScalingPolicyConfiguration {
   }
   
   @scala.inline
-  implicit class StepScalingPolicyConfigurationOps[Self <: StepScalingPolicyConfiguration] (val x: Self) extends AnyVal {
+  implicit class StepScalingPolicyConfigurationMutableBuilder[Self <: StepScalingPolicyConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustmentType(value: AdjustmentType): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustmentTypeUndefined: Self = StObject.set(x, "AdjustmentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCooldown(value: Cooldown): Self = StObject.set(x, "Cooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustmentType(value: AdjustmentType): Self = this.set("AdjustmentType", value.asInstanceOf[js.Any])
+    def setCooldownUndefined: Self = StObject.set(x, "Cooldown", js.undefined)
     
     @scala.inline
-    def deleteAdjustmentType: Self = this.set("AdjustmentType", js.undefined)
+    def setMetricAggregationType(value: MetricAggregationType): Self = StObject.set(x, "MetricAggregationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCooldown(value: Cooldown): Self = this.set("Cooldown", value.asInstanceOf[js.Any])
+    def setMetricAggregationTypeUndefined: Self = StObject.set(x, "MetricAggregationType", js.undefined)
     
     @scala.inline
-    def deleteCooldown: Self = this.set("Cooldown", js.undefined)
+    def setMinAdjustmentMagnitude(value: MinAdjustmentMagnitude): Self = StObject.set(x, "MinAdjustmentMagnitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricAggregationType(value: MetricAggregationType): Self = this.set("MetricAggregationType", value.asInstanceOf[js.Any])
+    def setMinAdjustmentMagnitudeUndefined: Self = StObject.set(x, "MinAdjustmentMagnitude", js.undefined)
     
     @scala.inline
-    def deleteMetricAggregationType: Self = this.set("MetricAggregationType", js.undefined)
+    def setStepAdjustments(value: StepAdjustments): Self = StObject.set(x, "StepAdjustments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinAdjustmentMagnitude(value: MinAdjustmentMagnitude): Self = this.set("MinAdjustmentMagnitude", value.asInstanceOf[js.Any])
+    def setStepAdjustmentsUndefined: Self = StObject.set(x, "StepAdjustments", js.undefined)
     
     @scala.inline
-    def deleteMinAdjustmentMagnitude: Self = this.set("MinAdjustmentMagnitude", js.undefined)
-    
-    @scala.inline
-    def setStepAdjustmentsVarargs(value: StepAdjustment*): Self = this.set("StepAdjustments", js.Array(value :_*))
-    
-    @scala.inline
-    def setStepAdjustments(value: StepAdjustments): Self = this.set("StepAdjustments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepAdjustments: Self = this.set("StepAdjustments", js.undefined)
+    def setStepAdjustmentsVarargs(value: StepAdjustment*): Self = StObject.set(x, "StepAdjustments", js.Array(value :_*))
   }
 }

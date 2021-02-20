@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemberFrameworkConfiguration extends js.Object {
+trait MemberFrameworkConfiguration extends StObject {
   
   /**
     * Attributes of Hyperledger Fabric for a member on a Managed Blockchain network that uses Hyperledger Fabric.
@@ -21,24 +22,12 @@ object MemberFrameworkConfiguration {
   }
   
   @scala.inline
-  implicit class MemberFrameworkConfigurationOps[Self <: MemberFrameworkConfiguration] (val x: Self) extends AnyVal {
+  implicit class MemberFrameworkConfigurationMutableBuilder[Self <: MemberFrameworkConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFabric(value: MemberFabricConfiguration): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFabric(value: MemberFabricConfiguration): Self = this.set("Fabric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFabric: Self = this.set("Fabric", js.undefined)
+    def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
   }
 }

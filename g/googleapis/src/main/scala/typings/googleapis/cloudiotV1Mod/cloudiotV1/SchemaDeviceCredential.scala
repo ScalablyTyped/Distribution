@@ -1,5 +1,6 @@
 package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A server-stored device credential used for authentication.
   */
 @js.native
-trait SchemaDeviceCredential extends js.Object {
+trait SchemaDeviceCredential extends StObject {
   
   /**
     * [Optional] The time at which this credential becomes invalid. This
@@ -41,30 +42,18 @@ object SchemaDeviceCredential {
   }
   
   @scala.inline
-  implicit class SchemaDeviceCredentialOps[Self <: SchemaDeviceCredential] (val x: Self) extends AnyVal {
+  implicit class SchemaDeviceCredentialMutableBuilder[Self <: SchemaDeviceCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKey(value: SchemaPublicKeyCredential): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
-    
-    @scala.inline
-    def setPublicKey(value: SchemaPublicKeyCredential): Self = this.set("publicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
   }
 }

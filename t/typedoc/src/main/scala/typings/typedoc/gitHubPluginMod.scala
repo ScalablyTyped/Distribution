@@ -1,17 +1,19 @@
 package typings.typedoc
 
-import typings.typedoc.componentMod.AbstractComponent
+import typings.typedoc.componentsMod.ConverterComponent
 import typings.typedoc.converterConverterMod.Converter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/converter/plugins/GitHubPlugin", JSImport.Namespace)
-@js.native
-object gitHubPluginMod extends js.Object {
+object gitHubPluginMod {
   
+  @JSImport("typedoc/dist/lib/converter/plugins/GitHubPlugin", "GitHubPlugin")
   @js.native
-  class GitHubPlugin () extends AbstractComponent[Converter] {
+  class GitHubPlugin protected () extends ConverterComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Converter) = this()
     
     var getRepository: js.Any = js.native
     
@@ -26,8 +28,9 @@ object gitHubPluginMod extends js.Object {
     var repositories: js.Any = js.native
   }
   
+  @JSImport("typedoc/dist/lib/converter/plugins/GitHubPlugin", "Repository")
   @js.native
-  class Repository protected () extends js.Object {
+  class Repository protected () extends StObject {
     def this(path: String, gitRevision: String, repoLinks: js.Array[String]) = this()
     
     var branch: String = js.native
@@ -47,9 +50,10 @@ object gitHubPluginMod extends js.Object {
     var path: String = js.native
   }
   /* static members */
-  @js.native
-  object Repository extends js.Object {
+  object Repository {
     
+    @JSImport("typedoc/dist/lib/converter/plugins/GitHubPlugin", "Repository.tryCreateRepository")
+    @js.native
     def tryCreateRepository(path: String, gitRevision: String, gitRemote: String): js.UndefOr[Repository] = js.native
   }
 }

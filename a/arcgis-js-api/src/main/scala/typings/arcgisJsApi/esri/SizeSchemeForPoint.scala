@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,42 +89,30 @@ object SizeSchemeForPoint {
   }
   
   @scala.inline
-  implicit class SizeSchemeForPointOps[Self <: SizeSchemeForPoint] (val x: Self) extends AnyVal {
+  implicit class SizeSchemeForPointMutableBuilder[Self <: SizeSchemeForPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color_): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setNoDataColor(value: Color_): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setNoDataSize(value: Double): Self = StObject.set(x, "noDataSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDataColor(value: Color_): Self = this.set("noDataColor", value.asInstanceOf[js.Any])
+    def setOutline(value: SizeSchemeForPointOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDataSize(value: Double): Self = this.set("noDataSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutline(value: SizeSchemeForPointOutline): Self = this.set("outline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

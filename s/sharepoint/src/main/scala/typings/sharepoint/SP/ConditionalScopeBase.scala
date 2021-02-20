@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalScopeBase extends js.Object {
+trait ConditionalScopeBase extends StObject {
   
   def customFromJson(initValue: js.Any): Boolean = js.native
   
@@ -35,36 +36,24 @@ object ConditionalScopeBase {
   }
   
   @scala.inline
-  implicit class ConditionalScopeBaseOps[Self <: ConditionalScopeBase] (val x: Self) extends AnyVal {
+  implicit class ConditionalScopeBaseMutableBuilder[Self <: ConditionalScopeBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomFromJson(value: js.Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromJson(value: js.Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_testResult(value: () => Boolean): Self = StObject.set(x, "get_testResult", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCustomFromJson(value: js.Any => Boolean): Self = this.set("customFromJson", js.Any.fromFunction1(value))
+    def setStartIfFalse(value: () => js.Any): Self = StObject.set(x, "startIfFalse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFromJson(value: js.Any => Unit): Self = this.set("fromJson", js.Any.fromFunction1(value))
+    def setStartIfTrue(value: () => js.Any): Self = StObject.set(x, "startIfTrue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_testResult(value: () => Boolean): Self = this.set("get_testResult", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartIfFalse(value: () => js.Any): Self = this.set("startIfFalse", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartIfTrue(value: () => js.Any): Self = this.set("startIfTrue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartScope(value: () => js.Any): Self = this.set("startScope", js.Any.fromFunction0(value))
+    def setStartScope(value: () => js.Any): Self = StObject.set(x, "startScope", js.Any.fromFunction0(value))
   }
 }

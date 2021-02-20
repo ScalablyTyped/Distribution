@@ -5,12 +5,13 @@ import typings.dockerode.dockerodeStrings.ingress
 import typings.dockerode.dockerodeStrings.sctp
 import typings.dockerode.dockerodeStrings.tcp
 import typings.dockerode.dockerodeStrings.udp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortConfig extends js.Object {
+trait PortConfig extends StObject {
   
   var Name: js.UndefOr[String] = js.native
   
@@ -31,48 +32,36 @@ object PortConfig {
   }
   
   @scala.inline
-  implicit class PortConfigOps[Self <: PortConfig] (val x: Self) extends AnyVal {
+  implicit class PortConfigMutableBuilder[Self <: PortConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProtocol(value: tcp | udp | sctp): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setPublishMode(value: ingress | host): Self = StObject.set(x, "PublishMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: tcp | udp | sctp): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    def setPublishModeUndefined: Self = StObject.set(x, "PublishMode", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    def setPublishedPort(value: Double): Self = StObject.set(x, "PublishedPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishMode(value: ingress | host): Self = this.set("PublishMode", value.asInstanceOf[js.Any])
+    def setPublishedPortUndefined: Self = StObject.set(x, "PublishedPort", js.undefined)
     
     @scala.inline
-    def deletePublishMode: Self = this.set("PublishMode", js.undefined)
+    def setTargetPort(value: Double): Self = StObject.set(x, "TargetPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedPort(value: Double): Self = this.set("PublishedPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishedPort: Self = this.set("PublishedPort", js.undefined)
-    
-    @scala.inline
-    def setTargetPort(value: Double): Self = this.set("TargetPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetPort: Self = this.set("TargetPort", js.undefined)
+    def setTargetPortUndefined: Self = StObject.set(x, "TargetPort", js.undefined)
   }
 }

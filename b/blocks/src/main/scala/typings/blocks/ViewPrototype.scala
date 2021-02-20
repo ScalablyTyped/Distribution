@@ -2,6 +2,7 @@ package typings.blocks
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.blocks.anon.Route
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,66 +57,54 @@ object ViewPrototype {
   }
   
   @scala.inline
-  implicit class ViewPrototypeOps[Self <: ViewPrototype] (val x: Self) extends AnyVal {
+  implicit class ViewPrototypeMutableBuilder[Self <: ViewPrototype] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInit(value: js.Function): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setNavigateTo(value: js.Function): Self = StObject.set(x, "navigateTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: () => Boolean): Self = this.set("isActive", js.Any.fromFunction0(value))
+    def setNavigateToUndefined: Self = StObject.set(x, "navigateTo", js.undefined)
     
     @scala.inline
-    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    def setOptions(value: Route): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigateTo(value: js.Function): Self = this.set("navigateTo", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteNavigateTo: Self = this.set("navigateTo", js.undefined)
+    def setParentView(value: js.Any): Self = StObject.set(x, "parentView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: Route): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setParentViewUndefined: Self = StObject.set(x, "parentView", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setReady(value: js.Function): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentView(value: js.Any): Self = this.set("parentView", value.asInstanceOf[js.Any])
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
     @scala.inline
-    def deleteParentView: Self = this.set("parentView", js.undefined)
+    def setRoute(value: /* name */ String => ViewPrototype): Self = StObject.set(x, "route", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReady(value: js.Function): Self = this.set("ready", value.asInstanceOf[js.Any])
+    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
     @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setRouted(value: js.Function): Self = StObject.set(x, "routed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoute(value: /* name */ String => ViewPrototype): Self = this.set("route", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRoute: Self = this.set("route", js.undefined)
-    
-    @scala.inline
-    def setRouted(value: js.Function): Self = this.set("routed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouted: Self = this.set("routed", js.undefined)
+    def setRoutedUndefined: Self = StObject.set(x, "routed", js.undefined)
   }
 }

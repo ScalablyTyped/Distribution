@@ -1,7 +1,8 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _WebhookAuthenticationType extends js.Object
+trait _WebhookAuthenticationType extends StObject

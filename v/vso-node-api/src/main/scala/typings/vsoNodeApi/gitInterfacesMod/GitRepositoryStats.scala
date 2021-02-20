@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitRepositoryStats extends js.Object {
+trait GitRepositoryStats extends StObject {
   
   var activePullRequestsCount: Double = js.native
   
@@ -24,30 +25,18 @@ object GitRepositoryStats {
   }
   
   @scala.inline
-  implicit class GitRepositoryStatsOps[Self <: GitRepositoryStats] (val x: Self) extends AnyVal {
+  implicit class GitRepositoryStatsMutableBuilder[Self <: GitRepositoryStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivePullRequestsCount(value: Double): Self = StObject.set(x, "activePullRequestsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchesCount(value: Double): Self = StObject.set(x, "branchesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitsCount(value: Double): Self = StObject.set(x, "commitsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivePullRequestsCount(value: Double): Self = this.set("activePullRequestsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBranchesCount(value: Double): Self = this.set("branchesCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommitsCount(value: Double): Self = this.set("commitsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryId(value: String): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
+    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
   }
 }

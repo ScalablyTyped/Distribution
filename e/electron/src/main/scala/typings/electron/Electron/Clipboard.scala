@@ -3,12 +3,13 @@ package typings.electron.Electron
 import typings.electron.electronStrings.clipboard
 import typings.electron.electronStrings.selection
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Clipboard extends js.Object {
+trait Clipboard extends StObject {
   
   // Docs: https://electronjs.org/docs/api/clipboard
   /**

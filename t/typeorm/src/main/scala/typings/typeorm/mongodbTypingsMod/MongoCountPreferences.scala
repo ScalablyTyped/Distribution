@@ -1,11 +1,12 @@
 package typings.typeorm.mongodbTypingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MongoCountPreferences extends js.Object {
+trait MongoCountPreferences extends StObject {
   
   /**
     * An index name hint for the query.
@@ -37,42 +38,30 @@ object MongoCountPreferences {
   }
   
   @scala.inline
-  implicit class MongoCountPreferencesOps[Self <: MongoCountPreferences] (val x: Self) extends AnyVal {
+  implicit class MongoCountPreferencesMutableBuilder[Self <: MongoCountPreferences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: scala.Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: String): Self = this.set("hint", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
+    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: scala.Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = this.set("readPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
-    
-    @scala.inline
-    def setSkip(value: Boolean): Self = this.set("skip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
   }
 }

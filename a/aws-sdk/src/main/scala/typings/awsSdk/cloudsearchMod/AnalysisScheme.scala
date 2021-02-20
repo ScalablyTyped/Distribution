@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalysisScheme extends js.Object {
+trait AnalysisScheme extends StObject {
   
   var AnalysisOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.AnalysisOptions] = js.native
   
@@ -22,30 +23,18 @@ object AnalysisScheme {
   }
   
   @scala.inline
-  implicit class AnalysisSchemeOps[Self <: AnalysisScheme] (val x: Self) extends AnyVal {
+  implicit class AnalysisSchemeMutableBuilder[Self <: AnalysisScheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisOptions(value: AnalysisOptions): Self = StObject.set(x, "AnalysisOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisOptionsUndefined: Self = StObject.set(x, "AnalysisOptions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalysisSchemeLanguage(value: AnalysisSchemeLanguage): Self = StObject.set(x, "AnalysisSchemeLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisSchemeLanguage(value: AnalysisSchemeLanguage): Self = this.set("AnalysisSchemeLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnalysisSchemeName(value: StandardName): Self = this.set("AnalysisSchemeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnalysisOptions(value: AnalysisOptions): Self = this.set("AnalysisOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnalysisOptions: Self = this.set("AnalysisOptions", js.undefined)
+    def setAnalysisSchemeName(value: StandardName): Self = StObject.set(x, "AnalysisSchemeName", value.asInstanceOf[js.Any])
   }
 }

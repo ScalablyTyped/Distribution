@@ -1,5 +1,6 @@
 package typings.nodeSql2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeSql2.nodeSql2Strings.postgres
   - typings.nodeSql2.nodeSql2Strings.sqlite
 */
-trait SQLDialects extends js.Object
+trait SQLDialects extends StObject
 object SQLDialects {
   
   @scala.inline

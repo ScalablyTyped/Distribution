@@ -1,12 +1,13 @@
 package typings.athenajs.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameOptions extends js.Object {
+trait GameOptions extends StObject {
   
   var debug: Boolean = js.native
   
@@ -33,51 +34,39 @@ object GameOptions {
   }
   
   @scala.inline
-  implicit class GameOptionsOps[Self <: GameOptions] (val x: Self) extends AnyVal {
+  implicit class GameOptionsMutableBuilder[Self <: GameOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setShowFps(value: Boolean): Self = StObject.set(x, "showFps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFps(value: Boolean): Self = this.set("showFps", value.asInstanceOf[js.Any])
+    def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
     @scala.inline
-    def setScene(value: Scene): Self = this.set("scene", value.asInstanceOf[js.Any])
+    def setTarget(value: String | HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScene: Self = this.set("scene", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def setSound(value: Boolean): Self = this.set("sound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSound: Self = this.set("sound", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String | HTMLElement): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

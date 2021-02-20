@@ -1,15 +1,14 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListItemProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends HTMLProps[js.Any] {
   
   var threeLine: js.UndefOr[Boolean] = js.native
   
@@ -24,30 +23,18 @@ object ListItemProps {
   }
   
   @scala.inline
-  implicit class ListItemPropsOps[Self <: ListItemProps] (val x: Self) extends AnyVal {
+  implicit class ListItemPropsMutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setThreeLine(value: Boolean): Self = StObject.set(x, "threeLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThreeLineUndefined: Self = StObject.set(x, "threeLine", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTwoLine(value: Boolean): Self = StObject.set(x, "twoLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeLine(value: Boolean): Self = this.set("threeLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreeLine: Self = this.set("threeLine", js.undefined)
-    
-    @scala.inline
-    def setTwoLine(value: Boolean): Self = this.set("twoLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwoLine: Self = this.set("twoLine", js.undefined)
+    def setTwoLineUndefined: Self = StObject.set(x, "twoLine", js.undefined)
   }
 }

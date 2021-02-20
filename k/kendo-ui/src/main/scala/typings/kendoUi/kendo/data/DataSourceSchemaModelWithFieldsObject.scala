@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +20,12 @@ object DataSourceSchemaModelWithFieldsObject {
   }
   
   @scala.inline
-  implicit class DataSourceSchemaModelWithFieldsObjectOps[Self <: DataSourceSchemaModelWithFieldsObject] (val x: Self) extends AnyVal {
+  implicit class DataSourceSchemaModelWithFieldsObjectMutableBuilder[Self <: DataSourceSchemaModelWithFieldsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: DataSourceSchemaModelFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFields(value: DataSourceSchemaModelFields): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

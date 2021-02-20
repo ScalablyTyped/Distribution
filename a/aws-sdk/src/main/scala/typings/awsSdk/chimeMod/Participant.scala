@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Participant extends js.Object {
+trait Participant extends StObject {
   
   /**
     * The participant's phone number.
@@ -26,30 +27,18 @@ object Participant {
   }
   
   @scala.inline
-  implicit class ParticipantOps[Self <: Participant] (val x: Self) extends AnyVal {
+  implicit class ParticipantMutableBuilder[Self <: Participant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProxyPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "ProxyPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: E164PhoneNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
-    
-    @scala.inline
-    def setProxyPhoneNumber(value: E164PhoneNumber): Self = this.set("ProxyPhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyPhoneNumber: Self = this.set("ProxyPhoneNumber", js.undefined)
+    def setProxyPhoneNumberUndefined: Self = StObject.set(x, "ProxyPhoneNumber", js.undefined)
   }
 }

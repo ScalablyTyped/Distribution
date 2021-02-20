@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Template extends js.Object {
+trait Template extends StObject {
   
   /**
     * The HTML body of the email.
@@ -36,39 +37,27 @@ object Template {
   }
   
   @scala.inline
-  implicit class TemplateOps[Self <: Template] (val x: Self) extends AnyVal {
+  implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHtmlPart(value: HtmlPart): Self = StObject.set(x, "HtmlPart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHtmlPartUndefined: Self = StObject.set(x, "HtmlPart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubjectPart(value: SubjectPart): Self = StObject.set(x, "SubjectPart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: TemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    def setSubjectPartUndefined: Self = StObject.set(x, "SubjectPart", js.undefined)
     
     @scala.inline
-    def setHtmlPart(value: HtmlPart): Self = this.set("HtmlPart", value.asInstanceOf[js.Any])
+    def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHtmlPart: Self = this.set("HtmlPart", js.undefined)
+    def setTextPart(value: TextPart): Self = StObject.set(x, "TextPart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectPart(value: SubjectPart): Self = this.set("SubjectPart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectPart: Self = this.set("SubjectPart", js.undefined)
-    
-    @scala.inline
-    def setTextPart(value: TextPart): Self = this.set("TextPart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextPart: Self = this.set("TextPart", js.undefined)
+    def setTextPartUndefined: Self = StObject.set(x, "TextPart", js.undefined)
   }
 }

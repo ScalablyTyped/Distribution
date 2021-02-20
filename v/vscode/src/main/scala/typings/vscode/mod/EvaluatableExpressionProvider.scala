@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EvaluatableExpressionProvider extends js.Object {
+trait EvaluatableExpressionProvider extends StObject {
   
   /**
     * Provide an evaluatable expression for the given document and position.
@@ -31,21 +32,9 @@ object EvaluatableExpressionProvider {
   }
   
   @scala.inline
-  implicit class EvaluatableExpressionProviderOps[Self <: EvaluatableExpressionProvider] (val x: Self) extends AnyVal {
+  implicit class EvaluatableExpressionProviderMutableBuilder[Self <: EvaluatableExpressionProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvideEvaluatableExpression(value: (TextDocument, Position, CancellationToken) => ProviderResult[EvaluatableExpression]): Self = this.set("provideEvaluatableExpression", js.Any.fromFunction3(value))
+    def setProvideEvaluatableExpression(value: (TextDocument, Position, CancellationToken) => ProviderResult[EvaluatableExpression]): Self = StObject.set(x, "provideEvaluatableExpression", js.Any.fromFunction3(value))
   }
 }

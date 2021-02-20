@@ -1,11 +1,12 @@
 package typings.sharedb.sharedbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Snapshot extends js.Object {
+trait Snapshot extends StObject {
   
   var data: js.UndefOr[js.Any] = js.native
   
@@ -26,42 +27,30 @@ object Snapshot {
   }
   
   @scala.inline
-  implicit class SnapshotOps[Self <: Snapshot] (val x: Self) extends AnyVal {
+  implicit class SnapshotMutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setM(value: SnapshotMeta): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV(value: Double): Self = this.set("v", value.asInstanceOf[js.Any])
+    def setMNull: Self = StObject.set(x, "m", null)
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setM(value: SnapshotMeta): Self = this.set("m", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMNull: Self = this.set("m", null)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

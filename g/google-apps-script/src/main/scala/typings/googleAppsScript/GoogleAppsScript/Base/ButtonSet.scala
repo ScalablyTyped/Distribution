@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ButtonSet extends js.Object
+sealed trait ButtonSet extends StObject
 /**
   * An enum representing predetermined, localized sets of one or more dialog buttons that can be
   * added to an alert or a prompt. To determine which button the user clicked,
@@ -24,7 +25,7 @@ sealed trait ButtonSet extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Base.ButtonSet")
 @js.native
-object ButtonSet extends js.Object {
+object ButtonSet extends StObject {
   
   @js.native
   sealed trait OK extends ButtonSet

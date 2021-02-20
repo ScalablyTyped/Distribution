@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,54 +45,42 @@ object ClaimResponseItemDetailSubDetail {
   }
   
   @scala.inline
-  implicit class ClaimResponseItemDetailSubDetailOps[Self <: ClaimResponseItemDetailSubDetail] (val x: Self) extends AnyVal {
+  implicit class ClaimResponseItemDetailSubDetailMutableBuilder[Self <: ClaimResponseItemDetailSubDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjudication(value: js.Array[ClaimResponseItemAdjudication]): Self = StObject.set(x, "adjudication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjudicationUndefined: Self = StObject.set(x, "adjudication", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdjudicationVarargs(value: ClaimResponseItemAdjudication*): Self = StObject.set(x, "adjudication", js.Array(value :_*))
     
     @scala.inline
-    def setSequenceLinkId(value: positiveInt): Self = this.set("sequenceLinkId", value.asInstanceOf[js.Any])
+    def setNoteNumber(value: js.Array[positiveInt]): Self = StObject.set(x, "noteNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_noteNumberVarargs(value: Element*): Self = this.set("_noteNumber", js.Array(value :_*))
+    def setNoteNumberUndefined: Self = StObject.set(x, "noteNumber", js.undefined)
     
     @scala.inline
-    def set_noteNumber(value: js.Array[Element]): Self = this.set("_noteNumber", value.asInstanceOf[js.Any])
+    def setNoteNumberVarargs(value: positiveInt*): Self = StObject.set(x, "noteNumber", js.Array(value :_*))
     
     @scala.inline
-    def delete_noteNumber: Self = this.set("_noteNumber", js.undefined)
+    def setSequenceLinkId(value: positiveInt): Self = StObject.set(x, "sequenceLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sequenceLinkId(value: Element): Self = this.set("_sequenceLinkId", value.asInstanceOf[js.Any])
+    def set_noteNumber(value: js.Array[Element]): Self = StObject.set(x, "_noteNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sequenceLinkId: Self = this.set("_sequenceLinkId", js.undefined)
+    def set_noteNumberUndefined: Self = StObject.set(x, "_noteNumber", js.undefined)
     
     @scala.inline
-    def setAdjudicationVarargs(value: ClaimResponseItemAdjudication*): Self = this.set("adjudication", js.Array(value :_*))
+    def set_noteNumberVarargs(value: Element*): Self = StObject.set(x, "_noteNumber", js.Array(value :_*))
     
     @scala.inline
-    def setAdjudication(value: js.Array[ClaimResponseItemAdjudication]): Self = this.set("adjudication", value.asInstanceOf[js.Any])
+    def set_sequenceLinkId(value: Element): Self = StObject.set(x, "_sequenceLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdjudication: Self = this.set("adjudication", js.undefined)
-    
-    @scala.inline
-    def setNoteNumberVarargs(value: positiveInt*): Self = this.set("noteNumber", js.Array(value :_*))
-    
-    @scala.inline
-    def setNoteNumber(value: js.Array[positiveInt]): Self = this.set("noteNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoteNumber: Self = this.set("noteNumber", js.undefined)
+    def set_sequenceLinkIdUndefined: Self = StObject.set(x, "_sequenceLinkId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateBordersRequest extends js.Object {
+trait UpdateBordersRequest extends StObject {
   
   /** The border to put at the bottom of the range. */
   var bottom: js.UndefOr[Border] = js.native
@@ -37,60 +38,48 @@ object UpdateBordersRequest {
   }
   
   @scala.inline
-  implicit class UpdateBordersRequestOps[Self <: UpdateBordersRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateBordersRequestMutableBuilder[Self <: UpdateBordersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottom(value: Border): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInnerHorizontal(value: Border): Self = StObject.set(x, "innerHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: Border): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setInnerHorizontalUndefined: Self = StObject.set(x, "innerHorizontal", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setInnerVertical(value: Border): Self = StObject.set(x, "innerVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerHorizontal(value: Border): Self = this.set("innerHorizontal", value.asInstanceOf[js.Any])
+    def setInnerVerticalUndefined: Self = StObject.set(x, "innerVertical", js.undefined)
     
     @scala.inline
-    def deleteInnerHorizontal: Self = this.set("innerHorizontal", js.undefined)
+    def setLeft(value: Border): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerVertical(value: Border): Self = this.set("innerVertical", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteInnerVertical: Self = this.set("innerVertical", js.undefined)
+    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Border): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setRight(value: Border): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: GridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setTop(value: Border): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: Border): Self = this.set("right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
-    
-    @scala.inline
-    def setTop(value: Border): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

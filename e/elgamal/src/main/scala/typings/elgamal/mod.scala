@@ -3,14 +3,35 @@ package typings.elgamal
 import typings.jsbn.mod.BigInteger
 import typings.jsbn.mod.RandomGenerator
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("elgamal", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("elgamal", JSImport.Default)
+  @js.native
+  class default protected () extends ElGamal {
+    def this(
+      p: BigInteger | String | Double,
+      g: BigInteger | String | Double,
+      y: BigInteger | String | Double,
+      x: BigInteger | String | Double
+    ) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("elgamal", "default.generateAsync")
+    @js.native
+    def generateAsync(): js.Promise[ElGamal] = js.native
+    @JSImport("elgamal", "default.generateAsync")
+    @js.native
+    def generateAsync(primeBits: Double): js.Promise[ElGamal] = js.native
+  }
+  
+  @JSImport("elgamal", "BigInt")
   @js.native
   class BigInt protected () extends BigInteger {
     def this(a: String) = this()
@@ -22,16 +43,28 @@ object mod extends js.Object {
     def this(a: Double, b: Double, c: RandomGenerator) = this()
   }
   /* static members */
-  @js.native
-  object BigInt extends js.Object {
+  object BigInt {
     
-    var ONE: BigInteger = js.native
+    @JSImport("elgamal", "BigInt")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ZERO: BigInteger = js.native
+    @JSImport("elgamal", "BigInt.ONE")
+    @js.native
+    def ONE: BigInteger = js.native
+    @scala.inline
+    def ONE_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("elgamal", "BigInt.ZERO")
+    @js.native
+    def ZERO: BigInteger = js.native
+    @scala.inline
+    def ZERO_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("elgamal", "DecryptedValue")
   @js.native
-  class DecryptedValue protected () extends js.Object {
+  class DecryptedValue protected () extends StObject {
     def this(m: String) = this()
     def this(m: Double) = this()
     def this(m: BigInteger) = this()
@@ -39,8 +72,53 @@ object mod extends js.Object {
     var bi: BigInteger = js.native
   }
   
+  @JSImport("elgamal", "EncryptedValue")
   @js.native
-  trait ElGamal extends js.Object {
+  class EncryptedValue protected () extends StObject {
+    def this(a: BigInteger, b: BigInteger) = this()
+    
+    var a: BigInteger = js.native
+    
+    var b: BigInteger = js.native
+    
+    def multiply(encryptedValue: EncryptedValue): EncryptedValue = js.native
+  }
+  
+  @JSImport("elgamal", "MissingPrivateKeyError")
+  @js.native
+  class MissingPrivateKeyError () extends Error
+  
+  object Utils {
+    
+    @JSImport("elgamal", "Utils.BIG_TWO")
+    @js.native
+    val BIG_TWO: BigInteger = js.native
+    
+    @JSImport("elgamal", "Utils.getBigPrimeAsync")
+    @js.native
+    def getBigPrimeAsync(bits: Double): js.Promise[BigInteger] = js.native
+    
+    @JSImport("elgamal", "Utils.getRandomBigIntAsync")
+    @js.native
+    def getRandomBigIntAsync(min: BigInteger, max: BigInteger): js.Promise[BigInteger] = js.native
+    
+    @JSImport("elgamal", "Utils.getRandomNbitBigIntAsync")
+    @js.native
+    def getRandomNbitBigIntAsync(bits: Double): js.Promise[BigInteger] = js.native
+    
+    @JSImport("elgamal", "Utils.parseBigInt")
+    @js.native
+    def parseBigInt(obj: String): BigInteger | Null = js.native
+    @JSImport("elgamal", "Utils.parseBigInt")
+    @js.native
+    def parseBigInt(obj: Double): BigInteger | Null = js.native
+    @JSImport("elgamal", "Utils.parseBigInt")
+    @js.native
+    def parseBigInt(obj: BigInteger): BigInteger | Null = js.native
+  }
+  
+  @js.native
+  trait ElGamal extends StObject {
     
     def decryptAsync(m: EncryptedValue): js.Promise[DecryptedValue] = js.native
     
@@ -64,52 +142,5 @@ object mod extends js.Object {
     var x: BigInteger = js.native
     
     var y: BigInteger = js.native
-  }
-  
-  @js.native
-  class EncryptedValue protected () extends js.Object {
-    def this(a: BigInteger, b: BigInteger) = this()
-    
-    var a: BigInteger = js.native
-    
-    var b: BigInteger = js.native
-    
-    def multiply(encryptedValue: EncryptedValue): EncryptedValue = js.native
-  }
-  
-  @js.native
-  class MissingPrivateKeyError () extends Error
-  
-  @js.native
-  object Utils extends js.Object {
-    
-    val BIG_TWO: BigInteger = js.native
-    
-    def getBigPrimeAsync(bits: Double): js.Promise[BigInteger] = js.native
-    
-    def getRandomBigIntAsync(min: BigInteger, max: BigInteger): js.Promise[BigInteger] = js.native
-    
-    def getRandomNbitBigIntAsync(bits: Double): js.Promise[BigInteger] = js.native
-    
-    def parseBigInt(obj: String): BigInteger | Null = js.native
-    def parseBigInt(obj: Double): BigInteger | Null = js.native
-    def parseBigInt(obj: BigInteger): BigInteger | Null = js.native
-  }
-  
-  @js.native
-  class default protected () extends ElGamal {
-    def this(
-      p: BigInteger | String | Double,
-      g: BigInteger | String | Double,
-      y: BigInteger | String | Double,
-      x: BigInteger | String | Double
-    ) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def generateAsync(): js.Promise[ElGamal] = js.native
-    def generateAsync(primeBits: Double): js.Promise[ElGamal] = js.native
   }
 }

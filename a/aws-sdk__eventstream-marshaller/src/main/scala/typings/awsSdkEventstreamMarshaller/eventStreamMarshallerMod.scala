@@ -6,16 +6,16 @@ import typings.awsSdkTypes.utilMod.Decoder
 import typings.awsSdkTypes.utilMod.Encoder
 import typings.std.ArrayBufferView
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/eventstream-marshaller/dist/cjs/EventStreamMarshaller", JSImport.Namespace)
-@js.native
-object eventStreamMarshallerMod extends js.Object {
+object eventStreamMarshallerMod {
   
+  @JSImport("@aws-sdk/eventstream-marshaller/dist/cjs/EventStreamMarshaller", "EventStreamMarshaller")
   @js.native
-  class EventStreamMarshaller protected () extends js.Object {
+  class EventStreamMarshaller protected () extends StObject {
     def this(toUtf8: Encoder, fromUtf8: Decoder) = this()
     
     /**

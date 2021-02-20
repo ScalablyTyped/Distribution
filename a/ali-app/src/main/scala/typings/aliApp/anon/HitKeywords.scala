@@ -1,12 +1,13 @@
 package typings.aliApp.anon
 
 import typings.aliApp.my.TextRiskIdentificationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HitKeywords extends js.Object {
+trait HitKeywords extends StObject {
   
   /**
     * 仅当识别命中了 type 为 keyword 时，才会返回该字段
@@ -33,36 +34,24 @@ object HitKeywords {
   }
   
   @scala.inline
-  implicit class HitKeywordsOps[Self <: HitKeywords] (val x: Self) extends AnyVal {
+  implicit class HitKeywordsMutableBuilder[Self <: HitKeywords] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHitKeywords(value: js.Array[String]): Self = StObject.set(x, "hitKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHitKeywordsUndefined: Self = StObject.set(x, "hitKeywords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHitKeywordsVarargs(value: String*): Self = StObject.set(x, "hitKeywords", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: TextRiskIdentificationType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitKeywordsVarargs(value: String*): Self = this.set("hitKeywords", js.Array(value :_*))
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def setHitKeywords(value: js.Array[String]): Self = this.set("hitKeywords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHitKeywords: Self = this.set("hitKeywords", js.undefined)
-    
-    @scala.inline
-    def setScore(value: String): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setType(value: TextRiskIdentificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

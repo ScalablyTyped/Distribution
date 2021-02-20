@@ -6,13 +6,14 @@ import typings.squareConnect.squareConnectStrings.NO_SALE
 import typings.squareConnect.squareConnectStrings.OTHER
 import typings.squareConnect.squareConnectStrings.SQUARE_GIFT_CARD
 import typings.squareConnect.squareConnectStrings.THIRD_PARTY_CARD
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "Tender")
 @js.native
-class Tender () extends js.Object {
+class Tender () extends StObject {
   
   /**
     * Additional recipients (other than the merchant) receiving a portion of this tender.

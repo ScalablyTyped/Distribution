@@ -5,12 +5,13 @@ import typings.angularCommon.angularCommonStrings.arraybuffer
 import typings.angularCommon.angularCommonStrings.response
 import typings.angularCommon.httpHttpMod.HttpHeaders
 import typings.angularCommon.httpHttpMod.HttpParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParamsReportProgress extends js.Object {
+trait ParamsReportProgress extends StObject {
   
   var body: js.UndefOr[js.Any] = js.native
   
@@ -35,54 +36,42 @@ object ParamsReportProgress {
   }
   
   @scala.inline
-  implicit class ParamsReportProgressOps[Self <: ParamsReportProgress] (val x: Self) extends AnyVal {
+  implicit class ParamsReportProgressMutableBuilder[Self <: ParamsReportProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: HttpHeaders | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserve(value: response): Self = this.set("observe", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setResponseType(value: arraybuffer): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setObserve(value: response): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: js.Any): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setParams(value: HttpParams | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def setHeaders(value: HttpHeaders | (StringDictionary[String | js.Array[String]])): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
     
     @scala.inline
-    def setParams(value: HttpParams | (StringDictionary[String | js.Array[String]])): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setResponseType(value: arraybuffer): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportProgress(value: Boolean): Self = this.set("reportProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportProgress: Self = this.set("reportProgress", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

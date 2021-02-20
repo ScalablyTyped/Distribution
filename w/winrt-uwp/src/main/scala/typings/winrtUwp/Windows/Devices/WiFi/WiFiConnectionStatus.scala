@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.WiFi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiConnectionStatus extends js.Object
+sealed trait WiFiConnectionStatus extends StObject
 /** Status of the connection attempt. */
 @JSGlobal("Windows.Devices.WiFi.WiFiConnectionStatus")
 @js.native
-object WiFiConnectionStatus extends js.Object {
+object WiFiConnectionStatus extends StObject {
   
   /** Connection failed because access to the network has been revoked. */
   @js.native

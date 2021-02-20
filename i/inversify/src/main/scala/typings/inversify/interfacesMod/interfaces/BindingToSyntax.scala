@@ -1,12 +1,13 @@
 package typings.inversify.interfacesMod.interfaces
 
 import typings.inversify.anon.Instantiable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindingToSyntax[T] extends js.Object {
+trait BindingToSyntax[T] extends StObject {
   
   def to(constructor: Instantiable[T]): BindingInWhenOnSyntax[T] = js.native
   
@@ -48,48 +49,36 @@ object BindingToSyntax {
   }
   
   @scala.inline
-  implicit class BindingToSyntaxOps[Self <: BindingToSyntax[_], T] (val x: Self with BindingToSyntax[T]) extends AnyVal {
+  implicit class BindingToSyntaxMutableBuilder[Self <: BindingToSyntax[_], T] (val x: Self with BindingToSyntax[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTo(value: Instantiable[T] => BindingInWhenOnSyntax[T]): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setToAutoFactory(value: ServiceIdentifier[js.Any] => BindingWhenOnSyntax[T]): Self = StObject.set(x, "toAutoFactory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToConstantValue(value: T => BindingWhenOnSyntax[T]): Self = StObject.set(x, "toConstantValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTo(value: Instantiable[T] => BindingInWhenOnSyntax[T]): Self = this.set("to", js.Any.fromFunction1(value))
+    def setToConstructor(value: Newable[js.Any] => BindingWhenOnSyntax[T]): Self = StObject.set(x, "toConstructor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToAutoFactory(value: ServiceIdentifier[js.Any] => BindingWhenOnSyntax[T]): Self = this.set("toAutoFactory", js.Any.fromFunction1(value))
+    def setToDynamicValue(value: js.Function1[/* context */ Context, T] => BindingInWhenOnSyntax[T]): Self = StObject.set(x, "toDynamicValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToConstantValue(value: T => BindingWhenOnSyntax[T]): Self = this.set("toConstantValue", js.Any.fromFunction1(value))
+    def setToFactory(value: FactoryCreator[js.Any] => BindingWhenOnSyntax[T]): Self = StObject.set(x, "toFactory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToConstructor(value: Newable[js.Any] => BindingWhenOnSyntax[T]): Self = this.set("toConstructor", js.Any.fromFunction1(value))
+    def setToFunction(value: T => BindingWhenOnSyntax[T]): Self = StObject.set(x, "toFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToDynamicValue(value: js.Function1[/* context */ Context, T] => BindingInWhenOnSyntax[T]): Self = this.set("toDynamicValue", js.Any.fromFunction1(value))
+    def setToProvider(value: ProviderCreator[js.Any] => BindingWhenOnSyntax[T]): Self = StObject.set(x, "toProvider", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToFactory(value: FactoryCreator[js.Any] => BindingWhenOnSyntax[T]): Self = this.set("toFactory", js.Any.fromFunction1(value))
+    def setToSelf(value: () => BindingInWhenOnSyntax[T]): Self = StObject.set(x, "toSelf", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToFunction(value: T => BindingWhenOnSyntax[T]): Self = this.set("toFunction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToProvider(value: ProviderCreator[js.Any] => BindingWhenOnSyntax[T]): Self = this.set("toProvider", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToSelf(value: () => BindingInWhenOnSyntax[T]): Self = this.set("toSelf", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToService(value: ServiceIdentifier[T] => Unit): Self = this.set("toService", js.Any.fromFunction1(value))
+    def setToService(value: ServiceIdentifier[T] => Unit): Self = StObject.set(x, "toService", js.Any.fromFunction1(value))
   }
 }

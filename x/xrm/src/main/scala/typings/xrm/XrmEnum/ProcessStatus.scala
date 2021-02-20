@@ -3,6 +3,7 @@ package typings.xrm.XrmEnum
 import typings.xrm.xrmStrings.aborted
 import typings.xrm.xrmStrings.active
 import typings.xrm.xrmStrings.finished
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.aborted
   - typings.xrm.xrmStrings.finished
 */
-trait ProcessStatus extends js.Object
+trait ProcessStatus extends StObject
 object ProcessStatus {
   
   @scala.inline

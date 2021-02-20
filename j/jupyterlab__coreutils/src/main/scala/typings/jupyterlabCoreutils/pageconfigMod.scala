@@ -2,31 +2,73 @@ package typings.jupyterlabCoreutils
 
 import typings.jupyterlabCoreutils.anon.Download
 import typings.jupyterlabCoreutils.anon.Raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/coreutils/lib/pageconfig", JSImport.Namespace)
-@js.native
-object pageconfigMod extends js.Object {
+object pageconfigMod {
   
-  @js.native
-  object PageConfig extends js.Object {
+  object PageConfig {
+    
+    /**
+      * The namespace for page config `Extension` functions.
+      */
+    object Extension {
+      
+      /**
+        * The collection of deferred extensions in page config.
+        */
+      @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.Extension.deferred")
+      @js.native
+      val deferred: js.Array[Raw] = js.native
+      
+      /**
+        * The collection of disabled extensions in page config.
+        */
+      @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.Extension.disabled")
+      @js.native
+      val disabled: js.Array[Raw] = js.native
+      
+      /**
+        * Returns whether a plugin is deferred.
+        *
+        * @param id - The plugin ID.
+        */
+      @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.Extension.isDeferred")
+      @js.native
+      def isDeferred(id: String): Boolean = js.native
+      
+      /**
+        * Returns whether a plugin is disabled.
+        *
+        * @param id - The plugin ID.
+        */
+      @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.Extension.isDisabled")
+      @js.native
+      def isDisabled(id: String): Boolean = js.native
+    }
     
     /**
       * Get the base url for a Jupyter application, or the base url of the page.
       */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getBaseUrl")
+    @js.native
     def getBaseUrl(): String = js.native
     
     /**
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getNBConvertURL")
+    @js.native
     def getNBConvertURL(hasPathFormatDownload: Download): String = js.native
     
     /**
       * Get the Notebook version info [major, minor, patch].
       */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getNotebookVersion")
+    @js.native
     def getNotebookVersion(): js.Tuple3[Double, Double, Double] = js.native
     
     /**
@@ -47,16 +89,22 @@ object pageconfigMod extends js.Object {
       * with a `--jupyter-config-data` option pointing to a JSON settings
       * file.
       */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getOption")
+    @js.native
     def getOption(name: String): String = js.native
     
     /**
       * Get the base url for sharing links (usually baseUrl)
       */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getShareUrl")
+    @js.native
     def getShareUrl(): String = js.native
     
     /**
       * Get the authorization token for a Jupyter application.
       */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getToken")
+    @js.native
     def getToken(): String = js.native
     
     /**
@@ -64,17 +112,25 @@ object pageconfigMod extends js.Object {
       * Usually the same as treeUrl,
       * but overrideable e.g. when sharing with JupyterHub.
       */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getTreeShareUrl")
+    @js.native
     def getTreeShareUrl(): String = js.native
     
     /**
       * Get the tree url for a JupyterLab application.
       */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getTreeUrl")
+    @js.native
     def getTreeUrl(): String = js.native
     
     /**
       * Get the base websocket url for a Jupyter application, or an empty string.
       */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getWsUrl")
+    @js.native
     def getWsUrl(): String = js.native
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.getWsUrl")
+    @js.native
     def getWsUrl(baseUrl: String): String = js.native
     
     /**
@@ -85,37 +141,8 @@ object pageconfigMod extends js.Object {
       *
       * @returns The last config value or an empty string if it doesn't exist.
       */
-    def setOption(name: String, value: String): String = js.native
-    
-    /**
-      * The namespace for page config `Extension` functions.
-      */
+    @JSImport("@jupyterlab/coreutils/lib/pageconfig", "PageConfig.setOption")
     @js.native
-    object Extension extends js.Object {
-      
-      /**
-        * The collection of deferred extensions in page config.
-        */
-      val deferred: js.Array[Raw] = js.native
-      
-      /**
-        * The collection of disabled extensions in page config.
-        */
-      val disabled: js.Array[Raw] = js.native
-      
-      /**
-        * Returns whether a plugin is deferred.
-        *
-        * @param id - The plugin ID.
-        */
-      def isDeferred(id: String): Boolean = js.native
-      
-      /**
-        * Returns whether a plugin is disabled.
-        *
-        * @param id - The plugin ID.
-        */
-      def isDisabled(id: String): Boolean = js.native
-    }
+    def setOption(name: String, value: String): String = js.native
   }
 }

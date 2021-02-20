@@ -13,12 +13,13 @@ import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.absolute
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.bold
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.normal
 import typings.reactNativeMaterialKit.reactNativeMaterialKitStrings.relative
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CardTitleStyle extends js.Object {
+trait CardTitleStyle extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.native
   
@@ -47,66 +48,54 @@ object CardTitleStyle {
   }
   
   @scala.inline
-  implicit class CardTitleStyleOps[Self <: CardTitleStyle] (val x: Self) extends AnyVal {
+  implicit class CardTitleStyleMutableBuilder[Self <: CardTitleStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setFontWeight(value: normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setPosition(value: absolute | relative): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: absolute | relative): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

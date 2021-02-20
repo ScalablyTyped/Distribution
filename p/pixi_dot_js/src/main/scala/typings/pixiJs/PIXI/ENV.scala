@@ -1,11 +1,12 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ENV extends js.Object
+sealed trait ENV extends StObject
 /**
   * Different types of environments for WebGL.
   *
@@ -20,7 +21,7 @@ sealed trait ENV extends js.Object
   */
 @JSGlobal("PIXI.ENV")
 @js.native
-object ENV extends js.Object {
+object ENV extends StObject {
   
   @js.native
   sealed trait WEBGL extends ENV

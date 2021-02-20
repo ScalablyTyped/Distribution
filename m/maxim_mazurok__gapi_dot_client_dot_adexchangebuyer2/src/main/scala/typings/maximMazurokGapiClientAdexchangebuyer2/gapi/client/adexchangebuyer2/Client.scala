@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   /** The globally-unique numerical ID of the client. The value of this field is ignored in create and update operations. */
   var clientAccountId: js.UndefOr[String] = js.native
@@ -59,72 +60,60 @@ object Client {
   }
   
   @scala.inline
-  implicit class ClientOps[Self <: Client] (val x: Self) extends AnyVal {
+  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientAccountId(value: String): Self = StObject.set(x, "clientAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientAccountIdUndefined: Self = StObject.set(x, "clientAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAccountId(value: String): Self = this.set("clientAccountId", value.asInstanceOf[js.Any])
+    def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
     
     @scala.inline
-    def deleteClientAccountId: Self = this.set("clientAccountId", js.undefined)
+    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientName(value: String): Self = this.set("clientName", value.asInstanceOf[js.Any])
+    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     @scala.inline
-    def deleteClientName: Self = this.set("clientName", js.undefined)
+    def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    def setEntityNameUndefined: Self = StObject.set(x, "entityName", js.undefined)
     
     @scala.inline
-    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityName(value: String): Self = this.set("entityName", value.asInstanceOf[js.Any])
+    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
     @scala.inline
-    def deleteEntityName: Self = this.set("entityName", js.undefined)
+    def setPartnerClientId(value: String): Self = StObject.set(x, "partnerClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityType(value: String): Self = this.set("entityType", value.asInstanceOf[js.Any])
+    def setPartnerClientIdUndefined: Self = StObject.set(x, "partnerClientId", js.undefined)
     
     @scala.inline
-    def deleteEntityType: Self = this.set("entityType", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerClientId(value: String): Self = this.set("partnerClientId", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deletePartnerClientId: Self = this.set("partnerClientId", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setVisibleToSeller(value: Boolean): Self = StObject.set(x, "visibleToSeller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setVisibleToSeller(value: Boolean): Self = this.set("visibleToSeller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleToSeller: Self = this.set("visibleToSeller", js.undefined)
+    def setVisibleToSellerUndefined: Self = StObject.set(x, "visibleToSeller", js.undefined)
   }
 }

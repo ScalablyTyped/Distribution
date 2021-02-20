@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetNamedQueryInput extends js.Object {
+trait BatchGetNamedQueryInput extends StObject {
   
   /**
     * An array of query IDs.
@@ -21,24 +22,12 @@ object BatchGetNamedQueryInput {
   }
   
   @scala.inline
-  implicit class BatchGetNamedQueryInputOps[Self <: BatchGetNamedQueryInput] (val x: Self) extends AnyVal {
+  implicit class BatchGetNamedQueryInputMutableBuilder[Self <: BatchGetNamedQueryInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamedQueryIds(value: NamedQueryIdList): Self = StObject.set(x, "NamedQueryIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNamedQueryIdsVarargs(value: NamedQueryId*): Self = this.set("NamedQueryIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setNamedQueryIds(value: NamedQueryIdList): Self = this.set("NamedQueryIds", value.asInstanceOf[js.Any])
+    def setNamedQueryIdsVarargs(value: NamedQueryId*): Self = StObject.set(x, "NamedQueryIds", js.Array(value :_*))
   }
 }

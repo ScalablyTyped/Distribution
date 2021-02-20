@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Declares client constants that contain the identifiers of ribbon minimization states.
   */
 @js.native
-trait ASPxClientRibbonState extends js.Object
+trait ASPxClientRibbonState extends StObject

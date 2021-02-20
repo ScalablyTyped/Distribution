@@ -6,12 +6,13 @@ import typings.mapboxGl.mapboxGlStrings.POST
 import typings.mapboxGl.mapboxGlStrings.PUT
 import typings.mapboxGl.mapboxGlStrings.`same-origin`
 import typings.mapboxGl.mapboxGlStrings.include
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestParameters extends js.Object {
+trait RequestParameters extends StObject {
   
   var collectResourceTiming: js.UndefOr[Boolean] = js.native
   
@@ -41,45 +42,33 @@ object RequestParameters {
   }
   
   @scala.inline
-  implicit class RequestParametersOps[Self <: RequestParameters] (val x: Self) extends AnyVal {
+  implicit class RequestParametersMutableBuilder[Self <: RequestParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectResourceTiming(value: Boolean): Self = StObject.set(x, "collectResourceTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectResourceTimingUndefined: Self = StObject.set(x, "collectResourceTiming", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentials(value: `same-origin` | include): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def setCollectResourceTiming(value: Boolean): Self = this.set("collectResourceTiming", value.asInstanceOf[js.Any])
+    def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollectResourceTiming: Self = this.set("collectResourceTiming", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setCredentials(value: `same-origin` | include): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setMethod(value: GET | POST | PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setHeaders(value: StringDictionary[js.Any]): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    
-    @scala.inline
-    def setMethod(value: GET | POST | PUT): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

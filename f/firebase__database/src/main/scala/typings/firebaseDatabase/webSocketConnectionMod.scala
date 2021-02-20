@@ -4,16 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.transportMod.Transport
 import typings.std.WebSocket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", JSImport.Namespace)
-@js.native
-object webSocketConnectionMod extends js.Object {
+object webSocketConnectionMod {
   
-  def setWebSocketImpl(impl: js.Any): Unit = js.native
-  
+  @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection")
   @js.native
   class WebSocketConnection protected () extends Transport {
     /**
@@ -130,8 +128,11 @@ object webSocketConnectionMod extends js.Object {
     var totalFrames: Double = js.native
   }
   /* static members */
-  @js.native
-  object WebSocketConnection extends js.Object {
+  object WebSocketConnection {
+    
+    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @param {RepoInfo} repoInfo The info for the websocket endpoint.
@@ -141,30 +142,56 @@ object webSocketConnectionMod extends js.Object {
       * @return {string} connection url
       * @private
       */
-    var connectionURL_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.connectionURL_")
+    @js.native
+    def connectionURL_ : js.Any = js.native
+    @scala.inline
+    def connectionURL__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionURL_")(x.asInstanceOf[js.Any])
     
+    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.forceDisallow")
+    @js.native
     def forceDisallow(): Unit = js.native
     
-    var forceDisallow_ : Boolean = js.native
+    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.forceDisallow_")
+    @js.native
+    def forceDisallow_ : Boolean = js.native
+    @scala.inline
+    def forceDisallow__=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceDisallow_")(x.asInstanceOf[js.Any])
     
     /**
       * Time to wait for the connection te become healthy before giving up.
       * @type {number}
       */
-    var healthyTimeout: Double = js.native
+    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.healthyTimeout")
+    @js.native
+    def healthyTimeout: Double = js.native
+    @scala.inline
+    def healthyTimeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("healthyTimeout")(x.asInstanceOf[js.Any])
     
+    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.isAvailable")
+    @js.native
     def isAvailable(): Boolean = js.native
     
     /**
       * Returns true if we previously failed to connect with this transport.
       * @return {boolean}
       */
+    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.previouslyFailed")
+    @js.native
     def previouslyFailed(): Boolean = js.native
     
     /**
       * Number of response before we consider the connection "healthy."
       * @type {number}
       */
-    var responsesRequiredToBeHealthy: Double = js.native
+    @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "WebSocketConnection.responsesRequiredToBeHealthy")
+    @js.native
+    def responsesRequiredToBeHealthy: Double = js.native
+    @scala.inline
+    def responsesRequiredToBeHealthy_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("responsesRequiredToBeHealthy")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("@firebase/database/dist/src/realtime/WebSocketConnection", "setWebSocketImpl")
+  @js.native
+  def setWebSocketImpl(impl: js.Any): Unit = js.native
 }

@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait TaskHistoryRecordLoadOptions extends js.Object {
+trait TaskHistoryRecordLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -141,96 +142,84 @@ object TaskHistoryRecordLoadOptions {
   }
   
   @scala.inline
-  implicit class TaskHistoryRecordLoadOptionsOps[Self <: TaskHistoryRecordLoadOptions] (val x: Self) extends AnyVal {
+  implicit class TaskHistoryRecordLoadOptionsMutableBuilder[Self <: TaskHistoryRecordLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorId(value: Boolean): Self = StObject.set(x, "anchorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setAnchorIdUndefined: Self = StObject.set(x, "anchorId", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setAssignee(value: Boolean): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorId(value: Boolean): Self = this.set("anchorId", value.asInstanceOf[js.Any])
+    def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
     
     @scala.inline
-    def deleteAnchorId: Self = this.set("anchorId", js.undefined)
+    def setAttributionUser(value: Boolean): Self = StObject.set(x, "attributionUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignee(value: Boolean): Self = this.set("assignee", value.asInstanceOf[js.Any])
+    def setAttributionUserUndefined: Self = StObject.set(x, "attributionUser", js.undefined)
     
     @scala.inline
-    def deleteAssignee: Self = this.set("assignee", js.undefined)
+    def setDueDate(value: Boolean): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionUser(value: Boolean): Self = this.set("attributionUser", value.asInstanceOf[js.Any])
+    def setDueDateUndefined: Self = StObject.set(x, "dueDate", js.undefined)
     
     @scala.inline
-    def deleteAttributionUser: Self = this.set("attributionUser", js.undefined)
+    def setHistoryRecordCreatedDate(value: Boolean): Self = StObject.set(x, "historyRecordCreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDueDate(value: Boolean): Self = this.set("dueDate", value.asInstanceOf[js.Any])
+    def setHistoryRecordCreatedDateUndefined: Self = StObject.set(x, "historyRecordCreatedDate", js.undefined)
     
     @scala.inline
-    def deleteDueDate: Self = this.set("dueDate", js.undefined)
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryRecordCreatedDate(value: Boolean): Self = this.set("historyRecordCreatedDate", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHistoryRecordCreatedDate: Self = this.set("historyRecordCreatedDate", js.undefined)
+    def setPercentComplete(value: Boolean): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentComplete(value: Boolean): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    def setStartDate(value: Boolean): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Boolean): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: Boolean): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUndoHistoryId(value: Boolean): Self = StObject.set(x, "undoHistoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Boolean): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUndoHistoryId(value: Boolean): Self = this.set("undoHistoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUndoHistoryId: Self = this.set("undoHistoryId", js.undefined)
+    def setUndoHistoryIdUndefined: Self = StObject.set(x, "undoHistoryId", js.undefined)
   }
 }

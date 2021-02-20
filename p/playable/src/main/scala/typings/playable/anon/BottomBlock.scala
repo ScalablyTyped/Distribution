@@ -6,12 +6,13 @@ import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.textMapTypesMod.ITextMap
 import typings.playable.themeTypesMod.IThemeService
 import typings.playable.tooltipTypesMod.ITooltipService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BottomBlock extends js.Object {
+trait BottomBlock extends StObject {
   
   var bottomBlock: IBottomBlock = js.native
   
@@ -41,36 +42,24 @@ object BottomBlock {
   }
   
   @scala.inline
-  implicit class BottomBlockOps[Self <: BottomBlock] (val x: Self) extends AnyVal {
+  implicit class BottomBlockMutableBuilder[Self <: BottomBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomBlock(value: IBottomBlock): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChromecastManager(value: IChromecastManager): Self = StObject.set(x, "chromecastManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomBlock(value: IBottomBlock): Self = this.set("bottomBlock", value.asInstanceOf[js.Any])
+    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChromecastManager(value: IChromecastManager): Self = this.set("chromecastManager", value.asInstanceOf[js.Any])
+    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = this.set("eventEmitter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = this.set("textMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTheme(value: IThemeService): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = this.set("tooltipService", value.asInstanceOf[js.Any])
+    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.rcEasyui.mod
 
 import typings.rcEasyui.anon.Buttons
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,97 +24,128 @@ class Messager protected ()
   def prompt(e: js.Any): Unit = js.native
 }
 /* static members */
-@JSImport("rc-easyui", "Messager")
-@js.native
-object Messager extends js.Object {
+object Messager {
   
-  var defaultProps: Buttons = js.native
-  
+  @JSImport("rc-easyui", "Messager")
   @js.native
-  object contextTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "Messager.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Messager.contextTypes.locale
+      @JSImport("rc-easyui", "Messager.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "Messager.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Messager.contextTypes.t
+      @JSImport("rc-easyui", "Messager.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
+  @JSImport("rc-easyui", "Messager.defaultProps")
   @js.native
-  object propTypes extends js.Object {
+  def defaultProps: Buttons = js.native
+  @scala.inline
+  def defaultProps_=(x: Buttons): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  object propTypes {
     
-    @js.native
-    object buttons extends js.Object {
+    object buttons {
       
+      @JSImport("rc-easyui", "Messager.propTypes.buttons")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Messager.propTypes.buttons
+      @JSImport("rc-easyui", "Messager.propTypes.buttons.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object className extends js.Object {
+    object className {
       
+      @JSImport("rc-easyui", "Messager.propTypes.className")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Messager.propTypes.className
+      @JSImport("rc-easyui", "Messager.propTypes.className.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object content extends js.Object {
+    object content {
       
+      @JSImport("rc-easyui", "Messager.propTypes.content")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Messager.propTypes.content
+      @JSImport("rc-easyui", "Messager.propTypes.content.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object icon extends js.Object {
+    object icon {
       
+      @JSImport("rc-easyui", "Messager.propTypes.icon")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Messager.propTypes.icon
+      @JSImport("rc-easyui", "Messager.propTypes.icon.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object messagerType extends js.Object {
+    object messagerType {
       
+      @JSImport("rc-easyui", "Messager.propTypes.messagerType")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Messager.propTypes.messagerType
+      @JSImport("rc-easyui", "Messager.propTypes.messagerType.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object msg extends js.Object {
+    object msg {
       
+      @JSImport("rc-easyui", "Messager.propTypes.msg")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Messager.propTypes.msg
+      @JSImport("rc-easyui", "Messager.propTypes.msg.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object style extends js.Object {
+    object style {
       
+      @JSImport("rc-easyui", "Messager.propTypes.style")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Messager.propTypes.style
+      @JSImport("rc-easyui", "Messager.propTypes.style.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

@@ -1,12 +1,13 @@
 package typings.phaser.Phaser.Types.Loader.FileTypes
 
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PackFileConfig extends js.Object {
+trait PackFileConfig extends StObject {
   
   /**
     * If specified instead of the whole JSON file being parsed, only the section corresponding to this property key will be added. If the property you want to extract is nested, use periods to divide it.
@@ -42,45 +43,33 @@ object PackFileConfig {
   }
   
   @scala.inline
-  implicit class PackFileConfigOps[Self <: PackFileConfig] (val x: Self) extends AnyVal {
+  implicit class PackFileConfigMutableBuilder[Self <: PackFileConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def setDataKey(value: String): Self = this.set("dataKey", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataKey: Self = this.set("dataKey", js.undefined)
+    def setUrl(value: String | js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String | js.Any): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = this.set("xhrSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhrSettings: Self = this.set("xhrSettings", js.undefined)
+    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

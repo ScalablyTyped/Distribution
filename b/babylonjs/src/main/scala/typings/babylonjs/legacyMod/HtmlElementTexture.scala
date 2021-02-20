@@ -3,6 +3,7 @@ package typings.babylonjs.legacyMod
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.HTMLVideoElement
 import typings.babylonjs.htmlElementTextureMod.IHtmlElementTextureOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +23,9 @@ class HtmlElementTexture protected ()
   def this(name: String, element: HTMLVideoElement, options: IHtmlElementTextureOptions) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "HtmlElementTexture")
-@js.native
-object HtmlElementTexture extends js.Object {
+object HtmlElementTexture {
   
+  @JSImport("babylonjs/Legacy/legacy", "HtmlElementTexture.DefaultOptions")
+  @js.native
   val DefaultOptions: js.Any = js.native
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,36 +49,24 @@ object XBitmap {
   }
   
   @scala.inline
-  implicit class XBitmapOps[Self <: XBitmap] (val x: Self) extends AnyVal {
+  implicit class XBitmapMutableBuilder[Self <: XBitmap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDIB(value: SafeArray[Double]): Self = StObject.set(x, "DIB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDIB(value: () => SafeArray[Double]): Self = StObject.set(x, "getDIB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMaskDIB(value: () => SafeArray[Double]): Self = StObject.set(x, "getMaskDIB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDIB(value: SafeArray[Double]): Self = this.set("DIB", value.asInstanceOf[js.Any])
+    def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaskDIB(value: SafeArray[Double]): Self = this.set("MaskDIB", value.asInstanceOf[js.Any])
+    def setMaskDIB(value: SafeArray[Double]): Self = StObject.set(x, "MaskDIB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDIB(value: () => SafeArray[Double]): Self = this.set("getDIB", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMaskDIB(value: () => SafeArray[Double]): Self = this.set("getMaskDIB", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSize(value: () => Size): Self = this.set("getSize", js.Any.fromFunction0(value))
+    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

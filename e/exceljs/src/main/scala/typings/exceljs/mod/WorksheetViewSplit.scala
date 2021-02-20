@@ -7,12 +7,13 @@ import typings.exceljs.exceljsStrings.pageLayout
 import typings.exceljs.exceljsStrings.split
 import typings.exceljs.exceljsStrings.topLeft
 import typings.exceljs.exceljsStrings.topRight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorksheetViewSplit extends js.Object {
+trait WorksheetViewSplit extends StObject {
   
   /**
   	 * Which pane will be active
@@ -55,51 +56,39 @@ object WorksheetViewSplit {
   }
   
   @scala.inline
-  implicit class WorksheetViewSplitOps[Self <: WorksheetViewSplit] (val x: Self) extends AnyVal {
+  implicit class WorksheetViewSplitMutableBuilder[Self <: WorksheetViewSplit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivePane(value: topLeft | topRight | bottomLeft | bottomRight): Self = StObject.set(x, "activePane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivePaneUndefined: Self = StObject.set(x, "activePane", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: split): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: split): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStyle(value: pageBreakPreview | pageLayout): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivePane(value: topLeft | topRight | bottomLeft | bottomRight): Self = this.set("activePane", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteActivePane: Self = this.set("activePane", js.undefined)
+    def setTopLeftCell(value: String): Self = StObject.set(x, "topLeftCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: pageBreakPreview | pageLayout): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTopLeftCellUndefined: Self = StObject.set(x, "topLeftCell", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setXSplit(value: Double): Self = StObject.set(x, "xSplit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopLeftCell(value: String): Self = this.set("topLeftCell", value.asInstanceOf[js.Any])
+    def setXSplitUndefined: Self = StObject.set(x, "xSplit", js.undefined)
     
     @scala.inline
-    def deleteTopLeftCell: Self = this.set("topLeftCell", js.undefined)
+    def setYSplit(value: Double): Self = StObject.set(x, "ySplit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXSplit(value: Double): Self = this.set("xSplit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXSplit: Self = this.set("xSplit", js.undefined)
-    
-    @scala.inline
-    def setYSplit(value: Double): Self = this.set("ySplit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYSplit: Self = this.set("ySplit", js.undefined)
+    def setYSplitUndefined: Self = StObject.set(x, "ySplit", js.undefined)
   }
 }

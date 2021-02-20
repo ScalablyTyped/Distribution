@@ -2,13 +2,14 @@ package typings.wordpressComponents.anon
 
 import typings.react.mod.ReactNode
 import typings.wordpressNotices.mod.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@wordpress/components.@wordpress/components/notice/list.default.Notice> & std.Pick<@wordpress/components.@wordpress/components/notice/list.default.Notice, 'content'> */
 @js.native
-trait PartialNoticePickNoticeco extends js.Object {
+trait PartialNoticePickNoticeco extends StObject {
   
   var actions: js.UndefOr[js.Array[typings.wordpressComponents.noticeMod.Notice.Action]] = js.native
   
@@ -31,57 +32,45 @@ object PartialNoticePickNoticeco {
   }
   
   @scala.inline
-  implicit class PartialNoticePickNoticecoOps[Self <: PartialNoticePickNoticeco] (val x: Self) extends AnyVal {
+  implicit class PartialNoticePickNoticecoMutableBuilder[Self <: PartialNoticePickNoticeco] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[typings.wordpressComponents.noticeMod.Notice.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: typings.wordpressComponents.noticeMod.Notice.Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: typings.wordpressComponents.noticeMod.Notice.Action*): Self = this.set("actions", js.Array(value :_*))
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[typings.wordpressComponents.noticeMod.Notice.Action]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setContent(value: js.UndefOr[ReactNode] with ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: js.UndefOr[ReactNode] with ReactNode): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setIsDismissible(value: Boolean): Self = StObject.set(x, "isDismissible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsDismissibleUndefined: Self = StObject.set(x, "isDismissible", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDismissible(value: Boolean): Self = this.set("isDismissible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsDismissible: Self = this.set("isDismissible", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

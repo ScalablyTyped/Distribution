@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blessed.blessedStrings.wheelup
   - typings.blessed.blessedStrings.mousemove
 */
-trait NodeMouseEventType extends js.Object
+trait NodeMouseEventType extends StObject
 object NodeMouseEventType {
   
   @scala.inline

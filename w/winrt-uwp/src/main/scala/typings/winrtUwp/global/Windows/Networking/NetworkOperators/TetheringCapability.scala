@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines values that can be returned after calling getTetheringCapability to indicate the tethering capabilities of a network account. */
 @JSGlobal("Windows.Networking.NetworkOperators.TetheringCapability")
 @js.native
-object TetheringCapability extends js.Object {
+object TetheringCapability extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

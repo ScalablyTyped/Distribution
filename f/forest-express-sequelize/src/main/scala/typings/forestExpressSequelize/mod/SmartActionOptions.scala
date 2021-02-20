@@ -1,12 +1,13 @@
 package typings.forestExpressSequelize.mod
 
 import typings.forestExpressSequelize.anon.Description
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartActionOptions extends js.Object {
+trait SmartActionOptions extends StObject {
   
   var download: js.UndefOr[Boolean] = js.native
   
@@ -31,60 +32,48 @@ object SmartActionOptions {
   }
   
   @scala.inline
-  implicit class SmartActionOptionsOps[Self <: SmartActionOptions] (val x: Self) extends AnyVal {
+  implicit class SmartActionOptionsMutableBuilder[Self <: SmartActionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def setDownload(value: Boolean): Self = this.set("download", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[Description]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDownload: Self = this.set("download", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: Description*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: Description*): Self = this.set("fields", js.Array(value :_*))
+    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
     @scala.inline
-    def setFields(value: js.Array[Description]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    def setValues(value: /* record */ js.Any => js.Object): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValues(value: /* record */ js.Any => js.Object): Self = this.set("values", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.kendoUi.kendo.spreadsheet
 
 import typings.kendoUi.kendo.Observable
 import typings.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

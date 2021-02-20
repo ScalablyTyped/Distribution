@@ -1,5 +1,6 @@
 package typings.reactBootstrapTypeahead.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small
   - typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm
 */
-trait TypeaheadBsSizes extends js.Object
+trait TypeaheadBsSizes extends StObject
 object TypeaheadBsSizes {
   
   @scala.inline

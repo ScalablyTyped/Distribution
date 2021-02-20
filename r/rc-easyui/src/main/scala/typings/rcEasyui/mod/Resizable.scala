@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,146 +21,197 @@ class Resizable protected ()
   @JSName("componentWillUnmount")
   def componentWillUnmount_MResizable(): Unit = js.native
 }
-@JSImport("rc-easyui", "Resizable")
-@js.native
-object Resizable extends js.Object {
+object Resizable {
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "Resizable.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.contextTypes.locale
+      @JSImport("rc-easyui", "Resizable.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "Resizable.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.contextTypes.t
+      @JSImport("rc-easyui", "Resizable.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.disabled")
+    @js.native
     val disabled: Boolean = js.native
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.edge")
+    @js.native
     val edge: Double = js.native
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.handles")
+    @js.native
     val handles: String = js.native
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.maxHeight")
+    @js.native
     val maxHeight: Double = js.native
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.maxWidth")
+    @js.native
     val maxWidth: Double = js.native
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.minHeight")
+    @js.native
     val minHeight: Double = js.native
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.minWidth")
+    @js.native
     val minWidth: Double = js.native
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.onResizeStart")
+    @js.native
     def onResizeStart(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.onResizeStop")
+    @js.native
     def onResizeStop(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Resizable.defaultProps.onResizing")
+    @js.native
     def onResizing(e: js.Any): Unit = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object disabled extends js.Object {
+    object disabled {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.disabled")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.disabled
+      @JSImport("rc-easyui", "Resizable.propTypes.disabled.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object edge extends js.Object {
+    object edge {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.edge")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.edge
+      @JSImport("rc-easyui", "Resizable.propTypes.edge.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object handles extends js.Object {
+    object handles {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.handles")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.handles
+      @JSImport("rc-easyui", "Resizable.propTypes.handles.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object maxHeight extends js.Object {
+    object maxHeight {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.maxHeight")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.maxHeight
+      @JSImport("rc-easyui", "Resizable.propTypes.maxHeight.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object maxWidth extends js.Object {
+    object maxWidth {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.maxWidth")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.maxWidth
+      @JSImport("rc-easyui", "Resizable.propTypes.maxWidth.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object minHeight extends js.Object {
+    object minHeight {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.minHeight")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.minHeight
+      @JSImport("rc-easyui", "Resizable.propTypes.minHeight.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object minWidth extends js.Object {
+    object minWidth {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.minWidth")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.minWidth
+      @JSImport("rc-easyui", "Resizable.propTypes.minWidth.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onResizeStart extends js.Object {
+    object onResizeStart {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.onResizeStart")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.onResizeStart
+      @JSImport("rc-easyui", "Resizable.propTypes.onResizeStart.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onResizeStop extends js.Object {
+    object onResizeStop {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.onResizeStop")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.onResizeStop
+      @JSImport("rc-easyui", "Resizable.propTypes.onResizeStop.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onResizing extends js.Object {
+    object onResizing {
       
+      @JSImport("rc-easyui", "Resizable.propTypes.onResizing")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Resizable.propTypes.onResizing
+      @JSImport("rc-easyui", "Resizable.propTypes.onResizing.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

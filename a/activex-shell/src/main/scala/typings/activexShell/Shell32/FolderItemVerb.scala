@@ -1,12 +1,13 @@
 package typings.activexShell.Shell32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Definition of interface FolderItemVerb */
 @js.native
-trait FolderItemVerb extends js.Object {
+trait FolderItemVerb extends StObject {
   
   /** Execute the verb */
   def DoIt(): Unit = js.native
@@ -27,27 +28,15 @@ object FolderItemVerb {
   }
   
   @scala.inline
-  implicit class FolderItemVerbOps[Self <: FolderItemVerb] (val x: Self) extends AnyVal {
+  implicit class FolderItemVerbMutableBuilder[Self <: FolderItemVerb] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoIt(value: () => Unit): Self = StObject.set(x, "DoIt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDoIt(value: () => Unit): Self = this.set("DoIt", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShell32DotFolderItemVerb_typekey(value: FolderItemVerb): Self = this.set("Shell32.FolderItemVerb_typekey", value.asInstanceOf[js.Any])
+    def setShell32DotFolderItemVerb_typekey(value: FolderItemVerb): Self = StObject.set(x, "Shell32.FolderItemVerb_typekey", value.asInstanceOf[js.Any])
   }
 }

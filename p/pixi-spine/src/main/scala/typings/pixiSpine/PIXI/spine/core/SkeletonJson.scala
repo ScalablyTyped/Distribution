@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkeletonJson extends js.Object {
+trait SkeletonJson extends StObject {
   
   var attachmentLoader: AttachmentLoader = js.native
   

@@ -1,16 +1,19 @@
 package typings.ethereumjsVm
 
 import typings.bnJs.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethereumjs-vm/dist/evm/stack", JSImport.Namespace)
-@js.native
-object stackMod extends js.Object {
+object stackMod {
+  
+  @JSImport("ethereumjs-vm/dist/evm/stack", JSImport.Default)
+  @js.native
+  class default () extends Stack
   
   @js.native
-  trait Stack extends js.Object {
+  trait Stack extends StObject {
     
     var _store: js.Array[^] = js.native
     
@@ -40,7 +43,4 @@ object stackMod extends js.Object {
       */
     def swap(position: Double): Unit = js.native
   }
-  
-  @js.native
-  class default () extends Stack
 }

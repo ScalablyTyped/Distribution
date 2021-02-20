@@ -1,11 +1,12 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectIntegrations extends js.Object {
+trait ProjectIntegrations extends StObject {
   
   var capacitor: js.UndefOr[ProjectIntegration] = js.native
   
@@ -22,36 +23,24 @@ object ProjectIntegrations {
   }
   
   @scala.inline
-  implicit class ProjectIntegrationsOps[Self <: ProjectIntegrations] (val x: Self) extends AnyVal {
+  implicit class ProjectIntegrationsMutableBuilder[Self <: ProjectIntegrations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacitor(value: ProjectIntegration): Self = StObject.set(x, "capacitor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacitorUndefined: Self = StObject.set(x, "capacitor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCordova(value: ProjectIntegration): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacitor(value: ProjectIntegration): Self = this.set("capacitor", value.asInstanceOf[js.Any])
+    def setCordovaUndefined: Self = StObject.set(x, "cordova", js.undefined)
     
     @scala.inline
-    def deleteCapacitor: Self = this.set("capacitor", js.undefined)
+    def setEnterprise(value: EnterpriseProjectIntegration): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCordova(value: ProjectIntegration): Self = this.set("cordova", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCordova: Self = this.set("cordova", js.undefined)
-    
-    @scala.inline
-    def setEnterprise(value: EnterpriseProjectIntegration): Self = this.set("enterprise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnterprise: Self = this.set("enterprise", js.undefined)
+    def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,30 +62,18 @@ object ASPxClientGridBase {
   }
   
   @scala.inline
-  implicit class ASPxClientGridBaseOps[Self <: ASPxClientGridBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientGridBaseMutableBuilder[Self <: ASPxClientGridBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchEditSummaryDisplayText(value: ASPxClientEvent[ASPxClientGridBatchEditSummaryDisplayTextEventHandler[ASPxClientGridBase]]): Self = StObject.set(x, "BatchEditSummaryDisplayText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetToolbar(value: Double => ASPxClientMenu): Self = StObject.set(x, "GetToolbar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetToolbarByName(value: String => ASPxClientMenu): Self = StObject.set(x, "GetToolbarByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBatchEditSummaryDisplayText(value: ASPxClientEvent[ASPxClientGridBatchEditSummaryDisplayTextEventHandler[ASPxClientGridBase]]): Self = this.set("BatchEditSummaryDisplayText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetToolbar(value: Double => ASPxClientMenu): Self = this.set("GetToolbar", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetToolbarByName(value: String => ASPxClientMenu): Self = this.set("GetToolbarByName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToolbarItemClick(value: ASPxClientEvent[ASPxClientGridToolbarItemClickEventHandler[ASPxClientGridBase]]): Self = this.set("ToolbarItemClick", value.asInstanceOf[js.Any])
+    def setToolbarItemClick(value: ASPxClientEvent[ASPxClientGridToolbarItemClickEventHandler[ASPxClientGridBase]]): Self = StObject.set(x, "ToolbarItemClick", value.asInstanceOf[js.Any])
   }
 }

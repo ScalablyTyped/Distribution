@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientClouddebugger.anon.BreakpointId
 import typings.maximMazurokGapiClientClouddebugger.anon.Callback
 import typings.maximMazurokGapiClientClouddebugger.anon.CanaryOption
 import typings.maximMazurokGapiClientClouddebugger.anon.ClientVersion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BreakpointsResource extends js.Object {
+trait BreakpointsResource extends StObject {
   
   /** Deletes the breakpoint from the debuggee. */
   def delete(): Request[js.Object] = js.native

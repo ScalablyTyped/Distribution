@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a set of signature help items, and the preferred item that should be selected.
   */
 @js.native
-trait SignatureHelpItems extends js.Object {
+trait SignatureHelpItems extends StObject {
   
   var applicableSpan: TextSpan = js.native
   
@@ -35,36 +36,24 @@ object SignatureHelpItems {
   }
   
   @scala.inline
-  implicit class SignatureHelpItemsOps[Self <: SignatureHelpItems] (val x: Self) extends AnyVal {
+  implicit class SignatureHelpItemsMutableBuilder[Self <: SignatureHelpItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicableSpan(value: TextSpan): Self = StObject.set(x, "applicableSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentCount(value: Double): Self = StObject.set(x, "argumentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentIndex(value: Double): Self = StObject.set(x, "argumentIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicableSpan(value: TextSpan): Self = this.set("applicableSpan", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[SignatureHelpItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentCount(value: Double): Self = this.set("argumentCount", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: SignatureHelpItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setArgumentIndex(value: Double): Self = this.set("argumentIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: SignatureHelpItem*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[SignatureHelpItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedItemIndex(value: Double): Self = this.set("selectedItemIndex", value.asInstanceOf[js.Any])
+    def setSelectedItemIndex(value: Double): Self = StObject.set(x, "selectedItemIndex", value.asInstanceOf[js.Any])
   }
 }

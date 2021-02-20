@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Action extends js.Object {
+trait S3Action extends StObject {
   
   /**
     * The Amazon S3 bucket.
@@ -36,33 +37,21 @@ object S3Action {
   }
   
   @scala.inline
-  implicit class S3ActionOps[Self <: S3Action] (val x: Self) extends AnyVal {
+  implicit class S3ActionMutableBuilder[Self <: S3Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCannedAcl(value: CannedAccessControlList): Self = StObject.set(x, "cannedAcl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCannedAclUndefined: Self = StObject.set(x, "cannedAcl", js.undefined)
     
     @scala.inline
-    def setBucketName(value: BucketName): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCannedAcl(value: CannedAccessControlList): Self = this.set("cannedAcl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCannedAcl: Self = this.set("cannedAcl", js.undefined)
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

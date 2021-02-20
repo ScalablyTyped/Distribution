@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/set-immediate", JSImport.Namespace)
-@js.native
-object setImmediateMod
-  extends TopLevel[js.Function2[/* expression */ js.Any, /* repeated */ js.Any, Double]]
+object setImmediateMod {
+  
+  /* was `typeof core.setImmediate` */
+  @JSImport("core-js/fn/set-immediate", JSImport.Namespace)
+  @js.native
+  def apply(expression: js.Any, args: js.Any*): Double = js.native
+}

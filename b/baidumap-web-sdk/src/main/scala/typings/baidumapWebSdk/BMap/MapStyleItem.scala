@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapStyleItem extends js.Object {
+trait MapStyleItem extends StObject {
   
   var elementType: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object MapStyleItem {
   }
   
   @scala.inline
-  implicit class MapStyleItemOps[Self <: MapStyleItem] (val x: Self) extends AnyVal {
+  implicit class MapStyleItemMutableBuilder[Self <: MapStyleItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElementType(value: String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylers(value: MapStyleItemStylers): Self = this.set("stylers", value.asInstanceOf[js.Any])
+    def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
     
     @scala.inline
-    def setElementType(value: String): Self = this.set("elementType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElementType: Self = this.set("elementType", js.undefined)
-    
-    @scala.inline
-    def setFeatureType(value: String): Self = this.set("featureType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatureType: Self = this.set("featureType", js.undefined)
+    def setStylers(value: MapStyleItemStylers): Self = StObject.set(x, "stylers", value.asInstanceOf[js.Any])
   }
 }

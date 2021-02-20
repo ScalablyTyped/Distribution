@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetReportsRequest extends js.Object {
+trait GetReportsRequest extends StObject {
   
   /**
     * Requests, each request will have a separate response. There can be a maximum of 5 requests. All requests should have the same `dateRanges`, `viewId`, `segments`, `samplingLevel`,
@@ -29,33 +30,21 @@ object GetReportsRequest {
   }
   
   @scala.inline
-  implicit class GetReportsRequestOps[Self <: GetReportsRequest] (val x: Self) extends AnyVal {
+  implicit class GetReportsRequestMutableBuilder[Self <: GetReportsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReportRequests(value: js.Array[ReportRequest]): Self = StObject.set(x, "reportRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportRequestsUndefined: Self = StObject.set(x, "reportRequests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportRequestsVarargs(value: ReportRequest*): Self = StObject.set(x, "reportRequests", js.Array(value :_*))
     
     @scala.inline
-    def setReportRequestsVarargs(value: ReportRequest*): Self = this.set("reportRequests", js.Array(value :_*))
+    def setUseResourceQuotas(value: Boolean): Self = StObject.set(x, "useResourceQuotas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportRequests(value: js.Array[ReportRequest]): Self = this.set("reportRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportRequests: Self = this.set("reportRequests", js.undefined)
-    
-    @scala.inline
-    def setUseResourceQuotas(value: Boolean): Self = this.set("useResourceQuotas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseResourceQuotas: Self = this.set("useResourceQuotas", js.undefined)
+    def setUseResourceQuotasUndefined: Self = StObject.set(x, "useResourceQuotas", js.undefined)
   }
 }

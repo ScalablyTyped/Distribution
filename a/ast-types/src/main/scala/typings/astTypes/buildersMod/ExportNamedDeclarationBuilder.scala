@@ -5,12 +5,13 @@ import typings.astTypes.kindsMod.DeclarationKind
 import typings.astTypes.kindsMod.ExportSpecifierKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.namedTypesMod.namedTypes.ExportNamedDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportNamedDeclarationBuilder extends js.Object {
+trait ExportNamedDeclarationBuilder extends StObject {
   
   def apply(): ExportNamedDeclaration = js.native
   def apply(declaration: Null, specifiers: js.UndefOr[scala.Nothing], source: LiteralKind): ExportNamedDeclaration = js.native

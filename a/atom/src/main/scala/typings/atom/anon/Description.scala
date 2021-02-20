@@ -2,12 +2,13 @@ package typings.atom.anon
 
 import typings.atom.mod.CommandEvent
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Description[TargetType /* <: EventTarget */] extends js.Object {
+trait Description[TargetType /* <: EventTarget */] extends StObject {
   
   var description: js.UndefOr[String] = js.native
   
@@ -26,39 +27,27 @@ object Description {
   }
   
   @scala.inline
-  implicit class DescriptionOps[Self <: Description[_], TargetType /* <: EventTarget */] (val x: Self with Description[TargetType]) extends AnyVal {
+  implicit class DescriptionMutableBuilder[Self <: Description[_], TargetType /* <: EventTarget */] (val x: Self with Description[TargetType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDidDispatch(value: CommandEvent[TargetType] => Unit | js.Promise[Unit]): Self = StObject.set(x, "didDispatch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDidDispatch(value: CommandEvent[TargetType] => Unit | js.Promise[Unit]): Self = this.set("didDispatch", js.Any.fromFunction1(value))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHiddenInCommandPalette(value: Boolean): Self = StObject.set(x, "hiddenInCommandPalette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setHiddenInCommandPalette(value: Boolean): Self = this.set("hiddenInCommandPalette", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHiddenInCommandPalette: Self = this.set("hiddenInCommandPalette", js.undefined)
+    def setHiddenInCommandPaletteUndefined: Self = StObject.set(x, "hiddenInCommandPalette", js.undefined)
   }
 }

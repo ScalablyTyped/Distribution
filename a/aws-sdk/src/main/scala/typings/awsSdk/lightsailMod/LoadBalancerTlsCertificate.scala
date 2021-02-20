@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadBalancerTlsCertificate extends js.Object {
+trait LoadBalancerTlsCertificate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the SSL/TLS certificate.
@@ -141,177 +142,165 @@ object LoadBalancerTlsCertificate {
   }
   
   @scala.inline
-  implicit class LoadBalancerTlsCertificateOps[Self <: LoadBalancerTlsCertificate] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerTlsCertificateMutableBuilder[Self <: LoadBalancerTlsCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setDomainValidationRecords(value: LoadBalancerTlsCertificateDomainValidationRecordList): Self = StObject.set(x, "domainValidationRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setDomainValidationRecordsUndefined: Self = StObject.set(x, "domainValidationRecords", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    def setDomainValidationRecordsVarargs(value: LoadBalancerTlsCertificateDomainValidationRecord*): Self = StObject.set(x, "domainValidationRecords", js.Array(value :_*))
     
     @scala.inline
-    def setDomainValidationRecordsVarargs(value: LoadBalancerTlsCertificateDomainValidationRecord*): Self = this.set("domainValidationRecords", js.Array(value :_*))
+    def setFailureReason(value: LoadBalancerTlsCertificateFailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainValidationRecords(value: LoadBalancerTlsCertificateDomainValidationRecordList): Self = this.set("domainValidationRecords", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteDomainValidationRecords: Self = this.set("domainValidationRecords", js.undefined)
+    def setIsAttached(value: Boolean): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: LoadBalancerTlsCertificateFailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setIsAttachedUndefined: Self = StObject.set(x, "isAttached", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setIssuedAt(value: IsoDate): Self = StObject.set(x, "issuedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAttached(value: Boolean): Self = this.set("isAttached", value.asInstanceOf[js.Any])
+    def setIssuedAtUndefined: Self = StObject.set(x, "issuedAt", js.undefined)
     
     @scala.inline
-    def deleteIsAttached: Self = this.set("isAttached", js.undefined)
+    def setIssuer(value: NonEmptyString): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuedAt(value: IsoDate): Self = this.set("issuedAt", value.asInstanceOf[js.Any])
+    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     @scala.inline
-    def deleteIssuedAt: Self = this.set("issuedAt", js.undefined)
+    def setKeyAlgorithm(value: NonEmptyString): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: NonEmptyString): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setKeyAlgorithmUndefined: Self = StObject.set(x, "keyAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyAlgorithm(value: NonEmptyString): Self = this.set("keyAlgorithm", value.asInstanceOf[js.Any])
+    def setLoadBalancerNameUndefined: Self = StObject.set(x, "loadBalancerName", js.undefined)
     
     @scala.inline
-    def deleteKeyAlgorithm: Self = this.set("keyAlgorithm", js.undefined)
+    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerName(value: ResourceName): Self = this.set("loadBalancerName", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLoadBalancerName: Self = this.set("loadBalancerName", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setNotAfter(value: IsoDate): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNotBefore(value: IsoDate): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAfter(value: IsoDate): Self = this.set("notAfter", value.asInstanceOf[js.Any])
+    def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
     
     @scala.inline
-    def deleteNotAfter: Self = this.set("notAfter", js.undefined)
+    def setRenewalSummary(value: LoadBalancerTlsCertificateRenewalSummary): Self = StObject.set(x, "renewalSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotBefore(value: IsoDate): Self = this.set("notBefore", value.asInstanceOf[js.Any])
+    def setRenewalSummaryUndefined: Self = StObject.set(x, "renewalSummary", js.undefined)
     
     @scala.inline
-    def deleteNotBefore: Self = this.set("notBefore", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenewalSummary(value: LoadBalancerTlsCertificateRenewalSummary): Self = this.set("renewalSummary", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deleteRenewalSummary: Self = this.set("renewalSummary", js.undefined)
+    def setRevocationReason(value: LoadBalancerTlsCertificateRevocationReason): Self = StObject.set(x, "revocationReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setRevocationReasonUndefined: Self = StObject.set(x, "revocationReason", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setRevokedAt(value: IsoDate): Self = StObject.set(x, "revokedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevocationReason(value: LoadBalancerTlsCertificateRevocationReason): Self = this.set("revocationReason", value.asInstanceOf[js.Any])
+    def setRevokedAtUndefined: Self = StObject.set(x, "revokedAt", js.undefined)
     
     @scala.inline
-    def deleteRevocationReason: Self = this.set("revocationReason", js.undefined)
+    def setSerial(value: NonEmptyString): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevokedAt(value: IsoDate): Self = this.set("revokedAt", value.asInstanceOf[js.Any])
+    def setSerialUndefined: Self = StObject.set(x, "serial", js.undefined)
     
     @scala.inline
-    def deleteRevokedAt: Self = this.set("revokedAt", js.undefined)
+    def setSignatureAlgorithm(value: NonEmptyString): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerial(value: NonEmptyString): Self = this.set("serial", value.asInstanceOf[js.Any])
+    def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteSerial: Self = this.set("serial", js.undefined)
+    def setStatus(value: LoadBalancerTlsCertificateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureAlgorithm(value: NonEmptyString): Self = this.set("signatureAlgorithm", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSignatureAlgorithm: Self = this.set("signatureAlgorithm", js.undefined)
+    def setSubject(value: NonEmptyString): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: LoadBalancerTlsCertificateStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubjectAlternativeNames(value: StringList): Self = StObject.set(x, "subjectAlternativeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "subjectAlternativeNames", js.undefined)
     
     @scala.inline
-    def setSubject(value: NonEmptyString): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setSubjectAlternativeNamesVarargs(value: String*): Self = StObject.set(x, "subjectAlternativeNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def setSubjectAlternativeNamesVarargs(value: String*): Self = this.set("subjectAlternativeNames", js.Array(value :_*))
+    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectAlternativeNames(value: StringList): Self = this.set("subjectAlternativeNames", value.asInstanceOf[js.Any])
+    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
     @scala.inline
-    def deleteSubjectAlternativeNames: Self = this.set("subjectAlternativeNames", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

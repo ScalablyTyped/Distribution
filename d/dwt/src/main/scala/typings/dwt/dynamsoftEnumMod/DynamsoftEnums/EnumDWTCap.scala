@@ -1,16 +1,16 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTCap extends js.Object
+sealed trait EnumDWTCap extends StObject
 /** Capabilities */
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_Cap")
 @js.native
-object EnumDWTCap extends js.Object {
+object EnumDWTCap extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTCap with Double] = js.native
@@ -18,8 +18,7 @@ object EnumDWTCap extends js.Object {
   /** Turns specific audible alarms on and off. */
   @js.native
   sealed trait CAP_ALARMS extends EnumDWTCap
-  /* 4120 */ @js.native
-  object CAP_ALARMS extends TopLevel[CAP_ALARMS with Double]
+  /* 4120 */ val CAP_ALARMS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_ALARMS with Double = js.native
   
   /**
     * The volume of a device's audible alarm. Note that this control affects the volume of all alarms;
@@ -27,14 +26,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_ALARMVOLUME extends EnumDWTCap
-  /* 4121 */ @js.native
-  object CAP_ALARMVOLUME extends TopLevel[CAP_ALARMVOLUME with Double]
+  /* 4121 */ val CAP_ALARMVOLUME: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_ALARMVOLUME with Double = js.native
   
   /** The name or other identifying information about the Author of the image. It may include a copyright string. */
   @js.native
   sealed trait CAP_AUTHOR extends EnumDWTCap
-  /* 4096 */ @js.native
-  object CAP_AUTHOR extends TopLevel[CAP_AUTHOR with Double]
+  /* 4096 */ val CAP_AUTHOR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_AUTHOR with Double = js.native
   
   /**
     * If TRUE, the Source will automatically feed the next page from the document feeder after the
@@ -43,8 +40,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_AUTOFEED extends EnumDWTCap
-  /* 4103 */ @js.native
-  object CAP_AUTOFEED extends TopLevel[CAP_AUTOFEED with Double]
+  /* 4103 */ val CAP_AUTOFEED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_AUTOFEED with Double = js.native
   
   /**
     * The number of images to automatically capture. This does not refer to the number of images to
@@ -52,14 +48,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_AUTOMATICCAPTURE extends EnumDWTCap
-  /* 4122 */ @js.native
-  object CAP_AUTOMATICCAPTURE extends TopLevel[CAP_AUTOMATICCAPTURE with Double]
+  /* 4122 */ val CAP_AUTOMATICCAPTURE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_AUTOMATICCAPTURE with Double = js.native
   
   /** Added 2.1  */
   @js.native
   sealed trait CAP_AUTOMATICSENSEMEDIUM extends EnumDWTCap
-  /* 4155 */ @js.native
-  object CAP_AUTOMATICSENSEMEDIUM extends TopLevel[CAP_AUTOMATICSENSEMEDIUM with Double]
+  /* 4155 */ val CAP_AUTOMATICSENSEMEDIUM: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_AUTOMATICSENSEMEDIUM with Double = js.native
   
   /**
     * This capability is intended to boost the performance of a Source. The fundamental assumption
@@ -72,56 +66,47 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_AUTOSCAN extends EnumDWTCap
-  /* 4112 */ @js.native
-  object CAP_AUTOSCAN extends TopLevel[CAP_AUTOSCAN with Double]
+  /* 4112 */ val CAP_AUTOSCAN: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_AUTOSCAN with Double = js.native
   
   /** The minutes of battery power remaining to the device. */
   @js.native
   sealed trait CAP_BATTERYMINUTES extends EnumDWTCap
-  /* 4146 */ @js.native
-  object CAP_BATTERYMINUTES extends TopLevel[CAP_BATTERYMINUTES with Double]
+  /* 4146 */ val CAP_BATTERYMINUTES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_BATTERYMINUTES with Double = js.native
   
   /** When used with CapGet(), return the percentage of battery power level on camera. If -1 is returned, it indicates that the battery is not present.  */
   @js.native
   sealed trait CAP_BATTERYPERCENTAGE extends EnumDWTCap
-  /* 4147 */ @js.native
-  object CAP_BATTERYPERCENTAGE extends TopLevel[CAP_BATTERYPERCENTAGE with Double]
+  /* 4147 */ val CAP_BATTERYPERCENTAGE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_BATTERYPERCENTAGE with Double = js.native
   
   /** Added 2.0  */
   @js.native
   sealed trait CAP_CAMERAENABLED extends EnumDWTCap
-  /* 4150 */ @js.native
-  object CAP_CAMERAENABLED extends TopLevel[CAP_CAMERAENABLED with Double]
+  /* 4150 */ val CAP_CAMERAENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_CAMERAENABLED with Double = js.native
   
   /** Added 2.0    */
   @js.native
   sealed trait CAP_CAMERAORDER extends EnumDWTCap
-  /* 4151 */ @js.native
-  object CAP_CAMERAORDER extends TopLevel[CAP_CAMERAORDER with Double]
+  /* 4151 */ val CAP_CAMERAORDER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_CAMERAORDER with Double = js.native
   
   /** This capability queries the Source for UI support for preview mode. If TRUE, the Source supports preview UI. */
   @js.native
   sealed trait CAP_CAMERAPREVIEWUI extends EnumDWTCap
-  /* 4129 */ @js.native
-  object CAP_CAMERAPREVIEWUI extends TopLevel[CAP_CAMERAPREVIEWUI with Double]
+  /* 4129 */ val CAP_CAMERAPREVIEWUI: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_CAMERAPREVIEWUI with Double = js.native
   
   /** Added 1.91  */
   @js.native
   sealed trait CAP_CAMERASIDE extends EnumDWTCap
-  /* 4148 */ @js.native
-  object CAP_CAMERASIDE extends TopLevel[CAP_CAMERASIDE with Double]
+  /* 4148 */ val CAP_CAMERASIDE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_CAMERASIDE with Double = js.native
   
   /** A general note about the acquired image. */
   @js.native
   sealed trait CAP_CAPTION extends EnumDWTCap
-  /* 4097 */ @js.native
-  object CAP_CAPTION extends TopLevel[CAP_CAPTION with Double]
+  /* 4097 */ val CAP_CAPTION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_CAPTION with Double = js.native
   
   /** CapGet() reports the presence of data in the scanner's buffers. CapSet() with a value of TWCB_CLEAR immediately clears the buffers. */
   @js.native
   sealed trait CAP_CLEARBUFFERS extends EnumDWTCap
-  /* 4125 */ @js.native
-  object CAP_CLEARBUFFERS extends TopLevel[CAP_CLEARBUFFERS with Double]
+  /* 4125 */ val CAP_CLEARBUFFERS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_CLEARBUFFERS with Double = js.native
   
   /**
     * If TRUE, the Source will eject the current page being acquired from and will leave the feeder
@@ -132,19 +117,16 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_CLEARPAGE extends EnumDWTCap
-  /* 4104 */ @js.native
-  object CAP_CLEARPAGE extends TopLevel[CAP_CLEARPAGE with Double]
+  /* 4104 */ val CAP_CLEARPAGE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_CLEARPAGE with Double = js.native
   
   @js.native
   sealed trait CAP_CUSTOMDSDATA extends EnumDWTCap
-  /* 4117 */ @js.native
-  object CAP_CUSTOMDSDATA extends TopLevel[CAP_CUSTOMDSDATA with Double]
+  /* 4117 */ val CAP_CUSTOMDSDATA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_CUSTOMDSDATA with Double = js.native
   
   /** Added 2.1  */
   @js.native
   sealed trait CAP_CUSTOMINTERFACEGUID extends EnumDWTCap
-  /* 4156 */ @js.native
-  object CAP_CUSTOMINTERFACEGUID extends TopLevel[CAP_CUSTOMINTERFACEGUID with Double]
+  /* 4156 */ val CAP_CUSTOMINTERFACEGUID: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_CUSTOMINTERFACEGUID with Double = js.native
   
   /**
     * If TRUE, the physical hardware (e.g., scanner, digital camera, image database, etc.) that
@@ -152,8 +134,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_DEVICEONLINE extends EnumDWTCap
-  /* 4111 */ @js.native
-  object CAP_DEVICEONLINE extends TopLevel[CAP_DEVICEONLINE with Double]
+  /* 4111 */ val CAP_DEVICEONLINE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_DEVICEONLINE with Double = js.native
   
   /**
     * The date and time of the device's clock.
@@ -163,8 +144,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_DEVICETIMEDATE extends EnumDWTCap
-  /* 4127 */ @js.native
-  object CAP_DEVICETIMEDATE extends TopLevel[CAP_DEVICETIMEDATE with Double]
+  /* 4127 */ val CAP_DEVICETIMEDATE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_DEVICETIMEDATE with Double = js.native
   
   /**
     * This indicates whether the scanner supports duplex. If so, it further indicates whether one-path
@@ -172,8 +152,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_DUPLEX extends EnumDWTCap
-  /* 4114 */ @js.native
-  object CAP_DUPLEX extends TopLevel[CAP_DUPLEX with Double]
+  /* 4114 */ val CAP_DUPLEX: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_DUPLEX with Double = js.native
   
   /**
     * The user can set the duplex option to be TRUE or FALSE. If TRUE, the scanner scans both sides
@@ -181,14 +160,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_DUPLEXENABLED extends EnumDWTCap
-  /* 4115 */ @js.native
-  object CAP_DUPLEXENABLED extends TopLevel[CAP_DUPLEXENABLED with Double]
+  /* 4115 */ val CAP_DUPLEXENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_DUPLEXENABLED with Double = js.native
   
   /** Allows an application to query a source to see if it implements the new user interface settings dialog.  */
   @js.native
   sealed trait CAP_ENABLEDSUIONLY extends EnumDWTCap
-  /* 4116 */ @js.native
-  object CAP_ENABLEDSUIONLY extends TopLevel[CAP_ENABLEDSUIONLY with Double]
+  /* 4116 */ val CAP_ENABLEDSUIONLY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_ENABLEDSUIONLY with Double = js.native
   
   /**
     * Allows the application to specify the starting endorser / imprinter number. All other endorser/
@@ -197,14 +174,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_ENDORSER extends EnumDWTCap
-  /* 4118 */ @js.native
-  object CAP_ENDORSER extends TopLevel[CAP_ENDORSER with Double]
+  /* 4118 */ val CAP_ENDORSER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_ENDORSER with Double = js.native
   
   /** Allows the application and Source to negotiate capabilities to be used in States 5 and 6. */
   @js.native
   sealed trait CAP_EXTENDEDCAPS extends EnumDWTCap
-  /* 4102 */ @js.native
-  object CAP_EXTENDEDCAPS extends TopLevel[CAP_EXTENDEDCAPS with Double]
+  /* 4102 */ val CAP_EXTENDEDCAPS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_EXTENDEDCAPS with Double = js.native
   
   /**
     * Helps the Application determine any special actions it may need to take when negotiating
@@ -220,8 +195,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_FEEDERALIGNMENT extends EnumDWTCap
-  /* 4141 */ @js.native
-  object CAP_FEEDERALIGNMENT extends TopLevel[CAP_FEEDERALIGNMENT with Double]
+  /* 4141 */ val CAP_FEEDERALIGNMENT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_FEEDERALIGNMENT with Double = js.native
   
   /**
     * If TRUE, Source must acquire data from the document feeder acquire area and other feeder
@@ -230,14 +204,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_FEEDERENABLED extends EnumDWTCap
-  /* 4098 */ @js.native
-  object CAP_FEEDERENABLED extends TopLevel[CAP_FEEDERENABLED with Double]
+  /* 4098 */ val CAP_FEEDERENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_FEEDERENABLED with Double = js.native
   
   /** Reflect whether there are documents loaded in the Source's feeder. */
   @js.native
   sealed trait CAP_FEEDERLOADED extends EnumDWTCap
-  /* 4099 */ @js.native
-  object CAP_FEEDERLOADED extends TopLevel[CAP_FEEDERLOADED with Double]
+  /* 4099 */ val CAP_FEEDERLOADED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_FEEDERLOADED with Double = js.native
   
   /**
     * TWFO_FIRSTPAGEFIRST if the feeder starts with the top of the first page.
@@ -245,20 +217,17 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_FEEDERORDER extends EnumDWTCap
-  /* 4142 */ @js.native
-  object CAP_FEEDERORDER extends TopLevel[CAP_FEEDERORDER with Double]
+  /* 4142 */ val CAP_FEEDERORDER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_FEEDERORDER with Double = js.native
   
   /** Added 2.0  */
   @js.native
   sealed trait CAP_FEEDERPOCKET extends EnumDWTCap
-  /* 4154 */ @js.native
-  object CAP_FEEDERPOCKET extends TopLevel[CAP_FEEDERPOCKET with Double]
+  /* 4154 */ val CAP_FEEDERPOCKET: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_FEEDERPOCKET with Double = js.native
   
   /** Added 2.0   */
   @js.native
   sealed trait CAP_FEEDERPREP extends EnumDWTCap
-  /* 4153 */ @js.native
-  object CAP_FEEDERPREP extends TopLevel[CAP_FEEDERPREP with Double]
+  /* 4153 */ val CAP_FEEDERPREP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_FEEDERPREP with Double = js.native
   
   /**
     * If TRUE, the Source will eject the current page and advance the next page in the document feeder
@@ -270,8 +239,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_FEEDPAGE extends EnumDWTCap
-  /* 4105 */ @js.native
-  object CAP_FEEDPAGE extends TopLevel[CAP_FEEDPAGE with Double]
+  /* 4105 */ val CAP_FEEDPAGE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_FEEDPAGE with Double = js.native
   
   /**
     * If TRUE, the Source will display a progress indicator during acquisition and transfer, regardless
@@ -282,8 +250,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_INDICATORS extends EnumDWTCap
-  /* 4107 */ @js.native
-  object CAP_INDICATORS extends TopLevel[CAP_INDICATORS with Double]
+  /* 4107 */ val CAP_INDICATORS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_INDICATORS with Double = js.native
   
   /**
     * Allows Application and Source to identify which languages they have in common for the exchange of string data,
@@ -292,38 +259,32 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_LANGUAGE extends EnumDWTCap
-  /* 4140 */ @js.native
-  object CAP_LANGUAGE extends TopLevel[CAP_LANGUAGE with Double]
+  /* 4140 */ val CAP_LANGUAGE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_LANGUAGE with Double = js.native
   
   /** Describes the number of pages that the scanner can buffer when CAP_AUTOSCAN is enabled. */
   @js.native
   sealed trait CAP_MAXBATCHBUFFERS extends EnumDWTCap
-  /* 4126 */ @js.native
-  object CAP_MAXBATCHBUFFERS extends TopLevel[CAP_MAXBATCHBUFFERS with Double]
+  /* 4126 */ val CAP_MAXBATCHBUFFERS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_MAXBATCHBUFFERS with Double = js.native
   
   /** Added 2.0  */
   @js.native
   sealed trait CAP_MICRENABLED extends EnumDWTCap
-  /* 4152 */ @js.native
-  object CAP_MICRENABLED extends TopLevel[CAP_MICRENABLED with Double]
+  /* 4152 */ val CAP_MICRENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_MICRENABLED with Double = js.native
   
   /** Nothing. */
   @js.native
   sealed trait CAP_NONE extends EnumDWTCap
-  /* 0 */ @js.native
-  object CAP_NONE extends TopLevel[CAP_NONE with Double]
+  /* 0 */ val CAP_NONE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_NONE with Double = js.native
   
   /** This capability determines whether the device has a paper sensor that can detect documents on the ADF or Flatbed. */
   @js.native
   sealed trait CAP_PAPERDETECTABLE extends EnumDWTCap
-  /* 4109 */ @js.native
-  object CAP_PAPERDETECTABLE extends TopLevel[CAP_PAPERDETECTABLE with Double]
+  /* 4109 */ val CAP_PAPERDETECTABLE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_PAPERDETECTABLE with Double = js.native
   
   /** CapGet() reports the kinds of power available to the device. CapGetCurrent() reports the current power supply in use. */
   @js.native
   sealed trait CAP_POWERSUPPLY extends EnumDWTCap
-  /* 4128 */ @js.native
-  object CAP_POWERSUPPLY extends TopLevel[CAP_POWERSUPPLY with Double]
+  /* 4128 */ val CAP_POWERSUPPLY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_POWERSUPPLY with Double = js.native
   
   /**
     * CapGet() returns the current list of available printer devices, along with the one currently being used for negotiation.
@@ -333,20 +294,17 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_PRINTER extends EnumDWTCap
-  /* 4134 */ @js.native
-  object CAP_PRINTER extends TopLevel[CAP_PRINTER with Double]
+  /* 4134 */ val CAP_PRINTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_PRINTER with Double = js.native
   
   /** Turns the current CAP_PRINTER device on or off. */
   @js.native
   sealed trait CAP_PRINTERENABLED extends EnumDWTCap
-  /* 4135 */ @js.native
-  object CAP_PRINTERENABLED extends TopLevel[CAP_PRINTERENABLED with Double]
+  /* 4135 */ val CAP_PRINTERENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_PRINTERENABLED with Double = js.native
   
   /** The User can set the starting number for the current CAP_PRINTER device. */
   @js.native
   sealed trait CAP_PRINTERINDEX extends EnumDWTCap
-  /* 4136 */ @js.native
-  object CAP_PRINTERINDEX extends TopLevel[CAP_PRINTERINDEX with Double]
+  /* 4136 */ val CAP_PRINTERINDEX: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_PRINTERINDEX with Double = js.native
   
   /**
     * Specifies the appropriate current CAP_PRINTER device mode.
@@ -359,8 +317,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_PRINTERMODE extends EnumDWTCap
-  /* 4137 */ @js.native
-  object CAP_PRINTERMODE extends TopLevel[CAP_PRINTERMODE with Double]
+  /* 4137 */ val CAP_PRINTERMODE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_PRINTERMODE with Double = js.native
   
   /**
     * Specifies the string(s) that are to be used in the string component when the current
@@ -368,14 +325,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_PRINTERSTRING extends EnumDWTCap
-  /* 4138 */ @js.native
-  object CAP_PRINTERSTRING extends TopLevel[CAP_PRINTERSTRING with Double]
+  /* 4138 */ val CAP_PRINTERSTRING: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_PRINTERSTRING with Double = js.native
   
   /** Specifies the string that shall be used as the current CAP_PRINTER device's suffix. */
   @js.native
   sealed trait CAP_PRINTERSUFFIX extends EnumDWTCap
-  /* 4139 */ @js.native
-  object CAP_PRINTERSUFFIX extends TopLevel[CAP_PRINTERSUFFIX with Double]
+  /* 4139 */ val CAP_PRINTERSUFFIX: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_PRINTERSUFFIX with Double = js.native
   
   /**
     * Indicates whether the physical hardware (e.g. scanner, digital camera) is capable of acquiring
@@ -383,8 +338,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_REACQUIREALLOWED extends EnumDWTCap
-  /* 4144 */ @js.native
-  object CAP_REACQUIREALLOWED extends TopLevel[CAP_REACQUIREALLOWED with Double]
+  /* 4144 */ val CAP_REACQUIREALLOWED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_REACQUIREALLOWED with Double = js.native
   
   /**
     * If TRUE, the Source will return the current page to the input side of the document feeder and
@@ -396,14 +350,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_REWINDPAGE extends EnumDWTCap
-  /* 4106 */ @js.native
-  object CAP_REWINDPAGE extends TopLevel[CAP_REWINDPAGE with Double]
+  /* 4106 */ val CAP_REWINDPAGE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_REWINDPAGE with Double = js.native
   
   /** Added 1.91   */
   @js.native
   sealed trait CAP_SEGMENTED extends EnumDWTCap
-  /* 4149 */ @js.native
-  object CAP_SEGMENTED extends TopLevel[CAP_SEGMENTED with Double]
+  /* 4149 */ val CAP_SEGMENTED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_SEGMENTED with Double = js.native
   
   /**
     * A string containing the serial number of the currently selected device in the Source. Multiple
@@ -411,8 +363,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_SERIALNUMBER extends EnumDWTCap
-  /* 4132 */ @js.native
-  object CAP_SERIALNUMBER extends TopLevel[CAP_SERIALNUMBER with Double]
+  /* 4132 */ val CAP_SERIALNUMBER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_SERIALNUMBER with Double = js.native
   
   /**
     * Returns a list of all the capabilities for which the Source will answer inquiries. Does not indicate
@@ -422,8 +373,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_SUPPORTEDCAPS extends EnumDWTCap
-  /* 4101 */ @js.native
-  object CAP_SUPPORTEDCAPS extends TopLevel[CAP_SUPPORTEDCAPS with Double]
+  /* 4101 */ val CAP_SUPPORTEDCAPS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_SUPPORTEDCAPS with Double = js.native
   
   /**
     * Returns a list of all the capabilities for which the Source will answer inquiries. Does not indicate
@@ -433,8 +383,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_SUPPORTEDCAPSEXT extends EnumDWTCap
-  /* 4108 */ @js.native
-  object CAP_SUPPORTEDCAPSEXT extends TopLevel[CAP_SUPPORTEDCAPSEXT with Double]
+  /* 4108 */ val CAP_SUPPORTEDCAPSEXT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_SUPPORTEDCAPSEXT with Double = js.native
   
   /**
     * Allows an application to request the delivery of thumbnail representations for the set of images
@@ -445,8 +394,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_THUMBNAILSENABLED extends EnumDWTCap
-  /* 4113 */ @js.native
-  object CAP_THUMBNAILSENABLED extends TopLevel[CAP_THUMBNAILSENABLED with Double]
+  /* 4113 */ val CAP_THUMBNAILSENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_THUMBNAILSENABLED with Double = js.native
   
   /**
     * For automatic capture, this value selects the number of milliseconds before the first picture is to
@@ -454,14 +402,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_TIMEBEFOREFIRSTCAPTURE extends EnumDWTCap
-  /* 4123 */ @js.native
-  object CAP_TIMEBEFOREFIRSTCAPTURE extends TopLevel[CAP_TIMEBEFOREFIRSTCAPTURE with Double]
+  /* 4123 */ val CAP_TIMEBEFOREFIRSTCAPTURE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_TIMEBEFOREFIRSTCAPTURE with Double = js.native
   
   /** For automatic capture, this value selects the milliseconds to wait between pictures taken, or images scanned. */
   @js.native
   sealed trait CAP_TIMEBETWEENCAPTURES extends EnumDWTCap
-  /* 4124 */ @js.native
-  object CAP_TIMEBETWEENCAPTURES extends TopLevel[CAP_TIMEBETWEENCAPTURES with Double]
+  /* 4124 */ val CAP_TIMEBETWEENCAPTURES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_TIMEBETWEENCAPTURES with Double = js.native
   
   /**
     * The date and time the image was acquired.
@@ -471,8 +417,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_TIMEDATE extends EnumDWTCap
-  /* 4100 */ @js.native
-  object CAP_TIMEDATE extends TopLevel[CAP_TIMEDATE with Double]
+  /* 4100 */ val CAP_TIMEDATE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_TIMEDATE with Double = js.native
   
   /**
     * If TRUE, indicates that this Source supports acquisition with the UI disabled; i.e.,
@@ -481,20 +426,17 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait CAP_UICONTROLLABLE extends EnumDWTCap
-  /* 4110 */ @js.native
-  object CAP_UICONTROLLABLE extends TopLevel[CAP_UICONTROLLABLE with Double]
+  /* 4110 */ val CAP_UICONTROLLABLE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_UICONTROLLABLE with Double = js.native
   
   /** The application is willing to accept this number of images. */
   @js.native
   sealed trait CAP_XFERCOUNT extends EnumDWTCap
-  /* 1 */ @js.native
-  object CAP_XFERCOUNT extends TopLevel[CAP_XFERCOUNT with Double]
+  /* 1 */ val CAP_XFERCOUNT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.CAP_XFERCOUNT with Double = js.native
   
   /** TRUE enables and FALSE disables the Source's Auto-brightness function (if any). */
   @js.native
   sealed trait ICAP_AUTOBRIGHT extends EnumDWTCap
-  /* 4352 */ @js.native
-  object ICAP_AUTOBRIGHT extends TopLevel[ICAP_AUTOBRIGHT with Double]
+  /* 4352 */ val ICAP_AUTOBRIGHT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTOBRIGHT with Double = js.native
   
   /**
     * Use this capability to have the Source discard blank images. The Application never sees these
@@ -510,44 +452,37 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_AUTODISCARDBLANKPAGES extends EnumDWTCap
-  /* 4404 */ @js.native
-  object ICAP_AUTODISCARDBLANKPAGES extends TopLevel[ICAP_AUTODISCARDBLANKPAGES with Double]
+  /* 4404 */ val ICAP_AUTODISCARDBLANKPAGES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTODISCARDBLANKPAGES with Double = js.native
   
   /** Turns automatic border detection on and off. */
   @js.native
   sealed trait ICAP_AUTOMATICBORDERDETECTION extends EnumDWTCap
-  /* 4432 */ @js.native
-  object ICAP_AUTOMATICBORDERDETECTION extends TopLevel[ICAP_AUTOMATICBORDERDETECTION with Double]
+  /* 4432 */ val ICAP_AUTOMATICBORDERDETECTION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTOMATICBORDERDETECTION with Double = js.native
   
   /** Added 2.1  */
   @js.native
   sealed trait ICAP_AUTOMATICCOLORENABLED extends EnumDWTCap
-  /* 4441 */ @js.native
-  object ICAP_AUTOMATICCOLORENABLED extends TopLevel[ICAP_AUTOMATICCOLORENABLED with Double]
+  /* 4441 */ val ICAP_AUTOMATICCOLORENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTOMATICCOLORENABLED with Double = js.native
   
   /** Added 2.1  */
   @js.native
   sealed trait ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE extends EnumDWTCap
-  /* 4442 */ @js.native
-  object ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE extends TopLevel[ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE with Double]
+  /* 4442 */ val ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE with Double = js.native
   
   /** Added 2.1  */
   @js.native
   sealed trait ICAP_AUTOMATICCROPUSESFRAME extends EnumDWTCap
-  /* 4439 */ @js.native
-  object ICAP_AUTOMATICCROPUSESFRAME extends TopLevel[ICAP_AUTOMATICCROPUSESFRAME with Double]
+  /* 4439 */ val ICAP_AUTOMATICCROPUSESFRAME: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTOMATICCROPUSESFRAME with Double = js.native
   
   /** Turns automatic deskew correction on and off. */
   @js.native
   sealed trait ICAP_AUTOMATICDESKEW extends EnumDWTCap
-  /* 4433 */ @js.native
-  object ICAP_AUTOMATICDESKEW extends TopLevel[ICAP_AUTOMATICDESKEW with Double]
+  /* 4433 */ val ICAP_AUTOMATICDESKEW: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTOMATICDESKEW with Double = js.native
   
   /** Added 2.1  */
   @js.native
   sealed trait ICAP_AUTOMATICLENGTHDETECTION extends EnumDWTCap
-  /* 4440 */ @js.native
-  object ICAP_AUTOMATICLENGTHDETECTION extends TopLevel[ICAP_AUTOMATICLENGTHDETECTION with Double]
+  /* 4440 */ val ICAP_AUTOMATICLENGTHDETECTION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTOMATICLENGTHDETECTION with Double = js.native
   
   /**
     * When TRUE this capability depends on intelligent features within the Source to automatically
@@ -555,50 +490,42 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_AUTOMATICROTATE extends EnumDWTCap
-  /* 4434 */ @js.native
-  object ICAP_AUTOMATICROTATE extends TopLevel[ICAP_AUTOMATICROTATE with Double]
+  /* 4434 */ val ICAP_AUTOMATICROTATE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTOMATICROTATE with Double = js.native
   
   /** Added 2.0   */
   @js.native
   sealed trait ICAP_AUTOSIZE extends EnumDWTCap
-  /* 4438 */ @js.native
-  object ICAP_AUTOSIZE extends TopLevel[ICAP_AUTOSIZE with Double]
+  /* 4438 */ val ICAP_AUTOSIZE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_AUTOSIZE with Double = js.native
   
   /** Turns bar code detection on and off. */
   @js.native
   sealed trait ICAP_BARCODEDETECTIONENABLED extends EnumDWTCap
-  /* 4407 */ @js.native
-  object ICAP_BARCODEDETECTIONENABLED extends TopLevel[ICAP_BARCODEDETECTIONENABLED with Double]
+  /* 4407 */ val ICAP_BARCODEDETECTIONENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BARCODEDETECTIONENABLED with Double = js.native
   
   /** Restricts the number of times a search will be retried if none are found on each page. */
   @js.native
   sealed trait ICAP_BARCODEMAXRETRIES extends EnumDWTCap
-  /* 4412 */ @js.native
-  object ICAP_BARCODEMAXRETRIES extends TopLevel[ICAP_BARCODEMAXRETRIES with Double]
+  /* 4412 */ val ICAP_BARCODEMAXRETRIES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BARCODEMAXRETRIES with Double = js.native
   
   /** The maximum number of supported search priorities. */
   @js.native
   sealed trait ICAP_BARCODEMAXSEARCHPRIORITIES extends EnumDWTCap
-  /* 4409 */ @js.native
-  object ICAP_BARCODEMAXSEARCHPRIORITIES extends TopLevel[ICAP_BARCODEMAXSEARCHPRIORITIES with Double]
+  /* 4409 */ val ICAP_BARCODEMAXSEARCHPRIORITIES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BARCODEMAXSEARCHPRIORITIES with Double = js.native
   
   /** Restricts bar code searching to certain orientations, or prioritizes one orientation over the other. */
   @js.native
   sealed trait ICAP_BARCODESEARCHMODE extends EnumDWTCap
-  /* 4411 */ @js.native
-  object ICAP_BARCODESEARCHMODE extends TopLevel[ICAP_BARCODESEARCHMODE with Double]
+  /* 4411 */ val ICAP_BARCODESEARCHMODE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BARCODESEARCHMODE with Double = js.native
   
   /** A prioritized list of bar code types dictating the order in which bar codes will be sought. */
   @js.native
   sealed trait ICAP_BARCODESEARCHPRIORITIES extends EnumDWTCap
-  /* 4410 */ @js.native
-  object ICAP_BARCODESEARCHPRIORITIES extends TopLevel[ICAP_BARCODESEARCHPRIORITIES with Double]
+  /* 4410 */ val ICAP_BARCODESEARCHPRIORITIES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BARCODESEARCHPRIORITIES with Double = js.native
   
   /** Restricts the total time spent on searching for a bar code on each page. */
   @js.native
   sealed trait ICAP_BARCODETIMEOUT extends EnumDWTCap
-  /* 4413 */ @js.native
-  object ICAP_BARCODETIMEOUT extends TopLevel[ICAP_BARCODETIMEOUT with Double]
+  /* 4413 */ val ICAP_BARCODETIMEOUT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BARCODETIMEOUT with Double = js.native
   
   /**
     * Specifies the pixel bit depths for the Current value of ICAP_PIXELTYPE. For example, when
@@ -608,8 +535,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_BITDEPTH extends EnumDWTCap
-  /* 4395 */ @js.native
-  object ICAP_BITDEPTH extends TopLevel[ICAP_BITDEPTH with Double]
+  /* 4395 */ val ICAP_BITDEPTH: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BITDEPTH with Double = js.native
   
   /**
     * Specifies the Reduction Method the Source should use to reduce the bit depth of the data. Most
@@ -617,8 +543,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_BITDEPTHREDUCTION extends EnumDWTCap
-  /* 4396 */ @js.native
-  object ICAP_BITDEPTHREDUCTION extends TopLevel[ICAP_BITDEPTHREDUCTION with Double]
+  /* 4396 */ val ICAP_BITDEPTHREDUCTION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BITDEPTHREDUCTION with Double = js.native
   
   /**
     * Specifies how the bytes in an image are filled by the Source. TWBO_MSBFIRST indicates that the leftmost bit in the byte (usually bit 7) is
@@ -626,20 +551,17 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_BITORDER extends EnumDWTCap
-  /* 4380 */ @js.native
-  object ICAP_BITORDER extends TopLevel[ICAP_BITORDER with Double]
+  /* 4380 */ val ICAP_BITORDER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BITORDER with Double = js.native
   
   /** Used for CCITT data compression only. Indicates the bit order representation of the stored compressed codes. */
   @js.native
   sealed trait ICAP_BITORDERCODES extends EnumDWTCap
-  /* 4390 */ @js.native
-  object ICAP_BITORDERCODES extends TopLevel[ICAP_BITORDERCODES with Double]
+  /* 4390 */ val ICAP_BITORDERCODES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BITORDERCODES with Double = js.native
   
   /** The brightness values available within the Source. */
   @js.native
   sealed trait ICAP_BRIGHTNESS extends EnumDWTCap
-  /* 4353 */ @js.native
-  object ICAP_BRIGHTNESS extends TopLevel[ICAP_BRIGHTNESS with Double]
+  /* 4353 */ val ICAP_BRIGHTNESS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_BRIGHTNESS with Double = js.native
   
   /**
     * Used for CCITT Group 3 2-dimensional compression. The 'K' factor indicates how often the
@@ -649,14 +571,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_CCITTKFACTOR extends EnumDWTCap
-  /* 4381 */ @js.native
-  object ICAP_CCITTKFACTOR extends TopLevel[ICAP_CCITTKFACTOR with Double]
+  /* 4381 */ val ICAP_CCITTKFACTOR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_CCITTKFACTOR with Double = js.native
   
   /** Added 2.1  */
   @js.native
   sealed trait ICAP_COLORMANAGEMENTENABLED extends EnumDWTCap
-  /* 4443 */ @js.native
-  object ICAP_COLORMANAGEMENTENABLED extends TopLevel[ICAP_COLORMANAGEMENTENABLED with Double]
+  /* 4443 */ val ICAP_COLORMANAGEMENTENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_COLORMANAGEMENTENABLED with Double = js.native
   
   /**
     * Allows the application and Source to identify which compression schemes they have in
@@ -667,26 +587,22 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_COMPRESSION extends EnumDWTCap
-  /* 256 */ @js.native
-  object ICAP_COMPRESSION extends TopLevel[ICAP_COMPRESSION with Double]
+  /* 256 */ val ICAP_COMPRESSION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_COMPRESSION with Double = js.native
   
   /** The contrast values available within the Source. */
   @js.native
   sealed trait ICAP_CONTRAST extends EnumDWTCap
-  /* 4355 */ @js.native
-  object ICAP_CONTRAST extends TopLevel[ICAP_CONTRAST with Double]
+  /* 4355 */ val ICAP_CONTRAST: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_CONTRAST with Double = js.native
   
   /** Specifies the square-cell halftone (dithering) matrix the Source should use to halftone the image. */
   @js.native
   sealed trait ICAP_CUSTHALFTONE extends EnumDWTCap
-  /* 4356 */ @js.native
-  object ICAP_CUSTHALFTONE extends TopLevel[ICAP_CUSTHALFTONE with Double]
+  /* 4356 */ val ICAP_CUSTHALFTONE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_CUSTHALFTONE with Double = js.native
   
   /** Specifies the exposure time used to capture the image, in seconds. */
   @js.native
   sealed trait ICAP_EXPOSURETIME extends EnumDWTCap
-  /* 4357 */ @js.native
-  object ICAP_EXPOSURETIME extends TopLevel[ICAP_EXPOSURETIME with Double]
+  /* 4357 */ val ICAP_EXPOSURETIME: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_EXPOSURETIME with Double = js.native
   
   /**
     * Allows the application to query the data source to see if it supports extended image attribute capabilities,
@@ -694,14 +610,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_EXTIMAGEINFO extends EnumDWTCap
-  /* 4399 */ @js.native
-  object ICAP_EXTIMAGEINFO extends TopLevel[ICAP_EXTIMAGEINFO with Double]
+  /* 4399 */ val ICAP_EXTIMAGEINFO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_EXTIMAGEINFO with Double = js.native
   
   /** Added 1.91   */
   @js.native
   sealed trait ICAP_FEEDERTYPE extends EnumDWTCap
-  /* 4436 */ @js.native
-  object ICAP_FEEDERTYPE extends TopLevel[ICAP_FEEDERTYPE with Double]
+  /* 4436 */ val ICAP_FEEDERTYPE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_FEEDERTYPE with Double = js.native
   
   /**
     * Describes the color characteristic of the subtractive filter applied to the image data.
@@ -709,14 +623,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_FILTER extends EnumDWTCap
-  /* 4358 */ @js.native
-  object ICAP_FILTER extends TopLevel[ICAP_FILTER with Double]
+  /* 4358 */ val ICAP_FILTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_FILTER with Double = js.native
   
   /** Specifies whether or not the image was acquired using a flash. */
   @js.native
   sealed trait ICAP_FLASHUSED extends EnumDWTCap
-  /* 4359 */ @js.native
-  object ICAP_FLASHUSED extends TopLevel[ICAP_FLASHUSED with Double]
+  /* 4359 */ val ICAP_FLASHUSED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_FLASHUSED with Double = js.native
   
   /**
     * For devices that support flash. CapSet() selects the flash to be used (if any). CapGet() reports the current setting.
@@ -724,8 +636,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_FLASHUSED2 extends EnumDWTCap
-  /* 4422 */ @js.native
-  object ICAP_FLASHUSED2 extends TopLevel[ICAP_FLASHUSED2 with Double]
+  /* 4422 */ val ICAP_FLASHUSED2: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_FLASHUSED2 with Double = js.native
   
   /**
     * Flip rotation is used to properly orient images that flip orientation every other image.
@@ -734,26 +645,22 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_FLIPROTATION extends EnumDWTCap
-  /* 4406 */ @js.native
-  object ICAP_FLIPROTATION extends TopLevel[ICAP_FLIPROTATION with Double]
+  /* 4406 */ val ICAP_FLIPROTATION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_FLIPROTATION with Double = js.native
   
   /** The list of frames the Source will acquire on each page. */
   @js.native
   sealed trait ICAP_FRAMES extends EnumDWTCap
-  /* 4372 */ @js.native
-  object ICAP_FRAMES extends TopLevel[ICAP_FRAMES with Double]
+  /* 4372 */ val ICAP_FRAMES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_FRAMES with Double = js.native
   
   /** Gamma correction value for the image data. */
   @js.native
   sealed trait ICAP_GAMMA extends EnumDWTCap
-  /* 4360 */ @js.native
-  object ICAP_GAMMA extends TopLevel[ICAP_GAMMA with Double]
+  /* 4360 */ val ICAP_GAMMA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_GAMMA with Double = js.native
   
   /** A list of names of the halftone patterns available within the Source. */
   @js.native
   sealed trait ICAP_HALFTONES extends EnumDWTCap
-  /* 4361 */ @js.native
-  object ICAP_HALFTONES extends TopLevel[ICAP_HALFTONES with Double]
+  /* 4361 */ val ICAP_HALFTONES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_HALFTONES with Double = js.native
   
   /**
     * Specifies which value in an image should be interpreted as the lightest "highlight." All values
@@ -762,14 +669,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_HIGHLIGHT extends EnumDWTCap
-  /* 4362 */ @js.native
-  object ICAP_HIGHLIGHT extends TopLevel[ICAP_HIGHLIGHT with Double]
+  /* 4362 */ val ICAP_HIGHLIGHT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_HIGHLIGHT with Double = js.native
   
   /** Added 1.91  */
   @js.native
   sealed trait ICAP_ICCPROFILE extends EnumDWTCap
-  /* 4437 */ @js.native
-  object ICAP_ICCPROFILE extends TopLevel[ICAP_ICCPROFILE with Double]
+  /* 4437 */ val ICAP_ICCPROFILE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_ICCPROFILE with Double = js.native
   
   /**
     * Informs the application which file formats the Source can generate (CapGet()). Tells the Source which file formats the application can handle (CapSet()).
@@ -786,26 +691,22 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_IMAGEFILEFORMAT extends EnumDWTCap
-  /* 4364 */ @js.native
-  object ICAP_IMAGEFILEFORMAT extends TopLevel[ICAP_IMAGEFILEFORMAT with Double]
+  /* 4364 */ val ICAP_IMAGEFILEFORMAT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_IMAGEFILEFORMAT with Double = js.native
   
   /** For devices that support image enhancement filtering. This capability selects the algorithm used to improve the quality of the image. */
   @js.native
   sealed trait ICAP_IMAGEFILTER extends EnumDWTCap
-  /* 4423 */ @js.native
-  object ICAP_IMAGEFILTER extends TopLevel[ICAP_IMAGEFILTER with Double]
+  /* 4423 */ val ICAP_IMAGEFILTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_IMAGEFILTER with Double = js.native
   
   /** Added 2.1  */
   @js.native
   sealed trait ICAP_IMAGEMERGE extends EnumDWTCap
-  /* 4444 */ @js.native
-  object ICAP_IMAGEMERGE extends TopLevel[ICAP_IMAGEMERGE with Double]
+  /* 4444 */ val ICAP_IMAGEMERGE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_IMAGEMERGE with Double = js.native
   
   /** Added 2.1  */
   @js.native
   sealed trait ICAP_IMAGEMERGEHEIGHTTHRESHOLD extends EnumDWTCap
-  /* 4445 */ @js.native
-  object ICAP_IMAGEMERGEHEIGHTTHRESHOLD extends TopLevel[ICAP_IMAGEMERGEHEIGHTTHRESHOLD with Double]
+  /* 4445 */ val ICAP_IMAGEMERGEHEIGHTTHRESHOLD: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_IMAGEMERGEHEIGHTTHRESHOLD with Double = js.native
   
   /**
     * Allows the application and Source to agree upon a common set of color descriptors that are
@@ -813,32 +714,27 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_JPEGPIXELTYPE extends EnumDWTCap
-  /* 4392 */ @js.native
-  object ICAP_JPEGPIXELTYPE extends TopLevel[ICAP_JPEGPIXELTYPE with Double]
+  /* 4392 */ val ICAP_JPEGPIXELTYPE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_JPEGPIXELTYPE with Double = js.native
   
   /** Added 1.9  */
   @js.native
   sealed trait ICAP_JPEGQUALITY extends EnumDWTCap
-  /* 4435 */ @js.native
-  object ICAP_JPEGQUALITY extends TopLevel[ICAP_JPEGQUALITY with Double]
+  /* 4435 */ val ICAP_JPEGQUALITY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_JPEGQUALITY with Double = js.native
   
   /** TRUE means the lamp is currently, or should be set to ON. Sources may not support CapSet() operations.  */
   @js.native
   sealed trait ICAP_LAMPSTATE extends EnumDWTCap
-  /* 4365 */ @js.native
-  object ICAP_LAMPSTATE extends TopLevel[ICAP_LAMPSTATE with Double]
+  /* 4365 */ val ICAP_LAMPSTATE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_LAMPSTATE with Double = js.native
   
   /** Describes whether the image was captured transmissively or reflectively. */
   @js.native
   sealed trait ICAP_LIGHTPATH extends EnumDWTCap
-  /* 4382 */ @js.native
-  object ICAP_LIGHTPATH extends TopLevel[ICAP_LIGHTPATH with Double]
+  /* 4382 */ val ICAP_LIGHTPATH: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_LIGHTPATH with Double = js.native
   
   /** Describes the general color characteristic of the light source used to acquire the image. */
   @js.native
   sealed trait ICAP_LIGHTSOURCE extends EnumDWTCap
-  /* 4366 */ @js.native
-  object ICAP_LIGHTSOURCE extends TopLevel[ICAP_LIGHTSOURCE with Double]
+  /* 4366 */ val ICAP_LIGHTSOURCE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_LIGHTSOURCE with Double = js.native
   
   /**
     * The maximum number of frames the Source can provide or the application can accept per page.
@@ -846,26 +742,22 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_MAXFRAMES extends EnumDWTCap
-  /* 4378 */ @js.native
-  object ICAP_MAXFRAMES extends TopLevel[ICAP_MAXFRAMES with Double]
+  /* 4378 */ val ICAP_MAXFRAMES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_MAXFRAMES with Double = js.native
   
   /** Allows the source to define the minimum height (Y-axis) that the source can acquire. */
   @js.native
   sealed trait ICAP_MINIMUMHEIGHT extends EnumDWTCap
-  /* 4400 */ @js.native
-  object ICAP_MINIMUMHEIGHT extends TopLevel[ICAP_MINIMUMHEIGHT with Double]
+  /* 4400 */ val ICAP_MINIMUMHEIGHT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_MINIMUMHEIGHT with Double = js.native
   
   /** Allows the source to define theminimum width (X-axis) that the source can acquire. */
   @js.native
   sealed trait ICAP_MINIMUMWIDTH extends EnumDWTCap
-  /* 4401 */ @js.native
-  object ICAP_MINIMUMWIDTH extends TopLevel[ICAP_MINIMUMWIDTH with Double]
+  /* 4401 */ val ICAP_MINIMUMWIDTH: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_MINIMUMWIDTH with Double = js.native
   
   /** For devices that support noise filtering. This capability selects the algorithm used to remove noise. */
   @js.native
   sealed trait ICAP_NOISEFILTER extends EnumDWTCap
-  /* 4424 */ @js.native
-  object ICAP_NOISEFILTER extends TopLevel[ICAP_NOISEFILTER with Double]
+  /* 4424 */ val ICAP_NOISEFILTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_NOISEFILTER with Double = js.native
   
   /**
     * Defines which edge of the "paper" the image's "top" is aligned with. This information is used to adjust the frames to match the
@@ -879,8 +771,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_ORIENTATION extends EnumDWTCap
-  /* 4368 */ @js.native
-  object ICAP_ORIENTATION extends TopLevel[ICAP_ORIENTATION with Double]
+  /* 4368 */ val ICAP_ORIENTATION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_ORIENTATION with Double = js.native
   
   /**
     * Overscan is used to scan outside of the boundaries described by ICAP_FRAMES, and is used to help acquire image data that
@@ -890,62 +781,52 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_OVERSCAN extends EnumDWTCap
-  /* 4425 */ @js.native
-  object ICAP_OVERSCAN extends TopLevel[ICAP_OVERSCAN with Double]
+  /* 4425 */ val ICAP_OVERSCAN: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_OVERSCAN with Double = js.native
   
   /** Turns patch code detection on and off. */
   @js.native
   sealed trait ICAP_PATCHCODEDETECTIONENABLED extends EnumDWTCap
-  /* 4415 */ @js.native
-  object ICAP_PATCHCODEDETECTIONENABLED extends TopLevel[ICAP_PATCHCODEDETECTIONENABLED with Double]
+  /* 4415 */ val ICAP_PATCHCODEDETECTIONENABLED: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PATCHCODEDETECTIONENABLED with Double = js.native
   
   /** Restricts the number of times a search will be retried if none are found on each page. */
   @js.native
   sealed trait ICAP_PATCHCODEMAXRETRIES extends EnumDWTCap
-  /* 4420 */ @js.native
-  object ICAP_PATCHCODEMAXRETRIES extends TopLevel[ICAP_PATCHCODEMAXRETRIES with Double]
+  /* 4420 */ val ICAP_PATCHCODEMAXRETRIES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PATCHCODEMAXRETRIES with Double = js.native
   
   /** The maximum number of supported search priorities. */
   @js.native
   sealed trait ICAP_PATCHCODEMAXSEARCHPRIORITIES extends EnumDWTCap
-  /* 4417 */ @js.native
-  object ICAP_PATCHCODEMAXSEARCHPRIORITIES extends TopLevel[ICAP_PATCHCODEMAXSEARCHPRIORITIES with Double]
+  /* 4417 */ val ICAP_PATCHCODEMAXSEARCHPRIORITIES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PATCHCODEMAXSEARCHPRIORITIES with Double = js.native
   
   /** Restricts patch code searching to certain orientations, or prioritizes one orientation over the other. */
   @js.native
   sealed trait ICAP_PATCHCODESEARCHMODE extends EnumDWTCap
-  /* 4419 */ @js.native
-  object ICAP_PATCHCODESEARCHMODE extends TopLevel[ICAP_PATCHCODESEARCHMODE with Double]
+  /* 4419 */ val ICAP_PATCHCODESEARCHMODE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PATCHCODESEARCHMODE with Double = js.native
   
   /** A prioritized list of patch code types dictating the order in which patch codes will be sought. */
   @js.native
   sealed trait ICAP_PATCHCODESEARCHPRIORITIES extends EnumDWTCap
-  /* 4418 */ @js.native
-  object ICAP_PATCHCODESEARCHPRIORITIES extends TopLevel[ICAP_PATCHCODESEARCHPRIORITIES with Double]
+  /* 4418 */ val ICAP_PATCHCODESEARCHPRIORITIES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PATCHCODESEARCHPRIORITIES with Double = js.native
   
   /** Restricts the total time spent on searching for a patch code on each page. */
   @js.native
   sealed trait ICAP_PATCHCODETIMEOUT extends EnumDWTCap
-  /* 4421 */ @js.native
-  object ICAP_PATCHCODETIMEOUT extends TopLevel[ICAP_PATCHCODETIMEOUT with Double]
+  /* 4421 */ val ICAP_PATCHCODETIMEOUT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PATCHCODETIMEOUT with Double = js.native
   
   /** The maximum physical height (Y-axis) the Source can acquire (measured in units of ICAP_UNITS). */
   @js.native
   sealed trait ICAP_PHYSICALHEIGHT extends EnumDWTCap
-  /* 4370 */ @js.native
-  object ICAP_PHYSICALHEIGHT extends TopLevel[ICAP_PHYSICALHEIGHT with Double]
+  /* 4370 */ val ICAP_PHYSICALHEIGHT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PHYSICALHEIGHT with Double = js.native
   
   /** The maximum physical width (X-axis) the Source can acquire (measured in units of ICAP_UNITS). */
   @js.native
   sealed trait ICAP_PHYSICALWIDTH extends EnumDWTCap
-  /* 4369 */ @js.native
-  object ICAP_PHYSICALWIDTH extends TopLevel[ICAP_PHYSICALWIDTH with Double]
+  /* 4369 */ val ICAP_PHYSICALWIDTH: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PHYSICALWIDTH with Double = js.native
   
   /** Sense of the pixel whose numeric value is zero (minimum data value).  */
   @js.native
   sealed trait ICAP_PIXELFLAVOR extends EnumDWTCap
-  /* 4383 */ @js.native
-  object ICAP_PIXELFLAVOR extends TopLevel[ICAP_PIXELFLAVOR with Double]
+  /* 4383 */ val ICAP_PIXELFLAVOR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PIXELFLAVOR with Double = js.native
   
   /**
     * Used only for CCITT data compression. Specifies whether the compressed codes' pixel "sense"
@@ -953,14 +834,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_PIXELFLAVORCODES extends EnumDWTCap
-  /* 4391 */ @js.native
-  object ICAP_PIXELFLAVORCODES extends TopLevel[ICAP_PIXELFLAVORCODES with Double]
+  /* 4391 */ val ICAP_PIXELFLAVORCODES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PIXELFLAVORCODES with Double = js.native
   
   /** The type of pixel data that a Source is capable of acquiring (for example, black and white, gray, RGB, etc.). */
   @js.native
   sealed trait ICAP_PIXELTYPE extends EnumDWTCap
-  /* 257 */ @js.native
-  object ICAP_PIXELTYPE extends TopLevel[ICAP_PIXELTYPE with Double]
+  /* 257 */ val ICAP_PIXELTYPE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PIXELTYPE with Double = js.native
   
   /**
     * Allows the application and Source to identify which color data formats are available. There are
@@ -968,8 +847,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_PLANARCHUNKY extends EnumDWTCap
-  /* 4384 */ @js.native
-  object ICAP_PLANARCHUNKY extends TopLevel[ICAP_PLANARCHUNKY with Double]
+  /* 4384 */ val ICAP_PLANARCHUNKY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_PLANARCHUNKY with Double = js.native
   
   /**
     * How the Source can/should rotate the scanned image data prior to transfer. This doesn't use
@@ -978,8 +856,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_ROTATION extends EnumDWTCap
-  /* 4385 */ @js.native
-  object ICAP_ROTATION extends TopLevel[ICAP_ROTATION with Double]
+  /* 4385 */ val ICAP_ROTATION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_ROTATION with Double = js.native
   
   /**
     * Specifies which value in an image should be interpreted as the darkest "shadow." All values
@@ -987,26 +864,22 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_SHADOW extends EnumDWTCap
-  /* 4371 */ @js.native
-  object ICAP_SHADOW extends TopLevel[ICAP_SHADOW with Double]
+  /* 4371 */ val ICAP_SHADOW: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_SHADOW with Double = js.native
   
   /** Provides a list of bar code types that can be detected by the current Data Source. */
   @js.native
   sealed trait ICAP_SUPPORTEDBARCODETYPES extends EnumDWTCap
-  /* 4408 */ @js.native
-  object ICAP_SUPPORTEDBARCODETYPES extends TopLevel[ICAP_SUPPORTEDBARCODETYPES with Double]
+  /* 4408 */ val ICAP_SUPPORTEDBARCODETYPES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_SUPPORTEDBARCODETYPES with Double = js.native
   
   /** Added 2.1   */
   @js.native
   sealed trait ICAP_SUPPORTEDEXTIMAGEINFO extends EnumDWTCap
-  /* 4446 */ @js.native
-  object ICAP_SUPPORTEDEXTIMAGEINFO extends TopLevel[ICAP_SUPPORTEDEXTIMAGEINFO with Double]
+  /* 4446 */ val ICAP_SUPPORTEDEXTIMAGEINFO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_SUPPORTEDEXTIMAGEINFO with Double = js.native
   
   /** A list of patch code types that may be detected by the current Data Source. */
   @js.native
   sealed trait ICAP_SUPPORTEDPATCHCODETYPES extends EnumDWTCap
-  /* 4416 */ @js.native
-  object ICAP_SUPPORTEDPATCHCODETYPES extends TopLevel[ICAP_SUPPORTEDPATCHCODETYPES with Double]
+  /* 4416 */ val ICAP_SUPPORTEDPATCHCODETYPES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_SUPPORTEDPATCHCODETYPES with Double = js.native
   
   /**
     * For devices that support fixed frame sizes.
@@ -1014,8 +887,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_SUPPORTEDSIZES extends EnumDWTCap
-  /* 4386 */ @js.native
-  object ICAP_SUPPORTEDSIZES extends TopLevel[ICAP_SUPPORTEDSIZES with Double]
+  /* 4386 */ val ICAP_SUPPORTEDSIZES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_SUPPORTEDSIZES with Double = js.native
   
   /**
     * Specifies the dividing line between black and white. This is the value the Source will use to
@@ -1024,20 +896,17 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_THRESHOLD extends EnumDWTCap
-  /* 4387 */ @js.native
-  object ICAP_THRESHOLD extends TopLevel[ICAP_THRESHOLD with Double]
+  /* 4387 */ val ICAP_THRESHOLD: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_THRESHOLD with Double = js.native
   
   /** This is used with buffered memory transfers. If TRUE, Source can provide application with tiled image data. */
   @js.native
   sealed trait ICAP_TILES extends EnumDWTCap
-  /* 4379 */ @js.native
-  object ICAP_TILES extends TopLevel[ICAP_TILES with Double]
+  /* 4379 */ val ICAP_TILES: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_TILES with Double = js.native
   
   /** Used only with CCITT data compression. Specifies the minimum number of words of compressed codes (compressed data) to be transmitted per line. */
   @js.native
   sealed trait ICAP_TIMEFILL extends EnumDWTCap
-  /* 4394 */ @js.native
-  object ICAP_TIMEFILL extends TopLevel[ICAP_TIMEFILL with Double]
+  /* 4394 */ val ICAP_TIMEFILL: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_TIMEFILL with Double = js.native
   
   /**
     * If TRUE the Source will issue a MSG_XFERREADY before starting the scan.
@@ -1046,8 +915,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_UNDEFINEDIMAGESIZE extends EnumDWTCap
-  /* 4397 */ @js.native
-  object ICAP_UNDEFINEDIMAGESIZE extends TopLevel[ICAP_UNDEFINEDIMAGESIZE with Double]
+  /* 4397 */ val ICAP_UNDEFINEDIMAGESIZE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_UNDEFINEDIMAGESIZE with Double = js.native
   
   /**
     * Unless a quantity is dimensionless or uses a specified unit of measure, ICAP_UNITS determines
@@ -1055,14 +923,12 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_UNITS extends EnumDWTCap
-  /* 258 */ @js.native
-  object ICAP_UNITS extends TopLevel[ICAP_UNITS with Double]
+  /* 258 */ val ICAP_UNITS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_UNITS with Double = js.native
   
   /** Allows the application and Source to identify which transfer mechanisms the source supports. */
   @js.native
   sealed trait ICAP_XFERMECH extends EnumDWTCap
-  /* 259 */ @js.native
-  object ICAP_XFERMECH extends TopLevel[ICAP_XFERMECH with Double]
+  /* 259 */ val ICAP_XFERMECH: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_XFERMECH with Double = js.native
   
   /**
     * The native optical resolution along the X-axis of the device being controlled by the Source. Most
@@ -1073,8 +939,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_XNATIVERESOLUTION extends EnumDWTCap
-  /* 4374 */ @js.native
-  object ICAP_XNATIVERESOLUTION extends TopLevel[ICAP_XNATIVERESOLUTION with Double]
+  /* 4374 */ val ICAP_XNATIVERESOLUTION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_XNATIVERESOLUTION with Double = js.native
   
   /**
     * All the X-axis resolutions the Source can provide.
@@ -1086,8 +951,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_XRESOLUTION extends EnumDWTCap
-  /* 4376 */ @js.native
-  object ICAP_XRESOLUTION extends TopLevel[ICAP_XRESOLUTION with Double]
+  /* 4376 */ val ICAP_XRESOLUTION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_XRESOLUTION with Double = js.native
   
   /**
     * All the X-axis scaling values available. A value of '1.0' is equivalent to 100% scaling.
@@ -1095,8 +959,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_XSCALING extends EnumDWTCap
-  /* 4388 */ @js.native
-  object ICAP_XSCALING extends TopLevel[ICAP_XSCALING with Double]
+  /* 4388 */ val ICAP_XSCALING: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_XSCALING with Double = js.native
   
   /**
     * The native optical resolution along the Y-axis of the device being controlled by the Source.
@@ -1105,8 +968,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_YNATIVERESOLUTION extends EnumDWTCap
-  /* 4375 */ @js.native
-  object ICAP_YNATIVERESOLUTION extends TopLevel[ICAP_YNATIVERESOLUTION with Double]
+  /* 4375 */ val ICAP_YNATIVERESOLUTION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_YNATIVERESOLUTION with Double = js.native
   
   /**
     * All the Y-axis resolutions the Source can provide.
@@ -1118,8 +980,7 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_YRESOLUTION extends EnumDWTCap
-  /* 4377 */ @js.native
-  object ICAP_YRESOLUTION extends TopLevel[ICAP_YRESOLUTION with Double]
+  /* 4377 */ val ICAP_YRESOLUTION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_YRESOLUTION with Double = js.native
   
   /**
     * All the Y-axis scaling values available. A value of '1.0' is equivalent to 100% scaling. Do not use values less than or equal to zero.
@@ -1127,12 +988,10 @@ object EnumDWTCap extends js.Object {
     */
   @js.native
   sealed trait ICAP_YSCALING extends EnumDWTCap
-  /* 4389 */ @js.native
-  object ICAP_YSCALING extends TopLevel[ICAP_YSCALING with Double]
+  /* 4389 */ val ICAP_YSCALING: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_YSCALING with Double = js.native
   
   /** When used with CapGet(), returns all camera supported lens zooming range.  */
   @js.native
   sealed trait ICAP_ZOOMFACTOR extends EnumDWTCap
-  /* 4414 */ @js.native
-  object ICAP_ZOOMFACTOR extends TopLevel[ICAP_ZOOMFACTOR with Double]
+  /* 4414 */ val ICAP_ZOOMFACTOR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCap.ICAP_ZOOMFACTOR with Double = js.native
 }

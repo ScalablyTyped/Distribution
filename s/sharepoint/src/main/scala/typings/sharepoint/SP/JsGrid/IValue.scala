@@ -1,11 +1,12 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IValue extends js.Object {
+trait IValue extends StObject {
   
   var data: js.UndefOr[js.Any] = js.native
   
@@ -20,30 +21,18 @@ object IValue {
   }
   
   @scala.inline
-  implicit class IValueOps[Self <: IValue] (val x: Self) extends AnyVal {
+  implicit class IValueMutableBuilder[Self <: IValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalized(value: String): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setLocalized(value: String): Self = this.set("localized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalized: Self = this.set("localized", js.undefined)
+    def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
   }
 }

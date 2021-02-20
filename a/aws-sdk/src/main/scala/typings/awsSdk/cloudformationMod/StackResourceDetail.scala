@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackResourceDetail extends js.Object {
+trait StackResourceDetail extends StObject {
   
   /**
     * User defined description associated with the resource.
@@ -76,72 +77,60 @@ object StackResourceDetail {
   }
   
   @scala.inline
-  implicit class StackResourceDetailOps[Self <: StackResourceDetail] (val x: Self) extends AnyVal {
+  implicit class StackResourceDetailMutableBuilder[Self <: StackResourceDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriftInformation(value: StackResourceDriftInformation): Self = StObject.set(x, "DriftInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTimestamp(value: Timestamp): Self = this.set("LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    def setDriftInformationUndefined: Self = StObject.set(x, "DriftInformation", js.undefined)
     
     @scala.inline
-    def setLogicalResourceId(value: LogicalResourceId): Self = this.set("LogicalResourceId", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceStatus(value: ResourceStatus): Self = this.set("ResourceStatus", value.asInstanceOf[js.Any])
+    def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setPhysicalResourceId(value: PhysicalResourceId): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriftInformation(value: StackResourceDriftInformation): Self = this.set("DriftInformation", value.asInstanceOf[js.Any])
+    def setPhysicalResourceIdUndefined: Self = StObject.set(x, "PhysicalResourceId", js.undefined)
     
     @scala.inline
-    def deleteDriftInformation: Self = this.set("DriftInformation", js.undefined)
+    def setResourceStatus(value: ResourceStatus): Self = StObject.set(x, "ResourceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: Metadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    def setResourceStatusReason(value: ResourceStatusReason): Self = StObject.set(x, "ResourceStatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    def setResourceStatusReasonUndefined: Self = StObject.set(x, "ResourceStatusReason", js.undefined)
     
     @scala.inline
-    def setPhysicalResourceId(value: PhysicalResourceId): Self = this.set("PhysicalResourceId", value.asInstanceOf[js.Any])
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhysicalResourceId: Self = this.set("PhysicalResourceId", js.undefined)
+    def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceStatusReason(value: ResourceStatusReason): Self = this.set("ResourceStatusReason", value.asInstanceOf[js.Any])
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
     
     @scala.inline
-    def deleteResourceStatusReason: Self = this.set("ResourceStatusReason", js.undefined)
+    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackId(value: StackId): Self = this.set("StackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
-    
-    @scala.inline
-    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackName: Self = this.set("StackName", js.undefined)
+    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
   }
 }

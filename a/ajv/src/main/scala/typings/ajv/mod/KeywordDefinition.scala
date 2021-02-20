@@ -1,11 +1,12 @@
 package typings.ajv.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeywordDefinition extends js.Object {
+trait KeywordDefinition extends StObject {
   
   @JSName("$data")
   var $data: js.UndefOr[Boolean] = js.native
@@ -69,114 +70,102 @@ object KeywordDefinition {
   }
   
   @scala.inline
-  implicit class KeywordDefinitionOps[Self <: KeywordDefinition] (val x: Self) extends AnyVal {
+  implicit class KeywordDefinitionMutableBuilder[Self <: KeywordDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$data(value: Boolean): Self = StObject.set(x, "$data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$dataUndefined: Self = StObject.set(x, "$data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$data(value: Boolean): Self = this.set("$data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$data: Self = this.set("$data", js.undefined)
-    
-    @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
     def setCompile(
       value: (/* schema */ js.Any, /* parentSchema */ js.Object, /* it */ CompilationContext) => ValidateFunction
-    ): Self = this.set("compile", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "compile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteCompile: Self = this.set("compile", js.undefined)
+    def setCompileUndefined: Self = StObject.set(x, "compile", js.undefined)
     
     @scala.inline
-    def setDependenciesVarargs(value: String*): Self = this.set("dependencies", js.Array(value :_*))
+    def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencies(value: js.Array[String]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
     @scala.inline
-    def setErrors(value: Boolean | String): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setErrors(value: Boolean | String): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
     def setInline(
       value: (/* it */ CompilationContext, /* keyword */ String, /* schema */ js.Any, /* parentSchema */ js.Object) => String
-    ): Self = this.set("inline", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "inline", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteInline: Self = this.set("inline", js.undefined)
+    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
     def setMacro(
       value: (/* schema */ js.Any, /* parentSchema */ js.Object, /* it */ CompilationContext) => js.Object | Boolean
-    ): Self = this.set("macro", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "macro", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteMacro: Self = this.set("macro", js.undefined)
+    def setMacroUndefined: Self = StObject.set(x, "macro", js.undefined)
     
     @scala.inline
-    def setMetaSchema(value: js.Object): Self = this.set("metaSchema", value.asInstanceOf[js.Any])
+    def setMetaSchema(value: js.Object): Self = StObject.set(x, "metaSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetaSchema: Self = this.set("metaSchema", js.undefined)
+    def setMetaSchemaUndefined: Self = StObject.set(x, "metaSchema", js.undefined)
     
     @scala.inline
-    def setModifying(value: Boolean): Self = this.set("modifying", value.asInstanceOf[js.Any])
+    def setModifying(value: Boolean): Self = StObject.set(x, "modifying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModifying: Self = this.set("modifying", js.undefined)
+    def setModifyingUndefined: Self = StObject.set(x, "modifying", js.undefined)
     
     @scala.inline
-    def setSchema(value: Boolean): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSchema(value: Boolean): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def setStatements(value: Boolean): Self = this.set("statements", value.asInstanceOf[js.Any])
+    def setStatements(value: Boolean): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatements: Self = this.set("statements", js.undefined)
+    def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
     @scala.inline
-    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
+    def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String | js.Array[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def setValid(value: Boolean): Self = this.set("valid", value.asInstanceOf[js.Any])
+    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValid: Self = this.set("valid", js.undefined)
+    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     
     @scala.inline
-    def setValidate(value: SchemaValidateFunction | ValidateFunction): Self = this.set("validate", value.asInstanceOf[js.Any])
+    def setValidate(value: SchemaValidateFunction | ValidateFunction): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

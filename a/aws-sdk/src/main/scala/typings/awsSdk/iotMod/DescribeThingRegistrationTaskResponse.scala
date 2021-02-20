@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeThingRegistrationTaskResponse extends js.Object {
+trait DescribeThingRegistrationTaskResponse extends StObject {
   
   /**
     * The task creation date.
@@ -76,90 +77,78 @@ object DescribeThingRegistrationTaskResponse {
   }
   
   @scala.inline
-  implicit class DescribeThingRegistrationTaskResponseOps[Self <: DescribeThingRegistrationTaskResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeThingRegistrationTaskResponseMutableBuilder[Self <: DescribeThingRegistrationTaskResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureCount(value: Count): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setInputFileBucket(value: RegistryS3BucketName): Self = StObject.set(x, "inputFileBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCount(value: Count): Self = this.set("failureCount", value.asInstanceOf[js.Any])
+    def setInputFileBucketUndefined: Self = StObject.set(x, "inputFileBucket", js.undefined)
     
     @scala.inline
-    def deleteFailureCount: Self = this.set("failureCount", js.undefined)
+    def setInputFileKey(value: RegistryS3KeyName): Self = StObject.set(x, "inputFileKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFileBucket(value: RegistryS3BucketName): Self = this.set("inputFileBucket", value.asInstanceOf[js.Any])
+    def setInputFileKeyUndefined: Self = StObject.set(x, "inputFileKey", js.undefined)
     
     @scala.inline
-    def deleteInputFileBucket: Self = this.set("inputFileBucket", js.undefined)
+    def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFileKey(value: RegistryS3KeyName): Self = this.set("inputFileKey", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteInputFileKey: Self = this.set("inputFileKey", js.undefined)
+    def setMessage(value: ErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: LastModifiedDate): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    def setPercentageProgress(value: Percentage): Self = StObject.set(x, "percentageProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: ErrorMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPercentageProgressUndefined: Self = StObject.set(x, "percentageProgress", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentageProgress(value: Percentage): Self = this.set("percentageProgress", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
     @scala.inline
-    def deletePercentageProgress: Self = this.set("percentageProgress", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    def setSuccessCount(value: Count): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessCount(value: Count): Self = this.set("successCount", value.asInstanceOf[js.Any])
+    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     
     @scala.inline
-    def deleteSuccessCount: Self = this.set("successCount", js.undefined)
+    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskId(value: TaskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskId: Self = this.set("taskId", js.undefined)
-    
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = this.set("templateBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateBody: Self = this.set("templateBody", js.undefined)
+    def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
   }
 }

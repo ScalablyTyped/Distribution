@@ -8,14 +8,14 @@ import typings.awsSdkClientGlacierNode.typesUploadMultipartPartOutputMod.UploadM
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/commands/UploadMultipartPartCommand", JSImport.Namespace)
-@js.native
-object uploadMultipartPartCommandMod extends js.Object {
+object uploadMultipartPartCommandMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/commands/UploadMultipartPartCommand", "UploadMultipartPartCommand")
   @js.native
   class UploadMultipartPartCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ApplicationViewWindowingMode extends js.Object
+sealed trait ApplicationViewWindowingMode extends StObject
 /** Defines constants that specify whether the app window is auto-sized, full-screen, or set to a specific size on launch. */
 @JSGlobal("Windows.UI.ViewManagement.ApplicationViewWindowingMode")
 @js.native
-object ApplicationViewWindowingMode extends js.Object {
+object ApplicationViewWindowingMode extends StObject {
   
   /** The system sizes the app window automatically. */
   @js.native

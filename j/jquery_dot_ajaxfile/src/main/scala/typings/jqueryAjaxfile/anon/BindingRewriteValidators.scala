@@ -1,11 +1,12 @@
 package typings.jqueryAjaxfile.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindingRewriteValidators extends js.Object {
+trait BindingRewriteValidators extends StObject {
   
   var bindingRewriteValidators: js.Any = js.native
   
@@ -20,24 +21,12 @@ object BindingRewriteValidators {
   }
   
   @scala.inline
-  implicit class BindingRewriteValidatorsOps[Self <: BindingRewriteValidators] (val x: Self) extends AnyVal {
+  implicit class BindingRewriteValidatorsMutableBuilder[Self <: BindingRewriteValidators] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindingRewriteValidators(value: js.Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBindingRewriteValidators(value: js.Any): Self = this.set("bindingRewriteValidators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParseObjectLiteral(value: String => js.Array[_]): Self = this.set("parseObjectLiteral", js.Any.fromFunction1(value))
+    def setParseObjectLiteral(value: String => js.Array[_]): Self = StObject.set(x, "parseObjectLiteral", js.Any.fromFunction1(value))
   }
 }

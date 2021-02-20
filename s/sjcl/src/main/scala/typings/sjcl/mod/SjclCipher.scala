@@ -1,11 +1,12 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclCipher extends js.Object {
+trait SjclCipher extends StObject {
   
   def decrypt(data: js.Array[Double]): js.Array[Double] = js.native
   
@@ -20,24 +21,12 @@ object SjclCipher {
   }
   
   @scala.inline
-  implicit class SjclCipherOps[Self <: SjclCipher] (val x: Self) extends AnyVal {
+  implicit class SjclCipherMutableBuilder[Self <: SjclCipher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecrypt(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDecrypt(value: js.Array[Double] => js.Array[Double]): Self = this.set("decrypt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEncrypt(value: js.Array[Double] => js.Array[Double]): Self = this.set("encrypt", js.Any.fromFunction1(value))
+    def setEncrypt(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "encrypt", js.Any.fromFunction1(value))
   }
 }

@@ -3,6 +3,7 @@ package typings.winrt.Windows.UI.Core
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.System.VirtualKeyModifiers
 import typings.winrt.Windows.UI.Input.PointerPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,27 +31,15 @@ object IPointerEventArgs {
   }
   
   @scala.inline
-  implicit class IPointerEventArgsOps[Self <: IPointerEventArgs] (val x: Self) extends AnyVal {
+  implicit class IPointerEventArgsMutableBuilder[Self <: IPointerEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPoint(value: PointerPoint): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIntermediatePoints(value: () => IVector[PointerPoint]): Self = StObject.set(x, "getIntermediatePoints", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentPoint(value: PointerPoint): Self = this.set("currentPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetIntermediatePoints(value: () => IVector[PointerPoint]): Self = this.set("getIntermediatePoints", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setKeyModifiers(value: VirtualKeyModifiers): Self = this.set("keyModifiers", value.asInstanceOf[js.Any])
+    def setKeyModifiers(value: VirtualKeyModifiers): Self = StObject.set(x, "keyModifiers", value.asInstanceOf[js.Any])
   }
 }

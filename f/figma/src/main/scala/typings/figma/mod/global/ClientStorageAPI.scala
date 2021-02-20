@@ -1,11 +1,12 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientStorageAPI extends js.Object {
+trait ClientStorageAPI extends StObject {
   
   def getAsync(key: String): js.Promise[_] = js.native
   
@@ -20,24 +21,12 @@ object ClientStorageAPI {
   }
   
   @scala.inline
-  implicit class ClientStorageAPIOps[Self <: ClientStorageAPI] (val x: Self) extends AnyVal {
+  implicit class ClientStorageAPIMutableBuilder[Self <: ClientStorageAPI] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAsync(value: String => js.Promise[_]): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetAsync(value: String => js.Promise[_]): Self = this.set("getAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetAsync(value: (String, js.Any) => js.Promise[Unit]): Self = this.set("setAsync", js.Any.fromFunction2(value))
+    def setSetAsync(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "setAsync", js.Any.fromFunction2(value))
   }
 }

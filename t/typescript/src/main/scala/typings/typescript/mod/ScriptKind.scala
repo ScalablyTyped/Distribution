@@ -1,15 +1,15 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ScriptKind extends js.Object
+sealed trait ScriptKind extends StObject
 @JSImport("typescript", "ScriptKind")
 @js.native
-object ScriptKind extends js.Object {
+object ScriptKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ScriptKind with Double] = js.native
@@ -20,41 +20,33 @@ object ScriptKind extends js.Object {
     */
   @js.native
   sealed trait Deferred extends ScriptKind
-  /* 7 */ @js.native
-  object Deferred extends TopLevel[Deferred with Double]
+  /* 7 */ val Deferred: typings.typescript.mod.ScriptKind.Deferred with Double = js.native
   
   @js.native
   sealed trait External extends ScriptKind
-  /* 5 */ @js.native
-  object External extends TopLevel[External with Double]
+  /* 5 */ val External: typings.typescript.mod.ScriptKind.External with Double = js.native
   
   @js.native
   sealed trait JS extends ScriptKind
-  /* 1 */ @js.native
-  object JS extends TopLevel[JS with Double]
+  /* 1 */ val JS: typings.typescript.mod.ScriptKind.JS with Double = js.native
   
   @js.native
   sealed trait JSON extends ScriptKind
-  /* 6 */ @js.native
-  object JSON extends TopLevel[JSON with Double]
+  /* 6 */ val JSON: typings.typescript.mod.ScriptKind.JSON with Double = js.native
   
   @js.native
   sealed trait JSX extends ScriptKind
-  /* 2 */ @js.native
-  object JSX extends TopLevel[JSX with Double]
+  /* 2 */ val JSX: typings.typescript.mod.ScriptKind.JSX with Double = js.native
   
   @js.native
   sealed trait TS extends ScriptKind
-  /* 3 */ @js.native
-  object TS extends TopLevel[TS with Double]
+  /* 3 */ val TS: typings.typescript.mod.ScriptKind.TS with Double = js.native
   
   @js.native
   sealed trait TSX extends ScriptKind
-  /* 4 */ @js.native
-  object TSX extends TopLevel[TSX with Double]
+  /* 4 */ val TSX: typings.typescript.mod.ScriptKind.TSX with Double = js.native
   
   @js.native
   sealed trait Unknown extends ScriptKind
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
+  /* 0 */ val Unknown: typings.typescript.mod.ScriptKind.Unknown with Double = js.native
 }

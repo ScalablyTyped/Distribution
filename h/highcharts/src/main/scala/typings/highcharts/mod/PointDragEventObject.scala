@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.drag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointDragEventObject extends js.Object {
+trait PointDragEventObject extends StObject {
   
   /**
     * New points during drag.
@@ -49,33 +50,21 @@ object PointDragEventObject {
   }
   
   @scala.inline
-  implicit class PointDragEventObjectOps[Self <: PointDragEventObject] (val x: Self) extends AnyVal {
+  implicit class PointDragEventObjectMutableBuilder[Self <: PointDragEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewPoints(value: Dictionary[PointDragDropObject]): Self = StObject.set(x, "newPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrigin(value: DragDropPositionObject): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPoints(value: Dictionary[PointDragDropObject]): Self = this.set("newPoints", value.asInstanceOf[js.Any])
+    def setTarget(value: Point): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: DragDropPositionObject): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: Point): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: drag): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

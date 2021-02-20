@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableViewCol extends js.Object {
+trait MUIDataTableViewCol extends StObject {
   
   var classes: js.UndefOr[js.Object] = js.native
   
@@ -27,36 +28,24 @@ object MUIDataTableViewCol {
   }
   
   @scala.inline
-  implicit class MUIDataTableViewColOps[Self <: MUIDataTableViewCol] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableViewColMutableBuilder[Self <: MUIDataTableViewCol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[_]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: js.Any*): Self = this.set("columns", js.Array(value :_*))
+    def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumns(value: js.Array[_]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setObject(value: js.Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: js.Object): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnColumnUpdate(value: js.Any => js.Any): Self = this.set("onColumnUpdate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setClasses(value: js.Object): Self = this.set("classes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setOnColumnUpdate(value: js.Any => js.Any): Self = StObject.set(x, "onColumnUpdate", js.Any.fromFunction1(value))
   }
 }

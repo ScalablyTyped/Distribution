@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentGroup extends js.Object {
+trait SegmentGroup extends StObject {
   
   /**
     * An array that defines the dimensions for the segment.
@@ -36,48 +37,36 @@ object SegmentGroup {
   }
   
   @scala.inline
-  implicit class SegmentGroupOps[Self <: SegmentGroup] (val x: Self) extends AnyVal {
+  implicit class SegmentGroupMutableBuilder[Self <: SegmentGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensions(value: ListOfSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionsVarargs(value: SegmentDimensions*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionsVarargs(value: SegmentDimensions*): Self = this.set("Dimensions", js.Array(value :_*))
+    def setSourceSegments(value: ListOfSegmentReference): Self = StObject.set(x, "SourceSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: ListOfSegmentDimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    def setSourceSegmentsUndefined: Self = StObject.set(x, "SourceSegments", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    def setSourceSegmentsVarargs(value: SegmentReference*): Self = StObject.set(x, "SourceSegments", js.Array(value :_*))
     
     @scala.inline
-    def setSourceSegmentsVarargs(value: SegmentReference*): Self = this.set("SourceSegments", js.Array(value :_*))
+    def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSegments(value: ListOfSegmentReference): Self = this.set("SourceSegments", value.asInstanceOf[js.Any])
+    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
     @scala.inline
-    def deleteSourceSegments: Self = this.set("SourceSegments", js.undefined)
+    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceType(value: SourceType): Self = this.set("SourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("SourceType", js.undefined)
-    
-    @scala.inline
-    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

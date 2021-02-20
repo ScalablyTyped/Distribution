@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TooltipOptions extends js.Object {
+trait TooltipOptions extends StObject {
   
   var animation: js.UndefOr[Boolean | TooltipAnimation] = js.native
   
@@ -50,120 +51,108 @@ object TooltipOptions {
   }
   
   @scala.inline
-  implicit class TooltipOptionsOps[Self <: TooltipOptions] (val x: Self) extends AnyVal {
+  implicit class TooltipOptionsMutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean | TooltipAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | TooltipAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setCallout(value: Boolean): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
     
     @scala.inline
-    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    def setContent(value: String | js.Function | TooltipContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallout(value: Boolean): Self = this.set("callout", value.asInstanceOf[js.Any])
+    def setContentLoad(value: /* e */ TooltipEvent => Unit): Self = StObject.set(x, "contentLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCallout: Self = this.set("callout", js.undefined)
+    def setContentLoadUndefined: Self = StObject.set(x, "contentLoad", js.undefined)
     
     @scala.inline
-    def setContent(value: String | js.Function | TooltipContent): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setError(value: /* e */ TooltipErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContentLoad(value: /* e */ TooltipEvent => Unit): Self = this.set("contentLoad", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteContentLoad: Self = this.set("contentLoad", js.undefined)
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* e */ TooltipErrorEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setHide(value: /* e */ TooltipEvent => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIframe(value: Boolean): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: /* e */ TooltipEvent => Unit): Self = this.set("hide", js.Any.fromFunction1(value))
+    def setIframeUndefined: Self = StObject.set(x, "iframe", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframe(value: Boolean): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIframe: Self = this.set("iframe", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRequestStart(value: /* e */ TooltipRequestStartEvent => Unit): Self = StObject.set(x, "requestStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRequestStartUndefined: Self = StObject.set(x, "requestStart", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShow(value: /* e */ TooltipEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestStart(value: /* e */ TooltipRequestStartEvent => Unit): Self = this.set("requestStart", js.Any.fromFunction1(value))
+    def setShowAfter(value: Double): Self = StObject.set(x, "showAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestStart: Self = this.set("requestStart", js.undefined)
+    def setShowAfterUndefined: Self = StObject.set(x, "showAfter", js.undefined)
     
     @scala.inline
-    def setShow(value: /* e */ TooltipEvent => Unit): Self = this.set("show", js.Any.fromFunction1(value))
+    def setShowOn(value: String): Self = StObject.set(x, "showOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
     
     @scala.inline
-    def setShowAfter(value: Double): Self = this.set("showAfter", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteShowAfter: Self = this.set("showAfter", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOn(value: String): Self = this.set("showOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowOn: Self = this.set("showOn", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

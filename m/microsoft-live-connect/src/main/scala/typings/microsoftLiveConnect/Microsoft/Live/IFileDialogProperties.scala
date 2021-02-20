@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 'Properties' object passed into the WL.fileDialog method.
   */
 @js.native
-trait IFileDialogProperties extends js.Object {
+trait IFileDialogProperties extends StObject {
   
   /**
     * The color pallette to use for the file picker. Specify "white",
@@ -41,33 +42,21 @@ object IFileDialogProperties {
   }
   
   @scala.inline
-  implicit class IFileDialogPropertiesOps[Self <: IFileDialogProperties] (val x: Self) extends AnyVal {
+  implicit class IFileDialogPropertiesMutableBuilder[Self <: IFileDialogProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLightbox(value: String): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLightboxUndefined: Self = StObject.set(x, "lightbox", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightbox(value: String): Self = this.set("lightbox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLightbox: Self = this.set("lightbox", js.undefined)
-    
-    @scala.inline
-    def setSelect(value: String): Self = this.set("select", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

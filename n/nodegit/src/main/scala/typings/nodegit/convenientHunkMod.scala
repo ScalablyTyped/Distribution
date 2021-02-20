@@ -1,16 +1,16 @@
 package typings.nodegit
 
 import typings.nodegit.diffLineMod.DiffLine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/convenient-hunk", JSImport.Namespace)
-@js.native
-object convenientHunkMod extends js.Object {
+object convenientHunkMod {
   
+  @JSImport("nodegit/convenient-hunk", "ConvenientHunk")
   @js.native
-  class ConvenientHunk () extends js.Object {
+  class ConvenientHunk () extends StObject {
     
     /**
       * Diff header string that represents the context of this hunk

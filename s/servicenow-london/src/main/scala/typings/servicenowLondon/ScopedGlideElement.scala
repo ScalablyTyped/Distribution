@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScopedGlideElement extends js.Object {
+trait ScopedGlideElement extends StObject {
   
   /**
     * Determines if the user's role permits the creation of new records in this field.

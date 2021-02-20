@@ -3,12 +3,13 @@ package typings.tern.ternMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.tern.ternNumbers.`5`
 import typings.tern.ternNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CtorOptions extends js.Object {
+trait CtorOptions extends StObject {
   
   /** The definition objects to load into the server’s environment. */
   var defs: js.UndefOr[js.Array[Def]] = js.native
@@ -31,45 +32,33 @@ object CtorOptions {
   }
   
   @scala.inline
-  implicit class CtorOptionsOps[Self <: CtorOptions] (val x: Self) extends AnyVal {
+  implicit class CtorOptionsMutableBuilder[Self <: CtorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefs(value: js.Array[Def]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefsVarargs(value: Def*): Self = StObject.set(x, "defs", js.Array(value :_*))
     
     @scala.inline
-    def setDefsVarargs(value: Def*): Self = this.set("defs", js.Array(value :_*))
+    def setEcmaVersion(value: `5` | `6`): Self = StObject.set(x, "ecmaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefs(value: js.Array[Def]): Self = this.set("defs", value.asInstanceOf[js.Any])
+    def setEcmaVersionUndefined: Self = StObject.set(x, "ecmaVersion", js.undefined)
     
     @scala.inline
-    def deleteDefs: Self = this.set("defs", js.undefined)
+    def setFetchTimeout(value: Double): Self = StObject.set(x, "fetchTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcmaVersion(value: `5` | `6`): Self = this.set("ecmaVersion", value.asInstanceOf[js.Any])
+    def setFetchTimeoutUndefined: Self = StObject.set(x, "fetchTimeout", js.undefined)
     
     @scala.inline
-    def deleteEcmaVersion: Self = this.set("ecmaVersion", js.undefined)
+    def setPlugins(value: StringDictionary[js.Object]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchTimeout(value: Double): Self = this.set("fetchTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFetchTimeout: Self = this.set("fetchTimeout", js.undefined)
-    
-    @scala.inline
-    def setPlugins(value: StringDictionary[js.Object]): Self = this.set("plugins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
   }
 }

@@ -3,22 +3,37 @@ package typings.reactLocalization
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-localization", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var default: LocalizedStringsFactory = js.native
+  @JSImport("react-localization", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-localization", JSImport.Default)
+  @js.native
+  def default: LocalizedStringsFactory = js.native
+  @scala.inline
+  def default_=(x: LocalizedStringsFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  
+  type FormatObject[U /* <: Formatted */] = StringDictionary[U]
+  
+  type Formatted = Double | String | Element
+  
+  type GlobalStrings[T] = StringDictionary[T]
+  
+  type LocalizedStrings[T] = LocalizedStringsMethods with T
   
   @js.native
   trait LocalizedStringsFactory
     extends Instantiable1[/* props */ GlobalStrings[js.Object], LocalizedStrings[js.Object]]
   
   @js.native
-  trait LocalizedStringsMethods extends js.Object {
+  trait LocalizedStringsMethods extends StObject {
     
     /**
       * Format the passed string replacing the numbered placeholders
@@ -65,12 +80,4 @@ object mod extends js.Object {
       */
     def setLanguage(language: String): Unit = js.native
   }
-  
-  type FormatObject[U /* <: Formatted */] = StringDictionary[U]
-  
-  type Formatted = Double | String | Element
-  
-  type GlobalStrings[T] = StringDictionary[T]
-  
-  type LocalizedStrings[T] = LocalizedStringsMethods with T
 }

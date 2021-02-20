@@ -1,5 +1,6 @@
 package typings.reactBytesizeIcons.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object BytesizeIconsProps {
   }
   
   @scala.inline
-  implicit class BytesizeIconsPropsOps[Self <: BytesizeIconsProps] (val x: Self) extends AnyVal {
+  implicit class BytesizeIconsPropsMutableBuilder[Self <: BytesizeIconsProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrokeLinecap(value: StrokeLinecap): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrokeLinejoin(value: StrokeLinejoin): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeLinecap(value: StrokeLinecap): Self = this.set("strokeLinecap", value.asInstanceOf[js.Any])
+    def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
     
     @scala.inline
-    def deleteStrokeLinecap: Self = this.set("strokeLinecap", js.undefined)
+    def setStrokeWidth(value: String): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeLinejoin(value: StrokeLinejoin): Self = this.set("strokeLinejoin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeLinejoin: Self = this.set("strokeLinejoin", js.undefined)
-    
-    @scala.inline
-    def setStrokeWidth(value: String): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

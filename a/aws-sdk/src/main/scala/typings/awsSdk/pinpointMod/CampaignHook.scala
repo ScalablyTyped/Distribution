@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CampaignHook extends js.Object {
+trait CampaignHook extends StObject {
   
   /**
     * The name or Amazon Resource Name (ARN) of the AWS Lambda function that Amazon Pinpoint invokes to customize a segment for a campaign.
@@ -31,36 +32,24 @@ object CampaignHook {
   }
   
   @scala.inline
-  implicit class CampaignHookOps[Self <: CampaignHook] (val x: Self) extends AnyVal {
+  implicit class CampaignHookMutableBuilder[Self <: CampaignHook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLambdaFunctionName(value: string): Self = StObject.set(x, "LambdaFunctionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLambdaFunctionNameUndefined: Self = StObject.set(x, "LambdaFunctionName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: Mode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionName(value: string): Self = this.set("LambdaFunctionName", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
     @scala.inline
-    def deleteLambdaFunctionName: Self = this.set("LambdaFunctionName", js.undefined)
+    def setWebUrl(value: string): Self = StObject.set(x, "WebUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: Mode): Self = this.set("Mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("Mode", js.undefined)
-    
-    @scala.inline
-    def setWebUrl(value: string): Self = this.set("WebUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebUrl: Self = this.set("WebUrl", js.undefined)
+    def setWebUrlUndefined: Self = StObject.set(x, "WebUrl", js.undefined)
   }
 }

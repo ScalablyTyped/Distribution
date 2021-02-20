@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DnsRequestAction extends js.Object {
+trait DnsRequestAction extends StObject {
   
   /**
     * The domain information for the API request.
@@ -21,24 +22,12 @@ object DnsRequestAction {
   }
   
   @scala.inline
-  implicit class DnsRequestActionOps[Self <: DnsRequestAction] (val x: Self) extends AnyVal {
+  implicit class DnsRequestActionMutableBuilder[Self <: DnsRequestAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDomain(value: String): Self = this.set("Domain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
   }
 }

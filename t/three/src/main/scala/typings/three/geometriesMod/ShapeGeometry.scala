@@ -1,6 +1,7 @@
 package typings.three.geometriesMod
 
 import typings.three.shapeMod.Shape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

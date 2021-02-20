@@ -1,16 +1,16 @@
 package typings.reactNativeNavigation
 
 import typings.reactNativeNavigation.anon.Modals
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-navigation/lib/dist/adapters/NativeCommandsSender", JSImport.Namespace)
-@js.native
-object nativeCommandsSenderMod extends js.Object {
+object nativeCommandsSenderMod {
   
+  @JSImport("react-native-navigation/lib/dist/adapters/NativeCommandsSender", "NativeCommandsSender")
   @js.native
-  class NativeCommandsSender () extends js.Object {
+  class NativeCommandsSender () extends StObject {
     
     def dismissAllModals(commandId: String): js.Promise[_] = js.native
     def dismissAllModals(commandId: String, options: js.Object): js.Promise[_] = js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountCustomerService extends js.Object {
+trait AccountCustomerService extends StObject {
   
   /** Customer service email. */
   var email: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object AccountCustomerService {
   }
   
   @scala.inline
-  implicit class AccountCustomerServiceOps[Self <: AccountCustomerService] (val x: Self) extends AnyVal {
+  implicit class AccountCustomerServiceMutableBuilder[Self <: AccountCustomerService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

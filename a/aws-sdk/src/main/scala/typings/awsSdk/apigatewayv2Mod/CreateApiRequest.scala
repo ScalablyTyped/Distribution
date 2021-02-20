@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateApiRequest extends js.Object {
+trait CreateApiRequest extends StObject {
   
   /**
     * An API key selection expression. Supported only for WebSocket APIs. See API Key Selection Expressions.
@@ -81,90 +82,78 @@ object CreateApiRequest {
   }
   
   @scala.inline
-  implicit class CreateApiRequestOps[Self <: CreateApiRequest] (val x: Self) extends AnyVal {
+  implicit class CreateApiRequestMutableBuilder[Self <: CreateApiRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKeySelectionExpression(value: SelectionExpression): Self = StObject.set(x, "ApiKeySelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiKeySelectionExpressionUndefined: Self = StObject.set(x, "ApiKeySelectionExpression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorsConfiguration(value: Cors): Self = StObject.set(x, "CorsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: StringWithLengthBetween1And128): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setCorsConfigurationUndefined: Self = StObject.set(x, "CorsConfiguration", js.undefined)
     
     @scala.inline
-    def setProtocolType(value: ProtocolType): Self = this.set("ProtocolType", value.asInstanceOf[js.Any])
+    def setCredentialsArn(value: Arn): Self = StObject.set(x, "CredentialsArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKeySelectionExpression(value: SelectionExpression): Self = this.set("ApiKeySelectionExpression", value.asInstanceOf[js.Any])
+    def setCredentialsArnUndefined: Self = StObject.set(x, "CredentialsArn", js.undefined)
     
     @scala.inline
-    def deleteApiKeySelectionExpression: Self = this.set("ApiKeySelectionExpression", js.undefined)
+    def setDescription(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorsConfiguration(value: Cors): Self = this.set("CorsConfiguration", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCorsConfiguration: Self = this.set("CorsConfiguration", js.undefined)
+    def setDisableExecuteApiEndpoint(value: boolean): Self = StObject.set(x, "DisableExecuteApiEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialsArn(value: Arn): Self = this.set("CredentialsArn", value.asInstanceOf[js.Any])
+    def setDisableExecuteApiEndpointUndefined: Self = StObject.set(x, "DisableExecuteApiEndpoint", js.undefined)
     
     @scala.inline
-    def deleteCredentialsArn: Self = this.set("CredentialsArn", js.undefined)
+    def setDisableSchemaValidation(value: boolean): Self = StObject.set(x, "DisableSchemaValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDisableSchemaValidationUndefined: Self = StObject.set(x, "DisableSchemaValidation", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableExecuteApiEndpoint(value: boolean): Self = this.set("DisableExecuteApiEndpoint", value.asInstanceOf[js.Any])
+    def setProtocolType(value: ProtocolType): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableExecuteApiEndpoint: Self = this.set("DisableExecuteApiEndpoint", js.undefined)
+    def setRouteKey(value: SelectionKey): Self = StObject.set(x, "RouteKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSchemaValidation(value: boolean): Self = this.set("DisableSchemaValidation", value.asInstanceOf[js.Any])
+    def setRouteKeyUndefined: Self = StObject.set(x, "RouteKey", js.undefined)
     
     @scala.inline
-    def deleteDisableSchemaValidation: Self = this.set("DisableSchemaValidation", js.undefined)
+    def setRouteSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "RouteSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteKey(value: SelectionKey): Self = this.set("RouteKey", value.asInstanceOf[js.Any])
+    def setRouteSelectionExpressionUndefined: Self = StObject.set(x, "RouteSelectionExpression", js.undefined)
     
     @scala.inline
-    def deleteRouteKey: Self = this.set("RouteKey", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteSelectionExpression(value: SelectionExpression): Self = this.set("RouteSelectionExpression", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRouteSelectionExpression: Self = this.set("RouteSelectionExpression", js.undefined)
+    def setTarget(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setVersion(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: UriWithLengthBetween1And2048): Self = this.set("Target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("Target", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: StringWithLengthBetween1And64): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

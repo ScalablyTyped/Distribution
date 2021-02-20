@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedInstance extends js.Object {
+trait ManagedInstance extends StObject {
   
   /**
     * [Output Only] The current action that the managed instance group has scheduled for the instance. Possible values:
@@ -57,75 +58,63 @@ object ManagedInstance {
   }
   
   @scala.inline
-  implicit class ManagedInstanceOps[Self <: ManagedInstance] (val x: Self) extends AnyVal {
+  implicit class ManagedInstanceMutableBuilder[Self <: ManagedInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentAction(value: String): Self = StObject.set(x, "currentAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentActionUndefined: Self = StObject.set(x, "currentAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentAction(value: String): Self = this.set("currentAction", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCurrentAction: Self = this.set("currentAction", js.undefined)
+    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInstanceHealth(value: js.Array[ManagedInstanceInstanceHealth]): Self = StObject.set(x, "instanceHealth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInstanceHealthUndefined: Self = StObject.set(x, "instanceHealth", js.undefined)
     
     @scala.inline
-    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setInstanceHealthVarargs(value: ManagedInstanceInstanceHealth*): Self = StObject.set(x, "instanceHealth", js.Array(value :_*))
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setInstanceStatus(value: String): Self = StObject.set(x, "instanceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceHealthVarargs(value: ManagedInstanceInstanceHealth*): Self = this.set("instanceHealth", js.Array(value :_*))
+    def setInstanceStatusUndefined: Self = StObject.set(x, "instanceStatus", js.undefined)
     
     @scala.inline
-    def setInstanceHealth(value: js.Array[ManagedInstanceInstanceHealth]): Self = this.set("instanceHealth", value.asInstanceOf[js.Any])
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def deleteInstanceHealth: Self = this.set("instanceHealth", js.undefined)
+    def setLastAttempt(value: ManagedInstanceLastAttempt): Self = StObject.set(x, "lastAttempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceStatus(value: String): Self = this.set("instanceStatus", value.asInstanceOf[js.Any])
+    def setLastAttemptUndefined: Self = StObject.set(x, "lastAttempt", js.undefined)
     
     @scala.inline
-    def deleteInstanceStatus: Self = this.set("instanceStatus", js.undefined)
+    def setPreservedStateFromConfig(value: PreservedState): Self = StObject.set(x, "preservedStateFromConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAttempt(value: ManagedInstanceLastAttempt): Self = this.set("lastAttempt", value.asInstanceOf[js.Any])
+    def setPreservedStateFromConfigUndefined: Self = StObject.set(x, "preservedStateFromConfig", js.undefined)
     
     @scala.inline
-    def deleteLastAttempt: Self = this.set("lastAttempt", js.undefined)
+    def setPreservedStateFromPolicy(value: PreservedState): Self = StObject.set(x, "preservedStateFromPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreservedStateFromConfig(value: PreservedState): Self = this.set("preservedStateFromConfig", value.asInstanceOf[js.Any])
+    def setPreservedStateFromPolicyUndefined: Self = StObject.set(x, "preservedStateFromPolicy", js.undefined)
     
     @scala.inline
-    def deletePreservedStateFromConfig: Self = this.set("preservedStateFromConfig", js.undefined)
+    def setVersion(value: ManagedInstanceVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreservedStateFromPolicy(value: PreservedState): Self = this.set("preservedStateFromPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreservedStateFromPolicy: Self = this.set("preservedStateFromPolicy", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: ManagedInstanceVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

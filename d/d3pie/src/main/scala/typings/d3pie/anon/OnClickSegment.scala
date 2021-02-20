@@ -1,11 +1,12 @@
 package typings.d3pie.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnClickSegment extends js.Object {
+trait OnClickSegment extends StObject {
   
   var onClickSegment: js.UndefOr[js.Function] = js.native
   
@@ -24,42 +25,30 @@ object OnClickSegment {
   }
   
   @scala.inline
-  implicit class OnClickSegmentOps[Self <: OnClickSegment] (val x: Self) extends AnyVal {
+  implicit class OnClickSegmentMutableBuilder[Self <: OnClickSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnClickSegment(value: js.Function): Self = StObject.set(x, "onClickSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnClickSegmentUndefined: Self = StObject.set(x, "onClickSegment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnMouseoutSegment(value: js.Function): Self = StObject.set(x, "onMouseoutSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClickSegment(value: js.Function): Self = this.set("onClickSegment", value.asInstanceOf[js.Any])
+    def setOnMouseoutSegmentUndefined: Self = StObject.set(x, "onMouseoutSegment", js.undefined)
     
     @scala.inline
-    def deleteOnClickSegment: Self = this.set("onClickSegment", js.undefined)
+    def setOnMouseoverSegment(value: js.Function): Self = StObject.set(x, "onMouseoverSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseoutSegment(value: js.Function): Self = this.set("onMouseoutSegment", value.asInstanceOf[js.Any])
+    def setOnMouseoverSegmentUndefined: Self = StObject.set(x, "onMouseoverSegment", js.undefined)
     
     @scala.inline
-    def deleteOnMouseoutSegment: Self = this.set("onMouseoutSegment", js.undefined)
+    def setOnload(value: js.Function): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseoverSegment(value: js.Function): Self = this.set("onMouseoverSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnMouseoverSegment: Self = this.set("onMouseoverSegment", js.undefined)
-    
-    @scala.inline
-    def setOnload(value: js.Function): Self = this.set("onload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnload: Self = this.set("onload", js.undefined)
+    def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
   }
 }

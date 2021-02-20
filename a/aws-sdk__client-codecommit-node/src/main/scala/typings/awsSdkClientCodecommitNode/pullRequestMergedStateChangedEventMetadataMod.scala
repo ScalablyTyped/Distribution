@@ -1,13 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/_PullRequestMergedStateChangedEventMetadata", JSImport.Namespace)
-@js.native
-object pullRequestMergedStateChangedEventMetadataMod extends js.Object {
+object pullRequestMergedStateChangedEventMetadataMod {
   
-  @JSName("_PullRequestMergedStateChangedEventMetadata")
+  @JSImport("@aws-sdk/client-codecommit-node/model/_PullRequestMergedStateChangedEventMetadata", "_PullRequestMergedStateChangedEventMetadata")
+  @js.native
   val PullRequestMergedStateChangedEventMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

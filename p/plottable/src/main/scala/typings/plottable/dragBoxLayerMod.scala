@@ -3,14 +3,14 @@ package typings.plottable
 import typings.plottable.interactionsMod.Drag
 import typings.plottable.interfacesMod.Bounds
 import typings.plottable.selectionBoxLayerMod.SelectionBoxLayer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/dragBoxLayer", JSImport.Namespace)
-@js.native
-object dragBoxLayerMod extends js.Object {
+object dragBoxLayerMod {
   
+  @JSImport("plottable/build/src/components/dragBoxLayer", "DragBoxLayer")
   @js.native
   /**
     * Constructs a DragBoxLayer.

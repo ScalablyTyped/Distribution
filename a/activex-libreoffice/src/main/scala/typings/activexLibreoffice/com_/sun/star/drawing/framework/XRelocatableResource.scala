@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An optional interface that is implemented by resources that are relocatable to different anchors. */
 @js.native
-trait XRelocatableResource extends js.Object {
+trait XRelocatableResource extends StObject {
   
   /**
     * Replace the current anchor of the called resource with the given one.
@@ -24,21 +25,9 @@ object XRelocatableResource {
   }
   
   @scala.inline
-  implicit class XRelocatableResourceOps[Self <: XRelocatableResource] (val x: Self) extends AnyVal {
+  implicit class XRelocatableResourceMutableBuilder[Self <: XRelocatableResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelocateToAnchor(value: XResource => Boolean): Self = this.set("relocateToAnchor", js.Any.fromFunction1(value))
+    def setRelocateToAnchor(value: XResource => Boolean): Self = StObject.set(x, "relocateToAnchor", js.Any.fromFunction1(value))
   }
 }

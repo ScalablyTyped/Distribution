@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamHttpEndpointConfiguration extends js.Object {
+trait FirehoseDeliveryStreamHttpEndpointConfiguration extends StObject {
   
   /**
     * The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.
@@ -75,75 +76,63 @@ object FirehoseDeliveryStreamHttpEndpointConfiguration {
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamHttpEndpointConfigurationOps[Self <: FirehoseDeliveryStreamHttpEndpointConfiguration] (val x: Self) extends AnyVal {
+  implicit class FirehoseDeliveryStreamHttpEndpointConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamHttpEndpointConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferingInterval(value: Double): Self = StObject.set(x, "bufferingInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions): Self = this.set("cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    def setBufferingIntervalUndefined: Self = StObject.set(x, "bufferingInterval", js.undefined)
     
     @scala.inline
-    def setRequestConfiguration(value: FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration): Self = this.set("requestConfiguration", value.asInstanceOf[js.Any])
+    def setBufferingSize(value: Double): Self = StObject.set(x, "bufferingSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setBufferingSizeUndefined: Self = StObject.set(x, "bufferingSize", js.undefined)
     
     @scala.inline
-    def setAccessKey(value: String): Self = this.set("accessKey", value.asInstanceOf[js.Any])
+    def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessKey: Self = this.set("accessKey", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferingInterval(value: Double): Self = this.set("bufferingInterval", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteBufferingInterval: Self = this.set("bufferingInterval", js.undefined)
+    def setProcessingConfiguration(value: FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration): Self = StObject.set(x, "processingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferingSize(value: Double): Self = this.set("bufferingSize", value.asInstanceOf[js.Any])
+    def setProcessingConfigurationUndefined: Self = StObject.set(x, "processingConfiguration", js.undefined)
     
     @scala.inline
-    def deleteBufferingSize: Self = this.set("bufferingSize", js.undefined)
+    def setRequestConfiguration(value: FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration): Self = StObject.set(x, "requestConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRetryDuration(value: Double): Self = StObject.set(x, "retryDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRetryDurationUndefined: Self = StObject.set(x, "retryDuration", js.undefined)
     
     @scala.inline
-    def setProcessingConfiguration(value: FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration): Self = this.set("processingConfiguration", value.asInstanceOf[js.Any])
+    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProcessingConfiguration: Self = this.set("processingConfiguration", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
     @scala.inline
-    def setRetryDuration(value: Double): Self = this.set("retryDuration", value.asInstanceOf[js.Any])
+    def setS3BackupMode(value: String): Self = StObject.set(x, "s3BackupMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetryDuration: Self = this.set("retryDuration", js.undefined)
+    def setS3BackupModeUndefined: Self = StObject.set(x, "s3BackupMode", js.undefined)
     
     @scala.inline
-    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
-    
-    @scala.inline
-    def setS3BackupMode(value: String): Self = this.set("s3BackupMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3BackupMode: Self = this.set("s3BackupMode", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "MOUSE")
 @js.native
-object MOUSE extends js.Object {
+object MOUSE extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.three.constantsMod.MOUSE with Double] = js.native

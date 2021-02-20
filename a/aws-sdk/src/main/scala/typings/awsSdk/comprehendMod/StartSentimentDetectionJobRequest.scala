@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSentimentDetectionJobRequest extends js.Object {
+trait StartSentimentDetectionJobRequest extends StObject {
   
   /**
     * A unique identifier for the request. If you don't set the client request token, Amazon Comprehend generates one.
@@ -61,54 +62,42 @@ object StartSentimentDetectionJobRequest {
   }
   
   @scala.inline
-  implicit class StartSentimentDetectionJobRequestOps[Self <: StartSentimentDetectionJobRequest] (val x: Self) extends AnyVal {
+  implicit class StartSentimentDetectionJobRequestMutableBuilder[Self <: StartSentimentDetectionJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataAccessRoleArn(value: IamRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
+    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenString): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
+    def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeKmsKeyId(value: KmsKeyId): Self = this.set("VolumeKmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeKmsKeyId: Self = this.set("VolumeKmsKeyId", js.undefined)
-    
-    @scala.inline
-    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

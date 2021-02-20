@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpApiEvent extends js.Object {
+trait HttpApiEvent extends StObject {
   
   var authorizer: js.UndefOr[NamedHttpApiEventAuthorizer | IdRefHttpApiEventAuthorizer] = js.native
   
@@ -22,30 +23,18 @@ object HttpApiEvent {
   }
   
   @scala.inline
-  implicit class HttpApiEventOps[Self <: HttpApiEvent] (val x: Self) extends AnyVal {
+  implicit class HttpApiEventMutableBuilder[Self <: HttpApiEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizer(value: NamedHttpApiEventAuthorizer | IdRefHttpApiEventAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthorizer(value: NamedHttpApiEventAuthorizer | IdRefHttpApiEventAuthorizer): Self = this.set("authorizer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizer: Self = this.set("authorizer", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

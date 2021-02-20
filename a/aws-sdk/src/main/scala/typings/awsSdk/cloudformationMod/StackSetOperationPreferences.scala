@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackSetOperationPreferences extends js.Object {
+trait StackSetOperationPreferences extends StObject {
   
   /**
     * The number of accounts, per Region, for which this operation can fail before AWS CloudFormation stops the operation in that Region. If the operation is stopped in a Region, AWS CloudFormation doesn't attempt the operation in any subsequent Regions. Conditional: You must specify either FailureToleranceCount or FailureTolerancePercentage (but not both).
@@ -41,51 +42,39 @@ object StackSetOperationPreferences {
   }
   
   @scala.inline
-  implicit class StackSetOperationPreferencesOps[Self <: StackSetOperationPreferences] (val x: Self) extends AnyVal {
+  implicit class StackSetOperationPreferencesMutableBuilder[Self <: StackSetOperationPreferences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureToleranceCount(value: FailureToleranceCount): Self = StObject.set(x, "FailureToleranceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureToleranceCountUndefined: Self = StObject.set(x, "FailureToleranceCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureTolerancePercentage(value: FailureTolerancePercentage): Self = StObject.set(x, "FailureTolerancePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureToleranceCount(value: FailureToleranceCount): Self = this.set("FailureToleranceCount", value.asInstanceOf[js.Any])
+    def setFailureTolerancePercentageUndefined: Self = StObject.set(x, "FailureTolerancePercentage", js.undefined)
     
     @scala.inline
-    def deleteFailureToleranceCount: Self = this.set("FailureToleranceCount", js.undefined)
+    def setMaxConcurrentCount(value: MaxConcurrentCount): Self = StObject.set(x, "MaxConcurrentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureTolerancePercentage(value: FailureTolerancePercentage): Self = this.set("FailureTolerancePercentage", value.asInstanceOf[js.Any])
+    def setMaxConcurrentCountUndefined: Self = StObject.set(x, "MaxConcurrentCount", js.undefined)
     
     @scala.inline
-    def deleteFailureTolerancePercentage: Self = this.set("FailureTolerancePercentage", js.undefined)
+    def setMaxConcurrentPercentage(value: MaxConcurrentPercentage): Self = StObject.set(x, "MaxConcurrentPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrentCount(value: MaxConcurrentCount): Self = this.set("MaxConcurrentCount", value.asInstanceOf[js.Any])
+    def setMaxConcurrentPercentageUndefined: Self = StObject.set(x, "MaxConcurrentPercentage", js.undefined)
     
     @scala.inline
-    def deleteMaxConcurrentCount: Self = this.set("MaxConcurrentCount", js.undefined)
+    def setRegionOrder(value: RegionList): Self = StObject.set(x, "RegionOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrentPercentage(value: MaxConcurrentPercentage): Self = this.set("MaxConcurrentPercentage", value.asInstanceOf[js.Any])
+    def setRegionOrderUndefined: Self = StObject.set(x, "RegionOrder", js.undefined)
     
     @scala.inline
-    def deleteMaxConcurrentPercentage: Self = this.set("MaxConcurrentPercentage", js.undefined)
-    
-    @scala.inline
-    def setRegionOrderVarargs(value: Region*): Self = this.set("RegionOrder", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegionOrder(value: RegionList): Self = this.set("RegionOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionOrder: Self = this.set("RegionOrder", js.undefined)
+    def setRegionOrderVarargs(value: Region*): Self = StObject.set(x, "RegionOrder", js.Array(value :_*))
   }
 }

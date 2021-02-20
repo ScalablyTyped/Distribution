@@ -1,11 +1,12 @@
 package typings.scriptjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait script extends js.Object {
+trait script extends StObject {
   
   def apply(paths: String, idOrDone: String): script = js.native
   def apply(paths: String, idOrDone: String, optDone: js.Function0[Unit]): script = js.native

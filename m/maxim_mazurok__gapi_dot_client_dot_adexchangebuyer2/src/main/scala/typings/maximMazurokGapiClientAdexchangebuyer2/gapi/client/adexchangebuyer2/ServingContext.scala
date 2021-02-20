@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServingContext extends js.Object {
+trait ServingContext extends StObject {
   
   /** Matches all contexts. */
   var all: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object ServingContext {
   }
   
   @scala.inline
-  implicit class ServingContextOps[Self <: ServingContext] (val x: Self) extends AnyVal {
+  implicit class ServingContextMutableBuilder[Self <: ServingContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppType(value: AppContext): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: String): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setAppTypeUndefined: Self = StObject.set(x, "appType", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setAuctionType(value: AuctionContext): Self = StObject.set(x, "auctionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppType(value: AppContext): Self = this.set("appType", value.asInstanceOf[js.Any])
+    def setAuctionTypeUndefined: Self = StObject.set(x, "auctionType", js.undefined)
     
     @scala.inline
-    def deleteAppType: Self = this.set("appType", js.undefined)
+    def setLocation(value: LocationContext): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuctionType(value: AuctionContext): Self = this.set("auctionType", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteAuctionType: Self = this.set("auctionType", js.undefined)
+    def setPlatform(value: PlatformContext): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: LocationContext): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setSecurityType(value: SecurityContext): Self = StObject.set(x, "securityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: PlatformContext): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
-    
-    @scala.inline
-    def setSecurityType(value: SecurityContext): Self = this.set("securityType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityType: Self = this.set("securityType", js.undefined)
+    def setSecurityTypeUndefined: Self = StObject.set(x, "securityType", js.undefined)
   }
 }

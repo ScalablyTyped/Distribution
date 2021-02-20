@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreezePeriod extends js.Object {
+trait FreezePeriod extends StObject {
   
   /**
     * The end date (inclusive) of the freeze period. Must be no later than 90 days from the start date. If the end date is earlier than the start date, the freeze period is considered
@@ -25,30 +26,18 @@ object FreezePeriod {
   }
   
   @scala.inline
-  implicit class FreezePeriodOps[Self <: FreezePeriod] (val x: Self) extends AnyVal {
+  implicit class FreezePeriodMutableBuilder[Self <: FreezePeriod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: Date): Self = this.set("endDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
-    
-    @scala.inline
-    def setStartDate(value: Date): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

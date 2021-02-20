@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.HashMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Accessor extends js.Object {
+trait Accessor extends StObject {
   
   /* protected */ def _get(propertyName: String): js.Any = js.native
   @JSName("_get")

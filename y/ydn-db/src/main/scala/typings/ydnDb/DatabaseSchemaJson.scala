@@ -1,11 +1,12 @@
 package typings.ydnDb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabaseSchemaJson extends js.Object {
+trait DatabaseSchemaJson extends StObject {
   
   var fullTextCatalogs: js.UndefOr[js.Array[FullTextCatalog]] = js.native
   
@@ -22,39 +23,27 @@ object DatabaseSchemaJson {
   }
   
   @scala.inline
-  implicit class DatabaseSchemaJsonOps[Self <: DatabaseSchemaJson] (val x: Self) extends AnyVal {
+  implicit class DatabaseSchemaJsonMutableBuilder[Self <: DatabaseSchemaJson] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullTextCatalogs(value: js.Array[FullTextCatalog]): Self = StObject.set(x, "fullTextCatalogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullTextCatalogsUndefined: Self = StObject.set(x, "fullTextCatalogs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullTextCatalogsVarargs(value: FullTextCatalog*): Self = StObject.set(x, "fullTextCatalogs", js.Array(value :_*))
     
     @scala.inline
-    def setStoresVarargs(value: StoreSchemaJson*): Self = this.set("stores", js.Array(value :_*))
+    def setStores(value: js.Array[StoreSchemaJson]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStores(value: js.Array[StoreSchemaJson]): Self = this.set("stores", value.asInstanceOf[js.Any])
+    def setStoresVarargs(value: StoreSchemaJson*): Self = StObject.set(x, "stores", js.Array(value :_*))
     
     @scala.inline
-    def setFullTextCatalogsVarargs(value: FullTextCatalog*): Self = this.set("fullTextCatalogs", js.Array(value :_*))
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullTextCatalogs(value: js.Array[FullTextCatalog]): Self = this.set("fullTextCatalogs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullTextCatalogs: Self = this.set("fullTextCatalogs", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

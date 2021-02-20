@@ -1,8 +1,9 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableImportFindingsForProductResponse extends js.Object
+trait DisableImportFindingsForProductResponse extends StObject

@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.Match
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParticipantTimelineData extends js.Object {
+trait ParticipantTimelineData extends StObject {
   
   var tenToTwenty: Double = js.native
   
@@ -24,30 +25,18 @@ object ParticipantTimelineData {
   }
   
   @scala.inline
-  implicit class ParticipantTimelineDataOps[Self <: ParticipantTimelineData] (val x: Self) extends AnyVal {
+  implicit class ParticipantTimelineDataMutableBuilder[Self <: ParticipantTimelineData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTenToTwenty(value: Double): Self = StObject.set(x, "tenToTwenty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThirtyToEnd(value: Double): Self = StObject.set(x, "thirtyToEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTwentyToThirty(value: Double): Self = StObject.set(x, "twentyToThirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTenToTwenty(value: Double): Self = this.set("tenToTwenty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThirtyToEnd(value: Double): Self = this.set("thirtyToEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwentyToThirty(value: Double): Self = this.set("twentyToThirty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZeroToTen(value: Double): Self = this.set("zeroToTen", value.asInstanceOf[js.Any])
+    def setZeroToTen(value: Double): Self = StObject.set(x, "zeroToTen", value.asInstanceOf[js.Any])
   }
 }

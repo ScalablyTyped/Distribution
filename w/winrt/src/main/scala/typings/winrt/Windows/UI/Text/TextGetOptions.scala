@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextGetOptions extends js.Object
+sealed trait TextGetOptions extends StObject
 @JSGlobal("Windows.UI.Text.TextGetOptions")
 @js.native
-object TextGetOptions extends js.Object {
+object TextGetOptions extends StObject {
   
   @js.native
   sealed trait adjustCrlf extends TextGetOptions

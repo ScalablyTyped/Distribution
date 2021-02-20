@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListQuerySourcesResponse extends js.Object {
+trait ListQuerySourcesResponse extends StObject {
   
   var nextPageToken: js.UndefOr[String] = js.native
   
@@ -20,33 +21,21 @@ object ListQuerySourcesResponse {
   }
   
   @scala.inline
-  implicit class ListQuerySourcesResponseOps[Self <: ListQuerySourcesResponse] (val x: Self) extends AnyVal {
+  implicit class ListQuerySourcesResponseMutableBuilder[Self <: ListQuerySourcesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSources(value: js.Array[QuerySource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setSourcesVarargs(value: QuerySource*): Self = this.set("sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: js.Array[QuerySource]): Self = this.set("sources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setSourcesVarargs(value: QuerySource*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

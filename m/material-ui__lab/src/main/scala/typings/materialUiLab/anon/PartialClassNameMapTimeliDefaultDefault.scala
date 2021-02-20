@@ -1,12 +1,13 @@
 package typings.materialUiLab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/TimelineDot/TimelineDot.TimelineDotClassKey>> */
 @js.native
-trait PartialClassNameMapTimeliDefaultDefault extends js.Object {
+trait PartialClassNameMapTimeliDefaultDefault extends StObject {
   
   var defaultDefault: js.UndefOr[String] = js.native
   
@@ -31,60 +32,48 @@ object PartialClassNameMapTimeliDefaultDefault {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapTimeliDefaultDefaultOps[Self <: PartialClassNameMapTimeliDefaultDefault] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapTimeliDefaultDefaultMutableBuilder[Self <: PartialClassNameMapTimeliDefaultDefault] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultDefault(value: String): Self = StObject.set(x, "defaultDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultDefaultUndefined: Self = StObject.set(x, "defaultDefault", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultPrimary(value: String): Self = StObject.set(x, "defaultPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDefault(value: String): Self = this.set("defaultDefault", value.asInstanceOf[js.Any])
+    def setDefaultPrimaryUndefined: Self = StObject.set(x, "defaultPrimary", js.undefined)
     
     @scala.inline
-    def deleteDefaultDefault: Self = this.set("defaultDefault", js.undefined)
+    def setDefaultSecondary(value: String): Self = StObject.set(x, "defaultSecondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPrimary(value: String): Self = this.set("defaultPrimary", value.asInstanceOf[js.Any])
+    def setDefaultSecondaryUndefined: Self = StObject.set(x, "defaultSecondary", js.undefined)
     
     @scala.inline
-    def deleteDefaultPrimary: Self = this.set("defaultPrimary", js.undefined)
+    def setOutlinedDefault(value: String): Self = StObject.set(x, "outlinedDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSecondary(value: String): Self = this.set("defaultSecondary", value.asInstanceOf[js.Any])
+    def setOutlinedDefaultUndefined: Self = StObject.set(x, "outlinedDefault", js.undefined)
     
     @scala.inline
-    def deleteDefaultSecondary: Self = this.set("defaultSecondary", js.undefined)
+    def setOutlinedPrimary(value: String): Self = StObject.set(x, "outlinedPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlinedDefault(value: String): Self = this.set("outlinedDefault", value.asInstanceOf[js.Any])
+    def setOutlinedPrimaryUndefined: Self = StObject.set(x, "outlinedPrimary", js.undefined)
     
     @scala.inline
-    def deleteOutlinedDefault: Self = this.set("outlinedDefault", js.undefined)
+    def setOutlinedSecondary(value: String): Self = StObject.set(x, "outlinedSecondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlinedPrimary(value: String): Self = this.set("outlinedPrimary", value.asInstanceOf[js.Any])
+    def setOutlinedSecondaryUndefined: Self = StObject.set(x, "outlinedSecondary", js.undefined)
     
     @scala.inline
-    def deleteOutlinedPrimary: Self = this.set("outlinedPrimary", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlinedSecondary(value: String): Self = this.set("outlinedSecondary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutlinedSecondary: Self = this.set("outlinedSecondary", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

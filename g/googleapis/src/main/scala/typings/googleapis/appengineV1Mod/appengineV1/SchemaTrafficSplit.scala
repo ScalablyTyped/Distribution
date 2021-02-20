@@ -1,6 +1,7 @@
 package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * splits define how traffic directed to the service is assigned to versions.
   */
 @js.native
-trait SchemaTrafficSplit extends js.Object {
+trait SchemaTrafficSplit extends StObject {
   
   /**
     * Mapping from version IDs within the service to fractional (0.000, 1]
@@ -40,30 +41,18 @@ object SchemaTrafficSplit {
   }
   
   @scala.inline
-  implicit class SchemaTrafficSplitOps[Self <: SchemaTrafficSplit] (val x: Self) extends AnyVal {
+  implicit class SchemaTrafficSplitMutableBuilder[Self <: SchemaTrafficSplit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocations(value: StringDictionary[Double]): Self = StObject.set(x, "allocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationsUndefined: Self = StObject.set(x, "allocations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShardBy(value: String): Self = StObject.set(x, "shardBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocations(value: StringDictionary[Double]): Self = this.set("allocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllocations: Self = this.set("allocations", js.undefined)
-    
-    @scala.inline
-    def setShardBy(value: String): Self = this.set("shardBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShardBy: Self = this.set("shardBy", js.undefined)
+    def setShardByUndefined: Self = StObject.set(x, "shardBy", js.undefined)
   }
 }

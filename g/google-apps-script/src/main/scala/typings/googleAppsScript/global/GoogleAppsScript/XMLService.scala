@@ -1,18 +1,18 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.XML_Service")
-@js.native
-object XMLService extends js.Object {
+object XMLService {
   
   /**
     * An enumeration representing the types of XML content nodes.
     */
+  @JSGlobal("GoogleAppsScript.XML_Service.ContentType")
   @js.native
-  object ContentType extends js.Object {
+  object ContentType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.XMLService.ContentType with Double] = js.native

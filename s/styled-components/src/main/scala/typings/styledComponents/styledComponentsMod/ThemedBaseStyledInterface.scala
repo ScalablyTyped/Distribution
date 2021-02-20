@@ -178,6 +178,7 @@ import typings.styledComponents.styledComponentsStrings.video
 import typings.styledComponents.styledComponentsStrings.view
 import typings.styledComponents.styledComponentsStrings.wbr
 import typings.styledComponents.styledComponentsStrings.webview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

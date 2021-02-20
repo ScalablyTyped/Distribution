@@ -1,12 +1,13 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "LineMap")
 @js.native
-class LineMap protected () extends js.Object {
+class LineMap protected () extends StObject {
   def this(text: String) = this()
   
   var computeLineStarts: js.Any = js.native

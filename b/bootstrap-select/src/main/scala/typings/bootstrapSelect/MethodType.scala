@@ -1,5 +1,6 @@
 package typings.bootstrapSelect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.bootstrapSelect.bootstrapSelectStrings.show
   - typings.bootstrapSelect.bootstrapSelectStrings.destroy
 */
-trait MethodType extends js.Object
+trait MethodType extends StObject
 object MethodType {
   
   @scala.inline

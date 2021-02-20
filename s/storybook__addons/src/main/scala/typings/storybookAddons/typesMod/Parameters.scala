@@ -5,6 +5,7 @@ import typings.storybookAddons.storybookAddonsStrings.centered
 import typings.storybookAddons.storybookAddonsStrings.fullscreen
 import typings.storybookAddons.storybookAddonsStrings.none_
 import typings.storybookAddons.storybookAddonsStrings.padded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,42 +32,30 @@ object Parameters {
   }
   
   @scala.inline
-  implicit class ParametersOps[Self <: Parameters] (val x: Self) extends AnyVal {
+  implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocsOnly(value: Boolean): Self = this.set("docsOnly", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def deleteDocsOnly: Self = this.set("docsOnly", js.undefined)
+    def setLayout(value: centered | fullscreen | padded | none_): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setOptions(value: OptionsParameter): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: centered | fullscreen | padded | none_): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: OptionsParameter): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

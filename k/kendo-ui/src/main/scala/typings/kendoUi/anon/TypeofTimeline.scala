@@ -1,20 +1,35 @@
 package typings.kendoUi.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.kendoUi.kendo.ui.Timeline
-import typings.kendoUi.kendo.ui.TimelineOptions
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofTimeline
-  extends Instantiable1[/* element */ Element, Timeline]
-     with Instantiable2[/* element */ Element, /* options */ TimelineOptions, Timeline] {
+trait TypeofTimeline extends StObject {
   
+  /* static member */
   def extend(proto: js.Object): Timeline = js.native
   
+  /* static member */
   var fn: Timeline = js.native
+}
+object TypeofTimeline {
+  
+  @scala.inline
+  def apply(extend: js.Object => Timeline, fn: Timeline): TypeofTimeline = {
+    val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofTimeline]
+  }
+  
+  @scala.inline
+  implicit class TypeofTimelineMutableBuilder[Self <: TypeofTimeline] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setExtend(value: js.Object => Timeline): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setFn(value: Timeline): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+  }
 }

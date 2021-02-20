@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.disabled
   - typings.microsoftGraph.microsoftGraphStrings.enabled
 */
-trait WindowsSpotlightEnablementSettings extends js.Object
+trait WindowsSpotlightEnablementSettings extends StObject
 object WindowsSpotlightEnablementSettings {
   
   @scala.inline

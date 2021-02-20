@@ -1,7 +1,6 @@
 package typings.reactBootstrap.mod
 
-import typings.react.mod.Component
-import typings.reactBootstrap.safeAnchorMod.SafeAnchorProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-bootstrap", "SafeAnchor")
 @js.native
 class SafeAnchor ()
-  extends Component[SafeAnchorProps, js.Object, js.Any]
+  extends typings.reactBootstrap.libMod.SafeAnchor

@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,33 +21,21 @@ object WatcherStats {
   }
   
   @scala.inline
-  implicit class WatcherStatsOps[Self <: WatcherStats] (val x: Self) extends AnyVal {
+  implicit class WatcherStatsMutableBuilder[Self <: WatcherStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmit_stacktraces(value: Boolean): Self = StObject.set(x, "emit_stacktraces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmit_stacktracesUndefined: Self = StObject.set(x, "emit_stacktraces", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetric(value: String | js.Array[String]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmit_stacktraces(value: Boolean): Self = this.set("emit_stacktraces", value.asInstanceOf[js.Any])
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     @scala.inline
-    def deleteEmit_stacktraces: Self = this.set("emit_stacktraces", js.undefined)
-    
-    @scala.inline
-    def setMetricVarargs(value: String*): Self = this.set("metric", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetric(value: String | js.Array[String]): Self = this.set("metric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
+    def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,42 +106,30 @@ object XAccessibleSelection {
   }
   
   @scala.inline
-  implicit class XAccessibleSelectionOps[Self <: XAccessibleSelection] (val x: Self) extends AnyVal {
+  implicit class XAccessibleSelectionMutableBuilder[Self <: XAccessibleSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearAccessibleSelection(value: () => Unit): Self = StObject.set(x, "clearAccessibleSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeselectAccessibleChild(value: Double => Unit): Self = StObject.set(x, "deselectAccessibleChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSelectedAccessibleChild(value: Double => XAccessible): Self = StObject.set(x, "getSelectedAccessibleChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedAccessibleChildCount(value: Double): Self = this.set("SelectedAccessibleChildCount", value.asInstanceOf[js.Any])
+    def setGetSelectedAccessibleChildCount(value: () => Double): Self = StObject.set(x, "getSelectedAccessibleChildCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearAccessibleSelection(value: () => Unit): Self = this.set("clearAccessibleSelection", js.Any.fromFunction0(value))
+    def setIsAccessibleChildSelected(value: Double => Boolean): Self = StObject.set(x, "isAccessibleChildSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeselectAccessibleChild(value: Double => Unit): Self = this.set("deselectAccessibleChild", js.Any.fromFunction1(value))
+    def setSelectAccessibleChild(value: Double => Unit): Self = StObject.set(x, "selectAccessibleChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSelectedAccessibleChild(value: Double => XAccessible): Self = this.set("getSelectedAccessibleChild", js.Any.fromFunction1(value))
+    def setSelectAllAccessibleChildren(value: () => Unit): Self = StObject.set(x, "selectAllAccessibleChildren", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectedAccessibleChildCount(value: () => Double): Self = this.set("getSelectedAccessibleChildCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsAccessibleChildSelected(value: Double => Boolean): Self = this.set("isAccessibleChildSelected", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectAccessibleChild(value: Double => Unit): Self = this.set("selectAccessibleChild", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectAllAccessibleChildren(value: () => Unit): Self = this.set("selectAllAccessibleChildren", js.Any.fromFunction0(value))
+    def setSelectedAccessibleChildCount(value: Double): Self = StObject.set(x, "SelectedAccessibleChildCount", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.antvComponent.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Handler extends js.Object {
+trait Handler extends StObject {
   
   var handler: Size = js.native
   
@@ -24,30 +25,18 @@ object Handler {
   }
   
   @scala.inline
-  implicit class HandlerOps[Self <: Handler] (val x: Self) extends AnyVal {
+  implicit class HandlerMutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandler(value: Size): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: Formatter): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRail(value: DefaultLength): Self = StObject.set(x, "rail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: Size): Self = this.set("handler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: Formatter): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRail(value: DefaultLength): Self = this.set("rail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: Spacing): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: Spacing): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

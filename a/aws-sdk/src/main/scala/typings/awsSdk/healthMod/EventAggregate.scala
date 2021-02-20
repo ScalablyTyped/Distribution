@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventAggregate extends js.Object {
+trait EventAggregate extends StObject {
   
   /**
     * The issue type for the associated count.
@@ -26,30 +27,18 @@ object EventAggregate {
   }
   
   @scala.inline
-  implicit class EventAggregateOps[Self <: EventAggregate] (val x: Self) extends AnyVal {
+  implicit class EventAggregateMutableBuilder[Self <: EventAggregate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateValue(value: aggregateValue): Self = StObject.set(x, "aggregateValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateValueUndefined: Self = StObject.set(x, "aggregateValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateValue(value: aggregateValue): Self = this.set("aggregateValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregateValue: Self = this.set("aggregateValue", js.undefined)
-    
-    @scala.inline
-    def setCount(value: count): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
   }
 }

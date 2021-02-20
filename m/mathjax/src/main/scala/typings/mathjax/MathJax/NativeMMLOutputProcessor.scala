@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeMMLOutputProcessor extends js.Object {
+trait NativeMMLOutputProcessor extends StObject {
   
   /*This option indicates whether MathJax should try to adjust the x-height of equations to match the x-height of
     * the surrounding text. See the MatchWebFonts options for finer control, especially if you are using Web fonts.
@@ -39,42 +40,30 @@ object NativeMMLOutputProcessor {
   }
   
   @scala.inline
-  implicit class NativeMMLOutputProcessorOps[Self <: NativeMMLOutputProcessor] (val x: Self) extends AnyVal {
+  implicit class NativeMMLOutputProcessorMutableBuilder[Self <: NativeMMLOutputProcessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchFontHeight(value: Boolean): Self = StObject.set(x, "matchFontHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchFontHeightUndefined: Self = StObject.set(x, "matchFontHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinScaleAdjust(value: Double): Self = StObject.set(x, "minScaleAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFontHeight(value: Boolean): Self = this.set("matchFontHeight", value.asInstanceOf[js.Any])
+    def setMinScaleAdjustUndefined: Self = StObject.set(x, "minScaleAdjust", js.undefined)
     
     @scala.inline
-    def deleteMatchFontHeight: Self = this.set("matchFontHeight", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinScaleAdjust(value: Double): Self = this.set("minScaleAdjust", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteMinScaleAdjust: Self = this.set("minScaleAdjust", js.undefined)
+    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
-    
-    @scala.inline
-    def setStyles(value: js.Any): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

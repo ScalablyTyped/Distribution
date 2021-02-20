@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KernelRangeDetails extends js.Object {
+trait KernelRangeDetails extends StObject {
   
   /**
     * Base address.
@@ -31,27 +32,15 @@ object KernelRangeDetails {
   }
   
   @scala.inline
-  implicit class KernelRangeDetailsOps[Self <: KernelRangeDetails] (val x: Self) extends AnyVal {
+  implicit class KernelRangeDetailsMutableBuilder[Self <: KernelRangeDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: UInt64): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtection(value: PageProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBase(value: UInt64): Self = this.set("base", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtection(value: PageProtection): Self = this.set("protection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

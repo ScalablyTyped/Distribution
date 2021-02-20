@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleSheetsOptions extends js.Object {
+trait GoogleSheetsOptions extends StObject {
   
   var range: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object GoogleSheetsOptions {
   }
   
   @scala.inline
-  implicit class GoogleSheetsOptionsOps[Self <: GoogleSheetsOptions] (val x: Self) extends AnyVal {
+  implicit class GoogleSheetsOptionsMutableBuilder[Self <: GoogleSheetsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkipLeadingRows(value: String): Self = StObject.set(x, "skipLeadingRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: String): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
-    
-    @scala.inline
-    def setSkipLeadingRows(value: String): Self = this.set("skipLeadingRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipLeadingRows: Self = this.set("skipLeadingRows", js.undefined)
+    def setSkipLeadingRowsUndefined: Self = StObject.set(x, "skipLeadingRows", js.undefined)
   }
 }

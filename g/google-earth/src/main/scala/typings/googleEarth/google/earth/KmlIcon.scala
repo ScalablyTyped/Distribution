@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +54,7 @@ object KmlIcon {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getH: () => Double,
     getHref: () => String,
     getId: () => String,
@@ -88,47 +89,36 @@ object KmlIcon {
     setX: Double => Double,
     setY: Double => Unit
   ): KmlIcon = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getH = js.Any.fromFunction0(getH), getHref = js.Any.fromFunction0(getHref), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getRefreshInterval = js.Any.fromFunction0(getRefreshInterval), getRefreshMode = js.Any.fromFunction0(getRefreshMode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getViewBoundScale = js.Any.fromFunction0(getViewBoundScale), getViewFormat = js.Any.fromFunction0(getViewFormat), getViewRefreshMode = js.Any.fromFunction0(getViewRefreshMode), getViewRefreshTime = js.Any.fromFunction0(getViewRefreshTime), getW = js.Any.fromFunction0(getW), getX = js.Any.fromFunction0(getX), getY = js.Any.fromFunction0(getY), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setH = js.Any.fromFunction1(setH), setHref = js.Any.fromFunction1(setHref), setRefreshInterval = js.Any.fromFunction1(setRefreshInterval), setRefreshMode = js.Any.fromFunction1(setRefreshMode), setViewBoundScale = js.Any.fromFunction1(setViewBoundScale), setViewFormat = js.Any.fromFunction1(setViewFormat), setViewRefreshMode = js.Any.fromFunction1(setViewRefreshMode), setViewRefreshTime = js.Any.fromFunction1(setViewRefreshTime), setW = js.Any.fromFunction1(setW), setX = js.Any.fromFunction1(setX), setY = js.Any.fromFunction1(setY))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getH = js.Any.fromFunction0(getH), getHref = js.Any.fromFunction0(getHref), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getRefreshInterval = js.Any.fromFunction0(getRefreshInterval), getRefreshMode = js.Any.fromFunction0(getRefreshMode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getViewBoundScale = js.Any.fromFunction0(getViewBoundScale), getViewFormat = js.Any.fromFunction0(getViewFormat), getViewRefreshMode = js.Any.fromFunction0(getViewRefreshMode), getViewRefreshTime = js.Any.fromFunction0(getViewRefreshTime), getW = js.Any.fromFunction0(getW), getX = js.Any.fromFunction0(getX), getY = js.Any.fromFunction0(getY), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setH = js.Any.fromFunction1(setH), setHref = js.Any.fromFunction1(setHref), setRefreshInterval = js.Any.fromFunction1(setRefreshInterval), setRefreshMode = js.Any.fromFunction1(setRefreshMode), setViewBoundScale = js.Any.fromFunction1(setViewBoundScale), setViewFormat = js.Any.fromFunction1(setViewFormat), setViewRefreshMode = js.Any.fromFunction1(setViewRefreshMode), setViewRefreshTime = js.Any.fromFunction1(setViewRefreshTime), setW = js.Any.fromFunction1(setW), setX = js.Any.fromFunction1(setX), setY = js.Any.fromFunction1(setY))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlIcon]
   }
   
   @scala.inline
-  implicit class KmlIconOps[Self <: KmlIcon] (val x: Self) extends AnyVal {
+  implicit class KmlIconMutableBuilder[Self <: KmlIcon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetH(value: () => Double): Self = StObject.set(x, "getH", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetW(value: () => Double): Self = StObject.set(x, "getW", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetH(value: () => Double): Self = this.set("getH", js.Any.fromFunction0(value))
+    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetW(value: () => Double): Self = this.set("getW", js.Any.fromFunction0(value))
+    def setSetH(value: Double => Unit): Self = StObject.set(x, "setH", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetX(value: () => Double): Self = this.set("getX", js.Any.fromFunction0(value))
+    def setSetW(value: Double => Unit): Self = StObject.set(x, "setW", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetY(value: () => Double): Self = this.set("getY", js.Any.fromFunction0(value))
+    def setSetX(value: Double => Double): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetH(value: Double => Unit): Self = this.set("setH", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetW(value: Double => Unit): Self = this.set("setW", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetX(value: Double => Double): Self = this.set("setX", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetY(value: Double => Unit): Self = this.set("setY", js.Any.fromFunction1(value))
+    def setSetY(value: Double => Unit): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
   }
 }

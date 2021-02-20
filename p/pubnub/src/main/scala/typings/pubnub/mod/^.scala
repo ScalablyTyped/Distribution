@@ -1,5 +1,6 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +12,4 @@ class ^ protected () extends Pubnub {
 }
 @JSImport("pubnub", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  
-  var CATEGORIES: Categories = js.native
-  
-  var OPERATIONS: Operations = js.native
-  
-  def generateUUID(): String = js.native
-  
-  def notificationPayload(title: String, body: String): NotificationsPayload = js.native
-}
+object ^ extends StObject

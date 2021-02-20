@@ -1,5 +1,6 @@
 package typings.handsontable.mod.Handsontable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,36 +39,24 @@ object CellProperties {
   }
   
   @scala.inline
-  implicit class CellPropertiesOps[Self <: CellProperties] (val x: Self) extends AnyVal {
+  implicit class CellPropertiesMutableBuilder[Self <: CellProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstance(value: typings.handsontable.mod.Handsontable): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProp(value: String | Double): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCol(value: Double): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: typings.handsontable.mod.Handsontable): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setVisualCol(value: Double): Self = StObject.set(x, "visualCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProp(value: String | Double): Self = this.set("prop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisualCol(value: Double): Self = this.set("visualCol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisualRow(value: Double): Self = this.set("visualRow", value.asInstanceOf[js.Any])
+    def setVisualRow(value: Double): Self = StObject.set(x, "visualRow", value.asInstanceOf[js.Any])
   }
 }

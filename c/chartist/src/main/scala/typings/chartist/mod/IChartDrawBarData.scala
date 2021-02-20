@@ -2,6 +2,7 @@ package typings.chartist.mod
 
 import typings.chartist.anon.Y
 import typings.chartist.chartistStrings.bar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,66 +66,54 @@ object IChartDrawBarData {
   }
   
   @scala.inline
-  implicit class IChartDrawBarDataOps[Self <: IChartDrawBarData] (val x: Self) extends AnyVal {
+  implicit class IChartDrawBarDataMutableBuilder[Self <: IChartDrawBarData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisX(value: IChartAxis): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisY(value: IChartAxis): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChartRect(value: IChartRect): Self = StObject.set(x, "chartRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisX(value: IChartAxis): Self = this.set("axisX", value.asInstanceOf[js.Any])
+    def setElement(value: IChartistSvg): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisY(value: IChartAxis): Self = this.set("axisY", value.asInstanceOf[js.Any])
+    def setGroup(value: IChartistSvg): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartRect(value: IChartRect): Self = this.set("chartRect", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: IChartistSvg): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: IChartistSvg): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setSeries(value: js.Array[Double]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setSeriesIndex(value: Double): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Any): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setSeriesVarargs(value: Double*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def setSeriesVarargs(value: Double*): Self = this.set("series", js.Array(value :_*))
+    def setType(value: bar): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: js.Array[Double]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setValue(value: Y): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesIndex(value: Double): Self = this.set("seriesIndex", value.asInstanceOf[js.Any])
+    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: bar): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: Y): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX1(value: Double): Self = this.set("x1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX2(value: Double): Self = this.set("x2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY1(value: Double): Self = this.set("y1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY2(value: Double): Self = this.set("y2", value.asInstanceOf[js.Any])
+    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

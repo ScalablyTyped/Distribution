@@ -1,12 +1,13 @@
 package typings.wiredep.anon
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Styl extends js.Object {
+trait Styl extends StObject {
   
   /**
     * @example:
@@ -29,24 +30,12 @@ object Styl {
   }
   
   @scala.inline
-  implicit class StylOps[Self <: Styl] (val x: Self) extends AnyVal {
+  implicit class StylMutableBuilder[Self <: Styl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCss(value: RegExp): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCss(value: RegExp): Self = this.set("css", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyl(value: RegExp): Self = this.set("styl", value.asInstanceOf[js.Any])
+    def setStyl(value: RegExp): Self = StObject.set(x, "styl", value.asInstanceOf[js.Any])
   }
 }

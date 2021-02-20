@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorCorrectionLevel extends js.Object {
+trait ErrorCorrectionLevel extends StObject {
   
   val Bits: Double = js.native
   
@@ -26,27 +27,15 @@ object ErrorCorrectionLevel {
   }
   
   @scala.inline
-  implicit class ErrorCorrectionLevelOps[Self <: ErrorCorrectionLevel] (val x: Self) extends AnyVal {
+  implicit class ErrorCorrectionLevelMutableBuilder[Self <: ErrorCorrectionLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBits(value: Double): Self = StObject.set(x, "Bits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBits(value: Double): Self = this.set("Bits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrdinal_Renamed_Field(value: Double): Self = this.set("ordinal_Renamed_Field", value.asInstanceOf[js.Any])
+    def setOrdinal_Renamed_Field(value: Double): Self = StObject.set(x, "ordinal_Renamed_Field", value.asInstanceOf[js.Any])
   }
 }

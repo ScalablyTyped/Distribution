@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object InstanceUpdateOptions {
   }
   
   @scala.inline
-  implicit class InstanceUpdateOptionsOps[Self <: InstanceUpdateOptions] (val x: Self) extends AnyVal {
+  implicit class InstanceUpdateOptionsMutableBuilder[Self <: InstanceUpdateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWhere(value: AnyWhereOptions | (js.Array[col | and | or | String])): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWhereVarargs(value: (col | and | or | String)*): Self = this.set("where", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhere(value: AnyWhereOptions | (js.Array[col | and | or | String])): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value :_*))
   }
 }

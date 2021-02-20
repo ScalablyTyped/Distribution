@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2SignInValueSpec extends js.Object {
+trait GoogleActionsV2SignInValueSpec extends StObject {
   
   /**
     * The optional context why the app needs to ask the user to sign in, as a
@@ -23,24 +24,12 @@ object GoogleActionsV2SignInValueSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2SignInValueSpecOps[Self <: GoogleActionsV2SignInValueSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2SignInValueSpecMutableBuilder[Self <: GoogleActionsV2SignInValueSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptContext(value: String): Self = StObject.set(x, "optContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOptContext(value: String): Self = this.set("optContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptContext: Self = this.set("optContext", js.undefined)
+    def setOptContextUndefined: Self = StObject.set(x, "optContext", js.undefined)
   }
 }

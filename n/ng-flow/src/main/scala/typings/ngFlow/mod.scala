@@ -2,20 +2,18 @@ package typings.ngFlow
 
 import typings.flowjs.mod.Flow
 import typings.flowjs.mod.FlowOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("angular", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object flow extends js.Object {
+  object flow {
     
     @js.native
-    trait FlowFactory extends js.Object {
+    trait FlowFactory extends StObject {
       
       def create(): Flow = js.native
       def create(options: FlowOptions): Flow = js.native

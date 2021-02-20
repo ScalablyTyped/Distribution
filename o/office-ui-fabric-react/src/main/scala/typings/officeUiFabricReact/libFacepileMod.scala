@@ -2,30 +2,40 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.facepileTypesMod.IFacepileProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Facepile", JSImport.Namespace)
-@js.native
-object libFacepileMod extends js.Object {
+object libFacepileMod {
   
+  @JSImport("office-ui-fabric-react/lib/Facepile", "Facepile")
+  @js.native
   val Facepile: FunctionComponent[IFacepileProps] = js.native
   
+  @JSImport("office-ui-fabric-react/lib/Facepile", "FacepileBase")
   @js.native
   class FacepileBase protected ()
     extends typings.officeUiFabricReact.facepileMod.FacepileBase {
     def this(props: IFacepileProps) = this()
   }
   /* static members */
-  @js.native
-  object FacepileBase extends js.Object {
+  object FacepileBase {
     
-    var defaultProps: IFacepileProps = js.native
+    @JSImport("office-ui-fabric-react/lib/Facepile", "FacepileBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Facepile", "FacepileBase.defaultProps")
+    @js.native
+    def defaultProps: IFacepileProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IFacepileProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/Facepile", "OverflowButtonType")
   @js.native
-  object OverflowButtonType extends js.Object {
+  object OverflowButtonType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType with Double] = js.native

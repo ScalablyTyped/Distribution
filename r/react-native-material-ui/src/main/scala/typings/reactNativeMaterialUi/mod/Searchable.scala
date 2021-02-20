@@ -4,12 +4,13 @@ import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.characters
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.none
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.sentences
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.words
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Searchable extends js.Object {
+trait Searchable extends StObject {
   
   var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.native
   
@@ -38,72 +39,60 @@ object Searchable {
   }
   
   @scala.inline
-  implicit class SearchableOps[Self <: Searchable] (val x: Self) extends AnyVal {
+  implicit class SearchableMutableBuilder[Self <: Searchable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCapitalize(value: none | sentences | words | characters): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoCorrect(value: Boolean): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCapitalize(value: none | sentences | words | characters): Self = this.set("autoCapitalize", value.asInstanceOf[js.Any])
+    def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
     @scala.inline
-    def deleteAutoCapitalize: Self = this.set("autoCapitalize", js.undefined)
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCorrect(value: Boolean): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    def setOnChangeText(value: /* text */ String => Unit): Self = StObject.set(x, "onChangeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setOnChangeTextUndefined: Self = StObject.set(x, "onChangeText", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setOnSearchCloseRequested(value: () => Unit): Self = StObject.set(x, "onSearchCloseRequested", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnChangeText(value: /* text */ String => Unit): Self = this.set("onChangeText", js.Any.fromFunction1(value))
+    def setOnSearchCloseRequestedUndefined: Self = StObject.set(x, "onSearchCloseRequested", js.undefined)
     
     @scala.inline
-    def deleteOnChangeText: Self = this.set("onChangeText", js.undefined)
+    def setOnSearchClosed(value: () => Unit): Self = StObject.set(x, "onSearchClosed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSearchCloseRequested(value: () => Unit): Self = this.set("onSearchCloseRequested", js.Any.fromFunction0(value))
+    def setOnSearchClosedUndefined: Self = StObject.set(x, "onSearchClosed", js.undefined)
     
     @scala.inline
-    def deleteOnSearchCloseRequested: Self = this.set("onSearchCloseRequested", js.undefined)
+    def setOnSearchPressed(value: () => Unit): Self = StObject.set(x, "onSearchPressed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSearchClosed(value: () => Unit): Self = this.set("onSearchClosed", js.Any.fromFunction0(value))
+    def setOnSearchPressedUndefined: Self = StObject.set(x, "onSearchPressed", js.undefined)
     
     @scala.inline
-    def deleteOnSearchClosed: Self = this.set("onSearchClosed", js.undefined)
+    def setOnSubmitEditing(value: () => Unit): Self = StObject.set(x, "onSubmitEditing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSearchPressed(value: () => Unit): Self = this.set("onSearchPressed", js.Any.fromFunction0(value))
+    def setOnSubmitEditingUndefined: Self = StObject.set(x, "onSubmitEditing", js.undefined)
     
     @scala.inline
-    def deleteOnSearchPressed: Self = this.set("onSearchPressed", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSubmitEditing(value: () => Unit): Self = this.set("onSubmitEditing", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnSubmitEditing: Self = this.set("onSubmitEditing", js.undefined)
-    
-    @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
   }
 }

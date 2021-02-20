@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,54 +26,42 @@ object Planner {
   }
   
   @scala.inline
-  implicit class PlannerOps[Self <: Planner] (val x: Self) extends AnyVal {
+  implicit class PlannerMutableBuilder[Self <: Planner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuckets(value: NullableOption[js.Array[PlannerBucket]]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketsNull: Self = StObject.set(x, "buckets", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
     @scala.inline
-    def setBucketsVarargs(value: PlannerBucket*): Self = this.set("buckets", js.Array(value :_*))
+    def setBucketsVarargs(value: PlannerBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
     @scala.inline
-    def setBuckets(value: NullableOption[js.Array[PlannerBucket]]): Self = this.set("buckets", value.asInstanceOf[js.Any])
+    def setPlans(value: NullableOption[js.Array[PlannerPlan]]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuckets: Self = this.set("buckets", js.undefined)
+    def setPlansNull: Self = StObject.set(x, "plans", null)
     
     @scala.inline
-    def setBucketsNull: Self = this.set("buckets", null)
+    def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
     
     @scala.inline
-    def setPlansVarargs(value: PlannerPlan*): Self = this.set("plans", js.Array(value :_*))
+    def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
     
     @scala.inline
-    def setPlans(value: NullableOption[js.Array[PlannerPlan]]): Self = this.set("plans", value.asInstanceOf[js.Any])
+    def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlans: Self = this.set("plans", js.undefined)
+    def setTasksNull: Self = StObject.set(x, "tasks", null)
     
     @scala.inline
-    def setPlansNull: Self = this.set("plans", null)
+    def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
     @scala.inline
-    def setTasksVarargs(value: PlannerTask*): Self = this.set("tasks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = this.set("tasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTasks: Self = this.set("tasks", js.undefined)
-    
-    @scala.inline
-    def setTasksNull: Self = this.set("tasks", null)
+    def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

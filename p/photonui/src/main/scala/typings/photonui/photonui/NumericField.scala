@@ -3,6 +3,7 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,33 +58,21 @@ object NumericField {
   }
   
   @scala.inline
-  implicit class NumericFieldOps[Self <: NumericField] (val x: Self) extends AnyVal {
+  implicit class NumericFieldMutableBuilder[Self <: NumericField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimalDigits(value: Double): Self = StObject.set(x, "decimalDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalDigits(value: Double): Self = this.set("decimalDigits", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalSymbol(value: String): Self = this.set("decimalSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

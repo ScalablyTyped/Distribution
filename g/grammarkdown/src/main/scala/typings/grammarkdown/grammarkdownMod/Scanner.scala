@@ -2,13 +2,14 @@ package typings.grammarkdown.grammarkdownMod
 
 import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.mod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "Scanner")
 @js.native
-class Scanner protected () extends js.Object {
+class Scanner protected () extends StObject {
   def this(filename: String, text: String, diagnostics: DiagnosticMessages) = this()
   def this(filename: String, text: String, diagnostics: DiagnosticMessages, cancelable: Cancelable) = this()
   def this(filename: String, text: String, diagnostics: DiagnosticMessages, cancelable: CancellationToken) = this()

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VoiceCommandContentTileType extends js.Object
+sealed trait VoiceCommandContentTileType extends StObject
 /** The layout template used to display a content tile on the Cortana canvas. */
 @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType")
 @js.native
-object VoiceCommandContentTileType extends js.Object {
+object VoiceCommandContentTileType extends StObject {
   
   /** Only item title. */
   @js.native

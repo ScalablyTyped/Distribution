@@ -1,5 +1,6 @@
 package typings.firebase.mod.firebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @hidden
   */
 @js.native
-trait Observer[T, E] extends js.Object {
+trait Observer[T, E] extends StObject {
   
   def complete(): Unit = js.native
   @JSName("complete")

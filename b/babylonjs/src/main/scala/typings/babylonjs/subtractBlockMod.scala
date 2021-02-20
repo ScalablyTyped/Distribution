@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/subtractBlock", JSImport.Namespace)
-@js.native
-object subtractBlockMod extends js.Object {
+object subtractBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/subtractBlock", "SubtractBlock")
   @js.native
   class SubtractBlock protected () extends NodeMaterialBlock {
     /**

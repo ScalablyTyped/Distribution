@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabStops2 extends js.Object {
+trait TabStops2 extends StObject {
   
   def apply(Index: Double): TabStop2 = js.native
   

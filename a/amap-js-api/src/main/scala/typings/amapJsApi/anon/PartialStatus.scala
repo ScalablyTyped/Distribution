@@ -1,12 +1,13 @@
 package typings.amapJsApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<amap-js-api.AMap.Map.Status> */
 @js.native
-trait PartialStatus extends js.Object {
+trait PartialStatus extends StObject {
   
   var animateEnable: js.UndefOr[Boolean] = js.native
   
@@ -41,90 +42,78 @@ object PartialStatus {
   }
   
   @scala.inline
-  implicit class PartialStatusOps[Self <: PartialStatus] (val x: Self) extends AnyVal {
+  implicit class PartialStatusMutableBuilder[Self <: PartialStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimateEnable(value: Boolean): Self = StObject.set(x, "animateEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateEnableUndefined: Self = StObject.set(x, "animateEnable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateEnable(value: Boolean): Self = this.set("animateEnable", value.asInstanceOf[js.Any])
+    def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
     
     @scala.inline
-    def deleteAnimateEnable: Self = this.set("animateEnable", js.undefined)
+    def setDragEnable(value: Boolean): Self = StObject.set(x, "dragEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleClickZoom(value: Boolean): Self = this.set("doubleClickZoom", value.asInstanceOf[js.Any])
+    def setDragEnableUndefined: Self = StObject.set(x, "dragEnable", js.undefined)
     
     @scala.inline
-    def deleteDoubleClickZoom: Self = this.set("doubleClickZoom", js.undefined)
+    def setIsHotspot(value: Boolean): Self = StObject.set(x, "isHotspot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragEnable(value: Boolean): Self = this.set("dragEnable", value.asInstanceOf[js.Any])
+    def setIsHotspotUndefined: Self = StObject.set(x, "isHotspot", js.undefined)
     
     @scala.inline
-    def deleteDragEnable: Self = this.set("dragEnable", js.undefined)
+    def setJogEnable(value: Boolean): Self = StObject.set(x, "jogEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHotspot(value: Boolean): Self = this.set("isHotspot", value.asInstanceOf[js.Any])
+    def setJogEnableUndefined: Self = StObject.set(x, "jogEnable", js.undefined)
     
     @scala.inline
-    def deleteIsHotspot: Self = this.set("isHotspot", js.undefined)
+    def setKeyboardEnable(value: Boolean): Self = StObject.set(x, "keyboardEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJogEnable(value: Boolean): Self = this.set("jogEnable", value.asInstanceOf[js.Any])
+    def setKeyboardEnableUndefined: Self = StObject.set(x, "keyboardEnable", js.undefined)
     
     @scala.inline
-    def deleteJogEnable: Self = this.set("jogEnable", js.undefined)
+    def setPitchEnable(value: Boolean): Self = StObject.set(x, "pitchEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardEnable(value: Boolean): Self = this.set("keyboardEnable", value.asInstanceOf[js.Any])
+    def setPitchEnableUndefined: Self = StObject.set(x, "pitchEnable", js.undefined)
     
     @scala.inline
-    def deleteKeyboardEnable: Self = this.set("keyboardEnable", js.undefined)
+    def setResizeEnable(value: Boolean): Self = StObject.set(x, "resizeEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitchEnable(value: Boolean): Self = this.set("pitchEnable", value.asInstanceOf[js.Any])
+    def setResizeEnableUndefined: Self = StObject.set(x, "resizeEnable", js.undefined)
     
     @scala.inline
-    def deletePitchEnable: Self = this.set("pitchEnable", js.undefined)
+    def setRotateEnable(value: Boolean): Self = StObject.set(x, "rotateEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeEnable(value: Boolean): Self = this.set("resizeEnable", value.asInstanceOf[js.Any])
+    def setRotateEnableUndefined: Self = StObject.set(x, "rotateEnable", js.undefined)
     
     @scala.inline
-    def deleteResizeEnable: Self = this.set("resizeEnable", js.undefined)
+    def setScrollWheel(value: Boolean): Self = StObject.set(x, "scrollWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateEnable(value: Boolean): Self = this.set("rotateEnable", value.asInstanceOf[js.Any])
+    def setScrollWheelUndefined: Self = StObject.set(x, "scrollWheel", js.undefined)
     
     @scala.inline
-    def deleteRotateEnable: Self = this.set("rotateEnable", js.undefined)
+    def setTouchZoom(value: Boolean): Self = StObject.set(x, "touchZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollWheel(value: Boolean): Self = this.set("scrollWheel", value.asInstanceOf[js.Any])
+    def setTouchZoomUndefined: Self = StObject.set(x, "touchZoom", js.undefined)
     
     @scala.inline
-    def deleteScrollWheel: Self = this.set("scrollWheel", js.undefined)
+    def setZoomEnable(value: Boolean): Self = StObject.set(x, "zoomEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchZoom(value: Boolean): Self = this.set("touchZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchZoom: Self = this.set("touchZoom", js.undefined)
-    
-    @scala.inline
-    def setZoomEnable(value: Boolean): Self = this.set("zoomEnable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomEnable: Self = this.set("zoomEnable", js.undefined)
+    def setZoomEnableUndefined: Self = StObject.set(x, "zoomEnable", js.undefined)
   }
 }

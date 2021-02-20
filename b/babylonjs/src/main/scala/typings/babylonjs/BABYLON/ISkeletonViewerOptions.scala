@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISkeletonViewerOptions extends js.Object {
+trait ISkeletonViewerOptions extends StObject {
   
   /** Flag to toggle if the Viewer should use the CPU for animations or not? */
   var computeBonesUsingShaders: Boolean = js.native
@@ -41,36 +42,24 @@ object ISkeletonViewerOptions {
   }
   
   @scala.inline
-  implicit class ISkeletonViewerOptionsOps[Self <: ISkeletonViewerOptions] (val x: Self) extends AnyVal {
+  implicit class ISkeletonViewerOptionsMutableBuilder[Self <: ISkeletonViewerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeBonesUsingShaders(value: Boolean): Self = StObject.set(x, "computeBonesUsingShaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayMode(value: Double): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayOptions(value: ISkeletonViewerDisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeBonesUsingShaders(value: Boolean): Self = this.set("computeBonesUsingShaders", value.asInstanceOf[js.Any])
+    def setPauseAnimations(value: Boolean): Self = StObject.set(x, "pauseAnimations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMode(value: Double): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    def setReturnToRest(value: Boolean): Self = StObject.set(x, "returnToRest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayOptions(value: ISkeletonViewerDisplayOptions): Self = this.set("displayOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPauseAnimations(value: Boolean): Self = this.set("pauseAnimations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnToRest(value: Boolean): Self = this.set("returnToRest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseAllBones(value: Boolean): Self = this.set("useAllBones", value.asInstanceOf[js.Any])
+    def setUseAllBones(value: Boolean): Self = StObject.set(x, "useAllBones", value.asInstanceOf[js.Any])
   }
 }

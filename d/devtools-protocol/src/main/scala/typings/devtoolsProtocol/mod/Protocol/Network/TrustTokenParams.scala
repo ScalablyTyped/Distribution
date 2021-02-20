@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.Refresh
 import typings.devtoolsProtocol.devtoolsProtocolStrings.UseCached
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrustTokenParams extends js.Object {
+trait TrustTokenParams extends StObject {
   
   /**
     * Origins of issuers from whom to request tokens or redemption
@@ -33,33 +34,21 @@ object TrustTokenParams {
   }
   
   @scala.inline
-  implicit class TrustTokenParamsOps[Self <: TrustTokenParams] (val x: Self) extends AnyVal {
+  implicit class TrustTokenParamsMutableBuilder[Self <: TrustTokenParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIssuers(value: js.Array[String]): Self = StObject.set(x, "issuers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIssuersUndefined: Self = StObject.set(x, "issuers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuersVarargs(value: String*): Self = StObject.set(x, "issuers", js.Array(value :_*))
     
     @scala.inline
-    def setRefreshPolicy(value: UseCached | Refresh): Self = this.set("refreshPolicy", value.asInstanceOf[js.Any])
+    def setRefreshPolicy(value: UseCached | Refresh): Self = StObject.set(x, "refreshPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TrustTokenOperationType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIssuersVarargs(value: String*): Self = this.set("issuers", js.Array(value :_*))
-    
-    @scala.inline
-    def setIssuers(value: js.Array[String]): Self = this.set("issuers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIssuers: Self = this.set("issuers", js.undefined)
+    def setType(value: TrustTokenOperationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

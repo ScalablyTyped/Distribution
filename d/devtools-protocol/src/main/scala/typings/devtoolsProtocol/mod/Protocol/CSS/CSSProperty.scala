@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CSSProperty extends js.Object {
+trait CSSProperty extends StObject {
   
   /**
     * Whether the property is disabled by the user (present for source-based properties only).
@@ -56,60 +57,48 @@ object CSSProperty {
   }
   
   @scala.inline
-  implicit class CSSPropertyOps[Self <: CSSProperty] (val x: Self) extends AnyVal {
+  implicit class CSSPropertyMutableBuilder[Self <: CSSProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImplicit(value: Boolean): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setImplicitUndefined: Self = StObject.set(x, "implicit", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplicit(value: Boolean): Self = this.set("implicit", value.asInstanceOf[js.Any])
+    def setParsedOk(value: Boolean): Self = StObject.set(x, "parsedOk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImplicit: Self = this.set("implicit", js.undefined)
+    def setParsedOkUndefined: Self = StObject.set(x, "parsedOk", js.undefined)
     
     @scala.inline
-    def setImportant(value: Boolean): Self = this.set("important", value.asInstanceOf[js.Any])
+    def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImportant: Self = this.set("important", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def setParsedOk(value: Boolean): Self = this.set("parsedOk", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParsedOk: Self = this.set("parsedOk", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setRange(value: SourceRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

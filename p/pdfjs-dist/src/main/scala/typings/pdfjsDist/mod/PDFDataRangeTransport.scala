@@ -1,11 +1,12 @@
 package typings.pdfjsDist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFDataRangeTransport extends js.Object {
+trait PDFDataRangeTransport extends StObject {
   
   def abort(): Unit = js.native
   
@@ -50,51 +51,39 @@ object PDFDataRangeTransport {
   }
   
   @scala.inline
-  implicit class PDFDataRangeTransportOps[Self <: PDFDataRangeTransport] (val x: Self) extends AnyVal {
+  implicit class PDFDataRangeTransportMutableBuilder[Self <: PDFDataRangeTransport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddProgressListener(value: PDFDataRangeTransportListener => Unit): Self = StObject.set(x, "addProgressListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddProgressiveDoneListener(value: PDFDataRangeTransportListener => Unit): Self = StObject.set(x, "addProgressiveDoneListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAbort(value: () => Unit): Self = this.set("abort", js.Any.fromFunction0(value))
+    def setAddProgressiveReadListener(value: PDFDataRangeTransportListener => Unit): Self = StObject.set(x, "addProgressiveReadListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddProgressListener(value: PDFDataRangeTransportListener => Unit): Self = this.set("addProgressListener", js.Any.fromFunction1(value))
+    def setAddRangeListener(value: PDFDataRangeTransportListener => Unit): Self = StObject.set(x, "addRangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddProgressiveDoneListener(value: PDFDataRangeTransportListener => Unit): Self = this.set("addProgressiveDoneListener", js.Any.fromFunction1(value))
+    def setOnDataProgress(value: (Double, Double) => Unit): Self = StObject.set(x, "onDataProgress", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddProgressiveReadListener(value: PDFDataRangeTransportListener => Unit): Self = this.set("addProgressiveReadListener", js.Any.fromFunction1(value))
+    def setOnDataProgressiveDone(value: () => Unit): Self = StObject.set(x, "onDataProgressiveDone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddRangeListener(value: PDFDataRangeTransportListener => Unit): Self = this.set("addRangeListener", js.Any.fromFunction1(value))
+    def setOnDataProgressiveRead(value: js.Any => Unit): Self = StObject.set(x, "onDataProgressiveRead", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDataProgress(value: (Double, Double) => Unit): Self = this.set("onDataProgress", js.Any.fromFunction2(value))
+    def setOnDataRange(value: (Double, js.Any) => Unit): Self = StObject.set(x, "onDataRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnDataProgressiveDone(value: () => Unit): Self = this.set("onDataProgressiveDone", js.Any.fromFunction0(value))
+    def setRequestDataRange(value: (Double, Double) => Unit): Self = StObject.set(x, "requestDataRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnDataProgressiveRead(value: js.Any => Unit): Self = this.set("onDataProgressiveRead", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnDataRange(value: (Double, js.Any) => Unit): Self = this.set("onDataRange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRequestDataRange(value: (Double, Double) => Unit): Self = this.set("requestDataRange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTransportReady(value: () => Unit): Self = this.set("transportReady", js.Any.fromFunction0(value))
+    def setTransportReady(value: () => Unit): Self = StObject.set(x, "transportReady", js.Any.fromFunction0(value))
   }
 }

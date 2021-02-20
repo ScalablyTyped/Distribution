@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDeploymentInstancesInput extends js.Object {
+trait ListDeploymentInstancesInput extends StObject {
   
   /**
     *  The unique ID of a deployment. 
@@ -36,45 +37,33 @@ object ListDeploymentInstancesInput {
   }
   
   @scala.inline
-  implicit class ListDeploymentInstancesInputOps[Self <: ListDeploymentInstancesInput] (val x: Self) extends AnyVal {
+  implicit class ListDeploymentInstancesInputMutableBuilder[Self <: ListDeploymentInstancesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceStatusFilter(value: InstanceStatusList): Self = StObject.set(x, "instanceStatusFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceStatusFilterUndefined: Self = StObject.set(x, "instanceStatusFilter", js.undefined)
     
     @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    def setInstanceStatusFilterVarargs(value: InstanceStatus*): Self = StObject.set(x, "instanceStatusFilter", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceStatusFilterVarargs(value: InstanceStatus*): Self = this.set("instanceStatusFilter", js.Array(value :_*))
+    def setInstanceTypeFilter(value: InstanceTypeList): Self = StObject.set(x, "instanceTypeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceStatusFilter(value: InstanceStatusList): Self = this.set("instanceStatusFilter", value.asInstanceOf[js.Any])
+    def setInstanceTypeFilterUndefined: Self = StObject.set(x, "instanceTypeFilter", js.undefined)
     
     @scala.inline
-    def deleteInstanceStatusFilter: Self = this.set("instanceStatusFilter", js.undefined)
+    def setInstanceTypeFilterVarargs(value: InstanceType*): Self = StObject.set(x, "instanceTypeFilter", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceTypeFilterVarargs(value: InstanceType*): Self = this.set("instanceTypeFilter", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceTypeFilter(value: InstanceTypeList): Self = this.set("instanceTypeFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceTypeFilter: Self = this.set("instanceTypeFilter", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

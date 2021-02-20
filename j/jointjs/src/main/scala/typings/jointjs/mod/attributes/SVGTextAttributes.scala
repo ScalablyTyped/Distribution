@@ -1,5 +1,6 @@
 package typings.jointjs.mod.attributes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,84 +41,72 @@ object SVGTextAttributes {
   }
   
   @scala.inline
-  implicit class SVGTextAttributesOps[Self <: SVGTextAttributes] (val x: Self) extends AnyVal {
+  implicit class SVGTextAttributesMutableBuilder[Self <: SVGTextAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDx(value: String | Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDy(value: String | Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDx(value: String | Double): Self = this.set("dx", value.asInstanceOf[js.Any])
+    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
     @scala.inline
-    def deleteDx: Self = this.set("dx", js.undefined)
+    def `setLength-adjust`(value: String): Self = StObject.set(x, "length-adjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDy(value: String | Double): Self = this.set("dy", value.asInstanceOf[js.Any])
+    def `setLength-adjustUndefined`: Self = StObject.set(x, "length-adjust", js.undefined)
     
     @scala.inline
-    def deleteDy: Self = this.set("dy", js.undefined)
+    def setLengthAdjust(value: String): Self = StObject.set(x, "lengthAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLength-adjust`(value: String): Self = this.set("length-adjust", value.asInstanceOf[js.Any])
+    def setLengthAdjustUndefined: Self = StObject.set(x, "lengthAdjust", js.undefined)
     
     @scala.inline
-    def `deleteLength-adjust`: Self = this.set("length-adjust", js.undefined)
+    def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthAdjust(value: String): Self = this.set("lengthAdjust", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deleteLengthAdjust: Self = this.set("lengthAdjust", js.undefined)
+    def `setText-anchor`(value: String): Self = StObject.set(x, "text-anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: String): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def `setText-anchorUndefined`: Self = StObject.set(x, "text-anchor", js.undefined)
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def `setText-lenght`(value: Double): Self = StObject.set(x, "text-lenght", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-anchor`(value: String): Self = this.set("text-anchor", value.asInstanceOf[js.Any])
+    def `setText-lenghtUndefined`: Self = StObject.set(x, "text-lenght", js.undefined)
     
     @scala.inline
-    def `deleteText-anchor`: Self = this.set("text-anchor", js.undefined)
+    def setTextAnchor(value: String): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-lenght`(value: Double): Self = this.set("text-lenght", value.asInstanceOf[js.Any])
+    def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
     
     @scala.inline
-    def `deleteText-lenght`: Self = this.set("text-lenght", js.undefined)
+    def setTextLength(value: Double): Self = StObject.set(x, "textLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnchor(value: String): Self = this.set("textAnchor", value.asInstanceOf[js.Any])
+    def setTextLengthUndefined: Self = StObject.set(x, "textLength", js.undefined)
     
     @scala.inline
-    def deleteTextAnchor: Self = this.set("textAnchor", js.undefined)
+    def setX(value: String | Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextLength(value: Double): Self = this.set("textLength", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteTextLength: Self = this.set("textLength", js.undefined)
+    def setY(value: String | Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: String | Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: String | Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

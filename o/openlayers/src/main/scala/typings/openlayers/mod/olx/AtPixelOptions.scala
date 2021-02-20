@@ -1,6 +1,7 @@
 package typings.openlayers.mod.olx
 
 import typings.openlayers.mod.layer.Layer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link ol.Map#hasFeatureAtPixel} methods.
   */
 @js.native
-trait AtPixelOptions extends js.Object {
+trait AtPixelOptions extends StObject {
   
   var hitTolerance: js.UndefOr[Double] = js.native
   
@@ -25,30 +26,18 @@ object AtPixelOptions {
   }
   
   @scala.inline
-  implicit class AtPixelOptionsOps[Self <: AtPixelOptions] (val x: Self) extends AnyVal {
+  implicit class AtPixelOptionsMutableBuilder[Self <: AtPixelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHitTolerance(value: Double): Self = StObject.set(x, "hitTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHitToleranceUndefined: Self = StObject.set(x, "hitTolerance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayerFilter(value: /* layer */ Layer => Boolean): Self = StObject.set(x, "layerFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHitTolerance(value: Double): Self = this.set("hitTolerance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHitTolerance: Self = this.set("hitTolerance", js.undefined)
-    
-    @scala.inline
-    def setLayerFilter(value: /* layer */ Layer => Boolean): Self = this.set("layerFilter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteLayerFilter: Self = this.set("layerFilter", js.undefined)
+    def setLayerFilterUndefined: Self = StObject.set(x, "layerFilter", js.undefined)
   }
 }

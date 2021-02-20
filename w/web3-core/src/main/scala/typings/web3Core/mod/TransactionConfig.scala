@@ -1,12 +1,13 @@
 package typings.web3Core.mod
 
 import typings.bnJs.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionConfig extends js.Object {
+trait TransactionConfig extends StObject {
   
   var chain: js.UndefOr[String] = js.native
   
@@ -20,7 +21,7 @@ trait TransactionConfig extends js.Object {
   
   var gas: js.UndefOr[Double | String] = js.native
   
-  var gasPrice: js.UndefOr[Double | String | ^ ] = js.native
+  var gasPrice: js.UndefOr[Double | String | ^] = js.native
   
   var hardfork: js.UndefOr[String] = js.native
   
@@ -28,7 +29,7 @@ trait TransactionConfig extends js.Object {
   
   var to: js.UndefOr[String] = js.native
   
-  var value: js.UndefOr[Double | String | ^ ] = js.native
+  var value: js.UndefOr[Double | String | ^] = js.native
 }
 object TransactionConfig {
   
@@ -39,84 +40,72 @@ object TransactionConfig {
   }
   
   @scala.inline
-  implicit class TransactionConfigOps[Self <: TransactionConfig] (val x: Self) extends AnyVal {
+  implicit class TransactionConfigMutableBuilder[Self <: TransactionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChain(value: String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChainIdUndefined: Self = StObject.set(x, "chainId", js.undefined)
     
     @scala.inline
-    def setChain(value: String): Self = this.set("chain", value.asInstanceOf[js.Any])
+    def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
     
     @scala.inline
-    def deleteChain: Self = this.set("chain", js.undefined)
+    def setCommon(value: Common): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChainId(value: Double): Self = this.set("chainId", value.asInstanceOf[js.Any])
+    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
     @scala.inline
-    def deleteChainId: Self = this.set("chainId", js.undefined)
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommon(value: Common): Self = this.set("common", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCommon: Self = this.set("common", js.undefined)
+    def setFrom(value: String | Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setGas(value: Double | String): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String | Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setGasPrice(value: Double | String | ^): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
     
     @scala.inline
-    def setGas(value: Double | String): Self = this.set("gas", value.asInstanceOf[js.Any])
+    def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
     
     @scala.inline
-    def deleteGas: Self = this.set("gas", js.undefined)
+    def setHardfork(value: String): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGasPrice(value: Double | String | ^ ): Self = this.set("gasPrice", value.asInstanceOf[js.Any])
+    def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
     
     @scala.inline
-    def deleteGasPrice: Self = this.set("gasPrice", js.undefined)
+    def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardfork(value: String): Self = this.set("hardfork", value.asInstanceOf[js.Any])
+    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     @scala.inline
-    def deleteHardfork: Self = this.set("hardfork", js.undefined)
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonce(value: Double): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteNonce: Self = this.set("nonce", js.undefined)
+    def setValue(value: Double | String | ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double | String | ^ ): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.opentelemetryApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/common/Logger", JSImport.Namespace)
-@js.native
-object loggerMod extends js.Object {
+object loggerMod {
+  
+  type LogFunction = js.Function2[/* message */ String, /* repeated */ js.Any, Unit]
   
   @js.native
-  trait Logger extends js.Object {
+  trait Logger extends StObject {
     
     def debug(message: String, args: js.Any*): Unit = js.native
     @JSName("debug")
@@ -27,6 +28,4 @@ object loggerMod extends js.Object {
     @JSName("warn")
     var warn_Original: LogFunction = js.native
   }
-  
-  type LogFunction = js.Function2[/* message */ String, /* repeated */ js.Any, Unit]
 }

@@ -1,12 +1,13 @@
 package typings.rollup.mod
 
 import typings.rollup.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RollupLogProps extends js.Object {
+trait RollupLogProps extends StObject {
   
   var code: js.UndefOr[String] = js.native
   
@@ -39,81 +40,69 @@ object RollupLogProps {
   }
   
   @scala.inline
-  implicit class RollupLogPropsOps[Self <: RollupLogProps] (val x: Self) extends AnyVal {
+  implicit class RollupLogPropsMutableBuilder[Self <: RollupLogProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setHook(value: String): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
     
     @scala.inline
-    def setFrame(value: String): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrame: Self = this.set("frame", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setHook(value: String): Self = this.set("hook", value.asInstanceOf[js.Any])
+    def setLoc(value: Column): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHook: Self = this.set("hook", js.undefined)
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoc(value: Column): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPluginCode(value: String): Self = StObject.set(x, "pluginCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPluginCodeUndefined: Self = StObject.set(x, "pluginCode", js.undefined)
     
     @scala.inline
-    def setPlugin(value: String): Self = this.set("plugin", value.asInstanceOf[js.Any])
+    def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
     @scala.inline
-    def deletePlugin: Self = this.set("plugin", js.undefined)
+    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginCode(value: String): Self = this.set("pluginCode", value.asInstanceOf[js.Any])
+    def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
     
     @scala.inline
-    def deletePluginCode: Self = this.set("pluginCode", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPos(value: Double): Self = this.set("pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePos: Self = this.set("pos", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

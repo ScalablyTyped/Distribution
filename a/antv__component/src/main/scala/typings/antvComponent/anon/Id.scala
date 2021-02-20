@@ -1,11 +1,12 @@
 package typings.antvComponent.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Id extends js.Object {
+trait Id extends StObject {
   
   var animate: Boolean = js.native
   
@@ -104,102 +105,90 @@ object Id {
   }
   
   @scala.inline
-  implicit class IdOps[Self <: Id] (val x: Self) extends AnyVal {
+  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateOption(value: Appear): Self = StObject.set(x, "animateOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateOption(value: Appear): Self = this.set("animateOption", value.asInstanceOf[js.Any])
+    def setDefaultCfg(value: Label): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Boolean): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCfg(value: Label): Self = this.set("defaultCfg", value.asInstanceOf[js.Any])
+    def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: js.Any): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setIsInit(value: Boolean): Self = StObject.set(x, "isInit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: js.Any): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setIsRegister(value: Boolean): Self = StObject.set(x, "isRegister", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsUpdating(value: Boolean): Self = StObject.set(x, "isUpdating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInit(value: Boolean): Self = this.set("isInit", value.asInstanceOf[js.Any])
+    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRegister(value: Boolean): Self = this.set("isRegister", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUpdating(value: Boolean): Self = this.set("isUpdating", value.asInstanceOf[js.Any])
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOverlapOrder(value: js.Array[String]): Self = StObject.set(x, "overlapOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setOverlapOrderVarargs(value: String*): Self = StObject.set(x, "overlapOrder", js.Array(value :_*))
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlapOrderVarargs(value: String*): Self = this.set("overlapOrder", js.Array(value :_*))
+    def setSubTickLine(value: js.Any): Self = StObject.set(x, "subTickLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlapOrder(value: js.Array[String]): Self = this.set("overlapOrder", value.asInstanceOf[js.Any])
+    def setTicks(value: js.Array[_]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: js.Any): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))
     
     @scala.inline
-    def setSubTickLine(value: js.Any): Self = this.set("subTickLine", value.asInstanceOf[js.Any])
+    def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicksVarargs(value: js.Any*): Self = this.set("ticks", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicks(value: js.Array[_]): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    def setUpdateAutoRender(value: Boolean): Self = StObject.set(x, "updateAutoRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: js.Any): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setVerticalFactor(value: Double): Self = StObject.set(x, "verticalFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVerticalLimitLength(value: js.Any): Self = StObject.set(x, "verticalLimitLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateAutoRender(value: Boolean): Self = this.set("updateAutoRender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalFactor(value: Double): Self = this.set("verticalFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalLimitLength(value: js.Any): Self = this.set("verticalLimitLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

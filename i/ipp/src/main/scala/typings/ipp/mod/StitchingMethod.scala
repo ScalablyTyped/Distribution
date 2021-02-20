@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.crimp
   - typings.ipp.ippStrings.wire
 */
-trait StitchingMethod extends js.Object
+trait StitchingMethod extends StObject
 object StitchingMethod {
   
   @scala.inline

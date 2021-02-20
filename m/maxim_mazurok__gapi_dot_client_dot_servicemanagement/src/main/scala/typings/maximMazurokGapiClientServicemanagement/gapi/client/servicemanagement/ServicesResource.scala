@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientServicemanagement.anon.ServiceName
 import typings.maximMazurokGapiClientServicemanagement.anon.UploadType
 import typings.maximMazurokGapiClientServicemanagement.anon.Uploadprotocol
 import typings.maximMazurokGapiClientServicemanagement.anon.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServicesResource extends js.Object {
+trait ServicesResource extends StObject {
   
   var configs: ConfigsResource = js.native
   

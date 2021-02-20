@@ -1,12 +1,13 @@
 package typings.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Checkbox
 @js.native
-trait CheckboxSettings extends js.Object {
+trait CheckboxSettings extends StObject {
   
   //Events
   var change: js.UndefOr[js.Function2[/* e */ js.Any, /* state */ String, _]] = js.native
@@ -24,36 +25,24 @@ object CheckboxSettings {
   }
   
   @scala.inline
-  implicit class CheckboxSettingsOps[Self <: CheckboxSettings] (val x: Self) extends AnyVal {
+  implicit class CheckboxSettingsMutableBuilder[Self <: CheckboxSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: (/* e */ js.Any, /* state */ String) => _): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconsLibrary(value: String): Self = StObject.set(x, "iconsLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: (/* e */ js.Any, /* state */ String) => _): Self = this.set("change", js.Any.fromFunction2(value))
+    def setIconsLibraryUndefined: Self = StObject.set(x, "iconsLibrary", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setUiLibrary(value: String): Self = StObject.set(x, "uiLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconsLibrary(value: String): Self = this.set("iconsLibrary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconsLibrary: Self = this.set("iconsLibrary", js.undefined)
-    
-    @scala.inline
-    def setUiLibrary(value: String): Self = this.set("uiLibrary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUiLibrary: Self = this.set("uiLibrary", js.undefined)
+    def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
   }
 }

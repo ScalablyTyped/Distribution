@@ -3,12 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.octokitTypesStrings.completed
 import typings.octokitTypes.octokitTypesStrings.conclusion
 import typings.octokitTypes.octokitTypesStrings.status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsListWorkflowRunsEndpoint extends js.Object {
+trait ActionsListWorkflowRunsEndpoint extends StObject {
   
   /**
     * Returns someone's workflow runs. Use the login for the user who created the `push` associated with the check suite or workflow run.
@@ -55,63 +56,51 @@ object ActionsListWorkflowRunsEndpoint {
   }
   
   @scala.inline
-  implicit class ActionsListWorkflowRunsEndpointOps[Self <: ActionsListWorkflowRunsEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActionsListWorkflowRunsEndpointMutableBuilder[Self <: ActionsListWorkflowRunsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkflow_id(value: Double): Self = this.set("workflow_id", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def setActor(value: String): Self = this.set("actor", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActor: Self = this.set("actor", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteBranch: Self = this.set("branch", js.undefined)
+    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: String): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setStatus(value: completed | status | conclusion): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePer_page: Self = this.set("per_page", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: completed | status | conclusion): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setWorkflow_id(value: Double): Self = StObject.set(x, "workflow_id", value.asInstanceOf[js.Any])
   }
 }

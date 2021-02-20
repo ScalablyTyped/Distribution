@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassicLinkInstance extends js.Object {
+trait ClassicLinkInstance extends StObject {
   
   /**
     * A list of security groups.
@@ -36,48 +37,36 @@ object ClassicLinkInstance {
   }
   
   @scala.inline
-  implicit class ClassicLinkInstanceOps[Self <: ClassicLinkInstance] (val x: Self) extends AnyVal {
+  implicit class ClassicLinkInstanceMutableBuilder[Self <: ClassicLinkInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroups(value: GroupIdentifierList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: GroupIdentifier*): Self = this.set("Groups", js.Array(value :_*))
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: GroupIdentifierList): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("Groups", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

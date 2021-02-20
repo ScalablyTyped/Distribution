@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellData extends js.Object {
+trait CellData extends StObject {
   
   var columnIndex: js.UndefOr[Double] = js.native
   
@@ -68,186 +69,174 @@ object CellData {
   }
   
   @scala.inline
-  implicit class CellDataOps[Self <: CellData] (val x: Self) extends AnyVal {
+  implicit class CellDataMutableBuilder[Self <: CellData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[js.Object]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setColumnsVarargs(value: js.Object*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: js.Object*): Self = this.set("columns", js.Array(value :_*))
+    def setEscapedLabel(value: String): Self = StObject.set(x, "escapedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[js.Object]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setEscapedLabelUndefined: Self = StObject.set(x, "escapedLabel", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapedLabel(value: String): Self = this.set("escapedLabel", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteEscapedLabel: Self = this.set("escapedLabel", js.undefined)
+    def setHierarchy(value: Hierarchy): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIsClassicTotalRow(value: Boolean): Self = StObject.set(x, "isClassicTotalRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchy(value: Hierarchy): Self = this.set("hierarchy", value.asInstanceOf[js.Any])
+    def setIsClassicTotalRowUndefined: Self = StObject.set(x, "isClassicTotalRow", js.undefined)
     
     @scala.inline
-    def deleteHierarchy: Self = this.set("hierarchy", js.undefined)
+    def setIsDrillThrough(value: Boolean): Self = StObject.set(x, "isDrillThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClassicTotalRow(value: Boolean): Self = this.set("isClassicTotalRow", value.asInstanceOf[js.Any])
+    def setIsDrillThroughUndefined: Self = StObject.set(x, "isDrillThrough", js.undefined)
     
     @scala.inline
-    def deleteIsClassicTotalRow: Self = this.set("isClassicTotalRow", js.undefined)
+    def setIsGrandTotal(value: Boolean): Self = StObject.set(x, "isGrandTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDrillThrough(value: Boolean): Self = this.set("isDrillThrough", value.asInstanceOf[js.Any])
+    def setIsGrandTotalColumn(value: Boolean): Self = StObject.set(x, "isGrandTotalColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDrillThrough: Self = this.set("isDrillThrough", js.undefined)
+    def setIsGrandTotalColumnUndefined: Self = StObject.set(x, "isGrandTotalColumn", js.undefined)
     
     @scala.inline
-    def setIsGrandTotal(value: Boolean): Self = this.set("isGrandTotal", value.asInstanceOf[js.Any])
+    def setIsGrandTotalRow(value: Boolean): Self = StObject.set(x, "isGrandTotalRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsGrandTotal: Self = this.set("isGrandTotal", js.undefined)
+    def setIsGrandTotalRowUndefined: Self = StObject.set(x, "isGrandTotalRow", js.undefined)
     
     @scala.inline
-    def setIsGrandTotalColumn(value: Boolean): Self = this.set("isGrandTotalColumn", value.asInstanceOf[js.Any])
+    def setIsGrandTotalUndefined: Self = StObject.set(x, "isGrandTotal", js.undefined)
     
     @scala.inline
-    def deleteIsGrandTotalColumn: Self = this.set("isGrandTotalColumn", js.undefined)
+    def setIsTotal(value: Boolean): Self = StObject.set(x, "isTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGrandTotalRow(value: Boolean): Self = this.set("isGrandTotalRow", value.asInstanceOf[js.Any])
+    def setIsTotalColumn(value: Boolean): Self = StObject.set(x, "isTotalColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsGrandTotalRow: Self = this.set("isGrandTotalRow", js.undefined)
+    def setIsTotalColumnUndefined: Self = StObject.set(x, "isTotalColumn", js.undefined)
     
     @scala.inline
-    def setIsTotal(value: Boolean): Self = this.set("isTotal", value.asInstanceOf[js.Any])
+    def setIsTotalRow(value: Boolean): Self = StObject.set(x, "isTotalRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTotal: Self = this.set("isTotal", js.undefined)
+    def setIsTotalRowUndefined: Self = StObject.set(x, "isTotalRow", js.undefined)
     
     @scala.inline
-    def setIsTotalColumn(value: Boolean): Self = this.set("isTotalColumn", value.asInstanceOf[js.Any])
+    def setIsTotalUndefined: Self = StObject.set(x, "isTotal", js.undefined)
     
     @scala.inline
-    def deleteIsTotalColumn: Self = this.set("isTotalColumn", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTotalRow(value: Boolean): Self = this.set("isTotalRow", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIsTotalRow: Self = this.set("isTotalRow", js.undefined)
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setMeasure(value: MeasureObject): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setMember(value: Member): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasure(value: MeasureObject): Self = this.set("measure", value.asInstanceOf[js.Any])
+    def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
     
     @scala.inline
-    def deleteMeasure: Self = this.set("measure", js.undefined)
+    def setRecordId(value: String | js.Array[String]): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMember(value: Member): Self = this.set("member", value.asInstanceOf[js.Any])
+    def setRecordIdUndefined: Self = StObject.set(x, "recordId", js.undefined)
     
     @scala.inline
-    def deleteMember: Self = this.set("member", js.undefined)
+    def setRecordIdVarargs(value: String*): Self = StObject.set(x, "recordId", js.Array(value :_*))
     
     @scala.inline
-    def setRecordIdVarargs(value: String*): Self = this.set("recordId", js.Array(value :_*))
+    def setRowData(value: js.Array[CellData]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordId(value: String | js.Array[String]): Self = this.set("recordId", value.asInstanceOf[js.Any])
+    def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
     
     @scala.inline
-    def deleteRecordId: Self = this.set("recordId", js.undefined)
+    def setRowDataVarargs(value: CellData*): Self = StObject.set(x, "rowData", js.Array(value :_*))
     
     @scala.inline
-    def setRowDataVarargs(value: CellData*): Self = this.set("rowData", js.Array(value :_*))
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowData(value: js.Array[CellData]): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def deleteRowData: Self = this.set("rowData", js.undefined)
+    def setRows(value: js.Array[js.Object]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: js.Object*): Self = this.set("rows", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[js.Object]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

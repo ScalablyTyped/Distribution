@@ -1,6 +1,7 @@
 package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * which is the hiring entity responsible for the job.
   */
 @js.native
-trait SchemaJob extends js.Object {
+trait SchemaJob extends StObject {
   
   /**
     * Optional but strongly recommended for the best service experience.
@@ -272,210 +273,198 @@ object SchemaJob {
   }
   
   @scala.inline
-  implicit class SchemaJobOps[Self <: SchemaJob] (val x: Self) extends AnyVal {
+  implicit class SchemaJobMutableBuilder[Self <: SchemaJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def setAddressesVarargs(value: String*): Self = this.set("addresses", js.Array(value :_*))
+    def setApplicationInfo(value: SchemaApplicationInfo): Self = StObject.set(x, "applicationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddresses(value: js.Array[String]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setApplicationInfoUndefined: Self = StObject.set(x, "applicationInfo", js.undefined)
     
     @scala.inline
-    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    def setCompanyDisplayName(value: String): Self = StObject.set(x, "companyDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationInfo(value: SchemaApplicationInfo): Self = this.set("applicationInfo", value.asInstanceOf[js.Any])
+    def setCompanyDisplayNameUndefined: Self = StObject.set(x, "companyDisplayName", js.undefined)
     
     @scala.inline
-    def deleteApplicationInfo: Self = this.set("applicationInfo", js.undefined)
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyDisplayName(value: String): Self = this.set("companyDisplayName", value.asInstanceOf[js.Any])
+    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
     @scala.inline
-    def deleteCompanyDisplayName: Self = this.set("companyDisplayName", js.undefined)
+    def setCompensationInfo(value: SchemaCompensationInfo): Self = StObject.set(x, "compensationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setCompensationInfoUndefined: Self = StObject.set(x, "compensationInfo", js.undefined)
     
     @scala.inline
-    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    def setCustomAttributes(value: StringDictionary[SchemaCustomAttribute]): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompensationInfo(value: SchemaCompensationInfo): Self = this.set("compensationInfo", value.asInstanceOf[js.Any])
+    def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
     
     @scala.inline
-    def deleteCompensationInfo: Self = this.set("compensationInfo", js.undefined)
+    def setDegreeTypes(value: js.Array[String]): Self = StObject.set(x, "degreeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAttributes(value: StringDictionary[SchemaCustomAttribute]): Self = this.set("customAttributes", value.asInstanceOf[js.Any])
+    def setDegreeTypesUndefined: Self = StObject.set(x, "degreeTypes", js.undefined)
     
     @scala.inline
-    def deleteCustomAttributes: Self = this.set("customAttributes", js.undefined)
+    def setDegreeTypesVarargs(value: String*): Self = StObject.set(x, "degreeTypes", js.Array(value :_*))
     
     @scala.inline
-    def setDegreeTypesVarargs(value: String*): Self = this.set("degreeTypes", js.Array(value :_*))
+    def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDegreeTypes(value: js.Array[String]): Self = this.set("degreeTypes", value.asInstanceOf[js.Any])
+    def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
     
     @scala.inline
-    def deleteDegreeTypes: Self = this.set("degreeTypes", js.undefined)
+    def setDerivedInfo(value: SchemaJobDerivedInfo): Self = StObject.set(x, "derivedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartment(value: String): Self = this.set("department", value.asInstanceOf[js.Any])
+    def setDerivedInfoUndefined: Self = StObject.set(x, "derivedInfo", js.undefined)
     
     @scala.inline
-    def deleteDepartment: Self = this.set("department", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDerivedInfo(value: SchemaJobDerivedInfo): Self = this.set("derivedInfo", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDerivedInfo: Self = this.set("derivedInfo", js.undefined)
+    def setEmploymentTypes(value: js.Array[String]): Self = StObject.set(x, "employmentTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEmploymentTypesUndefined: Self = StObject.set(x, "employmentTypes", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEmploymentTypesVarargs(value: String*): Self = StObject.set(x, "employmentTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEmploymentTypesVarargs(value: String*): Self = this.set("employmentTypes", js.Array(value :_*))
+    def setIncentives(value: String): Self = StObject.set(x, "incentives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmploymentTypes(value: js.Array[String]): Self = this.set("employmentTypes", value.asInstanceOf[js.Any])
+    def setIncentivesUndefined: Self = StObject.set(x, "incentives", js.undefined)
     
     @scala.inline
-    def deleteEmploymentTypes: Self = this.set("employmentTypes", js.undefined)
+    def setJobBenefits(value: js.Array[String]): Self = StObject.set(x, "jobBenefits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncentives(value: String): Self = this.set("incentives", value.asInstanceOf[js.Any])
+    def setJobBenefitsUndefined: Self = StObject.set(x, "jobBenefits", js.undefined)
     
     @scala.inline
-    def deleteIncentives: Self = this.set("incentives", js.undefined)
+    def setJobBenefitsVarargs(value: String*): Self = StObject.set(x, "jobBenefits", js.Array(value :_*))
     
     @scala.inline
-    def setJobBenefitsVarargs(value: String*): Self = this.set("jobBenefits", js.Array(value :_*))
+    def setJobEndTime(value: String): Self = StObject.set(x, "jobEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobBenefits(value: js.Array[String]): Self = this.set("jobBenefits", value.asInstanceOf[js.Any])
+    def setJobEndTimeUndefined: Self = StObject.set(x, "jobEndTime", js.undefined)
     
     @scala.inline
-    def deleteJobBenefits: Self = this.set("jobBenefits", js.undefined)
+    def setJobLevel(value: String): Self = StObject.set(x, "jobLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobEndTime(value: String): Self = this.set("jobEndTime", value.asInstanceOf[js.Any])
+    def setJobLevelUndefined: Self = StObject.set(x, "jobLevel", js.undefined)
     
     @scala.inline
-    def deleteJobEndTime: Self = this.set("jobEndTime", js.undefined)
+    def setJobStartTime(value: String): Self = StObject.set(x, "jobStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobLevel(value: String): Self = this.set("jobLevel", value.asInstanceOf[js.Any])
+    def setJobStartTimeUndefined: Self = StObject.set(x, "jobStartTime", js.undefined)
     
     @scala.inline
-    def deleteJobLevel: Self = this.set("jobLevel", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStartTime(value: String): Self = this.set("jobStartTime", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteJobStartTime: Self = this.set("jobStartTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setPostingCreateTime(value: String): Self = StObject.set(x, "postingCreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPostingCreateTimeUndefined: Self = StObject.set(x, "postingCreateTime", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPostingExpireTime(value: String): Self = StObject.set(x, "postingExpireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostingCreateTime(value: String): Self = this.set("postingCreateTime", value.asInstanceOf[js.Any])
+    def setPostingExpireTimeUndefined: Self = StObject.set(x, "postingExpireTime", js.undefined)
     
     @scala.inline
-    def deletePostingCreateTime: Self = this.set("postingCreateTime", js.undefined)
+    def setPostingPublishTime(value: String): Self = StObject.set(x, "postingPublishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostingExpireTime(value: String): Self = this.set("postingExpireTime", value.asInstanceOf[js.Any])
+    def setPostingPublishTimeUndefined: Self = StObject.set(x, "postingPublishTime", js.undefined)
     
     @scala.inline
-    def deletePostingExpireTime: Self = this.set("postingExpireTime", js.undefined)
+    def setPostingRegion(value: String): Self = StObject.set(x, "postingRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostingPublishTime(value: String): Self = this.set("postingPublishTime", value.asInstanceOf[js.Any])
+    def setPostingRegionUndefined: Self = StObject.set(x, "postingRegion", js.undefined)
     
     @scala.inline
-    def deletePostingPublishTime: Self = this.set("postingPublishTime", js.undefined)
+    def setPostingUpdateTime(value: String): Self = StObject.set(x, "postingUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostingRegion(value: String): Self = this.set("postingRegion", value.asInstanceOf[js.Any])
+    def setPostingUpdateTimeUndefined: Self = StObject.set(x, "postingUpdateTime", js.undefined)
     
     @scala.inline
-    def deletePostingRegion: Self = this.set("postingRegion", js.undefined)
+    def setProcessingOptions(value: SchemaProcessingOptions): Self = StObject.set(x, "processingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostingUpdateTime(value: String): Self = this.set("postingUpdateTime", value.asInstanceOf[js.Any])
+    def setProcessingOptionsUndefined: Self = StObject.set(x, "processingOptions", js.undefined)
     
     @scala.inline
-    def deletePostingUpdateTime: Self = this.set("postingUpdateTime", js.undefined)
+    def setPromotionValue(value: Double): Self = StObject.set(x, "promotionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingOptions(value: SchemaProcessingOptions): Self = this.set("processingOptions", value.asInstanceOf[js.Any])
+    def setPromotionValueUndefined: Self = StObject.set(x, "promotionValue", js.undefined)
     
     @scala.inline
-    def deleteProcessingOptions: Self = this.set("processingOptions", js.undefined)
+    def setQualifications(value: String): Self = StObject.set(x, "qualifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotionValue(value: Double): Self = this.set("promotionValue", value.asInstanceOf[js.Any])
+    def setQualificationsUndefined: Self = StObject.set(x, "qualifications", js.undefined)
     
     @scala.inline
-    def deletePromotionValue: Self = this.set("promotionValue", js.undefined)
+    def setRequisitionId(value: String): Self = StObject.set(x, "requisitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualifications(value: String): Self = this.set("qualifications", value.asInstanceOf[js.Any])
+    def setRequisitionIdUndefined: Self = StObject.set(x, "requisitionId", js.undefined)
     
     @scala.inline
-    def deleteQualifications: Self = this.set("qualifications", js.undefined)
+    def setResponsibilities(value: String): Self = StObject.set(x, "responsibilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequisitionId(value: String): Self = this.set("requisitionId", value.asInstanceOf[js.Any])
+    def setResponsibilitiesUndefined: Self = StObject.set(x, "responsibilities", js.undefined)
     
     @scala.inline
-    def deleteRequisitionId: Self = this.set("requisitionId", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsibilities(value: String): Self = this.set("responsibilities", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteResponsibilities: Self = this.set("responsibilities", js.undefined)
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

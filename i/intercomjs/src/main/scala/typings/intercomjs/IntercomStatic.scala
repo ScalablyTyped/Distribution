@@ -1,12 +1,13 @@
 package typings.intercomjs
 
 import typings.intercomjs.intercom.Intercom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntercomStatic extends js.Object {
+trait IntercomStatic extends StObject {
   
   /**
     * Removes all data associated with intercom from localStorage.
@@ -28,24 +29,12 @@ object IntercomStatic {
   }
   
   @scala.inline
-  implicit class IntercomStaticOps[Self <: IntercomStatic] (val x: Self) extends AnyVal {
+  implicit class IntercomStaticMutableBuilder[Self <: IntercomStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetInstance(value: () => Intercom): Self = this.set("getInstance", js.Any.fromFunction0(value))
+    def setGetInstance(value: () => Intercom): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
   }
 }

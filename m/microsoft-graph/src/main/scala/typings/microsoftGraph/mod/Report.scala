@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Report extends js.Object {
+trait Report extends StObject {
   
   // Not yet documented
   var content: js.UndefOr[NullableOption[_]] = js.native
@@ -19,27 +20,15 @@ object Report {
   }
   
   @scala.inline
-  implicit class ReportOps[Self <: Report] (val x: Self) extends AnyVal {
+  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: NullableOption[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentNull: Self = StObject.set(x, "content", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContent(value: NullableOption[_]): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
-    
-    @scala.inline
-    def setContentNull: Self = this.set("content", null)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

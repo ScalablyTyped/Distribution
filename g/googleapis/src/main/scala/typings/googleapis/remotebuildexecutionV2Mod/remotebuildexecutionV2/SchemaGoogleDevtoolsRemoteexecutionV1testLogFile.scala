@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A `LogFile` is a log stored in the CAS.
   */
 @js.native
-trait SchemaGoogleDevtoolsRemoteexecutionV1testLogFile extends js.Object {
+trait SchemaGoogleDevtoolsRemoteexecutionV1testLogFile extends StObject {
   
   /**
     * The digest of the log contents.
@@ -33,30 +34,18 @@ object SchemaGoogleDevtoolsRemoteexecutionV1testLogFile {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testLogFileOps[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testLogFile] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testLogFileMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testLogFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHumanReadable(value: Boolean): Self = StObject.set(x, "humanReadable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = this.set("digest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDigest: Self = this.set("digest", js.undefined)
-    
-    @scala.inline
-    def setHumanReadable(value: Boolean): Self = this.set("humanReadable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHumanReadable: Self = this.set("humanReadable", js.undefined)
+    def setHumanReadableUndefined: Self = StObject.set(x, "humanReadable", js.undefined)
   }
 }

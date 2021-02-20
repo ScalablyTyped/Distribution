@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,57 +36,45 @@ object ExtensionProperty {
   }
   
   @scala.inline
-  implicit class ExtensionPropertyOps[Self <: ExtensionProperty] (val x: Self) extends AnyVal {
+  implicit class ExtensionPropertyMutableBuilder[Self <: ExtensionProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "appDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppDisplayNameNull: Self = StObject.set(x, "appDisplayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppDisplayNameUndefined: Self = StObject.set(x, "appDisplayName", js.undefined)
     
     @scala.inline
-    def setAppDisplayName(value: NullableOption[String]): Self = this.set("appDisplayName", value.asInstanceOf[js.Any])
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppDisplayName: Self = this.set("appDisplayName", js.undefined)
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def setAppDisplayNameNull: Self = this.set("appDisplayName", null)
+    def setIsSyncedFromOnPremises(value: NullableOption[Boolean]): Self = StObject.set(x, "isSyncedFromOnPremises", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setIsSyncedFromOnPremisesNull: Self = StObject.set(x, "isSyncedFromOnPremises", null)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setIsSyncedFromOnPremisesUndefined: Self = StObject.set(x, "isSyncedFromOnPremises", js.undefined)
     
     @scala.inline
-    def setIsSyncedFromOnPremises(value: NullableOption[Boolean]): Self = this.set("isSyncedFromOnPremises", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsSyncedFromOnPremises: Self = this.set("isSyncedFromOnPremises", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setIsSyncedFromOnPremisesNull: Self = this.set("isSyncedFromOnPremises", null)
+    def setTargetObjects(value: js.Array[String]): Self = StObject.set(x, "targetObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTargetObjectsUndefined: Self = StObject.set(x, "targetObjects", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTargetObjectsVarargs(value: String*): Self = this.set("targetObjects", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetObjects(value: js.Array[String]): Self = this.set("targetObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetObjects: Self = this.set("targetObjects", js.undefined)
+    def setTargetObjectsVarargs(value: String*): Self = StObject.set(x, "targetObjects", js.Array(value :_*))
   }
 }

@@ -4,12 +4,13 @@ import typings.stripeV3.stripeV3Strings.not_supported
 import typings.stripeV3.stripeV3Strings.optional
 import typings.stripeV3.stripeV3Strings.recommended
 import typings.stripeV3.stripeV3Strings.required
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Card extends js.Object {
+trait Card extends StObject {
   
   var address_city: js.UndefOr[String] = js.native
   
@@ -81,129 +82,117 @@ object Card {
   }
   
   @scala.inline
-  implicit class CardOps[Self <: Card] (val x: Self) extends AnyVal {
+  implicit class CardMutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddress_cityUndefined: Self = StObject.set(x, "address_city", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: brandType): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamic_last4(value: String): Self = this.set("dynamic_last4", value.asInstanceOf[js.Any])
+    def setAddress_line1Undefined: Self = StObject.set(x, "address_line1", js.undefined)
     
     @scala.inline
-    def setExp_month(value: Double): Self = this.set("exp_month", value.asInstanceOf[js.Any])
+    def setAddress_line1_check(value: checkType): Self = StObject.set(x, "address_line1_check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExp_year(value: Double): Self = this.set("exp_year", value.asInstanceOf[js.Any])
+    def setAddress_line1_checkUndefined: Self = StObject.set(x, "address_line1_check", js.undefined)
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunding(value: fundingType): Self = this.set("funding", value.asInstanceOf[js.Any])
+    def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast4(value: String): Self = this.set("last4", value.asInstanceOf[js.Any])
+    def setAddress_stateUndefined: Self = StObject.set(x, "address_state", js.undefined)
     
     @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: String): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setAddress_zipUndefined: Self = StObject.set(x, "address_zip", js.undefined)
     
     @scala.inline
-    def setAddress_city(value: String): Self = this.set("address_city", value.asInstanceOf[js.Any])
+    def setAddress_zip_check(value: checkType): Self = StObject.set(x, "address_zip_check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_city: Self = this.set("address_city", js.undefined)
+    def setAddress_zip_checkUndefined: Self = StObject.set(x, "address_zip_check", js.undefined)
     
     @scala.inline
-    def setAddress_country(value: String): Self = this.set("address_country", value.asInstanceOf[js.Any])
+    def setBrand(value: brandType): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_country: Self = this.set("address_country", js.undefined)
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress_line1(value: String): Self = this.set("address_line1", value.asInstanceOf[js.Any])
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_line1: Self = this.set("address_line1", js.undefined)
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def setAddress_line1_check(value: checkType): Self = this.set("address_line1_check", value.asInstanceOf[js.Any])
+    def setCvc_check(value: checkType): Self = StObject.set(x, "cvc_check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_line1_check: Self = this.set("address_line1_check", js.undefined)
+    def setCvc_checkUndefined: Self = StObject.set(x, "cvc_check", js.undefined)
     
     @scala.inline
-    def setAddress_line2(value: String): Self = this.set("address_line2", value.asInstanceOf[js.Any])
+    def setDynamic_last4(value: String): Self = StObject.set(x, "dynamic_last4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_line2: Self = this.set("address_line2", js.undefined)
+    def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress_state(value: String): Self = this.set("address_state", value.asInstanceOf[js.Any])
+    def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_state: Self = this.set("address_state", js.undefined)
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress_zip(value: String): Self = this.set("address_zip", value.asInstanceOf[js.Any])
+    def setFunding(value: fundingType): Self = StObject.set(x, "funding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_zip: Self = this.set("address_zip", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress_zip_check(value: checkType): Self = this.set("address_zip_check", value.asInstanceOf[js.Any])
+    def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_zip_check: Self = this.set("address_zip_check", js.undefined)
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setCvc_check(value: checkType): Self = this.set("cvc_check", value.asInstanceOf[js.Any])
+    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCvc_check: Self = this.set("cvc_check", js.undefined)
+    def setThree_d_secure(value: required | recommended | optional | not_supported): Self = StObject.set(x, "three_d_secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setThree_d_secureUndefined: Self = StObject.set(x, "three_d_secure", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTokenization_method(value: tokenizationType): Self = StObject.set(x, "tokenization_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThree_d_secure(value: required | recommended | optional | not_supported): Self = this.set("three_d_secure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThree_d_secure: Self = this.set("three_d_secure", js.undefined)
-    
-    @scala.inline
-    def setTokenization_method(value: tokenizationType): Self = this.set("tokenization_method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenization_method: Self = this.set("tokenization_method", js.undefined)
+    def setTokenization_methodUndefined: Self = StObject.set(x, "tokenization_method", js.undefined)
   }
 }

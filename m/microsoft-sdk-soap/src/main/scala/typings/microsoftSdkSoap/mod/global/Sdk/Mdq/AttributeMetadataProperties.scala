@@ -1,236 +1,192 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AttributeMetadataProperties extends js.Object
+sealed trait AttributeMetadataProperties extends StObject
 @JSGlobal("Sdk.Mdq.AttributeMetadataProperties")
 @js.native
-object AttributeMetadataProperties extends js.Object {
+object AttributeMetadataProperties extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AttributeMetadataProperties with Double] = js.native
   
   @js.native
   sealed trait AttributeOf extends AttributeMetadataProperties
-  /* 0 */ @js.native
-  object AttributeOf extends TopLevel[AttributeOf with Double]
+  /* 0 */ val AttributeOf: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.AttributeOf with Double = js.native
   
   @js.native
   sealed trait AttributeType extends AttributeMetadataProperties
-  /* 1 */ @js.native
-  object AttributeType extends TopLevel[AttributeType with Double]
+  /* 1 */ val AttributeType: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.AttributeType with Double = js.native
   
   @js.native
   sealed trait AttributeTypeName extends AttributeMetadataProperties
-  /* 2 */ @js.native
-  object AttributeTypeName extends TopLevel[AttributeTypeName with Double]
+  /* 2 */ val AttributeTypeName: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.AttributeTypeName with Double = js.native
   
   @js.native
   sealed trait CalculationOf extends AttributeMetadataProperties
-  /* 3 */ @js.native
-  object CalculationOf extends TopLevel[CalculationOf with Double]
+  /* 3 */ val CalculationOf: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.CalculationOf with Double = js.native
   
   @js.native
   sealed trait CanBeSecuredForCreate extends AttributeMetadataProperties
-  /* 4 */ @js.native
-  object CanBeSecuredForCreate extends TopLevel[CanBeSecuredForCreate with Double]
+  /* 4 */ val CanBeSecuredForCreate: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.CanBeSecuredForCreate with Double = js.native
   
   @js.native
   sealed trait CanBeSecuredForRead extends AttributeMetadataProperties
-  /* 5 */ @js.native
-  object CanBeSecuredForRead extends TopLevel[CanBeSecuredForRead with Double]
+  /* 5 */ val CanBeSecuredForRead: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.CanBeSecuredForRead with Double = js.native
   
   @js.native
   sealed trait CanBeSecuredForUpdate extends AttributeMetadataProperties
-  /* 6 */ @js.native
-  object CanBeSecuredForUpdate extends TopLevel[CanBeSecuredForUpdate with Double]
+  /* 6 */ val CanBeSecuredForUpdate: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.CanBeSecuredForUpdate with Double = js.native
   
   @js.native
   sealed trait CanModifyAdditionalSettings extends AttributeMetadataProperties
-  /* 7 */ @js.native
-  object CanModifyAdditionalSettings extends TopLevel[CanModifyAdditionalSettings with Double]
+  /* 7 */ val CanModifyAdditionalSettings: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.CanModifyAdditionalSettings with Double = js.native
   
   @js.native
   sealed trait ColumnNumber extends AttributeMetadataProperties
-  /* 8 */ @js.native
-  object ColumnNumber extends TopLevel[ColumnNumber with Double]
+  /* 8 */ val ColumnNumber: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.ColumnNumber with Double = js.native
   
   @js.native
   sealed trait DefaultFormValue extends AttributeMetadataProperties
-  /* 9 */ @js.native
-  object DefaultFormValue extends TopLevel[DefaultFormValue with Double]
+  /* 9 */ val DefaultFormValue: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.DefaultFormValue with Double = js.native
   
   @js.native
   sealed trait DefaultValue extends AttributeMetadataProperties
-  /* 10 */ @js.native
-  object DefaultValue extends TopLevel[DefaultValue with Double]
+  /* 10 */ val DefaultValue: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.DefaultValue with Double = js.native
   
   @js.native
   sealed trait DeprecatedVersion extends AttributeMetadataProperties
-  /* 11 */ @js.native
-  object DeprecatedVersion extends TopLevel[DeprecatedVersion with Double]
+  /* 11 */ val DeprecatedVersion: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.DeprecatedVersion with Double = js.native
   
   @js.native
   sealed trait Description extends AttributeMetadataProperties
-  /* 12 */ @js.native
-  object Description extends TopLevel[Description with Double]
+  /* 12 */ val Description: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.Description with Double = js.native
   
   @js.native
   sealed trait DisplayName extends AttributeMetadataProperties
-  /* 13 */ @js.native
-  object DisplayName extends TopLevel[DisplayName with Double]
+  /* 13 */ val DisplayName: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.DisplayName with Double = js.native
   
   @js.native
   sealed trait EntityLogicalName extends AttributeMetadataProperties
-  /* 14 */ @js.native
-  object EntityLogicalName extends TopLevel[EntityLogicalName with Double]
+  /* 14 */ val EntityLogicalName: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.EntityLogicalName with Double = js.native
   
   @js.native
   sealed trait Format extends AttributeMetadataProperties
-  /* 15 */ @js.native
-  object Format extends TopLevel[Format with Double]
+  /* 15 */ val Format: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.Format with Double = js.native
   
   @js.native
   sealed trait FormatName extends AttributeMetadataProperties
-  /* 16 */ @js.native
-  object FormatName extends TopLevel[FormatName with Double]
+  /* 16 */ val FormatName: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.FormatName with Double = js.native
   
   @js.native
   sealed trait ImeMode extends AttributeMetadataProperties
-  /* 17 */ @js.native
-  object ImeMode extends TopLevel[ImeMode with Double]
+  /* 17 */ val ImeMode: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.ImeMode with Double = js.native
   
   @js.native
   sealed trait IntroducedVersion extends AttributeMetadataProperties
-  /* 18 */ @js.native
-  object IntroducedVersion extends TopLevel[IntroducedVersion with Double]
+  /* 18 */ val IntroducedVersion: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IntroducedVersion with Double = js.native
   
   @js.native
   sealed trait IsAuditEnabled extends AttributeMetadataProperties
-  /* 19 */ @js.native
-  object IsAuditEnabled extends TopLevel[IsAuditEnabled with Double]
+  /* 19 */ val IsAuditEnabled: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsAuditEnabled with Double = js.native
   
   @js.native
   sealed trait IsCustomAttribute extends AttributeMetadataProperties
-  /* 20 */ @js.native
-  object IsCustomAttribute extends TopLevel[IsCustomAttribute with Double]
+  /* 20 */ val IsCustomAttribute: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsCustomAttribute with Double = js.native
   
   @js.native
   sealed trait IsCustomizable extends AttributeMetadataProperties
-  /* 21 */ @js.native
-  object IsCustomizable extends TopLevel[IsCustomizable with Double]
+  /* 21 */ val IsCustomizable: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsCustomizable with Double = js.native
   
   @js.native
   sealed trait IsManaged extends AttributeMetadataProperties
-  /* 22 */ @js.native
-  object IsManaged extends TopLevel[IsManaged with Double]
+  /* 22 */ val IsManaged: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsManaged with Double = js.native
   
   @js.native
   sealed trait IsPrimaryId extends AttributeMetadataProperties
-  /* 23 */ @js.native
-  object IsPrimaryId extends TopLevel[IsPrimaryId with Double]
+  /* 23 */ val IsPrimaryId: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsPrimaryId with Double = js.native
   
   @js.native
   sealed trait IsPrimaryName extends AttributeMetadataProperties
-  /* 24 */ @js.native
-  object IsPrimaryName extends TopLevel[IsPrimaryName with Double]
+  /* 24 */ val IsPrimaryName: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsPrimaryName with Double = js.native
   
   @js.native
   sealed trait IsRenameable extends AttributeMetadataProperties
-  /* 25 */ @js.native
-  object IsRenameable extends TopLevel[IsRenameable with Double]
+  /* 25 */ val IsRenameable: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsRenameable with Double = js.native
   
   @js.native
   sealed trait IsSecured extends AttributeMetadataProperties
-  /* 26 */ @js.native
-  object IsSecured extends TopLevel[IsSecured with Double]
+  /* 26 */ val IsSecured: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsSecured with Double = js.native
   
   @js.native
   sealed trait IsValidForAdvancedFind extends AttributeMetadataProperties
-  /* 27 */ @js.native
-  object IsValidForAdvancedFind extends TopLevel[IsValidForAdvancedFind with Double]
+  /* 27 */ val IsValidForAdvancedFind: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsValidForAdvancedFind with Double = js.native
   
   @js.native
   sealed trait IsValidForCreate extends AttributeMetadataProperties
-  /* 28 */ @js.native
-  object IsValidForCreate extends TopLevel[IsValidForCreate with Double]
+  /* 28 */ val IsValidForCreate: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsValidForCreate with Double = js.native
   
   @js.native
   sealed trait IsValidForRead extends AttributeMetadataProperties
-  /* 29 */ @js.native
-  object IsValidForRead extends TopLevel[IsValidForRead with Double]
+  /* 29 */ val IsValidForRead: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsValidForRead with Double = js.native
   
   @js.native
   sealed trait IsValidForUpdate extends AttributeMetadataProperties
-  /* 30 */ @js.native
-  object IsValidForUpdate extends TopLevel[IsValidForUpdate with Double]
+  /* 30 */ val IsValidForUpdate: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.IsValidForUpdate with Double = js.native
   
   @js.native
   sealed trait LinkedAttributeId extends AttributeMetadataProperties
-  /* 31 */ @js.native
-  object LinkedAttributeId extends TopLevel[LinkedAttributeId with Double]
+  /* 31 */ val LinkedAttributeId: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.LinkedAttributeId with Double = js.native
   
   @js.native
   sealed trait LogicalName extends AttributeMetadataProperties
-  /* 32 */ @js.native
-  object LogicalName extends TopLevel[LogicalName with Double]
+  /* 32 */ val LogicalName: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.LogicalName with Double = js.native
   
   @js.native
   sealed trait MaxLength extends AttributeMetadataProperties
-  /* 33 */ @js.native
-  object MaxLength extends TopLevel[MaxLength with Double]
+  /* 33 */ val MaxLength: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.MaxLength with Double = js.native
   
   @js.native
   sealed trait MaxValue extends AttributeMetadataProperties
-  /* 34 */ @js.native
-  object MaxValue extends TopLevel[MaxValue with Double]
+  /* 34 */ val MaxValue: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.MaxValue with Double = js.native
   
   @js.native
   sealed trait MetadataId extends AttributeMetadataProperties
-  /* 35 */ @js.native
-  object MetadataId extends TopLevel[MetadataId with Double]
+  /* 35 */ val MetadataId: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.MetadataId with Double = js.native
   
   @js.native
   sealed trait MinValue extends AttributeMetadataProperties
-  /* 36 */ @js.native
-  object MinValue extends TopLevel[MinValue with Double]
+  /* 36 */ val MinValue: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.MinValue with Double = js.native
   
   @js.native
   sealed trait OptionSet extends AttributeMetadataProperties
-  /* 37 */ @js.native
-  object OptionSet extends TopLevel[OptionSet with Double]
+  /* 37 */ val OptionSet: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.OptionSet with Double = js.native
   
   @js.native
   sealed trait Precision extends AttributeMetadataProperties
-  /* 38 */ @js.native
-  object Precision extends TopLevel[Precision with Double]
+  /* 38 */ val Precision: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.Precision with Double = js.native
   
   @js.native
   sealed trait PrecisionSource extends AttributeMetadataProperties
-  /* 39 */ @js.native
-  object PrecisionSource extends TopLevel[PrecisionSource with Double]
+  /* 39 */ val PrecisionSource: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.PrecisionSource with Double = js.native
   
   @js.native
   sealed trait RequiredLevel extends AttributeMetadataProperties
-  /* 40 */ @js.native
-  object RequiredLevel extends TopLevel[RequiredLevel with Double]
+  /* 40 */ val RequiredLevel: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.RequiredLevel with Double = js.native
   
   @js.native
   sealed trait SchemaName extends AttributeMetadataProperties
-  /* 41 */ @js.native
-  object SchemaName extends TopLevel[SchemaName with Double]
+  /* 41 */ val SchemaName: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.SchemaName with Double = js.native
   
   @js.native
   sealed trait Targets extends AttributeMetadataProperties
-  /* 42 */ @js.native
-  object Targets extends TopLevel[Targets with Double]
+  /* 42 */ val Targets: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.Targets with Double = js.native
   
   @js.native
   sealed trait YomiOf extends AttributeMetadataProperties
-  /* 43 */ @js.native
-  object YomiOf extends TopLevel[YomiOf with Double]
+  /* 43 */ val YomiOf: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AttributeMetadataProperties.YomiOf with Double = js.native
 }

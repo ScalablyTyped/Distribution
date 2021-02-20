@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,36 +40,24 @@ object Narrative {
   }
   
   @scala.inline
-  implicit class NarrativeOps[Self <: Narrative] (val x: Self) extends AnyVal {
+  implicit class NarrativeMutableBuilder[Self <: Narrative] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiv(value: String): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_div(value: Element): Self = StObject.set(x, "_div", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiv(value: String): Self = this.set("div", value.asInstanceOf[js.Any])
+    def set_divUndefined: Self = StObject.set(x, "_div", js.undefined)
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_div(value: Element): Self = this.set("_div", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_div: Self = this.set("_div", js.undefined)
-    
-    @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

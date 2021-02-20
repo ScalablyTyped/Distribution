@@ -2,12 +2,13 @@ package typings.typeorm.anon
 
 import typings.typeorm.foreignKeyMetadataMod.ForeignKeyMetadata
 import typings.typeorm.uniqueMetadataMod.UniqueMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForeignKey extends js.Object {
+trait ForeignKey extends StObject {
   
   var foreignKey: js.UndefOr[ForeignKeyMetadata] = js.native
   
@@ -22,30 +23,18 @@ object ForeignKey {
   }
   
   @scala.inline
-  implicit class ForeignKeyOps[Self <: ForeignKey] (val x: Self) extends AnyVal {
+  implicit class ForeignKeyMutableBuilder[Self <: ForeignKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForeignKey(value: ForeignKeyMetadata): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUniqueConstraint(value: UniqueMetadata): Self = StObject.set(x, "uniqueConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeignKey(value: ForeignKeyMetadata): Self = this.set("foreignKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForeignKey: Self = this.set("foreignKey", js.undefined)
-    
-    @scala.inline
-    def setUniqueConstraint(value: UniqueMetadata): Self = this.set("uniqueConstraint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueConstraint: Self = this.set("uniqueConstraint", js.undefined)
+    def setUniqueConstraintUndefined: Self = StObject.set(x, "uniqueConstraint", js.undefined)
   }
 }

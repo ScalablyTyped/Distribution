@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataValidationMetrics extends js.Object {
+trait DataValidationMetrics extends StObject {
   
   /**
     * The field-specific model training validation messages.
@@ -26,36 +27,24 @@ object DataValidationMetrics {
   }
   
   @scala.inline
-  implicit class DataValidationMetricsOps[Self <: DataValidationMetrics] (val x: Self) extends AnyVal {
+  implicit class DataValidationMetricsMutableBuilder[Self <: DataValidationMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldLevelMessages(value: fieldValidationMessageList): Self = StObject.set(x, "fieldLevelMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldLevelMessagesUndefined: Self = StObject.set(x, "fieldLevelMessages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldLevelMessagesVarargs(value: FieldValidationMessage*): Self = StObject.set(x, "fieldLevelMessages", js.Array(value :_*))
     
     @scala.inline
-    def setFieldLevelMessagesVarargs(value: FieldValidationMessage*): Self = this.set("fieldLevelMessages", js.Array(value :_*))
+    def setFileLevelMessages(value: fileValidationMessageList): Self = StObject.set(x, "fileLevelMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldLevelMessages(value: fieldValidationMessageList): Self = this.set("fieldLevelMessages", value.asInstanceOf[js.Any])
+    def setFileLevelMessagesUndefined: Self = StObject.set(x, "fileLevelMessages", js.undefined)
     
     @scala.inline
-    def deleteFieldLevelMessages: Self = this.set("fieldLevelMessages", js.undefined)
-    
-    @scala.inline
-    def setFileLevelMessagesVarargs(value: FileValidationMessage*): Self = this.set("fileLevelMessages", js.Array(value :_*))
-    
-    @scala.inline
-    def setFileLevelMessages(value: fileValidationMessageList): Self = this.set("fileLevelMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileLevelMessages: Self = this.set("fileLevelMessages", js.undefined)
+    def setFileLevelMessagesVarargs(value: FileValidationMessage*): Self = StObject.set(x, "fileLevelMessages", js.Array(value :_*))
   }
 }

@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,60 +68,48 @@ object ParamsResourceProductsList {
   }
   
   @scala.inline
-  implicit class ParamsResourceProductsListOps[Self <: ParamsResourceProductsList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceProductsListMutableBuilder[Self <: ParamsResourceProductsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproved(value: Boolean): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproved(value: Boolean): Self = this.set("approved", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteApproved: Self = this.set("approved", js.undefined)
+    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterpriseId(value: String): Self = this.set("enterpriseId", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteEnterpriseId: Self = this.set("enterpriseId", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

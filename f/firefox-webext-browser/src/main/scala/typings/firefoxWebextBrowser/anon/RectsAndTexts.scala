@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RectsAndTexts extends js.Object {
+trait RectsAndTexts extends StObject {
   
   var rectsAndTexts: RectList = js.native
   
@@ -20,24 +21,12 @@ object RectsAndTexts {
   }
   
   @scala.inline
-  implicit class RectsAndTextsOps[Self <: RectsAndTexts] (val x: Self) extends AnyVal {
+  implicit class RectsAndTextsMutableBuilder[Self <: RectsAndTexts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRectsAndTexts(value: RectList): Self = StObject.set(x, "rectsAndTexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRectsAndTexts(value: RectList): Self = this.set("rectsAndTexts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextList(value: String): Self = this.set("textList", value.asInstanceOf[js.Any])
+    def setTextList(value: String): Self = StObject.set(x, "textList", value.asInstanceOf[js.Any])
   }
 }

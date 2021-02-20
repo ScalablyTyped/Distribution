@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,30 +51,18 @@ object ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorChangeHtml5MediaElementCommandArgumentsOps[Self <: ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorChangeHtml5MediaElementCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreloadMode(value: String): Self = StObject.set(x, "preloadMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreloadMode(value: String): Self = this.set("preloadMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowPlayerControls(value: Boolean): Self = this.set("showPlayerControls", value.asInstanceOf[js.Any])
+    def setShowPlayerControls(value: Boolean): Self = StObject.set(x, "showPlayerControls", value.asInstanceOf[js.Any])
   }
 }

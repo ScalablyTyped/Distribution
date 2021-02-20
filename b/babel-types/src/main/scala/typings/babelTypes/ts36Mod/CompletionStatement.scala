@@ -4,6 +4,7 @@ import typings.babelTypes.babelTypesStrings.BreakStatement
 import typings.babelTypes.babelTypesStrings.ContinueStatement
 import typings.babelTypes.babelTypesStrings.ReturnStatement
 import typings.babelTypes.babelTypesStrings.ThrowStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,34 +15,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.ts36Mod.ReturnStatement_
   - typings.babelTypes.ts36Mod.ThrowStatement_
 */
-trait CompletionStatement extends js.Object
+trait CompletionStatement extends StObject
 object CompletionStatement {
   
   @scala.inline
-  def BreakStatement_(end: Double, label: Identifier_, loc: SourceLocation, start: Double, `type`: BreakStatement): CompletionStatement = {
+  def BreakStatement_(end: Double, label: Identifier_, loc: SourceLocation, start: Double, `type`: BreakStatement): typings.babelTypes.ts36Mod.BreakStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CompletionStatement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.BreakStatement_]
   }
   
   @scala.inline
-  def ContinueStatement_(end: Double, label: Identifier_, loc: SourceLocation, start: Double, `type`: ContinueStatement): CompletionStatement = {
+  def ContinueStatement_(end: Double, label: Identifier_, loc: SourceLocation, start: Double, `type`: ContinueStatement): typings.babelTypes.ts36Mod.ContinueStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CompletionStatement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ContinueStatement_]
   }
   
   @scala.inline
-  def ReturnStatement_(argument: Expression, end: Double, loc: SourceLocation, start: Double, `type`: ReturnStatement): CompletionStatement = {
+  def ReturnStatement_(argument: Expression, end: Double, loc: SourceLocation, start: Double, `type`: ReturnStatement): typings.babelTypes.ts36Mod.ReturnStatement_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CompletionStatement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ReturnStatement_]
   }
   
   @scala.inline
-  def ThrowStatement_(argument: Expression, end: Double, loc: SourceLocation, start: Double, `type`: ThrowStatement): CompletionStatement = {
+  def ThrowStatement_(argument: Expression, end: Double, loc: SourceLocation, start: Double, `type`: ThrowStatement): typings.babelTypes.ts36Mod.ThrowStatement_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CompletionStatement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ThrowStatement_]
   }
 }

@@ -1,5 +1,6 @@
 package typings.nodeSass
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,6 +137,9 @@ package object mod {
     scala.Unit
   ]
   
+  @scala.inline
+  def FALSE: typings.nodeSass.mod.types.Boolean = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FALSE").asInstanceOf[typings.nodeSass.mod.types.Boolean]
+  
   type FunctionDeclarations[FunctionType /* <: typings.nodeSass.mod.SassFunction */] = typings.std.Record[java.lang.String, FunctionType]
   
   type Importer = typings.nodeSass.mod.AsyncImporter | typings.nodeSass.mod.SyncImporter
@@ -149,6 +153,9 @@ package object mod {
     - typings.nodeSass.mod.types.Error
   */
   type ImporterReturnType = typings.nodeSass.mod._ImporterReturnType | typings.std.Error | scala.Null
+  
+  @scala.inline
+  def NULL: typings.nodeSass.mod.types.Null = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NULL").asInstanceOf[typings.nodeSass.mod.types.Null]
   
   type SassFunction = typings.nodeSass.mod.SyncSassFunction | typings.nodeSass.mod.AsyncSassFunction
   
@@ -225,4 +232,16 @@ package object mod {
     /* $arg6 */ js.Array[typings.nodeSass.mod.types.Value], 
     typings.nodeSass.mod.types.ReturnValue
   ]
+  
+  @scala.inline
+  def TRUE: typings.nodeSass.mod.types.Boolean = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TRUE").asInstanceOf[typings.nodeSass.mod.types.Boolean]
+  
+  @scala.inline
+  def info: java.lang.String = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("info").asInstanceOf[java.lang.String]
+  
+  @scala.inline
+  def render(options: typings.nodeSass.mod.Options, callback: typings.nodeSass.mod.SassRenderCallback): scala.Unit = (typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def renderSync(options: typings.nodeSass.mod.SyncOptions): typings.nodeSass.mod.Result = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeSass.mod.Result]
 }

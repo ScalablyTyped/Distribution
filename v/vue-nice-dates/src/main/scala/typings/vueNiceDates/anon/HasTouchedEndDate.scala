@@ -1,11 +1,12 @@
 package typings.vueNiceDates.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HasTouchedEndDate extends js.Object {
+trait HasTouchedEndDate extends StObject {
   
   @JSName("$hasTouchedEndDate")
   var $hasTouchedEndDate: Boolean = js.native
@@ -45,42 +46,30 @@ object HasTouchedEndDate {
   }
   
   @scala.inline
-  implicit class HasTouchedEndDateOps[Self <: HasTouchedEndDate] (val x: Self) extends AnyVal {
+  implicit class HasTouchedEndDateMutableBuilder[Self <: HasTouchedEndDate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$hasTouchedEndDate(value: Boolean): Self = StObject.set(x, "$hasTouchedEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$hasTouchedStartDate(value: Boolean): Self = StObject.set(x, "$hasTouchedStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$lastValidEndDate(value: String): Self = StObject.set(x, "$lastValidEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$hasTouchedEndDate(value: Boolean): Self = this.set("$hasTouchedEndDate", value.asInstanceOf[js.Any])
+    def set$lastValidStartDate(value: String): Self = StObject.set(x, "$lastValidStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$hasTouchedStartDate(value: Boolean): Self = this.set("$hasTouchedStartDate", value.asInstanceOf[js.Any])
+    def setReceivedEndDate(value: String): Self = StObject.set(x, "receivedEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$lastValidEndDate(value: String): Self = this.set("$lastValidEndDate", value.asInstanceOf[js.Any])
+    def setReceivedFocusName(value: String): Self = StObject.set(x, "receivedFocusName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$lastValidStartDate(value: String): Self = this.set("$lastValidStartDate", value.asInstanceOf[js.Any])
+    def setReceivedIsFocus(value: Boolean): Self = StObject.set(x, "receivedIsFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceivedEndDate(value: String): Self = this.set("receivedEndDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceivedFocusName(value: String): Self = this.set("receivedFocusName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceivedIsFocus(value: Boolean): Self = this.set("receivedIsFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceivedStartDate(value: String): Self = this.set("receivedStartDate", value.asInstanceOf[js.Any])
+    def setReceivedStartDate(value: String): Self = StObject.set(x, "receivedStartDate", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.angularCompiler.compileMetadataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompileDiDependencyMetadata extends js.Object {
+trait CompileDiDependencyMetadata extends StObject {
   
   var isAttribute: js.UndefOr[Boolean] = js.native
   
@@ -32,66 +33,54 @@ object CompileDiDependencyMetadata {
   }
   
   @scala.inline
-  implicit class CompileDiDependencyMetadataOps[Self <: CompileDiDependencyMetadata] (val x: Self) extends AnyVal {
+  implicit class CompileDiDependencyMetadataMutableBuilder[Self <: CompileDiDependencyMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAttribute(value: Boolean): Self = StObject.set(x, "isAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAttributeUndefined: Self = StObject.set(x, "isAttribute", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsHost(value: Boolean): Self = StObject.set(x, "isHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAttribute(value: Boolean): Self = this.set("isAttribute", value.asInstanceOf[js.Any])
+    def setIsHostUndefined: Self = StObject.set(x, "isHost", js.undefined)
     
     @scala.inline
-    def deleteIsAttribute: Self = this.set("isAttribute", js.undefined)
+    def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHost(value: Boolean): Self = this.set("isHost", value.asInstanceOf[js.Any])
+    def setIsOptionalUndefined: Self = StObject.set(x, "isOptional", js.undefined)
     
     @scala.inline
-    def deleteIsHost: Self = this.set("isHost", js.undefined)
+    def setIsSelf(value: Boolean): Self = StObject.set(x, "isSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOptional(value: Boolean): Self = this.set("isOptional", value.asInstanceOf[js.Any])
+    def setIsSelfUndefined: Self = StObject.set(x, "isSelf", js.undefined)
     
     @scala.inline
-    def deleteIsOptional: Self = this.set("isOptional", js.undefined)
+    def setIsSkipSelf(value: Boolean): Self = StObject.set(x, "isSkipSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSelf(value: Boolean): Self = this.set("isSelf", value.asInstanceOf[js.Any])
+    def setIsSkipSelfUndefined: Self = StObject.set(x, "isSkipSelf", js.undefined)
     
     @scala.inline
-    def deleteIsSelf: Self = this.set("isSelf", js.undefined)
+    def setIsValue(value: Boolean): Self = StObject.set(x, "isValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSkipSelf(value: Boolean): Self = this.set("isSkipSelf", value.asInstanceOf[js.Any])
+    def setIsValueUndefined: Self = StObject.set(x, "isValue", js.undefined)
     
     @scala.inline
-    def deleteIsSkipSelf: Self = this.set("isSkipSelf", js.undefined)
+    def setToken(value: CompileTokenMetadata): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValue(value: Boolean): Self = this.set("isValue", value.asInstanceOf[js.Any])
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def deleteIsValue: Self = this.set("isValue", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: CompileTokenMetadata): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

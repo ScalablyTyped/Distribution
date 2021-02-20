@@ -1,5 +1,6 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Configuration ()
   extends typings.openui5.sap.ui.core.Configuration
-@JSGlobal("sap.ui.core.Configuration")
-@js.native
-object Configuration extends js.Object {
+object Configuration {
   
+  @JSGlobal("sap.ui.core.Configuration.FormatSettings")
   @js.native
   class FormatSettings ()
     extends typings.openui5.sap.ui.core.Configuration.FormatSettings

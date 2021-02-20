@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEventsMessage extends js.Object {
+trait DescribeEventsMessage extends StObject {
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to include only those associated with this application.
@@ -76,90 +77,78 @@ object DescribeEventsMessage {
   }
   
   @scala.inline
-  implicit class DescribeEventsMessageOps[Self <: DescribeEventsMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeEventsMessageMutableBuilder[Self <: DescribeEventsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: TimeFilterEnd): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: TimeFilterEnd): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = this.set("EnvironmentId", value.asInstanceOf[js.Any])
+    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentId: Self = this.set("EnvironmentId", js.undefined)
+    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPlatformArnUndefined: Self = StObject.set(x, "PlatformArn", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformArn(value: PlatformArn): Self = this.set("PlatformArn", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
     @scala.inline
-    def deletePlatformArn: Self = this.set("PlatformArn", js.undefined)
+    def setSeverity(value: EventSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
     @scala.inline
-    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    def setStartTime(value: TimeFilterStart): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: EventSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: TimeFilterStart): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: ConfigurationTemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
-    
-    @scala.inline
-    def setVersionLabel(value: VersionLabel): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionLabel: Self = this.set("VersionLabel", js.undefined)
+    def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

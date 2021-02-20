@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPackageVersionAssetsRequest extends js.Object {
+trait ListPackageVersionAssetsRequest extends StObject {
   
   /**
     *  The name of the package that contains the returned package version assets. 
@@ -69,57 +70,45 @@ object ListPackageVersionAssetsRequest {
   }
   
   @scala.inline
-  implicit class ListPackageVersionAssetsRequestOps[Self <: ListPackageVersionAssetsRequest] (val x: Self) extends AnyVal {
+  implicit class ListPackageVersionAssetsRequestMutableBuilder[Self <: ListPackageVersionAssetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
     @scala.inline
-    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setMaxResults(value: ListPackageVersionAssetsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: PackageFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setPackageVersion(value: PackageVersion): Self = this.set("packageVersion", value.asInstanceOf[js.Any])
+    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: RepositoryName): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: ListPackageVersionAssetsMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setPackageVersion(value: PackageVersion): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

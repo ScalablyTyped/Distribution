@@ -1,18 +1,28 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Shaders/ShadersInclude/pointCloudVertexDeclaration", JSImport.Namespace)
-@js.native
-object pointCloudVertexDeclarationMod extends js.Object {
+object pointCloudVertexDeclarationMod {
   
-  @js.native
-  object pointCloudVertexDeclaration extends js.Object {
+  object pointCloudVertexDeclaration {
     
-    var name: String = js.native
+    @JSImport("babylonjs/Shaders/ShadersInclude/pointCloudVertexDeclaration", "pointCloudVertexDeclaration")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var shader: String = js.native
+    @JSImport("babylonjs/Shaders/ShadersInclude/pointCloudVertexDeclaration", "pointCloudVertexDeclaration.name")
+    @js.native
+    def name: String = js.native
+    @scala.inline
+    def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Shaders/ShadersInclude/pointCloudVertexDeclaration", "pointCloudVertexDeclaration.shader")
+    @js.native
+    def shader: String = js.native
+    @scala.inline
+    def shader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shader")(x.asInstanceOf[js.Any])
   }
 }

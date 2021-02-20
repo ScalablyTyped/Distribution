@@ -1,6 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,36 +39,24 @@ object FullscreenProperties {
   }
   
   @scala.inline
-  implicit class FullscreenPropertiesOps[Self <: FullscreenProperties] (val x: Self) extends AnyVal {
+  implicit class FullscreenPropertiesMutableBuilder[Self <: FullscreenProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setViewModel(value: FullscreenViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: FullscreenViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLiveChatUserBannedMessageDetails extends js.Object {
+trait SchemaLiveChatUserBannedMessageDetails extends StObject {
   
   /**
     * The duration of the ban. This property is only present if the banType is
@@ -32,36 +33,24 @@ object SchemaLiveChatUserBannedMessageDetails {
   }
   
   @scala.inline
-  implicit class SchemaLiveChatUserBannedMessageDetailsOps[Self <: SchemaLiveChatUserBannedMessageDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaLiveChatUserBannedMessageDetailsMutableBuilder[Self <: SchemaLiveChatUserBannedMessageDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBanDurationSeconds(value: String): Self = StObject.set(x, "banDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBanDurationSecondsUndefined: Self = StObject.set(x, "banDurationSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBanType(value: String): Self = StObject.set(x, "banType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBanDurationSeconds(value: String): Self = this.set("banDurationSeconds", value.asInstanceOf[js.Any])
+    def setBanTypeUndefined: Self = StObject.set(x, "banType", js.undefined)
     
     @scala.inline
-    def deleteBanDurationSeconds: Self = this.set("banDurationSeconds", js.undefined)
+    def setBannedUserDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "bannedUserDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBanType(value: String): Self = this.set("banType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBanType: Self = this.set("banType", js.undefined)
-    
-    @scala.inline
-    def setBannedUserDetails(value: SchemaChannelProfileDetails): Self = this.set("bannedUserDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBannedUserDetails: Self = this.set("bannedUserDetails", js.undefined)
+    def setBannedUserDetailsUndefined: Self = StObject.set(x, "bannedUserDetails", js.undefined)
   }
 }

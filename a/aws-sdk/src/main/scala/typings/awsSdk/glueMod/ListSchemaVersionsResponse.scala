@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSchemaVersionsResponse extends js.Object {
+trait ListSchemaVersionsResponse extends StObject {
   
   /**
     * A continuation token for paginating the returned list of tokens, returned if the current segment of the list is not the last.
@@ -26,33 +27,21 @@ object ListSchemaVersionsResponse {
   }
   
   @scala.inline
-  implicit class ListSchemaVersionsResponseOps[Self <: ListSchemaVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListSchemaVersionsResponseMutableBuilder[Self <: ListSchemaVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemas(value: SchemaVersionList): Self = StObject.set(x, "Schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: SchemaRegistryTokenString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSchemasUndefined: Self = StObject.set(x, "Schemas", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSchemasVarargs(value: SchemaVersionListItem*): Self = this.set("Schemas", js.Array(value :_*))
-    
-    @scala.inline
-    def setSchemas(value: SchemaVersionList): Self = this.set("Schemas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemas: Self = this.set("Schemas", js.undefined)
+    def setSchemasVarargs(value: SchemaVersionListItem*): Self = StObject.set(x, "Schemas", js.Array(value :_*))
   }
 }

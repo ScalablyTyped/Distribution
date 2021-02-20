@@ -1,6 +1,7 @@
 package typings.baiduApp.swan.ai
 
 import typings.baiduApp.swan.BaseOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,28 +13,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait textToAudioOptions
   extends BaseOptions[js.Any, js.Any] {
   
-   // 合成的文本，使用UTF-8编码，小于512个中文字或者英文数字（文本在百度服务器内转换为GBK后，长度必须小于1024字节）。
+  // 合成的文本，使用UTF-8编码，小于512个中文字或者英文数字（文本在百度服务器内转换为GBK后，长度必须小于1024字节）。
   var ctp: js.UndefOr[String | Double] = js.native
   
-   // 客户端类型选择，Web端填写固定值1。
+  // 客户端类型选择，Web端填写固定值1。
   var lan: js.UndefOr[String] = js.native
   
-   // 音量，取值0-9，默认为5中音量。
+  // 音量，取值0-9，默认为5中音量。
   var per: js.UndefOr[String] = js.native
   
-   // 语速，取值0-9，默认为5中语速。
+  // 语速，取值0-9，默认为5中语速。
   var pit: js.UndefOr[String] = js.native
   
-   // 固定值zh。语言选择,目前只有中英文混合模式，填写固定值zh。
+  // 固定值zh。语言选择,目前只有中英文混合模式，填写固定值zh。
   var spd: js.UndefOr[String] = js.native
   
-   // 发音人选择, 0为普通女声，1为普通男生，3为情感合成-度逍遥，4为情感合成-度丫丫，默认为普通女声。
+  // 发音人选择, 0为普通女声，1为普通男生，3为情感合成-度逍遥，4为情感合成-度丫丫，默认为普通女声。
   @JSName("success")
   var success_textToAudioOptions: js.UndefOr[js.Function1[/* res */ textToAudioResponse, Unit]] = js.native
   
   var tex: String = js.native
   
-   // 音调，取值0-9，默认为5中语调。
+  // 音调，取值0-9，默认为5中语调。
   var vol: js.UndefOr[String] = js.native
 }
 object textToAudioOptions {
@@ -45,63 +46,51 @@ object textToAudioOptions {
   }
   
   @scala.inline
-  implicit class textToAudioOptionsOps[Self <: textToAudioOptions] (val x: Self) extends AnyVal {
+  implicit class textToAudioOptionsMutableBuilder[Self <: textToAudioOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCtp(value: String | Double): Self = StObject.set(x, "ctp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCtpUndefined: Self = StObject.set(x, "ctp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLan(value: String): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTex(value: String): Self = this.set("tex", value.asInstanceOf[js.Any])
+    def setLanUndefined: Self = StObject.set(x, "lan", js.undefined)
     
     @scala.inline
-    def setCtp(value: String | Double): Self = this.set("ctp", value.asInstanceOf[js.Any])
+    def setPer(value: String): Self = StObject.set(x, "per", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCtp: Self = this.set("ctp", js.undefined)
+    def setPerUndefined: Self = StObject.set(x, "per", js.undefined)
     
     @scala.inline
-    def setLan(value: String): Self = this.set("lan", value.asInstanceOf[js.Any])
+    def setPit(value: String): Self = StObject.set(x, "pit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLan: Self = this.set("lan", js.undefined)
+    def setPitUndefined: Self = StObject.set(x, "pit", js.undefined)
     
     @scala.inline
-    def setPer(value: String): Self = this.set("per", value.asInstanceOf[js.Any])
+    def setSpd(value: String): Self = StObject.set(x, "spd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePer: Self = this.set("per", js.undefined)
+    def setSpdUndefined: Self = StObject.set(x, "spd", js.undefined)
     
     @scala.inline
-    def setPit(value: String): Self = this.set("pit", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* res */ textToAudioResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePit: Self = this.set("pit", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setSpd(value: String): Self = this.set("spd", value.asInstanceOf[js.Any])
+    def setTex(value: String): Self = StObject.set(x, "tex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpd: Self = this.set("spd", js.undefined)
+    def setVol(value: String): Self = StObject.set(x, "vol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: /* res */ textToAudioResponse => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setVol(value: String): Self = this.set("vol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVol: Self = this.set("vol", js.undefined)
+    def setVolUndefined: Self = StObject.set(x, "vol", js.undefined)
   }
 }

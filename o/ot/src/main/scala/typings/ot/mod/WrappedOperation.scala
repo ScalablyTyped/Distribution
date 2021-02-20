@@ -1,12 +1,13 @@
 package typings.ot.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ot", "WrappedOperation")
 @js.native
-class WrappedOperation[T] protected () extends js.Object {
+class WrappedOperation[T] protected () extends StObject {
   def this(operation: TextOperation) = this()
   def this(operation: TextOperation, meta: T) = this()
   
@@ -22,9 +23,9 @@ class WrappedOperation[T] protected () extends js.Object {
   var wrapped: TextOperation = js.native
 }
 /* static members */
-@JSImport("ot", "WrappedOperation")
-@js.native
-object WrappedOperation extends js.Object {
+object WrappedOperation {
   
+  @JSImport("ot", "WrappedOperation.transform")
+  @js.native
   def transform[T](left: WrappedOperation[T], right: WrappedOperation[T]): WrappedOperation[T] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRecoveryPointRestoreMetadataOutput extends js.Object {
+trait GetRecoveryPointRestoreMetadataOutput extends StObject {
   
   /**
     * An ARN that uniquely identifies a backup vault; for example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.
@@ -31,36 +32,24 @@ object GetRecoveryPointRestoreMetadataOutput {
   }
   
   @scala.inline
-  implicit class GetRecoveryPointRestoreMetadataOutputOps[Self <: GetRecoveryPointRestoreMetadataOutput] (val x: Self) extends AnyVal {
+  implicit class GetRecoveryPointRestoreMetadataOutputMutableBuilder[Self <: GetRecoveryPointRestoreMetadataOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupVaultArn(value: ARN): Self = this.set("BackupVaultArn", value.asInstanceOf[js.Any])
+    def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
     
     @scala.inline
-    def deleteBackupVaultArn: Self = this.set("BackupVaultArn", js.undefined)
+    def setRestoreMetadata(value: Metadata): Self = StObject.set(x, "RestoreMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecoveryPointArn(value: ARN): Self = this.set("RecoveryPointArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecoveryPointArn: Self = this.set("RecoveryPointArn", js.undefined)
-    
-    @scala.inline
-    def setRestoreMetadata(value: Metadata): Self = this.set("RestoreMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestoreMetadata: Self = this.set("RestoreMetadata", js.undefined)
+    def setRestoreMetadataUndefined: Self = StObject.set(x, "RestoreMetadata", js.undefined)
   }
 }

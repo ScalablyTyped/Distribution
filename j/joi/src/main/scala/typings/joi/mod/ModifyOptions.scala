@@ -1,11 +1,12 @@
 package typings.joi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyOptions extends js.Object {
+trait ModifyOptions extends StObject {
   
   var each: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object ModifyOptions {
   }
   
   @scala.inline
-  implicit class ModifyOptionsOps[Self <: ModifyOptions] (val x: Self) extends AnyVal {
+  implicit class ModifyOptionsMutableBuilder[Self <: ModifyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEach(value: Boolean): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEach(value: Boolean): Self = this.set("each", value.asInstanceOf[js.Any])
+    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
     @scala.inline
-    def deleteEach: Self = this.set("each", js.undefined)
+    def setRef(value: Boolean): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnce(value: Boolean): Self = this.set("once", value.asInstanceOf[js.Any])
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def deleteOnce: Self = this.set("once", js.undefined)
+    def setSchema(value: Boolean): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: Boolean): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
-    
-    @scala.inline
-    def setSchema(value: Boolean): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

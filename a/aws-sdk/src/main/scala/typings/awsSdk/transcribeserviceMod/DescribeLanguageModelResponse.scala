@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLanguageModelResponse extends js.Object {
+trait DescribeLanguageModelResponse extends StObject {
   
   /**
     * The name of the custom language model you requested more information about.
@@ -21,24 +22,12 @@ object DescribeLanguageModelResponse {
   }
   
   @scala.inline
-  implicit class DescribeLanguageModelResponseOps[Self <: DescribeLanguageModelResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeLanguageModelResponseMutableBuilder[Self <: DescribeLanguageModelResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageModel(value: LanguageModel): Self = StObject.set(x, "LanguageModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLanguageModel(value: LanguageModel): Self = this.set("LanguageModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageModel: Self = this.set("LanguageModel", js.undefined)
+    def setLanguageModelUndefined: Self = StObject.set(x, "LanguageModel", js.undefined)
   }
 }

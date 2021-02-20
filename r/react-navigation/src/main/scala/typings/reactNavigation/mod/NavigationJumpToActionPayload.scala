@@ -1,11 +1,12 @@
 package typings.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationJumpToActionPayload extends js.Object {
+trait NavigationJumpToActionPayload extends StObject {
   
   var key: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object NavigationJumpToActionPayload {
   }
   
   @scala.inline
-  implicit class NavigationJumpToActionPayloadOps[Self <: NavigationJumpToActionPayload] (val x: Self) extends AnyVal {
+  implicit class NavigationJumpToActionPayloadMutableBuilder[Self <: NavigationJumpToActionPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteName(value: String): Self = this.set("routeName", value.asInstanceOf[js.Any])
+    def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setPreserveFocus(value: Boolean): Self = this.set("preserveFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveFocus: Self = this.set("preserveFocus", js.undefined)
+    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
   }
 }

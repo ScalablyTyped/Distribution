@@ -2,6 +2,7 @@ package typings.angularCore.mod
 
 import typings.angularCore.angularCoreStrings.noop
 import typings.angularCore.angularCoreStrings.zoneDotjs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait BootstrapOptions extends js.Object {
+trait BootstrapOptions extends StObject {
   
   /**
     * Optionally specify which `NgZone` should be used.
@@ -53,30 +54,18 @@ object BootstrapOptions {
   }
   
   @scala.inline
-  implicit class BootstrapOptionsOps[Self <: BootstrapOptions] (val x: Self) extends AnyVal {
+  implicit class BootstrapOptionsMutableBuilder[Self <: BootstrapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNgZone(value: NgZone | zoneDotjs | noop): Self = StObject.set(x, "ngZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNgZoneEventCoalescing(value: Boolean): Self = StObject.set(x, "ngZoneEventCoalescing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNgZoneEventCoalescingUndefined: Self = StObject.set(x, "ngZoneEventCoalescing", js.undefined)
     
     @scala.inline
-    def setNgZone(value: NgZone | zoneDotjs | noop): Self = this.set("ngZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNgZone: Self = this.set("ngZone", js.undefined)
-    
-    @scala.inline
-    def setNgZoneEventCoalescing(value: Boolean): Self = this.set("ngZoneEventCoalescing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNgZoneEventCoalescing: Self = this.set("ngZoneEventCoalescing", js.undefined)
+    def setNgZoneUndefined: Self = StObject.set(x, "ngZone", js.undefined)
   }
 }

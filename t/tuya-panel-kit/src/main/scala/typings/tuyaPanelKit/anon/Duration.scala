@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Duration extends js.Object {
+trait Duration extends StObject {
   
   var delay: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object Duration {
   }
   
   @scala.inline
-  implicit class DurationOps[Self <: Duration] (val x: Self) extends AnyVal {
+  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setEasing(value: () => Unit): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: () => Unit): Self = this.set("easing", js.Any.fromFunction0(value))
+    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFriction: Self = this.set("friction", js.undefined)
-    
-    @scala.inline
-    def setTension(value: Double): Self = this.set("tension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTension: Self = this.set("tension", js.undefined)
+    def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
   }
 }

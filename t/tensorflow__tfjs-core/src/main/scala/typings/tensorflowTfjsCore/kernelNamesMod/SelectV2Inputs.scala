@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'condition' | 't' | 'e'> */
 @js.native
-trait SelectV2Inputs extends js.Object {
+trait SelectV2Inputs extends StObject {
   
   var condition: js.UndefOr[js.Any] = js.native
   
@@ -23,36 +24,24 @@ object SelectV2Inputs {
   }
   
   @scala.inline
-  implicit class SelectV2InputsOps[Self <: SelectV2Inputs] (val x: Self) extends AnyVal {
+  implicit class SelectV2InputsMutableBuilder[Self <: SelectV2Inputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: js.Any): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: js.Any): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setT(value: js.Any): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: js.Any): Self = this.set("e", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteE: Self = this.set("e", js.undefined)
-    
-    @scala.inline
-    def setT(value: js.Any): Self = this.set("t", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteT: Self = this.set("t", js.undefined)
+    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
   }
 }

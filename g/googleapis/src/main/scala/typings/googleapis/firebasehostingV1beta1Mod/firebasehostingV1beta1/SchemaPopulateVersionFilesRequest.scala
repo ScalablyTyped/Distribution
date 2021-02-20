@@ -1,12 +1,13 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPopulateVersionFilesRequest extends js.Object {
+trait SchemaPopulateVersionFilesRequest extends StObject {
   
   /**
     * A set of file paths to the hashes corresponding to assets that should be
@@ -25,24 +26,12 @@ object SchemaPopulateVersionFilesRequest {
   }
   
   @scala.inline
-  implicit class SchemaPopulateVersionFilesRequestOps[Self <: SchemaPopulateVersionFilesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaPopulateVersionFilesRequestMutableBuilder[Self <: SchemaPopulateVersionFilesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiles(value: StringDictionary[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFiles(value: StringDictionary[String]): Self = this.set("files", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
   }
 }

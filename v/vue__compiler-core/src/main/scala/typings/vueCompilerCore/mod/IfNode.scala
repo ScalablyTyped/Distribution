@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object IfNode {
   }
   
   @scala.inline
-  implicit class IfNodeOps[Self <: IfNode] (val x: Self) extends AnyVal {
+  implicit class IfNodeMutableBuilder[Self <: IfNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranches(value: js.Array[IfBranchNode]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchesVarargs(value: IfBranchNode*): Self = StObject.set(x, "branches", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodegenNode(value: IfConditionalExpression | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchesVarargs(value: IfBranchNode*): Self = this.set("branches", js.Array(value :_*))
+    def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     
     @scala.inline
-    def setBranches(value: js.Array[IfBranchNode]): Self = this.set("branches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `9`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCodegenNode(value: IfConditionalExpression | CacheExpression): Self = this.set("codegenNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodegenNode: Self = this.set("codegenNode", js.undefined)
+    def setType(value: `9`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

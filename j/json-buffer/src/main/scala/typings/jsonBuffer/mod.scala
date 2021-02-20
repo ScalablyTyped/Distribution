@@ -1,14 +1,17 @@
 package typings.jsonBuffer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("json-buffer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("json-buffer", "parse")
+  @js.native
   def parse(s: String): js.Any = js.native
   
+  @JSImport("json-buffer", "stringify")
+  @js.native
   def stringify(o: js.Any): String = js.native
 }

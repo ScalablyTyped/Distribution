@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`cie-lab`
 import typings.arcgisJsApi.arcgisJsApiStrings.`lab-lch`
 import typings.arcgisJsApi.arcgisJsApiStrings.hsv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,36 +41,24 @@ object AlgorithmicColorRampProperties {
   }
   
   @scala.inline
-  implicit class AlgorithmicColorRampPropertiesOps[Self <: AlgorithmicColorRampProperties] (val x: Self) extends AnyVal {
+  implicit class AlgorithmicColorRampPropertiesMutableBuilder[Self <: AlgorithmicColorRampProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: `cie-lab` | `lab-lch` | hsv): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromColor(value: Color_): Self = StObject.set(x, "fromColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: `cie-lab` | `lab-lch` | hsv): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setFromColorUndefined: Self = StObject.set(x, "fromColor", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setToColor(value: Color_): Self = StObject.set(x, "toColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromColor(value: Color_): Self = this.set("fromColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromColor: Self = this.set("fromColor", js.undefined)
-    
-    @scala.inline
-    def setToColor(value: Color_): Self = this.set("toColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToColor: Self = this.set("toColor", js.undefined)
+    def setToColorUndefined: Self = StObject.set(x, "toColor", js.undefined)
   }
 }

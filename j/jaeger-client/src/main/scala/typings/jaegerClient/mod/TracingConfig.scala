@@ -1,11 +1,12 @@
 package typings.jaegerClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TracingConfig extends js.Object {
+trait TracingConfig extends StObject {
   
   var disable: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object TracingConfig {
   }
   
   @scala.inline
-  implicit class TracingConfigOps[Self <: TracingConfig] (val x: Self) extends AnyVal {
+  implicit class TracingConfigMutableBuilder[Self <: TracingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReporter(value: ReporterConfig): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: Boolean): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setSampler(value: SamplerConfig): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReporter(value: ReporterConfig): Self = this.set("reporter", value.asInstanceOf[js.Any])
+    def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
     
     @scala.inline
-    def deleteReporter: Self = this.set("reporter", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampler(value: SamplerConfig): Self = this.set("sampler", value.asInstanceOf[js.Any])
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     @scala.inline
-    def deleteSampler: Self = this.set("sampler", js.undefined)
+    def setShareRpcSpan(value: Boolean): Self = StObject.set(x, "shareRpcSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    def setShareRpcSpanUndefined: Self = StObject.set(x, "shareRpcSpan", js.undefined)
     
     @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setTraceId128bit(value: Boolean): Self = StObject.set(x, "traceId128bit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareRpcSpan(value: Boolean): Self = this.set("shareRpcSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareRpcSpan: Self = this.set("shareRpcSpan", js.undefined)
-    
-    @scala.inline
-    def setTraceId128bit(value: Boolean): Self = this.set("traceId128bit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceId128bit: Self = this.set("traceId128bit", js.undefined)
+    def setTraceId128bitUndefined: Self = StObject.set(x, "traceId128bit", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterNameValue extends js.Object {
+trait ParameterNameValue extends StObject {
   
   /**
     * The name of the parameter.
@@ -26,30 +27,18 @@ object ParameterNameValue {
   }
   
   @scala.inline
-  implicit class ParameterNameValueOps[Self <: ParameterNameValue] (val x: Self) extends AnyVal {
+  implicit class ParameterNameValueMutableBuilder[Self <: ParameterNameValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterName(value: String): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterNameUndefined: Self = StObject.set(x, "ParameterName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterValue(value: String): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterName(value: String): Self = this.set("ParameterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterName: Self = this.set("ParameterName", js.undefined)
-    
-    @scala.inline
-    def setParameterValue(value: String): Self = this.set("ParameterValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterValue: Self = this.set("ParameterValue", js.undefined)
+    def setParameterValueUndefined: Self = StObject.set(x, "ParameterValue", js.undefined)
   }
 }

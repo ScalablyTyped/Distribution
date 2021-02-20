@@ -1,11 +1,12 @@
 package typings.pdfjsDist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFPromise[T] extends js.Object {
+trait PDFPromise[T] extends StObject {
   
   def isRejected(): Boolean = js.native
   

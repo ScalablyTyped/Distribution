@@ -1,6 +1,7 @@
 package typings.sequelize.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Sequelize.sync
   */
 @js.native
-trait SyncOptions extends js.Object {
+trait SyncOptions extends StObject {
   
   /**
     * Alters tables to fit models. Not recommended for production use. Deletes data in columns
@@ -59,60 +60,48 @@ object SyncOptions {
   }
   
   @scala.inline
-  implicit class SyncOptionsOps[Self <: SyncOptions] (val x: Self) extends AnyVal {
+  implicit class SyncOptionsMutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlter(value: Boolean): Self = StObject.set(x, "alter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlterUndefined: Self = StObject.set(x, "alter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlter(value: Boolean): Self = this.set("alter", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteAlter: Self = this.set("alter", js.undefined)
+    def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setLogging(value: js.Function | Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHooks(value: Boolean): Self = this.set("hooks", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteHooks: Self = this.set("hooks", js.undefined)
+    def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: js.Function | Boolean): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: RegExp): Self = this.set("match", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
+    def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
-    
-    @scala.inline
-    def setSearchPath(value: String): Self = this.set("searchPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchPath: Self = this.set("searchPath", js.undefined)
+    def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
   }
 }

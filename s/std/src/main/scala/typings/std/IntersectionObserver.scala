@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport. */
 @js.native
-trait IntersectionObserver extends js.Object {
+trait IntersectionObserver extends StObject {
   
   def disconnect(): Unit = js.native
   
@@ -38,45 +39,33 @@ object IntersectionObserver {
   }
   
   @scala.inline
-  implicit class IntersectionObserverOps[Self <: IntersectionObserver] (val x: Self) extends AnyVal {
+  implicit class IntersectionObserverMutableBuilder[Self <: IntersectionObserver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObserve(value: Element => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoot(value: Element): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisconnect(value: () => Unit): Self = this.set("disconnect", js.Any.fromFunction0(value))
+    def setRootMargin(value: java.lang.String): Self = StObject.set(x, "rootMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserve(value: Element => Unit): Self = this.set("observe", js.Any.fromFunction1(value))
+    def setRootNull: Self = StObject.set(x, "root", null)
     
     @scala.inline
-    def setRootMargin(value: java.lang.String): Self = this.set("rootMargin", value.asInstanceOf[js.Any])
+    def setTakeRecords(value: () => js.Array[IntersectionObserverEntry]): Self = StObject.set(x, "takeRecords", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTakeRecords(value: () => js.Array[IntersectionObserverEntry]): Self = this.set("takeRecords", js.Any.fromFunction0(value))
+    def setThresholds(value: js.Array[Double]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThresholdsVarargs(value: Double*): Self = this.set("thresholds", js.Array(value :_*))
+    def setThresholdsVarargs(value: Double*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
     
     @scala.inline
-    def setThresholds(value: js.Array[Double]): Self = this.set("thresholds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnobserve(value: Element => Unit): Self = this.set("unobserve", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoot(value: Element): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRootNull: Self = this.set("root", null)
+    def setUnobserve(value: Element => Unit): Self = StObject.set(x, "unobserve", js.Any.fromFunction1(value))
   }
 }

@@ -3,12 +3,13 @@ package typings.stripeV3.stripe
 import typings.stripeV3.anon.Bank
 import typings.stripeV3.anon.Iban
 import typings.stripeV3.stripe.elements.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentMethodData extends js.Object {
+trait PaymentMethodData extends StObject {
   
   var billing_details: js.UndefOr[BillingDetails] = js.native
   
@@ -35,45 +36,33 @@ object PaymentMethodData {
   }
   
   @scala.inline
-  implicit class PaymentMethodDataOps[Self <: PaymentMethodData] (val x: Self) extends AnyVal {
+  implicit class PaymentMethodDataMutableBuilder[Self <: PaymentMethodData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilling_details(value: BillingDetails): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCard(value: Element): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
     @scala.inline
-    def setBilling_details(value: BillingDetails): Self = this.set("billing_details", value.asInstanceOf[js.Any])
+    def setIdeal(value: Element | Bank): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBilling_details: Self = this.set("billing_details", js.undefined)
+    def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
     
     @scala.inline
-    def setCard(value: Element): Self = this.set("card", value.asInstanceOf[js.Any])
+    def setSepa_debit(value: Element | Iban): Self = StObject.set(x, "sepa_debit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCard: Self = this.set("card", js.undefined)
+    def setSepa_debitUndefined: Self = StObject.set(x, "sepa_debit", js.undefined)
     
     @scala.inline
-    def setIdeal(value: Element | Bank): Self = this.set("ideal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdeal: Self = this.set("ideal", js.undefined)
-    
-    @scala.inline
-    def setSepa_debit(value: Element | Iban): Self = this.set("sepa_debit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSepa_debit: Self = this.set("sepa_debit", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

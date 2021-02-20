@@ -2,13 +2,14 @@ package typings.johnnyFive.mod
 
 import typings.johnnyFive.johnnyFiveStrings.change
 import typings.johnnyFive.johnnyFiveStrings.data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Accelerometer")
 @js.native
-class Accelerometer protected () extends js.Object {
+class Accelerometer protected () extends StObject {
   def this(option: AccelerometerAnalogOption) = this()
   def this(option: AccelerometerGeneralOption) = this()
   def this(option: AccelerometerMMA7361Option) = this()

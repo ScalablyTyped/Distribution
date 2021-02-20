@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RewardedVideoAd extends js.Object {
+trait RewardedVideoAd extends StObject {
   
   /** [RewardedVideoAd.destroy()](https://developers.weixin.qq.com/miniprogram/dev/api/ad/RewardedVideoAd.destroy.html)
     *

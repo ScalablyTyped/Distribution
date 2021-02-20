@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,24 +41,12 @@ object StructureKeeperLair {
   }
   
   @scala.inline
-  implicit class StructureKeeperLairOps[Self <: StructureKeeperLair] (val x: Self) extends AnyVal {
+  implicit class StructureKeeperLairMutableBuilder[Self <: StructureKeeperLair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTicksToSpawn(value: Double): Self = StObject.set(x, "ticksToSpawn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTicksToSpawn(value: Double): Self = this.set("ticksToSpawn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTicksToSpawn: Self = this.set("ticksToSpawn", js.undefined)
+    def setTicksToSpawnUndefined: Self = StObject.set(x, "ticksToSpawn", js.undefined)
   }
 }

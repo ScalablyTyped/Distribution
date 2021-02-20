@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUptimeCheckConfigsResponse extends js.Object {
+trait ListUptimeCheckConfigsResponse extends StObject {
   
   /**
     * This field represents the pagination token to retrieve the next page of results. If the value is empty, it means no further results for the request. To retrieve the next page of
@@ -28,39 +29,27 @@ object ListUptimeCheckConfigsResponse {
   }
   
   @scala.inline
-  implicit class ListUptimeCheckConfigsResponseOps[Self <: ListUptimeCheckConfigsResponse] (val x: Self) extends AnyVal {
+  implicit class ListUptimeCheckConfigsResponseMutableBuilder[Self <: ListUptimeCheckConfigsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setUptimeCheckConfigs(value: js.Array[UptimeCheckConfig]): Self = StObject.set(x, "uptimeCheckConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
+    def setUptimeCheckConfigsUndefined: Self = StObject.set(x, "uptimeCheckConfigs", js.undefined)
     
     @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
-    
-    @scala.inline
-    def setUptimeCheckConfigsVarargs(value: UptimeCheckConfig*): Self = this.set("uptimeCheckConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setUptimeCheckConfigs(value: js.Array[UptimeCheckConfig]): Self = this.set("uptimeCheckConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUptimeCheckConfigs: Self = this.set("uptimeCheckConfigs", js.undefined)
+    def setUptimeCheckConfigsVarargs(value: UptimeCheckConfig*): Self = StObject.set(x, "uptimeCheckConfigs", js.Array(value :_*))
   }
 }

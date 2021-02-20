@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Panorama extends js.Object {
+trait Panorama extends StObject {
   
   def addOverlay(overlay: PanoramaLabel): Unit = js.native
   

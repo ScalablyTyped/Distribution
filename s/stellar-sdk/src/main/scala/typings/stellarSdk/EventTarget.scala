@@ -1,12 +1,13 @@
 package typings.stellarSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** EventTarget is an interface implemented by objects that can receive events and may have listeners for them. */
 @js.native
-trait EventTarget extends js.Object {
+trait EventTarget extends StObject {
   
   /**
     * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.

@@ -1,11 +1,12 @@
 package typings.ipfsHttpServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofrefsLocal extends js.Object {
+trait TypeofrefsLocal extends StObject {
   
   def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
   
@@ -20,24 +21,12 @@ object TypeofrefsLocal {
   }
   
   @scala.inline
-  implicit class TypeofrefsLocalOps[Self <: TypeofrefsLocal] (val x: Self) extends AnyVal {
+  implicit class TypeofrefsLocalMutableBuilder[Self <: TypeofrefsLocal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandler(value: (js.Any, js.Any) => js.Promise[_]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[_]): Self = this.set("handler", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOptions_10(value: Typeofoptions10): Self = this.set("options_10", value.asInstanceOf[js.Any])
+    def setOptions_10(value: Typeofoptions10): Self = StObject.set(x, "options_10", value.asInstanceOf[js.Any])
   }
 }

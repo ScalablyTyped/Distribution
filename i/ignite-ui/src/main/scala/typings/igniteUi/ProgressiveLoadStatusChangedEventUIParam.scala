@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressiveLoadStatusChangedEventUIParam extends js.Object {
+trait ProgressiveLoadStatusChangedEventUIParam extends StObject {
   
   /**
     * Used to get reference to chart object.
@@ -31,36 +32,24 @@ object ProgressiveLoadStatusChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class ProgressiveLoadStatusChangedEventUIParamOps[Self <: ProgressiveLoadStatusChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ProgressiveLoadStatusChangedEventUIParamMutableBuilder[Self <: ProgressiveLoadStatusChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentStatus(value: js.Any): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: js.Any): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setCurrentStatusUndefined: Self = StObject.set(x, "currentStatus", js.undefined)
     
     @scala.inline
-    def deleteChart: Self = this.set("chart", js.undefined)
+    def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentStatus(value: js.Any): Self = this.set("currentStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrentStatus: Self = this.set("currentStatus", js.undefined)
-    
-    @scala.inline
-    def setSeries(value: js.Any): Self = this.set("series", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
   }
 }

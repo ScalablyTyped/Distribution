@@ -2,12 +2,13 @@ package typings.kafkaNode.mod
 
 import typings.kafkaNode.anon.Name
 import typings.kafkaNode.anon.Partition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTopicRequest extends js.Object {
+trait CreateTopicRequest extends StObject {
   
   var configEntries: js.UndefOr[js.Array[Name]] = js.native
   
@@ -28,45 +29,33 @@ object CreateTopicRequest {
   }
   
   @scala.inline
-  implicit class CreateTopicRequestOps[Self <: CreateTopicRequest] (val x: Self) extends AnyVal {
+  implicit class CreateTopicRequestMutableBuilder[Self <: CreateTopicRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigEntries(value: js.Array[Name]): Self = StObject.set(x, "configEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigEntriesUndefined: Self = StObject.set(x, "configEntries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigEntriesVarargs(value: Name*): Self = StObject.set(x, "configEntries", js.Array(value :_*))
     
     @scala.inline
-    def setPartitions(value: Double): Self = this.set("partitions", value.asInstanceOf[js.Any])
+    def setPartitions(value: Double): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationFactor(value: Double): Self = this.set("replicationFactor", value.asInstanceOf[js.Any])
+    def setReplicaAssignment(value: js.Array[Partition]): Self = StObject.set(x, "replicaAssignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def setReplicaAssignmentUndefined: Self = StObject.set(x, "replicaAssignment", js.undefined)
     
     @scala.inline
-    def setConfigEntriesVarargs(value: Name*): Self = this.set("configEntries", js.Array(value :_*))
+    def setReplicaAssignmentVarargs(value: Partition*): Self = StObject.set(x, "replicaAssignment", js.Array(value :_*))
     
     @scala.inline
-    def setConfigEntries(value: js.Array[Name]): Self = this.set("configEntries", value.asInstanceOf[js.Any])
+    def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigEntries: Self = this.set("configEntries", js.undefined)
-    
-    @scala.inline
-    def setReplicaAssignmentVarargs(value: Partition*): Self = this.set("replicaAssignment", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicaAssignment(value: js.Array[Partition]): Self = this.set("replicaAssignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaAssignment: Self = this.set("replicaAssignment", js.undefined)
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

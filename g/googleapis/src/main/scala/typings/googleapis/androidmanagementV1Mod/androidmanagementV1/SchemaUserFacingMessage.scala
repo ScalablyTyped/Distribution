@@ -1,6 +1,7 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is 4096 characters.
   */
 @js.native
-trait SchemaUserFacingMessage extends js.Object {
+trait SchemaUserFacingMessage extends StObject {
   
   /**
     * The default message displayed if no localized message is specified or the
@@ -36,30 +37,18 @@ object SchemaUserFacingMessage {
   }
   
   @scala.inline
-  implicit class SchemaUserFacingMessageOps[Self <: SchemaUserFacingMessage] (val x: Self) extends AnyVal {
+  implicit class SchemaUserFacingMessageMutableBuilder[Self <: SchemaUserFacingMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalizedMessages(value: StringDictionary[String]): Self = StObject.set(x, "localizedMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMessage(value: String): Self = this.set("defaultMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultMessage: Self = this.set("defaultMessage", js.undefined)
-    
-    @scala.inline
-    def setLocalizedMessages(value: StringDictionary[String]): Self = this.set("localizedMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalizedMessages: Self = this.set("localizedMessages", js.undefined)
+    def setLocalizedMessagesUndefined: Self = StObject.set(x, "localizedMessages", js.undefined)
   }
 }

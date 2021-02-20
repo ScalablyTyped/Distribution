@@ -1,5 +1,6 @@
 package typings.reactBigCalendar.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBigCalendar.reactBigCalendarStrings.DAY
   - typings.reactBigCalendar.reactBigCalendarStrings.AGENDA
 */
-trait ViewKey extends js.Object
+trait ViewKey extends StObject
 object ViewKey {
   
   @scala.inline

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "diff2html"
-version := "3.1.15-005fdb"
+version := "3.1.15-f91e44"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "highlight_dot_js" % "10.4.0-5b2ebc",
-  "org.scalablytyped" %%% "hogan_dot_js" % "3.0-dt-20190925Z-bfb827",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "highlight_dot_js" % "10.4.0-2c53bf",
+  "org.scalablytyped" %%% "hogan_dot_js" % "3.0-dt-20190925Z-7bf455",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

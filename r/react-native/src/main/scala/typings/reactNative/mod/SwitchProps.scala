@@ -1,6 +1,7 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.False
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,54 +53,42 @@ object SwitchProps {
   }
   
   @scala.inline
-  implicit class SwitchPropsOps[Self <: SwitchProps] (val x: Self) extends AnyVal {
+  implicit class SwitchPropsMutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIos_backgroundColor(value: ColorValue): Self = StObject.set(x, "ios_backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setIos_backgroundColorUndefined: Self = StObject.set(x, "ios_backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setOnValueChange(value: /* value */ Boolean => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIos_backgroundColor(value: ColorValue): Self = this.set("ios_backgroundColor", value.asInstanceOf[js.Any])
+    def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
     @scala.inline
-    def deleteIos_backgroundColor: Self = this.set("ios_backgroundColor", js.undefined)
+    def setThumbColor(value: ColorValue): Self = StObject.set(x, "thumbColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChange(value: /* value */ Boolean => Unit): Self = this.set("onValueChange", js.Any.fromFunction1(value))
+    def setThumbColorUndefined: Self = StObject.set(x, "thumbColor", js.undefined)
     
     @scala.inline
-    def deleteOnValueChange: Self = this.set("onValueChange", js.undefined)
+    def setTrackColor(value: False): Self = StObject.set(x, "trackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbColor(value: ColorValue): Self = this.set("thumbColor", value.asInstanceOf[js.Any])
+    def setTrackColorUndefined: Self = StObject.set(x, "trackColor", js.undefined)
     
     @scala.inline
-    def deleteThumbColor: Self = this.set("thumbColor", js.undefined)
+    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackColor(value: False): Self = this.set("trackColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackColor: Self = this.set("trackColor", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Boolean): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.web3CoreHelpers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestItem extends js.Object {
+trait RequestItem extends StObject {
   
   def callback(error: js.Any, result: js.Any): Unit = js.native
   
@@ -20,24 +21,12 @@ object RequestItem {
   }
   
   @scala.inline
-  implicit class RequestItemOps[Self <: RequestItem] (val x: Self) extends AnyVal {
+  implicit class RequestItemMutableBuilder[Self <: RequestItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCallback(value: (js.Any, js.Any) => Unit): Self = this.set("callback", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPayload(value: JsonRpcPayload): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setPayload(value: JsonRpcPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }
 }

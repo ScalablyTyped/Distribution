@@ -2,14 +2,14 @@ package typings.soap
 
 import typings.node.Buffer
 import typings.soap.typesMod.ISecurity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("soap/lib/security/ClientSSLSecurityPFX", JSImport.Namespace)
-@js.native
-object clientSSLSecurityPFXMod extends js.Object {
+object clientSSLSecurityPFXMod {
   
+  @JSImport("soap/lib/security/ClientSSLSecurityPFX", "ClientSSLSecurityPFX")
   @js.native
   class ClientSSLSecurityPFX protected () extends ISecurity {
     def this(pfx: String) = this()

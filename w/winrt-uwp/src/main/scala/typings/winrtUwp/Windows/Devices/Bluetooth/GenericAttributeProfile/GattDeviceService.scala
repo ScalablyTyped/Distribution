@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
 import typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a GATT Primary Service on a Bluetooth device. */
 @js.native
-trait GattDeviceService extends js.Object {
+trait GattDeviceService extends StObject {
   
   /** Gets the handle used to uniquely identify GATT-based service attributes as declared on the Bluetooth LE device. */
   var attributeHandle: Double = js.native
@@ -74,48 +75,36 @@ object GattDeviceService {
   }
   
   @scala.inline
-  implicit class GattDeviceServiceOps[Self <: GattDeviceService] (val x: Self) extends AnyVal {
+  implicit class GattDeviceServiceMutableBuilder[Self <: GattDeviceService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeHandle(value: Double): Self = StObject.set(x, "attributeHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: BluetoothLEDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeHandle(value: Double): Self = this.set("attributeHandle", value.asInstanceOf[js.Any])
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setGetAllCharacteristics(value: () => IVectorView[GattCharacteristic]): Self = StObject.set(x, "getAllCharacteristics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDevice(value: BluetoothLEDevice): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setGetAllIncludedServices(value: () => IVectorView[GattDeviceService]): Self = StObject.set(x, "getAllIncludedServices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setGetCharacteristics(value: String => IVectorView[GattCharacteristic]): Self = StObject.set(x, "getCharacteristics", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllCharacteristics(value: () => IVectorView[GattCharacteristic]): Self = this.set("getAllCharacteristics", js.Any.fromFunction0(value))
+    def setGetIncludedServices(value: String => IVectorView[GattDeviceService]): Self = StObject.set(x, "getIncludedServices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllIncludedServices(value: () => IVectorView[GattDeviceService]): Self = this.set("getAllIncludedServices", js.Any.fromFunction0(value))
+    def setParentServices(value: IVectorView[GattDeviceService]): Self = StObject.set(x, "parentServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCharacteristics(value: String => IVectorView[GattCharacteristic]): Self = this.set("getCharacteristics", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetIncludedServices(value: String => IVectorView[GattDeviceService]): Self = this.set("getIncludedServices", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParentServices(value: IVectorView[GattDeviceService]): Self = this.set("parentServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

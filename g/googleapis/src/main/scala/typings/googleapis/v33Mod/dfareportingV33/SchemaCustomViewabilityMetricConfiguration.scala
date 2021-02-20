@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Viewability Metric.
   */
 @js.native
-trait SchemaCustomViewabilityMetricConfiguration extends js.Object {
+trait SchemaCustomViewabilityMetricConfiguration extends StObject {
   
   /**
     * Whether the video must be audible to count an impression.
@@ -45,42 +46,30 @@ object SchemaCustomViewabilityMetricConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaCustomViewabilityMetricConfigurationOps[Self <: SchemaCustomViewabilityMetricConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaCustomViewabilityMetricConfigurationMutableBuilder[Self <: SchemaCustomViewabilityMetricConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeMillis(value: Double): Self = StObject.set(x, "timeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudible(value: Boolean): Self = this.set("audible", value.asInstanceOf[js.Any])
+    def setTimeMillisUndefined: Self = StObject.set(x, "timeMillis", js.undefined)
     
     @scala.inline
-    def deleteAudible: Self = this.set("audible", js.undefined)
+    def setTimePercent(value: Double): Self = StObject.set(x, "timePercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeMillis(value: Double): Self = this.set("timeMillis", value.asInstanceOf[js.Any])
+    def setTimePercentUndefined: Self = StObject.set(x, "timePercent", js.undefined)
     
     @scala.inline
-    def deleteTimeMillis: Self = this.set("timeMillis", js.undefined)
+    def setViewabilityPercent(value: Double): Self = StObject.set(x, "viewabilityPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePercent(value: Double): Self = this.set("timePercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimePercent: Self = this.set("timePercent", js.undefined)
-    
-    @scala.inline
-    def setViewabilityPercent(value: Double): Self = this.set("viewabilityPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewabilityPercent: Self = this.set("viewabilityPercent", js.undefined)
+    def setViewabilityPercentUndefined: Self = StObject.set(x, "viewabilityPercent", js.undefined)
   }
 }

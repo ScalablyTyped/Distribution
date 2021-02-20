@@ -1,11 +1,12 @@
 package typings.jsClipper.ClipperLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JoinRec extends js.Object {
+trait JoinRec extends StObject {
   
   var poly1Idx: Double = js.native
   
@@ -28,36 +29,24 @@ object JoinRec {
   }
   
   @scala.inline
-  implicit class JoinRecOps[Self <: JoinRec] (val x: Self) extends AnyVal {
+  implicit class JoinRecMutableBuilder[Self <: JoinRec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPoly1Idx(value: Double): Self = StObject.set(x, "poly1Idx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoly2Idx(value: Double): Self = StObject.set(x, "poly2Idx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPt1a(value: IntPoint): Self = StObject.set(x, "pt1a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoly1Idx(value: Double): Self = this.set("poly1Idx", value.asInstanceOf[js.Any])
+    def setPt1b(value: IntPoint): Self = StObject.set(x, "pt1b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoly2Idx(value: Double): Self = this.set("poly2Idx", value.asInstanceOf[js.Any])
+    def setPt2a(value: IntPoint): Self = StObject.set(x, "pt2a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPt1a(value: IntPoint): Self = this.set("pt1a", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPt1b(value: IntPoint): Self = this.set("pt1b", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPt2a(value: IntPoint): Self = this.set("pt2a", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPt2b(value: IntPoint): Self = this.set("pt2b", value.asInstanceOf[js.Any])
+    def setPt2b(value: IntPoint): Self = StObject.set(x, "pt2b", value.asInstanceOf[js.Any])
   }
 }

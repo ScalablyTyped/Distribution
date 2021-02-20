@@ -5,16 +5,16 @@ import typings.googleAuthLibrary.credentialsMod.JWTInput
 import typings.googleAuthLibrary.oauth2clientMod.Headers
 import typings.node.streamMod.Readable
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-auth-library/build/src/auth/jwtaccess", JSImport.Namespace)
-@js.native
-object jwtaccessMod extends js.Object {
+object jwtaccessMod {
   
+  @JSImport("google-auth-library/build/src/auth/jwtaccess", "JWTAccess")
   @js.native
-  class JWTAccess protected () extends js.Object {
+  class JWTAccess protected () extends StObject {
     /**
       * JWTAccess service account credentials.
       *
@@ -72,8 +72,11 @@ object jwtaccessMod extends js.Object {
     var projectId: js.UndefOr[String] = js.native
   }
   /* static members */
-  @js.native
-  object JWTAccess extends js.Object {
+  object JWTAccess {
+    
+    @JSImport("google-auth-library/build/src/auth/jwtaccess", "JWTAccess")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns an expiration time for the JWT token.
@@ -81,7 +84,11 @@ object jwtaccessMod extends js.Object {
       * @param iat The issued at time for the JWT.
       * @returns An expiration time for the JWT.
       */
-    var getExpirationTime: js.Any = js.native
+    @JSImport("google-auth-library/build/src/auth/jwtaccess", "JWTAccess.getExpirationTime")
+    @js.native
+    def getExpirationTime: js.Any = js.native
+    @scala.inline
+    def getExpirationTime_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
   }
   
   type Claims = StringDictionary[String]

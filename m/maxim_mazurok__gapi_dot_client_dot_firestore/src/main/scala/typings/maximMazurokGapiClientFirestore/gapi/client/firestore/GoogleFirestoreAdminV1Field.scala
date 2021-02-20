@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleFirestoreAdminV1Field extends js.Object {
+trait GoogleFirestoreAdminV1Field extends StObject {
   
   /**
     * The index configuration for this field. If unset, field indexing will revert to the configuration defined by the `ancestor_field`. To explicitly remove all indexes for this field,
@@ -34,30 +35,18 @@ object GoogleFirestoreAdminV1Field {
   }
   
   @scala.inline
-  implicit class GoogleFirestoreAdminV1FieldOps[Self <: GoogleFirestoreAdminV1Field] (val x: Self) extends AnyVal {
+  implicit class GoogleFirestoreAdminV1FieldMutableBuilder[Self <: GoogleFirestoreAdminV1Field] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexConfig(value: GoogleFirestoreAdminV1IndexConfig): Self = StObject.set(x, "indexConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexConfigUndefined: Self = StObject.set(x, "indexConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexConfig(value: GoogleFirestoreAdminV1IndexConfig): Self = this.set("indexConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexConfig: Self = this.set("indexConfig", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

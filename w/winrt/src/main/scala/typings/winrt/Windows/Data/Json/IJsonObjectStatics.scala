@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Data.Json
 
 import typings.winrt.anon.Succeeded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IJsonObjectStatics extends js.Object {
+trait IJsonObjectStatics extends StObject {
   
   def parse(input: String): JsonObject = js.native
   
@@ -21,24 +22,12 @@ object IJsonObjectStatics {
   }
   
   @scala.inline
-  implicit class IJsonObjectStaticsOps[Self <: IJsonObjectStatics] (val x: Self) extends AnyVal {
+  implicit class IJsonObjectStaticsMutableBuilder[Self <: IJsonObjectStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParse(value: String => JsonObject): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParse(value: String => JsonObject): Self = this.set("parse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTryParse(value: String => Succeeded): Self = this.set("tryParse", js.Any.fromFunction1(value))
+    def setTryParse(value: String => Succeeded): Self = StObject.set(x, "tryParse", js.Any.fromFunction1(value))
   }
 }

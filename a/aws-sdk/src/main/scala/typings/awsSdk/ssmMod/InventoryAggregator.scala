@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryAggregator extends js.Object {
+trait InventoryAggregator extends StObject {
   
   /**
     * Nested aggregators to further refine aggregation for an inventory type.
@@ -31,42 +32,30 @@ object InventoryAggregator {
   }
   
   @scala.inline
-  implicit class InventoryAggregatorOps[Self <: InventoryAggregator] (val x: Self) extends AnyVal {
+  implicit class InventoryAggregatorMutableBuilder[Self <: InventoryAggregator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregators(value: InventoryAggregatorList): Self = StObject.set(x, "Aggregators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregatorsVarargs(value: InventoryAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
     
     @scala.inline
-    def setAggregatorsVarargs(value: InventoryAggregator*): Self = this.set("Aggregators", js.Array(value :_*))
+    def setExpression(value: InventoryAggregatorExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregators(value: InventoryAggregatorList): Self = this.set("Aggregators", value.asInstanceOf[js.Any])
+    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
     
     @scala.inline
-    def deleteAggregators: Self = this.set("Aggregators", js.undefined)
+    def setGroups(value: InventoryGroupList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: InventoryAggregatorExpression): Self = this.set("Expression", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
     @scala.inline
-    def deleteExpression: Self = this.set("Expression", js.undefined)
-    
-    @scala.inline
-    def setGroupsVarargs(value: InventoryGroup*): Self = this.set("Groups", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroups(value: InventoryGroupList): Self = this.set("Groups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroups: Self = this.set("Groups", js.undefined)
+    def setGroupsVarargs(value: InventoryGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
   }
 }

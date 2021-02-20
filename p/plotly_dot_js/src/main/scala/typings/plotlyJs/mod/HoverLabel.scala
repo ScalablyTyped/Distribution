@@ -4,6 +4,7 @@ import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,24 +41,12 @@ object HoverLabel {
   }
   
   @scala.inline
-  implicit class HoverLabelOps[Self <: HoverLabel] (val x: Self) extends AnyVal {
+  implicit class HoverLabelMutableBuilder[Self <: HoverLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | right | auto): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlign(value: left | right | auto): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamelength(value: Double): Self = this.set("namelength", value.asInstanceOf[js.Any])
+    def setNamelength(value: Double): Self = StObject.set(x, "namelength", value.asInstanceOf[js.Any])
   }
 }

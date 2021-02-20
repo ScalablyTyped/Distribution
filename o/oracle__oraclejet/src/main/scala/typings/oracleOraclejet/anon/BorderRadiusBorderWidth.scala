@@ -23,12 +23,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.square
 import typings.oracleOraclejet.oracleOraclejetStrings.star
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderRadiusBorderWidth extends js.Object {
+trait BorderRadiusBorderWidth extends StObject {
   
   var borderColor: js.UndefOr[String] = js.native
   
@@ -67,91 +68,79 @@ object BorderRadiusBorderWidth {
   }
   
   @scala.inline
-  implicit class BorderRadiusBorderWidthOps[Self <: BorderRadiusBorderWidth] (val x: Self) extends AnyVal {
+  implicit class BorderRadiusBorderWidthMutableBuilder[Self <: BorderRadiusBorderWidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRadius(value: String): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    def setHeightNull: Self = StObject.set(x, "height", null)
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
-    
-    @scala.inline
-    def setHeightNull: Self = this.set("height", null)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPattern(
       value: largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none | mallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle
-    ): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
     def setShape(
       value: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
-    ): Self = this.set("shape", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
+    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidthNull: Self = this.set("width", null)
+    def setWidthNull: Self = StObject.set(x, "width", null)
+    
+    @scala.inline
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

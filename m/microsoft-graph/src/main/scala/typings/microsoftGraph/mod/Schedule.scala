@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,219 +68,207 @@ object Schedule {
   }
   
   @scala.inline
-  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledNull: Self = StObject.set(x, "enabled", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setEnabled(value: NullableOption[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setOfferShiftRequests(value: NullableOption[js.Array[OfferShiftRequest]]): Self = StObject.set(x, "offerShiftRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setOfferShiftRequestsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "offerShiftRequestsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledNull: Self = this.set("enabled", null)
+    def setOfferShiftRequestsEnabledNull: Self = StObject.set(x, "offerShiftRequestsEnabled", null)
     
     @scala.inline
-    def setOfferShiftRequestsVarargs(value: OfferShiftRequest*): Self = this.set("offerShiftRequests", js.Array(value :_*))
+    def setOfferShiftRequestsEnabledUndefined: Self = StObject.set(x, "offerShiftRequestsEnabled", js.undefined)
     
     @scala.inline
-    def setOfferShiftRequests(value: NullableOption[js.Array[OfferShiftRequest]]): Self = this.set("offerShiftRequests", value.asInstanceOf[js.Any])
+    def setOfferShiftRequestsNull: Self = StObject.set(x, "offerShiftRequests", null)
     
     @scala.inline
-    def deleteOfferShiftRequests: Self = this.set("offerShiftRequests", js.undefined)
+    def setOfferShiftRequestsUndefined: Self = StObject.set(x, "offerShiftRequests", js.undefined)
     
     @scala.inline
-    def setOfferShiftRequestsNull: Self = this.set("offerShiftRequests", null)
+    def setOfferShiftRequestsVarargs(value: OfferShiftRequest*): Self = StObject.set(x, "offerShiftRequests", js.Array(value :_*))
     
     @scala.inline
-    def setOfferShiftRequestsEnabled(value: NullableOption[Boolean]): Self = this.set("offerShiftRequestsEnabled", value.asInstanceOf[js.Any])
+    def setOpenShiftChangeRequests(value: NullableOption[js.Array[OpenShiftChangeRequest]]): Self = StObject.set(x, "openShiftChangeRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOfferShiftRequestsEnabled: Self = this.set("offerShiftRequestsEnabled", js.undefined)
+    def setOpenShiftChangeRequestsNull: Self = StObject.set(x, "openShiftChangeRequests", null)
     
     @scala.inline
-    def setOfferShiftRequestsEnabledNull: Self = this.set("offerShiftRequestsEnabled", null)
+    def setOpenShiftChangeRequestsUndefined: Self = StObject.set(x, "openShiftChangeRequests", js.undefined)
     
     @scala.inline
-    def setOpenShiftChangeRequestsVarargs(value: OpenShiftChangeRequest*): Self = this.set("openShiftChangeRequests", js.Array(value :_*))
+    def setOpenShiftChangeRequestsVarargs(value: OpenShiftChangeRequest*): Self = StObject.set(x, "openShiftChangeRequests", js.Array(value :_*))
     
     @scala.inline
-    def setOpenShiftChangeRequests(value: NullableOption[js.Array[OpenShiftChangeRequest]]): Self = this.set("openShiftChangeRequests", value.asInstanceOf[js.Any])
+    def setOpenShifts(value: NullableOption[js.Array[OpenShift]]): Self = StObject.set(x, "openShifts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpenShiftChangeRequests: Self = this.set("openShiftChangeRequests", js.undefined)
+    def setOpenShiftsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "openShiftsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenShiftChangeRequestsNull: Self = this.set("openShiftChangeRequests", null)
+    def setOpenShiftsEnabledNull: Self = StObject.set(x, "openShiftsEnabled", null)
     
     @scala.inline
-    def setOpenShiftsVarargs(value: OpenShift*): Self = this.set("openShifts", js.Array(value :_*))
+    def setOpenShiftsEnabledUndefined: Self = StObject.set(x, "openShiftsEnabled", js.undefined)
     
     @scala.inline
-    def setOpenShifts(value: NullableOption[js.Array[OpenShift]]): Self = this.set("openShifts", value.asInstanceOf[js.Any])
+    def setOpenShiftsNull: Self = StObject.set(x, "openShifts", null)
     
     @scala.inline
-    def deleteOpenShifts: Self = this.set("openShifts", js.undefined)
+    def setOpenShiftsUndefined: Self = StObject.set(x, "openShifts", js.undefined)
     
     @scala.inline
-    def setOpenShiftsNull: Self = this.set("openShifts", null)
+    def setOpenShiftsVarargs(value: OpenShift*): Self = StObject.set(x, "openShifts", js.Array(value :_*))
     
     @scala.inline
-    def setOpenShiftsEnabled(value: NullableOption[Boolean]): Self = this.set("openShiftsEnabled", value.asInstanceOf[js.Any])
+    def setProvisionStatus(value: NullableOption[OperationStatus]): Self = StObject.set(x, "provisionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpenShiftsEnabled: Self = this.set("openShiftsEnabled", js.undefined)
+    def setProvisionStatusCode(value: NullableOption[String]): Self = StObject.set(x, "provisionStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenShiftsEnabledNull: Self = this.set("openShiftsEnabled", null)
+    def setProvisionStatusCodeNull: Self = StObject.set(x, "provisionStatusCode", null)
     
     @scala.inline
-    def setProvisionStatus(value: NullableOption[OperationStatus]): Self = this.set("provisionStatus", value.asInstanceOf[js.Any])
+    def setProvisionStatusCodeUndefined: Self = StObject.set(x, "provisionStatusCode", js.undefined)
     
     @scala.inline
-    def deleteProvisionStatus: Self = this.set("provisionStatus", js.undefined)
+    def setProvisionStatusNull: Self = StObject.set(x, "provisionStatus", null)
     
     @scala.inline
-    def setProvisionStatusNull: Self = this.set("provisionStatus", null)
+    def setProvisionStatusUndefined: Self = StObject.set(x, "provisionStatus", js.undefined)
     
     @scala.inline
-    def setProvisionStatusCode(value: NullableOption[String]): Self = this.set("provisionStatusCode", value.asInstanceOf[js.Any])
+    def setSchedulingGroups(value: NullableOption[js.Array[SchedulingGroup]]): Self = StObject.set(x, "schedulingGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProvisionStatusCode: Self = this.set("provisionStatusCode", js.undefined)
+    def setSchedulingGroupsNull: Self = StObject.set(x, "schedulingGroups", null)
     
     @scala.inline
-    def setProvisionStatusCodeNull: Self = this.set("provisionStatusCode", null)
+    def setSchedulingGroupsUndefined: Self = StObject.set(x, "schedulingGroups", js.undefined)
     
     @scala.inline
-    def setSchedulingGroupsVarargs(value: SchedulingGroup*): Self = this.set("schedulingGroups", js.Array(value :_*))
+    def setSchedulingGroupsVarargs(value: SchedulingGroup*): Self = StObject.set(x, "schedulingGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSchedulingGroups(value: NullableOption[js.Array[SchedulingGroup]]): Self = this.set("schedulingGroups", value.asInstanceOf[js.Any])
+    def setShifts(value: NullableOption[js.Array[Shift]]): Self = StObject.set(x, "shifts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchedulingGroups: Self = this.set("schedulingGroups", js.undefined)
+    def setShiftsNull: Self = StObject.set(x, "shifts", null)
     
     @scala.inline
-    def setSchedulingGroupsNull: Self = this.set("schedulingGroups", null)
+    def setShiftsUndefined: Self = StObject.set(x, "shifts", js.undefined)
     
     @scala.inline
-    def setShiftsVarargs(value: Shift*): Self = this.set("shifts", js.Array(value :_*))
+    def setShiftsVarargs(value: Shift*): Self = StObject.set(x, "shifts", js.Array(value :_*))
     
     @scala.inline
-    def setShifts(value: NullableOption[js.Array[Shift]]): Self = this.set("shifts", value.asInstanceOf[js.Any])
+    def setSwapShiftsChangeRequests(value: NullableOption[js.Array[SwapShiftsChangeRequest]]): Self = StObject.set(x, "swapShiftsChangeRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShifts: Self = this.set("shifts", js.undefined)
+    def setSwapShiftsChangeRequestsNull: Self = StObject.set(x, "swapShiftsChangeRequests", null)
     
     @scala.inline
-    def setShiftsNull: Self = this.set("shifts", null)
+    def setSwapShiftsChangeRequestsUndefined: Self = StObject.set(x, "swapShiftsChangeRequests", js.undefined)
     
     @scala.inline
-    def setSwapShiftsChangeRequestsVarargs(value: SwapShiftsChangeRequest*): Self = this.set("swapShiftsChangeRequests", js.Array(value :_*))
+    def setSwapShiftsChangeRequestsVarargs(value: SwapShiftsChangeRequest*): Self = StObject.set(x, "swapShiftsChangeRequests", js.Array(value :_*))
     
     @scala.inline
-    def setSwapShiftsChangeRequests(value: NullableOption[js.Array[SwapShiftsChangeRequest]]): Self = this.set("swapShiftsChangeRequests", value.asInstanceOf[js.Any])
+    def setSwapShiftsRequestsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "swapShiftsRequestsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSwapShiftsChangeRequests: Self = this.set("swapShiftsChangeRequests", js.undefined)
+    def setSwapShiftsRequestsEnabledNull: Self = StObject.set(x, "swapShiftsRequestsEnabled", null)
     
     @scala.inline
-    def setSwapShiftsChangeRequestsNull: Self = this.set("swapShiftsChangeRequests", null)
+    def setSwapShiftsRequestsEnabledUndefined: Self = StObject.set(x, "swapShiftsRequestsEnabled", js.undefined)
     
     @scala.inline
-    def setSwapShiftsRequestsEnabled(value: NullableOption[Boolean]): Self = this.set("swapShiftsRequestsEnabled", value.asInstanceOf[js.Any])
+    def setTimeClockEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "timeClockEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSwapShiftsRequestsEnabled: Self = this.set("swapShiftsRequestsEnabled", js.undefined)
+    def setTimeClockEnabledNull: Self = StObject.set(x, "timeClockEnabled", null)
     
     @scala.inline
-    def setSwapShiftsRequestsEnabledNull: Self = this.set("swapShiftsRequestsEnabled", null)
+    def setTimeClockEnabledUndefined: Self = StObject.set(x, "timeClockEnabled", js.undefined)
     
     @scala.inline
-    def setTimeClockEnabled(value: NullableOption[Boolean]): Self = this.set("timeClockEnabled", value.asInstanceOf[js.Any])
+    def setTimeOffReasons(value: NullableOption[js.Array[TimeOffReason]]): Self = StObject.set(x, "timeOffReasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeClockEnabled: Self = this.set("timeClockEnabled", js.undefined)
+    def setTimeOffReasonsNull: Self = StObject.set(x, "timeOffReasons", null)
     
     @scala.inline
-    def setTimeClockEnabledNull: Self = this.set("timeClockEnabled", null)
+    def setTimeOffReasonsUndefined: Self = StObject.set(x, "timeOffReasons", js.undefined)
     
     @scala.inline
-    def setTimeOffReasonsVarargs(value: TimeOffReason*): Self = this.set("timeOffReasons", js.Array(value :_*))
+    def setTimeOffReasonsVarargs(value: TimeOffReason*): Self = StObject.set(x, "timeOffReasons", js.Array(value :_*))
     
     @scala.inline
-    def setTimeOffReasons(value: NullableOption[js.Array[TimeOffReason]]): Self = this.set("timeOffReasons", value.asInstanceOf[js.Any])
+    def setTimeOffRequests(value: NullableOption[js.Array[TimeOffRequest]]): Self = StObject.set(x, "timeOffRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeOffReasons: Self = this.set("timeOffReasons", js.undefined)
+    def setTimeOffRequestsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "timeOffRequestsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeOffReasonsNull: Self = this.set("timeOffReasons", null)
+    def setTimeOffRequestsEnabledNull: Self = StObject.set(x, "timeOffRequestsEnabled", null)
     
     @scala.inline
-    def setTimeOffRequestsVarargs(value: TimeOffRequest*): Self = this.set("timeOffRequests", js.Array(value :_*))
+    def setTimeOffRequestsEnabledUndefined: Self = StObject.set(x, "timeOffRequestsEnabled", js.undefined)
     
     @scala.inline
-    def setTimeOffRequests(value: NullableOption[js.Array[TimeOffRequest]]): Self = this.set("timeOffRequests", value.asInstanceOf[js.Any])
+    def setTimeOffRequestsNull: Self = StObject.set(x, "timeOffRequests", null)
     
     @scala.inline
-    def deleteTimeOffRequests: Self = this.set("timeOffRequests", js.undefined)
+    def setTimeOffRequestsUndefined: Self = StObject.set(x, "timeOffRequests", js.undefined)
     
     @scala.inline
-    def setTimeOffRequestsNull: Self = this.set("timeOffRequests", null)
+    def setTimeOffRequestsVarargs(value: TimeOffRequest*): Self = StObject.set(x, "timeOffRequests", js.Array(value :_*))
     
     @scala.inline
-    def setTimeOffRequestsEnabled(value: NullableOption[Boolean]): Self = this.set("timeOffRequestsEnabled", value.asInstanceOf[js.Any])
+    def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeOffRequestsEnabled: Self = this.set("timeOffRequestsEnabled", js.undefined)
+    def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
     
     @scala.inline
-    def setTimeOffRequestsEnabledNull: Self = this.set("timeOffRequestsEnabled", null)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
     @scala.inline
-    def setTimeZone(value: NullableOption[String]): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    def setTimesOff(value: NullableOption[js.Array[TimeOff]]): Self = StObject.set(x, "timesOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimesOffNull: Self = StObject.set(x, "timesOff", null)
     
     @scala.inline
-    def setTimeZoneNull: Self = this.set("timeZone", null)
+    def setTimesOffUndefined: Self = StObject.set(x, "timesOff", js.undefined)
     
     @scala.inline
-    def setTimesOffVarargs(value: TimeOff*): Self = this.set("timesOff", js.Array(value :_*))
+    def setTimesOffVarargs(value: TimeOff*): Self = StObject.set(x, "timesOff", js.Array(value :_*))
     
     @scala.inline
-    def setTimesOff(value: NullableOption[js.Array[TimeOff]]): Self = this.set("timesOff", value.asInstanceOf[js.Any])
+    def setWorkforceIntegrationIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "workforceIntegrationIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimesOff: Self = this.set("timesOff", js.undefined)
+    def setWorkforceIntegrationIdsNull: Self = StObject.set(x, "workforceIntegrationIds", null)
     
     @scala.inline
-    def setTimesOffNull: Self = this.set("timesOff", null)
+    def setWorkforceIntegrationIdsUndefined: Self = StObject.set(x, "workforceIntegrationIds", js.undefined)
     
     @scala.inline
-    def setWorkforceIntegrationIdsVarargs(value: String*): Self = this.set("workforceIntegrationIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkforceIntegrationIds(value: NullableOption[js.Array[String]]): Self = this.set("workforceIntegrationIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkforceIntegrationIds: Self = this.set("workforceIntegrationIds", js.undefined)
-    
-    @scala.inline
-    def setWorkforceIntegrationIdsNull: Self = this.set("workforceIntegrationIds", null)
+    def setWorkforceIntegrationIdsVarargs(value: String*): Self = StObject.set(x, "workforceIntegrationIds", js.Array(value :_*))
   }
 }

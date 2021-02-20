@@ -8,13 +8,12 @@ import typings.phaser.Phaser.Types.Curves.JSONCurve
 import typings.phaser.Phaser.Types.Curves.JSONEllipseCurve
 import typings.phaser.Phaser.Types.Curves.JSONPath
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Curves")
-@js.native
-object Curves extends js.Object {
+object Curves {
   
   /**
     * A higher-order Bézier curve constructed of four points.
@@ -68,7 +67,7 @@ object Curves extends js.Object {
     * Based on the three.js Curve classes created by [zz85](http://www.lab4games.net/zz85/blog)
     */
   @js.native
-  trait Curve extends js.Object {
+  trait Curve extends StObject {
     
     /**
       * For a curve on a Path, `false` means the Path will ignore this curve.
@@ -442,7 +441,7 @@ object Curves extends js.Object {
     * A MoveTo Curve is a very simple curve consisting of only a single point. Its intended use is to move the ending point in a Path.
     */
   @js.native
-  trait MoveTo extends js.Object {
+  trait MoveTo extends StObject {
     
     /**
       * Denotes that this Curve does not influence the bounds, points, and drawing of its parent Path. Must be `false` or some methods in the parent Path will throw errors.
@@ -494,7 +493,7 @@ object Curves extends js.Object {
     * have to be an uninterrupted curve. Only the order of the Curves influences the actual points on the Path.
     */
   @js.native
-  trait Path extends js.Object {
+  trait Path extends StObject {
     
     /**
       * Appends a Curve to the end of the Path.

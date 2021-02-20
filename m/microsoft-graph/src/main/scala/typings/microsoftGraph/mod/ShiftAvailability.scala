@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShiftAvailability extends js.Object {
+trait ShiftAvailability extends StObject {
   
   // Specifies the pattern for recurrence
   var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.native
@@ -25,48 +26,36 @@ object ShiftAvailability {
   }
   
   @scala.inline
-  implicit class ShiftAvailabilityOps[Self <: ShiftAvailability] (val x: Self) extends AnyVal {
+  implicit class ShiftAvailabilityMutableBuilder[Self <: ShiftAvailability] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecurrenceNull: Self = StObject.set(x, "recurrence", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
     @scala.inline
-    def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = this.set("recurrence", value.asInstanceOf[js.Any])
+    def setTimeSlots(value: NullableOption[js.Array[TimeRange]]): Self = StObject.set(x, "timeSlots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecurrence: Self = this.set("recurrence", js.undefined)
+    def setTimeSlotsNull: Self = StObject.set(x, "timeSlots", null)
     
     @scala.inline
-    def setRecurrenceNull: Self = this.set("recurrence", null)
+    def setTimeSlotsUndefined: Self = StObject.set(x, "timeSlots", js.undefined)
     
     @scala.inline
-    def setTimeSlotsVarargs(value: TimeRange*): Self = this.set("timeSlots", js.Array(value :_*))
+    def setTimeSlotsVarargs(value: TimeRange*): Self = StObject.set(x, "timeSlots", js.Array(value :_*))
     
     @scala.inline
-    def setTimeSlots(value: NullableOption[js.Array[TimeRange]]): Self = this.set("timeSlots", value.asInstanceOf[js.Any])
+    def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeSlots: Self = this.set("timeSlots", js.undefined)
+    def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
     
     @scala.inline
-    def setTimeSlotsNull: Self = this.set("timeSlots", null)
-    
-    @scala.inline
-    def setTimeZone(value: NullableOption[String]): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
-    
-    @scala.inline
-    def setTimeZoneNull: Self = this.set("timeZone", null)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

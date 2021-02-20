@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XrangePointConnectorsOptionsObject extends js.Object {
+trait XrangePointConnectorsOptionsObject extends StObject {
   
   /**
     * (Gantt) Set the default dash style for this chart's connecting lines.
@@ -81,66 +82,54 @@ object XrangePointConnectorsOptionsObject {
   }
   
   @scala.inline
-  implicit class XrangePointConnectorsOptionsObjectOps[Self <: XrangePointConnectorsOptionsObject] (val x: Self) extends AnyVal {
+  implicit class XrangePointConnectorsOptionsObjectMutableBuilder[Self <: XrangePointConnectorsOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndMarker(value: ConnectorsEndMarkerOptions): Self = StObject.set(x, "endMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashStyle(value: String): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    def setEndMarkerUndefined: Self = StObject.set(x, "endMarker", js.undefined)
     
     @scala.inline
-    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMarker(value: ConnectorsEndMarkerOptions): Self = this.set("endMarker", value.asInstanceOf[js.Any])
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def deleteEndMarker: Self = this.set("endMarker", js.undefined)
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: ColorString): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setMarker(value: ConnectorsMarkerOptions): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setStartMarker(value: ConnectorsStartMarkerOptions): Self = StObject.set(x, "startMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: ConnectorsMarkerOptions): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setStartMarkerUndefined: Self = StObject.set(x, "startMarker", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartMarker(value: ConnectorsStartMarkerOptions): Self = this.set("startMarker", value.asInstanceOf[js.Any])
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteStartMarker: Self = this.set("startMarker", js.undefined)
+    def setType(value: PathfinderTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
-    
-    @scala.inline
-    def setType(value: PathfinderTypeValue): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

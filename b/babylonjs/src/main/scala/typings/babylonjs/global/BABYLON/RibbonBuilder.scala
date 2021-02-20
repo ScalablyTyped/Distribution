@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.Offset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class RibbonBuilder ()
   extends typings.babylonjs.BABYLON.RibbonBuilder
 /* static members */
-@JSGlobal("BABYLON.RibbonBuilder")
-@js.native
-object RibbonBuilder extends js.Object {
+object RibbonBuilder {
   
   /**
     * Creates a ribbon mesh. The ribbon is a parametric shape.  It has no predefined shape. Its final shape will depend on the input parameters
@@ -38,6 +37,10 @@ object RibbonBuilder extends js.Object {
     * @see https://doc.babylonjs.com/how_to/ribbon_tutorial
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     */
+  @JSGlobal("BABYLON.RibbonBuilder.CreateRibbon")
+  @js.native
   def CreateRibbon(name: String, options: Offset): typings.babylonjs.BABYLON.Mesh = js.native
+  @JSGlobal("BABYLON.RibbonBuilder.CreateRibbon")
+  @js.native
   def CreateRibbon(name: String, options: Offset, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
 }

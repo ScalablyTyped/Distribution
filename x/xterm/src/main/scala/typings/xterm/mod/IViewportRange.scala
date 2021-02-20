@@ -1,11 +1,12 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IViewportRange extends js.Object {
+trait IViewportRange extends StObject {
   
   /**
     * The end of the range.
@@ -26,24 +27,12 @@ object IViewportRange {
   }
   
   @scala.inline
-  implicit class IViewportRangeOps[Self <: IViewportRange] (val x: Self) extends AnyVal {
+  implicit class IViewportRangeMutableBuilder[Self <: IViewportRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: IViewportRangePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnd(value: IViewportRangePosition): Self = this.set("end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: IViewportRangePosition): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: IViewportRangePosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

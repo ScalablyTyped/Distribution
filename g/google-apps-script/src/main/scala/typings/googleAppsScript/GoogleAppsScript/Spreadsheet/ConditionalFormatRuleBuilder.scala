@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     sheet.setConditionalFormatRules(rules);
   */
 @js.native
-trait ConditionalFormatRuleBuilder extends js.Object {
+trait ConditionalFormatRuleBuilder extends StObject {
   
   def build(): ConditionalFormatRule = js.native
   

@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`waiting-for-target`
 import typings.arcgisJsApi.arcgisJsApiStrings.finished
 import typings.arcgisJsApi.arcgisJsApiStrings.running
 import typings.arcgisJsApi.arcgisJsApiStrings.stopped
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

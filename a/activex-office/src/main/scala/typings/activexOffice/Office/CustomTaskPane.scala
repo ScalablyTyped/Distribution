@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomTaskPane extends js.Object {
+trait CustomTaskPane extends StObject {
   
   val Application: js.Any = js.native
   
@@ -52,51 +53,39 @@ object CustomTaskPane {
   }
   
   @scala.inline
-  implicit class CustomTaskPaneOps[Self <: CustomTaskPane] (val x: Self) extends AnyVal {
+  implicit class CustomTaskPaneMutableBuilder[Self <: CustomTaskPane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentControl(value: js.Any): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDockPosition(value: MsoCTPDockPosition): Self = StObject.set(x, "DockPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentControl(value: js.Any): Self = this.set("ContentControl", value.asInstanceOf[js.Any])
+    def setDockPositionRestrict(value: MsoCTPDockPositionRestrict): Self = StObject.set(x, "DockPositionRestrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockPosition(value: MsoCTPDockPosition): Self = this.set("DockPosition", value.asInstanceOf[js.Any])
+    def setOfficeDotCustomTaskPane_typekey(value: CustomTaskPane): Self = StObject.set(x, "Office.CustomTaskPane_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockPositionRestrict(value: MsoCTPDockPositionRestrict): Self = this.set("DockPositionRestrict", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficeDotCustomTaskPane_typekey(value: CustomTaskPane): Self = this.set("Office.CustomTaskPane_typekey", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindow(value: js.Any): Self = this.set("Window", value.asInstanceOf[js.Any])
+    def setWindow(value: js.Any): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

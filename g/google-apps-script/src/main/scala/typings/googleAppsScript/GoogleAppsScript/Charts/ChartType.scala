@@ -1,17 +1,18 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartType extends js.Object
+sealed trait ChartType extends StObject
 /**
   * Chart types supported by the Charts service.
   */
 @JSGlobal("GoogleAppsScript.Charts.ChartType")
 @js.native
-object ChartType extends js.Object {
+object ChartType extends StObject {
   
   @js.native
   sealed trait AREA extends ChartType

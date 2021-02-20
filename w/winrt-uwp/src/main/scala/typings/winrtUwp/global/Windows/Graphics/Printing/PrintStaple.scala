@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the staple options. */
 @JSGlobal("Windows.Graphics.Printing.PrintStaple")
 @js.native
-object PrintStaple extends js.Object {
+object PrintStaple extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Printing.PrintStaple with Double] = js.native

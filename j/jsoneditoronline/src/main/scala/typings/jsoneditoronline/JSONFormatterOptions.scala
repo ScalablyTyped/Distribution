@@ -1,11 +1,12 @@
 package typings.jsoneditoronline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONFormatterOptions extends js.Object {
+trait JSONFormatterOptions extends StObject {
   
   var change: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -20,30 +21,18 @@ object JSONFormatterOptions {
   }
   
   @scala.inline
-  implicit class JSONFormatterOptionsOps[Self <: JSONFormatterOptions] (val x: Self) extends AnyVal {
+  implicit class JSONFormatterOptionsMutableBuilder[Self <: JSONFormatterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: () => Unit): Self = StObject.set(x, "change", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: () => Unit): Self = this.set("change", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
-    
-    @scala.inline
-    def setIndentation(value: Double): Self = this.set("indentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndentation: Self = this.set("indentation", js.undefined)
+    def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
   }
 }

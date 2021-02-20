@@ -1,11 +1,12 @@
 package typings.awsSdk.iot1clickprojectsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectSummary extends js.Object {
+trait ProjectSummary extends StObject {
   
   /**
     * The ARN of the project.
@@ -41,39 +42,27 @@ object ProjectSummary {
   }
   
   @scala.inline
-  implicit class ProjectSummaryOps[Self <: ProjectSummary] (val x: Self) extends AnyVal {
+  implicit class ProjectSummaryMutableBuilder[Self <: ProjectSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: ProjectArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: Time): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Time): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectName(value: ProjectName): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedDate(value: Time): Self = this.set("updatedDate", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setArn(value: ProjectArn): Self = this.set("arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setUpdatedDate(value: Time): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.bootstrapFilestyle
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilestyleOptions extends js.Object {
+trait FilestyleOptions extends StObject {
   
   var badge: js.UndefOr[Boolean] = js.native
   
@@ -36,78 +37,66 @@ object FilestyleOptions {
   }
   
   @scala.inline
-  implicit class FilestyleOptionsOps[Self <: FilestyleOptions] (val x: Self) extends AnyVal {
+  implicit class FilestyleOptionsMutableBuilder[Self <: FilestyleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadge(value: Boolean): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonBefore(value: Boolean): Self = StObject.set(x, "buttonBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadge(value: Boolean): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setButtonBeforeUndefined: Self = StObject.set(x, "buttonBefore", js.undefined)
     
     @scala.inline
-    def deleteBadge: Self = this.set("badge", js.undefined)
+    def setButtonName(value: String): Self = StObject.set(x, "buttonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonBefore(value: Boolean): Self = this.set("buttonBefore", value.asInstanceOf[js.Any])
+    def setButtonNameUndefined: Self = StObject.set(x, "buttonName", js.undefined)
     
     @scala.inline
-    def deleteButtonBefore: Self = this.set("buttonBefore", js.undefined)
+    def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonName(value: String): Self = this.set("buttonName", value.asInstanceOf[js.Any])
+    def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
     
     @scala.inline
-    def deleteButtonName: Self = this.set("buttonName", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonText(value: String): Self = this.set("buttonText", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteButtonText: Self = this.set("buttonText", js.undefined)
+    def setIcon(value: Boolean): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
     
     @scala.inline
-    def setIcon(value: Boolean): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setInput(value: Boolean): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconName(value: String): Self = this.set("iconName", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteIconName: Self = this.set("iconName", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: Boolean): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
-    
-    @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

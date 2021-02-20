@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountTax extends js.Object {
+trait AccountTax extends StObject {
   
   /** Required. The ID of the account to which these account tax settings belong. */
   var accountId: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object AccountTax {
   }
   
   @scala.inline
-  implicit class AccountTaxOps[Self <: AccountTax] (val x: Self) extends AnyVal {
+  implicit class AccountTaxMutableBuilder[Self <: AccountTax] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setRules(value: js.Array[AccountTaxTaxRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setRulesVarargs(value: AccountTaxTaxRule*): Self = this.set("rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: js.Array[AccountTaxTaxRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setRulesVarargs(value: AccountTaxTaxRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

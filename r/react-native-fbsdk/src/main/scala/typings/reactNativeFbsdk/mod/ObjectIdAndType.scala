@@ -1,11 +1,12 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectIdAndType extends js.Object {
+trait ObjectIdAndType extends StObject {
   
   /**
     * The object ID, this can be a URL or a Facebook ID.
@@ -27,24 +28,12 @@ object ObjectIdAndType {
   }
   
   @scala.inline
-  implicit class ObjectIdAndTypeOps[Self <: ObjectIdAndType] (val x: Self) extends AnyVal {
+  implicit class ObjectIdAndTypeMutableBuilder[Self <: ObjectIdAndType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectType(value: ObjectIdActionType): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    def setObjectType(value: ObjectIdActionType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
   }
 }

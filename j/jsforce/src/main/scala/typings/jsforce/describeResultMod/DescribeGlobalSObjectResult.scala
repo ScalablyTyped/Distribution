@@ -1,12 +1,13 @@
 package typings.jsforce.describeResultMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeGlobalSObjectResult extends js.Object {
+trait DescribeGlobalSObjectResult extends StObject {
   
   var activateable: Boolean = js.native
   
@@ -89,93 +90,81 @@ object DescribeGlobalSObjectResult {
   }
   
   @scala.inline
-  implicit class DescribeGlobalSObjectResultOps[Self <: DescribeGlobalSObjectResult] (val x: Self) extends AnyVal {
+  implicit class DescribeGlobalSObjectResultMutableBuilder[Self <: DescribeGlobalSObjectResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateable(value: Boolean): Self = StObject.set(x, "activateable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateable(value: Boolean): Self = StObject.set(x, "createable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivateable(value: Boolean): Self = this.set("activateable", value.asInstanceOf[js.Any])
+    def setCustomSetting(value: Boolean): Self = StObject.set(x, "customSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateable(value: Boolean): Self = this.set("createable", value.asInstanceOf[js.Any])
+    def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: Boolean): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setDeprecatedAndHidden(value: Boolean): Self = StObject.set(x, "deprecatedAndHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSetting(value: Boolean): Self = this.set("customSetting", value.asInstanceOf[js.Any])
+    def setFeedEnabled(value: Boolean): Self = StObject.set(x, "feedEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletable(value: Boolean): Self = this.set("deletable", value.asInstanceOf[js.Any])
+    def setHasSubtypes(value: Boolean): Self = StObject.set(x, "hasSubtypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedAndHidden(value: Boolean): Self = this.set("deprecatedAndHidden", value.asInstanceOf[js.Any])
+    def setIsSubtype(value: Boolean): Self = StObject.set(x, "isSubtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedEnabled(value: Boolean): Self = this.set("feedEnabled", value.asInstanceOf[js.Any])
+    def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSubtypes(value: Boolean): Self = this.set("hasSubtypes", value.asInstanceOf[js.Any])
+    def setKeyPrefixNull: Self = StObject.set(x, "keyPrefix", null)
     
     @scala.inline
-    def setIsSubtype(value: Boolean): Self = this.set("isSubtype", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelPlural(value: String): Self = StObject.set(x, "labelPlural", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPlural(value: String): Self = this.set("labelPlural", value.asInstanceOf[js.Any])
+    def setLayoutable(value: Boolean): Self = StObject.set(x, "layoutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutable(value: Boolean): Self = this.set("layoutable", value.asInstanceOf[js.Any])
+    def setMergeable(value: Boolean): Self = StObject.set(x, "mergeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeable(value: Boolean): Self = this.set("mergeable", value.asInstanceOf[js.Any])
+    def setMruEnabled(value: Boolean): Self = StObject.set(x, "mruEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMruEnabled(value: Boolean): Self = this.set("mruEnabled", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setQueryable(value: Boolean): Self = StObject.set(x, "queryable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryable(value: Boolean): Self = this.set("queryable", value.asInstanceOf[js.Any])
+    def setReplicateable(value: Boolean): Self = StObject.set(x, "replicateable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicateable(value: Boolean): Self = this.set("replicateable", value.asInstanceOf[js.Any])
+    def setRetrieveable(value: Boolean): Self = StObject.set(x, "retrieveable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetrieveable(value: Boolean): Self = this.set("retrieveable", value.asInstanceOf[js.Any])
+    def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchable(value: Boolean): Self = this.set("searchable", value.asInstanceOf[js.Any])
+    def setTriggerable(value: Boolean): Self = StObject.set(x, "triggerable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerable(value: Boolean): Self = this.set("triggerable", value.asInstanceOf[js.Any])
+    def setUndeletable(value: Boolean): Self = StObject.set(x, "undeletable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndeletable(value: Boolean): Self = this.set("undeletable", value.asInstanceOf[js.Any])
+    def setUpdateable(value: Boolean): Self = StObject.set(x, "updateable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateable(value: Boolean): Self = this.set("updateable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrls(value: Record[String, String]): Self = this.set("urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyPrefix(value: String): Self = this.set("keyPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyPrefixNull: Self = this.set("keyPrefix", null)
+    def setUrls(value: Record[String, String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
   }
 }

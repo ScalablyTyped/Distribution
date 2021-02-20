@@ -1,11 +1,12 @@
 package typings.screeps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KH extends js.Object {
+trait KH extends StObject {
   
   var KH: Capacity = js.native
   
@@ -22,27 +23,15 @@ object KH {
   }
   
   @scala.inline
-  implicit class KHOps[Self <: KH] (val x: Self) extends AnyVal {
+  implicit class KHMutableBuilder[Self <: KH] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKH(value: Capacity): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKH2O(value: `8`): Self = StObject.set(x, "KH2O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKH(value: Capacity): Self = this.set("KH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKH2O(value: `8`): Self = this.set("KH2O", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXKH2O(value: `9`): Self = this.set("XKH2O", value.asInstanceOf[js.Any])
+    def setXKH2O(value: `9`): Self = StObject.set(x, "XKH2O", value.asInstanceOf[js.Any])
   }
 }

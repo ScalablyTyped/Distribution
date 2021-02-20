@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a response to the queryCompatibleFields method.
   */
 @js.native
-trait SchemaCompatibleFields extends js.Object {
+trait SchemaCompatibleFields extends StObject {
   
   /**
     * Contains items that are compatible to be selected for a report of type
@@ -54,54 +55,42 @@ object SchemaCompatibleFields {
   }
   
   @scala.inline
-  implicit class SchemaCompatibleFieldsOps[Self <: SchemaCompatibleFields] (val x: Self) extends AnyVal {
+  implicit class SchemaCompatibleFieldsMutableBuilder[Self <: SchemaCompatibleFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrossDimensionReachReportCompatibleFields(value: SchemaCrossDimensionReachReportCompatibleFields): Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrossDimensionReachReportCompatibleFieldsUndefined: Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloodlightReportCompatibleFields(value: SchemaFloodlightReportCompatibleFields): Self = StObject.set(x, "floodlightReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossDimensionReachReportCompatibleFields(value: SchemaCrossDimensionReachReportCompatibleFields): Self = this.set("crossDimensionReachReportCompatibleFields", value.asInstanceOf[js.Any])
+    def setFloodlightReportCompatibleFieldsUndefined: Self = StObject.set(x, "floodlightReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def deleteCrossDimensionReachReportCompatibleFields: Self = this.set("crossDimensionReachReportCompatibleFields", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightReportCompatibleFields(value: SchemaFloodlightReportCompatibleFields): Self = this.set("floodlightReportCompatibleFields", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFloodlightReportCompatibleFields: Self = this.set("floodlightReportCompatibleFields", js.undefined)
+    def setPathToConversionReportCompatibleFields(value: SchemaPathToConversionReportCompatibleFields): Self = StObject.set(x, "pathToConversionReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPathToConversionReportCompatibleFieldsUndefined: Self = StObject.set(x, "pathToConversionReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setReachReportCompatibleFields(value: SchemaReachReportCompatibleFields): Self = StObject.set(x, "reachReportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathToConversionReportCompatibleFields(value: SchemaPathToConversionReportCompatibleFields): Self = this.set("pathToConversionReportCompatibleFields", value.asInstanceOf[js.Any])
+    def setReachReportCompatibleFieldsUndefined: Self = StObject.set(x, "reachReportCompatibleFields", js.undefined)
     
     @scala.inline
-    def deletePathToConversionReportCompatibleFields: Self = this.set("pathToConversionReportCompatibleFields", js.undefined)
+    def setReportCompatibleFields(value: SchemaReportCompatibleFields): Self = StObject.set(x, "reportCompatibleFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReachReportCompatibleFields(value: SchemaReachReportCompatibleFields): Self = this.set("reachReportCompatibleFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReachReportCompatibleFields: Self = this.set("reachReportCompatibleFields", js.undefined)
-    
-    @scala.inline
-    def setReportCompatibleFields(value: SchemaReportCompatibleFields): Self = this.set("reportCompatibleFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportCompatibleFields: Self = this.set("reportCompatibleFields", js.undefined)
+    def setReportCompatibleFieldsUndefined: Self = StObject.set(x, "reportCompatibleFields", js.undefined)
   }
 }

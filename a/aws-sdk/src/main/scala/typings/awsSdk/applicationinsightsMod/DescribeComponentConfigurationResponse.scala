@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeComponentConfigurationResponse extends js.Object {
+trait DescribeComponentConfigurationResponse extends StObject {
   
   /**
     * The configuration settings of the component. The value is the escaped JSON of the configuration.
@@ -31,36 +32,24 @@ object DescribeComponentConfigurationResponse {
   }
   
   @scala.inline
-  implicit class DescribeComponentConfigurationResponseOps[Self <: DescribeComponentConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeComponentConfigurationResponseMutableBuilder[Self <: DescribeComponentConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentConfiguration(value: ComponentConfiguration): Self = StObject.set(x, "ComponentConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentConfigurationUndefined: Self = StObject.set(x, "ComponentConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonitor(value: Monitor): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentConfiguration(value: ComponentConfiguration): Self = this.set("ComponentConfiguration", value.asInstanceOf[js.Any])
+    def setMonitorUndefined: Self = StObject.set(x, "Monitor", js.undefined)
     
     @scala.inline
-    def deleteComponentConfiguration: Self = this.set("ComponentConfiguration", js.undefined)
+    def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitor(value: Monitor): Self = this.set("Monitor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonitor: Self = this.set("Monitor", js.undefined)
-    
-    @scala.inline
-    def setTier(value: Tier): Self = this.set("Tier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTier: Self = this.set("Tier", js.undefined)
+    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
   }
 }

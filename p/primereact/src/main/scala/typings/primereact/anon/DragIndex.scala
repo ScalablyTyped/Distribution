@@ -1,11 +1,12 @@
 package typings.primereact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragIndex extends js.Object {
+trait DragIndex extends StObject {
   
   var dragIndex: Double = js.native
   
@@ -24,30 +25,18 @@ object DragIndex {
   }
   
   @scala.inline
-  implicit class DragIndexOps[Self <: DragIndex] (val x: Self) extends AnyVal {
+  implicit class DragIndexMutableBuilder[Self <: DragIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragIndex(value: Double): Self = StObject.set(x, "dragIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropIndex(value: Double): Self = StObject.set(x, "dropIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragIndex(value: Double): Self = this.set("dragIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDropIndex(value: Double): Self = this.set("dropIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

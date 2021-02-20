@@ -2,13 +2,14 @@ package typings.mapsjs.mod
 
 import typings.mapsjs.anon.Distance
 import typings.mapsjs.anon.Idx
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapsjs", "geometry")
 @js.native
-class geometry () extends js.Object {
+class geometry () extends StObject {
   def this(isPath: Boolean) = this()
   def this(isPath: js.UndefOr[scala.Nothing], isClosed: Boolean) = this()
   def this(isPath: Boolean, isClosed: Boolean) = this()
@@ -151,14 +152,13 @@ class geometry () extends js.Object {
   
   def toWkt(): String = js.native
 }
-@JSImport("mapsjs", "geometry")
-@js.native
-object geometry extends js.Object {
+object geometry {
   
   /**
     * A polyline object which is a closed path geometry with one or more paths.
     * @class polygon
     */
+  @JSImport("mapsjs", "geometry.polygon")
   @js.native
   class polygon protected () extends geometry {
     def this(geom: geometry) = this()
@@ -260,6 +260,7 @@ object geometry extends js.Object {
     * A polyline object which is an open path geometry with one or more paths.
     * @class polyline
     */
+  @JSImport("mapsjs", "geometry.polyline")
   @js.native
   class polyline protected () extends geometry {
     def this(geom: geometry) = this()

@@ -1,5 +1,6 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object IpMessagingGrantPayload {
   }
   
   @scala.inline
-  implicit class IpMessagingGrantPayloadOps[Self <: IpMessagingGrantPayload] (val x: Self) extends AnyVal {
+  implicit class IpMessagingGrantPayloadMutableBuilder[Self <: IpMessagingGrantPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeployment_role_sid(value: String): Self = StObject.set(x, "deployment_role_sid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpoint_id(value: String): Self = StObject.set(x, "endpoint_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPush_credential_sid(value: String): Self = StObject.set(x, "push_credential_sid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployment_role_sid(value: String): Self = this.set("deployment_role_sid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndpoint_id(value: String): Self = this.set("endpoint_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPush_credential_sid(value: String): Self = this.set("push_credential_sid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setService_sid(value: String): Self = this.set("service_sid", value.asInstanceOf[js.Any])
+    def setService_sid(value: String): Self = StObject.set(x, "service_sid", value.asInstanceOf[js.Any])
   }
 }

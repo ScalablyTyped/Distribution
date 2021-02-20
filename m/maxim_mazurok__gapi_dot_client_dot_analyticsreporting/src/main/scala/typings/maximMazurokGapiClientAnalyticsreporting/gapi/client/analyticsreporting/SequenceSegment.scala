@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SequenceSegment extends js.Object {
+trait SequenceSegment extends StObject {
   
   /** If set, first step condition must match the first hit of the visitor (in the date range). */
   var firstStepShouldMatchFirstHit: js.UndefOr[Boolean] = js.native
@@ -22,33 +23,21 @@ object SequenceSegment {
   }
   
   @scala.inline
-  implicit class SequenceSegmentOps[Self <: SequenceSegment] (val x: Self) extends AnyVal {
+  implicit class SequenceSegmentMutableBuilder[Self <: SequenceSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstStepShouldMatchFirstHit(value: Boolean): Self = StObject.set(x, "firstStepShouldMatchFirstHit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstStepShouldMatchFirstHitUndefined: Self = StObject.set(x, "firstStepShouldMatchFirstHit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentSequenceSteps(value: js.Array[SegmentSequenceStep]): Self = StObject.set(x, "segmentSequenceSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstStepShouldMatchFirstHit(value: Boolean): Self = this.set("firstStepShouldMatchFirstHit", value.asInstanceOf[js.Any])
+    def setSegmentSequenceStepsUndefined: Self = StObject.set(x, "segmentSequenceSteps", js.undefined)
     
     @scala.inline
-    def deleteFirstStepShouldMatchFirstHit: Self = this.set("firstStepShouldMatchFirstHit", js.undefined)
-    
-    @scala.inline
-    def setSegmentSequenceStepsVarargs(value: SegmentSequenceStep*): Self = this.set("segmentSequenceSteps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSegmentSequenceSteps(value: js.Array[SegmentSequenceStep]): Self = this.set("segmentSequenceSteps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentSequenceSteps: Self = this.set("segmentSequenceSteps", js.undefined)
+    def setSegmentSequenceStepsVarargs(value: SegmentSequenceStep*): Self = StObject.set(x, "segmentSequenceSteps", js.Array(value :_*))
   }
 }

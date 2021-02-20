@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbortedBySystem extends js.Object {
+trait AbortedBySystem extends StObject {
   
   var abortedBySystem: scala.Double = js.native
   
@@ -44,45 +45,33 @@ object AbortedBySystem {
   }
   
   @scala.inline
-  implicit class AbortedBySystemOps[Self <: AbortedBySystem] (val x: Self) extends AnyVal {
+  implicit class AbortedBySystemMutableBuilder[Self <: AbortedBySystem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortedBySystem(value: scala.Double): Self = StObject.set(x, "abortedBySystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyzed(value: scala.Double): Self = StObject.set(x, "analyzed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanceledByUser(value: scala.Double): Self = StObject.set(x, "canceledByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortedBySystem(value: scala.Double): Self = this.set("abortedBySystem", value.asInstanceOf[js.Any])
+    def setCancellationInProgress(value: scala.Double): Self = StObject.set(x, "cancellationInProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyzed(value: scala.Double): Self = this.set("analyzed", value.asInstanceOf[js.Any])
+    def setCreatingEnvironment(value: scala.Double): Self = StObject.set(x, "creatingEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanceledByUser(value: scala.Double): Self = this.set("canceledByUser", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancellationInProgress(value: scala.Double): Self = this.set("cancellationInProgress", value.asInstanceOf[js.Any])
+    def setPendingAnalysis(value: scala.Double): Self = StObject.set(x, "pendingAnalysis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatingEnvironment(value: scala.Double): Self = this.set("creatingEnvironment", value.asInstanceOf[js.Any])
+    def setRunningTests(value: scala.Double): Self = StObject.set(x, "runningTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPendingAnalysis(value: scala.Double): Self = this.set("pendingAnalysis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunningTests(value: scala.Double): Self = this.set("runningTests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimedOut(value: scala.Double): Self = this.set("timedOut", value.asInstanceOf[js.Any])
+    def setTimedOut(value: scala.Double): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
   }
 }

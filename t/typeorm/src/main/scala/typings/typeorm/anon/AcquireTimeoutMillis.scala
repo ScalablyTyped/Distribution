@@ -1,11 +1,12 @@
 package typings.typeorm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcquireTimeoutMillis extends js.Object {
+trait AcquireTimeoutMillis extends StObject {
   
   /**
     * Max milliseconds an acquire call will wait for a resource before timing out. (default no limit), if supplied should non-zero positive integer.
@@ -87,96 +88,84 @@ object AcquireTimeoutMillis {
   }
   
   @scala.inline
-  implicit class AcquireTimeoutMillisOps[Self <: AcquireTimeoutMillis] (val x: Self) extends AnyVal {
+  implicit class AcquireTimeoutMillisMutableBuilder[Self <: AcquireTimeoutMillis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquireTimeoutMillis(value: Double): Self = StObject.set(x, "acquireTimeoutMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcquireTimeoutMillisUndefined: Self = StObject.set(x, "acquireTimeoutMillis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutostart(value: Double): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquireTimeoutMillis(value: Double): Self = this.set("acquireTimeoutMillis", value.asInstanceOf[js.Any])
+    def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
     
     @scala.inline
-    def deleteAcquireTimeoutMillis: Self = this.set("acquireTimeoutMillis", js.undefined)
+    def setErrorHandler(value: /* err */ js.Any => _): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutostart(value: Double): Self = this.set("autostart", value.asInstanceOf[js.Any])
+    def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
     @scala.inline
-    def deleteAutostart: Self = this.set("autostart", js.undefined)
+    def setEvictionRunIntervalMillis(value: Double): Self = StObject.set(x, "evictionRunIntervalMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorHandler(value: /* err */ js.Any => _): Self = this.set("errorHandler", js.Any.fromFunction1(value))
+    def setEvictionRunIntervalMillisUndefined: Self = StObject.set(x, "evictionRunIntervalMillis", js.undefined)
     
     @scala.inline
-    def deleteErrorHandler: Self = this.set("errorHandler", js.undefined)
+    def setFifo(value: Boolean): Self = StObject.set(x, "fifo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvictionRunIntervalMillis(value: Double): Self = this.set("evictionRunIntervalMillis", value.asInstanceOf[js.Any])
+    def setFifoUndefined: Self = StObject.set(x, "fifo", js.undefined)
     
     @scala.inline
-    def deleteEvictionRunIntervalMillis: Self = this.set("evictionRunIntervalMillis", js.undefined)
+    def setIdleTimeoutMillis(value: Double): Self = StObject.set(x, "idleTimeoutMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFifo(value: Boolean): Self = this.set("fifo", value.asInstanceOf[js.Any])
+    def setIdleTimeoutMillisUndefined: Self = StObject.set(x, "idleTimeoutMillis", js.undefined)
     
     @scala.inline
-    def deleteFifo: Self = this.set("fifo", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdleTimeoutMillis(value: Double): Self = this.set("idleTimeoutMillis", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteIdleTimeoutMillis: Self = this.set("idleTimeoutMillis", js.undefined)
+    def setMaxWaitingClients(value: Double): Self = StObject.set(x, "maxWaitingClients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMaxWaitingClientsUndefined: Self = StObject.set(x, "maxWaitingClients", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWaitingClients(value: Double): Self = this.set("maxWaitingClients", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMaxWaitingClients: Self = this.set("maxWaitingClients", js.undefined)
+    def setNumTestsPerRun(value: Double): Self = StObject.set(x, "numTestsPerRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setNumTestsPerRunUndefined: Self = StObject.set(x, "numTestsPerRun", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setPriorityRange(value: Double): Self = StObject.set(x, "priorityRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTestsPerRun(value: Double): Self = this.set("numTestsPerRun", value.asInstanceOf[js.Any])
+    def setPriorityRangeUndefined: Self = StObject.set(x, "priorityRange", js.undefined)
     
     @scala.inline
-    def deleteNumTestsPerRun: Self = this.set("numTestsPerRun", js.undefined)
+    def setSoftIdleTimeoutMillis(value: Double): Self = StObject.set(x, "softIdleTimeoutMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriorityRange(value: Double): Self = this.set("priorityRange", value.asInstanceOf[js.Any])
+    def setSoftIdleTimeoutMillisUndefined: Self = StObject.set(x, "softIdleTimeoutMillis", js.undefined)
     
     @scala.inline
-    def deletePriorityRange: Self = this.set("priorityRange", js.undefined)
+    def setTestOnBorrow(value: Boolean): Self = StObject.set(x, "testOnBorrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftIdleTimeoutMillis(value: Double): Self = this.set("softIdleTimeoutMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoftIdleTimeoutMillis: Self = this.set("softIdleTimeoutMillis", js.undefined)
-    
-    @scala.inline
-    def setTestOnBorrow(value: Boolean): Self = this.set("testOnBorrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestOnBorrow: Self = this.set("testOnBorrow", js.undefined)
+    def setTestOnBorrowUndefined: Self = StObject.set(x, "testOnBorrow", js.undefined)
   }
 }

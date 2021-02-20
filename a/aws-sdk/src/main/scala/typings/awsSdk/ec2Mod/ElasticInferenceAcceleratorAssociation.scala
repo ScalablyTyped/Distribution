@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElasticInferenceAcceleratorAssociation extends js.Object {
+trait ElasticInferenceAcceleratorAssociation extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the elastic inference accelerator. 
@@ -36,42 +37,30 @@ object ElasticInferenceAcceleratorAssociation {
   }
   
   @scala.inline
-  implicit class ElasticInferenceAcceleratorAssociationOps[Self <: ElasticInferenceAcceleratorAssociation] (val x: Self) extends AnyVal {
+  implicit class ElasticInferenceAcceleratorAssociationMutableBuilder[Self <: ElasticInferenceAcceleratorAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElasticInferenceAcceleratorArn(value: String): Self = StObject.set(x, "ElasticInferenceAcceleratorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElasticInferenceAcceleratorArnUndefined: Self = StObject.set(x, "ElasticInferenceAcceleratorArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElasticInferenceAcceleratorAssociationId(value: String): Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticInferenceAcceleratorArn(value: String): Self = this.set("ElasticInferenceAcceleratorArn", value.asInstanceOf[js.Any])
+    def setElasticInferenceAcceleratorAssociationIdUndefined: Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationId", js.undefined)
     
     @scala.inline
-    def deleteElasticInferenceAcceleratorArn: Self = this.set("ElasticInferenceAcceleratorArn", js.undefined)
+    def setElasticInferenceAcceleratorAssociationState(value: String): Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticInferenceAcceleratorAssociationId(value: String): Self = this.set("ElasticInferenceAcceleratorAssociationId", value.asInstanceOf[js.Any])
+    def setElasticInferenceAcceleratorAssociationStateUndefined: Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationState", js.undefined)
     
     @scala.inline
-    def deleteElasticInferenceAcceleratorAssociationId: Self = this.set("ElasticInferenceAcceleratorAssociationId", js.undefined)
+    def setElasticInferenceAcceleratorAssociationTime(value: DateTime): Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticInferenceAcceleratorAssociationState(value: String): Self = this.set("ElasticInferenceAcceleratorAssociationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElasticInferenceAcceleratorAssociationState: Self = this.set("ElasticInferenceAcceleratorAssociationState", js.undefined)
-    
-    @scala.inline
-    def setElasticInferenceAcceleratorAssociationTime(value: DateTime): Self = this.set("ElasticInferenceAcceleratorAssociationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElasticInferenceAcceleratorAssociationTime: Self = this.set("ElasticInferenceAcceleratorAssociationTime", js.undefined)
+    def setElasticInferenceAcceleratorAssociationTimeUndefined: Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationTime", js.undefined)
   }
 }

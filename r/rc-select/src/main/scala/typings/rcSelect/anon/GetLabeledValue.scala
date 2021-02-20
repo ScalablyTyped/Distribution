@@ -4,12 +4,13 @@ import typings.rcSelect.generatorMod.DefaultValueType
 import typings.rcSelect.generatorMod.FlattenOptionsType
 import typings.rcSelect.generatorMod.LabelValueType
 import typings.rcSelect.generatorMod.RawValueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLabeledValue[FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] extends js.Object {
+trait GetLabeledValue[FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] extends StObject {
   
   var getLabeledValue: typings.rcSelect.generatorMod.GetLabeledValue[FOT] = js.native
   
@@ -36,36 +37,24 @@ object GetLabeledValue {
   }
   
   @scala.inline
-  implicit class GetLabeledValueOps[Self <: GetLabeledValue[_], FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] (val x: Self with GetLabeledValue[FOT]) extends AnyVal {
+  implicit class GetLabeledValueMutableBuilder[Self <: GetLabeledValue[_], FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] (val x: Self with GetLabeledValue[FOT]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLabeledValue(value: (/* value */ RawValueType, /* config */ LabelInValue[FOT]) => LabelValueType): Self = StObject.set(x, "getLabeledValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelInValue(value: Boolean): Self = StObject.set(x, "labelInValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionLabelProp(value: String): Self = StObject.set(x, "optionLabelProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLabeledValue(value: (/* value */ RawValueType, /* config */ LabelInValue[FOT]) => LabelValueType): Self = this.set("getLabeledValue", js.Any.fromFunction2(value))
+    def setOptions(value: FOT): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelInValue(value: Boolean): Self = this.set("labelInValue", value.asInstanceOf[js.Any])
+    def setPrevValue(value: DefaultValueType): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionLabelProp(value: String): Self = this.set("optionLabelProp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: FOT): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevValueVarargs(value: (LabelValueType | RawValueType)*): Self = this.set("prevValue", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrevValue(value: DefaultValueType): Self = this.set("prevValue", value.asInstanceOf[js.Any])
+    def setPrevValueVarargs(value: (LabelValueType | RawValueType)*): Self = StObject.set(x, "prevValue", js.Array(value :_*))
   }
 }

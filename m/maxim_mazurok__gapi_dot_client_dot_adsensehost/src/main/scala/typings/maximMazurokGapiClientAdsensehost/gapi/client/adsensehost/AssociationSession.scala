@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdsensehost.gapi.client.adsensehost
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociationSession extends js.Object {
+trait AssociationSession extends StObject {
   
   /** Hosted account id of the associated publisher after association. Present if status is ACCEPTED. */
   var accountId: js.UndefOr[String] = js.native
@@ -43,75 +44,63 @@ object AssociationSession {
   }
   
   @scala.inline
-  implicit class AssociationSessionOps[Self <: AssociationSession] (val x: Self) extends AnyVal {
+  implicit class AssociationSessionMutableBuilder[Self <: AssociationSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setProductCodes(value: js.Array[String]): Self = StObject.set(x, "productCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setProductCodesUndefined: Self = StObject.set(x, "productCodes", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setProductCodesVarargs(value: String*): Self = StObject.set(x, "productCodes", js.Array(value :_*))
     
     @scala.inline
-    def setProductCodesVarargs(value: String*): Self = this.set("productCodes", js.Array(value :_*))
+    def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCodes(value: js.Array[String]): Self = this.set("productCodes", value.asInstanceOf[js.Any])
+    def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
     
     @scala.inline
-    def deleteProductCodes: Self = this.set("productCodes", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectUrl(value: String): Self = this.set("redirectUrl", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRedirectUrl: Self = this.set("redirectUrl", js.undefined)
+    def setUserLocale(value: String): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUserLocaleUndefined: Self = StObject.set(x, "userLocale", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setWebsiteLocale(value: String): Self = StObject.set(x, "websiteLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserLocale(value: String): Self = this.set("userLocale", value.asInstanceOf[js.Any])
+    def setWebsiteLocaleUndefined: Self = StObject.set(x, "websiteLocale", js.undefined)
     
     @scala.inline
-    def deleteUserLocale: Self = this.set("userLocale", js.undefined)
+    def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebsiteLocale(value: String): Self = this.set("websiteLocale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteLocale: Self = this.set("websiteLocale", js.undefined)
-    
-    @scala.inline
-    def setWebsiteUrl(value: String): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
+    def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
   }
 }

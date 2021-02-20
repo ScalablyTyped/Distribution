@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Vpc extends js.Object {
+trait Vpc extends StObject {
   
   /**
     * The primary IPv4 CIDR block for the VPC.
@@ -66,87 +67,75 @@ object Vpc {
   }
   
   @scala.inline
-  implicit class VpcOps[Self <: Vpc] (val x: Self) extends AnyVal {
+  implicit class VpcMutableBuilder[Self <: Vpc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrBlockAssociationSet(value: VpcCidrBlockAssociationSet): Self = StObject.set(x, "CidrBlockAssociationSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrBlockAssociationSetUndefined: Self = StObject.set(x, "CidrBlockAssociationSet", js.undefined)
     
     @scala.inline
-    def setCidrBlock(value: String): Self = this.set("CidrBlock", value.asInstanceOf[js.Any])
+    def setCidrBlockAssociationSetVarargs(value: VpcCidrBlockAssociation*): Self = StObject.set(x, "CidrBlockAssociationSet", js.Array(value :_*))
     
     @scala.inline
-    def deleteCidrBlock: Self = this.set("CidrBlock", js.undefined)
+    def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
     
     @scala.inline
-    def setCidrBlockAssociationSetVarargs(value: VpcCidrBlockAssociation*): Self = this.set("CidrBlockAssociationSet", js.Array(value :_*))
+    def setDhcpOptionsId(value: String): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrBlockAssociationSet(value: VpcCidrBlockAssociationSet): Self = this.set("CidrBlockAssociationSet", value.asInstanceOf[js.Any])
+    def setDhcpOptionsIdUndefined: Self = StObject.set(x, "DhcpOptionsId", js.undefined)
     
     @scala.inline
-    def deleteCidrBlockAssociationSet: Self = this.set("CidrBlockAssociationSet", js.undefined)
+    def setInstanceTenancy(value: Tenancy): Self = StObject.set(x, "InstanceTenancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDhcpOptionsId(value: String): Self = this.set("DhcpOptionsId", value.asInstanceOf[js.Any])
+    def setInstanceTenancyUndefined: Self = StObject.set(x, "InstanceTenancy", js.undefined)
     
     @scala.inline
-    def deleteDhcpOptionsId: Self = this.set("DhcpOptionsId", js.undefined)
+    def setIpv6CidrBlockAssociationSet(value: VpcIpv6CidrBlockAssociationSet): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceTenancy(value: Tenancy): Self = this.set("InstanceTenancy", value.asInstanceOf[js.Any])
+    def setIpv6CidrBlockAssociationSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.undefined)
     
     @scala.inline
-    def deleteInstanceTenancy: Self = this.set("InstanceTenancy", js.undefined)
+    def setIpv6CidrBlockAssociationSetVarargs(value: VpcIpv6CidrBlockAssociation*): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.Array(value :_*))
     
     @scala.inline
-    def setIpv6CidrBlockAssociationSetVarargs(value: VpcIpv6CidrBlockAssociation*): Self = this.set("Ipv6CidrBlockAssociationSet", js.Array(value :_*))
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6CidrBlockAssociationSet(value: VpcIpv6CidrBlockAssociationSet): Self = this.set("Ipv6CidrBlockAssociationSet", value.asInstanceOf[js.Any])
+    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
     
     @scala.inline
-    def deleteIpv6CidrBlockAssociationSet: Self = this.set("Ipv6CidrBlockAssociationSet", js.undefined)
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    def setState(value: VpcState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: VpcState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

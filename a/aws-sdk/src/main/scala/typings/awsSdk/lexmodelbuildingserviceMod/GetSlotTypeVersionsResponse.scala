@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSlotTypeVersionsResponse extends js.Object {
+trait GetSlotTypeVersionsResponse extends StObject {
   
   /**
     * A pagination token for fetching the next page of slot type versions. If the response to this call is truncated, Amazon Lex returns a pagination token in the response. To fetch the next page of versions, specify the pagination token in the next request. 
@@ -26,33 +27,21 @@ object GetSlotTypeVersionsResponse {
   }
   
   @scala.inline
-  implicit class GetSlotTypeVersionsResponseOps[Self <: GetSlotTypeVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class GetSlotTypeVersionsResponseMutableBuilder[Self <: GetSlotTypeVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSlotTypes(value: SlotTypeMetadataList): Self = StObject.set(x, "slotTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setSlotTypesUndefined: Self = StObject.set(x, "slotTypes", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setSlotTypesVarargs(value: SlotTypeMetadata*): Self = this.set("slotTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSlotTypes(value: SlotTypeMetadataList): Self = this.set("slotTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlotTypes: Self = this.set("slotTypes", js.undefined)
+    def setSlotTypesVarargs(value: SlotTypeMetadata*): Self = StObject.set(x, "slotTypes", js.Array(value :_*))
   }
 }

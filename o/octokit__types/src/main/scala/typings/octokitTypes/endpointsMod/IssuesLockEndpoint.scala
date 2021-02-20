@@ -4,12 +4,13 @@ import typings.octokitTypes.octokitTypesStrings.`off-topic`
 import typings.octokitTypes.octokitTypesStrings.`too heated`
 import typings.octokitTypes.octokitTypesStrings.resolved
 import typings.octokitTypes.octokitTypesStrings.spam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IssuesLockEndpoint extends js.Object {
+trait IssuesLockEndpoint extends StObject {
   
   var issue_number: Double = js.native
   
@@ -35,33 +36,21 @@ object IssuesLockEndpoint {
   }
   
   @scala.inline
-  implicit class IssuesLockEndpointOps[Self <: IssuesLockEndpoint] (val x: Self) extends AnyVal {
+  implicit class IssuesLockEndpointMutableBuilder[Self <: IssuesLockEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLock_reason(value: `off-topic` | (`too heated`) | resolved | spam): Self = StObject.set(x, "lock_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLock_reasonUndefined: Self = StObject.set(x, "lock_reason", js.undefined)
     
     @scala.inline
-    def setIssue_number(value: Double): Self = this.set("issue_number", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLock_reason(value: `off-topic` | (`too heated`) | resolved | spam): Self = this.set("lock_reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLock_reason: Self = this.set("lock_reason", js.undefined)
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulletFormat2 extends js.Object {
+trait BulletFormat2 extends StObject {
   
   val Application: js.Any = js.native
   
@@ -64,63 +65,51 @@ object BulletFormat2 {
   }
   
   @scala.inline
-  implicit class BulletFormat2Ops[Self <: BulletFormat2] (val x: Self) extends AnyVal {
+  implicit class BulletFormat2MutableBuilder[Self <: BulletFormat2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharacter(value: Double): Self = StObject.set(x, "Character", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFont(value: Font2): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacter(value: Double): Self = this.set("Character", value.asInstanceOf[js.Any])
+    def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setOfficeDotBulletFormat2_typekey(value: BulletFormat2): Self = StObject.set(x, "Office.BulletFormat2_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: Font2): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("Number", value.asInstanceOf[js.Any])
+    def setPicture(value: String => Unit): Self = StObject.set(x, "Picture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOfficeDotBulletFormat2_typekey(value: BulletFormat2): Self = this.set("Office.BulletFormat2_typekey", value.asInstanceOf[js.Any])
+    def setRelativeSize(value: Double): Self = StObject.set(x, "RelativeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setStartValue(value: Double): Self = StObject.set(x, "StartValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: String => Unit): Self = this.set("Picture", js.Any.fromFunction1(value))
+    def setStyle(value: MsoNumberedBulletStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeSize(value: Double): Self = this.set("RelativeSize", value.asInstanceOf[js.Any])
+    def setType(value: MsoBulletType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartValue(value: Double): Self = this.set("StartValue", value.asInstanceOf[js.Any])
+    def setUseTextColor(value: MsoTriState): Self = StObject.set(x, "UseTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: MsoNumberedBulletStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
+    def setUseTextFont(value: MsoTriState): Self = StObject.set(x, "UseTextFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: MsoBulletType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseTextColor(value: MsoTriState): Self = this.set("UseTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseTextFont(value: MsoTriState): Self = this.set("UseTextFont", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: MsoTriState): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

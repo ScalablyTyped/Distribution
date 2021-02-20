@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -143,9 +144,7 @@ class SubMesh protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.SubMesh")
-@js.native
-object SubMesh extends js.Object {
+object SubMesh {
   
   /**
     * Add a new submesh to a mesh
@@ -159,6 +158,8 @@ object SubMesh extends js.Object {
     * @param createBoundingBox defines if bounding box should be created for this submesh
     * @returns the new submesh
     */
+  @JSGlobal("BABYLON.SubMesh.AddToMesh")
+  @js.native
   def AddToMesh(
     materialIndex: Double,
     verticesStart: Double,
@@ -167,6 +168,8 @@ object SubMesh extends js.Object {
     indexCount: Double,
     mesh: typings.babylonjs.BABYLON.AbstractMesh
   ): typings.babylonjs.BABYLON.SubMesh = js.native
+  @JSGlobal("BABYLON.SubMesh.AddToMesh")
+  @js.native
   def AddToMesh(
     materialIndex: Double,
     verticesStart: Double,
@@ -177,6 +180,8 @@ object SubMesh extends js.Object {
     renderingMesh: js.UndefOr[scala.Nothing],
     createBoundingBox: Boolean
   ): typings.babylonjs.BABYLON.SubMesh = js.native
+  @JSGlobal("BABYLON.SubMesh.AddToMesh")
+  @js.native
   def AddToMesh(
     materialIndex: Double,
     verticesStart: Double,
@@ -186,6 +191,8 @@ object SubMesh extends js.Object {
     mesh: typings.babylonjs.BABYLON.AbstractMesh,
     renderingMesh: typings.babylonjs.BABYLON.Mesh
   ): typings.babylonjs.BABYLON.SubMesh = js.native
+  @JSGlobal("BABYLON.SubMesh.AddToMesh")
+  @js.native
   def AddToMesh(
     materialIndex: Double,
     verticesStart: Double,
@@ -206,12 +213,16 @@ object SubMesh extends js.Object {
     * @param renderingMesh the optional rendering mesh
     * @returns a new submesh
     */
+  @JSGlobal("BABYLON.SubMesh.CreateFromIndices")
+  @js.native
   def CreateFromIndices(
     materialIndex: Double,
     startIndex: Double,
     indexCount: Double,
     mesh: typings.babylonjs.BABYLON.AbstractMesh
   ): typings.babylonjs.BABYLON.SubMesh = js.native
+  @JSGlobal("BABYLON.SubMesh.CreateFromIndices")
+  @js.native
   def CreateFromIndices(
     materialIndex: Double,
     startIndex: Double,

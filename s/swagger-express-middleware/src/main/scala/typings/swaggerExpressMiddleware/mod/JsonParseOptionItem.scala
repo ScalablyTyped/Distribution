@@ -4,12 +4,13 @@ import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsonParseOptionItem extends js.Object {
+trait JsonParseOptionItem extends StObject {
   
   /**
     * if deflated bodies will be inflated. (default: true)
@@ -66,59 +67,47 @@ object JsonParseOptionItem {
   }
   
   @scala.inline
-  implicit class JsonParseOptionItemOps[Self <: JsonParseOptionItem] (val x: Self) extends AnyVal {
+  implicit class JsonParseOptionItemMutableBuilder[Self <: JsonParseOptionItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInflate(value: Boolean): Self = StObject.set(x, "inflate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInflateUndefined: Self = StObject.set(x, "inflate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: String | Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInflate(value: Boolean): Self = this.set("inflate", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteInflate: Self = this.set("inflate", js.undefined)
+    def setReceiver(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "receiver", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLimit(value: String | Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setReceiverUndefined: Self = StObject.set(x, "receiver", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiver(value: (/* key */ String, /* value */ js.Any) => _): Self = this.set("receiver", js.Any.fromFunction2(value))
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
     @scala.inline
-    def deleteReceiver: Self = this.set("receiver", js.undefined)
+    def setType(value: (js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]) | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    def setTypeFunction1(value: /* req */ Request_[ParamsDictionary, _, _, Query] => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
-    
-    @scala.inline
-    def setTypeFunction1(value: /* req */ Request_[ParamsDictionary, _, _, Query] => String): Self = this.set("type", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setType(value: (js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]) | String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
     def setVerify(
       value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit
-    ): Self = this.set("verify", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "verify", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteVerify: Self = this.set("verify", js.undefined)
+    def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
   }
 }

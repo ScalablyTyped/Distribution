@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Split extends js.Object {
+trait Split extends StObject {
   
   /**
     * Blurs the current editor.
@@ -104,57 +105,45 @@ object Split {
   }
   
   @scala.inline
-  implicit class SplitOps[Self <: Split] (val x: Self) extends AnyVal {
+  implicit class SplitMutableBuilder[Self <: Split] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForEach(value: (js.Function, String) => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBlur(value: () => Unit): Self = this.set("blur", js.Any.fromFunction0(value))
+    def setGetCurrentEditor(value: () => Editor): Self = StObject.set(x, "getCurrentEditor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFocus(value: () => Unit): Self = this.set("focus", js.Any.fromFunction0(value))
+    def setGetEditor(value: Double => Unit): Self = StObject.set(x, "getEditor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForEach(value: (js.Function, String) => Unit): Self = this.set("forEach", js.Any.fromFunction2(value))
+    def setGetOrientation(value: () => Double): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentEditor(value: () => Editor): Self = this.set("getCurrentEditor", js.Any.fromFunction0(value))
+    def setGetSplits(value: () => Double): Self = StObject.set(x, "getSplits", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEditor(value: Double => Unit): Self = this.set("getEditor", js.Any.fromFunction1(value))
+    def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOrientation(value: () => Double): Self = this.set("getOrientation", js.Any.fromFunction0(value))
+    def setSetFontSize(value: Double => Unit): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSplits(value: () => Double): Self = this.set("getSplits", js.Any.fromFunction0(value))
+    def setSetKeyboardHandler(value: String => Unit): Self = StObject.set(x, "setKeyboardHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResize(value: () => Unit): Self = this.set("resize", js.Any.fromFunction0(value))
+    def setSetOrientation(value: Double => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFontSize(value: Double => Unit): Self = this.set("setFontSize", js.Any.fromFunction1(value))
+    def setSetSession(value: (IEditSession, Double) => Unit): Self = StObject.set(x, "setSession", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetKeyboardHandler(value: String => Unit): Self = this.set("setKeyboardHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOrientation(value: Double => Unit): Self = this.set("setOrientation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSession(value: (IEditSession, Double) => Unit): Self = this.set("setSession", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetTheme(value: String => Unit): Self = this.set("setTheme", js.Any.fromFunction1(value))
+    def setSetTheme(value: String => Unit): Self = StObject.set(x, "setTheme", js.Any.fromFunction1(value))
   }
 }

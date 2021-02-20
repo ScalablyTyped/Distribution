@@ -1,5 +1,6 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,9 @@ class LngLat protected () extends _LngLatLike {
   def wrap(): LngLat = js.native
 }
 /* static members */
-@JSImport("mapbox-gl", "LngLat")
-@js.native
-object LngLat extends js.Object {
+object LngLat {
   
+  @JSImport("mapbox-gl", "LngLat.convert")
+  @js.native
   def convert(input: LngLatLike): LngLat = js.native
 }

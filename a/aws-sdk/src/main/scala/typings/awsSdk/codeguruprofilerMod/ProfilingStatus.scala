@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProfilingStatus extends js.Object {
+trait ProfilingStatus extends StObject {
   
   /**
     * The date and time when the profiling agent most recently pinged back. Specify using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
@@ -31,36 +32,24 @@ object ProfilingStatus {
   }
   
   @scala.inline
-  implicit class ProfilingStatusOps[Self <: ProfilingStatus] (val x: Self) extends AnyVal {
+  implicit class ProfilingStatusMutableBuilder[Self <: ProfilingStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatestAgentOrchestratedAt(value: Timestamp): Self = StObject.set(x, "latestAgentOrchestratedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatestAgentOrchestratedAtUndefined: Self = StObject.set(x, "latestAgentOrchestratedAt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatestAgentProfileReportedAt(value: Timestamp): Self = StObject.set(x, "latestAgentProfileReportedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestAgentOrchestratedAt(value: Timestamp): Self = this.set("latestAgentOrchestratedAt", value.asInstanceOf[js.Any])
+    def setLatestAgentProfileReportedAtUndefined: Self = StObject.set(x, "latestAgentProfileReportedAt", js.undefined)
     
     @scala.inline
-    def deleteLatestAgentOrchestratedAt: Self = this.set("latestAgentOrchestratedAt", js.undefined)
+    def setLatestAggregatedProfile(value: AggregatedProfileTime): Self = StObject.set(x, "latestAggregatedProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestAgentProfileReportedAt(value: Timestamp): Self = this.set("latestAgentProfileReportedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestAgentProfileReportedAt: Self = this.set("latestAgentProfileReportedAt", js.undefined)
-    
-    @scala.inline
-    def setLatestAggregatedProfile(value: AggregatedProfileTime): Self = this.set("latestAggregatedProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestAggregatedProfile: Self = this.set("latestAggregatedProfile", js.undefined)
+    def setLatestAggregatedProfileUndefined: Self = StObject.set(x, "latestAggregatedProfile", js.undefined)
   }
 }

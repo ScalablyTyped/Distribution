@@ -1,5 +1,6 @@
 package typings.coinbaseCommerceNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* Inlined {[ key in coinbase-commerce-node.coinbase-commerce-node.CryptoName ]:? coinbase-commerce-node.coinbase-commerce-node.Price<coinbase-commerce-node.coinbase-commerce-node.CryptoCurrency>} */
 @js.native
-trait CryptoPricing extends js.Object {
+trait CryptoPricing extends StObject {
   
   var bitcoin: js.UndefOr[Price[CryptoCurrency]] = js.native
   
@@ -30,48 +31,36 @@ object CryptoPricing {
   }
   
   @scala.inline
-  implicit class CryptoPricingOps[Self <: CryptoPricing] (val x: Self) extends AnyVal {
+  implicit class CryptoPricingMutableBuilder[Self <: CryptoPricing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitcoin(value: Price[CryptoCurrency]): Self = StObject.set(x, "bitcoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitcoinUndefined: Self = StObject.set(x, "bitcoin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitcoincash(value: Price[CryptoCurrency]): Self = StObject.set(x, "bitcoincash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitcoin(value: Price[CryptoCurrency]): Self = this.set("bitcoin", value.asInstanceOf[js.Any])
+    def setBitcoincashUndefined: Self = StObject.set(x, "bitcoincash", js.undefined)
     
     @scala.inline
-    def deleteBitcoin: Self = this.set("bitcoin", js.undefined)
+    def setEthereum(value: Price[CryptoCurrency]): Self = StObject.set(x, "ethereum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitcoincash(value: Price[CryptoCurrency]): Self = this.set("bitcoincash", value.asInstanceOf[js.Any])
+    def setEthereumUndefined: Self = StObject.set(x, "ethereum", js.undefined)
     
     @scala.inline
-    def deleteBitcoincash: Self = this.set("bitcoincash", js.undefined)
+    def setLitecoin(value: Price[CryptoCurrency]): Self = StObject.set(x, "litecoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEthereum(value: Price[CryptoCurrency]): Self = this.set("ethereum", value.asInstanceOf[js.Any])
+    def setLitecoinUndefined: Self = StObject.set(x, "litecoin", js.undefined)
     
     @scala.inline
-    def deleteEthereum: Self = this.set("ethereum", js.undefined)
+    def setUsdc(value: Price[CryptoCurrency]): Self = StObject.set(x, "usdc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLitecoin(value: Price[CryptoCurrency]): Self = this.set("litecoin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLitecoin: Self = this.set("litecoin", js.undefined)
-    
-    @scala.inline
-    def setUsdc(value: Price[CryptoCurrency]): Self = this.set("usdc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsdc: Self = this.set("usdc", js.undefined)
+    def setUsdcUndefined: Self = StObject.set(x, "usdc", js.undefined)
   }
 }

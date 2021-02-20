@@ -1,11 +1,12 @@
 package typings.acmeClient.rfc8555Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountUpdateRequest extends js.Object {
+trait AccountUpdateRequest extends StObject {
   
   var contact: js.UndefOr[js.Array[String]] = js.native
   
@@ -22,39 +23,27 @@ object AccountUpdateRequest {
   }
   
   @scala.inline
-  implicit class AccountUpdateRequestOps[Self <: AccountUpdateRequest] (val x: Self) extends AnyVal {
+  implicit class AccountUpdateRequestMutableBuilder[Self <: AccountUpdateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContact(value: js.Array[String]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactVarargs(value: String*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
     @scala.inline
-    def setContactVarargs(value: String*): Self = this.set("contact", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContact(value: js.Array[String]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setTermsOfServiceAgreed(value: Boolean): Self = StObject.set(x, "termsOfServiceAgreed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTermsOfServiceAgreed(value: Boolean): Self = this.set("termsOfServiceAgreed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTermsOfServiceAgreed: Self = this.set("termsOfServiceAgreed", js.undefined)
+    def setTermsOfServiceAgreedUndefined: Self = StObject.set(x, "termsOfServiceAgreed", js.undefined)
   }
 }

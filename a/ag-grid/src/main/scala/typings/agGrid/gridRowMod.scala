@@ -2,16 +2,16 @@ package typings.agGrid
 
 import typings.agGrid.columnMod.Column
 import typings.agGrid.gridCellMod.GridCell
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/entities/gridRow", JSImport.Namespace)
-@js.native
-object gridRowMod extends js.Object {
+object gridRowMod {
   
+  @JSImport("ag-grid/dist/lib/entities/gridRow", "GridRow")
   @js.native
-  class GridRow protected () extends js.Object {
+  class GridRow protected () extends StObject {
     def this(rowIndex: Double, floating: String) = this()
     
     def before(otherSelection: GridRow): Boolean = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SalesforceKnowledgeArticleConfiguration extends js.Object {
+trait SalesforceKnowledgeArticleConfiguration extends StObject {
   
   /**
     * Provides configuration information for custom Salesforce knowledge articles.
@@ -31,39 +32,27 @@ object SalesforceKnowledgeArticleConfiguration {
   }
   
   @scala.inline
-  implicit class SalesforceKnowledgeArticleConfigurationOps[Self <: SalesforceKnowledgeArticleConfiguration] (val x: Self) extends AnyVal {
+  implicit class SalesforceKnowledgeArticleConfigurationMutableBuilder[Self <: SalesforceKnowledgeArticleConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomKnowledgeArticleTypeConfigurations(value: SalesforceCustomKnowledgeArticleTypeConfigurationList): Self = StObject.set(x, "CustomKnowledgeArticleTypeConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomKnowledgeArticleTypeConfigurationsUndefined: Self = StObject.set(x, "CustomKnowledgeArticleTypeConfigurations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomKnowledgeArticleTypeConfigurationsVarargs(value: SalesforceCustomKnowledgeArticleTypeConfiguration*): Self = StObject.set(x, "CustomKnowledgeArticleTypeConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setIncludedStatesVarargs(value: SalesforceKnowledgeArticleState*): Self = this.set("IncludedStates", js.Array(value :_*))
+    def setIncludedStates(value: SalesforceKnowledgeArticleStateList): Self = StObject.set(x, "IncludedStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedStates(value: SalesforceKnowledgeArticleStateList): Self = this.set("IncludedStates", value.asInstanceOf[js.Any])
+    def setIncludedStatesVarargs(value: SalesforceKnowledgeArticleState*): Self = StObject.set(x, "IncludedStates", js.Array(value :_*))
     
     @scala.inline
-    def setCustomKnowledgeArticleTypeConfigurationsVarargs(value: SalesforceCustomKnowledgeArticleTypeConfiguration*): Self = this.set("CustomKnowledgeArticleTypeConfigurations", js.Array(value :_*))
+    def setStandardKnowledgeArticleTypeConfiguration(value: SalesforceStandardKnowledgeArticleTypeConfiguration): Self = StObject.set(x, "StandardKnowledgeArticleTypeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomKnowledgeArticleTypeConfigurations(value: SalesforceCustomKnowledgeArticleTypeConfigurationList): Self = this.set("CustomKnowledgeArticleTypeConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomKnowledgeArticleTypeConfigurations: Self = this.set("CustomKnowledgeArticleTypeConfigurations", js.undefined)
-    
-    @scala.inline
-    def setStandardKnowledgeArticleTypeConfiguration(value: SalesforceStandardKnowledgeArticleTypeConfiguration): Self = this.set("StandardKnowledgeArticleTypeConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandardKnowledgeArticleTypeConfiguration: Self = this.set("StandardKnowledgeArticleTypeConfiguration", js.undefined)
+    def setStandardKnowledgeArticleTypeConfigurationUndefined: Self = StObject.set(x, "StandardKnowledgeArticleTypeConfiguration", js.undefined)
   }
 }

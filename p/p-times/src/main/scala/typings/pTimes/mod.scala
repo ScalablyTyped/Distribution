@@ -1,12 +1,11 @@
 package typings.pTimes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-times", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Run promise-returning & async functions a specific number of times concurrently.
@@ -23,12 +22,20 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("p-times", JSImport.Namespace)
+  @js.native
   def apply[ValueType](count: Double, mapper: js.Function1[/* index */ Double, ValueType | js.Thenable[ValueType]]): js.Promise[js.Array[ValueType]] = js.native
+  @JSImport("p-times", JSImport.Namespace)
+  @js.native
   def apply[ValueType](
     count: Double,
     mapper: js.Function1[/* index */ Double, ValueType | js.Thenable[ValueType]],
     options: Options
   ): js.Promise[js.Array[ValueType]] = js.native
+  
+  @JSImport("p-times", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function pTimes<ValueType>(
@@ -37,7 +44,11 @@ object mod extends js.Object {
   // 	options?: pTimes.Options
   // ): Promise<ValueType[]>;
   // export = pTimes;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimes */ js.Any = js.native
+  @JSImport("p-times", "default")
+  @js.native
+  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimes */ js.Any = js.native
+  @scala.inline
+  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimes */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   type Options = typings.pMap.mod.Options
 }

@@ -7,12 +7,13 @@ import typings.chosenJs.Chosen.TriggerEvent
 import typings.chosenJs.chosenJsStrings.change
 import typings.chosenJs.chosenJsStrings.destroy
 import typings.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def chosen(): JQuery = js.native
   def chosen(options: Options): JQuery = js.native

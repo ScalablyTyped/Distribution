@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTrustResult extends js.Object {
+trait CreateTrustResult extends StObject {
   
   /**
     * A unique identifier for the trust relationship that was created.
@@ -21,24 +22,12 @@ object CreateTrustResult {
   }
   
   @scala.inline
-  implicit class CreateTrustResultOps[Self <: CreateTrustResult] (val x: Self) extends AnyVal {
+  implicit class CreateTrustResultMutableBuilder[Self <: CreateTrustResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTrustId(value: TrustId): Self = this.set("TrustId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustId: Self = this.set("TrustId", js.undefined)
+    def setTrustIdUndefined: Self = StObject.set(x, "TrustId", js.undefined)
   }
 }

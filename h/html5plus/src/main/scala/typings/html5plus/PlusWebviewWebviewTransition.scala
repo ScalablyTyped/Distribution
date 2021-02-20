@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewTransition extends js.Object {
+trait PlusWebviewWebviewTransition extends StObject {
   
   /**
     * 变换持续的时间
@@ -50,36 +51,24 @@ object PlusWebviewWebviewTransition {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewTransitionOps[Self <: PlusWebviewWebviewTransition] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewTransitionMutableBuilder[Self <: PlusWebviewWebviewTransition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setTimingfunction(value: String): Self = StObject.set(x, "timingfunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperty: Self = this.set("property", js.undefined)
-    
-    @scala.inline
-    def setTimingfunction(value: String): Self = this.set("timingfunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingfunction: Self = this.set("timingfunction", js.undefined)
+    def setTimingfunctionUndefined: Self = StObject.set(x, "timingfunction", js.undefined)
   }
 }

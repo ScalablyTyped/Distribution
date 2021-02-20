@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SupportedFieldTypeDetails extends js.Object {
+trait SupportedFieldTypeDetails extends StObject {
   
   /**
     *  The initial supported version for fieldType. If this is later changed to a different version, v2 will be introduced. 
@@ -21,21 +22,9 @@ object SupportedFieldTypeDetails {
   }
   
   @scala.inline
-  implicit class SupportedFieldTypeDetailsOps[Self <: SupportedFieldTypeDetails] (val x: Self) extends AnyVal {
+  implicit class SupportedFieldTypeDetailsMutableBuilder[Self <: SupportedFieldTypeDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setV1(value: FieldTypeDetails): Self = this.set("v1", value.asInstanceOf[js.Any])
+    def setV1(value: FieldTypeDetails): Self = StObject.set(x, "v1", value.asInstanceOf[js.Any])
   }
 }

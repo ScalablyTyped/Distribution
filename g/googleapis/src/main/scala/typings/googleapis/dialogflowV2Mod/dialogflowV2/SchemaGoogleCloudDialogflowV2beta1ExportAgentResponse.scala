@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response message for Agents.ExportAgent.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse extends StObject {
   
   /**
     * The exported agent.  Example for how to export an agent to a zip file via
@@ -39,30 +40,18 @@ object SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1ExportAgentResponseOps[Self <: SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1ExportAgentResponseMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1ExportAgentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentContent(value: String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentContentUndefined: Self = StObject.set(x, "agentContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentContent(value: String): Self = this.set("agentContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgentContent: Self = this.set("agentContent", js.undefined)
-    
-    @scala.inline
-    def setAgentUri(value: String): Self = this.set("agentUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgentUri: Self = this.set("agentUri", js.undefined)
+    def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
   }
 }

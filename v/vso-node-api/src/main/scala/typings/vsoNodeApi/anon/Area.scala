@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Area extends js.Object {
+trait Area extends StObject {
   
   var area: scala.Double = js.native
   
@@ -20,24 +21,12 @@ object Area {
   }
   
   @scala.inline
-  implicit class AreaOps[Self <: Area] (val x: Self) extends AnyVal {
+  implicit class AreaMutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: scala.Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArea(value: scala.Double): Self = this.set("area", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIteration(value: scala.Double): Self = this.set("iteration", value.asInstanceOf[js.Any])
+    def setIteration(value: scala.Double): Self = StObject.set(x, "iteration", value.asInstanceOf[js.Any])
   }
 }

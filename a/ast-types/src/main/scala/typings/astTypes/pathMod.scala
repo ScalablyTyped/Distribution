@@ -5,18 +5,19 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.astTypes.astTypesMod.Fork
 import typings.astTypes.typesMod.ASTNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ast-types/lib/path", JSImport.Namespace)
-@js.native
-object pathMod extends js.Object {
+object pathMod {
   
+  @JSImport("ast-types/lib/path", JSImport.Default)
+  @js.native
   def default(fork: Fork): PathConstructor = js.native
   
   @js.native
-  trait Path[V] extends js.Object {
+  trait Path[V] extends StObject {
     
     var __childCache: js.Object | Null = js.native
     

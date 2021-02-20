@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioCodecSettings extends js.Object {
+trait AudioCodecSettings extends StObject {
   
   /**
     * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value AAC. The service accepts one of two mutually exclusive groups of AAC settings--VBR and CBR. To select one of these modes, set the value of Bitrate control mode (rateControlMode) to "VBR" or "CBR".  In VBR mode, you control the audio quality with the setting VBR quality (vbrQuality). In CBR mode, you use the setting Bitrate (bitrate). Defaults and valid values depend on the rate control mode.
@@ -71,84 +72,72 @@ object AudioCodecSettings {
   }
   
   @scala.inline
-  implicit class AudioCodecSettingsOps[Self <: AudioCodecSettings] (val x: Self) extends AnyVal {
+  implicit class AudioCodecSettingsMutableBuilder[Self <: AudioCodecSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAacSettings(value: AacSettings): Self = StObject.set(x, "AacSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAacSettingsUndefined: Self = StObject.set(x, "AacSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAc3Settings(value: Ac3Settings): Self = StObject.set(x, "Ac3Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAacSettings(value: AacSettings): Self = this.set("AacSettings", value.asInstanceOf[js.Any])
+    def setAc3SettingsUndefined: Self = StObject.set(x, "Ac3Settings", js.undefined)
     
     @scala.inline
-    def deleteAacSettings: Self = this.set("AacSettings", js.undefined)
+    def setAiffSettings(value: AiffSettings): Self = StObject.set(x, "AiffSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAc3Settings(value: Ac3Settings): Self = this.set("Ac3Settings", value.asInstanceOf[js.Any])
+    def setAiffSettingsUndefined: Self = StObject.set(x, "AiffSettings", js.undefined)
     
     @scala.inline
-    def deleteAc3Settings: Self = this.set("Ac3Settings", js.undefined)
+    def setCodec(value: AudioCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAiffSettings(value: AiffSettings): Self = this.set("AiffSettings", value.asInstanceOf[js.Any])
+    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
     @scala.inline
-    def deleteAiffSettings: Self = this.set("AiffSettings", js.undefined)
+    def setEac3AtmosSettings(value: Eac3AtmosSettings): Self = StObject.set(x, "Eac3AtmosSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: AudioCodec): Self = this.set("Codec", value.asInstanceOf[js.Any])
+    def setEac3AtmosSettingsUndefined: Self = StObject.set(x, "Eac3AtmosSettings", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("Codec", js.undefined)
+    def setEac3Settings(value: Eac3Settings): Self = StObject.set(x, "Eac3Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEac3AtmosSettings(value: Eac3AtmosSettings): Self = this.set("Eac3AtmosSettings", value.asInstanceOf[js.Any])
+    def setEac3SettingsUndefined: Self = StObject.set(x, "Eac3Settings", js.undefined)
     
     @scala.inline
-    def deleteEac3AtmosSettings: Self = this.set("Eac3AtmosSettings", js.undefined)
+    def setMp2Settings(value: Mp2Settings): Self = StObject.set(x, "Mp2Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEac3Settings(value: Eac3Settings): Self = this.set("Eac3Settings", value.asInstanceOf[js.Any])
+    def setMp2SettingsUndefined: Self = StObject.set(x, "Mp2Settings", js.undefined)
     
     @scala.inline
-    def deleteEac3Settings: Self = this.set("Eac3Settings", js.undefined)
+    def setMp3Settings(value: Mp3Settings): Self = StObject.set(x, "Mp3Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMp2Settings(value: Mp2Settings): Self = this.set("Mp2Settings", value.asInstanceOf[js.Any])
+    def setMp3SettingsUndefined: Self = StObject.set(x, "Mp3Settings", js.undefined)
     
     @scala.inline
-    def deleteMp2Settings: Self = this.set("Mp2Settings", js.undefined)
+    def setOpusSettings(value: OpusSettings): Self = StObject.set(x, "OpusSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMp3Settings(value: Mp3Settings): Self = this.set("Mp3Settings", value.asInstanceOf[js.Any])
+    def setOpusSettingsUndefined: Self = StObject.set(x, "OpusSettings", js.undefined)
     
     @scala.inline
-    def deleteMp3Settings: Self = this.set("Mp3Settings", js.undefined)
+    def setVorbisSettings(value: VorbisSettings): Self = StObject.set(x, "VorbisSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpusSettings(value: OpusSettings): Self = this.set("OpusSettings", value.asInstanceOf[js.Any])
+    def setVorbisSettingsUndefined: Self = StObject.set(x, "VorbisSettings", js.undefined)
     
     @scala.inline
-    def deleteOpusSettings: Self = this.set("OpusSettings", js.undefined)
+    def setWavSettings(value: WavSettings): Self = StObject.set(x, "WavSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVorbisSettings(value: VorbisSettings): Self = this.set("VorbisSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVorbisSettings: Self = this.set("VorbisSettings", js.undefined)
-    
-    @scala.inline
-    def setWavSettings(value: WavSettings): Self = this.set("WavSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWavSettings: Self = this.set("WavSettings", js.undefined)
+    def setWavSettingsUndefined: Self = StObject.set(x, "WavSettings", js.undefined)
   }
 }

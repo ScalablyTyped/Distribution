@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeUserProfileResponse extends js.Object {
+trait DescribeUserProfileResponse extends StObject {
   
   /**
     * The creation time.
@@ -71,84 +72,72 @@ object DescribeUserProfileResponse {
   }
   
   @scala.inline
-  implicit class DescribeUserProfileResponseOps[Self <: DescribeUserProfileResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeUserProfileResponseMutableBuilder[Self <: DescribeUserProfileResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainId(value: DomainId): Self = this.set("DomainId", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def deleteDomainId: Self = this.set("DomainId", js.undefined)
+    def setHomeEfsFileSystemUid(value: EfsUid): Self = StObject.set(x, "HomeEfsFileSystemUid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setHomeEfsFileSystemUidUndefined: Self = StObject.set(x, "HomeEfsFileSystemUid", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeEfsFileSystemUid(value: EfsUid): Self = this.set("HomeEfsFileSystemUid", value.asInstanceOf[js.Any])
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteHomeEfsFileSystemUid: Self = this.set("HomeEfsFileSystemUid", js.undefined)
+    def setSingleSignOnUserIdentifier(value: SingleSignOnUserIdentifier): Self = StObject.set(x, "SingleSignOnUserIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: LastModifiedTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setSingleSignOnUserIdentifierUndefined: Self = StObject.set(x, "SingleSignOnUserIdentifier", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    def setSingleSignOnUserValue(value: String256): Self = StObject.set(x, "SingleSignOnUserValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleSignOnUserIdentifier(value: SingleSignOnUserIdentifier): Self = this.set("SingleSignOnUserIdentifier", value.asInstanceOf[js.Any])
+    def setSingleSignOnUserValueUndefined: Self = StObject.set(x, "SingleSignOnUserValue", js.undefined)
     
     @scala.inline
-    def deleteSingleSignOnUserIdentifier: Self = this.set("SingleSignOnUserIdentifier", js.undefined)
+    def setStatus(value: UserProfileStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleSignOnUserValue(value: String256): Self = this.set("SingleSignOnUserValue", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSingleSignOnUserValue: Self = this.set("SingleSignOnUserValue", js.undefined)
+    def setUserProfileArn(value: UserProfileArn): Self = StObject.set(x, "UserProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: UserProfileStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setUserProfileArnUndefined: Self = StObject.set(x, "UserProfileArn", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setUserProfileName(value: UserProfileName): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserProfileArn(value: UserProfileArn): Self = this.set("UserProfileArn", value.asInstanceOf[js.Any])
+    def setUserProfileNameUndefined: Self = StObject.set(x, "UserProfileName", js.undefined)
     
     @scala.inline
-    def deleteUserProfileArn: Self = this.set("UserProfileArn", js.undefined)
+    def setUserSettings(value: UserSettings): Self = StObject.set(x, "UserSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserProfileName(value: UserProfileName): Self = this.set("UserProfileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProfileName: Self = this.set("UserProfileName", js.undefined)
-    
-    @scala.inline
-    def setUserSettings(value: UserSettings): Self = this.set("UserSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSettings: Self = this.set("UserSettings", js.undefined)
+    def setUserSettingsUndefined: Self = StObject.set(x, "UserSettings", js.undefined)
   }
 }

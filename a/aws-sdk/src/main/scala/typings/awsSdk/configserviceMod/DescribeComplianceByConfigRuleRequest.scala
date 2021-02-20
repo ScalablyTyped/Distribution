@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeComplianceByConfigRuleRequest extends js.Object {
+trait DescribeComplianceByConfigRuleRequest extends StObject {
   
   /**
     * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
@@ -31,42 +32,30 @@ object DescribeComplianceByConfigRuleRequest {
   }
   
   @scala.inline
-  implicit class DescribeComplianceByConfigRuleRequestOps[Self <: DescribeComplianceByConfigRuleRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeComplianceByConfigRuleRequestMutableBuilder[Self <: DescribeComplianceByConfigRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceTypes(value: ComplianceTypes): Self = StObject.set(x, "ComplianceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceTypesUndefined: Self = StObject.set(x, "ComplianceTypes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceTypesVarargs(value: ComplianceType*): Self = StObject.set(x, "ComplianceTypes", js.Array(value :_*))
     
     @scala.inline
-    def setComplianceTypesVarargs(value: ComplianceType*): Self = this.set("ComplianceTypes", js.Array(value :_*))
+    def setConfigRuleNames(value: ConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceTypes(value: ComplianceTypes): Self = this.set("ComplianceTypes", value.asInstanceOf[js.Any])
+    def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
     
     @scala.inline
-    def deleteComplianceTypes: Self = this.set("ComplianceTypes", js.undefined)
+    def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
     
     @scala.inline
-    def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = this.set("ConfigRuleNames", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigRuleNames(value: ConfigRuleNames): Self = this.set("ConfigRuleNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigRuleNames: Self = this.set("ConfigRuleNames", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

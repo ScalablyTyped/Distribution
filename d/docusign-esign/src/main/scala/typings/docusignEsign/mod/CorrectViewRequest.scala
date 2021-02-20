@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CorrectViewRequest extends js.Object {
+trait CorrectViewRequest extends StObject {
   
   /**
     * (Optional) The URL to which the user should be redirected after the correct/send view session has ended. DocuSign redirects to this URL and includes an event
@@ -39,30 +40,18 @@ object CorrectViewRequest {
   }
   
   @scala.inline
-  implicit class CorrectViewRequestOps[Self <: CorrectViewRequest] (val x: Self) extends AnyVal {
+  implicit class CorrectViewRequestMutableBuilder[Self <: CorrectViewRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuppressNavigation(value: String): Self = StObject.set(x, "suppressNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnUrl(value: String): Self = this.set("returnUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnUrl: Self = this.set("returnUrl", js.undefined)
-    
-    @scala.inline
-    def setSuppressNavigation(value: String): Self = this.set("suppressNavigation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressNavigation: Self = this.set("suppressNavigation", js.undefined)
+    def setSuppressNavigationUndefined: Self = StObject.set(x, "suppressNavigation", js.undefined)
   }
 }

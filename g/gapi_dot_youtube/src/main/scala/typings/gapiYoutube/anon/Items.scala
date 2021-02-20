@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Items extends js.Object {
+trait Items extends StObject {
   
   /**
     * The list of promoted items in the order that they will display across different playbacks to the same viewer.
@@ -31,30 +32,18 @@ object Items {
   }
   
   @scala.inline
-  implicit class ItemsOps[Self <: Items] (val x: Self) extends AnyVal {
+  implicit class ItemsMutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[Type]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsVarargs(value: Type*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: CornerPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: Type*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[Type]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: CornerPosition): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiming(value: OffsetMs): Self = this.set("timing", value.asInstanceOf[js.Any])
+    def setTiming(value: OffsetMs): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
   }
 }

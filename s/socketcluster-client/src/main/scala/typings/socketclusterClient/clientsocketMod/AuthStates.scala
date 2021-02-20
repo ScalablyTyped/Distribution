@@ -1,5 +1,6 @@
 package typings.socketclusterClient.clientsocketMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.socketclusterClient.socketclusterClientStrings.authenticated
   - typings.socketclusterClient.socketclusterClientStrings.unauthenticated
 */
-trait AuthStates extends js.Object
+trait AuthStates extends StObject
 object AuthStates {
   
   @scala.inline

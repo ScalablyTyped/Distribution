@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.dockerode.anon.Destination
 import typings.dockerode.anon.NetworkMode
 import typings.dockerode.anon.Networks
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerInfo extends js.Object {
+trait ContainerInfo extends StObject {
   
   var Command: String = js.native
   
@@ -60,66 +61,54 @@ object ContainerInfo {
   }
   
   @scala.inline
-  implicit class ContainerInfoOps[Self <: ContainerInfo] (val x: Self) extends AnyVal {
+  implicit class ContainerInfoMutableBuilder[Self <: ContainerInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated(value: Double): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostConfig(value: NetworkMode): Self = StObject.set(x, "HostConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("Created", value.asInstanceOf[js.Any])
+    def setImage(value: String): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostConfig(value: NetworkMode): Self = this.set("HostConfig", value.asInstanceOf[js.Any])
+    def setImageID(value: String): Self = StObject.set(x, "ImageID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setMounts(value: js.Array[Destination]): Self = StObject.set(x, "Mounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageID(value: String): Self = this.set("ImageID", value.asInstanceOf[js.Any])
+    def setMountsVarargs(value: Destination*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    def setNames(value: js.Array[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountsVarargs(value: Destination*): Self = this.set("Mounts", js.Array(value :_*))
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
     @scala.inline
-    def setMounts(value: js.Array[Destination]): Self = this.set("Mounts", value.asInstanceOf[js.Any])
+    def setNetworkSettings(value: Networks): Self = StObject.set(x, "NetworkSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("Names", js.Array(value :_*))
+    def setPorts(value: js.Array[Port]): Self = StObject.set(x, "Ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: js.Array[String]): Self = this.set("Names", value.asInstanceOf[js.Any])
+    def setPortsVarargs(value: Port*): Self = StObject.set(x, "Ports", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkSettings(value: Networks): Self = this.set("NetworkSettings", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortsVarargs(value: Port*): Self = this.set("Ports", js.Array(value :_*))
-    
-    @scala.inline
-    def setPorts(value: js.Array[Port]): Self = this.set("Ports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

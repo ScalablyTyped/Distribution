@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchCatalogItemsRequest")
 @js.native
-class SearchCatalogItemsRequest () extends js.Object {
+class SearchCatalogItemsRequest () extends StObject {
   
   /**
     * The category id query expression to return items containing the specified category IDs.

@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.edgesRendererMod.IEdgesRendererOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,9 +113,15 @@ class EdgesRenderer protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "EdgesRenderer")
-@js.native
-object EdgesRenderer extends js.Object {
+object EdgesRenderer {
   
-  var GetShader: js.Any = js.native
+  @JSImport("babylonjs", "EdgesRenderer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs", "EdgesRenderer.GetShader")
+  @js.native
+  def GetShader: js.Any = js.native
+  @scala.inline
+  def GetShader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShader")(x.asInstanceOf[js.Any])
 }

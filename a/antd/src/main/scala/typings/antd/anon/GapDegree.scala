@@ -8,12 +8,13 @@ import typings.antd.antdStrings.line
 import typings.antd.antdStrings.round
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.square
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GapDegree extends js.Object {
+trait GapDegree extends StObject {
   
   var gapDegree: js.UndefOr[scala.Nothing] = js.native
   
@@ -38,45 +39,33 @@ object GapDegree {
   }
   
   @scala.inline
-  implicit class GapDegreeOps[Self <: GapDegree] (val x: Self) extends AnyVal {
+  implicit class GapDegreeMutableBuilder[Self <: GapDegree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowInfo(value: Boolean): Self = StObject.set(x, "showInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: small | default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setShowInfo(value: Boolean): Self = this.set("showInfo", value.asInstanceOf[js.Any])
+    def setStrokeLinecap(value: round | butt | square): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrailColor(value: Null): Self = this.set("trailColor", value.asInstanceOf[js.Any])
+    def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
     @scala.inline
-    def setSize(value: small | default): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTrailColor(value: Null): Self = StObject.set(x, "trailColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setType(value: circle | line | dashboard): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeLinecap(value: round | butt | square): Self = this.set("strokeLinecap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeLinecap: Self = this.set("strokeLinecap", js.undefined)
-    
-    @scala.inline
-    def setType(value: circle | line | dashboard): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

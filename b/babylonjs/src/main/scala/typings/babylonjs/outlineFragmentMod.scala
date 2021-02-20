@@ -1,18 +1,28 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Shaders/outline.fragment", JSImport.Namespace)
-@js.native
-object outlineFragmentMod extends js.Object {
+object outlineFragmentMod {
   
-  @js.native
-  object outlinePixelShader extends js.Object {
+  object outlinePixelShader {
     
-    var name: String = js.native
+    @JSImport("babylonjs/Shaders/outline.fragment", "outlinePixelShader")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var shader: String = js.native
+    @JSImport("babylonjs/Shaders/outline.fragment", "outlinePixelShader.name")
+    @js.native
+    def name: String = js.native
+    @scala.inline
+    def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Shaders/outline.fragment", "outlinePixelShader.shader")
+    @js.native
+    def shader: String = js.native
+    @scala.inline
+    def shader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shader")(x.asInstanceOf[js.Any])
   }
 }

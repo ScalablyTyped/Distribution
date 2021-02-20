@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoricalMetric extends js.Object {
+trait HistoricalMetric extends StObject {
   
   /**
     * The name of the metric.
@@ -36,42 +37,30 @@ object HistoricalMetric {
   }
   
   @scala.inline
-  implicit class HistoricalMetricOps[Self <: HistoricalMetric] (val x: Self) extends AnyVal {
+  implicit class HistoricalMetricMutableBuilder[Self <: HistoricalMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: HistoricalMetricName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatistic(value: Statistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: HistoricalMetricName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setStatisticUndefined: Self = StObject.set(x, "Statistic", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setThreshold(value: Threshold): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistic(value: Statistic): Self = this.set("Statistic", value.asInstanceOf[js.Any])
+    def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
     
     @scala.inline
-    def deleteStatistic: Self = this.set("Statistic", js.undefined)
+    def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreshold(value: Threshold): Self = this.set("Threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("Threshold", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: Unit): Self = this.set("Unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

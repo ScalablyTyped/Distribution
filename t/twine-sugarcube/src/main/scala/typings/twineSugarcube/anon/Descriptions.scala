@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.twineSugarcube.configMod.DescriptionHandler
 import typings.twineSugarcube.passageMod.PassageBase
 import typings.twineSugarcube.twineSugarcubeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Descriptions extends js.Object {
+trait Descriptions extends StObject {
   
   /**
     * Determines whether alternate passage descriptions are used by the Saves and Jump To menus—by default an excerpt
@@ -150,39 +151,27 @@ object Descriptions {
   }
   
   @scala.inline
-  implicit class DescriptionsOps[Self <: Descriptions] (val x: Self) extends AnyVal {
+  implicit class DescriptionsMutableBuilder[Self <: Descriptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescriptions(value: `true` | StringDictionary[String] | DescriptionHandler): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionsNull: Self = StObject.set(x, "descriptions", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayTitles(value: Boolean): Self = StObject.set(x, "displayTitles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayTitles(value: Boolean): Self = this.set("displayTitles", value.asInstanceOf[js.Any])
+    def setNobr(value: Boolean): Self = StObject.set(x, "nobr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNobr(value: Boolean): Self = this.set("nobr", value.asInstanceOf[js.Any])
+    def setOnProcess(value: PassageBase => String): Self = StObject.set(x, "onProcess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnProcess(value: PassageBase => String): Self = this.set("onProcess", js.Any.fromFunction1(value))
+    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionOut(value: String | Double): Self = this.set("transitionOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescriptions(value: `true` | StringDictionary[String] | DescriptionHandler): Self = this.set("descriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescriptionsNull: Self = this.set("descriptions", null)
+    def setTransitionOut(value: String | Double): Self = StObject.set(x, "transitionOut", value.asInstanceOf[js.Any])
   }
 }

@@ -1,51 +1,44 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EChatMemberStateChange extends js.Object
+sealed trait EChatMemberStateChange extends StObject
 @JSImport("steam-client", "EChatMemberStateChange")
 @js.native
-object EChatMemberStateChange extends js.Object {
+object EChatMemberStateChange extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatMemberStateChange with Double] = js.native
   
   @js.native
   sealed trait Banned extends EChatMemberStateChange
-  /* 0x10 */ @js.native
-  object Banned extends TopLevel[Banned with Double]
+  /* 0x10 */ val Banned: typings.steamClient.mod.EChatMemberStateChange.Banned with Double = js.native
   
   @js.native
   sealed trait Disconnected extends EChatMemberStateChange
-  /* 0x04 */ @js.native
-  object Disconnected extends TopLevel[Disconnected with Double]
+  /* 0x04 */ val Disconnected: typings.steamClient.mod.EChatMemberStateChange.Disconnected with Double = js.native
   
   @js.native
   sealed trait Entered extends EChatMemberStateChange
-  /* 0x01 */ @js.native
-  object Entered extends TopLevel[Entered with Double]
+  /* 0x01 */ val Entered: typings.steamClient.mod.EChatMemberStateChange.Entered with Double = js.native
   
   @js.native
   sealed trait Kicked extends EChatMemberStateChange
-  /* 0x08 */ @js.native
-  object Kicked extends TopLevel[Kicked with Double]
+  /* 0x08 */ val Kicked: typings.steamClient.mod.EChatMemberStateChange.Kicked with Double = js.native
   
   @js.native
   sealed trait Left extends EChatMemberStateChange
-  /* 0x02 */ @js.native
-  object Left extends TopLevel[Left with Double]
+  /* 0x02 */ val Left: typings.steamClient.mod.EChatMemberStateChange.Left with Double = js.native
   
   @js.native
   sealed trait VoiceDoneSpeaking extends EChatMemberStateChange
-  /* 0x2000 */ @js.native
-  object VoiceDoneSpeaking extends TopLevel[VoiceDoneSpeaking with Double]
+  /* 0x2000 */ val VoiceDoneSpeaking: typings.steamClient.mod.EChatMemberStateChange.VoiceDoneSpeaking with Double = js.native
   
   @js.native
   sealed trait VoiceSpeaking extends EChatMemberStateChange
-  /* 0x1000 */ @js.native
-  object VoiceSpeaking extends TopLevel[VoiceSpeaking with Double]
+  /* 0x1000 */ val VoiceSpeaking: typings.steamClient.mod.EChatMemberStateChange.VoiceSpeaking with Double = js.native
 }

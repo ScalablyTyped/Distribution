@@ -2,12 +2,13 @@ package typings.reactMapGl.mod
 
 import typings.mapboxGl.mod.Map
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapContextProps extends js.Object {
+trait MapContextProps extends StObject {
   
   var eventManager: js.UndefOr[EventManager] = js.native
   
@@ -32,59 +33,47 @@ object MapContextProps {
   }
   
   @scala.inline
-  implicit class MapContextPropsOps[Self <: MapContextProps] (val x: Self) extends AnyVal {
+  implicit class MapContextPropsMutableBuilder[Self <: MapContextProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventManagerUndefined: Self = StObject.set(x, "eventManager", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDragging(value: Boolean): Self = this.set("isDragging", value.asInstanceOf[js.Any])
+    def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
+    def setMapContainer(value: HTMLElement): Self = StObject.set(x, "mapContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventManager: Self = this.set("eventManager", js.undefined)
+    def setMapContainerNull: Self = StObject.set(x, "mapContainer", null)
     
     @scala.inline
-    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setOnViewStateChange(value: /* info */ ContextViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMapContainer(value: HTMLElement): Self = this.set("mapContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMapContainerNull: Self = this.set("mapContainer", null)
-    
-    @scala.inline
-    def setOnViewStateChange(value: /* info */ ContextViewStateChangeInfo => Unit): Self = this.set("onViewStateChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnViewStateChange: Self = this.set("onViewStateChange", js.undefined)
+    def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
     
     @scala.inline
     def setOnViewportChange(
       value: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit
-    ): Self = this.set("onViewportChange", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnViewportChange: Self = this.set("onViewportChange", js.undefined)
+    def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
     
     @scala.inline
-    def setViewport(value: typings.viewportMercatorProject.mod.default): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    def setViewport(value: typings.viewportMercatorProject.mod.default): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewport: Self = this.set("viewport", js.undefined)
+    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

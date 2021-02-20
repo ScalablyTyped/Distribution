@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetryConfig extends js.Object {
+trait RetryConfig extends StObject {
   
   /**
     * Number of attempts per task. Cloud Tasks will attempt the task `max_attempts` times (that is, if the first attempt fails, then there will be `max_attempts - 1` retries). Must be >=
@@ -54,48 +55,36 @@ object RetryConfig {
   }
   
   @scala.inline
-  implicit class RetryConfigOps[Self <: RetryConfig] (val x: Self) extends AnyVal {
+  implicit class RetryConfigMutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxBackoff(value: String): Self = StObject.set(x, "maxBackoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAttempts(value: Double): Self = this.set("maxAttempts", value.asInstanceOf[js.Any])
+    def setMaxBackoffUndefined: Self = StObject.set(x, "maxBackoff", js.undefined)
     
     @scala.inline
-    def deleteMaxAttempts: Self = this.set("maxAttempts", js.undefined)
+    def setMaxDoublings(value: Double): Self = StObject.set(x, "maxDoublings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBackoff(value: String): Self = this.set("maxBackoff", value.asInstanceOf[js.Any])
+    def setMaxDoublingsUndefined: Self = StObject.set(x, "maxDoublings", js.undefined)
     
     @scala.inline
-    def deleteMaxBackoff: Self = this.set("maxBackoff", js.undefined)
+    def setMaxRetryDuration(value: String): Self = StObject.set(x, "maxRetryDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDoublings(value: Double): Self = this.set("maxDoublings", value.asInstanceOf[js.Any])
+    def setMaxRetryDurationUndefined: Self = StObject.set(x, "maxRetryDuration", js.undefined)
     
     @scala.inline
-    def deleteMaxDoublings: Self = this.set("maxDoublings", js.undefined)
+    def setMinBackoff(value: String): Self = StObject.set(x, "minBackoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetryDuration(value: String): Self = this.set("maxRetryDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRetryDuration: Self = this.set("maxRetryDuration", js.undefined)
-    
-    @scala.inline
-    def setMinBackoff(value: String): Self = this.set("minBackoff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinBackoff: Self = this.set("minBackoff", js.undefined)
+    def setMinBackoffUndefined: Self = StObject.set(x, "minBackoff", js.undefined)
   }
 }

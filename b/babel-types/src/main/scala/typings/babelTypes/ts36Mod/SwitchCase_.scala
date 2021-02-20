@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.SwitchCase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object SwitchCase_ {
   }
   
   @scala.inline
-  implicit class SwitchCase_Ops[Self <: SwitchCase_] (val x: Self) extends AnyVal {
+  implicit class SwitchCase_MutableBuilder[Self <: SwitchCase_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsequent(value: js.Array[Statement]): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsequentVarargs(value: Statement*): Self = StObject.set(x, "consequent", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsequentVarargs(value: Statement*): Self = this.set("consequent", js.Array(value :_*))
-    
-    @scala.inline
-    def setConsequent(value: js.Array[Statement]): Self = this.set("consequent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTest(value: Expression): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: SwitchCase): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: SwitchCase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

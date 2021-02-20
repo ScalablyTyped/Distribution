@@ -3,6 +3,7 @@ package typings.actionsOnGoogle.actionssdkMod
 import typings.actionsOnGoogle.commonMod.JsonObject
 import typings.actionsOnGoogle.htmlMod.HtmlResponseOptions
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsHtmlResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

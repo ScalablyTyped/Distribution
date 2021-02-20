@@ -1,5 +1,6 @@
 package typings.dockerode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("dockerode", JSImport.Namespace)
 @js.native
-object dockerodeRequire extends js.Object
+object dockerodeRequire extends StObject

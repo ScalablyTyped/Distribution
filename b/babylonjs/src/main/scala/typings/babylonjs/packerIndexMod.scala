@@ -4,14 +4,14 @@ import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.packerMod.ITexturePackerOptions
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/Packer/index", JSImport.Namespace)
-@js.native
-object packerIndexMod extends js.Object {
+object packerIndexMod {
   
+  @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePacker")
   @js.native
   class TexturePacker protected ()
     extends typings.babylonjs.packerMod.TexturePacker {
@@ -26,28 +26,40 @@ object packerIndexMod extends js.Object {
     def this(name: String, meshes: js.Array[AbstractMesh], options: ITexturePackerOptions, scene: Scene) = this()
   }
   /* static members */
-  @js.native
-  object TexturePacker extends js.Object {
+  object TexturePacker {
     
     /** Packer Layout Constant 2 */
+    @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePacker.LAYOUT_COLNUM")
+    @js.native
     val LAYOUT_COLNUM: Double = js.native
     
     /** Packer Layout Constant 1 */
+    @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePacker.LAYOUT_POWER2")
+    @js.native
     val LAYOUT_POWER2: Double = js.native
     
     /** Packer Layout Constant 0 */
+    @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePacker.LAYOUT_STRIP")
+    @js.native
     val LAYOUT_STRIP: Double = js.native
     
     /** Packer Layout Constant 2 */
+    @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePacker.SUBUV_COLOR")
+    @js.native
     val SUBUV_COLOR: Double = js.native
     
     /** Packer Layout Constant 1 */
+    @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePacker.SUBUV_EXTEND")
+    @js.native
     val SUBUV_EXTEND: Double = js.native
     
     /** Packer Layout Constant 0 */
+    @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePacker.SUBUV_WRAP")
+    @js.native
     val SUBUV_WRAP: Double = js.native
   }
   
+  @JSImport("babylonjs/Materials/Textures/Packer/index", "TexturePackerFrame")
   @js.native
   class TexturePackerFrame protected ()
     extends typings.babylonjs.frameMod.TexturePackerFrame {

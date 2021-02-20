@@ -4,13 +4,14 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/redis/v1beta1", "redis_v1beta1.Resource$Projects$Locations$Instances")
 @js.native
-class ResourceProjectsLocationsInstances protected () extends js.Object {
+class ResourceProjectsLocationsInstances protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native

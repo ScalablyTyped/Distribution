@@ -4,16 +4,16 @@ import typings.babylonjs.lensFlareSystemMod.LensFlareSystem
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/LensFlares/lensFlare", JSImport.Namespace)
-@js.native
-object lensFlareMod extends js.Object {
+object lensFlareMod {
   
+  @JSImport("babylonjs/LensFlares/lensFlare", "LensFlare")
   @js.native
-  class LensFlare protected () extends js.Object {
+  class LensFlare protected () extends StObject {
     /**
       * Instantiates a new Lens Flare.
       * This represents one of the lens effect in a `lensFlareSystem`.
@@ -72,8 +72,7 @@ object lensFlareMod extends js.Object {
     var texture: Nullable[Texture] = js.native
   }
   /* static members */
-  @js.native
-  object LensFlare extends js.Object {
+  object LensFlare {
     
     /**
       * Creates a new Lens Flare.
@@ -87,6 +86,8 @@ object lensFlareMod extends js.Object {
       * @param system Define the `lensFlareSystem` this flare is part of
       * @returns The newly created Lens Flare
       */
+    @JSImport("babylonjs/LensFlares/lensFlare", "LensFlare.AddFlare")
+    @js.native
     def AddFlare(size: Double, position: Double, color: Color3, imgUrl: String, system: LensFlareSystem): LensFlare = js.native
   }
 }

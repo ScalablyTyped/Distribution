@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Core
 
 import typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines an video media stream. */
 @js.native
-trait VideoStreamDescriptor extends js.Object {
+trait VideoStreamDescriptor extends StObject {
   
   /** Gets the encoding properties on the video stream. */
   var encodingProperties: VideoEncodingProperties = js.native
@@ -30,30 +31,18 @@ object VideoStreamDescriptor {
   }
   
   @scala.inline
-  implicit class VideoStreamDescriptorOps[Self <: VideoStreamDescriptor] (val x: Self) extends AnyVal {
+  implicit class VideoStreamDescriptorMutableBuilder[Self <: VideoStreamDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncodingProperties(value: VideoEncodingProperties): Self = StObject.set(x, "encodingProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingProperties(value: VideoEncodingProperties): Self = this.set("encodingProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = this.set("isSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

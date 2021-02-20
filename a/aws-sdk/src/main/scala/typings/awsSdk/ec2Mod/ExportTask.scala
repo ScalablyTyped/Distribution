@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportTask extends js.Object {
+trait ExportTask extends StObject {
   
   /**
     * A description of the resource being exported.
@@ -51,63 +52,51 @@ object ExportTask {
   }
   
   @scala.inline
-  implicit class ExportTaskOps[Self <: ExportTask] (val x: Self) extends AnyVal {
+  implicit class ExportTaskMutableBuilder[Self <: ExportTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportTaskId(value: String): Self = StObject.set(x, "ExportTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setExportTaskIdUndefined: Self = StObject.set(x, "ExportTaskId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setExportToS3Task(value: ExportToS3Task): Self = StObject.set(x, "ExportToS3Task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportTaskId(value: String): Self = this.set("ExportTaskId", value.asInstanceOf[js.Any])
+    def setExportToS3TaskUndefined: Self = StObject.set(x, "ExportToS3Task", js.undefined)
     
     @scala.inline
-    def deleteExportTaskId: Self = this.set("ExportTaskId", js.undefined)
+    def setInstanceExportDetails(value: InstanceExportDetails): Self = StObject.set(x, "InstanceExportDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportToS3Task(value: ExportToS3Task): Self = this.set("ExportToS3Task", value.asInstanceOf[js.Any])
+    def setInstanceExportDetailsUndefined: Self = StObject.set(x, "InstanceExportDetails", js.undefined)
     
     @scala.inline
-    def deleteExportToS3Task: Self = this.set("ExportToS3Task", js.undefined)
+    def setState(value: ExportTaskState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceExportDetails(value: InstanceExportDetails): Self = this.set("InstanceExportDetails", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteInstanceExportDetails: Self = this.set("InstanceExportDetails", js.undefined)
+    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: ExportTaskState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

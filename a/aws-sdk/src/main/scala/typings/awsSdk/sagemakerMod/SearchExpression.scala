@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchExpression extends js.Object {
+trait SearchExpression extends StObject {
   
   /**
     * A list of filter objects.
@@ -36,51 +37,39 @@ object SearchExpression {
   }
   
   @scala.inline
-  implicit class SearchExpressionOps[Self <: SearchExpression] (val x: Self) extends AnyVal {
+  implicit class SearchExpressionMutableBuilder[Self <: SearchExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setNestedFilters(value: NestedFiltersList): Self = StObject.set(x, "NestedFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setNestedFiltersUndefined: Self = StObject.set(x, "NestedFilters", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setNestedFiltersVarargs(value: NestedFilters*): Self = StObject.set(x, "NestedFilters", js.Array(value :_*))
     
     @scala.inline
-    def setNestedFiltersVarargs(value: NestedFilters*): Self = this.set("NestedFilters", js.Array(value :_*))
+    def setOperator(value: BooleanOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedFilters(value: NestedFiltersList): Self = this.set("NestedFilters", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
     
     @scala.inline
-    def deleteNestedFilters: Self = this.set("NestedFilters", js.undefined)
+    def setSubExpressions(value: SearchExpressionList): Self = StObject.set(x, "SubExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: BooleanOperator): Self = this.set("Operator", value.asInstanceOf[js.Any])
+    def setSubExpressionsUndefined: Self = StObject.set(x, "SubExpressions", js.undefined)
     
     @scala.inline
-    def deleteOperator: Self = this.set("Operator", js.undefined)
-    
-    @scala.inline
-    def setSubExpressionsVarargs(value: SearchExpression*): Self = this.set("SubExpressions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubExpressions(value: SearchExpressionList): Self = this.set("SubExpressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubExpressions: Self = this.set("SubExpressions", js.undefined)
+    def setSubExpressionsVarargs(value: SearchExpression*): Self = StObject.set(x, "SubExpressions", js.Array(value :_*))
   }
 }

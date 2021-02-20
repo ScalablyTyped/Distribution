@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPipelineStateOutput extends js.Object {
+trait GetPipelineStateOutput extends StObject {
   
   /**
     * The date and time the pipeline was created, in timestamp format.
@@ -41,51 +42,39 @@ object GetPipelineStateOutput {
   }
   
   @scala.inline
-  implicit class GetPipelineStateOutputOps[Self <: GetPipelineStateOutput] (val x: Self) extends AnyVal {
+  implicit class GetPipelineStateOutputMutableBuilder[Self <: GetPipelineStateOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setPipelineVersion(value: PipelineVersion): Self = StObject.set(x, "pipelineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineName(value: PipelineName): Self = this.set("pipelineName", value.asInstanceOf[js.Any])
+    def setPipelineVersionUndefined: Self = StObject.set(x, "pipelineVersion", js.undefined)
     
     @scala.inline
-    def deletePipelineName: Self = this.set("pipelineName", js.undefined)
+    def setStageStates(value: StageStateList): Self = StObject.set(x, "stageStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineVersion(value: PipelineVersion): Self = this.set("pipelineVersion", value.asInstanceOf[js.Any])
+    def setStageStatesUndefined: Self = StObject.set(x, "stageStates", js.undefined)
     
     @scala.inline
-    def deletePipelineVersion: Self = this.set("pipelineVersion", js.undefined)
+    def setStageStatesVarargs(value: StageState*): Self = StObject.set(x, "stageStates", js.Array(value :_*))
     
     @scala.inline
-    def setStageStatesVarargs(value: StageState*): Self = this.set("stageStates", js.Array(value :_*))
+    def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageStates(value: StageStateList): Self = this.set("stageStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageStates: Self = this.set("stageStates", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: Timestamp): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

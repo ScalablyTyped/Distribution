@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object ManagedEBookAssignment {
   }
   
   @scala.inline
-  implicit class ManagedEBookAssignmentOps[Self <: ManagedEBookAssignment] (val x: Self) extends AnyVal {
+  implicit class ManagedEBookAssignmentMutableBuilder[Self <: ManagedEBookAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstallIntent(value: InstallIntent): Self = StObject.set(x, "installIntent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstallIntentUndefined: Self = StObject.set(x, "installIntent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallIntent(value: InstallIntent): Self = this.set("installIntent", value.asInstanceOf[js.Any])
+    def setTargetNull: Self = StObject.set(x, "target", null)
     
     @scala.inline
-    def deleteInstallIntent: Self = this.set("installIntent", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setTargetNull: Self = this.set("target", null)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

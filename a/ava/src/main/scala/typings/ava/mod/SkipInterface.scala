@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkipInterface[Context] extends js.Object {
+trait SkipInterface[Context] extends StObject {
   
   /** Skip this test. */
   def apply(title: String, implementation: Implementation[Context]): Unit = js.native

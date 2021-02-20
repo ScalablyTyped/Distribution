@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDns.gapi.client.dns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedZonePrivateVisibilityConfig extends js.Object {
+trait ManagedZonePrivateVisibilityConfig extends StObject {
   
   var kind: js.UndefOr[String] = js.native
   
@@ -21,33 +22,21 @@ object ManagedZonePrivateVisibilityConfig {
   }
   
   @scala.inline
-  implicit class ManagedZonePrivateVisibilityConfigOps[Self <: ManagedZonePrivateVisibilityConfig] (val x: Self) extends AnyVal {
+  implicit class ManagedZonePrivateVisibilityConfigMutableBuilder[Self <: ManagedZonePrivateVisibilityConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworks(value: js.Array[ManagedZonePrivateVisibilityConfigNetwork]): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setNetworksVarargs(value: ManagedZonePrivateVisibilityConfigNetwork*): Self = this.set("networks", js.Array(value :_*))
-    
-    @scala.inline
-    def setNetworks(value: js.Array[ManagedZonePrivateVisibilityConfigNetwork]): Self = this.set("networks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworks: Self = this.set("networks", js.undefined)
+    def setNetworksVarargs(value: ManagedZonePrivateVisibilityConfigNetwork*): Self = StObject.set(x, "networks", js.Array(value :_*))
   }
 }

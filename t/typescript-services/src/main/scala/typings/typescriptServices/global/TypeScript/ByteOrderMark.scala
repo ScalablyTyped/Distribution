@@ -1,12 +1,13 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.ByteOrderMark")
 @js.native
-object ByteOrderMark extends js.Object {
+object ByteOrderMark extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.ByteOrderMark with Double] = js.native

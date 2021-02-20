@@ -1,11 +1,12 @@
 package typings.anydbSql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexEntry extends js.Object {
+trait IndexEntry extends StObject {
   
   var Cardinality: Double = js.native
   
@@ -53,54 +54,42 @@ object IndexEntry {
   }
   
   @scala.inline
-  implicit class IndexEntryOps[Self <: IndexEntry] (val x: Self) extends AnyVal {
+  implicit class IndexEntryMutableBuilder[Self <: IndexEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardinality(value: Double): Self = StObject.set(x, "Cardinality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollation(value: String): Self = StObject.set(x, "Collation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumn_name(value: String): Self = StObject.set(x, "Column_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardinality(value: Double): Self = this.set("Cardinality", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollation(value: String): Self = this.set("Collation", value.asInstanceOf[js.Any])
+    def setIndex_comment(value: String): Self = StObject.set(x, "Index_comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn_name(value: String): Self = this.set("Column_name", value.asInstanceOf[js.Any])
+    def setIndex_type(value: String): Self = StObject.set(x, "Index_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setKey_name(value: String): Self = StObject.set(x, "Key_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex_comment(value: String): Self = this.set("Index_comment", value.asInstanceOf[js.Any])
+    def setNon_unique(value: Boolean): Self = StObject.set(x, "Non_unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex_type(value: String): Self = this.set("Index_type", value.asInstanceOf[js.Any])
+    def setPacked(value: Boolean): Self = StObject.set(x, "Packed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey_name(value: String): Self = this.set("Key_name", value.asInstanceOf[js.Any])
+    def setSeq_in_index(value: Double): Self = StObject.set(x, "Seq_in_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNon_unique(value: Boolean): Self = this.set("Non_unique", value.asInstanceOf[js.Any])
+    def setSub_part(value: String): Self = StObject.set(x, "Sub_part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacked(value: Boolean): Self = this.set("Packed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeq_in_index(value: Double): Self = this.set("Seq_in_index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSub_part(value: String): Self = this.set("Sub_part", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTable(value: String): Self = this.set("Table", value.asInstanceOf[js.Any])
+    def setTable(value: String): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
   }
 }

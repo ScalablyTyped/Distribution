@@ -1,14 +1,15 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextTrackType extends js.Object
+sealed trait TextTrackType extends StObject
 @JSGlobal("chrome.cast.media.TextTrackType")
 @js.native
-object TextTrackType extends js.Object {
+object TextTrackType extends StObject {
   
   @js.native
   sealed trait CAPTIONS extends TextTrackType

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.codedeploy
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentGroupDeploymentStyle extends js.Object {
+trait DeploymentGroupDeploymentStyle extends StObject {
   
   /**
     * Indicates whether to route deployment traffic behind a load balancer. Valid Values are `WITH_TRAFFIC_CONTROL` or `WITHOUT_TRAFFIC_CONTROL`. Default is `WITHOUT_TRAFFIC_CONTROL`.
@@ -27,30 +28,18 @@ object DeploymentGroupDeploymentStyle {
   }
   
   @scala.inline
-  implicit class DeploymentGroupDeploymentStyleOps[Self <: DeploymentGroupDeploymentStyle] (val x: Self) extends AnyVal {
+  implicit class DeploymentGroupDeploymentStyleMutableBuilder[Self <: DeploymentGroupDeploymentStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentOption(value: Input[String]): Self = StObject.set(x, "deploymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentOptionUndefined: Self = StObject.set(x, "deploymentOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentType(value: Input[String]): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentOption(value: Input[String]): Self = this.set("deploymentOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentOption: Self = this.set("deploymentOption", js.undefined)
-    
-    @scala.inline
-    def setDeploymentType(value: Input[String]): Self = this.set("deploymentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentType: Self = this.set("deploymentType", js.undefined)
+    def setDeploymentTypeUndefined: Self = StObject.set(x, "deploymentType", js.undefined)
   }
 }

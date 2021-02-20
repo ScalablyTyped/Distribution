@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IAugmentedJQuery
 import typings.angular.mod.IScope
 import typings.angular.mod.global.Function
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IModalSettings extends js.Object {
+trait IModalSettings extends StObject {
   
   /**
     * Set to false to disable animations on new modal/backdrop. Does not toggle animations for modals/backdrops that are already displayed.
@@ -153,147 +154,135 @@ object IModalSettings {
   }
   
   @scala.inline
-  implicit class IModalSettingsOps[Self <: IModalSettings] (val x: Self) extends AnyVal {
+  implicit class IModalSettingsMutableBuilder[Self <: IModalSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppendTo(value: IAugmentedJQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendTo(value: IAugmentedJQuery): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
     
     @scala.inline
-    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaDescribedBy(value: String): Self = this.set("ariaDescribedBy", value.asInstanceOf[js.Any])
+    def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
     
     @scala.inline
-    def deleteAriaDescribedBy: Self = this.set("ariaDescribedBy", js.undefined)
+    def setBackdrop(value: Boolean | String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaLabelledBy(value: String): Self = this.set("ariaLabelledBy", value.asInstanceOf[js.Any])
+    def setBackdropClass(value: String): Self = StObject.set(x, "backdropClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAriaLabelledBy: Self = this.set("ariaLabelledBy", js.undefined)
+    def setBackdropClassUndefined: Self = StObject.set(x, "backdropClass", js.undefined)
     
     @scala.inline
-    def setBackdrop(value: Boolean | String): Self = this.set("backdrop", value.asInstanceOf[js.Any])
+    def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
     
     @scala.inline
-    def deleteBackdrop: Self = this.set("backdrop", js.undefined)
+    def setBindToController(value: Boolean): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackdropClass(value: String): Self = this.set("backdropClass", value.asInstanceOf[js.Any])
+    def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
     
     @scala.inline
-    def deleteBackdropClass: Self = this.set("backdropClass", js.undefined)
+    def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindToController(value: Boolean): Self = this.set("bindToController", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def deleteBindToController: Self = this.set("bindToController", js.undefined)
+    def setController(value: String | Function | (js.Array[String | Function])): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: String): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
     @scala.inline
-    def setControllerVarargs(value: (String | Function)*): Self = this.set("controller", js.Array(value :_*))
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def setController(value: String | Function | (js.Array[String | Function])): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setControllerVarargs(value: (String | Function)*): Self = StObject.set(x, "controller", js.Array(value :_*))
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerAs(value: String): Self = this.set("controllerAs", value.asInstanceOf[js.Any])
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def deleteControllerAs: Self = this.set("controllerAs", js.undefined)
+    def setOpenedClass(value: String): Self = StObject.set(x, "openedClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setOpenedClassUndefined: Self = StObject.set(x, "openedClass", js.undefined)
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setResolve(value: StringDictionary[String | Function | (js.Array[String | Function]) | js.Object]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenedClass(value: String): Self = this.set("openedClass", value.asInstanceOf[js.Any])
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def deleteOpenedClass: Self = this.set("openedClass", js.undefined)
+    def setScope(value: IScope | IModalScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolve(value: StringDictionary[String | Function | (js.Array[String | Function]) | js.Object]): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: IScope | IModalScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setTemplate(value: String | js.Function0[String]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTemplateFunction0(value: () => String): Self = StObject.set(x, "template", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def setTemplateFunction0(value: () => String): Self = this.set("template", js.Any.fromFunction0(value))
+    def setTemplateUrl(value: String | js.Function0[String]): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String | js.Function0[String]): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplateUrlFunction0(value: () => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
     @scala.inline
-    def setTemplateUrlFunction0(value: () => String): Self = this.set("templateUrl", js.Any.fromFunction0(value))
+    def setWindowClass(value: String): Self = StObject.set(x, "windowClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateUrl(value: String | js.Function0[String]): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    def setWindowClassUndefined: Self = StObject.set(x, "windowClass", js.undefined)
     
     @scala.inline
-    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+    def setWindowTemplateUrl(value: String): Self = StObject.set(x, "windowTemplateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowClass(value: String): Self = this.set("windowClass", value.asInstanceOf[js.Any])
+    def setWindowTemplateUrlUndefined: Self = StObject.set(x, "windowTemplateUrl", js.undefined)
     
     @scala.inline
-    def deleteWindowClass: Self = this.set("windowClass", js.undefined)
+    def setWindowTopClass(value: String): Self = StObject.set(x, "windowTopClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowTemplateUrl(value: String): Self = this.set("windowTemplateUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowTemplateUrl: Self = this.set("windowTemplateUrl", js.undefined)
-    
-    @scala.inline
-    def setWindowTopClass(value: String): Self = this.set("windowTopClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowTopClass: Self = this.set("windowTopClass", js.undefined)
+    def setWindowTopClassUndefined: Self = StObject.set(x, "windowTopClass", js.undefined)
   }
 }

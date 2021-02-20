@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.FINISHED
   - typings.actionsOnGoogle.actionsOnGoogleStrings.FAILED
 */
-trait GoogleActionsV2MediaStatusStatus extends js.Object
+trait GoogleActionsV2MediaStatusStatus extends StObject
 object GoogleActionsV2MediaStatusStatus {
   
   @scala.inline

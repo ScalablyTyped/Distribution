@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest extends js.Object {
+trait GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest extends StObject {
   
   /** Required. The new ID of this tag template field. For example, `my_new_field`. */
   var newTagTemplateFieldId: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequestOps[Self <: GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequestMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewTagTemplateFieldId(value: String): Self = StObject.set(x, "newTagTemplateFieldId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewTagTemplateFieldId(value: String): Self = this.set("newTagTemplateFieldId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewTagTemplateFieldId: Self = this.set("newTagTemplateFieldId", js.undefined)
+    def setNewTagTemplateFieldIdUndefined: Self = StObject.set(x, "newTagTemplateFieldId", js.undefined)
   }
 }

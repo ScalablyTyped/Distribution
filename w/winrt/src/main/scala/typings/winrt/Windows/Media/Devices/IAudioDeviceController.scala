@@ -4,6 +4,7 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Media.Capture.MediaStreamType
 import typings.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,24 +31,12 @@ object IAudioDeviceController {
   }
   
   @scala.inline
-  implicit class IAudioDeviceControllerOps[Self <: IAudioDeviceController] (val x: Self) extends AnyVal {
+  implicit class IAudioDeviceControllerMutableBuilder[Self <: IAudioDeviceController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumePercent(value: Double): Self = this.set("volumePercent", value.asInstanceOf[js.Any])
+    def setVolumePercent(value: Double): Self = StObject.set(x, "volumePercent", value.asInstanceOf[js.Any])
   }
 }

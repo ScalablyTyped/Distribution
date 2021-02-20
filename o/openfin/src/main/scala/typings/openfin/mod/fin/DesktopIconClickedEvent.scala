@@ -3,12 +3,13 @@ package typings.openfin.mod.fin
 import typings.openfin.anon.Top
 import typings.openfin.openfinStrings.`desktop-icon-clicked`
 import typings.openfin.openfinStrings.system
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DesktopIconClickedEvent extends js.Object {
+trait DesktopIconClickedEvent extends StObject {
   
   var mouse: Top = js.native
   
@@ -31,30 +32,18 @@ object DesktopIconClickedEvent {
   }
   
   @scala.inline
-  implicit class DesktopIconClickedEventOps[Self <: DesktopIconClickedEvent] (val x: Self) extends AnyVal {
+  implicit class DesktopIconClickedEventMutableBuilder[Self <: DesktopIconClickedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMouse(value: Top): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTickCount(value: Double): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouse(value: Top): Self = this.set("mouse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTickCount(value: Double): Self = this.set("tickCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopic(value: system): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `desktop-icon-clicked`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `desktop-icon-clicked`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

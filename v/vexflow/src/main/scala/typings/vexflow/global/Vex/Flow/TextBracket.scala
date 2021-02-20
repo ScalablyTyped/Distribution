@@ -1,6 +1,7 @@
 package typings.vexflow.global.Vex.Flow
 
 import typings.vexflow.anon.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,15 +12,22 @@ class TextBracket protected ()
   extends typings.vexflow.Vex.Flow.TextBracket {
   def this(bracket_data: Position) = this()
 }
-/* static members */
-@JSGlobal("Vex.Flow.TextBracket")
-@js.native
-object TextBracket extends js.Object {
+object TextBracket {
   
-  var DEBUG: Boolean = js.native
-  
+  @JSGlobal("Vex.Flow.TextBracket")
   @js.native
-  object Positions extends js.Object {
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("Vex.Flow.TextBracket.DEBUG")
+  @js.native
+  def DEBUG: Boolean = js.native
+  @scala.inline
+  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("Vex.Flow.TextBracket.Positions")
+  @js.native
+  object Positions extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.TextBracket.Positions with Double] = js.native

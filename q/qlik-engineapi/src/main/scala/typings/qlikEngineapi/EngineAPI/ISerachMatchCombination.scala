@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SerachMatchCombination...
   */
 @js.native
-trait ISerachMatchCombination extends js.Object {
+trait ISerachMatchCombination extends StObject {
   
   /**
     * Information about the search matches.
@@ -29,27 +30,15 @@ object ISerachMatchCombination {
   }
   
   @scala.inline
-  implicit class ISerachMatchCombinationOps[Self <: ISerachMatchCombination] (val x: Self) extends AnyVal {
+  implicit class ISerachMatchCombinationMutableBuilder[Self <: ISerachMatchCombination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQFieldMatches(value: js.Array[ISerachFieldMatch]): Self = StObject.set(x, "qFieldMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFieldMatchesVarargs(value: ISerachFieldMatch*): Self = StObject.set(x, "qFieldMatches", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQFieldMatchesVarargs(value: ISerachFieldMatch*): Self = this.set("qFieldMatches", js.Array(value :_*))
-    
-    @scala.inline
-    def setQFieldMatches(value: js.Array[ISerachFieldMatch]): Self = this.set("qFieldMatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQId(value: Double): Self = this.set("qId", value.asInstanceOf[js.Any])
+    def setQId(value: Double): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
   }
 }

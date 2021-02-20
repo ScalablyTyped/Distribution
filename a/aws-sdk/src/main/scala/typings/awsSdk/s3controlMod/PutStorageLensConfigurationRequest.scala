@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutStorageLensConfigurationRequest extends js.Object {
+trait PutStorageLensConfigurationRequest extends StObject {
   
   /**
     * The account ID of the requester.
@@ -36,36 +37,24 @@ object PutStorageLensConfigurationRequest {
   }
   
   @scala.inline
-  implicit class PutStorageLensConfigurationRequestOps[Self <: PutStorageLensConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class PutStorageLensConfigurationRequestMutableBuilder[Self <: PutStorageLensConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigId(value: ConfigId): Self = StObject.set(x, "ConfigId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorageLensConfiguration(value: StorageLensConfiguration): Self = StObject.set(x, "StorageLensConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setTags(value: StorageLensTags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigId(value: ConfigId): Self = this.set("ConfigId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def setStorageLensConfiguration(value: StorageLensConfiguration): Self = this.set("StorageLensConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagsVarargs(value: StorageLensTag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: StorageLensTags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: StorageLensTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

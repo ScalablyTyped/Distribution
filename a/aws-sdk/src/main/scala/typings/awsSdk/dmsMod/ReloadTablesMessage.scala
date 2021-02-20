@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReloadTablesMessage extends js.Object {
+trait ReloadTablesMessage extends StObject {
   
   /**
     * Options for reload. Specify data-reload to reload the data and re-validate it if validation is enabled. Specify validate-only to re-validate the table. This option applies only when validation is enabled for the task.  Valid values: data-reload, validate-only Default value is data-reload.
@@ -31,33 +32,21 @@ object ReloadTablesMessage {
   }
   
   @scala.inline
-  implicit class ReloadTablesMessageOps[Self <: ReloadTablesMessage] (val x: Self) extends AnyVal {
+  implicit class ReloadTablesMessageMutableBuilder[Self <: ReloadTablesMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReloadOption(value: ReloadOptionValue): Self = StObject.set(x, "ReloadOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReloadOptionUndefined: Self = StObject.set(x, "ReloadOption", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationTaskArn(value: String): Self = this.set("ReplicationTaskArn", value.asInstanceOf[js.Any])
+    def setTablesToReload(value: TableListToReload): Self = StObject.set(x, "TablesToReload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTablesToReloadVarargs(value: TableToReload*): Self = this.set("TablesToReload", js.Array(value :_*))
-    
-    @scala.inline
-    def setTablesToReload(value: TableListToReload): Self = this.set("TablesToReload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReloadOption(value: ReloadOptionValue): Self = this.set("ReloadOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReloadOption: Self = this.set("ReloadOption", js.undefined)
+    def setTablesToReloadVarargs(value: TableToReload*): Self = StObject.set(x, "TablesToReload", js.Array(value :_*))
   }
 }

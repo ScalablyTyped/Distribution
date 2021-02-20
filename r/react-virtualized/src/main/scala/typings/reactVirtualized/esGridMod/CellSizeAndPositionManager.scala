@@ -1,12 +1,13 @@
 package typings.reactVirtualized.esGridMod
 
 import typings.reactVirtualized.anon.ContainerSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellSizeAndPositionManager extends js.Object {
+trait CellSizeAndPositionManager extends StObject {
   
   def areOffsetsAdjusted(): Boolean = js.native
   
@@ -79,54 +80,42 @@ object CellSizeAndPositionManager {
   }
   
   @scala.inline
-  implicit class CellSizeAndPositionManagerOps[Self <: CellSizeAndPositionManager] (val x: Self) extends AnyVal {
+  implicit class CellSizeAndPositionManagerMutableBuilder[Self <: CellSizeAndPositionManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreOffsetsAdjusted(value: () => Boolean): Self = StObject.set(x, "areOffsetsAdjusted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigure(value: ConfigureParams => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCellCount(value: () => Double): Self = StObject.set(x, "getCellCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAreOffsetsAdjusted(value: () => Boolean): Self = this.set("areOffsetsAdjusted", js.Any.fromFunction0(value))
+    def setGetEstimatedCellSize(value: () => Double): Self = StObject.set(x, "getEstimatedCellSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfigure(value: ConfigureParams => Unit): Self = this.set("configure", js.Any.fromFunction1(value))
+    def setGetLastMeasuredIndex(value: () => Double): Self = StObject.set(x, "getLastMeasuredIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCellCount(value: () => Double): Self = this.set("getCellCount", js.Any.fromFunction0(value))
+    def setGetOffsetAdjustment(value: ContainerSizeAndOffset => Double): Self = StObject.set(x, "getOffsetAdjustment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEstimatedCellSize(value: () => Double): Self = this.set("getEstimatedCellSize", js.Any.fromFunction0(value))
+    def setGetSizeAndPositionOfCell(value: Double => SizeAndPositionData): Self = StObject.set(x, "getSizeAndPositionOfCell", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLastMeasuredIndex(value: () => Double): Self = this.set("getLastMeasuredIndex", js.Any.fromFunction0(value))
+    def setGetSizeAndPositionOfLastMeasuredCell(value: () => SizeAndPositionData): Self = StObject.set(x, "getSizeAndPositionOfLastMeasuredCell", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOffsetAdjustment(value: ContainerSizeAndOffset => Double): Self = this.set("getOffsetAdjustment", js.Any.fromFunction1(value))
+    def setGetTotalSize(value: () => Double): Self = StObject.set(x, "getTotalSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSizeAndPositionOfCell(value: Double => SizeAndPositionData): Self = this.set("getSizeAndPositionOfCell", js.Any.fromFunction1(value))
+    def setGetUpdatedOffsetForIndex(value: ContainerSize => Double): Self = StObject.set(x, "getUpdatedOffsetForIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSizeAndPositionOfLastMeasuredCell(value: () => SizeAndPositionData): Self = this.set("getSizeAndPositionOfLastMeasuredCell", js.Any.fromFunction0(value))
+    def setGetVisibleCellRange(value: GetVisibleCellRangeParams => VisibleCellRange): Self = StObject.set(x, "getVisibleCellRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTotalSize(value: () => Double): Self = this.set("getTotalSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUpdatedOffsetForIndex(value: ContainerSize => Double): Self = this.set("getUpdatedOffsetForIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetVisibleCellRange(value: GetVisibleCellRangeParams => VisibleCellRange): Self = this.set("getVisibleCellRange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResetCell(value: Double => Unit): Self = this.set("resetCell", js.Any.fromFunction1(value))
+    def setResetCell(value: Double => Unit): Self = StObject.set(x, "resetCell", js.Any.fromFunction1(value))
   }
 }

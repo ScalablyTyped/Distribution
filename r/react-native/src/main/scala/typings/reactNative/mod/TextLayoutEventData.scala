@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object TextLayoutEventData {
   }
   
   @scala.inline
-  implicit class TextLayoutEventDataOps[Self <: TextLayoutEventData] (val x: Self) extends AnyVal {
+  implicit class TextLayoutEventDataMutableBuilder[Self <: TextLayoutEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLines(value: js.Array[TextLayoutLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLinesVarargs(value: TextLayoutLine*): Self = this.set("lines", js.Array(value :_*))
-    
-    @scala.inline
-    def setLines(value: js.Array[TextLayoutLine]): Self = this.set("lines", value.asInstanceOf[js.Any])
+    def setLinesVarargs(value: TextLayoutLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

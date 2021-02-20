@@ -1,16 +1,14 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.portalPortalMod.PortalProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Portal", JSImport.Namespace)
-@js.native
-object portalMod extends js.Object {
+object portalMod {
   
+  @JSImport("@material-ui/core/Portal", JSImport.Default)
   @js.native
   class default ()
-    extends Component[PortalProps, js.Object, js.Any]
+    extends typings.materialUiCore.portalPortalMod.default
 }

@@ -1,12 +1,13 @@
 package typings.jstorage
 
 import typings.std.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JStorageStatic extends js.Object {
+trait JStorageStatic extends StObject {
   
   /**
     * Which backend is currently in use?

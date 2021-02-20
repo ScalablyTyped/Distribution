@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundTokenizer extends js.Object {
+trait BackgroundTokenizer extends StObject {
   
   /**
     * Emits the `'update'` event. `firstRow` and `lastRow` are used to define the boundaries of the region to be updated.
@@ -69,45 +70,33 @@ object BackgroundTokenizer {
   }
   
   @scala.inline
-  implicit class BackgroundTokenizerOps[Self <: BackgroundTokenizer] (val x: Self) extends AnyVal {
+  implicit class BackgroundTokenizerMutableBuilder[Self <: BackgroundTokenizer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFireUpdateEvent(value: (Double, Double) => Unit): Self = StObject.set(x, "fireUpdateEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetState(value: Double => String): Self = StObject.set(x, "getState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTokens(value: Double => js.Array[TokenInfo]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFireUpdateEvent(value: (Double, Double) => Unit): Self = this.set("fireUpdateEvent", js.Any.fromFunction2(value))
+    def setSetDocument(value: Document => Unit): Self = StObject.set(x, "setDocument", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetState(value: Double => String): Self = this.set("getState", js.Any.fromFunction1(value))
+    def setSetTokenizer(value: Tokenizer => Unit): Self = StObject.set(x, "setTokenizer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTokens(value: Double => js.Array[TokenInfo]): Self = this.set("getTokens", js.Any.fromFunction1(value))
+    def setStart(value: Double => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDocument(value: Document => Unit): Self = this.set("setDocument", js.Any.fromFunction1(value))
+    def setStates(value: js.Array[_]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTokenizer(value: Tokenizer => Unit): Self = this.set("setTokenizer", js.Any.fromFunction1(value))
+    def setStatesVarargs(value: js.Any*): Self = StObject.set(x, "states", js.Array(value :_*))
     
     @scala.inline
-    def setStart(value: Double => Unit): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStatesVarargs(value: js.Any*): Self = this.set("states", js.Array(value :_*))
-    
-    @scala.inline
-    def setStates(value: js.Array[_]): Self = this.set("states", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

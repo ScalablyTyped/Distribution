@@ -1,12 +1,13 @@
 package typings.typescriptServices.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "ModuleGenTarget")
 @js.native
-object ModuleGenTarget extends js.Object {
+object ModuleGenTarget extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.ModuleGenTarget with Double] = js.native

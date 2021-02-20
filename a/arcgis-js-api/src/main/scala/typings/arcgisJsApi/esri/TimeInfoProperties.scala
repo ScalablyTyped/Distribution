@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeInfoProperties extends js.Object {
+trait TimeInfoProperties extends StObject {
   
   /**
     * The name of the field containing the end time information.
@@ -51,48 +52,36 @@ object TimeInfoProperties {
   }
   
   @scala.inline
-  implicit class TimeInfoPropertiesOps[Self <: TimeInfoProperties] (val x: Self) extends AnyVal {
+  implicit class TimeInfoPropertiesMutableBuilder[Self <: TimeInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndField(value: String): Self = StObject.set(x, "endField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndFieldUndefined: Self = StObject.set(x, "endField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndField(value: String): Self = this.set("endField", value.asInstanceOf[js.Any])
+    def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
     
     @scala.inline
-    def deleteEndField: Self = this.set("endField", js.undefined)
+    def setInterval(value: TimeIntervalProperties): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullTimeExtent(value: TimeExtentProperties): Self = this.set("fullTimeExtent", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteFullTimeExtent: Self = this.set("fullTimeExtent", js.undefined)
+    def setStartField(value: String): Self = StObject.set(x, "startField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: TimeIntervalProperties): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setStartFieldUndefined: Self = StObject.set(x, "startField", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setTrackIdField(value: String): Self = StObject.set(x, "trackIdField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartField(value: String): Self = this.set("startField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartField: Self = this.set("startField", js.undefined)
-    
-    @scala.inline
-    def setTrackIdField(value: String): Self = this.set("trackIdField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackIdField: Self = this.set("trackIdField", js.undefined)
+    def setTrackIdFieldUndefined: Self = StObject.set(x, "trackIdField", js.undefined)
   }
 }

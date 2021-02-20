@@ -4,16 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mobservable.interfacesMod.IObjectChange
 import typings.mobservable.interfacesMod.Lambda
 import typings.mobservable.observablevalueMod.ObservableValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobservable/lib/observablemap", JSImport.Namespace)
-@js.native
-object observablemapMod extends js.Object {
+object observablemapMod {
   
+  @JSImport("mobservable/lib/observablemap", "ObservableMap")
   @js.native
-  class ObservableMap[V] () extends js.Object {
+  class ObservableMap[V] () extends StObject {
     def this(initialData: Entries[V]) = this()
     def this(initialData: KeyValueMap[V]) = this()
     def this(initialData: js.UndefOr[scala.Nothing], valueModeFunc: js.Function) = this()

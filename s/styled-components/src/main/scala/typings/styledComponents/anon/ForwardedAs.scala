@@ -1,11 +1,12 @@
 package typings.styledComponents.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForwardedAs extends js.Object {
+trait ForwardedAs extends StObject {
   
   var as: js.UndefOr[scala.Nothing] = js.native
   

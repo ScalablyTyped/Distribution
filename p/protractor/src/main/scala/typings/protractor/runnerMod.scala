@@ -6,14 +6,14 @@ import typings.protractor.configMod.Config
 import typings.protractor.driverProvidersMod.DriverProvider
 import typings.protractor.pluginsMod.Plugins
 import typings.q.mod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protractor/built/runner", JSImport.Namespace)
-@js.native
-object runnerMod extends js.Object {
+object runnerMod {
   
+  @JSImport("protractor/built/runner", "Runner")
   @js.native
   class Runner protected () extends EventEmitter {
     def this(config: Config) = this()

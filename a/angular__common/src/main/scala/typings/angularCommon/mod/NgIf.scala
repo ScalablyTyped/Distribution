@@ -3,13 +3,14 @@ package typings.angularCommon.mod
 import typings.angularCommon.angularCommonStrings.binding
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.ViewContainerRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgIf")
 @js.native
-class NgIf[T] protected () extends js.Object {
+class NgIf[T] protected () extends StObject {
   def this(_viewContainer: ViewContainerRef, templateRef: TemplateRef[NgIfContext[T]]) = this()
   
   var _context: js.Any = js.native
@@ -42,9 +43,11 @@ class NgIf[T] protected () extends js.Object {
   def ngIf_=(condition: T): Unit = js.native
 }
 /* static members */
-@JSImport("@angular/common", "NgIf")
-@js.native
-object NgIf extends js.Object {
+object NgIf {
+  
+  @JSImport("@angular/common", "NgIf")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Asserts the correct type of the context for the template that `NgIf` will render.
@@ -52,6 +55,8 @@ object NgIf extends js.Object {
     * The presence of this method is a signal to the Ivy template type-check compiler that the
     * `NgIf` structural directive renders its template with a specific context type.
     */
+  @JSImport("@angular/common", "NgIf.ngTemplateContextGuard")
+  @js.native
   def ngTemplateContextGuard[T](dir: NgIf[T], ctx: js.Any): /* is @angular/common.@angular/common.NgIfContext<std.Exclude<T, false | 0 | '' | null | undefined>> */ Boolean = js.native
   
   /**
@@ -62,5 +67,9 @@ object NgIf extends js.Object {
     * to `ngIf` should be narrowed in some way. For `NgIf`, the binding expression itself is used to
     * narrow its type, which allows the strictNullChecks feature of TypeScript to work with `NgIf`.
     */
-  var ngTemplateGuard_ngIf: binding = js.native
+  @JSImport("@angular/common", "NgIf.ngTemplateGuard_ngIf")
+  @js.native
+  def ngTemplateGuard_ngIf: binding = js.native
+  @scala.inline
+  def ngTemplateGuard_ngIf_=(x: binding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTemplateGuard_ngIf")(x.asInstanceOf[js.Any])
 }

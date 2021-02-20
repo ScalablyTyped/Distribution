@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRelationalDatabaseRequest extends js.Object {
+trait CreateRelationalDatabaseRequest extends StObject {
   
   /**
     * The Availability Zone in which to create your new database. Use the us-east-2a case-sensitive format. You can get a list of Availability Zones by using the get regions operation. Be sure to add the include relational database Availability Zones parameter to your request.
@@ -77,72 +78,60 @@ object CreateRelationalDatabaseRequest {
   }
   
   @scala.inline
-  implicit class CreateRelationalDatabaseRequestOps[Self <: CreateRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRelationalDatabaseRequestMutableBuilder[Self <: CreateRelationalDatabaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMasterDatabaseName(value: String): Self = StObject.set(x, "masterDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterDatabaseName(value: String): Self = this.set("masterDatabaseName", value.asInstanceOf[js.Any])
+    def setMasterUserPassword(value: SensitiveString): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterUsername(value: String): Self = this.set("masterUsername", value.asInstanceOf[js.Any])
+    def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
     
     @scala.inline
-    def setRelationalDatabaseBlueprintId(value: String): Self = this.set("relationalDatabaseBlueprintId", value.asInstanceOf[js.Any])
+    def setMasterUsername(value: String): Self = StObject.set(x, "masterUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationalDatabaseBundleId(value: String): Self = this.set("relationalDatabaseBundleId", value.asInstanceOf[js.Any])
+    def setPreferredBackupWindow(value: String): Self = StObject.set(x, "preferredBackupWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    def setPreferredBackupWindowUndefined: Self = StObject.set(x, "preferredBackupWindow", js.undefined)
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "preferredMaintenanceWindow", js.undefined)
     
     @scala.inline
-    def setMasterUserPassword(value: SensitiveString): Self = this.set("masterUserPassword", value.asInstanceOf[js.Any])
+    def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMasterUserPassword: Self = this.set("masterUserPassword", js.undefined)
+    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
     
     @scala.inline
-    def setPreferredBackupWindow(value: String): Self = this.set("preferredBackupWindow", value.asInstanceOf[js.Any])
+    def setRelationalDatabaseBlueprintId(value: String): Self = StObject.set(x, "relationalDatabaseBlueprintId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferredBackupWindow: Self = this.set("preferredBackupWindow", js.undefined)
+    def setRelationalDatabaseBundleId(value: String): Self = StObject.set(x, "relationalDatabaseBundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredMaintenanceWindow(value: String): Self = this.set("preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferredMaintenanceWindow: Self = this.set("preferredMaintenanceWindow", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubliclyAccessible(value: Boolean): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

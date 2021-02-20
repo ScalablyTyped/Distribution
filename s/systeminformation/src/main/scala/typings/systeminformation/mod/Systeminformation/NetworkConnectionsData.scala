@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkConnectionsData extends js.Object {
+trait NetworkConnectionsData extends StObject {
   
   var localaddress: String = js.native
   
@@ -41,42 +42,30 @@ object NetworkConnectionsData {
   }
   
   @scala.inline
-  implicit class NetworkConnectionsDataOps[Self <: NetworkConnectionsData] (val x: Self) extends AnyVal {
+  implicit class NetworkConnectionsDataMutableBuilder[Self <: NetworkConnectionsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocaladdress(value: String): Self = StObject.set(x, "localaddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalport(value: String): Self = StObject.set(x, "localport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeeraddress(value: String): Self = StObject.set(x, "peeraddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaladdress(value: String): Self = this.set("localaddress", value.asInstanceOf[js.Any])
+    def setPeerport(value: String): Self = StObject.set(x, "peerport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalport(value: String): Self = this.set("localport", value.asInstanceOf[js.Any])
+    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeeraddress(value: String): Self = this.set("peeraddress", value.asInstanceOf[js.Any])
+    def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerport(value: String): Self = this.set("peerport", value.asInstanceOf[js.Any])
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProcess(value: String): Self = this.set("process", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

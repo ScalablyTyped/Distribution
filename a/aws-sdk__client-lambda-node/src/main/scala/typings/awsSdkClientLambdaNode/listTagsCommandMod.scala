@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesListTagsInputMod.ListTagsInput
 import typings.awsSdkClientLambdaNode.typesListTagsOutputMod.ListTagsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/ListTagsCommand", JSImport.Namespace)
-@js.native
-object listTagsCommandMod extends js.Object {
+object listTagsCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/ListTagsCommand", "ListTagsCommand")
   @js.native
   class ListTagsCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,12 +1,13 @@
 package typings.doccookies
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait docCookies extends js.Object {
+trait docCookies extends StObject {
   
   /**
     Read a cookie. If the cookie doesn't exist a null value will be returned.

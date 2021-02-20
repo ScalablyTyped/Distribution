@@ -1,11 +1,12 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOpenIdTokenResponse extends js.Object {
+trait GetOpenIdTokenResponse extends StObject {
   
   /**
     * <p>A unique identifier in the format REGION:GUID. Note that the IdentityId returned may
@@ -18,9 +19,31 @@ trait GetOpenIdTokenResponse extends js.Object {
     */
   var Token: js.UndefOr[String] = js.native
 }
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenResponse")
-@js.native
-object GetOpenIdTokenResponse extends js.Object {
+object GetOpenIdTokenResponse {
   
+  @scala.inline
+  def apply(): GetOpenIdTokenResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GetOpenIdTokenResponse]
+  }
+  
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenResponse.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: GetOpenIdTokenResponse): js.Any = js.native
+  
+  @scala.inline
+  implicit class GetOpenIdTokenResponseMutableBuilder[Self <: GetOpenIdTokenResponse] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    
+    @scala.inline
+    def setToken(value: String): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+  }
 }

@@ -1,11 +1,12 @@
 package typings.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Log extends js.Object {
+trait Log extends StObject {
   
   /** Name and version info of used browser. */
   var browser: js.UndefOr[Browser] = js.native
@@ -49,51 +50,39 @@ object Log {
   }
   
   @scala.inline
-  implicit class LogOps[Self <: Log] (val x: Self) extends AnyVal {
+  implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Creator): Self = this.set("creator", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def setEntriesVarargs(value: Entry*): Self = this.set("entries", js.Array(value :_*))
+    def setCreator(value: Creator): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: js.Array[Entry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    def setEntries(value: js.Array[Entry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setEntriesVarargs(value: Entry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
     @scala.inline
-    def setBrowser(value: Browser): Self = this.set("browser", value.asInstanceOf[js.Any])
+    def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrowser: Self = this.set("browser", js.undefined)
+    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
-    
-    @scala.inline
-    def setPagesVarargs(value: Page*): Self = this.set("pages", js.Array(value :_*))
-    
-    @scala.inline
-    def setPages(value: js.Array[Page]): Self = this.set("pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePages: Self = this.set("pages", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

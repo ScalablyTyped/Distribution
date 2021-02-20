@@ -1,11 +1,12 @@
 package typings.mapsjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait repositionStatsObj extends js.Object {
+trait repositionStatsObj extends StObject {
   
   var centerX: Double = js.native
   
@@ -24,30 +25,18 @@ object repositionStatsObj {
   }
   
   @scala.inline
-  implicit class repositionStatsObjOps[Self <: repositionStatsObj] (val x: Self) extends AnyVal {
+  implicit class repositionStatsObjMutableBuilder[Self <: repositionStatsObj] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapUnitsPerPixel(value: Double): Self = StObject.set(x, "mapUnitsPerPixel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterX(value: Double): Self = this.set("centerX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCenterY(value: Double): Self = this.set("centerY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMapUnitsPerPixel(value: Double): Self = this.set("mapUnitsPerPixel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomLevel(value: Double): Self = this.set("zoomLevel", value.asInstanceOf[js.Any])
+    def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
   }
 }

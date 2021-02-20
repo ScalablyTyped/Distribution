@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Navigator extends js.Object {
+trait Navigator extends StObject {
   
   var accelerometer: Accelerometer = js.native
   
@@ -47,48 +48,36 @@ object Navigator {
   }
   
   @scala.inline
-  implicit class NavigatorOps[Self <: Navigator] (val x: Self) extends AnyVal {
+  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerometer(value: Accelerometer): Self = StObject.set(x, "accelerometer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapture(value: Capture): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerometer(value: Accelerometer): Self = this.set("accelerometer", value.asInstanceOf[js.Any])
+    def setCompass(value: Compass): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera(value: Camera): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Capture): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setContacts(value: Contacts): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompass(value: Compass): Self = this.set("compass", value.asInstanceOf[js.Any])
+    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: Connection): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setGlobalization(value: Globalization): Self = StObject.set(x, "globalization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContacts(value: Contacts): Self = this.set("contacts", value.asInstanceOf[js.Any])
+    def setNotification(value: PhonegapNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: Device): Self = this.set("device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGlobalization(value: Globalization): Self = this.set("globalization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotification(value: PhonegapNotification): Self = this.set("notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashscreen(value: Splashscreen): Self = this.set("splashscreen", value.asInstanceOf[js.Any])
+    def setSplashscreen(value: Splashscreen): Self = StObject.set(x, "splashscreen", value.asInstanceOf[js.Any])
   }
 }

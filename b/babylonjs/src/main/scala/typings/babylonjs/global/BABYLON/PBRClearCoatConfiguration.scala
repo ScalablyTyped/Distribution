@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IMaterialClearCoatDefines
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,7 @@ class PBRClearCoatConfiguration protected ()
   def this(markAllSubMeshesAsTexturesDirty: js.Function0[Unit]) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.PBRClearCoatConfiguration")
-@js.native
-object PBRClearCoatConfiguration extends js.Object {
+object PBRClearCoatConfiguration {
   
   /**
     * Add fallbacks to the effect fallbacks list.
@@ -27,6 +26,8 @@ object PBRClearCoatConfiguration extends js.Object {
     * @param currentRank defines the current fallback rank.
     * @returns the new fallback rank.
     */
+  @JSGlobal("BABYLON.PBRClearCoatConfiguration.AddFallbacks")
+  @js.native
   def AddFallbacks(
     defines: IMaterialClearCoatDefines,
     fallbacks: typings.babylonjs.BABYLON.EffectFallbacks,
@@ -37,18 +38,24 @@ object PBRClearCoatConfiguration extends js.Object {
     * Add the required samplers to the current list.
     * @param samplers defines the current sampler list.
     */
+  @JSGlobal("BABYLON.PBRClearCoatConfiguration.AddSamplers")
+  @js.native
   def AddSamplers(samplers: js.Array[String]): Unit = js.native
   
   /**
     * Add the required uniforms to the current list.
     * @param uniforms defines the current uniform list.
     */
+  @JSGlobal("BABYLON.PBRClearCoatConfiguration.AddUniforms")
+  @js.native
   def AddUniforms(uniforms: js.Array[String]): Unit = js.native
   
   /**
     * Add the required uniforms to the current buffer.
     * @param uniformBuffer defines the current uniform buffer.
     */
+  @JSGlobal("BABYLON.PBRClearCoatConfiguration.PrepareUniformBuffer")
+  @js.native
   def PrepareUniformBuffer(uniformBuffer: typings.babylonjs.BABYLON.UniformBuffer): Unit = js.native
   
   /**
@@ -56,5 +63,7 @@ object PBRClearCoatConfiguration extends js.Object {
     * The default fits with a polyurethane material.
     * @hidden
     */
+  @JSGlobal("BABYLON.PBRClearCoatConfiguration._DefaultIndexOfRefraction")
+  @js.native
   val _DefaultIndexOfRefraction: Double = js.native
 }

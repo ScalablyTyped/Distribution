@@ -3,12 +3,13 @@ package typings.electron.Electron
 import typings.electron.electronStrings.create
 import typings.electron.electronStrings.replace
 import typings.electron.electronStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Shell extends js.Object {
+trait Shell extends StObject {
   
   // Docs: https://electronjs.org/docs/api/shell
   /**

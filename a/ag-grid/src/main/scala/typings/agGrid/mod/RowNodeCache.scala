@@ -1,6 +1,7 @@
 package typings.agGrid.mod
 
 import typings.agGrid.rowNodeCacheMod.RowNodeCacheParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ abstract class RowNodeCache[T /* <: typings.agGrid.rowNodeBlockMod.RowNodeBlock 
   protected def this(cacheParams: P) = this()
 }
 /* static members */
-@JSImport("ag-grid", "RowNodeCache")
-@js.native
-object RowNodeCache extends js.Object {
+object RowNodeCache {
   
-  var EVENT_CACHE_UPDATED: String = js.native
+  @JSImport("ag-grid", "RowNodeCache")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ag-grid", "RowNodeCache.EVENT_CACHE_UPDATED")
+  @js.native
+  def EVENT_CACHE_UPDATED: String = js.native
+  @scala.inline
+  def EVENT_CACHE_UPDATED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CACHE_UPDATED")(x.asInstanceOf[js.Any])
 }

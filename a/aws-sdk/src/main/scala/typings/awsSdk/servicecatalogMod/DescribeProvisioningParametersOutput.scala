@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProvisioningParametersOutput extends js.Object {
+trait DescribeProvisioningParametersOutput extends StObject {
   
   /**
     * Information about the constraints used to provision the product.
@@ -46,69 +47,57 @@ object DescribeProvisioningParametersOutput {
   }
   
   @scala.inline
-  implicit class DescribeProvisioningParametersOutputOps[Self <: DescribeProvisioningParametersOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeProvisioningParametersOutputMutableBuilder[Self <: DescribeProvisioningParametersOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraintSummaries(value: ConstraintSummaries): Self = StObject.set(x, "ConstraintSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintSummariesUndefined: Self = StObject.set(x, "ConstraintSummaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstraintSummariesVarargs(value: ConstraintSummary*): Self = StObject.set(x, "ConstraintSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setConstraintSummariesVarargs(value: ConstraintSummary*): Self = this.set("ConstraintSummaries", js.Array(value :_*))
+    def setProvisioningArtifactOutputs(value: ProvisioningArtifactOutputs): Self = StObject.set(x, "ProvisioningArtifactOutputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraintSummaries(value: ConstraintSummaries): Self = this.set("ConstraintSummaries", value.asInstanceOf[js.Any])
+    def setProvisioningArtifactOutputsUndefined: Self = StObject.set(x, "ProvisioningArtifactOutputs", js.undefined)
     
     @scala.inline
-    def deleteConstraintSummaries: Self = this.set("ConstraintSummaries", js.undefined)
+    def setProvisioningArtifactOutputsVarargs(value: ProvisioningArtifactOutput*): Self = StObject.set(x, "ProvisioningArtifactOutputs", js.Array(value :_*))
     
     @scala.inline
-    def setProvisioningArtifactOutputsVarargs(value: ProvisioningArtifactOutput*): Self = this.set("ProvisioningArtifactOutputs", js.Array(value :_*))
+    def setProvisioningArtifactParameters(value: ProvisioningArtifactParameters): Self = StObject.set(x, "ProvisioningArtifactParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningArtifactOutputs(value: ProvisioningArtifactOutputs): Self = this.set("ProvisioningArtifactOutputs", value.asInstanceOf[js.Any])
+    def setProvisioningArtifactParametersUndefined: Self = StObject.set(x, "ProvisioningArtifactParameters", js.undefined)
     
     @scala.inline
-    def deleteProvisioningArtifactOutputs: Self = this.set("ProvisioningArtifactOutputs", js.undefined)
+    def setProvisioningArtifactParametersVarargs(value: ProvisioningArtifactParameter*): Self = StObject.set(x, "ProvisioningArtifactParameters", js.Array(value :_*))
     
     @scala.inline
-    def setProvisioningArtifactParametersVarargs(value: ProvisioningArtifactParameter*): Self = this.set("ProvisioningArtifactParameters", js.Array(value :_*))
+    def setProvisioningArtifactPreferences(value: ProvisioningArtifactPreferences): Self = StObject.set(x, "ProvisioningArtifactPreferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningArtifactParameters(value: ProvisioningArtifactParameters): Self = this.set("ProvisioningArtifactParameters", value.asInstanceOf[js.Any])
+    def setProvisioningArtifactPreferencesUndefined: Self = StObject.set(x, "ProvisioningArtifactPreferences", js.undefined)
     
     @scala.inline
-    def deleteProvisioningArtifactParameters: Self = this.set("ProvisioningArtifactParameters", js.undefined)
+    def setTagOptions(value: TagOptionSummaries): Self = StObject.set(x, "TagOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningArtifactPreferences(value: ProvisioningArtifactPreferences): Self = this.set("ProvisioningArtifactPreferences", value.asInstanceOf[js.Any])
+    def setTagOptionsUndefined: Self = StObject.set(x, "TagOptions", js.undefined)
     
     @scala.inline
-    def deleteProvisioningArtifactPreferences: Self = this.set("ProvisioningArtifactPreferences", js.undefined)
+    def setTagOptionsVarargs(value: TagOptionSummary*): Self = StObject.set(x, "TagOptions", js.Array(value :_*))
     
     @scala.inline
-    def setTagOptionsVarargs(value: TagOptionSummary*): Self = this.set("TagOptions", js.Array(value :_*))
+    def setUsageInstructions(value: UsageInstructions): Self = StObject.set(x, "UsageInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagOptions(value: TagOptionSummaries): Self = this.set("TagOptions", value.asInstanceOf[js.Any])
+    def setUsageInstructionsUndefined: Self = StObject.set(x, "UsageInstructions", js.undefined)
     
     @scala.inline
-    def deleteTagOptions: Self = this.set("TagOptions", js.undefined)
-    
-    @scala.inline
-    def setUsageInstructionsVarargs(value: UsageInstruction*): Self = this.set("UsageInstructions", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsageInstructions(value: UsageInstructions): Self = this.set("UsageInstructions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageInstructions: Self = this.set("UsageInstructions", js.undefined)
+    def setUsageInstructionsVarargs(value: UsageInstruction*): Self = StObject.set(x, "UsageInstructions", js.Array(value :_*))
   }
 }

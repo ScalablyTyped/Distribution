@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LineDecorationStyle extends js.Object
+sealed trait LineDecorationStyle extends StObject
 @JSGlobal("__esri.CIM.LineDecorationStyle")
 @js.native
-object LineDecorationStyle extends js.Object {
+object LineDecorationStyle extends StObject {
   
   /**
     * A circle is added at the end of the line.

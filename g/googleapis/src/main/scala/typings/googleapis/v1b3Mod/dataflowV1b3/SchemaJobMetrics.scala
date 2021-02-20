@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (under the same metric names) from Cloud Monitoring.
   */
 @js.native
-trait SchemaJobMetrics extends js.Object {
+trait SchemaJobMetrics extends StObject {
   
   /**
     * Timestamp as of which metric values are current.
@@ -33,33 +34,21 @@ object SchemaJobMetrics {
   }
   
   @scala.inline
-  implicit class SchemaJobMetricsOps[Self <: SchemaJobMetrics] (val x: Self) extends AnyVal {
+  implicit class SchemaJobMetricsMutableBuilder[Self <: SchemaJobMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricTime(value: String): Self = StObject.set(x, "metricTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricTimeUndefined: Self = StObject.set(x, "metricTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetrics(value: js.Array[SchemaMetricUpdate]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricTime(value: String): Self = this.set("metricTime", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteMetricTime: Self = this.set("metricTime", js.undefined)
-    
-    @scala.inline
-    def setMetricsVarargs(value: SchemaMetricUpdate*): Self = this.set("metrics", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetrics(value: js.Array[SchemaMetricUpdate]): Self = this.set("metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    def setMetricsVarargs(value: SchemaMetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value :_*))
   }
 }

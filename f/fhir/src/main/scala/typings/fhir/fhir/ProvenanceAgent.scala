@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,69 +60,57 @@ object ProvenanceAgent {
   }
   
   @scala.inline
-  implicit class ProvenanceAgentOps[Self <: ProvenanceAgent] (val x: Self) extends AnyVal {
+  implicit class ProvenanceAgentMutableBuilder[Self <: ProvenanceAgent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnBehalfOfReference(value: Reference): Self = StObject.set(x, "onBehalfOfReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnBehalfOfReferenceUndefined: Self = StObject.set(x, "onBehalfOfReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnBehalfOfUri(value: uri): Self = StObject.set(x, "onBehalfOfUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onBehalfOfUri(value: Element): Self = this.set("_onBehalfOfUri", value.asInstanceOf[js.Any])
+    def setOnBehalfOfUriUndefined: Self = StObject.set(x, "onBehalfOfUri", js.undefined)
     
     @scala.inline
-    def delete_onBehalfOfUri: Self = this.set("_onBehalfOfUri", js.undefined)
+    def setRelatedAgentType(value: CodeableConcept): Self = StObject.set(x, "relatedAgentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_whoUri(value: Element): Self = this.set("_whoUri", value.asInstanceOf[js.Any])
+    def setRelatedAgentTypeUndefined: Self = StObject.set(x, "relatedAgentType", js.undefined)
     
     @scala.inline
-    def delete_whoUri: Self = this.set("_whoUri", js.undefined)
+    def setRole(value: js.Array[CodeableConcept]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBehalfOfReference(value: Reference): Self = this.set("onBehalfOfReference", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteOnBehalfOfReference: Self = this.set("onBehalfOfReference", js.undefined)
+    def setRoleVarargs(value: CodeableConcept*): Self = StObject.set(x, "role", js.Array(value :_*))
     
     @scala.inline
-    def setOnBehalfOfUri(value: uri): Self = this.set("onBehalfOfUri", value.asInstanceOf[js.Any])
+    def setWhoReference(value: Reference): Self = StObject.set(x, "whoReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnBehalfOfUri: Self = this.set("onBehalfOfUri", js.undefined)
+    def setWhoReferenceUndefined: Self = StObject.set(x, "whoReference", js.undefined)
     
     @scala.inline
-    def setRelatedAgentType(value: CodeableConcept): Self = this.set("relatedAgentType", value.asInstanceOf[js.Any])
+    def setWhoUri(value: uri): Self = StObject.set(x, "whoUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelatedAgentType: Self = this.set("relatedAgentType", js.undefined)
+    def setWhoUriUndefined: Self = StObject.set(x, "whoUri", js.undefined)
     
     @scala.inline
-    def setRoleVarargs(value: CodeableConcept*): Self = this.set("role", js.Array(value :_*))
+    def set_onBehalfOfUri(value: Element): Self = StObject.set(x, "_onBehalfOfUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: js.Array[CodeableConcept]): Self = this.set("role", value.asInstanceOf[js.Any])
+    def set_onBehalfOfUriUndefined: Self = StObject.set(x, "_onBehalfOfUri", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def set_whoUri(value: Element): Self = StObject.set(x, "_whoUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhoReference(value: Reference): Self = this.set("whoReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhoReference: Self = this.set("whoReference", js.undefined)
-    
-    @scala.inline
-    def setWhoUri(value: uri): Self = this.set("whoUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhoUri: Self = this.set("whoUri", js.undefined)
+    def set_whoUriUndefined: Self = StObject.set(x, "_whoUri", js.undefined)
   }
 }

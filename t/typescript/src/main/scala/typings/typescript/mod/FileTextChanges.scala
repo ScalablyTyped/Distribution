@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileTextChanges extends js.Object {
+trait FileTextChanges extends StObject {
   
   var fileName: java.lang.String = js.native
   
@@ -22,33 +23,21 @@ object FileTextChanges {
   }
   
   @scala.inline
-  implicit class FileTextChangesOps[Self <: FileTextChanges] (val x: Self) extends AnyVal {
+  implicit class FileTextChangesMutableBuilder[Self <: FileTextChanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsNewFile(value: Boolean): Self = StObject.set(x, "isNewFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNewFileUndefined: Self = StObject.set(x, "isNewFile", js.undefined)
     
     @scala.inline
-    def setFileName(value: java.lang.String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setTextChanges(value: js.Array[TextChange]): Self = StObject.set(x, "textChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextChangesVarargs(value: TextChange*): Self = this.set("textChanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextChanges(value: js.Array[TextChange]): Self = this.set("textChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsNewFile(value: Boolean): Self = this.set("isNewFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsNewFile: Self = this.set("isNewFile", js.undefined)
+    def setTextChangesVarargs(value: TextChange*): Self = StObject.set(x, "textChanges", js.Array(value :_*))
   }
 }

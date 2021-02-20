@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationSettings extends js.Object {
+trait ApplicationSettings extends StObject {
   
   /**
     * Enables or disables persistent application settings for users during their streaming sessions. 
@@ -26,27 +27,15 @@ object ApplicationSettings {
   }
   
   @scala.inline
-  implicit class ApplicationSettingsOps[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
+  implicit class ApplicationSettingsMutableBuilder[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSettingsGroup(value: SettingsGroup): Self = StObject.set(x, "SettingsGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSettingsGroup(value: SettingsGroup): Self = this.set("SettingsGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettingsGroup: Self = this.set("SettingsGroup", js.undefined)
+    def setSettingsGroupUndefined: Self = StObject.set(x, "SettingsGroup", js.undefined)
   }
 }

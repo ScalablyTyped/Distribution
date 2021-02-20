@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,27 +19,15 @@ object DirectoryObject {
   }
   
   @scala.inline
-  implicit class DirectoryObjectOps[Self <: DirectoryObject] (val x: Self) extends AnyVal {
+  implicit class DirectoryObjectMutableBuilder[Self <: DirectoryObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "deletedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedDateTimeNull: Self = StObject.set(x, "deletedDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeletedDateTime(value: NullableOption[String]): Self = this.set("deletedDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletedDateTime: Self = this.set("deletedDateTime", js.undefined)
-    
-    @scala.inline
-    def setDeletedDateTimeNull: Self = this.set("deletedDateTime", null)
+    def setDeletedDateTimeUndefined: Self = StObject.set(x, "deletedDateTime", js.undefined)
   }
 }

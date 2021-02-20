@@ -15,6 +15,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`simple-scalar`
 import typings.arcgisJsApi.arcgisJsApiStrings.`single-arrow`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-field`
 import typings.arcgisJsApi.arcgisJsApiStrings.`wind-speed`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -3,6 +3,7 @@ package typings.three.mod
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,11 +38,21 @@ class Texture protected ()
   ) = this()
 }
 /* static members */
-@JSImport("three", "Texture")
-@js.native
-object Texture extends js.Object {
+object Texture {
   
-  var DEFAULT_IMAGE: js.Any = js.native
+  @JSImport("three", "Texture")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var DEFAULT_MAPPING: js.Any = js.native
+  @JSImport("three", "Texture.DEFAULT_IMAGE")
+  @js.native
+  def DEFAULT_IMAGE: js.Any = js.native
+  @scala.inline
+  def DEFAULT_IMAGE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_IMAGE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "Texture.DEFAULT_MAPPING")
+  @js.native
+  def DEFAULT_MAPPING: js.Any = js.native
+  @scala.inline
+  def DEFAULT_MAPPING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAPPING")(x.asInstanceOf[js.Any])
 }

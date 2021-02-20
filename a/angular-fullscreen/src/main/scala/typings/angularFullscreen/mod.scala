@@ -2,24 +2,22 @@ package typings.angularFullscreen
 
 import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("angular", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object fullscreen extends js.Object {
+  object fullscreen {
     
     /**
       * Prefixing interface name with "I" is not recommended: http://www.typescriptlang.org/Handbook#writing-dts-files
       * However, we let it here to keep consistency with all the other Angular-related definitions
       */
     @js.native
-    trait IFullscreen extends js.Object {
+    trait IFullscreen extends StObject {
       
       // enable document fullscreen
       def all(): Unit = js.native

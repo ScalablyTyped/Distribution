@@ -1,6 +1,7 @@
 package typings.reactWindow.mod
 
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,24 +36,12 @@ object FixedSizeGridProps {
   }
   
   @scala.inline
-  implicit class FixedSizeGridPropsOps[Self <: FixedSizeGridProps] (val x: Self) extends AnyVal {
+  implicit class FixedSizeGridPropsMutableBuilder[Self <: FixedSizeGridProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumnWidth(value: Double): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletedDrag extends js.Object {
+trait CompletedDrag extends StObject {
   
   var afterCritical: LiftEffect = js.native
   
@@ -24,30 +25,18 @@ object CompletedDrag {
   }
   
   @scala.inline
-  implicit class CompletedDragOps[Self <: CompletedDrag] (val x: Self) extends AnyVal {
+  implicit class CompletedDragMutableBuilder[Self <: CompletedDrag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterCritical(value: LiftEffect): Self = StObject.set(x, "afterCritical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCritical(value: Critical): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpact(value: DragImpact): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterCritical(value: LiftEffect): Self = this.set("afterCritical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCritical(value: Critical): Self = this.set("critical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImpact(value: DragImpact): Self = this.set("impact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: DropResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResult(value: DropResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

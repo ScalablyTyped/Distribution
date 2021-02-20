@@ -1,5 +1,6 @@
 package typings.reactNativeElements.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeElements.reactNativeElementsStrings.weibo
   - typings.reactNativeElements.reactNativeElementsStrings.vk
 */
-trait SocialMediaType extends js.Object
+trait SocialMediaType extends StObject
 object SocialMediaType {
   
   @scala.inline

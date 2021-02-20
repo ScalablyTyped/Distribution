@@ -1,5 +1,6 @@
 package typings.inboxsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //   event: () => any;
 // };
 @js.native
-trait LoadOptions extends js.Object {
+trait LoadOptions extends StObject {
   
   var appIconUrl: js.UndefOr[String] = js.native
   
@@ -30,36 +31,24 @@ object LoadOptions {
   }
   
   @scala.inline
-  implicit class LoadOptionsOps[Self <: LoadOptions] (val x: Self) extends AnyVal {
+  implicit class LoadOptionsMutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIconUrlUndefined: Self = StObject.set(x, "appIconUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppIconUrl(value: String): Self = this.set("appIconUrl", value.asInstanceOf[js.Any])
+    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
     @scala.inline
-    def deleteAppIconUrl: Self = this.set("appIconUrl", js.undefined)
+    def setSuppressAddonTitle(value: String): Self = StObject.set(x, "suppressAddonTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppName: Self = this.set("appName", js.undefined)
-    
-    @scala.inline
-    def setSuppressAddonTitle(value: String): Self = this.set("suppressAddonTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressAddonTitle: Self = this.set("suppressAddonTitle", js.undefined)
+    def setSuppressAddonTitleUndefined: Self = StObject.set(x, "suppressAddonTitle", js.undefined)
   }
 }

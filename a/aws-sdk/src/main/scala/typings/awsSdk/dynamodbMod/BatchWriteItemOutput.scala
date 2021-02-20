@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchWriteItemOutput extends js.Object {
+trait BatchWriteItemOutput extends StObject {
   
   /**
     * The capacity units consumed by the entire BatchWriteItem operation. Each element consists of:    TableName - The table that consumed the provisioned throughput.    CapacityUnits - The total number of capacity units consumed.  
@@ -31,39 +32,27 @@ object BatchWriteItemOutput {
   }
   
   @scala.inline
-  implicit class BatchWriteItemOutputOps[Self <: BatchWriteItemOutput] (val x: Self) extends AnyVal {
+  implicit class BatchWriteItemOutputMutableBuilder[Self <: BatchWriteItemOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
     
     @scala.inline
-    def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = this.set("ConsumedCapacity", js.Array(value :_*))
+    def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = this.set("ConsumedCapacity", value.asInstanceOf[js.Any])
+    def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
     
     @scala.inline
-    def deleteConsumedCapacity: Self = this.set("ConsumedCapacity", js.undefined)
+    def setUnprocessedItems(value: BatchWriteItemRequestMap): Self = StObject.set(x, "UnprocessedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = this.set("ItemCollectionMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemCollectionMetrics: Self = this.set("ItemCollectionMetrics", js.undefined)
-    
-    @scala.inline
-    def setUnprocessedItems(value: BatchWriteItemRequestMap): Self = this.set("UnprocessedItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnprocessedItems: Self = this.set("UnprocessedItems", js.undefined)
+    def setUnprocessedItemsUndefined: Self = StObject.set(x, "UnprocessedItems", js.undefined)
   }
 }

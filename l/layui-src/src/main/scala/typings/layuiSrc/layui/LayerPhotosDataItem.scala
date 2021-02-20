@@ -1,11 +1,12 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerPhotosDataItem extends js.Object {
+trait LayerPhotosDataItem extends StObject {
   
   var alt: String = js.native
   
@@ -24,33 +25,21 @@ object LayerPhotosDataItem {
   }
   
   @scala.inline
-  implicit class LayerPhotosDataItemOps[Self <: LayerPhotosDataItem] (val x: Self) extends AnyVal {
+  implicit class LayerPhotosDataItemMutableBuilder[Self <: LayerPhotosDataItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumb(value: String): Self = this.set("thumb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePid: Self = this.set("pid", js.undefined)
+    def setThumb(value: String): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
   }
 }

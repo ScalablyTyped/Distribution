@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudFrontOriginAccessIdentity extends js.Object {
+trait CloudFrontOriginAccessIdentity extends StObject {
   
   /**
     * The current configuration information for the identity. 
@@ -31,30 +32,18 @@ object CloudFrontOriginAccessIdentity {
   }
   
   @scala.inline
-  implicit class CloudFrontOriginAccessIdentityOps[Self <: CloudFrontOriginAccessIdentity] (val x: Self) extends AnyVal {
+  implicit class CloudFrontOriginAccessIdentityMutableBuilder[Self <: CloudFrontOriginAccessIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudFrontOriginAccessIdentityConfig(value: CloudFrontOriginAccessIdentityConfig): Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudFrontOriginAccessIdentityConfigUndefined: Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3CanonicalUserId(value: String): Self = this.set("S3CanonicalUserId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCloudFrontOriginAccessIdentityConfig(value: CloudFrontOriginAccessIdentityConfig): Self = this.set("CloudFrontOriginAccessIdentityConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudFrontOriginAccessIdentityConfig: Self = this.set("CloudFrontOriginAccessIdentityConfig", js.undefined)
+    def setS3CanonicalUserId(value: String): Self = StObject.set(x, "S3CanonicalUserId", value.asInstanceOf[js.Any])
   }
 }

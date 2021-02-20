@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVault.gapi.client.vault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MailCountResult extends js.Object {
+trait MailCountResult extends StObject {
   
   /** Error occurred when querying these accounts. */
   var accountCountErrors: js.UndefOr[js.Array[AccountCountError]] = js.native
@@ -31,57 +32,45 @@ object MailCountResult {
   }
   
   @scala.inline
-  implicit class MailCountResultOps[Self <: MailCountResult] (val x: Self) extends AnyVal {
+  implicit class MailCountResultMutableBuilder[Self <: MailCountResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountCountErrors(value: js.Array[AccountCountError]): Self = StObject.set(x, "accountCountErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountCountErrorsUndefined: Self = StObject.set(x, "accountCountErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountCountErrorsVarargs(value: AccountCountError*): Self = StObject.set(x, "accountCountErrors", js.Array(value :_*))
     
     @scala.inline
-    def setAccountCountErrorsVarargs(value: AccountCountError*): Self = this.set("accountCountErrors", js.Array(value :_*))
+    def setAccountCounts(value: js.Array[AccountCount]): Self = StObject.set(x, "accountCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountCountErrors(value: js.Array[AccountCountError]): Self = this.set("accountCountErrors", value.asInstanceOf[js.Any])
+    def setAccountCountsUndefined: Self = StObject.set(x, "accountCounts", js.undefined)
     
     @scala.inline
-    def deleteAccountCountErrors: Self = this.set("accountCountErrors", js.undefined)
+    def setAccountCountsVarargs(value: AccountCount*): Self = StObject.set(x, "accountCounts", js.Array(value :_*))
     
     @scala.inline
-    def setAccountCountsVarargs(value: AccountCount*): Self = this.set("accountCounts", js.Array(value :_*))
+    def setMatchingAccountsCount(value: String): Self = StObject.set(x, "matchingAccountsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountCounts(value: js.Array[AccountCount]): Self = this.set("accountCounts", value.asInstanceOf[js.Any])
+    def setMatchingAccountsCountUndefined: Self = StObject.set(x, "matchingAccountsCount", js.undefined)
     
     @scala.inline
-    def deleteAccountCounts: Self = this.set("accountCounts", js.undefined)
+    def setNonQueryableAccounts(value: js.Array[String]): Self = StObject.set(x, "nonQueryableAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchingAccountsCount(value: String): Self = this.set("matchingAccountsCount", value.asInstanceOf[js.Any])
+    def setNonQueryableAccountsUndefined: Self = StObject.set(x, "nonQueryableAccounts", js.undefined)
     
     @scala.inline
-    def deleteMatchingAccountsCount: Self = this.set("matchingAccountsCount", js.undefined)
+    def setNonQueryableAccountsVarargs(value: String*): Self = StObject.set(x, "nonQueryableAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setNonQueryableAccountsVarargs(value: String*): Self = this.set("nonQueryableAccounts", js.Array(value :_*))
+    def setQueriedAccountsCount(value: String): Self = StObject.set(x, "queriedAccountsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonQueryableAccounts(value: js.Array[String]): Self = this.set("nonQueryableAccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonQueryableAccounts: Self = this.set("nonQueryableAccounts", js.undefined)
-    
-    @scala.inline
-    def setQueriedAccountsCount(value: String): Self = this.set("queriedAccountsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueriedAccountsCount: Self = this.set("queriedAccountsCount", js.undefined)
+    def setQueriedAccountsCountUndefined: Self = StObject.set(x, "queriedAccountsCount", js.undefined)
   }
 }

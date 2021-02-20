@@ -1,6 +1,7 @@
 package typings.reactNavigationNative.anon
 
 import typings.reactNavigationNative.useScrollToTopMod.ScrollableView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,21 +20,9 @@ object ScrollToOffset {
   }
   
   @scala.inline
-  implicit class ScrollToOffsetOps[Self <: ScrollToOffset] (val x: Self) extends AnyVal {
+  implicit class ScrollToOffsetMutableBuilder[Self <: ScrollToOffset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScrollToOffset(value: Animated => Unit): Self = this.set("scrollToOffset", js.Any.fromFunction1(value))
+    def setScrollToOffset(value: Animated => Unit): Self = StObject.set(x, "scrollToOffset", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextTranslationJobProperties extends js.Object {
+trait TextTranslationJobProperties extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an AWS Identity Access and Management (IAM) role that granted Amazon Translate read access to the job's input data.
@@ -81,102 +82,90 @@ object TextTranslationJobProperties {
   }
   
   @scala.inline
-  implicit class TextTranslationJobPropertiesOps[Self <: TextTranslationJobProperties] (val x: Self) extends AnyVal {
+  implicit class TextTranslationJobPropertiesMutableBuilder[Self <: TextTranslationJobProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataAccessRoleArnUndefined: Self = StObject.set(x, "DataAccessRoleArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataAccessRoleArn(value: IamRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteDataAccessRoleArn: Self = this.set("DataAccessRoleArn", js.undefined)
+    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setJobDetails(value: JobDetails): Self = StObject.set(x, "JobDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    def setJobDetailsUndefined: Self = StObject.set(x, "JobDetails", js.undefined)
     
     @scala.inline
-    def deleteInputDataConfig: Self = this.set("InputDataConfig", js.undefined)
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobDetails(value: JobDetails): Self = this.set("JobDetails", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
     @scala.inline
-    def deleteJobDetails: Self = this.set("JobDetails", js.undefined)
+    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("JobId", js.undefined)
+    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
+    def setMessage(value: UnboundedLengthString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: UnboundedLengthString): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setOutputDataConfigUndefined: Self = StObject.set(x, "OutputDataConfig", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    def setSourceLanguageCodeUndefined: Self = StObject.set(x, "SourceLanguageCode", js.undefined)
     
     @scala.inline
-    def deleteOutputDataConfig: Self = this.set("OutputDataConfig", js.undefined)
+    def setSubmittedTime(value: Timestamp): Self = StObject.set(x, "SubmittedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLanguageCode(value: LanguageCodeString): Self = this.set("SourceLanguageCode", value.asInstanceOf[js.Any])
+    def setSubmittedTimeUndefined: Self = StObject.set(x, "SubmittedTime", js.undefined)
     
     @scala.inline
-    def deleteSourceLanguageCode: Self = this.set("SourceLanguageCode", js.undefined)
+    def setTargetLanguageCodes(value: TargetLanguageCodeStringList): Self = StObject.set(x, "TargetLanguageCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmittedTime(value: Timestamp): Self = this.set("SubmittedTime", value.asInstanceOf[js.Any])
+    def setTargetLanguageCodesUndefined: Self = StObject.set(x, "TargetLanguageCodes", js.undefined)
     
     @scala.inline
-    def deleteSubmittedTime: Self = this.set("SubmittedTime", js.undefined)
+    def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = StObject.set(x, "TargetLanguageCodes", js.Array(value :_*))
     
     @scala.inline
-    def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = this.set("TargetLanguageCodes", js.Array(value :_*))
+    def setTerminologyNames(value: ResourceNameList): Self = StObject.set(x, "TerminologyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetLanguageCodes(value: TargetLanguageCodeStringList): Self = this.set("TargetLanguageCodes", value.asInstanceOf[js.Any])
+    def setTerminologyNamesUndefined: Self = StObject.set(x, "TerminologyNames", js.undefined)
     
     @scala.inline
-    def deleteTargetLanguageCodes: Self = this.set("TargetLanguageCodes", js.undefined)
-    
-    @scala.inline
-    def setTerminologyNamesVarargs(value: ResourceName*): Self = this.set("TerminologyNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setTerminologyNames(value: ResourceNameList): Self = this.set("TerminologyNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminologyNames: Self = this.set("TerminologyNames", js.undefined)
+    def setTerminologyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "TerminologyNames", js.Array(value :_*))
   }
 }

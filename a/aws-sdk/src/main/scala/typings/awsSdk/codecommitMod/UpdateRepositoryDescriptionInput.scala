@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRepositoryDescriptionInput extends js.Object {
+trait UpdateRepositoryDescriptionInput extends StObject {
   
   /**
     * The new comment or description for the specified repository. Repository descriptions are limited to 1,000 characters.
@@ -26,27 +27,15 @@ object UpdateRepositoryDescriptionInput {
   }
   
   @scala.inline
-  implicit class UpdateRepositoryDescriptionInputOps[Self <: UpdateRepositoryDescriptionInput] (val x: Self) extends AnyVal {
+  implicit class UpdateRepositoryDescriptionInputMutableBuilder[Self <: UpdateRepositoryDescriptionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepositoryDescription(value: RepositoryDescription): Self = StObject.set(x, "repositoryDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepositoryDescriptionUndefined: Self = StObject.set(x, "repositoryDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryDescription(value: RepositoryDescription): Self = this.set("repositoryDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryDescription: Self = this.set("repositoryDescription", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

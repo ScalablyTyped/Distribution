@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorDetails extends js.Object {
+trait ErrorDetails extends StObject {
   
   /**
     * The error code for an error.
@@ -26,30 +27,18 @@ object ErrorDetails {
   }
   
   @scala.inline
-  implicit class ErrorDetailsOps[Self <: ErrorDetails] (val x: Self) extends AnyVal {
+  implicit class ErrorDetailsMutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: ErrorCodeString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: ErrorMessageString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: ErrorCodeString): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
-    
-    @scala.inline
-    def setErrorMessage(value: ErrorMessageString): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
   }
 }

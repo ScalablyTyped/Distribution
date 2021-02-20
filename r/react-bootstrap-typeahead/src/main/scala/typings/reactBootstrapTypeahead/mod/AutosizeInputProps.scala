@@ -4,13 +4,14 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.LegacyRef
 import typings.reactBootstrapTypeahead.anon.PickCSSPropertiesboxSizin
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<react.react.InputHTMLAttributes<'input'>, 'className' | 'style'> */
 @js.native
-trait AutosizeInputProps extends js.Object {
+trait AutosizeInputProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -31,51 +32,39 @@ object AutosizeInputProps {
   }
   
   @scala.inline
-  implicit class AutosizeInputPropsOps[Self <: AutosizeInputProps] (val x: Self) extends AnyVal {
+  implicit class AutosizeInputPropsMutableBuilder[Self <: AutosizeInputProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setInputRef(value: LegacyRef[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInputClassName(value: String): Self = this.set("inputClassName", value.asInstanceOf[js.Any])
+    def setInputRefNull: Self = StObject.set(x, "inputRef", null)
     
     @scala.inline
-    def deleteInputClassName: Self = this.set("inputClassName", js.undefined)
+    def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
     
     @scala.inline
-    def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = this.set("inputRef", js.Any.fromFunction1(value))
+    def setInputStyle(value: PickCSSPropertiesboxSizin): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputRef(value: LegacyRef[HTMLInputElement]): Self = this.set("inputRef", value.asInstanceOf[js.Any])
+    def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
     
     @scala.inline
-    def deleteInputRef: Self = this.set("inputRef", js.undefined)
-    
-    @scala.inline
-    def setInputRefNull: Self = this.set("inputRef", null)
-    
-    @scala.inline
-    def setInputStyle(value: PickCSSPropertiesboxSizin): Self = this.set("inputStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputStyle: Self = this.set("inputStyle", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

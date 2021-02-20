@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains a mapping from a formula name (function name, operator, ...) to the OpCode used by the formula compiler. */
 @js.native
-trait FormulaOpCodeMapEntry extends js.Object {
+trait FormulaOpCodeMapEntry extends StObject {
   
   /** The function name, or operator. */
   var Name: String = js.native
@@ -23,24 +24,12 @@ object FormulaOpCodeMapEntry {
   }
   
   @scala.inline
-  implicit class FormulaOpCodeMapEntryOps[Self <: FormulaOpCodeMapEntry] (val x: Self) extends AnyVal {
+  implicit class FormulaOpCodeMapEntryMutableBuilder[Self <: FormulaOpCodeMapEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: FormulaToken): Self = this.set("Token", value.asInstanceOf[js.Any])
+    def setToken(value: FormulaToken): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
   }
 }

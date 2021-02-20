@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DesktopCapturerSource extends js.Object {
+trait DesktopCapturerSource extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/desktop-capturer-source
   /**
@@ -54,33 +55,21 @@ object DesktopCapturerSource {
   }
   
   @scala.inline
-  implicit class DesktopCapturerSourceOps[Self <: DesktopCapturerSource] (val x: Self) extends AnyVal {
+  implicit class DesktopCapturerSourceMutableBuilder[Self <: DesktopCapturerSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppIcon(value: NativeImage_): Self = StObject.set(x, "appIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplay_id(value: String): Self = StObject.set(x, "display_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppIcon(value: NativeImage_): Self = this.set("appIcon", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_id(value: String): Self = this.set("display_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail(value: NativeImage_): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    def setThumbnail(value: NativeImage_): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

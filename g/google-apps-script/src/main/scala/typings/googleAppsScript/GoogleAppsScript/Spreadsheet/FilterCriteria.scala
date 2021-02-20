@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access filter criteria. To create a new criteria, use SpreadsheetApp.newFilterCriteria() and FilterCriteriaBuilder.
   */
 @js.native
-trait FilterCriteria extends js.Object {
+trait FilterCriteria extends StObject {
   
   def copy(): FilterCriteriaBuilder = js.native
   
@@ -35,33 +36,21 @@ object FilterCriteria {
   }
   
   @scala.inline
-  implicit class FilterCriteriaOps[Self <: FilterCriteria] (val x: Self) extends AnyVal {
+  implicit class FilterCriteriaMutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => FilterCriteriaBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCriteriaValues(value: () => js.Array[_]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopy(value: () => FilterCriteriaBuilder): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setGetHiddenValues(value: () => js.Array[String]): Self = StObject.set(x, "getHiddenValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCriteriaType(value: () => BooleanCriteria): Self = this.set("getCriteriaType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCriteriaValues(value: () => js.Array[_]): Self = this.set("getCriteriaValues", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetHiddenValues(value: () => js.Array[String]): Self = this.set("getHiddenValues", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVisibleValues(value: () => js.Array[String]): Self = this.set("getVisibleValues", js.Any.fromFunction0(value))
+    def setGetVisibleValues(value: () => js.Array[String]): Self = StObject.set(x, "getVisibleValues", js.Any.fromFunction0(value))
   }
 }

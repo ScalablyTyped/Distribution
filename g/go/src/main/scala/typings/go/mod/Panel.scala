@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -199,41 +200,98 @@ class Panel () extends GraphObject {
   /**Gets or sets how a .Viewbox panel will resize its content.*/
   var viewboxStretch: EnumValue = js.native
 }
-/* static members */
-@JSImport("go", "Panel")
-@js.native
-object Panel extends js.Object {
+object Panel {
+  
+  @JSImport("go", "Panel")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**This value for .type resizes the main element to fit around the other elements; the main element is the first GraphObject with GraphObject.isPanelMain set to true, or else the first GraphObject if none have that property set to true.*/
-  var Auto: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.Auto")
+  @js.native
+  def Auto: EnumValue = js.native
+  @scala.inline
+  def Auto_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Auto")(x.asInstanceOf[js.Any])
   
   /**This value for .type is used to draw regular patterns of lines.*/
-  var Grid: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.Grid")
+  @js.native
+  def Grid: EnumValue = js.native
+  @scala.inline
+  def Grid_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Grid")(x.asInstanceOf[js.Any])
   
   /**This value for .type lays out the elements horizontally with their GraphObject.alignment property dictating their alignment on the Y-axis.*/
-  var Horizontal: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.Horizontal")
+  @js.native
+  def Horizontal: EnumValue = js.native
+  @scala.inline
+  def Horizontal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
   
   /**This value for .type is used for Links and adornments that act as Links.*/
-  var Link: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.Link")
+  @js.native
+  def Link: EnumValue = js.native
+  @scala.inline
+  def Link_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
   
   /**The default .type arranges each element according to their GraphObject.position.*/
-  var Position: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.Position")
+  @js.native
+  def Position: EnumValue = js.native
+  @scala.inline
+  def Position_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Position")(x.asInstanceOf[js.Any])
   
   /**This value for .type arranges GraphObjects about a main element using the GraphObject.alignment and GraphObject.alignmentFocus properties; the main element is the first GraphObject with GraphObject.isPanelMain set to true, or else the first GraphObject if none have that property set to true.*/
-  var Spot: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.Spot")
+  @js.native
+  def Spot: EnumValue = js.native
+  @scala.inline
+  def Spot_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Spot")(x.asInstanceOf[js.Any])
   
   /**This value for .type arranges GraphObjects into rows and columns; set the GraphObject.row and GraphObject.column properties on each element.*/
-  var Table: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.Table")
+  @js.native
+  def Table: EnumValue = js.native
   
   /**Organizational Panel type that is only valid inside of a Table panel.*/
-  var TableColumn: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.TableColumn")
+  @js.native
+  def TableColumn: EnumValue = js.native
+  @scala.inline
+  def TableColumn_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TableColumn")(x.asInstanceOf[js.Any])
   
   /**Organizational Panel type that is only valid inside of a Table panel.*/
-  var TableRow: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.TableRow")
+  @js.native
+  def TableRow: EnumValue = js.native
+  @scala.inline
+  def TableRow_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TableRow")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def Table_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Table")(x.asInstanceOf[js.Any])
   
   /**This value for .type lays out the elements vertically with their GraphObject.alignment property dictating their alignment on the X-axis.*/
-  var Vertical: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.Vertical")
+  @js.native
+  def Vertical: EnumValue = js.native
+  @scala.inline
+  def Vertical_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
   
   /**This value for .type rescales a single GraphObject to fit inside the panel depending on the element's GraphObject.stretch property.*/
-  var Viewbox: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Panel.Viewbox")
+  @js.native
+  def Viewbox: EnumValue = js.native
+  @scala.inline
+  def Viewbox_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Viewbox")(x.asInstanceOf[js.Any])
 }

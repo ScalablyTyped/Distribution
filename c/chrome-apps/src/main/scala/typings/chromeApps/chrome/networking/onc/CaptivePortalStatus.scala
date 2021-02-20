@@ -1,6 +1,7 @@
 package typings.chromeApps.chrome.networking.onc
 
 import typings.chromeApps.chromeAppsStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chromeApps.chromeAppsStrings.Portal
   - typings.chromeApps.chromeAppsStrings.ProxyAuthRequired
 */
-trait CaptivePortalStatus extends js.Object
+trait CaptivePortalStatus extends StObject
 object CaptivePortalStatus {
   
   @scala.inline

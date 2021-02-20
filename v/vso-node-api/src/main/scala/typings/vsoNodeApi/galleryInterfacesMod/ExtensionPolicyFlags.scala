@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ExtensionPolicyFlags extends js.Object
+sealed trait ExtensionPolicyFlags extends StObject
 @JSImport("vso-node-api/interfaces/GalleryInterfaces", "ExtensionPolicyFlags")
 @js.native
-object ExtensionPolicyFlags extends js.Object {
+object ExtensionPolicyFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExtensionPolicyFlags with Double] = js.native
@@ -19,54 +19,47 @@ object ExtensionPolicyFlags extends js.Object {
     */
   @js.native
   sealed trait All extends ExtensionPolicyFlags
-  /* 31 */ @js.native
-  object All extends TopLevel[All with Double]
+  /* 31 */ val All: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.All with Double = js.native
   
   /**
     * Permission in 1st party extensions
     */
   @js.native
   sealed trait FirstParty extends ExtensionPolicyFlags
-  /* 16 */ @js.native
-  object FirstParty extends TopLevel[FirstParty with Double]
+  /* 16 */ val FirstParty: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.FirstParty with Double = js.native
   
   /**
     * No permission
     */
   @js.native
   sealed trait None extends ExtensionPolicyFlags
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.None with Double = js.native
   
   /**
     * Premission in extensions that are in preview
     */
   @js.native
   sealed trait Preview extends ExtensionPolicyFlags
-  /* 4 */ @js.native
-  object Preview extends TopLevel[Preview with Double]
+  /* 4 */ val Preview: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Preview with Double = js.native
   
   /**
     * Permission on private extensions
     */
   @js.native
   sealed trait Private extends ExtensionPolicyFlags
-  /* 1 */ @js.native
-  object Private extends TopLevel[Private with Double]
+  /* 1 */ val Private: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Private with Double = js.native
   
   /**
     * Permission on public extensions
     */
   @js.native
   sealed trait Public extends ExtensionPolicyFlags
-  /* 2 */ @js.native
-  object Public extends TopLevel[Public with Double]
+  /* 2 */ val Public: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Public with Double = js.native
   
   /**
     * Premission in relased extensions
     */
   @js.native
   sealed trait Released extends ExtensionPolicyFlags
-  /* 8 */ @js.native
-  object Released extends TopLevel[Released with Double]
+  /* 8 */ val Released: typings.vsoNodeApi.galleryInterfacesMod.ExtensionPolicyFlags.Released with Double = js.native
 }

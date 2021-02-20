@@ -1,11 +1,12 @@
 package typings.phaser.Phaser.Types.Physics.Matter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatterBodyRenderConfig extends js.Object {
+trait MatterBodyRenderConfig extends StObject {
   
   /**
     * The color value of the fill when rendering this body.
@@ -68,78 +69,66 @@ object MatterBodyRenderConfig {
   }
   
   @scala.inline
-  implicit class MatterBodyRenderConfigOps[Self <: MatterBodyRenderConfig] (val x: Self) extends AnyVal {
+  implicit class MatterBodyRenderConfigMutableBuilder[Self <: MatterBodyRenderConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillColor(value: Double): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: Double): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    def setLineColor(value: Double): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setLineOpacity(value: Double): Self = StObject.set(x, "lineOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: Double): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineOpacityUndefined: Self = StObject.set(x, "lineOpacity", js.undefined)
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setLineThickness(value: Double): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineOpacity(value: Double): Self = this.set("lineOpacity", value.asInstanceOf[js.Any])
+    def setLineThicknessUndefined: Self = StObject.set(x, "lineThickness", js.undefined)
     
     @scala.inline
-    def deleteLineOpacity: Self = this.set("lineOpacity", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineThickness(value: Double): Self = this.set("lineThickness", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteLineThickness: Self = this.set("lineThickness", js.undefined)
+    def setSprite(value: js.Object): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setSpriteDotxOffset(value: Double): Self = StObject.set(x, "sprite.xOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setSpriteDotxOffsetUndefined: Self = StObject.set(x, "sprite.xOffset", js.undefined)
     
     @scala.inline
-    def setSprite(value: js.Object): Self = this.set("sprite", value.asInstanceOf[js.Any])
+    def setSpriteDotyOffset(value: Double): Self = StObject.set(x, "sprite.yOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSprite: Self = this.set("sprite", js.undefined)
+    def setSpriteDotyOffsetUndefined: Self = StObject.set(x, "sprite.yOffset", js.undefined)
     
     @scala.inline
-    def setSpriteDotxOffset(value: Double): Self = this.set("sprite.xOffset", value.asInstanceOf[js.Any])
+    def setSpriteUndefined: Self = StObject.set(x, "sprite", js.undefined)
     
     @scala.inline
-    def deleteSpriteDotxOffset: Self = this.set("sprite.xOffset", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpriteDotyOffset(value: Double): Self = this.set("sprite.yOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpriteDotyOffset: Self = this.set("sprite.yOffset", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

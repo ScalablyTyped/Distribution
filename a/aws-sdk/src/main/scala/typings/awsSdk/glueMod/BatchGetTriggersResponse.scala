@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetTriggersResponse extends js.Object {
+trait BatchGetTriggersResponse extends StObject {
   
   /**
     * A list of trigger definitions.
@@ -26,36 +27,24 @@ object BatchGetTriggersResponse {
   }
   
   @scala.inline
-  implicit class BatchGetTriggersResponseOps[Self <: BatchGetTriggersResponse] (val x: Self) extends AnyVal {
+  implicit class BatchGetTriggersResponseMutableBuilder[Self <: BatchGetTriggersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTriggers(value: TriggerList): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTriggersNotFound(value: TriggerNameList): Self = StObject.set(x, "TriggersNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriggersNotFoundUndefined: Self = StObject.set(x, "TriggersNotFound", js.undefined)
     
     @scala.inline
-    def setTriggersVarargs(value: Trigger*): Self = this.set("Triggers", js.Array(value :_*))
+    def setTriggersNotFoundVarargs(value: NameString*): Self = StObject.set(x, "TriggersNotFound", js.Array(value :_*))
     
     @scala.inline
-    def setTriggers(value: TriggerList): Self = this.set("Triggers", value.asInstanceOf[js.Any])
+    def setTriggersUndefined: Self = StObject.set(x, "Triggers", js.undefined)
     
     @scala.inline
-    def deleteTriggers: Self = this.set("Triggers", js.undefined)
-    
-    @scala.inline
-    def setTriggersNotFoundVarargs(value: NameString*): Self = this.set("TriggersNotFound", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriggersNotFound(value: TriggerNameList): Self = this.set("TriggersNotFound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggersNotFound: Self = this.set("TriggersNotFound", js.undefined)
+    def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "Triggers", js.Array(value :_*))
   }
 }

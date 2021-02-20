@@ -1,5 +1,6 @@
 package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * recursive; all subtrees under the specific path prefix are counted.
   */
 @js.native
-trait SchemaCardinality extends js.Object {
+trait SchemaCardinality extends StObject {
   
   /**
     * The number variables under the `path` that must exist to meet this
@@ -39,30 +40,18 @@ object SchemaCardinality {
   }
   
   @scala.inline
-  implicit class SchemaCardinalityOps[Self <: SchemaCardinality] (val x: Self) extends AnyVal {
+  implicit class SchemaCardinalityMutableBuilder[Self <: SchemaCardinality] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

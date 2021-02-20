@@ -1,5 +1,6 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.STROKE
   - typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.FILL_AND_STROKE
 */
-trait CandleStickPaintStyle extends js.Object
+trait CandleStickPaintStyle extends StObject
 object CandleStickPaintStyle {
   
   @scala.inline

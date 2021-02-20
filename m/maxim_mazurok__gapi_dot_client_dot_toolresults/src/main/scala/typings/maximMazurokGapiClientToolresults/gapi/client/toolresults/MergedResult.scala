@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergedResult extends js.Object {
+trait MergedResult extends StObject {
   
   /** Outcome of the resource */
   var outcome: js.UndefOr[Outcome] = js.native
@@ -30,39 +31,27 @@ object MergedResult {
   }
   
   @scala.inline
-  implicit class MergedResultOps[Self <: MergedResult] (val x: Self) extends AnyVal {
+  implicit class MergedResultMutableBuilder[Self <: MergedResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutcome(value: Outcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutcome(value: Outcome): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteOutcome: Self = this.set("outcome", js.undefined)
+    def setTestSuiteOverviews(value: js.Array[TestSuiteOverview]): Self = StObject.set(x, "testSuiteOverviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTestSuiteOverviewsUndefined: Self = StObject.set(x, "testSuiteOverviews", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setTestSuiteOverviewsVarargs(value: TestSuiteOverview*): Self = this.set("testSuiteOverviews", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestSuiteOverviews(value: js.Array[TestSuiteOverview]): Self = this.set("testSuiteOverviews", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestSuiteOverviews: Self = this.set("testSuiteOverviews", js.undefined)
+    def setTestSuiteOverviewsVarargs(value: TestSuiteOverview*): Self = StObject.set(x, "testSuiteOverviews", js.Array(value :_*))
   }
 }

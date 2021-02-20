@@ -4,6 +4,7 @@ import typings.googleAppsScript.GoogleAppsScript.Base.User
 import typings.googleAppsScript.GoogleAppsScript.Forms.Form
 import typings.googleAppsScript.GoogleAppsScript.Forms.FormResponse
 import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,24 +25,12 @@ object FormsOnFormSubmit {
   }
   
   @scala.inline
-  implicit class FormsOnFormSubmitOps[Self <: FormsOnFormSubmit] (val x: Self) extends AnyVal {
+  implicit class FormsOnFormSubmitMutableBuilder[Self <: FormsOnFormSubmit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponse(value: FormResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResponse(value: FormResponse): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: Form): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: Form): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

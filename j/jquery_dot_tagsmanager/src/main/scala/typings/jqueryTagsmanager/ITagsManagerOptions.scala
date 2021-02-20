@@ -1,12 +1,13 @@
 package typings.jqueryTagsmanager
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITagsManagerOptions extends js.Object {
+trait ITagsManagerOptions extends StObject {
   
   var AjaxPush: js.UndefOr[String] = js.native
   
@@ -20,7 +21,7 @@ trait ITagsManagerOptions extends js.Object {
   
   var deleteTagsOnBackspace: js.UndefOr[Boolean] = js.native
   
-   //url
+  //url
   var delimeters: js.UndefOr[js.Array[Double]] = js.native
   
   var hiddenTagListId: js.UndefOr[String] = js.native
@@ -64,162 +65,150 @@ object ITagsManagerOptions {
   }
   
   @scala.inline
-  implicit class ITagsManagerOptionsOps[Self <: ITagsManagerOptions] (val x: Self) extends AnyVal {
+  implicit class ITagsManagerOptionsMutableBuilder[Self <: ITagsManagerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjaxPush(value: String): Self = StObject.set(x, "AjaxPush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAjaxPushUndefined: Self = StObject.set(x, "AjaxPush", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackspace(value: js.Array[Double]): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjaxPush(value: String): Self = this.set("AjaxPush", value.asInstanceOf[js.Any])
+    def setBackspaceUndefined: Self = StObject.set(x, "backspace", js.undefined)
     
     @scala.inline
-    def deleteAjaxPush: Self = this.set("AjaxPush", js.undefined)
+    def setBackspaceVarargs(value: Double*): Self = StObject.set(x, "backspace", js.Array(value :_*))
     
     @scala.inline
-    def setCapitalizeFirstLetter(value: Boolean): Self = this.set("CapitalizeFirstLetter", value.asInstanceOf[js.Any])
+    def setBlinkBGColor_1(value: String): Self = StObject.set(x, "blinkBGColor_1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapitalizeFirstLetter: Self = this.set("CapitalizeFirstLetter", js.undefined)
+    def setBlinkBGColor_1Undefined: Self = StObject.set(x, "blinkBGColor_1", js.undefined)
     
     @scala.inline
-    def setBackspaceVarargs(value: Double*): Self = this.set("backspace", js.Array(value :_*))
+    def setBlinkBGColor_2(value: String): Self = StObject.set(x, "blinkBGColor_2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackspace(value: js.Array[Double]): Self = this.set("backspace", value.asInstanceOf[js.Any])
+    def setBlinkBGColor_2Undefined: Self = StObject.set(x, "blinkBGColor_2", js.undefined)
     
     @scala.inline
-    def deleteBackspace: Self = this.set("backspace", js.undefined)
+    def setCapitalizeFirstLetter(value: Boolean): Self = StObject.set(x, "CapitalizeFirstLetter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlinkBGColor_1(value: String): Self = this.set("blinkBGColor_1", value.asInstanceOf[js.Any])
+    def setCapitalizeFirstLetterUndefined: Self = StObject.set(x, "CapitalizeFirstLetter", js.undefined)
     
     @scala.inline
-    def deleteBlinkBGColor_1: Self = this.set("blinkBGColor_1", js.undefined)
+    def setDeleteTagsOnBackspace(value: Boolean): Self = StObject.set(x, "deleteTagsOnBackspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlinkBGColor_2(value: String): Self = this.set("blinkBGColor_2", value.asInstanceOf[js.Any])
+    def setDeleteTagsOnBackspaceUndefined: Self = StObject.set(x, "deleteTagsOnBackspace", js.undefined)
     
     @scala.inline
-    def deleteBlinkBGColor_2: Self = this.set("blinkBGColor_2", js.undefined)
+    def setDelimeters(value: js.Array[Double]): Self = StObject.set(x, "delimeters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTagsOnBackspace(value: Boolean): Self = this.set("deleteTagsOnBackspace", value.asInstanceOf[js.Any])
+    def setDelimetersUndefined: Self = StObject.set(x, "delimeters", js.undefined)
     
     @scala.inline
-    def deleteDeleteTagsOnBackspace: Self = this.set("deleteTagsOnBackspace", js.undefined)
+    def setDelimetersVarargs(value: Double*): Self = StObject.set(x, "delimeters", js.Array(value :_*))
     
     @scala.inline
-    def setDelimetersVarargs(value: Double*): Self = this.set("delimeters", js.Array(value :_*))
+    def setHiddenTagListId(value: String): Self = StObject.set(x, "hiddenTagListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimeters(value: js.Array[Double]): Self = this.set("delimeters", value.asInstanceOf[js.Any])
+    def setHiddenTagListIdUndefined: Self = StObject.set(x, "hiddenTagListId", js.undefined)
     
     @scala.inline
-    def deleteDelimeters: Self = this.set("delimeters", js.undefined)
+    def setHiddenTagListName(value: String): Self = StObject.set(x, "hiddenTagListName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenTagListId(value: String): Self = this.set("hiddenTagListId", value.asInstanceOf[js.Any])
+    def setHiddenTagListNameUndefined: Self = StObject.set(x, "hiddenTagListName", js.undefined)
     
     @scala.inline
-    def deleteHiddenTagListId: Self = this.set("hiddenTagListId", js.undefined)
+    def setIsClearInputOnEsc(value: Boolean): Self = StObject.set(x, "isClearInputOnEsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenTagListName(value: String): Self = this.set("hiddenTagListName", value.asInstanceOf[js.Any])
+    def setIsClearInputOnEscUndefined: Self = StObject.set(x, "isClearInputOnEsc", js.undefined)
     
     @scala.inline
-    def deleteHiddenTagListName: Self = this.set("hiddenTagListName", js.undefined)
+    def setMaxTags(value: Double): Self = StObject.set(x, "maxTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClearInputOnEsc(value: Boolean): Self = this.set("isClearInputOnEsc", value.asInstanceOf[js.Any])
+    def setMaxTagsUndefined: Self = StObject.set(x, "maxTags", js.undefined)
     
     @scala.inline
-    def deleteIsClearInputOnEsc: Self = this.set("isClearInputOnEsc", js.undefined)
+    def setPrefilled(value: js.Any): Self = StObject.set(x, "prefilled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTags(value: Double): Self = this.set("maxTags", value.asInstanceOf[js.Any])
+    def setPrefilledUndefined: Self = StObject.set(x, "prefilled", js.undefined)
     
     @scala.inline
-    def deleteMaxTags: Self = this.set("maxTags", js.undefined)
+    def setPreventSubmitOnEnter(value: Boolean): Self = StObject.set(x, "preventSubmitOnEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefilled(value: js.Any): Self = this.set("prefilled", value.asInstanceOf[js.Any])
+    def setPreventSubmitOnEnterUndefined: Self = StObject.set(x, "preventSubmitOnEnter", js.undefined)
     
     @scala.inline
-    def deletePrefilled: Self = this.set("prefilled", js.undefined)
+    def setTagClass(value: String): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventSubmitOnEnter(value: Boolean): Self = this.set("preventSubmitOnEnter", value.asInstanceOf[js.Any])
+    def setTagClassUndefined: Self = StObject.set(x, "tagClass", js.undefined)
     
     @scala.inline
-    def deletePreventSubmitOnEnter: Self = this.set("preventSubmitOnEnter", js.undefined)
+    def setTagCloseIcon(value: String): Self = StObject.set(x, "tagCloseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagClass(value: String): Self = this.set("tagClass", value.asInstanceOf[js.Any])
+    def setTagCloseIconUndefined: Self = StObject.set(x, "tagCloseIcon", js.undefined)
     
     @scala.inline
-    def deleteTagClass: Self = this.set("tagClass", js.undefined)
+    def setTagsContainer(value: HTMLElement): Self = StObject.set(x, "tagsContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagCloseIcon(value: String): Self = this.set("tagCloseIcon", value.asInstanceOf[js.Any])
+    def setTagsContainerUndefined: Self = StObject.set(x, "tagsContainer", js.undefined)
     
     @scala.inline
-    def deleteTagCloseIcon: Self = this.set("tagCloseIcon", js.undefined)
+    def setTypeahead(value: Boolean): Self = StObject.set(x, "typeahead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsContainer(value: HTMLElement): Self = this.set("tagsContainer", value.asInstanceOf[js.Any])
+    def setTypeaheadAjaxPolling(value: Boolean): Self = StObject.set(x, "typeaheadAjaxPolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTagsContainer: Self = this.set("tagsContainer", js.undefined)
+    def setTypeaheadAjaxPollingUndefined: Self = StObject.set(x, "typeaheadAjaxPolling", js.undefined)
     
     @scala.inline
-    def setTypeahead(value: Boolean): Self = this.set("typeahead", value.asInstanceOf[js.Any])
+    def setTypeaheadAjaxSource(value: String): Self = StObject.set(x, "typeaheadAjaxSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTypeahead: Self = this.set("typeahead", js.undefined)
+    def setTypeaheadAjaxSourceUndefined: Self = StObject.set(x, "typeaheadAjaxSource", js.undefined)
     
     @scala.inline
-    def setTypeaheadAjaxPolling(value: Boolean): Self = this.set("typeaheadAjaxPolling", value.asInstanceOf[js.Any])
+    def setTypeaheadDelegate(value: js.Function): Self = StObject.set(x, "typeaheadDelegate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTypeaheadAjaxPolling: Self = this.set("typeaheadAjaxPolling", js.undefined)
+    def setTypeaheadDelegateUndefined: Self = StObject.set(x, "typeaheadDelegate", js.undefined)
     
     @scala.inline
-    def setTypeaheadAjaxSource(value: String): Self = this.set("typeaheadAjaxSource", value.asInstanceOf[js.Any])
+    def setTypeaheadOverrides(value: ITypeaheadOverrides): Self = StObject.set(x, "typeaheadOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTypeaheadAjaxSource: Self = this.set("typeaheadAjaxSource", js.undefined)
+    def setTypeaheadOverridesUndefined: Self = StObject.set(x, "typeaheadOverrides", js.undefined)
     
     @scala.inline
-    def setTypeaheadDelegate(value: js.Function): Self = this.set("typeaheadDelegate", value.asInstanceOf[js.Any])
+    def setTypeaheadSource(value: js.Any): Self = StObject.set(x, "typeaheadSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTypeaheadDelegate: Self = this.set("typeaheadDelegate", js.undefined)
+    def setTypeaheadSourceUndefined: Self = StObject.set(x, "typeaheadSource", js.undefined)
     
     @scala.inline
-    def setTypeaheadOverrides(value: ITypeaheadOverrides): Self = this.set("typeaheadOverrides", value.asInstanceOf[js.Any])
+    def setTypeaheadUndefined: Self = StObject.set(x, "typeahead", js.undefined)
     
     @scala.inline
-    def deleteTypeaheadOverrides: Self = this.set("typeaheadOverrides", js.undefined)
+    def setValidator(value: js.Function): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeaheadSource(value: js.Any): Self = this.set("typeaheadSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeaheadSource: Self = this.set("typeaheadSource", js.undefined)
-    
-    @scala.inline
-    def setValidator(value: js.Function): Self = this.set("validator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidator: Self = this.set("validator", js.undefined)
+    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }
 }

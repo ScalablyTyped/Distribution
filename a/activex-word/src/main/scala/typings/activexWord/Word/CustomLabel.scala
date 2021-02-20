@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomLabel extends js.Object {
+trait CustomLabel extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -73,72 +74,60 @@ object CustomLabel {
   }
   
   @scala.inline
-  implicit class CustomLabelOps[Self <: CustomLabel] (val x: Self) extends AnyVal {
+  implicit class CustomLabelMutableBuilder[Self <: CustomLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDotMatrix(value: Boolean): Self = StObject.set(x, "DotMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setHorizontalPitch(value: Double): Self = StObject.set(x, "HorizontalPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotMatrix(value: Boolean): Self = this.set("DotMatrix", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalPitch(value: Double): Self = this.set("HorizontalPitch", value.asInstanceOf[js.Any])
+    def setNumberAcross(value: Double): Self = StObject.set(x, "NumberAcross", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setNumberDown(value: Double): Self = StObject.set(x, "NumberDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPageSize(value: WdCustomLabelPageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberAcross(value: Double): Self = this.set("NumberAcross", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberDown(value: Double): Self = this.set("NumberDown", value.asInstanceOf[js.Any])
+    def setSideMargin(value: Double): Self = StObject.set(x, "SideMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: WdCustomLabelPageSize): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setValid(value: Boolean): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideMargin(value: Double): Self = this.set("SideMargin", value.asInstanceOf[js.Any])
+    def setVerticalPitch(value: Double): Self = StObject.set(x, "VerticalPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopMargin(value: Double): Self = this.set("TopMargin", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValid(value: Boolean): Self = this.set("Valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalPitch(value: Double): Self = this.set("VerticalPitch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotCustomLabel_typekey(value: CustomLabel): Self = this.set("Word.CustomLabel_typekey", value.asInstanceOf[js.Any])
+    def setWordDotCustomLabel_typekey(value: CustomLabel): Self = StObject.set(x, "Word.CustomLabel_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,13 @@ import typings.minappEnv.minappEnvStrings.`step-end`
 import typings.minappEnv.minappEnvStrings.`step-start`
 import typings.minappEnv.minappEnvStrings.ease
 import typings.minappEnv.minappEnvStrings.linear
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAnimationOption extends js.Object {
+trait CreateAnimationOption extends StObject {
   
   /** 动画延迟时间，单位 ms */
   var delay: js.UndefOr[Double] = js.native
@@ -45,42 +46,30 @@ object CreateAnimationOption {
   }
   
   @scala.inline
-  implicit class CreateAnimationOptionOps[Self <: CreateAnimationOption] (val x: Self) extends AnyVal {
+  implicit class CreateAnimationOptionMutableBuilder[Self <: CreateAnimationOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setTimingFunction(value: linear | ease | `ease-in` | `ease-in-out` | `ease-out` | `step-start` | `step-end`): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingFunction(value: linear | ease | `ease-in` | `ease-in-out` | `ease-out` | `step-start` | `step-end`): Self = this.set("timingFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingFunction: Self = this.set("timingFunction", js.undefined)
-    
-    @scala.inline
-    def setTransformOrigin(value: String): Self = this.set("transformOrigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformOrigin: Self = this.set("transformOrigin", js.undefined)
+    def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
   }
 }

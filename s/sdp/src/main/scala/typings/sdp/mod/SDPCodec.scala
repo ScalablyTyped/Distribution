@@ -1,5 +1,6 @@
 package typings.sdp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,33 +21,21 @@ object SDPCodec {
   }
   
   @scala.inline
-  implicit class SDPCodecOps[Self <: SDPCodec] (val x: Self) extends AnyVal {
+  implicit class SDPCodecMutableBuilder[Self <: SDPCodec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: SDPCodecAdditionalParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRtcpFeedback(value: js.Array[SDPFeedbackParameter]): Self = StObject.set(x, "rtcpFeedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: SDPCodecAdditionalParameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setRtcpFeedbackUndefined: Self = StObject.set(x, "rtcpFeedback", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
-    
-    @scala.inline
-    def setRtcpFeedbackVarargs(value: SDPFeedbackParameter*): Self = this.set("rtcpFeedback", js.Array(value :_*))
-    
-    @scala.inline
-    def setRtcpFeedback(value: js.Array[SDPFeedbackParameter]): Self = this.set("rtcpFeedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRtcpFeedback: Self = this.set("rtcpFeedback", js.undefined)
+    def setRtcpFeedbackVarargs(value: SDPFeedbackParameter*): Self = StObject.set(x, "rtcpFeedback", js.Array(value :_*))
   }
 }

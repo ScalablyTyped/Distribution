@@ -1,5 +1,6 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object ReplaceOptions {
   }
   
   @scala.inline
-  implicit class ReplaceOptionsOps[Self <: ReplaceOptions] (val x: Self) extends AnyVal {
+  implicit class ReplaceOptionsMutableBuilder[Self <: ReplaceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnOld(value: Boolean): Self = StObject.set(x, "returnOld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
-    
-    @scala.inline
-    def setReturnOld(value: Boolean): Self = this.set("returnOld", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnOld: Self = this.set("returnOld", js.undefined)
+    def setReturnOldUndefined: Self = StObject.set(x, "returnOld", js.undefined)
   }
 }

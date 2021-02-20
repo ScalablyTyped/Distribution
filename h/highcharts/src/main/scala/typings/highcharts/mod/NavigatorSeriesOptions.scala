@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigatorSeriesOptions extends js.Object {
+trait NavigatorSeriesOptions extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -83,111 +84,99 @@ object NavigatorSeriesOptions {
   }
   
   @scala.inline
-  implicit class NavigatorSeriesOptionsOps[Self <: NavigatorSeriesOptions] (val x: Self) extends AnyVal {
+  implicit class NavigatorSeriesOptionsMutableBuilder[Self <: NavigatorSeriesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setData(value: js.Array[Double | (js.Array[Double | String | Null]) | js.Object | Null]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
     
     @scala.inline
-    def setDataVarargs(value: (Double | (js.Array[Double | String | Null]) | js.Object | Null)*): Self = this.set("data", js.Array(value :_*))
+    def setDataLabels(value: NavigatorSeriesDataLabelsOptions | js.Array[NavigatorSeriesDataLabelsOptions]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[Double | (js.Array[Double | String | Null]) | js.Object | Null]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataLabelsVarargs(value: NavigatorSeriesDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
     
     @scala.inline
-    def setDataGrouping(value: DataGroupingOptionsObject): Self = this.set("dataGrouping", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteDataGrouping: Self = this.set("dataGrouping", js.undefined)
+    def setDataVarargs(value: (Double | (js.Array[Double | String | Null]) | js.Object | Null)*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataLabelsVarargs(value: NavigatorSeriesDataLabelsOptions*): Self = this.set("dataLabels", js.Array(value :_*))
+    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLabels(value: NavigatorSeriesDataLabelsOptions | js.Array[NavigatorSeriesDataLabelsOptions]): Self = this.set("dataLabels", value.asInstanceOf[js.Any])
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def deleteDataLabels: Self = this.set("dataLabels", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLineColorNull: Self = StObject.set(x, "lineColor", null)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def setLineColor(value: ColorString): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def setLineColorNull: Self = this.set("lineColor", null)
+    def setMarker(value: NavigatorSeriesMarkerOptions): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setPointRange(value: Double): Self = StObject.set(x, "pointRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: NavigatorSeriesMarkerOptions): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setPointRangeNull: Self = StObject.set(x, "pointRange", null)
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setPointRangeUndefined: Self = StObject.set(x, "pointRange", js.undefined)
     
     @scala.inline
-    def setPointRange(value: Double): Self = this.set("pointRange", value.asInstanceOf[js.Any])
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePointRange: Self = this.set("pointRange", js.undefined)
+    def setThresholdNull: Self = StObject.set(x, "threshold", null)
     
     @scala.inline
-    def setPointRangeNull: Self = this.set("pointRange", null)
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
-    
-    @scala.inline
-    def setThresholdNull: Self = this.set("threshold", null)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

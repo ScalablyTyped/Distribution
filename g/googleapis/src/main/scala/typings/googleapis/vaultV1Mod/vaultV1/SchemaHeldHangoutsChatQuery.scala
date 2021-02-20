@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Query options for hangouts chat holds.
   */
 @js.native
-trait SchemaHeldHangoutsChatQuery extends js.Object {
+trait SchemaHeldHangoutsChatQuery extends StObject {
   
   /**
     * If true, include rooms the user has participated in.
@@ -24,24 +25,12 @@ object SchemaHeldHangoutsChatQuery {
   }
   
   @scala.inline
-  implicit class SchemaHeldHangoutsChatQueryOps[Self <: SchemaHeldHangoutsChatQuery] (val x: Self) extends AnyVal {
+  implicit class SchemaHeldHangoutsChatQueryMutableBuilder[Self <: SchemaHeldHangoutsChatQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeRooms(value: Boolean): Self = StObject.set(x, "includeRooms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIncludeRooms(value: Boolean): Self = this.set("includeRooms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeRooms: Self = this.set("includeRooms", js.undefined)
+    def setIncludeRoomsUndefined: Self = StObject.set(x, "includeRooms", js.undefined)
   }
 }

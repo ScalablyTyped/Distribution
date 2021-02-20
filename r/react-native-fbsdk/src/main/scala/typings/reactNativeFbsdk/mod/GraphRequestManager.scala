@@ -1,12 +1,13 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-fbsdk", "GraphRequestManager")
 @js.native
-class GraphRequestManager () extends js.Object {
+class GraphRequestManager () extends StObject {
   
   /**
     * Add call back to the GraphRequestManager. Only one callback can be added.

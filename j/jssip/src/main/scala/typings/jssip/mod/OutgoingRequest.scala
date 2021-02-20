@@ -1,11 +1,12 @@
 package typings.jssip.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutgoingRequest extends js.Object {
+trait OutgoingRequest extends StObject {
   
   var body: js.UndefOr[String] = js.native
   
@@ -49,54 +50,42 @@ object OutgoingRequest {
   }
   
   @scala.inline
-  implicit class OutgoingRequestOps[Self <: OutgoingRequest] (val x: Self) extends AnyVal {
+  implicit class OutgoingRequestMutableBuilder[Self <: OutgoingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCall_id(value: String): Self = StObject.set(x, "call_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCall_id(value: String): Self = this.set("call_id", value.asInstanceOf[js.Any])
+    def setCseq(value: Double): Self = StObject.set(x, "cseq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCseq(value: Double): Self = this.set("cseq", value.asInstanceOf[js.Any])
+    def setFrom(value: NameAddrHeader): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: NameAddrHeader): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHeader(value: String => String): Self = this.set("getHeader", js.Any.fromFunction1(value))
+    def setGetHeaders(value: String => js.Array[String]): Self = StObject.set(x, "getHeaders", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHeaders(value: String => js.Array[String]): Self = this.set("getHeaders", js.Any.fromFunction1(value))
+    def setHasHeader(value: String => Boolean): Self = StObject.set(x, "hasHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasHeader(value: String => Boolean): Self = this.set("hasHeader", js.Any.fromFunction1(value))
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setRuri(value: URI): Self = StObject.set(x, "ruri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuri(value: URI): Self = this.set("ruri", value.asInstanceOf[js.Any])
+    def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetHeader(value: (String, String) => Unit): Self = this.set("setHeader", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTo(value: NameAddrHeader): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setTo(value: NameAddrHeader): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

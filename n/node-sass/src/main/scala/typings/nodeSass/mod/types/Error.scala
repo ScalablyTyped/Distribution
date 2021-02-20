@@ -1,7 +1,7 @@
 package typings.nodeSass.mod.types
 
-import org.scalablytyped.runtime.TopLevel
 import typings.nodeSass.mod._ImporterReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +19,16 @@ trait Error
     */
   val ___SASS_ERROR___ : js.Symbol = js.native
 }
-@JSImport("node-sass", "types.Error")
-@js.native
-object Error extends TopLevel[ErrorConstructor]
+object Error {
+  
+  @JSImport("node-sass", "types.Error")
+  @js.native
+  val ^ : ErrorConstructor = js.native
+  
+  @scala.inline
+  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def set___SASS_ERROR___(value: js.Symbol): Self = StObject.set(x, "___SASS_ERROR___", value.asInstanceOf[js.Any])
+  }
+}

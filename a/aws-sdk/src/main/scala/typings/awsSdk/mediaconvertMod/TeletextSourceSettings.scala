@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeletextSourceSettings extends js.Object {
+trait TeletextSourceSettings extends StObject {
   
   /**
     * Use Page Number (PageNumber) to specify the three-digit hexadecimal page number that will be used for Teletext captions. Do not use this setting if you are passing through teletext from the input source to output.
@@ -21,24 +22,12 @@ object TeletextSourceSettings {
   }
   
   @scala.inline
-  implicit class TeletextSourceSettingsOps[Self <: TeletextSourceSettings] (val x: Self) extends AnyVal {
+  implicit class TeletextSourceSettingsMutableBuilder[Self <: TeletextSourceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = this.set("PageNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageNumber: Self = this.set("PageNumber", js.undefined)
+    def setPageNumberUndefined: Self = StObject.set(x, "PageNumber", js.undefined)
   }
 }

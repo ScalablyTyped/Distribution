@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomDetection extends js.Object {
+trait CustomDetection extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the custom data identifier.
@@ -36,42 +37,30 @@ object CustomDetection {
   }
   
   @scala.inline
-  implicit class CustomDetectionOps[Self <: CustomDetection] (val x: Self) extends AnyVal {
+  implicit class CustomDetectionMutableBuilder[Self <: CustomDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: long): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setOccurrences(value: Occurrences): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOccurrences(value: Occurrences): Self = this.set("occurrences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOccurrences: Self = this.set("occurrences", js.undefined)
+    def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
   }
 }

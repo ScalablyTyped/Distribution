@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CGAAttributeType extends js.Object
+sealed trait CGAAttributeType extends StObject
 @JSGlobal("__esri.CIM.CGAAttributeType")
 @js.native
-object CGAAttributeType extends js.Object {
+object CGAAttributeType extends StObject {
   
   /**
     * Boolean - Attribute is a boolean

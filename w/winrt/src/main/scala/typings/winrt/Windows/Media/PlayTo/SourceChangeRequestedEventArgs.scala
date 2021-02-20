@@ -4,6 +4,7 @@ import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

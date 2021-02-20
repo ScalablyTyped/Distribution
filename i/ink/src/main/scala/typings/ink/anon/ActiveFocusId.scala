@@ -1,11 +1,12 @@
 package typings.ink.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveFocusId extends js.Object {
+trait ActiveFocusId extends StObject {
   
   var activeFocusId: js.UndefOr[scala.Nothing] = js.native
   
@@ -24,27 +25,15 @@ object ActiveFocusId {
   }
   
   @scala.inline
-  implicit class ActiveFocusIdOps[Self <: ActiveFocusId] (val x: Self) extends AnyVal {
+  implicit class ActiveFocusIdMutableBuilder[Self <: ActiveFocusId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFocusables(value: js.Array[scala.Nothing]): Self = StObject.set(x, "focusables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocusablesVarargs(value: scala.Nothing*): Self = StObject.set(x, "focusables", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFocusablesVarargs(value: scala.Nothing*): Self = this.set("focusables", js.Array(value :_*))
-    
-    @scala.inline
-    def setFocusables(value: js.Array[scala.Nothing]): Self = this.set("focusables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFocusEnabled(value: Boolean): Self = this.set("isFocusEnabled", value.asInstanceOf[js.Any])
+    def setIsFocusEnabled(value: Boolean): Self = StObject.set(x, "isFocusEnabled", value.asInstanceOf[js.Any])
   }
 }

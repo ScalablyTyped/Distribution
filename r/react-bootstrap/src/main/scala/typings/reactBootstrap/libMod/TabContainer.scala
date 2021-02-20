@@ -1,12 +1,11 @@
 package typings.reactBootstrap.libMod
 
-import typings.react.mod.Component
-import typings.reactBootstrap.tabContainerMod.TabContainerProps
+import typings.reactBootstrap.tabContainerMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "TabContainer")
 @js.native
-class TabContainer ()
-  extends Component[TabContainerProps, js.Object, js.Any]
+class TabContainer () extends ^

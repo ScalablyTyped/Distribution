@@ -1,5 +1,6 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("grammarkdown/dist/grammarkdown", "MultiLineCommentTrivia")
 @js.native
 class MultiLineCommentTrivia ()
-  extends Node2[typings.grammarkdown.grammarkdownMod.SyntaxKind.MultiLineCommentTrivia]
+  extends CommentTriviaBase[typings.grammarkdown.grammarkdownMod.SyntaxKind.MultiLineCommentTrivia]

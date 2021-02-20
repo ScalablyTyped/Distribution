@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,27 +49,15 @@ object SmartArrayNoDuplicate {
   }
   
   @scala.inline
-  implicit class SmartArrayNoDuplicateOps[Self <: SmartArrayNoDuplicate[_], T] (val x: Self with SmartArrayNoDuplicate[T]) extends AnyVal {
+  implicit class SmartArrayNoDuplicateMutableBuilder[Self <: SmartArrayNoDuplicate[_], T] (val x: Self with SmartArrayNoDuplicate[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcatWithNoDuplicate(value: js.Any => Unit): Self = StObject.set(x, "concatWithNoDuplicate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPushNoDuplicate(value: T => Boolean): Self = StObject.set(x, "pushNoDuplicate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_duplicateId(value: js.Any): Self = this.set("_duplicateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConcatWithNoDuplicate(value: js.Any => Unit): Self = this.set("concatWithNoDuplicate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPushNoDuplicate(value: T => Boolean): Self = this.set("pushNoDuplicate", js.Any.fromFunction1(value))
+    def set_duplicateId(value: js.Any): Self = StObject.set(x, "_duplicateId", value.asInstanceOf[js.Any])
   }
 }

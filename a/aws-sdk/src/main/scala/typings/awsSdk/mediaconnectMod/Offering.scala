@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Offering extends js.Object {
+trait Offering extends StObject {
   
   /**
     * The type of currency that is used for billing. The currencyCode used for all reservations is US dollars.
@@ -65,42 +66,30 @@ object Offering {
   }
   
   @scala.inline
-  implicit class OfferingOps[Self <: Offering] (val x: Self) extends AnyVal {
+  implicit class OfferingMutableBuilder[Self <: Offering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: string): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: integer): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationUnits(value: DurationUnits): Self = StObject.set(x, "DurationUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: string): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    def setOfferingArn(value: string): Self = StObject.set(x, "OfferingArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: integer): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setOfferingDescription(value: string): Self = StObject.set(x, "OfferingDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationUnits(value: DurationUnits): Self = this.set("DurationUnits", value.asInstanceOf[js.Any])
+    def setPricePerUnit(value: string): Self = StObject.set(x, "PricePerUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingArn(value: string): Self = this.set("OfferingArn", value.asInstanceOf[js.Any])
+    def setPriceUnits(value: PriceUnits): Self = StObject.set(x, "PriceUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingDescription(value: string): Self = this.set("OfferingDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPricePerUnit(value: string): Self = this.set("PricePerUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPriceUnits(value: PriceUnits): Self = this.set("PriceUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceSpecification(value: ResourceSpecification): Self = this.set("ResourceSpecification", value.asInstanceOf[js.Any])
+    def setResourceSpecification(value: ResourceSpecification): Self = StObject.set(x, "ResourceSpecification", value.asInstanceOf[js.Any])
   }
 }

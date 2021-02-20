@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,63 +112,51 @@ object ASPxClientCrosshairOptions {
   }
   
   @scala.inline
-  implicit class ASPxClientCrosshairOptionsOps[Self <: ASPxClientCrosshairOptions] (val x: Self) extends AnyVal {
+  implicit class ASPxClientCrosshairOptionsMutableBuilder[Self <: ASPxClientCrosshairOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgumentLineColor(value: String): Self = StObject.set(x, "argumentLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrosshairLabelMode(value: String): Self = StObject.set(x, "crosshairLabelMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupHeaderPattern(value: String): Self = StObject.set(x, "groupHeaderPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentLineColor(value: String): Self = this.set("argumentLineColor", value.asInstanceOf[js.Any])
+    def setLinesMode(value: String): Self = StObject.set(x, "linesMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairLabelMode(value: String): Self = this.set("crosshairLabelMode", value.asInstanceOf[js.Any])
+    def setShowArgumentLine(value: Boolean): Self = StObject.set(x, "showArgumentLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupHeaderPattern(value: String): Self = this.set("groupHeaderPattern", value.asInstanceOf[js.Any])
+    def setShowAxisXLabels(value: Boolean): Self = StObject.set(x, "showAxisXLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesMode(value: String): Self = this.set("linesMode", value.asInstanceOf[js.Any])
+    def setShowAxisYLabels(value: Boolean): Self = StObject.set(x, "showAxisYLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowArgumentLine(value: Boolean): Self = this.set("showArgumentLine", value.asInstanceOf[js.Any])
+    def setShowCrosshairLabels(value: Boolean): Self = StObject.set(x, "showCrosshairLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAxisXLabels(value: Boolean): Self = this.set("showAxisXLabels", value.asInstanceOf[js.Any])
+    def setShowGroupHeaders(value: Boolean): Self = StObject.set(x, "showGroupHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAxisYLabels(value: Boolean): Self = this.set("showAxisYLabels", value.asInstanceOf[js.Any])
+    def setShowOnlyInFocusedPane(value: Boolean): Self = StObject.set(x, "showOnlyInFocusedPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCrosshairLabels(value: Boolean): Self = this.set("showCrosshairLabels", value.asInstanceOf[js.Any])
+    def setShowOutOfRangePoints(value: Boolean): Self = StObject.set(x, "showOutOfRangePoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGroupHeaders(value: Boolean): Self = this.set("showGroupHeaders", value.asInstanceOf[js.Any])
+    def setShowValueLine(value: Boolean): Self = StObject.set(x, "showValueLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOnlyInFocusedPane(value: Boolean): Self = this.set("showOnlyInFocusedPane", value.asInstanceOf[js.Any])
+    def setSnapMode(value: String): Self = StObject.set(x, "snapMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOutOfRangePoints(value: Boolean): Self = this.set("showOutOfRangePoints", value.asInstanceOf[js.Any])
+    def setValueLineColor(value: String): Self = StObject.set(x, "valueLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowValueLine(value: Boolean): Self = this.set("showValueLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapMode(value: String): Self = this.set("snapMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueLineColor(value: String): Self = this.set("valueLineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueSelectionMode(value: String): Self = this.set("valueSelectionMode", value.asInstanceOf[js.Any])
+    def setValueSelectionMode(value: String): Self = StObject.set(x, "valueSelectionMode", value.asInstanceOf[js.Any])
   }
 }

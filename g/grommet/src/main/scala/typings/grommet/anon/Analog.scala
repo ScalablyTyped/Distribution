@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Analog extends js.Object {
+trait Analog extends StObject {
   
   var analog: js.UndefOr[Hour] = js.native
   
@@ -20,30 +21,18 @@ object Analog {
   }
   
   @scala.inline
-  implicit class AnalogOps[Self <: Analog] (val x: Self) extends AnyVal {
+  implicit class AnalogMutableBuilder[Self <: Analog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalog(value: Hour): Self = StObject.set(x, "analog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalogUndefined: Self = StObject.set(x, "analog", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDigital(value: Text): Self = StObject.set(x, "digital", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalog(value: Hour): Self = this.set("analog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnalog: Self = this.set("analog", js.undefined)
-    
-    @scala.inline
-    def setDigital(value: Text): Self = this.set("digital", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDigital: Self = this.set("digital", js.undefined)
+    def setDigitalUndefined: Self = StObject.set(x, "digital", js.undefined)
   }
 }

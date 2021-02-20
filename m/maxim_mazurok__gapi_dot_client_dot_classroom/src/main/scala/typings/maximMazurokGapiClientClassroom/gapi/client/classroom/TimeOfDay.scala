@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeOfDay extends js.Object {
+trait TimeOfDay extends StObject {
   
   /** Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time. */
   var hours: js.UndefOr[Double] = js.native
@@ -28,42 +29,30 @@ object TimeOfDay {
   }
   
   @scala.inline
-  implicit class TimeOfDayOps[Self <: TimeOfDay] (val x: Self) extends AnyVal {
+  implicit class TimeOfDayMutableBuilder[Self <: TimeOfDay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHours(value: Double): Self = this.set("hours", value.asInstanceOf[js.Any])
+    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
     
     @scala.inline
-    def deleteHours: Self = this.set("hours", js.undefined)
+    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinutes(value: Double): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
     @scala.inline
-    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNanos(value: Double): Self = this.set("nanos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNanos: Self = this.set("nanos", js.undefined)
-    
-    @scala.inline
-    def setSeconds(value: Double): Self = this.set("seconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeconds: Self = this.set("seconds", js.undefined)
+    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
   }
 }

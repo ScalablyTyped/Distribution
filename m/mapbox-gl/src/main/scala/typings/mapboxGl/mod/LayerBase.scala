@@ -1,11 +1,12 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerBase extends js.Object {
+trait LayerBase extends StObject {
   
   var filter: js.UndefOr[js.Array[_]] = js.native
   
@@ -34,72 +35,60 @@ object LayerBase {
   }
   
   @scala.inline
-  implicit class LayerBaseOps[Self <: LayerBase] (val x: Self) extends AnyVal {
+  implicit class LayerBaseMutableBuilder[Self <: LayerBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterVarargs(value: js.Any*): Self = this.set("filter", js.Array(value :_*))
+    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: js.Array[_]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
     
     @scala.inline
-    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxzoom(value: Double): Self = this.set("maxzoom", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteMaxzoom: Self = this.set("maxzoom", js.undefined)
+    def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinzoom(value: Double): Self = this.set("minzoom", value.asInstanceOf[js.Any])
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def deleteMinzoom: Self = this.set("minzoom", js.undefined)
+    def setSource(value: String | AnySourceData): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def `setSource-layer`(value: String): Self = StObject.set(x, "source-layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
+    def `setSource-layerUndefined`: Self = StObject.set(x, "source-layer", js.undefined)
     
     @scala.inline
-    def setSource(value: String | AnySourceData): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def `setSource-layer`(value: String): Self = this.set("source-layer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteSource-layer`: Self = this.set("source-layer", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

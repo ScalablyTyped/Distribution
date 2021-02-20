@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.allModelClassesMod.pages
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,18 +25,32 @@ class BuildingBlock protected ()
     container: IFolderBase
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.BuildingBlock")
-@js.native
-object BuildingBlock extends js.Object {
+object BuildingBlock {
+  
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.BuildingBlock")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new BuildingBlock unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.BuildingBlock.createIn")
+  @js.native
   def createIn(container: IFolderBase): typings.mendixmodelsdk.pagesMod.pages.BuildingBlock = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.BuildingBlock.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.BuildingBlock.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

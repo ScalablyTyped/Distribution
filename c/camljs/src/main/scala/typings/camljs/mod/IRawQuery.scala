@@ -1,11 +1,12 @@
 package typings.camljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRawQuery extends js.Object {
+trait IRawQuery extends StObject {
   
   def ModifyWhere(): IRawQueryModify = js.native
   
@@ -21,24 +22,12 @@ object IRawQuery {
   }
   
   @scala.inline
-  implicit class IRawQueryOps[Self <: IRawQuery] (val x: Self) extends AnyVal {
+  implicit class IRawQueryMutableBuilder[Self <: IRawQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModifyWhere(value: () => IRawQueryModify): Self = StObject.set(x, "ModifyWhere", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModifyWhere(value: () => IRawQueryModify): Self = this.set("ModifyWhere", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReplaceWhere(value: () => IFieldExpression): Self = this.set("ReplaceWhere", js.Any.fromFunction0(value))
+    def setReplaceWhere(value: () => IFieldExpression): Self = StObject.set(x, "ReplaceWhere", js.Any.fromFunction0(value))
   }
 }

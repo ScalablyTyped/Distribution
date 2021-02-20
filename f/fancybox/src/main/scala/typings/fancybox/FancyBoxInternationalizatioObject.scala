@@ -1,11 +1,12 @@
 package typings.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxInternationalizatioObject extends js.Object {
+trait FancyBoxInternationalizatioObject extends StObject {
   
   var CLOSE: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object FancyBoxInternationalizatioObject {
   }
   
   @scala.inline
-  implicit class FancyBoxInternationalizatioObjectOps[Self <: FancyBoxInternationalizatioObject] (val x: Self) extends AnyVal {
+  implicit class FancyBoxInternationalizatioObjectMutableBuilder[Self <: FancyBoxInternationalizatioObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCLOSE(value: String): Self = StObject.set(x, "CLOSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCLOSEUndefined: Self = StObject.set(x, "CLOSE", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDOWNLOAD(value: String): Self = StObject.set(x, "DOWNLOAD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLOSE(value: String): Self = this.set("CLOSE", value.asInstanceOf[js.Any])
+    def setDOWNLOADUndefined: Self = StObject.set(x, "DOWNLOAD", js.undefined)
     
     @scala.inline
-    def deleteCLOSE: Self = this.set("CLOSE", js.undefined)
+    def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOWNLOAD(value: String): Self = this.set("DOWNLOAD", value.asInstanceOf[js.Any])
+    def setERRORUndefined: Self = StObject.set(x, "ERROR", js.undefined)
     
     @scala.inline
-    def deleteDOWNLOAD: Self = this.set("DOWNLOAD", js.undefined)
+    def setFULL_SCREEN(value: String): Self = StObject.set(x, "FULL_SCREEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setERROR(value: String): Self = this.set("ERROR", value.asInstanceOf[js.Any])
+    def setFULL_SCREENUndefined: Self = StObject.set(x, "FULL_SCREEN", js.undefined)
     
     @scala.inline
-    def deleteERROR: Self = this.set("ERROR", js.undefined)
+    def setNEXT(value: String): Self = StObject.set(x, "NEXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFULL_SCREEN(value: String): Self = this.set("FULL_SCREEN", value.asInstanceOf[js.Any])
+    def setNEXTUndefined: Self = StObject.set(x, "NEXT", js.undefined)
     
     @scala.inline
-    def deleteFULL_SCREEN: Self = this.set("FULL_SCREEN", js.undefined)
+    def setPLAY_START(value: String): Self = StObject.set(x, "PLAY_START", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNEXT(value: String): Self = this.set("NEXT", value.asInstanceOf[js.Any])
+    def setPLAY_STARTUndefined: Self = StObject.set(x, "PLAY_START", js.undefined)
     
     @scala.inline
-    def deleteNEXT: Self = this.set("NEXT", js.undefined)
+    def setPLAY_STOP(value: String): Self = StObject.set(x, "PLAY_STOP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPLAY_START(value: String): Self = this.set("PLAY_START", value.asInstanceOf[js.Any])
+    def setPLAY_STOPUndefined: Self = StObject.set(x, "PLAY_STOP", js.undefined)
     
     @scala.inline
-    def deletePLAY_START: Self = this.set("PLAY_START", js.undefined)
+    def setPREV(value: String): Self = StObject.set(x, "PREV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPLAY_STOP(value: String): Self = this.set("PLAY_STOP", value.asInstanceOf[js.Any])
+    def setPREVUndefined: Self = StObject.set(x, "PREV", js.undefined)
     
     @scala.inline
-    def deletePLAY_STOP: Self = this.set("PLAY_STOP", js.undefined)
+    def setSHARE(value: String): Self = StObject.set(x, "SHARE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPREV(value: String): Self = this.set("PREV", value.asInstanceOf[js.Any])
+    def setSHAREUndefined: Self = StObject.set(x, "SHARE", js.undefined)
     
     @scala.inline
-    def deletePREV: Self = this.set("PREV", js.undefined)
+    def setTHUMBS(value: String): Self = StObject.set(x, "THUMBS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHARE(value: String): Self = this.set("SHARE", value.asInstanceOf[js.Any])
+    def setTHUMBSUndefined: Self = StObject.set(x, "THUMBS", js.undefined)
     
     @scala.inline
-    def deleteSHARE: Self = this.set("SHARE", js.undefined)
+    def setZOOM(value: String): Self = StObject.set(x, "ZOOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTHUMBS(value: String): Self = this.set("THUMBS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTHUMBS: Self = this.set("THUMBS", js.undefined)
-    
-    @scala.inline
-    def setZOOM(value: String): Self = this.set("ZOOM", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZOOM: Self = this.set("ZOOM", js.undefined)
+    def setZOOMUndefined: Self = StObject.set(x, "ZOOM", js.undefined)
   }
 }

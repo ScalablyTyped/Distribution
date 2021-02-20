@@ -1,11 +1,12 @@
 package typings.pulumiAws.containerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinuxParameters extends js.Object {
+trait LinuxParameters extends StObject {
   
   var capabilities: js.UndefOr[KernelCapabilities] = js.native
   
@@ -22,39 +23,27 @@ object LinuxParameters {
   }
   
   @scala.inline
-  implicit class LinuxParametersOps[Self <: LinuxParameters] (val x: Self) extends AnyVal {
+  implicit class LinuxParametersMutableBuilder[Self <: LinuxParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: KernelCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevices(value: js.Array[Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: KernelCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
     @scala.inline
-    def setDevicesVarargs(value: Device*): Self = this.set("devices", js.Array(value :_*))
+    def setInitProcessEnabled(value: Boolean): Self = StObject.set(x, "initProcessEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevices(value: js.Array[Device]): Self = this.set("devices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevices: Self = this.set("devices", js.undefined)
-    
-    @scala.inline
-    def setInitProcessEnabled(value: Boolean): Self = this.set("initProcessEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitProcessEnabled: Self = this.set("initProcessEnabled", js.undefined)
+    def setInitProcessEnabledUndefined: Self = StObject.set(x, "initProcessEnabled", js.undefined)
   }
 }

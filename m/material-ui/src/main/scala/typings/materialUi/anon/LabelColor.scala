@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelColor extends js.Object {
+trait LabelColor extends StObject {
   
   var labelColor: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object LabelColor {
   }
   
   @scala.inline
-  implicit class LabelColorOps[Self <: LabelColor] (val x: Self) extends AnyVal {
+  implicit class LabelColorMutableBuilder[Self <: LabelColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelDisabledColor(value: String): Self = StObject.set(x, "labelDisabledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelColor(value: String): Self = this.set("labelColor", value.asInstanceOf[js.Any])
+    def setLabelDisabledColorUndefined: Self = StObject.set(x, "labelDisabledColor", js.undefined)
     
     @scala.inline
-    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    def setThumbDisabledColor(value: String): Self = StObject.set(x, "thumbDisabledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDisabledColor(value: String): Self = this.set("labelDisabledColor", value.asInstanceOf[js.Any])
+    def setThumbDisabledColorUndefined: Self = StObject.set(x, "thumbDisabledColor", js.undefined)
     
     @scala.inline
-    def deleteLabelDisabledColor: Self = this.set("labelDisabledColor", js.undefined)
+    def setThumbOffColor(value: String): Self = StObject.set(x, "thumbOffColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbDisabledColor(value: String): Self = this.set("thumbDisabledColor", value.asInstanceOf[js.Any])
+    def setThumbOffColorUndefined: Self = StObject.set(x, "thumbOffColor", js.undefined)
     
     @scala.inline
-    def deleteThumbDisabledColor: Self = this.set("thumbDisabledColor", js.undefined)
+    def setThumbOnColor(value: String): Self = StObject.set(x, "thumbOnColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbOffColor(value: String): Self = this.set("thumbOffColor", value.asInstanceOf[js.Any])
+    def setThumbOnColorUndefined: Self = StObject.set(x, "thumbOnColor", js.undefined)
     
     @scala.inline
-    def deleteThumbOffColor: Self = this.set("thumbOffColor", js.undefined)
+    def setThumbRequiredColor(value: String): Self = StObject.set(x, "thumbRequiredColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbOnColor(value: String): Self = this.set("thumbOnColor", value.asInstanceOf[js.Any])
+    def setThumbRequiredColorUndefined: Self = StObject.set(x, "thumbRequiredColor", js.undefined)
     
     @scala.inline
-    def deleteThumbOnColor: Self = this.set("thumbOnColor", js.undefined)
+    def setTrackDisabledColor(value: String): Self = StObject.set(x, "trackDisabledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbRequiredColor(value: String): Self = this.set("thumbRequiredColor", value.asInstanceOf[js.Any])
+    def setTrackDisabledColorUndefined: Self = StObject.set(x, "trackDisabledColor", js.undefined)
     
     @scala.inline
-    def deleteThumbRequiredColor: Self = this.set("thumbRequiredColor", js.undefined)
+    def setTrackOffColor(value: String): Self = StObject.set(x, "trackOffColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackDisabledColor(value: String): Self = this.set("trackDisabledColor", value.asInstanceOf[js.Any])
+    def setTrackOffColorUndefined: Self = StObject.set(x, "trackOffColor", js.undefined)
     
     @scala.inline
-    def deleteTrackDisabledColor: Self = this.set("trackDisabledColor", js.undefined)
+    def setTrackOnColor(value: String): Self = StObject.set(x, "trackOnColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackOffColor(value: String): Self = this.set("trackOffColor", value.asInstanceOf[js.Any])
+    def setTrackOnColorUndefined: Self = StObject.set(x, "trackOnColor", js.undefined)
     
     @scala.inline
-    def deleteTrackOffColor: Self = this.set("trackOffColor", js.undefined)
+    def setTrackRequiredColor(value: String): Self = StObject.set(x, "trackRequiredColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackOnColor(value: String): Self = this.set("trackOnColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackOnColor: Self = this.set("trackOnColor", js.undefined)
-    
-    @scala.inline
-    def setTrackRequiredColor(value: String): Self = this.set("trackRequiredColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackRequiredColor: Self = this.set("trackRequiredColor", js.undefined)
+    def setTrackRequiredColorUndefined: Self = StObject.set(x, "trackRequiredColor", js.undefined)
   }
 }

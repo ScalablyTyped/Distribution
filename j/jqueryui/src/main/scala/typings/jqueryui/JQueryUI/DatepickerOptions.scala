@@ -2,20 +2,21 @@ package typings.jqueryui.JQueryUI
 
 import typings.std.Date
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Datepicker //////////////////////////////////////////////////
 @js.native
-trait DatepickerOptions extends js.Object {
+trait DatepickerOptions extends StObject {
   
   /**
     * An input element that is to be updated with the selected date from the datepicker. Use the altFormat option to change the format of the date within this field. Leave as blank for no alternate field.
     */
   var altField: js.UndefOr[js.Any] = js.native
   
-   // Selector, jQuery or Element
+  // Selector, jQuery or Element
   /**
     * The dateFormat to be used for the altField option. This allows one date format to be shown to the user for selection purposes, while a different format is actually sent behind the scenes. For a full list of the possible formats see the formatDate function
     */
@@ -124,7 +125,7 @@ trait DatepickerOptions extends js.Object {
     */
   var defaultDate: js.UndefOr[js.Any] = js.native
   
-   // Date, number or string
+  // Date, number or string
   /**
     * Control the speed at which the datepicker appears, it may be a time in milliseconds or a string representing one of the three predefined speeds ("slow", "normal", "fast").
     */
@@ -164,7 +165,7 @@ trait DatepickerOptions extends js.Object {
     */
   var maxDate: js.UndefOr[js.Any] = js.native
   
-   // Date, number or string
+  // Date, number or string
   /**
     * The minimum selectable date. When set to null, there is no minimum.
     * Multiple types supported:
@@ -174,7 +175,7 @@ trait DatepickerOptions extends js.Object {
     */
   var minDate: js.UndefOr[js.Any] = js.native
   
-   // Date, number or string
+  // Date, number or string
   /**
     * The list of full month names, for use as requested via the dateFormat option.
     */
@@ -203,7 +204,7 @@ trait DatepickerOptions extends js.Object {
     */
   var numberOfMonths: js.UndefOr[js.Any] = js.native
   
-   // number or number[]
+  // number or number[]
   /**
     * Called when the datepicker moves to a new month and/or year. The function receives the selected year, month (1-12), and the datepicker instance as parameters. this refers to the associated input field.
     */
@@ -237,7 +238,7 @@ trait DatepickerOptions extends js.Object {
     */
   var shortYearCutoff: js.UndefOr[js.Any] = js.native
   
-   // number or string
+  // number or string
   /**
     * The name of the animation used to show and hide the datepicker. Use "show" (the default), "slideDown", "fadeIn", any of the jQuery UI effects. Set to an empty string to disable animation.
     */
@@ -268,7 +269,7 @@ trait DatepickerOptions extends js.Object {
     */
   var showOptions: js.UndefOr[js.Any] = js.native
   
-   // TODO
+  // TODO
   /**
     * Whether to display dates in other months (non-selectable) at the start or end of the current month. To make these days selectable use the selectOtherMonths option.
     */
@@ -308,345 +309,333 @@ object DatepickerOptions {
   }
   
   @scala.inline
-  implicit class DatepickerOptionsOps[Self <: DatepickerOptions] (val x: Self) extends AnyVal {
+  implicit class DatepickerOptionsMutableBuilder[Self <: DatepickerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltField(value: js.Any): Self = StObject.set(x, "altField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltFieldUndefined: Self = StObject.set(x, "altField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAltFormat(value: String): Self = StObject.set(x, "altFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltField(value: js.Any): Self = this.set("altField", value.asInstanceOf[js.Any])
+    def setAltFormatUndefined: Self = StObject.set(x, "altFormat", js.undefined)
     
     @scala.inline
-    def deleteAltField: Self = this.set("altField", js.undefined)
+    def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltFormat(value: String): Self = this.set("altFormat", value.asInstanceOf[js.Any])
+    def setAppendTextUndefined: Self = StObject.set(x, "appendText", js.undefined)
     
     @scala.inline
-    def deleteAltFormat: Self = this.set("altFormat", js.undefined)
+    def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendText(value: String): Self = this.set("appendText", value.asInstanceOf[js.Any])
+    def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
     
     @scala.inline
-    def deleteAppendText: Self = this.set("appendText", js.undefined)
+    def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSize(value: Boolean): Self = this.set("autoSize", value.asInstanceOf[js.Any])
+    def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
     
     @scala.inline
-    def deleteAutoSize: Self = this.set("autoSize", js.undefined)
+    def setBeforeShow(value: (/* input */ Element, /* inst */ js.Any) => DatepickerOptions): Self = StObject.set(x, "beforeShow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAutohide(value: Boolean): Self = this.set("autohide", value.asInstanceOf[js.Any])
+    def setBeforeShowDay(value: /* date */ Date => js.Array[_]): Self = StObject.set(x, "beforeShowDay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAutohide: Self = this.set("autohide", js.undefined)
+    def setBeforeShowDayUndefined: Self = StObject.set(x, "beforeShowDay", js.undefined)
     
     @scala.inline
-    def setBeforeShow(value: (/* input */ Element, /* inst */ js.Any) => DatepickerOptions): Self = this.set("beforeShow", js.Any.fromFunction2(value))
+    def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
     @scala.inline
-    def deleteBeforeShow: Self = this.set("beforeShow", js.undefined)
+    def setButtonImage(value: String): Self = StObject.set(x, "buttonImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeShowDay(value: /* date */ Date => js.Array[_]): Self = this.set("beforeShowDay", js.Any.fromFunction1(value))
+    def setButtonImageOnly(value: Boolean): Self = StObject.set(x, "buttonImageOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeforeShowDay: Self = this.set("beforeShowDay", js.undefined)
+    def setButtonImageOnlyUndefined: Self = StObject.set(x, "buttonImageOnly", js.undefined)
     
     @scala.inline
-    def setButtonImage(value: String): Self = this.set("buttonImage", value.asInstanceOf[js.Any])
+    def setButtonImageUndefined: Self = StObject.set(x, "buttonImage", js.undefined)
     
     @scala.inline
-    def deleteButtonImage: Self = this.set("buttonImage", js.undefined)
+    def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonImageOnly(value: Boolean): Self = this.set("buttonImageOnly", value.asInstanceOf[js.Any])
+    def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
     
     @scala.inline
-    def deleteButtonImageOnly: Self = this.set("buttonImageOnly", js.undefined)
+    def setCalculateWeek(value: /* date */ Date => String): Self = StObject.set(x, "calculateWeek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setButtonText(value: String): Self = this.set("buttonText", value.asInstanceOf[js.Any])
+    def setCalculateWeekUndefined: Self = StObject.set(x, "calculateWeek", js.undefined)
     
     @scala.inline
-    def deleteButtonText: Self = this.set("buttonText", js.undefined)
+    def setChangeMonth(value: Boolean): Self = StObject.set(x, "changeMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculateWeek(value: /* date */ Date => String): Self = this.set("calculateWeek", js.Any.fromFunction1(value))
+    def setChangeMonthUndefined: Self = StObject.set(x, "changeMonth", js.undefined)
     
     @scala.inline
-    def deleteCalculateWeek: Self = this.set("calculateWeek", js.undefined)
+    def setChangeYear(value: Boolean): Self = StObject.set(x, "changeYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeMonth(value: Boolean): Self = this.set("changeMonth", value.asInstanceOf[js.Any])
+    def setChangeYearUndefined: Self = StObject.set(x, "changeYear", js.undefined)
     
     @scala.inline
-    def deleteChangeMonth: Self = this.set("changeMonth", js.undefined)
+    def setCloseText(value: String): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeYear(value: Boolean): Self = this.set("changeYear", value.asInstanceOf[js.Any])
+    def setCloseTextUndefined: Self = StObject.set(x, "closeText", js.undefined)
     
     @scala.inline
-    def deleteChangeYear: Self = this.set("changeYear", js.undefined)
+    def setConstrainInput(value: Boolean): Self = StObject.set(x, "constrainInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseText(value: String): Self = this.set("closeText", value.asInstanceOf[js.Any])
+    def setConstrainInputUndefined: Self = StObject.set(x, "constrainInput", js.undefined)
     
     @scala.inline
-    def deleteCloseText: Self = this.set("closeText", js.undefined)
+    def setCurrentText(value: String): Self = StObject.set(x, "currentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstrainInput(value: Boolean): Self = this.set("constrainInput", value.asInstanceOf[js.Any])
+    def setCurrentTextUndefined: Self = StObject.set(x, "currentText", js.undefined)
     
     @scala.inline
-    def deleteConstrainInput: Self = this.set("constrainInput", js.undefined)
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentText(value: String): Self = this.set("currentText", value.asInstanceOf[js.Any])
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def deleteCurrentText: Self = this.set("currentText", js.undefined)
+    def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDayNamesMin(value: js.Array[String]): Self = StObject.set(x, "dayNamesMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setDayNamesMinUndefined: Self = StObject.set(x, "dayNamesMin", js.undefined)
     
     @scala.inline
-    def setDayNamesVarargs(value: String*): Self = this.set("dayNames", js.Array(value :_*))
+    def setDayNamesMinVarargs(value: String*): Self = StObject.set(x, "dayNamesMin", js.Array(value :_*))
     
     @scala.inline
-    def setDayNames(value: js.Array[String]): Self = this.set("dayNames", value.asInstanceOf[js.Any])
+    def setDayNamesShort(value: js.Array[String]): Self = StObject.set(x, "dayNamesShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDayNames: Self = this.set("dayNames", js.undefined)
+    def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
     
     @scala.inline
-    def setDayNamesMinVarargs(value: String*): Self = this.set("dayNamesMin", js.Array(value :_*))
+    def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
     
     @scala.inline
-    def setDayNamesMin(value: js.Array[String]): Self = this.set("dayNamesMin", value.asInstanceOf[js.Any])
+    def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
     
     @scala.inline
-    def deleteDayNamesMin: Self = this.set("dayNamesMin", js.undefined)
+    def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
     
     @scala.inline
-    def setDayNamesShortVarargs(value: String*): Self = this.set("dayNamesShort", js.Array(value :_*))
+    def setDefaultDate(value: js.Any): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayNamesShort(value: js.Array[String]): Self = this.set("dayNamesShort", value.asInstanceOf[js.Any])
+    def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
     
     @scala.inline
-    def deleteDayNamesShort: Self = this.set("dayNamesShort", js.undefined)
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDate(value: js.Any): Self = this.set("defaultDate", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDefaultDate: Self = this.set("defaultDate", js.undefined)
+    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: Date): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setFirstDayUndefined: Self = StObject.set(x, "firstDay", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setGotoCurrent(value: Boolean): Self = StObject.set(x, "gotoCurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDay(value: Double): Self = this.set("firstDay", value.asInstanceOf[js.Any])
+    def setGotoCurrentUndefined: Self = StObject.set(x, "gotoCurrent", js.undefined)
     
     @scala.inline
-    def deleteFirstDay: Self = this.set("firstDay", js.undefined)
+    def setHideIfNoPrevNext(value: Boolean): Self = StObject.set(x, "hideIfNoPrevNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGotoCurrent(value: Boolean): Self = this.set("gotoCurrent", value.asInstanceOf[js.Any])
+    def setHideIfNoPrevNextUndefined: Self = StObject.set(x, "hideIfNoPrevNext", js.undefined)
     
     @scala.inline
-    def deleteGotoCurrent: Self = this.set("gotoCurrent", js.undefined)
+    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideIfNoPrevNext(value: Boolean): Self = this.set("hideIfNoPrevNext", value.asInstanceOf[js.Any])
+    def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
     
     @scala.inline
-    def deleteHideIfNoPrevNext: Self = this.set("hideIfNoPrevNext", js.undefined)
+    def setMaxDate(value: js.Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRTL(value: Boolean): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
     @scala.inline
-    def deleteIsRTL: Self = this.set("isRTL", js.undefined)
+    def setMinDate(value: js.Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDate(value: js.Any): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
     @scala.inline
-    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDate(value: js.Any): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    def setMonthNamesShort(value: js.Array[String]): Self = StObject.set(x, "monthNamesShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
     
     @scala.inline
-    def setMonthNamesVarargs(value: String*): Self = this.set("monthNames", js.Array(value :_*))
+    def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
     
     @scala.inline
-    def setMonthNames(value: js.Array[String]): Self = this.set("monthNames", value.asInstanceOf[js.Any])
+    def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
     
     @scala.inline
-    def deleteMonthNames: Self = this.set("monthNames", js.undefined)
+    def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
     
     @scala.inline
-    def setMonthNamesShortVarargs(value: String*): Self = this.set("monthNamesShort", js.Array(value :_*))
+    def setNavigationAsDateFormat(value: Boolean): Self = StObject.set(x, "navigationAsDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthNamesShort(value: js.Array[String]): Self = this.set("monthNamesShort", value.asInstanceOf[js.Any])
+    def setNavigationAsDateFormatUndefined: Self = StObject.set(x, "navigationAsDateFormat", js.undefined)
     
     @scala.inline
-    def deleteMonthNamesShort: Self = this.set("monthNamesShort", js.undefined)
+    def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationAsDateFormat(value: Boolean): Self = this.set("navigationAsDateFormat", value.asInstanceOf[js.Any])
+    def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
     
     @scala.inline
-    def deleteNavigationAsDateFormat: Self = this.set("navigationAsDateFormat", js.undefined)
+    def setNumberOfMonths(value: js.Any): Self = StObject.set(x, "numberOfMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextText(value: String): Self = this.set("nextText", value.asInstanceOf[js.Any])
+    def setNumberOfMonthsUndefined: Self = StObject.set(x, "numberOfMonths", js.undefined)
     
     @scala.inline
-    def deleteNextText: Self = this.set("nextText", js.undefined)
+    def setOnChangeMonthYear(value: (/* year */ Double, /* month */ Double, /* inst */ js.Any) => Unit): Self = StObject.set(x, "onChangeMonthYear", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setNumberOfMonths(value: js.Any): Self = this.set("numberOfMonths", value.asInstanceOf[js.Any])
+    def setOnChangeMonthYearUndefined: Self = StObject.set(x, "onChangeMonthYear", js.undefined)
     
     @scala.inline
-    def deleteNumberOfMonths: Self = this.set("numberOfMonths", js.undefined)
+    def setOnClose(value: (/* dateText */ String, /* inst */ js.Any) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnChangeMonthYear(value: (/* year */ Double, /* month */ Double, /* inst */ js.Any) => Unit): Self = this.set("onChangeMonthYear", js.Any.fromFunction3(value))
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteOnChangeMonthYear: Self = this.set("onChangeMonthYear", js.undefined)
+    def setOnSelect(value: (/* dateText */ String, /* inst */ js.Any) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnClose(value: (/* dateText */ String, /* inst */ js.Any) => Unit): Self = this.set("onClose", js.Any.fromFunction2(value))
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setPrevText(value: String): Self = StObject.set(x, "prevText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSelect(value: (/* dateText */ String, /* inst */ js.Any) => Unit): Self = this.set("onSelect", js.Any.fromFunction2(value))
+    def setPrevTextUndefined: Self = StObject.set(x, "prevText", js.undefined)
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setSelectOtherMonths(value: Boolean): Self = StObject.set(x, "selectOtherMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevText(value: String): Self = this.set("prevText", value.asInstanceOf[js.Any])
+    def setSelectOtherMonthsUndefined: Self = StObject.set(x, "selectOtherMonths", js.undefined)
     
     @scala.inline
-    def deletePrevText: Self = this.set("prevText", js.undefined)
+    def setShortYearCutoff(value: js.Any): Self = StObject.set(x, "shortYearCutoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectOtherMonths(value: Boolean): Self = this.set("selectOtherMonths", value.asInstanceOf[js.Any])
+    def setShortYearCutoffUndefined: Self = StObject.set(x, "shortYearCutoff", js.undefined)
     
     @scala.inline
-    def deleteSelectOtherMonths: Self = this.set("selectOtherMonths", js.undefined)
+    def setShowAnim(value: String): Self = StObject.set(x, "showAnim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortYearCutoff(value: js.Any): Self = this.set("shortYearCutoff", value.asInstanceOf[js.Any])
+    def setShowAnimUndefined: Self = StObject.set(x, "showAnim", js.undefined)
     
     @scala.inline
-    def deleteShortYearCutoff: Self = this.set("shortYearCutoff", js.undefined)
+    def setShowButtonPanel(value: Boolean): Self = StObject.set(x, "showButtonPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAnim(value: String): Self = this.set("showAnim", value.asInstanceOf[js.Any])
+    def setShowButtonPanelUndefined: Self = StObject.set(x, "showButtonPanel", js.undefined)
     
     @scala.inline
-    def deleteShowAnim: Self = this.set("showAnim", js.undefined)
+    def setShowCurrentAtPos(value: Double): Self = StObject.set(x, "showCurrentAtPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowButtonPanel(value: Boolean): Self = this.set("showButtonPanel", value.asInstanceOf[js.Any])
+    def setShowCurrentAtPosUndefined: Self = StObject.set(x, "showCurrentAtPos", js.undefined)
     
     @scala.inline
-    def deleteShowButtonPanel: Self = this.set("showButtonPanel", js.undefined)
+    def setShowMonthAfterYear(value: Boolean): Self = StObject.set(x, "showMonthAfterYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCurrentAtPos(value: Double): Self = this.set("showCurrentAtPos", value.asInstanceOf[js.Any])
+    def setShowMonthAfterYearUndefined: Self = StObject.set(x, "showMonthAfterYear", js.undefined)
     
     @scala.inline
-    def deleteShowCurrentAtPos: Self = this.set("showCurrentAtPos", js.undefined)
+    def setShowOn(value: String): Self = StObject.set(x, "showOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMonthAfterYear(value: Boolean): Self = this.set("showMonthAfterYear", value.asInstanceOf[js.Any])
+    def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
     
     @scala.inline
-    def deleteShowMonthAfterYear: Self = this.set("showMonthAfterYear", js.undefined)
+    def setShowOptions(value: js.Any): Self = StObject.set(x, "showOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOn(value: String): Self = this.set("showOn", value.asInstanceOf[js.Any])
+    def setShowOptionsUndefined: Self = StObject.set(x, "showOptions", js.undefined)
     
     @scala.inline
-    def deleteShowOn: Self = this.set("showOn", js.undefined)
+    def setShowOtherMonths(value: Boolean): Self = StObject.set(x, "showOtherMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOptions(value: js.Any): Self = this.set("showOptions", value.asInstanceOf[js.Any])
+    def setShowOtherMonthsUndefined: Self = StObject.set(x, "showOtherMonths", js.undefined)
     
     @scala.inline
-    def deleteShowOptions: Self = this.set("showOptions", js.undefined)
+    def setShowWeek(value: Boolean): Self = StObject.set(x, "showWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOtherMonths(value: Boolean): Self = this.set("showOtherMonths", value.asInstanceOf[js.Any])
+    def setShowWeekUndefined: Self = StObject.set(x, "showWeek", js.undefined)
     
     @scala.inline
-    def deleteShowOtherMonths: Self = this.set("showOtherMonths", js.undefined)
+    def setStepMonths(value: Double): Self = StObject.set(x, "stepMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowWeek(value: Boolean): Self = this.set("showWeek", value.asInstanceOf[js.Any])
+    def setStepMonthsUndefined: Self = StObject.set(x, "stepMonths", js.undefined)
     
     @scala.inline
-    def deleteShowWeek: Self = this.set("showWeek", js.undefined)
+    def setWeekHeader(value: String): Self = StObject.set(x, "weekHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepMonths(value: Double): Self = this.set("stepMonths", value.asInstanceOf[js.Any])
+    def setWeekHeaderUndefined: Self = StObject.set(x, "weekHeader", js.undefined)
     
     @scala.inline
-    def deleteStepMonths: Self = this.set("stepMonths", js.undefined)
+    def setYearRange(value: String): Self = StObject.set(x, "yearRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekHeader(value: String): Self = this.set("weekHeader", value.asInstanceOf[js.Any])
+    def setYearRangeUndefined: Self = StObject.set(x, "yearRange", js.undefined)
     
     @scala.inline
-    def deleteWeekHeader: Self = this.set("weekHeader", js.undefined)
+    def setYearSuffix(value: String): Self = StObject.set(x, "yearSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYearRange(value: String): Self = this.set("yearRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYearRange: Self = this.set("yearRange", js.undefined)
-    
-    @scala.inline
-    def setYearSuffix(value: String): Self = this.set("yearSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYearSuffix: Self = this.set("yearSuffix", js.undefined)
+    def setYearSuffixUndefined: Self = StObject.set(x, "yearSuffix", js.undefined)
   }
 }

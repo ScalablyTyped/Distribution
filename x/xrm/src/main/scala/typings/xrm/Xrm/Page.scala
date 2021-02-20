@@ -2,6 +2,7 @@ package typings.xrm.Xrm
 
 import typings.xrm.Xrm.Controls.ProcessControl
 import typings.xrm.Xrm.Controls.QuickFormControl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,153 +27,7 @@ trait Page extends FormContext {
   * @deprecated Use {@link Xrm.Events.EventContext.getFormContext formContext} instead.
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
   */
-@JSGlobal("Xrm.Page")
-@js.native
-object Page extends js.Object {
-  
-  /**
-    * Module for the Xrm.Page.data API.
-    * @deprecated Use {@link Xrm.Form.data formContext.data} has been deprecated.
-    */
-  @js.native
-  object data extends js.Object {
-    
-    /**
-      * Called when method to get active processes is complete
-      * @param status The result of the get active processes operation.
-      * @remarks **Returns object with the following key-value pairs**:
-      * * CreatedOn
-      * * ProcessDefinitionID
-      * * ProcessDefinitionName
-      * * ProcessInstanceID
-      * * ProcessInstanceName
-      * * StatusCodeName
-      * @deprecated Use {@link Xrm.ProcessFlow.GetProcessInstancesDelegate} instead.
-      */
-    type GetProcessInstancesDelegate = typings.xrm.Xrm.ProcessFlow.GetProcessInstancesDelegate
-    
-    /**
-      * Called when process change methods have completed.
-      * @param status The result of the process change operation.
-      * @remarks **Values returned are**:
-      * * success        (The operation succeeded.)
-      * * crossEntity    (The previous stage is for a different entity.)
-      * * beginning      (The active stage is the first stage of the active path.)
-      * * invalid        (The operation failed because the selected stage isn’t the same as the active stage.)
-      * * unreachable    (The stage exists on a different path.)
-      * @deprecated Use {@link Xrm.ProcessFlow.ProcessCallbackDelegate} instead.
-      */
-    type ProcessCallbackDelegate = typings.xrm.Xrm.ProcessFlow.ProcessCallbackDelegate
-    
-    /**
-      * Represents a key-value pair, where the key is the Process Flow's ID, and the value is the name thereof.
-      * @deprecated Use {@link Xrm.ProcessFlow.ProcessDictionary} instead.
-      */
-    type ProcessDictionary = typings.xrm.Xrm.ProcessFlow.ProcessDictionary
-    
-    /**
-      * Interface for the Xrm.Page.data.process API.
-      * @deprecated Use {@link Xrm.ProcessFlow.ProcessManager} instead.
-      */
-    type ProcessManager = typings.xrm.Xrm.ProcessFlow.ProcessManager
-    
-    /**
-      * Called when process set status method has completed.
-      * @param status The new status of the process instance
-      * @remarks **Values returned are**:
-      * * active
-      * * aborted
-      * * finished
-      * @deprecated Use {@link Xrm.ProcessFlow.ProcessSetStatusDelegate} instead.
-      */
-    type ProcessSetStatusDelegate = typings.xrm.Xrm.ProcessFlow.ProcessSetStatusDelegate
-    
-    /**
-      * Called when method to set active process is complete
-      * @param status The result of the set active process operation.
-      * @remarks **Values returned are**:
-      * * success        (The operation succeeded.)
-      * * invalid        (The processInstanceId isn’t valid or the process isn’t enabled.)
-      * @deprecated Use {@link Xrm.ProcessFlow.SetProcessInstanceDelegate} instead.
-      */
-    type SetProcessInstanceDelegate = typings.xrm.Xrm.ProcessFlow.SetProcessInstanceDelegate
-  }
-  
-  /**
-    * Contains properties and methods to retrieve information about the user interface as well as collections for several subcomponents of the form.
-    * @deprecated Use {@link Xrm.Form.ui formContext.ui} instead.
-    */
-  @js.native
-  object ui extends js.Object {
-    
-    /**
-      * Display States for Xrm.ui.ProcessMonitor.setDisplayState().
-      * @deprecated Use {@link Xrm.DisplayState} instead.
-      */
-    type DisplayState = typings.xrm.Xrm.DisplayState
-    
-    /**
-      * Form Notification Levels for Xrm.Ui.setFormNotification().
-      * @deprecated Use {@link Xrm.FormNotificationLevel} instead.
-      */
-    type FormNotificationLevel = typings.xrm.Xrm.FormNotificationLevel
-    
-    /**
-      * Interface for a grid.  Use Grid methods to access information about data in the grid. Grid is returned by the
-      * GridControl.getGrid method.
-      * @deprecated Use {@link Xrm.Controls.Grid} instead.
-      */
-    type Grid = typings.xrm.Xrm.Controls.Grid
-    
-    /**
-      * Interface for a grid entity.  Use the GridEntity methods to access data about the specific records in the rows.
-      * GridEntity is returned by the GridRowData.getEntity method.
-      * @deprecated Use {@link Xrm.Controls.Grid.GridRowData} instead.v
-      */
-    type GridEntity = typings.xrm.Xrm.Controls.Grid.GridEntity
-    
-    /**
-      * Interface for a grid row.  Use the GridRow.getData method to access the GridRowData. A collection of GridRow is
-      * returned by Grid.getRows and Grid.getSelectedRows methods.
-      * In V9 - this is essentailly a form context.
-      * @deprecated Use {@link Xrm.Controls.Grid.GridRow} instead.
-      */
-    type GridRow = typings.xrm.Xrm.Controls.Grid.GridRow
-    
-    /**
-      * Interface for grid row data.  Use the GridRowData.getEntity method to access the GridEntity. GridRowData is
-      * returned by the GridRow.getData method.
-      * @deprecated Use {@link Xrm.Controls.Grid.GridRowData} instead.
-      */
-    type GridRowData = typings.xrm.Xrm.Controls.Grid.GridRowData
-    
-    /**
-      * Interface for Xrm.Page.ui.process API
-      * @deprecated Use {@link Xrm.Controls.ProcessControl} instead.
-      */
-    type ProcessManager = ProcessControl
-    
-    /**
-      * Interface for a quick view control instance on a form.
-      * @see {@link https://msdn.microsoft.com/en-us/library/mt736908.aspx External Link: Xrm.Page.ui quickForms (client-side reference)}
-      * @deprecated Use {@link Xrm.Controls.ViewSelectorItem} instead.
-      */
-    type QuickForm = QuickFormControl
-    
-    /**
-      * Interface for the view selector.  Use the ViewSelector methods to get or set information about the view selector
-      * of the grid control.
-      * @deprecated Use {@link Xrm.Controls.ViewSelector} instead.
-      */
-    type ViewSelector = typings.xrm.Xrm.Controls.ViewSelector
-    
-    /**
-      * Interface for a view selector item. This object contains data that identifies a view. Use this as a parameter to
-      * the ViewSelector.setCurrentView method.
-      * @deprecated Use {@link Xrm.Controls.ViewSelectorItem} instead.
-      */
-    type ViewSelectorItem = typings.xrm.Xrm.Controls.ViewSelectorItem
-  }
+object Page {
   
   /**
     * @deprecated Use {@link Xrm.Controls.AddControlNotificationOptions} instead.
@@ -619,4 +474,146 @@ object Page extends js.Object {
     * @deprecated Use {@link Xrm.Controls.UiStandardElement} instead.
     */
   type UiStandardElement = typings.xrm.Xrm.Controls.UiStandardElement
+  
+  /**
+    * Module for the Xrm.Page.data API.
+    * @deprecated Use {@link Xrm.Form.data formContext.data} has been deprecated.
+    */
+  object data {
+    
+    /**
+      * Called when method to get active processes is complete
+      * @param status The result of the get active processes operation.
+      * @remarks **Returns object with the following key-value pairs**:
+      * * CreatedOn
+      * * ProcessDefinitionID
+      * * ProcessDefinitionName
+      * * ProcessInstanceID
+      * * ProcessInstanceName
+      * * StatusCodeName
+      * @deprecated Use {@link Xrm.ProcessFlow.GetProcessInstancesDelegate} instead.
+      */
+    type GetProcessInstancesDelegate = typings.xrm.Xrm.ProcessFlow.GetProcessInstancesDelegate
+    
+    /**
+      * Called when process change methods have completed.
+      * @param status The result of the process change operation.
+      * @remarks **Values returned are**:
+      * * success        (The operation succeeded.)
+      * * crossEntity    (The previous stage is for a different entity.)
+      * * beginning      (The active stage is the first stage of the active path.)
+      * * invalid        (The operation failed because the selected stage isn’t the same as the active stage.)
+      * * unreachable    (The stage exists on a different path.)
+      * @deprecated Use {@link Xrm.ProcessFlow.ProcessCallbackDelegate} instead.
+      */
+    type ProcessCallbackDelegate = typings.xrm.Xrm.ProcessFlow.ProcessCallbackDelegate
+    
+    /**
+      * Represents a key-value pair, where the key is the Process Flow's ID, and the value is the name thereof.
+      * @deprecated Use {@link Xrm.ProcessFlow.ProcessDictionary} instead.
+      */
+    type ProcessDictionary = typings.xrm.Xrm.ProcessFlow.ProcessDictionary
+    
+    /**
+      * Interface for the Xrm.Page.data.process API.
+      * @deprecated Use {@link Xrm.ProcessFlow.ProcessManager} instead.
+      */
+    type ProcessManager = typings.xrm.Xrm.ProcessFlow.ProcessManager
+    
+    /**
+      * Called when process set status method has completed.
+      * @param status The new status of the process instance
+      * @remarks **Values returned are**:
+      * * active
+      * * aborted
+      * * finished
+      * @deprecated Use {@link Xrm.ProcessFlow.ProcessSetStatusDelegate} instead.
+      */
+    type ProcessSetStatusDelegate = typings.xrm.Xrm.ProcessFlow.ProcessSetStatusDelegate
+    
+    /**
+      * Called when method to set active process is complete
+      * @param status The result of the set active process operation.
+      * @remarks **Values returned are**:
+      * * success        (The operation succeeded.)
+      * * invalid        (The processInstanceId isn’t valid or the process isn’t enabled.)
+      * @deprecated Use {@link Xrm.ProcessFlow.SetProcessInstanceDelegate} instead.
+      */
+    type SetProcessInstanceDelegate = typings.xrm.Xrm.ProcessFlow.SetProcessInstanceDelegate
+  }
+  
+  /**
+    * Contains properties and methods to retrieve information about the user interface as well as collections for several subcomponents of the form.
+    * @deprecated Use {@link Xrm.Form.ui formContext.ui} instead.
+    */
+  object ui {
+    
+    /**
+      * Display States for Xrm.ui.ProcessMonitor.setDisplayState().
+      * @deprecated Use {@link Xrm.DisplayState} instead.
+      */
+    type DisplayState = typings.xrm.Xrm.DisplayState
+    
+    /**
+      * Form Notification Levels for Xrm.Ui.setFormNotification().
+      * @deprecated Use {@link Xrm.FormNotificationLevel} instead.
+      */
+    type FormNotificationLevel = typings.xrm.Xrm.FormNotificationLevel
+    
+    /**
+      * Interface for a grid.  Use Grid methods to access information about data in the grid. Grid is returned by the
+      * GridControl.getGrid method.
+      * @deprecated Use {@link Xrm.Controls.Grid} instead.
+      */
+    type Grid = typings.xrm.Xrm.Controls.Grid
+    
+    /**
+      * Interface for a grid entity.  Use the GridEntity methods to access data about the specific records in the rows.
+      * GridEntity is returned by the GridRowData.getEntity method.
+      * @deprecated Use {@link Xrm.Controls.Grid.GridRowData} instead.v
+      */
+    type GridEntity = typings.xrm.Xrm.Controls.Grid.GridEntity
+    
+    /**
+      * Interface for a grid row.  Use the GridRow.getData method to access the GridRowData. A collection of GridRow is
+      * returned by Grid.getRows and Grid.getSelectedRows methods.
+      * In V9 - this is essentailly a form context.
+      * @deprecated Use {@link Xrm.Controls.Grid.GridRow} instead.
+      */
+    type GridRow = typings.xrm.Xrm.Controls.Grid.GridRow
+    
+    /**
+      * Interface for grid row data.  Use the GridRowData.getEntity method to access the GridEntity. GridRowData is
+      * returned by the GridRow.getData method.
+      * @deprecated Use {@link Xrm.Controls.Grid.GridRowData} instead.
+      */
+    type GridRowData = typings.xrm.Xrm.Controls.Grid.GridRowData
+    
+    /**
+      * Interface for Xrm.Page.ui.process API
+      * @deprecated Use {@link Xrm.Controls.ProcessControl} instead.
+      */
+    type ProcessManager = ProcessControl
+    
+    /**
+      * Interface for a quick view control instance on a form.
+      * @see {@link https://msdn.microsoft.com/en-us/library/mt736908.aspx External Link: Xrm.Page.ui quickForms (client-side reference)}
+      * @deprecated Use {@link Xrm.Controls.ViewSelectorItem} instead.
+      */
+    type QuickForm = QuickFormControl
+    
+    /**
+      * Interface for the view selector.  Use the ViewSelector methods to get or set information about the view selector
+      * of the grid control.
+      * @deprecated Use {@link Xrm.Controls.ViewSelector} instead.
+      */
+    type ViewSelector = typings.xrm.Xrm.Controls.ViewSelector
+    
+    /**
+      * Interface for a view selector item. This object contains data that identifies a view. Use this as a parameter to
+      * the ViewSelector.setCurrentView method.
+      * @deprecated Use {@link Xrm.Controls.ViewSelectorItem} instead.
+      */
+    type ViewSelectorItem = typings.xrm.Xrm.Controls.ViewSelectorItem
+  }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScalableTarget extends js.Object {
+trait ScalableTarget extends StObject {
   
   /**
     * The Unix timestamp for when the scalable target was created.
@@ -61,45 +62,33 @@ object ScalableTarget {
   }
   
   @scala.inline
-  implicit class ScalableTargetOps[Self <: ScalableTarget] (val x: Self) extends AnyVal {
+  implicit class ScalableTargetMutableBuilder[Self <: ScalableTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: TimestampType): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxCapacity(value: ResourceCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinCapacity(value: ResourceCapacity): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: TimestampType): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCapacity(value: ResourceCapacity): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    def setRoleARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinCapacity(value: ResourceCapacity): Self = this.set("MinCapacity", value.asInstanceOf[js.Any])
+    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleARN(value: ResourceIdMaxLen1600): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    def setSuspendedState(value: SuspendedState): Self = StObject.set(x, "SuspendedState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuspendedState(value: SuspendedState): Self = this.set("SuspendedState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuspendedState: Self = this.set("SuspendedState", js.undefined)
+    def setSuspendedStateUndefined: Self = StObject.set(x, "SuspendedState", js.undefined)
   }
 }

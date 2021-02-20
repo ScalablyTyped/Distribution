@@ -4,6 +4,7 @@ import typings.firmata.firmataNumbers.`0`
 import typings.firmata.firmataNumbers.`1`
 import typings.firmata.firmataNumbers.`2`
 import typings.firmata.firmataNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firmata.firmataNumbers.`2`
   - typings.firmata.firmataNumbers.`3`
 */
-trait STEPPER_RUN_STATE extends js.Object
+trait STEPPER_RUN_STATE extends StObject
 object STEPPER_RUN_STATE {
   
   @scala.inline

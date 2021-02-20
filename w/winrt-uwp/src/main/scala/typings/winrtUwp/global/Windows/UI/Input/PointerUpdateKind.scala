@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the types of pointer updates that are supported by an application. */
 @JSGlobal("Windows.UI.Input.PointerUpdateKind")
 @js.native
-object PointerUpdateKind extends js.Object {
+object PointerUpdateKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Input.PointerUpdateKind with Double] = js.native

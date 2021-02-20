@@ -1,13 +1,14 @@
 package typings.reactOverlays.anon
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  in :boolean | undefined,   appear :boolean | undefined} & react-overlays.react-overlays/esm/types.TransitionCallbacks */
 @js.native
-trait inbooleanundefinedappearb extends js.Object {
+trait inbooleanundefinedappearb extends StObject {
   
   var appear: js.UndefOr[Boolean] = js.native
   
@@ -34,66 +35,54 @@ object inbooleanundefinedappearb {
   }
   
   @scala.inline
-  implicit class inbooleanundefinedappearbOps[Self <: inbooleanundefinedappearb] (val x: Self) extends AnyVal {
+  implicit class inbooleanundefinedappearbMutableBuilder[Self <: inbooleanundefinedappearb] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppear(value: Boolean): Self = this.set("appear", value.asInstanceOf[js.Any])
+    def setInUndefined: Self = StObject.set(x, "in", js.undefined)
     
     @scala.inline
-    def deleteAppear: Self = this.set("appear", js.undefined)
+    def setOnEnter(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIn(value: Boolean): Self = this.set("in", value.asInstanceOf[js.Any])
+    def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
     @scala.inline
-    def deleteIn: Self = this.set("in", js.undefined)
+    def setOnEntered(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnter(value: /* node */ HTMLElement => _): Self = this.set("onEnter", js.Any.fromFunction1(value))
+    def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
     
     @scala.inline
-    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    def setOnEntering(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEntered(value: /* node */ HTMLElement => _): Self = this.set("onEntered", js.Any.fromFunction1(value))
+    def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
     
     @scala.inline
-    def deleteOnEntered: Self = this.set("onEntered", js.undefined)
+    def setOnExit(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEntering(value: /* node */ HTMLElement => _): Self = this.set("onEntering", js.Any.fromFunction1(value))
+    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
     @scala.inline
-    def deleteOnEntering: Self = this.set("onEntering", js.undefined)
+    def setOnExited(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnExit(value: /* node */ HTMLElement => _): Self = this.set("onExit", js.Any.fromFunction1(value))
+    def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
     @scala.inline
-    def deleteOnExit: Self = this.set("onExit", js.undefined)
+    def setOnExiting(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onExiting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnExited(value: /* node */ HTMLElement => _): Self = this.set("onExited", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnExited: Self = this.set("onExited", js.undefined)
-    
-    @scala.inline
-    def setOnExiting(value: /* node */ HTMLElement => _): Self = this.set("onExiting", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnExiting: Self = this.set("onExiting", js.undefined)
+    def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
   }
 }

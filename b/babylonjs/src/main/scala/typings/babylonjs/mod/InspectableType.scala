@@ -1,12 +1,13 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "InspectableType")
 @js.native
-object InspectableType extends js.Object {
+object InspectableType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.iInspectableMod.InspectableType with Double] = js.native

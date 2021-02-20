@@ -4,16 +4,16 @@ import typings.jupyterlabApputilsExtension.anon.Ids
 import typings.jupyterlabApputilsExtension.jupyterlabApputilsExtensionStrings.active
 import typings.jupyterlabApputilsExtension.jupyterlabApputilsExtensionStrings.all
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
-import typings.jupyterlabStatedb.dataconnectorMod.DataConnector
 import typings.jupyterlabStatedb.interfacesMod.IDataConnector
+import typings.jupyterlabStatedb.mod.DataConnector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/apputils-extension/lib/settingconnector", JSImport.Namespace)
-@js.native
-object settingconnectorMod extends js.Object {
+object settingconnectorMod {
   
+  @JSImport("@jupyterlab/apputils-extension/lib/settingconnector", "SettingConnector")
   @js.native
   class SettingConnector protected () extends DataConnector[IPlugin, String, String, String] {
     def this(connector: IDataConnector[IPlugin, String, String, String]) = this()

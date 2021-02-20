@@ -2,13 +2,14 @@ package typings.aceBuilds.anon
 
 import typings.aceBuilds.mod.Ace.Range
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ace-builds.ace-builds.Ace.SearchOptions> */
 @js.native
-trait PartialSearchOptions extends js.Object {
+trait PartialSearchOptions extends StObject {
   
   var backwards: js.UndefOr[Boolean] = js.native
   
@@ -41,84 +42,72 @@ object PartialSearchOptions {
   }
   
   @scala.inline
-  implicit class PartialSearchOptionsOps[Self <: PartialSearchOptions] (val x: Self) extends AnyVal {
+  implicit class PartialSearchOptionsMutableBuilder[Self <: PartialSearchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackwards(value: Boolean): Self = StObject.set(x, "backwards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackwardsUndefined: Self = StObject.set(x, "backwards", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackwards(value: Boolean): Self = this.set("backwards", value.asInstanceOf[js.Any])
+    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
     @scala.inline
-    def deleteBackwards: Self = this.set("backwards", js.undefined)
+    def setNeedle(value: String | RegExp): Self = StObject.set(x, "needle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    def setNeedleUndefined: Self = StObject.set(x, "needle", js.undefined)
     
     @scala.inline
-    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    def setPreserveCase(value: Boolean): Self = StObject.set(x, "preserveCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedle(value: String | RegExp): Self = this.set("needle", value.asInstanceOf[js.Any])
+    def setPreserveCaseUndefined: Self = StObject.set(x, "preserveCase", js.undefined)
     
     @scala.inline
-    def deleteNeedle: Self = this.set("needle", js.undefined)
+    def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveCase(value: Boolean): Self = this.set("preserveCase", value.asInstanceOf[js.Any])
+    def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
     
     @scala.inline
-    def deletePreserveCase: Self = this.set("preserveCase", js.undefined)
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventScroll(value: Boolean): Self = this.set("preventScroll", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deletePreventScroll: Self = this.set("preventScroll", js.undefined)
+    def setRegExp(value: RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setSkipCurrent(value: Boolean): Self = StObject.set(x, "skipCurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegExp(value: RegExp): Self = this.set("regExp", value.asInstanceOf[js.Any])
+    def setSkipCurrentUndefined: Self = StObject.set(x, "skipCurrent", js.undefined)
     
     @scala.inline
-    def deleteRegExp: Self = this.set("regExp", js.undefined)
+    def setStart(value: Range): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipCurrent(value: Boolean): Self = this.set("skipCurrent", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteSkipCurrent: Self = this.set("skipCurrent", js.undefined)
+    def setWholeWord(value: String): Self = StObject.set(x, "wholeWord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Range): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setWholeWordUndefined: Self = StObject.set(x, "wholeWord", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWholeWord(value: String): Self = this.set("wholeWord", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWholeWord: Self = this.set("wholeWord", js.undefined)
-    
-    @scala.inline
-    def setWrap(value: Boolean): Self = this.set("wrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrap: Self = this.set("wrap", js.undefined)
+    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

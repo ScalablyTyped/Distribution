@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesAddPermissionInputMod.AddPermissionIn
 import typings.awsSdkClientLambdaNode.typesAddPermissionOutputMod.AddPermissionOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/AddPermissionCommand", JSImport.Namespace)
-@js.native
-object addPermissionCommandMod extends js.Object {
+object addPermissionCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/AddPermissionCommand", "AddPermissionCommand")
   @js.native
   class AddPermissionCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,12 +1,13 @@
 package typings.semanticUiAccordion.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-accordion.SemanticUI.Accordion.SelectorSettings._Impl, keyof semantic-ui-accordion.SemanticUI.Accordion.SelectorSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplAccordion extends js.Object {
+trait PartialPickImplkeyofImplAccordion extends StObject {
   
   var accordion: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object PartialPickImplkeyofImplAccordion {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplAccordionOps[Self <: PartialPickImplkeyofImplAccordion] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplAccordionMutableBuilder[Self <: PartialPickImplkeyofImplAccordion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccordion(value: String): Self = this.set("accordion", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteAccordion: Self = this.set("accordion", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

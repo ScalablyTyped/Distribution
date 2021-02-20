@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * drive.file, or drive OAuth scopes.
   */
 @js.native
-trait SchemaCreateSheetsChartRequest extends js.Object {
+trait SchemaCreateSheetsChartRequest extends StObject {
   
   /**
     * The ID of the specific chart in the Google Sheets spreadsheet.
@@ -55,48 +56,36 @@ object SchemaCreateSheetsChartRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateSheetsChartRequestOps[Self <: SchemaCreateSheetsChartRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateSheetsChartRequestMutableBuilder[Self <: SchemaCreateSheetsChartRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementProperties(value: SchemaPageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartId(value: Double): Self = this.set("chartId", value.asInstanceOf[js.Any])
+    def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
     
     @scala.inline
-    def deleteChartId: Self = this.set("chartId", js.undefined)
+    def setLinkingMode(value: String): Self = StObject.set(x, "linkingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementProperties(value: SchemaPageElementProperties): Self = this.set("elementProperties", value.asInstanceOf[js.Any])
+    def setLinkingModeUndefined: Self = StObject.set(x, "linkingMode", js.undefined)
     
     @scala.inline
-    def deleteElementProperties: Self = this.set("elementProperties", js.undefined)
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkingMode(value: String): Self = this.set("linkingMode", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteLinkingMode: Self = this.set("linkingMode", js.undefined)
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
-    
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
   }
 }

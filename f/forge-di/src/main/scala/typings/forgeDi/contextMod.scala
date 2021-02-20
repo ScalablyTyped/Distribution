@@ -1,15 +1,18 @@
 package typings.forgeDi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("forge-di/dist/framework/Context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
+  
+  @JSImport("forge-di/dist/framework/Context", JSImport.Default)
+  @js.native
+  class default () extends Context
   
   @js.native
-  trait Context extends js.Object {
+  trait Context extends StObject {
     
     var bindings: js.Array[typings.forgeDi.bindingMod.default] = js.native
     
@@ -21,7 +24,4 @@ object contextMod extends js.Object {
     
     def toString(indent: Double): String = js.native
   }
-  
-  @js.native
-  class default () extends Context
 }

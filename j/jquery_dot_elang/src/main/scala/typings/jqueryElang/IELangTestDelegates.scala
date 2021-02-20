@@ -1,11 +1,12 @@
 package typings.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IELangTestDelegates extends js.Object {
+trait IELangTestDelegates extends StObject {
   
   var rdoModeClickHandler: js.Function = js.native
   
@@ -38,39 +39,27 @@ object IELangTestDelegates {
   }
   
   @scala.inline
-  implicit class IELangTestDelegatesOps[Self <: IELangTestDelegates] (val x: Self) extends AnyVal {
+  implicit class IELangTestDelegatesMutableBuilder[Self <: IELangTestDelegates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRdoModeClickHandler(value: js.Function): Self = StObject.set(x, "rdoModeClickHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRdoModeHandler(value: js.Function): Self = StObject.set(x, "rdoModeHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRdoQuestionClickHandler(value: js.Function): Self = StObject.set(x, "rdoQuestionClickHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoModeClickHandler(value: js.Function): Self = this.set("rdoModeClickHandler", value.asInstanceOf[js.Any])
+    def setRdoQuestionHandler(value: js.Function): Self = StObject.set(x, "rdoQuestionHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoModeHandler(value: js.Function): Self = this.set("rdoModeHandler", value.asInstanceOf[js.Any])
+    def setRdoVariantClickHandler(value: js.Function): Self = StObject.set(x, "rdoVariantClickHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoQuestionClickHandler(value: js.Function): Self = this.set("rdoQuestionClickHandler", value.asInstanceOf[js.Any])
+    def setRdoVariantHandler(value: js.Function): Self = StObject.set(x, "rdoVariantHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoQuestionHandler(value: js.Function): Self = this.set("rdoQuestionHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRdoVariantClickHandler(value: js.Function): Self = this.set("rdoVariantClickHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRdoVariantHandler(value: js.Function): Self = this.set("rdoVariantHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartStopHandler(value: js.Function): Self = this.set("startStopHandler", value.asInstanceOf[js.Any])
+    def setStartStopHandler(value: js.Function): Self = StObject.set(x, "startStopHandler", value.asInstanceOf[js.Any])
   }
 }

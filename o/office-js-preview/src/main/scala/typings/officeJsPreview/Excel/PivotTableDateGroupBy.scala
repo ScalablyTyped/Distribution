@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PivotTableDateGroupBy extends js.Object
+sealed trait PivotTableDateGroupBy extends StObject
 /**
   *
   * Represents the DateTime Grouping condition.
@@ -15,7 +16,7 @@ sealed trait PivotTableDateGroupBy extends js.Object
   */
 @JSGlobal("Excel.PivotTableDateGroupBy")
 @js.native
-object PivotTableDateGroupBy extends js.Object {
+object PivotTableDateGroupBy extends StObject {
   
   @js.native
   sealed trait byDays extends PivotTableDateGroupBy

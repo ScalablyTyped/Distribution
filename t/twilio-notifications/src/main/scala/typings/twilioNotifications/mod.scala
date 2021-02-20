@@ -1,13 +1,12 @@
 package typings.twilioNotifications
 
 import typings.twilioNotifications.clientMod.Client
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-notifications", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * @class
@@ -20,6 +19,7 @@ object mod extends js.Object {
     * @param {string} token - Twilio access token
     * @param {Notifications#ClientOptions} options - Options to customize client behavior
     */
+  @JSImport("twilio-notifications", "Notifications")
   @js.native
   class Notifications protected () extends Client {
     def this(token: String) = this()

@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostAgentProfileRequest extends js.Object {
+trait PostAgentProfileRequest extends StObject {
   
   /**
     *  The submitted profiling data. 
@@ -36,33 +37,21 @@ object PostAgentProfileRequest {
   }
   
   @scala.inline
-  implicit class PostAgentProfileRequestOps[Self <: PostAgentProfileRequest] (val x: Self) extends AnyVal {
+  implicit class PostAgentProfileRequestMutableBuilder[Self <: PostAgentProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentProfile(value: AgentProfile): Self = StObject.set(x, "agentProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfileToken(value: ClientToken): Self = StObject.set(x, "profileToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentProfile(value: AgentProfile): Self = this.set("agentProfile", value.asInstanceOf[js.Any])
+    def setProfileTokenUndefined: Self = StObject.set(x, "profileToken", js.undefined)
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfileToken(value: ClientToken): Self = this.set("profileToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileToken: Self = this.set("profileToken", js.undefined)
+    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

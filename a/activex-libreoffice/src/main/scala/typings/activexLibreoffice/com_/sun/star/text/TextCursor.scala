@@ -7,27 +7,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyState
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertyStates
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertyState
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
-import typings.activexLibreoffice.com_.sun.star.container.XContentEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.container.XIndexReplace
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.document.XDocumentInsertable
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.style.BreakType
-import typings.activexLibreoffice.com_.sun.star.style.CharacterProperties
-import typings.activexLibreoffice.com_.sun.star.style.CharacterPropertiesAsian
-import typings.activexLibreoffice.com_.sun.star.style.CharacterPropertiesComplex
 import typings.activexLibreoffice.com_.sun.star.style.DropCapFormat
 import typings.activexLibreoffice.com_.sun.star.style.GraphicLocation
 import typings.activexLibreoffice.com_.sun.star.style.LineSpacing
 import typings.activexLibreoffice.com_.sun.star.style.ParagraphAdjust
-import typings.activexLibreoffice.com_.sun.star.style.ParagraphProperties
-import typings.activexLibreoffice.com_.sun.star.style.ParagraphPropertiesAsian
-import typings.activexLibreoffice.com_.sun.star.style.ParagraphPropertiesComplex
 import typings.activexLibreoffice.com_.sun.star.style.TabStop
 import typings.activexLibreoffice.com_.sun.star.table.BorderLine
 import typings.activexLibreoffice.com_.sun.star.table.BorderLine2
@@ -35,6 +26,7 @@ import typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XSortable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,23 +38,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
 - typings.activexLibreoffice.com_.sun.star.text.XTextRange because Already inherited
-- typings.activexLibreoffice.com_.sun.star.text.XTextCursor because Already inherited
+- typings.activexLibreoffice.com_.sun.star.text.XTextCursor because var conflicts: String. Inlined collapseToEnd, collapseToStart, goLeft, goRight, gotoEnd, gotoRange, gotoStart, isCollapsed
 - typings.activexLibreoffice.com_.sun.star.text.XParagraphCursor because var conflicts: String. Inlined gotoEndOfParagraph, gotoNextParagraph, gotoPreviousParagraph, gotoStartOfParagraph, isEndOfParagraph, isStartOfParagraph
-- typings.activexLibreoffice.com_.sun.star.text.XSentenceCursor because var conflicts: String. Inlined gotoEndOfSentence, gotoNextSentence, gotoPreviousSentence, gotoStartOfSentence, isEndOfSentence, isStartOfSentence */ @js.native
+- typings.activexLibreoffice.com_.sun.star.text.XSentenceCursor because var conflicts: String. Inlined gotoEndOfSentence, gotoNextSentence, gotoPreviousSentence, gotoStartOfSentence, isEndOfSentence, isStartOfSentence
+- typings.activexLibreoffice.com_.sun.star.text.XWordCursor because var conflicts: String. Inlined gotoEndOfWord, gotoNextWord, gotoPreviousWord, gotoStartOfWord, isEndOfWord, isStartOfWord */ @js.native
 trait TextCursor
-  extends XWordCursor
-     with XPropertySet
-     with XPropertyState
-     with XContentEnumerationAccess
-     with CharacterProperties
-     with CharacterPropertiesAsian
-     with CharacterPropertiesComplex
-     with ParagraphProperties
-     with ParagraphPropertiesAsian
-     with ParagraphPropertiesComplex
+  extends TextRange
      with XMultiPropertyStates
      with XDocumentInsertable
      with XSortable {
+  
+  /** sets the start of the position to the end. */
+  def collapseToEnd(): Unit = js.native
+  
+  /** sets the end of the position to the start. */
+  def collapseToStart(): Unit = js.native
   
   /**
     * @param aPropertyName contains the sequence of property names.
@@ -71,6 +61,25 @@ trait TextCursor
     */
   /* InferMemberOverrides */
   override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  
+  /**
+    * moves the cursor the specified number of characters to the left.
+    * @param nCount the number of characters to move.
+    * @param bExpand specifies if the current selection of the cursor should be expanded or not.
+    * @returns `TRUE` if the command was successfully completed. `FALSE` otherwise.  Note: Even if the command was not completed successfully it may be complete
+    */
+  def goLeft(nCount: Double, bExpand: Boolean): Boolean = js.native
+  
+  /**
+    * moves the cursor the specified number of characters to the right.
+    * @param nCount the number of characters to move.
+    * @param bExpand specifies if the current selection of the cursor should be expanded or not.
+    * @returns `TRUE` if the command was successfully completed. `FALSE` otherwise.  Note: Even if the command was not completed successfully it may be complete
+    */
+  def goRight(nCount: Double, bExpand: Boolean): Boolean = js.native
+  
+  /** moves the cursor to the end of the text. */
+  def gotoEnd(bExpand: Boolean): Unit = js.native
   
   /**
     * moves the cursor to the end of the current paragraph.
@@ -85,6 +94,12 @@ trait TextCursor
   def gotoEndOfSentence(Expand: Boolean): Boolean = js.native
   
   /**
+    * moves the cursor to the end of the current word.
+    * @returns `TRUE` if the cursor is now at the end of a word, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
+    */
+  def gotoEndOfWord(bExpand: Boolean): Boolean = js.native
+  
+  /**
     * moves the cursor to the next paragraph.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
@@ -95,6 +110,15 @@ trait TextCursor
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
   def gotoNextSentence(Expand: Boolean): Boolean = js.native
+  
+  /**
+    * moves the cursor to the next word.
+    *
+    * Note: the function returning `TRUE` does not necessarily mean that the cursor is located at the next word, or any word at all! This may happen for
+    * example if it travels over empty paragraphs.
+    * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
+    */
+  def gotoNextWord(bExpand: Boolean): Boolean = js.native
   
   /**
     * moves the cursor to the previous paragraph.
@@ -109,6 +133,21 @@ trait TextCursor
   def gotoPreviousSentence(Expand: Boolean): Boolean = js.native
   
   /**
+    * moves the cursor to the previous word.
+    *
+    * Note: the function returning `TRUE` does not necessarily mean that the cursor is located at the previous word, or any word at all! This may happen for
+    * example if it travels over empty paragraphs.
+    * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
+    */
+  def gotoPreviousWord(bExpand: Boolean): Boolean = js.native
+  
+  /** moves or expands the cursor to a specified {@link TextRange} . */
+  def gotoRange(xRange: XTextRange, bExpand: Boolean): Unit = js.native
+  
+  /** moves the cursor to the start of the text. */
+  def gotoStart(bExpand: Boolean): Unit = js.native
+  
+  /**
     * moves the cursor to the start of the current paragraph.
     * @returns `TRUE` if the cursor is now at the start of a paragraph, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
@@ -120,17 +159,32 @@ trait TextCursor
     */
   def gotoStartOfSentence(Expand: Boolean): Boolean = js.native
   
+  /**
+    * moves the cursor to the start of the current word.
+    * @returns `TRUE` if the cursor is now at the start of a word, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
+    */
+  def gotoStartOfWord(bExpand: Boolean): Boolean = js.native
+  
+  /** determines if the start and end positions are the same. */
+  def isCollapsed(): Boolean = js.native
+  
   /** determines if the cursor is positioned at the end of a paragraph. */
   def isEndOfParagraph(): Boolean = js.native
   
   /** determines if the cursor is positioned at the end of a sentence. */
   def isEndOfSentence(): Boolean = js.native
   
+  /** determines if the cursor is positioned at the end of a word. */
+  def isEndOfWord(): Boolean = js.native
+  
   /** determines if the cursor is positioned at the start of a paragraph. */
   def isStartOfParagraph(): Boolean = js.native
   
   /** determines if the cursor is positioned at the start of a sentence. */
   def isStartOfSentence(): Boolean = js.native
+  
+  /** determines if the cursor is positioned at the start of a word. */
+  def isStartOfWord(): Boolean = js.native
 }
 object TextCursor {
   
@@ -344,57 +398,87 @@ object TextCursor {
   }
   
   @scala.inline
-  implicit class TextCursorOps[Self <: TextCursor] (val x: Self) extends AnyVal {
+  implicit class TextCursorMutableBuilder[Self <: TextCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapseToEnd(value: () => Unit): Self = StObject.set(x, "collapseToEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseToStart(value: () => Unit): Self = StObject.set(x, "collapseToStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = this.set("getPropertyStates", js.Any.fromFunction1(value))
+    def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGotoEndOfParagraph(value: Boolean => Boolean): Self = this.set("gotoEndOfParagraph", js.Any.fromFunction1(value))
+    def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGotoEndOfSentence(value: Boolean => Boolean): Self = this.set("gotoEndOfSentence", js.Any.fromFunction1(value))
+    def setGotoEnd(value: Boolean => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoNextParagraph(value: Boolean => Boolean): Self = this.set("gotoNextParagraph", js.Any.fromFunction1(value))
+    def setGotoEndOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfParagraph", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoNextSentence(value: Boolean => Boolean): Self = this.set("gotoNextSentence", js.Any.fromFunction1(value))
+    def setGotoEndOfSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfSentence", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoPreviousParagraph(value: Boolean => Boolean): Self = this.set("gotoPreviousParagraph", js.Any.fromFunction1(value))
+    def setGotoEndOfWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfWord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoPreviousSentence(value: Boolean => Boolean): Self = this.set("gotoPreviousSentence", js.Any.fromFunction1(value))
+    def setGotoNextParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextParagraph", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoStartOfParagraph(value: Boolean => Boolean): Self = this.set("gotoStartOfParagraph", js.Any.fromFunction1(value))
+    def setGotoNextSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextSentence", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoStartOfSentence(value: Boolean => Boolean): Self = this.set("gotoStartOfSentence", js.Any.fromFunction1(value))
+    def setGotoNextWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextWord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEndOfParagraph(value: () => Boolean): Self = this.set("isEndOfParagraph", js.Any.fromFunction0(value))
+    def setGotoPreviousParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousParagraph", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEndOfSentence(value: () => Boolean): Self = this.set("isEndOfSentence", js.Any.fromFunction0(value))
+    def setGotoPreviousSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousSentence", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsStartOfParagraph(value: () => Boolean): Self = this.set("isStartOfParagraph", js.Any.fromFunction0(value))
+    def setGotoPreviousWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousWord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsStartOfSentence(value: () => Boolean): Self = this.set("isStartOfSentence", js.Any.fromFunction0(value))
+    def setGotoRange(value: (XTextRange, Boolean) => Unit): Self = StObject.set(x, "gotoRange", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setGotoStart(value: Boolean => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGotoStartOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfParagraph", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGotoStartOfSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfSentence", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGotoStartOfWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfWord", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setIsEndOfParagraph(value: () => Boolean): Self = StObject.set(x, "isEndOfParagraph", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setIsEndOfSentence(value: () => Boolean): Self = StObject.set(x, "isEndOfSentence", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setIsEndOfWord(value: () => Boolean): Self = StObject.set(x, "isEndOfWord", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setIsStartOfParagraph(value: () => Boolean): Self = StObject.set(x, "isStartOfParagraph", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setIsStartOfSentence(value: () => Boolean): Self = StObject.set(x, "isStartOfSentence", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setIsStartOfWord(value: () => Boolean): Self = StObject.set(x, "isStartOfWord", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawArguments extends js.Object {
+trait RawArguments extends StObject {
   
   var args: js.Array[RawArgument] = js.native
   
@@ -20,30 +21,18 @@ object RawArguments {
   }
   
   @scala.inline
-  implicit class RawArgumentsOps[Self <: RawArguments] (val x: Self) extends AnyVal {
+  implicit class RawArgumentsMutableBuilder[Self <: RawArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[RawArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: RawArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRest(value: js.Array[String]): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: RawArgument*): Self = this.set("args", js.Array(value :_*))
-    
-    @scala.inline
-    def setArgs(value: js.Array[RawArgument]): Self = this.set("args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestVarargs(value: String*): Self = this.set("rest", js.Array(value :_*))
-    
-    @scala.inline
-    def setRest(value: js.Array[String]): Self = this.set("rest", value.asInstanceOf[js.Any])
+    def setRestVarargs(value: String*): Self = StObject.set(x, "rest", js.Array(value :_*))
   }
 }

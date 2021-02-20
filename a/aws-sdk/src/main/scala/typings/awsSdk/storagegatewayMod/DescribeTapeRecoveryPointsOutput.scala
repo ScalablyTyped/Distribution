@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTapeRecoveryPointsOutput extends js.Object {
+trait DescribeTapeRecoveryPointsOutput extends StObject {
   
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
   
@@ -28,39 +29,27 @@ object DescribeTapeRecoveryPointsOutput {
   }
   
   @scala.inline
-  implicit class DescribeTapeRecoveryPointsOutputOps[Self <: DescribeTapeRecoveryPointsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeTapeRecoveryPointsOutputMutableBuilder[Self <: DescribeTapeRecoveryPointsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    def setTapeRecoveryPointInfos(value: TapeRecoveryPointInfos): Self = StObject.set(x, "TapeRecoveryPointInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setTapeRecoveryPointInfosUndefined: Self = StObject.set(x, "TapeRecoveryPointInfos", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setTapeRecoveryPointInfosVarargs(value: TapeRecoveryPointInfo*): Self = this.set("TapeRecoveryPointInfos", js.Array(value :_*))
-    
-    @scala.inline
-    def setTapeRecoveryPointInfos(value: TapeRecoveryPointInfos): Self = this.set("TapeRecoveryPointInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTapeRecoveryPointInfos: Self = this.set("TapeRecoveryPointInfos", js.undefined)
+    def setTapeRecoveryPointInfosVarargs(value: TapeRecoveryPointInfo*): Self = StObject.set(x, "TapeRecoveryPointInfos", js.Array(value :_*))
   }
 }

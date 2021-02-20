@@ -9,13 +9,14 @@ import typings.evernote.mod.Types.Resource
 import typings.evernote.mod.Types.SavedSearch
 import typings.evernote.mod.Types.Tag
 import typings.evernote.mod.Types.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.SyncChunk")
 @js.native
-class SyncChunk () extends js.Object {
+class SyncChunk () extends StObject {
   def this(args: ChunkHighUSN) = this()
   
   var chunkHighUSN: js.UndefOr[Double] = js.native

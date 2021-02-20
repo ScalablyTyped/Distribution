@@ -1,17 +1,18 @@
 package typings.d3Path
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-path", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3-path", "path")
+  @js.native
   def path(): Path_ = js.native
   
   @js.native
-  trait Path_ extends js.Object {
+  trait Path_ extends StObject {
     
     /**
       * Draws a circular arc segment with the specified center ⟨x, y⟩, radius, startAngle and endAngle. If anticlockwise is true,

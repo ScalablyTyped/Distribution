@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PerceptionFrameSourceAccessStatus extends js.Object
+sealed trait PerceptionFrameSourceAccessStatus extends StObject
 /** Indicates the access status an app is allowed for a particular type of frame source. */
 @JSGlobal("Windows.Devices.Perception.PerceptionFrameSourceAccessStatus")
 @js.native
-object PerceptionFrameSourceAccessStatus extends js.Object {
+object PerceptionFrameSourceAccessStatus extends StObject {
   
   /** The app is allowed to access the type of perception frame source it requested. */
   @js.native

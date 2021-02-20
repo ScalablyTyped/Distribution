@@ -2,13 +2,12 @@ package typings.openui5.sap.ui.core
 
 import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.service")
-@js.native
-object service extends js.Object {
+object service {
   
   @js.native
   trait Service extends Object {

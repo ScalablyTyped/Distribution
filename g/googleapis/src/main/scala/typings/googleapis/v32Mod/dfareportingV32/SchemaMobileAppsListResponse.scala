@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Mobile app List Response
   */
 @js.native
-trait SchemaMobileAppsListResponse extends js.Object {
+trait SchemaMobileAppsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -35,39 +36,27 @@ object SchemaMobileAppsListResponse {
   }
   
   @scala.inline
-  implicit class SchemaMobileAppsListResponseOps[Self <: SchemaMobileAppsListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaMobileAppsListResponseMutableBuilder[Self <: SchemaMobileAppsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMobileApps(value: js.Array[SchemaMobileApp]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMobileAppsVarargs(value: SchemaMobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
     
     @scala.inline
-    def setMobileAppsVarargs(value: SchemaMobileApp*): Self = this.set("mobileApps", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileApps(value: js.Array[SchemaMobileApp]): Self = this.set("mobileApps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMobileApps: Self = this.set("mobileApps", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

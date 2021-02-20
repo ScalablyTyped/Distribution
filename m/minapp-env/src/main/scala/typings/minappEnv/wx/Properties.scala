@@ -1,12 +1,13 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 该特征值支持的操作类型 */
 @js.native
-trait Properties extends js.Object {
+trait Properties extends StObject {
   
   /** 该特征值是否支持 indicate 操作 */
   var indicate: Boolean = js.native
@@ -24,36 +25,25 @@ trait Properties extends js.Object {
 object Properties {
   
   @scala.inline
-  def apply(indicate: Boolean, notify: Boolean, read: Boolean, write: Boolean): Properties = {
-    val __obj = js.Dynamic.literal(indicate = indicate.asInstanceOf[js.Any], notify = notify.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+  def apply(indicate: Boolean, notify_ : Boolean, read: Boolean, write: Boolean): Properties = {
+    val __obj = js.Dynamic.literal(indicate = indicate.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+    __obj.updateDynamic("notify")(notify_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }
   
   @scala.inline
-  implicit class PropertiesOps[Self <: Properties] (val x: Self) extends AnyVal {
+  implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicate(value: Boolean): Self = this.set("indicate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotify(value: Boolean): Self = this.set("notify", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRead(value: Boolean): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrite(value: Boolean): Self = this.set("write", value.asInstanceOf[js.Any])
+    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
   }
 }

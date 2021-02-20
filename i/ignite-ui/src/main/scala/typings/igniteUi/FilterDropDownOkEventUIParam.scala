@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterDropDownOkEventUIParam extends js.Object {
+trait FilterDropDownOkEventUIParam extends StObject {
   
   /**
     * A reference to the drop down.
@@ -31,39 +32,27 @@ object FilterDropDownOkEventUIParam {
   }
   
   @scala.inline
-  implicit class FilterDropDownOkEventUIParamOps[Self <: FilterDropDownOkEventUIParam] (val x: Self) extends AnyVal {
+  implicit class FilterDropDownOkEventUIParamMutableBuilder[Self <: FilterDropDownOkEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropDownElement(value: String): Self = StObject.set(x, "dropDownElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropDownElementUndefined: Self = StObject.set(x, "dropDownElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterMembers(value: js.Array[_]): Self = StObject.set(x, "filterMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropDownElement(value: String): Self = this.set("dropDownElement", value.asInstanceOf[js.Any])
+    def setFilterMembersUndefined: Self = StObject.set(x, "filterMembers", js.undefined)
     
     @scala.inline
-    def deleteDropDownElement: Self = this.set("dropDownElement", js.undefined)
+    def setFilterMembersVarargs(value: js.Any*): Self = StObject.set(x, "filterMembers", js.Array(value :_*))
     
     @scala.inline
-    def setFilterMembersVarargs(value: js.Any*): Self = this.set("filterMembers", js.Array(value :_*))
+    def setHierarchy(value: js.Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterMembers(value: js.Array[_]): Self = this.set("filterMembers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterMembers: Self = this.set("filterMembers", js.undefined)
-    
-    @scala.inline
-    def setHierarchy(value: js.Any): Self = this.set("hierarchy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHierarchy: Self = this.set("hierarchy", js.undefined)
+    def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
   }
 }

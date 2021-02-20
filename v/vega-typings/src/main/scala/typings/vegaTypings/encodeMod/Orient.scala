@@ -1,5 +1,6 @@
 package typings.vegaTypings.encodeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.top
   - typings.vegaTypings.vegaTypingsStrings.bottom
 */
-trait Orient extends js.Object
+trait Orient extends StObject
 object Orient {
   
   @scala.inline

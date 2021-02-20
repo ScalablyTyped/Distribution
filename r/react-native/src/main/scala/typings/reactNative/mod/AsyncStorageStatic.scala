@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsyncStorageStatic extends js.Object {
+trait AsyncStorageStatic extends StObject {
   
   /**
     * Erases all AsyncStorage for all clients, libraries, etc. You probably don't want to call this.

@@ -1,12 +1,13 @@
 package typings.recurlyRecurlyJs.anon
 
 import typings.recurlyRecurlyJs.elementsMod.IndividualElementOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait All extends js.Object {
+trait All extends StObject {
   
   var all: js.UndefOr[IndividualElementOptions] = js.native
   
@@ -29,54 +30,42 @@ object All {
   }
   
   @scala.inline
-  implicit class AllOps[Self <: All] (val x: Self) extends AnyVal {
+  implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: IndividualElementOptions): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCard(value: CardElementOptionsselecto): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: IndividualElementOptions): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setCvv(value: IndividualElementOptionss): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCard(value: CardElementOptionsselecto): Self = this.set("card", value.asInstanceOf[js.Any])
+    def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
     
     @scala.inline
-    def deleteCard: Self = this.set("card", js.undefined)
+    def setMonth(value: IndividualElementOptionss): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCvv(value: IndividualElementOptionss): Self = this.set("cvv", value.asInstanceOf[js.Any])
+    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
     @scala.inline
-    def deleteCvv: Self = this.set("cvv", js.undefined)
+    def setNumber(value: IndividualElementOptionss): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: IndividualElementOptionss): Self = this.set("month", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteMonth: Self = this.set("month", js.undefined)
+    def setYear(value: IndividualElementOptionss): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: IndividualElementOptionss): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
-    
-    @scala.inline
-    def setYear(value: IndividualElementOptionss): Self = this.set("year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYear: Self = this.set("year", js.undefined)
+    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * WorkItem.
   */
 @js.native
-trait SchemaApproximateSplitRequest extends js.Object {
+trait SchemaApproximateSplitRequest extends StObject {
   
   /**
     * A fraction at which to split the work item, from 0.0 (beginning of the
@@ -37,36 +38,24 @@ object SchemaApproximateSplitRequest {
   }
   
   @scala.inline
-  implicit class SchemaApproximateSplitRequestOps[Self <: SchemaApproximateSplitRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaApproximateSplitRequestMutableBuilder[Self <: SchemaApproximateSplitRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFractionConsumed(value: Double): Self = StObject.set(x, "fractionConsumed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFractionConsumedUndefined: Self = StObject.set(x, "fractionConsumed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFractionOfRemainder(value: Double): Self = StObject.set(x, "fractionOfRemainder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFractionConsumed(value: Double): Self = this.set("fractionConsumed", value.asInstanceOf[js.Any])
+    def setFractionOfRemainderUndefined: Self = StObject.set(x, "fractionOfRemainder", js.undefined)
     
     @scala.inline
-    def deleteFractionConsumed: Self = this.set("fractionConsumed", js.undefined)
+    def setPosition(value: SchemaPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFractionOfRemainder(value: Double): Self = this.set("fractionOfRemainder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFractionOfRemainder: Self = this.set("fractionOfRemainder", js.undefined)
-    
-    @scala.inline
-    def setPosition(value: SchemaPosition): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

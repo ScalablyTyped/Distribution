@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStorage.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MainPageSuffix extends js.Object {
+trait MainPageSuffix extends StObject {
   
   /**
     * If the requested object path is missing, the service will ensure the path has a trailing '/', append this suffix, and attempt to retrieve the resulting object. This allows the
@@ -28,30 +29,18 @@ object MainPageSuffix {
   }
   
   @scala.inline
-  implicit class MainPageSuffixOps[Self <: MainPageSuffix] (val x: Self) extends AnyVal {
+  implicit class MainPageSuffixMutableBuilder[Self <: MainPageSuffix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMainPageSuffix(value: String): Self = StObject.set(x, "mainPageSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMainPageSuffixUndefined: Self = StObject.set(x, "mainPageSuffix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotFoundPage(value: String): Self = StObject.set(x, "notFoundPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainPageSuffix(value: String): Self = this.set("mainPageSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMainPageSuffix: Self = this.set("mainPageSuffix", js.undefined)
-    
-    @scala.inline
-    def setNotFoundPage(value: String): Self = this.set("notFoundPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotFoundPage: Self = this.set("notFoundPage", js.undefined)
+    def setNotFoundPageUndefined: Self = StObject.set(x, "notFoundPage", js.undefined)
   }
 }

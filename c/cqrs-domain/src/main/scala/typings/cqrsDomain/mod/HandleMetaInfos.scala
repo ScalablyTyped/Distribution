@@ -1,11 +1,12 @@
 package typings.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HandleMetaInfos extends js.Object {
+trait HandleMetaInfos extends StObject {
   
   var aggregate: String = js.native
   
@@ -22,27 +23,15 @@ object HandleMetaInfos {
   }
   
   @scala.inline
-  implicit class HandleMetaInfosOps[Self <: HandleMetaInfos] (val x: Self) extends AnyVal {
+  implicit class HandleMetaInfosMutableBuilder[Self <: HandleMetaInfos] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateId(value: String): Self = StObject.set(x, "aggregateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAggregate(value: String): Self = this.set("aggregate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAggregateId(value: String): Self = this.set("aggregateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

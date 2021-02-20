@@ -2,19 +2,16 @@ package typings.expectations
 
 import typings.expectations.Expectations.IAssertions
 import typings.expectations.Expectations.IExpectations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var expect: IExpectations = js.native
-  
-  @js.native
-  object Expectations extends js.Object {
+  object Expectations {
     
+    @JSGlobal("Expectations.Expect")
     @js.native
     class Expect protected ()
       extends typings.expectations.Expectations.Expect {
@@ -48,4 +45,10 @@ object global extends js.Object {
       ) = this()
     }
   }
+  
+  @JSGlobal("expect")
+  @js.native
+  def expect: IExpectations = js.native
+  @scala.inline
+  def expect_=(x: IExpectations): Unit = js.Dynamic.global.updateDynamic("expect")(x.asInstanceOf[js.Any])
 }

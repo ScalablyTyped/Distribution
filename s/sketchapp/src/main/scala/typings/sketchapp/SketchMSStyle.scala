@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSStyle extends js.Object {
+trait SketchMSStyle extends StObject {
   
   var _class: style = js.native
   
@@ -60,120 +61,108 @@ object SketchMSStyle {
   }
   
   @scala.inline
-  implicit class SketchMSStyleOps[Self <: SketchMSStyle] (val x: Self) extends AnyVal {
+  implicit class SketchMSStyleMutableBuilder[Self <: SketchMSStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlur(value: SketchMSStyleBlur): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderOptions(value: SketchMSStyleBorderOptions): Self = StObject.set(x, "borderOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: style): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setBorderOptionsUndefined: Self = StObject.set(x, "borderOptions", js.undefined)
     
     @scala.inline
-    def setDo_objectID(value: String): Self = this.set("do_objectID", value.asInstanceOf[js.Any])
+    def setBorders(value: js.Array[SketchMSStyleBorder]): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMarkerType(value: Double): Self = this.set("endMarkerType", value.asInstanceOf[js.Any])
+    def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
     @scala.inline
-    def setMiterLimit(value: Double): Self = this.set("miterLimit", value.asInstanceOf[js.Any])
+    def setBordersVarargs(value: SketchMSStyleBorder*): Self = StObject.set(x, "borders", js.Array(value :_*))
     
     @scala.inline
-    def setStartMarkerType(value: Double): Self = this.set("startMarkerType", value.asInstanceOf[js.Any])
+    def setColorControls(value: SketchMSStyleColorControls): Self = StObject.set(x, "colorControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindingRule(value: Double): Self = this.set("windingRule", value.asInstanceOf[js.Any])
+    def setColorControlsUndefined: Self = StObject.set(x, "colorControls", js.undefined)
     
     @scala.inline
-    def setBlur(value: SketchMSStyleBlur): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlur: Self = this.set("blur", js.undefined)
+    def setContextSettingsUndefined: Self = StObject.set(x, "contextSettings", js.undefined)
     
     @scala.inline
-    def setBorderOptions(value: SketchMSStyleBorderOptions): Self = this.set("borderOptions", value.asInstanceOf[js.Any])
+    def setDo_objectID(value: String): Self = StObject.set(x, "do_objectID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderOptions: Self = this.set("borderOptions", js.undefined)
+    def setEndDecorationType(value: Double): Self = StObject.set(x, "endDecorationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBordersVarargs(value: SketchMSStyleBorder*): Self = this.set("borders", js.Array(value :_*))
+    def setEndDecorationTypeUndefined: Self = StObject.set(x, "endDecorationType", js.undefined)
     
     @scala.inline
-    def setBorders(value: js.Array[SketchMSStyleBorder]): Self = this.set("borders", value.asInstanceOf[js.Any])
+    def setEndMarkerType(value: Double): Self = StObject.set(x, "endMarkerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorders: Self = this.set("borders", js.undefined)
+    def setFills(value: js.Array[SketchMSStyleFill]): Self = StObject.set(x, "fills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorControls(value: SketchMSStyleColorControls): Self = this.set("colorControls", value.asInstanceOf[js.Any])
+    def setFillsUndefined: Self = StObject.set(x, "fills", js.undefined)
     
     @scala.inline
-    def deleteColorControls: Self = this.set("colorControls", js.undefined)
+    def setFillsVarargs(value: SketchMSStyleFill*): Self = StObject.set(x, "fills", js.Array(value :_*))
     
     @scala.inline
-    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = this.set("contextSettings", value.asInstanceOf[js.Any])
+    def setInnerShadows(value: js.Array[SketchMSStyleShadow]): Self = StObject.set(x, "innerShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContextSettings: Self = this.set("contextSettings", js.undefined)
+    def setInnerShadowsUndefined: Self = StObject.set(x, "innerShadows", js.undefined)
     
     @scala.inline
-    def setEndDecorationType(value: Double): Self = this.set("endDecorationType", value.asInstanceOf[js.Any])
+    def setInnerShadowsVarargs(value: SketchMSStyleShadow*): Self = StObject.set(x, "innerShadows", js.Array(value :_*))
     
     @scala.inline
-    def deleteEndDecorationType: Self = this.set("endDecorationType", js.undefined)
+    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillsVarargs(value: SketchMSStyleFill*): Self = this.set("fills", js.Array(value :_*))
+    def setReflection(value: SketchMSStyleReflection): Self = StObject.set(x, "reflection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFills(value: js.Array[SketchMSStyleFill]): Self = this.set("fills", value.asInstanceOf[js.Any])
+    def setReflectionUndefined: Self = StObject.set(x, "reflection", js.undefined)
     
     @scala.inline
-    def deleteFills: Self = this.set("fills", js.undefined)
+    def setShadows(value: js.Array[SketchMSStyleShadow]): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerShadowsVarargs(value: SketchMSStyleShadow*): Self = this.set("innerShadows", js.Array(value :_*))
+    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def setInnerShadows(value: js.Array[SketchMSStyleShadow]): Self = this.set("innerShadows", value.asInstanceOf[js.Any])
+    def setShadowsVarargs(value: SketchMSStyleShadow*): Self = StObject.set(x, "shadows", js.Array(value :_*))
     
     @scala.inline
-    def deleteInnerShadows: Self = this.set("innerShadows", js.undefined)
+    def setStartDecorationType(value: Double): Self = StObject.set(x, "startDecorationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReflection(value: SketchMSStyleReflection): Self = this.set("reflection", value.asInstanceOf[js.Any])
+    def setStartDecorationTypeUndefined: Self = StObject.set(x, "startDecorationType", js.undefined)
     
     @scala.inline
-    def deleteReflection: Self = this.set("reflection", js.undefined)
+    def setStartMarkerType(value: Double): Self = StObject.set(x, "startMarkerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowsVarargs(value: SketchMSStyleShadow*): Self = this.set("shadows", js.Array(value :_*))
+    def setTextStyle(value: SketchMSTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadows(value: js.Array[SketchMSStyleShadow]): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def deleteShadows: Self = this.set("shadows", js.undefined)
+    def setWindingRule(value: Double): Self = StObject.set(x, "windingRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDecorationType(value: Double): Self = this.set("startDecorationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDecorationType: Self = this.set("startDecorationType", js.undefined)
-    
-    @scala.inline
-    def setTextStyle(value: SketchMSTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def set_class(value: style): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

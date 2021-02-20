@@ -1,11 +1,12 @@
 package typings.grpc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Listener extends js.Object {
+trait Listener extends StObject {
   
   var onReceiveMessage: js.UndefOr[MessageListener] = js.native
   
@@ -22,36 +23,24 @@ object Listener {
   }
   
   @scala.inline
-  implicit class ListenerOps[Self <: Listener] (val x: Self) extends AnyVal {
+  implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnReceiveMessage(value: (/* message */ js.Any, /* next */ js.Function) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnReceiveMessageUndefined: Self = StObject.set(x, "onReceiveMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnReceiveMetadata(value: (/* metadata */ Metadata, /* next */ js.Function) => Unit): Self = StObject.set(x, "onReceiveMetadata", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnReceiveMessage(value: (/* message */ js.Any, /* next */ js.Function) => Unit): Self = this.set("onReceiveMessage", js.Any.fromFunction2(value))
+    def setOnReceiveMetadataUndefined: Self = StObject.set(x, "onReceiveMetadata", js.undefined)
     
     @scala.inline
-    def deleteOnReceiveMessage: Self = this.set("onReceiveMessage", js.undefined)
+    def setOnReceiveStatus(value: (/* status */ StatusObject, /* next */ js.Function) => Unit): Self = StObject.set(x, "onReceiveStatus", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnReceiveMetadata(value: (/* metadata */ Metadata, /* next */ js.Function) => Unit): Self = this.set("onReceiveMetadata", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnReceiveMetadata: Self = this.set("onReceiveMetadata", js.undefined)
-    
-    @scala.inline
-    def setOnReceiveStatus(value: (/* status */ StatusObject, /* next */ js.Function) => Unit): Self = this.set("onReceiveStatus", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnReceiveStatus: Self = this.set("onReceiveStatus", js.undefined)
+    def setOnReceiveStatusUndefined: Self = StObject.set(x, "onReceiveStatus", js.undefined)
   }
 }

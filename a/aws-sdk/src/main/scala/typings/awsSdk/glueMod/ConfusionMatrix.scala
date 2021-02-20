@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfusionMatrix extends js.Object {
+trait ConfusionMatrix extends StObject {
   
   /**
     * The number of matches in the data that the transform didn't find, in the confusion matrix for your transform.
@@ -36,42 +37,30 @@ object ConfusionMatrix {
   }
   
   @scala.inline
-  implicit class ConfusionMatrixOps[Self <: ConfusionMatrix] (val x: Self) extends AnyVal {
+  implicit class ConfusionMatrixMutableBuilder[Self <: ConfusionMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumFalseNegatives(value: RecordsCount): Self = StObject.set(x, "NumFalseNegatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumFalseNegativesUndefined: Self = StObject.set(x, "NumFalseNegatives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumFalsePositives(value: RecordsCount): Self = StObject.set(x, "NumFalsePositives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFalseNegatives(value: RecordsCount): Self = this.set("NumFalseNegatives", value.asInstanceOf[js.Any])
+    def setNumFalsePositivesUndefined: Self = StObject.set(x, "NumFalsePositives", js.undefined)
     
     @scala.inline
-    def deleteNumFalseNegatives: Self = this.set("NumFalseNegatives", js.undefined)
+    def setNumTrueNegatives(value: RecordsCount): Self = StObject.set(x, "NumTrueNegatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFalsePositives(value: RecordsCount): Self = this.set("NumFalsePositives", value.asInstanceOf[js.Any])
+    def setNumTrueNegativesUndefined: Self = StObject.set(x, "NumTrueNegatives", js.undefined)
     
     @scala.inline
-    def deleteNumFalsePositives: Self = this.set("NumFalsePositives", js.undefined)
+    def setNumTruePositives(value: RecordsCount): Self = StObject.set(x, "NumTruePositives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTrueNegatives(value: RecordsCount): Self = this.set("NumTrueNegatives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumTrueNegatives: Self = this.set("NumTrueNegatives", js.undefined)
-    
-    @scala.inline
-    def setNumTruePositives(value: RecordsCount): Self = this.set("NumTruePositives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumTruePositives: Self = this.set("NumTruePositives", js.undefined)
+    def setNumTruePositivesUndefined: Self = StObject.set(x, "NumTruePositives", js.undefined)
   }
 }

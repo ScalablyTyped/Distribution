@@ -1,6 +1,7 @@
 package typings.googleapis.fileV1Mod.fileV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A Cloud Filestore instance.
   */
 @js.native
-trait SchemaInstance extends js.Object {
+trait SchemaInstance extends StObject {
   
   /**
     * Output only. The time when the instance was created.
@@ -75,84 +76,72 @@ object SchemaInstance {
   }
   
   @scala.inline
-  implicit class SchemaInstanceOps[Self <: SchemaInstance] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceMutableBuilder[Self <: SchemaInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFileShares(value: js.Array[SchemaFileShareConfig]): Self = StObject.set(x, "fileShares", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setFileSharesUndefined: Self = StObject.set(x, "fileShares", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setFileSharesVarargs(value: SchemaFileShareConfig*): Self = StObject.set(x, "fileShares", js.Array(value :_*))
     
     @scala.inline
-    def setFileSharesVarargs(value: SchemaFileShareConfig*): Self = this.set("fileShares", js.Array(value :_*))
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileShares(value: js.Array[SchemaFileShareConfig]): Self = this.set("fileShares", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteFileShares: Self = this.set("fileShares", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setNetworks(value: js.Array[SchemaNetworkConfig]): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNetworksVarargs(value: SchemaNetworkConfig*): Self = StObject.set(x, "networks", js.Array(value :_*))
     
     @scala.inline
-    def setNetworksVarargs(value: SchemaNetworkConfig*): Self = this.set("networks", js.Array(value :_*))
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworks(value: js.Array[SchemaNetworkConfig]): Self = this.set("networks", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteNetworks: Self = this.set("networks", js.undefined)
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
-    
-    @scala.inline
-    def setTier(value: String): Self = this.set("tier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTier: Self = this.set("tier", js.undefined)
+    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

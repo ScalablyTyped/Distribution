@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BarFormatOptions extends js.Object {
+trait BarFormatOptions extends StObject {
   
   /**
     * A number that is the base value to compare the cell value against. If the cell value is higher, it will be drawn to the right of the base; if lower, it will be drawn to the left. Default value is 0.
@@ -56,66 +57,54 @@ object BarFormatOptions {
   }
   
   @scala.inline
-  implicit class BarFormatOptionsOps[Self <: BarFormatOptions] (val x: Self) extends AnyVal {
+  implicit class BarFormatOptionsMutableBuilder[Self <: BarFormatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorNegative(value: String): Self = StObject.set(x, "colorNegative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: Double): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setColorNegativeUndefined: Self = StObject.set(x, "colorNegative", js.undefined)
     
     @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
+    def setColorPositive(value: String): Self = StObject.set(x, "colorPositive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorNegative(value: String): Self = this.set("colorNegative", value.asInstanceOf[js.Any])
+    def setColorPositiveUndefined: Self = StObject.set(x, "colorPositive", js.undefined)
     
     @scala.inline
-    def deleteColorNegative: Self = this.set("colorNegative", js.undefined)
+    def setDrawZeroLine(value: Boolean): Self = StObject.set(x, "drawZeroLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorPositive(value: String): Self = this.set("colorPositive", value.asInstanceOf[js.Any])
+    def setDrawZeroLineUndefined: Self = StObject.set(x, "drawZeroLine", js.undefined)
     
     @scala.inline
-    def deleteColorPositive: Self = this.set("colorPositive", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawZeroLine(value: Boolean): Self = this.set("drawZeroLine", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteDrawZeroLine: Self = this.set("drawZeroLine", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowValue(value: Boolean): Self = this.set("showValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowValue: Self = this.set("showValue", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

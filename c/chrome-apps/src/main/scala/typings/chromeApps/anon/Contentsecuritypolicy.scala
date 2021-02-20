@@ -1,11 +1,12 @@
 package typings.chromeApps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Contentsecuritypolicy extends js.Object {
+trait Contentsecuritypolicy extends StObject {
   
   /**
     * @default 'sandbox allow-scripts allow-forms'
@@ -23,30 +24,18 @@ object Contentsecuritypolicy {
   }
   
   @scala.inline
-  implicit class ContentsecuritypolicyOps[Self <: Contentsecuritypolicy] (val x: Self) extends AnyVal {
+  implicit class ContentsecuritypolicyMutableBuilder[Self <: Contentsecuritypolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent_security_policy(value: String): Self = StObject.set(x, "content_security_policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent_security_policyUndefined: Self = StObject.set(x, "content_security_policy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagesVarargs(value: String*): Self = this.set("pages", js.Array(value :_*))
-    
-    @scala.inline
-    def setPages(value: js.Array[String]): Self = this.set("pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContent_security_policy(value: String): Self = this.set("content_security_policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent_security_policy: Self = this.set("content_security_policy", js.undefined)
+    def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.baiduApp.baiduAppStrings.unknown
   - typings.baiduApp.baiduAppStrings.none
 */
-trait networkType extends js.Object
+trait networkType extends StObject
 object networkType {
   
   @scala.inline

@@ -1,13 +1,14 @@
 package typings.workboxRouting
 
 import typings.workboxRouting.routeHandlerMod.RouteHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-routing/setDefaultHandler", JSImport.Namespace)
-@js.native
-object setDefaultHandlerMod extends js.Object {
+object setDefaultHandlerMod {
   
+  @JSImport("workbox-routing/setDefaultHandler", "setDefaultHandler")
+  @js.native
   def setDefaultHandler(handler: RouteHandler): Unit = js.native
 }

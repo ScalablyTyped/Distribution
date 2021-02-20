@@ -1,6 +1,7 @@
 package typings.typedGraphql.mod
 
 import typings.typedGraphql.typedGraphqlStrings.INTERFACE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,42 +33,30 @@ object IntrospectionInterfaceType {
   }
   
   @scala.inline
-  implicit class IntrospectionInterfaceTypeOps[Self <: IntrospectionInterfaceType] (val x: Self) extends AnyVal {
+  implicit class IntrospectionInterfaceTypeMutableBuilder[Self <: IntrospectionInterfaceType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: js.Array[IntrospectionField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: IntrospectionField*): Self = this.set("fields", js.Array(value :_*))
+    def setFieldsVarargs(value: IntrospectionField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFields(value: js.Array[IntrospectionField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setKind(value: INTERFACE): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: INTERFACE): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPossibleTypes(value: js.Array[IntrospectionNamedTypeRef]): Self = StObject.set(x, "possibleTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPossibleTypesVarargs(value: IntrospectionNamedTypeRef*): Self = this.set("possibleTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setPossibleTypes(value: js.Array[IntrospectionNamedTypeRef]): Self = this.set("possibleTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPossibleTypesVarargs(value: IntrospectionNamedTypeRef*): Self = StObject.set(x, "possibleTypes", js.Array(value :_*))
   }
 }

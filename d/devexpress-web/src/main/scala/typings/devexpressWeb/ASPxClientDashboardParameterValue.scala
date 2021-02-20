@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides access to the parameter value and display text.
   */
 @js.native
-trait ASPxClientDashboardParameterValue extends js.Object {
+trait ASPxClientDashboardParameterValue extends StObject {
   
   /**
     * Returns the parameter display text.
@@ -29,24 +30,12 @@ object ASPxClientDashboardParameterValue {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardParameterValueOps[Self <: ASPxClientDashboardParameterValue] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardParameterValueMutableBuilder[Self <: ASPxClientDashboardParameterValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDisplayText(value: () => String): Self = this.set("GetDisplayText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = this.set("GetValue", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
   }
 }

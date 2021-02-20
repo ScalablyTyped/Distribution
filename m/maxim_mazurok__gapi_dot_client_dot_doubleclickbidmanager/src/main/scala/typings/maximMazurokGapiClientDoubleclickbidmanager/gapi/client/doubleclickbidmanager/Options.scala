@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /** Set to true and filter your report by `FILTER_INSERTION_ORDER` or `FILTER_LINE_ITEM` to include data for audience lists specifically targeted by those items. */
   var includeOnlyTargetedUserLists: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeOnlyTargetedUserLists(value: Boolean): Self = StObject.set(x, "includeOnlyTargetedUserLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeOnlyTargetedUserListsUndefined: Self = StObject.set(x, "includeOnlyTargetedUserLists", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathQueryOptions(value: PathQueryOptions): Self = StObject.set(x, "pathQueryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOnlyTargetedUserLists(value: Boolean): Self = this.set("includeOnlyTargetedUserLists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeOnlyTargetedUserLists: Self = this.set("includeOnlyTargetedUserLists", js.undefined)
-    
-    @scala.inline
-    def setPathQueryOptions(value: PathQueryOptions): Self = this.set("pathQueryOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathQueryOptions: Self = this.set("pathQueryOptions", js.undefined)
+    def setPathQueryOptionsUndefined: Self = StObject.set(x, "pathQueryOptions", js.undefined)
   }
 }

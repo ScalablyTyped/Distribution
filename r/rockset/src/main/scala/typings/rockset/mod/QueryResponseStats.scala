@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryResponseStats extends js.Object {
+trait QueryResponseStats extends StObject {
   
   // query time in milliseconds
   var elapsed_time_ms: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object QueryResponseStats {
   }
   
   @scala.inline
-  implicit class QueryResponseStatsOps[Self <: QueryResponseStats] (val x: Self) extends AnyVal {
+  implicit class QueryResponseStatsMutableBuilder[Self <: QueryResponseStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElapsed_time_ms(value: Double): Self = StObject.set(x, "elapsed_time_ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElapsed_time_msUndefined: Self = StObject.set(x, "elapsed_time_ms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRows_scanned(value: Double): Self = StObject.set(x, "rows_scanned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElapsed_time_ms(value: Double): Self = this.set("elapsed_time_ms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElapsed_time_ms: Self = this.set("elapsed_time_ms", js.undefined)
-    
-    @scala.inline
-    def setRows_scanned(value: Double): Self = this.set("rows_scanned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows_scanned: Self = this.set("rows_scanned", js.undefined)
+    def setRows_scannedUndefined: Self = StObject.set(x, "rows_scanned", js.undefined)
   }
 }

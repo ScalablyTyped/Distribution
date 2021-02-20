@@ -1,11 +1,12 @@
 package typings.arangodb.Foxx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionStorage extends js.Object {
+trait SessionStorage extends StObject {
   
   def forClient(session: Session): String | Null = js.native
   
@@ -22,30 +23,18 @@ object SessionStorage {
   }
   
   @scala.inline
-  implicit class SessionStorageOps[Self <: SessionStorage] (val x: Self) extends AnyVal {
+  implicit class SessionStorageMutableBuilder[Self <: SessionStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForClient(value: Session => String | Null): Self = StObject.set(x, "forClient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromClient(value: String => Session | Null): Self = StObject.set(x, "fromClient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNew(value: () => Session): Self = StObject.set(x, "new", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForClient(value: Session => String | Null): Self = this.set("forClient", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFromClient(value: String => Session | Null): Self = this.set("fromClient", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNew(value: () => Session): Self = this.set("new", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteNew: Self = this.set("new", js.undefined)
+    def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
   }
 }

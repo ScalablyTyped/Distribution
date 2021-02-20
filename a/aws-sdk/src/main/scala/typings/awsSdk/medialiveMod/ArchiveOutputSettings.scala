@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArchiveOutputSettings extends js.Object {
+trait ArchiveOutputSettings extends StObject {
   
   /**
     * Settings specific to the container type of the file.
@@ -31,33 +32,21 @@ object ArchiveOutputSettings {
   }
   
   @scala.inline
-  implicit class ArchiveOutputSettingsOps[Self <: ArchiveOutputSettings] (val x: Self) extends AnyVal {
+  implicit class ArchiveOutputSettingsMutableBuilder[Self <: ArchiveOutputSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerSettings(value: ArchiveContainerSettings): Self = StObject.set(x, "ContainerSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtension(value: string): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionUndefined: Self = StObject.set(x, "Extension", js.undefined)
     
     @scala.inline
-    def setContainerSettings(value: ArchiveContainerSettings): Self = this.set("ContainerSettings", value.asInstanceOf[js.Any])
+    def setNameModifier(value: string): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: string): Self = this.set("Extension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtension: Self = this.set("Extension", js.undefined)
-    
-    @scala.inline
-    def setNameModifier(value: string): Self = this.set("NameModifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNameModifier: Self = this.set("NameModifier", js.undefined)
+    def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
   }
 }

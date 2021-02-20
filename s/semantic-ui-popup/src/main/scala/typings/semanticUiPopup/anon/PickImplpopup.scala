@@ -2,13 +2,14 @@ package typings.semanticUiPopup.anon
 
 import typings.semanticUiPopup.JQuery
 import typings.semanticUiPopup.semanticUiPopupBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, 'popup'> */
 @js.native
-trait PickImplpopup extends js.Object {
+trait PickImplpopup extends StObject {
   
   var popup: `false` | String | JQuery = js.native
 }
@@ -21,21 +22,9 @@ object PickImplpopup {
   }
   
   @scala.inline
-  implicit class PickImplpopupOps[Self <: PickImplpopup] (val x: Self) extends AnyVal {
+  implicit class PickImplpopupMutableBuilder[Self <: PickImplpopup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPopup(value: `false` | String | JQuery): Self = this.set("popup", value.asInstanceOf[js.Any])
+    def setPopup(value: `false` | String | JQuery): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
   }
 }

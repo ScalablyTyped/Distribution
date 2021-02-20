@@ -1,17 +1,19 @@
 package typings.mobxStateTree
 
 import typings.mobxStateTree.typeMod.IAnyType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-state-tree/dist/types/utility-types/refinement", JSImport.Namespace)
-@js.native
-object refinementMod extends js.Object {
+object refinementMod {
   
+  @JSImport("mobx-state-tree/dist/types/utility-types/refinement", "isRefinementType")
+  @js.native
   def isRefinementType[IT /* <: IAnyType */](`type`: IT): /* is IT */ Boolean = js.native
   
-  @JSName("refinement")
+  @JSImport("mobx-state-tree/dist/types/utility-types/refinement", "refinement")
+  @js.native
   def refinement_CreationType[IT /* <: IAnyType */](
     name: String,
     `type`: IT,
@@ -20,7 +22,8 @@ object refinementMod extends js.Object {
       Boolean
     ]
   ): IT = js.native
-  @JSName("refinement")
+  @JSImport("mobx-state-tree/dist/types/utility-types/refinement", "refinement")
+  @js.native
   def refinement_CreationType[IT /* <: IAnyType */](
     name: String,
     `type`: IT,
@@ -30,7 +33,8 @@ object refinementMod extends js.Object {
     ],
     message: String
   ): IT = js.native
-  @JSName("refinement")
+  @JSImport("mobx-state-tree/dist/types/utility-types/refinement", "refinement")
+  @js.native
   def refinement_CreationType[IT /* <: IAnyType */](
     name: String,
     `type`: IT,
@@ -43,7 +47,8 @@ object refinementMod extends js.Object {
       String
     ]
   ): IT = js.native
-  @JSName("refinement")
+  @JSImport("mobx-state-tree/dist/types/utility-types/refinement", "refinement")
+  @js.native
   def refinement_CreationType[IT /* <: IAnyType */](
     `type`: IT,
     predicate: js.Function1[
@@ -51,7 +56,8 @@ object refinementMod extends js.Object {
       Boolean
     ]
   ): IT = js.native
-  @JSName("refinement")
+  @JSImport("mobx-state-tree/dist/types/utility-types/refinement", "refinement")
+  @js.native
   def refinement_CreationType[IT /* <: IAnyType */](
     `type`: IT,
     predicate: js.Function1[
@@ -60,7 +66,8 @@ object refinementMod extends js.Object {
     ],
     message: String
   ): IT = js.native
-  @JSName("refinement")
+  @JSImport("mobx-state-tree/dist/types/utility-types/refinement", "refinement")
+  @js.native
   def refinement_CreationType[IT /* <: IAnyType */](
     `type`: IT,
     predicate: js.Function1[

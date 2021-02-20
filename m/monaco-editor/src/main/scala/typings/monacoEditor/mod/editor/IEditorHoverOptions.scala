@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditorHoverOptions extends js.Object {
+trait IEditorHoverOptions extends StObject {
   
   /**
     * Delay for showing the hover.
@@ -34,36 +35,24 @@ object IEditorHoverOptions {
   }
   
   @scala.inline
-  implicit class IEditorHoverOptionsOps[Self <: IEditorHoverOptions] (val x: Self) extends AnyVal {
+  implicit class IEditorHoverOptionsMutableBuilder[Self <: IEditorHoverOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setSticky(value: Boolean): Self = this.set("sticky", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSticky: Self = this.set("sticky", js.undefined)
+    def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
   }
 }

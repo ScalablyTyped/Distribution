@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An Android package file to install.
   */
 @js.native
-trait SchemaApk extends js.Object {
+trait SchemaApk extends StObject {
   
   /**
     * The path to an APK to be installed on the device before the test begins.
@@ -30,30 +31,18 @@ object SchemaApk {
   }
   
   @scala.inline
-  implicit class SchemaApkOps[Self <: SchemaApk] (val x: Self) extends AnyVal {
+  implicit class SchemaApkMutableBuilder[Self <: SchemaApk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: SchemaFileReference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: SchemaFileReference): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

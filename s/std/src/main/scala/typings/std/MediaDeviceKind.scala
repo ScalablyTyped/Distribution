@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.audiooutput
   - typings.std.stdStrings.videoinput
 */
-trait MediaDeviceKind extends js.Object
+trait MediaDeviceKind extends StObject
 object MediaDeviceKind {
   
   @scala.inline

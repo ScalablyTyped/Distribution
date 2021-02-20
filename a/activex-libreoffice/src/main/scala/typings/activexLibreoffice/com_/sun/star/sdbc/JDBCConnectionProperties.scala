@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,36 +79,24 @@ object JDBCConnectionProperties {
   }
   
   @scala.inline
-  implicit class JDBCConnectionPropertiesOps[Self <: JDBCConnectionProperties] (val x: Self) extends AnyVal {
+  implicit class JDBCConnectionPropertiesMutableBuilder[Self <: JDBCConnectionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRetrievingStatement(value: String): Self = StObject.set(x, "AutoRetrievingStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAutoRetrievingEnabled(value: Boolean): Self = StObject.set(x, "IsAutoRetrievingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJavaDriverClass(value: String): Self = StObject.set(x, "JavaDriverClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRetrievingStatement(value: String): Self = this.set("AutoRetrievingStatement", value.asInstanceOf[js.Any])
+    def setJavaDriverClassPath(value: String): Self = StObject.set(x, "JavaDriverClassPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoRetrievingEnabled(value: Boolean): Self = this.set("IsAutoRetrievingEnabled", value.asInstanceOf[js.Any])
+    def setSystemProperties(value: SafeArray[NamedValue]): Self = StObject.set(x, "SystemProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavaDriverClass(value: String): Self = this.set("JavaDriverClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJavaDriverClassPath(value: String): Self = this.set("JavaDriverClassPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemProperties(value: SafeArray[NamedValue]): Self = this.set("SystemProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeInfoSettings(value: SafeArray[_]): Self = this.set("TypeInfoSettings", value.asInstanceOf[js.Any])
+    def setTypeInfoSettings(value: SafeArray[_]): Self = StObject.set(x, "TypeInfoSettings", value.asInstanceOf[js.Any])
   }
 }

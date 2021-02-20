@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.10]
   */
 @js.native
-trait SlicerItemLoadOptions extends js.Object {
+trait SlicerItemLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -62,48 +63,36 @@ object SlicerItemLoadOptions {
   }
   
   @scala.inline
-  implicit class SlicerItemLoadOptionsOps[Self <: SlicerItemLoadOptions] (val x: Self) extends AnyVal {
+  implicit class SlicerItemLoadOptionsMutableBuilder[Self <: SlicerItemLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasData(value: Boolean): Self = StObject.set(x, "hasData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setHasDataUndefined: Self = StObject.set(x, "hasData", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasData(value: Boolean): Self = this.set("hasData", value.asInstanceOf[js.Any])
+    def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
     
     @scala.inline
-    def deleteHasData: Self = this.set("hasData", js.undefined)
+    def setKey(value: Boolean): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSelected(value: Boolean): Self = this.set("isSelected", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteIsSelected: Self = this.set("isSelected", js.undefined)
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Boolean): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

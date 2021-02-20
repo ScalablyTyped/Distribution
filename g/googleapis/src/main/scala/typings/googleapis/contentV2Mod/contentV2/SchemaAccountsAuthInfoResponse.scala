@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaAccountsAuthInfoResponse extends js.Object {
+trait SchemaAccountsAuthInfoResponse extends StObject {
   
   /**
     * The account identifiers corresponding to the authenticated user. - For an
@@ -30,33 +31,21 @@ object SchemaAccountsAuthInfoResponse {
   }
   
   @scala.inline
-  implicit class SchemaAccountsAuthInfoResponseOps[Self <: SchemaAccountsAuthInfoResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountsAuthInfoResponseMutableBuilder[Self <: SchemaAccountsAuthInfoResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountIdentifiers(value: js.Array[SchemaAccountIdentifier]): Self = StObject.set(x, "accountIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdentifiersUndefined: Self = StObject.set(x, "accountIdentifiers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountIdentifiersVarargs(value: SchemaAccountIdentifier*): Self = StObject.set(x, "accountIdentifiers", js.Array(value :_*))
     
     @scala.inline
-    def setAccountIdentifiersVarargs(value: SchemaAccountIdentifier*): Self = this.set("accountIdentifiers", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIdentifiers(value: js.Array[SchemaAccountIdentifier]): Self = this.set("accountIdentifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountIdentifiers: Self = this.set("accountIdentifiers", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

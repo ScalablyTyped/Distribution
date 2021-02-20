@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddressCandidateProperties extends js.Object {
+trait AddressCandidateProperties extends StObject {
   
   /**
     * Address of the candidate.
@@ -51,48 +52,36 @@ object AddressCandidateProperties {
   }
   
   @scala.inline
-  implicit class AddressCandidatePropertiesOps[Self <: AddressCandidateProperties] (val x: Self) extends AnyVal {
+  implicit class AddressCandidatePropertiesMutableBuilder[Self <: AddressCandidateProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Any): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setLocation(value: PointProperties): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtent(value: ExtentProperties): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: PointProperties): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

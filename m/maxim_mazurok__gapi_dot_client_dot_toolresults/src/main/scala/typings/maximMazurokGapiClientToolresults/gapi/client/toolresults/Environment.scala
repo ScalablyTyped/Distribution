@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Environment extends js.Object {
+trait Environment extends StObject {
   
   /** Output only. The time when the Environment status was set to complete. This value will be set automatically when state transitions to COMPLETE. */
   var completionTime: js.UndefOr[Timestamp] = js.native
@@ -52,90 +53,78 @@ object Environment {
   }
   
   @scala.inline
-  implicit class EnvironmentOps[Self <: Environment] (val x: Self) extends AnyVal {
+  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletionTime(value: Timestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionTime(value: Timestamp): Self = this.set("completionTime", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteCompletionTime: Self = this.set("completionTime", js.undefined)
+    def setDimensionValue(value: js.Array[EnvironmentDimensionValueEntry]): Self = StObject.set(x, "dimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setDimensionValueUndefined: Self = StObject.set(x, "dimensionValue", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setDimensionValueVarargs(value: EnvironmentDimensionValueEntry*): Self = StObject.set(x, "dimensionValue", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionValueVarargs(value: EnvironmentDimensionValueEntry*): Self = this.set("dimensionValue", js.Array(value :_*))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionValue(value: js.Array[EnvironmentDimensionValueEntry]): Self = this.set("dimensionValue", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDimensionValue: Self = this.set("dimensionValue", js.undefined)
+    def setEnvironmentId(value: String): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEnvironmentResult(value: MergedResult): Self = StObject.set(x, "environmentResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentId(value: String): Self = this.set("environmentId", value.asInstanceOf[js.Any])
+    def setEnvironmentResultUndefined: Self = StObject.set(x, "environmentResult", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentId: Self = this.set("environmentId", js.undefined)
+    def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentResult(value: MergedResult): Self = this.set("environmentResult", value.asInstanceOf[js.Any])
+    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentResult: Self = this.set("environmentResult", js.undefined)
+    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionId(value: String): Self = this.set("executionId", value.asInstanceOf[js.Any])
+    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
     @scala.inline
-    def deleteExecutionId: Self = this.set("executionId", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryId(value: String): Self = this.set("historyId", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteHistoryId: Self = this.set("historyId", js.undefined)
+    def setResultsStorage(value: ResultsStorage): Self = StObject.set(x, "resultsStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setResultsStorageUndefined: Self = StObject.set(x, "resultsStorage", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setShardSummaries(value: js.Array[ShardSummary]): Self = StObject.set(x, "shardSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultsStorage(value: ResultsStorage): Self = this.set("resultsStorage", value.asInstanceOf[js.Any])
+    def setShardSummariesUndefined: Self = StObject.set(x, "shardSummaries", js.undefined)
     
     @scala.inline
-    def deleteResultsStorage: Self = this.set("resultsStorage", js.undefined)
-    
-    @scala.inline
-    def setShardSummariesVarargs(value: ShardSummary*): Self = this.set("shardSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setShardSummaries(value: js.Array[ShardSummary]): Self = this.set("shardSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShardSummaries: Self = this.set("shardSummaries", js.undefined)
+    def setShardSummariesVarargs(value: ShardSummary*): Self = StObject.set(x, "shardSummaries", js.Array(value :_*))
   }
 }

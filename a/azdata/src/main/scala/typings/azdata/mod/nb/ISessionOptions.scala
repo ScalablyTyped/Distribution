@@ -1,11 +1,12 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISessionOptions extends js.Object {
+trait ISessionOptions extends StObject {
   
   /**
     * The id of an existing kernel.
@@ -41,45 +42,33 @@ object ISessionOptions {
   }
   
   @scala.inline
-  implicit class ISessionOptionsOps[Self <: ISessionOptions] (val x: Self) extends AnyVal {
+  implicit class ISessionOptionsMutableBuilder[Self <: ISessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKernelId(value: String): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKernelIdUndefined: Self = StObject.set(x, "kernelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKernelName(value: String): Self = StObject.set(x, "kernelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setKernelNameUndefined: Self = StObject.set(x, "kernelName", js.undefined)
     
     @scala.inline
-    def setKernelId(value: String): Self = this.set("kernelId", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKernelId: Self = this.set("kernelId", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setKernelName(value: String): Self = this.set("kernelName", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKernelName: Self = this.set("kernelName", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

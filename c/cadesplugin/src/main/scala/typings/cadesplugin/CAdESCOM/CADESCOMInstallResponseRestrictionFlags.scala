@@ -5,12 +5,13 @@ import typings.cadesplugin.cadespluginNumbers.`0x10000000`
 import typings.cadesplugin.cadespluginNumbers.`1`
 import typings.cadesplugin.cadespluginNumbers.`2`
 import typings.cadesplugin.cadespluginNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CADESCOMInstallResponseRestrictionFlags extends js.Object {
+trait CADESCOMInstallResponseRestrictionFlags extends StObject {
   
   val CADESCOM_AllowNoOutstandingRequest: `1` = js.native
   
@@ -37,33 +38,21 @@ object CADESCOMInstallResponseRestrictionFlags {
   }
   
   @scala.inline
-  implicit class CADESCOMInstallResponseRestrictionFlagsOps[Self <: CADESCOMInstallResponseRestrictionFlags] (val x: Self) extends AnyVal {
+  implicit class CADESCOMInstallResponseRestrictionFlagsMutableBuilder[Self <: CADESCOMInstallResponseRestrictionFlags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCADESCOM_AllowNoOutstandingRequest(value: `1`): Self = StObject.set(x, "CADESCOM_AllowNoOutstandingRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCADESCOM_AllowNone(value: `0`): Self = StObject.set(x, "CADESCOM_AllowNone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCADESCOM_AllowUntrustedCertificate(value: `2`): Self = StObject.set(x, "CADESCOM_AllowUntrustedCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCADESCOM_AllowNoOutstandingRequest(value: `1`): Self = this.set("CADESCOM_AllowNoOutstandingRequest", value.asInstanceOf[js.Any])
+    def setCADESCOM_AllowUntrustedRoot(value: `4`): Self = StObject.set(x, "CADESCOM_AllowUntrustedRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCADESCOM_AllowNone(value: `0`): Self = this.set("CADESCOM_AllowNone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCADESCOM_AllowUntrustedCertificate(value: `2`): Self = this.set("CADESCOM_AllowUntrustedCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCADESCOM_AllowUntrustedRoot(value: `4`): Self = this.set("CADESCOM_AllowUntrustedRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCADESCOM_SkipInstallToStore(value: `0x10000000`): Self = this.set("CADESCOM_SkipInstallToStore", value.asInstanceOf[js.Any])
+    def setCADESCOM_SkipInstallToStore(value: `0x10000000`): Self = StObject.set(x, "CADESCOM_SkipInstallToStore", value.asInstanceOf[js.Any])
   }
 }

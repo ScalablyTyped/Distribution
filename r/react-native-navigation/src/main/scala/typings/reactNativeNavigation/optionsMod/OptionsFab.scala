@@ -4,12 +4,13 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.left
 import typings.reactNativeNavigation.reactNativeNavigationStrings.mini
 import typings.reactNativeNavigation.reactNativeNavigationStrings.regular
 import typings.reactNativeNavigation.reactNativeNavigationStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionsFab extends js.Object {
+trait OptionsFab extends StObject {
   
   var alignHorizontally: js.UndefOr[left | right] = js.native
   
@@ -40,75 +41,63 @@ object OptionsFab {
   }
   
   @scala.inline
-  implicit class OptionsFabOps[Self <: OptionsFab] (val x: Self) extends AnyVal {
+  implicit class OptionsFabMutableBuilder[Self <: OptionsFab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignHorizontally(value: left | right): Self = StObject.set(x, "alignHorizontally", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignHorizontallyUndefined: Self = StObject.set(x, "alignHorizontally", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def setAlignHorizontally(value: left | right): Self = this.set("alignHorizontally", value.asInstanceOf[js.Any])
+    def setClickColor(value: Color): Self = StObject.set(x, "clickColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignHorizontally: Self = this.set("alignHorizontally", js.undefined)
+    def setClickColorUndefined: Self = StObject.set(x, "clickColor", js.undefined)
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setHideOnScroll(value: Boolean): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
     
     @scala.inline
-    def setClickColor(value: Color): Self = this.set("clickColor", value.asInstanceOf[js.Any])
+    def setIcon(value: ImageResource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickColor: Self = this.set("clickColor", js.undefined)
+    def setIconColor(value: Color): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideOnScroll(value: Boolean): Self = this.set("hideOnScroll", value.asInstanceOf[js.Any])
+    def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
     
     @scala.inline
-    def deleteHideOnScroll: Self = this.set("hideOnScroll", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setIcon(value: ImageResource): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setRippleColor(value: Color): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconColor(value: Color): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
     
     @scala.inline
-    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    def setSize(value: mini | regular): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRippleColor(value: Color): Self = this.set("rippleColor", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteRippleColor: Self = this.set("rippleColor", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: mini | regular): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

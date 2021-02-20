@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email conversation. */
 @js.native
-trait EmailConversation extends js.Object {
+trait EmailConversation extends StObject {
   
   /**
     * Asynchronously gets a batch of messages in the conversation.

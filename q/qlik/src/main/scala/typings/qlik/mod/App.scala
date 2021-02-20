@@ -7,12 +7,13 @@ import typings.qlik.qlikStrings.`0`
 import typings.qlik.qlikStrings.`1`
 import typings.qlik.qlikStrings.`2`
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends js.Object {
+trait App extends StObject {
   
   def addAlternateState(qStateName: String): js.Promise[_] = js.native
   
@@ -28,7 +29,7 @@ trait App extends js.Object {
   def createCube(qHyperCubeDef: HyperCubeDef): js.Promise[_] = js.native
   def createCube(qHyperCubeDef: HyperCubeDef, callback: js.Function1[/* hypercube */ HyperCube, Unit]): js.Promise[_] = js.native
   
-   // TODO: Returns Promise<object Model>
+  // TODO: Returns Promise<object Model>
   // TODO: createGenericobject
   // TODO: createList(qListobjectDef: ListobjectDef, callback?: (hypercube: TODO) => void): Promise<any>;
   // TODO: createTable(dimensions: Array<string | NxDimension>, measures: Array<string | NxMeasure>, options?: object): QTable;

@@ -1,11 +1,12 @@
 package typings.jpm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentType extends js.Object {
+trait DocumentType extends StObject {
   
   var documentType: String = js.native
   
@@ -34,60 +35,48 @@ object DocumentType {
   }
   
   @scala.inline
-  implicit class DocumentTypeOps[Self <: DocumentType] (val x: Self) extends AnyVal {
+  implicit class DocumentTypeMutableBuilder[Self <: DocumentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentType(value: String): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentType(value: String): Self = this.set("documentType", value.asInstanceOf[js.Any])
+    def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentURL(value: String): Self = this.set("documentURL", value.asInstanceOf[js.Any])
+    def setLinkURLUndefined: Self = StObject.set(x, "linkURL", js.undefined)
     
     @scala.inline
-    def setIsEditable(value: Boolean): Self = this.set("isEditable", value.asInstanceOf[js.Any])
+    def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetName(value: String): Self = this.set("targetName", value.asInstanceOf[js.Any])
+    def setSelectionTextUndefined: Self = StObject.set(x, "selectionText", js.undefined)
     
     @scala.inline
-    def setLinkURL(value: String): Self = this.set("linkURL", value.asInstanceOf[js.Any])
+    def setSrcURL(value: String): Self = StObject.set(x, "srcURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinkURL: Self = this.set("linkURL", js.undefined)
+    def setSrcURLUndefined: Self = StObject.set(x, "srcURL", js.undefined)
     
     @scala.inline
-    def setSelectionText(value: String): Self = this.set("selectionText", value.asInstanceOf[js.Any])
+    def setTargetID(value: String): Self = StObject.set(x, "targetID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectionText: Self = this.set("selectionText", js.undefined)
+    def setTargetIDUndefined: Self = StObject.set(x, "targetID", js.undefined)
     
     @scala.inline
-    def setSrcURL(value: String): Self = this.set("srcURL", value.asInstanceOf[js.Any])
+    def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSrcURL: Self = this.set("srcURL", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetID(value: String): Self = this.set("targetID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetID: Self = this.set("targetID", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

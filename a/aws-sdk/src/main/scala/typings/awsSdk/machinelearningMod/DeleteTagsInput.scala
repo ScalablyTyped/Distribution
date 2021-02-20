@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteTagsInput extends js.Object {
+trait DeleteTagsInput extends StObject {
   
   /**
     * The ID of the tagged ML object. For example, exampleModelId.
@@ -31,30 +32,18 @@ object DeleteTagsInput {
   }
   
   @scala.inline
-  implicit class DeleteTagsInputOps[Self <: DeleteTagsInput] (val x: Self) extends AnyVal {
+  implicit class DeleteTagsInputMutableBuilder[Self <: DeleteTagsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceId(value: EntityId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceType(value: TaggableResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: EntityId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceType(value: TaggableResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagKeysVarargs(value: TagKey*): Self = this.set("TagKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagKeys(value: TagKeyList): Self = this.set("TagKeys", value.asInstanceOf[js.Any])
+    def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,172 +30,220 @@ class Validation protected ()
   
   def validateField(e: js.Any, t: js.Any): js.Any = js.native
 }
-@JSImport("rc-easyui", "Validation")
-@js.native
-object Validation extends js.Object {
+object Validation {
   
-  @js.native
-  object childContextTypes extends js.Object {
+  object childContextTypes {
     
-    @js.native
-    object fieldAdd extends js.Object {
+    object fieldAdd {
       
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldAdd")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.childContextTypes.fieldAdd
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldAdd.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldBlur extends js.Object {
+    object fieldBlur {
       
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldBlur")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.childContextTypes.fieldBlur
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldBlur.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldChange extends js.Object {
+    object fieldChange {
       
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldChange")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.childContextTypes.fieldChange
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldChange.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldFocus extends js.Object {
+    object fieldFocus {
       
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldFocus")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.childContextTypes.fieldFocus
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldFocus.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldName extends js.Object {
+    object fieldName {
       
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldName")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.childContextTypes.fieldName
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldName.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldRemove extends js.Object {
+    object fieldRemove {
       
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldRemove")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.childContextTypes.fieldRemove
+      @JSImport("rc-easyui", "Validation.childContextTypes.fieldRemove.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "Validation.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.contextTypes.locale
+      @JSImport("rc-easyui", "Validation.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "Validation.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.contextTypes.t
+      @JSImport("rc-easyui", "Validation.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "Validation.defaultProps.delay")
+    @js.native
     val delay: Double = js.native
     
+    @JSImport("rc-easyui", "Validation.defaultProps.onChange")
+    @js.native
     def onChange(e: js.Any, t: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Validation.defaultProps.onValidate")
+    @js.native
     def onValidate(e: js.Any): Unit = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object className extends js.Object {
+    object className {
       
+      @JSImport("rc-easyui", "Validation.propTypes.className")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.propTypes.className
+      @JSImport("rc-easyui", "Validation.propTypes.className.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object delay extends js.Object {
+    object delay {
       
+      @JSImport("rc-easyui", "Validation.propTypes.delay")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.propTypes.delay
+      @JSImport("rc-easyui", "Validation.propTypes.delay.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object model extends js.Object {
+    object model {
       
+      @JSImport("rc-easyui", "Validation.propTypes.model")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.propTypes.model
+      @JSImport("rc-easyui", "Validation.propTypes.model.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onChange extends js.Object {
+    object onChange {
       
+      @JSImport("rc-easyui", "Validation.propTypes.onChange")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.propTypes.onChange
+      @JSImport("rc-easyui", "Validation.propTypes.onChange.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onValidate extends js.Object {
+    object onValidate {
       
+      @JSImport("rc-easyui", "Validation.propTypes.onValidate")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.propTypes.onValidate
+      @JSImport("rc-easyui", "Validation.propTypes.onValidate.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object rules extends js.Object {
+    object rules {
       
+      @JSImport("rc-easyui", "Validation.propTypes.rules")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.propTypes.rules
+      @JSImport("rc-easyui", "Validation.propTypes.rules.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object style extends js.Object {
+    object style {
       
+      @JSImport("rc-easyui", "Validation.propTypes.style")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.propTypes.style
+      @JSImport("rc-easyui", "Validation.propTypes.style.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object validateRules extends js.Object {
+    object validateRules {
       
+      @JSImport("rc-easyui", "Validation.propTypes.validateRules")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Validation.propTypes.validateRules
+      @JSImport("rc-easyui", "Validation.propTypes.validateRules.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

@@ -2,9 +2,10 @@ package typings.googleGax.mod.fallback.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "fallback.protobuf.Root")
 @js.native
@@ -16,18 +17,19 @@ class Root ()
   extends typings.googleGax.fallbackMod.protobuf.Root {
   def this(options: StringDictionary[js.Any]) = this()
 }
-
 /* static members */
-@JSImport("google-gax", "fallback.protobuf.Root")
-@js.native
-object Root extends js.Object {
+object Root {
+  
   /**
     * Loads a namespace descriptor into a root namespace.
     * @param json Nameespace descriptor
     * @param [root] Root namespace, defaults to create a new one if omitted
     * @returns Root namespace
     */
+  @JSImport("google-gax", "fallback.protobuf.Root.fromJSON")
+  @js.native
   def fromJSON(json: INamespace): typings.protobufjs.mod.Root = js.native
+  @JSImport("google-gax", "fallback.protobuf.Root.fromJSON")
+  @js.native
   def fromJSON(json: INamespace, root: typings.protobufjs.mod.Root): typings.protobufjs.mod.Root = js.native
 }
-

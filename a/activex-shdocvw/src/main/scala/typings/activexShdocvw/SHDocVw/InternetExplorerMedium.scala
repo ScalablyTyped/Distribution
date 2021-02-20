@@ -1,12 +1,13 @@
 package typings.activexShdocvw.SHDocVw
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Internet Explorer Application with default integrity of Medium */
 @js.native
-trait InternetExplorerMedium extends js.Object {
+trait InternetExplorerMedium extends StObject {
   
   /** Controls whether address bar is shown */
   var AddressBar: Boolean = js.native

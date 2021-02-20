@@ -4,6 +4,7 @@ import typings.vexflow.Vex.IFont
 import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Cache
 import typings.vexflow.anon.Outline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +16,15 @@ class Glyph protected ()
   def this(code: String, point: Double) = this()
   def this(code: String, point: Double, options: Cache) = this()
 }
-/* static members */
-@JSGlobal("Vex.Flow.Glyph")
-@js.native
-object Glyph extends js.Object {
+object Glyph {
   
+  /* static member */
+  @JSGlobal("Vex.Flow.Glyph.loadMetrics")
+  @js.native
   def loadMetrics(font: IFont, code: String, cache: Boolean): Outline = js.native
   
+  /* static member */
+  @JSGlobal("Vex.Flow.Glyph.renderOutline")
+  @js.native
   def renderOutline(ctx: IRenderContext, outline: js.Array[Double], scale: Double, x_pos: Double, y_pos: Double): Unit = js.native
 }

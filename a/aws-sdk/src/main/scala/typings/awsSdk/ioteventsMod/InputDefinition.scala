@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputDefinition extends js.Object {
+trait InputDefinition extends StObject {
   
   /**
     * The attributes from the JSON payload that are made available by the input. Inputs are derived from messages sent to the AWS IoT Events system using BatchPutMessage. Each such message contains a JSON payload, and those attributes (and their paired values) specified here are available for use in the condition expressions used by detectors that monitor this input. 
@@ -21,24 +22,12 @@ object InputDefinition {
   }
   
   @scala.inline
-  implicit class InputDefinitionOps[Self <: InputDefinition] (val x: Self) extends AnyVal {
+  implicit class InputDefinitionMutableBuilder[Self <: InputDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = this.set("attributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
   }
 }

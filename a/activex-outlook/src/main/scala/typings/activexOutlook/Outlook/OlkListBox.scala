@@ -3,12 +3,13 @@ package typings.activexOutlook.Outlook
 import typings.activexStdole.stdole.OLE_COLOR
 import typings.activexStdole.stdole.StdFont
 import typings.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlkListBox extends js.Object {
+trait OlkListBox extends StObject {
   
   def AddItem(ItemText: String): Unit = js.native
   def AddItem(ItemText: String, Index: js.Any): Unit = js.native

@@ -9,12 +9,13 @@ import typings.aceBuilds.aceBuildsStrings.markbeginend
 import typings.aceBuilds.aceBuildsStrings.off
 import typings.aceBuilds.aceBuildsStrings.printmargin_
 import typings.aceBuilds.aceBuildsStrings.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditSessionOptions extends js.Object {
+trait EditSessionOptions extends StObject {
   
   var firstLineNumber: Double = js.native
   
@@ -62,54 +63,42 @@ object EditSessionOptions {
   }
   
   @scala.inline
-  implicit class EditSessionOptionsOps[Self <: EditSessionOptions] (val x: Self) extends AnyVal {
+  implicit class EditSessionOptionsMutableBuilder[Self <: EditSessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstLineNumber(value: Double): Self = StObject.set(x, "firstLineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFoldStyle(value: markbegin | markbeginend | manual): Self = StObject.set(x, "foldStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndentedSoftWrap(value: Boolean): Self = StObject.set(x, "indentedSoftWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLineNumber(value: Double): Self = this.set("firstLineNumber", value.asInstanceOf[js.Any])
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoldStyle(value: markbegin | markbeginend | manual): Self = this.set("foldStyle", value.asInstanceOf[js.Any])
+    def setNavigateWithinSoftTabs(value: Boolean): Self = StObject.set(x, "navigateWithinSoftTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentedSoftWrap(value: Boolean): Self = this.set("indentedSoftWrap", value.asInstanceOf[js.Any])
+    def setNewLineMode(value: NewLineMode): Self = StObject.set(x, "newLineMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigateWithinSoftTabs(value: Boolean): Self = this.set("navigateWithinSoftTabs", value.asInstanceOf[js.Any])
+    def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLineMode(value: NewLineMode): Self = this.set("newLineMode", value.asInstanceOf[js.Any])
+    def setUseSoftTabs(value: Boolean): Self = StObject.set(x, "useSoftTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
+    def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabSize(value: Double): Self = this.set("tabSize", value.asInstanceOf[js.Any])
+    def setWrap(value: off | free | printmargin_ | Boolean | Double): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseSoftTabs(value: Boolean): Self = this.set("useSoftTabs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseWorker(value: Boolean): Self = this.set("useWorker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrap(value: off | free | printmargin_ | Boolean | Double): Self = this.set("wrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapMethod(value: code | text | auto): Self = this.set("wrapMethod", value.asInstanceOf[js.Any])
+    def setWrapMethod(value: code | text | auto): Self = StObject.set(x, "wrapMethod", value.asInstanceOf[js.Any])
   }
 }

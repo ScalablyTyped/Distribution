@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpeechRecognitionResultStatus extends js.Object
+sealed trait SpeechRecognitionResultStatus extends StObject
 /** Specifies the possible result states of a speech recognition session or from the compiling of grammar constraints. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus")
 @js.native
-object SpeechRecognitionResultStatus extends js.Object {
+object SpeechRecognitionResultStatus extends StObject {
   
   /** Audio problems caused recognition to fail. */
   @js.native

@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.TSMethodSignature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,54 +37,42 @@ object TSMethodSignature_ {
   }
   
   @scala.inline
-  implicit class TSMethodSignature_Ops[Self <: TSMethodSignature_] (val x: Self) extends AnyVal {
+  implicit class TSMethodSignature_MutableBuilder[Self <: TSMethodSignature_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputedNull: Self = StObject.set(x, "computed", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Expression): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = this.set("parameters", js.Array(value :_*))
+    def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     @scala.inline
-    def setParameters(value: js.Array[Identifier_ | RestElement_]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Array[Identifier_ | RestElement_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TSMethodSignature): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setParametersVarargs(value: (Identifier_ | RestElement_)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setComputed(value: Boolean): Self = this.set("computed", value.asInstanceOf[js.Any])
+    def setType(value: TSMethodSignature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputedNull: Self = this.set("computed", null)
+    def setTypeAnnotation(value: TSTypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     
     @scala.inline
-    def setOptionalNull: Self = this.set("optional", null)
+    def setTypeParameters(value: TSTypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeAnnotation(value: TSTypeAnnotation_): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeAnnotationNull: Self = this.set("typeAnnotation", null)
-    
-    @scala.inline
-    def setTypeParameters(value: TSTypeParameterDeclaration_): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeParametersNull: Self = this.set("typeParameters", null)
+    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
   }
 }

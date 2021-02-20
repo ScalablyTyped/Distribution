@@ -7,14 +7,14 @@ import typings.plottable.interactionsMod.Drag
 import typings.plottable.interfacesMod.Point
 import typings.plottable.scaleMod.TransformableScale
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/interactions/panZoomInteraction", JSImport.Namespace)
-@js.native
-object panZoomInteractionMod extends js.Object {
+object panZoomInteractionMod {
   
+  @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom")
   @js.native
   /**
     * A PanZoom Interaction updates the domains of an x-scale and/or a y-scale
@@ -354,16 +354,27 @@ object panZoomInteractionMod extends js.Object {
     def zoom(zoomAmount: Double, centerValue: Point, constrained: Boolean): CenterValue = js.native
   }
   /* static members */
-  @js.native
-  object PanZoom extends js.Object {
+  object PanZoom {
+    
+    @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The number of pixels occupied in a line.
       */
-    var _PIXELS_PER_LINE: js.Any = js.native
+    @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom._PIXELS_PER_LINE")
+    @js.native
+    def _PIXELS_PER_LINE: js.Any = js.native
+    @scala.inline
+    def _PIXELS_PER_LINE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PIXELS_PER_LINE")(x.asInstanceOf[js.Any])
     
-    /* private */ def _pointDistance(point1: js.Any, point2: js.Any): js.Any = js.native
+    @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom._pointDistance")
+    @js.native
+    def _pointDistance(point1: js.Any, point2: js.Any): js.Any = js.native
     
+    @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom.centerPoint")
+    @js.native
     def centerPoint(point1: Point, point2: Point): X = js.native
   }
   

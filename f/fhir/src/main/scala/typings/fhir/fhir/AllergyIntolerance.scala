@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -160,195 +161,183 @@ object AllergyIntolerance {
   }
   
   @scala.inline
-  implicit class AllergyIntoleranceOps[Self <: AllergyIntolerance] (val x: Self) extends AnyVal {
+  implicit class AllergyIntoleranceMutableBuilder[Self <: AllergyIntolerance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssertedDate(value: dateTime): Self = StObject.set(x, "assertedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssertedDateUndefined: Self = StObject.set(x, "assertedDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsserter(value: Reference): Self = StObject.set(x, "asserter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setAsserterUndefined: Self = StObject.set(x, "asserter", js.undefined)
     
     @scala.inline
-    def setVerificationStatus(value: code): Self = this.set("verificationStatus", value.asInstanceOf[js.Any])
+    def setCategory(value: js.Array[code]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_assertedDate(value: Element): Self = this.set("_assertedDate", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def delete_assertedDate: Self = this.set("_assertedDate", js.undefined)
+    def setCategoryVarargs(value: code*): Self = StObject.set(x, "category", js.Array(value :_*))
     
     @scala.inline
-    def set_categoryVarargs(value: Element*): Self = this.set("_category", js.Array(value :_*))
+    def setClinicalStatus(value: code): Self = StObject.set(x, "clinicalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_category(value: js.Array[Element]): Self = this.set("_category", value.asInstanceOf[js.Any])
+    def setClinicalStatusUndefined: Self = StObject.set(x, "clinicalStatus", js.undefined)
     
     @scala.inline
-    def delete_category: Self = this.set("_category", js.undefined)
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_clinicalStatus(value: Element): Self = this.set("_clinicalStatus", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def delete_clinicalStatus: Self = this.set("_clinicalStatus", js.undefined)
+    def setCriticality(value: code): Self = StObject.set(x, "criticality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_criticality(value: Element): Self = this.set("_criticality", value.asInstanceOf[js.Any])
+    def setCriticalityUndefined: Self = StObject.set(x, "criticality", js.undefined)
     
     @scala.inline
-    def delete_criticality: Self = this.set("_criticality", js.undefined)
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lastOccurrence(value: Element): Self = this.set("_lastOccurrence", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def delete_lastOccurrence: Self = this.set("_lastOccurrence", js.undefined)
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def set_onsetDateTime(value: Element): Self = this.set("_onsetDateTime", value.asInstanceOf[js.Any])
+    def setLastOccurrence(value: dateTime): Self = StObject.set(x, "lastOccurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_onsetDateTime: Self = this.set("_onsetDateTime", js.undefined)
+    def setLastOccurrenceUndefined: Self = StObject.set(x, "lastOccurrence", js.undefined)
     
     @scala.inline
-    def set_onsetString(value: Element): Self = this.set("_onsetString", value.asInstanceOf[js.Any])
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_onsetString: Self = this.set("_onsetString", js.undefined)
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setOnsetAge(value: Age): Self = StObject.set(x, "onsetAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_verificationStatus(value: Element): Self = this.set("_verificationStatus", value.asInstanceOf[js.Any])
+    def setOnsetAgeUndefined: Self = StObject.set(x, "onsetAge", js.undefined)
     
     @scala.inline
-    def delete_verificationStatus: Self = this.set("_verificationStatus", js.undefined)
+    def setOnsetDateTime(value: dateTime): Self = StObject.set(x, "onsetDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssertedDate(value: dateTime): Self = this.set("assertedDate", value.asInstanceOf[js.Any])
+    def setOnsetDateTimeUndefined: Self = StObject.set(x, "onsetDateTime", js.undefined)
     
     @scala.inline
-    def deleteAssertedDate: Self = this.set("assertedDate", js.undefined)
+    def setOnsetPeriod(value: Period): Self = StObject.set(x, "onsetPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsserter(value: Reference): Self = this.set("asserter", value.asInstanceOf[js.Any])
+    def setOnsetPeriodUndefined: Self = StObject.set(x, "onsetPeriod", js.undefined)
     
     @scala.inline
-    def deleteAsserter: Self = this.set("asserter", js.undefined)
+    def setOnsetRange(value: Range): Self = StObject.set(x, "onsetRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryVarargs(value: code*): Self = this.set("category", js.Array(value :_*))
+    def setOnsetRangeUndefined: Self = StObject.set(x, "onsetRange", js.undefined)
     
     @scala.inline
-    def setCategory(value: js.Array[code]): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setOnsetString(value: String): Self = StObject.set(x, "onsetString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setOnsetStringUndefined: Self = StObject.set(x, "onsetString", js.undefined)
     
     @scala.inline
-    def setClinicalStatus(value: code): Self = this.set("clinicalStatus", value.asInstanceOf[js.Any])
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClinicalStatus: Self = this.set("clinicalStatus", js.undefined)
+    def setReaction(value: js.Array[AllergyIntoleranceReaction]): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setReactionUndefined: Self = StObject.set(x, "reaction", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setReactionVarargs(value: AllergyIntoleranceReaction*): Self = StObject.set(x, "reaction", js.Array(value :_*))
     
     @scala.inline
-    def setCriticality(value: code): Self = this.set("criticality", value.asInstanceOf[js.Any])
+    def setRecorder(value: Reference): Self = StObject.set(x, "recorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCriticality: Self = this.set("criticality", js.undefined)
+    def setRecorderUndefined: Self = StObject.set(x, "recorder", js.undefined)
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setVerificationStatus(value: code): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastOccurrence(value: dateTime): Self = this.set("lastOccurrence", value.asInstanceOf[js.Any])
+    def set_assertedDate(value: Element): Self = StObject.set(x, "_assertedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastOccurrence: Self = this.set("lastOccurrence", js.undefined)
+    def set_assertedDateUndefined: Self = StObject.set(x, "_assertedDate", js.undefined)
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def set_category(value: js.Array[Element]): Self = StObject.set(x, "_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def set_categoryUndefined: Self = StObject.set(x, "_category", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def set_categoryVarargs(value: Element*): Self = StObject.set(x, "_category", js.Array(value :_*))
     
     @scala.inline
-    def setOnsetAge(value: Age): Self = this.set("onsetAge", value.asInstanceOf[js.Any])
+    def set_clinicalStatus(value: Element): Self = StObject.set(x, "_clinicalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnsetAge: Self = this.set("onsetAge", js.undefined)
+    def set_clinicalStatusUndefined: Self = StObject.set(x, "_clinicalStatus", js.undefined)
     
     @scala.inline
-    def setOnsetDateTime(value: dateTime): Self = this.set("onsetDateTime", value.asInstanceOf[js.Any])
+    def set_criticality(value: Element): Self = StObject.set(x, "_criticality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnsetDateTime: Self = this.set("onsetDateTime", js.undefined)
+    def set_criticalityUndefined: Self = StObject.set(x, "_criticality", js.undefined)
     
     @scala.inline
-    def setOnsetPeriod(value: Period): Self = this.set("onsetPeriod", value.asInstanceOf[js.Any])
+    def set_lastOccurrence(value: Element): Self = StObject.set(x, "_lastOccurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnsetPeriod: Self = this.set("onsetPeriod", js.undefined)
+    def set_lastOccurrenceUndefined: Self = StObject.set(x, "_lastOccurrence", js.undefined)
     
     @scala.inline
-    def setOnsetRange(value: Range): Self = this.set("onsetRange", value.asInstanceOf[js.Any])
+    def set_onsetDateTime(value: Element): Self = StObject.set(x, "_onsetDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnsetRange: Self = this.set("onsetRange", js.undefined)
+    def set_onsetDateTimeUndefined: Self = StObject.set(x, "_onsetDateTime", js.undefined)
     
     @scala.inline
-    def setOnsetString(value: String): Self = this.set("onsetString", value.asInstanceOf[js.Any])
+    def set_onsetString(value: Element): Self = StObject.set(x, "_onsetString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnsetString: Self = this.set("onsetString", js.undefined)
+    def set_onsetStringUndefined: Self = StObject.set(x, "_onsetString", js.undefined)
     
     @scala.inline
-    def setReactionVarargs(value: AllergyIntoleranceReaction*): Self = this.set("reaction", js.Array(value :_*))
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReaction(value: js.Array[AllergyIntoleranceReaction]): Self = this.set("reaction", value.asInstanceOf[js.Any])
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
     @scala.inline
-    def deleteReaction: Self = this.set("reaction", js.undefined)
+    def set_verificationStatus(value: Element): Self = StObject.set(x, "_verificationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecorder(value: Reference): Self = this.set("recorder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecorder: Self = this.set("recorder", js.undefined)
-    
-    @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_verificationStatusUndefined: Self = StObject.set(x, "_verificationStatus", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLCSSMediaList extends js.Object {
+trait HTMLCSSMediaList extends StObject {
   
   @JSName("MSHTML.HTMLCSSMediaList_typekey")
   var MSHTMLDotHTMLCSSMediaList_typekey: HTMLCSSMediaList = js.native
@@ -37,36 +38,24 @@ object HTMLCSSMediaList {
   }
   
   @scala.inline
-  implicit class HTMLCSSMediaListOps[Self <: HTMLCSSMediaList] (val x: Self) extends AnyVal {
+  implicit class HTMLCSSMediaListMutableBuilder[Self <: HTMLCSSMediaList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendMedium(value: String => Unit): Self = StObject.set(x, "appendMedium", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteMedium(value: String => Unit): Self = StObject.set(x, "deleteMedium", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem(value: Double => String): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMSHTMLDotHTMLCSSMediaList_typekey(value: HTMLCSSMediaList): Self = this.set("MSHTML.HTMLCSSMediaList_typekey", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendMedium(value: String => Unit): Self = this.set("appendMedium", js.Any.fromFunction1(value))
+    def setMSHTMLDotHTMLCSSMediaList_typekey(value: HTMLCSSMediaList): Self = StObject.set(x, "MSHTML.HTMLCSSMediaList_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteMedium(value: String => Unit): Self = this.set("deleteMedium", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setItem(value: Double => String): Self = this.set("item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaText(value: String): Self = this.set("mediaText", value.asInstanceOf[js.Any])
+    def setMediaText(value: String): Self = StObject.set(x, "mediaText", value.asInstanceOf[js.Any])
   }
 }

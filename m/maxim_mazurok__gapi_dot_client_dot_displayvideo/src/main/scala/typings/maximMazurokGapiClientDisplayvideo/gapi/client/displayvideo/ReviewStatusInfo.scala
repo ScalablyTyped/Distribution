@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReviewStatusInfo extends js.Object {
+trait ReviewStatusInfo extends StObject {
   
   /** Represents the basic approval needed for a creative to begin serving. Summary of creative_and_landing_page_review_status and content_and_policy_review_status. */
   var approvalStatus: js.UndefOr[String] = js.native
@@ -31,54 +32,42 @@ object ReviewStatusInfo {
   }
   
   @scala.inline
-  implicit class ReviewStatusInfoOps[Self <: ReviewStatusInfo] (val x: Self) extends AnyVal {
+  implicit class ReviewStatusInfoMutableBuilder[Self <: ReviewStatusInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalStatus(value: String): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalStatusUndefined: Self = StObject.set(x, "approvalStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentAndPolicyReviewStatus(value: String): Self = StObject.set(x, "contentAndPolicyReviewStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalStatus(value: String): Self = this.set("approvalStatus", value.asInstanceOf[js.Any])
+    def setContentAndPolicyReviewStatusUndefined: Self = StObject.set(x, "contentAndPolicyReviewStatus", js.undefined)
     
     @scala.inline
-    def deleteApprovalStatus: Self = this.set("approvalStatus", js.undefined)
+    def setCreativeAndLandingPageReviewStatus(value: String): Self = StObject.set(x, "creativeAndLandingPageReviewStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentAndPolicyReviewStatus(value: String): Self = this.set("contentAndPolicyReviewStatus", value.asInstanceOf[js.Any])
+    def setCreativeAndLandingPageReviewStatusUndefined: Self = StObject.set(x, "creativeAndLandingPageReviewStatus", js.undefined)
     
     @scala.inline
-    def deleteContentAndPolicyReviewStatus: Self = this.set("contentAndPolicyReviewStatus", js.undefined)
+    def setExchangeReviewStatuses(value: js.Array[ExchangeReviewStatus]): Self = StObject.set(x, "exchangeReviewStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeAndLandingPageReviewStatus(value: String): Self = this.set("creativeAndLandingPageReviewStatus", value.asInstanceOf[js.Any])
+    def setExchangeReviewStatusesUndefined: Self = StObject.set(x, "exchangeReviewStatuses", js.undefined)
     
     @scala.inline
-    def deleteCreativeAndLandingPageReviewStatus: Self = this.set("creativeAndLandingPageReviewStatus", js.undefined)
+    def setExchangeReviewStatusesVarargs(value: ExchangeReviewStatus*): Self = StObject.set(x, "exchangeReviewStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setExchangeReviewStatusesVarargs(value: ExchangeReviewStatus*): Self = this.set("exchangeReviewStatuses", js.Array(value :_*))
+    def setPublisherReviewStatuses(value: js.Array[PublisherReviewStatus]): Self = StObject.set(x, "publisherReviewStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExchangeReviewStatuses(value: js.Array[ExchangeReviewStatus]): Self = this.set("exchangeReviewStatuses", value.asInstanceOf[js.Any])
+    def setPublisherReviewStatusesUndefined: Self = StObject.set(x, "publisherReviewStatuses", js.undefined)
     
     @scala.inline
-    def deleteExchangeReviewStatuses: Self = this.set("exchangeReviewStatuses", js.undefined)
-    
-    @scala.inline
-    def setPublisherReviewStatusesVarargs(value: PublisherReviewStatus*): Self = this.set("publisherReviewStatuses", js.Array(value :_*))
-    
-    @scala.inline
-    def setPublisherReviewStatuses(value: js.Array[PublisherReviewStatus]): Self = this.set("publisherReviewStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublisherReviewStatuses: Self = this.set("publisherReviewStatuses", js.undefined)
+    def setPublisherReviewStatusesVarargs(value: PublisherReviewStatus*): Self = StObject.set(x, "publisherReviewStatuses", js.Array(value :_*))
   }
 }

@@ -4,13 +4,14 @@ import typings.rbx.rbxStrings.bottom
 import typings.rbx.rbxStrings.left
 import typings.rbx.rbxStrings.right
 import typings.rbx.rbxStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'} */
 @js.native
-trait Kinmobiletabletdesktopwid extends js.Object {
+trait Kinmobiletabletdesktopwid extends StObject {
   
   var desktop: js.UndefOr[top | right | bottom | left] = js.native
   
@@ -33,54 +34,42 @@ object Kinmobiletabletdesktopwid {
   }
   
   @scala.inline
-  implicit class KinmobiletabletdesktopwidOps[Self <: Kinmobiletabletdesktopwid] (val x: Self) extends AnyVal {
+  implicit class KinmobiletabletdesktopwidMutableBuilder[Self <: Kinmobiletabletdesktopwid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesktop(value: top | right | bottom | left): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullhd(value: top | right | bottom | left): Self = StObject.set(x, "fullhd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesktop(value: top | right | bottom | left): Self = this.set("desktop", value.asInstanceOf[js.Any])
+    def setFullhdUndefined: Self = StObject.set(x, "fullhd", js.undefined)
     
     @scala.inline
-    def deleteDesktop: Self = this.set("desktop", js.undefined)
+    def setMobile(value: top | right | bottom | left): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullhd(value: top | right | bottom | left): Self = this.set("fullhd", value.asInstanceOf[js.Any])
+    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
     
     @scala.inline
-    def deleteFullhd: Self = this.set("fullhd", js.undefined)
+    def setTablet(value: top | right | bottom | left): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobile(value: top | right | bottom | left): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
     
     @scala.inline
-    def deleteMobile: Self = this.set("mobile", js.undefined)
+    def setTouch(value: top | right | bottom | left): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTablet(value: top | right | bottom | left): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
     
     @scala.inline
-    def deleteTablet: Self = this.set("tablet", js.undefined)
+    def setWidescreen(value: top | right | bottom | left): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouch(value: top | right | bottom | left): Self = this.set("touch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouch: Self = this.set("touch", js.undefined)
-    
-    @scala.inline
-    def setWidescreen(value: top | right | bottom | left): Self = this.set("widescreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidescreen: Self = this.set("widescreen", js.undefined)
+    def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
   }
 }

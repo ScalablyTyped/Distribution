@@ -15,12 +15,13 @@ import typings.mmdbLib.mmdbLibStrings.router
 import typings.mmdbLib.mmdbLibStrings.school
 import typings.mmdbLib.mmdbLibStrings.search_engine_spider
 import typings.mmdbLib.mmdbLibStrings.traveler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TraitsRecord extends js.Object {
+trait TraitsRecord extends StObject {
   
   val autonomous_system_number: js.UndefOr[Double] = js.native
   
@@ -65,116 +66,104 @@ object TraitsRecord {
   }
   
   @scala.inline
-  implicit class TraitsRecordOps[Self <: TraitsRecord] (val x: Self) extends AnyVal {
+  implicit class TraitsRecordMutableBuilder[Self <: TraitsRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutonomous_system_number(value: Double): Self = StObject.set(x, "autonomous_system_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutonomous_system_numberUndefined: Self = StObject.set(x, "autonomous_system_number", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutonomous_system_organization(value: String): Self = StObject.set(x, "autonomous_system_organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutonomous_system_number(value: Double): Self = this.set("autonomous_system_number", value.asInstanceOf[js.Any])
+    def setAutonomous_system_organizationUndefined: Self = StObject.set(x, "autonomous_system_organization", js.undefined)
     
     @scala.inline
-    def deleteAutonomous_system_number: Self = this.set("autonomous_system_number", js.undefined)
+    def setConnection_type(value: String): Self = StObject.set(x, "connection_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutonomous_system_organization(value: String): Self = this.set("autonomous_system_organization", value.asInstanceOf[js.Any])
+    def setConnection_typeUndefined: Self = StObject.set(x, "connection_type", js.undefined)
     
     @scala.inline
-    def deleteAutonomous_system_organization: Self = this.set("autonomous_system_organization", js.undefined)
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection_type(value: String): Self = this.set("connection_type", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteConnection_type: Self = this.set("connection_type", js.undefined)
+    def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setIp_addressUndefined: Self = StObject.set(x, "ip_address", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setIs_anonymous(value: Boolean): Self = StObject.set(x, "is_anonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp_address(value: String): Self = this.set("ip_address", value.asInstanceOf[js.Any])
+    def setIs_anonymousUndefined: Self = StObject.set(x, "is_anonymous", js.undefined)
     
     @scala.inline
-    def deleteIp_address: Self = this.set("ip_address", js.undefined)
+    def setIs_anonymous_proxy(value: Boolean): Self = StObject.set(x, "is_anonymous_proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_anonymous(value: Boolean): Self = this.set("is_anonymous", value.asInstanceOf[js.Any])
+    def setIs_anonymous_proxyUndefined: Self = StObject.set(x, "is_anonymous_proxy", js.undefined)
     
     @scala.inline
-    def deleteIs_anonymous: Self = this.set("is_anonymous", js.undefined)
+    def setIs_anonymous_vpn(value: Boolean): Self = StObject.set(x, "is_anonymous_vpn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_anonymous_proxy(value: Boolean): Self = this.set("is_anonymous_proxy", value.asInstanceOf[js.Any])
+    def setIs_anonymous_vpnUndefined: Self = StObject.set(x, "is_anonymous_vpn", js.undefined)
     
     @scala.inline
-    def deleteIs_anonymous_proxy: Self = this.set("is_anonymous_proxy", js.undefined)
+    def setIs_hosting_provider(value: Boolean): Self = StObject.set(x, "is_hosting_provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_anonymous_vpn(value: Boolean): Self = this.set("is_anonymous_vpn", value.asInstanceOf[js.Any])
+    def setIs_hosting_providerUndefined: Self = StObject.set(x, "is_hosting_provider", js.undefined)
     
     @scala.inline
-    def deleteIs_anonymous_vpn: Self = this.set("is_anonymous_vpn", js.undefined)
+    def setIs_legitimate_proxy(value: Boolean): Self = StObject.set(x, "is_legitimate_proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_hosting_provider(value: Boolean): Self = this.set("is_hosting_provider", value.asInstanceOf[js.Any])
+    def setIs_legitimate_proxyUndefined: Self = StObject.set(x, "is_legitimate_proxy", js.undefined)
     
     @scala.inline
-    def deleteIs_hosting_provider: Self = this.set("is_hosting_provider", js.undefined)
+    def setIs_public_proxy(value: Boolean): Self = StObject.set(x, "is_public_proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_legitimate_proxy(value: Boolean): Self = this.set("is_legitimate_proxy", value.asInstanceOf[js.Any])
+    def setIs_public_proxyUndefined: Self = StObject.set(x, "is_public_proxy", js.undefined)
     
     @scala.inline
-    def deleteIs_legitimate_proxy: Self = this.set("is_legitimate_proxy", js.undefined)
+    def setIs_satellite_provider(value: Boolean): Self = StObject.set(x, "is_satellite_provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_public_proxy(value: Boolean): Self = this.set("is_public_proxy", value.asInstanceOf[js.Any])
+    def setIs_satellite_providerUndefined: Self = StObject.set(x, "is_satellite_provider", js.undefined)
     
     @scala.inline
-    def deleteIs_public_proxy: Self = this.set("is_public_proxy", js.undefined)
+    def setIs_tor_exit_node(value: Boolean): Self = StObject.set(x, "is_tor_exit_node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_satellite_provider(value: Boolean): Self = this.set("is_satellite_provider", value.asInstanceOf[js.Any])
+    def setIs_tor_exit_nodeUndefined: Self = StObject.set(x, "is_tor_exit_node", js.undefined)
     
     @scala.inline
-    def deleteIs_satellite_provider: Self = this.set("is_satellite_provider", js.undefined)
+    def setIsp(value: String): Self = StObject.set(x, "isp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_tor_exit_node(value: Boolean): Self = this.set("is_tor_exit_node", value.asInstanceOf[js.Any])
+    def setIspUndefined: Self = StObject.set(x, "isp", js.undefined)
     
     @scala.inline
-    def deleteIs_tor_exit_node: Self = this.set("is_tor_exit_node", js.undefined)
+    def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsp(value: String): Self = this.set("isp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsp: Self = this.set("isp", js.undefined)
-    
-    @scala.inline
-    def setOrganization(value: String): Self = this.set("organization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganization: Self = this.set("organization", js.undefined)
+    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
     @scala.inline
     def setUser_type(
       value: business | cafe | cellular | college | content_delivery_network | dialup | government | hosting | library | military | residential | router | school | search_engine_spider | traveler
-    ): Self = this.set("user_type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "user_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUser_type: Self = this.set("user_type", js.undefined)
+    def setUser_typeUndefined: Self = StObject.set(x, "user_type", js.undefined)
   }
 }

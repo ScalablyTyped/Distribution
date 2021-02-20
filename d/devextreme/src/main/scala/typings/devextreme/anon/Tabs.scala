@@ -4,12 +4,13 @@ import typings.devextreme.devextremeStrings.auto
 import typings.devextreme.devextremeStrings.collapsed
 import typings.devextreme.devextremeStrings.disabled
 import typings.devextreme.devextremeStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tabs extends js.Object {
+trait Tabs extends StObject {
   
   var tabs: js.UndefOr[js.Array[Groups]] = js.native
   
@@ -24,33 +25,21 @@ object Tabs {
   }
   
   @scala.inline
-  implicit class TabsOps[Self <: Tabs] (val x: Self) extends AnyVal {
+  implicit class TabsMutableBuilder[Self <: Tabs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTabs(value: js.Array[Groups]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTabsVarargs(value: Groups*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     
     @scala.inline
-    def setTabsVarargs(value: Groups*): Self = this.set("tabs", js.Array(value :_*))
+    def setVisibility(value: auto | visible | collapsed | disabled): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabs(value: js.Array[Groups]): Self = this.set("tabs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabs: Self = this.set("tabs", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: auto | visible | collapsed | disabled): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

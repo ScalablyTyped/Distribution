@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientServicemanagement.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsumersResource extends js.Object {
+trait ConsumersResource extends StObject {
   
   /** Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. */
   def getIamPolicy(request: PrettyPrint, body: GetIamPolicyRequest): Request[Policy] = js.native
@@ -34,27 +35,15 @@ object ConsumersResource {
   }
   
   @scala.inline
-  implicit class ConsumersResourceOps[Self <: ConsumersResource] (val x: Self) extends AnyVal {
+  implicit class ConsumersResourceMutableBuilder[Self <: ConsumersResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetIamPolicy(value: (PrettyPrint, GetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "getIamPolicy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetIamPolicy(value: (PrettyPrint, SetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "setIamPolicy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetIamPolicy(value: (PrettyPrint, GetIamPolicyRequest) => Request[Policy]): Self = this.set("getIamPolicy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetIamPolicy(value: (PrettyPrint, SetIamPolicyRequest) => Request[Policy]): Self = this.set("setIamPolicy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTestIamPermissions(value: (PrettyPrint, TestIamPermissionsRequest) => Request[TestIamPermissionsResponse]): Self = this.set("testIamPermissions", js.Any.fromFunction2(value))
+    def setTestIamPermissions(value: (PrettyPrint, TestIamPermissionsRequest) => Request[TestIamPermissionsResponse]): Self = StObject.set(x, "testIamPermissions", js.Any.fromFunction2(value))
   }
 }

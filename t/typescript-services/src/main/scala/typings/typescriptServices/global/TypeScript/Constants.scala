@@ -1,12 +1,13 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Constants")
 @js.native
-object Constants extends js.Object {
+object Constants extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.Constants with Double] = js.native

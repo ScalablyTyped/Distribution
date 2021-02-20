@@ -6,12 +6,13 @@ import typings.oracleOraclejet.ojtableMod.ojTable.HeaderRendererContext
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.disabled
 import typings.oracleOraclejet.oracleOraclejetStrings.enabled
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Field[K, D] extends js.Object {
+trait Field[K, D] extends StObject {
   
   var className: js.UndefOr[String | Null] = js.native
   
@@ -60,174 +61,162 @@ object Field {
   }
   
   @scala.inline
-  implicit class FieldOps[Self <: Field[_, _], K, D] (val x: Self with (Field[K, D])) extends AnyVal {
+  implicit class FieldMutableBuilder[Self <: Field[_, _], K, D] (val x: Self with (Field[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameNull: Self = StObject.set(x, "className", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setFieldNull: Self = StObject.set(x, "field", null)
     
     @scala.inline
-    def setClassNameNull: Self = this.set("className", null)
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setFooterClassName(value: String): Self = StObject.set(x, "footerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setFooterClassNameNull: Self = StObject.set(x, "footerClassName", null)
     
     @scala.inline
-    def setFieldNull: Self = this.set("field", null)
+    def setFooterClassNameUndefined: Self = StObject.set(x, "footerClassName", js.undefined)
     
     @scala.inline
-    def setFooterClassName(value: String): Self = this.set("footerClassName", value.asInstanceOf[js.Any])
+    def setFooterRenderer(value: /* context */ FooterRendererContext[K, D] => `1` | Unit): Self = StObject.set(x, "footerRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFooterClassName: Self = this.set("footerClassName", js.undefined)
+    def setFooterRendererNull: Self = StObject.set(x, "footerRenderer", null)
     
     @scala.inline
-    def setFooterClassNameNull: Self = this.set("footerClassName", null)
+    def setFooterRendererUndefined: Self = StObject.set(x, "footerRenderer", js.undefined)
     
     @scala.inline
-    def setFooterRenderer(value: /* context */ FooterRendererContext[K, D] => `1` | Unit): Self = this.set("footerRenderer", js.Any.fromFunction1(value))
+    def setFooterStyle(value: String): Self = StObject.set(x, "footerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFooterRenderer: Self = this.set("footerRenderer", js.undefined)
+    def setFooterStyleNull: Self = StObject.set(x, "footerStyle", null)
     
     @scala.inline
-    def setFooterRendererNull: Self = this.set("footerRenderer", null)
+    def setFooterStyleUndefined: Self = StObject.set(x, "footerStyle", js.undefined)
     
     @scala.inline
-    def setFooterStyle(value: String): Self = this.set("footerStyle", value.asInstanceOf[js.Any])
+    def setFooterTemplate(value: ComponentElementElement): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFooterStyle: Self = this.set("footerStyle", js.undefined)
+    def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
     
     @scala.inline
-    def setFooterStyleNull: Self = this.set("footerStyle", null)
+    def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterTemplate(value: ComponentElementElement): Self = this.set("footerTemplate", value.asInstanceOf[js.Any])
+    def setHeaderClassNameNull: Self = StObject.set(x, "headerClassName", null)
     
     @scala.inline
-    def deleteFooterTemplate: Self = this.set("footerTemplate", js.undefined)
+    def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
     
     @scala.inline
-    def setHeaderClassName(value: String): Self = this.set("headerClassName", value.asInstanceOf[js.Any])
+    def setHeaderRenderer(value: /* context */ HeaderRendererContext[K, D] => `1` | Unit): Self = StObject.set(x, "headerRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHeaderClassName: Self = this.set("headerClassName", js.undefined)
+    def setHeaderRendererNull: Self = StObject.set(x, "headerRenderer", null)
     
     @scala.inline
-    def setHeaderClassNameNull: Self = this.set("headerClassName", null)
+    def setHeaderRendererUndefined: Self = StObject.set(x, "headerRenderer", js.undefined)
     
     @scala.inline
-    def setHeaderRenderer(value: /* context */ HeaderRendererContext[K, D] => `1` | Unit): Self = this.set("headerRenderer", js.Any.fromFunction1(value))
+    def setHeaderStyle(value: String): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderRenderer: Self = this.set("headerRenderer", js.undefined)
+    def setHeaderStyleNull: Self = StObject.set(x, "headerStyle", null)
     
     @scala.inline
-    def setHeaderRendererNull: Self = this.set("headerRenderer", null)
+    def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
     @scala.inline
-    def setHeaderStyle(value: String): Self = this.set("headerStyle", value.asInstanceOf[js.Any])
+    def setHeaderTemplate(value: ComponentElementData): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderStyle: Self = this.set("headerStyle", js.undefined)
+    def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
     
     @scala.inline
-    def setHeaderStyleNull: Self = this.set("headerStyle", null)
+    def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTemplate(value: ComponentElementData): Self = this.set("headerTemplate", value.asInstanceOf[js.Any])
+    def setHeaderTextNull: Self = StObject.set(x, "headerText", null)
     
     @scala.inline
-    def deleteHeaderTemplate: Self = this.set("headerTemplate", js.undefined)
+    def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
     
     @scala.inline
-    def setHeaderText(value: String): Self = this.set("headerText", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderText: Self = this.set("headerText", js.undefined)
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setHeaderTextNull: Self = this.set("headerText", null)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRenderer(value: /* context */ ColumnsRendererContext[K, D] => `1` | Unit): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRendererNull: Self = StObject.set(x, "renderer", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def setRenderer(value: /* context */ ColumnsRendererContext[K, D] => `1` | Unit): Self = this.set("renderer", js.Any.fromFunction1(value))
+    def setResizable(value: enabled | disabled): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
     @scala.inline
-    def setRendererNull: Self = this.set("renderer", null)
+    def setSortProperty(value: String): Self = StObject.set(x, "sortProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizable(value: enabled | disabled): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    def setSortPropertyNull: Self = StObject.set(x, "sortProperty", null)
     
     @scala.inline
-    def deleteResizable: Self = this.set("resizable", js.undefined)
+    def setSortPropertyUndefined: Self = StObject.set(x, "sortProperty", js.undefined)
     
     @scala.inline
-    def setSortProperty(value: String): Self = this.set("sortProperty", value.asInstanceOf[js.Any])
+    def setSortable(value: auto | enabled | disabled): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortProperty: Self = this.set("sortProperty", js.undefined)
+    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
     @scala.inline
-    def setSortPropertyNull: Self = this.set("sortProperty", null)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortable(value: auto | enabled | disabled): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteSortable: Self = this.set("sortable", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTemplate(value: Mode): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: Mode): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setWidthNull: Self = StObject.set(x, "width", null)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWidthNull: Self = this.set("width", null)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

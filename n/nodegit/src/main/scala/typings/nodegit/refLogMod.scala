@@ -3,16 +3,16 @@ package typings.nodegit
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/ref-log", JSImport.Namespace)
-@js.native
-object refLogMod extends js.Object {
+object refLogMod {
   
+  @JSImport("nodegit/ref-log", "Reflog")
   @js.native
-  class Reflog () extends js.Object {
+  class Reflog () extends StObject {
     
     def append(id: Oid, committer: Signature, msg: String): Double = js.native
     
@@ -27,18 +27,24 @@ object refLogMod extends js.Object {
     def write(): Double = js.native
   }
   /* static members */
-  @js.native
-  object Reflog extends js.Object {
+  object Reflog {
     
+    @JSImport("nodegit/ref-log", "Reflog.delete")
+    @js.native
     def delete(repo: Repository, name: String): Double = js.native
     
+    @JSImport("nodegit/ref-log", "Reflog.read")
+    @js.native
     def read(repo: Repository, name: String): js.Promise[Reflog] = js.native
     
+    @JSImport("nodegit/ref-log", "Reflog.rename")
+    @js.native
     def rename(repo: Repository, oldName: String, name: String): Double = js.native
   }
   
+  @JSImport("nodegit/ref-log", "ReflogEntry")
   @js.native
-  class ReflogEntry () extends js.Object {
+  class ReflogEntry () extends StObject {
     
     def committer(): Signature = js.native
     

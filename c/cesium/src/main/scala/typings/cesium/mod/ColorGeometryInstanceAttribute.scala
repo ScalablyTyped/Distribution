@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ColorGeometryInstanceAttribute")
 @js.native
-class ColorGeometryInstanceAttribute () extends js.Object {
+class ColorGeometryInstanceAttribute () extends StObject {
   def this(red: Double) = this()
   def this(red: js.UndefOr[scala.Nothing], green: Double) = this()
   def this(red: Double, green: Double) = this()
@@ -37,13 +38,18 @@ class ColorGeometryInstanceAttribute () extends js.Object {
   
   var value: Uint8Array = js.native
 }
-/* static members */
-@JSImport("cesium", "ColorGeometryInstanceAttribute")
-@js.native
-object ColorGeometryInstanceAttribute extends js.Object {
+object ColorGeometryInstanceAttribute {
   
+  /* static member */
+  @JSImport("cesium", "ColorGeometryInstanceAttribute.fromColor")
+  @js.native
   def fromColor(color: Color): ColorGeometryInstanceAttribute = js.native
   
+  /* static member */
+  @JSImport("cesium", "ColorGeometryInstanceAttribute.toValue")
+  @js.native
   def toValue(color: Color): Uint8Array = js.native
+  @JSImport("cesium", "ColorGeometryInstanceAttribute.toValue")
+  @js.native
   def toValue(color: Color, result: Uint8Array): Uint8Array = js.native
 }

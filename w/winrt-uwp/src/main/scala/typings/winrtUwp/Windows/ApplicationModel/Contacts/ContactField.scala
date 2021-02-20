@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a piece of contact data. */
 @js.native
-trait ContactField extends js.Object {
+trait ContactField extends StObject {
   
   /** Gets the category for the contact data. */
   var category: ContactFieldCategory = js.native
@@ -30,30 +31,18 @@ object ContactField {
   }
   
   @scala.inline
-  implicit class ContactFieldOps[Self <: ContactField] (val x: Self) extends AnyVal {
+  implicit class ContactFieldMutableBuilder[Self <: ContactField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: ContactFieldCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: ContactFieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: ContactFieldCategory): Self = this.set("category", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ContactFieldType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

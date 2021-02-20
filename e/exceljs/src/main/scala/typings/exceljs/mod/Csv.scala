@@ -4,12 +4,13 @@ import typings.exceljs.anon.PartialCsvReadOptions
 import typings.exceljs.anon.PartialCsvWriteOptions
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Csv extends js.Object {
+trait Csv extends StObject {
   
   /**
   	 * Create input stream for reading

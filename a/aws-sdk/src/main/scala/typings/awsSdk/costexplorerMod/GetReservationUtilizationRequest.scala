@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetReservationUtilizationRequest extends js.Object {
+trait GetReservationUtilizationRequest extends StObject {
   
   /**
     * Filters utilization data by dimensions. You can filter by the following dimensions:   AZ   CACHE_ENGINE   DEPLOYMENT_OPTION   INSTANCE_TYPE   LINKED_ACCOUNT   OPERATING_SYSTEM   PLATFORM   REGION   SERVICE   SCOPE   TENANCY    GetReservationUtilization uses the same Expression object as the other operations, but only AND is supported among each dimension, and nesting is supported up to only one level deep. If there are multiple values for a dimension, they are OR'd together.
@@ -41,48 +42,36 @@ object GetReservationUtilizationRequest {
   }
   
   @scala.inline
-  implicit class GetReservationUtilizationRequestOps[Self <: GetReservationUtilizationRequest] (val x: Self) extends AnyVal {
+  implicit class GetReservationUtilizationRequestMutableBuilder[Self <: GetReservationUtilizationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGranularity(value: Granularity): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
     
     @scala.inline
-    def setFilter(value: Expression): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setGroupBy(value: GroupDefinitions): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setGroupByUndefined: Self = StObject.set(x, "GroupBy", js.undefined)
     
     @scala.inline
-    def setGranularity(value: Granularity): Self = this.set("Granularity", value.asInstanceOf[js.Any])
+    def setGroupByVarargs(value: GroupDefinition*): Self = StObject.set(x, "GroupBy", js.Array(value :_*))
     
     @scala.inline
-    def deleteGranularity: Self = this.set("Granularity", js.undefined)
+    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByVarargs(value: GroupDefinition*): Self = this.set("GroupBy", js.Array(value :_*))
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def setGroupBy(value: GroupDefinitions): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupBy: Self = this.set("GroupBy", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }
 }

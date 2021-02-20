@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object ChannelGroupClientEntry {
   }
   
   @scala.inline
-  implicit class ChannelGroupClientEntryOps[Self <: ChannelGroupClientEntry] (val x: Self) extends AnyVal {
+  implicit class ChannelGroupClientEntryMutableBuilder[Self <: ChannelGroupClientEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCgidUndefined: Self = StObject.set(x, "cgid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCgid(value: String): Self = this.set("cgid", value.asInstanceOf[js.Any])
+    def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
     
     @scala.inline
-    def deleteCgid: Self = this.set("cgid", js.undefined)
+    def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCid(value: String): Self = this.set("cid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCid: Self = this.set("cid", js.undefined)
-    
-    @scala.inline
-    def setCldbid(value: String): Self = this.set("cldbid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCldbid: Self = this.set("cldbid", js.undefined)
+    def setCldbidUndefined: Self = StObject.set(x, "cldbid", js.undefined)
   }
 }

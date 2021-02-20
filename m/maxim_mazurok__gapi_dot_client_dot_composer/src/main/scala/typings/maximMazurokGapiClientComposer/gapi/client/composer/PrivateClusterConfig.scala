@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientComposer.gapi.client.composer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrivateClusterConfig extends js.Object {
+trait PrivateClusterConfig extends StObject {
   
   /** Optional. If `true`, access to the public endpoint of the GKE cluster is denied. */
   var enablePrivateEndpoint: js.UndefOr[Boolean] = js.native
@@ -28,36 +29,24 @@ object PrivateClusterConfig {
   }
   
   @scala.inline
-  implicit class PrivateClusterConfigOps[Self <: PrivateClusterConfig] (val x: Self) extends AnyVal {
+  implicit class PrivateClusterConfigMutableBuilder[Self <: PrivateClusterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnablePrivateEndpoint(value: Boolean): Self = StObject.set(x, "enablePrivateEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnablePrivateEndpointUndefined: Self = StObject.set(x, "enablePrivateEndpoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMasterIpv4CidrBlock(value: String): Self = StObject.set(x, "masterIpv4CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePrivateEndpoint(value: Boolean): Self = this.set("enablePrivateEndpoint", value.asInstanceOf[js.Any])
+    def setMasterIpv4CidrBlockUndefined: Self = StObject.set(x, "masterIpv4CidrBlock", js.undefined)
     
     @scala.inline
-    def deleteEnablePrivateEndpoint: Self = this.set("enablePrivateEndpoint", js.undefined)
+    def setMasterIpv4ReservedRange(value: String): Self = StObject.set(x, "masterIpv4ReservedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterIpv4CidrBlock(value: String): Self = this.set("masterIpv4CidrBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterIpv4CidrBlock: Self = this.set("masterIpv4CidrBlock", js.undefined)
-    
-    @scala.inline
-    def setMasterIpv4ReservedRange(value: String): Self = this.set("masterIpv4ReservedRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterIpv4ReservedRange: Self = this.set("masterIpv4ReservedRange", js.undefined)
+    def setMasterIpv4ReservedRangeUndefined: Self = StObject.set(x, "masterIpv4ReservedRange", js.undefined)
   }
 }

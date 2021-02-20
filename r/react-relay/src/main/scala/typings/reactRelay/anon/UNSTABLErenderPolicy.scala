@@ -1,12 +1,13 @@
 package typings.reactRelay.anon
 
 import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UNSTABLErenderPolicy extends js.Object {
+trait UNSTABLErenderPolicy extends StObject {
   
   var UNSTABLE_renderPolicy: js.UndefOr[RenderPolicy] = js.native
 }
@@ -19,24 +20,12 @@ object UNSTABLErenderPolicy {
   }
   
   @scala.inline
-  implicit class UNSTABLErenderPolicyOps[Self <: UNSTABLErenderPolicy] (val x: Self) extends AnyVal {
+  implicit class UNSTABLErenderPolicyMutableBuilder[Self <: UNSTABLErenderPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUNSTABLE_renderPolicy(value: RenderPolicy): Self = StObject.set(x, "UNSTABLE_renderPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUNSTABLE_renderPolicy(value: RenderPolicy): Self = this.set("UNSTABLE_renderPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUNSTABLE_renderPolicy: Self = this.set("UNSTABLE_renderPolicy", js.undefined)
+    def setUNSTABLE_renderPolicyUndefined: Self = StObject.set(x, "UNSTABLE_renderPolicy", js.undefined)
   }
 }

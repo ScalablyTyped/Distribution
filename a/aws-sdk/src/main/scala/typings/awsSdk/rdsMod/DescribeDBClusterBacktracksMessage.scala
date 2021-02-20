@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDBClusterBacktracksMessage extends js.Object {
+trait DescribeDBClusterBacktracksMessage extends StObject {
   
   /**
     * If specified, this value is the backtrack identifier of the backtrack to be described. Constraints:   Must contain a valid universally unique identifier (UUID). For more information about UUIDs, see A Universally Unique Identifier (UUID) URN Namespace.   Example: 123e4567-e89b-12d3-a456-426655440000 
@@ -41,48 +42,36 @@ object DescribeDBClusterBacktracksMessage {
   }
   
   @scala.inline
-  implicit class DescribeDBClusterBacktracksMessageOps[Self <: DescribeDBClusterBacktracksMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeDBClusterBacktracksMessageMutableBuilder[Self <: DescribeDBClusterBacktracksMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBacktrackIdentifier(value: String): Self = StObject.set(x, "BacktrackIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBacktrackIdentifierUndefined: Self = StObject.set(x, "BacktrackIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBacktrackIdentifier(value: String): Self = this.set("BacktrackIdentifier", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteBacktrackIdentifier: Self = this.set("BacktrackIdentifier", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,49 +50,37 @@ object IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionH
   }
   
   @scala.inline
-  implicit class IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieOps[Self <: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie] (val x: Self) extends AnyVal {
+  implicit class IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieMutableBuilder[Self <: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayFolder(value: String): Self = StObject.set(x, "displayFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
-    
-    @scala.inline
-    def setDisplayFolder(value: String): Self = this.set("displayFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayFolder: Self = this.set("displayFolder", js.undefined)
-    
-    @scala.inline
-    def setLevelsVarargs(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel*): Self = this.set("levels", js.Array(value :_*))
+    def setDisplayFolderUndefined: Self = StObject.set(x, "displayFolder", js.undefined)
     
     @scala.inline
     def setLevels(
       value: js.Array[
           IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
         ]
-    ): Self = this.set("levels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevels: Self = this.set("levels", js.undefined)
+    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLevelsVarargs(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

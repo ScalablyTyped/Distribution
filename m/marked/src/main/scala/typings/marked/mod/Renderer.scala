@@ -7,13 +7,14 @@ import typings.marked.markedNumbers.`3`
 import typings.marked.markedNumbers.`4`
 import typings.marked.markedNumbers.`5`
 import typings.marked.markedNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "Renderer")
 @js.native
-class Renderer () extends js.Object {
+class Renderer () extends StObject {
   def this(options: MarkedOptions) = this()
   
   def blockquote(quote: String): String = js.native

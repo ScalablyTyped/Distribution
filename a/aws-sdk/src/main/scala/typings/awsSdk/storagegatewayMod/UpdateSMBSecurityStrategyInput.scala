@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateSMBSecurityStrategyInput extends js.Object {
+trait UpdateSMBSecurityStrategyInput extends StObject {
   
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
   
@@ -23,24 +24,12 @@ object UpdateSMBSecurityStrategyInput {
   }
   
   @scala.inline
-  implicit class UpdateSMBSecurityStrategyInputOps[Self <: UpdateSMBSecurityStrategyInput] (val x: Self) extends AnyVal {
+  implicit class UpdateSMBSecurityStrategyInputMutableBuilder[Self <: UpdateSMBSecurityStrategyInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = this.set("SMBSecurityStrategy", value.asInstanceOf[js.Any])
+    def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = StObject.set(x, "SMBSecurityStrategy", value.asInstanceOf[js.Any])
   }
 }

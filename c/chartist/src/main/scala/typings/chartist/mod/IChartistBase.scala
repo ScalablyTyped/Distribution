@@ -1,11 +1,12 @@
 package typings.chartist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IChartistBase[T /* <: IChartOptions */] extends js.Object {
+trait IChartistBase[T /* <: IChartOptions */] extends StObject {
   
   var container: js.Any = js.native
   
@@ -49,7 +50,7 @@ trait IChartistBase[T /* <: IChartOptions */] extends js.Object {
   
   var supportsForeignObject: Boolean = js.native
   
-   // all of these plugins seem to be functions with options, but keeping type any for now
+  // all of these plugins seem to be functions with options, but keeping type any for now
   def update(data: js.Object): Unit = js.native
   def update(data: js.Object, options: T): Unit = js.native
   def update(data: js.Object, options: T, `override`: Boolean): Unit = js.native

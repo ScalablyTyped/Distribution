@@ -5,12 +5,13 @@ import typings.reactNative.reactNativeStrings.localNotification
 import typings.reactNative.reactNativeStrings.notification
 import typings.reactNative.reactNativeStrings.register
 import typings.reactNative.reactNativeStrings.registrationError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushNotificationIOSStatic extends js.Object {
+trait PushNotificationIOSStatic extends StObject {
   
   /**
     * iOS fetch results that best describe the result of a finished remote notification handler.

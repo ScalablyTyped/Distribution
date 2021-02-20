@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeDeliveryDetailsType extends js.Object {
+trait CodeDeliveryDetailsType extends StObject {
   
   /**
     * The attribute name.
@@ -31,36 +32,24 @@ object CodeDeliveryDetailsType {
   }
   
   @scala.inline
-  implicit class CodeDeliveryDetailsTypeOps[Self <: CodeDeliveryDetailsType] (val x: Self) extends AnyVal {
+  implicit class CodeDeliveryDetailsTypeMutableBuilder[Self <: CodeDeliveryDetailsType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeliveryMedium(value: DeliveryMediumType): Self = StObject.set(x, "DeliveryMedium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: AttributeNameType): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    def setDeliveryMediumUndefined: Self = StObject.set(x, "DeliveryMedium", js.undefined)
     
     @scala.inline
-    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
+    def setDestination(value: StringType): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryMedium(value: DeliveryMediumType): Self = this.set("DeliveryMedium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeliveryMedium: Self = this.set("DeliveryMedium", js.undefined)
-    
-    @scala.inline
-    def setDestination(value: StringType): Self = this.set("Destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestination: Self = this.set("Destination", js.undefined)
+    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
   }
 }

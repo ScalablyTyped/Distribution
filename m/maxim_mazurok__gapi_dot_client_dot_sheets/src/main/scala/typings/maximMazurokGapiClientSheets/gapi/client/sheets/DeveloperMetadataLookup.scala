@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeveloperMetadataLookup extends js.Object {
+trait DeveloperMetadataLookup extends StObject {
   
   /**
     * Determines how this lookup matches the location. If this field is specified as EXACT, only developer metadata associated on the exact location specified is matched. If this field is
@@ -52,60 +53,48 @@ object DeveloperMetadataLookup {
   }
   
   @scala.inline
-  implicit class DeveloperMetadataLookupOps[Self <: DeveloperMetadataLookup] (val x: Self) extends AnyVal {
+  implicit class DeveloperMetadataLookupMutableBuilder[Self <: DeveloperMetadataLookup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocationMatchingStrategy(value: String): Self = StObject.set(x, "locationMatchingStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationMatchingStrategyUndefined: Self = StObject.set(x, "locationMatchingStrategy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationMatchingStrategy(value: String): Self = this.set("locationMatchingStrategy", value.asInstanceOf[js.Any])
+    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
     @scala.inline
-    def deleteLocationMatchingStrategy: Self = this.set("locationMatchingStrategy", js.undefined)
+    def setMetadataId(value: Double): Self = StObject.set(x, "metadataId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    def setMetadataIdUndefined: Self = StObject.set(x, "metadataId", js.undefined)
     
     @scala.inline
-    def deleteLocationType: Self = this.set("locationType", js.undefined)
+    def setMetadataKey(value: String): Self = StObject.set(x, "metadataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataId(value: Double): Self = this.set("metadataId", value.asInstanceOf[js.Any])
+    def setMetadataKeyUndefined: Self = StObject.set(x, "metadataKey", js.undefined)
     
     @scala.inline
-    def deleteMetadataId: Self = this.set("metadataId", js.undefined)
+    def setMetadataLocation(value: DeveloperMetadataLocation): Self = StObject.set(x, "metadataLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataKey(value: String): Self = this.set("metadataKey", value.asInstanceOf[js.Any])
+    def setMetadataLocationUndefined: Self = StObject.set(x, "metadataLocation", js.undefined)
     
     @scala.inline
-    def deleteMetadataKey: Self = this.set("metadataKey", js.undefined)
+    def setMetadataValue(value: String): Self = StObject.set(x, "metadataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataLocation(value: DeveloperMetadataLocation): Self = this.set("metadataLocation", value.asInstanceOf[js.Any])
+    def setMetadataValueUndefined: Self = StObject.set(x, "metadataValue", js.undefined)
     
     @scala.inline
-    def deleteMetadataLocation: Self = this.set("metadataLocation", js.undefined)
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataValue(value: String): Self = this.set("metadataValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadataValue: Self = this.set("metadataValue", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

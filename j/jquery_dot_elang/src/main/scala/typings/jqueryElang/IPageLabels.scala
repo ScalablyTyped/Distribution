@@ -1,11 +1,12 @@
 package typings.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPageLabels extends js.Object {
+trait IPageLabels extends StObject {
   
   var lblAdd: js.UndefOr[String] = js.native
   
@@ -80,210 +81,198 @@ object IPageLabels {
   }
   
   @scala.inline
-  implicit class IPageLabelsOps[Self <: IPageLabels] (val x: Self) extends AnyVal {
+  implicit class IPageLabelsMutableBuilder[Self <: IPageLabels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLblAdd(value: String): Self = StObject.set(x, "lblAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLblAddUndefined: Self = StObject.set(x, "lblAdd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLblEditHead(value: String): Self = StObject.set(x, "lblEditHead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblAdd(value: String): Self = this.set("lblAdd", value.asInstanceOf[js.Any])
+    def setLblEditHeadUndefined: Self = StObject.set(x, "lblEditHead", js.undefined)
     
     @scala.inline
-    def deleteLblAdd: Self = this.set("lblAdd", js.undefined)
+    def setLblEditKeyField(value: String): Self = StObject.set(x, "lblEditKeyField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblEditHead(value: String): Self = this.set("lblEditHead", value.asInstanceOf[js.Any])
+    def setLblEditKeyFieldUndefined: Self = StObject.set(x, "lblEditKeyField", js.undefined)
     
     @scala.inline
-    def deleteLblEditHead: Self = this.set("lblEditHead", js.undefined)
+    def setLblEditValueField(value: String): Self = StObject.set(x, "lblEditValueField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblEditKeyField(value: String): Self = this.set("lblEditKeyField", value.asInstanceOf[js.Any])
+    def setLblEditValueFieldUndefined: Self = StObject.set(x, "lblEditValueField", js.undefined)
     
     @scala.inline
-    def deleteLblEditKeyField: Self = this.set("lblEditKeyField", js.undefined)
+    def setLblEditedExpressionsHead(value: String): Self = StObject.set(x, "lblEditedExpressionsHead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblEditValueField(value: String): Self = this.set("lblEditValueField", value.asInstanceOf[js.Any])
+    def setLblEditedExpressionsHeadUndefined: Self = StObject.set(x, "lblEditedExpressionsHead", js.undefined)
     
     @scala.inline
-    def deleteLblEditValueField: Self = this.set("lblEditValueField", js.undefined)
+    def setLblFind(value: String): Self = StObject.set(x, "lblFind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblEditedExpressionsHead(value: String): Self = this.set("lblEditedExpressionsHead", value.asInstanceOf[js.Any])
+    def setLblFindHead(value: String): Self = StObject.set(x, "lblFindHead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLblEditedExpressionsHead: Self = this.set("lblEditedExpressionsHead", js.undefined)
+    def setLblFindHeadUndefined: Self = StObject.set(x, "lblFindHead", js.undefined)
     
     @scala.inline
-    def setLblFind(value: String): Self = this.set("lblFind", value.asInstanceOf[js.Any])
+    def setLblFindUndefined: Self = StObject.set(x, "lblFind", js.undefined)
     
     @scala.inline
-    def deleteLblFind: Self = this.set("lblFind", js.undefined)
+    def setLblFindedExpressionsHead(value: String): Self = StObject.set(x, "lblFindedExpressionsHead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblFindHead(value: String): Self = this.set("lblFindHead", value.asInstanceOf[js.Any])
+    def setLblFindedExpressionsHeadUndefined: Self = StObject.set(x, "lblFindedExpressionsHead", js.undefined)
     
     @scala.inline
-    def deleteLblFindHead: Self = this.set("lblFindHead", js.undefined)
+    def setLblModify(value: String): Self = StObject.set(x, "lblModify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblFindedExpressionsHead(value: String): Self = this.set("lblFindedExpressionsHead", value.asInstanceOf[js.Any])
+    def setLblModifyUndefined: Self = StObject.set(x, "lblModify", js.undefined)
     
     @scala.inline
-    def deleteLblFindedExpressionsHead: Self = this.set("lblFindedExpressionsHead", js.undefined)
+    def setLblOrderedTest(value: String): Self = StObject.set(x, "lblOrderedTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblModify(value: String): Self = this.set("lblModify", value.asInstanceOf[js.Any])
+    def setLblOrderedTestHlp(value: String): Self = StObject.set(x, "lblOrderedTestHlp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLblModify: Self = this.set("lblModify", js.undefined)
+    def setLblOrderedTestHlpUndefined: Self = StObject.set(x, "lblOrderedTestHlp", js.undefined)
     
     @scala.inline
-    def setLblOrderedTest(value: String): Self = this.set("lblOrderedTest", value.asInstanceOf[js.Any])
+    def setLblOrderedTestUndefined: Self = StObject.set(x, "lblOrderedTest", js.undefined)
     
     @scala.inline
-    def deleteLblOrderedTest: Self = this.set("lblOrderedTest", js.undefined)
+    def setLblPageHeader(value: String): Self = StObject.set(x, "lblPageHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblOrderedTestHlp(value: String): Self = this.set("lblOrderedTestHlp", value.asInstanceOf[js.Any])
+    def setLblPageHeaderUndefined: Self = StObject.set(x, "lblPageHeader", js.undefined)
     
     @scala.inline
-    def deleteLblOrderedTestHlp: Self = this.set("lblOrderedTestHlp", js.undefined)
+    def setLblRandomlyTest(value: String): Self = StObject.set(x, "lblRandomlyTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblPageHeader(value: String): Self = this.set("lblPageHeader", value.asInstanceOf[js.Any])
+    def setLblRandomlyTestHlp(value: String): Self = StObject.set(x, "lblRandomlyTestHlp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLblPageHeader: Self = this.set("lblPageHeader", js.undefined)
+    def setLblRandomlyTestHlpUndefined: Self = StObject.set(x, "lblRandomlyTestHlp", js.undefined)
     
     @scala.inline
-    def setLblRandomlyTest(value: String): Self = this.set("lblRandomlyTest", value.asInstanceOf[js.Any])
+    def setLblRandomlyTestUndefined: Self = StObject.set(x, "lblRandomlyTest", js.undefined)
     
     @scala.inline
-    def deleteLblRandomlyTest: Self = this.set("lblRandomlyTest", js.undefined)
+    def setLblRemove(value: String): Self = StObject.set(x, "lblRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblRandomlyTestHlp(value: String): Self = this.set("lblRandomlyTestHlp", value.asInstanceOf[js.Any])
+    def setLblRemoveUndefined: Self = StObject.set(x, "lblRemove", js.undefined)
     
     @scala.inline
-    def deleteLblRandomlyTestHlp: Self = this.set("lblRandomlyTestHlp", js.undefined)
+    def setLblSearchField(value: String): Self = StObject.set(x, "lblSearchField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblRemove(value: String): Self = this.set("lblRemove", value.asInstanceOf[js.Any])
+    def setLblSearchFieldUndefined: Self = StObject.set(x, "lblSearchField", js.undefined)
     
     @scala.inline
-    def deleteLblRemove: Self = this.set("lblRemove", js.undefined)
+    def setLblSearchInExpressions(value: String): Self = StObject.set(x, "lblSearchInExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblSearchField(value: String): Self = this.set("lblSearchField", value.asInstanceOf[js.Any])
+    def setLblSearchInExpressionsHlp(value: String): Self = StObject.set(x, "lblSearchInExpressionsHlp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLblSearchField: Self = this.set("lblSearchField", js.undefined)
+    def setLblSearchInExpressionsHlpUndefined: Self = StObject.set(x, "lblSearchInExpressionsHlp", js.undefined)
     
     @scala.inline
-    def setLblSearchInExpressions(value: String): Self = this.set("lblSearchInExpressions", value.asInstanceOf[js.Any])
+    def setLblSearchInExpressionsUndefined: Self = StObject.set(x, "lblSearchInExpressions", js.undefined)
     
     @scala.inline
-    def deleteLblSearchInExpressions: Self = this.set("lblSearchInExpressions", js.undefined)
+    def setLblSearchInMeanings(value: String): Self = StObject.set(x, "lblSearchInMeanings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblSearchInExpressionsHlp(value: String): Self = this.set("lblSearchInExpressionsHlp", value.asInstanceOf[js.Any])
+    def setLblSearchInMeaningsHlp(value: String): Self = StObject.set(x, "lblSearchInMeaningsHlp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLblSearchInExpressionsHlp: Self = this.set("lblSearchInExpressionsHlp", js.undefined)
+    def setLblSearchInMeaningsHlpUndefined: Self = StObject.set(x, "lblSearchInMeaningsHlp", js.undefined)
     
     @scala.inline
-    def setLblSearchInMeanings(value: String): Self = this.set("lblSearchInMeanings", value.asInstanceOf[js.Any])
+    def setLblSearchInMeaningsUndefined: Self = StObject.set(x, "lblSearchInMeanings", js.undefined)
     
     @scala.inline
-    def deleteLblSearchInMeanings: Self = this.set("lblSearchInMeanings", js.undefined)
+    def setLblSelectedTest(value: String): Self = StObject.set(x, "lblSelectedTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblSearchInMeaningsHlp(value: String): Self = this.set("lblSearchInMeaningsHlp", value.asInstanceOf[js.Any])
+    def setLblSelectedTestHlp(value: String): Self = StObject.set(x, "lblSelectedTestHlp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLblSearchInMeaningsHlp: Self = this.set("lblSearchInMeaningsHlp", js.undefined)
+    def setLblSelectedTestHlpUndefined: Self = StObject.set(x, "lblSelectedTestHlp", js.undefined)
     
     @scala.inline
-    def setLblSelectedTest(value: String): Self = this.set("lblSelectedTest", value.asInstanceOf[js.Any])
+    def setLblSelectedTestUndefined: Self = StObject.set(x, "lblSelectedTest", js.undefined)
     
     @scala.inline
-    def deleteLblSelectedTest: Self = this.set("lblSelectedTest", js.undefined)
+    def setLblStartTest(value: String): Self = StObject.set(x, "lblStartTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblSelectedTestHlp(value: String): Self = this.set("lblSelectedTestHlp", value.asInstanceOf[js.Any])
+    def setLblStartTestUndefined: Self = StObject.set(x, "lblStartTest", js.undefined)
     
     @scala.inline
-    def deleteLblSelectedTestHlp: Self = this.set("lblSelectedTestHlp", js.undefined)
+    def setLblStopTest(value: String): Self = StObject.set(x, "lblStopTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblStartTest(value: String): Self = this.set("lblStartTest", value.asInstanceOf[js.Any])
+    def setLblStopTestUndefined: Self = StObject.set(x, "lblStopTest", js.undefined)
     
     @scala.inline
-    def deleteLblStartTest: Self = this.set("lblStartTest", js.undefined)
+    def setLblTestHead(value: String): Self = StObject.set(x, "lblTestHead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblStopTest(value: String): Self = this.set("lblStopTest", value.asInstanceOf[js.Any])
+    def setLblTestHeadUndefined: Self = StObject.set(x, "lblTestHead", js.undefined)
     
     @scala.inline
-    def deleteLblStopTest: Self = this.set("lblStopTest", js.undefined)
+    def setLblTitle(value: String): Self = StObject.set(x, "lblTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblTestHead(value: String): Self = this.set("lblTestHead", value.asInstanceOf[js.Any])
+    def setLblTitleUndefined: Self = StObject.set(x, "lblTitle", js.undefined)
     
     @scala.inline
-    def deleteLblTestHead: Self = this.set("lblTestHead", js.undefined)
+    def setLblTypedTest(value: String): Self = StObject.set(x, "lblTypedTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblTitle(value: String): Self = this.set("lblTitle", value.asInstanceOf[js.Any])
+    def setLblTypedTestHlp(value: String): Self = StObject.set(x, "lblTypedTestHlp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLblTitle: Self = this.set("lblTitle", js.undefined)
+    def setLblTypedTestHlpUndefined: Self = StObject.set(x, "lblTypedTestHlp", js.undefined)
     
     @scala.inline
-    def setLblTypedTest(value: String): Self = this.set("lblTypedTest", value.asInstanceOf[js.Any])
+    def setLblTypedTestUndefined: Self = StObject.set(x, "lblTypedTest", js.undefined)
     
     @scala.inline
-    def deleteLblTypedTest: Self = this.set("lblTypedTest", js.undefined)
+    def setLblVoicedTest(value: String): Self = StObject.set(x, "lblVoicedTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblTypedTestHlp(value: String): Self = this.set("lblTypedTestHlp", value.asInstanceOf[js.Any])
+    def setLblVoicedTestHlp(value: String): Self = StObject.set(x, "lblVoicedTestHlp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLblTypedTestHlp: Self = this.set("lblTypedTestHlp", js.undefined)
+    def setLblVoicedTestHlpUndefined: Self = StObject.set(x, "lblVoicedTestHlp", js.undefined)
     
     @scala.inline
-    def setLblVoicedTest(value: String): Self = this.set("lblVoicedTest", value.asInstanceOf[js.Any])
+    def setLblVoicedTestUndefined: Self = StObject.set(x, "lblVoicedTest", js.undefined)
     
     @scala.inline
-    def deleteLblVoicedTest: Self = this.set("lblVoicedTest", js.undefined)
+    def setLblWrittedTest(value: String): Self = StObject.set(x, "lblWrittedTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLblVoicedTestHlp(value: String): Self = this.set("lblVoicedTestHlp", value.asInstanceOf[js.Any])
+    def setLblWrittedTestHlp(value: String): Self = StObject.set(x, "lblWrittedTestHlp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLblVoicedTestHlp: Self = this.set("lblVoicedTestHlp", js.undefined)
+    def setLblWrittedTestHlpUndefined: Self = StObject.set(x, "lblWrittedTestHlp", js.undefined)
     
     @scala.inline
-    def setLblWrittedTest(value: String): Self = this.set("lblWrittedTest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLblWrittedTest: Self = this.set("lblWrittedTest", js.undefined)
-    
-    @scala.inline
-    def setLblWrittedTestHlp(value: String): Self = this.set("lblWrittedTestHlp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLblWrittedTestHlp: Self = this.set("lblWrittedTestHlp", js.undefined)
+    def setLblWrittedTestUndefined: Self = StObject.set(x, "lblWrittedTest", js.undefined)
   }
 }

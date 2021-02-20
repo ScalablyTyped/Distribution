@@ -5,14 +5,15 @@ import typings.popmotionPose.typesMod.PopmotionPoserFactoryConfig
 import typings.popmotionPose.typesMod.TransitionDefinition
 import typings.popmotionPose.typesMod.Value
 import typings.poseCore.typesMod.Poser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion-pose/lib/factories/pose", JSImport.Namespace)
-@js.native
-object factoriesPoseMod extends js.Object {
+object factoriesPoseMod {
   
+  @JSImport("popmotion-pose/lib/factories/pose", JSImport.Default)
+  @js.native
   def default[P](
     hasTransformPoseAddListenerToValueExtendAPIReadValueFromSourcePosePrioritySetValueNative: PopmotionPoserFactoryConfig[P, TransitionDefinition]
   ): js.Function1[

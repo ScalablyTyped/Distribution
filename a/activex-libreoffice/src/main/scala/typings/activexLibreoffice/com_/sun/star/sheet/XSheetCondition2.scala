@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,27 +53,15 @@ object XSheetCondition2 {
   }
   
   @scala.inline
-  implicit class XSheetCondition2Ops[Self <: XSheetCondition2] (val x: Self) extends AnyVal {
+  implicit class XSheetCondition2MutableBuilder[Self <: XSheetCondition2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditionOperator(value: Double): Self = StObject.set(x, "ConditionOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetConditionOperator(value: () => Double): Self = StObject.set(x, "getConditionOperator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConditionOperator(value: Double): Self = this.set("ConditionOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetConditionOperator(value: () => Double): Self = this.set("getConditionOperator", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetConditionOperator(value: Double => Unit): Self = this.set("setConditionOperator", js.Any.fromFunction1(value))
+    def setSetConditionOperator(value: Double => Unit): Self = StObject.set(x, "setConditionOperator", js.Any.fromFunction1(value))
   }
 }

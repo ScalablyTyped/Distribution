@@ -25,12 +25,13 @@ import typings.pubnub.mod.SetChannelMetadataResponse
 import typings.pubnub.mod.SetMembershipsParameters
 import typings.pubnub.mod.SetUUIDMetadataParameters
 import typings.pubnub.mod.SetUUIDMetadataResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAllChannelMetadata extends js.Object {
+trait GetAllChannelMetadata extends StObject {
   
   def getAllChannelMetadata[Custom /* <: ObjectCustom */](): js.Promise[GetAllChannelMetadataResponse[Custom]] = js.native
   def getAllChannelMetadata[Custom /* <: ObjectCustom */](callback: Callback[GetAllChannelMetadataResponse[Custom]]): Unit = js.native

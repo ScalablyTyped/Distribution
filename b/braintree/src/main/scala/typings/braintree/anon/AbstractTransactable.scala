@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbstractTransactable extends js.Object {
+trait AbstractTransactable extends StObject {
   
   var AbstractTransactable: String = js.native
   
@@ -188,189 +189,177 @@ object AbstractTransactable {
   }
   
   @scala.inline
-  implicit class AbstractTransactableOps[Self <: AbstractTransactable] (val x: Self) extends AnyVal {
+  implicit class AbstractTransactableMutableBuilder[Self <: AbstractTransactable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbstractTransactable(value: String): Self = StObject.set(x, "AbstractTransactable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmexExpressCheckout(value: String): Self = StObject.set(x, "AmexExpressCheckout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidPay(value: String): Self = StObject.set(x, "AndroidPay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbstractTransactable(value: String): Self = this.set("AbstractTransactable", value.asInstanceOf[js.Any])
+    def setAndroidPayAmEx(value: String): Self = StObject.set(x, "AndroidPayAmEx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmexExpressCheckout(value: String): Self = this.set("AmexExpressCheckout", value.asInstanceOf[js.Any])
+    def setAndroidPayDiscover(value: String): Self = StObject.set(x, "AndroidPayDiscover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidPay(value: String): Self = this.set("AndroidPay", value.asInstanceOf[js.Any])
+    def setAndroidPayMasterCard(value: String): Self = StObject.set(x, "AndroidPayMasterCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidPayAmEx(value: String): Self = this.set("AndroidPayAmEx", value.asInstanceOf[js.Any])
+    def setAndroidPayVisa(value: String): Self = StObject.set(x, "AndroidPayVisa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidPayDiscover(value: String): Self = this.set("AndroidPayDiscover", value.asInstanceOf[js.Any])
+    def setApplePayAmEx(value: String): Self = StObject.set(x, "ApplePayAmEx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidPayMasterCard(value: String): Self = this.set("AndroidPayMasterCard", value.asInstanceOf[js.Any])
+    def setApplePayMasterCard(value: String): Self = StObject.set(x, "ApplePayMasterCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidPayVisa(value: String): Self = this.set("AndroidPayVisa", value.asInstanceOf[js.Any])
+    def setApplePayVisa(value: String): Self = StObject.set(x, "ApplePayVisa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplePayAmEx(value: String): Self = this.set("ApplePayAmEx", value.asInstanceOf[js.Any])
+    def setCoinbase(value: String): Self = StObject.set(x, "Coinbase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplePayMasterCard(value: String): Self = this.set("ApplePayMasterCard", value.asInstanceOf[js.Any])
+    def setConsumed(value: String): Self = StObject.set(x, "Consumed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplePayVisa(value: String): Self = this.set("ApplePayVisa", value.asInstanceOf[js.Any])
+    def setEurope(value: String): Self = StObject.set(x, "Europe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoinbase(value: String): Self = this.set("Coinbase", value.asInstanceOf[js.Any])
+    def setGatewayRejectedFraud(value: String): Self = StObject.set(x, "GatewayRejectedFraud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumed(value: String): Self = this.set("Consumed", value.asInstanceOf[js.Any])
+    def setLuhnInvalid(value: String): Self = StObject.set(x, "LuhnInvalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEurope(value: String): Self = this.set("Europe", value.asInstanceOf[js.Any])
+    def setMasterpassAmEx(value: String): Self = StObject.set(x, "MasterpassAmEx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayRejectedFraud(value: String): Self = this.set("GatewayRejectedFraud", value.asInstanceOf[js.Any])
+    def setMasterpassDiscover(value: String): Self = StObject.set(x, "MasterpassDiscover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLuhnInvalid(value: String): Self = this.set("LuhnInvalid", value.asInstanceOf[js.Any])
+    def setMasterpassMasterCard(value: String): Self = StObject.set(x, "MasterpassMasterCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterpassAmEx(value: String): Self = this.set("MasterpassAmEx", value.asInstanceOf[js.Any])
+    def setMasterpassVisa(value: String): Self = StObject.set(x, "MasterpassVisa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterpassDiscover(value: String): Self = this.set("MasterpassDiscover", value.asInstanceOf[js.Any])
+    def setPayPalBillingAgreement(value: String): Self = StObject.set(x, "PayPalBillingAgreement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterpassMasterCard(value: String): Self = this.set("MasterpassMasterCard", value.asInstanceOf[js.Any])
+    def setPayPalFuturePayment(value: String): Self = StObject.set(x, "PayPalFuturePayment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterpassVisa(value: String): Self = this.set("MasterpassVisa", value.asInstanceOf[js.Any])
+    def setPayPalFuturePaymentRefreshToken(value: String): Self = StObject.set(x, "PayPalFuturePaymentRefreshToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayPalBillingAgreement(value: String): Self = this.set("PayPalBillingAgreement", value.asInstanceOf[js.Any])
+    def setPayPalOneTimePayment(value: String): Self = StObject.set(x, "PayPalOneTimePayment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayPalFuturePayment(value: String): Self = this.set("PayPalFuturePayment", value.asInstanceOf[js.Any])
+    def setProcessorDeclinedAmEx(value: String): Self = StObject.set(x, "ProcessorDeclinedAmEx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayPalFuturePaymentRefreshToken(value: String): Self = this.set("PayPalFuturePaymentRefreshToken", value.asInstanceOf[js.Any])
+    def setProcessorDeclinedDiscover(value: String): Self = StObject.set(x, "ProcessorDeclinedDiscover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayPalOneTimePayment(value: String): Self = this.set("PayPalOneTimePayment", value.asInstanceOf[js.Any])
+    def setProcessorDeclinedMasterCard(value: String): Self = StObject.set(x, "ProcessorDeclinedMasterCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessorDeclinedAmEx(value: String): Self = this.set("ProcessorDeclinedAmEx", value.asInstanceOf[js.Any])
+    def setProcessorDeclinedVisa(value: String): Self = StObject.set(x, "ProcessorDeclinedVisa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessorDeclinedDiscover(value: String): Self = this.set("ProcessorDeclinedDiscover", value.asInstanceOf[js.Any])
+    def setProcessorFailureJCB(value: String): Self = StObject.set(x, "ProcessorFailureJCB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessorDeclinedMasterCard(value: String): Self = this.set("ProcessorDeclinedMasterCard", value.asInstanceOf[js.Any])
+    def setSEPA(value: String): Self = StObject.set(x, "SEPA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessorDeclinedVisa(value: String): Self = this.set("ProcessorDeclinedVisa", value.asInstanceOf[js.Any])
+    def setSamsungPayAmEx(value: String): Self = StObject.set(x, "SamsungPayAmEx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessorFailureJCB(value: String): Self = this.set("ProcessorFailureJCB", value.asInstanceOf[js.Any])
+    def setSamsungPayDiscover(value: String): Self = StObject.set(x, "SamsungPayDiscover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSEPA(value: String): Self = this.set("SEPA", value.asInstanceOf[js.Any])
+    def setSamsungPayMasterCard(value: String): Self = StObject.set(x, "SamsungPayMasterCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamsungPayAmEx(value: String): Self = this.set("SamsungPayAmEx", value.asInstanceOf[js.Any])
+    def setSamsungPayVisa(value: String): Self = StObject.set(x, "SamsungPayVisa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamsungPayDiscover(value: String): Self = this.set("SamsungPayDiscover", value.asInstanceOf[js.Any])
+    def setTransactable(value: String): Self = StObject.set(x, "Transactable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamsungPayMasterCard(value: String): Self = this.set("SamsungPayMasterCard", value.asInstanceOf[js.Any])
+    def setTransactableAmEx(value: String): Self = StObject.set(x, "TransactableAmEx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamsungPayVisa(value: String): Self = this.set("SamsungPayVisa", value.asInstanceOf[js.Any])
+    def setTransactableCommercial(value: String): Self = StObject.set(x, "TransactableCommercial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactable(value: String): Self = this.set("Transactable", value.asInstanceOf[js.Any])
+    def setTransactableCountryOfIssuanceCAD(value: String): Self = StObject.set(x, "TransactableCountryOfIssuanceCAD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableAmEx(value: String): Self = this.set("TransactableAmEx", value.asInstanceOf[js.Any])
+    def setTransactableCountryOfIssuanceUSA(value: String): Self = StObject.set(x, "TransactableCountryOfIssuanceUSA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableCommercial(value: String): Self = this.set("TransactableCommercial", value.asInstanceOf[js.Any])
+    def setTransactableDebit(value: String): Self = StObject.set(x, "TransactableDebit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableCountryOfIssuanceCAD(value: String): Self = this.set("TransactableCountryOfIssuanceCAD", value.asInstanceOf[js.Any])
+    def setTransactableDinersClub(value: String): Self = StObject.set(x, "TransactableDinersClub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableCountryOfIssuanceUSA(value: String): Self = this.set("TransactableCountryOfIssuanceUSA", value.asInstanceOf[js.Any])
+    def setTransactableDiscover(value: String): Self = StObject.set(x, "TransactableDiscover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableDebit(value: String): Self = this.set("TransactableDebit", value.asInstanceOf[js.Any])
+    def setTransactableDurbinRegulated(value: String): Self = StObject.set(x, "TransactableDurbinRegulated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableDinersClub(value: String): Self = this.set("TransactableDinersClub", value.asInstanceOf[js.Any])
+    def setTransactableHealthcare(value: String): Self = StObject.set(x, "TransactableHealthcare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableDiscover(value: String): Self = this.set("TransactableDiscover", value.asInstanceOf[js.Any])
+    def setTransactableIssuingBankNetworkOnly(value: String): Self = StObject.set(x, "TransactableIssuingBankNetworkOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableDurbinRegulated(value: String): Self = this.set("TransactableDurbinRegulated", value.asInstanceOf[js.Any])
+    def setTransactableJCB(value: String): Self = StObject.set(x, "TransactableJCB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableHealthcare(value: String): Self = this.set("TransactableHealthcare", value.asInstanceOf[js.Any])
+    def setTransactableMaestro(value: String): Self = StObject.set(x, "TransactableMaestro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableIssuingBankNetworkOnly(value: String): Self = this.set("TransactableIssuingBankNetworkOnly", value.asInstanceOf[js.Any])
+    def setTransactableMasterCard(value: String): Self = StObject.set(x, "TransactableMasterCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableJCB(value: String): Self = this.set("TransactableJCB", value.asInstanceOf[js.Any])
+    def setTransactableNoIndicators(value: String): Self = StObject.set(x, "TransactableNoIndicators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableMaestro(value: String): Self = this.set("TransactableMaestro", value.asInstanceOf[js.Any])
+    def setTransactablePayroll(value: String): Self = StObject.set(x, "TransactablePayroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableMasterCard(value: String): Self = this.set("TransactableMasterCard", value.asInstanceOf[js.Any])
+    def setTransactablePrepaid(value: String): Self = StObject.set(x, "TransactablePrepaid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableNoIndicators(value: String): Self = this.set("TransactableNoIndicators", value.asInstanceOf[js.Any])
+    def setTransactableUnknownIndicators(value: String): Self = StObject.set(x, "TransactableUnknownIndicators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactablePayroll(value: String): Self = this.set("TransactablePayroll", value.asInstanceOf[js.Any])
+    def setTransactableVisa(value: String): Self = StObject.set(x, "TransactableVisa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactablePrepaid(value: String): Self = this.set("TransactablePrepaid", value.asInstanceOf[js.Any])
+    def setVenmoAccount(value: String): Self = StObject.set(x, "VenmoAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableUnknownIndicators(value: String): Self = this.set("TransactableUnknownIndicators", value.asInstanceOf[js.Any])
+    def setVisaCheckoutAmEx(value: String): Self = StObject.set(x, "VisaCheckoutAmEx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactableVisa(value: String): Self = this.set("TransactableVisa", value.asInstanceOf[js.Any])
+    def setVisaCheckoutDiscover(value: String): Self = StObject.set(x, "VisaCheckoutDiscover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVenmoAccount(value: String): Self = this.set("VenmoAccount", value.asInstanceOf[js.Any])
+    def setVisaCheckoutMasterCard(value: String): Self = StObject.set(x, "VisaCheckoutMasterCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisaCheckoutAmEx(value: String): Self = this.set("VisaCheckoutAmEx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisaCheckoutDiscover(value: String): Self = this.set("VisaCheckoutDiscover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisaCheckoutMasterCard(value: String): Self = this.set("VisaCheckoutMasterCard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisaCheckoutVisa(value: String): Self = this.set("VisaCheckoutVisa", value.asInstanceOf[js.Any])
+    def setVisaCheckoutVisa(value: String): Self = StObject.set(x, "VisaCheckoutVisa", value.asInstanceOf[js.Any])
   }
 }

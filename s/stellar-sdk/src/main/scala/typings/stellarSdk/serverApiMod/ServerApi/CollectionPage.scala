@@ -1,12 +1,13 @@
 package typings.stellarSdk.serverApiMod.ServerApi
 
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionPage[T /* <: BaseResponse[scala.Nothing] */] extends js.Object {
+trait CollectionPage[T /* <: BaseResponse[scala.Nothing] */] extends StObject {
   
   def next(): js.Promise[CollectionPage[T]] = js.native
   
@@ -27,30 +28,18 @@ object CollectionPage {
   }
   
   @scala.inline
-  implicit class CollectionPageOps[Self <: CollectionPage[_], T /* <: BaseResponse[scala.Nothing] */] (val x: Self with CollectionPage[T]) extends AnyVal {
+  implicit class CollectionPageMutableBuilder[Self <: CollectionPage[_], T /* <: BaseResponse[scala.Nothing] */] (val x: Self with CollectionPage[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNext(value: () => js.Promise[CollectionPage[T]]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrev(value: () => js.Promise[CollectionPage[T]]): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecords(value: js.Array[T]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: () => js.Promise[CollectionPage[T]]): Self = this.set("next", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrev(value: () => js.Promise[CollectionPage[T]]): Self = this.set("prev", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRecordsVarargs(value: T*): Self = this.set("records", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecords(value: js.Array[T]): Self = this.set("records", value.asInstanceOf[js.Any])
+    def setRecordsVarargs(value: T*): Self = StObject.set(x, "records", js.Array(value :_*))
   }
 }

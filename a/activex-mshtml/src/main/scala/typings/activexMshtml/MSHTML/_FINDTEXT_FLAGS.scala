@@ -9,6 +9,7 @@ import typings.activexMshtml.activexMshtmlNumbers.`262144`
 import typings.activexMshtml.activexMshtmlNumbers.`2`
 import typings.activexMshtml.activexMshtmlNumbers.`4`
 import typings.activexMshtml.activexMshtmlNumbers.`536870912`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMshtml.activexMshtmlNumbers.`131072`
   - typings.activexMshtml.activexMshtmlNumbers.`2`
 */
-trait _FINDTEXT_FLAGS extends js.Object
+trait _FINDTEXT_FLAGS extends StObject
 object _FINDTEXT_FLAGS {
   
   @scala.inline

@@ -1,6 +1,7 @@
 package typings.googleapis.driveV2Mod.driveV2
 
 import typings.googleapis.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A comment on a file in Google Drive.
   */
 @js.native
-trait SchemaComment extends js.Object {
+trait SchemaComment extends StObject {
   
   /**
     * A region of the document represented as a JSON string. See anchor
@@ -104,111 +105,99 @@ object SchemaComment {
   }
   
   @scala.inline
-  implicit class SchemaCommentOps[Self <: SchemaComment] (val x: Self) extends AnyVal {
+  implicit class SchemaCommentMutableBuilder[Self <: SchemaComment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor(value: SchemaUser): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: String): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: SchemaUser): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentId(value: String): Self = this.set("commentId", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteCommentId: Self = this.set("commentId", js.undefined)
+    def setContext(value: Value): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: Value): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: String): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setFileTitle(value: String): Self = StObject.set(x, "fileTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileId(value: String): Self = this.set("fileId", value.asInstanceOf[js.Any])
+    def setFileTitleUndefined: Self = StObject.set(x, "fileTitle", js.undefined)
     
     @scala.inline
-    def deleteFileId: Self = this.set("fileId", js.undefined)
+    def setHtmlContent(value: String): Self = StObject.set(x, "htmlContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileTitle(value: String): Self = this.set("fileTitle", value.asInstanceOf[js.Any])
+    def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)
     
     @scala.inline
-    def deleteFileTitle: Self = this.set("fileTitle", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlContent(value: String): Self = this.set("htmlContent", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteHtmlContent: Self = this.set("htmlContent", js.undefined)
+    def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setReplies(value: js.Array[SchemaCommentReply]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedDate(value: String): Self = this.set("modifiedDate", value.asInstanceOf[js.Any])
+    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
     @scala.inline
-    def deleteModifiedDate: Self = this.set("modifiedDate", js.undefined)
+    def setRepliesVarargs(value: SchemaCommentReply*): Self = StObject.set(x, "replies", js.Array(value :_*))
     
     @scala.inline
-    def setRepliesVarargs(value: SchemaCommentReply*): Self = this.set("replies", js.Array(value :_*))
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplies(value: js.Array[SchemaCommentReply]): Self = this.set("replies", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteReplies: Self = this.set("replies", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

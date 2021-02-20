@@ -4,6 +4,7 @@ import typings.mfiles.mfilesNumbers.`1`
 import typings.mfiles.mfilesNumbers.`2`
 import typings.mfiles.mfilesNumbers.`3`
 import typings.mfiles.mfilesNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mfiles.mfilesNumbers.`3`
   - typings.mfiles.mfilesNumbers.`4`
 */
-trait TaskPaneGroup extends js.Object
+trait TaskPaneGroup extends StObject
 object TaskPaneGroup {
   
   @scala.inline

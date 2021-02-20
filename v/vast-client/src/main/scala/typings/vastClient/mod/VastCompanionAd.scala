@@ -1,11 +1,12 @@
 package typings.vastClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VastCompanionAd extends js.Object {
+trait VastCompanionAd extends StObject {
   
   var altText: String | Null = js.native
   
@@ -45,84 +46,72 @@ object VastCompanionAd {
   }
   
   @scala.inline
-  implicit class VastCompanionAdOps[Self <: VastCompanionAd] (val x: Self) extends AnyVal {
+  implicit class VastCompanionAdMutableBuilder[Self <: VastCompanionAd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltTextNull: Self = StObject.set(x, "altText", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompanionClickThroughURLTemplate(value: String): Self = StObject.set(x, "companionClickThroughURLTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanionClickTrackingURLTemplatesVarargs(value: String*): Self = this.set("companionClickTrackingURLTemplates", js.Array(value :_*))
+    def setCompanionClickThroughURLTemplateNull: Self = StObject.set(x, "companionClickThroughURLTemplate", null)
     
     @scala.inline
-    def setCompanionClickTrackingURLTemplates(value: js.Array[String]): Self = this.set("companionClickTrackingURLTemplates", value.asInstanceOf[js.Any])
+    def setCompanionClickTrackingURLTemplate(value: String): Self = StObject.set(x, "companionClickTrackingURLTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setCompanionClickTrackingURLTemplateNull: Self = StObject.set(x, "companionClickTrackingURLTemplate", null)
     
     @scala.inline
-    def setTrackingEvents(value: VastCompanionTrackingEvents): Self = this.set("trackingEvents", value.asInstanceOf[js.Any])
+    def setCompanionClickTrackingURLTemplateUndefined: Self = StObject.set(x, "companionClickTrackingURLTemplate", js.undefined)
     
     @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setCompanionClickTrackingURLTemplates(value: js.Array[String]): Self = StObject.set(x, "companionClickTrackingURLTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltText(value: String): Self = this.set("altText", value.asInstanceOf[js.Any])
+    def setCompanionClickTrackingURLTemplatesVarargs(value: String*): Self = StObject.set(x, "companionClickTrackingURLTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setAltTextNull: Self = this.set("altText", null)
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanionClickThroughURLTemplate(value: String): Self = this.set("companionClickThroughURLTemplate", value.asInstanceOf[js.Any])
+    def setHtmlResource(value: String): Self = StObject.set(x, "htmlResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanionClickThroughURLTemplateNull: Self = this.set("companionClickThroughURLTemplate", null)
+    def setHtmlResourceNull: Self = StObject.set(x, "htmlResource", null)
     
     @scala.inline
-    def setCompanionClickTrackingURLTemplate(value: String): Self = this.set("companionClickTrackingURLTemplate", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompanionClickTrackingURLTemplate: Self = this.set("companionClickTrackingURLTemplate", js.undefined)
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setCompanionClickTrackingURLTemplateNull: Self = this.set("companionClickTrackingURLTemplate", null)
+    def setIframeResource(value: String): Self = StObject.set(x, "iframeResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlResource(value: String): Self = this.set("htmlResource", value.asInstanceOf[js.Any])
+    def setIframeResourceNull: Self = StObject.set(x, "iframeResource", null)
     
     @scala.inline
-    def setHtmlResourceNull: Self = this.set("htmlResource", null)
+    def setStaticResource(value: String): Self = StObject.set(x, "staticResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setStaticResourceNull: Self = StObject.set(x, "staticResource", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setTrackingEvents(value: VastCompanionTrackingEvents): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframeResource(value: String): Self = this.set("iframeResource", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframeResourceNull: Self = this.set("iframeResource", null)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setStaticResource(value: String): Self = this.set("staticResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStaticResourceNull: Self = this.set("staticResource", null)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

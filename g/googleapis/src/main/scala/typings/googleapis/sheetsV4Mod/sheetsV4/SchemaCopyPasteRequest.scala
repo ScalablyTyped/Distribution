@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Copies data from the source to the destination.
   */
 @js.native
-trait SchemaCopyPasteRequest extends js.Object {
+trait SchemaCopyPasteRequest extends StObject {
   
   /**
     * The location to paste to. If the range covers a span that&#39;s a
@@ -43,42 +44,30 @@ object SchemaCopyPasteRequest {
   }
   
   @scala.inline
-  implicit class SchemaCopyPasteRequestOps[Self <: SchemaCopyPasteRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCopyPasteRequestMutableBuilder[Self <: SchemaCopyPasteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: SchemaGridRange): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPasteOrientation(value: String): Self = StObject.set(x, "pasteOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: SchemaGridRange): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setPasteOrientationUndefined: Self = StObject.set(x, "pasteOrientation", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setPasteType(value: String): Self = StObject.set(x, "pasteType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteOrientation(value: String): Self = this.set("pasteOrientation", value.asInstanceOf[js.Any])
+    def setPasteTypeUndefined: Self = StObject.set(x, "pasteType", js.undefined)
     
     @scala.inline
-    def deletePasteOrientation: Self = this.set("pasteOrientation", js.undefined)
+    def setSource(value: SchemaGridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteType(value: String): Self = this.set("pasteType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasteType: Self = this.set("pasteType", js.undefined)
-    
-    @scala.inline
-    def setSource(value: SchemaGridRange): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

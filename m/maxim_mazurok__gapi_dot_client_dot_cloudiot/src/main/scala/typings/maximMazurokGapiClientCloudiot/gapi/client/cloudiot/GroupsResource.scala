@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCloudiot.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupsResource extends js.Object {
+trait GroupsResource extends StObject {
   
   var devices: DevicesResource = js.native
   
@@ -34,30 +35,18 @@ object GroupsResource {
   }
   
   @scala.inline
-  implicit class GroupsResourceOps[Self <: GroupsResource] (val x: Self) extends AnyVal {
+  implicit class GroupsResourceMutableBuilder[Self <: GroupsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevices(value: DevicesResource): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIamPolicy(value: (Resource, GetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "getIamPolicy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetIamPolicy(value: (Resource, SetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "setIamPolicy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDevices(value: DevicesResource): Self = this.set("devices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetIamPolicy(value: (Resource, GetIamPolicyRequest) => Request[Policy]): Self = this.set("getIamPolicy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetIamPolicy(value: (Resource, SetIamPolicyRequest) => Request[Policy]): Self = this.set("setIamPolicy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTestIamPermissions(value: (Resource, TestIamPermissionsRequest) => Request[TestIamPermissionsResponse]): Self = this.set("testIamPermissions", js.Any.fromFunction2(value))
+    def setTestIamPermissions(value: (Resource, TestIamPermissionsRequest) => Request[TestIamPermissionsResponse]): Self = StObject.set(x, "testIamPermissions", js.Any.fromFunction2(value))
   }
 }

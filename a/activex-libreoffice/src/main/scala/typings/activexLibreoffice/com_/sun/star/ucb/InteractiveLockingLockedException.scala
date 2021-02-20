@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,21 +36,9 @@ object InteractiveLockingLockedException {
   }
   
   @scala.inline
-  implicit class InteractiveLockingLockedExceptionOps[Self <: InteractiveLockingLockedException] (val x: Self) extends AnyVal {
+  implicit class InteractiveLockingLockedExceptionMutableBuilder[Self <: InteractiveLockingLockedException] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSelfOwned(value: Boolean): Self = this.set("SelfOwned", value.asInstanceOf[js.Any])
+    def setSelfOwned(value: Boolean): Self = StObject.set(x, "SelfOwned", value.asInstanceOf[js.Any])
   }
 }

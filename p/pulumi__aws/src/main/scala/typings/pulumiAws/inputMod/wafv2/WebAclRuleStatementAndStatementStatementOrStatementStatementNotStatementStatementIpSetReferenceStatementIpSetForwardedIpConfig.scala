@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclRuleStatementAndStatementStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig extends js.Object {
+trait WebAclRuleStatementAndStatementStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig extends StObject {
   
   /**
     * - The match status to assign to the web request if the request doesn't have a valid IP address in the specified position. Valid values include: `MATCH` or `NO_MATCH`.
@@ -32,27 +33,15 @@ object WebAclRuleStatementAndStatementStatementOrStatementStatementNotStatementS
   }
   
   @scala.inline
-  implicit class WebAclRuleStatementAndStatementStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOps[Self <: WebAclRuleStatementAndStatementStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig] (val x: Self) extends AnyVal {
+  implicit class WebAclRuleStatementAndStatementStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigMutableBuilder[Self <: WebAclRuleStatementAndStatementStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFallbackBehavior(value: Input[String]): Self = StObject.set(x, "fallbackBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderName(value: Input[String]): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFallbackBehavior(value: Input[String]): Self = this.set("fallbackBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderName(value: Input[String]): Self = this.set("headerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Input[String]): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: Input[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

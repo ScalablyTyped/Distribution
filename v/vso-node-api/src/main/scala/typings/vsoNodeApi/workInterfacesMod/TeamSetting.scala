@@ -2,6 +2,7 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.systemMod.DayOfWeek
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,39 +58,27 @@ object TeamSetting {
   }
   
   @scala.inline
-  implicit class TeamSettingOps[Self <: TeamSetting] (val x: Self) extends AnyVal {
+  implicit class TeamSettingMutableBuilder[Self <: TeamSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBacklogIteration(value: TeamSettingsIteration): Self = StObject.set(x, "backlogIteration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBacklogVisibilities(value: StringDictionary[Boolean]): Self = StObject.set(x, "backlogVisibilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBugsBehavior(value: BugsBehavior): Self = StObject.set(x, "bugsBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBacklogIteration(value: TeamSettingsIteration): Self = this.set("backlogIteration", value.asInstanceOf[js.Any])
+    def setDefaultIteration(value: TeamSettingsIteration): Self = StObject.set(x, "defaultIteration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBacklogVisibilities(value: StringDictionary[Boolean]): Self = this.set("backlogVisibilities", value.asInstanceOf[js.Any])
+    def setDefaultIterationMacro(value: String): Self = StObject.set(x, "defaultIterationMacro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBugsBehavior(value: BugsBehavior): Self = this.set("bugsBehavior", value.asInstanceOf[js.Any])
+    def setWorkingDays(value: js.Array[DayOfWeek]): Self = StObject.set(x, "workingDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultIteration(value: TeamSettingsIteration): Self = this.set("defaultIteration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultIterationMacro(value: String): Self = this.set("defaultIterationMacro", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkingDaysVarargs(value: DayOfWeek*): Self = this.set("workingDays", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkingDays(value: js.Array[DayOfWeek]): Self = this.set("workingDays", value.asInstanceOf[js.Any])
+    def setWorkingDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "workingDays", js.Array(value :_*))
   }
 }

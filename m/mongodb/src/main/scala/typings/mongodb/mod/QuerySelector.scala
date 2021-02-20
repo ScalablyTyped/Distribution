@@ -2,12 +2,13 @@ package typings.mongodb.mod
 
 import typings.mongodb.anon.Geometry
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuerySelector[T] extends js.Object {
+trait QuerySelector[T] extends StObject {
   
   // Array
   // TODO: define better types for $all and $elemMatch
@@ -115,207 +116,195 @@ object QuerySelector {
   }
   
   @scala.inline
-  implicit class QuerySelectorOps[Self <: QuerySelector[_], T] (val x: Self with QuerySelector[T]) extends AnyVal {
+  implicit class QuerySelectorMutableBuilder[Self <: QuerySelector[_], T] (val x: Self with QuerySelector[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: js.Array[_]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$allVarargs(value: js.Any*): Self = StObject.set(x, "$all", js.Array(value :_*))
     
     @scala.inline
-    def set$allVarargs(value: js.Any*): Self = this.set("$all", js.Array(value :_*))
+    def set$bitsAllClear(value: BitwiseQuery): Self = StObject.set(x, "$bitsAllClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: js.Array[_]): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def set$bitsAllClearUndefined: Self = StObject.set(x, "$bitsAllClear", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def set$bitsAllClearVarargs(value: scala.Double*): Self = StObject.set(x, "$bitsAllClear", js.Array(value :_*))
     
     @scala.inline
-    def set$bitsAllClearVarargs(value: scala.Double*): Self = this.set("$bitsAllClear", js.Array(value :_*))
+    def set$bitsAllSet(value: BitwiseQuery): Self = StObject.set(x, "$bitsAllSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$bitsAllClear(value: BitwiseQuery): Self = this.set("$bitsAllClear", value.asInstanceOf[js.Any])
+    def set$bitsAllSetUndefined: Self = StObject.set(x, "$bitsAllSet", js.undefined)
     
     @scala.inline
-    def delete$bitsAllClear: Self = this.set("$bitsAllClear", js.undefined)
+    def set$bitsAllSetVarargs(value: scala.Double*): Self = StObject.set(x, "$bitsAllSet", js.Array(value :_*))
     
     @scala.inline
-    def set$bitsAllSetVarargs(value: scala.Double*): Self = this.set("$bitsAllSet", js.Array(value :_*))
+    def set$bitsAnyClear(value: BitwiseQuery): Self = StObject.set(x, "$bitsAnyClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$bitsAllSet(value: BitwiseQuery): Self = this.set("$bitsAllSet", value.asInstanceOf[js.Any])
+    def set$bitsAnyClearUndefined: Self = StObject.set(x, "$bitsAnyClear", js.undefined)
     
     @scala.inline
-    def delete$bitsAllSet: Self = this.set("$bitsAllSet", js.undefined)
+    def set$bitsAnyClearVarargs(value: scala.Double*): Self = StObject.set(x, "$bitsAnyClear", js.Array(value :_*))
     
     @scala.inline
-    def set$bitsAnyClearVarargs(value: scala.Double*): Self = this.set("$bitsAnyClear", js.Array(value :_*))
+    def set$bitsAnySet(value: BitwiseQuery): Self = StObject.set(x, "$bitsAnySet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$bitsAnyClear(value: BitwiseQuery): Self = this.set("$bitsAnyClear", value.asInstanceOf[js.Any])
+    def set$bitsAnySetUndefined: Self = StObject.set(x, "$bitsAnySet", js.undefined)
     
     @scala.inline
-    def delete$bitsAnyClear: Self = this.set("$bitsAnyClear", js.undefined)
+    def set$bitsAnySetVarargs(value: scala.Double*): Self = StObject.set(x, "$bitsAnySet", js.Array(value :_*))
     
     @scala.inline
-    def set$bitsAnySetVarargs(value: scala.Double*): Self = this.set("$bitsAnySet", js.Array(value :_*))
+    def set$elemMatch(value: js.Any): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$bitsAnySet(value: BitwiseQuery): Self = this.set("$bitsAnySet", value.asInstanceOf[js.Any])
+    def set$elemMatchUndefined: Self = StObject.set(x, "$elemMatch", js.undefined)
     
     @scala.inline
-    def delete$bitsAnySet: Self = this.set("$bitsAnySet", js.undefined)
+    def set$eq(value: T): Self = StObject.set(x, "$eq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$elemMatch(value: js.Any): Self = this.set("$elemMatch", value.asInstanceOf[js.Any])
+    def set$eqUndefined: Self = StObject.set(x, "$eq", js.undefined)
     
     @scala.inline
-    def delete$elemMatch: Self = this.set("$elemMatch", js.undefined)
+    def set$exists(value: Boolean): Self = StObject.set(x, "$exists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$eq(value: T): Self = this.set("$eq", value.asInstanceOf[js.Any])
+    def set$existsUndefined: Self = StObject.set(x, "$exists", js.undefined)
     
     @scala.inline
-    def delete$eq: Self = this.set("$eq", js.undefined)
+    def set$expr(value: js.Any): Self = StObject.set(x, "$expr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$exists(value: Boolean): Self = this.set("$exists", value.asInstanceOf[js.Any])
+    def set$exprUndefined: Self = StObject.set(x, "$expr", js.undefined)
     
     @scala.inline
-    def delete$exists: Self = this.set("$exists", js.undefined)
+    def set$geoIntersects(value: Geometry): Self = StObject.set(x, "$geoIntersects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$expr(value: js.Any): Self = this.set("$expr", value.asInstanceOf[js.Any])
+    def set$geoIntersectsUndefined: Self = StObject.set(x, "$geoIntersects", js.undefined)
     
     @scala.inline
-    def delete$expr: Self = this.set("$expr", js.undefined)
+    def set$geoWithin(value: js.Object): Self = StObject.set(x, "$geoWithin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$geoIntersects(value: Geometry): Self = this.set("$geoIntersects", value.asInstanceOf[js.Any])
+    def set$geoWithinUndefined: Self = StObject.set(x, "$geoWithin", js.undefined)
     
     @scala.inline
-    def delete$geoIntersects: Self = this.set("$geoIntersects", js.undefined)
+    def set$gt(value: T): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$geoWithin(value: js.Object): Self = this.set("$geoWithin", value.asInstanceOf[js.Any])
+    def set$gtUndefined: Self = StObject.set(x, "$gt", js.undefined)
     
     @scala.inline
-    def delete$geoWithin: Self = this.set("$geoWithin", js.undefined)
+    def set$gte(value: T): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$gt(value: T): Self = this.set("$gt", value.asInstanceOf[js.Any])
+    def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
     
     @scala.inline
-    def delete$gt: Self = this.set("$gt", js.undefined)
+    def set$in(value: js.Array[T]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$gte(value: T): Self = this.set("$gte", value.asInstanceOf[js.Any])
+    def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
     
     @scala.inline
-    def delete$gte: Self = this.set("$gte", js.undefined)
+    def set$inVarargs(value: T*): Self = StObject.set(x, "$in", js.Array(value :_*))
     
     @scala.inline
-    def set$inVarargs(value: T*): Self = this.set("$in", js.Array(value :_*))
+    def set$jsonSchema(value: js.Any): Self = StObject.set(x, "$jsonSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$in(value: js.Array[T]): Self = this.set("$in", value.asInstanceOf[js.Any])
+    def set$jsonSchemaUndefined: Self = StObject.set(x, "$jsonSchema", js.undefined)
     
     @scala.inline
-    def delete$in: Self = this.set("$in", js.undefined)
+    def set$lt(value: T): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$jsonSchema(value: js.Any): Self = this.set("$jsonSchema", value.asInstanceOf[js.Any])
+    def set$ltUndefined: Self = StObject.set(x, "$lt", js.undefined)
     
     @scala.inline
-    def delete$jsonSchema: Self = this.set("$jsonSchema", js.undefined)
+    def set$lte(value: T): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$lt(value: T): Self = this.set("$lt", value.asInstanceOf[js.Any])
+    def set$lteUndefined: Self = StObject.set(x, "$lte", js.undefined)
     
     @scala.inline
-    def delete$lt: Self = this.set("$lt", js.undefined)
+    def set$maxDistance(value: scala.Double): Self = StObject.set(x, "$maxDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$lte(value: T): Self = this.set("$lte", value.asInstanceOf[js.Any])
+    def set$maxDistanceUndefined: Self = StObject.set(x, "$maxDistance", js.undefined)
     
     @scala.inline
-    def delete$lte: Self = this.set("$lte", js.undefined)
+    def set$mod(value: js.Tuple2[scala.Double, scala.Double]): Self = StObject.set(x, "$mod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$maxDistance(value: scala.Double): Self = this.set("$maxDistance", value.asInstanceOf[js.Any])
+    def set$modUndefined: Self = StObject.set(x, "$mod", js.undefined)
     
     @scala.inline
-    def delete$maxDistance: Self = this.set("$maxDistance", js.undefined)
+    def set$ne(value: T): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$mod(value: js.Tuple2[scala.Double, scala.Double]): Self = this.set("$mod", value.asInstanceOf[js.Any])
+    def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
     
     @scala.inline
-    def delete$mod: Self = this.set("$mod", js.undefined)
+    def set$near(value: js.Object): Self = StObject.set(x, "$near", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$ne(value: T): Self = this.set("$ne", value.asInstanceOf[js.Any])
+    def set$nearSphere(value: js.Object): Self = StObject.set(x, "$nearSphere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$ne: Self = this.set("$ne", js.undefined)
+    def set$nearSphereUndefined: Self = StObject.set(x, "$nearSphere", js.undefined)
     
     @scala.inline
-    def set$near(value: js.Object): Self = this.set("$near", value.asInstanceOf[js.Any])
+    def set$nearUndefined: Self = StObject.set(x, "$near", js.undefined)
     
     @scala.inline
-    def delete$near: Self = this.set("$near", js.undefined)
+    def set$nin(value: js.Array[T]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$nearSphere(value: js.Object): Self = this.set("$nearSphere", value.asInstanceOf[js.Any])
+    def set$ninUndefined: Self = StObject.set(x, "$nin", js.undefined)
     
     @scala.inline
-    def delete$nearSphere: Self = this.set("$nearSphere", js.undefined)
+    def set$ninVarargs(value: T*): Self = StObject.set(x, "$nin", js.Array(value :_*))
     
     @scala.inline
-    def set$ninVarargs(value: T*): Self = this.set("$nin", js.Array(value :_*))
+    def set$not(value: QuerySelector[T] | RegExp): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$nin(value: js.Array[T]): Self = this.set("$nin", value.asInstanceOf[js.Any])
+    def set$notUndefined: Self = StObject.set(x, "$not", js.undefined)
     
     @scala.inline
-    def delete$nin: Self = this.set("$nin", js.undefined)
+    def set$options(value: String): Self = StObject.set(x, "$options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$not(value: QuerySelector[T] | RegExp): Self = this.set("$not", value.asInstanceOf[js.Any])
+    def set$optionsUndefined: Self = StObject.set(x, "$options", js.undefined)
     
     @scala.inline
-    def delete$not: Self = this.set("$not", js.undefined)
+    def set$regex(value: RegExp | String): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$options(value: String): Self = this.set("$options", value.asInstanceOf[js.Any])
+    def set$regexUndefined: Self = StObject.set(x, "$regex", js.undefined)
     
     @scala.inline
-    def delete$options: Self = this.set("$options", js.undefined)
+    def set$size(value: scala.Double): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$regex(value: RegExp | String): Self = this.set("$regex", value.asInstanceOf[js.Any])
+    def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
     
     @scala.inline
-    def delete$regex: Self = this.set("$regex", js.undefined)
+    def set$type(value: BSONType | BSONTypeAlias): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$size(value: scala.Double): Self = this.set("$size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$size: Self = this.set("$size", js.undefined)
-    
-    @scala.inline
-    def set$type(value: BSONType | BSONTypeAlias): Self = this.set("$type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$type: Self = this.set("$type", js.undefined)
+    def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
   }
 }

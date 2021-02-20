@@ -1,5 +1,6 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mapboxGl.mapboxGlStrings.loaded
   - typings.mapboxGl.mapboxGlStrings.error
 */
-trait PluginStatus extends js.Object
+trait PluginStatus extends StObject
 object PluginStatus {
   
   @scala.inline

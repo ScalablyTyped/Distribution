@@ -1,12 +1,13 @@
 package typings.wordpressViewport
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/viewport/store/selectors", JSImport.Namespace)
-@js.native
-object selectorsMod extends js.Object {
+object selectorsMod {
   
+  @JSImport("@wordpress/viewport/store/selectors", "isViewportMatch")
+  @js.native
   def isViewportMatch(query: String): Boolean = js.native
 }

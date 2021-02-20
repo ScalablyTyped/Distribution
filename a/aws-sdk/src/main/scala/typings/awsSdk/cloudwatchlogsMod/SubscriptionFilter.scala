@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionFilter extends js.Object {
+trait SubscriptionFilter extends StObject {
   
   /**
     * The creation time of the subscription filter, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
@@ -45,60 +46,48 @@ object SubscriptionFilter {
   }
   
   @scala.inline
-  implicit class SubscriptionFilterOps[Self <: SubscriptionFilter] (val x: Self) extends AnyVal {
+  implicit class SubscriptionFilterMutableBuilder[Self <: SubscriptionFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationArn(value: DestinationArn): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setDestinationArnUndefined: Self = StObject.set(x, "destinationArn", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationArn(value: DestinationArn): Self = this.set("destinationArn", value.asInstanceOf[js.Any])
+    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
     @scala.inline
-    def deleteDestinationArn: Self = this.set("destinationArn", js.undefined)
+    def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistribution(value: Distribution): Self = this.set("distribution", value.asInstanceOf[js.Any])
+    def setFilterNameUndefined: Self = StObject.set(x, "filterName", js.undefined)
     
     @scala.inline
-    def deleteDistribution: Self = this.set("distribution", js.undefined)
+    def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterName(value: FilterName): Self = this.set("filterName", value.asInstanceOf[js.Any])
+    def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
     
     @scala.inline
-    def deleteFilterName: Self = this.set("filterName", js.undefined)
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterPattern(value: FilterPattern): Self = this.set("filterPattern", value.asInstanceOf[js.Any])
+    def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     
     @scala.inline
-    def deleteFilterPattern: Self = this.set("filterPattern", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogGroupName: Self = this.set("logGroupName", js.undefined)
-    
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

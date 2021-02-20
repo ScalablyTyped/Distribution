@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** Parameters for the `message` operation. */
 @js.native
-trait MessageParams extends js.Object {
+trait MessageParams extends StObject {
   
   /** Whether to return more than one intent. A value of `true` indicates that all matching intents are returned. */
   var alternate_intents: js.UndefOr[Boolean] = js.native
@@ -48,81 +49,69 @@ object MessageParams {
   }
   
   @scala.inline
-  implicit class MessageParamsOps[Self <: MessageParams] (val x: Self) extends AnyVal {
+  implicit class MessageParamsMutableBuilder[Self <: MessageParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate_intents(value: Boolean): Self = StObject.set(x, "alternate_intents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternate_intentsUndefined: Self = StObject.set(x, "alternate_intents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspace_id(value: String): Self = this.set("workspace_id", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setAlternate_intents(value: Boolean): Self = this.set("alternate_intents", value.asInstanceOf[js.Any])
+    def setEntities(value: js.Array[RuntimeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlternate_intents: Self = this.set("alternate_intents", js.undefined)
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def setContext(value: Context): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setEntitiesVarargs(value: RuntimeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitiesVarargs(value: RuntimeEntity*): Self = this.set("entities", js.Array(value :_*))
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setEntities(value: js.Array[RuntimeEntity]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setIntents(value: js.Array[RuntimeIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
     @scala.inline
-    def setInput(value: MessageInput): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setIntentsVarargs(value: RuntimeIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setNodes_visited_details(value: Boolean): Self = StObject.set(x, "nodes_visited_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentsVarargs(value: RuntimeIntent*): Self = this.set("intents", js.Array(value :_*))
+    def setNodes_visited_detailsUndefined: Self = StObject.set(x, "nodes_visited_details", js.undefined)
     
     @scala.inline
-    def setIntents(value: js.Array[RuntimeIntent]): Self = this.set("intents", value.asInstanceOf[js.Any])
+    def setOutput(value: OutputData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntents: Self = this.set("intents", js.undefined)
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def setNodes_visited_details(value: Boolean): Self = this.set("nodes_visited_details", value.asInstanceOf[js.Any])
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodes_visited_details: Self = this.set("nodes_visited_details", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def setOutput(value: OutputData): Self = this.set("output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
   }
 }

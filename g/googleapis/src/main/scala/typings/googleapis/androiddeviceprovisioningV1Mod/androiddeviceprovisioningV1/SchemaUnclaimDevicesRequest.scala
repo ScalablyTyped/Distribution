@@ -1,5 +1,6 @@
 package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovisioningV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to unclaim devices asynchronously in batch.
   */
 @js.native
-trait SchemaUnclaimDevicesRequest extends js.Object {
+trait SchemaUnclaimDevicesRequest extends StObject {
   
   /**
     * Required. The list of devices to unclaim.
@@ -24,27 +25,15 @@ object SchemaUnclaimDevicesRequest {
   }
   
   @scala.inline
-  implicit class SchemaUnclaimDevicesRequestOps[Self <: SchemaUnclaimDevicesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUnclaimDevicesRequestMutableBuilder[Self <: SchemaUnclaimDevicesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUnclaims(value: js.Array[SchemaPartnerUnclaim]): Self = StObject.set(x, "unclaims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUnclaimsUndefined: Self = StObject.set(x, "unclaims", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUnclaimsVarargs(value: SchemaPartnerUnclaim*): Self = this.set("unclaims", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnclaims(value: js.Array[SchemaPartnerUnclaim]): Self = this.set("unclaims", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnclaims: Self = this.set("unclaims", js.undefined)
+    def setUnclaimsVarargs(value: SchemaPartnerUnclaim*): Self = StObject.set(x, "unclaims", js.Array(value :_*))
   }
 }

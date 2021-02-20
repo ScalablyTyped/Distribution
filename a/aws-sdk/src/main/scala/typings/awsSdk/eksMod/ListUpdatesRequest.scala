@@ -1,11 +1,12 @@
 package typings.awsSdk.eksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUpdatesRequest extends js.Object {
+trait ListUpdatesRequest extends StObject {
   
   /**
     * The maximum number of update results returned by ListUpdates in paginated output. When you use this parameter, ListUpdates returns only maxResults results in a single page along with a nextToken response element. You can see the remaining results of the initial request by sending another ListUpdates request with the returned nextToken value. This value can be between 1 and 100. If you don't use this parameter, ListUpdates returns up to 100 results and a nextToken value if applicable.
@@ -36,39 +37,27 @@ object ListUpdatesRequest {
   }
   
   @scala.inline
-  implicit class ListUpdatesRequestOps[Self <: ListUpdatesRequest] (val x: Self) extends AnyVal {
+  implicit class ListUpdatesRequestMutableBuilder[Self <: ListUpdatesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: ListUpdatesRequestMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: ListUpdatesRequestMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setNodegroupName(value: String): Self = this.set("nodegroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodegroupName: Self = this.set("nodegroupName", js.undefined)
+    def setNodegroupNameUndefined: Self = StObject.set(x, "nodegroupName", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.chromeApps.chrome.runtime
 import typings.chromeApps.anon.Accepttlschannelid
 import typings.chromeApps.anon.Background
 import typings.chromeApps.chromeAppsNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

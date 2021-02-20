@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeComplianceByResourceRequest extends js.Object {
+trait DescribeComplianceByResourceRequest extends StObject {
   
   /**
     * Filters the results by compliance. The allowed values are COMPLIANT, NON_COMPLIANT, and INSUFFICIENT_DATA.
@@ -41,51 +42,39 @@ object DescribeComplianceByResourceRequest {
   }
   
   @scala.inline
-  implicit class DescribeComplianceByResourceRequestOps[Self <: DescribeComplianceByResourceRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeComplianceByResourceRequestMutableBuilder[Self <: DescribeComplianceByResourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceTypes(value: ComplianceTypes): Self = StObject.set(x, "ComplianceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceTypesUndefined: Self = StObject.set(x, "ComplianceTypes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceTypesVarargs(value: ComplianceType*): Self = StObject.set(x, "ComplianceTypes", js.Array(value :_*))
     
     @scala.inline
-    def setComplianceTypesVarargs(value: ComplianceType*): Self = this.set("ComplianceTypes", js.Array(value :_*))
+    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceTypes(value: ComplianceTypes): Self = this.set("ComplianceTypes", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteComplianceTypes: Self = this.set("ComplianceTypes", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setResourceId(value: BaseResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: BaseResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: StringWithCharLimit256): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object FontSlantEnumValues {
   }
   
   @scala.inline
-  implicit class FontSlantEnumValuesOps[Self <: FontSlantEnumValues] (val x: Self) extends AnyVal {
+  implicit class FontSlantEnumValuesMutableBuilder[Self <: FontSlantEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItalic(value: FontSlant): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOblique(value: FontSlant): Self = StObject.set(x, "Oblique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItalic(value: FontSlant): Self = this.set("Italic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOblique(value: FontSlant): Self = this.set("Oblique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpright(value: FontSlant): Self = this.set("Upright", value.asInstanceOf[js.Any])
+    def setUpright(value: FontSlant): Self = StObject.set(x, "Upright", value.asInstanceOf[js.Any])
   }
 }

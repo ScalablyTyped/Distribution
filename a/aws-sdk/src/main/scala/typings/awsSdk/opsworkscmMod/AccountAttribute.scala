@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworkscmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountAttribute extends js.Object {
+trait AccountAttribute extends StObject {
   
   /**
     *  The maximum allowed value. 
@@ -31,36 +32,24 @@ object AccountAttribute {
   }
   
   @scala.inline
-  implicit class AccountAttributeOps[Self <: AccountAttribute] (val x: Self) extends AnyVal {
+  implicit class AccountAttributeMutableBuilder[Self <: AccountAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximum(value: Integer): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: Integer): Self = this.set("Maximum", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMaximum: Self = this.set("Maximum", js.undefined)
+    def setUsed(value: Integer): Self = StObject.set(x, "Used", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setUsed(value: Integer): Self = this.set("Used", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsed: Self = this.set("Used", js.undefined)
+    def setUsedUndefined: Self = StObject.set(x, "Used", js.undefined)
   }
 }

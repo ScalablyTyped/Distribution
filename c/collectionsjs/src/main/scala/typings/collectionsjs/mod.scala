@@ -1,15 +1,27 @@
 package typings.collectionsjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("collectionsjs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("collectionsjs", JSImport.Default)
+  @js.native
+  class default[T] () extends Collection[T] {
+    def this(items: js.Array[T]) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("collectionsjs", "default.macro")
+    @js.native
+    def `macro`(name: String, callback: js.Function2[/* coll */ Collection[_], /* repeated */ js.Any, _]): Unit = js.native
+  }
   
   @js.native
-  trait Collection[T] extends js.Object {
+  trait Collection[T] extends StObject {
     
     def add(item: T): Collection[T] = js.native
     
@@ -96,16 +108,5 @@ object mod extends js.Object {
     
     def zip(array: js.Array[T]): Collection[T] = js.native
     def zip(array: Collection[T]): Collection[T] = js.native
-  }
-  
-  @js.native
-  class default[T] () extends Collection[T] {
-    def this(items: js.Array[T]) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def `macro`(name: String, callback: js.Function2[/* coll */ Collection[_], /* repeated */ js.Any, _]): Unit = js.native
   }
 }

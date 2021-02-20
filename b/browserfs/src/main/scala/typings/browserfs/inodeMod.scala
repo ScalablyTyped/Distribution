@@ -1,16 +1,31 @@
 package typings.browserfs
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("browserfs/dist/node/generic/inode", JSImport.Namespace)
-@js.native
-object inodeMod extends js.Object {
+object inodeMod {
+  
+  @JSImport("browserfs/dist/node/generic/inode", JSImport.Default)
+  @js.native
+  class default protected () extends Inode {
+    def this(id: String, size: Double, mode: Double, atime: Double, mtime: Double, ctime: Double) = this()
+  }
+  /* static members */
+  object default {
+    
+    /**
+      * Converts the buffer into an Inode.
+      */
+    @JSImport("browserfs/dist/node/generic/inode", "default.fromBuffer")
+    @js.native
+    def fromBuffer(buffer: Buffer): Inode = js.native
+  }
   
   @js.native
-  trait Inode extends js.Object {
+  trait Inode extends StObject {
     
     var atime: Double = js.native
     
@@ -61,19 +76,5 @@ object inodeMod extends js.Object {
       * @return True if any changes have occurred.
       */
     def update(stats: typings.browserfs.nodeFsStatsMod.default): Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends Inode {
-    def this(id: String, size: Double, mode: Double, atime: Double, mtime: Double, ctime: Double) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    /**
-      * Converts the buffer into an Inode.
-      */
-    def fromBuffer(buffer: Buffer): Inode = js.native
   }
 }

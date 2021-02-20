@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Enables basic storage and retrieval of dates and times.
   */
 @js.native
-trait Date extends js.Object {
+trait Date extends StObject {
   
   /** Gets the day-of-the-month, using local time. */
   def getDate(): Double = js.native

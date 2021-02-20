@@ -1,12 +1,13 @@
 package typings.azure.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageAccessCondition extends js.Object {
+trait StorageAccessCondition extends StObject {
   
   var `If-Match`: String = js.native
   
@@ -34,30 +35,18 @@ object StorageAccessCondition {
   }
   
   @scala.inline
-  implicit class StorageAccessConditionOps[Self <: StorageAccessCondition] (val x: Self) extends AnyVal {
+  implicit class StorageAccessConditionMutableBuilder[Self <: StorageAccessCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setIf-Match`(value: String): Self = StObject.set(x, "If-Match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setIf-Modified-Since`(value: Date): Self = StObject.set(x, "If-Modified-Since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setIf-None-Match`(value: String): Self = StObject.set(x, "If-None-Match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIf-Match`(value: String): Self = this.set("If-Match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setIf-Modified-Since`(value: Date): Self = this.set("If-Modified-Since", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setIf-None-Match`(value: String): Self = this.set("If-None-Match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setIf-Unmodified-Since`(value: Date): Self = this.set("If-Unmodified-Since", value.asInstanceOf[js.Any])
+    def `setIf-Unmodified-Since`(value: Date): Self = StObject.set(x, "If-Unmodified-Since", value.asInstanceOf[js.Any])
   }
 }

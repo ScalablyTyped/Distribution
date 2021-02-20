@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListServicesResponse extends js.Object {
+trait ListServicesResponse extends StObject {
   
   /**
     * If the response contains NextToken, submit another ListServices request to get the next group of results. Specify the value of NextToken from the previous response in the next request.  AWS Cloud Map gets MaxResults services and then filters them based on the specified criteria. It's possible that no services in the first MaxResults services matched the specified criteria but that subsequent groups of MaxResults services do contain services that match the criteria. 
@@ -26,33 +27,21 @@ object ListServicesResponse {
   }
   
   @scala.inline
-  implicit class ListServicesResponseOps[Self <: ListServicesResponse] (val x: Self) extends AnyVal {
+  implicit class ListServicesResponseMutableBuilder[Self <: ListServicesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServices(value: ServiceSummariesList): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setServicesVarargs(value: ServiceSummary*): Self = this.set("Services", js.Array(value :_*))
-    
-    @scala.inline
-    def setServices(value: ServiceSummariesList): Self = this.set("Services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServices: Self = this.set("Services", js.undefined)
+    def setServicesVarargs(value: ServiceSummary*): Self = StObject.set(x, "Services", js.Array(value :_*))
   }
 }

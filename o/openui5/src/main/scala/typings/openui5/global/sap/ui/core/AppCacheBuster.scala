@@ -1,12 +1,11 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.AppCacheBuster")
-@js.native
-object AppCacheBuster extends js.Object {
+object AppCacheBuster {
   
   /**
     * Converts the given URL if it matches a URL in the cachebuster index.If not then the same URL will be
@@ -15,6 +14,8 @@ object AppCacheBuster extends js.Object {
     * @param sUrl any URL
     * @returns modified URL when matching the index or unmodified when not
     */
+  @JSGlobal("sap.ui.core.AppCacheBuster.convertURL")
+  @js.native
   def convertURL(sUrl: String): String = js.native
   
   /**
@@ -23,6 +24,8 @@ object AppCacheBuster extends js.Object {
     * @param sUrl any URL
     * @returns <code>true</code> to rewrite or <code>false</code> to ignore
     */
+  @JSGlobal("sap.ui.core.AppCacheBuster.handleURL")
+  @js.native
   def handleURL(sUrl: String): Boolean = js.native
   
   /**
@@ -30,6 +33,8 @@ object AppCacheBuster extends js.Object {
     * @param sUrl any URL
     * @returns normalized URL
     */
+  @JSGlobal("sap.ui.core.AppCacheBuster.normalizeURL")
+  @js.native
   def normalizeURL(sUrl: String): String = js.native
   
   /**
@@ -38,5 +43,7 @@ object AppCacheBuster extends js.Object {
     * file.
     * @param base URL of an application providing a cachebuster index file
     */
+  @JSGlobal("sap.ui.core.AppCacheBuster.register")
+  @js.native
   def register(base: String): Unit = js.native
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.com_.sun.star.task.ClassifiedInteractionRequest
 import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,27 +52,15 @@ object NameClashResolveRequest {
   }
   
   @scala.inline
-  implicit class NameClashResolveRequestOps[Self <: NameClashResolveRequest] (val x: Self) extends AnyVal {
+  implicit class NameClashResolveRequestMutableBuilder[Self <: NameClashResolveRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClashingName(value: String): Self = StObject.set(x, "ClashingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProposedNewName(value: String): Self = StObject.set(x, "ProposedNewName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClashingName(value: String): Self = this.set("ClashingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProposedNewName(value: String): Self = this.set("ProposedNewName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetFolderURL(value: String): Self = this.set("TargetFolderURL", value.asInstanceOf[js.Any])
+    def setTargetFolderURL(value: String): Self = StObject.set(x, "TargetFolderURL", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.importRule
 import typings.devtoolsProtocol.devtoolsProtocolStrings.inlineSheet
 import typings.devtoolsProtocol.devtoolsProtocolStrings.linkedSheet
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mediaRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.linkedSheet
   - typings.devtoolsProtocol.devtoolsProtocolStrings.inlineSheet
 */
-trait CSSMediaSource extends js.Object
+trait CSSMediaSource extends StObject
 object CSSMediaSource {
   
   @scala.inline

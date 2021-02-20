@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.direct
   - typings.std.stdStrings.stylus
 */
-trait TouchType extends js.Object
+trait TouchType extends StObject
 object TouchType {
   
   @scala.inline

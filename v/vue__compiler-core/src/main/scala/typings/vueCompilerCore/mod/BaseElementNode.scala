@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,45 +43,33 @@ object BaseElementNode {
   }
   
   @scala.inline
-  implicit class BaseElementNodeOps[Self <: BaseElementNode] (val x: Self) extends AnyVal {
+  implicit class BaseElementNodeMutableBuilder[Self <: BaseElementNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: TemplateChildNode*): Self = this.set("children", js.Array(value :_*))
+    def setNs(value: Namespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[TemplateChildNode]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setProps(value: js.Array[AttributeNode | DirectiveNode]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSelfClosing(value: Boolean): Self = this.set("isSelfClosing", value.asInstanceOf[js.Any])
+    def setPropsVarargs(value: (AttributeNode | DirectiveNode)*): Self = StObject.set(x, "props", js.Array(value :_*))
     
     @scala.inline
-    def setNs(value: Namespace): Self = this.set("ns", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropsVarargs(value: (AttributeNode | DirectiveNode)*): Self = this.set("props", js.Array(value :_*))
+    def setTagType(value: ElementTypes): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProps(value: js.Array[AttributeNode | DirectiveNode]): Self = this.set("props", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagType(value: ElementTypes): Self = this.set("tagType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `1`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `1`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

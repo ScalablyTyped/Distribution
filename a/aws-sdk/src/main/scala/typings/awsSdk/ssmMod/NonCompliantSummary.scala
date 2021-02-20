@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NonCompliantSummary extends js.Object {
+trait NonCompliantSummary extends StObject {
   
   /**
     * The total number of compliance items that are not compliant.
@@ -26,30 +27,18 @@ object NonCompliantSummary {
   }
   
   @scala.inline
-  implicit class NonCompliantSummaryOps[Self <: NonCompliantSummary] (val x: Self) extends AnyVal {
+  implicit class NonCompliantSummaryMutableBuilder[Self <: NonCompliantSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNonCompliantCount(value: ComplianceSummaryCount): Self = StObject.set(x, "NonCompliantCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNonCompliantCountUndefined: Self = StObject.set(x, "NonCompliantCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeveritySummary(value: SeveritySummary): Self = StObject.set(x, "SeveritySummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonCompliantCount(value: ComplianceSummaryCount): Self = this.set("NonCompliantCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonCompliantCount: Self = this.set("NonCompliantCount", js.undefined)
-    
-    @scala.inline
-    def setSeveritySummary(value: SeveritySummary): Self = this.set("SeveritySummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeveritySummary: Self = this.set("SeveritySummary", js.undefined)
+    def setSeveritySummaryUndefined: Self = StObject.set(x, "SeveritySummary", js.undefined)
   }
 }

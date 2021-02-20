@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/content/select-all", JSImport.Namespace)
-@js.native
-object selectAllMod extends js.Object {
+object selectAllMod {
   
+  @JSImport("material-ui/svg-icons/content/select-all", JSImport.Default)
+  @js.native
+  class default () extends ContentSelectAll
+  
+  @JSImport("material-ui/svg-icons/content/select-all", "ContentSelectAll")
   @js.native
   class ContentSelectAll ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

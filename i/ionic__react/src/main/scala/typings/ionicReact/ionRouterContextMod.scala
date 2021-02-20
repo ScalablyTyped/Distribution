@@ -6,20 +6,23 @@ import typings.ionicReact.routeInfoMod.RouteInfo
 import typings.ionicReact.routerDirectionMod.RouterDirection
 import typings.ionicReact.routerOptionsMod.RouterOptions
 import typings.react.mod.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/react/dist/types/components/IonRouterContext", JSImport.Namespace)
-@js.native
-object ionRouterContextMod extends js.Object {
+object ionRouterContextMod {
   
+  @JSImport("@ionic/react/dist/types/components/IonRouterContext", "IonRouterContext")
+  @js.native
   val IonRouterContext: Context[IonRouterContextState] = js.native
   
+  @JSImport("@ionic/react/dist/types/components/IonRouterContext", "useIonRouter")
+  @js.native
   def useIonRouter(): IonRouterContextState = js.native
   
   @js.native
-  trait IonRouterContextState extends js.Object {
+  trait IonRouterContextState extends StObject {
     
     def back(): Unit = js.native
     def back(animationBuilder: AnimationBuilder): Unit = js.native

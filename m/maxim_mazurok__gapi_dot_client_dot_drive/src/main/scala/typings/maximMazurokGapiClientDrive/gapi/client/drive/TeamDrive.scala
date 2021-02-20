@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientDrive.gapi.client.drive
 import typings.maximMazurokGapiClientDrive.anon.CanChangeCopyRequiresWriterPermissionRestriction
 import typings.maximMazurokGapiClientDrive.anon.CopyRequiresWriterPermission
 import typings.maximMazurokGapiClientDrive.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamDrive extends js.Object {
+trait TeamDrive extends StObject {
   
   /**
     * An image file and cropping parameters from which a background image for this Team Drive is set. This is a write only field; it can only be set on drive.teamdrives.update requests
@@ -56,78 +57,66 @@ object TeamDrive {
   }
   
   @scala.inline
-  implicit class TeamDriveOps[Self <: TeamDrive] (val x: Self) extends AnyVal {
+  implicit class TeamDriveMutableBuilder[Self <: TeamDrive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundImageFile(value: Id): Self = StObject.set(x, "backgroundImageFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundImageFileUndefined: Self = StObject.set(x, "backgroundImageFile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundImageLink(value: String): Self = StObject.set(x, "backgroundImageLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundImageFile(value: Id): Self = this.set("backgroundImageFile", value.asInstanceOf[js.Any])
+    def setBackgroundImageLinkUndefined: Self = StObject.set(x, "backgroundImageLink", js.undefined)
     
     @scala.inline
-    def deleteBackgroundImageFile: Self = this.set("backgroundImageFile", js.undefined)
+    def setCapabilities(value: CanChangeCopyRequiresWriterPermissionRestriction): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundImageLink(value: String): Self = this.set("backgroundImageLink", value.asInstanceOf[js.Any])
+    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     @scala.inline
-    def deleteBackgroundImageLink: Self = this.set("backgroundImageLink", js.undefined)
+    def setColorRgb(value: String): Self = StObject.set(x, "colorRgb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: CanChangeCopyRequiresWriterPermissionRestriction): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setColorRgbUndefined: Self = StObject.set(x, "colorRgb", js.undefined)
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    def setCreatedTime(value: String): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorRgb(value: String): Self = this.set("colorRgb", value.asInstanceOf[js.Any])
+    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
     @scala.inline
-    def deleteColorRgb: Self = this.set("colorRgb", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: String): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRestrictions(value: CopyRequiresWriterPermission): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setThemeId(value: String): Self = StObject.set(x, "themeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictions(value: CopyRequiresWriterPermission): Self = this.set("restrictions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrictions: Self = this.set("restrictions", js.undefined)
-    
-    @scala.inline
-    def setThemeId(value: String): Self = this.set("themeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThemeId: Self = this.set("themeId", js.undefined)
+    def setThemeIdUndefined: Self = StObject.set(x, "themeId", js.undefined)
   }
 }

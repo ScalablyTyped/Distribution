@@ -4,6 +4,7 @@ import typings.babelTypes.babelTypesStrings.ObjectMethod
 import typings.babelTypes.babelTypesStrings.get
 import typings.babelTypes.babelTypesStrings.method
 import typings.babelTypes.babelTypesStrings.set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,75 +74,63 @@ object ObjectMethod_ {
   }
   
   @scala.inline
-  implicit class ObjectMethod_Ops[Self <: ObjectMethod_] (val x: Self) extends AnyVal {
+  implicit class ObjectMethod_MutableBuilder[Self <: ObjectMethod_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: BlockStatement_): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
     @scala.inline
-    def setComputed(value: Boolean): Self = this.set("computed", value.asInstanceOf[js.Any])
+    def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
     @scala.inline
-    def setGenerator(value: Boolean): Self = this.set("generator", value.asInstanceOf[js.Any])
+    def setGenerator(value: Boolean): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Identifier_): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Expression): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: get | set | method): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: get | set | method): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: LVal*): Self = this.set("params", js.Array(value :_*))
+    def setParams(value: js.Array[LVal]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Array[LVal]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setParamsVarargs(value: LVal*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setShorthand(value: Boolean): Self = this.set("shorthand", value.asInstanceOf[js.Any])
+    def setReturnType(value: TypeAnnotation_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ObjectMethod): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     
     @scala.inline
-    def setValue(value: Expression): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecoratorsVarargs(value: Decorator_ *): Self = this.set("decorators", js.Array(value :_*))
+    def setType(value: ObjectMethod): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorators(value: js.Array[Decorator_]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
     
     @scala.inline
-    def setReturnType(value: TypeAnnotation_): Self = this.set("returnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnType: Self = this.set("returnType", js.undefined)
-    
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeParameters: Self = this.set("typeParameters", js.undefined)
+    def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

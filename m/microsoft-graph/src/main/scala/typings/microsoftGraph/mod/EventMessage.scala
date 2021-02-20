@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,108 +47,96 @@ object EventMessage {
   }
   
   @scala.inline
-  implicit class EventMessageOps[Self <: EventMessage] (val x: Self) extends AnyVal {
+  implicit class EventMessageMutableBuilder[Self <: EventMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
     @scala.inline
-    def setEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("endDateTime", value.asInstanceOf[js.Any])
+    def setEvent(value: NullableOption[Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndDateTime: Self = this.set("endDateTime", js.undefined)
+    def setEventNull: Self = StObject.set(x, "event", null)
     
     @scala.inline
-    def setEndDateTimeNull: Self = this.set("endDateTime", null)
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def setEvent(value: NullableOption[Event]): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setIsAllDay(value: NullableOption[Boolean]): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setIsAllDayNull: Self = StObject.set(x, "isAllDay", null)
     
     @scala.inline
-    def setEventNull: Self = this.set("event", null)
+    def setIsAllDayUndefined: Self = StObject.set(x, "isAllDay", js.undefined)
     
     @scala.inline
-    def setIsAllDay(value: NullableOption[Boolean]): Self = this.set("isAllDay", value.asInstanceOf[js.Any])
+    def setIsDelegated(value: NullableOption[Boolean]): Self = StObject.set(x, "isDelegated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAllDay: Self = this.set("isAllDay", js.undefined)
+    def setIsDelegatedNull: Self = StObject.set(x, "isDelegated", null)
     
     @scala.inline
-    def setIsAllDayNull: Self = this.set("isAllDay", null)
+    def setIsDelegatedUndefined: Self = StObject.set(x, "isDelegated", js.undefined)
     
     @scala.inline
-    def setIsDelegated(value: NullableOption[Boolean]): Self = this.set("isDelegated", value.asInstanceOf[js.Any])
+    def setIsOutOfDate(value: NullableOption[Boolean]): Self = StObject.set(x, "isOutOfDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDelegated: Self = this.set("isDelegated", js.undefined)
+    def setIsOutOfDateNull: Self = StObject.set(x, "isOutOfDate", null)
     
     @scala.inline
-    def setIsDelegatedNull: Self = this.set("isDelegated", null)
+    def setIsOutOfDateUndefined: Self = StObject.set(x, "isOutOfDate", js.undefined)
     
     @scala.inline
-    def setIsOutOfDate(value: NullableOption[Boolean]): Self = this.set("isOutOfDate", value.asInstanceOf[js.Any])
+    def setLocation(value: NullableOption[Location]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsOutOfDate: Self = this.set("isOutOfDate", js.undefined)
+    def setLocationNull: Self = StObject.set(x, "location", null)
     
     @scala.inline
-    def setIsOutOfDateNull: Self = this.set("isOutOfDate", null)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setLocation(value: NullableOption[Location]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMeetingMessageType(value: NullableOption[MeetingMessageType]): Self = StObject.set(x, "meetingMessageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMeetingMessageTypeNull: Self = StObject.set(x, "meetingMessageType", null)
     
     @scala.inline
-    def setLocationNull: Self = this.set("location", null)
+    def setMeetingMessageTypeUndefined: Self = StObject.set(x, "meetingMessageType", js.undefined)
     
     @scala.inline
-    def setMeetingMessageType(value: NullableOption[MeetingMessageType]): Self = this.set("meetingMessageType", value.asInstanceOf[js.Any])
+    def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMeetingMessageType: Self = this.set("meetingMessageType", js.undefined)
+    def setRecurrenceNull: Self = StObject.set(x, "recurrence", null)
     
     @scala.inline
-    def setMeetingMessageTypeNull: Self = this.set("meetingMessageType", null)
+    def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
     @scala.inline
-    def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = this.set("recurrence", value.asInstanceOf[js.Any])
+    def setStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecurrence: Self = this.set("recurrence", js.undefined)
+    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
     @scala.inline
-    def setRecurrenceNull: Self = this.set("recurrence", null)
+    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
     @scala.inline
-    def setStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("startDateTime", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[EventType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartDateTime: Self = this.set("startDateTime", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setStartDateTimeNull: Self = this.set("startDateTime", null)
-    
-    @scala.inline
-    def setType(value: NullableOption[EventType]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

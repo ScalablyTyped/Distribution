@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.materialMod.Material
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/multiMaterial", JSImport.Namespace)
-@js.native
-object multiMaterialMod extends js.Object {
+object multiMaterialMod {
   
+  @JSImport("babylonjs/Materials/multiMaterial", "MultiMaterial")
   @js.native
   class MultiMaterial protected () extends Material {
     /**
@@ -50,8 +50,7 @@ object multiMaterialMod extends js.Object {
     def subMaterials_=(value: js.Array[Nullable[Material]]): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MultiMaterial extends js.Object {
+  object MultiMaterial {
     
     /**
       * Creates a MultiMaterial from parsed MultiMaterial data.
@@ -59,6 +58,8 @@ object multiMaterialMod extends js.Object {
       * @param scene defines the hosting scene
       * @returns a new MultiMaterial
       */
+    @JSImport("babylonjs/Materials/multiMaterial", "MultiMaterial.ParseMultiMaterial")
+    @js.native
     def ParseMultiMaterial(parsedMultiMaterial: js.Any, scene: Scene): MultiMaterial = js.native
   }
 }

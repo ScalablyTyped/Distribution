@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepositoryNameIdPair extends js.Object {
+trait RepositoryNameIdPair extends StObject {
   
   /**
     * The ID associated with the repository.
@@ -26,30 +27,18 @@ object RepositoryNameIdPair {
   }
   
   @scala.inline
-  implicit class RepositoryNameIdPairOps[Self <: RepositoryNameIdPair] (val x: Self) extends AnyVal {
+  implicit class RepositoryNameIdPairMutableBuilder[Self <: RepositoryNameIdPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepositoryId(value: RepositoryId): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepositoryIdUndefined: Self = StObject.set(x, "repositoryId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryId(value: RepositoryId): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryId: Self = this.set("repositoryId", js.undefined)
-    
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

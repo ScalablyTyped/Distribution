@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMotionControllerButtonMeshMap extends js.Object {
+trait IMotionControllerButtonMeshMap extends StObject {
   
   /**
     * the mesh that defines the pressed value mesh position.
@@ -33,27 +34,15 @@ object IMotionControllerButtonMeshMap {
   }
   
   @scala.inline
-  implicit class IMotionControllerButtonMeshMapOps[Self <: IMotionControllerButtonMeshMap] (val x: Self) extends AnyVal {
+  implicit class IMotionControllerButtonMeshMapMutableBuilder[Self <: IMotionControllerButtonMeshMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPressedMesh(value: AbstractMesh): Self = StObject.set(x, "pressedMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUnpressedMesh(value: AbstractMesh): Self = StObject.set(x, "unpressedMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPressedMesh(value: AbstractMesh): Self = this.set("pressedMesh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnpressedMesh(value: AbstractMesh): Self = this.set("unpressedMesh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueMesh(value: AbstractMesh): Self = this.set("valueMesh", value.asInstanceOf[js.Any])
+    def setValueMesh(value: AbstractMesh): Self = StObject.set(x, "valueMesh", value.asInstanceOf[js.Any])
   }
 }

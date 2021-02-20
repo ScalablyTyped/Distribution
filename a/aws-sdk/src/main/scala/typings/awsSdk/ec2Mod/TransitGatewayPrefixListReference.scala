@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitGatewayPrefixListReference extends js.Object {
+trait TransitGatewayPrefixListReference extends StObject {
   
   /**
     * Indicates whether traffic that matches this route is dropped.
@@ -46,54 +47,42 @@ object TransitGatewayPrefixListReference {
   }
   
   @scala.inline
-  implicit class TransitGatewayPrefixListReferenceOps[Self <: TransitGatewayPrefixListReference] (val x: Self) extends AnyVal {
+  implicit class TransitGatewayPrefixListReferenceMutableBuilder[Self <: TransitGatewayPrefixListReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlackhole(value: Boolean): Self = StObject.set(x, "Blackhole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlackholeUndefined: Self = StObject.set(x, "Blackhole", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackhole(value: Boolean): Self = this.set("Blackhole", value.asInstanceOf[js.Any])
+    def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
     
     @scala.inline
-    def deleteBlackhole: Self = this.set("Blackhole", js.undefined)
+    def setPrefixListOwnerId(value: String): Self = StObject.set(x, "PrefixListOwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = this.set("PrefixListId", value.asInstanceOf[js.Any])
+    def setPrefixListOwnerIdUndefined: Self = StObject.set(x, "PrefixListOwnerId", js.undefined)
     
     @scala.inline
-    def deletePrefixListId: Self = this.set("PrefixListId", js.undefined)
+    def setState(value: TransitGatewayPrefixListReferenceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixListOwnerId(value: String): Self = this.set("PrefixListOwnerId", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deletePrefixListOwnerId: Self = this.set("PrefixListOwnerId", js.undefined)
+    def setTransitGatewayAttachment(value: TransitGatewayPrefixListAttachment): Self = StObject.set(x, "TransitGatewayAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: TransitGatewayPrefixListReferenceState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTransitGatewayAttachmentUndefined: Self = StObject.set(x, "TransitGatewayAttachment", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitGatewayAttachment(value: TransitGatewayPrefixListAttachment): Self = this.set("TransitGatewayAttachment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayAttachment: Self = this.set("TransitGatewayAttachment", js.undefined)
-    
-    @scala.inline
-    def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = this.set("TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayRouteTableId: Self = this.set("TransitGatewayRouteTableId", js.undefined)
+    def setTransitGatewayRouteTableIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableId", js.undefined)
   }
 }

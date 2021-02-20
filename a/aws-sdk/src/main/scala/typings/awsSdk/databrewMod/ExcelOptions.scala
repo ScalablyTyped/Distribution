@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExcelOptions extends js.Object {
+trait ExcelOptions extends StObject {
   
   /**
     * Specifies one or more sheet numbers in the Excel file, which will be included in the dataset.
@@ -26,36 +27,24 @@ object ExcelOptions {
   }
   
   @scala.inline
-  implicit class ExcelOptionsOps[Self <: ExcelOptions] (val x: Self) extends AnyVal {
+  implicit class ExcelOptionsMutableBuilder[Self <: ExcelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSheetIndexes(value: SheetIndexList): Self = StObject.set(x, "SheetIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSheetIndexesUndefined: Self = StObject.set(x, "SheetIndexes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSheetIndexesVarargs(value: SheetIndex*): Self = StObject.set(x, "SheetIndexes", js.Array(value :_*))
     
     @scala.inline
-    def setSheetIndexesVarargs(value: SheetIndex*): Self = this.set("SheetIndexes", js.Array(value :_*))
+    def setSheetNames(value: SheetNameList): Self = StObject.set(x, "SheetNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetIndexes(value: SheetIndexList): Self = this.set("SheetIndexes", value.asInstanceOf[js.Any])
+    def setSheetNamesUndefined: Self = StObject.set(x, "SheetNames", js.undefined)
     
     @scala.inline
-    def deleteSheetIndexes: Self = this.set("SheetIndexes", js.undefined)
-    
-    @scala.inline
-    def setSheetNamesVarargs(value: SheetName*): Self = this.set("SheetNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setSheetNames(value: SheetNameList): Self = this.set("SheetNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetNames: Self = this.set("SheetNames", js.undefined)
+    def setSheetNamesVarargs(value: SheetName*): Self = StObject.set(x, "SheetNames", js.Array(value :_*))
   }
 }

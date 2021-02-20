@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDistributionRequest extends js.Object {
+trait UpdateDistributionRequest extends StObject {
   
   /**
     * An object that describes the cache behavior settings for the distribution.  The cacheBehaviorSettings specified in your UpdateDistributionRequest will replace your distribution's existing settings. 
@@ -46,54 +47,42 @@ object UpdateDistributionRequest {
   }
   
   @scala.inline
-  implicit class UpdateDistributionRequestOps[Self <: UpdateDistributionRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDistributionRequestMutableBuilder[Self <: UpdateDistributionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheBehaviorSettings(value: CacheSettings): Self = StObject.set(x, "cacheBehaviorSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheBehaviorSettingsUndefined: Self = StObject.set(x, "cacheBehaviorSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheBehaviors(value: CacheBehaviorList): Self = StObject.set(x, "cacheBehaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionName(value: ResourceName): Self = this.set("distributionName", value.asInstanceOf[js.Any])
+    def setCacheBehaviorsUndefined: Self = StObject.set(x, "cacheBehaviors", js.undefined)
     
     @scala.inline
-    def setCacheBehaviorSettings(value: CacheSettings): Self = this.set("cacheBehaviorSettings", value.asInstanceOf[js.Any])
+    def setCacheBehaviorsVarargs(value: CacheBehaviorPerPath*): Self = StObject.set(x, "cacheBehaviors", js.Array(value :_*))
     
     @scala.inline
-    def deleteCacheBehaviorSettings: Self = this.set("cacheBehaviorSettings", js.undefined)
+    def setDefaultCacheBehavior(value: CacheBehavior): Self = StObject.set(x, "defaultCacheBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheBehaviorsVarargs(value: CacheBehaviorPerPath*): Self = this.set("cacheBehaviors", js.Array(value :_*))
+    def setDefaultCacheBehaviorUndefined: Self = StObject.set(x, "defaultCacheBehavior", js.undefined)
     
     @scala.inline
-    def setCacheBehaviors(value: CacheBehaviorList): Self = this.set("cacheBehaviors", value.asInstanceOf[js.Any])
+    def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheBehaviors: Self = this.set("cacheBehaviors", js.undefined)
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCacheBehavior(value: CacheBehavior): Self = this.set("defaultCacheBehavior", value.asInstanceOf[js.Any])
+    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultCacheBehavior: Self = this.set("defaultCacheBehavior", js.undefined)
+    def setOrigin(value: InputOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
-    
-    @scala.inline
-    def setOrigin(value: InputOrigin): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

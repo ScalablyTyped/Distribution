@@ -7,16 +7,16 @@ import typings.raygun.typesMod.MessageBuilding
 import typings.raygun.typesMod.RawUserData
 import typings.raygun.typesMod.RequestParams
 import typings.raygun.typesMod.Tag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("raygun/build/raygun.messageBuilder", JSImport.Namespace)
-@js.native
-object raygunMessageBuilderMod extends js.Object {
+object raygunMessageBuilderMod {
   
+  @JSImport("raygun/build/raygun.messageBuilder", "RaygunMessageBuilder")
   @js.native
-  class RaygunMessageBuilder () extends js.Object {
+  class RaygunMessageBuilder () extends StObject {
     def this(options: MessageBuilderOptions) = this()
     
     var _filters: js.Array[String] = js.native

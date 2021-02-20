@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreshLogin extends js.Object {
+trait FreshLogin extends StObject {
   
   var freshLogin: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object FreshLogin {
   }
   
   @scala.inline
-  implicit class FreshLoginOps[Self <: FreshLogin] (val x: Self) extends AnyVal {
+  implicit class FreshLoginMutableBuilder[Self <: FreshLogin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFreshLogin(value: scala.Double): Self = StObject.set(x, "freshLogin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogin(value: scala.Double): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoOption(value: scala.Double): Self = StObject.set(x, "noOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreshLogin(value: scala.Double): Self = this.set("freshLogin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogin(value: scala.Double): Self = this.set("login", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoOption(value: scala.Double): Self = this.set("noOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectAccount(value: scala.Double): Self = this.set("selectAccount", value.asInstanceOf[js.Any])
+    def setSelectAccount(value: scala.Double): Self = StObject.set(x, "selectAccount", value.asInstanceOf[js.Any])
   }
 }

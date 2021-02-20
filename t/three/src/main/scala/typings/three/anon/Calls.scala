@@ -1,11 +1,12 @@
 package typings.three.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Calls extends js.Object {
+trait Calls extends StObject {
   
   var calls: Double = js.native
   
@@ -26,33 +27,21 @@ object Calls {
   }
   
   @scala.inline
-  implicit class CallsOps[Self <: Calls] (val x: Self) extends AnyVal {
+  implicit class CallsMutableBuilder[Self <: Calls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalls(value: Double): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalls(value: Double): Self = this.set("calls", value.asInstanceOf[js.Any])
+    def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame(value: Double): Self = this.set("frame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLines(value: Double): Self = this.set("lines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoints(value: Double): Self = this.set("points", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriangles(value: Double): Self = this.set("triangles", value.asInstanceOf[js.Any])
+    def setTriangles(value: Double): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
   }
 }

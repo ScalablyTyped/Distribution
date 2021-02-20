@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFViewerMessages extends js.Object {
+trait PDFViewerMessages extends StObject {
   
   var defaultFileName: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object PDFViewerMessages {
   }
   
   @scala.inline
-  implicit class PDFViewerMessagesOps[Self <: PDFViewerMessages] (val x: Self) extends AnyVal {
+  implicit class PDFViewerMessagesMutableBuilder[Self <: PDFViewerMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultFileName(value: String): Self = StObject.set(x, "defaultFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultFileNameUndefined: Self = StObject.set(x, "defaultFileName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDialogs(value: PDFViewerMessagesDialogs): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFileName(value: String): Self = this.set("defaultFileName", value.asInstanceOf[js.Any])
+    def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
     
     @scala.inline
-    def deleteDefaultFileName: Self = this.set("defaultFileName", js.undefined)
+    def setErrorMessages(value: PDFViewerMessagesErrorMessages): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogs(value: PDFViewerMessagesDialogs): Self = this.set("dialogs", value.asInstanceOf[js.Any])
+    def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
     
     @scala.inline
-    def deleteDialogs: Self = this.set("dialogs", js.undefined)
+    def setToolbar(value: PDFViewerMessagesToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessages(value: PDFViewerMessagesErrorMessages): Self = this.set("errorMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessages: Self = this.set("errorMessages", js.undefined)
-    
-    @scala.inline
-    def setToolbar(value: PDFViewerMessagesToolbar): Self = this.set("toolbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
   }
 }

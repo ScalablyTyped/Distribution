@@ -1,12 +1,13 @@
 package typings.reactNavigationRouters.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.Route<string, object | undefined>, 'name' | 'params'> */
 @js.native
-trait PickRoutestringobjectunde extends js.Object {
+trait PickRoutestringobjectunde extends StObject {
   
   var name: js.UndefOr[js.Any] = js.native
   
@@ -21,30 +22,18 @@ object PickRoutestringobjectunde {
   }
   
   @scala.inline
-  implicit class PickRoutestringobjectundeOps[Self <: PickRoutestringobjectunde] (val x: Self) extends AnyVal {
+  implicit class PickRoutestringobjectundeMutableBuilder[Self <: PickRoutestringobjectunde] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: js.Any): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setParams(value: js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

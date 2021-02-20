@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableServiceRequest extends js.Object {
+trait DisableServiceRequest extends StObject {
   
   /** Defines the behavior for checking service usage when disabling a service. */
   var checkIfServiceHasUsage: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object DisableServiceRequest {
   }
   
   @scala.inline
-  implicit class DisableServiceRequestOps[Self <: DisableServiceRequest] (val x: Self) extends AnyVal {
+  implicit class DisableServiceRequestMutableBuilder[Self <: DisableServiceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckIfServiceHasUsage(value: String): Self = StObject.set(x, "checkIfServiceHasUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckIfServiceHasUsageUndefined: Self = StObject.set(x, "checkIfServiceHasUsage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableDependentServices(value: Boolean): Self = StObject.set(x, "disableDependentServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckIfServiceHasUsage(value: String): Self = this.set("checkIfServiceHasUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCheckIfServiceHasUsage: Self = this.set("checkIfServiceHasUsage", js.undefined)
-    
-    @scala.inline
-    def setDisableDependentServices(value: Boolean): Self = this.set("disableDependentServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableDependentServices: Self = this.set("disableDependentServices", js.undefined)
+    def setDisableDependentServicesUndefined: Self = StObject.set(x, "disableDependentServices", js.undefined)
   }
 }

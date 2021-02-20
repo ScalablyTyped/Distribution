@@ -1,11 +1,12 @@
 package typings.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SceneOptions extends js.Object {
+trait SceneOptions extends StObject {
   
   var cache: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object SceneOptions {
   }
   
   @scala.inline
-  implicit class SceneOptionsOps[Self <: SceneOptions] (val x: Self) extends AnyVal {
+  implicit class SceneOptionsMutableBuilder[Self <: SceneOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setCullBackfaces(value: Boolean): Self = StObject.set(x, "cullBackfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera(value: Camera): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setCullBackfacesUndefined: Self = StObject.set(x, "cullBackfaces", js.undefined)
     
     @scala.inline
-    def deleteCamera: Self = this.set("camera", js.undefined)
+    def setFractionalPoints(value: Boolean): Self = StObject.set(x, "fractionalPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCullBackfaces(value: Boolean): Self = this.set("cullBackfaces", value.asInstanceOf[js.Any])
+    def setFractionalPointsUndefined: Self = StObject.set(x, "fractionalPoints", js.undefined)
     
     @scala.inline
-    def deleteCullBackfaces: Self = this.set("cullBackfaces", js.undefined)
+    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFractionalPoints(value: Boolean): Self = this.set("fractionalPoints", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteFractionalPoints: Self = this.set("fractionalPoints", js.undefined)
+    def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: Model): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setShaderUndefined: Self = StObject.set(x, "shader", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShader(value: Shader): Self = this.set("shader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShader: Self = this.set("shader", js.undefined)
-    
-    @scala.inline
-    def setViewport(value: Viewport): Self = this.set("viewport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewport: Self = this.set("viewport", js.undefined)
+    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

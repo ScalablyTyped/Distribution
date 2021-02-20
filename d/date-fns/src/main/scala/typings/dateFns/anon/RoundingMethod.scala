@@ -9,12 +9,13 @@ import typings.dateFns.dateFnsStrings.month
 import typings.dateFns.dateFnsStrings.round
 import typings.dateFns.dateFnsStrings.second
 import typings.dateFns.dateFnsStrings.year
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoundingMethod extends js.Object {
+trait RoundingMethod extends StObject {
   
   var addSuffix: js.UndefOr[Boolean] = js.native
   
@@ -33,42 +34,30 @@ object RoundingMethod {
   }
   
   @scala.inline
-  implicit class RoundingMethodOps[Self <: RoundingMethod] (val x: Self) extends AnyVal {
+  implicit class RoundingMethodMutableBuilder[Self <: RoundingMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSuffix(value: Boolean): Self = StObject.set(x, "addSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSuffixUndefined: Self = StObject.set(x, "addSuffix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocale(value: typings.dateFns.mod.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSuffix(value: Boolean): Self = this.set("addSuffix", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteAddSuffix: Self = this.set("addSuffix", js.undefined)
+    def setRoundingMethod(value: floor | ceil | round): Self = StObject.set(x, "roundingMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: typings.dateFns.mod.Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setRoundingMethodUndefined: Self = StObject.set(x, "roundingMethod", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setUnit(value: second | minute | hour | day | month | year): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundingMethod(value: floor | ceil | round): Self = this.set("roundingMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoundingMethod: Self = this.set("roundingMethod", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: second | minute | hour | day | month | year): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

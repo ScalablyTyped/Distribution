@@ -1,12 +1,15 @@
 package typings.is
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var is: Is = js.native
+  @JSGlobal("is")
+  @js.native
+  def is: Is = js.native
+  @scala.inline
+  def is_=(x: Is): Unit = js.Dynamic.global.updateDynamic("is")(x.asInstanceOf[js.Any])
 }

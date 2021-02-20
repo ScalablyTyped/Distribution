@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMailboxChangeType extends js.Object
+sealed trait EmailMailboxChangeType extends StObject
 /** Defines the type of change made to the mailbox item. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxChangeType")
 @js.native
-object EmailMailboxChangeType extends js.Object {
+object EmailMailboxChangeType extends StObject {
   
   /** Change unknown because change tracking was lost. */
   @js.native

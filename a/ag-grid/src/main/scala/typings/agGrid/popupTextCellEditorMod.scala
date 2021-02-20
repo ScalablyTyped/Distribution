@@ -1,14 +1,14 @@
 package typings.agGrid
 
 import typings.agGrid.textCellEditorMod.TextCellEditor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/cellEditors/popupTextCellEditor", JSImport.Namespace)
-@js.native
-object popupTextCellEditorMod extends js.Object {
+object popupTextCellEditorMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/cellEditors/popupTextCellEditor", "PopupTextCellEditor")
   @js.native
   class PopupTextCellEditor () extends TextCellEditor {
     

@@ -2,12 +2,13 @@ package typings.dynatable.JQueryDynatable
 
 import typings.dynatable.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Inputs extends js.Object {
+trait Inputs extends StObject {
   
   /**
     * Allows you to define the accepted modifier keys to trigger a multisort action
@@ -270,222 +271,210 @@ object Inputs {
   }
   
   @scala.inline
-  implicit class InputsOps[Self <: Inputs] (val x: Self) extends AnyVal {
+  implicit class InputsMutableBuilder[Self <: Inputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultisort(value: js.Array[String]): Self = StObject.set(x, "multisort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultisortUndefined: Self = StObject.set(x, "multisort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultisortVarargs(value: String*): Self = StObject.set(x, "multisort", js.Array(value :_*))
     
     @scala.inline
-    def setMultisortVarargs(value: String*): Self = this.set("multisort", js.Array(value :_*))
+    def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultisort(value: js.Array[String]): Self = this.set("multisort", value.asInstanceOf[js.Any])
+    def setPageText(value: String): Self = StObject.set(x, "pageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultisort: Self = this.set("multisort", js.undefined)
+    def setPageTextUndefined: Self = StObject.set(x, "pageText", js.undefined)
     
     @scala.inline
-    def setPage(value: js.Any): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setPaginationActiveClass(value: String): Self = StObject.set(x, "paginationActiveClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageText(value: String): Self = this.set("pageText", value.asInstanceOf[js.Any])
+    def setPaginationActiveClassUndefined: Self = StObject.set(x, "paginationActiveClass", js.undefined)
     
     @scala.inline
-    def deletePageText: Self = this.set("pageText", js.undefined)
+    def setPaginationClass(value: String): Self = StObject.set(x, "paginationClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationActiveClass(value: String): Self = this.set("paginationActiveClass", value.asInstanceOf[js.Any])
+    def setPaginationClassUndefined: Self = StObject.set(x, "paginationClass", js.undefined)
     
     @scala.inline
-    def deletePaginationActiveClass: Self = this.set("paginationActiveClass", js.undefined)
+    def setPaginationDisabledClass(value: String): Self = StObject.set(x, "paginationDisabledClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationClass(value: String): Self = this.set("paginationClass", value.asInstanceOf[js.Any])
+    def setPaginationDisabledClassUndefined: Self = StObject.set(x, "paginationDisabledClass", js.undefined)
     
     @scala.inline
-    def deletePaginationClass: Self = this.set("paginationClass", js.undefined)
+    def setPaginationGap(value: js.Array[Double]): Self = StObject.set(x, "paginationGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationDisabledClass(value: String): Self = this.set("paginationDisabledClass", value.asInstanceOf[js.Any])
+    def setPaginationGapUndefined: Self = StObject.set(x, "paginationGap", js.undefined)
     
     @scala.inline
-    def deletePaginationDisabledClass: Self = this.set("paginationDisabledClass", js.undefined)
+    def setPaginationGapVarargs(value: Double*): Self = StObject.set(x, "paginationGap", js.Array(value :_*))
     
     @scala.inline
-    def setPaginationGapVarargs(value: Double*): Self = this.set("paginationGap", js.Array(value :_*))
+    def setPaginationLinkClass(value: String): Self = StObject.set(x, "paginationLinkClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationGap(value: js.Array[Double]): Self = this.set("paginationGap", value.asInstanceOf[js.Any])
+    def setPaginationLinkClassUndefined: Self = StObject.set(x, "paginationLinkClass", js.undefined)
     
     @scala.inline
-    def deletePaginationGap: Self = this.set("paginationGap", js.undefined)
+    def setPaginationLinkPlacement(value: String): Self = StObject.set(x, "paginationLinkPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationLinkClass(value: String): Self = this.set("paginationLinkClass", value.asInstanceOf[js.Any])
+    def setPaginationLinkPlacementUndefined: Self = StObject.set(x, "paginationLinkPlacement", js.undefined)
     
     @scala.inline
-    def deletePaginationLinkClass: Self = this.set("paginationLinkClass", js.undefined)
+    def setPaginationLinkTarget(value: String | Element | JQuery): Self = StObject.set(x, "paginationLinkTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationLinkPlacement(value: String): Self = this.set("paginationLinkPlacement", value.asInstanceOf[js.Any])
+    def setPaginationLinkTargetUndefined: Self = StObject.set(x, "paginationLinkTarget", js.undefined)
     
     @scala.inline
-    def deletePaginationLinkPlacement: Self = this.set("paginationLinkPlacement", js.undefined)
+    def setPaginationNext(value: String): Self = StObject.set(x, "paginationNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationLinkTarget(value: String | Element | JQuery): Self = this.set("paginationLinkTarget", value.asInstanceOf[js.Any])
+    def setPaginationNextClass(value: String): Self = StObject.set(x, "paginationNextClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaginationLinkTarget: Self = this.set("paginationLinkTarget", js.undefined)
+    def setPaginationNextClassUndefined: Self = StObject.set(x, "paginationNextClass", js.undefined)
     
     @scala.inline
-    def setPaginationNext(value: String): Self = this.set("paginationNext", value.asInstanceOf[js.Any])
+    def setPaginationNextUndefined: Self = StObject.set(x, "paginationNext", js.undefined)
     
     @scala.inline
-    def deletePaginationNext: Self = this.set("paginationNext", js.undefined)
+    def setPaginationPrev(value: String): Self = StObject.set(x, "paginationPrev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationNextClass(value: String): Self = this.set("paginationNextClass", value.asInstanceOf[js.Any])
+    def setPaginationPrevClass(value: String): Self = StObject.set(x, "paginationPrevClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaginationNextClass: Self = this.set("paginationNextClass", js.undefined)
+    def setPaginationPrevClassUndefined: Self = StObject.set(x, "paginationPrevClass", js.undefined)
     
     @scala.inline
-    def setPaginationPrev(value: String): Self = this.set("paginationPrev", value.asInstanceOf[js.Any])
+    def setPaginationPrevUndefined: Self = StObject.set(x, "paginationPrev", js.undefined)
     
     @scala.inline
-    def deletePaginationPrev: Self = this.set("paginationPrev", js.undefined)
+    def setPerPagePlacement(value: String): Self = StObject.set(x, "perPagePlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationPrevClass(value: String): Self = this.set("paginationPrevClass", value.asInstanceOf[js.Any])
+    def setPerPagePlacementUndefined: Self = StObject.set(x, "perPagePlacement", js.undefined)
     
     @scala.inline
-    def deletePaginationPrevClass: Self = this.set("paginationPrevClass", js.undefined)
+    def setPerPageTarget(value: String | Element | JQuery): Self = StObject.set(x, "perPageTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerPagePlacement(value: String): Self = this.set("perPagePlacement", value.asInstanceOf[js.Any])
+    def setPerPageTargetUndefined: Self = StObject.set(x, "perPageTarget", js.undefined)
     
     @scala.inline
-    def deletePerPagePlacement: Self = this.set("perPagePlacement", js.undefined)
+    def setPerPageText(value: String): Self = StObject.set(x, "perPageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerPageTarget(value: String | Element | JQuery): Self = this.set("perPageTarget", value.asInstanceOf[js.Any])
+    def setPerPageTextUndefined: Self = StObject.set(x, "perPageText", js.undefined)
     
     @scala.inline
-    def deletePerPageTarget: Self = this.set("perPageTarget", js.undefined)
+    def setProcessingText(value: String): Self = StObject.set(x, "processingText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerPageText(value: String): Self = this.set("perPageText", value.asInstanceOf[js.Any])
+    def setProcessingTextUndefined: Self = StObject.set(x, "processingText", js.undefined)
     
     @scala.inline
-    def deletePerPageText: Self = this.set("perPageText", js.undefined)
+    def setQueries(value: JQuery): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingText(value: String): Self = this.set("processingText", value.asInstanceOf[js.Any])
+    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
     @scala.inline
-    def deleteProcessingText: Self = this.set("processingText", js.undefined)
+    def setQueryEvent(value: String): Self = StObject.set(x, "queryEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueries(value: JQuery): Self = this.set("queries", value.asInstanceOf[js.Any])
+    def setQueryEventUndefined: Self = StObject.set(x, "queryEvent", js.undefined)
     
     @scala.inline
-    def deleteQueries: Self = this.set("queries", js.undefined)
+    def setRecordCountFilteredTemplate(value: String): Self = StObject.set(x, "recordCountFilteredTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryEvent(value: String): Self = this.set("queryEvent", value.asInstanceOf[js.Any])
+    def setRecordCountFilteredTemplateUndefined: Self = StObject.set(x, "recordCountFilteredTemplate", js.undefined)
     
     @scala.inline
-    def deleteQueryEvent: Self = this.set("queryEvent", js.undefined)
+    def setRecordCountPageBoundTemplate(value: String): Self = StObject.set(x, "recordCountPageBoundTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCountFilteredTemplate(value: String): Self = this.set("recordCountFilteredTemplate", value.asInstanceOf[js.Any])
+    def setRecordCountPageBoundTemplateUndefined: Self = StObject.set(x, "recordCountPageBoundTemplate", js.undefined)
     
     @scala.inline
-    def deleteRecordCountFilteredTemplate: Self = this.set("recordCountFilteredTemplate", js.undefined)
+    def setRecordCountPageUnboundedTemplate(value: String): Self = StObject.set(x, "recordCountPageUnboundedTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCountPageBoundTemplate(value: String): Self = this.set("recordCountPageBoundTemplate", value.asInstanceOf[js.Any])
+    def setRecordCountPageUnboundedTemplateUndefined: Self = StObject.set(x, "recordCountPageUnboundedTemplate", js.undefined)
     
     @scala.inline
-    def deleteRecordCountPageBoundTemplate: Self = this.set("recordCountPageBoundTemplate", js.undefined)
+    def setRecordCountPlacement(value: String): Self = StObject.set(x, "recordCountPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCountPageUnboundedTemplate(value: String): Self = this.set("recordCountPageUnboundedTemplate", value.asInstanceOf[js.Any])
+    def setRecordCountPlacementUndefined: Self = StObject.set(x, "recordCountPlacement", js.undefined)
     
     @scala.inline
-    def deleteRecordCountPageUnboundedTemplate: Self = this.set("recordCountPageUnboundedTemplate", js.undefined)
+    def setRecordCountTarget(value: JQuery): Self = StObject.set(x, "recordCountTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCountPlacement(value: String): Self = this.set("recordCountPlacement", value.asInstanceOf[js.Any])
+    def setRecordCountTargetUndefined: Self = StObject.set(x, "recordCountTarget", js.undefined)
     
     @scala.inline
-    def deleteRecordCountPlacement: Self = this.set("recordCountPlacement", js.undefined)
+    def setRecordCountTemplate(value: String): Self = StObject.set(x, "recordCountTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCountTarget(value: JQuery): Self = this.set("recordCountTarget", value.asInstanceOf[js.Any])
+    def setRecordCountTemplateUndefined: Self = StObject.set(x, "recordCountTemplate", js.undefined)
     
     @scala.inline
-    def deleteRecordCountTarget: Self = this.set("recordCountTarget", js.undefined)
+    def setRecordCountText(value: String): Self = StObject.set(x, "recordCountText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCountTemplate(value: String): Self = this.set("recordCountTemplate", value.asInstanceOf[js.Any])
+    def setRecordCountTextTemplate(value: String): Self = StObject.set(x, "recordCountTextTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecordCountTemplate: Self = this.set("recordCountTemplate", js.undefined)
+    def setRecordCountTextTemplateUndefined: Self = StObject.set(x, "recordCountTextTemplate", js.undefined)
     
     @scala.inline
-    def setRecordCountText(value: String): Self = this.set("recordCountText", value.asInstanceOf[js.Any])
+    def setRecordCountTextUndefined: Self = StObject.set(x, "recordCountText", js.undefined)
     
     @scala.inline
-    def deleteRecordCountText: Self = this.set("recordCountText", js.undefined)
+    def setRecordCountTotalTemplate(value: String): Self = StObject.set(x, "recordCountTotalTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCountTextTemplate(value: String): Self = this.set("recordCountTextTemplate", value.asInstanceOf[js.Any])
+    def setRecordCountTotalTemplateUndefined: Self = StObject.set(x, "recordCountTotalTemplate", js.undefined)
     
     @scala.inline
-    def deleteRecordCountTextTemplate: Self = this.set("recordCountTextTemplate", js.undefined)
+    def setSearchPlacement(value: String): Self = StObject.set(x, "searchPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCountTotalTemplate(value: String): Self = this.set("recordCountTotalTemplate", value.asInstanceOf[js.Any])
+    def setSearchPlacementUndefined: Self = StObject.set(x, "searchPlacement", js.undefined)
     
     @scala.inline
-    def deleteRecordCountTotalTemplate: Self = this.set("recordCountTotalTemplate", js.undefined)
+    def setSearchTarget(value: String | Element | JQuery): Self = StObject.set(x, "searchTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchPlacement(value: String): Self = this.set("searchPlacement", value.asInstanceOf[js.Any])
+    def setSearchTargetUndefined: Self = StObject.set(x, "searchTarget", js.undefined)
     
     @scala.inline
-    def deleteSearchPlacement: Self = this.set("searchPlacement", js.undefined)
+    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchTarget(value: String | Element | JQuery): Self = this.set("searchTarget", value.asInstanceOf[js.Any])
+    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     @scala.inline
-    def deleteSearchTarget: Self = this.set("searchTarget", js.undefined)
+    def setSorts(value: js.Any): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchText: Self = this.set("searchText", js.undefined)
-    
-    @scala.inline
-    def setSorts(value: js.Any): Self = this.set("sorts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorts: Self = this.set("sorts", js.undefined)
+    def setSortsUndefined: Self = StObject.set(x, "sorts", js.undefined)
   }
 }

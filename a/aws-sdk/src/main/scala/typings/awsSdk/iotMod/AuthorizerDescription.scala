@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthorizerDescription extends js.Object {
+trait AuthorizerDescription extends StObject {
   
   /**
     * The authorizer ARN.
@@ -61,72 +62,60 @@ object AuthorizerDescription {
   }
   
   @scala.inline
-  implicit class AuthorizerDescriptionOps[Self <: AuthorizerDescription] (val x: Self) extends AnyVal {
+  implicit class AuthorizerDescriptionMutableBuilder[Self <: AuthorizerDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizerArn(value: AuthorizerArn): Self = StObject.set(x, "authorizerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizerArnUndefined: Self = StObject.set(x, "authorizerArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizerFunctionArn(value: AuthorizerFunctionArn): Self = StObject.set(x, "authorizerFunctionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerArn(value: AuthorizerArn): Self = this.set("authorizerArn", value.asInstanceOf[js.Any])
+    def setAuthorizerFunctionArnUndefined: Self = StObject.set(x, "authorizerFunctionArn", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerArn: Self = this.set("authorizerArn", js.undefined)
+    def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerFunctionArn(value: AuthorizerFunctionArn): Self = this.set("authorizerFunctionArn", value.asInstanceOf[js.Any])
+    def setAuthorizerNameUndefined: Self = StObject.set(x, "authorizerName", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerFunctionArn: Self = this.set("authorizerFunctionArn", js.undefined)
+    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerName(value: AuthorizerName): Self = this.set("authorizerName", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerName: Self = this.set("authorizerName", js.undefined)
+    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setSigningDisabled(value: BooleanKey): Self = StObject.set(x, "signingDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateType): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    def setSigningDisabledUndefined: Self = StObject.set(x, "signingDisabled", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    def setStatus(value: AuthorizerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningDisabled(value: BooleanKey): Self = this.set("signingDisabled", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSigningDisabled: Self = this.set("signingDisabled", js.undefined)
+    def setTokenKeyName(value: TokenKeyName): Self = StObject.set(x, "tokenKeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: AuthorizerStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTokenKeyNameUndefined: Self = StObject.set(x, "tokenKeyName", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTokenSigningPublicKeys(value: PublicKeyMap): Self = StObject.set(x, "tokenSigningPublicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenKeyName(value: TokenKeyName): Self = this.set("tokenKeyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenKeyName: Self = this.set("tokenKeyName", js.undefined)
-    
-    @scala.inline
-    def setTokenSigningPublicKeys(value: PublicKeyMap): Self = this.set("tokenSigningPublicKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenSigningPublicKeys: Self = this.set("tokenSigningPublicKeys", js.undefined)
+    def setTokenSigningPublicKeysUndefined: Self = StObject.set(x, "tokenSigningPublicKeys", js.undefined)
   }
 }

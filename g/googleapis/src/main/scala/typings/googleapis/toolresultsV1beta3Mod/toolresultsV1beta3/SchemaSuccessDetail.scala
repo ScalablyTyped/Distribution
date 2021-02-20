@@ -1,11 +1,12 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSuccessDetail extends js.Object {
+trait SchemaSuccessDetail extends StObject {
   
   /**
     * If a native process other than the app crashed.
@@ -21,24 +22,12 @@ object SchemaSuccessDetail {
   }
   
   @scala.inline
-  implicit class SchemaSuccessDetailOps[Self <: SchemaSuccessDetail] (val x: Self) extends AnyVal {
+  implicit class SchemaSuccessDetailMutableBuilder[Self <: SchemaSuccessDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOtherNativeCrash(value: Boolean): Self = StObject.set(x, "otherNativeCrash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOtherNativeCrash(value: Boolean): Self = this.set("otherNativeCrash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOtherNativeCrash: Self = this.set("otherNativeCrash", js.undefined)
+    def setOtherNativeCrashUndefined: Self = StObject.set(x, "otherNativeCrash", js.undefined)
   }
 }

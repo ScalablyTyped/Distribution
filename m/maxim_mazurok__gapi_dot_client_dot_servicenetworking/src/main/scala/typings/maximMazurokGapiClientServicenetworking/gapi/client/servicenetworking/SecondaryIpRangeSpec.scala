@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecondaryIpRangeSpec extends js.Object {
+trait SecondaryIpRangeSpec extends StObject {
   
   /**
     * Required. The prefix length of the secondary IP range. Use CIDR range notation, such as `30` to provision a secondary IP range with an `x.x.x.x/30` CIDR range. The IP address range
@@ -31,36 +32,24 @@ object SecondaryIpRangeSpec {
   }
   
   @scala.inline
-  implicit class SecondaryIpRangeSpecOps[Self <: SecondaryIpRangeSpec] (val x: Self) extends AnyVal {
+  implicit class SecondaryIpRangeSpecMutableBuilder[Self <: SecondaryIpRangeSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRangeName(value: String): Self = StObject.set(x, "rangeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpPrefixLength(value: Double): Self = this.set("ipPrefixLength", value.asInstanceOf[js.Any])
+    def setRangeNameUndefined: Self = StObject.set(x, "rangeName", js.undefined)
     
     @scala.inline
-    def deleteIpPrefixLength: Self = this.set("ipPrefixLength", js.undefined)
+    def setRequestedAddress(value: String): Self = StObject.set(x, "requestedAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeName(value: String): Self = this.set("rangeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeName: Self = this.set("rangeName", js.undefined)
-    
-    @scala.inline
-    def setRequestedAddress(value: String): Self = this.set("requestedAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedAddress: Self = this.set("requestedAddress", js.undefined)
+    def setRequestedAddressUndefined: Self = StObject.set(x, "requestedAddress", js.undefined)
   }
 }

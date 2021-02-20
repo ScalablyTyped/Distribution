@@ -1,6 +1,7 @@
 package typings.stylus.mod.Stylus.Nodes
 
 import typings.stylus.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,48 +74,36 @@ object HSLA {
   }
   
   @scala.inline
-  implicit class HSLAOps[Self <: HSLA] (val x: Self) extends AnyVal {
+  implicit class HSLAMutableBuilder[Self <: HSLA] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdd(value: (Double, Double, Double) => HSLA): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdjustHue(value: Double => HSLA): Self = StObject.set(x, "adjustHue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setA(value: Double): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setAdjustLightness(value: Double => HSLA): Self = StObject.set(x, "adjustLightness", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: (Double, Double, Double) => HSLA): Self = this.set("add", js.Any.fromFunction3(value))
+    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustHue(value: Double => HSLA): Self = this.set("adjustHue", js.Any.fromFunction1(value))
+    def setHsla(value: HSLA): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustLightness(value: Double => HSLA): Self = this.set("adjustLightness", js.Any.fromFunction1(value))
+    def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH(value: Double): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setRgba(value: RGBA): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsla(value: HSLA): Self = this.set("hsla", value.asInstanceOf[js.Any])
+    def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL(value: Double): Self = this.set("l", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRgba(value: RGBA): Self = this.set("rgba", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS(value: Double): Self = this.set("s", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubstract(value: (Double, Double, Double) => HSLA): Self = this.set("substract", js.Any.fromFunction3(value))
+    def setSubstract(value: (Double, Double, Double) => HSLA): Self = StObject.set(x, "substract", js.Any.fromFunction3(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.gestalt.mod
 
 import typings.gestalt.anon.EventValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwitchProps extends js.Object {
+trait SwitchProps extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.native
   
@@ -27,42 +28,30 @@ object SwitchProps {
   }
   
   @scala.inline
-  implicit class SwitchPropsOps[Self <: SwitchProps] (val x: Self) extends AnyVal {
+  implicit class SwitchPropsMutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: EventValue => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setOnChange(value: EventValue => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setSwitched(value: Boolean): Self = StObject.set(x, "switched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSwitched(value: Boolean): Self = this.set("switched", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwitched: Self = this.set("switched", js.undefined)
+    def setSwitchedUndefined: Self = StObject.set(x, "switched", js.undefined)
   }
 }

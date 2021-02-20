@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadRequest extends js.Object {
+trait DownloadRequest extends StObject {
   
   /**
     * File types that will be returned. If INVENTORY_SOURCE is requested, no other file types may be requested. Acceptable values are: - "AD" - "AD_GROUP" - "CAMPAIGN" - "INSERTION_ORDER"
@@ -31,48 +32,36 @@ object DownloadRequest {
   }
   
   @scala.inline
-  implicit class DownloadRequestOps[Self <: DownloadRequest] (val x: Self) extends AnyVal {
+  implicit class DownloadRequestMutableBuilder[Self <: DownloadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
     
     @scala.inline
-    def setFileTypesVarargs(value: String*): Self = this.set("fileTypes", js.Array(value :_*))
+    def setFilterIds(value: js.Array[String]): Self = StObject.set(x, "filterIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileTypes(value: js.Array[String]): Self = this.set("fileTypes", value.asInstanceOf[js.Any])
+    def setFilterIdsUndefined: Self = StObject.set(x, "filterIds", js.undefined)
     
     @scala.inline
-    def deleteFileTypes: Self = this.set("fileTypes", js.undefined)
+    def setFilterIdsVarargs(value: String*): Self = StObject.set(x, "filterIds", js.Array(value :_*))
     
     @scala.inline
-    def setFilterIdsVarargs(value: String*): Self = this.set("filterIds", js.Array(value :_*))
+    def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterIds(value: js.Array[String]): Self = this.set("filterIds", value.asInstanceOf[js.Any])
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def deleteFilterIds: Self = this.set("filterIds", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterType(value: String): Self = this.set("filterType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

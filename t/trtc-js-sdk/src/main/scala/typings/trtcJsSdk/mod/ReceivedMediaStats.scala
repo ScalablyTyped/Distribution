@@ -1,11 +1,12 @@
 package typings.trtcJsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReceivedMediaStats extends js.Object {
+trait ReceivedMediaStats extends StObject {
   
   /** 已接收字节数 */
   var bytesReceived: Double = js.native
@@ -25,27 +26,15 @@ object ReceivedMediaStats {
   }
   
   @scala.inline
-  implicit class ReceivedMediaStatsOps[Self <: ReceivedMediaStats] (val x: Self) extends AnyVal {
+  implicit class ReceivedMediaStatsMutableBuilder[Self <: ReceivedMediaStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPacketsLost(value: Double): Self = StObject.set(x, "packetsLost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBytesReceived(value: Double): Self = this.set("bytesReceived", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPacketsLost(value: Double): Self = this.set("packetsLost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPacketsReceived(value: Double): Self = this.set("packetsReceived", value.asInstanceOf[js.Any])
+    def setPacketsReceived(value: Double): Self = StObject.set(x, "packetsReceived", value.asInstanceOf[js.Any])
   }
 }

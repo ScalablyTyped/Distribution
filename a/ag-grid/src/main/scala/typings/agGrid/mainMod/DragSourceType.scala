@@ -1,12 +1,13 @@
 package typings.agGrid.mainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid/dist/lib/main", "DragSourceType")
 @js.native
-object DragSourceType extends js.Object {
+object DragSourceType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.agGrid.dragAndDropServiceMod.DragSourceType with Double] = js.native

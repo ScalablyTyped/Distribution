@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a USSD message that is used for sending messages to and receiving messages from the network. */
 @js.native
-trait UssdMessage extends js.Object {
+trait UssdMessage extends StObject {
   
   /** Gets or sets the encoding scheme of the payload of this UssdMessage . */
   var dataCodingScheme: Double = js.native
@@ -40,30 +41,18 @@ object UssdMessage {
   }
   
   @scala.inline
-  implicit class UssdMessageOps[Self <: UssdMessage] (val x: Self) extends AnyVal {
+  implicit class UssdMessageMutableBuilder[Self <: UssdMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataCodingScheme(value: Double): Self = StObject.set(x, "dataCodingScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPayload(value: () => js.Array[Double]): Self = StObject.set(x, "getPayload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayloadAsText(value: String): Self = StObject.set(x, "payloadAsText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataCodingScheme(value: Double): Self = this.set("dataCodingScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPayload(value: () => js.Array[Double]): Self = this.set("getPayload", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPayloadAsText(value: String): Self = this.set("payloadAsText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetPayload(value: js.Array[Double] => Unit): Self = this.set("setPayload", js.Any.fromFunction1(value))
+    def setSetPayload(value: js.Array[Double] => Unit): Self = StObject.set(x, "setPayload", js.Any.fromFunction1(value))
   }
 }

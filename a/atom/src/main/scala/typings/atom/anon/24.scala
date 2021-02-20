@@ -8,12 +8,13 @@ import typings.atom.atomStrings.`21px`
 import typings.atom.atomStrings.`24px`
 import typings.atom.atomStrings.`28px`
 import typings.atom.atomStrings.`32px`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `24` extends js.Object {
+trait `24` extends StObject {
   
   var scopeDescriptor: typings.atom.mod.ScopeDescriptor = js.native
   
@@ -31,24 +32,12 @@ object `24` {
   }
   
   @scala.inline
-  implicit class `24Ops`[Self <: `24`] (val x: Self) extends AnyVal {
+  implicit class `24MutableBuilder`[Self <: `24`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = this.set("scopeDescriptor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

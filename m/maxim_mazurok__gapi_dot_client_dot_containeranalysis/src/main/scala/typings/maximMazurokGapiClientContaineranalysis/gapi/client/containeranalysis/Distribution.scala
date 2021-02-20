@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distribution extends js.Object {
+trait Distribution extends StObject {
   
   /** The CPU architecture for which packages in this distribution channel were built. */
   var architecture: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object Distribution {
   }
   
   @scala.inline
-  implicit class DistributionOps[Self <: Distribution] (val x: Self) extends AnyVal {
+  implicit class DistributionMutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchitecture(value: String): Self = this.set("architecture", value.asInstanceOf[js.Any])
+    def setCpeUriUndefined: Self = StObject.set(x, "cpeUri", js.undefined)
     
     @scala.inline
-    def deleteArchitecture: Self = this.set("architecture", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpeUri(value: String): Self = this.set("cpeUri", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCpeUri: Self = this.set("cpeUri", js.undefined)
+    def setLatestVersion(value: Version): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLatestVersionUndefined: Self = StObject.set(x, "latestVersion", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setMaintainer(value: String): Self = StObject.set(x, "maintainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestVersion(value: Version): Self = this.set("latestVersion", value.asInstanceOf[js.Any])
+    def setMaintainerUndefined: Self = StObject.set(x, "maintainer", js.undefined)
     
     @scala.inline
-    def deleteLatestVersion: Self = this.set("latestVersion", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintainer(value: String): Self = this.set("maintainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaintainer: Self = this.set("maintainer", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

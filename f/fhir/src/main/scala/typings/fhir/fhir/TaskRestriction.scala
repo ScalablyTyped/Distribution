@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,45 +40,33 @@ object TaskRestriction {
   }
   
   @scala.inline
-  implicit class TaskRestrictionOps[Self <: TaskRestriction] (val x: Self) extends AnyVal {
+  implicit class TaskRestrictionMutableBuilder[Self <: TaskRestriction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipient(value: js.Array[Reference]): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_repetitions(value: Element): Self = this.set("_repetitions", value.asInstanceOf[js.Any])
+    def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
     
     @scala.inline
-    def delete_repetitions: Self = this.set("_repetitions", js.undefined)
+    def setRecipientVarargs(value: Reference*): Self = StObject.set(x, "recipient", js.Array(value :_*))
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setRepetitions(value: positiveInt): Self = StObject.set(x, "repetitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setRepetitionsUndefined: Self = StObject.set(x, "repetitions", js.undefined)
     
     @scala.inline
-    def setRecipientVarargs(value: Reference*): Self = this.set("recipient", js.Array(value :_*))
+    def set_repetitions(value: Element): Self = StObject.set(x, "_repetitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient(value: js.Array[Reference]): Self = this.set("recipient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipient: Self = this.set("recipient", js.undefined)
-    
-    @scala.inline
-    def setRepetitions(value: positiveInt): Self = this.set("repetitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepetitions: Self = this.set("repetitions", js.undefined)
+    def set_repetitionsUndefined: Self = StObject.set(x, "_repetitions", js.undefined)
   }
 }

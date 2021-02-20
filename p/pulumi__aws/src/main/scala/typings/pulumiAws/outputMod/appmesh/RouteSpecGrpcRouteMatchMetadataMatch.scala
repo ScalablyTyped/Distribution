@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteSpecGrpcRouteMatchMetadataMatch extends js.Object {
+trait RouteSpecGrpcRouteMatchMetadataMatch extends StObject {
   
   /**
     * The value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -42,48 +43,36 @@ object RouteSpecGrpcRouteMatchMetadataMatch {
   }
   
   @scala.inline
-  implicit class RouteSpecGrpcRouteMatchMetadataMatchOps[Self <: RouteSpecGrpcRouteMatchMetadataMatch] (val x: Self) extends AnyVal {
+  implicit class RouteSpecGrpcRouteMatchMetadataMatchMutableBuilder[Self <: RouteSpecGrpcRouteMatchMetadataMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExact(value: String): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExact(value: String): Self = this.set("exact", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def deleteExact: Self = this.set("exact", js.undefined)
+    def setRange(value: RouteSpecGrpcRouteMatchMetadataMatchRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: RouteSpecGrpcRouteMatchMetadataMatchRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegex(value: String): Self = this.set("regex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegex: Self = this.set("regex", js.undefined)
-    
-    @scala.inline
-    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

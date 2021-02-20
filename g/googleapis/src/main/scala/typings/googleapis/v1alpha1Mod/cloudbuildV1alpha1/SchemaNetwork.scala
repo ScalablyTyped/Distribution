@@ -1,5 +1,6 @@
 package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Network describes the GCP network used to create workers in.
   */
 @js.native
-trait SchemaNetwork extends js.Object {
+trait SchemaNetwork extends StObject {
   
   /**
     * Network on which the workers are created. &quot;default&quot; network is
@@ -40,36 +41,24 @@ object SchemaNetwork {
   }
   
   @scala.inline
-  implicit class SchemaNetworkOps[Self <: SchemaNetwork] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkMutableBuilder[Self <: SchemaNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
-    
-    @scala.inline
-    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
   }
 }

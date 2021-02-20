@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.personaTypesMod
 
 import typings.uifabricMergeStyles.istyleMod.IStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPersonaPresenceStyles extends js.Object {
+trait IPersonaPresenceStyles extends StObject {
   
   var presence: IStyle = js.native
   
@@ -21,36 +22,24 @@ object IPersonaPresenceStyles {
   }
   
   @scala.inline
-  implicit class IPersonaPresenceStylesOps[Self <: IPersonaPresenceStyles] (val x: Self) extends AnyVal {
+  implicit class IPersonaPresenceStylesMutableBuilder[Self <: IPersonaPresenceStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPresence(value: IStyle): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPresenceIcon(value: IStyle): Self = StObject.set(x, "presenceIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPresenceIconNull: Self = StObject.set(x, "presenceIcon", null)
     
     @scala.inline
-    def setPresence(value: IStyle): Self = this.set("presence", value.asInstanceOf[js.Any])
+    def setPresenceIconUndefined: Self = StObject.set(x, "presenceIcon", js.undefined)
     
     @scala.inline
-    def deletePresence: Self = this.set("presence", js.undefined)
+    def setPresenceNull: Self = StObject.set(x, "presence", null)
     
     @scala.inline
-    def setPresenceNull: Self = this.set("presence", null)
-    
-    @scala.inline
-    def setPresenceIcon(value: IStyle): Self = this.set("presenceIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePresenceIcon: Self = this.set("presenceIcon", js.undefined)
-    
-    @scala.inline
-    def setPresenceIconNull: Self = this.set("presenceIcon", null)
+    def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
   }
 }

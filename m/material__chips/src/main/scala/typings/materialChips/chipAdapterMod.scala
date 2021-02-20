@@ -3,16 +3,15 @@ package typings.materialChips
 import typings.materialChips.chipConstantsMod.EventSource
 import typings.std.ClientRect
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/chips/chip/adapter", JSImport.Namespace)
-@js.native
-object chipAdapterMod extends js.Object {
+object chipAdapterMod {
   
   @js.native
-  trait MDCChipAdapter extends js.Object {
+  trait MDCChipAdapter extends StObject {
     
     /**
       * Adds a class to the root element.

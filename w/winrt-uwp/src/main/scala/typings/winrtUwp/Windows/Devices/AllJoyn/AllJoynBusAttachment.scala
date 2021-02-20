@@ -9,13 +9,14 @@ import typings.winrtUwp.winrtUwpStrings.authenticationcomplete
 import typings.winrtUwp.winrtUwpStrings.credentialsrequested
 import typings.winrtUwp.winrtUwpStrings.credentialsverificationrequested
 import typings.winrtUwp.winrtUwpStrings.statechanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a connection to the underlying communication pipeline (transport agnostic) that AllJoyn uses to communicate with other endpoints regardless of the transport. */
 @js.native
-trait AllJoynBusAttachment extends js.Object {
+trait AllJoynBusAttachment extends StObject {
   
   /** This property returns an AllJoynAboutData object containing the descriptive data that the platform may advertise on behalf of the app. */
   var aboutData: AllJoynAboutData = js.native

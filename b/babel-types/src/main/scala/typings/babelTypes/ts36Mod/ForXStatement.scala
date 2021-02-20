@@ -2,6 +2,7 @@ package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.ForInStatement
 import typings.babelTypes.babelTypesStrings.ForOfStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.ts36Mod.ForInStatement_
   - typings.babelTypes.ts36Mod.ForOfStatement_
 */
-trait ForXStatement extends js.Object
+trait ForXStatement extends StObject
 object ForXStatement {
   
   @scala.inline
@@ -22,10 +23,10 @@ object ForXStatement {
     right: Expression,
     start: Double,
     `type`: ForInStatement
-  ): ForXStatement = {
+  ): typings.babelTypes.ts36Mod.ForInStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ForXStatement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForInStatement_]
   }
   
   @scala.inline
@@ -37,9 +38,9 @@ object ForXStatement {
     right: Expression,
     start: Double,
     `type`: ForOfStatement
-  ): ForXStatement = {
+  ): typings.babelTypes.ts36Mod.ForOfStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ForXStatement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForOfStatement_]
   }
 }

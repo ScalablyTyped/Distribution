@@ -1,13 +1,14 @@
 package typings.angularCompiler.outputAstMod
 
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "Statement")
 @js.native
-abstract class Statement () extends js.Object {
+abstract class Statement () extends StObject {
   def this(modifiers: js.Array[StmtModifier]) = this()
   def this(modifiers: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(modifiers: js.Array[StmtModifier], sourceSpan: ParseSourceSpan) = this()

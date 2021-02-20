@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAnomalyDetectorsInput extends js.Object {
+trait DescribeAnomalyDetectorsInput extends StObject {
   
   /**
     * Limits the results to only the anomaly detection models that are associated with the specified metric dimensions. If there are multiple metrics that have these dimensions and have anomaly detection models associated, they're all returned.
@@ -41,51 +42,39 @@ object DescribeAnomalyDetectorsInput {
   }
   
   @scala.inline
-  implicit class DescribeAnomalyDetectorsInputOps[Self <: DescribeAnomalyDetectorsInput] (val x: Self) extends AnyVal {
+  implicit class DescribeAnomalyDetectorsInputMutableBuilder[Self <: DescribeAnomalyDetectorsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    def setMaxResults(value: MaxReturnedResultsCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: Dimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxReturnedResultsCount): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
     @scala.inline
-    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespace: Self = this.set("Namespace", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

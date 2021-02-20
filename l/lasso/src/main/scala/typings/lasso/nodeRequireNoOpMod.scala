@@ -1,12 +1,13 @@
 package typings.lasso
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lasso/node-require-no-op", JSImport.Namespace)
-@js.native
-object nodeRequireNoOpMod extends js.Object {
+object nodeRequireNoOpMod {
   
+  @JSImport("lasso/node-require-no-op", "enable")
+  @js.native
   def enable(extensions: String*): Unit = js.native
 }

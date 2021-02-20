@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** This holds ForceDirectedLayout-specific information about Links.*/
 @JSImport("go", "ForceDirectedEdge")
 @js.native
+/**
+  * This constructs an edge that does not know about any Link.
+  */
 class ForceDirectedEdge () extends LayoutEdge {
   
   /**Gets or sets the length of this edge.*/

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cloudfront
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionLoggingConfig extends js.Object {
+trait DistributionLoggingConfig extends StObject {
   
   /**
     * The Amazon S3 bucket to store the access logs in, for
@@ -35,33 +36,21 @@ object DistributionLoggingConfig {
   }
   
   @scala.inline
-  implicit class DistributionLoggingConfigOps[Self <: DistributionLoggingConfig] (val x: Self) extends AnyVal {
+  implicit class DistributionLoggingConfigMutableBuilder[Self <: DistributionLoggingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeCookies(value: Input[Boolean]): Self = StObject.set(x, "includeCookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeCookiesUndefined: Self = StObject.set(x, "includeCookies", js.undefined)
     
     @scala.inline
-    def setBucket(value: Input[String]): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCookies(value: Input[Boolean]): Self = this.set("includeCookies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeCookies: Self = this.set("includeCookies", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: Input[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

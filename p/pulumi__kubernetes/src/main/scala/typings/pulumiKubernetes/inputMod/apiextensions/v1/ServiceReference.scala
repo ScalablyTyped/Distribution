@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apiextensions.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ServiceReference holds a reference to Service.legacy.k8s.io
   */
 @js.native
-trait ServiceReference extends js.Object {
+trait ServiceReference extends StObject {
   
   /**
     * name is the name of the service. Required
@@ -40,36 +41,24 @@ object ServiceReference {
   }
   
   @scala.inline
-  implicit class ServiceReferenceOps[Self <: ServiceReference] (val x: Self) extends AnyVal {
+  implicit class ServiceReferenceMutableBuilder[Self <: ServiceReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setNamespace(value: Input[String]): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

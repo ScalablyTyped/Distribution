@@ -4,14 +4,14 @@ import typings.d3Selection.mod.Selection_
 import typings.plottable.drawerMod.IDrawer
 import typings.plottable.interfacesMod.SimpleSelection
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/drawers/svgDrawer", JSImport.Namespace)
-@js.native
-object svgDrawerMod extends js.Object {
+object svgDrawerMod {
   
+  @JSImport("plottable/build/src/drawers/svgDrawer", "SVGDrawer")
   @js.native
   class SVGDrawer protected () extends IDrawer {
     /**

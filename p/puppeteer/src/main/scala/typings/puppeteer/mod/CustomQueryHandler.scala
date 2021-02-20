@@ -3,12 +3,13 @@ package typings.puppeteer.mod
 import typings.std.Document
 import typings.std.Element
 import typings.std.NodeListOf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomQueryHandler extends js.Object {
+trait CustomQueryHandler extends StObject {
   
   var queryAll: js.UndefOr[
     js.Function2[
@@ -31,32 +32,20 @@ object CustomQueryHandler {
   }
   
   @scala.inline
-  implicit class CustomQueryHandlerOps[Self <: CustomQueryHandler] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class CustomQueryHandlerMutableBuilder[Self <: CustomQueryHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setQueryAll(
       value: (/* element */ Element | Document, /* selector */ String) => js.Array[Element] | NodeListOf[Element]
-    ): Self = this.set("queryAll", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "queryAll", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteQueryAll: Self = this.set("queryAll", js.undefined)
+    def setQueryAllUndefined: Self = StObject.set(x, "queryAll", js.undefined)
     
     @scala.inline
-    def setQueryOne(value: (/* element */ Element | Document, /* selector */ String) => Element | Null): Self = this.set("queryOne", js.Any.fromFunction2(value))
+    def setQueryOne(value: (/* element */ Element | Document, /* selector */ String) => Element | Null): Self = StObject.set(x, "queryOne", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteQueryOne: Self = this.set("queryOne", js.undefined)
+    def setQueryOneUndefined: Self = StObject.set(x, "queryOne", js.undefined)
   }
 }

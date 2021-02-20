@@ -5,14 +5,14 @@ import typings.openfin.channelChannelMod.ChannelBase
 import typings.openfin.identityMod.Identity
 import typings.openfin.shapesIdentityMod.ClientIdentity
 import typings.openfin.shapesIdentityMod.ProviderIdentity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openfin/_v2/api/interappbus/channel/provider", JSImport.Namespace)
-@js.native
-object providerMod extends js.Object {
+object providerMod {
   
+  @JSImport("openfin/_v2/api/interappbus/channel/provider", "ChannelProvider")
   @js.native
   class ChannelProvider protected () extends ChannelBase {
     def this(providerIdentity: ProviderIdentity, send: FnCall) = this()

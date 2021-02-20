@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientYoutube.anon.Alt
 import typings.maximMazurokGapiClientYoutube.anon.LinkingToken
 import typings.maximMazurokGapiClientYoutube.anon.Type
 import typings.maximMazurokGapiClientYoutube.anon.UploadTypeUploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThirdPartyLinksResource extends js.Object {
+trait ThirdPartyLinksResource extends StObject {
   
   /** Deletes a resource. */
   def delete(): Request[Unit] = js.native

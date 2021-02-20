@@ -6,13 +6,29 @@ import typings.antdMobile.listViewPropsTypeMod.ListViewPropsType
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile/lib/list-view/Indexed", JSImport.Namespace)
-@js.native
-object indexedMod extends js.Object {
+object indexedMod {
+  
+  @JSImport("antd-mobile/lib/list-view/Indexed", JSImport.Default)
+  @js.native
+  class default () extends MIndexedList
+  /* static members */
+  object default {
+    
+    @JSImport("antd-mobile/lib/list-view/Indexed", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("antd-mobile/lib/list-view/Indexed", "default.defaultProps")
+    @js.native
+    def defaultProps: ListViewPrefixCls = js.native
+    @scala.inline
+    def defaultProps_=(x: ListViewPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait MIndexedList
@@ -33,14 +49,5 @@ object indexedMod extends js.Object {
     var quickSearchBarStyle: js.UndefOr[CSSProperties] = js.native
     
     var quickSearchBarTop: js.UndefOr[Label] = js.native
-  }
-  
-  @js.native
-  class default () extends MIndexedList
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: ListViewPrefixCls = js.native
   }
 }

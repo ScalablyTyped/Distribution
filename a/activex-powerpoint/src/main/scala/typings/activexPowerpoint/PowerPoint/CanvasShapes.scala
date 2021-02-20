@@ -7,12 +7,13 @@ import typings.activexOffice.Office.MsoEditingType
 import typings.activexOffice.Office.MsoPresetTextEffect
 import typings.activexOffice.Office.MsoTextOrientation
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasShapes extends js.Object {
+trait CanvasShapes extends StObject {
   
   def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   

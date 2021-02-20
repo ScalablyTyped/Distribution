@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides settings for capturing videos. The settings include format, maximum resolution, maximum duration, and whether or not to allow trimming. */
 @js.native
-trait CameraCaptureUIVideoCaptureSettings extends js.Object {
+trait CameraCaptureUIVideoCaptureSettings extends StObject {
   
   /** Determines whether or not the video trimming user interface will be enabled. */
   var allowTrimming: Boolean = js.native
@@ -34,30 +35,18 @@ object CameraCaptureUIVideoCaptureSettings {
   }
   
   @scala.inline
-  implicit class CameraCaptureUIVideoCaptureSettingsOps[Self <: CameraCaptureUIVideoCaptureSettings] (val x: Self) extends AnyVal {
+  implicit class CameraCaptureUIVideoCaptureSettingsMutableBuilder[Self <: CameraCaptureUIVideoCaptureSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowTrimming(value: Boolean): Self = StObject.set(x, "allowTrimming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormat(value: CameraCaptureUIVideoFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDurationInSeconds(value: Double): Self = StObject.set(x, "maxDurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTrimming(value: Boolean): Self = this.set("allowTrimming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: CameraCaptureUIVideoFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxDurationInSeconds(value: Double): Self = this.set("maxDurationInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxResolution(value: CameraCaptureUIMaxVideoResolution): Self = this.set("maxResolution", value.asInstanceOf[js.Any])
+    def setMaxResolution(value: CameraCaptureUIMaxVideoResolution): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
   }
 }

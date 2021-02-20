@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientChat.anon.Fields
 import typings.maximMazurokGapiClientChat.anon.Key
 import typings.maximMazurokGapiClientChat.anon.Name
 import typings.maximMazurokGapiClientChat.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessagesResource extends js.Object {
+trait MessagesResource extends StObject {
   
   var attachments: AttachmentsResource = js.native
   

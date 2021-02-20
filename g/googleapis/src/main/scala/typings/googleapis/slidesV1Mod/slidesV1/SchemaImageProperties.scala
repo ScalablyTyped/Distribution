@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The properties of the Image.
   */
 @js.native
-trait SchemaImageProperties extends js.Object {
+trait SchemaImageProperties extends StObject {
   
   /**
     * The brightness effect of the image. The value should be in the interval
@@ -66,66 +67,54 @@ object SchemaImageProperties {
   }
   
   @scala.inline
-  implicit class SchemaImagePropertiesOps[Self <: SchemaImageProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaImagePropertiesMutableBuilder[Self <: SchemaImageProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Double): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
     
     @scala.inline
-    def deleteBrightness: Self = this.set("brightness", js.undefined)
+    def setCropProperties(value: SchemaCropProperties): Self = StObject.set(x, "cropProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: Double): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    def setCropPropertiesUndefined: Self = StObject.set(x, "cropProperties", js.undefined)
     
     @scala.inline
-    def deleteContrast: Self = this.set("contrast", js.undefined)
+    def setLink(value: SchemaLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropProperties(value: SchemaCropProperties): Self = this.set("cropProperties", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteCropProperties: Self = this.set("cropProperties", js.undefined)
+    def setOutline(value: SchemaOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: SchemaLink): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setRecolor(value: SchemaRecolor): Self = StObject.set(x, "recolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: SchemaOutline): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setRecolorUndefined: Self = StObject.set(x, "recolor", js.undefined)
     
     @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
+    def setShadow(value: SchemaShadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecolor(value: SchemaRecolor): Self = this.set("recolor", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteRecolor: Self = this.set("recolor", js.undefined)
+    def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: SchemaShadow): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
-    
-    @scala.inline
-    def setTransparency(value: Double): Self = this.set("transparency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransparency: Self = this.set("transparency", js.undefined)
+    def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
   }
 }

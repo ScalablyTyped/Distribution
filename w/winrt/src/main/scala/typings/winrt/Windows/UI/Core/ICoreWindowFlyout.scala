@@ -5,12 +5,13 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.Size
 import typings.winrt.Windows.UI.Popups.IUICommand
 import typings.winrt.Windows.UI.Popups.UICommandInvokedHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICoreWindowFlyout extends js.Object {
+trait ICoreWindowFlyout extends StObject {
   
   def backButtonCommand(command: IUICommand): Unit = js.native
   @JSName("backButtonCommand")

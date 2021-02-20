@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object representing the configuration options to use for the `elements` enrichment. */
 @js.native
-trait EnrichmentOptions extends js.Object {
+trait EnrichmentOptions extends StObject {
   
   var features: js.UndefOr[NluEnrichmentFeatures] = js.native
   
@@ -25,36 +26,24 @@ object EnrichmentOptions {
   }
   
   @scala.inline
-  implicit class EnrichmentOptionsOps[Self <: EnrichmentOptions] (val x: Self) extends AnyVal {
+  implicit class EnrichmentOptionsMutableBuilder[Self <: EnrichmentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: NluEnrichmentFeatures): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: NluEnrichmentFeatures): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
-    
-    @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

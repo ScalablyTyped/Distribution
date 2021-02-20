@@ -1,11 +1,12 @@
 package typings.reactSketchapp.propsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformProps extends js.Object {
+trait TransformProps extends StObject {
   
   var origin: js.UndefOr[NumberProp] = js.native
   
@@ -50,120 +51,108 @@ object TransformProps {
   }
   
   @scala.inline
-  implicit class TransformPropsOps[Self <: TransformProps] (val x: Self) extends AnyVal {
+  implicit class TransformPropsMutableBuilder[Self <: TransformProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrigin(value: NumberProp): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginX(value: NumberProp): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: NumberProp): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setOriginXUndefined: Self = StObject.set(x, "originX", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setOriginY(value: NumberProp): Self = StObject.set(x, "originY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginX(value: NumberProp): Self = this.set("originX", value.asInstanceOf[js.Any])
+    def setOriginYUndefined: Self = StObject.set(x, "originY", js.undefined)
     
     @scala.inline
-    def deleteOriginX: Self = this.set("originX", js.undefined)
+    def setRotate(value: NumberProp): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginY(value: NumberProp): Self = this.set("originY", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deleteOriginY: Self = this.set("originY", js.undefined)
+    def setRotation(value: NumberProp): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: NumberProp): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setScale(value: NumberProp): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: NumberProp): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setScaleX(value: NumberProp): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: NumberProp): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleY(value: NumberProp): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleX(value: NumberProp): Self = this.set("scaleX", value.asInstanceOf[js.Any])
+    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
     @scala.inline
-    def deleteScaleX: Self = this.set("scaleX", js.undefined)
+    def setSkew(value: NumberProp): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleY(value: NumberProp): Self = this.set("scaleY", value.asInstanceOf[js.Any])
+    def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
     
     @scala.inline
-    def deleteScaleY: Self = this.set("scaleY", js.undefined)
+    def setSkewX(value: NumberProp): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkew(value: NumberProp): Self = this.set("skew", value.asInstanceOf[js.Any])
+    def setSkewXUndefined: Self = StObject.set(x, "skewX", js.undefined)
     
     @scala.inline
-    def deleteSkew: Self = this.set("skew", js.undefined)
+    def setSkewY(value: NumberProp): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkewX(value: NumberProp): Self = this.set("skewX", value.asInstanceOf[js.Any])
+    def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
     
     @scala.inline
-    def deleteSkewX: Self = this.set("skewX", js.undefined)
+    def setTransform(value: js.Object | String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkewY(value: NumberProp): Self = this.set("skewY", value.asInstanceOf[js.Any])
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def deleteSkewY: Self = this.set("skewY", js.undefined)
+    def setTranslate(value: NumberProp): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: js.Object | String): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTranslateX(value: NumberProp): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslate(value: NumberProp): Self = this.set("translate", value.asInstanceOf[js.Any])
+    def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
     
     @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
+    def setTranslateY(value: NumberProp): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslateX(value: NumberProp): Self = this.set("translateX", value.asInstanceOf[js.Any])
+    def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
     
     @scala.inline
-    def deleteTranslateX: Self = this.set("translateX", js.undefined)
+    def setX(value: NumberProp): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslateY(value: NumberProp): Self = this.set("translateY", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteTranslateY: Self = this.set("translateY", js.undefined)
+    def setY(value: NumberProp): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: NumberProp): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: NumberProp): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

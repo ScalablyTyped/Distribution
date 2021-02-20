@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteIconColor extends js.Object {
+trait DeleteIconColor extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object DeleteIconColor {
   }
   
   @scala.inline
-  implicit class DeleteIconColorOps[Self <: DeleteIconColor] (val x: Self) extends AnyVal {
+  implicit class DeleteIconColorMutableBuilder[Self <: DeleteIconColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteIconColor(value: String): Self = StObject.set(x, "deleteIconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setDeleteIconColorUndefined: Self = StObject.set(x, "deleteIconColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteIconColor(value: String): Self = this.set("deleteIconColor", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteDeleteIconColor: Self = this.set("deleteIconColor", js.undefined)
+    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setShadow(value: String): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: String): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
-    
-    @scala.inline
-    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

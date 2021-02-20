@@ -1,12 +1,13 @@
 package typings.pathIsInside
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("path-is-inside", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("path-is-inside", JSImport.Namespace)
+  @js.native
   def apply(thePath: String, potentialParent: String): Boolean = js.native
 }

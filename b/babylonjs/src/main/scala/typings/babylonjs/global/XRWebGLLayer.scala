@@ -4,6 +4,7 @@ import typings.babylonjs.WebGLRenderingContext
 import typings.babylonjs.XRSession
 import typings.babylonjs.XRWebGLLayerInit
 import typings.std.WebGL2RenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,10 @@ class XRWebGLLayer protected ()
   def this(session: XRSession, context: WebGLRenderingContext, layerInit: XRWebGLLayerInit) = this()
   def this(session: XRSession, context: WebGL2RenderingContext, layerInit: XRWebGLLayerInit) = this()
 }
-/* static members */
-@JSGlobal("XRWebGLLayer")
-@js.native
-object XRWebGLLayer extends js.Object {
+object XRWebGLLayer {
   
+  /* static member */
+  @JSGlobal("XRWebGLLayer.getNativeFramebufferScaleFactor")
+  @js.native
   def getNativeFramebufferScaleFactor(session: XRSession): Double = js.native
 }

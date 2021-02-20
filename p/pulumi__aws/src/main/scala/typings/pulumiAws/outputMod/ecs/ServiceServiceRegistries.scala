@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ecs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceServiceRegistries extends js.Object {
+trait ServiceServiceRegistries extends StObject {
   
   /**
     * The container name value, already specified in the task definition, to be used for your service discovery service.
@@ -36,39 +37,27 @@ object ServiceServiceRegistries {
   }
   
   @scala.inline
-  implicit class ServiceServiceRegistriesOps[Self <: ServiceServiceRegistries] (val x: Self) extends AnyVal {
+  implicit class ServiceServiceRegistriesMutableBuilder[Self <: ServiceServiceRegistries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryArn(value: String): Self = this.set("registryArn", value.asInstanceOf[js.Any])
+    def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
     
     @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setContainerPort(value: Double): Self = this.set("containerPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerPort: Self = this.set("containerPort", js.undefined)
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setRegistryArn(value: String): Self = StObject.set(x, "registryArn", value.asInstanceOf[js.Any])
   }
 }

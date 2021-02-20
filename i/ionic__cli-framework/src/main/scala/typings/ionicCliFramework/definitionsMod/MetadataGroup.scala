@@ -6,6 +6,7 @@ import typings.ionicCliFramework.ionicCliFrameworkStrings.deprecated
 import typings.ionicCliFramework.ionicCliFrameworkStrings.experimental
 import typings.ionicCliFramework.ionicCliFrameworkStrings.hidden
 import typings.ionicCliFramework.ionicCliFrameworkStrings.paid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ionicCliFramework.ionicCliFrameworkStrings.hidden
   - typings.ionicCliFramework.ionicCliFrameworkStrings.paid
 */
-trait MetadataGroup extends js.Object
+trait MetadataGroup extends StObject
 object MetadataGroup {
   
   @scala.inline

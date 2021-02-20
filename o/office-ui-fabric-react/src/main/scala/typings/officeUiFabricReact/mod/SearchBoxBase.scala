@@ -2,6 +2,7 @@ package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.PickISearchBoxPropsdisabl
 import typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,15 @@ class SearchBoxBase protected ()
   def this(props: ISearchBoxProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react", "SearchBoxBase")
-@js.native
-object SearchBoxBase extends js.Object {
+object SearchBoxBase {
   
-  var defaultProps: PickISearchBoxPropsdisabl = js.native
+  @JSImport("office-ui-fabric-react", "SearchBoxBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "SearchBoxBase.defaultProps")
+  @js.native
+  def defaultProps: PickISearchBoxPropsdisabl = js.native
+  @scala.inline
+  def defaultProps_=(x: PickISearchBoxPropsdisabl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

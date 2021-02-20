@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Favorites extends js.Object {
+trait Favorites extends StObject {
   
   var favorites: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object Favorites {
   }
   
   @scala.inline
-  implicit class FavoritesOps[Self <: Favorites] (val x: Self) extends AnyVal {
+  implicit class FavoritesMutableBuilder[Self <: Favorites] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFavorites(value: String): Self = StObject.set(x, "favorites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFavoritesUndefined: Self = StObject.set(x, "favorites", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLikes(value: String): Self = StObject.set(x, "likes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFavorites(value: String): Self = this.set("favorites", value.asInstanceOf[js.Any])
+    def setLikesUndefined: Self = StObject.set(x, "likes", js.undefined)
     
     @scala.inline
-    def deleteFavorites: Self = this.set("favorites", js.undefined)
+    def setUploads(value: String): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLikes(value: String): Self = this.set("likes", value.asInstanceOf[js.Any])
+    def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
     
     @scala.inline
-    def deleteLikes: Self = this.set("likes", js.undefined)
+    def setWatchHistory(value: String): Self = StObject.set(x, "watchHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploads(value: String): Self = this.set("uploads", value.asInstanceOf[js.Any])
+    def setWatchHistoryUndefined: Self = StObject.set(x, "watchHistory", js.undefined)
     
     @scala.inline
-    def deleteUploads: Self = this.set("uploads", js.undefined)
+    def setWatchLater(value: String): Self = StObject.set(x, "watchLater", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWatchHistory(value: String): Self = this.set("watchHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatchHistory: Self = this.set("watchHistory", js.undefined)
-    
-    @scala.inline
-    def setWatchLater(value: String): Self = this.set("watchLater", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatchLater: Self = this.set("watchLater", js.undefined)
+    def setWatchLaterUndefined: Self = StObject.set(x, "watchLater", js.undefined)
   }
 }

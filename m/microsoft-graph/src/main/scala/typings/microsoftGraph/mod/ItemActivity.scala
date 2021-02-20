@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object ItemActivity {
   }
   
   @scala.inline
-  implicit class ItemActivityOps[Self <: ItemActivity] (val x: Self) extends AnyVal {
+  implicit class ItemActivityMutableBuilder[Self <: ItemActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess(value: NullableOption[AccessAction]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessNull: Self = StObject.set(x, "access", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
     @scala.inline
-    def setAccess(value: NullableOption[AccessAction]): Self = this.set("access", value.asInstanceOf[js.Any])
+    def setActivityDateTime(value: NullableOption[String]): Self = StObject.set(x, "activityDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccess: Self = this.set("access", js.undefined)
+    def setActivityDateTimeNull: Self = StObject.set(x, "activityDateTime", null)
     
     @scala.inline
-    def setAccessNull: Self = this.set("access", null)
+    def setActivityDateTimeUndefined: Self = StObject.set(x, "activityDateTime", js.undefined)
     
     @scala.inline
-    def setActivityDateTime(value: NullableOption[String]): Self = this.set("activityDateTime", value.asInstanceOf[js.Any])
+    def setActor(value: NullableOption[IdentitySet]): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivityDateTime: Self = this.set("activityDateTime", js.undefined)
+    def setActorNull: Self = StObject.set(x, "actor", null)
     
     @scala.inline
-    def setActivityDateTimeNull: Self = this.set("activityDateTime", null)
+    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
     @scala.inline
-    def setActor(value: NullableOption[IdentitySet]): Self = this.set("actor", value.asInstanceOf[js.Any])
+    def setDriveItem(value: NullableOption[DriveItem]): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActor: Self = this.set("actor", js.undefined)
+    def setDriveItemNull: Self = StObject.set(x, "driveItem", null)
     
     @scala.inline
-    def setActorNull: Self = this.set("actor", null)
-    
-    @scala.inline
-    def setDriveItem(value: NullableOption[DriveItem]): Self = this.set("driveItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriveItem: Self = this.set("driveItem", js.undefined)
-    
-    @scala.inline
-    def setDriveItemNull: Self = this.set("driveItem", null)
+    def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
   }
 }

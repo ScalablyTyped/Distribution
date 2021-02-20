@@ -1,11 +1,12 @@
 package typings.angularCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Providers extends js.Object {
+trait Providers extends StObject {
   
   var providers: js.UndefOr[js.Array[_]] = js.native
   
@@ -20,33 +21,21 @@ object Providers {
   }
   
   @scala.inline
-  implicit class ProvidersOps[Self <: Providers] (val x: Self) extends AnyVal {
+  implicit class ProvidersMutableBuilder[Self <: Providers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProviders(value: js.Array[_]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvidersVarargs(value: js.Any*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setProvidersVarargs(value: js.Any*): Self = this.set("providers", js.Array(value :_*))
+    def setUseJit(value: Boolean): Self = StObject.set(x, "useJit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviders(value: js.Array[_]): Self = this.set("providers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviders: Self = this.set("providers", js.undefined)
-    
-    @scala.inline
-    def setUseJit(value: Boolean): Self = this.set("useJit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseJit: Self = this.set("useJit", js.undefined)
+    def setUseJitUndefined: Self = StObject.set(x, "useJit", js.undefined)
   }
 }

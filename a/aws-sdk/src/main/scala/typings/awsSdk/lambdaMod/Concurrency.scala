@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Concurrency extends js.Object {
+trait Concurrency extends StObject {
   
   /**
     * The number of concurrent executions that are reserved for this function. For more information, see Managing Concurrency.
@@ -21,24 +22,12 @@ object Concurrency {
   }
   
   @scala.inline
-  implicit class ConcurrencyOps[Self <: Concurrency] (val x: Self) extends AnyVal {
+  implicit class ConcurrencyMutableBuilder[Self <: Concurrency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReservedConcurrentExecutions(value: ReservedConcurrentExecutions): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReservedConcurrentExecutions(value: ReservedConcurrentExecutions): Self = this.set("ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedConcurrentExecutions: Self = this.set("ReservedConcurrentExecutions", js.undefined)
+    def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "ReservedConcurrentExecutions", js.undefined)
   }
 }

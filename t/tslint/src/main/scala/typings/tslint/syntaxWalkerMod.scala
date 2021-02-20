@@ -76,16 +76,16 @@ import typings.typescript.mod.VariableDeclarationList
 import typings.typescript.mod.VariableStatement
 import typings.typescript.mod.WhileStatement
 import typings.typescript.mod.WithStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/language/walker/syntaxWalker", JSImport.Namespace)
-@js.native
-object syntaxWalkerMod extends js.Object {
+object syntaxWalkerMod {
   
+  @JSImport("tslint/lib/language/walker/syntaxWalker", "SyntaxWalker")
   @js.native
-  class SyntaxWalker () extends js.Object {
+  class SyntaxWalker () extends StObject {
     
     /* protected */ def visitAnyKeyword(node: Node): Unit = js.native
     

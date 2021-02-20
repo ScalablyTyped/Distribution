@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderBy extends js.Object {
+trait OrderBy extends StObject {
   
   /** If true, sorts by descending order. */
   var desc: js.UndefOr[Boolean] = js.native
@@ -28,42 +29,30 @@ object OrderBy {
   }
   
   @scala.inline
-  implicit class OrderByOps[Self <: OrderBy] (val x: Self) extends AnyVal {
+  implicit class OrderByMutableBuilder[Self <: OrderBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimension(value: DimensionOrderBy): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: Boolean): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
     @scala.inline
-    def deleteDesc: Self = this.set("desc", js.undefined)
+    def setMetric(value: MetricOrderBy): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimension(value: DimensionOrderBy): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     @scala.inline
-    def deleteDimension: Self = this.set("dimension", js.undefined)
+    def setPivot(value: PivotOrderBy): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetric(value: MetricOrderBy): Self = this.set("metric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
-    
-    @scala.inline
-    def setPivot(value: PivotOrderBy): Self = this.set("pivot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePivot: Self = this.set("pivot", js.undefined)
+    def setPivotUndefined: Self = StObject.set(x, "pivot", js.undefined)
   }
 }

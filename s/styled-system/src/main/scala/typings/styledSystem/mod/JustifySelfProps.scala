@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JustifySelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait JustifySelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
     * The CSS justify-self property set the way a box is justified inside its alignment container along
@@ -29,22 +30,7 @@ object JustifySelfProps {
   }
   
   @scala.inline
-  implicit class JustifySelfPropsOps[Self <: JustifySelfProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with JustifySelfProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJustifySelfVarargs(value: (js.Any | Null)*): Self = this.set("justifySelf", js.Array(value :_*))
+  implicit class JustifySelfPropsMutableBuilder[Self <: JustifySelfProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with JustifySelfProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setJustifySelf(
@@ -52,12 +38,15 @@ object JustifySelfProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ _, 
           ThemeType
         ]
-    ): Self = this.set("justifySelf", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJustifySelf: Self = this.set("justifySelf", js.undefined)
+    def setJustifySelfNull: Self = StObject.set(x, "justifySelf", null)
     
     @scala.inline
-    def setJustifySelfNull: Self = this.set("justifySelf", null)
+    def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
+    
+    @scala.inline
+    def setJustifySelfVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "justifySelf", js.Array(value :_*))
   }
 }

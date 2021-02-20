@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSessionRequest extends js.Object {
+trait StartSessionRequest extends StObject {
   
   /**
     * The name of the SSM document to define the parameters and plugin settings for the session. For example, SSM-SessionManagerRunShell. You can call the GetDocument API to verify the document exists before attempting to start a session. If no document name is provided, a shell to the instance is launched by default.
@@ -31,33 +32,21 @@ object StartSessionRequest {
   }
   
   @scala.inline
-  implicit class StartSessionRequestOps[Self <: StartSessionRequest] (val x: Self) extends AnyVal {
+  implicit class StartSessionRequestMutableBuilder[Self <: StartSessionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentName(value: DocumentARN): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentNameUndefined: Self = StObject.set(x, "DocumentName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameters(value: SessionManagerParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: SessionTarget): Self = this.set("Target", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def setDocumentName(value: DocumentARN): Self = this.set("DocumentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentName: Self = this.set("DocumentName", js.undefined)
-    
-    @scala.inline
-    def setParameters(value: SessionManagerParameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setTarget(value: SessionTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

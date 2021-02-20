@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Application extends js.Object {
+trait Application extends StObject {
   
   /** Google Apps authentication domain that controls which users can access this application.Defaults to open access for any Google Account. */
   var authDomain: js.UndefOr[String] = js.native
@@ -66,105 +67,93 @@ object Application {
   }
   
   @scala.inline
-  implicit class ApplicationOps[Self <: Application] (val x: Self) extends AnyVal {
+  implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthDomain(value: String): Self = StObject.set(x, "authDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthDomainUndefined: Self = StObject.set(x, "authDomain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeBucket(value: String): Self = StObject.set(x, "codeBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthDomain(value: String): Self = this.set("authDomain", value.asInstanceOf[js.Any])
+    def setCodeBucketUndefined: Self = StObject.set(x, "codeBucket", js.undefined)
     
     @scala.inline
-    def deleteAuthDomain: Self = this.set("authDomain", js.undefined)
+    def setDatabaseType(value: String): Self = StObject.set(x, "databaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeBucket(value: String): Self = this.set("codeBucket", value.asInstanceOf[js.Any])
+    def setDatabaseTypeUndefined: Self = StObject.set(x, "databaseType", js.undefined)
     
     @scala.inline
-    def deleteCodeBucket: Self = this.set("codeBucket", js.undefined)
+    def setDefaultBucket(value: String): Self = StObject.set(x, "defaultBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseType(value: String): Self = this.set("databaseType", value.asInstanceOf[js.Any])
+    def setDefaultBucketUndefined: Self = StObject.set(x, "defaultBucket", js.undefined)
     
     @scala.inline
-    def deleteDatabaseType: Self = this.set("databaseType", js.undefined)
+    def setDefaultCookieExpiration(value: String): Self = StObject.set(x, "defaultCookieExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBucket(value: String): Self = this.set("defaultBucket", value.asInstanceOf[js.Any])
+    def setDefaultCookieExpirationUndefined: Self = StObject.set(x, "defaultCookieExpiration", js.undefined)
     
     @scala.inline
-    def deleteDefaultBucket: Self = this.set("defaultBucket", js.undefined)
+    def setDefaultHostname(value: String): Self = StObject.set(x, "defaultHostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCookieExpiration(value: String): Self = this.set("defaultCookieExpiration", value.asInstanceOf[js.Any])
+    def setDefaultHostnameUndefined: Self = StObject.set(x, "defaultHostname", js.undefined)
     
     @scala.inline
-    def deleteDefaultCookieExpiration: Self = this.set("defaultCookieExpiration", js.undefined)
+    def setDispatchRules(value: js.Array[UrlDispatchRule]): Self = StObject.set(x, "dispatchRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHostname(value: String): Self = this.set("defaultHostname", value.asInstanceOf[js.Any])
+    def setDispatchRulesUndefined: Self = StObject.set(x, "dispatchRules", js.undefined)
     
     @scala.inline
-    def deleteDefaultHostname: Self = this.set("defaultHostname", js.undefined)
+    def setDispatchRulesVarargs(value: UrlDispatchRule*): Self = StObject.set(x, "dispatchRules", js.Array(value :_*))
     
     @scala.inline
-    def setDispatchRulesVarargs(value: UrlDispatchRule*): Self = this.set("dispatchRules", js.Array(value :_*))
+    def setFeatureSettings(value: FeatureSettings): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispatchRules(value: js.Array[UrlDispatchRule]): Self = this.set("dispatchRules", value.asInstanceOf[js.Any])
+    def setFeatureSettingsUndefined: Self = StObject.set(x, "featureSettings", js.undefined)
     
     @scala.inline
-    def deleteDispatchRules: Self = this.set("dispatchRules", js.undefined)
+    def setGcrDomain(value: String): Self = StObject.set(x, "gcrDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureSettings(value: FeatureSettings): Self = this.set("featureSettings", value.asInstanceOf[js.Any])
+    def setGcrDomainUndefined: Self = StObject.set(x, "gcrDomain", js.undefined)
     
     @scala.inline
-    def deleteFeatureSettings: Self = this.set("featureSettings", js.undefined)
+    def setIap(value: IdentityAwareProxy): Self = StObject.set(x, "iap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcrDomain(value: String): Self = this.set("gcrDomain", value.asInstanceOf[js.Any])
+    def setIapUndefined: Self = StObject.set(x, "iap", js.undefined)
     
     @scala.inline
-    def deleteGcrDomain: Self = this.set("gcrDomain", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIap(value: IdentityAwareProxy): Self = this.set("iap", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteIap: Self = this.set("iap", js.undefined)
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    def setServingStatus(value: String): Self = StObject.set(x, "servingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setServingStatus(value: String): Self = this.set("servingStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServingStatus: Self = this.set("servingStatus", js.undefined)
+    def setServingStatusUndefined: Self = StObject.set(x, "servingStatus", js.undefined)
   }
 }

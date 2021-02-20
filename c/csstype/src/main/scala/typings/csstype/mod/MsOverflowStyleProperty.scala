@@ -1,6 +1,7 @@
 package typings.csstype.mod
 
 import typings.csstype.csstypeStrings.scrollbar_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.revert
   - typings.csstype.csstypeStrings.unset
 */
-trait MsOverflowStyleProperty extends js.Object
+trait MsOverflowStyleProperty extends StObject
 object MsOverflowStyleProperty {
   
   @scala.inline

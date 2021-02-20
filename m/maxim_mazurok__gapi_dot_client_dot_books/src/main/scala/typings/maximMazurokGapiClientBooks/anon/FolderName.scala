@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FolderName extends js.Object {
+trait FolderName extends StObject {
   
   var folderName: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object FolderName {
   }
   
   @scala.inline
-  implicit class FolderNameOps[Self <: FolderName] (val x: Self) extends AnyVal {
+  implicit class FolderNameMutableBuilder[Self <: FolderName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFolderName(value: String): Self = StObject.set(x, "folderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolderNameUndefined: Self = StObject.set(x, "folderName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderName(value: String): Self = this.set("folderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFolderName: Self = this.set("folderName", js.undefined)
-    
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
+    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
   }
 }

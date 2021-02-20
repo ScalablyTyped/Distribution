@@ -6,12 +6,13 @@ import typings.filepond.filepondStrings.GET
 import typings.filepond.filepondStrings.POST
 import typings.filepond.filepondStrings.PUT
 import typings.std.FormData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerUrl extends js.Object {
+trait ServerUrl extends StObject {
   
   var headers: js.UndefOr[StringDictionary[String | Boolean | Double]] = js.native
   
@@ -50,63 +51,51 @@ object ServerUrl {
   }
   
   @scala.inline
-  implicit class ServerUrlOps[Self <: ServerUrl] (val x: Self) extends AnyVal {
+  implicit class ServerUrlMutableBuilder[Self <: ServerUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: StringDictionary[String | Boolean | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethod(value: GET | POST | PUT | DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setHeaders(value: StringDictionary[String | Boolean | Double]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setOndata(value: /* data */ FormData => FormData): Self = StObject.set(x, "ondata", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setOndataUndefined: Self = StObject.set(x, "ondata", js.undefined)
     
     @scala.inline
-    def setMethod(value: GET | POST | PUT | DELETE): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setOnerror(value: /* responseBody */ js.Any => _): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
     @scala.inline
-    def setOndata(value: /* data */ FormData => FormData): Self = this.set("ondata", js.Any.fromFunction1(value))
+    def setOnload(value: /* response */ js.Any => Double | String): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOndata: Self = this.set("ondata", js.undefined)
+    def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
     @scala.inline
-    def setOnerror(value: /* responseBody */ js.Any => _): Self = this.set("onerror", js.Any.fromFunction1(value))
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnerror: Self = this.set("onerror", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setOnload(value: /* response */ js.Any => Double | String): Self = this.set("onload", js.Any.fromFunction1(value))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnload: Self = this.set("onload", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

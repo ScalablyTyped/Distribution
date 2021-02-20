@@ -1,11 +1,12 @@
 package typings.clearbladejsNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query extends js.Object {
+trait Query extends StObject {
   
   var FILTERS: js.UndefOr[js.Array[QueryFilter]] = js.native
   
@@ -26,54 +27,42 @@ object Query {
   }
   
   @scala.inline
-  implicit class QueryOps[Self <: Query] (val x: Self) extends AnyVal {
+  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFILTERS(value: js.Array[QueryFilter]): Self = StObject.set(x, "FILTERS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFILTERSUndefined: Self = StObject.set(x, "FILTERS", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFILTERSVarargs(value: QueryFilter*): Self = StObject.set(x, "FILTERS", js.Array(value :_*))
     
     @scala.inline
-    def setFILTERSVarargs(value: QueryFilter*): Self = this.set("FILTERS", js.Array(value :_*))
+    def setPAGENUM(value: Double): Self = StObject.set(x, "PAGENUM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFILTERS(value: js.Array[QueryFilter]): Self = this.set("FILTERS", value.asInstanceOf[js.Any])
+    def setPAGENUMUndefined: Self = StObject.set(x, "PAGENUM", js.undefined)
     
     @scala.inline
-    def deleteFILTERS: Self = this.set("FILTERS", js.undefined)
+    def setPAGESIZE(value: Double): Self = StObject.set(x, "PAGESIZE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPAGENUM(value: Double): Self = this.set("PAGENUM", value.asInstanceOf[js.Any])
+    def setPAGESIZEUndefined: Self = StObject.set(x, "PAGESIZE", js.undefined)
     
     @scala.inline
-    def deletePAGENUM: Self = this.set("PAGENUM", js.undefined)
+    def setSELECTCOLUMNS(value: js.Array[String]): Self = StObject.set(x, "SELECTCOLUMNS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPAGESIZE(value: Double): Self = this.set("PAGESIZE", value.asInstanceOf[js.Any])
+    def setSELECTCOLUMNSUndefined: Self = StObject.set(x, "SELECTCOLUMNS", js.undefined)
     
     @scala.inline
-    def deletePAGESIZE: Self = this.set("PAGESIZE", js.undefined)
+    def setSELECTCOLUMNSVarargs(value: String*): Self = StObject.set(x, "SELECTCOLUMNS", js.Array(value :_*))
     
     @scala.inline
-    def setSELECTCOLUMNSVarargs(value: String*): Self = this.set("SELECTCOLUMNS", js.Array(value :_*))
+    def setSORT(value: QuerySortDirections): Self = StObject.set(x, "SORT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSELECTCOLUMNS(value: js.Array[String]): Self = this.set("SELECTCOLUMNS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSELECTCOLUMNS: Self = this.set("SELECTCOLUMNS", js.undefined)
-    
-    @scala.inline
-    def setSORT(value: QuerySortDirections): Self = this.set("SORT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSORT: Self = this.set("SORT", js.undefined)
+    def setSORTUndefined: Self = StObject.set(x, "SORT", js.undefined)
   }
 }

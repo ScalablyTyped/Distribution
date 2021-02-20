@@ -1,5 +1,6 @@
 package typings.reactVis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,54 +33,42 @@ object ArcSeriesPoint {
   }
   
   @scala.inline
-  implicit class ArcSeriesPointOps[Self <: ArcSeriesPoint] (val x: Self) extends AnyVal {
+  implicit class ArcSeriesPointMutableBuilder[Self <: ArcSeriesPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngle0(value: Double): Self = StObject.set(x, "angle0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setAngle0(value: Double): Self = this.set("angle0", value.asInstanceOf[js.Any])
+    def setFill(value: String | Double): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def setRadius0(value: Double): Self = this.set("radius0", value.asInstanceOf[js.Any])
+    def setOpacity(value: String | Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String | Double): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String | Double): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setRadius0(value: Double): Self = StObject.set(x, "radius0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setStroke(value: String | Double): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: String | Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setStroke(value: String | Double): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

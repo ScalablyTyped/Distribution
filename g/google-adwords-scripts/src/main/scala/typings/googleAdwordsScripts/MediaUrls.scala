@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaUrls extends js.Object {
+trait MediaUrls extends StObject {
   
   def getFullMediaUrl(): String = js.native
   
@@ -29,30 +30,18 @@ object MediaUrls {
   }
   
   @scala.inline
-  implicit class MediaUrlsOps[Self <: MediaUrls] (val x: Self) extends AnyVal {
+  implicit class MediaUrlsMutableBuilder[Self <: MediaUrls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFullMediaUrl(value: () => String): Self = StObject.set(x, "getFullMediaUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPreviewMediaUrl(value: () => String): Self = StObject.set(x, "getPreviewMediaUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetShrunkenMediaUrl(value: () => String): Self = StObject.set(x, "getShrunkenMediaUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFullMediaUrl(value: () => String): Self = this.set("getFullMediaUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPreviewMediaUrl(value: () => String): Self = this.set("getPreviewMediaUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetShrunkenMediaUrl(value: () => String): Self = this.set("getShrunkenMediaUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVideoThumbnailMediaUrl(value: () => String): Self = this.set("getVideoThumbnailMediaUrl", js.Any.fromFunction0(value))
+    def setGetVideoThumbnailMediaUrl(value: () => String): Self = StObject.set(x, "getVideoThumbnailMediaUrl", js.Any.fromFunction0(value))
   }
 }

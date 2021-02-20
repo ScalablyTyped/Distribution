@@ -4,16 +4,16 @@ import typings.typescriptEventHandler.funcMod.Action
 import typings.typescriptEventHandler.funcMod.AsyncAction
 import typings.typescriptEventHandler.funcMod.AsyncPredicate
 import typings.typescriptEventHandler.funcMod.Predicate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-event-handler/dist/event-handler", JSImport.Namespace)
-@js.native
-object eventHandlerMod extends js.Object {
+object eventHandlerMod {
   
+  @JSImport("typescript-event-handler/dist/event-handler", "EventHandler")
   @js.native
-  class EventHandler[TInput] () extends js.Object {
+  class EventHandler[TInput] () extends StObject {
     
     def handleAsync(value: TInput): js.Promise[Unit] = js.native
     

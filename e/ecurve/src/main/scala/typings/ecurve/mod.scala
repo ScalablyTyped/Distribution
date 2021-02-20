@@ -2,18 +2,16 @@ package typings.ecurve
 
 import typings.bigi.mod.^
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ecurve", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def getCurveByName(name: String): Curve = js.native
-  
+  @JSImport("ecurve", "Curve")
   @js.native
-  class Curve protected () extends js.Object {
+  class Curve protected () extends StObject {
     def this(p: ^, a: ^, b: ^, Gx: ^, Gy: ^, n: ^, h: ^) = this()
     
     var G: Point = js.native
@@ -37,8 +35,9 @@ object mod extends js.Object {
     def validate(Q: js.Any): Boolean = js.native
   }
   
+  @JSImport("ecurve", "Point")
   @js.native
-  class Point protected () extends js.Object {
+  class Point protected () extends StObject {
     def this(curve: Curve, x: ^, y: ^, z: ^) = this()
     
     def add(b: Point): Point = js.native
@@ -67,11 +66,18 @@ object mod extends js.Object {
     var z: ^ = js.native
   }
   /* static members */
-  @js.native
-  object Point extends js.Object {
+  object Point {
     
+    @JSImport("ecurve", "Point.decodeFrom")
+    @js.native
     def decodeFrom(curve: Curve, buffer: Buffer): js.Any = js.native
     
+    @JSImport("ecurve", "Point.fromAffine")
+    @js.native
     def fromAffine(curve: Curve, x: ^, y: ^): Point = js.native
   }
+  
+  @JSImport("ecurve", "getCurveByName")
+  @js.native
+  def getCurveByName(name: String): Curve = js.native
 }

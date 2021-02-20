@@ -17,19 +17,28 @@ import typings.popperjsCore.typesMod.VirtualElement
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@popperjs/core/lib/popper-lite", JSImport.Namespace)
-@js.native
-object popperLiteMod extends js.Object {
+object popperLiteMod {
   
+  @JSImport("@popperjs/core/lib/popper-lite", "createPopper")
+  @js.native
   def createPopper[TModifier /* <: PartialModifieranyany */](reference: VirtualElement, popper: HTMLElement): Instance = js.native
+  @JSImport("@popperjs/core/lib/popper-lite", "createPopper")
+  @js.native
   def createPopper[TModifier /* <: PartialModifieranyany */](reference: VirtualElement, popper: HTMLElement, options: Partial[OptionsGeneric[TModifier]]): Instance = js.native
+  @JSImport("@popperjs/core/lib/popper-lite", "createPopper")
+  @js.native
   def createPopper[TModifier /* <: PartialModifieranyany */](reference: Element, popper: HTMLElement): Instance = js.native
+  @JSImport("@popperjs/core/lib/popper-lite", "createPopper")
+  @js.native
   def createPopper[TModifier /* <: PartialModifieranyany */](reference: Element, popper: HTMLElement, options: Partial[OptionsGeneric[TModifier]]): Instance = js.native
   
+  @JSImport("@popperjs/core/lib/popper-lite", "defaultModifiers")
+  @js.native
   val defaultModifiers: js.Array[
     Modifier[
       popperOffsets | eventListeners | computeStyles | applyStyles, 
@@ -37,15 +46,23 @@ object popperLiteMod extends js.Object {
     ]
   ] = js.native
   
+  @JSImport("@popperjs/core/lib/popper-lite", "detectOverflow")
+  @js.native
   def detectOverflow(state: State): SideObject = js.native
+  @JSImport("@popperjs/core/lib/popper-lite", "detectOverflow")
+  @js.native
   def detectOverflow(state: State, options: PartialOptions): SideObject = js.native
   
+  @JSImport("@popperjs/core/lib/popper-lite", "popperGenerator")
+  @js.native
   def popperGenerator(): js.Function3[
     /* reference */ Element | VirtualElement, 
     /* popper */ HTMLElement, 
     /* options */ js.UndefOr[Partial[OptionsGeneric[PartialModifieranyany]]], 
     Instance
   ] = js.native
+  @JSImport("@popperjs/core/lib/popper-lite", "popperGenerator")
+  @js.native
   def popperGenerator(generatorOptions: PopperGeneratorArgs): js.Function3[
     /* reference */ Element | VirtualElement, 
     /* popper */ HTMLElement, 

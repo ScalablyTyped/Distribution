@@ -1,13 +1,12 @@
 package typings.stringifyAttributes
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stringify-attributes", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   Turn an object into a string of HTML attributes.
@@ -24,6 +23,8 @@ object mod extends js.Object {
   //=> ' unicorn="🦄" rainbow number="1" multiple="a b"'
   ```
   */
+  @JSImport("stringify-attributes", JSImport.Namespace)
+  @js.native
   def apply(attributes: Attributes): String = js.native
   
   type Attributes = StringDictionary[String | Double | Boolean | js.Array[String]]

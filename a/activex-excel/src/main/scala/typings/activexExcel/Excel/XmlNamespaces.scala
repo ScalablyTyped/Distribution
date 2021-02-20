@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XmlNamespaces extends js.Object {
+trait XmlNamespaces extends StObject {
   
   def apply(Index: String): XmlNamespace = js.native
   def apply(Index: Double): XmlNamespace = js.native

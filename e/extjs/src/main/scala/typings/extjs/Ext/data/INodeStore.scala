@@ -1,5 +1,6 @@
 package typings.extjs.Ext.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,54 +35,42 @@ object INodeStore {
   }
   
   @scala.inline
-  implicit class INodeStoreOps[Self <: INodeStore] (val x: Self) extends AnyVal {
+  implicit class INodeStoreMutableBuilder[Self <: INodeStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsExpandingOrCollapsing(value: Double): Self = StObject.set(x, "isExpandingOrCollapsing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsExpandingOrCollapsingUndefined: Self = StObject.set(x, "isExpandingOrCollapsing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNodeStore(value: Boolean): Self = StObject.set(x, "isNodeStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExpandingOrCollapsing(value: Double): Self = this.set("isExpandingOrCollapsing", value.asInstanceOf[js.Any])
+    def setIsNodeStoreUndefined: Self = StObject.set(x, "isNodeStore", js.undefined)
     
     @scala.inline
-    def deleteIsExpandingOrCollapsing: Self = this.set("isExpandingOrCollapsing", js.undefined)
+    def setNode(value: IModel): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNodeStore(value: Boolean): Self = this.set("isNodeStore", value.asInstanceOf[js.Any])
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def deleteIsNodeStore: Self = this.set("isNodeStore", js.undefined)
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: IModel): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setRootVisible(value: Boolean): Self = StObject.set(x, "rootVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
+    def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
     
     @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setTreeStore(value: ITreeStore): Self = StObject.set(x, "treeStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootVisible(value: Boolean): Self = this.set("rootVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootVisible: Self = this.set("rootVisible", js.undefined)
-    
-    @scala.inline
-    def setTreeStore(value: ITreeStore): Self = this.set("treeStore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreeStore: Self = this.set("treeStore", js.undefined)
+    def setTreeStoreUndefined: Self = StObject.set(x, "treeStore", js.undefined)
   }
 }

@@ -1,13 +1,12 @@
 package typings.restartHooks
 
 import typings.react.mod.EffectCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@restart/hooks/cjs/useMountEffect", JSImport.Namespace)
-@js.native
-object useMountEffectMod extends js.Object {
+object useMountEffectMod {
   
   /**
     * Run's an effect on mount, and is cleaned up on unmount. Generally
@@ -26,5 +25,7 @@ object useMountEffectMod extends js.Object {
     *
     *  @category effects
     */
+  @JSImport("@restart/hooks/cjs/useMountEffect", JSImport.Default)
+  @js.native
   def default(effect: EffectCallback): Unit = js.native
 }

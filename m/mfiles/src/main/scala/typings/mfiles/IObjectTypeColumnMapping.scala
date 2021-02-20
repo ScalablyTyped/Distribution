@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFBuiltInObjectType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectTypeColumnMapping extends js.Object {
+trait IObjectTypeColumnMapping extends StObject {
   
   def Clone(): IObjectTypeColumnMapping = js.native
   
@@ -42,42 +43,30 @@ object IObjectTypeColumnMapping {
   }
   
   @scala.inline
-  implicit class IObjectTypeColumnMappingOps[Self <: IObjectTypeColumnMapping] (val x: Self) extends AnyVal {
+  implicit class IObjectTypeColumnMappingMutableBuilder[Self <: IObjectTypeColumnMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IObjectTypeColumnMapping): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectType(value: MFBuiltInObjectType | Double): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrdinal(value: Double): Self = StObject.set(x, "Ordinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IObjectTypeColumnMapping): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setPartOfInsert(value: Boolean): Self = StObject.set(x, "PartOfInsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: MFBuiltInObjectType | Double): Self = this.set("ObjectType", value.asInstanceOf[js.Any])
+    def setPartOfUpdate(value: Boolean): Self = StObject.set(x, "PartOfUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrdinal(value: Double): Self = this.set("Ordinal", value.asInstanceOf[js.Any])
+    def setSourceField(value: String): Self = StObject.set(x, "SourceField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartOfInsert(value: Boolean): Self = this.set("PartOfInsert", value.asInstanceOf[js.Any])
+    def setTargetPropertyDef(value: Double): Self = StObject.set(x, "TargetPropertyDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartOfUpdate(value: Boolean): Self = this.set("PartOfUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceField(value: String): Self = this.set("SourceField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetPropertyDef(value: Double): Self = this.set("TargetPropertyDef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

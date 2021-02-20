@@ -1,11 +1,12 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWorkingCopyMetaData extends js.Object {
+trait IWorkingCopyMetaData extends StObject {
   
   var avatarUrl: String = js.native
   
@@ -32,51 +33,39 @@ object IWorkingCopyMetaData {
   }
   
   @scala.inline
-  implicit class IWorkingCopyMetaDataOps[Self <: IWorkingCopyMetaData] (val x: Self) extends AnyVal {
+  implicit class IWorkingCopyMetaDataMutableBuilder[Self <: IWorkingCopyMetaData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetaModelVersion(value: String): Self = StObject.set(x, "metaModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatarUrl(value: String): Self = this.set("avatarUrl", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaModelVersion(value: String): Self = this.set("metaModelVersion", value.asInstanceOf[js.Any])
+    def setTeamServerBaseBranch(value: String): Self = StObject.set(x, "teamServerBaseBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTeamServerBaseBranchUndefined: Self = StObject.set(x, "teamServerBaseBranch", js.undefined)
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setTeamServerBaseCommitId(value: String): Self = StObject.set(x, "teamServerBaseCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamServerBaseBranch(value: String): Self = this.set("teamServerBaseBranch", value.asInstanceOf[js.Any])
+    def setTeamServerBaseCommitIdUndefined: Self = StObject.set(x, "teamServerBaseCommitId", js.undefined)
     
     @scala.inline
-    def deleteTeamServerBaseBranch: Self = this.set("teamServerBaseBranch", js.undefined)
+    def setTeamServerBaseRevision(value: Double): Self = StObject.set(x, "teamServerBaseRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamServerBaseCommitId(value: String): Self = this.set("teamServerBaseCommitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeamServerBaseCommitId: Self = this.set("teamServerBaseCommitId", js.undefined)
-    
-    @scala.inline
-    def setTeamServerBaseRevision(value: Double): Self = this.set("teamServerBaseRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeamServerBaseRevision: Self = this.set("teamServerBaseRevision", js.undefined)
+    def setTeamServerBaseRevisionUndefined: Self = StObject.set(x, "teamServerBaseRevision", js.undefined)
   }
 }

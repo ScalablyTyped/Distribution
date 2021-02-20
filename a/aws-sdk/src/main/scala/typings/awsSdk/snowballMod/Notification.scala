@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notification extends js.Object {
+trait Notification extends StObject {
   
   /**
     * The list of job states that will trigger a notification for this job.
@@ -31,39 +32,27 @@ object Notification {
   }
   
   @scala.inline
-  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
+  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobStatesToNotify(value: JobStateList): Self = StObject.set(x, "JobStatesToNotify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobStatesToNotifyUndefined: Self = StObject.set(x, "JobStatesToNotify", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobStatesToNotifyVarargs(value: JobState*): Self = StObject.set(x, "JobStatesToNotify", js.Array(value :_*))
     
     @scala.inline
-    def setJobStatesToNotifyVarargs(value: JobState*): Self = this.set("JobStatesToNotify", js.Array(value :_*))
+    def setNotifyAll(value: Boolean): Self = StObject.set(x, "NotifyAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatesToNotify(value: JobStateList): Self = this.set("JobStatesToNotify", value.asInstanceOf[js.Any])
+    def setNotifyAllUndefined: Self = StObject.set(x, "NotifyAll", js.undefined)
     
     @scala.inline
-    def deleteJobStatesToNotify: Self = this.set("JobStatesToNotify", js.undefined)
+    def setSnsTopicARN(value: SnsTopicARN): Self = StObject.set(x, "SnsTopicARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyAll(value: Boolean): Self = this.set("NotifyAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotifyAll: Self = this.set("NotifyAll", js.undefined)
-    
-    @scala.inline
-    def setSnsTopicARN(value: SnsTopicARN): Self = this.set("SnsTopicARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnsTopicARN: Self = this.set("SnsTopicARN", js.undefined)
+    def setSnsTopicARNUndefined: Self = StObject.set(x, "SnsTopicARN", js.undefined)
   }
 }

@@ -10,16 +10,15 @@ import typings.azureArmResource.policyModelsMod.PolicySetDefinition
 import typings.azureArmResource.policyModelsMod.PolicySetDefinitionListResult
 import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource/lib/policy/operations", JSImport.Namespace)
-@js.native
-object policyOperationsMod extends js.Object {
+object policyOperationsMod {
   
   @js.native
-  trait PolicyAssignments extends js.Object {
+  trait PolicyAssignments extends StObject {
     
     /**
       * @summary Creates or updates a policy assignment.
@@ -1382,7 +1381,7 @@ object policyOperationsMod extends js.Object {
   }
   
   @js.native
-  trait PolicyDefinitions extends js.Object {
+  trait PolicyDefinitions extends StObject {
     
     /**
       * @summary Creates or updates a policy definition in a subscription.
@@ -2362,7 +2361,7 @@ object policyOperationsMod extends js.Object {
   }
   
   @js.native
-  trait PolicySetDefinitions extends js.Object {
+  trait PolicySetDefinitions extends StObject {
     
     /**
       * @summary Creates or updates a policy set definition.

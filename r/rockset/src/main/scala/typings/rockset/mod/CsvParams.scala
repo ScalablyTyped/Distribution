@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CsvParams extends js.Object {
+trait CsvParams extends StObject {
   
   // names of columns
   var columnNames: js.UndefOr[js.Array[String]] = js.native
@@ -34,60 +35,48 @@ object CsvParams {
   }
   
   @scala.inline
-  implicit class CsvParamsOps[Self <: CsvParams] (val x: Self) extends AnyVal {
+  implicit class CsvParamsMutableBuilder[Self <: CsvParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnNames(value: js.Array[String]): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnNamesUndefined: Self = StObject.set(x, "columnNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value :_*))
     
     @scala.inline
-    def setColumnNamesVarargs(value: String*): Self = this.set("columnNames", js.Array(value :_*))
+    def setColumnTypes(value: js.Array[String]): Self = StObject.set(x, "columnTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnNames(value: js.Array[String]): Self = this.set("columnNames", value.asInstanceOf[js.Any])
+    def setColumnTypesUndefined: Self = StObject.set(x, "columnTypes", js.undefined)
     
     @scala.inline
-    def deleteColumnNames: Self = this.set("columnNames", js.undefined)
+    def setColumnTypesVarargs(value: String*): Self = StObject.set(x, "columnTypes", js.Array(value :_*))
     
     @scala.inline
-    def setColumnTypesVarargs(value: String*): Self = this.set("columnTypes", js.Array(value :_*))
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnTypes(value: js.Array[String]): Self = this.set("columnTypes", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteColumnTypes: Self = this.set("columnTypes", js.undefined)
+    def setFirstLineAsColumnNames(value: Boolean): Self = StObject.set(x, "firstLineAsColumnNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setFirstLineAsColumnNamesUndefined: Self = StObject.set(x, "firstLineAsColumnNames", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setQuoteChar(value: String): Self = StObject.set(x, "quoteChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLineAsColumnNames(value: Boolean): Self = this.set("firstLineAsColumnNames", value.asInstanceOf[js.Any])
+    def setQuoteCharUndefined: Self = StObject.set(x, "quoteChar", js.undefined)
     
     @scala.inline
-    def deleteFirstLineAsColumnNames: Self = this.set("firstLineAsColumnNames", js.undefined)
+    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoteChar(value: String): Self = this.set("quoteChar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuoteChar: Self = this.set("quoteChar", js.undefined)
-    
-    @scala.inline
-    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

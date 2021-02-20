@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface
 import typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a single frame of video data. */
 @js.native
-trait VideoFrame extends js.Object {
+trait VideoFrame extends StObject {
   
   /** Disposes of the object and associated resources. */
   def close(): Unit = js.native
@@ -71,51 +72,39 @@ object VideoFrame {
   }
   
   @scala.inline
-  implicit class VideoFrameOps[Self <: VideoFrame] (val x: Self) extends AnyVal {
+  implicit class VideoFrameMutableBuilder[Self <: VideoFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyToAsync(value: VideoFrame => IPromiseWithIAsyncAction): Self = StObject.set(x, "copyToAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirect3DSurface(value: IDirect3DSurface): Self = StObject.set(x, "direct3DSurface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyToAsync(value: VideoFrame => IPromiseWithIAsyncAction): Self = this.set("copyToAsync", js.Any.fromFunction1(value))
+    def setExtendedProperties(value: IPropertySet): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirect3DSurface(value: IDirect3DSurface): Self = this.set("direct3DSurface", value.asInstanceOf[js.Any])
+    def setIsDiscontinuous(value: Boolean): Self = StObject.set(x, "isDiscontinuous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedProperties(value: IPropertySet): Self = this.set("extendedProperties", value.asInstanceOf[js.Any])
+    def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDiscontinuous(value: Boolean): Self = this.set("isDiscontinuous", value.asInstanceOf[js.Any])
+    def setSoftwareBitmap(value: SoftwareBitmap): Self = StObject.set(x, "softwareBitmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
+    def setSystemRelativeTime(value: Double): Self = StObject.set(x, "systemRelativeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeTime(value: Double): Self = this.set("relativeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoftwareBitmap(value: SoftwareBitmap): Self = this.set("softwareBitmap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemRelativeTime(value: Double): Self = this.set("systemRelativeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

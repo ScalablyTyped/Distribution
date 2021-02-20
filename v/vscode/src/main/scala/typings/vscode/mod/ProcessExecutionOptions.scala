@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessExecutionOptions extends js.Object {
+trait ProcessExecutionOptions extends StObject {
   
   /**
     * The current working directory of the executed program or shell.
@@ -30,30 +31,18 @@ object ProcessExecutionOptions {
   }
   
   @scala.inline
-  implicit class ProcessExecutionOptionsOps[Self <: ProcessExecutionOptions] (val x: Self) extends AnyVal {
+  implicit class ProcessExecutionOptionsMutableBuilder[Self <: ProcessExecutionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCwd: Self = this.set("cwd", js.undefined)
-    
-    @scala.inline
-    def setEnv(value: StringDictionary[String]): Self = this.set("env", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
   }
 }

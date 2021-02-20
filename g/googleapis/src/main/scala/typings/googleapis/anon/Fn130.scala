@@ -5,12 +5,13 @@ import typings.googleapis.googleapisStrings.v1beta1
 import typings.googleapis.googleapisStrings.v1beta2
 import typings.googleapis.storageV1Mod.storageV1.Options
 import typings.googleapis.storageV1Mod.storageV1.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn130 extends js.Object {
+trait Fn130 extends StObject {
   
   def apply(options: Options): Storage = js.native
   def apply(options: typings.googleapis.storageV1beta1Mod.storageV1beta1.Options): typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage = js.native

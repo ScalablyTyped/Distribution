@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterDialogFilterAddedEventUIParam extends js.Object {
+trait FilterDialogFilterAddedEventUIParam extends StObject {
   
   /**
     * Gets reference to the filters table row DOM element.
@@ -26,30 +27,18 @@ object FilterDialogFilterAddedEventUIParam {
   }
   
   @scala.inline
-  implicit class FilterDialogFilterAddedEventUIParamOps[Self <: FilterDialogFilterAddedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class FilterDialogFilterAddedEventUIParamMutableBuilder[Self <: FilterDialogFilterAddedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

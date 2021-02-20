@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the ISO film speed settings on a capture device. */
 @js.native
-trait IsoSpeedControl extends js.Object {
+trait IsoSpeedControl extends StObject {
   
   /** Gets a value indicating whether auto ISO speed is enabled. */
   var auto: Boolean = js.native
@@ -75,51 +76,39 @@ object IsoSpeedControl {
   }
   
   @scala.inline
-  implicit class IsoSpeedControlOps[Self <: IsoSpeedControl] (val x: Self) extends AnyVal {
+  implicit class IsoSpeedControlMutableBuilder[Self <: IsoSpeedControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto(value: Boolean): Self = this.set("auto", value.asInstanceOf[js.Any])
+    def setPreset(value: IsoSpeedPreset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setSetAutoAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "setAutoAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setSetPresetAsync(value: IsoSpeedPreset => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPresetAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreset(value: IsoSpeedPreset): Self = this.set("preset", value.asInstanceOf[js.Any])
+    def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("setAutoAsync", js.Any.fromFunction0(value))
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPresetAsync(value: IsoSpeedPreset => IPromiseWithIAsyncAction): Self = this.set("setPresetAsync", js.Any.fromFunction1(value))
+    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = this.set("setValueAsync", js.Any.fromFunction1(value))
+    def setSupportedPresets(value: IVectorView[IsoSpeedPreset]): Self = StObject.set(x, "supportedPresets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupported(value: Boolean): Self = this.set("supported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedPresets(value: IVectorView[IsoSpeedPreset]): Self = this.set("supportedPresets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

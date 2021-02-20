@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,58 +52,46 @@ object CIMGeometricEffectDashes {
   }
   
   @scala.inline
-  implicit class CIMGeometricEffectDashesOps[Self <: CIMGeometricEffectDashes] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDashes): Self = this.set("type", value.asInstanceOf[js.Any])
+  implicit class CIMGeometricEffectDashesMutableBuilder[Self <: CIMGeometricEffectDashes] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setControlPointEnding(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineDashEnding * / any */ String
-    ): Self = this.set("controlPointEnding", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "controlPointEnding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControlPointEnding: Self = this.set("controlPointEnding", js.undefined)
+    def setControlPointEndingUndefined: Self = StObject.set(x, "controlPointEnding", js.undefined)
     
     @scala.inline
-    def setCustomEndingOffset(value: Double): Self = this.set("customEndingOffset", value.asInstanceOf[js.Any])
+    def setCustomEndingOffset(value: Double): Self = StObject.set(x, "customEndingOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomEndingOffset: Self = this.set("customEndingOffset", js.undefined)
+    def setCustomEndingOffsetUndefined: Self = StObject.set(x, "customEndingOffset", js.undefined)
     
     @scala.inline
-    def setDashTemplateVarargs(value: Double*): Self = this.set("dashTemplate", js.Array(value :_*))
+    def setDashTemplate(value: js.Array[Double]): Self = StObject.set(x, "dashTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashTemplate(value: js.Array[Double]): Self = this.set("dashTemplate", value.asInstanceOf[js.Any])
+    def setDashTemplateUndefined: Self = StObject.set(x, "dashTemplate", js.undefined)
     
     @scala.inline
-    def deleteDashTemplate: Self = this.set("dashTemplate", js.undefined)
+    def setDashTemplateVarargs(value: Double*): Self = StObject.set(x, "dashTemplate", js.Array(value :_*))
     
     @scala.inline
     def setLineDashEnding(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineDashEnding * / any */ String
-    ): Self = this.set("lineDashEnding", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lineDashEnding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineDashEnding: Self = this.set("lineDashEnding", js.undefined)
+    def setLineDashEndingUndefined: Self = StObject.set(x, "lineDashEnding", js.undefined)
     
     @scala.inline
-    def setOffsetAlongLine(value: Double): Self = this.set("offsetAlongLine", value.asInstanceOf[js.Any])
+    def setOffsetAlongLine(value: Double): Self = StObject.set(x, "offsetAlongLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetAlongLine: Self = this.set("offsetAlongLine", js.undefined)
+    def setOffsetAlongLineUndefined: Self = StObject.set(x, "offsetAlongLine", js.undefined)
+    
+    @scala.inline
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDashes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

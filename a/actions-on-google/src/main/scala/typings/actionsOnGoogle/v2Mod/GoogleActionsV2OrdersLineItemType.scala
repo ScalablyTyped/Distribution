@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.SUBTOTAL
   - typings.actionsOnGoogle.actionsOnGoogleStrings.FEE
 */
-trait GoogleActionsV2OrdersLineItemType extends js.Object
+trait GoogleActionsV2OrdersLineItemType extends StObject
 object GoogleActionsV2OrdersLineItemType {
   
   @scala.inline

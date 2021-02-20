@@ -6,16 +6,21 @@ import typings.shevyjs.typesMod.Factor
 import typings.shevyjs.typesMod.RhythmProperties
 import typings.shevyjs.typesMod.Scale
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("shevyjs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("shevyjs", JSImport.Default)
+  @js.native
+  class default () extends Shevy {
+    def this(options: PartialOptions) = this()
+  }
   
   @js.native
-  trait Shevy extends js.Object {
+  trait Shevy extends StObject {
     
     var addMarginBottom: Boolean = js.native
     
@@ -57,10 +62,5 @@ object mod extends js.Object {
     var proximity: Boolean = js.native
     
     var proximityFactor: Factor = js.native
-  }
-  
-  @js.native
-  class default () extends Shevy {
-    def this(options: PartialOptions) = this()
   }
 }

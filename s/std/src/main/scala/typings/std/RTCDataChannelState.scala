@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.connecting
   - typings.std.stdStrings.open
 */
-trait RTCDataChannelState extends js.Object
+trait RTCDataChannelState extends StObject
 object RTCDataChannelState {
   
   @scala.inline

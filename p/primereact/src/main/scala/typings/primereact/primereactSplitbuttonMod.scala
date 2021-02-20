@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.splitButtonMod.SplitButtonProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/splitbutton", JSImport.Namespace)
-@js.native
-object primereactSplitbuttonMod extends js.Object {
+object primereactSplitbuttonMod {
   
+  @JSImport("primereact/splitbutton", "SplitButton")
   @js.native
-  class SplitButton ()
-    extends Component[SplitButtonProps, js.Any, js.Any]
+  class SplitButton protected ()
+    extends typings.primereact.splitButtonMod.SplitButton {
+    def this(props: SplitButtonProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: SplitButtonProps, context: js.Any) = this()
+  }
 }

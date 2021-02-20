@@ -15,12 +15,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.northwest
 import typings.arcgisJsApi.arcgisJsApiStrings.seamline
 import typings.arcgisJsApi.arcgisJsApiStrings.sum
 import typings.arcgisJsApi.arcgisJsApiStrings.viewpoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MosaicRuleProperties extends js.Object {
+trait MosaicRuleProperties extends StObject {
   
   /**
     * Indicates whether the sort should be ascending.
@@ -110,93 +111,81 @@ object MosaicRuleProperties {
   }
   
   @scala.inline
-  implicit class MosaicRulePropertiesOps[Self <: MosaicRuleProperties] (val x: Self) extends AnyVal {
+  implicit class MosaicRulePropertiesMutableBuilder[Self <: MosaicRuleProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemRenderingRule(value: RasterFunctionProperties): Self = StObject.set(x, "itemRenderingRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscending(value: Boolean): Self = this.set("ascending", value.asInstanceOf[js.Any])
+    def setItemRenderingRuleUndefined: Self = StObject.set(x, "itemRenderingRule", js.undefined)
     
     @scala.inline
-    def deleteAscending: Self = this.set("ascending", js.undefined)
+    def setLockRasterIds(value: js.Array[Double]): Self = StObject.set(x, "lockRasterIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemRenderingRule(value: RasterFunctionProperties): Self = this.set("itemRenderingRule", value.asInstanceOf[js.Any])
+    def setLockRasterIdsUndefined: Self = StObject.set(x, "lockRasterIds", js.undefined)
     
     @scala.inline
-    def deleteItemRenderingRule: Self = this.set("itemRenderingRule", js.undefined)
+    def setLockRasterIdsVarargs(value: Double*): Self = StObject.set(x, "lockRasterIds", js.Array(value :_*))
     
     @scala.inline
-    def setLockRasterIdsVarargs(value: Double*): Self = this.set("lockRasterIds", js.Array(value :_*))
+    def setMethod(value: none | center | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockRasterIds(value: js.Array[Double]): Self = this.set("lockRasterIds", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteLockRasterIds: Self = this.set("lockRasterIds", js.undefined)
+    def setMultidimensionalDefinition(value: js.Array[DimensionalDefinitionProperties]): Self = StObject.set(x, "multidimensionalDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: none | center | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMultidimensionalDefinitionUndefined: Self = StObject.set(x, "multidimensionalDefinition", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setMultidimensionalDefinitionVarargs(value: DimensionalDefinitionProperties*): Self = StObject.set(x, "multidimensionalDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setMultidimensionalDefinitionVarargs(value: DimensionalDefinitionProperties*): Self = this.set("multidimensionalDefinition", js.Array(value :_*))
+    def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultidimensionalDefinition(value: js.Array[DimensionalDefinitionProperties]): Self = this.set("multidimensionalDefinition", value.asInstanceOf[js.Any])
+    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
     @scala.inline
-    def deleteMultidimensionalDefinition: Self = this.set("multidimensionalDefinition", js.undefined)
+    def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
     @scala.inline
-    def setObjectIdsVarargs(value: Double*): Self = this.set("objectIds", js.Array(value :_*))
+    def setOperation(value: first | last | min | max | mean | blend | sum): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIds(value: js.Array[Double]): Self = this.set("objectIds", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteObjectIds: Self = this.set("objectIds", js.undefined)
+    def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: first | last | min | max | mean | blend | sum): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setSortValue(value: String): Self = StObject.set(x, "sortValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortField(value: String): Self = this.set("sortField", value.asInstanceOf[js.Any])
+    def setSortValueUndefined: Self = StObject.set(x, "sortValue", js.undefined)
     
     @scala.inline
-    def deleteSortField: Self = this.set("sortField", js.undefined)
+    def setViewpoint(value: PointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortValue(value: String): Self = this.set("sortValue", value.asInstanceOf[js.Any])
+    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
     
     @scala.inline
-    def deleteSortValue: Self = this.set("sortValue", js.undefined)
+    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewpoint(value: PointProperties): Self = this.set("viewpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewpoint: Self = this.set("viewpoint", js.undefined)
-    
-    @scala.inline
-    def setWhere(value: String): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

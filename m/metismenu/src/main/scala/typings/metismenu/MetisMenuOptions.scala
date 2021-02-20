@@ -1,11 +1,12 @@
 package typings.metismenu
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetisMenuOptions extends js.Object {
+trait MetisMenuOptions extends StObject {
   
   var parentTrigger: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object MetisMenuOptions {
   }
   
   @scala.inline
-  implicit class MetisMenuOptionsOps[Self <: MetisMenuOptions] (val x: Self) extends AnyVal {
+  implicit class MetisMenuOptionsMutableBuilder[Self <: MetisMenuOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParentTrigger(value: String): Self = StObject.set(x, "parentTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentTriggerUndefined: Self = StObject.set(x, "parentTrigger", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentTrigger(value: String): Self = this.set("parentTrigger", value.asInstanceOf[js.Any])
+    def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     
     @scala.inline
-    def deleteParentTrigger: Self = this.set("parentTrigger", js.undefined)
+    def setSubMenu(value: String): Self = StObject.set(x, "subMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventDefault(value: Boolean): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
+    def setSubMenuUndefined: Self = StObject.set(x, "subMenu", js.undefined)
     
     @scala.inline
-    def deletePreventDefault: Self = this.set("preventDefault", js.undefined)
+    def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubMenu(value: String): Self = this.set("subMenu", value.asInstanceOf[js.Any])
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
     @scala.inline
-    def deleteSubMenu: Self = this.set("subMenu", js.undefined)
+    def setTriggerElement(value: String): Self = StObject.set(x, "triggerElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggle(value: Boolean): Self = this.set("toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
-    
-    @scala.inline
-    def setTriggerElement(value: String): Self = this.set("triggerElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerElement: Self = this.set("triggerElement", js.undefined)
+    def setTriggerElementUndefined: Self = StObject.set(x, "triggerElement", js.undefined)
   }
 }

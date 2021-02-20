@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticatorGroupsConfig extends js.Object {
+trait AuthenticatorGroupsConfig extends StObject {
   
   /** Whether this cluster should return group membership lookups during authentication using a group of security groups. */
   var enabled: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object AuthenticatorGroupsConfig {
   }
   
   @scala.inline
-  implicit class AuthenticatorGroupsConfigOps[Self <: AuthenticatorGroupsConfig] (val x: Self) extends AnyVal {
+  implicit class AuthenticatorGroupsConfigMutableBuilder[Self <: AuthenticatorGroupsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityGroup(value: String): Self = StObject.set(x, "securityGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setSecurityGroup(value: String): Self = this.set("securityGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityGroup: Self = this.set("securityGroup", js.undefined)
+    def setSecurityGroupUndefined: Self = StObject.set(x, "securityGroup", js.undefined)
   }
 }

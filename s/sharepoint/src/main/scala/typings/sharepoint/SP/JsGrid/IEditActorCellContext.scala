@@ -1,12 +1,13 @@
 package typings.sharepoint.SP.JsGrid
 
 import typings.sharepoint.anon.Bottom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditActorCellContext extends js.Object {
+trait IEditActorCellContext extends StObject {
   
   def SetCurrentValue(value: js.Any): Unit = js.native
   
@@ -42,42 +43,30 @@ object IEditActorCellContext {
   }
   
   @scala.inline
-  implicit class IEditActorCellContextOps[Self <: IEditActorCellContext] (val x: Self) extends AnyVal {
+  implicit class IEditActorCellContextMutableBuilder[Self <: IEditActorCellContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellExpandSpace(value: Bottom): Self = StObject.set(x, "cellExpandSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumn(value: ColumnInfo): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: GridField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetCurrentValue(value: js.Any => Unit): Self = this.set("SetCurrentValue", js.Any.fromFunction1(value))
+    def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellExpandSpace(value: Bottom): Self = this.set("cellExpandSpace", value.asInstanceOf[js.Any])
+    def setOriginalValue(value: IValue): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: ColumnInfo): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setPropType(value: IPropertyType): Self = StObject.set(x, "propType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: GridField): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setRecord(value: IRecord): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldKey(value: String): Self = this.set("fieldKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalValue(value: IValue): Self = this.set("originalValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropType(value: IPropertyType): Self = this.set("propType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecord(value: IRecord): Self = this.set("record", value.asInstanceOf[js.Any])
+    def setSetCurrentValue(value: js.Any => Unit): Self = StObject.set(x, "SetCurrentValue", js.Any.fromFunction1(value))
   }
 }

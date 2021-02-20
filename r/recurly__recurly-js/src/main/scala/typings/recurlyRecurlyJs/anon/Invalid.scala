@@ -1,12 +1,13 @@
 package typings.recurlyRecurlyJs.anon
 
 import typings.recurlyRecurlyJs.elementsMod.CommonElementStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Invalid extends js.Object {
+trait Invalid extends StObject {
   
   /**
     * Style to apply to input elements when they contain an invalid value.
@@ -31,36 +32,24 @@ object Invalid {
   }
   
   @scala.inline
-  implicit class InvalidOps[Self <: Invalid] (val x: Self) extends AnyVal {
+  implicit class InvalidMutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalid(value: CommonElementStyle): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalid(value: CommonElementStyle): Self = this.set("invalid", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteInvalid: Self = this.set("invalid", js.undefined)
+    def setPlaceholder(value: Color): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: String): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
-    
-    @scala.inline
-    def setPlaceholder(value: Color): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
   }
 }

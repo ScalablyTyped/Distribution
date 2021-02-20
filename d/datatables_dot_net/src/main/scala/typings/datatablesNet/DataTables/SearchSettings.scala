@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchSettings extends js.Object {
+trait SearchSettings extends StObject {
   
   /**
     * Control case-sensitive filtering option. Since: 1.10
@@ -41,48 +42,36 @@ object SearchSettings {
   }
   
   @scala.inline
-  implicit class SearchSettingsOps[Self <: SearchSettings] (val x: Self) extends AnyVal {
+  implicit class SearchSettingsMutableBuilder[Self <: SearchSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegex(value: Boolean): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseInsensitive(value: Boolean): Self = this.set("caseInsensitive", value.asInstanceOf[js.Any])
+    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     
     @scala.inline
-    def deleteCaseInsensitive: Self = this.set("caseInsensitive", js.undefined)
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegex(value: Boolean): Self = this.set("regex", value.asInstanceOf[js.Any])
+    def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegex: Self = this.set("regex", js.undefined)
+    def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
     
     @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
+    def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchPlaceholder(value: String): Self = this.set("searchPlaceholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchPlaceholder: Self = this.set("searchPlaceholder", js.undefined)
-    
-    @scala.inline
-    def setSmart(value: Boolean): Self = this.set("smart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmart: Self = this.set("smart", js.undefined)
+    def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
   }
 }

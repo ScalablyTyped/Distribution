@@ -2,12 +2,13 @@ package typings.nyaapi.mod.si
 
 import typings.nyaapi.nyaapiStrings.asc
 import typings.nyaapi.nyaapiStrings.desc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchOptions extends js.Object {
+trait SearchOptions extends StObject {
   
   var category: js.UndefOr[Category] = js.native
   
@@ -32,60 +33,48 @@ object SearchOptions {
   }
   
   @scala.inline
-  implicit class SearchOptionsOps[Self <: SearchOptions] (val x: Self) extends AnyVal {
+  implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: Category): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: asc | desc): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: Filter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: Double): Self = this.set("n", value.asInstanceOf[js.Any])
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def deleteN: Self = this.set("n", js.undefined)
+    def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: Double): Self = this.set("p", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: String): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
-    
-    @scala.inline
-    def setTerm(value: String): Self = this.set("term", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerm: Self = this.set("term", js.undefined)
+    def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
   }
 }

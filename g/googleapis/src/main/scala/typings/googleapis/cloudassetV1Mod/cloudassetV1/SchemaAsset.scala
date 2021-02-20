@@ -1,5 +1,6 @@
 package typings.googleapis.cloudassetV1Mod.cloudassetV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * policies, and other non-GCP assets.
   */
 @js.native
-trait SchemaAsset extends js.Object {
+trait SchemaAsset extends StObject {
   
   /**
     * Type of the asset. Example: &quot;compute.googleapis.com/Disk&quot;.
@@ -45,42 +46,30 @@ object SchemaAsset {
   }
   
   @scala.inline
-  implicit class SchemaAssetOps[Self <: SchemaAsset] (val x: Self) extends AnyVal {
+  implicit class SchemaAssetMutableBuilder[Self <: SchemaAsset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIamPolicy(value: SchemaPolicy): Self = StObject.set(x, "iamPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetType(value: String): Self = this.set("assetType", value.asInstanceOf[js.Any])
+    def setIamPolicyUndefined: Self = StObject.set(x, "iamPolicy", js.undefined)
     
     @scala.inline
-    def deleteAssetType: Self = this.set("assetType", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamPolicy(value: SchemaPolicy): Self = this.set("iamPolicy", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIamPolicy: Self = this.set("iamPolicy", js.undefined)
+    def setResource(value: SchemaResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setResource(value: SchemaResource): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

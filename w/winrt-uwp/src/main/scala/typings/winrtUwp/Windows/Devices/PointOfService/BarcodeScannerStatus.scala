@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BarcodeScannerStatus extends js.Object
+sealed trait BarcodeScannerStatus extends StObject
 /** Defines the constants that indicates the barcode scanner status. */
 @JSGlobal("Windows.Devices.PointOfService.BarcodeScannerStatus")
 @js.native
-object BarcodeScannerStatus extends js.Object {
+object BarcodeScannerStatus extends StObject {
   
   /** Vendor specific status information. */
   @js.native

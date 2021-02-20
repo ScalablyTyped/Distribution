@@ -1,16 +1,16 @@
 package typings.guacamoleClient
 
 import typings.guacamoleClient.guacCommonMod.Mimetype
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/RawAudioFormat", JSImport.Namespace)
-@js.native
-object rawAudioFormatMod extends js.Object {
+object rawAudioFormatMod {
   
+  @JSImport("guacamole-client/lib/RawAudioFormat", "RawAudioFormat")
   @js.native
-  class RawAudioFormat protected () extends js.Object {
+  class RawAudioFormat protected () extends StObject {
     /**
       * @param template The object whose properties should be copied into the corresponding
       * properties of the new Guacamole.RawAudioFormat.
@@ -35,8 +35,7 @@ object rawAudioFormatMod extends js.Object {
     var rate: Double = js.native
   }
   /* static members */
-  @js.native
-  object RawAudioFormat extends js.Object {
+  object RawAudioFormat {
     
     /**
       * Parses the given mimetype, returning a new Guacamole.RawAudioFormat
@@ -49,6 +48,8 @@ object rawAudioFormatMod extends js.Object {
       *     audio data represented by the given mimetype, or null if the given
       *     mimetype is not supported.
       */
+    @JSImport("guacamole-client/lib/RawAudioFormat", "RawAudioFormat.parse")
+    @js.native
     def parse(mimetype: Mimetype): RawAudioFormat = js.native
   }
 }

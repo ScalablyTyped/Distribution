@@ -1,15 +1,25 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeysNavigation extends js.Object {
+trait KeysNavigation extends StObject {
   
   def moveSelection(direction: String): Unit = js.native
 }
-@JSImport("webix", "KeysNavigation")
-@js.native
-object KeysNavigation extends TopLevel[KeysNavigation]
+object KeysNavigation {
+  
+  @JSImport("webix", "KeysNavigation")
+  @js.native
+  val ^ : KeysNavigation = js.native
+  
+  @scala.inline
+  implicit class KeysNavigationMutableBuilder[Self <: KeysNavigation] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setMoveSelection(value: String => Unit): Self = StObject.set(x, "moveSelection", js.Any.fromFunction1(value))
+  }
+}

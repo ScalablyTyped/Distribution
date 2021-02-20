@@ -1,12 +1,13 @@
 package typings.materializeCss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<materialize-css.M.Autocomplete, 'updateData'> */
 @js.native
-trait PickAutocompleteupdateDat extends js.Object {
+trait PickAutocompleteupdateDat extends StObject {
   
   var updateData: js.UndefOr[js.Any] = js.native
 }
@@ -19,24 +20,12 @@ object PickAutocompleteupdateDat {
   }
   
   @scala.inline
-  implicit class PickAutocompleteupdateDatOps[Self <: PickAutocompleteupdateDat] (val x: Self) extends AnyVal {
+  implicit class PickAutocompleteupdateDatMutableBuilder[Self <: PickAutocompleteupdateDat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdateData(value: js.Any): Self = StObject.set(x, "updateData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpdateData(value: js.Any): Self = this.set("updateData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateData: Self = this.set("updateData", js.undefined)
+    def setUpdateDataUndefined: Self = StObject.set(x, "updateData", js.undefined)
   }
 }

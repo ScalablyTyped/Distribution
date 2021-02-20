@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeoDataPrimitive extends js.Object {
+trait IGeoDataPrimitive extends StObject {
   
   /** The number of vertex points used to define the polygon. */
   var NumPoints: String = js.native
@@ -34,30 +35,18 @@ object IGeoDataPrimitive {
   }
   
   @scala.inline
-  implicit class IGeoDataPrimitiveOps[Self <: IGeoDataPrimitive] (val x: Self) extends AnyVal {
+  implicit class IGeoDataPrimitiveMutableBuilder[Self <: IGeoDataPrimitive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumPoints(value: String): Self = StObject.set(x, "NumPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrimitiveID(value: String): Self = StObject.set(x, "PrimitiveID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShape(value: String): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPoints(value: String): Self = this.set("NumPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrimitiveID(value: String): Self = this.set("PrimitiveID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape(value: String): Self = this.set("Shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceID(value: String): Self = this.set("SourceID", value.asInstanceOf[js.Any])
+    def setSourceID(value: String): Self = StObject.set(x, "SourceID", value.asInstanceOf[js.Any])
   }
 }

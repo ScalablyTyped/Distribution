@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBoneWeightShaderOptions extends js.Object {
+trait IBoneWeightShaderOptions extends StObject {
   
   /** Colors for Uninfluenced bones */
   var colorBase: js.UndefOr[Color3] = js.native
@@ -37,57 +38,45 @@ object IBoneWeightShaderOptions {
   }
   
   @scala.inline
-  implicit class IBoneWeightShaderOptionsOps[Self <: IBoneWeightShaderOptions] (val x: Self) extends AnyVal {
+  implicit class IBoneWeightShaderOptionsMutableBuilder[Self <: IBoneWeightShaderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorBase(value: Color3): Self = StObject.set(x, "colorBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorBaseUndefined: Self = StObject.set(x, "colorBase", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorFull(value: Color3): Self = StObject.set(x, "colorFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkeleton(value: Skeleton): Self = this.set("skeleton", value.asInstanceOf[js.Any])
+    def setColorFullUndefined: Self = StObject.set(x, "colorFull", js.undefined)
     
     @scala.inline
-    def setColorBase(value: Color3): Self = this.set("colorBase", value.asInstanceOf[js.Any])
+    def setColorHalf(value: Color3): Self = StObject.set(x, "colorHalf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorBase: Self = this.set("colorBase", js.undefined)
+    def setColorHalfUndefined: Self = StObject.set(x, "colorHalf", js.undefined)
     
     @scala.inline
-    def setColorFull(value: Color3): Self = this.set("colorFull", value.asInstanceOf[js.Any])
+    def setColorQuarter(value: Color3): Self = StObject.set(x, "colorQuarter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorFull: Self = this.set("colorFull", js.undefined)
+    def setColorQuarterUndefined: Self = StObject.set(x, "colorQuarter", js.undefined)
     
     @scala.inline
-    def setColorHalf(value: Color3): Self = this.set("colorHalf", value.asInstanceOf[js.Any])
+    def setColorZero(value: Color3): Self = StObject.set(x, "colorZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorHalf: Self = this.set("colorHalf", js.undefined)
+    def setColorZeroUndefined: Self = StObject.set(x, "colorZero", js.undefined)
     
     @scala.inline
-    def setColorQuarter(value: Color3): Self = this.set("colorQuarter", value.asInstanceOf[js.Any])
+    def setSkeleton(value: Skeleton): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorQuarter: Self = this.set("colorQuarter", js.undefined)
+    def setTargetBoneIndex(value: Double): Self = StObject.set(x, "targetBoneIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorZero(value: Color3): Self = this.set("colorZero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorZero: Self = this.set("colorZero", js.undefined)
-    
-    @scala.inline
-    def setTargetBoneIndex(value: Double): Self = this.set("targetBoneIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetBoneIndex: Self = this.set("targetBoneIndex", js.undefined)
+    def setTargetBoneIndexUndefined: Self = StObject.set(x, "targetBoneIndex", js.undefined)
   }
 }

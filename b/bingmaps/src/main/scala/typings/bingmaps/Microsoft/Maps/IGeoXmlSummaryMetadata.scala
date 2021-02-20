@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeoXmlSummaryMetadata extends js.Object {
+trait IGeoXmlSummaryMetadata extends StObject {
   
   /** The bounds of all the shapes and layers in the XML document. */
   var bounds: js.UndefOr[LocationRect] = js.native
@@ -28,42 +29,30 @@ object IGeoXmlSummaryMetadata {
   }
   
   @scala.inline
-  implicit class IGeoXmlSummaryMetadataOps[Self <: IGeoXmlSummaryMetadata] (val x: Self) extends AnyVal {
+  implicit class IGeoXmlSummaryMetadataMutableBuilder[Self <: IGeoXmlSummaryMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: LocationRect): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setMetadata(value: IDictionary[_]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: IDictionary[_]): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

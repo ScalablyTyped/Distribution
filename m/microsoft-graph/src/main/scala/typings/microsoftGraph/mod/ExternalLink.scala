@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExternalLink extends js.Object {
+trait ExternalLink extends StObject {
   
   // The url of the link.
   var href: js.UndefOr[NullableOption[String]] = js.native
@@ -19,27 +20,15 @@ object ExternalLink {
   }
   
   @scala.inline
-  implicit class ExternalLinkOps[Self <: ExternalLink] (val x: Self) extends AnyVal {
+  implicit class ExternalLinkMutableBuilder[Self <: ExternalLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHref(value: NullableOption[String]): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHrefNull: Self = StObject.set(x, "href", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHref(value: NullableOption[String]): Self = this.set("href", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHref: Self = this.set("href", js.undefined)
-    
-    @scala.inline
-    def setHrefNull: Self = this.set("href", null)
+    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
   }
 }

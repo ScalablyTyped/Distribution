@@ -1,5 +1,6 @@
 package typings.googleapis.storageV1beta1Mod.storageV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A list of objects.
   */
 @js.native
-trait SchemaObjects extends js.Object {
+trait SchemaObjects extends StObject {
   
   /**
     * The list of items.
@@ -42,48 +43,36 @@ object SchemaObjects {
   }
   
   @scala.inline
-  implicit class SchemaObjectsOps[Self <: SchemaObjects] (val x: Self) extends AnyVal {
+  implicit class SchemaObjectsMutableBuilder[Self <: SchemaObjects] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[SchemaObject]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: SchemaObject*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: SchemaObject*): Self = this.set("items", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[SchemaObject]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPrefixes(value: js.Array[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setPrefixesVarargs(value: String*): Self = this.set("prefixes", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrefixes(value: js.Array[String]): Self = this.set("prefixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixes: Self = this.set("prefixes", js.undefined)
+    def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
   }
 }

@@ -2,12 +2,13 @@ package typings.canvaskitWasm.mod
 
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmulatedCanvas2D extends js.Object {
+trait EmulatedCanvas2D extends StObject {
   
   /**
     * Decodes an image with the given bytes.

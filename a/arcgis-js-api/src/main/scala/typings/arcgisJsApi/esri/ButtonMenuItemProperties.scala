@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonMenuItemProperties extends js.Object {
+trait ButtonMenuItemProperties extends StObject {
   
   /**
     * Indicates whether to automatically close the menu's item.
@@ -72,69 +73,57 @@ object ButtonMenuItemProperties {
   }
   
   @scala.inline
-  implicit class ButtonMenuItemPropertiesOps[Self <: ButtonMenuItemProperties] (val x: Self) extends AnyVal {
+  implicit class ButtonMenuItemPropertiesMutableBuilder[Self <: ButtonMenuItemProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCloseMenu(value: Boolean): Self = StObject.set(x, "autoCloseMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCloseMenuUndefined: Self = StObject.set(x, "autoCloseMenu", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "clickFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoCloseMenu(value: Boolean): Self = this.set("autoCloseMenu", value.asInstanceOf[js.Any])
+    def setClickFunctionUndefined: Self = StObject.set(x, "clickFunction", js.undefined)
     
     @scala.inline
-    def deleteAutoCloseMenu: Self = this.set("autoCloseMenu", js.undefined)
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickFunction(value: /* event */ js.Any => Unit): Self = this.set("clickFunction", js.Any.fromFunction1(value))
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def deleteClickFunction: Self = this.set("clickFunction", js.undefined)
+    def setItems(value: js.Array[ButtonMenuItemProperties]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: ButtonMenuItemProperties*): Self = this.set("items", js.Array(value :_*))
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[ButtonMenuItemProperties]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setSelectionEnabled(value: Boolean): Self = StObject.set(x, "selectionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
-    
-    @scala.inline
-    def setSelectionEnabled(value: Boolean): Self = this.set("selectionEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionEnabled: Self = this.set("selectionEnabled", js.undefined)
+    def setSelectionEnabledUndefined: Self = StObject.set(x, "selectionEnabled", js.undefined)
   }
 }

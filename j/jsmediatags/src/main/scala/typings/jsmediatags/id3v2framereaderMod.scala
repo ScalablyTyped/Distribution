@@ -1,22 +1,24 @@
 package typings.jsmediatags
 
+import org.scalablytyped.runtime.Shortcut
 import typings.jsmediatags.typesMod.FrameReaderSignature
 import typings.jsmediatags.typesMod.TagFrameFlags
 import typings.jsmediatags.typesMod.TagFrameHeader
 import typings.jsmediatags.typesMod.TagFrames
 import typings.jsmediatags.typesMod.TagHeader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsmediatags/build2/ID3v2FrameReader", JSImport.Namespace)
-@js.native
-object id3v2framereaderMod extends js.Object {
+object id3v2framereaderMod extends Shortcut {
   
+  @JSImport("jsmediatags/build2/ID3v2FrameReader", JSImport.Default)
+  @js.native
   val default: ID3v2FrameReader = js.native
   
   @js.native
-  trait ID3v2FrameReader extends js.Object {
+  trait ID3v2FrameReader extends StObject {
     
     def _getFrameDescription(frameId: String): String = js.native
     
@@ -44,4 +46,9 @@ object id3v2framereaderMod extends js.Object {
       tags: js.Array[String]
     ): TagFrames = js.native
   }
+  
+  type _To = ID3v2FrameReader
+  
+  /* This means you don't have to write `default`, but can instead just say `id3v2framereaderMod.foo` */
+  override def _to: ID3v2FrameReader = default
 }

@@ -1,12 +1,13 @@
 package typings.fhirKitClient.anon
 
 import typings.fhir.fhir.DomainResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context extends js.Object {
+trait Context extends StObject {
   
   var context: js.UndefOr[typings.fhir.fhir.Bundle | DomainResource] = js.native
   
@@ -23,33 +24,21 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: typings.fhir.fhir.Bundle | DomainResource): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReference(value: String): Self = this.set("reference", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setContext(value: typings.fhir.fhir.Bundle | DomainResource): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

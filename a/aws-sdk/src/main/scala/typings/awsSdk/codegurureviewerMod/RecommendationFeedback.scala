@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecommendationFeedback extends js.Object {
+trait RecommendationFeedback extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the  CodeReview  object. 
@@ -46,57 +47,45 @@ object RecommendationFeedback {
   }
   
   @scala.inline
-  implicit class RecommendationFeedbackOps[Self <: RecommendationFeedback] (val x: Self) extends AnyVal {
+  implicit class RecommendationFeedbackMutableBuilder[Self <: RecommendationFeedback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeReviewArnUndefined: Self = StObject.set(x, "CodeReviewArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeReviewArn(value: Arn): Self = this.set("CodeReviewArn", value.asInstanceOf[js.Any])
+    def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
     
     @scala.inline
-    def deleteCodeReviewArn: Self = this.set("CodeReviewArn", js.undefined)
+    def setLastUpdatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimeStamp(value: TimeStamp): Self = this.set("CreatedTimeStamp", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeStampUndefined: Self = StObject.set(x, "LastUpdatedTimeStamp", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimeStamp: Self = this.set("CreatedTimeStamp", js.undefined)
+    def setReactions(value: Reactions): Self = StObject.set(x, "Reactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTimeStamp(value: TimeStamp): Self = this.set("LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
+    def setReactionsUndefined: Self = StObject.set(x, "Reactions", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTimeStamp: Self = this.set("LastUpdatedTimeStamp", js.undefined)
+    def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
     
     @scala.inline
-    def setReactionsVarargs(value: Reaction*): Self = this.set("Reactions", js.Array(value :_*))
+    def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReactions(value: Reactions): Self = this.set("Reactions", value.asInstanceOf[js.Any])
+    def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
     
     @scala.inline
-    def deleteReactions: Self = this.set("Reactions", js.undefined)
+    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendationId(value: RecommendationId): Self = this.set("RecommendationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendationId: Self = this.set("RecommendationId", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: UserId): Self = this.set("UserId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("UserId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

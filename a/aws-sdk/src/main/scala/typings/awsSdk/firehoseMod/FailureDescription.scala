@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailureDescription extends js.Object {
+trait FailureDescription extends StObject {
   
   /**
     * A message providing details about the error that caused the failure.
@@ -26,24 +27,12 @@ object FailureDescription {
   }
   
   @scala.inline
-  implicit class FailureDescriptionOps[Self <: FailureDescription] (val x: Self) extends AnyVal {
+  implicit class FailureDescriptionMutableBuilder[Self <: FailureDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: NonEmptyString): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDetails(value: NonEmptyString): Self = this.set("Details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: DeliveryStreamFailureType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: DeliveryStreamFailureType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

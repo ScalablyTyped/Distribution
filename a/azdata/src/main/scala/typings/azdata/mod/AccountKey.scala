@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountKey extends js.Object {
+trait AccountKey extends StObject {
   
   /**
     * Identifier for the account, unique to the provider
@@ -31,30 +32,18 @@ object AccountKey {
   }
   
   @scala.inline
-  implicit class AccountKeyOps[Self <: AccountKey] (val x: Self) extends AnyVal {
+  implicit class AccountKeyMutableBuilder[Self <: AccountKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProviderArgs(value: js.Any): Self = StObject.set(x, "providerArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviderArgsUndefined: Self = StObject.set(x, "providerArgs", js.undefined)
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProviderArgs(value: js.Any): Self = this.set("providerArgs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderArgs: Self = this.set("providerArgs", js.undefined)
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
   }
 }

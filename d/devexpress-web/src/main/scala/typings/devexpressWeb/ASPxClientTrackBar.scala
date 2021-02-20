@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -157,66 +158,54 @@ object ASPxClientTrackBar {
   }
   
   @scala.inline
-  implicit class ASPxClientTrackBarOps[Self <: ASPxClientTrackBar] (val x: Self) extends AnyVal {
+  implicit class ASPxClientTrackBarMutableBuilder[Self <: ASPxClientTrackBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetItemIndexByValue(value: js.Any => Double): Self = StObject.set(x, "GetItemIndexByValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItemText(value: Double => String): Self = StObject.set(x, "GetItemText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItemCount(value: () => Double): Self = this.set("GetItemCount", js.Any.fromFunction0(value))
+    def setGetItemToolTip(value: Double => String): Self = StObject.set(x, "GetItemToolTip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItemIndexByValue(value: js.Any => Double): Self = this.set("GetItemIndexByValue", js.Any.fromFunction1(value))
+    def setGetItemValue(value: Double => js.Any): Self = StObject.set(x, "GetItemValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItemText(value: Double => String): Self = this.set("GetItemText", js.Any.fromFunction1(value))
+    def setGetPosition(value: () => Double): Self = StObject.set(x, "GetPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemToolTip(value: Double => String): Self = this.set("GetItemToolTip", js.Any.fromFunction1(value))
+    def setGetPositionEnd(value: () => Double): Self = StObject.set(x, "GetPositionEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemValue(value: Double => js.Any): Self = this.set("GetItemValue", js.Any.fromFunction1(value))
+    def setGetPositionStart(value: () => Double): Self = StObject.set(x, "GetPositionStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPosition(value: () => Double): Self = this.set("GetPosition", js.Any.fromFunction0(value))
+    def setPositionChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "PositionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPositionEnd(value: () => Double): Self = this.set("GetPositionEnd", js.Any.fromFunction0(value))
+    def setPositionChanging(value: ASPxClientEvent[ASPxClientTrackBarPositionChangingEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "PositionChanging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPositionStart(value: () => Double): Self = this.set("GetPositionStart", js.Any.fromFunction0(value))
+    def setSetPosition(value: Double => Unit): Self = StObject.set(x, "SetPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPositionChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = this.set("PositionChanged", value.asInstanceOf[js.Any])
+    def setSetPositionEnd(value: Double => Unit): Self = StObject.set(x, "SetPositionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPositionChanging(value: ASPxClientEvent[ASPxClientTrackBarPositionChangingEventHandler[ASPxClientTrackBar]]): Self = this.set("PositionChanging", value.asInstanceOf[js.Any])
+    def setSetPositionStart(value: Double => Unit): Self = StObject.set(x, "SetPositionStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPosition(value: Double => Unit): Self = this.set("SetPosition", js.Any.fromFunction1(value))
+    def setTrack(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPositionEnd(value: Double => Unit): Self = this.set("SetPositionEnd", js.Any.fromFunction1(value))
+    def setTrackEnd(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "TrackEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPositionStart(value: Double => Unit): Self = this.set("SetPositionStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTrack(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = this.set("Track", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackEnd(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = this.set("TrackEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackStart(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = this.set("TrackStart", value.asInstanceOf[js.Any])
+    def setTrackStart(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTrackBar]]): Self = StObject.set(x, "TrackStart", value.asInstanceOf[js.Any])
   }
 }

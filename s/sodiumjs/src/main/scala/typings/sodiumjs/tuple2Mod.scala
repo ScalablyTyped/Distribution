@@ -1,15 +1,15 @@
 package typings.sodiumjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/Tuple2", JSImport.Namespace)
-@js.native
-object tuple2Mod extends js.Object {
+object tuple2Mod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/Tuple2", "Tuple2")
   @js.native
-  class Tuple2[A, B] protected () extends js.Object {
+  class Tuple2[A, B] protected () extends StObject {
     def this(a: A, b: B) = this()
     
     var a: A = js.native

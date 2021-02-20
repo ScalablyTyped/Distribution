@@ -2,6 +2,7 @@ package typings.minecraftScriptingTypesClient
 
 import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.VectorXYZ
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is triggered whenever the mouse pointer changes from pointing at a block or air to pointing at an entity and the other way around. Up to 1000 blocks away.
   */
 @js.native
-trait IPickHitResultChangedEventData extends js.Object {
+trait IPickHitResultChangedEventData extends StObject {
   
   /**
     * The entity that was hit or null if it fired when moving off of an entity
@@ -31,27 +32,15 @@ object IPickHitResultChangedEventData {
   }
   
   @scala.inline
-  implicit class IPickHitResultChangedEventDataOps[Self <: IPickHitResultChangedEventData] (val x: Self) extends AnyVal {
+  implicit class IPickHitResultChangedEventDataMutableBuilder[Self <: IPickHitResultChangedEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPosition(value: VectorXYZ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntity(value: IEntity): Self = this.set("entity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: VectorXYZ): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionNull: Self = this.set("position", null)
+    def setPositionNull: Self = StObject.set(x, "position", null)
   }
 }

@@ -1,14 +1,14 @@
 package typings.openui5.global.sap.ui.model.odata
 
 import typings.openui5.sap.ui.model.Sorter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.odata.v4")
-@js.native
-object v4 extends js.Object {
+object v4 {
   
+  @JSGlobal("sap.ui.model.odata.v4.Context")
   @js.native
   class Context protected ()
     extends typings.openui5.sap.ui.model.odata.v4.Context {
@@ -45,6 +45,7 @@ object v4 extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.v4.ODataContextBinding")
   @js.native
   class ODataContextBinding protected ()
     extends typings.openui5.sap.ui.model.odata.v4.ODataContextBinding {
@@ -85,6 +86,7 @@ object v4 extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.v4.ODataListBinding")
   @js.native
   class ODataListBinding protected ()
     extends typings.openui5.sap.ui.model.odata.v4.ODataListBinding {
@@ -369,6 +371,7 @@ object v4 extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.v4.ODataMetaModel")
   @js.native
   class ODataMetaModel protected ()
     extends typings.openui5.sap.ui.model.odata.v4.ODataMetaModel {
@@ -381,6 +384,7 @@ object v4 extends js.Object {
     def this(oRequestor: js.Any, sUrl: String) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.v4.ODataModel")
   @js.native
   class ODataModel protected ()
     extends typings.openui5.sap.ui.model.odata.v4.ODataModel {
@@ -391,6 +395,7 @@ object v4 extends js.Object {
     def this(mParameters: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.v4.ODataPropertyBinding")
   @js.native
   class ODataPropertyBinding protected ()
     extends typings.openui5.sap.ui.model.odata.v4.ODataPropertyBinding {

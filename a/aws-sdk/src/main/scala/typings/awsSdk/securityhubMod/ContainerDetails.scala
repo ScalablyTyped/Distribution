@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerDetails extends js.Object {
+trait ContainerDetails extends StObject {
   
   /**
     * The identifier of the image related to a finding.
@@ -36,42 +37,30 @@ object ContainerDetails {
   }
   
   @scala.inline
-  implicit class ContainerDetailsOps[Self <: ContainerDetails] (val x: Self) extends AnyVal {
+  implicit class ContainerDetailsMutableBuilder[Self <: ContainerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageId(value: NonEmptyString): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageName(value: NonEmptyString): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageId(value: NonEmptyString): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    def setImageNameUndefined: Self = StObject.set(x, "ImageName", js.undefined)
     
     @scala.inline
-    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    def setLaunchedAt(value: NonEmptyString): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageName(value: NonEmptyString): Self = this.set("ImageName", value.asInstanceOf[js.Any])
+    def setLaunchedAtUndefined: Self = StObject.set(x, "LaunchedAt", js.undefined)
     
     @scala.inline
-    def deleteImageName: Self = this.set("ImageName", js.undefined)
+    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchedAt(value: NonEmptyString): Self = this.set("LaunchedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchedAt: Self = this.set("LaunchedAt", js.undefined)
-    
-    @scala.inline
-    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

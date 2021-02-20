@@ -1,11 +1,12 @@
 package typings.rcMenu.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Blackberry extends js.Object {
+trait Blackberry extends StObject {
   
   var blackberry: js.Any = js.native
   
@@ -35,36 +36,24 @@ object Blackberry {
   }
   
   @scala.inline
-  implicit class BlackberryOps[Self <: Blackberry] (val x: Self) extends AnyVal {
+  implicit class BlackberryMutableBuilder[Self <: Blackberry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlackberry(value: js.Any): Self = StObject.set(x, "blackberry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlackberry10(value: js.Any): Self = StObject.set(x, "blackberry10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChrome(value: js.Any): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackberry(value: js.Any): Self = this.set("blackberry", value.asInstanceOf[js.Any])
+    def setDevice(value: js.Any): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackberry10(value: js.Any): Self = this.set("blackberry10", value.asInstanceOf[js.Any])
+    def setFirefox(value: js.Any): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChrome(value: js.Any): Self = this.set("chrome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDevice(value: js.Any): Self = this.set("device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFirefox(value: js.Any): Self = this.set("firefox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpera(value: js.Any): Self = this.set("opera", value.asInstanceOf[js.Any])
+    def setOpera(value: js.Any): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
   }
 }

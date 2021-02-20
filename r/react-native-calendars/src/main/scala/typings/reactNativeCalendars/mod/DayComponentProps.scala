@@ -5,12 +5,13 @@ import typings.reactNativeCalendars.reactNativeCalendarsStrings._empty
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.disabled
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.selected
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.today
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DayComponentProps extends js.Object {
+trait DayComponentProps extends StObject {
   
   var date: DateObject = js.native
   
@@ -40,39 +41,27 @@ object DayComponentProps {
   }
   
   @scala.inline
-  implicit class DayComponentPropsOps[Self <: DayComponentProps] (val x: Self) extends AnyVal {
+  implicit class DayComponentPropsMutableBuilder[Self <: DayComponentProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: DateObject): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarking(value: `false` | js.Array[Marking]): Self = StObject.set(x, "marking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkingVarargs(value: Marking*): Self = StObject.set(x, "marking", js.Array(value :_*))
     
     @scala.inline
-    def setDate(value: DateObject): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setOnLongPress(value: DateObject => js.Any): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkingVarargs(value: Marking*): Self = this.set("marking", js.Array(value :_*))
+    def setOnPress(value: DateObject => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarking(value: `false` | js.Array[Marking]): Self = this.set("marking", value.asInstanceOf[js.Any])
+    def setState(value: _empty | selected | disabled | today): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLongPress(value: DateObject => js.Any): Self = this.set("onLongPress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnPress(value: DateObject => js.Any): Self = this.set("onPress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setState(value: _empty | selected | disabled | today): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTheme(value: CalendarTheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTheme(value: CalendarTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

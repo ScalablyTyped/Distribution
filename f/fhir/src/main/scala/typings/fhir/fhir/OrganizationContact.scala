@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,45 +40,33 @@ object OrganizationContact {
   }
   
   @scala.inline
-  implicit class OrganizationContactOps[Self <: OrganizationContact] (val x: Self) extends AnyVal {
+  implicit class OrganizationContactMutableBuilder[Self <: OrganizationContact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: HumanName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: Address): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setPurpose(value: CodeableConcept): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: HumanName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurpose(value: CodeableConcept): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
     
     @scala.inline
-    def deletePurpose: Self = this.set("purpose", js.undefined)
-    
-    @scala.inline
-    def setTelecomVarargs(value: ContactPoint*): Self = this.set("telecom", js.Array(value :_*))
-    
-    @scala.inline
-    def setTelecom(value: js.Array[ContactPoint]): Self = this.set("telecom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTelecom: Self = this.set("telecom", js.undefined)
+    def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
   }
 }

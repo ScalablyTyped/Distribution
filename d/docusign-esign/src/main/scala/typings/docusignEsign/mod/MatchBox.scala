@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchBox extends js.Object {
+trait MatchBox extends StObject {
   
   /**
     * The height of the tab in pixels.
@@ -46,48 +47,36 @@ object MatchBox {
   }
   
   @scala.inline
-  implicit class MatchBoxOps[Self <: MatchBox] (val x: Self) extends AnyVal {
+  implicit class MatchBoxMutableBuilder[Self <: MatchBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageNumber(value: String): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumber(value: String): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deletePageNumber: Self = this.set("pageNumber", js.undefined)
+    def setXPosition(value: String): Self = StObject.set(x, "xPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXPositionUndefined: Self = StObject.set(x, "xPosition", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setYPosition(value: String): Self = StObject.set(x, "yPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXPosition(value: String): Self = this.set("xPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXPosition: Self = this.set("xPosition", js.undefined)
-    
-    @scala.inline
-    def setYPosition(value: String): Self = this.set("yPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYPosition: Self = this.set("yPosition", js.undefined)
+    def setYPositionUndefined: Self = StObject.set(x, "yPosition", js.undefined)
   }
 }

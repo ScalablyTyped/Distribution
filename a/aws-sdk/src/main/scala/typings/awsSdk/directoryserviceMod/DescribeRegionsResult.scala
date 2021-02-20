@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRegionsResult extends js.Object {
+trait DescribeRegionsResult extends StObject {
   
   /**
     * If not null, more results are available. Pass this value for the NextToken parameter in a subsequent call to DescribeRegions to retrieve the next set of items.
@@ -26,33 +27,21 @@ object DescribeRegionsResult {
   }
   
   @scala.inline
-  implicit class DescribeRegionsResultOps[Self <: DescribeRegionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeRegionsResultMutableBuilder[Self <: DescribeRegionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegionsDescription(value: RegionsDescription): Self = StObject.set(x, "RegionsDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRegionsDescriptionUndefined: Self = StObject.set(x, "RegionsDescription", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRegionsDescriptionVarargs(value: RegionDescription*): Self = this.set("RegionsDescription", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegionsDescription(value: RegionsDescription): Self = this.set("RegionsDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionsDescription: Self = this.set("RegionsDescription", js.undefined)
+    def setRegionsDescriptionVarargs(value: RegionDescription*): Self = StObject.set(x, "RegionsDescription", js.Array(value :_*))
   }
 }

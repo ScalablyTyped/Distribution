@@ -1,11 +1,12 @@
 package typings.awsSdk.worklinkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FleetSummary extends js.Object {
+trait FleetSummary extends StObject {
   
   /**
     * The identifier used by users to sign into the Amazon WorkLink app.
@@ -56,66 +57,54 @@ object FleetSummary {
   }
   
   @scala.inline
-  implicit class FleetSummaryOps[Self <: FleetSummary] (val x: Self) extends AnyVal {
+  implicit class FleetSummaryMutableBuilder[Self <: FleetSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanyCode(value: CompanyCode): Self = StObject.set(x, "CompanyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompanyCodeUndefined: Self = StObject.set(x, "CompanyCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyCode(value: CompanyCode): Self = this.set("CompanyCode", value.asInstanceOf[js.Any])
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def deleteCompanyCode: Self = this.set("CompanyCode", js.undefined)
+    def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: DateTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: DisplayName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setFleetName(value: FleetName): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetArn(value: FleetArn): Self = this.set("FleetArn", value.asInstanceOf[js.Any])
+    def setFleetNameUndefined: Self = StObject.set(x, "FleetName", js.undefined)
     
     @scala.inline
-    def deleteFleetArn: Self = this.set("FleetArn", js.undefined)
+    def setFleetStatus(value: FleetStatus): Self = StObject.set(x, "FleetStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetName(value: FleetName): Self = this.set("FleetName", value.asInstanceOf[js.Any])
+    def setFleetStatusUndefined: Self = StObject.set(x, "FleetStatus", js.undefined)
     
     @scala.inline
-    def deleteFleetName: Self = this.set("FleetName", js.undefined)
+    def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetStatus(value: FleetStatus): Self = this.set("FleetStatus", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteFleetStatus: Self = this.set("FleetStatus", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTime(value: DateTime): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

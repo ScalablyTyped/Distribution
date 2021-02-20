@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for a Quest resource.
   */
 @js.native
-trait SchemaQuest extends js.Object {
+trait SchemaQuest extends StObject {
   
   /**
     * The timestamp at which the user accepted the quest in milliseconds since
@@ -116,117 +117,105 @@ object SchemaQuest {
   }
   
   @scala.inline
-  implicit class SchemaQuestOps[Self <: SchemaQuest] (val x: Self) extends AnyVal {
+  implicit class SchemaQuestMutableBuilder[Self <: SchemaQuest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptedTimestampMillis(value: String): Self = StObject.set(x, "acceptedTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptedTimestampMillisUndefined: Self = StObject.set(x, "acceptedTimestampMillis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptedTimestampMillis(value: String): Self = this.set("acceptedTimestampMillis", value.asInstanceOf[js.Any])
+    def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     
     @scala.inline
-    def deleteAcceptedTimestampMillis: Self = this.set("acceptedTimestampMillis", js.undefined)
+    def setBannerUrl(value: String): Self = StObject.set(x, "bannerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: String): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    def setBannerUrlUndefined: Self = StObject.set(x, "bannerUrl", js.undefined)
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBannerUrl(value: String): Self = this.set("bannerUrl", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBannerUrl: Self = this.set("bannerUrl", js.undefined)
+    def setEndTimestampMillis(value: String): Self = StObject.set(x, "endTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEndTimestampMillisUndefined: Self = StObject.set(x, "endTimestampMillis", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimestampMillis(value: String): Self = this.set("endTimestampMillis", value.asInstanceOf[js.Any])
+    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
     @scala.inline
-    def deleteEndTimestampMillis: Self = this.set("endTimestampMillis", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    def setIsDefaultBannerUrl(value: Boolean): Self = StObject.set(x, "isDefaultBannerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsDefaultBannerUrlUndefined: Self = StObject.set(x, "isDefaultBannerUrl", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsDefaultIconUrl(value: Boolean): Self = StObject.set(x, "isDefaultIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefaultBannerUrl(value: Boolean): Self = this.set("isDefaultBannerUrl", value.asInstanceOf[js.Any])
+    def setIsDefaultIconUrlUndefined: Self = StObject.set(x, "isDefaultIconUrl", js.undefined)
     
     @scala.inline
-    def deleteIsDefaultBannerUrl: Self = this.set("isDefaultBannerUrl", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefaultIconUrl(value: Boolean): Self = this.set("isDefaultIconUrl", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIsDefaultIconUrl: Self = this.set("isDefaultIconUrl", js.undefined)
+    def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimestampMillisUndefined: Self = StObject.set(x, "lastUpdatedTimestampMillis", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMilestones(value: js.Array[SchemaQuestMilestone]): Self = StObject.set(x, "milestones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTimestampMillis(value: String): Self = this.set("lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
+    def setMilestonesUndefined: Self = StObject.set(x, "milestones", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTimestampMillis: Self = this.set("lastUpdatedTimestampMillis", js.undefined)
+    def setMilestonesVarargs(value: SchemaQuestMilestone*): Self = StObject.set(x, "milestones", js.Array(value :_*))
     
     @scala.inline
-    def setMilestonesVarargs(value: SchemaQuestMilestone*): Self = this.set("milestones", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMilestones(value: js.Array[SchemaQuestMilestone]): Self = this.set("milestones", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMilestones: Self = this.set("milestones", js.undefined)
+    def setNotifyTimestampMillis(value: String): Self = StObject.set(x, "notifyTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotifyTimestampMillisUndefined: Self = StObject.set(x, "notifyTimestampMillis", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStartTimestampMillis(value: String): Self = StObject.set(x, "startTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyTimestampMillis(value: String): Self = this.set("notifyTimestampMillis", value.asInstanceOf[js.Any])
+    def setStartTimestampMillisUndefined: Self = StObject.set(x, "startTimestampMillis", js.undefined)
     
     @scala.inline
-    def deleteNotifyTimestampMillis: Self = this.set("notifyTimestampMillis", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimestampMillis(value: String): Self = this.set("startTimestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimestampMillis: Self = this.set("startTimestampMillis", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

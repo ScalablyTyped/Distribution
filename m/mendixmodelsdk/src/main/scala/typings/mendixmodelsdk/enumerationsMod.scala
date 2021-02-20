@@ -20,26 +20,26 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/enumerations", JSImport.Namespace)
-@js.native
-object enumerationsMod extends js.Object {
+object enumerationsMod {
   
+  @JSImport("mendixmodelsdk/dist/gen/enumerations", "StructureVersionInfo")
   @js.native
   class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
   
-  @js.native
-  object enumerations extends js.Object {
+  object enumerations {
     
     /**
       * Interfaces and instance classes for types from the Mendix sub meta model `Enumerations`.
       */
+    @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Condition")
     @js.native
     class Condition protected () extends Element[IModel] {
       def this(
@@ -61,15 +61,20 @@ object enumerationsMod extends js.Object {
       def editableVisible: Boolean = js.native
       def editableVisible_=(newValue: Boolean): Unit = js.native
     }
-    /* static members */
-    @js.native
-    object Condition extends js.Object {
+    object Condition {
+      
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Condition")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates and returns a new Condition instance in the SDK and on the server.
         * Expects one argument: the IModel object the instance will "live on".
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Condition.create")
+      @js.native
       def create(model: IModel): Condition = js.native
       
       /**
@@ -77,6 +82,9 @@ object enumerationsMod extends js.Object {
         * The new Condition will be automatically stored in the 'conditions' property
         * of the parent documenttemplates.ConditionSettings element passed as argument.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Condition.createInConditionSettingsUnderConditions")
+      @js.native
       def createInConditionSettingsUnderConditions(container: ConditionSettings): Condition = js.native
       
       /**
@@ -84,11 +92,24 @@ object enumerationsMod extends js.Object {
         * The new Condition will be automatically stored in the 'conditions' property
         * of the parent pages.ConditionalSettings element passed as argument.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Condition.createInConditionalSettingsUnderConditions")
+      @js.native
       def createInConditionalSettingsUnderConditions(container: ConditionalSettings): Condition = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Condition.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Condition.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -103,7 +124,8 @@ object enumerationsMod extends js.Object {
     - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.enumerationsMod.enumerations.IEnumeration because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined values */ @js.native
+    - typings.mendixmodelsdk.enumerationsMod.enumerations.IEnumeration because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined values */ @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Enumeration")
+    @js.native
     class Enumeration protected () extends Document {
       def this(
         model: AbstractModel,
@@ -120,19 +142,34 @@ object enumerationsMod extends js.Object {
       @JSName("values")
       val values_FEnumeration: IList[IEnumerationValue] = js.native
     }
-    /* static members */
-    @js.native
-    object Enumeration extends js.Object {
+    object Enumeration {
+      
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Enumeration")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates a new Enumeration unit in the SDK and on the server.
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Enumeration.createIn")
+      @js.native
       def createIn(container: IFolderBase): Enumeration = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Enumeration.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.Enumeration.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -143,7 +180,8 @@ object enumerationsMod extends js.Object {
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-    - typings.mendixmodelsdk.enumerationsMod.enumerations.IEnumerationValue because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEnumeration, name */ @js.native
+    - typings.mendixmodelsdk.enumerationsMod.enumerations.IEnumerationValue because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEnumeration, name */ @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.EnumerationValue")
+    @js.native
     class EnumerationValue protected ()
       extends Element[IModel]
          with IByNameReferrable {
@@ -177,15 +215,20 @@ object enumerationsMod extends js.Object {
       @JSName("qualifiedName")
       def qualifiedName_MEnumerationValue: String | Null = js.native
     }
-    /* static members */
-    @js.native
-    object EnumerationValue extends js.Object {
+    object EnumerationValue {
+      
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.EnumerationValue")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates and returns a new EnumerationValue instance in the SDK and on the server.
         * Expects one argument: the IModel object the instance will "live on".
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.EnumerationValue.create")
+      @js.native
       def create(model: IModel): EnumerationValue = js.native
       
       /**
@@ -193,11 +236,24 @@ object enumerationsMod extends js.Object {
         * The new EnumerationValue will be automatically stored in the 'values' property
         * of the parent Enumeration element passed as argument.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.EnumerationValue.createIn")
+      @js.native
       def createIn(container: Enumeration): EnumerationValue = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.EnumerationValue.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/enumerations", "enumerations.EnumerationValue.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**

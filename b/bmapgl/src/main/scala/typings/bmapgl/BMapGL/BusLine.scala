@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusLine extends js.Object {
+trait BusLine extends StObject {
   
   var company: String = js.native
   
@@ -41,42 +42,30 @@ object BusLine {
   }
   
   @scala.inline
-  implicit class BusLineOps[Self <: BusLine] (val x: Self) extends AnyVal {
+  implicit class BusLineMutableBuilder[Self <: BusLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBusStation(value: Double => BusStation): Self = StObject.set(x, "getBusStation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompany(value: String): Self = this.set("company", value.asInstanceOf[js.Any])
+    def setGetNumBusStations(value: () => String): Self = StObject.set(x, "getNumBusStations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setGetPath(value: () => js.Array[Point]): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBusStation(value: Double => BusStation): Self = this.set("getBusStation", js.Any.fromFunction1(value))
+    def setGetPolyline(value: () => Polyline): Self = StObject.set(x, "getPolyline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNumBusStations(value: () => String): Self = this.set("getNumBusStations", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPath(value: () => js.Array[Point]): Self = this.set("getPath", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPolyline(value: () => Polyline): Self = this.set("getPolyline", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

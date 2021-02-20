@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceMetadata extends js.Object {
+trait ResourceMetadata extends StObject {
   
   /**
     * The ID of the resource.
@@ -51,60 +52,48 @@ object ResourceMetadata {
   }
   
   @scala.inline
-  implicit class ResourceMetadataOps[Self <: ResourceMetadata] (val x: Self) extends AnyVal {
+  implicit class ResourceMetadataMutableBuilder[Self <: ResourceMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: ResourceIdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: ResourceNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ResourceIdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setOriginalName(value: ResourceNameType): Self = StObject.set(x, "OriginalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOriginalNameUndefined: Self = StObject.set(x, "OriginalName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setOwner(value: UserMetadata): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalName(value: ResourceNameType): Self = this.set("OriginalName", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteOriginalName: Self = this.set("OriginalName", js.undefined)
+    def setParentId(value: ResourceIdType): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: UserMetadata): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setType(value: ResourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: ResourceIdType): Self = this.set("ParentId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteParentId: Self = this.set("ParentId", js.undefined)
+    def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ResourceType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: DocumentVersionIdType): Self = this.set("VersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactBigCalendar.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Start[TEvent /* <: js.Object */] extends js.Object {
+trait Start[TEvent /* <: js.Object */] extends StObject {
   
   var end: js.UndefOr[js.Function1[/* event */ TEvent, typings.std.Date]] = js.native
   
@@ -24,42 +25,30 @@ object Start {
   }
   
   @scala.inline
-  implicit class StartOps[Self <: Start[_], TEvent /* <: js.Object */] (val x: Self with Start[TEvent]) extends AnyVal {
+  implicit class StartMutableBuilder[Self <: Start[_], TEvent /* <: js.Object */] (val x: Self with Start[TEvent]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: /* event */ TEvent => typings.std.Date): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: /* event */ TEvent => typings.std.Date): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnd(value: /* event */ TEvent => typings.std.Date): Self = this.set("end", js.Any.fromFunction1(value))
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setTitle(value: /* event */ TEvent => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStart(value: /* event */ TEvent => typings.std.Date): Self = this.set("start", js.Any.fromFunction1(value))
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setTooltip(value: /* event */ TEvent => String): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTitle(value: /* event */ TEvent => String): Self = this.set("title", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: /* event */ TEvent => String): Self = this.set("tooltip", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

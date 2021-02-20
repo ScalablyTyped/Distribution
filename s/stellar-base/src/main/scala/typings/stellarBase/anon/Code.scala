@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.node.Buffer
 import typings.stellarBase.xdrMod.xdr.ErrorCode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Code extends js.Object {
+trait Code extends StObject {
   
   var code: ErrorCode = js.native
   
@@ -22,24 +23,12 @@ object Code {
   }
   
   @scala.inline
-  implicit class CodeOps[Self <: Code] (val x: Self) extends AnyVal {
+  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: ErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCode(value: ErrorCode): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMsg(value: String | Buffer): Self = this.set("msg", value.asInstanceOf[js.Any])
+    def setMsg(value: String | Buffer): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
   }
 }

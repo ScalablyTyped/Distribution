@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductionAchievementRequirement extends js.Object {
+trait ProductionAchievementRequirement extends StObject {
   
   var achiev: Achievement = js.native
   
@@ -23,24 +24,12 @@ object ProductionAchievementRequirement {
   }
   
   @scala.inline
-  implicit class ProductionAchievementRequirementOps[Self <: ProductionAchievementRequirement] (val x: Self) extends AnyVal {
+  implicit class ProductionAchievementRequirementMutableBuilder[Self <: ProductionAchievementRequirement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAchiev(value: Achievement): Self = StObject.set(x, "achiev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAchiev(value: Achievement): Self = this.set("achiev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPow(value: Double): Self = this.set("pow", value.asInstanceOf[js.Any])
+    def setPow(value: Double): Self = StObject.set(x, "pow", value.asInstanceOf[js.Any])
   }
 }

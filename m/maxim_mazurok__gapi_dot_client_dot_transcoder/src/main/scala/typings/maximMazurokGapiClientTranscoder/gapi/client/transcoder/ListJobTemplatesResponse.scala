@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJobTemplatesResponse extends js.Object {
+trait ListJobTemplatesResponse extends StObject {
   
   /** List of job templates in the specified region. */
   var jobTemplates: js.UndefOr[js.Array[JobTemplate]] = js.native
@@ -22,33 +23,21 @@ object ListJobTemplatesResponse {
   }
   
   @scala.inline
-  implicit class ListJobTemplatesResponseOps[Self <: ListJobTemplatesResponse] (val x: Self) extends AnyVal {
+  implicit class ListJobTemplatesResponseMutableBuilder[Self <: ListJobTemplatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobTemplates(value: js.Array[JobTemplate]): Self = StObject.set(x, "jobTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobTemplatesUndefined: Self = StObject.set(x, "jobTemplates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobTemplatesVarargs(value: JobTemplate*): Self = StObject.set(x, "jobTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setJobTemplatesVarargs(value: JobTemplate*): Self = this.set("jobTemplates", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTemplates(value: js.Array[JobTemplate]): Self = this.set("jobTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobTemplates: Self = this.set("jobTemplates", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.oracleOraclejet.ojdiagramMod
 
 import typings.oracleOraclejet.anon.H
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DvtDiagramLayoutContext extends js.Object {
+trait DvtDiagramLayoutContext extends StObject {
   
   def getCommonContainer(nodeId1: js.Any, nodeId2: js.Any): js.Any = js.native
   
@@ -57,57 +58,45 @@ object DvtDiagramLayoutContext {
   }
   
   @scala.inline
-  implicit class DvtDiagramLayoutContextOps[Self <: DvtDiagramLayoutContext] (val x: Self) extends AnyVal {
+  implicit class DvtDiagramLayoutContextMutableBuilder[Self <: DvtDiagramLayoutContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCommonContainer(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getCommonContainer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetComponentSize(value: () => H): Self = StObject.set(x, "getComponentSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentViewport(value: () => H): Self = StObject.set(x, "getCurrentViewport", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCommonContainer(value: (js.Any, js.Any) => js.Any): Self = this.set("getCommonContainer", js.Any.fromFunction2(value))
+    def setGetEventData(value: () => js.Object): Self = StObject.set(x, "getEventData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetComponentSize(value: () => H): Self = this.set("getComponentSize", js.Any.fromFunction0(value))
+    def setGetLinkById(value: js.Any => DvtDiagramLayoutContextLink): Self = StObject.set(x, "getLinkById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentViewport(value: () => H): Self = this.set("getCurrentViewport", js.Any.fromFunction0(value))
+    def setGetLinkByIndex(value: Double => DvtDiagramLayoutContextLink): Self = StObject.set(x, "getLinkByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEventData(value: () => js.Object): Self = this.set("getEventData", js.Any.fromFunction0(value))
+    def setGetLinkCount(value: () => Double): Self = StObject.set(x, "getLinkCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLinkById(value: js.Any => DvtDiagramLayoutContextLink): Self = this.set("getLinkById", js.Any.fromFunction1(value))
+    def setGetNodeById(value: js.Any => DvtDiagramLayoutContextNode): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLinkByIndex(value: Double => DvtDiagramLayoutContextLink): Self = this.set("getLinkByIndex", js.Any.fromFunction1(value))
+    def setGetNodeByIndex(value: Double => DvtDiagramLayoutContextNode): Self = StObject.set(x, "getNodeByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLinkCount(value: () => Double): Self = this.set("getLinkCount", js.Any.fromFunction0(value))
+    def setGetNodeCount(value: () => Double): Self = StObject.set(x, "getNodeCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeById(value: js.Any => DvtDiagramLayoutContextNode): Self = this.set("getNodeById", js.Any.fromFunction1(value))
+    def setGetViewport(value: () => H): Self = StObject.set(x, "getViewport", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeByIndex(value: Double => DvtDiagramLayoutContextNode): Self = this.set("getNodeByIndex", js.Any.fromFunction1(value))
+    def setIsLocaleR2L(value: () => Boolean): Self = StObject.set(x, "isLocaleR2L", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeCount(value: () => Double): Self = this.set("getNodeCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetViewport(value: () => H): Self = this.set("getViewport", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsLocaleR2L(value: () => Boolean): Self = this.set("isLocaleR2L", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetViewport(value: H => Unit): Self = this.set("setViewport", js.Any.fromFunction1(value))
+    def setSetViewport(value: H => Unit): Self = StObject.set(x, "setViewport", js.Any.fromFunction1(value))
   }
 }

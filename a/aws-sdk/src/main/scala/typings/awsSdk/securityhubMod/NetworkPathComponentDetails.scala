@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkPathComponentDetails extends js.Object {
+trait NetworkPathComponentDetails extends StObject {
   
   /**
     * The IP addresses of the destination.
@@ -26,36 +27,24 @@ object NetworkPathComponentDetails {
   }
   
   @scala.inline
-  implicit class NetworkPathComponentDetailsOps[Self <: NetworkPathComponentDetails] (val x: Self) extends AnyVal {
+  implicit class NetworkPathComponentDetailsMutableBuilder[Self <: NetworkPathComponentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: StringList): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressVarargs(value: NonEmptyString*): Self = StObject.set(x, "Address", js.Array(value :_*))
     
     @scala.inline
-    def setAddressVarargs(value: NonEmptyString*): Self = this.set("Address", js.Array(value :_*))
+    def setPortRanges(value: PortRangeList): Self = StObject.set(x, "PortRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: StringList): Self = this.set("Address", value.asInstanceOf[js.Any])
+    def setPortRangesUndefined: Self = StObject.set(x, "PortRanges", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("Address", js.undefined)
-    
-    @scala.inline
-    def setPortRangesVarargs(value: PortRange*): Self = this.set("PortRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setPortRanges(value: PortRangeList): Self = this.set("PortRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortRanges: Self = this.set("PortRanges", js.undefined)
+    def setPortRangesVarargs(value: PortRange*): Self = StObject.set(x, "PortRanges", js.Array(value :_*))
   }
 }

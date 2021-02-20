@@ -1,12 +1,13 @@
 package typings.easeljs.createjs
 
 import typings.tweenjs.createjs.Tween
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MovieClipPlugin extends js.Object {
+trait MovieClipPlugin extends StObject {
   
   // methods
   def tween(

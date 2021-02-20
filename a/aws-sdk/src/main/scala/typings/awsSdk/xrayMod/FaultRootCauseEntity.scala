@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FaultRootCauseEntity extends js.Object {
+trait FaultRootCauseEntity extends StObject {
   
   /**
     * The types and messages of the exceptions.
@@ -31,39 +32,27 @@ object FaultRootCauseEntity {
   }
   
   @scala.inline
-  implicit class FaultRootCauseEntityOps[Self <: FaultRootCauseEntity] (val x: Self) extends AnyVal {
+  implicit class FaultRootCauseEntityMutableBuilder[Self <: FaultRootCauseEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExceptions(value: RootCauseExceptions): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExceptionsUndefined: Self = StObject.set(x, "Exceptions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExceptionsVarargs(value: RootCauseException*): Self = StObject.set(x, "Exceptions", js.Array(value :_*))
     
     @scala.inline
-    def setExceptionsVarargs(value: RootCauseException*): Self = this.set("Exceptions", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExceptions(value: RootCauseExceptions): Self = this.set("Exceptions", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteExceptions: Self = this.set("Exceptions", js.undefined)
+    def setRemote(value: NullableBoolean): Self = StObject.set(x, "Remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setRemote(value: NullableBoolean): Self = this.set("Remote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemote: Self = this.set("Remote", js.undefined)
+    def setRemoteUndefined: Self = StObject.set(x, "Remote", js.undefined)
   }
 }

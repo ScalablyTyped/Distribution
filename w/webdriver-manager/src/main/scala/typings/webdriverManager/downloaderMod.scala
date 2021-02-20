@@ -1,19 +1,18 @@
 package typings.webdriverManager
 
 import typings.webdriverManager.mod.Binary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriver-manager/built/lib/files/downloader", JSImport.Namespace)
-@js.native
-object downloaderMod extends js.Object {
+object downloaderMod {
   
+  @JSImport("webdriver-manager/built/lib/files/downloader", "Downloader")
   @js.native
-  class Downloader () extends js.Object
+  class Downloader () extends StObject
   /* static members */
-  @js.native
-  object Downloader extends js.Object {
+  object Downloader {
     
     /**
       * Http get the file. Check the content length of the file before writing the file.
@@ -28,7 +27,11 @@ object downloaderMod extends js.Object {
       * @returns Promise<boolean> Resolves true = downloaded. Resolves false = not downloaded.
       *          Rejected with an error.
       */
+    @JSImport("webdriver-manager/built/lib/files/downloader", "Downloader.getFile")
+    @js.native
     def getFile(binary: Binary, fileUrl: String, fileName: String, outputDir: String, contentLength: Double): js.Promise[Boolean] = js.native
+    @JSImport("webdriver-manager/built/lib/files/downloader", "Downloader.getFile")
+    @js.native
     def getFile(
       binary: Binary,
       fileUrl: String,

@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "CompositionTransactionNotifier")
 @js.native
-class CompositionTransactionNotifier () extends js.Object {
+class CompositionTransactionNotifier () extends StObject {
   def this(owner: js.Any) = this()
   
   /**

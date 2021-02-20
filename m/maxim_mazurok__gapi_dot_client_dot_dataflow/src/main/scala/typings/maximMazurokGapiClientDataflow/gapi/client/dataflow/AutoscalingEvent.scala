@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoscalingEvent extends js.Object {
+trait AutoscalingEvent extends StObject {
   
   /** The current number of workers the job has. */
   var currentNumWorkers: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object AutoscalingEvent {
   }
   
   @scala.inline
-  implicit class AutoscalingEventOps[Self <: AutoscalingEvent] (val x: Self) extends AnyVal {
+  implicit class AutoscalingEventMutableBuilder[Self <: AutoscalingEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentNumWorkers(value: String): Self = StObject.set(x, "currentNumWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentNumWorkersUndefined: Self = StObject.set(x, "currentNumWorkers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: StructuredMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentNumWorkers(value: String): Self = this.set("currentNumWorkers", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCurrentNumWorkers: Self = this.set("currentNumWorkers", js.undefined)
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: StructuredMessage): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTargetNumWorkers(value: String): Self = StObject.set(x, "targetNumWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    def setTargetNumWorkersUndefined: Self = StObject.set(x, "targetNumWorkers", js.undefined)
     
     @scala.inline
-    def deleteEventType: Self = this.set("eventType", js.undefined)
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetNumWorkers(value: String): Self = this.set("targetNumWorkers", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteTargetNumWorkers: Self = this.set("targetNumWorkers", js.undefined)
+    def setWorkerPool(value: String): Self = StObject.set(x, "workerPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
-    
-    @scala.inline
-    def setWorkerPool(value: String): Self = this.set("workerPool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerPool: Self = this.set("workerPool", js.undefined)
+    def setWorkerPoolUndefined: Self = StObject.set(x, "workerPool", js.undefined)
   }
 }

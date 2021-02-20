@@ -7,17 +7,19 @@ import typings.materialTab.typesMod.MDCTabDimensions
 import typings.materialTabIndicator.componentMod.MDCTabIndicatorFactory
 import typings.std.ClientRect
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @js.native
-  class MDCTab () extends MDCComponent[MDCTabFoundation] {
+  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/tab/component", "MDCTab")
+  @js.native
+  class MDCTab protected () extends MDCComponent[MDCTabFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCTabFoundation, args: js.Any*) = this()
     
     /**
       * Activates the tab
@@ -61,9 +63,10 @@ object componentMod extends js.Object {
     var unbounded: js.UndefOr[Boolean] = js.native
   }
   /* static members */
-  @js.native
-  object MDCTab extends js.Object {
+  object MDCTab {
     
+    @JSImport("@material/tab/component", "MDCTab.attachTo")
+    @js.native
     def attachTo(root: Element): MDCTab = js.native
   }
   

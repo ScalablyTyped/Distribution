@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `getEntity` operation. */
 @js.native
-trait GetEntityParams extends js.Object {
+trait GetEntityParams extends StObject {
   
   /** Whether to include all element content in the returned data. If **export**=`false`, the returned data includes only information about the element itself. If **export**=`true`, all content, including subelements, is included. */
   var _export: js.UndefOr[Boolean] = js.native
@@ -33,48 +34,36 @@ object GetEntityParams {
   }
   
   @scala.inline
-  implicit class GetEntityParamsOps[Self <: GetEntityParams] (val x: Self) extends AnyVal {
+  implicit class GetEntityParamsMutableBuilder[Self <: GetEntityParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setEntity(value: String): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setInclude_audit(value: Boolean): Self = StObject.set(x, "include_audit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspace_id(value: String): Self = this.set("workspace_id", value.asInstanceOf[js.Any])
+    def setInclude_auditUndefined: Self = StObject.set(x, "include_audit", js.undefined)
     
     @scala.inline
-    def set_export(value: Boolean): Self = this.set("_export", value.asInstanceOf[js.Any])
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_export: Self = this.set("_export", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def set_export(value: Boolean): Self = StObject.set(x, "_export", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_audit(value: Boolean): Self = this.set("include_audit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude_audit: Self = this.set("include_audit", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def set_exportUndefined: Self = StObject.set(x, "_export", js.undefined)
   }
 }

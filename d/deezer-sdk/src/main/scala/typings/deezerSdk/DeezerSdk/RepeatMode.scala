@@ -1,5 +1,6 @@
 package typings.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.deezerSdk.deezerSdkNumbers.`1`
   - typings.deezerSdk.deezerSdkNumbers.`2`
 */
-trait RepeatMode extends js.Object
+trait RepeatMode extends StObject
 object RepeatMode {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListParentsRequest extends js.Object {
+trait ListParentsRequest extends StObject {
   
   /**
     * The unique identifier (ID) of the OU or account whose parent containers you want to list. Don't specify a root. The regex pattern for a child ID string requires one of the following:    Account - A string that consists of exactly 12 digits.    Organizational unit (OU) - A string that begins with "ou-" followed by from 4 to 32 lowercase letters or digits (the ID of the root that contains the OU). This string is followed by a second "-" dash and from 8 to 32 additional lowercase letters or digits.  
@@ -31,33 +32,21 @@ object ListParentsRequest {
   }
   
   @scala.inline
-  implicit class ListParentsRequestOps[Self <: ListParentsRequest] (val x: Self) extends AnyVal {
+  implicit class ListParentsRequestMutableBuilder[Self <: ListParentsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildId(value: ChildId): Self = StObject.set(x, "ChildId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setChildId(value: ChildId): Self = this.set("ChildId", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

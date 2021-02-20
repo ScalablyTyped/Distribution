@@ -3,17 +3,14 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/add_n", JSImport.Namespace)
-@js.native
-object addNMod extends js.Object {
+object addNMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/add_n", "addN")
   @js.native
-  object addN extends js.Object {
-    
-    def apply[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): T = js.native
-  }
+  def addN[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): T = js.native
 }

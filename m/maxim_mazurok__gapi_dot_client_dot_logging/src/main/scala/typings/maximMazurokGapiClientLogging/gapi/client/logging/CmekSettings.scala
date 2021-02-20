@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CmekSettings extends js.Object {
+trait CmekSettings extends StObject {
   
   /**
     * The resource name for the configured Cloud KMS key.KMS key name format: "projects/PROJECT_ID/locations/LOCATION/keyRings/KEYRING/cryptoKeys/KEY"For example:
@@ -36,36 +37,24 @@ object CmekSettings {
   }
   
   @scala.inline
-  implicit class CmekSettingsOps[Self <: CmekSettings] (val x: Self) extends AnyVal {
+  implicit class CmekSettingsMutableBuilder[Self <: CmekSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyName(value: String): Self = this.set("kmsKeyName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyName: Self = this.set("kmsKeyName", js.undefined)
+    def setServiceAccountId(value: String): Self = StObject.set(x, "serviceAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setServiceAccountId(value: String): Self = this.set("serviceAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccountId: Self = this.set("serviceAccountId", js.undefined)
+    def setServiceAccountIdUndefined: Self = StObject.set(x, "serviceAccountId", js.undefined)
   }
 }

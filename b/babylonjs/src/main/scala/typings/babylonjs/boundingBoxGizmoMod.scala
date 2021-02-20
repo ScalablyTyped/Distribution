@@ -8,14 +8,14 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/boundingBoxGizmo", JSImport.Namespace)
-@js.native
-object boundingBoxGizmoMod extends js.Object {
+object boundingBoxGizmoMod {
   
+  @JSImport("babylonjs/Gizmos/boundingBoxGizmo", "BoundingBoxGizmo")
   @js.native
   /**
     * Creates an BoundingBoxGizmo
@@ -168,14 +168,15 @@ object boundingBoxGizmoMod extends js.Object {
     def updateBoundingBox(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object BoundingBoxGizmo extends js.Object {
+  object BoundingBoxGizmo {
     
     /**
       * Makes a mesh not pickable and wraps the mesh inside of a bounding box mesh that is pickable. (This is useful to avoid picking within complex geometry)
       * @param mesh the mesh to wrap in the bounding box mesh and make not pickable
       * @returns the bounding box mesh with the passed in mesh as a child
       */
+    @JSImport("babylonjs/Gizmos/boundingBoxGizmo", "BoundingBoxGizmo.MakeNotPickableAndWrapInBoundingBox")
+    @js.native
     def MakeNotPickableAndWrapInBoundingBox(mesh: Mesh): Mesh = js.native
   }
 }

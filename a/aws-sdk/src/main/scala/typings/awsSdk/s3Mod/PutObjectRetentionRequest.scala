@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutObjectRetentionRequest extends js.Object {
+trait PutObjectRetentionRequest extends StObject {
   
   /**
     * The bucket name that contains the object you want to apply this Object Retention configuration to.  When using this API with an access point, you must direct requests to the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com. When using this operation with an access point through the AWS SDKs, you provide the access point ARN in place of the bucket name. For more information about access point ARNs, see Using Access Points in the Amazon Simple Storage Service Developer Guide.
@@ -53,60 +54,48 @@ object PutObjectRetentionRequest {
   }
   
   @scala.inline
-  implicit class PutObjectRetentionRequestOps[Self <: PutObjectRetentionRequest] (val x: Self) extends AnyVal {
+  implicit class PutObjectRetentionRequestMutableBuilder[Self <: PutObjectRetentionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBypassGovernanceRetention(value: BypassGovernanceRetention): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBypassGovernanceRetentionUndefined: Self = StObject.set(x, "BypassGovernanceRetention", js.undefined)
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
     @scala.inline
-    def setBypassGovernanceRetention(value: BypassGovernanceRetention): Self = this.set("BypassGovernanceRetention", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBypassGovernanceRetention: Self = this.set("BypassGovernanceRetention", js.undefined)
+    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     @scala.inline
-    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+    def setRequestPayer(value: RequestPayer): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = this.set("ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
     
     @scala.inline
-    def deleteExpectedBucketOwner: Self = this.set("ExpectedBucketOwner", js.undefined)
+    def setRetention(value: ObjectLockRetention): Self = StObject.set(x, "Retention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    def setRetentionUndefined: Self = StObject.set(x, "Retention", js.undefined)
     
     @scala.inline
-    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetention(value: ObjectLockRetention): Self = this.set("Retention", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetention: Self = this.set("Retention", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

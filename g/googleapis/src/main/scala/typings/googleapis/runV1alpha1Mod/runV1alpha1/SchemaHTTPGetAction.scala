@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * HTTPGetAction describes an action based on HTTP Get requests.
   */
 @js.native
-trait SchemaHTTPGetAction extends js.Object {
+trait SchemaHTTPGetAction extends StObject {
   
   /**
     * Host name to connect to, defaults to the pod IP. You probably want to set
@@ -47,51 +48,39 @@ object SchemaHTTPGetAction {
   }
   
   @scala.inline
-  implicit class SchemaHTTPGetActionOps[Self <: SchemaHTTPGetAction] (val x: Self) extends AnyVal {
+  implicit class SchemaHTTPGetActionMutableBuilder[Self <: SchemaHTTPGetAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpHeaders(value: js.Array[SchemaHTTPHeader]): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setHttpHeadersVarargs(value: SchemaHTTPHeader*): Self = StObject.set(x, "httpHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setHttpHeadersVarargs(value: SchemaHTTPHeader*): Self = this.set("httpHeaders", js.Array(value :_*))
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpHeaders(value: js.Array[SchemaHTTPHeader]): Self = this.set("httpHeaders", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteHttpHeaders: Self = this.set("httpHeaders", js.undefined)
+    def setPort(value: SchemaIntOrString): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: SchemaIntOrString): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheme: Self = this.set("scheme", js.undefined)
+    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
   }
 }

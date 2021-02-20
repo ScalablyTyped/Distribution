@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentSnippet extends js.Object {
+trait CommentSnippet extends StObject {
   
   var authorChannelId: js.UndefOr[CommentSnippetAuthorChannelId] = js.native
   
@@ -66,108 +67,96 @@ object CommentSnippet {
   }
   
   @scala.inline
-  implicit class CommentSnippetOps[Self <: CommentSnippet] (val x: Self) extends AnyVal {
+  implicit class CommentSnippetMutableBuilder[Self <: CommentSnippet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorChannelId(value: CommentSnippetAuthorChannelId): Self = StObject.set(x, "authorChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorChannelIdUndefined: Self = StObject.set(x, "authorChannelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorChannelUrl(value: String): Self = StObject.set(x, "authorChannelUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorChannelId(value: CommentSnippetAuthorChannelId): Self = this.set("authorChannelId", value.asInstanceOf[js.Any])
+    def setAuthorChannelUrlUndefined: Self = StObject.set(x, "authorChannelUrl", js.undefined)
     
     @scala.inline
-    def deleteAuthorChannelId: Self = this.set("authorChannelId", js.undefined)
+    def setAuthorDisplayName(value: String): Self = StObject.set(x, "authorDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorChannelUrl(value: String): Self = this.set("authorChannelUrl", value.asInstanceOf[js.Any])
+    def setAuthorDisplayNameUndefined: Self = StObject.set(x, "authorDisplayName", js.undefined)
     
     @scala.inline
-    def deleteAuthorChannelUrl: Self = this.set("authorChannelUrl", js.undefined)
+    def setAuthorProfileImageUrl(value: String): Self = StObject.set(x, "authorProfileImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorDisplayName(value: String): Self = this.set("authorDisplayName", value.asInstanceOf[js.Any])
+    def setAuthorProfileImageUrlUndefined: Self = StObject.set(x, "authorProfileImageUrl", js.undefined)
     
     @scala.inline
-    def deleteAuthorDisplayName: Self = this.set("authorDisplayName", js.undefined)
+    def setCanRate(value: Boolean): Self = StObject.set(x, "canRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorProfileImageUrl(value: String): Self = this.set("authorProfileImageUrl", value.asInstanceOf[js.Any])
+    def setCanRateUndefined: Self = StObject.set(x, "canRate", js.undefined)
     
     @scala.inline
-    def deleteAuthorProfileImageUrl: Self = this.set("authorProfileImageUrl", js.undefined)
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanRate(value: Boolean): Self = this.set("canRate", value.asInstanceOf[js.Any])
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def deleteCanRate: Self = this.set("canRate", js.undefined)
+    def setLikeCount(value: Double): Self = StObject.set(x, "likeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setLikeCountUndefined: Self = StObject.set(x, "likeCount", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setModerationStatus(value: String): Self = StObject.set(x, "moderationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLikeCount(value: Double): Self = this.set("likeCount", value.asInstanceOf[js.Any])
+    def setModerationStatusUndefined: Self = StObject.set(x, "moderationStatus", js.undefined)
     
     @scala.inline
-    def deleteLikeCount: Self = this.set("likeCount", js.undefined)
+    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModerationStatus(value: String): Self = this.set("moderationStatus", value.asInstanceOf[js.Any])
+    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     @scala.inline
-    def deleteModerationStatus: Self = this.set("moderationStatus", js.undefined)
+    def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
     
     @scala.inline
-    def deleteParentId: Self = this.set("parentId", js.undefined)
+    def setTextDisplay(value: String): Self = StObject.set(x, "textDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedAt(value: String): Self = this.set("publishedAt", value.asInstanceOf[js.Any])
+    def setTextDisplayUndefined: Self = StObject.set(x, "textDisplay", js.undefined)
     
     @scala.inline
-    def deletePublishedAt: Self = this.set("publishedAt", js.undefined)
+    def setTextOriginal(value: String): Self = StObject.set(x, "textOriginal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDisplay(value: String): Self = this.set("textDisplay", value.asInstanceOf[js.Any])
+    def setTextOriginalUndefined: Self = StObject.set(x, "textOriginal", js.undefined)
     
     @scala.inline
-    def deleteTextDisplay: Self = this.set("textDisplay", js.undefined)
+    def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextOriginal(value: String): Self = this.set("textOriginal", value.asInstanceOf[js.Any])
+    def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
     
     @scala.inline
-    def deleteTextOriginal: Self = this.set("textOriginal", js.undefined)
+    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedAt(value: String): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
     
     @scala.inline
-    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+    def setViewerRating(value: String): Self = StObject.set(x, "viewerRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoId: Self = this.set("videoId", js.undefined)
-    
-    @scala.inline
-    def setViewerRating(value: String): Self = this.set("viewerRating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewerRating: Self = this.set("viewerRating", js.undefined)
+    def setViewerRatingUndefined: Self = StObject.set(x, "viewerRating", js.undefined)
   }
 }

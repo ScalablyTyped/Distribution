@@ -1,11 +1,12 @@
 package typings.chui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Deletable extends js.Object {
+trait Deletable extends StObject {
   
   var callback: js.UndefOr[js.Function] = js.native
   
@@ -28,54 +29,42 @@ object Deletable {
   }
   
   @scala.inline
-  implicit class DeletableOps[Self <: Deletable] (val x: Self) extends AnyVal {
+  implicit class DeletableMutableBuilder[Self <: Deletable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: js.Function): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setDeletableUndefined: Self = StObject.set(x, "deletable", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setDeleteLabel(value: String): Self = StObject.set(x, "deleteLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletable(value: Boolean): Self = this.set("deletable", value.asInstanceOf[js.Any])
+    def setDeleteLabelUndefined: Self = StObject.set(x, "deleteLabel", js.undefined)
     
     @scala.inline
-    def deleteDeletable: Self = this.set("deletable", js.undefined)
+    def setDoneLabel(value: String): Self = StObject.set(x, "doneLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteLabel(value: String): Self = this.set("deleteLabel", value.asInstanceOf[js.Any])
+    def setDoneLabelUndefined: Self = StObject.set(x, "doneLabel", js.undefined)
     
     @scala.inline
-    def deleteDeleteLabel: Self = this.set("deleteLabel", js.undefined)
+    def setEditLabel(value: String): Self = StObject.set(x, "editLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoneLabel(value: String): Self = this.set("doneLabel", value.asInstanceOf[js.Any])
+    def setEditLabelUndefined: Self = StObject.set(x, "editLabel", js.undefined)
     
     @scala.inline
-    def deleteDoneLabel: Self = this.set("doneLabel", js.undefined)
+    def setMovable(value: Boolean): Self = StObject.set(x, "movable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditLabel(value: String): Self = this.set("editLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEditLabel: Self = this.set("editLabel", js.undefined)
-    
-    @scala.inline
-    def setMovable(value: Boolean): Self = this.set("movable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMovable: Self = this.set("movable", js.undefined)
+    def setMovableUndefined: Self = StObject.set(x, "movable", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.semanticUiSidebar.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl, 'closable'> */
 @js.native
-trait PickImplclosable extends js.Object {
+trait PickImplclosable extends StObject {
   
   var closable: Boolean = js.native
 }
@@ -19,21 +20,9 @@ object PickImplclosable {
   }
   
   @scala.inline
-  implicit class PickImplclosableOps[Self <: PickImplclosable] (val x: Self) extends AnyVal {
+  implicit class PickImplclosableMutableBuilder[Self <: PickImplclosable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
   }
 }

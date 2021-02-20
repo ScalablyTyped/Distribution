@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommitRequest extends js.Object {
+trait CommitRequest extends StObject {
   
   /** The type of commit to perform. Defaults to `TRANSACTIONAL`. */
   var mode: js.UndefOr[String] = js.native
@@ -29,39 +30,27 @@ object CommitRequest {
   }
   
   @scala.inline
-  implicit class CommitRequestOps[Self <: CommitRequest] (val x: Self) extends AnyVal {
+  implicit class CommitRequestMutableBuilder[Self <: CommitRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMutations(value: js.Array[Mutation]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMutationsUndefined: Self = StObject.set(x, "mutations", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setMutationsVarargs(value: Mutation*): Self = StObject.set(x, "mutations", js.Array(value :_*))
     
     @scala.inline
-    def setMutationsVarargs(value: Mutation*): Self = this.set("mutations", js.Array(value :_*))
+    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutations(value: js.Array[Mutation]): Self = this.set("mutations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMutations: Self = this.set("mutations", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: String): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

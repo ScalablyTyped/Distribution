@@ -1,14 +1,14 @@
 package typings.plottable
 
 import typings.plottable.guideLineLayerMod.GuideLineLayer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/dragLineLayer", JSImport.Namespace)
-@js.native
-object dragLineLayerMod extends js.Object {
+object dragLineLayerMod {
   
+  @JSImport("plottable/build/src/components/dragLineLayer", "DragLineLayer")
   @js.native
   class DragLineLayer[D] protected () extends GuideLineLayer[D] {
     def this(orientation: String) = this()

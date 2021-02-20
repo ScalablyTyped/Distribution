@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPlayToManagerStatics extends js.Object {
+trait IPlayToManagerStatics extends StObject {
   
   def getForCurrentView(): PlayToManager = js.native
   
@@ -20,24 +21,12 @@ object IPlayToManagerStatics {
   }
   
   @scala.inline
-  implicit class IPlayToManagerStaticsOps[Self <: IPlayToManagerStatics] (val x: Self) extends AnyVal {
+  implicit class IPlayToManagerStaticsMutableBuilder[Self <: IPlayToManagerStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetForCurrentView(value: () => PlayToManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetForCurrentView(value: () => PlayToManager): Self = this.set("getForCurrentView", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowPlayToUI(value: () => Unit): Self = this.set("showPlayToUI", js.Any.fromFunction0(value))
+    def setShowPlayToUI(value: () => Unit): Self = StObject.set(x, "showPlayToUI", js.Any.fromFunction0(value))
   }
 }

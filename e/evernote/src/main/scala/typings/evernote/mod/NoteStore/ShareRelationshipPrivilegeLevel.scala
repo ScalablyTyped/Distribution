@@ -1,36 +1,32 @@
 package typings.evernote.mod.NoteStore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShareRelationshipPrivilegeLevel extends js.Object
+sealed trait ShareRelationshipPrivilegeLevel extends StObject
 @JSImport("evernote", "NoteStore.ShareRelationshipPrivilegeLevel")
 @js.native
-object ShareRelationshipPrivilegeLevel extends js.Object {
+object ShareRelationshipPrivilegeLevel extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ShareRelationshipPrivilegeLevel with Double] = js.native
   
   @js.native
   sealed trait FULL_ACCESS extends ShareRelationshipPrivilegeLevel
-  /* 30 */ @js.native
-  object FULL_ACCESS extends TopLevel[FULL_ACCESS with Double]
+  /* 30 */ val FULL_ACCESS: typings.evernote.mod.NoteStore.ShareRelationshipPrivilegeLevel.FULL_ACCESS with Double = js.native
   
   @js.native
   sealed trait MODIFY_NOTEBOOK_PLUS_ACTIVITY extends ShareRelationshipPrivilegeLevel
-  /* 20 */ @js.native
-  object MODIFY_NOTEBOOK_PLUS_ACTIVITY extends TopLevel[MODIFY_NOTEBOOK_PLUS_ACTIVITY with Double]
+  /* 20 */ val MODIFY_NOTEBOOK_PLUS_ACTIVITY: typings.evernote.mod.NoteStore.ShareRelationshipPrivilegeLevel.MODIFY_NOTEBOOK_PLUS_ACTIVITY with Double = js.native
   
   @js.native
   sealed trait READ_NOTEBOOK extends ShareRelationshipPrivilegeLevel
-  /* 0 */ @js.native
-  object READ_NOTEBOOK extends TopLevel[READ_NOTEBOOK with Double]
+  /* 0 */ val READ_NOTEBOOK: typings.evernote.mod.NoteStore.ShareRelationshipPrivilegeLevel.READ_NOTEBOOK with Double = js.native
   
   @js.native
   sealed trait READ_NOTEBOOK_PLUS_ACTIVITY extends ShareRelationshipPrivilegeLevel
-  /* 10 */ @js.native
-  object READ_NOTEBOOK_PLUS_ACTIVITY extends TopLevel[READ_NOTEBOOK_PLUS_ACTIVITY with Double]
+  /* 10 */ val READ_NOTEBOOK_PLUS_ACTIVITY: typings.evernote.mod.NoteStore.ShareRelationshipPrivilegeLevel.READ_NOTEBOOK_PLUS_ACTIVITY with Double = js.native
 }

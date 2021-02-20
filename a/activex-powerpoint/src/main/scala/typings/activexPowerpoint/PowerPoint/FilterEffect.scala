@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterEffect extends js.Object {
+trait FilterEffect extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -38,36 +39,24 @@ object FilterEffect {
   }
   
   @scala.inline
-  implicit class FilterEffectOps[Self <: FilterEffect] (val x: Self) extends AnyVal {
+  implicit class FilterEffectMutableBuilder[Self <: FilterEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPowerPointDotFilterEffect_typekey(value: FilterEffect): Self = StObject.set(x, "PowerPoint.FilterEffect_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setReveal(value: MsoTriState): Self = StObject.set(x, "Reveal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSubtype(value: MsoAnimFilterEffectSubtype): Self = StObject.set(x, "Subtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotFilterEffect_typekey(value: FilterEffect): Self = this.set("PowerPoint.FilterEffect_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReveal(value: MsoTriState): Self = this.set("Reveal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtype(value: MsoAnimFilterEffectSubtype): Self = this.set("Subtype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MsoAnimFilterEffectType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: MsoAnimFilterEffectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

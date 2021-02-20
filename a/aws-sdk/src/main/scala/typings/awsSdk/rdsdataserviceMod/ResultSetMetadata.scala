@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsdataserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultSetMetadata extends js.Object {
+trait ResultSetMetadata extends StObject {
   
   /**
     * The number of columns in the result set.
@@ -26,33 +27,21 @@ object ResultSetMetadata {
   }
   
   @scala.inline
-  implicit class ResultSetMetadataOps[Self <: ResultSetMetadata] (val x: Self) extends AnyVal {
+  implicit class ResultSetMetadataMutableBuilder[Self <: ResultSetMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnCount(value: Long): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnMetadata(value: Metadata): Self = StObject.set(x, "columnMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCount(value: Long): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    def setColumnMetadataUndefined: Self = StObject.set(x, "columnMetadata", js.undefined)
     
     @scala.inline
-    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
-    
-    @scala.inline
-    def setColumnMetadataVarargs(value: ColumnMetadata*): Self = this.set("columnMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumnMetadata(value: Metadata): Self = this.set("columnMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnMetadata: Self = this.set("columnMetadata", js.undefined)
+    def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "columnMetadata", js.Array(value :_*))
   }
 }

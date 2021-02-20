@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filter extends js.Object {
+trait Filter extends StObject {
   
   /**
     * The name of the filter. Specify Finding to return recommendations with a specific findings classification (e.g., Overprovisioned). Specify RecommendationSourceType to return recommendations of a specific resource type (e.g., AutoScalingGroup).
@@ -26,33 +27,21 @@ object Filter {
   }
   
   @scala.inline
-  implicit class FilterOps[Self <: Filter] (val x: Self) extends AnyVal {
+  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: FilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: FilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: FilterName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: FilterValue*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: FilterValues): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

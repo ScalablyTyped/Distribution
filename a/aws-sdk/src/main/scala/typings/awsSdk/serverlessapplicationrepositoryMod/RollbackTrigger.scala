@@ -1,11 +1,12 @@
 package typings.awsSdk.serverlessapplicationrepositoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RollbackTrigger extends js.Object {
+trait RollbackTrigger extends StObject {
   
   /**
     * This property corresponds to the content of the same name for the AWS CloudFormation RollbackTrigger
@@ -28,24 +29,12 @@ object RollbackTrigger {
   }
   
   @scala.inline
-  implicit class RollbackTriggerOps[Self <: RollbackTrigger] (val x: Self) extends AnyVal {
+  implicit class RollbackTriggerMutableBuilder[Self <: RollbackTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: string): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

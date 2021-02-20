@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FederatedUser extends js.Object {
+trait FederatedUser extends StObject {
   
   /**
     * The AWS access key ID that identifies the credentials.
@@ -41,48 +42,36 @@ object FederatedUser {
   }
   
   @scala.inline
-  implicit class FederatedUserOps[Self <: FederatedUser] (val x: Self) extends AnyVal {
+  implicit class FederatedUserMutableBuilder[Self <: FederatedUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyId(value: string): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyId(value: string): Self = this.set("accessKeyId", value.asInstanceOf[js.Any])
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def deleteAccessKeyId: Self = this.set("accessKeyId", js.undefined)
+    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setPrincipalId(value: string): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setSessionContext(value: SessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalId(value: string): Self = this.set("principalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipalId: Self = this.set("principalId", js.undefined)
-    
-    @scala.inline
-    def setSessionContext(value: SessionContext): Self = this.set("sessionContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionContext: Self = this.set("sessionContext", js.undefined)
+    def setSessionContextUndefined: Self = StObject.set(x, "sessionContext", js.undefined)
   }
 }

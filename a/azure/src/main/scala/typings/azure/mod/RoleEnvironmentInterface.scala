@@ -3,6 +3,7 @@ package typings.azure.mod
 import typings.azure.anon.Dictkey
 import typings.node.eventsMod.EventEmitter
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrandResources extends js.Object {
+trait BrandResources extends StObject {
   
   /**
     * The user id of the user who created the brand resource.
@@ -66,72 +67,60 @@ object BrandResources {
   }
   
   @scala.inline
-  implicit class BrandResourcesOps[Self <: BrandResources] (val x: Self) extends AnyVal {
+  implicit class BrandResourcesMutableBuilder[Self <: BrandResources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedByUserInfo(value: UserInfo): Self = StObject.set(x, "createdByUserInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedByUserInfoUndefined: Self = StObject.set(x, "createdByUserInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedByUserInfo(value: UserInfo): Self = this.set("createdByUserInfo", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def deleteCreatedByUserInfo: Self = this.set("createdByUserInfo", js.undefined)
+    def setDataNotSavedNotInMaster(value: js.Array[String]): Self = StObject.set(x, "dataNotSavedNotInMaster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: String): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDataNotSavedNotInMasterUndefined: Self = StObject.set(x, "dataNotSavedNotInMaster", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setDataNotSavedNotInMasterVarargs(value: String*): Self = StObject.set(x, "dataNotSavedNotInMaster", js.Array(value :_*))
     
     @scala.inline
-    def setDataNotSavedNotInMasterVarargs(value: String*): Self = this.set("dataNotSavedNotInMaster", js.Array(value :_*))
+    def setModifiedByUserInfo(value: UserInfo): Self = StObject.set(x, "modifiedByUserInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataNotSavedNotInMaster(value: js.Array[String]): Self = this.set("dataNotSavedNotInMaster", value.asInstanceOf[js.Any])
+    def setModifiedByUserInfoUndefined: Self = StObject.set(x, "modifiedByUserInfo", js.undefined)
     
     @scala.inline
-    def deleteDataNotSavedNotInMaster: Self = this.set("dataNotSavedNotInMaster", js.undefined)
+    def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedByUserInfo(value: UserInfo): Self = this.set("modifiedByUserInfo", value.asInstanceOf[js.Any])
+    def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
     
     @scala.inline
-    def deleteModifiedByUserInfo: Self = this.set("modifiedByUserInfo", js.undefined)
+    def setModifiedTemplates(value: js.Array[String]): Self = StObject.set(x, "modifiedTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedDate(value: String): Self = this.set("modifiedDate", value.asInstanceOf[js.Any])
+    def setModifiedTemplatesUndefined: Self = StObject.set(x, "modifiedTemplates", js.undefined)
     
     @scala.inline
-    def deleteModifiedDate: Self = this.set("modifiedDate", js.undefined)
+    def setModifiedTemplatesVarargs(value: String*): Self = StObject.set(x, "modifiedTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setModifiedTemplatesVarargs(value: String*): Self = this.set("modifiedTemplates", js.Array(value :_*))
+    def setResourcesContentType(value: String): Self = StObject.set(x, "resourcesContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedTemplates(value: js.Array[String]): Self = this.set("modifiedTemplates", value.asInstanceOf[js.Any])
+    def setResourcesContentTypeUndefined: Self = StObject.set(x, "resourcesContentType", js.undefined)
     
     @scala.inline
-    def deleteModifiedTemplates: Self = this.set("modifiedTemplates", js.undefined)
+    def setResourcesContentUri(value: String): Self = StObject.set(x, "resourcesContentUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesContentType(value: String): Self = this.set("resourcesContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcesContentType: Self = this.set("resourcesContentType", js.undefined)
-    
-    @scala.inline
-    def setResourcesContentUri(value: String): Self = this.set("resourcesContentUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcesContentUri: Self = this.set("resourcesContentUri", js.undefined)
+    def setResourcesContentUriUndefined: Self = StObject.set(x, "resourcesContentUri", js.undefined)
   }
 }

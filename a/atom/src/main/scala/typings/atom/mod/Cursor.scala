@@ -9,12 +9,13 @@ import typings.atom.anon.MoveToEndOfSelection
 import typings.atom.anon.WordRegex
 import typings.atom.anon.`31`
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cursor extends js.Object {
+trait Cursor extends StObject {
   
   // Utilities
   /** Prevents this cursor from causing scrolling. */

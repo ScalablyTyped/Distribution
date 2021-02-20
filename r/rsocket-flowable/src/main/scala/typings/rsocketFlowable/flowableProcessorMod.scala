@@ -2,19 +2,28 @@ package typings.rsocketFlowable
 
 import typings.std.Error
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-flowable/FlowableProcessor", JSImport.Namespace)
-@js.native
-object flowableProcessorMod extends js.Object {
+object flowableProcessorMod {
+  
+  @JSImport("rsocket-flowable/FlowableProcessor", JSImport.Default)
+  @js.native
+  class default[T, R] protected () extends FlowableProcessor[T, R] {
+    def this(source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> */ js.Any) = this()
+    def this(
+      source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> */ js.Any,
+      fn: js.Function1[/* a */ T, R]
+    ) = this()
+  }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<R> * / any
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> * / any
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscription * / any */ @js.native
-  trait FlowableProcessor[T, R] extends js.Object {
+  trait FlowableProcessor[T, R] extends StObject {
     
     def cancel(): Unit = js.native
     
@@ -38,14 +47,5 @@ object flowableProcessorMod extends js.Object {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<R> */ _
         ]
     ): Unit = js.native
-  }
-  
-  @js.native
-  class default[T, R] protected () extends FlowableProcessor[T, R] {
-    def this(source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> */ js.Any) = this()
-    def this(
-      source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> */ js.Any,
-      fn: js.Function1[/* a */ T, R]
-    ) = this()
   }
 }

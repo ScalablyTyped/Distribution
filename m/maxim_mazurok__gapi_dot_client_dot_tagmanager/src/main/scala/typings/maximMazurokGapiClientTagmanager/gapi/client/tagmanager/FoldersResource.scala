@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientTagmanager.anon.Resource
 import typings.maximMazurokGapiClientTagmanager.anon.TagId
 import typings.maximMazurokGapiClientTagmanager.anon.TriggerId
 import typings.maximMazurokGapiClientTagmanager.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FoldersResource extends js.Object {
+trait FoldersResource extends StObject {
   
   def create(request: Alt, body: Folder): Request[Folder] = js.native
   /** Creates a GTM Folder. */

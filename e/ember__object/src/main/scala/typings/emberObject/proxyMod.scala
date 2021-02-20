@@ -3,17 +3,20 @@ package typings.emberObject
 import typings.emberObject.typesMod.UnwrapComputedPropertyGetter
 import typings.emberObject.typesMod.UnwrapComputedPropertyGetters
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/object/proxy", JSImport.Namespace)
-@js.native
-object proxyMod extends js.Object {
+object proxyMod {
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : CoreObject.extend(Observable) * / any */ @js.native
-  trait ObjectProxy[T /* <: js.Object */] extends js.Object {
+  @JSImport("@ember/object/proxy", JSImport.Default)
+  @js.native
+  class default[T /* <: js.Object */] () extends ObjectProxy[T]
+  
+  @js.native
+  trait ObjectProxy[T /* <: js.Object */]
+    extends typings.emberObject.mod.default {
     
     /**
       * The object whose properties will be forwarded.
@@ -34,7 +37,4 @@ object proxyMod extends js.Object {
         ]
       ] = js.native
   }
-  
-  @js.native
-  class default[T /* <: js.Object */] () extends ObjectProxy[T]
 }

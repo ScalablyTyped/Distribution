@@ -1,5 +1,6 @@
 package typings.reduxStorageEngineJsurl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("redux-storage-engine-jsurl", JSImport.Namespace)
 @js.native
-object reduxStorageEngineJsurlRequire extends js.Object
+object reduxStorageEngineJsurlRequire extends StObject

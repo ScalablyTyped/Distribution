@@ -1,13 +1,14 @@
 package typings.azure.mod
 
 import typings.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "WebResource")
 @js.native
-class WebResource () extends js.Object {
+class WebResource () extends StObject {
   
   def addOptionalMetadataHeaders(metadata: StorageMetadata): WebResource = js.native
   

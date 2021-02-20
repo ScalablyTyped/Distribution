@@ -1,17 +1,18 @@
 package typings.gaussian
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gaussian", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("gaussian", JSImport.Namespace)
+  @js.native
   def apply(mean: Double, variance: Double): Gaussian = js.native
   
   @js.native
-  trait Gaussian extends js.Object {
+  trait Gaussian extends StObject {
     
     /**
       * returns the result of adding this and the given

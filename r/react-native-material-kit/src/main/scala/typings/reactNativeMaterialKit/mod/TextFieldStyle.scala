@@ -1,12 +1,13 @@
 package typings.reactNativeMaterialKit.mod
 
 import typings.reactNativeMaterialKit.anon.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextFieldStyle extends js.Object {
+trait TextFieldStyle extends StObject {
   
   var highlightColor: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object TextFieldStyle {
   }
   
   @scala.inline
-  implicit class TextFieldStyleOps[Self <: TextFieldStyle] (val x: Self) extends AnyVal {
+  implicit class TextFieldStyleMutableBuilder[Self <: TextFieldStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextInputStyle(value: Color): Self = StObject.set(x, "textInputStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightColor(value: String): Self = this.set("highlightColor", value.asInstanceOf[js.Any])
+    def setTextInputStyleUndefined: Self = StObject.set(x, "textInputStyle", js.undefined)
     
     @scala.inline
-    def deleteHighlightColor: Self = this.set("highlightColor", js.undefined)
+    def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextInputStyle(value: Color): Self = this.set("textInputStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextInputStyle: Self = this.set("textInputStyle", js.undefined)
-    
-    @scala.inline
-    def setTintColor(value: String): Self = this.set("tintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
   }
 }

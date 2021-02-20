@@ -8,6 +8,7 @@ import typings.loopback.loopbackStrings.Number
 import typings.loopback.loopbackStrings.Object
 import typings.loopback.loopbackStrings.`null`
 import typings.loopback.loopbackStrings.any
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,18 +24,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {string} default Default value that will be used to populate loopback-explorer input fields and swagger documentation
   */
 @js.native
-trait RemoteMethodArgument extends js.Object {
-  
-  /**
-    *     Argument name
-    */
-  var arg: String = js.native
+trait RemoteMethodArgument extends StObject {
   
   /**
     *    Default value that will be used to populate loopback-explorer input fields and swagger documentation.
     *    Note: This value will not be passed into remote methods function if argument is not present.
     */
   var default: js.UndefOr[String] = js.native
+  
+  /**
+    *     Argument name
+    */
+  var arg: String = js.native
   
   /**
     * A text description of the argument. This is used by API documentation generators like Swagger.
@@ -87,59 +88,47 @@ object RemoteMethodArgument {
   }
   
   @scala.inline
-  implicit class RemoteMethodArgumentOps[Self <: RemoteMethodArgument] (val x: Self) extends AnyVal {
+  implicit class RemoteMethodArgumentMutableBuilder[Self <: RemoteMethodArgument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setArg(value: String): Self = this.set("arg", value.asInstanceOf[js.Any])
+    def setDescription(value: String | js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    @scala.inline
+    def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+    
+    @scala.inline
+    def setHttp(value: RemoteHttpOptions): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+    
+    @scala.inline
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    @scala.inline
+    def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
     def setType(
       value: any | Array | typings.loopback.loopbackStrings.Boolean | Buffer | Date | GeoPoint | `null` | Number | Object | typings.loopback.loopbackStrings.String
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
-    
-    @scala.inline
-    def setDescriptionVarargs(value: String*): Self = this.set("description", js.Array(value :_*))
-    
-    @scala.inline
-    def setDescription(value: String | js.Array[String]): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setHttp(value: RemoteHttpOptions): Self = this.set("http", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttp: Self = this.set("http", js.undefined)
-    
-    @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: Boolean): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

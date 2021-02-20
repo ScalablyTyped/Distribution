@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultCore extends js.Object {
+trait IVaultCore extends StObject {
   
   val Events: IVaultCoreEvents = js.native
   
@@ -20,24 +21,12 @@ object IVaultCore {
   }
   
   @scala.inline
-  implicit class IVaultCoreOps[Self <: IVaultCore] (val x: Self) extends AnyVal {
+  implicit class IVaultCoreMutableBuilder[Self <: IVaultCore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: IVaultCoreEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvents(value: IVaultCoreEvents): Self = this.set("Events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerVault(value: IVault): Self = this.set("ServerVault", value.asInstanceOf[js.Any])
+    def setServerVault(value: IVault): Self = StObject.set(x, "ServerVault", value.asInstanceOf[js.Any])
   }
 }

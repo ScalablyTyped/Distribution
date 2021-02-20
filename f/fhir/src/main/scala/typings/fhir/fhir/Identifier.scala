@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,72 +65,60 @@ object Identifier {
   }
   
   @scala.inline
-  implicit class IdentifierOps[Self <: Identifier] (val x: Self) extends AnyVal {
+  implicit class IdentifierMutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssigner(value: Reference): Self = StObject.set(x, "assigner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignerUndefined: Self = StObject.set(x, "assigner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_system(value: Element): Self = this.set("_system", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def delete_system: Self = this.set("_system", js.undefined)
+    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_use(value: Element): Self = this.set("_use", value.asInstanceOf[js.Any])
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
     @scala.inline
-    def delete_use: Self = this.set("_use", js.undefined)
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_value(value: Element): Self = this.set("_value", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def delete_value: Self = this.set("_value", js.undefined)
+    def setUse(value: code): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssigner(value: Reference): Self = this.set("assigner", value.asInstanceOf[js.Any])
+    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
     @scala.inline
-    def deleteAssigner: Self = this.set("assigner", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: uri): Self = this.set("system", value.asInstanceOf[js.Any])
+    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
     @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
+    def set_use(value: Element): Self = StObject.set(x, "_use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def set_useUndefined: Self = StObject.set(x, "_use", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse(value: code): Self = this.set("use", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse: Self = this.set("use", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

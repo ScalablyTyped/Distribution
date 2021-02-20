@@ -6,14 +6,14 @@ import typings.std.HTMLImageElement
 import typings.std.ProgressEvent
 import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/loaders/ImageLoader", JSImport.Namespace)
-@js.native
-object imageLoaderMod extends js.Object {
+object imageLoaderMod {
   
+  @JSImport("three/src/loaders/ImageLoader", "ImageLoader")
   @js.native
   class ImageLoader () extends Loader {
     def this(manager: LoadingManager) = this()

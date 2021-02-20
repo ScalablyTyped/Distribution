@@ -3,12 +3,13 @@ package typings.riotjsDomBindings.mod
 import typings.std.DocumentFragment
 import typings.std.HTMLCollection
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateChunk[Scope, ParentScope] extends js.Object {
+trait TemplateChunk[Scope, ParentScope] extends StObject {
   
   var bindings: js.UndefOr[js.Array[Binding[Scope, ParentScope]]] = js.native
   
@@ -48,87 +49,75 @@ object TemplateChunk {
   }
   
   @scala.inline
-  implicit class TemplateChunkOps[Self <: TemplateChunk[_, _], Scope, ParentScope] (val x: Self with (TemplateChunk[Scope, ParentScope])) extends AnyVal {
+  implicit class TemplateChunkMutableBuilder[Self <: TemplateChunk[_, _], Scope, ParentScope] (val x: Self with (TemplateChunk[Scope, ParentScope])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindings(value: js.Array[Binding[Scope, ParentScope]]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingsData(value: js.Array[BindingData]): Self = StObject.set(x, "bindingsData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindingsDataUndefined: Self = StObject.set(x, "bindingsData", js.undefined)
     
     @scala.inline
-    def setCreateDOM(value: HTMLElement => TemplateChunk[_, _]): Self = this.set("createDOM", js.Any.fromFunction1(value))
+    def setBindingsDataVarargs(value: BindingData*): Self = StObject.set(x, "bindingsData", js.Array(value :_*))
     
     @scala.inline
-    def setMount(value: (HTMLElement, Scope, ParentScope, TemplateChunkMeta) => TemplateChunk[_, _]): Self = this.set("mount", js.Any.fromFunction4(value))
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def setUnmount(value: (Scope, ParentScope, Boolean) => TemplateChunk[_, _]): Self = this.set("unmount", js.Any.fromFunction3(value))
+    def setBindingsVarargs(value: (Binding[Scope, ParentScope])*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     
     @scala.inline
-    def setUpdate(value: (Scope, ParentScope) => TemplateChunk[_, _]): Self = this.set("update", js.Any.fromFunction2(value))
+    def setChildren(value: HTMLCollection): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingsVarargs(value: (Binding[Scope, ParentScope])*): Self = this.set("bindings", js.Array(value :_*))
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setBindings(value: js.Array[Binding[Scope, ParentScope]]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    def setCreateDOM(value: HTMLElement => TemplateChunk[_, _]): Self = StObject.set(x, "createDOM", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingsDataVarargs(value: BindingData*): Self = this.set("bindingsData", js.Array(value :_*))
+    def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
     
     @scala.inline
-    def setBindingsData(value: js.Array[BindingData]): Self = this.set("bindingsData", value.asInstanceOf[js.Any])
+    def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBindingsData: Self = this.set("bindingsData", js.undefined)
+    def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     
     @scala.inline
-    def setChildren(value: HTMLCollection): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setFragment(value: DocumentFragment): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
     
     @scala.inline
-    def setDom(value: HTMLElement): Self = this.set("dom", value.asInstanceOf[js.Any])
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDom: Self = this.set("dom", js.undefined)
+    def setHtmlNull: Self = StObject.set(x, "html", null)
     
     @scala.inline
-    def setEl(value: HTMLElement): Self = this.set("el", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteEl: Self = this.set("el", js.undefined)
+    def setIsTemplateTag(value: Boolean): Self = StObject.set(x, "isTemplateTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragment(value: DocumentFragment): Self = this.set("fragment", value.asInstanceOf[js.Any])
+    def setIsTemplateTagUndefined: Self = StObject.set(x, "isTemplateTag", js.undefined)
     
     @scala.inline
-    def deleteFragment: Self = this.set("fragment", js.undefined)
+    def setMount(value: (HTMLElement, Scope, ParentScope, TemplateChunkMeta) => TemplateChunk[_, _]): Self = StObject.set(x, "mount", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setUnmount(value: (Scope, ParentScope, Boolean) => TemplateChunk[_, _]): Self = StObject.set(x, "unmount", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
-    
-    @scala.inline
-    def setHtmlNull: Self = this.set("html", null)
-    
-    @scala.inline
-    def setIsTemplateTag(value: Boolean): Self = this.set("isTemplateTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTemplateTag: Self = this.set("isTemplateTag", js.undefined)
+    def setUpdate(value: (Scope, ParentScope) => TemplateChunk[_, _]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

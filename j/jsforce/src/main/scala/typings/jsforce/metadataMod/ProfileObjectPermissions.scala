@@ -1,11 +1,12 @@
 package typings.jsforce.metadataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProfileObjectPermissions extends js.Object {
+trait ProfileObjectPermissions extends StObject {
   
   var allowCreate: js.UndefOr[Boolean] = js.native
   
@@ -31,57 +32,45 @@ object ProfileObjectPermissions {
   }
   
   @scala.inline
-  implicit class ProfileObjectPermissionsOps[Self <: ProfileObjectPermissions] (val x: Self) extends AnyVal {
+  implicit class ProfileObjectPermissionsMutableBuilder[Self <: ProfileObjectPermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCreate(value: Boolean): Self = StObject.set(x, "allowCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCreateUndefined: Self = StObject.set(x, "allowCreate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowDelete(value: Boolean): Self = StObject.set(x, "allowDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: String): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setAllowDeleteUndefined: Self = StObject.set(x, "allowDelete", js.undefined)
     
     @scala.inline
-    def setAllowCreate(value: Boolean): Self = this.set("allowCreate", value.asInstanceOf[js.Any])
+    def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowCreate: Self = this.set("allowCreate", js.undefined)
+    def setAllowEditUndefined: Self = StObject.set(x, "allowEdit", js.undefined)
     
     @scala.inline
-    def setAllowDelete(value: Boolean): Self = this.set("allowDelete", value.asInstanceOf[js.Any])
+    def setAllowRead(value: Boolean): Self = StObject.set(x, "allowRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowDelete: Self = this.set("allowDelete", js.undefined)
+    def setAllowReadUndefined: Self = StObject.set(x, "allowRead", js.undefined)
     
     @scala.inline
-    def setAllowEdit(value: Boolean): Self = this.set("allowEdit", value.asInstanceOf[js.Any])
+    def setModifyAllRecords(value: Boolean): Self = StObject.set(x, "modifyAllRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowEdit: Self = this.set("allowEdit", js.undefined)
+    def setModifyAllRecordsUndefined: Self = StObject.set(x, "modifyAllRecords", js.undefined)
     
     @scala.inline
-    def setAllowRead(value: Boolean): Self = this.set("allowRead", value.asInstanceOf[js.Any])
+    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowRead: Self = this.set("allowRead", js.undefined)
+    def setViewAllRecords(value: Boolean): Self = StObject.set(x, "viewAllRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifyAllRecords(value: Boolean): Self = this.set("modifyAllRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifyAllRecords: Self = this.set("modifyAllRecords", js.undefined)
-    
-    @scala.inline
-    def setViewAllRecords(value: Boolean): Self = this.set("viewAllRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewAllRecords: Self = this.set("viewAllRecords", js.undefined)
+    def setViewAllRecordsUndefined: Self = StObject.set(x, "viewAllRecords", js.undefined)
   }
 }

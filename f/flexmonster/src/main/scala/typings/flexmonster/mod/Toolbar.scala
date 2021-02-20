@@ -1,12 +1,13 @@
 package typings.flexmonster.mod
 
 import typings.flexmonster.anon.Charts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Toolbar extends js.Object {
+trait Toolbar extends StObject {
   
   // Charts tab
   def chartsHandler(`type`: String): Unit = js.native
@@ -88,78 +89,66 @@ object Toolbar {
   }
   
   @scala.inline
-  implicit class ToolbarOps[Self <: Toolbar] (val x: Self) extends AnyVal {
+  implicit class ToolbarMutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartsHandler(value: String => Unit): Self = StObject.set(x, "chartsHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartsMultipleHandler(value: () => Unit): Self = StObject.set(x, "chartsMultipleHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionalFormattingHandler(value: () => Unit): Self = StObject.set(x, "conditionalFormattingHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChartsHandler(value: String => Unit): Self = this.set("chartsHandler", js.Any.fromFunction1(value))
+    def setConnectLocalCSVHandler(value: () => Unit): Self = StObject.set(x, "connectLocalCSVHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChartsMultipleHandler(value: () => Unit): Self = this.set("chartsMultipleHandler", js.Any.fromFunction0(value))
+    def setConnectLocalJSONHandler(value: () => Unit): Self = StObject.set(x, "connectLocalJSONHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConditionalFormattingHandler(value: () => Unit): Self = this.set("conditionalFormattingHandler", js.Any.fromFunction0(value))
+    def setConnectOLAP(value: () => Unit): Self = StObject.set(x, "connectOLAP", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectLocalCSVHandler(value: () => Unit): Self = this.set("connectLocalCSVHandler", js.Any.fromFunction0(value))
+    def setConnectRemoteCSV(value: () => Unit): Self = StObject.set(x, "connectRemoteCSV", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectLocalJSONHandler(value: () => Unit): Self = this.set("connectLocalJSONHandler", js.Any.fromFunction0(value))
+    def setConnectRemoteJSON(value: () => Unit): Self = StObject.set(x, "connectRemoteJSON", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectOLAP(value: () => Unit): Self = this.set("connectOLAP", js.Any.fromFunction0(value))
+    def setExportHandler(value: String => Unit): Self = StObject.set(x, "exportHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnectRemoteCSV(value: () => Unit): Self = this.set("connectRemoteCSV", js.Any.fromFunction0(value))
+    def setFieldsHandler(value: () => Unit): Self = StObject.set(x, "fieldsHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectRemoteJSON(value: () => Unit): Self = this.set("connectRemoteJSON", js.Any.fromFunction0(value))
+    def setFormatCellsHandler(value: () => Unit): Self = StObject.set(x, "formatCellsHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportHandler(value: String => Unit): Self = this.set("exportHandler", js.Any.fromFunction1(value))
+    def setFullscreenHandler(value: () => Unit): Self = StObject.set(x, "fullscreenHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFieldsHandler(value: () => Unit): Self = this.set("fieldsHandler", js.Any.fromFunction0(value))
+    def setGetTabs(value: () => js.Array[ToolbarTab]): Self = StObject.set(x, "getTabs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFormatCellsHandler(value: () => Unit): Self = this.set("formatCellsHandler", js.Any.fromFunction0(value))
+    def setGridHandler(value: () => Unit): Self = StObject.set(x, "gridHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFullscreenHandler(value: () => Unit): Self = this.set("fullscreenHandler", js.Any.fromFunction0(value))
+    def setIcons(value: Charts): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTabs(value: () => js.Array[ToolbarTab]): Self = this.set("getTabs", js.Any.fromFunction0(value))
+    def setOpenLocalReport(value: () => Unit): Self = StObject.set(x, "openLocalReport", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGridHandler(value: () => Unit): Self = this.set("gridHandler", js.Any.fromFunction0(value))
+    def setOpenRemoteReport(value: () => Unit): Self = StObject.set(x, "openRemoteReport", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIcons(value: Charts): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setOptionsHandler(value: () => Unit): Self = StObject.set(x, "optionsHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOpenLocalReport(value: () => Unit): Self = this.set("openLocalReport", js.Any.fromFunction0(value))
+    def setPrintHandler(value: () => Unit): Self = StObject.set(x, "printHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOpenRemoteReport(value: () => Unit): Self = this.set("openRemoteReport", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOptionsHandler(value: () => Unit): Self = this.set("optionsHandler", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrintHandler(value: () => Unit): Self = this.set("printHandler", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSaveHandler(value: () => Unit): Self = this.set("saveHandler", js.Any.fromFunction0(value))
+    def setSaveHandler(value: () => Unit): Self = StObject.set(x, "saveHandler", js.Any.fromFunction0(value))
   }
 }

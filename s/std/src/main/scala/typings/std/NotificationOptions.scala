@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationOptions extends js.Object {
+trait NotificationOptions extends StObject {
   
   var actions: js.UndefOr[js.Array[NotificationAction]] = js.native
   
@@ -44,108 +45,96 @@ object NotificationOptions {
   }
   
   @scala.inline
-  implicit class NotificationOptionsOps[Self <: NotificationOptions] (val x: Self) extends AnyVal {
+  implicit class NotificationOptionsMutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[NotificationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: NotificationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: NotificationAction*): Self = this.set("actions", js.Array(value :_*))
+    def setBadge(value: java.lang.String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[NotificationAction]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setBody(value: java.lang.String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadge(value: java.lang.String): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteBadge: Self = this.set("badge", js.undefined)
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: java.lang.String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setDir(value: NotificationDirection): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setIcon(value: java.lang.String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: NotificationDirection): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteDir: Self = this.set("dir", js.undefined)
+    def setImage(value: java.lang.String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: java.lang.String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setLang(value: java.lang.String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: java.lang.String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setRenotify(value: scala.Boolean): Self = StObject.set(x, "renotify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: java.lang.String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setRenotifyUndefined: Self = StObject.set(x, "renotify", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setRequireInteraction(value: scala.Boolean): Self = StObject.set(x, "requireInteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenotify(value: scala.Boolean): Self = this.set("renotify", value.asInstanceOf[js.Any])
+    def setRequireInteractionUndefined: Self = StObject.set(x, "requireInteraction", js.undefined)
     
     @scala.inline
-    def deleteRenotify: Self = this.set("renotify", js.undefined)
+    def setSilent(value: scala.Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireInteraction(value: scala.Boolean): Self = this.set("requireInteraction", value.asInstanceOf[js.Any])
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def deleteRequireInteraction: Self = this.set("requireInteraction", js.undefined)
+    def setTag(value: java.lang.String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: scala.Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: java.lang.String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setVibrate(value: VibratePattern): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setVibrateVarargs(value: Double*): Self = this.set("vibrate", js.Array(value :_*))
-    
-    @scala.inline
-    def setVibrate(value: VibratePattern): Self = this.set("vibrate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVibrate: Self = this.set("vibrate", js.undefined)
+    def setVibrateVarargs(value: Double*): Self = StObject.set(x, "vibrate", js.Array(value :_*))
   }
 }

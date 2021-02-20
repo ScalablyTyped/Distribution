@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/BlurOffFontIcon", JSImport.Namespace)
-@js.native
-object blurOffFontIconMod extends js.Object {
+object blurOffFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/BlurOffFontIcon", "BlurOffFontIcon")
+  @js.native
   val BlurOffFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

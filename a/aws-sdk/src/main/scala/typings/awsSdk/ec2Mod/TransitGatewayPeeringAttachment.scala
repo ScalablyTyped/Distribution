@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitGatewayPeeringAttachment extends js.Object {
+trait TransitGatewayPeeringAttachment extends StObject {
   
   /**
     * Information about the accepter transit gateway.
@@ -51,63 +52,51 @@ object TransitGatewayPeeringAttachment {
   }
   
   @scala.inline
-  implicit class TransitGatewayPeeringAttachmentOps[Self <: TransitGatewayPeeringAttachment] (val x: Self) extends AnyVal {
+  implicit class TransitGatewayPeeringAttachmentMutableBuilder[Self <: TransitGatewayPeeringAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccepterTgwInfo(value: PeeringTgwInfo): Self = StObject.set(x, "AccepterTgwInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccepterTgwInfoUndefined: Self = StObject.set(x, "AccepterTgwInfo", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccepterTgwInfo(value: PeeringTgwInfo): Self = this.set("AccepterTgwInfo", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAccepterTgwInfo: Self = this.set("AccepterTgwInfo", js.undefined)
+    def setRequesterTgwInfo(value: PeeringTgwInfo): Self = StObject.set(x, "RequesterTgwInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: DateTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setRequesterTgwInfoUndefined: Self = StObject.set(x, "RequesterTgwInfo", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setState(value: TransitGatewayAttachmentState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequesterTgwInfo(value: PeeringTgwInfo): Self = this.set("RequesterTgwInfo", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteRequesterTgwInfo: Self = this.set("RequesterTgwInfo", js.undefined)
+    def setStatus(value: PeeringAttachmentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: TransitGatewayAttachmentState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: PeeringAttachmentStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setTransitGatewayAttachmentId(value: String): Self = this.set("TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayAttachmentId: Self = this.set("TransitGatewayAttachmentId", js.undefined)
+    def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
   }
 }

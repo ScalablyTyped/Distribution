@@ -1,6 +1,7 @@
 package typings.vexflow.global.Vex.Flow
 
 import typings.vexflow.anon.LineText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,16 @@ class TextDynamics protected ()
   extends typings.vexflow.Vex.Flow.TextDynamics {
   def this(text_struct: LineText) = this()
 }
-/* static members */
-@JSGlobal("Vex.Flow.TextDynamics")
-@js.native
-object TextDynamics extends js.Object {
+object TextDynamics {
   
-  var DEBUG: Boolean = js.native
+  @JSGlobal("Vex.Flow.TextDynamics")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("Vex.Flow.TextDynamics.DEBUG")
+  @js.native
+  def DEBUG: Boolean = js.native
+  @scala.inline
+  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
 }

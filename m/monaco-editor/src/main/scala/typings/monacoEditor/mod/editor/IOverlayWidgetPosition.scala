@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOverlayWidgetPosition extends js.Object {
+trait IOverlayWidgetPosition extends StObject {
   
   /**
     * The position preference for the overlay widget.
@@ -21,24 +22,12 @@ object IOverlayWidgetPosition {
   }
   
   @scala.inline
-  implicit class IOverlayWidgetPositionOps[Self <: IOverlayWidgetPosition] (val x: Self) extends AnyVal {
+  implicit class IOverlayWidgetPositionMutableBuilder[Self <: IOverlayWidgetPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreference(value: OverlayWidgetPositionPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPreference(value: OverlayWidgetPositionPreference): Self = this.set("preference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferenceNull: Self = this.set("preference", null)
+    def setPreferenceNull: Self = StObject.set(x, "preference", null)
   }
 }

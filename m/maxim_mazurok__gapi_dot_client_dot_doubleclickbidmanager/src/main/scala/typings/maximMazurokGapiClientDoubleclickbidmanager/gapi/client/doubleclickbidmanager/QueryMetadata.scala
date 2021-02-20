@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryMetadata extends js.Object {
+trait QueryMetadata extends StObject {
   
   /** Range of report data. */
   var dataRange: js.UndefOr[String] = js.native
@@ -52,87 +53,75 @@ object QueryMetadata {
   }
   
   @scala.inline
-  implicit class QueryMetadataOps[Self <: QueryMetadata] (val x: Self) extends AnyVal {
+  implicit class QueryMetadataMutableBuilder[Self <: QueryMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataRange(value: String): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataRangeUndefined: Self = StObject.set(x, "dataRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataRange(value: String): Self = this.set("dataRange", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteDataRange: Self = this.set("dataRange", js.undefined)
+    def setGoogleCloudStoragePathForLatestReport(value: String): Self = StObject.set(x, "googleCloudStoragePathForLatestReport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setGoogleCloudStoragePathForLatestReportUndefined: Self = StObject.set(x, "googleCloudStoragePathForLatestReport", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setGoogleDrivePathForLatestReport(value: String): Self = StObject.set(x, "googleDrivePathForLatestReport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleCloudStoragePathForLatestReport(value: String): Self = this.set("googleCloudStoragePathForLatestReport", value.asInstanceOf[js.Any])
+    def setGoogleDrivePathForLatestReportUndefined: Self = StObject.set(x, "googleDrivePathForLatestReport", js.undefined)
     
     @scala.inline
-    def deleteGoogleCloudStoragePathForLatestReport: Self = this.set("googleCloudStoragePathForLatestReport", js.undefined)
+    def setLatestReportRunTimeMs(value: String): Self = StObject.set(x, "latestReportRunTimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleDrivePathForLatestReport(value: String): Self = this.set("googleDrivePathForLatestReport", value.asInstanceOf[js.Any])
+    def setLatestReportRunTimeMsUndefined: Self = StObject.set(x, "latestReportRunTimeMs", js.undefined)
     
     @scala.inline
-    def deleteGoogleDrivePathForLatestReport: Self = this.set("googleDrivePathForLatestReport", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestReportRunTimeMs(value: String): Self = this.set("latestReportRunTimeMs", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLatestReportRunTimeMs: Self = this.set("latestReportRunTimeMs", js.undefined)
+    def setReportCount(value: Double): Self = StObject.set(x, "reportCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setReportCountUndefined: Self = StObject.set(x, "reportCount", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportCount(value: Double): Self = this.set("reportCount", value.asInstanceOf[js.Any])
+    def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
     
     @scala.inline
-    def deleteReportCount: Self = this.set("reportCount", js.undefined)
+    def setSendNotification(value: Boolean): Self = StObject.set(x, "sendNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunning(value: Boolean): Self = this.set("running", value.asInstanceOf[js.Any])
+    def setSendNotificationUndefined: Self = StObject.set(x, "sendNotification", js.undefined)
     
     @scala.inline
-    def deleteRunning: Self = this.set("running", js.undefined)
+    def setShareEmailAddress(value: js.Array[String]): Self = StObject.set(x, "shareEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendNotification(value: Boolean): Self = this.set("sendNotification", value.asInstanceOf[js.Any])
+    def setShareEmailAddressUndefined: Self = StObject.set(x, "shareEmailAddress", js.undefined)
     
     @scala.inline
-    def deleteSendNotification: Self = this.set("sendNotification", js.undefined)
+    def setShareEmailAddressVarargs(value: String*): Self = StObject.set(x, "shareEmailAddress", js.Array(value :_*))
     
     @scala.inline
-    def setShareEmailAddressVarargs(value: String*): Self = this.set("shareEmailAddress", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareEmailAddress(value: js.Array[String]): Self = this.set("shareEmailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareEmailAddress: Self = this.set("shareEmailAddress", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

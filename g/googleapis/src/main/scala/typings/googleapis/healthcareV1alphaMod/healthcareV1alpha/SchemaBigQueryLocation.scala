@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * BigQuery dataset location.
   */
 @js.native
-trait SchemaBigQueryLocation extends js.Object {
+trait SchemaBigQueryLocation extends StObject {
   
   /**
     * ID of the dataset that houses the BigQuery tables.
@@ -34,36 +35,24 @@ object SchemaBigQueryLocation {
   }
   
   @scala.inline
-  implicit class SchemaBigQueryLocationOps[Self <: SchemaBigQueryLocation] (val x: Self) extends AnyVal {
+  implicit class SchemaBigQueryLocationMutableBuilder[Self <: SchemaBigQueryLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetId(value: String): Self = this.set("datasetId", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteDatasetId: Self = this.set("datasetId", js.undefined)
+    def setSchemaConfig(value: SchemaSchemaConfig): Self = StObject.set(x, "schemaConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
-    
-    @scala.inline
-    def setSchemaConfig(value: SchemaSchemaConfig): Self = this.set("schemaConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaConfig: Self = this.set("schemaConfig", js.undefined)
+    def setSchemaConfigUndefined: Self = StObject.set(x, "schemaConfig", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.cassanknex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cassanknex.cassanknexStrings.LessthansignEqualssign
   - typings.cassanknex.cassanknexStrings.GreaterthansignEqualssign
 */
-trait ComparisonRestriction extends js.Object
+trait ComparisonRestriction extends StObject
 object ComparisonRestriction {
   
   @scala.inline

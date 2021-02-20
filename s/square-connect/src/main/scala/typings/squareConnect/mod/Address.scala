@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "Address")
 @js.native
-class Address () extends js.Object {
+class Address () extends StObject {
   
   /**
     * The first line of the address. Fields that start with `address_line` provide the address's most specific

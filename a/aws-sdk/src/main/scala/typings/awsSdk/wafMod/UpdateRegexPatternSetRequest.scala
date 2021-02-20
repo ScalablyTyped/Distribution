@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRegexPatternSetRequest extends js.Object {
+trait UpdateRegexPatternSetRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
@@ -31,30 +32,18 @@ object UpdateRegexPatternSetRequest {
   }
   
   @scala.inline
-  implicit class UpdateRegexPatternSetRequestOps[Self <: UpdateRegexPatternSetRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRegexPatternSetRequestMutableBuilder[Self <: UpdateRegexPatternSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegexPatternSetId(value: ResourceId): Self = StObject.set(x, "RegexPatternSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdates(value: RegexPatternSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegexPatternSetId(value: ResourceId): Self = this.set("RegexPatternSetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatesVarargs(value: RegexPatternSetUpdate*): Self = this.set("Updates", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdates(value: RegexPatternSetUpdates): Self = this.set("Updates", value.asInstanceOf[js.Any])
+    def setUpdatesVarargs(value: RegexPatternSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
   }
 }

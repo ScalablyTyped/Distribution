@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCommon.mod.LocationStrategy
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.OnDestroy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

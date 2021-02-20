@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAccountSettingsRequest extends js.Object {
+trait DescribeAccountSettingsRequest extends StObject {
   
   /**
     * The ID for the AWS account that contains the settings that you want to list.
@@ -21,21 +22,9 @@ object DescribeAccountSettingsRequest {
   }
   
   @scala.inline
-  implicit class DescribeAccountSettingsRequestOps[Self <: DescribeAccountSettingsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeAccountSettingsRequestMutableBuilder[Self <: DescribeAccountSettingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
   }
 }

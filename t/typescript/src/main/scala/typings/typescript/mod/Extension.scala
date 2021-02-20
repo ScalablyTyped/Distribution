@@ -1,58 +1,44 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Extension extends js.Object
+sealed trait Extension extends StObject
 @JSImport("typescript", "Extension")
 @js.native
-object Extension extends js.Object {
+object Extension extends StObject {
   
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[Extension with java.lang.String] = js.native
   
   @js.native
   sealed trait Dts extends Extension
-  /* ".d.ts" */ @js.native
-  object Dts
-    extends TopLevel[Dts with java.lang.String]
+  /* ".d.ts" */ val Dts: typings.typescript.mod.Extension.Dts with java.lang.String = js.native
   
   @js.native
   sealed trait Js extends Extension
-  /* ".js" */ @js.native
-  object Js
-    extends TopLevel[Js with java.lang.String]
+  /* ".js" */ val Js: typings.typescript.mod.Extension.Js with java.lang.String = js.native
   
   @js.native
   sealed trait Json extends Extension
-  /* ".json" */ @js.native
-  object Json
-    extends TopLevel[Json with java.lang.String]
+  /* ".json" */ val Json: typings.typescript.mod.Extension.Json with java.lang.String = js.native
   
   @js.native
   sealed trait Jsx extends Extension
-  /* ".jsx" */ @js.native
-  object Jsx
-    extends TopLevel[Jsx with java.lang.String]
+  /* ".jsx" */ val Jsx: typings.typescript.mod.Extension.Jsx with java.lang.String = js.native
   
   @js.native
   sealed trait Ts extends Extension
-  /* ".ts" */ @js.native
-  object Ts
-    extends TopLevel[Ts with java.lang.String]
+  /* ".ts" */ val Ts: typings.typescript.mod.Extension.Ts with java.lang.String = js.native
   
   @js.native
   sealed trait TsBuildInfo extends Extension
-  /* ".tsbuildinfo" */ @js.native
-  object TsBuildInfo
-    extends TopLevel[TsBuildInfo with java.lang.String]
+  /* ".tsbuildinfo" */ val TsBuildInfo: typings.typescript.mod.Extension.TsBuildInfo with java.lang.String = js.native
   
   @js.native
   sealed trait Tsx extends Extension
-  /* ".tsx" */ @js.native
-  object Tsx
-    extends TopLevel[Tsx with java.lang.String]
+  /* ".tsx" */ val Tsx: typings.typescript.mod.Extension.Tsx with java.lang.String = js.native
 }

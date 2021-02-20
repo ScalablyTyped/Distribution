@@ -2,13 +2,12 @@ package typings.chaiThings
 
 import typings.chai.Chai.Assertion
 import typings.chai.Chai.Equal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Chai")
-@js.native
-object Chai extends js.Object {
+object Chai {
   
   @js.native
   trait Anything extends Assertion {
@@ -17,7 +16,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait ArrayAssertion extends js.Object {
+  trait ArrayAssertion extends StObject {
     
     def all(`type`: String): Assertion = js.native
     def all(`type`: String, message: String): Assertion = js.native
@@ -36,7 +35,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait ArrayInclude extends js.Object {
+  trait ArrayInclude extends StObject {
     
     def apply(item: js.Any): js.Any = js.native
     
@@ -70,7 +69,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait Deep extends js.Object {
+  trait Deep extends StObject {
     
     def equals(value: js.Any): Assertion = js.native
     def equals(value: js.Any, message: String): Assertion = js.native
@@ -79,7 +78,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait Include extends js.Object {
+  trait Include extends StObject {
     
     def apply(item: js.Any): js.Any = js.native
     
@@ -107,7 +106,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait Item extends js.Object {
+  trait Item extends StObject {
     
     def item(): js.Any = js.native
     def item(`type`: String): Assertion = js.native

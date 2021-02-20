@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,43 +42,31 @@ object CIMGeometricEffectOffset {
   }
   
   @scala.inline
-  implicit class CIMGeometricEffectOffsetOps[Self <: CIMGeometricEffectOffset] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffset): Self = this.set("type", value.asInstanceOf[js.Any])
+  implicit class CIMGeometricEffectOffsetMutableBuilder[Self <: CIMGeometricEffectOffset] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetMethod * / any */ String
-    ): Self = this.set("method", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
     def setOption(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetOption * / any */ String
-    ): Self = this.set("option", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOption: Self = this.set("option", js.undefined)
+    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+    
+    @scala.inline
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

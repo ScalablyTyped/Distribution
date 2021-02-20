@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "PlotLineOrBand")
 @js.native
-class PlotLineOrBand protected () extends js.Object {
+class PlotLineOrBand protected () extends StObject {
   /**
     * The object wrapper for plot lines and plot bands
     */

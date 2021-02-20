@@ -4,12 +4,13 @@ import typings.maximMazurokGapiClientSlides.anon.Callback
 import typings.maximMazurokGapiClientSlides.anon.Fields
 import typings.maximMazurokGapiClientSlides.anon.Key
 import typings.maximMazurokGapiClientSlides.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PresentationsResource extends js.Object {
+trait PresentationsResource extends StObject {
   
   /**
     * Applies one or more updates to the presentation. Each request is validated before being applied. If any request is not valid, then the entire request will fail and nothing will be

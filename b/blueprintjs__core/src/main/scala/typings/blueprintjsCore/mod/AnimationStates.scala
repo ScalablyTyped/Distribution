@@ -1,12 +1,13 @@
 package typings.blueprintjsCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "AnimationStates")
 @js.native
-object AnimationStates extends js.Object {
+object AnimationStates extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.blueprintjsCore.collapseMod.AnimationStates with Double] = js.native

@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LineJoinStyle extends js.Object
+sealed trait LineJoinStyle extends StObject
 @JSGlobal("__esri.CIM.LineJoinStyle")
 @js.native
-object LineJoinStyle extends js.Object {
+object LineJoinStyle extends StObject {
   
   /**
     * The stroke join is beveled.

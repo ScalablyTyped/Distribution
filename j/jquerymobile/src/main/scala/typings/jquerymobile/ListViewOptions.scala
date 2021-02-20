@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListViewOptions extends js.Object {
+trait ListViewOptions extends StObject {
   
   var autodividers: js.UndefOr[Boolean] = js.native
   
@@ -48,114 +49,102 @@ object ListViewOptions {
   }
   
   @scala.inline
-  implicit class ListViewOptionsOps[Self <: ListViewOptions] (val x: Self) extends AnyVal {
+  implicit class ListViewOptionsMutableBuilder[Self <: ListViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutodividers(value: Boolean): Self = StObject.set(x, "autodividers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutodividersSelector(value: /* jq */ js.UndefOr[JQuery] => String): Self = StObject.set(x, "autodividersSelector", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutodividersSelectorUndefined: Self = StObject.set(x, "autodividersSelector", js.undefined)
     
     @scala.inline
-    def setAutodividers(value: Boolean): Self = this.set("autodividers", value.asInstanceOf[js.Any])
+    def setAutodividersUndefined: Self = StObject.set(x, "autodividers", js.undefined)
     
     @scala.inline
-    def deleteAutodividers: Self = this.set("autodividers", js.undefined)
+    def setCountTheme(value: String): Self = StObject.set(x, "countTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutodividersSelector(value: /* jq */ js.UndefOr[JQuery] => String): Self = this.set("autodividersSelector", js.Any.fromFunction1(value))
+    def setCountThemeUndefined: Self = StObject.set(x, "countTheme", js.undefined)
     
     @scala.inline
-    def deleteAutodividersSelector: Self = this.set("autodividersSelector", js.undefined)
+    def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountTheme(value: String): Self = this.set("countTheme", value.asInstanceOf[js.Any])
+    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
     @scala.inline
-    def deleteCountTheme: Self = this.set("countTheme", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaults(value: Boolean): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    def setDividerTheme(value: String): Self = StObject.set(x, "dividerTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDividerThemeUndefined: Self = StObject.set(x, "dividerTheme", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDividerTheme(value: String): Self = this.set("dividerTheme", value.asInstanceOf[js.Any])
+    def setFilterCallback(value: js.Function): Self = StObject.set(x, "filterCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDividerTheme: Self = this.set("dividerTheme", js.undefined)
+    def setFilterCallbackUndefined: Self = StObject.set(x, "filterCallback", js.undefined)
     
     @scala.inline
-    def setFilter(value: Boolean): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFilterPlaceholder(value: String): Self = StObject.set(x, "filterPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
     
     @scala.inline
-    def setFilterCallback(value: js.Function): Self = this.set("filterCallback", value.asInstanceOf[js.Any])
+    def setFilterTheme(value: String): Self = StObject.set(x, "filterTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterCallback: Self = this.set("filterCallback", js.undefined)
+    def setFilterThemeUndefined: Self = StObject.set(x, "filterTheme", js.undefined)
     
     @scala.inline
-    def setFilterPlaceholder(value: String): Self = this.set("filterPlaceholder", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteFilterPlaceholder: Self = this.set("filterPlaceholder", js.undefined)
+    def setHeaderTheme(value: String): Self = StObject.set(x, "headerTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterTheme(value: String): Self = this.set("filterTheme", value.asInstanceOf[js.Any])
+    def setHeaderThemeUndefined: Self = StObject.set(x, "headerTheme", js.undefined)
     
     @scala.inline
-    def deleteFilterTheme: Self = this.set("filterTheme", js.undefined)
+    def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTheme(value: String): Self = this.set("headerTheme", value.asInstanceOf[js.Any])
+    def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
     
     @scala.inline
-    def deleteHeaderTheme: Self = this.set("headerTheme", js.undefined)
+    def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitSelector(value: String): Self = this.set("initSelector", value.asInstanceOf[js.Any])
+    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
     @scala.inline
-    def deleteInitSelector: Self = this.set("initSelector", js.undefined)
+    def setSplitIcon(value: String): Self = StObject.set(x, "splitIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInset(value: Boolean): Self = this.set("inset", value.asInstanceOf[js.Any])
+    def setSplitIconUndefined: Self = StObject.set(x, "splitIcon", js.undefined)
     
     @scala.inline
-    def deleteInset: Self = this.set("inset", js.undefined)
+    def setSplitTheme(value: String): Self = StObject.set(x, "splitTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitIcon(value: String): Self = this.set("splitIcon", value.asInstanceOf[js.Any])
+    def setSplitThemeUndefined: Self = StObject.set(x, "splitTheme", js.undefined)
     
     @scala.inline
-    def deleteSplitIcon: Self = this.set("splitIcon", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitTheme(value: String): Self = this.set("splitTheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplitTheme: Self = this.set("splitTheme", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

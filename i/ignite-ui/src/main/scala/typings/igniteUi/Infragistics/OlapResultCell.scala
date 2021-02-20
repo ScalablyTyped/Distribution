@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlapResultCell extends js.Object {
+trait OlapResultCell extends StObject {
   
   /**
     * Returns the position of the cell when cells are iterated row by row.
@@ -30,24 +31,12 @@ object OlapResultCell {
   }
   
   @scala.inline
-  implicit class OlapResultCellOps[Self <: OlapResultCell] (val x: Self) extends AnyVal {
+  implicit class OlapResultCellMutableBuilder[Self <: OlapResultCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellOrdinal(value: js.Object => Double): Self = StObject.set(x, "cellOrdinal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCellOrdinal(value: js.Object => Double): Self = this.set("cellOrdinal", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProperties(value: js.Object => js.Object): Self = this.set("properties", js.Any.fromFunction1(value))
+    def setProperties(value: js.Object => js.Object): Self = StObject.set(x, "properties", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "BindableProperty")
 @js.native
-class BindableProperty protected () extends js.Object {
+class BindableProperty protected () extends StObject {
   /**
     * Creates an instance of BindableProperty.
     * @param nameOrConfig The name of the property or a cofiguration object.

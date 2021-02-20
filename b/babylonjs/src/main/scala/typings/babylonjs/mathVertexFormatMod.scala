@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.mathVectorMod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Maths/math.vertexFormat", JSImport.Namespace)
-@js.native
-object mathVertexFormatMod extends js.Object {
+object mathVertexFormatMod {
   
+  @JSImport("babylonjs/Maths/math.vertexFormat", "PositionNormalTextureVertex")
   @js.native
   /**
     * Creates a PositionNormalTextureVertex
@@ -17,7 +17,7 @@ object mathVertexFormatMod extends js.Object {
     * @param normal the normal of the vertex (defaut: 0,1,0)
     * @param uv the uv of the vertex (default: 0,0)
     */
-  class PositionNormalTextureVertex () extends js.Object {
+  class PositionNormalTextureVertex () extends StObject {
     def this(/** the position of the vertex (defaut: 0,0,0) */
     position: Vector3) = this()
     def this(
@@ -75,13 +75,14 @@ object mathVertexFormatMod extends js.Object {
     var uv: Vector2 = js.native
   }
   
+  @JSImport("babylonjs/Maths/math.vertexFormat", "PositionNormalVertex")
   @js.native
   /**
     * Creates a PositionNormalVertex
     * @param position the position of the vertex (defaut: 0,0,0)
     * @param normal the normal of the vertex (defaut: 0,1,0)
     */
-  class PositionNormalVertex () extends js.Object {
+  class PositionNormalVertex () extends StObject {
     def this(/** the position of the vertex (defaut: 0,0,0) */
     position: Vector3) = this()
     def this(

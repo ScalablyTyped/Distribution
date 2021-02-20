@@ -1,16 +1,19 @@
 package typings.amcharts
 
-import typings.amcharts.amRectangularChartMod.AmRectangularChart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/AmXYChart", JSImport.Namespace)
-@js.native
-object amXYChartMod extends js.Object {
+object amXYChartMod {
+  
+  @JSImport("amcharts/AmXYChart", JSImport.Default)
+  @js.native
+  class default () extends AmXYChart
   
   @js.native
-  trait AmXYChart extends AmRectangularChart {
+  trait AmXYChart
+    extends typings.amcharts.amRectangularChartMod.default {
     
     /**
       * Specifies if Scrollbar of X axis (horizontal) should be hidden.
@@ -33,7 +36,4 @@ object amXYChartMod extends js.Object {
       */
     def zoomOut(): Unit = js.native
   }
-  
-  @js.native
-  class default () extends AmXYChart
 }

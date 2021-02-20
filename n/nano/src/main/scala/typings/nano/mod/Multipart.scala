@@ -1,11 +1,12 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Multipart[D] extends js.Object {
+trait Multipart[D] extends StObject {
   
   def get(docname: String): js.Promise[_] = js.native
   def get(docname: String, callback: Callback[_]): js.Promise[_] = js.native

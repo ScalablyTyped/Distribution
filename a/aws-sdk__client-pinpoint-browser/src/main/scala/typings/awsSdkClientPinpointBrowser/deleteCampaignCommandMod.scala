@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesDeleteCampaignInputMod.DeleteCam
 import typings.awsSdkClientPinpointBrowser.typesDeleteCampaignOutputMod.DeleteCampaignOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteCampaignCommand", JSImport.Namespace)
-@js.native
-object deleteCampaignCommandMod extends js.Object {
+object deleteCampaignCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteCampaignCommand", "DeleteCampaignCommand")
   @js.native
   class DeleteCampaignCommand protected () extends Command[
           InputTypesUnion, 

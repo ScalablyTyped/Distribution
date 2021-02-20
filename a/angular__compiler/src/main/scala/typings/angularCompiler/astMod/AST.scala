@@ -1,12 +1,13 @@
 package typings.angularCompiler.astMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "AST")
 @js.native
-class AST protected () extends js.Object {
+class AST protected () extends StObject {
   def this(
     span: ParseSpan,
     /**

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1alpha1ExportDataOperationResponse extends js.Object {
+trait GoogleCloudDatalabelingV1alpha1ExportDataOperationResponse extends StObject {
   
   /** Output only. The name of annotated dataset in format "projects/∗/datasets/∗/annotatedDatasets/ *". */
   var annotatedDataset: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object GoogleCloudDatalabelingV1alpha1ExportDataOperationResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1alpha1ExportDataOperationResponseOps[Self <: GoogleCloudDatalabelingV1alpha1ExportDataOperationResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1alpha1ExportDataOperationResponseMutableBuilder[Self <: GoogleCloudDatalabelingV1alpha1ExportDataOperationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotatedDataset(value: String): Self = StObject.set(x, "annotatedDataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotatedDatasetUndefined: Self = StObject.set(x, "annotatedDataset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotatedDataset(value: String): Self = this.set("annotatedDataset", value.asInstanceOf[js.Any])
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def deleteAnnotatedDataset: Self = this.set("annotatedDataset", js.undefined)
+    def setExportCount(value: Double): Self = StObject.set(x, "exportCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: String): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setExportCountUndefined: Self = StObject.set(x, "exportCount", js.undefined)
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setLabelStats(value: GoogleCloudDatalabelingV1alpha1LabelStats): Self = StObject.set(x, "labelStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportCount(value: Double): Self = this.set("exportCount", value.asInstanceOf[js.Any])
+    def setLabelStatsUndefined: Self = StObject.set(x, "labelStats", js.undefined)
     
     @scala.inline
-    def deleteExportCount: Self = this.set("exportCount", js.undefined)
+    def setOutputConfig(value: GoogleCloudDatalabelingV1alpha1OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStats(value: GoogleCloudDatalabelingV1alpha1LabelStats): Self = this.set("labelStats", value.asInstanceOf[js.Any])
+    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
     
     @scala.inline
-    def deleteLabelStats: Self = this.set("labelStats", js.undefined)
+    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputConfig(value: GoogleCloudDatalabelingV1alpha1OutputConfig): Self = this.set("outputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputConfig: Self = this.set("outputConfig", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: Double): Self = this.set("totalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

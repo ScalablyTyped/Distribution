@@ -135,6 +135,7 @@ import typings.activexWord.activexWordNumbers.`9470064`
 import typings.activexWord.activexWordNumbers.`9498256`
 import typings.activexWord.activexWordNumbers.`9639167`
 import typings.activexWord.activexWordNumbers.`9662683`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -276,7 +277,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`65535`
   - typings.activexWord.activexWordNumbers.`3329434`
 */
-trait XlRgbColor extends js.Object
+trait XlRgbColor extends StObject
 object XlRgbColor {
   
   @scala.inline

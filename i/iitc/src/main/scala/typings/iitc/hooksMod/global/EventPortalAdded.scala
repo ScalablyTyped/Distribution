@@ -2,12 +2,13 @@ package typings.iitc.hooksMod.global
 
 import typings.iitc.iitctypesMod.IITC.Portal
 import typings.iitc.iitctypesMod.IITC.PortalData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventPortalAdded extends js.Object {
+trait EventPortalAdded extends StObject {
   
   var portal: Portal = js.native
   
@@ -22,24 +23,12 @@ object EventPortalAdded {
   }
   
   @scala.inline
-  implicit class EventPortalAddedOps[Self <: EventPortalAdded] (val x: Self) extends AnyVal {
+  implicit class EventPortalAddedMutableBuilder[Self <: EventPortalAdded] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPortal(value: Portal): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPortal(value: Portal): Self = this.set("portal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousData(value: PortalData): Self = this.set("previousData", value.asInstanceOf[js.Any])
+    def setPreviousData(value: PortalData): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
   }
 }

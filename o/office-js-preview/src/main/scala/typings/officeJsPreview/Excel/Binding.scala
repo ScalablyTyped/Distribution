@@ -7,6 +7,7 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.typedoc.schemaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,33 +25,21 @@ object CommentTag {
   }
   
   @scala.inline
-  implicit class CommentTagOps[Self <: CommentTag] (val x: Self) extends AnyVal {
+  implicit class CommentTagMutableBuilder[Self <: CommentTag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setText(value: ModelToObject[String] | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextVarargs(value: _ModelToObject[js.Any]*): Self = this.set("text", js.Array(value :_*))
-    
-    @scala.inline
-    def setText(value: ModelToObject[String] | String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParam(value: String): Self = this.set("param", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParam: Self = this.set("param", js.undefined)
+    def setTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

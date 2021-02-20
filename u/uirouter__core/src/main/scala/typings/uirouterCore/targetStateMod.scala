@@ -7,14 +7,14 @@ import typings.uirouterCore.stateInterfaceMod._RedirectToResult
 import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.stateRegistryMod.StateRegistry
 import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/state/targetState", JSImport.Namespace)
-@js.native
-object targetStateMod extends js.Object {
+object targetStateMod {
   
+  @JSImport("@uirouter/core/lib/state/targetState", "TargetState")
   @js.native
   class TargetState protected () extends _RedirectToResult {
     /**
@@ -113,10 +113,11 @@ object targetStateMod extends js.Object {
     def withState(state: StateOrName): TargetState = js.native
   }
   /* static members */
-  @js.native
-  object TargetState extends js.Object {
+  object TargetState {
     
     /** Returns true if the object has a state property that might be a state or state name */
+    @JSImport("@uirouter/core/lib/state/targetState", "TargetState.isDef")
+    @js.native
     def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = js.native
   }
 }

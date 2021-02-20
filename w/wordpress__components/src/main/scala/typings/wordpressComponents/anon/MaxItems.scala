@@ -1,11 +1,12 @@
 package typings.wordpressComponents.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxItems extends js.Object {
+trait MaxItems extends StObject {
   
   /**
     * Maximum number of items.
@@ -32,36 +33,24 @@ object MaxItems {
   }
   
   @scala.inline
-  implicit class MaxItemsOps[Self <: MaxItems] (val x: Self) extends AnyVal {
+  implicit class MaxItemsMutableBuilder[Self <: MaxItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfItems(value: Double): Self = this.set("numberOfItems", value.asInstanceOf[js.Any])
+    def setMinItemsUndefined: Self = StObject.set(x, "minItems", js.undefined)
     
     @scala.inline
-    def setOnNumberOfItemsChange(value: Double => Unit): Self = this.set("onNumberOfItemsChange", js.Any.fromFunction1(value))
+    def setNumberOfItems(value: Double): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: Double): Self = this.set("maxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxItems: Self = this.set("maxItems", js.undefined)
-    
-    @scala.inline
-    def setMinItems(value: Double): Self = this.set("minItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinItems: Self = this.set("minItems", js.undefined)
+    def setOnNumberOfItemsChange(value: Double => Unit): Self = StObject.set(x, "onNumberOfItemsChange", js.Any.fromFunction1(value))
   }
 }

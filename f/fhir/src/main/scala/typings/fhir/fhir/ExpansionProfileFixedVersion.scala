@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,45 +50,33 @@ object ExpansionProfileFixedVersion {
   }
   
   @scala.inline
-  implicit class ExpansionProfileFixedVersionOps[Self <: ExpansionProfileFixedVersion] (val x: Self) extends AnyVal {
+  implicit class ExpansionProfileFixedVersionMutableBuilder[Self <: ExpansionProfileFixedVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: code): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: uri): Self = this.set("system", value.asInstanceOf[js.Any])
+    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_mode(value: Element): Self = this.set("_mode", value.asInstanceOf[js.Any])
+    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
     @scala.inline
-    def delete_mode: Self = this.set("_mode", js.undefined)
+    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_system(value: Element): Self = this.set("_system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_system: Self = this.set("_system", js.undefined)
-    
-    @scala.inline
-    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_version: Self = this.set("_version", js.undefined)
+    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

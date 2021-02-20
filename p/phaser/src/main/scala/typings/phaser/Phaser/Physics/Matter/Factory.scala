@@ -12,6 +12,7 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterConstraintConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterTileOptions
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * code concise.
   */
 @js.native
-trait Factory extends js.Object {
+trait Factory extends StObject {
   
   /**
     * Creates a composite with simple car setup of bodies and constraints.

@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Graph2dBarChartOption extends js.Object {
+trait Graph2dBarChartOption extends StObject {
   
   var align: js.UndefOr[Graph2dBarChartAlign] = js.native
   
@@ -24,42 +25,30 @@ object Graph2dBarChartOption {
   }
   
   @scala.inline
-  implicit class Graph2dBarChartOptionOps[Self <: Graph2dBarChartOption] (val x: Self) extends AnyVal {
+  implicit class Graph2dBarChartOptionMutableBuilder[Self <: Graph2dBarChartOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: Graph2dBarChartAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: Graph2dBarChartAlign): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setSideBySide(value: Boolean): Self = StObject.set(x, "sideBySide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setSideBySideUndefined: Self = StObject.set(x, "sideBySide", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideBySide(value: Boolean): Self = this.set("sideBySide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSideBySide: Self = this.set("sideBySide", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

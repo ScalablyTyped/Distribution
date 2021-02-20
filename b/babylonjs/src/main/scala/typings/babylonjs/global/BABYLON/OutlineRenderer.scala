@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +16,18 @@ class OutlineRenderer protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.OutlineRenderer")
-@js.native
-object OutlineRenderer extends js.Object {
+object OutlineRenderer {
+  
+  @JSGlobal("BABYLON.OutlineRenderer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Stencil value used to avoid outline being seen within the mesh when the mesh is transparent
     */
-  var _StencilReference: js.Any = js.native
+  @JSGlobal("BABYLON.OutlineRenderer._StencilReference")
+  @js.native
+  def _StencilReference: js.Any = js.native
+  @scala.inline
+  def _StencilReference_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StencilReference")(x.asInstanceOf[js.Any])
 }

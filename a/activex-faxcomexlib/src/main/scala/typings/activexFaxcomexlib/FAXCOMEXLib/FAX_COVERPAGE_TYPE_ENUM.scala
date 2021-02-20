@@ -3,6 +3,7 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
   - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
 */
-trait FAX_COVERPAGE_TYPE_ENUM extends js.Object
+trait FAX_COVERPAGE_TYPE_ENUM extends StObject
 object FAX_COVERPAGE_TYPE_ENUM {
   
   @scala.inline

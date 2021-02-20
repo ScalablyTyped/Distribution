@@ -1,17 +1,28 @@
 package typings.blueprintjsCore.componentsMod
 
+import typings.blueprintjsCore.resizeSensorMod.IResizeSensorProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "ResizeSensor")
 @js.native
-class ResizeSensor ()
-  extends typings.blueprintjsCore.resizeSensorMod.ResizeSensor
+class ResizeSensor protected ()
+  extends typings.blueprintjsCore.resizeSensorMod.ResizeSensor {
+  def this(props: IResizeSensorProps) = this()
+  def this(props: IResizeSensorProps, context: js.Any) = this()
+}
 /* static members */
-@JSImport("@blueprintjs/core/lib/esm/components", "ResizeSensor")
-@js.native
-object ResizeSensor extends js.Object {
+object ResizeSensor {
   
-  var displayName: String = js.native
+  @JSImport("@blueprintjs/core/lib/esm/components", "ResizeSensor")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/components", "ResizeSensor.displayName")
+  @js.native
+  def displayName: String = js.native
+  @scala.inline
+  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

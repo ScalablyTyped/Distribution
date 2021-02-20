@@ -1,16 +1,17 @@
 package typings.xadesjs
 
-import typings.xmlCore.mod.XmlObject
+import typings.xadesjs.xmlBaseMod.XadesObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml/unsigned_properties", JSImport.Namespace)
-@js.native
-object unsignedPropertiesMod extends js.Object {
+object unsignedPropertiesMod {
   
+  @JSImport("xadesjs/build/types/xml/unsigned_properties", "UnsignedProperties")
   @js.native
-  class UnsignedProperties () extends XmlObject {
+  class UnsignedProperties () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var Id: String = js.native
     

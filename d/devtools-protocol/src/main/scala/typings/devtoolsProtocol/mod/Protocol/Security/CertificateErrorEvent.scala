@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Security
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateErrorEvent extends js.Object {
+trait CertificateErrorEvent extends StObject {
   
   /**
     * The type of the error.
@@ -32,27 +33,15 @@ object CertificateErrorEvent {
   }
   
   @scala.inline
-  implicit class CertificateErrorEventOps[Self <: CertificateErrorEvent] (val x: Self) extends AnyVal {
+  implicit class CertificateErrorEventMutableBuilder[Self <: CertificateErrorEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventId(value: integer): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrorType(value: String): Self = this.set("errorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventId(value: integer): Self = this.set("eventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestURL(value: String): Self = this.set("requestURL", value.asInstanceOf[js.Any])
+    def setRequestURL(value: String): Self = StObject.set(x, "requestURL", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for google.bigtable.admin.v2.BigtableTableAdmin.CreateTable
   */
 @js.native
-trait SchemaCreateTableRequest extends js.Object {
+trait SchemaCreateTableRequest extends StObject {
   
   /**
     * The optional list of row keys that will be used to initially split the
@@ -48,39 +49,27 @@ object SchemaCreateTableRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateTableRequestOps[Self <: SchemaCreateTableRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateTableRequestMutableBuilder[Self <: SchemaCreateTableRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialSplits(value: js.Array[SchemaSplit]): Self = StObject.set(x, "initialSplits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialSplitsUndefined: Self = StObject.set(x, "initialSplits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialSplitsVarargs(value: SchemaSplit*): Self = StObject.set(x, "initialSplits", js.Array(value :_*))
     
     @scala.inline
-    def setInitialSplitsVarargs(value: SchemaSplit*): Self = this.set("initialSplits", js.Array(value :_*))
+    def setTable(value: SchemaTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialSplits(value: js.Array[SchemaSplit]): Self = this.set("initialSplits", value.asInstanceOf[js.Any])
+    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialSplits: Self = this.set("initialSplits", js.undefined)
+    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
     @scala.inline
-    def setTable(value: SchemaTable): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
-    
-    @scala.inline
-    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableId: Self = this.set("tableId", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

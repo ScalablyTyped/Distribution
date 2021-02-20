@@ -8,13 +8,14 @@ import typings.plotlyJs.plotlyJsStrings.`top center`
 import typings.plotlyJs.plotlyJsStrings.`top left`
 import typings.plotlyJs.plotlyJsStrings.`top right`
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.DataTitle> */
 @js.native
-trait PartialDataTitle extends js.Object {
+trait PartialDataTitle extends StObject {
   
   var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.native
   
@@ -35,44 +36,32 @@ object PartialDataTitle {
   }
   
   @scala.inline
-  implicit class PartialDataTitleOps[Self <: PartialDataTitle] (val x: Self) extends AnyVal {
+  implicit class PartialDataTitleMutableBuilder[Self <: PartialDataTitle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
     def setPosition(
       value: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
-    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setStandoff(value: Double): Self = this.set("standoff", value.asInstanceOf[js.Any])
+    def setStandoff(value: Double): Self = StObject.set(x, "standoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStandoff: Self = this.set("standoff", js.undefined)
+    def setStandoffUndefined: Self = StObject.set(x, "standoff", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

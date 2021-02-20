@@ -4,19 +4,19 @@ import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.CognitoIdent
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceInputTypes
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.models0Mod.UnlinkDeveloperIdentityInput
-import typings.awsSdkSmithyClient.commandMod.Command
+import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.awsSdkTypes.responseMod.MetadataBearer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity/types/commands/UnlinkDeveloperIdentityCommand", JSImport.Namespace)
-@js.native
-object unlinkDeveloperIdentityCommandMod extends js.Object {
+object unlinkDeveloperIdentityCommandMod {
   
+  @JSImport("@aws-sdk/client-cognito-identity/types/commands/UnlinkDeveloperIdentityCommand", "UnlinkDeveloperIdentityCommand")
   @js.native
   class UnlinkDeveloperIdentityCommand protected ()
     extends Command[

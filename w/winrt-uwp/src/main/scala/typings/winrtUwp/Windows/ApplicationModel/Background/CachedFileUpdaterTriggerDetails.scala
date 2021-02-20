@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import typings.winrtUwp.Windows.Storage.Provider.CachedFileTarget
 import typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about the cached file operation that invoked the trigger. */
 @js.native
-trait CachedFileUpdaterTriggerDetails extends js.Object {
+trait CachedFileUpdaterTriggerDetails extends StObject {
   
   /** Gets whether the system can display UI allowing the user to launch provider app in response to the cached file updater trigger. */
   var canRequestUserInput: Boolean = js.native
@@ -28,27 +29,15 @@ object CachedFileUpdaterTriggerDetails {
   }
   
   @scala.inline
-  implicit class CachedFileUpdaterTriggerDetailsOps[Self <: CachedFileUpdaterTriggerDetails] (val x: Self) extends AnyVal {
+  implicit class CachedFileUpdaterTriggerDetailsMutableBuilder[Self <: CachedFileUpdaterTriggerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanRequestUserInput(value: Boolean): Self = StObject.set(x, "canRequestUserInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpdateRequest(value: FileUpdateRequest): Self = StObject.set(x, "updateRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanRequestUserInput(value: Boolean): Self = this.set("canRequestUserInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateRequest(value: FileUpdateRequest): Self = this.set("updateRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateTarget(value: CachedFileTarget): Self = this.set("updateTarget", value.asInstanceOf[js.Any])
+    def setUpdateTarget(value: CachedFileTarget): Self = StObject.set(x, "updateTarget", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.devextreme.mod.DevExpress.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,36 +32,24 @@ object LocalStoreOptions {
   }
   
   @scala.inline
-  implicit class LocalStoreOptionsOps[Self <: LocalStoreOptions] (val x: Self) extends AnyVal {
+  implicit class LocalStoreOptionsMutableBuilder[Self <: LocalStoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlushInterval(value: Double): Self = this.set("flushInterval", value.asInstanceOf[js.Any])
+    def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
     
     @scala.inline
-    def deleteFlushInterval: Self = this.set("flushInterval", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImmediate(value: Boolean): Self = this.set("immediate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImmediate: Self = this.set("immediate", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

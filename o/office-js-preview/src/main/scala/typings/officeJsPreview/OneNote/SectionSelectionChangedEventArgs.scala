@@ -1,6 +1,7 @@
 package typings.officeJsPreview.OneNote
 
 import typings.officeJsPreview.officeJsPreviewStrings.SectionSelectionChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.5]
   */
 @js.native
-trait SectionSelectionChangedEventArgs extends js.Object {
+trait SectionSelectionChangedEventArgs extends StObject {
   
   /**
     *
@@ -40,24 +41,12 @@ object SectionSelectionChangedEventArgs {
   }
   
   @scala.inline
-  implicit class SectionSelectionChangedEventArgsOps[Self <: SectionSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class SectionSelectionChangedEventArgsMutableBuilder[Self <: SectionSelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOldId(value: String): Self = StObject.set(x, "oldId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOldId(value: String): Self = this.set("oldId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: SectionSelectionChanged): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: SectionSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

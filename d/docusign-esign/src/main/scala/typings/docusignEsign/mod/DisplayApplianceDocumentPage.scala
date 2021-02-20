@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayApplianceDocumentPage extends js.Object {
+trait DisplayApplianceDocumentPage extends StObject {
   
   var docPageCountTotal: js.UndefOr[Double] = js.native
   
@@ -36,78 +37,66 @@ object DisplayApplianceDocumentPage {
   }
   
   @scala.inline
-  implicit class DisplayApplianceDocumentPageOps[Self <: DisplayApplianceDocumentPage] (val x: Self) extends AnyVal {
+  implicit class DisplayApplianceDocumentPageMutableBuilder[Self <: DisplayApplianceDocumentPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocPageCountTotal(value: Double): Self = StObject.set(x, "docPageCountTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocPageCountTotalUndefined: Self = StObject.set(x, "docPageCountTotal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentId(value: /*Integer that identifies the document in the envelope.*/ String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocPageCountTotal(value: Double): Self = this.set("docPageCountTotal", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def deleteDocPageCountTotal: Self = this.set("docPageCountTotal", js.undefined)
+    def setDocumentName(value: String): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: /*Integer that identifies the document in the envelope.*/ String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    def setDocumentNameUndefined: Self = StObject.set(x, "documentName", js.undefined)
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentName(value: String): Self = this.set("documentName", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteDocumentName: Self = this.set("documentName", js.undefined)
+    def setHeight72DPI(value: Double): Self = StObject.set(x, "height72DPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setHeight72DPIUndefined: Self = StObject.set(x, "height72DPI", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setIsAttachmentType(value: Boolean): Self = StObject.set(x, "isAttachmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight72DPI(value: Double): Self = this.set("height72DPI", value.asInstanceOf[js.Any])
+    def setIsAttachmentTypeUndefined: Self = StObject.set(x, "isAttachmentType", js.undefined)
     
     @scala.inline
-    def deleteHeight72DPI: Self = this.set("height72DPI", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAttachmentType(value: Boolean): Self = this.set("isAttachmentType", value.asInstanceOf[js.Any])
+    def setPageId(value: /*The unique id of the page.*/ String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAttachmentType: Self = this.set("isAttachmentType", js.undefined)
+    def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageId(value: /*The unique id of the page.*/ String): Self = this.set("pageId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deletePageId: Self = this.set("pageId", js.undefined)
+    def setWidth72DPI(value: Double): Self = StObject.set(x, "width72DPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setWidth72DPI(value: Double): Self = this.set("width72DPI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth72DPI: Self = this.set("width72DPI", js.undefined)
+    def setWidth72DPIUndefined: Self = StObject.set(x, "width72DPI", js.undefined)
   }
 }

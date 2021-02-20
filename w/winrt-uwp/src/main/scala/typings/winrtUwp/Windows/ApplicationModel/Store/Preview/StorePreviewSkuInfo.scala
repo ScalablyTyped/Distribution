@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Store.Preview
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the available SKUs for an in-app product. */
 @js.native
-trait StorePreviewSkuInfo extends js.Object {
+trait StorePreviewSkuInfo extends StObject {
   
   /** Gets the currency code for the current market. */
   var currencyCode: String = js.native
@@ -54,45 +55,33 @@ object StorePreviewSkuInfo {
   }
   
   @scala.inline
-  implicit class StorePreviewSkuInfoOps[Self <: StorePreviewSkuInfo] (val x: Self) extends AnyVal {
+  implicit class StorePreviewSkuInfoMutableBuilder[Self <: StorePreviewSkuInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomDeveloperData(value: String): Self = StObject.set(x, "customDeveloperData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setExtendedData(value: String): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDeveloperData(value: String): Self = this.set("customDeveloperData", value.asInstanceOf[js.Any])
+    def setFormattedListPrice(value: String): Self = StObject.set(x, "formattedListPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedData(value: String): Self = this.set("extendedData", value.asInstanceOf[js.Any])
+    def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedListPrice(value: String): Self = this.set("formattedListPrice", value.asInstanceOf[js.Any])
+    def setSkuType(value: String): Self = StObject.set(x, "skuType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkuId(value: String): Self = this.set("skuId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkuType(value: String): Self = this.set("skuType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

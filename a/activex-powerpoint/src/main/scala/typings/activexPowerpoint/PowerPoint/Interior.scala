@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Interior extends js.Object {
+trait Interior extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -49,48 +50,36 @@ object Interior {
   }
   
   @scala.inline
-  implicit class InteriorOps[Self <: Interior] (val x: Self) extends AnyVal {
+  implicit class InteriorMutableBuilder[Self <: Interior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: js.Any): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setInvertIfNegative(value: js.Any): Self = StObject.set(x, "InvertIfNegative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorIndex(value: js.Any): Self = this.set("ColorIndex", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setPattern(value: js.Any): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvertIfNegative(value: js.Any): Self = this.set("InvertIfNegative", value.asInstanceOf[js.Any])
+    def setPatternColor(value: js.Any): Self = StObject.set(x, "PatternColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setPatternColorIndex(value: js.Any): Self = StObject.set(x, "PatternColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: js.Any): Self = this.set("Pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPatternColor(value: js.Any): Self = this.set("PatternColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPatternColorIndex(value: js.Any): Self = this.set("PatternColorIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotInterior_typekey(value: Interior): Self = this.set("PowerPoint.Interior_typekey", value.asInstanceOf[js.Any])
+    def setPowerPointDotInterior_typekey(value: Interior): Self = StObject.set(x, "PowerPoint.Interior_typekey", value.asInstanceOf[js.Any])
   }
 }

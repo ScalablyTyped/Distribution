@@ -1,12 +1,13 @@
 package typings.minappEnv.wx
 
 import typings.minappEnv.Function
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Wx extends js.Object {
+trait Wx extends StObject {
   
   /** [wx.addCard(Object object)](wx.addCard.md)
   *

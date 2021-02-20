@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +50,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`not-applicable`
   - typings.ipp.ippStrings.`no-change`
 */
-trait PowerState extends js.Object
+trait PowerState extends StObject
 object PowerState {
   
   @scala.inline

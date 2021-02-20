@@ -7,18 +7,17 @@ import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
 import typings.stellarBase.xdrMod.xdr.MuxedAccount
 import typings.stellarBase.xdrMod.xdr.OperationBody
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Hidden namespace as hack to work around name collision.
-@JSImport("stellar-base/types/xdr", "xdrHidden")
-@js.native
-object xdrHidden extends js.Object {
+object xdrHidden {
   
   // tslint:disable-line:strict-export-declare-modifiers
   @js.native
-  trait Operation2[T /* <: Operation */] extends js.Object {
+  trait Operation2[T /* <: Operation */] extends StObject {
     
     def body(): OperationBody = js.native
     def body(value: OperationBody): OperationBody = js.native

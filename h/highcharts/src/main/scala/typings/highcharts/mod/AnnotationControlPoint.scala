@@ -1,13 +1,14 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnnotationControlP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "AnnotationControlPoint")
 @js.native
-class AnnotationControlPoint protected () extends js.Object {
+class AnnotationControlPoint protected () extends StObject {
   /**
     * A control point class which is a connection between controllable
     * transform methods and a user actions.

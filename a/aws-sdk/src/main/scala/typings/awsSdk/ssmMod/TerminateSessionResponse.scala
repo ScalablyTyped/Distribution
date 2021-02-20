@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminateSessionResponse extends js.Object {
+trait TerminateSessionResponse extends StObject {
   
   /**
     * The ID of the session that has been terminated.
@@ -21,24 +22,12 @@ object TerminateSessionResponse {
   }
   
   @scala.inline
-  implicit class TerminateSessionResponseOps[Self <: TerminateSessionResponse] (val x: Self) extends AnyVal {
+  implicit class TerminateSessionResponseMutableBuilder[Self <: TerminateSessionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSessionId(value: SessionId): Self = this.set("SessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionId: Self = this.set("SessionId", js.undefined)
+    def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
   }
 }

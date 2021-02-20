@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,90 +86,78 @@ object Subscription {
   }
   
   @scala.inline
-  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: SubscriptionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContact(value: js.Array[ContactPoint]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def setChannel(value: SubscriptionChannel): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setContactVarargs(value: ContactPoint*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
     @scala.inline
-    def setCriteria(value: String): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    def setCriteria(value: String): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setEnd(value: instant): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def set_criteria(value: Element): Self = this.set("_criteria", value.asInstanceOf[js.Any])
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_criteria: Self = this.set("_criteria", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set_end(value: Element): Self = this.set("_end", value.asInstanceOf[js.Any])
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_end: Self = this.set("_end", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_error(value: Element): Self = this.set("_error", value.asInstanceOf[js.Any])
+    def setTag(value: js.Array[Coding]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_error: Self = this.set("_error", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def set_reason(value: Element): Self = this.set("_reason", value.asInstanceOf[js.Any])
+    def setTagVarargs(value: Coding*): Self = StObject.set(x, "tag", js.Array(value :_*))
     
     @scala.inline
-    def delete_reason: Self = this.set("_reason", js.undefined)
+    def set_criteria(value: Element): Self = StObject.set(x, "_criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def set_criteriaUndefined: Self = StObject.set(x, "_criteria", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def set_end(value: Element): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactVarargs(value: ContactPoint*): Self = this.set("contact", js.Array(value :_*))
+    def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
     
     @scala.inline
-    def setContact(value: js.Array[ContactPoint]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def set_error(value: Element): Self = StObject.set(x, "_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def set_errorUndefined: Self = StObject.set(x, "_error", js.undefined)
     
     @scala.inline
-    def setEnd(value: instant): Self = this.set("end", value.asInstanceOf[js.Any])
+    def set_reason(value: Element): Self = StObject.set(x, "_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def set_reasonUndefined: Self = StObject.set(x, "_reason", js.undefined)
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
-    
-    @scala.inline
-    def setTagVarargs(value: Coding*): Self = this.set("tag", js.Array(value :_*))
-    
-    @scala.inline
-    def setTag(value: js.Array[Coding]): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

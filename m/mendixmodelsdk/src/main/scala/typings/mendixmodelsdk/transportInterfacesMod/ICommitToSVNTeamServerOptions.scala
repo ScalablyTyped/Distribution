@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
 import typings.mendixmodelsdk.mendixmodelsdkStrings.svn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,33 +34,21 @@ object ICommitToSVNTeamServerOptions {
   }
   
   @scala.inline
-  implicit class ICommitToSVNTeamServerOptionsOps[Self <: ICommitToSVNTeamServerOptions] (val x: Self) extends AnyVal {
+  implicit class ICommitToSVNTeamServerOptionsMutableBuilder[Self <: ICommitToSVNTeamServerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepositoryType(value: svn): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepositoryTypeUndefined: Self = StObject.set(x, "repositoryType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetRevision(value: Double): Self = StObject.set(x, "targetRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetRevision(value: Double): Self = this.set("targetRevision", value.asInstanceOf[js.Any])
+    def setTeamServerPassword(value: String): Self = StObject.set(x, "teamServerPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamServerPassword(value: String): Self = this.set("teamServerPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeamServerUsername(value: String): Self = this.set("teamServerUsername", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryType(value: svn): Self = this.set("repositoryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryType: Self = this.set("repositoryType", js.undefined)
+    def setTeamServerUsername(value: String): Self = StObject.set(x, "teamServerUsername", value.asInstanceOf[js.Any])
   }
 }

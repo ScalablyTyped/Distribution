@@ -1,14 +1,14 @@
 package typings.typeorm
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/error/NoConnectionForRepositoryError", JSImport.Namespace)
-@js.native
-object errorNoConnectionForRepositoryErrorMod extends js.Object {
+object errorNoConnectionForRepositoryErrorMod {
   
+  @JSImport("typeorm/error/NoConnectionForRepositoryError", "NoConnectionForRepositoryError")
   @js.native
   class NoConnectionForRepositoryError protected () extends Error {
     def this(connectionName: String) = this()

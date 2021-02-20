@@ -1,18 +1,21 @@
 package typings.randomSeed
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("random-seed", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("random-seed", "create")
+  @js.native
   def create(): RandomSeed = js.native
+  @JSImport("random-seed", "create")
+  @js.native
   def create(seed: String): RandomSeed = js.native
   
   @js.native
-  trait RandomSeed extends js.Object {
+  trait RandomSeed extends StObject {
     
     def apply(range: Double): Double = js.native
     

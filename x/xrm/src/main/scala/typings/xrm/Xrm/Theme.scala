@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,15 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.Office12Blue
   - typings.xrm.xrmStrings.Office14Silver
 */
-trait Theme extends js.Object
+trait Theme extends StObject
 object Theme {
+  
+  @scala.inline
+  def default: typings.xrm.xrmStrings.default = "default".asInstanceOf[typings.xrm.xrmStrings.default]
   
   @scala.inline
   def Office12Blue: typings.xrm.xrmStrings.Office12Blue = "Office12Blue".asInstanceOf[typings.xrm.xrmStrings.Office12Blue]
   
   @scala.inline
   def Office14Silver: typings.xrm.xrmStrings.Office14Silver = "Office14Silver".asInstanceOf[typings.xrm.xrmStrings.Office14Silver]
-  
-  @scala.inline
-  def default: typings.xrm.xrmStrings.default = "default".asInstanceOf[typings.xrm.xrmStrings.default]
 }

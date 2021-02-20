@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSpotPriceHistoryResult extends js.Object {
+trait DescribeSpotPriceHistoryResult extends StObject {
   
   /**
     * The token required to retrieve the next set of results. This value is null or an empty string when there are no more results to return.
@@ -26,33 +27,21 @@ object DescribeSpotPriceHistoryResult {
   }
   
   @scala.inline
-  implicit class DescribeSpotPriceHistoryResultOps[Self <: DescribeSpotPriceHistoryResult] (val x: Self) extends AnyVal {
+  implicit class DescribeSpotPriceHistoryResultMutableBuilder[Self <: DescribeSpotPriceHistoryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpotPriceHistory(value: SpotPriceHistoryList): Self = StObject.set(x, "SpotPriceHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSpotPriceHistoryUndefined: Self = StObject.set(x, "SpotPriceHistory", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSpotPriceHistoryVarargs(value: SpotPrice*): Self = this.set("SpotPriceHistory", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpotPriceHistory(value: SpotPriceHistoryList): Self = this.set("SpotPriceHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpotPriceHistory: Self = this.set("SpotPriceHistory", js.undefined)
+    def setSpotPriceHistoryVarargs(value: SpotPrice*): Self = StObject.set(x, "SpotPriceHistory", js.Array(value :_*))
   }
 }

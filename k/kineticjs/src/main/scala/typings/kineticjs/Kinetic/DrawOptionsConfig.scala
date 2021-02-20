@@ -1,11 +1,12 @@
 package typings.kineticjs.Kinetic
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawOptionsConfig extends js.Object {
+trait DrawOptionsConfig extends StObject {
   
   var fill: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object DrawOptionsConfig {
   }
   
   @scala.inline
-  implicit class DrawOptionsConfigOps[Self <: DrawOptionsConfig] (val x: Self) extends AnyVal {
+  implicit class DrawOptionsConfigMutableBuilder[Self <: DrawOptionsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setShadow(value: js.Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineJoin(value: String): Self = this.set("lineJoin", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteLineJoin: Self = this.set("lineJoin", js.undefined)
+    def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: js.Any): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
-    
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

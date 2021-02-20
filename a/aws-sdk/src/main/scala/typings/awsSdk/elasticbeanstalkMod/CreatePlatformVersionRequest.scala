@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePlatformVersionRequest extends js.Object {
+trait CreatePlatformVersionRequest extends StObject {
   
   /**
     * The name of the builder environment.
@@ -46,51 +47,39 @@ object CreatePlatformVersionRequest {
   }
   
   @scala.inline
-  implicit class CreatePlatformVersionRequestOps[Self <: CreatePlatformVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePlatformVersionRequestMutableBuilder[Self <: CreatePlatformVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionSettings(value: ConfigurationOptionSettingsList): Self = StObject.set(x, "OptionSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformDefinitionBundle(value: S3Location): Self = this.set("PlatformDefinitionBundle", value.asInstanceOf[js.Any])
+    def setOptionSettingsUndefined: Self = StObject.set(x, "OptionSettings", js.undefined)
     
     @scala.inline
-    def setPlatformName(value: PlatformName): Self = this.set("PlatformName", value.asInstanceOf[js.Any])
+    def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value :_*))
     
     @scala.inline
-    def setPlatformVersion(value: PlatformVersion): Self = this.set("PlatformVersion", value.asInstanceOf[js.Any])
+    def setPlatformDefinitionBundle(value: S3Location): Self = StObject.set(x, "PlatformDefinitionBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    def setPlatformName(value: PlatformName): Self = StObject.set(x, "PlatformName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    def setPlatformVersion(value: PlatformVersion): Self = StObject.set(x, "PlatformVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = this.set("OptionSettings", js.Array(value :_*))
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionSettings(value: ConfigurationOptionSettingsList): Self = this.set("OptionSettings", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteOptionSettings: Self = this.set("OptionSettings", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

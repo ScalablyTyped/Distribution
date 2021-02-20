@@ -1,12 +1,13 @@
 package typings.firebase.anon
 
 import typings.firebase.mod.firebase.auth.MultiFactorInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Email extends js.Object {
+trait Email extends StObject {
   
   var email: js.UndefOr[String | Null] = js.native
   
@@ -29,54 +30,42 @@ object Email {
   }
   
   @scala.inline
-  implicit class EmailOps[Self <: Email] (val x: Self) extends AnyVal {
+  implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailNull: Self = StObject.set(x, "email", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFromEmail(value: String): Self = StObject.set(x, "fromEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setFromEmailNull: Self = StObject.set(x, "fromEmail", null)
     
     @scala.inline
-    def setEmailNull: Self = this.set("email", null)
+    def setFromEmailUndefined: Self = StObject.set(x, "fromEmail", js.undefined)
     
     @scala.inline
-    def setFromEmail(value: String): Self = this.set("fromEmail", value.asInstanceOf[js.Any])
+    def setMultiFactorInfo(value: MultiFactorInfo): Self = StObject.set(x, "multiFactorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromEmail: Self = this.set("fromEmail", js.undefined)
+    def setMultiFactorInfoNull: Self = StObject.set(x, "multiFactorInfo", null)
     
     @scala.inline
-    def setFromEmailNull: Self = this.set("fromEmail", null)
+    def setMultiFactorInfoUndefined: Self = StObject.set(x, "multiFactorInfo", js.undefined)
     
     @scala.inline
-    def setMultiFactorInfo(value: MultiFactorInfo): Self = this.set("multiFactorInfo", value.asInstanceOf[js.Any])
+    def setPreviousEmail(value: String): Self = StObject.set(x, "previousEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiFactorInfo: Self = this.set("multiFactorInfo", js.undefined)
+    def setPreviousEmailNull: Self = StObject.set(x, "previousEmail", null)
     
     @scala.inline
-    def setMultiFactorInfoNull: Self = this.set("multiFactorInfo", null)
-    
-    @scala.inline
-    def setPreviousEmail(value: String): Self = this.set("previousEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousEmail: Self = this.set("previousEmail", js.undefined)
-    
-    @scala.inline
-    def setPreviousEmailNull: Self = this.set("previousEmail", null)
+    def setPreviousEmailUndefined: Self = StObject.set(x, "previousEmail", js.undefined)
   }
 }

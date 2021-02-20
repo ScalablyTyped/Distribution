@@ -7,14 +7,14 @@ import typings.angularCore.mod.Renderer2
 import typings.angularForms.mod.ControlValueAccessor
 import typings.homeworks.managerMod.HomeworksManager
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("homeworks/lib/ng2-homeworks/src/components/input/component.input", JSImport.Namespace)
-@js.native
-object componentInputMod extends js.Object {
+object componentInputMod {
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/input/component.input", "WorksInput")
   @js.native
   class WorksInput protected ()
     extends HomeworksManager

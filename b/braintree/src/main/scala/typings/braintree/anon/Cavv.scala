@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cavv extends js.Object {
+trait Cavv extends StObject {
   
   var cavv: js.UndefOr[String] = js.native
   
@@ -24,39 +25,27 @@ object Cavv {
   }
   
   @scala.inline
-  implicit class CavvOps[Self <: Cavv] (val x: Self) extends AnyVal {
+  implicit class CavvMutableBuilder[Self <: Cavv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCavv(value: String): Self = StObject.set(x, "cavv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCavvUndefined: Self = StObject.set(x, "cavv", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEciFlag(value: String): Self = StObject.set(x, "eciFlag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEciFlag(value: String): Self = this.set("eciFlag", value.asInstanceOf[js.Any])
+    def setThreeDSecureVision(value: String): Self = StObject.set(x, "threeDSecureVision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCavv(value: String): Self = this.set("cavv", value.asInstanceOf[js.Any])
+    def setThreeDSecureVisionUndefined: Self = StObject.set(x, "threeDSecureVision", js.undefined)
     
     @scala.inline
-    def deleteCavv: Self = this.set("cavv", js.undefined)
+    def setXid(value: String): Self = StObject.set(x, "xid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeDSecureVision(value: String): Self = this.set("threeDSecureVision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreeDSecureVision: Self = this.set("threeDSecureVision", js.undefined)
-    
-    @scala.inline
-    def setXid(value: String): Self = this.set("xid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXid: Self = this.set("xid", js.undefined)
+    def setXidUndefined: Self = StObject.set(x, "xid", js.undefined)
   }
 }

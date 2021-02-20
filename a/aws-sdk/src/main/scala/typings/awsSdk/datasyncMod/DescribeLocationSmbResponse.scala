@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLocationSmbResponse extends js.Object {
+trait DescribeLocationSmbResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the source SMB file system location that is created.
@@ -51,63 +52,51 @@ object DescribeLocationSmbResponse {
   }
   
   @scala.inline
-  implicit class DescribeLocationSmbResponseOps[Self <: DescribeLocationSmbResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeLocationSmbResponseMutableBuilder[Self <: DescribeLocationSmbResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
     @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = this.set("AgentArns", js.Array(value :_*))
+    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentArns(value: AgentArnList): Self = this.set("AgentArns", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAgentArns: Self = this.set("AgentArns", js.undefined)
+    def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: SmbDomain): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationArn(value: LocationArn): Self = this.set("LocationArn", value.asInstanceOf[js.Any])
+    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
     @scala.inline
-    def deleteLocationArn: Self = this.set("LocationArn", js.undefined)
+    def setMountOptions(value: SmbMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationUri(value: LocationUri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    def setMountOptionsUndefined: Self = StObject.set(x, "MountOptions", js.undefined)
     
     @scala.inline
-    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    def setUser(value: SmbUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountOptions(value: SmbMountOptions): Self = this.set("MountOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMountOptions: Self = this.set("MountOptions", js.undefined)
-    
-    @scala.inline
-    def setUser(value: SmbUser): Self = this.set("User", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("User", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SasPortalDeviceModel extends js.Object {
+trait SasPortalDeviceModel extends StObject {
   
   /** The firmware version of the device. */
   var firmwareVersion: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object SasPortalDeviceModel {
   }
   
   @scala.inline
-  implicit class SasPortalDeviceModelOps[Self <: SasPortalDeviceModel] (val x: Self) extends AnyVal {
+  implicit class SasPortalDeviceModelMutableBuilder[Self <: SasPortalDeviceModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirmwareVersion(value: String): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirmwareVersionUndefined: Self = StObject.set(x, "firmwareVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHardwareVersion(value: String): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirmwareVersion(value: String): Self = this.set("firmwareVersion", value.asInstanceOf[js.Any])
+    def setHardwareVersionUndefined: Self = StObject.set(x, "hardwareVersion", js.undefined)
     
     @scala.inline
-    def deleteFirmwareVersion: Self = this.set("firmwareVersion", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardwareVersion(value: String): Self = this.set("hardwareVersion", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHardwareVersion: Self = this.set("hardwareVersion", js.undefined)
+    def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSoftwareVersionUndefined: Self = StObject.set(x, "softwareVersion", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftwareVersion(value: String): Self = this.set("softwareVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoftwareVersion: Self = this.set("softwareVersion", js.undefined)
-    
-    @scala.inline
-    def setVendor(value: String): Self = this.set("vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendor: Self = this.set("vendor", js.undefined)
+    def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
   }
 }

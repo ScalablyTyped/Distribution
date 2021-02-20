@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateMaintenanceWindowResult extends js.Object {
+trait UpdateMaintenanceWindowResult extends StObject {
   
   /**
     * Whether targets must be registered with the maintenance window before tasks can be defined for those targets.
@@ -76,90 +77,78 @@ object UpdateMaintenanceWindowResult {
   }
   
   @scala.inline
-  implicit class UpdateMaintenanceWindowResultOps[Self <: UpdateMaintenanceWindowResult] (val x: Self) extends AnyVal {
+  implicit class UpdateMaintenanceWindowResultMutableBuilder[Self <: UpdateMaintenanceWindowResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUnassociatedTargets(value: MaintenanceWindowAllowUnassociatedTargets): Self = StObject.set(x, "AllowUnassociatedTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUnassociatedTargetsUndefined: Self = StObject.set(x, "AllowUnassociatedTargets", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCutoff(value: MaintenanceWindowCutoff): Self = StObject.set(x, "Cutoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUnassociatedTargets(value: MaintenanceWindowAllowUnassociatedTargets): Self = this.set("AllowUnassociatedTargets", value.asInstanceOf[js.Any])
+    def setCutoffUndefined: Self = StObject.set(x, "Cutoff", js.undefined)
     
     @scala.inline
-    def deleteAllowUnassociatedTargets: Self = this.set("AllowUnassociatedTargets", js.undefined)
+    def setDescription(value: MaintenanceWindowDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCutoff(value: MaintenanceWindowCutoff): Self = this.set("Cutoff", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCutoff: Self = this.set("Cutoff", js.undefined)
+    def setDuration(value: MaintenanceWindowDurationHours): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: MaintenanceWindowDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEnabled(value: MaintenanceWindowEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: MaintenanceWindowDurationHours): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setEndDate(value: MaintenanceWindowStringDateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: MaintenanceWindowEnabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setName(value: MaintenanceWindowName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: MaintenanceWindowStringDateTime): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    def setSchedule(value: MaintenanceWindowSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: MaintenanceWindowName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setScheduleOffset(value: MaintenanceWindowOffset): Self = StObject.set(x, "ScheduleOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setScheduleOffsetUndefined: Self = StObject.set(x, "ScheduleOffset", js.undefined)
     
     @scala.inline
-    def setSchedule(value: MaintenanceWindowSchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setScheduleTimezone(value: MaintenanceWindowTimezone): Self = StObject.set(x, "ScheduleTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    def setScheduleTimezoneUndefined: Self = StObject.set(x, "ScheduleTimezone", js.undefined)
     
     @scala.inline
-    def setScheduleOffset(value: MaintenanceWindowOffset): Self = this.set("ScheduleOffset", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
     @scala.inline
-    def deleteScheduleOffset: Self = this.set("ScheduleOffset", js.undefined)
+    def setStartDate(value: MaintenanceWindowStringDateTime): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleTimezone(value: MaintenanceWindowTimezone): Self = this.set("ScheduleTimezone", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     
     @scala.inline
-    def deleteScheduleTimezone: Self = this.set("ScheduleTimezone", js.undefined)
+    def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: MaintenanceWindowStringDateTime): Self = this.set("StartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("StartDate", js.undefined)
-    
-    @scala.inline
-    def setWindowId(value: MaintenanceWindowId): Self = this.set("WindowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowId: Self = this.set("WindowId", js.undefined)
+    def setWindowIdUndefined: Self = StObject.set(x, "WindowId", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.UI.StartScreen
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for selecting the type of system-managed jump list that is used by an app, adding custom task entry points to an app's jump list, and adding custom groups to an app's jump list. A jump list consists of an optional system-provided list of items, as well as optional app-provided items. Not all device families support jump lists. */
 @js.native
-trait JumpList extends js.Object {
+trait JumpList extends StObject {
   
   /** Gets the list of JumpListItem 's for the jump list. Items is of type IVector(JumpListItem) . */
   var items: IVector[JumpListItem] = js.native
@@ -35,27 +36,15 @@ object JumpList {
   }
   
   @scala.inline
-  implicit class JumpListOps[Self <: JumpList] (val x: Self) extends AnyVal {
+  implicit class JumpListMutableBuilder[Self <: JumpList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: IVector[JumpListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSaveAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItems(value: IVector[JumpListItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaveAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("saveAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSystemGroupKind(value: JumpListSystemGroupKind): Self = this.set("systemGroupKind", value.asInstanceOf[js.Any])
+    def setSystemGroupKind(value: JumpListSystemGroupKind): Self = StObject.set(x, "systemGroupKind", value.asInstanceOf[js.Any])
   }
 }

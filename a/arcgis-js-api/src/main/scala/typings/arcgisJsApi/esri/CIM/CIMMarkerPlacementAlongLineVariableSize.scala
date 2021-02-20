@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,59 +55,47 @@ object CIMMarkerPlacementAlongLineVariableSize {
   }
   
   @scala.inline
-  implicit class CIMMarkerPlacementAlongLineVariableSizeOps[Self <: CIMMarkerPlacementAlongLineVariableSize] (val x: Self) extends AnyVal {
+  implicit class CIMMarkerPlacementAlongLineVariableSizeMutableBuilder[Self <: CIMMarkerPlacementAlongLineVariableSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxRandomOffset(value: Double): Self = StObject.set(x, "maxRandomOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxRandomOffsetUndefined: Self = StObject.set(x, "maxRandomOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineVariableSize): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def setMaxRandomOffset(value: Double): Self = this.set("maxRandomOffset", value.asInstanceOf[js.Any])
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxRandomOffset: Self = this.set("maxRandomOffset", js.undefined)
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setNumberOfSizes(value: Double): Self = StObject.set(x, "numberOfSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setNumberOfSizesUndefined: Self = StObject.set(x, "numberOfSizes", js.undefined)
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
     @scala.inline
-    def setNumberOfSizes(value: Double): Self = this.set("numberOfSizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfSizes: Self = this.set("numberOfSizes", js.undefined)
-    
-    @scala.inline
-    def setSeed(value: Double): Self = this.set("seed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeed: Self = this.set("seed", js.undefined)
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineVariableSize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVariationMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SizeVariationMethod * / any */ String
-    ): Self = this.set("variationMethod", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "variationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVariationMethod: Self = this.set("variationMethod", js.undefined)
+    def setVariationMethodUndefined: Self = StObject.set(x, "variationMethod", js.undefined)
   }
 }

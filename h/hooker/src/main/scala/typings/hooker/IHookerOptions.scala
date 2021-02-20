@@ -1,11 +1,12 @@
 package typings.hooker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHookerOptions extends js.Object {
+trait IHookerOptions extends StObject {
   
   var once: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object IHookerOptions {
   }
   
   @scala.inline
-  implicit class IHookerOptionsOps[Self <: IHookerOptions] (val x: Self) extends AnyVal {
+  implicit class IHookerOptionsMutableBuilder[Self <: IHookerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassName(value: Boolean): Self = StObject.set(x, "passName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnce(value: Boolean): Self = this.set("once", value.asInstanceOf[js.Any])
+    def setPassNameUndefined: Self = StObject.set(x, "passName", js.undefined)
     
     @scala.inline
-    def deleteOnce: Self = this.set("once", js.undefined)
+    def setPost(value: (/* result */ js.Any, /* repeated */ js.Any) => IHookerPostHookResult | Unit): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPassName(value: Boolean): Self = this.set("passName", value.asInstanceOf[js.Any])
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
     @scala.inline
-    def deletePassName: Self = this.set("passName", js.undefined)
+    def setPre(value: /* repeated */ js.Any => IHookerPreHookResult | Unit): Self = StObject.set(x, "pre", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPost(value: (/* result */ js.Any, /* repeated */ js.Any) => IHookerPostHookResult | Unit): Self = this.set("post", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deletePost: Self = this.set("post", js.undefined)
-    
-    @scala.inline
-    def setPre(value: /* repeated */ js.Any => IHookerPreHookResult | Unit): Self = this.set("pre", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deletePre: Self = this.set("pre", js.undefined)
+    def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
   }
 }

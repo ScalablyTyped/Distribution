@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IMaterialSubSurfaceDefines
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +23,7 @@ class PBRSubSurfaceConfiguration protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.PBRSubSurfaceConfiguration")
-@js.native
-object PBRSubSurfaceConfiguration extends js.Object {
+object PBRSubSurfaceConfiguration {
   
   /**
     * Add fallbacks to the effect fallbacks list.
@@ -33,6 +32,8 @@ object PBRSubSurfaceConfiguration extends js.Object {
     * @param currentRank defines the current fallback rank.
     * @returns the new fallback rank.
     */
+  @JSGlobal("BABYLON.PBRSubSurfaceConfiguration.AddFallbacks")
+  @js.native
   def AddFallbacks(
     defines: IMaterialSubSurfaceDefines,
     fallbacks: typings.babylonjs.BABYLON.EffectFallbacks,
@@ -43,17 +44,23 @@ object PBRSubSurfaceConfiguration extends js.Object {
     * Add the required samplers to the current list.
     * @param samplers defines the current sampler list.
     */
+  @JSGlobal("BABYLON.PBRSubSurfaceConfiguration.AddSamplers")
+  @js.native
   def AddSamplers(samplers: js.Array[String]): Unit = js.native
   
   /**
     * Add the required uniforms to the current list.
     * @param uniforms defines the current uniform list.
     */
+  @JSGlobal("BABYLON.PBRSubSurfaceConfiguration.AddUniforms")
+  @js.native
   def AddUniforms(uniforms: js.Array[String]): Unit = js.native
   
   /**
     * Add the required uniforms to the current buffer.
     * @param uniformBuffer defines the current uniform buffer.
     */
+  @JSGlobal("BABYLON.PBRSubSurfaceConfiguration.PrepareUniformBuffer")
+  @js.native
   def PrepareUniformBuffer(uniformBuffer: typings.babylonjs.BABYLON.UniformBuffer): Unit = js.native
 }

@@ -1,13 +1,14 @@
 package typings.matterJs.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Engine")
 @js.native
-class Engine () extends js.Object {
+class Engine () extends StObject {
   
   /**
     * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
@@ -100,15 +101,15 @@ class Engine () extends js.Object {
   var world: World = js.native
 }
 /* static members */
-@JSImport("matter-js", "Engine")
-@js.native
-object Engine extends js.Object {
+object Engine {
   
   /**
     * Clears the engine including the world, pairs and broadphase.
     * @method clear
     * @param {engine} engine
     */
+  @JSImport("matter-js", "Engine.clear")
+  @js.native
   def clear(engine: Engine): Unit = js.native
   
   /**
@@ -130,11 +131,23 @@ object Engine extends js.Object {
     * @return {engine} engine
     * @deprecated
     */
+  @JSImport("matter-js", "Engine.create")
+  @js.native
   def create(): Engine = js.native
+  @JSImport("matter-js", "Engine.create")
+  @js.native
   def create(element: js.UndefOr[scala.Nothing], options: IEngineDefinition): Engine = js.native
+  @JSImport("matter-js", "Engine.create")
+  @js.native
   def create(element: IEngineDefinition): Engine = js.native
+  @JSImport("matter-js", "Engine.create")
+  @js.native
   def create(element: IEngineDefinition, options: IEngineDefinition): Engine = js.native
+  @JSImport("matter-js", "Engine.create")
+  @js.native
   def create(element: HTMLElement): Engine = js.native
+  @JSImport("matter-js", "Engine.create")
+  @js.native
   def create(element: HTMLElement, options: IEngineDefinition): Engine = js.native
   
   /**
@@ -143,6 +156,8 @@ object Engine extends js.Object {
     * @param {engine} engineA
     * @param {engine} engineB
     */
+  @JSImport("matter-js", "Engine.merge")
+  @js.native
   def merge(engineA: Engine, engineB: Engine): Unit = js.native
   
   /**
@@ -150,6 +165,8 @@ object Engine extends js.Object {
     * @method run
     * @param {engine} engine
     */
+  @JSImport("matter-js", "Engine.run")
+  @js.native
   def run(enige: Engine): Unit = js.native
   
   /**
@@ -167,8 +184,16 @@ object Engine extends js.Object {
     * @param {number} [delta=16.666]
     * @param {number} [correction=1]
     */
+  @JSImport("matter-js", "Engine.update")
+  @js.native
   def update(engine: Engine): Engine = js.native
+  @JSImport("matter-js", "Engine.update")
+  @js.native
   def update(engine: Engine, delta: js.UndefOr[scala.Nothing], correction: Double): Engine = js.native
+  @JSImport("matter-js", "Engine.update")
+  @js.native
   def update(engine: Engine, delta: Double): Engine = js.native
+  @JSImport("matter-js", "Engine.update")
+  @js.native
   def update(engine: Engine, delta: Double, correction: Double): Engine = js.native
 }

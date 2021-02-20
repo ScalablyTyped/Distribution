@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,117 +49,105 @@ object Drive {
   }
   
   @scala.inline
-  implicit class DriveOps[Self <: Drive] (val x: Self) extends AnyVal {
+  implicit class DriveMutableBuilder[Self <: Drive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriveType(value: NullableOption[String]): Self = StObject.set(x, "driveType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDriveTypeNull: Self = StObject.set(x, "driveType", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriveTypeUndefined: Self = StObject.set(x, "driveType", js.undefined)
     
     @scala.inline
-    def setDriveType(value: NullableOption[String]): Self = this.set("driveType", value.asInstanceOf[js.Any])
+    def setFollowing(value: NullableOption[js.Array[DriveItem]]): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDriveType: Self = this.set("driveType", js.undefined)
+    def setFollowingNull: Self = StObject.set(x, "following", null)
     
     @scala.inline
-    def setDriveTypeNull: Self = this.set("driveType", null)
+    def setFollowingUndefined: Self = StObject.set(x, "following", js.undefined)
     
     @scala.inline
-    def setFollowingVarargs(value: DriveItem*): Self = this.set("following", js.Array(value :_*))
+    def setFollowingVarargs(value: DriveItem*): Self = StObject.set(x, "following", js.Array(value :_*))
     
     @scala.inline
-    def setFollowing(value: NullableOption[js.Array[DriveItem]]): Self = this.set("following", value.asInstanceOf[js.Any])
+    def setItems(value: NullableOption[js.Array[DriveItem]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFollowing: Self = this.set("following", js.undefined)
+    def setItemsNull: Self = StObject.set(x, "items", null)
     
     @scala.inline
-    def setFollowingNull: Self = this.set("following", null)
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def setItemsVarargs(value: DriveItem*): Self = this.set("items", js.Array(value :_*))
+    def setItemsVarargs(value: DriveItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItems(value: NullableOption[js.Array[DriveItem]]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setList(value: NullableOption[List]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setListNull: Self = StObject.set(x, "list", null)
     
     @scala.inline
-    def setItemsNull: Self = this.set("items", null)
+    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
     @scala.inline
-    def setList(value: NullableOption[List]): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setOwner(value: NullableOption[IdentitySet]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteList: Self = this.set("list", js.undefined)
+    def setOwnerNull: Self = StObject.set(x, "owner", null)
     
     @scala.inline
-    def setListNull: Self = this.set("list", null)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setOwner(value: NullableOption[IdentitySet]): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setQuota(value: NullableOption[Quota]): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setQuotaNull: Self = StObject.set(x, "quota", null)
     
     @scala.inline
-    def setOwnerNull: Self = this.set("owner", null)
+    def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
     
     @scala.inline
-    def setQuota(value: NullableOption[Quota]): Self = this.set("quota", value.asInstanceOf[js.Any])
+    def setRoot(value: NullableOption[DriveItem]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuota: Self = this.set("quota", js.undefined)
+    def setRootNull: Self = StObject.set(x, "root", null)
     
     @scala.inline
-    def setQuotaNull: Self = this.set("quota", null)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def setRoot(value: NullableOption[DriveItem]): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSharePointIds(value: NullableOption[SharepointIds]): Self = StObject.set(x, "sharePointIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSharePointIdsNull: Self = StObject.set(x, "sharePointIds", null)
     
     @scala.inline
-    def setRootNull: Self = this.set("root", null)
+    def setSharePointIdsUndefined: Self = StObject.set(x, "sharePointIds", js.undefined)
     
     @scala.inline
-    def setSharePointIds(value: NullableOption[SharepointIds]): Self = this.set("sharePointIds", value.asInstanceOf[js.Any])
+    def setSpecial(value: NullableOption[js.Array[DriveItem]]): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharePointIds: Self = this.set("sharePointIds", js.undefined)
+    def setSpecialNull: Self = StObject.set(x, "special", null)
     
     @scala.inline
-    def setSharePointIdsNull: Self = this.set("sharePointIds", null)
+    def setSpecialUndefined: Self = StObject.set(x, "special", js.undefined)
     
     @scala.inline
-    def setSpecialVarargs(value: DriveItem*): Self = this.set("special", js.Array(value :_*))
+    def setSpecialVarargs(value: DriveItem*): Self = StObject.set(x, "special", js.Array(value :_*))
     
     @scala.inline
-    def setSpecial(value: NullableOption[js.Array[DriveItem]]): Self = this.set("special", value.asInstanceOf[js.Any])
+    def setSystem(value: NullableOption[SystemFacet]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpecial: Self = this.set("special", js.undefined)
+    def setSystemNull: Self = StObject.set(x, "system", null)
     
     @scala.inline
-    def setSpecialNull: Self = this.set("special", null)
-    
-    @scala.inline
-    def setSystem(value: NullableOption[SystemFacet]): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
-    
-    @scala.inline
-    def setSystemNull: Self = this.set("system", null)
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
   }
 }

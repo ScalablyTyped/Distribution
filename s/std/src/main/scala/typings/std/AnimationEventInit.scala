@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object AnimationEventInit {
   }
   
   @scala.inline
-  implicit class AnimationEventInitOps[Self <: AnimationEventInit] (val x: Self) extends AnyVal {
+  implicit class AnimationEventInitMutableBuilder[Self <: AnimationEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationName(value: java.lang.String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationName(value: java.lang.String): Self = this.set("animationName", value.asInstanceOf[js.Any])
+    def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
     
     @scala.inline
-    def deleteAnimationName: Self = this.set("animationName", js.undefined)
+    def setPseudoElement(value: java.lang.String): Self = StObject.set(x, "pseudoElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElapsedTime(value: Double): Self = this.set("elapsedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElapsedTime: Self = this.set("elapsedTime", js.undefined)
-    
-    @scala.inline
-    def setPseudoElement(value: java.lang.String): Self = this.set("pseudoElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePseudoElement: Self = this.set("pseudoElement", js.undefined)
+    def setPseudoElementUndefined: Self = StObject.set(x, "pseudoElement", js.undefined)
   }
 }

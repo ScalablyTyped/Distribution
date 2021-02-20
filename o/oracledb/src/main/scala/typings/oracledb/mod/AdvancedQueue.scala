@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since 4.0
   */
 @js.native
-trait AdvancedQueue[T] extends js.Object {
+trait AdvancedQueue[T] extends StObject {
   
   /**
     * Dequeues up to the specified number of messages

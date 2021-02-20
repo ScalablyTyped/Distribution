@@ -1,12 +1,13 @@
 package typings.webrtc
 
 import typings.webrtc.W3C.DoubleRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaTrackCapabilities extends js.Object {
+trait MediaTrackCapabilities extends StObject {
   
   //width: number | W3C.LongRange;
   //height: number | W3C.LongRange;
@@ -28,24 +29,12 @@ object MediaTrackCapabilities {
   }
   
   @scala.inline
-  implicit class MediaTrackCapabilitiesOps[Self <: MediaTrackCapabilities] (val x: Self) extends AnyVal {
+  implicit class MediaTrackCapabilitiesMutableBuilder[Self <: MediaTrackCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatency(value: DoubleRange): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLatency(value: DoubleRange): Self = this.set("latency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatency: Self = this.set("latency", js.undefined)
+    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.chayns.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * UI Functions
   * chayns.dialog
   */
-@JSGlobal("chayns.dialog")
-@js.native
-object dialog extends js.Object {
+object dialog {
   
   @js.native
-  sealed trait buttonText extends js.Object
+  sealed trait buttonText extends StObject
+  @JSGlobal("chayns.dialog.buttonText")
   @js.native
-  object buttonText extends js.Object {
+  object buttonText extends StObject {
     
     @js.native
     sealed trait CANCEL extends buttonText
@@ -31,9 +31,10 @@ object dialog extends js.Object {
   }
   
   @js.native
-  sealed trait buttonType extends js.Object
+  sealed trait buttonType extends StObject
+  @JSGlobal("chayns.dialog.buttonType")
   @js.native
-  object buttonType extends js.Object {
+  object buttonType extends StObject {
     
     @js.native
     sealed trait CANCEL extends buttonType
@@ -46,9 +47,10 @@ object dialog extends js.Object {
   }
   
   @js.native
-  sealed trait dateType extends js.Object
+  sealed trait dateType extends StObject
+  @JSGlobal("chayns.dialog.dateType")
   @js.native
-  object dateType extends js.Object {
+  object dateType extends StObject {
     
     @js.native
     sealed trait DATE extends dateType
@@ -61,9 +63,10 @@ object dialog extends js.Object {
   }
   
   @js.native
-  sealed trait inputType extends js.Object
+  sealed trait inputType extends StObject
+  @JSGlobal("chayns.dialog.inputType")
   @js.native
-  object inputType extends js.Object {
+  object inputType extends StObject {
     
     @js.native
     sealed trait DEFAULT extends inputType

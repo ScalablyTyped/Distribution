@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectoryVpcSettingsDescription extends js.Object {
+trait DirectoryVpcSettingsDescription extends StObject {
   
   /**
     * The list of Availability Zones that the directory is in.
@@ -36,48 +37,36 @@ object DirectoryVpcSettingsDescription {
   }
   
   @scala.inline
-  implicit class DirectoryVpcSettingsDescriptionOps[Self <: DirectoryVpcSettingsDescription] (val x: Self) extends AnyVal {
+  implicit class DirectoryVpcSettingsDescriptionMutableBuilder[Self <: DirectoryVpcSettingsDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    def setSecurityGroupId(value: SecurityGroupId): Self = StObject.set(x, "SecurityGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZones(value: AvailabilityZones): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    def setSecurityGroupIdUndefined: Self = StObject.set(x, "SecurityGroupId", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupId(value: SecurityGroupId): Self = this.set("SecurityGroupId", value.asInstanceOf[js.Any])
+    def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroupId: Self = this.set("SecurityGroupId", js.undefined)
+    def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetIdsVarargs(value: SubnetId*): Self = this.set("SubnetIds", js.Array(value :_*))
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetIds(value: SubnetIds): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

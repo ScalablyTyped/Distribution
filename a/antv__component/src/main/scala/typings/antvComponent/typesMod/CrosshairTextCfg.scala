@@ -1,6 +1,7 @@
 package typings.antvComponent.typesMod
 
 import typings.antvGBase.typesMod.ShapeAttrs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object CrosshairTextCfg {
   }
   
   @scala.inline
-  implicit class CrosshairTextCfgOps[Self <: CrosshairTextCfg] (val x: Self) extends AnyVal {
+  implicit class CrosshairTextCfgMutableBuilder[Self <: CrosshairTextCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRotate(value: Boolean): Self = this.set("autoRotate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoRotate: Self = this.set("autoRotate", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

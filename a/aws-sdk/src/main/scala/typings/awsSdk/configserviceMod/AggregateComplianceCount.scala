@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregateComplianceCount extends js.Object {
+trait AggregateComplianceCount extends StObject {
   
   /**
     * The number of compliant and noncompliant AWS Config rules.
@@ -26,30 +27,18 @@ object AggregateComplianceCount {
   }
   
   @scala.inline
-  implicit class AggregateComplianceCountOps[Self <: AggregateComplianceCount] (val x: Self) extends AnyVal {
+  implicit class AggregateComplianceCountMutableBuilder[Self <: AggregateComplianceCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceSummary(value: ComplianceSummary): Self = StObject.set(x, "ComplianceSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceSummaryUndefined: Self = StObject.set(x, "ComplianceSummary", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupName(value: StringWithCharLimit256): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceSummary(value: ComplianceSummary): Self = this.set("ComplianceSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComplianceSummary: Self = this.set("ComplianceSummary", js.undefined)
-    
-    @scala.inline
-    def setGroupName(value: StringWithCharLimit256): Self = this.set("GroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

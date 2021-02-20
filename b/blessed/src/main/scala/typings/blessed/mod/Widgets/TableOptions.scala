@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,54 +42,42 @@ object TableOptions {
   }
   
   @scala.inline
-  implicit class TableOptionsOps[Self <: TableOptions] (val x: Self) extends AnyVal {
+  implicit class TableOptionsMutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: js.Array[String]*): Self = this.set("data", js.Array(value :_*))
+    def setFillCellBorders(value: Boolean): Self = StObject.set(x, "fillCellBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[js.Array[String]]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFillCellBordersUndefined: Self = StObject.set(x, "fillCellBorders", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setNoCellBorders(value: Boolean): Self = StObject.set(x, "noCellBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillCellBorders(value: Boolean): Self = this.set("fillCellBorders", value.asInstanceOf[js.Any])
+    def setNoCellBordersUndefined: Self = StObject.set(x, "noCellBorders", js.undefined)
     
     @scala.inline
-    def deleteFillCellBorders: Self = this.set("fillCellBorders", js.undefined)
+    def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCellBorders(value: Boolean): Self = this.set("noCellBorders", value.asInstanceOf[js.Any])
+    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
     @scala.inline
-    def deleteNoCellBorders: Self = this.set("noCellBorders", js.undefined)
+    def setRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPad(value: Double): Self = this.set("pad", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deletePad: Self = this.set("pad", js.undefined)
-    
-    @scala.inline
-    def setRowsVarargs(value: js.Array[String]*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[js.Array[String]]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,7 +76,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defaults to pc.BUFFER_GPUDYNAMIC (which is recommended for continuous update).
   */
 @js.native
-trait TransformFeedback extends js.Object {
+trait TransformFeedback extends StObject {
   
   /**
     * Creates a transform feedback ready vertex shader from code.

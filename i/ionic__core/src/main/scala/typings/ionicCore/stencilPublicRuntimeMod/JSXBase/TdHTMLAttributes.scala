@@ -1,5 +1,6 @@
 package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object TdHTMLAttributes {
   }
   
   @scala.inline
-  implicit class TdHTMLAttributesOps[Self <: TdHTMLAttributes[_], T] (val x: Self with TdHTMLAttributes[T]) extends AnyVal {
+  implicit class TdHTMLAttributesMutableBuilder[Self <: TdHTMLAttributes[_], T] (val x: Self with TdHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: String): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    
-    @scala.inline
-    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
   }
 }

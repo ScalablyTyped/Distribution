@@ -1,16 +1,16 @@
 package typings.builderUtil
 
 import typings.builderUtilRuntime.mod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("builder-util/out/asyncTaskManager", JSImport.Namespace)
-@js.native
-object asyncTaskManagerMod extends js.Object {
+object asyncTaskManagerMod {
   
+  @JSImport("builder-util/out/asyncTaskManager", "AsyncTaskManager")
   @js.native
-  class AsyncTaskManager protected () extends js.Object {
+  class AsyncTaskManager protected () extends StObject {
     def this(cancellationToken: CancellationToken) = this()
     
     def add(task: js.Function0[js.Promise[_]]): Unit = js.native

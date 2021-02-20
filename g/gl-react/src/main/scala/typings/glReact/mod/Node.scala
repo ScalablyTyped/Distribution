@@ -3,14 +3,21 @@ package typings.glReact.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gl-react", "Node")
 @js.native
-class Node ()
+class Node protected ()
   extends Component[NodeProps, js.Object, js.Any] {
+  def this(props: NodeProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: NodeProps, context: js.Any) = this()
   
   var backbuffer: js.UndefOr[Framebuffer] = js.native
   

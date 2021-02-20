@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the Properties property on any of these objects for detail on accessing the Properties object.
   */
 @js.native
-trait Properties extends js.Object {
+trait Properties extends StObject {
   
   def apply(Index: String): Property = js.native
   /** Returns the specified item in the collection either by position or name. */

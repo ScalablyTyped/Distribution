@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitPushSearchCriteria extends js.Object {
+trait GitPushSearchCriteria extends StObject {
   
   var fromDate: Date = js.native
   
@@ -39,36 +40,24 @@ object GitPushSearchCriteria {
   }
   
   @scala.inline
-  implicit class GitPushSearchCriteriaOps[Self <: GitPushSearchCriteria] (val x: Self) extends AnyVal {
+  implicit class GitPushSearchCriteriaMutableBuilder[Self <: GitPushSearchCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromDate(value: Date): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeRefUpdates(value: Boolean): Self = StObject.set(x, "includeRefUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDate(value: Date): Self = this.set("fromDate", value.asInstanceOf[js.Any])
+    def setPusherId(value: String): Self = StObject.set(x, "pusherId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLinks(value: Boolean): Self = this.set("includeLinks", value.asInstanceOf[js.Any])
+    def setRefName(value: String): Self = StObject.set(x, "refName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeRefUpdates(value: Boolean): Self = this.set("includeRefUpdates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPusherId(value: String): Self = this.set("pusherId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefName(value: String): Self = this.set("refName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToDate(value: Date): Self = this.set("toDate", value.asInstanceOf[js.Any])
+    def setToDate(value: Date): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
   }
 }

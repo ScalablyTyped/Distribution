@@ -3,12 +3,13 @@ package typings.activexExcel
 import typings.activexExcel.Excel.Application
 import typings.activexExcel.Excel.Chart
 import typings.activexExcel.Excel.Worksheet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Excel.Application")
   var ExcelDotApplication: Application = js.native
@@ -31,27 +32,15 @@ object ActiveXObjectNameMap {
   }
   
   @scala.inline
-  implicit class ActiveXObjectNameMapOps[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcelDotApplication(value: Application): Self = StObject.set(x, "Excel.Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcelDotChart(value: Chart): Self = StObject.set(x, "Excel.Chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExcelDotApplication(value: Application): Self = this.set("Excel.Application", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcelDotChart(value: Chart): Self = this.set("Excel.Chart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcelDotSheet(value: Worksheet): Self = this.set("Excel.Sheet", value.asInstanceOf[js.Any])
+    def setExcelDotSheet(value: Worksheet): Self = StObject.set(x, "Excel.Sheet", value.asInstanceOf[js.Any])
   }
 }

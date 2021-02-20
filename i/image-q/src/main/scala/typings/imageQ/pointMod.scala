@@ -1,16 +1,16 @@
 package typings.imageQ
 
 import typings.imageQ.anon.A
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/utils/point", JSImport.Namespace)
-@js.native
-object pointMod extends js.Object {
+object pointMod {
   
+  @JSImport("image-q/dist/utils/point", "Point")
   @js.native
-  class Point () extends js.Object {
+  class Point () extends StObject {
     
     var Lab: A = js.native
     
@@ -37,13 +37,18 @@ object pointMod extends js.Object {
     var uint32: Double = js.native
   }
   /* static members */
-  @js.native
-  object Point extends js.Object {
+  object Point {
     
+    @JSImport("image-q/dist/utils/point", "Point.createByQuadruplet")
+    @js.native
     def createByQuadruplet(quadruplet: js.Array[Double]): Point = js.native
     
+    @JSImport("image-q/dist/utils/point", "Point.createByRGBA")
+    @js.native
     def createByRGBA(red: Double, green: Double, blue: Double, alpha: Double): Point = js.native
     
+    @JSImport("image-q/dist/utils/point", "Point.createByUint32")
+    @js.native
     def createByUint32(uint32: Double): Point = js.native
   }
 }

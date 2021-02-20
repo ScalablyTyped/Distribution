@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportingCsvAnnotationsOptions extends js.Object {
+trait ExportingCsvAnnotationsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The way to mark the separator
@@ -28,30 +29,18 @@ object ExportingCsvAnnotationsOptions {
   }
   
   @scala.inline
-  implicit class ExportingCsvAnnotationsOptionsOps[Self <: ExportingCsvAnnotationsOptions] (val x: Self) extends AnyVal {
+  implicit class ExportingCsvAnnotationsOptionsMutableBuilder[Self <: ExportingCsvAnnotationsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJoin(value: Boolean): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemDelimiter(value: String): Self = this.set("itemDelimiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemDelimiter: Self = this.set("itemDelimiter", js.undefined)
-    
-    @scala.inline
-    def setJoin(value: Boolean): Self = this.set("join", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJoin: Self = this.set("join", js.undefined)
+    def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
   }
 }

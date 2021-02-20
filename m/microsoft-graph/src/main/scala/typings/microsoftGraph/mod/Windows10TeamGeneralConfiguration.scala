@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,165 +90,153 @@ object Windows10TeamGeneralConfiguration {
   }
   
   @scala.inline
-  implicit class Windows10TeamGeneralConfigurationOps[Self <: Windows10TeamGeneralConfiguration] (val x: Self) extends AnyVal {
+  implicit class Windows10TeamGeneralConfigurationMutableBuilder[Self <: Windows10TeamGeneralConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAzureOperationalInsightsBlockTelemetry(value: Boolean): Self = StObject.set(x, "azureOperationalInsightsBlockTelemetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAzureOperationalInsightsBlockTelemetryUndefined: Self = StObject.set(x, "azureOperationalInsightsBlockTelemetry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAzureOperationalInsightsWorkspaceId(value: NullableOption[String]): Self = StObject.set(x, "azureOperationalInsightsWorkspaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzureOperationalInsightsBlockTelemetry(value: Boolean): Self = this.set("azureOperationalInsightsBlockTelemetry", value.asInstanceOf[js.Any])
+    def setAzureOperationalInsightsWorkspaceIdNull: Self = StObject.set(x, "azureOperationalInsightsWorkspaceId", null)
     
     @scala.inline
-    def deleteAzureOperationalInsightsBlockTelemetry: Self = this.set("azureOperationalInsightsBlockTelemetry", js.undefined)
+    def setAzureOperationalInsightsWorkspaceIdUndefined: Self = StObject.set(x, "azureOperationalInsightsWorkspaceId", js.undefined)
     
     @scala.inline
-    def setAzureOperationalInsightsWorkspaceId(value: NullableOption[String]): Self = this.set("azureOperationalInsightsWorkspaceId", value.asInstanceOf[js.Any])
+    def setAzureOperationalInsightsWorkspaceKey(value: NullableOption[String]): Self = StObject.set(x, "azureOperationalInsightsWorkspaceKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAzureOperationalInsightsWorkspaceId: Self = this.set("azureOperationalInsightsWorkspaceId", js.undefined)
+    def setAzureOperationalInsightsWorkspaceKeyNull: Self = StObject.set(x, "azureOperationalInsightsWorkspaceKey", null)
     
     @scala.inline
-    def setAzureOperationalInsightsWorkspaceIdNull: Self = this.set("azureOperationalInsightsWorkspaceId", null)
+    def setAzureOperationalInsightsWorkspaceKeyUndefined: Self = StObject.set(x, "azureOperationalInsightsWorkspaceKey", js.undefined)
     
     @scala.inline
-    def setAzureOperationalInsightsWorkspaceKey(value: NullableOption[String]): Self = this.set("azureOperationalInsightsWorkspaceKey", value.asInstanceOf[js.Any])
+    def setConnectAppBlockAutoLaunch(value: Boolean): Self = StObject.set(x, "connectAppBlockAutoLaunch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAzureOperationalInsightsWorkspaceKey: Self = this.set("azureOperationalInsightsWorkspaceKey", js.undefined)
+    def setConnectAppBlockAutoLaunchUndefined: Self = StObject.set(x, "connectAppBlockAutoLaunch", js.undefined)
     
     @scala.inline
-    def setAzureOperationalInsightsWorkspaceKeyNull: Self = this.set("azureOperationalInsightsWorkspaceKey", null)
+    def setMaintenanceWindowBlocked(value: Boolean): Self = StObject.set(x, "maintenanceWindowBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectAppBlockAutoLaunch(value: Boolean): Self = this.set("connectAppBlockAutoLaunch", value.asInstanceOf[js.Any])
+    def setMaintenanceWindowBlockedUndefined: Self = StObject.set(x, "maintenanceWindowBlocked", js.undefined)
     
     @scala.inline
-    def deleteConnectAppBlockAutoLaunch: Self = this.set("connectAppBlockAutoLaunch", js.undefined)
+    def setMaintenanceWindowDurationInHours(value: NullableOption[Double]): Self = StObject.set(x, "maintenanceWindowDurationInHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenanceWindowBlocked(value: Boolean): Self = this.set("maintenanceWindowBlocked", value.asInstanceOf[js.Any])
+    def setMaintenanceWindowDurationInHoursNull: Self = StObject.set(x, "maintenanceWindowDurationInHours", null)
     
     @scala.inline
-    def deleteMaintenanceWindowBlocked: Self = this.set("maintenanceWindowBlocked", js.undefined)
+    def setMaintenanceWindowDurationInHoursUndefined: Self = StObject.set(x, "maintenanceWindowDurationInHours", js.undefined)
     
     @scala.inline
-    def setMaintenanceWindowDurationInHours(value: NullableOption[Double]): Self = this.set("maintenanceWindowDurationInHours", value.asInstanceOf[js.Any])
+    def setMaintenanceWindowStartTime(value: NullableOption[String]): Self = StObject.set(x, "maintenanceWindowStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaintenanceWindowDurationInHours: Self = this.set("maintenanceWindowDurationInHours", js.undefined)
+    def setMaintenanceWindowStartTimeNull: Self = StObject.set(x, "maintenanceWindowStartTime", null)
     
     @scala.inline
-    def setMaintenanceWindowDurationInHoursNull: Self = this.set("maintenanceWindowDurationInHours", null)
+    def setMaintenanceWindowStartTimeUndefined: Self = StObject.set(x, "maintenanceWindowStartTime", js.undefined)
     
     @scala.inline
-    def setMaintenanceWindowStartTime(value: NullableOption[String]): Self = this.set("maintenanceWindowStartTime", value.asInstanceOf[js.Any])
+    def setMiracastBlocked(value: Boolean): Self = StObject.set(x, "miracastBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaintenanceWindowStartTime: Self = this.set("maintenanceWindowStartTime", js.undefined)
+    def setMiracastBlockedUndefined: Self = StObject.set(x, "miracastBlocked", js.undefined)
     
     @scala.inline
-    def setMaintenanceWindowStartTimeNull: Self = this.set("maintenanceWindowStartTime", null)
+    def setMiracastChannel(value: MiracastChannel): Self = StObject.set(x, "miracastChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiracastBlocked(value: Boolean): Self = this.set("miracastBlocked", value.asInstanceOf[js.Any])
+    def setMiracastChannelUndefined: Self = StObject.set(x, "miracastChannel", js.undefined)
     
     @scala.inline
-    def deleteMiracastBlocked: Self = this.set("miracastBlocked", js.undefined)
+    def setMiracastRequirePin(value: Boolean): Self = StObject.set(x, "miracastRequirePin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiracastChannel(value: MiracastChannel): Self = this.set("miracastChannel", value.asInstanceOf[js.Any])
+    def setMiracastRequirePinUndefined: Self = StObject.set(x, "miracastRequirePin", js.undefined)
     
     @scala.inline
-    def deleteMiracastChannel: Self = this.set("miracastChannel", js.undefined)
+    def setSettingsBlockMyMeetingsAndFiles(value: Boolean): Self = StObject.set(x, "settingsBlockMyMeetingsAndFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiracastRequirePin(value: Boolean): Self = this.set("miracastRequirePin", value.asInstanceOf[js.Any])
+    def setSettingsBlockMyMeetingsAndFilesUndefined: Self = StObject.set(x, "settingsBlockMyMeetingsAndFiles", js.undefined)
     
     @scala.inline
-    def deleteMiracastRequirePin: Self = this.set("miracastRequirePin", js.undefined)
+    def setSettingsBlockSessionResume(value: Boolean): Self = StObject.set(x, "settingsBlockSessionResume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingsBlockMyMeetingsAndFiles(value: Boolean): Self = this.set("settingsBlockMyMeetingsAndFiles", value.asInstanceOf[js.Any])
+    def setSettingsBlockSessionResumeUndefined: Self = StObject.set(x, "settingsBlockSessionResume", js.undefined)
     
     @scala.inline
-    def deleteSettingsBlockMyMeetingsAndFiles: Self = this.set("settingsBlockMyMeetingsAndFiles", js.undefined)
+    def setSettingsBlockSigninSuggestions(value: Boolean): Self = StObject.set(x, "settingsBlockSigninSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingsBlockSessionResume(value: Boolean): Self = this.set("settingsBlockSessionResume", value.asInstanceOf[js.Any])
+    def setSettingsBlockSigninSuggestionsUndefined: Self = StObject.set(x, "settingsBlockSigninSuggestions", js.undefined)
     
     @scala.inline
-    def deleteSettingsBlockSessionResume: Self = this.set("settingsBlockSessionResume", js.undefined)
+    def setSettingsDefaultVolume(value: NullableOption[Double]): Self = StObject.set(x, "settingsDefaultVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingsBlockSigninSuggestions(value: Boolean): Self = this.set("settingsBlockSigninSuggestions", value.asInstanceOf[js.Any])
+    def setSettingsDefaultVolumeNull: Self = StObject.set(x, "settingsDefaultVolume", null)
     
     @scala.inline
-    def deleteSettingsBlockSigninSuggestions: Self = this.set("settingsBlockSigninSuggestions", js.undefined)
+    def setSettingsDefaultVolumeUndefined: Self = StObject.set(x, "settingsDefaultVolume", js.undefined)
     
     @scala.inline
-    def setSettingsDefaultVolume(value: NullableOption[Double]): Self = this.set("settingsDefaultVolume", value.asInstanceOf[js.Any])
+    def setSettingsScreenTimeoutInMinutes(value: NullableOption[Double]): Self = StObject.set(x, "settingsScreenTimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettingsDefaultVolume: Self = this.set("settingsDefaultVolume", js.undefined)
+    def setSettingsScreenTimeoutInMinutesNull: Self = StObject.set(x, "settingsScreenTimeoutInMinutes", null)
     
     @scala.inline
-    def setSettingsDefaultVolumeNull: Self = this.set("settingsDefaultVolume", null)
+    def setSettingsScreenTimeoutInMinutesUndefined: Self = StObject.set(x, "settingsScreenTimeoutInMinutes", js.undefined)
     
     @scala.inline
-    def setSettingsScreenTimeoutInMinutes(value: NullableOption[Double]): Self = this.set("settingsScreenTimeoutInMinutes", value.asInstanceOf[js.Any])
+    def setSettingsSessionTimeoutInMinutes(value: NullableOption[Double]): Self = StObject.set(x, "settingsSessionTimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettingsScreenTimeoutInMinutes: Self = this.set("settingsScreenTimeoutInMinutes", js.undefined)
+    def setSettingsSessionTimeoutInMinutesNull: Self = StObject.set(x, "settingsSessionTimeoutInMinutes", null)
     
     @scala.inline
-    def setSettingsScreenTimeoutInMinutesNull: Self = this.set("settingsScreenTimeoutInMinutes", null)
+    def setSettingsSessionTimeoutInMinutesUndefined: Self = StObject.set(x, "settingsSessionTimeoutInMinutes", js.undefined)
     
     @scala.inline
-    def setSettingsSessionTimeoutInMinutes(value: NullableOption[Double]): Self = this.set("settingsSessionTimeoutInMinutes", value.asInstanceOf[js.Any])
+    def setSettingsSleepTimeoutInMinutes(value: NullableOption[Double]): Self = StObject.set(x, "settingsSleepTimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettingsSessionTimeoutInMinutes: Self = this.set("settingsSessionTimeoutInMinutes", js.undefined)
+    def setSettingsSleepTimeoutInMinutesNull: Self = StObject.set(x, "settingsSleepTimeoutInMinutes", null)
     
     @scala.inline
-    def setSettingsSessionTimeoutInMinutesNull: Self = this.set("settingsSessionTimeoutInMinutes", null)
+    def setSettingsSleepTimeoutInMinutesUndefined: Self = StObject.set(x, "settingsSleepTimeoutInMinutes", js.undefined)
     
     @scala.inline
-    def setSettingsSleepTimeoutInMinutes(value: NullableOption[Double]): Self = this.set("settingsSleepTimeoutInMinutes", value.asInstanceOf[js.Any])
+    def setWelcomeScreenBackgroundImageUrl(value: NullableOption[String]): Self = StObject.set(x, "welcomeScreenBackgroundImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettingsSleepTimeoutInMinutes: Self = this.set("settingsSleepTimeoutInMinutes", js.undefined)
+    def setWelcomeScreenBackgroundImageUrlNull: Self = StObject.set(x, "welcomeScreenBackgroundImageUrl", null)
     
     @scala.inline
-    def setSettingsSleepTimeoutInMinutesNull: Self = this.set("settingsSleepTimeoutInMinutes", null)
+    def setWelcomeScreenBackgroundImageUrlUndefined: Self = StObject.set(x, "welcomeScreenBackgroundImageUrl", js.undefined)
     
     @scala.inline
-    def setWelcomeScreenBackgroundImageUrl(value: NullableOption[String]): Self = this.set("welcomeScreenBackgroundImageUrl", value.asInstanceOf[js.Any])
+    def setWelcomeScreenBlockAutomaticWakeUp(value: Boolean): Self = StObject.set(x, "welcomeScreenBlockAutomaticWakeUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWelcomeScreenBackgroundImageUrl: Self = this.set("welcomeScreenBackgroundImageUrl", js.undefined)
+    def setWelcomeScreenBlockAutomaticWakeUpUndefined: Self = StObject.set(x, "welcomeScreenBlockAutomaticWakeUp", js.undefined)
     
     @scala.inline
-    def setWelcomeScreenBackgroundImageUrlNull: Self = this.set("welcomeScreenBackgroundImageUrl", null)
+    def setWelcomeScreenMeetingInformation(value: WelcomeScreenMeetingInformation): Self = StObject.set(x, "welcomeScreenMeetingInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWelcomeScreenBlockAutomaticWakeUp(value: Boolean): Self = this.set("welcomeScreenBlockAutomaticWakeUp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWelcomeScreenBlockAutomaticWakeUp: Self = this.set("welcomeScreenBlockAutomaticWakeUp", js.undefined)
-    
-    @scala.inline
-    def setWelcomeScreenMeetingInformation(value: WelcomeScreenMeetingInformation): Self = this.set("welcomeScreenMeetingInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWelcomeScreenMeetingInformation: Self = this.set("welcomeScreenMeetingInformation", js.undefined)
+    def setWelcomeScreenMeetingInformationUndefined: Self = StObject.set(x, "welcomeScreenMeetingInformation", js.undefined)
   }
 }

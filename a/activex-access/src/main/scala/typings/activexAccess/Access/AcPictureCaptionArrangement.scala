@@ -6,6 +6,7 @@ import typings.activexAccess.activexAccessNumbers.`2`
 import typings.activexAccess.activexAccessNumbers.`3`
 import typings.activexAccess.activexAccessNumbers.`4`
 import typings.activexAccess.activexAccessNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAccess.activexAccessNumbers.`5`
   - typings.activexAccess.activexAccessNumbers.`2`
 */
-trait AcPictureCaptionArrangement extends js.Object
+trait AcPictureCaptionArrangement extends StObject
 object AcPictureCaptionArrangement {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.zetapushJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbstractAuthData extends js.Object {
+trait AbstractAuthData extends StObject {
   
   var authType: String = js.native
   
@@ -24,33 +25,21 @@ object AbstractAuthData {
   }
   
   @scala.inline
-  implicit class AbstractAuthDataOps[Self <: AbstractAuthData] (val x: Self) extends AnyVal {
+  implicit class AbstractAuthDataMutableBuilder[Self <: AbstractAuthData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthType(value: String): Self = this.set("authType", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: String): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
   }
 }

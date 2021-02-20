@@ -1,12 +1,13 @@
 package typings.slickgrid.Slick
 
 import typings.slickgrid.Slick.Editors.Editor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorLock[T /* <: SlickData */] extends js.Object {
+trait EditorLock[T /* <: SlickData */] extends StObject {
   
   /***
     * Sets the specified edit controller as the active edit controller (acquire edit lock).
@@ -67,33 +68,21 @@ object EditorLock {
   }
   
   @scala.inline
-  implicit class EditorLockOps[Self <: EditorLock[_], T /* <: SlickData */] (val x: Self with EditorLock[T]) extends AnyVal {
+  implicit class EditorLockMutableBuilder[Self <: EditorLock[_], T /* <: SlickData */] (val x: Self with EditorLock[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: Editor[T] => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelCurrentEdit(value: () => Boolean): Self = StObject.set(x, "cancelCurrentEdit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitCurrentEdit(value: () => Boolean): Self = StObject.set(x, "commitCurrentEdit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActivate(value: Editor[T] => Unit): Self = this.set("activate", js.Any.fromFunction1(value))
+    def setDeactivate(value: Editor[T] => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancelCurrentEdit(value: () => Boolean): Self = this.set("cancelCurrentEdit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCommitCurrentEdit(value: () => Boolean): Self = this.set("commitCurrentEdit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDeactivate(value: Editor[T] => Unit): Self = this.set("deactivate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsActive(value: Editor[T] => Boolean): Self = this.set("isActive", js.Any.fromFunction1(value))
+    def setIsActive(value: Editor[T] => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
   }
 }

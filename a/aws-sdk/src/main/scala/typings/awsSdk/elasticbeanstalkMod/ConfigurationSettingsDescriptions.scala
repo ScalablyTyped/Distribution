@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationSettingsDescriptions extends js.Object {
+trait ConfigurationSettingsDescriptions extends StObject {
   
   /**
     *  A list of ConfigurationSettingsDescription. 
@@ -21,27 +22,15 @@ object ConfigurationSettingsDescriptions {
   }
   
   @scala.inline
-  implicit class ConfigurationSettingsDescriptionsOps[Self <: ConfigurationSettingsDescriptions] (val x: Self) extends AnyVal {
+  implicit class ConfigurationSettingsDescriptionsMutableBuilder[Self <: ConfigurationSettingsDescriptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSettings(value: ConfigurationSettingsDescriptionList): Self = StObject.set(x, "ConfigurationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationSettingsUndefined: Self = StObject.set(x, "ConfigurationSettings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationSettingsVarargs(value: ConfigurationSettingsDescription*): Self = this.set("ConfigurationSettings", js.Array(value :_*))
-    
-    @scala.inline
-    def setConfigurationSettings(value: ConfigurationSettingsDescriptionList): Self = this.set("ConfigurationSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurationSettings: Self = this.set("ConfigurationSettings", js.undefined)
+    def setConfigurationSettingsVarargs(value: ConfigurationSettingsDescription*): Self = StObject.set(x, "ConfigurationSettings", js.Array(value :_*))
   }
 }

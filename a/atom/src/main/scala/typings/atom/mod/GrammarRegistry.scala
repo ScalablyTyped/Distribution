@@ -1,12 +1,13 @@
 package typings.atom.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrammarRegistry extends js.Object {
+trait GrammarRegistry extends StObject {
   
   /**
     *  Add a grammar to this registry.
@@ -185,76 +186,64 @@ object GrammarRegistry {
   }
   
   @scala.inline
-  implicit class GrammarRegistryOps[Self <: GrammarRegistry] (val x: Self) extends AnyVal {
+  implicit class GrammarRegistryMutableBuilder[Self <: GrammarRegistry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddGrammar(value: Grammar => Disposable): Self = StObject.set(x, "addGrammar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignLanguageMode(value: (TextBuffer, String) => Boolean): Self = StObject.set(x, "assignLanguageMode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoAssignLanguageMode(value: TextBuffer => Unit): Self = StObject.set(x, "autoAssignLanguageMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddGrammar(value: Grammar => Disposable): Self = this.set("addGrammar", js.Any.fromFunction1(value))
+    def setDecodeTokens(value: (String, js.Array[Double | String]) => js.Array[GrammarToken]): Self = StObject.set(x, "decodeTokens", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAssignLanguageMode(value: (TextBuffer, String) => Boolean): Self = this.set("assignLanguageMode", js.Any.fromFunction2(value))
+    def setGetGrammarScore(value: (Grammar, String, String) => Double): Self = StObject.set(x, "getGrammarScore", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAutoAssignLanguageMode(value: TextBuffer => Unit): Self = this.set("autoAssignLanguageMode", js.Any.fromFunction1(value))
+    def setGetGrammars(value: () => js.Array[Grammar]): Self = StObject.set(x, "getGrammars", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDecodeTokens(value: (String, js.Array[Double | String]) => js.Array[GrammarToken]): Self = this.set("decodeTokens", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetGrammarScore(value: (Grammar, String, String) => Double): Self = this.set("getGrammarScore", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetGrammars(value: () => js.Array[Grammar]): Self = this.set("getGrammars", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGrammarForScopeName(value: String => js.UndefOr[Grammar]): Self = this.set("grammarForScopeName", js.Any.fromFunction1(value))
+    def setGrammarForScopeName(value: String => js.UndefOr[Grammar]): Self = StObject.set(x, "grammarForScopeName", js.Any.fromFunction1(value))
     
     @scala.inline
     def setLoadGrammar(
       value: (String, js.Function2[/* error */ Error | Null, /* grammar */ js.UndefOr[Grammar], Unit]) => Unit
-    ): Self = this.set("loadGrammar", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "loadGrammar", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadGrammarSync(value: String => Grammar): Self = this.set("loadGrammarSync", js.Any.fromFunction1(value))
+    def setLoadGrammarSync(value: String => Grammar): Self = StObject.set(x, "loadGrammarSync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaintainLanguageMode(value: TextBuffer => Disposable): Self = this.set("maintainLanguageMode", js.Any.fromFunction1(value))
+    def setMaintainLanguageMode(value: TextBuffer => Disposable): Self = StObject.set(x, "maintainLanguageMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDidAddGrammar(value: js.Function1[/* grammar */ Grammar, Unit] => Disposable): Self = this.set("onDidAddGrammar", js.Any.fromFunction1(value))
+    def setOnDidAddGrammar(value: js.Function1[/* grammar */ Grammar, Unit] => Disposable): Self = StObject.set(x, "onDidAddGrammar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDidRemoveGrammar(value: js.Function1[/* grammar */ Grammar, Unit] => Disposable): Self = this.set("onDidRemoveGrammar", js.Any.fromFunction1(value))
+    def setOnDidRemoveGrammar(value: js.Function1[/* grammar */ Grammar, Unit] => Disposable): Self = StObject.set(x, "onDidRemoveGrammar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDidUpdateGrammar(value: js.Function1[/* grammar */ Grammar, Unit] => Disposable): Self = this.set("onDidUpdateGrammar", js.Any.fromFunction1(value))
+    def setOnDidUpdateGrammar(value: js.Function1[/* grammar */ Grammar, Unit] => Disposable): Self = StObject.set(x, "onDidUpdateGrammar", js.Any.fromFunction1(value))
     
     @scala.inline
     def setReadGrammar(
       value: (String, js.Function2[/* error */ Error | Null, /* grammar */ js.UndefOr[Grammar], Unit]) => Unit
-    ): Self = this.set("readGrammar", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "readGrammar", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReadGrammarSync(value: String => Grammar): Self = this.set("readGrammarSync", js.Any.fromFunction1(value))
+    def setReadGrammarSync(value: String => Grammar): Self = StObject.set(x, "readGrammarSync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveGrammar(value: Grammar => Unit): Self = this.set("removeGrammar", js.Any.fromFunction1(value))
+    def setRemoveGrammar(value: Grammar => Unit): Self = StObject.set(x, "removeGrammar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveGrammarForScopeName(value: String => js.UndefOr[Grammar]): Self = this.set("removeGrammarForScopeName", js.Any.fromFunction1(value))
+    def setRemoveGrammarForScopeName(value: String => js.UndefOr[Grammar]): Self = StObject.set(x, "removeGrammarForScopeName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectGrammar(value: (String, String) => Grammar): Self = this.set("selectGrammar", js.Any.fromFunction2(value))
+    def setSelectGrammar(value: (String, String) => Grammar): Self = StObject.set(x, "selectGrammar", js.Any.fromFunction2(value))
   }
 }

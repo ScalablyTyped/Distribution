@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediationReportSpec extends js.Object {
+trait MediationReportSpec extends StObject {
   
   /** The date range for which the report is generated. */
   var dateRange: js.UndefOr[DateRange] = js.native
@@ -52,78 +53,66 @@ object MediationReportSpec {
   }
   
   @scala.inline
-  implicit class MediationReportSpecOps[Self <: MediationReportSpec] (val x: Self) extends AnyVal {
+  implicit class MediationReportSpecMutableBuilder[Self <: MediationReportSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionFilters(value: js.Array[MediationReportSpecDimensionFilter]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateRange(value: DateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
+    def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
     @scala.inline
-    def deleteDateRange: Self = this.set("dateRange", js.undefined)
+    def setDimensionFiltersVarargs(value: MediationReportSpecDimensionFilter*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionFiltersVarargs(value: MediationReportSpecDimensionFilter*): Self = this.set("dimensionFilters", js.Array(value :_*))
+    def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionFilters(value: js.Array[MediationReportSpecDimensionFilter]): Self = this.set("dimensionFilters", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def deleteDimensionFilters: Self = this.set("dimensionFilters", js.undefined)
+    def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionsVarargs(value: String*): Self = this.set("dimensions", js.Array(value :_*))
+    def setLocalizationSettings(value: LocalizationSettings): Self = StObject.set(x, "localizationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: js.Array[String]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setLocalizationSettingsUndefined: Self = StObject.set(x, "localizationSettings", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setMaxReportRows(value: Double): Self = StObject.set(x, "maxReportRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizationSettings(value: LocalizationSettings): Self = this.set("localizationSettings", value.asInstanceOf[js.Any])
+    def setMaxReportRowsUndefined: Self = StObject.set(x, "maxReportRows", js.undefined)
     
     @scala.inline
-    def deleteLocalizationSettings: Self = this.set("localizationSettings", js.undefined)
+    def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxReportRows(value: Double): Self = this.set("maxReportRows", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteMaxReportRows: Self = this.set("maxReportRows", js.undefined)
+    def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsVarargs(value: String*): Self = this.set("metrics", js.Array(value :_*))
+    def setSortConditions(value: js.Array[MediationReportSpecSortCondition]): Self = StObject.set(x, "sortConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Array[String]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setSortConditionsUndefined: Self = StObject.set(x, "sortConditions", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    def setSortConditionsVarargs(value: MediationReportSpecSortCondition*): Self = StObject.set(x, "sortConditions", js.Array(value :_*))
     
     @scala.inline
-    def setSortConditionsVarargs(value: MediationReportSpecSortCondition*): Self = this.set("sortConditions", js.Array(value :_*))
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortConditions(value: js.Array[MediationReportSpecSortCondition]): Self = this.set("sortConditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortConditions: Self = this.set("sortConditions", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

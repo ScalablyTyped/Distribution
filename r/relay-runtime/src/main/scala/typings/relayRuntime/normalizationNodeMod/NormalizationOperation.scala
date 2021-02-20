@@ -1,5 +1,6 @@
 package typings.relayRuntime.normalizationNodeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait NormalizationOperation extends NormalizationSelectableNode {
   
   val kind: String = js.native
   
-   // 'Operation';
+  // 'Operation';
   val name: String = js.native
   
   val selections: js.Array[NormalizationSelection] = js.native
@@ -30,36 +31,24 @@ object NormalizationOperation {
   }
   
   @scala.inline
-  implicit class NormalizationOperationOps[Self <: NormalizationOperation] (val x: Self) extends AnyVal {
+  implicit class NormalizationOperationMutableBuilder[Self <: NormalizationOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgumentDefinitions(value: js.Array[NormalizationLocalArgumentDefinition]): Self = StObject.set(x, "argumentDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentDefinitionsVarargs(value: NormalizationLocalArgumentDefinition*): Self = StObject.set(x, "argumentDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentDefinitionsVarargs(value: NormalizationLocalArgumentDefinition*): Self = this.set("argumentDefinitions", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentDefinitions(value: js.Array[NormalizationLocalArgumentDefinition]): Self = this.set("argumentDefinitions", value.asInstanceOf[js.Any])
+    def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionsVarargs(value: NormalizationSelection*): Self = this.set("selections", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelections(value: js.Array[NormalizationSelection]): Self = this.set("selections", value.asInstanceOf[js.Any])
+    def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the kinds of contact addresses. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactAddressKind")
 @js.native
-object ContactAddressKind extends js.Object {
+object ContactAddressKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

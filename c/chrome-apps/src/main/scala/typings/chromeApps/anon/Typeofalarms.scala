@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.alarms.Alarm
 import typings.chromeApps.chrome.alarms.AlarmCreateInfo
 import typings.chromeApps.chrome.alarms.AlarmEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofalarms extends js.Object {
+trait Typeofalarms extends StObject {
   
   /**
     * Clears the alarm with the given name.

@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewFont extends js.Object {
+trait ViewFont extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -58,57 +59,45 @@ object ViewFont {
   }
   
   @scala.inline
-  implicit class ViewFontOps[Self <: ViewFont] (val x: Self) extends AnyVal {
+  implicit class ViewFontMutableBuilder[Self <: ViewFont] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBold(value: Boolean): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setColor(value: OlColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: Boolean): Self = this.set("Bold", value.asInstanceOf[js.Any])
+    def setExtendedColor(value: OlCategoryColor): Self = StObject.set(x, "ExtendedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setItalic(value: Boolean): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: OlColor): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedColor(value: OlCategoryColor): Self = this.set("ExtendedColor", value.asInstanceOf[js.Any])
+    def setOutlookDotViewFont_typekey(value: ViewFont): Self = StObject.set(x, "Outlook.ViewFont_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("Italic", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotViewFont_typekey(value: ViewFont): Self = this.set("Outlook.ViewFont_typekey", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setStrikethrough(value: Boolean): Self = StObject.set(x, "Strikethrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrikethrough(value: Boolean): Self = this.set("Strikethrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderline(value: Boolean): Self = this.set("Underline", value.asInstanceOf[js.Any])
+    def setUnderline(value: Boolean): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
   }
 }

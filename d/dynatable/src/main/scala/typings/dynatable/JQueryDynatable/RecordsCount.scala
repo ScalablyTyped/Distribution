@@ -1,12 +1,13 @@
 package typings.dynatable.JQueryDynatable
 
 import typings.dynatable.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordsCount extends js.Object {
+trait RecordsCount extends StObject {
   
   /** Insert the record count inside the page */
   def attach(): Unit = js.native
@@ -37,30 +38,18 @@ object RecordsCount {
   }
   
   @scala.inline
-  implicit class RecordsCountOps[Self <: RecordsCount] (val x: Self) extends AnyVal {
+  implicit class RecordsCountMutableBuilder[Self <: RecordsCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreate(value: () => JQuery): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttach(value: () => Unit): Self = this.set("attach", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCreate(value: () => JQuery): Self = this.set("create", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = this.set("initOnLoad", js.Any.fromFunction0(value))
+    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
   }
 }

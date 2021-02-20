@@ -3,6 +3,7 @@ package typings.typeorm.mod
 import typings.typeorm.commonObjectLiteralMod.ObjectLiteral
 import typings.typeorm.findOptionsFindOperatorMod.SqlGeneratorType
 import typings.typeorm.findOptionsFindOperatorTypeMod.FindOperatorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

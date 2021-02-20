@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopKAttrs extends js.Object {
+trait TopKAttrs extends StObject {
   
   var k: Double = js.native
   
@@ -20,24 +21,12 @@ object TopKAttrs {
   }
   
   @scala.inline
-  implicit class TopKAttrsOps[Self <: TopKAttrs] (val x: Self) extends AnyVal {
+  implicit class TopKAttrsMutableBuilder[Self <: TopKAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setK(value: Double): Self = this.set("k", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSorted(value: Boolean): Self = this.set("sorted", value.asInstanceOf[js.Any])
+    def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
   }
 }

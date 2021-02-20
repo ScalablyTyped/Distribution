@@ -3,12 +3,13 @@ package typings.nodePgMigrate.anon
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.viewsMaterializedTypesMod.CreateMaterializedViewFn
 import typings.nodePgMigrate.viewsMaterializedTypesMod.CreateMaterializedViewOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseCreateMaterializedViewFn extends js.Object {
+trait ReverseCreateMaterializedViewFn extends StObject {
   
   def reverse(
     viewName: typings.nodePgMigrate.generalTypesMod.Name,

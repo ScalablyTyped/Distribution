@@ -1,12 +1,13 @@
 package typings.firebaseStorage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/src/implementation/async", JSImport.Namespace)
-@js.native
-object asyncMod extends js.Object {
+object asyncMod {
   
+  @JSImport("@firebase/storage/dist/src/implementation/async", "async")
+  @js.native
   def async(f: js.Function): js.Function = js.native
 }

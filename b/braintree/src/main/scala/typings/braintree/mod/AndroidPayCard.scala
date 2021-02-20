@@ -1,6 +1,7 @@
 package typings.braintree.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class AndroidPayCard () extends PaymentMethod {
   
+  var default: Boolean = js.native
+  
   var bin: String = js.native
   
   var createdAt: Date = js.native
   
   var customerId: String = js.native
-  
-  var default: Boolean = js.native
   
   var expirationMonth: String = js.native
   

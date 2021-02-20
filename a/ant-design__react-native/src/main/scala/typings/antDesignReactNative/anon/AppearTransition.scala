@@ -1,11 +1,12 @@
 package typings.antDesignReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppearTransition extends js.Object {
+trait AppearTransition extends StObject {
   
   var appearTransition: Boolean = js.native
   
@@ -24,30 +25,18 @@ object AppearTransition {
   }
   
   @scala.inline
-  implicit class AppearTransitionOps[Self <: AppearTransition] (val x: Self) extends AnyVal {
+  implicit class AppearTransitionMutableBuilder[Self <: AppearTransition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppearTransition(value: Boolean): Self = StObject.set(x, "appearTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearTransition(value: Boolean): Self = this.set("appearTransition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnfilled(value: Boolean): Self = this.set("unfilled", value.asInstanceOf[js.Any])
+    def setUnfilled(value: Boolean): Self = StObject.set(x, "unfilled", value.asInstanceOf[js.Any])
   }
 }

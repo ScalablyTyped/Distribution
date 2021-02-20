@@ -1,11 +1,12 @@
 package typings.wampy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscribeCallbacksHash extends js.Object {
+trait SubscribeCallbacksHash extends StObject {
   
   var onError: js.UndefOr[ErrorCallback] = js.native
   
@@ -22,36 +23,24 @@ object SubscribeCallbacksHash {
   }
   
   @scala.inline
-  implicit class SubscribeCallbacksHashOps[Self <: SubscribeCallbacksHash] (val x: Self) extends AnyVal {
+  implicit class SubscribeCallbacksHashMutableBuilder[Self <: SubscribeCallbacksHash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnError(value: /* args */ ErrorArgs => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnEvent(value: /* args */ DataArgs => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: /* args */ ErrorArgs => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnEvent(value: /* args */ DataArgs => Unit): Self = this.set("onEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnEvent: Self = this.set("onEvent", js.undefined)
-    
-    @scala.inline
-    def setOnSuccess(value: () => Unit): Self = this.set("onSuccess", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

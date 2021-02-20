@@ -1,11 +1,12 @@
 package typings.reactNativeFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RNFetchBlobReadStream extends js.Object {
+trait RNFetchBlobReadStream extends StObject {
   
   var bufferSize: js.UndefOr[Double] = js.native
   
@@ -43,48 +44,36 @@ object RNFetchBlobReadStream {
   }
   
   @scala.inline
-  implicit class RNFetchBlobReadStreamOps[Self <: RNFetchBlobReadStream] (val x: Self) extends AnyVal {
+  implicit class RNFetchBlobReadStreamMutableBuilder[Self <: RNFetchBlobReadStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed(value: Boolean): Self = this.set("closed", value.asInstanceOf[js.Any])
+    def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: Encoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setOnData(value: js.Function1[/* chunk */ String | js.Array[Double], Unit] => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnData(value: js.Function1[/* chunk */ String | js.Array[Double], Unit] => Unit): Self = this.set("onData", js.Any.fromFunction1(value))
+    def setOnEnd(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnd(value: js.Function0[Unit] => Unit): Self = this.set("onEnd", js.Any.fromFunction1(value))
+    def setOnError(value: js.Function1[/* err */ js.Any, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: js.Function1[/* err */ js.Any, Unit] => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOpen(value: () => Unit): Self = this.set("open", js.Any.fromFunction0(value))
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTick(value: Double): Self = this.set("tick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBufferSize(value: Double): Self = this.set("bufferSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBufferSize: Self = this.set("bufferSize", js.undefined)
+    def setTick(value: Double): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
   }
 }

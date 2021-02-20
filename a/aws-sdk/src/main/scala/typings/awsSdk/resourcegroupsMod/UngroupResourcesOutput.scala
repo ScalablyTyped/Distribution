@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UngroupResourcesOutput extends js.Object {
+trait UngroupResourcesOutput extends StObject {
   
   /**
     * The resources that failed to be removed from the group.
@@ -26,36 +27,24 @@ object UngroupResourcesOutput {
   }
   
   @scala.inline
-  implicit class UngroupResourcesOutputOps[Self <: UngroupResourcesOutput] (val x: Self) extends AnyVal {
+  implicit class UngroupResourcesOutputMutableBuilder[Self <: UngroupResourcesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailed(value: FailedResourceList): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedVarargs(value: FailedResource*): Self = StObject.set(x, "Failed", js.Array(value :_*))
     
     @scala.inline
-    def setFailedVarargs(value: FailedResource*): Self = this.set("Failed", js.Array(value :_*))
+    def setSucceeded(value: ResourceArnList): Self = StObject.set(x, "Succeeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: FailedResourceList): Self = this.set("Failed", value.asInstanceOf[js.Any])
+    def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
     
     @scala.inline
-    def deleteFailed: Self = this.set("Failed", js.undefined)
-    
-    @scala.inline
-    def setSucceededVarargs(value: ResourceArn*): Self = this.set("Succeeded", js.Array(value :_*))
-    
-    @scala.inline
-    def setSucceeded(value: ResourceArnList): Self = this.set("Succeeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSucceeded: Self = this.set("Succeeded", js.undefined)
+    def setSucceededVarargs(value: ResourceArn*): Self = StObject.set(x, "Succeeded", js.Array(value :_*))
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesPutBucketLoggingInputMod.PutBucketLogg
 import typings.awsSdkClientS3Browser.typesPutBucketLoggingOutputMod.PutBucketLoggingOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/PutBucketLoggingCommand", JSImport.Namespace)
-@js.native
-object putBucketLoggingCommandMod extends js.Object {
+object putBucketLoggingCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/PutBucketLoggingCommand", "PutBucketLoggingCommand")
   @js.native
   class PutBucketLoggingCommand protected () extends Command[
           InputTypesUnion, 

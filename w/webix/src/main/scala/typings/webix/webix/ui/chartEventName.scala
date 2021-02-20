@@ -1,5 +1,6 @@
 package typings.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onViewResize
   - typings.webix.webixStrings.onViewShow
 */
-trait chartEventName extends js.Object
+trait chartEventName extends StObject
 object chartEventName {
   
   @scala.inline

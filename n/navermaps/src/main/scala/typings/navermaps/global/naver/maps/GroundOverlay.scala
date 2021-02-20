@@ -3,6 +3,7 @@ package typings.navermaps.global.naver.maps
 import typings.navermaps.naver.maps.Bounds
 import typings.navermaps.naver.maps.BoundsLiteral
 import typings.navermaps.naver.maps.GroundOverlayOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

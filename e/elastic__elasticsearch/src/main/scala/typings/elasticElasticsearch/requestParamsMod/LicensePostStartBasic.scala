@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object LicensePostStartBasic {
   }
   
   @scala.inline
-  implicit class LicensePostStartBasicOps[Self <: LicensePostStartBasic] (val x: Self) extends AnyVal {
+  implicit class LicensePostStartBasicMutableBuilder[Self <: LicensePostStartBasic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAcknowledge(value: Boolean): Self = this.set("acknowledge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcknowledge: Self = this.set("acknowledge", js.undefined)
+    def setAcknowledgeUndefined: Self = StObject.set(x, "acknowledge", js.undefined)
   }
 }

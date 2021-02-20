@@ -1,7 +1,8 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _PolicyTypeStatus extends js.Object
+trait _PolicyTypeStatus extends StObject

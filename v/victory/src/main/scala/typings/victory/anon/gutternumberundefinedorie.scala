@@ -3,13 +3,14 @@ package typings.victory.anon
 import typings.victory.mod.OrientationTypes
 import typings.victory.victoryStrings.horizontal
 import typings.victory.victoryStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  gutter :number | undefined,   orientation :'vertical' | 'horizontal' | undefined,   titleOrientation :victory.victory.OrientationTypes | undefined,   style :{  data :react.react.CSSProperties & {  type :victory.victory.ScatterSymbolType | undefined} | undefined,   labels :react.react.CSSProperties | undefined,   title :react.react.CSSProperties | undefined} | undefined} & victory.victory.ThemeBaseProps */
 @js.native
-trait gutternumberundefinedorie extends js.Object {
+trait gutternumberundefinedorie extends StObject {
   
   var colorScale: js.Array[String] = js.native
   
@@ -36,60 +37,48 @@ object gutternumberundefinedorie {
   }
   
   @scala.inline
-  implicit class gutternumberundefinedorieOps[Self <: gutternumberundefinedorie] (val x: Self) extends AnyVal {
+  implicit class gutternumberundefinedorieMutableBuilder[Self <: gutternumberundefinedorie] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorScale(value: js.Array[String]): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorScaleVarargs(value: String*): Self = StObject.set(x, "colorScale", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScaleVarargs(value: String*): Self = this.set("colorScale", js.Array(value :_*))
+    def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
     
     @scala.inline
-    def setColorScale(value: js.Array[String]): Self = this.set("colorScale", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def setGutter(value: Double): Self = this.set("gutter", value.asInstanceOf[js.Any])
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGutter: Self = this.set("gutter", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def setOrientation(value: vertical | horizontal): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setStyle(value: Labels): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setTitleOrientation(value: OrientationTypes): Self = StObject.set(x, "titleOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setTitleOrientationUndefined: Self = StObject.set(x, "titleOrientation", js.undefined)
     
     @scala.inline
-    def setStyle(value: Labels): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTitleOrientation(value: OrientationTypes): Self = this.set("titleOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleOrientation: Self = this.set("titleOrientation", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

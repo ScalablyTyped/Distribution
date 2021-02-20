@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ContainerPort represents a network port in a single container.
   */
 @js.native
-trait ContainerPort extends js.Object {
+trait ContainerPort extends StObject {
   
   /**
     * Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.
@@ -45,45 +46,33 @@ object ContainerPort {
   }
   
   @scala.inline
-  implicit class ContainerPortOps[Self <: ContainerPort] (val x: Self) extends AnyVal {
+  implicit class ContainerPortMutableBuilder[Self <: ContainerPort] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerPort(value: Input[Double]): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostIP(value: Input[String]): Self = StObject.set(x, "hostIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostIPUndefined: Self = StObject.set(x, "hostIP", js.undefined)
     
     @scala.inline
-    def setContainerPort(value: Input[Double]): Self = this.set("containerPort", value.asInstanceOf[js.Any])
+    def setHostPort(value: Input[Double]): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostIP(value: Input[String]): Self = this.set("hostIP", value.asInstanceOf[js.Any])
+    def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
     
     @scala.inline
-    def deleteHostIP: Self = this.set("hostIP", js.undefined)
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostPort(value: Input[Double]): Self = this.set("hostPort", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHostPort: Self = this.set("hostPort", js.undefined)
+    def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setProtocol(value: Input[String]): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }
 }

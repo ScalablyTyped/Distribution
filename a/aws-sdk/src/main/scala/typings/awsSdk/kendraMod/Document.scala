@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
   
   /**
     * Information to use for user context filtering.
@@ -48,63 +49,51 @@ object Document {
   }
   
   @scala.inline
-  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlList(value: PrincipalList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessControlListVarargs(value: Principal*): Self = StObject.set(x, "AccessControlList", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: DocumentId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setAttributes(value: DocumentAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlListVarargs(value: Principal*): Self = this.set("AccessControlList", js.Array(value :_*))
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def setAccessControlList(value: PrincipalList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    def setAttributesVarargs(value: DocumentAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
     @scala.inline
-    def deleteAccessControlList: Self = this.set("AccessControlList", js.undefined)
+    def setBlob(value: _Blob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: DocumentAttribute*): Self = this.set("Attributes", js.Array(value :_*))
+    def setBlobUndefined: Self = StObject.set(x, "Blob", js.undefined)
     
     @scala.inline
-    def setAttributes(value: DocumentAttributeList): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     @scala.inline
-    def setBlob(value: _Blob): Self = this.set("Blob", value.asInstanceOf[js.Any])
+    def setId(value: DocumentId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlob: Self = this.set("Blob", js.undefined)
+    def setS3Path(value: S3Path): Self = StObject.set(x, "S3Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    def setS3PathUndefined: Self = StObject.set(x, "S3Path", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    def setTitle(value: Title): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Path(value: S3Path): Self = this.set("S3Path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Path: Self = this.set("S3Path", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: Title): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("Title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

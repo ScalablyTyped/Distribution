@@ -1,20 +1,22 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.userLookupOptionsMod.UserLookupOptions
 import typings.instagramPrivateApi.userRepositoryInfoResponseMod.UserRepositoryInfoResponseUser
 import typings.instagramPrivateApi.userRepositorySearchResponseMod.UserRepositorySearchResponseRootObject
 import typings.instagramPrivateApi.userRepositorySearchResponseMod.UserRepositorySearchResponseUsersItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/user.repository", JSImport.Namespace)
-@js.native
-object userRepositoryMod extends js.Object {
+object userRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/user.repository", "UserRepository")
   @js.native
-  class UserRepository () extends Repository {
+  class UserRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def accountDetails(): js.Promise[_] = js.native
     def accountDetails(id: String): js.Promise[_] = js.native

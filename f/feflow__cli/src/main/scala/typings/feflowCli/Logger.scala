@@ -1,11 +1,12 @@
 package typings.feflowCli
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Logger extends js.Object {
+trait Logger extends StObject {
   
   /**
     * Print trace level log, The Color is gray
@@ -59,36 +60,24 @@ object Logger {
   }
   
   @scala.inline
-  implicit class LoggerOps[Self <: Logger] (val x: Self) extends AnyVal {
+  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFatal(value: String => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDebug(value: String => Unit): Self = this.set("debug", js.Any.fromFunction1(value))
+    def setInfo(value: String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: String => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setTrace(value: String => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFatal(value: String => Unit): Self = this.set("fatal", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInfo(value: String => Unit): Self = this.set("info", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTrace(value: String => Unit): Self = this.set("trace", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWarn(value: String => Unit): Self = this.set("warn", js.Any.fromFunction1(value))
+    def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Web.Http
 
 import typings.winrtUwp.Windows.Web.Http.Filters.IHttpFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

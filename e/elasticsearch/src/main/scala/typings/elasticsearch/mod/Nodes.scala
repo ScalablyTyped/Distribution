@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticsearch", "Nodes")
 @js.native
-class Nodes () extends js.Object {
+class Nodes () extends StObject {
   
   def hotThreads(params: NodesHotThreadsParams): js.Promise[_] = js.native
   def hotThreads(

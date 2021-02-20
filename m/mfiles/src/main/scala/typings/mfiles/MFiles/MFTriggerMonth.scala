@@ -13,6 +13,7 @@ import typings.mfiles.mfilesNumbers.`4`
 import typings.mfiles.mfilesNumbers.`512`
 import typings.mfiles.mfilesNumbers.`64`
 import typings.mfiles.mfilesNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mfiles.mfilesNumbers.`2048`
   - typings.mfiles.mfilesNumbers.`4095`
 */
-trait MFTriggerMonth extends js.Object
+trait MFTriggerMonth extends StObject
 object MFTriggerMonth {
   
   @scala.inline

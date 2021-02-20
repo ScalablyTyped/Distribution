@@ -9,6 +9,7 @@ import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,16 +39,20 @@ class TemplateGridContents protected () extends Element[IModel] {
     */
   def widgets: IList[Widget] = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGridContents")
-@js.native
-object TemplateGridContents extends js.Object {
+object TemplateGridContents {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGridContents")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new TemplateGridContents instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGridContents.create")
+  @js.native
   def create(model: IModel): TemplateGridContents = js.native
   
   /**
@@ -55,9 +60,22 @@ object TemplateGridContents extends js.Object {
     * The new TemplateGridContents will be automatically stored in the 'contents' property
     * of the parent TemplateGrid element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGridContents.createIn")
+  @js.native
   def createIn(container: TemplateGrid): TemplateGridContents = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGridContents.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGridContents.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

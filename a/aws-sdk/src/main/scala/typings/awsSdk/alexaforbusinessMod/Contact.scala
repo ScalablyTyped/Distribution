@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Contact extends js.Object {
+trait Contact extends StObject {
   
   /**
     * The ARN of the contact.
@@ -51,66 +52,54 @@ object Contact {
   }
   
   @scala.inline
-  implicit class ContactOps[Self <: Contact] (val x: Self) extends AnyVal {
+  implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactArn(value: Arn): Self = StObject.set(x, "ContactArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactArnUndefined: Self = StObject.set(x, "ContactArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: ContactName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactArn(value: Arn): Self = this.set("ContactArn", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def deleteContactArn: Self = this.set("ContactArn", js.undefined)
+    def setFirstName(value: ContactName): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: ContactName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setLastName(value: ContactName): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: ContactName): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    def setLastNameUndefined: Self = StObject.set(x, "LastName", js.undefined)
     
     @scala.inline
-    def deleteFirstName: Self = this.set("FirstName", js.undefined)
+    def setPhoneNumber(value: RawPhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastName(value: ContactName): Self = this.set("LastName", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
     
     @scala.inline
-    def deleteLastName: Self = this.set("LastName", js.undefined)
+    def setPhoneNumbers(value: PhoneNumberList): Self = StObject.set(x, "PhoneNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: RawPhoneNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
+    def setPhoneNumbersUndefined: Self = StObject.set(x, "PhoneNumbers", js.undefined)
     
     @scala.inline
-    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
+    def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "PhoneNumbers", js.Array(value :_*))
     
     @scala.inline
-    def setPhoneNumbersVarargs(value: PhoneNumber*): Self = this.set("PhoneNumbers", js.Array(value :_*))
+    def setSipAddresses(value: SipAddressList): Self = StObject.set(x, "SipAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumbers(value: PhoneNumberList): Self = this.set("PhoneNumbers", value.asInstanceOf[js.Any])
+    def setSipAddressesUndefined: Self = StObject.set(x, "SipAddresses", js.undefined)
     
     @scala.inline
-    def deletePhoneNumbers: Self = this.set("PhoneNumbers", js.undefined)
-    
-    @scala.inline
-    def setSipAddressesVarargs(value: SipAddress*): Self = this.set("SipAddresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setSipAddresses(value: SipAddressList): Self = this.set("SipAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSipAddresses: Self = this.set("SipAddresses", js.undefined)
+    def setSipAddressesVarargs(value: SipAddress*): Self = StObject.set(x, "SipAddresses", js.Array(value :_*))
   }
 }

@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.dismissed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a dismissal event and image location information for the app's splash screen. */
 @js.native
-trait SplashScreen extends js.Object {
+trait SplashScreen extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

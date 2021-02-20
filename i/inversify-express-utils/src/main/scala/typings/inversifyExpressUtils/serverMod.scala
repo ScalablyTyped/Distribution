@@ -6,16 +6,16 @@ import typings.inversify.interfacesMod.interfaces.Container
 import typings.inversifyExpressUtils.anon.Instantiable
 import typings.inversifyExpressUtils.interfacesMod.interfaces.ConfigFunction
 import typings.inversifyExpressUtils.interfacesMod.interfaces.RoutingConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-express-utils/dts/server", JSImport.Namespace)
-@js.native
-object serverMod extends js.Object {
+object serverMod {
   
+  @JSImport("inversify-express-utils/dts/server", "InversifyExpressServer")
   @js.native
-  class InversifyExpressServer protected () extends js.Object {
+  class InversifyExpressServer protected () extends StObject {
     /**
       * Wrapper for the express server.
       *

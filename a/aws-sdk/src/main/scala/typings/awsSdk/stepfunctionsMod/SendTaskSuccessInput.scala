@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendTaskSuccessInput extends js.Object {
+trait SendTaskSuccessInput extends StObject {
   
   /**
     * The JSON output of the task. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
@@ -26,24 +27,12 @@ object SendTaskSuccessInput {
   }
   
   @scala.inline
-  implicit class SendTaskSuccessInputOps[Self <: SendTaskSuccessInput] (val x: Self) extends AnyVal {
+  implicit class SendTaskSuccessInputMutableBuilder[Self <: SendTaskSuccessInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutput(value: SensitiveData): Self = this.set("output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = this.set("taskToken", value.asInstanceOf[js.Any])
+    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

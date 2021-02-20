@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,48 +114,36 @@ object TableValidation {
   }
   
   @scala.inline
-  implicit class TableValidationOps[Self <: TableValidation] (val x: Self) extends AnyVal {
+  implicit class TableValidationMutableBuilder[Self <: TableValidation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorAlertStyle(value: ValidationAlertStyle): Self = StObject.set(x, "ErrorAlertStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorTitle(value: String): Self = StObject.set(x, "ErrorTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorAlertStyle(value: ValidationAlertStyle): Self = this.set("ErrorAlertStyle", value.asInstanceOf[js.Any])
+    def setIgnoreBlankCells(value: Boolean): Self = StObject.set(x, "IgnoreBlankCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setInputMessage(value: String): Self = StObject.set(x, "InputMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorTitle(value: String): Self = this.set("ErrorTitle", value.asInstanceOf[js.Any])
+    def setInputTitle(value: String): Self = StObject.set(x, "InputTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreBlankCells(value: Boolean): Self = this.set("IgnoreBlankCells", value.asInstanceOf[js.Any])
+    def setShowErrorMessage(value: Boolean): Self = StObject.set(x, "ShowErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputMessage(value: String): Self = this.set("InputMessage", value.asInstanceOf[js.Any])
+    def setShowInputMessage(value: Boolean): Self = StObject.set(x, "ShowInputMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputTitle(value: String): Self = this.set("InputTitle", value.asInstanceOf[js.Any])
+    def setShowList(value: Double): Self = StObject.set(x, "ShowList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowErrorMessage(value: Boolean): Self = this.set("ShowErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowInputMessage(value: Boolean): Self = this.set("ShowInputMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowList(value: Double): Self = this.set("ShowList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ValidationType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: ValidationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

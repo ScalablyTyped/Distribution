@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeographicDivision extends js.Object {
+trait GeographicDivision extends StObject {
   
   /**
     * Any other valid OCD IDs that refer to the same division.\n\nBecause OCD IDs are meant to be human-readable and at least somewhat predictable, there are occasionally several
@@ -30,42 +31,30 @@ object GeographicDivision {
   }
   
   @scala.inline
-  implicit class GeographicDivisionOps[Self <: GeographicDivision] (val x: Self) extends AnyVal {
+  implicit class GeographicDivisionMutableBuilder[Self <: GeographicDivision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlsoKnownAs(value: js.Array[String]): Self = StObject.set(x, "alsoKnownAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlsoKnownAsUndefined: Self = StObject.set(x, "alsoKnownAs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlsoKnownAsVarargs(value: String*): Self = StObject.set(x, "alsoKnownAs", js.Array(value :_*))
     
     @scala.inline
-    def setAlsoKnownAsVarargs(value: String*): Self = this.set("alsoKnownAs", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlsoKnownAs(value: js.Array[String]): Self = this.set("alsoKnownAs", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteAlsoKnownAs: Self = this.set("alsoKnownAs", js.undefined)
+    def setOfficeIndices(value: js.Array[Double]): Self = StObject.set(x, "officeIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOfficeIndicesUndefined: Self = StObject.set(x, "officeIndices", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOfficeIndicesVarargs(value: Double*): Self = this.set("officeIndices", js.Array(value :_*))
-    
-    @scala.inline
-    def setOfficeIndices(value: js.Array[Double]): Self = this.set("officeIndices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfficeIndices: Self = this.set("officeIndices", js.undefined)
+    def setOfficeIndicesVarargs(value: Double*): Self = StObject.set(x, "officeIndices", js.Array(value :_*))
   }
 }

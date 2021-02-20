@@ -1,11 +1,12 @@
 package typings.pdfjsDist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFJSUtilStatic extends js.Object {
+trait PDFJSUtilStatic extends StObject {
   
   /**
     * Normalize rectangle so that (x1,y1) < (x2,y2)
@@ -26,21 +27,9 @@ object PDFJSUtilStatic {
   }
   
   @scala.inline
-  implicit class PDFJSUtilStaticOps[Self <: PDFJSUtilStatic] (val x: Self) extends AnyVal {
+  implicit class PDFJSUtilStaticMutableBuilder[Self <: PDFJSUtilStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNormalizeRect(value: js.Array[Double] => js.Array[Double]): Self = this.set("normalizeRect", js.Any.fromFunction1(value))
+    def setNormalizeRect(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "normalizeRect", js.Any.fromFunction1(value))
   }
 }

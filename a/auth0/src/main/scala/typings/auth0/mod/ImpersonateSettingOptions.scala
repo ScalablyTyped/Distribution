@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImpersonateSettingOptions extends js.Object {
+trait ImpersonateSettingOptions extends StObject {
   
   var clientId: js.UndefOr[String] = js.native
   
@@ -24,33 +25,21 @@ object ImpersonateSettingOptions {
   }
   
   @scala.inline
-  implicit class ImpersonateSettingOptionsOps[Self <: ImpersonateSettingOptions] (val x: Self) extends AnyVal {
+  implicit class ImpersonateSettingOptionsMutableBuilder[Self <: ImpersonateSettingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpersonator_id(value: String): Self = StObject.set(x, "impersonator_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpersonator_id(value: String): Self = this.set("impersonator_id", value.asInstanceOf[js.Any])
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

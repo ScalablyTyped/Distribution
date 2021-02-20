@@ -1,11 +1,12 @@
 package typings.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxRefs extends js.Object {
+trait FancyBoxRefs extends StObject {
   
   var bg: JQuery = js.native
   
@@ -41,42 +42,30 @@ object FancyBoxRefs {
   }
   
   @scala.inline
-  implicit class FancyBoxRefsOps[Self <: FancyBoxRefs] (val x: Self) extends AnyVal {
+  implicit class FancyBoxRefsMutableBuilder[Self <: FancyBoxRefs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBg(value: JQuery): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaption(value: JQuery): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBg(value: JQuery): Self = this.set("bg", value.asInstanceOf[js.Any])
+    def setInfobar(value: JQuery): Self = StObject.set(x, "infobar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: JQuery): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setInner(value: JQuery): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: JQuery): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setNavigation(value: JQuery): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfobar(value: JQuery): Self = this.set("infobar", value.asInstanceOf[js.Any])
+    def setStage(value: JQuery): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInner(value: JQuery): Self = this.set("inner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNavigation(value: JQuery): Self = this.set("navigation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStage(value: JQuery): Self = this.set("stage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolbar(value: JQuery): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    def setToolbar(value: JQuery): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
   }
 }

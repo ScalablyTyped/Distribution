@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateLoadBalancerAttributeRequest extends js.Object {
+trait UpdateLoadBalancerAttributeRequest extends StObject {
   
   /**
     * The name of the attribute you want to update. Valid values are below.
@@ -35,27 +36,15 @@ object UpdateLoadBalancerAttributeRequest {
   }
   
   @scala.inline
-  implicit class UpdateLoadBalancerAttributeRequestOps[Self <: UpdateLoadBalancerAttributeRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateLoadBalancerAttributeRequestMutableBuilder[Self <: UpdateLoadBalancerAttributeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: LoadBalancerAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeValue(value: StringMax256): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributeName(value: LoadBalancerAttributeName): Self = this.set("attributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributeValue(value: StringMax256): Self = this.set("attributeValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadBalancerName(value: ResourceName): Self = this.set("loadBalancerName", value.asInstanceOf[js.Any])
+    def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
   }
 }

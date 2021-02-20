@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationUris extends js.Object {
+trait DestinationUris extends StObject {
   
   var `destination-attributes`: js.UndefOr[js.Array[js.Object]] = js.native
   
@@ -28,57 +29,45 @@ object DestinationUris {
   }
   
   @scala.inline
-  implicit class DestinationUrisOps[Self <: DestinationUris] (val x: Self) extends AnyVal {
+  implicit class DestinationUrisMutableBuilder[Self <: DestinationUris] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setDestination-attributes`(value: js.Array[js.Object]): Self = StObject.set(x, "destination-attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setDestination-attributesUndefined`: Self = StObject.set(x, "destination-attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setDestination-attributesVarargs`(value: js.Object*): Self = StObject.set(x, "destination-attributes", js.Array(value :_*))
     
     @scala.inline
-    def `setDestination-attributesVarargs`(value: js.Object*): Self = this.set("destination-attributes", js.Array(value :_*))
+    def `setDestination-uri`(value: String): Self = StObject.set(x, "destination-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDestination-attributes`(value: js.Array[js.Object]): Self = this.set("destination-attributes", value.asInstanceOf[js.Any])
+    def `setDestination-uriUndefined`: Self = StObject.set(x, "destination-uri", js.undefined)
     
     @scala.inline
-    def `deleteDestination-attributes`: Self = this.set("destination-attributes", js.undefined)
+    def `setFeed-orientation`(value: FeedOrientation): Self = StObject.set(x, "feed-orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDestination-uri`(value: String): Self = this.set("destination-uri", value.asInstanceOf[js.Any])
+    def `setFeed-orientationUndefined`: Self = StObject.set(x, "feed-orientation", js.undefined)
     
     @scala.inline
-    def `deleteDestination-uri`: Self = this.set("destination-uri", js.undefined)
+    def `setPost-dial-string`(value: String): Self = StObject.set(x, "post-dial-string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFeed-orientation`(value: FeedOrientation): Self = this.set("feed-orientation", value.asInstanceOf[js.Any])
+    def `setPost-dial-stringUndefined`: Self = StObject.set(x, "post-dial-string", js.undefined)
     
     @scala.inline
-    def `deleteFeed-orientation`: Self = this.set("feed-orientation", js.undefined)
+    def `setPre-dial-string`(value: String): Self = StObject.set(x, "pre-dial-string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPost-dial-string`(value: String): Self = this.set("post-dial-string", value.asInstanceOf[js.Any])
+    def `setPre-dial-stringUndefined`: Self = StObject.set(x, "pre-dial-string", js.undefined)
     
     @scala.inline
-    def `deletePost-dial-string`: Self = this.set("post-dial-string", js.undefined)
+    def `setT33-subaddress`(value: Double): Self = StObject.set(x, "t33-subaddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPre-dial-string`(value: String): Self = this.set("pre-dial-string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePre-dial-string`: Self = this.set("pre-dial-string", js.undefined)
-    
-    @scala.inline
-    def `setT33-subaddress`(value: Double): Self = this.set("t33-subaddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteT33-subaddress`: Self = this.set("t33-subaddress", js.undefined)
+    def `setT33-subaddressUndefined`: Self = StObject.set(x, "t33-subaddress", js.undefined)
   }
 }

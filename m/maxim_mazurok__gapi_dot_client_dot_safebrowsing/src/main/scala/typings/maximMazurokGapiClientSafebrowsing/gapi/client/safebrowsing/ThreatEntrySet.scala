@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreatEntrySet extends js.Object {
+trait ThreatEntrySet extends StObject {
   
   /** The compression type for the entries in this set. */
   var compressionType: js.UndefOr[String] = js.native
@@ -37,48 +38,36 @@ object ThreatEntrySet {
   }
   
   @scala.inline
-  implicit class ThreatEntrySetOps[Self <: ThreatEntrySet] (val x: Self) extends AnyVal {
+  implicit class ThreatEntrySetMutableBuilder[Self <: ThreatEntrySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompressionType(value: String): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRawHashes(value: RawHashes): Self = StObject.set(x, "rawHashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionType(value: String): Self = this.set("compressionType", value.asInstanceOf[js.Any])
+    def setRawHashesUndefined: Self = StObject.set(x, "rawHashes", js.undefined)
     
     @scala.inline
-    def deleteCompressionType: Self = this.set("compressionType", js.undefined)
+    def setRawIndices(value: RawIndices): Self = StObject.set(x, "rawIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawHashes(value: RawHashes): Self = this.set("rawHashes", value.asInstanceOf[js.Any])
+    def setRawIndicesUndefined: Self = StObject.set(x, "rawIndices", js.undefined)
     
     @scala.inline
-    def deleteRawHashes: Self = this.set("rawHashes", js.undefined)
+    def setRiceHashes(value: RiceDeltaEncoding): Self = StObject.set(x, "riceHashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawIndices(value: RawIndices): Self = this.set("rawIndices", value.asInstanceOf[js.Any])
+    def setRiceHashesUndefined: Self = StObject.set(x, "riceHashes", js.undefined)
     
     @scala.inline
-    def deleteRawIndices: Self = this.set("rawIndices", js.undefined)
+    def setRiceIndices(value: RiceDeltaEncoding): Self = StObject.set(x, "riceIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiceHashes(value: RiceDeltaEncoding): Self = this.set("riceHashes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiceHashes: Self = this.set("riceHashes", js.undefined)
-    
-    @scala.inline
-    def setRiceIndices(value: RiceDeltaEncoding): Self = this.set("riceIndices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiceIndices: Self = this.set("riceIndices", js.undefined)
+    def setRiceIndicesUndefined: Self = StObject.set(x, "riceIndices", js.undefined)
   }
 }

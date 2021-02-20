@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,54 +59,42 @@ object WebCreationInformation {
   }
   
   @scala.inline
-  implicit class WebCreationInformationOps[Self <: WebCreationInformation] (val x: Self) extends AnyVal {
+  implicit class WebCreationInformationMutableBuilder[Self <: WebCreationInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_language(value: () => Double): Self = StObject.set(x, "get_language", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_description(value: () => String): Self = this.set("get_description", js.Any.fromFunction0(value))
+    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_language(value: () => Double): Self = this.set("get_language", js.Any.fromFunction0(value))
+    def setGet_useSamePermissionsAsParentSite(value: () => Boolean): Self = StObject.set(x, "get_useSamePermissionsAsParentSite", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_title(value: () => String): Self = this.set("get_title", js.Any.fromFunction0(value))
+    def setGet_webTemplate(value: () => String): Self = StObject.set(x, "get_webTemplate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_url(value: () => String): Self = this.set("get_url", js.Any.fromFunction0(value))
+    def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_useSamePermissionsAsParentSite(value: () => Boolean): Self = this.set("get_useSamePermissionsAsParentSite", js.Any.fromFunction0(value))
+    def setSet_language(value: Double => Unit): Self = StObject.set(x, "set_language", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_webTemplate(value: () => String): Self = this.set("get_webTemplate", js.Any.fromFunction0(value))
+    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_description(value: String => Unit): Self = this.set("set_description", js.Any.fromFunction1(value))
+    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_language(value: Double => Unit): Self = this.set("set_language", js.Any.fromFunction1(value))
+    def setSet_useSamePermissionsAsParentSite(value: Boolean => Unit): Self = StObject.set(x, "set_useSamePermissionsAsParentSite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_title(value: String => Unit): Self = this.set("set_title", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = this.set("set_url", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_useSamePermissionsAsParentSite(value: Boolean => Unit): Self = this.set("set_useSamePermissionsAsParentSite", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_webTemplate(value: String => Unit): Self = this.set("set_webTemplate", js.Any.fromFunction1(value))
+    def setSet_webTemplate(value: String => Unit): Self = StObject.set(x, "set_webTemplate", js.Any.fromFunction1(value))
   }
 }

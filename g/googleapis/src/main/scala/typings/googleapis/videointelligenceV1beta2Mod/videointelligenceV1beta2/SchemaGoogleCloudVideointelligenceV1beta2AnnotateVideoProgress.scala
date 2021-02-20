@@ -1,5 +1,6 @@
 package typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `google::longrunning::Operations` service.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress extends StObject {
   
   /**
     * Progress metadata for all videos specified in `AnnotateVideoRequest`.
@@ -26,27 +27,15 @@ object SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgressOps[Self <: SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgressMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationProgress(value: js.Array[SchemaGoogleCloudVideointelligenceV1beta2VideoAnnotationProgress]): Self = StObject.set(x, "annotationProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationProgressUndefined: Self = StObject.set(x, "annotationProgress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnnotationProgressVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2VideoAnnotationProgress*): Self = this.set("annotationProgress", js.Array(value :_*))
-    
-    @scala.inline
-    def setAnnotationProgress(value: js.Array[SchemaGoogleCloudVideointelligenceV1beta2VideoAnnotationProgress]): Self = this.set("annotationProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnnotationProgress: Self = this.set("annotationProgress", js.undefined)
+    def setAnnotationProgressVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2VideoAnnotationProgress*): Self = StObject.set(x, "annotationProgress", js.Array(value :_*))
   }
 }

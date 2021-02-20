@@ -1,12 +1,13 @@
 package typings.elasticJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "FacetMixin")
 @js.native
-class FacetMixin () extends js.Object {
+class FacetMixin () extends StObject {
   
   /*
     The type of ejs object.  For internal use only.

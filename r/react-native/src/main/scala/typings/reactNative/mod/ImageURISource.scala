@@ -5,12 +5,13 @@ import typings.reactNative.reactNativeStrings.`force-cache`
 import typings.reactNative.reactNativeStrings.`only-if-cached`
 import typings.reactNative.reactNativeStrings.default
 import typings.reactNative.reactNativeStrings.reload
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageURISource extends js.Object {
+trait ImageURISource extends StObject {
   
   /**
     * `body` is the HTTP body to send with the request. This must be a valid
@@ -90,72 +91,60 @@ object ImageURISource {
   }
   
   @scala.inline
-  implicit class ImageURISourceOps[Self <: ImageURISource] (val x: Self) extends AnyVal {
+  implicit class ImageURISourceMutableBuilder[Self <: ImageURISource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBundle(value: String): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBundleUndefined: Self = StObject.set(x, "bundle", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setCache(value: default | reload | `force-cache` | `only-if-cached`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundle(value: String): Self = this.set("bundle", value.asInstanceOf[js.Any])
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def deleteBundle: Self = this.set("bundle", js.undefined)
+    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: default | reload | `force-cache` | `only-if-cached`): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

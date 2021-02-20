@@ -3,13 +3,14 @@ package typings.popmotionPose
 import typings.popmotionPose.typesMod.DomPopmotionConfig
 import typings.popmotionPose.typesMod.DomPopmotionPoser
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion-pose", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("popmotion-pose", JSImport.Default)
+  @js.native
   def default(element: Element, config: DomPopmotionConfig): DomPopmotionPoser = js.native
 }

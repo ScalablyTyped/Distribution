@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Per resource and severity counts of fixable and total vulnerabilities.
   */
 @js.native
-trait SchemaFixableTotalByDigest extends js.Object {
+trait SchemaFixableTotalByDigest extends StObject {
   
   /**
     * The number of fixable vulnerabilities associated with this resource.
@@ -40,42 +41,30 @@ object SchemaFixableTotalByDigest {
   }
   
   @scala.inline
-  implicit class SchemaFixableTotalByDigestOps[Self <: SchemaFixableTotalByDigest] (val x: Self) extends AnyVal {
+  implicit class SchemaFixableTotalByDigestMutableBuilder[Self <: SchemaFixableTotalByDigest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixableCount(value: String): Self = StObject.set(x, "fixableCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixableCountUndefined: Self = StObject.set(x, "fixableCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResource(value: SchemaResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixableCount(value: String): Self = this.set("fixableCount", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deleteFixableCount: Self = this.set("fixableCount", js.undefined)
+    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: SchemaResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: String): Self = this.set("totalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

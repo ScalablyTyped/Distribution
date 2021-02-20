@@ -10,13 +10,14 @@ import typings.winrtUwp.Windows.UI.Color
 import typings.winrtUwp.Windows.UI.Popups.Placement
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.visualelementsrequested
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates, enumerates, and provides information about a secondary tile. */
 @js.native
-trait SecondaryTile extends js.Object {
+trait SecondaryTile extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

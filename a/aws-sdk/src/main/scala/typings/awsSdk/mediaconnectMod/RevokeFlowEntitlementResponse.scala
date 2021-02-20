@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevokeFlowEntitlementResponse extends js.Object {
+trait RevokeFlowEntitlementResponse extends StObject {
   
   /**
     * The ARN of the entitlement that was revoked.
@@ -26,30 +27,18 @@ object RevokeFlowEntitlementResponse {
   }
   
   @scala.inline
-  implicit class RevokeFlowEntitlementResponseOps[Self <: RevokeFlowEntitlementResponse] (val x: Self) extends AnyVal {
+  implicit class RevokeFlowEntitlementResponseMutableBuilder[Self <: RevokeFlowEntitlementResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitlementArn(value: string): Self = this.set("EntitlementArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntitlementArn: Self = this.set("EntitlementArn", js.undefined)
-    
-    @scala.inline
-    def setFlowArn(value: string): Self = this.set("FlowArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlowArn: Self = this.set("FlowArn", js.undefined)
+    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
   }
 }

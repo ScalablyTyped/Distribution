@@ -8,12 +8,13 @@ import typings.rockset.rocksetStrings.PAUSING
 import typings.rockset.rocksetStrings.READY
 import typings.rockset.rocksetStrings.RESUMING
 import typings.rockset.rocksetStrings.UNKNOWN
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Collection extends js.Object {
+trait Collection extends StObject {
   
   // ISO-8601 date
   var created_at: js.UndefOr[String] = js.native
@@ -54,84 +55,72 @@ object Collection {
   }
   
   @scala.inline
-  implicit class CollectionOps[Self <: Collection] (val x: Self) extends AnyVal {
+  implicit class CollectionMutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated_by(value: String): Self = StObject.set(x, "created_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setCreated_byUndefined: Self = StObject.set(x, "created_by", js.undefined)
     
     @scala.inline
-    def deleteCreated_at: Self = this.set("created_at", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_by(value: String): Self = this.set("created_by", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreated_by: Self = this.set("created_by", js.undefined)
+    def setField_mappings(value: js.Array[FieldMappingV2]): Self = StObject.set(x, "field_mappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setField_mappingsUndefined: Self = StObject.set(x, "field_mappings", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setField_mappingsVarargs(value: FieldMappingV2*): Self = StObject.set(x, "field_mappings", js.Array(value :_*))
     
     @scala.inline
-    def setField_mappingsVarargs(value: FieldMappingV2*): Self = this.set("field_mappings", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField_mappings(value: js.Array[FieldMappingV2]): Self = this.set("field_mappings", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteField_mappings: Self = this.set("field_mappings", js.undefined)
+    def setRetention_secs(value: Double): Self = StObject.set(x, "retention_secs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRetention_secsUndefined: Self = StObject.set(x, "retention_secs", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetention_secs(value: Double): Self = this.set("retention_secs", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deleteRetention_secs: Self = this.set("retention_secs", js.undefined)
+    def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
     @scala.inline
-    def setSourcesVarargs(value: Source*): Self = this.set("sources", js.Array(value :_*))
+    def setStats(value: CollectionStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSources(value: js.Array[Source]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
     @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setStatus(value: CREATED | READY | PAUSED | DELETED | PAUSING | RESUMING | CATCHINGUP | UNKNOWN): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStats(value: CollectionStats): Self = this.set("stats", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStats: Self = this.set("stats", js.undefined)
+    def setWorkspace(value: String): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: CREATED | READY | PAUSED | DELETED | PAUSING | RESUMING | CATCHINGUP | UNKNOWN): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setWorkspace(value: String): Self = this.set("workspace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspace: Self = this.set("workspace", js.undefined)
+    def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
   }
 }

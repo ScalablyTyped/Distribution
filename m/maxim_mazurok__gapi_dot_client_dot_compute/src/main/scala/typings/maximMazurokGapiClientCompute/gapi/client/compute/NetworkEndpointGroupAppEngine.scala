@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkEndpointGroupAppEngine extends js.Object {
+trait NetworkEndpointGroupAppEngine extends StObject {
   
   /**
     * Optional serving service.
@@ -43,36 +44,24 @@ object NetworkEndpointGroupAppEngine {
   }
   
   @scala.inline
-  implicit class NetworkEndpointGroupAppEngineOps[Self <: NetworkEndpointGroupAppEngine] (val x: Self) extends AnyVal {
+  implicit class NetworkEndpointGroupAppEngineMutableBuilder[Self <: NetworkEndpointGroupAppEngine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrlMask(value: String): Self = StObject.set(x, "urlMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setUrlMaskUndefined: Self = StObject.set(x, "urlMask", js.undefined)
     
     @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlMask(value: String): Self = this.set("urlMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlMask: Self = this.set("urlMask", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.atlassianConnectJs.AP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A JavaScript module which provides functions for the current product context.
   */
-@JSGlobal("AP.context")
-@js.native
-object context extends js.Object
+object context

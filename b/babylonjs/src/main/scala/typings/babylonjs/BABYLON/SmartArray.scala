@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,45 +79,33 @@ object SmartArray {
   }
   
   @scala.inline
-  implicit class SmartArrayOps[Self <: SmartArray[_], T] (val x: Self with SmartArray[T]) extends AnyVal {
+  implicit class SmartArrayMutableBuilder[Self <: SmartArray[_], T] (val x: Self with SmartArray[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcat(value: js.Any => Unit): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_id(value: Double): Self = this.set("_id", value.asInstanceOf[js.Any])
+    def setForEach(value: js.Function1[/* content */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConcat(value: js.Any => Unit): Self = this.set("concat", js.Any.fromFunction1(value))
+    def setIndexOf(value: T => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContains(value: T => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForEach(value: js.Function1[/* content */ T, Unit] => Unit): Self = this.set("forEach", js.Any.fromFunction1(value))
+    def setSort(value: js.Function2[/* a */ T, /* b */ T, Double] => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndexOf(value: T => Double): Self = this.set("indexOf", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPush(value: T => Unit): Self = this.set("push", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSort(value: js.Function2[/* a */ T, /* b */ T, Double] => Unit): Self = this.set("sort", js.Any.fromFunction1(value))
+    def set_id(value: Double): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

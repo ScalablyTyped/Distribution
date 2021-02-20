@@ -1,11 +1,12 @@
 package typings.kiiCloudSdk.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KiiSocialAccountInfo extends js.Object {
+trait KiiSocialAccountInfo extends StObject {
   
   var createdAt: Double = js.native
   
@@ -22,27 +23,15 @@ object KiiSocialAccountInfo {
   }
   
   @scala.inline
-  implicit class KiiSocialAccountInfoOps[Self <: KiiSocialAccountInfo] (val x: Self) extends AnyVal {
+  implicit class KiiSocialAccountInfoMutableBuilder[Self <: KiiSocialAccountInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvider(value: KiiSocialNetworkName): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreatedAt(value: Double): Self = this.set("createdAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvider(value: KiiSocialNetworkName): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSocialAccountId(value: String): Self = this.set("socialAccountId", value.asInstanceOf[js.Any])
+    def setSocialAccountId(value: String): Self = StObject.set(x, "socialAccountId", value.asInstanceOf[js.Any])
   }
 }

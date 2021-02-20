@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEngineDefaultParametersMessage extends js.Object {
+trait DescribeEngineDefaultParametersMessage extends StObject {
   
   /**
     * The name of the cache parameter group family. Valid values are: memcached1.4 | memcached1.5 | memcached1.6 | redis2.6 | redis2.8 | redis3.2 | redis4.0 | redis5.0 | redis6.x | 
@@ -31,33 +32,21 @@ object DescribeEngineDefaultParametersMessage {
   }
   
   @scala.inline
-  implicit class DescribeEngineDefaultParametersMessageOps[Self <: DescribeEngineDefaultParametersMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeEngineDefaultParametersMessageMutableBuilder[Self <: DescribeEngineDefaultParametersMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheParameterGroupFamily(value: String): Self = StObject.set(x, "CacheParameterGroupFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def setCacheParameterGroupFamily(value: String): Self = this.set("CacheParameterGroupFamily", value.asInstanceOf[js.Any])
+    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
   }
 }

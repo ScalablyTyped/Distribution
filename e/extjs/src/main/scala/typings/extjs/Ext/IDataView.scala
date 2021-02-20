@@ -3,6 +3,7 @@ package typings.extjs.Ext
 import typings.extjs.Ext.data.IModel
 import typings.extjs.Ext.view.IAbstractView
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,42 +36,30 @@ object IDataView {
   }
   
   @scala.inline
-  implicit class IDataViewOps[Self <: IDataView] (val x: Self) extends AnyVal {
+  implicit class IDataViewMutableBuilder[Self <: IDataView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearHighlight(value: () => Unit): Self = StObject.set(x, "clearHighlight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearHighlightUndefined: Self = StObject.set(x, "clearHighlight", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFocusNode(value: /* rec */ js.UndefOr[IModel] => Unit): Self = StObject.set(x, "focusNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearHighlight(value: () => Unit): Self = this.set("clearHighlight", js.Any.fromFunction0(value))
+    def setFocusNodeUndefined: Self = StObject.set(x, "focusNode", js.undefined)
     
     @scala.inline
-    def deleteClearHighlight: Self = this.set("clearHighlight", js.undefined)
+    def setHighlightItem(value: /* item */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFocusNode(value: /* rec */ js.UndefOr[IModel] => Unit): Self = this.set("focusNode", js.Any.fromFunction1(value))
+    def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     
     @scala.inline
-    def deleteFocusNode: Self = this.set("focusNode", js.undefined)
+    def setMouseOverOutBuffer(value: Double): Self = StObject.set(x, "mouseOverOutBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightItem(value: /* item */ js.UndefOr[HTMLElement] => Unit): Self = this.set("highlightItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteHighlightItem: Self = this.set("highlightItem", js.undefined)
-    
-    @scala.inline
-    def setMouseOverOutBuffer(value: Double): Self = this.set("mouseOverOutBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMouseOverOutBuffer: Self = this.set("mouseOverOutBuffer", js.undefined)
+    def setMouseOverOutBufferUndefined: Self = StObject.set(x, "mouseOverOutBuffer", js.undefined)
   }
 }

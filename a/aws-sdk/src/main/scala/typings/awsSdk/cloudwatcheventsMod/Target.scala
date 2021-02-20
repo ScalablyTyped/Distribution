@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Target extends js.Object {
+trait Target extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the target.
@@ -91,102 +92,90 @@ object Target {
   }
   
   @scala.inline
-  implicit class TargetOps[Self <: Target] (val x: Self) extends AnyVal {
+  implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: TargetArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchParameters(value: BatchParameters): Self = StObject.set(x, "BatchParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchParametersUndefined: Self = StObject.set(x, "BatchParameters", js.undefined)
     
     @scala.inline
-    def setArn(value: TargetArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setDeadLetterConfig(value: DeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: TargetId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setDeadLetterConfigUndefined: Self = StObject.set(x, "DeadLetterConfig", js.undefined)
     
     @scala.inline
-    def setBatchParameters(value: BatchParameters): Self = this.set("BatchParameters", value.asInstanceOf[js.Any])
+    def setEcsParameters(value: EcsParameters): Self = StObject.set(x, "EcsParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchParameters: Self = this.set("BatchParameters", js.undefined)
+    def setEcsParametersUndefined: Self = StObject.set(x, "EcsParameters", js.undefined)
     
     @scala.inline
-    def setDeadLetterConfig(value: DeadLetterConfig): Self = this.set("DeadLetterConfig", value.asInstanceOf[js.Any])
+    def setHttpParameters(value: HttpParameters): Self = StObject.set(x, "HttpParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeadLetterConfig: Self = this.set("DeadLetterConfig", js.undefined)
+    def setHttpParametersUndefined: Self = StObject.set(x, "HttpParameters", js.undefined)
     
     @scala.inline
-    def setEcsParameters(value: EcsParameters): Self = this.set("EcsParameters", value.asInstanceOf[js.Any])
+    def setId(value: TargetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEcsParameters: Self = this.set("EcsParameters", js.undefined)
+    def setInput(value: TargetInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpParameters(value: HttpParameters): Self = this.set("HttpParameters", value.asInstanceOf[js.Any])
+    def setInputPath(value: TargetInputPath): Self = StObject.set(x, "InputPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpParameters: Self = this.set("HttpParameters", js.undefined)
+    def setInputPathUndefined: Self = StObject.set(x, "InputPath", js.undefined)
     
     @scala.inline
-    def setInput(value: TargetInput): Self = this.set("Input", value.asInstanceOf[js.Any])
+    def setInputTransformer(value: InputTransformer): Self = StObject.set(x, "InputTransformer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput: Self = this.set("Input", js.undefined)
+    def setInputTransformerUndefined: Self = StObject.set(x, "InputTransformer", js.undefined)
     
     @scala.inline
-    def setInputPath(value: TargetInputPath): Self = this.set("InputPath", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
     @scala.inline
-    def deleteInputPath: Self = this.set("InputPath", js.undefined)
+    def setKinesisParameters(value: KinesisParameters): Self = StObject.set(x, "KinesisParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputTransformer(value: InputTransformer): Self = this.set("InputTransformer", value.asInstanceOf[js.Any])
+    def setKinesisParametersUndefined: Self = StObject.set(x, "KinesisParameters", js.undefined)
     
     @scala.inline
-    def deleteInputTransformer: Self = this.set("InputTransformer", js.undefined)
+    def setRedshiftDataParameters(value: RedshiftDataParameters): Self = StObject.set(x, "RedshiftDataParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisParameters(value: KinesisParameters): Self = this.set("KinesisParameters", value.asInstanceOf[js.Any])
+    def setRedshiftDataParametersUndefined: Self = StObject.set(x, "RedshiftDataParameters", js.undefined)
     
     @scala.inline
-    def deleteKinesisParameters: Self = this.set("KinesisParameters", js.undefined)
+    def setRetryPolicy(value: RetryPolicy): Self = StObject.set(x, "RetryPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshiftDataParameters(value: RedshiftDataParameters): Self = this.set("RedshiftDataParameters", value.asInstanceOf[js.Any])
+    def setRetryPolicyUndefined: Self = StObject.set(x, "RetryPolicy", js.undefined)
     
     @scala.inline
-    def deleteRedshiftDataParameters: Self = this.set("RedshiftDataParameters", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryPolicy(value: RetryPolicy): Self = this.set("RetryPolicy", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def deleteRetryPolicy: Self = this.set("RetryPolicy", js.undefined)
+    def setRunCommandParameters(value: RunCommandParameters): Self = StObject.set(x, "RunCommandParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setRunCommandParametersUndefined: Self = StObject.set(x, "RunCommandParameters", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    def setSqsParameters(value: SqsParameters): Self = StObject.set(x, "SqsParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunCommandParameters(value: RunCommandParameters): Self = this.set("RunCommandParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunCommandParameters: Self = this.set("RunCommandParameters", js.undefined)
-    
-    @scala.inline
-    def setSqsParameters(value: SqsParameters): Self = this.set("SqsParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqsParameters: Self = this.set("SqsParameters", js.undefined)
+    def setSqsParametersUndefined: Self = StObject.set(x, "SqsParameters", js.undefined)
   }
 }

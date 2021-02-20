@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Volume extends js.Object {
+trait Volume extends StObject {
   
   /** Unique name for the volume. */
   var name: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object Volume {
   }
   
   @scala.inline
-  implicit class VolumeOps[Self <: Volume] (val x: Self) extends AnyVal {
+  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeGb(value: Double): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeGb(value: Double): Self = this.set("sizeGb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeGb: Self = this.set("sizeGb", js.undefined)
-    
-    @scala.inline
-    def setVolumeType(value: String): Self = this.set("volumeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeType: Self = this.set("volumeType", js.undefined)
+    def setVolumeTypeUndefined: Self = StObject.set(x, "volumeType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnprocessedNamedQueryId extends js.Object {
+trait UnprocessedNamedQueryId extends StObject {
   
   /**
     * The error code returned when the processing request for the named query failed, if applicable.
@@ -31,36 +32,24 @@ object UnprocessedNamedQueryId {
   }
   
   @scala.inline
-  implicit class UnprocessedNamedQueryIdOps[Self <: UnprocessedNamedQueryId] (val x: Self) extends AnyVal {
+  implicit class UnprocessedNamedQueryIdMutableBuilder[Self <: UnprocessedNamedQueryId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: ErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setNamedQueryId(value: NamedQueryId): Self = StObject.set(x, "NamedQueryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
-    
-    @scala.inline
-    def setNamedQueryId(value: NamedQueryId): Self = this.set("NamedQueryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamedQueryId: Self = this.set("NamedQueryId", js.undefined)
+    def setNamedQueryIdUndefined: Self = StObject.set(x, "NamedQueryId", js.undefined)
   }
 }

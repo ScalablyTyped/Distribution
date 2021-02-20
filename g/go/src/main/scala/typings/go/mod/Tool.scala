@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Don't construct this directly -- this is an abstract class.
   */
-abstract class Tool () extends js.Object {
+abstract class Tool () extends StObject {
   
   /**
     * This predicate is used by the ToolManager to decide if this tool can be started mode-lessly by mouse and touch events.

@@ -2,6 +2,7 @@ package typings.vegaTypings.markMod
 
 import typings.vegaTypings.exprMod.ExprRef
 import typings.vegaTypings.signalMod.SignalRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,18 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.anon.Order
   - typings.vegaTypings.anon.FieldOrder
 */
-trait Compare extends js.Object
+trait Compare extends StObject
 object Compare {
   
   @scala.inline
-  def Order(field: String | ExprRef | SignalRef): Compare = {
+  def FieldOrder(field: js.Array[String | ExprRef | SignalRef]): typings.vegaTypings.anon.FieldOrder = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Compare]
+    __obj.asInstanceOf[typings.vegaTypings.anon.FieldOrder]
   }
   
   @scala.inline
-  def FieldOrder(field: js.Array[String | ExprRef | SignalRef]): Compare = {
+  def Order(field: String | ExprRef | SignalRef): typings.vegaTypings.anon.Order = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Compare]
+    __obj.asInstanceOf[typings.vegaTypings.anon.Order]
   }
 }

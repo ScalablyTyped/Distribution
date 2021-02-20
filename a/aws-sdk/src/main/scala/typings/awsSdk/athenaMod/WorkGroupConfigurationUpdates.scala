@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkGroupConfigurationUpdates extends js.Object {
+trait WorkGroupConfigurationUpdates extends StObject {
   
   /**
     * The upper limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan.
@@ -46,54 +47,42 @@ object WorkGroupConfigurationUpdates {
   }
   
   @scala.inline
-  implicit class WorkGroupConfigurationUpdatesOps[Self <: WorkGroupConfigurationUpdates] (val x: Self) extends AnyVal {
+  implicit class WorkGroupConfigurationUpdatesMutableBuilder[Self <: WorkGroupConfigurationUpdates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesScannedCutoffPerQuery(value: BytesScannedCutoffValue): Self = StObject.set(x, "BytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesScannedCutoffPerQueryUndefined: Self = StObject.set(x, "BytesScannedCutoffPerQuery", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnforceWorkGroupConfiguration(value: BoxedBoolean): Self = StObject.set(x, "EnforceWorkGroupConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesScannedCutoffPerQuery(value: BytesScannedCutoffValue): Self = this.set("BytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
+    def setEnforceWorkGroupConfigurationUndefined: Self = StObject.set(x, "EnforceWorkGroupConfiguration", js.undefined)
     
     @scala.inline
-    def deleteBytesScannedCutoffPerQuery: Self = this.set("BytesScannedCutoffPerQuery", js.undefined)
+    def setPublishCloudWatchMetricsEnabled(value: BoxedBoolean): Self = StObject.set(x, "PublishCloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforceWorkGroupConfiguration(value: BoxedBoolean): Self = this.set("EnforceWorkGroupConfiguration", value.asInstanceOf[js.Any])
+    def setPublishCloudWatchMetricsEnabledUndefined: Self = StObject.set(x, "PublishCloudWatchMetricsEnabled", js.undefined)
     
     @scala.inline
-    def deleteEnforceWorkGroupConfiguration: Self = this.set("EnforceWorkGroupConfiguration", js.undefined)
+    def setRemoveBytesScannedCutoffPerQuery(value: BoxedBoolean): Self = StObject.set(x, "RemoveBytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishCloudWatchMetricsEnabled(value: BoxedBoolean): Self = this.set("PublishCloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
+    def setRemoveBytesScannedCutoffPerQueryUndefined: Self = StObject.set(x, "RemoveBytesScannedCutoffPerQuery", js.undefined)
     
     @scala.inline
-    def deletePublishCloudWatchMetricsEnabled: Self = this.set("PublishCloudWatchMetricsEnabled", js.undefined)
+    def setRequesterPaysEnabled(value: BoxedBoolean): Self = StObject.set(x, "RequesterPaysEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveBytesScannedCutoffPerQuery(value: BoxedBoolean): Self = this.set("RemoveBytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
+    def setRequesterPaysEnabledUndefined: Self = StObject.set(x, "RequesterPaysEnabled", js.undefined)
     
     @scala.inline
-    def deleteRemoveBytesScannedCutoffPerQuery: Self = this.set("RemoveBytesScannedCutoffPerQuery", js.undefined)
+    def setResultConfigurationUpdates(value: ResultConfigurationUpdates): Self = StObject.set(x, "ResultConfigurationUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequesterPaysEnabled(value: BoxedBoolean): Self = this.set("RequesterPaysEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequesterPaysEnabled: Self = this.set("RequesterPaysEnabled", js.undefined)
-    
-    @scala.inline
-    def setResultConfigurationUpdates(value: ResultConfigurationUpdates): Self = this.set("ResultConfigurationUpdates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultConfigurationUpdates: Self = this.set("ResultConfigurationUpdates", js.undefined)
+    def setResultConfigurationUpdatesUndefined: Self = StObject.set(x, "ResultConfigurationUpdates", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.androiduix.android.widget
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeterogeneousExpandableList extends js.Object {
+trait HeterogeneousExpandableList extends StObject {
   
   def getChildType(groupPosition: Double, childPosition: Double): Double = js.native
   
@@ -29,30 +30,18 @@ object HeterogeneousExpandableList {
   }
   
   @scala.inline
-  implicit class HeterogeneousExpandableListOps[Self <: HeterogeneousExpandableList] (val x: Self) extends AnyVal {
+  implicit class HeterogeneousExpandableListMutableBuilder[Self <: HeterogeneousExpandableList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetChildType(value: (Double, Double) => Double): Self = StObject.set(x, "getChildType", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetChildTypeCount(value: () => Double): Self = StObject.set(x, "getChildTypeCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetGroupType(value: Double => Double): Self = StObject.set(x, "getGroupType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetChildType(value: (Double, Double) => Double): Self = this.set("getChildType", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetChildTypeCount(value: () => Double): Self = this.set("getChildTypeCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetGroupType(value: Double => Double): Self = this.set("getGroupType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetGroupTypeCount(value: () => Double): Self = this.set("getGroupTypeCount", js.Any.fromFunction0(value))
+    def setGetGroupTypeCount(value: () => Double): Self = StObject.set(x, "getGroupTypeCount", js.Any.fromFunction0(value))
   }
 }

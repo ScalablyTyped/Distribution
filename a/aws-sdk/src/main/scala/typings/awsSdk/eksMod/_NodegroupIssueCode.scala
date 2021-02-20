@@ -1,7 +1,8 @@
 package typings.awsSdk.eksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _NodegroupIssueCode extends js.Object
+trait _NodegroupIssueCode extends StObject

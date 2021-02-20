@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageVersion extends js.Object {
+trait ImageVersion extends StObject {
   
   /**
     * When the version was created.
@@ -58,42 +59,30 @@ object ImageVersion {
   }
   
   @scala.inline
-  implicit class ImageVersionOps[Self <: ImageVersion] (val x: Self) extends AnyVal {
+  implicit class ImageVersionMutableBuilder[Self <: ImageVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setImageArn(value: ImageArn): Self = StObject.set(x, "ImageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageArn(value: ImageArn): Self = this.set("ImageArn", value.asInstanceOf[js.Any])
+    def setImageVersionArn(value: ImageVersionArn): Self = StObject.set(x, "ImageVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVersionArn(value: ImageVersionArn): Self = this.set("ImageVersionArn", value.asInstanceOf[js.Any])
+    def setImageVersionStatus(value: ImageVersionStatus): Self = StObject.set(x, "ImageVersionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVersionStatus(value: ImageVersionStatus): Self = this.set("ImageVersionStatus", value.asInstanceOf[js.Any])
+    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: ImageVersionNumber): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setVersion(value: ImageVersionNumber): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

@@ -7,16 +7,15 @@ import typings.mysql.mod.Pool
 import typings.mysql.mod.PoolCluster
 import typings.mysql.mod.PoolClusterConfig
 import typings.mysql.mod.PoolConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Typeofmysql extends js.Object {
+  trait Typeofmysql extends StObject {
     
     def createConnection(connectionUri: String): Connection = js.native
     def createConnection(connectionUri: ConnectionConfig): Connection = js.native

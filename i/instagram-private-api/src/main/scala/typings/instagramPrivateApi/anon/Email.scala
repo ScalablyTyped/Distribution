@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Email extends js.Object {
+trait Email extends StObject {
   
   var email: js.Any = js.native
   
@@ -24,30 +25,18 @@ object Email {
   }
   
   @scala.inline
-  implicit class EmailOps[Self <: Email] (val x: Self) extends AnyVal {
+  implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: js.Any): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst_name(value: js.Any): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassword(value: js.Any): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: js.Any): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFirst_name(value: js.Any): Self = this.set("first_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPassword(value: js.Any): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: js.Any): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: js.Any): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

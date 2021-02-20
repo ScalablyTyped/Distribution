@@ -3,6 +3,7 @@ package typings.extjs.Ext
 import typings.extjs.Ext.button.ISplit
 import typings.extjs.Ext.menu.ICheckItem
 import typings.extjs.Ext.menu.IMenu
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,78 +58,66 @@ object ICycleButton {
   }
   
   @scala.inline
-  implicit class ICycleButtonOps[Self <: ICycleButton] (val x: Self) extends AnyVal {
+  implicit class ICycleButtonMutableBuilder[Self <: ICycleButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeHandler(value: js.Any): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeHandlerUndefined: Self = StObject.set(x, "changeHandler", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceGlyph(value: js.Any): Self = StObject.set(x, "forceGlyph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeHandler(value: js.Any): Self = this.set("changeHandler", value.asInstanceOf[js.Any])
+    def setForceGlyphUndefined: Self = StObject.set(x, "forceGlyph", js.undefined)
     
     @scala.inline
-    def deleteChangeHandler: Self = this.set("changeHandler", js.undefined)
+    def setForceIcon(value: java.lang.String): Self = StObject.set(x, "forceIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceGlyph(value: js.Any): Self = this.set("forceGlyph", value.asInstanceOf[js.Any])
+    def setForceIconUndefined: Self = StObject.set(x, "forceIcon", js.undefined)
     
     @scala.inline
-    def deleteForceGlyph: Self = this.set("forceGlyph", js.undefined)
+    def setGetActiveItem(value: () => ICheckItem): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceIcon(value: java.lang.String): Self = this.set("forceIcon", value.asInstanceOf[js.Any])
+    def setGetActiveItemUndefined: Self = StObject.set(x, "getActiveItem", js.undefined)
     
     @scala.inline
-    def deleteForceIcon: Self = this.set("forceIcon", js.undefined)
+    def setItems(value: Array): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetActiveItem(value: () => ICheckItem): Self = this.set("getActiveItem", js.Any.fromFunction0(value))
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteGetActiveItem: Self = this.set("getActiveItem", js.undefined)
+    def setMenu(value: IMenu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: Array): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setPrependText(value: java.lang.String): Self = StObject.set(x, "prependText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenu(value: IMenu): Self = this.set("menu", value.asInstanceOf[js.Any])
+    def setPrependTextUndefined: Self = StObject.set(x, "prependText", js.undefined)
     
     @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
+    def setSetActiveItem(value: (/* item */ js.UndefOr[ICheckItem], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPrependText(value: java.lang.String): Self = this.set("prependText", value.asInstanceOf[js.Any])
+    def setSetActiveItemUndefined: Self = StObject.set(x, "setActiveItem", js.undefined)
     
     @scala.inline
-    def deletePrependText: Self = this.set("prependText", js.undefined)
+    def setShowText(value: Boolean): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetActiveItem(value: (/* item */ js.UndefOr[ICheckItem], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = this.set("setActiveItem", js.Any.fromFunction2(value))
+    def setShowTextUndefined: Self = StObject.set(x, "showText", js.undefined)
     
     @scala.inline
-    def deleteSetActiveItem: Self = this.set("setActiveItem", js.undefined)
+    def setToggleSelected(value: () => Unit): Self = StObject.set(x, "toggleSelected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowText(value: Boolean): Self = this.set("showText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowText: Self = this.set("showText", js.undefined)
-    
-    @scala.inline
-    def setToggleSelected(value: () => Unit): Self = this.set("toggleSelected", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToggleSelected: Self = this.set("toggleSelected", js.undefined)
+    def setToggleSelectedUndefined: Self = StObject.set(x, "toggleSelected", js.undefined)
   }
 }

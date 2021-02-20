@@ -2,32 +2,33 @@ package typings.rmcTabs
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
 import typings.rmcTabs.anon.ActiveTab
 import typings.rmcTabs.modelsMod.Models.TabData
 import typings.rmcTabs.propsTypeMod.PropsType
 import typings.rmcTabs.rmcTabsStrings.horizontal
 import typings.rmcTabs.rmcTabsStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rmc-tabs/lib/Tabs.base", JSImport.Namespace)
-@js.native
-object tabsBaseMod extends js.Object {
+object tabsBaseMod {
   
+  @JSImport("rmc-tabs/lib/Tabs.base", "StateType")
   @js.native
-  class StateType () extends js.Object {
+  class StateType () extends StObject {
     
     var currentTab: Double = js.native
   }
   
+  @JSImport("rmc-tabs/lib/Tabs.base", "Tabs")
   @js.native
   abstract class Tabs[P /* <: PropsType */, S /* <: StateType */] protected ()
-    extends Component[P, S, js.Any] {
+    extends PureComponent[P, S, js.Any] {
     def this(props: P) = this()
     
     @JSName("componentDidMount")
@@ -114,9 +115,16 @@ object tabsBaseMod extends js.Object {
     def tabClickGoToTab(index: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Tabs extends js.Object {
+  object Tabs {
     
-    var defaultProps: PropsType = js.native
+    @JSImport("rmc-tabs/lib/Tabs.base", "Tabs")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rmc-tabs/lib/Tabs.base", "Tabs.defaultProps")
+    @js.native
+    def defaultProps: PropsType = js.native
+    @scala.inline
+    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

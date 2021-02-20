@@ -4,6 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XDrawPageSupplier
 import typings.activexLibreoffice.com_.sun.star.table.XTableChartsSupplier
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XProtectable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,36 +120,24 @@ object Spreadsheet {
   }
   
   @scala.inline
-  implicit class SpreadsheetOps[Self <: Spreadsheet] (val x: Self) extends AnyVal {
+  implicit class SpreadsheetMutableBuilder[Self <: Spreadsheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticPrintArea(value: Boolean): Self = StObject.set(x, "AutomaticPrintArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionalFormats(value: XConditionalFormats): Self = StObject.set(x, "ConditionalFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticPrintArea(value: Boolean): Self = this.set("AutomaticPrintArea", value.asInstanceOf[js.Any])
+    def setPageStyle(value: String): Self = StObject.set(x, "PageStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionalFormats(value: XConditionalFormats): Self = this.set("ConditionalFormats", value.asInstanceOf[js.Any])
+    def setTabColor(value: Color): Self = StObject.set(x, "TabColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("IsVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageStyle(value: String): Self = this.set("PageStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabColor(value: Color): Self = this.set("TabColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableLayout(value: Double): Self = this.set("TableLayout", value.asInstanceOf[js.Any])
+    def setTableLayout(value: Double): Self = StObject.set(x, "TableLayout", value.asInstanceOf[js.Any])
   }
 }

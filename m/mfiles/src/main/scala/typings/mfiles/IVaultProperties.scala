@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFFileDataStorage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultProperties extends js.Object {
+trait IVaultProperties extends StObject {
   
   def Clone(): IVaultProperties = js.native
   
@@ -54,57 +55,45 @@ object IVaultProperties {
   }
   
   @scala.inline
-  implicit class IVaultPropertiesOps[Self <: IVaultProperties] (val x: Self) extends AnyVal {
+  implicit class IVaultPropertiesMutableBuilder[Self <: IVaultProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IVaultProperties): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionOfFileDataAtRest(value: Boolean): Self = StObject.set(x, "EncryptionOfFileDataAtRest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IVaultProperties): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setExtendedMetadataDrivenPermissions(value: Boolean): Self = StObject.set(x, "ExtendedMetadataDrivenPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setFileDataConnectionString(value: String): Self = StObject.set(x, "FileDataConnectionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionOfFileDataAtRest(value: Boolean): Self = this.set("EncryptionOfFileDataAtRest", value.asInstanceOf[js.Any])
+    def setFileDataStorageType(value: MFFileDataStorage): Self = StObject.set(x, "FileDataStorageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedMetadataDrivenPermissions(value: Boolean): Self = this.set("ExtendedMetadataDrivenPermissions", value.asInstanceOf[js.Any])
+    def setFullTextSearchLanguage(value: String): Self = StObject.set(x, "FullTextSearchLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDataConnectionString(value: String): Self = this.set("FileDataConnectionString", value.asInstanceOf[js.Any])
+    def setIcon(value: js.Array[Double]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDataStorageType(value: MFFileDataStorage): Self = this.set("FileDataStorageType", value.asInstanceOf[js.Any])
+    def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value :_*))
     
     @scala.inline
-    def setFullTextSearchLanguage(value: String): Self = this.set("FullTextSearchLanguage", value.asInstanceOf[js.Any])
+    def setMainDataFolder(value: String): Self = StObject.set(x, "MainDataFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconVarargs(value: Double*): Self = this.set("Icon", js.Array(value :_*))
+    def setSQLDatabase(value: ISQLDatabase): Self = StObject.set(x, "SQLDatabase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: js.Array[Double]): Self = this.set("Icon", value.asInstanceOf[js.Any])
+    def setSeparateLocationForFileData(value: IAdditionalFolders): Self = StObject.set(x, "SeparateLocationForFileData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainDataFolder(value: String): Self = this.set("MainDataFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSQLDatabase(value: ISQLDatabase): Self = this.set("SQLDatabase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparateLocationForFileData(value: IAdditionalFolders): Self = this.set("SeparateLocationForFileData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVaultGUID(value: String): Self = this.set("VaultGUID", value.asInstanceOf[js.Any])
+    def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
   }
 }

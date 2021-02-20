@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationPropertyOptions extends js.Object {
+trait NavigationPropertyOptions extends StObject {
   
   var associationName: js.UndefOr[String] = js.native
   
@@ -32,72 +33,60 @@ object NavigationPropertyOptions {
   }
   
   @scala.inline
-  implicit class NavigationPropertyOptionsOps[Self <: NavigationPropertyOptions] (val x: Self) extends AnyVal {
+  implicit class NavigationPropertyOptionsMutableBuilder[Self <: NavigationPropertyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationName(value: String): Self = StObject.set(x, "associationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationNameUndefined: Self = StObject.set(x, "associationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityTypeName(value: String): Self = StObject.set(x, "entityTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypeName(value: String): Self = this.set("entityTypeName", value.asInstanceOf[js.Any])
+    def setForeignKeyNames(value: js.Array[String]): Self = StObject.set(x, "foreignKeyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationName(value: String): Self = this.set("associationName", value.asInstanceOf[js.Any])
+    def setForeignKeyNamesOnServer(value: js.Array[String]): Self = StObject.set(x, "foreignKeyNamesOnServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssociationName: Self = this.set("associationName", js.undefined)
+    def setForeignKeyNamesOnServerUndefined: Self = StObject.set(x, "foreignKeyNamesOnServer", js.undefined)
     
     @scala.inline
-    def setForeignKeyNamesVarargs(value: String*): Self = this.set("foreignKeyNames", js.Array(value :_*))
+    def setForeignKeyNamesOnServerVarargs(value: String*): Self = StObject.set(x, "foreignKeyNamesOnServer", js.Array(value :_*))
     
     @scala.inline
-    def setForeignKeyNames(value: js.Array[String]): Self = this.set("foreignKeyNames", value.asInstanceOf[js.Any])
+    def setForeignKeyNamesUndefined: Self = StObject.set(x, "foreignKeyNames", js.undefined)
     
     @scala.inline
-    def deleteForeignKeyNames: Self = this.set("foreignKeyNames", js.undefined)
+    def setForeignKeyNamesVarargs(value: String*): Self = StObject.set(x, "foreignKeyNames", js.Array(value :_*))
     
     @scala.inline
-    def setForeignKeyNamesOnServerVarargs(value: String*): Self = this.set("foreignKeyNamesOnServer", js.Array(value :_*))
+    def setIsScalar(value: Boolean): Self = StObject.set(x, "isScalar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeignKeyNamesOnServer(value: js.Array[String]): Self = this.set("foreignKeyNamesOnServer", value.asInstanceOf[js.Any])
+    def setIsScalarUndefined: Self = StObject.set(x, "isScalar", js.undefined)
     
     @scala.inline
-    def deleteForeignKeyNamesOnServer: Self = this.set("foreignKeyNamesOnServer", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsScalar(value: Boolean): Self = this.set("isScalar", value.asInstanceOf[js.Any])
+    def setNameOnServer(value: String): Self = StObject.set(x, "nameOnServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsScalar: Self = this.set("isScalar", js.undefined)
+    def setNameOnServerUndefined: Self = StObject.set(x, "nameOnServer", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameOnServer(value: String): Self = this.set("nameOnServer", value.asInstanceOf[js.Any])
+    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
     @scala.inline
-    def deleteNameOnServer: Self = this.set("nameOnServer", js.undefined)
-    
-    @scala.inline
-    def setValidatorsVarargs(value: Validator*): Self = this.set("validators", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidators(value: js.Array[Validator]): Self = this.set("validators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidators: Self = this.set("validators", js.undefined)
+    def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

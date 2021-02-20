@@ -4,12 +4,13 @@ import typings.chrome.chrome.sessions.Device
 import typings.chrome.chrome.sessions.Filter
 import typings.chrome.chrome.sessions.Session
 import typings.chrome.chrome.sessions.SessionChangedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofsessions extends js.Object {
+trait Typeofsessions extends StObject {
   
   var MAX_SESSION_RESULTS: Double = js.native
   

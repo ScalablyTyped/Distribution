@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteRemediationConfigurationRequest extends js.Object {
+trait DeleteRemediationConfigurationRequest extends StObject {
   
   /**
     * The name of the AWS Config rule for which you want to delete remediation configuration.
@@ -26,27 +27,15 @@ object DeleteRemediationConfigurationRequest {
   }
   
   @scala.inline
-  implicit class DeleteRemediationConfigurationRequestOps[Self <: DeleteRemediationConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteRemediationConfigurationRequestMutableBuilder[Self <: DeleteRemediationConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceType(value: String): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

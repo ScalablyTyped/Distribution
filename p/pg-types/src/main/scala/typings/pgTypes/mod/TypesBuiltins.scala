@@ -1,12 +1,13 @@
 package typings.pgTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in pg-types.pg-types.builtinsTypes ]: pg-types.pg-types.TypeId} */
 @js.native
-trait TypesBuiltins extends js.Object {
+trait TypesBuiltins extends StObject {
   
   var ABSTIME: TypeId = js.native
   
@@ -198,198 +199,186 @@ object TypesBuiltins {
   }
   
   @scala.inline
-  implicit class TypesBuiltinsOps[Self <: TypesBuiltins] (val x: Self) extends AnyVal {
+  implicit class TypesBuiltinsMutableBuilder[Self <: TypesBuiltins] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setABSTIME(value: TypeId): Self = StObject.set(x, "ABSTIME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setACLITEM(value: TypeId): Self = StObject.set(x, "ACLITEM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBIT(value: TypeId): Self = StObject.set(x, "BIT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setABSTIME(value: TypeId): Self = this.set("ABSTIME", value.asInstanceOf[js.Any])
+    def setBOOL(value: TypeId): Self = StObject.set(x, "BOOL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setACLITEM(value: TypeId): Self = this.set("ACLITEM", value.asInstanceOf[js.Any])
+    def setBPCHAR(value: TypeId): Self = StObject.set(x, "BPCHAR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBIT(value: TypeId): Self = this.set("BIT", value.asInstanceOf[js.Any])
+    def setBYTEA(value: TypeId): Self = StObject.set(x, "BYTEA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBOOL(value: TypeId): Self = this.set("BOOL", value.asInstanceOf[js.Any])
+    def setCHAR(value: TypeId): Self = StObject.set(x, "CHAR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBPCHAR(value: TypeId): Self = this.set("BPCHAR", value.asInstanceOf[js.Any])
+    def setCID(value: TypeId): Self = StObject.set(x, "CID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBYTEA(value: TypeId): Self = this.set("BYTEA", value.asInstanceOf[js.Any])
+    def setCIDR(value: TypeId): Self = StObject.set(x, "CIDR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCHAR(value: TypeId): Self = this.set("CHAR", value.asInstanceOf[js.Any])
+    def setCIRCLE(value: TypeId): Self = StObject.set(x, "CIRCLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCID(value: TypeId): Self = this.set("CID", value.asInstanceOf[js.Any])
+    def setDATE(value: TypeId): Self = StObject.set(x, "DATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCIDR(value: TypeId): Self = this.set("CIDR", value.asInstanceOf[js.Any])
+    def setFLOAT4(value: TypeId): Self = StObject.set(x, "FLOAT4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCIRCLE(value: TypeId): Self = this.set("CIRCLE", value.asInstanceOf[js.Any])
+    def setFLOAT8(value: TypeId): Self = StObject.set(x, "FLOAT8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDATE(value: TypeId): Self = this.set("DATE", value.asInstanceOf[js.Any])
+    def setGTSVECTOR(value: TypeId): Self = StObject.set(x, "GTSVECTOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFLOAT4(value: TypeId): Self = this.set("FLOAT4", value.asInstanceOf[js.Any])
+    def setINET(value: TypeId): Self = StObject.set(x, "INET", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFLOAT8(value: TypeId): Self = this.set("FLOAT8", value.asInstanceOf[js.Any])
+    def setINT2(value: TypeId): Self = StObject.set(x, "INT2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGTSVECTOR(value: TypeId): Self = this.set("GTSVECTOR", value.asInstanceOf[js.Any])
+    def setINT4(value: TypeId): Self = StObject.set(x, "INT4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINET(value: TypeId): Self = this.set("INET", value.asInstanceOf[js.Any])
+    def setINT8(value: TypeId): Self = StObject.set(x, "INT8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINT2(value: TypeId): Self = this.set("INT2", value.asInstanceOf[js.Any])
+    def setINTERVAL(value: TypeId): Self = StObject.set(x, "INTERVAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINT4(value: TypeId): Self = this.set("INT4", value.asInstanceOf[js.Any])
+    def setJSON(value: TypeId): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINT8(value: TypeId): Self = this.set("INT8", value.asInstanceOf[js.Any])
+    def setJSONB(value: TypeId): Self = StObject.set(x, "JSONB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINTERVAL(value: TypeId): Self = this.set("INTERVAL", value.asInstanceOf[js.Any])
+    def setMACADDR(value: TypeId): Self = StObject.set(x, "MACADDR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJSON(value: TypeId): Self = this.set("JSON", value.asInstanceOf[js.Any])
+    def setMACADDR8(value: TypeId): Self = StObject.set(x, "MACADDR8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJSONB(value: TypeId): Self = this.set("JSONB", value.asInstanceOf[js.Any])
+    def setMONEY(value: TypeId): Self = StObject.set(x, "MONEY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMACADDR(value: TypeId): Self = this.set("MACADDR", value.asInstanceOf[js.Any])
+    def setNUMERIC(value: TypeId): Self = StObject.set(x, "NUMERIC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMACADDR8(value: TypeId): Self = this.set("MACADDR8", value.asInstanceOf[js.Any])
+    def setOID(value: TypeId): Self = StObject.set(x, "OID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMONEY(value: TypeId): Self = this.set("MONEY", value.asInstanceOf[js.Any])
+    def setPATH(value: TypeId): Self = StObject.set(x, "PATH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNUMERIC(value: TypeId): Self = this.set("NUMERIC", value.asInstanceOf[js.Any])
+    def setPG_DEPENDENCIES(value: TypeId): Self = StObject.set(x, "PG_DEPENDENCIES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOID(value: TypeId): Self = this.set("OID", value.asInstanceOf[js.Any])
+    def setPG_LSN(value: TypeId): Self = StObject.set(x, "PG_LSN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATH(value: TypeId): Self = this.set("PATH", value.asInstanceOf[js.Any])
+    def setPG_NDISTINCT(value: TypeId): Self = StObject.set(x, "PG_NDISTINCT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPG_DEPENDENCIES(value: TypeId): Self = this.set("PG_DEPENDENCIES", value.asInstanceOf[js.Any])
+    def setPG_NODE_TREE(value: TypeId): Self = StObject.set(x, "PG_NODE_TREE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPG_LSN(value: TypeId): Self = this.set("PG_LSN", value.asInstanceOf[js.Any])
+    def setPOLYGON(value: TypeId): Self = StObject.set(x, "POLYGON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPG_NDISTINCT(value: TypeId): Self = this.set("PG_NDISTINCT", value.asInstanceOf[js.Any])
+    def setREFCURSOR(value: TypeId): Self = StObject.set(x, "REFCURSOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPG_NODE_TREE(value: TypeId): Self = this.set("PG_NODE_TREE", value.asInstanceOf[js.Any])
+    def setREGCLASS(value: TypeId): Self = StObject.set(x, "REGCLASS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPOLYGON(value: TypeId): Self = this.set("POLYGON", value.asInstanceOf[js.Any])
+    def setREGCONFIG(value: TypeId): Self = StObject.set(x, "REGCONFIG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREFCURSOR(value: TypeId): Self = this.set("REFCURSOR", value.asInstanceOf[js.Any])
+    def setREGDICTIONARY(value: TypeId): Self = StObject.set(x, "REGDICTIONARY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGCLASS(value: TypeId): Self = this.set("REGCLASS", value.asInstanceOf[js.Any])
+    def setREGNAMESPACE(value: TypeId): Self = StObject.set(x, "REGNAMESPACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGCONFIG(value: TypeId): Self = this.set("REGCONFIG", value.asInstanceOf[js.Any])
+    def setREGOPER(value: TypeId): Self = StObject.set(x, "REGOPER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGDICTIONARY(value: TypeId): Self = this.set("REGDICTIONARY", value.asInstanceOf[js.Any])
+    def setREGOPERATOR(value: TypeId): Self = StObject.set(x, "REGOPERATOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGNAMESPACE(value: TypeId): Self = this.set("REGNAMESPACE", value.asInstanceOf[js.Any])
+    def setREGPROC(value: TypeId): Self = StObject.set(x, "REGPROC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGOPER(value: TypeId): Self = this.set("REGOPER", value.asInstanceOf[js.Any])
+    def setREGPROCEDURE(value: TypeId): Self = StObject.set(x, "REGPROCEDURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGOPERATOR(value: TypeId): Self = this.set("REGOPERATOR", value.asInstanceOf[js.Any])
+    def setREGROLE(value: TypeId): Self = StObject.set(x, "REGROLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGPROC(value: TypeId): Self = this.set("REGPROC", value.asInstanceOf[js.Any])
+    def setREGTYPE(value: TypeId): Self = StObject.set(x, "REGTYPE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGPROCEDURE(value: TypeId): Self = this.set("REGPROCEDURE", value.asInstanceOf[js.Any])
+    def setRELTIME(value: TypeId): Self = StObject.set(x, "RELTIME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGROLE(value: TypeId): Self = this.set("REGROLE", value.asInstanceOf[js.Any])
+    def setSMGR(value: TypeId): Self = StObject.set(x, "SMGR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREGTYPE(value: TypeId): Self = this.set("REGTYPE", value.asInstanceOf[js.Any])
+    def setTEXT(value: TypeId): Self = StObject.set(x, "TEXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRELTIME(value: TypeId): Self = this.set("RELTIME", value.asInstanceOf[js.Any])
+    def setTID(value: TypeId): Self = StObject.set(x, "TID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMGR(value: TypeId): Self = this.set("SMGR", value.asInstanceOf[js.Any])
+    def setTIME(value: TypeId): Self = StObject.set(x, "TIME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTEXT(value: TypeId): Self = this.set("TEXT", value.asInstanceOf[js.Any])
+    def setTIMESTAMP(value: TypeId): Self = StObject.set(x, "TIMESTAMP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTID(value: TypeId): Self = this.set("TID", value.asInstanceOf[js.Any])
+    def setTIMESTAMPTZ(value: TypeId): Self = StObject.set(x, "TIMESTAMPTZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTIME(value: TypeId): Self = this.set("TIME", value.asInstanceOf[js.Any])
+    def setTIMETZ(value: TypeId): Self = StObject.set(x, "TIMETZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTIMESTAMP(value: TypeId): Self = this.set("TIMESTAMP", value.asInstanceOf[js.Any])
+    def setTINTERVAL(value: TypeId): Self = StObject.set(x, "TINTERVAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTIMESTAMPTZ(value: TypeId): Self = this.set("TIMESTAMPTZ", value.asInstanceOf[js.Any])
+    def setTSQUERY(value: TypeId): Self = StObject.set(x, "TSQUERY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTIMETZ(value: TypeId): Self = this.set("TIMETZ", value.asInstanceOf[js.Any])
+    def setTSVECTOR(value: TypeId): Self = StObject.set(x, "TSVECTOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTINTERVAL(value: TypeId): Self = this.set("TINTERVAL", value.asInstanceOf[js.Any])
+    def setTXID_SNAPSHOT(value: TypeId): Self = StObject.set(x, "TXID_SNAPSHOT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTSQUERY(value: TypeId): Self = this.set("TSQUERY", value.asInstanceOf[js.Any])
+    def setUUID(value: TypeId): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTSVECTOR(value: TypeId): Self = this.set("TSVECTOR", value.asInstanceOf[js.Any])
+    def setVARBIT(value: TypeId): Self = StObject.set(x, "VARBIT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTXID_SNAPSHOT(value: TypeId): Self = this.set("TXID_SNAPSHOT", value.asInstanceOf[js.Any])
+    def setVARCHAR(value: TypeId): Self = StObject.set(x, "VARCHAR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUUID(value: TypeId): Self = this.set("UUID", value.asInstanceOf[js.Any])
+    def setXID(value: TypeId): Self = StObject.set(x, "XID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVARBIT(value: TypeId): Self = this.set("VARBIT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVARCHAR(value: TypeId): Self = this.set("VARCHAR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXID(value: TypeId): Self = this.set("XID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXML(value: TypeId): Self = this.set("XML", value.asInstanceOf[js.Any])
+    def setXML(value: TypeId): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
   }
 }

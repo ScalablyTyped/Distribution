@@ -74,16 +74,15 @@ import typings.lightMyRequest.mod.Response
 import typings.node.Buffer
 import typings.std.Error
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fastify/types/instance", JSImport.Namespace)
-@js.native
-object instanceMod extends js.Object {
+object instanceMod {
   
   @js.native
-  trait FastifyInstance[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, Logger] extends js.Object {
+  trait FastifyInstance[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, Logger] extends StObject {
     
     /**
       * Add a content type parser

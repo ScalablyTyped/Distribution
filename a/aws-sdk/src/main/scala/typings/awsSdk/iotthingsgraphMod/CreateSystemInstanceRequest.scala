@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSystemInstanceRequest extends js.Object {
+trait CreateSystemInstanceRequest extends StObject {
   
   var definition: DefinitionDocument = js.native
   
@@ -45,57 +46,45 @@ object CreateSystemInstanceRequest {
   }
   
   @scala.inline
-  implicit class CreateSystemInstanceRequestOps[Self <: CreateSystemInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSystemInstanceRequestMutableBuilder[Self <: CreateSystemInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlowActionsRoleArn(value: RoleArn): Self = StObject.set(x, "flowActionsRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowActionsRoleArnUndefined: Self = StObject.set(x, "flowActionsRoleArn", js.undefined)
     
     @scala.inline
-    def setDefinition(value: DefinitionDocument): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setGreengrassGroupName(value: GroupName): Self = StObject.set(x, "greengrassGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: DeploymentTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setGreengrassGroupNameUndefined: Self = StObject.set(x, "greengrassGroupName", js.undefined)
     
     @scala.inline
-    def setFlowActionsRoleArn(value: RoleArn): Self = this.set("flowActionsRoleArn", value.asInstanceOf[js.Any])
+    def setMetricsConfiguration(value: MetricsConfiguration): Self = StObject.set(x, "metricsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlowActionsRoleArn: Self = this.set("flowActionsRoleArn", js.undefined)
+    def setMetricsConfigurationUndefined: Self = StObject.set(x, "metricsConfiguration", js.undefined)
     
     @scala.inline
-    def setGreengrassGroupName(value: GroupName): Self = this.set("greengrassGroupName", value.asInstanceOf[js.Any])
+    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGreengrassGroupName: Self = this.set("greengrassGroupName", js.undefined)
+    def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
     
     @scala.inline
-    def setMetricsConfiguration(value: MetricsConfiguration): Self = this.set("metricsConfiguration", value.asInstanceOf[js.Any])
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetricsConfiguration: Self = this.set("metricsConfiguration", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = this.set("s3BucketName", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteS3BucketName: Self = this.set("s3BucketName", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTarget(value: DeploymentTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

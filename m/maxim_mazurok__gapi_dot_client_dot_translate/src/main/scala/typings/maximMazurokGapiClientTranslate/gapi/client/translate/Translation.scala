@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Translation extends js.Object {
+trait Translation extends StObject {
   
   /**
     * The BCP-47 language code of source text in the initial request, detected automatically, if no source language was passed within the initial request. If the source language was
@@ -34,42 +35,30 @@ object Translation {
   }
   
   @scala.inline
-  implicit class TranslationOps[Self <: Translation] (val x: Self) extends AnyVal {
+  implicit class TranslationMutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectedLanguageCode(value: String): Self = StObject.set(x, "detectedLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectedLanguageCodeUndefined: Self = StObject.set(x, "detectedLanguageCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlossaryConfig(value: TranslateTextGlossaryConfig): Self = StObject.set(x, "glossaryConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectedLanguageCode(value: String): Self = this.set("detectedLanguageCode", value.asInstanceOf[js.Any])
+    def setGlossaryConfigUndefined: Self = StObject.set(x, "glossaryConfig", js.undefined)
     
     @scala.inline
-    def deleteDetectedLanguageCode: Self = this.set("detectedLanguageCode", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlossaryConfig(value: TranslateTextGlossaryConfig): Self = this.set("glossaryConfig", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteGlossaryConfig: Self = this.set("glossaryConfig", js.undefined)
+    def setTranslatedText(value: String): Self = StObject.set(x, "translatedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
-    
-    @scala.inline
-    def setTranslatedText(value: String): Self = this.set("translatedText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslatedText: Self = this.set("translatedText", js.undefined)
+    def setTranslatedTextUndefined: Self = StObject.set(x, "translatedText", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * types apply to all queries, regardless of the language.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2SessionEntityType extends js.Object {
+trait SchemaGoogleCloudDialogflowV2SessionEntityType extends StObject {
   
   /**
     * Required. The collection of entities associated with this session entity
@@ -43,39 +44,27 @@ object SchemaGoogleCloudDialogflowV2SessionEntityType {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2SessionEntityTypeOps[Self <: SchemaGoogleCloudDialogflowV2SessionEntityType] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2SessionEntityTypeMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2SessionEntityType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: js.Array[SchemaGoogleCloudDialogflowV2EntityTypeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntitiesVarargs(value: SchemaGoogleCloudDialogflowV2EntityTypeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def setEntitiesVarargs(value: SchemaGoogleCloudDialogflowV2EntityTypeEntity*): Self = this.set("entities", js.Array(value :_*))
+    def setEntityOverrideMode(value: String): Self = StObject.set(x, "entityOverrideMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: js.Array[SchemaGoogleCloudDialogflowV2EntityTypeEntity]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setEntityOverrideModeUndefined: Self = StObject.set(x, "entityOverrideMode", js.undefined)
     
     @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityOverrideMode(value: String): Self = this.set("entityOverrideMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityOverrideMode: Self = this.set("entityOverrideMode", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

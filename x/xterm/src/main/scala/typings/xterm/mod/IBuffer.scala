@@ -2,6 +2,7 @@ package typings.xterm.mod
 
 import typings.xterm.xtermStrings.alternate
 import typings.xterm.xtermStrings.normal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a terminal buffer.
   */
 @js.native
-trait IBuffer extends js.Object {
+trait IBuffer extends StObject {
   
   /**
     * The line within the buffer where the top of the bottom page is (when
@@ -84,42 +85,30 @@ object IBuffer {
   }
   
   @scala.inline
-  implicit class IBufferOps[Self <: IBuffer] (val x: Self) extends AnyVal {
+  implicit class IBufferMutableBuilder[Self <: IBuffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseY(value: Double): Self = StObject.set(x, "baseY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursorX(value: Double): Self = StObject.set(x, "cursorX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCursorY(value: Double): Self = StObject.set(x, "cursorY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseY(value: Double): Self = this.set("baseY", value.asInstanceOf[js.Any])
+    def setGetLine(value: Double => js.UndefOr[IBufferLine]): Self = StObject.set(x, "getLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCursorX(value: Double): Self = this.set("cursorX", value.asInstanceOf[js.Any])
+    def setGetNullCell(value: () => IBufferCell): Self = StObject.set(x, "getNullCell", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCursorY(value: Double): Self = this.set("cursorY", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLine(value: Double => js.UndefOr[IBufferLine]): Self = this.set("getLine", js.Any.fromFunction1(value))
+    def setType(value: normal | alternate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNullCell(value: () => IBufferCell): Self = this.set("getNullCell", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: normal | alternate): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportY(value: Double): Self = this.set("viewportY", value.asInstanceOf[js.Any])
+    def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
   }
 }

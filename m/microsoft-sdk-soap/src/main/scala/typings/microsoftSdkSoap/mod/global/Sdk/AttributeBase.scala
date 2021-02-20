@@ -1,12 +1,13 @@
 package typings.microsoftSdkSoap.mod.global.Sdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.AttributeBase")
 @js.native
-class AttributeBase () extends js.Object {
+class AttributeBase () extends StObject {
   
   /**
     * Gets whether the value of the attribute has changed.

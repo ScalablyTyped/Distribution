@@ -1,11 +1,12 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowInfo extends js.Object {
+trait RowInfo extends StObject {
   
   /* --- visibility --- */
   /** if true, the column is hidden */
@@ -30,42 +31,30 @@ object RowInfo {
   }
   
   @scala.inline
-  implicit class RowInfoOps[Self <: RowInfo] (val x: Self) extends AnyVal {
+  implicit class RowInfoMutableBuilder[Self <: RowInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHpt(value: Double): Self = StObject.set(x, "hpt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setHptUndefined: Self = StObject.set(x, "hpt", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setHpx(value: Double): Self = StObject.set(x, "hpx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHpt(value: Double): Self = this.set("hpt", value.asInstanceOf[js.Any])
+    def setHpxUndefined: Self = StObject.set(x, "hpx", js.undefined)
     
     @scala.inline
-    def deleteHpt: Self = this.set("hpt", js.undefined)
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHpx(value: Double): Self = this.set("hpx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHpx: Self = this.set("hpx", js.undefined)
-    
-    @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

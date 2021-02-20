@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property data - Matrix elements in the form of a flat array.
   */
 @js.native
-trait Mat4 extends js.Object {
+trait Mat4 extends StObject {
   
   /**
     * Adds the specified 4x4 matrix to the current instance.

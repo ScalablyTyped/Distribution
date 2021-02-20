@@ -1,5 +1,6 @@
 package typings.googleapis.scriptV1Mod.scriptV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * single one of these `ExecutionError` objects.
   */
 @js.native
-trait SchemaExecutionError extends js.Object {
+trait SchemaExecutionError extends StObject {
   
   /**
     * The error message thrown by Apps Script, usually localized into the
@@ -42,39 +43,27 @@ object SchemaExecutionError {
   }
   
   @scala.inline
-  implicit class SchemaExecutionErrorOps[Self <: SchemaExecutionError] (val x: Self) extends AnyVal {
+  implicit class SchemaExecutionErrorMutableBuilder[Self <: SchemaExecutionError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setScriptStackTraceElements(value: js.Array[SchemaScriptStackTraceElement]): Self = StObject.set(x, "scriptStackTraceElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorType(value: String): Self = this.set("errorType", value.asInstanceOf[js.Any])
+    def setScriptStackTraceElementsUndefined: Self = StObject.set(x, "scriptStackTraceElements", js.undefined)
     
     @scala.inline
-    def deleteErrorType: Self = this.set("errorType", js.undefined)
-    
-    @scala.inline
-    def setScriptStackTraceElementsVarargs(value: SchemaScriptStackTraceElement*): Self = this.set("scriptStackTraceElements", js.Array(value :_*))
-    
-    @scala.inline
-    def setScriptStackTraceElements(value: js.Array[SchemaScriptStackTraceElement]): Self = this.set("scriptStackTraceElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptStackTraceElements: Self = this.set("scriptStackTraceElements", js.undefined)
+    def setScriptStackTraceElementsVarargs(value: SchemaScriptStackTraceElement*): Self = StObject.set(x, "scriptStackTraceElements", js.Array(value :_*))
   }
 }

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,27 +48,15 @@ object XSupportedLocales {
   }
   
   @scala.inline
-  implicit class XSupportedLocalesOps[Self <: XSupportedLocales] (val x: Self) extends AnyVal {
+  implicit class XSupportedLocalesMutableBuilder[Self <: XSupportedLocales] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLocales(value: () => SafeArray[Locale]): Self = StObject.set(x, "getLocales", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasLocale(value: Locale => Boolean): Self = StObject.set(x, "hasLocale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocales(value: SafeArray[Locale]): Self = this.set("Locales", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetLocales(value: () => SafeArray[Locale]): Self = this.set("getLocales", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasLocale(value: Locale => Boolean): Self = this.set("hasLocale", js.Any.fromFunction1(value))
+    def setLocales(value: SafeArray[Locale]): Self = StObject.set(x, "Locales", value.asInstanceOf[js.Any])
   }
 }

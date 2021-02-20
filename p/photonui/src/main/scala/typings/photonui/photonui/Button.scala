@@ -3,6 +3,7 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ trait Button extends Widget {
   
   var appearance: String = js.native
   
-   //  normal | flat
+  //  normal | flat
   var buttonColor: String = js.native
   
   var leftIcon: BaseIcon = js.native
@@ -71,48 +72,36 @@ object Button {
   }
   
   @scala.inline
-  implicit class ButtonOps[Self <: Button] (val x: Self) extends AnyVal {
+  implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonColor(value: String): Self = StObject.set(x, "buttonColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftIcon(value: BaseIcon): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearance(value: String): Self = this.set("appearance", value.asInstanceOf[js.Any])
+    def setLeftIconName(value: String): Self = StObject.set(x, "leftIconName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonColor(value: String): Self = this.set("buttonColor", value.asInstanceOf[js.Any])
+    def setLeftIconVisible(value: Boolean): Self = StObject.set(x, "leftIconVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIcon(value: BaseIcon): Self = this.set("leftIcon", value.asInstanceOf[js.Any])
+    def setRightIcon(value: BaseIcon): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIconName(value: String): Self = this.set("leftIconName", value.asInstanceOf[js.Any])
+    def setRightIconName(value: String): Self = StObject.set(x, "rightIconName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIconVisible(value: Boolean): Self = this.set("leftIconVisible", value.asInstanceOf[js.Any])
+    def setRightIconVisible(value: Boolean): Self = StObject.set(x, "rightIconVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightIcon(value: BaseIcon): Self = this.set("rightIcon", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightIconName(value: String): Self = this.set("rightIconName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightIconVisible(value: Boolean): Self = this.set("rightIconVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextVisible(value: Boolean): Self = this.set("textVisible", value.asInstanceOf[js.Any])
+    def setTextVisible(value: Boolean): Self = StObject.set(x, "textVisible", value.asInstanceOf[js.Any])
   }
 }

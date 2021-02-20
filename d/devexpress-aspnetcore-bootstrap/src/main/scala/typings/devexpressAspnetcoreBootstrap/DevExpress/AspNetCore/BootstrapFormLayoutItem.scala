@@ -1,11 +1,12 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapFormLayoutItem extends js.Object {
+trait BootstrapFormLayoutItem extends StObject {
   
   val formLayout: BootstrapFormLayout | Null = js.native
   
@@ -42,51 +43,39 @@ object BootstrapFormLayoutItem {
   }
   
   @scala.inline
-  implicit class BootstrapFormLayoutItemOps[Self <: BootstrapFormLayoutItem] (val x: Self) extends AnyVal {
+  implicit class BootstrapFormLayoutItemMutableBuilder[Self <: BootstrapFormLayoutItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormLayout(value: BootstrapFormLayout): Self = StObject.set(x, "formLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormLayoutNull: Self = StObject.set(x, "formLayout", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCaption(value: () => String): Self = StObject.set(x, "getCaption", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCaption(value: () => String): Self = this.set("getCaption", js.Any.fromFunction0(value))
+    def setGetItemByName(value: String => BootstrapFormLayoutItem | Null): Self = StObject.set(x, "getItemByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItemByName(value: String => BootstrapFormLayoutItem | Null): Self = this.set("getItemByName", js.Any.fromFunction1(value))
+    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetVisible(value: () => Boolean): Self = this.set("getVisible", js.Any.fromFunction0(value))
+    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: js.Any): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParent(value: BootstrapFormLayoutItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetCaption(value: String => Unit): Self = this.set("setCaption", js.Any.fromFunction1(value))
+    def setParentNull: Self = StObject.set(x, "parent", null)
     
     @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("setVisible", js.Any.fromFunction1(value))
+    def setSetCaption(value: String => Unit): Self = StObject.set(x, "setCaption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormLayout(value: BootstrapFormLayout): Self = this.set("formLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormLayoutNull: Self = this.set("formLayout", null)
-    
-    @scala.inline
-    def setParent(value: BootstrapFormLayoutItem): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentNull: Self = this.set("parent", null)
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
   }
 }

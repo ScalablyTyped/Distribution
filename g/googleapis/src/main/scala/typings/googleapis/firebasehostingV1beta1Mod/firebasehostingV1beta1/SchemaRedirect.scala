@@ -1,5 +1,6 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * request URL path.
   */
 @js.native
-trait SchemaRedirect extends js.Object {
+trait SchemaRedirect extends StObject {
   
   /**
     * Required. The user-supplied [glob
@@ -45,36 +46,24 @@ object SchemaRedirect {
   }
   
   @scala.inline
-  implicit class SchemaRedirectOps[Self <: SchemaRedirect] (val x: Self) extends AnyVal {
+  implicit class SchemaRedirectMutableBuilder[Self <: SchemaRedirect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlob(value: String): Self = this.set("glob", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteGlob: Self = this.set("glob", js.undefined)
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

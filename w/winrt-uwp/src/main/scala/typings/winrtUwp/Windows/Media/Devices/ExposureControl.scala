@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Devices
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the exposure settings on a capture device. */
 @js.native
-trait ExposureControl extends js.Object {
+trait ExposureControl extends StObject {
   
   /** Gets a value that indicates if auto exposure is enabled. */
   var auto: Boolean = js.native
@@ -59,42 +60,30 @@ object ExposureControl {
   }
   
   @scala.inline
-  implicit class ExposureControlOps[Self <: ExposureControl] (val x: Self) extends AnyVal {
+  implicit class ExposureControlMutableBuilder[Self <: ExposureControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto(value: Boolean): Self = this.set("auto", value.asInstanceOf[js.Any])
+    def setSetAutoAsync(value: Boolean => IPromiseWithIAsyncAction): Self = StObject.set(x, "setAutoAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetAutoAsync(value: Boolean => IPromiseWithIAsyncAction): Self = this.set("setAutoAsync", js.Any.fromFunction1(value))
+    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = this.set("setValueAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupported(value: Boolean): Self = this.set("supported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

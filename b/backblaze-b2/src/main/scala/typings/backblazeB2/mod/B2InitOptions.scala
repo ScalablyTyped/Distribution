@@ -1,12 +1,13 @@
 package typings.backblazeB2.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait B2InitOptions extends js.Object {
+trait B2InitOptions extends StObject {
   
   var applicationKey: String = js.native
   
@@ -25,36 +26,24 @@ object B2InitOptions {
   }
   
   @scala.inline
-  implicit class B2InitOptionsOps[Self <: B2InitOptions] (val x: Self) extends AnyVal {
+  implicit class B2InitOptionsMutableBuilder[Self <: B2InitOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationKey(value: String): Self = StObject.set(x, "applicationKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationKeyId(value: String): Self = StObject.set(x, "applicationKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxios(value: Record[String, _]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationKey(value: String): Self = this.set("applicationKey", value.asInstanceOf[js.Any])
+    def setAxiosUndefined: Self = StObject.set(x, "axios", js.undefined)
     
     @scala.inline
-    def setApplicationKeyId(value: String): Self = this.set("applicationKeyId", value.asInstanceOf[js.Any])
+    def setRetry(value: Record[String, _]): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxios(value: Record[String, _]): Self = this.set("axios", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAxios: Self = this.set("axios", js.undefined)
-    
-    @scala.inline
-    def setRetry(value: Record[String, _]): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
   }
 }

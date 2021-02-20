@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBillingGroupResponse extends js.Object {
+trait CreateBillingGroupResponse extends StObject {
   
   /**
     * The ARN of the billing group.
@@ -31,36 +32,24 @@ object CreateBillingGroupResponse {
   }
   
   @scala.inline
-  implicit class CreateBillingGroupResponseOps[Self <: CreateBillingGroupResponse] (val x: Self) extends AnyVal {
+  implicit class CreateBillingGroupResponseMutableBuilder[Self <: CreateBillingGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingGroupArn(value: BillingGroupArn): Self = StObject.set(x, "billingGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingGroupArnUndefined: Self = StObject.set(x, "billingGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingGroupId(value: BillingGroupId): Self = StObject.set(x, "billingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingGroupArn(value: BillingGroupArn): Self = this.set("billingGroupArn", value.asInstanceOf[js.Any])
+    def setBillingGroupIdUndefined: Self = StObject.set(x, "billingGroupId", js.undefined)
     
     @scala.inline
-    def deleteBillingGroupArn: Self = this.set("billingGroupArn", js.undefined)
+    def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingGroupId(value: BillingGroupId): Self = this.set("billingGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingGroupId: Self = this.set("billingGroupId", js.undefined)
-    
-    @scala.inline
-    def setBillingGroupName(value: BillingGroupName): Self = this.set("billingGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingGroupName: Self = this.set("billingGroupName", js.undefined)
+    def setBillingGroupNameUndefined: Self = StObject.set(x, "billingGroupName", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The parameter passed to the <Titanium.UI.iOS.WebViewConfiguration.preferences> method.
   */
 @js.native
-trait WebViewPreferencesObject extends js.Object {
+trait WebViewPreferencesObject extends StObject {
   
   /**
     * A Boolean value indicating whether JavaScript can open windows without user interaction.
@@ -34,36 +35,24 @@ object WebViewPreferencesObject {
   }
   
   @scala.inline
-  implicit class WebViewPreferencesObjectOps[Self <: WebViewPreferencesObject] (val x: Self) extends AnyVal {
+  implicit class WebViewPreferencesObjectMutableBuilder[Self <: WebViewPreferencesObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJavaScriptCanOpenWindowsAutomatically(value: Boolean): Self = StObject.set(x, "javaScriptCanOpenWindowsAutomatically", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJavaScriptCanOpenWindowsAutomaticallyUndefined: Self = StObject.set(x, "javaScriptCanOpenWindowsAutomatically", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJavaScriptEnabled(value: Boolean): Self = StObject.set(x, "javaScriptEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavaScriptCanOpenWindowsAutomatically(value: Boolean): Self = this.set("javaScriptCanOpenWindowsAutomatically", value.asInstanceOf[js.Any])
+    def setJavaScriptEnabledUndefined: Self = StObject.set(x, "javaScriptEnabled", js.undefined)
     
     @scala.inline
-    def deleteJavaScriptCanOpenWindowsAutomatically: Self = this.set("javaScriptCanOpenWindowsAutomatically", js.undefined)
+    def setMinimumFontSize(value: Double): Self = StObject.set(x, "minimumFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavaScriptEnabled(value: Boolean): Self = this.set("javaScriptEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJavaScriptEnabled: Self = this.set("javaScriptEnabled", js.undefined)
-    
-    @scala.inline
-    def setMinimumFontSize(value: Double): Self = this.set("minimumFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumFontSize: Self = this.set("minimumFontSize", js.undefined)
+    def setMinimumFontSizeUndefined: Self = StObject.set(x, "minimumFontSize", js.undefined)
   }
 }

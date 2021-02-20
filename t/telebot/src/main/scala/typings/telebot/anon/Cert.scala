@@ -1,28 +1,29 @@
 package typings.telebot.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cert extends js.Object {
+trait Cert extends StObject {
   
-   // Optional. Private key for server.
+  // Optional. Private key for server.
   var cert: js.UndefOr[String] = js.native
   
-   // HTTPS url to send updates to.
+  // HTTPS url to send updates to.
   var host: js.UndefOr[String] = js.native
   
   // Optional. Use webhook instead of polling.
   var key: js.UndefOr[String] = js.native
   
-   // Server port.
+  // Server port.
   var maxConnections: js.UndefOr[Double] = js.native
   
-   // Webhook server host.
+  // Webhook server host.
   var port: js.UndefOr[Double] = js.native
   
-   // Optional. key.
+  // Optional. key.
   var url: js.UndefOr[String] = js.native
 }
 object Cert {
@@ -34,54 +35,42 @@ object Cert {
   }
   
   @scala.inline
-  implicit class CertOps[Self <: Cert] (val x: Self) extends AnyVal {
+  implicit class CertMutableBuilder[Self <: Cert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCert(value: String): Self = this.set("cert", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteCert: Self = this.set("cert", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deleteMaxConnections: Self = this.set("maxConnections", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

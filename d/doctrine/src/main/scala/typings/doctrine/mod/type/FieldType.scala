@@ -1,6 +1,7 @@
 package typings.doctrine.mod.`type`
 
 import typings.doctrine.mod.Type_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object FieldType {
   }
   
   @scala.inline
-  implicit class FieldTypeOps[Self <: FieldType] (val x: Self) extends AnyVal {
+  implicit class FieldTypeMutableBuilder[Self <: FieldType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: typings.doctrine.doctrineStrings.FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: Type_): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.FieldType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Type_): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

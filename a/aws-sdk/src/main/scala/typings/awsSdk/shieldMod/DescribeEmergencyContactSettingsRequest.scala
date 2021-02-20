@@ -1,8 +1,9 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEmergencyContactSettingsRequest extends js.Object
+trait DescribeEmergencyContactSettingsRequest extends StObject

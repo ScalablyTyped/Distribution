@@ -2,16 +2,21 @@ package typings.materialFloatingLabel
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialFloatingLabel.adapterMod.MDCFloatingLabelAdapter
-import typings.materialFloatingLabel.anon.LABELFLOATABOVE
 import typings.materialFloatingLabel.anon.PartialMDCFloatingLabelAd
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/floating-label/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/floating-label/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCFloatingLabelFoundation {
+    def this(adapter: PartialMDCFloatingLabelAd) = this()
+  }
+  
+  @JSImport("@material/floating-label/foundation", "MDCFloatingLabelFoundation")
   @js.native
   class MDCFloatingLabelFoundation () extends MDCFoundation[MDCFloatingLabelAdapter] {
     def this(adapter: PartialMDCFloatingLabelAd) = this()
@@ -38,32 +43,5 @@ object foundationMod extends js.Object {
       * @param shouldShake If true, adds the shake CSS class; otherwise, removes shake class.
       */
     def shake(shouldShake: Boolean): Unit = js.native
-  }
-  /* static members */
-  @js.native
-  object MDCFloatingLabelFoundation extends js.Object {
-    
-    def cssClasses: LABELFLOATABOVE = js.native
-    
-    /**
-      * See {@link MDCFloatingLabelAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCFloatingLabelAdapter = js.native
-  }
-  
-  @js.native
-  class default () extends MDCFloatingLabelFoundation {
-    def this(adapter: PartialMDCFloatingLabelAd) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def cssClasses: LABELFLOATABOVE = js.native
-    
-    /**
-      * See {@link MDCFloatingLabelAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCFloatingLabelAdapter = js.native
   }
 }

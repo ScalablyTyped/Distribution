@@ -1,11 +1,12 @@
 package typings.nodeRedRuntime.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CredentialsDirty extends js.Object {
+trait CredentialsDirty extends StObject {
   
   var credentials: js.Object = js.native
   
@@ -22,33 +23,21 @@ object CredentialsDirty {
   }
   
   @scala.inline
-  implicit class CredentialsDirtyOps[Self <: CredentialsDirty] (val x: Self) extends AnyVal {
+  implicit class CredentialsDirtyMutableBuilder[Self <: CredentialsDirty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialsDirty(value: Boolean): Self = StObject.set(x, "credentialsDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentialsDirtyUndefined: Self = StObject.set(x, "credentialsDirty", js.undefined)
     
     @scala.inline
-    def setCredentials(value: js.Object): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setFlows(value: js.Array[js.Object]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowsVarargs(value: js.Object*): Self = this.set("flows", js.Array(value :_*))
-    
-    @scala.inline
-    def setFlows(value: js.Array[js.Object]): Self = this.set("flows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCredentialsDirty(value: Boolean): Self = this.set("credentialsDirty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentialsDirty: Self = this.set("credentialsDirty", js.undefined)
+    def setFlowsVarargs(value: js.Object*): Self = StObject.set(x, "flows", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedPolicyDetail extends js.Object {
+trait ManagedPolicyDetail extends StObject {
   
   var Arn: js.UndefOr[arnType] = js.native
   
@@ -73,93 +74,81 @@ object ManagedPolicyDetail {
   }
   
   @scala.inline
-  implicit class ManagedPolicyDetailOps[Self <: ManagedPolicyDetail] (val x: Self) extends AnyVal {
+  implicit class ManagedPolicyDetailMutableBuilder[Self <: ManagedPolicyDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentCount(value: attachmentCountType): Self = StObject.set(x, "AttachmentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setAttachmentCountUndefined: Self = StObject.set(x, "AttachmentCount", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentCount(value: attachmentCountType): Self = this.set("AttachmentCount", value.asInstanceOf[js.Any])
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def deleteAttachmentCount: Self = this.set("AttachmentCount", js.undefined)
+    def setDefaultVersionId(value: policyVersionIdType): Self = StObject.set(x, "DefaultVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setDefaultVersionIdUndefined: Self = StObject.set(x, "DefaultVersionId", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setDescription(value: policyDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVersionId(value: policyVersionIdType): Self = this.set("DefaultVersionId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDefaultVersionId: Self = this.set("DefaultVersionId", js.undefined)
+    def setIsAttachable(value: booleanType): Self = StObject.set(x, "IsAttachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: policyDescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIsAttachableUndefined: Self = StObject.set(x, "IsAttachable", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setPath(value: policyPathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAttachable(value: booleanType): Self = this.set("IsAttachable", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
     @scala.inline
-    def deleteIsAttachable: Self = this.set("IsAttachable", js.undefined)
+    def setPermissionsBoundaryUsageCount(value: attachmentCountType): Self = StObject.set(x, "PermissionsBoundaryUsageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: policyPathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setPermissionsBoundaryUsageCountUndefined: Self = StObject.set(x, "PermissionsBoundaryUsageCount", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("Path", js.undefined)
+    def setPolicyId(value: idType): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionsBoundaryUsageCount(value: attachmentCountType): Self = this.set("PermissionsBoundaryUsageCount", value.asInstanceOf[js.Any])
+    def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
     
     @scala.inline
-    def deletePermissionsBoundaryUsageCount: Self = this.set("PermissionsBoundaryUsageCount", js.undefined)
+    def setPolicyName(value: policyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyId(value: idType): Self = this.set("PolicyId", value.asInstanceOf[js.Any])
+    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
     
     @scala.inline
-    def deletePolicyId: Self = this.set("PolicyId", js.undefined)
+    def setPolicyVersionList(value: policyDocumentVersionListType): Self = StObject.set(x, "PolicyVersionList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyName(value: policyNameType): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    def setPolicyVersionListUndefined: Self = StObject.set(x, "PolicyVersionList", js.undefined)
     
     @scala.inline
-    def deletePolicyName: Self = this.set("PolicyName", js.undefined)
+    def setPolicyVersionListVarargs(value: PolicyVersion*): Self = StObject.set(x, "PolicyVersionList", js.Array(value :_*))
     
     @scala.inline
-    def setPolicyVersionListVarargs(value: PolicyVersion*): Self = this.set("PolicyVersionList", js.Array(value :_*))
+    def setUpdateDate(value: dateType): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyVersionList(value: policyDocumentVersionListType): Self = this.set("PolicyVersionList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyVersionList: Self = this.set("PolicyVersionList", js.undefined)
-    
-    @scala.inline
-    def setUpdateDate(value: dateType): Self = this.set("UpdateDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDate: Self = this.set("UpdateDate", js.undefined)
+    def setUpdateDateUndefined: Self = StObject.set(x, "UpdateDate", js.undefined)
   }
 }

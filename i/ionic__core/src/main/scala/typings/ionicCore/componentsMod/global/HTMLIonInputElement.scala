@@ -1,6 +1,5 @@
 package typings.ionicCore.componentsMod.global
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.ionicCore.ionicCoreStrings.decimal
 import typings.ionicCore.ionicCoreStrings.done
 import typings.ionicCore.ionicCoreStrings.email
@@ -24,6 +23,7 @@ import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.TextFieldTypes
 import typings.ionicCore.stencilPublicRuntimeMod.HTMLStencilElement
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -177,6 +177,3 @@ trait HTMLIonInputElement extends HTMLStencilElement {
     */
   var value: js.UndefOr[String | Double | Null] = js.native
 }
-@JSGlobal("HTMLIonInputElement")
-@js.native
-object HTMLIonInputElement extends Instantiable0[HTMLIonInputElement]

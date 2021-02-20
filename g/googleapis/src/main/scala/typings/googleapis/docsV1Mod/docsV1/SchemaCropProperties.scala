@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * cropped.
   */
 @js.native
-trait SchemaCropProperties extends js.Object {
+trait SchemaCropProperties extends StObject {
   
   /**
     * The clockwise rotation angle of the crop rectangle around its center, in
@@ -60,48 +61,36 @@ object SchemaCropProperties {
   }
   
   @scala.inline
-  implicit class SchemaCropPropertiesOps[Self <: SchemaCropProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaCropPropertiesMutableBuilder[Self <: SchemaCropProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetBottom(value: Double): Self = this.set("offsetBottom", value.asInstanceOf[js.Any])
+    def setOffsetLeftUndefined: Self = StObject.set(x, "offsetLeft", js.undefined)
     
     @scala.inline
-    def deleteOffsetBottom: Self = this.set("offsetBottom", js.undefined)
+    def setOffsetRight(value: Double): Self = StObject.set(x, "offsetRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetLeft(value: Double): Self = this.set("offsetLeft", value.asInstanceOf[js.Any])
+    def setOffsetRightUndefined: Self = StObject.set(x, "offsetRight", js.undefined)
     
     @scala.inline
-    def deleteOffsetLeft: Self = this.set("offsetLeft", js.undefined)
+    def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetRight(value: Double): Self = this.set("offsetRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetRight: Self = this.set("offsetRight", js.undefined)
-    
-    @scala.inline
-    def setOffsetTop(value: Double): Self = this.set("offsetTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetTop: Self = this.set("offsetTop", js.undefined)
+    def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
   }
 }

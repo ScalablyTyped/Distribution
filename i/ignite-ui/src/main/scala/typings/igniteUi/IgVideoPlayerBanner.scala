@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,93 +94,81 @@ object IgVideoPlayerBanner {
   }
   
   @scala.inline
-  implicit class IgVideoPlayerBannerOps[Self <: IgVideoPlayerBanner] (val x: Self) extends AnyVal {
+  implicit class IgVideoPlayerBannerMutableBuilder[Self <: IgVideoPlayerBanner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setCloseBanner(value: Boolean): Self = StObject.set(x, "closeBanner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutohide(value: Boolean): Self = this.set("autohide", value.asInstanceOf[js.Any])
+    def setCloseBannerUndefined: Self = StObject.set(x, "closeBanner", js.undefined)
     
     @scala.inline
-    def deleteAutohide: Self = this.set("autohide", js.undefined)
+    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseBanner(value: Boolean): Self = this.set("closeBanner", value.asInstanceOf[js.Any])
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def deleteCloseBanner: Self = this.set("closeBanner", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: String): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setHidedelay(value: Double): Self = StObject.set(x, "hidedelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHidedelayUndefined: Self = StObject.set(x, "hidedelay", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidedelay(value: Double): Self = this.set("hidedelay", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteHidedelay: Self = this.set("hidedelay", js.undefined)
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setTimes(value: js.Array[_]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setTimesVarargs(value: js.Any*): Self = StObject.set(x, "times", js.Array(value :_*))
     
     @scala.inline
-    def setTimesVarargs(value: js.Any*): Self = this.set("times", js.Array(value :_*))
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimes(value: js.Array[_]): Self = this.set("times", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteTimes: Self = this.set("times", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

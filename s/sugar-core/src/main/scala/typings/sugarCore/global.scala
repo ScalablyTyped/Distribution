@@ -1,12 +1,16 @@
 package typings.sugarCore
 
+import typings.sugarCore.sugarjs.Sugar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var Sugar: typings.sugarCore.sugarjs.Sugar = js.native
+  @JSGlobal("Sugar")
+  @js.native
+  def Sugar: typings.sugarCore.sugarjs.Sugar = js.native
+  @scala.inline
+  def Sugar_=(x: Sugar): Unit = js.Dynamic.global.updateDynamic("Sugar")(x.asInstanceOf[js.Any])
 }

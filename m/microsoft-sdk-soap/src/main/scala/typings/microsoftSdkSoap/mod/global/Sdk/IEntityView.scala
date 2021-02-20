@@ -1,11 +1,12 @@
 package typings.microsoftSdkSoap.mod.global.Sdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEntityView extends js.Object {
+trait IEntityView extends StObject {
   
   var attributes: AttributeCollection = js.native
   
@@ -32,33 +33,21 @@ object IEntityView {
   }
   
   @scala.inline
-  implicit class IEntityViewOps[Self <: IEntityView] (val x: Self) extends AnyVal {
+  implicit class IEntityViewMutableBuilder[Self <: IEntityView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: AttributeCollection): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityState(value: EntityState): Self = StObject.set(x, "entityState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: AttributeCollection): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setLogicalName(value: java.lang.String): Self = StObject.set(x, "logicalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityState(value: EntityState): Self = this.set("entityState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: java.lang.String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogicalName(value: java.lang.String): Self = this.set("logicalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelatedEntities(value: RelatedEntityCollection): Self = this.set("relatedEntities", value.asInstanceOf[js.Any])
+    def setRelatedEntities(value: RelatedEntityCollection): Self = StObject.set(x, "relatedEntities", value.asInstanceOf[js.Any])
   }
 }

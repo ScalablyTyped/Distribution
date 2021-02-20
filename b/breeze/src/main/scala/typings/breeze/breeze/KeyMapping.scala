@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyMapping extends js.Object {
+trait KeyMapping extends StObject {
   
   var entityTypeName: String = js.native
   
@@ -22,27 +23,15 @@ object KeyMapping {
   }
   
   @scala.inline
-  implicit class KeyMappingOps[Self <: KeyMapping] (val x: Self) extends AnyVal {
+  implicit class KeyMappingMutableBuilder[Self <: KeyMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityTypeName(value: String): Self = StObject.set(x, "entityTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRealValue(value: js.Any): Self = StObject.set(x, "realValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntityTypeName(value: String): Self = this.set("entityTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRealValue(value: js.Any): Self = this.set("realValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTempValue(value: js.Any): Self = this.set("tempValue", value.asInstanceOf[js.Any])
+    def setTempValue(value: js.Any): Self = StObject.set(x, "tempValue", value.asInstanceOf[js.Any])
   }
 }

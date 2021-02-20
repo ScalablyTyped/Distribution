@@ -1,24 +1,48 @@
 package typings.reactInstantsearch
 
-import typings.react.mod.Component
 import typings.reactInstantsearchCore.mod.InstantSearchProps
+import typings.reactInstantsearchNative.anon.ReadonlyInstantSearchProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-instantsearch/native", JSImport.Namespace)
-@js.native
-object nativeMod extends js.Object {
+object nativeMod {
   
+  @JSImport("react-instantsearch/native", "Configure")
   @js.native
-  class Configure ()
-    extends Component[js.Any, js.Any, js.Any]
+  class Configure protected ()
+    extends typings.reactInstantsearchNative.mod.Configure {
+    def this(props: js.Any) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: js.Any, context: js.Any) = this()
+  }
   
+  @JSImport("react-instantsearch/native", "Index")
   @js.native
-  class Index ()
-    extends Component[js.Any, js.Object, js.Any]
+  class Index protected ()
+    extends typings.reactInstantsearchNative.mod.Index {
+    def this(props: js.Any) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: js.Any, context: js.Any) = this()
+  }
   
+  @JSImport("react-instantsearch/native", "InstantSearch")
   @js.native
-  class InstantSearch ()
-    extends Component[InstantSearchProps, js.Object, js.Any]
+  class InstantSearch protected ()
+    extends typings.reactInstantsearchNative.mod.InstantSearch {
+    def this(props: InstantSearchProps) = this()
+    def this(props: ReadonlyInstantSearchProp) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: InstantSearchProps, context: js.Any) = this()
+  }
 }

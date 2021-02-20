@@ -5,14 +5,14 @@ import typings.angularCompiler.abstractEmitterMod.EmitterVisitorContext
 import typings.angularCompiler.abstractJsEmitterMod.AbstractJsEmitterVisitor
 import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.outputAstMod.Statement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/output/output_jit", JSImport.Namespace)
-@js.native
-object outputJitMod extends js.Object {
+object outputJitMod {
   
+  @JSImport("@angular/compiler/src/output/output_jit", "JitEmitterVisitor")
   @js.native
   class JitEmitterVisitor protected () extends AbstractJsEmitterVisitor {
     def this(reflector: CompileReflector) = this()
@@ -32,8 +32,9 @@ object outputJitMod extends js.Object {
     var reflector: js.Any = js.native
   }
   
+  @JSImport("@angular/compiler/src/output/output_jit", "JitEvaluator")
   @js.native
-  class JitEvaluator () extends js.Object {
+  class JitEvaluator () extends StObject {
     
     /**
       * Evaluate a piece of JIT generated code.

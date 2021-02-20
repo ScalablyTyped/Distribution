@@ -4,6 +4,7 @@ import typings.titanium.AnimatedOptions
 import typings.titanium.MenuPopupShowParams
 import typings.titanium.Titanium.Proxy
 import typings.titanium.titaniumStrings.click
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

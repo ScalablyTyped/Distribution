@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.AppView.EmbedRequest
 import typings.chromeApps.chrome.app.runtime.LaunchData
 import typings.chromeApps.chrome.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofruntime extends js.Object {
+trait Typeofruntime extends StObject {
   
   /** @enum */
   val ActionType: NEWNOTE = js.native
@@ -55,36 +56,24 @@ object Typeofruntime {
   }
   
   @scala.inline
-  implicit class TypeofruntimeOps[Self <: Typeofruntime] (val x: Self) extends AnyVal {
+  implicit class TypeofruntimeMutableBuilder[Self <: Typeofruntime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionType(value: NEWNOTE): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLaunchSource(value: ABOUTPAGE): Self = StObject.set(x, "LaunchSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnEmbedRequested(value: Event[js.Function1[/* request */ EmbedRequest, Unit]]): Self = StObject.set(x, "onEmbedRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionType(value: NEWNOTE): Self = this.set("ActionType", value.asInstanceOf[js.Any])
+    def setOnLaunched(value: Event[js.Function1[/* launchData */ LaunchData, Unit]]): Self = StObject.set(x, "onLaunched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchSource(value: ABOUTPAGE): Self = this.set("LaunchSource", value.asInstanceOf[js.Any])
+    def setOnRestarted(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onRestarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayStoreStatus(value: AVAILABLE): Self = this.set("PlayStoreStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnEmbedRequested(value: Event[js.Function1[/* request */ EmbedRequest, Unit]]): Self = this.set("onEmbedRequested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnLaunched(value: Event[js.Function1[/* launchData */ LaunchData, Unit]]): Self = this.set("onLaunched", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnRestarted(value: Event[js.Function0[Unit]]): Self = this.set("onRestarted", value.asInstanceOf[js.Any])
+    def setPlayStoreStatus(value: AVAILABLE): Self = StObject.set(x, "PlayStoreStatus", value.asInstanceOf[js.Any])
   }
 }

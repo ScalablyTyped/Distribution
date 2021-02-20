@@ -1,12 +1,11 @@
 package typings.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "easing")
-@js.native
-object easing extends js.Object {
+object easing {
   
   /**
     * Start slow and speed up.
@@ -14,6 +13,8 @@ object easing extends js.Object {
     * @return Output between 0 and 1.
     * @api
     */
+  @JSImport("openlayers", "easing.easeIn")
+  @js.native
   def easeIn(t: Double): Double = js.native
   
   /**
@@ -22,6 +23,8 @@ object easing extends js.Object {
     * @return Output between 0 and 1.
     * @api
     */
+  @JSImport("openlayers", "easing.easeOut")
+  @js.native
   def easeOut(t: Double): Double = js.native
   
   /**
@@ -30,6 +33,8 @@ object easing extends js.Object {
     * @return Output between 0 and 1.
     * @api
     */
+  @JSImport("openlayers", "easing.inAndOut")
+  @js.native
   def inAndOut(t: Double): Double = js.native
   
   /**
@@ -38,6 +43,8 @@ object easing extends js.Object {
     * @return Output between 0 and 1.
     * @api
     */
+  @JSImport("openlayers", "easing.linear")
+  @js.native
   def linear(t: Double): Double = js.native
   
   /**
@@ -48,5 +55,7 @@ object easing extends js.Object {
     * @return Output between 0 and 1.
     * @api
     */
+  @JSImport("openlayers", "easing.upAndDown")
+  @js.native
   def upAndDown(t: Double): Double = js.native
 }

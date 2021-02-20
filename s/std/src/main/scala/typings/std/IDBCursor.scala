@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This IndexedDB API interface represents a cursor for traversing or iterating over multiple records in a database. */
 @js.native
-trait IDBCursor extends js.Object {
+trait IDBCursor extends StObject {
   
   /**
     * Advances the cursor through the next count records in range.

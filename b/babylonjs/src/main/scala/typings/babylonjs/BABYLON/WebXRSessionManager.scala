@@ -8,6 +8,7 @@ import typings.babylonjs.XRRenderState
 import typings.babylonjs.XRSession
 import typings.babylonjs.XRSessionInit
 import typings.babylonjs.XRSessionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,14 +31,26 @@ class ImmutableCompilationSettings protected ()
     createFileLog: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.ImmutableCompilationSettings")
-@js.native
-object ImmutableCompilationSettings extends js.Object {
+object ImmutableCompilationSettings {
   
-  var _defaultSettings: js.Any = js.native
+  @JSGlobal("TypeScript.ImmutableCompilationSettings")
+  @js.native
+  val ^ : js.Any = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.ImmutableCompilationSettings._defaultSettings")
+  @js.native
+  def _defaultSettings: js.Any = js.native
+  @scala.inline
+  def _defaultSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultSettings")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("TypeScript.ImmutableCompilationSettings.defaultSettings")
+  @js.native
   def defaultSettings(): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.ImmutableCompilationSettings.fromCompilationSettings")
+  @js.native
   def fromCompilationSettings(settings: typings.typescriptServices.TypeScript.CompilationSettings): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = js.native
 }

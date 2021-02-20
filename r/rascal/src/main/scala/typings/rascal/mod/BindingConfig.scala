@@ -2,12 +2,13 @@ package typings.rascal.mod
 
 import typings.rascal.rascalStrings.exchange
 import typings.rascal.rascalStrings.queue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindingConfig extends js.Object {
+trait BindingConfig extends StObject {
   
   var bindingKey: js.UndefOr[String] = js.native
   
@@ -30,57 +31,45 @@ object BindingConfig {
   }
   
   @scala.inline
-  implicit class BindingConfigOps[Self <: BindingConfig] (val x: Self) extends AnyVal {
+  implicit class BindingConfigMutableBuilder[Self <: BindingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindingKey(value: String): Self = StObject.set(x, "bindingKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingKeyUndefined: Self = StObject.set(x, "bindingKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindingKeys(value: js.Array[String]): Self = StObject.set(x, "bindingKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingKey(value: String): Self = this.set("bindingKey", value.asInstanceOf[js.Any])
+    def setBindingKeysUndefined: Self = StObject.set(x, "bindingKeys", js.undefined)
     
     @scala.inline
-    def deleteBindingKey: Self = this.set("bindingKey", js.undefined)
+    def setBindingKeysVarargs(value: String*): Self = StObject.set(x, "bindingKeys", js.Array(value :_*))
     
     @scala.inline
-    def setBindingKeysVarargs(value: String*): Self = this.set("bindingKeys", js.Array(value :_*))
+    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingKeys(value: js.Array[String]): Self = this.set("bindingKeys", value.asInstanceOf[js.Any])
+    def setDestinationType(value: queue | exchange): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBindingKeys: Self = this.set("bindingKeys", js.undefined)
+    def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationType(value: queue | exchange): Self = this.set("destinationType", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteDestinationType: Self = this.set("destinationType", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

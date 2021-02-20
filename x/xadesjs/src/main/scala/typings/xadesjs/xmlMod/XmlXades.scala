@@ -1,27 +1,50 @@
 package typings.xadesjs.xmlMod
 
 import typings.xadesjs.anon.Encoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml", "XmlXades")
-@js.native
-object XmlXades extends js.Object {
+object XmlXades {
   
-  var AttributeNames: Encoding = js.native
+  @JSImport("xadesjs/build/types/xml", "XmlXades")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var DefaultPrefix: String = js.native
+  @JSImport("xadesjs/build/types/xml", "XmlXades.AttributeNames")
+  @js.native
+  def AttributeNames: Encoding = js.native
+  @scala.inline
+  def AttributeNames_=(x: Encoding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AttributeNames")(x.asInstanceOf[js.Any])
   
-  var ElementNames: typings.xadesjs.anon.AllDataObjectsTimeStamp = js.native
+  @JSImport("xadesjs/build/types/xml", "XmlXades.DefaultPrefix")
+  @js.native
+  def DefaultPrefix: String = js.native
+  @scala.inline
+  def DefaultPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultPrefix")(x.asInstanceOf[js.Any])
+  
+  @JSImport("xadesjs/build/types/xml", "XmlXades.ElementNames")
+  @js.native
+  def ElementNames: typings.xadesjs.anon.AllDataObjectsTimeStamp = js.native
+  @scala.inline
+  def ElementNames_=(x: typings.xadesjs.anon.AllDataObjectsTimeStamp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ElementNames")(x.asInstanceOf[js.Any])
   
   /**
     * The XAdES XML namespace URI
     */
-  var NamespaceURI: String = js.native
+  @JSImport("xadesjs/build/types/xml", "XmlXades.NamespaceURI")
+  @js.native
+  def NamespaceURI: String = js.native
+  @scala.inline
+  def NamespaceURI_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NamespaceURI")(x.asInstanceOf[js.Any])
   
   /**
     * Mandated type name for the Uri reference to the SignedProperties element
     */
-  var SignedPropertiesType: String = js.native
+  @JSImport("xadesjs/build/types/xml", "XmlXades.SignedPropertiesType")
+  @js.native
+  def SignedPropertiesType: String = js.native
+  @scala.inline
+  def SignedPropertiesType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SignedPropertiesType")(x.asInstanceOf[js.Any])
 }

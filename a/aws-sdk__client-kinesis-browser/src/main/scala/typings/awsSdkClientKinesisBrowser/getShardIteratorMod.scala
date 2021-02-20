@@ -1,12 +1,13 @@
 package typings.awsSdkClientKinesisBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/model/GetShardIterator", JSImport.Namespace)
-@js.native
-object getShardIteratorMod extends js.Object {
+object getShardIteratorMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/model/GetShardIterator", "GetShardIterator")
+  @js.native
   val GetShardIterator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

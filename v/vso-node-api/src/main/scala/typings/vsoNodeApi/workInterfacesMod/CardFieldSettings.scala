@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CardFieldSettings extends js.Object {
+trait CardFieldSettings extends StObject {
   
   /**
     * A collection of field information of additional fields on cards. The index in the collection signifies the order of the field among the additional fields. Currently unused. Should be used with User Story 691539: Card setting: additional fields
@@ -65,48 +66,36 @@ object CardFieldSettings {
   }
   
   @scala.inline
-  implicit class CardFieldSettingsOps[Self <: CardFieldSettings] (val x: Self) extends AnyVal {
+  implicit class CardFieldSettingsMutableBuilder[Self <: CardFieldSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalFields(value: js.Array[FieldInfo]): Self = StObject.set(x, "additionalFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalFieldsVarargs(value: FieldInfo*): Self = StObject.set(x, "additionalFields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignedToDisplayFormat(value: IdentityDisplayFormat): Self = StObject.set(x, "assignedToDisplayFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalFieldsVarargs(value: FieldInfo*): Self = this.set("additionalFields", js.Array(value :_*))
+    def setCoreFields(value: js.Array[FieldInfo]): Self = StObject.set(x, "coreFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalFields(value: js.Array[FieldInfo]): Self = this.set("additionalFields", value.asInstanceOf[js.Any])
+    def setCoreFieldsVarargs(value: FieldInfo*): Self = StObject.set(x, "coreFields", js.Array(value :_*))
     
     @scala.inline
-    def setAssignedToDisplayFormat(value: IdentityDisplayFormat): Self = this.set("assignedToDisplayFormat", value.asInstanceOf[js.Any])
+    def setShowAssignedTo(value: Boolean): Self = StObject.set(x, "showAssignedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreFieldsVarargs(value: FieldInfo*): Self = this.set("coreFields", js.Array(value :_*))
+    def setShowEmptyFields(value: Boolean): Self = StObject.set(x, "showEmptyFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreFields(value: js.Array[FieldInfo]): Self = this.set("coreFields", value.asInstanceOf[js.Any])
+    def setShowId(value: Boolean): Self = StObject.set(x, "showId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAssignedTo(value: Boolean): Self = this.set("showAssignedTo", value.asInstanceOf[js.Any])
+    def setShowState(value: Boolean): Self = StObject.set(x, "showState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEmptyFields(value: Boolean): Self = this.set("showEmptyFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowId(value: Boolean): Self = this.set("showId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowState(value: Boolean): Self = this.set("showState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowTags(value: Boolean): Self = this.set("showTags", value.asInstanceOf[js.Any])
+    def setShowTags(value: Boolean): Self = StObject.set(x, "showTags", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DimensionValueRequest extends js.Object {
+trait DimensionValueRequest extends StObject {
   
   /** The name of the dimension for which values should be requested. */
   var dimensionName: js.UndefOr[String] = js.native
@@ -29,51 +30,39 @@ object DimensionValueRequest {
   }
   
   @scala.inline
-  implicit class DimensionValueRequestOps[Self <: DimensionValueRequest] (val x: Self) extends AnyVal {
+  implicit class DimensionValueRequestMutableBuilder[Self <: DimensionValueRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionName(value: String): Self = this.set("dimensionName", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteDimensionName: Self = this.set("dimensionName", js.undefined)
+    def setFilters(value: js.Array[DimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setFiltersVarargs(value: DimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: DimensionFilter*): Self = this.set("filters", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[DimensionFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

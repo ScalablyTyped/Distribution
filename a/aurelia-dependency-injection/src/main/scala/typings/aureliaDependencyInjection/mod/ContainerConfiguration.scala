@@ -1,12 +1,13 @@
 package typings.aureliaDependencyInjection.mod
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerConfiguration extends js.Object {
+trait ContainerConfiguration extends StObject {
   
   var handlers: js.UndefOr[Map[_, _]] = js.native
   
@@ -23,30 +24,18 @@ object ContainerConfiguration {
   }
   
   @scala.inline
-  implicit class ContainerConfigurationOps[Self <: ContainerConfiguration] (val x: Self) extends AnyVal {
+  implicit class ContainerConfigurationMutableBuilder[Self <: ContainerConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandlers(value: Map[_, _]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnHandlerCreated(value: /* handler */ InvocationHandler[_, _, _] => InvocationHandler[_, _, _]): Self = StObject.set(x, "onHandlerCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandlers(value: Map[_, _]): Self = this.set("handlers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandlers: Self = this.set("handlers", js.undefined)
-    
-    @scala.inline
-    def setOnHandlerCreated(value: /* handler */ InvocationHandler[_, _, _] => InvocationHandler[_, _, _]): Self = this.set("onHandlerCreated", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnHandlerCreated: Self = this.set("onHandlerCreated", js.undefined)
+    def setOnHandlerCreatedUndefined: Self = StObject.set(x, "onHandlerCreated", js.undefined)
   }
 }

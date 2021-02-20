@@ -1,11 +1,12 @@
 package typings.systeminformation.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Autokeep extends js.Object {
+trait Autokeep extends StObject {
   
   var auto_keep: Boolean = js.native
   
@@ -41,42 +42,30 @@ object Autokeep {
   }
   
   @scala.inline
-  implicit class AutokeepOps[Self <: Autokeep] (val x: Self) extends AnyVal {
+  implicit class AutokeepMutableBuilder[Self <: Autokeep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto_keep(value: Boolean): Self = StObject.set(x, "auto_keep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError_rate(value: Boolean): Self = StObject.set(x, "error_rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent_count(value: Boolean): Self = StObject.set(x, "event_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto_keep(value: Boolean): Self = this.set("auto_keep", value.asInstanceOf[js.Any])
+    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_rate(value: Boolean): Self = this.set("error_rate", value.asInstanceOf[js.Any])
+    def setPrefailure(value: Boolean): Self = StObject.set(x, "prefailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent_count(value: Boolean): Self = this.set("event_count", value.asInstanceOf[js.Any])
+    def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformance(value: Boolean): Self = this.set("performance", value.asInstanceOf[js.Any])
+    def setUpdated_online(value: Boolean): Self = StObject.set(x, "updated_online", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefailure(value: Boolean): Self = this.set("prefailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: java.lang.String): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_online(value: Boolean): Self = this.set("updated_online", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

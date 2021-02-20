@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1LabelVideoRequest extends js.Object {
+trait GoogleCloudDatalabelingV1beta1LabelVideoRequest extends StObject {
   
   /** Required. Basic human annotation config. */
   var basicConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1HumanAnnotationConfig] = js.native
@@ -34,54 +35,42 @@ object GoogleCloudDatalabelingV1beta1LabelVideoRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1LabelVideoRequestOps[Self <: GoogleCloudDatalabelingV1beta1LabelVideoRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1LabelVideoRequestMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1LabelVideoRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasicConfig(value: GoogleCloudDatalabelingV1beta1HumanAnnotationConfig): Self = StObject.set(x, "basicConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasicConfigUndefined: Self = StObject.set(x, "basicConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventConfig(value: GoogleCloudDatalabelingV1beta1EventConfig): Self = StObject.set(x, "eventConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicConfig(value: GoogleCloudDatalabelingV1beta1HumanAnnotationConfig): Self = this.set("basicConfig", value.asInstanceOf[js.Any])
+    def setEventConfigUndefined: Self = StObject.set(x, "eventConfig", js.undefined)
     
     @scala.inline
-    def deleteBasicConfig: Self = this.set("basicConfig", js.undefined)
+    def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventConfig(value: GoogleCloudDatalabelingV1beta1EventConfig): Self = this.set("eventConfig", value.asInstanceOf[js.Any])
+    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
     @scala.inline
-    def deleteEventConfig: Self = this.set("eventConfig", js.undefined)
+    def setObjectDetectionConfig(value: GoogleCloudDatalabelingV1beta1ObjectDetectionConfig): Self = StObject.set(x, "objectDetectionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeature(value: String): Self = this.set("feature", value.asInstanceOf[js.Any])
+    def setObjectDetectionConfigUndefined: Self = StObject.set(x, "objectDetectionConfig", js.undefined)
     
     @scala.inline
-    def deleteFeature: Self = this.set("feature", js.undefined)
+    def setObjectTrackingConfig(value: GoogleCloudDatalabelingV1beta1ObjectTrackingConfig): Self = StObject.set(x, "objectTrackingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectDetectionConfig(value: GoogleCloudDatalabelingV1beta1ObjectDetectionConfig): Self = this.set("objectDetectionConfig", value.asInstanceOf[js.Any])
+    def setObjectTrackingConfigUndefined: Self = StObject.set(x, "objectTrackingConfig", js.undefined)
     
     @scala.inline
-    def deleteObjectDetectionConfig: Self = this.set("objectDetectionConfig", js.undefined)
+    def setVideoClassificationConfig(value: GoogleCloudDatalabelingV1beta1VideoClassificationConfig): Self = StObject.set(x, "videoClassificationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectTrackingConfig(value: GoogleCloudDatalabelingV1beta1ObjectTrackingConfig): Self = this.set("objectTrackingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectTrackingConfig: Self = this.set("objectTrackingConfig", js.undefined)
-    
-    @scala.inline
-    def setVideoClassificationConfig(value: GoogleCloudDatalabelingV1beta1VideoClassificationConfig): Self = this.set("videoClassificationConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoClassificationConfig: Self = this.set("videoClassificationConfig", js.undefined)
+    def setVideoClassificationConfigUndefined: Self = StObject.set(x, "videoClassificationConfig", js.undefined)
   }
 }

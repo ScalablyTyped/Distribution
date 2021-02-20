@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebSocketCreatedEvent extends js.Object {
+trait WebSocketCreatedEvent extends StObject {
   
   /**
     * Request initiator.
@@ -31,30 +32,18 @@ object WebSocketCreatedEvent {
   }
   
   @scala.inline
-  implicit class WebSocketCreatedEventOps[Self <: WebSocketCreatedEvent] (val x: Self) extends AnyVal {
+  implicit class WebSocketCreatedEventMutableBuilder[Self <: WebSocketCreatedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitiator(value: Initiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitiator(value: Initiator): Self = this.set("initiator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitiator: Self = this.set("initiator", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

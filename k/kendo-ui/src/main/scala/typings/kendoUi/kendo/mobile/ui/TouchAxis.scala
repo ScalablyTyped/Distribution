@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TouchAxis extends js.Object {
+trait TouchAxis extends StObject {
   
   var client: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object TouchAxis {
   }
   
   @scala.inline
-  implicit class TouchAxisOps[Self <: TouchAxis] (val x: Self) extends AnyVal {
+  implicit class TouchAxisMutableBuilder[Self <: TouchAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: Double): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: Double): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
+    def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteDelta: Self = this.set("delta", js.undefined)
+    def setStartLocation(value: Double): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Double): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartLocation(value: Double): Self = this.set("startLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartLocation: Self = this.set("startLocation", js.undefined)
-    
-    @scala.inline
-    def setVelocity(value: Double): Self = this.set("velocity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocity: Self = this.set("velocity", js.undefined)
+    def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
   }
 }

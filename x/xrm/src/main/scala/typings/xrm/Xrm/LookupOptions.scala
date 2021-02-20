@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for options used in Xrm.Utility.lookupObjects
   */
 @js.native
-trait LookupOptions extends js.Object {
+trait LookupOptions extends StObject {
   
   /**
     * Indicates whether the lookup allows more than one item to be selected.
@@ -49,60 +50,48 @@ object LookupOptions {
   }
   
   @scala.inline
-  implicit class LookupOptionsOps[Self <: LookupOptions] (val x: Self) extends AnyVal {
+  implicit class LookupOptionsMutableBuilder[Self <: LookupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultiSelect(value: Boolean): Self = StObject.set(x, "allowMultiSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowMultiSelectUndefined: Self = StObject.set(x, "allowMultiSelect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultEntityType(value: String): Self = StObject.set(x, "defaultEntityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultiSelect(value: Boolean): Self = this.set("allowMultiSelect", value.asInstanceOf[js.Any])
+    def setDefaultEntityTypeUndefined: Self = StObject.set(x, "defaultEntityType", js.undefined)
     
     @scala.inline
-    def deleteAllowMultiSelect: Self = this.set("allowMultiSelect", js.undefined)
+    def setDefaultViewId(value: String): Self = StObject.set(x, "defaultViewId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEntityType(value: String): Self = this.set("defaultEntityType", value.asInstanceOf[js.Any])
+    def setDefaultViewIdUndefined: Self = StObject.set(x, "defaultViewId", js.undefined)
     
     @scala.inline
-    def deleteDefaultEntityType: Self = this.set("defaultEntityType", js.undefined)
+    def setEntityTypes(value: js.Array[String]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultViewId(value: String): Self = this.set("defaultViewId", value.asInstanceOf[js.Any])
+    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
     @scala.inline
-    def deleteDefaultViewId: Self = this.set("defaultViewId", js.undefined)
+    def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEntityTypesVarargs(value: String*): Self = this.set("entityTypes", js.Array(value :_*))
+    def setShowBarcodeScanner(value: Boolean): Self = StObject.set(x, "showBarcodeScanner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypes(value: js.Array[String]): Self = this.set("entityTypes", value.asInstanceOf[js.Any])
+    def setShowBarcodeScannerUndefined: Self = StObject.set(x, "showBarcodeScanner", js.undefined)
     
     @scala.inline
-    def deleteEntityTypes: Self = this.set("entityTypes", js.undefined)
+    def setViewIds(value: js.Array[String]): Self = StObject.set(x, "viewIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBarcodeScanner(value: Boolean): Self = this.set("showBarcodeScanner", value.asInstanceOf[js.Any])
+    def setViewIdsUndefined: Self = StObject.set(x, "viewIds", js.undefined)
     
     @scala.inline
-    def deleteShowBarcodeScanner: Self = this.set("showBarcodeScanner", js.undefined)
-    
-    @scala.inline
-    def setViewIdsVarargs(value: String*): Self = this.set("viewIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setViewIds(value: js.Array[String]): Self = this.set("viewIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewIds: Self = this.set("viewIds", js.undefined)
+    def setViewIdsVarargs(value: String*): Self = StObject.set(x, "viewIds", js.Array(value :_*))
   }
 }

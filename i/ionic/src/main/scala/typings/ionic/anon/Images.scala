@@ -1,12 +1,13 @@
 package typings.ionic.anon
 
 import typings.ionic.definitionsMod.ResourcesImageConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Images extends js.Object {
+trait Images extends StObject {
   
   var images: js.Array[ResourcesImageConfig] = js.native
   
@@ -23,33 +24,21 @@ object Images {
   }
   
   @scala.inline
-  implicit class ImagesOps[Self <: Images] (val x: Self) extends AnyVal {
+  implicit class ImagesMutableBuilder[Self <: Images] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImages(value: js.Array[ResourcesImageConfig]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagesVarargs(value: ResourcesImageConfig*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeAttributes(value: js.Array[String]): Self = StObject.set(x, "nodeAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: ResourcesImageConfig*): Self = this.set("images", js.Array(value :_*))
+    def setNodeAttributesVarargs(value: String*): Self = StObject.set(x, "nodeAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setImages(value: js.Array[ResourcesImageConfig]): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeAttributesVarargs(value: String*): Self = this.set("nodeAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setNodeAttributes(value: js.Array[String]): Self = this.set("nodeAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeName(value: String): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
   }
 }

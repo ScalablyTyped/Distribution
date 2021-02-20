@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Settings extends js.Object {
+trait Settings extends StObject {
   
   /**
     * Instructs Amazon Transcribe to process each audio channel separately and then merge the transcription output of each channel into a single transcription.  Amazon Transcribe also produces a transcription of each item detected on an audio channel, including the start time and end time of the item and alternative transcriptions of the item including the confidence that Amazon Transcribe has in the transcription. You can't set both ShowSpeakerLabels and ChannelIdentification in the same request. If you set both, your request returns a BadRequestException.
@@ -56,66 +57,54 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelIdentification(value: Boolean): Self = StObject.set(x, "ChannelIdentification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelIdentificationUndefined: Self = StObject.set(x, "ChannelIdentification", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxAlternatives(value: MaxAlternatives): Self = StObject.set(x, "MaxAlternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelIdentification(value: Boolean): Self = this.set("ChannelIdentification", value.asInstanceOf[js.Any])
+    def setMaxAlternativesUndefined: Self = StObject.set(x, "MaxAlternatives", js.undefined)
     
     @scala.inline
-    def deleteChannelIdentification: Self = this.set("ChannelIdentification", js.undefined)
+    def setMaxSpeakerLabels(value: MaxSpeakers): Self = StObject.set(x, "MaxSpeakerLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAlternatives(value: MaxAlternatives): Self = this.set("MaxAlternatives", value.asInstanceOf[js.Any])
+    def setMaxSpeakerLabelsUndefined: Self = StObject.set(x, "MaxSpeakerLabels", js.undefined)
     
     @scala.inline
-    def deleteMaxAlternatives: Self = this.set("MaxAlternatives", js.undefined)
+    def setShowAlternatives(value: Boolean): Self = StObject.set(x, "ShowAlternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSpeakerLabels(value: MaxSpeakers): Self = this.set("MaxSpeakerLabels", value.asInstanceOf[js.Any])
+    def setShowAlternativesUndefined: Self = StObject.set(x, "ShowAlternatives", js.undefined)
     
     @scala.inline
-    def deleteMaxSpeakerLabels: Self = this.set("MaxSpeakerLabels", js.undefined)
+    def setShowSpeakerLabels(value: Boolean): Self = StObject.set(x, "ShowSpeakerLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAlternatives(value: Boolean): Self = this.set("ShowAlternatives", value.asInstanceOf[js.Any])
+    def setShowSpeakerLabelsUndefined: Self = StObject.set(x, "ShowSpeakerLabels", js.undefined)
     
     @scala.inline
-    def deleteShowAlternatives: Self = this.set("ShowAlternatives", js.undefined)
+    def setVocabularyFilterMethod(value: VocabularyFilterMethod): Self = StObject.set(x, "VocabularyFilterMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSpeakerLabels(value: Boolean): Self = this.set("ShowSpeakerLabels", value.asInstanceOf[js.Any])
+    def setVocabularyFilterMethodUndefined: Self = StObject.set(x, "VocabularyFilterMethod", js.undefined)
     
     @scala.inline
-    def deleteShowSpeakerLabels: Self = this.set("ShowSpeakerLabels", js.undefined)
+    def setVocabularyFilterName(value: VocabularyFilterName): Self = StObject.set(x, "VocabularyFilterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVocabularyFilterMethod(value: VocabularyFilterMethod): Self = this.set("VocabularyFilterMethod", value.asInstanceOf[js.Any])
+    def setVocabularyFilterNameUndefined: Self = StObject.set(x, "VocabularyFilterName", js.undefined)
     
     @scala.inline
-    def deleteVocabularyFilterMethod: Self = this.set("VocabularyFilterMethod", js.undefined)
+    def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVocabularyFilterName(value: VocabularyFilterName): Self = this.set("VocabularyFilterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVocabularyFilterName: Self = this.set("VocabularyFilterName", js.undefined)
-    
-    @scala.inline
-    def setVocabularyName(value: VocabularyName): Self = this.set("VocabularyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVocabularyName: Self = this.set("VocabularyName", js.undefined)
+    def setVocabularyNameUndefined: Self = StObject.set(x, "VocabularyName", js.undefined)
   }
 }

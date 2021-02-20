@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,111 +100,99 @@ object TestScriptVariable {
   }
   
   @scala.inline
-  implicit class TestScriptVariableOps[Self <: TestScriptVariable] (val x: Self) extends AnyVal {
+  implicit class TestScriptVariableMutableBuilder[Self <: TestScriptVariable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set_defaultValue(value: Element): Self = this.set("_defaultValue", value.asInstanceOf[js.Any])
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_defaultValue: Self = this.set("_defaultValue", js.undefined)
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setHeaderField(value: String): Self = StObject.set(x, "headerField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setHeaderFieldUndefined: Self = StObject.set(x, "headerField", js.undefined)
     
     @scala.inline
-    def set_expression(value: Element): Self = this.set("_expression", value.asInstanceOf[js.Any])
+    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_expression: Self = this.set("_expression", js.undefined)
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
     @scala.inline
-    def set_headerField(value: Element): Self = this.set("_headerField", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_headerField: Self = this.set("_headerField", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_hint(value: Element): Self = this.set("_hint", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def delete_hint: Self = this.set("_hint", js.undefined)
+    def setSourceId(value: id): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def set_defaultValue(value: Element): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_path(value: Element): Self = this.set("_path", value.asInstanceOf[js.Any])
+    def set_defaultValueUndefined: Self = StObject.set(x, "_defaultValue", js.undefined)
     
     @scala.inline
-    def delete_path: Self = this.set("_path", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sourceId(value: Element): Self = this.set("_sourceId", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def delete_sourceId: Self = this.set("_sourceId", js.undefined)
+    def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def set_headerField(value: Element): Self = StObject.set(x, "_headerField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def set_headerFieldUndefined: Self = StObject.set(x, "_headerField", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def set_hint(value: Element): Self = StObject.set(x, "_hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def set_hintUndefined: Self = StObject.set(x, "_hint", js.undefined)
     
     @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderField(value: String): Self = this.set("headerField", value.asInstanceOf[js.Any])
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def deleteHeaderField: Self = this.set("headerField", js.undefined)
+    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: String): Self = this.set("hint", value.asInstanceOf[js.Any])
+    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
     
     @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
+    def set_sourceId(value: Element): Self = StObject.set(x, "_sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setSourceId(value: id): Self = this.set("sourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceId: Self = this.set("sourceId", js.undefined)
+    def set_sourceIdUndefined: Self = StObject.set(x, "_sourceId", js.undefined)
   }
 }

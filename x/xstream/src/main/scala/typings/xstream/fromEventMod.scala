@@ -5,18 +5,24 @@ import typings.std.Event
 import typings.std.EventTarget
 import typings.xstream.mod.InternalProducer
 import typings.xstream.mod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xstream/extra/fromEvent", JSImport.Namespace)
-@js.native
-object fromEventMod extends js.Object {
+object fromEventMod {
   
+  @JSImport("xstream/extra/fromEvent", JSImport.Default)
+  @js.native
   def default[T](element: EventEmitter, eventName: String): Stream[T] = js.native
+  @JSImport("xstream/extra/fromEvent", JSImport.Default)
+  @js.native
   def default[T /* <: Event */](element: EventTarget, eventName: String): Stream[T] = js.native
+  @JSImport("xstream/extra/fromEvent", JSImport.Default)
+  @js.native
   def default[T /* <: Event */](element: EventTarget, eventName: String, useCapture: Boolean): Stream[T] = js.native
   
+  @JSImport("xstream/extra/fromEvent", "DOMEventProducer")
   @js.native
   class DOMEventProducer protected () extends InternalProducer[Event] {
     def this(node: EventTarget, eventType: String, useCapture: Boolean) = this()
@@ -32,6 +38,7 @@ object fromEventMod extends js.Object {
     var useCapture: js.Any = js.native
   }
   
+  @JSImport("xstream/extra/fromEvent", "NodeEventProducer")
   @js.native
   class NodeEventProducer protected ()
     extends InternalProducer[js.Any] {

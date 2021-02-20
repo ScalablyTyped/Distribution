@@ -1,14 +1,14 @@
 package typings.three
 
 import typings.three.ellipseCurveMod.EllipseCurve
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/extras/curves/ArcCurve", JSImport.Namespace)
-@js.native
-object arcCurveMod extends js.Object {
+object arcCurveMod {
   
+  @JSImport("three/src/extras/curves/ArcCurve", "ArcCurve")
   @js.native
   class ArcCurve protected () extends EllipseCurve {
     def this(

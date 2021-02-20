@@ -1,5 +1,6 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ionic.ionicStrings.bitbucket_cloud
   - typings.ionic.ionicStrings.bitbucket_server
 */
-trait AssociationType extends js.Object
+trait AssociationType extends StObject
 object AssociationType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PanoramaPov extends js.Object {
+trait PanoramaPov extends StObject {
   
   var fov: Double = js.native
   
@@ -22,27 +23,15 @@ object PanoramaPov {
   }
   
   @scala.inline
-  implicit class PanoramaPovOps[Self <: PanoramaPov] (val x: Self) extends AnyVal {
+  implicit class PanoramaPovMutableBuilder[Self <: PanoramaPov] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFov(value: Double): Self = this.set("fov", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPan(value: Double): Self = this.set("pan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTilt(value: Double): Self = this.set("tilt", value.asInstanceOf[js.Any])
+    def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
   }
 }

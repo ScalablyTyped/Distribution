@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLoadBalancerTlsCertificateRequest extends js.Object {
+trait CreateLoadBalancerTlsCertificateRequest extends StObject {
   
   /**
     * An array of strings listing alternative domains and subdomains for your SSL/TLS certificate. Lightsail will de-dupe the names for you. You can have a maximum of 9 alternative names (in addition to the 1 primary domain). We do not support wildcards (e.g., *.example.com).
@@ -41,45 +42,33 @@ object CreateLoadBalancerTlsCertificateRequest {
   }
   
   @scala.inline
-  implicit class CreateLoadBalancerTlsCertificateRequestOps[Self <: CreateLoadBalancerTlsCertificateRequest] (val x: Self) extends AnyVal {
+  implicit class CreateLoadBalancerTlsCertificateRequestMutableBuilder[Self <: CreateLoadBalancerTlsCertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateAlternativeNames(value: DomainNameList): Self = StObject.set(x, "certificateAlternativeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateAlternativeNamesUndefined: Self = StObject.set(x, "certificateAlternativeNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateAlternativeNamesVarargs(value: DomainName*): Self = StObject.set(x, "certificateAlternativeNames", js.Array(value :_*))
     
     @scala.inline
-    def setCertificateDomainName(value: DomainName): Self = this.set("certificateDomainName", value.asInstanceOf[js.Any])
+    def setCertificateDomainName(value: DomainName): Self = StObject.set(x, "certificateDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateName(value: ResourceName): Self = this.set("certificateName", value.asInstanceOf[js.Any])
+    def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerName(value: ResourceName): Self = this.set("loadBalancerName", value.asInstanceOf[js.Any])
+    def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateAlternativeNamesVarargs(value: DomainName*): Self = this.set("certificateAlternativeNames", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateAlternativeNames(value: DomainNameList): Self = this.set("certificateAlternativeNames", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteCertificateAlternativeNames: Self = this.set("certificateAlternativeNames", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

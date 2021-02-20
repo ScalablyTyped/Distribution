@@ -5,12 +5,13 @@ import typings.activexOffice.activexOfficeNumbers.`1`
 import typings.activexOffice.activexOfficeNumbers.`2`
 import typings.activexOffice.activexOfficeNumbers.`3`
 import typings.activexOffice.activexOfficeNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandBarControls extends js.Object {
+trait CommandBarControls extends StObject {
   
   def apply(Index: String): CommandBarControl = js.native
   def apply(Index: Double): CommandBarControl = js.native

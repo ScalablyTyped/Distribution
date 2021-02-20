@@ -1,5 +1,6 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.servicenowLondon.servicenowLondonStrings.INSTANCEOF
   - typings.servicenowLondon.servicenowLondonStrings.SAMEAS
 */
-trait QueryOperator extends js.Object
+trait QueryOperator extends StObject
 object QueryOperator {
   
   @scala.inline

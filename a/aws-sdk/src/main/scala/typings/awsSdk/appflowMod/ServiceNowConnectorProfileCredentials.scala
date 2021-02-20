@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceNowConnectorProfileCredentials extends js.Object {
+trait ServiceNowConnectorProfileCredentials extends StObject {
   
   /**
     *  The password that corresponds to the user name. 
@@ -26,24 +27,12 @@ object ServiceNowConnectorProfileCredentials {
   }
   
   @scala.inline
-  implicit class ServiceNowConnectorProfileCredentialsOps[Self <: ServiceNowConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  implicit class ServiceNowConnectorProfileCredentialsMutableBuilder[Self <: ServiceNowConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPassword(value: Password): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: Username): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

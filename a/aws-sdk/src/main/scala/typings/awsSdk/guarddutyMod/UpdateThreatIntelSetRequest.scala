@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateThreatIntelSetRequest extends js.Object {
+trait UpdateThreatIntelSetRequest extends StObject {
   
   /**
     * The updated Boolean value that specifies whether the ThreateIntelSet is active or not.
@@ -41,42 +42,30 @@ object UpdateThreatIntelSetRequest {
   }
   
   @scala.inline
-  implicit class UpdateThreatIntelSetRequestOps[Self <: UpdateThreatIntelSetRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateThreatIntelSetRequestMutableBuilder[Self <: UpdateThreatIntelSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: Boolean): Self = StObject.set(x, "Activate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivateUndefined: Self = StObject.set(x, "Activate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
+    def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreatIntelSetId(value: String): Self = this.set("ThreatIntelSetId", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     @scala.inline
-    def setActivate(value: Boolean): Self = this.set("Activate", value.asInstanceOf[js.Any])
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivate: Self = this.set("Activate", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("Location", js.undefined)
-    
-    @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setThreatIntelSetId(value: String): Self = StObject.set(x, "ThreatIntelSetId", value.asInstanceOf[js.Any])
   }
 }

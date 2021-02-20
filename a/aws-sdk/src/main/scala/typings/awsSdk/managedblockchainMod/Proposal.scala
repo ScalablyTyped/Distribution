@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Proposal extends js.Object {
+trait Proposal extends StObject {
   
   /**
     * The actions to perform on the network if the proposal is APPROVED.
@@ -76,90 +77,78 @@ object Proposal {
   }
   
   @scala.inline
-  implicit class ProposalOps[Self <: Proposal] (val x: Self) extends AnyVal {
+  implicit class ProposalMutableBuilder[Self <: Proposal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: ProposalActions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: ProposalActions): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("Actions", js.undefined)
+    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: Timestamp): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
     
     @scala.inline
-    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    def setNoVoteCount(value: VoteCount): Self = StObject.set(x, "NoVoteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = this.set("NetworkId", value.asInstanceOf[js.Any])
+    def setNoVoteCountUndefined: Self = StObject.set(x, "NoVoteCount", js.undefined)
     
     @scala.inline
-    def deleteNetworkId: Self = this.set("NetworkId", js.undefined)
+    def setOutstandingVoteCount(value: VoteCount): Self = StObject.set(x, "OutstandingVoteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoVoteCount(value: VoteCount): Self = this.set("NoVoteCount", value.asInstanceOf[js.Any])
+    def setOutstandingVoteCountUndefined: Self = StObject.set(x, "OutstandingVoteCount", js.undefined)
     
     @scala.inline
-    def deleteNoVoteCount: Self = this.set("NoVoteCount", js.undefined)
+    def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutstandingVoteCount(value: VoteCount): Self = this.set("OutstandingVoteCount", value.asInstanceOf[js.Any])
+    def setProposalIdUndefined: Self = StObject.set(x, "ProposalId", js.undefined)
     
     @scala.inline
-    def deleteOutstandingVoteCount: Self = this.set("OutstandingVoteCount", js.undefined)
+    def setProposedByMemberId(value: ResourceIdString): Self = StObject.set(x, "ProposedByMemberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposalId(value: ResourceIdString): Self = this.set("ProposalId", value.asInstanceOf[js.Any])
+    def setProposedByMemberIdUndefined: Self = StObject.set(x, "ProposedByMemberId", js.undefined)
     
     @scala.inline
-    def deleteProposalId: Self = this.set("ProposalId", js.undefined)
+    def setProposedByMemberName(value: NetworkMemberNameString): Self = StObject.set(x, "ProposedByMemberName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposedByMemberId(value: ResourceIdString): Self = this.set("ProposedByMemberId", value.asInstanceOf[js.Any])
+    def setProposedByMemberNameUndefined: Self = StObject.set(x, "ProposedByMemberName", js.undefined)
     
     @scala.inline
-    def deleteProposedByMemberId: Self = this.set("ProposedByMemberId", js.undefined)
+    def setStatus(value: ProposalStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposedByMemberName(value: NetworkMemberNameString): Self = this.set("ProposedByMemberName", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteProposedByMemberName: Self = this.set("ProposedByMemberName", js.undefined)
+    def setYesVoteCount(value: VoteCount): Self = StObject.set(x, "YesVoteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ProposalStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setYesVoteCount(value: VoteCount): Self = this.set("YesVoteCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYesVoteCount: Self = this.set("YesVoteCount", js.undefined)
+    def setYesVoteCountUndefined: Self = StObject.set(x, "YesVoteCount", js.undefined)
   }
 }

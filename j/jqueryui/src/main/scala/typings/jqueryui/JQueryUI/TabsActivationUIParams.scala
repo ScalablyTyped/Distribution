@@ -1,12 +1,13 @@
 package typings.jqueryui.JQueryUI
 
 import typings.jqueryui.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabsActivationUIParams extends js.Object {
+trait TabsActivationUIParams extends StObject {
   
   var newPanel: JQuery = js.native
   
@@ -25,30 +26,18 @@ object TabsActivationUIParams {
   }
   
   @scala.inline
-  implicit class TabsActivationUIParamsOps[Self <: TabsActivationUIParams] (val x: Self) extends AnyVal {
+  implicit class TabsActivationUIParamsMutableBuilder[Self <: TabsActivationUIParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewPanel(value: JQuery): Self = StObject.set(x, "newPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewTab(value: JQuery): Self = StObject.set(x, "newTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldPanel(value: JQuery): Self = StObject.set(x, "oldPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPanel(value: JQuery): Self = this.set("newPanel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewTab(value: JQuery): Self = this.set("newTab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldPanel(value: JQuery): Self = this.set("oldPanel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldTab(value: JQuery): Self = this.set("oldTab", value.asInstanceOf[js.Any])
+    def setOldTab(value: JQuery): Self = StObject.set(x, "oldTab", value.asInstanceOf[js.Any])
   }
 }

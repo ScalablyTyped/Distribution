@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchUpdateScheduleResponse extends js.Object {
+trait BatchUpdateScheduleResponse extends StObject {
   
   /**
     * Schedule actions created in the schedule.
@@ -26,30 +27,18 @@ object BatchUpdateScheduleResponse {
   }
   
   @scala.inline
-  implicit class BatchUpdateScheduleResponseOps[Self <: BatchUpdateScheduleResponse] (val x: Self) extends AnyVal {
+  implicit class BatchUpdateScheduleResponseMutableBuilder[Self <: BatchUpdateScheduleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreates(value: BatchScheduleActionCreateResult): Self = StObject.set(x, "Creates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatesUndefined: Self = StObject.set(x, "Creates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletes(value: BatchScheduleActionDeleteResult): Self = StObject.set(x, "Deletes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreates(value: BatchScheduleActionCreateResult): Self = this.set("Creates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreates: Self = this.set("Creates", js.undefined)
-    
-    @scala.inline
-    def setDeletes(value: BatchScheduleActionDeleteResult): Self = this.set("Deletes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletes: Self = this.set("Deletes", js.undefined)
+    def setDeletesUndefined: Self = StObject.set(x, "Deletes", js.undefined)
   }
 }

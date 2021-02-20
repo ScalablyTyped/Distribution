@@ -1,11 +1,12 @@
 package typings.speakeasy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateSecretOptions extends js.Object {
+trait GenerateSecretOptions extends StObject {
   
   /**
     * Output a Google Authenticator otpauth:// QR code URL.
@@ -59,60 +60,48 @@ object GenerateSecretOptions {
   }
   
   @scala.inline
-  implicit class GenerateSecretOptionsOps[Self <: GenerateSecretOptions] (val x: Self) extends AnyVal {
+  implicit class GenerateSecretOptionsMutableBuilder[Self <: GenerateSecretOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoogle_auth_qr(value: Boolean): Self = StObject.set(x, "google_auth_qr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoogle_auth_qrUndefined: Self = StObject.set(x, "google_auth_qr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogle_auth_qr(value: Boolean): Self = this.set("google_auth_qr", value.asInstanceOf[js.Any])
+    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     @scala.inline
-    def deleteGoogle_auth_qr: Self = this.set("google_auth_qr", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setOtpauth_url(value: Boolean): Self = StObject.set(x, "otpauth_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOtpauth_urlUndefined: Self = StObject.set(x, "otpauth_url", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setQr_codes(value: Boolean): Self = StObject.set(x, "qr_codes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtpauth_url(value: Boolean): Self = this.set("otpauth_url", value.asInstanceOf[js.Any])
+    def setQr_codesUndefined: Self = StObject.set(x, "qr_codes", js.undefined)
     
     @scala.inline
-    def deleteOtpauth_url: Self = this.set("otpauth_url", js.undefined)
+    def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQr_codes(value: Boolean): Self = this.set("qr_codes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQr_codes: Self = this.set("qr_codes", js.undefined)
-    
-    @scala.inline
-    def setSymbols(value: Boolean): Self = this.set("symbols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbols: Self = this.set("symbols", js.undefined)
+    def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
   }
 }

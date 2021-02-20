@@ -1,5 +1,6 @@
 package typings.googleapis.dataprocV1Mod.dataprocV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration for parameter validation.
   */
 @js.native
-trait SchemaParameterValidation extends js.Object {
+trait SchemaParameterValidation extends StObject {
   
   /**
     * Validation based on regular expressions.
@@ -29,30 +30,18 @@ object SchemaParameterValidation {
   }
   
   @scala.inline
-  implicit class SchemaParameterValidationOps[Self <: SchemaParameterValidation] (val x: Self) extends AnyVal {
+  implicit class SchemaParameterValidationMutableBuilder[Self <: SchemaParameterValidation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegex(value: SchemaRegexValidation): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: SchemaValueValidation): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegex(value: SchemaRegexValidation): Self = this.set("regex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegex: Self = this.set("regex", js.undefined)
-    
-    @scala.inline
-    def setValues(value: SchemaValueValidation): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

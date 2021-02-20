@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLLocation extends js.Object {
+trait HTMLLocation extends StObject {
   
   @JSName("MSHTML.HTMLLocation_typekey")
   var MSHTMLDotHTMLLocation_typekey: HTMLLocation = js.native

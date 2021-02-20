@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JourneySMSMessage extends js.Object {
+trait JourneySMSMessage extends StObject {
   
   /**
     * The SMS message type. Valid values are TRANSACTIONAL (for messages that are critical or time-sensitive, such as a one-time passwords) and PROMOTIONAL (for messsages that aren't critical or time-sensitive, such as marketing messages).
@@ -26,30 +27,18 @@ object JourneySMSMessage {
   }
   
   @scala.inline
-  implicit class JourneySMSMessageOps[Self <: JourneySMSMessage] (val x: Self) extends AnyVal {
+  implicit class JourneySMSMessageMutableBuilder[Self <: JourneySMSMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSenderId(value: string): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageType(value: MessageType): Self = this.set("MessageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageType: Self = this.set("MessageType", js.undefined)
-    
-    @scala.inline
-    def setSenderId(value: string): Self = this.set("SenderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSenderId: Self = this.set("SenderId", js.undefined)
+    def setSenderIdUndefined: Self = StObject.set(x, "SenderId", js.undefined)
   }
 }

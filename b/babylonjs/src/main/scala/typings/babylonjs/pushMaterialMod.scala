@@ -7,14 +7,14 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/pushMaterial", JSImport.Namespace)
-@js.native
-object pushMaterialMod extends js.Object {
+object pushMaterialMod {
   
+  @JSImport("babylonjs/Materials/pushMaterial", "PushMaterial")
   @js.native
   class PushMaterial protected () extends Material {
     def this(name: String, scene: Scene) = this()

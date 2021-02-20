@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssignedLabel extends js.Object {
+trait AssignedLabel extends StObject {
   
   // The display name of the label. Read-only.
   var displayName: js.UndefOr[NullableOption[String]] = js.native
@@ -22,36 +23,24 @@ object AssignedLabel {
   }
   
   @scala.inline
-  implicit class AssignedLabelOps[Self <: AssignedLabel] (val x: Self) extends AnyVal {
+  implicit class AssignedLabelMutableBuilder[Self <: AssignedLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setLabelId(value: NullableOption[String]): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setLabelIdNull: Self = StObject.set(x, "labelId", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
-    
-    @scala.inline
-    def setLabelId(value: NullableOption[String]): Self = this.set("labelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelId: Self = this.set("labelId", js.undefined)
-    
-    @scala.inline
-    def setLabelIdNull: Self = this.set("labelId", null)
+    def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
   }
 }

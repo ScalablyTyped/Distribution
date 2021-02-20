@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "dynamodb"
-version := "1.2-dt-20190515Z-d57fd6"
+version := "1.2-dt-20190515Z-703fc8"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20200515Z-a0518a",
-  "org.scalablytyped" %%% "joi" % "17.3.0-423d65",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20200515Z-642e90",
+  "org.scalablytyped" %%% "joi" % "17.3.0-7ba32d",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-50d3d9",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

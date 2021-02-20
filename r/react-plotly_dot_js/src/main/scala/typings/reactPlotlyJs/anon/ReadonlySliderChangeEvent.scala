@@ -2,13 +2,14 @@ package typings.reactPlotlyJs.anon
 
 import typings.plotlyJs.mod.Slider
 import typings.plotlyJs.mod.SliderStep
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.SliderChangeEvent> */
 @js.native
-trait ReadonlySliderChangeEvent extends js.Object {
+trait ReadonlySliderChangeEvent extends StObject {
   
   val interaction: Boolean = js.native
   
@@ -27,30 +28,18 @@ object ReadonlySliderChangeEvent {
   }
   
   @scala.inline
-  implicit class ReadonlySliderChangeEventOps[Self <: ReadonlySliderChangeEvent] (val x: Self) extends AnyVal {
+  implicit class ReadonlySliderChangeEventMutableBuilder[Self <: ReadonlySliderChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInteraction(value: Boolean): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreviousActive(value: Double): Self = StObject.set(x, "previousActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteraction(value: Boolean): Self = this.set("interaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousActive(value: Double): Self = this.set("previousActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlider(value: Slider): Self = this.set("slider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStep(value: SliderStep): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStep(value: SliderStep): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

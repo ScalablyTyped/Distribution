@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.ComputedPropertyName
   - typings.typescript.mod.PrivateIdentifier
 */
-trait PropertyName extends js.Object
+trait PropertyName extends StObject

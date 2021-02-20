@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuotaBytes extends js.Object {
+trait QuotaBytes extends StObject {
   
   var quotaBytes: integer = js.native
   
@@ -21,24 +22,12 @@ object QuotaBytes {
   }
   
   @scala.inline
-  implicit class QuotaBytesOps[Self <: QuotaBytes] (val x: Self) extends AnyVal {
+  implicit class QuotaBytesMutableBuilder[Self <: QuotaBytes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuotaBytes(value: integer): Self = StObject.set(x, "quotaBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQuotaBytes(value: integer): Self = this.set("quotaBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageBytes(value: integer): Self = this.set("usageBytes", value.asInstanceOf[js.Any])
+    def setUsageBytes(value: integer): Self = StObject.set(x, "usageBytes", value.asInstanceOf[js.Any])
   }
 }

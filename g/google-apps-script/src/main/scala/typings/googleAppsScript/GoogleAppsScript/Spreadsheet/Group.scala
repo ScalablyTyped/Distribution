@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * collapsed state.
   */
 @js.native
-trait Group extends js.Object {
+trait Group extends StObject {
   
   def collapse(): Group = js.native
   
@@ -52,39 +53,27 @@ object Group {
   }
   
   @scala.inline
-  implicit class GroupOps[Self <: Group] (val x: Self) extends AnyVal {
+  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapse(value: () => Group): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpand(value: () => Group): Self = StObject.set(x, "expand", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetControlIndex(value: () => Integer): Self = StObject.set(x, "getControlIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapse(value: () => Group): Self = this.set("collapse", js.Any.fromFunction0(value))
+    def setGetDepth(value: () => Integer): Self = StObject.set(x, "getDepth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExpand(value: () => Group): Self = this.set("expand", js.Any.fromFunction0(value))
+    def setGetRange(value: () => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetControlIndex(value: () => Integer): Self = this.set("getControlIndex", js.Any.fromFunction0(value))
+    def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDepth(value: () => Integer): Self = this.set("getDepth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRange(value: () => Range): Self = this.set("getRange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsCollapsed(value: () => Boolean): Self = this.set("isCollapsed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

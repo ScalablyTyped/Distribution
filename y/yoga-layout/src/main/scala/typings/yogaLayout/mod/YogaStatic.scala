@@ -10,6 +10,7 @@ import typings.yogaLayout.yogaLayoutNumbers.`6`
 import typings.yogaLayout.yogaLayoutNumbers.`7`
 import typings.yogaLayout.yogaLayoutNumbers.`8`
 import typings.yogaLayout.yogaLayoutNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,27 +114,15 @@ object YogaStatic {
   }
   
   @scala.inline
-  implicit class YogaStaticOps[Self <: YogaStatic] (val x: Self) extends AnyVal {
+  implicit class YogaStaticMutableBuilder[Self <: YogaStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: ConfigStatic): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetInstanceCount(value: () => Double): Self = StObject.set(x, "getInstanceCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfig(value: ConfigStatic): Self = this.set("Config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: NodeStatic): Self = this.set("Node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetInstanceCount(value: () => Double): Self = this.set("getInstanceCount", js.Any.fromFunction0(value))
+    def setNode(value: NodeStatic): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
   }
 }

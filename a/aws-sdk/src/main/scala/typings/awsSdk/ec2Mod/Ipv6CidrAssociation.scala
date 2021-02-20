@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ipv6CidrAssociation extends js.Object {
+trait Ipv6CidrAssociation extends StObject {
   
   /**
     * The resource that's associated with the IPv6 CIDR block.
@@ -26,30 +27,18 @@ object Ipv6CidrAssociation {
   }
   
   @scala.inline
-  implicit class Ipv6CidrAssociationOps[Self <: Ipv6CidrAssociation] (val x: Self) extends AnyVal {
+  implicit class Ipv6CidrAssociationMutableBuilder[Self <: Ipv6CidrAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedResource(value: String): Self = StObject.set(x, "AssociatedResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatedResourceUndefined: Self = StObject.set(x, "AssociatedResource", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpv6Cidr(value: String): Self = StObject.set(x, "Ipv6Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedResource(value: String): Self = this.set("AssociatedResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssociatedResource: Self = this.set("AssociatedResource", js.undefined)
-    
-    @scala.inline
-    def setIpv6Cidr(value: String): Self = this.set("Ipv6Cidr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpv6Cidr: Self = this.set("Ipv6Cidr", js.undefined)
+    def setIpv6CidrUndefined: Self = StObject.set(x, "Ipv6Cidr", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitDetails extends js.Object {
+trait TransitDetails extends StObject {
   
   /** contains information about the stop for this part of the trip. */
   var arrival_stop: TransitStop = js.native
@@ -59,42 +60,30 @@ object TransitDetails {
   }
   
   @scala.inline
-  implicit class TransitDetailsOps[Self <: TransitDetails] (val x: Self) extends AnyVal {
+  implicit class TransitDetailsMutableBuilder[Self <: TransitDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrival_stop(value: TransitStop): Self = StObject.set(x, "arrival_stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrival_time(value: Time): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeparture_stop(value: TransitStop): Self = StObject.set(x, "departure_stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrival_stop(value: TransitStop): Self = this.set("arrival_stop", value.asInstanceOf[js.Any])
+    def setDeparture_time(value: Time): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrival_time(value: Time): Self = this.set("arrival_time", value.asInstanceOf[js.Any])
+    def setHeadsign(value: String): Self = StObject.set(x, "headsign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeparture_stop(value: TransitStop): Self = this.set("departure_stop", value.asInstanceOf[js.Any])
+    def setHeadway(value: Double): Self = StObject.set(x, "headway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeparture_time(value: Time): Self = this.set("departure_time", value.asInstanceOf[js.Any])
+    def setLine(value: TransitLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadsign(value: String): Self = this.set("headsign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeadway(value: Double): Self = this.set("headway", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine(value: TransitLine): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNum_stops(value: Double): Self = this.set("num_stops", value.asInstanceOf[js.Any])
+    def setNum_stops(value: Double): Self = StObject.set(x, "num_stops", value.asInstanceOf[js.Any])
   }
 }

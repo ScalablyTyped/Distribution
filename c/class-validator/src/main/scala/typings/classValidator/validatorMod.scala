@@ -2,16 +2,16 @@ package typings.classValidator
 
 import typings.classValidator.validationErrorMod.ValidationError
 import typings.classValidator.validatorOptionsMod.ValidatorOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/validation/Validator", JSImport.Namespace)
-@js.native
-object validatorMod extends js.Object {
+object validatorMod {
   
+  @JSImport("class-validator/types/validation/Validator", "Validator")
   @js.native
-  class Validator () extends js.Object {
+  class Validator () extends StObject {
     
     /**
       * Performs validation of the given object based on decorators or validation schema.

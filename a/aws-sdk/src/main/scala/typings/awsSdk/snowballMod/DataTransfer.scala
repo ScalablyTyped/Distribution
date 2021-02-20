@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTransfer extends js.Object {
+trait DataTransfer extends StObject {
   
   /**
     * The number of bytes transferred between a Snow device and Amazon S3.
@@ -36,42 +37,30 @@ object DataTransfer {
   }
   
   @scala.inline
-  implicit class DataTransferOps[Self <: DataTransfer] (val x: Self) extends AnyVal {
+  implicit class DataTransferMutableBuilder[Self <: DataTransfer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesTransferred(value: Long): Self = StObject.set(x, "BytesTransferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesTransferredUndefined: Self = StObject.set(x, "BytesTransferred", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectsTransferred(value: Long): Self = StObject.set(x, "ObjectsTransferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesTransferred(value: Long): Self = this.set("BytesTransferred", value.asInstanceOf[js.Any])
+    def setObjectsTransferredUndefined: Self = StObject.set(x, "ObjectsTransferred", js.undefined)
     
     @scala.inline
-    def deleteBytesTransferred: Self = this.set("BytesTransferred", js.undefined)
+    def setTotalBytes(value: Long): Self = StObject.set(x, "TotalBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectsTransferred(value: Long): Self = this.set("ObjectsTransferred", value.asInstanceOf[js.Any])
+    def setTotalBytesUndefined: Self = StObject.set(x, "TotalBytes", js.undefined)
     
     @scala.inline
-    def deleteObjectsTransferred: Self = this.set("ObjectsTransferred", js.undefined)
+    def setTotalObjects(value: Long): Self = StObject.set(x, "TotalObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalBytes(value: Long): Self = this.set("TotalBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalBytes: Self = this.set("TotalBytes", js.undefined)
-    
-    @scala.inline
-    def setTotalObjects(value: Long): Self = this.set("TotalObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalObjects: Self = this.set("TotalObjects", js.undefined)
+    def setTotalObjectsUndefined: Self = StObject.set(x, "TotalObjects", js.undefined)
   }
 }

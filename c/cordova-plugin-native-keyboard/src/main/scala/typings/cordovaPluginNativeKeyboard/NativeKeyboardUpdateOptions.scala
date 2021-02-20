@@ -1,11 +1,12 @@
 package typings.cordovaPluginNativeKeyboard
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeKeyboardUpdateOptions extends js.Object {
+trait NativeKeyboardUpdateOptions extends StObject {
   
   /**
     * Position the cursor anywhere in the text range. Defaults to the end of the text.
@@ -31,36 +32,24 @@ object NativeKeyboardUpdateOptions {
   }
   
   @scala.inline
-  implicit class NativeKeyboardUpdateOptionsOps[Self <: NativeKeyboardUpdateOptions] (val x: Self) extends AnyVal {
+  implicit class NativeKeyboardUpdateOptionsMutableBuilder[Self <: NativeKeyboardUpdateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaretIndex(value: Double): Self = StObject.set(x, "caretIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaretIndexUndefined: Self = StObject.set(x, "caretIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowKeyboard(value: Boolean): Self = StObject.set(x, "showKeyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaretIndex(value: Double): Self = this.set("caretIndex", value.asInstanceOf[js.Any])
+    def setShowKeyboardUndefined: Self = StObject.set(x, "showKeyboard", js.undefined)
     
     @scala.inline
-    def deleteCaretIndex: Self = this.set("caretIndex", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowKeyboard(value: Boolean): Self = this.set("showKeyboard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowKeyboard: Self = this.set("showKeyboard", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

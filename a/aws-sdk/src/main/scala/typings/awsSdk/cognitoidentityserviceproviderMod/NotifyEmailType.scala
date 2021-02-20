@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotifyEmailType extends js.Object {
+trait NotifyEmailType extends StObject {
   
   /**
     * The HTML body.
@@ -31,33 +32,21 @@ object NotifyEmailType {
   }
   
   @scala.inline
-  implicit class NotifyEmailTypeOps[Self <: NotifyEmailType] (val x: Self) extends AnyVal {
+  implicit class NotifyEmailTypeMutableBuilder[Self <: NotifyEmailType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHtmlBody(value: EmailNotificationBodyType): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHtmlBodyUndefined: Self = StObject.set(x, "HtmlBody", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubject(value: EmailNotificationSubjectType): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: EmailNotificationSubjectType): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    def setTextBody(value: EmailNotificationBodyType): Self = StObject.set(x, "TextBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlBody(value: EmailNotificationBodyType): Self = this.set("HtmlBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHtmlBody: Self = this.set("HtmlBody", js.undefined)
-    
-    @scala.inline
-    def setTextBody(value: EmailNotificationBodyType): Self = this.set("TextBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextBody: Self = this.set("TextBody", js.undefined)
+    def setTextBodyUndefined: Self = StObject.set(x, "TextBody", js.undefined)
   }
 }

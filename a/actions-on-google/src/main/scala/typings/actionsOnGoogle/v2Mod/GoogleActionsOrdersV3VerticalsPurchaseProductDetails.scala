@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3VerticalsPurchaseProductDetails extends js.Object {
+trait GoogleActionsOrdersV3VerticalsPurchaseProductDetails extends StObject {
   
   /**
     * Global Trade Item Number of the product.
@@ -48,48 +49,36 @@ object GoogleActionsOrdersV3VerticalsPurchaseProductDetails {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchaseProductDetailsOps[Self <: GoogleActionsOrdersV3VerticalsPurchaseProductDetails] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3VerticalsPurchaseProductDetailsMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchaseProductDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGtin(value: String): Self = StObject.set(x, "gtin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGtinUndefined: Self = StObject.set(x, "gtin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlu(value: String): Self = StObject.set(x, "plu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGtin(value: String): Self = this.set("gtin", value.asInstanceOf[js.Any])
+    def setPluUndefined: Self = StObject.set(x, "plu", js.undefined)
     
     @scala.inline
-    def deleteGtin: Self = this.set("gtin", js.undefined)
+    def setProductAttributes(value: ApiClientObjectMap[String]): Self = StObject.set(x, "productAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlu(value: String): Self = this.set("plu", value.asInstanceOf[js.Any])
+    def setProductAttributesUndefined: Self = StObject.set(x, "productAttributes", js.undefined)
     
     @scala.inline
-    def deletePlu: Self = this.set("plu", js.undefined)
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductAttributes(value: ApiClientObjectMap[String]): Self = this.set("productAttributes", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteProductAttributes: Self = this.set("productAttributes", js.undefined)
+    def setProductType(value: String): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
-    
-    @scala.inline
-    def setProductType(value: String): Self = this.set("productType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductType: Self = this.set("productType", js.undefined)
+    def setProductTypeUndefined: Self = StObject.set(x, "productType", js.undefined)
   }
 }

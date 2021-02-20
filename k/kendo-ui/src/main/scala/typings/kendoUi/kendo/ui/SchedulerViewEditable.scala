@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerViewEditable extends js.Object {
+trait SchedulerViewEditable extends StObject {
   
   var create: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object SchedulerViewEditable {
   }
   
   @scala.inline
-  implicit class SchedulerViewEditableOps[Self <: SchedulerViewEditable] (val x: Self) extends AnyVal {
+  implicit class SchedulerViewEditableMutableBuilder[Self <: SchedulerViewEditable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: Boolean): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: Boolean): Self = this.set("destroy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

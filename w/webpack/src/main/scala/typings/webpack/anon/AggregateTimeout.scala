@@ -1,12 +1,13 @@
 package typings.webpack.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregateTimeout extends js.Object {
+trait AggregateTimeout extends StObject {
   
   /**
   		 * Delay the rebuilt after the first change. Value is a time in ms.
@@ -37,42 +38,30 @@ object AggregateTimeout {
   }
   
   @scala.inline
-  implicit class AggregateTimeoutOps[Self <: AggregateTimeout] (val x: Self) extends AnyVal {
+  implicit class AggregateTimeoutMutableBuilder[Self <: AggregateTimeout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateTimeoutUndefined: Self = StObject.set(x, "aggregateTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnored(value: StringDictionary[js.Any]): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateTimeout(value: Double): Self = this.set("aggregateTimeout", value.asInstanceOf[js.Any])
+    def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
     @scala.inline
-    def deleteAggregateTimeout: Self = this.set("aggregateTimeout", js.undefined)
+    def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnored(value: StringDictionary[js.Any]): Self = this.set("ignored", value.asInstanceOf[js.Any])
+    def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
     
     @scala.inline
-    def deleteIgnored: Self = this.set("ignored", js.undefined)
+    def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoll(value: Boolean | Double): Self = this.set("poll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoll: Self = this.set("poll", js.undefined)
-    
-    @scala.inline
-    def setStdin(value: Boolean): Self = this.set("stdin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdin: Self = this.set("stdin", js.undefined)
+    def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
   }
 }

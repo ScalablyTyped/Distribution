@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundImageLink extends js.Object {
+trait BackgroundImageLink extends StObject {
   
   var backgroundImageLink: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object BackgroundImageLink {
   }
   
   @scala.inline
-  implicit class BackgroundImageLinkOps[Self <: BackgroundImageLink] (val x: Self) extends AnyVal {
+  implicit class BackgroundImageLinkMutableBuilder[Self <: BackgroundImageLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundImageLink(value: String): Self = StObject.set(x, "backgroundImageLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundImageLinkUndefined: Self = StObject.set(x, "backgroundImageLink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorRgb(value: String): Self = StObject.set(x, "colorRgb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundImageLink(value: String): Self = this.set("backgroundImageLink", value.asInstanceOf[js.Any])
+    def setColorRgbUndefined: Self = StObject.set(x, "colorRgb", js.undefined)
     
     @scala.inline
-    def deleteBackgroundImageLink: Self = this.set("backgroundImageLink", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorRgb(value: String): Self = this.set("colorRgb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorRgb: Self = this.set("colorRgb", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

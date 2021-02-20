@@ -1,12 +1,13 @@
 package typings.ipp.anon
 
 import typings.ipp.mod.CharacterSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attributesnaturallanguage extends js.Object {
+trait Attributesnaturallanguage extends StObject {
   
   var `attributes-charset`: CharacterSet = js.native
   
@@ -27,36 +28,24 @@ object Attributesnaturallanguage {
   }
   
   @scala.inline
-  implicit class AttributesnaturallanguageOps[Self <: Attributesnaturallanguage] (val x: Self) extends AnyVal {
+  implicit class AttributesnaturallanguageMutableBuilder[Self <: Attributesnaturallanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAttributes-natural-language`(value: String): Self = StObject.set(x, "attributes-natural-language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setDetailed-status-message`(value: String): Self = StObject.set(x, "detailed-status-message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAttributes-charset`(value: CharacterSet): Self = this.set("attributes-charset", value.asInstanceOf[js.Any])
+    def `setDetailed-status-messageUndefined`: Self = StObject.set(x, "detailed-status-message", js.undefined)
     
     @scala.inline
-    def `setAttributes-natural-language`(value: String): Self = this.set("attributes-natural-language", value.asInstanceOf[js.Any])
+    def `setStatus-message`(value: String): Self = StObject.set(x, "status-message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDetailed-status-message`(value: String): Self = this.set("detailed-status-message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteDetailed-status-message`: Self = this.set("detailed-status-message", js.undefined)
-    
-    @scala.inline
-    def `setStatus-message`(value: String): Self = this.set("status-message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteStatus-message`: Self = this.set("status-message", js.undefined)
+    def `setStatus-messageUndefined`: Self = StObject.set(x, "status-message", js.undefined)
   }
 }

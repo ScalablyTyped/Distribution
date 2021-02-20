@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChecksCreateParamsOutput extends js.Object {
+trait ChecksCreateParamsOutput extends StObject {
   
   var annotations: js.UndefOr[js.Array[ChecksCreateParamsOutputAnnotations]] = js.native
   
@@ -26,48 +27,36 @@ object ChecksCreateParamsOutput {
   }
   
   @scala.inline
-  implicit class ChecksCreateParamsOutputOps[Self <: ChecksCreateParamsOutput] (val x: Self) extends AnyVal {
+  implicit class ChecksCreateParamsOutputMutableBuilder[Self <: ChecksCreateParamsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: js.Array[ChecksCreateParamsOutputAnnotations]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationsVarargs(value: ChecksCreateParamsOutputAnnotations*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[ChecksCreateParamsOutputImages]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def setAnnotationsVarargs(value: ChecksCreateParamsOutputAnnotations*): Self = this.set("annotations", js.Array(value :_*))
+    def setImagesVarargs(value: ChecksCreateParamsOutputImages*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotations(value: js.Array[ChecksCreateParamsOutputAnnotations]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: ChecksCreateParamsOutputImages*): Self = this.set("images", js.Array(value :_*))
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setImages(value: js.Array[ChecksCreateParamsOutputImages]): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

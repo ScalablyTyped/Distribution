@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object representing query metadata extracted from query annotations.
   */
 @js.native
-trait TQueryMetadata extends js.Object {
+trait TQueryMetadata extends StObject {
   
   var descendants: Boolean = js.native
   
   var isStatic: Boolean = js.native
   
-  var predicate: Type[_] | InjectionToken[_] | js.Array[String] = js.native
+  var predicate: typings.angularCore.mod.Type[_] | InjectionToken[_] | js.Array[String] = js.native
   
   var read: js.Any = js.native
 }
@@ -24,7 +25,7 @@ object TQueryMetadata {
   def apply(
     descendants: Boolean,
     isStatic: Boolean,
-    predicate: Type[_] | InjectionToken[_] | js.Array[String],
+    predicate: typings.angularCore.mod.Type[_] | InjectionToken[_] | js.Array[String],
     read: js.Any
   ): TQueryMetadata = {
     val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any])
@@ -32,33 +33,21 @@ object TQueryMetadata {
   }
   
   @scala.inline
-  implicit class TQueryMetadataOps[Self <: TQueryMetadata] (val x: Self) extends AnyVal {
+  implicit class TQueryMetadataMutableBuilder[Self <: TQueryMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredicate(value: typings.angularCore.mod.Type[_] | InjectionToken[_] | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescendants(value: Boolean): Self = this.set("descendants", value.asInstanceOf[js.Any])
+    def setPredicateVarargs(value: String*): Self = StObject.set(x, "predicate", js.Array(value :_*))
     
     @scala.inline
-    def setIsStatic(value: Boolean): Self = this.set("isStatic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredicateVarargs(value: String*): Self = this.set("predicate", js.Array(value :_*))
-    
-    @scala.inline
-    def setPredicate(value: Type[_] | InjectionToken[_] | js.Array[String]): Self = this.set("predicate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRead(value: js.Any): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
   }
 }

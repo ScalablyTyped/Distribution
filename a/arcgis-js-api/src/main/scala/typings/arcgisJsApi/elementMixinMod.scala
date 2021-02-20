@@ -1,12 +1,11 @@
 package typings.arcgisJsApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("esri/form/elements/ElementMixin", JSImport.Namespace)
-@js.native
-object elementMixinMod extends js.Object {
+object elementMixinMod {
   
   type ElementMixin = typings.arcgisJsApi.esri.ElementMixin
 }

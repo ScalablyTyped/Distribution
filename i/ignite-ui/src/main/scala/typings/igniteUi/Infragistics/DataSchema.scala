@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSchema extends js.Object {
+trait DataSchema extends StObject {
   
   /**
     * A list of field definitions specifying the schema of the data source.
@@ -48,30 +49,18 @@ object DataSchema {
   }
   
   @scala.inline
-  implicit class DataSchemaOps[Self <: DataSchema] (val x: Self) extends AnyVal {
+  implicit class DataSchemaMutableBuilder[Self <: DataSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: () => js.Array[_]): Self = StObject.set(x, "fields", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsEmpty(value: js.Object => js.Object): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsObjEmpty(value: js.Object => js.Object): Self = StObject.set(x, "isObjEmpty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFields(value: () => js.Array[_]): Self = this.set("fields", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsEmpty(value: js.Object => js.Object): Self = this.set("isEmpty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsObjEmpty(value: js.Object => js.Object): Self = this.set("isObjEmpty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransform(value: js.Object => js.Object): Self = this.set("transform", js.Any.fromFunction1(value))
+    def setTransform(value: js.Object => js.Object): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComputeCapacityStatus extends js.Object {
+trait ComputeCapacityStatus extends StObject {
   
   /**
     * The number of currently available instances that can be used to stream sessions.
@@ -36,39 +37,27 @@ object ComputeCapacityStatus {
   }
   
   @scala.inline
-  implicit class ComputeCapacityStatusOps[Self <: ComputeCapacityStatus] (val x: Self) extends AnyVal {
+  implicit class ComputeCapacityStatusMutableBuilder[Self <: ComputeCapacityStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: Integer): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableUndefined: Self = StObject.set(x, "Available", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesired(value: Integer): Self = StObject.set(x, "Desired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesired(value: Integer): Self = this.set("Desired", value.asInstanceOf[js.Any])
+    def setInUse(value: Integer): Self = StObject.set(x, "InUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: Integer): Self = this.set("Available", value.asInstanceOf[js.Any])
+    def setInUseUndefined: Self = StObject.set(x, "InUse", js.undefined)
     
     @scala.inline
-    def deleteAvailable: Self = this.set("Available", js.undefined)
+    def setRunning(value: Integer): Self = StObject.set(x, "Running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInUse(value: Integer): Self = this.set("InUse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInUse: Self = this.set("InUse", js.undefined)
-    
-    @scala.inline
-    def setRunning(value: Integer): Self = this.set("Running", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunning: Self = this.set("Running", js.undefined)
+    def setRunningUndefined: Self = StObject.set(x, "Running", js.undefined)
   }
 }

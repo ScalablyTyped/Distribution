@@ -2,12 +2,13 @@ package typings.jsrsasign.anon
 
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.EncapsulatedContentInfo
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EciObj extends js.Object {
+trait EciObj extends StObject {
   
   var eciObj: EncapsulatedContentInfo = js.native
   
@@ -24,27 +25,15 @@ object EciObj {
   }
   
   @scala.inline
-  implicit class EciObjOps[Self <: EciObj] (val x: Self) extends AnyVal {
+  implicit class EciObjMutableBuilder[Self <: EciObj] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEciObj(value: EncapsulatedContentInfo): Self = StObject.set(x, "eciObj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEciObj(value: EncapsulatedContentInfo): Self = this.set("eciObj", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHashAlg(value: String): Self = this.set("hashAlg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSdobj(value: SignedData): Self = this.set("sdobj", value.asInstanceOf[js.Any])
+    def setSdobj(value: SignedData): Self = StObject.set(x, "sdobj", value.asInstanceOf[js.Any])
   }
 }

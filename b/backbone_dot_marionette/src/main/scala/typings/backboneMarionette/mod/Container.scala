@@ -5,13 +5,14 @@ import typings.backbone.mod.ModelSetOptions
 import typings.underscore.mod.List
 import typings.underscore.mod.ListIterator
 import typings.underscore.mod.MemoIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.marionette", "Container")
 @js.native
-class Container[TView] () extends js.Object {
+class Container[TView] () extends StObject {
   
   /**
     * Find a view by it's cid.

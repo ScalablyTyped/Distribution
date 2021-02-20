@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,42 +40,30 @@ object AuditEventSource {
   }
   
   @scala.inline
-  implicit class AuditEventSourceOps[Self <: AuditEventSource] (val x: Self) extends AnyVal {
+  implicit class AuditEventSourceMutableBuilder[Self <: AuditEventSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setType(value: js.Array[Coding]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_site(value: Element): Self = this.set("_site", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def delete_site: Self = this.set("_site", js.undefined)
+    def setTypeVarargs(value: Coding*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def setSite(value: String): Self = this.set("site", value.asInstanceOf[js.Any])
+    def set_site(value: Element): Self = StObject.set(x, "_site", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSite: Self = this.set("site", js.undefined)
-    
-    @scala.inline
-    def setTypeVarargs(value: Coding*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: js.Array[Coding]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_siteUndefined: Self = StObject.set(x, "_site", js.undefined)
   }
 }

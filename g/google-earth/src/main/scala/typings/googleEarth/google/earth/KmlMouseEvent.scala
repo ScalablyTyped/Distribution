@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,60 +112,48 @@ object KmlMouseEvent {
   }
   
   @scala.inline
-  implicit class KmlMouseEventOps[Self <: KmlMouseEvent] (val x: Self) extends AnyVal {
+  implicit class KmlMouseEventMutableBuilder[Self <: KmlMouseEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAltKey(value: () => Boolean): Self = StObject.set(x, "getAltKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetButton(value: () => Double): Self = StObject.set(x, "getButton", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAltKey(value: () => Boolean): Self = this.set("getAltKey", js.Any.fromFunction0(value))
+    def setGetClientX(value: () => Double): Self = StObject.set(x, "getClientX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAltitude(value: () => Double): Self = this.set("getAltitude", js.Any.fromFunction0(value))
+    def setGetClientY(value: () => Double): Self = StObject.set(x, "getClientY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetButton(value: () => Double): Self = this.set("getButton", js.Any.fromFunction0(value))
+    def setGetCtrlKey(value: () => Boolean): Self = StObject.set(x, "getCtrlKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClientX(value: () => Double): Self = this.set("getClientX", js.Any.fromFunction0(value))
+    def setGetDidHitGlobe(value: () => Boolean): Self = StObject.set(x, "getDidHitGlobe", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClientY(value: () => Double): Self = this.set("getClientY", js.Any.fromFunction0(value))
+    def setGetLatitude(value: () => Double): Self = StObject.set(x, "getLatitude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCtrlKey(value: () => Boolean): Self = this.set("getCtrlKey", js.Any.fromFunction0(value))
+    def setGetLongitude(value: () => Double): Self = StObject.set(x, "getLongitude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDidHitGlobe(value: () => Boolean): Self = this.set("getDidHitGlobe", js.Any.fromFunction0(value))
+    def setGetRelatedTarget(value: () => GEEventEmitter): Self = StObject.set(x, "getRelatedTarget", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLatitude(value: () => Double): Self = this.set("getLatitude", js.Any.fromFunction0(value))
+    def setGetScreenX(value: () => Double): Self = StObject.set(x, "getScreenX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLongitude(value: () => Double): Self = this.set("getLongitude", js.Any.fromFunction0(value))
+    def setGetScreenY(value: () => Double): Self = StObject.set(x, "getScreenY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRelatedTarget(value: () => GEEventEmitter): Self = this.set("getRelatedTarget", js.Any.fromFunction0(value))
+    def setGetShiftKey(value: () => Boolean): Self = StObject.set(x, "getShiftKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScreenX(value: () => Double): Self = this.set("getScreenX", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetScreenY(value: () => Double): Self = this.set("getScreenY", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetShiftKey(value: () => Boolean): Self = this.set("getShiftKey", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTimeStamp(value: () => Double): Self = this.set("getTimeStamp", js.Any.fromFunction0(value))
+    def setGetTimeStamp(value: () => Double): Self = StObject.set(x, "getTimeStamp", js.Any.fromFunction0(value))
   }
 }

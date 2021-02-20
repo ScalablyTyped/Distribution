@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rule extends js.Object {
+trait Rule extends StObject {
   
   /**
     * The action that AWS WAF should take on a web request when it matches the rule statement. Settings at the web ACL level can override the rule action setting.  This is used only for rules whose statements do not reference a rule group. Rule statements that reference a rule group include RuleGroupReferenceStatement and ManagedRuleGroupStatement.  You must specify either this Action setting or the rule OverrideAction setting, but not both:   If the rule statement does not reference a rule group, use this rule action setting and not the rule override action setting.    If the rule statement references a rule group, use the override action setting and not this action setting.   
@@ -46,42 +47,30 @@ object Rule {
   }
   
   @scala.inline
-  implicit class RuleOps[Self <: Rule] (val x: Self) extends AnyVal {
+  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: RuleAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOverrideAction(value: OverrideAction): Self = StObject.set(x, "OverrideAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: RulePriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    def setOverrideActionUndefined: Self = StObject.set(x, "OverrideAction", js.undefined)
     
     @scala.inline
-    def setStatement(value: Statement): Self = this.set("Statement", value.asInstanceOf[js.Any])
+    def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibilityConfig(value: VisibilityConfig): Self = this.set("VisibilityConfig", value.asInstanceOf[js.Any])
+    def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: RuleAction): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
-    
-    @scala.inline
-    def setOverrideAction(value: OverrideAction): Self = this.set("OverrideAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideAction: Self = this.set("OverrideAction", js.undefined)
+    def setVisibilityConfig(value: VisibilityConfig): Self = StObject.set(x, "VisibilityConfig", value.asInstanceOf[js.Any])
   }
 }

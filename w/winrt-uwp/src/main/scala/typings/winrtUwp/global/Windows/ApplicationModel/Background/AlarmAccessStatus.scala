@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates whether the user has given permission for the app to set alarms. */
 @JSGlobal("Windows.ApplicationModel.Background.AlarmAccessStatus")
 @js.native
-object AlarmAccessStatus extends js.Object {
+object AlarmAccessStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

@@ -6,16 +6,15 @@ import typings.vueI18n.anon.Fn0
 import typings.vueI18n.anon.FnCall
 import typings.vueI18n.anon.FnCallKeyChoiceLocaleValues
 import typings.vueI18n.anon.FnCallValueKeyLocale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue/types/vue", JSImport.Namespace)
-@js.native
-object vueTypesVueAugmentingMod extends js.Object {
+object vueTypesVueAugmentingMod {
   
   @js.native
-  trait Vue extends js.Object {
+  trait Vue extends StObject {
     
     @JSName("$d")
     def $d(value: Double): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native

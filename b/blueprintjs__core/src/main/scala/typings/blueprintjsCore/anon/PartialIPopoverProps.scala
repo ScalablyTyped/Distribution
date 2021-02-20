@@ -11,13 +11,14 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/popover/popover.IPopoverProps> */
 @js.native
-trait PartialIPopoverProps extends js.Object {
+trait PartialIPopoverProps extends StObject {
   
   var autoFocus: js.UndefOr[Boolean] = js.native
   
@@ -116,254 +117,242 @@ object PartialIPopoverProps {
   }
   
   @scala.inline
-  implicit class PartialIPopoverPropsOps[Self <: PartialIPopoverProps] (val x: Self) extends AnyVal {
+  implicit class PartialIPopoverPropsMutableBuilder[Self <: PartialIPopoverProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "backdropProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = this.set("backdropProps", value.asInstanceOf[js.Any])
+    def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
     @scala.inline
-    def deleteBackdropProps: Self = this.set("backdropProps", js.undefined)
+    def setCanEscapeKeyClose(value: Boolean): Self = StObject.set(x, "canEscapeKeyClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundary(value: Boundary): Self = this.set("boundary", value.asInstanceOf[js.Any])
+    def setCanEscapeKeyCloseUndefined: Self = StObject.set(x, "canEscapeKeyClose", js.undefined)
     
     @scala.inline
-    def deleteBoundary: Self = this.set("boundary", js.undefined)
+    def setCaptureDismiss(value: Boolean): Self = StObject.set(x, "captureDismiss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanEscapeKeyClose(value: Boolean): Self = this.set("canEscapeKeyClose", value.asInstanceOf[js.Any])
+    def setCaptureDismissUndefined: Self = StObject.set(x, "captureDismiss", js.undefined)
     
     @scala.inline
-    def deleteCanEscapeKeyClose: Self = this.set("canEscapeKeyClose", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureDismiss(value: Boolean): Self = this.set("captureDismiss", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteCaptureDismiss: Self = this.set("captureDismiss", js.undefined)
+    def setContent(value: String | Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDefaultIsOpen(value: Boolean): Self = StObject.set(x, "defaultIsOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String | Element): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setDefaultIsOpenUndefined: Self = StObject.set(x, "defaultIsOpen", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultIsOpen(value: Boolean): Self = this.set("defaultIsOpen", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultIsOpen: Self = this.set("defaultIsOpen", js.undefined)
+    def setEnforceFocus(value: Boolean): Self = StObject.set(x, "enforceFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setEnforceFocusUndefined: Self = StObject.set(x, "enforceFocus", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforceFocus(value: Boolean): Self = this.set("enforceFocus", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteEnforceFocus: Self = this.set("enforceFocus", js.undefined)
+    def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setHoverCloseDelay(value: Double): Self = StObject.set(x, "hoverCloseDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBackdrop(value: Boolean): Self = this.set("hasBackdrop", value.asInstanceOf[js.Any])
+    def setHoverCloseDelayUndefined: Self = StObject.set(x, "hoverCloseDelay", js.undefined)
     
     @scala.inline
-    def deleteHasBackdrop: Self = this.set("hasBackdrop", js.undefined)
+    def setHoverOpenDelay(value: Double): Self = StObject.set(x, "hoverOpenDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverCloseDelay(value: Double): Self = this.set("hoverCloseDelay", value.asInstanceOf[js.Any])
+    def setHoverOpenDelayUndefined: Self = StObject.set(x, "hoverOpenDelay", js.undefined)
     
     @scala.inline
-    def deleteHoverCloseDelay: Self = this.set("hoverCloseDelay", js.undefined)
+    def setInheritDarkTheme(value: Boolean): Self = StObject.set(x, "inheritDarkTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverOpenDelay(value: Double): Self = this.set("hoverOpenDelay", value.asInstanceOf[js.Any])
+    def setInheritDarkThemeUndefined: Self = StObject.set(x, "inheritDarkTheme", js.undefined)
     
     @scala.inline
-    def deleteHoverOpenDelay: Self = this.set("hoverOpenDelay", js.undefined)
+    def setInteractionKind(value: PopoverInteractionKind): Self = StObject.set(x, "interactionKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInheritDarkTheme(value: Boolean): Self = this.set("inheritDarkTheme", value.asInstanceOf[js.Any])
+    def setInteractionKindUndefined: Self = StObject.set(x, "interactionKind", js.undefined)
     
     @scala.inline
-    def deleteInheritDarkTheme: Self = this.set("inheritDarkTheme", js.undefined)
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractionKind(value: PopoverInteractionKind): Self = this.set("interactionKind", value.asInstanceOf[js.Any])
+    def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
     
     @scala.inline
-    def deleteInteractionKind: Self = this.set("interactionKind", js.undefined)
+    def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     
     @scala.inline
-    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLazy(value: Boolean): Self = this.set("lazy", value.asInstanceOf[js.Any])
+    def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
     
     @scala.inline
-    def deleteLazy: Self = this.set("lazy", js.undefined)
+    def setModifiers(value: Modifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimal(value: Boolean): Self = this.set("minimal", value.asInstanceOf[js.Any])
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def deleteMinimal: Self = this.set("minimal", js.undefined)
+    def setOnClose(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModifiers(value: Modifiers): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    def setOnClosed(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClose(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
+    def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnClosing(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClosed(value: /* node */ HTMLElement => Unit): Self = this.set("onClosed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnClosed: Self = this.set("onClosed", js.undefined)
-    
-    @scala.inline
-    def setOnClosing(value: /* node */ HTMLElement => Unit): Self = this.set("onClosing", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnClosing: Self = this.set("onClosing", js.undefined)
+    def setOnClosingUndefined: Self = StObject.set(x, "onClosing", js.undefined)
     
     @scala.inline
     def setOnInteraction(
       value: (/* nextOpenState */ Boolean, /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit
-    ): Self = this.set("onInteraction", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onInteraction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnInteraction: Self = this.set("onInteraction", js.undefined)
+    def setOnInteractionUndefined: Self = StObject.set(x, "onInteraction", js.undefined)
     
     @scala.inline
-    def setOnOpened(value: /* node */ HTMLElement => Unit): Self = this.set("onOpened", js.Any.fromFunction1(value))
+    def setOnOpened(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnOpened: Self = this.set("onOpened", js.undefined)
+    def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
     
     @scala.inline
-    def setOnOpening(value: /* node */ HTMLElement => Unit): Self = this.set("onOpening", js.Any.fromFunction1(value))
+    def setOnOpening(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnOpening: Self = this.set("onOpening", js.undefined)
+    def setOnOpeningUndefined: Self = StObject.set(x, "onOpening", js.undefined)
     
     @scala.inline
-    def setOpenOnTargetFocus(value: Boolean): Self = this.set("openOnTargetFocus", value.asInstanceOf[js.Any])
+    def setOpenOnTargetFocus(value: Boolean): Self = StObject.set(x, "openOnTargetFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpenOnTargetFocus: Self = this.set("openOnTargetFocus", js.undefined)
+    def setOpenOnTargetFocusUndefined: Self = StObject.set(x, "openOnTargetFocus", js.undefined)
     
     @scala.inline
-    def setPopoverClassName(value: String): Self = this.set("popoverClassName", value.asInstanceOf[js.Any])
+    def setPopoverClassName(value: String): Self = StObject.set(x, "popoverClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopoverClassName: Self = this.set("popoverClassName", js.undefined)
+    def setPopoverClassNameUndefined: Self = StObject.set(x, "popoverClassName", js.undefined)
     
     @scala.inline
-    def setPopoverRef(value: /* ref */ HTMLElement | Null => Unit): Self = this.set("popoverRef", js.Any.fromFunction1(value))
+    def setPopoverRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePopoverRef: Self = this.set("popoverRef", js.undefined)
+    def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
     
     @scala.inline
-    def setPortalClassName(value: String): Self = this.set("portalClassName", value.asInstanceOf[js.Any])
+    def setPortalClassName(value: String): Self = StObject.set(x, "portalClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePortalClassName: Self = this.set("portalClassName", js.undefined)
+    def setPortalClassNameUndefined: Self = StObject.set(x, "portalClassName", js.undefined)
     
     @scala.inline
-    def setPortalContainer(value: HTMLElement): Self = this.set("portalContainer", value.asInstanceOf[js.Any])
+    def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePortalContainer: Self = this.set("portalContainer", js.undefined)
+    def setPortalContainerUndefined: Self = StObject.set(x, "portalContainer", js.undefined)
     
     @scala.inline
-    def setPosition(value: PopoverPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: PopoverPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setTarget(value: String | Element): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: String | Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetClassName(value: String): Self = StObject.set(x, "targetClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetClassName(value: String): Self = this.set("targetClassName", value.asInstanceOf[js.Any])
+    def setTargetClassNameUndefined: Self = StObject.set(x, "targetClassName", js.undefined)
     
     @scala.inline
-    def deleteTargetClassName: Self = this.set("targetClassName", js.undefined)
+    def setTargetProps(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "targetProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetProps(value: HTMLAttributes[HTMLElement]): Self = this.set("targetProps", value.asInstanceOf[js.Any])
+    def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
     
     @scala.inline
-    def deleteTargetProps: Self = this.set("targetProps", js.undefined)
+    def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = this.set("targetTagName", value.asInstanceOf[js.Any])
+    def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
     
     @scala.inline
-    def deleteTargetTagName: Self = this.set("targetTagName", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def setTransitionDuration(value: Double): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     @scala.inline
-    def setUsePortal(value: Boolean): Self = this.set("usePortal", value.asInstanceOf[js.Any])
+    def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUsePortal: Self = this.set("usePortal", js.undefined)
+    def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
     
     @scala.inline
-    def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = this.set("wrapperTagName", value.asInstanceOf[js.Any])
+    def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWrapperTagName: Self = this.set("wrapperTagName", js.undefined)
+    def setWrapperTagNameUndefined: Self = StObject.set(x, "wrapperTagName", js.undefined)
   }
 }

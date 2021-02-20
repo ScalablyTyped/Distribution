@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridHighlightConfig extends js.Object {
+trait GridHighlightConfig extends StObject {
   
   /**
     * The named grid areas border color (Default: transparent).
@@ -117,138 +118,126 @@ object GridHighlightConfig {
   }
   
   @scala.inline
-  implicit class GridHighlightConfigOps[Self <: GridHighlightConfig] (val x: Self) extends AnyVal {
+  implicit class GridHighlightConfigMutableBuilder[Self <: GridHighlightConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreaBorderColor(value: RGBA): Self = StObject.set(x, "areaBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaBorderColorUndefined: Self = StObject.set(x, "areaBorderColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellBorderColor(value: RGBA): Self = StObject.set(x, "cellBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaBorderColor(value: RGBA): Self = this.set("areaBorderColor", value.asInstanceOf[js.Any])
+    def setCellBorderColorUndefined: Self = StObject.set(x, "cellBorderColor", js.undefined)
     
     @scala.inline
-    def deleteAreaBorderColor: Self = this.set("areaBorderColor", js.undefined)
+    def setCellBorderDash(value: Boolean): Self = StObject.set(x, "cellBorderDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellBorderColor(value: RGBA): Self = this.set("cellBorderColor", value.asInstanceOf[js.Any])
+    def setCellBorderDashUndefined: Self = StObject.set(x, "cellBorderDash", js.undefined)
     
     @scala.inline
-    def deleteCellBorderColor: Self = this.set("cellBorderColor", js.undefined)
+    def setColumnGapColor(value: RGBA): Self = StObject.set(x, "columnGapColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellBorderDash(value: Boolean): Self = this.set("cellBorderDash", value.asInstanceOf[js.Any])
+    def setColumnGapColorUndefined: Self = StObject.set(x, "columnGapColor", js.undefined)
     
     @scala.inline
-    def deleteCellBorderDash: Self = this.set("cellBorderDash", js.undefined)
+    def setColumnHatchColor(value: RGBA): Self = StObject.set(x, "columnHatchColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnGapColor(value: RGBA): Self = this.set("columnGapColor", value.asInstanceOf[js.Any])
+    def setColumnHatchColorUndefined: Self = StObject.set(x, "columnHatchColor", js.undefined)
     
     @scala.inline
-    def deleteColumnGapColor: Self = this.set("columnGapColor", js.undefined)
+    def setColumnLineColor(value: RGBA): Self = StObject.set(x, "columnLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHatchColor(value: RGBA): Self = this.set("columnHatchColor", value.asInstanceOf[js.Any])
+    def setColumnLineColorUndefined: Self = StObject.set(x, "columnLineColor", js.undefined)
     
     @scala.inline
-    def deleteColumnHatchColor: Self = this.set("columnHatchColor", js.undefined)
+    def setColumnLineDash(value: Boolean): Self = StObject.set(x, "columnLineDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnLineColor(value: RGBA): Self = this.set("columnLineColor", value.asInstanceOf[js.Any])
+    def setColumnLineDashUndefined: Self = StObject.set(x, "columnLineDash", js.undefined)
     
     @scala.inline
-    def deleteColumnLineColor: Self = this.set("columnLineColor", js.undefined)
+    def setGridBackgroundColor(value: RGBA): Self = StObject.set(x, "gridBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnLineDash(value: Boolean): Self = this.set("columnLineDash", value.asInstanceOf[js.Any])
+    def setGridBackgroundColorUndefined: Self = StObject.set(x, "gridBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteColumnLineDash: Self = this.set("columnLineDash", js.undefined)
+    def setGridBorderColor(value: RGBA): Self = StObject.set(x, "gridBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridBackgroundColor(value: RGBA): Self = this.set("gridBackgroundColor", value.asInstanceOf[js.Any])
+    def setGridBorderColorUndefined: Self = StObject.set(x, "gridBorderColor", js.undefined)
     
     @scala.inline
-    def deleteGridBackgroundColor: Self = this.set("gridBackgroundColor", js.undefined)
+    def setGridBorderDash(value: Boolean): Self = StObject.set(x, "gridBorderDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridBorderColor(value: RGBA): Self = this.set("gridBorderColor", value.asInstanceOf[js.Any])
+    def setGridBorderDashUndefined: Self = StObject.set(x, "gridBorderDash", js.undefined)
     
     @scala.inline
-    def deleteGridBorderColor: Self = this.set("gridBorderColor", js.undefined)
+    def setRowGapColor(value: RGBA): Self = StObject.set(x, "rowGapColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridBorderDash(value: Boolean): Self = this.set("gridBorderDash", value.asInstanceOf[js.Any])
+    def setRowGapColorUndefined: Self = StObject.set(x, "rowGapColor", js.undefined)
     
     @scala.inline
-    def deleteGridBorderDash: Self = this.set("gridBorderDash", js.undefined)
+    def setRowHatchColor(value: RGBA): Self = StObject.set(x, "rowHatchColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowGapColor(value: RGBA): Self = this.set("rowGapColor", value.asInstanceOf[js.Any])
+    def setRowHatchColorUndefined: Self = StObject.set(x, "rowHatchColor", js.undefined)
     
     @scala.inline
-    def deleteRowGapColor: Self = this.set("rowGapColor", js.undefined)
+    def setRowLineColor(value: RGBA): Self = StObject.set(x, "rowLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHatchColor(value: RGBA): Self = this.set("rowHatchColor", value.asInstanceOf[js.Any])
+    def setRowLineColorUndefined: Self = StObject.set(x, "rowLineColor", js.undefined)
     
     @scala.inline
-    def deleteRowHatchColor: Self = this.set("rowHatchColor", js.undefined)
+    def setRowLineDash(value: Boolean): Self = StObject.set(x, "rowLineDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowLineColor(value: RGBA): Self = this.set("rowLineColor", value.asInstanceOf[js.Any])
+    def setRowLineDashUndefined: Self = StObject.set(x, "rowLineDash", js.undefined)
     
     @scala.inline
-    def deleteRowLineColor: Self = this.set("rowLineColor", js.undefined)
+    def setShowAreaNames(value: Boolean): Self = StObject.set(x, "showAreaNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowLineDash(value: Boolean): Self = this.set("rowLineDash", value.asInstanceOf[js.Any])
+    def setShowAreaNamesUndefined: Self = StObject.set(x, "showAreaNames", js.undefined)
     
     @scala.inline
-    def deleteRowLineDash: Self = this.set("rowLineDash", js.undefined)
+    def setShowGridExtensionLines(value: Boolean): Self = StObject.set(x, "showGridExtensionLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAreaNames(value: Boolean): Self = this.set("showAreaNames", value.asInstanceOf[js.Any])
+    def setShowGridExtensionLinesUndefined: Self = StObject.set(x, "showGridExtensionLines", js.undefined)
     
     @scala.inline
-    def deleteShowAreaNames: Self = this.set("showAreaNames", js.undefined)
+    def setShowLineNames(value: Boolean): Self = StObject.set(x, "showLineNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGridExtensionLines(value: Boolean): Self = this.set("showGridExtensionLines", value.asInstanceOf[js.Any])
+    def setShowLineNamesUndefined: Self = StObject.set(x, "showLineNames", js.undefined)
     
     @scala.inline
-    def deleteShowGridExtensionLines: Self = this.set("showGridExtensionLines", js.undefined)
+    def setShowNegativeLineNumbers(value: Boolean): Self = StObject.set(x, "showNegativeLineNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLineNames(value: Boolean): Self = this.set("showLineNames", value.asInstanceOf[js.Any])
+    def setShowNegativeLineNumbersUndefined: Self = StObject.set(x, "showNegativeLineNumbers", js.undefined)
     
     @scala.inline
-    def deleteShowLineNames: Self = this.set("showLineNames", js.undefined)
+    def setShowPositiveLineNumbers(value: Boolean): Self = StObject.set(x, "showPositiveLineNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNegativeLineNumbers(value: Boolean): Self = this.set("showNegativeLineNumbers", value.asInstanceOf[js.Any])
+    def setShowPositiveLineNumbersUndefined: Self = StObject.set(x, "showPositiveLineNumbers", js.undefined)
     
     @scala.inline
-    def deleteShowNegativeLineNumbers: Self = this.set("showNegativeLineNumbers", js.undefined)
+    def setShowTrackSizes(value: Boolean): Self = StObject.set(x, "showTrackSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPositiveLineNumbers(value: Boolean): Self = this.set("showPositiveLineNumbers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowPositiveLineNumbers: Self = this.set("showPositiveLineNumbers", js.undefined)
-    
-    @scala.inline
-    def setShowTrackSizes(value: Boolean): Self = this.set("showTrackSizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowTrackSizes: Self = this.set("showTrackSizes", js.undefined)
+    def setShowTrackSizesUndefined: Self = StObject.set(x, "showTrackSizes", js.undefined)
   }
 }

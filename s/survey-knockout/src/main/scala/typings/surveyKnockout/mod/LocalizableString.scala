@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "LocalizableString")
 @js.native
-class LocalizableString protected () extends js.Object {
+class LocalizableString protected () extends StObject {
   def this(owner: ILocalizableOwner) = this()
   def this(owner: ILocalizableOwner, useMarkdown: Boolean) = this()
   
@@ -59,11 +60,21 @@ class LocalizableString protected () extends js.Object {
   var useMarkdown: Boolean = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "LocalizableString")
-@js.native
-object LocalizableString extends js.Object {
+object LocalizableString {
   
-  var SerializeAsObject: Boolean = js.native
+  @JSImport("survey-knockout", "LocalizableString")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var defaultLocale: String = js.native
+  @JSImport("survey-knockout", "LocalizableString.SerializeAsObject")
+  @js.native
+  def SerializeAsObject: Boolean = js.native
+  @scala.inline
+  def SerializeAsObject_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerializeAsObject")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "LocalizableString.defaultLocale")
+  @js.native
+  def defaultLocale: String = js.native
+  @scala.inline
+  def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
 }

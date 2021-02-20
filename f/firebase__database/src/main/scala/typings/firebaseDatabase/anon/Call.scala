@@ -3,12 +3,13 @@ package typings.firebaseDatabase.anon
 import org.scalablytyped.runtime.Instantiable0
 import typings.firebaseDatabase.mod.firebaseAppTypesAugmentingMod.FirebaseApp
 import typings.firebaseDatabaseTypes.mod.FirebaseDatabase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Call extends js.Object {
+trait Call extends StObject {
   
   def apply(): FirebaseDatabase = js.native
   def apply(app: FirebaseApp): FirebaseDatabase = js.native

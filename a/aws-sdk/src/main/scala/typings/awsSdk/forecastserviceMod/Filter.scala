@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filter extends js.Object {
+trait Filter extends StObject {
   
   /**
     * The condition to apply. To include the objects that match the statement, specify IS. To exclude matching objects, specify IS_NOT.
@@ -31,27 +32,15 @@ object Filter {
   }
   
   @scala.inline
-  implicit class FilterOps[Self <: Filter] (val x: Self) extends AnyVal {
+  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: FilterConditionString): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCondition(value: FilterConditionString): Self = this.set("Condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Arn): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: Arn): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

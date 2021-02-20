@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NielsenConfiguration extends js.Object {
+trait NielsenConfiguration extends StObject {
   
   /**
     * Enter the Distributor ID assigned to your organization by Nielsen.
@@ -26,30 +27,18 @@ object NielsenConfiguration {
   }
   
   @scala.inline
-  implicit class NielsenConfigurationOps[Self <: NielsenConfiguration] (val x: Self) extends AnyVal {
+  implicit class NielsenConfigurationMutableBuilder[Self <: NielsenConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistributorId(value: string): Self = StObject.set(x, "DistributorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistributorIdUndefined: Self = StObject.set(x, "DistributorId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNielsenPcmToId3Tagging(value: NielsenPcmToId3TaggingState): Self = StObject.set(x, "NielsenPcmToId3Tagging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributorId(value: string): Self = this.set("DistributorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistributorId: Self = this.set("DistributorId", js.undefined)
-    
-    @scala.inline
-    def setNielsenPcmToId3Tagging(value: NielsenPcmToId3TaggingState): Self = this.set("NielsenPcmToId3Tagging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNielsenPcmToId3Tagging: Self = this.set("NielsenPcmToId3Tagging", js.undefined)
+    def setNielsenPcmToId3TaggingUndefined: Self = StObject.set(x, "NielsenPcmToId3Tagging", js.undefined)
   }
 }

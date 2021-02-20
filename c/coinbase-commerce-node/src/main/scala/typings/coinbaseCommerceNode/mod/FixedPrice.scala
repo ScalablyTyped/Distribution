@@ -1,6 +1,7 @@
 package typings.coinbaseCommerceNode.mod
 
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.fixed_price
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Fixed price resource.
   */
 @js.native
-trait FixedPrice extends js.Object {
+trait FixedPrice extends StObject {
   
   /**
     * Local price in fiat currency.
@@ -30,24 +31,12 @@ object FixedPrice {
   }
   
   @scala.inline
-  implicit class FixedPriceOps[Self <: FixedPrice] (val x: Self) extends AnyVal {
+  implicit class FixedPriceMutableBuilder[Self <: FixedPrice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocal_price(value: Price[FiatCurrency]): Self = StObject.set(x, "local_price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocal_price(value: Price[FiatCurrency]): Self = this.set("local_price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPricing_type(value: fixed_price): Self = this.set("pricing_type", value.asInstanceOf[js.Any])
+    def setPricing_type(value: fixed_price): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
   }
 }

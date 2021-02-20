@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigquerydatatransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   var dataSources: DataSourcesResource = js.native
   
@@ -26,27 +27,15 @@ object ProjectsResource {
   }
   
   @scala.inline
-  implicit class ProjectsResourceOps[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSources(value: DataSourcesResource): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataSources(value: DataSourcesResource): Self = this.set("dataSources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransferConfigs(value: TransferConfigsResource): Self = this.set("transferConfigs", value.asInstanceOf[js.Any])
+    def setTransferConfigs(value: TransferConfigsResource): Self = StObject.set(x, "transferConfigs", value.asInstanceOf[js.Any])
   }
 }

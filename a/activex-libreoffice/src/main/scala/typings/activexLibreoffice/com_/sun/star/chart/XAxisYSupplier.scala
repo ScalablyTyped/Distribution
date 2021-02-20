@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,42 +87,30 @@ object XAxisYSupplier {
   }
   
   @scala.inline
-  implicit class XAxisYSupplierOps[Self <: XAxisYSupplier] (val x: Self) extends AnyVal {
+  implicit class XAxisYSupplierMutableBuilder[Self <: XAxisYSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetYAxis(value: () => XPropertySet): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetYAxisTitle(value: () => XShape): Self = StObject.set(x, "getYAxisTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetYHelpGrid(value: () => XPropertySet): Self = StObject.set(x, "getYHelpGrid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setYAxis(value: XPropertySet): Self = this.set("YAxis", value.asInstanceOf[js.Any])
+    def setGetYMainGrid(value: () => XPropertySet): Self = StObject.set(x, "getYMainGrid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setYAxisTitle(value: XShape): Self = this.set("YAxisTitle", value.asInstanceOf[js.Any])
+    def setYAxis(value: XPropertySet): Self = StObject.set(x, "YAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYHelpGrid(value: XPropertySet): Self = this.set("YHelpGrid", value.asInstanceOf[js.Any])
+    def setYAxisTitle(value: XShape): Self = StObject.set(x, "YAxisTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYMainGrid(value: XPropertySet): Self = this.set("YMainGrid", value.asInstanceOf[js.Any])
+    def setYHelpGrid(value: XPropertySet): Self = StObject.set(x, "YHelpGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetYAxis(value: () => XPropertySet): Self = this.set("getYAxis", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetYAxisTitle(value: () => XShape): Self = this.set("getYAxisTitle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetYHelpGrid(value: () => XPropertySet): Self = this.set("getYHelpGrid", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetYMainGrid(value: () => XPropertySet): Self = this.set("getYMainGrid", js.Any.fromFunction0(value))
+    def setYMainGrid(value: XPropertySet): Self = StObject.set(x, "YMainGrid", value.asInstanceOf[js.Any])
   }
 }

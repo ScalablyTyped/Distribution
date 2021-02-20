@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filters extends js.Object {
+trait Filters extends StObject {
   
   var dimensions: js.UndefOr[String] = js.native
   
@@ -28,60 +29,48 @@ object Filters {
   }
   
   @scala.inline
-  implicit class FiltersOps[Self <: Filters] (val x: Self) extends AnyVal {
+  implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: String): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setIds(value: String): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: String): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def `setMax-results`(value: Double): Self = StObject.set(x, "max-results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIds(value: String): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def `setMax-resultsUndefined`: Self = StObject.set(x, "max-results", js.undefined)
     
     @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
+    def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-results`(value: Double): Self = this.set("max-results", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def `deleteMax-results`: Self = this.set("max-results", js.undefined)
+    def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsVarargs(value: String*): Self = this.set("metrics", js.Array(value :_*))
+    def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Array[String]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
-    
-    @scala.inline
-    def setSortVarargs(value: String*): Self = this.set("sort", js.Array(value :_*))
-    
-    @scala.inline
-    def setSort(value: js.Array[String]): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupManagersListErrorsResponse extends js.Object {
+trait InstanceGroupManagersListErrorsResponse extends StObject {
   
   /** [Output Only] The list of errors of the managed instance group. */
   var items: js.UndefOr[js.Array[InstanceManagedByIgmError]] = js.native
@@ -25,33 +26,21 @@ object InstanceGroupManagersListErrorsResponse {
   }
   
   @scala.inline
-  implicit class InstanceGroupManagersListErrorsResponseOps[Self <: InstanceGroupManagersListErrorsResponse] (val x: Self) extends AnyVal {
+  implicit class InstanceGroupManagersListErrorsResponseMutableBuilder[Self <: InstanceGroupManagersListErrorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[InstanceManagedByIgmError]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: InstanceManagedByIgmError*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: InstanceManagedByIgmError*): Self = this.set("items", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[InstanceManagedByIgmError]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

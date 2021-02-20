@@ -6,12 +6,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.end
 import typings.arcgisJsApi.arcgisJsApiStrings.removed
 import typings.arcgisJsApi.arcgisJsApiStrings.start
 import typings.arcgisJsApi.arcgisJsApiStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewDragEvent extends js.Object {
+trait ViewDragEvent extends StObject {
   
   var action: start | added | update | removed | end = js.native
   
@@ -60,54 +61,42 @@ object ViewDragEvent {
   }
   
   @scala.inline
-  implicit class ViewDragEventOps[Self <: ViewDragEvent] (val x: Self) extends AnyVal {
+  implicit class ViewDragEventMutableBuilder[Self <: ViewDragEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: start | added | update | removed | end): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButton(value: js.Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: start | added | update | removed | end): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: js.Any): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setOrigin(value: ViewDragEventOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: Double): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNative(value: js.Any): Self = this.set("native", value.asInstanceOf[js.Any])
+    def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: ViewDragEventOrigin): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopPropagation(value: js.Function): Self = this.set("stopPropagation", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: drag): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

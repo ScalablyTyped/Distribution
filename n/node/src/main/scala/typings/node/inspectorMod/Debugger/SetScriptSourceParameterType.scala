@@ -1,12 +1,13 @@
 package typings.node.inspectorMod.Debugger
 
 import typings.node.inspectorMod.Runtime.ScriptId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetScriptSourceParameterType extends js.Object {
+trait SetScriptSourceParameterType extends StObject {
   
   /**
     *  If true the change will not actually be applied. Dry run may be used to get result description without actually modifying the code.
@@ -32,30 +33,18 @@ object SetScriptSourceParameterType {
   }
   
   @scala.inline
-  implicit class SetScriptSourceParameterTypeOps[Self <: SetScriptSourceParameterType] (val x: Self) extends AnyVal {
+  implicit class SetScriptSourceParameterTypeMutableBuilder[Self <: SetScriptSourceParameterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("scriptId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptSource(value: String): Self = this.set("scriptSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
   }
 }

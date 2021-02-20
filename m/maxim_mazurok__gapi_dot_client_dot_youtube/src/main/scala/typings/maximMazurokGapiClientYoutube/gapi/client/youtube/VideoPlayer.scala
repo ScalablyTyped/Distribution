@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoPlayer extends js.Object {
+trait VideoPlayer extends StObject {
   
   var embedHeight: js.UndefOr[String] = js.native
   
@@ -24,36 +25,24 @@ object VideoPlayer {
   }
   
   @scala.inline
-  implicit class VideoPlayerOps[Self <: VideoPlayer] (val x: Self) extends AnyVal {
+  implicit class VideoPlayerMutableBuilder[Self <: VideoPlayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmbedHeight(value: String): Self = StObject.set(x, "embedHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmbedHeightUndefined: Self = StObject.set(x, "embedHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedHeight(value: String): Self = this.set("embedHeight", value.asInstanceOf[js.Any])
+    def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
     
     @scala.inline
-    def deleteEmbedHeight: Self = this.set("embedHeight", js.undefined)
+    def setEmbedWidth(value: String): Self = StObject.set(x, "embedWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedHtml(value: String): Self = this.set("embedHtml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmbedHtml: Self = this.set("embedHtml", js.undefined)
-    
-    @scala.inline
-    def setEmbedWidth(value: String): Self = this.set("embedWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmbedWidth: Self = this.set("embedWidth", js.undefined)
+    def setEmbedWidthUndefined: Self = StObject.set(x, "embedWidth", js.undefined)
   }
 }

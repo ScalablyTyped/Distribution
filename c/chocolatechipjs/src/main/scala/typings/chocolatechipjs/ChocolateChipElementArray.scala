@@ -5,6 +5,7 @@ import typings.std.Array
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,12 +1,13 @@
 package typings.c3.anon
 
 import typings.c3.mod.ChartInternal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Onclick extends js.Object {
+trait Onclick extends StObject {
   
   /**
     * Set click event handler to the legend item.
@@ -40,42 +41,30 @@ object Onclick {
   }
   
   @scala.inline
-  implicit class OnclickOps[Self <: Onclick] (val x: Self) extends AnyVal {
+  implicit class OnclickMutableBuilder[Self <: Onclick] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnclick(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnmouseout(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnclick(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = this.set("onclick", value.asInstanceOf[js.Any])
+    def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
     
     @scala.inline
-    def deleteOnclick: Self = this.set("onclick", js.undefined)
+    def setOnmouseover(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnmouseout(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = this.set("onmouseout", value.asInstanceOf[js.Any])
+    def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
     
     @scala.inline
-    def deleteOnmouseout: Self = this.set("onmouseout", js.undefined)
+    def setTile(value: Height): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnmouseover(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = this.set("onmouseover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnmouseover: Self = this.set("onmouseover", js.undefined)
-    
-    @scala.inline
-    def setTile(value: Height): Self = this.set("tile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTile: Self = this.set("tile", js.undefined)
+    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }
 }

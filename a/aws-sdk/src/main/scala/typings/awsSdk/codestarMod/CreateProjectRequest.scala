@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProjectRequest extends js.Object {
+trait CreateProjectRequest extends StObject {
   
   /**
     * A user- or system-generated token that identifies the entity that requested project creation. This token can be used to repeat the request.
@@ -51,57 +52,45 @@ object CreateProjectRequest {
   }
   
   @scala.inline
-  implicit class CreateProjectRequestOps[Self <: CreateProjectRequest] (val x: Self) extends AnyVal {
+  implicit class CreateProjectRequestMutableBuilder[Self <: CreateProjectRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: ProjectDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ProjectId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setName(value: ProjectName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    def setName(value: ProjectName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    def setSourceCode(value: SourceCode): Self = StObject.set(x, "sourceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: ProjectDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setSourceCodeUndefined: Self = StObject.set(x, "sourceCode", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setSourceCodeVarargs(value: Code*): Self = StObject.set(x, "sourceCode", js.Array(value :_*))
     
     @scala.inline
-    def setSourceCodeVarargs(value: Code*): Self = this.set("sourceCode", js.Array(value :_*))
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCode(value: SourceCode): Self = this.set("sourceCode", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSourceCode: Self = this.set("sourceCode", js.undefined)
+    def setToolchain(value: Toolchain): Self = StObject.set(x, "toolchain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setToolchain(value: Toolchain): Self = this.set("toolchain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolchain: Self = this.set("toolchain", js.undefined)
+    def setToolchainUndefined: Self = StObject.set(x, "toolchain", js.undefined)
   }
 }

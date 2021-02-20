@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DimensionMap extends js.Object {
+trait DimensionMap extends StObject {
   
   var draggables: DraggableDimensionMap = js.native
   
@@ -20,24 +21,12 @@ object DimensionMap {
   }
   
   @scala.inline
-  implicit class DimensionMapOps[Self <: DimensionMap] (val x: Self) extends AnyVal {
+  implicit class DimensionMapMutableBuilder[Self <: DimensionMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraggables(value: DraggableDimensionMap): Self = StObject.set(x, "draggables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDraggables(value: DraggableDimensionMap): Self = this.set("draggables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDroppables(value: DroppableDimensionMap): Self = this.set("droppables", value.asInstanceOf[js.Any])
+    def setDroppables(value: DroppableDimensionMap): Self = StObject.set(x, "droppables", value.asInstanceOf[js.Any])
   }
 }

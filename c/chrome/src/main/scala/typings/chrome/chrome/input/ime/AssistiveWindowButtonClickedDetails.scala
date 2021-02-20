@@ -1,11 +1,12 @@
 package typings.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssistiveWindowButtonClickedDetails extends js.Object {
+trait AssistiveWindowButtonClickedDetails extends StObject {
   
   /** The ID of the button clicked. */
   var buttonID: AssistiveWindowButton = js.native
@@ -22,24 +23,12 @@ object AssistiveWindowButtonClickedDetails {
   }
   
   @scala.inline
-  implicit class AssistiveWindowButtonClickedDetailsOps[Self <: AssistiveWindowButtonClickedDetails] (val x: Self) extends AnyVal {
+  implicit class AssistiveWindowButtonClickedDetailsMutableBuilder[Self <: AssistiveWindowButtonClickedDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonID(value: AssistiveWindowButton): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setButtonID(value: AssistiveWindowButton): Self = this.set("buttonID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowType(value: AssistiveWindowType): Self = this.set("windowType", value.asInstanceOf[js.Any])
+    def setWindowType(value: AssistiveWindowType): Self = StObject.set(x, "windowType", value.asInstanceOf[js.Any])
   }
 }

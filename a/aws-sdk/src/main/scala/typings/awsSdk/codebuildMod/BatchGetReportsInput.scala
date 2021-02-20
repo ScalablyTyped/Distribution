@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetReportsInput extends js.Object {
+trait BatchGetReportsInput extends StObject {
   
   /**
     *  An array of ARNs that identify the Report objects to return. 
@@ -21,24 +22,12 @@ object BatchGetReportsInput {
   }
   
   @scala.inline
-  implicit class BatchGetReportsInputOps[Self <: BatchGetReportsInput] (val x: Self) extends AnyVal {
+  implicit class BatchGetReportsInputMutableBuilder[Self <: BatchGetReportsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReportArns(value: ReportArns): Self = StObject.set(x, "reportArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReportArnsVarargs(value: NonEmptyString*): Self = this.set("reportArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setReportArns(value: ReportArns): Self = this.set("reportArns", value.asInstanceOf[js.Any])
+    def setReportArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportArns", js.Array(value :_*))
   }
 }

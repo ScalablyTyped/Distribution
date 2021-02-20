@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitiateAuthRequest extends js.Object {
+trait InitiateAuthRequest extends StObject {
   
   /**
     * The Amazon Pinpoint analytics metadata for collecting metrics for InitiateAuth calls.
@@ -46,48 +47,36 @@ object InitiateAuthRequest {
   }
   
   @scala.inline
-  implicit class InitiateAuthRequestOps[Self <: InitiateAuthRequest] (val x: Self) extends AnyVal {
+  implicit class InitiateAuthRequestMutableBuilder[Self <: InitiateAuthRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthFlow(value: AuthFlowType): Self = StObject.set(x, "AuthFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthFlow(value: AuthFlowType): Self = this.set("AuthFlow", value.asInstanceOf[js.Any])
+    def setAuthParameters(value: AuthParametersType): Self = StObject.set(x, "AuthParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setAuthParametersUndefined: Self = StObject.set(x, "AuthParameters", js.undefined)
     
     @scala.inline
-    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = this.set("AnalyticsMetadata", value.asInstanceOf[js.Any])
+    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnalyticsMetadata: Self = this.set("AnalyticsMetadata", js.undefined)
+    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthParameters(value: AuthParametersType): Self = this.set("AuthParameters", value.asInstanceOf[js.Any])
+    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
     @scala.inline
-    def deleteAuthParameters: Self = this.set("AuthParameters", js.undefined)
+    def setUserContextData(value: UserContextDataType): Self = StObject.set(x, "UserContextData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
-    
-    @scala.inline
-    def setUserContextData(value: UserContextDataType): Self = this.set("UserContextData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserContextData: Self = this.set("UserContextData", js.undefined)
+    def setUserContextDataUndefined: Self = StObject.set(x, "UserContextData", js.undefined)
   }
 }

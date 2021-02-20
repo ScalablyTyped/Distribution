@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSimulationJobBatchesResponse extends js.Object {
+trait ListSimulationJobBatchesResponse extends StObject {
   
   /**
     * If the previous paginated request did not return all of the remaining results, the response object's nextToken parameter value is set to a token. To retrieve the next set of results, call ListSimulationJobBatches again and assign that token to the request object's nextToken parameter. If there are no remaining results, the previous response object's NextToken parameter is set to null. 
@@ -26,33 +27,21 @@ object ListSimulationJobBatchesResponse {
   }
   
   @scala.inline
-  implicit class ListSimulationJobBatchesResponseOps[Self <: ListSimulationJobBatchesResponse] (val x: Self) extends AnyVal {
+  implicit class ListSimulationJobBatchesResponseMutableBuilder[Self <: ListSimulationJobBatchesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSimulationJobBatchSummaries(value: SimulationJobBatchSummaries): Self = StObject.set(x, "simulationJobBatchSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setSimulationJobBatchSummariesUndefined: Self = StObject.set(x, "simulationJobBatchSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setSimulationJobBatchSummariesVarargs(value: SimulationJobBatchSummary*): Self = this.set("simulationJobBatchSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setSimulationJobBatchSummaries(value: SimulationJobBatchSummaries): Self = this.set("simulationJobBatchSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimulationJobBatchSummaries: Self = this.set("simulationJobBatchSummaries", js.undefined)
+    def setSimulationJobBatchSummariesVarargs(value: SimulationJobBatchSummary*): Self = StObject.set(x, "simulationJobBatchSummaries", js.Array(value :_*))
   }
 }

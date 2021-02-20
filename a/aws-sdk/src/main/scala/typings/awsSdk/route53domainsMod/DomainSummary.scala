@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainSummary extends js.Object {
+trait DomainSummary extends StObject {
   
   /**
     * Indicates whether the domain is automatically renewed upon expiration.
@@ -36,39 +37,27 @@ object DomainSummary {
   }
   
   @scala.inline
-  implicit class DomainSummaryOps[Self <: DomainSummary] (val x: Self) extends AnyVal {
+  implicit class DomainSummaryMutableBuilder[Self <: DomainSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRenew(value: Boolean): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setExpiry(value: Timestamp): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRenew(value: Boolean): Self = this.set("AutoRenew", value.asInstanceOf[js.Any])
+    def setExpiryUndefined: Self = StObject.set(x, "Expiry", js.undefined)
     
     @scala.inline
-    def deleteAutoRenew: Self = this.set("AutoRenew", js.undefined)
+    def setTransferLock(value: Boolean): Self = StObject.set(x, "TransferLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiry(value: Timestamp): Self = this.set("Expiry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiry: Self = this.set("Expiry", js.undefined)
-    
-    @scala.inline
-    def setTransferLock(value: Boolean): Self = this.set("TransferLock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferLock: Self = this.set("TransferLock", js.undefined)
+    def setTransferLockUndefined: Self = StObject.set(x, "TransferLock", js.undefined)
   }
 }

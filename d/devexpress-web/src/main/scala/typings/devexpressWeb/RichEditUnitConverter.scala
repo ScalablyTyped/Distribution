@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the method to convert different units of measurement.
   */
 @js.native
-trait RichEditUnitConverter extends js.Object {
+trait RichEditUnitConverter extends StObject {
   
   /**
     * Converts a value in centimeters to twips. An integer value representing the value in twips.
@@ -90,48 +91,36 @@ object RichEditUnitConverter {
   }
   
   @scala.inline
-  implicit class RichEditUnitConverterOps[Self <: RichEditUnitConverter] (val x: Self) extends AnyVal {
+  implicit class RichEditUnitConverterMutableBuilder[Self <: RichEditUnitConverter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCentimetersToTwips(value: Double => Double): Self = StObject.set(x, "centimetersToTwips", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInchesToTwips(value: Double => Double): Self = StObject.set(x, "inchesToTwips", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPixelsToCentimeters(value: Double => Double): Self = StObject.set(x, "pixelsToCentimeters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCentimetersToTwips(value: Double => Double): Self = this.set("centimetersToTwips", js.Any.fromFunction1(value))
+    def setPixelsToInches(value: Double => Double): Self = StObject.set(x, "pixelsToInches", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInchesToTwips(value: Double => Double): Self = this.set("inchesToTwips", js.Any.fromFunction1(value))
+    def setPixelsToPoints(value: Double => Double): Self = StObject.set(x, "pixelsToPoints", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPixelsToCentimeters(value: Double => Double): Self = this.set("pixelsToCentimeters", js.Any.fromFunction1(value))
+    def setPixelsToTwips(value: Double => Double): Self = StObject.set(x, "pixelsToTwips", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPixelsToInches(value: Double => Double): Self = this.set("pixelsToInches", js.Any.fromFunction1(value))
+    def setPointsToTwips(value: Double => Double): Self = StObject.set(x, "pointsToTwips", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPixelsToPoints(value: Double => Double): Self = this.set("pixelsToPoints", js.Any.fromFunction1(value))
+    def setTwipsToCentimeters(value: Double => Double): Self = StObject.set(x, "twipsToCentimeters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPixelsToTwips(value: Double => Double): Self = this.set("pixelsToTwips", js.Any.fromFunction1(value))
+    def setTwipsToInches(value: Double => Double): Self = StObject.set(x, "twipsToInches", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPointsToTwips(value: Double => Double): Self = this.set("pointsToTwips", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTwipsToCentimeters(value: Double => Double): Self = this.set("twipsToCentimeters", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTwipsToInches(value: Double => Double): Self = this.set("twipsToInches", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTwipsToPoints(value: Double => Double): Self = this.set("twipsToPoints", js.Any.fromFunction1(value))
+    def setTwipsToPoints(value: Double => Double): Self = StObject.set(x, "twipsToPoints", js.Any.fromFunction1(value))
   }
 }

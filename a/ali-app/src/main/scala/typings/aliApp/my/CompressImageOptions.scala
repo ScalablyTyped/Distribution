@@ -6,6 +6,7 @@ import typings.aliApp.aliAppNumbers.`2`
 import typings.aliApp.aliAppNumbers.`3`
 import typings.aliApp.aliAppNumbers.`4`
 import typings.aliApp.anon.ApFilePaths
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,36 +45,24 @@ object CompressImageOptions {
   }
   
   @scala.inline
-  implicit class CompressImageOptionsOps[Self <: CompressImageOptions] (val x: Self) extends AnyVal {
+  implicit class CompressImageOptionsMutableBuilder[Self <: CompressImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApFilePaths(value: js.Array[String]): Self = StObject.set(x, "apFilePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApFilePathsVarargs(value: String*): Self = StObject.set(x, "apFilePaths", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompressLevel(value: `0` | `1` | `2` | `3` | `4`): Self = StObject.set(x, "compressLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApFilePathsVarargs(value: String*): Self = this.set("apFilePaths", js.Array(value :_*))
+    def setCompressLevelUndefined: Self = StObject.set(x, "compressLevel", js.undefined)
     
     @scala.inline
-    def setApFilePaths(value: js.Array[String]): Self = this.set("apFilePaths", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* res */ ApFilePaths => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompressLevel(value: `0` | `1` | `2` | `3` | `4`): Self = this.set("compressLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompressLevel: Self = this.set("compressLevel", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ ApFilePaths => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

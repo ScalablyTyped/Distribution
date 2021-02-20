@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingConfig extends js.Object {
+trait BillingConfig extends StObject {
   
   /** Name of the billing account. For example `billingAccounts/012345-567890-ABCDEF`. */
   var billingAccount: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object BillingConfig {
   }
   
   @scala.inline
-  implicit class BillingConfigOps[Self <: BillingConfig] (val x: Self) extends AnyVal {
+  implicit class BillingConfigMutableBuilder[Self <: BillingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAccount(value: String): Self = StObject.set(x, "billingAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBillingAccount(value: String): Self = this.set("billingAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingAccount: Self = this.set("billingAccount", js.undefined)
+    def setBillingAccountUndefined: Self = StObject.set(x, "billingAccount", js.undefined)
   }
 }

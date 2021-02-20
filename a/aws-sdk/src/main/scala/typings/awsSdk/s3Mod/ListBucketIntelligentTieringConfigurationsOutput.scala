@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBucketIntelligentTieringConfigurationsOutput extends js.Object {
+trait ListBucketIntelligentTieringConfigurationsOutput extends StObject {
   
   /**
     * The ContinuationToken that represents a placeholder from where this request should begin.
@@ -36,45 +37,33 @@ object ListBucketIntelligentTieringConfigurationsOutput {
   }
   
   @scala.inline
-  implicit class ListBucketIntelligentTieringConfigurationsOutputOps[Self <: ListBucketIntelligentTieringConfigurationsOutput] (val x: Self) extends AnyVal {
+  implicit class ListBucketIntelligentTieringConfigurationsOutputMutableBuilder[Self <: ListBucketIntelligentTieringConfigurationsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntelligentTieringConfigurationList(value: IntelligentTieringConfigurationList): Self = StObject.set(x, "IntelligentTieringConfigurationList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: Token): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
+    def setIntelligentTieringConfigurationListUndefined: Self = StObject.set(x, "IntelligentTieringConfigurationList", js.undefined)
     
     @scala.inline
-    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    def setIntelligentTieringConfigurationListVarargs(value: IntelligentTieringConfiguration*): Self = StObject.set(x, "IntelligentTieringConfigurationList", js.Array(value :_*))
     
     @scala.inline
-    def setIntelligentTieringConfigurationListVarargs(value: IntelligentTieringConfiguration*): Self = this.set("IntelligentTieringConfigurationList", js.Array(value :_*))
+    def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntelligentTieringConfigurationList(value: IntelligentTieringConfigurationList): Self = this.set("IntelligentTieringConfigurationList", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def deleteIntelligentTieringConfigurationList: Self = this.set("IntelligentTieringConfigurationList", js.undefined)
+    def setNextContinuationToken(value: NextToken): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
-    
-    @scala.inline
-    def setNextContinuationToken(value: NextToken): Self = this.set("NextContinuationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextContinuationToken: Self = this.set("NextContinuationToken", js.undefined)
+    def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
   }
 }

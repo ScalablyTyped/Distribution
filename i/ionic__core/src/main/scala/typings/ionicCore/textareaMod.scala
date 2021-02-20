@@ -26,14 +26,14 @@ import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/textarea/textarea", JSImport.Namespace)
-@js.native
-object textareaMod extends js.Object {
+object textareaMod {
   
+  @JSImport("@ionic/core/dist/types/components/textarea/textarea", "Textarea")
   @js.native
   class Textarea () extends ComponentInterface {
     

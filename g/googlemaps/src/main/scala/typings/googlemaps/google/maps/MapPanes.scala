@@ -1,13 +1,14 @@
 package typings.googlemaps.google.maps
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/overlay-view#MapPanes Maps JavaScript API} */
 @js.native
-trait MapPanes extends js.Object {
+trait MapPanes extends StObject {
   
   /**
     * This pane contains the info window. (Pane 4).
@@ -66,33 +67,21 @@ object MapPanes {
   }
   
   @scala.inline
-  implicit class MapPanesOps[Self <: MapPanes] (val x: Self) extends AnyVal {
+  implicit class MapPanesMutableBuilder[Self <: MapPanes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloatPane(value: Element): Self = StObject.set(x, "floatPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMapPane(value: Element): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkerLayer(value: Element): Self = StObject.set(x, "markerLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatPane(value: Element): Self = this.set("floatPane", value.asInstanceOf[js.Any])
+    def setOverlayLayer(value: Element): Self = StObject.set(x, "overlayLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapPane(value: Element): Self = this.set("mapPane", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMarkerLayer(value: Element): Self = this.set("markerLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverlayLayer(value: Element): Self = this.set("overlayLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverlayMouseTarget(value: Element): Self = this.set("overlayMouseTarget", value.asInstanceOf[js.Any])
+    def setOverlayMouseTarget(value: Element): Self = StObject.set(x, "overlayMouseTarget", value.asInstanceOf[js.Any])
   }
 }

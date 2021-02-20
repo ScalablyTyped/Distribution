@@ -4,14 +4,14 @@ import typings.typesettable.abstractMeasurerMod.AbstractMeasurer
 import typings.typesettable.abstractMeasurerMod.IDimensions
 import typings.typesettable.abstractMeasurerMod.IRuler
 import typings.typesettable.contextsMod.IRulerFactoryContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typesettable/build/src/measurers/measurer", JSImport.Namespace)
-@js.native
-object measurerMod extends js.Object {
+object measurerMod {
   
+  @JSImport("typesettable/build/src/measurers/measurer", "Measurer")
   @js.native
   class Measurer protected () extends AbstractMeasurer {
     def this(ruler: IRuler) = this()

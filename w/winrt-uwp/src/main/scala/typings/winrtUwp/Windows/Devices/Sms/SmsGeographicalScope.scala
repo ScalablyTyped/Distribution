@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsGeographicalScope extends js.Object
+sealed trait SmsGeographicalScope extends StObject
 /** Values that describe the geographical scope of a cell broadcast message. */
 @JSGlobal("Windows.Devices.Sms.SmsGeographicalScope")
 @js.native
-object SmsGeographicalScope extends js.Object {
+object SmsGeographicalScope extends StObject {
   
   /** Scope is a single cell tower. */
   @js.native

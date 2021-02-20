@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,33 +68,21 @@ object XLibraryContainer2 {
   }
   
   @scala.inline
-  implicit class XLibraryContainer2Ops[Self <: XLibraryContainer2] (val x: Self) extends AnyVal {
+  implicit class XLibraryContainer2MutableBuilder[Self <: XLibraryContainer2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLibraryLinkURL(value: String => String): Self = StObject.set(x, "getLibraryLinkURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLibraryLink(value: String => Boolean): Self = StObject.set(x, "isLibraryLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLibraryReadOnly(value: String => Boolean): Self = StObject.set(x, "isLibraryReadOnly", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLibraryLinkURL(value: String => String): Self = this.set("getLibraryLinkURL", js.Any.fromFunction1(value))
+    def setRenameLibrary(value: (String, String) => Unit): Self = StObject.set(x, "renameLibrary", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsLibraryLink(value: String => Boolean): Self = this.set("isLibraryLink", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsLibraryReadOnly(value: String => Boolean): Self = this.set("isLibraryReadOnly", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRenameLibrary(value: (String, String) => Unit): Self = this.set("renameLibrary", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetLibraryReadOnly(value: (String, Boolean) => Unit): Self = this.set("setLibraryReadOnly", js.Any.fromFunction2(value))
+    def setSetLibraryReadOnly(value: (String, Boolean) => Unit): Self = StObject.set(x, "setLibraryReadOnly", js.Any.fromFunction2(value))
   }
 }

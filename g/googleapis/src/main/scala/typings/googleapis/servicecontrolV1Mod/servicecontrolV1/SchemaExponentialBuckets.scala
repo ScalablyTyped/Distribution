@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describing buckets with exponentially growing width.
   */
 @js.native
-trait SchemaExponentialBuckets extends js.Object {
+trait SchemaExponentialBuckets extends StObject {
   
   /**
     * The i&#39;th exponential bucket covers the interval   [scale *
@@ -40,36 +41,24 @@ object SchemaExponentialBuckets {
   }
   
   @scala.inline
-  implicit class SchemaExponentialBucketsOps[Self <: SchemaExponentialBuckets] (val x: Self) extends AnyVal {
+  implicit class SchemaExponentialBucketsMutableBuilder[Self <: SchemaExponentialBuckets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrowthFactor(value: Double): Self = StObject.set(x, "growthFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrowthFactorUndefined: Self = StObject.set(x, "growthFactor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumFiniteBuckets(value: Double): Self = StObject.set(x, "numFiniteBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrowthFactor(value: Double): Self = this.set("growthFactor", value.asInstanceOf[js.Any])
+    def setNumFiniteBucketsUndefined: Self = StObject.set(x, "numFiniteBuckets", js.undefined)
     
     @scala.inline
-    def deleteGrowthFactor: Self = this.set("growthFactor", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFiniteBuckets(value: Double): Self = this.set("numFiniteBuckets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumFiniteBuckets: Self = this.set("numFiniteBuckets", js.undefined)
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

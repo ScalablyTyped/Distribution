@@ -1,11 +1,12 @@
 package typings.slackMock.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Instance_ extends js.Object {
+trait Instance_ extends StObject {
   
   var events: Events[_] = js.native
   
@@ -41,42 +42,30 @@ object Instance_ {
   }
   
   @scala.inline
-  implicit class Instance_Ops[Self <: Instance_] (val x: Self) extends AnyVal {
+  implicit class Instance_MutableBuilder[Self <: Instance_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: Events[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncomingWebhooks(value: IncomingWebhooks[_]): Self = StObject.set(x, "incomingWebhooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInteractiveButtons(value: InteractiveButtons[_]): Self = StObject.set(x, "interactiveButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: Events[_]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setOutgoingWebhooks(value: OutgoingWebhooks[_]): Self = StObject.set(x, "outgoingWebhooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncomingWebhooks(value: IncomingWebhooks[_]): Self = this.set("incomingWebhooks", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInteractiveButtons(value: InteractiveButtons[_]): Self = this.set("interactiveButtons", value.asInstanceOf[js.Any])
+    def setRtm(value: Rtm[_]): Self = StObject.set(x, "rtm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoingWebhooks(value: OutgoingWebhooks[_]): Self = this.set("outgoingWebhooks", value.asInstanceOf[js.Any])
+    def setSlashCommands(value: SlashCommands[_]): Self = StObject.set(x, "slashCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRtm(value: Rtm[_]): Self = this.set("rtm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlashCommands(value: SlashCommands[_]): Self = this.set("slashCommands", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeb(value: Web[_]): Self = this.set("web", value.asInstanceOf[js.Any])
+    def setWeb(value: Web[_]): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.cathoQuantum.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BreakpointsColors extends js.Object {
+trait BreakpointsColors extends StObject {
   
   var breakpoints: js.UndefOr[js.Object] = js.native
   
@@ -24,42 +25,30 @@ object BreakpointsColors {
   }
   
   @scala.inline
-  implicit class BreakpointsColorsOps[Self <: BreakpointsColors] (val x: Self) extends AnyVal {
+  implicit class BreakpointsColorsMutableBuilder[Self <: BreakpointsColors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakpoints(value: js.Object): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakpoints(value: js.Object): Self = this.set("breakpoints", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteBreakpoints: Self = this.set("breakpoints", js.undefined)
+    def setComponents(value: Button): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Object): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: Button): Self = this.set("components", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponents: Self = this.set("components", js.undefined)
-    
-    @scala.inline
-    def setSpacing(value: js.Object): Self = this.set("spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

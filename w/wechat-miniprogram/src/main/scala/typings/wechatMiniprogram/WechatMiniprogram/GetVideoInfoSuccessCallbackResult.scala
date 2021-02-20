@@ -8,12 +8,13 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.down
 import typings.wechatMiniprogram.wechatMiniprogramStrings.left
 import typings.wechatMiniprogram.wechatMiniprogramStrings.right
 import typings.wechatMiniprogram.wechatMiniprogramStrings.up
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetVideoInfoSuccessCallbackResult extends js.Object {
+trait GetVideoInfoSuccessCallbackResult extends StObject {
   
   /** 视频码率，单位 kbps */
   var bitrate: Double = js.native
@@ -71,47 +72,35 @@ object GetVideoInfoSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class GetVideoInfoSuccessCallbackResultOps[Self <: GetVideoInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class GetVideoInfoSuccessCallbackResultMutableBuilder[Self <: GetVideoInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrate(value: Double): Self = this.set("bitrate", value.asInstanceOf[js.Any])
+    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFps(value: Double): Self = this.set("fps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOrientation(
       value: up | down | left | right | `up-mirrored` | `down-mirrored` | `left-mirrored` | `right-mirrored`
-    ): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

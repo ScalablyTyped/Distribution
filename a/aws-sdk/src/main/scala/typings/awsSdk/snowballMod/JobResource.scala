@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobResource extends js.Object {
+trait JobResource extends StObject {
   
   /**
     * The Amazon Machine Images (AMIs) associated with this job.
@@ -31,45 +32,33 @@ object JobResource {
   }
   
   @scala.inline
-  implicit class JobResourceOps[Self <: JobResource] (val x: Self) extends AnyVal {
+  implicit class JobResourceMutableBuilder[Self <: JobResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEc2AmiResources(value: Ec2AmiResourceList): Self = StObject.set(x, "Ec2AmiResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEc2AmiResourcesUndefined: Self = StObject.set(x, "Ec2AmiResources", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEc2AmiResourcesVarargs(value: Ec2AmiResource*): Self = StObject.set(x, "Ec2AmiResources", js.Array(value :_*))
     
     @scala.inline
-    def setEc2AmiResourcesVarargs(value: Ec2AmiResource*): Self = this.set("Ec2AmiResources", js.Array(value :_*))
+    def setLambdaResources(value: LambdaResourceList): Self = StObject.set(x, "LambdaResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2AmiResources(value: Ec2AmiResourceList): Self = this.set("Ec2AmiResources", value.asInstanceOf[js.Any])
+    def setLambdaResourcesUndefined: Self = StObject.set(x, "LambdaResources", js.undefined)
     
     @scala.inline
-    def deleteEc2AmiResources: Self = this.set("Ec2AmiResources", js.undefined)
+    def setLambdaResourcesVarargs(value: LambdaResource*): Self = StObject.set(x, "LambdaResources", js.Array(value :_*))
     
     @scala.inline
-    def setLambdaResourcesVarargs(value: LambdaResource*): Self = this.set("LambdaResources", js.Array(value :_*))
+    def setS3Resources(value: S3ResourceList): Self = StObject.set(x, "S3Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaResources(value: LambdaResourceList): Self = this.set("LambdaResources", value.asInstanceOf[js.Any])
+    def setS3ResourcesUndefined: Self = StObject.set(x, "S3Resources", js.undefined)
     
     @scala.inline
-    def deleteLambdaResources: Self = this.set("LambdaResources", js.undefined)
-    
-    @scala.inline
-    def setS3ResourcesVarargs(value: S3Resource*): Self = this.set("S3Resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setS3Resources(value: S3ResourceList): Self = this.set("S3Resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Resources: Self = this.set("S3Resources", js.undefined)
+    def setS3ResourcesVarargs(value: S3Resource*): Self = StObject.set(x, "S3Resources", js.Array(value :_*))
   }
 }

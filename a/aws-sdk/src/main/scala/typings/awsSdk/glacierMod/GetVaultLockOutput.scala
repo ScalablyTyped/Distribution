@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetVaultLockOutput extends js.Object {
+trait GetVaultLockOutput extends StObject {
   
   /**
     * The UTC date and time at which the vault lock was put into the InProgress state.
@@ -36,42 +37,30 @@ object GetVaultLockOutput {
   }
   
   @scala.inline
-  implicit class GetVaultLockOutputOps[Self <: GetVaultLockOutput] (val x: Self) extends AnyVal {
+  implicit class GetVaultLockOutputMutableBuilder[Self <: GetVaultLockOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: String): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: String): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
     @scala.inline
-    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: String): Self = this.set("Policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

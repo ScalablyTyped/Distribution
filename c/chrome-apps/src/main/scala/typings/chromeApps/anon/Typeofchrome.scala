@@ -2,12 +2,13 @@ package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.deprecated
 import typings.chromeApps.chrome.deprecatedButUsable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofchrome extends js.Object {
+trait Typeofchrome extends StObject {
   
   // #endregion
   // #region classes
@@ -20,6 +21,7 @@ trait Typeofchrome extends js.Object {
     */
   val Event: Instantiable = js.native
   
+  // | 'double';
   // #endregion internal
   // #region chrome.accessibilityFeatures
   ////////////////////////////
@@ -875,189 +877,177 @@ object Typeofchrome {
   }
   
   @scala.inline
-  implicit class TypeofchromeOps[Self <: Typeofchrome] (val x: Self) extends AnyVal {
+  implicit class TypeofchromeMutableBuilder[Self <: Typeofchrome] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityFeatures(value: TypeofaccessibilityFeatur): Self = StObject.set(x, "accessibilityFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlarms(value: Typeofalarms): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApp(value: Typeofapp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: Instantiable): Self = this.set("Event", value.asInstanceOf[js.Any])
+    def setAudio(value: Typeofaudio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityFeatures(value: TypeofaccessibilityFeatur): Self = this.set("accessibilityFeatures", value.asInstanceOf[js.Any])
+    def setBluetooth(value: Typeofbluetooth): Self = StObject.set(x, "bluetooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarms(value: Typeofalarms): Self = this.set("alarms", value.asInstanceOf[js.Any])
+    def setBluetoothLowEnergy(value: TypeofbluetoothLowEnergy): Self = StObject.set(x, "bluetoothLowEnergy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: Typeofapp): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setBluetoothSocket(value: TypeofbluetoothSocket): Self = StObject.set(x, "bluetoothSocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: Typeofaudio): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setBrowser(value: Typeofbrowser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBluetooth(value: Typeofbluetooth): Self = this.set("bluetooth", value.asInstanceOf[js.Any])
+    def setCertificateProvider(value: TypeofcertificateProvider): Self = StObject.set(x, "certificateProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBluetoothLowEnergy(value: TypeofbluetoothLowEnergy): Self = this.set("bluetoothLowEnergy", value.asInstanceOf[js.Any])
+    def setClipboard(value: Typeofclipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBluetoothSocket(value: TypeofbluetoothSocket): Self = this.set("bluetoothSocket", value.asInstanceOf[js.Any])
+    def setCommands(value: Typeofcommands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowser(value: Typeofbrowser): Self = this.set("browser", value.asInstanceOf[js.Any])
+    def setContextMenus(value: TypeofcontextMenus): Self = StObject.set(x, "contextMenus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateProvider(value: TypeofcertificateProvider): Self = this.set("certificateProvider", value.asInstanceOf[js.Any])
+    def setCsi(value: () => OnloadT): Self = StObject.set(x, "csi", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClipboard(value: Typeofclipboard): Self = this.set("clipboard", value.asInstanceOf[js.Any])
+    def setDesktopCapture(value: TypeofdesktopCapture): Self = StObject.set(x, "desktopCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommands(value: Typeofcommands): Self = this.set("commands", value.asInstanceOf[js.Any])
+    def setDiagnostics(value: Typeofdiagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenus(value: TypeofcontextMenus): Self = this.set("contextMenus", value.asInstanceOf[js.Any])
+    def setDisplaySource(value: TypeofdisplaySource): Self = StObject.set(x, "displaySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsi(value: () => OnloadT): Self = this.set("csi", js.Any.fromFunction0(value))
+    def setDns(value: Typeofdns): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesktopCapture(value: TypeofdesktopCapture): Self = this.set("desktopCapture", value.asInstanceOf[js.Any])
+    def setDocumentScan(value: TypeofdocumentScan): Self = StObject.set(x, "documentScan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostics(value: Typeofdiagnostics): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    def setEnterprise(value: Typeofenterprise): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplaySource(value: TypeofdisplaySource): Self = this.set("displaySource", value.asInstanceOf[js.Any])
+    def setEvent(value: Instantiable): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDns(value: Typeofdns): Self = this.set("dns", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentScan(value: TypeofdocumentScan): Self = this.set("documentScan", value.asInstanceOf[js.Any])
+    def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterprise(value: Typeofenterprise): Self = this.set("enterprise", value.asInstanceOf[js.Any])
+    def setExtensionTypes(value: TypeofextensionTypes): Self = StObject.set(x, "extensionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setFileBrowserHandler(value: TypeoffileBrowserHandler): Self = StObject.set(x, "fileBrowserHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimental(value: js.Any): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    def setFileSystem(value: TypeoffileSystem): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionTypes(value: TypeofextensionTypes): Self = this.set("extensionTypes", value.asInstanceOf[js.Any])
+    def setFileSystemProvider(value: TypeoffileSystemProvider): Self = StObject.set(x, "fileSystemProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileBrowserHandler(value: TypeoffileBrowserHandler): Self = this.set("fileBrowserHandler", value.asInstanceOf[js.Any])
+    def setGcm(value: Typeofgcm): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystem(value: TypeoffileSystem): Self = this.set("fileSystem", value.asInstanceOf[js.Any])
+    def setHid(value: Typeofhid): Self = StObject.set(x, "hid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemProvider(value: TypeoffileSystemProvider): Self = this.set("fileSystemProvider", value.asInstanceOf[js.Any])
+    def setI18n(value: Typeofi18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcm(value: Typeofgcm): Self = this.set("gcm", value.asInstanceOf[js.Any])
+    def setIdentity(value: Typeofidentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHid(value: Typeofhid): Self = this.set("hid", value.asInstanceOf[js.Any])
+    def setIdle(value: Typeofidle): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18n(value: Typeofi18n): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    def setInstanceID(value: TypeofinstanceID): Self = StObject.set(x, "instanceID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentity(value: Typeofidentity): Self = this.set("identity", value.asInstanceOf[js.Any])
+    def setLoadTimes(value: () => deprecatedButUsable): Self = StObject.set(x, "loadTimes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIdle(value: Typeofidle): Self = this.set("idle", value.asInstanceOf[js.Any])
+    def setManagement(value: Typeofmanagement): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceID(value: TypeofinstanceID): Self = this.set("instanceID", value.asInstanceOf[js.Any])
+    def setMdns(value: Typeofmdns): Self = StObject.set(x, "mdns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadTimes(value: () => deprecatedButUsable): Self = this.set("loadTimes", js.Any.fromFunction0(value))
+    def setMediaGalleries(value: TypeofmediaGalleries): Self = StObject.set(x, "mediaGalleries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagement(value: Typeofmanagement): Self = this.set("management", value.asInstanceOf[js.Any])
+    def setNetworking(value: Typeofnetworking): Self = StObject.set(x, "networking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMdns(value: Typeofmdns): Self = this.set("mdns", value.asInstanceOf[js.Any])
+    def setNotifications(value: Typeofnotifications): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaGalleries(value: TypeofmediaGalleries): Self = this.set("mediaGalleries", value.asInstanceOf[js.Any])
+    def setPermissions(value: Typeofpermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworking(value: Typeofnetworking): Self = this.set("networking", value.asInstanceOf[js.Any])
+    def setPlatformKeys(value: TypeofplatformKeysClientCertificateType): Self = StObject.set(x, "platformKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifications(value: Typeofnotifications): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    def setPower(value: Typeofpower): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: Typeofpermissions): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setPrinterProvider(value: TypeofprinterProvider): Self = StObject.set(x, "printerProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformKeys(value: TypeofplatformKeysClientCertificateType): Self = this.set("platformKeys", value.asInstanceOf[js.Any])
+    def setRuntime(value: TypeofruntimeConnect): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPower(value: Typeofpower): Self = this.set("power", value.asInstanceOf[js.Any])
+    def setSerial(value: deprecated): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrinterProvider(value: TypeofprinterProvider): Self = this.set("printerProvider", value.asInstanceOf[js.Any])
+    def setSignedInDevices(value: TypeofsignedInDevices): Self = StObject.set(x, "signedInDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntime(value: TypeofruntimeConnect): Self = this.set("runtime", value.asInstanceOf[js.Any])
+    def setSockets(value: Typeofsockets): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerial(value: deprecated): Self = this.set("serial", value.asInstanceOf[js.Any])
+    def setStorage(value: Typeofstorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignedInDevices(value: TypeofsignedInDevices): Self = this.set("signedInDevices", value.asInstanceOf[js.Any])
+    def setSyncFileSystem(value: TypeofsyncFileSystem): Self = StObject.set(x, "syncFileSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSockets(value: Typeofsockets): Self = this.set("sockets", value.asInstanceOf[js.Any])
+    def setSystem(value: Typeofsystem): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorage(value: Typeofstorage): Self = this.set("storage", value.asInstanceOf[js.Any])
+    def setTts(value: Typeoftts): Self = StObject.set(x, "tts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncFileSystem(value: TypeofsyncFileSystem): Self = this.set("syncFileSystem", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: Typeofsystem): Self = this.set("system", value.asInstanceOf[js.Any])
+    def setUsb(value: Typeofusb): Self = StObject.set(x, "usb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTts(value: Typeoftts): Self = this.set("tts", value.asInstanceOf[js.Any])
+    def setVirtualKeyboard(value: TypeofvirtualKeyboard): Self = StObject.set(x, "virtualKeyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypes(value: js.Any): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setVpnProvider(value: TypeofvpnProvider): Self = StObject.set(x, "vpnProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsb(value: Typeofusb): Self = this.set("usb", value.asInstanceOf[js.Any])
+    def setWallpaper(value: Typeofwallpaper): Self = StObject.set(x, "wallpaper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualKeyboard(value: TypeofvirtualKeyboard): Self = this.set("virtualKeyboard", value.asInstanceOf[js.Any])
+    def setWebRequest(value: js.Any): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpnProvider(value: TypeofvpnProvider): Self = this.set("vpnProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWallpaper(value: Typeofwallpaper): Self = this.set("wallpaper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebRequest(value: js.Any): Self = this.set("webRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebViewRequest(value: TypeofwebViewRequest): Self = this.set("webViewRequest", value.asInstanceOf[js.Any])
+    def setWebViewRequest(value: TypeofwebViewRequest): Self = StObject.set(x, "webViewRequest", value.asInstanceOf[js.Any])
   }
 }

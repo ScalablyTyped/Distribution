@@ -42,12 +42,13 @@ import typings.node.fsMod.symlink.Type
 import typings.std.Date
 import typings.std.Uint8Array
 import typings.walkSync.walkSyncStrings.buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeoffsNode extends js.Object {
+trait TypeoffsNode extends StObject {
   
   var BigIntStats: Instantiable0[typings.node.fsMod.BigIntStats] = js.native
   

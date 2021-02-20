@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A filter with a single operand.
   */
 @js.native
-trait SchemaUnaryFilter extends js.Object {
+trait SchemaUnaryFilter extends StObject {
   
   /**
     * The field to which to apply the operator.
@@ -29,30 +30,18 @@ object SchemaUnaryFilter {
   }
   
   @scala.inline
-  implicit class SchemaUnaryFilterOps[Self <: SchemaUnaryFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaUnaryFilterMutableBuilder[Self <: SchemaUnaryFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: SchemaFieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: SchemaFieldReference): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
-    
-    @scala.inline
-    def setOp(value: String): Self = this.set("op", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOp: Self = this.set("op", js.undefined)
+    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
   }
 }

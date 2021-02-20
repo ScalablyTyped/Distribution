@@ -1,18 +1,22 @@
 package typings.materialSelect
 
 import typings.materialBase.foundationMod.MDCFoundation
-import typings.materialSelect.anon.ARIAHIDDEN
-import typings.materialSelect.anon.HELPERTEXTVALIDATIONMSG
 import typings.materialSelect.anon.PartialMDCSelectHelperTex
 import typings.materialSelect.helperTextAdapterMod.MDCSelectHelperTextAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/select/helper-text/foundation", JSImport.Namespace)
-@js.native
-object helperTextFoundationMod extends js.Object {
+object helperTextFoundationMod {
   
+  @JSImport("@material/select/helper-text/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCSelectHelperTextFoundation {
+    def this(adapter: PartialMDCSelectHelperTex) = this()
+  }
+  
+  @JSImport("@material/select/helper-text/foundation", "MDCSelectHelperTextFoundation")
   @js.native
   class MDCSelectHelperTextFoundation () extends MDCFoundation[MDCSelectHelperTextAdapter] {
     def this(adapter: PartialMDCSelectHelperTex) = this()
@@ -54,36 +58,5 @@ object helperTextFoundationMod extends js.Object {
       * triggers alerts as necessary based on the select's validity.
       */
     def setValidity(selectIsValid: Boolean): Unit = js.native
-  }
-  /* static members */
-  @js.native
-  object MDCSelectHelperTextFoundation extends js.Object {
-    
-    def cssClasses: HELPERTEXTVALIDATIONMSG = js.native
-    
-    /**
-      * See {@link MDCSelectHelperTextAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCSelectHelperTextAdapter = js.native
-    
-    def strings: ARIAHIDDEN = js.native
-  }
-  
-  @js.native
-  class default () extends MDCSelectHelperTextFoundation {
-    def this(adapter: PartialMDCSelectHelperTex) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def cssClasses: HELPERTEXTVALIDATIONMSG = js.native
-    
-    /**
-      * See {@link MDCSelectHelperTextAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCSelectHelperTextAdapter = js.native
-    
-    def strings: ARIAHIDDEN = js.native
   }
 }

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The functionality described in this topic is not available to all Windows and Windows Phone apps. For your code to call these APIs, Microsoft must approve your use of them and provision your developer account. Otherwise the calls will fail at runtime. */
 @js.native
-trait EmailMailboxChange extends js.Object {
+trait EmailMailboxChange extends StObject {
   
   /** Gets the type of change that was made to the mailbox. This includes whether it was a folder or message that was changed and whether the item was created, deleted, or modified, or if change tracking was lost for this change. */
   var changeType: EmailMailboxChangeType = js.native
@@ -35,30 +36,18 @@ object EmailMailboxChange {
   }
   
   @scala.inline
-  implicit class EmailMailboxChangeOps[Self <: EmailMailboxChange] (val x: Self) extends AnyVal {
+  implicit class EmailMailboxChangeMutableBuilder[Self <: EmailMailboxChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: EmailMailboxChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolder(value: EmailFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMailboxActions(value: IVector[EmailMailboxAction]): Self = StObject.set(x, "mailboxActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: EmailMailboxChangeType): Self = this.set("changeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFolder(value: EmailFolder): Self = this.set("folder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMailboxActions(value: IVector[EmailMailboxAction]): Self = this.set("mailboxActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: EmailMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: EmailMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

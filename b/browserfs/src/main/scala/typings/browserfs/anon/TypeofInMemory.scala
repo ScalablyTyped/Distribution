@@ -5,6 +5,7 @@ import typings.browserfs.fileSystemMod.BFSCallback
 import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.inMemoryMod.InMemoryFileSystem
 import typings.browserfs.inMemoryMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

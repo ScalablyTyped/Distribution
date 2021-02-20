@@ -1,12 +1,13 @@
 package typings.arangodb.Foxx
 
 import typings.arangodb.ArangoDB.HttpStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Endpoint extends js.Object {
+trait Endpoint extends StObject {
   
   def body(description: String): this.type = js.native
   def body(schemaOrMimes: js.Array[Model | String], description: String): this.type = js.native

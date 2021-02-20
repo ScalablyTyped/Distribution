@@ -1,15 +1,15 @@
 package typings.officeUiFabricReact.personaTypesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PersonaSize extends js.Object
+sealed trait PersonaSize extends StObject
 @JSImport("office-ui-fabric-react/lib/components/Persona/Persona.types", "PersonaSize")
 @js.native
-object PersonaSize extends js.Object {
+object PersonaSize extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PersonaSize with Double] = js.native
@@ -21,8 +21,7 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait extraExtraSmall extends PersonaSize
-  /* 1 */ @js.native
-  object extraExtraSmall extends TopLevel[extraExtraSmall with Double]
+  /* 1 */ val extraExtraSmall: typings.officeUiFabricReact.personaTypesMod.PersonaSize.extraExtraSmall with Double = js.native
   
   /**
     * `extraLarge` size has been deprecated in favor of standardized numeric sizing. Use `size100` instead.
@@ -30,8 +29,7 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait extraLarge extends PersonaSize
-  /* 6 */ @js.native
-  object extraLarge extends TopLevel[extraLarge with Double]
+  /* 6 */ val extraLarge: typings.officeUiFabricReact.personaTypesMod.PersonaSize.extraLarge with Double = js.native
   
   /**
     * `extraSmall` size has been deprecated in favor of standardized numeric sizing. Use `size32` instead.
@@ -39,8 +37,7 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait extraSmall extends PersonaSize
-  /* 2 */ @js.native
-  object extraSmall extends TopLevel[extraSmall with Double]
+  /* 2 */ val extraSmall: typings.officeUiFabricReact.personaTypesMod.PersonaSize.extraSmall with Double = js.native
   
   /**
     * `large` size has been deprecated in favor of standardized numeric sizing. Use `size72` instead.
@@ -48,8 +45,7 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait large extends PersonaSize
-  /* 5 */ @js.native
-  object large extends TopLevel[large with Double]
+  /* 5 */ val large: typings.officeUiFabricReact.personaTypesMod.PersonaSize.large with Double = js.native
   
   /**
     * `regular` size has been deprecated in favor of standardized numeric sizing. Use `size48` instead.
@@ -57,8 +53,7 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait regular extends PersonaSize
-  /* 4 */ @js.native
-  object regular extends TopLevel[regular with Double]
+  /* 4 */ val regular: typings.officeUiFabricReact.personaTypesMod.PersonaSize.regular with Double = js.native
   
   /**
     * No `PersonaCoin` is rendered. Deprecated in favor of `size8` to align with design specifications.
@@ -66,24 +61,21 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait size10 extends PersonaSize
-  /* 9 */ @js.native
-  object size10 extends TopLevel[size10 with Double]
+  /* 9 */ val size10: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size10 with Double = js.native
   
   /**
     * Renders a 100px `PersonaCoin`.
     */
   @js.native
   sealed trait size100 extends PersonaSize
-  /* 15 */ @js.native
-  object size100 extends TopLevel[size100 with Double]
+  /* 15 */ val size100: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size100 with Double = js.native
   
   /**
     * Renders a 120px `PersonaCoin`.
     */
   @js.native
   sealed trait size120 extends PersonaSize
-  /* 18 */ @js.native
-  object size120 extends TopLevel[size120 with Double]
+  /* 18 */ val size120: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size120 with Double = js.native
   
   /**
     * Renders a 16px `PersonaCoin`. Deprecated due to not being in the design specification.
@@ -91,16 +83,14 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait size16 extends PersonaSize
-  /* 8 */ @js.native
-  object size16 extends TopLevel[size16 with Double]
+  /* 8 */ val size16: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size16 with Double = js.native
   
   /**
     * Renders a 24px `PersonaCoin`.
     */
   @js.native
   sealed trait size24 extends PersonaSize
-  /* 10 */ @js.native
-  object size24 extends TopLevel[size24 with Double]
+  /* 10 */ val size24: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size24 with Double = js.native
   
   /**
     * Renders a 28px `PersonaCoin`. Deprecated due to not being in the design specification.
@@ -108,56 +98,49 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait size28 extends PersonaSize
-  /* 7 */ @js.native
-  object size28 extends TopLevel[size28 with Double]
+  /* 7 */ val size28: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size28 with Double = js.native
   
   /**
     * Renders a 32px `PersonaCoin`.
     */
   @js.native
   sealed trait size32 extends PersonaSize
-  /* 11 */ @js.native
-  object size32 extends TopLevel[size32 with Double]
+  /* 11 */ val size32: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size32 with Double = js.native
   
   /**
     * Renders a 40px `PersonaCoin`.
     */
   @js.native
   sealed trait size40 extends PersonaSize
-  /* 12 */ @js.native
-  object size40 extends TopLevel[size40 with Double]
+  /* 12 */ val size40: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size40 with Double = js.native
   
   /**
     * Renders a 48px `PersonaCoin`.
     */
   @js.native
   sealed trait size48 extends PersonaSize
-  /* 13 */ @js.native
-  object size48 extends TopLevel[size48 with Double]
+  /* 13 */ val size48: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size48 with Double = js.native
   
   /**
     * Renders a 56px `PersonaCoin`.
     */
   @js.native
   sealed trait size56 extends PersonaSize
-  /* 16 */ @js.native
-  object size56 extends TopLevel[size56 with Double]
+  /* 16 */ val size56: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size56 with Double = js.native
   
   /**
     * Renders a 72px `PersonaCoin`.
     */
   @js.native
   sealed trait size72 extends PersonaSize
-  /* 14 */ @js.native
-  object size72 extends TopLevel[size72 with Double]
+  /* 14 */ val size72: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size72 with Double = js.native
   
   /**
     * No `PersonaCoin` is rendered.
     */
   @js.native
   sealed trait size8 extends PersonaSize
-  /* 17 */ @js.native
-  object size8 extends TopLevel[size8 with Double]
+  /* 17 */ val size8: typings.officeUiFabricReact.personaTypesMod.PersonaSize.size8 with Double = js.native
   
   /**
     * `small` size has been deprecated in favor of standardized numeric sizing. Use `size40` instead.
@@ -165,8 +148,7 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait small extends PersonaSize
-  /* 3 */ @js.native
-  object small extends TopLevel[small with Double]
+  /* 3 */ val small: typings.officeUiFabricReact.personaTypesMod.PersonaSize.small with Double = js.native
   
   /**
     * `tiny` size has been deprecated in favor of standardized numeric sizing. Use `size8` instead.
@@ -174,6 +156,5 @@ object PersonaSize extends js.Object {
     */
   @js.native
   sealed trait tiny extends PersonaSize
-  /* 0 */ @js.native
-  object tiny extends TopLevel[tiny with Double]
+  /* 0 */ val tiny: typings.officeUiFabricReact.personaTypesMod.PersonaSize.tiny with Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBonusPaymentsResponse extends js.Object {
+trait ListBonusPaymentsResponse extends StObject {
   
   /**
     * A successful request to the ListBonusPayments operation returns a list of BonusPayment objects. 
@@ -28,39 +29,27 @@ object ListBonusPaymentsResponse {
   }
   
   @scala.inline
-  implicit class ListBonusPaymentsResponseOps[Self <: ListBonusPaymentsResponse] (val x: Self) extends AnyVal {
+  implicit class ListBonusPaymentsResponseMutableBuilder[Self <: ListBonusPaymentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBonusPayments(value: BonusPaymentList): Self = StObject.set(x, "BonusPayments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBonusPaymentsUndefined: Self = StObject.set(x, "BonusPayments", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBonusPaymentsVarargs(value: BonusPayment*): Self = StObject.set(x, "BonusPayments", js.Array(value :_*))
     
     @scala.inline
-    def setBonusPaymentsVarargs(value: BonusPayment*): Self = this.set("BonusPayments", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBonusPayments(value: BonusPaymentList): Self = this.set("BonusPayments", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteBonusPayments: Self = this.set("BonusPayments", js.undefined)
+    def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setNumResults(value: Integer): Self = this.set("NumResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumResults: Self = this.set("NumResults", js.undefined)
+    def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
   }
 }

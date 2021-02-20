@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,16 +37,20 @@ class WorkflowOverviewTemplateType protected () extends WorkflowTemplateType {
   @JSName("containerAsPageTemplate")
   def containerAsPageTemplate_MWorkflowOverviewTemplateType: PageTemplate = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.WorkflowOverviewTemplateType")
-@js.native
-object WorkflowOverviewTemplateType extends js.Object {
+object WorkflowOverviewTemplateType {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WorkflowOverviewTemplateType")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new WorkflowOverviewTemplateType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WorkflowOverviewTemplateType.create")
+  @js.native
   def create(model: IModel): WorkflowOverviewTemplateType = js.native
   
   /**
@@ -56,9 +61,22 @@ object WorkflowOverviewTemplateType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WorkflowOverviewTemplateType.createIn")
+  @js.native
   def createIn(container: PageTemplate): WorkflowOverviewTemplateType = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WorkflowOverviewTemplateType.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WorkflowOverviewTemplateType.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

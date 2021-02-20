@@ -1,5 +1,6 @@
 package typings.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +28,9 @@ class Script () extends Property[ScriptDefinition] {
   def update(options: ScriptDefinition): Unit = js.native
 }
 /* static members */
-@JSImport("postman-collection", "Script")
-@js.native
-object Script extends js.Object {
+object Script {
   
+  @JSImport("postman-collection", "Script.isScript")
+  @js.native
   def isScript(obj: js.Any): Boolean = js.native
 }

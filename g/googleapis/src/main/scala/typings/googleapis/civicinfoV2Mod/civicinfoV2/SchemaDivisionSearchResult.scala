@@ -1,5 +1,6 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * query.
   */
 @js.native
-trait SchemaDivisionSearchResult extends js.Object {
+trait SchemaDivisionSearchResult extends StObject {
   
   /**
     * Other Open Civic Data identifiers that refer to the same division -- for
@@ -40,39 +41,27 @@ object SchemaDivisionSearchResult {
   }
   
   @scala.inline
-  implicit class SchemaDivisionSearchResultOps[Self <: SchemaDivisionSearchResult] (val x: Self) extends AnyVal {
+  implicit class SchemaDivisionSearchResultMutableBuilder[Self <: SchemaDivisionSearchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
     @scala.inline
-    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteAliases: Self = this.set("aliases", js.undefined)
+    def setOcdId(value: String): Self = StObject.set(x, "ocdId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOcdId(value: String): Self = this.set("ocdId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOcdId: Self = this.set("ocdId", js.undefined)
+    def setOcdIdUndefined: Self = StObject.set(x, "ocdId", js.undefined)
   }
 }

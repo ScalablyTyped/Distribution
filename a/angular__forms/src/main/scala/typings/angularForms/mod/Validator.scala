@@ -1,11 +1,12 @@
 package typings.angularForms.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Validator extends js.Object {
+trait Validator extends StObject {
   
   /**
     * @description
@@ -35,27 +36,15 @@ object Validator {
   }
   
   @scala.inline
-  implicit class ValidatorOps[Self <: Validator] (val x: Self) extends AnyVal {
+  implicit class ValidatorMutableBuilder[Self <: Validator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegisterOnValidatorChange(value: /* fn */ js.Function0[Unit] => Unit): Self = StObject.set(x, "registerOnValidatorChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegisterOnValidatorChangeUndefined: Self = StObject.set(x, "registerOnValidatorChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValidate(value: AbstractControl => ValidationErrors | Null): Self = this.set("validate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterOnValidatorChange(value: /* fn */ js.Function0[Unit] => Unit): Self = this.set("registerOnValidatorChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRegisterOnValidatorChange: Self = this.set("registerOnValidatorChange", js.undefined)
+    def setValidate(value: AbstractControl => ValidationErrors | Null): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

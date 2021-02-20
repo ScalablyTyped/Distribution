@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseTimeRootCauseEntity extends js.Object {
+trait ResponseTimeRootCauseEntity extends StObject {
   
   /**
     * The type and messages of the exceptions.
@@ -31,36 +32,24 @@ object ResponseTimeRootCauseEntity {
   }
   
   @scala.inline
-  implicit class ResponseTimeRootCauseEntityOps[Self <: ResponseTimeRootCauseEntity] (val x: Self) extends AnyVal {
+  implicit class ResponseTimeRootCauseEntityMutableBuilder[Self <: ResponseTimeRootCauseEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoverage(value: NullableDouble): Self = StObject.set(x, "Coverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverageUndefined: Self = StObject.set(x, "Coverage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverage(value: NullableDouble): Self = this.set("Coverage", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteCoverage: Self = this.set("Coverage", js.undefined)
+    def setRemote(value: NullableBoolean): Self = StObject.set(x, "Remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setRemote(value: NullableBoolean): Self = this.set("Remote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemote: Self = this.set("Remote", js.undefined)
+    def setRemoteUndefined: Self = StObject.set(x, "Remote", js.undefined)
   }
 }

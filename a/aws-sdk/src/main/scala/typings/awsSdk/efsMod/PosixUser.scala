@@ -1,11 +1,12 @@
 package typings.awsSdk.efsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PosixUser extends js.Object {
+trait PosixUser extends StObject {
   
   /**
     * The POSIX group ID used for all file system operations using this access point.
@@ -31,33 +32,21 @@ object PosixUser {
   }
   
   @scala.inline
-  implicit class PosixUserOps[Self <: PosixUser] (val x: Self) extends AnyVal {
+  implicit class PosixUserMutableBuilder[Self <: PosixUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGid(value: Gid): Self = StObject.set(x, "Gid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecondaryGids(value: SecondaryGids): Self = StObject.set(x, "SecondaryGids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecondaryGidsUndefined: Self = StObject.set(x, "SecondaryGids", js.undefined)
     
     @scala.inline
-    def setGid(value: Gid): Self = this.set("Gid", value.asInstanceOf[js.Any])
+    def setSecondaryGidsVarargs(value: Gid*): Self = StObject.set(x, "SecondaryGids", js.Array(value :_*))
     
     @scala.inline
-    def setUid(value: Uid): Self = this.set("Uid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondaryGidsVarargs(value: Gid*): Self = this.set("SecondaryGids", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecondaryGids(value: SecondaryGids): Self = this.set("SecondaryGids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryGids: Self = this.set("SecondaryGids", js.undefined)
+    def setUid(value: Uid): Self = StObject.set(x, "Uid", value.asInstanceOf[js.Any])
   }
 }

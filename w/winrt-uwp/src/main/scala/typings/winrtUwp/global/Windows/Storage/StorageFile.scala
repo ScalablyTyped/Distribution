@@ -5,6 +5,7 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.StreamedFileDataRequestedHandler
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class StorageFile ()
   extends typings.winrtUwp.Windows.Storage.StorageFile
-/* static members */
-@JSGlobal("Windows.Storage.StorageFile")
-@js.native
-object StorageFile extends js.Object {
+object StorageFile {
   
   /**
     * Creates a StorageFile to represent the specified stream of data. This method lets the app produce the data on-demand by specifying a function to be invoked when the StorageFile that represents the stream is first accessed.
@@ -26,6 +24,9 @@ object StorageFile extends js.Object {
     * @param thumbnail The thumbnail image for the StorageFile to create.
     * @return When this method completes, it returns a StorageFile object that represents the new stream of data.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.StorageFile.createStreamedFileAsync")
+  @js.native
   def createStreamedFileAsync(
     displayNameWithExtension: String,
     dataRequested: StreamedFileDataRequestedHandler,
@@ -39,6 +40,9 @@ object StorageFile extends js.Object {
     * @param thumbnail The thumbnail image for the StorageFile to create.
     * @return When this method completes, it returns a StorageFile object that represents the URI resource.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.StorageFile.createStreamedFileFromUriAsync")
+  @js.native
   def createStreamedFileFromUriAsync(displayNameWithExtension: String, uri: Uri, thumbnail: IRandomAccessStreamReference): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFile] = js.native
   
   /**
@@ -46,6 +50,9 @@ object StorageFile extends js.Object {
     * @param uri The URI of the app resource to get a StorageFile to represent.
     * @return When this method completes, it returns a StorageFile object that represents the URI resource.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.StorageFile.getFileFromApplicationUriAsync")
+  @js.native
   def getFileFromApplicationUriAsync(uri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFile] = js.native
   
   /**
@@ -53,6 +60,9 @@ object StorageFile extends js.Object {
     * @param path The path of the file to get a StorageFile to represent.
     * @return When this method completes, it returns the file as a StorageFile .
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.StorageFile.getFileFromPathAsync")
+  @js.native
   def getFileFromPathAsync(path: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFile] = js.native
   
   /**
@@ -62,6 +72,9 @@ object StorageFile extends js.Object {
     * @param thumbnail The thumbnail image for the StorageFile to create.
     * @return When this method completes, it returns a StorageFile object that represents the new data stream. Subsequently, this StorageFile object should be used to access file content instead of the file (type IStorageFile ) that was specified to be replace.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.StorageFile.replaceWithStreamedFileAsync")
+  @js.native
   def replaceWithStreamedFileAsync(
     fileToReplace: IStorageFile,
     dataRequested: StreamedFileDataRequestedHandler,
@@ -75,5 +88,8 @@ object StorageFile extends js.Object {
     * @param thumbnail The thumbnail image for the StorageFile to create.
     * @return When this method completes, it returns a StorageFile object that represents the streamed file. Subsequently, this StorageFile object should be used to access file content instead of the file (type IStorageFile ) that was specified to be replace.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.StorageFile.replaceWithStreamedFileFromUriAsync")
+  @js.native
   def replaceWithStreamedFileFromUriAsync(fileToReplace: IStorageFile, uri: Uri, thumbnail: IRandomAccessStreamReference): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFile] = js.native
 }

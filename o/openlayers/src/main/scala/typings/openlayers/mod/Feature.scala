@@ -3,6 +3,7 @@ package typings.openlayers.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.openlayers.mod.geom.Geometry
 import typings.openlayers.mod.style.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

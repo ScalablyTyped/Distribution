@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimpleScalingPolicyConfiguration extends js.Object {
+trait SimpleScalingPolicyConfiguration extends StObject {
   
   /**
     * The way in which EC2 instances are added (if ScalingAdjustment is a positive number) or terminated (if ScalingAdjustment is a negative number) each time the scaling activity is triggered. CHANGE_IN_CAPACITY is the default. CHANGE_IN_CAPACITY indicates that the EC2 instance count increments or decrements by ScalingAdjustment, which should be expressed as an integer. PERCENT_CHANGE_IN_CAPACITY indicates the instance count increments or decrements by the percentage specified by ScalingAdjustment, which should be expressed as an integer. For example, 20 indicates an increase in 20% increments of cluster capacity. EXACT_CAPACITY indicates the scaling activity results in an instance group with the number of EC2 instances specified by ScalingAdjustment, which should be expressed as a positive integer.
@@ -31,33 +32,21 @@ object SimpleScalingPolicyConfiguration {
   }
   
   @scala.inline
-  implicit class SimpleScalingPolicyConfigurationOps[Self <: SimpleScalingPolicyConfiguration] (val x: Self) extends AnyVal {
+  implicit class SimpleScalingPolicyConfigurationMutableBuilder[Self <: SimpleScalingPolicyConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustmentType(value: AdjustmentType): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustmentTypeUndefined: Self = StObject.set(x, "AdjustmentType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoolDown(value: Integer): Self = StObject.set(x, "CoolDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingAdjustment(value: Integer): Self = this.set("ScalingAdjustment", value.asInstanceOf[js.Any])
+    def setCoolDownUndefined: Self = StObject.set(x, "CoolDown", js.undefined)
     
     @scala.inline
-    def setAdjustmentType(value: AdjustmentType): Self = this.set("AdjustmentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdjustmentType: Self = this.set("AdjustmentType", js.undefined)
-    
-    @scala.inline
-    def setCoolDown(value: Integer): Self = this.set("CoolDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoolDown: Self = this.set("CoolDown", js.undefined)
+    def setScalingAdjustment(value: Integer): Self = StObject.set(x, "ScalingAdjustment", value.asInstanceOf[js.Any])
   }
 }

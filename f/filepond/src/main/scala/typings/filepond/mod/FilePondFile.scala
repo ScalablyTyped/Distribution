@@ -1,12 +1,13 @@
 package typings.filepond.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("filepond", "FilePondFile")
 @js.native
-class FilePondFile () extends js.Object {
+class FilePondFile () extends StObject {
   
   /** Aborts loading of this file */
   def abortLoad(): Unit = js.native

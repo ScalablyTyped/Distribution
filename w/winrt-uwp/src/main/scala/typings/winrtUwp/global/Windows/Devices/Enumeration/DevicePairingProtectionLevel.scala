@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The level of protection for pairing. */
 @JSGlobal("Windows.Devices.Enumeration.DevicePairingProtectionLevel")
 @js.native
-object DevicePairingProtectionLevel extends js.Object {
+object DevicePairingProtectionLevel extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

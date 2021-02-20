@@ -1,11 +1,12 @@
 package typings.webvrApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Navigator extends js.Object {
+trait Navigator extends StObject {
   
   val activeVRDisplays: js.Array[VRDisplay] = js.native
   
@@ -20,27 +21,15 @@ object Navigator {
   }
   
   @scala.inline
-  implicit class NavigatorOps[Self <: Navigator] (val x: Self) extends AnyVal {
+  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveVRDisplays(value: js.Array[VRDisplay]): Self = StObject.set(x, "activeVRDisplays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveVRDisplaysVarargs(value: VRDisplay*): Self = StObject.set(x, "activeVRDisplays", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActiveVRDisplaysVarargs(value: VRDisplay*): Self = this.set("activeVRDisplays", js.Array(value :_*))
-    
-    @scala.inline
-    def setActiveVRDisplays(value: js.Array[VRDisplay]): Self = this.set("activeVRDisplays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetVRDisplays(value: () => js.Promise[js.Array[VRDisplay]]): Self = this.set("getVRDisplays", js.Any.fromFunction0(value))
+    def setGetVRDisplays(value: () => js.Promise[js.Array[VRDisplay]]): Self = StObject.set(x, "getVRDisplays", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrustedAdvisorResourcesSummary extends js.Object {
+trait TrustedAdvisorResourcesSummary extends StObject {
   
   /**
     * The number of AWS resources that were flagged (listed) by the Trusted Advisor check.
@@ -41,30 +42,18 @@ object TrustedAdvisorResourcesSummary {
   }
   
   @scala.inline
-  implicit class TrustedAdvisorResourcesSummaryOps[Self <: TrustedAdvisorResourcesSummary] (val x: Self) extends AnyVal {
+  implicit class TrustedAdvisorResourcesSummaryMutableBuilder[Self <: TrustedAdvisorResourcesSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourcesFlagged(value: Long): Self = StObject.set(x, "resourcesFlagged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourcesIgnored(value: Long): Self = StObject.set(x, "resourcesIgnored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourcesProcessed(value: Long): Self = StObject.set(x, "resourcesProcessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesFlagged(value: Long): Self = this.set("resourcesFlagged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourcesIgnored(value: Long): Self = this.set("resourcesIgnored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourcesProcessed(value: Long): Self = this.set("resourcesProcessed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourcesSuppressed(value: Long): Self = this.set("resourcesSuppressed", value.asInstanceOf[js.Any])
+    def setResourcesSuppressed(value: Long): Self = StObject.set(x, "resourcesSuppressed", value.asInstanceOf[js.Any])
   }
 }

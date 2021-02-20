@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopPipelineExecutionInput extends js.Object {
+trait StopPipelineExecutionInput extends StObject {
   
   /**
     * Use this option to stop the pipeline execution by abandoning, rather than finishing, in-progress actions.  This option can lead to failed or out-of-sequence tasks. 
@@ -36,36 +37,24 @@ object StopPipelineExecutionInput {
   }
   
   @scala.inline
-  implicit class StopPipelineExecutionInputOps[Self <: StopPipelineExecutionInput] (val x: Self) extends AnyVal {
+  implicit class StopPipelineExecutionInputMutableBuilder[Self <: StopPipelineExecutionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbandon(value: Boolean): Self = StObject.set(x, "abandon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbandonUndefined: Self = StObject.set(x, "abandon", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = this.set("pipelineExecutionId", value.asInstanceOf[js.Any])
+    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineName(value: PipelineName): Self = this.set("pipelineName", value.asInstanceOf[js.Any])
+    def setReason(value: StopPipelineExecutionReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbandon(value: Boolean): Self = this.set("abandon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAbandon: Self = this.set("abandon", js.undefined)
-    
-    @scala.inline
-    def setReason(value: StopPipelineExecutionReason): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

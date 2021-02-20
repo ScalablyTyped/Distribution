@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExponentialRolloutRate extends js.Object {
+trait ExponentialRolloutRate extends StObject {
   
   /**
     * The minimum number of things that will be notified of a pending job, per minute at the start of job rollout. This parameter allows you to define the initial rate of rollout.
@@ -35,27 +36,15 @@ object ExponentialRolloutRate {
   }
   
   @scala.inline
-  implicit class ExponentialRolloutRateOps[Self <: ExponentialRolloutRate] (val x: Self) extends AnyVal {
+  implicit class ExponentialRolloutRateMutableBuilder[Self <: ExponentialRolloutRate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseRatePerMinute(value: RolloutRatePerMinute): Self = StObject.set(x, "baseRatePerMinute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncrementFactor(value: IncrementFactor): Self = StObject.set(x, "incrementFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBaseRatePerMinute(value: RolloutRatePerMinute): Self = this.set("baseRatePerMinute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncrementFactor(value: IncrementFactor): Self = this.set("incrementFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRateIncreaseCriteria(value: RateIncreaseCriteria): Self = this.set("rateIncreaseCriteria", value.asInstanceOf[js.Any])
+    def setRateIncreaseCriteria(value: RateIncreaseCriteria): Self = StObject.set(x, "rateIncreaseCriteria", value.asInstanceOf[js.Any])
   }
 }

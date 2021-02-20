@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoDeployment extends js.Object {
+trait AutoDeployment extends StObject {
   
   /**
     * If set to true, StackSets automatically deploys additional stack instances to AWS Organizations accounts that are added to a target organization or organizational unit (OU) in the specified Regions. If an account is removed from a target organization or OU, StackSets deletes stack instances from the account in the specified Regions.
@@ -26,30 +27,18 @@ object AutoDeployment {
   }
   
   @scala.inline
-  implicit class AutoDeploymentOps[Self <: AutoDeployment] (val x: Self) extends AnyVal {
+  implicit class AutoDeploymentMutableBuilder[Self <: AutoDeployment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: AutoDeploymentNullable): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetainStacksOnAccountRemoval(value: RetainStacksOnAccountRemovalNullable): Self = StObject.set(x, "RetainStacksOnAccountRemoval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: AutoDeploymentNullable): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
-    
-    @scala.inline
-    def setRetainStacksOnAccountRemoval(value: RetainStacksOnAccountRemovalNullable): Self = this.set("RetainStacksOnAccountRemoval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetainStacksOnAccountRemoval: Self = this.set("RetainStacksOnAccountRemoval", js.undefined)
+    def setRetainStacksOnAccountRemovalUndefined: Self = StObject.set(x, "RetainStacksOnAccountRemoval", js.undefined)
   }
 }

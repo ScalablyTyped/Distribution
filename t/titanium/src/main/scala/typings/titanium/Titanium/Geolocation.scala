@@ -1,5 +1,6 @@
 package typings.titanium.Titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,15 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The top level Geolocation module. The Geolocation module is used for accessing device location based information.
   */
-@JSGlobal("Titanium.Geolocation")
-@js.native
-object Geolocation extends js.Object {
+object Geolocation {
   
   /**
     * Module for Android-specific geolocation functionality.
     */
-  @js.native
-  object Android extends js.Object {
+  object Android {
     
     /**
       * Represents a source of location information, such as GPS.

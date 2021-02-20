@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A simple object defining a color gradient.
   */
 @js.native
-trait Gradient extends js.Object {
+trait Gradient extends StObject {
   
   /**
     * Set to `true` to continue filling with the final color beyond the `endPoint`.
@@ -59,69 +60,57 @@ object Gradient {
   }
   
   @scala.inline
-  implicit class GradientOps[Self <: Gradient] (val x: Self) extends AnyVal {
+  implicit class GradientMutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackfillEnd(value: Boolean): Self = StObject.set(x, "backfillEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackfillEndUndefined: Self = StObject.set(x, "backfillEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackfillStart(value: Boolean): Self = StObject.set(x, "backfillStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackfillEnd(value: Boolean): Self = this.set("backfillEnd", value.asInstanceOf[js.Any])
+    def setBackfillStartUndefined: Self = StObject.set(x, "backfillStart", js.undefined)
     
     @scala.inline
-    def deleteBackfillEnd: Self = this.set("backfillEnd", js.undefined)
+    def setColors(value: js.Array[GradientColorRef | String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackfillStart(value: Boolean): Self = this.set("backfillStart", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteBackfillStart: Self = this.set("backfillStart", js.undefined)
+    def setColorsVarargs(value: (GradientColorRef | String)*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: (GradientColorRef | String)*): Self = this.set("colors", js.Array(value :_*))
+    def setEndPoint(value: Point): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[GradientColorRef | String]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setEndPointUndefined: Self = StObject.set(x, "endPoint", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setEndRadius(value: Double): Self = StObject.set(x, "endRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPoint(value: Point): Self = this.set("endPoint", value.asInstanceOf[js.Any])
+    def setEndRadiusUndefined: Self = StObject.set(x, "endRadius", js.undefined)
     
     @scala.inline
-    def deleteEndPoint: Self = this.set("endPoint", js.undefined)
+    def setStartPoint(value: Point): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndRadius(value: Double): Self = this.set("endRadius", value.asInstanceOf[js.Any])
+    def setStartPointUndefined: Self = StObject.set(x, "startPoint", js.undefined)
     
     @scala.inline
-    def deleteEndRadius: Self = this.set("endRadius", js.undefined)
+    def setStartRadius(value: Double): Self = StObject.set(x, "startRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPoint(value: Point): Self = this.set("startPoint", value.asInstanceOf[js.Any])
+    def setStartRadiusUndefined: Self = StObject.set(x, "startRadius", js.undefined)
     
     @scala.inline
-    def deleteStartPoint: Self = this.set("startPoint", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartRadius(value: Double): Self = this.set("startRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRadius: Self = this.set("startRadius", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion
 //#region 选择城市 https://docs.alipay.com/mini/api/ui-city
 @js.native
-trait City extends js.Object {
+trait City extends StObject {
   
-      // 城市名
+  // 城市名
   var adCode: String = js.native
   
   var city: String = js.native
   
-      // 行政区划代码
+  // 行政区划代码
   var spell: js.UndefOr[String] = js.native
 }
 object City {
@@ -26,30 +27,18 @@ object City {
   }
   
   @scala.inline
-  implicit class CityOps[Self <: City] (val x: Self) extends AnyVal {
+  implicit class CityMutableBuilder[Self <: City] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdCode(value: String): Self = StObject.set(x, "adCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpell(value: String): Self = StObject.set(x, "spell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdCode(value: String): Self = this.set("adCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpell(value: String): Self = this.set("spell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpell: Self = this.set("spell", js.undefined)
+    def setSpellUndefined: Self = StObject.set(x, "spell", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoSelector extends js.Object {
+trait VideoSelector extends StObject {
   
   /**
     * Specifies the color space of an input. This setting works in tandem with colorSpaceUsage and a video description's colorSpaceSettingsChoice to determine if any conversion will be performed.
@@ -31,36 +32,24 @@ object VideoSelector {
   }
   
   @scala.inline
-  implicit class VideoSelectorOps[Self <: VideoSelector] (val x: Self) extends AnyVal {
+  implicit class VideoSelectorMutableBuilder[Self <: VideoSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorSpace(value: VideoSelectorColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorSpaceUsage(value: VideoSelectorColorSpaceUsage): Self = StObject.set(x, "ColorSpaceUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpace(value: VideoSelectorColorSpace): Self = this.set("ColorSpace", value.asInstanceOf[js.Any])
+    def setColorSpaceUsageUndefined: Self = StObject.set(x, "ColorSpaceUsage", js.undefined)
     
     @scala.inline
-    def deleteColorSpace: Self = this.set("ColorSpace", js.undefined)
+    def setSelectorSettings(value: VideoSelectorSettings): Self = StObject.set(x, "SelectorSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpaceUsage(value: VideoSelectorColorSpaceUsage): Self = this.set("ColorSpaceUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorSpaceUsage: Self = this.set("ColorSpaceUsage", js.undefined)
-    
-    @scala.inline
-    def setSelectorSettings(value: VideoSelectorSettings): Self = this.set("SelectorSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectorSettings: Self = this.set("SelectorSettings", js.undefined)
+    def setSelectorSettingsUndefined: Self = StObject.set(x, "SelectorSettings", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A scoped-resource selector requirement is a selector that contains values, a scope name, and an operator that relates the scope name and values.
   */
 @js.native
-trait ScopedResourceSelectorRequirement extends js.Object {
+trait ScopedResourceSelectorRequirement extends StObject {
   
   /**
     * Represents a scope's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist.
@@ -35,33 +36,21 @@ object ScopedResourceSelectorRequirement {
   }
   
   @scala.inline
-  implicit class ScopedResourceSelectorRequirementOps[Self <: ScopedResourceSelectorRequirement] (val x: Self) extends AnyVal {
+  implicit class ScopedResourceSelectorRequirementMutableBuilder[Self <: ScopedResourceSelectorRequirement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperator(value: Input[String]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScopeName(value: Input[String]): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: Input[String]): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def setScopeName(value: Input[String]): Self = this.set("scopeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: Input[String]*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: Input[js.Array[Input[String]]]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

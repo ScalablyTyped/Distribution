@@ -3,6 +3,7 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,24 +64,12 @@ object PopupWindow {
   }
   
   @scala.inline
-  implicit class PopupWindowOps[Self <: PopupWindow] (val x: Self) extends AnyVal {
+  implicit class PopupWindowMutableBuilder[Self <: PopupWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPopupWidget(value: Widget => Unit): Self = StObject.set(x, "popupWidget", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPopupWidget(value: Widget => Unit): Self = this.set("popupWidget", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPopupXY(value: (Double, Double) => Unit): Self = this.set("popupXY", js.Any.fromFunction2(value))
+    def setPopupXY(value: (Double, Double) => Unit): Self = StObject.set(x, "popupXY", js.Any.fromFunction2(value))
   }
 }

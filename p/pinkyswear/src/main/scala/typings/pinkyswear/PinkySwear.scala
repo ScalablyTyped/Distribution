@@ -1,13 +1,12 @@
 package typings.pinkyswear
 
 import typings.std.TypeError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PinkySwear")
-@js.native
-object PinkySwear extends js.Object {
+object PinkySwear {
   
   @js.native
   trait GenericPromise[T] extends Promise {
@@ -45,7 +44,7 @@ object PinkySwear extends js.Object {
   }
   
   @js.native
-  trait Promise extends js.Object {
+  trait Promise extends StObject {
     
     /**
       * Get the promise's current state; true if fulfilled, false if rejected, and undefined, otherwise.

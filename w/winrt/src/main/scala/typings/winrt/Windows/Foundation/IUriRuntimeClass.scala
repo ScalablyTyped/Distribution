@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUriRuntimeClass extends js.Object {
+trait IUriRuntimeClass extends StObject {
   
   var absoluteUri: String = js.native
   
@@ -49,7 +50,7 @@ object IUriRuntimeClass {
     combineUri: String => Uri,
     displayUri: String,
     domain: String,
-    equals: Uri => Boolean,
+    equals_ : Uri => Boolean,
     extension: String,
     fragment: String,
     host: String,
@@ -63,74 +64,63 @@ object IUriRuntimeClass {
     suspicious: Boolean,
     userName: String
   ): IUriRuntimeClass = {
-    val __obj = js.Dynamic.literal(absoluteUri = absoluteUri.asInstanceOf[js.Any], combineUri = js.Any.fromFunction1(combineUri), displayUri = displayUri.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], equals = js.Any.fromFunction1(equals), extension = extension.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], queryParsed = queryParsed.asInstanceOf[js.Any], rawUri = rawUri.asInstanceOf[js.Any], schemeName = schemeName.asInstanceOf[js.Any], suspicious = suspicious.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(absoluteUri = absoluteUri.asInstanceOf[js.Any], combineUri = js.Any.fromFunction1(combineUri), displayUri = displayUri.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], queryParsed = queryParsed.asInstanceOf[js.Any], rawUri = rawUri.asInstanceOf[js.Any], schemeName = schemeName.asInstanceOf[js.Any], suspicious = suspicious.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[IUriRuntimeClass]
   }
   
   @scala.inline
-  implicit class IUriRuntimeClassOps[Self <: IUriRuntimeClass] (val x: Self) extends AnyVal {
+  implicit class IUriRuntimeClassMutableBuilder[Self <: IUriRuntimeClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsoluteUri(value: String): Self = StObject.set(x, "absoluteUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCombineUri(value: String => Uri): Self = StObject.set(x, "combineUri", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayUri(value: String): Self = StObject.set(x, "displayUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsoluteUri(value: String): Self = this.set("absoluteUri", value.asInstanceOf[js.Any])
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCombineUri(value: String => Uri): Self = this.set("combineUri", js.Any.fromFunction1(value))
+    def setEquals_(value: Uri => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisplayUri(value: String): Self = this.set("displayUri", value.asInstanceOf[js.Any])
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: Uri => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragment(value: String): Self = this.set("fragment", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setQueryParsed(value: WwwFormUrlDecoder): Self = StObject.set(x, "queryParsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setRawUri(value: String): Self = StObject.set(x, "rawUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setSchemeName(value: String): Self = StObject.set(x, "schemeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParsed(value: WwwFormUrlDecoder): Self = this.set("queryParsed", value.asInstanceOf[js.Any])
+    def setSuspicious(value: Boolean): Self = StObject.set(x, "suspicious", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawUri(value: String): Self = this.set("rawUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemeName(value: String): Self = this.set("schemeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuspicious(value: Boolean): Self = this.set("suspicious", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

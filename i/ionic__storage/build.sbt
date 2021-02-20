@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "ionic__storage"
-version := "2.3.1-50fd70"
+version := "2.3.1-2b3640"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__compiler" % "11.0.2-106a62",
-  "org.scalablytyped" %%% "angular__core" % "11.0.2-4129f1",
-  "org.scalablytyped" %%% "inquirer" % "7.3-dt-20200820Z-1df9fb",
-  "org.scalablytyped" %%% "localforage" % "1.9.0-cc5355",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
-  "org.scalablytyped" %%% "rxjs" % "6.6.3-8d21ff",
-  "org.scalablytyped" %%% "rxjs-compat" % "6.6.3-af84f1",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20201002Z-aa5679",
-  "org.scalablytyped" %%% "typescript" % "4.1.2-5e4275")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "angular__compiler" % "11.0.2-770d71",
+  "org.scalablytyped" %%% "angular__core" % "11.0.2-961ef8",
+  "org.scalablytyped" %%% "inquirer" % "7.3-dt-20200820Z-07117c",
+  "org.scalablytyped" %%% "localforage" % "1.9.0-52fb1f",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-50d3d9",
+  "org.scalablytyped" %%% "rxjs" % "6.6.3-09c192",
+  "org.scalablytyped" %%% "rxjs-compat" % "6.6.3-1c9095",
+  "org.scalablytyped" %%% "std" % "4.1-40053c",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20201002Z-0230cb",
+  "org.scalablytyped" %%% "typescript" % "4.1.2-42b18f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

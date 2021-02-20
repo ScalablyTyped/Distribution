@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosDevice extends js.Object {
+trait IosDevice extends StObject {
   
   /** Required. The id of the iOS device to be used. Use the TestEnvironmentDiscoveryService to get supported options. */
   var iosModelId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object IosDevice {
   }
   
   @scala.inline
-  implicit class IosDeviceOps[Self <: IosDevice] (val x: Self) extends AnyVal {
+  implicit class IosDeviceMutableBuilder[Self <: IosDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIosModelId(value: String): Self = StObject.set(x, "iosModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIosModelIdUndefined: Self = StObject.set(x, "iosModelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIosVersionId(value: String): Self = StObject.set(x, "iosVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosModelId(value: String): Self = this.set("iosModelId", value.asInstanceOf[js.Any])
+    def setIosVersionIdUndefined: Self = StObject.set(x, "iosVersionId", js.undefined)
     
     @scala.inline
-    def deleteIosModelId: Self = this.set("iosModelId", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosVersionId(value: String): Self = this.set("iosVersionId", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteIosVersionId: Self = this.set("iosVersionId", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
-    
-    @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

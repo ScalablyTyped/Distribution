@@ -1,15 +1,15 @@
 package typings.agGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/environment", JSImport.Namespace)
-@js.native
-object environmentMod extends js.Object {
+object environmentMod {
   
+  @JSImport("ag-grid/dist/lib/environment", "Environment")
   @js.native
-  class Environment () extends js.Object {
+  class Environment () extends StObject {
     
     var eGridDiv: js.Any = js.native
     

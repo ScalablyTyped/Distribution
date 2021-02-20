@@ -1,11 +1,10 @@
 package typings.activexLibreoffice.com_.sun.star.awt.grid
 
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessible
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleContext
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.awt.Size
-import typings.activexLibreoffice.com_.sun.star.awt.XControl
+import typings.activexLibreoffice.com_.sun.star.awt.UnoControl
 import typings.activexLibreoffice.com_.sun.star.awt.XControlModel
 import typings.activexLibreoffice.com_.sun.star.awt.XFocusListener
 import typings.activexLibreoffice.com_.sun.star.awt.XGraphics
@@ -15,12 +14,12 @@ import typings.activexLibreoffice.com_.sun.star.awt.XMouseMotionListener
 import typings.activexLibreoffice.com_.sun.star.awt.XPaintListener
 import typings.activexLibreoffice.com_.sun.star.awt.XToolkit
 import typings.activexLibreoffice.com_.sun.star.awt.XView
-import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.awt.XWindowListener
 import typings.activexLibreoffice.com_.sun.star.awt.XWindowPeer
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait UnoControlGrid
-  extends XControl
-     with XWindow
-     with XView
-     with XAccessible
+  extends UnoControl
      with XGridControl
      with XGridRowSelection
 object UnoControlGrid {

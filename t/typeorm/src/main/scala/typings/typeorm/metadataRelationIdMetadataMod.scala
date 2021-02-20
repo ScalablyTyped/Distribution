@@ -5,16 +5,16 @@ import typings.typeorm.commonObjectLiteralMod.ObjectLiteral
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.metadataRelationMetadataMod.RelationMetadata
 import typings.typeorm.queryBuilderSelectQueryBuilderMod.SelectQueryBuilder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/metadata/RelationIdMetadata", JSImport.Namespace)
-@js.native
-object metadataRelationIdMetadataMod extends js.Object {
+object metadataRelationIdMetadataMod {
   
+  @JSImport("typeorm/metadata/RelationIdMetadata", "RelationIdMetadata")
   @js.native
-  class RelationIdMetadata protected () extends js.Object {
+  class RelationIdMetadata protected () extends StObject {
     def this(options: ArgsRelationIdMetadataArgsEntityMetadataEntityMetadata) = this()
     
     /**

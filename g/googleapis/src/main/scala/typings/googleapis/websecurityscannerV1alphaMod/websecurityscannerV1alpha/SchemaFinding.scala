@@ -1,5 +1,6 @@
 package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ScanRun.
   */
 @js.native
-trait SchemaFinding extends js.Object {
+trait SchemaFinding extends StObject {
   
   /**
     * Output only. The body of the request that triggered the vulnerability.
@@ -108,108 +109,96 @@ object SchemaFinding {
   }
   
   @scala.inline
-  implicit class SchemaFindingOps[Self <: SchemaFinding] (val x: Self) extends AnyVal {
+  implicit class SchemaFindingMutableBuilder[Self <: SchemaFinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFinalUrlUndefined: Self = StObject.set(x, "finalUrl", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFindingType(value: String): Self = StObject.set(x, "findingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalUrl(value: String): Self = this.set("finalUrl", value.asInstanceOf[js.Any])
+    def setFindingTypeUndefined: Self = StObject.set(x, "findingType", js.undefined)
     
     @scala.inline
-    def deleteFinalUrl: Self = this.set("finalUrl", js.undefined)
+    def setFrameUrl(value: String): Self = StObject.set(x, "frameUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingType(value: String): Self = this.set("findingType", value.asInstanceOf[js.Any])
+    def setFrameUrlUndefined: Self = StObject.set(x, "frameUrl", js.undefined)
     
     @scala.inline
-    def deleteFindingType: Self = this.set("findingType", js.undefined)
+    def setFuzzedUrl(value: String): Self = StObject.set(x, "fuzzedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameUrl(value: String): Self = this.set("frameUrl", value.asInstanceOf[js.Any])
+    def setFuzzedUrlUndefined: Self = StObject.set(x, "fuzzedUrl", js.undefined)
     
     @scala.inline
-    def deleteFrameUrl: Self = this.set("frameUrl", js.undefined)
+    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFuzzedUrl(value: String): Self = this.set("fuzzedUrl", value.asInstanceOf[js.Any])
+    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
     @scala.inline
-    def deleteFuzzedUrl: Self = this.set("fuzzedUrl", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    def setOutdatedLibrary(value: SchemaOutdatedLibrary): Self = StObject.set(x, "outdatedLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOutdatedLibraryUndefined: Self = StObject.set(x, "outdatedLibrary", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReproductionUrl(value: String): Self = StObject.set(x, "reproductionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutdatedLibrary(value: SchemaOutdatedLibrary): Self = this.set("outdatedLibrary", value.asInstanceOf[js.Any])
+    def setReproductionUrlUndefined: Self = StObject.set(x, "reproductionUrl", js.undefined)
     
     @scala.inline
-    def deleteOutdatedLibrary: Self = this.set("outdatedLibrary", js.undefined)
+    def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReproductionUrl(value: String): Self = this.set("reproductionUrl", value.asInstanceOf[js.Any])
+    def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
     
     @scala.inline
-    def deleteReproductionUrl: Self = this.set("reproductionUrl", js.undefined)
+    def setViolatingResource(value: SchemaViolatingResource): Self = StObject.set(x, "violatingResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackingId(value: String): Self = this.set("trackingId", value.asInstanceOf[js.Any])
+    def setViolatingResourceUndefined: Self = StObject.set(x, "violatingResource", js.undefined)
     
     @scala.inline
-    def deleteTrackingId: Self = this.set("trackingId", js.undefined)
+    def setVulnerableHeaders(value: SchemaVulnerableHeaders): Self = StObject.set(x, "vulnerableHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViolatingResource(value: SchemaViolatingResource): Self = this.set("violatingResource", value.asInstanceOf[js.Any])
+    def setVulnerableHeadersUndefined: Self = StObject.set(x, "vulnerableHeaders", js.undefined)
     
     @scala.inline
-    def deleteViolatingResource: Self = this.set("violatingResource", js.undefined)
+    def setVulnerableParameters(value: SchemaVulnerableParameters): Self = StObject.set(x, "vulnerableParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVulnerableHeaders(value: SchemaVulnerableHeaders): Self = this.set("vulnerableHeaders", value.asInstanceOf[js.Any])
+    def setVulnerableParametersUndefined: Self = StObject.set(x, "vulnerableParameters", js.undefined)
     
     @scala.inline
-    def deleteVulnerableHeaders: Self = this.set("vulnerableHeaders", js.undefined)
+    def setXss(value: SchemaXss): Self = StObject.set(x, "xss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVulnerableParameters(value: SchemaVulnerableParameters): Self = this.set("vulnerableParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVulnerableParameters: Self = this.set("vulnerableParameters", js.undefined)
-    
-    @scala.inline
-    def setXss(value: SchemaXss): Self = this.set("xss", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXss: Self = this.set("xss", js.undefined)
+    def setXssUndefined: Self = StObject.set(x, "xss", js.undefined)
   }
 }

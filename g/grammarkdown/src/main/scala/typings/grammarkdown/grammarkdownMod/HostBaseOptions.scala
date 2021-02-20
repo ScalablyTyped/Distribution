@@ -1,12 +1,13 @@
 package typings.grammarkdown.grammarkdownMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HostBaseOptions extends js.Object {
+trait HostBaseOptions extends StObject {
   
   var ignoreCase: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object HostBaseOptions {
   }
   
   @scala.inline
-  implicit class HostBaseOptionsOps[Self <: HostBaseOptions] (val x: Self) extends AnyVal {
+  implicit class HostBaseOptionsMutableBuilder[Self <: HostBaseOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKnownGrammars(value: Record[String, String]): Self = StObject.set(x, "knownGrammars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    def setKnownGrammarsUndefined: Self = StObject.set(x, "knownGrammars", js.undefined)
     
     @scala.inline
-    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    def setUseBuiltinGrammars(value: Boolean): Self = StObject.set(x, "useBuiltinGrammars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKnownGrammars(value: Record[String, String]): Self = this.set("knownGrammars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKnownGrammars: Self = this.set("knownGrammars", js.undefined)
-    
-    @scala.inline
-    def setUseBuiltinGrammars(value: Boolean): Self = this.set("useBuiltinGrammars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBuiltinGrammars: Self = this.set("useBuiltinGrammars", js.undefined)
+    def setUseBuiltinGrammarsUndefined: Self = StObject.set(x, "useBuiltinGrammars", js.undefined)
   }
 }

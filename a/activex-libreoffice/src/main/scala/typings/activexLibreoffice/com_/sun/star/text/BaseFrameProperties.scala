@@ -11,6 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -375,189 +376,177 @@ object BaseFrameProperties {
   }
   
   @scala.inline
-  implicit class BaseFramePropertiesOps[Self <: BaseFrameProperties] (val x: Self) extends AnyVal {
+  implicit class BaseFramePropertiesMutableBuilder[Self <: BaseFrameProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorFrame(value: XTextFrame): Self = StObject.set(x, "AnchorFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorPageNo(value: Double): Self = StObject.set(x, "AnchorPageNo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorFrame(value: XTextFrame): Self = this.set("AnchorFrame", value.asInstanceOf[js.Any])
+    def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorPageNo(value: Double): Self = this.set("AnchorPageNo", value.asInstanceOf[js.Any])
+    def setBackGraphicLocation(value: GraphicLocation): Self = StObject.set(x, "BackGraphicLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Color): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setBackGraphicURL(value: String): Self = StObject.set(x, "BackGraphicURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicFilter(value: String): Self = this.set("BackGraphicFilter", value.asInstanceOf[js.Any])
+    def setBackTransparent(value: Boolean): Self = StObject.set(x, "BackTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicLocation(value: GraphicLocation): Self = this.set("BackGraphicLocation", value.asInstanceOf[js.Any])
+    def setBorderDistance(value: Double): Self = StObject.set(x, "BorderDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicURL(value: String): Self = this.set("BackGraphicURL", value.asInstanceOf[js.Any])
+    def setBottomBorder(value: BorderLine): Self = StObject.set(x, "BottomBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackTransparent(value: Boolean): Self = this.set("BackTransparent", value.asInstanceOf[js.Any])
+    def setBottomBorderDistance(value: Double): Self = StObject.set(x, "BottomBorderDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderDistance(value: Double): Self = this.set("BorderDistance", value.asInstanceOf[js.Any])
+    def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomBorder(value: BorderLine): Self = this.set("BottomBorder", value.asInstanceOf[js.Any])
+    def setContentProtected(value: Boolean): Self = StObject.set(x, "ContentProtected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomBorderDistance(value: Double): Self = this.set("BottomBorderDistance", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomMargin(value: Double): Self = this.set("BottomMargin", value.asInstanceOf[js.Any])
+    def setFillGradient(value: Gradient): Self = StObject.set(x, "FillGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentProtected(value: Boolean): Self = this.set("ContentProtected", value.asInstanceOf[js.Any])
+    def setFillGradientName(value: String): Self = StObject.set(x, "FillGradientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setFillStyle(value: FillStyle): Self = StObject.set(x, "FillStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillGradient(value: Gradient): Self = this.set("FillGradient", value.asInstanceOf[js.Any])
+    def setFrameInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "FrameInteropGrabBag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillGradientName(value: String): Self = this.set("FillGradientName", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillStyle(value: FillStyle): Self = this.set("FillStyle", value.asInstanceOf[js.Any])
+    def setHoriOrient(value: Double): Self = StObject.set(x, "HoriOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameInteropGrabBag(value: SafeArray[PropertyValue]): Self = this.set("FrameInteropGrabBag", value.asInstanceOf[js.Any])
+    def setHoriOrientPosition(value: Double): Self = StObject.set(x, "HoriOrientPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setHoriOrientRelation(value: Double): Self = StObject.set(x, "HoriOrientRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoriOrient(value: Double): Self = this.set("HoriOrient", value.asInstanceOf[js.Any])
+    def setHyperLinkName(value: String): Self = StObject.set(x, "HyperLinkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoriOrientPosition(value: Double): Self = this.set("HoriOrientPosition", value.asInstanceOf[js.Any])
+    def setHyperLinkTarget(value: String): Self = StObject.set(x, "HyperLinkTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoriOrientRelation(value: Double): Self = this.set("HoriOrientRelation", value.asInstanceOf[js.Any])
+    def setHyperLinkURL(value: String): Self = StObject.set(x, "HyperLinkURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperLinkName(value: String): Self = this.set("HyperLinkName", value.asInstanceOf[js.Any])
+    def setIsSyncHeightToWidth(value: Boolean): Self = StObject.set(x, "IsSyncHeightToWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperLinkTarget(value: String): Self = this.set("HyperLinkTarget", value.asInstanceOf[js.Any])
+    def setIsSyncWidthToHeight(value: Boolean): Self = StObject.set(x, "IsSyncWidthToHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperLinkURL(value: String): Self = this.set("HyperLinkURL", value.asInstanceOf[js.Any])
+    def setLayoutSize(value: Size): Self = StObject.set(x, "LayoutSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSyncHeightToWidth(value: Boolean): Self = this.set("IsSyncHeightToWidth", value.asInstanceOf[js.Any])
+    def setLeftBorder(value: BorderLine): Self = StObject.set(x, "LeftBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSyncWidthToHeight(value: Boolean): Self = this.set("IsSyncWidthToHeight", value.asInstanceOf[js.Any])
+    def setLeftBorderDistance(value: Double): Self = StObject.set(x, "LeftBorderDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutSize(value: Size): Self = this.set("LayoutSize", value.asInstanceOf[js.Any])
+    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftBorder(value: BorderLine): Self = this.set("LeftBorder", value.asInstanceOf[js.Any])
+    def setOpaque(value: Boolean): Self = StObject.set(x, "Opaque", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftBorderDistance(value: Double): Self = this.set("LeftBorderDistance", value.asInstanceOf[js.Any])
+    def setPageToggle(value: Boolean): Self = StObject.set(x, "PageToggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftMargin(value: Double): Self = this.set("LeftMargin", value.asInstanceOf[js.Any])
+    def setPositionProtected(value: Boolean): Self = StObject.set(x, "PositionProtected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpaque(value: Boolean): Self = this.set("Opaque", value.asInstanceOf[js.Any])
+    def setPrint(value: Boolean): Self = StObject.set(x, "Print", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToggle(value: Boolean): Self = this.set("PageToggle", value.asInstanceOf[js.Any])
+    def setRelativeHeight(value: Double): Self = StObject.set(x, "RelativeHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionProtected(value: Boolean): Self = this.set("PositionProtected", value.asInstanceOf[js.Any])
+    def setRelativeHeightRelation(value: Double): Self = StObject.set(x, "RelativeHeightRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrint(value: Boolean): Self = this.set("Print", value.asInstanceOf[js.Any])
+    def setRelativeWidth(value: Double): Self = StObject.set(x, "RelativeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeHeight(value: Double): Self = this.set("RelativeHeight", value.asInstanceOf[js.Any])
+    def setRelativeWidthRelation(value: Double): Self = StObject.set(x, "RelativeWidthRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeHeightRelation(value: Double): Self = this.set("RelativeHeightRelation", value.asInstanceOf[js.Any])
+    def setRightBorder(value: BorderLine): Self = StObject.set(x, "RightBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeWidth(value: Double): Self = this.set("RelativeWidth", value.asInstanceOf[js.Any])
+    def setRightBorderDistance(value: Double): Self = StObject.set(x, "RightBorderDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeWidthRelation(value: Double): Self = this.set("RelativeWidthRelation", value.asInstanceOf[js.Any])
+    def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightBorder(value: BorderLine): Self = this.set("RightBorder", value.asInstanceOf[js.Any])
+    def setServerMap(value: Boolean): Self = StObject.set(x, "ServerMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightBorderDistance(value: Double): Self = this.set("RightBorderDistance", value.asInstanceOf[js.Any])
+    def setShadowFormat(value: ShadowFormat): Self = StObject.set(x, "ShadowFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightMargin(value: Double): Self = this.set("RightMargin", value.asInstanceOf[js.Any])
+    def setShadowTransparence(value: Double): Self = StObject.set(x, "ShadowTransparence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerMap(value: Boolean): Self = this.set("ServerMap", value.asInstanceOf[js.Any])
+    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowFormat(value: ShadowFormat): Self = this.set("ShadowFormat", value.asInstanceOf[js.Any])
+    def setSizeProtected(value: Boolean): Self = StObject.set(x, "SizeProtected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowTransparence(value: Double): Self = this.set("ShadowTransparence", value.asInstanceOf[js.Any])
+    def setSurround(value: WrapTextMode): Self = StObject.set(x, "Surround", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSurroundAnchorOnly(value: Boolean): Self = StObject.set(x, "SurroundAnchorOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeProtected(value: Boolean): Self = this.set("SizeProtected", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurround(value: WrapTextMode): Self = this.set("Surround", value.asInstanceOf[js.Any])
+    def setTopBorder(value: BorderLine): Self = StObject.set(x, "TopBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurroundAnchorOnly(value: Boolean): Self = this.set("SurroundAnchorOnly", value.asInstanceOf[js.Any])
+    def setTopBorderDistance(value: Double): Self = StObject.set(x, "TopBorderDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopBorder(value: BorderLine): Self = this.set("TopBorder", value.asInstanceOf[js.Any])
+    def setVertOrient(value: Double): Self = StObject.set(x, "VertOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopBorderDistance(value: Double): Self = this.set("TopBorderDistance", value.asInstanceOf[js.Any])
+    def setVertOrientPosition(value: Double): Self = StObject.set(x, "VertOrientPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopMargin(value: Double): Self = this.set("TopMargin", value.asInstanceOf[js.Any])
+    def setVertOrientRelation(value: Double): Self = StObject.set(x, "VertOrientRelation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertOrient(value: Double): Self = this.set("VertOrient", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertOrientPosition(value: Double): Self = this.set("VertOrientPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertOrientRelation(value: Double): Self = this.set("VertOrientRelation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapInfluenceOnPosition(value: Double): Self = this.set("WrapInfluenceOnPosition", value.asInstanceOf[js.Any])
+    def setWrapInfluenceOnPosition(value: Double): Self = StObject.set(x, "WrapInfluenceOnPosition", value.asInstanceOf[js.Any])
   }
 }

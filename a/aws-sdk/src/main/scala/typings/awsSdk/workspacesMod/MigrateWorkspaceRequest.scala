@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrateWorkspaceRequest extends js.Object {
+trait MigrateWorkspaceRequest extends StObject {
   
   /**
     * The identifier of the target bundle type to migrate the WorkSpace to.
@@ -26,24 +27,12 @@ object MigrateWorkspaceRequest {
   }
   
   @scala.inline
-  implicit class MigrateWorkspaceRequestOps[Self <: MigrateWorkspaceRequest] (val x: Self) extends AnyVal {
+  implicit class MigrateWorkspaceRequestMutableBuilder[Self <: MigrateWorkspaceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBundleId(value: BundleId): Self = this.set("BundleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceWorkspaceId(value: WorkspaceId): Self = this.set("SourceWorkspaceId", value.asInstanceOf[js.Any])
+    def setSourceWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "SourceWorkspaceId", value.asInstanceOf[js.Any])
   }
 }

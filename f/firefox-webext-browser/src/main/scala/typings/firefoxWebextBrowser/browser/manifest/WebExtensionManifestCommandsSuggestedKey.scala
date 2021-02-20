@@ -1,11 +1,14 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebExtensionManifestCommandsSuggestedKey extends js.Object {
+trait WebExtensionManifestCommandsSuggestedKey extends StObject {
+  
+  var default: js.UndefOr[KeyName] = js.native
   
   /** @deprecated Unknown platform name */
   var additionalProperties: js.UndefOr[String] = js.native
@@ -13,8 +16,6 @@ trait WebExtensionManifestCommandsSuggestedKey extends js.Object {
   var android: js.UndefOr[String] = js.native
   
   var chromeos: js.UndefOr[String] = js.native
-  
-  var default: js.UndefOr[KeyName] = js.native
   
   var ios: js.UndefOr[String] = js.native
   
@@ -33,66 +34,54 @@ object WebExtensionManifestCommandsSuggestedKey {
   }
   
   @scala.inline
-  implicit class WebExtensionManifestCommandsSuggestedKeyOps[Self <: WebExtensionManifestCommandsSuggestedKey] (val x: Self) extends AnyVal {
+  implicit class WebExtensionManifestCommandsSuggestedKeyMutableBuilder[Self <: WebExtensionManifestCommandsSuggestedKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalProperties(value: String): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroid(value: String): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalProperties(value: String): Self = this.set("additionalProperties", value.asInstanceOf[js.Any])
+    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
     @scala.inline
-    def deleteAdditionalProperties: Self = this.set("additionalProperties", js.undefined)
+    def setChromeos(value: String): Self = StObject.set(x, "chromeos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid(value: String): Self = this.set("android", value.asInstanceOf[js.Any])
+    def setChromeosUndefined: Self = StObject.set(x, "chromeos", js.undefined)
     
     @scala.inline
-    def deleteAndroid: Self = this.set("android", js.undefined)
+    def setDefault(value: KeyName): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChromeos(value: String): Self = this.set("chromeos", value.asInstanceOf[js.Any])
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def deleteChromeos: Self = this.set("chromeos", js.undefined)
+    def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: KeyName): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setLinux(value: KeyName): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIos(value: String): Self = this.set("ios", value.asInstanceOf[js.Any])
+    def setLinuxUndefined: Self = StObject.set(x, "linux", js.undefined)
     
     @scala.inline
-    def deleteIos: Self = this.set("ios", js.undefined)
+    def setMac(value: KeyName): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinux(value: KeyName): Self = this.set("linux", value.asInstanceOf[js.Any])
+    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
     @scala.inline
-    def deleteLinux: Self = this.set("linux", js.undefined)
+    def setWindows(value: KeyName): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMac(value: KeyName): Self = this.set("mac", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMac: Self = this.set("mac", js.undefined)
-    
-    @scala.inline
-    def setWindows(value: KeyName): Self = this.set("windows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindows: Self = this.set("windows", js.undefined)
+    def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
   }
 }

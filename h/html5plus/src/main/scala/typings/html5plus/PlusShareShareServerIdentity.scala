@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
   */
 @js.native
-trait PlusShareShareServerIdentity extends js.Object {
+trait PlusShareShareServerIdentity extends StObject {
   
   /**
     * 新浪微博
@@ -42,36 +43,24 @@ object PlusShareShareServerIdentity {
   }
   
   @scala.inline
-  implicit class PlusShareShareServerIdentityOps[Self <: PlusShareShareServerIdentity] (val x: Self) extends AnyVal {
+  implicit class PlusShareShareServerIdentityMutableBuilder[Self <: PlusShareShareServerIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSinaweibo(value: String): Self = StObject.set(x, "sinaweibo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSinaweiboUndefined: Self = StObject.set(x, "sinaweibo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTencentweibo(value: String): Self = StObject.set(x, "tencentweibo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSinaweibo(value: String): Self = this.set("sinaweibo", value.asInstanceOf[js.Any])
+    def setTencentweiboUndefined: Self = StObject.set(x, "tencentweibo", js.undefined)
     
     @scala.inline
-    def deleteSinaweibo: Self = this.set("sinaweibo", js.undefined)
+    def setWeixin(value: String): Self = StObject.set(x, "weixin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTencentweibo(value: String): Self = this.set("tencentweibo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTencentweibo: Self = this.set("tencentweibo", js.undefined)
-    
-    @scala.inline
-    def setWeixin(value: String): Self = this.set("weixin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeixin: Self = this.set("weixin", js.undefined)
+    def setWeixinUndefined: Self = StObject.set(x, "weixin", js.undefined)
   }
 }

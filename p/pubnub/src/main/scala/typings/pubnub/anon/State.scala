@@ -1,11 +1,12 @@
 package typings.pubnub.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait State extends js.Object {
+trait State extends StObject {
   
   var state: js.UndefOr[js.Any] = js.native
   
@@ -20,27 +21,15 @@ object State {
   }
   
   @scala.inline
-  implicit class StateOps[Self <: State] (val x: Self) extends AnyVal {
+  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: js.Any): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

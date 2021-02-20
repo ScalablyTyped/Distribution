@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonOptions extends js.Object {
+trait ButtonOptions extends StObject {
   
   var badge: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object ButtonOptions {
   }
   
   @scala.inline
-  implicit class ButtonOptionsOps[Self <: ButtonOptions] (val x: Self) extends AnyVal {
+  implicit class ButtonOptionsMutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClick(value: /* e */ ButtonClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBadge(value: String): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setClickOn(value: String): Self = StObject.set(x, "clickOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBadge: Self = this.set("badge", js.undefined)
+    def setClickOnUndefined: Self = StObject.set(x, "clickOn", js.undefined)
     
     @scala.inline
-    def setClick(value: /* e */ ButtonClickEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickOn(value: String): Self = this.set("clickOn", value.asInstanceOf[js.Any])
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def deleteClickOn: Self = this.set("clickOn", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

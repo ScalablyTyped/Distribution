@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientFirebase.anon.PrettyPrint
 import typings.maximMazurokGapiClientFirebase.anon.Project
 import typings.maximMazurokGapiClientFirebase.anon.Uploadprotocol
 import typings.maximMazurokGapiClientFirebase.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   /**
     * Adds Firebase resources to the specified existing [Google Cloud Platform (GCP) `Project`] (https://cloud.google.com/resource-manager/reference/rest/v1/projects). Since a

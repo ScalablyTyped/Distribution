@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.InterfaceDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,45 +47,33 @@ object InterfaceDeclaration_ {
   }
   
   @scala.inline
-  implicit class InterfaceDeclaration_Ops[Self <: InterfaceDeclaration_] (val x: Self) extends AnyVal {
+  implicit class InterfaceDeclaration_MutableBuilder[Self <: InterfaceDeclaration_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: ObjectTypeAnnotation_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtends(value: js.Array[InterfaceExtends_]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendsVarargs(value: InterfaceExtends_ *): Self = StObject.set(x, "extends", js.Array(value :_*))
     
     @scala.inline
-    def setBody(value: ObjectTypeAnnotation_): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendsVarargs(value: InterfaceExtends_ *): Self = this.set("extends", js.Array(value :_*))
+    def setMixins(value: js.Array[_]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtends(value: js.Array[InterfaceExtends_]): Self = this.set("extends", value.asInstanceOf[js.Any])
+    def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
     
     @scala.inline
-    def setId(value: Identifier_): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMixinsVarargs(value: js.Any*): Self = StObject.set(x, "mixins", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: InterfaceDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: InterfaceDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMixinsVarargs(value: js.Any*): Self = this.set("mixins", js.Array(value :_*))
-    
-    @scala.inline
-    def setMixins(value: js.Array[_]): Self = this.set("mixins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMixins: Self = this.set("mixins", js.undefined)
+    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
   }
 }

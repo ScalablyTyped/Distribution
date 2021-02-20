@@ -2,12 +2,13 @@ package typings.googleapis.anon
 
 import typings.googleapis.booksV1Mod.booksV1.SchemaReadingPosition
 import typings.googleapis.booksV1Mod.booksV1.SchemaReview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcquiredTime extends js.Object {
+trait AcquiredTime extends StObject {
   
   var acquiredTime: js.UndefOr[String] = js.native
   
@@ -56,132 +57,120 @@ object AcquiredTime {
   }
   
   @scala.inline
-  implicit class AcquiredTimeOps[Self <: AcquiredTime] (val x: Self) extends AnyVal {
+  implicit class AcquiredTimeMutableBuilder[Self <: AcquiredTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquiredTime(value: String): Self = StObject.set(x, "acquiredTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcquiredTimeUndefined: Self = StObject.set(x, "acquiredTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcquisitionType(value: Double): Self = StObject.set(x, "acquisitionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquiredTime(value: String): Self = this.set("acquiredTime", value.asInstanceOf[js.Any])
+    def setAcquisitionTypeUndefined: Self = StObject.set(x, "acquisitionType", js.undefined)
     
     @scala.inline
-    def deleteAcquiredTime: Self = this.set("acquiredTime", js.undefined)
+    def setCopy(value: LimitType): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquisitionType(value: Double): Self = this.set("acquisitionType", value.asInstanceOf[js.Any])
+    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
     @scala.inline
-    def deleteAcquisitionType: Self = this.set("acquisitionType", js.undefined)
+    def setEntitlementType(value: Double): Self = StObject.set(x, "entitlementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: LimitType): Self = this.set("copy", value.asInstanceOf[js.Any])
+    def setEntitlementTypeUndefined: Self = StObject.set(x, "entitlementType", js.undefined)
     
     @scala.inline
-    def deleteCopy: Self = this.set("copy", js.undefined)
+    def setFamilySharing(value: FamilyRole): Self = StObject.set(x, "familySharing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitlementType(value: Double): Self = this.set("entitlementType", value.asInstanceOf[js.Any])
+    def setFamilySharingUndefined: Self = StObject.set(x, "familySharing", js.undefined)
     
     @scala.inline
-    def deleteEntitlementType: Self = this.set("entitlementType", js.undefined)
+    def setIsFamilySharedFromUser(value: Boolean): Self = StObject.set(x, "isFamilySharedFromUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilySharing(value: FamilyRole): Self = this.set("familySharing", value.asInstanceOf[js.Any])
+    def setIsFamilySharedFromUserUndefined: Self = StObject.set(x, "isFamilySharedFromUser", js.undefined)
     
     @scala.inline
-    def deleteFamilySharing: Self = this.set("familySharing", js.undefined)
+    def setIsFamilySharedToUser(value: Boolean): Self = StObject.set(x, "isFamilySharedToUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFamilySharedFromUser(value: Boolean): Self = this.set("isFamilySharedFromUser", value.asInstanceOf[js.Any])
+    def setIsFamilySharedToUserUndefined: Self = StObject.set(x, "isFamilySharedToUser", js.undefined)
     
     @scala.inline
-    def deleteIsFamilySharedFromUser: Self = this.set("isFamilySharedFromUser", js.undefined)
+    def setIsFamilySharingAllowed(value: Boolean): Self = StObject.set(x, "isFamilySharingAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFamilySharedToUser(value: Boolean): Self = this.set("isFamilySharedToUser", value.asInstanceOf[js.Any])
+    def setIsFamilySharingAllowedUndefined: Self = StObject.set(x, "isFamilySharingAllowed", js.undefined)
     
     @scala.inline
-    def deleteIsFamilySharedToUser: Self = this.set("isFamilySharedToUser", js.undefined)
+    def setIsFamilySharingDisabledByFop(value: Boolean): Self = StObject.set(x, "isFamilySharingDisabledByFop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFamilySharingAllowed(value: Boolean): Self = this.set("isFamilySharingAllowed", value.asInstanceOf[js.Any])
+    def setIsFamilySharingDisabledByFopUndefined: Self = StObject.set(x, "isFamilySharingDisabledByFop", js.undefined)
     
     @scala.inline
-    def deleteIsFamilySharingAllowed: Self = this.set("isFamilySharingAllowed", js.undefined)
+    def setIsInMyBooks(value: Boolean): Self = StObject.set(x, "isInMyBooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFamilySharingDisabledByFop(value: Boolean): Self = this.set("isFamilySharingDisabledByFop", value.asInstanceOf[js.Any])
+    def setIsInMyBooksUndefined: Self = StObject.set(x, "isInMyBooks", js.undefined)
     
     @scala.inline
-    def deleteIsFamilySharingDisabledByFop: Self = this.set("isFamilySharingDisabledByFop", js.undefined)
+    def setIsPreordered(value: Boolean): Self = StObject.set(x, "isPreordered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInMyBooks(value: Boolean): Self = this.set("isInMyBooks", value.asInstanceOf[js.Any])
+    def setIsPreorderedUndefined: Self = StObject.set(x, "isPreordered", js.undefined)
     
     @scala.inline
-    def deleteIsInMyBooks: Self = this.set("isInMyBooks", js.undefined)
+    def setIsPurchased(value: Boolean): Self = StObject.set(x, "isPurchased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPreordered(value: Boolean): Self = this.set("isPreordered", value.asInstanceOf[js.Any])
+    def setIsPurchasedUndefined: Self = StObject.set(x, "isPurchased", js.undefined)
     
     @scala.inline
-    def deleteIsPreordered: Self = this.set("isPreordered", js.undefined)
+    def setIsUploaded(value: Boolean): Self = StObject.set(x, "isUploaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPurchased(value: Boolean): Self = this.set("isPurchased", value.asInstanceOf[js.Any])
+    def setIsUploadedUndefined: Self = StObject.set(x, "isUploaded", js.undefined)
     
     @scala.inline
-    def deleteIsPurchased: Self = this.set("isPurchased", js.undefined)
+    def setReadingPosition(value: SchemaReadingPosition): Self = StObject.set(x, "readingPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUploaded(value: Boolean): Self = this.set("isUploaded", value.asInstanceOf[js.Any])
+    def setReadingPositionUndefined: Self = StObject.set(x, "readingPosition", js.undefined)
     
     @scala.inline
-    def deleteIsUploaded: Self = this.set("isUploaded", js.undefined)
+    def setRentalPeriod(value: EndUtcSec): Self = StObject.set(x, "rentalPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadingPosition(value: SchemaReadingPosition): Self = this.set("readingPosition", value.asInstanceOf[js.Any])
+    def setRentalPeriodUndefined: Self = StObject.set(x, "rentalPeriod", js.undefined)
     
     @scala.inline
-    def deleteReadingPosition: Self = this.set("readingPosition", js.undefined)
+    def setRentalState(value: String): Self = StObject.set(x, "rentalState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRentalPeriod(value: EndUtcSec): Self = this.set("rentalPeriod", value.asInstanceOf[js.Any])
+    def setRentalStateUndefined: Self = StObject.set(x, "rentalState", js.undefined)
     
     @scala.inline
-    def deleteRentalPeriod: Self = this.set("rentalPeriod", js.undefined)
+    def setReview(value: SchemaReview): Self = StObject.set(x, "review", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRentalState(value: String): Self = this.set("rentalState", value.asInstanceOf[js.Any])
+    def setReviewUndefined: Self = StObject.set(x, "review", js.undefined)
     
     @scala.inline
-    def deleteRentalState: Self = this.set("rentalState", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReview(value: SchemaReview): Self = this.set("review", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deleteReview: Self = this.set("review", js.undefined)
+    def setUserUploadedVolumeInfo(value: ProcessingState): Self = StObject.set(x, "userUploadedVolumeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
-    
-    @scala.inline
-    def setUserUploadedVolumeInfo(value: ProcessingState): Self = this.set("userUploadedVolumeInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserUploadedVolumeInfo: Self = this.set("userUploadedVolumeInfo", js.undefined)
+    def setUserUploadedVolumeInfoUndefined: Self = StObject.set(x, "userUploadedVolumeInfo", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkerPool extends js.Object {
+trait WorkerPool extends StObject {
   
   /** Settings for autoscaling of this WorkerPool. */
   var autoscalingSettings: js.UndefOr[AutoscalingSettings] = js.native
@@ -106,167 +107,155 @@ object WorkerPool {
   }
   
   @scala.inline
-  implicit class WorkerPoolOps[Self <: WorkerPool] (val x: Self) extends AnyVal {
+  implicit class WorkerPoolMutableBuilder[Self <: WorkerPool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoscalingSettings(value: AutoscalingSettings): Self = StObject.set(x, "autoscalingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoscalingSettingsUndefined: Self = StObject.set(x, "autoscalingSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataDisks(value: js.Array[Disk]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoscalingSettings(value: AutoscalingSettings): Self = this.set("autoscalingSettings", value.asInstanceOf[js.Any])
+    def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
     
     @scala.inline
-    def deleteAutoscalingSettings: Self = this.set("autoscalingSettings", js.undefined)
+    def setDataDisksVarargs(value: Disk*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
     
     @scala.inline
-    def setDataDisksVarargs(value: Disk*): Self = this.set("dataDisks", js.Array(value :_*))
+    def setDefaultPackageSet(value: String): Self = StObject.set(x, "defaultPackageSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataDisks(value: js.Array[Disk]): Self = this.set("dataDisks", value.asInstanceOf[js.Any])
+    def setDefaultPackageSetUndefined: Self = StObject.set(x, "defaultPackageSet", js.undefined)
     
     @scala.inline
-    def deleteDataDisks: Self = this.set("dataDisks", js.undefined)
+    def setDiskSizeGb(value: Double): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPackageSet(value: String): Self = this.set("defaultPackageSet", value.asInstanceOf[js.Any])
+    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
     @scala.inline
-    def deleteDefaultPackageSet: Self = this.set("defaultPackageSet", js.undefined)
+    def setDiskSourceImage(value: String): Self = StObject.set(x, "diskSourceImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeGb(value: Double): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    def setDiskSourceImageUndefined: Self = StObject.set(x, "diskSourceImage", js.undefined)
     
     @scala.inline
-    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSourceImage(value: String): Self = this.set("diskSourceImage", value.asInstanceOf[js.Any])
+    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
     @scala.inline
-    def deleteDiskSourceImage: Self = this.set("diskSourceImage", js.undefined)
+    def setIpConfiguration(value: String): Self = StObject.set(x, "ipConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    def setIpConfigurationUndefined: Self = StObject.set(x, "ipConfiguration", js.undefined)
     
     @scala.inline
-    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpConfiguration(value: String): Self = this.set("ipConfiguration", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIpConfiguration: Self = this.set("ipConfiguration", js.undefined)
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
     @scala.inline
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool with TopLevel[js.Any]
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def setNumThreadsPerWorker(value: Double): Self = this.set("numThreadsPerWorker", value.asInstanceOf[js.Any])
+    def setNumThreadsPerWorker(value: Double): Self = StObject.set(x, "numThreadsPerWorker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumThreadsPerWorker: Self = this.set("numThreadsPerWorker", js.undefined)
+    def setNumThreadsPerWorkerUndefined: Self = StObject.set(x, "numThreadsPerWorker", js.undefined)
     
     @scala.inline
-    def setNumWorkers(value: Double): Self = this.set("numWorkers", value.asInstanceOf[js.Any])
+    def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumWorkers: Self = this.set("numWorkers", js.undefined)
+    def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
     
     @scala.inline
-    def setOnHostMaintenance(value: String): Self = this.set("onHostMaintenance", value.asInstanceOf[js.Any])
+    def setOnHostMaintenance(value: String): Self = StObject.set(x, "onHostMaintenance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnHostMaintenance: Self = this.set("onHostMaintenance", js.undefined)
+    def setOnHostMaintenanceUndefined: Self = StObject.set(x, "onHostMaintenance", js.undefined)
     
     @scala.inline
-    def setPackagesVarargs(value: Package*): Self = this.set("packages", js.Array(value :_*))
+    def setPackages(value: js.Array[Package]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackages(value: js.Array[Package]): Self = this.set("packages", value.asInstanceOf[js.Any])
+    def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
     @scala.inline
-    def deletePackages: Self = this.set("packages", js.undefined)
+    def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
     
     @scala.inline
     def setPoolArgs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool with TopLevel[js.Any]
-    ): Self = this.set("poolArgs", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "poolArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePoolArgs: Self = this.set("poolArgs", js.undefined)
+    def setPoolArgsUndefined: Self = StObject.set(x, "poolArgs", js.undefined)
     
     @scala.inline
-    def setSdkHarnessContainerImagesVarargs(value: SdkHarnessContainerImage*): Self = this.set("sdkHarnessContainerImages", js.Array(value :_*))
+    def setSdkHarnessContainerImages(value: js.Array[SdkHarnessContainerImage]): Self = StObject.set(x, "sdkHarnessContainerImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSdkHarnessContainerImages(value: js.Array[SdkHarnessContainerImage]): Self = this.set("sdkHarnessContainerImages", value.asInstanceOf[js.Any])
+    def setSdkHarnessContainerImagesUndefined: Self = StObject.set(x, "sdkHarnessContainerImages", js.undefined)
     
     @scala.inline
-    def deleteSdkHarnessContainerImages: Self = this.set("sdkHarnessContainerImages", js.undefined)
+    def setSdkHarnessContainerImagesVarargs(value: SdkHarnessContainerImage*): Self = StObject.set(x, "sdkHarnessContainerImages", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
     @scala.inline
-    def setTaskrunnerSettings(value: TaskRunnerSettings): Self = this.set("taskrunnerSettings", value.asInstanceOf[js.Any])
+    def setTaskrunnerSettings(value: TaskRunnerSettings): Self = StObject.set(x, "taskrunnerSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTaskrunnerSettings: Self = this.set("taskrunnerSettings", js.undefined)
+    def setTaskrunnerSettingsUndefined: Self = StObject.set(x, "taskrunnerSettings", js.undefined)
     
     @scala.inline
-    def setTeardownPolicy(value: String): Self = this.set("teardownPolicy", value.asInstanceOf[js.Any])
+    def setTeardownPolicy(value: String): Self = StObject.set(x, "teardownPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTeardownPolicy: Self = this.set("teardownPolicy", js.undefined)
+    def setTeardownPolicyUndefined: Self = StObject.set(x, "teardownPolicy", js.undefined)
     
     @scala.inline
-    def setWorkerHarnessContainerImage(value: String): Self = this.set("workerHarnessContainerImage", value.asInstanceOf[js.Any])
+    def setWorkerHarnessContainerImage(value: String): Self = StObject.set(x, "workerHarnessContainerImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWorkerHarnessContainerImage: Self = this.set("workerHarnessContainerImage", js.undefined)
+    def setWorkerHarnessContainerImageUndefined: Self = StObject.set(x, "workerHarnessContainerImage", js.undefined)
     
     @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

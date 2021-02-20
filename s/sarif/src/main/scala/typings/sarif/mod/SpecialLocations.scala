@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpecialLocations extends js.Object {
+trait SpecialLocations extends StObject {
   
   /**
     * Provides a suggestion to SARIF consumers to display file paths relative to the specified location.
@@ -26,30 +27,18 @@ object SpecialLocations {
   }
   
   @scala.inline
-  implicit class SpecialLocationsOps[Self <: SpecialLocations] (val x: Self) extends AnyVal {
+  implicit class SpecialLocationsMutableBuilder[Self <: SpecialLocations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayBase(value: ArtifactLocation): Self = StObject.set(x, "displayBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayBaseUndefined: Self = StObject.set(x, "displayBase", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayBase(value: ArtifactLocation): Self = this.set("displayBase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayBase: Self = this.set("displayBase", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

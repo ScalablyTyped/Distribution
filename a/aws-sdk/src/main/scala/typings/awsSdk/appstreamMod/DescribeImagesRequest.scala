@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeImagesRequest extends js.Object {
+trait DescribeImagesRequest extends StObject {
   
   /**
     * The ARNs of the public, private, and shared images to describe.
@@ -41,54 +42,42 @@ object DescribeImagesRequest {
   }
   
   @scala.inline
-  implicit class DescribeImagesRequestOps[Self <: DescribeImagesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeImagesRequestMutableBuilder[Self <: DescribeImagesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArns(value: ArnList): Self = StObject.set(x, "Arns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnsUndefined: Self = StObject.set(x, "Arns", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArnsVarargs(value: Arn*): Self = StObject.set(x, "Arns", js.Array(value :_*))
     
     @scala.inline
-    def setArnsVarargs(value: Arn*): Self = this.set("Arns", js.Array(value :_*))
+    def setMaxResults(value: DescribeImagesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArns(value: ArnList): Self = this.set("Arns", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteArns: Self = this.set("Arns", js.undefined)
+    def setNames(value: StringList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: DescribeImagesMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("Names", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: StringList): Self = this.set("Names", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteNames: Self = this.set("Names", js.undefined)
+    def setType(value: VisibilityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setType(value: VisibilityType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

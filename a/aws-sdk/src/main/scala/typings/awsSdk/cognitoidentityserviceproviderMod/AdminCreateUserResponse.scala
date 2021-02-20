@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminCreateUserResponse extends js.Object {
+trait AdminCreateUserResponse extends StObject {
   
   /**
     * The newly created user.
@@ -21,24 +22,12 @@ object AdminCreateUserResponse {
   }
   
   @scala.inline
-  implicit class AdminCreateUserResponseOps[Self <: AdminCreateUserResponse] (val x: Self) extends AnyVal {
+  implicit class AdminCreateUserResponseMutableBuilder[Self <: AdminCreateUserResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUser(value: UserType): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUser(value: UserType): Self = this.set("User", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("User", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

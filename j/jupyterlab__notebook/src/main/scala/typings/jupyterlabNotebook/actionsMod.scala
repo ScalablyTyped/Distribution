@@ -2,20 +2,18 @@ package typings.jupyterlabNotebook
 
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext
 import typings.jupyterlabNbformat.mod.CellType
-import typings.jupyterlabNotebook.anon.Cell
 import typings.jupyterlabNotebook.jupyterlabNotebookStrings.above
 import typings.jupyterlabNotebook.jupyterlabNotebookStrings.below
 import typings.jupyterlabNotebook.jupyterlabNotebookStrings.replace
 import typings.jupyterlabNotebook.widgetMod.Notebook
-import typings.luminoSignaling.mod.ISignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/notebook/lib/actions", JSImport.Namespace)
-@js.native
-object actionsMod extends js.Object {
+object actionsMod {
   
+  @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions")
   @js.native
   /**
     * A private constructor for the `NotebookActions` class.
@@ -26,10 +24,8 @@ object actionsMod extends js.Object {
     * standalone class is because at run time, the `Private.executed` variable
     * does not yet exist, so it needs to be referenced via a getter.
     */
-  class NotebookActions protected () extends js.Object
-  /* static members */
-  @js.native
-  object NotebookActions extends js.Object {
+  class NotebookActions protected () extends StObject
+  object NotebookActions {
     
     /**
       * Change the selected cell type(s).
@@ -44,6 +40,8 @@ object actionsMod extends js.Object {
       * The existing selection will be cleared.
       * Any cells converted to markdown will be unrendered.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.changeCellType")
+    @js.native
     def changeCellType(notebook: Notebook, value: CellType): Unit = js.native
     
     /**
@@ -54,6 +52,8 @@ object actionsMod extends js.Object {
       * #### Notes
       * The widget `mode` will be preserved.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.clearAllOutputs")
+    @js.native
     def clearAllOutputs(notebook: Notebook): Unit = js.native
     
     /**
@@ -64,6 +64,8 @@ object actionsMod extends js.Object {
       * #### Notes
       * The widget `mode` will be preserved.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.clearOutputs")
+    @js.native
     def clearOutputs(notebook: Notebook): Unit = js.native
     
     /**
@@ -71,6 +73,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.copy")
+    @js.native
     def copy(notebook: Notebook): Unit = js.native
     
     /**
@@ -82,6 +86,8 @@ object actionsMod extends js.Object {
       * This action can be undone.
       * A new code cell is added if all cells are cut.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.cut")
+    @js.native
     def cut(notebook: Notebook): Unit = js.native
     
     /**
@@ -94,6 +100,8 @@ object actionsMod extends js.Object {
       * It will add a code cell if all cells are deleted.
       * This action can be undone.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.deleteCells")
+    @js.native
     def deleteCells(notebook: Notebook): Unit = js.native
     
     /**
@@ -101,6 +109,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - the targe notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.deselectAll")
+    @js.native
     def deselectAll(notebook: Notebook): Unit = js.native
     
     /**
@@ -108,6 +118,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.disableOutputScrolling")
+    @js.native
     def disableOutputScrolling(notebook: Notebook): Unit = js.native
     
     /**
@@ -115,12 +127,9 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.enableOutputScrolling")
+    @js.native
     def enableOutputScrolling(notebook: Notebook): Unit = js.native
-    
-    /**
-      * A signal that emits whenever a cell is run.
-      */
-    def executed: ISignal[_, Cell] = js.native
     
     /**
       * Extend the selection to the cell above.
@@ -132,7 +141,11 @@ object actionsMod extends js.Object {
       * This is a no-op if the first cell is the active cell.
       * The new cell will be activated.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.extendSelectionAbove")
+    @js.native
     def extendSelectionAbove(notebook: Notebook): Unit = js.native
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.extendSelectionAbove")
+    @js.native
     def extendSelectionAbove(notebook: Notebook, toTop: Boolean): Unit = js.native
     
     /**
@@ -145,7 +158,11 @@ object actionsMod extends js.Object {
       * This is a no-op if the last cell is the active cell.
       * The new cell will be activated.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.extendSelectionBelow")
+    @js.native
     def extendSelectionBelow(notebook: Notebook): Unit = js.native
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.extendSelectionBelow")
+    @js.native
     def extendSelectionBelow(notebook: Notebook, toBottom: Boolean): Unit = js.native
     
     /**
@@ -153,6 +170,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.hideAllCode")
+    @js.native
     def hideAllCode(notebook: Notebook): Unit = js.native
     
     /**
@@ -160,6 +179,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.hideAllOutputs")
+    @js.native
     def hideAllOutputs(notebook: Notebook): Unit = js.native
     
     /**
@@ -167,6 +188,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.hideCode")
+    @js.native
     def hideCode(notebook: Notebook): Unit = js.native
     
     /**
@@ -174,6 +197,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.hideOutput")
+    @js.native
     def hideOutput(notebook: Notebook): Unit = js.native
     
     /**
@@ -187,6 +212,8 @@ object actionsMod extends js.Object {
       * The existing selection will be cleared.
       * The new cell will the active cell.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.insertAbove")
+    @js.native
     def insertAbove(notebook: Notebook): Unit = js.native
     
     /**
@@ -200,6 +227,8 @@ object actionsMod extends js.Object {
       * The existing selection will be cleared.
       * The new cell will be the active cell.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.insertBelow")
+    @js.native
     def insertBelow(notebook: Notebook): Unit = js.native
     
     /**
@@ -215,6 +244,8 @@ object actionsMod extends js.Object {
       * The final cell will have the same type as the active cell.
       * If the active cell is a markdown cell, it will be unrendered.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.mergeCells")
+    @js.native
     def mergeCells(notebook: Notebook): Unit = js.native
     
     /**
@@ -222,6 +253,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook = The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.moveDown")
+    @js.native
     def moveDown(notebook: Notebook): Unit = js.native
     
     /**
@@ -229,6 +262,8 @@ object actionsMod extends js.Object {
       *
       * @param widget - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.moveUp")
+    @js.native
     def moveUp(notebook: Notebook): Unit = js.native
     
     /**
@@ -246,12 +281,17 @@ object actionsMod extends js.Object {
       * This is a no-op if there is no cell data on the clipboard.
       * This action can be undone.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.paste")
+    @js.native
     def paste(notebook: Notebook): Unit = js.native
-    @JSName("paste")
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.paste")
+    @js.native
     def paste_above(notebook: Notebook, mode: above): Unit = js.native
-    @JSName("paste")
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.paste")
+    @js.native
     def paste_below(notebook: Notebook, mode: below): Unit = js.native
-    @JSName("paste")
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.paste")
+    @js.native
     def paste_replace(notebook: Notebook, mode: replace): Unit = js.native
     
     /**
@@ -262,9 +302,15 @@ object actionsMod extends js.Object {
       * #### Notes
       * This is a no-op if there are no cell actions to redo.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.redo")
+    @js.native
     def redo(notebook: Notebook): Unit = js.native
     
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.renderAllMarkdown")
+    @js.native
     def renderAllMarkdown(notebook: Notebook): js.Promise[Boolean] = js.native
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.renderAllMarkdown")
+    @js.native
     def renderAllMarkdown(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
     
     /**
@@ -273,6 +319,8 @@ object actionsMod extends js.Object {
       * @param notebook - The target notebook widget.
       * @param text - The text to replace the selection.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.replaceSelection")
+    @js.native
     def replaceSelection(notebook: Notebook, text: String): Unit = js.native
     
     /**
@@ -288,7 +336,11 @@ object actionsMod extends js.Object {
       * An execution error will prevent the remaining code cells from executing.
       * All markdown cells will be rendered.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.run")
+    @js.native
     def run(notebook: Notebook): js.Promise[Boolean] = js.native
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.run")
+    @js.native
     def run(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
     
     /**
@@ -304,7 +356,11 @@ object actionsMod extends js.Object {
       * All markdown cells will be rendered.
       * The last cell in the notebook will be activated and scrolled into view.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAll")
+    @js.native
     def runAll(notebook: Notebook): js.Promise[Boolean] = js.native
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAll")
+    @js.native
     def runAll(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
     
     /**
@@ -320,7 +376,11 @@ object actionsMod extends js.Object {
       * All markdown cells will be rendered.
       * The currently active cell will remain selected.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAllAbove")
+    @js.native
     def runAllAbove(notebook: Notebook): js.Promise[Boolean] = js.native
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAllAbove")
+    @js.native
     def runAllAbove(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
     
     /**
@@ -336,7 +396,11 @@ object actionsMod extends js.Object {
       * All markdown cells will be rendered.
       * The last cell in the notebook will be activated and scrolled into view.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAllBelow")
+    @js.native
     def runAllBelow(notebook: Notebook): js.Promise[Boolean] = js.native
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAllBelow")
+    @js.native
     def runAllBelow(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
     
     /**
@@ -354,7 +418,11 @@ object actionsMod extends js.Object {
       * If the last selected cell is the last cell, a new code cell
       * will be created in `'edit'` mode.  The new cell creation can be undone.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAndAdvance")
+    @js.native
     def runAndAdvance(notebook: Notebook): js.Promise[Boolean] = js.native
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAndAdvance")
+    @js.native
     def runAndAdvance(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
     
     /**
@@ -372,7 +440,11 @@ object actionsMod extends js.Object {
       * The cell insert can be undone.
       * The new cell will be scrolled into view.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAndInsert")
+    @js.native
     def runAndInsert(notebook: Notebook): js.Promise[Boolean] = js.native
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.runAndInsert")
+    @js.native
     def runAndInsert(notebook: Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
     
     /**
@@ -386,6 +458,8 @@ object actionsMod extends js.Object {
       * This will skip any collapsed cells.
       * The existing selection will be cleared.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.selectAbove")
+    @js.native
     def selectAbove(notebook: Notebook): Unit = js.native
     
     /**
@@ -393,6 +467,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - the target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.selectAll")
+    @js.native
     def selectAll(notebook: Notebook): Unit = js.native
     
     /**
@@ -406,6 +482,8 @@ object actionsMod extends js.Object {
       * This will skip any collapsed cells.
       * The existing selection will be cleared.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.selectBelow")
+    @js.native
     def selectBelow(notebook: Notebook): Unit = js.native
     
     /**
@@ -416,6 +494,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.selectLastRunCell")
+    @js.native
     def selectLastRunCell(notebook: Notebook): Unit = js.native
     
     /**
@@ -432,6 +512,8 @@ object actionsMod extends js.Object {
       * There will always be one blank space after the header.
       * The cells will be unrendered.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.setMarkdownHeader")
+    @js.native
     def setMarkdownHeader(notebook: Notebook, level: Double): Unit = js.native
     
     /**
@@ -439,6 +521,8 @@ object actionsMod extends js.Object {
       *
       * @param widget - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.showAllCode")
+    @js.native
     def showAllCode(notebook: Notebook): Unit = js.native
     
     /**
@@ -446,6 +530,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.showAllOutputs")
+    @js.native
     def showAllOutputs(notebook: Notebook): Unit = js.native
     
     /**
@@ -453,6 +539,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.showCode")
+    @js.native
     def showCode(notebook: Notebook): Unit = js.native
     
     /**
@@ -460,6 +548,8 @@ object actionsMod extends js.Object {
       *
       * @param notebook - The target notebook widget.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.showOutput")
+    @js.native
     def showOutput(notebook: Notebook): Unit = js.native
     
     /**
@@ -476,6 +566,8 @@ object actionsMod extends js.Object {
       * Both cells will have the same type as the original cell.
       * This action can be undone.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.splitCell")
+    @js.native
     def splitCell(notebook: Notebook): Unit = js.native
     
     /**
@@ -487,6 +579,8 @@ object actionsMod extends js.Object {
       * The original state is based on the state of the active cell.
       * The `mode` of the widget will be preserved.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.toggleAllLineNumbers")
+    @js.native
     def toggleAllLineNumbers(notebook: Notebook): Unit = js.native
     
     /**
@@ -499,6 +593,8 @@ object actionsMod extends js.Object {
       * #### Notes
       * No dialog will be presented if the notebook is already trusted.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.trust")
+    @js.native
     def trust(notebook: Notebook): js.Promise[Unit] = js.native
     
     /**
@@ -509,6 +605,8 @@ object actionsMod extends js.Object {
       * #### Notes
       * This is a no-op if if there are no cell actions to undo.
       */
+    @JSImport("@jupyterlab/notebook/lib/actions", "NotebookActions.undo")
+    @js.native
     def undo(notebook: Notebook): Unit = js.native
   }
 }

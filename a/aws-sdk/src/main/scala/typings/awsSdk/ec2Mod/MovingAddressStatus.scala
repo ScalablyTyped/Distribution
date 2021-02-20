@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MovingAddressStatus extends js.Object {
+trait MovingAddressStatus extends StObject {
   
   /**
     * The status of the Elastic IP address that's being moved to the EC2-VPC platform, or restored to the EC2-Classic platform.
@@ -26,30 +27,18 @@ object MovingAddressStatus {
   }
   
   @scala.inline
-  implicit class MovingAddressStatusOps[Self <: MovingAddressStatus] (val x: Self) extends AnyVal {
+  implicit class MovingAddressStatusMutableBuilder[Self <: MovingAddressStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMoveStatus(value: MoveStatus): Self = StObject.set(x, "MoveStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMoveStatusUndefined: Self = StObject.set(x, "MoveStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveStatus(value: MoveStatus): Self = this.set("MoveStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMoveStatus: Self = this.set("MoveStatus", js.undefined)
-    
-    @scala.inline
-    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
   }
 }

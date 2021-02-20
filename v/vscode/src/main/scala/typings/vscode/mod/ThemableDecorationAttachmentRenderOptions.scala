@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThemableDecorationAttachmentRenderOptions extends js.Object {
+trait ThemableDecorationAttachmentRenderOptions extends StObject {
   
   /**
     * CSS styling property that will be applied to the decoration attachment.
@@ -77,90 +78,78 @@ object ThemableDecorationAttachmentRenderOptions {
   }
   
   @scala.inline
-  implicit class ThemableDecorationAttachmentRenderOptionsOps[Self <: ThemableDecorationAttachmentRenderOptions] (val x: Self) extends AnyVal {
+  implicit class ThemableDecorationAttachmentRenderOptionsMutableBuilder[Self <: ThemableDecorationAttachmentRenderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String | ThemeColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String | ThemeColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderColor(value: String | ThemeColor): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def setBorder(value: String): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setColor(value: String | ThemeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String | ThemeColor): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setContentIconPath(value: String | Uri): Self = StObject.set(x, "contentIconPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String | ThemeColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setContentIconPathUndefined: Self = StObject.set(x, "contentIconPath", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setContentText(value: String): Self = StObject.set(x, "contentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentIconPath(value: String | Uri): Self = this.set("contentIconPath", value.asInstanceOf[js.Any])
+    def setContentTextUndefined: Self = StObject.set(x, "contentText", js.undefined)
     
     @scala.inline
-    def deleteContentIconPath: Self = this.set("contentIconPath", js.undefined)
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentText(value: String): Self = this.set("contentText", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteContentText: Self = this.set("contentText", js.undefined)
+    def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: String): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecoration(value: String): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

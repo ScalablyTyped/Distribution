@@ -4,6 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.drawing.BitmapMode
 import typings.activexLibreoffice.com_.sun.star.drawing.RectanglePoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.drawing.FillProperties
   */
 @js.native
-trait FillBitmap extends js.Object {
+trait FillBitmap extends StObject {
   
   /**
     * this enum selects how a area is filled with a single bitmap.
@@ -70,39 +71,27 @@ object FillBitmap {
   }
   
   @scala.inline
-  implicit class FillBitmapOps[Self <: FillBitmap] (val x: Self) extends AnyVal {
+  implicit class FillBitmapMutableBuilder[Self <: FillBitmap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setABitmapMode(value: BitmapMode): Self = StObject.set(x, "aBitmapMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAOffset(value: Point): Self = StObject.set(x, "aOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAPositionOffset(value: Point): Self = StObject.set(x, "aPositionOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setABitmapMode(value: BitmapMode): Self = this.set("aBitmapMode", value.asInstanceOf[js.Any])
+    def setARectanglePoint(value: RectanglePoint): Self = StObject.set(x, "aRectanglePoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAOffset(value: Point): Self = this.set("aOffset", value.asInstanceOf[js.Any])
+    def setASize(value: Size): Self = StObject.set(x, "aSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPositionOffset(value: Point): Self = this.set("aPositionOffset", value.asInstanceOf[js.Any])
+    def setAURL(value: String): Self = StObject.set(x, "aURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARectanglePoint(value: RectanglePoint): Self = this.set("aRectanglePoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setASize(value: Size): Self = this.set("aSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAURL(value: String): Self = this.set("aURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBLogicalSize(value: Boolean): Self = this.set("bLogicalSize", value.asInstanceOf[js.Any])
+    def setBLogicalSize(value: Boolean): Self = StObject.set(x, "bLogicalSize", value.asInstanceOf[js.Any])
   }
 }

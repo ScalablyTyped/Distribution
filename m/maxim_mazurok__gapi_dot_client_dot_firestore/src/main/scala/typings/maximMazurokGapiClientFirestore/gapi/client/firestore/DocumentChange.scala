@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentChange extends js.Object {
+trait DocumentChange extends StObject {
   
   /** The new state of the Document. If `mask` is set, contains only fields that were updated or added. */
   var document: js.UndefOr[Document] = js.native
@@ -25,42 +26,30 @@ object DocumentChange {
   }
   
   @scala.inline
-  implicit class DocumentChangeOps[Self <: DocumentChange] (val x: Self) extends AnyVal {
+  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemovedTargetIds(value: js.Array[Double]): Self = StObject.set(x, "removedTargetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: Document): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setRemovedTargetIdsUndefined: Self = StObject.set(x, "removedTargetIds", js.undefined)
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def setRemovedTargetIdsVarargs(value: Double*): Self = StObject.set(x, "removedTargetIds", js.Array(value :_*))
     
     @scala.inline
-    def setRemovedTargetIdsVarargs(value: Double*): Self = this.set("removedTargetIds", js.Array(value :_*))
+    def setTargetIds(value: js.Array[Double]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovedTargetIds(value: js.Array[Double]): Self = this.set("removedTargetIds", value.asInstanceOf[js.Any])
+    def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
     
     @scala.inline
-    def deleteRemovedTargetIds: Self = this.set("removedTargetIds", js.undefined)
-    
-    @scala.inline
-    def setTargetIdsVarargs(value: Double*): Self = this.set("targetIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetIds(value: js.Array[Double]): Self = this.set("targetIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetIds: Self = this.set("targetIds", js.undefined)
+    def setTargetIdsVarargs(value: Double*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
   }
 }

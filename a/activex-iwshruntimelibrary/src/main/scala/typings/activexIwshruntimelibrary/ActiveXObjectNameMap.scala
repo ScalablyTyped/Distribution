@@ -4,12 +4,13 @@ import typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshNetwork
 import typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshShell
 import typings.activexIwshruntimelibrary.ScriptSigner.Signer
 import typings.activexIwshruntimelibrary.WSHControllerLibrary.WSHController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Scripting.Signer")
   var ScriptingDotSigner: Signer = js.native
@@ -39,30 +40,18 @@ object ActiveXObjectNameMap {
   }
   
   @scala.inline
-  implicit class ActiveXObjectNameMapOps[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScriptingDotSigner(value: Signer): Self = StObject.set(x, "Scripting.Signer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWSHController(value: WSHController): Self = StObject.set(x, "WSHController", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWScriptDotNetwork(value: WshNetwork): Self = StObject.set(x, "WScript.Network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptingDotSigner(value: Signer): Self = this.set("Scripting.Signer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWSHController(value: WSHController): Self = this.set("WSHController", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWScriptDotNetwork(value: WshNetwork): Self = this.set("WScript.Network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWScriptDotShell(value: WshShell): Self = this.set("WScript.Shell", value.asInstanceOf[js.Any])
+    def setWScriptDotShell(value: WshShell): Self = StObject.set(x, "WScript.Shell", value.asInstanceOf[js.Any])
   }
 }

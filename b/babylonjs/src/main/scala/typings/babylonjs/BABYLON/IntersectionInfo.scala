@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntersectionInfo extends js.Object {
+trait IntersectionInfo extends StObject {
   
   var bu: Nullable[Double] = js.native
   
@@ -26,39 +27,27 @@ object IntersectionInfo {
   }
   
   @scala.inline
-  implicit class IntersectionInfoOps[Self <: IntersectionInfo] (val x: Self) extends AnyVal {
+  implicit class IntersectionInfoMutableBuilder[Self <: IntersectionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBu(value: Nullable[Double]): Self = StObject.set(x, "bu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuNull: Self = StObject.set(x, "bu", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBv(value: Nullable[Double]): Self = StObject.set(x, "bv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setBvNull: Self = StObject.set(x, "bv", null)
     
     @scala.inline
-    def setFaceId(value: Double): Self = this.set("faceId", value.asInstanceOf[js.Any])
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubMeshId(value: Double): Self = this.set("subMeshId", value.asInstanceOf[js.Any])
+    def setFaceId(value: Double): Self = StObject.set(x, "faceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBu(value: Nullable[Double]): Self = this.set("bu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBuNull: Self = this.set("bu", null)
-    
-    @scala.inline
-    def setBv(value: Nullable[Double]): Self = this.set("bv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBvNull: Self = this.set("bv", null)
+    def setSubMeshId(value: Double): Self = StObject.set(x, "subMeshId", value.asInstanceOf[js.Any])
   }
 }

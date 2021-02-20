@@ -5,6 +5,7 @@ import typings.instagramPrivateApi.anon.CaptionText
 import typings.instagramPrivateApi.anon.MediaType
 import typings.instagramPrivateApi.anon.Module
 import typings.instagramPrivateApi.anon.Sourcetype
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.commonTypesMod.IgAppModule
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
@@ -29,16 +30,17 @@ import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.statusResponseMod.StatusResponse
 import typings.instagramPrivateApi.storyResponseOptionsMod.StoryMusicQuestionResponse
 import typings.instagramPrivateApi.storyResponseOptionsMod.StoryTextQuestionResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/media.repository", JSImport.Namespace)
-@js.native
-object mediaRepositoryMod extends js.Object {
+object mediaRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/media.repository", "MediaRepository")
   @js.native
-  class MediaRepository () extends Repository {
+  class MediaRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     var applyConfigureDefaults: js.Any = js.native
     
@@ -135,9 +137,16 @@ object mediaRepositoryMod extends js.Object {
     def uploadFinish(options: Sourcetype): js.Promise[_] = js.native
   }
   /* static members */
-  @js.native
-  object MediaRepository extends js.Object {
+  object MediaRepository {
     
-    var stringifyStoryStickers: js.Any = js.native
+    @JSImport("instagram-private-api/dist/repositories/media.repository", "MediaRepository")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("instagram-private-api/dist/repositories/media.repository", "MediaRepository.stringifyStoryStickers")
+    @js.native
+    def stringifyStoryStickers: js.Any = js.native
+    @scala.inline
+    def stringifyStoryStickers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringifyStoryStickers")(x.asInstanceOf[js.Any])
   }
 }

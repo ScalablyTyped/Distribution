@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSendingDomain extends js.Object {
+trait CreateSendingDomain extends StObject {
   
   /** JSON object in which DKIM key configuration is defined. */
   var dkim: js.UndefOr[DKIM] = js.native
@@ -37,57 +38,45 @@ object CreateSendingDomain {
   }
   
   @scala.inline
-  implicit class CreateSendingDomainOps[Self <: CreateSendingDomain] (val x: Self) extends AnyVal {
+  implicit class CreateSendingDomainMutableBuilder[Self <: CreateSendingDomain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDkim(value: DKIM): Self = StObject.set(x, "dkim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDkimUndefined: Self = StObject.set(x, "dkim", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDkim_key_length(value: Double): Self = StObject.set(x, "dkim_key_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setDkim_key_lengthUndefined: Self = StObject.set(x, "dkim_key_length", js.undefined)
     
     @scala.inline
-    def setDkim(value: DKIM): Self = this.set("dkim", value.asInstanceOf[js.Any])
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDkim: Self = this.set("dkim", js.undefined)
+    def setGenerate_dkim(value: Boolean): Self = StObject.set(x, "generate_dkim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDkim_key_length(value: Double): Self = this.set("dkim_key_length", value.asInstanceOf[js.Any])
+    def setGenerate_dkimUndefined: Self = StObject.set(x, "generate_dkim", js.undefined)
     
     @scala.inline
-    def deleteDkim_key_length: Self = this.set("dkim_key_length", js.undefined)
+    def setShared_with_subaccounts(value: Boolean): Self = StObject.set(x, "shared_with_subaccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerate_dkim(value: Boolean): Self = this.set("generate_dkim", value.asInstanceOf[js.Any])
+    def setShared_with_subaccountsUndefined: Self = StObject.set(x, "shared_with_subaccounts", js.undefined)
     
     @scala.inline
-    def deleteGenerate_dkim: Self = this.set("generate_dkim", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShared_with_subaccounts(value: Boolean): Self = this.set("shared_with_subaccounts", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteShared_with_subaccounts: Self = this.set("shared_with_subaccounts", js.undefined)
+    def setTracking_domain(value: String): Self = StObject.set(x, "tracking_domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTracking_domain(value: String): Self = this.set("tracking_domain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracking_domain: Self = this.set("tracking_domain", js.undefined)
+    def setTracking_domainUndefined: Self = StObject.set(x, "tracking_domain", js.undefined)
   }
 }

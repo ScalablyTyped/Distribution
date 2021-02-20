@@ -45,12 +45,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetRemovedEvent
 import typings.devtoolsProtocol.mod.Protocol.CSS.TakeComputedStyleUpdatesResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.TakeCoverageDeltaResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.TrackComputedStyleUpdatesRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CSSApi extends js.Object {
+trait CSSApi extends StObject {
   
   /**
     * Inserts a new rule with the given `ruleText` in a stylesheet with given `styleSheetId`, at the

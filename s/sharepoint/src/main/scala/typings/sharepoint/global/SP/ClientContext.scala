@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +11,10 @@ class ClientContext ()
   extends typings.sharepoint.SP.ClientContext {
   def this(serverRelativeUrlOrFullUrl: String) = this()
 }
-/* static members */
-@JSGlobal("SP.ClientContext")
-@js.native
-object ClientContext extends js.Object {
+object ClientContext {
   
-  def get_current(): typings.sharepoint.SP.ClientContext = js.native
+  /* static member */
+  @JSGlobal("SP.ClientContext.get_current")
+  @js.native
+  def getCurrent(): typings.sharepoint.SP.ClientContext = js.native
 }

@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientContent.anon.QuotaUserReturnId
 import typings.maximMazurokGapiClientContent.anon.ResourceReturnId
 import typings.maximMazurokGapiClientContent.anon.ReturnId
 import typings.maximMazurokGapiClientContent.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderreturnsResource extends js.Object {
+trait OrderreturnsResource extends StObject {
   
   def acknowledge(request: QuotaUserReturnId, body: OrderreturnsAcknowledgeRequest): Request[OrderreturnsAcknowledgeResponse] = js.native
   /** Acks an order return in your Merchant Center account. */

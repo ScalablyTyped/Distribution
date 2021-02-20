@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDeleteWorldsRequest extends js.Object {
+trait BatchDeleteWorldsRequest extends StObject {
   
   /**
     * A list of Amazon Resource Names (arns) that correspond to worlds to delete.
@@ -21,24 +22,12 @@ object BatchDeleteWorldsRequest {
   }
   
   @scala.inline
-  implicit class BatchDeleteWorldsRequestOps[Self <: BatchDeleteWorldsRequest] (val x: Self) extends AnyVal {
+  implicit class BatchDeleteWorldsRequestMutableBuilder[Self <: BatchDeleteWorldsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorlds(value: Arns): Self = StObject.set(x, "worlds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorldsVarargs(value: Arn*): Self = this.set("worlds", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorlds(value: Arns): Self = this.set("worlds", value.asInstanceOf[js.Any])
+    def setWorldsVarargs(value: Arn*): Self = StObject.set(x, "worlds", js.Array(value :_*))
   }
 }

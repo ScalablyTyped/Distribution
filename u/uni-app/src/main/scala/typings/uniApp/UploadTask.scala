@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadTask extends js.Object {
+trait UploadTask extends StObject {
   
   /**
     * 中断上传任务

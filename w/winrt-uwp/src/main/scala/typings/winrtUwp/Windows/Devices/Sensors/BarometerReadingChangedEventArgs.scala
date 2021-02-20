@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the barometer reading–changed event. */
 @js.native
-trait BarometerReadingChangedEventArgs extends js.Object {
+trait BarometerReadingChangedEventArgs extends StObject {
   
   /** Gets the most recent barometer reading. */
   var reading: BarometerReading = js.native
@@ -20,21 +21,9 @@ object BarometerReadingChangedEventArgs {
   }
   
   @scala.inline
-  implicit class BarometerReadingChangedEventArgsOps[Self <: BarometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class BarometerReadingChangedEventArgsMutableBuilder[Self <: BarometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReading(value: BarometerReading): Self = this.set("reading", value.asInstanceOf[js.Any])
+    def setReading(value: BarometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

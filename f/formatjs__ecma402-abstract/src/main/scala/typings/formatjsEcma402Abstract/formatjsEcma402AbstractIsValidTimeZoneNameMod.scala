@@ -1,13 +1,14 @@
 package typings.formatjsEcma402Abstract
 
 import typings.formatjsEcma402Abstract.anon.UppercaseLinks
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/ecma402-abstract/IsValidTimeZoneName", JSImport.Namespace)
-@js.native
-object formatjsEcma402AbstractIsValidTimeZoneNameMod extends js.Object {
+object formatjsEcma402AbstractIsValidTimeZoneNameMod {
   
+  @JSImport("@formatjs/ecma402-abstract/IsValidTimeZoneName", "IsValidTimeZoneName")
+  @js.native
   def IsValidTimeZoneName(tz: String, hasTzDataUppercaseLinks: UppercaseLinks): Boolean = js.native
 }

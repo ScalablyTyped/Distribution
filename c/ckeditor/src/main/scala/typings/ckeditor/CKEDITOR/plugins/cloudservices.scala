@@ -1,13 +1,12 @@
 package typings.ckeditor.CKEDITOR.plugins
 
 import typings.ckeditor.CKEDITOR.fileTools.fileLoader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CKEDITOR.plugins.cloudservices")
-@js.native
-object cloudservices extends js.Object {
+object cloudservices {
   
   @js.native
   trait cloudServicesLoader extends fileLoader {

@@ -5,6 +5,7 @@ import typings.pulumiAws.restApiPolicyMod.RestApiPolicyState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class RestApiPolicy protected ()
   def this(name: String, args: RestApiPolicyArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/apigateway", "RestApiPolicy")
-@js.native
-object RestApiPolicy extends js.Object {
+object RestApiPolicy {
   
   /**
     * Get an existing RestApiPolicy resource's state with the given name, ID, and optional extra
@@ -37,14 +36,24 @@ object RestApiPolicy extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/apigateway", "RestApiPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.restApiPolicyMod.RestApiPolicy = js.native
+  @JSImport("@pulumi/aws/apigateway", "RestApiPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.restApiPolicyMod.RestApiPolicy = js.native
+  @JSImport("@pulumi/aws/apigateway", "RestApiPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: RestApiPolicyState): typings.pulumiAws.restApiPolicyMod.RestApiPolicy = js.native
+  @JSImport("@pulumi/aws/apigateway", "RestApiPolicy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: RestApiPolicyState, opts: CustomResourceOptions): typings.pulumiAws.restApiPolicyMod.RestApiPolicy = js.native
   
   /**
     * Returns true if the given object is an instance of RestApiPolicy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/apigateway", "RestApiPolicy.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApiPolicy.RestApiPolicy */ Boolean = js.native
 }

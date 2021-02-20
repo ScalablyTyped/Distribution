@@ -3,12 +3,13 @@ package typings.cassandraDriver.mod
 import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
 import typings.cassandraDriver.typesMod.types.Long
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryOptions extends js.Object {
+trait QueryOptions extends StObject {
   
   var autoPage: js.UndefOr[Boolean] = js.native
   
@@ -63,162 +64,150 @@ object QueryOptions {
   }
   
   @scala.inline
-  implicit class QueryOptionsOps[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPage(value: Boolean): Self = StObject.set(x, "autoPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPageUndefined: Self = StObject.set(x, "autoPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptureStackTrace(value: Boolean): Self = StObject.set(x, "captureStackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPage(value: Boolean): Self = this.set("autoPage", value.asInstanceOf[js.Any])
+    def setCaptureStackTraceUndefined: Self = StObject.set(x, "captureStackTrace", js.undefined)
     
     @scala.inline
-    def deleteAutoPage: Self = this.set("autoPage", js.undefined)
+    def setConsistency(value: Double): Self = StObject.set(x, "consistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureStackTrace(value: Boolean): Self = this.set("captureStackTrace", value.asInstanceOf[js.Any])
+    def setConsistencyUndefined: Self = StObject.set(x, "consistency", js.undefined)
     
     @scala.inline
-    def deleteCaptureStackTrace: Self = this.set("captureStackTrace", js.undefined)
+    def setCounter(value: Boolean): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsistency(value: Double): Self = this.set("consistency", value.asInstanceOf[js.Any])
+    def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
     @scala.inline
-    def deleteConsistency: Self = this.set("consistency", js.undefined)
+    def setCustomPayload(value: js.Any): Self = StObject.set(x, "customPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounter(value: Boolean): Self = this.set("counter", value.asInstanceOf[js.Any])
+    def setCustomPayloadUndefined: Self = StObject.set(x, "customPayload", js.undefined)
     
     @scala.inline
-    def deleteCounter: Self = this.set("counter", js.undefined)
+    def setExecutionProfile(value: String | ExecutionProfile): Self = StObject.set(x, "executionProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomPayload(value: js.Any): Self = this.set("customPayload", value.asInstanceOf[js.Any])
+    def setExecutionProfileUndefined: Self = StObject.set(x, "executionProfile", js.undefined)
     
     @scala.inline
-    def deleteCustomPayload: Self = this.set("customPayload", js.undefined)
+    def setFetchSize(value: Double): Self = StObject.set(x, "fetchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionProfile(value: String | ExecutionProfile): Self = this.set("executionProfile", value.asInstanceOf[js.Any])
+    def setFetchSizeUndefined: Self = StObject.set(x, "fetchSize", js.undefined)
     
     @scala.inline
-    def deleteExecutionProfile: Self = this.set("executionProfile", js.undefined)
+    def setHints(value: js.Array[js.Array[String] | String]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchSize(value: Double): Self = this.set("fetchSize", value.asInstanceOf[js.Any])
+    def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
     @scala.inline
-    def deleteFetchSize: Self = this.set("fetchSize", js.undefined)
+    def setHintsVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "hints", js.Array(value :_*))
     
     @scala.inline
-    def setHintsVarargs(value: (js.Array[String] | String)*): Self = this.set("hints", js.Array(value :_*))
+    def setHost(value: Host): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHints(value: js.Array[js.Array[String] | String]): Self = this.set("hints", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteHints: Self = this.set("hints", js.undefined)
+    def setIsIdempotent(value: Boolean): Self = StObject.set(x, "isIdempotent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: Host): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setIsIdempotentUndefined: Self = StObject.set(x, "isIdempotent", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setKeyspace(value: String): Self = StObject.set(x, "keyspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIdempotent(value: Boolean): Self = this.set("isIdempotent", value.asInstanceOf[js.Any])
+    def setKeyspaceUndefined: Self = StObject.set(x, "keyspace", js.undefined)
     
     @scala.inline
-    def deleteIsIdempotent: Self = this.set("isIdempotent", js.undefined)
+    def setLogged(value: Boolean): Self = StObject.set(x, "logged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyspace(value: String): Self = this.set("keyspace", value.asInstanceOf[js.Any])
+    def setLoggedUndefined: Self = StObject.set(x, "logged", js.undefined)
     
     @scala.inline
-    def deleteKeyspace: Self = this.set("keyspace", js.undefined)
+    def setPageState(value: Buffer | String): Self = StObject.set(x, "pageState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogged(value: Boolean): Self = this.set("logged", value.asInstanceOf[js.Any])
+    def setPageStateUndefined: Self = StObject.set(x, "pageState", js.undefined)
     
     @scala.inline
-    def deleteLogged: Self = this.set("logged", js.undefined)
+    def setPrepare(value: Boolean): Self = StObject.set(x, "prepare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageState(value: Buffer | String): Self = this.set("pageState", value.asInstanceOf[js.Any])
+    def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
     
     @scala.inline
-    def deletePageState: Self = this.set("pageState", js.undefined)
+    def setReadTimeout(value: Double): Self = StObject.set(x, "readTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepare(value: Boolean): Self = this.set("prepare", value.asInstanceOf[js.Any])
+    def setReadTimeoutUndefined: Self = StObject.set(x, "readTimeout", js.undefined)
     
     @scala.inline
-    def deletePrepare: Self = this.set("prepare", js.undefined)
+    def setRetry(value: RetryPolicy): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTimeout(value: Double): Self = this.set("readTimeout", value.asInstanceOf[js.Any])
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
     @scala.inline
-    def deleteReadTimeout: Self = this.set("readTimeout", js.undefined)
+    def setRoutingIndexes(value: js.Array[Double]): Self = StObject.set(x, "routingIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetry(value: RetryPolicy): Self = this.set("retry", value.asInstanceOf[js.Any])
+    def setRoutingIndexesUndefined: Self = StObject.set(x, "routingIndexes", js.undefined)
     
     @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
+    def setRoutingIndexesVarargs(value: Double*): Self = StObject.set(x, "routingIndexes", js.Array(value :_*))
     
     @scala.inline
-    def setRoutingIndexesVarargs(value: Double*): Self = this.set("routingIndexes", js.Array(value :_*))
+    def setRoutingKey(value: Buffer | js.Array[Buffer]): Self = StObject.set(x, "routingKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingIndexes(value: js.Array[Double]): Self = this.set("routingIndexes", value.asInstanceOf[js.Any])
+    def setRoutingKeyUndefined: Self = StObject.set(x, "routingKey", js.undefined)
     
     @scala.inline
-    def deleteRoutingIndexes: Self = this.set("routingIndexes", js.undefined)
+    def setRoutingKeyVarargs(value: Buffer*): Self = StObject.set(x, "routingKey", js.Array(value :_*))
     
     @scala.inline
-    def setRoutingKeyVarargs(value: Buffer*): Self = this.set("routingKey", js.Array(value :_*))
+    def setRoutingNames(value: js.Array[String]): Self = StObject.set(x, "routingNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingKey(value: Buffer | js.Array[Buffer]): Self = this.set("routingKey", value.asInstanceOf[js.Any])
+    def setRoutingNamesUndefined: Self = StObject.set(x, "routingNames", js.undefined)
     
     @scala.inline
-    def deleteRoutingKey: Self = this.set("routingKey", js.undefined)
+    def setRoutingNamesVarargs(value: String*): Self = StObject.set(x, "routingNames", js.Array(value :_*))
     
     @scala.inline
-    def setRoutingNamesVarargs(value: String*): Self = this.set("routingNames", js.Array(value :_*))
+    def setSerialConsistency(value: Double): Self = StObject.set(x, "serialConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingNames(value: js.Array[String]): Self = this.set("routingNames", value.asInstanceOf[js.Any])
+    def setSerialConsistencyUndefined: Self = StObject.set(x, "serialConsistency", js.undefined)
     
     @scala.inline
-    def deleteRoutingNames: Self = this.set("routingNames", js.undefined)
+    def setTimestamp(value: Double | Long): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialConsistency(value: Double): Self = this.set("serialConsistency", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteSerialConsistency: Self = this.set("serialConsistency", js.undefined)
+    def setTraceQuery(value: Boolean): Self = StObject.set(x, "traceQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double | Long): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setTraceQuery(value: Boolean): Self = this.set("traceQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceQuery: Self = this.set("traceQuery", js.undefined)
+    def setTraceQueryUndefined: Self = StObject.set(x, "traceQuery", js.undefined)
   }
 }

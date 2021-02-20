@@ -1,11 +1,12 @@
 package typings.vegaTypings.encodeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorRGB extends js.Object {
+trait ColorRGB extends StObject {
   
   var b: NumericValueRef = js.native
   
@@ -22,27 +23,15 @@ object ColorRGB {
   }
   
   @scala.inline
-  implicit class ColorRGBOps[Self <: ColorRGB] (val x: Self) extends AnyVal {
+  implicit class ColorRGBMutableBuilder[Self <: ColorRGB] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setB(value: NumericValueRef): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setG(value: NumericValueRef): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setB(value: NumericValueRef): Self = this.set("b", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setG(value: NumericValueRef): Self = this.set("g", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setR(value: NumericValueRef): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setR(value: NumericValueRef): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

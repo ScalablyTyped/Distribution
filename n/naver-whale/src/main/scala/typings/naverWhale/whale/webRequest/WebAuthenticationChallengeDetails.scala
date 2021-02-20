@@ -1,5 +1,6 @@
 package typings.naverWhale.whale.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,33 +45,21 @@ object WebAuthenticationChallengeDetails {
   }
   
   @scala.inline
-  implicit class WebAuthenticationChallengeDetailsOps[Self <: WebAuthenticationChallengeDetails] (val x: Self) extends AnyVal {
+  implicit class WebAuthenticationChallengeDetailsMutableBuilder[Self <: WebAuthenticationChallengeDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallenger(value: typings.chrome.chrome.webRequest.WebAuthChallenger): Self = StObject.set(x, "challenger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsProxy(value: Boolean): Self = StObject.set(x, "isProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallenger(value: typings.chrome.chrome.webRequest.WebAuthChallenger): Self = this.set("challenger", value.asInstanceOf[js.Any])
+    def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
     
     @scala.inline
-    def setIsProxy(value: Boolean): Self = this.set("isProxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRealm(value: String): Self = this.set("realm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRealm: Self = this.set("realm", js.undefined)
+    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

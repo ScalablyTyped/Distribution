@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduledActionType extends js.Object {
+trait ScheduledActionType extends StObject {
   
   /**
     * An action that runs a PauseCluster API operation. 
@@ -31,36 +32,24 @@ object ScheduledActionType {
   }
   
   @scala.inline
-  implicit class ScheduledActionTypeOps[Self <: ScheduledActionType] (val x: Self) extends AnyVal {
+  implicit class ScheduledActionTypeMutableBuilder[Self <: ScheduledActionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPauseCluster(value: PauseClusterMessage): Self = StObject.set(x, "PauseCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPauseClusterUndefined: Self = StObject.set(x, "PauseCluster", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResizeCluster(value: ResizeClusterMessage): Self = StObject.set(x, "ResizeCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPauseCluster(value: PauseClusterMessage): Self = this.set("PauseCluster", value.asInstanceOf[js.Any])
+    def setResizeClusterUndefined: Self = StObject.set(x, "ResizeCluster", js.undefined)
     
     @scala.inline
-    def deletePauseCluster: Self = this.set("PauseCluster", js.undefined)
+    def setResumeCluster(value: ResumeClusterMessage): Self = StObject.set(x, "ResumeCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeCluster(value: ResizeClusterMessage): Self = this.set("ResizeCluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResizeCluster: Self = this.set("ResizeCluster", js.undefined)
-    
-    @scala.inline
-    def setResumeCluster(value: ResumeClusterMessage): Self = this.set("ResumeCluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResumeCluster: Self = this.set("ResumeCluster", js.undefined)
+    def setResumeClusterUndefined: Self = StObject.set(x, "ResumeCluster", js.undefined)
   }
 }

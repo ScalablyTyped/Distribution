@@ -1,11 +1,12 @@
 package typings.iitc.iitctypesMod.IITC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkData extends js.Object {
+trait LinkData extends StObject {
   
   var dGuid: String = js.native
   
@@ -38,39 +39,27 @@ object LinkData {
   }
   
   @scala.inline
-  implicit class LinkDataOps[Self <: LinkData] (val x: Self) extends AnyVal {
+  implicit class LinkDataMutableBuilder[Self <: LinkData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDGuid(value: String): Self = StObject.set(x, "dGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDLatE6(value: Double): Self = StObject.set(x, "dLatE6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDLngE6(value: Double): Self = StObject.set(x, "dLngE6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDGuid(value: String): Self = this.set("dGuid", value.asInstanceOf[js.Any])
+    def setOGuid(value: String): Self = StObject.set(x, "oGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDLatE6(value: Double): Self = this.set("dLatE6", value.asInstanceOf[js.Any])
+    def setOLatE6(value: Double): Self = StObject.set(x, "oLatE6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDLngE6(value: Double): Self = this.set("dLngE6", value.asInstanceOf[js.Any])
+    def setOLngE6(value: Double): Self = StObject.set(x, "oLngE6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOGuid(value: String): Self = this.set("oGuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOLatE6(value: Double): Self = this.set("oLatE6", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOLngE6(value: Double): Self = this.set("oLngE6", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeam(value: String): Self = this.set("team", value.asInstanceOf[js.Any])
+    def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
   }
 }

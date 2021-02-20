@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndoorMap extends js.Object {
+trait IndoorMap extends StObject {
   
   def getOpacity(): Double = js.native
   
@@ -59,60 +60,48 @@ object IndoorMap {
   }
   
   @scala.inline
-  implicit class IndoorMapOps[Self <: IndoorMap] (val x: Self) extends AnyVal {
+  implicit class IndoorMapMutableBuilder[Self <: IndoorMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSelectedBuilding(value: () => String): Self = StObject.set(x, "getSelectedBuilding", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSelectedBuildingId(value: () => String): Self = StObject.set(x, "getSelectedBuildingId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOpacity(value: () => Double): Self = this.set("getOpacity", js.Any.fromFunction0(value))
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectedBuilding(value: () => String): Self = this.set("getSelectedBuilding", js.Any.fromFunction0(value))
+    def setHideFloorBar(value: () => Unit): Self = StObject.set(x, "hideFloorBar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectedBuildingId(value: () => String): Self = this.set("getSelectedBuildingId", js.Any.fromFunction0(value))
+    def setHideLabels(value: () => Unit): Self = StObject.set(x, "hideLabels", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideFloorBar(value: () => Unit): Self = this.set("hideFloorBar", js.Any.fromFunction0(value))
+    def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideLabels(value: () => Unit): Self = this.set("hideLabels", js.Any.fromFunction0(value))
+    def setSetzIndex(value: () => Unit): Self = StObject.set(x, "setzIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetMap(value: Map => Unit): Self = this.set("setMap", js.Any.fromFunction1(value))
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetOpacity(value: Double => Unit): Self = this.set("setOpacity", js.Any.fromFunction1(value))
+    def setShowFloor(value: (Double, Boolean) => Unit): Self = StObject.set(x, "showFloor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetzIndex(value: () => Unit): Self = this.set("setzIndex", js.Any.fromFunction0(value))
+    def setShowFloorBar(value: () => Unit): Self = StObject.set(x, "showFloorBar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    def setShowIndoorMap(value: (String, Double, String) => Unit): Self = StObject.set(x, "showIndoorMap", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setShowFloor(value: (Double, Boolean) => Unit): Self = this.set("showFloor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setShowFloorBar(value: () => Unit): Self = this.set("showFloorBar", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowIndoorMap(value: (String, Double, String) => Unit): Self = this.set("showIndoorMap", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setShowLabels(value: () => Unit): Self = this.set("showLabels", js.Any.fromFunction0(value))
+    def setShowLabels(value: () => Unit): Self = StObject.set(x, "showLabels", js.Any.fromFunction0(value))
   }
 }

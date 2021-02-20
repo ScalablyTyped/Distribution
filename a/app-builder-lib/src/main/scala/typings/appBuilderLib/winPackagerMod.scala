@@ -10,14 +10,14 @@ import typings.appBuilderLib.windowsCodeSignMod.CertificateInfo
 import typings.appBuilderLib.windowsCodeSignMod.FileCodeSigningInfo
 import typings.builderUtil.archMod.Arch
 import typings.lazyVal.mod.Lazy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/winPackager", JSImport.Namespace)
-@js.native
-object winPackagerMod extends js.Object {
+object winPackagerMod {
   
+  @JSImport("app-builder-lib/out/winPackager", "WinPackager")
   @js.native
   class WinPackager protected () extends PlatformPackager[WindowsConfiguration] {
     def this(info: Packager) = this()

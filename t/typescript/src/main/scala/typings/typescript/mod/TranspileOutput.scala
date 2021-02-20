@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TranspileOutput extends js.Object {
+trait TranspileOutput extends StObject {
   
   var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.native
   
@@ -22,36 +23,24 @@ object TranspileOutput {
   }
   
   @scala.inline
-  implicit class TranspileOutputOps[Self <: TranspileOutput] (val x: Self) extends AnyVal {
+  implicit class TranspileOutputMutableBuilder[Self <: TranspileOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
     @scala.inline
-    def setOutputText(value: java.lang.String): Self = this.set("outputText", value.asInstanceOf[js.Any])
+    def setOutputText(value: java.lang.String): Self = StObject.set(x, "outputText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = this.set("diagnostics", js.Array(value :_*))
+    def setSourceMapText(value: java.lang.String): Self = StObject.set(x, "sourceMapText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
-    
-    @scala.inline
-    def setSourceMapText(value: java.lang.String): Self = this.set("sourceMapText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMapText: Self = this.set("sourceMapText", js.undefined)
+    def setSourceMapTextUndefined: Self = StObject.set(x, "sourceMapText", js.undefined)
   }
 }

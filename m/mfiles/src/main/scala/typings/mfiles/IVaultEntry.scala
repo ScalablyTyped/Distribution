@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultEntry extends js.Object {
+trait IVaultEntry extends StObject {
   
   val Events: IVaultEntryEvents = js.native
   
@@ -32,33 +33,21 @@ object IVaultEntry {
   }
   
   @scala.inline
-  implicit class IVaultEntryOps[Self <: IVaultEntry] (val x: Self) extends AnyVal {
+  implicit class IVaultEntryMutableBuilder[Self <: IVaultEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: IVaultEntryEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotifyVaultEntry(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "NotifyVaultEntry", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVault(value: IVault): Self = StObject.set(x, "Vault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: IVaultEntryEvents): Self = this.set("Events", value.asInstanceOf[js.Any])
+    def setVaultCore(value: IVaultCore): Self = StObject.set(x, "VaultCore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyVaultEntry(value: (String, js.Any, js.Any) => js.Any): Self = this.set("NotifyVaultEntry", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setVault(value: IVault): Self = this.set("Vault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVaultCore(value: IVaultCore): Self = this.set("VaultCore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVaultUI(value: IVaultUI): Self = this.set("VaultUI", value.asInstanceOf[js.Any])
+    def setVaultUI(value: IVaultUI): Self = StObject.set(x, "VaultUI", value.asInstanceOf[js.Any])
   }
 }

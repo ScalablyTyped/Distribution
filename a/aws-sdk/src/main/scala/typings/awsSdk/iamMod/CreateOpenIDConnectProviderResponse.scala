@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateOpenIDConnectProviderResponse extends js.Object {
+trait CreateOpenIDConnectProviderResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the new IAM OpenID Connect provider that is created. For more information, see OpenIDConnectProviderListEntry. 
@@ -21,24 +22,12 @@ object CreateOpenIDConnectProviderResponse {
   }
   
   @scala.inline
-  implicit class CreateOpenIDConnectProviderResponseOps[Self <: CreateOpenIDConnectProviderResponse] (val x: Self) extends AnyVal {
+  implicit class CreateOpenIDConnectProviderResponseMutableBuilder[Self <: CreateOpenIDConnectProviderResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenIDConnectProviderArn(value: arnType): Self = StObject.set(x, "OpenIDConnectProviderArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpenIDConnectProviderArn(value: arnType): Self = this.set("OpenIDConnectProviderArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenIDConnectProviderArn: Self = this.set("OpenIDConnectProviderArn", js.undefined)
+    def setOpenIDConnectProviderArnUndefined: Self = StObject.set(x, "OpenIDConnectProviderArn", js.undefined)
   }
 }

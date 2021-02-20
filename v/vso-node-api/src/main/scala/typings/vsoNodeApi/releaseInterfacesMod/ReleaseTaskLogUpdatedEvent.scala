@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,30 +29,18 @@ object ReleaseTaskLogUpdatedEvent {
   }
   
   @scala.inline
-  implicit class ReleaseTaskLogUpdatedEventOps[Self <: ReleaseTaskLogUpdatedEvent] (val x: Self) extends AnyVal {
+  implicit class ReleaseTaskLogUpdatedEventMutableBuilder[Self <: ReleaseTaskLogUpdatedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentId(value: Double): Self = this.set("environmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinesVarargs(value: String*): Self = this.set("lines", js.Array(value :_*))
-    
-    @scala.inline
-    def setLines(value: js.Array[String]): Self = this.set("lines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimelineRecordId(value: String): Self = this.set("timelineRecordId", value.asInstanceOf[js.Any])
+    def setTimelineRecordId(value: String): Self = StObject.set(x, "timelineRecordId", value.asInstanceOf[js.Any])
   }
 }

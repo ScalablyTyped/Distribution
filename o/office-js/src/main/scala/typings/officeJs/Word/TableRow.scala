@@ -28,6 +28,7 @@ import typings.officeJs.officeJsStrings.Select
 import typings.officeJs.officeJsStrings.Start
 import typings.officeJs.officeJsStrings.Top
 import typings.officeJs.officeJsStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * response, depending on the page size in the ListJobsRequest.
   */
 @js.native
-trait SchemaListJobsResponse extends js.Object {
+trait SchemaListJobsResponse extends StObject {
   
   /**
     * Zero or more messages describing the [regional endpoints]
@@ -37,42 +38,30 @@ object SchemaListJobsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListJobsResponseOps[Self <: SchemaListJobsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListJobsResponseMutableBuilder[Self <: SchemaListJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedLocation(value: js.Array[SchemaFailedLocation]): Self = StObject.set(x, "failedLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedLocationUndefined: Self = StObject.set(x, "failedLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedLocationVarargs(value: SchemaFailedLocation*): Self = StObject.set(x, "failedLocation", js.Array(value :_*))
     
     @scala.inline
-    def setFailedLocationVarargs(value: SchemaFailedLocation*): Self = this.set("failedLocation", js.Array(value :_*))
+    def setJobs(value: js.Array[SchemaJob]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedLocation(value: js.Array[SchemaFailedLocation]): Self = this.set("failedLocation", value.asInstanceOf[js.Any])
+    def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
     @scala.inline
-    def deleteFailedLocation: Self = this.set("failedLocation", js.undefined)
+    def setJobsVarargs(value: SchemaJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
     
     @scala.inline
-    def setJobsVarargs(value: SchemaJob*): Self = this.set("jobs", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobs(value: js.Array[SchemaJob]): Self = this.set("jobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobs: Self = this.set("jobs", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lakeformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeResourceResponse extends js.Object {
+trait DescribeResourceResponse extends StObject {
   
   /**
     * A structure containing information about an AWS Lake Formation resource.
@@ -21,24 +22,12 @@ object DescribeResourceResponse {
   }
   
   @scala.inline
-  implicit class DescribeResourceResponseOps[Self <: DescribeResourceResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeResourceResponseMutableBuilder[Self <: DescribeResourceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceInfo(value: ResourceInfo): Self = StObject.set(x, "ResourceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceInfo(value: ResourceInfo): Self = this.set("ResourceInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceInfo: Self = this.set("ResourceInfo", js.undefined)
+    def setResourceInfoUndefined: Self = StObject.set(x, "ResourceInfo", js.undefined)
   }
 }

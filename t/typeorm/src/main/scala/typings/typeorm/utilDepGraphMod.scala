@@ -1,15 +1,15 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/util/DepGraph", JSImport.Namespace)
-@js.native
-object utilDepGraphMod extends js.Object {
+object utilDepGraphMod {
   
+  @JSImport("typeorm/util/DepGraph", "DepGraph")
   @js.native
-  class DepGraph () extends js.Object {
+  class DepGraph () extends StObject {
     
     /**
       * Add a dependency between two nodes. If either of the nodes does not exist,

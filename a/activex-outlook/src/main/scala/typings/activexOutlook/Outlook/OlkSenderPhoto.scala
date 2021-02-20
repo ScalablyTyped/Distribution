@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlkSenderPhoto extends js.Object {
+trait OlkSenderPhoto extends StObject {
   
   var Enabled: Boolean = js.native
   
@@ -38,36 +39,24 @@ object OlkSenderPhoto {
   }
   
   @scala.inline
-  implicit class OlkSenderPhotoOps[Self <: OlkSenderPhoto] (val x: Self) extends AnyVal {
+  implicit class OlkSenderPhotoMutableBuilder[Self <: OlkSenderPhoto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkSenderPhoto_typekey(value: OlkSenderPhoto): Self = StObject.set(x, "Outlook.OlkSenderPhoto_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseIcon(value: StdPicture): Self = this.set("MouseIcon", value.asInstanceOf[js.Any])
+    def setPreferredHeight(value: Double): Self = StObject.set(x, "PreferredHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutlookDotOlkSenderPhoto_typekey(value: OlkSenderPhoto): Self = this.set("Outlook.OlkSenderPhoto_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferredHeight(value: Double): Self = this.set("PreferredHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferredWidth(value: Double): Self = this.set("PreferredWidth", value.asInstanceOf[js.Any])
+    def setPreferredWidth(value: Double): Self = StObject.set(x, "PreferredWidth", value.asInstanceOf[js.Any])
   }
 }

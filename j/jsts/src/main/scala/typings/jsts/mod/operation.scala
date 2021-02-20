@@ -3,14 +3,14 @@ package typings.jsts.mod
 import typings.jsts.jsts.algorithm.BoundaryNodeRule
 import typings.jsts.jsts.geom.Geometry
 import typings.jsts.jsts.geom.IntersectionMatrix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsts", "operation")
-@js.native
-object operation extends js.Object {
+object operation {
   
+  @JSImport("jsts", "operation.GeometryGraphOperation")
   @js.native
   class GeometryGraphOperation protected ()
     extends typings.jsts.jsts.operation.GeometryGraphOperation {
@@ -19,9 +19,9 @@ object operation extends js.Object {
     def this(g0: Geometry, g1: Geometry, boundaryNodeRule: BoundaryNodeRule) = this()
   }
   
-  @js.native
-  object buffer extends js.Object {
+  object buffer {
     
+    @JSImport("jsts", "operation.buffer.BufferOp")
     @js.native
     class BufferOp protected ()
       extends typings.jsts.jsts.operation.buffer.BufferOp {
@@ -38,8 +38,11 @@ object operation extends js.Object {
       def this(g: Geometry, bufParams: typings.jsts.jsts.operation.buffer.BufferParameters) = this()
     }
     /* static members */
-    @js.native
-    object BufferOp extends js.Object {
+    object BufferOp {
+      
+      @JSImport("jsts", "operation.buffer.BufferOp")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * A number of digits of precision which leaves some computational "headroom"
@@ -50,7 +53,11 @@ object operation extends js.Object {
         *
         * @type {int}
         */
-      var MAX_PRECISION_DIGITS: Double = js.native
+      @JSImport("jsts", "operation.buffer.BufferOp.MAX_PRECISION_DIGITS")
+      @js.native
+      def MAX_PRECISION_DIGITS: Double = js.native
+      @scala.inline
+      def MAX_PRECISION_DIGITS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_PRECISION_DIGITS")(x.asInstanceOf[js.Any])
       
       /**
         * Computes the buffer of a geometry for a given buffer distance.
@@ -61,6 +68,8 @@ object operation extends js.Object {
         *          distance the buffer distance.
         * @return {Geometry} the buffer of the input geometry.
         */
+      @JSImport("jsts", "operation.buffer.BufferOp.bufferOp")
+      @js.native
       def bufferOp(g: Geometry, distance: Double): Geometry = js.native
       
       /**
@@ -76,6 +85,8 @@ object operation extends js.Object {
         * @return {Geometry} the buffer of the input geometry.
         *
         */
+      @JSImport("jsts", "operation.buffer.BufferOp.bufferOp2")
+      @js.native
       def bufferOp2(g: Geometry, distance: Double, params: typings.jsts.jsts.operation.buffer.BufferParameters): Geometry = js.native
       
       /**
@@ -92,6 +103,8 @@ object operation extends js.Object {
         * @return {Geometry} the buffer of the input geometry.
         *
         */
+      @JSImport("jsts", "operation.buffer.BufferOp.bufferOp3")
+      @js.native
       def bufferOp3(g: Geometry, distance: Double, quadrantSegments: Double): Geometry = js.native
       
       /**
@@ -110,6 +123,8 @@ object operation extends js.Object {
         * @return {Geometry} the buffer of the input geometry.
         *
         */
+      @JSImport("jsts", "operation.buffer.BufferOp.bufferOp4")
+      @js.native
       def bufferOp4(g: Geometry, distance: Double, quadrantSegments: Double, endCapStyle: Double): Geometry = js.native
       
       /**
@@ -128,9 +143,12 @@ object operation extends js.Object {
         *
         * @return {double} a scale factor for the buffer computation.
         */
+      @JSImport("jsts", "operation.buffer.BufferOp.precisionScaleFactor")
+      @js.native
       def precisionScaleFactor(g: Geometry, distance: Double, maxPrecisionDigits: Double): Double = js.native
     }
     
+    @JSImport("jsts", "operation.buffer.BufferParameters")
     @js.native
     /**
       * Contains the parameters which describe how a buffer should be constructed.
@@ -195,36 +213,55 @@ object operation extends js.Object {
       def this(quadrantSegments: Double, endCapStyle: Double, joinStyle: Double, mitreLimit: Double) = this()
     }
     /* static members */
-    @js.native
-    object BufferParameters extends js.Object {
+    object BufferParameters {
+      
+      @JSImport("jsts", "operation.buffer.BufferParameters")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Specifies a flat line buffer end cap style.
         *
         * @type {int}
         */
-      var CAP_FLAT: Double = js.native
+      @JSImport("jsts", "operation.buffer.BufferParameters.CAP_FLAT")
+      @js.native
+      def CAP_FLAT: Double = js.native
+      @scala.inline
+      def CAP_FLAT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAP_FLAT")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a round line buffer end cap style.
         *
         * @type {int}
         */
-      var CAP_ROUND: Double = js.native
+      @JSImport("jsts", "operation.buffer.BufferParameters.CAP_ROUND")
+      @js.native
+      def CAP_ROUND: Double = js.native
+      @scala.inline
+      def CAP_ROUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAP_ROUND")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a square line buffer end cap style.
         *
         * @type {int}
         */
-      var CAP_SQUARE: Double = js.native
+      @JSImport("jsts", "operation.buffer.BufferParameters.CAP_SQUARE")
+      @js.native
+      def CAP_SQUARE: Double = js.native
+      @scala.inline
+      def CAP_SQUARE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAP_SQUARE")(x.asInstanceOf[js.Any])
       
       /**
         * The default mitre limit Allows fairly pointy mitres.
         *
         * @type {double}
         */
-      var DEFAULT_MITRE_LIMIT: Double = js.native
+      @JSImport("jsts", "operation.buffer.BufferParameters.DEFAULT_MITRE_LIMIT")
+      @js.native
+      def DEFAULT_MITRE_LIMIT: Double = js.native
+      @scala.inline
+      def DEFAULT_MITRE_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MITRE_LIMIT")(x.asInstanceOf[js.Any])
       
       /**
         * The default number of facets into which to divide a fillet of 90 degrees. A
@@ -233,32 +270,48 @@ object operation extends js.Object {
         *
         * @type {int}
         */
-      var DEFAULT_QUADRANT_SEGMENTS: Double = js.native
+      @JSImport("jsts", "operation.buffer.BufferParameters.DEFAULT_QUADRANT_SEGMENTS")
+      @js.native
+      def DEFAULT_QUADRANT_SEGMENTS: Double = js.native
+      @scala.inline
+      def DEFAULT_QUADRANT_SEGMENTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_QUADRANT_SEGMENTS")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a bevel join style.
         *
         * @type {int}
         */
-      var JOIN_BEVEL: Double = js.native
+      @JSImport("jsts", "operation.buffer.BufferParameters.JOIN_BEVEL")
+      @js.native
+      def JOIN_BEVEL: Double = js.native
+      @scala.inline
+      def JOIN_BEVEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JOIN_BEVEL")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a mitre join style.
         */
-      var JOIN_MITRE: Double = js.native
+      @JSImport("jsts", "operation.buffer.BufferParameters.JOIN_MITRE")
+      @js.native
+      def JOIN_MITRE: Double = js.native
+      @scala.inline
+      def JOIN_MITRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JOIN_MITRE")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a round join style.
         *
         * @type {int}
         */
-      var JOIN_ROUND: Double = js.native
+      @JSImport("jsts", "operation.buffer.BufferParameters.JOIN_ROUND")
+      @js.native
+      def JOIN_ROUND: Double = js.native
+      @scala.inline
+      def JOIN_ROUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JOIN_ROUND")(x.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  object relate extends js.Object {
+  object relate {
     
+    @JSImport("jsts", "operation.relate.RelateOp")
     @js.native
     class RelateOp protected ()
       extends typings.jsts.jsts.operation.relate.RelateOp {
@@ -266,24 +319,41 @@ object operation extends js.Object {
       def this(g1: Geometry, g2: Geometry, boundaryNodeRule: BoundaryNodeRule) = this()
     }
     /* static members */
-    @js.native
-    object RelateOp extends js.Object {
+    object RelateOp {
       
+      @JSImport("jsts", "operation.relate.RelateOp.contains")
+      @js.native
       def contains(g1: Geometry, g2: Geometry): Boolean = js.native
       
+      @JSImport("jsts", "operation.relate.RelateOp.covers")
+      @js.native
       def covers(g1: Geometry, g2: Geometry): Boolean = js.native
       
+      @JSImport("jsts", "operation.relate.RelateOp.crosses")
+      @js.native
       def crosses(g1: Geometry, g2: Geometry): Boolean = js.native
       
+      @JSImport("jsts", "operation.relate.RelateOp.equalsTopo")
+      @js.native
       def equalsTopo(g1: Geometry, g2: Geometry): Boolean = js.native
       
+      @JSImport("jsts", "operation.relate.RelateOp.intersects")
+      @js.native
       def intersects(g1: Geometry, g2: Geometry): Boolean = js.native
       
+      @JSImport("jsts", "operation.relate.RelateOp.overlaps")
+      @js.native
       def overlaps(g1: Geometry, g2: Geometry): Boolean = js.native
       
+      @JSImport("jsts", "operation.relate.RelateOp.relate")
+      @js.native
       def relate(g1: Geometry, g2: Geometry): IntersectionMatrix = js.native
+      @JSImport("jsts", "operation.relate.RelateOp.relate")
+      @js.native
       def relate(g1: Geometry, g2: Geometry, boundaryNodeRule: BoundaryNodeRule): IntersectionMatrix = js.native
       
+      @JSImport("jsts", "operation.relate.RelateOp.touches")
+      @js.native
       def touches(g1: Geometry, g2: Geometry): Boolean = js.native
     }
   }

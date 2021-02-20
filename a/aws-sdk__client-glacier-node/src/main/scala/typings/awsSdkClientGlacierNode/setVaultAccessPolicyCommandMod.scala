@@ -7,14 +7,14 @@ import typings.awsSdkClientGlacierNode.typesSetVaultAccessPolicyInputMod.SetVaul
 import typings.awsSdkClientGlacierNode.typesSetVaultAccessPolicyOutputMod.SetVaultAccessPolicyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/commands/SetVaultAccessPolicyCommand", JSImport.Namespace)
-@js.native
-object setVaultAccessPolicyCommandMod extends js.Object {
+object setVaultAccessPolicyCommandMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/commands/SetVaultAccessPolicyCommand", "SetVaultAccessPolicyCommand")
   @js.native
   class SetVaultAccessPolicyCommand protected () extends Command[
           InputTypesUnion, 

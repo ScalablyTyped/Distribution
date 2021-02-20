@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMaintenanceWindowTasksResult extends js.Object {
+trait DescribeMaintenanceWindowTasksResult extends StObject {
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
@@ -26,33 +27,21 @@ object DescribeMaintenanceWindowTasksResult {
   }
   
   @scala.inline
-  implicit class DescribeMaintenanceWindowTasksResultOps[Self <: DescribeMaintenanceWindowTasksResult] (val x: Self) extends AnyVal {
+  implicit class DescribeMaintenanceWindowTasksResultMutableBuilder[Self <: DescribeMaintenanceWindowTasksResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTasks(value: MaintenanceWindowTaskList): Self = StObject.set(x, "Tasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTasksUndefined: Self = StObject.set(x, "Tasks", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTasksVarargs(value: MaintenanceWindowTask*): Self = this.set("Tasks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTasks(value: MaintenanceWindowTaskList): Self = this.set("Tasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTasks: Self = this.set("Tasks", js.undefined)
+    def setTasksVarargs(value: MaintenanceWindowTask*): Self = StObject.set(x, "Tasks", js.Array(value :_*))
   }
 }

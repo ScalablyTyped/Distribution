@@ -1,11 +1,12 @@
 package typings.heremaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Isolines extends js.Object {
+trait Isolines extends StObject {
   
   var MetaInfo: Timestamp = js.native
   
@@ -22,33 +23,21 @@ object Isolines {
   }
   
   @scala.inline
-  implicit class IsolinesOps[Self <: Isolines] (val x: Self) extends AnyVal {
+  implicit class IsolinesMutableBuilder[Self <: Isolines] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsolines(value: js.Array[_]): Self = StObject.set(x, "isolines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsolinesVarargs(value: js.Any*): Self = StObject.set(x, "isolines", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetaInfo(value: Timestamp): Self = StObject.set(x, "MetaInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaInfo(value: Timestamp): Self = this.set("MetaInfo", value.asInstanceOf[js.Any])
+    def setView(value: js.Array[Result]): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewVarargs(value: Result*): Self = this.set("View", js.Array(value :_*))
-    
-    @scala.inline
-    def setView(value: js.Array[Result]): Self = this.set("View", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsolinesVarargs(value: js.Any*): Self = this.set("isolines", js.Array(value :_*))
-    
-    @scala.inline
-    def setIsolines(value: js.Array[_]): Self = this.set("isolines", value.asInstanceOf[js.Any])
+    def setViewVarargs(value: Result*): Self = StObject.set(x, "View", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.coreInterfacesMod
 
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,36 +57,24 @@ object WebApiConnectedService {
   }
   
   @scala.inline
-  implicit class WebApiConnectedServiceOps[Self <: WebApiConnectedService] (val x: Self) extends AnyVal {
+  implicit class WebApiConnectedServiceMutableBuilder[Self <: WebApiConnectedService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticatedBy(value: IdentityRef): Self = StObject.set(x, "authenticatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticatedBy(value: IdentityRef): Self = this.set("authenticatedBy", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProject(value: TeamProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceUri(value: String): Self = this.set("serviceUri", value.asInstanceOf[js.Any])
+    def setServiceUri(value: String): Self = StObject.set(x, "serviceUri", value.asInstanceOf[js.Any])
   }
 }

@@ -6,17 +6,14 @@ import typings.samchon.externalSystemRoleMod.ExternalSystemRole
 import typings.samchon.iclientdriverMod.IClientDriver
 import typings.samchon.icommunicatorMod.ICommunicator
 import typings.samchon.iprotocolMod.IProtocol
-import typings.tstl.dequeMod.Deque
-import typings.tstl.dequeMod.Deque.Iterator
-import typings.tstl.iforwarditeratorMod.IForwardIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/external/ExternalSystem", JSImport.Namespace)
-@js.native
-object externalSystemMod extends js.Object {
+object externalSystemMod {
   
+  @JSImport("samchon/templates/external/ExternalSystem", "ExternalSystem")
   @js.native
   abstract class ExternalSystem protected ()
     extends EntityDequeCollection[ExternalSystemRole]
@@ -39,21 +36,6 @@ object externalSystemMod extends js.Object {
       * @hidden
       */
     var _Handle_close: js.Any = js.native
-    
-    /**
-      * Range Assigner.
-      *
-      * @param first Input iteartor of the first position.
-      * @param last Input iterator of the last position.
-      */
-    /* InferMemberOverrides */
-    override def assign[InputIterator /* <: IForwardIterator[ExternalSystemRole, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
-    
-    /**
-      * @inheritDoc
-      */
-    /* InferMemberOverrides */
-    override def clear(): Unit = js.native
     
     /**
       * Close connection.
@@ -103,39 +85,6 @@ object externalSystemMod extends js.Object {
     /* protected */ def destructor(): Unit = js.native
     
     /**
-      * Erase elements in range.
-      *
-      * @param first Range of the first position to erase.
-      * @param last Rangee of the last position to erase.
-      * @return Iterator following the last removed element, strained by the erasing.
-      */
-    /* InferMemberOverrides */
-    override def erase(first: Iterator[ExternalSystemRole], last: Iterator[ExternalSystemRole]): Iterator[ExternalSystemRole] = js.native
-    /**
-      * Erase an element.
-      *
-      * @param pos Position to erase.
-      * @return Iterator following the *pos*, strained by the erasing.
-      */
-    /* InferMemberOverrides */
-    override def erase(pos: Iterator[ExternalSystemRole]): Iterator[ExternalSystemRole] = js.native
-    
-    /**
-      * Get the first element.
-      *
-      * @return The first element.
-      */
-    /* InferMemberOverrides */
-    override def front(): ExternalSystemRole = js.native
-    /**
-      * Change the first element.
-      *
-      * @param val The value to change.
-      */
-    /* InferMemberOverrides */
-    override def front(`val`: ExternalSystemRole): Unit = js.native
-    
-    /**
       * Get {@link name}.
       */
     def getName(): String = js.native
@@ -156,24 +105,8 @@ object externalSystemMod extends js.Object {
     var name: String = js.native
     
     /**
-      * Swap elements.
-      *
-      * @param obj Target container to swap.
-      */
-    /* InferMemberOverrides */
-    override def swap(obj: Deque[ExternalSystemRole]): Unit = js.native
-    
-    /**
       * @hidden
       */
     var system_array_ : js.Any = js.native
-    
-    /**
-      * Native function for `JSON.stringify()`.
-      *
-      * @return An array containing children elements.
-      */
-    /* InferMemberOverrides */
-    override def toJSON(): js.Array[ExternalSystemRole] = js.native
   }
 }

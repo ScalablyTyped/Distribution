@@ -1,11 +1,12 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDistributionPolicy extends js.Object {
+trait SchemaDistributionPolicy extends StObject {
   
   /**
     * Zones where the regional managed instance group will create and manage
@@ -22,27 +23,15 @@ object SchemaDistributionPolicy {
   }
   
   @scala.inline
-  implicit class SchemaDistributionPolicyOps[Self <: SchemaDistributionPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaDistributionPolicyMutableBuilder[Self <: SchemaDistributionPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setZones(value: js.Array[SchemaDistributionPolicyZoneConfiguration]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setZonesVarargs(value: SchemaDistributionPolicyZoneConfiguration*): Self = this.set("zones", js.Array(value :_*))
-    
-    @scala.inline
-    def setZones(value: js.Array[SchemaDistributionPolicyZoneConfiguration]): Self = this.set("zones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZones: Self = this.set("zones", js.undefined)
+    def setZonesVarargs(value: SchemaDistributionPolicyZoneConfiguration*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

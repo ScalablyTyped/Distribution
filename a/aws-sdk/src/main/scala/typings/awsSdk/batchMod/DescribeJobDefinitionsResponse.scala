@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeJobDefinitionsResponse extends js.Object {
+trait DescribeJobDefinitionsResponse extends StObject {
   
   /**
     * The list of job definitions.
@@ -26,33 +27,21 @@ object DescribeJobDefinitionsResponse {
   }
   
   @scala.inline
-  implicit class DescribeJobDefinitionsResponseOps[Self <: DescribeJobDefinitionsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeJobDefinitionsResponseMutableBuilder[Self <: DescribeJobDefinitionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobDefinitions(value: JobDefinitionList): Self = StObject.set(x, "jobDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobDefinitionsUndefined: Self = StObject.set(x, "jobDefinitions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobDefinitionsVarargs(value: JobDefinition*): Self = StObject.set(x, "jobDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setJobDefinitionsVarargs(value: JobDefinition*): Self = this.set("jobDefinitions", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobDefinitions(value: JobDefinitionList): Self = this.set("jobDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobDefinitions: Self = this.set("jobDefinitions", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

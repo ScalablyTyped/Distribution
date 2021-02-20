@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchedContinuousIntegration extends js.Object {
+trait BatchedContinuousIntegration extends StObject {
   
   var all: scala.Double = js.native
   
@@ -41,42 +42,30 @@ object BatchedContinuousIntegration {
   }
   
   @scala.inline
-  implicit class BatchedContinuousIntegrationOps[Self <: BatchedContinuousIntegration] (val x: Self) extends AnyVal {
+  implicit class BatchedContinuousIntegrationMutableBuilder[Self <: BatchedContinuousIntegration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchedContinuousIntegration(value: scala.Double): Self = StObject.set(x, "batchedContinuousIntegration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchedGatedCheckIn(value: scala.Double): Self = StObject.set(x, "batchedGatedCheckIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: scala.Double): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setContinuousIntegration(value: scala.Double): Self = StObject.set(x, "continuousIntegration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchedContinuousIntegration(value: scala.Double): Self = this.set("batchedContinuousIntegration", value.asInstanceOf[js.Any])
+    def setGatedCheckIn(value: scala.Double): Self = StObject.set(x, "gatedCheckIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchedGatedCheckIn(value: scala.Double): Self = this.set("batchedGatedCheckIn", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuousIntegration(value: scala.Double): Self = this.set("continuousIntegration", value.asInstanceOf[js.Any])
+    def setPullRequest(value: scala.Double): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatedCheckIn(value: scala.Double): Self = this.set("gatedCheckIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPullRequest(value: scala.Double): Self = this.set("pullRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchedule(value: scala.Double): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
   }
 }

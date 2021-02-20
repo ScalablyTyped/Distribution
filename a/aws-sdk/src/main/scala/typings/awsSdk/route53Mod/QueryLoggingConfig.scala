@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryLoggingConfig extends js.Object {
+trait QueryLoggingConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the CloudWatch Logs log group that Amazon Route 53 is publishing logs to.
@@ -35,27 +36,15 @@ object QueryLoggingConfig {
   }
   
   @scala.inline
-  implicit class QueryLoggingConfigOps[Self <: QueryLoggingConfig] (val x: Self) extends AnyVal {
+  implicit class QueryLoggingConfigMutableBuilder[Self <: QueryLoggingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLogsLogGroupArn(value: CloudWatchLogsLogGroupArn): Self = StObject.set(x, "CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloudWatchLogsLogGroupArn(value: CloudWatchLogsLogGroupArn): Self = this.set("CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: QueryLoggingConfigId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setId(value: QueryLoggingConfigId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

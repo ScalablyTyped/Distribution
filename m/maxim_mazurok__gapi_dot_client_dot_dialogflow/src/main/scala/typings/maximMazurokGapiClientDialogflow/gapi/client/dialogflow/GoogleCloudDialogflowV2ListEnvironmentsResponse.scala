@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2ListEnvironmentsResponse extends js.Object {
+trait GoogleCloudDialogflowV2ListEnvironmentsResponse extends StObject {
   
   /** The list of agent environments. There will be a maximum number of items returned based on the page_size field in the request. */
   var environments: js.UndefOr[js.Array[GoogleCloudDialogflowV2Environment]] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudDialogflowV2ListEnvironmentsResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2ListEnvironmentsResponseOps[Self <: GoogleCloudDialogflowV2ListEnvironmentsResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2ListEnvironmentsResponseMutableBuilder[Self <: GoogleCloudDialogflowV2ListEnvironmentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironments(value: js.Array[GoogleCloudDialogflowV2Environment]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironmentsVarargs(value: GoogleCloudDialogflowV2Environment*): Self = StObject.set(x, "environments", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentsVarargs(value: GoogleCloudDialogflowV2Environment*): Self = this.set("environments", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironments(value: js.Array[GoogleCloudDialogflowV2Environment]): Self = this.set("environments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironments: Self = this.set("environments", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

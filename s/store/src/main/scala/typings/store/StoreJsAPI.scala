@@ -1,11 +1,12 @@
 package typings.store
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoreJsAPI extends js.Object {
+trait StoreJsAPI extends StObject {
   
   def addPlugin(plugin: js.Function): Unit = js.native
   

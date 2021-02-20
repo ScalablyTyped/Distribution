@@ -3,6 +3,7 @@ package typings.activexInfopath.InfoPath
 import typings.activexInfopath.activexInfopathNumbers.`0`
 import typings.activexInfopath.activexInfopathNumbers.`1`
 import typings.activexInfopath.activexInfopathNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexInfopath.activexInfopathNumbers.`2`
   - typings.activexInfopath.activexInfopathNumbers.`1`
 */
-trait XdReadOnlyViewMode extends js.Object
+trait XdReadOnlyViewMode extends StObject
 object XdReadOnlyViewMode {
   
   @scala.inline

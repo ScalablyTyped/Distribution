@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,33 +64,21 @@ object XRecentFunctions {
   }
   
   @scala.inline
-  implicit class XRecentFunctionsOps[Self <: XRecentFunctions] (val x: Self) extends AnyVal {
+  implicit class XRecentFunctionsMutableBuilder[Self <: XRecentFunctions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMaxRecentFunctions(value: () => Double): Self = StObject.set(x, "getMaxRecentFunctions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRecentFunctionIds(value: () => SafeArray[Double]): Self = StObject.set(x, "getRecentFunctionIds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRecentFunctions(value: Double): Self = StObject.set(x, "MaxRecentFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecentFunctions(value: Double): Self = this.set("MaxRecentFunctions", value.asInstanceOf[js.Any])
+    def setRecentFunctionIds(value: SafeArray[Double]): Self = StObject.set(x, "RecentFunctionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecentFunctionIds(value: SafeArray[Double]): Self = this.set("RecentFunctionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetMaxRecentFunctions(value: () => Double): Self = this.set("getMaxRecentFunctions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRecentFunctionIds(value: () => SafeArray[Double]): Self = this.set("getRecentFunctionIds", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetRecentFunctionIds(value: SeqEquiv[Double] => Unit): Self = this.set("setRecentFunctionIds", js.Any.fromFunction1(value))
+    def setSetRecentFunctionIds(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setRecentFunctionIds", js.Any.fromFunction1(value))
   }
 }

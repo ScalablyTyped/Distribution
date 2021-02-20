@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY
   - typings.actionsOnGoogle.actionsOnGoogleStrings.PICKUP
 */
-trait GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoFulfillmentType extends js.Object
+trait GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoFulfillmentType extends StObject
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoFulfillmentType {
   
   @scala.inline

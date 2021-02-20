@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdWordsReportColumnHeader extends js.Object {
+trait AdWordsReportColumnHeader extends StObject {
   
   def getBulkUploadColumnName(): String = js.native
   
@@ -20,24 +21,12 @@ object AdWordsReportColumnHeader {
   }
   
   @scala.inline
-  implicit class AdWordsReportColumnHeaderOps[Self <: AdWordsReportColumnHeader] (val x: Self) extends AnyVal {
+  implicit class AdWordsReportColumnHeaderMutableBuilder[Self <: AdWordsReportColumnHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBulkUploadColumnName(value: () => String): Self = StObject.set(x, "getBulkUploadColumnName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetBulkUploadColumnName(value: () => String): Self = this.set("getBulkUploadColumnName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetReportColumnName(value: () => String): Self = this.set("getReportColumnName", js.Any.fromFunction0(value))
+    def setGetReportColumnName(value: () => String): Self = StObject.set(x, "getReportColumnName", js.Any.fromFunction0(value))
   }
 }

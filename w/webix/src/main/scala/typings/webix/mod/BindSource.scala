@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindSource extends js.Object {
+trait BindSource extends StObject {
   
   def addBind(source: js.Any, rule: String, format: String): Unit = js.native
   
@@ -20,6 +20,3 @@ trait BindSource extends js.Object {
   def setBindData(data: js.Any, key: String): Unit = js.native
   def setBindData(data: js.Any, key: Double): Unit = js.native
 }
-@JSImport("webix", "BindSource")
-@js.native
-object BindSource extends TopLevel[BindSource]

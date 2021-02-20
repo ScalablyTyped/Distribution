@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurityscanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Authentication extends js.Object {
+trait Authentication extends StObject {
   
   /** Authentication using a custom account. */
   var customAccount: js.UndefOr[CustomAccount] = js.native
@@ -25,36 +26,24 @@ object Authentication {
   }
   
   @scala.inline
-  implicit class AuthenticationOps[Self <: Authentication] (val x: Self) extends AnyVal {
+  implicit class AuthenticationMutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomAccount(value: CustomAccount): Self = StObject.set(x, "customAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomAccountUndefined: Self = StObject.set(x, "customAccount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoogleAccount(value: GoogleAccount): Self = StObject.set(x, "googleAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAccount(value: CustomAccount): Self = this.set("customAccount", value.asInstanceOf[js.Any])
+    def setGoogleAccountUndefined: Self = StObject.set(x, "googleAccount", js.undefined)
     
     @scala.inline
-    def deleteCustomAccount: Self = this.set("customAccount", js.undefined)
+    def setIapCredential(value: IapCredential): Self = StObject.set(x, "iapCredential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleAccount(value: GoogleAccount): Self = this.set("googleAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoogleAccount: Self = this.set("googleAccount", js.undefined)
-    
-    @scala.inline
-    def setIapCredential(value: IapCredential): Self = this.set("iapCredential", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIapCredential: Self = this.set("iapCredential", js.undefined)
+    def setIapCredentialUndefined: Self = StObject.set(x, "iapCredential", js.undefined)
   }
 }

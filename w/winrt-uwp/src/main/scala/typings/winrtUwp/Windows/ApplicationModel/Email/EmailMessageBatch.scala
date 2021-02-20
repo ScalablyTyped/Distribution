@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of email messages. */
 @js.native
-trait EmailMessageBatch extends js.Object {
+trait EmailMessageBatch extends StObject {
   
   /** Gets a batch of email messages. */
   var messages: IVectorView[EmailMessage] = js.native
@@ -24,24 +25,12 @@ object EmailMessageBatch {
   }
   
   @scala.inline
-  implicit class EmailMessageBatchOps[Self <: EmailMessageBatch] (val x: Self) extends AnyVal {
+  implicit class EmailMessageBatchMutableBuilder[Self <: EmailMessageBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: IVectorView[EmailMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessages(value: IVectorView[EmailMessage]): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: EmailBatchStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: EmailBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

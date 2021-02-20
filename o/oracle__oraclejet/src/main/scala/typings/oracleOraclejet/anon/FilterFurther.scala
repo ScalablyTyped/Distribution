@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterFurther extends js.Object {
+trait FilterFurther extends StObject {
   
   var filterFurther: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object FilterFurther {
   }
   
   @scala.inline
-  implicit class FilterFurtherOps[Self <: FilterFurther] (val x: Self) extends AnyVal {
+  implicit class FilterFurtherMutableBuilder[Self <: FilterFurther] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterFurther(value: String): Self = StObject.set(x, "filterFurther", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterFurtherUndefined: Self = StObject.set(x, "filterFurther", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoMatchesFound(value: String): Self = StObject.set(x, "noMatchesFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterFurther(value: String): Self = this.set("filterFurther", value.asInstanceOf[js.Any])
+    def setNoMatchesFoundUndefined: Self = StObject.set(x, "noMatchesFound", js.undefined)
     
     @scala.inline
-    def deleteFilterFurther: Self = this.set("filterFurther", js.undefined)
+    def setRequired(value: Hint): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoMatchesFound(value: String): Self = this.set("noMatchesFound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoMatchesFound: Self = this.set("noMatchesFound", js.undefined)
-    
-    @scala.inline
-    def setRequired(value: Hint): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.yaml.typesMod
 
 import typings.yaml.typesMod.Schema.StringifyContext
 import typings.yaml.utilMod.Type.ALIAS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

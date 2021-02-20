@@ -1,13 +1,12 @@
 package typings.localforage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalForage
-  extends LocalForageDbMethodsCore
-     with LocalForageDbMethodsOptional {
+trait LocalForage extends LocalForageDbMethods {
   
   var INDEXEDDB: String = js.native
   

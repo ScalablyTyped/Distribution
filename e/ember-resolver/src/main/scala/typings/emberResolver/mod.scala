@@ -1,16 +1,16 @@
 package typings.emberResolver
 
+import typings.ember.mod.default.Resolver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember-resolver", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("ember-resolver", JSImport.Default)
   @js.native
-  class default ()
-    extends typings.emberObject.mod.default
+  class default () extends Resolver
   
-  type EmberResolver = typings.emberObject.mod.default
+  type EmberResolver = Resolver
 }

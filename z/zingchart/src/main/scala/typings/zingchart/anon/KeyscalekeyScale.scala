@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyscalekeyScale extends js.Object {
+trait KeyscalekeyScale extends StObject {
   
   /**
     * Sets the key-scale value "scale-k" | "scale-v" | ...
@@ -26,30 +27,18 @@ object KeyscalekeyScale {
   }
   
   @scala.inline
-  implicit class KeyscalekeyScaleOps[Self <: KeyscalekeyScale] (val x: Self) extends AnyVal {
+  implicit class KeyscalekeyScaleMutableBuilder[Self <: KeyscalekeyScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setKey-scalekeyScale`(value: String): Self = StObject.set(x, "key-scalekeyScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setKey-scalekeyScaleUndefined`: Self = StObject.set(x, "key-scalekeyScale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setVal-scalevalScale`(value: String): Self = StObject.set(x, "val-scalevalScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setKey-scalekeyScale`(value: String): Self = this.set("key-scalekeyScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteKey-scalekeyScale`: Self = this.set("key-scalekeyScale", js.undefined)
-    
-    @scala.inline
-    def `setVal-scalevalScale`(value: String): Self = this.set("val-scalevalScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteVal-scalevalScale`: Self = this.set("val-scalevalScale", js.undefined)
+    def `setVal-scalevalScaleUndefined`: Self = StObject.set(x, "val-scalevalScale", js.undefined)
   }
 }

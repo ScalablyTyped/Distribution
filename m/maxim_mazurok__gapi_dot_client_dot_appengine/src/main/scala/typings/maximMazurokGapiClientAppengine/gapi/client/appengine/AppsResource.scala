@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientAppengine.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientAppengine.anon.OauthtokenPrettyPrint
 import typings.maximMazurokGapiClientAppengine.anon.PrettyPrintQuotaUser
 import typings.maximMazurokGapiClientAppengine.anon.QuotaUserResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppsResource extends js.Object {
+trait AppsResource extends StObject {
   
   var authorizedCertificates: AuthorizedCertificatesResource = js.native
   

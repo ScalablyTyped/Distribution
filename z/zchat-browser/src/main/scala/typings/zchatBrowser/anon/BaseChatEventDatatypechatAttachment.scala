@@ -3,6 +3,7 @@ package typings.zchatBrowser.anon
 import typings.zchatBrowser.mod.Attachment
 import typings.zchatBrowser.mod.ChatEvent.ChatEventData
 import typings.zchatBrowser.zchatBrowserStrings.chatDotfile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,36 +41,24 @@ object BaseChatEventDatatypechatAttachment {
   }
   
   @scala.inline
-  implicit class BaseChatEventDatatypechatAttachmentOps[Self <: BaseChatEventDatatypechatAttachment] (val x: Self) extends AnyVal {
+  implicit class BaseChatEventDatatypechatAttachmentMutableBuilder[Self <: BaseChatEventDatatypechatAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: Attachment): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setTime_stamp(value: Double): Self = StObject.set(x, "time_stamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_name(value: String): Self = this.set("display_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNick(value: String): Self = this.set("nick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime_stamp(value: Double): Self = this.set("time_stamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: chatDotfile): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: chatDotfile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

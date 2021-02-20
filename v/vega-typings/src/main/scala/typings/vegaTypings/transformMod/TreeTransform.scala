@@ -5,6 +5,7 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.utilMod.Vector4
 import typings.vegaTypings.vegaTypingsStrings.tree
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,63 +39,51 @@ object TreeTransform {
   }
   
   @scala.inline
-  implicit class TreeTransformOps[Self <: TreeTransform] (val x: Self) extends AnyVal {
+  implicit class TreeTransformMutableBuilder[Self <: TreeTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: (Vector4[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: tree): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setAs(value: (Vector4[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setMethod(value: TreeMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setField(value: FieldRef): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setNodeSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setNodeSizeUndefined: Self = StObject.set(x, "nodeSize", js.undefined)
     
     @scala.inline
-    def setMethod(value: TreeMethod | SignalRef): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setSeparation(value: Boolean | SignalRef): Self = StObject.set(x, "separation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setSeparationUndefined: Self = StObject.set(x, "separation", js.undefined)
     
     @scala.inline
-    def setNodeSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("nodeSize", value.asInstanceOf[js.Any])
+    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeSize: Self = this.set("nodeSize", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setSeparation(value: Boolean | SignalRef): Self = this.set("separation", value.asInstanceOf[js.Any])
+    def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeparation: Self = this.set("separation", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setSort(value: Compare): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setType(value: tree): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

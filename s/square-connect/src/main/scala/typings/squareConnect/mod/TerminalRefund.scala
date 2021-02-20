@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "TerminalRefund")
 @js.native
-class TerminalRefund () extends js.Object {
+class TerminalRefund () extends StObject {
   
   /**
     * The amount of money, inclusive of `tax_money`, that the `TerminalRefund` should return.

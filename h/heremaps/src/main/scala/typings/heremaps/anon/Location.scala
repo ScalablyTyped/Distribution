@@ -1,11 +1,12 @@
 package typings.heremaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Location extends js.Object {
+trait Location extends StObject {
   
   var Location: DisplayPosition = js.native
   
@@ -32,33 +33,21 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: DisplayPosition): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchLevel(value: String): Self = StObject.set(x, "MatchLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchQuality(value: HouseNumber): Self = StObject.set(x, "MatchQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: DisplayPosition): Self = this.set("Location", value.asInstanceOf[js.Any])
+    def setMatchType(value: String): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchLevel(value: String): Self = this.set("MatchLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchQuality(value: HouseNumber): Self = this.set("MatchQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchType(value: String): Self = this.set("MatchType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelevance(value: Double): Self = this.set("Relevance", value.asInstanceOf[js.Any])
+    def setRelevance(value: Double): Self = StObject.set(x, "Relevance", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.parameter.mod
 import typings.parameter.parameterStrings.string
 import typings.parameter.parameterStrings.stringQuestionmark
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,57 +45,45 @@ object ParameterRuleString {
   }
   
   @scala.inline
-  implicit class ParameterRuleStringOps[Self <: ParameterRuleString] (val x: Self) extends AnyVal {
+  implicit class ParameterRuleStringMutableBuilder[Self <: ParameterRuleString] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: string | stringQuestionmark): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def setAllowEmpty(value: Boolean): Self = this.set("allowEmpty", value.asInstanceOf[js.Any])
+    def setFormat(value: RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowEmpty: Self = this.set("allowEmpty", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setEmpty(value: Boolean): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmpty: Self = this.set("empty", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setFormat(value: RegExp): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
-    
-    @scala.inline
-    def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrim: Self = this.set("trim", js.undefined)
+    def setType(value: string | stringQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

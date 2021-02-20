@@ -1,5 +1,6 @@
 package typings.docxTemplates.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.docxTemplates.docxTemplatesStrings.Dotjpeg
   - typings.docxTemplates.docxTemplatesStrings.Dotsvg
 */
-trait ImageExtension extends js.Object
+trait ImageExtension extends StObject

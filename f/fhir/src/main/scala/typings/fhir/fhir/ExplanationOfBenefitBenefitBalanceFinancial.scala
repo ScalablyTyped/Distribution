@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,69 +66,57 @@ object ExplanationOfBenefitBenefitBalanceFinancial {
   }
   
   @scala.inline
-  implicit class ExplanationOfBenefitBenefitBalanceFinancialOps[Self <: ExplanationOfBenefitBenefitBalanceFinancial] (val x: Self) extends AnyVal {
+  implicit class ExplanationOfBenefitBenefitBalanceFinancialMutableBuilder[Self <: ExplanationOfBenefitBenefitBalanceFinancial] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedMoney(value: Money): Self = StObject.set(x, "allowedMoney", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedMoneyUndefined: Self = StObject.set(x, "allowedMoney", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedString(value: String): Self = StObject.set(x, "allowedString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setAllowedStringUndefined: Self = StObject.set(x, "allowedString", js.undefined)
     
     @scala.inline
-    def set_allowedString(value: Element): Self = this.set("_allowedString", value.asInstanceOf[js.Any])
+    def setAllowedUnsignedInt(value: unsignedInt): Self = StObject.set(x, "allowedUnsignedInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_allowedString: Self = this.set("_allowedString", js.undefined)
+    def setAllowedUnsignedIntUndefined: Self = StObject.set(x, "allowedUnsignedInt", js.undefined)
     
     @scala.inline
-    def set_allowedUnsignedInt(value: Element): Self = this.set("_allowedUnsignedInt", value.asInstanceOf[js.Any])
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_allowedUnsignedInt: Self = this.set("_allowedUnsignedInt", js.undefined)
+    def setUsedMoney(value: Money): Self = StObject.set(x, "usedMoney", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_usedUnsignedInt(value: Element): Self = this.set("_usedUnsignedInt", value.asInstanceOf[js.Any])
+    def setUsedMoneyUndefined: Self = StObject.set(x, "usedMoney", js.undefined)
     
     @scala.inline
-    def delete_usedUnsignedInt: Self = this.set("_usedUnsignedInt", js.undefined)
+    def setUsedUnsignedInt(value: unsignedInt): Self = StObject.set(x, "usedUnsignedInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedMoney(value: Money): Self = this.set("allowedMoney", value.asInstanceOf[js.Any])
+    def setUsedUnsignedIntUndefined: Self = StObject.set(x, "usedUnsignedInt", js.undefined)
     
     @scala.inline
-    def deleteAllowedMoney: Self = this.set("allowedMoney", js.undefined)
+    def set_allowedString(value: Element): Self = StObject.set(x, "_allowedString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedString(value: String): Self = this.set("allowedString", value.asInstanceOf[js.Any])
+    def set_allowedStringUndefined: Self = StObject.set(x, "_allowedString", js.undefined)
     
     @scala.inline
-    def deleteAllowedString: Self = this.set("allowedString", js.undefined)
+    def set_allowedUnsignedInt(value: Element): Self = StObject.set(x, "_allowedUnsignedInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedUnsignedInt(value: unsignedInt): Self = this.set("allowedUnsignedInt", value.asInstanceOf[js.Any])
+    def set_allowedUnsignedIntUndefined: Self = StObject.set(x, "_allowedUnsignedInt", js.undefined)
     
     @scala.inline
-    def deleteAllowedUnsignedInt: Self = this.set("allowedUnsignedInt", js.undefined)
+    def set_usedUnsignedInt(value: Element): Self = StObject.set(x, "_usedUnsignedInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsedMoney(value: Money): Self = this.set("usedMoney", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsedMoney: Self = this.set("usedMoney", js.undefined)
-    
-    @scala.inline
-    def setUsedUnsignedInt(value: unsignedInt): Self = this.set("usedUnsignedInt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsedUnsignedInt: Self = this.set("usedUnsignedInt", js.undefined)
+    def set_usedUnsignedIntUndefined: Self = StObject.set(x, "_usedUnsignedInt", js.undefined)
   }
 }

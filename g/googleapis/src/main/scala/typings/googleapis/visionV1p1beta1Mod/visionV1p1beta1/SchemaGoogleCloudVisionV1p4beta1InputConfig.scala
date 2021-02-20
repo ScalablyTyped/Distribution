@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The desired input location and metadata.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p4beta1InputConfig extends js.Object {
+trait SchemaGoogleCloudVisionV1p4beta1InputConfig extends StObject {
   
   /**
     * File content, represented as a stream of bytes. Note: As with all `bytes`
@@ -39,36 +40,24 @@ object SchemaGoogleCloudVisionV1p4beta1InputConfig {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p4beta1InputConfigOps[Self <: SchemaGoogleCloudVisionV1p4beta1InputConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p4beta1InputConfigMutableBuilder[Self <: SchemaGoogleCloudVisionV1p4beta1InputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcsSource(value: SchemaGoogleCloudVisionV1p4beta1GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsSource(value: SchemaGoogleCloudVisionV1p4beta1GcsSource): Self = this.set("gcsSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsSource: Self = this.set("gcsSource", js.undefined)
-    
-    @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

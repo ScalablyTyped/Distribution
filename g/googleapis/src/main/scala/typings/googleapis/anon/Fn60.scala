@@ -5,12 +5,13 @@ import typings.googleapis.dnsV1Mod.dnsV1.Options
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapis.googleapisStrings.v1beta2
 import typings.googleapis.googleapisStrings.v2beta1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn60 extends js.Object {
+trait Fn60 extends StObject {
   
   def apply(options: Options): Dns = js.native
   def apply(options: typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Options): typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Dns = js.native

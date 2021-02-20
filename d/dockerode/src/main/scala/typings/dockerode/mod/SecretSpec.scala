@@ -1,5 +1,6 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object SecretSpec {
   }
   
   @scala.inline
-  implicit class SecretSpecOps[Self <: SecretSpec] (val x: Self) extends AnyVal {
+  implicit class SecretSpecMutableBuilder[Self <: SecretSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriver(value: Driver): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setDriverUndefined: Self = StObject.set(x, "Driver", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("Data", js.undefined)
+    def setTemplating(value: Driver): Self = StObject.set(x, "Templating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriver(value: Driver): Self = this.set("Driver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriver: Self = this.set("Driver", js.undefined)
-    
-    @scala.inline
-    def setTemplating(value: Driver): Self = this.set("Templating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplating: Self = this.set("Templating", js.undefined)
+    def setTemplatingUndefined: Self = StObject.set(x, "Templating", js.undefined)
   }
 }

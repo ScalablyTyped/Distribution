@@ -3,6 +3,7 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.bin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,63 +41,51 @@ object BinTransform {
   }
   
   @scala.inline
-  implicit class BinTransformOps[Self <: BinTransform] (val x: Self) extends AnyVal {
+  implicit class BinTransformMutableBuilder[Self <: BinTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Double | SignalRef): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtent(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def setField(value: FieldRef): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setExtent(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: bin): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: Double | SignalRef): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setInterval(value: Boolean | SignalRef): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setName(value: String | SignalRef): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setInterval(value: Boolean | SignalRef): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def setName(value: String | SignalRef): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSpan(value: Double | SignalRef): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
     
     @scala.inline
-    def setSignal(value: SignalName): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
-    
-    @scala.inline
-    def setSpan(value: Double | SignalRef): Self = this.set("span", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpan: Self = this.set("span", js.undefined)
+    def setType(value: bin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

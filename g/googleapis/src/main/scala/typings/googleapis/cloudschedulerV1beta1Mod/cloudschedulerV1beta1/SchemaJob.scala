@@ -1,5 +1,6 @@
 package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration for a job. The maximum allowed size for a job is 100KB.
   */
 @js.native
-trait SchemaJob extends js.Object {
+trait SchemaJob extends StObject {
   
   /**
     * App Engine HTTP target.
@@ -130,102 +131,90 @@ object SchemaJob {
   }
   
   @scala.inline
-  implicit class SchemaJobOps[Self <: SchemaJob] (val x: Self) extends AnyVal {
+  implicit class SchemaJobMutableBuilder[Self <: SchemaJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppEngineHttpTarget(value: SchemaAppEngineHttpTarget): Self = StObject.set(x, "appEngineHttpTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppEngineHttpTargetUndefined: Self = StObject.set(x, "appEngineHttpTarget", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttemptDeadline(value: String): Self = StObject.set(x, "attemptDeadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppEngineHttpTarget(value: SchemaAppEngineHttpTarget): Self = this.set("appEngineHttpTarget", value.asInstanceOf[js.Any])
+    def setAttemptDeadlineUndefined: Self = StObject.set(x, "attemptDeadline", js.undefined)
     
     @scala.inline
-    def deleteAppEngineHttpTarget: Self = this.set("appEngineHttpTarget", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttemptDeadline(value: String): Self = this.set("attemptDeadline", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAttemptDeadline: Self = this.set("attemptDeadline", js.undefined)
+    def setHttpTarget(value: SchemaHttpTarget): Self = StObject.set(x, "httpTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHttpTargetUndefined: Self = StObject.set(x, "httpTarget", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLastAttemptTime(value: String): Self = StObject.set(x, "lastAttemptTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpTarget(value: SchemaHttpTarget): Self = this.set("httpTarget", value.asInstanceOf[js.Any])
+    def setLastAttemptTimeUndefined: Self = StObject.set(x, "lastAttemptTime", js.undefined)
     
     @scala.inline
-    def deleteHttpTarget: Self = this.set("httpTarget", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAttemptTime(value: String): Self = this.set("lastAttemptTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastAttemptTime: Self = this.set("lastAttemptTime", js.undefined)
+    def setPubsubTarget(value: SchemaPubsubTarget): Self = StObject.set(x, "pubsubTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPubsubTargetUndefined: Self = StObject.set(x, "pubsubTarget", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRetryConfig(value: SchemaRetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubsubTarget(value: SchemaPubsubTarget): Self = this.set("pubsubTarget", value.asInstanceOf[js.Any])
+    def setRetryConfigUndefined: Self = StObject.set(x, "retryConfig", js.undefined)
     
     @scala.inline
-    def deletePubsubTarget: Self = this.set("pubsubTarget", js.undefined)
+    def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryConfig(value: SchemaRetryConfig): Self = this.set("retryConfig", value.asInstanceOf[js.Any])
+    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetryConfig: Self = this.set("retryConfig", js.undefined)
+    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
     
     @scala.inline
-    def setSchedule(value: String): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+    def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: SchemaStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUserUpdateTime(value: String): Self = StObject.set(x, "userUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
-    
-    @scala.inline
-    def setUserUpdateTime(value: String): Self = this.set("userUpdateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserUpdateTime: Self = this.set("userUpdateTime", js.undefined)
+    def setUserUpdateTimeUndefined: Self = StObject.set(x, "userUpdateTime", js.undefined)
   }
 }

@@ -1,13 +1,16 @@
 package typings.eqJs
 
-import typings.eqJs.eq.EqjsStatic
+import typings.eqJs.eq_.EqjsStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var eqjs: EqjsStatic = js.native
+  @JSGlobal("eqjs")
+  @js.native
+  def eqjs: EqjsStatic = js.native
+  @scala.inline
+  def eqjs_=(x: EqjsStatic): Unit = js.Dynamic.global.updateDynamic("eqjs")(x.asInstanceOf[js.Any])
 }

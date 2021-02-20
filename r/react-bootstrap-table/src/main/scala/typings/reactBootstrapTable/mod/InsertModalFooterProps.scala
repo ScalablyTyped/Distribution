@@ -2,12 +2,13 @@ package typings.reactBootstrapTable.mod
 
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertModalFooterProps extends js.Object {
+trait InsertModalFooterProps extends StObject {
   
   /**
     * Callback function to call prior to closing the Insert Modal window.
@@ -73,84 +74,72 @@ object InsertModalFooterProps {
   }
   
   @scala.inline
-  implicit class InsertModalFooterPropsOps[Self <: InsertModalFooterProps] (val x: Self) extends AnyVal {
+  implicit class InsertModalFooterPropsMutableBuilder[Self <: InsertModalFooterProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeClose(value: /* e */ SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeSave(value: /* e */ SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeClose(value: /* e */ SyntheticEvent[_, Event] => Unit): Self = this.set("beforeClose", js.Any.fromFunction1(value))
+    def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
     
     @scala.inline
-    def deleteBeforeClose: Self = this.set("beforeClose", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSave(value: /* e */ SyntheticEvent[_, Event] => Unit): Self = this.set("beforeSave", js.Any.fromFunction1(value))
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBeforeSave: Self = this.set("beforeSave", js.undefined)
+    def setCloseBtnClass(value: String): Self = StObject.set(x, "closeBtnClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCloseBtnClassUndefined: Self = StObject.set(x, "closeBtnClass", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setCloseBtnContextual(value: String): Self = StObject.set(x, "closeBtnContextual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseBtnClass(value: String): Self = this.set("closeBtnClass", value.asInstanceOf[js.Any])
+    def setCloseBtnContextualUndefined: Self = StObject.set(x, "closeBtnContextual", js.undefined)
     
     @scala.inline
-    def deleteCloseBtnClass: Self = this.set("closeBtnClass", js.undefined)
+    def setCloseBtnText(value: String): Self = StObject.set(x, "closeBtnText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseBtnContextual(value: String): Self = this.set("closeBtnContextual", value.asInstanceOf[js.Any])
+    def setCloseBtnTextUndefined: Self = StObject.set(x, "closeBtnText", js.undefined)
     
     @scala.inline
-    def deleteCloseBtnContextual: Self = this.set("closeBtnContextual", js.undefined)
+    def setOnModalClose(value: /* closeModal */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onModalClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloseBtnText(value: String): Self = this.set("closeBtnText", value.asInstanceOf[js.Any])
+    def setOnModalCloseUndefined: Self = StObject.set(x, "onModalClose", js.undefined)
     
     @scala.inline
-    def deleteCloseBtnText: Self = this.set("closeBtnText", js.undefined)
+    def setOnSave(value: /* save */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnModalClose(value: /* closeModal */ js.Function0[Unit] => Unit): Self = this.set("onModalClose", js.Any.fromFunction1(value))
+    def setOnSaveUndefined: Self = StObject.set(x, "onSave", js.undefined)
     
     @scala.inline
-    def deleteOnModalClose: Self = this.set("onModalClose", js.undefined)
+    def setSaveBtnClass(value: String): Self = StObject.set(x, "saveBtnClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSave(value: /* save */ js.Function0[Unit] => Unit): Self = this.set("onSave", js.Any.fromFunction1(value))
+    def setSaveBtnClassUndefined: Self = StObject.set(x, "saveBtnClass", js.undefined)
     
     @scala.inline
-    def deleteOnSave: Self = this.set("onSave", js.undefined)
+    def setSaveBtnContextual(value: String): Self = StObject.set(x, "saveBtnContextual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveBtnClass(value: String): Self = this.set("saveBtnClass", value.asInstanceOf[js.Any])
+    def setSaveBtnContextualUndefined: Self = StObject.set(x, "saveBtnContextual", js.undefined)
     
     @scala.inline
-    def deleteSaveBtnClass: Self = this.set("saveBtnClass", js.undefined)
+    def setSaveBtnText(value: String): Self = StObject.set(x, "saveBtnText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveBtnContextual(value: String): Self = this.set("saveBtnContextual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaveBtnContextual: Self = this.set("saveBtnContextual", js.undefined)
-    
-    @scala.inline
-    def setSaveBtnText(value: String): Self = this.set("saveBtnText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaveBtnText: Self = this.set("saveBtnText", js.undefined)
+    def setSaveBtnTextUndefined: Self = StObject.set(x, "saveBtnText", js.undefined)
   }
 }

@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BuildReason extends js.Object
+sealed trait BuildReason extends StObject
 @JSImport("vso-node-api/interfaces/BuildInterfaces", "BuildReason")
 @js.native
-object BuildReason extends js.Object {
+object BuildReason extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuildReason with Double] = js.native
@@ -19,87 +19,75 @@ object BuildReason extends js.Object {
     */
   @js.native
   sealed trait All extends BuildReason
-  /* 495 */ @js.native
-  object All extends TopLevel[All with Double]
+  /* 495 */ val All: typings.vsoNodeApi.buildInterfacesMod.BuildReason.All with Double = js.native
   
   /**
     * The build was started for the trigger TriggerType.BatchedContinuousIntegration.
     */
   @js.native
   sealed trait BatchedCI extends BuildReason
-  /* 4 */ @js.native
-  object BatchedCI extends TopLevel[BatchedCI with Double]
+  /* 4 */ val BatchedCI: typings.vsoNodeApi.buildInterfacesMod.BuildReason.BatchedCI with Double = js.native
   
   /**
     * The build was started for the trigger ContinuousIntegrationType.Gated.
     */
   @js.native
   sealed trait CheckInShelveset extends BuildReason
-  /* 128 */ @js.native
-  object CheckInShelveset extends TopLevel[CheckInShelveset with Double]
+  /* 128 */ val CheckInShelveset: typings.vsoNodeApi.buildInterfacesMod.BuildReason.CheckInShelveset with Double = js.native
   
   /**
     * The build was started for the trigger TriggerType.ContinuousIntegration.
     */
   @js.native
   sealed trait IndividualCI extends BuildReason
-  /* 2 */ @js.native
-  object IndividualCI extends TopLevel[IndividualCI with Double]
+  /* 2 */ val IndividualCI: typings.vsoNodeApi.buildInterfacesMod.BuildReason.IndividualCI with Double = js.native
   
   /**
     * The build was started manually.
     */
   @js.native
   sealed trait Manual extends BuildReason
-  /* 1 */ @js.native
-  object Manual extends TopLevel[Manual with Double]
+  /* 1 */ val Manual: typings.vsoNodeApi.buildInterfacesMod.BuildReason.Manual with Double = js.native
   
   /**
     * No reason. This value should not be used.
     */
   @js.native
   sealed trait None extends BuildReason
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.vsoNodeApi.buildInterfacesMod.BuildReason.None with Double = js.native
   
   /**
     * The build was started by a pull request. Added in resource version 3.
     */
   @js.native
   sealed trait PullRequest extends BuildReason
-  /* 256 */ @js.native
-  object PullRequest extends TopLevel[PullRequest with Double]
+  /* 256 */ val PullRequest: typings.vsoNodeApi.buildInterfacesMod.BuildReason.PullRequest with Double = js.native
   
   /**
     * The build was started for the trigger TriggerType.Schedule.
     */
   @js.native
   sealed trait Schedule extends BuildReason
-  /* 8 */ @js.native
-  object Schedule
-    extends TopLevel[typings.vsoNodeApi.buildInterfacesMod.BuildReason.Schedule with Double]
+  /* 8 */ val Schedule: typings.vsoNodeApi.buildInterfacesMod.BuildReason.Schedule with Double = js.native
   
   /**
     * The build was triggered for retention policy purposes.
     */
   @js.native
   sealed trait Triggered extends BuildReason
-  /* 431 */ @js.native
-  object Triggered extends TopLevel[Triggered with Double]
+  /* 431 */ val Triggered: typings.vsoNodeApi.buildInterfacesMod.BuildReason.Triggered with Double = js.native
   
   /**
     * The build was created by a user.
     */
   @js.native
   sealed trait UserCreated extends BuildReason
-  /* 32 */ @js.native
-  object UserCreated extends TopLevel[UserCreated with Double]
+  /* 32 */ val UserCreated: typings.vsoNodeApi.buildInterfacesMod.BuildReason.UserCreated with Double = js.native
   
   /**
     * The build was started manually for private validation.
     */
   @js.native
   sealed trait ValidateShelveset extends BuildReason
-  /* 64 */ @js.native
-  object ValidateShelveset extends TopLevel[ValidateShelveset with Double]
+  /* 64 */ val ValidateShelveset: typings.vsoNodeApi.buildInterfacesMod.BuildReason.ValidateShelveset with Double = js.native
 }

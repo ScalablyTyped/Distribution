@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPlayToSource extends js.Object {
+trait IPlayToSource extends StObject {
   
   var connection: PlayToConnection = js.native
   
@@ -22,27 +23,15 @@ object IPlayToSource {
   }
   
   @scala.inline
-  implicit class IPlayToSourceOps[Self <: IPlayToSource] (val x: Self) extends AnyVal {
+  implicit class IPlayToSourceMutableBuilder[Self <: IPlayToSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: PlayToConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNext(value: PlayToSource): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnection(value: PlayToConnection): Self = this.set("connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: PlayToSource): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayNext(value: () => Unit): Self = this.set("playNext", js.Any.fromFunction0(value))
+    def setPlayNext(value: () => Unit): Self = StObject.set(x, "playNext", js.Any.fromFunction0(value))
   }
 }

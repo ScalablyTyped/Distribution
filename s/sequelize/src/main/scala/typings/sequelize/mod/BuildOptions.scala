@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,39 +37,27 @@ object BuildOptions {
   }
   
   @scala.inline
-  implicit class BuildOptionsOps[Self <: BuildOptions] (val x: Self) extends AnyVal {
+  implicit class BuildOptionsMutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = this.set("include", js.Array(value :_*))
+    def setIsNewRecord(value: Boolean): Self = StObject.set(x, "isNewRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setIsNewRecordUndefined: Self = StObject.set(x, "isNewRecord", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNewRecord(value: Boolean): Self = this.set("isNewRecord", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsNewRecord: Self = this.set("isNewRecord", js.undefined)
-    
-    @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.jqueryui
 
 import typings.jquery.JQueryEasingFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryEasingFunctions extends js.Object {
+trait JQueryEasingFunctions extends StObject {
   
   def easeInBack(percent: Double): Double = js.native
   @JSName("easeInBack")

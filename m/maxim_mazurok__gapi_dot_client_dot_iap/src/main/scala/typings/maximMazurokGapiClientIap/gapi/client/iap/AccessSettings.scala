@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIap.gapi.client.iap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessSettings extends js.Object {
+trait AccessSettings extends StObject {
   
   /** Configuration to allow cross-origin requests via IAP. */
   var corsSettings: js.UndefOr[CorsSettings] = js.native
@@ -28,42 +29,30 @@ object AccessSettings {
   }
   
   @scala.inline
-  implicit class AccessSettingsOps[Self <: AccessSettings] (val x: Self) extends AnyVal {
+  implicit class AccessSettingsMutableBuilder[Self <: AccessSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorsSettings(value: CorsSettings): Self = StObject.set(x, "corsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorsSettingsUndefined: Self = StObject.set(x, "corsSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcipSettings(value: GcipSettings): Self = StObject.set(x, "gcipSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorsSettings(value: CorsSettings): Self = this.set("corsSettings", value.asInstanceOf[js.Any])
+    def setGcipSettingsUndefined: Self = StObject.set(x, "gcipSettings", js.undefined)
     
     @scala.inline
-    def deleteCorsSettings: Self = this.set("corsSettings", js.undefined)
+    def setOauthSettings(value: OAuthSettings): Self = StObject.set(x, "oauthSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcipSettings(value: GcipSettings): Self = this.set("gcipSettings", value.asInstanceOf[js.Any])
+    def setOauthSettingsUndefined: Self = StObject.set(x, "oauthSettings", js.undefined)
     
     @scala.inline
-    def deleteGcipSettings: Self = this.set("gcipSettings", js.undefined)
+    def setPolicyDelegationSettings(value: PolicyDelegationSettings): Self = StObject.set(x, "policyDelegationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauthSettings(value: OAuthSettings): Self = this.set("oauthSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOauthSettings: Self = this.set("oauthSettings", js.undefined)
-    
-    @scala.inline
-    def setPolicyDelegationSettings(value: PolicyDelegationSettings): Self = this.set("policyDelegationSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyDelegationSettings: Self = this.set("policyDelegationSettings", js.undefined)
+    def setPolicyDelegationSettingsUndefined: Self = StObject.set(x, "policyDelegationSettings", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDataSourceSyncJobsRequest extends js.Object {
+trait ListDataSourceSyncJobsRequest extends StObject {
   
   /**
     * The identifier of the data source.
@@ -46,48 +47,36 @@ object ListDataSourceSyncJobsRequest {
   }
   
   @scala.inline
-  implicit class ListDataSourceSyncJobsRequestOps[Self <: ListDataSourceSyncJobsRequest] (val x: Self) extends AnyVal {
+  implicit class ListDataSourceSyncJobsRequestMutableBuilder[Self <: ListDataSourceSyncJobsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: DataSourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: MaxResultsIntegerForListDataSourceSyncJobsRequest): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: DataSourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setIndexId(value: IndexId): Self = this.set("IndexId", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResultsIntegerForListDataSourceSyncJobsRequest): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setStartTimeFilter(value: TimeRange): Self = StObject.set(x, "StartTimeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStartTimeFilterUndefined: Self = StObject.set(x, "StartTimeFilter", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setStatusFilter(value: DataSourceSyncJobStatus): Self = StObject.set(x, "StatusFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimeFilter(value: TimeRange): Self = this.set("StartTimeFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeFilter: Self = this.set("StartTimeFilter", js.undefined)
-    
-    @scala.inline
-    def setStatusFilter(value: DataSourceSyncJobStatus): Self = this.set("StatusFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusFilter: Self = this.set("StatusFilter", js.undefined)
+    def setStatusFilterUndefined: Self = StObject.set(x, "StatusFilter", js.undefined)
   }
 }

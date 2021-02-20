@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrdersCreateTestOrderResponse extends js.Object {
+trait SchemaOrdersCreateTestOrderResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -27,30 +28,18 @@ object SchemaOrdersCreateTestOrderResponse {
   }
   
   @scala.inline
-  implicit class SchemaOrdersCreateTestOrderResponseOps[Self <: SchemaOrdersCreateTestOrderResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaOrdersCreateTestOrderResponseMutableBuilder[Self <: SchemaOrdersCreateTestOrderResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
   }
 }

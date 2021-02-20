@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.timelineFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineFeedResponseHeadline extends js.Object {
+trait TimelineFeedResponseHeadline extends StObject {
   
   var bit_flags: Double = js.native
   
@@ -51,51 +52,39 @@ object TimelineFeedResponseHeadline {
   }
   
   @scala.inline
-  implicit class TimelineFeedResponseHeadlineOps[Self <: TimelineFeedResponseHeadline] (val x: Self) extends AnyVal {
+  implicit class TimelineFeedResponseHeadlineMutableBuilder[Self <: TimelineFeedResponseHeadline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBit_flags(value: Double): Self = this.set("bit_flags", value.asInstanceOf[js.Any])
+    def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_type(value: String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: Double): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at_utc(value: Double): Self = this.set("created_at_utc", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_id(value: String): Self = this.set("media_id", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUser(value: TimelineFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: TimelineFeedResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser_id(value: Double): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

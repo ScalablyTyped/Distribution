@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerManagedDatastoreS3Storage extends js.Object {
+trait CustomerManagedDatastoreS3Storage extends StObject {
   
   /**
     * The name of the S3 bucket in which data store data is stored.
@@ -31,30 +32,18 @@ object CustomerManagedDatastoreS3Storage {
   }
   
   @scala.inline
-  implicit class CustomerManagedDatastoreS3StorageOps[Self <: CustomerManagedDatastoreS3Storage] (val x: Self) extends AnyVal {
+  implicit class CustomerManagedDatastoreS3StorageMutableBuilder[Self <: CustomerManagedDatastoreS3Storage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyPrefix(value: S3KeyPrefix): Self = this.set("keyPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPrefix: Self = this.set("keyPrefix", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

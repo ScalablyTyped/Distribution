@@ -1,12 +1,11 @@
 package typings.tablesorter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Paging/PagerOutputProcessor", JSImport.Namespace)
-@js.native
-object pagerOutputProcessorMod extends js.Object {
+object pagerOutputProcessorMod {
   
   type PagerOutputProcessor[TElement] = js.Function2[/* table */ TElement, /* pager */ js.Any, String]
 }

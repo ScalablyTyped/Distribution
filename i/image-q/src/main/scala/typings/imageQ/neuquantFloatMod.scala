@@ -2,14 +2,14 @@ package typings.imageQ
 
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.paletteCommonMod.IPaletteQuantizer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/palette/neuquant/neuquantFloat", JSImport.Namespace)
-@js.native
-object neuquantFloatMod extends js.Object {
+object neuquantFloatMod {
   
+  @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat")
   @js.native
   class NeuQuantFloat protected () extends IPaletteQuantizer {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
@@ -65,49 +65,90 @@ object neuquantFloatMod extends js.Object {
     val _sampleFactor: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object NeuQuantFloat extends js.Object {
+  object NeuQuantFloat {
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._alphaBiasShift")
+    @js.native
     val _alphaBiasShift: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._alphaRadBias")
+    @js.native
     val _alphaRadBias: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._alphaRadBiasShift")
+    @js.native
     val _alphaRadBiasShift: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._beta")
+    @js.native
     val _beta: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._betaGamma")
+    @js.native
     val _betaGamma: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._betaShift")
+    @js.native
     val _betaShift: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._gammaShift")
+    @js.native
     val _gammaShift: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._initAlpha")
+    @js.native
     val _initAlpha: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._initialBias")
+    @js.native
     val _initialBias: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._initialBiasShift")
+    @js.native
     val _initialBiasShift: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._minpicturebytes")
+    @js.native
     val _minpicturebytes: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._nCycles")
+    @js.native
     val _nCycles: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._prime1")
+    @js.native
     val _prime1: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._prime2")
+    @js.native
     val _prime2: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._prime3")
+    @js.native
     val _prime3: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._prime4")
+    @js.native
     val _prime4: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._radBias")
+    @js.native
     val _radBias: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._radBiasShift")
+    @js.native
     val _radBiasShift: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._radiusBias")
+    @js.native
     val _radiusBias: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._radiusBiasShift")
+    @js.native
     val _radiusBiasShift: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/neuquant/neuquantFloat", "NeuQuantFloat._radiusDecrease")
+    @js.native
     val _radiusDecrease: js.Any = js.native
   }
 }

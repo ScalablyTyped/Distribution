@@ -1,5 +1,6 @@
 package typings.awsSdkTypes.middlewareMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdkTypes.awsSdkTypesStrings.before
   - typings.awsSdkTypes.awsSdkTypesStrings.after
 */
-trait Relation extends js.Object
+trait Relation extends StObject
 object Relation {
   
   @scala.inline

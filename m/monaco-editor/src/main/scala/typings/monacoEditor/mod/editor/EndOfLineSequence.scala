@@ -1,15 +1,15 @@
 package typings.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EndOfLineSequence extends js.Object
+sealed trait EndOfLineSequence extends StObject
 @JSImport("monaco-editor", "editor.EndOfLineSequence")
 @js.native
-object EndOfLineSequence extends js.Object {
+object EndOfLineSequence extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EndOfLineSequence with Double] = js.native
@@ -19,14 +19,12 @@ object EndOfLineSequence extends js.Object {
     */
   @js.native
   sealed trait CRLF extends EndOfLineSequence
-  /* 1 */ @js.native
-  object CRLF extends TopLevel[CRLF with Double]
+  /* 1 */ val CRLF: typings.monacoEditor.mod.editor.EndOfLineSequence.CRLF with Double = js.native
   
   /**
     * Use line feed (\n) as the end of line character.
     */
   @js.native
   sealed trait LF extends EndOfLineSequence
-  /* 0 */ @js.native
-  object LF extends TopLevel[LF with Double]
+  /* 0 */ val LF: typings.monacoEditor.mod.editor.EndOfLineSequence.LF with Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.xstate.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChooseConditon[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait ChooseConditon[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var actions: Actions[TContext, TEvent] = js.native
   
@@ -20,36 +21,24 @@ object ChooseConditon {
   }
   
   @scala.inline
-  implicit class ChooseConditonOps[Self <: ChooseConditon[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (ChooseConditon[TContext, TEvent])) extends AnyVal {
+  implicit class ChooseConditonMutableBuilder[Self <: ChooseConditon[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (ChooseConditon[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: Actions[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = StObject.set(x, "actions", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = this.set("actions", js.Array(value :_*))
+    def setCond(value: Condition[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = this.set("actions", js.Any.fromFunction3(value))
+    def setCondFunction3(value: (TContext, TEvent, /* meta */ GuardMeta[TContext, TEvent]) => Boolean): Self = StObject.set(x, "cond", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setActions(value: Actions[TContext, TEvent]): Self = this.set("actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCondFunction3(value: (TContext, TEvent, /* meta */ GuardMeta[TContext, TEvent]) => Boolean): Self = this.set("cond", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCond(value: Condition[TContext, TEvent]): Self = this.set("cond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCond: Self = this.set("cond", js.undefined)
+    def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
   }
 }

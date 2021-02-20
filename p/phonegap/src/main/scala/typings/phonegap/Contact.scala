@@ -1,12 +1,13 @@
 package typings.phonegap
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Contact extends js.Object {
+trait Contact extends StObject {
   
   var addresses: js.Array[ContactAddress] = js.native
   

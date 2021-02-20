@@ -1,23 +1,26 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/observable/BoundCallbackObservable", JSImport.Namespace)
-@js.native
-object boundCallbackObservableMod extends js.Object {
+object boundCallbackObservableMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
-  class BoundCallbackObservable[T] () extends js.Object
-  /* static members */
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable")
   @js.native
-  object BoundCallbackObservable extends js.Object {
+  class BoundCallbackObservable[T] () extends StObject
+  /* static members */
+  object BoundCallbackObservable {
     
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create(callbackFunc: js.Function1[/* callback */ js.Function0[_], _]): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<void> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create(
       callbackFunc: js.Function1[/* callback */ js.Function0[_], _],
       selector: js.UndefOr[scala.Nothing],
@@ -25,9 +28,13 @@ object boundCallbackObservableMod extends js.Object {
     ): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<void> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create(callbackFunc: js.Function1[/* callback */ js.Function0[_], _], selector: Unit): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<void> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create(
       callbackFunc: js.Function1[/* callback */ js.Function0[_], _],
       selector: Unit,
@@ -35,16 +42,22 @@ object boundCallbackObservableMod extends js.Object {
     ): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<void> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T](callbackFunc: js.Function): js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[R](
       callbackFunc: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], _],
       selector: js.Function1[/* repeated */ js.Any, R]
     ): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[R](
       callbackFunc: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], _],
       selector: js.Function1[/* repeated */ js.Any, R],
@@ -52,6 +65,8 @@ object boundCallbackObservableMod extends js.Object {
     ): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T](
       callbackFunc: js.Function,
       selector: js.UndefOr[scala.Nothing],
@@ -60,10 +75,14 @@ object boundCallbackObservableMod extends js.Object {
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T](callbackFunc: js.Function, selector: js.Function1[/* repeated */ js.Any, T]): js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T](
       callbackFunc: js.Function,
       selector: js.Function1[/* repeated */ js.Any, T],
@@ -72,10 +91,14 @@ object boundCallbackObservableMod extends js.Object {
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T](callbackFunc: js.Function, selector: Unit): js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T](
       callbackFunc: js.Function,
       selector: Unit,
@@ -84,10 +107,14 @@ object boundCallbackObservableMod extends js.Object {
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, R](callbackFunc: js.Function2[/* v1 */ T, /* callback */ js.Function1[/* result */ R, _], _]): js.Function1[
         /* v1 */ T, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, R](
       callbackFunc: js.Function2[/* v1 */ T, /* callback */ js.Function1[/* result */ R, _], _],
       selector: js.UndefOr[scala.Nothing],
@@ -96,6 +123,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v1 */ T, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, R](
       callbackFunc: js.Function2[/* v1 */ T, /* callback */ js.Function1[/* repeated */ js.Any, _], _],
       selector: js.Function1[/* repeated */ js.Any, R]
@@ -103,6 +132,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v1 */ T, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, R](
       callbackFunc: js.Function2[/* v1 */ T, /* callback */ js.Function1[/* repeated */ js.Any, _], _],
       selector: js.Function1[/* repeated */ js.Any, R],
@@ -111,6 +142,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v1 */ T, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, R](
       callbackFunc: js.Function2[/* v1 */ T, /* callback */ js.Function1[/* result */ R, _], _],
       selector: Unit
@@ -118,6 +151,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v1 */ T, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, R](
       callbackFunc: js.Function2[/* v1 */ T, /* callback */ js.Function1[/* result */ R, _], _],
       selector: Unit,
@@ -126,6 +161,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v1 */ T, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, R](
       callbackFunc: js.Function3[/* v1 */ T, /* v2 */ T2, /* callback */ js.Function1[/* result */ R, _], _]
     ): js.Function2[
@@ -133,6 +170,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v2 */ T2, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, R](
       callbackFunc: js.Function3[/* v1 */ T, /* v2 */ T2, /* callback */ js.Function1[/* result */ R, _], _],
       selector: js.UndefOr[scala.Nothing],
@@ -142,6 +181,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v2 */ T2, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, R](
       callbackFunc: js.Function3[/* v1 */ T, /* v2 */ T2, /* callback */ js.Function1[/* repeated */ js.Any, _], _],
       selector: js.Function1[/* repeated */ js.Any, R]
@@ -150,6 +191,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v2 */ T2, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, R](
       callbackFunc: js.Function3[/* v1 */ T, /* v2 */ T2, /* callback */ js.Function1[/* repeated */ js.Any, _], _],
       selector: js.Function1[/* repeated */ js.Any, R],
@@ -159,6 +202,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v2 */ T2, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, R](
       callbackFunc: js.Function3[/* v1 */ T, /* v2 */ T2, /* callback */ js.Function1[/* result */ R, _], _],
       selector: Unit
@@ -167,6 +212,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v2 */ T2, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, R](
       callbackFunc: js.Function3[/* v1 */ T, /* v2 */ T2, /* callback */ js.Function1[/* result */ R, _], _],
       selector: Unit,
@@ -176,6 +223,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v2 */ T2, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, R](
       callbackFunc: js.Function4[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* callback */ js.Function1[/* result */ R, _], _]
     ): js.Function3[
@@ -184,6 +233,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v3 */ T3, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, R](
       callbackFunc: js.Function4[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* callback */ js.Function1[/* result */ R, _], _],
       selector: js.UndefOr[scala.Nothing],
@@ -194,6 +245,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v3 */ T3, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, R](
       callbackFunc: js.Function4[
           /* v1 */ T, 
@@ -209,6 +262,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v3 */ T3, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, R](
       callbackFunc: js.Function4[
           /* v1 */ T, 
@@ -225,6 +280,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v3 */ T3, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, R](
       callbackFunc: js.Function4[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* callback */ js.Function1[/* result */ R, _], _],
       selector: Unit
@@ -234,6 +291,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v3 */ T3, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, R](
       callbackFunc: js.Function4[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* callback */ js.Function1[/* result */ R, _], _],
       selector: Unit,
@@ -244,6 +303,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v3 */ T3, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
           /* v1 */ T, 
@@ -260,6 +321,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v4 */ T4, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
           /* v1 */ T, 
@@ -278,6 +341,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v4 */ T4, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
           /* v1 */ T, 
@@ -295,6 +360,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v4 */ T4, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
           /* v1 */ T, 
@@ -313,6 +380,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v4 */ T4, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
           /* v1 */ T, 
@@ -330,6 +399,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v4 */ T4, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
           /* v1 */ T, 
@@ -348,6 +419,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v4 */ T4, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
           /* v1 */ T, 
@@ -366,6 +439,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v5 */ T5, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
           /* v1 */ T, 
@@ -386,6 +461,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v5 */ T5, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
           /* v1 */ T, 
@@ -405,6 +482,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v5 */ T5, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
           /* v1 */ T, 
@@ -425,6 +504,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v5 */ T5, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
           /* v1 */ T, 
@@ -444,6 +525,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v5 */ T5, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
           /* v1 */ T, 
@@ -464,6 +547,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v5 */ T5, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
           /* v1 */ T, 
@@ -484,6 +569,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v6 */ T6, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
           /* v1 */ T, 
@@ -506,6 +593,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v6 */ T6, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
           /* v1 */ T, 
@@ -527,6 +616,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v6 */ T6, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
           /* v1 */ T, 
@@ -549,6 +640,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v6 */ T6, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
           /* v1 */ T, 
@@ -570,6 +663,8 @@ object boundCallbackObservableMod extends js.Object {
         /* v6 */ T6, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
           /* v1 */ T, 
@@ -592,11 +687,13 @@ object boundCallbackObservableMod extends js.Object {
         /* v6 */ T6, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
-    @JSName("create")
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create_R[R](callbackFunc: js.Function1[/* callback */ js.Function1[/* result */ R, _], _]): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
-    @JSName("create")
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create_R[R](
       callbackFunc: js.Function1[/* callback */ js.Function1[/* result */ R, _], _],
       selector: js.UndefOr[scala.Nothing],
@@ -604,11 +701,13 @@ object boundCallbackObservableMod extends js.Object {
     ): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
-    @JSName("create")
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create_R[R](callbackFunc: js.Function1[/* callback */ js.Function1[/* result */ R, _], _], selector: Unit): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ _
       ] = js.native
-    @JSName("create")
+    @JSImport("rxjs-compat/observable/BoundCallbackObservable", "BoundCallbackObservable.create")
+    @js.native
     def create_R[R](
       callbackFunc: js.Function1[/* callback */ js.Function1[/* result */ R, _], _],
       selector: Unit,

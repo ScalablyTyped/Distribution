@@ -1,5 +1,6 @@
 package typings.estree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 package object ESTree {
   
   type AnyTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+  
+  type BooleanLiteralTypeAnnotation = typings.estree.ESTree.FlowLiteralTypeAnnotation
   
   type BooleanTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
   
@@ -18,7 +21,11 @@ package object ESTree {
   
   type MixedTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
   
+  type NumberLiteralTypeAnnotation = typings.estree.ESTree.FlowLiteralTypeAnnotation
+  
   type NumberTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+  
+  type StringLiteralTypeAnnotation = typings.estree.ESTree.FlowLiteralTypeAnnotation
   
   type StringTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
   

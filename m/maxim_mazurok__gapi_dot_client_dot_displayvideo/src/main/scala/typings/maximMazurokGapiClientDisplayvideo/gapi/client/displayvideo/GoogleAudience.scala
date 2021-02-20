@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAudience extends js.Object {
+trait GoogleAudience extends StObject {
   
   /** Output only. The display name of the Google audience. . */
   var displayName: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object GoogleAudience {
   }
   
   @scala.inline
-  implicit class GoogleAudienceOps[Self <: GoogleAudience] (val x: Self) extends AnyVal {
+  implicit class GoogleAudienceMutableBuilder[Self <: GoogleAudience] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoogleAudienceId(value: String): Self = StObject.set(x, "googleAudienceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setGoogleAudienceIdUndefined: Self = StObject.set(x, "googleAudienceId", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setGoogleAudienceType(value: String): Self = StObject.set(x, "googleAudienceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleAudienceId(value: String): Self = this.set("googleAudienceId", value.asInstanceOf[js.Any])
+    def setGoogleAudienceTypeUndefined: Self = StObject.set(x, "googleAudienceType", js.undefined)
     
     @scala.inline
-    def deleteGoogleAudienceId: Self = this.set("googleAudienceId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleAudienceType(value: String): Self = this.set("googleAudienceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoogleAudienceType: Self = this.set("googleAudienceType", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataClasses extends js.Object
+sealed trait DataClasses extends StObject
 @JSGlobal("Windows.Networking.NetworkOperators.DataClasses")
 @js.native
-object DataClasses extends js.Object {
+object DataClasses extends StObject {
   
   @js.native
   sealed trait cdma1xEvdo extends DataClasses

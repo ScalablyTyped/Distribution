@@ -1,5 +1,6 @@
 package typings.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an instance of an ad.
   */
 @js.native
-trait AdInstance extends js.Object {
+trait AdInstance extends StObject {
   
   /**
     * Return the Audience Network placement ID of this ad instance.
@@ -42,27 +43,15 @@ object AdInstance {
   }
   
   @scala.inline
-  implicit class AdInstanceOps[Self <: AdInstance] (val x: Self) extends AnyVal {
+  implicit class AdInstanceMutableBuilder[Self <: AdInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPlacementID(value: () => String): Self = StObject.set(x, "getPlacementID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadAsync(value: () => js.Promise[Unit]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetPlacementID(value: () => String): Self = this.set("getPlacementID", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLoadAsync(value: () => js.Promise[Unit]): Self = this.set("loadAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowAsync(value: () => js.Promise[Unit]): Self = this.set("showAsync", js.Any.fromFunction0(value))
+    def setShowAsync(value: () => js.Promise[Unit]): Self = StObject.set(x, "showAsync", js.Any.fromFunction0(value))
   }
 }

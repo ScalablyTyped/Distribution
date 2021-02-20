@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   */
 @js.native
-trait AccessibleRelation extends js.Object {
+trait AccessibleRelation extends StObject {
   
   /**
     * Type of the relation.
@@ -40,24 +41,12 @@ object AccessibleRelation {
   }
   
   @scala.inline
-  implicit class AccessibleRelationOps[Self <: AccessibleRelation] (val x: Self) extends AnyVal {
+  implicit class AccessibleRelationMutableBuilder[Self <: AccessibleRelation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelationType(value: Double): Self = StObject.set(x, "RelationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelationType(value: Double): Self = this.set("RelationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetSet(value: SafeArray[XInterface]): Self = this.set("TargetSet", value.asInstanceOf[js.Any])
+    def setTargetSet(value: SafeArray[XInterface]): Self = StObject.set(x, "TargetSet", value.asInstanceOf[js.Any])
   }
 }

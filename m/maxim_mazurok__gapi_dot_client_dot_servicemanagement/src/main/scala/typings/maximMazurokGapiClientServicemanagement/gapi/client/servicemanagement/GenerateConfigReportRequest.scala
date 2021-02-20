@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateConfigReportRequest extends js.Object {
+trait GenerateConfigReportRequest extends StObject {
   
   /**
     * Required. Service configuration for which we want to generate the report. For this version of API, the supported types are google.api.servicemanagement.v1.ConfigRef,
@@ -37,38 +38,26 @@ object GenerateConfigReportRequest {
   }
   
   @scala.inline
-  implicit class GenerateConfigReportRequestOps[Self <: GenerateConfigReportRequest] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class GenerateConfigReportRequestMutableBuilder[Self <: GenerateConfigReportRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setNewConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest with TopLevel[js.Any]
-    ): Self = this.set("newConfig", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "newConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNewConfig: Self = this.set("newConfig", js.undefined)
+    def setNewConfigUndefined: Self = StObject.set(x, "newConfig", js.undefined)
     
     @scala.inline
     def setOldConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest with TopLevel[js.Any]
-    ): Self = this.set("oldConfig", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "oldConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOldConfig: Self = this.set("oldConfig", js.undefined)
+    def setOldConfigUndefined: Self = StObject.set(x, "oldConfig", js.undefined)
   }
 }

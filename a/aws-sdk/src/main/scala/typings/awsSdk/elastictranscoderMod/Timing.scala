@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Timing extends js.Object {
+trait Timing extends StObject {
   
   /**
     * The time the job finished transcoding, in epoch milliseconds.
@@ -31,36 +32,24 @@ object Timing {
   }
   
   @scala.inline
-  implicit class TimingOps[Self <: Timing] (val x: Self) extends AnyVal {
+  implicit class TimingMutableBuilder[Self <: Timing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinishTimeMillis(value: NullableLong): Self = StObject.set(x, "FinishTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinishTimeMillisUndefined: Self = StObject.set(x, "FinishTimeMillis", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTimeMillis(value: NullableLong): Self = StObject.set(x, "StartTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishTimeMillis(value: NullableLong): Self = this.set("FinishTimeMillis", value.asInstanceOf[js.Any])
+    def setStartTimeMillisUndefined: Self = StObject.set(x, "StartTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteFinishTimeMillis: Self = this.set("FinishTimeMillis", js.undefined)
+    def setSubmitTimeMillis(value: NullableLong): Self = StObject.set(x, "SubmitTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimeMillis(value: NullableLong): Self = this.set("StartTimeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeMillis: Self = this.set("StartTimeMillis", js.undefined)
-    
-    @scala.inline
-    def setSubmitTimeMillis(value: NullableLong): Self = this.set("SubmitTimeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmitTimeMillis: Self = this.set("SubmitTimeMillis", js.undefined)
+    def setSubmitTimeMillisUndefined: Self = StObject.set(x, "SubmitTimeMillis", js.undefined)
   }
 }

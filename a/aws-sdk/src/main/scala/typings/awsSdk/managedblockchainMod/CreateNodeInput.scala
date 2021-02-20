@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateNodeInput extends js.Object {
+trait CreateNodeInput extends StObject {
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the operation. An idempotent operation completes no more than one time. This identifier is required only if you make a service request directly using an HTTP client. It is generated automatically if you use an AWS SDK or the AWS CLI.
@@ -41,30 +42,18 @@ object CreateNodeInput {
   }
   
   @scala.inline
-  implicit class CreateNodeInputOps[Self <: CreateNodeInput] (val x: Self) extends AnyVal {
+  implicit class CreateNodeInputMutableBuilder[Self <: CreateNodeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenString): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = this.set("MemberId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = this.set("NetworkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeConfiguration(value: NodeConfiguration): Self = this.set("NodeConfiguration", value.asInstanceOf[js.Any])
+    def setNodeConfiguration(value: NodeConfiguration): Self = StObject.set(x, "NodeConfiguration", value.asInstanceOf[js.Any])
   }
 }

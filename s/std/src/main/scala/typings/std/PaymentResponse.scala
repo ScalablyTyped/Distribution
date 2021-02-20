@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Payment Request API interface is returned after a user selects a payment method and approves a payment request. */
 @js.native
-trait PaymentResponse extends js.Object {
+trait PaymentResponse extends StObject {
   
   def complete(): js.Promise[Unit] = js.native
   def complete(result: PaymentComplete): js.Promise[Unit] = js.native

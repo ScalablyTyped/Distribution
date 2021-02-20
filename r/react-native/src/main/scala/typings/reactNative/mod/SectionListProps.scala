@@ -4,6 +4,7 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.reactNative.anon.Index
 import typings.reactNative.anon.Section
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,80 +81,68 @@ object SectionListProps {
   }
   
   @scala.inline
-  implicit class SectionListPropsOps[Self <: SectionListProps[_, _], ItemT, SectionT] (val x: Self with (SectionListProps[ItemT, SectionT])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSectionsVarargs(value: (SectionListData[ItemT, SectionT])*): Self = this.set("sections", js.Array(value :_*))
-    
-    @scala.inline
-    def setSections(value: js.Array[SectionListData[ItemT, SectionT]]): Self = this.set("sections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemSeparatorComponent(value: ComponentType[_]): Self = this.set("ItemSeparatorComponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemSeparatorComponent: Self = this.set("ItemSeparatorComponent", js.undefined)
-    
-    @scala.inline
-    def setItemSeparatorComponentNull: Self = this.set("ItemSeparatorComponent", null)
-    
-    @scala.inline
-    def setSectionSeparatorComponent(value: ComponentType[_] | ReactElement): Self = this.set("SectionSeparatorComponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSectionSeparatorComponent: Self = this.set("SectionSeparatorComponent", js.undefined)
-    
-    @scala.inline
-    def setSectionSeparatorComponentNull: Self = this.set("SectionSeparatorComponent", null)
+  implicit class SectionListPropsMutableBuilder[Self <: SectionListProps[_, _], ItemT, SectionT] (val x: Self with (SectionListProps[ItemT, SectionT])) extends AnyVal {
     
     @scala.inline
     def setGetItemLayout(
       value: (/* data */ (js.Array[SectionListData[ItemT, SectionT]]) | Null, /* index */ Double) => Index
-    ): Self = this.set("getItemLayout", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetItemLayout: Self = this.set("getItemLayout", js.undefined)
+    def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
     @scala.inline
-    def setLegacyImplementation(value: Boolean): Self = this.set("legacyImplementation", value.asInstanceOf[js.Any])
+    def setItemSeparatorComponent(value: ComponentType[_]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLegacyImplementation: Self = this.set("legacyImplementation", js.undefined)
+    def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     
     @scala.inline
-    def setRenderItem(value: /* info */ SectionListRenderItemInfo[ItemT, SectionT] => ReactElement | Null): Self = this.set("renderItem", js.Any.fromFunction1(value))
+    def setItemSeparatorComponentUndefined: Self = StObject.set(x, "ItemSeparatorComponent", js.undefined)
     
     @scala.inline
-    def deleteRenderItem: Self = this.set("renderItem", js.undefined)
+    def setLegacyImplementation(value: Boolean): Self = StObject.set(x, "legacyImplementation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderSectionFooter(value: /* info */ Section[ItemT, SectionT] => ReactElement | Null): Self = this.set("renderSectionFooter", js.Any.fromFunction1(value))
+    def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
     
     @scala.inline
-    def deleteRenderSectionFooter: Self = this.set("renderSectionFooter", js.undefined)
+    def setRenderItem(value: /* info */ SectionListRenderItemInfo[ItemT, SectionT] => ReactElement | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderSectionHeader(value: /* info */ Section[ItemT, SectionT] => ReactElement | Null): Self = this.set("renderSectionHeader", js.Any.fromFunction1(value))
+    def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
     
     @scala.inline
-    def deleteRenderSectionHeader: Self = this.set("renderSectionHeader", js.undefined)
+    def setRenderSectionFooter(value: /* info */ Section[ItemT, SectionT] => ReactElement | Null): Self = StObject.set(x, "renderSectionFooter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStickySectionHeadersEnabled(value: Boolean): Self = this.set("stickySectionHeadersEnabled", value.asInstanceOf[js.Any])
+    def setRenderSectionFooterUndefined: Self = StObject.set(x, "renderSectionFooter", js.undefined)
     
     @scala.inline
-    def deleteStickySectionHeadersEnabled: Self = this.set("stickySectionHeadersEnabled", js.undefined)
+    def setRenderSectionHeader(value: /* info */ Section[ItemT, SectionT] => ReactElement | Null): Self = StObject.set(x, "renderSectionHeader", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setRenderSectionHeaderUndefined: Self = StObject.set(x, "renderSectionHeader", js.undefined)
+    
+    @scala.inline
+    def setSectionSeparatorComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "SectionSeparatorComponent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSectionSeparatorComponentNull: Self = StObject.set(x, "SectionSeparatorComponent", null)
+    
+    @scala.inline
+    def setSectionSeparatorComponentUndefined: Self = StObject.set(x, "SectionSeparatorComponent", js.undefined)
+    
+    @scala.inline
+    def setSections(value: js.Array[SectionListData[ItemT, SectionT]]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSectionsVarargs(value: (SectionListData[ItemT, SectionT])*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    
+    @scala.inline
+    def setStickySectionHeadersEnabled(value: Boolean): Self = StObject.set(x, "stickySectionHeadersEnabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStickySectionHeadersEnabledUndefined: Self = StObject.set(x, "stickySectionHeadersEnabled", js.undefined)
   }
 }

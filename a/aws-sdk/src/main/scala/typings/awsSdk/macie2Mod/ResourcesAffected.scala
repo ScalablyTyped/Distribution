@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourcesAffected extends js.Object {
+trait ResourcesAffected extends StObject {
   
   /**
     * An array of objects, one for each S3 bucket that the finding applies to. Each object provides a set of metadata about an affected S3 bucket.
@@ -26,30 +27,18 @@ object ResourcesAffected {
   }
   
   @scala.inline
-  implicit class ResourcesAffectedOps[Self <: ResourcesAffected] (val x: Self) extends AnyVal {
+  implicit class ResourcesAffectedMutableBuilder[Self <: ResourcesAffected] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Object(value: S3Object): Self = StObject.set(x, "s3Object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Bucket: Self = this.set("s3Bucket", js.undefined)
-    
-    @scala.inline
-    def setS3Object(value: S3Object): Self = this.set("s3Object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Object: Self = this.set("s3Object", js.undefined)
+    def setS3ObjectUndefined: Self = StObject.set(x, "s3Object", js.undefined)
   }
 }

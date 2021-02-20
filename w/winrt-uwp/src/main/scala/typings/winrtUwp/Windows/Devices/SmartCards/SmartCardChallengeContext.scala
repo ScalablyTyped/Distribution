@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Devices.SmartCards
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a smart card authentication challenge/response operation. */
 @js.native
-trait SmartCardChallengeContext extends js.Object {
+trait SmartCardChallengeContext extends StObject {
   
   /** Gets the smart card's challenge value. */
   var challenge: IBuffer = js.native

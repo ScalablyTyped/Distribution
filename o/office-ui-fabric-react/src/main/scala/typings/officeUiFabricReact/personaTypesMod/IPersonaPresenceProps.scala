@@ -3,6 +3,7 @@ package typings.officeUiFabricReact.personaTypesMod
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,36 +30,24 @@ object IPersonaPresenceProps {
   }
   
   @scala.inline
-  implicit class IPersonaPresencePropsOps[Self <: IPersonaPresenceProps] (val x: Self) extends AnyVal {
+  implicit class IPersonaPresencePropsMutableBuilder[Self <: IPersonaPresenceProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     
     @scala.inline
-    def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = this.set("componentRef", js.Any.fromFunction1(value))
+    def setStyles(value: IStyleFunctionOrObject[IPersonaPresenceStyleProps, IPersonaPresenceStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentRef(value: IRefObject[js.Object]): Self = this.set("componentRef", value.asInstanceOf[js.Any])
+    def setStylesFunction1(value: IPersonaPresenceStyleProps => DeepPartial[IPersonaPresenceStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteComponentRef: Self = this.set("componentRef", js.undefined)
-    
-    @scala.inline
-    def setStylesFunction1(value: IPersonaPresenceStyleProps => DeepPartial[IPersonaPresenceStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStyles(value: IStyleFunctionOrObject[IPersonaPresenceStyleProps, IPersonaPresenceStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

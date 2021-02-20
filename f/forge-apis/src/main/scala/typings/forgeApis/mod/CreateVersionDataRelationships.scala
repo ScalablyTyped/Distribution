@@ -1,11 +1,12 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateVersionDataRelationships extends js.Object {
+trait CreateVersionDataRelationships extends StObject {
   
   var item: js.UndefOr[CreateVersionDataRelationshipsItem] = js.native
   
@@ -20,30 +21,18 @@ object CreateVersionDataRelationships {
   }
   
   @scala.inline
-  implicit class CreateVersionDataRelationshipsOps[Self <: CreateVersionDataRelationships] (val x: Self) extends AnyVal {
+  implicit class CreateVersionDataRelationshipsMutableBuilder[Self <: CreateVersionDataRelationships] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: CreateVersionDataRelationshipsItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorage(value: CreateItemRelationshipsStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: CreateVersionDataRelationshipsItem): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
-    
-    @scala.inline
-    def setStorage(value: CreateItemRelationshipsStorage): Self = this.set("storage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorage: Self = this.set("storage", js.undefined)
+    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
   }
 }

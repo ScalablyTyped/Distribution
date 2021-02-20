@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptionAtRest extends js.Object {
+trait EncryptionAtRest extends StObject {
   
   /**
     * The encryption-at-rest mode for encrypting Data Catalog data.
@@ -26,27 +27,15 @@ object EncryptionAtRest {
   }
   
   @scala.inline
-  implicit class EncryptionAtRestOps[Self <: EncryptionAtRest] (val x: Self) extends AnyVal {
+  implicit class EncryptionAtRestMutableBuilder[Self <: EncryptionAtRest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogEncryptionMode(value: CatalogEncryptionMode): Self = StObject.set(x, "CatalogEncryptionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSseAwsKmsKeyId(value: NameString): Self = StObject.set(x, "SseAwsKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCatalogEncryptionMode(value: CatalogEncryptionMode): Self = this.set("CatalogEncryptionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSseAwsKmsKeyId(value: NameString): Self = this.set("SseAwsKmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSseAwsKmsKeyId: Self = this.set("SseAwsKmsKeyId", js.undefined)
+    def setSseAwsKmsKeyIdUndefined: Self = StObject.set(x, "SseAwsKmsKeyId", js.undefined)
   }
 }

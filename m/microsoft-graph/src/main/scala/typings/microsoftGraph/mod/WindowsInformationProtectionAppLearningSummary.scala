@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,39 +26,27 @@ object WindowsInformationProtectionAppLearningSummary {
   }
   
   @scala.inline
-  implicit class WindowsInformationProtectionAppLearningSummaryOps[Self <: WindowsInformationProtectionAppLearningSummary] (val x: Self) extends AnyVal {
+  implicit class WindowsInformationProtectionAppLearningSummaryMutableBuilder[Self <: WindowsInformationProtectionAppLearningSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: NullableOption[String]): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameNull: Self = StObject.set(x, "applicationName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
     @scala.inline
-    def setApplicationName(value: NullableOption[String]): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setApplicationType(value: ApplicationType): Self = StObject.set(x, "applicationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
+    def setApplicationTypeUndefined: Self = StObject.set(x, "applicationType", js.undefined)
     
     @scala.inline
-    def setApplicationNameNull: Self = this.set("applicationName", null)
+    def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationType(value: ApplicationType): Self = this.set("applicationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationType: Self = this.set("applicationType", js.undefined)
-    
-    @scala.inline
-    def setDeviceCount(value: Double): Self = this.set("deviceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceCount: Self = this.set("deviceCount", js.undefined)
+    def setDeviceCountUndefined: Self = StObject.set(x, "deviceCount", js.undefined)
   }
 }

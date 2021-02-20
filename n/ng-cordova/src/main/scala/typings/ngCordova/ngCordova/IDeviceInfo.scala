@@ -1,11 +1,12 @@
 package typings.ngCordova.ngCordova
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDeviceInfo extends js.Object {
+trait IDeviceInfo extends StObject {
   
   var available: Boolean = js.native
   
@@ -44,45 +45,33 @@ object IDeviceInfo {
   }
   
   @scala.inline
-  implicit class IDeviceInfoOps[Self <: IDeviceInfo] (val x: Self) extends AnyVal {
+  implicit class IDeviceInfoMutableBuilder[Self <: IDeviceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCordova(value: String): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsVirtual(value: Boolean): Self = StObject.set(x, "isVirtual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: Boolean): Self = this.set("available", value.asInstanceOf[js.Any])
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCordova(value: String): Self = this.set("cordova", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVirtual(value: Boolean): Self = this.set("isVirtual", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerial(value: String): Self = this.set("serial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

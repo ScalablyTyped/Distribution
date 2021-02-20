@@ -1,6 +1,7 @@
 package typings.log4js.mod
 
 import typings.log4js.log4jsStrings.multiFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object MultiFileAppender {
   }
   
   @scala.inline
-  implicit class MultiFileAppenderOps[Self <: MultiFileAppender] (val x: Self) extends AnyVal {
+  implicit class MultiFileAppenderMutableBuilder[Self <: MultiFileAppender] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: multiFile): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: multiFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

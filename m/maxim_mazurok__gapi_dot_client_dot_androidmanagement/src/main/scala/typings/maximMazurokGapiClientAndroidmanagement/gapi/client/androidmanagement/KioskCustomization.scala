@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KioskCustomization extends js.Object {
+trait KioskCustomization extends StObject {
   
   /** Specifies whether the Settings app is allowed in kiosk mode. */
   var deviceSettings: js.UndefOr[String] = js.native
@@ -34,48 +35,36 @@ object KioskCustomization {
   }
   
   @scala.inline
-  implicit class KioskCustomizationOps[Self <: KioskCustomization] (val x: Self) extends AnyVal {
+  implicit class KioskCustomizationMutableBuilder[Self <: KioskCustomization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceSettings(value: String): Self = StObject.set(x, "deviceSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceSettingsUndefined: Self = StObject.set(x, "deviceSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPowerButtonActions(value: String): Self = StObject.set(x, "powerButtonActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceSettings(value: String): Self = this.set("deviceSettings", value.asInstanceOf[js.Any])
+    def setPowerButtonActionsUndefined: Self = StObject.set(x, "powerButtonActions", js.undefined)
     
     @scala.inline
-    def deleteDeviceSettings: Self = this.set("deviceSettings", js.undefined)
+    def setStatusBar(value: String): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerButtonActions(value: String): Self = this.set("powerButtonActions", value.asInstanceOf[js.Any])
+    def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
     
     @scala.inline
-    def deletePowerButtonActions: Self = this.set("powerButtonActions", js.undefined)
+    def setSystemErrorWarnings(value: String): Self = StObject.set(x, "systemErrorWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusBar(value: String): Self = this.set("statusBar", value.asInstanceOf[js.Any])
+    def setSystemErrorWarningsUndefined: Self = StObject.set(x, "systemErrorWarnings", js.undefined)
     
     @scala.inline
-    def deleteStatusBar: Self = this.set("statusBar", js.undefined)
+    def setSystemNavigation(value: String): Self = StObject.set(x, "systemNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemErrorWarnings(value: String): Self = this.set("systemErrorWarnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemErrorWarnings: Self = this.set("systemErrorWarnings", js.undefined)
-    
-    @scala.inline
-    def setSystemNavigation(value: String): Self = this.set("systemNavigation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemNavigation: Self = this.set("systemNavigation", js.undefined)
+    def setSystemNavigationUndefined: Self = StObject.set(x, "systemNavigation", js.undefined)
   }
 }

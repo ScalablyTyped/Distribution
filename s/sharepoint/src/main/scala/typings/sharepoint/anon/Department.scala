@@ -1,11 +1,12 @@
 package typings.sharepoint.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Department extends js.Object {
+trait Department extends StObject {
   
   var Department: String = js.native
   
@@ -24,30 +25,18 @@ object Department {
   }
   
   @scala.inline
-  implicit class DepartmentOps[Self <: Department] (val x: Self) extends AnyVal {
+  implicit class DepartmentMutableBuilder[Self <: Department] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepartment(value: String): Self = StObject.set(x, "Department", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMobilePhone(value: String): Self = StObject.set(x, "MobilePhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartment(value: String): Self = this.set("Department", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("Email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMobilePhone(value: String): Self = this.set("MobilePhone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

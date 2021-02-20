@@ -1,5 +1,6 @@
 package typings.angularFormly.AngularFormly
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see http://docs.angular-formly.com/docs/field-configuration-object#validators-object
   */
 @js.native
-trait IValidator extends js.Object {
+trait IValidator extends StObject {
   
   var expression: String | IExpressionFunction = js.native
   
@@ -23,33 +24,21 @@ object IValidator {
   }
   
   @scala.inline
-  implicit class IValidatorOps[Self <: IValidator] (val x: Self) extends AnyVal {
+  implicit class IValidatorMutableBuilder[Self <: IValidator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: String | IExpressionFunction): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "expression", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String | IExpressionFunction): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("expression", js.Any.fromFunction3(value))
+    def setMessageFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setExpression(value: String | IExpressionFunction): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("message", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setMessage(value: String | IExpressionFunction): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

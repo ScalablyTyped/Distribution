@@ -1,6 +1,7 @@
 package typings.weixinApp.wx
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppendFileOptions
   extends BaseOptions[js.Any, js.Any] {
   
-   // 要追加内容的文件路径
+  // 要追加内容的文件路径
   var data: String | ArrayBuffer = js.native
   
-   // 要追加的文本或二进制数据
+  // 要追加的文本或二进制数据
   var encoding: js.UndefOr[String] = js.native
   
   var filePath: String = js.native
@@ -26,30 +27,18 @@ object AppendFileOptions {
   }
   
   @scala.inline
-  implicit class AppendFileOptionsOps[Self <: AppendFileOptions] (val x: Self) extends AnyVal {
+  implicit class AppendFileOptionsMutableBuilder[Self <: AppendFileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setData(value: String | ArrayBuffer): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }
 }

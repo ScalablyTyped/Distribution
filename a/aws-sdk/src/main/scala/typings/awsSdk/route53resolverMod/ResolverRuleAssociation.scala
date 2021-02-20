@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolverRuleAssociation extends js.Object {
+trait ResolverRuleAssociation extends StObject {
   
   /**
     * The ID of the association between a Resolver rule and a VPC. Resolver assigns this value when you submit an AssociateResolverRule request.
@@ -46,54 +47,42 @@ object ResolverRuleAssociation {
   }
   
   @scala.inline
-  implicit class ResolverRuleAssociationOps[Self <: ResolverRuleAssociation] (val x: Self) extends AnyVal {
+  implicit class ResolverRuleAssociationMutableBuilder[Self <: ResolverRuleAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ResourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setResolverRuleId(value: ResourceId): Self = StObject.set(x, "ResolverRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setResolverRuleIdUndefined: Self = StObject.set(x, "ResolverRuleId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setStatus(value: ResolverRuleAssociationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolverRuleId(value: ResourceId): Self = this.set("ResolverRuleId", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolverRuleId: Self = this.set("ResolverRuleId", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: ResolverRuleAssociationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setVPCId(value: ResourceId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
-    
-    @scala.inline
-    def setVPCId(value: ResourceId): Self = this.set("VPCId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVPCId: Self = this.set("VPCId", js.undefined)
+    def setVPCIdUndefined: Self = StObject.set(x, "VPCId", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.dataviz.ui
 
 import typings.kendoUi.kendo.dataviz.map.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapOptions extends js.Object {
+trait MapOptions extends StObject {
   
   var beforeReset: js.UndefOr[js.Function1[/* e */ MapBeforeResetEvent, Unit]] = js.native
   
@@ -75,198 +76,186 @@ object MapOptions {
   }
   
   @scala.inline
-  implicit class MapOptionsOps[Self <: MapOptions] (val x: Self) extends AnyVal {
+  implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeReset(value: /* e */ MapBeforeResetEvent => Unit): Self = StObject.set(x, "beforeReset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeResetUndefined: Self = StObject.set(x, "beforeReset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenter(value: js.Any | Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeReset(value: /* e */ MapBeforeResetEvent => Unit): Self = this.set("beforeReset", js.Any.fromFunction1(value))
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteBeforeReset: Self = this.set("beforeReset", js.undefined)
+    def setClick(value: /* e */ MapClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCenter(value: js.Any | Location): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setControls(value: MapControls): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: /* e */ MapClickEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setLayerDefaults(value: MapLayerDefaults): Self = StObject.set(x, "layerDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControls(value: MapControls): Self = this.set("controls", value.asInstanceOf[js.Any])
+    def setLayerDefaultsUndefined: Self = StObject.set(x, "layerDefaults", js.undefined)
     
     @scala.inline
-    def deleteControls: Self = this.set("controls", js.undefined)
+    def setLayers(value: js.Array[MapLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerDefaults(value: MapLayerDefaults): Self = this.set("layerDefaults", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def deleteLayerDefaults: Self = this.set("layerDefaults", js.undefined)
+    def setLayersVarargs(value: MapLayer*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
     @scala.inline
-    def setLayersVarargs(value: MapLayer*): Self = this.set("layers", js.Array(value :_*))
+    def setMarkerActivate(value: /* e */ MapMarkerActivateEvent => Unit): Self = StObject.set(x, "markerActivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLayers(value: js.Array[MapLayer]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setMarkerActivateUndefined: Self = StObject.set(x, "markerActivate", js.undefined)
     
     @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setMarkerClick(value: /* e */ MapMarkerClickEvent => Unit): Self = StObject.set(x, "markerClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkerActivate(value: /* e */ MapMarkerActivateEvent => Unit): Self = this.set("markerActivate", js.Any.fromFunction1(value))
+    def setMarkerClickUndefined: Self = StObject.set(x, "markerClick", js.undefined)
     
     @scala.inline
-    def deleteMarkerActivate: Self = this.set("markerActivate", js.undefined)
+    def setMarkerCreated(value: /* e */ MapMarkerCreatedEvent => Unit): Self = StObject.set(x, "markerCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkerClick(value: /* e */ MapMarkerClickEvent => Unit): Self = this.set("markerClick", js.Any.fromFunction1(value))
+    def setMarkerCreatedUndefined: Self = StObject.set(x, "markerCreated", js.undefined)
     
     @scala.inline
-    def deleteMarkerClick: Self = this.set("markerClick", js.undefined)
+    def setMarkerDefaults(value: MapMarkerDefaults): Self = StObject.set(x, "markerDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerCreated(value: /* e */ MapMarkerCreatedEvent => Unit): Self = this.set("markerCreated", js.Any.fromFunction1(value))
+    def setMarkerDefaultsUndefined: Self = StObject.set(x, "markerDefaults", js.undefined)
     
     @scala.inline
-    def deleteMarkerCreated: Self = this.set("markerCreated", js.undefined)
+    def setMarkers(value: js.Array[MapMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerDefaults(value: MapMarkerDefaults): Self = this.set("markerDefaults", value.asInstanceOf[js.Any])
+    def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
     
     @scala.inline
-    def deleteMarkerDefaults: Self = this.set("markerDefaults", js.undefined)
+    def setMarkersVarargs(value: MapMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
     
     @scala.inline
-    def setMarkersVarargs(value: MapMarker*): Self = this.set("markers", js.Array(value :_*))
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkers(value: js.Array[MapMarker]): Self = this.set("markers", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteMarkers: Self = this.set("markers", js.undefined)
+    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setPan(value: /* e */ MapPanEvent => Unit): Self = StObject.set(x, "pan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPanEnd(value: /* e */ MapPanEndEvent => Unit): Self = StObject.set(x, "panEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPanEndUndefined: Self = StObject.set(x, "panEnd", js.undefined)
     
     @scala.inline
-    def setPan(value: /* e */ MapPanEvent => Unit): Self = this.set("pan", js.Any.fromFunction1(value))
+    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
     
     @scala.inline
-    def deletePan: Self = this.set("pan", js.undefined)
+    def setPannable(value: Boolean): Self = StObject.set(x, "pannable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanEnd(value: /* e */ MapPanEndEvent => Unit): Self = this.set("panEnd", js.Any.fromFunction1(value))
+    def setPannableUndefined: Self = StObject.set(x, "pannable", js.undefined)
     
     @scala.inline
-    def deletePanEnd: Self = this.set("panEnd", js.undefined)
+    def setReset(value: /* e */ MapResetEvent => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPannable(value: Boolean): Self = this.set("pannable", value.asInstanceOf[js.Any])
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deletePannable: Self = this.set("pannable", js.undefined)
+    def setShapeClick(value: /* e */ MapShapeClickEvent => Unit): Self = StObject.set(x, "shapeClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: /* e */ MapResetEvent => Unit): Self = this.set("reset", js.Any.fromFunction1(value))
+    def setShapeClickUndefined: Self = StObject.set(x, "shapeClick", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setShapeCreated(value: /* e */ MapShapeCreatedEvent => Unit): Self = StObject.set(x, "shapeCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShapeClick(value: /* e */ MapShapeClickEvent => Unit): Self = this.set("shapeClick", js.Any.fromFunction1(value))
+    def setShapeCreatedUndefined: Self = StObject.set(x, "shapeCreated", js.undefined)
     
     @scala.inline
-    def deleteShapeClick: Self = this.set("shapeClick", js.undefined)
+    def setShapeFeatureCreated(value: /* e */ MapShapeFeatureCreatedEvent => Unit): Self = StObject.set(x, "shapeFeatureCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShapeCreated(value: /* e */ MapShapeCreatedEvent => Unit): Self = this.set("shapeCreated", js.Any.fromFunction1(value))
+    def setShapeFeatureCreatedUndefined: Self = StObject.set(x, "shapeFeatureCreated", js.undefined)
     
     @scala.inline
-    def deleteShapeCreated: Self = this.set("shapeCreated", js.undefined)
+    def setShapeMouseEnter(value: /* e */ MapShapeMouseEnterEvent => Unit): Self = StObject.set(x, "shapeMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShapeFeatureCreated(value: /* e */ MapShapeFeatureCreatedEvent => Unit): Self = this.set("shapeFeatureCreated", js.Any.fromFunction1(value))
+    def setShapeMouseEnterUndefined: Self = StObject.set(x, "shapeMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteShapeFeatureCreated: Self = this.set("shapeFeatureCreated", js.undefined)
+    def setShapeMouseLeave(value: /* e */ MapShapeMouseLeaveEvent => Unit): Self = StObject.set(x, "shapeMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShapeMouseEnter(value: /* e */ MapShapeMouseEnterEvent => Unit): Self = this.set("shapeMouseEnter", js.Any.fromFunction1(value))
+    def setShapeMouseLeaveUndefined: Self = StObject.set(x, "shapeMouseLeave", js.undefined)
     
     @scala.inline
-    def deleteShapeMouseEnter: Self = this.set("shapeMouseEnter", js.undefined)
+    def setWraparound(value: Boolean): Self = StObject.set(x, "wraparound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeMouseLeave(value: /* e */ MapShapeMouseLeaveEvent => Unit): Self = this.set("shapeMouseLeave", js.Any.fromFunction1(value))
+    def setWraparoundUndefined: Self = StObject.set(x, "wraparound", js.undefined)
     
     @scala.inline
-    def deleteShapeMouseLeave: Self = this.set("shapeMouseLeave", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWraparound(value: Boolean): Self = this.set("wraparound", value.asInstanceOf[js.Any])
+    def setZoomEnd(value: /* e */ MapZoomEndEvent => Unit): Self = StObject.set(x, "zoomEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWraparound: Self = this.set("wraparound", js.undefined)
+    def setZoomEndUndefined: Self = StObject.set(x, "zoomEnd", js.undefined)
     
     @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoomStart(value: /* e */ MapZoomStartEvent => Unit): Self = StObject.set(x, "zoomStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomStartUndefined: Self = StObject.set(x, "zoomStart", js.undefined)
     
     @scala.inline
-    def setZoomEnd(value: /* e */ MapZoomEndEvent => Unit): Self = this.set("zoomEnd", js.Any.fromFunction1(value))
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     
     @scala.inline
-    def deleteZoomEnd: Self = this.set("zoomEnd", js.undefined)
+    def setZoomable(value: Boolean): Self = StObject.set(x, "zoomable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomStart(value: /* e */ MapZoomStartEvent => Unit): Self = this.set("zoomStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteZoomStart: Self = this.set("zoomStart", js.undefined)
-    
-    @scala.inline
-    def setZoomable(value: Boolean): Self = this.set("zoomable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomable: Self = this.set("zoomable", js.undefined)
+    def setZoomableUndefined: Self = StObject.set(x, "zoomable", js.undefined)
   }
 }

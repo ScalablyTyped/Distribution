@@ -1,5 +1,6 @@
 package typings.nodeHueApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeHueApi.nodeHueApiStrings.select
   - typings.nodeHueApi.nodeHueApiStrings.lselect
 */
-trait LightAlert extends js.Object
+trait LightAlert extends StObject
 object LightAlert {
   
   @scala.inline

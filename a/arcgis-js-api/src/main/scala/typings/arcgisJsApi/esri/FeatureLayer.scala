@@ -12,6 +12,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import typings.std.Date
 import typings.std.FormData
 import typings.std.HTMLFormElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

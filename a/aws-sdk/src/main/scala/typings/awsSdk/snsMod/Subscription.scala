@@ -1,11 +1,12 @@
 package typings.awsSdk.snsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Subscription extends js.Object {
+trait Subscription extends StObject {
   
   /**
     * The subscription's endpoint (format depends on the protocol).
@@ -41,48 +42,36 @@ object Subscription {
   }
   
   @scala.inline
-  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: account): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: endpoint): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    def setProtocol(value: protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: account): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setSubscriptionArn(value: subscriptionARN): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    def setSubscriptionArnUndefined: Self = StObject.set(x, "SubscriptionArn", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionArn(value: subscriptionARN): Self = this.set("SubscriptionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionArn: Self = this.set("SubscriptionArn", js.undefined)
-    
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

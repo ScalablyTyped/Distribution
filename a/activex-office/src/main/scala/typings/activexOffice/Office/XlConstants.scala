@@ -36,6 +36,7 @@ import typings.activexOffice.activexOfficeNumbers.`4`
 import typings.activexOffice.activexOfficeNumbers.`5`
 import typings.activexOffice.activexOfficeNumbers.`8`
 import typings.activexOffice.activexOfficeNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +79,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`10`
   - typings.activexOffice.activexOfficeNumbers.`-4160`
 */
-trait XlConstants extends js.Object
+trait XlConstants extends StObject
 object XlConstants {
   
   @scala.inline

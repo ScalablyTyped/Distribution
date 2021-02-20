@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filters extends js.Object {
+trait Filters extends StObject {
   
   /**
     * The channel to use to filter the metrics.
@@ -26,36 +27,24 @@ object Filters {
   }
   
   @scala.inline
-  implicit class FiltersOps[Self <: Filters] (val x: Self) extends AnyVal {
+  implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: Channels): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "Channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannelsVarargs(value: Channel*): Self = this.set("Channels", js.Array(value :_*))
+    def setQueues(value: Queues): Self = StObject.set(x, "Queues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: Channels): Self = this.set("Channels", value.asInstanceOf[js.Any])
+    def setQueuesUndefined: Self = StObject.set(x, "Queues", js.undefined)
     
     @scala.inline
-    def deleteChannels: Self = this.set("Channels", js.undefined)
-    
-    @scala.inline
-    def setQueuesVarargs(value: QueueId*): Self = this.set("Queues", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueues(value: Queues): Self = this.set("Queues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueues: Self = this.set("Queues", js.undefined)
+    def setQueuesVarargs(value: QueueId*): Self = StObject.set(x, "Queues", js.Array(value :_*))
   }
 }

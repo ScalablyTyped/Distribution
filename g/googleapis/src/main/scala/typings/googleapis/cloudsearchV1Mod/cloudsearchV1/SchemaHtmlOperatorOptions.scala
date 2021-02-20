@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to the type of item being searched.
   */
 @js.native
-trait SchemaHtmlOperatorOptions extends js.Object {
+trait SchemaHtmlOperatorOptions extends StObject {
   
   /**
     * Indicates the operator name required in the query in order to isolate the
@@ -35,24 +36,12 @@ object SchemaHtmlOperatorOptions {
   }
   
   @scala.inline
-  implicit class SchemaHtmlOperatorOptionsOps[Self <: SchemaHtmlOperatorOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaHtmlOperatorOptionsMutableBuilder[Self <: SchemaHtmlOperatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
+    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

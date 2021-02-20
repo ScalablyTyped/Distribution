@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the user account.
@@ -66,81 +67,69 @@ object User {
   }
   
   @scala.inline
-  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryUserId(value: DirectoryUserId): Self = StObject.set(x, "DirectoryUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: ARN): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setDirectoryUserIdUndefined: Self = StObject.set(x, "DirectoryUserId", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setHierarchyGroupId(value: HierarchyGroupId): Self = StObject.set(x, "HierarchyGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryUserId(value: DirectoryUserId): Self = this.set("DirectoryUserId", value.asInstanceOf[js.Any])
+    def setHierarchyGroupIdUndefined: Self = StObject.set(x, "HierarchyGroupId", js.undefined)
     
     @scala.inline
-    def deleteDirectoryUserId: Self = this.set("DirectoryUserId", js.undefined)
+    def setId(value: UserId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchyGroupId(value: HierarchyGroupId): Self = this.set("HierarchyGroupId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteHierarchyGroupId: Self = this.set("HierarchyGroupId", js.undefined)
+    def setIdentityInfo(value: UserIdentityInfo): Self = StObject.set(x, "IdentityInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: UserId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setIdentityInfoUndefined: Self = StObject.set(x, "IdentityInfo", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setPhoneConfig(value: UserPhoneConfig): Self = StObject.set(x, "PhoneConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityInfo(value: UserIdentityInfo): Self = this.set("IdentityInfo", value.asInstanceOf[js.Any])
+    def setPhoneConfigUndefined: Self = StObject.set(x, "PhoneConfig", js.undefined)
     
     @scala.inline
-    def deleteIdentityInfo: Self = this.set("IdentityInfo", js.undefined)
+    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneConfig(value: UserPhoneConfig): Self = this.set("PhoneConfig", value.asInstanceOf[js.Any])
+    def setRoutingProfileIdUndefined: Self = StObject.set(x, "RoutingProfileId", js.undefined)
     
     @scala.inline
-    def deletePhoneConfig: Self = this.set("PhoneConfig", js.undefined)
+    def setSecurityProfileIds(value: SecurityProfileIds): Self = StObject.set(x, "SecurityProfileIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = this.set("RoutingProfileId", value.asInstanceOf[js.Any])
+    def setSecurityProfileIdsUndefined: Self = StObject.set(x, "SecurityProfileIds", js.undefined)
     
     @scala.inline
-    def deleteRoutingProfileId: Self = this.set("RoutingProfileId", js.undefined)
+    def setSecurityProfileIdsVarargs(value: SecurityProfileId*): Self = StObject.set(x, "SecurityProfileIds", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityProfileIdsVarargs(value: SecurityProfileId*): Self = this.set("SecurityProfileIds", js.Array(value :_*))
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityProfileIds(value: SecurityProfileIds): Self = this.set("SecurityProfileIds", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSecurityProfileIds: Self = this.set("SecurityProfileIds", js.undefined)
+    def setUsername(value: AgentUsername): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: AgentUsername): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

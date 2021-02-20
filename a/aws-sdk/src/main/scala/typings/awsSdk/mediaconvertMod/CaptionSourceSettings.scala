@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptionSourceSettings extends js.Object {
+trait CaptionSourceSettings extends StObject {
   
   /**
     * Settings for ancillary captions source.
@@ -51,60 +52,48 @@ object CaptionSourceSettings {
   }
   
   @scala.inline
-  implicit class CaptionSourceSettingsOps[Self <: CaptionSourceSettings] (val x: Self) extends AnyVal {
+  implicit class CaptionSourceSettingsMutableBuilder[Self <: CaptionSourceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAncillarySourceSettings(value: AncillarySourceSettings): Self = StObject.set(x, "AncillarySourceSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAncillarySourceSettingsUndefined: Self = StObject.set(x, "AncillarySourceSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDvbSubSourceSettings(value: DvbSubSourceSettings): Self = StObject.set(x, "DvbSubSourceSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAncillarySourceSettings(value: AncillarySourceSettings): Self = this.set("AncillarySourceSettings", value.asInstanceOf[js.Any])
+    def setDvbSubSourceSettingsUndefined: Self = StObject.set(x, "DvbSubSourceSettings", js.undefined)
     
     @scala.inline
-    def deleteAncillarySourceSettings: Self = this.set("AncillarySourceSettings", js.undefined)
+    def setEmbeddedSourceSettings(value: EmbeddedSourceSettings): Self = StObject.set(x, "EmbeddedSourceSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDvbSubSourceSettings(value: DvbSubSourceSettings): Self = this.set("DvbSubSourceSettings", value.asInstanceOf[js.Any])
+    def setEmbeddedSourceSettingsUndefined: Self = StObject.set(x, "EmbeddedSourceSettings", js.undefined)
     
     @scala.inline
-    def deleteDvbSubSourceSettings: Self = this.set("DvbSubSourceSettings", js.undefined)
+    def setFileSourceSettings(value: FileSourceSettings): Self = StObject.set(x, "FileSourceSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedSourceSettings(value: EmbeddedSourceSettings): Self = this.set("EmbeddedSourceSettings", value.asInstanceOf[js.Any])
+    def setFileSourceSettingsUndefined: Self = StObject.set(x, "FileSourceSettings", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedSourceSettings: Self = this.set("EmbeddedSourceSettings", js.undefined)
+    def setSourceType(value: CaptionSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSourceSettings(value: FileSourceSettings): Self = this.set("FileSourceSettings", value.asInstanceOf[js.Any])
+    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
     @scala.inline
-    def deleteFileSourceSettings: Self = this.set("FileSourceSettings", js.undefined)
+    def setTeletextSourceSettings(value: TeletextSourceSettings): Self = StObject.set(x, "TeletextSourceSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceType(value: CaptionSourceType): Self = this.set("SourceType", value.asInstanceOf[js.Any])
+    def setTeletextSourceSettingsUndefined: Self = StObject.set(x, "TeletextSourceSettings", js.undefined)
     
     @scala.inline
-    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    def setTrackSourceSettings(value: TrackSourceSettings): Self = StObject.set(x, "TrackSourceSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeletextSourceSettings(value: TeletextSourceSettings): Self = this.set("TeletextSourceSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeletextSourceSettings: Self = this.set("TeletextSourceSettings", js.undefined)
-    
-    @scala.inline
-    def setTrackSourceSettings(value: TrackSourceSettings): Self = this.set("TrackSourceSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackSourceSettings: Self = this.set("TrackSourceSettings", js.undefined)
+    def setTrackSourceSettingsUndefined: Self = StObject.set(x, "TrackSourceSettings", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartWorkerRequest extends js.Object {
+trait StartWorkerRequest extends StObject {
   
   var scopeURL: String = js.native
 }
@@ -18,21 +19,9 @@ object StartWorkerRequest {
   }
   
   @scala.inline
-  implicit class StartWorkerRequestOps[Self <: StartWorkerRequest] (val x: Self) extends AnyVal {
+  implicit class StartWorkerRequestMutableBuilder[Self <: StartWorkerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScopeURL(value: String): Self = this.set("scopeURL", value.asInstanceOf[js.Any])
+    def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
   }
 }

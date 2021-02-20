@@ -1,5 +1,6 @@
 package typings.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,27 +32,15 @@ object Conditional {
   }
   
   @scala.inline
-  implicit class ConditionalOps[Self <: Conditional] (val x: Self) extends AnyVal {
+  implicit class ConditionalMutableBuilder[Self <: Conditional] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFalseExpression(value: ASTNode): Self = StObject.set(x, "falseExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTrueExpression(value: ASTNode): Self = StObject.set(x, "trueExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFalseExpression(value: ASTNode): Self = this.set("falseExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrueExpression(value: ASTNode): Self = this.set("trueExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

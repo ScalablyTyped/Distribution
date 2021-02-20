@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GamepadButtonChanges extends js.Object {
+trait GamepadButtonChanges extends StObject {
   
   /**
     * Called when a gamepad has been changed
@@ -36,30 +37,18 @@ object GamepadButtonChanges {
   }
   
   @scala.inline
-  implicit class GamepadButtonChangesOps[Self <: GamepadButtonChanges] (val x: Self) extends AnyVal {
+  implicit class GamepadButtonChangesMutableBuilder[Self <: GamepadButtonChanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPressChanged(value: Boolean): Self = StObject.set(x, "pressChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTouchChanged(value: Boolean): Self = StObject.set(x, "touchChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanged(value: Boolean): Self = this.set("changed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPressChanged(value: Boolean): Self = this.set("pressChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchChanged(value: Boolean): Self = this.set("touchChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueChanged(value: Boolean): Self = this.set("valueChanged", value.asInstanceOf[js.Any])
+    def setValueChanged(value: Boolean): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
   }
 }

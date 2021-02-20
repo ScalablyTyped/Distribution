@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShortcutDetails extends js.Object {
+trait ShortcutDetails extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/shortcut-details
   /**
@@ -54,57 +55,45 @@ object ShortcutDetails {
   }
   
   @scala.inline
-  implicit class ShortcutDetailsOps[Self <: ShortcutDetails] (val x: Self) extends AnyVal {
+  implicit class ShortcutDetailsMutableBuilder[Self <: ShortcutDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppUserModelId(value: String): Self = StObject.set(x, "appUserModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppUserModelIdUndefined: Self = StObject.set(x, "appUserModelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgs(value: String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def setAppUserModelId(value: String): Self = this.set("appUserModelId", value.asInstanceOf[js.Any])
+    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppUserModelId: Self = this.set("appUserModelId", js.undefined)
+    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     @scala.inline
-    def setArgs(value: String): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCwd: Self = this.set("cwd", js.undefined)
+    def setIconIndex(value: Double): Self = StObject.set(x, "iconIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIconIndexUndefined: Self = StObject.set(x, "iconIndex", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
-    
-    @scala.inline
-    def setIconIndex(value: Double): Self = this.set("iconIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconIndex: Self = this.set("iconIndex", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

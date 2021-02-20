@@ -4,12 +4,13 @@ import typings.chrome.chrome.storage.LocalStorageArea
 import typings.chrome.chrome.storage.StorageArea
 import typings.chrome.chrome.storage.StorageChangedEvent
 import typings.chrome.chrome.storage.SyncStorageArea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofstorage extends js.Object {
+trait Typeofstorage extends StObject {
   
   var local: LocalStorageArea = js.native
   
@@ -33,30 +34,18 @@ object Typeofstorage {
   }
   
   @scala.inline
-  implicit class TypeofstorageOps[Self <: Typeofstorage] (val x: Self) extends AnyVal {
+  implicit class TypeofstorageMutableBuilder[Self <: Typeofstorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocal(value: LocalStorageArea): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManaged(value: StorageArea): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnChanged(value: StorageChangedEvent): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: LocalStorageArea): Self = this.set("local", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManaged(value: StorageArea): Self = this.set("managed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnChanged(value: StorageChangedEvent): Self = this.set("onChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSync(value: SyncStorageArea): Self = this.set("sync", value.asInstanceOf[js.Any])
+    def setSync(value: SyncStorageArea): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
   }
 }

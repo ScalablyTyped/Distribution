@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultElectronicSignatureOperations extends js.Object {
+trait IVaultElectronicSignatureOperations extends StObject {
   
   def AddEmptySignature(ObjVer: IObjVer, SignatureIdentifier: String): IObjectVersionAndProperties = js.native
   
@@ -35,36 +36,24 @@ object IVaultElectronicSignatureOperations {
   }
   
   @scala.inline
-  implicit class IVaultElectronicSignatureOperationsOps[Self <: IVaultElectronicSignatureOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultElectronicSignatureOperationsMutableBuilder[Self <: IVaultElectronicSignatureOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEmptySignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = StObject.set(x, "AddEmptySignature", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddEmptySignatures(value: IObjVer => IObjectVersionAndProperties): Self = StObject.set(x, "AddEmptySignatures", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisconnectSignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignature", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddEmptySignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = this.set("AddEmptySignature", js.Any.fromFunction2(value))
+    def setDisconnectSignatureEx(value: (IObjVer, String, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignatureEx", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddEmptySignatures(value: IObjVer => IObjectVersionAndProperties): Self = this.set("AddEmptySignatures", js.Any.fromFunction1(value))
+    def setDisconnectSignatures(value: IObjVer => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignatures", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisconnectSignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = this.set("DisconnectSignature", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDisconnectSignatureEx(value: (IObjVer, String, Boolean) => IObjectVersionAndProperties): Self = this.set("DisconnectSignatureEx", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setDisconnectSignatures(value: IObjVer => IObjectVersionAndProperties): Self = this.set("DisconnectSignatures", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDisconnectSignaturesEx(value: (IObjVer, Boolean) => IObjectVersionAndProperties): Self = this.set("DisconnectSignaturesEx", js.Any.fromFunction2(value))
+    def setDisconnectSignaturesEx(value: (IObjVer, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignaturesEx", js.Any.fromFunction2(value))
   }
 }

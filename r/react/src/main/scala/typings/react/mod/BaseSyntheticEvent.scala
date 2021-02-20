@@ -1,5 +1,6 @@
 package typings.react.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // ----------------------------------------------------------------------
 // TODO: change any to unknown when moving to TS v3
 @js.native
-trait BaseSyntheticEvent[E, C, T] extends js.Object {
+trait BaseSyntheticEvent[E, C, T] extends StObject {
   
   var bubbles: Boolean = js.native
   
@@ -67,63 +68,51 @@ object BaseSyntheticEvent {
   }
   
   @scala.inline
-  implicit class BaseSyntheticEventOps[Self <: BaseSyntheticEvent[_, _, _], E, C, T] (val x: Self with (BaseSyntheticEvent[E, C, T])) extends AnyVal {
+  implicit class BaseSyntheticEventMutableBuilder[Self <: BaseSyntheticEvent[_, _, _], E, C, T] (val x: Self with (BaseSyntheticEvent[E, C, T])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTarget(value: C): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbles(value: Boolean): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelable(value: Boolean): Self = this.set("cancelable", value.asInstanceOf[js.Any])
+    def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTarget(value: C): Self = this.set("currentTarget", value.asInstanceOf[js.Any])
+    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = this.set("defaultPrevented", value.asInstanceOf[js.Any])
+    def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEventPhase(value: Double): Self = this.set("eventPhase", value.asInstanceOf[js.Any])
+    def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = this.set("isDefaultPrevented", js.Any.fromFunction0(value))
+    def setNativeEvent(value: E): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPropagationStopped(value: () => Boolean): Self = this.set("isPropagationStopped", js.Any.fromFunction0(value))
+    def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsTrusted(value: Boolean): Self = this.set("isTrusted", value.asInstanceOf[js.Any])
+    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNativeEvent(value: E): Self = this.set("nativeEvent", value.asInstanceOf[js.Any])
+    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPersist(value: () => Unit): Self = this.set("persist", js.Any.fromFunction0(value))
+    def setTarget(value: T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventDefault(value: () => Unit): Self = this.set("preventDefault", js.Any.fromFunction0(value))
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopPropagation(value: () => Unit): Self = this.set("stopPropagation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTarget(value: T): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

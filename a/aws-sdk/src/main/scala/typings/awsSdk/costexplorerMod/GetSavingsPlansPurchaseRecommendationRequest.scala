@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSavingsPlansPurchaseRecommendationRequest extends js.Object {
+trait GetSavingsPlansPurchaseRecommendationRequest extends StObject {
   
   /**
     * The account scope that you want your recommendations for. Amazon Web Services calculates recommendations including the management account and member accounts if the value is set to PAYER. If the value is LINKED, recommendations are calculated for individual member accounts only.
@@ -61,54 +62,42 @@ object GetSavingsPlansPurchaseRecommendationRequest {
   }
   
   @scala.inline
-  implicit class GetSavingsPlansPurchaseRecommendationRequestOps[Self <: GetSavingsPlansPurchaseRecommendationRequest] (val x: Self) extends AnyVal {
+  implicit class GetSavingsPlansPurchaseRecommendationRequestMutableBuilder[Self <: GetSavingsPlansPurchaseRecommendationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountScopeUndefined: Self = StObject.set(x, "AccountScope", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = this.set("LookbackPeriodInDays", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def setPaymentOption(value: PaymentOption): Self = this.set("PaymentOption", value.asInstanceOf[js.Any])
+    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPlansType(value: SupportedSavingsPlansType): Self = this.set("SavingsPlansType", value.asInstanceOf[js.Any])
+    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTermInYears(value: TermInYears): Self = this.set("TermInYears", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def setAccountScope(value: AccountScope): Self = this.set("AccountScope", value.asInstanceOf[js.Any])
+    def setPageSize(value: NonNegativeInteger): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountScope: Self = this.set("AccountScope", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
     @scala.inline
-    def setFilter(value: Expression): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setSavingsPlansType(value: SupportedSavingsPlansType): Self = StObject.set(x, "SavingsPlansType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
-    
-    @scala.inline
-    def setPageSize(value: NonNegativeInteger): Self = this.set("PageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    def setTermInYears(value: TermInYears): Self = StObject.set(x, "TermInYears", value.asInstanceOf[js.Any])
   }
 }

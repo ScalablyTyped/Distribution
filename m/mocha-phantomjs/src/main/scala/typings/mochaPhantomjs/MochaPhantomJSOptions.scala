@@ -1,11 +1,12 @@
 package typings.mochaPhantomjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MochaPhantomJSOptions extends js.Object {
+trait MochaPhantomJSOptions extends StObject {
   
   var cookies: js.UndefOr[js.Array[_]] = js.native
   
@@ -26,51 +27,39 @@ object MochaPhantomJSOptions {
   }
   
   @scala.inline
-  implicit class MochaPhantomJSOptionsOps[Self <: MochaPhantomJSOptions] (val x: Self) extends AnyVal {
+  implicit class MochaPhantomJSOptionsMutableBuilder[Self <: MochaPhantomJSOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookies(value: js.Array[_]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCookiesVarargs(value: js.Any*): Self = StObject.set(x, "cookies", js.Array(value :_*))
     
     @scala.inline
-    def setCookiesVarargs(value: js.Any*): Self = this.set("cookies", js.Array(value :_*))
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookies(value: js.Array[_]): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def deleteCookies: Self = this.set("cookies", js.undefined)
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setViewportSize(value: Double): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setViewportSize(value: Double): Self = this.set("viewportSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewportSize: Self = this.set("viewportSize", js.undefined)
+    def setViewportSizeUndefined: Self = StObject.set(x, "viewportSize", js.undefined)
   }
 }

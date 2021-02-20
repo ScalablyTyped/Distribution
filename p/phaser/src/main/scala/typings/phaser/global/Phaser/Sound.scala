@@ -1,25 +1,17 @@
 package typings.phaser.global.Phaser
 
 import typings.phaser.Phaser.Types.Sound.SoundConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Sound")
-@js.native
-object Sound extends js.Object {
-  
-  /**
-    * Creates a Web Audio, HTML5 Audio or No Audio Sound Manager based on config and device settings.
-    * 
-    * Be aware of https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
-    * @param game Reference to the current game instance.
-    */
-  def SoundManagerCreator(game: typings.phaser.Phaser.Game): typings.phaser.Phaser.Sound.HTML5AudioSoundManager | typings.phaser.Phaser.Sound.WebAudioSoundManager | typings.phaser.Phaser.Sound.NoAudioSoundManager = js.native
+object Sound {
   
   /**
     * Class containing all the shared state and behavior of a sound object, independent of the implementation.
     */
+  @JSGlobal("Phaser.Sound.BaseSound")
   @js.native
   class BaseSound protected ()
     extends typings.phaser.Phaser.Sound.BaseSound {
@@ -36,6 +28,7 @@ object Sound extends js.Object {
   /**
     * Base class for other Sound Manager classes.
     */
+  @JSGlobal("Phaser.Sound.BaseSoundManager")
   @js.native
   class BaseSoundManager protected ()
     extends typings.phaser.Phaser.Sound.BaseSoundManager {
@@ -46,8 +39,7 @@ object Sound extends js.Object {
     def this(game: typings.phaser.Phaser.Game) = this()
   }
   
-  @js.native
-  object Events extends js.Object {
+  object Events {
     
     /**
       * The Sound Complete Event.
@@ -62,6 +54,8 @@ object Sound extends js.Object {
       * music.play();
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.COMPLETE")
+    @js.native
     val COMPLETE: js.Any = js.native
     
     /**
@@ -76,6 +70,8 @@ object Sound extends js.Object {
       * this.sound.decodeAudio(key, audioData);
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.DECODED")
+    @js.native
     val DECODED: js.Any = js.native
     
     /**
@@ -94,6 +90,8 @@ object Sound extends js.Object {
       * this.sound.decodeAudio([ audioFiles ]);
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.DECODED_ALL")
+    @js.native
     val DECODED_ALL: js.Any = js.native
     
     /**
@@ -110,6 +108,8 @@ object Sound extends js.Object {
       * music.destroy();
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.DESTROY")
+    @js.native
     val DESTROY: js.Any = js.native
     
     /**
@@ -126,6 +126,8 @@ object Sound extends js.Object {
       * music.setDetune(200);
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.DETUNE")
+    @js.native
     val DETUNE: js.Any = js.native
     
     /**
@@ -137,6 +139,8 @@ object Sound extends js.Object {
       * 
       * Listen to it from a Scene using: `this.sound.on('rate', listener)`.
       */
+    @JSGlobal("Phaser.Sound.Events.GLOBAL_DETUNE")
+    @js.native
     val GLOBAL_DETUNE: js.Any = js.native
     
     /**
@@ -147,6 +151,8 @@ object Sound extends js.Object {
       * 
       * Listen to it from a Scene using: `this.sound.on('mute', listener)`.
       */
+    @JSGlobal("Phaser.Sound.Events.GLOBAL_MUTE")
+    @js.native
     val GLOBAL_MUTE: js.Any = js.native
     
     /**
@@ -158,6 +164,8 @@ object Sound extends js.Object {
       * 
       * Listen to it from a Scene using: `this.sound.on('rate', listener)`.
       */
+    @JSGlobal("Phaser.Sound.Events.GLOBAL_RATE")
+    @js.native
     val GLOBAL_RATE: js.Any = js.native
     
     /**
@@ -168,6 +176,8 @@ object Sound extends js.Object {
       * 
       * Listen to it from a Scene using: `this.sound.on('volume', listener)`.
       */
+    @JSGlobal("Phaser.Sound.Events.GLOBAL_VOLUME")
+    @js.native
     val GLOBAL_VOLUME: js.Any = js.native
     
     /**
@@ -185,6 +195,8 @@ object Sound extends js.Object {
       * 
       * This is not to be confused with the [LOOPED]{@linkcode Phaser.Sound.Events#event:LOOPED} event, which emits each time a Sound loops during playback.
       */
+    @JSGlobal("Phaser.Sound.Events.LOOP")
+    @js.native
     val LOOP: js.Any = js.native
     
     /**
@@ -203,6 +215,8 @@ object Sound extends js.Object {
       * 
       * This is not to be confused with the [LOOP]{@linkcode Phaser.Sound.Events#event:LOOP} event, which only emits when the loop state of a Sound is changed.
       */
+    @JSGlobal("Phaser.Sound.Events.LOOPED")
+    @js.native
     val LOOPED: js.Any = js.native
     
     /**
@@ -219,6 +233,8 @@ object Sound extends js.Object {
       * music.setMute(true);
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.MUTE")
+    @js.native
     val MUTE: js.Any = js.native
     
     /**
@@ -235,6 +251,8 @@ object Sound extends js.Object {
       * music.pause();
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.PAUSE")
+    @js.native
     val PAUSE: js.Any = js.native
     
     /**
@@ -246,6 +264,8 @@ object Sound extends js.Object {
       * 
       * Listen to it from a Scene using: `this.sound.on('pauseall', listener)`.
       */
+    @JSGlobal("Phaser.Sound.Events.PAUSE_ALL")
+    @js.native
     val PAUSE_ALL: js.Any = js.native
     
     /**
@@ -261,6 +281,8 @@ object Sound extends js.Object {
       * music.play();
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.PLAY")
+    @js.native
     val PLAY: js.Any = js.native
     
     /**
@@ -277,6 +299,8 @@ object Sound extends js.Object {
       * music.setRate(0.5);
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.RATE")
+    @js.native
     val RATE: js.Any = js.native
     
     /**
@@ -294,6 +318,8 @@ object Sound extends js.Object {
       * music.resume();
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.RESUME")
+    @js.native
     val RESUME: js.Any = js.native
     
     /**
@@ -305,6 +331,8 @@ object Sound extends js.Object {
       * 
       * Listen to it from a Scene using: `this.sound.on('resumeall', listener)`.
       */
+    @JSGlobal("Phaser.Sound.Events.RESUME_ALL")
+    @js.native
     val RESUME_ALL: js.Any = js.native
     
     /**
@@ -321,6 +349,8 @@ object Sound extends js.Object {
       * music.setSeek(5000);
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.SEEK")
+    @js.native
     val SEEK: js.Any = js.native
     
     /**
@@ -337,6 +367,8 @@ object Sound extends js.Object {
       * music.stop();
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.STOP")
+    @js.native
     val STOP: js.Any = js.native
     
     /**
@@ -348,6 +380,8 @@ object Sound extends js.Object {
       * 
       * Listen to it from a Scene using: `this.sound.on('stopall', listener)`.
       */
+    @JSGlobal("Phaser.Sound.Events.STOP_ALL")
+    @js.native
     val STOP_ALL: js.Any = js.native
     
     /**
@@ -359,6 +393,8 @@ object Sound extends js.Object {
       * 
       * Listen to it from a Scene using: `this.sound.on('unlocked', listener)`.
       */
+    @JSGlobal("Phaser.Sound.Events.UNLOCKED")
+    @js.native
     val UNLOCKED: js.Any = js.native
     
     /**
@@ -375,12 +411,15 @@ object Sound extends js.Object {
       * music.setVolume(0.5);
       * ```
       */
+    @JSGlobal("Phaser.Sound.Events.VOLUME")
+    @js.native
     val VOLUME: js.Any = js.native
   }
   
   /**
     * HTML5 Audio implementation of the sound.
     */
+  @JSGlobal("Phaser.Sound.HTML5AudioSound")
   @js.native
   class HTML5AudioSound protected ()
     extends typings.phaser.Phaser.Sound.HTML5AudioSound {
@@ -397,6 +436,7 @@ object Sound extends js.Object {
   /**
     * HTML5AudioSoundManager
     */
+  @JSGlobal("Phaser.Sound.HTML5AudioSoundManager")
   @js.native
   class HTML5AudioSoundManager protected ()
     extends typings.phaser.Phaser.Sound.HTML5AudioSoundManager {
@@ -415,6 +455,7 @@ object Sound extends js.Object {
     * minimal functionality and prevents Phaser projects that use audio from
     * breaking on devices that don't support any audio playback technologies.
     */
+  @JSGlobal("Phaser.Sound.NoAudioSound")
   @js.native
   class NoAudioSound protected ()
     extends typings.phaser.Phaser.Sound.NoAudioSound {
@@ -436,6 +477,7 @@ object Sound extends js.Object {
     * minimal functionality and prevents Phaser projects that use audio from
     * breaking on devices that don't support any audio playback technologies.
     */
+  @JSGlobal("Phaser.Sound.NoAudioSoundManager")
   @js.native
   class NoAudioSoundManager protected ()
     extends typings.phaser.Phaser.Sound.BaseSoundManager {
@@ -447,8 +489,19 @@ object Sound extends js.Object {
   }
   
   /**
+    * Creates a Web Audio, HTML5 Audio or No Audio Sound Manager based on config and device settings.
+    * 
+    * Be aware of https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
+    * @param game Reference to the current game instance.
+    */
+  @JSGlobal("Phaser.Sound.SoundManagerCreator")
+  @js.native
+  def SoundManagerCreator(game: typings.phaser.Phaser.Game): typings.phaser.Phaser.Sound.HTML5AudioSoundManager | typings.phaser.Phaser.Sound.WebAudioSoundManager | typings.phaser.Phaser.Sound.NoAudioSoundManager = js.native
+  
+  /**
     * Web Audio API implementation of the sound.
     */
+  @JSGlobal("Phaser.Sound.WebAudioSound")
   @js.native
   class WebAudioSound protected ()
     extends typings.phaser.Phaser.Sound.WebAudioSound {
@@ -469,6 +522,7 @@ object Sound extends js.Object {
     * 
     * There is a good guide to what's supported: [Cross-browser audio basics: Audio codec support](https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Cross-browser_audio_basics#Audio_Codec_Support).
     */
+  @JSGlobal("Phaser.Sound.WebAudioSoundManager")
   @js.native
   class WebAudioSoundManager protected ()
     extends typings.phaser.Phaser.Sound.WebAudioSoundManager {

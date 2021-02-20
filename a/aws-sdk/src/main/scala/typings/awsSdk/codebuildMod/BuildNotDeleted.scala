@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildNotDeleted extends js.Object {
+trait BuildNotDeleted extends StObject {
   
   /**
     * The ID of the build that could not be successfully deleted.
@@ -26,30 +27,18 @@ object BuildNotDeleted {
   }
   
   @scala.inline
-  implicit class BuildNotDeletedOps[Self <: BuildNotDeleted] (val x: Self) extends AnyVal {
+  implicit class BuildNotDeletedMutableBuilder[Self <: BuildNotDeleted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NonEmptyString): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setStatusCode(value: String): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkFabricAttributes extends js.Object {
+trait NetworkFabricAttributes extends StObject {
   
   /**
     * The edition of Amazon Managed Blockchain that Hyperledger Fabric uses. For more information, see Amazon Managed Blockchain Pricing.
@@ -26,30 +27,18 @@ object NetworkFabricAttributes {
   }
   
   @scala.inline
-  implicit class NetworkFabricAttributesOps[Self <: NetworkFabricAttributes] (val x: Self) extends AnyVal {
+  implicit class NetworkFabricAttributesMutableBuilder[Self <: NetworkFabricAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdition(value: Edition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderingServiceEndpoint(value: String): Self = StObject.set(x, "OrderingServiceEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdition(value: Edition): Self = this.set("Edition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEdition: Self = this.set("Edition", js.undefined)
-    
-    @scala.inline
-    def setOrderingServiceEndpoint(value: String): Self = this.set("OrderingServiceEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderingServiceEndpoint: Self = this.set("OrderingServiceEndpoint", js.undefined)
+    def setOrderingServiceEndpointUndefined: Self = StObject.set(x, "OrderingServiceEndpoint", js.undefined)
   }
 }

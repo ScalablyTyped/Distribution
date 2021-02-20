@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rectangle extends js.Object {
+trait Rectangle extends StObject {
   
   /**
     * The Y coordinate of the bottom edge of the rectangle, measured in the image's natural units.
@@ -46,54 +47,42 @@ object Rectangle {
   }
   
   @scala.inline
-  implicit class RectangleOps[Self <: Rectangle] (val x: Self) extends AnyVal {
+  implicit class RectangleMutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: Double): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: Double): Self = this.set("right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

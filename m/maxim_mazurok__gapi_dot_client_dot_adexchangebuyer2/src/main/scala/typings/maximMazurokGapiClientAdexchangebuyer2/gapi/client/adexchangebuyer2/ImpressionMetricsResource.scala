@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.FilterSetName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImpressionMetricsResource extends js.Object {
+trait ImpressionMetricsResource extends StObject {
   
   /** Lists all metrics that are measured in terms of number of impressions. */
   def list(): Request[ListImpressionMetricsResponse] = js.native

@@ -1,11 +1,12 @@
 package typings.downshift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseSelectPropGetters[Item] extends js.Object {
+trait UseSelectPropGetters[Item] extends StObject {
   
   def getItemProps(options: UseSelectGetItemPropsOptions[Item]): js.Any = js.native
   

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyMaxResults extends js.Object {
+trait KeyMaxResults extends StObject {
   
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.native
@@ -83,99 +84,87 @@ object KeyMaxResults {
   }
   
   @scala.inline
-  implicit class KeyMaxResultsOps[Self <: KeyMaxResults] (val x: Self) extends AnyVal {
+  implicit class KeyMaxResultsMutableBuilder[Self <: KeyMaxResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkEndpointGroup(value: String): Self = this.set("networkEndpointGroup", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setNetworkEndpointGroup(value: String): Self = StObject.set(x, "networkEndpointGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     @scala.inline
-    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    def setReturnPartialSuccess(value: Boolean): Self = StObject.set(x, "returnPartialSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    def setReturnPartialSuccessUndefined: Self = StObject.set(x, "returnPartialSuccess", js.undefined)
     
     @scala.inline
-    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
     
     @scala.inline
-    def setReturnPartialSuccess(value: Boolean): Self = this.set("returnPartialSuccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnPartialSuccess: Self = this.set("returnPartialSuccess", js.undefined)
-    
-    @scala.inline
-    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIp: Self = this.set("userIp", js.undefined)
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }
 }

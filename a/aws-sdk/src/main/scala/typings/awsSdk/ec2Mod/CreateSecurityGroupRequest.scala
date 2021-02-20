@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSecurityGroupRequest extends js.Object {
+trait CreateSecurityGroupRequest extends StObject {
   
   /**
     * A description for the security group. This is informational only. Constraints: Up to 255 characters in length Constraints for EC2-Classic: ASCII characters Constraints for EC2-VPC: a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=&amp;;{}!$*
@@ -41,45 +42,33 @@ object CreateSecurityGroupRequest {
   }
   
   @scala.inline
-  implicit class CreateSecurityGroupRequestOps[Self <: CreateSecurityGroupRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSecurityGroupRequestMutableBuilder[Self <: CreateSecurityGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.itunesconnectanalytics.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryGroup extends js.Object {
+trait QueryGroup extends StObject {
   
   var dimension: typings.itunesconnectanalytics.mod.dimension = js.native
   
@@ -24,39 +25,27 @@ object QueryGroup {
   }
   
   @scala.inline
-  implicit class QueryGroupOps[Self <: QueryGroup] (val x: Self) extends AnyVal {
+  implicit class QueryGroupMutableBuilder[Self <: QueryGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimension(value: dimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def setDimension(value: dimension): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    def setMetric(value: measures): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setRank(value: String): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetric(value: measures): Self = this.set("metric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
-    
-    @scala.inline
-    def setRank(value: String): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRank: Self = this.set("rank", js.undefined)
+    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
   }
 }

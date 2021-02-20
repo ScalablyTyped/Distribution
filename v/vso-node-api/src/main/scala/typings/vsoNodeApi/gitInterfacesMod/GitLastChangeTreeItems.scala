@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitLastChangeTreeItems extends js.Object {
+trait GitLastChangeTreeItems extends StObject {
   
   /**
     * The list of commits referenced by Items, if they were requested.
@@ -32,33 +33,21 @@ object GitLastChangeTreeItems {
   }
   
   @scala.inline
-  implicit class GitLastChangeTreeItemsOps[Self <: GitLastChangeTreeItems] (val x: Self) extends AnyVal {
+  implicit class GitLastChangeTreeItemsMutableBuilder[Self <: GitLastChangeTreeItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[GitLastChangeItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitsVarargs(value: GitCommitRef*): Self = this.set("commits", js.Array(value :_*))
+    def setItemsVarargs(value: GitLastChangeItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setCommits(value: js.Array[GitCommitRef]): Self = this.set("commits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: GitLastChangeItem*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[GitLastChangeItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastExploredTime(value: Date): Self = this.set("lastExploredTime", value.asInstanceOf[js.Any])
+    def setLastExploredTime(value: Date): Self = StObject.set(x, "lastExploredTime", value.asInstanceOf[js.Any])
   }
 }

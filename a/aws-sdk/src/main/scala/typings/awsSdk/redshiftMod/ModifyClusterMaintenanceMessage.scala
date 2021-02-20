@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyClusterMaintenanceMessage extends js.Object {
+trait ModifyClusterMaintenanceMessage extends StObject {
   
   /**
     * A unique identifier for the cluster.
@@ -46,51 +47,39 @@ object ModifyClusterMaintenanceMessage {
   }
   
   @scala.inline
-  implicit class ModifyClusterMaintenanceMessageOps[Self <: ModifyClusterMaintenanceMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyClusterMaintenanceMessageMutableBuilder[Self <: ModifyClusterMaintenanceMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferMaintenance(value: BooleanOptional): Self = StObject.set(x, "DeferMaintenance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeferMaintenanceDuration(value: IntegerOptional): Self = StObject.set(x, "DeferMaintenanceDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setDeferMaintenanceDurationUndefined: Self = StObject.set(x, "DeferMaintenanceDuration", js.undefined)
     
     @scala.inline
-    def setDeferMaintenance(value: BooleanOptional): Self = this.set("DeferMaintenance", value.asInstanceOf[js.Any])
+    def setDeferMaintenanceEndTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeferMaintenance: Self = this.set("DeferMaintenance", js.undefined)
+    def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
     
     @scala.inline
-    def setDeferMaintenanceDuration(value: IntegerOptional): Self = this.set("DeferMaintenanceDuration", value.asInstanceOf[js.Any])
+    def setDeferMaintenanceIdentifier(value: String): Self = StObject.set(x, "DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeferMaintenanceDuration: Self = this.set("DeferMaintenanceDuration", js.undefined)
+    def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
     
     @scala.inline
-    def setDeferMaintenanceEndTime(value: TStamp): Self = this.set("DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
+    def setDeferMaintenanceStartTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeferMaintenanceEndTime: Self = this.set("DeferMaintenanceEndTime", js.undefined)
+    def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
     
     @scala.inline
-    def setDeferMaintenanceIdentifier(value: String): Self = this.set("DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeferMaintenanceIdentifier: Self = this.set("DeferMaintenanceIdentifier", js.undefined)
-    
-    @scala.inline
-    def setDeferMaintenanceStartTime(value: TStamp): Self = this.set("DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeferMaintenanceStartTime: Self = this.set("DeferMaintenanceStartTime", js.undefined)
+    def setDeferMaintenanceUndefined: Self = StObject.set(x, "DeferMaintenance", js.undefined)
   }
 }

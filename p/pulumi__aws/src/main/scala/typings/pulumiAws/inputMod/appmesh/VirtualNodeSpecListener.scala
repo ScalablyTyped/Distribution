@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.appmesh
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualNodeSpecListener extends js.Object {
+trait VirtualNodeSpecListener extends StObject {
   
   /**
     * The health check information for the listener.
@@ -37,39 +38,27 @@ object VirtualNodeSpecListener {
   }
   
   @scala.inline
-  implicit class VirtualNodeSpecListenerOps[Self <: VirtualNodeSpecListener] (val x: Self) extends AnyVal {
+  implicit class VirtualNodeSpecListenerMutableBuilder[Self <: VirtualNodeSpecListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthCheck(value: Input[VirtualNodeSpecListenerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortMapping(value: Input[VirtualNodeSpecListenerPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortMapping(value: Input[VirtualNodeSpecListenerPortMapping]): Self = this.set("portMapping", value.asInstanceOf[js.Any])
+    def setTimeout(value: Input[VirtualNodeSpecListenerTimeout]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheck(value: Input[VirtualNodeSpecListenerHealthCheck]): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
+    def setTls(value: Input[VirtualNodeSpecListenerTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Input[VirtualNodeSpecListenerTimeout]): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setTls(value: Input[VirtualNodeSpecListenerTls]): Self = this.set("tls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTls: Self = this.set("tls", js.undefined)
+    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

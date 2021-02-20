@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCostCategoryDefinitionRequest extends js.Object {
+trait CreateCostCategoryDefinitionRequest extends StObject {
   
   var Name: CostCategoryName = js.native
   
@@ -25,30 +26,18 @@ object CreateCostCategoryDefinitionRequest {
   }
   
   @scala.inline
-  implicit class CreateCostCategoryDefinitionRequestOps[Self <: CreateCostCategoryDefinitionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateCostCategoryDefinitionRequestMutableBuilder[Self <: CreateCostCategoryDefinitionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: CostCategoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleVersion(value: CostCategoryRuleVersion): Self = StObject.set(x, "RuleVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRules(value: CostCategoryRulesList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: CostCategoryName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleVersion(value: CostCategoryRuleVersion): Self = this.set("RuleVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRulesVarargs(value: CostCategoryRule*): Self = this.set("Rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: CostCategoryRulesList): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    def setRulesVarargs(value: CostCategoryRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

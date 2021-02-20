@@ -8,12 +8,13 @@ import typings.activexOffice.Office.MsoPresetGradientType
 import typings.activexOffice.Office.MsoPresetTexture
 import typings.activexOffice.Office.MsoTextureType
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartFillFormat extends js.Object {
+trait ChartFillFormat extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   

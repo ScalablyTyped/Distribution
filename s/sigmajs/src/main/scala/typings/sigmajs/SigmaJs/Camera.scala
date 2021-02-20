@@ -2,12 +2,13 @@ package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sigmajs.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Camera extends js.Object {
+trait Camera extends StObject {
   
   var angle: Double = js.native
   
@@ -46,45 +47,33 @@ object Camera {
   }
   
   @scala.inline
-  implicit class CameraOps[Self <: Camera] (val x: Self) extends AnyVal {
+  implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCameraPosition(value: (Double, Double) => X): Self = StObject.set(x, "cameraPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoTo(value: StringDictionary[js.Any] => Unit): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setGraphPosition(value: (Double, Double) => X): Self = StObject.set(x, "graphPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCameraPosition(value: (Double, Double) => X): Self = this.set("cameraPosition", js.Any.fromFunction2(value))
+    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoTo(value: StringDictionary[js.Any] => Unit): Self = this.set("goTo", js.Any.fromFunction1(value))
+    def setReadPrefix(value: String): Self = StObject.set(x, "readPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphPosition(value: (Double, Double) => X): Self = this.set("graphPosition", js.Any.fromFunction2(value))
+    def setSettings(value: String => js.Any): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPrefix(value: String): Self = this.set("readPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSettings(value: String => js.Any): Self = this.set("settings", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.googleLibphonenumber.libphonenumber
 
 import typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.MatchType
 import typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhoneNumberUtil extends js.Object {
+trait PhoneNumberUtil extends StObject {
   
   def extractCountryCode(fullNumber: StringBuffer, nationalNumber: StringBuffer): Double = js.native
   
@@ -74,14 +75,13 @@ trait PhoneNumberUtil extends js.Object {
   
   def truncateTooLongNumber(number: PhoneNumber): Boolean = js.native
 }
-@JSGlobal("libphonenumber.PhoneNumberUtil")
-@js.native
-object PhoneNumberUtil extends js.Object {
+object PhoneNumberUtil {
   
   @js.native
-  sealed trait MatchType extends js.Object
+  sealed trait MatchType extends StObject
+  @JSGlobal("libphonenumber.PhoneNumberUtil.MatchType")
   @js.native
-  object MatchType extends js.Object {
+  object MatchType extends StObject {
     
     @js.native
     sealed trait EXACT_MATCH extends MatchType
@@ -100,9 +100,10 @@ object PhoneNumberUtil extends js.Object {
   }
   
   @js.native
-  sealed trait ValidationResult extends js.Object
+  sealed trait ValidationResult extends StObject
+  @JSGlobal("libphonenumber.PhoneNumberUtil.ValidationResult")
   @js.native
-  object ValidationResult extends js.Object {
+  object ValidationResult extends StObject {
     
     @js.native
     sealed trait INVALID_COUNTRY_CODE extends ValidationResult

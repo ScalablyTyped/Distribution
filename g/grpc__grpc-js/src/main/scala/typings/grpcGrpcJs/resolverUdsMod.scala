@@ -1,12 +1,13 @@
 package typings.grpcGrpcJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/resolver-uds", JSImport.Namespace)
-@js.native
-object resolverUdsMod extends js.Object {
+object resolverUdsMod {
   
+  @JSImport("@grpc/grpc-js/build/src/resolver-uds", "setup")
+  @js.native
   def setup(): Unit = js.native
 }

@@ -1,12 +1,13 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // No static is available
 @js.native
-trait MapVisual extends js.Object {
+trait MapVisual extends StObject {
   
   /**
     * Draw a circle.

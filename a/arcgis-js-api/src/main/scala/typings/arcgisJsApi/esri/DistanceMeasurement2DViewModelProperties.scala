@@ -10,12 +10,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceMeasurement2DViewModelProperties extends js.Object {
+trait DistanceMeasurement2DViewModelProperties extends StObject {
   
   /**
     * When the coordinate sustem is projected (other than web mercator) then distances less than this threshold will be computed planimetrically.
@@ -60,53 +61,41 @@ object DistanceMeasurement2DViewModelProperties {
   }
   
   @scala.inline
-  implicit class DistanceMeasurement2DViewModelPropertiesOps[Self <: DistanceMeasurement2DViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class DistanceMeasurement2DViewModelPropertiesMutableBuilder[Self <: DistanceMeasurement2DViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeodesicDistanceThreshold(value: Double): Self = StObject.set(x, "geodesicDistanceThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGeodesicDistanceThreshold(value: Double): Self = this.set("geodesicDistanceThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeodesicDistanceThreshold: Self = this.set("geodesicDistanceThreshold", js.undefined)
+    def setGeodesicDistanceThresholdUndefined: Self = StObject.set(x, "geodesicDistanceThreshold", js.undefined)
     
     @scala.inline
     def setUnit(
       value: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-    ): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
-    
-    @scala.inline
-    def setUnitOptionsVarargs(
-      value: (metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_)*
-    ): Self = this.set("unitOptions", js.Array(value :_*))
+    ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnitOptions(
       value: js.Array[
           metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
         ]
-    ): Self = this.set("unitOptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unitOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnitOptions: Self = this.set("unitOptions", js.undefined)
+    def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setUnitOptionsVarargs(
+      value: (metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_)*
+    ): Self = StObject.set(x, "unitOptions", js.Array(value :_*))
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    
+    @scala.inline
+    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

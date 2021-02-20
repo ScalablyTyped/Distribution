@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRDefaultExperienceOptions extends js.Object {
+trait WebXRDefaultExperienceOptions extends StObject {
   
   /**
     * Enable or disable default UI to enter XR
@@ -69,84 +70,72 @@ object WebXRDefaultExperienceOptions {
   }
   
   @scala.inline
-  implicit class WebXRDefaultExperienceOptionsOps[Self <: WebXRDefaultExperienceOptions] (val x: Self) extends AnyVal {
+  implicit class WebXRDefaultExperienceOptionsMutableBuilder[Self <: WebXRDefaultExperienceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableDefaultUI(value: Boolean): Self = StObject.set(x, "disableDefaultUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableDefaultUIUndefined: Self = StObject.set(x, "disableDefaultUI", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableTeleportation(value: Boolean): Self = StObject.set(x, "disableTeleportation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDefaultUI(value: Boolean): Self = this.set("disableDefaultUI", value.asInstanceOf[js.Any])
+    def setDisableTeleportationUndefined: Self = StObject.set(x, "disableTeleportation", js.undefined)
     
     @scala.inline
-    def deleteDisableDefaultUI: Self = this.set("disableDefaultUI", js.undefined)
+    def setFloorMeshes(value: js.Array[AbstractMesh]): Self = StObject.set(x, "floorMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTeleportation(value: Boolean): Self = this.set("disableTeleportation", value.asInstanceOf[js.Any])
+    def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
     
     @scala.inline
-    def deleteDisableTeleportation: Self = this.set("disableTeleportation", js.undefined)
+    def setFloorMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
     
     @scala.inline
-    def setFloorMeshesVarargs(value: AbstractMesh*): Self = this.set("floorMeshes", js.Array(value :_*))
+    def setIgnoreNativeCameraTransformation(value: Boolean): Self = StObject.set(x, "ignoreNativeCameraTransformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloorMeshes(value: js.Array[AbstractMesh]): Self = this.set("floorMeshes", value.asInstanceOf[js.Any])
+    def setIgnoreNativeCameraTransformationUndefined: Self = StObject.set(x, "ignoreNativeCameraTransformation", js.undefined)
     
     @scala.inline
-    def deleteFloorMeshes: Self = this.set("floorMeshes", js.undefined)
+    def setInputOptions(value: IWebXRInputOptions): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreNativeCameraTransformation(value: Boolean): Self = this.set("ignoreNativeCameraTransformation", value.asInstanceOf[js.Any])
+    def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
     @scala.inline
-    def deleteIgnoreNativeCameraTransformation: Self = this.set("ignoreNativeCameraTransformation", js.undefined)
+    def setOptionalFeatures(value: Boolean | js.Array[String]): Self = StObject.set(x, "optionalFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputOptions(value: IWebXRInputOptions): Self = this.set("inputOptions", value.asInstanceOf[js.Any])
+    def setOptionalFeaturesUndefined: Self = StObject.set(x, "optionalFeatures", js.undefined)
     
     @scala.inline
-    def deleteInputOptions: Self = this.set("inputOptions", js.undefined)
+    def setOptionalFeaturesVarargs(value: String*): Self = StObject.set(x, "optionalFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setOptionalFeaturesVarargs(value: String*): Self = this.set("optionalFeatures", js.Array(value :_*))
+    def setOutputCanvasOptions(value: WebXRManagedOutputCanvasOptions): Self = StObject.set(x, "outputCanvasOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalFeatures(value: Boolean | js.Array[String]): Self = this.set("optionalFeatures", value.asInstanceOf[js.Any])
+    def setOutputCanvasOptionsUndefined: Self = StObject.set(x, "outputCanvasOptions", js.undefined)
     
     @scala.inline
-    def deleteOptionalFeatures: Self = this.set("optionalFeatures", js.undefined)
+    def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputCanvasOptions(value: WebXRManagedOutputCanvasOptions): Self = this.set("outputCanvasOptions", value.asInstanceOf[js.Any])
+    def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
     
     @scala.inline
-    def deleteOutputCanvasOptions: Self = this.set("outputCanvasOptions", js.undefined)
+    def setUiOptions(value: WebXREnterExitUIOptions): Self = StObject.set(x, "uiOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderingGroupId(value: Double): Self = this.set("renderingGroupId", value.asInstanceOf[js.Any])
+    def setUiOptionsUndefined: Self = StObject.set(x, "uiOptions", js.undefined)
     
     @scala.inline
-    def deleteRenderingGroupId: Self = this.set("renderingGroupId", js.undefined)
+    def setUseStablePlugins(value: Boolean): Self = StObject.set(x, "useStablePlugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiOptions(value: WebXREnterExitUIOptions): Self = this.set("uiOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUiOptions: Self = this.set("uiOptions", js.undefined)
-    
-    @scala.inline
-    def setUseStablePlugins(value: Boolean): Self = this.set("useStablePlugins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseStablePlugins: Self = this.set("useStablePlugins", js.undefined)
+    def setUseStablePluginsUndefined: Self = StObject.set(x, "useStablePlugins", js.undefined)
   }
 }

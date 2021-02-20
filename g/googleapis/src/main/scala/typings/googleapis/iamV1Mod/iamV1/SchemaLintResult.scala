@@ -1,5 +1,6 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Structured response of a single validation unit.
   */
 @js.native
-trait SchemaLintResult extends js.Object {
+trait SchemaLintResult extends StObject {
   
   /**
     * 0-based index ordinality of the binding in the input object associated
@@ -69,60 +70,48 @@ object SchemaLintResult {
   }
   
   @scala.inline
-  implicit class SchemaLintResultOps[Self <: SchemaLintResult] (val x: Self) extends AnyVal {
+  implicit class SchemaLintResultMutableBuilder[Self <: SchemaLintResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindingOrdinal(value: Double): Self = StObject.set(x, "bindingOrdinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingOrdinalUndefined: Self = StObject.set(x, "bindingOrdinal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebugMessage(value: String): Self = StObject.set(x, "debugMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingOrdinal(value: Double): Self = this.set("bindingOrdinal", value.asInstanceOf[js.Any])
+    def setDebugMessageUndefined: Self = StObject.set(x, "debugMessage", js.undefined)
     
     @scala.inline
-    def deleteBindingOrdinal: Self = this.set("bindingOrdinal", js.undefined)
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugMessage(value: String): Self = this.set("debugMessage", value.asInstanceOf[js.Any])
+    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
     @scala.inline
-    def deleteDebugMessage: Self = this.set("debugMessage", js.undefined)
+    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+    def setLocationOffset(value: Double): Self = StObject.set(x, "locationOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLocationOffsetUndefined: Self = StObject.set(x, "locationOffset", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationOffset(value: Double): Self = this.set("locationOffset", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def deleteLocationOffset: Self = this.set("locationOffset", js.undefined)
+    def setValidationUnitName(value: String): Self = StObject.set(x, "validationUnitName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
-    
-    @scala.inline
-    def setValidationUnitName(value: String): Self = this.set("validationUnitName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationUnitName: Self = this.set("validationUnitName", js.undefined)
+    def setValidationUnitNameUndefined: Self = StObject.set(x, "validationUnitName", js.undefined)
   }
 }

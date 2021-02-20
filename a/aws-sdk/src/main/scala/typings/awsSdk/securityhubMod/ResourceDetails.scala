@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceDetails extends js.Object {
+trait ResourceDetails extends StObject {
   
   /**
     * 
@@ -216,258 +217,246 @@ object ResourceDetails {
   }
   
   @scala.inline
-  implicit class ResourceDetailsOps[Self <: ResourceDetails] (val x: Self) extends AnyVal {
+  implicit class ResourceDetailsMutableBuilder[Self <: ResourceDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsApiGatewayRestApi(value: AwsApiGatewayRestApiDetails): Self = StObject.set(x, "AwsApiGatewayRestApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsApiGatewayRestApiUndefined: Self = StObject.set(x, "AwsApiGatewayRestApi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsApiGatewayStage(value: AwsApiGatewayStageDetails): Self = StObject.set(x, "AwsApiGatewayStage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsApiGatewayRestApi(value: AwsApiGatewayRestApiDetails): Self = this.set("AwsApiGatewayRestApi", value.asInstanceOf[js.Any])
+    def setAwsApiGatewayStageUndefined: Self = StObject.set(x, "AwsApiGatewayStage", js.undefined)
     
     @scala.inline
-    def deleteAwsApiGatewayRestApi: Self = this.set("AwsApiGatewayRestApi", js.undefined)
+    def setAwsApiGatewayV2Api(value: AwsApiGatewayV2ApiDetails): Self = StObject.set(x, "AwsApiGatewayV2Api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsApiGatewayStage(value: AwsApiGatewayStageDetails): Self = this.set("AwsApiGatewayStage", value.asInstanceOf[js.Any])
+    def setAwsApiGatewayV2ApiUndefined: Self = StObject.set(x, "AwsApiGatewayV2Api", js.undefined)
     
     @scala.inline
-    def deleteAwsApiGatewayStage: Self = this.set("AwsApiGatewayStage", js.undefined)
+    def setAwsApiGatewayV2Stage(value: AwsApiGatewayV2StageDetails): Self = StObject.set(x, "AwsApiGatewayV2Stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsApiGatewayV2Api(value: AwsApiGatewayV2ApiDetails): Self = this.set("AwsApiGatewayV2Api", value.asInstanceOf[js.Any])
+    def setAwsApiGatewayV2StageUndefined: Self = StObject.set(x, "AwsApiGatewayV2Stage", js.undefined)
     
     @scala.inline
-    def deleteAwsApiGatewayV2Api: Self = this.set("AwsApiGatewayV2Api", js.undefined)
+    def setAwsAutoScalingAutoScalingGroup(value: AwsAutoScalingAutoScalingGroupDetails): Self = StObject.set(x, "AwsAutoScalingAutoScalingGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsApiGatewayV2Stage(value: AwsApiGatewayV2StageDetails): Self = this.set("AwsApiGatewayV2Stage", value.asInstanceOf[js.Any])
+    def setAwsAutoScalingAutoScalingGroupUndefined: Self = StObject.set(x, "AwsAutoScalingAutoScalingGroup", js.undefined)
     
     @scala.inline
-    def deleteAwsApiGatewayV2Stage: Self = this.set("AwsApiGatewayV2Stage", js.undefined)
+    def setAwsCertificateManagerCertificate(value: AwsCertificateManagerCertificateDetails): Self = StObject.set(x, "AwsCertificateManagerCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAutoScalingAutoScalingGroup(value: AwsAutoScalingAutoScalingGroupDetails): Self = this.set("AwsAutoScalingAutoScalingGroup", value.asInstanceOf[js.Any])
+    def setAwsCertificateManagerCertificateUndefined: Self = StObject.set(x, "AwsCertificateManagerCertificate", js.undefined)
     
     @scala.inline
-    def deleteAwsAutoScalingAutoScalingGroup: Self = this.set("AwsAutoScalingAutoScalingGroup", js.undefined)
+    def setAwsCloudFrontDistribution(value: AwsCloudFrontDistributionDetails): Self = StObject.set(x, "AwsCloudFrontDistribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsCertificateManagerCertificate(value: AwsCertificateManagerCertificateDetails): Self = this.set("AwsCertificateManagerCertificate", value.asInstanceOf[js.Any])
+    def setAwsCloudFrontDistributionUndefined: Self = StObject.set(x, "AwsCloudFrontDistribution", js.undefined)
     
     @scala.inline
-    def deleteAwsCertificateManagerCertificate: Self = this.set("AwsCertificateManagerCertificate", js.undefined)
+    def setAwsCloudTrailTrail(value: AwsCloudTrailTrailDetails): Self = StObject.set(x, "AwsCloudTrailTrail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsCloudFrontDistribution(value: AwsCloudFrontDistributionDetails): Self = this.set("AwsCloudFrontDistribution", value.asInstanceOf[js.Any])
+    def setAwsCloudTrailTrailUndefined: Self = StObject.set(x, "AwsCloudTrailTrail", js.undefined)
     
     @scala.inline
-    def deleteAwsCloudFrontDistribution: Self = this.set("AwsCloudFrontDistribution", js.undefined)
+    def setAwsCodeBuildProject(value: AwsCodeBuildProjectDetails): Self = StObject.set(x, "AwsCodeBuildProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsCloudTrailTrail(value: AwsCloudTrailTrailDetails): Self = this.set("AwsCloudTrailTrail", value.asInstanceOf[js.Any])
+    def setAwsCodeBuildProjectUndefined: Self = StObject.set(x, "AwsCodeBuildProject", js.undefined)
     
     @scala.inline
-    def deleteAwsCloudTrailTrail: Self = this.set("AwsCloudTrailTrail", js.undefined)
+    def setAwsDynamoDbTable(value: AwsDynamoDbTableDetails): Self = StObject.set(x, "AwsDynamoDbTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsCodeBuildProject(value: AwsCodeBuildProjectDetails): Self = this.set("AwsCodeBuildProject", value.asInstanceOf[js.Any])
+    def setAwsDynamoDbTableUndefined: Self = StObject.set(x, "AwsDynamoDbTable", js.undefined)
     
     @scala.inline
-    def deleteAwsCodeBuildProject: Self = this.set("AwsCodeBuildProject", js.undefined)
+    def setAwsEc2Eip(value: AwsEc2EipDetails): Self = StObject.set(x, "AwsEc2Eip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsDynamoDbTable(value: AwsDynamoDbTableDetails): Self = this.set("AwsDynamoDbTable", value.asInstanceOf[js.Any])
+    def setAwsEc2EipUndefined: Self = StObject.set(x, "AwsEc2Eip", js.undefined)
     
     @scala.inline
-    def deleteAwsDynamoDbTable: Self = this.set("AwsDynamoDbTable", js.undefined)
+    def setAwsEc2Instance(value: AwsEc2InstanceDetails): Self = StObject.set(x, "AwsEc2Instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsEc2Eip(value: AwsEc2EipDetails): Self = this.set("AwsEc2Eip", value.asInstanceOf[js.Any])
+    def setAwsEc2InstanceUndefined: Self = StObject.set(x, "AwsEc2Instance", js.undefined)
     
     @scala.inline
-    def deleteAwsEc2Eip: Self = this.set("AwsEc2Eip", js.undefined)
+    def setAwsEc2NetworkInterface(value: AwsEc2NetworkInterfaceDetails): Self = StObject.set(x, "AwsEc2NetworkInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsEc2Instance(value: AwsEc2InstanceDetails): Self = this.set("AwsEc2Instance", value.asInstanceOf[js.Any])
+    def setAwsEc2NetworkInterfaceUndefined: Self = StObject.set(x, "AwsEc2NetworkInterface", js.undefined)
     
     @scala.inline
-    def deleteAwsEc2Instance: Self = this.set("AwsEc2Instance", js.undefined)
+    def setAwsEc2SecurityGroup(value: AwsEc2SecurityGroupDetails): Self = StObject.set(x, "AwsEc2SecurityGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsEc2NetworkInterface(value: AwsEc2NetworkInterfaceDetails): Self = this.set("AwsEc2NetworkInterface", value.asInstanceOf[js.Any])
+    def setAwsEc2SecurityGroupUndefined: Self = StObject.set(x, "AwsEc2SecurityGroup", js.undefined)
     
     @scala.inline
-    def deleteAwsEc2NetworkInterface: Self = this.set("AwsEc2NetworkInterface", js.undefined)
+    def setAwsEc2Volume(value: AwsEc2VolumeDetails): Self = StObject.set(x, "AwsEc2Volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsEc2SecurityGroup(value: AwsEc2SecurityGroupDetails): Self = this.set("AwsEc2SecurityGroup", value.asInstanceOf[js.Any])
+    def setAwsEc2VolumeUndefined: Self = StObject.set(x, "AwsEc2Volume", js.undefined)
     
     @scala.inline
-    def deleteAwsEc2SecurityGroup: Self = this.set("AwsEc2SecurityGroup", js.undefined)
+    def setAwsEc2Vpc(value: AwsEc2VpcDetails): Self = StObject.set(x, "AwsEc2Vpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsEc2Volume(value: AwsEc2VolumeDetails): Self = this.set("AwsEc2Volume", value.asInstanceOf[js.Any])
+    def setAwsEc2VpcUndefined: Self = StObject.set(x, "AwsEc2Vpc", js.undefined)
     
     @scala.inline
-    def deleteAwsEc2Volume: Self = this.set("AwsEc2Volume", js.undefined)
+    def setAwsElasticsearchDomain(value: AwsElasticsearchDomainDetails): Self = StObject.set(x, "AwsElasticsearchDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsEc2Vpc(value: AwsEc2VpcDetails): Self = this.set("AwsEc2Vpc", value.asInstanceOf[js.Any])
+    def setAwsElasticsearchDomainUndefined: Self = StObject.set(x, "AwsElasticsearchDomain", js.undefined)
     
     @scala.inline
-    def deleteAwsEc2Vpc: Self = this.set("AwsEc2Vpc", js.undefined)
+    def setAwsElbLoadBalancer(value: AwsElbLoadBalancerDetails): Self = StObject.set(x, "AwsElbLoadBalancer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsElasticsearchDomain(value: AwsElasticsearchDomainDetails): Self = this.set("AwsElasticsearchDomain", value.asInstanceOf[js.Any])
+    def setAwsElbLoadBalancerUndefined: Self = StObject.set(x, "AwsElbLoadBalancer", js.undefined)
     
     @scala.inline
-    def deleteAwsElasticsearchDomain: Self = this.set("AwsElasticsearchDomain", js.undefined)
+    def setAwsElbv2LoadBalancer(value: AwsElbv2LoadBalancerDetails): Self = StObject.set(x, "AwsElbv2LoadBalancer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsElbLoadBalancer(value: AwsElbLoadBalancerDetails): Self = this.set("AwsElbLoadBalancer", value.asInstanceOf[js.Any])
+    def setAwsElbv2LoadBalancerUndefined: Self = StObject.set(x, "AwsElbv2LoadBalancer", js.undefined)
     
     @scala.inline
-    def deleteAwsElbLoadBalancer: Self = this.set("AwsElbLoadBalancer", js.undefined)
+    def setAwsIamAccessKey(value: AwsIamAccessKeyDetails): Self = StObject.set(x, "AwsIamAccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsElbv2LoadBalancer(value: AwsElbv2LoadBalancerDetails): Self = this.set("AwsElbv2LoadBalancer", value.asInstanceOf[js.Any])
+    def setAwsIamAccessKeyUndefined: Self = StObject.set(x, "AwsIamAccessKey", js.undefined)
     
     @scala.inline
-    def deleteAwsElbv2LoadBalancer: Self = this.set("AwsElbv2LoadBalancer", js.undefined)
+    def setAwsIamGroup(value: AwsIamGroupDetails): Self = StObject.set(x, "AwsIamGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsIamAccessKey(value: AwsIamAccessKeyDetails): Self = this.set("AwsIamAccessKey", value.asInstanceOf[js.Any])
+    def setAwsIamGroupUndefined: Self = StObject.set(x, "AwsIamGroup", js.undefined)
     
     @scala.inline
-    def deleteAwsIamAccessKey: Self = this.set("AwsIamAccessKey", js.undefined)
+    def setAwsIamPolicy(value: AwsIamPolicyDetails): Self = StObject.set(x, "AwsIamPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsIamGroup(value: AwsIamGroupDetails): Self = this.set("AwsIamGroup", value.asInstanceOf[js.Any])
+    def setAwsIamPolicyUndefined: Self = StObject.set(x, "AwsIamPolicy", js.undefined)
     
     @scala.inline
-    def deleteAwsIamGroup: Self = this.set("AwsIamGroup", js.undefined)
+    def setAwsIamRole(value: AwsIamRoleDetails): Self = StObject.set(x, "AwsIamRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsIamPolicy(value: AwsIamPolicyDetails): Self = this.set("AwsIamPolicy", value.asInstanceOf[js.Any])
+    def setAwsIamRoleUndefined: Self = StObject.set(x, "AwsIamRole", js.undefined)
     
     @scala.inline
-    def deleteAwsIamPolicy: Self = this.set("AwsIamPolicy", js.undefined)
+    def setAwsIamUser(value: AwsIamUserDetails): Self = StObject.set(x, "AwsIamUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsIamRole(value: AwsIamRoleDetails): Self = this.set("AwsIamRole", value.asInstanceOf[js.Any])
+    def setAwsIamUserUndefined: Self = StObject.set(x, "AwsIamUser", js.undefined)
     
     @scala.inline
-    def deleteAwsIamRole: Self = this.set("AwsIamRole", js.undefined)
+    def setAwsKmsKey(value: AwsKmsKeyDetails): Self = StObject.set(x, "AwsKmsKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsIamUser(value: AwsIamUserDetails): Self = this.set("AwsIamUser", value.asInstanceOf[js.Any])
+    def setAwsKmsKeyUndefined: Self = StObject.set(x, "AwsKmsKey", js.undefined)
     
     @scala.inline
-    def deleteAwsIamUser: Self = this.set("AwsIamUser", js.undefined)
+    def setAwsLambdaFunction(value: AwsLambdaFunctionDetails): Self = StObject.set(x, "AwsLambdaFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsKmsKey(value: AwsKmsKeyDetails): Self = this.set("AwsKmsKey", value.asInstanceOf[js.Any])
+    def setAwsLambdaFunctionUndefined: Self = StObject.set(x, "AwsLambdaFunction", js.undefined)
     
     @scala.inline
-    def deleteAwsKmsKey: Self = this.set("AwsKmsKey", js.undefined)
+    def setAwsLambdaLayerVersion(value: AwsLambdaLayerVersionDetails): Self = StObject.set(x, "AwsLambdaLayerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsLambdaFunction(value: AwsLambdaFunctionDetails): Self = this.set("AwsLambdaFunction", value.asInstanceOf[js.Any])
+    def setAwsLambdaLayerVersionUndefined: Self = StObject.set(x, "AwsLambdaLayerVersion", js.undefined)
     
     @scala.inline
-    def deleteAwsLambdaFunction: Self = this.set("AwsLambdaFunction", js.undefined)
+    def setAwsRdsDbCluster(value: AwsRdsDbClusterDetails): Self = StObject.set(x, "AwsRdsDbCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsLambdaLayerVersion(value: AwsLambdaLayerVersionDetails): Self = this.set("AwsLambdaLayerVersion", value.asInstanceOf[js.Any])
+    def setAwsRdsDbClusterSnapshot(value: AwsRdsDbClusterSnapshotDetails): Self = StObject.set(x, "AwsRdsDbClusterSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAwsLambdaLayerVersion: Self = this.set("AwsLambdaLayerVersion", js.undefined)
+    def setAwsRdsDbClusterSnapshotUndefined: Self = StObject.set(x, "AwsRdsDbClusterSnapshot", js.undefined)
     
     @scala.inline
-    def setAwsRdsDbCluster(value: AwsRdsDbClusterDetails): Self = this.set("AwsRdsDbCluster", value.asInstanceOf[js.Any])
+    def setAwsRdsDbClusterUndefined: Self = StObject.set(x, "AwsRdsDbCluster", js.undefined)
     
     @scala.inline
-    def deleteAwsRdsDbCluster: Self = this.set("AwsRdsDbCluster", js.undefined)
+    def setAwsRdsDbInstance(value: AwsRdsDbInstanceDetails): Self = StObject.set(x, "AwsRdsDbInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRdsDbClusterSnapshot(value: AwsRdsDbClusterSnapshotDetails): Self = this.set("AwsRdsDbClusterSnapshot", value.asInstanceOf[js.Any])
+    def setAwsRdsDbInstanceUndefined: Self = StObject.set(x, "AwsRdsDbInstance", js.undefined)
     
     @scala.inline
-    def deleteAwsRdsDbClusterSnapshot: Self = this.set("AwsRdsDbClusterSnapshot", js.undefined)
+    def setAwsRdsDbSnapshot(value: AwsRdsDbSnapshotDetails): Self = StObject.set(x, "AwsRdsDbSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRdsDbInstance(value: AwsRdsDbInstanceDetails): Self = this.set("AwsRdsDbInstance", value.asInstanceOf[js.Any])
+    def setAwsRdsDbSnapshotUndefined: Self = StObject.set(x, "AwsRdsDbSnapshot", js.undefined)
     
     @scala.inline
-    def deleteAwsRdsDbInstance: Self = this.set("AwsRdsDbInstance", js.undefined)
+    def setAwsRedshiftCluster(value: AwsRedshiftClusterDetails): Self = StObject.set(x, "AwsRedshiftCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRdsDbSnapshot(value: AwsRdsDbSnapshotDetails): Self = this.set("AwsRdsDbSnapshot", value.asInstanceOf[js.Any])
+    def setAwsRedshiftClusterUndefined: Self = StObject.set(x, "AwsRedshiftCluster", js.undefined)
     
     @scala.inline
-    def deleteAwsRdsDbSnapshot: Self = this.set("AwsRdsDbSnapshot", js.undefined)
+    def setAwsS3Bucket(value: AwsS3BucketDetails): Self = StObject.set(x, "AwsS3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRedshiftCluster(value: AwsRedshiftClusterDetails): Self = this.set("AwsRedshiftCluster", value.asInstanceOf[js.Any])
+    def setAwsS3BucketUndefined: Self = StObject.set(x, "AwsS3Bucket", js.undefined)
     
     @scala.inline
-    def deleteAwsRedshiftCluster: Self = this.set("AwsRedshiftCluster", js.undefined)
+    def setAwsS3Object(value: AwsS3ObjectDetails): Self = StObject.set(x, "AwsS3Object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsS3Bucket(value: AwsS3BucketDetails): Self = this.set("AwsS3Bucket", value.asInstanceOf[js.Any])
+    def setAwsS3ObjectUndefined: Self = StObject.set(x, "AwsS3Object", js.undefined)
     
     @scala.inline
-    def deleteAwsS3Bucket: Self = this.set("AwsS3Bucket", js.undefined)
+    def setAwsSecretsManagerSecret(value: AwsSecretsManagerSecretDetails): Self = StObject.set(x, "AwsSecretsManagerSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsS3Object(value: AwsS3ObjectDetails): Self = this.set("AwsS3Object", value.asInstanceOf[js.Any])
+    def setAwsSecretsManagerSecretUndefined: Self = StObject.set(x, "AwsSecretsManagerSecret", js.undefined)
     
     @scala.inline
-    def deleteAwsS3Object: Self = this.set("AwsS3Object", js.undefined)
+    def setAwsSnsTopic(value: AwsSnsTopicDetails): Self = StObject.set(x, "AwsSnsTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsSecretsManagerSecret(value: AwsSecretsManagerSecretDetails): Self = this.set("AwsSecretsManagerSecret", value.asInstanceOf[js.Any])
+    def setAwsSnsTopicUndefined: Self = StObject.set(x, "AwsSnsTopic", js.undefined)
     
     @scala.inline
-    def deleteAwsSecretsManagerSecret: Self = this.set("AwsSecretsManagerSecret", js.undefined)
+    def setAwsSqsQueue(value: AwsSqsQueueDetails): Self = StObject.set(x, "AwsSqsQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsSnsTopic(value: AwsSnsTopicDetails): Self = this.set("AwsSnsTopic", value.asInstanceOf[js.Any])
+    def setAwsSqsQueueUndefined: Self = StObject.set(x, "AwsSqsQueue", js.undefined)
     
     @scala.inline
-    def deleteAwsSnsTopic: Self = this.set("AwsSnsTopic", js.undefined)
+    def setAwsWafWebAcl(value: AwsWafWebAclDetails): Self = StObject.set(x, "AwsWafWebAcl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsSqsQueue(value: AwsSqsQueueDetails): Self = this.set("AwsSqsQueue", value.asInstanceOf[js.Any])
+    def setAwsWafWebAclUndefined: Self = StObject.set(x, "AwsWafWebAcl", js.undefined)
     
     @scala.inline
-    def deleteAwsSqsQueue: Self = this.set("AwsSqsQueue", js.undefined)
+    def setContainer(value: ContainerDetails): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsWafWebAcl(value: AwsWafWebAclDetails): Self = this.set("AwsWafWebAcl", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
     
     @scala.inline
-    def deleteAwsWafWebAcl: Self = this.set("AwsWafWebAcl", js.undefined)
+    def setOther(value: FieldMap): Self = StObject.set(x, "Other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: ContainerDetails): Self = this.set("Container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainer: Self = this.set("Container", js.undefined)
-    
-    @scala.inline
-    def setOther(value: FieldMap): Self = this.set("Other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOther: Self = this.set("Other", js.undefined)
+    def setOtherUndefined: Self = StObject.set(x, "Other", js.undefined)
   }
 }

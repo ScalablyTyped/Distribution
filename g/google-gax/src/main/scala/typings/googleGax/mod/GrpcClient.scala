@@ -2,9 +2,10 @@ package typings.googleGax.mod
 
 import typings.googleGax.anon.Encode
 import typings.googleGax.grpcMod.GrpcClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "GrpcClient")
 @js.native
@@ -20,21 +21,19 @@ import scala.scalajs.js.annotation._
   * @param {Object=} options.grpc - When specified, this will be used
   *   for the 'grpc' module in this context. By default, it will load the grpc
   *   module in the standard way.
-  * @param {Function=} options.promise - A constructor for a promise that
-  * implements the ES6 specification of promise. If not provided, native
-  * promises will be used.
   * @constructor
   */
 class GrpcClient ()
   extends typings.googleGax.grpcMod.GrpcClient {
   def this(options: GrpcClientOptions) = this()
 }
-
 /* static members */
-@JSImport("google-gax", "GrpcClient")
-@js.native
-object GrpcClient extends js.Object {
+object GrpcClient {
+  
+  @JSImport("google-gax", "GrpcClient._resolveFile")
+  @js.native
   def _resolveFile(protoPath: String, filename: String): String = js.native
+  
   /**
     * Creates a 'bytelength' function for a given proto message class.
     *
@@ -45,6 +44,7 @@ object GrpcClient extends js.Object {
     * @return {function(Object):number} - a function to compute the byte length
     *   for an object.
     */
+  @JSImport("google-gax", "GrpcClient.createByteLengthFunction")
+  @js.native
   def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = js.native
 }
-

@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The environment values to set at runtime.
   */
 @js.native
-trait SchemaRuntimeEnvironment extends js.Object {
+trait SchemaRuntimeEnvironment extends StObject {
   
   /**
     * Additional experiment flags for the job.
@@ -83,87 +84,75 @@ object SchemaRuntimeEnvironment {
   }
   
   @scala.inline
-  implicit class SchemaRuntimeEnvironmentOps[Self <: SchemaRuntimeEnvironment] (val x: Self) extends AnyVal {
+  implicit class SchemaRuntimeEnvironmentMutableBuilder[Self <: SchemaRuntimeEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalExperiments(value: js.Array[String]): Self = StObject.set(x, "additionalExperiments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalExperimentsUndefined: Self = StObject.set(x, "additionalExperiments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalExperimentsVarargs(value: String*): Self = StObject.set(x, "additionalExperiments", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalExperimentsVarargs(value: String*): Self = this.set("additionalExperiments", js.Array(value :_*))
+    def setAdditionalUserLabels(value: StringDictionary[String]): Self = StObject.set(x, "additionalUserLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalExperiments(value: js.Array[String]): Self = this.set("additionalExperiments", value.asInstanceOf[js.Any])
+    def setAdditionalUserLabelsUndefined: Self = StObject.set(x, "additionalUserLabels", js.undefined)
     
     @scala.inline
-    def deleteAdditionalExperiments: Self = this.set("additionalExperiments", js.undefined)
+    def setBypassTempDirValidation(value: Boolean): Self = StObject.set(x, "bypassTempDirValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalUserLabels(value: StringDictionary[String]): Self = this.set("additionalUserLabels", value.asInstanceOf[js.Any])
+    def setBypassTempDirValidationUndefined: Self = StObject.set(x, "bypassTempDirValidation", js.undefined)
     
     @scala.inline
-    def deleteAdditionalUserLabels: Self = this.set("additionalUserLabels", js.undefined)
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBypassTempDirValidation(value: Boolean): Self = this.set("bypassTempDirValidation", value.asInstanceOf[js.Any])
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
     @scala.inline
-    def deleteBypassTempDirValidation: Self = this.set("bypassTempDirValidation", js.undefined)
+    def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
     
     @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWorkers(value: Double): Self = this.set("maxWorkers", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def deleteMaxWorkers: Self = this.set("maxWorkers", js.undefined)
+    def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumWorkers(value: Double): Self = this.set("numWorkers", value.asInstanceOf[js.Any])
+    def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
     
     @scala.inline
-    def deleteNumWorkers: Self = this.set("numWorkers", js.undefined)
+    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccountEmail(value: String): Self = this.set("serviceAccountEmail", value.asInstanceOf[js.Any])
+    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
     @scala.inline
-    def deleteServiceAccountEmail: Self = this.set("serviceAccountEmail", js.undefined)
+    def setTempLocation(value: String): Self = StObject.set(x, "tempLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    def setTempLocationUndefined: Self = StObject.set(x, "tempLocation", js.undefined)
     
     @scala.inline
-    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTempLocation(value: String): Self = this.set("tempLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTempLocation: Self = this.set("tempLocation", js.undefined)
-    
-    @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

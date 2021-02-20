@@ -6,6 +6,7 @@ import typings.html5plus.html5plusStrings.instant
 import typings.html5plus.html5plusStrings.none
 import typings.html5plus.html5plusStrings.redirect
 import typings.html5plus.html5plusStrings.reject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewOverrideUrlOptions extends js.Object {
+trait PlusWebviewWebviewOverrideUrlOptions extends StObject {
   
   /**
     * 拦截URL请求生效时机
@@ -88,42 +89,30 @@ object PlusWebviewWebviewOverrideUrlOptions {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewOverrideUrlOptionsOps[Self <: PlusWebviewWebviewOverrideUrlOptions] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewOverrideUrlOptionsMutableBuilder[Self <: PlusWebviewWebviewOverrideUrlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffect(value: instant | _empty): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclude(value: none | redirect): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: instant | _empty): Self = this.set("effect", value.asInstanceOf[js.Any])
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def deleteEffect: Self = this.set("effect", js.undefined)
+    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: none | redirect): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setMode(value: allow | reject): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: String): Self = this.set("match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
-    
-    @scala.inline
-    def setMode(value: allow | reject): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A request message for ContentAddressableStorage.BatchReadBlobs.
   */
 @js.native
-trait SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest extends js.Object {
+trait SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest extends StObject {
   
   /**
     * The individual blob digests.
@@ -24,27 +25,15 @@ object SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest {
   }
   
   @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequestOps[Self <: SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequestMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDigests(value: js.Array[SchemaBuildBazelRemoteExecutionV2Digest]): Self = StObject.set(x, "digests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigestsUndefined: Self = StObject.set(x, "digests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = this.set("digests", js.Array(value :_*))
-    
-    @scala.inline
-    def setDigests(value: js.Array[SchemaBuildBazelRemoteExecutionV2Digest]): Self = this.set("digests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDigests: Self = this.set("digests", js.undefined)
+    def setDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "digests", js.Array(value :_*))
   }
 }

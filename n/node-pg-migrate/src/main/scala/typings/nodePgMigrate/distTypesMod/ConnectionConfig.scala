@@ -1,11 +1,12 @@
 package typings.nodePgMigrate.distTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionConfig extends js.Object {
+trait ConnectionConfig extends StObject {
   
   var connectionString: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object ConnectionConfig {
   }
   
   @scala.inline
-  implicit class ConnectionConfigOps[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
+  implicit class ConnectionConfigMutableBuilder[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionString(value: String): Self = this.set("connectionString", value.asInstanceOf[js.Any])
+    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
     @scala.inline
-    def deleteConnectionString: Self = this.set("connectionString", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: String): Self = this.set("database", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteDatabase: Self = this.set("database", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

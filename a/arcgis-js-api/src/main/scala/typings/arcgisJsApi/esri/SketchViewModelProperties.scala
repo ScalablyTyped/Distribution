@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchViewModelProperties extends js.Object {
+trait SketchViewModelProperties extends StObject {
   
   /**
     * Default create options set for the Sketch widget.
@@ -72,66 +73,54 @@ object SketchViewModelProperties {
   }
   
   @scala.inline
-  implicit class SketchViewModelPropertiesOps[Self <: SketchViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class SketchViewModelPropertiesMutableBuilder[Self <: SketchViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultCreateOptions(value: SketchViewModelDefaultCreateOptions): Self = StObject.set(x, "defaultCreateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultCreateOptionsUndefined: Self = StObject.set(x, "defaultCreateOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultUpdateOptions(value: SketchViewModelDefaultUpdateOptions): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCreateOptions(value: SketchViewModelDefaultCreateOptions): Self = this.set("defaultCreateOptions", value.asInstanceOf[js.Any])
+    def setDefaultUpdateOptionsUndefined: Self = StObject.set(x, "defaultUpdateOptions", js.undefined)
     
     @scala.inline
-    def deleteDefaultCreateOptions: Self = this.set("defaultCreateOptions", js.undefined)
+    def setLayer(value: GraphicsLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultUpdateOptions(value: SketchViewModelDefaultUpdateOptions): Self = this.set("defaultUpdateOptions", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteDefaultUpdateOptions: Self = this.set("defaultUpdateOptions", js.undefined)
+    def setPointSymbol(value: SimpleMarkerSymbolProperties | PointSymbol3DProperties): Self = StObject.set(x, "pointSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: GraphicsLayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setPointSymbolUndefined: Self = StObject.set(x, "pointSymbol", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setPolygonSymbol(value: SimpleFillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "polygonSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointSymbol(value: SimpleMarkerSymbolProperties | PointSymbol3DProperties): Self = this.set("pointSymbol", value.asInstanceOf[js.Any])
+    def setPolygonSymbolUndefined: Self = StObject.set(x, "polygonSymbol", js.undefined)
     
     @scala.inline
-    def deletePointSymbol: Self = this.set("pointSymbol", js.undefined)
+    def setPolylineSymbol(value: SimpleLineSymbolProperties | LineSymbol3DProperties): Self = StObject.set(x, "polylineSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonSymbol(value: SimpleFillSymbolProperties | PolygonSymbol3DProperties): Self = this.set("polygonSymbol", value.asInstanceOf[js.Any])
+    def setPolylineSymbolUndefined: Self = StObject.set(x, "polylineSymbol", js.undefined)
     
     @scala.inline
-    def deletePolygonSymbol: Self = this.set("polygonSymbol", js.undefined)
+    def setUpdateOnGraphicClick(value: Boolean): Self = StObject.set(x, "updateOnGraphicClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylineSymbol(value: SimpleLineSymbolProperties | LineSymbol3DProperties): Self = this.set("polylineSymbol", value.asInstanceOf[js.Any])
+    def setUpdateOnGraphicClickUndefined: Self = StObject.set(x, "updateOnGraphicClick", js.undefined)
     
     @scala.inline
-    def deletePolylineSymbol: Self = this.set("polylineSymbol", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateOnGraphicClick(value: Boolean): Self = this.set("updateOnGraphicClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateOnGraphicClick: Self = this.set("updateOnGraphicClick", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

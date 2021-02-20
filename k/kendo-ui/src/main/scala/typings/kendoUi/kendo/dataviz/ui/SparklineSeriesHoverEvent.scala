@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object SparklineSeriesHoverEvent {
   }
   
   @scala.inline
-  implicit class SparklineSeriesHoverEventOps[Self <: SparklineSeriesHoverEvent] (val x: Self) extends AnyVal {
+  implicit class SparklineSeriesHoverEventMutableBuilder[Self <: SparklineSeriesHoverEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: js.Any): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataItem(value: js.Any): Self = this.set("dataItem", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteDataItem: Self = this.set("dataItem", js.undefined)
+    def setPercentage(value: js.Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: js.Any): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setSeries(value: SparklineSeriesHoverEventSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentage(value: js.Any): Self = this.set("percentage", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deletePercentage: Self = this.set("percentage", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: SparklineSeriesHoverEventSeries): Self = this.set("series", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

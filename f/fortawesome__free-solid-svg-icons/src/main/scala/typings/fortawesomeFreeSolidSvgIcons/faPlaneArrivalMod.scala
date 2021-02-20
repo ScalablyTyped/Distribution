@@ -3,29 +3,46 @@ package typings.fortawesomeFreeSolidSvgIcons
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconName
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", JSImport.Namespace)
-@js.native
-object faPlaneArrivalMod extends js.Object {
+object faPlaneArrivalMod {
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", "definition")
+  @js.native
   val definition: IconDefinition = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", "faPlaneArrival")
+  @js.native
   val faPlaneArrival: IconDefinition = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", "height")
+  @js.native
   val height: Double = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", "iconName")
+  @js.native
   val iconName: IconName = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", "ligatures")
+  @js.native
   val ligatures: js.Array[String] = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", "prefix")
+  @js.native
   val prefix: IconPrefix = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", "svgPathData")
+  @js.native
   val svgPathData: String = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", "unicode")
+  @js.native
   val unicode: String = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faPlaneArrival", "width")
+  @js.native
   val width: Double = js.native
 }

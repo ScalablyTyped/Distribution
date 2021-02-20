@@ -14,6 +14,7 @@ import typings.grommet.grommetStrings.top
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
 import typings.grommet.utilsMod._RoundType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object Corner {
   }
   
   @scala.inline
-  implicit class CornerOps[Self <: Corner] (val x: Self) extends AnyVal {
+  implicit class CornerMutableBuilder[Self <: Corner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorner(value: top | left | bottom | right | `top-left` | `top-right` | `bottom-left` | `bottom-right`): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCornerUndefined: Self = StObject.set(x, "corner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: xsmall | small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorner(value: top | left | bottom | right | `top-left` | `top-right` | `bottom-left` | `bottom-right`): Self = this.set("corner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCorner: Self = this.set("corner", js.undefined)
-    
-    @scala.inline
-    def setSize(value: xsmall | small | medium | large | xlarge | String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.alb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetListenerDefaultActionRedirect extends js.Object {
+trait GetListenerDefaultActionRedirect extends StObject {
   
   var host: String = js.native
   
@@ -31,36 +32,24 @@ object GetListenerDefaultActionRedirect {
   }
   
   @scala.inline
-  implicit class GetListenerDefaultActionRedirectOps[Self <: GetListenerDefaultActionRedirect] (val x: Self) extends AnyVal {
+  implicit class GetListenerDefaultActionRedirectMutableBuilder[Self <: GetListenerDefaultActionRedirect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: String): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

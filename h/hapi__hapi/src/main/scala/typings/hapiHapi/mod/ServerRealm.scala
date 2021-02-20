@@ -2,12 +2,13 @@ package typings.hapiHapi.mod
 
 import typings.hapiHapi.anon.Bind
 import typings.hapiHapi.anon.Route
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerRealm extends js.Object {
+trait ServerRealm extends StObject {
   
   /** when the server object is provided as an argument to the plugin register() method, modifiers provides the registration preferences passed the server.register() method and includes: */
   var modifiers: Route = js.native
@@ -36,39 +37,27 @@ object ServerRealm {
   }
   
   @scala.inline
-  implicit class ServerRealmOps[Self <: ServerRealm] (val x: Self) extends AnyVal {
+  implicit class ServerRealmMutableBuilder[Self <: ServerRealm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModifiers(value: Route): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParent(value: ServerRealm): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParentNull: Self = StObject.set(x, "parent", null)
     
     @scala.inline
-    def setModifiers(value: Route): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugin(value: String): Self = this.set("plugin", value.asInstanceOf[js.Any])
+    def setPluginOptions(value: js.Object): Self = StObject.set(x, "pluginOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginOptions(value: js.Object): Self = this.set("pluginOptions", value.asInstanceOf[js.Any])
+    def setPlugins(value: PluginsStates): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: PluginsStates): Self = this.set("plugins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSettings(value: Bind): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: ServerRealm): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentNull: Self = this.set("parent", null)
+    def setSettings(value: Bind): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }
 }

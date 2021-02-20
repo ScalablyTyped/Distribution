@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * accessing the FilterInfos object.
   */
 @js.native
-trait FilterInfos extends js.Object {
+trait FilterInfos extends StObject {
   
   def apply(Index: String): FilterInfo = js.native
   /** Returns the specified item in the collection either by position or name */

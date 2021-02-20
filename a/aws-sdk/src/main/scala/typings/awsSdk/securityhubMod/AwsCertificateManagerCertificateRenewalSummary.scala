@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCertificateManagerCertificateRenewalSummary extends js.Object {
+trait AwsCertificateManagerCertificateRenewalSummary extends StObject {
   
   /**
     * Information about the validation of each domain name in the certificate, as it pertains to AWS Certificate Manager managed renewal. Provided only when the certificate type is AMAZON_ISSUED.
@@ -36,45 +37,33 @@ object AwsCertificateManagerCertificateRenewalSummary {
   }
   
   @scala.inline
-  implicit class AwsCertificateManagerCertificateRenewalSummaryOps[Self <: AwsCertificateManagerCertificateRenewalSummary] (val x: Self) extends AnyVal {
+  implicit class AwsCertificateManagerCertificateRenewalSummaryMutableBuilder[Self <: AwsCertificateManagerCertificateRenewalSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainValidationOptions(value: AwsCertificateManagerCertificateDomainValidationOptions): Self = StObject.set(x, "DomainValidationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainValidationOptionsUndefined: Self = StObject.set(x, "DomainValidationOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainValidationOptionsVarargs(value: AwsCertificateManagerCertificateDomainValidationOption*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value :_*))
     
     @scala.inline
-    def setDomainValidationOptionsVarargs(value: AwsCertificateManagerCertificateDomainValidationOption*): Self = this.set("DomainValidationOptions", js.Array(value :_*))
+    def setRenewalStatus(value: NonEmptyString): Self = StObject.set(x, "RenewalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainValidationOptions(value: AwsCertificateManagerCertificateDomainValidationOptions): Self = this.set("DomainValidationOptions", value.asInstanceOf[js.Any])
+    def setRenewalStatusReason(value: NonEmptyString): Self = StObject.set(x, "RenewalStatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomainValidationOptions: Self = this.set("DomainValidationOptions", js.undefined)
+    def setRenewalStatusReasonUndefined: Self = StObject.set(x, "RenewalStatusReason", js.undefined)
     
     @scala.inline
-    def setRenewalStatus(value: NonEmptyString): Self = this.set("RenewalStatus", value.asInstanceOf[js.Any])
+    def setRenewalStatusUndefined: Self = StObject.set(x, "RenewalStatus", js.undefined)
     
     @scala.inline
-    def deleteRenewalStatus: Self = this.set("RenewalStatus", js.undefined)
+    def setUpdatedAt(value: NonEmptyString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenewalStatusReason(value: NonEmptyString): Self = this.set("RenewalStatusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenewalStatusReason: Self = this.set("RenewalStatusReason", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: NonEmptyString): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

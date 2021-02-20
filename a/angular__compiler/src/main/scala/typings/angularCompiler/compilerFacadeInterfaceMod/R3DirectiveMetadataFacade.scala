@@ -2,12 +2,13 @@ package typings.angularCompiler.compilerFacadeInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.anon.UsesOnChanges
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait R3DirectiveMetadataFacade extends js.Object {
+trait R3DirectiveMetadataFacade extends StObject {
   
   var deps: js.Array[R3DependencyMetadataFacade] | Null = js.native
   
@@ -64,99 +65,87 @@ object R3DirectiveMetadataFacade {
   }
   
   @scala.inline
-  implicit class R3DirectiveMetadataFacadeOps[Self <: R3DirectiveMetadataFacade] (val x: Self) extends AnyVal {
+  implicit class R3DirectiveMetadataFacadeMutableBuilder[Self <: R3DirectiveMetadataFacade] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeps(value: js.Array[R3DependencyMetadataFacade]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepsNull: Self = StObject.set(x, "deps", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepsVarargs(value: R3DependencyMetadataFacade*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
     @scala.inline
-    def setHost(value: StringDictionary[String]): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputsVarargs(value: String*): Self = this.set("inputs", js.Array(value :_*))
+    def setExportAsNull: Self = StObject.set(x, "exportAs", null)
     
     @scala.inline
-    def setInputs(value: js.Array[String]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
     
     @scala.inline
-    def setLifecycle(value: UsesOnChanges): Self = this.set("lifecycle", value.asInstanceOf[js.Any])
+    def setHost(value: StringDictionary[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputsVarargs(value: String*): Self = this.set("outputs", js.Array(value :_*))
+    def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputs(value: js.Array[String]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setLifecycle(value: UsesOnChanges): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropMetadata(value: StringDictionary[js.Array[_]]): Self = this.set("propMetadata", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueriesVarargs(value: R3QueryMetadataFacade*): Self = this.set("queries", js.Array(value :_*))
+    def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueries(value: js.Array[R3QueryMetadataFacade]): Self = this.set("queries", value.asInstanceOf[js.Any])
+    def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPropMetadata(value: StringDictionary[js.Array[_]]): Self = StObject.set(x, "propMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeArgumentCount(value: Double): Self = this.set("typeArgumentCount", value.asInstanceOf[js.Any])
+    def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeSourceSpan(value: ParseSourceSpan): Self = this.set("typeSourceSpan", value.asInstanceOf[js.Any])
+    def setProvidersNull: Self = StObject.set(x, "providers", null)
     
     @scala.inline
-    def setUsesInheritance(value: Boolean): Self = this.set("usesInheritance", value.asInstanceOf[js.Any])
+    def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setViewQueriesVarargs(value: R3QueryMetadataFacade*): Self = this.set("viewQueries", js.Array(value :_*))
+    def setQueries(value: js.Array[R3QueryMetadataFacade]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewQueries(value: js.Array[R3QueryMetadataFacade]): Self = this.set("viewQueries", value.asInstanceOf[js.Any])
+    def setQueriesVarargs(value: R3QueryMetadataFacade*): Self = StObject.set(x, "queries", js.Array(value :_*))
     
     @scala.inline
-    def setDepsVarargs(value: R3DependencyMetadataFacade*): Self = this.set("deps", js.Array(value :_*))
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeps(value: js.Array[R3DependencyMetadataFacade]): Self = this.set("deps", value.asInstanceOf[js.Any])
+    def setSelectorNull: Self = StObject.set(x, "selector", null)
     
     @scala.inline
-    def setDepsNull: Self = this.set("deps", null)
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportAsVarargs(value: String*): Self = this.set("exportAs", js.Array(value :_*))
+    def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportAs(value: js.Array[String]): Self = this.set("exportAs", value.asInstanceOf[js.Any])
+    def setTypeSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "typeSourceSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportAsNull: Self = this.set("exportAs", null)
+    def setUsesInheritance(value: Boolean): Self = StObject.set(x, "usesInheritance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidersVarargs(value: Provider*): Self = this.set("providers", js.Array(value :_*))
+    def setViewQueries(value: js.Array[R3QueryMetadataFacade]): Self = StObject.set(x, "viewQueries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviders(value: js.Array[Provider]): Self = this.set("providers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvidersNull: Self = this.set("providers", null)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectorNull: Self = this.set("selector", null)
+    def setViewQueriesVarargs(value: R3QueryMetadataFacade*): Self = StObject.set(x, "viewQueries", js.Array(value :_*))
   }
 }

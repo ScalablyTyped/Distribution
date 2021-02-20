@@ -3,6 +3,7 @@ package typings.titanium.Titanium.Media
 import typings.std.Date
 import typings.titanium.Titanium.Blob
 import typings.titanium.Titanium.Proxy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

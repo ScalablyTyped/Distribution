@@ -1,11 +1,12 @@
 package typings.antDesignReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AfterClose extends js.Object {
+trait AfterClose extends StObject {
   
   def afterClose(): Unit = js.native
   
@@ -41,42 +42,30 @@ object AfterClose {
   }
   
   @scala.inline
-  implicit class AfterCloseOps[Self <: AfterClose] (val x: Self) extends AnyVal {
+  implicit class AfterCloseMutableBuilder[Self <: AfterClose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterClose(value: () => Unit): Self = this.set("afterClose", js.Any.fromFunction0(value))
+    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnChange(value: () => Unit): Self = this.set("onChange", js.Any.fromFunction0(value))
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnLongPress(value: () => Unit): Self = this.set("onLongPress", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmall(value: Boolean): Self = this.set("small", value.asInstanceOf[js.Any])
+    def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
   }
 }

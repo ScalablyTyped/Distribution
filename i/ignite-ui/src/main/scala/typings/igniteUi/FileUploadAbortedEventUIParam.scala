@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileUploadAbortedEventUIParam extends js.Object {
+trait FileUploadAbortedEventUIParam extends StObject {
   
   /**
     * Gets the unique identifier of the file.
@@ -46,54 +47,42 @@ object FileUploadAbortedEventUIParam {
   }
   
   @scala.inline
-  implicit class FileUploadAbortedEventUIParamOps[Self <: FileUploadAbortedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class FileUploadAbortedEventUIParamMutableBuilder[Self <: FileUploadAbortedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileId(value: Double): Self = this.set("fileId", value.asInstanceOf[js.Any])
+    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
     @scala.inline
-    def deleteFileId: Self = this.set("fileId", js.undefined)
+    def setFileStatus(value: Double): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    def setFileStatusUndefined: Self = StObject.set(x, "fileStatus", js.undefined)
     
     @scala.inline
-    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileStatus(value: Double): Self = this.set("fileStatus", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteFileStatus: Self = this.set("fileStatus", js.undefined)
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setUploadedBytes(value: Double): Self = StObject.set(x, "uploadedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
-    
-    @scala.inline
-    def setUploadedBytes(value: Double): Self = this.set("uploadedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadedBytes: Self = this.set("uploadedBytes", js.undefined)
+    def setUploadedBytesUndefined: Self = StObject.set(x, "uploadedBytes", js.undefined)
   }
 }

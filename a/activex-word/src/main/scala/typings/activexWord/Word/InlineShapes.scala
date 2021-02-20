@@ -2,12 +2,13 @@ package typings.activexWord.Word
 
 import typings.activexOffice.Office.SmartArtLayout
 import typings.activexOffice.Office.XlChartType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InlineShapes extends js.Object {
+trait InlineShapes extends StObject {
   
   /** @param Office.XlChartType [Type=-1] */
   def AddChart(): InlineShape = js.native

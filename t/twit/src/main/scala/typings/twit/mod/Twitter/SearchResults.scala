@@ -1,11 +1,12 @@
 package typings.twit.mod.Twitter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchResults extends js.Object {
+trait SearchResults extends StObject {
   
   var search_metadata: Metadata = js.native
   
@@ -20,27 +21,15 @@ object SearchResults {
   }
   
   @scala.inline
-  implicit class SearchResultsOps[Self <: SearchResults] (val x: Self) extends AnyVal {
+  implicit class SearchResultsMutableBuilder[Self <: SearchResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSearch_metadata(value: Metadata): Self = StObject.set(x, "search_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatuses(value: js.Array[Status]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSearch_metadata(value: Metadata): Self = this.set("search_metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusesVarargs(value: Status*): Self = this.set("statuses", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatuses(value: js.Array[Status]): Self = this.set("statuses", value.asInstanceOf[js.Any])
+    def setStatusesVarargs(value: Status*): Self = StObject.set(x, "statuses", js.Array(value :_*))
   }
 }

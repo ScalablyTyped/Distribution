@@ -2,6 +2,7 @@ package typings.protobufjs.lightMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,7 @@ class Root ()
   def this(options: StringDictionary[js.Any]) = this()
 }
 /* static members */
-@JSImport("protobufjs/light", "Root")
-@js.native
-object Root extends js.Object {
+object Root {
   
   /**
     * Loads a namespace descriptor into a root namespace.
@@ -27,6 +26,10 @@ object Root extends js.Object {
     * @param [root] Root namespace, defaults to create a new one if omitted
     * @returns Root namespace
     */
+  @JSImport("protobufjs/light", "Root.fromJSON")
+  @js.native
   def fromJSON(json: INamespace): typings.protobufjs.mod.Root = js.native
+  @JSImport("protobufjs/light", "Root.fromJSON")
+  @js.native
   def fromJSON(json: INamespace, root: typings.protobufjs.mod.Root): typings.protobufjs.mod.Root = js.native
 }

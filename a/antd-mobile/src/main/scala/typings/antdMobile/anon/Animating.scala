@@ -1,11 +1,12 @@
 package typings.antdMobile.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animating extends js.Object {
+trait Animating extends StObject {
   
   var animating: Boolean = js.native
   
@@ -26,33 +27,21 @@ object Animating {
   }
   
   @scala.inline
-  implicit class AnimatingOps[Self <: Animating] (val x: Self) extends AnyVal {
+  implicit class AnimatingMutableBuilder[Self <: Animating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPanelColor(value: String): Self = StObject.set(x, "panelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimating(value: Boolean): Self = this.set("animating", value.asInstanceOf[js.Any])
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelColor(value: String): Self = this.set("panelColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToast(value: Boolean): Self = this.set("toast", value.asInstanceOf[js.Any])
+    def setToast(value: Boolean): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
   }
 }

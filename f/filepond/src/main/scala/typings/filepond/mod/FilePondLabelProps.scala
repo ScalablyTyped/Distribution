@@ -1,11 +1,12 @@
 package typings.filepond.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilePondLabelProps extends js.Object {
+trait FilePondLabelProps extends StObject {
   
   /**
     * Label used for abort load button.
@@ -188,198 +189,186 @@ object FilePondLabelProps {
   }
   
   @scala.inline
-  implicit class FilePondLabelPropsOps[Self <: FilePondLabelProps] (val x: Self) extends AnyVal {
+  implicit class FilePondLabelPropsMutableBuilder[Self <: FilePondLabelProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelButtonAbortItemLoad(value: String): Self = StObject.set(x, "labelButtonAbortItemLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelButtonAbortItemLoadUndefined: Self = StObject.set(x, "labelButtonAbortItemLoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelButtonAbortItemProcessing(value: String): Self = StObject.set(x, "labelButtonAbortItemProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelButtonAbortItemLoad(value: String): Self = this.set("labelButtonAbortItemLoad", value.asInstanceOf[js.Any])
+    def setLabelButtonAbortItemProcessingUndefined: Self = StObject.set(x, "labelButtonAbortItemProcessing", js.undefined)
     
     @scala.inline
-    def deleteLabelButtonAbortItemLoad: Self = this.set("labelButtonAbortItemLoad", js.undefined)
+    def setLabelButtonProcessItem(value: String): Self = StObject.set(x, "labelButtonProcessItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelButtonAbortItemProcessing(value: String): Self = this.set("labelButtonAbortItemProcessing", value.asInstanceOf[js.Any])
+    def setLabelButtonProcessItemUndefined: Self = StObject.set(x, "labelButtonProcessItem", js.undefined)
     
     @scala.inline
-    def deleteLabelButtonAbortItemProcessing: Self = this.set("labelButtonAbortItemProcessing", js.undefined)
+    def setLabelButtonRemoveItem(value: String): Self = StObject.set(x, "labelButtonRemoveItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelButtonProcessItem(value: String): Self = this.set("labelButtonProcessItem", value.asInstanceOf[js.Any])
+    def setLabelButtonRemoveItemUndefined: Self = StObject.set(x, "labelButtonRemoveItem", js.undefined)
     
     @scala.inline
-    def deleteLabelButtonProcessItem: Self = this.set("labelButtonProcessItem", js.undefined)
+    def setLabelButtonRetryItemLoad(value: String): Self = StObject.set(x, "labelButtonRetryItemLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelButtonRemoveItem(value: String): Self = this.set("labelButtonRemoveItem", value.asInstanceOf[js.Any])
+    def setLabelButtonRetryItemLoadUndefined: Self = StObject.set(x, "labelButtonRetryItemLoad", js.undefined)
     
     @scala.inline
-    def deleteLabelButtonRemoveItem: Self = this.set("labelButtonRemoveItem", js.undefined)
+    def setLabelButtonRetryItemProcessing(value: String): Self = StObject.set(x, "labelButtonRetryItemProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelButtonRetryItemLoad(value: String): Self = this.set("labelButtonRetryItemLoad", value.asInstanceOf[js.Any])
+    def setLabelButtonRetryItemProcessingUndefined: Self = StObject.set(x, "labelButtonRetryItemProcessing", js.undefined)
     
     @scala.inline
-    def deleteLabelButtonRetryItemLoad: Self = this.set("labelButtonRetryItemLoad", js.undefined)
+    def setLabelButtonUndoItemProcessing(value: String): Self = StObject.set(x, "labelButtonUndoItemProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelButtonRetryItemProcessing(value: String): Self = this.set("labelButtonRetryItemProcessing", value.asInstanceOf[js.Any])
+    def setLabelButtonUndoItemProcessingUndefined: Self = StObject.set(x, "labelButtonUndoItemProcessing", js.undefined)
     
     @scala.inline
-    def deleteLabelButtonRetryItemProcessing: Self = this.set("labelButtonRetryItemProcessing", js.undefined)
+    def setLabelDecimalSeparator(value: String): Self = StObject.set(x, "labelDecimalSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelButtonUndoItemProcessing(value: String): Self = this.set("labelButtonUndoItemProcessing", value.asInstanceOf[js.Any])
+    def setLabelDecimalSeparatorUndefined: Self = StObject.set(x, "labelDecimalSeparator", js.undefined)
     
     @scala.inline
-    def deleteLabelButtonUndoItemProcessing: Self = this.set("labelButtonUndoItemProcessing", js.undefined)
+    def setLabelFileAdded(value: String): Self = StObject.set(x, "labelFileAdded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDecimalSeparator(value: String): Self = this.set("labelDecimalSeparator", value.asInstanceOf[js.Any])
+    def setLabelFileAddedUndefined: Self = StObject.set(x, "labelFileAdded", js.undefined)
     
     @scala.inline
-    def deleteLabelDecimalSeparator: Self = this.set("labelDecimalSeparator", js.undefined)
+    def setLabelFileCountPlural(value: String): Self = StObject.set(x, "labelFileCountPlural", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileAdded(value: String): Self = this.set("labelFileAdded", value.asInstanceOf[js.Any])
+    def setLabelFileCountPluralUndefined: Self = StObject.set(x, "labelFileCountPlural", js.undefined)
     
     @scala.inline
-    def deleteLabelFileAdded: Self = this.set("labelFileAdded", js.undefined)
+    def setLabelFileCountSingular(value: String): Self = StObject.set(x, "labelFileCountSingular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileCountPlural(value: String): Self = this.set("labelFileCountPlural", value.asInstanceOf[js.Any])
+    def setLabelFileCountSingularUndefined: Self = StObject.set(x, "labelFileCountSingular", js.undefined)
     
     @scala.inline
-    def deleteLabelFileCountPlural: Self = this.set("labelFileCountPlural", js.undefined)
+    def setLabelFileLoadError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = StObject.set(x, "labelFileLoadError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileCountSingular(value: String): Self = this.set("labelFileCountSingular", value.asInstanceOf[js.Any])
+    def setLabelFileLoadErrorFunction1(value: /* error */ js.Any => String): Self = StObject.set(x, "labelFileLoadError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLabelFileCountSingular: Self = this.set("labelFileCountSingular", js.undefined)
+    def setLabelFileLoadErrorUndefined: Self = StObject.set(x, "labelFileLoadError", js.undefined)
     
     @scala.inline
-    def setLabelFileLoadErrorFunction1(value: /* error */ js.Any => String): Self = this.set("labelFileLoadError", js.Any.fromFunction1(value))
+    def setLabelFileLoading(value: String): Self = StObject.set(x, "labelFileLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileLoadError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = this.set("labelFileLoadError", value.asInstanceOf[js.Any])
+    def setLabelFileLoadingUndefined: Self = StObject.set(x, "labelFileLoading", js.undefined)
     
     @scala.inline
-    def deleteLabelFileLoadError: Self = this.set("labelFileLoadError", js.undefined)
+    def setLabelFileProcessing(value: String): Self = StObject.set(x, "labelFileProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileLoading(value: String): Self = this.set("labelFileLoading", value.asInstanceOf[js.Any])
+    def setLabelFileProcessingAborted(value: String): Self = StObject.set(x, "labelFileProcessingAborted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelFileLoading: Self = this.set("labelFileLoading", js.undefined)
+    def setLabelFileProcessingAbortedUndefined: Self = StObject.set(x, "labelFileProcessingAborted", js.undefined)
     
     @scala.inline
-    def setLabelFileProcessing(value: String): Self = this.set("labelFileProcessing", value.asInstanceOf[js.Any])
+    def setLabelFileProcessingComplete(value: String): Self = StObject.set(x, "labelFileProcessingComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelFileProcessing: Self = this.set("labelFileProcessing", js.undefined)
+    def setLabelFileProcessingCompleteUndefined: Self = StObject.set(x, "labelFileProcessingComplete", js.undefined)
     
     @scala.inline
-    def setLabelFileProcessingAborted(value: String): Self = this.set("labelFileProcessingAborted", value.asInstanceOf[js.Any])
+    def setLabelFileProcessingError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = StObject.set(x, "labelFileProcessingError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelFileProcessingAborted: Self = this.set("labelFileProcessingAborted", js.undefined)
+    def setLabelFileProcessingErrorFunction1(value: /* error */ js.Any => String): Self = StObject.set(x, "labelFileProcessingError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabelFileProcessingComplete(value: String): Self = this.set("labelFileProcessingComplete", value.asInstanceOf[js.Any])
+    def setLabelFileProcessingErrorUndefined: Self = StObject.set(x, "labelFileProcessingError", js.undefined)
     
     @scala.inline
-    def deleteLabelFileProcessingComplete: Self = this.set("labelFileProcessingComplete", js.undefined)
+    def setLabelFileProcessingRevertError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = StObject.set(x, "labelFileProcessingRevertError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileProcessingErrorFunction1(value: /* error */ js.Any => String): Self = this.set("labelFileProcessingError", js.Any.fromFunction1(value))
+    def setLabelFileProcessingRevertErrorFunction1(value: /* error */ js.Any => String): Self = StObject.set(x, "labelFileProcessingRevertError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabelFileProcessingError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = this.set("labelFileProcessingError", value.asInstanceOf[js.Any])
+    def setLabelFileProcessingRevertErrorUndefined: Self = StObject.set(x, "labelFileProcessingRevertError", js.undefined)
     
     @scala.inline
-    def deleteLabelFileProcessingError: Self = this.set("labelFileProcessingError", js.undefined)
+    def setLabelFileProcessingUndefined: Self = StObject.set(x, "labelFileProcessing", js.undefined)
     
     @scala.inline
-    def setLabelFileProcessingRevertErrorFunction1(value: /* error */ js.Any => String): Self = this.set("labelFileProcessingRevertError", js.Any.fromFunction1(value))
+    def setLabelFileRemoveError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = StObject.set(x, "labelFileRemoveError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileProcessingRevertError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = this.set("labelFileProcessingRevertError", value.asInstanceOf[js.Any])
+    def setLabelFileRemoveErrorFunction1(value: /* error */ js.Any => String): Self = StObject.set(x, "labelFileRemoveError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLabelFileProcessingRevertError: Self = this.set("labelFileProcessingRevertError", js.undefined)
+    def setLabelFileRemoveErrorUndefined: Self = StObject.set(x, "labelFileRemoveError", js.undefined)
     
     @scala.inline
-    def setLabelFileRemoveErrorFunction1(value: /* error */ js.Any => String): Self = this.set("labelFileRemoveError", js.Any.fromFunction1(value))
+    def setLabelFileRemoved(value: String): Self = StObject.set(x, "labelFileRemoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileRemoveError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = this.set("labelFileRemoveError", value.asInstanceOf[js.Any])
+    def setLabelFileRemovedUndefined: Self = StObject.set(x, "labelFileRemoved", js.undefined)
     
     @scala.inline
-    def deleteLabelFileRemoveError: Self = this.set("labelFileRemoveError", js.undefined)
+    def setLabelFileSizeNotAvailable(value: String): Self = StObject.set(x, "labelFileSizeNotAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileRemoved(value: String): Self = this.set("labelFileRemoved", value.asInstanceOf[js.Any])
+    def setLabelFileSizeNotAvailableUndefined: Self = StObject.set(x, "labelFileSizeNotAvailable", js.undefined)
     
     @scala.inline
-    def deleteLabelFileRemoved: Self = this.set("labelFileRemoved", js.undefined)
+    def setLabelFileWaitingForSize(value: String): Self = StObject.set(x, "labelFileWaitingForSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileSizeNotAvailable(value: String): Self = this.set("labelFileSizeNotAvailable", value.asInstanceOf[js.Any])
+    def setLabelFileWaitingForSizeUndefined: Self = StObject.set(x, "labelFileWaitingForSize", js.undefined)
     
     @scala.inline
-    def deleteLabelFileSizeNotAvailable: Self = this.set("labelFileSizeNotAvailable", js.undefined)
+    def setLabelIdle(value: String): Self = StObject.set(x, "labelIdle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFileWaitingForSize(value: String): Self = this.set("labelFileWaitingForSize", value.asInstanceOf[js.Any])
+    def setLabelIdleUndefined: Self = StObject.set(x, "labelIdle", js.undefined)
     
     @scala.inline
-    def deleteLabelFileWaitingForSize: Self = this.set("labelFileWaitingForSize", js.undefined)
+    def setLabelInvalidField(value: String): Self = StObject.set(x, "labelInvalidField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelIdle(value: String): Self = this.set("labelIdle", value.asInstanceOf[js.Any])
+    def setLabelInvalidFieldUndefined: Self = StObject.set(x, "labelInvalidField", js.undefined)
     
     @scala.inline
-    def deleteLabelIdle: Self = this.set("labelIdle", js.undefined)
+    def setLabelTapToCancel(value: String): Self = StObject.set(x, "labelTapToCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelInvalidField(value: String): Self = this.set("labelInvalidField", value.asInstanceOf[js.Any])
+    def setLabelTapToCancelUndefined: Self = StObject.set(x, "labelTapToCancel", js.undefined)
     
     @scala.inline
-    def deleteLabelInvalidField: Self = this.set("labelInvalidField", js.undefined)
+    def setLabelTapToRetry(value: String): Self = StObject.set(x, "labelTapToRetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelTapToCancel(value: String): Self = this.set("labelTapToCancel", value.asInstanceOf[js.Any])
+    def setLabelTapToRetryUndefined: Self = StObject.set(x, "labelTapToRetry", js.undefined)
     
     @scala.inline
-    def deleteLabelTapToCancel: Self = this.set("labelTapToCancel", js.undefined)
+    def setLabelTapToUndo(value: String): Self = StObject.set(x, "labelTapToUndo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelTapToRetry(value: String): Self = this.set("labelTapToRetry", value.asInstanceOf[js.Any])
+    def setLabelTapToUndoUndefined: Self = StObject.set(x, "labelTapToUndo", js.undefined)
     
     @scala.inline
-    def deleteLabelTapToRetry: Self = this.set("labelTapToRetry", js.undefined)
+    def setLabelThousandsSeparator(value: String): Self = StObject.set(x, "labelThousandsSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelTapToUndo(value: String): Self = this.set("labelTapToUndo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelTapToUndo: Self = this.set("labelTapToUndo", js.undefined)
-    
-    @scala.inline
-    def setLabelThousandsSeparator(value: String): Self = this.set("labelThousandsSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelThousandsSeparator: Self = this.set("labelThousandsSeparator", js.undefined)
+    def setLabelThousandsSeparatorUndefined: Self = StObject.set(x, "labelThousandsSeparator", js.undefined)
   }
 }

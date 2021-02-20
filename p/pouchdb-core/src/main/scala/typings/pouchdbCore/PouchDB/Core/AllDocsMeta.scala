@@ -1,11 +1,12 @@
 package typings.pouchdbCore.PouchDB.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllDocsMeta extends js.Object {
+trait AllDocsMeta extends StObject {
   
   var _attachments: js.UndefOr[Attachments] = js.native
   
@@ -21,33 +22,21 @@ object AllDocsMeta {
   }
   
   @scala.inline
-  implicit class AllDocsMetaOps[Self <: AllDocsMeta] (val x: Self) extends AnyVal {
+  implicit class AllDocsMetaMutableBuilder[Self <: AllDocsMeta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_attachments(value: Attachments): Self = StObject.set(x, "_attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_attachmentsUndefined: Self = StObject.set(x, "_attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_conflicts(value: js.Array[RevisionId]): Self = StObject.set(x, "_conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_attachments(value: Attachments): Self = this.set("_attachments", value.asInstanceOf[js.Any])
+    def set_conflictsUndefined: Self = StObject.set(x, "_conflicts", js.undefined)
     
     @scala.inline
-    def delete_attachments: Self = this.set("_attachments", js.undefined)
-    
-    @scala.inline
-    def set_conflictsVarargs(value: RevisionId*): Self = this.set("_conflicts", js.Array(value :_*))
-    
-    @scala.inline
-    def set_conflicts(value: js.Array[RevisionId]): Self = this.set("_conflicts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_conflicts: Self = this.set("_conflicts", js.undefined)
+    def set_conflictsVarargs(value: RevisionId*): Self = StObject.set(x, "_conflicts", js.Array(value :_*))
   }
 }

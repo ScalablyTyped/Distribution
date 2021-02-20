@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotPackedbubbleDataLabelsStyleOptions extends js.Object {
+trait PlotPackedbubbleDataLabelsStyleOptions extends StObject {
   
   var transition: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object PlotPackedbubbleDataLabelsStyleOptions {
   }
   
   @scala.inline
-  implicit class PlotPackedbubbleDataLabelsStyleOptionsOps[Self <: PlotPackedbubbleDataLabelsStyleOptions] (val x: Self) extends AnyVal {
+  implicit class PlotPackedbubbleDataLabelsStyleOptionsMutableBuilder[Self <: PlotPackedbubbleDataLabelsStyleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

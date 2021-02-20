@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FloodlightActivityGroup extends js.Object {
+trait FloodlightActivityGroup extends StObject {
   
   /** Account ID of this floodlight activity group. This is a read-only field that can be left blank. */
   var accountId: js.UndefOr[String] = js.native
@@ -59,90 +60,78 @@ object FloodlightActivityGroup {
   }
   
   @scala.inline
-  implicit class FloodlightActivityGroupOps[Self <: FloodlightActivityGroup] (val x: Self) extends AnyVal {
+  implicit class FloodlightActivityGroupMutableBuilder[Self <: FloodlightActivityGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "advertiserIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setFloodlightConfigurationId(value: String): Self = StObject.set(x, "floodlightConfigurationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    def setFloodlightConfigurationIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "floodlightConfigurationIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    def setFloodlightConfigurationIdDimensionValueUndefined: Self = StObject.set(x, "floodlightConfigurationIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setFloodlightConfigurationId(value: String): Self = this.set("floodlightConfigurationId", value.asInstanceOf[js.Any])
+    def setFloodlightConfigurationIdUndefined: Self = StObject.set(x, "floodlightConfigurationId", js.undefined)
     
     @scala.inline
-    def deleteFloodlightConfigurationId: Self = this.set("floodlightConfigurationId", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightConfigurationIdDimensionValue(value: DimensionValue): Self = this.set("floodlightConfigurationIdDimensionValue", value.asInstanceOf[js.Any])
+    def setIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "idDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloodlightConfigurationIdDimensionValue: Self = this.set("floodlightConfigurationIdDimensionValue", js.undefined)
+    def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdDimensionValue(value: DimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTagString(value: String): Self = StObject.set(x, "tagString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    def setTagStringUndefined: Self = StObject.set(x, "tagString", js.undefined)
     
     @scala.inline
-    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagString(value: String): Self = this.set("tagString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagString: Self = this.set("tagString", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

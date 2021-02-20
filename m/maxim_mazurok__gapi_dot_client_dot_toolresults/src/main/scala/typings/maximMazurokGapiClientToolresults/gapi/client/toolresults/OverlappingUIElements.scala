@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverlappingUIElements extends js.Object {
+trait OverlappingUIElements extends StObject {
   
   /** Resource names of the overlapping screen elements */
   var resourceName: js.UndefOr[js.Array[String]] = js.native
@@ -22,33 +23,21 @@ object OverlappingUIElements {
   }
   
   @scala.inline
-  implicit class OverlappingUIElementsOps[Self <: OverlappingUIElements] (val x: Self) extends AnyVal {
+  implicit class OverlappingUIElementsMutableBuilder[Self <: OverlappingUIElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceName(value: js.Array[String]): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceNameVarargs(value: String*): Self = StObject.set(x, "resourceName", js.Array(value :_*))
     
     @scala.inline
-    def setResourceNameVarargs(value: String*): Self = this.set("resourceName", js.Array(value :_*))
+    def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: js.Array[String]): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
-    
-    @scala.inline
-    def setScreenId(value: String): Self = this.set("screenId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenId: Self = this.set("screenId", js.undefined)
+    def setScreenIdUndefined: Self = StObject.set(x, "screenId", js.undefined)
   }
 }

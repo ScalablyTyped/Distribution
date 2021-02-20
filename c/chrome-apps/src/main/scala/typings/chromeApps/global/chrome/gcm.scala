@@ -4,6 +4,7 @@ import typings.chromeApps.chrome.gcm.GcmError
 import typings.chromeApps.chrome.gcm.IncomingMessage
 import typings.chromeApps.chrome.gcm.OutgoingMessage
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,23 +28,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since Chrome 35.
   * @requires Permissions: 'gcm'
   */
-@JSGlobal("chrome.gcm")
-@js.native
-object gcm extends js.Object {
+object gcm {
   
   /**
     * The maximum size (in bytes) of all key/value pairs in a message.
     * @default 4096
     */
+  @JSGlobal("chrome.gcm.MAX_MESSAGE_SIZE")
+  @js.native
   val MAX_MESSAGE_SIZE: integer = js.native
   
   /** Fired when a message is received through GCM. */
+  @JSGlobal("chrome.gcm.onMessage")
+  @js.native
   val onMessage: typings.chromeApps.chrome.events.Event[js.Function1[/* message */ IncomingMessage, Unit]] = js.native
   
   /** Fired when a GCM server had to delete messages sent by an app server to the application. See Messages deleted event section of Cloud Messaging documentation for details on handling this event. */
+  @JSGlobal("chrome.gcm.onMessagesDeleted")
+  @js.native
   val onMessagesDeleted: typings.chromeApps.chrome.events.Event[js.Function0[Unit]] = js.native
   
   /** Fired when it was not possible to send a message to the GCM server. */
+  @JSGlobal("chrome.gcm.onSendError")
+  @js.native
   val onSendError: typings.chromeApps.chrome.events.Event[js.Function1[/* error */ GcmError, Unit]] = js.native
   
   /**
@@ -54,6 +61,8 @@ object gcm extends js.Object {
     * function(string registrationId) {...};
     * Parameter registrationId: A registration ID assigned to the application by the GCM.
     */
+  @JSGlobal("chrome.gcm.register")
+  @js.native
   def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit = js.native
   
   /**
@@ -64,6 +73,8 @@ object gcm extends js.Object {
     * function(string messageId) {...};
     * Parameter messageId: The ID of the message that the callback was issued for.
     */
+  @JSGlobal("chrome.gcm.send")
+  @js.native
   def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit = js.native
   
   /**
@@ -72,5 +83,7 @@ object gcm extends js.Object {
     * The callback parameter should be a function that looks like this:
     * function() {...};
     */
+  @JSGlobal("chrome.gcm.unregister")
+  @js.native
   def unregister(callback: js.Function0[Unit]): Unit = js.native
 }

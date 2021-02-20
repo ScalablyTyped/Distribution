@@ -2,12 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestSuite extends js.Object {
+trait TestSuite extends StObject {
   
   var areaUri: String = js.native
   
@@ -91,102 +92,90 @@ object TestSuite {
   }
   
   @scala.inline
-  implicit class TestSuiteOps[Self <: TestSuite] (val x: Self) extends AnyVal {
+  implicit class TestSuiteMutableBuilder[Self <: TestSuite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreaUri(value: String): Self = StObject.set(x, "areaUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: js.Array[TestSuite]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: TestSuite*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setAreaUri(value: String): Self = this.set("areaUri", value.asInstanceOf[js.Any])
+    def setDefaultConfigurations(value: js.Array[ShallowReference]): Self = StObject.set(x, "defaultConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: TestSuite*): Self = this.set("children", js.Array(value :_*))
+    def setDefaultConfigurationsVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setChildren(value: js.Array[TestSuite]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDefaultTesters(value: js.Array[ShallowReference]): Self = StObject.set(x, "defaultTesters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultConfigurationsVarargs(value: ShallowReference*): Self = this.set("defaultConfigurations", js.Array(value :_*))
+    def setDefaultTestersVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultTesters", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultConfigurations(value: js.Array[ShallowReference]): Self = this.set("defaultConfigurations", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTestersVarargs(value: ShallowReference*): Self = this.set("defaultTesters", js.Array(value :_*))
+    def setInheritDefaultConfigurations(value: Boolean): Self = StObject.set(x, "inheritDefaultConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTesters(value: js.Array[ShallowReference]): Self = this.set("defaultTesters", value.asInstanceOf[js.Any])
+    def setLastError(value: String): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLastPopulatedDate(value: Date): Self = StObject.set(x, "lastPopulatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInheritDefaultConfigurations(value: Boolean): Self = this.set("inheritDefaultConfigurations", value.asInstanceOf[js.Any])
+    def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastError(value: String): Self = this.set("lastError", value.asInstanceOf[js.Any])
+    def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPopulatedDate(value: Date): Self = this.set("lastPopulatedDate", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedBy(value: IdentityRef): Self = this.set("lastUpdatedBy", value.asInstanceOf[js.Any])
+    def setParent(value: ShallowReference): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDate(value: Date): Self = this.set("lastUpdatedDate", value.asInstanceOf[js.Any])
+    def setPlan(value: ShallowReference): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProject(value: ShallowReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: ShallowReference): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlan(value: ShallowReference): Self = this.set("plan", value.asInstanceOf[js.Any])
+    def setRequirementId(value: Double): Self = StObject.set(x, "requirementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: ShallowReference): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryString(value: String): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirementId(value: Double): Self = this.set("requirementId", value.asInstanceOf[js.Any])
+    def setSuiteType(value: String): Self = StObject.set(x, "suiteType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: Double): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setSuites(value: js.Array[ShallowReference]): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setSuitesVarargs(value: ShallowReference*): Self = StObject.set(x, "suites", js.Array(value :_*))
     
     @scala.inline
-    def setSuiteType(value: String): Self = this.set("suiteType", value.asInstanceOf[js.Any])
+    def setTestCaseCount(value: Double): Self = StObject.set(x, "testCaseCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuitesVarargs(value: ShallowReference*): Self = this.set("suites", js.Array(value :_*))
+    def setTestCasesUrl(value: String): Self = StObject.set(x, "testCasesUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuites(value: js.Array[ShallowReference]): Self = this.set("suites", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestCaseCount(value: Double): Self = this.set("testCaseCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestCasesUrl(value: String): Self = this.set("testCasesUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

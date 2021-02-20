@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBoxOptions extends js.Object {
+trait ListBoxOptions extends StObject {
   
   var add: js.UndefOr[js.Function1[/* e */ ListBoxAddEvent, Unit]] = js.native
   
@@ -61,150 +62,138 @@ object ListBoxOptions {
   }
   
   @scala.inline
-  implicit class ListBoxOptionsOps[Self <: ListBoxOptions] (val x: Self) extends AnyVal {
+  implicit class ListBoxOptionsMutableBuilder[Self <: ListBoxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: /* e */ ListBoxAddEvent => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: /* e */ ListBoxAddEvent => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setChange(value: /* e */ ListBoxEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setConnectWith(value: String): Self = StObject.set(x, "connectWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ ListBoxEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setConnectWithUndefined: Self = StObject.set(x, "connectWith", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setDataBound(value: /* e */ ListBoxEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnectWith(value: String): Self = this.set("connectWith", value.asInstanceOf[js.Any])
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteConnectWith: Self = this.set("connectWith", js.undefined)
+    def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: /* e */ ListBoxEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataValueField(value: String): Self = StObject.set(x, "dataValueField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTextField(value: String): Self = this.set("dataTextField", value.asInstanceOf[js.Any])
+    def setDataValueFieldUndefined: Self = StObject.set(x, "dataValueField", js.undefined)
     
     @scala.inline
-    def deleteDataTextField: Self = this.set("dataTextField", js.undefined)
+    def setDrag(value: /* e */ ListBoxDragEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataValueField(value: String): Self = this.set("dataValueField", value.asInstanceOf[js.Any])
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDataValueField: Self = this.set("dataValueField", js.undefined)
+    def setDragend(value: /* e */ ListBoxDragendEvent => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrag(value: /* e */ ListBoxDragEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDraggable(value: Boolean | ListBoxDraggable): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragend(value: /* e */ ListBoxDragendEvent => Unit): Self = this.set("dragend", js.Any.fromFunction1(value))
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteDragend: Self = this.set("dragend", js.undefined)
+    def setDragstart(value: /* e */ ListBoxDragstartEvent => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDraggable(value: Boolean | ListBoxDraggable): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setDrop(value: /* e */ ListBoxDropEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragstart(value: /* e */ ListBoxDragstartEvent => Unit): Self = this.set("dragstart", js.Any.fromFunction1(value))
+    def setDropSources(value: js.Any): Self = StObject.set(x, "dropSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDragstart: Self = this.set("dragstart", js.undefined)
+    def setDropSourcesUndefined: Self = StObject.set(x, "dropSources", js.undefined)
     
     @scala.inline
-    def setDrop(value: /* e */ ListBoxDropEvent => Unit): Self = this.set("drop", js.Any.fromFunction1(value))
+    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
     @scala.inline
-    def deleteDrop: Self = this.set("drop", js.undefined)
+    def setMessages(value: ListBoxMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropSources(value: js.Any): Self = this.set("dropSources", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteDropSources: Self = this.set("dropSources", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: ListBoxMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRemove(value: /* e */ ListBoxRemoveEvent => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNavigatable(value: Boolean): Self = this.set("navigatable", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteNavigatable: Self = this.set("navigatable", js.undefined)
+    def setReorder(value: /* e */ ListBoxReorderEvent => Unit): Self = StObject.set(x, "reorder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: /* e */ ListBoxRemoveEvent => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setReorderUndefined: Self = StObject.set(x, "reorder", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setSelectable(value: String): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReorder(value: /* e */ ListBoxReorderEvent => Unit): Self = this.set("reorder", js.Any.fromFunction1(value))
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def deleteReorder: Self = this.set("reorder", js.undefined)
+    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectable(value: String): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setToolbar(value: ListBoxToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setToolbar(value: ListBoxToolbar): Self = this.set("toolbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
   }
 }

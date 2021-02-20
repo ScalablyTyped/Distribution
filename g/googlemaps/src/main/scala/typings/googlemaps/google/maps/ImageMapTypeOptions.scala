@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageMapTypeOptions extends js.Object {
+trait ImageMapTypeOptions extends StObject {
   
   var alt: js.UndefOr[String] = js.native
   
@@ -30,54 +31,42 @@ object ImageMapTypeOptions {
   }
   
   @scala.inline
-  implicit class ImageMapTypeOptionsOps[Self <: ImageMapTypeOptions] (val x: Self) extends AnyVal {
+  implicit class ImageMapTypeOptionsMutableBuilder[Self <: ImageMapTypeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTileUrl(value: (Point, Double) => String): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetTileUrl(value: (Point, Double) => String): Self = this.set("getTileUrl", js.Any.fromFunction2(value))
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileSize(value: Size): Self = this.set("tileSize", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setTileSize(value: Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
   }
 }

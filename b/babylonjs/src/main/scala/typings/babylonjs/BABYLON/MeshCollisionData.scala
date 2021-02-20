@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshCollisionData extends js.Object {
+trait MeshCollisionData extends StObject {
   
   var _checkCollisions: Boolean = js.native
   
@@ -43,63 +44,51 @@ object MeshCollisionData {
   }
   
   @scala.inline
-  implicit class MeshCollisionDataOps[Self <: MeshCollisionData] (val x: Self) extends AnyVal {
+  implicit class MeshCollisionDataMutableBuilder[Self <: MeshCollisionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_checkCollisions(value: Boolean): Self = StObject.set(x, "_checkCollisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_collider(value: Nullable[Collider]): Self = StObject.set(x, "_collider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_colliderNull: Self = StObject.set(x, "_collider", null)
     
     @scala.inline
-    def set_checkCollisions(value: Boolean): Self = this.set("_checkCollisions", value.asInstanceOf[js.Any])
+    def set_collisionGroup(value: Double): Self = StObject.set(x, "_collisionGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_collisionGroup(value: Double): Self = this.set("_collisionGroup", value.asInstanceOf[js.Any])
+    def set_collisionMask(value: Double): Self = StObject.set(x, "_collisionMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_collisionMask(value: Double): Self = this.set("_collisionMask", value.asInstanceOf[js.Any])
+    def set_collisionResponse(value: Boolean): Self = StObject.set(x, "_collisionResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_collisionResponse(value: Boolean): Self = this.set("_collisionResponse", value.asInstanceOf[js.Any])
+    def set_diffPositionForCollisions(value: Vector3): Self = StObject.set(x, "_diffPositionForCollisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_diffPositionForCollisions(value: Vector3): Self = this.set("_diffPositionForCollisions", value.asInstanceOf[js.Any])
+    def set_oldPositionForCollisions(value: Vector3): Self = StObject.set(x, "_oldPositionForCollisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_oldPositionForCollisions(value: Vector3): Self = this.set("_oldPositionForCollisions", value.asInstanceOf[js.Any])
+    def set_onCollideObserver(value: Nullable[Observer[AbstractMesh]]): Self = StObject.set(x, "_onCollideObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_collider(value: Nullable[Collider]): Self = this.set("_collider", value.asInstanceOf[js.Any])
+    def set_onCollideObserverNull: Self = StObject.set(x, "_onCollideObserver", null)
     
     @scala.inline
-    def set_colliderNull: Self = this.set("_collider", null)
+    def set_onCollisionPositionChangeObserver(value: Nullable[Observer[Vector3]]): Self = StObject.set(x, "_onCollisionPositionChangeObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onCollideObserver(value: Nullable[Observer[AbstractMesh]]): Self = this.set("_onCollideObserver", value.asInstanceOf[js.Any])
+    def set_onCollisionPositionChangeObserverNull: Self = StObject.set(x, "_onCollisionPositionChangeObserver", null)
     
     @scala.inline
-    def set_onCollideObserverNull: Self = this.set("_onCollideObserver", null)
+    def set_surroundingMeshes(value: Nullable[js.Array[AbstractMesh]]): Self = StObject.set(x, "_surroundingMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onCollisionPositionChangeObserver(value: Nullable[Observer[Vector3]]): Self = this.set("_onCollisionPositionChangeObserver", value.asInstanceOf[js.Any])
+    def set_surroundingMeshesNull: Self = StObject.set(x, "_surroundingMeshes", null)
     
     @scala.inline
-    def set_onCollisionPositionChangeObserverNull: Self = this.set("_onCollisionPositionChangeObserver", null)
-    
-    @scala.inline
-    def set_surroundingMeshesVarargs(value: AbstractMesh*): Self = this.set("_surroundingMeshes", js.Array(value :_*))
-    
-    @scala.inline
-    def set_surroundingMeshes(value: Nullable[js.Array[AbstractMesh]]): Self = this.set("_surroundingMeshes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_surroundingMeshesNull: Self = this.set("_surroundingMeshes", null)
+    def set_surroundingMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "_surroundingMeshes", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutInsightSelectorsResponse extends js.Object {
+trait PutInsightSelectorsResponse extends StObject {
   
   /**
     * A JSON string that contains the insight types you want to log on a trail. In this release, only ApiCallRateInsight is supported as an insight type.
@@ -26,33 +27,21 @@ object PutInsightSelectorsResponse {
   }
   
   @scala.inline
-  implicit class PutInsightSelectorsResponseOps[Self <: PutInsightSelectorsResponse] (val x: Self) extends AnyVal {
+  implicit class PutInsightSelectorsResponseMutableBuilder[Self <: PutInsightSelectorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsightSelectors(value: InsightSelectors): Self = StObject.set(x, "InsightSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsightSelectorsUndefined: Self = StObject.set(x, "InsightSelectors", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsightSelectorsVarargs(value: InsightSelector*): Self = StObject.set(x, "InsightSelectors", js.Array(value :_*))
     
     @scala.inline
-    def setInsightSelectorsVarargs(value: InsightSelector*): Self = this.set("InsightSelectors", js.Array(value :_*))
+    def setTrailARN(value: String): Self = StObject.set(x, "TrailARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsightSelectors(value: InsightSelectors): Self = this.set("InsightSelectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsightSelectors: Self = this.set("InsightSelectors", js.undefined)
-    
-    @scala.inline
-    def setTrailARN(value: String): Self = this.set("TrailARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailARN: Self = this.set("TrailARN", js.undefined)
+    def setTrailARNUndefined: Self = StObject.set(x, "TrailARN", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FillStyle_ extends js.Object {
+trait FillStyle_ extends StObject {
   
   var fillStyle: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object FillStyle_ {
   }
   
   @scala.inline
-  implicit class FillStyle_Ops[Self <: FillStyle_] (val x: Self) extends AnyVal {
+  implicit class FillStyle_MutableBuilder[Self <: FillStyle_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShadowBlur(value: String): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillStyle(value: String): Self = this.set("fillStyle", value.asInstanceOf[js.Any])
+    def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
     
     @scala.inline
-    def deleteFillStyle: Self = this.set("fillStyle", js.undefined)
+    def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowBlur(value: String): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
     @scala.inline
-    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: String): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
-    
-    @scala.inline
-    def setStrokeStyle(value: String): Self = this.set("strokeStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeStyle: Self = this.set("strokeStyle", js.undefined)
+    def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
   }
 }

@@ -1,12 +1,15 @@
 package typings.rotJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/scheduler/action", JSImport.Namespace)
-@js.native
-object actionMod extends js.Object {
+object actionMod {
+  
+  @JSImport("rot-js/lib/scheduler/action", JSImport.Default)
+  @js.native
+  class default[T] () extends Action[T]
   
   @js.native
   trait Action[T]
@@ -25,7 +28,4 @@ object actionMod extends js.Object {
       */
     def setDuration(time: Double): this.type = js.native
   }
-  
-  @js.native
-  class default[T] () extends Action[T]
 }

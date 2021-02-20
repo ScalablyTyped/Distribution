@@ -1,12 +1,13 @@
 package typings.antd
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/icon", JSImport.Namespace)
-@js.native
-object iconMod extends js.Object {
+object iconMod {
   
+  @JSImport("antd/lib/icon", JSImport.Default)
+  @js.native
   def default(): Null = js.native
 }

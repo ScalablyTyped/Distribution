@@ -1,11 +1,12 @@
 package typings.forestExpressMongoose.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filter extends js.Object {
+trait Filter extends StObject {
   
   var field: String = js.native
   
@@ -22,27 +23,15 @@ object Filter {
   }
   
   @scala.inline
-  implicit class FilterOps[Self <: Filter] (val x: Self) extends AnyVal {
+  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

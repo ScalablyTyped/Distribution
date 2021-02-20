@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullSymbolInfo extends js.Object {
+trait PullSymbolInfo extends StObject {
   
   var aliasSymbol: PullTypeAliasSymbol = js.native
   
@@ -24,30 +25,18 @@ object PullSymbolInfo {
   }
   
   @scala.inline
-  implicit class PullSymbolInfoOps[Self <: PullSymbolInfo] (val x: Self) extends AnyVal {
+  implicit class PullSymbolInfoMutableBuilder[Self <: PullSymbolInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasSymbol(value: PullTypeAliasSymbol): Self = StObject.set(x, "aliasSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnclosingScopeSymbol(value: PullSymbol): Self = StObject.set(x, "enclosingScopeSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasSymbol(value: PullTypeAliasSymbol): Self = this.set("aliasSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAst(value: AST): Self = this.set("ast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnclosingScopeSymbol(value: PullSymbol): Self = this.set("enclosingScopeSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: PullSymbol): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: PullSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#get--_db_updates
 @js.native
-trait DatabaseUpdatesResponse extends js.Object {
+trait DatabaseUpdatesResponse extends StObject {
   
   // The last sequence ID reported.
   var last_seq: String = js.native
@@ -24,27 +25,15 @@ object DatabaseUpdatesResponse {
   }
   
   @scala.inline
-  implicit class DatabaseUpdatesResponseOps[Self <: DatabaseUpdatesResponse] (val x: Self) extends AnyVal {
+  implicit class DatabaseUpdatesResponseMutableBuilder[Self <: DatabaseUpdatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLast_seq(value: String): Self = StObject.set(x, "last_seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResults(value: js.Array[DatabaseUpdatesResultItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLast_seq(value: String): Self = this.set("last_seq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: DatabaseUpdatesResultItem*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[DatabaseUpdatesResultItem]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: DatabaseUpdatesResultItem*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,78 +41,66 @@ object DeviceManagementPartner {
   }
   
   @scala.inline
-  implicit class DeviceManagementPartnerOps[Self <: DeviceManagementPartner] (val x: Self) extends AnyVal {
+  implicit class DeviceManagementPartnerMutableBuilder[Self <: DeviceManagementPartner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIsConfigured(value: Boolean): Self = StObject.set(x, "isConfigured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIsConfiguredUndefined: Self = StObject.set(x, "isConfigured", js.undefined)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setLastHeartbeatDateTime(value: String): Self = StObject.set(x, "lastHeartbeatDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConfigured(value: Boolean): Self = this.set("isConfigured", value.asInstanceOf[js.Any])
+    def setLastHeartbeatDateTimeUndefined: Self = StObject.set(x, "lastHeartbeatDateTime", js.undefined)
     
     @scala.inline
-    def deleteIsConfigured: Self = this.set("isConfigured", js.undefined)
+    def setPartnerAppType(value: DeviceManagementPartnerAppType): Self = StObject.set(x, "partnerAppType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastHeartbeatDateTime(value: String): Self = this.set("lastHeartbeatDateTime", value.asInstanceOf[js.Any])
+    def setPartnerAppTypeUndefined: Self = StObject.set(x, "partnerAppType", js.undefined)
     
     @scala.inline
-    def deleteLastHeartbeatDateTime: Self = this.set("lastHeartbeatDateTime", js.undefined)
+    def setPartnerState(value: DeviceManagementPartnerTenantState): Self = StObject.set(x, "partnerState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerAppType(value: DeviceManagementPartnerAppType): Self = this.set("partnerAppType", value.asInstanceOf[js.Any])
+    def setPartnerStateUndefined: Self = StObject.set(x, "partnerState", js.undefined)
     
     @scala.inline
-    def deletePartnerAppType: Self = this.set("partnerAppType", js.undefined)
+    def setSingleTenantAppId(value: NullableOption[String]): Self = StObject.set(x, "singleTenantAppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerState(value: DeviceManagementPartnerTenantState): Self = this.set("partnerState", value.asInstanceOf[js.Any])
+    def setSingleTenantAppIdNull: Self = StObject.set(x, "singleTenantAppId", null)
     
     @scala.inline
-    def deletePartnerState: Self = this.set("partnerState", js.undefined)
+    def setSingleTenantAppIdUndefined: Self = StObject.set(x, "singleTenantAppId", js.undefined)
     
     @scala.inline
-    def setSingleTenantAppId(value: NullableOption[String]): Self = this.set("singleTenantAppId", value.asInstanceOf[js.Any])
+    def setWhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime(value: NullableOption[String]): Self = StObject.set(x, "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSingleTenantAppId: Self = this.set("singleTenantAppId", js.undefined)
+    def setWhenPartnerDevicesWillBeMarkedAsNonCompliantDateTimeNull: Self = StObject.set(x, "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime", null)
     
     @scala.inline
-    def setSingleTenantAppIdNull: Self = this.set("singleTenantAppId", null)
+    def setWhenPartnerDevicesWillBeMarkedAsNonCompliantDateTimeUndefined: Self = StObject.set(x, "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime", js.undefined)
     
     @scala.inline
-    def setWhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime(value: NullableOption[String]): Self = this.set("whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime", value.asInstanceOf[js.Any])
+    def setWhenPartnerDevicesWillBeRemovedDateTime(value: NullableOption[String]): Self = StObject.set(x, "whenPartnerDevicesWillBeRemovedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime: Self = this.set("whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime", js.undefined)
+    def setWhenPartnerDevicesWillBeRemovedDateTimeNull: Self = StObject.set(x, "whenPartnerDevicesWillBeRemovedDateTime", null)
     
     @scala.inline
-    def setWhenPartnerDevicesWillBeMarkedAsNonCompliantDateTimeNull: Self = this.set("whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime", null)
-    
-    @scala.inline
-    def setWhenPartnerDevicesWillBeRemovedDateTime(value: NullableOption[String]): Self = this.set("whenPartnerDevicesWillBeRemovedDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhenPartnerDevicesWillBeRemovedDateTime: Self = this.set("whenPartnerDevicesWillBeRemovedDateTime", js.undefined)
-    
-    @scala.inline
-    def setWhenPartnerDevicesWillBeRemovedDateTimeNull: Self = this.set("whenPartnerDevicesWillBeRemovedDateTime", null)
+    def setWhenPartnerDevicesWillBeRemovedDateTimeUndefined: Self = StObject.set(x, "whenPartnerDevicesWillBeRemovedDateTime", js.undefined)
   }
 }

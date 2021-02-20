@@ -1,12 +1,13 @@
 package typings.cssTree.mod
 
 import typings.std.SyntaxError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefinitionSyntax_ extends js.Object {
+trait DefinitionSyntax_ extends StObject {
   
   /**
     * Generates CSS value definition syntax from an AST

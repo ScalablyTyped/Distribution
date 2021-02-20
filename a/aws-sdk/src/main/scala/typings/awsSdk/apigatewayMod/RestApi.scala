@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestApi extends js.Object {
+trait RestApi extends StObject {
   
   /**
     * The source of the API key for metering requests according to a usage plan. Valid values are: HEADER to read the API key from the X-API-Key header of a request. AUTHORIZER to read the API key from the UsageIdentifierKey from a custom authorizer.
@@ -81,102 +82,90 @@ object RestApi {
   }
   
   @scala.inline
-  implicit class RestApiOps[Self <: RestApi] (val x: Self) extends AnyVal {
+  implicit class RestApiMutableBuilder[Self <: RestApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKeySource(value: ApiKeySourceType): Self = StObject.set(x, "apiKeySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiKeySourceUndefined: Self = StObject.set(x, "apiKeySource", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinaryMediaTypes(value: ListOfString): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKeySource(value: ApiKeySourceType): Self = this.set("apiKeySource", value.asInstanceOf[js.Any])
+    def setBinaryMediaTypesUndefined: Self = StObject.set(x, "binaryMediaTypes", js.undefined)
     
     @scala.inline
-    def deleteApiKeySource: Self = this.set("apiKeySource", js.undefined)
+    def setBinaryMediaTypesVarargs(value: String*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
     
     @scala.inline
-    def setBinaryMediaTypesVarargs(value: String*): Self = this.set("binaryMediaTypes", js.Array(value :_*))
+    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryMediaTypes(value: ListOfString): Self = this.set("binaryMediaTypes", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def deleteBinaryMediaTypes: Self = this.set("binaryMediaTypes", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setDisableExecuteApiEndpoint(value: Boolean): Self = StObject.set(x, "disableExecuteApiEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisableExecuteApiEndpointUndefined: Self = StObject.set(x, "disableExecuteApiEndpoint", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEndpointConfiguration(value: EndpointConfiguration): Self = StObject.set(x, "endpointConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableExecuteApiEndpoint(value: Boolean): Self = this.set("disableExecuteApiEndpoint", value.asInstanceOf[js.Any])
+    def setEndpointConfigurationUndefined: Self = StObject.set(x, "endpointConfiguration", js.undefined)
     
     @scala.inline
-    def deleteDisableExecuteApiEndpoint: Self = this.set("disableExecuteApiEndpoint", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointConfiguration(value: EndpointConfiguration): Self = this.set("endpointConfiguration", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEndpointConfiguration: Self = this.set("endpointConfiguration", js.undefined)
+    def setMinimumCompressionSize(value: NullableInteger): Self = StObject.set(x, "minimumCompressionSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMinimumCompressionSizeUndefined: Self = StObject.set(x, "minimumCompressionSize", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumCompressionSize(value: NullableInteger): Self = this.set("minimumCompressionSize", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinimumCompressionSize: Self = this.set("minimumCompressionSize", js.undefined)
+    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTags(value: MapOfStringToString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: String): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setWarnings(value: ListOfString): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: ListOfString): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

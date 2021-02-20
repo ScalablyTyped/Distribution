@@ -2,12 +2,13 @@ package typings.wicgMediasession
 
 import typings.wicgMediasession.anon.RequiredPickMediaSessionA
 import typings.wicgMediasession.wicgMediasessionStrings.seekto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaSession extends js.Object {
+trait MediaSession extends StObject {
   
   // Current media session meta data.
   var metadata: MediaMetadata | Null = js.native

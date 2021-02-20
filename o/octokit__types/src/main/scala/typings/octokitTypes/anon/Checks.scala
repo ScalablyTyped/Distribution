@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Checks extends js.Object {
+trait Checks extends StObject {
   
   var checks: String = js.native
   
@@ -22,27 +23,15 @@ object Checks {
   }
   
   @scala.inline
-  implicit class ChecksOps[Self <: Checks] (val x: Self) extends AnyVal {
+  implicit class ChecksMutableBuilder[Self <: Checks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecks(value: String): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChecks(value: String): Self = this.set("checks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContents(value: String): Self = this.set("contents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadata(value: String): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

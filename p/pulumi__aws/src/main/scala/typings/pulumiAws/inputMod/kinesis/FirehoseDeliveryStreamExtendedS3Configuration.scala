@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesis
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamExtendedS3Configuration extends js.Object {
+trait FirehoseDeliveryStreamExtendedS3Configuration extends StObject {
   
   /**
     * The ARN of the S3 bucket
@@ -86,90 +87,78 @@ object FirehoseDeliveryStreamExtendedS3Configuration {
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationOps[Self <: FirehoseDeliveryStreamExtendedS3Configuration] (val x: Self) extends AnyVal {
+  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3Configuration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketArn(value: Input[String]): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferInterval(value: Input[Double]): Self = StObject.set(x, "bufferInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferIntervalUndefined: Self = StObject.set(x, "bufferInterval", js.undefined)
     
     @scala.inline
-    def setBucketArn(value: Input[String]): Self = this.set("bucketArn", value.asInstanceOf[js.Any])
+    def setBufferSize(value: Input[Double]): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
     @scala.inline
-    def setBufferInterval(value: Input[Double]): Self = this.set("bufferInterval", value.asInstanceOf[js.Any])
+    def setCloudwatchLoggingOptions(value: Input[FirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions]): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBufferInterval: Self = this.set("bufferInterval", js.undefined)
+    def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
     
     @scala.inline
-    def setBufferSize(value: Input[Double]): Self = this.set("bufferSize", value.asInstanceOf[js.Any])
+    def setCompressionFormat(value: Input[String]): Self = StObject.set(x, "compressionFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBufferSize: Self = this.set("bufferSize", js.undefined)
+    def setCompressionFormatUndefined: Self = StObject.set(x, "compressionFormat", js.undefined)
     
     @scala.inline
-    def setCloudwatchLoggingOptions(value: Input[FirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions]): Self = this.set("cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    def setDataFormatConversionConfiguration(value: Input[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration]): Self = StObject.set(x, "dataFormatConversionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudwatchLoggingOptions: Self = this.set("cloudwatchLoggingOptions", js.undefined)
+    def setDataFormatConversionConfigurationUndefined: Self = StObject.set(x, "dataFormatConversionConfiguration", js.undefined)
     
     @scala.inline
-    def setCompressionFormat(value: Input[String]): Self = this.set("compressionFormat", value.asInstanceOf[js.Any])
+    def setErrorOutputPrefix(value: Input[String]): Self = StObject.set(x, "errorOutputPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompressionFormat: Self = this.set("compressionFormat", js.undefined)
+    def setErrorOutputPrefixUndefined: Self = StObject.set(x, "errorOutputPrefix", js.undefined)
     
     @scala.inline
-    def setDataFormatConversionConfiguration(value: Input[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration]): Self = this.set("dataFormatConversionConfiguration", value.asInstanceOf[js.Any])
+    def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataFormatConversionConfiguration: Self = this.set("dataFormatConversionConfiguration", js.undefined)
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     
     @scala.inline
-    def setErrorOutputPrefix(value: Input[String]): Self = this.set("errorOutputPrefix", value.asInstanceOf[js.Any])
+    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorOutputPrefix: Self = this.set("errorOutputPrefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def setKmsKeyArn(value: Input[String]): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    def setProcessingConfiguration(value: Input[FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration]): Self = StObject.set(x, "processingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+    def setProcessingConfigurationUndefined: Self = StObject.set(x, "processingConfiguration", js.undefined)
     
     @scala.inline
-    def setPrefix(value: Input[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setS3BackupConfiguration(value: Input[FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration]): Self = StObject.set(x, "s3BackupConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingConfiguration(value: Input[FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration]): Self = this.set("processingConfiguration", value.asInstanceOf[js.Any])
+    def setS3BackupConfigurationUndefined: Self = StObject.set(x, "s3BackupConfiguration", js.undefined)
     
     @scala.inline
-    def deleteProcessingConfiguration: Self = this.set("processingConfiguration", js.undefined)
+    def setS3BackupMode(value: Input[String]): Self = StObject.set(x, "s3BackupMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BackupConfiguration(value: Input[FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration]): Self = this.set("s3BackupConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3BackupConfiguration: Self = this.set("s3BackupConfiguration", js.undefined)
-    
-    @scala.inline
-    def setS3BackupMode(value: Input[String]): Self = this.set("s3BackupMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3BackupMode: Self = this.set("s3BackupMode", js.undefined)
+    def setS3BackupModeUndefined: Self = StObject.set(x, "s3BackupMode", js.undefined)
   }
 }

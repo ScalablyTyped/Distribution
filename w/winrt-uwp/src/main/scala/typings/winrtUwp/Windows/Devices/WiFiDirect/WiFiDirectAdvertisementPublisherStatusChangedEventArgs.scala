@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a StatusChanged event on a WiFiDirectAdvertisementPublisher . */
 @js.native
-trait WiFiDirectAdvertisementPublisherStatusChangedEventArgs extends js.Object {
+trait WiFiDirectAdvertisementPublisherStatusChangedEventArgs extends StObject {
   
   /** Gets the error status for a StatusChanged event on a WiFiDirectAdvertisementPublisher . */
   var error: WiFiDirectError = js.native
@@ -23,24 +24,12 @@ object WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
   }
   
   @scala.inline
-  implicit class WiFiDirectAdvertisementPublisherStatusChangedEventArgsOps[Self <: WiFiDirectAdvertisementPublisherStatusChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WiFiDirectAdvertisementPublisherStatusChangedEventArgsMutableBuilder[Self <: WiFiDirectAdvertisementPublisherStatusChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: WiFiDirectError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: WiFiDirectError): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: WiFiDirectAdvertisementPublisherStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: WiFiDirectAdvertisementPublisherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

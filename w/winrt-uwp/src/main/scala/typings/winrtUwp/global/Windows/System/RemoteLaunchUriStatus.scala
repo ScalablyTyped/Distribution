@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the result of activating an application for a URI on a remote device. */
 @JSGlobal("Windows.System.RemoteLaunchUriStatus")
 @js.native
-object RemoteLaunchUriStatus extends js.Object {
+object RemoteLaunchUriStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.RemoteLaunchUriStatus with Double] = js.native

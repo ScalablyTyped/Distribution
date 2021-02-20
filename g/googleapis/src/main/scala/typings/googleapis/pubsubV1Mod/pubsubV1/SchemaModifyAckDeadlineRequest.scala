@@ -1,5 +1,6 @@
 package typings.googleapis.pubsubV1Mod.pubsubV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request for the ModifyAckDeadline method.
   */
 @js.native
-trait SchemaModifyAckDeadlineRequest extends js.Object {
+trait SchemaModifyAckDeadlineRequest extends StObject {
   
   /**
     * The new ack deadline with respect to the time this request was sent to
@@ -36,33 +37,21 @@ object SchemaModifyAckDeadlineRequest {
   }
   
   @scala.inline
-  implicit class SchemaModifyAckDeadlineRequestOps[Self <: SchemaModifyAckDeadlineRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaModifyAckDeadlineRequestMutableBuilder[Self <: SchemaModifyAckDeadlineRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAckDeadlineSeconds(value: Double): Self = this.set("ackDeadlineSeconds", value.asInstanceOf[js.Any])
+    def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
     
     @scala.inline
-    def deleteAckDeadlineSeconds: Self = this.set("ackDeadlineSeconds", js.undefined)
-    
-    @scala.inline
-    def setAckIdsVarargs(value: String*): Self = this.set("ackIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setAckIds(value: js.Array[String]): Self = this.set("ackIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAckIds: Self = this.set("ackIds", js.undefined)
+    def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
   }
 }

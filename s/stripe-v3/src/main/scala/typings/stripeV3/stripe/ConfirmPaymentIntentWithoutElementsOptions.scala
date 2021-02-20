@@ -1,6 +1,7 @@
 package typings.stripeV3.stripe
 
 import typings.stripeV3.anon.BillingdetailsCard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object ConfirmPaymentIntentWithoutElementsOptions {
   }
   
   @scala.inline
-  implicit class ConfirmPaymentIntentWithoutElementsOptionsOps[Self <: ConfirmPaymentIntentWithoutElementsOptions] (val x: Self) extends AnyVal {
+  implicit class ConfirmPaymentIntentWithoutElementsOptionsMutableBuilder[Self <: ConfirmPaymentIntentWithoutElementsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayment_method_data(value: BillingdetailsCard): Self = StObject.set(x, "payment_method_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayment_method(value: String): Self = this.set("payment_method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayment_method: Self = this.set("payment_method", js.undefined)
-    
-    @scala.inline
-    def setPayment_method_data(value: BillingdetailsCard): Self = this.set("payment_method_data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayment_method_data: Self = this.set("payment_method_data", js.undefined)
+    def setPayment_method_dataUndefined: Self = StObject.set(x, "payment_method_data", js.undefined)
   }
 }

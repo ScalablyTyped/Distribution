@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains properties of a Campaign Manager account.
   */
 @js.native
-trait SchemaAccount extends js.Object {
+trait SchemaAccount extends StObject {
   
   /**
     * Account permissions assigned to this account.
@@ -147,138 +148,126 @@ object SchemaAccount {
   }
   
   @scala.inline
-  implicit class SchemaAccountOps[Self <: SchemaAccount] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountMutableBuilder[Self <: SchemaAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountPermissionIds(value: js.Array[String]): Self = StObject.set(x, "accountPermissionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountPermissionIdsUndefined: Self = StObject.set(x, "accountPermissionIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountPermissionIdsVarargs(value: String*): Self = StObject.set(x, "accountPermissionIds", js.Array(value :_*))
     
     @scala.inline
-    def setAccountPermissionIdsVarargs(value: String*): Self = this.set("accountPermissionIds", js.Array(value :_*))
+    def setAccountProfile(value: String): Self = StObject.set(x, "accountProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountPermissionIds(value: js.Array[String]): Self = this.set("accountPermissionIds", value.asInstanceOf[js.Any])
+    def setAccountProfileUndefined: Self = StObject.set(x, "accountProfile", js.undefined)
     
     @scala.inline
-    def deleteAccountPermissionIds: Self = this.set("accountPermissionIds", js.undefined)
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountProfile(value: String): Self = this.set("accountProfile", value.asInstanceOf[js.Any])
+    def setActiveAdsLimitTier(value: String): Self = StObject.set(x, "activeAdsLimitTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountProfile: Self = this.set("accountProfile", js.undefined)
+    def setActiveAdsLimitTierUndefined: Self = StObject.set(x, "activeAdsLimitTier", js.undefined)
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveAdsLimitTier(value: String): Self = this.set("activeAdsLimitTier", value.asInstanceOf[js.Any])
+    def setActiveViewOptOutUndefined: Self = StObject.set(x, "activeViewOptOut", js.undefined)
     
     @scala.inline
-    def deleteActiveAdsLimitTier: Self = this.set("activeAdsLimitTier", js.undefined)
+    def setAvailablePermissionIds(value: js.Array[String]): Self = StObject.set(x, "availablePermissionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveViewOptOut(value: Boolean): Self = this.set("activeViewOptOut", value.asInstanceOf[js.Any])
+    def setAvailablePermissionIdsUndefined: Self = StObject.set(x, "availablePermissionIds", js.undefined)
     
     @scala.inline
-    def deleteActiveViewOptOut: Self = this.set("activeViewOptOut", js.undefined)
+    def setAvailablePermissionIdsVarargs(value: String*): Self = StObject.set(x, "availablePermissionIds", js.Array(value :_*))
     
     @scala.inline
-    def setAvailablePermissionIdsVarargs(value: String*): Self = this.set("availablePermissionIds", js.Array(value :_*))
+    def setCountryId(value: String): Self = StObject.set(x, "countryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailablePermissionIds(value: js.Array[String]): Self = this.set("availablePermissionIds", value.asInstanceOf[js.Any])
+    def setCountryIdUndefined: Self = StObject.set(x, "countryId", js.undefined)
     
     @scala.inline
-    def deleteAvailablePermissionIds: Self = this.set("availablePermissionIds", js.undefined)
+    def setCurrencyId(value: String): Self = StObject.set(x, "currencyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryId(value: String): Self = this.set("countryId", value.asInstanceOf[js.Any])
+    def setCurrencyIdUndefined: Self = StObject.set(x, "currencyId", js.undefined)
     
     @scala.inline
-    def deleteCountryId: Self = this.set("countryId", js.undefined)
+    def setDefaultCreativeSizeId(value: String): Self = StObject.set(x, "defaultCreativeSizeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyId(value: String): Self = this.set("currencyId", value.asInstanceOf[js.Any])
+    def setDefaultCreativeSizeIdUndefined: Self = StObject.set(x, "defaultCreativeSizeId", js.undefined)
     
     @scala.inline
-    def deleteCurrencyId: Self = this.set("currencyId", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCreativeSizeId(value: String): Self = this.set("defaultCreativeSizeId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultCreativeSizeId: Self = this.set("defaultCreativeSizeId", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMaximumImageSize(value: String): Self = StObject.set(x, "maximumImageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMaximumImageSizeUndefined: Self = StObject.set(x, "maximumImageSize", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumImageSize(value: String): Self = this.set("maximumImageSize", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaximumImageSize: Self = this.set("maximumImageSize", js.undefined)
+    def setNielsenOcrEnabled(value: Boolean): Self = StObject.set(x, "nielsenOcrEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNielsenOcrEnabledUndefined: Self = StObject.set(x, "nielsenOcrEnabled", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReportsConfiguration(value: SchemaReportsConfiguration): Self = StObject.set(x, "reportsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNielsenOcrEnabled(value: Boolean): Self = this.set("nielsenOcrEnabled", value.asInstanceOf[js.Any])
+    def setReportsConfigurationUndefined: Self = StObject.set(x, "reportsConfiguration", js.undefined)
     
     @scala.inline
-    def deleteNielsenOcrEnabled: Self = this.set("nielsenOcrEnabled", js.undefined)
+    def setShareReportsWithTwitter(value: Boolean): Self = StObject.set(x, "shareReportsWithTwitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportsConfiguration(value: SchemaReportsConfiguration): Self = this.set("reportsConfiguration", value.asInstanceOf[js.Any])
+    def setShareReportsWithTwitterUndefined: Self = StObject.set(x, "shareReportsWithTwitter", js.undefined)
     
     @scala.inline
-    def deleteReportsConfiguration: Self = this.set("reportsConfiguration", js.undefined)
+    def setTeaserSizeLimit(value: String): Self = StObject.set(x, "teaserSizeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareReportsWithTwitter(value: Boolean): Self = this.set("shareReportsWithTwitter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareReportsWithTwitter: Self = this.set("shareReportsWithTwitter", js.undefined)
-    
-    @scala.inline
-    def setTeaserSizeLimit(value: String): Self = this.set("teaserSizeLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeaserSizeLimit: Self = this.set("teaserSizeLimit", js.undefined)
+    def setTeaserSizeLimitUndefined: Self = StObject.set(x, "teaserSizeLimit", js.undefined)
   }
 }

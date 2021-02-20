@@ -1,5 +1,6 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.aceBuilds.aceBuildsStrings.unix
   - typings.aceBuilds.aceBuildsStrings.windows
 */
-trait NewLineMode extends js.Object
+trait NewLineMode extends StObject
 object NewLineMode {
   
   @scala.inline

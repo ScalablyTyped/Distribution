@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDataRetentionInput extends js.Object {
+trait UpdateDataRetentionInput extends StObject {
   
   /**
     * The version of the stream whose retention period you want to change. To get the version, call either the DescribeStream or the ListStreams API.
@@ -45,39 +46,27 @@ object UpdateDataRetentionInput {
   }
   
   @scala.inline
-  implicit class UpdateDataRetentionInputOps[Self <: UpdateDataRetentionInput] (val x: Self) extends AnyVal {
+  implicit class UpdateDataRetentionInputMutableBuilder[Self <: UpdateDataRetentionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataRetentionChangeInHours(value: DataRetentionChangeInHours): Self = StObject.set(x, "DataRetentionChangeInHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperation(value: UpdateDataRetentionOperation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentVersion(value: Version): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataRetentionChangeInHours(value: DataRetentionChangeInHours): Self = this.set("DataRetentionChangeInHours", value.asInstanceOf[js.Any])
+    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
     @scala.inline
-    def setOperation(value: UpdateDataRetentionOperation): Self = this.set("Operation", value.asInstanceOf[js.Any])
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamARN(value: ResourceARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
-    
-    @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

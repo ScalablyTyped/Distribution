@@ -1,11 +1,12 @@
 package typings.jui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Checked extends js.Object {
+trait Checked extends StObject {
   
   var checked: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object Checked {
   }
   
   @scala.inline
-  implicit class CheckedOps[Self <: Checked] (val x: Self) extends AnyVal {
+  implicit class CheckedMutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
+    def setToggleEvent(value: String): Self = StObject.set(x, "toggleEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setToggleEventUndefined: Self = StObject.set(x, "toggleEvent", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleEvent(value: String): Self = this.set("toggleEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggleEvent: Self = this.set("toggleEvent", js.undefined)
-    
-    @scala.inline
-    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpl: Self = this.set("tpl", js.undefined)
+    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

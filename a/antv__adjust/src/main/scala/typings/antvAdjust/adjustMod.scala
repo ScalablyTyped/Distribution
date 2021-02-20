@@ -5,16 +5,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.antvAdjust.interfaceMod.AdjustCfg
 import typings.antvAdjust.interfaceMod.Data
 import typings.antvAdjust.interfaceMod.Range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/adjust/lib/adjusts/adjust", JSImport.Namespace)
-@js.native
-object adjustMod extends js.Object {
+object adjustMod {
+  
+  @JSImport("@antv/adjust/lib/adjusts/adjust", JSImport.Default)
+  @js.native
+  abstract class default protected () extends Adjust {
+    def this(cfg: AdjustCfg) = this()
+  }
   
   @js.native
-  trait Adjust extends js.Object {
+  trait Adjust extends StObject {
     
     /* protected */ def adjustData(groupedDataArray: js.Array[js.Array[Data]], mergedData: js.Array[Data]): Unit = js.native
     
@@ -94,11 +99,6 @@ object adjustMod extends js.Object {
     
     /** y 维度对应的字段 */
     var yField: String = js.native
-  }
-  
-  @js.native
-  abstract class default protected () extends Adjust {
-    def this(cfg: AdjustCfg) = this()
   }
   
   type AdjustConstructor = Instantiable1[/* cfg */ js.Any, Adjust]

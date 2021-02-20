@@ -3,6 +3,7 @@ package typings.activexWord.Word
 import typings.activexWord.activexWordNumbers.`-5002`
 import typings.activexWord.activexWordNumbers.`-5003`
 import typings.activexWord.activexWordNumbers.`-5004`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`-5003`
   - typings.activexWord.activexWordNumbers.`-5004`
 */
-trait XlReadingOrder extends js.Object
+trait XlReadingOrder extends StObject
 object XlReadingOrder {
   
   @scala.inline

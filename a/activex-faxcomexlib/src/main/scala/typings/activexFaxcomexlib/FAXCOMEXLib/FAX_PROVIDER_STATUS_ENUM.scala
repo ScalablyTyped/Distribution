@@ -7,6 +7,7 @@ import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`3`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`5`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
   - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
 */
-trait FAX_PROVIDER_STATUS_ENUM extends js.Object
+trait FAX_PROVIDER_STATUS_ENUM extends StObject
 object FAX_PROVIDER_STATUS_ENUM {
   
   @scala.inline

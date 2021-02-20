@@ -1,11 +1,12 @@
 package typings.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Page extends js.Object {
+trait Page extends StObject {
   
   /** _non-standard_  */
   var _SpeedIndex: js.UndefOr[Double | Null] = js.native
@@ -271,729 +272,717 @@ object Page {
   }
   
   @scala.inline
-  implicit class PageOps[Self <: Page] (val x: Self) extends AnyVal {
+  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPageTimings(value: PageTiming): Self = StObject.set(x, "pageTimings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageTimings(value: PageTiming): Self = this.set("pageTimings", value.asInstanceOf[js.Any])
+    def setStartedDateTime(value: String): Self = StObject.set(x, "startedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedDateTime(value: String): Self = this.set("startedDateTime", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def set_SpeedIndex(value: Double): Self = StObject.set(x, "_SpeedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_SpeedIndex(value: Double): Self = this.set("_SpeedIndex", value.asInstanceOf[js.Any])
+    def set_SpeedIndexNull: Self = StObject.set(x, "_SpeedIndex", null)
     
     @scala.inline
-    def delete_SpeedIndex: Self = this.set("_SpeedIndex", js.undefined)
+    def set_SpeedIndexUndefined: Self = StObject.set(x, "_SpeedIndex", js.undefined)
     
     @scala.inline
-    def set_SpeedIndexNull: Self = this.set("_SpeedIndex", null)
+    def set_TTFB(value: Double): Self = StObject.set(x, "_TTFB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_TTFB(value: Double): Self = this.set("_TTFB", value.asInstanceOf[js.Any])
+    def set_TTFBNull: Self = StObject.set(x, "_TTFB", null)
     
     @scala.inline
-    def delete_TTFB: Self = this.set("_TTFB", js.undefined)
+    def set_TTFBUndefined: Self = StObject.set(x, "_TTFB", js.undefined)
     
     @scala.inline
-    def set_TTFBNull: Self = this.set("_TTFB", null)
+    def set_URL(value: String): Self = StObject.set(x, "_URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_URL(value: String): Self = this.set("_URL", value.asInstanceOf[js.Any])
+    def set_URLNull: Self = StObject.set(x, "_URL", null)
     
     @scala.inline
-    def delete_URL: Self = this.set("_URL", js.undefined)
+    def set_URLUndefined: Self = StObject.set(x, "_URL", js.undefined)
     
     @scala.inline
-    def set_URLNull: Self = this.set("_URL", null)
+    def set_adult_site(value: Double): Self = StObject.set(x, "_adult_site", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_adult_site(value: Double): Self = this.set("_adult_site", value.asInstanceOf[js.Any])
+    def set_adult_siteNull: Self = StObject.set(x, "_adult_site", null)
     
     @scala.inline
-    def delete_adult_site: Self = this.set("_adult_site", js.undefined)
+    def set_adult_siteUndefined: Self = StObject.set(x, "_adult_site", js.undefined)
     
     @scala.inline
-    def set_adult_siteNull: Self = this.set("_adult_site", null)
+    def set_aft(value: Double): Self = StObject.set(x, "_aft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_aft(value: Double): Self = this.set("_aft", value.asInstanceOf[js.Any])
+    def set_aftNull: Self = StObject.set(x, "_aft", null)
     
     @scala.inline
-    def delete_aft: Self = this.set("_aft", js.undefined)
+    def set_aftUndefined: Self = StObject.set(x, "_aft", js.undefined)
     
     @scala.inline
-    def set_aftNull: Self = this.set("_aft", null)
+    def set_base_page_cdn(value: String): Self = StObject.set(x, "_base_page_cdn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_base_page_cdn(value: String): Self = this.set("_base_page_cdn", value.asInstanceOf[js.Any])
+    def set_base_page_cdnNull: Self = StObject.set(x, "_base_page_cdn", null)
     
     @scala.inline
-    def delete_base_page_cdn: Self = this.set("_base_page_cdn", js.undefined)
+    def set_base_page_cdnUndefined: Self = StObject.set(x, "_base_page_cdn", js.undefined)
     
     @scala.inline
-    def set_base_page_cdnNull: Self = this.set("_base_page_cdn", null)
+    def set_base_page_redirects(value: Double): Self = StObject.set(x, "_base_page_redirects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_base_page_redirects(value: Double): Self = this.set("_base_page_redirects", value.asInstanceOf[js.Any])
+    def set_base_page_redirectsNull: Self = StObject.set(x, "_base_page_redirects", null)
     
     @scala.inline
-    def delete_base_page_redirects: Self = this.set("_base_page_redirects", js.undefined)
+    def set_base_page_redirectsUndefined: Self = StObject.set(x, "_base_page_redirects", js.undefined)
     
     @scala.inline
-    def set_base_page_redirectsNull: Self = this.set("_base_page_redirects", null)
+    def set_base_page_ttfb(value: Double): Self = StObject.set(x, "_base_page_ttfb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_base_page_ttfb(value: Double): Self = this.set("_base_page_ttfb", value.asInstanceOf[js.Any])
+    def set_base_page_ttfbNull: Self = StObject.set(x, "_base_page_ttfb", null)
     
     @scala.inline
-    def delete_base_page_ttfb: Self = this.set("_base_page_ttfb", js.undefined)
+    def set_base_page_ttfbUndefined: Self = StObject.set(x, "_base_page_ttfb", js.undefined)
     
     @scala.inline
-    def set_base_page_ttfbNull: Self = this.set("_base_page_ttfb", null)
+    def set_browser_main_memory_kb(value: Double): Self = StObject.set(x, "_browser_main_memory_kb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_browser_main_memory_kb(value: Double): Self = this.set("_browser_main_memory_kb", value.asInstanceOf[js.Any])
+    def set_browser_main_memory_kbNull: Self = StObject.set(x, "_browser_main_memory_kb", null)
     
     @scala.inline
-    def delete_browser_main_memory_kb: Self = this.set("_browser_main_memory_kb", js.undefined)
+    def set_browser_main_memory_kbUndefined: Self = StObject.set(x, "_browser_main_memory_kb", js.undefined)
     
     @scala.inline
-    def set_browser_main_memory_kbNull: Self = this.set("_browser_main_memory_kb", null)
+    def set_browser_name(value: String): Self = StObject.set(x, "_browser_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_browser_name(value: String): Self = this.set("_browser_name", value.asInstanceOf[js.Any])
+    def set_browser_nameNull: Self = StObject.set(x, "_browser_name", null)
     
     @scala.inline
-    def delete_browser_name: Self = this.set("_browser_name", js.undefined)
+    def set_browser_nameUndefined: Self = StObject.set(x, "_browser_name", js.undefined)
     
     @scala.inline
-    def set_browser_nameNull: Self = this.set("_browser_name", null)
+    def set_browser_other_private_memory_kb(value: Double): Self = StObject.set(x, "_browser_other_private_memory_kb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_browser_other_private_memory_kb(value: Double): Self = this.set("_browser_other_private_memory_kb", value.asInstanceOf[js.Any])
+    def set_browser_other_private_memory_kbNull: Self = StObject.set(x, "_browser_other_private_memory_kb", null)
     
     @scala.inline
-    def delete_browser_other_private_memory_kb: Self = this.set("_browser_other_private_memory_kb", js.undefined)
+    def set_browser_other_private_memory_kbUndefined: Self = StObject.set(x, "_browser_other_private_memory_kb", js.undefined)
     
     @scala.inline
-    def set_browser_other_private_memory_kbNull: Self = this.set("_browser_other_private_memory_kb", null)
+    def set_browser_process_count(value: Double): Self = StObject.set(x, "_browser_process_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_browser_process_count(value: Double): Self = this.set("_browser_process_count", value.asInstanceOf[js.Any])
+    def set_browser_process_countNull: Self = StObject.set(x, "_browser_process_count", null)
     
     @scala.inline
-    def delete_browser_process_count: Self = this.set("_browser_process_count", js.undefined)
+    def set_browser_process_countUndefined: Self = StObject.set(x, "_browser_process_count", js.undefined)
     
     @scala.inline
-    def set_browser_process_countNull: Self = this.set("_browser_process_count", null)
+    def set_browser_version(value: String): Self = StObject.set(x, "_browser_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_browser_version(value: String): Self = this.set("_browser_version", value.asInstanceOf[js.Any])
+    def set_browser_versionNull: Self = StObject.set(x, "_browser_version", null)
     
     @scala.inline
-    def delete_browser_version: Self = this.set("_browser_version", js.undefined)
+    def set_browser_versionUndefined: Self = StObject.set(x, "_browser_version", js.undefined)
     
     @scala.inline
-    def set_browser_versionNull: Self = this.set("_browser_version", null)
+    def set_browser_working_set_kb(value: Double): Self = StObject.set(x, "_browser_working_set_kb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_browser_working_set_kb(value: Double): Self = this.set("_browser_working_set_kb", value.asInstanceOf[js.Any])
+    def set_browser_working_set_kbNull: Self = StObject.set(x, "_browser_working_set_kb", null)
     
     @scala.inline
-    def delete_browser_working_set_kb: Self = this.set("_browser_working_set_kb", js.undefined)
+    def set_browser_working_set_kbUndefined: Self = StObject.set(x, "_browser_working_set_kb", js.undefined)
     
     @scala.inline
-    def set_browser_working_set_kbNull: Self = this.set("_browser_working_set_kb", null)
+    def set_bytesIn(value: Double): Self = StObject.set(x, "_bytesIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_bytesIn(value: Double): Self = this.set("_bytesIn", value.asInstanceOf[js.Any])
+    def set_bytesInDoc(value: Double): Self = StObject.set(x, "_bytesInDoc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_bytesIn: Self = this.set("_bytesIn", js.undefined)
+    def set_bytesInDocNull: Self = StObject.set(x, "_bytesInDoc", null)
     
     @scala.inline
-    def set_bytesInNull: Self = this.set("_bytesIn", null)
+    def set_bytesInDocUndefined: Self = StObject.set(x, "_bytesInDoc", js.undefined)
     
     @scala.inline
-    def set_bytesInDoc(value: Double): Self = this.set("_bytesInDoc", value.asInstanceOf[js.Any])
+    def set_bytesInNull: Self = StObject.set(x, "_bytesIn", null)
     
     @scala.inline
-    def delete_bytesInDoc: Self = this.set("_bytesInDoc", js.undefined)
+    def set_bytesInUndefined: Self = StObject.set(x, "_bytesIn", js.undefined)
     
     @scala.inline
-    def set_bytesInDocNull: Self = this.set("_bytesInDoc", null)
+    def set_bytesOut(value: Double): Self = StObject.set(x, "_bytesOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_bytesOut(value: Double): Self = this.set("_bytesOut", value.asInstanceOf[js.Any])
+    def set_bytesOutDoc(value: Double): Self = StObject.set(x, "_bytesOutDoc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_bytesOut: Self = this.set("_bytesOut", js.undefined)
+    def set_bytesOutDocNull: Self = StObject.set(x, "_bytesOutDoc", null)
     
     @scala.inline
-    def set_bytesOutNull: Self = this.set("_bytesOut", null)
+    def set_bytesOutDocUndefined: Self = StObject.set(x, "_bytesOutDoc", js.undefined)
     
     @scala.inline
-    def set_bytesOutDoc(value: Double): Self = this.set("_bytesOutDoc", value.asInstanceOf[js.Any])
+    def set_bytesOutNull: Self = StObject.set(x, "_bytesOut", null)
     
     @scala.inline
-    def delete_bytesOutDoc: Self = this.set("_bytesOutDoc", js.undefined)
+    def set_bytesOutUndefined: Self = StObject.set(x, "_bytesOut", js.undefined)
     
     @scala.inline
-    def set_bytesOutDocNull: Self = this.set("_bytesOutDoc", null)
+    def set_cached(value: Double): Self = StObject.set(x, "_cached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_cached(value: Double): Self = this.set("_cached", value.asInstanceOf[js.Any])
+    def set_cachedNull: Self = StObject.set(x, "_cached", null)
     
     @scala.inline
-    def delete_cached: Self = this.set("_cached", js.undefined)
+    def set_cachedUndefined: Self = StObject.set(x, "_cached", js.undefined)
     
     @scala.inline
-    def set_cachedNull: Self = this.set("_cached", null)
+    def set_certificate_bytes(value: Double): Self = StObject.set(x, "_certificate_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_certificate_bytes(value: Double): Self = this.set("_certificate_bytes", value.asInstanceOf[js.Any])
+    def set_certificate_bytesNull: Self = StObject.set(x, "_certificate_bytes", null)
     
     @scala.inline
-    def delete_certificate_bytes: Self = this.set("_certificate_bytes", js.undefined)
+    def set_certificate_bytesUndefined: Self = StObject.set(x, "_certificate_bytes", js.undefined)
     
     @scala.inline
-    def set_certificate_bytesNull: Self = this.set("_certificate_bytes", null)
+    def set_connections(value: Double): Self = StObject.set(x, "_connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_connections(value: Double): Self = this.set("_connections", value.asInstanceOf[js.Any])
+    def set_connectionsNull: Self = StObject.set(x, "_connections", null)
     
     @scala.inline
-    def delete_connections: Self = this.set("_connections", js.undefined)
+    def set_connectionsUndefined: Self = StObject.set(x, "_connections", js.undefined)
     
     @scala.inline
-    def set_connectionsNull: Self = this.set("_connections", null)
+    def set_date(value: Double): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_date(value: Double): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def set_dateNull: Self = StObject.set(x, "_date", null)
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def set_dateNull: Self = this.set("_date", null)
+    def set_docCPUms(value: Double): Self = StObject.set(x, "_docCPUms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_docCPUms(value: Double): Self = this.set("_docCPUms", value.asInstanceOf[js.Any])
+    def set_docCPUmsNull: Self = StObject.set(x, "_docCPUms", null)
     
     @scala.inline
-    def delete_docCPUms: Self = this.set("_docCPUms", js.undefined)
+    def set_docCPUmsUndefined: Self = StObject.set(x, "_docCPUms", js.undefined)
     
     @scala.inline
-    def set_docCPUmsNull: Self = this.set("_docCPUms", null)
+    def set_docCPUpct(value: Double): Self = StObject.set(x, "_docCPUpct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_docCPUpct(value: Double): Self = this.set("_docCPUpct", value.asInstanceOf[js.Any])
+    def set_docCPUpctNull: Self = StObject.set(x, "_docCPUpct", null)
     
     @scala.inline
-    def delete_docCPUpct: Self = this.set("_docCPUpct", js.undefined)
+    def set_docCPUpctUndefined: Self = StObject.set(x, "_docCPUpct", js.undefined)
     
     @scala.inline
-    def set_docCPUpctNull: Self = this.set("_docCPUpct", null)
+    def set_docTime(value: Double): Self = StObject.set(x, "_docTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_docTime(value: Double): Self = this.set("_docTime", value.asInstanceOf[js.Any])
+    def set_docTimeNull: Self = StObject.set(x, "_docTime", null)
     
     @scala.inline
-    def delete_docTime: Self = this.set("_docTime", js.undefined)
+    def set_docTimeUndefined: Self = StObject.set(x, "_docTime", js.undefined)
     
     @scala.inline
-    def set_docTimeNull: Self = this.set("_docTime", null)
+    def set_domContentLoadedEventEnd(value: Double): Self = StObject.set(x, "_domContentLoadedEventEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_domContentLoadedEventEnd(value: Double): Self = this.set("_domContentLoadedEventEnd", value.asInstanceOf[js.Any])
+    def set_domContentLoadedEventEndNull: Self = StObject.set(x, "_domContentLoadedEventEnd", null)
     
     @scala.inline
-    def delete_domContentLoadedEventEnd: Self = this.set("_domContentLoadedEventEnd", js.undefined)
+    def set_domContentLoadedEventEndUndefined: Self = StObject.set(x, "_domContentLoadedEventEnd", js.undefined)
     
     @scala.inline
-    def set_domContentLoadedEventEndNull: Self = this.set("_domContentLoadedEventEnd", null)
+    def set_domContentLoadedEventStart(value: Double): Self = StObject.set(x, "_domContentLoadedEventStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_domContentLoadedEventStart(value: Double): Self = this.set("_domContentLoadedEventStart", value.asInstanceOf[js.Any])
+    def set_domContentLoadedEventStartNull: Self = StObject.set(x, "_domContentLoadedEventStart", null)
     
     @scala.inline
-    def delete_domContentLoadedEventStart: Self = this.set("_domContentLoadedEventStart", js.undefined)
+    def set_domContentLoadedEventStartUndefined: Self = StObject.set(x, "_domContentLoadedEventStart", js.undefined)
     
     @scala.inline
-    def set_domContentLoadedEventStartNull: Self = this.set("_domContentLoadedEventStart", null)
+    def set_domElements(value: Double): Self = StObject.set(x, "_domElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_domElements(value: Double): Self = this.set("_domElements", value.asInstanceOf[js.Any])
+    def set_domElementsNull: Self = StObject.set(x, "_domElements", null)
     
     @scala.inline
-    def delete_domElements: Self = this.set("_domElements", js.undefined)
+    def set_domElementsUndefined: Self = StObject.set(x, "_domElements", js.undefined)
     
     @scala.inline
-    def set_domElementsNull: Self = this.set("_domElements", null)
+    def set_domInteractive(value: Double): Self = StObject.set(x, "_domInteractive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_domInteractive(value: Double): Self = this.set("_domInteractive", value.asInstanceOf[js.Any])
+    def set_domInteractiveNull: Self = StObject.set(x, "_domInteractive", null)
     
     @scala.inline
-    def delete_domInteractive: Self = this.set("_domInteractive", js.undefined)
+    def set_domInteractiveUndefined: Self = StObject.set(x, "_domInteractive", js.undefined)
     
     @scala.inline
-    def set_domInteractiveNull: Self = this.set("_domInteractive", null)
+    def set_domLoading(value: Double): Self = StObject.set(x, "_domLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_domLoading(value: Double): Self = this.set("_domLoading", value.asInstanceOf[js.Any])
+    def set_domLoadingNull: Self = StObject.set(x, "_domLoading", null)
     
     @scala.inline
-    def delete_domLoading: Self = this.set("_domLoading", js.undefined)
+    def set_domLoadingUndefined: Self = StObject.set(x, "_domLoading", js.undefined)
     
     @scala.inline
-    def set_domLoadingNull: Self = this.set("_domLoading", null)
+    def set_domTime(value: Double): Self = StObject.set(x, "_domTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_domTime(value: Double): Self = this.set("_domTime", value.asInstanceOf[js.Any])
+    def set_domTimeNull: Self = StObject.set(x, "_domTime", null)
     
     @scala.inline
-    def delete_domTime: Self = this.set("_domTime", js.undefined)
+    def set_domTimeUndefined: Self = StObject.set(x, "_domTime", js.undefined)
     
     @scala.inline
-    def set_domTimeNull: Self = this.set("_domTime", null)
+    def set_effectiveBps(value: Double): Self = StObject.set(x, "_effectiveBps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_effectiveBps(value: Double): Self = this.set("_effectiveBps", value.asInstanceOf[js.Any])
+    def set_effectiveBpsDoc(value: Double): Self = StObject.set(x, "_effectiveBpsDoc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_effectiveBps: Self = this.set("_effectiveBps", js.undefined)
+    def set_effectiveBpsDocNull: Self = StObject.set(x, "_effectiveBpsDoc", null)
     
     @scala.inline
-    def set_effectiveBpsNull: Self = this.set("_effectiveBps", null)
+    def set_effectiveBpsDocUndefined: Self = StObject.set(x, "_effectiveBpsDoc", js.undefined)
     
     @scala.inline
-    def set_effectiveBpsDoc(value: Double): Self = this.set("_effectiveBpsDoc", value.asInstanceOf[js.Any])
+    def set_effectiveBpsNull: Self = StObject.set(x, "_effectiveBps", null)
     
     @scala.inline
-    def delete_effectiveBpsDoc: Self = this.set("_effectiveBpsDoc", js.undefined)
+    def set_effectiveBpsUndefined: Self = StObject.set(x, "_effectiveBps", js.undefined)
     
     @scala.inline
-    def set_effectiveBpsDocNull: Self = this.set("_effectiveBpsDoc", null)
+    def set_eventName(value: String): Self = StObject.set(x, "_eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_eventName(value: String): Self = this.set("_eventName", value.asInstanceOf[js.Any])
+    def set_eventNameNull: Self = StObject.set(x, "_eventName", null)
     
     @scala.inline
-    def delete_eventName: Self = this.set("_eventName", js.undefined)
+    def set_eventNameUndefined: Self = StObject.set(x, "_eventName", js.undefined)
     
     @scala.inline
-    def set_eventNameNull: Self = this.set("_eventName", null)
+    def set_firstPaint(value: Double): Self = StObject.set(x, "_firstPaint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_firstPaint(value: Double): Self = this.set("_firstPaint", value.asInstanceOf[js.Any])
+    def set_firstPaintNull: Self = StObject.set(x, "_firstPaint", null)
     
     @scala.inline
-    def delete_firstPaint: Self = this.set("_firstPaint", js.undefined)
+    def set_firstPaintUndefined: Self = StObject.set(x, "_firstPaint", js.undefined)
     
     @scala.inline
-    def set_firstPaintNull: Self = this.set("_firstPaint", null)
+    def set_fixed_viewport(value: Double): Self = StObject.set(x, "_fixed_viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_fixed_viewport(value: Double): Self = this.set("_fixed_viewport", value.asInstanceOf[js.Any])
+    def set_fixed_viewportNull: Self = StObject.set(x, "_fixed_viewport", null)
     
     @scala.inline
-    def delete_fixed_viewport: Self = this.set("_fixed_viewport", js.undefined)
+    def set_fixed_viewportUndefined: Self = StObject.set(x, "_fixed_viewport", js.undefined)
     
     @scala.inline
-    def set_fixed_viewportNull: Self = this.set("_fixed_viewport", null)
+    def set_fullyLoaded(value: Double): Self = StObject.set(x, "_fullyLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_fullyLoaded(value: Double): Self = this.set("_fullyLoaded", value.asInstanceOf[js.Any])
+    def set_fullyLoadedCPUms(value: Double): Self = StObject.set(x, "_fullyLoadedCPUms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_fullyLoaded: Self = this.set("_fullyLoaded", js.undefined)
+    def set_fullyLoadedCPUmsNull: Self = StObject.set(x, "_fullyLoadedCPUms", null)
     
     @scala.inline
-    def set_fullyLoadedNull: Self = this.set("_fullyLoaded", null)
+    def set_fullyLoadedCPUmsUndefined: Self = StObject.set(x, "_fullyLoadedCPUms", js.undefined)
     
     @scala.inline
-    def set_fullyLoadedCPUms(value: Double): Self = this.set("_fullyLoadedCPUms", value.asInstanceOf[js.Any])
+    def set_fullyLoadedCPUpct(value: Double): Self = StObject.set(x, "_fullyLoadedCPUpct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_fullyLoadedCPUms: Self = this.set("_fullyLoadedCPUms", js.undefined)
+    def set_fullyLoadedCPUpctNull: Self = StObject.set(x, "_fullyLoadedCPUpct", null)
     
     @scala.inline
-    def set_fullyLoadedCPUmsNull: Self = this.set("_fullyLoadedCPUms", null)
+    def set_fullyLoadedCPUpctUndefined: Self = StObject.set(x, "_fullyLoadedCPUpct", js.undefined)
     
     @scala.inline
-    def set_fullyLoadedCPUpct(value: Double): Self = this.set("_fullyLoadedCPUpct", value.asInstanceOf[js.Any])
+    def set_fullyLoadedNull: Self = StObject.set(x, "_fullyLoaded", null)
     
     @scala.inline
-    def delete_fullyLoadedCPUpct: Self = this.set("_fullyLoadedCPUpct", js.undefined)
+    def set_fullyLoadedUndefined: Self = StObject.set(x, "_fullyLoaded", js.undefined)
     
     @scala.inline
-    def set_fullyLoadedCPUpctNull: Self = this.set("_fullyLoadedCPUpct", null)
+    def set_gzip_savings(value: Double): Self = StObject.set(x, "_gzip_savings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_gzip_savings(value: Double): Self = this.set("_gzip_savings", value.asInstanceOf[js.Any])
+    def set_gzip_savingsNull: Self = StObject.set(x, "_gzip_savings", null)
     
     @scala.inline
-    def delete_gzip_savings: Self = this.set("_gzip_savings", js.undefined)
+    def set_gzip_savingsUndefined: Self = StObject.set(x, "_gzip_savings", js.undefined)
     
     @scala.inline
-    def set_gzip_savingsNull: Self = this.set("_gzip_savings", null)
+    def set_gzip_total(value: Double): Self = StObject.set(x, "_gzip_total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_gzip_total(value: Double): Self = this.set("_gzip_total", value.asInstanceOf[js.Any])
+    def set_gzip_totalNull: Self = StObject.set(x, "_gzip_total", null)
     
     @scala.inline
-    def delete_gzip_total: Self = this.set("_gzip_total", js.undefined)
+    def set_gzip_totalUndefined: Self = StObject.set(x, "_gzip_total", js.undefined)
     
     @scala.inline
-    def set_gzip_totalNull: Self = this.set("_gzip_total", null)
+    def set_image_savings(value: Double): Self = StObject.set(x, "_image_savings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_image_savings(value: Double): Self = this.set("_image_savings", value.asInstanceOf[js.Any])
+    def set_image_savingsNull: Self = StObject.set(x, "_image_savings", null)
     
     @scala.inline
-    def delete_image_savings: Self = this.set("_image_savings", js.undefined)
+    def set_image_savingsUndefined: Self = StObject.set(x, "_image_savings", js.undefined)
     
     @scala.inline
-    def set_image_savingsNull: Self = this.set("_image_savings", null)
+    def set_image_total(value: Double): Self = StObject.set(x, "_image_total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_image_total(value: Double): Self = this.set("_image_total", value.asInstanceOf[js.Any])
+    def set_image_totalNull: Self = StObject.set(x, "_image_total", null)
     
     @scala.inline
-    def delete_image_total: Self = this.set("_image_total", js.undefined)
+    def set_image_totalUndefined: Self = StObject.set(x, "_image_total", js.undefined)
     
     @scala.inline
-    def set_image_totalNull: Self = this.set("_image_total", null)
+    def set_isResponsive(value: Double): Self = StObject.set(x, "_isResponsive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_isResponsive(value: Double): Self = this.set("_isResponsive", value.asInstanceOf[js.Any])
+    def set_isResponsiveNull: Self = StObject.set(x, "_isResponsive", null)
     
     @scala.inline
-    def delete_isResponsive: Self = this.set("_isResponsive", js.undefined)
+    def set_isResponsiveUndefined: Self = StObject.set(x, "_isResponsive", js.undefined)
     
     @scala.inline
-    def set_isResponsiveNull: Self = this.set("_isResponsive", null)
+    def set_lastVisualChange(value: Double): Self = StObject.set(x, "_lastVisualChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lastVisualChange(value: Double): Self = this.set("_lastVisualChange", value.asInstanceOf[js.Any])
+    def set_lastVisualChangeNull: Self = StObject.set(x, "_lastVisualChange", null)
     
     @scala.inline
-    def delete_lastVisualChange: Self = this.set("_lastVisualChange", js.undefined)
+    def set_lastVisualChangeUndefined: Self = StObject.set(x, "_lastVisualChange", js.undefined)
     
     @scala.inline
-    def set_lastVisualChangeNull: Self = this.set("_lastVisualChange", null)
+    def set_loadEventEnd(value: Double): Self = StObject.set(x, "_loadEventEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_loadEventEnd(value: Double): Self = this.set("_loadEventEnd", value.asInstanceOf[js.Any])
+    def set_loadEventEndNull: Self = StObject.set(x, "_loadEventEnd", null)
     
     @scala.inline
-    def delete_loadEventEnd: Self = this.set("_loadEventEnd", js.undefined)
+    def set_loadEventEndUndefined: Self = StObject.set(x, "_loadEventEnd", js.undefined)
     
     @scala.inline
-    def set_loadEventEndNull: Self = this.set("_loadEventEnd", null)
+    def set_loadEventStart(value: Double): Self = StObject.set(x, "_loadEventStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_loadEventStart(value: Double): Self = this.set("_loadEventStart", value.asInstanceOf[js.Any])
+    def set_loadEventStartNull: Self = StObject.set(x, "_loadEventStart", null)
     
     @scala.inline
-    def delete_loadEventStart: Self = this.set("_loadEventStart", js.undefined)
+    def set_loadEventStartUndefined: Self = StObject.set(x, "_loadEventStart", js.undefined)
     
     @scala.inline
-    def set_loadEventStartNull: Self = this.set("_loadEventStart", null)
+    def set_loadTime(value: Double): Self = StObject.set(x, "_loadTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_loadTime(value: Double): Self = this.set("_loadTime", value.asInstanceOf[js.Any])
+    def set_loadTimeNull: Self = StObject.set(x, "_loadTime", null)
     
     @scala.inline
-    def delete_loadTime: Self = this.set("_loadTime", js.undefined)
+    def set_loadTimeUndefined: Self = StObject.set(x, "_loadTime", js.undefined)
     
     @scala.inline
-    def set_loadTimeNull: Self = this.set("_loadTime", null)
+    def set_minify_savings(value: Double): Self = StObject.set(x, "_minify_savings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_minify_savings(value: Double): Self = this.set("_minify_savings", value.asInstanceOf[js.Any])
+    def set_minify_savingsNull: Self = StObject.set(x, "_minify_savings", null)
     
     @scala.inline
-    def delete_minify_savings: Self = this.set("_minify_savings", js.undefined)
+    def set_minify_savingsUndefined: Self = StObject.set(x, "_minify_savings", js.undefined)
     
     @scala.inline
-    def set_minify_savingsNull: Self = this.set("_minify_savings", null)
+    def set_minify_total(value: Double): Self = StObject.set(x, "_minify_total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_minify_total(value: Double): Self = this.set("_minify_total", value.asInstanceOf[js.Any])
+    def set_minify_totalNull: Self = StObject.set(x, "_minify_total", null)
     
     @scala.inline
-    def delete_minify_total: Self = this.set("_minify_total", js.undefined)
+    def set_minify_totalUndefined: Self = StObject.set(x, "_minify_total", js.undefined)
     
     @scala.inline
-    def set_minify_totalNull: Self = this.set("_minify_total", null)
+    def set_optimization_checked(value: Double): Self = StObject.set(x, "_optimization_checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_optimization_checked(value: Double): Self = this.set("_optimization_checked", value.asInstanceOf[js.Any])
+    def set_optimization_checkedNull: Self = StObject.set(x, "_optimization_checked", null)
     
     @scala.inline
-    def delete_optimization_checked: Self = this.set("_optimization_checked", js.undefined)
+    def set_optimization_checkedUndefined: Self = StObject.set(x, "_optimization_checked", js.undefined)
     
     @scala.inline
-    def set_optimization_checkedNull: Self = this.set("_optimization_checked", null)
+    def set_pageSpeedVersion(value: String): Self = StObject.set(x, "_pageSpeedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_pageSpeedVersion(value: String): Self = this.set("_pageSpeedVersion", value.asInstanceOf[js.Any])
+    def set_pageSpeedVersionNull: Self = StObject.set(x, "_pageSpeedVersion", null)
     
     @scala.inline
-    def delete_pageSpeedVersion: Self = this.set("_pageSpeedVersion", js.undefined)
+    def set_pageSpeedVersionUndefined: Self = StObject.set(x, "_pageSpeedVersion", js.undefined)
     
     @scala.inline
-    def set_pageSpeedVersionNull: Self = this.set("_pageSpeedVersion", null)
+    def set_render(value: Double): Self = StObject.set(x, "_render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_render(value: Double): Self = this.set("_render", value.asInstanceOf[js.Any])
+    def set_renderNull: Self = StObject.set(x, "_render", null)
     
     @scala.inline
-    def delete_render: Self = this.set("_render", js.undefined)
+    def set_renderUndefined: Self = StObject.set(x, "_render", js.undefined)
     
     @scala.inline
-    def set_renderNull: Self = this.set("_render", null)
+    def set_requests(value: Double): Self = StObject.set(x, "_requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_requests(value: Double): Self = this.set("_requests", value.asInstanceOf[js.Any])
+    def set_requestsDoc(value: Double): Self = StObject.set(x, "_requestsDoc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_requests: Self = this.set("_requests", js.undefined)
+    def set_requestsDocNull: Self = StObject.set(x, "_requestsDoc", null)
     
     @scala.inline
-    def set_requestsNull: Self = this.set("_requests", null)
+    def set_requestsDocUndefined: Self = StObject.set(x, "_requestsDoc", js.undefined)
     
     @scala.inline
-    def set_requestsDoc(value: Double): Self = this.set("_requestsDoc", value.asInstanceOf[js.Any])
+    def set_requestsFull(value: Double): Self = StObject.set(x, "_requestsFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_requestsDoc: Self = this.set("_requestsDoc", js.undefined)
+    def set_requestsFullNull: Self = StObject.set(x, "_requestsFull", null)
     
     @scala.inline
-    def set_requestsDocNull: Self = this.set("_requestsDoc", null)
+    def set_requestsFullUndefined: Self = StObject.set(x, "_requestsFull", js.undefined)
     
     @scala.inline
-    def set_requestsFull(value: Double): Self = this.set("_requestsFull", value.asInstanceOf[js.Any])
+    def set_requestsNull: Self = StObject.set(x, "_requests", null)
     
     @scala.inline
-    def delete_requestsFull: Self = this.set("_requestsFull", js.undefined)
+    def set_requestsUndefined: Self = StObject.set(x, "_requests", js.undefined)
     
     @scala.inline
-    def set_requestsFullNull: Self = this.set("_requestsFull", null)
+    def set_responses_200(value: Double): Self = StObject.set(x, "_responses_200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_responses_200(value: Double): Self = this.set("_responses_200", value.asInstanceOf[js.Any])
+    def set_responses_200Null: Self = StObject.set(x, "_responses_200", null)
     
     @scala.inline
-    def delete_responses_200: Self = this.set("_responses_200", js.undefined)
+    def set_responses_200Undefined: Self = StObject.set(x, "_responses_200", js.undefined)
     
     @scala.inline
-    def set_responses_200Null: Self = this.set("_responses_200", null)
+    def set_responses_404(value: Double): Self = StObject.set(x, "_responses_404", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_responses_404(value: Double): Self = this.set("_responses_404", value.asInstanceOf[js.Any])
+    def set_responses_404Null: Self = StObject.set(x, "_responses_404", null)
     
     @scala.inline
-    def delete_responses_404: Self = this.set("_responses_404", js.undefined)
+    def set_responses_404Undefined: Self = StObject.set(x, "_responses_404", js.undefined)
     
     @scala.inline
-    def set_responses_404Null: Self = this.set("_responses_404", null)
+    def set_responses_other(value: Double): Self = StObject.set(x, "_responses_other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_responses_other(value: Double): Self = this.set("_responses_other", value.asInstanceOf[js.Any])
+    def set_responses_otherNull: Self = StObject.set(x, "_responses_other", null)
     
     @scala.inline
-    def delete_responses_other: Self = this.set("_responses_other", js.undefined)
+    def set_responses_otherUndefined: Self = StObject.set(x, "_responses_other", js.undefined)
     
     @scala.inline
-    def set_responses_otherNull: Self = this.set("_responses_other", null)
+    def set_result(value: Double): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_result(value: Double): Self = this.set("_result", value.asInstanceOf[js.Any])
+    def set_resultNull: Self = StObject.set(x, "_result", null)
     
     @scala.inline
-    def delete_result: Self = this.set("_result", js.undefined)
+    def set_resultUndefined: Self = StObject.set(x, "_result", js.undefined)
     
     @scala.inline
-    def set_resultNull: Self = this.set("_result", null)
+    def set_run(value: Double): Self = StObject.set(x, "_run", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_run(value: Double): Self = this.set("_run", value.asInstanceOf[js.Any])
+    def set_runNull: Self = StObject.set(x, "_run", null)
     
     @scala.inline
-    def delete_run: Self = this.set("_run", js.undefined)
+    def set_runUndefined: Self = StObject.set(x, "_run", js.undefined)
     
     @scala.inline
-    def set_runNull: Self = this.set("_run", null)
+    def set_score_cache(value: Double): Self = StObject.set(x, "_score_cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score_cache(value: Double): Self = this.set("_score_cache", value.asInstanceOf[js.Any])
+    def set_score_cacheNull: Self = StObject.set(x, "_score_cache", null)
     
     @scala.inline
-    def delete_score_cache: Self = this.set("_score_cache", js.undefined)
+    def set_score_cacheUndefined: Self = StObject.set(x, "_score_cache", js.undefined)
     
     @scala.inline
-    def set_score_cacheNull: Self = this.set("_score_cache", null)
+    def set_score_cdn(value: Double): Self = StObject.set(x, "_score_cdn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score_cdn(value: Double): Self = this.set("_score_cdn", value.asInstanceOf[js.Any])
+    def set_score_cdnNull: Self = StObject.set(x, "_score_cdn", null)
     
     @scala.inline
-    def delete_score_cdn: Self = this.set("_score_cdn", js.undefined)
+    def set_score_cdnUndefined: Self = StObject.set(x, "_score_cdn", js.undefined)
     
     @scala.inline
-    def set_score_cdnNull: Self = this.set("_score_cdn", null)
+    def set_score_combine(value: Double): Self = StObject.set(x, "_score_combine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score_combine(value: Double): Self = this.set("_score_combine", value.asInstanceOf[js.Any])
+    def set_score_combineNull: Self = StObject.set(x, "_score_combine", null)
     
     @scala.inline
-    def delete_score_combine: Self = this.set("_score_combine", js.undefined)
+    def set_score_combineUndefined: Self = StObject.set(x, "_score_combine", js.undefined)
     
     @scala.inline
-    def set_score_combineNull: Self = this.set("_score_combine", null)
+    def set_score_compress(value: Double): Self = StObject.set(x, "_score_compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score_compress(value: Double): Self = this.set("_score_compress", value.asInstanceOf[js.Any])
+    def set_score_compressNull: Self = StObject.set(x, "_score_compress", null)
     
     @scala.inline
-    def delete_score_compress: Self = this.set("_score_compress", js.undefined)
+    def set_score_compressUndefined: Self = StObject.set(x, "_score_compress", js.undefined)
     
     @scala.inline
-    def set_score_compressNull: Self = this.set("_score_compress", null)
+    def set_score_cookies(value: Double): Self = StObject.set(x, "_score_cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score_cookies(value: Double): Self = this.set("_score_cookies", value.asInstanceOf[js.Any])
+    def set_score_cookiesNull: Self = StObject.set(x, "_score_cookies", null)
     
     @scala.inline
-    def delete_score_cookies: Self = this.set("_score_cookies", js.undefined)
+    def set_score_cookiesUndefined: Self = StObject.set(x, "_score_cookies", js.undefined)
     
     @scala.inline
-    def set_score_cookiesNull: Self = this.set("_score_cookies", null)
+    def set_score_etags(value: Double): Self = StObject.set(x, "_score_etags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score_etags(value: Double): Self = this.set("_score_etags", value.asInstanceOf[js.Any])
+    def set_score_etagsNull: Self = StObject.set(x, "_score_etags", null)
     
     @scala.inline
-    def delete_score_etags: Self = this.set("_score_etags", js.undefined)
+    def set_score_etagsUndefined: Self = StObject.set(x, "_score_etags", js.undefined)
     
     @scala.inline
-    def set_score_etagsNull: Self = this.set("_score_etags", null)
+    def set_score_gzip(value: Double): Self = StObject.set(x, "_score_gzip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score_gzip(value: Double): Self = this.set("_score_gzip", value.asInstanceOf[js.Any])
+    def set_score_gzipNull: Self = StObject.set(x, "_score_gzip", null)
     
     @scala.inline
-    def delete_score_gzip: Self = this.set("_score_gzip", js.undefined)
+    def set_score_gzipUndefined: Self = StObject.set(x, "_score_gzip", js.undefined)
     
     @scala.inline
-    def set_score_gzipNull: Self = this.set("_score_gzip", null)
+    def `set_score_keep-alive`(value: Double): Self = StObject.set(x, "_score_keep-alive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set_score_keep-alive`(value: Double): Self = this.set("_score_keep-alive", value.asInstanceOf[js.Any])
+    def `set_score_keep-aliveNull`: Self = StObject.set(x, "_score_keep-alive", null)
     
     @scala.inline
-    def `delete_score_keep-alive`: Self = this.set("_score_keep-alive", js.undefined)
+    def `set_score_keep-aliveUndefined`: Self = StObject.set(x, "_score_keep-alive", js.undefined)
     
     @scala.inline
-    def `set_score_keep-aliveNull`: Self = this.set("_score_keep-alive", null)
+    def set_score_minify(value: Double): Self = StObject.set(x, "_score_minify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score_minify(value: Double): Self = this.set("_score_minify", value.asInstanceOf[js.Any])
+    def set_score_minifyNull: Self = StObject.set(x, "_score_minify", null)
     
     @scala.inline
-    def delete_score_minify: Self = this.set("_score_minify", js.undefined)
+    def set_score_minifyUndefined: Self = StObject.set(x, "_score_minify", js.undefined)
     
     @scala.inline
-    def set_score_minifyNull: Self = this.set("_score_minify", null)
+    def set_score_progressive_jpeg(value: Double): Self = StObject.set(x, "_score_progressive_jpeg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score_progressive_jpeg(value: Double): Self = this.set("_score_progressive_jpeg", value.asInstanceOf[js.Any])
+    def set_score_progressive_jpegNull: Self = StObject.set(x, "_score_progressive_jpeg", null)
     
     @scala.inline
-    def delete_score_progressive_jpeg: Self = this.set("_score_progressive_jpeg", js.undefined)
+    def set_score_progressive_jpegUndefined: Self = StObject.set(x, "_score_progressive_jpeg", js.undefined)
     
     @scala.inline
-    def set_score_progressive_jpegNull: Self = this.set("_score_progressive_jpeg", null)
+    def set_server_count(value: Double): Self = StObject.set(x, "_server_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_server_count(value: Double): Self = this.set("_server_count", value.asInstanceOf[js.Any])
+    def set_server_countNull: Self = StObject.set(x, "_server_count", null)
     
     @scala.inline
-    def delete_server_count: Self = this.set("_server_count", js.undefined)
+    def set_server_countUndefined: Self = StObject.set(x, "_server_count", js.undefined)
     
     @scala.inline
-    def set_server_countNull: Self = this.set("_server_count", null)
+    def set_server_rtt(value: Double): Self = StObject.set(x, "_server_rtt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_server_rtt(value: Double): Self = this.set("_server_rtt", value.asInstanceOf[js.Any])
+    def set_server_rttNull: Self = StObject.set(x, "_server_rtt", null)
     
     @scala.inline
-    def delete_server_rtt: Self = this.set("_server_rtt", js.undefined)
+    def set_server_rttUndefined: Self = StObject.set(x, "_server_rtt", js.undefined)
     
     @scala.inline
-    def set_server_rttNull: Self = this.set("_server_rtt", null)
+    def set_step(value: Double): Self = StObject.set(x, "_step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_step(value: Double): Self = this.set("_step", value.asInstanceOf[js.Any])
+    def set_stepNull: Self = StObject.set(x, "_step", null)
     
     @scala.inline
-    def delete_step: Self = this.set("_step", js.undefined)
+    def set_stepUndefined: Self = StObject.set(x, "_step", js.undefined)
     
     @scala.inline
-    def set_stepNull: Self = this.set("_step", null)
+    def set_title(value: String): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_title(value: String): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def set_titleNull: Self = StObject.set(x, "_title", null)
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def set_titleTime(value: Double): Self = StObject.set(x, "_titleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_titleNull: Self = this.set("_title", null)
+    def set_titleTimeNull: Self = StObject.set(x, "_titleTime", null)
     
     @scala.inline
-    def set_titleTime(value: Double): Self = this.set("_titleTime", value.asInstanceOf[js.Any])
+    def set_titleTimeUndefined: Self = StObject.set(x, "_titleTime", js.undefined)
     
     @scala.inline
-    def delete_titleTime: Self = this.set("_titleTime", js.undefined)
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
     
     @scala.inline
-    def set_titleTimeNull: Self = this.set("_titleTime", null)
+    def set_visualComplete(value: Double): Self = StObject.set(x, "_visualComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_visualComplete(value: Double): Self = this.set("_visualComplete", value.asInstanceOf[js.Any])
+    def set_visualCompleteNull: Self = StObject.set(x, "_visualComplete", null)
     
     @scala.inline
-    def delete_visualComplete: Self = this.set("_visualComplete", js.undefined)
-    
-    @scala.inline
-    def set_visualCompleteNull: Self = this.set("_visualComplete", null)
-    
-    @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def set_visualCompleteUndefined: Self = StObject.set(x, "_visualComplete", js.undefined)
   }
 }

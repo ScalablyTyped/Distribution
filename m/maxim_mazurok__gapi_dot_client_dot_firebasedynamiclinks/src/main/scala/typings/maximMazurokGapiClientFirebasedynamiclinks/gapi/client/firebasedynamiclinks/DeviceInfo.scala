@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebasedynamiclinks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceInfo extends js.Object {
+trait DeviceInfo extends StObject {
   
   /** Device model name. */
   var deviceModelName: js.UndefOr[String] = js.native
@@ -40,60 +41,48 @@ object DeviceInfo {
   }
   
   @scala.inline
-  implicit class DeviceInfoOps[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+  implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceModelName(value: String): Self = StObject.set(x, "deviceModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceModelNameUndefined: Self = StObject.set(x, "deviceModelName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceModelName(value: String): Self = this.set("deviceModelName", value.asInstanceOf[js.Any])
+    def setLanguageCodeFromWebview(value: String): Self = StObject.set(x, "languageCodeFromWebview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceModelName: Self = this.set("deviceModelName", js.undefined)
+    def setLanguageCodeFromWebviewUndefined: Self = StObject.set(x, "languageCodeFromWebview", js.undefined)
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setLanguageCodeRaw(value: String): Self = StObject.set(x, "languageCodeRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setLanguageCodeRawUndefined: Self = StObject.set(x, "languageCodeRaw", js.undefined)
     
     @scala.inline
-    def setLanguageCodeFromWebview(value: String): Self = this.set("languageCodeFromWebview", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteLanguageCodeFromWebview: Self = this.set("languageCodeFromWebview", js.undefined)
+    def setScreenResolutionHeight(value: String): Self = StObject.set(x, "screenResolutionHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCodeRaw(value: String): Self = this.set("languageCodeRaw", value.asInstanceOf[js.Any])
+    def setScreenResolutionHeightUndefined: Self = StObject.set(x, "screenResolutionHeight", js.undefined)
     
     @scala.inline
-    def deleteLanguageCodeRaw: Self = this.set("languageCodeRaw", js.undefined)
+    def setScreenResolutionWidth(value: String): Self = StObject.set(x, "screenResolutionWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenResolutionHeight(value: String): Self = this.set("screenResolutionHeight", value.asInstanceOf[js.Any])
+    def setScreenResolutionWidthUndefined: Self = StObject.set(x, "screenResolutionWidth", js.undefined)
     
     @scala.inline
-    def deleteScreenResolutionHeight: Self = this.set("screenResolutionHeight", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenResolutionWidth(value: String): Self = this.set("screenResolutionWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenResolutionWidth: Self = this.set("screenResolutionWidth", js.undefined)
-    
-    @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

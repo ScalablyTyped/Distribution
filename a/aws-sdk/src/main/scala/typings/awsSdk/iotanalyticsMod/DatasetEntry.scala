@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetEntry extends js.Object {
+trait DatasetEntry extends StObject {
   
   /**
     * The presigned URI of the data set item.
@@ -26,30 +27,18 @@ object DatasetEntry {
   }
   
   @scala.inline
-  implicit class DatasetEntryOps[Self <: DatasetEntry] (val x: Self) extends AnyVal {
+  implicit class DatasetEntryMutableBuilder[Self <: DatasetEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataURI(value: PresignedURI): Self = StObject.set(x, "dataURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataURIUndefined: Self = StObject.set(x, "dataURI", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryName(value: EntryName): Self = StObject.set(x, "entryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataURI(value: PresignedURI): Self = this.set("dataURI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataURI: Self = this.set("dataURI", js.undefined)
-    
-    @scala.inline
-    def setEntryName(value: EntryName): Self = this.set("entryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntryName: Self = this.set("entryName", js.undefined)
+    def setEntryNameUndefined: Self = StObject.set(x, "entryName", js.undefined)
   }
 }

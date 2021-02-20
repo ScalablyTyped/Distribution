@@ -1,11 +1,12 @@
 package typings.webgme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecoratorPaths extends js.Object {
+trait DecoratorPaths extends StObject {
   
   /**
     * Array of paths to decorators that should be available.
@@ -73,57 +74,45 @@ object DecoratorPaths {
   }
   
   @scala.inline
-  implicit class DecoratorPathsOps[Self <: DecoratorPaths] (val x: Self) extends AnyVal {
+  implicit class DecoratorPathsMutableBuilder[Self <: DecoratorPaths] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecoratorPaths(value: js.Array[String]): Self = StObject.set(x, "decoratorPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecoratorPathsVarargs(value: String*): Self = StObject.set(x, "decoratorPaths", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecoratorToPreload(value: Double): Self = StObject.set(x, "decoratorToPreload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecoratorPathsVarargs(value: String*): Self = this.set("decoratorPaths", js.Array(value :_*))
+    def setDecoratorToPreloadNull: Self = StObject.set(x, "decoratorToPreload", null)
     
     @scala.inline
-    def setDecoratorPaths(value: js.Array[String]): Self = this.set("decoratorPaths", value.asInstanceOf[js.Any])
+    def setExtraCss(value: js.Array[String]): Self = StObject.set(x, "extraCss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraCssVarargs(value: String*): Self = this.set("extraCss", js.Array(value :_*))
+    def setExtraCssVarargs(value: String*): Self = StObject.set(x, "extraCss", js.Array(value :_*))
     
     @scala.inline
-    def setExtraCss(value: js.Array[String]): Self = this.set("extraCss", value.asInstanceOf[js.Any])
+    def setLayout(value: Default): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: Default): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setPanelPaths(value: js.Array[String]): Self = StObject.set(x, "panelPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelPathsVarargs(value: String*): Self = this.set("panelPaths", js.Array(value :_*))
+    def setPanelPathsVarargs(value: String*): Self = StObject.set(x, "panelPaths", js.Array(value :_*))
     
     @scala.inline
-    def setPanelPaths(value: js.Array[String]): Self = this.set("panelPaths", value.asInstanceOf[js.Any])
+    def setSvgDirs(value: js.Array[String]): Self = StObject.set(x, "svgDirs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgDirsVarargs(value: String*): Self = this.set("svgDirs", js.Array(value :_*))
+    def setSvgDirsVarargs(value: String*): Self = StObject.set(x, "svgDirs", js.Array(value :_*))
     
     @scala.inline
-    def setSvgDirs(value: js.Array[String]): Self = this.set("svgDirs", value.asInstanceOf[js.Any])
+    def setVisualizerDescriptors(value: js.Array[String]): Self = StObject.set(x, "visualizerDescriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisualizerDescriptorsVarargs(value: String*): Self = this.set("visualizerDescriptors", js.Array(value :_*))
-    
-    @scala.inline
-    def setVisualizerDescriptors(value: js.Array[String]): Self = this.set("visualizerDescriptors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDecoratorToPreload(value: Double): Self = this.set("decoratorToPreload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDecoratorToPreloadNull: Self = this.set("decoratorToPreload", null)
+    def setVisualizerDescriptorsVarargs(value: String*): Self = StObject.set(x, "visualizerDescriptors", js.Array(value :_*))
   }
 }

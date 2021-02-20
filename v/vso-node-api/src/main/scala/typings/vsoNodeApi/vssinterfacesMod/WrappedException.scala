@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WrappedException extends js.Object {
+trait WrappedException extends StObject {
   
   var customProperties: StringDictionary[js.Any] = js.native
   
@@ -45,45 +46,33 @@ object WrappedException {
   }
   
   @scala.inline
-  implicit class WrappedExceptionOps[Self <: WrappedException] (val x: Self) extends AnyVal {
+  implicit class WrappedExceptionMutableBuilder[Self <: WrappedException] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomProperties(value: StringDictionary[js.Any]): Self = this.set("customProperties", value.asInstanceOf[js.Any])
+    def setHelpLink(value: String): Self = StObject.set(x, "helpLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: Double): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setInnerException(value: WrappedException): Self = StObject.set(x, "innerException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventId(value: Double): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpLink(value: String): Self = this.set("helpLink", value.asInstanceOf[js.Any])
+    def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerException(value: WrappedException): Self = this.set("innerException", value.asInstanceOf[js.Any])
+    def setTypeKey(value: String): Self = StObject.set(x, "typeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStackTrace(value: String): Self = this.set("stackTrace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeKey(value: String): Self = this.set("typeKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeName(value: String): Self = this.set("typeName", value.asInstanceOf[js.Any])
+    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
   }
 }

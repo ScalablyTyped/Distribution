@@ -14,12 +14,13 @@ import typings.jquerySimplepagination.jquerySimplepaginationStrings.selectPage
 import typings.jquerySimplepagination.jquerySimplepaginationStrings.setPagesCount
 import typings.jquerySimplepagination.jquerySimplepaginationStrings.updateItems
 import typings.jquerySimplepagination.jquerySimplepaginationStrings.updateItemsOnPage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def pagination(): JQuery = js.native
   def pagination(method: String): js.Any = js.native

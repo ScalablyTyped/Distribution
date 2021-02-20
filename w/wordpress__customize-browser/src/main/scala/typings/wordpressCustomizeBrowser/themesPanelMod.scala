@@ -3,16 +3,18 @@ package typings.wordpressCustomizeBrowser
 import typings.jquery.JQuery.Event
 import typings.jquery.JQuery.Promise
 import typings.wordpressCustomizeBrowser.panelMod.Panel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/customize-browser/ThemesPanel", JSImport.Namespace)
-@js.native
-object themesPanelMod extends js.Object {
+object themesPanelMod {
   
+  @JSImport("@wordpress/customize-browser/ThemesPanel", "ThemesPanel")
   @js.native
-  class ThemesPanel () extends Panel {
+  class ThemesPanel protected () extends Panel {
+    def this(applicator: js.Object, argsArray: js.Object) = this()
+    def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
     def canSwitchTheme(): Boolean = js.native
     def canSwitchTheme(slug: String): Boolean = js.native

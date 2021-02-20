@@ -4,16 +4,16 @@ import typings.babylonjs.animatableMod.Animatable
 import typings.babylonjs.animationMod.Animation
 import typings.babylonjs.animationMod.IAnimationState
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Animations/runtimeAnimation", JSImport.Namespace)
-@js.native
-object runtimeAnimationMod extends js.Object {
+object runtimeAnimationMod {
   
+  @JSImport("babylonjs/Animations/runtimeAnimation", "RuntimeAnimation")
   @js.native
-  class RuntimeAnimation protected () extends js.Object {
+  class RuntimeAnimation protected () extends StObject {
     /**
       * Create a new RuntimeAnimation object
       * @param target defines the target of the animation

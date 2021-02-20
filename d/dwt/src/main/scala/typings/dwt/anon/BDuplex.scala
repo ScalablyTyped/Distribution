@@ -1,12 +1,13 @@
 package typings.dwt.anon
 
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BDuplex extends js.Object {
+trait BDuplex extends StObject {
   
   /**
     * Whether to enable duplex scan.
@@ -42,48 +43,36 @@ object BDuplex {
   }
   
   @scala.inline
-  implicit class BDuplexOps[Self <: BDuplex] (val x: Self) extends AnyVal {
+  implicit class BDuplexMutableBuilder[Self <: BDuplex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBDuplex(value: Boolean): Self = StObject.set(x, "bDuplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBDuplexUndefined: Self = StObject.set(x, "bDuplex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBFeeder(value: Boolean): Self = StObject.set(x, "bFeeder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBDuplex(value: Boolean): Self = this.set("bDuplex", value.asInstanceOf[js.Any])
+    def setBFeederUndefined: Self = StObject.set(x, "bFeeder", js.undefined)
     
     @scala.inline
-    def deleteBDuplex: Self = this.set("bDuplex", js.undefined)
+    def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBFeeder(value: Boolean): Self = this.set("bFeeder", value.asInstanceOf[js.Any])
+    def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
     @scala.inline
-    def deleteBFeeder: Self = this.set("bFeeder", js.undefined)
+    def setPixelType(value: EnumDWTPixelType | Double): Self = StObject.set(x, "pixelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setException(value: String): Self = this.set("exception", value.asInstanceOf[js.Any])
+    def setPixelTypeUndefined: Self = StObject.set(x, "pixelType", js.undefined)
     
     @scala.inline
-    def deleteException: Self = this.set("exception", js.undefined)
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelType(value: EnumDWTPixelType | Double): Self = this.set("pixelType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePixelType: Self = this.set("pixelType", js.undefined)
-    
-    @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
   }
 }

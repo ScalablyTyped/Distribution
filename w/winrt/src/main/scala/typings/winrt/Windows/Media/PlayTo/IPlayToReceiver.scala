@@ -2,12 +2,13 @@ package typings.winrt.Windows.Media.PlayTo
 
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import typings.winrt.Windows.Foundation.IAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPlayToReceiver extends js.Object {
+trait IPlayToReceiver extends StObject {
   
   var friendlyName: String = js.native
   
@@ -103,102 +104,90 @@ object IPlayToReceiver {
   }
   
   @scala.inline
-  implicit class IPlayToReceiverOps[Self <: IPlayToReceiver] (val x: Self) extends AnyVal {
+  implicit class IPlayToReceiverMutableBuilder[Self <: IPlayToReceiver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotifyDurationChange(value: Double => Unit): Self = StObject.set(x, "notifyDurationChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotifyEnded(value: () => Unit): Self = StObject.set(x, "notifyEnded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setNotifyError(value: () => Unit): Self = StObject.set(x, "notifyError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotifyDurationChange(value: Double => Unit): Self = this.set("notifyDurationChange", js.Any.fromFunction1(value))
+    def setNotifyLoadedMetadata(value: () => Unit): Self = StObject.set(x, "notifyLoadedMetadata", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotifyEnded(value: () => Unit): Self = this.set("notifyEnded", js.Any.fromFunction0(value))
+    def setNotifyPaused(value: () => Unit): Self = StObject.set(x, "notifyPaused", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotifyError(value: () => Unit): Self = this.set("notifyError", js.Any.fromFunction0(value))
+    def setNotifyPlaying(value: () => Unit): Self = StObject.set(x, "notifyPlaying", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotifyLoadedMetadata(value: () => Unit): Self = this.set("notifyLoadedMetadata", js.Any.fromFunction0(value))
+    def setNotifyRateChange(value: Double => Unit): Self = StObject.set(x, "notifyRateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNotifyPaused(value: () => Unit): Self = this.set("notifyPaused", js.Any.fromFunction0(value))
+    def setNotifySeeked(value: () => Unit): Self = StObject.set(x, "notifySeeked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotifyPlaying(value: () => Unit): Self = this.set("notifyPlaying", js.Any.fromFunction0(value))
+    def setNotifySeeking(value: () => Unit): Self = StObject.set(x, "notifySeeking", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotifyRateChange(value: Double => Unit): Self = this.set("notifyRateChange", js.Any.fromFunction1(value))
+    def setNotifyStopped(value: () => Unit): Self = StObject.set(x, "notifyStopped", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotifySeeked(value: () => Unit): Self = this.set("notifySeeked", js.Any.fromFunction0(value))
+    def setNotifyTimeUpdate(value: Double => Unit): Self = StObject.set(x, "notifyTimeUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNotifySeeking(value: () => Unit): Self = this.set("notifySeeking", js.Any.fromFunction0(value))
+    def setNotifyVolumeChange(value: (Double, Boolean) => Unit): Self = StObject.set(x, "notifyVolumeChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNotifyStopped(value: () => Unit): Self = this.set("notifyStopped", js.Any.fromFunction0(value))
+    def setOncurrenttimechangerequested(value: js.Any): Self = StObject.set(x, "oncurrenttimechangerequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyTimeUpdate(value: Double => Unit): Self = this.set("notifyTimeUpdate", js.Any.fromFunction1(value))
+    def setOnmutechangerequested(value: js.Any): Self = StObject.set(x, "onmutechangerequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyVolumeChange(value: (Double, Boolean) => Unit): Self = this.set("notifyVolumeChange", js.Any.fromFunction2(value))
+    def setOnpauserequested(value: js.Any): Self = StObject.set(x, "onpauserequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOncurrenttimechangerequested(value: js.Any): Self = this.set("oncurrenttimechangerequested", value.asInstanceOf[js.Any])
+    def setOnplaybackratechangerequested(value: js.Any): Self = StObject.set(x, "onplaybackratechangerequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnmutechangerequested(value: js.Any): Self = this.set("onmutechangerequested", value.asInstanceOf[js.Any])
+    def setOnplayrequested(value: js.Any): Self = StObject.set(x, "onplayrequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpauserequested(value: js.Any): Self = this.set("onpauserequested", value.asInstanceOf[js.Any])
+    def setOnsourcechangerequested(value: js.Any): Self = StObject.set(x, "onsourcechangerequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnplaybackratechangerequested(value: js.Any): Self = this.set("onplaybackratechangerequested", value.asInstanceOf[js.Any])
+    def setOnstoprequested(value: js.Any): Self = StObject.set(x, "onstoprequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnplayrequested(value: js.Any): Self = this.set("onplayrequested", value.asInstanceOf[js.Any])
+    def setOntimeupdaterequested(value: js.Any): Self = StObject.set(x, "ontimeupdaterequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsourcechangerequested(value: js.Any): Self = this.set("onsourcechangerequested", value.asInstanceOf[js.Any])
+    def setOnvolumechangerequested(value: js.Any): Self = StObject.set(x, "onvolumechangerequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnstoprequested(value: js.Any): Self = this.set("onstoprequested", value.asInstanceOf[js.Any])
+    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOntimeupdaterequested(value: js.Any): Self = this.set("ontimeupdaterequested", value.asInstanceOf[js.Any])
+    def setStartAsync(value: () => IAsyncAction): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnvolumechangerequested(value: js.Any): Self = this.set("onvolumechangerequested", value.asInstanceOf[js.Any])
+    def setStopAsync(value: () => IAsyncAction): Self = StObject.set(x, "stopAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProperties(value: IPropertySet): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setSupportsAudio(value: Boolean): Self = StObject.set(x, "supportsAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAsync(value: () => IAsyncAction): Self = this.set("startAsync", js.Any.fromFunction0(value))
+    def setSupportsImage(value: Boolean): Self = StObject.set(x, "supportsImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopAsync(value: () => IAsyncAction): Self = this.set("stopAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSupportsAudio(value: Boolean): Self = this.set("supportsAudio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsImage(value: Boolean): Self = this.set("supportsImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsVideo(value: Boolean): Self = this.set("supportsVideo", value.asInstanceOf[js.Any])
+    def setSupportsVideo(value: Boolean): Self = StObject.set(x, "supportsVideo", value.asInstanceOf[js.Any])
   }
 }

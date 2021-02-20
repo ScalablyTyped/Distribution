@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,111 +53,99 @@ object ContentType {
   }
   
   @scala.inline
-  implicit class ContentTypeOps[Self <: ContentType] (val x: Self) extends AnyVal {
+  implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnLinks(value: NullableOption[js.Array[ColumnLink]]): Self = StObject.set(x, "columnLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnLinksNull: Self = StObject.set(x, "columnLinks", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnLinksUndefined: Self = StObject.set(x, "columnLinks", js.undefined)
     
     @scala.inline
-    def setColumnLinksVarargs(value: ColumnLink*): Self = this.set("columnLinks", js.Array(value :_*))
+    def setColumnLinksVarargs(value: ColumnLink*): Self = StObject.set(x, "columnLinks", js.Array(value :_*))
     
     @scala.inline
-    def setColumnLinks(value: NullableOption[js.Array[ColumnLink]]): Self = this.set("columnLinks", value.asInstanceOf[js.Any])
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnLinks: Self = this.set("columnLinks", js.undefined)
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def setColumnLinksNull: Self = this.set("columnLinks", null)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setGroup(value: NullableOption[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setGroupNull: Self = StObject.set(x, "group", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setGroup(value: NullableOption[String]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setHiddenNull: Self = StObject.set(x, "hidden", null)
     
     @scala.inline
-    def setGroupNull: Self = this.set("group", null)
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def setHidden(value: NullableOption[Boolean]): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setInheritedFrom(value: NullableOption[ItemReference]): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setInheritedFromNull: Self = StObject.set(x, "inheritedFrom", null)
     
     @scala.inline
-    def setHiddenNull: Self = this.set("hidden", null)
+    def setInheritedFromUndefined: Self = StObject.set(x, "inheritedFrom", js.undefined)
     
     @scala.inline
-    def setInheritedFrom(value: NullableOption[ItemReference]): Self = this.set("inheritedFrom", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInheritedFrom: Self = this.set("inheritedFrom", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setInheritedFromNull: Self = this.set("inheritedFrom", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrder(value: NullableOption[ContentTypeOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOrderNull: Self = StObject.set(x, "order", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setOrder(value: NullableOption[ContentTypeOrder]): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setParentId(value: NullableOption[String]): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setParentIdNull: Self = StObject.set(x, "parentId", null)
     
     @scala.inline
-    def setOrderNull: Self = this.set("order", null)
+    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     @scala.inline
-    def setParentId(value: NullableOption[String]): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    def setReadOnly(value: NullableOption[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentId: Self = this.set("parentId", js.undefined)
+    def setReadOnlyNull: Self = StObject.set(x, "readOnly", null)
     
     @scala.inline
-    def setParentIdNull: Self = this.set("parentId", null)
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def setReadOnly(value: NullableOption[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setSealed(value: NullableOption[Boolean]): Self = StObject.set(x, "sealed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setSealedNull: Self = StObject.set(x, "sealed", null)
     
     @scala.inline
-    def setReadOnlyNull: Self = this.set("readOnly", null)
-    
-    @scala.inline
-    def setSealed(value: NullableOption[Boolean]): Self = this.set("sealed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSealed: Self = this.set("sealed", js.undefined)
-    
-    @scala.inline
-    def setSealedNull: Self = this.set("sealed", null)
+    def setSealedUndefined: Self = StObject.set(x, "sealed", js.undefined)
   }
 }

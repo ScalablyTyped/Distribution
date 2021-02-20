@@ -1,6 +1,7 @@
 package typings.exceljs.mod
 
 import typings.exceljs.exceljsStrings.expression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object ExpressionRuleType {
   }
   
   @scala.inline
-  implicit class ExpressionRuleTypeOps[Self <: ExpressionRuleType] (val x: Self) extends AnyVal {
+  implicit class ExpressionRuleTypeMutableBuilder[Self <: ExpressionRuleType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormulae(value: js.Array[_]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormulaeUndefined: Self = StObject.set(x, "formulae", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormulaeVarargs(value: js.Any*): Self = StObject.set(x, "formulae", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: expression): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormulaeVarargs(value: js.Any*): Self = this.set("formulae", js.Array(value :_*))
-    
-    @scala.inline
-    def setFormulae(value: js.Array[_]): Self = this.set("formulae", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormulae: Self = this.set("formulae", js.undefined)
+    def setType(value: expression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

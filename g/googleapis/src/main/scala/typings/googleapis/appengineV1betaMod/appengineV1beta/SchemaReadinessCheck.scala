@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * removed from traffic rotation.
   */
 @js.native
-trait SchemaReadinessCheck extends js.Object {
+trait SchemaReadinessCheck extends StObject {
   
   /**
     * A maximum time limit on application initialization, measured from moment
@@ -59,60 +60,48 @@ object SchemaReadinessCheck {
   }
   
   @scala.inline
-  implicit class SchemaReadinessCheckOps[Self <: SchemaReadinessCheck] (val x: Self) extends AnyVal {
+  implicit class SchemaReadinessCheckMutableBuilder[Self <: SchemaReadinessCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppStartTimeout(value: String): Self = StObject.set(x, "appStartTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppStartTimeoutUndefined: Self = StObject.set(x, "appStartTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckInterval(value: String): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppStartTimeout(value: String): Self = this.set("appStartTimeout", value.asInstanceOf[js.Any])
+    def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
     
     @scala.inline
-    def deleteAppStartTimeout: Self = this.set("appStartTimeout", js.undefined)
+    def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckInterval(value: String): Self = this.set("checkInterval", value.asInstanceOf[js.Any])
+    def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
     
     @scala.inline
-    def deleteCheckInterval: Self = this.set("checkInterval", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureThreshold(value: Double): Self = this.set("failureThreshold", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteFailureThreshold: Self = this.set("failureThreshold", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessThreshold(value: Double): Self = this.set("successThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessThreshold: Self = this.set("successThreshold", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaProductShipping extends js.Object {
+trait SchemaProductShipping extends StObject {
   
   /**
     * The CLDR territory code of the country to which an item will ship.
@@ -55,60 +56,48 @@ object SchemaProductShipping {
   }
   
   @scala.inline
-  implicit class SchemaProductShippingOps[Self <: SchemaProductShipping] (val x: Self) extends AnyVal {
+  implicit class SchemaProductShippingMutableBuilder[Self <: SchemaProductShipping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationGroupName(value: String): Self = StObject.set(x, "locationGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setLocationGroupNameUndefined: Self = StObject.set(x, "locationGroupName", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationGroupName(value: String): Self = this.set("locationGroupName", value.asInstanceOf[js.Any])
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     @scala.inline
-    def deleteLocationGroupName: Self = this.set("locationGroupName", js.undefined)
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
+    def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
     
     @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    def setPrice(value: SchemaPrice): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
     @scala.inline
-    def deletePostalCode: Self = this.set("postalCode", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: SchemaPrice): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
-    
-    @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

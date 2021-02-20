@@ -1,11 +1,12 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sub extends js.Object {
+trait Sub extends StObject {
   
   /**
     * Objects that, together, make up what should be displayed in the banner.
@@ -27,27 +28,15 @@ object Sub {
   }
   
   @scala.inline
-  implicit class SubOps[Self <: Sub] (val x: Self) extends AnyVal {
+  implicit class SubMutableBuilder[Self <: Sub] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponents(value: js.Array[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentsVarargs(value: Component*): Self = StObject.set(x, "components", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentsVarargs(value: Component*): Self = this.set("components", js.Array(value :_*))
-    
-    @scala.inline
-    def setComponents(value: js.Array[Component]): Self = this.set("components", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

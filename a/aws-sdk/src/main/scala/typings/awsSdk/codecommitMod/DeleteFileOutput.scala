@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteFileOutput extends js.Object {
+trait DeleteFileOutput extends StObject {
   
   /**
     * The blob ID removed from the tree as part of deleting the file.
@@ -36,30 +37,18 @@ object DeleteFileOutput {
   }
   
   @scala.inline
-  implicit class DeleteFileOutputOps[Self <: DeleteFileOutput] (val x: Self) extends AnyVal {
+  implicit class DeleteFileOutputMutableBuilder[Self <: DeleteFileOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlobId(value: ObjectId): Self = this.set("blobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommitId(value: ObjectId): Self = this.set("commitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilePath(value: Path): Self = this.set("filePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreeId(value: ObjectId): Self = this.set("treeId", value.asInstanceOf[js.Any])
+    def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
   }
 }

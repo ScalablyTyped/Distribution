@@ -1,11 +1,12 @@
 package typings.natural.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DamerauLevenshteinDistanceOptions extends js.Object {
+trait DamerauLevenshteinDistanceOptions extends StObject {
   
   /** @default 1 */
   var deletion_cost: js.UndefOr[Double] = js.native
@@ -34,54 +35,42 @@ object DamerauLevenshteinDistanceOptions {
   }
   
   @scala.inline
-  implicit class DamerauLevenshteinDistanceOptionsOps[Self <: DamerauLevenshteinDistanceOptions] (val x: Self) extends AnyVal {
+  implicit class DamerauLevenshteinDistanceOptionsMutableBuilder[Self <: DamerauLevenshteinDistanceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletion_costUndefined: Self = StObject.set(x, "deletion_cost", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertion_cost(value: Double): Self = StObject.set(x, "insertion_cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletion_cost(value: Double): Self = this.set("deletion_cost", value.asInstanceOf[js.Any])
+    def setInsertion_costUndefined: Self = StObject.set(x, "insertion_cost", js.undefined)
     
     @scala.inline
-    def deleteDeletion_cost: Self = this.set("deletion_cost", js.undefined)
+    def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertion_cost(value: Double): Self = this.set("insertion_cost", value.asInstanceOf[js.Any])
+    def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
     
     @scala.inline
-    def deleteInsertion_cost: Self = this.set("insertion_cost", js.undefined)
+    def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestricted(value: Boolean): Self = this.set("restricted", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteRestricted: Self = this.set("restricted", js.undefined)
+    def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: Boolean): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setSubstitution_costUndefined: Self = StObject.set(x, "substitution_cost", js.undefined)
     
     @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
+    def setTransposition_cost(value: Double): Self = StObject.set(x, "transposition_cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubstitution_cost(value: Double): Self = this.set("substitution_cost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubstitution_cost: Self = this.set("substitution_cost", js.undefined)
-    
-    @scala.inline
-    def setTransposition_cost(value: Double): Self = this.set("transposition_cost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransposition_cost: Self = this.set("transposition_cost", js.undefined)
+    def setTransposition_costUndefined: Self = StObject.set(x, "transposition_cost", js.undefined)
   }
 }

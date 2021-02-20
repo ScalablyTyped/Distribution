@@ -1,5 +1,6 @@
 package typings.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`@supports`
   - typings.csstype.csstypeStrings.`@viewport`
 */
-trait AtRules extends js.Object
+trait AtRules extends StObject
 object AtRules {
   
   @scala.inline

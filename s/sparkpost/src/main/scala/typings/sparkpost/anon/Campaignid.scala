@@ -1,11 +1,12 @@
 package typings.sparkpost.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Campaignid extends js.Object {
+trait Campaignid extends StObject {
   
   var campaign_id: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Campaignid {
   }
   
   @scala.inline
-  implicit class CampaignidOps[Self <: Campaignid] (val x: Self) extends AnyVal {
+  implicit class CampaignidMutableBuilder[Self <: Campaignid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaign_idUndefined: Self = StObject.set(x, "campaign_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaign_id(value: String): Self = this.set("campaign_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCampaign_id: Self = this.set("campaign_id", js.undefined)
-    
-    @scala.inline
-    def setTemplate_id(value: String): Self = this.set("template_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate_id: Self = this.set("template_id", js.undefined)
+    def setTemplate_idUndefined: Self = StObject.set(x, "template_id", js.undefined)
   }
 }

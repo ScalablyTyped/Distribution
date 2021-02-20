@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Arguments extends js.Object {
+trait Arguments extends StObject {
   
   var arguments: js.Array[String] = js.native
   
@@ -26,36 +27,24 @@ object Arguments {
   }
   
   @scala.inline
-  implicit class ArgumentsOps[Self <: Arguments] (val x: Self) extends AnyVal {
+  implicit class ArgumentsMutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntrypoint(value: String): Self = StObject.set(x, "entrypoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentsVarargs(value: String*): Self = this.set("arguments", js.Array(value :_*))
+    def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: js.Array[String]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setTty(value: Boolean): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrypoint(value: String): Self = this.set("entrypoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivileged(value: Boolean): Self = this.set("privileged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTty(value: Boolean): Self = this.set("tty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

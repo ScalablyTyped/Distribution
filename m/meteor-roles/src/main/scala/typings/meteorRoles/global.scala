@@ -6,19 +6,25 @@ import typings.meteor.Mongo.Cursor
 import typings.meteor.Subscription
 import typings.meteorRoles.Roles.Role
 import typings.meteorRoles.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   // module
-  @js.native
-  object Meteor extends js.Object {
+  object Meteor {
     
-    var roles: Collection[Role, Role] = js.native
+    @JSGlobal("Meteor")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("Meteor.roles")
+    @js.native
+    def roles: Collection[Role, Role] = js.native
+    @scala.inline
+    def roles_=(x: Collection[Role, Role]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -26,8 +32,11 @@ object global extends js.Object {
     *
     * @module Roles
     */
-  @js.native
-  object Roles extends js.Object {
+  object Roles {
+    
+    @JSGlobal("Roles")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Constant used to reference the special 'global' group that
@@ -46,7 +55,11 @@ object global extends js.Object {
       * @static
       * @final
       */
-    var GLOBAL_GROUP: String = js.native
+    @JSGlobal("Roles.GLOBAL_GROUP")
+    @js.native
+    def GLOBAL_GROUP: String = js.native
+    @scala.inline
+    def GLOBAL_GROUP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GLOBAL_GROUP")(x.asInstanceOf[js.Any])
     
     /**
       * Add users to roles. Will create roles as needed.
@@ -79,17 +92,41 @@ object global extends js.Object {
       *                         Roles.GLOBAL_GROUP group will be automatically
       *                         included in checks for any group.
       */
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: String, roles: String): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: String, roles: String, group: String): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: String, roles: js.Array[String]): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: String, roles: js.Array[String], group: String): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: js.Array[js.Object | String], roles: String): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: js.Object, roles: String): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: js.Object, roles: String, group: String): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
+    @JSGlobal("Roles.addUsersToRoles")
+    @js.native
     def addUsersToRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
     
     /**
@@ -99,6 +136,8 @@ object global extends js.Object {
       * @param {String} role Name of role
       * @return {String} id of new role
       */
+    @JSGlobal("Roles.createRole")
+    @js.native
     def createRole(role: String): String = js.native
     
     /**
@@ -108,6 +147,8 @@ object global extends js.Object {
       * @method deleteRole
       * @param {String} role Name of role
       */
+    @JSGlobal("Roles.deleteRole")
+    @js.native
     def deleteRole(role: String): Unit = js.native
     
     /**
@@ -116,6 +157,8 @@ object global extends js.Object {
       * @method getAllRoles
       * @return {Cursor} cursor of existing roles
       */
+    @JSGlobal("Roles.getAllRoles")
+    @js.native
     def getAllRoles(): Cursor[Role, Role] = js.native
     
     /**
@@ -127,9 +170,17 @@ object global extends js.Object {
       *
       * @return {Array} Array of user's groups, unsorted. Roles.GLOBAL_GROUP will be omitted
       */
+    @JSGlobal("Roles.getGroupsForUser")
+    @js.native
     def getGroupsForUser(user: String): js.Array[String] = js.native
+    @JSGlobal("Roles.getGroupsForUser")
+    @js.native
     def getGroupsForUser(user: String, role: String): js.Array[String] = js.native
+    @JSGlobal("Roles.getGroupsForUser")
+    @js.native
     def getGroupsForUser(user: js.Object): js.Array[String] = js.native
+    @JSGlobal("Roles.getGroupsForUser")
+    @js.native
     def getGroupsForUser(user: js.Object, role: String): js.Array[String] = js.native
     
     /**
@@ -141,9 +192,17 @@ object global extends js.Object {
       *                         User's Roles.GLOBAL_GROUP will also be included.
       * @return {Array} Array of user's roles, unsorted.
       */
+    @JSGlobal("Roles.getRolesForUser")
+    @js.native
     def getRolesForUser(user: String): js.Array[String] = js.native
+    @JSGlobal("Roles.getRolesForUser")
+    @js.native
     def getRolesForUser(user: String, group: String): js.Array[String] = js.native
+    @JSGlobal("Roles.getRolesForUser")
+    @js.native
     def getRolesForUser(user: js.Object): js.Array[String] = js.native
+    @JSGlobal("Roles.getRolesForUser")
+    @js.native
     def getRolesForUser(user: js.Object, group: String): js.Array[String] = js.native
     
     /**
@@ -164,13 +223,29 @@ object global extends js.Object {
       *                           through to `Meteor.users.find(query, options)`
       * @return {Cursor} cursor of users in role
       */
+    @JSGlobal("Roles.getUsersInRole")
+    @js.native
     def getUsersInRole(role: String): Cursor[User, User] = js.native
+    @JSGlobal("Roles.getUsersInRole")
+    @js.native
     def getUsersInRole(role: String, group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User, User] = js.native
+    @JSGlobal("Roles.getUsersInRole")
+    @js.native
     def getUsersInRole(role: String, group: String): Cursor[User, User] = js.native
+    @JSGlobal("Roles.getUsersInRole")
+    @js.native
     def getUsersInRole(role: String, group: String, options: Fields): Cursor[User, User] = js.native
+    @JSGlobal("Roles.getUsersInRole")
+    @js.native
     def getUsersInRole(role: js.Array[String]): Cursor[User, User] = js.native
+    @JSGlobal("Roles.getUsersInRole")
+    @js.native
     def getUsersInRole(role: js.Array[String], group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User, User] = js.native
+    @JSGlobal("Roles.getUsersInRole")
+    @js.native
     def getUsersInRole(role: js.Array[String], group: String): Cursor[User, User] = js.native
+    @JSGlobal("Roles.getUsersInRole")
+    @js.native
     def getUsersInRole(role: js.Array[String], group: String, options: Fields): Cursor[User, User] = js.native
     
     /**
@@ -188,17 +263,41 @@ object global extends js.Object {
       * @param {String} [group] Optional. Group name. If supplied, only that
       *                         group will have roles removed.
       */
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: String): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: String, roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: String, roles: js.Array[String]): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: String, roles: js.Array[String], group: String): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: js.Array[js.Object | String]): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: js.Object): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: js.Object, roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
+    @JSGlobal("Roles.removeUsersFromRoles")
+    @js.native
     def removeUsersFromRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
     
     /**
@@ -225,17 +324,41 @@ object global extends js.Object {
       *                         Roles.GLOBAL_GROUP group will be automatically
       *                         included in checks for any group.
       */
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: String, roles: String): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: String, roles: String, group: String): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: String, roles: js.Array[String]): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: String, roles: js.Array[String], group: String): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: js.Array[js.Object | String], roles: String): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: js.Array[js.Object | String], roles: String, group: String): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: js.Object, roles: String): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: js.Object, roles: String, group: String): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
+    @JSGlobal("Roles.setUserRoles")
+    @js.native
     def setUserRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
     
     /**
@@ -253,7 +376,11 @@ object global extends js.Object {
       * @type Object
       * @for Roles
       */
-    var subscription: Subscription = js.native
+    @JSGlobal("Roles.subscription")
+    @js.native
+    def subscription: Subscription = js.native
+    @scala.inline
+    def subscription_=(x: Subscription): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscription")(x.asInstanceOf[js.Any])
     
     /**
       * Check if user has specified permissions/roles
@@ -284,17 +411,41 @@ object global extends js.Object {
       *                         whether group is specified or not.
       * @return {Boolean} true if user is in _any_ of the target roles
       */
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: String, roles: String): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: String, roles: String, group: String): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: String, roles: js.Array[String]): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: String, roles: js.Array[String], group: String): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: js.Array[js.Object | String], roles: String): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: js.Array[js.Object | String], roles: String, group: String): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String]): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: js.Object, roles: String): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: js.Object, roles: String, group: String): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: js.Object, roles: js.Array[String]): Boolean = js.native
+    @JSGlobal("Roles.userIsInRole")
+    @js.native
     def userIsInRole(user: js.Object, roles: js.Array[String], group: String): Boolean = js.native
   }
 }

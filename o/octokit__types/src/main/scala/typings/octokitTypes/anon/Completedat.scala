@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Completedat extends js.Object {
+trait Completedat extends StObject {
   
   var completed_at: String = js.native
   
@@ -35,36 +36,24 @@ object Completedat {
   }
   
   @scala.inline
-  implicit class CompletedatOps[Self <: Completedat] (val x: Self) extends AnyVal {
+  implicit class CompletedatMutableBuilder[Self <: Completedat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleted_at(value: String): Self = StObject.set(x, "completed_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConclusion(value: String): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted_at(value: String): Self = this.set("completed_at", value.asInstanceOf[js.Any])
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConclusion(value: String): Self = this.set("conclusion", value.asInstanceOf[js.Any])
+    def setStarted_at(value: String): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStarted_at(value: String): Self = this.set("started_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateVocabularyRequest extends js.Object {
+trait UpdateVocabularyRequest extends StObject {
   
   /**
     * The language code of the vocabulary entries.
@@ -36,39 +37,27 @@ object UpdateVocabularyRequest {
   }
   
   @scala.inline
-  implicit class UpdateVocabularyRequestOps[Self <: UpdateVocabularyRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateVocabularyRequestMutableBuilder[Self <: UpdateVocabularyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPhrases(value: Phrases): Self = StObject.set(x, "Phrases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhrasesUndefined: Self = StObject.set(x, "Phrases", js.undefined)
     
     @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    def setPhrasesVarargs(value: Phrase*): Self = StObject.set(x, "Phrases", js.Array(value :_*))
     
     @scala.inline
-    def setVocabularyName(value: VocabularyName): Self = this.set("VocabularyName", value.asInstanceOf[js.Any])
+    def setVocabularyFileUri(value: Uri): Self = StObject.set(x, "VocabularyFileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhrasesVarargs(value: Phrase*): Self = this.set("Phrases", js.Array(value :_*))
+    def setVocabularyFileUriUndefined: Self = StObject.set(x, "VocabularyFileUri", js.undefined)
     
     @scala.inline
-    def setPhrases(value: Phrases): Self = this.set("Phrases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhrases: Self = this.set("Phrases", js.undefined)
-    
-    @scala.inline
-    def setVocabularyFileUri(value: Uri): Self = this.set("VocabularyFileUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVocabularyFileUri: Self = this.set("VocabularyFileUri", js.undefined)
+    def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
   }
 }

@@ -4,14 +4,14 @@ import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/PBR/pbrBaseSimpleMaterial", JSImport.Namespace)
-@js.native
-object pbrBaseSimpleMaterialMod extends js.Object {
+object pbrBaseSimpleMaterialMod {
   
+  @JSImport("babylonjs/Materials/PBR/pbrBaseSimpleMaterial", "PBRBaseSimpleMaterial")
   @js.native
   abstract class PBRBaseSimpleMaterial protected () extends PBRBaseMaterial {
     /**

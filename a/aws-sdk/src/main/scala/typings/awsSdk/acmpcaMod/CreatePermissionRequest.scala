@@ -1,11 +1,12 @@
 package typings.awsSdk.acmpcaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePermissionRequest extends js.Object {
+trait CreatePermissionRequest extends StObject {
   
   /**
     * The actions that the specified AWS service principal can use. These include IssueCertificate, GetCertificate, and ListPermissions.
@@ -36,36 +37,24 @@ object CreatePermissionRequest {
   }
   
   @scala.inline
-  implicit class CreatePermissionRequestOps[Self <: CreatePermissionRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePermissionRequestMutableBuilder[Self <: CreatePermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: ActionType*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: ActionType*): Self = this.set("Actions", js.Array(value :_*))
+    def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: ActionList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    def setSourceAccount(value: AccountId): Self = StObject.set(x, "SourceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrincipal(value: Principal): Self = this.set("Principal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceAccount(value: AccountId): Self = this.set("SourceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceAccount: Self = this.set("SourceAccount", js.undefined)
+    def setSourceAccountUndefined: Self = StObject.set(x, "SourceAccount", js.undefined)
   }
 }

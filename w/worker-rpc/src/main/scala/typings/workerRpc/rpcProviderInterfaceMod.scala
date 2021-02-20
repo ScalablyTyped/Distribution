@@ -2,16 +2,15 @@ package typings.workerRpc
 
 import typings.workerRpc.rpcProviderInterfaceMod.RpcProviderInterface.RpcHandler
 import typings.workerRpc.rpcProviderInterfaceMod.RpcProviderInterface.SignalHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("worker-rpc/lib/RpcProviderInterface", JSImport.Namespace)
-@js.native
-object rpcProviderInterfaceMod extends js.Object {
+object rpcProviderInterfaceMod {
   
   @js.native
-  trait RpcProviderInterface extends js.Object {
+  trait RpcProviderInterface extends StObject {
     
     def deregisterRpcHandler[T, U](id: String, handler: RpcHandler[T, U]): this.type = js.native
     
@@ -35,8 +34,7 @@ object rpcProviderInterfaceMod extends js.Object {
     def signal[T](id: String, payload: T, transfer: js.Array[_]): this.type = js.native
     def signal[T](id: String, payload: js.UndefOr[scala.Nothing], transfer: js.Array[_]): this.type = js.native
   }
-  @js.native
-  object RpcProviderInterface extends js.Object {
+  object RpcProviderInterface {
     
     type RpcHandler[T, U] = js.Function1[/* payload */ js.UndefOr[T], js.Promise[U] | U]
     

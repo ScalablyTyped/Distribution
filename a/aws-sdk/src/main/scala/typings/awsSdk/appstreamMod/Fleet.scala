@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fleet extends js.Object {
+trait Fleet extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the fleet.
@@ -122,126 +123,114 @@ object Fleet {
   }
   
   @scala.inline
-  implicit class FleetOps[Self <: Fleet] (val x: Self) extends AnyVal {
+  implicit class FleetMutableBuilder[Self <: Fleet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputeCapacityStatus(value: ComputeCapacityStatus): Self = StObject.set(x, "ComputeCapacityStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def setComputeCapacityStatus(value: ComputeCapacityStatus): Self = this.set("ComputeCapacityStatus", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDisconnectTimeoutInSeconds(value: Integer): Self = StObject.set(x, "DisconnectTimeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: FleetState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setDisconnectTimeoutInSecondsUndefined: Self = StObject.set(x, "DisconnectTimeoutInSeconds", js.undefined)
     
     @scala.inline
-    def setCreatedTime(value: Timestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDomainJoinInfo(value: DomainJoinInfo): Self = StObject.set(x, "DomainJoinInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDomainJoinInfoUndefined: Self = StObject.set(x, "DomainJoinInfo", js.undefined)
     
     @scala.inline
-    def setDisconnectTimeoutInSeconds(value: Integer): Self = this.set("DisconnectTimeoutInSeconds", value.asInstanceOf[js.Any])
+    def setEnableDefaultInternetAccess(value: BooleanObject): Self = StObject.set(x, "EnableDefaultInternetAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisconnectTimeoutInSeconds: Self = this.set("DisconnectTimeoutInSeconds", js.undefined)
+    def setEnableDefaultInternetAccessUndefined: Self = StObject.set(x, "EnableDefaultInternetAccess", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setFleetErrors(value: FleetErrors): Self = StObject.set(x, "FleetErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setFleetErrorsUndefined: Self = StObject.set(x, "FleetErrors", js.undefined)
     
     @scala.inline
-    def setDomainJoinInfo(value: DomainJoinInfo): Self = this.set("DomainJoinInfo", value.asInstanceOf[js.Any])
+    def setFleetErrorsVarargs(value: FleetError*): Self = StObject.set(x, "FleetErrors", js.Array(value :_*))
     
     @scala.inline
-    def deleteDomainJoinInfo: Self = this.set("DomainJoinInfo", js.undefined)
+    def setFleetType(value: FleetType): Self = StObject.set(x, "FleetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDefaultInternetAccess(value: BooleanObject): Self = this.set("EnableDefaultInternetAccess", value.asInstanceOf[js.Any])
+    def setFleetTypeUndefined: Self = StObject.set(x, "FleetType", js.undefined)
     
     @scala.inline
-    def deleteEnableDefaultInternetAccess: Self = this.set("EnableDefaultInternetAccess", js.undefined)
+    def setIamRoleArn(value: Arn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetErrorsVarargs(value: FleetError*): Self = this.set("FleetErrors", js.Array(value :_*))
+    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
     @scala.inline
-    def setFleetErrors(value: FleetErrors): Self = this.set("FleetErrors", value.asInstanceOf[js.Any])
+    def setIdleDisconnectTimeoutInSeconds(value: Integer): Self = StObject.set(x, "IdleDisconnectTimeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFleetErrors: Self = this.set("FleetErrors", js.undefined)
+    def setIdleDisconnectTimeoutInSecondsUndefined: Self = StObject.set(x, "IdleDisconnectTimeoutInSeconds", js.undefined)
     
     @scala.inline
-    def setFleetType(value: FleetType): Self = this.set("FleetType", value.asInstanceOf[js.Any])
+    def setImageArn(value: Arn): Self = StObject.set(x, "ImageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFleetType: Self = this.set("FleetType", js.undefined)
+    def setImageArnUndefined: Self = StObject.set(x, "ImageArn", js.undefined)
     
     @scala.inline
-    def setIamRoleArn(value: Arn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    def setImageName(value: String): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    def setImageNameUndefined: Self = StObject.set(x, "ImageName", js.undefined)
     
     @scala.inline
-    def setIdleDisconnectTimeoutInSeconds(value: Integer): Self = this.set("IdleDisconnectTimeoutInSeconds", value.asInstanceOf[js.Any])
+    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdleDisconnectTimeoutInSeconds: Self = this.set("IdleDisconnectTimeoutInSeconds", js.undefined)
+    def setMaxUserDurationInSeconds(value: Integer): Self = StObject.set(x, "MaxUserDurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageArn(value: Arn): Self = this.set("ImageArn", value.asInstanceOf[js.Any])
+    def setMaxUserDurationInSecondsUndefined: Self = StObject.set(x, "MaxUserDurationInSeconds", js.undefined)
     
     @scala.inline
-    def deleteImageArn: Self = this.set("ImageArn", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageName(value: String): Self = this.set("ImageName", value.asInstanceOf[js.Any])
+    def setState(value: FleetState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageName: Self = this.set("ImageName", js.undefined)
+    def setStreamView(value: StreamView): Self = StObject.set(x, "StreamView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxUserDurationInSeconds(value: Integer): Self = this.set("MaxUserDurationInSeconds", value.asInstanceOf[js.Any])
+    def setStreamViewUndefined: Self = StObject.set(x, "StreamView", js.undefined)
     
     @scala.inline
-    def deleteMaxUserDurationInSeconds: Self = this.set("MaxUserDurationInSeconds", js.undefined)
+    def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamView(value: StreamView): Self = this.set("StreamView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamView: Self = this.set("StreamView", js.undefined)
-    
-    @scala.inline
-    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

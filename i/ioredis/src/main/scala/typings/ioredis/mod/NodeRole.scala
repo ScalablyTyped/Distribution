@@ -1,5 +1,6 @@
 package typings.ioredis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ioredis.ioredisStrings.slave
   - typings.ioredis.ioredisStrings.all
 */
-trait NodeRole extends js.Object
+trait NodeRole extends StObject
 object NodeRole {
   
   @scala.inline

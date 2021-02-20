@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRecoveryPointLifecycleOutput extends js.Object {
+trait UpdateRecoveryPointLifecycleOutput extends StObject {
   
   /**
     * An ARN that uniquely identifies a backup vault; for example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.
@@ -36,42 +37,30 @@ object UpdateRecoveryPointLifecycleOutput {
   }
   
   @scala.inline
-  implicit class UpdateRecoveryPointLifecycleOutputOps[Self <: UpdateRecoveryPointLifecycleOutput] (val x: Self) extends AnyVal {
+  implicit class UpdateRecoveryPointLifecycleOutputMutableBuilder[Self <: UpdateRecoveryPointLifecycleOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalculatedLifecycle(value: CalculatedLifecycle): Self = StObject.set(x, "CalculatedLifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupVaultArn(value: ARN): Self = this.set("BackupVaultArn", value.asInstanceOf[js.Any])
+    def setCalculatedLifecycleUndefined: Self = StObject.set(x, "CalculatedLifecycle", js.undefined)
     
     @scala.inline
-    def deleteBackupVaultArn: Self = this.set("BackupVaultArn", js.undefined)
+    def setLifecycle(value: Lifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculatedLifecycle(value: CalculatedLifecycle): Self = this.set("CalculatedLifecycle", value.asInstanceOf[js.Any])
+    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
     @scala.inline
-    def deleteCalculatedLifecycle: Self = this.set("CalculatedLifecycle", js.undefined)
+    def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycle(value: Lifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
-    
-    @scala.inline
-    def setRecoveryPointArn(value: ARN): Self = this.set("RecoveryPointArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecoveryPointArn: Self = this.set("RecoveryPointArn", js.undefined)
+    def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
   }
 }

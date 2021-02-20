@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object GatedCheckInTrigger {
   }
   
   @scala.inline
-  implicit class GatedCheckInTriggerOps[Self <: GatedCheckInTrigger] (val x: Self) extends AnyVal {
+  implicit class GatedCheckInTriggerMutableBuilder[Self <: GatedCheckInTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPathFilters(value: js.Array[String]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRunContinuousIntegration(value: Boolean): Self = StObject.set(x, "runContinuousIntegration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathFiltersVarargs(value: String*): Self = this.set("pathFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setPathFilters(value: js.Array[String]): Self = this.set("pathFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunContinuousIntegration(value: Boolean): Self = this.set("runContinuousIntegration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseWorkspaceMappings(value: Boolean): Self = this.set("useWorkspaceMappings", value.asInstanceOf[js.Any])
+    def setUseWorkspaceMappings(value: Boolean): Self = StObject.set(x, "useWorkspaceMappings", value.asInstanceOf[js.Any])
   }
 }

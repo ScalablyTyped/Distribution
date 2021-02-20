@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleIdentityAccesscontextmanagerV1DevicePolicy extends js.Object {
+trait GoogleIdentityAccesscontextmanagerV1DevicePolicy extends StObject {
   
   /** Allowed device management levels, an empty list allows all management levels. */
   var allowedDeviceManagementLevels: js.UndefOr[js.Array[String]] = js.native
@@ -34,63 +35,51 @@ object GoogleIdentityAccesscontextmanagerV1DevicePolicy {
   }
   
   @scala.inline
-  implicit class GoogleIdentityAccesscontextmanagerV1DevicePolicyOps[Self <: GoogleIdentityAccesscontextmanagerV1DevicePolicy] (val x: Self) extends AnyVal {
+  implicit class GoogleIdentityAccesscontextmanagerV1DevicePolicyMutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1DevicePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedDeviceManagementLevels(value: js.Array[String]): Self = StObject.set(x, "allowedDeviceManagementLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedDeviceManagementLevelsUndefined: Self = StObject.set(x, "allowedDeviceManagementLevels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedDeviceManagementLevelsVarargs(value: String*): Self = StObject.set(x, "allowedDeviceManagementLevels", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedDeviceManagementLevelsVarargs(value: String*): Self = this.set("allowedDeviceManagementLevels", js.Array(value :_*))
+    def setAllowedEncryptionStatuses(value: js.Array[String]): Self = StObject.set(x, "allowedEncryptionStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedDeviceManagementLevels(value: js.Array[String]): Self = this.set("allowedDeviceManagementLevels", value.asInstanceOf[js.Any])
+    def setAllowedEncryptionStatusesUndefined: Self = StObject.set(x, "allowedEncryptionStatuses", js.undefined)
     
     @scala.inline
-    def deleteAllowedDeviceManagementLevels: Self = this.set("allowedDeviceManagementLevels", js.undefined)
+    def setAllowedEncryptionStatusesVarargs(value: String*): Self = StObject.set(x, "allowedEncryptionStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedEncryptionStatusesVarargs(value: String*): Self = this.set("allowedEncryptionStatuses", js.Array(value :_*))
+    def setOsConstraints(value: js.Array[GoogleIdentityAccesscontextmanagerV1OsConstraint]): Self = StObject.set(x, "osConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedEncryptionStatuses(value: js.Array[String]): Self = this.set("allowedEncryptionStatuses", value.asInstanceOf[js.Any])
+    def setOsConstraintsUndefined: Self = StObject.set(x, "osConstraints", js.undefined)
     
     @scala.inline
-    def deleteAllowedEncryptionStatuses: Self = this.set("allowedEncryptionStatuses", js.undefined)
+    def setOsConstraintsVarargs(value: GoogleIdentityAccesscontextmanagerV1OsConstraint*): Self = StObject.set(x, "osConstraints", js.Array(value :_*))
     
     @scala.inline
-    def setOsConstraintsVarargs(value: GoogleIdentityAccesscontextmanagerV1OsConstraint*): Self = this.set("osConstraints", js.Array(value :_*))
+    def setRequireAdminApproval(value: Boolean): Self = StObject.set(x, "requireAdminApproval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOsConstraints(value: js.Array[GoogleIdentityAccesscontextmanagerV1OsConstraint]): Self = this.set("osConstraints", value.asInstanceOf[js.Any])
+    def setRequireAdminApprovalUndefined: Self = StObject.set(x, "requireAdminApproval", js.undefined)
     
     @scala.inline
-    def deleteOsConstraints: Self = this.set("osConstraints", js.undefined)
+    def setRequireCorpOwned(value: Boolean): Self = StObject.set(x, "requireCorpOwned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireAdminApproval(value: Boolean): Self = this.set("requireAdminApproval", value.asInstanceOf[js.Any])
+    def setRequireCorpOwnedUndefined: Self = StObject.set(x, "requireCorpOwned", js.undefined)
     
     @scala.inline
-    def deleteRequireAdminApproval: Self = this.set("requireAdminApproval", js.undefined)
+    def setRequireScreenlock(value: Boolean): Self = StObject.set(x, "requireScreenlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireCorpOwned(value: Boolean): Self = this.set("requireCorpOwned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireCorpOwned: Self = this.set("requireCorpOwned", js.undefined)
-    
-    @scala.inline
-    def setRequireScreenlock(value: Boolean): Self = this.set("requireScreenlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireScreenlock: Self = this.set("requireScreenlock", js.undefined)
+    def setRequireScreenlockUndefined: Self = StObject.set(x, "requireScreenlock", js.undefined)
   }
 }

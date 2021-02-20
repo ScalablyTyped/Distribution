@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Core
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a text cue in a TimedMetadataTrack . */
 @js.native
-trait TimedTextCue extends js.Object {
+trait TimedTextCue extends StObject {
   
   /** Gets or sets the TimedTextRegion of the cue, which defines the style of the rendering area for the cue. */
   var cueRegion: TimedTextRegion = js.native
@@ -43,36 +44,24 @@ object TimedTextCue {
   }
   
   @scala.inline
-  implicit class TimedTextCueOps[Self <: TimedTextCue] (val x: Self) extends AnyVal {
+  implicit class TimedTextCueMutableBuilder[Self <: TimedTextCue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCueRegion(value: TimedTextRegion): Self = StObject.set(x, "cueRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCueStyle(value: TimedTextStyle): Self = StObject.set(x, "cueStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCueRegion(value: TimedTextRegion): Self = this.set("cueRegion", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCueStyle(value: TimedTextStyle): Self = this.set("cueStyle", value.asInstanceOf[js.Any])
+    def setLines(value: IVector[TimedTextLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLines(value: IVector[TimedTextLine]): Self = this.set("lines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

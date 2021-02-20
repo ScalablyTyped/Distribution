@@ -1,5 +1,6 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait InkWordLoadOptions extends js.Object {
+trait InkWordLoadOptions extends StObject {
   
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
@@ -57,48 +58,36 @@ object InkWordLoadOptions {
   }
   
   @scala.inline
-  implicit class InkWordLoadOptionsOps[Self <: InkWordLoadOptions] (val x: Self) extends AnyVal {
+  implicit class InkWordLoadOptionsMutableBuilder[Self <: InkWordLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setLanguageId(value: Boolean): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageId(value: Boolean): Self = this.set("languageId", value.asInstanceOf[js.Any])
+    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
     @scala.inline
-    def deleteLanguageId: Self = this.set("languageId", js.undefined)
+    def setWordAlternates(value: Boolean): Self = StObject.set(x, "wordAlternates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraph(value: ParagraphLoadOptions): Self = this.set("paragraph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParagraph: Self = this.set("paragraph", js.undefined)
-    
-    @scala.inline
-    def setWordAlternates(value: Boolean): Self = this.set("wordAlternates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordAlternates: Self = this.set("wordAlternates", js.undefined)
+    def setWordAlternatesUndefined: Self = StObject.set(x, "wordAlternates", js.undefined)
   }
 }

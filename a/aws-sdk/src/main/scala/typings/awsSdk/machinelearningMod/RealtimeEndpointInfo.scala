@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RealtimeEndpointInfo extends js.Object {
+trait RealtimeEndpointInfo extends StObject {
   
   /**
     * The time that the request to create the real-time endpoint for the MLModel was received. The time is expressed in epoch time.
@@ -36,42 +37,30 @@ object RealtimeEndpointInfo {
   }
   
   @scala.inline
-  implicit class RealtimeEndpointInfoOps[Self <: RealtimeEndpointInfo] (val x: Self) extends AnyVal {
+  implicit class RealtimeEndpointInfoMutableBuilder[Self <: RealtimeEndpointInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointStatus(value: RealtimeEndpointStatus): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: EpochTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setEndpointStatusUndefined: Self = StObject.set(x, "EndpointStatus", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setEndpointUrl(value: VipURL): Self = StObject.set(x, "EndpointUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointStatus(value: RealtimeEndpointStatus): Self = this.set("EndpointStatus", value.asInstanceOf[js.Any])
+    def setEndpointUrlUndefined: Self = StObject.set(x, "EndpointUrl", js.undefined)
     
     @scala.inline
-    def deleteEndpointStatus: Self = this.set("EndpointStatus", js.undefined)
+    def setPeakRequestsPerSecond(value: IntegerType): Self = StObject.set(x, "PeakRequestsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointUrl(value: VipURL): Self = this.set("EndpointUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpointUrl: Self = this.set("EndpointUrl", js.undefined)
-    
-    @scala.inline
-    def setPeakRequestsPerSecond(value: IntegerType): Self = this.set("PeakRequestsPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeakRequestsPerSecond: Self = this.set("PeakRequestsPerSecond", js.undefined)
+    def setPeakRequestsPerSecondUndefined: Self = StObject.set(x, "PeakRequestsPerSecond", js.undefined)
   }
 }

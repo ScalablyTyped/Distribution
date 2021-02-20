@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelBrandingSettings extends js.Object {
+trait ChannelBrandingSettings extends StObject {
   
   /** Branding properties for the channel view. */
   var channel: js.UndefOr[ChannelSettings] = js.native
@@ -28,45 +29,33 @@ object ChannelBrandingSettings {
   }
   
   @scala.inline
-  implicit class ChannelBrandingSettingsOps[Self <: ChannelBrandingSettings] (val x: Self) extends AnyVal {
+  implicit class ChannelBrandingSettingsMutableBuilder[Self <: ChannelBrandingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: ChannelSettings): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHints(value: js.Array[PropertyValue]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: ChannelSettings): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
     @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
+    def setHintsVarargs(value: PropertyValue*): Self = StObject.set(x, "hints", js.Array(value :_*))
     
     @scala.inline
-    def setHintsVarargs(value: PropertyValue*): Self = this.set("hints", js.Array(value :_*))
+    def setImage(value: ImageSettings): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHints(value: js.Array[PropertyValue]): Self = this.set("hints", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteHints: Self = this.set("hints", js.undefined)
+    def setWatch(value: WatchSettings): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ImageSettings): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
-    
-    @scala.inline
-    def setWatch(value: WatchSettings): Self = this.set("watch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatch: Self = this.set("watch", js.undefined)
+    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

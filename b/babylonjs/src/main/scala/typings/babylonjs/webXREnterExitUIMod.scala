@@ -8,14 +8,14 @@ import typings.babylonjs.webXRExperienceHelperMod.WebXRExperienceHelper
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/webXREnterExitUI", JSImport.Namespace)
-@js.native
-object webXREnterExitUIMod extends js.Object {
+object webXREnterExitUIMod {
   
+  @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUI")
   @js.native
   /**
     *
@@ -50,8 +50,7 @@ object webXREnterExitUIMod extends js.Object {
     var scene: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object WebXREnterExitUI extends js.Object {
+  object WebXREnterExitUI {
     
     /**
       * Creates UI to allow the user to enter/exit XR mode
@@ -60,11 +59,14 @@ object webXREnterExitUIMod extends js.Object {
       * @param options options to configure the UI
       * @returns the created ui
       */
+    @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUI.CreateAsync")
+    @js.native
     def CreateAsync(scene: Scene, helper: WebXRExperienceHelper, options: WebXREnterExitUIOptions): js.Promise[WebXREnterExitUI] = js.native
   }
   
+  @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUIButton")
   @js.native
-  class WebXREnterExitUIButton protected () extends js.Object {
+  class WebXREnterExitUIButton protected () extends StObject {
     /**
       * Creates a WebXREnterExitUIButton
       * @param element button element
@@ -96,8 +98,9 @@ object webXREnterExitUIMod extends js.Object {
     def update(activeButton: Nullable[WebXREnterExitUIButton]): Unit = js.native
   }
   
+  @JSImport("babylonjs/XR/webXREnterExitUI", "WebXREnterExitUIOptions")
   @js.native
-  class WebXREnterExitUIOptions () extends js.Object {
+  class WebXREnterExitUIOptions () extends StObject {
     
     /**
       * User provided buttons to enable/disable WebXR. The system will provide default if not set

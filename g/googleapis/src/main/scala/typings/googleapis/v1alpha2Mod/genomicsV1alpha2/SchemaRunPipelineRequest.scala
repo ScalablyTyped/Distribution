@@ -1,5 +1,6 @@
 package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specified.
   */
 @js.native
-trait SchemaRunPipelineRequest extends js.Object {
+trait SchemaRunPipelineRequest extends StObject {
   
   /**
     * A new pipeline object to run once and then delete.
@@ -39,36 +40,24 @@ object SchemaRunPipelineRequest {
   }
   
   @scala.inline
-  implicit class SchemaRunPipelineRequestOps[Self <: SchemaRunPipelineRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaRunPipelineRequestMutableBuilder[Self <: SchemaRunPipelineRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEphemeralPipeline(value: SchemaPipeline): Self = StObject.set(x, "ephemeralPipeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEphemeralPipelineUndefined: Self = StObject.set(x, "ephemeralPipeline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipelineArgs(value: SchemaRunPipelineArgs): Self = StObject.set(x, "pipelineArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEphemeralPipeline(value: SchemaPipeline): Self = this.set("ephemeralPipeline", value.asInstanceOf[js.Any])
+    def setPipelineArgsUndefined: Self = StObject.set(x, "pipelineArgs", js.undefined)
     
     @scala.inline
-    def deleteEphemeralPipeline: Self = this.set("ephemeralPipeline", js.undefined)
+    def setPipelineId(value: String): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineArgs(value: SchemaRunPipelineArgs): Self = this.set("pipelineArgs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineArgs: Self = this.set("pipelineArgs", js.undefined)
-    
-    @scala.inline
-    def setPipelineId(value: String): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineId: Self = this.set("pipelineId", js.undefined)
+    def setPipelineIdUndefined: Self = StObject.set(x, "pipelineId", js.undefined)
   }
 }

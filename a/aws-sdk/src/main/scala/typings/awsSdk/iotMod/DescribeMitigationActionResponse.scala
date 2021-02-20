@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMitigationActionResponse extends js.Object {
+trait DescribeMitigationActionResponse extends StObject {
   
   /**
     * The ARN that identifies this migration action.
@@ -56,66 +57,54 @@ object DescribeMitigationActionResponse {
   }
   
   @scala.inline
-  implicit class DescribeMitigationActionResponseOps[Self <: DescribeMitigationActionResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeMitigationActionResponseMutableBuilder[Self <: DescribeMitigationActionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionArn(value: MitigationActionArn): Self = StObject.set(x, "actionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionArnUndefined: Self = StObject.set(x, "actionArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionId(value: MitigationActionId): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionArn(value: MitigationActionArn): Self = this.set("actionArn", value.asInstanceOf[js.Any])
+    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
     @scala.inline
-    def deleteActionArn: Self = this.set("actionArn", js.undefined)
+    def setActionName(value: MitigationActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionId(value: MitigationActionId): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
     @scala.inline
-    def deleteActionId: Self = this.set("actionId", js.undefined)
+    def setActionParams(value: MitigationActionParams): Self = StObject.set(x, "actionParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: MitigationActionName): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    def setActionParamsUndefined: Self = StObject.set(x, "actionParams", js.undefined)
     
     @scala.inline
-    def deleteActionName: Self = this.set("actionName", js.undefined)
+    def setActionType(value: MitigationActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionParams(value: MitigationActionParams): Self = this.set("actionParams", value.asInstanceOf[js.Any])
+    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
     @scala.inline
-    def deleteActionParams: Self = this.set("actionParams", js.undefined)
+    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionType(value: MitigationActionType): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteActionType: Self = this.set("actionType", js.undefined)
+    def setLastModifiedDate(value: Timestamp): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Timestamp): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: Timestamp): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
-    
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigatorYAxisPlotBandsOptions extends js.Object {
+trait NavigatorYAxisPlotBandsOptions extends StObject {
   
   /**
     * (Highstock) Flag to decide if plotBand should be rendered across all
@@ -107,102 +108,90 @@ object NavigatorYAxisPlotBandsOptions {
   }
   
   @scala.inline
-  implicit class NavigatorYAxisPlotBandsOptionsOps[Self <: NavigatorYAxisPlotBandsOptions] (val x: Self) extends AnyVal {
+  implicit class NavigatorYAxisPlotBandsOptionsMutableBuilder[Self <: NavigatorYAxisPlotBandsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcrossPanesUndefined: Self = StObject.set(x, "acrossPanes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcrossPanes(value: Boolean): Self = this.set("acrossPanes", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteAcrossPanes: Self = this.set("acrossPanes", js.undefined)
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: ColorString): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setEvents(value: NavigatorYAxisPlotBandsEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: NavigatorYAxisPlotBandsEventsOptions): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setInnerRadius(value: Double | String): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabel(value: NavigatorYAxisPlotBandsLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerRadius(value: Double | String): Self = this.set("innerRadius", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteInnerRadius: Self = this.set("innerRadius", js.undefined)
+    def setOuterRadius(value: Double | String): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: NavigatorYAxisPlotBandsLabelOptions): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setThickness(value: Double | String): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterRadius(value: Double | String): Self = this.set("outerRadius", value.asInstanceOf[js.Any])
+    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     @scala.inline
-    def deleteOuterRadius: Self = this.set("outerRadius", js.undefined)
+    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThickness(value: Double | String): Self = this.set("thickness", value.asInstanceOf[js.Any])
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteThickness: Self = this.set("thickness", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

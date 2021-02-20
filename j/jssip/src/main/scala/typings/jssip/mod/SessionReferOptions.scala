@@ -1,12 +1,13 @@
 package typings.jssip.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionReferOptions extends js.Object {
+trait SessionReferOptions extends StObject {
   
   var eventHandlers: js.UndefOr[StringDictionary[js.Function1[/* data */ js.Any, Unit]]] = js.native
   
@@ -23,39 +24,27 @@ object SessionReferOptions {
   }
   
   @scala.inline
-  implicit class SessionReferOptionsOps[Self <: SessionReferOptions] (val x: Self) extends AnyVal {
+  implicit class SessionReferOptionsMutableBuilder[Self <: SessionReferOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventHandlers(value: StringDictionary[js.Function1[/* data */ js.Any, Unit]]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventHandlersUndefined: Self = StObject.set(x, "eventHandlers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventHandlers(value: StringDictionary[js.Function1[/* data */ js.Any, Unit]]): Self = this.set("eventHandlers", value.asInstanceOf[js.Any])
+    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
     @scala.inline
-    def deleteEventHandlers: Self = this.set("eventHandlers", js.undefined)
+    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = this.set("extraHeaders", js.Array(value :_*))
+    def setReplaces(value: RTCSession): Self = StObject.set(x, "replaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = this.set("extraHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtraHeaders: Self = this.set("extraHeaders", js.undefined)
-    
-    @scala.inline
-    def setReplaces(value: RTCSession): Self = this.set("replaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaces: Self = this.set("replaces", js.undefined)
+    def setReplacesUndefined: Self = StObject.set(x, "replaces", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * some circumstances) and language setting.
   */
 @js.native
-trait Session extends js.Object {
+trait Session extends StObject {
   
   def getActiveUser(): User = js.native
   
@@ -42,39 +43,27 @@ object Session {
   }
   
   @scala.inline
-  implicit class SessionOps[Self <: Session] (val x: Self) extends AnyVal {
+  implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetActiveUser(value: () => User): Self = StObject.set(x, "getActiveUser", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetActiveUserLocale(value: () => String): Self = StObject.set(x, "getActiveUserLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEffectiveUser(value: () => User): Self = StObject.set(x, "getEffectiveUser", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveUser(value: () => User): Self = this.set("getActiveUser", js.Any.fromFunction0(value))
+    def setGetScriptTimeZone(value: () => String): Self = StObject.set(x, "getScriptTimeZone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveUserLocale(value: () => String): Self = this.set("getActiveUserLocale", js.Any.fromFunction0(value))
+    def setGetTemporaryActiveUserKey(value: () => String): Self = StObject.set(x, "getTemporaryActiveUserKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEffectiveUser(value: () => User): Self = this.set("getEffectiveUser", js.Any.fromFunction0(value))
+    def setGetTimeZone(value: () => String): Self = StObject.set(x, "getTimeZone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScriptTimeZone(value: () => String): Self = this.set("getScriptTimeZone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTemporaryActiveUserKey(value: () => String): Self = this.set("getTemporaryActiveUserKey", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTimeZone(value: () => String): Self = this.set("getTimeZone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUser(value: () => User): Self = this.set("getUser", js.Any.fromFunction0(value))
+    def setGetUser(value: () => User): Self = StObject.set(x, "getUser", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object QuoteHTMLAttributes {
   }
   
   @scala.inline
-  implicit class QuoteHTMLAttributesOps[Self <: QuoteHTMLAttributes[_], T] (val x: Self with QuoteHTMLAttributes[T]) extends AnyVal {
+  implicit class QuoteHTMLAttributesMutableBuilder[Self <: QuoteHTMLAttributes[_], T] (val x: Self with QuoteHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCite(value: String): Self = this.set("cite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCite: Self = this.set("cite", js.undefined)
+    def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
   }
 }

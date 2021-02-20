@@ -1,11 +1,12 @@
 package typings.awsSdk.dataexchangeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevisionEntry extends js.Object {
+trait RevisionEntry extends StObject {
   
   /**
     * The ARN for the revision.
@@ -56,51 +57,39 @@ object RevisionEntry {
   }
   
   @scala.inline
-  implicit class RevisionEntryOps[Self <: RevisionEntry] (val x: Self) extends AnyVal {
+  implicit class RevisionEntryMutableBuilder[Self <: RevisionEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComment(value: stringMin0Max16384): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSetId(value: Id): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    def setFinalized(value: boolean): Self = StObject.set(x, "Finalized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setFinalizedUndefined: Self = StObject.set(x, "Finalized", js.undefined)
     
     @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: stringMin0Max16384): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setSourceId(value: Id): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComment: Self = this.set("Comment", js.undefined)
+    def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
     @scala.inline
-    def setFinalized(value: boolean): Self = this.set("Finalized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalized: Self = this.set("Finalized", js.undefined)
-    
-    @scala.inline
-    def setSourceId(value: Id): Self = this.set("SourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceId: Self = this.set("SourceId", js.undefined)
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

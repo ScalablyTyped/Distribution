@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataPropertyOptions extends js.Object {
+trait DataPropertyOptions extends StObject {
   
   var complexTypeName: js.UndefOr[String] = js.native
   
@@ -44,105 +45,93 @@ object DataPropertyOptions {
   }
   
   @scala.inline
-  implicit class DataPropertyOptionsOps[Self <: DataPropertyOptions] (val x: Self) extends AnyVal {
+  implicit class DataPropertyOptionsMutableBuilder[Self <: DataPropertyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplexTypeName(value: String): Self = StObject.set(x, "complexTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplexTypeNameUndefined: Self = StObject.set(x, "complexTypeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConcurrencyMode(value: String): Self = StObject.set(x, "concurrencyMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplexTypeName(value: String): Self = this.set("complexTypeName", value.asInstanceOf[js.Any])
+    def setConcurrencyModeUndefined: Self = StObject.set(x, "concurrencyMode", js.undefined)
     
     @scala.inline
-    def deleteComplexTypeName: Self = this.set("complexTypeName", js.undefined)
+    def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrencyMode(value: String): Self = this.set("concurrencyMode", value.asInstanceOf[js.Any])
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def deleteConcurrencyMode: Self = this.set("concurrencyMode", js.undefined)
+    def setDataType(value: DataTypeSymbol): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: js.Any): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: DataTypeSymbol): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setIsNullable(value: Boolean): Self = StObject.set(x, "isNullable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIsNullableUndefined: Self = StObject.set(x, "isNullable", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIsPartOfKey(value: Boolean): Self = StObject.set(x, "isPartOfKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNullable(value: Boolean): Self = this.set("isNullable", value.asInstanceOf[js.Any])
+    def setIsPartOfKeyUndefined: Self = StObject.set(x, "isPartOfKey", js.undefined)
     
     @scala.inline
-    def deleteIsNullable: Self = this.set("isNullable", js.undefined)
+    def setIsScalar(value: Boolean): Self = StObject.set(x, "isScalar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPartOfKey(value: Boolean): Self = this.set("isPartOfKey", value.asInstanceOf[js.Any])
+    def setIsScalarUndefined: Self = StObject.set(x, "isScalar", js.undefined)
     
     @scala.inline
-    def deleteIsPartOfKey: Self = this.set("isPartOfKey", js.undefined)
+    def setIsUnmapped(value: Boolean): Self = StObject.set(x, "isUnmapped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsScalar(value: Boolean): Self = this.set("isScalar", value.asInstanceOf[js.Any])
+    def setIsUnmappedUndefined: Self = StObject.set(x, "isUnmapped", js.undefined)
     
     @scala.inline
-    def deleteIsScalar: Self = this.set("isScalar", js.undefined)
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUnmapped(value: Boolean): Self = this.set("isUnmapped", value.asInstanceOf[js.Any])
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def deleteIsUnmapped: Self = this.set("isUnmapped", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def setNameOnServer(value: String): Self = StObject.set(x, "nameOnServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def setNameOnServerUndefined: Self = StObject.set(x, "nameOnServer", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameOnServer(value: String): Self = this.set("nameOnServer", value.asInstanceOf[js.Any])
+    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
     @scala.inline
-    def deleteNameOnServer: Self = this.set("nameOnServer", js.undefined)
-    
-    @scala.inline
-    def setValidatorsVarargs(value: Validator*): Self = this.set("validators", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidators(value: js.Array[Validator]): Self = this.set("validators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidators: Self = this.set("validators", js.undefined)
+    def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientHealthcare.anon.QuotaUserSourceDataset
 import typings.maximMazurokGapiClientHealthcare.anon.Resource
 import typings.maximMazurokGapiClientHealthcare.anon.SourceDataset
 import typings.maximMazurokGapiClientHealthcare.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetsResource extends js.Object {
+trait DatasetsResource extends StObject {
   
   def create(request: CallbackDatasetId, body: Dataset): Request[Operation] = js.native
   /**

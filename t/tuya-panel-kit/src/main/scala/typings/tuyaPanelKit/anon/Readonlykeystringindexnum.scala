@@ -1,13 +1,14 @@
 package typings.tuyaPanelKit.anon
 
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  key :string,   index :number,   routeNames :std.Array<string>,   history :std.Array<unknown> | undefined,   routes :std.Array<std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & {  state :std.Readonly<any> | tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.PartialState<std.Readonly<any>> | undefined}>,   type :string,   stale :false}> */
 @js.native
-trait Readonlykeystringindexnum extends js.Object {
+trait Readonlykeystringindexnum extends StObject {
   
   val history: js.UndefOr[js.Array[_]] = js.native
   
@@ -40,51 +41,39 @@ object Readonlykeystringindexnum {
   }
   
   @scala.inline
-  implicit class ReadonlykeystringindexnumOps[Self <: Readonlykeystringindexnum] (val x: Self) extends AnyVal {
+  implicit class ReadonlykeystringindexnumMutableBuilder[Self <: Readonlykeystringindexnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteNamesVarargs(value: String*): Self = this.set("routeNames", js.Array(value :_*))
+    def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteNames(value: js.Array[String]): Self = this.set("routeNames", value.asInstanceOf[js.Any])
+    def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
     
     @scala.inline
-    def setRoutesVarargs(value: Readonlykeystringnamestri*): Self = this.set("routes", js.Array(value :_*))
+    def setRoutes(value: js.Array[Readonlykeystringnamestri]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutes(value: js.Array[Readonlykeystringnamestri]): Self = this.set("routes", value.asInstanceOf[js.Any])
+    def setRoutesVarargs(value: Readonlykeystringnamestri*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
     @scala.inline
-    def setStale(value: `false`): Self = this.set("stale", value.asInstanceOf[js.Any])
+    def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHistoryVarargs(value: js.Any*): Self = this.set("history", js.Array(value :_*))
-    
-    @scala.inline
-    def setHistory(value: js.Array[_]): Self = this.set("history", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

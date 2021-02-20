@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitParallaxOptions extends js.Object {
+trait UIkitParallaxOptions extends StObject {
   
   var easing: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object UIkitParallaxOptions {
   }
   
   @scala.inline
-  implicit class UIkitParallaxOptionsOps[Self <: UIkitParallaxOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitParallaxOptionsMutableBuilder[Self <: UIkitParallaxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEasing(value: Double): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedia(value: Double | String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: Double): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: Double | String): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setViewport(value: Double): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setViewport(value: Double): Self = this.set("viewport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewport: Self = this.set("viewport", js.undefined)
+    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Col extends js.Object {
+trait Col extends StObject {
   
   var col: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object Col {
   }
   
   @scala.inline
-  implicit class ColOps[Self <: Col] (val x: Self) extends AnyVal {
+  implicit class ColMutableBuilder[Self <: Col] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColUndefined: Self = StObject.set(x, "col", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCol(value: Double): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setColspanUndefined: Self = StObject.set(x, "colspan", js.undefined)
     
     @scala.inline
-    def deleteCol: Self = this.set("col", js.undefined)
+    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColspan(value: Double): Self = this.set("colspan", value.asInstanceOf[js.Any])
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     @scala.inline
-    def deleteColspan: Self = this.set("colspan", js.undefined)
+    def setRowspan(value: Double): Self = StObject.set(x, "rowspan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setRowspanUndefined: Self = StObject.set(x, "rowspan", js.undefined)
     
     @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
+    def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowspan(value: Double): Self = this.set("rowspan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowspan: Self = this.set("rowspan", js.undefined)
-    
-    @scala.inline
-    def setScreen(value: String): Self = this.set("screen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreen: Self = this.set("screen", js.undefined)
+    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
   }
 }

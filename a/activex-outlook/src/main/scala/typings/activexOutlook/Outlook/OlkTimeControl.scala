@@ -4,12 +4,13 @@ import typings.activexStdole.stdole.OLE_COLOR
 import typings.activexStdole.stdole.StdFont
 import typings.activexStdole.stdole.StdPicture
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlkTimeControl extends js.Object {
+trait OlkTimeControl extends StObject {
   
   var AutoSize: Boolean = js.native
   
@@ -86,81 +87,69 @@ object OlkTimeControl {
   }
   
   @scala.inline
-  implicit class OlkTimeControlOps[Self <: OlkTimeControl] (val x: Self) extends AnyVal {
+  implicit class OlkTimeControlMutableBuilder[Self <: OlkTimeControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoWordSelect(value: Boolean): Self = StObject.set(x, "AutoWordSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackColor(value: OLE_COLOR): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSize(value: Boolean): Self = this.set("AutoSize", value.asInstanceOf[js.Any])
+    def setBackStyle(value: OlBackStyle): Self = StObject.set(x, "BackStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWordSelect(value: Boolean): Self = this.set("AutoWordSelect", value.asInstanceOf[js.Any])
+    def setDropDown(value: () => Unit): Self = StObject.set(x, "DropDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBackColor(value: OLE_COLOR): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackStyle(value: OlBackStyle): Self = this.set("BackStyle", value.asInstanceOf[js.Any])
+    def setEnterFieldBehavior(value: OlEnterFieldBehavior): Self = StObject.set(x, "EnterFieldBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropDown(value: () => Unit): Self = this.set("DropDown", js.Any.fromFunction0(value))
+    def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setForeColor(value: OLE_COLOR): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterFieldBehavior(value: OlEnterFieldBehavior): Self = this.set("EnterFieldBehavior", value.asInstanceOf[js.Any])
+    def setHideSelection(value: Boolean): Self = StObject.set(x, "HideSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: StdFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setIntervalTime(value: VarDate): Self = StObject.set(x, "IntervalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeColor(value: OLE_COLOR): Self = this.set("ForeColor", value.asInstanceOf[js.Any])
+    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideSelection(value: Boolean): Self = this.set("HideSelection", value.asInstanceOf[js.Any])
+    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntervalTime(value: VarDate): Self = this.set("IntervalTime", value.asInstanceOf[js.Any])
+    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: Boolean): Self = this.set("Locked", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkTimeControl_typekey(value: OlkTimeControl): Self = StObject.set(x, "Outlook.OlkTimeControl_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseIcon(value: StdPicture): Self = this.set("MouseIcon", value.asInstanceOf[js.Any])
+    def setReferenceTime(value: VarDate): Self = StObject.set(x, "ReferenceTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
+    def setStyle(value: OlTimeStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkTimeControl_typekey(value: OlkTimeControl): Self = this.set("Outlook.OlkTimeControl_typekey", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceTime(value: VarDate): Self = this.set("ReferenceTime", value.asInstanceOf[js.Any])
+    def setTextAlign(value: OlTextAlign): Self = StObject.set(x, "TextAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: OlTimeStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
+    def setTime(value: VarDate): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextAlign(value: OlTextAlign): Self = this.set("TextAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: VarDate): Self = this.set("Time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

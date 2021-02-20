@@ -1,6 +1,7 @@
 package typings.screeps
 
 import typings.screeps.anon.Range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Additionally PathFinder can search for paths through rooms you can't see, although you won't be able to detect any dynamic obstacles like creeps or buildings.
   */
 @js.native
-trait PathFinder extends js.Object {
+trait PathFinder extends StObject {
   
   /**
     * Container for custom navigation cost data.

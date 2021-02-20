@@ -8,16 +8,15 @@ import typings.fastify.utilsMod.RawRequestDefaultExpression
 import typings.fastify.utilsMod.RawServerBase
 import typings.node.Buffer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fastify/types/content-type-parser", JSImport.Namespace)
-@js.native
-object contentTypeParserMod extends js.Object {
+object contentTypeParserMod {
   
   @js.native
-  trait AddContentTypeParser[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */] extends js.Object {
+  trait AddContentTypeParser[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */] extends StObject {
     
     def apply(
       contentType: String,

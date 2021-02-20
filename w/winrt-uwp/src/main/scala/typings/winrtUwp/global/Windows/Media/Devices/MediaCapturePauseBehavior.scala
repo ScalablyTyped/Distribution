@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the behavior when media capture is paused with a call to PauseAsync or PauseRecordAsync . */
 @JSGlobal("Windows.Media.Devices.MediaCapturePauseBehavior")
 @js.native
-object MediaCapturePauseBehavior extends js.Object {
+object MediaCapturePauseBehavior extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Devices.MediaCapturePauseBehavior with Double] = js.native

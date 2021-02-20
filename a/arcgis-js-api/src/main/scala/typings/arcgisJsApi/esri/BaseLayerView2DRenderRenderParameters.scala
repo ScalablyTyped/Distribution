@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.CanvasRenderingContext2D
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,27 +48,15 @@ object BaseLayerView2DRenderRenderParameters {
   }
   
   @scala.inline
-  implicit class BaseLayerView2DRenderRenderParametersOps[Self <: BaseLayerView2DRenderRenderParameters] (val x: Self) extends AnyVal {
+  implicit class BaseLayerView2DRenderRenderParametersMutableBuilder[Self <: BaseLayerView2DRenderRenderParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setState(value: ViewState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContext(value: CanvasRenderingContext2D): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: ViewState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStationary(value: Boolean): Self = this.set("stationary", value.asInstanceOf[js.Any])
+    def setStationary(value: Boolean): Self = StObject.set(x, "stationary", value.asInstanceOf[js.Any])
   }
 }

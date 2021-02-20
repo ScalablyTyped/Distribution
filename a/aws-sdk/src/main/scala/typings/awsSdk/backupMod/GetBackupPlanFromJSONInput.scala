@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBackupPlanFromJSONInput extends js.Object {
+trait GetBackupPlanFromJSONInput extends StObject {
   
   /**
     * A customer-supplied backup plan document in JSON format.
@@ -21,21 +22,9 @@ object GetBackupPlanFromJSONInput {
   }
   
   @scala.inline
-  implicit class GetBackupPlanFromJSONInputOps[Self <: GetBackupPlanFromJSONInput] (val x: Self) extends AnyVal {
+  implicit class GetBackupPlanFromJSONInputMutableBuilder[Self <: GetBackupPlanFromJSONInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackupPlanTemplateJson(value: String): Self = this.set("BackupPlanTemplateJson", value.asInstanceOf[js.Any])
+    def setBackupPlanTemplateJson(value: String): Self = StObject.set(x, "BackupPlanTemplateJson", value.asInstanceOf[js.Any])
   }
 }

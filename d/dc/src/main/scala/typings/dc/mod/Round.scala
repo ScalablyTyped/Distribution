@@ -1,11 +1,12 @@
 package typings.dc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Round extends js.Object {
+trait Round extends StObject {
   
   def ceil(n: Double): Double = js.native
   
@@ -22,27 +23,15 @@ object Round {
   }
   
   @scala.inline
-  implicit class RoundOps[Self <: Round] (val x: Self) extends AnyVal {
+  implicit class RoundMutableBuilder[Self <: Round] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCeil(value: Double => Double): Self = StObject.set(x, "ceil", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloor(value: Double => Double): Self = StObject.set(x, "floor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCeil(value: Double => Double): Self = this.set("ceil", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFloor(value: Double => Double): Self = this.set("floor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRound(value: Double => Double): Self = this.set("round", js.Any.fromFunction1(value))
+    def setRound(value: Double => Double): Self = StObject.set(x, "round", js.Any.fromFunction1(value))
   }
 }

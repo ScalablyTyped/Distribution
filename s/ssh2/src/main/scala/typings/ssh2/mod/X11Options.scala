@@ -1,11 +1,12 @@
 package typings.ssh2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait X11Options extends js.Object {
+trait X11Options extends StObject {
   
   /** The Screen number to use (default: `0`). */
   var screen: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object X11Options {
   }
   
   @scala.inline
-  implicit class X11OptionsOps[Self <: X11Options] (val x: Self) extends AnyVal {
+  implicit class X11OptionsMutableBuilder[Self <: X11Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScreen(value: Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreen(value: Double): Self = this.set("screen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreen: Self = this.set("screen", js.undefined)
-    
-    @scala.inline
-    def setSingle(value: Boolean): Self = this.set("single", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingle: Self = this.set("single", js.undefined)
+    def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
   }
 }

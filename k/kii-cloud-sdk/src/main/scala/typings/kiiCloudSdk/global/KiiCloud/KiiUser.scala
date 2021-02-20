@@ -5,6 +5,7 @@ import typings.kiiCloudSdk.anon.`32`
 import typings.kiiCloudSdk.anon.`37`
 import typings.kiiCloudSdk.anon.`38`
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class KiiUser ()
   extends typings.kiiCloudSdk.KiiCloud.KiiUser
-/* static members */
-@JSGlobal("KiiCloud.KiiUser")
-@js.native
-object KiiUser extends js.Object {
+object KiiUser {
   
   /**
     * Authenticates a user with the server.
@@ -66,7 +64,12 @@ object KiiUser extends js.Object {
     *         }
     *     );
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.authenticate")
+  @js.native
   def authenticate(userIdentifier: String, password: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.authenticate")
+  @js.native
   def authenticate(userIdentifier: String, password: String, callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
   
   /**
@@ -133,9 +136,18 @@ object KiiUser extends js.Object {
     *         }
     *     );
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.authenticateWithToken")
+  @js.native
   def authenticateWithToken(accessToken: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.authenticateWithToken")
+  @js.native
   def authenticateWithToken(accessToken: String, callbacks: js.UndefOr[scala.Nothing], expiresAt: Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.authenticateWithToken")
+  @js.native
   def authenticateWithToken(accessToken: String, callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.authenticateWithToken")
+  @js.native
   def authenticateWithToken(accessToken: String, callbacks: `32`, expiresAt: Date): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
   
   /**
@@ -185,9 +197,18 @@ object KiiUser extends js.Object {
     *             // Handle error here.
     *         });
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.completeResetPassword")
+  @js.native
   def completeResetPassword(userIdentifier: String, pinCode: String): js.Promise[Unit] = js.native
+  @JSGlobal("KiiCloud.KiiUser.completeResetPassword")
+  @js.native
   def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: js.UndefOr[scala.Nothing], callbacks: `19`): js.Promise[Unit] = js.native
+  @JSGlobal("KiiCloud.KiiUser.completeResetPassword")
+  @js.native
   def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: String): js.Promise[Unit] = js.native
+  @JSGlobal("KiiCloud.KiiUser.completeResetPassword")
+  @js.native
   def completeResetPassword(userIdentifier: String, pinCode: String, newPassword: String, callbacks: `19`): js.Promise[Unit] = js.native
   
   /**
@@ -237,7 +258,12 @@ object KiiUser extends js.Object {
     *         }
     *     );
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.findUserByEmail")
+  @js.native
   def findUserByEmail(email: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.findUserByEmail")
+  @js.native
   def findUserByEmail(email: String, callbacks: `38`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
   
   /**
@@ -287,7 +313,12 @@ object KiiUser extends js.Object {
     *         }
     *     );
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.findUserByPhone")
+  @js.native
   def findUserByPhone(phone: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.findUserByPhone")
+  @js.native
   def findUserByPhone(phone: String, callbacks: `38`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
   
   /**
@@ -336,7 +367,12 @@ object KiiUser extends js.Object {
     *         }
     *     );
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.findUserByUsername")
+  @js.native
   def findUserByUsername(username: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.findUserByUsername")
+  @js.native
   def findUserByUsername(username: String, callbacks: `38`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
   
   /**
@@ -345,6 +381,9 @@ object KiiUser extends js.Object {
     * @example
     *         var user = KiiUser.getCurrentUser();
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.getCurrentUser")
+  @js.native
   def getCurrentUser(): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
   
   /**
@@ -353,6 +392,9 @@ object KiiUser extends js.Object {
     * @example
     *         KiiUser.logOut();
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.logOut")
+  @js.native
   def logOut(): Unit = js.native
   
   /**
@@ -363,6 +405,9 @@ object KiiUser extends js.Object {
     *             // do something
     *         }
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.loggedIn")
+  @js.native
   def loggedIn(): Boolean = js.native
   
   /**
@@ -406,9 +451,18 @@ object KiiUser extends js.Object {
     *         }
     *     );
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.registerAsPseudoUser")
+  @js.native
   def registerAsPseudoUser(): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.registerAsPseudoUser")
+  @js.native
   def registerAsPseudoUser(callbacks: js.UndefOr[scala.Nothing], userFields: js.Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.registerAsPseudoUser")
+  @js.native
   def registerAsPseudoUser(callbacks: `32`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @JSGlobal("KiiCloud.KiiUser.registerAsPseudoUser")
+  @js.native
   def registerAsPseudoUser(callbacks: `32`, userFields: js.Any): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
   
   /**
@@ -453,7 +507,12 @@ object KiiUser extends js.Object {
     *         }
     *     );
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.resetPassword")
+  @js.native
   def resetPassword(userIdentifier: String): js.Promise[Unit] = js.native
+  @JSGlobal("KiiCloud.KiiUser.resetPassword")
+  @js.native
   def resetPassword(userIdentifier: String, callbacks: `37`): js.Promise[Unit] = js.native
   
   /**
@@ -507,7 +566,12 @@ object KiiUser extends js.Object {
     *         }
     *     );
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.resetPasswordWithNotificationMethod")
+  @js.native
   def resetPasswordWithNotificationMethod(userIdentifier: String, notificationMethod: String): js.Promise[Unit] = js.native
+  @JSGlobal("KiiCloud.KiiUser.resetPasswordWithNotificationMethod")
+  @js.native
   def resetPasswordWithNotificationMethod(userIdentifier: String, notificationMethod: String, callbacks: `37`): js.Promise[Unit] = js.native
   
   /**
@@ -531,6 +595,9 @@ object KiiUser extends js.Object {
     * @example
     *     var user = KiiUser.userWithCredentials("johndoe@example.com", "+874012345678", "johndoe", "mypassword");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.userWithCredentials")
+  @js.native
   def userWithCredentials(emailAddress: String, phoneNumber: String, username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
   
   /**
@@ -550,6 +617,9 @@ object KiiUser extends js.Object {
     * @example
     *     var user = KiiUser.userWithEmailAddress("johndoe@example.com", "mypassword");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.userWithEmailAddress")
+  @js.native
   def userWithEmailAddress(emailAddress: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
   
   /**
@@ -571,6 +641,9 @@ object KiiUser extends js.Object {
     * @example
     *     var user = KiiUser.userWithEmailAddressAndPhoneNumber("johndoe@example.com", "+874012345678", "mypassword");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.userWithEmailAddressAndPhoneNumber")
+  @js.native
   def userWithEmailAddressAndPhoneNumber(emailAddress: String, phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
   
   /**
@@ -592,6 +665,9 @@ object KiiUser extends js.Object {
     * @example
     *     var user = KiiUser.userWithEmailAddressAndUsername("johndoe@example.com", "johndoe", "mypassword");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.userWithEmailAddressAndUsername")
+  @js.native
   def userWithEmailAddressAndUsername(emailAddress: String, username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
   
   /**
@@ -610,6 +686,9 @@ object KiiUser extends js.Object {
     * @example
     *     var user = new KiiUser.userWithID("__USER_ID__");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.userWithID")
+  @js.native
   def userWithID(userID: String): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
   
   /**
@@ -629,6 +708,9 @@ object KiiUser extends js.Object {
     * @example
     *     var user = KiiUser.userWithPhoneNumber("+874012345678", "mypassword");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.userWithPhoneNumber")
+  @js.native
   def userWithPhoneNumber(phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
   
   /**
@@ -650,6 +732,9 @@ object KiiUser extends js.Object {
     * @example
     *     var user = KiiUser.userWithPhoneNumberAndUsername("+874012345678", "johndoe", "mypassword");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.userWithPhoneNumberAndUsername")
+  @js.native
   def userWithPhoneNumberAndUsername(phoneNumber: String, username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
   
   /**
@@ -664,6 +749,9 @@ object KiiUser extends js.Object {
     * @example
     *     var user = new KiiUser.userWithURI("kiicloud://myuri");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.userWithURI")
+  @js.native
   def userWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
   
   /**
@@ -683,5 +771,8 @@ object KiiUser extends js.Object {
     * @example
     *     var user = KiiUser.userWithUsername("myusername", "mypassword");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUser.userWithUsername")
+  @js.native
   def userWithUsername(username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUser = js.native
 }

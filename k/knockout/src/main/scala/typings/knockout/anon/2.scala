@@ -2,12 +2,13 @@ package typings.knockout.anon
 
 import typings.knockout.mod.MaybeSubscribable
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `2` extends js.Object {
+trait `2` extends StObject {
   
   def update(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[js.Object]]): Unit = js.native
 }
@@ -20,21 +21,9 @@ object `2` {
   }
   
   @scala.inline
-  implicit class `2Ops`[Self <: `2`] (val x: Self) extends AnyVal {
+  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Object]]) => Unit): Self = this.set("update", js.Any.fromFunction2(value))
+    def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Object]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

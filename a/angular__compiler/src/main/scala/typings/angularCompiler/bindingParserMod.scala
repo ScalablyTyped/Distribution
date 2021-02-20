@@ -16,18 +16,16 @@ import typings.angularCompiler.parserMod.Parser
 import typings.angularCompiler.srcParseUtilMod.ParseError
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/template_parser/binding_parser", JSImport.Namespace)
-@js.native
-object bindingParserMod extends js.Object {
+object bindingParserMod {
   
-  def calcPossibleSecurityContexts(registry: ElementSchemaRegistry, selector: String, propName: String, isAttribute: Boolean): js.Array[SecurityContext] = js.native
-  
+  @JSImport("@angular/compiler/src/template_parser/binding_parser", "BindingParser")
   @js.native
-  class BindingParser protected () extends js.Object {
+  class BindingParser protected () extends StObject {
     def this(
       _exprParser: Parser,
       _interpolationConfig: InterpolationConfig,
@@ -318,9 +316,14 @@ object bindingParserMod extends js.Object {
     var pipesByName: (Map[String, CompilePipeSummary]) | Null = js.native
   }
   
+  @JSImport("@angular/compiler/src/template_parser/binding_parser", "PipeCollector")
   @js.native
   class PipeCollector () extends RecursiveAstVisitor {
     
     var pipes: Map[String, BindingPipe] = js.native
   }
+  
+  @JSImport("@angular/compiler/src/template_parser/binding_parser", "calcPossibleSecurityContexts")
+  @js.native
+  def calcPossibleSecurityContexts(registry: ElementSchemaRegistry, selector: String, propName: String, isAttribute: Boolean): js.Array[SecurityContext] = js.native
 }

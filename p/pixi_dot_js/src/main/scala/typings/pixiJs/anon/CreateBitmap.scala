@@ -1,12 +1,13 @@
 package typings.pixiJs.anon
 
 import typings.pixiJs.PIXI.ALPHA_MODES
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBitmap extends js.Object {
+trait CreateBitmap extends StObject {
   
   var alphaMode: js.UndefOr[ALPHA_MODES] = js.native
   
@@ -25,42 +26,30 @@ object CreateBitmap {
   }
   
   @scala.inline
-  implicit class CreateBitmapOps[Self <: CreateBitmap] (val x: Self) extends AnyVal {
+  implicit class CreateBitmapMutableBuilder[Self <: CreateBitmap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphaMode(value: ALPHA_MODES): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaModeUndefined: Self = StObject.set(x, "alphaMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaMode(value: ALPHA_MODES): Self = this.set("alphaMode", value.asInstanceOf[js.Any])
+    def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
     @scala.inline
-    def deleteAlphaMode: Self = this.set("alphaMode", js.undefined)
+    def setCreateBitmap(value: Boolean): Self = StObject.set(x, "createBitmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoLoad(value: Boolean): Self = this.set("autoLoad", value.asInstanceOf[js.Any])
+    def setCreateBitmapUndefined: Self = StObject.set(x, "createBitmap", js.undefined)
     
     @scala.inline
-    def deleteAutoLoad: Self = this.set("autoLoad", js.undefined)
+    def setCrossorigin(value: Boolean): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateBitmap(value: Boolean): Self = this.set("createBitmap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateBitmap: Self = this.set("createBitmap", js.undefined)
-    
-    @scala.inline
-    def setCrossorigin(value: Boolean): Self = this.set("crossorigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrossorigin: Self = this.set("crossorigin", js.undefined)
+    def setCrossoriginUndefined: Self = StObject.set(x, "crossorigin", js.undefined)
   }
 }

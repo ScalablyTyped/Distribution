@@ -2,12 +2,13 @@ package typings.gestalt.mod
 
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpinnerProps extends js.Object {
+trait SpinnerProps extends StObject {
   
   var accessibilityLabel: String = js.native
   
@@ -26,36 +27,24 @@ object SpinnerProps {
   }
   
   @scala.inline
-  implicit class SpinnerPropsOps[Self <: SpinnerProps] (val x: Self) extends AnyVal {
+  implicit class SpinnerPropsMutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelay(value: Boolean): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setSize(value: sm | md): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Boolean): Self = this.set("delay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
-    
-    @scala.inline
-    def setSize(value: sm | md): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

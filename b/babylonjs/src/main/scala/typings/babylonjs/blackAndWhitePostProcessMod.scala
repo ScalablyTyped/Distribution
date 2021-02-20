@@ -6,14 +6,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/blackAndWhitePostProcess", JSImport.Namespace)
-@js.native
-object blackAndWhitePostProcessMod extends js.Object {
+object blackAndWhitePostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/blackAndWhitePostProcess", "BlackAndWhitePostProcess")
   @js.native
   class BlackAndWhitePostProcess protected () extends PostProcess {
     /**
@@ -117,10 +117,11 @@ object blackAndWhitePostProcessMod extends js.Object {
     var degree: Double = js.native
   }
   /* static members */
-  @js.native
-  object BlackAndWhitePostProcess extends js.Object {
+  object BlackAndWhitePostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/blackAndWhitePostProcess", "BlackAndWhitePostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[BlackAndWhitePostProcess] = js.native
   }
 }

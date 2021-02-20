@@ -1,12 +1,13 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
 @js.native
-trait SjclModes extends js.Object {
+trait SjclModes extends StObject {
   
   var cbc: SjclCBCMode = js.native
   
@@ -36,36 +37,24 @@ object SjclModes {
   }
   
   @scala.inline
-  implicit class SjclModesOps[Self <: SjclModes] (val x: Self) extends AnyVal {
+  implicit class SjclModesMutableBuilder[Self <: SjclModes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCbc(value: SjclCBCMode): Self = StObject.set(x, "cbc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCcm(value: SjclCCMMode): Self = StObject.set(x, "ccm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtr(value: SjclCTRMode): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCbc(value: SjclCBCMode): Self = this.set("cbc", value.asInstanceOf[js.Any])
+    def setGcm(value: SjclGCMMode): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcm(value: SjclCCMMode): Self = this.set("ccm", value.asInstanceOf[js.Any])
+    def setOcb2(value: SjclOCB2Mode): Self = StObject.set(x, "ocb2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtr(value: SjclCTRMode): Self = this.set("ctr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGcm(value: SjclGCMMode): Self = this.set("gcm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOcb2(value: SjclOCB2Mode): Self = this.set("ocb2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOcb2progressive(value: SjclOCB2ProgressiveMode): Self = this.set("ocb2progressive", value.asInstanceOf[js.Any])
+    def setOcb2progressive(value: SjclOCB2ProgressiveMode): Self = StObject.set(x, "ocb2progressive", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait FontStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
     * The font-style CSS property specifies whether a font should be styled with a normal, italic,
@@ -29,22 +30,7 @@ object FontStyleProps {
   }
   
   @scala.inline
-  implicit class FontStylePropsOps[Self <: FontStyleProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FontStyleProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFontStyleVarargs(value: (js.Any | Null)*): Self = this.set("fontStyle", js.Array(value :_*))
+  implicit class FontStylePropsMutableBuilder[Self <: FontStyleProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FontStyleProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setFontStyle(
@@ -52,12 +38,15 @@ object FontStyleProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ _, 
           ThemeType
         ]
-    ): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setFontStyleNull: Self = StObject.set(x, "fontStyle", null)
     
     @scala.inline
-    def setFontStyleNull: Self = this.set("fontStyle", null)
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    
+    @scala.inline
+    def setFontStyleVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
   }
 }

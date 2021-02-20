@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.connectionConnectionMod.Connection
 import typings.typeorm.driverDriverMod.Driver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/driver/DriverFactory", JSImport.Namespace)
-@js.native
-object driverDriverFactoryMod extends js.Object {
+object driverDriverFactoryMod {
   
+  @JSImport("typeorm/driver/DriverFactory", "DriverFactory")
   @js.native
-  class DriverFactory () extends js.Object {
+  class DriverFactory () extends StObject {
     
     /**
       * Creates a new driver depend on a given connection's driver type.

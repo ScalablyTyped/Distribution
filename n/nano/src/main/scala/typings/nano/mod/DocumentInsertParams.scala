@@ -1,6 +1,7 @@
 package typings.nano.mod
 
 import typings.nano.nanoStrings.ok
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // http://docs.couchdb.org/en/latest/api/database/common.html#post--db
 // http://docs.couchdb.org/en/latest/api/document/common.html#put--db-docid
 @js.native
-trait DocumentInsertParams extends js.Object {
+trait DocumentInsertParams extends StObject {
   
   // Stores document in batch mode.
   var batch: js.UndefOr[ok] = js.native
@@ -30,36 +31,24 @@ object DocumentInsertParams {
   }
   
   @scala.inline
-  implicit class DocumentInsertParamsOps[Self <: DocumentInsertParams] (val x: Self) extends AnyVal {
+  implicit class DocumentInsertParamsMutableBuilder[Self <: DocumentInsertParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatch(value: ok): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNew_edits(value: Boolean): Self = StObject.set(x, "new_edits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatch(value: ok): Self = this.set("batch", value.asInstanceOf[js.Any])
+    def setNew_editsUndefined: Self = StObject.set(x, "new_edits", js.undefined)
     
     @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
+    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_edits(value: Boolean): Self = this.set("new_edits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNew_edits: Self = this.set("new_edits", js.undefined)
-    
-    @scala.inline
-    def setRev(value: String): Self = this.set("rev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRev: Self = this.set("rev", js.undefined)
+    def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
   }
 }

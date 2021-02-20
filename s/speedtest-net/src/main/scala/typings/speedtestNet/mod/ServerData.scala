@@ -1,11 +1,12 @@
 package typings.speedtestNet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerData extends js.Object {
+trait ServerData extends StObject {
   
   var country: String = js.native
   
@@ -42,51 +43,39 @@ object ServerData {
   }
   
   @scala.inline
-  implicit class ServerDataOps[Self <: ServerData] (val x: Self) extends AnyVal {
+  implicit class ServerDataMutableBuilder[Self <: ServerData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost_functional(value: String): Self = StObject.set(x, "host_functional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setHost_functionalUndefined: Self = StObject.set(x, "host_functional", js.undefined)
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setSponsor(value: String): Self = StObject.set(x, "sponsor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost_functional(value: String): Self = this.set("host_functional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHost_functional: Self = this.set("host_functional", js.undefined)
-    
-    @scala.inline
-    def setSponsor(value: String): Self = this.set("sponsor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSponsor: Self = this.set("sponsor", js.undefined)
+    def setSponsorUndefined: Self = StObject.set(x, "sponsor", js.undefined)
   }
 }

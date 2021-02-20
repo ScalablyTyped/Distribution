@@ -4,12 +4,13 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.Easing
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabContentProps extends js.Object {
+trait TabContentProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.native
   
@@ -48,90 +49,78 @@ object TabContentProps {
   }
   
   @scala.inline
-  implicit class TabContentPropsOps[Self <: TabContentProps] (val x: Self) extends AnyVal {
+  implicit class TabContentPropsMutableBuilder[Self <: TabContentProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    def setAnimationConfig(value: Easing): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setAnimationConfigUndefined: Self = StObject.set(x, "animationConfig", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationConfig(value: Easing): Self = this.set("animationConfig", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteAnimationConfig: Self = this.set("animationConfig", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setOnMove(value: (/* gestureState */ js.Object, /* index */ Double, /* percent */ Double) => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setOnRelease(value: (/* gestureState */ js.Object, /* index */ Double, /* percent */ Double) => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnMove(value: (/* gestureState */ js.Object, /* index */ Double, /* percent */ Double) => Unit): Self = this.set("onMove", js.Any.fromFunction3(value))
+    def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
     
     @scala.inline
-    def deleteOnMove: Self = this.set("onMove", js.undefined)
+    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRelease(value: (/* gestureState */ js.Object, /* index */ Double, /* percent */ Double) => Unit): Self = this.set("onRelease", js.Any.fromFunction3(value))
+    def setPreloadTimeout(value: Double): Self = StObject.set(x, "preloadTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnRelease: Self = this.set("onRelease", js.undefined)
+    def setPreloadTimeoutUndefined: Self = StObject.set(x, "preloadTimeout", js.undefined)
     
     @scala.inline
-    def setPreload(value: Boolean): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
     @scala.inline
-    def deletePreload: Self = this.set("preload", js.undefined)
+    def setRenderPlaceholder(value: (/* activeIndex */ Double, /* child */ ReactNode) => ReactNode): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPreloadTimeout(value: Double): Self = this.set("preloadTimeout", value.asInstanceOf[js.Any])
+    def setRenderPlaceholderUndefined: Self = StObject.set(x, "renderPlaceholder", js.undefined)
     
     @scala.inline
-    def deletePreloadTimeout: Self = this.set("preloadTimeout", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderPlaceholder(value: (/* activeIndex */ Double, /* child */ ReactNode) => ReactNode): Self = this.set("renderPlaceholder", js.Any.fromFunction2(value))
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteRenderPlaceholder: Self = this.set("renderPlaceholder", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setVelocityThreshold(value: Double): Self = StObject.set(x, "velocityThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setStyleNull: Self = this.set("style", null)
-    
-    @scala.inline
-    def setVelocityThreshold(value: Double): Self = this.set("velocityThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocityThreshold: Self = this.set("velocityThreshold", js.undefined)
+    def setVelocityThresholdUndefined: Self = StObject.set(x, "velocityThreshold", js.undefined)
   }
 }

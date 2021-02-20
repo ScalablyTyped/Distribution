@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesGetBucketRequestPaymentInputMod.GetBucket
 import typings.awsSdkClientS3Node.typesGetBucketRequestPaymentOutputMod.GetBucketRequestPaymentOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/GetBucketRequestPaymentCommand", JSImport.Namespace)
-@js.native
-object getBucketRequestPaymentCommandMod extends js.Object {
+object getBucketRequestPaymentCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/GetBucketRequestPaymentCommand", "GetBucketRequestPaymentCommand")
   @js.native
   class GetBucketRequestPaymentCommand protected () extends Command[
           InputTypesUnion, 

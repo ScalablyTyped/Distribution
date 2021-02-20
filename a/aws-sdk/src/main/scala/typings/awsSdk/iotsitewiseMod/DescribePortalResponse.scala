@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePortalResponse extends js.Object {
+trait DescribePortalResponse extends StObject {
   
   /**
     * The ARN of the portal, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:portal/${PortalId} 
@@ -91,69 +92,57 @@ object DescribePortalResponse {
   }
   
   @scala.inline
-  implicit class DescribePortalResponseOps[Self <: DescribePortalResponse] (val x: Self) extends AnyVal {
+  implicit class DescribePortalResponseMutableBuilder[Self <: DescribePortalResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPortalAuthMode(value: AuthMode): Self = StObject.set(x, "portalAuthMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortalAuthModeUndefined: Self = StObject.set(x, "portalAuthMode", js.undefined)
     
     @scala.inline
-    def setPortalArn(value: ARN): Self = this.set("portalArn", value.asInstanceOf[js.Any])
+    def setPortalClientId(value: PortalClientId): Self = StObject.set(x, "portalClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalClientId(value: PortalClientId): Self = this.set("portalClientId", value.asInstanceOf[js.Any])
+    def setPortalContactEmail(value: Email): Self = StObject.set(x, "portalContactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalContactEmail(value: Email): Self = this.set("portalContactEmail", value.asInstanceOf[js.Any])
+    def setPortalCreationDate(value: Timestamp): Self = StObject.set(x, "portalCreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalCreationDate(value: Timestamp): Self = this.set("portalCreationDate", value.asInstanceOf[js.Any])
+    def setPortalDescription(value: Description): Self = StObject.set(x, "portalDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalId(value: ID): Self = this.set("portalId", value.asInstanceOf[js.Any])
+    def setPortalDescriptionUndefined: Self = StObject.set(x, "portalDescription", js.undefined)
     
     @scala.inline
-    def setPortalLastUpdateDate(value: Timestamp): Self = this.set("portalLastUpdateDate", value.asInstanceOf[js.Any])
+    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalName(value: Name): Self = this.set("portalName", value.asInstanceOf[js.Any])
+    def setPortalLastUpdateDate(value: Timestamp): Self = StObject.set(x, "portalLastUpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalStartUrl(value: Url): Self = this.set("portalStartUrl", value.asInstanceOf[js.Any])
+    def setPortalLogoImageLocation(value: ImageLocation): Self = StObject.set(x, "portalLogoImageLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalStatus(value: PortalStatus): Self = this.set("portalStatus", value.asInstanceOf[js.Any])
+    def setPortalLogoImageLocationUndefined: Self = StObject.set(x, "portalLogoImageLocation", js.undefined)
     
     @scala.inline
-    def setPortalAuthMode(value: AuthMode): Self = this.set("portalAuthMode", value.asInstanceOf[js.Any])
+    def setPortalName(value: Name): Self = StObject.set(x, "portalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePortalAuthMode: Self = this.set("portalAuthMode", js.undefined)
+    def setPortalStartUrl(value: Url): Self = StObject.set(x, "portalStartUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalDescription(value: Description): Self = this.set("portalDescription", value.asInstanceOf[js.Any])
+    def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePortalDescription: Self = this.set("portalDescription", js.undefined)
+    def setRoleArn(value: ARN): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalLogoImageLocation(value: ImageLocation): Self = this.set("portalLogoImageLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortalLogoImageLocation: Self = this.set("portalLogoImageLocation", js.undefined)
-    
-    @scala.inline
-    def setRoleArn(value: ARN): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

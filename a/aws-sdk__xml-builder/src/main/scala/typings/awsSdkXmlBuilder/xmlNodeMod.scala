@@ -1,16 +1,16 @@
 package typings.awsSdkXmlBuilder
 
 import typings.awsSdkXmlBuilder.stringableMod.Stringable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/xml-builder/dist/cjs/XmlNode", JSImport.Namespace)
-@js.native
-object xmlNodeMod extends js.Object {
+object xmlNodeMod {
   
+  @JSImport("@aws-sdk/xml-builder/dist/cjs/XmlNode", "XmlNode")
   @js.native
-  class XmlNode protected () extends js.Object {
+  class XmlNode protected () extends StObject {
     def this(name: String) = this()
     def this(name: String, children: js.Array[Stringable]) = this()
     

@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRoomSkillParameterRequest extends js.Object {
+trait PutRoomSkillParameterRequest extends StObject {
   
   /**
     * The ARN of the room associated with the room skill parameter. Required.
@@ -31,30 +32,18 @@ object PutRoomSkillParameterRequest {
   }
   
   @scala.inline
-  implicit class PutRoomSkillParameterRequestOps[Self <: PutRoomSkillParameterRequest] (val x: Self) extends AnyVal {
+  implicit class PutRoomSkillParameterRequestMutableBuilder[Self <: PutRoomSkillParameterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoomSkillParameter(value: RoomSkillParameter): Self = StObject.set(x, "RoomSkillParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoomSkillParameter(value: RoomSkillParameter): Self = this.set("RoomSkillParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkillId(value: SkillId): Self = this.set("SkillId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoomArn(value: Arn): Self = this.set("RoomArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomArn: Self = this.set("RoomArn", js.undefined)
+    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.postal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISubscriptionDefinition[T] extends js.Object {
+trait ISubscriptionDefinition[T] extends StObject {
   
   def callback(data: T, envelope: IEnvelope[T]): Unit = js.native
   @JSName("callback")

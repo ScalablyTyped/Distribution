@@ -1,12 +1,13 @@
 package typings.chartist.mod
 
 import typings.chartist.anon.Max
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IChartAxis extends js.Object {
+trait IChartAxis extends StObject {
   
   var axisLength: Double = js.native
   
@@ -48,51 +49,39 @@ object IChartAxis {
   }
   
   @scala.inline
-  implicit class IChartAxisOps[Self <: IChartAxis] (val x: Self) extends AnyVal {
+  implicit class IChartAxisMutableBuilder[Self <: IChartAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisLength(value: Double): Self = StObject.set(x, "axisLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartRect(value: IChartRect): Self = StObject.set(x, "chartRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCounterUnits(value: IChartUnits): Self = StObject.set(x, "counterUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisLength(value: Double): Self = this.set("axisLength", value.asInstanceOf[js.Any])
+    def setDivisor(value: Double): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartRect(value: IChartRect): Self = this.set("chartRect", value.asInstanceOf[js.Any])
+    def setGridOffset(value: Double): Self = StObject.set(x, "gridOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounterUnits(value: IChartUnits): Self = this.set("counterUnits", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivisor(value: Double): Self = this.set("divisor", value.asInstanceOf[js.Any])
+    def setRange(value: Max): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridOffset(value: Double): Self = this.set("gridOffset", value.asInstanceOf[js.Any])
+    def setStepLength(value: Double): Self = StObject.set(x, "stepLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setTicks(value: js.Array[Double]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Max): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setTicksVarargs(value: Double*): Self = StObject.set(x, "ticks", js.Array(value :_*))
     
     @scala.inline
-    def setStepLength(value: Double): Self = this.set("stepLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicksVarargs(value: Double*): Self = this.set("ticks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTicks(value: js.Array[Double]): Self = this.set("ticks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnits(value: IChartUnits): Self = this.set("units", value.asInstanceOf[js.Any])
+    def setUnits(value: IChartUnits): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
   }
 }

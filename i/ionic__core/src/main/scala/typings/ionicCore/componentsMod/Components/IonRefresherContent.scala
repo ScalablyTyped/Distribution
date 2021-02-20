@@ -2,12 +2,13 @@ package typings.ionicCore.componentsMod.Components
 
 import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonRefresherContent extends js.Object {
+trait IonRefresherContent extends StObject {
   
   /**
     * A static icon or a spinner to display when you begin to pull down. A spinner name can be provided to gradually show tick marks when pulling down on iOS devices.
@@ -38,48 +39,36 @@ object IonRefresherContent {
   }
   
   @scala.inline
-  implicit class IonRefresherContentOps[Self <: IonRefresherContent] (val x: Self) extends AnyVal {
+  implicit class IonRefresherContentMutableBuilder[Self <: IonRefresherContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPullingIcon(value: SpinnerTypes | String): Self = StObject.set(x, "pullingIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPullingIconNull: Self = StObject.set(x, "pullingIcon", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPullingIconUndefined: Self = StObject.set(x, "pullingIcon", js.undefined)
     
     @scala.inline
-    def setPullingIcon(value: SpinnerTypes | String): Self = this.set("pullingIcon", value.asInstanceOf[js.Any])
+    def setPullingText(value: String | IonicSafeString): Self = StObject.set(x, "pullingText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePullingIcon: Self = this.set("pullingIcon", js.undefined)
+    def setPullingTextUndefined: Self = StObject.set(x, "pullingText", js.undefined)
     
     @scala.inline
-    def setPullingIconNull: Self = this.set("pullingIcon", null)
+    def setRefreshingSpinner(value: SpinnerTypes): Self = StObject.set(x, "refreshingSpinner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullingText(value: String | IonicSafeString): Self = this.set("pullingText", value.asInstanceOf[js.Any])
+    def setRefreshingSpinnerNull: Self = StObject.set(x, "refreshingSpinner", null)
     
     @scala.inline
-    def deletePullingText: Self = this.set("pullingText", js.undefined)
+    def setRefreshingSpinnerUndefined: Self = StObject.set(x, "refreshingSpinner", js.undefined)
     
     @scala.inline
-    def setRefreshingSpinner(value: SpinnerTypes): Self = this.set("refreshingSpinner", value.asInstanceOf[js.Any])
+    def setRefreshingText(value: String | IonicSafeString): Self = StObject.set(x, "refreshingText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRefreshingSpinner: Self = this.set("refreshingSpinner", js.undefined)
-    
-    @scala.inline
-    def setRefreshingSpinnerNull: Self = this.set("refreshingSpinner", null)
-    
-    @scala.inline
-    def setRefreshingText(value: String | IonicSafeString): Self = this.set("refreshingText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshingText: Self = this.set("refreshingText", js.undefined)
+    def setRefreshingTextUndefined: Self = StObject.set(x, "refreshingText", js.undefined)
   }
 }

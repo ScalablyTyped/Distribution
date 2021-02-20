@@ -1,12 +1,13 @@
 package typings.jssip.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserAgentSendMessageOptions extends js.Object {
+trait UserAgentSendMessageOptions extends StObject {
   
   var contentType: js.UndefOr[String] = js.native
   
@@ -23,39 +24,27 @@ object UserAgentSendMessageOptions {
   }
   
   @scala.inline
-  implicit class UserAgentSendMessageOptionsOps[Self <: UserAgentSendMessageOptions] (val x: Self) extends AnyVal {
+  implicit class UserAgentSendMessageOptionsMutableBuilder[Self <: UserAgentSendMessageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventHandlers(value: StringDictionary[js.Function1[/* data */ js.Any, Unit]]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setEventHandlersUndefined: Self = StObject.set(x, "eventHandlers", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventHandlers(value: StringDictionary[js.Function1[/* data */ js.Any, Unit]]): Self = this.set("eventHandlers", value.asInstanceOf[js.Any])
+    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
     @scala.inline
-    def deleteEventHandlers: Self = this.set("eventHandlers", js.undefined)
-    
-    @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = this.set("extraHeaders", js.Array(value :_*))
-    
-    @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = this.set("extraHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtraHeaders: Self = this.set("extraHeaders", js.undefined)
+    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
   }
 }

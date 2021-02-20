@@ -6,6 +6,7 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextInputProps
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,144 +108,132 @@ object InputProps {
   }
   
   @scala.inline
-  implicit class InputPropsOps[Self <: InputProps] (val x: Self) extends AnyVal {
+  implicit class InputPropsMutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def setInputComponent(value: ComponentType[_]): Self = this.set("InputComponent", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputComponent: Self = this.set("InputComponent", js.undefined)
+    def setDisabledInputStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "disabledInputStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setDisabledInputStyleNull: Self = StObject.set(x, "disabledInputStyle", null)
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setDisabledInputStyleUndefined: Self = StObject.set(x, "disabledInputStyle", js.undefined)
     
     @scala.inline
-    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def setDisabledInputStyle(value: StyleProp[TextStyle]): Self = this.set("disabledInputStyle", value.asInstanceOf[js.Any])
+    def setErrorProps(value: TextProps): Self = StObject.set(x, "errorProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabledInputStyle: Self = this.set("disabledInputStyle", js.undefined)
+    def setErrorPropsUndefined: Self = StObject.set(x, "errorProps", js.undefined)
     
     @scala.inline
-    def setDisabledInputStyleNull: Self = this.set("disabledInputStyle", null)
+    def setErrorStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "errorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setErrorStyleNull: Self = StObject.set(x, "errorStyle", null)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
     
     @scala.inline
-    def setErrorProps(value: TextProps): Self = this.set("errorProps", value.asInstanceOf[js.Any])
+    def setInputComponent(value: ComponentType[_]): Self = StObject.set(x, "InputComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorProps: Self = this.set("errorProps", js.undefined)
+    def setInputComponentUndefined: Self = StObject.set(x, "InputComponent", js.undefined)
     
     @scala.inline
-    def setErrorStyle(value: StyleProp[TextStyle]): Self = this.set("errorStyle", value.asInstanceOf[js.Any])
+    def setInputContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "inputContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorStyle: Self = this.set("errorStyle", js.undefined)
+    def setInputContainerStyleNull: Self = StObject.set(x, "inputContainerStyle", null)
     
     @scala.inline
-    def setErrorStyleNull: Self = this.set("errorStyle", null)
+    def setInputContainerStyleUndefined: Self = StObject.set(x, "inputContainerStyle", js.undefined)
     
     @scala.inline
-    def setInputContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("inputContainerStyle", value.asInstanceOf[js.Any])
+    def setInputStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputContainerStyle: Self = this.set("inputContainerStyle", js.undefined)
+    def setInputStyleNull: Self = StObject.set(x, "inputStyle", null)
     
     @scala.inline
-    def setInputContainerStyleNull: Self = this.set("inputContainerStyle", null)
+    def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
     
     @scala.inline
-    def setInputStyle(value: StyleProp[TextStyle]): Self = this.set("inputStyle", value.asInstanceOf[js.Any])
+    def setLabel(value: String | ReactElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputStyle: Self = this.set("inputStyle", js.undefined)
+    def setLabelProps(value: TextProps): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputStyleNull: Self = this.set("inputStyle", null)
+    def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
     
     @scala.inline
-    def setLabel(value: String | ReactElement): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
     
     @scala.inline
-    def setLabelProps(value: TextProps): Self = this.set("labelProps", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteLabelProps: Self = this.set("labelProps", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabelStyle(value: StyleProp[TextStyle]): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setLeftIcon(value: IconNode): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setLeftIconContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "leftIconContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyleNull: Self = this.set("labelStyle", null)
+    def setLeftIconContainerStyleNull: Self = StObject.set(x, "leftIconContainerStyle", null)
     
     @scala.inline
-    def setLeftIcon(value: IconNode): Self = this.set("leftIcon", value.asInstanceOf[js.Any])
+    def setLeftIconContainerStyleUndefined: Self = StObject.set(x, "leftIconContainerStyle", js.undefined)
     
     @scala.inline
-    def deleteLeftIcon: Self = this.set("leftIcon", js.undefined)
+    def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
     
     @scala.inline
-    def setLeftIconContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("leftIconContainerStyle", value.asInstanceOf[js.Any])
+    def setRenderErrorMessage(value: Boolean): Self = StObject.set(x, "renderErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeftIconContainerStyle: Self = this.set("leftIconContainerStyle", js.undefined)
+    def setRenderErrorMessageUndefined: Self = StObject.set(x, "renderErrorMessage", js.undefined)
     
     @scala.inline
-    def setLeftIconContainerStyleNull: Self = this.set("leftIconContainerStyle", null)
+    def setRightIcon(value: IconNode): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderErrorMessage(value: Boolean): Self = this.set("renderErrorMessage", value.asInstanceOf[js.Any])
+    def setRightIconContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "rightIconContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderErrorMessage: Self = this.set("renderErrorMessage", js.undefined)
+    def setRightIconContainerStyleNull: Self = StObject.set(x, "rightIconContainerStyle", null)
     
     @scala.inline
-    def setRightIcon(value: IconNode): Self = this.set("rightIcon", value.asInstanceOf[js.Any])
+    def setRightIconContainerStyleUndefined: Self = StObject.set(x, "rightIconContainerStyle", js.undefined)
     
     @scala.inline
-    def deleteRightIcon: Self = this.set("rightIcon", js.undefined)
-    
-    @scala.inline
-    def setRightIconContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("rightIconContainerStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightIconContainerStyle: Self = this.set("rightIconContainerStyle", js.undefined)
-    
-    @scala.inline
-    def setRightIconContainerStyleNull: Self = this.set("rightIconContainerStyle", null)
+    def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
   }
 }

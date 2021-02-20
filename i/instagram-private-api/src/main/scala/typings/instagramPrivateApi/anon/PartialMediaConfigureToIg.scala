@@ -4,13 +4,14 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`3`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<instagram-private-api.instagram-private-api/dist/types/media.configure-to-igtv.options.MediaConfigureToIgtvOptions> */
 @js.native
-trait PartialMediaConfigureToIg extends js.Object {
+trait PartialMediaConfigureToIg extends StObject {
   
   var audio_muted: js.UndefOr[Boolean] = js.native
   
@@ -55,123 +56,111 @@ object PartialMediaConfigureToIg {
   }
   
   @scala.inline
-  implicit class PartialMediaConfigureToIgOps[Self <: PartialMediaConfigureToIg] (val x: Self) extends AnyVal {
+  implicit class PartialMediaConfigureToIgMutableBuilder[Self <: PartialMediaConfigureToIg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio_muted(value: Boolean): Self = StObject.set(x, "audio_muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudio_mutedUndefined: Self = StObject.set(x, "audio_muted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio_muted(value: Boolean): Self = this.set("audio_muted", value.asInstanceOf[js.Any])
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def deleteAudio_muted: Self = this.set("audio_muted", js.undefined)
+    def setClips(value: js.Array[LengthSourcetype]): Self = StObject.set(x, "clips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setClipsUndefined: Self = StObject.set(x, "clips", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setClipsVarargs(value: LengthSourcetype*): Self = StObject.set(x, "clips", js.Array(value :_*))
     
     @scala.inline
-    def setClipsVarargs(value: LengthSourcetype*): Self = this.set("clips", js.Array(value :_*))
+    def setDate_time_original(value: String): Self = StObject.set(x, "date_time_original", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClips(value: js.Array[LengthSourcetype]): Self = this.set("clips", value.asInstanceOf[js.Any])
+    def setDate_time_originalUndefined: Self = StObject.set(x, "date_time_original", js.undefined)
     
     @scala.inline
-    def deleteClips: Self = this.set("clips", js.undefined)
+    def setDevice(value: Androidversion): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate_time_original(value: String): Self = this.set("date_time_original", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def deleteDate_time_original: Self = this.set("date_time_original", js.undefined)
+    def setExtra(value: Sourceheight): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: Androidversion): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setFeed_preview_crop(value: Cropbottom | String): Self = StObject.set(x, "feed_preview_crop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtra(value: Sourceheight): Self = this.set("extra", value.asInstanceOf[js.Any])
+    def setFeed_preview_cropUndefined: Self = StObject.set(x, "feed_preview_crop", js.undefined)
     
     @scala.inline
-    def deleteExtra: Self = this.set("extra", js.undefined)
+    def setFilter_type(value: String): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeed_preview_crop(value: Cropbottom | String): Self = this.set("feed_preview_crop", value.asInstanceOf[js.Any])
+    def setFilter_typeUndefined: Self = StObject.set(x, "filter_type", js.undefined)
     
     @scala.inline
-    def deleteFeed_preview_crop: Self = this.set("feed_preview_crop", js.undefined)
+    def setIgtv_share_preview_to_feed(value: `1` | `0`): Self = StObject.set(x, "igtv_share_preview_to_feed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter_type(value: String): Self = this.set("filter_type", value.asInstanceOf[js.Any])
+    def setIgtv_share_preview_to_feedUndefined: Self = StObject.set(x, "igtv_share_preview_to_feed", js.undefined)
     
     @scala.inline
-    def deleteFilter_type: Self = this.set("filter_type", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgtv_share_preview_to_feed(value: `1` | `0`): Self = this.set("igtv_share_preview_to_feed", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteIgtv_share_preview_to_feed: Self = this.set("igtv_share_preview_to_feed", js.undefined)
+    def setMedia_folder(value: String): Self = StObject.set(x, "media_folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setMedia_folderUndefined: Self = StObject.set(x, "media_folder", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setPoster_frame_index(value: Double): Self = StObject.set(x, "poster_frame_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_folder(value: String): Self = this.set("media_folder", value.asInstanceOf[js.Any])
+    def setPoster_frame_indexUndefined: Self = StObject.set(x, "poster_frame_index", js.undefined)
     
     @scala.inline
-    def deleteMedia_folder: Self = this.set("media_folder", js.undefined)
+    def setRetryContext(value: Numreupload): Self = StObject.set(x, "retryContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoster_frame_index(value: Double): Self = this.set("poster_frame_index", value.asInstanceOf[js.Any])
+    def setRetryContextUndefined: Self = StObject.set(x, "retryContext", js.undefined)
     
     @scala.inline
-    def deletePoster_frame_index: Self = this.set("poster_frame_index", js.undefined)
+    def setSource_type(value: `3` | `4`): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryContext(value: Numreupload): Self = this.set("retryContext", value.asInstanceOf[js.Any])
+    def setSource_typeUndefined: Self = StObject.set(x, "source_type", js.undefined)
     
     @scala.inline
-    def deleteRetryContext: Self = this.set("retryContext", js.undefined)
+    def setTimezone_offset(value: String): Self = StObject.set(x, "timezone_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_type(value: `3` | `4`): Self = this.set("source_type", value.asInstanceOf[js.Any])
+    def setTimezone_offsetUndefined: Self = StObject.set(x, "timezone_offset", js.undefined)
     
     @scala.inline
-    def deleteSource_type: Self = this.set("source_type", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone_offset(value: String): Self = this.set("timezone_offset", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTimezone_offset: Self = this.set("timezone_offset", js.undefined)
+    def setUpload_id(value: String): Self = StObject.set(x, "upload_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUpload_id(value: String): Self = this.set("upload_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpload_id: Self = this.set("upload_id", js.undefined)
+    def setUpload_idUndefined: Self = StObject.set(x, "upload_id", js.undefined)
   }
 }

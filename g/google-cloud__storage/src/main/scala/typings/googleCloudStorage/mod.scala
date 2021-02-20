@@ -6,13 +6,12 @@ import typings.googleCloudStorage.bucketMod.BucketOptions
 import typings.googleCloudStorage.fileMod.FileOptions
 import typings.googleCloudStorage.hmacKeyMod.HmacKeyOptions
 import typings.googleCloudStorage.storageMod.StorageOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@google-cloud/storage", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Create a Bucket object to interact with a Cloud Storage bucket.
@@ -30,6 +29,7 @@ object mod extends js.Object {
     * const storage = new Storage();
     * const bucket = storage.bucket('albums');
     */
+  @JSImport("@google-cloud/storage", "Bucket")
   @js.native
   class Bucket protected ()
     extends typings.googleCloudStorage.bucketMod.Bucket {
@@ -52,6 +52,7 @@ object mod extends js.Object {
     * const storage = new Storage();
     * const channel = storage.channel('id', 'resource-id');
     */
+  @JSImport("@google-cloud/storage", "Channel")
   @js.native
   class Channel protected ()
     extends typings.googleCloudStorage.channelMod.Channel {
@@ -64,6 +65,7 @@ object mod extends js.Object {
     *
     * @class
     */
+  @JSImport("@google-cloud/storage", "File")
   @js.native
   class File protected ()
     extends typings.googleCloudStorage.fileMod.File {
@@ -95,6 +97,7 @@ object mod extends js.Object {
     def this(bucket: typings.googleCloudStorage.bucketMod.Bucket, name: String, options: FileOptions) = this()
   }
   
+  @JSImport("@google-cloud/storage", "HmacKey")
   @js.native
   class HmacKey protected ()
     extends typings.googleCloudStorage.hmacKeyMod.HmacKey {
@@ -140,6 +143,7 @@ object mod extends js.Object {
     * const bucket = storage.bucket('my-bucket');
     * // bucket.iam
     */
+  @JSImport("@google-cloud/storage", "Iam")
   @js.native
   class Iam protected ()
     extends typings.googleCloudStorage.iamMod.Iam {
@@ -166,12 +170,14 @@ object mod extends js.Object {
     *
     * const notification = myBucket.notification('1');
     */
+  @JSImport("@google-cloud/storage", "Notification")
   @js.native
   class Notification protected ()
     extends typings.googleCloudStorage.notificationMod.Notification {
     def this(bucket: typings.googleCloudStorage.bucketMod.Bucket, id: String) = this()
   }
   
+  @JSImport("@google-cloud/storage", "Storage")
   @js.native
   /**
     * @typedef {object} StorageOptions
@@ -222,8 +228,11 @@ object mod extends js.Object {
     def this(options: StorageOptions) = this()
   }
   /* static members */
-  @js.native
-  object Storage extends js.Object {
+  object Storage {
+    
+    @JSImport("@google-cloud/storage", "Storage")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * {@link Bucket} class.
@@ -232,12 +241,23 @@ object mod extends js.Object {
       * @see Bucket
       * @type {Constructor}
       */
-    var Bucket: Instantiable3[
+    @JSImport("@google-cloud/storage", "Storage.Bucket")
+    @js.native
+    def Bucket: Instantiable3[
         /* storage */ typings.googleCloudStorage.storageMod.Storage, 
         /* name */ String, 
         /* options */ js.UndefOr[BucketOptions], 
         typings.googleCloudStorage.bucketMod.Bucket
       ] = js.native
+    @scala.inline
+    def Bucket_=(
+      x: Instantiable3[
+          /* storage */ typings.googleCloudStorage.storageMod.Storage, 
+          /* name */ String, 
+          /* options */ js.UndefOr[BucketOptions], 
+          typings.googleCloudStorage.bucketMod.Bucket
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bucket")(x.asInstanceOf[js.Any])
     
     /**
       * {@link Channel} class.
@@ -246,12 +266,23 @@ object mod extends js.Object {
       * @see Channel
       * @type {Constructor}
       */
-    var Channel: Instantiable3[
+    @JSImport("@google-cloud/storage", "Storage.Channel")
+    @js.native
+    def Channel: Instantiable3[
         /* storage */ typings.googleCloudStorage.storageMod.Storage, 
         /* id */ String, 
         /* resourceId */ String, 
         typings.googleCloudStorage.channelMod.Channel
       ] = js.native
+    @scala.inline
+    def Channel_=(
+      x: Instantiable3[
+          /* storage */ typings.googleCloudStorage.storageMod.Storage, 
+          /* id */ String, 
+          /* resourceId */ String, 
+          typings.googleCloudStorage.channelMod.Channel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Channel")(x.asInstanceOf[js.Any])
     
     /**
       * {@link File} class.
@@ -260,12 +291,23 @@ object mod extends js.Object {
       * @see File
       * @type {Constructor}
       */
-    var File: Instantiable3[
+    @JSImport("@google-cloud/storage", "Storage.File")
+    @js.native
+    def File: Instantiable3[
         /* bucket */ typings.googleCloudStorage.bucketMod.Bucket, 
         /* name */ String, 
         /* options */ js.UndefOr[FileOptions], 
         typings.googleCloudStorage.fileMod.File
       ] = js.native
+    @scala.inline
+    def File_=(
+      x: Instantiable3[
+          /* bucket */ typings.googleCloudStorage.bucketMod.Bucket, 
+          /* name */ String, 
+          /* options */ js.UndefOr[FileOptions], 
+          typings.googleCloudStorage.fileMod.File
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("File")(x.asInstanceOf[js.Any])
     
     /**
       * {@link HmacKey} class.
@@ -274,12 +316,23 @@ object mod extends js.Object {
       * @see HmacKey
       * @type {Constructor}
       */
-    var HmacKey: Instantiable3[
+    @JSImport("@google-cloud/storage", "Storage.HmacKey")
+    @js.native
+    def HmacKey: Instantiable3[
         /* storage */ typings.googleCloudStorage.storageMod.Storage, 
         /* accessId */ String, 
         /* options */ js.UndefOr[HmacKeyOptions], 
         typings.googleCloudStorage.hmacKeyMod.HmacKey
       ] = js.native
+    @scala.inline
+    def HmacKey_=(
+      x: Instantiable3[
+          /* storage */ typings.googleCloudStorage.storageMod.Storage, 
+          /* accessId */ String, 
+          /* options */ js.UndefOr[HmacKeyOptions], 
+          typings.googleCloudStorage.hmacKeyMod.HmacKey
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HmacKey")(x.asInstanceOf[js.Any])
     
     /**
       * Cloud Storage uses access control lists (ACLs) to manage object and
@@ -337,8 +390,16 @@ object mod extends js.Object {
       *   const apiResponse = data[1];
       * });
       */
-    var acl: OWNERROLE = js.native
+    @JSImport("@google-cloud/storage", "Storage.acl")
+    @js.native
+    def acl: OWNERROLE = js.native
+    @scala.inline
+    def acl_=(x: OWNERROLE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("acl")(x.asInstanceOf[js.Any])
     
-    var sanitizeEndpoint: js.Any = js.native
+    @JSImport("@google-cloud/storage", "Storage.sanitizeEndpoint")
+    @js.native
+    def sanitizeEndpoint: js.Any = js.native
+    @scala.inline
+    def sanitizeEndpoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitizeEndpoint")(x.asInstanceOf[js.Any])
   }
 }

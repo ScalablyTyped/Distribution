@@ -2,16 +2,14 @@ package typings.jupyterlabApputils
 
 import typings.std.HTMLElement
 import typings.std.HTMLSelectElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/apputils/lib/styling", JSImport.Namespace)
-@js.native
-object stylingMod extends js.Object {
+object stylingMod {
   
-  @js.native
-  object Styling extends js.Object {
+  object Styling {
     
     /**
       * Style a node and its child elements with the default tag names.
@@ -20,7 +18,11 @@ object stylingMod extends js.Object {
       *
       * @param className - The optional CSS class to add to styled nodes.
       */
+    @JSImport("@jupyterlab/apputils/lib/styling", "Styling.styleNode")
+    @js.native
     def styleNode(node: HTMLElement): Unit = js.native
+    @JSImport("@jupyterlab/apputils/lib/styling", "Styling.styleNode")
+    @js.native
     def styleNode(node: HTMLElement, className: String): Unit = js.native
     
     /**
@@ -32,12 +34,18 @@ object stylingMod extends js.Object {
       *
       * @param className - The optional CSS class to add to styled nodes.
       */
+    @JSImport("@jupyterlab/apputils/lib/styling", "Styling.styleNodeByTag")
+    @js.native
     def styleNodeByTag(node: HTMLElement, tagName: String): Unit = js.native
+    @JSImport("@jupyterlab/apputils/lib/styling", "Styling.styleNodeByTag")
+    @js.native
     def styleNodeByTag(node: HTMLElement, tagName: String, className: String): Unit = js.native
     
     /**
       * Wrap a select node.
       */
+    @JSImport("@jupyterlab/apputils/lib/styling", "Styling.wrapSelect")
+    @js.native
     def wrapSelect(node: HTMLSelectElement): HTMLElement = js.native
   }
 }

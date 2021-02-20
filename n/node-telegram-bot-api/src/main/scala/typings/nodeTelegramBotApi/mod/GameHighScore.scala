@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameHighScore extends js.Object {
+trait GameHighScore extends StObject {
   
   var position: Double = js.native
   
@@ -22,27 +23,15 @@ object GameHighScore {
   }
   
   @scala.inline
-  implicit class GameHighScoreOps[Self <: GameHighScore] (val x: Self) extends AnyVal {
+  implicit class GameHighScoreMutableBuilder[Self <: GameHighScore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

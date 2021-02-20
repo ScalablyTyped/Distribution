@@ -3,6 +3,7 @@ package typings.extjs.Ext.chart
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.data.IModel
 import typings.extjs.Ext.draw.ISprite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,40 +62,28 @@ object ILabel {
   }
   
   @scala.inline
-  implicit class ILabelOps[Self <: ILabel] (val x: Self) extends AnyVal {
+  implicit class ILabelMutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabel(value: js.Any): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
     def setOnCreateLabel(
       value: (/* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String]) => ISprite
-    ): Self = this.set("onCreateLabel", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onCreateLabel", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnCreateLabel: Self = this.set("onCreateLabel", js.undefined)
+    def setOnCreateLabelUndefined: Self = StObject.set(x, "onCreateLabel", js.undefined)
     
     @scala.inline
     def setOnPlaceLabel(
       value: (/* label */ js.UndefOr[ISprite], /* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String], /* animate */ js.UndefOr[Boolean], /* index */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("onPlaceLabel", js.Any.fromFunction7(value))
+    ): Self = StObject.set(x, "onPlaceLabel", js.Any.fromFunction7(value))
     
     @scala.inline
-    def deleteOnPlaceLabel: Self = this.set("onPlaceLabel", js.undefined)
+    def setOnPlaceLabelUndefined: Self = StObject.set(x, "onPlaceLabel", js.undefined)
   }
 }

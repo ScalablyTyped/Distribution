@@ -3,6 +3,7 @@ package typings.cytoscape.mod.Css
 import typings.cytoscape.cytoscapeStrings.`node-position`
 import typings.cytoscape.cytoscapeStrings.intersection
 import typings.cytoscape.mod.EdgeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#style/unbundled-bezier-edges
   */
 @js.native
-trait UnbundledBezierEdges extends js.Object {
+trait UnbundledBezierEdges extends StObject {
   
   /**
     * A series of values that specify for each control point the
@@ -62,36 +63,24 @@ object UnbundledBezierEdges {
   }
   
   @scala.inline
-  implicit class UnbundledBezierEdgesOps[Self <: UnbundledBezierEdges] (val x: Self) extends AnyVal {
+  implicit class UnbundledBezierEdgesMutableBuilder[Self <: UnbundledBezierEdges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setControl-point-distances`(value: PropertyValueEdge[String]): Self = StObject.set(x, "control-point-distances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setControl-point-distancesFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "control-point-distances", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setControl-point-weights`(value: PropertyValueEdge[String]): Self = StObject.set(x, "control-point-weights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setControl-point-distancesFunction1`(value: EdgeSingular => String): Self = this.set("control-point-distances", js.Any.fromFunction1(value))
+    def `setControl-point-weightsFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "control-point-weights", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setControl-point-distances`(value: PropertyValueEdge[String]): Self = this.set("control-point-distances", value.asInstanceOf[js.Any])
+    def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setControl-point-weightsFunction1`(value: EdgeSingular => String): Self = this.set("control-point-weights", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setControl-point-weights`(value: PropertyValueEdge[String]): Self = this.set("control-point-weights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = this.set("edge-distances", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = this.set("edge-distances", value.asInstanceOf[js.Any])
+    def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = StObject.set(x, "edge-distances", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.arangodb.ArangoDB
 
 import typings.arangodb.anon.Increment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionProperties extends js.Object {
+trait CollectionProperties extends StObject {
   
   var indexBuckets: Double = js.native
   
@@ -41,60 +42,48 @@ object CollectionProperties {
   }
   
   @scala.inline
-  implicit class CollectionPropertiesOps[Self <: CollectionProperties] (val x: Self) extends AnyVal {
+  implicit class CollectionPropertiesMutableBuilder[Self <: CollectionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexBuckets(value: Double): Self = StObject.set(x, "indexBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsVolatile(value: Boolean): Self = StObject.set(x, "isVolatile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexBuckets(value: Double): Self = this.set("indexBuckets", value.asInstanceOf[js.Any])
+    def setJournalSize(value: Double): Self = StObject.set(x, "journalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSystem(value: Boolean): Self = this.set("isSystem", value.asInstanceOf[js.Any])
+    def setKeyOptions(value: Increment): Self = StObject.set(x, "keyOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVolatile(value: Boolean): Self = this.set("isVolatile", value.asInstanceOf[js.Any])
+    def setKeyOptionsUndefined: Self = StObject.set(x, "keyOptions", js.undefined)
     
     @scala.inline
-    def setJournalSize(value: Double): Self = this.set("journalSize", value.asInstanceOf[js.Any])
+    def setNumberOfShards(value: Double): Self = StObject.set(x, "numberOfShards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForSync(value: Boolean): Self = this.set("waitForSync", value.asInstanceOf[js.Any])
+    def setNumberOfShardsUndefined: Self = StObject.set(x, "numberOfShards", js.undefined)
     
     @scala.inline
-    def setKeyOptions(value: Increment): Self = this.set("keyOptions", value.asInstanceOf[js.Any])
+    def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyOptions: Self = this.set("keyOptions", js.undefined)
+    def setReplicationFactorUndefined: Self = StObject.set(x, "replicationFactor", js.undefined)
     
     @scala.inline
-    def setNumberOfShards(value: Double): Self = this.set("numberOfShards", value.asInstanceOf[js.Any])
+    def setShardKeys(value: js.Array[String]): Self = StObject.set(x, "shardKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberOfShards: Self = this.set("numberOfShards", js.undefined)
+    def setShardKeysUndefined: Self = StObject.set(x, "shardKeys", js.undefined)
     
     @scala.inline
-    def setReplicationFactor(value: Double): Self = this.set("replicationFactor", value.asInstanceOf[js.Any])
+    def setShardKeysVarargs(value: String*): Self = StObject.set(x, "shardKeys", js.Array(value :_*))
     
     @scala.inline
-    def deleteReplicationFactor: Self = this.set("replicationFactor", js.undefined)
-    
-    @scala.inline
-    def setShardKeysVarargs(value: String*): Self = this.set("shardKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setShardKeys(value: js.Array[String]): Self = this.set("shardKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShardKeys: Self = this.set("shardKeys", js.undefined)
+    def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
   }
 }

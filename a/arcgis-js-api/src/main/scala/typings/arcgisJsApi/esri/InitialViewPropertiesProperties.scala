@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitialViewPropertiesProperties extends js.Object {
+trait InitialViewPropertiesProperties extends StObject {
   
   /**
     * The background color of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
@@ -37,36 +38,24 @@ object InitialViewPropertiesProperties {
   }
   
   @scala.inline
-  implicit class InitialViewPropertiesPropertiesOps[Self <: InitialViewPropertiesProperties] (val x: Self) extends AnyVal {
+  implicit class InitialViewPropertiesPropertiesMutableBuilder[Self <: InitialViewPropertiesProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: ColorBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: ColorBackgroundProperties): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
-    
-    @scala.inline
-    def setViewpoint(value: ViewpointProperties): Self = this.set("viewpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewpoint: Self = this.set("viewpoint", js.undefined)
+    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
   }
 }

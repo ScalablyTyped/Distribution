@@ -1,12 +1,13 @@
 package typings.aliOss.anon
 
 import typings.aliOss.mod.NormalSuccessResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Enable extends js.Object {
+trait Enable extends StObject {
   
   var enable: Boolean = js.native
   
@@ -23,30 +24,18 @@ object Enable {
   }
   
   @scala.inline
-  implicit class EnableOps[Self <: Enable] (val x: Self) extends AnyVal {
+  implicit class EnableMutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefixNull: Self = StObject.set(x, "prefix", null)
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = this.set("res", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefixNull: Self = this.set("prefix", null)
+    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

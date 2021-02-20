@@ -1,5 +1,6 @@
 package typings.chromeApps.chrome.webViewRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template K Second parameter type
   */
 @js.native
-trait EditCookieParams[T, K] extends js.Object {
+trait EditCookieParams[T, K] extends StObject {
   
   /**
     * Filter for cookies that will be modified.
@@ -33,24 +34,12 @@ object EditCookieParams {
   }
   
   @scala.inline
-  implicit class EditCookieParamsOps[Self <: EditCookieParams[_, _], T, K] (val x: Self with (EditCookieParams[T, K])) extends AnyVal {
+  implicit class EditCookieParamsMutableBuilder[Self <: EditCookieParams[_, _], T, K] (val x: Self with (EditCookieParams[T, K])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: T): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilter(value: T): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModification(value: K): Self = this.set("modification", value.asInstanceOf[js.Any])
+    def setModification(value: K): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormItemLayout extends js.Object {
+trait FormItemLayout extends StObject {
   
   var componentHeight: js.UndefOr[Double | String] = js.native
   
@@ -26,48 +27,36 @@ object FormItemLayout {
   }
   
   @scala.inline
-  implicit class FormItemLayoutOps[Self <: FormItemLayout] (val x: Self) extends AnyVal {
+  implicit class FormItemLayoutMutableBuilder[Self <: FormItemLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentHeight(value: Double | String): Self = StObject.set(x, "componentHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentHeightUndefined: Self = StObject.set(x, "componentHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentWidth(value: Double | String): Self = StObject.set(x, "componentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentHeight(value: Double | String): Self = this.set("componentHeight", value.asInstanceOf[js.Any])
+    def setComponentWidthUndefined: Self = StObject.set(x, "componentWidth", js.undefined)
     
     @scala.inline
-    def deleteComponentHeight: Self = this.set("componentHeight", js.undefined)
+    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentWidth(value: Double | String): Self = this.set("componentWidth", value.asInstanceOf[js.Any])
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def deleteComponentWidth: Self = this.set("componentWidth", js.undefined)
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setTitleFontSize(value: Double | String): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
-    
-    @scala.inline
-    def setTitleFontSize(value: Double | String): Self = this.set("titleFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleFontSize: Self = this.set("titleFontSize", js.undefined)
+    def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
   }
 }

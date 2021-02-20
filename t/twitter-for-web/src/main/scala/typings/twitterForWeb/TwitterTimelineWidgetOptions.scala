@@ -14,6 +14,7 @@ import typings.twitterForWeb.twitterForWebStrings.polite
 import typings.twitterForWeb.twitterForWebStrings.right
 import typings.twitterForWeb.twitterForWebStrings.rude
 import typings.twitterForWeb.twitterForWebStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* Inlined twitter-for-web.TwitterTimelineWidgetBaseOptions & {  ariaPolite :'polite' | 'assertive' | 'rude' | undefined,   height :number | undefined,   borderColor :string | undefined,   chrome :string | undefined,   tweetLimit :number | undefined,   showReplies :boolean | undefined} */
 @js.native
-trait TwitterTimelineWidgetOptions extends js.Object {
+trait TwitterTimelineWidgetOptions extends StObject {
   
   /**
     * Float the embedded Tweet to the left or right so that text wraps around it, or align center so it floats in the middle of a paragraph.
@@ -142,141 +143,129 @@ object TwitterTimelineWidgetOptions {
   }
   
   @scala.inline
-  implicit class TwitterTimelineWidgetOptionsOps[Self <: TwitterTimelineWidgetOptions] (val x: Self) extends AnyVal {
+  implicit class TwitterTimelineWidgetOptionsMutableBuilder[Self <: TwitterTimelineWidgetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: js.UndefOr[String] with (js.UndefOr[left | right])): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAriaPolite(value: polite | assertive | rude): Self = StObject.set(x, "ariaPolite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAriaPoliteUndefined: Self = StObject.set(x, "ariaPolite", js.undefined)
     
     @scala.inline
-    def setAlign(value: js.UndefOr[String] with (js.UndefOr[left | right])): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaPolite(value: polite | assertive | rude): Self = this.set("ariaPolite", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteAriaPolite: Self = this.set("ariaPolite", js.undefined)
+    def setCards(value: hidden | visible): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setChrome(value: String): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCards(value: hidden | visible): Self = this.set("cards", value.asInstanceOf[js.Any])
+    def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
     
     @scala.inline
-    def deleteCards: Self = this.set("cards", js.undefined)
+    def setConversation(value: none | all): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChrome(value: String): Self = this.set("chrome", value.asInstanceOf[js.Any])
+    def setConversationUndefined: Self = StObject.set(x, "conversation", js.undefined)
     
     @scala.inline
-    def deleteChrome: Self = this.set("chrome", js.undefined)
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversation(value: none | all): Self = this.set("conversation", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteConversation: Self = this.set("conversation", js.undefined)
+    def setCounturl(value: String): Self = StObject.set(x, "counturl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setCounturlUndefined: Self = StObject.set(x, "counturl", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setDnt(value: Boolean): Self = StObject.set(x, "dnt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounturl(value: String): Self = this.set("counturl", value.asInstanceOf[js.Any])
+    def setDntUndefined: Self = StObject.set(x, "dnt", js.undefined)
     
     @scala.inline
-    def deleteCounturl: Self = this.set("counturl", js.undefined)
+    def setHashtags(value: String): Self = StObject.set(x, "hashtags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnt(value: Boolean): Self = this.set("dnt", value.asInstanceOf[js.Any])
+    def setHashtagsUndefined: Self = StObject.set(x, "hashtags", js.undefined)
     
     @scala.inline
-    def deleteDnt: Self = this.set("dnt", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashtags(value: String): Self = this.set("hashtags", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHashtags: Self = this.set("hashtags", js.undefined)
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLinkColor(value: String): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setLinkColorUndefined: Self = StObject.set(x, "linkColor", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setRelated(value: String): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkColor(value: String): Self = this.set("linkColor", value.asInstanceOf[js.Any])
+    def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
     
     @scala.inline
-    def deleteLinkColor: Self = this.set("linkColor", js.undefined)
+    def setShowReplies(value: Boolean): Self = StObject.set(x, "showReplies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelated(value: String): Self = this.set("related", value.asInstanceOf[js.Any])
+    def setShowRepliesUndefined: Self = StObject.set(x, "showReplies", js.undefined)
     
     @scala.inline
-    def deleteRelated: Self = this.set("related", js.undefined)
+    def setSize(value: medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowReplies(value: Boolean): Self = this.set("showReplies", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteShowReplies: Self = this.set("showReplies", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: medium | large): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTweetLimit(value: Double): Self = StObject.set(x, "tweetLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: dark | light): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTweetLimitUndefined: Self = StObject.set(x, "tweetLimit", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setVia(value: String): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTweetLimit(value: Double): Self = this.set("tweetLimit", value.asInstanceOf[js.Any])
+    def setViaUndefined: Self = StObject.set(x, "via", js.undefined)
     
     @scala.inline
-    def deleteTweetLimit: Self = this.set("tweetLimit", js.undefined)
+    def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVia(value: String): Self = this.set("via", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVia: Self = this.set("via", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | auto): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

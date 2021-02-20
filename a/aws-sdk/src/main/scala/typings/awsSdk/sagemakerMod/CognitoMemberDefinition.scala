@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CognitoMemberDefinition extends js.Object {
+trait CognitoMemberDefinition extends StObject {
   
   /**
     * An identifier for an application client. You must create the app client ID using Amazon Cognito.
@@ -31,27 +32,15 @@ object CognitoMemberDefinition {
   }
   
   @scala.inline
-  implicit class CognitoMemberDefinitionOps[Self <: CognitoMemberDefinition] (val x: Self) extends AnyVal {
+  implicit class CognitoMemberDefinitionMutableBuilder[Self <: CognitoMemberDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUserGroup(value: CognitoUserGroup): Self = StObject.set(x, "UserGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClientId(value: ClientId): Self = this.set("ClientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserGroup(value: CognitoUserGroup): Self = this.set("UserGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserPool(value: CognitoUserPool): Self = this.set("UserPool", value.asInstanceOf[js.Any])
+    def setUserPool(value: CognitoUserPool): Self = StObject.set(x, "UserPool", value.asInstanceOf[js.Any])
   }
 }

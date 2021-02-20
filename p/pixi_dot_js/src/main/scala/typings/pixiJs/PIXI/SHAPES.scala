@@ -1,11 +1,12 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SHAPES extends js.Object
+sealed trait SHAPES extends StObject
 /**
   * Constants that identify shapes, mainly to prevent `instanceof` calls.
   *
@@ -23,7 +24,7 @@ sealed trait SHAPES extends js.Object
   */
 @JSGlobal("PIXI.SHAPES")
 @js.native
-object SHAPES extends js.Object {
+object SHAPES extends StObject {
   
   @js.native
   sealed trait CIRC extends SHAPES

@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBulkDeploymentStatusResponse extends js.Object {
+trait GetBulkDeploymentStatusResponse extends StObject {
   
   /**
     * Relevant metrics on input records processed during bulk deployment.
@@ -46,57 +47,45 @@ object GetBulkDeploymentStatusResponse {
   }
   
   @scala.inline
-  implicit class GetBulkDeploymentStatusResponseOps[Self <: GetBulkDeploymentStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetBulkDeploymentStatusResponseMutableBuilder[Self <: GetBulkDeploymentStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkDeploymentMetrics(value: BulkDeploymentMetrics): Self = StObject.set(x, "BulkDeploymentMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkDeploymentMetricsUndefined: Self = StObject.set(x, "BulkDeploymentMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBulkDeploymentStatus(value: BulkDeploymentStatus): Self = StObject.set(x, "BulkDeploymentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkDeploymentMetrics(value: BulkDeploymentMetrics): Self = this.set("BulkDeploymentMetrics", value.asInstanceOf[js.Any])
+    def setBulkDeploymentStatusUndefined: Self = StObject.set(x, "BulkDeploymentStatus", js.undefined)
     
     @scala.inline
-    def deleteBulkDeploymentMetrics: Self = this.set("BulkDeploymentMetrics", js.undefined)
+    def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkDeploymentStatus(value: BulkDeploymentStatus): Self = this.set("BulkDeploymentStatus", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteBulkDeploymentStatus: Self = this.set("BulkDeploymentStatus", js.undefined)
+    def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: string): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setErrorDetailsVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetails", js.Array(value :_*))
     
     @scala.inline
-    def setErrorDetailsVarargs(value: ErrorDetail*): Self = this.set("ErrorDetails", js.Array(value :_*))
+    def setErrorMessage(value: string): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: ErrorDetails): Self = this.set("ErrorDetails", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("ErrorDetails", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: string): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

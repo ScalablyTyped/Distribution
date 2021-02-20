@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   */
 @js.native
-trait GradientCondition extends js.Object {
+trait GradientCondition extends StObject {
   
   def getMaxColor(): String = js.native
   
@@ -66,45 +67,33 @@ object GradientCondition {
   }
   
   @scala.inline
-  implicit class GradientConditionOps[Self <: GradientCondition] (val x: Self) extends AnyVal {
+  implicit class GradientConditionMutableBuilder[Self <: GradientCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMaxColor(value: () => String): Self = StObject.set(x, "getMaxColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMaxType(value: () => InterpolationType | Null): Self = StObject.set(x, "getMaxType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMaxValue(value: () => String): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxColor(value: () => String): Self = this.set("getMaxColor", js.Any.fromFunction0(value))
+    def setGetMidColor(value: () => String): Self = StObject.set(x, "getMidColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxType(value: () => InterpolationType | Null): Self = this.set("getMaxType", js.Any.fromFunction0(value))
+    def setGetMidType(value: () => InterpolationType | Null): Self = StObject.set(x, "getMidType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxValue(value: () => String): Self = this.set("getMaxValue", js.Any.fromFunction0(value))
+    def setGetMidValue(value: () => String): Self = StObject.set(x, "getMidValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMidColor(value: () => String): Self = this.set("getMidColor", js.Any.fromFunction0(value))
+    def setGetMinColor(value: () => String): Self = StObject.set(x, "getMinColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMidType(value: () => InterpolationType | Null): Self = this.set("getMidType", js.Any.fromFunction0(value))
+    def setGetMinType(value: () => InterpolationType | Null): Self = StObject.set(x, "getMinType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMidValue(value: () => String): Self = this.set("getMidValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMinColor(value: () => String): Self = this.set("getMinColor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMinType(value: () => InterpolationType | Null): Self = this.set("getMinType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMinValue(value: () => String): Self = this.set("getMinValue", js.Any.fromFunction0(value))
+    def setGetMinValue(value: () => String): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
   }
 }

@@ -1,13 +1,14 @@
 package typings.aframe.mod
 
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Event & {  detail :D,   target :std.EventTarget & aframe.aframe.Entity<aframe.aframe.ObjectMap<aframe.aframe.Component<any, aframe.aframe.System<any>>>>} */
 @js.native
-trait DetailEvent[D] extends js.Object {
+trait DetailEvent[D] extends StObject {
   
   val AT_TARGET: Double = js.native
   

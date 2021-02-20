@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTestCasesInput extends js.Object {
+trait DescribeTestCasesInput extends StObject {
   
   /**
     *  A TestCaseFilter object used to filter the returned reports. 
@@ -36,39 +37,27 @@ object DescribeTestCasesInput {
   }
   
   @scala.inline
-  implicit class DescribeTestCasesInputOps[Self <: DescribeTestCasesInput] (val x: Self) extends AnyVal {
+  implicit class DescribeTestCasesInputMutableBuilder[Self <: DescribeTestCasesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: TestCaseFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportArn(value: String): Self = this.set("reportArn", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setFilter(value: TestCaseFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: PageSize): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setReportArn(value: String): Self = StObject.set(x, "reportArn", value.asInstanceOf[js.Any])
   }
 }

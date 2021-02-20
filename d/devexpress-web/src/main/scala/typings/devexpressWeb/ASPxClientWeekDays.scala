@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains days and groups of days for use in recurrence patterns.
   */
 @js.native
-trait ASPxClientWeekDays extends js.Object {
+trait ASPxClientWeekDays extends StObject {
   
   /**
     * Specifies every day of the week.
@@ -80,48 +81,36 @@ object ASPxClientWeekDays {
   }
   
   @scala.inline
-  implicit class ASPxClientWeekDaysOps[Self <: ASPxClientWeekDays] (val x: Self) extends AnyVal {
+  implicit class ASPxClientWeekDaysMutableBuilder[Self <: ASPxClientWeekDays] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEveryDay(value: Double): Self = StObject.set(x, "EveryDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFriday(value: Double): Self = StObject.set(x, "Friday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonday(value: Double): Self = StObject.set(x, "Monday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEveryDay(value: Double): Self = this.set("EveryDay", value.asInstanceOf[js.Any])
+    def setSaturday(value: Double): Self = StObject.set(x, "Saturday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriday(value: Double): Self = this.set("Friday", value.asInstanceOf[js.Any])
+    def setSunday(value: Double): Self = StObject.set(x, "Sunday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonday(value: Double): Self = this.set("Monday", value.asInstanceOf[js.Any])
+    def setThursday(value: Double): Self = StObject.set(x, "Thursday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturday(value: Double): Self = this.set("Saturday", value.asInstanceOf[js.Any])
+    def setTuesday(value: Double): Self = StObject.set(x, "Tuesday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSunday(value: Double): Self = this.set("Sunday", value.asInstanceOf[js.Any])
+    def setWednesday(value: Double): Self = StObject.set(x, "Wednesday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThursday(value: Double): Self = this.set("Thursday", value.asInstanceOf[js.Any])
+    def setWeekendDays(value: Double): Self = StObject.set(x, "WeekendDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTuesday(value: Double): Self = this.set("Tuesday", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWednesday(value: Double): Self = this.set("Wednesday", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeekendDays(value: Double): Self = this.set("WeekendDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkDays(value: Double): Self = this.set("WorkDays", value.asInstanceOf[js.Any])
+    def setWorkDays(value: Double): Self = StObject.set(x, "WorkDays", value.asInstanceOf[js.Any])
   }
 }

@@ -1,16 +1,16 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/commands/MigrationGenerateCommand", JSImport.Namespace)
-@js.native
-object migrationGenerateCommandMod extends js.Object {
+object migrationGenerateCommandMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @js.native
-  class MigrationGenerateCommand () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand")
+  @js.native
+  class MigrationGenerateCommand () extends StObject {
     
     var aliases: String = js.native
     
@@ -27,23 +27,30 @@ object migrationGenerateCommandMod extends js.Object {
     ): js.Promise[Unit] = js.native
   }
   /* static members */
-  @js.native
-  object MigrationGenerateCommand extends js.Object {
+  object MigrationGenerateCommand {
     
     /**
       * Gets contents of the migration file.
       */
-    /* protected */ def getTemplate(name: String, timestamp: Double, upSqls: js.Array[String], downSqls: js.Array[String]): String = js.native
+    @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand.getTemplate")
+    @js.native
+    def getTemplate(name: String, timestamp: Double, upSqls: js.Array[String], downSqls: js.Array[String]): String = js.native
     
     /**
       *
       */
-    /* protected */ def prettifyQuery(query: String): String = js.native
+    @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand.prettifyQuery")
+    @js.native
+    def prettifyQuery(query: String): String = js.native
     
     /**
       * Formats query parameters for migration queries if parameters actually exist
       */
-    /* protected */ def queryParams(): String = js.native
-    /* protected */ def queryParams(parameters: js.Array[_]): String = js.native
+    @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand.queryParams")
+    @js.native
+    def queryParams(): String = js.native
+    @JSImport("typeorm/commands/MigrationGenerateCommand", "MigrationGenerateCommand.queryParams")
+    @js.native
+    def queryParams(parameters: js.Array[_]): String = js.native
   }
 }

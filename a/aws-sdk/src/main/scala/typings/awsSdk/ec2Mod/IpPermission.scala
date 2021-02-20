@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpPermission extends js.Object {
+trait IpPermission extends StObject {
   
   /**
     * The start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type number. A value of -1 indicates all ICMP/ICMPv6 types. If you specify all ICMP/ICMPv6 types, you must specify all codes.
@@ -51,72 +52,60 @@ object IpPermission {
   }
   
   @scala.inline
-  implicit class IpPermissionOps[Self <: IpPermission] (val x: Self) extends AnyVal {
+  implicit class IpPermissionMutableBuilder[Self <: IpPermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpProtocol(value: String): Self = StObject.set(x, "IpProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPort(value: Integer): Self = this.set("FromPort", value.asInstanceOf[js.Any])
+    def setIpProtocolUndefined: Self = StObject.set(x, "IpProtocol", js.undefined)
     
     @scala.inline
-    def deleteFromPort: Self = this.set("FromPort", js.undefined)
+    def setIpRanges(value: IpRangeList): Self = StObject.set(x, "IpRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpProtocol(value: String): Self = this.set("IpProtocol", value.asInstanceOf[js.Any])
+    def setIpRangesUndefined: Self = StObject.set(x, "IpRanges", js.undefined)
     
     @scala.inline
-    def deleteIpProtocol: Self = this.set("IpProtocol", js.undefined)
+    def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "IpRanges", js.Array(value :_*))
     
     @scala.inline
-    def setIpRangesVarargs(value: IpRange*): Self = this.set("IpRanges", js.Array(value :_*))
+    def setIpv6Ranges(value: Ipv6RangeList): Self = StObject.set(x, "Ipv6Ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpRanges(value: IpRangeList): Self = this.set("IpRanges", value.asInstanceOf[js.Any])
+    def setIpv6RangesUndefined: Self = StObject.set(x, "Ipv6Ranges", js.undefined)
     
     @scala.inline
-    def deleteIpRanges: Self = this.set("IpRanges", js.undefined)
+    def setIpv6RangesVarargs(value: Ipv6Range*): Self = StObject.set(x, "Ipv6Ranges", js.Array(value :_*))
     
     @scala.inline
-    def setIpv6RangesVarargs(value: Ipv6Range*): Self = this.set("Ipv6Ranges", js.Array(value :_*))
+    def setPrefixListIds(value: PrefixListIdList): Self = StObject.set(x, "PrefixListIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6Ranges(value: Ipv6RangeList): Self = this.set("Ipv6Ranges", value.asInstanceOf[js.Any])
+    def setPrefixListIdsUndefined: Self = StObject.set(x, "PrefixListIds", js.undefined)
     
     @scala.inline
-    def deleteIpv6Ranges: Self = this.set("Ipv6Ranges", js.undefined)
+    def setPrefixListIdsVarargs(value: PrefixListId*): Self = StObject.set(x, "PrefixListIds", js.Array(value :_*))
     
     @scala.inline
-    def setPrefixListIdsVarargs(value: PrefixListId*): Self = this.set("PrefixListIds", js.Array(value :_*))
+    def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixListIds(value: PrefixListIdList): Self = this.set("PrefixListIds", value.asInstanceOf[js.Any])
+    def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
     
     @scala.inline
-    def deletePrefixListIds: Self = this.set("PrefixListIds", js.undefined)
+    def setUserIdGroupPairs(value: UserIdGroupPairList): Self = StObject.set(x, "UserIdGroupPairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToPort(value: Integer): Self = this.set("ToPort", value.asInstanceOf[js.Any])
+    def setUserIdGroupPairsUndefined: Self = StObject.set(x, "UserIdGroupPairs", js.undefined)
     
     @scala.inline
-    def deleteToPort: Self = this.set("ToPort", js.undefined)
-    
-    @scala.inline
-    def setUserIdGroupPairsVarargs(value: UserIdGroupPair*): Self = this.set("UserIdGroupPairs", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserIdGroupPairs(value: UserIdGroupPairList): Self = this.set("UserIdGroupPairs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIdGroupPairs: Self = this.set("UserIdGroupPairs", js.undefined)
+    def setUserIdGroupPairsVarargs(value: UserIdGroupPair*): Self = StObject.set(x, "UserIdGroupPairs", js.Array(value :_*))
   }
 }

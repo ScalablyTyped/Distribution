@@ -1,90 +1,91 @@
 package typings.dwt.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Crop extends js.Object {
+trait Crop extends StObject {
   
-   // Example 'lastPage'
+  // Example 'lastPage'
   var autoFit: js.UndefOr[String] = js.native
   
-   // Example 'rotateAll'
+  // Example 'rotateAll'
   var crop: js.UndefOr[String] = js.native
   
-   // Example 'save'
+  // Example 'save'
   var firstPage: js.UndefOr[String] = js.native
   
-   // Example 'fitWindow'
+  // Example 'fitWindow'
   var fitHeight: js.UndefOr[String] = js.native
   
-   // Example 'fitHeight'
+  // Example 'fitHeight'
   var fitWidth: js.UndefOr[String] = js.native
   
-   // Example 'readDirection'
+  // Example 'readDirection'
   var flip: js.UndefOr[String] = js.native
   
-   // Example 'fitWidth'
+  // Example 'fitWidth'
   var fullPage: js.UndefOr[String] = js.native
   
-   // Example 'fullPage'
+  // Example 'fullPage'
   var fullScreen: js.UndefOr[String] = js.native
   
-   // Example 'nextPage'
+  // Example 'nextPage'
   var lastPage: js.UndefOr[String] = js.native
   
   var loadImage: js.UndefOr[String] = js.native
   
-   // Example 'flip'
+  // Example 'flip'
   var mirror: js.UndefOr[String] = js.native
   
-   // Example 'pagination'
+  // Example 'pagination'
   var nextPage: js.UndefOr[String] = js.native
   
-   // Example 'previousPage'
+  // Example 'previousPage'
   var pagination: js.UndefOr[String] = js.native
   
-   // Example 'loadImage'
+  // Example 'loadImage'
   var panelChange: js.UndefOr[String] = js.native
   
-   // Example 'firstPage'
+  // Example 'firstPage'
   var previousPage: js.UndefOr[String] = js.native
   
-   // Example 'remove'
+  // Example 'remove'
   var print: js.UndefOr[String] = js.native
   
-   // Example 'panelChange'
+  // Example 'panelChange'
   var readDirection: js.UndefOr[String] = js.native
   
-   // Example 'undo'
+  // Example 'undo'
   var redo: js.UndefOr[String] = js.native
   
-   // Example 'reset'
+  // Example 'reset'
   var remove: js.UndefOr[String] = js.native
   
-   // Example 'zoomOut'
+  // Example 'zoomOut'
   var reset: js.UndefOr[String] = js.native
   
-   // Example 'mirror'
+  // Example 'mirror'
   var rotate: js.UndefOr[String] = js.native
   
-   // Example 'rotate'
+  // Example 'rotate'
   var rotateAll: js.UndefOr[String] = js.native
   
-   // Example 'print'
+  // Example 'print'
   var save: js.UndefOr[String] = js.native
   
-   // Example 'wipe'
+  // Example 'wipe'
   var undo: js.UndefOr[String] = js.native
   
-   // Example 'crop'
+  // Example 'crop'
   var wipe: js.UndefOr[String] = js.native
   
-   // Example 'redo'
+  // Example 'redo'
   var zoomIn: js.UndefOr[String] = js.native
   
-   // Example 'zoomIn'
+  // Example 'zoomIn'
   var zoomOut: js.UndefOr[String] = js.native
 }
 object Crop {
@@ -96,180 +97,168 @@ object Crop {
   }
   
   @scala.inline
-  implicit class CropOps[Self <: Crop] (val x: Self) extends AnyVal {
+  implicit class CropMutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFit(value: String): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFitUndefined: Self = StObject.set(x, "autoFit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrop(value: String): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFit(value: String): Self = this.set("autoFit", value.asInstanceOf[js.Any])
+    def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
     @scala.inline
-    def deleteAutoFit: Self = this.set("autoFit", js.undefined)
+    def setFirstPage(value: String): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrop(value: String): Self = this.set("crop", value.asInstanceOf[js.Any])
+    def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
     
     @scala.inline
-    def deleteCrop: Self = this.set("crop", js.undefined)
+    def setFitHeight(value: String): Self = StObject.set(x, "fitHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPage(value: String): Self = this.set("firstPage", value.asInstanceOf[js.Any])
+    def setFitHeightUndefined: Self = StObject.set(x, "fitHeight", js.undefined)
     
     @scala.inline
-    def deleteFirstPage: Self = this.set("firstPage", js.undefined)
+    def setFitWidth(value: String): Self = StObject.set(x, "fitWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitHeight(value: String): Self = this.set("fitHeight", value.asInstanceOf[js.Any])
+    def setFitWidthUndefined: Self = StObject.set(x, "fitWidth", js.undefined)
     
     @scala.inline
-    def deleteFitHeight: Self = this.set("fitHeight", js.undefined)
+    def setFlip(value: String): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitWidth(value: String): Self = this.set("fitWidth", value.asInstanceOf[js.Any])
+    def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
     
     @scala.inline
-    def deleteFitWidth: Self = this.set("fitWidth", js.undefined)
+    def setFullPage(value: String): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlip(value: String): Self = this.set("flip", value.asInstanceOf[js.Any])
+    def setFullPageUndefined: Self = StObject.set(x, "fullPage", js.undefined)
     
     @scala.inline
-    def deleteFlip: Self = this.set("flip", js.undefined)
+    def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullPage(value: String): Self = this.set("fullPage", value.asInstanceOf[js.Any])
+    def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
     @scala.inline
-    def deleteFullPage: Self = this.set("fullPage", js.undefined)
+    def setLastPage(value: String): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullScreen(value: String): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
     
     @scala.inline
-    def deleteFullScreen: Self = this.set("fullScreen", js.undefined)
+    def setLoadImage(value: String): Self = StObject.set(x, "loadImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPage(value: String): Self = this.set("lastPage", value.asInstanceOf[js.Any])
+    def setLoadImageUndefined: Self = StObject.set(x, "loadImage", js.undefined)
     
     @scala.inline
-    def deleteLastPage: Self = this.set("lastPage", js.undefined)
+    def setMirror(value: String): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadImage(value: String): Self = this.set("loadImage", value.asInstanceOf[js.Any])
+    def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
     
     @scala.inline
-    def deleteLoadImage: Self = this.set("loadImage", js.undefined)
+    def setNextPage(value: String): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMirror(value: String): Self = this.set("mirror", value.asInstanceOf[js.Any])
+    def setNextPageUndefined: Self = StObject.set(x, "nextPage", js.undefined)
     
     @scala.inline
-    def deleteMirror: Self = this.set("mirror", js.undefined)
+    def setPagination(value: String): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPage(value: String): Self = this.set("nextPage", value.asInstanceOf[js.Any])
+    def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
     @scala.inline
-    def deleteNextPage: Self = this.set("nextPage", js.undefined)
+    def setPanelChange(value: String): Self = StObject.set(x, "panelChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagination(value: String): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    def setPanelChangeUndefined: Self = StObject.set(x, "panelChange", js.undefined)
     
     @scala.inline
-    def deletePagination: Self = this.set("pagination", js.undefined)
+    def setPreviousPage(value: String): Self = StObject.set(x, "previousPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelChange(value: String): Self = this.set("panelChange", value.asInstanceOf[js.Any])
+    def setPreviousPageUndefined: Self = StObject.set(x, "previousPage", js.undefined)
     
     @scala.inline
-    def deletePanelChange: Self = this.set("panelChange", js.undefined)
+    def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousPage(value: String): Self = this.set("previousPage", value.asInstanceOf[js.Any])
+    def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
     @scala.inline
-    def deletePreviousPage: Self = this.set("previousPage", js.undefined)
+    def setReadDirection(value: String): Self = StObject.set(x, "readDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrint(value: String): Self = this.set("print", value.asInstanceOf[js.Any])
+    def setReadDirectionUndefined: Self = StObject.set(x, "readDirection", js.undefined)
     
     @scala.inline
-    def deletePrint: Self = this.set("print", js.undefined)
+    def setRedo(value: String): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadDirection(value: String): Self = this.set("readDirection", value.asInstanceOf[js.Any])
+    def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
     
     @scala.inline
-    def deleteReadDirection: Self = this.set("readDirection", js.undefined)
+    def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedo(value: String): Self = this.set("redo", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteRedo: Self = this.set("redo", js.undefined)
+    def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: String): Self = this.set("remove", value.asInstanceOf[js.Any])
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: String): Self = this.set("reset", value.asInstanceOf[js.Any])
+    def setRotateAll(value: String): Self = StObject.set(x, "rotateAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setRotateAllUndefined: Self = StObject.set(x, "rotateAll", js.undefined)
     
     @scala.inline
-    def setRotate(value: String): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateAll(value: String): Self = this.set("rotateAll", value.asInstanceOf[js.Any])
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deleteRotateAll: Self = this.set("rotateAll", js.undefined)
+    def setUndo(value: String): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: String): Self = this.set("save", value.asInstanceOf[js.Any])
+    def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     
     @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setWipe(value: String): Self = StObject.set(x, "wipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndo(value: String): Self = this.set("undo", value.asInstanceOf[js.Any])
+    def setWipeUndefined: Self = StObject.set(x, "wipe", js.undefined)
     
     @scala.inline
-    def deleteUndo: Self = this.set("undo", js.undefined)
+    def setZoomIn(value: String): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWipe(value: String): Self = this.set("wipe", value.asInstanceOf[js.Any])
+    def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
     
     @scala.inline
-    def deleteWipe: Self = this.set("wipe", js.undefined)
+    def setZoomOut(value: String): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomIn(value: String): Self = this.set("zoomIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomIn: Self = this.set("zoomIn", js.undefined)
-    
-    @scala.inline
-    def setZoomOut(value: String): Self = this.set("zoomOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomOut: Self = this.set("zoomOut", js.undefined)
+    def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
   }
 }

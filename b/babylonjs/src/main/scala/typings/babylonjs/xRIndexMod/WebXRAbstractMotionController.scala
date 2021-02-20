@@ -4,6 +4,7 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMotionControllerLayout
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Target extends js.Object {
+trait Target extends StObject {
   
   /**
     * The branch of the repository where the pull request changes are merged. Also known as the destination branch.
@@ -31,30 +32,18 @@ object Target {
   }
   
   @scala.inline
-  implicit class TargetOps[Self <: Target] (val x: Self) extends AnyVal {
+  implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationReference(value: ReferenceName): Self = StObject.set(x, "destinationReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationReferenceUndefined: Self = StObject.set(x, "destinationReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceReference(value: ReferenceName): Self = this.set("sourceReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestinationReference(value: ReferenceName): Self = this.set("destinationReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationReference: Self = this.set("destinationReference", js.undefined)
+    def setSourceReference(value: ReferenceName): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
   }
 }

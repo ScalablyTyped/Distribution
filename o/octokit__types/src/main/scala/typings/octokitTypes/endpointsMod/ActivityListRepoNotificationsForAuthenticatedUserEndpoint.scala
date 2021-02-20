@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityListRepoNotificationsForAuthenticatedUserEndpoint extends js.Object {
+trait ActivityListRepoNotificationsForAuthenticatedUserEndpoint extends StObject {
   
   /**
     * If `true`, show notifications marked as read.
@@ -50,60 +51,48 @@ object ActivityListRepoNotificationsForAuthenticatedUserEndpoint {
   }
   
   @scala.inline
-  implicit class ActivityListRepoNotificationsForAuthenticatedUserEndpointOps[Self <: ActivityListRepoNotificationsForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActivityListRepoNotificationsForAuthenticatedUserEndpointMutableBuilder[Self <: ActivityListRepoNotificationsForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Boolean): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def setBefore(value: String): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setParticipating(value: Boolean): Self = StObject.set(x, "participating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setParticipatingUndefined: Self = StObject.set(x, "participating", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
     @scala.inline
-    def setParticipating(value: Boolean): Self = this.set("participating", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParticipating: Self = this.set("participating", js.undefined)
+    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePer_page: Self = this.set("per_page", js.undefined)
-    
-    @scala.inline
-    def setSince(value: String): Self = this.set("since", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

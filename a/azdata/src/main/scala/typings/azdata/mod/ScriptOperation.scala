@@ -1,51 +1,44 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ScriptOperation extends js.Object
+sealed trait ScriptOperation extends StObject
 @JSImport("azdata", "ScriptOperation")
 @js.native
-object ScriptOperation extends js.Object {
+object ScriptOperation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ScriptOperation with Double] = js.native
   
   @js.native
   sealed trait Alter extends ScriptOperation
-  /* 6 */ @js.native
-  object Alter extends TopLevel[Alter with Double]
+  /* 6 */ val Alter: typings.azdata.mod.ScriptOperation.Alter with Double = js.native
   
   @js.native
   sealed trait Create extends ScriptOperation
-  /* 1 */ @js.native
-  object Create extends TopLevel[Create with Double]
+  /* 1 */ val Create: typings.azdata.mod.ScriptOperation.Create with Double = js.native
   
   @js.native
   sealed trait Delete extends ScriptOperation
-  /* 4 */ @js.native
-  object Delete extends TopLevel[Delete with Double]
+  /* 4 */ val Delete: typings.azdata.mod.ScriptOperation.Delete with Double = js.native
   
   @js.native
   sealed trait Execute extends ScriptOperation
-  /* 5 */ @js.native
-  object Execute extends TopLevel[Execute with Double]
+  /* 5 */ val Execute: typings.azdata.mod.ScriptOperation.Execute with Double = js.native
   
   @js.native
   sealed trait Insert extends ScriptOperation
-  /* 2 */ @js.native
-  object Insert extends TopLevel[Insert with Double]
+  /* 2 */ val Insert: typings.azdata.mod.ScriptOperation.Insert with Double = js.native
   
   @js.native
   sealed trait Select extends ScriptOperation
-  /* 0 */ @js.native
-  object Select extends TopLevel[Select with Double]
+  /* 0 */ val Select: typings.azdata.mod.ScriptOperation.Select with Double = js.native
   
   @js.native
   sealed trait Update extends ScriptOperation
-  /* 3 */ @js.native
-  object Update extends TopLevel[Update with Double]
+  /* 3 */ val Update: typings.azdata.mod.ScriptOperation.Update with Double = js.native
 }

@@ -3,6 +3,7 @@ package typings.stellarSdk.horizonApiMod.Horizon
 import org.scalablytyped.runtime.TopLevel
 import typings.stellarBase.mod.AssetType
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.allowTrust
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,39 +57,27 @@ object AllowTrustOperationResponse {
   }
   
   @scala.inline
-  implicit class AllowTrustOperationResponseOps[Self <: AllowTrustOperationResponse] (val x: Self) extends AnyVal {
+  implicit class AllowTrustOperationResponseMutableBuilder[Self <: AllowTrustOperationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsset_code(value: String): Self = StObject.set(x, "asset_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsset_issuer(value: String): Self = StObject.set(x, "asset_issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsset_type(value: AssetType): Self = StObject.set(x, "asset_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset_code(value: String): Self = this.set("asset_code", value.asInstanceOf[js.Any])
+    def setAuthorize(value: Boolean): Self = StObject.set(x, "authorize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset_issuer(value: String): Self = this.set("asset_issuer", value.asInstanceOf[js.Any])
+    def setAuthorize_to_maintain_liabilities(value: Boolean): Self = StObject.set(x, "authorize_to_maintain_liabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset_type(value: AssetType): Self = this.set("asset_type", value.asInstanceOf[js.Any])
+    def setTrustee(value: String): Self = StObject.set(x, "trustee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorize(value: Boolean): Self = this.set("authorize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthorize_to_maintain_liabilities(value: Boolean): Self = this.set("authorize_to_maintain_liabilities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrustee(value: String): Self = this.set("trustee", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrustor(value: String): Self = this.set("trustor", value.asInstanceOf[js.Any])
+    def setTrustor(value: String): Self = StObject.set(x, "trustor", value.asInstanceOf[js.Any])
   }
 }

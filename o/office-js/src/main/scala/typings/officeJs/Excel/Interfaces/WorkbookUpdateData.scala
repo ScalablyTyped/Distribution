@@ -1,12 +1,13 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Workbook object, for use in `workbook.set({ ... })`. */
 @js.native
-trait WorkbookUpdateData extends js.Object {
+trait WorkbookUpdateData extends StObject {
   
   /**
     *
@@ -52,42 +53,30 @@ object WorkbookUpdateData {
   }
   
   @scala.inline
-  implicit class WorkbookUpdateDataOps[Self <: WorkbookUpdateData] (val x: Self) extends AnyVal {
+  implicit class WorkbookUpdateDataMutableBuilder[Self <: WorkbookUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartDataPointTrack(value: Boolean): Self = StObject.set(x, "chartDataPointTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartDataPointTrackUndefined: Self = StObject.set(x, "chartDataPointTrack", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartDataPointTrack(value: Boolean): Self = this.set("chartDataPointTrack", value.asInstanceOf[js.Any])
+    def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
     @scala.inline
-    def deleteChartDataPointTrack: Self = this.set("chartDataPointTrack", js.undefined)
+    def setProperties(value: DocumentPropertiesUpdateData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDirty(value: Boolean): Self = this.set("isDirty", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteIsDirty: Self = this.set("isDirty", js.undefined)
+    def setUsePrecisionAsDisplayed(value: Boolean): Self = StObject.set(x, "usePrecisionAsDisplayed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: DocumentPropertiesUpdateData): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
-    
-    @scala.inline
-    def setUsePrecisionAsDisplayed(value: Boolean): Self = this.set("usePrecisionAsDisplayed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePrecisionAsDisplayed: Self = this.set("usePrecisionAsDisplayed", js.undefined)
+    def setUsePrecisionAsDisplayedUndefined: Self = StObject.set(x, "usePrecisionAsDisplayed", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CryptographicPublicKeyBlobType extends js.Object
+sealed trait CryptographicPublicKeyBlobType extends StObject
 /** Specifies the type of the public key contained in a buffer. */
 @JSGlobal("Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType")
 @js.native
-object CryptographicPublicKeyBlobType extends js.Object {
+object CryptographicPublicKeyBlobType extends StObject {
   
   @js.native
   sealed trait bcryptEccFullPublicKey extends CryptographicPublicKeyBlobType

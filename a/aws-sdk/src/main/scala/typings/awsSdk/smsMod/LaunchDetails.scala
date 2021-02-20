@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchDetails extends js.Object {
+trait LaunchDetails extends StObject {
   
   /**
     * The latest time that this application was launched successfully.
@@ -31,36 +32,24 @@ object LaunchDetails {
   }
   
   @scala.inline
-  implicit class LaunchDetailsOps[Self <: LaunchDetails] (val x: Self) extends AnyVal {
+  implicit class LaunchDetailsMutableBuilder[Self <: LaunchDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatestLaunchTime(value: Timestamp): Self = StObject.set(x, "latestLaunchTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatestLaunchTimeUndefined: Self = StObject.set(x, "latestLaunchTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStackId(value: StackId): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestLaunchTime(value: Timestamp): Self = this.set("latestLaunchTime", value.asInstanceOf[js.Any])
+    def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
     
     @scala.inline
-    def deleteLatestLaunchTime: Self = this.set("latestLaunchTime", js.undefined)
+    def setStackName(value: StackName): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackId(value: StackId): Self = this.set("stackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackId: Self = this.set("stackId", js.undefined)
-    
-    @scala.inline
-    def setStackName(value: StackName): Self = this.set("stackName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackName: Self = this.set("stackName", js.undefined)
+    def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
   }
 }

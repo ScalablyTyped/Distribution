@@ -1,13 +1,12 @@
 package typings.openui5.sap.ui.model
 
 import typings.jquery.JQueryPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.resource")
-@js.native
-object resource extends js.Object {
+object resource {
   
   @js.native
   trait ResourceModel extends Model {

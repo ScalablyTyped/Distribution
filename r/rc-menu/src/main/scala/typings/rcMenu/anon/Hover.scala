@@ -1,11 +1,12 @@
 package typings.rcMenu.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hover extends js.Object {
+trait Hover extends StObject {
   
   var hover: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Hover {
   }
   
   @scala.inline
-  implicit class HoverOps[Self <: Hover] (val x: Self) extends AnyVal {
+  implicit class HoverMutableBuilder[Self <: Hover] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHover(value: Boolean): Self = this.set("hover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

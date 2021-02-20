@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalItemResourceProperties extends js.Object {
+trait PortalItemResourceProperties extends StObject {
   
   /**
     * Path of the resource relative to `{ITEM}/resources/`.
@@ -30,30 +31,18 @@ object PortalItemResourceProperties {
   }
   
   @scala.inline
-  implicit class PortalItemResourcePropertiesOps[Self <: PortalItemResourceProperties] (val x: Self) extends AnyVal {
+  implicit class PortalItemResourcePropertiesMutableBuilder[Self <: PortalItemResourceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = this.set("portalItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortalItem: Self = this.set("portalItem", js.undefined)
+    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
   }
 }

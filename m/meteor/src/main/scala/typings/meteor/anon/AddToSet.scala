@@ -11,12 +11,13 @@ import typings.meteor.mongoMod.Mongo.PushModifier
 import typings.std.Date
 import typings.std.Partial
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddToSet[T] extends js.Object {
+trait AddToSet[T] extends StObject {
   
   @JSName("$addToSet")
   var $addToSet: js.UndefOr[ArraysOrEach[T] with Dictionary[_]] = js.native
@@ -73,106 +74,94 @@ object AddToSet {
   }
   
   @scala.inline
-  implicit class AddToSetOps[Self <: AddToSet[_], T] (val x: Self with AddToSet[T]) extends AnyVal {
+  implicit class AddToSetMutableBuilder[Self <: AddToSet[_], T] (val x: Self with AddToSet[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$addToSet(value: ArraysOrEach[T] with Dictionary[_]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$addToSet(value: ArraysOrEach[T] with Dictionary[_]): Self = this.set("$addToSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$addToSet: Self = this.set("$addToSet", js.undefined)
+    def set$addToSetUndefined: Self = StObject.set(x, "$addToSet", js.undefined)
     
     @scala.inline
     def set$currentDate(
       value: (Partial[Record[/* keyof T */ String, CurrentDateModifier]]) with Dictionary[CurrentDateModifier]
-    ): Self = this.set("$currentDate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$currentDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$currentDate: Self = this.set("$currentDate", js.undefined)
+    def set$currentDateUndefined: Self = StObject.set(x, "$currentDate", js.undefined)
     
     @scala.inline
-    def set$inc(value: (PartialMapTo[T, Double]) with Dictionary[Double]): Self = this.set("$inc", value.asInstanceOf[js.Any])
+    def set$inc(value: (PartialMapTo[T, Double]) with Dictionary[Double]): Self = StObject.set(x, "$inc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$inc: Self = this.set("$inc", js.undefined)
+    def set$incUndefined: Self = StObject.set(x, "$inc", js.undefined)
     
     @scala.inline
-    def set$max(value: (PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double])): Self = this.set("$max", value.asInstanceOf[js.Any])
+    def set$max(value: (PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double])): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$max: Self = this.set("$max", js.undefined)
+    def set$maxUndefined: Self = StObject.set(x, "$max", js.undefined)
     
     @scala.inline
-    def set$min(value: (PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double])): Self = this.set("$min", value.asInstanceOf[js.Any])
+    def set$min(value: (PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double])): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$min: Self = this.set("$min", js.undefined)
+    def set$minUndefined: Self = StObject.set(x, "$min", js.undefined)
     
     @scala.inline
-    def set$mul(value: (PartialMapTo[T, Double]) with Dictionary[Double]): Self = this.set("$mul", value.asInstanceOf[js.Any])
+    def set$mul(value: (PartialMapTo[T, Double]) with Dictionary[Double]): Self = StObject.set(x, "$mul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$mul: Self = this.set("$mul", js.undefined)
+    def set$mulUndefined: Self = StObject.set(x, "$mul", js.undefined)
     
     @scala.inline
-    def set$pop(value: (PartialMapTo[T, `1` | `-1`]) with (Dictionary[`1` | `-1`])): Self = this.set("$pop", value.asInstanceOf[js.Any])
+    def set$pop(value: (PartialMapTo[T, `1` | `-1`]) with (Dictionary[`1` | `-1`])): Self = StObject.set(x, "$pop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$pop: Self = this.set("$pop", js.undefined)
+    def set$popUndefined: Self = StObject.set(x, "$pop", js.undefined)
     
     @scala.inline
-    def set$pull(value: ElementsOf[T] with Dictionary[_]): Self = this.set("$pull", value.asInstanceOf[js.Any])
+    def set$pull(value: ElementsOf[T] with Dictionary[_]): Self = StObject.set(x, "$pull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$pull: Self = this.set("$pull", js.undefined)
+    def set$pullAll(value: Partial[T] with Dictionary[_]): Self = StObject.set(x, "$pullAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$pullAll(value: Partial[T] with Dictionary[_]): Self = this.set("$pullAll", value.asInstanceOf[js.Any])
+    def set$pullAllUndefined: Self = StObject.set(x, "$pullAll", js.undefined)
     
     @scala.inline
-    def delete$pullAll: Self = this.set("$pullAll", js.undefined)
+    def set$pullUndefined: Self = StObject.set(x, "$pull", js.undefined)
     
     @scala.inline
-    def set$push(value: PushModifier[T] with Dictionary[_]): Self = this.set("$push", value.asInstanceOf[js.Any])
+    def set$push(value: PushModifier[T] with Dictionary[_]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$push: Self = this.set("$push", js.undefined)
+    def set$pushUndefined: Self = StObject.set(x, "$push", js.undefined)
     
     @scala.inline
-    def set$rename(value: (PartialMapTo[T, String]) with Dictionary[String]): Self = this.set("$rename", value.asInstanceOf[js.Any])
+    def set$rename(value: (PartialMapTo[T, String]) with Dictionary[String]): Self = StObject.set(x, "$rename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$rename: Self = this.set("$rename", js.undefined)
+    def set$renameUndefined: Self = StObject.set(x, "$rename", js.undefined)
     
     @scala.inline
-    def set$set(value: Partial[T] with Dictionary[_]): Self = this.set("$set", value.asInstanceOf[js.Any])
+    def set$set(value: Partial[T] with Dictionary[_]): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$set: Self = this.set("$set", js.undefined)
+    def set$setOnInsert(value: Partial[T] with Dictionary[_]): Self = StObject.set(x, "$setOnInsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$setOnInsert(value: Partial[T] with Dictionary[_]): Self = this.set("$setOnInsert", value.asInstanceOf[js.Any])
+    def set$setOnInsertUndefined: Self = StObject.set(x, "$setOnInsert", js.undefined)
     
     @scala.inline
-    def delete$setOnInsert: Self = this.set("$setOnInsert", js.undefined)
+    def set$setUndefined: Self = StObject.set(x, "$set", js.undefined)
     
     @scala.inline
     def set$unset(
       value: (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorNumbers.`0`]) with Dictionary[_]
-    ): Self = this.set("$unset", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$unset: Self = this.set("$unset", js.undefined)
+    def set$unsetUndefined: Self = StObject.set(x, "$unset", js.undefined)
   }
 }

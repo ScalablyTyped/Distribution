@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamProcessorSettings extends js.Object {
+trait StreamProcessorSettings extends StObject {
   
   /**
     * Face search settings to use on a streaming video. 
@@ -21,24 +22,12 @@ object StreamProcessorSettings {
   }
   
   @scala.inline
-  implicit class StreamProcessorSettingsOps[Self <: StreamProcessorSettings] (val x: Self) extends AnyVal {
+  implicit class StreamProcessorSettingsMutableBuilder[Self <: StreamProcessorSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaceSearch(value: FaceSearchSettings): Self = StObject.set(x, "FaceSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFaceSearch(value: FaceSearchSettings): Self = this.set("FaceSearch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaceSearch: Self = this.set("FaceSearch", js.undefined)
+    def setFaceSearchUndefined: Self = StObject.set(x, "FaceSearch", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The network endpoint.
   */
 @js.native
-trait SchemaNetworkEndpoint extends js.Object {
+trait SchemaNetworkEndpoint extends StObject {
   
   /**
     * The name for a specific VM instance that the IP address belongs to. This
@@ -43,36 +44,24 @@ object SchemaNetworkEndpoint {
   }
   
   @scala.inline
-  implicit class SchemaNetworkEndpointOps[Self <: SchemaNetworkEndpoint] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkEndpointMutableBuilder[Self <: SchemaNetworkEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

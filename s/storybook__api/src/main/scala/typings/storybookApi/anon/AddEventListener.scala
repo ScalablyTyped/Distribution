@@ -1,12 +1,13 @@
 package typings.storybookApi.anon
 
 import typings.storybookApi.shortcutsMod.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddEventListener extends js.Object {
+trait AddEventListener extends StObject {
   
   def addEventListener(): Unit = js.native
   
@@ -33,33 +34,21 @@ object AddEventListener {
   }
   
   @scala.inline
-  implicit class AddEventListenerOps[Self <: AddEventListener] (val x: Self) extends AnyVal {
+  implicit class AddEventListenerMutableBuilder[Self <: AddEventListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: () => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispatchEvent(value: Event => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddEventListener(value: () => Unit): Self = this.set("addEventListener", js.Any.fromFunction0(value))
+    def setRemoveEventListener(value: () => Boolean): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispatchEvent(value: Event => Boolean): Self = this.set("dispatchEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetAttribute(value: String => String | Null): Self = this.set("getAttribute", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveEventListener(value: () => Boolean): Self = this.set("removeEventListener", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }
 }

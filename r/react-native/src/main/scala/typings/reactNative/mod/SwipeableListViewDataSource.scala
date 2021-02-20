@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwipeableListViewDataSource extends js.Object {
+trait SwipeableListViewDataSource extends StObject {
   
   def cloneWithRowsAndSections(dataBlob: js.Any): SwipeableListViewDataSource = js.native
   def cloneWithRowsAndSections(

@@ -1,11 +1,12 @@
 package typings.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestPaymentOptions extends js.Object {
+trait RequestPaymentOptions extends StObject {
   
   /** 统一下单接口返回的 prepay_id 参数值，提交格式如：prepay_id=* */
   @JSName("package")
@@ -48,51 +49,39 @@ object RequestPaymentOptions {
   }
   
   @scala.inline
-  implicit class RequestPaymentOptionsOps[Self <: RequestPaymentOptions] (val x: Self) extends AnyVal {
+  implicit class RequestPaymentOptionsMutableBuilder[Self <: RequestPaymentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: /* res */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_package(value: String): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setNonceStr(value: String): Self = this.set("nonceStr", value.asInstanceOf[js.Any])
+    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaySign(value: String): Self = this.set("paySign", value.asInstanceOf[js.Any])
+    def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignType(value: PaymentSignType): Self = this.set("signType", value.asInstanceOf[js.Any])
+    def setSignType(value: PaymentSignType): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStamp(value: String | Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* res */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* res */ js.Any => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setTimeStamp(value: String | Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ js.Any => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ js.Any => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

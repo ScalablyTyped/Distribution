@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaZoneSetPolicyRequest extends js.Object {
+trait SchemaZoneSetPolicyRequest extends StObject {
   
   /**
     * Flatten Policy to create a backwacd compatible wire-format. Deprecated.
@@ -36,39 +37,27 @@ object SchemaZoneSetPolicyRequest {
   }
   
   @scala.inline
-  implicit class SchemaZoneSetPolicyRequestOps[Self <: SchemaZoneSetPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaZoneSetPolicyRequestMutableBuilder[Self <: SchemaZoneSetPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindings(value: js.Array[SchemaBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindingsVarargs(value: SchemaBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     
     @scala.inline
-    def setBindingsVarargs(value: SchemaBinding*): Self = this.set("bindings", js.Array(value :_*))
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindings(value: js.Array[SchemaBinding]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setPolicy(value: SchemaPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
-    
-    @scala.inline
-    def setPolicy(value: SchemaPolicy): Self = this.set("policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

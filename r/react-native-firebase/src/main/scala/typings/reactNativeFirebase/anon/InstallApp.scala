@@ -1,11 +1,12 @@
 package typings.reactNativeFirebase.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstallApp extends js.Object {
+trait InstallApp extends StObject {
   
   var installApp: js.UndefOr[Boolean] = js.native
   
@@ -22,33 +23,21 @@ object InstallApp {
   }
   
   @scala.inline
-  implicit class InstallAppOps[Self <: InstallApp] (val x: Self) extends AnyVal {
+  implicit class InstallAppMutableBuilder[Self <: InstallApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstallApp(value: Boolean): Self = StObject.set(x, "installApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstallAppUndefined: Self = StObject.set(x, "installApp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
     
     @scala.inline
-    def setInstallApp(value: Boolean): Self = this.set("installApp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstallApp: Self = this.set("installApp", js.undefined)
-    
-    @scala.inline
-    def setMinimumVersion(value: String): Self = this.set("minimumVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumVersion: Self = this.set("minimumVersion", js.undefined)
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
   }
 }

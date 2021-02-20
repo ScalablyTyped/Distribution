@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,36 +32,24 @@ object RefreshControlPropsIOS {
   }
   
   @scala.inline
-  implicit class RefreshControlPropsIOSOps[Self <: RefreshControlPropsIOS] (val x: Self) extends AnyVal {
+  implicit class RefreshControlPropsIOSMutableBuilder[Self <: RefreshControlPropsIOS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTintColor(value: ColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: ColorValue): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    def setTitleColor(value: ColorValue): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitleColor(value: ColorValue): Self = this.set("titleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleColor: Self = this.set("titleColor", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

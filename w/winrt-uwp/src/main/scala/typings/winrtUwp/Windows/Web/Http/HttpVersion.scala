@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Web.Http
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HttpVersion extends js.Object
+sealed trait HttpVersion extends StObject
 /** Represents the HTTP protocol version. */
 @JSGlobal("Windows.Web.Http.HttpVersion")
 @js.native
-object HttpVersion extends js.Object {
+object HttpVersion extends StObject {
   
   /** HTTP 1.0. */
   @js.native

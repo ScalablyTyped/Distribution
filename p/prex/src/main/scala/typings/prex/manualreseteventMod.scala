@@ -2,21 +2,21 @@ package typings.prex
 
 import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prex/out/lib/manualresetevent", JSImport.Namespace)
-@js.native
-object manualreseteventMod extends js.Object {
+object manualreseteventMod {
   
+  @JSImport("prex/out/lib/manualresetevent", "ManualResetEvent")
   @js.native
   /**
     * Initializes a new instance of the ManualResetEvent class.
     *
     * @param initialState A value indicating whether to set the initial state to signaled.
     */
-  class ManualResetEvent () extends js.Object {
+  class ManualResetEvent () extends StObject {
     def this(initialState: Boolean) = this()
     
     var _signaled: js.Any = js.native

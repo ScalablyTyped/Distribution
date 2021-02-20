@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiskImageDetail extends js.Object {
+trait DiskImageDetail extends StObject {
   
   /**
     * The size of the disk image, in GiB.
@@ -31,27 +32,15 @@ object DiskImageDetail {
   }
   
   @scala.inline
-  implicit class DiskImageDetailOps[Self <: DiskImageDetail] (val x: Self) extends AnyVal {
+  implicit class DiskImageDetailMutableBuilder[Self <: DiskImageDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytes(value: Long): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormat(value: DiskImageFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBytes(value: Long): Self = this.set("Bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: DiskImageFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImportManifestUrl(value: String): Self = this.set("ImportManifestUrl", value.asInstanceOf[js.Any])
+    def setImportManifestUrl(value: String): Self = StObject.set(x, "ImportManifestUrl", value.asInstanceOf[js.Any])
   }
 }

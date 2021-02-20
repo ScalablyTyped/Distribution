@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   */
 @js.native
-trait DispatchStatement extends js.Object {
+trait DispatchStatement extends StObject {
   
   /**
     * specifies the dispatch command arguments
@@ -62,33 +63,21 @@ object DispatchStatement {
   }
   
   @scala.inline
-  implicit class DispatchStatementOps[Self <: DispatchStatement] (val x: Self) extends AnyVal {
+  implicit class DispatchStatementMutableBuilder[Self <: DispatchStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAArgs(value: SafeArray[PropertyValue]): Self = StObject.set(x, "aArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setACommand(value: String): Self = StObject.set(x, "aCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setATarget(value: String): Self = StObject.set(x, "aTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAArgs(value: SafeArray[PropertyValue]): Self = this.set("aArgs", value.asInstanceOf[js.Any])
+    def setBIsComment(value: Boolean): Self = StObject.set(x, "bIsComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setACommand(value: String): Self = this.set("aCommand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setATarget(value: String): Self = this.set("aTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBIsComment(value: Boolean): Self = this.set("bIsComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNFlags(value: Double): Self = this.set("nFlags", value.asInstanceOf[js.Any])
+    def setNFlags(value: Double): Self = StObject.set(x, "nFlags", value.asInstanceOf[js.Any])
   }
 }

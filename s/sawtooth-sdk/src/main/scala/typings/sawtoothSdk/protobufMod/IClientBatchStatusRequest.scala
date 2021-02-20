@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientBatchStatusRequest extends js.Object {
+trait IClientBatchStatusRequest extends StObject {
   
   /** ClientBatchStatusRequest batchIds */
   var batchIds: js.UndefOr[js.Array[String] | Null] = js.native
@@ -26,48 +27,36 @@ object IClientBatchStatusRequest {
   }
   
   @scala.inline
-  implicit class IClientBatchStatusRequestOps[Self <: IClientBatchStatusRequest] (val x: Self) extends AnyVal {
+  implicit class IClientBatchStatusRequestMutableBuilder[Self <: IClientBatchStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchIds(value: js.Array[String]): Self = StObject.set(x, "batchIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchIdsNull: Self = StObject.set(x, "batchIds", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchIdsUndefined: Self = StObject.set(x, "batchIds", js.undefined)
     
     @scala.inline
-    def setBatchIdsVarargs(value: String*): Self = this.set("batchIds", js.Array(value :_*))
+    def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value :_*))
     
     @scala.inline
-    def setBatchIds(value: js.Array[String]): Self = this.set("batchIds", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchIds: Self = this.set("batchIds", js.undefined)
+    def setTimeoutNull: Self = StObject.set(x, "timeout", null)
     
     @scala.inline
-    def setBatchIdsNull: Self = this.set("batchIds", null)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setWait_Null: Self = StObject.set(x, "wait", null)
     
     @scala.inline
-    def setTimeoutNull: Self = this.set("timeout", null)
-    
-    @scala.inline
-    def setWait(value: Boolean): Self = this.set("wait", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait: Self = this.set("wait", js.undefined)
-    
-    @scala.inline
-    def setWaitNull: Self = this.set("wait", null)
+    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

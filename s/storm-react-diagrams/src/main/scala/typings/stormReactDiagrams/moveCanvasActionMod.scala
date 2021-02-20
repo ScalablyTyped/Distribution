@@ -2,14 +2,14 @@ package typings.stormReactDiagrams
 
 import typings.stormReactDiagrams.baseActionMod.BaseAction
 import typings.stormReactDiagrams.diagramModelMod.DiagramModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("storm-react-diagrams/dist/src/actions/MoveCanvasAction", JSImport.Namespace)
-@js.native
-object moveCanvasActionMod extends js.Object {
+object moveCanvasActionMod {
   
+  @JSImport("storm-react-diagrams/dist/src/actions/MoveCanvasAction", "MoveCanvasAction")
   @js.native
   class MoveCanvasAction protected () extends BaseAction {
     def this(mouseX: Double, mouseY: Double, diagramModel: DiagramModel) = this()

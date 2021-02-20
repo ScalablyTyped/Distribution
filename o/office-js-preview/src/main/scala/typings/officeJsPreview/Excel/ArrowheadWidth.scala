@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ArrowheadWidth extends js.Object
+sealed trait ArrowheadWidth extends StObject
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ArrowheadWidth")
 @js.native
-object ArrowheadWidth extends js.Object {
+object ArrowheadWidth extends StObject {
   
   @js.native
   sealed trait medium extends ArrowheadWidth

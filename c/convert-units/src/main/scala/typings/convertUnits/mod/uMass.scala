@@ -1,9 +1,11 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Area
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.mcg
   - typings.convertUnits.convertUnitsStrings.mg
@@ -14,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.mt
   - typings.convertUnits.convertUnitsStrings.t
 */
-trait uMass extends js.Object
+trait uMass extends StObject
 object uMass {
   
   @scala.inline

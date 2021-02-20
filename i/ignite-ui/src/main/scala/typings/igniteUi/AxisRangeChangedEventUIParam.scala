@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisRangeChangedEventUIParam extends js.Object {
+trait AxisRangeChangedEventUIParam extends StObject {
   
   /**
     * Used to get reference to current chart axis object.
@@ -46,54 +47,42 @@ object AxisRangeChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class AxisRangeChangedEventUIParamOps[Self <: AxisRangeChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class AxisRangeChangedEventUIParamMutableBuilder[Self <: AxisRangeChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: js.Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: js.Any): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setNewMaximumValue(value: js.Any): Self = StObject.set(x, "newMaximumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: js.Any): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setNewMaximumValueUndefined: Self = StObject.set(x, "newMaximumValue", js.undefined)
     
     @scala.inline
-    def deleteChart: Self = this.set("chart", js.undefined)
+    def setNewMinimumValue(value: js.Any): Self = StObject.set(x, "newMinimumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewMaximumValue(value: js.Any): Self = this.set("newMaximumValue", value.asInstanceOf[js.Any])
+    def setNewMinimumValueUndefined: Self = StObject.set(x, "newMinimumValue", js.undefined)
     
     @scala.inline
-    def deleteNewMaximumValue: Self = this.set("newMaximumValue", js.undefined)
+    def setOldMaximumValue(value: js.Any): Self = StObject.set(x, "oldMaximumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewMinimumValue(value: js.Any): Self = this.set("newMinimumValue", value.asInstanceOf[js.Any])
+    def setOldMaximumValueUndefined: Self = StObject.set(x, "oldMaximumValue", js.undefined)
     
     @scala.inline
-    def deleteNewMinimumValue: Self = this.set("newMinimumValue", js.undefined)
+    def setOldMinimumValue(value: js.Any): Self = StObject.set(x, "oldMinimumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldMaximumValue(value: js.Any): Self = this.set("oldMaximumValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldMaximumValue: Self = this.set("oldMaximumValue", js.undefined)
-    
-    @scala.inline
-    def setOldMinimumValue(value: js.Any): Self = this.set("oldMinimumValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldMinimumValue: Self = this.set("oldMinimumValue", js.undefined)
+    def setOldMinimumValueUndefined: Self = StObject.set(x, "oldMinimumValue", js.undefined)
   }
 }

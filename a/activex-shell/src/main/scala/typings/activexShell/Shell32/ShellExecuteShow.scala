@@ -8,6 +8,7 @@ import typings.activexShell.activexShellNumbers.`3`
 import typings.activexShell.activexShellNumbers.`4`
 import typings.activexShell.activexShellNumbers.`5`
 import typings.activexShell.activexShellNumbers.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellNumbers.`7`
   - typings.activexShell.activexShellNumbers.`10`
 */
-trait ShellExecuteShow extends js.Object
+trait ShellExecuteShow extends StObject
 object ShellExecuteShow {
   
   /** Open the application with its window in the default state specified by the application. */

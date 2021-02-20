@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SdkType extends js.Object {
+trait SdkType extends StObject {
   
   /**
     * A list of configuration properties of an SdkType.
@@ -36,45 +37,33 @@ object SdkType {
   }
   
   @scala.inline
-  implicit class SdkTypeOps[Self <: SdkType] (val x: Self) extends AnyVal {
+  implicit class SdkTypeMutableBuilder[Self <: SdkType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationProperties(value: ListOfSdkConfigurationProperty): Self = StObject.set(x, "configurationProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationPropertiesUndefined: Self = StObject.set(x, "configurationProperties", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationPropertiesVarargs(value: SdkConfigurationProperty*): Self = StObject.set(x, "configurationProperties", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationPropertiesVarargs(value: SdkConfigurationProperty*): Self = this.set("configurationProperties", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationProperties(value: ListOfSdkConfigurationProperty): Self = this.set("configurationProperties", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteConfigurationProperties: Self = this.set("configurationProperties", js.undefined)
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

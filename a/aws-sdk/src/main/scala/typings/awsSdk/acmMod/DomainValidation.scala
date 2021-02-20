@@ -1,11 +1,12 @@
 package typings.awsSdk.acmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainValidation extends js.Object {
+trait DomainValidation extends StObject {
   
   /**
     * A fully qualified domain name (FQDN) in the certificate. For example, www.example.com or example.com. 
@@ -46,54 +47,42 @@ object DomainValidation {
   }
   
   @scala.inline
-  implicit class DomainValidationOps[Self <: DomainValidation] (val x: Self) extends AnyVal {
+  implicit class DomainValidationMutableBuilder[Self <: DomainValidation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceRecord(value: ResourceRecord): Self = StObject.set(x, "ResourceRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceRecordUndefined: Self = StObject.set(x, "ResourceRecord", js.undefined)
     
     @scala.inline
-    def setDomainName(value: DomainNameString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setValidationDomain(value: DomainNameString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRecord(value: ResourceRecord): Self = this.set("ResourceRecord", value.asInstanceOf[js.Any])
+    def setValidationDomainUndefined: Self = StObject.set(x, "ValidationDomain", js.undefined)
     
     @scala.inline
-    def deleteResourceRecord: Self = this.set("ResourceRecord", js.undefined)
+    def setValidationEmails(value: ValidationEmailList): Self = StObject.set(x, "ValidationEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationDomain(value: DomainNameString): Self = this.set("ValidationDomain", value.asInstanceOf[js.Any])
+    def setValidationEmailsUndefined: Self = StObject.set(x, "ValidationEmails", js.undefined)
     
     @scala.inline
-    def deleteValidationDomain: Self = this.set("ValidationDomain", js.undefined)
+    def setValidationEmailsVarargs(value: String*): Self = StObject.set(x, "ValidationEmails", js.Array(value :_*))
     
     @scala.inline
-    def setValidationEmailsVarargs(value: String*): Self = this.set("ValidationEmails", js.Array(value :_*))
+    def setValidationMethod(value: ValidationMethod): Self = StObject.set(x, "ValidationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationEmails(value: ValidationEmailList): Self = this.set("ValidationEmails", value.asInstanceOf[js.Any])
+    def setValidationMethodUndefined: Self = StObject.set(x, "ValidationMethod", js.undefined)
     
     @scala.inline
-    def deleteValidationEmails: Self = this.set("ValidationEmails", js.undefined)
+    def setValidationStatus(value: DomainStatus): Self = StObject.set(x, "ValidationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationMethod(value: ValidationMethod): Self = this.set("ValidationMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationMethod: Self = this.set("ValidationMethod", js.undefined)
-    
-    @scala.inline
-    def setValidationStatus(value: DomainStatus): Self = this.set("ValidationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationStatus: Self = this.set("ValidationStatus", js.undefined)
+    def setValidationStatusUndefined: Self = StObject.set(x, "ValidationStatus", js.undefined)
   }
 }

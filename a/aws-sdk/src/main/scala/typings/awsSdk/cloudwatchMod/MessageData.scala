@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageData extends js.Object {
+trait MessageData extends StObject {
   
   /**
     * The error code or status code associated with the message.
@@ -26,30 +27,18 @@ object MessageData {
   }
   
   @scala.inline
-  implicit class MessageDataOps[Self <: MessageData] (val x: Self) extends AnyVal {
+  implicit class MessageDataMutableBuilder[Self <: MessageData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: MessageDataCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: MessageDataValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: MessageDataCode): Self = this.set("Code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("Code", js.undefined)
-    
-    @scala.inline
-    def setValue(value: MessageDataValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

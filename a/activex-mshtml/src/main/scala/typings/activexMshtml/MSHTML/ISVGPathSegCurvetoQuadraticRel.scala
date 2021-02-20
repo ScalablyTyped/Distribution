@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISVGPathSegCurvetoQuadraticRel extends js.Object {
+trait ISVGPathSegCurvetoQuadraticRel extends StObject {
   
   @JSName("MSHTML.ISVGPathSegCurvetoQuadraticRel_typekey")
   var MSHTMLDotISVGPathSegCurvetoQuadraticRel_typekey: ISVGPathSegCurvetoQuadraticRel = js.native
@@ -34,33 +35,21 @@ object ISVGPathSegCurvetoQuadraticRel {
   }
   
   @scala.inline
-  implicit class ISVGPathSegCurvetoQuadraticRelOps[Self <: ISVGPathSegCurvetoQuadraticRel] (val x: Self) extends AnyVal {
+  implicit class ISVGPathSegCurvetoQuadraticRelMutableBuilder[Self <: ISVGPathSegCurvetoQuadraticRel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSHTMLDotISVGPathSegCurvetoQuadraticRel_typekey(value: ISVGPathSegCurvetoQuadraticRel): Self = StObject.set(x, "MSHTML.ISVGPathSegCurvetoQuadraticRel_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotISVGPathSegCurvetoQuadraticRel_typekey(value: ISVGPathSegCurvetoQuadraticRel): Self = this.set("MSHTML.ISVGPathSegCurvetoQuadraticRel_typekey", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX1(value: Double): Self = this.set("x1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY1(value: Double): Self = this.set("y1", value.asInstanceOf[js.Any])
+    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
   }
 }

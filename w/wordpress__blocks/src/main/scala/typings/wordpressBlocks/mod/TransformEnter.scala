@@ -4,6 +4,7 @@ import typings.std.Partial
 import typings.std.Record
 import typings.std.RegExp
 import typings.wordpressBlocks.wordpressBlocksStrings.enter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,33 +30,21 @@ object TransformEnter {
   }
   
   @scala.inline
-  implicit class TransformEnterOps[Self <: TransformEnter[_], T /* <: Record[String, _] */] (val x: Self with TransformEnter[T]) extends AnyVal {
+  implicit class TransformEnterMutableBuilder[Self <: TransformEnter[_], T /* <: Record[String, _] */] (val x: Self with TransformEnter[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegExp(value: RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegExp(value: RegExp): Self = this.set("regExp", value.asInstanceOf[js.Any])
+    def setTransform(value: () => BlockInstance[Partial[T]]): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTransform(value: () => BlockInstance[Partial[T]]): Self = this.set("transform", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: enter): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setType(value: enter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling.
   */
 @js.native
-trait RBDVolumeSource extends js.Object {
+trait RBDVolumeSource extends StObject {
   
   /**
     * Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
@@ -60,63 +61,51 @@ object RBDVolumeSource {
   }
   
   @scala.inline
-  implicit class RBDVolumeSourceOps[Self <: RBDVolumeSource] (val x: Self) extends AnyVal {
+  implicit class RBDVolumeSourceMutableBuilder[Self <: RBDVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: Input[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Input[String]): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setKeyring(value: Input[String]): Self = StObject.set(x, "keyring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitorsVarargs(value: Input[String]*): Self = this.set("monitors", js.Array(value :_*))
+    def setKeyringUndefined: Self = StObject.set(x, "keyring", js.undefined)
     
     @scala.inline
-    def setMonitors(value: Input[js.Array[Input[String]]]): Self = this.set("monitors", value.asInstanceOf[js.Any])
+    def setMonitors(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "monitors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: Input[String]): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    def setMonitorsVarargs(value: Input[String]*): Self = StObject.set(x, "monitors", js.Array(value :_*))
     
     @scala.inline
-    def deleteFsType: Self = this.set("fsType", js.undefined)
+    def setPool(value: Input[String]): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyring(value: Input[String]): Self = this.set("keyring", value.asInstanceOf[js.Any])
+    def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
     
     @scala.inline
-    def deleteKeyring: Self = this.set("keyring", js.undefined)
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPool(value: Input[String]): Self = this.set("pool", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deletePool: Self = this.set("pool", js.undefined)
+    def setSecretRef(value: Input[LocalObjectReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretRef(value: Input[LocalObjectReference]): Self = this.set("secretRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretRef: Self = this.set("secretRef", js.undefined)
-    
-    @scala.inline
-    def setUser(value: Input[String]): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

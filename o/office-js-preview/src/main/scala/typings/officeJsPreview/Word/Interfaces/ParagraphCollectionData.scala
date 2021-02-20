@@ -1,12 +1,13 @@
 package typings.officeJsPreview.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `paragraphCollection.toJSON()`. */
 @js.native
-trait ParagraphCollectionData extends js.Object {
+trait ParagraphCollectionData extends StObject {
   
   var items: js.UndefOr[js.Array[ParagraphData]] = js.native
 }
@@ -19,27 +20,15 @@ object ParagraphCollectionData {
   }
   
   @scala.inline
-  implicit class ParagraphCollectionDataOps[Self <: ParagraphCollectionData] (val x: Self) extends AnyVal {
+  implicit class ParagraphCollectionDataMutableBuilder[Self <: ParagraphCollectionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[ParagraphData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemsVarargs(value: ParagraphData*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[ParagraphData]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: ParagraphData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

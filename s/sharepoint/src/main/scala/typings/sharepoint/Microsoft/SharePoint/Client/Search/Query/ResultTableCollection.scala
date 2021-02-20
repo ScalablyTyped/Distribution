@@ -7,6 +7,7 @@ import typings.sharepoint.SP.ClientValueObjectCollection
 import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,45 +59,33 @@ object ResultTableCollection {
   }
   
   @scala.inline
-  implicit class ResultTableCollectionOps[Self <: ResultTableCollection] (val x: Self) extends AnyVal {
+  implicit class ResultTableCollectionMutableBuilder[Self <: ResultTableCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_elapsedTime(value: () => Double): Self = StObject.set(x, "get_elapsedTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_item(value: Double => ResultTable): Self = StObject.set(x, "get_item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_properties(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_elapsedTime(value: () => Double): Self = this.set("get_elapsedTime", js.Any.fromFunction0(value))
+    def setGet_queryErrors(value: () => StringDictionary[ControlMessage]): Self = StObject.set(x, "get_queryErrors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_item(value: Double => ResultTable): Self = this.set("get_item", js.Any.fromFunction1(value))
+    def setGet_queryId(value: () => String): Self = StObject.set(x, "get_queryId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_properties(value: () => StringDictionary[js.Any]): Self = this.set("get_properties", js.Any.fromFunction0(value))
+    def setGet_spellingSuggestion(value: () => String): Self = StObject.set(x, "get_spellingSuggestion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_queryErrors(value: () => StringDictionary[ControlMessage]): Self = this.set("get_queryErrors", js.Any.fromFunction0(value))
+    def setGet_triggeredRules(value: () => js.Array[Guid]): Self = StObject.set(x, "get_triggeredRules", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_queryId(value: () => String): Self = this.set("get_queryId", js.Any.fromFunction0(value))
+    def setInitPropertiesFromJson(value: js.Any => Unit): Self = StObject.set(x, "initPropertiesFromJson", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_spellingSuggestion(value: () => String): Self = this.set("get_spellingSuggestion", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_triggeredRules(value: () => js.Array[Guid]): Self = this.set("get_triggeredRules", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInitPropertiesFromJson(value: js.Any => Unit): Self = this.set("initPropertiesFromJson", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_elapsedTime(value: Double => Unit): Self = this.set("set_elapsedTime", js.Any.fromFunction1(value))
+    def setSet_elapsedTime(value: Double => Unit): Self = StObject.set(x, "set_elapsedTime", js.Any.fromFunction1(value))
   }
 }

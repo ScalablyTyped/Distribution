@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientConnectResponseOptions extends js.Object {
+trait ClientConnectResponseOptions extends StObject {
   
   /**
     * Indicates whether client connect options are enabled.
@@ -31,36 +32,24 @@ object ClientConnectResponseOptions {
   }
   
   @scala.inline
-  implicit class ClientConnectResponseOptionsOps[Self <: ClientConnectResponseOptions] (val x: Self) extends AnyVal {
+  implicit class ClientConnectResponseOptionsMutableBuilder[Self <: ClientConnectResponseOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLambdaFunctionArn(value: String): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setStatus(value: ClientVpnEndpointAttributeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionArn(value: String): Self = this.set("LambdaFunctionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLambdaFunctionArn: Self = this.set("LambdaFunctionArn", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ClientVpnEndpointAttributeStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

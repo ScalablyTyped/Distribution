@@ -1,12 +1,11 @@
 package typings.awsSdkClientKmsBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/types/TagResourceExceptionsUnion", JSImport.Namespace)
-@js.native
-object tagResourceExceptionsUnionMod extends js.Object {
+object tagResourceExceptionsUnionMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException
@@ -16,5 +15,43 @@ object tagResourceExceptionsUnionMod extends js.Object {
     - typings.awsSdkClientKmsBrowser.typesLimitExceededExceptionMod.LimitExceededException
     - typings.awsSdkClientKmsBrowser.typesTagExceptionMod.TagException
   */
-  trait TagResourceExceptionsUnion extends js.Object
+  trait TagResourceExceptionsUnion extends StObject
+  object TagResourceExceptionsUnion {
+    
+    @scala.inline
+    def InvalidArnException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidArnException): typings.awsSdkClientKmsBrowser.typesInvalidArnExceptionMod.InvalidArnException = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesInvalidArnExceptionMod.InvalidArnException]
+    }
+    
+    @scala.inline
+    def KMSInternalException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException): typings.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException]
+    }
+    
+    @scala.inline
+    def KMSInvalidStateException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInvalidStateException): typings.awsSdkClientKmsBrowser.typesKmsinvalidstateexceptionMod.KMSInvalidStateException = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesKmsinvalidstateexceptionMod.KMSInvalidStateException]
+    }
+    
+    @scala.inline
+    def LimitExceededException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.LimitExceededException): typings.awsSdkClientKmsBrowser.typesLimitExceededExceptionMod.LimitExceededException = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesLimitExceededExceptionMod.LimitExceededException]
+    }
+    
+    @scala.inline
+    def NotFoundException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.NotFoundException): typings.awsSdkClientKmsBrowser.typesNotFoundExceptionMod.NotFoundException = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesNotFoundExceptionMod.NotFoundException]
+    }
+    
+    @scala.inline
+    def TagException(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.TagException): typings.awsSdkClientKmsBrowser.typesTagExceptionMod.TagException = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesTagExceptionMod.TagException]
+    }
+  }
 }

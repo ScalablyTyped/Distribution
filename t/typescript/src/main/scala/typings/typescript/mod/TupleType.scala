@@ -1,15 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typescript.mod.FlowType because Already inherited
-- typings.typescript.mod.Type because Already inherited
-- typings.typescript.mod.ObjectType because Already inherited
-- typings.typescript.mod.TypeReference because var conflicts: aliasSymbol, aliasTypeArguments, flags, objectFlags, pattern, symbol. Inlined target, node, typeArguments */ @js.native
-trait TupleType extends InterfaceType {
+@js.native
+trait TupleType extends GenericType {
   
   var combinedFlags: ElementFlags = js.native
   
@@ -23,13 +20,7 @@ trait TupleType extends InterfaceType {
   
   var minLength: Double = js.native
   
-  var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.native
-  
   var readonly: Boolean = js.native
-  
-  var target: GenericType = js.native
-  
-  var typeArguments: js.UndefOr[js.Array[Type]] = js.native
 }
 object TupleType {
   
@@ -73,66 +64,36 @@ object TupleType {
   }
   
   @scala.inline
-  implicit class TupleTypeOps[Self <: TupleType] (val x: Self) extends AnyVal {
+  implicit class TupleTypeMutableBuilder[Self <: TupleType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCombinedFlags(value: ElementFlags): Self = StObject.set(x, "combinedFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementFlags(value: js.Array[ElementFlags]): Self = StObject.set(x, "elementFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementFlagsVarargs(value: ElementFlags*): Self = StObject.set(x, "elementFlags", js.Array(value :_*))
     
     @scala.inline
-    def setCombinedFlags(value: ElementFlags): Self = this.set("combinedFlags", value.asInstanceOf[js.Any])
+    def setFixedLength(value: Double): Self = StObject.set(x, "fixedLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementFlagsVarargs(value: ElementFlags*): Self = this.set("elementFlags", js.Array(value :_*))
+    def setHasRestElement(value: Boolean): Self = StObject.set(x, "hasRestElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementFlags(value: js.Array[ElementFlags]): Self = this.set("elementFlags", value.asInstanceOf[js.Any])
+    def setLabeledElementDeclarations(value: js.Array[NamedTupleMember | ParameterDeclaration]): Self = StObject.set(x, "labeledElementDeclarations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedLength(value: Double): Self = this.set("fixedLength", value.asInstanceOf[js.Any])
+    def setLabeledElementDeclarationsUndefined: Self = StObject.set(x, "labeledElementDeclarations", js.undefined)
     
     @scala.inline
-    def setHasRestElement(value: Boolean): Self = this.set("hasRestElement", value.asInstanceOf[js.Any])
+    def setLabeledElementDeclarationsVarargs(value: (NamedTupleMember | ParameterDeclaration)*): Self = StObject.set(x, "labeledElementDeclarations", js.Array(value :_*))
     
     @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: GenericType): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabeledElementDeclarationsVarargs(value: (NamedTupleMember | ParameterDeclaration)*): Self = this.set("labeledElementDeclarations", js.Array(value :_*))
-    
-    @scala.inline
-    def setLabeledElementDeclarations(value: js.Array[NamedTupleMember | ParameterDeclaration]): Self = this.set("labeledElementDeclarations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabeledElementDeclarations: Self = this.set("labeledElementDeclarations", js.undefined)
-    
-    @scala.inline
-    def setNode(value: TypeReferenceNode | ArrayTypeNode | TupleTypeNode): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
-    
-    @scala.inline
-    def setTypeArgumentsVarargs(value: Type*): Self = this.set("typeArguments", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypeArguments(value: js.Array[Type]): Self = this.set("typeArguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeArguments: Self = this.set("typeArguments", js.undefined)
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.reactBootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-bootstrap/lib/utils/createChainedFunction", JSImport.Namespace)
-@js.native
-object createChainedFunctionMod extends js.Object {
+object createChainedFunctionMod {
   
+  @JSImport("react-bootstrap/lib/utils/createChainedFunction", JSImport.Default)
+  @js.native
   def default(funcs: js.Function*): js.Function = js.native
 }

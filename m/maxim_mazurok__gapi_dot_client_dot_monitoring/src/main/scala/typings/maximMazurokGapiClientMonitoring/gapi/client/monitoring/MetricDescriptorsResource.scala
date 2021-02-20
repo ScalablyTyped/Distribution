@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientMonitoring.anon.Alt
 import typings.maximMazurokGapiClientMonitoring.anon.PageSize
 import typings.maximMazurokGapiClientMonitoring.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricDescriptorsResource extends js.Object {
+trait MetricDescriptorsResource extends StObject {
   
   def create(request: Alt, body: MetricDescriptor): Request[MetricDescriptor] = js.native
   /** Creates a new metric descriptor. User-created metric descriptors define custom metrics (https://cloud.google.com/monitoring/custom-metrics). */

@@ -1,16 +1,15 @@
 package typings.vscodeJsonrpc
 
 import typings.vscodeJsonrpc.eventsMod.Disposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-jsonrpc/lib/cancellation", JSImport.Namespace)
-@js.native
-object cancellationMod extends js.Object {
+object cancellationMod {
   
   @js.native
-  trait CancellationToken extends js.Object {
+  trait CancellationToken extends StObject {
     
     /**
       * Is `true` when the token has been cancelled, `false` otherwise.
@@ -29,18 +28,24 @@ object cancellationMod extends js.Object {
     def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
     def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   }
-  @js.native
-  object CancellationToken extends js.Object {
+  object CancellationToken {
     
+    @JSImport("vscode-jsonrpc/lib/cancellation", "CancellationToken.Cancelled")
+    @js.native
     val Cancelled: CancellationToken = js.native
     
+    @JSImport("vscode-jsonrpc/lib/cancellation", "CancellationToken.None")
+    @js.native
     val None: CancellationToken = js.native
     
+    @JSImport("vscode-jsonrpc/lib/cancellation", "CancellationToken.is")
+    @js.native
     def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean = js.native
   }
   
+  @JSImport("vscode-jsonrpc/lib/cancellation", "CancellationTokenSource")
   @js.native
-  class CancellationTokenSource () extends js.Object {
+  class CancellationTokenSource () extends StObject {
     
     var _token: js.Any = js.native
     

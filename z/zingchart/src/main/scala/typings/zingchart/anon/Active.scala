@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Active extends js.Object {
+trait Active extends StObject {
   
   var active: js.UndefOr[`0`] = js.native
   
@@ -98,126 +99,114 @@ object Active {
   }
   
   @scala.inline
-  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: `0`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAdjust-layout`(value: Boolean): Self = StObject.set(x, "adjust-layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: `0`): Self = this.set("active", value.asInstanceOf[js.Any])
+    def `setAdjust-layoutUndefined`: Self = StObject.set(x, "adjust-layout", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAdjust-layout`(value: Boolean): Self = this.set("adjust-layout", value.asInstanceOf[js.Any])
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def `deleteAdjust-layout`: Self = this.set("adjust-layout", js.undefined)
+    def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-color`(value: String): Self = this.set("background-color", value.asInstanceOf[js.Any])
+    def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
     
     @scala.inline
-    def `deleteBackground-color`: Self = this.set("background-color", js.undefined)
+    def `setBorder-width`(value: js.Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-color`(value: String): Self = this.set("border-color", value.asInstanceOf[js.Any])
+    def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
     @scala.inline
-    def `deleteBorder-color`: Self = this.set("border-color", js.undefined)
+    def setHandle(value: Borderright): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-width`(value: js.Any): Self = this.set("border-width", value.asInstanceOf[js.Any])
+    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
     @scala.inline
-    def `deleteBorder-width`: Self = this.set("border-width", js.undefined)
+    def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: Borderright): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHandle: Self = this.set("handle", js.undefined)
+    def setLabel(value: Borderradiustopleft): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: js.Any): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Borderradiustopleft): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLive(value: Boolean): Self = this.set("live", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLive: Self = this.set("live", js.undefined)
+    def setMask(value: `0`): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def `setMin-distance`(value: Double): Self = StObject.set(x, "min-distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: `0`): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def `setMin-distanceUndefined`: Self = StObject.set(x, "min-distance", js.undefined)
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMin-distance`(value: Double): Self = this.set("min-distance", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def `deleteMin-distance`: Self = this.set("min-distance", js.undefined)
+    def `setPreserve-zoom`(value: Boolean): Self = StObject.set(x, "preserve-zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def `setPreserve-zoomUndefined`: Self = StObject.set(x, "preserve-zoom", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPreserve-zoom`(value: Boolean): Self = this.set("preserve-zoom", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def `deletePreserve-zoom`: Self = this.set("preserve-zoom", js.undefined)
+    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: js.Any): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: js.Any): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

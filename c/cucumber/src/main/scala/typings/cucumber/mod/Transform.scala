@@ -1,12 +1,13 @@
 package typings.cucumber.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transform extends js.Object {
+trait Transform extends StObject {
   
   var name: js.UndefOr[String] = js.native
   
@@ -29,48 +30,36 @@ object Transform {
   }
   
   @scala.inline
-  implicit class TransformOps[Self <: Transform] (val x: Self) extends AnyVal {
+  implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreferForRegexpMatch(value: Boolean): Self = StObject.set(x, "preferForRegexpMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexp(value: RegExp): Self = this.set("regexp", value.asInstanceOf[js.Any])
+    def setPreferForRegexpMatchUndefined: Self = StObject.set(x, "preferForRegexpMatch", js.undefined)
     
     @scala.inline
-    def setTransformer(value: /* repeated */ String => js.Any): Self = this.set("transformer", js.Any.fromFunction1(value))
+    def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTransformer(value: /* repeated */ String => js.Any): Self = StObject.set(x, "transformer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferForRegexpMatch(value: Boolean): Self = this.set("preferForRegexpMatch", value.asInstanceOf[js.Any])
+    def setTypeNameUndefined: Self = StObject.set(x, "typeName", js.undefined)
     
     @scala.inline
-    def deletePreferForRegexpMatch: Self = this.set("preferForRegexpMatch", js.undefined)
+    def setUseForSnippets(value: Boolean): Self = StObject.set(x, "useForSnippets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeName(value: String): Self = this.set("typeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeName: Self = this.set("typeName", js.undefined)
-    
-    @scala.inline
-    def setUseForSnippets(value: Boolean): Self = this.set("useForSnippets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseForSnippets: Self = this.set("useForSnippets", js.undefined)
+    def setUseForSnippetsUndefined: Self = StObject.set(x, "useForSnippets", js.undefined)
   }
 }

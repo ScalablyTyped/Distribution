@@ -1,11 +1,12 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth0Error extends js.Object {
+trait Auth0Error extends StObject {
   
   // Need to include non-intuitive error fields that Auth0 uses
   var code: js.UndefOr[String] = js.native
@@ -38,75 +39,63 @@ object Auth0Error {
   }
   
   @scala.inline
-  implicit class Auth0ErrorOps[Self <: Auth0Error] (val x: Self) extends AnyVal {
+  implicit class Auth0ErrorMutableBuilder[Self <: Auth0Error] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: LibErrorCodes | SpecErrorCodes | String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setError(value: LibErrorCodes | SpecErrorCodes | String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setErrorDescription(value: String): Self = StObject.set(x, "errorDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setErrorDescriptionUndefined: Self = StObject.set(x, "errorDescription", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDescription(value: String): Self = this.set("errorDescription", value.asInstanceOf[js.Any])
+    def setError_descriptionUndefined: Self = StObject.set(x, "error_description", js.undefined)
     
     @scala.inline
-    def deleteErrorDescription: Self = this.set("errorDescription", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_description(value: String): Self = this.set("error_description", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteError_description: Self = this.set("error_description", js.undefined)
+    def setOriginal(value: js.Any): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal(value: js.Any): Self = this.set("original", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def deleteOriginal: Self = this.set("original", js.undefined)
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: String): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
     @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
-    
-    @scala.inline
-    def setStatusText(value: String): Self = this.set("statusText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusText: Self = this.set("statusText", js.undefined)
+    def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
   }
 }

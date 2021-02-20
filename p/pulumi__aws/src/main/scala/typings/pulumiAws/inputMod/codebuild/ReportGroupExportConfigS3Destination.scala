@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.codebuild
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportGroupExportConfigS3Destination extends js.Object {
+trait ReportGroupExportConfigS3Destination extends StObject {
   
   /**
     * The name of the S3 bucket where the raw data of a report are exported.
@@ -43,42 +44,30 @@ object ReportGroupExportConfigS3Destination {
   }
   
   @scala.inline
-  implicit class ReportGroupExportConfigS3DestinationOps[Self <: ReportGroupExportConfigS3Destination] (val x: Self) extends AnyVal {
+  implicit class ReportGroupExportConfigS3DestinationMutableBuilder[Self <: ReportGroupExportConfigS3Destination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionDisabled(value: Input[Boolean]): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
     
     @scala.inline
-    def setBucket(value: Input[String]): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setEncryptionKey(value: Input[String]): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionKey(value: Input[String]): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    def setPackaging(value: Input[String]): Self = StObject.set(x, "packaging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionDisabled(value: Input[Boolean]): Self = this.set("encryptionDisabled", value.asInstanceOf[js.Any])
+    def setPackagingUndefined: Self = StObject.set(x, "packaging", js.undefined)
     
     @scala.inline
-    def deleteEncryptionDisabled: Self = this.set("encryptionDisabled", js.undefined)
+    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackaging(value: Input[String]): Self = this.set("packaging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackaging: Self = this.set("packaging", js.undefined)
-    
-    @scala.inline
-    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

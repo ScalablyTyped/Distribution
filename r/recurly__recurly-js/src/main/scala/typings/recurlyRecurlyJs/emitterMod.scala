@@ -1,15 +1,14 @@
 package typings.recurlyRecurlyJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@recurly/recurly-js/lib/emitter", JSImport.Namespace)
-@js.native
-object emitterMod extends js.Object {
+object emitterMod {
   
   @js.native
-  trait Emitter[Event] extends js.Object {
+  trait Emitter[Event] extends StObject {
     
     def emit(event: Event, args: js.Any*): Emitter[Event] = js.native
     

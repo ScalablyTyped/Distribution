@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalFormatRule extends js.Object {
+trait ConditionalFormatRule extends StObject {
   
   /** The formatting is either "on" or "off" according to the rule. */
   var booleanRule: js.UndefOr[BooleanRule] = js.native
@@ -25,39 +26,27 @@ object ConditionalFormatRule {
   }
   
   @scala.inline
-  implicit class ConditionalFormatRuleOps[Self <: ConditionalFormatRule] (val x: Self) extends AnyVal {
+  implicit class ConditionalFormatRuleMutableBuilder[Self <: ConditionalFormatRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBooleanRule(value: BooleanRule): Self = StObject.set(x, "booleanRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBooleanRuleUndefined: Self = StObject.set(x, "booleanRule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGradientRule(value: GradientRule): Self = StObject.set(x, "gradientRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooleanRule(value: BooleanRule): Self = this.set("booleanRule", value.asInstanceOf[js.Any])
+    def setGradientRuleUndefined: Self = StObject.set(x, "gradientRule", js.undefined)
     
     @scala.inline
-    def deleteBooleanRule: Self = this.set("booleanRule", js.undefined)
+    def setRanges(value: js.Array[GridRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientRule(value: GradientRule): Self = this.set("gradientRule", value.asInstanceOf[js.Any])
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def deleteGradientRule: Self = this.set("gradientRule", js.undefined)
-    
-    @scala.inline
-    def setRangesVarargs(value: GridRange*): Self = this.set("ranges", js.Array(value :_*))
-    
-    @scala.inline
-    def setRanges(value: js.Array[GridRange]): Self = this.set("ranges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
+    def setRangesVarargs(value: GridRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.textEncoding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDecoderOptions extends js.Object {
+trait TextDecoderOptions extends StObject {
   
   var stream: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object TextDecoderOptions {
   }
   
   @scala.inline
-  implicit class TextDecoderOptionsOps[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
+  implicit class TextDecoderOptionsMutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStream(value: Boolean): Self = this.set("stream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

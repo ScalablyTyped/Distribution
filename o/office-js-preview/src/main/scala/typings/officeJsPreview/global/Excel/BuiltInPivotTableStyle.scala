@@ -1,5 +1,6 @@
 package typings.officeJsPreview.global.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Excel.BuiltInPivotTableStyle")
 @js.native
-object BuiltInPivotTableStyle extends js.Object {
+object BuiltInPivotTableStyle extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.BuiltInPivotTableStyle with String] = js.native

@@ -1,5 +1,6 @@
 package typings.winrt.Windows.Data.Xml.Dom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,69 +96,57 @@ object IXmlDocument {
   }
   
   @scala.inline
-  implicit class IXmlDocumentOps[Self <: IXmlDocument] (val x: Self) extends AnyVal {
+  implicit class IXmlDocumentMutableBuilder[Self <: IXmlDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateAttribute(value: String => XmlAttribute): Self = StObject.set(x, "createAttribute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateAttributeNS(value: (js.Any, String) => XmlAttribute): Self = StObject.set(x, "createAttributeNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateCDataSection(value: String => XmlCDataSection): Self = StObject.set(x, "createCDataSection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateAttribute(value: String => XmlAttribute): Self = this.set("createAttribute", js.Any.fromFunction1(value))
+    def setCreateComment(value: String => XmlComment): Self = StObject.set(x, "createComment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateAttributeNS(value: (js.Any, String) => XmlAttribute): Self = this.set("createAttributeNS", js.Any.fromFunction2(value))
+    def setCreateDocumentFragment(value: () => XmlDocumentFragment): Self = StObject.set(x, "createDocumentFragment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateCDataSection(value: String => XmlCDataSection): Self = this.set("createCDataSection", js.Any.fromFunction1(value))
+    def setCreateElement(value: String => XmlElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateComment(value: String => XmlComment): Self = this.set("createComment", js.Any.fromFunction1(value))
+    def setCreateElementNS(value: (js.Any, String) => XmlElement): Self = StObject.set(x, "createElementNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateDocumentFragment(value: () => XmlDocumentFragment): Self = this.set("createDocumentFragment", js.Any.fromFunction0(value))
+    def setCreateEntityReference(value: String => XmlEntityReference): Self = StObject.set(x, "createEntityReference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateElement(value: String => XmlElement): Self = this.set("createElement", js.Any.fromFunction1(value))
+    def setCreateProcessingInstruction(value: (String, String) => XmlProcessingInstruction): Self = StObject.set(x, "createProcessingInstruction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateElementNS(value: (js.Any, String) => XmlElement): Self = this.set("createElementNS", js.Any.fromFunction2(value))
+    def setCreateTextNode(value: String => XmlText): Self = StObject.set(x, "createTextNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateEntityReference(value: String => XmlEntityReference): Self = this.set("createEntityReference", js.Any.fromFunction1(value))
+    def setDoctype(value: XmlDocumentType): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateProcessingInstruction(value: (String, String) => XmlProcessingInstruction): Self = this.set("createProcessingInstruction", js.Any.fromFunction2(value))
+    def setDocumentElement(value: XmlElement): Self = StObject.set(x, "documentElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTextNode(value: String => XmlText): Self = this.set("createTextNode", js.Any.fromFunction1(value))
+    def setDocumentUri(value: String): Self = StObject.set(x, "documentUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoctype(value: XmlDocumentType): Self = this.set("doctype", value.asInstanceOf[js.Any])
+    def setGetElementById(value: String => XmlElement): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDocumentElement(value: XmlElement): Self = this.set("documentElement", value.asInstanceOf[js.Any])
+    def setGetElementsByTagName(value: String => XmlNodeList): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDocumentUri(value: String): Self = this.set("documentUri", value.asInstanceOf[js.Any])
+    def setImplementation(value: XmlDomImplementation): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetElementById(value: String => XmlElement): Self = this.set("getElementById", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetElementsByTagName(value: String => XmlNodeList): Self = this.set("getElementsByTagName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setImplementation(value: XmlDomImplementation): Self = this.set("implementation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImportNode(value: (IXmlNode, Boolean) => IXmlNode): Self = this.set("importNode", js.Any.fromFunction2(value))
+    def setImportNode(value: (IXmlNode, Boolean) => IXmlNode): Self = StObject.set(x, "importNode", js.Any.fromFunction2(value))
   }
 }

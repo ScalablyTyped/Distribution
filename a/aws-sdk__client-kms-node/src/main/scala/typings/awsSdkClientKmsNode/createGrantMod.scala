@@ -1,12 +1,13 @@
 package typings.awsSdkClientKmsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/model/CreateGrant", JSImport.Namespace)
-@js.native
-object createGrantMod extends js.Object {
+object createGrantMod {
   
+  @JSImport("@aws-sdk/client-kms-node/model/CreateGrant", "CreateGrant")
+  @js.native
   val CreateGrant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

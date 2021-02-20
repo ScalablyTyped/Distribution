@@ -1,12 +1,11 @@
 package typings.tablesorter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Sorting/TextSorter", JSImport.Namespace)
-@js.native
-object textSorterMod extends js.Object {
+object textSorterMod {
   
   type TextSorter[TElement] = js.Function5[
     /* x */ String, 

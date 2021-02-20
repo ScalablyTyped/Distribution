@@ -3,6 +3,7 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,30 +38,18 @@ object QuerySuggestionQuery {
   }
   
   @scala.inline
-  implicit class QuerySuggestionQueryOps[Self <: QuerySuggestionQuery] (val x: Self) extends AnyVal {
+  implicit class QuerySuggestionQueryMutableBuilder[Self <: QuerySuggestionQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_isPersonal(value: () => Boolean): Self = StObject.set(x, "get_isPersonal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_query(value: () => String): Self = StObject.set(x, "get_query", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSet_isPersonal(value: Boolean => Unit): Self = StObject.set(x, "set_isPersonal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_isPersonal(value: () => Boolean): Self = this.set("get_isPersonal", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_query(value: () => String): Self = this.set("get_query", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_isPersonal(value: Boolean => Unit): Self = this.set("set_isPersonal", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_query(value: String => Unit): Self = this.set("set_query", js.Any.fromFunction1(value))
+    def setSet_query(value: String => Unit): Self = StObject.set(x, "set_query", js.Any.fromFunction1(value))
   }
 }

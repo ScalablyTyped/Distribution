@@ -7,14 +7,14 @@ import typings.appBuilderLib.winPackagerMod.WinPackager
 import typings.builderUtil.archMod.Arch
 import typings.builderUtilRuntime.updateInfoMod.PackageFileInfo
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/targets/nsis/NsisTarget", JSImport.Namespace)
-@js.native
-object nsisTargetMod extends js.Object {
+object nsisTargetMod {
   
+  @JSImport("app-builder-lib/out/targets/nsis/NsisTarget", "NsisTarget")
   @js.native
   class NsisTarget protected () extends Target {
     def this(packager: WinPackager, outDir: String, targetName: String, packageHelper: AppPackageHelper) = this()

@@ -1,11 +1,12 @@
 package typings.jsforce.describeResultMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDescribeSObjectOptions extends js.Object {
+trait BatchDescribeSObjectOptions extends StObject {
   
   var autofetch: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object BatchDescribeSObjectOptions {
   }
   
   @scala.inline
-  implicit class BatchDescribeSObjectOptionsOps[Self <: BatchDescribeSObjectOptions] (val x: Self) extends AnyVal {
+  implicit class BatchDescribeSObjectOptionsMutableBuilder[Self <: BatchDescribeSObjectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutofetch(value: Boolean): Self = StObject.set(x, "autofetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutofetchUndefined: Self = StObject.set(x, "autofetch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxConcurrentRequests(value: Double): Self = StObject.set(x, "maxConcurrentRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    def setMaxConcurrentRequestsUndefined: Self = StObject.set(x, "maxConcurrentRequests", js.undefined)
     
     @scala.inline
-    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutofetch(value: Boolean): Self = this.set("autofetch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutofetch: Self = this.set("autofetch", js.undefined)
-    
-    @scala.inline
-    def setMaxConcurrentRequests(value: Double): Self = this.set("maxConcurrentRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxConcurrentRequests: Self = this.set("maxConcurrentRequests", js.undefined)
+    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

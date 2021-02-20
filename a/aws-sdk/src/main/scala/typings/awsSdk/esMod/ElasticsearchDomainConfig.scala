@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElasticsearchDomainConfig extends js.Object {
+trait ElasticsearchDomainConfig extends StObject {
   
   /**
     * IAM access policy as a JSON-formatted string.
@@ -81,96 +82,84 @@ object ElasticsearchDomainConfig {
   }
   
   @scala.inline
-  implicit class ElasticsearchDomainConfigOps[Self <: ElasticsearchDomainConfig] (val x: Self) extends AnyVal {
+  implicit class ElasticsearchDomainConfigMutableBuilder[Self <: ElasticsearchDomainConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPolicies(value: AccessPoliciesStatus): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessPoliciesUndefined: Self = StObject.set(x, "AccessPolicies", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvancedOptions(value: AdvancedOptionsStatus): Self = StObject.set(x, "AdvancedOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicies(value: AccessPoliciesStatus): Self = this.set("AccessPolicies", value.asInstanceOf[js.Any])
+    def setAdvancedOptionsUndefined: Self = StObject.set(x, "AdvancedOptions", js.undefined)
     
     @scala.inline
-    def deleteAccessPolicies: Self = this.set("AccessPolicies", js.undefined)
+    def setAdvancedSecurityOptions(value: AdvancedSecurityOptionsStatus): Self = StObject.set(x, "AdvancedSecurityOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvancedOptions(value: AdvancedOptionsStatus): Self = this.set("AdvancedOptions", value.asInstanceOf[js.Any])
+    def setAdvancedSecurityOptionsUndefined: Self = StObject.set(x, "AdvancedSecurityOptions", js.undefined)
     
     @scala.inline
-    def deleteAdvancedOptions: Self = this.set("AdvancedOptions", js.undefined)
+    def setCognitoOptions(value: CognitoOptionsStatus): Self = StObject.set(x, "CognitoOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvancedSecurityOptions(value: AdvancedSecurityOptionsStatus): Self = this.set("AdvancedSecurityOptions", value.asInstanceOf[js.Any])
+    def setCognitoOptionsUndefined: Self = StObject.set(x, "CognitoOptions", js.undefined)
     
     @scala.inline
-    def deleteAdvancedSecurityOptions: Self = this.set("AdvancedSecurityOptions", js.undefined)
+    def setDomainEndpointOptions(value: DomainEndpointOptionsStatus): Self = StObject.set(x, "DomainEndpointOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCognitoOptions(value: CognitoOptionsStatus): Self = this.set("CognitoOptions", value.asInstanceOf[js.Any])
+    def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "DomainEndpointOptions", js.undefined)
     
     @scala.inline
-    def deleteCognitoOptions: Self = this.set("CognitoOptions", js.undefined)
+    def setEBSOptions(value: EBSOptionsStatus): Self = StObject.set(x, "EBSOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainEndpointOptions(value: DomainEndpointOptionsStatus): Self = this.set("DomainEndpointOptions", value.asInstanceOf[js.Any])
+    def setEBSOptionsUndefined: Self = StObject.set(x, "EBSOptions", js.undefined)
     
     @scala.inline
-    def deleteDomainEndpointOptions: Self = this.set("DomainEndpointOptions", js.undefined)
+    def setElasticsearchClusterConfig(value: ElasticsearchClusterConfigStatus): Self = StObject.set(x, "ElasticsearchClusterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEBSOptions(value: EBSOptionsStatus): Self = this.set("EBSOptions", value.asInstanceOf[js.Any])
+    def setElasticsearchClusterConfigUndefined: Self = StObject.set(x, "ElasticsearchClusterConfig", js.undefined)
     
     @scala.inline
-    def deleteEBSOptions: Self = this.set("EBSOptions", js.undefined)
+    def setElasticsearchVersion(value: ElasticsearchVersionStatus): Self = StObject.set(x, "ElasticsearchVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearchClusterConfig(value: ElasticsearchClusterConfigStatus): Self = this.set("ElasticsearchClusterConfig", value.asInstanceOf[js.Any])
+    def setElasticsearchVersionUndefined: Self = StObject.set(x, "ElasticsearchVersion", js.undefined)
     
     @scala.inline
-    def deleteElasticsearchClusterConfig: Self = this.set("ElasticsearchClusterConfig", js.undefined)
+    def setEncryptionAtRestOptions(value: EncryptionAtRestOptionsStatus): Self = StObject.set(x, "EncryptionAtRestOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearchVersion(value: ElasticsearchVersionStatus): Self = this.set("ElasticsearchVersion", value.asInstanceOf[js.Any])
+    def setEncryptionAtRestOptionsUndefined: Self = StObject.set(x, "EncryptionAtRestOptions", js.undefined)
     
     @scala.inline
-    def deleteElasticsearchVersion: Self = this.set("ElasticsearchVersion", js.undefined)
+    def setLogPublishingOptions(value: LogPublishingOptionsStatus): Self = StObject.set(x, "LogPublishingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionAtRestOptions(value: EncryptionAtRestOptionsStatus): Self = this.set("EncryptionAtRestOptions", value.asInstanceOf[js.Any])
+    def setLogPublishingOptionsUndefined: Self = StObject.set(x, "LogPublishingOptions", js.undefined)
     
     @scala.inline
-    def deleteEncryptionAtRestOptions: Self = this.set("EncryptionAtRestOptions", js.undefined)
+    def setNodeToNodeEncryptionOptions(value: NodeToNodeEncryptionOptionsStatus): Self = StObject.set(x, "NodeToNodeEncryptionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogPublishingOptions(value: LogPublishingOptionsStatus): Self = this.set("LogPublishingOptions", value.asInstanceOf[js.Any])
+    def setNodeToNodeEncryptionOptionsUndefined: Self = StObject.set(x, "NodeToNodeEncryptionOptions", js.undefined)
     
     @scala.inline
-    def deleteLogPublishingOptions: Self = this.set("LogPublishingOptions", js.undefined)
+    def setSnapshotOptions(value: SnapshotOptionsStatus): Self = StObject.set(x, "SnapshotOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeToNodeEncryptionOptions(value: NodeToNodeEncryptionOptionsStatus): Self = this.set("NodeToNodeEncryptionOptions", value.asInstanceOf[js.Any])
+    def setSnapshotOptionsUndefined: Self = StObject.set(x, "SnapshotOptions", js.undefined)
     
     @scala.inline
-    def deleteNodeToNodeEncryptionOptions: Self = this.set("NodeToNodeEncryptionOptions", js.undefined)
+    def setVPCOptions(value: VPCDerivedInfoStatus): Self = StObject.set(x, "VPCOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotOptions(value: SnapshotOptionsStatus): Self = this.set("SnapshotOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotOptions: Self = this.set("SnapshotOptions", js.undefined)
-    
-    @scala.inline
-    def setVPCOptions(value: VPCDerivedInfoStatus): Self = this.set("VPCOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVPCOptions: Self = this.set("VPCOptions", js.undefined)
+    def setVPCOptionsUndefined: Self = StObject.set(x, "VPCOptions", js.undefined)
   }
 }

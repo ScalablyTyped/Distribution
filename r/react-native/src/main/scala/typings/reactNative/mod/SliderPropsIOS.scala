@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,42 +41,30 @@ object SliderPropsIOS {
   }
   
   @scala.inline
-  implicit class SliderPropsIOSOps[Self <: SliderPropsIOS] (val x: Self) extends AnyVal {
+  implicit class SliderPropsIOSMutableBuilder[Self <: SliderPropsIOS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumTrackImage(value: ImageURISource): Self = StObject.set(x, "maximumTrackImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumTrackImageUndefined: Self = StObject.set(x, "maximumTrackImage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumTrackImage(value: ImageURISource): Self = StObject.set(x, "minimumTrackImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumTrackImage(value: ImageURISource): Self = this.set("maximumTrackImage", value.asInstanceOf[js.Any])
+    def setMinimumTrackImageUndefined: Self = StObject.set(x, "minimumTrackImage", js.undefined)
     
     @scala.inline
-    def deleteMaximumTrackImage: Self = this.set("maximumTrackImage", js.undefined)
+    def setThumbImage(value: ImageURISource): Self = StObject.set(x, "thumbImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumTrackImage(value: ImageURISource): Self = this.set("minimumTrackImage", value.asInstanceOf[js.Any])
+    def setThumbImageUndefined: Self = StObject.set(x, "thumbImage", js.undefined)
     
     @scala.inline
-    def deleteMinimumTrackImage: Self = this.set("minimumTrackImage", js.undefined)
+    def setTrackImage(value: ImageURISource): Self = StObject.set(x, "trackImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbImage(value: ImageURISource): Self = this.set("thumbImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbImage: Self = this.set("thumbImage", js.undefined)
-    
-    @scala.inline
-    def setTrackImage(value: ImageURISource): Self = this.set("trackImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackImage: Self = this.set("trackImage", js.undefined)
+    def setTrackImageUndefined: Self = StObject.set(x, "trackImage", js.undefined)
   }
 }

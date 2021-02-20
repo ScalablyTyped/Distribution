@@ -12,22 +12,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "sfn")
-@js.native
-object sfn extends js.Object {
+object sfn {
   
-  def getActivity(): js.Promise[GetActivityResult] = js.native
-  def getActivity(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetActivityResult] = js.native
-  def getActivity(args: GetActivityArgs): js.Promise[GetActivityResult] = js.native
-  def getActivity(args: GetActivityArgs, opts: InvokeOptions): js.Promise[GetActivityResult] = js.native
-  
-  def getStateMachine(args: GetStateMachineArgs): js.Promise[GetStateMachineResult] = js.native
-  def getStateMachine(args: GetStateMachineArgs, opts: InvokeOptions): js.Promise[GetStateMachineResult] = js.native
-  
+  @JSImport("@pulumi/aws", "sfn.Activity")
   @js.native
   class Activity protected ()
     extends typings.pulumiAws.sfnMod.Activity {
@@ -44,8 +36,7 @@ object sfn extends js.Object {
     def this(name: String, args: ActivityArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Activity extends js.Object {
+  object Activity {
     
     /**
       * Get an existing Activity resource's state with the given name, ID, and optional extra
@@ -56,18 +47,29 @@ object sfn extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "sfn.Activity.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.activityMod.Activity = js.native
+    @JSImport("@pulumi/aws", "sfn.Activity.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.activityMod.Activity = js.native
+    @JSImport("@pulumi/aws", "sfn.Activity.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ActivityState): typings.pulumiAws.activityMod.Activity = js.native
+    @JSImport("@pulumi/aws", "sfn.Activity.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ActivityState, opts: CustomResourceOptions): typings.pulumiAws.activityMod.Activity = js.native
     
     /**
       * Returns true if the given object is an instance of Activity.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "sfn.Activity.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sfn/activity.Activity */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "sfn.StateMachine")
   @js.native
   class StateMachine protected ()
     extends typings.pulumiAws.sfnMod.StateMachine {
@@ -82,8 +84,7 @@ object sfn extends js.Object {
     def this(name: String, args: StateMachineArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object StateMachine extends js.Object {
+  object StateMachine {
     
     /**
       * Get an existing StateMachine resource's state with the given name, ID, and optional extra
@@ -94,15 +95,45 @@ object sfn extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "sfn.StateMachine.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.stateMachineMod.StateMachine = js.native
+    @JSImport("@pulumi/aws", "sfn.StateMachine.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.stateMachineMod.StateMachine = js.native
+    @JSImport("@pulumi/aws", "sfn.StateMachine.get")
+    @js.native
     def get(name: String, id: Input[ID], state: StateMachineState): typings.pulumiAws.stateMachineMod.StateMachine = js.native
+    @JSImport("@pulumi/aws", "sfn.StateMachine.get")
+    @js.native
     def get(name: String, id: Input[ID], state: StateMachineState, opts: CustomResourceOptions): typings.pulumiAws.stateMachineMod.StateMachine = js.native
     
     /**
       * Returns true if the given object is an instance of StateMachine.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "sfn.StateMachine.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sfn/stateMachine.StateMachine */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws", "sfn.getActivity")
+  @js.native
+  def getActivity(): js.Promise[GetActivityResult] = js.native
+  @JSImport("@pulumi/aws", "sfn.getActivity")
+  @js.native
+  def getActivity(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetActivityResult] = js.native
+  @JSImport("@pulumi/aws", "sfn.getActivity")
+  @js.native
+  def getActivity(args: GetActivityArgs): js.Promise[GetActivityResult] = js.native
+  @JSImport("@pulumi/aws", "sfn.getActivity")
+  @js.native
+  def getActivity(args: GetActivityArgs, opts: InvokeOptions): js.Promise[GetActivityResult] = js.native
+  
+  @JSImport("@pulumi/aws", "sfn.getStateMachine")
+  @js.native
+  def getStateMachine(args: GetStateMachineArgs): js.Promise[GetStateMachineResult] = js.native
+  @JSImport("@pulumi/aws", "sfn.getStateMachine")
+  @js.native
+  def getStateMachine(args: GetStateMachineArgs, opts: InvokeOptions): js.Promise[GetStateMachineResult] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelJobExecutionRequest extends js.Object {
+trait CancelJobExecutionRequest extends StObject {
   
   /**
     * (Optional) The expected current version of the job execution. Each time you update the job execution, its version is incremented. If the version of the job execution stored in Jobs does not match, the update is rejected with a VersionMismatch error, and an ErrorResponse that contains the current job execution status data is returned. (This makes it unnecessary to perform a separate DescribeJobExecution request in order to obtain the job execution status data.)
@@ -41,42 +42,30 @@ object CancelJobExecutionRequest {
   }
   
   @scala.inline
-  implicit class CancelJobExecutionRequestOps[Self <: CancelJobExecutionRequest] (val x: Self) extends AnyVal {
+  implicit class CancelJobExecutionRequestMutableBuilder[Self <: CancelJobExecutionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpectedVersion(value: ExpectedVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: ForceFlag): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedVersion(value: ExpectedVersion): Self = this.set("expectedVersion", value.asInstanceOf[js.Any])
+    def setStatusDetails(value: DetailsMap): Self = StObject.set(x, "statusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpectedVersion: Self = this.set("expectedVersion", js.undefined)
+    def setStatusDetailsUndefined: Self = StObject.set(x, "statusDetails", js.undefined)
     
     @scala.inline
-    def setForce(value: ForceFlag): Self = this.set("force", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
-    
-    @scala.inline
-    def setStatusDetails(value: DetailsMap): Self = this.set("statusDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusDetails: Self = this.set("statusDetails", js.undefined)
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

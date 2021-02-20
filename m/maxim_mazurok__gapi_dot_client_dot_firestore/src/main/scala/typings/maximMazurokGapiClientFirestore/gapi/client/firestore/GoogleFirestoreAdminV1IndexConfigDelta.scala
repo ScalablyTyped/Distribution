@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleFirestoreAdminV1IndexConfigDelta extends js.Object {
+trait GoogleFirestoreAdminV1IndexConfigDelta extends StObject {
   
   /** Specifies how the index is changing. */
   var changeType: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleFirestoreAdminV1IndexConfigDelta {
   }
   
   @scala.inline
-  implicit class GoogleFirestoreAdminV1IndexConfigDeltaOps[Self <: GoogleFirestoreAdminV1IndexConfigDelta] (val x: Self) extends AnyVal {
+  implicit class GoogleFirestoreAdminV1IndexConfigDeltaMutableBuilder[Self <: GoogleFirestoreAdminV1IndexConfigDelta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: GoogleFirestoreAdminV1Index): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: String): Self = this.set("changeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChangeType: Self = this.set("changeType", js.undefined)
-    
-    @scala.inline
-    def setIndex(value: GoogleFirestoreAdminV1Index): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import typings.watsonDeveloperCloud.v1GeneratedMod.GetMetricsQueryNoResultsConstants.ResultType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `getMetricsQueryNoResults` operation. */
 @js.native
-trait GetMetricsQueryNoResultsParams extends js.Object {
+trait GetMetricsQueryNoResultsParams extends StObject {
   
   /** Metric is computed from data recorded before this timestamp; must be in `YYYY-MM-DDThh:mm:ssZ` format. */
   var end_time: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object GetMetricsQueryNoResultsParams {
   }
   
   @scala.inline
-  implicit class GetMetricsQueryNoResultsParamsOps[Self <: GetMetricsQueryNoResultsParams] (val x: Self) extends AnyVal {
+  implicit class GetMetricsQueryNoResultsParamsMutableBuilder[Self <: GetMetricsQueryNoResultsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd_timeUndefined: Self = StObject.set(x, "end_time", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_time(value: String): Self = this.set("end_time", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteEnd_time: Self = this.set("end_time", js.undefined)
+    def setResult_type(value: ResultType | String): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult_type(value: ResultType | String): Self = this.set("result_type", value.asInstanceOf[js.Any])
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def deleteResult_type: Self = this.set("result_type", js.undefined)
+    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
-    
-    @scala.inline
-    def setStart_time(value: String): Self = this.set("start_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart_time: Self = this.set("start_time", js.undefined)
+    def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
   }
 }

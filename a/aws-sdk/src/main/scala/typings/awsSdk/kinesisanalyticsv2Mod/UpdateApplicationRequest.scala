@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateApplicationRequest extends js.Object {
+trait UpdateApplicationRequest extends StObject {
   
   /**
     * Describes application configuration updates.
@@ -46,51 +47,39 @@ object UpdateApplicationRequest {
   }
   
   @scala.inline
-  implicit class UpdateApplicationRequestOps[Self <: UpdateApplicationRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateApplicationRequestMutableBuilder[Self <: UpdateApplicationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationConfigurationUpdate(value: ApplicationConfigurationUpdate): Self = StObject.set(x, "ApplicationConfigurationUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationConfigurationUpdateUndefined: Self = StObject.set(x, "ApplicationConfigurationUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    def setCloudWatchLoggingOptionUpdates(value: CloudWatchLoggingOptionUpdates): Self = StObject.set(x, "CloudWatchLoggingOptionUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = this.set("CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    def setCloudWatchLoggingOptionUpdatesUndefined: Self = StObject.set(x, "CloudWatchLoggingOptionUpdates", js.undefined)
     
     @scala.inline
-    def setApplicationConfigurationUpdate(value: ApplicationConfigurationUpdate): Self = this.set("ApplicationConfigurationUpdate", value.asInstanceOf[js.Any])
+    def setCloudWatchLoggingOptionUpdatesVarargs(value: CloudWatchLoggingOptionUpdate*): Self = StObject.set(x, "CloudWatchLoggingOptionUpdates", js.Array(value :_*))
     
     @scala.inline
-    def deleteApplicationConfigurationUpdate: Self = this.set("ApplicationConfigurationUpdate", js.undefined)
+    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLoggingOptionUpdatesVarargs(value: CloudWatchLoggingOptionUpdate*): Self = this.set("CloudWatchLoggingOptionUpdates", js.Array(value :_*))
+    def setRunConfigurationUpdate(value: RunConfigurationUpdate): Self = StObject.set(x, "RunConfigurationUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLoggingOptionUpdates(value: CloudWatchLoggingOptionUpdates): Self = this.set("CloudWatchLoggingOptionUpdates", value.asInstanceOf[js.Any])
+    def setRunConfigurationUpdateUndefined: Self = StObject.set(x, "RunConfigurationUpdate", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLoggingOptionUpdates: Self = this.set("CloudWatchLoggingOptionUpdates", js.undefined)
+    def setServiceExecutionRoleUpdate(value: RoleARN): Self = StObject.set(x, "ServiceExecutionRoleUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunConfigurationUpdate(value: RunConfigurationUpdate): Self = this.set("RunConfigurationUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunConfigurationUpdate: Self = this.set("RunConfigurationUpdate", js.undefined)
-    
-    @scala.inline
-    def setServiceExecutionRoleUpdate(value: RoleARN): Self = this.set("ServiceExecutionRoleUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceExecutionRoleUpdate: Self = this.set("ServiceExecutionRoleUpdate", js.undefined)
+    def setServiceExecutionRoleUpdateUndefined: Self = StObject.set(x, "ServiceExecutionRoleUpdate", js.undefined)
   }
 }

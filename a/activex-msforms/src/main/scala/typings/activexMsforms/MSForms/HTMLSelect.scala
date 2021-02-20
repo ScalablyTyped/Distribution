@@ -1,11 +1,12 @@
 package typings.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLSelect extends js.Object {
+trait HTMLSelect extends StObject {
   
   var DisplayValues: js.Any = js.native
   
@@ -40,39 +41,27 @@ object HTMLSelect {
   }
   
   @scala.inline
-  implicit class HTMLSelectOps[Self <: HTMLSelect] (val x: Self) extends AnyVal {
+  implicit class HTMLSelectMutableBuilder[Self <: HTMLSelect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayValues(value: js.Any): Self = StObject.set(x, "DisplayValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSFormsDotHTMLSelect_typekey(value: HTMLSelect): Self = StObject.set(x, "MSForms.HTMLSelect_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayValues(value: js.Any): Self = this.set("DisplayValues", value.asInstanceOf[js.Any])
+    def setMultiSelect(value: Boolean): Self = StObject.set(x, "MultiSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTMLName(value: String): Self = this.set("HTMLName", value.asInstanceOf[js.Any])
+    def setSelected(value: String): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSFormsDotHTMLSelect_typekey(value: HTMLSelect): Self = this.set("MSForms.HTMLSelect_typekey", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiSelect(value: Boolean): Self = this.set("MultiSelect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelected(value: String): Self = this.set("Selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValues(value: js.Any): Self = this.set("Values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Any): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

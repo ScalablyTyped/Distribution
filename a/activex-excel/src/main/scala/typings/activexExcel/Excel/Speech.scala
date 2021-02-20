@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Speech extends js.Object {
+trait Speech extends StObject {
   
   var Direction: XlSpeakDirection = js.native
   

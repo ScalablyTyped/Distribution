@@ -1,6 +1,7 @@
 package typings.atom.mod
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,99 +69,87 @@ object ContextMenuItemOptions {
   }
   
   @scala.inline
-  implicit class ContextMenuItemOptionsOps[Self <: ContextMenuItemOptions] (val x: Self) extends AnyVal {
+  implicit class ContextMenuItemOptionsMutableBuilder[Self <: ContextMenuItemOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterGroupContaining(value: js.Array[String]): Self = StObject.set(x, "afterGroupContaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterGroupContainingUndefined: Self = StObject.set(x, "afterGroupContaining", js.undefined)
     
     @scala.inline
-    def setAfterVarargs(value: String*): Self = this.set("after", js.Array(value :_*))
+    def setAfterGroupContainingVarargs(value: String*): Self = StObject.set(x, "afterGroupContaining", js.Array(value :_*))
     
     @scala.inline
-    def setAfter(value: js.Array[String]): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
     @scala.inline
-    def setAfterGroupContainingVarargs(value: String*): Self = this.set("afterGroupContaining", js.Array(value :_*))
+    def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterGroupContaining(value: js.Array[String]): Self = this.set("afterGroupContaining", value.asInstanceOf[js.Any])
+    def setBeforeGroupContaining(value: js.Array[String]): Self = StObject.set(x, "beforeGroupContaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterGroupContaining: Self = this.set("afterGroupContaining", js.undefined)
+    def setBeforeGroupContainingUndefined: Self = StObject.set(x, "beforeGroupContaining", js.undefined)
     
     @scala.inline
-    def setBeforeVarargs(value: String*): Self = this.set("before", js.Array(value :_*))
+    def setBeforeGroupContainingVarargs(value: String*): Self = StObject.set(x, "beforeGroupContaining", js.Array(value :_*))
     
     @scala.inline
-    def setBefore(value: js.Array[String]): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
     
     @scala.inline
-    def setBeforeGroupContainingVarargs(value: String*): Self = this.set("beforeGroupContaining", js.Array(value :_*))
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeGroupContaining(value: js.Array[String]): Self = this.set("beforeGroupContaining", value.asInstanceOf[js.Any])
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def deleteBeforeGroupContaining: Self = this.set("beforeGroupContaining", js.undefined)
+    def setCreated(value: /* event */ Event => Unit): Self = StObject.set(x, "created", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: /* event */ Event => Unit): Self = this.set("created", js.Any.fromFunction1(value))
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setShouldDisplay(value: /* event */ Event => Unit): Self = StObject.set(x, "shouldDisplay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setShouldDisplayUndefined: Self = StObject.set(x, "shouldDisplay", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setSubmenu(value: js.Array[ContextMenuOptions]): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldDisplay(value: /* event */ Event => Unit): Self = this.set("shouldDisplay", js.Any.fromFunction1(value))
+    def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
     
     @scala.inline
-    def deleteShouldDisplay: Self = this.set("shouldDisplay", js.undefined)
+    def setSubmenuVarargs(value: ContextMenuOptions*): Self = StObject.set(x, "submenu", js.Array(value :_*))
     
     @scala.inline
-    def setSubmenuVarargs(value: ContextMenuOptions*): Self = this.set("submenu", js.Array(value :_*))
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmenu(value: js.Array[ContextMenuOptions]): Self = this.set("submenu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmenu: Self = this.set("submenu", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJs.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait InlinePictureLoadOptions extends js.Object {
+trait InlinePictureLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -132,102 +133,90 @@ object InlinePictureLoadOptions {
   }
   
   @scala.inline
-  implicit class InlinePictureLoadOptionsOps[Self <: InlinePictureLoadOptions] (val x: Self) extends AnyVal {
+  implicit class InlinePictureLoadOptionsMutableBuilder[Self <: InlinePictureLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAltTextDescription(value: Boolean): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setAltTextDescriptionUndefined: Self = StObject.set(x, "altTextDescription", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setAltTextTitle(value: Boolean): Self = StObject.set(x, "altTextTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltTextDescription(value: Boolean): Self = this.set("altTextDescription", value.asInstanceOf[js.Any])
+    def setAltTextTitleUndefined: Self = StObject.set(x, "altTextTitle", js.undefined)
     
     @scala.inline
-    def deleteAltTextDescription: Self = this.set("altTextDescription", js.undefined)
+    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltTextTitle(value: Boolean): Self = this.set("altTextTitle", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteAltTextTitle: Self = this.set("altTextTitle", js.undefined)
+    def setHyperlink(value: Boolean): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Boolean): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLockAspectRatio(value: Boolean): Self = StObject.set(x, "lockAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlink(value: Boolean): Self = this.set("hyperlink", value.asInstanceOf[js.Any])
+    def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteHyperlink: Self = this.set("hyperlink", js.undefined)
+    def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockAspectRatio(value: Boolean): Self = this.set("lockAspectRatio", value.asInstanceOf[js.Any])
+    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
     @scala.inline
-    def deleteLockAspectRatio: Self = this.set("lockAspectRatio", js.undefined)
+    def setParentContentControl(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraph(value: ParagraphLoadOptions): Self = this.set("paragraph", value.asInstanceOf[js.Any])
+    def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControlOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParagraph: Self = this.set("paragraph", js.undefined)
+    def setParentContentControlOrNullObjectUndefined: Self = StObject.set(x, "parentContentControlOrNullObject", js.undefined)
     
     @scala.inline
-    def setParentContentControl(value: ContentControlLoadOptions): Self = this.set("parentContentControl", value.asInstanceOf[js.Any])
+    def setParentContentControlUndefined: Self = StObject.set(x, "parentContentControl", js.undefined)
     
     @scala.inline
-    def deleteParentContentControl: Self = this.set("parentContentControl", js.undefined)
+    def setParentTable(value: TableLoadOptions): Self = StObject.set(x, "parentTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = this.set("parentContentControlOrNullObject", value.asInstanceOf[js.Any])
+    def setParentTableCell(value: TableCellLoadOptions): Self = StObject.set(x, "parentTableCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentContentControlOrNullObject: Self = this.set("parentContentControlOrNullObject", js.undefined)
+    def setParentTableCellOrNullObject(value: TableCellLoadOptions): Self = StObject.set(x, "parentTableCellOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentTable(value: TableLoadOptions): Self = this.set("parentTable", value.asInstanceOf[js.Any])
+    def setParentTableCellOrNullObjectUndefined: Self = StObject.set(x, "parentTableCellOrNullObject", js.undefined)
     
     @scala.inline
-    def deleteParentTable: Self = this.set("parentTable", js.undefined)
+    def setParentTableCellUndefined: Self = StObject.set(x, "parentTableCell", js.undefined)
     
     @scala.inline
-    def setParentTableCell(value: TableCellLoadOptions): Self = this.set("parentTableCell", value.asInstanceOf[js.Any])
+    def setParentTableOrNullObject(value: TableLoadOptions): Self = StObject.set(x, "parentTableOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentTableCell: Self = this.set("parentTableCell", js.undefined)
+    def setParentTableOrNullObjectUndefined: Self = StObject.set(x, "parentTableOrNullObject", js.undefined)
     
     @scala.inline
-    def setParentTableCellOrNullObject(value: TableCellLoadOptions): Self = this.set("parentTableCellOrNullObject", value.asInstanceOf[js.Any])
+    def setParentTableUndefined: Self = StObject.set(x, "parentTable", js.undefined)
     
     @scala.inline
-    def deleteParentTableCellOrNullObject: Self = this.set("parentTableCellOrNullObject", js.undefined)
+    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentTableOrNullObject(value: TableLoadOptions): Self = this.set("parentTableOrNullObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentTableOrNullObject: Self = this.set("parentTableOrNullObject", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

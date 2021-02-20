@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * listing and creating time series.
   */
 @js.native
-trait SchemaTimeSeries extends js.Object {
+trait SchemaTimeSeries extends StObject {
   
   /**
     * Output only. The associated monitored resource metadata. When reading a a
@@ -74,57 +75,45 @@ object SchemaTimeSeries {
   }
   
   @scala.inline
-  implicit class SchemaTimeSeriesOps[Self <: SchemaTimeSeries] (val x: Self) extends AnyVal {
+  implicit class SchemaTimeSeriesMutableBuilder[Self <: SchemaTimeSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadata(value: SchemaMonitoredResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetric(value: SchemaMetric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: SchemaMonitoredResourceMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetricKind(value: String): Self = StObject.set(x, "metricKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetricKindUndefined: Self = StObject.set(x, "metricKind", js.undefined)
     
     @scala.inline
-    def setMetric(value: SchemaMetric): Self = this.set("metric", value.asInstanceOf[js.Any])
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
+    def setPoints(value: js.Array[SchemaPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricKind(value: String): Self = this.set("metricKind", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deleteMetricKind: Self = this.set("metricKind", js.undefined)
+    def setPointsVarargs(value: SchemaPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: SchemaPoint*): Self = this.set("points", js.Array(value :_*))
+    def setResource(value: SchemaMonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[SchemaPoint]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: SchemaMonitoredResource): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
-    
-    @scala.inline
-    def setValueType(value: String): Self = this.set("valueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueType: Self = this.set("valueType", js.undefined)
+    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

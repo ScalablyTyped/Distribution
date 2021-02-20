@@ -1,11 +1,12 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItem extends js.Object {
+trait WorkItem extends StObject {
   
   var ActivityId: String = js.native
   
@@ -32,57 +33,45 @@ object WorkItem {
   }
   
   @scala.inline
-  implicit class WorkItemOps[Self <: WorkItem] (val x: Self) extends AnyVal {
+  implicit class WorkItemMutableBuilder[Self <: WorkItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityId(value: String): Self = StObject.set(x, "ActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArguments(value: js.Object): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityId(value: String): Self = this.set("ActivityId", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def setArguments(value: js.Object): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setStatusDetail(value: js.Object): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusDetail(value: js.Object): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
     @scala.inline
-    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,51 +107,39 @@ object ASPxClientGantt {
   }
   
   @scala.inline
-  implicit class ASPxClientGanttOps[Self <: ASPxClientGantt] (val x: Self) extends AnyVal {
+  implicit class ASPxClientGanttMutableBuilder[Self <: ASPxClientGantt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapseAll(value: () => Unit): Self = StObject.set(x, "CollapseAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGantt]]): Self = this.set("BeginCallback", value.asInstanceOf[js.Any])
+    def setCollapseTask(value: js.Any => Unit): Self = StObject.set(x, "CollapseTask", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientGantt]]): Self = this.set("CallbackError", value.asInstanceOf[js.Any])
+    def setCustomCommand(value: ASPxClientEvent[ASPxClientGanttCustomCommandEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "CustomCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseAll(value: () => Unit): Self = this.set("CollapseAll", js.Any.fromFunction0(value))
+    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGantt]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseTask(value: js.Any => Unit): Self = this.set("CollapseTask", js.Any.fromFunction1(value))
+    def setExpandAll(value: () => Unit): Self = StObject.set(x, "ExpandAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCustomCommand(value: ASPxClientEvent[ASPxClientGanttCustomCommandEventHandler[ASPxClientGantt]]): Self = this.set("CustomCommand", value.asInstanceOf[js.Any])
+    def setExpandTask(value: js.Any => Unit): Self = StObject.set(x, "ExpandTask", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGantt]]): Self = this.set("EndCallback", value.asInstanceOf[js.Any])
+    def setSetTaskTitlePosition(value: ASPxClientGanttTaskTitlePosition => Unit): Self = StObject.set(x, "SetTaskTitlePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpandAll(value: () => Unit): Self = this.set("ExpandAll", js.Any.fromFunction0(value))
+    def setSetViewType(value: ASPxClientGanttViewType => Unit): Self = StObject.set(x, "SetViewType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpandTask(value: js.Any => Unit): Self = this.set("ExpandTask", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTaskTitlePosition(value: ASPxClientGanttTaskTitlePosition => Unit): Self = this.set("SetTaskTitlePosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetViewType(value: ASPxClientGanttViewType => Unit): Self = this.set("SetViewType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowResources(value: Boolean => Unit): Self = this.set("ShowResources", js.Any.fromFunction1(value))
+    def setShowResources(value: Boolean => Unit): Self = StObject.set(x, "ShowResources", js.Any.fromFunction1(value))
   }
 }

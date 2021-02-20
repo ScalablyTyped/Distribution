@@ -10,22 +10,29 @@ import typings.mobxStateTree.typeMod.IType
 import typings.mobxStateTree.typeMod.Instance
 import typings.std.Date
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-state-tree/dist/types/complex-types/model", JSImport.Namespace)
-@js.native
-object modelMod extends js.Object {
+object modelMod {
   
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB]): IModelType[PA with PB, OA with OB, CustomJoin[FCA, FCB], CustomJoin[FSA, FSB]] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB](name: String, A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB]): IModelType[PA with PB, OA with OB, CustomJoin[FCA, FCB], CustomJoin[FSA, FSB]] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB], C: IModelType[PC, OC, FCC, FSC]): IModelType[
     PA with PB with PC, 
     OA with OB with OC, 
     CustomJoin[FCA, CustomJoin[FCB, FCC]], 
     CustomJoin[FSA, CustomJoin[FSB, FSC]]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC](
     name: String,
     A: IModelType[PA, OA, FCA, FSA],
@@ -37,6 +44,8 @@ object modelMod extends js.Object {
     CustomJoin[FCA, CustomJoin[FCB, FCC]], 
     CustomJoin[FSA, CustomJoin[FSB, FSC]]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD](
     A: IModelType[PA, OA, FCA, FSA],
     B: IModelType[PB, OB, FCB, FSB],
@@ -48,6 +57,8 @@ object modelMod extends js.Object {
     CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, FCD]]], 
     CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, FSD]]]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD](
     name: String,
     A: IModelType[PA, OA, FCA, FSA],
@@ -60,6 +71,8 @@ object modelMod extends js.Object {
     CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, FCD]]], 
     CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, FSD]]]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE](
     A: IModelType[PA, OA, FCA, FSA],
     B: IModelType[PB, OB, FCB, FSB],
@@ -72,6 +85,8 @@ object modelMod extends js.Object {
     CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, FCE]]]], 
     CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, FSE]]]]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE](
     name: String,
     A: IModelType[PA, OA, FCA, FSA],
@@ -85,6 +100,8 @@ object modelMod extends js.Object {
     CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, FCE]]]], 
     CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, FSE]]]]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF](
     A: IModelType[PA, OA, FCA, FSA],
     B: IModelType[PB, OB, FCB, FSB],
@@ -98,6 +115,8 @@ object modelMod extends js.Object {
     CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, CustomJoin[FCE, FCF]]]]], 
     CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, CustomJoin[FSE, FSF]]]]]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF](
     name: String,
     A: IModelType[PA, OA, FCA, FSA],
@@ -112,6 +131,8 @@ object modelMod extends js.Object {
     CustomJoin[FCA, CustomJoin[FCB, CustomJoin[FCC, CustomJoin[FCD, CustomJoin[FCE, FCF]]]]], 
     CustomJoin[FSA, CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, CustomJoin[FSE, FSF]]]]]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF, PG /* <: ModelProperties */, OG, FCG, FSG](
     A: IModelType[PA, OA, FCA, FSA],
     B: IModelType[PB, OB, FCB, FSB],
@@ -132,6 +153,8 @@ object modelMod extends js.Object {
       CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, CustomJoin[FSE, CustomJoin[FSF, FSG]]]]]
     ]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF, PG /* <: ModelProperties */, OG, FCG, FSG](
     name: String,
     A: IModelType[PA, OA, FCA, FSA],
@@ -153,6 +176,8 @@ object modelMod extends js.Object {
       CustomJoin[FSB, CustomJoin[FSC, CustomJoin[FSD, CustomJoin[FSE, CustomJoin[FSF, FSG]]]]]
     ]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF, PG /* <: ModelProperties */, OG, FCG, FSG, PH /* <: ModelProperties */, OH, FCH, FSH](
     A: IModelType[PA, OA, FCA, FSA],
     B: IModelType[PB, OB, FCB, FSB],
@@ -180,6 +205,8 @@ object modelMod extends js.Object {
       ]
     ]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF, PG /* <: ModelProperties */, OG, FCG, FSG, PH /* <: ModelProperties */, OH, FCH, FSH](
     name: String,
     A: IModelType[PA, OA, FCA, FSA],
@@ -208,6 +235,8 @@ object modelMod extends js.Object {
       ]
     ]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF, PG /* <: ModelProperties */, OG, FCG, FSG, PH /* <: ModelProperties */, OH, FCH, FSH, PI /* <: ModelProperties */, OI, FCI, FSI](
     A: IModelType[PA, OA, FCA, FSA],
     B: IModelType[PB, OB, FCB, FSB],
@@ -242,6 +271,8 @@ object modelMod extends js.Object {
       ]
     ]
   ] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "compose")
+  @js.native
   def compose[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB, PC /* <: ModelProperties */, OC, FCC, FSC, PD /* <: ModelProperties */, OD, FCD, FSD, PE /* <: ModelProperties */, OE, FCE, FSE, PF /* <: ModelProperties */, OF, FCF, FSF, PG /* <: ModelProperties */, OG, FCG, FSG, PH /* <: ModelProperties */, OH, FCH, FSH, PI /* <: ModelProperties */, OI, FCI, FSI](
     name: String,
     A: IModelType[PA, OA, FCA, FSA],
@@ -278,15 +309,44 @@ object modelMod extends js.Object {
     ]
   ] = js.native
   
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "isModelType")
+  @js.native
   def isModelType[IT /* <: IAnyModelType */](`type`: IAnyType): /* is IT */ Boolean = js.native
   
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "model")
+  @js.native
   def model[P /* <: ModelPropertiesDeclaration */](): IModelType[ModelPropertiesDeclarationToProperties[P], js.Object, NotCustomized, NotCustomized] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "model")
+  @js.native
   def model[P /* <: ModelPropertiesDeclaration */](name: String): IModelType[ModelPropertiesDeclarationToProperties[P], js.Object, NotCustomized, NotCustomized] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "model")
+  @js.native
   def model[P /* <: ModelPropertiesDeclaration */](name: String, properties: P): IModelType[ModelPropertiesDeclarationToProperties[P], js.Object, NotCustomized, NotCustomized] = js.native
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "model")
+  @js.native
   def model[P /* <: ModelPropertiesDeclaration */](properties: P): IModelType[ModelPropertiesDeclarationToProperties[P], js.Object, NotCustomized, NotCustomized] = js.native
   
-  @JSName("$nonEmptyObject")
+  @JSImport("mobx-state-tree/dist/types/complex-types/model", "$nonEmptyObject")
+  @js.native
   val nonEmptyObject: js.Symbol = js.native
+  
+  type CustomJoin[A, B] = (A with B) | B
+  
+  /**
+    * Name of the properties of an object that can't be set to undefined, any or unknown
+    * @hidden
+    */
+  type DefinablePropsNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: mobx-state-tree.mobx-state-tree/dist/types/complex-types/model.IsOptionalValue<T[K], never, K>}[keyof T] */ js.Any
+  
+  type ExtractCFromProps[P /* <: ModelProperties */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ k in keyof P ]: P[k]['CreationType']}
+    */ typings.mobxStateTree.mobxStateTreeStrings.ExtractCFromProps with TopLevel[P]
+  
+  type ExtractOthers[T /* <: IAnyModelType */] = js.Any
+  
+  type ExtractProps[T /* <: IAnyModelType */] = js.Any
+  
+  type IAnyModelType = IModelType[js.Any, js.Any, js.Any, js.Any]
   
   @js.native
   trait IModelType[PROPS /* <: ModelProperties */, OTHERS, CustomC, CustomS] extends IType[
@@ -315,27 +375,6 @@ object modelMod extends js.Object {
     
     def volatile[TP /* <: js.Object */](fn: js.Function1[/* self */ Instance[this.type], TP]): IModelType[PROPS, OTHERS with TP, CustomC, CustomS] = js.native
   }
-  
-  @js.native
-  trait NonEmptyObject_ extends js.Object
-  
-  type CustomJoin[A, B] = (A with B) | B
-  
-  /**
-    * Name of the properties of an object that can't be set to undefined, any or unknown
-    * @hidden
-    */
-  type DefinablePropsNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: mobx-state-tree.mobx-state-tree/dist/types/complex-types/model.IsOptionalValue<T[K], never, K>}[keyof T] */ js.Any
-  
-  type ExtractCFromProps[P /* <: ModelProperties */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof P ]: P[k]['CreationType']}
-    */ typings.mobxStateTree.mobxStateTreeStrings.ExtractCFromProps with TopLevel[P]
-  
-  type ExtractOthers[T /* <: IAnyModelType */] = js.Any
-  
-  type ExtractProps[T /* <: IAnyModelType */] = js.Any
-  
-  type IAnyModelType = IModelType[js.Any, js.Any, js.Any, js.Any]
   
   /**
     * Checks if a value is optional (undefined, any or unknown).
@@ -374,4 +413,7 @@ object modelMod extends js.Object {
   type ModelSnapshotType[P /* <: ModelProperties */] = typings.mobxStateTree.mobxStateTreeStrings.ModelSnapshotType with TopLevel[P] with NonEmptyObject_
   
   type ModelSnapshotType2[P /* <: ModelProperties */, CustomS] = CustomOrOther[CustomS, ModelSnapshotType[P]]
+  
+  @js.native
+  trait NonEmptyObject_ extends StObject
 }

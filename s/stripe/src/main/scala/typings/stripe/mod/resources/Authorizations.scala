@@ -3,19 +3,22 @@ package typings.stripe.mod.resources
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IList
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.issuing.authorizations.IAuthorization
 import typings.stripe.mod.issuing.authorizations.IAuthorizationApproveOptions
 import typings.stripe.mod.issuing.authorizations.IAuthorizationDeclineOptions
 import typings.stripe.mod.issuing.authorizations.IAuthorizationListOptions
 import typings.stripe.mod.issuing.authorizations.IAuthorizationUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Authorizations")
 @js.native
-class Authorizations () extends StripeResource {
+class Authorizations protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def approve(id: String): js.Promise[IAuthorization] = js.native
   def approve(id: String, data: IAuthorizationApproveOptions): js.Promise[IAuthorization] = js.native

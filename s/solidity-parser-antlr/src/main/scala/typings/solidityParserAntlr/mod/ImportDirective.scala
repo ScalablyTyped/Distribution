@@ -1,5 +1,6 @@
 package typings.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,33 +34,21 @@ object ImportDirective {
   }
   
   @scala.inline
-  implicit class ImportDirectiveOps[Self <: ImportDirective] (val x: Self) extends AnyVal {
+  implicit class ImportDirectiveMutableBuilder[Self <: ImportDirective] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSymbolAliases(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "symbolAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSymbolAliasesVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "symbolAliases", js.Array(value :_*))
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolAliasesVarargs(value: (js.Tuple2[String, String])*): Self = this.set("symbolAliases", js.Array(value :_*))
-    
-    @scala.inline
-    def setSymbolAliases(value: js.Array[js.Tuple2[String, String]]): Self = this.set("symbolAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnitAlias(value: String): Self = this.set("unitAlias", value.asInstanceOf[js.Any])
+    def setUnitAlias(value: String): Self = StObject.set(x, "unitAlias", value.asInstanceOf[js.Any])
   }
 }

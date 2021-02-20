@@ -1,11 +1,12 @@
 package typings.procfsStats.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Udp extends js.Object {
+trait Udp extends StObject {
   
   var drops: String = js.native
   
@@ -64,63 +65,51 @@ object Udp {
   }
   
   @scala.inline
-  implicit class UdpOps[Self <: Udp] (val x: Self) extends AnyVal {
+  implicit class UdpMutableBuilder[Self <: Udp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrops(value: String): Self = StObject.set(x, "drops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInode(value: String): Self = StObject.set(x, "inode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocal_address(value: String): Self = StObject.set(x, "local_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrops(value: String): Self = this.set("drops", value.asInstanceOf[js.Any])
+    def setPointer(value: String): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInode(value: String): Self = this.set("inode", value.asInstanceOf[js.Any])
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal_address(value: String): Self = this.set("local_address", value.asInstanceOf[js.Any])
+    def setRem_address(value: String): Self = StObject.set(x, "rem_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointer(value: String): Self = this.set("pointer", value.asInstanceOf[js.Any])
+    def setRetrnsmt(value: String): Self = StObject.set(x, "retrnsmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setRx_queue(value: String): Self = StObject.set(x, "rx_queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRem_address(value: String): Self = this.set("rem_address", value.asInstanceOf[js.Any])
+    def setSl(value: String): Self = StObject.set(x, "sl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetrnsmt(value: String): Self = this.set("retrnsmt", value.asInstanceOf[js.Any])
+    def setSt(value: String): Self = StObject.set(x, "st", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRx_queue(value: String): Self = this.set("rx_queue", value.asInstanceOf[js.Any])
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSl(value: String): Self = this.set("sl", value.asInstanceOf[js.Any])
+    def `setTm-Greaterthansignwhen`(value: String): Self = StObject.set(x, "tm->when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSt(value: String): Self = this.set("st", value.asInstanceOf[js.Any])
+    def setTr(value: String): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTx_queue(value: String): Self = StObject.set(x, "tx_queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTm-Greaterthansignwhen`(value: String): Self = this.set("tm->when", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTr(value: String): Self = this.set("tr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTx_queue(value: String): Self = this.set("tx_queue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
+    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

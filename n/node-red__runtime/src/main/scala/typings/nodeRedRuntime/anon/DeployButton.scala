@@ -1,11 +1,12 @@
 package typings.nodeRedRuntime.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeployButton extends js.Object {
+trait DeployButton extends StObject {
   
   var deployButton: js.UndefOr[Label] = js.native
   
@@ -38,66 +39,54 @@ object DeployButton {
   }
   
   @scala.inline
-  implicit class DeployButtonOps[Self <: DeployButton] (val x: Self) extends AnyVal {
+  implicit class DeployButtonMutableBuilder[Self <: DeployButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeployButton(value: Label): Self = StObject.set(x, "deployButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeployButtonUndefined: Self = StObject.set(x, "deployButton", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeader(value: Image): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployButton(value: Label): Self = this.set("deployButton", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteDeployButton: Self = this.set("deployButton", js.undefined)
+    def setLogin(value: `0`): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: Image): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setMenu(value: Menuitemexportlibrary): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogin(value: `0`): Self = this.set("login", value.asInstanceOf[js.Any])
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
     @scala.inline
-    def deleteLogin: Self = this.set("login", js.undefined)
+    def setPage(value: Css): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenu(value: Menuitemexportlibrary): Self = this.set("menu", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
+    def setPalette(value: Catalogues): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Css): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setProjects(value: Enabled): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPalette(value: Catalogues): Self = this.set("palette", value.asInstanceOf[js.Any])
+    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
     @scala.inline
-    def deletePalette: Self = this.set("palette", js.undefined)
+    def setUserMenu(value: Boolean): Self = StObject.set(x, "userMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjects(value: Enabled): Self = this.set("projects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjects: Self = this.set("projects", js.undefined)
-    
-    @scala.inline
-    def setUserMenu(value: Boolean): Self = this.set("userMenu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserMenu: Self = this.set("userMenu", js.undefined)
+    def setUserMenuUndefined: Self = StObject.set(x, "userMenu", js.undefined)
   }
 }

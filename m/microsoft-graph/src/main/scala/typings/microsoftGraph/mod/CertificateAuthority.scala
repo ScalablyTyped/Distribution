@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateAuthority extends js.Object {
+trait CertificateAuthority extends StObject {
   
   // Required. The base64 encoded string representing the public certificate.
   var certificate: js.UndefOr[Double] = js.native
@@ -40,60 +41,48 @@ object CertificateAuthority {
   }
   
   @scala.inline
-  implicit class CertificateAuthorityOps[Self <: CertificateAuthority] (val x: Self) extends AnyVal {
+  implicit class CertificateAuthorityMutableBuilder[Self <: CertificateAuthority] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: Double): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateRevocationListUrl(value: NullableOption[String]): Self = StObject.set(x, "certificateRevocationListUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateRevocationListUrlNull: Self = StObject.set(x, "certificateRevocationListUrl", null)
     
     @scala.inline
-    def setCertificate(value: Double): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    def setCertificateRevocationListUrlUndefined: Self = StObject.set(x, "certificateRevocationListUrl", js.undefined)
     
     @scala.inline
-    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
     @scala.inline
-    def setCertificateRevocationListUrl(value: NullableOption[String]): Self = this.set("certificateRevocationListUrl", value.asInstanceOf[js.Any])
+    def setDeltaCertificateRevocationListUrl(value: NullableOption[String]): Self = StObject.set(x, "deltaCertificateRevocationListUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificateRevocationListUrl: Self = this.set("certificateRevocationListUrl", js.undefined)
+    def setDeltaCertificateRevocationListUrlNull: Self = StObject.set(x, "deltaCertificateRevocationListUrl", null)
     
     @scala.inline
-    def setCertificateRevocationListUrlNull: Self = this.set("certificateRevocationListUrl", null)
+    def setDeltaCertificateRevocationListUrlUndefined: Self = StObject.set(x, "deltaCertificateRevocationListUrl", js.undefined)
     
     @scala.inline
-    def setDeltaCertificateRevocationListUrl(value: NullableOption[String]): Self = this.set("deltaCertificateRevocationListUrl", value.asInstanceOf[js.Any])
+    def setIsRootAuthority(value: Boolean): Self = StObject.set(x, "isRootAuthority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeltaCertificateRevocationListUrl: Self = this.set("deltaCertificateRevocationListUrl", js.undefined)
+    def setIsRootAuthorityUndefined: Self = StObject.set(x, "isRootAuthority", js.undefined)
     
     @scala.inline
-    def setDeltaCertificateRevocationListUrlNull: Self = this.set("deltaCertificateRevocationListUrl", null)
+    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRootAuthority(value: Boolean): Self = this.set("isRootAuthority", value.asInstanceOf[js.Any])
+    def setIssuerSki(value: String): Self = StObject.set(x, "issuerSki", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsRootAuthority: Self = this.set("isRootAuthority", js.undefined)
+    def setIssuerSkiUndefined: Self = StObject.set(x, "issuerSki", js.undefined)
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIssuer: Self = this.set("issuer", js.undefined)
-    
-    @scala.inline
-    def setIssuerSki(value: String): Self = this.set("issuerSki", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIssuerSki: Self = this.set("issuerSki", js.undefined)
+    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.androiduix.android.widget
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpandableListPosition extends js.Object {
+trait ExpandableListPosition extends StObject {
   
   var childPos: Double = js.native
   
@@ -39,39 +40,27 @@ object ExpandableListPosition {
   }
   
   @scala.inline
-  implicit class ExpandableListPositionOps[Self <: ExpandableListPosition] (val x: Self) extends AnyVal {
+  implicit class ExpandableListPositionMutableBuilder[Self <: ExpandableListPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildPos(value: Double): Self = StObject.set(x, "childPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlatListPos(value: Double): Self = StObject.set(x, "flatListPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPackedPosition(value: () => Double): Self = StObject.set(x, "getPackedPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChildPos(value: Double): Self = this.set("childPos", value.asInstanceOf[js.Any])
+    def setGroupPos(value: Double): Self = StObject.set(x, "groupPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatListPos(value: Double): Self = this.set("flatListPos", value.asInstanceOf[js.Any])
+    def setRecycle(value: () => Unit): Self = StObject.set(x, "recycle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPackedPosition(value: () => Double): Self = this.set("getPackedPosition", js.Any.fromFunction0(value))
+    def setResetState(value: () => js.Any): Self = StObject.set(x, "resetState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGroupPos(value: Double): Self = this.set("groupPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecycle(value: () => Unit): Self = this.set("recycle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResetState(value: () => js.Any): Self = this.set("resetState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

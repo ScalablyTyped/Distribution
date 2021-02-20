@@ -1,13 +1,14 @@
 package typings.ssh2.mod
 
 import typings.ssh2Streams.mod.SFTPStream.STATUS_CODE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssh2", "SFTP_STATUS_CODE")
 @js.native
-object SFTP_STATUS_CODE extends js.Object {
+object SFTP_STATUS_CODE extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[STATUS_CODE with Double] = js.native

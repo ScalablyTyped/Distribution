@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/math/acosh", JSImport.Namespace)
-@js.native
-object acoshMod
-  extends TopLevel[js.Function1[/* x */ Double, Double]]
+object acoshMod {
+  
+  /* was `typeof core.Math.acosh` */
+  @JSImport("core-js/fn/math/acosh", JSImport.Namespace)
+  @js.native
+  def apply(x: Double): Double = js.native
+}

@@ -3,12 +3,13 @@ package typings.obloUtil
 import typings.jquery.JQuery
 import typings.std.Date
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObloUtilStatic extends js.Object {
+trait ObloUtilStatic extends StObject {
   
   def addslashes(str: String): String = js.native
   

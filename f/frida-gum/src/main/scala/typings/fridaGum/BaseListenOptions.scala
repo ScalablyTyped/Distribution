@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseListenOptions extends js.Object {
+trait BaseListenOptions extends StObject {
   
   /**
     * Listen backlog. Defaults to 10.
@@ -21,24 +22,12 @@ object BaseListenOptions {
   }
   
   @scala.inline
-  implicit class BaseListenOptionsOps[Self <: BaseListenOptions] (val x: Self) extends AnyVal {
+  implicit class BaseListenOptionsMutableBuilder[Self <: BaseListenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBacklog(value: Double): Self = this.set("backlog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBacklog: Self = this.set("backlog", js.undefined)
+    def setBacklogUndefined: Self = StObject.set(x, "backlog", js.undefined)
   }
 }

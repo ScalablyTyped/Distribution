@@ -1,12 +1,13 @@
 package typings.chrome.chrome.webRequest
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebRequestBody extends js.Object {
+trait WebRequestBody extends StObject {
   
   /** Optional. Errors when obtaining request body data. */
   var error: js.UndefOr[String] = js.native
@@ -32,39 +33,27 @@ object WebRequestBody {
   }
   
   @scala.inline
-  implicit class WebRequestBodyOps[Self <: WebRequestBody] (val x: Self) extends AnyVal {
+  implicit class WebRequestBodyMutableBuilder[Self <: WebRequestBody] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormData(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setRaw(value: js.Array[UploadData]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormData(value: StringDictionary[js.Array[String]]): Self = this.set("formData", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deleteFormData: Self = this.set("formData", js.undefined)
-    
-    @scala.inline
-    def setRawVarargs(value: UploadData*): Self = this.set("raw", js.Array(value :_*))
-    
-    @scala.inline
-    def setRaw(value: js.Array[UploadData]): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setRawVarargs(value: UploadData*): Self = StObject.set(x, "raw", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,141 +101,129 @@ object PractitionerRole {
   }
   
   @scala.inline
-  implicit class PractitionerRoleOps[Self <: PractitionerRole] (val x: Self) extends AnyVal {
+  implicit class PractitionerRoleMutableBuilder[Self <: PractitionerRole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityExceptions(value: String): Self = StObject.set(x, "availabilityExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_active(value: Element): Self = this.set("_active", value.asInstanceOf[js.Any])
+    def setAvailabilityExceptionsUndefined: Self = StObject.set(x, "availabilityExceptions", js.undefined)
     
     @scala.inline
-    def delete_active: Self = this.set("_active", js.undefined)
+    def setAvailableTime(value: js.Array[PractitionerRoleAvailableTime]): Self = StObject.set(x, "availableTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_availabilityExceptions(value: Element): Self = this.set("_availabilityExceptions", value.asInstanceOf[js.Any])
+    def setAvailableTimeUndefined: Self = StObject.set(x, "availableTime", js.undefined)
     
     @scala.inline
-    def delete_availabilityExceptions: Self = this.set("_availabilityExceptions", js.undefined)
+    def setAvailableTimeVarargs(value: PractitionerRoleAvailableTime*): Self = StObject.set(x, "availableTime", js.Array(value :_*))
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setAvailabilityExceptions(value: String): Self = this.set("availabilityExceptions", value.asInstanceOf[js.Any])
+    def setCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "code", js.Array(value :_*))
     
     @scala.inline
-    def deleteAvailabilityExceptions: Self = this.set("availabilityExceptions", js.undefined)
+    def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableTimeVarargs(value: PractitionerRoleAvailableTime*): Self = this.set("availableTime", js.Array(value :_*))
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def setAvailableTime(value: js.Array[PractitionerRoleAvailableTime]): Self = this.set("availableTime", value.asInstanceOf[js.Any])
+    def setEndpointVarargs(value: Reference*): Self = StObject.set(x, "endpoint", js.Array(value :_*))
     
     @scala.inline
-    def deleteAvailableTime: Self = this.set("availableTime", js.undefined)
+    def setHealthcareService(value: js.Array[Reference]): Self = StObject.set(x, "healthcareService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeVarargs(value: CodeableConcept*): Self = this.set("code", js.Array(value :_*))
+    def setHealthcareServiceUndefined: Self = StObject.set(x, "healthcareService", js.undefined)
     
     @scala.inline
-    def setCode(value: js.Array[CodeableConcept]): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setHealthcareServiceVarargs(value: Reference*): Self = StObject.set(x, "healthcareService", js.Array(value :_*))
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointVarargs(value: Reference*): Self = this.set("endpoint", js.Array(value :_*))
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setEndpoint(value: js.Array[Reference]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setLocation(value: js.Array[Reference]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthcareServiceVarargs(value: Reference*): Self = this.set("healthcareService", js.Array(value :_*))
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setHealthcareService(value: js.Array[Reference]): Self = this.set("healthcareService", value.asInstanceOf[js.Any])
+    def setLocationVarargs(value: Reference*): Self = StObject.set(x, "location", js.Array(value :_*))
     
     @scala.inline
-    def deleteHealthcareService: Self = this.set("healthcareService", js.undefined)
+    def setNotAvailable(value: js.Array[PractitionerRoleNotAvailable]): Self = StObject.set(x, "notAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setNotAvailableUndefined: Self = StObject.set(x, "notAvailable", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setNotAvailableVarargs(value: PractitionerRoleNotAvailable*): Self = StObject.set(x, "notAvailable", js.Array(value :_*))
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationVarargs(value: Reference*): Self = this.set("location", js.Array(value :_*))
+    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
     @scala.inline
-    def setLocation(value: js.Array[Reference]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def setNotAvailableVarargs(value: PractitionerRoleNotAvailable*): Self = this.set("notAvailable", js.Array(value :_*))
+    def setPractitioner(value: Reference): Self = StObject.set(x, "practitioner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAvailable(value: js.Array[PractitionerRoleNotAvailable]): Self = this.set("notAvailable", value.asInstanceOf[js.Any])
+    def setPractitionerUndefined: Self = StObject.set(x, "practitioner", js.undefined)
     
     @scala.inline
-    def deleteNotAvailable: Self = this.set("notAvailable", js.undefined)
+    def setSpecialty(value: js.Array[CodeableConcept]): Self = StObject.set(x, "specialty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: Reference): Self = this.set("organization", value.asInstanceOf[js.Any])
+    def setSpecialtyUndefined: Self = StObject.set(x, "specialty", js.undefined)
     
     @scala.inline
-    def deleteOrganization: Self = this.set("organization", js.undefined)
+    def setSpecialtyVarargs(value: CodeableConcept*): Self = StObject.set(x, "specialty", js.Array(value :_*))
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
     
     @scala.inline
-    def setPractitioner(value: Reference): Self = this.set("practitioner", value.asInstanceOf[js.Any])
+    def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
     
     @scala.inline
-    def deletePractitioner: Self = this.set("practitioner", js.undefined)
+    def set_active(value: Element): Self = StObject.set(x, "_active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecialtyVarargs(value: CodeableConcept*): Self = this.set("specialty", js.Array(value :_*))
+    def set_activeUndefined: Self = StObject.set(x, "_active", js.undefined)
     
     @scala.inline
-    def setSpecialty(value: js.Array[CodeableConcept]): Self = this.set("specialty", value.asInstanceOf[js.Any])
+    def set_availabilityExceptions(value: Element): Self = StObject.set(x, "_availabilityExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpecialty: Self = this.set("specialty", js.undefined)
-    
-    @scala.inline
-    def setTelecomVarargs(value: ContactPoint*): Self = this.set("telecom", js.Array(value :_*))
-    
-    @scala.inline
-    def setTelecom(value: js.Array[ContactPoint]): Self = this.set("telecom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTelecom: Self = this.set("telecom", js.undefined)
+    def set_availabilityExceptionsUndefined: Self = StObject.set(x, "_availabilityExceptions", js.undefined)
   }
 }

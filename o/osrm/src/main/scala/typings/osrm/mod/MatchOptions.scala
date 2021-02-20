@@ -1,5 +1,6 @@
 package typings.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,63 +57,51 @@ object MatchOptions {
   }
   
   @scala.inline
-  implicit class MatchOptionsOps[Self <: MatchOptions] (val x: Self) extends AnyVal {
+  implicit class MatchOptionsMutableBuilder[Self <: MatchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: Boolean | js.Array[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationsVarargs(value: String*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotationsVarargs(value: String*): Self = this.set("annotations", js.Array(value :_*))
+    def setGeometries(value: String): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: Boolean | js.Array[String]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometries(value: String): Self = this.set("geometries", value.asInstanceOf[js.Any])
+    def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
     
     @scala.inline
-    def deleteGeometries: Self = this.set("geometries", js.undefined)
+    def setRadiuses(value: js.Array[Double]): Self = StObject.set(x, "radiuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverview(value: String): Self = this.set("overview", value.asInstanceOf[js.Any])
+    def setRadiusesUndefined: Self = StObject.set(x, "radiuses", js.undefined)
     
     @scala.inline
-    def deleteOverview: Self = this.set("overview", js.undefined)
+    def setRadiusesVarargs(value: Double*): Self = StObject.set(x, "radiuses", js.Array(value :_*))
     
     @scala.inline
-    def setRadiusesVarargs(value: Double*): Self = this.set("radiuses", js.Array(value :_*))
+    def setSteps(value: Boolean): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiuses(value: js.Array[Double]): Self = this.set("radiuses", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def deleteRadiuses: Self = this.set("radiuses", js.undefined)
+    def setTimestamps(value: js.Array[Double]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteps(value: Boolean): Self = this.set("steps", value.asInstanceOf[js.Any])
+    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
     @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
-    
-    @scala.inline
-    def setTimestampsVarargs(value: Double*): Self = this.set("timestamps", js.Array(value :_*))
-    
-    @scala.inline
-    def setTimestamps(value: js.Array[Double]): Self = this.set("timestamps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamps: Self = this.set("timestamps", js.undefined)
+    def setTimestampsVarargs(value: Double*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
   }
 }

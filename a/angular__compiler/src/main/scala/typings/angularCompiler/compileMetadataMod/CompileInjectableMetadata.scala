@@ -1,12 +1,13 @@
 package typings.angularCompiler.compileMetadataMod
 
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompileInjectableMetadata extends js.Object {
+trait CompileInjectableMetadata extends StObject {
   
   var deps: js.UndefOr[js.Array[_]] = js.native
   
@@ -34,63 +35,51 @@ object CompileInjectableMetadata {
   }
   
   @scala.inline
-  implicit class CompileInjectableMetadataOps[Self <: CompileInjectableMetadata] (val x: Self) extends AnyVal {
+  implicit class CompileInjectableMetadataMutableBuilder[Self <: CompileInjectableMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeps(value: js.Array[_]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
     @scala.inline
-    def setSymbol(value: StaticSymbol): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setProvidedIn(value: StaticSymbol): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CompileTypeMetadata): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
     
     @scala.inline
-    def setDepsVarargs(value: js.Any*): Self = this.set("deps", js.Array(value :_*))
+    def setSymbol(value: StaticSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeps(value: js.Array[_]): Self = this.set("deps", value.asInstanceOf[js.Any])
+    def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeps: Self = this.set("deps", js.undefined)
+    def setUseClass(value: StaticSymbol): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidedIn(value: StaticSymbol): Self = this.set("providedIn", value.asInstanceOf[js.Any])
+    def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
     
     @scala.inline
-    def deleteProvidedIn: Self = this.set("providedIn", js.undefined)
+    def setUseExisting(value: StaticSymbol): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseClass(value: StaticSymbol): Self = this.set("useClass", value.asInstanceOf[js.Any])
+    def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
     
     @scala.inline
-    def deleteUseClass: Self = this.set("useClass", js.undefined)
+    def setUseFactory(value: StaticSymbol): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseExisting(value: StaticSymbol): Self = this.set("useExisting", value.asInstanceOf[js.Any])
+    def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
     
     @scala.inline
-    def deleteUseExisting: Self = this.set("useExisting", js.undefined)
+    def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseFactory(value: StaticSymbol): Self = this.set("useFactory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseFactory: Self = this.set("useFactory", js.undefined)
-    
-    @scala.inline
-    def setUseValue(value: js.Any): Self = this.set("useValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseValue: Self = this.set("useValue", js.undefined)
+    def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
   }
 }

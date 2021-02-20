@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationRestoreConfiguration extends js.Object {
+trait ApplicationRestoreConfiguration extends StObject {
   
   /**
     * Specifies how the application should be restored.
@@ -26,27 +27,15 @@ object ApplicationRestoreConfiguration {
   }
   
   @scala.inline
-  implicit class ApplicationRestoreConfigurationOps[Self <: ApplicationRestoreConfiguration] (val x: Self) extends AnyVal {
+  implicit class ApplicationRestoreConfigurationMutableBuilder[Self <: ApplicationRestoreConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationRestoreType(value: ApplicationRestoreType): Self = StObject.set(x, "ApplicationRestoreType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSnapshotName(value: SnapshotName): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplicationRestoreType(value: ApplicationRestoreType): Self = this.set("ApplicationRestoreType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapshotName(value: SnapshotName): Self = this.set("SnapshotName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotName: Self = this.set("SnapshotName", js.undefined)
+    def setSnapshotNameUndefined: Self = StObject.set(x, "SnapshotName", js.undefined)
   }
 }

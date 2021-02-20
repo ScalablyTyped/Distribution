@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Encryption extends js.Object {
+trait Encryption extends StObject {
   
   /**
     * The series of random bits created by a random bit generator, unique for every encryption operation, that you used to encrypt your input files or that you want Elastic Transcoder to use to encrypt your output files. The initialization vector must be base64-encoded, and it must be exactly 16 bytes long before being base64-encoded.
@@ -36,42 +37,30 @@ object Encryption {
   }
   
   @scala.inline
-  implicit class EncryptionOps[Self <: Encryption] (val x: Self) extends AnyVal {
+  implicit class EncryptionMutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: Base64EncodedString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializationVector(value: ZeroTo255String): Self = this.set("InitializationVector", value.asInstanceOf[js.Any])
+    def setKeyMd5(value: Base64EncodedString): Self = StObject.set(x, "KeyMd5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitializationVector: Self = this.set("InitializationVector", js.undefined)
+    def setKeyMd5Undefined: Self = StObject.set(x, "KeyMd5", js.undefined)
     
     @scala.inline
-    def setKey(value: Base64EncodedString): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setMode(value: EncryptionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyMd5(value: Base64EncodedString): Self = this.set("KeyMd5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyMd5: Self = this.set("KeyMd5", js.undefined)
-    
-    @scala.inline
-    def setMode(value: EncryptionMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("Mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
   }
 }

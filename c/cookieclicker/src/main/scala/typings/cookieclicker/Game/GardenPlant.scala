@@ -1,12 +1,13 @@
 package typings.cookieclicker.Game
 
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GardenPlant extends js.Object {
+trait GardenPlant extends StObject {
   
   /**
     * The minimum amount of life ticks to go through on tick
@@ -152,120 +153,108 @@ object GardenPlant {
   }
   
   @scala.inline
-  implicit class GardenPlantOps[Self <: GardenPlant] (val x: Self) extends AnyVal {
+  implicit class GardenPlantMutableBuilder[Self <: GardenPlant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgeTick(value: Double): Self = StObject.set(x, "ageTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeTickR(value: Double): Self = StObject.set(x, "ageTickR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgeTick(value: Double): Self = this.set("ageTick", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setAgeTickR(value: Double): Self = this.set("ageTickR", value.asInstanceOf[js.Any])
+    def setContam(value: Double): Self = StObject.set(x, "contam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: String*): Self = this.set("children", js.Array(value :_*))
+    def setContamUndefined: Self = StObject.set(x, "contam", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Array[String]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCost(value: Double): Self = this.set("cost", value.asInstanceOf[js.Any])
+    def setCostM(value: Double): Self = StObject.set(x, "costM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCostM(value: Double): Self = this.set("costM", value.asInstanceOf[js.Any])
+    def setDetailsStr(value: String): Self = StObject.set(x, "detailsStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffsStr(value: String): Self = this.set("effsStr", value.asInstanceOf[js.Any])
+    def setDetailsStrUndefined: Self = StObject.set(x, "detailsStr", js.undefined)
     
     @scala.inline
-    def setIcon(value: Double): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setEffsStr(value: String): Self = StObject.set(x, "effsStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setFungus(value: Boolean): Self = StObject.set(x, "fungus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setFungusUndefined: Self = StObject.set(x, "fungus", js.undefined)
     
     @scala.inline
-    def setL(value: HTMLDivElement): Self = this.set("l", value.asInstanceOf[js.Any])
+    def setIcon(value: Double): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMature(value: Double): Self = this.set("mature", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatureBase(value: Double): Self = this.set("matureBase", value.asInstanceOf[js.Any])
+    def setImmortal(value: PseudoBoolean | Boolean): Self = StObject.set(x, "immortal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setImmortalUndefined: Self = StObject.set(x, "immortal", js.undefined)
     
     @scala.inline
-    def setPlantable(value: Boolean): Self = this.set("plantable", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setL(value: HTMLDivElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlocked(value: PseudoBoolean | Boolean): Self = this.set("unlocked", value.asInstanceOf[js.Any])
+    def setMature(value: Double): Self = StObject.set(x, "mature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeed(value: Boolean): Self = this.set("weed", value.asInstanceOf[js.Any])
+    def setMatureBase(value: Double): Self = StObject.set(x, "matureBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContam(value: Double): Self = this.set("contam", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContam: Self = this.set("contam", js.undefined)
+    def setNoContam(value: Boolean): Self = StObject.set(x, "noContam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailsStr(value: String): Self = this.set("detailsStr", value.asInstanceOf[js.Any])
+    def setNoContamUndefined: Self = StObject.set(x, "noContam", js.undefined)
     
     @scala.inline
-    def deleteDetailsStr: Self = this.set("detailsStr", js.undefined)
+    def setOnDie(value: (/* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "onDie", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFungus(value: Boolean): Self = this.set("fungus", value.asInstanceOf[js.Any])
+    def setOnDieUndefined: Self = StObject.set(x, "onDie", js.undefined)
     
     @scala.inline
-    def deleteFungus: Self = this.set("fungus", js.undefined)
+    def setOnHarvest(value: (/* x */ Double, /* y */ Double, /* age */ Double) => Unit): Self = StObject.set(x, "onHarvest", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setImmortal(value: PseudoBoolean | Boolean): Self = this.set("immortal", value.asInstanceOf[js.Any])
+    def setOnHarvestUndefined: Self = StObject.set(x, "onHarvest", js.undefined)
     
     @scala.inline
-    def deleteImmortal: Self = this.set("immortal", js.undefined)
+    def setOnKill(value: (/* x */ Double, /* y */ Double, /* age */ Double) => Unit): Self = StObject.set(x, "onKill", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setNoContam(value: Boolean): Self = this.set("noContam", value.asInstanceOf[js.Any])
+    def setOnKillUndefined: Self = StObject.set(x, "onKill", js.undefined)
     
     @scala.inline
-    def deleteNoContam: Self = this.set("noContam", js.undefined)
+    def setPlantable(value: Boolean): Self = StObject.set(x, "plantable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDie(value: (/* x */ Double, /* y */ Double) => Unit): Self = this.set("onDie", js.Any.fromFunction2(value))
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnDie: Self = this.set("onDie", js.undefined)
+    def setUnlocked(value: PseudoBoolean | Boolean): Self = StObject.set(x, "unlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHarvest(value: (/* x */ Double, /* y */ Double, /* age */ Double) => Unit): Self = this.set("onHarvest", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteOnHarvest: Self = this.set("onHarvest", js.undefined)
-    
-    @scala.inline
-    def setOnKill(value: (/* x */ Double, /* y */ Double, /* age */ Double) => Unit): Self = this.set("onKill", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteOnKill: Self = this.set("onKill", js.undefined)
+    def setWeed(value: Boolean): Self = StObject.set(x, "weed", value.asInstanceOf[js.Any])
   }
 }

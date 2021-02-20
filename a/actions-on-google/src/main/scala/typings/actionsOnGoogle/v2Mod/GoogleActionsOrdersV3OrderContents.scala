@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3OrderContents extends js.Object {
+trait GoogleActionsOrdersV3OrderContents extends StObject {
   
   /**
     * List of order line items.
@@ -23,27 +24,15 @@ object GoogleActionsOrdersV3OrderContents {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3OrderContentsOps[Self <: GoogleActionsOrdersV3OrderContents] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3OrderContentsMutableBuilder[Self <: GoogleActionsOrdersV3OrderContents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineItems(value: js.Array[GoogleActionsOrdersV3LineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLineItemsVarargs(value: GoogleActionsOrdersV3LineItem*): Self = this.set("lineItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setLineItems(value: js.Array[GoogleActionsOrdersV3LineItem]): Self = this.set("lineItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+    def setLineItemsVarargs(value: GoogleActionsOrdersV3LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
   }
 }

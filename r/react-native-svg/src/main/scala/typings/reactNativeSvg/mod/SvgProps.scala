@@ -8,13 +8,14 @@ import typings.reactNative.mod.Touchable
 import typings.reactNative.mod.ViewPropsAndroid
 import typings.reactNative.mod.ViewPropsIOS
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNative.mod.GestureResponderHandlers because Already inherited
-- typings.reactNative.mod.ViewProps because var conflicts: onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, pointerEvents. Inlined hitSlop, nativeID, onLayout, removeClippedSubviews, style, testID */ @js.native
+- typings.reactNative.mod.ViewProps because var conflicts: onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, pointerEvents. Inlined hitSlop, style, onLayout, removeClippedSubviews, nativeID, testID */ @js.native
 trait SvgProps
   extends GProps
      with AccessibilityProps
@@ -82,96 +83,84 @@ object SvgProps {
   }
   
   @scala.inline
-  implicit class SvgPropsOps[Self <: SvgProps] (val x: Self) extends AnyVal {
+  implicit class SvgPropsMutableBuilder[Self <: SvgProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorVarargs(value: Double*): Self = this.set("color", js.Array(value :_*))
+    def setHeight(value: NumberProp): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: NumberProp): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitSlop(value: Insets): Self = this.set("hitSlop", value.asInstanceOf[js.Any])
+    def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
     
     @scala.inline
-    def deleteHitSlop: Self = this.set("hitSlop", js.undefined)
+    def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNativeID(value: String): Self = this.set("nativeID", value.asInstanceOf[js.Any])
+    def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
     
     @scala.inline
-    def deleteNativeID: Self = this.set("nativeID", js.undefined)
+    def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = this.set("onLayout", js.Any.fromFunction1(value))
+    def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteOnLayout: Self = this.set("onLayout", js.undefined)
+    def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveAspectRatio(value: String): Self = this.set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
     
     @scala.inline
-    def deletePreserveAspectRatio: Self = this.set("preserveAspectRatio", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveClippedSubviews(value: Boolean): Self = this.set("removeClippedSubviews", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteRemoveClippedSubviews: Self = this.set("removeClippedSubviews", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTestID: Self = this.set("testID", js.undefined)
+    def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setWidth(value: NumberProp): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewBox(value: String): Self = this.set("viewBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewBox: Self = this.set("viewBox", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: NumberProp): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

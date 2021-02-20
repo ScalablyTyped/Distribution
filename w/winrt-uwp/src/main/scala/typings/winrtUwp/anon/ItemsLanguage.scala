@@ -1,12 +1,13 @@
 package typings.winrtUwp.anon
 
 import typings.winrtUwp.Windows.Globalization.Language
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemsLanguage extends js.Object {
+trait ItemsLanguage extends StObject {
   
   /** An array of Language items that start at startIndex in the HttpLanguageHeaderValueCollection . */ var items: Language = js.native
   
@@ -21,24 +22,12 @@ object ItemsLanguage {
   }
   
   @scala.inline
-  implicit class ItemsLanguageOps[Self <: ItemsLanguage] (val x: Self) extends AnyVal {
+  implicit class ItemsLanguageMutableBuilder[Self <: ItemsLanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: Language): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItems(value: Language): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnValue(value: Double): Self = this.set("returnValue", value.asInstanceOf[js.Any])
+    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

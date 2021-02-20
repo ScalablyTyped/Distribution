@@ -1,6 +1,7 @@
 package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,39 +25,27 @@ object SVGDefinitionObject {
   }
   
   @scala.inline
-  implicit class SVGDefinitionObjectOps[Self <: SVGDefinitionObject] (val x: Self) extends AnyVal {
+  implicit class SVGDefinitionObjectMutableBuilder[Self <: SVGDefinitionObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[SVGDefinitionObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: SVGDefinitionObject*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: SVGDefinitionObject*): Self = this.set("children", js.Array(value :_*))
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[SVGDefinitionObject]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagName: Self = this.set("tagName", js.undefined)
-    
-    @scala.inline
-    def setTextContent(value: String): Self = this.set("textContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextContent: Self = this.set("textContent", js.undefined)
+    def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
   }
 }

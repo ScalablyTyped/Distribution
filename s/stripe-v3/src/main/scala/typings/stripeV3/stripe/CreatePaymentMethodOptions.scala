@@ -1,11 +1,12 @@
 package typings.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePaymentMethodOptions extends js.Object {
+trait CreatePaymentMethodOptions extends StObject {
   
   /**
     * Billing information associated with the PaymentMethod
@@ -25,30 +26,18 @@ object CreatePaymentMethodOptions {
   }
   
   @scala.inline
-  implicit class CreatePaymentMethodOptionsOps[Self <: CreatePaymentMethodOptions] (val x: Self) extends AnyVal {
+  implicit class CreatePaymentMethodOptionsMutableBuilder[Self <: CreatePaymentMethodOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilling_details(value: BillingDetails): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilling_details(value: BillingDetails): Self = this.set("billing_details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBilling_details: Self = this.set("billing_details", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: Metadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

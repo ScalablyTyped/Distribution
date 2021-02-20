@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateThemeAliasRequest extends js.Object {
+trait CreateThemeAliasRequest extends StObject {
   
   /**
     * The name that you want to give to the theme alias that you are creating. The alias name can't begin with a $. Alias names that start with $ are reserved by Amazon QuickSight. 
@@ -41,30 +42,18 @@ object CreateThemeAliasRequest {
   }
   
   @scala.inline
-  implicit class CreateThemeAliasRequestOps[Self <: CreateThemeAliasRequest] (val x: Self) extends AnyVal {
+  implicit class CreateThemeAliasRequestMutableBuilder[Self <: CreateThemeAliasRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasName(value: AliasName): Self = this.set("AliasName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThemeId(value: RestrictiveResourceId): Self = this.set("ThemeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThemeVersionNumber(value: VersionNumber): Self = this.set("ThemeVersionNumber", value.asInstanceOf[js.Any])
+    def setThemeVersionNumber(value: VersionNumber): Self = StObject.set(x, "ThemeVersionNumber", value.asInstanceOf[js.Any])
   }
 }

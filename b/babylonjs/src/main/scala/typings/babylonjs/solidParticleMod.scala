@@ -12,16 +12,16 @@ import typings.babylonjs.mathVectorMod.Vector4
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.solidParticleSystemMod.SolidParticleSystem
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/solidParticle", JSImport.Namespace)
-@js.native
-object solidParticleMod extends js.Object {
+object solidParticleMod {
   
+  @JSImport("babylonjs/Particles/solidParticle", "DepthSortedParticle")
   @js.native
-  class DepthSortedParticle protected () extends js.Object {
+  class DepthSortedParticle protected () extends StObject {
     /**
       * Creates a new sorted particle
       * @param materialIndex
@@ -54,8 +54,9 @@ object solidParticleMod extends js.Object {
     var sqDistance: Double = js.native
   }
   
+  @JSImport("babylonjs/Particles/solidParticle", "ModelShape")
   @js.native
-  class ModelShape protected () extends js.Object {
+  class ModelShape protected () extends StObject {
     /**
       * Creates a ModelShape object. This is an internal simplified reference to a mesh used as for a model to replicate particles from by the SPS.
       * SPS internal tool, don't use it manually.
@@ -138,8 +139,9 @@ object solidParticleMod extends js.Object {
     var shapeID: Double = js.native
   }
   
+  @JSImport("babylonjs/Particles/solidParticle", "SolidParticle")
   @js.native
-  class SolidParticle protected () extends js.Object {
+  class SolidParticle protected () extends StObject {
     /**
       * Creates a Solid Particle object.
       * Don't create particles manually, use instead the Solid Particle System internal tools like _addParticle()
@@ -388,11 +390,12 @@ object solidParticleMod extends js.Object {
     var velocity: Vector3 = js.native
   }
   
+  @JSImport("babylonjs/Particles/solidParticle", "SolidParticleVertex")
   @js.native
   /**
     * Creates a new solid particle vertex
     */
-  class SolidParticleVertex () extends js.Object {
+  class SolidParticleVertex () extends StObject {
     
     /**
       * Vertex color

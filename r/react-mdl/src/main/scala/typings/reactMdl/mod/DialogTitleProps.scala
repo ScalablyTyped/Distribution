@@ -1,15 +1,14 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DialogTitleProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any]
+  extends HTMLProps[js.Any]
      with CustomRenderedComponent
 object DialogTitleProps {
   

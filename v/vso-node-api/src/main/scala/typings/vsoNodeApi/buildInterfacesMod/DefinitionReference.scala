@@ -2,12 +2,13 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefinitionReference extends js.Object {
+trait DefinitionReference extends StObject {
   
   /**
     * The date the definition was created.
@@ -80,48 +81,36 @@ object DefinitionReference {
   }
   
   @scala.inline
-  implicit class DefinitionReferenceOps[Self <: DefinitionReference] (val x: Self) extends AnyVal {
+  implicit class DefinitionReferenceMutableBuilder[Self <: DefinitionReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Date): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setQueueStatus(value: DefinitionQueueStatus): Self = StObject.set(x, "queueStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: TeamProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setType(value: DefinitionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueStatus(value: DefinitionQueueStatus): Self = this.set("queueStatus", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: Double): Self = this.set("revision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: DefinitionType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

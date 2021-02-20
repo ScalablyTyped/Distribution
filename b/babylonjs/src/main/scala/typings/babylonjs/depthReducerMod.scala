@@ -4,14 +4,14 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.depthRendererMod.DepthRenderer
 import typings.babylonjs.minMaxReducerMod.MinMaxReducer
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/depthReducer", JSImport.Namespace)
-@js.native
-object depthReducerMod extends js.Object {
+object depthReducerMod {
   
+  @JSImport("babylonjs/Misc/depthReducer", "DepthReducer")
   @js.native
   class DepthReducer protected () extends MinMaxReducer {
     /**

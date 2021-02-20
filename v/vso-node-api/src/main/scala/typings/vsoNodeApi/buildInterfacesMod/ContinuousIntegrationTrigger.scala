@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,42 +49,30 @@ object ContinuousIntegrationTrigger {
   }
   
   @scala.inline
-  implicit class ContinuousIntegrationTriggerOps[Self <: ContinuousIntegrationTrigger] (val x: Self) extends AnyVal {
+  implicit class ContinuousIntegrationTriggerMutableBuilder[Self <: ContinuousIntegrationTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchChanges(value: Boolean): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value :_*))
     
     @scala.inline
-    def setBatchChanges(value: Boolean): Self = this.set("batchChanges", value.asInstanceOf[js.Any])
+    def setMaxConcurrentBuildsPerBranch(value: Double): Self = StObject.set(x, "maxConcurrentBuildsPerBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchFiltersVarargs(value: String*): Self = this.set("branchFilters", js.Array(value :_*))
+    def setPathFilters(value: js.Array[String]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchFilters(value: js.Array[String]): Self = this.set("branchFilters", value.asInstanceOf[js.Any])
+    def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
     
     @scala.inline
-    def setMaxConcurrentBuildsPerBranch(value: Double): Self = this.set("maxConcurrentBuildsPerBranch", value.asInstanceOf[js.Any])
+    def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathFiltersVarargs(value: String*): Self = this.set("pathFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setPathFilters(value: js.Array[String]): Self = this.set("pathFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPollingInterval(value: Double): Self = this.set("pollingInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPollingJobId(value: String): Self = this.set("pollingJobId", value.asInstanceOf[js.Any])
+    def setPollingJobId(value: String): Self = StObject.set(x, "pollingJobId", value.asInstanceOf[js.Any])
   }
 }

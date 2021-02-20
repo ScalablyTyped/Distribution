@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReelsMediaFeedResponseCountdownSticker extends js.Object {
+trait ReelsMediaFeedResponseCountdownSticker extends StObject {
   
   var attribution: Null = js.native
   
@@ -53,54 +54,42 @@ object ReelsMediaFeedResponseCountdownSticker {
   }
   
   @scala.inline
-  implicit class ReelsMediaFeedResponseCountdownStickerOps[Self <: ReelsMediaFeedResponseCountdownSticker] (val x: Self) extends AnyVal {
+  implicit class ReelsMediaFeedResponseCountdownStickerMutableBuilder[Self <: ReelsMediaFeedResponseCountdownSticker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribution(value: Null): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountdown_id(value: Double): Self = StObject.set(x, "countdown_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDigit_card_color(value: String): Self = StObject.set(x, "digit_card_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribution(value: Null): Self = this.set("attribution", value.asInstanceOf[js.Any])
+    def setDigit_color(value: String): Self = StObject.set(x, "digit_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountdown_id(value: Double): Self = this.set("countdown_id", value.asInstanceOf[js.Any])
+    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigit_card_color(value: String): Self = this.set("digit_card_color", value.asInstanceOf[js.Any])
+    def setEnd_ts(value: Double): Self = StObject.set(x, "end_ts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigit_color(value: String): Self = this.set("digit_color", value.asInstanceOf[js.Any])
+    def setFollowing_enabled(value: Boolean): Self = StObject.set(x, "following_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_background_color(value: String): Self = this.set("end_background_color", value.asInstanceOf[js.Any])
+    def setIs_owner(value: Boolean): Self = StObject.set(x, "is_owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_ts(value: Double): Self = this.set("end_ts", value.asInstanceOf[js.Any])
+    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing_enabled(value: Boolean): Self = this.set("following_enabled", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_owner(value: Boolean): Self = this.set("is_owner", value.asInstanceOf[js.Any])
+    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_background_color(value: String): Self = this.set("start_background_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText_color(value: String): Self = this.set("text_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewer_is_following(value: Boolean): Self = this.set("viewer_is_following", value.asInstanceOf[js.Any])
+    def setViewer_is_following(value: Boolean): Self = StObject.set(x, "viewer_is_following", value.asInstanceOf[js.Any])
   }
 }

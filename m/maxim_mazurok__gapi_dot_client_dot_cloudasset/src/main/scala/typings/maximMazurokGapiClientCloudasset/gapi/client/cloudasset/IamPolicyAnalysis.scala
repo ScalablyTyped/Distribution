@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IamPolicyAnalysis extends js.Object {
+trait IamPolicyAnalysis extends StObject {
   
   /** The analysis query. */
   var analysisQuery: js.UndefOr[IamPolicyAnalysisQuery] = js.native
@@ -28,48 +29,36 @@ object IamPolicyAnalysis {
   }
   
   @scala.inline
-  implicit class IamPolicyAnalysisOps[Self <: IamPolicyAnalysis] (val x: Self) extends AnyVal {
+  implicit class IamPolicyAnalysisMutableBuilder[Self <: IamPolicyAnalysis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisQuery(value: IamPolicyAnalysisQuery): Self = StObject.set(x, "analysisQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisQueryUndefined: Self = StObject.set(x, "analysisQuery", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalysisResults(value: js.Array[IamPolicyAnalysisResult]): Self = StObject.set(x, "analysisResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisQuery(value: IamPolicyAnalysisQuery): Self = this.set("analysisQuery", value.asInstanceOf[js.Any])
+    def setAnalysisResultsUndefined: Self = StObject.set(x, "analysisResults", js.undefined)
     
     @scala.inline
-    def deleteAnalysisQuery: Self = this.set("analysisQuery", js.undefined)
+    def setAnalysisResultsVarargs(value: IamPolicyAnalysisResult*): Self = StObject.set(x, "analysisResults", js.Array(value :_*))
     
     @scala.inline
-    def setAnalysisResultsVarargs(value: IamPolicyAnalysisResult*): Self = this.set("analysisResults", js.Array(value :_*))
+    def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisResults(value: js.Array[IamPolicyAnalysisResult]): Self = this.set("analysisResults", value.asInstanceOf[js.Any])
+    def setFullyExploredUndefined: Self = StObject.set(x, "fullyExplored", js.undefined)
     
     @scala.inline
-    def deleteAnalysisResults: Self = this.set("analysisResults", js.undefined)
+    def setNonCriticalErrors(value: js.Array[IamPolicyAnalysisState]): Self = StObject.set(x, "nonCriticalErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullyExplored(value: Boolean): Self = this.set("fullyExplored", value.asInstanceOf[js.Any])
+    def setNonCriticalErrorsUndefined: Self = StObject.set(x, "nonCriticalErrors", js.undefined)
     
     @scala.inline
-    def deleteFullyExplored: Self = this.set("fullyExplored", js.undefined)
-    
-    @scala.inline
-    def setNonCriticalErrorsVarargs(value: IamPolicyAnalysisState*): Self = this.set("nonCriticalErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setNonCriticalErrors(value: js.Array[IamPolicyAnalysisState]): Self = this.set("nonCriticalErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonCriticalErrors: Self = this.set("nonCriticalErrors", js.undefined)
+    def setNonCriticalErrorsVarargs(value: IamPolicyAnalysisState*): Self = StObject.set(x, "nonCriticalErrors", js.Array(value :_*))
   }
 }

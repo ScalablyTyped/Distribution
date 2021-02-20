@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Invite extends js.Object {
+trait Invite extends StObject {
   
   /**
     * The email address to which the invite is sent.
@@ -36,42 +37,30 @@ object Invite {
   }
   
   @scala.inline
-  implicit class InviteOps[Self <: Invite] (val x: Self) extends AnyVal {
+  implicit class InviteMutableBuilder[Self <: Invite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailStatus(value: EmailStatus): Self = StObject.set(x, "EmailStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    def setEmailStatusUndefined: Self = StObject.set(x, "EmailStatus", js.undefined)
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("EmailAddress", js.undefined)
+    def setInviteId(value: String): Self = StObject.set(x, "InviteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailStatus(value: EmailStatus): Self = this.set("EmailStatus", value.asInstanceOf[js.Any])
+    def setInviteIdUndefined: Self = StObject.set(x, "InviteId", js.undefined)
     
     @scala.inline
-    def deleteEmailStatus: Self = this.set("EmailStatus", js.undefined)
+    def setStatus(value: InviteStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInviteId(value: String): Self = this.set("InviteId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInviteId: Self = this.set("InviteId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: InviteStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

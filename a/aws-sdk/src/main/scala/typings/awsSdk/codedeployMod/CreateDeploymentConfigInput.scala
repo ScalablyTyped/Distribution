@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDeploymentConfigInput extends js.Object {
+trait CreateDeploymentConfigInput extends StObject {
   
   /**
     * The destination platform type for the deployment (Lambda, Server, or ECS).
@@ -36,39 +37,27 @@ object CreateDeploymentConfigInput {
   }
   
   @scala.inline
-  implicit class CreateDeploymentConfigInputOps[Self <: CreateDeploymentConfigInput] (val x: Self) extends AnyVal {
+  implicit class CreateDeploymentConfigInputMutableBuilder[Self <: CreateDeploymentConfigInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentConfigName(value: DeploymentConfigName): Self = this.set("deploymentConfigName", value.asInstanceOf[js.Any])
+    def setMinimumHealthyHosts(value: MinimumHealthyHosts): Self = StObject.set(x, "minimumHealthyHosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputePlatform(value: ComputePlatform): Self = this.set("computePlatform", value.asInstanceOf[js.Any])
+    def setMinimumHealthyHostsUndefined: Self = StObject.set(x, "minimumHealthyHosts", js.undefined)
     
     @scala.inline
-    def deleteComputePlatform: Self = this.set("computePlatform", js.undefined)
+    def setTrafficRoutingConfig(value: TrafficRoutingConfig): Self = StObject.set(x, "trafficRoutingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumHealthyHosts(value: MinimumHealthyHosts): Self = this.set("minimumHealthyHosts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumHealthyHosts: Self = this.set("minimumHealthyHosts", js.undefined)
-    
-    @scala.inline
-    def setTrafficRoutingConfig(value: TrafficRoutingConfig): Self = this.set("trafficRoutingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficRoutingConfig: Self = this.set("trafficRoutingConfig", js.undefined)
+    def setTrafficRoutingConfigUndefined: Self = StObject.set(x, "trafficRoutingConfig", js.undefined)
   }
 }

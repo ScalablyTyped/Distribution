@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveTargetsRequest extends js.Object {
+trait RemoveTargetsRequest extends StObject {
   
   /**
     * The name or ARN of the event bus associated with the rule. If you omit this, the default event bus is used.
@@ -36,39 +37,27 @@ object RemoveTargetsRequest {
   }
   
   @scala.inline
-  implicit class RemoveTargetsRequestOps[Self <: RemoveTargetsRequest] (val x: Self) extends AnyVal {
+  implicit class RemoveTargetsRequestMutableBuilder[Self <: RemoveTargetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdsVarargs(value: TargetId*): Self = this.set("Ids", js.Array(value :_*))
+    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
     
     @scala.inline
-    def setIds(value: TargetIdList): Self = this.set("Ids", value.asInstanceOf[js.Any])
+    def setIds(value: TargetIdList): Self = StObject.set(x, "Ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: RuleName): Self = this.set("Rule", value.asInstanceOf[js.Any])
+    def setIdsVarargs(value: TargetId*): Self = StObject.set(x, "Ids", js.Array(value :_*))
     
     @scala.inline
-    def setEventBusName(value: EventBusNameOrArn): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
-    
-    @scala.inline
-    def setForce(value: Boolean): Self = this.set("Force", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForce: Self = this.set("Force", js.undefined)
+    def setRule(value: RuleName): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
   }
 }

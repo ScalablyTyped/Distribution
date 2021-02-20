@@ -1,12 +1,13 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "DateTimeFormatter")
 @js.native
-class DateTimeFormatter protected () extends js.Object {
+class DateTimeFormatter protected () extends StObject {
   
   def chronology(): js.Any = js.native
   
@@ -30,26 +31,66 @@ class DateTimeFormatter protected () extends js.Object {
   
   def withResolverStyle(resolverStyle: ResolverStyle): DateTimeFormatter = js.native
 }
-/* static members */
-@JSImport("js-joda", "DateTimeFormatter")
-@js.native
-object DateTimeFormatter extends js.Object {
+object DateTimeFormatter {
   
-  var ISO_INSTANT: DateTimeFormatter = js.native
+  @JSImport("js-joda", "DateTimeFormatter")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var ISO_LOCAL_DATE: DateTimeFormatter = js.native
+  /* static member */
+  @JSImport("js-joda", "DateTimeFormatter.ISO_INSTANT")
+  @js.native
+  def ISO_INSTANT: DateTimeFormatter = js.native
+  @scala.inline
+  def ISO_INSTANT_=(x: DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO_INSTANT")(x.asInstanceOf[js.Any])
   
-  var ISO_LOCAL_DATE_TIME: DateTimeFormatter = js.native
+  /* static member */
+  @JSImport("js-joda", "DateTimeFormatter.ISO_LOCAL_DATE")
+  @js.native
+  def ISO_LOCAL_DATE: DateTimeFormatter = js.native
+  @scala.inline
+  def ISO_LOCAL_DATE_=(x: DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO_LOCAL_DATE")(x.asInstanceOf[js.Any])
   
-  var ISO_LOCAL_TIME: DateTimeFormatter = js.native
+  /* static member */
+  @JSImport("js-joda", "DateTimeFormatter.ISO_LOCAL_DATE_TIME")
+  @js.native
+  def ISO_LOCAL_DATE_TIME: DateTimeFormatter = js.native
+  @scala.inline
+  def ISO_LOCAL_DATE_TIME_=(x: DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO_LOCAL_DATE_TIME")(x.asInstanceOf[js.Any])
   
-  var ISO_OFFSET_DATE_TIME: DateTimeFormatter = js.native
+  /* static member */
+  @JSImport("js-joda", "DateTimeFormatter.ISO_LOCAL_TIME")
+  @js.native
+  def ISO_LOCAL_TIME: DateTimeFormatter = js.native
+  @scala.inline
+  def ISO_LOCAL_TIME_=(x: DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO_LOCAL_TIME")(x.asInstanceOf[js.Any])
   
-  var ISO_ZONED_DATE_TIME: DateTimeFormatter = js.native
+  /* static member */
+  @JSImport("js-joda", "DateTimeFormatter.ISO_OFFSET_DATE_TIME")
+  @js.native
+  def ISO_OFFSET_DATE_TIME: DateTimeFormatter = js.native
+  @scala.inline
+  def ISO_OFFSET_DATE_TIME_=(x: DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO_OFFSET_DATE_TIME")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("js-joda", "DateTimeFormatter.ISO_ZONED_DATE_TIME")
+  @js.native
+  def ISO_ZONED_DATE_TIME: DateTimeFormatter = js.native
+  @scala.inline
+  def ISO_ZONED_DATE_TIME_=(x: DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO_ZONED_DATE_TIME")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("js-joda", "DateTimeFormatter.ofPattern")
+  @js.native
   def ofPattern(pattern: String): DateTimeFormatter = js.native
   
+  /* static member */
+  @JSImport("js-joda", "DateTimeFormatter.parsedExcessDays")
+  @js.native
   def parsedExcessDays(): TemporalQuery = js.native
   
+  /* static member */
+  @JSImport("js-joda", "DateTimeFormatter.parsedLeapSecond")
+  @js.native
   def parsedLeapSecond(): Boolean = js.native
 }

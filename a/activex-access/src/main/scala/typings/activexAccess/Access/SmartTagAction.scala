@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartTagAction extends js.Object {
+trait SmartTagAction extends StObject {
   
   @JSName("Access.SmartTagAction_typekey")
   var AccessDotSmartTagAction_typekey: SmartTagAction = js.native
@@ -37,36 +38,24 @@ object SmartTagAction {
   }
   
   @scala.inline
-  implicit class SmartTagActionOps[Self <: SmartTagAction] (val x: Self) extends AnyVal {
+  implicit class SmartTagActionMutableBuilder[Self <: SmartTagAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDotSmartTagAction_typekey(value: SmartTagAction): Self = StObject.set(x, "Access.SmartTagAction_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecute(value: () => Unit): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessDotSmartTagAction_typekey(value: SmartTagAction): Self = this.set("Access.SmartTagAction_typekey", value.asInstanceOf[js.Any])
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecute(value: () => Unit): Self = this.set("Execute", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = this.set("IsMemberSafe", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

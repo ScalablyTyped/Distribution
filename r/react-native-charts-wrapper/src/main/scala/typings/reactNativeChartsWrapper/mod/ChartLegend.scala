@@ -16,12 +16,13 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT_TO
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.SQUARE
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TOP
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.VERTICAL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartLegend extends js.Object {
+trait ChartLegend extends StObject {
   
   var custom: js.UndefOr[Colors] = js.native
   
@@ -70,132 +71,120 @@ object ChartLegend {
   }
   
   @scala.inline
-  implicit class ChartLegendOps[Self <: ChartLegend] (val x: Self) extends AnyVal {
+  implicit class ChartLegendMutableBuilder[Self <: ChartLegend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: Colors): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: LEFT_TO_RIGHT | RIGHT_TO_LEFT): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: Colors): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setDrawInside(value: Boolean): Self = StObject.set(x, "drawInside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: LEFT_TO_RIGHT | RIGHT_TO_LEFT): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDrawInsideUndefined: Self = StObject.set(x, "drawInside", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawInside(value: Boolean): Self = this.set("drawInside", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDrawInside: Self = this.set("drawInside", js.undefined)
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setFontStyle(value: Double): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: Double): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setForm(value: NONE | EMPTY | DEFAULT | SQUARE | CIRCLE | LINE): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setFormSize(value: Double): Self = StObject.set(x, "formSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setFormSizeUndefined: Self = StObject.set(x, "formSize", js.undefined)
     
     @scala.inline
-    def setForm(value: NONE | EMPTY | DEFAULT | SQUARE | CIRCLE | LINE): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setFormToTextSpace(value: Double): Self = StObject.set(x, "formToTextSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForm: Self = this.set("form", js.undefined)
+    def setFormToTextSpaceUndefined: Self = StObject.set(x, "formToTextSpace", js.undefined)
     
     @scala.inline
-    def setFormSize(value: Double): Self = this.set("formSize", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     @scala.inline
-    def deleteFormSize: Self = this.set("formSize", js.undefined)
+    def setHorizontalAlignment(value: LEFT | CENTER | RIGHT): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormToTextSpace(value: Double): Self = this.set("formToTextSpace", value.asInstanceOf[js.Any])
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def deleteFormToTextSpace: Self = this.set("formToTextSpace", js.undefined)
+    def setMaxSizePercent(value: Double): Self = StObject.set(x, "maxSizePercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlignment(value: LEFT | CENTER | RIGHT): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setMaxSizePercentUndefined: Self = StObject.set(x, "maxSizePercent", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setOrientation(value: HORIZONTAL | VERTICAL): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSizePercent(value: Double): Self = this.set("maxSizePercent", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMaxSizePercent: Self = this.set("maxSizePercent", js.undefined)
+    def setTextColor(value: Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: HORIZONTAL | VERTICAL): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor(value: Color): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
     
     @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setVerticalAlignment(value: TOP | CENTER | BOTTOM): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextSize(value: Double): Self = this.set("textSize", value.asInstanceOf[js.Any])
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
     @scala.inline
-    def deleteTextSize: Self = this.set("textSize", js.undefined)
+    def setWordWrapEnabled(value: Boolean): Self = StObject.set(x, "wordWrapEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlignment(value: TOP | CENTER | BOTTOM): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    def setWordWrapEnabledUndefined: Self = StObject.set(x, "wordWrapEnabled", js.undefined)
     
     @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    def setXEntrySpace(value: Double): Self = StObject.set(x, "xEntrySpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordWrapEnabled(value: Boolean): Self = this.set("wordWrapEnabled", value.asInstanceOf[js.Any])
+    def setXEntrySpaceUndefined: Self = StObject.set(x, "xEntrySpace", js.undefined)
     
     @scala.inline
-    def deleteWordWrapEnabled: Self = this.set("wordWrapEnabled", js.undefined)
+    def setYEntrySpace(value: Double): Self = StObject.set(x, "yEntrySpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXEntrySpace(value: Double): Self = this.set("xEntrySpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXEntrySpace: Self = this.set("xEntrySpace", js.undefined)
-    
-    @scala.inline
-    def setYEntrySpace(value: Double): Self = this.set("yEntrySpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYEntrySpace: Self = this.set("yEntrySpace", js.undefined)
+    def setYEntrySpaceUndefined: Self = StObject.set(x, "yEntrySpace", js.undefined)
   }
 }

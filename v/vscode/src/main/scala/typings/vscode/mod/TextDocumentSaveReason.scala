@@ -1,15 +1,15 @@
 package typings.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextDocumentSaveReason extends js.Object
+sealed trait TextDocumentSaveReason extends StObject
 @JSImport("vscode", "TextDocumentSaveReason")
 @js.native
-object TextDocumentSaveReason extends js.Object {
+object TextDocumentSaveReason extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextDocumentSaveReason with Double] = js.native
@@ -19,16 +19,14 @@ object TextDocumentSaveReason extends js.Object {
     */
   @js.native
   sealed trait AfterDelay extends TextDocumentSaveReason
-  /* 2 */ @js.native
-  object AfterDelay extends TopLevel[AfterDelay with Double]
+  /* 2 */ val AfterDelay: typings.vscode.mod.TextDocumentSaveReason.AfterDelay with Double = js.native
   
   /**
     * When the editor lost focus.
     */
   @js.native
   sealed trait FocusOut extends TextDocumentSaveReason
-  /* 3 */ @js.native
-  object FocusOut extends TopLevel[FocusOut with Double]
+  /* 3 */ val FocusOut: typings.vscode.mod.TextDocumentSaveReason.FocusOut with Double = js.native
   
   /**
     * Manually triggered, e.g. by the user pressing save, by starting debugging,
@@ -36,6 +34,5 @@ object TextDocumentSaveReason extends js.Object {
     */
   @js.native
   sealed trait Manual extends TextDocumentSaveReason
-  /* 1 */ @js.native
-  object Manual extends TopLevel[Manual with Double]
+  /* 1 */ val Manual: typings.vscode.mod.TextDocumentSaveReason.Manual with Double = js.native
 }

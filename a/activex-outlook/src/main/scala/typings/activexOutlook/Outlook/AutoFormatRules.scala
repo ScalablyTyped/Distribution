@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoFormatRules extends js.Object {
+trait AutoFormatRules extends StObject {
   
   def Add(Name: String): AutoFormatRule = js.native
   
@@ -55,54 +56,42 @@ object AutoFormatRules {
   }
   
   @scala.inline
-  implicit class AutoFormatRulesOps[Self <: AutoFormatRules] (val x: Self) extends AnyVal {
+  implicit class AutoFormatRulesMutableBuilder[Self <: AutoFormatRules] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: String => AutoFormatRule): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: String => AutoFormatRule): Self = this.set("Add", js.Any.fromFunction1(value))
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setInsert(value: (String, js.Any) => AutoFormatRule): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setItem(value: js.Any => AutoFormatRule): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setOutlookDotAutoFormatRules_typekey(value: AutoFormatRules): Self = StObject.set(x, "Outlook.AutoFormatRules_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert(value: (String, js.Any) => AutoFormatRule): Self = this.set("Insert", js.Any.fromFunction2(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any => AutoFormatRule): Self = this.set("Item", js.Any.fromFunction1(value))
+    def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOutlookDotAutoFormatRules_typekey(value: AutoFormatRules): Self = this.set("Outlook.AutoFormatRules_typekey", value.asInstanceOf[js.Any])
+    def setRemoveAll(value: () => Unit): Self = StObject.set(x, "RemoveAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemove(value: js.Any => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveAll(value: () => Unit): Self = this.set("RemoveAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

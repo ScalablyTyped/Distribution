@@ -1,5 +1,6 @@
 package typings.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hapiHapi.hapiHapiStrings.optional
   - typings.hapiHapi.hapiHapiStrings.`try`
 */
-trait AuthMode extends js.Object
+trait AuthMode extends StObject
 object AuthMode {
   
   @scala.inline

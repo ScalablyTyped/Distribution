@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,96 +125,84 @@ object IgGridUpdatingRowEditDialogOptions {
   }
   
   @scala.inline
-  implicit class IgGridUpdatingRowEditDialogOptionsOps[Self <: IgGridUpdatingRowEditDialogOptions] (val x: Self) extends AnyVal {
+  implicit class IgGridUpdatingRowEditDialogOptionsMutableBuilder[Self <: IgGridUpdatingRowEditDialogOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainment(value: String): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setDialogTemplate(value: String): Self = StObject.set(x, "dialogTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainment(value: String): Self = this.set("containment", value.asInstanceOf[js.Any])
+    def setDialogTemplateSelector(value: String): Self = StObject.set(x, "dialogTemplateSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainment: Self = this.set("containment", js.undefined)
+    def setDialogTemplateSelectorUndefined: Self = StObject.set(x, "dialogTemplateSelector", js.undefined)
     
     @scala.inline
-    def setDialogTemplate(value: String): Self = this.set("dialogTemplate", value.asInstanceOf[js.Any])
+    def setDialogTemplateUndefined: Self = StObject.set(x, "dialogTemplate", js.undefined)
     
     @scala.inline
-    def deleteDialogTemplate: Self = this.set("dialogTemplate", js.undefined)
+    def setEditorsColumnWidth(value: String | Double): Self = StObject.set(x, "editorsColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogTemplateSelector(value: String): Self = this.set("dialogTemplateSelector", value.asInstanceOf[js.Any])
+    def setEditorsColumnWidthUndefined: Self = StObject.set(x, "editorsColumnWidth", js.undefined)
     
     @scala.inline
-    def deleteDialogTemplateSelector: Self = this.set("dialogTemplateSelector", js.undefined)
+    def setEditorsTemplate(value: String): Self = StObject.set(x, "editorsTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorsColumnWidth(value: String | Double): Self = this.set("editorsColumnWidth", value.asInstanceOf[js.Any])
+    def setEditorsTemplateSelector(value: String): Self = StObject.set(x, "editorsTemplateSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEditorsColumnWidth: Self = this.set("editorsColumnWidth", js.undefined)
+    def setEditorsTemplateSelectorUndefined: Self = StObject.set(x, "editorsTemplateSelector", js.undefined)
     
     @scala.inline
-    def setEditorsTemplate(value: String): Self = this.set("editorsTemplate", value.asInstanceOf[js.Any])
+    def setEditorsTemplateUndefined: Self = StObject.set(x, "editorsTemplate", js.undefined)
     
     @scala.inline
-    def deleteEditorsTemplate: Self = this.set("editorsTemplate", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorsTemplateSelector(value: String): Self = this.set("editorsTemplateSelector", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteEditorsTemplateSelector: Self = this.set("editorsTemplateSelector", js.undefined)
+    def setNamesColumnWidth(value: String | Double): Self = StObject.set(x, "namesColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setNamesColumnWidthUndefined: Self = StObject.set(x, "namesColumnWidth", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setShowDoneCancelButtons(value: Boolean): Self = StObject.set(x, "showDoneCancelButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamesColumnWidth(value: String | Double): Self = this.set("namesColumnWidth", value.asInstanceOf[js.Any])
+    def setShowDoneCancelButtonsUndefined: Self = StObject.set(x, "showDoneCancelButtons", js.undefined)
     
     @scala.inline
-    def deleteNamesColumnWidth: Self = this.set("namesColumnWidth", js.undefined)
+    def setShowEditorsForHiddenColumns(value: Boolean): Self = StObject.set(x, "showEditorsForHiddenColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDoneCancelButtons(value: Boolean): Self = this.set("showDoneCancelButtons", value.asInstanceOf[js.Any])
+    def setShowEditorsForHiddenColumnsUndefined: Self = StObject.set(x, "showEditorsForHiddenColumns", js.undefined)
     
     @scala.inline
-    def deleteShowDoneCancelButtons: Self = this.set("showDoneCancelButtons", js.undefined)
+    def setShowReadonlyEditors(value: Boolean): Self = StObject.set(x, "showReadonlyEditors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEditorsForHiddenColumns(value: Boolean): Self = this.set("showEditorsForHiddenColumns", value.asInstanceOf[js.Any])
+    def setShowReadonlyEditorsUndefined: Self = StObject.set(x, "showReadonlyEditors", js.undefined)
     
     @scala.inline
-    def deleteShowEditorsForHiddenColumns: Self = this.set("showEditorsForHiddenColumns", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowReadonlyEditors(value: Boolean): Self = this.set("showReadonlyEditors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowReadonlyEditors: Self = this.set("showReadonlyEditors", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

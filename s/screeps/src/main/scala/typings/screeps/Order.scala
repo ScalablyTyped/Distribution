@@ -1,11 +1,12 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Order extends js.Object {
+trait Order extends StObject {
   
   var active: js.UndefOr[Boolean] = js.native
   
@@ -45,57 +46,45 @@ object Order {
   }
   
   @scala.inline
-  implicit class OrderOps[Self <: Order] (val x: Self) extends AnyVal {
+  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: Double): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setRemainingAmount(value: Double): Self = StObject.set(x, "remainingAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemainingAmount(value: Double): Self = this.set("remainingAmount", value.asInstanceOf[js.Any])
+    def setResourceType(value: MarketResourceConstant): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: MarketResourceConstant): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setRoomName(value: String): Self = StObject.set(x, "roomName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRoomNameUndefined: Self = StObject.set(x, "roomName", js.undefined)
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setTotalAmount(value: Double): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setTotalAmountUndefined: Self = StObject.set(x, "totalAmount", js.undefined)
     
     @scala.inline
-    def setRoomName(value: String): Self = this.set("roomName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomName: Self = this.set("roomName", js.undefined)
-    
-    @scala.inline
-    def setTotalAmount(value: Double): Self = this.set("totalAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalAmount: Self = this.set("totalAmount", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.swaggerSchemaOfficial.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,84 +39,72 @@ object Schema {
   }
   
   @scala.inline
-  implicit class SchemaOps[Self <: Schema] (val x: Self) extends AnyVal {
+  implicit class SchemaMutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalProperties(value: Schema | Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$ref(value: String): Self = this.set("$ref", value.asInstanceOf[js.Any])
+    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
     @scala.inline
-    def delete$ref: Self = this.set("$ref", js.undefined)
+    def setAllOf(value: js.Array[Schema]): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalProperties(value: Schema | Boolean): Self = this.set("additionalProperties", value.asInstanceOf[js.Any])
+    def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
     
     @scala.inline
-    def deleteAdditionalProperties: Self = this.set("additionalProperties", js.undefined)
+    def setAllOfVarargs(value: Schema*): Self = StObject.set(x, "allOf", js.Array(value :_*))
     
     @scala.inline
-    def setAllOfVarargs(value: Schema*): Self = this.set("allOf", js.Array(value :_*))
+    def setDiscriminator(value: String): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllOf(value: js.Array[Schema]): Self = this.set("allOf", value.asInstanceOf[js.Any])
+    def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
     
     @scala.inline
-    def deleteAllOf: Self = this.set("allOf", js.undefined)
+    def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscriminator(value: String): Self = this.set("discriminator", value.asInstanceOf[js.Any])
+    def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     
     @scala.inline
-    def deleteDiscriminator: Self = this.set("discriminator", js.undefined)
+    def setExternalDocs(value: ExternalDocs): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExample(value: js.Any): Self = this.set("example", value.asInstanceOf[js.Any])
+    def setExternalDocsUndefined: Self = StObject.set(x, "externalDocs", js.undefined)
     
     @scala.inline
-    def deleteExample: Self = this.set("example", js.undefined)
+    def setProperties(value: StringDictionary[Schema]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalDocs(value: ExternalDocs): Self = this.set("externalDocs", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteExternalDocs: Self = this.set("externalDocs", js.undefined)
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: StringDictionary[Schema]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
     
     @scala.inline
-    def setRequiredVarargs(value: String*): Self = this.set("required", js.Array(value :_*))
+    def setXml(value: XML): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: js.Array[String]): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
-    
-    @scala.inline
-    def setXml(value: XML): Self = this.set("xml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXml: Self = this.set("xml", js.undefined)
+    def setXmlUndefined: Self = StObject.set(x, "xml", js.undefined)
   }
 }

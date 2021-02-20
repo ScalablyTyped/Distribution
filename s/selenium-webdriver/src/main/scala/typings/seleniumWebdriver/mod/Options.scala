@@ -1,13 +1,14 @@
 package typings.seleniumWebdriver.mod
 
 import typings.seleniumWebdriver.capabilitiesMod.ITimeouts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Options")
 @js.native
-class Options protected () extends js.Object {
+class Options protected () extends StObject {
   // region Constructors
   /**
     * @param {!WebDriver} driver The parent driver.

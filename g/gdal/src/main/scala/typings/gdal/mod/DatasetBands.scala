@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetBands extends js.Object {
+trait DatasetBands extends StObject {
   
   def count(): Double = js.native
   
@@ -35,36 +36,24 @@ object DatasetBands {
   }
   
   @scala.inline
-  implicit class DatasetBandsOps[Self <: DatasetBands] (val x: Self) extends AnyVal {
+  implicit class DatasetBandsMutableBuilder[Self <: DatasetBands] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreate(value: Double => RasterBand): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDs(value: Dataset): Self = StObject.set(x, "ds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: () => Double): Self = this.set("count", js.Any.fromFunction0(value))
+    def setForEach(value: js.Function2[/* band */ RasterBand, /* i */ Double, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreate(value: Double => RasterBand): Self = this.set("create", js.Any.fromFunction1(value))
+    def setGet(value: Double => RasterBand): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDs(value: Dataset): Self = this.set("ds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForEach(value: js.Function2[/* band */ RasterBand, /* i */ Double, Unit] => Unit): Self = this.set("forEach", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGet(value: Double => RasterBand): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMap(value: js.Function2[/* band */ RasterBand, /* i */ Double, js.Any] => js.Array[js.Any]): Self = this.set("map", js.Any.fromFunction1(value))
+    def setMap(value: js.Function2[/* band */ RasterBand, /* i */ Double, js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
   }
 }

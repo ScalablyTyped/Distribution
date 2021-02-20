@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreditCardInformation extends js.Object {
+trait CreditCardInformation extends StObject {
   
   /**
     * A complex element containing the credit card billing address information.
@@ -55,60 +56,48 @@ object CreditCardInformation {
   }
   
   @scala.inline
-  implicit class CreditCardInformationOps[Self <: CreditCardInformation] (val x: Self) extends AnyVal {
+  implicit class CreditCardInformationMutableBuilder[Self <: CreditCardInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCardNumber(value: String): Self = StObject.set(x, "cardNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: /* Contains address information. */ AddressInformation): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setCardNumberUndefined: Self = StObject.set(x, "cardNumber", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardNumber(value: String): Self = this.set("cardNumber", value.asInstanceOf[js.Any])
+    def setCardTypeUndefined: Self = StObject.set(x, "cardType", js.undefined)
     
     @scala.inline
-    def deleteCardNumber: Self = this.set("cardNumber", js.undefined)
+    def setCvNumber(value: String): Self = StObject.set(x, "cvNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardType(value: String): Self = this.set("cardType", value.asInstanceOf[js.Any])
+    def setCvNumberUndefined: Self = StObject.set(x, "cvNumber", js.undefined)
     
     @scala.inline
-    def deleteCardType: Self = this.set("cardType", js.undefined)
+    def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCvNumber(value: String): Self = this.set("cvNumber", value.asInstanceOf[js.Any])
+    def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
     
     @scala.inline
-    def deleteCvNumber: Self = this.set("cvNumber", js.undefined)
+    def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationMonth(value: String): Self = this.set("expirationMonth", value.asInstanceOf[js.Any])
+    def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
     
     @scala.inline
-    def deleteExpirationMonth: Self = this.set("expirationMonth", js.undefined)
+    def setNameOnCard(value: String): Self = StObject.set(x, "nameOnCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationYear(value: String): Self = this.set("expirationYear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationYear: Self = this.set("expirationYear", js.undefined)
-    
-    @scala.inline
-    def setNameOnCard(value: String): Self = this.set("nameOnCard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNameOnCard: Self = this.set("nameOnCard", js.undefined)
+    def setNameOnCardUndefined: Self = StObject.set(x, "nameOnCard", js.undefined)
   }
 }

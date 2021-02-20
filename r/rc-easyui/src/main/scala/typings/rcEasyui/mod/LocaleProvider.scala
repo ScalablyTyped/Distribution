@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,28 +17,31 @@ class LocaleProvider protected ()
   
   def getChildContext(): js.Any = js.native
 }
-@JSImport("rc-easyui", "LocaleProvider")
-@js.native
-object LocaleProvider extends js.Object {
+object LocaleProvider {
   
-  @js.native
-  object childContextTypes extends js.Object {
+  object childContextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "LocaleProvider.childContextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LocaleProvider.childContextTypes.locale
+      @JSImport("rc-easyui", "LocaleProvider.childContextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "LocaleProvider.childContextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LocaleProvider.childContextTypes.t
+      @JSImport("rc-easyui", "LocaleProvider.childContextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

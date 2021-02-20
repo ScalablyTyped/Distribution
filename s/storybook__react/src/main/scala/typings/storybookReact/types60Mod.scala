@@ -5,13 +5,12 @@ import typings.storybookAddons.typesMod.Annotations
 import typings.storybookAddons.typesMod.BaseMeta
 import typings.storybookAddons.typesMod.BaseStory
 import typings.storybookReact.typesMod.StoryFnReactReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/react/dist/client/preview/types-6-0", JSImport.Namespace)
-@js.native
-object types60Mod extends js.Object {
+object types60Mod {
   
   type Meta[Args] = BaseMeta[ReactComponent] with (Annotations[Args, ReactReturnType])
   

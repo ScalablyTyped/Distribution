@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSegmentsResponse extends js.Object {
+trait GetSegmentsResponse extends StObject {
   
   var SegmentsResponse: typings.awsSdk.pinpointMod.SegmentsResponse = js.native
 }
@@ -18,21 +19,9 @@ object GetSegmentsResponse {
   }
   
   @scala.inline
-  implicit class GetSegmentsResponseOps[Self <: GetSegmentsResponse] (val x: Self) extends AnyVal {
+  implicit class GetSegmentsResponseMutableBuilder[Self <: GetSegmentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSegmentsResponse(value: SegmentsResponse): Self = this.set("SegmentsResponse", value.asInstanceOf[js.Any])
+    def setSegmentsResponse(value: SegmentsResponse): Self = StObject.set(x, "SegmentsResponse", value.asInstanceOf[js.Any])
   }
 }

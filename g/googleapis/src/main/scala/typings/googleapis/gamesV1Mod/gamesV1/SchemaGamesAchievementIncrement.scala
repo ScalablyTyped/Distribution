@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * achievement.
   */
 @js.native
-trait SchemaGamesAchievementIncrement extends js.Object {
+trait SchemaGamesAchievementIncrement extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
@@ -36,36 +37,24 @@ object SchemaGamesAchievementIncrement {
   }
   
   @scala.inline
-  implicit class SchemaGamesAchievementIncrementOps[Self <: SchemaGamesAchievementIncrement] (val x: Self) extends AnyVal {
+  implicit class SchemaGamesAchievementIncrementMutableBuilder[Self <: SchemaGamesAchievementIncrement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
-    
-    @scala.inline
-    def setSteps(value: Double): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
   }
 }

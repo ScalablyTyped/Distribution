@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ec2AmiResource extends js.Object {
+trait Ec2AmiResource extends StObject {
   
   /**
     * The ID of the AMI in Amazon EC2.
@@ -26,27 +27,15 @@ object Ec2AmiResource {
   }
   
   @scala.inline
-  implicit class Ec2AmiResourceOps[Self <: Ec2AmiResource] (val x: Self) extends AnyVal {
+  implicit class Ec2AmiResourceMutableBuilder[Self <: Ec2AmiResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmiId(value: AmiId): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSnowballAmiId(value: String): Self = StObject.set(x, "SnowballAmiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAmiId(value: AmiId): Self = this.set("AmiId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnowballAmiId(value: String): Self = this.set("SnowballAmiId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnowballAmiId: Self = this.set("SnowballAmiId", js.undefined)
+    def setSnowballAmiIdUndefined: Self = StObject.set(x, "SnowballAmiId", js.undefined)
   }
 }

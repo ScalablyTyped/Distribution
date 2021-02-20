@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldTransform extends js.Object {
+trait FieldTransform extends StObject {
   
   /**
     * Append the given elements in order if they are not already present in the current field value. If the field is not an array, or if the field does not yet exist, it is first set to
@@ -60,60 +61,48 @@ object FieldTransform {
   }
   
   @scala.inline
-  implicit class FieldTransformOps[Self <: FieldTransform] (val x: Self) extends AnyVal {
+  implicit class FieldTransformMutableBuilder[Self <: FieldTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendMissingElements(value: ArrayValue): Self = StObject.set(x, "appendMissingElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendMissingElementsUndefined: Self = StObject.set(x, "appendMissingElements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendMissingElements(value: ArrayValue): Self = this.set("appendMissingElements", value.asInstanceOf[js.Any])
+    def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
     
     @scala.inline
-    def deleteAppendMissingElements: Self = this.set("appendMissingElements", js.undefined)
+    def setIncrement(value: Value): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldPath(value: String): Self = this.set("fieldPath", value.asInstanceOf[js.Any])
+    def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
     
     @scala.inline
-    def deleteFieldPath: Self = this.set("fieldPath", js.undefined)
+    def setMaximum(value: Value): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrement(value: Value): Self = this.set("increment", value.asInstanceOf[js.Any])
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def deleteIncrement: Self = this.set("increment", js.undefined)
+    def setMinimum(value: Value): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: Value): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
     @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    def setRemoveAllFromArray(value: ArrayValue): Self = StObject.set(x, "removeAllFromArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum(value: Value): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    def setRemoveAllFromArrayUndefined: Self = StObject.set(x, "removeAllFromArray", js.undefined)
     
     @scala.inline
-    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    def setSetToServerValue(value: String): Self = StObject.set(x, "setToServerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveAllFromArray(value: ArrayValue): Self = this.set("removeAllFromArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveAllFromArray: Self = this.set("removeAllFromArray", js.undefined)
-    
-    @scala.inline
-    def setSetToServerValue(value: String): Self = this.set("setToServerValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetToServerValue: Self = this.set("setToServerValue", js.undefined)
+    def setSetToServerValueUndefined: Self = StObject.set(x, "setToServerValue", js.undefined)
   }
 }

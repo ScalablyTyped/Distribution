@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkillDetails extends js.Object {
+trait SkillDetails extends StObject {
   
   /**
     * The details about what the skill supports organized as bullet points.
@@ -66,90 +67,78 @@ object SkillDetails {
   }
   
   @scala.inline
-  implicit class SkillDetailsOps[Self <: SkillDetails] (val x: Self) extends AnyVal {
+  implicit class SkillDetailsMutableBuilder[Self <: SkillDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulletPoints(value: BulletPoints): Self = StObject.set(x, "BulletPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulletPointsUndefined: Self = StObject.set(x, "BulletPoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBulletPointsVarargs(value: BulletPoint*): Self = StObject.set(x, "BulletPoints", js.Array(value :_*))
     
     @scala.inline
-    def setBulletPointsVarargs(value: BulletPoint*): Self = this.set("BulletPoints", js.Array(value :_*))
+    def setDeveloperInfo(value: DeveloperInfo): Self = StObject.set(x, "DeveloperInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulletPoints(value: BulletPoints): Self = this.set("BulletPoints", value.asInstanceOf[js.Any])
+    def setDeveloperInfoUndefined: Self = StObject.set(x, "DeveloperInfo", js.undefined)
     
     @scala.inline
-    def deleteBulletPoints: Self = this.set("BulletPoints", js.undefined)
+    def setEndUserLicenseAgreement(value: EndUserLicenseAgreement): Self = StObject.set(x, "EndUserLicenseAgreement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperInfo(value: DeveloperInfo): Self = this.set("DeveloperInfo", value.asInstanceOf[js.Any])
+    def setEndUserLicenseAgreementUndefined: Self = StObject.set(x, "EndUserLicenseAgreement", js.undefined)
     
     @scala.inline
-    def deleteDeveloperInfo: Self = this.set("DeveloperInfo", js.undefined)
+    def setGenericKeywords(value: GenericKeywords): Self = StObject.set(x, "GenericKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndUserLicenseAgreement(value: EndUserLicenseAgreement): Self = this.set("EndUserLicenseAgreement", value.asInstanceOf[js.Any])
+    def setGenericKeywordsUndefined: Self = StObject.set(x, "GenericKeywords", js.undefined)
     
     @scala.inline
-    def deleteEndUserLicenseAgreement: Self = this.set("EndUserLicenseAgreement", js.undefined)
+    def setGenericKeywordsVarargs(value: GenericKeyword*): Self = StObject.set(x, "GenericKeywords", js.Array(value :_*))
     
     @scala.inline
-    def setGenericKeywordsVarargs(value: GenericKeyword*): Self = this.set("GenericKeywords", js.Array(value :_*))
+    def setInvocationPhrase(value: InvocationPhrase): Self = StObject.set(x, "InvocationPhrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenericKeywords(value: GenericKeywords): Self = this.set("GenericKeywords", value.asInstanceOf[js.Any])
+    def setInvocationPhraseUndefined: Self = StObject.set(x, "InvocationPhrase", js.undefined)
     
     @scala.inline
-    def deleteGenericKeywords: Self = this.set("GenericKeywords", js.undefined)
+    def setNewInThisVersionBulletPoints(value: NewInThisVersionBulletPoints): Self = StObject.set(x, "NewInThisVersionBulletPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvocationPhrase(value: InvocationPhrase): Self = this.set("InvocationPhrase", value.asInstanceOf[js.Any])
+    def setNewInThisVersionBulletPointsUndefined: Self = StObject.set(x, "NewInThisVersionBulletPoints", js.undefined)
     
     @scala.inline
-    def deleteInvocationPhrase: Self = this.set("InvocationPhrase", js.undefined)
+    def setNewInThisVersionBulletPointsVarargs(value: BulletPoint*): Self = StObject.set(x, "NewInThisVersionBulletPoints", js.Array(value :_*))
     
     @scala.inline
-    def setNewInThisVersionBulletPointsVarargs(value: BulletPoint*): Self = this.set("NewInThisVersionBulletPoints", js.Array(value :_*))
+    def setProductDescription(value: ProductDescription): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewInThisVersionBulletPoints(value: NewInThisVersionBulletPoints): Self = this.set("NewInThisVersionBulletPoints", value.asInstanceOf[js.Any])
+    def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
     
     @scala.inline
-    def deleteNewInThisVersionBulletPoints: Self = this.set("NewInThisVersionBulletPoints", js.undefined)
+    def setReleaseDate(value: ReleaseDate): Self = StObject.set(x, "ReleaseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductDescription(value: ProductDescription): Self = this.set("ProductDescription", value.asInstanceOf[js.Any])
+    def setReleaseDateUndefined: Self = StObject.set(x, "ReleaseDate", js.undefined)
     
     @scala.inline
-    def deleteProductDescription: Self = this.set("ProductDescription", js.undefined)
+    def setReviews(value: Reviews): Self = StObject.set(x, "Reviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDate(value: ReleaseDate): Self = this.set("ReleaseDate", value.asInstanceOf[js.Any])
+    def setReviewsUndefined: Self = StObject.set(x, "Reviews", js.undefined)
     
     @scala.inline
-    def deleteReleaseDate: Self = this.set("ReleaseDate", js.undefined)
+    def setSkillTypes(value: SkillTypes): Self = StObject.set(x, "SkillTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviews(value: Reviews): Self = this.set("Reviews", value.asInstanceOf[js.Any])
+    def setSkillTypesUndefined: Self = StObject.set(x, "SkillTypes", js.undefined)
     
     @scala.inline
-    def deleteReviews: Self = this.set("Reviews", js.undefined)
-    
-    @scala.inline
-    def setSkillTypesVarargs(value: SkillStoreType*): Self = this.set("SkillTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkillTypes(value: SkillTypes): Self = this.set("SkillTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkillTypes: Self = this.set("SkillTypes", js.undefined)
+    def setSkillTypesVarargs(value: SkillStoreType*): Self = StObject.set(x, "SkillTypes", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,78 +83,66 @@ object IgLayoutManagerGridLayout {
   }
   
   @scala.inline
-  implicit class IgLayoutManagerGridLayoutOps[Self <: IgLayoutManagerGridLayout] (val x: Self) extends AnyVal {
+  implicit class IgLayoutManagerGridLayoutMutableBuilder[Self <: IgLayoutManagerGridLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setColumnHeight(value: String | Double | js.Array[_]): Self = StObject.set(x, "columnHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    def setColumnHeightUndefined: Self = StObject.set(x, "columnHeight", js.undefined)
     
     @scala.inline
-    def deleteCols: Self = this.set("cols", js.undefined)
+    def setColumnHeightVarargs(value: js.Any*): Self = StObject.set(x, "columnHeight", js.Array(value :_*))
     
     @scala.inline
-    def setColumnHeightVarargs(value: js.Any*): Self = this.set("columnHeight", js.Array(value :_*))
+    def setColumnWidth(value: String | Double | js.Array[_]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHeight(value: String | Double | js.Array[_]): Self = this.set("columnHeight", value.asInstanceOf[js.Any])
+    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     @scala.inline
-    def deleteColumnHeight: Self = this.set("columnHeight", js.undefined)
+    def setColumnWidthVarargs(value: js.Any*): Self = StObject.set(x, "columnWidth", js.Array(value :_*))
     
     @scala.inline
-    def setColumnWidthVarargs(value: js.Any*): Self = this.set("columnWidth", js.Array(value :_*))
+    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidth(value: String | Double | js.Array[_]): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setOverrideConfigOnSetOption(value: Boolean): Self = StObject.set(x, "overrideConfigOnSetOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setOverrideConfigOnSetOptionUndefined: Self = StObject.set(x, "overrideConfigOnSetOption", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setRearrangeItems(value: Boolean): Self = StObject.set(x, "rearrangeItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideConfigOnSetOption(value: Boolean): Self = this.set("overrideConfigOnSetOption", value.asInstanceOf[js.Any])
+    def setRearrangeItemsUndefined: Self = StObject.set(x, "rearrangeItems", js.undefined)
     
     @scala.inline
-    def deleteOverrideConfigOnSetOption: Self = this.set("overrideConfigOnSetOption", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRearrangeItems(value: Boolean): Self = this.set("rearrangeItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRearrangeItems: Self = this.set("rearrangeItems", js.undefined)
-    
-    @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "PointColor")
 @js.native
-object PointColor extends js.Object {
+object PointColor extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.pointsCloudSystemMod.PointColor with Double] = js.native

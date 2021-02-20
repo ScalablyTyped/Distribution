@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListVerifiedEmailAddressesResponse extends js.Object {
+trait ListVerifiedEmailAddressesResponse extends StObject {
   
   /**
     * A list of email addresses that have been verified.
@@ -21,27 +22,15 @@ object ListVerifiedEmailAddressesResponse {
   }
   
   @scala.inline
-  implicit class ListVerifiedEmailAddressesResponseOps[Self <: ListVerifiedEmailAddressesResponse] (val x: Self) extends AnyVal {
+  implicit class ListVerifiedEmailAddressesResponseMutableBuilder[Self <: ListVerifiedEmailAddressesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVerifiedEmailAddresses(value: AddressList): Self = StObject.set(x, "VerifiedEmailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVerifiedEmailAddressesUndefined: Self = StObject.set(x, "VerifiedEmailAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVerifiedEmailAddressesVarargs(value: Address*): Self = this.set("VerifiedEmailAddresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setVerifiedEmailAddresses(value: AddressList): Self = this.set("VerifiedEmailAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifiedEmailAddresses: Self = this.set("VerifiedEmailAddresses", js.undefined)
+    def setVerifiedEmailAddressesVarargs(value: Address*): Self = StObject.set(x, "VerifiedEmailAddresses", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,13 +23,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("prosemirror-model", "Node")
 @js.native
 class Node[S /* <: Schema[_, _] */] () extends ProsemirrorNode[S]
-/* static members */
-@JSImport("prosemirror-model", "Node")
-@js.native
-object Node extends js.Object {
+object Node {
   
   /**
     * Deserialize a node from its JSON representation.
     */
+  /* static member */
+  @JSImport("prosemirror-model", "Node.fromJSON")
+  @js.native
   def fromJSON[S /* <: Schema[_, _] */](schema: S, json: StringDictionary[js.Any]): ProsemirrorNode[S] = js.native
 }

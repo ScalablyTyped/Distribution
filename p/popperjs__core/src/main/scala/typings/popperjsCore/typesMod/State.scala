@@ -6,12 +6,13 @@ import typings.popperjsCore.anon.Dictkey
 import typings.popperjsCore.anon.PartialCSSStyleDeclaratio
 import typings.popperjsCore.anon.Popper
 import typings.popperjsCore.enumsMod.Placement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait State extends js.Object {
+trait State extends StObject {
   
   var attributes: StringDictionary[StringDictionary[String | Boolean]] = js.native
   
@@ -56,54 +57,42 @@ object State {
   }
   
   @scala.inline
-  implicit class StateOps[Self <: State] (val x: Self) extends AnyVal {
+  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: StringDictionary[StringDictionary[String | Boolean]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElements(value: Arrow): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifiersData(value: Dictkey): Self = StObject.set(x, "modifiersData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: StringDictionary[StringDictionary[String | Boolean]]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setOptions(value: OptionsGeneric[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElements(value: Arrow): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setOrderedModifiers(value: js.Array[Modifier[_, _]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiersData(value: Dictkey): Self = this.set("modifiersData", value.asInstanceOf[js.Any])
+    def setOrderedModifiersVarargs(value: (Modifier[js.Any, js.Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value :_*))
     
     @scala.inline
-    def setOptions(value: OptionsGeneric[_]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderedModifiersVarargs(value: (Modifier[js.Any, js.Any])*): Self = this.set("orderedModifiers", js.Array(value :_*))
+    def setRects(value: StateRects): Self = StObject.set(x, "rects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderedModifiers(value: js.Array[Modifier[_, _]]): Self = this.set("orderedModifiers", value.asInstanceOf[js.Any])
+    def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: Placement): Self = this.set("placement", value.asInstanceOf[js.Any])
+    def setScrollParents(value: Popper): Self = StObject.set(x, "scrollParents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRects(value: StateRects): Self = this.set("rects", value.asInstanceOf[js.Any])
+    def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: Boolean): Self = this.set("reset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollParents(value: Popper): Self = this.set("scrollParents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrategy(value: PositioningStrategy): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyles(value: StringDictionary[PartialCSSStyleDeclaratio]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[PartialCSSStyleDeclaratio]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/FunnelPlotOutline", JSImport.Namespace)
-@js.native
-object funnelPlotOutlineMod extends js.Object {
+object funnelPlotOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/FunnelPlotOutline", "FunnelPlotOutline")
+  @js.native
   val FunnelPlotOutline: IconDefinition = js.native
 }

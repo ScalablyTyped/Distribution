@@ -1,12 +1,13 @@
 package typings.consola.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsolaLogObject extends js.Object {
+trait ConsolaLogObject extends StObject {
   
   var additional: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -31,66 +32,54 @@ object ConsolaLogObject {
   }
   
   @scala.inline
-  implicit class ConsolaLogObjectOps[Self <: ConsolaLogObject] (val x: Self) extends AnyVal {
+  implicit class ConsolaLogObjectMutableBuilder[Self <: ConsolaLogObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditional(value: String | js.Array[String]): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalUndefined: Self = StObject.set(x, "additional", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalVarargs(value: String*): Self = StObject.set(x, "additional", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalVarargs(value: String*): Self = this.set("additional", js.Array(value :_*))
+    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditional(value: String | js.Array[String]): Self = this.set("additional", value.asInstanceOf[js.Any])
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def deleteAdditional: Self = this.set("additional", js.undefined)
+    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = this.set("args", js.Array(value :_*))
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: LogLevel): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setType(value: logType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
-    
-    @scala.inline
-    def setType(value: logType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

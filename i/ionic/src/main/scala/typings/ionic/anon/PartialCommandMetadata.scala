@@ -5,13 +5,14 @@ import typings.ionic.ionicStrings.global
 import typings.ionic.ionicStrings.project
 import typings.ionicCliFramework.definitionsMod.CommandMetadataInput
 import typings.ionicCliFramework.definitionsMod.Footnote
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ionic.ionic/definitions.CommandMetadata> */
 @js.native
-trait PartialCommandMetadata extends js.Object {
+trait PartialCommandMetadata extends StObject {
   
   var description: js.UndefOr[String] = js.native
   
@@ -40,87 +41,75 @@ object PartialCommandMetadata {
   }
   
   @scala.inline
-  implicit class PartialCommandMetadataOps[Self <: PartialCommandMetadata] (val x: Self) extends AnyVal {
+  implicit class PartialCommandMetadataMutableBuilder[Self <: PartialCommandMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExampleCommandsUndefined: Self = StObject.set(x, "exampleCommands", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value :_*))
     
     @scala.inline
-    def setExampleCommandsVarargs(value: String*): Self = this.set("exampleCommands", js.Array(value :_*))
+    def setFootnotes(value: js.Array[Footnote]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExampleCommands(value: js.Array[String]): Self = this.set("exampleCommands", value.asInstanceOf[js.Any])
+    def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
     
     @scala.inline
-    def deleteExampleCommands: Self = this.set("exampleCommands", js.undefined)
+    def setFootnotesVarargs(value: Footnote*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
     
     @scala.inline
-    def setFootnotesVarargs(value: Footnote*): Self = this.set("footnotes", js.Array(value :_*))
+    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnotes(value: js.Array[Footnote]): Self = this.set("footnotes", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def deleteFootnotes: Self = this.set("footnotes", js.undefined)
+    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    def setInputs(value: js.Array[CommandMetadataInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setInputsVarargs(value: CommandMetadataInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: CommandMetadataInput*): Self = this.set("inputs", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[CommandMetadataInput]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setOptions(value: js.Array[CommandMetadataOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOptionsVarargs(value: CommandMetadataOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: CommandMetadataOption*): Self = this.set("options", js.Array(value :_*))
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[CommandMetadataOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setType(value: global | project): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
-    
-    @scala.inline
-    def setType(value: global | project): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

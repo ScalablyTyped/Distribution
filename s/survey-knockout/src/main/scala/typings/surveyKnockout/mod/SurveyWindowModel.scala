@@ -1,6 +1,7 @@
 package typings.surveyKnockout.mod
 
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,9 +89,15 @@ class SurveyWindowModel protected () extends Base {
   var windowElement: HTMLDivElement = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "SurveyWindowModel")
-@js.native
-object SurveyWindowModel extends js.Object {
+object SurveyWindowModel {
   
-  var surveyElementName: String = js.native
+  @JSImport("survey-knockout", "SurveyWindowModel")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "SurveyWindowModel.surveyElementName")
+  @js.native
+  def surveyElementName: String = js.native
+  @scala.inline
+  def surveyElementName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("surveyElementName")(x.asInstanceOf[js.Any])
 }

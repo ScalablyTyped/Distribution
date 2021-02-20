@@ -3,12 +3,13 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.CENTER
 import typings.figma.figmaStrings.INSIDE
 import typings.figma.figmaStrings.OUTSIDE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeometryMixin extends js.Object {
+trait GeometryMixin extends StObject {
   
   var dashPattern: js.Array[Double] = js.native
   
@@ -53,60 +54,48 @@ object GeometryMixin {
   }
   
   @scala.inline
-  implicit class GeometryMixinOps[Self <: GeometryMixin] (val x: Self) extends AnyVal {
+  implicit class GeometryMixinMutableBuilder[Self <: GeometryMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillStyleId(value: String | js.Symbol): Self = StObject.set(x, "fillStyleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashPatternVarargs(value: Double*): Self = this.set("dashPattern", js.Array(value :_*))
+    def setFills(value: js.Array[Paint] | js.Symbol): Self = StObject.set(x, "fills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashPattern(value: js.Array[Double]): Self = this.set("dashPattern", value.asInstanceOf[js.Any])
+    def setFillsVarargs(value: Paint*): Self = StObject.set(x, "fills", js.Array(value :_*))
     
     @scala.inline
-    def setFillStyleId(value: String | js.Symbol): Self = this.set("fillStyleId", value.asInstanceOf[js.Any])
+    def setOutlineStroke(value: () => VectorNode | Null): Self = StObject.set(x, "outlineStroke", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFillsVarargs(value: Paint*): Self = this.set("fills", js.Array(value :_*))
+    def setStrokeAlign(value: CENTER | INSIDE | OUTSIDE): Self = StObject.set(x, "strokeAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFills(value: js.Array[Paint] | js.Symbol): Self = this.set("fills", value.asInstanceOf[js.Any])
+    def setStrokeCap(value: StrokeCap | js.Symbol): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineStroke(value: () => VectorNode | Null): Self = this.set("outlineStroke", js.Any.fromFunction0(value))
+    def setStrokeJoin(value: StrokeJoin | js.Symbol): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeAlign(value: CENTER | INSIDE | OUTSIDE): Self = this.set("strokeAlign", value.asInstanceOf[js.Any])
+    def setStrokeMiterLimit(value: Double): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeCap(value: StrokeCap | js.Symbol): Self = this.set("strokeCap", value.asInstanceOf[js.Any])
+    def setStrokeStyleId(value: String): Self = StObject.set(x, "strokeStyleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeJoin(value: StrokeJoin | js.Symbol): Self = this.set("strokeJoin", value.asInstanceOf[js.Any])
+    def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeMiterLimit(value: Double): Self = this.set("strokeMiterLimit", value.asInstanceOf[js.Any])
+    def setStrokes(value: js.Array[Paint]): Self = StObject.set(x, "strokes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeStyleId(value: String): Self = this.set("strokeStyleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrokeWeight(value: Double): Self = this.set("strokeWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrokesVarargs(value: Paint*): Self = this.set("strokes", js.Array(value :_*))
-    
-    @scala.inline
-    def setStrokes(value: js.Array[Paint]): Self = this.set("strokes", value.asInstanceOf[js.Any])
+    def setStrokesVarargs(value: Paint*): Self = StObject.set(x, "strokes", js.Array(value :_*))
   }
 }

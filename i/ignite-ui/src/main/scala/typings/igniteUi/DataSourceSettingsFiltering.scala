@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,84 +85,72 @@ object DataSourceSettingsFiltering {
   }
   
   @scala.inline
-  implicit class DataSourceSettingsFilteringOps[Self <: DataSourceSettingsFiltering] (val x: Self) extends AnyVal {
+  implicit class DataSourceSettingsFilteringMutableBuilder[Self <: DataSourceSettingsFiltering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyToAllData(value: Boolean): Self = StObject.set(x, "applyToAllData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyToAllDataUndefined: Self = StObject.set(x, "applyToAllData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyToAllData(value: Boolean): Self = this.set("applyToAllData", value.asInstanceOf[js.Any])
+    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
     @scala.inline
-    def deleteApplyToAllData: Self = this.set("applyToAllData", js.undefined)
+    def setCustomConditions(value: js.Any): Self = StObject.set(x, "customConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    def setCustomConditionsUndefined: Self = StObject.set(x, "customConditions", js.undefined)
     
     @scala.inline
-    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    def setCustomFunc(value: js.Any): Self = StObject.set(x, "customFunc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomConditions(value: js.Any): Self = this.set("customConditions", value.asInstanceOf[js.Any])
+    def setCustomFuncUndefined: Self = StObject.set(x, "customFunc", js.undefined)
     
     @scala.inline
-    def deleteCustomConditions: Self = this.set("customConditions", js.undefined)
+    def setDefaultFields(value: js.Array[_]): Self = StObject.set(x, "defaultFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomFunc(value: js.Any): Self = this.set("customFunc", value.asInstanceOf[js.Any])
+    def setDefaultFieldsUndefined: Self = StObject.set(x, "defaultFields", js.undefined)
     
     @scala.inline
-    def deleteCustomFunc: Self = this.set("customFunc", js.undefined)
+    def setDefaultFieldsVarargs(value: js.Any*): Self = StObject.set(x, "defaultFields", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultFieldsVarargs(value: js.Any*): Self = this.set("defaultFields", js.Array(value :_*))
+    def setExprString(value: String): Self = StObject.set(x, "exprString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFields(value: js.Array[_]): Self = this.set("defaultFields", value.asInstanceOf[js.Any])
+    def setExprStringUndefined: Self = StObject.set(x, "exprString", js.undefined)
     
     @scala.inline
-    def deleteDefaultFields: Self = this.set("defaultFields", js.undefined)
+    def setExpressions(value: js.Array[_]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExprString(value: String): Self = this.set("exprString", value.asInstanceOf[js.Any])
+    def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
     @scala.inline
-    def deleteExprString: Self = this.set("exprString", js.undefined)
+    def setExpressionsVarargs(value: js.Any*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
     @scala.inline
-    def setExpressionsVarargs(value: js.Any*): Self = this.set("expressions", js.Array(value :_*))
+    def setFilterExprUrlKey(value: String): Self = StObject.set(x, "filterExprUrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressions(value: js.Array[_]): Self = this.set("expressions", value.asInstanceOf[js.Any])
+    def setFilterExprUrlKeyUndefined: Self = StObject.set(x, "filterExprUrlKey", js.undefined)
     
     @scala.inline
-    def deleteExpressions: Self = this.set("expressions", js.undefined)
+    def setFilterLogicUrlKey(value: String): Self = StObject.set(x, "filterLogicUrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterExprUrlKey(value: String): Self = this.set("filterExprUrlKey", value.asInstanceOf[js.Any])
+    def setFilterLogicUrlKeyUndefined: Self = StObject.set(x, "filterLogicUrlKey", js.undefined)
     
     @scala.inline
-    def deleteFilterExprUrlKey: Self = this.set("filterExprUrlKey", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterLogicUrlKey(value: String): Self = this.set("filterLogicUrlKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterLogicUrlKey: Self = this.set("filterLogicUrlKey", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

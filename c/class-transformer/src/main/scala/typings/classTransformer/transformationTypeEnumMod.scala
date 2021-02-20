@@ -1,35 +1,31 @@
 package typings.classTransformer
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-transformer/enums/transformation-type.enum", JSImport.Namespace)
-@js.native
-object transformationTypeEnumMod extends js.Object {
+object transformationTypeEnumMod {
   
   @js.native
-  sealed trait TransformationType extends js.Object
+  sealed trait TransformationType extends StObject
+  @JSImport("class-transformer/enums/transformation-type.enum", "TransformationType")
   @js.native
-  object TransformationType extends js.Object {
+  object TransformationType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[TransformationType with Double] = js.native
     
     @js.native
     sealed trait CLASS_TO_CLASS extends TransformationType
-    /* 2 */ @js.native
-    object CLASS_TO_CLASS extends TopLevel[CLASS_TO_CLASS with Double]
+    /* 2 */ val CLASS_TO_CLASS: typings.classTransformer.transformationTypeEnumMod.TransformationType.CLASS_TO_CLASS with Double = js.native
     
     @js.native
     sealed trait CLASS_TO_PLAIN extends TransformationType
-    /* 1 */ @js.native
-    object CLASS_TO_PLAIN extends TopLevel[CLASS_TO_PLAIN with Double]
+    /* 1 */ val CLASS_TO_PLAIN: typings.classTransformer.transformationTypeEnumMod.TransformationType.CLASS_TO_PLAIN with Double = js.native
     
     @js.native
     sealed trait PLAIN_TO_CLASS extends TransformationType
-    /* 0 */ @js.native
-    object PLAIN_TO_CLASS extends TopLevel[PLAIN_TO_CLASS with Double]
+    /* 0 */ val PLAIN_TO_CLASS: typings.classTransformer.transformationTypeEnumMod.TransformationType.PLAIN_TO_CLASS with Double = js.native
   }
 }

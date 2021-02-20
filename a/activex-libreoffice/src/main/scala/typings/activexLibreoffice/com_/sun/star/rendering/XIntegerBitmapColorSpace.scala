@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -206,60 +207,48 @@ object XIntegerBitmapColorSpace {
   }
   
   @scala.inline
-  implicit class XIntegerBitmapColorSpaceOps[Self <: XIntegerBitmapColorSpace] (val x: Self) extends AnyVal {
+  implicit class XIntegerBitmapColorSpaceMutableBuilder[Self <: XIntegerBitmapColorSpace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitsPerPixel(value: Double): Self = StObject.set(x, "BitsPerPixel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentBitCounts(value: SafeArray[Double]): Self = StObject.set(x, "ComponentBitCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConvertFromIntegerColorSpace(value: (SeqEquiv[Double], XColorSpace) => SafeArray[ColorComponent]): Self = StObject.set(x, "convertFromIntegerColorSpace", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBitsPerPixel(value: Double): Self = this.set("BitsPerPixel", value.asInstanceOf[js.Any])
+    def setConvertIntegerFromARGB(value: SeqEquiv[ARGBColor] => SafeArray[Double]): Self = StObject.set(x, "convertIntegerFromARGB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComponentBitCounts(value: SafeArray[Double]): Self = this.set("ComponentBitCounts", value.asInstanceOf[js.Any])
+    def setConvertIntegerFromPARGB(value: SeqEquiv[ARGBColor] => SafeArray[Double]): Self = StObject.set(x, "convertIntegerFromPARGB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndianness(value: Double): Self = this.set("Endianness", value.asInstanceOf[js.Any])
+    def setConvertIntegerFromRGB(value: SeqEquiv[RGBColor] => SafeArray[Double]): Self = StObject.set(x, "convertIntegerFromRGB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvertFromIntegerColorSpace(value: (SeqEquiv[Double], XColorSpace) => SafeArray[ColorComponent]): Self = this.set("convertFromIntegerColorSpace", js.Any.fromFunction2(value))
+    def setConvertIntegerToARGB(value: SeqEquiv[Double] => SafeArray[ARGBColor]): Self = StObject.set(x, "convertIntegerToARGB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvertIntegerFromARGB(value: SeqEquiv[ARGBColor] => SafeArray[Double]): Self = this.set("convertIntegerFromARGB", js.Any.fromFunction1(value))
+    def setConvertIntegerToPARGB(value: SeqEquiv[Double] => SafeArray[ARGBColor]): Self = StObject.set(x, "convertIntegerToPARGB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvertIntegerFromPARGB(value: SeqEquiv[ARGBColor] => SafeArray[Double]): Self = this.set("convertIntegerFromPARGB", js.Any.fromFunction1(value))
+    def setConvertIntegerToRGB(value: SeqEquiv[Double] => SafeArray[RGBColor]): Self = StObject.set(x, "convertIntegerToRGB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvertIntegerFromRGB(value: SeqEquiv[RGBColor] => SafeArray[Double]): Self = this.set("convertIntegerFromRGB", js.Any.fromFunction1(value))
+    def setConvertToIntegerColorSpace(value: (SeqEquiv[Double], XIntegerBitmapColorSpace) => SafeArray[Double]): Self = StObject.set(x, "convertToIntegerColorSpace", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setConvertIntegerToARGB(value: SeqEquiv[Double] => SafeArray[ARGBColor]): Self = this.set("convertIntegerToARGB", js.Any.fromFunction1(value))
+    def setEndianness(value: Double): Self = StObject.set(x, "Endianness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertIntegerToPARGB(value: SeqEquiv[Double] => SafeArray[ARGBColor]): Self = this.set("convertIntegerToPARGB", js.Any.fromFunction1(value))
+    def setGetBitsPerPixel(value: () => Double): Self = StObject.set(x, "getBitsPerPixel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConvertIntegerToRGB(value: SeqEquiv[Double] => SafeArray[RGBColor]): Self = this.set("convertIntegerToRGB", js.Any.fromFunction1(value))
+    def setGetComponentBitCounts(value: () => SafeArray[Double]): Self = StObject.set(x, "getComponentBitCounts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConvertToIntegerColorSpace(value: (SeqEquiv[Double], XIntegerBitmapColorSpace) => SafeArray[Double]): Self = this.set("convertToIntegerColorSpace", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetBitsPerPixel(value: () => Double): Self = this.set("getBitsPerPixel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetComponentBitCounts(value: () => SafeArray[Double]): Self = this.set("getComponentBitCounts", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetEndianness(value: () => Double): Self = this.set("getEndianness", js.Any.fromFunction0(value))
+    def setGetEndianness(value: () => Double): Self = StObject.set(x, "getEndianness", js.Any.fromFunction0(value))
   }
 }

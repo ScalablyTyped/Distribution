@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpDataSourceConfig extends js.Object {
+trait HttpDataSourceConfig extends StObject {
   
   /**
     * The authorization config in case the HTTP endpoint requires authorization.
@@ -26,30 +27,18 @@ object HttpDataSourceConfig {
   }
   
   @scala.inline
-  implicit class HttpDataSourceConfigOps[Self <: HttpDataSourceConfig] (val x: Self) extends AnyVal {
+  implicit class HttpDataSourceConfigMutableBuilder[Self <: HttpDataSourceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationConfig(value: AuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationConfig(value: AuthorizationConfig): Self = this.set("authorizationConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizationConfig: Self = this.set("authorizationConfig", js.undefined)
-    
-    @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
   }
 }

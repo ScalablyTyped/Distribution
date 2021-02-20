@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportData extends js.Object {
+trait ReportData extends StObject {
   
   /** The last time the data in the report was refreshed. All the hits received before this timestamp are included in the calculation of the report. */
   var dataLastRefreshed: js.UndefOr[String] = js.native
@@ -53,90 +54,78 @@ object ReportData {
   }
   
   @scala.inline
-  implicit class ReportDataOps[Self <: ReportData] (val x: Self) extends AnyVal {
+  implicit class ReportDataMutableBuilder[Self <: ReportData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataLastRefreshed(value: String): Self = StObject.set(x, "dataLastRefreshed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataLastRefreshedUndefined: Self = StObject.set(x, "dataLastRefreshed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDataGolden(value: Boolean): Self = StObject.set(x, "isDataGolden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLastRefreshed(value: String): Self = this.set("dataLastRefreshed", value.asInstanceOf[js.Any])
+    def setIsDataGoldenUndefined: Self = StObject.set(x, "isDataGolden", js.undefined)
     
     @scala.inline
-    def deleteDataLastRefreshed: Self = this.set("dataLastRefreshed", js.undefined)
+    def setMaximums(value: js.Array[DateRangeValues]): Self = StObject.set(x, "maximums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDataGolden(value: Boolean): Self = this.set("isDataGolden", value.asInstanceOf[js.Any])
+    def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
     
     @scala.inline
-    def deleteIsDataGolden: Self = this.set("isDataGolden", js.undefined)
+    def setMaximumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "maximums", js.Array(value :_*))
     
     @scala.inline
-    def setMaximumsVarargs(value: DateRangeValues*): Self = this.set("maximums", js.Array(value :_*))
+    def setMinimums(value: js.Array[DateRangeValues]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximums(value: js.Array[DateRangeValues]): Self = this.set("maximums", value.asInstanceOf[js.Any])
+    def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
     
     @scala.inline
-    def deleteMaximums: Self = this.set("maximums", js.undefined)
+    def setMinimumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "minimums", js.Array(value :_*))
     
     @scala.inline
-    def setMinimumsVarargs(value: DateRangeValues*): Self = this.set("minimums", js.Array(value :_*))
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimums(value: js.Array[DateRangeValues]): Self = this.set("minimums", value.asInstanceOf[js.Any])
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def deleteMinimums: Self = this.set("minimums", js.undefined)
+    def setRows(value: js.Array[ReportRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    def setRowsVarargs(value: ReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: ReportRow*): Self = this.set("rows", js.Array(value :_*))
+    def setSamplesReadCounts(value: js.Array[String]): Self = StObject.set(x, "samplesReadCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[ReportRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setSamplesReadCountsUndefined: Self = StObject.set(x, "samplesReadCounts", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setSamplesReadCountsVarargs(value: String*): Self = StObject.set(x, "samplesReadCounts", js.Array(value :_*))
     
     @scala.inline
-    def setSamplesReadCountsVarargs(value: String*): Self = this.set("samplesReadCounts", js.Array(value :_*))
+    def setSamplingSpaceSizes(value: js.Array[String]): Self = StObject.set(x, "samplingSpaceSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplesReadCounts(value: js.Array[String]): Self = this.set("samplesReadCounts", value.asInstanceOf[js.Any])
+    def setSamplingSpaceSizesUndefined: Self = StObject.set(x, "samplingSpaceSizes", js.undefined)
     
     @scala.inline
-    def deleteSamplesReadCounts: Self = this.set("samplesReadCounts", js.undefined)
+    def setSamplingSpaceSizesVarargs(value: String*): Self = StObject.set(x, "samplingSpaceSizes", js.Array(value :_*))
     
     @scala.inline
-    def setSamplingSpaceSizesVarargs(value: String*): Self = this.set("samplingSpaceSizes", js.Array(value :_*))
+    def setTotals(value: js.Array[DateRangeValues]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplingSpaceSizes(value: js.Array[String]): Self = this.set("samplingSpaceSizes", value.asInstanceOf[js.Any])
+    def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
     
     @scala.inline
-    def deleteSamplingSpaceSizes: Self = this.set("samplingSpaceSizes", js.undefined)
-    
-    @scala.inline
-    def setTotalsVarargs(value: DateRangeValues*): Self = this.set("totals", js.Array(value :_*))
-    
-    @scala.inline
-    def setTotals(value: js.Array[DateRangeValues]): Self = this.set("totals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotals: Self = this.set("totals", js.undefined)
+    def setTotalsVarargs(value: DateRangeValues*): Self = StObject.set(x, "totals", js.Array(value :_*))
   }
 }

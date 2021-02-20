@@ -1,12 +1,13 @@
 package typings.trezorConnect.mod
 
 import typings.trezorConnect.anon.Instance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonParams extends js.Object {
+trait CommonParams extends StObject {
   
   var allowSeedlessDevice: js.UndefOr[Boolean] = js.native
   
@@ -25,42 +26,30 @@ object CommonParams {
   }
   
   @scala.inline
-  implicit class CommonParamsOps[Self <: CommonParams] (val x: Self) extends AnyVal {
+  implicit class CommonParamsMutableBuilder[Self <: CommonParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSeedlessDevice(value: Boolean): Self = StObject.set(x, "allowSeedlessDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSeedlessDeviceUndefined: Self = StObject.set(x, "allowSeedlessDevice", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: Instance): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSeedlessDevice(value: Boolean): Self = this.set("allowSeedlessDevice", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def deleteAllowSeedlessDevice: Self = this.set("allowSeedlessDevice", js.undefined)
+    def setKeepSession(value: Boolean): Self = StObject.set(x, "keepSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: Instance): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setKeepSessionUndefined: Self = StObject.set(x, "keepSession", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setUseEmptyPassphrase(value: Boolean): Self = StObject.set(x, "useEmptyPassphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepSession(value: Boolean): Self = this.set("keepSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepSession: Self = this.set("keepSession", js.undefined)
-    
-    @scala.inline
-    def setUseEmptyPassphrase(value: Boolean): Self = this.set("useEmptyPassphrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseEmptyPassphrase: Self = this.set("useEmptyPassphrase", js.undefined)
+    def setUseEmptyPassphraseUndefined: Self = StObject.set(x, "useEmptyPassphrase", js.undefined)
   }
 }

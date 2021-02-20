@@ -2,6 +2,7 @@ package typings.babylonjs.babylonjsIndexMod
 
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,15 +58,19 @@ class Geometry protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Meshes/index", "Geometry")
-@js.native
-object Geometry extends js.Object {
+object Geometry {
+  
+  @JSImport("babylonjs/Meshes/index", "Geometry")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Static function used to attach a new empty geometry to a mesh
     * @param mesh defines the mesh to attach the geometry to
     * @returns the new Geometry
     */
+  @JSImport("babylonjs/Meshes/index", "Geometry.CreateGeometryForMesh")
+  @js.native
   def CreateGeometryForMesh(mesh: typings.babylonjs.meshMod.Mesh): typings.babylonjs.geometryMod.Geometry = js.native
   
   /**
@@ -74,6 +79,8 @@ object Geometry extends js.Object {
     * @param id defines the unique ID of the new geometry object
     * @returns the new geometry object
     */
+  @JSImport("babylonjs/Meshes/index", "Geometry.ExtractFromMesh")
+  @js.native
   def ExtractFromMesh(mesh: typings.babylonjs.meshMod.Mesh, id: String): Nullable[typings.babylonjs.geometryMod.Geometry] = js.native
   
   /**
@@ -83,6 +90,8 @@ object Geometry extends js.Object {
     * @param rootUrl defines the root url to use to load assets (like delayed data)
     * @returns the new geometry object
     */
+  @JSImport("babylonjs/Meshes/index", "Geometry.Parse")
+  @js.native
   def Parse(parsedVertexData: js.Any, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.geometryMod.Geometry] = js.native
   
   /**
@@ -92,10 +101,18 @@ object Geometry extends js.Object {
     * "All but 6 of the 128 bits of the ID are randomly generated, which means that for any two ids, there's a 1 in 2^^122 (or 5.3x10^^36) chance they'll collide"
     * @returns a string containing a new GUID
     */
+  @JSImport("babylonjs/Meshes/index", "Geometry.RandomId")
+  @js.native
   def RandomId(): String = js.native
   
-  var _CleanMatricesWeights: js.Any = js.native
+  @JSImport("babylonjs/Meshes/index", "Geometry._CleanMatricesWeights")
+  @js.native
+  def _CleanMatricesWeights: js.Any = js.native
+  @scala.inline
+  def _CleanMatricesWeights_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanMatricesWeights")(x.asInstanceOf[js.Any])
   
   /** @hidden */
+  @JSImport("babylonjs/Meshes/index", "Geometry._ImportGeometry")
+  @js.native
   def _ImportGeometry(parsedGeometry: js.Any, mesh: typings.babylonjs.meshMod.Mesh): Unit = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies the location(s) to which data should be exported.
   */
 @js.native
-trait SchemaOutputConfig extends js.Object {
+trait SchemaOutputConfig extends StObject {
   
   /**
     * BigQueryDestination requires two IAM roles: `roles/bigquery.dataEditor`
@@ -32,30 +33,18 @@ object SchemaOutputConfig {
   }
   
   @scala.inline
-  implicit class SchemaOutputConfigOps[Self <: SchemaOutputConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaOutputConfigMutableBuilder[Self <: SchemaOutputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBigQueryDestination(value: SchemaBigQueryDestination): Self = StObject.set(x, "bigQueryDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBigQueryDestinationUndefined: Self = StObject.set(x, "bigQueryDestination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcsDestination(value: SchemaGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigQueryDestination(value: SchemaBigQueryDestination): Self = this.set("bigQueryDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBigQueryDestination: Self = this.set("bigQueryDestination", js.undefined)
-    
-    @scala.inline
-    def setGcsDestination(value: SchemaGcsDestination): Self = this.set("gcsDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsDestination: Self = this.set("gcsDestination", js.undefined)
+    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

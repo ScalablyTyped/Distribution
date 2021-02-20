@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicFilter extends js.Object {
+trait TopicFilter extends StObject {
   
   /**
     * The name of a topic on which you wish to apply the filter.
@@ -26,30 +27,18 @@ object TopicFilter {
   }
   
   @scala.inline
-  implicit class TopicFilterOps[Self <: TopicFilter] (val x: Self) extends AnyVal {
+  implicit class TopicFilterMutableBuilder[Self <: TopicFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTopicNameUndefined: Self = StObject.set(x, "TopicName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseDefaultIfPreferenceUnavailable(value: UseDefaultIfPreferenceUnavailable): Self = StObject.set(x, "UseDefaultIfPreferenceUnavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicName(value: TopicName): Self = this.set("TopicName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicName: Self = this.set("TopicName", js.undefined)
-    
-    @scala.inline
-    def setUseDefaultIfPreferenceUnavailable(value: UseDefaultIfPreferenceUnavailable): Self = this.set("UseDefaultIfPreferenceUnavailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseDefaultIfPreferenceUnavailable: Self = this.set("UseDefaultIfPreferenceUnavailable", js.undefined)
+    def setUseDefaultIfPreferenceUnavailableUndefined: Self = StObject.set(x, "UseDefaultIfPreferenceUnavailable", js.undefined)
   }
 }

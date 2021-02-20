@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDeploymentResponse extends js.Object {
+trait CreateDeploymentResponse extends StObject {
   
   /**
     * Specifies whether a deployment was automatically released.
@@ -46,54 +47,42 @@ object CreateDeploymentResponse {
   }
   
   @scala.inline
-  implicit class CreateDeploymentResponseOps[Self <: CreateDeploymentResponse] (val x: Self) extends AnyVal {
+  implicit class CreateDeploymentResponseMutableBuilder[Self <: CreateDeploymentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDeployed(value: boolean): Self = StObject.set(x, "AutoDeployed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoDeployedUndefined: Self = StObject.set(x, "AutoDeployed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDeployed(value: boolean): Self = this.set("AutoDeployed", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def deleteAutoDeployed: Self = this.set("AutoDeployed", js.undefined)
+    def setDeploymentId(value: Id): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: timestampIso8601): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    def setDeploymentStatus(value: DeploymentStatus): Self = StObject.set(x, "DeploymentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: Id): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
+    def setDeploymentStatusMessage(value: string): Self = StObject.set(x, "DeploymentStatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    def setDeploymentStatusMessageUndefined: Self = StObject.set(x, "DeploymentStatusMessage", js.undefined)
     
     @scala.inline
-    def setDeploymentStatus(value: DeploymentStatus): Self = this.set("DeploymentStatus", value.asInstanceOf[js.Any])
+    def setDeploymentStatusUndefined: Self = StObject.set(x, "DeploymentStatus", js.undefined)
     
     @scala.inline
-    def deleteDeploymentStatus: Self = this.set("DeploymentStatus", js.undefined)
+    def setDescription(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentStatusMessage(value: string): Self = this.set("DeploymentStatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentStatusMessage: Self = this.set("DeploymentStatusMessage", js.undefined)
-    
-    @scala.inline
-    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * configuration defined by `google.api.Service`.
   */
 @js.native
-trait SchemaConfigSource extends js.Object {
+trait SchemaConfigSource extends StObject {
   
   /**
     * Set of source configuration files that are used to generate a service
@@ -33,33 +34,21 @@ object SchemaConfigSource {
   }
   
   @scala.inline
-  implicit class SchemaConfigSourceOps[Self <: SchemaConfigSource] (val x: Self) extends AnyVal {
+  implicit class SchemaConfigSourceMutableBuilder[Self <: SchemaConfigSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiles(value: js.Array[SchemaConfigFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilesVarargs(value: SchemaConfigFile*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setFilesVarargs(value: SchemaConfigFile*): Self = this.set("files", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[SchemaConfigFile]): Self = this.set("files", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

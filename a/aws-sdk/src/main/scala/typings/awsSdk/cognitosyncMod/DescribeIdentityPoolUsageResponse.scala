@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitosyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeIdentityPoolUsageResponse extends js.Object {
+trait DescribeIdentityPoolUsageResponse extends StObject {
   
   /**
     * Information about the usage of the identity pool.
@@ -21,24 +22,12 @@ object DescribeIdentityPoolUsageResponse {
   }
   
   @scala.inline
-  implicit class DescribeIdentityPoolUsageResponseOps[Self <: DescribeIdentityPoolUsageResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeIdentityPoolUsageResponseMutableBuilder[Self <: DescribeIdentityPoolUsageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityPoolUsage(value: IdentityPoolUsage): Self = StObject.set(x, "IdentityPoolUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIdentityPoolUsage(value: IdentityPoolUsage): Self = this.set("IdentityPoolUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityPoolUsage: Self = this.set("IdentityPoolUsage", js.undefined)
+    def setIdentityPoolUsageUndefined: Self = StObject.set(x, "IdentityPoolUsage", js.undefined)
   }
 }

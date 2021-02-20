@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationConfig extends js.Object {
+trait NotificationConfig extends StObject {
   
   /**
     * The [Cloud Pub/Sub](https://cloud.google.com/pubsub/docs/) topic that notifications of changes are published on. Supplied by the client. PubsubMessage.Data contains the resource
@@ -26,24 +27,12 @@ object NotificationConfig {
   }
   
   @scala.inline
-  implicit class NotificationConfigOps[Self <: NotificationConfig] (val x: Self) extends AnyVal {
+  implicit class NotificationConfigMutableBuilder[Self <: NotificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPubsubTopic(value: String): Self = this.set("pubsubTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubsubTopic: Self = this.set("pubsubTopic", js.undefined)
+    def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
   }
 }

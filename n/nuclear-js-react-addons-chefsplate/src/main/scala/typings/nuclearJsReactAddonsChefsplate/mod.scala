@@ -6,17 +6,18 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.std.Exclude
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nuclear-js-react-addons-chefsplate", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Container component allowing a reactor to be exposed via context.
     */
+  @JSImport("nuclear-js-react-addons-chefsplate", "Provider")
+  @js.native
   val Provider: js.Any = js.native
   
   /**
@@ -32,6 +33,8 @@ object mod extends js.Object {
     *
     * @template TInjectedPropNames Names of props injected by `mapStateToProps`.
     */
+  @JSImport("nuclear-js-react-addons-chefsplate", "connect")
+  @js.native
   def connect[TInjectedPropNames /* <: String | Double | js.Symbol */](mapStateToProps: MapStateToProps[TInjectedPropNames]): ComponentConnector[TInjectedPropNames] = js.native
   
   /**
@@ -62,6 +65,8 @@ object mod extends js.Object {
     * @param [getDataBindings] Function which returns dataBindings to listen for data change
     * @returns Returns function if using decorator pattern
     */
+  @JSImport("nuclear-js-react-addons-chefsplate", "nuclearComponent")
+  @js.native
   val nuclearComponent: js.Any = js.native
   
   /**
@@ -70,6 +75,8 @@ object mod extends js.Object {
     * Should be used if a higher level component has been
     * wrapped with provideReactor
     */
+  @JSImport("nuclear-js-react-addons-chefsplate", "nuclearMixin")
+  @js.native
   val nuclearMixin: js.Any = js.native
   
   /**
@@ -94,6 +101,8 @@ object mod extends js.Object {
     * @param [additionalContextTypes] Additional contextTypes to add
     * @returns Returns function if using decorator pattern
     */
+  @JSImport("nuclear-js-react-addons-chefsplate", "provideReactor")
+  @js.native
   val provideReactor: js.Any = js.native
   
   // Injects props and removes them from the prop requirements.

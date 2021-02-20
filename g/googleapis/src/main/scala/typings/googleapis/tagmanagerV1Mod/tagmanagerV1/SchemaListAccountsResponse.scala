@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * List Accounts Response.
   */
 @js.native
-trait SchemaListAccountsResponse extends js.Object {
+trait SchemaListAccountsResponse extends StObject {
   
   /**
     * List of GTM Accounts that a user has access to.
@@ -24,27 +25,15 @@ object SchemaListAccountsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListAccountsResponseOps[Self <: SchemaListAccountsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListAccountsResponseMutableBuilder[Self <: SchemaListAccountsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: js.Array[SchemaAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountsVarargs(value: SchemaAccount*): Self = this.set("accounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setAccounts(value: js.Array[SchemaAccount]): Self = this.set("accounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccounts: Self = this.set("accounts", js.undefined)
+    def setAccountsVarargs(value: SchemaAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
   }
 }

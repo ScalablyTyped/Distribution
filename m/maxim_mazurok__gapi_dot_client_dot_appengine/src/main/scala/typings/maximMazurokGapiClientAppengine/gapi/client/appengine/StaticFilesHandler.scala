@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaticFilesHandler extends js.Object {
+trait StaticFilesHandler extends StObject {
   
   /**
     * Whether files should also be uploaded as code data. By default, files declared in static file handlers are uploaded as static data and are only served to end users; they cannot be
@@ -45,64 +46,52 @@ object StaticFilesHandler {
   }
   
   @scala.inline
-  implicit class StaticFilesHandlerOps[Self <: StaticFilesHandler] (val x: Self) extends AnyVal {
+  implicit class StaticFilesHandlerMutableBuilder[Self <: StaticFilesHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationReadable(value: Boolean): Self = StObject.set(x, "applicationReadable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationReadableUndefined: Self = StObject.set(x, "applicationReadable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationReadable(value: Boolean): Self = this.set("applicationReadable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationReadable: Self = this.set("applicationReadable", js.undefined)
-    
-    @scala.inline
-    def setExpiration(value: String): Self = this.set("expiration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiration: Self = this.set("expiration", js.undefined)
+    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
     @scala.inline
     def setHttpHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.StaticFilesHandler with TopLevel[js.Any]
-    ): Self = this.set("httpHeaders", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpHeaders: Self = this.set("httpHeaders", js.undefined)
+    def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setRequireMatchingFile(value: Boolean): Self = this.set("requireMatchingFile", value.asInstanceOf[js.Any])
+    def setRequireMatchingFile(value: Boolean): Self = StObject.set(x, "requireMatchingFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequireMatchingFile: Self = this.set("requireMatchingFile", js.undefined)
+    def setRequireMatchingFileUndefined: Self = StObject.set(x, "requireMatchingFile", js.undefined)
     
     @scala.inline
-    def setUploadPathRegex(value: String): Self = this.set("uploadPathRegex", value.asInstanceOf[js.Any])
+    def setUploadPathRegex(value: String): Self = StObject.set(x, "uploadPathRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUploadPathRegex: Self = this.set("uploadPathRegex", js.undefined)
+    def setUploadPathRegexUndefined: Self = StObject.set(x, "uploadPathRegex", js.undefined)
   }
 }

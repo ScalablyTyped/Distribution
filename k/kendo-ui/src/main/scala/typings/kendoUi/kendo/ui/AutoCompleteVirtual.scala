@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoCompleteVirtual extends js.Object {
+trait AutoCompleteVirtual extends StObject {
   
   var itemHeight: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object AutoCompleteVirtual {
   }
   
   @scala.inline
-  implicit class AutoCompleteVirtualOps[Self <: AutoCompleteVirtual] (val x: Self) extends AnyVal {
+  implicit class AutoCompleteVirtualMutableBuilder[Self <: AutoCompleteVirtual] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapValueTo(value: String): Self = StObject.set(x, "mapValueTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemHeight(value: Double): Self = this.set("itemHeight", value.asInstanceOf[js.Any])
+    def setMapValueToUndefined: Self = StObject.set(x, "mapValueTo", js.undefined)
     
     @scala.inline
-    def deleteItemHeight: Self = this.set("itemHeight", js.undefined)
+    def setValueMapper(value: js.Function): Self = StObject.set(x, "valueMapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapValueTo(value: String): Self = this.set("mapValueTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMapValueTo: Self = this.set("mapValueTo", js.undefined)
-    
-    @scala.inline
-    def setValueMapper(value: js.Function): Self = this.set("valueMapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueMapper: Self = this.set("valueMapper", js.undefined)
+    def setValueMapperUndefined: Self = StObject.set(x, "valueMapper", js.undefined)
   }
 }

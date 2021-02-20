@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageAttribute extends js.Object {
+trait ImageAttribute extends StObject {
   
   /**
     * The block device mapping entries.
@@ -56,75 +57,63 @@ object ImageAttribute {
   }
   
   @scala.inline
-  implicit class ImageAttributeOps[Self <: ImageAttribute] (val x: Self) extends AnyVal {
+  implicit class ImageAttributeMutableBuilder[Self <: ImageAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockDeviceMappings(value: BlockDeviceMappingList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
     
     @scala.inline
-    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    def setDescription(value: AttributeValue): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDeviceMappings(value: BlockDeviceMappingList): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    def setImageId(value: String): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: AttributeValue): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setKernelId(value: AttributeValue): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageId(value: String): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
     
     @scala.inline
-    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    def setLaunchPermissions(value: LaunchPermissionList): Self = StObject.set(x, "LaunchPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelId(value: AttributeValue): Self = this.set("KernelId", value.asInstanceOf[js.Any])
+    def setLaunchPermissionsUndefined: Self = StObject.set(x, "LaunchPermissions", js.undefined)
     
     @scala.inline
-    def deleteKernelId: Self = this.set("KernelId", js.undefined)
+    def setLaunchPermissionsVarargs(value: LaunchPermission*): Self = StObject.set(x, "LaunchPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setLaunchPermissionsVarargs(value: LaunchPermission*): Self = this.set("LaunchPermissions", js.Array(value :_*))
+    def setProductCodes(value: ProductCodeList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchPermissions(value: LaunchPermissionList): Self = this.set("LaunchPermissions", value.asInstanceOf[js.Any])
+    def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
     @scala.inline
-    def deleteLaunchPermissions: Self = this.set("LaunchPermissions", js.undefined)
+    def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
     
     @scala.inline
-    def setProductCodesVarargs(value: ProductCode*): Self = this.set("ProductCodes", js.Array(value :_*))
+    def setRamdiskId(value: AttributeValue): Self = StObject.set(x, "RamdiskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCodes(value: ProductCodeList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
+    def setRamdiskIdUndefined: Self = StObject.set(x, "RamdiskId", js.undefined)
     
     @scala.inline
-    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
+    def setSriovNetSupport(value: AttributeValue): Self = StObject.set(x, "SriovNetSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRamdiskId(value: AttributeValue): Self = this.set("RamdiskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRamdiskId: Self = this.set("RamdiskId", js.undefined)
-    
-    @scala.inline
-    def setSriovNetSupport(value: AttributeValue): Self = this.set("SriovNetSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSriovNetSupport: Self = this.set("SriovNetSupport", js.undefined)
+    def setSriovNetSupportUndefined: Self = StObject.set(x, "SriovNetSupport", js.undefined)
   }
 }

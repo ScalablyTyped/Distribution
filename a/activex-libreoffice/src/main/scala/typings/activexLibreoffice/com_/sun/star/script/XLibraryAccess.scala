@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,42 +77,30 @@ object XLibraryAccess {
   }
   
   @scala.inline
-  implicit class XLibraryAccessOps[Self <: XLibraryAccess] (val x: Self) extends AnyVal {
+  implicit class XLibraryAccessMutableBuilder[Self <: XLibraryAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFunctionCode(value: String => SafeArray[Double]): Self = StObject.set(x, "getFunctionCode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFunctionSource(value: String => String): Self = StObject.set(x, "getFunctionSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetModuleCode(value: String => SafeArray[Double]): Self = StObject.set(x, "getModuleCode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModuleNames(value: SafeArray[String]): Self = this.set("ModuleNames", value.asInstanceOf[js.Any])
+    def setGetModuleNames(value: () => SafeArray[String]): Self = StObject.set(x, "getModuleNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFunctionCode(value: String => SafeArray[Double]): Self = this.set("getFunctionCode", js.Any.fromFunction1(value))
+    def setGetModuleSource(value: String => String): Self = StObject.set(x, "getModuleSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFunctionSource(value: String => String): Self = this.set("getFunctionSource", js.Any.fromFunction1(value))
+    def setIsFunction(value: String => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetModuleCode(value: String => SafeArray[Double]): Self = this.set("getModuleCode", js.Any.fromFunction1(value))
+    def setIsValidPath(value: String => Boolean): Self = StObject.set(x, "isValidPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetModuleNames(value: () => SafeArray[String]): Self = this.set("getModuleNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetModuleSource(value: String => String): Self = this.set("getModuleSource", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsFunction(value: String => Boolean): Self = this.set("isFunction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsValidPath(value: String => Boolean): Self = this.set("isValidPath", js.Any.fromFunction1(value))
+    def setModuleNames(value: SafeArray[String]): Self = StObject.set(x, "ModuleNames", value.asInstanceOf[js.Any])
   }
 }

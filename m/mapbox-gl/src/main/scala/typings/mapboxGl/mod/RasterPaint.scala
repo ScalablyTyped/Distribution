@@ -2,6 +2,7 @@ package typings.mapboxGl.mod
 
 import typings.mapboxGl.mapboxGlStrings.linear
 import typings.mapboxGl.mapboxGlStrings.nearest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,102 +47,90 @@ object RasterPaint {
   }
   
   @scala.inline
-  implicit class RasterPaintOps[Self <: RasterPaint] (val x: Self) extends AnyVal {
+  implicit class RasterPaintMutableBuilder[Self <: RasterPaint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setRaster-brightness-max`(value: Double | Expression): Self = StObject.set(x, "raster-brightness-max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setRaster-brightness-max-transition`(value: Transition): Self = StObject.set(x, "raster-brightness-max-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setRaster-brightness-max-transitionUndefined`: Self = StObject.set(x, "raster-brightness-max-transition", js.undefined)
     
     @scala.inline
-    def `setRaster-brightness-max`(value: Double | Expression): Self = this.set("raster-brightness-max", value.asInstanceOf[js.Any])
+    def `setRaster-brightness-maxUndefined`: Self = StObject.set(x, "raster-brightness-max", js.undefined)
     
     @scala.inline
-    def `deleteRaster-brightness-max`: Self = this.set("raster-brightness-max", js.undefined)
+    def `setRaster-brightness-min`(value: Double | Expression): Self = StObject.set(x, "raster-brightness-min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRaster-brightness-max-transition`(value: Transition): Self = this.set("raster-brightness-max-transition", value.asInstanceOf[js.Any])
+    def `setRaster-brightness-min-transition`(value: Transition): Self = StObject.set(x, "raster-brightness-min-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteRaster-brightness-max-transition`: Self = this.set("raster-brightness-max-transition", js.undefined)
+    def `setRaster-brightness-min-transitionUndefined`: Self = StObject.set(x, "raster-brightness-min-transition", js.undefined)
     
     @scala.inline
-    def `setRaster-brightness-min`(value: Double | Expression): Self = this.set("raster-brightness-min", value.asInstanceOf[js.Any])
+    def `setRaster-brightness-minUndefined`: Self = StObject.set(x, "raster-brightness-min", js.undefined)
     
     @scala.inline
-    def `deleteRaster-brightness-min`: Self = this.set("raster-brightness-min", js.undefined)
+    def `setRaster-contrast`(value: Double | Expression): Self = StObject.set(x, "raster-contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRaster-brightness-min-transition`(value: Transition): Self = this.set("raster-brightness-min-transition", value.asInstanceOf[js.Any])
+    def `setRaster-contrast-transition`(value: Transition): Self = StObject.set(x, "raster-contrast-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteRaster-brightness-min-transition`: Self = this.set("raster-brightness-min-transition", js.undefined)
+    def `setRaster-contrast-transitionUndefined`: Self = StObject.set(x, "raster-contrast-transition", js.undefined)
     
     @scala.inline
-    def `setRaster-contrast`(value: Double | Expression): Self = this.set("raster-contrast", value.asInstanceOf[js.Any])
+    def `setRaster-contrastUndefined`: Self = StObject.set(x, "raster-contrast", js.undefined)
     
     @scala.inline
-    def `deleteRaster-contrast`: Self = this.set("raster-contrast", js.undefined)
+    def `setRaster-fade-duration`(value: Double | Expression): Self = StObject.set(x, "raster-fade-duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRaster-contrast-transition`(value: Transition): Self = this.set("raster-contrast-transition", value.asInstanceOf[js.Any])
+    def `setRaster-fade-durationUndefined`: Self = StObject.set(x, "raster-fade-duration", js.undefined)
     
     @scala.inline
-    def `deleteRaster-contrast-transition`: Self = this.set("raster-contrast-transition", js.undefined)
+    def `setRaster-hue-rotate`(value: Double | Expression): Self = StObject.set(x, "raster-hue-rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRaster-fade-duration`(value: Double | Expression): Self = this.set("raster-fade-duration", value.asInstanceOf[js.Any])
+    def `setRaster-hue-rotate-transition`(value: Transition): Self = StObject.set(x, "raster-hue-rotate-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteRaster-fade-duration`: Self = this.set("raster-fade-duration", js.undefined)
+    def `setRaster-hue-rotate-transitionUndefined`: Self = StObject.set(x, "raster-hue-rotate-transition", js.undefined)
     
     @scala.inline
-    def `setRaster-hue-rotate`(value: Double | Expression): Self = this.set("raster-hue-rotate", value.asInstanceOf[js.Any])
+    def `setRaster-hue-rotateUndefined`: Self = StObject.set(x, "raster-hue-rotate", js.undefined)
     
     @scala.inline
-    def `deleteRaster-hue-rotate`: Self = this.set("raster-hue-rotate", js.undefined)
+    def `setRaster-opacity`(value: Double | Expression): Self = StObject.set(x, "raster-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRaster-hue-rotate-transition`(value: Transition): Self = this.set("raster-hue-rotate-transition", value.asInstanceOf[js.Any])
+    def `setRaster-opacity-transition`(value: Transition): Self = StObject.set(x, "raster-opacity-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteRaster-hue-rotate-transition`: Self = this.set("raster-hue-rotate-transition", js.undefined)
+    def `setRaster-opacity-transitionUndefined`: Self = StObject.set(x, "raster-opacity-transition", js.undefined)
     
     @scala.inline
-    def `setRaster-opacity`(value: Double | Expression): Self = this.set("raster-opacity", value.asInstanceOf[js.Any])
+    def `setRaster-opacityUndefined`: Self = StObject.set(x, "raster-opacity", js.undefined)
     
     @scala.inline
-    def `deleteRaster-opacity`: Self = this.set("raster-opacity", js.undefined)
+    def `setRaster-resampling`(value: linear | nearest): Self = StObject.set(x, "raster-resampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRaster-opacity-transition`(value: Transition): Self = this.set("raster-opacity-transition", value.asInstanceOf[js.Any])
+    def `setRaster-resamplingUndefined`: Self = StObject.set(x, "raster-resampling", js.undefined)
     
     @scala.inline
-    def `deleteRaster-opacity-transition`: Self = this.set("raster-opacity-transition", js.undefined)
+    def `setRaster-saturation`(value: Double | Expression): Self = StObject.set(x, "raster-saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRaster-resampling`(value: linear | nearest): Self = this.set("raster-resampling", value.asInstanceOf[js.Any])
+    def `setRaster-saturation-transition`(value: Transition): Self = StObject.set(x, "raster-saturation-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteRaster-resampling`: Self = this.set("raster-resampling", js.undefined)
+    def `setRaster-saturation-transitionUndefined`: Self = StObject.set(x, "raster-saturation-transition", js.undefined)
     
     @scala.inline
-    def `setRaster-saturation`(value: Double | Expression): Self = this.set("raster-saturation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteRaster-saturation`: Self = this.set("raster-saturation", js.undefined)
-    
-    @scala.inline
-    def `setRaster-saturation-transition`(value: Transition): Self = this.set("raster-saturation-transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteRaster-saturation-transition`: Self = this.set("raster-saturation-transition", js.undefined)
+    def `setRaster-saturationUndefined`: Self = StObject.set(x, "raster-saturation", js.undefined)
   }
 }

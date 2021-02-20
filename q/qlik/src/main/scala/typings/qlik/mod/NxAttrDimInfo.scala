@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NxAttrDimInfo extends js.Object {
+trait NxAttrDimInfo extends StObject {
   
   var qCardinal: Double = js.native
   
@@ -32,33 +33,21 @@ object NxAttrDimInfo {
   }
   
   @scala.inline
-  implicit class NxAttrDimInfoOps[Self <: NxAttrDimInfo] (val x: Self) extends AnyVal {
+  implicit class NxAttrDimInfoMutableBuilder[Self <: NxAttrDimInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQError(value: NxValidationError): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQFallbackTitle(value: String): Self = StObject.set(x, "qFallbackTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQCardinal(value: Double): Self = this.set("qCardinal", value.asInstanceOf[js.Any])
+    def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQError(value: NxValidationError): Self = this.set("qError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQFallbackTitle(value: String): Self = this.set("qFallbackTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQLocked(value: Boolean): Self = this.set("qLocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSize(value: Size): Self = this.set("qSize", value.asInstanceOf[js.Any])
+    def setQSize(value: Size): Self = StObject.set(x, "qSize", value.asInstanceOf[js.Any])
   }
 }

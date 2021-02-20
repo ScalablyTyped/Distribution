@@ -2,12 +2,13 @@ package typings.nodeRedEditorClient.anon
 
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddButton extends js.Object {
+trait AddButton extends StObject {
   
   var addButton: js.UndefOr[String | js.Function0[Unit]] = js.native
   
@@ -48,114 +49,102 @@ object AddButton {
   }
   
   @scala.inline
-  implicit class AddButtonOps[Self <: AddButton] (val x: Self) extends AnyVal {
+  implicit class AddButtonMutableBuilder[Self <: AddButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddButton(value: String | js.Function0[Unit]): Self = StObject.set(x, "addButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddButtonCaption(value: String): Self = StObject.set(x, "addButtonCaption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddButtonCaptionUndefined: Self = StObject.set(x, "addButtonCaption", js.undefined)
     
     @scala.inline
-    def setAddButtonFunction0(value: () => Unit): Self = this.set("addButton", js.Any.fromFunction0(value))
+    def setAddButtonFunction0(value: () => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddButton(value: String | js.Function0[Unit]): Self = this.set("addButton", value.asInstanceOf[js.Any])
+    def setAddButtonUndefined: Self = StObject.set(x, "addButton", js.undefined)
     
     @scala.inline
-    def deleteAddButton: Self = this.set("addButton", js.undefined)
+    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddButtonCaption(value: String): Self = this.set("addButtonCaption", value.asInstanceOf[js.Any])
+    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
     @scala.inline
-    def deleteAddButtonCaption: Self = this.set("addButtonCaption", js.undefined)
+    def setElement(value: JQuery[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsible(value: Boolean): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: JQuery[HTMLElement]): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setMinimumActiveTabWidth(value: Double): Self = StObject.set(x, "minimumActiveTabWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenu(value: Boolean): Self = this.set("menu", value.asInstanceOf[js.Any])
+    def setMinimumActiveTabWidthUndefined: Self = StObject.set(x, "minimumActiveTabWidth", js.undefined)
     
     @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
+    def setOnchange(value: /* item */ String => Unit): Self = StObject.set(x, "onchange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinimumActiveTabWidth(value: Double): Self = this.set("minimumActiveTabWidth", value.asInstanceOf[js.Any])
+    def setOnchangeUndefined: Self = StObject.set(x, "onchange", js.undefined)
     
     @scala.inline
-    def deleteMinimumActiveTabWidth: Self = this.set("minimumActiveTabWidth", js.undefined)
+    def setOnclick(value: /* item */ String => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnchange(value: /* item */ String => Unit): Self = this.set("onchange", js.Any.fromFunction1(value))
+    def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
     @scala.inline
-    def deleteOnchange: Self = this.set("onchange", js.undefined)
+    def setOndblclick(value: /* item */ String => Unit): Self = StObject.set(x, "ondblclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnclick(value: /* item */ String => Unit): Self = this.set("onclick", js.Any.fromFunction1(value))
+    def setOndblclickUndefined: Self = StObject.set(x, "ondblclick", js.undefined)
     
     @scala.inline
-    def deleteOnclick: Self = this.set("onclick", js.undefined)
+    def setOnremove(value: /* item */ js.Object => Unit): Self = StObject.set(x, "onremove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOndblclick(value: /* item */ String => Unit): Self = this.set("ondblclick", js.Any.fromFunction1(value))
+    def setOnremoveUndefined: Self = StObject.set(x, "onremove", js.undefined)
     
     @scala.inline
-    def deleteOndblclick: Self = this.set("ondblclick", js.undefined)
+    def setOnselect(value: /* selection */ js.Array[String] => Unit): Self = StObject.set(x, "onselect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnremove(value: /* item */ js.Object => Unit): Self = this.set("onremove", js.Any.fromFunction1(value))
+    def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
     
     @scala.inline
-    def deleteOnremove: Self = this.set("onremove", js.undefined)
+    def setScrollable(value: Boolean): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnselect(value: /* selection */ js.Array[String] => Unit): Self = this.set("onselect", js.Any.fromFunction1(value))
+    def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
     @scala.inline
-    def deleteOnselect: Self = this.set("onselect", js.undefined)
+    def setSearchButton(value: String | js.Function0[Unit]): Self = StObject.set(x, "searchButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollable(value: Boolean): Self = this.set("scrollable", value.asInstanceOf[js.Any])
+    def setSearchButtonCaption(value: String): Self = StObject.set(x, "searchButtonCaption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollable: Self = this.set("scrollable", js.undefined)
+    def setSearchButtonCaptionUndefined: Self = StObject.set(x, "searchButtonCaption", js.undefined)
     
     @scala.inline
-    def setSearchButtonFunction0(value: () => Unit): Self = this.set("searchButton", js.Any.fromFunction0(value))
+    def setSearchButtonFunction0(value: () => Unit): Self = StObject.set(x, "searchButton", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSearchButton(value: String | js.Function0[Unit]): Self = this.set("searchButton", value.asInstanceOf[js.Any])
+    def setSearchButtonUndefined: Self = StObject.set(x, "searchButton", js.undefined)
     
     @scala.inline
-    def deleteSearchButton: Self = this.set("searchButton", js.undefined)
+    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchButtonCaption(value: String): Self = this.set("searchButtonCaption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchButtonCaption: Self = this.set("searchButtonCaption", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,48 +58,36 @@ object DirectionsStopSymbols {
   }
   
   @scala.inline
-  implicit class DirectionsStopSymbolsOps[Self <: DirectionsStopSymbols] (val x: Self) extends AnyVal {
+  implicit class DirectionsStopSymbolsMutableBuilder[Self <: DirectionsStopSymbols] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirst(value: Symbol): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLast(value: Symbol): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: Symbol): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
-    def deleteFirst: Self = this.set("first", js.undefined)
+    def setMiddle(value: Symbol): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast(value: Symbol): Self = this.set("last", value.asInstanceOf[js.Any])
+    def setMiddleUndefined: Self = StObject.set(x, "middle", js.undefined)
     
     @scala.inline
-    def deleteLast: Self = this.set("last", js.undefined)
+    def setUnlocated(value: Symbol): Self = StObject.set(x, "unlocated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiddle(value: Symbol): Self = this.set("middle", value.asInstanceOf[js.Any])
+    def setUnlocatedUndefined: Self = StObject.set(x, "unlocated", js.undefined)
     
     @scala.inline
-    def deleteMiddle: Self = this.set("middle", js.undefined)
+    def setWaypoint(value: Symbol): Self = StObject.set(x, "waypoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlocated(value: Symbol): Self = this.set("unlocated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnlocated: Self = this.set("unlocated", js.undefined)
-    
-    @scala.inline
-    def setWaypoint(value: Symbol): Self = this.set("waypoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaypoint: Self = this.set("waypoint", js.undefined)
+    def setWaypointUndefined: Self = StObject.set(x, "waypoint", js.undefined)
   }
 }

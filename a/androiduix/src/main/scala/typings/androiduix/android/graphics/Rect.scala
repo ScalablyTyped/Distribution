@@ -1,12 +1,13 @@
 package typings.androiduix.android.graphics
 
 import typings.androiduix.java_.lang.StringBuilder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rect extends js.Object {
+trait Rect extends StObject {
   
   var bottom: Double = js.native
   

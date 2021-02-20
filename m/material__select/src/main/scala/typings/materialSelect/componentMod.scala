@@ -9,16 +9,18 @@ import typings.materialSelect.foundationMod.MDCSelectFoundation
 import typings.materialSelect.helperTextComponentMod.MDCSelectHelperTextFactory
 import typings.materialSelect.iconComponentMod.MDCSelectIconFactory
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/select/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/select/component", "MDCSelect")
   @js.native
-  class MDCSelect () extends MDCComponent[MDCSelectFoundation] {
+  class MDCSelect protected () extends MDCComponent[MDCSelectFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCSelectFoundation, args: js.Any*) = this()
     
     def disabled: Boolean = js.native
     def disabled_=(disabled: Boolean): Unit = js.native
@@ -89,9 +91,10 @@ object componentMod extends js.Object {
     def value_=(value: String): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCSelect extends js.Object {
+  object MDCSelect {
     
+    @JSImport("@material/select/component", "MDCSelect.attachTo")
+    @js.native
     def attachTo(root: Element): MDCSelect = js.native
   }
 }

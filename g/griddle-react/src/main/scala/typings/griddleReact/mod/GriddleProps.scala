@@ -1,5 +1,6 @@
 package typings.griddleReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,48 +27,36 @@ object GriddleProps {
   }
   
   @scala.inline
-  implicit class GriddlePropsOps[Self <: GriddleProps[_], T] (val x: Self with GriddleProps[T]) extends AnyVal {
+  implicit class GriddlePropsMutableBuilder[Self <: GriddleProps[_], T] (val x: Self with GriddleProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCore(value: GriddlePlugin): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoreUndefined: Self = StObject.set(x, "core", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCore(value: GriddlePlugin): Self = this.set("core", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCore: Self = this.set("core", js.undefined)
+    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: T*): Self = this.set("data", js.Array(value :_*))
+    def setPlugins(value: js.Array[GriddlePlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[T]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setPluginsVarargs(value: GriddlePlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setPluginsVarargs(value: GriddlePlugin*): Self = this.set("plugins", js.Array(value :_*))
+    def setStoreKey(value: String): Self = StObject.set(x, "storeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[GriddlePlugin]): Self = this.set("plugins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
-    
-    @scala.inline
-    def setStoreKey(value: String): Self = this.set("storeKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreKey: Self = this.set("storeKey", js.undefined)
+    def setStoreKeyUndefined: Self = StObject.set(x, "storeKey", js.undefined)
   }
 }

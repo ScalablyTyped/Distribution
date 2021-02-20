@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SupportedIde extends js.Object {
+trait SupportedIde extends StObject {
   
   /**
     * The download URL for the IDE.
@@ -47,36 +48,24 @@ object SupportedIde {
   }
   
   @scala.inline
-  implicit class SupportedIdeOps[Self <: SupportedIde] (val x: Self) extends AnyVal {
+  implicit class SupportedIdeMutableBuilder[Self <: SupportedIde] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdeType(value: SupportedIdeType): Self = StObject.set(x, "ideType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadUrl(value: String): Self = this.set("downloadUrl", value.asInstanceOf[js.Any])
+    def setProtocolHandlerUrl(value: String): Self = StObject.set(x, "protocolHandlerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdeType(value: SupportedIdeType): Self = this.set("ideType", value.asInstanceOf[js.Any])
+    def setSupportedPlatforms(value: js.Array[String]): Self = StObject.set(x, "supportedPlatforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocolHandlerUrl(value: String): Self = this.set("protocolHandlerUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedPlatformsVarargs(value: String*): Self = this.set("supportedPlatforms", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedPlatforms(value: js.Array[String]): Self = this.set("supportedPlatforms", value.asInstanceOf[js.Any])
+    def setSupportedPlatformsVarargs(value: String*): Self = StObject.set(x, "supportedPlatforms", js.Array(value :_*))
   }
 }

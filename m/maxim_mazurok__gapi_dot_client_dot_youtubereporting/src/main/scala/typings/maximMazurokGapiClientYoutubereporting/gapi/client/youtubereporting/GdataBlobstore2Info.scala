@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GdataBlobstore2Info extends js.Object {
+trait GdataBlobstore2Info extends StObject {
   
   /** gdata */
   var blobGeneration: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object GdataBlobstore2Info {
   }
   
   @scala.inline
-  implicit class GdataBlobstore2InfoOps[Self <: GdataBlobstore2Info] (val x: Self) extends AnyVal {
+  implicit class GdataBlobstore2InfoMutableBuilder[Self <: GdataBlobstore2Info] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlobGeneration(value: String): Self = StObject.set(x, "blobGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlobGenerationUndefined: Self = StObject.set(x, "blobGeneration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlobGeneration(value: String): Self = this.set("blobGeneration", value.asInstanceOf[js.Any])
+    def setBlobIdUndefined: Self = StObject.set(x, "blobId", js.undefined)
     
     @scala.inline
-    def deleteBlobGeneration: Self = this.set("blobGeneration", js.undefined)
+    def setDownloadReadHandle(value: String): Self = StObject.set(x, "downloadReadHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlobId(value: String): Self = this.set("blobId", value.asInstanceOf[js.Any])
+    def setDownloadReadHandleUndefined: Self = StObject.set(x, "downloadReadHandle", js.undefined)
     
     @scala.inline
-    def deleteBlobId: Self = this.set("blobId", js.undefined)
+    def setReadToken(value: String): Self = StObject.set(x, "readToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadReadHandle(value: String): Self = this.set("downloadReadHandle", value.asInstanceOf[js.Any])
+    def setReadTokenUndefined: Self = StObject.set(x, "readToken", js.undefined)
     
     @scala.inline
-    def deleteDownloadReadHandle: Self = this.set("downloadReadHandle", js.undefined)
+    def setUploadMetadataContainer(value: String): Self = StObject.set(x, "uploadMetadataContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadToken(value: String): Self = this.set("readToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadToken: Self = this.set("readToken", js.undefined)
-    
-    @scala.inline
-    def setUploadMetadataContainer(value: String): Self = this.set("uploadMetadataContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadMetadataContainer: Self = this.set("uploadMetadataContainer", js.undefined)
+    def setUploadMetadataContainerUndefined: Self = StObject.set(x, "uploadMetadataContainer", js.undefined)
   }
 }

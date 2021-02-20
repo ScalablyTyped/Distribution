@@ -3,12 +3,13 @@ package typings.glReact.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.glReact.anon.Color
 import typings.glReact.anon.Dst
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeProps extends js.Object {
+trait NodeProps extends StObject {
   
   var backbuffering: js.UndefOr[Boolean] = js.native
   
@@ -43,90 +44,78 @@ object NodeProps {
   }
   
   @scala.inline
-  implicit class NodePropsOps[Self <: NodeProps] (val x: Self) extends AnyVal {
+  implicit class NodePropsMutableBuilder[Self <: NodeProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackbuffering(value: Boolean): Self = StObject.set(x, "backbuffering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackbufferingUndefined: Self = StObject.set(x, "backbuffering", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlendFunc(value: Dst): Self = StObject.set(x, "blendFunc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShader(value: ShaderIdentifier | ShaderDefinition): Self = this.set("shader", value.asInstanceOf[js.Any])
+    def setBlendFuncUndefined: Self = StObject.set(x, "blendFunc", js.undefined)
     
     @scala.inline
-    def setBackbuffering(value: Boolean): Self = this.set("backbuffering", value.asInstanceOf[js.Any])
+    def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackbuffering: Self = this.set("backbuffering", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setBlendFunc(value: Dst): Self = this.set("blendFunc", value.asInstanceOf[js.Any])
+    def setClear(value: Color): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlendFunc: Self = this.set("blendFunc", js.undefined)
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Any): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setClear(value: Color): Self = this.set("clear", value.asInstanceOf[js.Any])
+    def setIgnoreUnusedUniforms(value: js.Array[String] | Boolean): Self = StObject.set(x, "ignoreUnusedUniforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setIgnoreUnusedUniformsUndefined: Self = StObject.set(x, "ignoreUnusedUniforms", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIgnoreUnusedUniformsVarargs(value: String*): Self = StObject.set(x, "ignoreUnusedUniforms", js.Array(value :_*))
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOnDraw(value: () => Unit): Self = StObject.set(x, "onDraw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIgnoreUnusedUniformsVarargs(value: String*): Self = this.set("ignoreUnusedUniforms", js.Array(value :_*))
+    def setOnDrawUndefined: Self = StObject.set(x, "onDraw", js.undefined)
     
     @scala.inline
-    def setIgnoreUnusedUniforms(value: js.Array[String] | Boolean): Self = this.set("ignoreUnusedUniforms", value.asInstanceOf[js.Any])
+    def setShader(value: ShaderIdentifier | ShaderDefinition): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreUnusedUniforms: Self = this.set("ignoreUnusedUniforms", js.undefined)
+    def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDraw(value: () => Unit): Self = this.set("onDraw", js.Any.fromFunction0(value))
+    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     
     @scala.inline
-    def deleteOnDraw: Self = this.set("onDraw", js.undefined)
+    def setUniforms(value: StringDictionary[js.Any]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSync(value: Boolean): Self = this.set("sync", value.asInstanceOf[js.Any])
+    def setUniformsOptions(value: js.Any): Self = StObject.set(x, "uniformsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSync: Self = this.set("sync", js.undefined)
+    def setUniformsOptionsUndefined: Self = StObject.set(x, "uniformsOptions", js.undefined)
     
     @scala.inline
-    def setUniforms(value: StringDictionary[js.Any]): Self = this.set("uniforms", value.asInstanceOf[js.Any])
+    def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
     
     @scala.inline
-    def deleteUniforms: Self = this.set("uniforms", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniformsOptions(value: js.Any): Self = this.set("uniformsOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniformsOptions: Self = this.set("uniformsOptions", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

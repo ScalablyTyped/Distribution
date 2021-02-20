@@ -1,11 +1,12 @@
 package typings.ydnDb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexSchemaJson extends js.Object {
+trait IndexSchemaJson extends StObject {
   
   var keyPath: String | js.Array[String] = js.native
   
@@ -26,48 +27,36 @@ object IndexSchemaJson {
   }
   
   @scala.inline
-  implicit class IndexSchemaJsonOps[Self <: IndexSchemaJson] (val x: Self) extends AnyVal {
+  implicit class IndexSchemaJsonMutableBuilder[Self <: IndexSchemaJson] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyPath(value: String | js.Array[String]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyPathVarargs(value: String*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiEntry(value: Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPathVarargs(value: String*): Self = this.set("keyPath", js.Array(value :_*))
+    def setMultiEntryUndefined: Self = StObject.set(x, "multiEntry", js.undefined)
     
     @scala.inline
-    def setKeyPath(value: String | js.Array[String]): Self = this.set("keyPath", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiEntry(value: Boolean): Self = this.set("multiEntry", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMultiEntry: Self = this.set("multiEntry", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

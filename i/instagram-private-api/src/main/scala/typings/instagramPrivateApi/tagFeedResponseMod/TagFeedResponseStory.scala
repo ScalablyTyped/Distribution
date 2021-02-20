@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.tagFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagFeedResponseStory extends js.Object {
+trait TagFeedResponseStory extends StObject {
   
   var can_reply: Boolean = js.native
   
@@ -53,57 +54,45 @@ object TagFeedResponseStory {
   }
   
   @scala.inline
-  implicit class TagFeedResponseStoryOps[Self <: TagFeedResponseStory] (val x: Self) extends AnyVal {
+  implicit class TagFeedResponseStoryMutableBuilder[Self <: TagFeedResponseStory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCan_reply(value: Boolean): Self = StObject.set(x, "can_reply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCan_reshare(value: Boolean): Self = StObject.set(x, "can_reshare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_reply(value: Boolean): Self = this.set("can_reply", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_reshare(value: Boolean): Self = this.set("can_reshare", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[TagFeedResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiring_at(value: Double): Self = this.set("expiring_at", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: TagFeedResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: TagFeedResponseItemsItem*): Self = this.set("items", js.Array(value :_*))
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[TagFeedResponseItemsItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setOwner(value: TagFeedResponseOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatest_reel_media(value: Double): Self = this.set("latest_reel_media", value.asInstanceOf[js.Any])
+    def setPrefetch_count(value: Double): Self = StObject.set(x, "prefetch_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: TagFeedResponseOwner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setSeen(value: Double): Self = StObject.set(x, "seen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefetch_count(value: Double): Self = this.set("prefetch_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReel_type(value: String): Self = this.set("reel_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeen(value: Double): Self = this.set("seen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnique_integer_reel_id(value: String): Self = this.set("unique_integer_reel_id", value.asInstanceOf[js.Any])
+    def setUnique_integer_reel_id(value: String): Self = StObject.set(x, "unique_integer_reel_id", value.asInstanceOf[js.Any])
   }
 }

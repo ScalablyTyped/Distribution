@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.presentation
 
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This usually enhances objects of type {@link com.sun.star.drawing.Shape} with presentation properties.
   */
 @js.native
-trait Shape extends js.Object {
+trait Shape extends StObject {
   
   /** is a generic URL for the property OnClick. */
   var Bookmark: String = js.native
@@ -103,63 +104,51 @@ object Shape {
   }
   
   @scala.inline
-  implicit class ShapeOps[Self <: Shape] (val x: Self) extends AnyVal {
+  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmark(value: String): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimColor(value: Color): Self = StObject.set(x, "DimColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimHide(value: Boolean): Self = StObject.set(x, "DimHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmark(value: String): Self = this.set("Bookmark", value.asInstanceOf[js.Any])
+    def setDimPrevious(value: Boolean): Self = StObject.set(x, "DimPrevious", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimColor(value: Color): Self = this.set("DimColor", value.asInstanceOf[js.Any])
+    def setEffect(value: AnimationEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimHide(value: Boolean): Self = this.set("DimHide", value.asInstanceOf[js.Any])
+    def setIsEmptyPresentationObject(value: Boolean): Self = StObject.set(x, "IsEmptyPresentationObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimPrevious(value: Boolean): Self = this.set("DimPrevious", value.asInstanceOf[js.Any])
+    def setIsPresentationObject(value: Boolean): Self = StObject.set(x, "IsPresentationObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: AnimationEffect): Self = this.set("Effect", value.asInstanceOf[js.Any])
+    def setOnClick(value: ClickAction): Self = StObject.set(x, "OnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmptyPresentationObject(value: Boolean): Self = this.set("IsEmptyPresentationObject", value.asInstanceOf[js.Any])
+    def setPlayFull(value: Boolean): Self = StObject.set(x, "PlayFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPresentationObject(value: Boolean): Self = this.set("IsPresentationObject", value.asInstanceOf[js.Any])
+    def setPresentationOrder(value: Double): Self = StObject.set(x, "PresentationOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: ClickAction): Self = this.set("OnClick", value.asInstanceOf[js.Any])
+    def setSound(value: String): Self = StObject.set(x, "Sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayFull(value: Boolean): Self = this.set("PlayFull", value.asInstanceOf[js.Any])
+    def setSoundOn(value: Boolean): Self = StObject.set(x, "SoundOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresentationOrder(value: Double): Self = this.set("PresentationOrder", value.asInstanceOf[js.Any])
+    def setSpeed(value: AnimationSpeed): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSound(value: String): Self = this.set("Sound", value.asInstanceOf[js.Any])
+    def setTextEffect(value: AnimationEffect): Self = StObject.set(x, "TextEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoundOn(value: Boolean): Self = this.set("SoundOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeed(value: AnimationSpeed): Self = this.set("Speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextEffect(value: AnimationEffect): Self = this.set("TextEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerb(value: Double): Self = this.set("Verb", value.asInstanceOf[js.Any])
+    def setVerb(value: Double): Self = StObject.set(x, "Verb", value.asInstanceOf[js.Any])
   }
 }

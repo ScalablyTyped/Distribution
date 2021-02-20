@@ -1,40 +1,35 @@
 package typings.sipJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/log/levels", JSImport.Namespace)
-@js.native
-object levelsMod extends js.Object {
+object levelsMod {
   
   @js.native
-  sealed trait Levels extends js.Object
+  sealed trait Levels extends StObject
+  @JSImport("sip.js/lib/core/log/levels", "Levels")
   @js.native
-  object Levels extends js.Object {
+  object Levels extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Levels with Double] = js.native
     
     @js.native
     sealed trait debug extends Levels
-    /* 3 */ @js.native
-    object debug extends TopLevel[debug with Double]
+    /* 3 */ val debug: typings.sipJs.levelsMod.Levels.debug with Double = js.native
     
     @js.native
     sealed trait error extends Levels
-    /* 0 */ @js.native
-    object error extends TopLevel[error with Double]
+    /* 0 */ val error: typings.sipJs.levelsMod.Levels.error with Double = js.native
     
     @js.native
     sealed trait log extends Levels
-    /* 2 */ @js.native
-    object log extends TopLevel[log with Double]
+    /* 2 */ val log: typings.sipJs.levelsMod.Levels.log with Double = js.native
     
     @js.native
     sealed trait warn extends Levels
-    /* 1 */ @js.native
-    object warn extends TopLevel[warn with Double]
+    /* 1 */ val warn: typings.sipJs.levelsMod.Levels.warn with Double = js.native
   }
 }

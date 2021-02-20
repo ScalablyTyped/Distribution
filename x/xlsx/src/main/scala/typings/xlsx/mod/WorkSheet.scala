@@ -1,5 +1,6 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,57 +37,45 @@ object WorkSheet {
   }
   
   @scala.inline
-  implicit class WorkSheetOps[Self <: WorkSheet] (val x: Self) extends AnyVal {
+  implicit class WorkSheetMutableBuilder[Self <: WorkSheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclamationmarkautofilter(value: AutoFilterInfo): Self = StObject.set(x, "!autofilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclamationmarkautofilterUndefined: Self = StObject.set(x, "!autofilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclamationmarkcols(value: js.Array[ColInfo]): Self = StObject.set(x, "!cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclamationmarkautofilter(value: AutoFilterInfo): Self = this.set("!autofilter", value.asInstanceOf[js.Any])
+    def setExclamationmarkcolsUndefined: Self = StObject.set(x, "!cols", js.undefined)
     
     @scala.inline
-    def deleteExclamationmarkautofilter: Self = this.set("!autofilter", js.undefined)
+    def setExclamationmarkcolsVarargs(value: ColInfo*): Self = StObject.set(x, "!cols", js.Array(value :_*))
     
     @scala.inline
-    def setExclamationmarkcolsVarargs(value: ColInfo*): Self = this.set("!cols", js.Array(value :_*))
+    def setExclamationmarkmerges(value: js.Array[Range]): Self = StObject.set(x, "!merges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclamationmarkcols(value: js.Array[ColInfo]): Self = this.set("!cols", value.asInstanceOf[js.Any])
+    def setExclamationmarkmergesUndefined: Self = StObject.set(x, "!merges", js.undefined)
     
     @scala.inline
-    def deleteExclamationmarkcols: Self = this.set("!cols", js.undefined)
+    def setExclamationmarkmergesVarargs(value: Range*): Self = StObject.set(x, "!merges", js.Array(value :_*))
     
     @scala.inline
-    def setExclamationmarkmergesVarargs(value: Range*): Self = this.set("!merges", js.Array(value :_*))
+    def setExclamationmarkprotect(value: ProtectInfo): Self = StObject.set(x, "!protect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclamationmarkmerges(value: js.Array[Range]): Self = this.set("!merges", value.asInstanceOf[js.Any])
+    def setExclamationmarkprotectUndefined: Self = StObject.set(x, "!protect", js.undefined)
     
     @scala.inline
-    def deleteExclamationmarkmerges: Self = this.set("!merges", js.undefined)
+    def setExclamationmarkrows(value: js.Array[RowInfo]): Self = StObject.set(x, "!rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclamationmarkprotect(value: ProtectInfo): Self = this.set("!protect", value.asInstanceOf[js.Any])
+    def setExclamationmarkrowsUndefined: Self = StObject.set(x, "!rows", js.undefined)
     
     @scala.inline
-    def deleteExclamationmarkprotect: Self = this.set("!protect", js.undefined)
-    
-    @scala.inline
-    def setExclamationmarkrowsVarargs(value: RowInfo*): Self = this.set("!rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setExclamationmarkrows(value: js.Array[RowInfo]): Self = this.set("!rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclamationmarkrows: Self = this.set("!rows", js.undefined)
+    def setExclamationmarkrowsVarargs(value: RowInfo*): Self = StObject.set(x, "!rows", js.Array(value :_*))
   }
 }

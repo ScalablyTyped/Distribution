@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Limited information about user address for developer callbacks.
   */
 @js.native
-trait IntermediateAddress extends js.Object {
+trait IntermediateAddress extends StObject {
   
   /**
     * The administrative area (e.g. state or province).
@@ -47,30 +48,18 @@ object IntermediateAddress {
   }
   
   @scala.inline
-  implicit class IntermediateAddressOps[Self <: IntermediateAddress] (val x: Self) extends AnyVal {
+  implicit class IntermediateAddressMutableBuilder[Self <: IntermediateAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrativeArea(value: String): Self = StObject.set(x, "administrativeArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrativeArea(value: String): Self = this.set("administrativeArea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.wegameApi.anon.EncryptedData
 import typings.wegameApi.wegameApiStrings.en
 import typings.wegameApi.wegameApiStrings.zh_CN
 import typings.wegameApi.wegameApiStrings.zh_TW
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * wx.getUserInfo的旧版本API参数，随时会被删除，不推荐使用
   */
 @js.native
-trait OldUserInfoParam extends js.Object {
+trait OldUserInfoParam extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -39,48 +40,36 @@ object OldUserInfoParam {
   }
   
   @scala.inline
-  implicit class OldUserInfoParamOps[Self <: OldUserInfoParam] (val x: Self) extends AnyVal {
+  implicit class OldUserInfoParamMutableBuilder[Self <: OldUserInfoParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setLang(value: en | zh_CN | zh_TW): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setSuccess(value: /* res */ EncryptedData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLang(value: en | zh_CN | zh_TW): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: /* res */ EncryptedData => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

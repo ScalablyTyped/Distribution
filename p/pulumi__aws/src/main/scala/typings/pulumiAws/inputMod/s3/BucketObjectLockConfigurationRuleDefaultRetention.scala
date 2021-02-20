@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketObjectLockConfigurationRuleDefaultRetention extends js.Object {
+trait BucketObjectLockConfigurationRuleDefaultRetention extends StObject {
   
   /**
     * The number of days that you want to specify for the default retention period.
@@ -32,33 +33,21 @@ object BucketObjectLockConfigurationRuleDefaultRetention {
   }
   
   @scala.inline
-  implicit class BucketObjectLockConfigurationRuleDefaultRetentionOps[Self <: BucketObjectLockConfigurationRuleDefaultRetention] (val x: Self) extends AnyVal {
+  implicit class BucketObjectLockConfigurationRuleDefaultRetentionMutableBuilder[Self <: BucketObjectLockConfigurationRuleDefaultRetention] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDays(value: Input[Double]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: Input[String]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: Input[String]): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setYears(value: Input[Double]): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays(value: Input[Double]): Self = this.set("days", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDays: Self = this.set("days", js.undefined)
-    
-    @scala.inline
-    def setYears(value: Input[Double]): Self = this.set("years", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYears: Self = this.set("years", js.undefined)
+    def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
   }
 }

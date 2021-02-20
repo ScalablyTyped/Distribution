@@ -1,6 +1,7 @@
 package typings.oracledb.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SODA can be used with Oracle Client 18.5 and Oracle Client 19.3, or later.
   */
 @js.native
-trait SodaCollection extends js.Object {
+trait SodaCollection extends StObject {
   
   /**
     * Creates an index on a SODA collection, to improve the performance of SODA query-by-examples (QBE) or

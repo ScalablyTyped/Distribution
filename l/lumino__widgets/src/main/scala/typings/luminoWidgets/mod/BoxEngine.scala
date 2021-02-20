@@ -1,13 +1,12 @@
 package typings.luminoWidgets.mod
 
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/widgets", "BoxEngine")
-@js.native
-object BoxEngine extends js.Object {
+object BoxEngine {
   
   /**
     * Adjust a sizer by a delta and update its neighbors accordingly.
@@ -26,6 +25,8 @@ object BoxEngine extends js.Object {
     * This is useful when implementing box layouts where the boundaries
     * between the sizers are interactively adjustable by the user.
     */
+  @JSImport("@lumino/widgets", "BoxEngine.adjust")
+  @js.native
   def adjust(sizers: ArrayLike[typings.luminoWidgets.boxengineMod.BoxSizer], index: Double, delta: Double): Unit = js.native
   
   /**
@@ -90,5 +91,7 @@ object BoxEngine extends js.Object {
     * have no effect on the new output. It is therefore not necessary to
     * create new sizer objects on each resize event.
     */
+  @JSImport("@lumino/widgets", "BoxEngine.calc")
+  @js.native
   def calc(sizers: ArrayLike[typings.luminoWidgets.boxengineMod.BoxSizer], space: Double): Double = js.native
 }

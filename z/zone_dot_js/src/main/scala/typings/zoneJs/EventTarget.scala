@@ -1,6 +1,7 @@
 package typings.zoneJs
 
 import typings.std.EventListenerOrEventListenerObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 2. eventListeners, get all event listeners of the given event name.
   */
 @js.native
-trait EventTarget extends js.Object {
+trait EventTarget extends StObject {
   
   /**
     *
@@ -62,30 +63,18 @@ object EventTarget {
   }
   
   @scala.inline
-  implicit class EventTargetOps[Self <: EventTarget] (val x: Self) extends AnyVal {
+  implicit class EventTargetMutableBuilder[Self <: EventTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventListeners(value: /* eventName */ js.UndefOr[String] => js.Array[EventListenerOrEventListenerObject]): Self = StObject.set(x, "eventListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventListenersUndefined: Self = StObject.set(x, "eventListeners", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveAllListeners(value: /* eventName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEventListeners(value: /* eventName */ js.UndefOr[String] => js.Array[EventListenerOrEventListenerObject]): Self = this.set("eventListeners", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteEventListeners: Self = this.set("eventListeners", js.undefined)
-    
-    @scala.inline
-    def setRemoveAllListeners(value: /* eventName */ js.UndefOr[String] => Unit): Self = this.set("removeAllListeners", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRemoveAllListeners: Self = this.set("removeAllListeners", js.undefined)
+    def setRemoveAllListenersUndefined: Self = StObject.set(x, "removeAllListeners", js.undefined)
   }
 }

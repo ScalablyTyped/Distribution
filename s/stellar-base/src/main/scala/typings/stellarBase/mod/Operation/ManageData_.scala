@@ -2,12 +2,16 @@ package typings.stellarBase.mod.Operation
 
 import typings.node.Buffer
 import typings.stellarBase.mod.OperationType.ManageData
+import typings.stellarBase.mod._Operation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManageData_ extends BaseOperation[ManageData] {
+trait ManageData_
+  extends BaseOperation[ManageData]
+     with _Operation {
   
   var name: String = js.native
   
@@ -23,27 +27,15 @@ object ManageData_ {
   }
   
   @scala.inline
-  implicit class ManageData_Ops[Self <: ManageData_] (val x: Self) extends AnyVal {
+  implicit class ManageData_MutableBuilder[Self <: ManageData_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Buffer): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

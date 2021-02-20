@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRecordBatchOutput extends js.Object {
+trait PutRecordBatchOutput extends StObject {
   
   /**
     * Indicates whether server-side encryption (SSE) was enabled during this operation.
@@ -31,33 +32,21 @@ object PutRecordBatchOutput {
   }
   
   @scala.inline
-  implicit class PutRecordBatchOutputOps[Self <: PutRecordBatchOutput] (val x: Self) extends AnyVal {
+  implicit class PutRecordBatchOutputMutableBuilder[Self <: PutRecordBatchOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncrypted(value: BooleanObject): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedPutCount(value: NonNegativeIntegerObject): Self = StObject.set(x, "FailedPutCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedPutCount(value: NonNegativeIntegerObject): Self = this.set("FailedPutCount", value.asInstanceOf[js.Any])
+    def setRequestResponses(value: PutRecordBatchResponseEntryList): Self = StObject.set(x, "RequestResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestResponsesVarargs(value: PutRecordBatchResponseEntry*): Self = this.set("RequestResponses", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequestResponses(value: PutRecordBatchResponseEntryList): Self = this.set("RequestResponses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncrypted(value: BooleanObject): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    def setRequestResponsesVarargs(value: PutRecordBatchResponseEntry*): Self = StObject.set(x, "RequestResponses", js.Array(value :_*))
   }
 }

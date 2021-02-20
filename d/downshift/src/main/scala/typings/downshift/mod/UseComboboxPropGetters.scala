@@ -1,11 +1,12 @@
 package typings.downshift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseComboboxPropGetters[Item] extends js.Object {
+trait UseComboboxPropGetters[Item] extends StObject {
   
   def getComboboxProps(): js.Any = js.native
   def getComboboxProps(options: js.UndefOr[scala.Nothing], otherOptions: GetPropsCommonOptions): js.Any = js.native

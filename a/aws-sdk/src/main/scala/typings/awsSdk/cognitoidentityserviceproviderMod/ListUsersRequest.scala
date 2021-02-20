@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUsersRequest extends js.Object {
+trait ListUsersRequest extends StObject {
   
   /**
     * An array of strings, where each string is the name of a user attribute to be returned for each user in the search results. If the array is null, all attributes are returned.
@@ -41,48 +42,36 @@ object ListUsersRequest {
   }
   
   @scala.inline
-  implicit class ListUsersRequestOps[Self <: ListUsersRequest] (val x: Self) extends AnyVal {
+  implicit class ListUsersRequestMutableBuilder[Self <: ListUsersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributesToGet(value: SearchedAttributeNamesListType): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesToGetVarargs(value: AttributeNameType*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
     
     @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    def setFilter(value: UserFilterType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesToGetVarargs(value: AttributeNameType*): Self = this.set("AttributesToGet", js.Array(value :_*))
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def setAttributesToGet(value: SearchedAttributeNamesListType): Self = this.set("AttributesToGet", value.asInstanceOf[js.Any])
+    def setLimit(value: QueryLimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributesToGet: Self = this.set("AttributesToGet", js.undefined)
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def setFilter(value: UserFilterType): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setPaginationToken(value: SearchPaginationTokenType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
     @scala.inline
-    def setLimit(value: QueryLimitType): Self = this.set("Limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
-    
-    @scala.inline
-    def setPaginationToken(value: SearchPaginationTokenType): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

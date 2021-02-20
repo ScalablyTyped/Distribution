@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageHistory extends js.Object {
+trait UsageHistory extends StObject {
   
   /**
     * The date and time the user last sent an envelope.
@@ -36,42 +37,30 @@ object UsageHistory {
   }
   
   @scala.inline
-  implicit class UsageHistoryOps[Self <: UsageHistory] (val x: Self) extends AnyVal {
+  implicit class UsageHistoryMutableBuilder[Self <: UsageHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastSentDateTime(value: String): Self = StObject.set(x, "lastSentDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastSentDateTimeUndefined: Self = StObject.set(x, "lastSentDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastSignedDateTime(value: String): Self = StObject.set(x, "lastSignedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSentDateTime(value: String): Self = this.set("lastSentDateTime", value.asInstanceOf[js.Any])
+    def setLastSignedDateTimeUndefined: Self = StObject.set(x, "lastSignedDateTime", js.undefined)
     
     @scala.inline
-    def deleteLastSentDateTime: Self = this.set("lastSentDateTime", js.undefined)
+    def setSentCount(value: String): Self = StObject.set(x, "sentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSignedDateTime(value: String): Self = this.set("lastSignedDateTime", value.asInstanceOf[js.Any])
+    def setSentCountUndefined: Self = StObject.set(x, "sentCount", js.undefined)
     
     @scala.inline
-    def deleteLastSignedDateTime: Self = this.set("lastSignedDateTime", js.undefined)
+    def setSignedCount(value: String): Self = StObject.set(x, "signedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentCount(value: String): Self = this.set("sentCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentCount: Self = this.set("sentCount", js.undefined)
-    
-    @scala.inline
-    def setSignedCount(value: String): Self = this.set("signedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedCount: Self = this.set("signedCount", js.undefined)
+    def setSignedCountUndefined: Self = StObject.set(x, "signedCount", js.undefined)
   }
 }

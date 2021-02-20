@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dictionary of options for the <Titanium.UI.Window.close> method.
   */
 @js.native
-trait closeWindowParams extends js.Object {
+trait closeWindowParams extends StObject {
   
   /**
     * Animation resource to use for the incoming activity.
@@ -44,48 +45,36 @@ object closeWindowParams {
   }
   
   @scala.inline
-  implicit class closeWindowParamsOps[Self <: closeWindowParams] (val x: Self) extends AnyVal {
+  implicit class closeWindowParamsMutableBuilder[Self <: closeWindowParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityEnterAnimation(value: Double): Self = StObject.set(x, "activityEnterAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityEnterAnimationUndefined: Self = StObject.set(x, "activityEnterAnimation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityExitAnimation(value: Double): Self = StObject.set(x, "activityExitAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityEnterAnimation(value: Double): Self = this.set("activityEnterAnimation", value.asInstanceOf[js.Any])
+    def setActivityExitAnimationUndefined: Self = StObject.set(x, "activityExitAnimation", js.undefined)
     
     @scala.inline
-    def deleteActivityEnterAnimation: Self = this.set("activityEnterAnimation", js.undefined)
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityExitAnimation(value: Double): Self = this.set("activityExitAnimation", value.asInstanceOf[js.Any])
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def deleteActivityExitAnimation: Self = this.set("activityExitAnimation", js.undefined)
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setAnimationStyle(value: Double): Self = StObject.set(x, "animationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
-    
-    @scala.inline
-    def setAnimationStyle(value: Double): Self = this.set("animationStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimationStyle: Self = this.set("animationStyle", js.undefined)
+    def setAnimationStyleUndefined: Self = StObject.set(x, "animationStyle", js.undefined)
   }
 }

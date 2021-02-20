@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllocateAddressRequest extends js.Object {
+trait AllocateAddressRequest extends StObject {
   
   /**
     * [EC2-VPC] The Elastic IP address to recover or an IPv4 address from an address pool.
@@ -46,54 +47,42 @@ object AllocateAddressRequest {
   }
   
   @scala.inline
-  implicit class AllocateAddressRequestOps[Self <: AllocateAddressRequest] (val x: Self) extends AnyVal {
+  implicit class AllocateAddressRequestMutableBuilder[Self <: AllocateAddressRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: PublicIpAddress): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomerOwnedIpv4Pool(value: String): Self = StObject.set(x, "CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: PublicIpAddress): Self = this.set("Address", value.asInstanceOf[js.Any])
+    def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "CustomerOwnedIpv4Pool", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("Address", js.undefined)
+    def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerOwnedIpv4Pool(value: String): Self = this.set("CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def deleteCustomerOwnedIpv4Pool: Self = this.set("CustomerOwnedIpv4Pool", js.undefined)
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainType): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setNetworkBorderGroup(value: String): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setNetworkBorderGroupUndefined: Self = StObject.set(x, "NetworkBorderGroup", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPublicIpv4Pool(value: Ipv4PoolEc2Id): Self = StObject.set(x, "PublicIpv4Pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkBorderGroup(value: String): Self = this.set("NetworkBorderGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkBorderGroup: Self = this.set("NetworkBorderGroup", js.undefined)
-    
-    @scala.inline
-    def setPublicIpv4Pool(value: Ipv4PoolEc2Id): Self = this.set("PublicIpv4Pool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIpv4Pool: Self = this.set("PublicIpv4Pool", js.undefined)
+    def setPublicIpv4PoolUndefined: Self = StObject.set(x, "PublicIpv4Pool", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.sharp.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverlayOptions extends js.Object {
+trait OverlayOptions extends StObject {
   
   /** how to blend this image with the image below. (optional, default `'over'`) */
   var blend: js.UndefOr[Blend] = js.native
@@ -44,72 +45,60 @@ object OverlayOptions {
   }
   
   @scala.inline
-  implicit class OverlayOptionsOps[Self <: OverlayOptions] (val x: Self) extends AnyVal {
+  implicit class OverlayOptionsMutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlend(value: Blend): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlendUndefined: Self = StObject.set(x, "blend", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlend(value: Blend): Self = this.set("blend", value.asInstanceOf[js.Any])
+    def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
     @scala.inline
-    def deleteBlend: Self = this.set("blend", js.undefined)
+    def setGravity(value: Gravity_): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDensity(value: Double): Self = this.set("density", value.asInstanceOf[js.Any])
+    def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
     @scala.inline
-    def deleteDensity: Self = this.set("density", js.undefined)
+    def setInput(value: String | Buffer | typings.sharp.anon.Create): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravity(value: Gravity_): Self = this.set("gravity", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteGravity: Self = this.set("gravity", js.undefined)
+    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: String | Buffer | typings.sharp.anon.Create): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setPremultiplied(value: Boolean): Self = StObject.set(x, "premultiplied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setPremultipliedUndefined: Self = StObject.set(x, "premultiplied", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setRaw(value: Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremultiplied(value: Boolean): Self = this.set("premultiplied", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deletePremultiplied: Self = this.set("premultiplied", js.undefined)
+    def setTile(value: Boolean): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Raw): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTile(value: Boolean): Self = this.set("tile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTile: Self = this.set("tile", js.undefined)
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

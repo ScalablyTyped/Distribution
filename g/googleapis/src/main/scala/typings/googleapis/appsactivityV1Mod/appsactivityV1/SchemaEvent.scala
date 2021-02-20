@@ -1,5 +1,6 @@
 package typings.googleapis.appsactivityV1Mod.appsactivityV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the changes associated with an action taken by a user.
   */
 @js.native
-trait SchemaEvent extends js.Object {
+trait SchemaEvent extends StObject {
   
   /**
     * Additional event types. Some events may have multiple types when multiple
@@ -69,78 +70,66 @@ object SchemaEvent {
   }
   
   @scala.inline
-  implicit class SchemaEventOps[Self <: SchemaEvent] (val x: Self) extends AnyVal {
+  implicit class SchemaEventMutableBuilder[Self <: SchemaEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalEventTypes(value: js.Array[String]): Self = StObject.set(x, "additionalEventTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalEventTypesUndefined: Self = StObject.set(x, "additionalEventTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalEventTypesVarargs(value: String*): Self = StObject.set(x, "additionalEventTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalEventTypesVarargs(value: String*): Self = this.set("additionalEventTypes", js.Array(value :_*))
+    def setEventTimeMillis(value: String): Self = StObject.set(x, "eventTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalEventTypes(value: js.Array[String]): Self = this.set("additionalEventTypes", value.asInstanceOf[js.Any])
+    def setEventTimeMillisUndefined: Self = StObject.set(x, "eventTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteAdditionalEventTypes: Self = this.set("additionalEventTypes", js.undefined)
+    def setFromUserDeletion(value: Boolean): Self = StObject.set(x, "fromUserDeletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTimeMillis(value: String): Self = this.set("eventTimeMillis", value.asInstanceOf[js.Any])
+    def setFromUserDeletionUndefined: Self = StObject.set(x, "fromUserDeletion", js.undefined)
     
     @scala.inline
-    def deleteEventTimeMillis: Self = this.set("eventTimeMillis", js.undefined)
+    def setMove(value: SchemaMove): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromUserDeletion(value: Boolean): Self = this.set("fromUserDeletion", value.asInstanceOf[js.Any])
+    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
     @scala.inline
-    def deleteFromUserDeletion: Self = this.set("fromUserDeletion", js.undefined)
+    def setPermissionChanges(value: js.Array[SchemaPermissionChange]): Self = StObject.set(x, "permissionChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: SchemaMove): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setPermissionChangesUndefined: Self = StObject.set(x, "permissionChanges", js.undefined)
     
     @scala.inline
-    def deleteMove: Self = this.set("move", js.undefined)
+    def setPermissionChangesVarargs(value: SchemaPermissionChange*): Self = StObject.set(x, "permissionChanges", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionChangesVarargs(value: SchemaPermissionChange*): Self = this.set("permissionChanges", js.Array(value :_*))
+    def setPrimaryEventType(value: String): Self = StObject.set(x, "primaryEventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionChanges(value: js.Array[SchemaPermissionChange]): Self = this.set("permissionChanges", value.asInstanceOf[js.Any])
+    def setPrimaryEventTypeUndefined: Self = StObject.set(x, "primaryEventType", js.undefined)
     
     @scala.inline
-    def deletePermissionChanges: Self = this.set("permissionChanges", js.undefined)
+    def setRename(value: SchemaRename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryEventType(value: String): Self = this.set("primaryEventType", value.asInstanceOf[js.Any])
+    def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
     
     @scala.inline
-    def deletePrimaryEventType: Self = this.set("primaryEventType", js.undefined)
+    def setTarget(value: SchemaTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRename(value: SchemaRename): Self = this.set("rename", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteRename: Self = this.set("rename", js.undefined)
+    def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: SchemaTarget): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

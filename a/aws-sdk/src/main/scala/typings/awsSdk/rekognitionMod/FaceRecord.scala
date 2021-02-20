@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FaceRecord extends js.Object {
+trait FaceRecord extends StObject {
   
   /**
     * Describes the face properties such as the bounding box, face ID, image ID of the input image, and external image ID that you assigned. 
@@ -26,30 +27,18 @@ object FaceRecord {
   }
   
   @scala.inline
-  implicit class FaceRecordOps[Self <: FaceRecord] (val x: Self) extends AnyVal {
+  implicit class FaceRecordMutableBuilder[Self <: FaceRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFace(value: Face): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceDetail(value: FaceDetail): Self = StObject.set(x, "FaceDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaceDetailUndefined: Self = StObject.set(x, "FaceDetail", js.undefined)
     
     @scala.inline
-    def setFace(value: Face): Self = this.set("Face", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFace: Self = this.set("Face", js.undefined)
-    
-    @scala.inline
-    def setFaceDetail(value: FaceDetail): Self = this.set("FaceDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaceDetail: Self = this.set("FaceDetail", js.undefined)
+    def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
   }
 }

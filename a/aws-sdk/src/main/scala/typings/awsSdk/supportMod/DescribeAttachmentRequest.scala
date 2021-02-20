@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAttachmentRequest extends js.Object {
+trait DescribeAttachmentRequest extends StObject {
   
   /**
     * The ID of the attachment to return. Attachment IDs are returned by the DescribeCommunications operation.
@@ -21,21 +22,9 @@ object DescribeAttachmentRequest {
   }
   
   @scala.inline
-  implicit class DescribeAttachmentRequestOps[Self <: DescribeAttachmentRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeAttachmentRequestMutableBuilder[Self <: DescribeAttachmentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttachmentId(value: AttachmentId): Self = this.set("attachmentId", value.asInstanceOf[js.Any])
+    def setAttachmentId(value: AttachmentId): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
   }
 }

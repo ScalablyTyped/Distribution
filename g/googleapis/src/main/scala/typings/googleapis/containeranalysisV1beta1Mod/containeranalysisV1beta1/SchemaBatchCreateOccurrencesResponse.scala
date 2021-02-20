@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for creating occurrences in batch.
   */
 @js.native
-trait SchemaBatchCreateOccurrencesResponse extends js.Object {
+trait SchemaBatchCreateOccurrencesResponse extends StObject {
   
   /**
     * The occurrences that were created.
@@ -24,27 +25,15 @@ object SchemaBatchCreateOccurrencesResponse {
   }
   
   @scala.inline
-  implicit class SchemaBatchCreateOccurrencesResponseOps[Self <: SchemaBatchCreateOccurrencesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchCreateOccurrencesResponseMutableBuilder[Self <: SchemaBatchCreateOccurrencesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOccurrences(value: js.Array[SchemaOccurrence]): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOccurrencesVarargs(value: SchemaOccurrence*): Self = this.set("occurrences", js.Array(value :_*))
-    
-    @scala.inline
-    def setOccurrences(value: js.Array[SchemaOccurrence]): Self = this.set("occurrences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOccurrences: Self = this.set("occurrences", js.undefined)
+    def setOccurrencesVarargs(value: SchemaOccurrence*): Self = StObject.set(x, "occurrences", js.Array(value :_*))
   }
 }

@@ -1,16 +1,17 @@
 package typings.xmldsigjs
 
-import typings.xmlCore.mod.XmlObject
+import typings.xmldsigjs.xmlObjectMod.XmlSignatureObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xmldsigjs/build/types/xml/canonicalization_method", JSImport.Namespace)
-@js.native
-object canonicalizationMethodMod extends js.Object {
+object canonicalizationMethodMod {
   
+  @JSImport("xmldsigjs/build/types/xml/canonicalization_method", "CanonicalizationMethod")
   @js.native
-  class CanonicalizationMethod () extends XmlObject {
+  class CanonicalizationMethod () extends XmlSignatureObject {
+    def this(properties: js.Object) = this()
     
     var Algorithm: String = js.native
   }

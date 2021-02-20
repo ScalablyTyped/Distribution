@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrinterVolumeSupported extends js.Object {
+trait PrinterVolumeSupported extends StObject {
   
   var `x-dimension`: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object PrinterVolumeSupported {
   }
   
   @scala.inline
-  implicit class PrinterVolumeSupportedOps[Self <: PrinterVolumeSupported] (val x: Self) extends AnyVal {
+  implicit class PrinterVolumeSupportedMutableBuilder[Self <: PrinterVolumeSupported] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setX-dimension`(value: Double): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setX-dimensionUndefined`: Self = StObject.set(x, "x-dimension", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setY-dimension`(value: Double): Self = StObject.set(x, "y-dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setX-dimension`(value: Double): Self = this.set("x-dimension", value.asInstanceOf[js.Any])
+    def `setY-dimensionUndefined`: Self = StObject.set(x, "y-dimension", js.undefined)
     
     @scala.inline
-    def `deleteX-dimension`: Self = this.set("x-dimension", js.undefined)
+    def `setZ-dimension`(value: Double): Self = StObject.set(x, "z-dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-dimension`(value: Double): Self = this.set("y-dimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteY-dimension`: Self = this.set("y-dimension", js.undefined)
-    
-    @scala.inline
-    def `setZ-dimension`(value: Double): Self = this.set("z-dimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteZ-dimension`: Self = this.set("z-dimension", js.undefined)
+    def `setZ-dimensionUndefined`: Self = StObject.set(x, "z-dimension", js.undefined)
   }
 }

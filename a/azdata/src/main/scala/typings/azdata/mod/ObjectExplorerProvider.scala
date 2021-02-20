@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,33 +37,21 @@ object ObjectExplorerProvider {
   }
   
   @scala.inline
-  implicit class ObjectExplorerProviderOps[Self <: ObjectExplorerProvider] (val x: Self) extends AnyVal {
+  implicit class ObjectExplorerProviderMutableBuilder[Self <: ObjectExplorerProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseSession(value: ObjectExplorerCloseSessionInfo => Thenable[ObjectExplorerCloseSessionResponse]): Self = StObject.set(x, "closeSession", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateNewSession(value: ConnectionInfo => Thenable[ObjectExplorerSessionResponse]): Self = StObject.set(x, "createNewSession", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegisterOnSessionCreated(value: js.Function1[/* response */ ObjectExplorerSession, _] => Unit): Self = StObject.set(x, "registerOnSessionCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloseSession(value: ObjectExplorerCloseSessionInfo => Thenable[ObjectExplorerCloseSessionResponse]): Self = this.set("closeSession", js.Any.fromFunction1(value))
+    def setRegisterOnSessionDisconnected(value: /* handler */ js.Function1[/* response */ ObjectExplorerSession, _] => Unit): Self = StObject.set(x, "registerOnSessionDisconnected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateNewSession(value: ConnectionInfo => Thenable[ObjectExplorerSessionResponse]): Self = this.set("createNewSession", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterOnSessionCreated(value: js.Function1[/* response */ ObjectExplorerSession, _] => Unit): Self = this.set("registerOnSessionCreated", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterOnSessionDisconnected(value: /* handler */ js.Function1[/* response */ ObjectExplorerSession, _] => Unit): Self = this.set("registerOnSessionDisconnected", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRegisterOnSessionDisconnected: Self = this.set("registerOnSessionDisconnected", js.undefined)
+    def setRegisterOnSessionDisconnectedUndefined: Self = StObject.set(x, "registerOnSessionDisconnected", js.undefined)
   }
 }

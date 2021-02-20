@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StateAndNotificationPayload extends js.Object {
+trait StateAndNotificationPayload extends StObject {
   
   /** The devices for updating state and sending notifications. */
   var devices: js.UndefOr[ReportStateAndNotificationDevice] = js.native
@@ -19,24 +20,12 @@ object StateAndNotificationPayload {
   }
   
   @scala.inline
-  implicit class StateAndNotificationPayloadOps[Self <: StateAndNotificationPayload] (val x: Self) extends AnyVal {
+  implicit class StateAndNotificationPayloadMutableBuilder[Self <: StateAndNotificationPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevices(value: ReportStateAndNotificationDevice): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDevices(value: ReportStateAndNotificationDevice): Self = this.set("devices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevices: Self = this.set("devices", js.undefined)
+    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
   }
 }

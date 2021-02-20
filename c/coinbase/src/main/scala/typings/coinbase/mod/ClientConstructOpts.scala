@@ -1,11 +1,12 @@
 package typings.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientConstructOpts extends js.Object {
+trait ClientConstructOpts extends StObject {
   
   /**
     * OAuth2 access token
@@ -36,42 +37,30 @@ object ClientConstructOpts {
   }
   
   @scala.inline
-  implicit class ClientConstructOptsOps[Self <: ClientConstructOpts] (val x: Self) extends AnyVal {
+  implicit class ClientConstructOptsMutableBuilder[Self <: ClientConstructOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setApiSecret(value: String): Self = StObject.set(x, "apiSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    def setApiSecretUndefined: Self = StObject.set(x, "apiSecret", js.undefined)
     
     @scala.inline
-    def deleteApiKey: Self = this.set("apiKey", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiSecret(value: String): Self = this.set("apiSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApiSecret: Self = this.set("apiSecret", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTrafficMirrorSessionsResult extends js.Object {
+trait DescribeTrafficMirrorSessionsResult extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. The value is null when there are no more results to return.
@@ -26,33 +27,21 @@ object DescribeTrafficMirrorSessionsResult {
   }
   
   @scala.inline
-  implicit class DescribeTrafficMirrorSessionsResultOps[Self <: DescribeTrafficMirrorSessionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeTrafficMirrorSessionsResultMutableBuilder[Self <: DescribeTrafficMirrorSessionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrafficMirrorSessions(value: TrafficMirrorSessionSet): Self = StObject.set(x, "TrafficMirrorSessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTrafficMirrorSessionsUndefined: Self = StObject.set(x, "TrafficMirrorSessions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTrafficMirrorSessionsVarargs(value: TrafficMirrorSession*): Self = this.set("TrafficMirrorSessions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrafficMirrorSessions(value: TrafficMirrorSessionSet): Self = this.set("TrafficMirrorSessions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficMirrorSessions: Self = this.set("TrafficMirrorSessions", js.undefined)
+    def setTrafficMirrorSessionsVarargs(value: TrafficMirrorSession*): Self = StObject.set(x, "TrafficMirrorSessions", js.Array(value :_*))
   }
 }

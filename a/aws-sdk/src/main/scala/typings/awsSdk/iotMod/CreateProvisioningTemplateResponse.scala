@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProvisioningTemplateResponse extends js.Object {
+trait CreateProvisioningTemplateResponse extends StObject {
   
   /**
     * The default version of the fleet provisioning template.
@@ -31,36 +32,24 @@ object CreateProvisioningTemplateResponse {
   }
   
   @scala.inline
-  implicit class CreateProvisioningTemplateResponseOps[Self <: CreateProvisioningTemplateResponse] (val x: Self) extends AnyVal {
+  implicit class CreateProvisioningTemplateResponseMutableBuilder[Self <: CreateProvisioningTemplateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultVersionId(value: TemplateVersionId): Self = StObject.set(x, "defaultVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultVersionIdUndefined: Self = StObject.set(x, "defaultVersionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplateArn(value: TemplateArn): Self = StObject.set(x, "templateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVersionId(value: TemplateVersionId): Self = this.set("defaultVersionId", value.asInstanceOf[js.Any])
+    def setTemplateArnUndefined: Self = StObject.set(x, "templateArn", js.undefined)
     
     @scala.inline
-    def deleteDefaultVersionId: Self = this.set("defaultVersionId", js.undefined)
+    def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateArn(value: TemplateArn): Self = this.set("templateArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateArn: Self = this.set("templateArn", js.undefined)
-    
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = this.set("templateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateName: Self = this.set("templateName", js.undefined)
+    def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
   }
 }

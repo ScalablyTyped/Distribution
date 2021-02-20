@@ -1,14 +1,15 @@
 package typings.objectMap
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("object-map", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("object-map", JSImport.Namespace)
+  @js.native
   def apply[TInput, TOutput, TThis](
     target: StringDictionary[TInput],
     callback: js.ThisFunction3[
@@ -19,6 +20,8 @@ object mod extends js.Object {
       TOutput
     ]
   ): StringDictionary[TOutput] = js.native
+  @JSImport("object-map", JSImport.Namespace)
+  @js.native
   def apply[TInput, TOutput, TThis](
     target: StringDictionary[TInput],
     callback: js.ThisFunction3[

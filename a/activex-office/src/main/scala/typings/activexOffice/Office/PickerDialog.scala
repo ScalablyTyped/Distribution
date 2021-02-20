@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PickerDialog extends js.Object {
+trait PickerDialog extends StObject {
   
   val Application: js.Any = js.native
   

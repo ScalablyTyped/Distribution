@@ -14,12 +14,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`ocean-current-m`
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-scalar`
 import typings.arcgisJsApi.arcgisJsApiStrings.`single-arrow`
 import typings.arcgisJsApi.arcgisJsApiStrings.`wind-speed`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VectorFieldRendererProperties extends js.Object {
+trait VectorFieldRendererProperties extends StObject {
   
   /**
     * Attribute field presenting the magnitude.
@@ -67,53 +68,41 @@ object VectorFieldRendererProperties {
   }
   
   @scala.inline
-  implicit class VectorFieldRendererPropertiesOps[Self <: VectorFieldRendererProperties] (val x: Self) extends AnyVal {
+  implicit class VectorFieldRendererPropertiesMutableBuilder[Self <: VectorFieldRendererProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeField(value: Magnitude): Self = StObject.set(x, "attributeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeFieldUndefined: Self = StObject.set(x, "attributeField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowRepresentation(value: `flow-from` | `flow-to`): Self = StObject.set(x, "flowRepresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeField(value: Magnitude): Self = this.set("attributeField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeField: Self = this.set("attributeField", js.undefined)
-    
-    @scala.inline
-    def setFlowRepresentation(value: `flow-from` | `flow-to`): Self = this.set("flowRepresentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlowRepresentation: Self = this.set("flowRepresentation", js.undefined)
+    def setFlowRepresentationUndefined: Self = StObject.set(x, "flowRepresentation", js.undefined)
     
     @scala.inline
     def setStyle(
       value: `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-speed`
-    ): Self = this.set("style", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setSymbolTileSize(value: Double): Self = this.set("symbolTileSize", value.asInstanceOf[js.Any])
+    def setSymbolTileSize(value: Double): Self = StObject.set(x, "symbolTileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSymbolTileSize: Self = this.set("symbolTileSize", js.undefined)
+    def setSymbolTileSizeUndefined: Self = StObject.set(x, "symbolTileSize", js.undefined)
     
     @scala.inline
-    def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = this.set("visualVariables", js.Array(value :_*))
+    def setVisualVariables(value: js.Array[VisualVariableProperties]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisualVariables(value: js.Array[VisualVariableProperties]): Self = this.set("visualVariables", value.asInstanceOf[js.Any])
+    def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
     
     @scala.inline
-    def deleteVisualVariables: Self = this.set("visualVariables", js.undefined)
+    def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
   }
 }

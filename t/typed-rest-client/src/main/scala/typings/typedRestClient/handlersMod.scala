@@ -1,13 +1,13 @@
 package typings.typedRestClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-rest-client/Handlers", JSImport.Namespace)
-@js.native
-object handlersMod extends js.Object {
+object handlersMod {
   
+  @JSImport("typed-rest-client/Handlers", "BasicCredentialHandler")
   @js.native
   class BasicCredentialHandler protected ()
     extends typings.typedRestClient.mod.BasicCredentialHandler {
@@ -15,6 +15,7 @@ object handlersMod extends js.Object {
     def this(username: String, password: String, allowCrossOriginAuthentication: Boolean) = this()
   }
   
+  @JSImport("typed-rest-client/Handlers", "BearerCredentialHandler")
   @js.native
   class BearerCredentialHandler protected ()
     extends typings.typedRestClient.bearertokenMod.BearerCredentialHandler {
@@ -22,6 +23,7 @@ object handlersMod extends js.Object {
     def this(token: String, allowCrossOriginAuthentication: Boolean) = this()
   }
   
+  @JSImport("typed-rest-client/Handlers", "NtlmCredentialHandler")
   @js.native
   class NtlmCredentialHandler protected ()
     extends typings.typedRestClient.ntlmMod.NtlmCredentialHandler {
@@ -31,6 +33,7 @@ object handlersMod extends js.Object {
     def this(username: String, password: String, workstation: String, domain: String) = this()
   }
   
+  @JSImport("typed-rest-client/Handlers", "PersonalAccessTokenCredentialHandler")
   @js.native
   class PersonalAccessTokenCredentialHandler protected ()
     extends typings.typedRestClient.personalaccesstokenMod.PersonalAccessTokenCredentialHandler {

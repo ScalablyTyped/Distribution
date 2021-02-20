@@ -1,11 +1,12 @@
 package typings.apolloReportingProtobuf.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFieldStat extends js.Object {
+trait IFieldStat extends StObject {
   
   /** FieldStat count */
   var count: js.UndefOr[Double | Null] = js.native
@@ -31,66 +32,54 @@ object IFieldStat {
   }
   
   @scala.inline
-  implicit class IFieldStatOps[Self <: IFieldStat] (val x: Self) extends AnyVal {
+  implicit class IFieldStatMutableBuilder[Self <: IFieldStat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountNull: Self = StObject.set(x, "count", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setErrorsCount(value: Double): Self = StObject.set(x, "errorsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setErrorsCountNull: Self = StObject.set(x, "errorsCount", null)
     
     @scala.inline
-    def setCountNull: Self = this.set("count", null)
+    def setErrorsCountUndefined: Self = StObject.set(x, "errorsCount", js.undefined)
     
     @scala.inline
-    def setErrorsCount(value: Double): Self = this.set("errorsCount", value.asInstanceOf[js.Any])
+    def setLatencyCount(value: js.Array[Double]): Self = StObject.set(x, "latencyCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorsCount: Self = this.set("errorsCount", js.undefined)
+    def setLatencyCountNull: Self = StObject.set(x, "latencyCount", null)
     
     @scala.inline
-    def setErrorsCountNull: Self = this.set("errorsCount", null)
+    def setLatencyCountUndefined: Self = StObject.set(x, "latencyCount", js.undefined)
     
     @scala.inline
-    def setLatencyCountVarargs(value: Double*): Self = this.set("latencyCount", js.Array(value :_*))
+    def setLatencyCountVarargs(value: Double*): Self = StObject.set(x, "latencyCount", js.Array(value :_*))
     
     @scala.inline
-    def setLatencyCount(value: js.Array[Double]): Self = this.set("latencyCount", value.asInstanceOf[js.Any])
+    def setRequestsWithErrorsCount(value: Double): Self = StObject.set(x, "requestsWithErrorsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLatencyCount: Self = this.set("latencyCount", js.undefined)
+    def setRequestsWithErrorsCountNull: Self = StObject.set(x, "requestsWithErrorsCount", null)
     
     @scala.inline
-    def setLatencyCountNull: Self = this.set("latencyCount", null)
+    def setRequestsWithErrorsCountUndefined: Self = StObject.set(x, "requestsWithErrorsCount", js.undefined)
     
     @scala.inline
-    def setRequestsWithErrorsCount(value: Double): Self = this.set("requestsWithErrorsCount", value.asInstanceOf[js.Any])
+    def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestsWithErrorsCount: Self = this.set("requestsWithErrorsCount", js.undefined)
+    def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
     
     @scala.inline
-    def setRequestsWithErrorsCountNull: Self = this.set("requestsWithErrorsCount", null)
-    
-    @scala.inline
-    def setReturnType(value: String): Self = this.set("returnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnType: Self = this.set("returnType", js.undefined)
-    
-    @scala.inline
-    def setReturnTypeNull: Self = this.set("returnType", null)
+    def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a set of goals that were reached in an activity.
   */
 @js.native
-trait SchemaGoalSetData extends js.Object {
+trait SchemaGoalSetData extends StObject {
   
   /**
     * All the goals that were reached in the current activity.
@@ -24,27 +25,15 @@ object SchemaGoalSetData {
   }
   
   @scala.inline
-  implicit class SchemaGoalSetDataOps[Self <: SchemaGoalSetData] (val x: Self) extends AnyVal {
+  implicit class SchemaGoalSetDataMutableBuilder[Self <: SchemaGoalSetData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoals(value: js.Array[SchemaGoalData]): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGoalsVarargs(value: SchemaGoalData*): Self = this.set("goals", js.Array(value :_*))
-    
-    @scala.inline
-    def setGoals(value: js.Array[SchemaGoalData]): Self = this.set("goals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoals: Self = this.set("goals", js.undefined)
+    def setGoalsVarargs(value: SchemaGoalData*): Self = StObject.set(x, "goals", js.Array(value :_*))
   }
 }

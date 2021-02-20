@@ -3,12 +3,13 @@ package typings.hapi.anon
 import typings.hapi.mod.Lifecycle.ReturnValue
 import typings.hapi.mod.ResponseToolkit
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailAction extends js.Object {
+trait FailAction extends StObject {
   
   var failAction: js.UndefOr[typings.hapi.mod.Lifecycle.FailAction] = js.native
   
@@ -23,35 +24,23 @@ object FailAction {
   }
   
   @scala.inline
-  implicit class FailActionOps[Self <: FailAction] (val x: Self) extends AnyVal {
+  implicit class FailActionMutableBuilder[Self <: FailAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailAction(value: typings.hapi.mod.Lifecycle.FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFailActionFunction3(
       value: (/* request */ typings.hapi.mod.Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
-    ): Self = this.set("failAction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFailAction(value: typings.hapi.mod.Lifecycle.FailAction): Self = this.set("failAction", value.asInstanceOf[js.Any])
+    def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
     @scala.inline
-    def deleteFailAction: Self = this.set("failAction", js.undefined)
+    def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParse(value: Boolean): Self = this.set("parse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParse: Self = this.set("parse", js.undefined)
+    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
   }
 }

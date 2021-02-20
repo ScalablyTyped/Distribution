@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object PopupVisibleElements {
   }
   
   @scala.inline
-  implicit class PopupVisibleElementsOps[Self <: PopupVisibleElements] (val x: Self) extends AnyVal {
+  implicit class PopupVisibleElementsMutableBuilder[Self <: PopupVisibleElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureNavigation(value: Boolean): Self = StObject.set(x, "featureNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseButton(value: Boolean): Self = this.set("closeButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloseButton: Self = this.set("closeButton", js.undefined)
-    
-    @scala.inline
-    def setFeatureNavigation(value: Boolean): Self = this.set("featureNavigation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatureNavigation: Self = this.set("featureNavigation", js.undefined)
+    def setFeatureNavigationUndefined: Self = StObject.set(x, "featureNavigation", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,66 +71,54 @@ object ISignInProperties {
   }
   
   @scala.inline
-  implicit class ISignInPropertiesOps[Self <: ISignInProperties] (val x: Self) extends AnyVal {
+  implicit class ISignInPropertiesMutableBuilder[Self <: ISignInProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
     @scala.inline
-    def deleteBrand: Self = this.set("brand", js.undefined)
+    def setOnloggedin(value: js.Function): Self = StObject.set(x, "onloggedin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnerror(value: js.Function): Self = this.set("onerror", value.asInstanceOf[js.Any])
+    def setOnloggedinUndefined: Self = StObject.set(x, "onloggedin", js.undefined)
     
     @scala.inline
-    def deleteOnerror: Self = this.set("onerror", js.undefined)
+    def setOnloggedout(value: js.Function): Self = StObject.set(x, "onloggedout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnloggedin(value: js.Function): Self = this.set("onloggedin", value.asInstanceOf[js.Any])
+    def setOnloggedoutUndefined: Self = StObject.set(x, "onloggedout", js.undefined)
     
     @scala.inline
-    def deleteOnloggedin: Self = this.set("onloggedin", js.undefined)
+    def setSign_in_text(value: String): Self = StObject.set(x, "sign_in_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnloggedout(value: js.Function): Self = this.set("onloggedout", value.asInstanceOf[js.Any])
+    def setSign_in_textUndefined: Self = StObject.set(x, "sign_in_text", js.undefined)
     
     @scala.inline
-    def deleteOnloggedout: Self = this.set("onloggedout", js.undefined)
+    def setSign_out_text(value: String): Self = StObject.set(x, "sign_out_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSign_in_text(value: String): Self = this.set("sign_in_text", value.asInstanceOf[js.Any])
+    def setSign_out_textUndefined: Self = StObject.set(x, "sign_out_text", js.undefined)
     
     @scala.inline
-    def deleteSign_in_text: Self = this.set("sign_in_text", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSign_out_text(value: String): Self = this.set("sign_out_text", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteSign_out_text: Self = this.set("sign_out_text", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

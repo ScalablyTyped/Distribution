@@ -1,11 +1,12 @@
 package typings.box2d.Box2D.Dynamics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2FilterData extends js.Object {
+trait b2FilterData extends StObject {
   
   /**
     * Creates a copy of the filter data.
@@ -37,30 +38,18 @@ object b2FilterData {
   }
   
   @scala.inline
-  implicit class b2FilterDataOps[Self <: b2FilterData] (val x: Self) extends AnyVal {
+  implicit class b2FilterDataMutableBuilder[Self <: b2FilterData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryBits(value: Double): Self = StObject.set(x, "categoryBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopy(value: () => b2FilterData): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => b2FilterData): Self = this.set("Copy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCategoryBits(value: Double): Self = this.set("categoryBits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupIndex(value: Double): Self = this.set("groupIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaskBits(value: Double): Self = this.set("maskBits", value.asInstanceOf[js.Any])
+    def setMaskBits(value: Double): Self = StObject.set(x, "maskBits", value.asInstanceOf[js.Any])
   }
 }

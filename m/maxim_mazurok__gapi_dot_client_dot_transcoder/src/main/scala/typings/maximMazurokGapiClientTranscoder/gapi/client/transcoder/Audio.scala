@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Audio extends js.Object {
+trait Audio extends StObject {
   
   /** Enable boosting high frequency components. The default is `false`. */
   var highBoost: js.UndefOr[Boolean] = js.native
@@ -29,36 +30,24 @@ object Audio {
   }
   
   @scala.inline
-  implicit class AudioOps[Self <: Audio] (val x: Self) extends AnyVal {
+  implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighBoost(value: Boolean): Self = StObject.set(x, "highBoost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighBoostUndefined: Self = StObject.set(x, "highBoost", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLowBoost(value: Boolean): Self = StObject.set(x, "lowBoost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighBoost(value: Boolean): Self = this.set("highBoost", value.asInstanceOf[js.Any])
+    def setLowBoostUndefined: Self = StObject.set(x, "lowBoost", js.undefined)
     
     @scala.inline
-    def deleteHighBoost: Self = this.set("highBoost", js.undefined)
+    def setLufs(value: Double): Self = StObject.set(x, "lufs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowBoost(value: Boolean): Self = this.set("lowBoost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowBoost: Self = this.set("lowBoost", js.undefined)
-    
-    @scala.inline
-    def setLufs(value: Double): Self = this.set("lufs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLufs: Self = this.set("lufs", js.undefined)
+    def setLufsUndefined: Self = StObject.set(x, "lufs", js.undefined)
   }
 }

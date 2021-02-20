@@ -2,13 +2,16 @@ package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.ValueUndefined
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/picker-view/demo/basic", JSImport.Namespace)
-@js.native
-object pickerViewDemoBasicMod extends js.Object {
+object pickerViewDemoBasicMod {
+  
+  @JSImport("@ant-design/react-native/lib/picker-view/demo/basic", JSImport.Default)
+  @js.native
+  class default () extends PickerViewExample
   
   @js.native
   trait PickerViewExample
@@ -19,7 +22,4 @@ object pickerViewDemoBasicMod extends js.Object {
     @JSName("state")
     var state_PickerViewExample: ValueUndefined = js.native
   }
-  
-  @js.native
-  class default () extends PickerViewExample
 }

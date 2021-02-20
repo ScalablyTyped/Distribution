@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,33 +37,21 @@ object SupportingWidgetDefaultsFeatureForm {
   }
   
   @scala.inline
-  implicit class SupportingWidgetDefaultsFeatureFormOps[Self <: SupportingWidgetDefaultsFeatureForm] (val x: Self) extends AnyVal {
+  implicit class SupportingWidgetDefaultsFeatureFormMutableBuilder[Self <: SupportingWidgetDefaultsFeatureForm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldConfig(value: js.Array[FieldConfig]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldConfigVarargs(value: FieldConfig*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
     
     @scala.inline
-    def setFieldConfigVarargs(value: FieldConfig*): Self = this.set("fieldConfig", js.Array(value :_*))
+    def setGroupDisplay(value: String): Self = StObject.set(x, "groupDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldConfig(value: js.Array[FieldConfig]): Self = this.set("fieldConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldConfig: Self = this.set("fieldConfig", js.undefined)
-    
-    @scala.inline
-    def setGroupDisplay(value: String): Self = this.set("groupDisplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupDisplay: Self = this.set("groupDisplay", js.undefined)
+    def setGroupDisplayUndefined: Self = StObject.set(x, "groupDisplay", js.undefined)
   }
 }

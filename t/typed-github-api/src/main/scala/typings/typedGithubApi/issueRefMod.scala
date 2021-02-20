@@ -4,14 +4,14 @@ import typings.typedGithubApi.githubRefMod.GitHubRef
 import typings.typedGithubApi.interfacesIssueMod.IssueRef
 import typings.typedGithubApi.interfacesRepositoryMod.RepositoryRef
 import typings.typedGithubApi.repositoryRefMod.RepositoryRefClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-github-api/dist/issue-ref", JSImport.Namespace)
-@js.native
-object issueRefMod extends js.Object {
+object issueRefMod {
   
+  @JSImport("typed-github-api/dist/issue-ref", "IssueRefClass")
   @js.native
   class IssueRefClass protected ()
     extends GitHubRef

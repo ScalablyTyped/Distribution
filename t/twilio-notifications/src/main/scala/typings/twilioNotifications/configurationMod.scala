@@ -1,15 +1,15 @@
 package typings.twilioNotifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-notifications/lib/configuration", JSImport.Namespace)
-@js.native
-object configurationMod extends js.Object {
+object configurationMod {
   
+  @JSImport("twilio-notifications/lib/configuration", "Configuration")
   @js.native
-  class Configuration protected () extends js.Object {
+  class Configuration protected () extends StObject {
     def this(token: String) = this()
     def this(token: String, options: js.Any) = this()
     

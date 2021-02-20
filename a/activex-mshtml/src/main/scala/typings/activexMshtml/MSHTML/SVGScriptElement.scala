@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGScriptElement extends js.Object {
+trait SVGScriptElement extends StObject {
   
   @JSName("MSHTML.SVGScriptElement_typekey")
   var MSHTMLDotSVGScriptElement_typekey: SVGScriptElement = js.native
@@ -44,42 +45,30 @@ object SVGScriptElement {
   }
   
   @scala.inline
-  implicit class SVGScriptElementOps[Self <: SVGScriptElement] (val x: Self) extends AnyVal {
+  implicit class SVGScriptElementMutableBuilder[Self <: SVGScriptElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHref(value: SVGAnimatedString): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotSVGScriptElement_typekey(value: SVGScriptElement): Self = this.set("MSHTML.SVGScriptElement_typekey", value.asInstanceOf[js.Any])
+    def setMSHTMLDotSVGScriptElement_typekey(value: SVGScriptElement): Self = StObject.set(x, "MSHTML.SVGScriptElement_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = this.set("externalResourcesRequired", value.asInstanceOf[js.Any])
+    def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusable(value: SVGAnimatedEnumeration): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: SVGAnimatedString): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerSVGElement(value: ISVGSVGElement): Self = this.set("ownerSVGElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportElement(value: ISVGElement): Self = this.set("viewportElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXmlbase(value: String): Self = this.set("xmlbase", value.asInstanceOf[js.Any])
+    def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
   }
 }

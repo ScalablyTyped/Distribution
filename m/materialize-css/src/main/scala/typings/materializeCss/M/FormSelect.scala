@@ -3,13 +3,14 @@ package typings.materializeCss.M
 import typings.std.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<FormSelectOptions> * / any */ @js.native
-trait FormSelect extends js.Object {
+trait FormSelect extends StObject {
   
   /**
     * Instance of the dropdown plugin for this select
@@ -57,36 +58,24 @@ object FormSelect {
   }
   
   @scala.inline
-  implicit class FormSelectOps[Self <: FormSelect] (val x: Self) extends AnyVal {
+  implicit class FormSelectMutableBuilder[Self <: FormSelect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropdown(value: Dropdown): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropdownOptions(value: HTMLUListElement): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSelectedValues(value: () => js.Array[String]): Self = StObject.set(x, "getSelectedValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDropdown(value: Dropdown): Self = this.set("dropdown", value.asInstanceOf[js.Any])
+    def setInput(value: HTMLInputElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdownOptions(value: HTMLUListElement): Self = this.set("dropdownOptions", value.asInstanceOf[js.Any])
+    def setIsMultiple(value: Boolean): Self = StObject.set(x, "isMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSelectedValues(value: () => js.Array[String]): Self = this.set("getSelectedValues", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInput(value: HTMLInputElement): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsMultiple(value: Boolean): Self = this.set("isMultiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapper(value: Element): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    def setWrapper(value: Element): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
   }
 }

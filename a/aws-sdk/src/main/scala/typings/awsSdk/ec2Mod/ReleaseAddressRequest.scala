@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseAddressRequest extends js.Object {
+trait ReleaseAddressRequest extends StObject {
   
   /**
     * [EC2-VPC] The allocation ID. Required for EC2-VPC.
@@ -36,42 +37,30 @@ object ReleaseAddressRequest {
   }
   
   @scala.inline
-  implicit class ReleaseAddressRequestOps[Self <: ReleaseAddressRequest] (val x: Self) extends AnyVal {
+  implicit class ReleaseAddressRequestMutableBuilder[Self <: ReleaseAddressRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationId(value: AllocationId): Self = this.set("AllocationId", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def deleteAllocationId: Self = this.set("AllocationId", js.undefined)
+    def setNetworkBorderGroup(value: String): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setNetworkBorderGroupUndefined: Self = StObject.set(x, "NetworkBorderGroup", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkBorderGroup(value: String): Self = this.set("NetworkBorderGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkBorderGroup: Self = this.set("NetworkBorderGroup", js.undefined)
-    
-    @scala.inline
-    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
   }
 }

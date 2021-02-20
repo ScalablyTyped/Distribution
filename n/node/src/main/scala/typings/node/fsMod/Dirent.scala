@@ -1,12 +1,13 @@
 package typings.node.fsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "Dirent")
 @js.native
-class Dirent () extends js.Object {
+class Dirent () extends StObject {
   
   def isBlockDevice(): Boolean = js.native
   

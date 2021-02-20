@@ -1,5 +1,6 @@
 package typings.loginWithAmazonSdkBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains optional error-related members; these will be defined if there was an error.
   */
 @js.native
-trait AuthorizeRequestBase[T /* <: AuthorizeRequest */] extends js.Object {
+trait AuthorizeRequestBase[T /* <: AuthorizeRequest */] extends StObject {
   
   /**
     * A short error code indicating why the authorization failed.

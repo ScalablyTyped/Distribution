@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckBox extends js.Object {
+trait CheckBox extends StObject {
   
   var checkBox: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object CheckBox {
   }
   
   @scala.inline
-  implicit class CheckBoxOps[Self <: CheckBox] (val x: Self) extends AnyVal {
+  implicit class CheckBoxMutableBuilder[Self <: CheckBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckBox(value: scala.Double): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCombo(value: scala.Double): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckBox(value: scala.Double): Self = this.set("checkBox", value.asInstanceOf[js.Any])
+    def setPasswordBox(value: scala.Double): Self = StObject.set(x, "passwordBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCombo(value: scala.Double): Self = this.set("combo", value.asInstanceOf[js.Any])
+    def setRadioButtons(value: scala.Double): Self = StObject.set(x, "radioButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setTextArea(value: scala.Double): Self = StObject.set(x, "textArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordBox(value: scala.Double): Self = this.set("passwordBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadioButtons(value: scala.Double): Self = this.set("radioButtons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextArea(value: scala.Double): Self = this.set("textArea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextBox(value: scala.Double): Self = this.set("textBox", value.asInstanceOf[js.Any])
+    def setTextBox(value: scala.Double): Self = StObject.set(x, "textBox", value.asInstanceOf[js.Any])
   }
 }

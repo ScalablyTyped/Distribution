@@ -1,6 +1,7 @@
 package typings.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,9 +55,7 @@ class Method protected () extends ReflectionObject {
   var `type`: String = js.native
 }
 /* static members */
-@JSImport("@apollo/protobufjs", "Method")
-@js.native
-object Method extends js.Object {
+object Method {
   
   /**
     * Constructs a method from a method descriptor.
@@ -65,5 +64,7 @@ object Method extends js.Object {
     * @returns Created method
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("@apollo/protobufjs", "Method.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IMethod): Method = js.native
 }

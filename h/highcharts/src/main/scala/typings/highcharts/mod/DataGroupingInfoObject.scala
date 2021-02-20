@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataGroupingInfoObject extends js.Object {
+trait DataGroupingInfoObject extends StObject {
   
   var length: Double = js.native
   
@@ -22,30 +23,18 @@ object DataGroupingInfoObject {
   }
   
   @scala.inline
-  implicit class DataGroupingInfoObjectOps[Self <: DataGroupingInfoObject] (val x: Self) extends AnyVal {
+  implicit class DataGroupingInfoObjectMutableBuilder[Self <: DataGroupingInfoObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptions(value: SeriesOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: SeriesOptionsType): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

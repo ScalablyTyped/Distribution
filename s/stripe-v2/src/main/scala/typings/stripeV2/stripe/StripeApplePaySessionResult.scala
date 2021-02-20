@@ -1,11 +1,12 @@
 package typings.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StripeApplePaySessionResult extends js.Object {
+trait StripeApplePaySessionResult extends StObject {
   
   var shippingContact: js.UndefOr[StripeApplePayPaymentContact] = js.native
   
@@ -22,33 +23,21 @@ object StripeApplePaySessionResult {
   }
   
   @scala.inline
-  implicit class StripeApplePaySessionResultOps[Self <: StripeApplePaySessionResult] (val x: Self) extends AnyVal {
+  implicit class StripeApplePaySessionResultMutableBuilder[Self <: StripeApplePaySessionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShippingContact(value: StripeApplePayPaymentContact): Self = StObject.set(x, "shippingContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShippingContactUndefined: Self = StObject.set(x, "shippingContact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShippingMethod(value: StripeApplePayShippingMethod): Self = StObject.set(x, "shippingMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: StripeCardTokenResponse): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setShippingMethodUndefined: Self = StObject.set(x, "shippingMethod", js.undefined)
     
     @scala.inline
-    def setShippingContact(value: StripeApplePayPaymentContact): Self = this.set("shippingContact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingContact: Self = this.set("shippingContact", js.undefined)
-    
-    @scala.inline
-    def setShippingMethod(value: StripeApplePayShippingMethod): Self = this.set("shippingMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingMethod: Self = this.set("shippingMethod", js.undefined)
+    def setToken(value: StripeCardTokenResponse): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

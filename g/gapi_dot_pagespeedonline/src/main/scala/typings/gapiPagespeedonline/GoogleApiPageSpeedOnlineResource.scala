@@ -3,12 +3,13 @@ package typings.gapiPagespeedonline
 import typings.gapiPagespeedonline.anon.CssResponsebytes
 import typings.gapiPagespeedonline.anon.Locale
 import typings.gapiPagespeedonline.anon.Major
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiPageSpeedOnlineResource extends js.Object {
+trait GoogleApiPageSpeedOnlineResource extends StObject {
   
   /**
     * Localized PageSpeed results. Contains a ruleResults entry for each PageSpeed rule instantiated and run by the server.
@@ -74,48 +75,36 @@ object GoogleApiPageSpeedOnlineResource {
   }
   
   @scala.inline
-  implicit class GoogleApiPageSpeedOnlineResourceOps[Self <: GoogleApiPageSpeedOnlineResource] (val x: Self) extends AnyVal {
+  implicit class GoogleApiPageSpeedOnlineResourceMutableBuilder[Self <: GoogleApiPageSpeedOnlineResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormattedResults(value: Locale): Self = StObject.set(x, "formattedResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidRules(value: js.Array[String]): Self = StObject.set(x, "invalidRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedResults(value: Locale): Self = this.set("formattedResults", value.asInstanceOf[js.Any])
+    def setInvalidRulesVarargs(value: String*): Self = StObject.set(x, "invalidRules", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidRulesVarargs(value: String*): Self = this.set("invalidRules", js.Array(value :_*))
+    def setPageStats(value: CssResponsebytes): Self = StObject.set(x, "pageStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidRules(value: js.Array[String]): Self = this.set("invalidRules", value.asInstanceOf[js.Any])
+    def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageStats(value: CssResponsebytes): Self = this.set("pageStats", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseCode(value: Double): Self = this.set("responseCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Major): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Major): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

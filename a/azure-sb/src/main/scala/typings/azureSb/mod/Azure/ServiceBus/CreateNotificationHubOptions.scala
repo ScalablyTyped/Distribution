@@ -1,12 +1,13 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.ICreateNotificationHubOptions> */
 @js.native
-trait CreateNotificationHubOptions extends js.Object {
+trait CreateNotificationHubOptions extends StObject {
   
   var apns: js.UndefOr[Dictionary[String]] = js.native
   
@@ -25,42 +26,30 @@ object CreateNotificationHubOptions {
   }
   
   @scala.inline
-  implicit class CreateNotificationHubOptionsOps[Self <: CreateNotificationHubOptions] (val x: Self) extends AnyVal {
+  implicit class CreateNotificationHubOptionsMutableBuilder[Self <: CreateNotificationHubOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApns(value: Dictionary[String]): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcm(value: Dictionary[String]): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApns(value: Dictionary[String]): Self = this.set("apns", value.asInstanceOf[js.Any])
+    def setGcmUndefined: Self = StObject.set(x, "gcm", js.undefined)
     
     @scala.inline
-    def deleteApns: Self = this.set("apns", js.undefined)
+    def setMpns(value: Dictionary[String]): Self = StObject.set(x, "mpns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcm(value: Dictionary[String]): Self = this.set("gcm", value.asInstanceOf[js.Any])
+    def setMpnsUndefined: Self = StObject.set(x, "mpns", js.undefined)
     
     @scala.inline
-    def deleteGcm: Self = this.set("gcm", js.undefined)
+    def setWns(value: Dictionary[String]): Self = StObject.set(x, "wns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpns(value: Dictionary[String]): Self = this.set("mpns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMpns: Self = this.set("mpns", js.undefined)
-    
-    @scala.inline
-    def setWns(value: Dictionary[String]): Self = this.set("wns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWns: Self = this.set("wns", js.undefined)
+    def setWnsUndefined: Self = StObject.set(x, "wns", js.undefined)
   }
 }

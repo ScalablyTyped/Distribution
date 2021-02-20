@@ -1,12 +1,13 @@
 package typings.sharepoint.SP.UI
 
 import typings.sharepoint.SP.HtmlBuilder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandBar extends js.Object {
+trait CommandBar extends StObject {
   
   def addCommand(action: Command): Unit = js.native
   
@@ -51,51 +52,39 @@ object CommandBar {
   }
   
   @scala.inline
-  implicit class CommandBarOps[Self <: CommandBar] (val x: Self) extends AnyVal {
+  implicit class CommandBarMutableBuilder[Self <: CommandBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCommand(value: Command => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachEvents(value: () => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindCommandByName(value: String => Command): Self = StObject.set(x, "findCommandByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCommand(value: Command => Unit): Self = this.set("addCommand", js.Any.fromFunction1(value))
+    def setGet_commands(value: () => js.Array[Command]): Self = StObject.set(x, "get_commands", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttachEvents(value: () => Unit): Self = this.set("attachEvents", js.Any.fromFunction0(value))
+    def setGet_dropDownThreshold(value: () => Double): Self = StObject.set(x, "get_dropDownThreshold", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindCommandByName(value: String => Command): Self = this.set("findCommandByName", js.Any.fromFunction1(value))
+    def setGet_elementID(value: () => String): Self = StObject.set(x, "get_elementID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_commands(value: () => js.Array[Command]): Self = this.set("get_commands", js.Any.fromFunction0(value))
+    def setGet_overrideClass(value: () => String): Self = StObject.set(x, "get_overrideClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_dropDownThreshold(value: () => Double): Self = this.set("get_dropDownThreshold", js.Any.fromFunction0(value))
+    def setInsertCommand(value: (Command, Double) => Unit): Self = StObject.set(x, "insertCommand", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGet_elementID(value: () => String): Self = this.set("get_elementID", js.Any.fromFunction0(value))
+    def setRender(value: HtmlBuilder => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_overrideClass(value: () => String): Self = this.set("get_overrideClass", js.Any.fromFunction0(value))
+    def setSet_dropDownThreshold(value: Double => Double): Self = StObject.set(x, "set_dropDownThreshold", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertCommand(value: (Command, Double) => Unit): Self = this.set("insertCommand", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRender(value: HtmlBuilder => Unit): Self = this.set("render", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_dropDownThreshold(value: Double => Double): Self = this.set("set_dropDownThreshold", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_overrideClass(value: String => String): Self = this.set("set_overrideClass", js.Any.fromFunction1(value))
+    def setSet_overrideClass(value: String => String): Self = StObject.set(x, "set_overrideClass", js.Any.fromFunction1(value))
   }
 }

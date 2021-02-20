@@ -1,12 +1,13 @@
 package typings.firebase.mod.default.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "firestore.DocumentSnapshot")
+@JSImport("firebase", "default.firestore.DocumentSnapshot")
 @js.native
-class DocumentSnapshot[T] protected () extends js.Object {
+class DocumentSnapshot[T] protected () extends StObject {
   
   /**
     * Retrieves all fields in the document as an Object. Returns 'undefined' if

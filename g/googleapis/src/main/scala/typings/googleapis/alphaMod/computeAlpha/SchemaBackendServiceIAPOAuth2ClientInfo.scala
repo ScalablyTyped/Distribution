@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaBackendServiceIAPOAuth2ClientInfo extends js.Object {
+trait SchemaBackendServiceIAPOAuth2ClientInfo extends StObject {
   
   /**
     * Application name to be used in OAuth consent screen.
@@ -32,36 +33,24 @@ object SchemaBackendServiceIAPOAuth2ClientInfo {
   }
   
   @scala.inline
-  implicit class SchemaBackendServiceIAPOAuth2ClientInfoOps[Self <: SchemaBackendServiceIAPOAuth2ClientInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaBackendServiceIAPOAuth2ClientInfoMutableBuilder[Self <: SchemaBackendServiceIAPOAuth2ClientInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: String): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
+    def setDeveloperEmailAddress(value: String): Self = StObject.set(x, "developerEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientName(value: String): Self = this.set("clientName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientName: Self = this.set("clientName", js.undefined)
-    
-    @scala.inline
-    def setDeveloperEmailAddress(value: String): Self = this.set("developerEmailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeveloperEmailAddress: Self = this.set("developerEmailAddress", js.undefined)
+    def setDeveloperEmailAddressUndefined: Self = StObject.set(x, "developerEmailAddress", js.undefined)
   }
 }

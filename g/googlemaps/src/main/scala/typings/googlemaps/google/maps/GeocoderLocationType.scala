@@ -1,14 +1,15 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeocoderLocationType extends js.Object
+sealed trait GeocoderLocationType extends StObject
 @JSGlobal("google.maps.GeocoderLocationType")
 @js.native
-object GeocoderLocationType extends js.Object {
+object GeocoderLocationType extends StObject {
   
   @js.native
   sealed trait APPROXIMATE extends GeocoderLocationType

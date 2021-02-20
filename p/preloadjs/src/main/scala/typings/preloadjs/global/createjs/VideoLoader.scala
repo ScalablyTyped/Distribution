@@ -1,5 +1,6 @@
 package typings.preloadjs.global.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,9 @@ class VideoLoader protected ()
   def this(loadItem: js.Object, preferXHR: Boolean) = this()
 }
 /* static members */
-@JSGlobal("createjs.VideoLoader")
-@js.native
-object VideoLoader extends js.Object {
+object VideoLoader {
   
+  @JSGlobal("createjs.VideoLoader.canLoadItem")
+  @js.native
   def canLoadItem(item: js.Object): Boolean = js.native
 }

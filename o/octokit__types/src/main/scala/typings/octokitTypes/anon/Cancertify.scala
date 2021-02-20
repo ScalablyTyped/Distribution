@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cancertify extends js.Object {
+trait Cancertify extends StObject {
   
   var can_certify: Boolean = js.native
   
@@ -53,60 +54,48 @@ object Cancertify {
   }
   
   @scala.inline
-  implicit class CancertifyOps[Self <: Cancertify] (val x: Self) extends AnyVal {
+  implicit class CancertifyMutableBuilder[Self <: Cancertify] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCan_certify(value: Boolean): Self = StObject.set(x, "can_certify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCan_encrypt_comms(value: Boolean): Self = StObject.set(x, "can_encrypt_comms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCan_encrypt_storage(value: Boolean): Self = StObject.set(x, "can_encrypt_storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_certify(value: Boolean): Self = this.set("can_certify", value.asInstanceOf[js.Any])
+    def setCan_sign(value: Boolean): Self = StObject.set(x, "can_sign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_encrypt_comms(value: Boolean): Self = this.set("can_encrypt_comms", value.asInstanceOf[js.Any])
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_encrypt_storage(value: Boolean): Self = this.set("can_encrypt_storage", value.asInstanceOf[js.Any])
+    def setEmails(value: js.Array[_]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_sign(value: Boolean): Self = this.set("can_sign", value.asInstanceOf[js.Any])
+    def setEmailsVarargs(value: js.Any*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailsVarargs(value: js.Any*): Self = this.set("emails", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmails(value: js.Array[_]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires_at(value: String): Self = this.set("expires_at", value.asInstanceOf[js.Any])
+    def setPrimary_key_id(value: Double): Self = StObject.set(x, "primary_key_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey_id(value: String): Self = this.set("key_id", value.asInstanceOf[js.Any])
+    def setSubkeys(value: js.Array[_]): Self = StObject.set(x, "subkeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary_key_id(value: Double): Self = this.set("primary_key_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublic_key(value: String): Self = this.set("public_key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubkeysVarargs(value: js.Any*): Self = this.set("subkeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubkeys(value: js.Array[_]): Self = this.set("subkeys", value.asInstanceOf[js.Any])
+    def setSubkeysVarargs(value: js.Any*): Self = StObject.set(x, "subkeys", js.Array(value :_*))
   }
 }

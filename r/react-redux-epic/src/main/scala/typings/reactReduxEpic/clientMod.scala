@@ -2,13 +2,14 @@ package typings.reactReduxEpic
 
 import typings.react.mod.ReactElement
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-redux-epic/client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
+object clientMod {
   
+  @JSImport("react-redux-epic/client", "render")
+  @js.native
   def render(element: ReactElement, container: Element): js.Any = js.native
 }

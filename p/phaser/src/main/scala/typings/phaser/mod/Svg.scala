@@ -1,6 +1,7 @@
 package typings.phaser.mod
 
 import typings.std.SVGPathElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Svg ()
   extends typings.phaser.MatterJS.Svg
-/* static members */
-@JSImport("matter", "Svg")
-@js.native
-object Svg extends js.Object {
+object Svg {
   
   /**
     * Converts an SVG path into an array of vector points.
@@ -31,5 +29,8 @@ object Svg extends js.Object {
     * @param {Number} [sampleLength=15]
     * @return {Vector[]} points
     */
+  /* static member */
+  @JSImport("matter", "Svg.pathToVertices")
+  @js.native
   def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[typings.phaser.MatterJS.Vector] = js.native
 }

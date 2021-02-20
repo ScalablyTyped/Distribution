@@ -1,12 +1,15 @@
 package typings.knockoutPunches
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var punches: KnockoutPunchesStatic = js.native
+  @JSGlobal("punches")
+  @js.native
+  def punches: KnockoutPunchesStatic = js.native
+  @scala.inline
+  def punches_=(x: KnockoutPunchesStatic): Unit = js.Dynamic.global.updateDynamic("punches")(x.asInstanceOf[js.Any])
 }

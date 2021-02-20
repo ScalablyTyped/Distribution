@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,16 +38,18 @@ class Block () extends IBlock {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "Block")
-@js.native
-object Block extends js.Object {
+object Block {
   
   /**
     * Creates a new Block instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Block instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "Block.create")
+  @js.native
   def create(): Block = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Block.create")
+  @js.native
   def create(properties: IBlock): Block = js.native
   
   /**
@@ -57,9 +60,17 @@ object Block extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "Block.decode")
+  @js.native
   def decode(reader: Reader): Block = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Block.decode")
+  @js.native
   def decode(reader: Reader, length: Double): Block = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Block.decode")
+  @js.native
   def decode(reader: Uint8Array): Block = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Block.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): Block = js.native
   
   /**
@@ -69,7 +80,11 @@ object Block extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "Block.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): Block = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Block.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): Block = js.native
   
   /**
@@ -78,7 +93,11 @@ object Block extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "Block.encode")
+  @js.native
   def encode(message: IBlock): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Block.encode")
+  @js.native
   def encode(message: IBlock, writer: Writer): Writer = js.native
   
   /**
@@ -87,7 +106,11 @@ object Block extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "Block.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IBlock): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Block.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IBlock, writer: Writer): Writer = js.native
   
   /**
@@ -95,6 +118,8 @@ object Block extends js.Object {
     * @param object Plain object
     * @returns Block
     */
+  @JSImport("sawtooth-sdk/protobuf", "Block.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): Block = js.native
   
   /**
@@ -103,7 +128,11 @@ object Block extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "Block.toObject")
+  @js.native
   def toObject(message: Block): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "Block.toObject")
+  @js.native
   def toObject(message: Block, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -111,5 +140,7 @@ object Block extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "Block.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

@@ -2,6 +2,7 @@ package typings.vexflow.Vex
 
 import typings.std.Node
 import typings.vexflow.anon.Width
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Helper interface for handling the different rendering contexts (i.e. CanvasContext, RaphaelContext, SVGContext). Not part of VexFlow!
   */
 @js.native
-trait IRenderContext extends js.Object {
+trait IRenderContext extends StObject {
   
   def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, antiClockwise: Boolean): IRenderContext = js.native
   

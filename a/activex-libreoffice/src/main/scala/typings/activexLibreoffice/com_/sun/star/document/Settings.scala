@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.i18n.XForbiddenCharacters
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -205,105 +206,93 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddExternalLeading(value: Boolean): Self = StObject.set(x, "AddExternalLeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyUserData(value: Boolean): Self = StObject.set(x, "ApplyUserData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoCalculate(value: Boolean): Self = StObject.set(x, "AutoCalculate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddExternalLeading(value: Boolean): Self = this.set("AddExternalLeading", value.asInstanceOf[js.Any])
+    def setBitmapTableURL(value: String): Self = StObject.set(x, "BitmapTableURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyUserData(value: Boolean): Self = this.set("ApplyUserData", value.asInstanceOf[js.Any])
+    def setCharacterCompressionType(value: Double): Self = StObject.set(x, "CharacterCompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCalculate(value: Boolean): Self = this.set("AutoCalculate", value.asInstanceOf[js.Any])
+    def setColorTableURL(value: String): Self = StObject.set(x, "ColorTableURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmapTableURL(value: String): Self = this.set("BitmapTableURL", value.asInstanceOf[js.Any])
+    def setCurrentDatabaseCommand(value: String): Self = StObject.set(x, "CurrentDatabaseCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterCompressionType(value: Double): Self = this.set("CharacterCompressionType", value.asInstanceOf[js.Any])
+    def setCurrentDatabaseCommandType(value: Double): Self = StObject.set(x, "CurrentDatabaseCommandType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorTableURL(value: String): Self = this.set("ColorTableURL", value.asInstanceOf[js.Any])
+    def setCurrentDatabaseDataSource(value: String): Self = StObject.set(x, "CurrentDatabaseDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDatabaseCommand(value: String): Self = this.set("CurrentDatabaseCommand", value.asInstanceOf[js.Any])
+    def setDashTableURL(value: String): Self = StObject.set(x, "DashTableURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDatabaseCommandType(value: Double): Self = this.set("CurrentDatabaseCommandType", value.asInstanceOf[js.Any])
+    def setDefaultTabStop(value: Double): Self = StObject.set(x, "DefaultTabStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDatabaseDataSource(value: String): Self = this.set("CurrentDatabaseDataSource", value.asInstanceOf[js.Any])
+    def setEmbedFonts(value: Boolean): Self = StObject.set(x, "EmbedFonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashTableURL(value: String): Self = this.set("DashTableURL", value.asInstanceOf[js.Any])
+    def setEmbedSystemFonts(value: Boolean): Self = StObject.set(x, "EmbedSystemFonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTabStop(value: Double): Self = this.set("DefaultTabStop", value.asInstanceOf[js.Any])
+    def setFieldAutoUpdate(value: Boolean): Self = StObject.set(x, "FieldAutoUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedFonts(value: Boolean): Self = this.set("EmbedFonts", value.asInstanceOf[js.Any])
+    def setForbiddenCharacters(value: XForbiddenCharacters): Self = StObject.set(x, "ForbiddenCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedSystemFonts(value: Boolean): Self = this.set("EmbedSystemFonts", value.asInstanceOf[js.Any])
+    def setGradientTableURL(value: String): Self = StObject.set(x, "GradientTableURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldAutoUpdate(value: Boolean): Self = this.set("FieldAutoUpdate", value.asInstanceOf[js.Any])
+    def setHatchTableURL(value: String): Self = StObject.set(x, "HatchTableURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForbiddenCharacters(value: XForbiddenCharacters): Self = this.set("ForbiddenCharacters", value.asInstanceOf[js.Any])
+    def setIsKernAsianPunctuation(value: Boolean): Self = StObject.set(x, "IsKernAsianPunctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientTableURL(value: String): Self = this.set("GradientTableURL", value.asInstanceOf[js.Any])
+    def setIsPrintBooklet(value: Boolean): Self = StObject.set(x, "IsPrintBooklet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHatchTableURL(value: String): Self = this.set("HatchTableURL", value.asInstanceOf[js.Any])
+    def setIsPrintBookletBack(value: Boolean): Self = StObject.set(x, "IsPrintBookletBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsKernAsianPunctuation(value: Boolean): Self = this.set("IsKernAsianPunctuation", value.asInstanceOf[js.Any])
+    def setIsPrintBookletFront(value: Boolean): Self = StObject.set(x, "IsPrintBookletFront", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrintBooklet(value: Boolean): Self = this.set("IsPrintBooklet", value.asInstanceOf[js.Any])
+    def setLineEndTableURL(value: String): Self = StObject.set(x, "LineEndTableURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrintBookletBack(value: Boolean): Self = this.set("IsPrintBookletBack", value.asInstanceOf[js.Any])
+    def setLinkUpdateMode(value: Double): Self = StObject.set(x, "LinkUpdateMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrintBookletFront(value: Boolean): Self = this.set("IsPrintBookletFront", value.asInstanceOf[js.Any])
+    def setPrintQuality(value: Double): Self = StObject.set(x, "PrintQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineEndTableURL(value: String): Self = this.set("LineEndTableURL", value.asInstanceOf[js.Any])
+    def setPrinterIndependentLayout(value: Double): Self = StObject.set(x, "PrinterIndependentLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkUpdateMode(value: Double): Self = this.set("LinkUpdateMode", value.asInstanceOf[js.Any])
+    def setPrinterName(value: String): Self = StObject.set(x, "PrinterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintQuality(value: Double): Self = this.set("PrintQuality", value.asInstanceOf[js.Any])
+    def setPrinterSetup(value: SafeArray[Double]): Self = StObject.set(x, "PrinterSetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrinterIndependentLayout(value: Double): Self = this.set("PrinterIndependentLayout", value.asInstanceOf[js.Any])
+    def setSaveVersionOnClose(value: Boolean): Self = StObject.set(x, "SaveVersionOnClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrinterName(value: String): Self = this.set("PrinterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrinterSetup(value: SafeArray[Double]): Self = this.set("PrinterSetup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaveVersionOnClose(value: Boolean): Self = this.set("SaveVersionOnClose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateFromTemplate(value: Boolean): Self = this.set("UpdateFromTemplate", value.asInstanceOf[js.Any])
+    def setUpdateFromTemplate(value: Boolean): Self = StObject.set(x, "UpdateFromTemplate", value.asInstanceOf[js.Any])
   }
 }

@@ -4,31 +4,35 @@ import typings.maximMazurokGapiClientAdexperiencereport.gapi.client.adexperience
 import typings.maximMazurokGapiClientAdexperiencereport.gapi.client.adexperiencereport.ViolatingSitesResource
 import typings.maximMazurokGapiClientAdexperiencereport.maximMazurokGapiClientAdexperiencereportStrings.adexperiencereport
 import typings.maximMazurokGapiClientAdexperiencereport.maximMazurokGapiClientAdexperiencereportStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Ad Experience Report API v1 */
-      def load(name: adexperiencereport, version: v1): js.Thenable[Unit] = js.native
-      def load(name: adexperiencereport, version: v1, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object adexperiencereport extends js.Object {
+      object adexperiencereport {
         
+        @JSGlobal("gapi.client.adexperiencereport.sites")
+        @js.native
         val sites: SitesResource = js.native
         
+        @JSGlobal("gapi.client.adexperiencereport.violatingSites")
+        @js.native
         val violatingSites: ViolatingSitesResource = js.native
       }
+      
+      /** Load Ad Experience Report API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: adexperiencereport, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: adexperiencereport, version: v1, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

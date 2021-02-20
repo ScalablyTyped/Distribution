@@ -1,12 +1,13 @@
 package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiGateway extends js.Object {
+trait ApiGateway extends StObject {
   
   var apiKeySourceType: js.UndefOr[String] = js.native
   
@@ -37,81 +38,69 @@ object ApiGateway {
   }
   
   @scala.inline
-  implicit class ApiGatewayOps[Self <: ApiGateway] (val x: Self) extends AnyVal {
+  implicit class ApiGatewayMutableBuilder[Self <: ApiGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKeySourceType(value: String): Self = StObject.set(x, "apiKeySourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiKeySourceTypeUndefined: Self = StObject.set(x, "apiKeySourceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinaryMediaTypes(value: js.Array[String]): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKeySourceType(value: String): Self = this.set("apiKeySourceType", value.asInstanceOf[js.Any])
+    def setBinaryMediaTypesUndefined: Self = StObject.set(x, "binaryMediaTypes", js.undefined)
     
     @scala.inline
-    def deleteApiKeySourceType: Self = this.set("apiKeySourceType", js.undefined)
+    def setBinaryMediaTypesVarargs(value: String*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
     
     @scala.inline
-    def setBinaryMediaTypesVarargs(value: String*): Self = this.set("binaryMediaTypes", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryMediaTypes(value: js.Array[String]): Self = this.set("binaryMediaTypes", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBinaryMediaTypes: Self = this.set("binaryMediaTypes", js.undefined)
+    def setMetrics(value: Boolean): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setMinimumCompressionSize(value: Double | String): Self = StObject.set(x, "minimumCompressionSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: Boolean): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setMinimumCompressionSizeUndefined: Self = StObject.set(x, "minimumCompressionSize", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumCompressionSize(value: Double | String): Self = this.set("minimumCompressionSize", value.asInstanceOf[js.Any])
+    def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
     
     @scala.inline
-    def deleteMinimumCompressionSize: Self = this.set("minimumCompressionSize", js.undefined)
+    def setRestApiResources(value: StringDictionary[String]): Self = StObject.set(x, "restApiResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    def setRestApiResourcesUndefined: Self = StObject.set(x, "restApiResources", js.undefined)
     
     @scala.inline
-    def deleteRestApiId: Self = this.set("restApiId", js.undefined)
+    def setRestApiRootResourceId(value: String): Self = StObject.set(x, "restApiRootResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestApiResources(value: StringDictionary[String]): Self = this.set("restApiResources", value.asInstanceOf[js.Any])
+    def setRestApiRootResourceIdUndefined: Self = StObject.set(x, "restApiRootResourceId", js.undefined)
     
     @scala.inline
-    def deleteRestApiResources: Self = this.set("restApiResources", js.undefined)
+    def setShouldStartNameWithService(value: Boolean): Self = StObject.set(x, "shouldStartNameWithService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestApiRootResourceId(value: String): Self = this.set("restApiRootResourceId", value.asInstanceOf[js.Any])
+    def setShouldStartNameWithServiceUndefined: Self = StObject.set(x, "shouldStartNameWithService", js.undefined)
     
     @scala.inline
-    def deleteRestApiRootResourceId: Self = this.set("restApiRootResourceId", js.undefined)
+    def setWebsocketApiId(value: js.Any): Self = StObject.set(x, "websocketApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldStartNameWithService(value: Boolean): Self = this.set("shouldStartNameWithService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShouldStartNameWithService: Self = this.set("shouldStartNameWithService", js.undefined)
-    
-    @scala.inline
-    def setWebsocketApiId(value: js.Any): Self = this.set("websocketApiId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsocketApiId: Self = this.set("websocketApiId", js.undefined)
+    def setWebsocketApiIdUndefined: Self = StObject.set(x, "websocketApiId", js.undefined)
   }
 }

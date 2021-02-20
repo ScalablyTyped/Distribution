@@ -1,5 +1,6 @@
 package typings.webcola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +12,21 @@ class Solver protected ()
   def this(vs: js.Array[typings.webcola.vpscMod.Variable], cs: js.Array[typings.webcola.vpscMod.Constraint]) = this()
 }
 /* static members */
-@JSImport("webcola", "Solver")
-@js.native
-object Solver extends js.Object {
+object Solver {
   
-  var LAGRANGIAN_TOLERANCE: Double = js.native
+  @JSImport("webcola", "Solver")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var ZERO_UPPERBOUND: Double = js.native
+  @JSImport("webcola", "Solver.LAGRANGIAN_TOLERANCE")
+  @js.native
+  def LAGRANGIAN_TOLERANCE: Double = js.native
+  @scala.inline
+  def LAGRANGIAN_TOLERANCE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAGRANGIAN_TOLERANCE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("webcola", "Solver.ZERO_UPPERBOUND")
+  @js.native
+  def ZERO_UPPERBOUND: Double = js.native
+  @scala.inline
+  def ZERO_UPPERBOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO_UPPERBOUND")(x.asInstanceOf[js.Any])
 }

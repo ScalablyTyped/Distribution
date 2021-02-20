@@ -5,6 +5,7 @@ import typings.webcl.webclNumbers.`0x1`
 import typings.webcl.webclNumbers.`0x2`
 import typings.webcl.webclNumbers.`0x4`
 import typings.webcl.webclNumbers.`0x8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x8`
   - typings.webcl.webclNumbers._0xFFFFFFFF
 */
-trait DeviceTypeBits extends js.Object
+trait DeviceTypeBits extends StObject
 object DeviceTypeBits {
   
   @scala.inline

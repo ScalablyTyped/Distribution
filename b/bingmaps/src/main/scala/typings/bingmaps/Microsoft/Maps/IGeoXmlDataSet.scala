@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeoXmlDataSet extends js.Object {
+trait IGeoXmlDataSet extends StObject {
   
   /**
     * An array of layers that are in the XML document.
@@ -41,57 +42,45 @@ object IGeoXmlDataSet {
   }
   
   @scala.inline
-  implicit class IGeoXmlDataSetOps[Self <: IGeoXmlDataSet] (val x: Self) extends AnyVal {
+  implicit class IGeoXmlDataSetMutableBuilder[Self <: IGeoXmlDataSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayers(value: js.Array[Layer | GroundOverlay]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayersVarargs(value: (Layer | GroundOverlay)*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
     @scala.inline
-    def setLayersVarargs(value: (Layer | GroundOverlay)*): Self = this.set("layers", js.Array(value :_*))
+    def setScreenOverlays(value: js.Array[KmlScreenOverlay]): Self = StObject.set(x, "screenOverlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: js.Array[Layer | GroundOverlay]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setScreenOverlaysUndefined: Self = StObject.set(x, "screenOverlays", js.undefined)
     
     @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setScreenOverlaysVarargs(value: KmlScreenOverlay*): Self = StObject.set(x, "screenOverlays", js.Array(value :_*))
     
     @scala.inline
-    def setScreenOverlaysVarargs(value: KmlScreenOverlay*): Self = this.set("screenOverlays", js.Array(value :_*))
+    def setShapes(value: js.Array[IPrimitive]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenOverlays(value: js.Array[KmlScreenOverlay]): Self = this.set("screenOverlays", value.asInstanceOf[js.Any])
+    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
     @scala.inline
-    def deleteScreenOverlays: Self = this.set("screenOverlays", js.undefined)
+    def setShapesVarargs(value: IPrimitive*): Self = StObject.set(x, "shapes", js.Array(value :_*))
     
     @scala.inline
-    def setShapesVarargs(value: IPrimitive*): Self = this.set("shapes", js.Array(value :_*))
+    def setStats(value: IGeoXmlStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapes(value: js.Array[IPrimitive]): Self = this.set("shapes", value.asInstanceOf[js.Any])
+    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
     @scala.inline
-    def deleteShapes: Self = this.set("shapes", js.undefined)
+    def setSummary(value: IGeoXmlSummaryMetadata): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStats(value: IGeoXmlStats): Self = this.set("stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStats: Self = this.set("stats", js.undefined)
-    
-    @scala.inline
-    def setSummary(value: IGeoXmlSummaryMetadata): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

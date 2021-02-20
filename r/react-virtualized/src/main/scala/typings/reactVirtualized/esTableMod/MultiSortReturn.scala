@@ -1,11 +1,12 @@
 package typings.reactVirtualized.esTableMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiSortReturn extends js.Object {
+trait MultiSortReturn extends StObject {
   
   /**
     * Sort property to be passed to the `Table` component.
@@ -33,30 +34,18 @@ object MultiSortReturn {
   }
   
   @scala.inline
-  implicit class MultiSortReturnOps[Self <: MultiSortReturn] (val x: Self) extends AnyVal {
+  implicit class MultiSortReturnMutableBuilder[Self <: MultiSortReturn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSort(value: SortParams => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSortBy(value: js.Array[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSortByVarargs(value: String*): Self = StObject.set(x, "sortBy", js.Array(value :_*))
     
     @scala.inline
-    def setSort(value: SortParams => Unit): Self = this.set("sort", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSortByVarargs(value: String*): Self = this.set("sortBy", js.Array(value :_*))
-    
-    @scala.inline
-    def setSortBy(value: js.Array[String]): Self = this.set("sortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortDirection(value: SortDirectionMap): Self = this.set("sortDirection", value.asInstanceOf[js.Any])
+    def setSortDirection(value: SortDirectionMap): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
   }
 }

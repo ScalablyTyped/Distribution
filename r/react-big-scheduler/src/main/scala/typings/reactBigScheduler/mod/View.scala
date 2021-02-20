@@ -1,11 +1,12 @@
 package typings.reactBigScheduler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait View extends js.Object {
+trait View extends StObject {
   
   var isEventPerspective: Boolean = js.native
   
@@ -24,33 +25,21 @@ object View {
   }
   
   @scala.inline
-  implicit class ViewOps[Self <: View] (val x: Self) extends AnyVal {
+  implicit class ViewMutableBuilder[Self <: View] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsEventPerspective(value: Boolean): Self = StObject.set(x, "isEventPerspective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowAgenda(value: Boolean): Self = StObject.set(x, "showAgenda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setViewName(value: String): Self = StObject.set(x, "viewName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEventPerspective(value: Boolean): Self = this.set("isEventPerspective", value.asInstanceOf[js.Any])
+    def setViewNameUndefined: Self = StObject.set(x, "viewName", js.undefined)
     
     @scala.inline
-    def setShowAgenda(value: Boolean): Self = this.set("showAgenda", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewType(value: ViewTypes): Self = this.set("viewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewName(value: String): Self = this.set("viewName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewName: Self = this.set("viewName", js.undefined)
+    def setViewType(value: ViewTypes): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
   }
 }

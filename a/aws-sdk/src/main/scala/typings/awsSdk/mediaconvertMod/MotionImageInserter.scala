@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MotionImageInserter extends js.Object {
+trait MotionImageInserter extends StObject {
   
   /**
     * If your motion graphic asset is a .mov file, keep this setting unspecified. If your motion graphic asset is a series of .png files, specify the frame rate of the overlay in frames per second, as a fraction. For example, specify 24 fps as 24/1. Make sure that the number of images in your series matches the frame rate and your intended overlay duration. For example, if you want a 30-second overlay at 30 fps, you should have 900 .png images. This overlay frame rate doesn't need to match the frame rate of the underlying video.
@@ -46,54 +47,42 @@ object MotionImageInserter {
   }
   
   @scala.inline
-  implicit class MotionImageInserterOps[Self <: MotionImageInserter] (val x: Self) extends AnyVal {
+  implicit class MotionImageInserterMutableBuilder[Self <: MotionImageInserter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFramerate(value: MotionImageInsertionFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInput(value: stringMin14Max1285PatternS3Mov09PngHttpsMov09Png): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramerate(value: MotionImageInsertionFramerate): Self = this.set("Framerate", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
     @scala.inline
-    def deleteFramerate: Self = this.set("Framerate", js.undefined)
+    def setInsertionMode(value: MotionImageInsertionMode): Self = StObject.set(x, "InsertionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: stringMin14Max1285PatternS3Mov09PngHttpsMov09Png): Self = this.set("Input", value.asInstanceOf[js.Any])
+    def setInsertionModeUndefined: Self = StObject.set(x, "InsertionMode", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("Input", js.undefined)
+    def setOffset(value: MotionImageInsertionOffset): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertionMode(value: MotionImageInsertionMode): Self = this.set("InsertionMode", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "Offset", js.undefined)
     
     @scala.inline
-    def deleteInsertionMode: Self = this.set("InsertionMode", js.undefined)
+    def setPlayback(value: MotionImagePlayback): Self = StObject.set(x, "Playback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: MotionImageInsertionOffset): Self = this.set("Offset", value.asInstanceOf[js.Any])
+    def setPlaybackUndefined: Self = StObject.set(x, "Playback", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("Offset", js.undefined)
+    def setStartTime(value: stringMin11Max11Pattern01D20305D205D): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayback(value: MotionImagePlayback): Self = this.set("Playback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayback: Self = this.set("Playback", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: stringMin11Max11Pattern01D20305D205D): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

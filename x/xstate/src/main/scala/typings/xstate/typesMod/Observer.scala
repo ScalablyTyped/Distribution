@@ -1,11 +1,12 @@
 package typings.xstate.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Observer[T] extends js.Object {
+trait Observer[T] extends StObject {
   
   def complete(): Unit = js.native
   
@@ -22,27 +23,15 @@ object Observer {
   }
   
   @scala.inline
-  implicit class ObserverOps[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+  implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setError(value: js.Any => Unit): Self = this.set("error", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNext(value: T => Unit): Self = this.set("next", js.Any.fromFunction1(value))
+    def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
   }
 }

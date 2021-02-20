@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceFleetTimeline extends js.Object {
+trait InstanceFleetTimeline extends StObject {
   
   /**
     * The time and date the instance fleet was created.
@@ -31,36 +32,24 @@ object InstanceFleetTimeline {
   }
   
   @scala.inline
-  implicit class InstanceFleetTimelineOps[Self <: InstanceFleetTimeline] (val x: Self) extends AnyVal {
+  implicit class InstanceFleetTimelineMutableBuilder[Self <: InstanceFleetTimeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDateTime(value: Date): Self = this.set("CreationDateTime", value.asInstanceOf[js.Any])
+    def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
     @scala.inline
-    def deleteCreationDateTime: Self = this.set("CreationDateTime", js.undefined)
+    def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDateTime(value: Date): Self = this.set("EndDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndDateTime: Self = this.set("EndDateTime", js.undefined)
-    
-    @scala.inline
-    def setReadyDateTime(value: Date): Self = this.set("ReadyDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadyDateTime: Self = this.set("ReadyDateTime", js.undefined)
+    def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
   }
 }

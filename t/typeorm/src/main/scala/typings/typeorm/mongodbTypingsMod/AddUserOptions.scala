@@ -1,11 +1,12 @@
 package typings.typeorm.mongodbTypingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddUserOptions extends js.Object {
+trait AddUserOptions extends StObject {
   
   /**
     * Custom data associated with the user (only Mongodb 2.6 or higher).
@@ -46,54 +47,42 @@ object AddUserOptions {
   }
   
   @scala.inline
-  implicit class AddUserOptionsOps[Self <: AddUserOptions] (val x: Self) extends AnyVal {
+  implicit class AddUserOptionsMutableBuilder[Self <: AddUserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsync(value: Boolean): Self = this.set("fsync", value.asInstanceOf[js.Any])
+    def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomData(value: js.Object): Self = this.set("customData", value.asInstanceOf[js.Any])
+    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
     @scala.inline
-    def deleteCustomData: Self = this.set("customData", js.undefined)
+    def setRoles(value: js.Array[js.Object]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJ(value: Boolean): Self = this.set("j", value.asInstanceOf[js.Any])
+    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
     @scala.inline
-    def deleteJ: Self = this.set("j", js.undefined)
+    def setRolesVarargs(value: js.Object*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
     @scala.inline
-    def setRolesVarargs(value: js.Object*): Self = this.set("roles", js.Array(value :_*))
+    def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoles(value: js.Array[js.Object]): Self = this.set("roles", value.asInstanceOf[js.Any])
+    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
     @scala.inline
-    def deleteRoles: Self = this.set("roles", js.undefined)
+    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: scala.Double | String): Self = this.set("w", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteW: Self = this.set("w", js.undefined)
-    
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = this.set("wtimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWtimeout: Self = this.set("wtimeout", js.undefined)
+    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

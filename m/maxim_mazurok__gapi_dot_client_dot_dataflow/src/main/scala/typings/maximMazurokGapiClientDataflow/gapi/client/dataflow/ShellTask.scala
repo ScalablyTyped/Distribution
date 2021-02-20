@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShellTask extends js.Object {
+trait ShellTask extends StObject {
   
   /** The shell command to run. */
   var command: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ShellTask {
   }
   
   @scala.inline
-  implicit class ShellTaskOps[Self <: ShellTask] (val x: Self) extends AnyVal {
+  implicit class ShellTaskMutableBuilder[Self <: ShellTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
-    
-    @scala.inline
-    def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
   }
 }

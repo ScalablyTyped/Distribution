@@ -1,6 +1,7 @@
 package typings.microsoftSdkSoap.mod.global.Sdk
 
 import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.IEntityMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.RetrieveMetadataChangesResponse")
 @js.native
-class RetrieveMetadataChangesResponse protected () extends js.Object {
+class RetrieveMetadataChangesResponse protected () extends StObject {
   def this(responseXml: java.lang.String) = this()
   
   /***

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object Parameters {
   }
   
   @scala.inline
-  implicit class ParametersOps[Self <: Parameters] (val x: Self) extends AnyVal {
+  implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameter(value: js.Array[ParametersParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameterVarargs(value: ParametersParameter*): Self = this.set("parameter", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameter(value: js.Array[ParametersParameter]): Self = this.set("parameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameter: Self = this.set("parameter", js.undefined)
+    def setParameterVarargs(value: ParametersParameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
   }
 }

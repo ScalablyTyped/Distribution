@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,51 +116,39 @@ object XTextTableCursor {
   }
   
   @scala.inline
-  implicit class XTextTableCursorOps[Self <: XTextTableCursor] (val x: Self) extends AnyVal {
+  implicit class XTextTableCursorMutableBuilder[Self <: XTextTableCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetRangeName(value: () => String): Self = StObject.set(x, "getRangeName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoDown(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goDown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRangeName(value: String): Self = this.set("RangeName", value.asInstanceOf[js.Any])
+    def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetRangeName(value: () => String): Self = this.set("getRangeName", js.Any.fromFunction0(value))
+    def setGoUp(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goUp", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGoDown(value: (Double, Boolean) => Boolean): Self = this.set("goDown", js.Any.fromFunction2(value))
+    def setGotoCellByName(value: (String, Boolean) => Boolean): Self = StObject.set(x, "gotoCellByName", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGoLeft(value: (Double, Boolean) => Boolean): Self = this.set("goLeft", js.Any.fromFunction2(value))
+    def setGotoEnd(value: Boolean => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoRight(value: (Double, Boolean) => Boolean): Self = this.set("goRight", js.Any.fromFunction2(value))
+    def setGotoStart(value: Boolean => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoUp(value: (Double, Boolean) => Boolean): Self = this.set("goUp", js.Any.fromFunction2(value))
+    def setMergeRange(value: () => Boolean): Self = StObject.set(x, "mergeRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGotoCellByName(value: (String, Boolean) => Boolean): Self = this.set("gotoCellByName", js.Any.fromFunction2(value))
+    def setRangeName(value: String): Self = StObject.set(x, "RangeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGotoEnd(value: Boolean => Unit): Self = this.set("gotoEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGotoStart(value: Boolean => Unit): Self = this.set("gotoStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMergeRange(value: () => Boolean): Self = this.set("mergeRange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSplitRange(value: (Double, Boolean) => Boolean): Self = this.set("splitRange", js.Any.fromFunction2(value))
+    def setSplitRange(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "splitRange", js.Any.fromFunction2(value))
   }
 }

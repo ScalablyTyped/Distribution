@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackupRun extends js.Object {
+trait BackupRun extends StObject {
   
   /** Specifies the kind of backup, PHYSICAL or DEFAULT_SNAPSHOT. */
   var backupKind: js.UndefOr[String] = js.native
@@ -64,114 +65,102 @@ object BackupRun {
   }
   
   @scala.inline
-  implicit class BackupRunOps[Self <: BackupRun] (val x: Self) extends AnyVal {
+  implicit class BackupRunMutableBuilder[Self <: BackupRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupKind(value: String): Self = StObject.set(x, "backupKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupKindUndefined: Self = StObject.set(x, "backupKind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupKind(value: String): Self = this.set("backupKind", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBackupKind: Self = this.set("backupKind", js.undefined)
+    def setDiskEncryptionConfiguration(value: DiskEncryptionConfiguration): Self = StObject.set(x, "diskEncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDiskEncryptionConfigurationUndefined: Self = StObject.set(x, "diskEncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDiskEncryptionStatus(value: DiskEncryptionStatus): Self = StObject.set(x, "diskEncryptionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskEncryptionConfiguration(value: DiskEncryptionConfiguration): Self = this.set("diskEncryptionConfiguration", value.asInstanceOf[js.Any])
+    def setDiskEncryptionStatusUndefined: Self = StObject.set(x, "diskEncryptionStatus", js.undefined)
     
     @scala.inline
-    def deleteDiskEncryptionConfiguration: Self = this.set("diskEncryptionConfiguration", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskEncryptionStatus(value: DiskEncryptionStatus): Self = this.set("diskEncryptionStatus", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteDiskEncryptionStatus: Self = this.set("diskEncryptionStatus", js.undefined)
+    def setEnqueuedTime(value: String): Self = StObject.set(x, "enqueuedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEnqueuedTimeUndefined: Self = StObject.set(x, "enqueuedTime", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setError(value: OperationError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnqueuedTime(value: String): Self = this.set("enqueuedTime", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteEnqueuedTime: Self = this.set("enqueuedTime", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: OperationError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setWindowStartTime(value: String): Self = StObject.set(x, "windowStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setWindowStartTime(value: String): Self = this.set("windowStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowStartTime: Self = this.set("windowStartTime", js.undefined)
+    def setWindowStartTimeUndefined: Self = StObject.set(x, "windowStartTime", js.undefined)
   }
 }

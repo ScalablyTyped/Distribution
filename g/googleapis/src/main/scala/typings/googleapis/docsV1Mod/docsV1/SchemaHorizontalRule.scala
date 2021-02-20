@@ -1,6 +1,7 @@
 package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A ParagraphElement representing a horizontal line.
   */
 @js.native
-trait SchemaHorizontalRule extends js.Object {
+trait SchemaHorizontalRule extends StObject {
   
   /**
     * The suggested deletion IDs. If empty, then there are no suggested
@@ -47,48 +48,36 @@ object SchemaHorizontalRule {
   }
   
   @scala.inline
-  implicit class SchemaHorizontalRuleOps[Self <: SchemaHorizontalRule] (val x: Self) extends AnyVal {
+  implicit class SchemaHorizontalRuleMutableBuilder[Self <: SchemaHorizontalRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
     
     @scala.inline
-    def setSuggestedDeletionIdsVarargs(value: String*): Self = this.set("suggestedDeletionIds", js.Array(value :_*))
+    def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedDeletionIds(value: js.Array[String]): Self = this.set("suggestedDeletionIds", value.asInstanceOf[js.Any])
+    def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
     
     @scala.inline
-    def deleteSuggestedDeletionIds: Self = this.set("suggestedDeletionIds", js.undefined)
+    def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
     
     @scala.inline
-    def setSuggestedInsertionIdsVarargs(value: String*): Self = this.set("suggestedInsertionIds", js.Array(value :_*))
+    def setSuggestedTextStyleChanges(value: StringDictionary[SchemaSuggestedTextStyle]): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedInsertionIds(value: js.Array[String]): Self = this.set("suggestedInsertionIds", value.asInstanceOf[js.Any])
+    def setSuggestedTextStyleChangesUndefined: Self = StObject.set(x, "suggestedTextStyleChanges", js.undefined)
     
     @scala.inline
-    def deleteSuggestedInsertionIds: Self = this.set("suggestedInsertionIds", js.undefined)
+    def setTextStyle(value: SchemaTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedTextStyleChanges(value: StringDictionary[SchemaSuggestedTextStyle]): Self = this.set("suggestedTextStyleChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedTextStyleChanges: Self = this.set("suggestedTextStyleChanges", js.undefined)
-    
-    @scala.inline
-    def setTextStyle(value: SchemaTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

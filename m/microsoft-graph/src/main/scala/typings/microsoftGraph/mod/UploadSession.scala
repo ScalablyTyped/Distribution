@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadSession extends js.Object {
+trait UploadSession extends StObject {
   
   /**
     * The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration
@@ -33,48 +34,36 @@ object UploadSession {
   }
   
   @scala.inline
-  implicit class UploadSessionOps[Self <: UploadSession] (val x: Self) extends AnyVal {
+  implicit class UploadSessionMutableBuilder[Self <: UploadSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
     @scala.inline
-    def setExpirationDateTime(value: NullableOption[String]): Self = this.set("expirationDateTime", value.asInstanceOf[js.Any])
+    def setNextExpectedRanges(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "nextExpectedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirationDateTime: Self = this.set("expirationDateTime", js.undefined)
+    def setNextExpectedRangesNull: Self = StObject.set(x, "nextExpectedRanges", null)
     
     @scala.inline
-    def setExpirationDateTimeNull: Self = this.set("expirationDateTime", null)
+    def setNextExpectedRangesUndefined: Self = StObject.set(x, "nextExpectedRanges", js.undefined)
     
     @scala.inline
-    def setNextExpectedRangesVarargs(value: String*): Self = this.set("nextExpectedRanges", js.Array(value :_*))
+    def setNextExpectedRangesVarargs(value: String*): Self = StObject.set(x, "nextExpectedRanges", js.Array(value :_*))
     
     @scala.inline
-    def setNextExpectedRanges(value: NullableOption[js.Array[String]]): Self = this.set("nextExpectedRanges", value.asInstanceOf[js.Any])
+    def setUploadUrl(value: NullableOption[String]): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNextExpectedRanges: Self = this.set("nextExpectedRanges", js.undefined)
+    def setUploadUrlNull: Self = StObject.set(x, "uploadUrl", null)
     
     @scala.inline
-    def setNextExpectedRangesNull: Self = this.set("nextExpectedRanges", null)
-    
-    @scala.inline
-    def setUploadUrl(value: NullableOption[String]): Self = this.set("uploadUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadUrl: Self = this.set("uploadUrl", js.undefined)
-    
-    @scala.inline
-    def setUploadUrlNull: Self = this.set("uploadUrl", null)
+    def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
   }
 }

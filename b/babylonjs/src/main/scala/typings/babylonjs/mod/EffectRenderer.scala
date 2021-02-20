@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.effectRendererMod.IEffectRendererOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,15 @@ class EffectRenderer protected ()
   def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, options: IEffectRendererOptions) = this()
 }
 /* static members */
-@JSImport("babylonjs", "EffectRenderer")
-@js.native
-object EffectRenderer extends js.Object {
+object EffectRenderer {
   
-  var _DefaultOptions: js.Any = js.native
+  @JSImport("babylonjs", "EffectRenderer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs", "EffectRenderer._DefaultOptions")
+  @js.native
+  def _DefaultOptions: js.Any = js.native
+  @scala.inline
+  def _DefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
 }

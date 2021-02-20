@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleUpdate extends js.Object {
+trait RuleUpdate extends StObject {
   
   /**
     * Specify INSERT to add a Predicate to a Rule. Use DELETE to remove a Predicate from a Rule.
@@ -26,24 +27,12 @@ object RuleUpdate {
   }
   
   @scala.inline
-  implicit class RuleUpdateOps[Self <: RuleUpdate] (val x: Self) extends AnyVal {
+  implicit class RuleUpdateMutableBuilder[Self <: RuleUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: ChangeAction): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredicate(value: Predicate): Self = this.set("Predicate", value.asInstanceOf[js.Any])
+    def setPredicate(value: Predicate): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
   }
 }

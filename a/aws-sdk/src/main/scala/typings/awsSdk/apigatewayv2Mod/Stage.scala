@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stage extends js.Object {
+trait Stage extends StObject {
   
   /**
     * Settings for logging access in this stage.
@@ -86,99 +87,87 @@ object Stage {
   }
   
   @scala.inline
-  implicit class StageOps[Self <: Stage] (val x: Self) extends AnyVal {
+  implicit class StageMutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLogSettings(value: AccessLogSettings): Self = StObject.set(x, "AccessLogSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessLogSettingsUndefined: Self = StObject.set(x, "AccessLogSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiGatewayManaged(value: boolean): Self = StObject.set(x, "ApiGatewayManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageName(value: StringWithLengthBetween1And128): Self = this.set("StageName", value.asInstanceOf[js.Any])
+    def setApiGatewayManagedUndefined: Self = StObject.set(x, "ApiGatewayManaged", js.undefined)
     
     @scala.inline
-    def setAccessLogSettings(value: AccessLogSettings): Self = this.set("AccessLogSettings", value.asInstanceOf[js.Any])
+    def setAutoDeploy(value: boolean): Self = StObject.set(x, "AutoDeploy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessLogSettings: Self = this.set("AccessLogSettings", js.undefined)
+    def setAutoDeployUndefined: Self = StObject.set(x, "AutoDeploy", js.undefined)
     
     @scala.inline
-    def setApiGatewayManaged(value: boolean): Self = this.set("ApiGatewayManaged", value.asInstanceOf[js.Any])
+    def setClientCertificateId(value: Id): Self = StObject.set(x, "ClientCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApiGatewayManaged: Self = this.set("ApiGatewayManaged", js.undefined)
+    def setClientCertificateIdUndefined: Self = StObject.set(x, "ClientCertificateId", js.undefined)
     
     @scala.inline
-    def setAutoDeploy(value: boolean): Self = this.set("AutoDeploy", value.asInstanceOf[js.Any])
+    def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoDeploy: Self = this.set("AutoDeploy", js.undefined)
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def setClientCertificateId(value: Id): Self = this.set("ClientCertificateId", value.asInstanceOf[js.Any])
+    def setDefaultRouteSettings(value: RouteSettings): Self = StObject.set(x, "DefaultRouteSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientCertificateId: Self = this.set("ClientCertificateId", js.undefined)
+    def setDefaultRouteSettingsUndefined: Self = StObject.set(x, "DefaultRouteSettings", js.undefined)
     
     @scala.inline
-    def setCreatedDate(value: timestampIso8601): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setDeploymentId(value: Id): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
     @scala.inline
-    def setDefaultRouteSettings(value: RouteSettings): Self = this.set("DefaultRouteSettings", value.asInstanceOf[js.Any])
+    def setDescription(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultRouteSettings: Self = this.set("DefaultRouteSettings", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setDeploymentId(value: Id): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
+    def setLastDeploymentStatusMessage(value: string): Self = StObject.set(x, "LastDeploymentStatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    def setLastDeploymentStatusMessageUndefined: Self = StObject.set(x, "LastDeploymentStatusMessage", js.undefined)
     
     @scala.inline
-    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setLastUpdatedDate(value: timestampIso8601): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
     
     @scala.inline
-    def setLastDeploymentStatusMessage(value: string): Self = this.set("LastDeploymentStatusMessage", value.asInstanceOf[js.Any])
+    def setRouteSettings(value: RouteSettingsMap): Self = StObject.set(x, "RouteSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastDeploymentStatusMessage: Self = this.set("LastDeploymentStatusMessage", js.undefined)
+    def setRouteSettingsUndefined: Self = StObject.set(x, "RouteSettings", js.undefined)
     
     @scala.inline
-    def setLastUpdatedDate(value: timestampIso8601): Self = this.set("LastUpdatedDate", value.asInstanceOf[js.Any])
+    def setStageName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastUpdatedDate: Self = this.set("LastUpdatedDate", js.undefined)
+    def setStageVariables(value: StageVariablesMap): Self = StObject.set(x, "StageVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteSettings(value: RouteSettingsMap): Self = this.set("RouteSettings", value.asInstanceOf[js.Any])
+    def setStageVariablesUndefined: Self = StObject.set(x, "StageVariables", js.undefined)
     
     @scala.inline
-    def deleteRouteSettings: Self = this.set("RouteSettings", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageVariables(value: StageVariablesMap): Self = this.set("StageVariables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageVariables: Self = this.set("StageVariables", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

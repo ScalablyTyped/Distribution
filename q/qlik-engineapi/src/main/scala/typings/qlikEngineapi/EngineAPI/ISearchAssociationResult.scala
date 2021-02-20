@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchAssociationResult...
   */
 @js.native
-trait ISearchAssociationResult extends js.Object {
+trait ISearchAssociationResult extends StObject {
   
   /**
     * Information about the fields containing search hits.
@@ -52,45 +53,33 @@ object ISearchAssociationResult {
   }
   
   @scala.inline
-  implicit class ISearchAssociationResultOps[Self <: ISearchAssociationResult] (val x: Self) extends AnyVal {
+  implicit class ISearchAssociationResultMutableBuilder[Self <: ISearchAssociationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQFieldDictionaries(value: js.Array[ISearchFieldDictionary]): Self = StObject.set(x, "qFieldDictionaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFieldDictionariesVarargs(value: ISearchFieldDictionary*): Self = StObject.set(x, "qFieldDictionaries", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQFieldNames(value: js.Array[String]): Self = StObject.set(x, "qFieldNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldDictionariesVarargs(value: ISearchFieldDictionary*): Self = this.set("qFieldDictionaries", js.Array(value :_*))
+    def setQFieldNamesVarargs(value: String*): Self = StObject.set(x, "qFieldNames", js.Array(value :_*))
     
     @scala.inline
-    def setQFieldDictionaries(value: js.Array[ISearchFieldDictionary]): Self = this.set("qFieldDictionaries", value.asInstanceOf[js.Any])
+    def setQSearchTerms(value: js.Array[String]): Self = StObject.set(x, "qSearchTerms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldNamesVarargs(value: String*): Self = this.set("qFieldNames", js.Array(value :_*))
+    def setQSearchTermsMatched(value: js.Array[ISearchMatchCombinations]): Self = StObject.set(x, "qSearchTermsMatched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldNames(value: js.Array[String]): Self = this.set("qFieldNames", value.asInstanceOf[js.Any])
+    def setQSearchTermsMatchedVarargs(value: ISearchMatchCombinations*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value :_*))
     
     @scala.inline
-    def setQSearchTermsVarargs(value: String*): Self = this.set("qSearchTerms", js.Array(value :_*))
+    def setQSearchTermsVarargs(value: String*): Self = StObject.set(x, "qSearchTerms", js.Array(value :_*))
     
     @scala.inline
-    def setQSearchTerms(value: js.Array[String]): Self = this.set("qSearchTerms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSearchTermsMatchedVarargs(value: ISearchMatchCombinations*): Self = this.set("qSearchTermsMatched", js.Array(value :_*))
-    
-    @scala.inline
-    def setQSearchTermsMatched(value: js.Array[ISearchMatchCombinations]): Self = this.set("qSearchTermsMatched", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTotalSearchResults(value: Double): Self = this.set("qTotalSearchResults", value.asInstanceOf[js.Any])
+    def setQTotalSearchResults(value: Double): Self = StObject.set(x, "qTotalSearchResults", value.asInstanceOf[js.Any])
   }
 }

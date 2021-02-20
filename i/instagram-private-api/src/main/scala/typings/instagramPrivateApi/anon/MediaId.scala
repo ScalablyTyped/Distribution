@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaId extends js.Object {
+trait MediaId extends StObject {
   
   var mediaId: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object MediaId {
   }
   
   @scala.inline
-  implicit class MediaIdOps[Self <: MediaId] (val x: Self) extends AnyVal {
+  implicit class MediaIdMutableBuilder[Self <: MediaId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMediaIdUndefined: Self = StObject.set(x, "mediaId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetPostsAuthorId(value: String): Self = StObject.set(x, "targetPostsAuthorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaId(value: String): Self = this.set("mediaId", value.asInstanceOf[js.Any])
+    def setTargetPostsAuthorIdUndefined: Self = StObject.set(x, "targetPostsAuthorId", js.undefined)
     
     @scala.inline
-    def deleteMediaId: Self = this.set("mediaId", js.undefined)
+    def setTargetReelAuthorId(value: String): Self = StObject.set(x, "targetReelAuthorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetPostsAuthorId(value: String): Self = this.set("targetPostsAuthorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetPostsAuthorId: Self = this.set("targetPostsAuthorId", js.undefined)
-    
-    @scala.inline
-    def setTargetReelAuthorId(value: String): Self = this.set("targetReelAuthorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetReelAuthorId: Self = this.set("targetReelAuthorId", js.undefined)
+    def setTargetReelAuthorIdUndefined: Self = StObject.set(x, "targetReelAuthorId", js.undefined)
   }
 }

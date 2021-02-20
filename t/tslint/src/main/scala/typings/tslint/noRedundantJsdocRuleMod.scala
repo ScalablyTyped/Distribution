@@ -1,27 +1,45 @@
 package typings.tslint
 
 import typings.tslint.mod.Rules.AbstractRule
+import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/rules/noRedundantJsdocRule", JSImport.Namespace)
-@js.native
-object noRedundantJsdocRuleMod extends js.Object {
+object noRedundantJsdocRuleMod {
   
+  @JSImport("tslint/lib/rules/noRedundantJsdocRule", "Rule")
   @js.native
-  class Rule () extends AbstractRule
+  class Rule protected () extends AbstractRule {
+    def this(options: IOptions) = this()
+  }
   /* static members */
-  @js.native
-  object Rule extends js.Object {
+  object Rule {
     
+    @JSImport("tslint/lib/rules/noRedundantJsdocRule", "Rule")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/rules/noRedundantJsdocRule", "Rule.FAILURE_STRING_NO_COMMENT")
+    @js.native
     def FAILURE_STRING_NO_COMMENT(tagName: String): String = js.native
     
+    @JSImport("tslint/lib/rules/noRedundantJsdocRule", "Rule.FAILURE_STRING_REDUNDANT_TAG")
+    @js.native
     def FAILURE_STRING_REDUNDANT_TAG(tagName: String): String = js.native
     
-    var FAILURE_STRING_REDUNDANT_TYPE: String = js.native
+    @JSImport("tslint/lib/rules/noRedundantJsdocRule", "Rule.FAILURE_STRING_REDUNDANT_TYPE")
+    @js.native
+    def FAILURE_STRING_REDUNDANT_TYPE: String = js.native
+    @scala.inline
+    def FAILURE_STRING_REDUNDANT_TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_REDUNDANT_TYPE")(x.asInstanceOf[js.Any])
     
-    var metadata: IRuleMetadata = js.native
+    @JSImport("tslint/lib/rules/noRedundantJsdocRule", "Rule.metadata")
+    @js.native
+    def metadata: IRuleMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

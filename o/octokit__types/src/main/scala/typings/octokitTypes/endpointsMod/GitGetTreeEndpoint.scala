@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitGetTreeEndpoint extends js.Object {
+trait GitGetTreeEndpoint extends StObject {
   
   var owner: String = js.native
   
@@ -27,33 +28,21 @@ object GitGetTreeEndpoint {
   }
   
   @scala.inline
-  implicit class GitGetTreeEndpointOps[Self <: GitGetTreeEndpoint] (val x: Self) extends AnyVal {
+  implicit class GitGetTreeEndpointMutableBuilder[Self <: GitGetTreeEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecursive(value: String): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTree_sha(value: String): Self = this.set("tree_sha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecursive(value: String): Self = this.set("recursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setTree_sha(value: String): Self = StObject.set(x, "tree_sha", value.asInstanceOf[js.Any])
   }
 }

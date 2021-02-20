@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IColumnDef extends js.Object {
+trait IColumnDef extends StObject {
   
   /** String name for filter to use on the aggregate label ('currency', 'date', etc..) defaults to cellFilter if not set. */
   var aggLabelFilter: js.UndefOr[String] = js.native
@@ -80,138 +81,126 @@ object IColumnDef {
   }
   
   @scala.inline
-  implicit class IColumnDefOps[Self <: IColumnDef] (val x: Self) extends AnyVal {
+  implicit class IColumnDefMutableBuilder[Self <: IColumnDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggLabelFilter(value: String): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggLabelFilterUndefined: Self = StObject.set(x, "aggLabelFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggLabelFilter(value: String): Self = this.set("aggLabelFilter", value.asInstanceOf[js.Any])
+    def setCellClassUndefined: Self = StObject.set(x, "cellClass", js.undefined)
     
     @scala.inline
-    def deleteAggLabelFilter: Self = this.set("aggLabelFilter", js.undefined)
+    def setCellEditableCondition(value: String): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellClass(value: String): Self = this.set("cellClass", value.asInstanceOf[js.Any])
+    def setCellEditableConditionUndefined: Self = StObject.set(x, "cellEditableCondition", js.undefined)
     
     @scala.inline
-    def deleteCellClass: Self = this.set("cellClass", js.undefined)
+    def setCellFilter(value: String): Self = StObject.set(x, "cellFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellEditableCondition(value: String): Self = this.set("cellEditableCondition", value.asInstanceOf[js.Any])
+    def setCellFilterUndefined: Self = StObject.set(x, "cellFilter", js.undefined)
     
     @scala.inline
-    def deleteCellEditableCondition: Self = this.set("cellEditableCondition", js.undefined)
+    def setCellTemplate(value: String): Self = StObject.set(x, "cellTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellFilter(value: String): Self = this.set("cellFilter", value.asInstanceOf[js.Any])
+    def setCellTemplateUndefined: Self = StObject.set(x, "cellTemplate", js.undefined)
     
     @scala.inline
-    def deleteCellFilter: Self = this.set("cellFilter", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellTemplate(value: String): Self = this.set("cellTemplate", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCellTemplate: Self = this.set("cellTemplate", js.undefined)
+    def setEditableCellTemplate(value: String): Self = StObject.set(x, "editableCellTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEditableCellTemplateUndefined: Self = StObject.set(x, "editableCellTemplate", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditableCellTemplate(value: String): Self = this.set("editableCellTemplate", value.asInstanceOf[js.Any])
+    def setEnableCellEditUndefined: Self = StObject.set(x, "enableCellEdit", js.undefined)
     
     @scala.inline
-    def deleteEditableCellTemplate: Self = this.set("editableCellTemplate", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCellEdit(value: Boolean): Self = this.set("enableCellEdit", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteEnableCellEdit: Self = this.set("enableCellEdit", js.undefined)
+    def setGroupable(value: Boolean): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setGroupableUndefined: Self = StObject.set(x, "groupable", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setHeaderCellTemplate(value: String): Self = StObject.set(x, "headerCellTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupable(value: Boolean): Self = this.set("groupable", value.asInstanceOf[js.Any])
+    def setHeaderCellTemplateUndefined: Self = StObject.set(x, "headerCellTemplate", js.undefined)
     
     @scala.inline
-    def deleteGroupable: Self = this.set("groupable", js.undefined)
+    def setHeaderClass(value: String): Self = StObject.set(x, "headerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCellTemplate(value: String): Self = this.set("headerCellTemplate", value.asInstanceOf[js.Any])
+    def setHeaderClassUndefined: Self = StObject.set(x, "headerClass", js.undefined)
     
     @scala.inline
-    def deleteHeaderCellTemplate: Self = this.set("headerCellTemplate", js.undefined)
+    def setMinWidth(value: js.Any): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderClass(value: String): Self = this.set("headerClass", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteHeaderClass: Self = this.set("headerClass", js.undefined)
+    def setPinnable(value: Boolean): Self = StObject.set(x, "pinnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: js.Any): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setPinnableUndefined: Self = StObject.set(x, "pinnable", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinnable(value: Boolean): Self = this.set("pinnable", value.asInstanceOf[js.Any])
+    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
     @scala.inline
-    def deletePinnable: Self = this.set("pinnable", js.undefined)
+    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
     @scala.inline
-    def deletePinned: Self = this.set("pinned", js.undefined)
+    def setSortFn(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sortFn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    def setSortFnUndefined: Self = StObject.set(x, "sortFn", js.undefined)
     
     @scala.inline
-    def deleteResizable: Self = this.set("resizable", js.undefined)
+    def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortFn(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = this.set("sortFn", js.Any.fromFunction2(value))
+    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
     @scala.inline
-    def deleteSortFn: Self = this.set("sortFn", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortable(value: Boolean): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteSortable: Self = this.set("sortable", js.undefined)
+    def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

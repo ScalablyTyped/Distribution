@@ -3,12 +3,13 @@ package typings.activexExcel.anon
 import typings.activexExcel.Excel.Workbook
 import typings.activexExcel.Excel.XlXmlExportResult
 import typings.activexExcel.Excel.XmlMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Map extends js.Object {
+trait Map extends StObject {
   
   val Map: XmlMap = js.native
   
@@ -27,30 +28,18 @@ object Map {
   }
   
   @scala.inline
-  implicit class MapOps[Self <: Map] (val x: Self) extends AnyVal {
+  implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMap(value: XmlMap): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResult(value: XlXmlExportResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: XmlMap): Self = this.set("Map", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: XlXmlExportResult): Self = this.set("Result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWb(value: Workbook): Self = this.set("Wb", value.asInstanceOf[js.Any])
+    def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,22 +16,34 @@ class GearVRController protected ()
   def this(vrGamepad: js.Any) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "GearVRController")
-@js.native
-object GearVRController extends js.Object {
+object GearVRController {
+  
+  @JSImport("babylonjs/Legacy/legacy", "GearVRController")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gamepad Id prefix used to identify this controller.
     */
+  @JSImport("babylonjs/Legacy/legacy", "GearVRController.GAMEPAD_ID_PREFIX")
+  @js.native
   val GAMEPAD_ID_PREFIX: String = js.native
   
   /**
     * Base Url for the controller model.
     */
-  var MODEL_BASE_URL: String = js.native
+  @JSImport("babylonjs/Legacy/legacy", "GearVRController.MODEL_BASE_URL")
+  @js.native
+  def MODEL_BASE_URL: String = js.native
+  @scala.inline
+  def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
   
   /**
     * File name for the controller model.
     */
-  var MODEL_FILENAME: String = js.native
+  @JSImport("babylonjs/Legacy/legacy", "GearVRController.MODEL_FILENAME")
+  @js.native
+  def MODEL_FILENAME: String = js.native
+  @scala.inline
+  def MODEL_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_FILENAME")(x.asInstanceOf[js.Any])
 }

@@ -1,5 +1,6 @@
 package typings.officeJsPreview.global.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Office.CustomXMLNodeType")
 @js.native
-object CustomXMLNodeType extends js.Object {
+object CustomXMLNodeType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeJsPreview.Office.CustomXMLNodeType with Double] = js.native

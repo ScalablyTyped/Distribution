@@ -1,11 +1,12 @@
 package typings.openfin.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Click extends js.Object {
+trait Click extends StObject {
   
   var click: String = js.native
   
@@ -26,33 +27,21 @@ object Click {
   }
   
   @scala.inline
-  implicit class ClickOps[Self <: Click] (val x: Self) extends AnyVal {
+  implicit class ClickMutableBuilder[Self <: Click] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: String): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: String): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow(value: String): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

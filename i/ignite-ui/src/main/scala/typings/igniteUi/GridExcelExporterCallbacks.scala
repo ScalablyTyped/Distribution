@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -153,90 +154,78 @@ object GridExcelExporterCallbacks {
   }
   
   @scala.inline
-  implicit class GridExcelExporterCallbacksOps[Self <: GridExcelExporterCallbacks] (val x: Self) extends AnyVal {
+  implicit class GridExcelExporterCallbacksMutableBuilder[Self <: GridExcelExporterCallbacks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellExported(value: js.Function): Self = StObject.set(x, "cellExported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellExportedUndefined: Self = StObject.set(x, "cellExported", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellExporting(value: js.Function): Self = StObject.set(x, "cellExporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellExported(value: js.Function): Self = this.set("cellExported", value.asInstanceOf[js.Any])
+    def setCellExportingUndefined: Self = StObject.set(x, "cellExporting", js.undefined)
     
     @scala.inline
-    def deleteCellExported: Self = this.set("cellExported", js.undefined)
+    def setError(value: js.Function): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellExporting(value: js.Function): Self = this.set("cellExporting", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteCellExporting: Self = this.set("cellExporting", js.undefined)
+    def setExportEnding(value: js.Function): Self = StObject.set(x, "exportEnding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: js.Function): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setExportEndingUndefined: Self = StObject.set(x, "exportEnding", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setExportStarting(value: js.Function): Self = StObject.set(x, "exportStarting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportEnding(value: js.Function): Self = this.set("exportEnding", value.asInstanceOf[js.Any])
+    def setExportStartingUndefined: Self = StObject.set(x, "exportStarting", js.undefined)
     
     @scala.inline
-    def deleteExportEnding: Self = this.set("exportEnding", js.undefined)
+    def setHeaderCellExported(value: js.Function): Self = StObject.set(x, "headerCellExported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportStarting(value: js.Function): Self = this.set("exportStarting", value.asInstanceOf[js.Any])
+    def setHeaderCellExportedUndefined: Self = StObject.set(x, "headerCellExported", js.undefined)
     
     @scala.inline
-    def deleteExportStarting: Self = this.set("exportStarting", js.undefined)
+    def setHeaderCellExporting(value: js.Function): Self = StObject.set(x, "headerCellExporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCellExported(value: js.Function): Self = this.set("headerCellExported", value.asInstanceOf[js.Any])
+    def setHeaderCellExportingUndefined: Self = StObject.set(x, "headerCellExporting", js.undefined)
     
     @scala.inline
-    def deleteHeaderCellExported: Self = this.set("headerCellExported", js.undefined)
+    def setRowExported(value: js.Function): Self = StObject.set(x, "rowExported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCellExporting(value: js.Function): Self = this.set("headerCellExporting", value.asInstanceOf[js.Any])
+    def setRowExportedUndefined: Self = StObject.set(x, "rowExported", js.undefined)
     
     @scala.inline
-    def deleteHeaderCellExporting: Self = this.set("headerCellExporting", js.undefined)
+    def setRowExporting(value: js.Function): Self = StObject.set(x, "rowExporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowExported(value: js.Function): Self = this.set("rowExported", value.asInstanceOf[js.Any])
+    def setRowExportingUndefined: Self = StObject.set(x, "rowExporting", js.undefined)
     
     @scala.inline
-    def deleteRowExported: Self = this.set("rowExported", js.undefined)
+    def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowExporting(value: js.Function): Self = this.set("rowExporting", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteRowExporting: Self = this.set("rowExporting", js.undefined)
+    def setSummaryExported(value: js.Function): Self = StObject.set(x, "summaryExported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: js.Function): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSummaryExportedUndefined: Self = StObject.set(x, "summaryExported", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSummaryExporting(value: js.Function): Self = StObject.set(x, "summaryExporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryExported(value: js.Function): Self = this.set("summaryExported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryExported: Self = this.set("summaryExported", js.undefined)
-    
-    @scala.inline
-    def setSummaryExporting(value: js.Function): Self = this.set("summaryExporting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryExporting: Self = this.set("summaryExporting", js.undefined)
+    def setSummaryExportingUndefined: Self = StObject.set(x, "summaryExporting", js.undefined)
   }
 }

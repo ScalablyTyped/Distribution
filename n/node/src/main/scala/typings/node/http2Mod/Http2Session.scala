@@ -12,6 +12,7 @@ import typings.node.nodeStrings.ping
 import typings.node.nodeStrings.timeout
 import typings.node.tlsMod.TLSSocket
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

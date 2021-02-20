@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * in text.
   */
 @js.native
-trait SchemaRange extends js.Object {
+trait SchemaRange extends StObject {
   
   /**
     * The optional zero-based index of the end of the collection. Required for
@@ -37,36 +38,24 @@ object SchemaRange {
   }
   
   @scala.inline
-  implicit class SchemaRangeOps[Self <: SchemaRange] (val x: Self) extends AnyVal {
+  implicit class SchemaRangeMutableBuilder[Self <: SchemaRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

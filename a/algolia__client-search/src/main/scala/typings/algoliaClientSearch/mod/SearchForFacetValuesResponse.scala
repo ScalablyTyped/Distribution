@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchForFacetValuesResponse extends js.Object {
+trait SearchForFacetValuesResponse extends StObject {
   
   /**
     * The exhaustive facets count.
@@ -31,33 +32,21 @@ object SearchForFacetValuesResponse {
   }
   
   @scala.inline
-  implicit class SearchForFacetValuesResponseOps[Self <: SearchForFacetValuesResponse] (val x: Self) extends AnyVal {
+  implicit class SearchForFacetValuesResponseMutableBuilder[Self <: SearchForFacetValuesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExhaustiveFacetsCount(value: Boolean): Self = StObject.set(x, "exhaustiveFacetsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFacetHits(value: js.Array[FacetHit]): Self = StObject.set(x, "facetHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacetHitsVarargs(value: FacetHit*): Self = StObject.set(x, "facetHits", js.Array(value :_*))
     
     @scala.inline
-    def setExhaustiveFacetsCount(value: Boolean): Self = this.set("exhaustiveFacetsCount", value.asInstanceOf[js.Any])
+    def setProcessingTimeMS(value: Double): Self = StObject.set(x, "processingTimeMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetHitsVarargs(value: FacetHit*): Self = this.set("facetHits", js.Array(value :_*))
-    
-    @scala.inline
-    def setFacetHits(value: js.Array[FacetHit]): Self = this.set("facetHits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProcessingTimeMS(value: Double): Self = this.set("processingTimeMS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessingTimeMS: Self = this.set("processingTimeMS", js.undefined)
+    def setProcessingTimeMSUndefined: Self = StObject.set(x, "processingTimeMS", js.undefined)
   }
 }

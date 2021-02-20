@@ -1,17 +1,22 @@
 package typings.tootallnateOnce
 
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tootallnate/once", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@tootallnate/once", JSImport.Namespace)
+  @js.native
   def apply[T](emitter: EventEmitter, name: String): CancelablePromise[T] = js.native
   
+  @JSImport("@tootallnate/once", "spread")
+  @js.native
   def spread[T /* <: js.Array[_] */](emitter: EventEmitter, name: String): CancelablePromise[T] = js.native
+  
+  type CancelFunction = js.Function0[Unit]
   
   @js.native
   trait CancelablePromise[T]
@@ -21,8 +26,6 @@ object mod extends js.Object {
     @JSName("cancel")
     var cancel_Original: CancelFunction = js.native
   }
-  
-  type CancelFunction = js.Function0[Unit]
   
   type CancellablePromise[T] = CancelablePromise[T]
 }

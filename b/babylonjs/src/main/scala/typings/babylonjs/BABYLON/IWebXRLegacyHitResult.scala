@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRHitResult
 import typings.babylonjs.XRHitTestResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebXRLegacyHitResult extends js.Object {
+trait IWebXRLegacyHitResult extends StObject {
   
   /**
     * Transformation matrix that can be applied to a node that will put it in the hit point location
@@ -28,24 +29,12 @@ object IWebXRLegacyHitResult {
   }
   
   @scala.inline
-  implicit class IWebXRLegacyHitResultOps[Self <: IWebXRLegacyHitResult] (val x: Self) extends AnyVal {
+  implicit class IWebXRLegacyHitResultMutableBuilder[Self <: IWebXRLegacyHitResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransformationMatrix(value: Matrix): Self = this.set("transformationMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXrHitResult(value: XRHitResult | XRHitTestResult): Self = this.set("xrHitResult", value.asInstanceOf[js.Any])
+    def setXrHitResult(value: XRHitResult | XRHitTestResult): Self = StObject.set(x, "xrHitResult", value.asInstanceOf[js.Any])
   }
 }

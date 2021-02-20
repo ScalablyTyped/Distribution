@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transformer[I, O] extends js.Object {
+trait Transformer[I, O] extends StObject {
   
   var flush: js.UndefOr[TransformStreamDefaultControllerCallback[O]] = js.native
   
@@ -26,36 +27,24 @@ object Transformer {
   }
   
   @scala.inline
-  implicit class TransformerOps[Self <: Transformer[_, _], I, O] (val x: Self with (Transformer[I, O])) extends AnyVal {
+  implicit class TransformerMutableBuilder[Self <: Transformer[_, _], I, O] (val x: Self with (Transformer[I, O])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlush(value: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlush(value: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit]): Self = this.set("flush", js.Any.fromFunction1(value))
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteFlush: Self = this.set("flush", js.undefined)
+    def setTransform(value: (I, /* controller */ TransformStreamDefaultController[O]) => Unit | js.Thenable[Unit]): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStart(value: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit]): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setTransform(value: (I, /* controller */ TransformStreamDefaultController[O]) => Unit | js.Thenable[Unit]): Self = this.set("transform", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

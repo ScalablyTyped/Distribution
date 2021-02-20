@@ -4,6 +4,7 @@ import typings.angularCore.angularCoreNumbers._4294901760
 import typings.angularCore.angularCoreNumbers.`16`
 import typings.angularCore.angularCoreNumbers.`65535`
 import typings.angularCore.angularCoreNumbers.`65536`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularCore.angularCoreNumbers.`16`
   - typings.angularCore.angularCoreNumbers._4294901760
 */
-trait PreOrderHookFlags extends js.Object
+trait PreOrderHookFlags extends StObject
 object PreOrderHookFlags {
   
   /**

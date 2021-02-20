@@ -1,11 +1,12 @@
 package typings.jqueryRowgrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryRowGridJSOptions extends js.Object {
+trait JQueryRowGridJSOptions extends StObject {
   
   var itemSelector: String = js.native
   
@@ -22,33 +23,21 @@ object JQueryRowGridJSOptions {
   }
   
   @scala.inline
-  implicit class JQueryRowGridJSOptionsOps[Self <: JQueryRowGridJSOptions] (val x: Self) extends AnyVal {
+  implicit class JQueryRowGridJSOptionsMutableBuilder[Self <: JQueryRowGridJSOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxMargin(value: Double): Self = StObject.set(x, "maxMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxMarginUndefined: Self = StObject.set(x, "maxMargin", js.undefined)
     
     @scala.inline
-    def setItemSelector(value: String): Self = this.set("itemSelector", value.asInstanceOf[js.Any])
+    def setMinMargin(value: Double): Self = StObject.set(x, "minMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMargin(value: Double): Self = this.set("maxMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxMargin: Self = this.set("maxMargin", js.undefined)
-    
-    @scala.inline
-    def setMinMargin(value: Double): Self = this.set("minMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinMargin: Self = this.set("minMargin", js.undefined)
+    def setMinMarginUndefined: Self = StObject.set(x, "minMargin", js.undefined)
   }
 }

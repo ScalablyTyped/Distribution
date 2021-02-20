@@ -1,11 +1,12 @@
 package typings.hammerjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CssProps extends js.Object {
+trait CssProps extends StObject {
   
   var contentZooming: String = js.native
   
@@ -35,36 +36,24 @@ object CssProps {
   }
   
   @scala.inline
-  implicit class CssPropsOps[Self <: CssProps] (val x: Self) extends AnyVal {
+  implicit class CssPropsMutableBuilder[Self <: CssProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentZooming(value: String): Self = StObject.set(x, "contentZooming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTapHighlightColor(value: String): Self = StObject.set(x, "tapHighlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTouchCallout(value: String): Self = StObject.set(x, "touchCallout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentZooming(value: String): Self = this.set("contentZooming", value.asInstanceOf[js.Any])
+    def setTouchSelect(value: String): Self = StObject.set(x, "touchSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTapHighlightColor(value: String): Self = this.set("tapHighlightColor", value.asInstanceOf[js.Any])
+    def setUserDrag(value: String): Self = StObject.set(x, "userDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchCallout(value: String): Self = this.set("touchCallout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchSelect(value: String): Self = this.set("touchSelect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserDrag(value: String): Self = this.set("userDrag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserSelect(value: String): Self = this.set("userSelect", value.asInstanceOf[js.Any])
+    def setUserSelect(value: String): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
   }
 }

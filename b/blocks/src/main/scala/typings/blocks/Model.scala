@@ -1,5 +1,6 @@
 package typings.blocks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // App.Model
 /////////////////////////////////////////
 @js.native
-trait Model extends js.Object {
+trait Model extends StObject {
   
   def apply(): Model = js.native
   def apply(props: js.Object): Model = js.native

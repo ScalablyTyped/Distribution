@@ -1,11 +1,12 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Position extends js.Object {
+trait Position extends StObject {
   
   var ch: Double = js.native
   
@@ -22,30 +23,18 @@ object Position {
   }
   
   @scala.inline
-  implicit class PositionOps[Self <: Position] (val x: Self) extends AnyVal {
+  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCh(value: Double): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSticky(value: String): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCh(value: Double): Self = this.set("ch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSticky(value: String): Self = this.set("sticky", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSticky: Self = this.set("sticky", js.undefined)
+    def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
   }
 }

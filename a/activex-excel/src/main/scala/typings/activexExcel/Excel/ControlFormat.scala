@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ControlFormat extends js.Object {
+trait ControlFormat extends StObject {
   
   def AddItem(Text: String): Unit = js.native
   def AddItem(Text: String, Index: Double): Unit = js.native

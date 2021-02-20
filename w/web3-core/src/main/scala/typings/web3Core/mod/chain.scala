@@ -1,5 +1,6 @@
 package typings.web3Core.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.web3Core.web3CoreStrings.rinkeby
   - typings.web3Core.web3CoreStrings.ropsten
 */
-trait chain extends js.Object
+trait chain extends StObject
 object chain {
   
   @scala.inline

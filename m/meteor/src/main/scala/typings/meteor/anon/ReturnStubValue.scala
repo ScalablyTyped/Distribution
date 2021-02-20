@@ -3,12 +3,13 @@ package typings.meteor.anon
 import typings.meteor.EJSONable
 import typings.meteor.EJSONableProperty
 import typings.meteor.globalError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnStubValue[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] extends js.Object {
+trait ReturnStubValue[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] extends StObject {
   
   var onResultReceived: js.UndefOr[
     js.Function2[
@@ -34,44 +35,32 @@ object ReturnStubValue {
   }
   
   @scala.inline
-  implicit class ReturnStubValueOps[Self <: ReturnStubValue[_], Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] (val x: Self with ReturnStubValue[Result]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ReturnStubValueMutableBuilder[Self <: ReturnStubValue[_], Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] (val x: Self with ReturnStubValue[Result]) extends AnyVal {
     
     @scala.inline
     def setOnResultReceived(
       value: (/* error */ js.UndefOr[globalError | typings.meteor.Meteor.Error], /* result */ js.UndefOr[Result]) => Unit
-    ): Self = this.set("onResultReceived", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onResultReceived", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnResultReceived: Self = this.set("onResultReceived", js.undefined)
+    def setOnResultReceivedUndefined: Self = StObject.set(x, "onResultReceived", js.undefined)
     
     @scala.inline
-    def setReturnStubValue(value: Boolean): Self = this.set("returnStubValue", value.asInstanceOf[js.Any])
+    def setReturnStubValue(value: Boolean): Self = StObject.set(x, "returnStubValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnStubValue: Self = this.set("returnStubValue", js.undefined)
+    def setReturnStubValueUndefined: Self = StObject.set(x, "returnStubValue", js.undefined)
     
     @scala.inline
-    def setThrowStubExceptions(value: Boolean): Self = this.set("throwStubExceptions", value.asInstanceOf[js.Any])
+    def setThrowStubExceptions(value: Boolean): Self = StObject.set(x, "throwStubExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThrowStubExceptions: Self = this.set("throwStubExceptions", js.undefined)
+    def setThrowStubExceptionsUndefined: Self = StObject.set(x, "throwStubExceptions", js.undefined)
     
     @scala.inline
-    def setWait(value: Boolean): Self = this.set("wait", value.asInstanceOf[js.Any])
+    def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWait: Self = this.set("wait", js.undefined)
+    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

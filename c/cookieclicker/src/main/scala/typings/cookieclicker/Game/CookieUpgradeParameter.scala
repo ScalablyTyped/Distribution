@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CookieUpgradeParameter extends js.Object {
+trait CookieUpgradeParameter extends StObject {
   
   var name: String = js.native
   
@@ -30,36 +31,24 @@ object CookieUpgradeParameter {
   }
   
   @scala.inline
-  implicit class CookieUpgradeParameterOps[Self <: CookieUpgradeParameter] (val x: Self) extends AnyVal {
+  implicit class CookieUpgradeParameterMutableBuilder[Self <: CookieUpgradeParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequire(value: String): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
     @scala.inline
-    def setPower(value: Double): Self = this.set("power", value.asInstanceOf[js.Any])
+    def setSeason(value: String): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire(value: String): Self = this.set("require", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire: Self = this.set("require", js.undefined)
-    
-    @scala.inline
-    def setSeason(value: String): Self = this.set("season", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeason: Self = this.set("season", js.undefined)
+    def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
   }
 }

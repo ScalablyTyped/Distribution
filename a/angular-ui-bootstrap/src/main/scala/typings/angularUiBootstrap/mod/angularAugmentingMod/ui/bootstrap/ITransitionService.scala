@@ -2,6 +2,7 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import typings.angular.mod.IAugmentedJQuery
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * WARNING: $transition is now deprecated. Use $animate from ngAnimate instead.
   */
 @js.native
-trait ITransitionService extends js.Object {
+trait ITransitionService extends StObject {
   
   /**
     * Provides a consistent interface to trigger CSS 3 transitions and to be informed when they complete.

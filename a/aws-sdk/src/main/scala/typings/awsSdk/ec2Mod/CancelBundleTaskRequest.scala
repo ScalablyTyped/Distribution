@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelBundleTaskRequest extends js.Object {
+trait CancelBundleTaskRequest extends StObject {
   
   /**
     * The ID of the bundle task.
@@ -26,27 +27,15 @@ object CancelBundleTaskRequest {
   }
   
   @scala.inline
-  implicit class CancelBundleTaskRequestOps[Self <: CancelBundleTaskRequest] (val x: Self) extends AnyVal {
+  implicit class CancelBundleTaskRequestMutableBuilder[Self <: CancelBundleTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBundleId(value: BundleId): Self = this.set("BundleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

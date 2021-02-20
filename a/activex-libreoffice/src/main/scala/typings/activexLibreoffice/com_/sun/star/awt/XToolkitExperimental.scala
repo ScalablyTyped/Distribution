@@ -8,19 +8,14 @@ import typings.activexLibreoffice.com_.sun.star.datatransfer.dnd.XDragSource
 import typings.activexLibreoffice.com_.sun.star.datatransfer.dnd.XDropTarget
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Work in progress, don't use unless you know what you are doing. */
 @js.native
-trait XToolkitExperimental
-  extends XToolkit
-     with XDataTransferProviderAccess
-     with XSystemChildFactory
-     with XMessageBoxFactory
-     with XExtendedToolkit
-     with XReschedule {
+trait XToolkitExperimental extends XToolkit2 {
   
   /** Get the number of OpenGL buffer swaps. */
   val OpenGLBufferSwapCounter: Double = js.native
@@ -83,33 +78,21 @@ object XToolkitExperimental {
   }
   
   @scala.inline
-  implicit class XToolkitExperimentalOps[Self <: XToolkitExperimental] (val x: Self) extends AnyVal {
+  implicit class XToolkitExperimentalMutableBuilder[Self <: XToolkitExperimental] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetOpenGLBufferSwapCounter(value: () => Double): Self = StObject.set(x, "getOpenGLBufferSwapCounter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpenGLBufferSwapCounter(value: Double): Self = StObject.set(x, "OpenGLBufferSwapCounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPause(value: Double => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpenGLBufferSwapCounter(value: Double): Self = this.set("OpenGLBufferSwapCounter", value.asInstanceOf[js.Any])
+    def setProcessEventsToIdle(value: () => Unit): Self = StObject.set(x, "processEventsToIdle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOpenGLBufferSwapCounter(value: () => Double): Self = this.set("getOpenGLBufferSwapCounter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPause(value: Double => Unit): Self = this.set("pause", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProcessEventsToIdle(value: () => Unit): Self = this.set("processEventsToIdle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDeterministicScheduling(value: Boolean => Unit): Self = this.set("setDeterministicScheduling", js.Any.fromFunction1(value))
+    def setSetDeterministicScheduling(value: Boolean => Unit): Self = StObject.set(x, "setDeterministicScheduling", js.Any.fromFunction1(value))
   }
 }

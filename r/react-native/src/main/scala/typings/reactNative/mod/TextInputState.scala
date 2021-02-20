@@ -1,6 +1,7 @@
 package typings.reactNative.mod
 
 import typings.react.mod.ElementRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * should be funneled through here
   */
 @js.native
-trait TextInputState extends js.Object {
+trait TextInputState extends StObject {
   
   /**
     * @param textField ref of the text field to focus

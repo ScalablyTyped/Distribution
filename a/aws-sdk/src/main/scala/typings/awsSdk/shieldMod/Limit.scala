@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Limit extends js.Object {
+trait Limit extends StObject {
   
   /**
     * The maximum number of protections that can be created for the specified Type.
@@ -26,30 +27,18 @@ object Limit {
   }
   
   @scala.inline
-  implicit class LimitOps[Self <: Limit] (val x: Self) extends AnyVal {
+  implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Long): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Long): Self = this.set("Max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax: Self = this.set("Max", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

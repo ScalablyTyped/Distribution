@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.LayerTree
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.Rect
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProfileSnapshotRequest extends js.Object {
+trait ProfileSnapshotRequest extends StObject {
   
   /**
     * The clip rectangle to apply when replaying the snapshot.
@@ -38,39 +39,27 @@ object ProfileSnapshotRequest {
   }
   
   @scala.inline
-  implicit class ProfileSnapshotRequestOps[Self <: ProfileSnapshotRequest] (val x: Self) extends AnyVal {
+  implicit class ProfileSnapshotRequestMutableBuilder[Self <: ProfileSnapshotRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClipRect(value: Rect): Self = StObject.set(x, "clipRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClipRectUndefined: Self = StObject.set(x, "clipRect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinDuration(value: Double): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
+    def setMinDurationUndefined: Self = StObject.set(x, "minDuration", js.undefined)
     
     @scala.inline
-    def setClipRect(value: Rect): Self = this.set("clipRect", value.asInstanceOf[js.Any])
+    def setMinRepeatCount(value: integer): Self = StObject.set(x, "minRepeatCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClipRect: Self = this.set("clipRect", js.undefined)
+    def setMinRepeatCountUndefined: Self = StObject.set(x, "minRepeatCount", js.undefined)
     
     @scala.inline
-    def setMinDuration(value: Double): Self = this.set("minDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinDuration: Self = this.set("minDuration", js.undefined)
-    
-    @scala.inline
-    def setMinRepeatCount(value: integer): Self = this.set("minRepeatCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinRepeatCount: Self = this.set("minRepeatCount", js.undefined)
+    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
   }
 }

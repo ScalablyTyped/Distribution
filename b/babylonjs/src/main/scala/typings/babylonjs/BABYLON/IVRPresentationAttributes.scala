@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVRPresentationAttributes extends js.Object {
+trait IVRPresentationAttributes extends StObject {
   
   /**
     * Enables foveation in VR to improve perf. 0 none, 1 low, 2 medium, 3 high (Default is 1)
@@ -26,24 +27,12 @@ object IVRPresentationAttributes {
   }
   
   @scala.inline
-  implicit class IVRPresentationAttributesOps[Self <: IVRPresentationAttributes] (val x: Self) extends AnyVal {
+  implicit class IVRPresentationAttributesMutableBuilder[Self <: IVRPresentationAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFoveationLevel(value: Double): Self = StObject.set(x, "foveationLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFoveationLevel(value: Double): Self = this.set("foveationLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHighRefreshRate(value: Boolean): Self = this.set("highRefreshRate", value.asInstanceOf[js.Any])
+    def setHighRefreshRate(value: Boolean): Self = StObject.set(x, "highRefreshRate", value.asInstanceOf[js.Any])
   }
 }

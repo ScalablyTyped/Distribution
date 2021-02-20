@@ -1,11 +1,12 @@
 package typings.servicenow.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RESTAPIResponseStream extends js.Object {
+trait RESTAPIResponseStream extends StObject {
   
   def writeStream(stream: js.Object): Unit = js.native
   
@@ -20,24 +21,12 @@ object RESTAPIResponseStream {
   }
   
   @scala.inline
-  implicit class RESTAPIResponseStreamOps[Self <: RESTAPIResponseStream] (val x: Self) extends AnyVal {
+  implicit class RESTAPIResponseStreamMutableBuilder[Self <: RESTAPIResponseStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWriteStream(value: js.Object => Unit): Self = StObject.set(x, "writeStream", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWriteStream(value: js.Object => Unit): Self = this.set("writeStream", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteString(value: String => Unit): Self = this.set("writeString", js.Any.fromFunction1(value))
+    def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaGooglePrivacyDlpV2LDiversityHistogramBucket extends js.Object {
+trait SchemaGooglePrivacyDlpV2LDiversityHistogramBucket extends StObject {
   
   /**
     * Total number of equivalence classes in this bucket.
@@ -44,51 +45,39 @@ object SchemaGooglePrivacyDlpV2LDiversityHistogramBucket {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2LDiversityHistogramBucketOps[Self <: SchemaGooglePrivacyDlpV2LDiversityHistogramBucket] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2LDiversityHistogramBucketMutableBuilder[Self <: SchemaGooglePrivacyDlpV2LDiversityHistogramBucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketValueCount(value: String): Self = StObject.set(x, "bucketValueCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketSize(value: String): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    def setBucketValueCountUndefined: Self = StObject.set(x, "bucketValueCount", js.undefined)
     
     @scala.inline
-    def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    def setBucketValues(value: js.Array[SchemaGooglePrivacyDlpV2LDiversityEquivalenceClass]): Self = StObject.set(x, "bucketValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketValueCount(value: String): Self = this.set("bucketValueCount", value.asInstanceOf[js.Any])
+    def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
     @scala.inline
-    def deleteBucketValueCount: Self = this.set("bucketValueCount", js.undefined)
+    def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2LDiversityEquivalenceClass*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
     
     @scala.inline
-    def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2LDiversityEquivalenceClass*): Self = this.set("bucketValues", js.Array(value :_*))
+    def setSensitiveValueFrequencyLowerBound(value: String): Self = StObject.set(x, "sensitiveValueFrequencyLowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketValues(value: js.Array[SchemaGooglePrivacyDlpV2LDiversityEquivalenceClass]): Self = this.set("bucketValues", value.asInstanceOf[js.Any])
+    def setSensitiveValueFrequencyLowerBoundUndefined: Self = StObject.set(x, "sensitiveValueFrequencyLowerBound", js.undefined)
     
     @scala.inline
-    def deleteBucketValues: Self = this.set("bucketValues", js.undefined)
+    def setSensitiveValueFrequencyUpperBound(value: String): Self = StObject.set(x, "sensitiveValueFrequencyUpperBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSensitiveValueFrequencyLowerBound(value: String): Self = this.set("sensitiveValueFrequencyLowerBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensitiveValueFrequencyLowerBound: Self = this.set("sensitiveValueFrequencyLowerBound", js.undefined)
-    
-    @scala.inline
-    def setSensitiveValueFrequencyUpperBound(value: String): Self = this.set("sensitiveValueFrequencyUpperBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensitiveValueFrequencyUpperBound: Self = this.set("sensitiveValueFrequencyUpperBound", js.undefined)
+    def setSensitiveValueFrequencyUpperBoundUndefined: Self = StObject.set(x, "sensitiveValueFrequencyUpperBound", js.undefined)
   }
 }

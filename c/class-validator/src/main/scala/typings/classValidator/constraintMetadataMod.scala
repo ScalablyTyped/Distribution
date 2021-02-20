@@ -1,16 +1,16 @@
 package typings.classValidator
 
 import typings.classValidator.validatorConstraintInterfaceMod.ValidatorConstraintInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/metadata/ConstraintMetadata", JSImport.Namespace)
-@js.native
-object constraintMetadataMod extends js.Object {
+object constraintMetadataMod {
   
+  @JSImport("class-validator/types/metadata/ConstraintMetadata", "ConstraintMetadata")
   @js.native
-  class ConstraintMetadata protected () extends js.Object {
+  class ConstraintMetadata protected () extends StObject {
     def this(target: js.Function) = this()
     def this(target: js.Function, name: String) = this()
     def this(target: js.Function, name: js.UndefOr[scala.Nothing], async: Boolean) = this()

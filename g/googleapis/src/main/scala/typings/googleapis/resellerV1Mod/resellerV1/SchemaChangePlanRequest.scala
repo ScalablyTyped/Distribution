@@ -1,5 +1,6 @@
 package typings.googleapis.resellerV1Mod.resellerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for the ChangePlan rpc request.
   */
 @js.native
-trait SchemaChangePlanRequest extends js.Object {
+trait SchemaChangePlanRequest extends StObject {
   
   /**
     * Google-issued code (100 char max) for discounted pricing on subscription
@@ -62,48 +63,36 @@ object SchemaChangePlanRequest {
   }
   
   @scala.inline
-  implicit class SchemaChangePlanRequestOps[Self <: SchemaChangePlanRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaChangePlanRequestMutableBuilder[Self <: SchemaChangePlanRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDealCode(value: String): Self = StObject.set(x, "dealCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDealCodeUndefined: Self = StObject.set(x, "dealCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDealCode(value: String): Self = this.set("dealCode", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDealCode: Self = this.set("dealCode", js.undefined)
+    def setPlanName(value: String): Self = StObject.set(x, "planName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPlanNameUndefined: Self = StObject.set(x, "planName", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPurchaseOrderId(value: String): Self = StObject.set(x, "purchaseOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanName(value: String): Self = this.set("planName", value.asInstanceOf[js.Any])
+    def setPurchaseOrderIdUndefined: Self = StObject.set(x, "purchaseOrderId", js.undefined)
     
     @scala.inline
-    def deletePlanName: Self = this.set("planName", js.undefined)
+    def setSeats(value: SchemaSeats): Self = StObject.set(x, "seats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseOrderId(value: String): Self = this.set("purchaseOrderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchaseOrderId: Self = this.set("purchaseOrderId", js.undefined)
-    
-    @scala.inline
-    def setSeats(value: SchemaSeats): Self = this.set("seats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeats: Self = this.set("seats", js.undefined)
+    def setSeatsUndefined: Self = StObject.set(x, "seats", js.undefined)
   }
 }

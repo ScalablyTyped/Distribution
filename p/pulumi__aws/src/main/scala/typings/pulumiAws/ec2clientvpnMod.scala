@@ -11,14 +11,14 @@ import typings.pulumiAws.networkAssociationMod.NetworkAssociationState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/ec2clientvpn", JSImport.Namespace)
-@js.native
-object ec2clientvpnMod extends js.Object {
+object ec2clientvpnMod {
   
+  @JSImport("@pulumi/aws/ec2clientvpn", "AuthorizationRule")
   @js.native
   class AuthorizationRule protected ()
     extends typings.pulumiAws.authorizationRuleMod.AuthorizationRule {
@@ -33,8 +33,7 @@ object ec2clientvpnMod extends js.Object {
     def this(name: String, args: AuthorizationRuleArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object AuthorizationRule extends js.Object {
+  object AuthorizationRule {
     
     /**
       * Get an existing AuthorizationRule resource's state with the given name, ID, and optional extra
@@ -45,18 +44,29 @@ object ec2clientvpnMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/ec2clientvpn", "AuthorizationRule.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.authorizationRuleMod.AuthorizationRule = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "AuthorizationRule.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.authorizationRuleMod.AuthorizationRule = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "AuthorizationRule.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AuthorizationRuleState): typings.pulumiAws.authorizationRuleMod.AuthorizationRule = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "AuthorizationRule.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AuthorizationRuleState, opts: CustomResourceOptions): typings.pulumiAws.authorizationRuleMod.AuthorizationRule = js.native
     
     /**
       * Returns true if the given object is an instance of AuthorizationRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/ec2clientvpn", "AuthorizationRule.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/authorizationRule.AuthorizationRule */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/ec2clientvpn", "Endpoint")
   @js.native
   class Endpoint protected ()
     extends typings.pulumiAws.ec2clientvpnEndpointMod.Endpoint {
@@ -71,8 +81,7 @@ object ec2clientvpnMod extends js.Object {
     def this(name: String, args: EndpointArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Endpoint extends js.Object {
+  object Endpoint {
     
     /**
       * Get an existing Endpoint resource's state with the given name, ID, and optional extra
@@ -83,18 +92,29 @@ object ec2clientvpnMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/ec2clientvpn", "Endpoint.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.ec2clientvpnEndpointMod.Endpoint = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "Endpoint.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ec2clientvpnEndpointMod.Endpoint = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "Endpoint.get")
+    @js.native
     def get(name: String, id: Input[ID], state: EndpointState): typings.pulumiAws.ec2clientvpnEndpointMod.Endpoint = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "Endpoint.get")
+    @js.native
     def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): typings.pulumiAws.ec2clientvpnEndpointMod.Endpoint = js.native
     
     /**
       * Returns true if the given object is an instance of Endpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/ec2clientvpn", "Endpoint.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/endpoint.Endpoint */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/ec2clientvpn", "NetworkAssociation")
   @js.native
   class NetworkAssociation protected ()
     extends typings.pulumiAws.networkAssociationMod.NetworkAssociation {
@@ -109,8 +129,7 @@ object ec2clientvpnMod extends js.Object {
     def this(name: String, args: NetworkAssociationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object NetworkAssociation extends js.Object {
+  object NetworkAssociation {
     
     /**
       * Get an existing NetworkAssociation resource's state with the given name, ID, and optional extra
@@ -121,18 +140,29 @@ object ec2clientvpnMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/ec2clientvpn", "NetworkAssociation.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.networkAssociationMod.NetworkAssociation = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "NetworkAssociation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.networkAssociationMod.NetworkAssociation = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "NetworkAssociation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: NetworkAssociationState): typings.pulumiAws.networkAssociationMod.NetworkAssociation = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "NetworkAssociation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: NetworkAssociationState, opts: CustomResourceOptions): typings.pulumiAws.networkAssociationMod.NetworkAssociation = js.native
     
     /**
       * Returns true if the given object is an instance of NetworkAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/ec2clientvpn", "NetworkAssociation.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/networkAssociation.NetworkAssociation */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/ec2clientvpn", "Route")
   @js.native
   class Route protected ()
     extends typings.pulumiAws.ec2clientvpnRouteMod.Route {
@@ -147,8 +177,7 @@ object ec2clientvpnMod extends js.Object {
     def this(name: String, args: RouteArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Route extends js.Object {
+  object Route {
     
     /**
       * Get an existing Route resource's state with the given name, ID, and optional extra
@@ -159,15 +188,25 @@ object ec2clientvpnMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/ec2clientvpn", "Route.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.ec2clientvpnRouteMod.Route = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "Route.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ec2clientvpnRouteMod.Route = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "Route.get")
+    @js.native
     def get(name: String, id: Input[ID], state: RouteState): typings.pulumiAws.ec2clientvpnRouteMod.Route = js.native
+    @JSImport("@pulumi/aws/ec2clientvpn", "Route.get")
+    @js.native
     def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): typings.pulumiAws.ec2clientvpnRouteMod.Route = js.native
     
     /**
       * Returns true if the given object is an instance of Route.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/ec2clientvpn", "Route.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/route.Route */ Boolean = js.native
   }
 }

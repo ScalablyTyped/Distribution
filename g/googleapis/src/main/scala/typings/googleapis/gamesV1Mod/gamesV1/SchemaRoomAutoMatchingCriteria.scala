@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for a room auto-match criteria object.
   */
 @js.native
-trait SchemaRoomAutoMatchingCriteria extends js.Object {
+trait SchemaRoomAutoMatchingCriteria extends StObject {
   
   /**
     * A bitmask indicating when auto-matches are valid. When ANDed with other
@@ -44,42 +45,30 @@ object SchemaRoomAutoMatchingCriteria {
   }
   
   @scala.inline
-  implicit class SchemaRoomAutoMatchingCriteriaOps[Self <: SchemaRoomAutoMatchingCriteria] (val x: Self) extends AnyVal {
+  implicit class SchemaRoomAutoMatchingCriteriaMutableBuilder[Self <: SchemaRoomAutoMatchingCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusiveBitmask(value: String): Self = StObject.set(x, "exclusiveBitmask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusiveBitmaskUndefined: Self = StObject.set(x, "exclusiveBitmask", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveBitmask(value: String): Self = this.set("exclusiveBitmask", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteExclusiveBitmask: Self = this.set("exclusiveBitmask", js.undefined)
+    def setMaxAutoMatchingPlayers(value: Double): Self = StObject.set(x, "maxAutoMatchingPlayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMaxAutoMatchingPlayersUndefined: Self = StObject.set(x, "maxAutoMatchingPlayers", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMinAutoMatchingPlayers(value: Double): Self = StObject.set(x, "minAutoMatchingPlayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAutoMatchingPlayers(value: Double): Self = this.set("maxAutoMatchingPlayers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAutoMatchingPlayers: Self = this.set("maxAutoMatchingPlayers", js.undefined)
-    
-    @scala.inline
-    def setMinAutoMatchingPlayers(value: Double): Self = this.set("minAutoMatchingPlayers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinAutoMatchingPlayers: Self = this.set("minAutoMatchingPlayers", js.undefined)
+    def setMinAutoMatchingPlayersUndefined: Self = StObject.set(x, "minAutoMatchingPlayers", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Additional detailed information about a message response and how it was generated. */
 @js.native
-trait MessageOutputDebug extends js.Object {
+trait MessageOutputDebug extends StObject {
   
   /** Assistant sets this to true when this message response concludes or interrupts a dialog. */
   var branch_exited: js.UndefOr[Boolean] = js.native
@@ -29,48 +30,36 @@ object MessageOutputDebug {
   }
   
   @scala.inline
-  implicit class MessageOutputDebugOps[Self <: MessageOutputDebug] (val x: Self) extends AnyVal {
+  implicit class MessageOutputDebugMutableBuilder[Self <: MessageOutputDebug] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch_exited(value: Boolean): Self = StObject.set(x, "branch_exited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranch_exitedUndefined: Self = StObject.set(x, "branch_exited", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranch_exited_reason(value: String): Self = StObject.set(x, "branch_exited_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch_exited(value: Boolean): Self = this.set("branch_exited", value.asInstanceOf[js.Any])
+    def setBranch_exited_reasonUndefined: Self = StObject.set(x, "branch_exited_reason", js.undefined)
     
     @scala.inline
-    def deleteBranch_exited: Self = this.set("branch_exited", js.undefined)
+    def setLog_messages(value: js.Array[DialogLogMessage]): Self = StObject.set(x, "log_messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch_exited_reason(value: String): Self = this.set("branch_exited_reason", value.asInstanceOf[js.Any])
+    def setLog_messagesUndefined: Self = StObject.set(x, "log_messages", js.undefined)
     
     @scala.inline
-    def deleteBranch_exited_reason: Self = this.set("branch_exited_reason", js.undefined)
+    def setLog_messagesVarargs(value: DialogLogMessage*): Self = StObject.set(x, "log_messages", js.Array(value :_*))
     
     @scala.inline
-    def setLog_messagesVarargs(value: DialogLogMessage*): Self = this.set("log_messages", js.Array(value :_*))
+    def setNodes_visited(value: js.Array[DialogNodesVisited]): Self = StObject.set(x, "nodes_visited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog_messages(value: js.Array[DialogLogMessage]): Self = this.set("log_messages", value.asInstanceOf[js.Any])
+    def setNodes_visitedUndefined: Self = StObject.set(x, "nodes_visited", js.undefined)
     
     @scala.inline
-    def deleteLog_messages: Self = this.set("log_messages", js.undefined)
-    
-    @scala.inline
-    def setNodes_visitedVarargs(value: DialogNodesVisited*): Self = this.set("nodes_visited", js.Array(value :_*))
-    
-    @scala.inline
-    def setNodes_visited(value: js.Array[DialogNodesVisited]): Self = this.set("nodes_visited", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodes_visited: Self = this.set("nodes_visited", js.undefined)
+    def setNodes_visitedVarargs(value: DialogNodesVisited*): Self = StObject.set(x, "nodes_visited", js.Array(value :_*))
   }
 }

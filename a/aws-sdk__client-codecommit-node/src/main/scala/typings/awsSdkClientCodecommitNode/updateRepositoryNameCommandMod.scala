@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesUpdateRepositoryNameInputMod.Upda
 import typings.awsSdkClientCodecommitNode.typesUpdateRepositoryNameOutputMod.UpdateRepositoryNameOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/UpdateRepositoryNameCommand", JSImport.Namespace)
-@js.native
-object updateRepositoryNameCommandMod extends js.Object {
+object updateRepositoryNameCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/UpdateRepositoryNameCommand", "UpdateRepositoryNameCommand")
   @js.native
   class UpdateRepositoryNameCommand protected () extends Command[
           InputTypesUnion, 

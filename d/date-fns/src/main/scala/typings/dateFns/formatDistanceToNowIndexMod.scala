@@ -2,20 +2,26 @@ package typings.dateFns
 
 import typings.dateFns.anon.IncludeSeconds
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/formatDistanceToNow/index", JSImport.Namespace)
-@js.native
-object formatDistanceToNowIndexMod extends js.Object {
+object formatDistanceToNowIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/esm/formatDistanceToNow/index", JSImport.Default)
+    @js.native
     def apply(date: Double): String = js.native
+    @JSImport("date-fns/esm/formatDistanceToNow/index", JSImport.Default)
+    @js.native
     def apply(date: Double, options: IncludeSeconds): String = js.native
+    @JSImport("date-fns/esm/formatDistanceToNow/index", JSImport.Default)
+    @js.native
     def apply(date: Date): String = js.native
+    @JSImport("date-fns/esm/formatDistanceToNow/index", JSImport.Default)
+    @js.native
     def apply(date: Date, options: IncludeSeconds): String = js.native
   }
 }

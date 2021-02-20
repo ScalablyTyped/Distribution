@@ -2,12 +2,13 @@ package typings.nodeRedEditorClient.mod
 
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackInstanceEntry extends js.Object {
+trait StackInstanceEntry extends StObject {
   
   def collapse(): js.UndefOr[Boolean] = js.native
   
@@ -48,51 +49,39 @@ object StackInstanceEntry {
   }
   
   @scala.inline
-  implicit class StackInstanceEntryOps[Self <: StackInstanceEntry] (val x: Self) extends AnyVal {
+  implicit class StackInstanceEntryMutableBuilder[Self <: StackInstanceEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapse(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
     @scala.inline
-    def setCollapse(value: () => js.UndefOr[Boolean]): Self = this.set("collapse", js.Any.fromFunction0(value))
+    def setContainer(value: JQuery[HTMLDivElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: JQuery[HTMLDivElement]): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setContent(value: JQuery[HTMLDivElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: JQuery[HTMLDivElement]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentWrap(value: JQuery[HTMLDivElement]): Self = StObject.set(x, "contentWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentWrap(value: JQuery[HTMLDivElement]): Self = this.set("contentWrap", value.asInstanceOf[js.Any])
+    def setExpand(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "expand", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExpand(value: () => js.UndefOr[Boolean]): Self = this.set("expand", js.Any.fromFunction0(value))
+    def setHeader(value: JQuery[HTMLDivElement]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: JQuery[HTMLDivElement]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "isExpanded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsExpanded(value: () => Boolean): Self = this.set("isExpanded", js.Any.fromFunction0(value))
+    def setTitle(value: JQuery[HTMLDivElement]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: JQuery[HTMLDivElement]): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToggle(value: () => Boolean): Self = this.set("toggle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCollapsible(value: Boolean): Self = this.set("collapsible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    def setToggle(value: () => Boolean): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

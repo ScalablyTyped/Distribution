@@ -2,6 +2,7 @@ package typings.oracledb.mod
 
 import typings.node.Buffer
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaoverview
   */
 @js.native
-trait SodaDatabase extends js.Object {
+trait SodaDatabase extends StObject {
   
   /**
     * Creates a SODA collection of the given name. If you try to create a collection, and a collection with the

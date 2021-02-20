@@ -2,12 +2,13 @@ package typings.leafletGeosearch.mod
 
 import typings.leafletGeosearch.leafletGeosearchNumbers.`0`
 import typings.leafletGeosearch.leafletGeosearchNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenStreetMapProviderOptionsOther extends js.Object {
+trait OpenStreetMapProviderOptionsOther extends StObject {
   
   var debug: js.UndefOr[`0` | `1`] = js.native
   
@@ -24,36 +25,24 @@ object OpenStreetMapProviderOptionsOther {
   }
   
   @scala.inline
-  implicit class OpenStreetMapProviderOptionsOtherOps[Self <: OpenStreetMapProviderOptionsOther] (val x: Self) extends AnyVal {
+  implicit class OpenStreetMapProviderOptionsOtherMutableBuilder[Self <: OpenStreetMapProviderOptionsOther] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: `0` | `1`): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDedupe(value: `0` | `1`): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: `0` | `1`): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDedupeUndefined: Self = StObject.set(x, "dedupe", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDedupe(value: `0` | `1`): Self = this.set("dedupe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDedupe: Self = this.set("dedupe", js.undefined)
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

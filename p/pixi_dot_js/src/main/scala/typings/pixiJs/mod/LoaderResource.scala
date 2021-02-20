@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,18 +16,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class LoaderResource ()
   extends typings.pixiJs.PIXI.LoaderResource
-@JSImport("pixi.js", "LoaderResource")
-@js.native
-object LoaderResource extends js.Object {
+object LoaderResource {
   
-  var EMPTY_GIF: String = js.native
-  
-  def setExtensionLoadType(extname: String, loadType: Double): Unit = js.native
-  
-  def setExtensionXhrType(extname: String, xhrType: String): Unit = js.native
-  
+  @JSImport("pixi.js", "LoaderResource")
   @js.native
-  object LOAD_TYPE extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("pixi.js", "LoaderResource.EMPTY_GIF")
+  @js.native
+  def EMPTY_GIF: String = js.native
+  @scala.inline
+  def EMPTY_GIF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_GIF")(x.asInstanceOf[js.Any])
+  
+  @JSImport("pixi.js", "LoaderResource.LOAD_TYPE")
+  @js.native
+  object LOAD_TYPE extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE with Double] = js.native
@@ -40,8 +44,9 @@ object LoaderResource extends js.Object {
     /* 1 */ val XHR: typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE.XHR with Double = js.native
   }
   
+  @JSImport("pixi.js", "LoaderResource.STATUS_FLAGS")
   @js.native
-  object STATUS_FLAGS extends js.Object {
+  object STATUS_FLAGS extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS with Double] = js.native
@@ -55,8 +60,9 @@ object LoaderResource extends js.Object {
     /* 0 */ val NONE: typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS.NONE with Double = js.native
   }
   
+  @JSImport("pixi.js", "LoaderResource.TYPE")
   @js.native
-  object TYPE extends js.Object {
+  object TYPE extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.TYPE with Double] = js.native
@@ -76,8 +82,9 @@ object LoaderResource extends js.Object {
     /* 2 */ val XML: typings.pixiJs.PIXI.LoaderResource.TYPE.XML with Double = js.native
   }
   
+  @JSImport("pixi.js", "LoaderResource.XHR_RESPONSE_TYPE")
   @js.native
-  object XHR_RESPONSE_TYPE extends js.Object {
+  object XHR_RESPONSE_TYPE extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE with String] = js.native
@@ -94,4 +101,12 @@ object LoaderResource extends js.Object {
     
     /* "text" */ val TEXT: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.TEXT with String = js.native
   }
+  
+  @JSImport("pixi.js", "LoaderResource.setExtensionLoadType")
+  @js.native
+  def setExtensionLoadType(extname: String, loadType: Double): Unit = js.native
+  
+  @JSImport("pixi.js", "LoaderResource.setExtensionXhrType")
+  @js.native
+  def setExtensionXhrType(extname: String, xhrType: String): Unit = js.native
 }

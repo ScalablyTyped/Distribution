@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.testInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloneOperationInformation extends js.Object {
+trait CloneOperationInformation extends StObject {
   
   var cloneStatistics: CloneStatistics = js.native
   
@@ -99,60 +100,48 @@ object CloneOperationInformation {
   }
   
   @scala.inline
-  implicit class CloneOperationInformationOps[Self <: CloneOperationInformation] (val x: Self) extends AnyVal {
+  implicit class CloneOperationInformationMutableBuilder[Self <: CloneOperationInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloneStatistics(value: CloneStatistics): Self = StObject.set(x, "cloneStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionDate(value: Date): Self = StObject.set(x, "completionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneStatistics(value: CloneStatistics): Self = this.set("cloneStatistics", value.asInstanceOf[js.Any])
+    def setDestinationObject(value: ShallowReference): Self = StObject.set(x, "destinationObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionDate(value: Date): Self = this.set("completionDate", value.asInstanceOf[js.Any])
+    def setDestinationPlan(value: ShallowReference): Self = StObject.set(x, "destinationPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Date): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setDestinationProject(value: ShallowReference): Self = StObject.set(x, "destinationProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationObject(value: ShallowReference): Self = this.set("destinationObject", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationPlan(value: ShallowReference): Self = this.set("destinationPlan", value.asInstanceOf[js.Any])
+    def setOpId(value: Double): Self = StObject.set(x, "opId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationProject(value: ShallowReference): Self = this.set("destinationProject", value.asInstanceOf[js.Any])
+    def setResultObjectType(value: ResultObjectType): Self = StObject.set(x, "resultObjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setSourceObject(value: ShallowReference): Self = StObject.set(x, "sourceObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpId(value: Double): Self = this.set("opId", value.asInstanceOf[js.Any])
+    def setSourcePlan(value: ShallowReference): Self = StObject.set(x, "sourcePlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultObjectType(value: ResultObjectType): Self = this.set("resultObjectType", value.asInstanceOf[js.Any])
+    def setSourceProject(value: ShallowReference): Self = StObject.set(x, "sourceProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceObject(value: ShallowReference): Self = this.set("sourceObject", value.asInstanceOf[js.Any])
+    def setState(value: CloneOperationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcePlan(value: ShallowReference): Self = this.set("sourcePlan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceProject(value: ShallowReference): Self = this.set("sourceProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: CloneOperationState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

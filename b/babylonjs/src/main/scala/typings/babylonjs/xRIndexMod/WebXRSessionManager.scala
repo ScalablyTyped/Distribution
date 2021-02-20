@@ -2,6 +2,7 @@ package typings.babylonjs.xRIndexMod
 
 import typings.babylonjs.XRSessionMode
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,14 +19,14 @@ class WebXRSessionManager protected ()
   scene: Scene) = this()
 }
 /* static members */
-@JSImport("babylonjs/XR/index", "WebXRSessionManager")
-@js.native
-object WebXRSessionManager extends js.Object {
+object WebXRSessionManager {
   
   /**
     * Returns a promise that resolves with a boolean indicating if the provided session mode is supported by this browser
     * @param sessionMode defines the session to test
     * @returns a promise with boolean as final value
     */
+  @JSImport("babylonjs/XR/index", "WebXRSessionManager.IsSessionSupportedAsync")
+  @js.native
   def IsSessionSupportedAsync(sessionMode: XRSessionMode): js.Promise[Boolean] = js.native
 }

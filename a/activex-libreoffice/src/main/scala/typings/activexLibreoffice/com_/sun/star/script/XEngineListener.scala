@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,27 +46,15 @@ object XEngineListener {
   }
   
   @scala.inline
-  implicit class XEngineListenerOps[Self <: XEngineListener] (val x: Self) extends AnyVal {
+  implicit class XEngineListenerMutableBuilder[Self <: XEngineListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinished(value: FinishEngineEvent => Unit): Self = StObject.set(x, "finished", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterrupt(value: InterruptEngineEvent => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFinished(value: FinishEngineEvent => Unit): Self = this.set("finished", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInterrupt(value: InterruptEngineEvent => Unit): Self = this.set("interrupt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRunning(value: EventObject => Unit): Self = this.set("running", js.Any.fromFunction1(value))
+    def setRunning(value: EventObject => Unit): Self = StObject.set(x, "running", js.Any.fromFunction1(value))
   }
 }

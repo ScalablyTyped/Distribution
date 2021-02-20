@@ -1,6 +1,7 @@
 package typings.extjs.Ext.layout
 
 import typings.extjs.Ext.layout.container.IContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,76 +90,64 @@ object IFormLayout {
   }
   
   @scala.inline
-  implicit class IFormLayoutOps[Self <: IFormLayout] (val x: Self) extends AnyVal {
+  implicit class IFormLayoutMutableBuilder[Self <: IFormLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("calculate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteCalculate: Self = this.set("calculate", js.undefined)
+    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCalculateOverflow(
       value: (/* ownerContext */ js.UndefOr[IContextItem], /* containerSize */ js.UndefOr[js.Any], /* dimensions */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("calculateOverflow", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "calculateOverflow", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteCalculateOverflow: Self = this.set("calculateOverflow", js.undefined)
+    def setCalculateOverflowUndefined: Self = StObject.set(x, "calculateOverflow", js.undefined)
     
     @scala.inline
-    def setCompleteLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("completeLayout", js.Any.fromFunction1(value))
+    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
     @scala.inline
-    def deleteCompleteLayout: Self = this.set("completeLayout", js.undefined)
+    def setCompleteLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "completeLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDoRenderPadder(value: (/* out */ js.UndefOr[js.Any], /* renderData */ js.UndefOr[js.Any]) => Unit): Self = this.set("doRenderPadder", js.Any.fromFunction2(value))
+    def setCompleteLayoutUndefined: Self = StObject.set(x, "completeLayout", js.undefined)
     
     @scala.inline
-    def deleteDoRenderPadder: Self = this.set("doRenderPadder", js.undefined)
+    def setDoRenderPadder(value: (/* out */ js.UndefOr[js.Any], /* renderData */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doRenderPadder", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setDoRenderPadderUndefined: Self = StObject.set(x, "doRenderPadder", js.undefined)
     
     @scala.inline
     def setGetContainerSize(
       value: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], /* ignoreOverflow */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("getContainerSize", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "getContainerSize", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGetContainerSize: Self = this.set("getContainerSize", js.undefined)
+    def setGetContainerSizeUndefined: Self = StObject.set(x, "getContainerSize", js.undefined)
     
     @scala.inline
-    def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = this.set("getItemSizePolicy", js.Any.fromFunction1(value))
+    def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetItemSizePolicy: Self = this.set("getItemSizePolicy", js.undefined)
+    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
     @scala.inline
-    def setGetOverflowXStyle(value: /* ownerContext */ js.UndefOr[IContextItem] => String): Self = this.set("getOverflowXStyle", js.Any.fromFunction1(value))
+    def setGetOverflowXStyle(value: /* ownerContext */ js.UndefOr[IContextItem] => String): Self = StObject.set(x, "getOverflowXStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetOverflowXStyle: Self = this.set("getOverflowXStyle", js.undefined)
+    def setGetOverflowXStyleUndefined: Self = StObject.set(x, "getOverflowXStyle", js.undefined)
     
     @scala.inline
-    def setGetOverflowYStyle(value: /* ownerContext */ js.UndefOr[IContextItem] => String): Self = this.set("getOverflowYStyle", js.Any.fromFunction1(value))
+    def setGetOverflowYStyle(value: /* ownerContext */ js.UndefOr[IContextItem] => String): Self = StObject.set(x, "getOverflowYStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetOverflowYStyle: Self = this.set("getOverflowYStyle", js.undefined)
+    def setGetOverflowYStyleUndefined: Self = StObject.set(x, "getOverflowYStyle", js.undefined)
     
     @scala.inline
-    def setGetScrollRangeFlags(value: js.Any): Self = this.set("getScrollRangeFlags", value.asInstanceOf[js.Any])
+    def setGetScrollRangeFlags(value: js.Any): Self = StObject.set(x, "getScrollRangeFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetScrollRangeFlags: Self = this.set("getScrollRangeFlags", js.undefined)
+    def setGetScrollRangeFlagsUndefined: Self = StObject.set(x, "getScrollRangeFlags", js.undefined)
   }
 }

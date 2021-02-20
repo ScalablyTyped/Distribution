@@ -1,11 +1,12 @@
 package typings.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gain extends js.Object {
+trait Gain extends StObject {
   
   /**
     *   Set the output level of the gain node.

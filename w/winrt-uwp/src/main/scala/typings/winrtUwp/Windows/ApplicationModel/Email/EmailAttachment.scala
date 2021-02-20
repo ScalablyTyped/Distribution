@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email attachment. */
 @js.native
-trait EmailAttachment extends js.Object {
+trait EmailAttachment extends StObject {
   
   /** Gets or sets a value that identifies the content of the attachment on a remote system. */
   var contentId: String = js.native
@@ -59,48 +60,36 @@ object EmailAttachment {
   }
   
   @scala.inline
-  implicit class EmailAttachmentOps[Self <: EmailAttachment] (val x: Self) extends AnyVal {
+  implicit class EmailAttachmentMutableBuilder[Self <: EmailAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentLocation(value: String): Self = StObject.set(x, "contentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: IRandomAccessStreamReference): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentId(value: String): Self = this.set("contentId", value.asInstanceOf[js.Any])
+    def setDownloadState(value: EmailAttachmentDownloadState): Self = StObject.set(x, "downloadState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLocation(value: String): Self = this.set("contentLocation", value.asInstanceOf[js.Any])
+    def setEstimatedDownloadSizeInBytes(value: Double): Self = StObject.set(x, "estimatedDownloadSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: IRandomAccessStreamReference): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadState(value: EmailAttachmentDownloadState): Self = this.set("downloadState", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedDownloadSizeInBytes(value: Double): Self = this.set("estimatedDownloadSizeInBytes", value.asInstanceOf[js.Any])
+    def setIsFromBaseMessage(value: Boolean): Self = StObject.set(x, "isFromBaseMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFromBaseMessage(value: Boolean): Self = this.set("isFromBaseMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsInline(value: Boolean): Self = this.set("isInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
   }
 }

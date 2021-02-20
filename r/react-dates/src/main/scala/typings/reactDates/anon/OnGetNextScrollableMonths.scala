@@ -1,12 +1,13 @@
 package typings.reactDates.anon
 
 import typings.reactDates.mod.OrientationShape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnGetNextScrollableMonths extends js.Object {
+trait OnGetNextScrollableMonths extends StObject {
   
   var onGetNextScrollableMonths: js.UndefOr[scala.Nothing] = js.native
   
@@ -23,24 +24,12 @@ object OnGetNextScrollableMonths {
   }
   
   @scala.inline
-  implicit class OnGetNextScrollableMonthsOps[Self <: OnGetNextScrollableMonths] (val x: Self) extends AnyVal {
+  implicit class OnGetNextScrollableMonthsMutableBuilder[Self <: OnGetNextScrollableMonths] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrientation(value: OrientationShape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrientation(value: OrientationShape): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

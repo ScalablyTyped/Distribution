@@ -6,16 +6,18 @@ import typings.materialTabs.tabBarComponentMod.MDCTabBar
 import typings.materialTabs.tabBarComponentMod.MDCTabBarFactory
 import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tabs/tab-bar-scroller/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/tabs/tab-bar-scroller/component", "MDCTabBarScroller")
   @js.native
-  class MDCTabBarScroller () extends MDCComponent[MDCTabBarScrollerFoundation] {
+  class MDCTabBarScroller protected () extends MDCComponent[MDCTabBarScrollerFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCTabBarScrollerFoundation, args: js.Any*) = this()
     
     def initialize(): Unit = js.native
     def initialize(tabBarFactory: MDCTabBarFactory): Unit = js.native
@@ -27,9 +29,10 @@ object componentMod extends js.Object {
     val tabBar: MDCTabBar = js.native
   }
   /* static members */
-  @js.native
-  object MDCTabBarScroller extends js.Object {
+  object MDCTabBarScroller {
     
+    @JSImport("@material/tabs/tab-bar-scroller/component", "MDCTabBarScroller.attachTo")
+    @js.native
     def attachTo(root: Element): MDCTabBarScroller = js.native
   }
 }

@@ -1,13 +1,14 @@
 package typings.novaEditorNode
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/file-stats/
 @js.native
-trait FileStats extends js.Object {
+trait FileStats extends StObject {
   
   val atime: Date = js.native
   
@@ -43,42 +44,30 @@ object FileStats {
   }
   
   @scala.inline
-  implicit class FileStatsOps[Self <: FileStats] (val x: Self) extends AnyVal {
+  implicit class FileStatsMutableBuilder[Self <: FileStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtime(value: Date): Self = this.set("atime", value.asInstanceOf[js.Any])
+    def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBirthtime(value: Date): Self = this.set("birthtime", value.asInstanceOf[js.Any])
+    def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCtime(value: Date): Self = this.set("ctime", value.asInstanceOf[js.Any])
+    def setIsSymbolicLink(value: () => Boolean): Self = StObject.set(x, "isSymbolicLink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDirectory(value: () => Boolean): Self = this.set("isDirectory", js.Any.fromFunction0(value))
+    def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFile(value: () => Boolean): Self = this.set("isFile", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsSymbolicLink(value: () => Boolean): Self = this.set("isSymbolicLink", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMtime(value: Date): Self = this.set("mtime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

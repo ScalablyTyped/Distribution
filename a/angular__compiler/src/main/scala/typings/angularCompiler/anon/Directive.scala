@@ -3,12 +3,13 @@ package typings.angularCompiler.anon
 import typings.angularCompiler.r3AstMod.Element
 import typings.angularCompiler.r3AstMod.Template
 import typings.angularCompiler.t2ApiMod.DirectiveMeta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Directive[DirectiveT /* <: DirectiveMeta */] extends js.Object {
+trait Directive[DirectiveT /* <: DirectiveMeta */] extends StObject {
   
   var directive: DirectiveT = js.native
   
@@ -23,24 +24,12 @@ object Directive {
   }
   
   @scala.inline
-  implicit class DirectiveOps[Self <: Directive[_], DirectiveT /* <: DirectiveMeta */] (val x: Self with Directive[DirectiveT]) extends AnyVal {
+  implicit class DirectiveMutableBuilder[Self <: Directive[_], DirectiveT /* <: DirectiveMeta */] (val x: Self with Directive[DirectiveT]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirective(value: DirectiveT): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirective(value: DirectiveT): Self = this.set("directive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: Element | Template): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setNode(value: Element | Template): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

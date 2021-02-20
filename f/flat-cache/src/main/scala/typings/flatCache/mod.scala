@@ -1,30 +1,47 @@
 package typings.flatCache
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("flat-cache", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("flat-cache", "clearAll")
+  @js.native
   def clearAll(): Boolean = js.native
+  @JSImport("flat-cache", "clearAll")
+  @js.native
   def clearAll(cacheDir: String): Boolean = js.native
   
+  @JSImport("flat-cache", "clearCacheById")
+  @js.native
   def clearCacheById(cacheId: String): Boolean = js.native
+  @JSImport("flat-cache", "clearCacheById")
+  @js.native
   def clearCacheById(cacheId: String, cacheDir: String): Boolean = js.native
   
+  @JSImport("flat-cache", "create")
+  @js.native
   def create(cacheId: String): Cache = js.native
+  @JSImport("flat-cache", "create")
+  @js.native
   def create(cacheId: String, cacheDir: String): Cache = js.native
   
+  @JSImport("flat-cache", "createFromFile")
+  @js.native
   def createFromFile(filePath: String): Cache = js.native
   
+  @JSImport("flat-cache", "load")
+  @js.native
   def load(cacheId: String): Cache = js.native
+  @JSImport("flat-cache", "load")
+  @js.native
   def load(cacheId: String, cacheDir: String): Cache = js.native
   
   @js.native
-  trait Cache extends js.Object {
+  trait Cache extends StObject {
     
     def all(): StringDictionary[js.Any] = js.native
     

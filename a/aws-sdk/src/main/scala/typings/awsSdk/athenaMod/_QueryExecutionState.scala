@@ -1,7 +1,8 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _QueryExecutionState extends js.Object
+trait _QueryExecutionState extends StObject

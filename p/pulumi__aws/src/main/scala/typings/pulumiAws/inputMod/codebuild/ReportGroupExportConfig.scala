@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.codebuild
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportGroupExportConfig extends js.Object {
+trait ReportGroupExportConfig extends StObject {
   
   /**
     * contains information about the S3 bucket where the run of a report is exported. see S3 Destination documented below.
@@ -28,27 +29,15 @@ object ReportGroupExportConfig {
   }
   
   @scala.inline
-  implicit class ReportGroupExportConfigOps[Self <: ReportGroupExportConfig] (val x: Self) extends AnyVal {
+  implicit class ReportGroupExportConfigMutableBuilder[Self <: ReportGroupExportConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3Destination(value: Input[ReportGroupExportConfigS3Destination]): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3Destination(value: Input[ReportGroupExportConfigS3Destination]): Self = this.set("s3Destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Destination: Self = this.set("s3Destination", js.undefined)
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -6,16 +6,16 @@ import typings.expressValidator.baseMod.Location
 import typings.expressValidator.baseMod.Meta
 import typings.expressValidator.baseMod.ValidationError
 import typings.expressValidator.contextItemMod.ContextItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-validator/src/context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
   
+  @JSImport("express-validator/src/context", "Context")
   @js.native
-  class Context protected () extends js.Object {
+  class Context protected () extends StObject {
     def this(
       fields: js.Array[String],
       locations: js.Array[Location],
@@ -61,11 +61,11 @@ object contextMod extends js.Object {
     - typings.expressValidator.anon.Nullable
     - typings.expressValidator.expressValidatorBooleans.`false`
   */
-  trait Optional extends js.Object
+  trait Optional extends StObject
   
   /* Inlined std.Pick<express-validator.express-validator/src/context.Context, std.Exclude<keyof express-validator.express-validator/src/context.Context, 'setData' | 'addFieldInstances' | 'addError'>> */
   @js.native
-  trait ReadonlyContext extends js.Object {
+  trait ReadonlyContext extends StObject {
     
     var _errors: js.Any = js.native
     

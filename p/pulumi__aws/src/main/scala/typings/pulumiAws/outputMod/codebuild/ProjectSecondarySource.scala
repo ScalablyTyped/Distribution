@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.codebuild
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectSecondarySource extends js.Object {
+trait ProjectSecondarySource extends StObject {
   
   /**
     * Information about the authorization settings for AWS CodeBuild to access the source code to be built. Auth blocks are documented below.
@@ -62,69 +63,57 @@ object ProjectSecondarySource {
   }
   
   @scala.inline
-  implicit class ProjectSecondarySourceOps[Self <: ProjectSecondarySource] (val x: Self) extends AnyVal {
+  implicit class ProjectSecondarySourceMutableBuilder[Self <: ProjectSecondarySource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuths(value: js.Array[ProjectSecondarySourceAuth]): Self = StObject.set(x, "auths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthsUndefined: Self = StObject.set(x, "auths", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthsVarargs(value: ProjectSecondarySourceAuth*): Self = StObject.set(x, "auths", js.Array(value :_*))
     
     @scala.inline
-    def setSourceIdentifier(value: String): Self = this.set("sourceIdentifier", value.asInstanceOf[js.Any])
+    def setBuildspec(value: String): Self = StObject.set(x, "buildspec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setBuildspecUndefined: Self = StObject.set(x, "buildspec", js.undefined)
     
     @scala.inline
-    def setAuthsVarargs(value: ProjectSecondarySourceAuth*): Self = this.set("auths", js.Array(value :_*))
+    def setGitCloneDepth(value: Double): Self = StObject.set(x, "gitCloneDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuths(value: js.Array[ProjectSecondarySourceAuth]): Self = this.set("auths", value.asInstanceOf[js.Any])
+    def setGitCloneDepthUndefined: Self = StObject.set(x, "gitCloneDepth", js.undefined)
     
     @scala.inline
-    def deleteAuths: Self = this.set("auths", js.undefined)
+    def setGitSubmodulesConfig(value: ProjectSecondarySourceGitSubmodulesConfig): Self = StObject.set(x, "gitSubmodulesConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildspec(value: String): Self = this.set("buildspec", value.asInstanceOf[js.Any])
+    def setGitSubmodulesConfigUndefined: Self = StObject.set(x, "gitSubmodulesConfig", js.undefined)
     
     @scala.inline
-    def deleteBuildspec: Self = this.set("buildspec", js.undefined)
+    def setInsecureSsl(value: Boolean): Self = StObject.set(x, "insecureSsl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitCloneDepth(value: Double): Self = this.set("gitCloneDepth", value.asInstanceOf[js.Any])
+    def setInsecureSslUndefined: Self = StObject.set(x, "insecureSsl", js.undefined)
     
     @scala.inline
-    def deleteGitCloneDepth: Self = this.set("gitCloneDepth", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitSubmodulesConfig(value: ProjectSecondarySourceGitSubmodulesConfig): Self = this.set("gitSubmodulesConfig", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteGitSubmodulesConfig: Self = this.set("gitSubmodulesConfig", js.undefined)
+    def setReportBuildStatus(value: Boolean): Self = StObject.set(x, "reportBuildStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsecureSsl(value: Boolean): Self = this.set("insecureSsl", value.asInstanceOf[js.Any])
+    def setReportBuildStatusUndefined: Self = StObject.set(x, "reportBuildStatus", js.undefined)
     
     @scala.inline
-    def deleteInsecureSsl: Self = this.set("insecureSsl", js.undefined)
+    def setSourceIdentifier(value: String): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setReportBuildStatus(value: Boolean): Self = this.set("reportBuildStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportBuildStatus: Self = this.set("reportBuildStatus", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

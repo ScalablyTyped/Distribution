@@ -5,16 +5,17 @@ import typings.ionic.definitionsMod.AngularBuildOptions
 import typings.ionic.libBuildMod.BuildCLI
 import typings.ionic.libBuildMod.BuildRunner
 import typings.ionic.libBuildMod.BuildRunnerDeps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/project/angular/build", JSImport.Namespace)
-@js.native
-object angularBuildMod extends js.Object {
+object angularBuildMod {
   
+  @JSImport("ionic/lib/project/angular/build", "AngularBuildCLI")
   @js.native
-  class AngularBuildCLI () extends BuildCLI[AngularBuildOptions] {
+  class AngularBuildCLI protected () extends BuildCLI[AngularBuildOptions] {
+    def this(e: BuildRunnerDeps) = this()
     
     /* protected */ def buildArchitectCommand(options: AngularBuildOptions): js.Array[String] = js.native
     
@@ -26,6 +27,7 @@ object angularBuildMod extends js.Object {
     val script_AngularBuildCLI: /* "ionic:build" */ String = js.native
   }
   
+  @JSImport("ionic/lib/project/angular/build", "AngularBuildRunner")
   @js.native
   class AngularBuildRunner protected () extends BuildRunner[AngularBuildOptions] {
     def this(e: AngularBuildRunnerDeps) = this()

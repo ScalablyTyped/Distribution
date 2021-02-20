@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object FieldsContentProperties {
   }
   
   @scala.inline
-  implicit class FieldsContentPropertiesOps[Self <: FieldsContentProperties] (val x: Self) extends AnyVal {
+  implicit class FieldsContentPropertiesMutableBuilder[Self <: FieldsContentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldInfos(value: js.Array[FieldInfoProperties]): Self = StObject.set(x, "fieldInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldInfosUndefined: Self = StObject.set(x, "fieldInfos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldInfosVarargs(value: FieldInfoProperties*): Self = this.set("fieldInfos", js.Array(value :_*))
-    
-    @scala.inline
-    def setFieldInfos(value: js.Array[FieldInfoProperties]): Self = this.set("fieldInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldInfos: Self = this.set("fieldInfos", js.undefined)
+    def setFieldInfosVarargs(value: FieldInfoProperties*): Self = StObject.set(x, "fieldInfos", js.Array(value :_*))
   }
 }

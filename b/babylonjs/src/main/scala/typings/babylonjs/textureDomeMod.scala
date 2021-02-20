@@ -9,14 +9,14 @@ import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Helpers/textureDome", JSImport.Namespace)
-@js.native
-object textureDomeMod extends js.Object {
+object textureDomeMod {
   
+  @JSImport("babylonjs/Helpers/textureDome", "TextureDome")
   @js.native
   abstract class TextureDome[T /* <: Texture */] protected () extends TransformNode {
     /**
@@ -165,22 +165,27 @@ object textureDomeMod extends js.Object {
     def texture_=(newTexture: T): Unit = js.native
   }
   /* static members */
-  @js.native
-  object TextureDome extends js.Object {
+  object TextureDome {
     
     /**
       * Define the source as a Monoscopic panoramic 360/180.
       */
+    @JSImport("babylonjs/Helpers/textureDome", "TextureDome.MODE_MONOSCOPIC")
+    @js.native
     val MODE_MONOSCOPIC: Double = js.native
     
     /**
       * Define the source as a Stereoscopic Side by Side panoramic 360/180.
       */
+    @JSImport("babylonjs/Helpers/textureDome", "TextureDome.MODE_SIDEBYSIDE")
+    @js.native
     val MODE_SIDEBYSIDE: Double = js.native
     
     /**
       * Define the source as a Stereoscopic TopBottom/OverUnder panoramic 360/180.
       */
+    @JSImport("babylonjs/Helpers/textureDome", "TextureDome.MODE_TOPBOTTOM")
+    @js.native
     val MODE_TOPBOTTOM: Double = js.native
   }
 }

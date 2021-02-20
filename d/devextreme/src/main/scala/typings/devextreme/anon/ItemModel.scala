@@ -3,12 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.viz.dxFunnel
 import typings.devextreme.mod.DevExpress.viz.dxFunnelItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemModel extends js.Object {
+trait ItemModel extends StObject {
   
   var component: js.UndefOr[dxFunnel] = js.native
   
@@ -27,42 +28,30 @@ object ItemModel {
   }
   
   @scala.inline
-  implicit class ItemModelOps[Self <: ItemModel] (val x: Self) extends AnyVal {
+  implicit class ItemModelMutableBuilder[Self <: ItemModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: dxFunnel): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: dxFunnel): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setItem(value: dxFunnelItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: dxFunnelItem): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
-    
-    @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

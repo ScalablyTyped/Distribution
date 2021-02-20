@@ -3,12 +3,13 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.add
 import typings.arcgisJsApi.arcgisJsApiStrings.edit
 import typings.arcgisJsApi.arcgisJsApiStrings.view
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentsViewModelProperties extends js.Object {
+trait AttachmentsViewModelProperties extends StObject {
   
   /**
     * The current [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html) being edited.
@@ -47,42 +48,30 @@ object AttachmentsViewModelProperties {
   }
   
   @scala.inline
-  implicit class AttachmentsViewModelPropertiesOps[Self <: AttachmentsViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class AttachmentsViewModelPropertiesMutableBuilder[Self <: AttachmentsViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveAttachmentInfo(value: AttachmentInfoProperties): Self = StObject.set(x, "activeAttachmentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveAttachmentInfoUndefined: Self = StObject.set(x, "activeAttachmentInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveAttachmentInfo(value: AttachmentInfoProperties): Self = this.set("activeAttachmentInfo", value.asInstanceOf[js.Any])
+    def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
     
     @scala.inline
-    def deleteActiveAttachmentInfo: Self = this.set("activeAttachmentInfo", js.undefined)
+    def setMode(value: view | add | edit): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphic(value: GraphicProperties): Self = this.set("graphic", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteGraphic: Self = this.set("graphic", js.undefined)
+    def setSupportsResizeAttachments(value: Boolean): Self = StObject.set(x, "supportsResizeAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: view | add | edit): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setSupportsResizeAttachments(value: Boolean): Self = this.set("supportsResizeAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsResizeAttachments: Self = this.set("supportsResizeAttachments", js.undefined)
+    def setSupportsResizeAttachmentsUndefined: Self = StObject.set(x, "supportsResizeAttachments", js.undefined)
   }
 }

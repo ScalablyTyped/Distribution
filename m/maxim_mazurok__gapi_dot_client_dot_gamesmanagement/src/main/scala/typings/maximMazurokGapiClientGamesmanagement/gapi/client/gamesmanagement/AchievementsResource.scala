@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientGamesmanagement.anon.Accesstoken
 import typings.maximMazurokGapiClientGamesmanagement.anon.Alt
 import typings.maximMazurokGapiClientGamesmanagement.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AchievementsResource extends js.Object {
+trait AchievementsResource extends StObject {
   
   /** Resets the achievement with the given ID for the currently authenticated player. This method is only accessible to whitelisted tester accounts for your application. */
   def reset(): Request[AchievementResetResponse] = js.native

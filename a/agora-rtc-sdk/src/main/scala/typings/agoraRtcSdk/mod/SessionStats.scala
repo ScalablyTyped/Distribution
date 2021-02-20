@@ -1,5 +1,6 @@
 package typings.agoraRtcSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If {@link getSessionStats} is called successfully, this interface provides the statistics.
   */
 @js.native
-trait SessionStats extends js.Object {
+trait SessionStats extends StObject {
   
   /** Call duration in seconds, represented by an aggregate value. */
   val Duration: js.UndefOr[String] = js.native
@@ -46,54 +47,42 @@ object SessionStats {
   }
   
   @scala.inline
-  implicit class SessionStatsOps[Self <: SessionStats] (val x: Self) extends AnyVal {
+  implicit class SessionStatsMutableBuilder[Self <: SessionStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: String): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecvBitrate(value: String): Self = StObject.set(x, "RecvBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setRecvBitrateUndefined: Self = StObject.set(x, "RecvBitrate", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setRecvBytes(value: String): Self = StObject.set(x, "RecvBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecvBitrate(value: String): Self = this.set("RecvBitrate", value.asInstanceOf[js.Any])
+    def setRecvBytesUndefined: Self = StObject.set(x, "RecvBytes", js.undefined)
     
     @scala.inline
-    def deleteRecvBitrate: Self = this.set("RecvBitrate", js.undefined)
+    def setSendBitrate(value: String): Self = StObject.set(x, "SendBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecvBytes(value: String): Self = this.set("RecvBytes", value.asInstanceOf[js.Any])
+    def setSendBitrateUndefined: Self = StObject.set(x, "SendBitrate", js.undefined)
     
     @scala.inline
-    def deleteRecvBytes: Self = this.set("RecvBytes", js.undefined)
+    def setSendBytes(value: String): Self = StObject.set(x, "SendBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendBitrate(value: String): Self = this.set("SendBitrate", value.asInstanceOf[js.Any])
+    def setSendBytesUndefined: Self = StObject.set(x, "SendBytes", js.undefined)
     
     @scala.inline
-    def deleteSendBitrate: Self = this.set("SendBitrate", js.undefined)
+    def setUserCount(value: String): Self = StObject.set(x, "UserCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendBytes(value: String): Self = this.set("SendBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendBytes: Self = this.set("SendBytes", js.undefined)
-    
-    @scala.inline
-    def setUserCount(value: String): Self = this.set("UserCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserCount: Self = this.set("UserCount", js.undefined)
+    def setUserCountUndefined: Self = StObject.set(x, "UserCount", js.undefined)
   }
 }

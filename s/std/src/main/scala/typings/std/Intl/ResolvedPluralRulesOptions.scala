@@ -1,11 +1,12 @@
 package typings.std.Intl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolvedPluralRulesOptions extends js.Object {
+trait ResolvedPluralRulesOptions extends StObject {
   
   var locale: String = js.native
   
@@ -40,51 +41,39 @@ object ResolvedPluralRulesOptions {
   }
   
   @scala.inline
-  implicit class ResolvedPluralRulesOptionsOps[Self <: ResolvedPluralRulesOptions] (val x: Self) extends AnyVal {
+  implicit class ResolvedPluralRulesOptionsMutableBuilder[Self <: ResolvedPluralRulesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
     
     @scala.inline
-    def setMaximumFractionDigits(value: Double): Self = this.set("maximumFractionDigits", value.asInstanceOf[js.Any])
+    def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumFractionDigits(value: Double): Self = this.set("minimumFractionDigits", value.asInstanceOf[js.Any])
+    def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumIntegerDigits(value: Double): Self = this.set("minimumIntegerDigits", value.asInstanceOf[js.Any])
+    def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluralCategoriesVarargs(value: LDMLPluralRule*): Self = this.set("pluralCategories", js.Array(value :_*))
+    def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
     
     @scala.inline
-    def setPluralCategories(value: js.Array[LDMLPluralRule]): Self = this.set("pluralCategories", value.asInstanceOf[js.Any])
+    def setPluralCategories(value: js.Array[LDMLPluralRule]): Self = StObject.set(x, "pluralCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: PluralRuleType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPluralCategoriesVarargs(value: LDMLPluralRule*): Self = StObject.set(x, "pluralCategories", js.Array(value :_*))
     
     @scala.inline
-    def setMaximumSignificantDigits(value: Double): Self = this.set("maximumSignificantDigits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumSignificantDigits: Self = this.set("maximumSignificantDigits", js.undefined)
-    
-    @scala.inline
-    def setMinimumSignificantDigits(value: Double): Self = this.set("minimumSignificantDigits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumSignificantDigits: Self = this.set("minimumSignificantDigits", js.undefined)
+    def setType(value: PluralRuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

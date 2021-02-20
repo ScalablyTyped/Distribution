@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetFileUploadURLRequest extends js.Object {
+trait GetFileUploadURLRequest extends StObject {
   
   /**
     * The ID of the assignment that contains the question with a FileUploadAnswer.
@@ -26,24 +27,12 @@ object GetFileUploadURLRequest {
   }
   
   @scala.inline
-  implicit class GetFileUploadURLRequestOps[Self <: GetFileUploadURLRequest] (val x: Self) extends AnyVal {
+  implicit class GetFileUploadURLRequestMutableBuilder[Self <: GetFileUploadURLRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssignmentId(value: EntityId): Self = this.set("AssignmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuestionIdentifier(value: String): Self = this.set("QuestionIdentifier", value.asInstanceOf[js.Any])
+    def setQuestionIdentifier(value: String): Self = StObject.set(x, "QuestionIdentifier", value.asInstanceOf[js.Any])
   }
 }

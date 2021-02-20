@@ -2,12 +2,13 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import typings.vsoNodeApi.galleryInterfacesMod.PublishedExtension
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionEvent extends js.Object {
+trait ExtensionEvent extends StObject {
   
   /**
     * The extension which has been updated
@@ -55,36 +56,24 @@ object ExtensionEvent {
   }
   
   @scala.inline
-  implicit class ExtensionEventOps[Self <: ExtensionEvent] (val x: Self) extends AnyVal {
+  implicit class ExtensionEventMutableBuilder[Self <: ExtensionEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtension(value: PublishedExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionVersion(value: String): Self = StObject.set(x, "extensionVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: ExtensionHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: PublishedExtension): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setLinks(value: ExtensionEventUrls): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionVersion(value: String): Self = this.set("extensionVersion", value.asInstanceOf[js.Any])
+    def setModifiedBy(value: IdentityRef): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: ExtensionHost): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinks(value: ExtensionEventUrls): Self = this.set("links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModifiedBy(value: IdentityRef): Self = this.set("modifiedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateType(value: ExtensionUpdateType): Self = this.set("updateType", value.asInstanceOf[js.Any])
+    def setUpdateType(value: ExtensionUpdateType): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
   }
 }

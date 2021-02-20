@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A reference to the external linked source content.
   */
 @js.native
-trait SchemaLinkedContentReference extends js.Object {
+trait SchemaLinkedContentReference extends StObject {
   
   /**
     * A reference to the linked chart.
@@ -24,24 +25,12 @@ object SchemaLinkedContentReference {
   }
   
   @scala.inline
-  implicit class SchemaLinkedContentReferenceOps[Self <: SchemaLinkedContentReference] (val x: Self) extends AnyVal {
+  implicit class SchemaLinkedContentReferenceMutableBuilder[Self <: SchemaLinkedContentReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSheetsChartReference(value: SchemaSheetsChartReference): Self = StObject.set(x, "sheetsChartReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSheetsChartReference(value: SchemaSheetsChartReference): Self = this.set("sheetsChartReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetsChartReference: Self = this.set("sheetsChartReference", js.undefined)
+    def setSheetsChartReferenceUndefined: Self = StObject.set(x, "sheetsChartReference", js.undefined)
   }
 }

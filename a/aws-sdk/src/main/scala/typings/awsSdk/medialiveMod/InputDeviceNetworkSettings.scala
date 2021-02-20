@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputDeviceNetworkSettings extends js.Object {
+trait InputDeviceNetworkSettings extends StObject {
   
   /**
     * The DNS addresses of the input device.
@@ -41,51 +42,39 @@ object InputDeviceNetworkSettings {
   }
   
   @scala.inline
-  implicit class InputDeviceNetworkSettingsOps[Self <: InputDeviceNetworkSettings] (val x: Self) extends AnyVal {
+  implicit class InputDeviceNetworkSettingsMutableBuilder[Self <: InputDeviceNetworkSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsAddresses(value: listOfString): Self = StObject.set(x, "DnsAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsAddressesUndefined: Self = StObject.set(x, "DnsAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDnsAddressesVarargs(value: string*): Self = StObject.set(x, "DnsAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setDnsAddressesVarargs(value: string*): Self = this.set("DnsAddresses", js.Array(value :_*))
+    def setGateway(value: string): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsAddresses(value: listOfString): Self = this.set("DnsAddresses", value.asInstanceOf[js.Any])
+    def setGatewayUndefined: Self = StObject.set(x, "Gateway", js.undefined)
     
     @scala.inline
-    def deleteDnsAddresses: Self = this.set("DnsAddresses", js.undefined)
+    def setIpAddress(value: string): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGateway(value: string): Self = this.set("Gateway", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
     @scala.inline
-    def deleteGateway: Self = this.set("Gateway", js.undefined)
+    def setIpScheme(value: InputDeviceIpScheme): Self = StObject.set(x, "IpScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: string): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    def setIpSchemeUndefined: Self = StObject.set(x, "IpScheme", js.undefined)
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    def setSubnetMask(value: string): Self = StObject.set(x, "SubnetMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpScheme(value: InputDeviceIpScheme): Self = this.set("IpScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpScheme: Self = this.set("IpScheme", js.undefined)
-    
-    @scala.inline
-    def setSubnetMask(value: string): Self = this.set("SubnetMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetMask: Self = this.set("SubnetMask", js.undefined)
+    def setSubnetMaskUndefined: Self = StObject.set(x, "SubnetMask", js.undefined)
   }
 }

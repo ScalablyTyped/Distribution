@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaticIp extends js.Object {
+trait StaticIp extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the static IP (e.g., arn:aws:lightsail:us-east-2:123456789101:StaticIp/9cbb4a9e-f8e3-4dfe-b57e-12345EXAMPLE).
@@ -61,72 +62,60 @@ object StaticIp {
   }
   
   @scala.inline
-  implicit class StaticIpOps[Self <: StaticIp] (val x: Self) extends AnyVal {
+  implicit class StaticIpMutableBuilder[Self <: StaticIp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachedTo(value: ResourceName): Self = StObject.set(x, "attachedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setAttachedToUndefined: Self = StObject.set(x, "attachedTo", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedTo(value: ResourceName): Self = this.set("attachedTo", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteAttachedTo: Self = this.set("attachedTo", js.undefined)
+    def setIpAddress(value: IpAddress): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setIsAttached(value: Boolean): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: IpAddress): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    def setIsAttachedUndefined: Self = StObject.set(x, "isAttached", js.undefined)
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAttached(value: Boolean): Self = this.set("isAttached", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteIsAttached: Self = this.set("isAttached", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
-    
-    @scala.inline
-    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
+    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
   }
 }

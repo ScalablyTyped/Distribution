@@ -1,11 +1,12 @@
 package typings.logg
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Logger extends js.Object {
+trait Logger extends StObject {
   
   def error(var_args: js.Any*): Unit = js.native
   
@@ -53,54 +54,42 @@ object Logger {
   }
   
   @scala.inline
-  implicit class LoggerOps[Self <: Logger] (val x: Self) extends AnyVal {
+  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFine(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLogLevel(value: () => Double): Self = StObject.set(x, "getLogLevel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setError(value: /* repeated */ js.Any => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setGetParent(value: () => Logger): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFine(value: /* repeated */ js.Any => Unit): Self = this.set("fine", js.Any.fromFunction1(value))
+    def setGetWatchers(value: () => js.Array[js.Function]): Self = StObject.set(x, "getWatchers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLogLevel(value: () => Double): Self = this.set("getLogLevel", js.Any.fromFunction0(value))
+    def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetParent(value: () => Logger): Self = this.set("getParent", js.Any.fromFunction0(value))
+    def setIsLoggable(value: Double => Boolean): Self = StObject.set(x, "isLoggable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetWatchers(value: () => js.Array[js.Function]): Self = this.set("getWatchers", js.Any.fromFunction0(value))
+    def setLog(value: (Double, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInfo(value: /* repeated */ js.Any => Unit): Self = this.set("info", js.Any.fromFunction1(value))
+    def setRegisterWatcher(value: js.Function1[/* logRecord */ String, Unit] => Unit): Self = StObject.set(x, "registerWatcher", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsLoggable(value: Double => Boolean): Self = this.set("isLoggable", js.Any.fromFunction1(value))
+    def setSetLogLevel(value: Double => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLog(value: (Double, /* repeated */ js.Any) => Unit): Self = this.set("log", js.Any.fromFunction2(value))
+    def setSetParent(value: Logger => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterWatcher(value: js.Function1[/* logRecord */ String, Unit] => Unit): Self = this.set("registerWatcher", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLogLevel(value: Double => Unit): Self = this.set("setLogLevel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetParent(value: Logger => Unit): Self = this.set("setParent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWarn(value: /* repeated */ js.Any => Unit): Self = this.set("warn", js.Any.fromFunction1(value))
+    def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

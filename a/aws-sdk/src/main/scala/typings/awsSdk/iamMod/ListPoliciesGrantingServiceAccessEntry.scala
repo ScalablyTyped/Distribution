@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPoliciesGrantingServiceAccessEntry extends js.Object {
+trait ListPoliciesGrantingServiceAccessEntry extends StObject {
   
   /**
     * The PoliciesGrantingServiceAccess object that contains details about the policy.
@@ -26,33 +27,21 @@ object ListPoliciesGrantingServiceAccessEntry {
   }
   
   @scala.inline
-  implicit class ListPoliciesGrantingServiceAccessEntryOps[Self <: ListPoliciesGrantingServiceAccessEntry] (val x: Self) extends AnyVal {
+  implicit class ListPoliciesGrantingServiceAccessEntryMutableBuilder[Self <: ListPoliciesGrantingServiceAccessEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicies(value: policyGrantingServiceAccessListType): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoliciesVarargs(value: PolicyGrantingServiceAccess*): Self = StObject.set(x, "Policies", js.Array(value :_*))
     
     @scala.inline
-    def setPoliciesVarargs(value: PolicyGrantingServiceAccess*): Self = this.set("Policies", js.Array(value :_*))
+    def setServiceNamespace(value: serviceNamespaceType): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicies(value: policyGrantingServiceAccessListType): Self = this.set("Policies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicies: Self = this.set("Policies", js.undefined)
-    
-    @scala.inline
-    def setServiceNamespace(value: serviceNamespaceType): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceNamespace: Self = this.set("ServiceNamespace", js.undefined)
+    def setServiceNamespaceUndefined: Self = StObject.set(x, "ServiceNamespace", js.undefined)
   }
 }

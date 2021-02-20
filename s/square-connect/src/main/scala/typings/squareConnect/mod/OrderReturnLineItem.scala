@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderReturnLineItem")
 @js.native
-class OrderReturnLineItem () extends js.Object {
+class OrderReturnLineItem () extends StObject {
   
   /**
     * The list of references to `OrderReturnDiscount` entities applied to the returned line item.

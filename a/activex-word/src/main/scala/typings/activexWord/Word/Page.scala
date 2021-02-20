@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Page extends js.Object {
+trait Page extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -52,51 +53,39 @@ object Page {
   }
   
   @scala.inline
-  implicit class PageOps[Self <: Page] (val x: Self) extends AnyVal {
+  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreaks(value: Breaks): Self = StObject.set(x, "Breaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setEnhMetaFileBits(value: js.Any): Self = StObject.set(x, "EnhMetaFileBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreaks(value: Breaks): Self = this.set("Breaks", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhMetaFileBits(value: js.Any): Self = this.set("EnhMetaFileBits", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setRectangles(value: Rectangles): Self = StObject.set(x, "Rectangles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("Left", value.asInstanceOf[js.Any])
+    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRectangles(value: Rectangles): Self = this.set("Rectangles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("Top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotPage_typekey(value: Page): Self = this.set("Word.Page_typekey", value.asInstanceOf[js.Any])
+    def setWordDotPage_typekey(value: Page): Self = StObject.set(x, "Word.Page_typekey", value.asInstanceOf[js.Any])
   }
 }

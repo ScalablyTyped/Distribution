@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateJobQueueRequest extends js.Object {
+trait UpdateJobQueueRequest extends StObject {
   
   /**
     * Details the set of compute environments mapped to a job queue and their order relative to each other. This is one of the parameters used by the job scheduler to determine which compute environment should execute a given job.
@@ -36,42 +37,30 @@ object UpdateJobQueueRequest {
   }
   
   @scala.inline
-  implicit class UpdateJobQueueRequestOps[Self <: UpdateJobQueueRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateJobQueueRequestMutableBuilder[Self <: UpdateJobQueueRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeEnvironmentOrder(value: ComputeEnvironmentOrders): Self = StObject.set(x, "computeEnvironmentOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputeEnvironmentOrderUndefined: Self = StObject.set(x, "computeEnvironmentOrder", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputeEnvironmentOrderVarargs(value: ComputeEnvironmentOrder*): Self = StObject.set(x, "computeEnvironmentOrder", js.Array(value :_*))
     
     @scala.inline
-    def setJobQueue(value: String): Self = this.set("jobQueue", value.asInstanceOf[js.Any])
+    def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeEnvironmentOrderVarargs(value: ComputeEnvironmentOrder*): Self = this.set("computeEnvironmentOrder", js.Array(value :_*))
+    def setPriority(value: Integer): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeEnvironmentOrder(value: ComputeEnvironmentOrders): Self = this.set("computeEnvironmentOrder", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteComputeEnvironmentOrder: Self = this.set("computeEnvironmentOrder", js.undefined)
+    def setState(value: JQState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Integer): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
-    
-    @scala.inline
-    def setState(value: JQState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

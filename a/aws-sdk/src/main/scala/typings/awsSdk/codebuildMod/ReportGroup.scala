@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportGroup extends js.Object {
+trait ReportGroup extends StObject {
   
   /**
     *  The ARN of a ReportGroup. 
@@ -53,69 +54,57 @@ object ReportGroup {
   }
   
   @scala.inline
-  implicit class ReportGroupOps[Self <: ReportGroup] (val x: Self) extends AnyVal {
+  implicit class ReportGroupMutableBuilder[Self <: ReportGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setExportConfig(value: ReportExportConfig): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setExportConfigUndefined: Self = StObject.set(x, "exportConfig", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setLastModified(value: Timestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportConfig(value: ReportExportConfig): Self = this.set("exportConfig", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     @scala.inline
-    def deleteExportConfig: Self = this.set("exportConfig", js.undefined)
+    def setName(value: ReportGroupName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: Timestamp): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def setStatus(value: ReportGroupStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ReportGroupName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ReportGroupStatusType): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setType(value: ReportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setType(value: ReportType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

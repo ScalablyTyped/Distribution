@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeReview extends js.Object {
+trait CodeReview extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the  RepositoryAssociation  that contains the reviewed source code. You can retrieve associated repository ARNs by calling  ListRepositoryAssociations . 
@@ -86,102 +87,90 @@ object CodeReview {
   }
   
   @scala.inline
-  implicit class CodeReviewOps[Self <: CodeReview] (val x: Self) extends AnyVal {
+  implicit class CodeReviewMutableBuilder[Self <: CodeReview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationArn(value: AssociationArn): Self = StObject.set(x, "AssociationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationArnUndefined: Self = StObject.set(x, "AssociationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationArn(value: AssociationArn): Self = this.set("AssociationArn", value.asInstanceOf[js.Any])
+    def setCodeReviewArnUndefined: Self = StObject.set(x, "CodeReviewArn", js.undefined)
     
     @scala.inline
-    def deleteAssociationArn: Self = this.set("AssociationArn", js.undefined)
+    def setCreatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeReviewArn(value: Arn): Self = this.set("CodeReviewArn", value.asInstanceOf[js.Any])
+    def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
     
     @scala.inline
-    def deleteCodeReviewArn: Self = this.set("CodeReviewArn", js.undefined)
+    def setLastUpdatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimeStamp(value: TimeStamp): Self = this.set("CreatedTimeStamp", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeStampUndefined: Self = StObject.set(x, "LastUpdatedTimeStamp", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimeStamp: Self = this.set("CreatedTimeStamp", js.undefined)
+    def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTimeStamp(value: TimeStamp): Self = this.set("LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTimeStamp: Self = this.set("LastUpdatedTimeStamp", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: Metrics): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "PullRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderType(value: ProviderType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
+    def setPullRequestIdUndefined: Self = StObject.set(x, "PullRequestId", js.undefined)
     
     @scala.inline
-    def deleteProviderType: Self = this.set("ProviderType", js.undefined)
+    def setRepositoryName(value: Name): Self = StObject.set(x, "RepositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = this.set("PullRequestId", value.asInstanceOf[js.Any])
+    def setRepositoryNameUndefined: Self = StObject.set(x, "RepositoryName", js.undefined)
     
     @scala.inline
-    def deletePullRequestId: Self = this.set("PullRequestId", js.undefined)
+    def setSourceCodeType(value: SourceCodeType): Self = StObject.set(x, "SourceCodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryName(value: Name): Self = this.set("RepositoryName", value.asInstanceOf[js.Any])
+    def setSourceCodeTypeUndefined: Self = StObject.set(x, "SourceCodeType", js.undefined)
     
     @scala.inline
-    def deleteRepositoryName: Self = this.set("RepositoryName", js.undefined)
+    def setState(value: JobState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCodeType(value: SourceCodeType): Self = this.set("SourceCodeType", value.asInstanceOf[js.Any])
+    def setStateReason(value: StateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceCodeType: Self = this.set("SourceCodeType", js.undefined)
+    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
     @scala.inline
-    def setState(value: JobState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateReason(value: StateReason): Self = this.set("StateReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateReason: Self = this.set("StateReason", js.undefined)
-    
-    @scala.inline
-    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

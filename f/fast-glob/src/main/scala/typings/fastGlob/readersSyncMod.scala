@@ -5,13 +5,16 @@ import typings.fastGlob.anon.FnCallPathOptionsOrSettings
 import typings.fastGlob.typesMod.Entry
 import typings.nodelibFsStat.settingsMod.Options
 import typings.nodelibFsStat.typesMod.Stats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fast-glob/out/readers/sync", JSImport.Namespace)
-@js.native
-object readersSyncMod extends js.Object {
+object readersSyncMod {
+  
+  @JSImport("fast-glob/out/readers/sync", JSImport.Default)
+  @js.native
+  class default () extends ReaderSync
   
   @js.native
   trait ReaderSync
@@ -33,7 +36,4 @@ object readersSyncMod extends js.Object {
     @JSName("_walkSync")
     var _walkSync_Original: FnCallDirectoryOptionsOrSettings = js.native
   }
-  
-  @js.native
-  class default () extends ReaderSync
 }

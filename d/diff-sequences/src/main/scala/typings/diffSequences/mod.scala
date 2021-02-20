@@ -1,30 +1,31 @@
 package typings.diffSequences
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("diff-sequences", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("diff-sequences", JSImport.Default)
+  @js.native
   def default(aLength: Double, bLength: Double, isCommon: IsCommon, foundSubsequence: FoundSubsequence): Unit = js.native
   
   @js.native
-  trait Callbacks extends js.Object {
+  trait Callbacks extends StObject {
     
     def foundSubsequence(
-       // caller can assume: 0 < nCommon
-    nCommon: Double,
-       // caller can assume: 0 <= aCommon && aCommon < aLength
+      nCommon: Double,
+      // caller can assume: 0 < nCommon
     aCommon: Double,
-      bCommon: Double
+      // caller can assume: 0 <= aCommon && aCommon < aLength
+    bCommon: Double
     ): Unit = js.native
     @JSName("foundSubsequence")
     var foundSubsequence_Original: FoundSubsequence = js.native
     
-    def isCommon( // caller can assume: 0 <= aIndex && aIndex < aLength
-    aIndex: Double, bIndex: Double): Boolean = js.native
+    def isCommon(aIndex: Double, // caller can assume: 0 <= aIndex && aIndex < aLength
+    bIndex: Double): Boolean = js.native
     @JSName("isCommon")
     var isCommon_Original: IsCommon = js.native
   }

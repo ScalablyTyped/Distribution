@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SupportedEndpointType extends js.Object {
+trait SupportedEndpointType extends StObject {
   
   /**
     * The type of endpoint. Valid values are source and target.
@@ -41,48 +42,36 @@ object SupportedEndpointType {
   }
   
   @scala.inline
-  implicit class SupportedEndpointTypeOps[Self <: SupportedEndpointType] (val x: Self) extends AnyVal {
+  implicit class SupportedEndpointTypeMutableBuilder[Self <: SupportedEndpointType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointType(value: ReplicationEndpointTypeValue): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEngineDisplayName(value: String): Self = StObject.set(x, "EngineDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointType(value: ReplicationEndpointTypeValue): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    def setEngineDisplayNameUndefined: Self = StObject.set(x, "EngineDisplayName", js.undefined)
     
     @scala.inline
-    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineDisplayName(value: String): Self = this.set("EngineDisplayName", value.asInstanceOf[js.Any])
+    def setEngineNameUndefined: Self = StObject.set(x, "EngineName", js.undefined)
     
     @scala.inline
-    def deleteEngineDisplayName: Self = this.set("EngineDisplayName", js.undefined)
+    def setReplicationInstanceEngineMinimumVersion(value: String): Self = StObject.set(x, "ReplicationInstanceEngineMinimumVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineName(value: String): Self = this.set("EngineName", value.asInstanceOf[js.Any])
+    def setReplicationInstanceEngineMinimumVersionUndefined: Self = StObject.set(x, "ReplicationInstanceEngineMinimumVersion", js.undefined)
     
     @scala.inline
-    def deleteEngineName: Self = this.set("EngineName", js.undefined)
+    def setSupportsCDC(value: Boolean): Self = StObject.set(x, "SupportsCDC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstanceEngineMinimumVersion(value: String): Self = this.set("ReplicationInstanceEngineMinimumVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationInstanceEngineMinimumVersion: Self = this.set("ReplicationInstanceEngineMinimumVersion", js.undefined)
-    
-    @scala.inline
-    def setSupportsCDC(value: Boolean): Self = this.set("SupportsCDC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsCDC: Self = this.set("SupportsCDC", js.undefined)
+    def setSupportsCDCUndefined: Self = StObject.set(x, "SupportsCDC", js.undefined)
   }
 }

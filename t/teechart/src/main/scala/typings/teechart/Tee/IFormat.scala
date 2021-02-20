@@ -1,11 +1,12 @@
 package typings.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFormat extends js.Object {
+trait IFormat extends StObject {
   
   def drawText(bounds: IRectangle, text: String): js.Any = js.native
   
@@ -59,60 +60,48 @@ object IFormat {
   }
   
   @scala.inline
-  implicit class IFormatOps[Self <: IFormat] (val x: Self) extends AnyVal {
+  implicit class IFormatMutableBuilder[Self <: IFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrawText(value: (IRectangle, String) => js.Any): Self = StObject.set(x, "drawText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEllipse(value: (Double, Double, Double, Double) => js.Any): Self = StObject.set(x, "ellipse", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawText(value: (IRectangle, String) => js.Any): Self = this.set("drawText", js.Any.fromFunction2(value))
+    def setFont(value: IFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipse(value: (Double, Double, Double, Double) => js.Any): Self = this.set("ellipse", js.Any.fromFunction4(value))
+    def setGradient(value: IGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setImage(value: IImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: IFont): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setPoligon(value: js.Array[IPoint] => js.Any): Self = StObject.set(x, "poligon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGradient(value: IGradient): Self = this.set("gradient", value.asInstanceOf[js.Any])
+    def setRectangle(value: (Double, Double, Double, Double) => js.Any): Self = StObject.set(x, "rectangle", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setImage(value: IImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setRound(value: IPoint): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoligon(value: js.Array[IPoint] => js.Any): Self = this.set("poligon", js.Any.fromFunction1(value))
+    def setShadow(value: IShadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRectangle(value: (Double, Double, Double, Double) => js.Any): Self = this.set("rectangle", js.Any.fromFunction4(value))
+    def setStroke(value: IStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRound(value: IPoint): Self = this.set("round", value.asInstanceOf[js.Any])
+    def setTextHeight(value: String => Double): Self = StObject.set(x, "textHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShadow(value: IShadow): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setTextWidth(value: String => Double): Self = StObject.set(x, "textWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStroke(value: IStroke): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextHeight(value: String => Double): Self = this.set("textHeight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTextWidth(value: String => Double): Self = this.set("textWidth", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransparency(value: Double): Self = this.set("transparency", value.asInstanceOf[js.Any])
+    def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
   }
 }

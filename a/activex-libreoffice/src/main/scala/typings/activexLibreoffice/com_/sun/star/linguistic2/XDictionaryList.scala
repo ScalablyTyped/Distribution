@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -163,57 +164,45 @@ object XDictionaryList {
   }
   
   @scala.inline
-  implicit class XDictionaryListOps[Self <: XDictionaryList] (val x: Self) extends AnyVal {
+  implicit class XDictionaryListMutableBuilder[Self <: XDictionaryList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDictionary(value: XDictionary => Boolean): Self = StObject.set(x, "addDictionary", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddDictionaryListEventListener(value: (XDictionaryListEventListener, Boolean) => Boolean): Self = StObject.set(x, "addDictionaryListEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginCollectEvents(value: () => Double): Self = StObject.set(x, "beginCollectEvents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionaries(value: SafeArray[XDictionary]): Self = this.set("Dictionaries", value.asInstanceOf[js.Any])
+    def setCreateDictionary(value: (String, Locale, DictionaryType, String) => XDictionary): Self = StObject.set(x, "createDictionary", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAddDictionary(value: XDictionary => Boolean): Self = this.set("addDictionary", js.Any.fromFunction1(value))
+    def setDictionaries(value: SafeArray[XDictionary]): Self = StObject.set(x, "Dictionaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddDictionaryListEventListener(value: (XDictionaryListEventListener, Boolean) => Boolean): Self = this.set("addDictionaryListEventListener", js.Any.fromFunction2(value))
+    def setEndCollectEvents(value: () => Double): Self = StObject.set(x, "endCollectEvents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeginCollectEvents(value: () => Double): Self = this.set("beginCollectEvents", js.Any.fromFunction0(value))
+    def setFlushEvents(value: () => Double): Self = StObject.set(x, "flushEvents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateDictionary(value: (String, Locale, DictionaryType, String) => XDictionary): Self = this.set("createDictionary", js.Any.fromFunction4(value))
+    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndCollectEvents(value: () => Double): Self = this.set("endCollectEvents", js.Any.fromFunction0(value))
+    def setGetDictionaries(value: () => SafeArray[XDictionary]): Self = StObject.set(x, "getDictionaries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFlushEvents(value: () => Double): Self = this.set("flushEvents", js.Any.fromFunction0(value))
+    def setGetDictionaryByName(value: String => XDictionary): Self = StObject.set(x, "getDictionaryByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCount(value: () => Double): Self = this.set("getCount", js.Any.fromFunction0(value))
+    def setRemoveDictionary(value: XDictionary => Boolean): Self = StObject.set(x, "removeDictionary", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDictionaries(value: () => SafeArray[XDictionary]): Self = this.set("getDictionaries", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetDictionaryByName(value: String => XDictionary): Self = this.set("getDictionaryByName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveDictionary(value: XDictionary => Boolean): Self = this.set("removeDictionary", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveDictionaryListEventListener(value: XDictionaryListEventListener => Boolean): Self = this.set("removeDictionaryListEventListener", js.Any.fromFunction1(value))
+    def setRemoveDictionaryListEventListener(value: XDictionaryListEventListener => Boolean): Self = StObject.set(x, "removeDictionaryListEventListener", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MerchantBusinessRequest extends js.Object {
+trait MerchantBusinessRequest extends StObject {
   
   var address: js.UndefOr[MerchantAddressDetails] = js.native
   
@@ -24,42 +25,30 @@ object MerchantBusinessRequest {
   }
   
   @scala.inline
-  implicit class MerchantBusinessRequestOps[Self <: MerchantBusinessRequest] (val x: Self) extends AnyVal {
+  implicit class MerchantBusinessRequestMutableBuilder[Self <: MerchantBusinessRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: MerchantAddressDetails): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDbaName(value: String): Self = StObject.set(x, "dbaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: MerchantAddressDetails): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setDbaNameUndefined: Self = StObject.set(x, "dbaName", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setLegalName(value: String): Self = StObject.set(x, "legalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbaName(value: String): Self = this.set("dbaName", value.asInstanceOf[js.Any])
+    def setLegalNameUndefined: Self = StObject.set(x, "legalName", js.undefined)
     
     @scala.inline
-    def deleteDbaName: Self = this.set("dbaName", js.undefined)
+    def setTaxId(value: String): Self = StObject.set(x, "taxId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegalName(value: String): Self = this.set("legalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLegalName: Self = this.set("legalName", js.undefined)
-    
-    @scala.inline
-    def setTaxId(value: String): Self = this.set("taxId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaxId: Self = this.set("taxId", js.undefined)
+    def setTaxIdUndefined: Self = StObject.set(x, "taxId", js.undefined)
   }
 }

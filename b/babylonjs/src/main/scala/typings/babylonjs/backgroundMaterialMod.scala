@@ -11,14 +11,14 @@ import typings.babylonjs.shadowLightMod.IShadowLight
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.typesMod.float
 import typings.babylonjs.typesMod.int
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Background/backgroundMaterial", JSImport.Namespace)
-@js.native
-object backgroundMaterialMod extends js.Object {
+object backgroundMaterialMod {
   
+  @JSImport("babylonjs/Materials/Background/backgroundMaterial", "BackgroundMaterial")
   @js.native
   class BackgroundMaterial protected () extends PushMaterial {
     /**
@@ -345,8 +345,11 @@ object backgroundMaterialMod extends js.Object {
     var useRGBColor: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object BackgroundMaterial extends js.Object {
+  object BackgroundMaterial {
+    
+    @JSImport("babylonjs/Materials/Background/backgroundMaterial", "BackgroundMaterial")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Parse a JSON input to create back a background material.
@@ -355,16 +358,26 @@ object backgroundMaterialMod extends js.Object {
       * @param rootUrl The root url of the assets the material depends upon
       * @returns the instantiated BackgroundMaterial.
       */
+    @JSImport("babylonjs/Materials/Background/backgroundMaterial", "BackgroundMaterial.Parse")
+    @js.native
     def Parse(source: js.Any, scene: Scene, rootUrl: String): BackgroundMaterial = js.native
     
     /**
       * Standard reflectance value at parallel view angle.
       */
-    var StandardReflectance0: Double = js.native
+    @JSImport("babylonjs/Materials/Background/backgroundMaterial", "BackgroundMaterial.StandardReflectance0")
+    @js.native
+    def StandardReflectance0: Double = js.native
+    @scala.inline
+    def StandardReflectance0_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance0")(x.asInstanceOf[js.Any])
     
     /**
       * Standard reflectance value at grazing angle.
       */
-    var StandardReflectance90: Double = js.native
+    @JSImport("babylonjs/Materials/Background/backgroundMaterial", "BackgroundMaterial.StandardReflectance90")
+    @js.native
+    def StandardReflectance90: Double = js.native
+    @scala.inline
+    def StandardReflectance90_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance90")(x.asInstanceOf[js.Any])
   }
 }

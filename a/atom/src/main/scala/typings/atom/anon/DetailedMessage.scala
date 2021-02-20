@@ -1,12 +1,13 @@
 package typings.atom.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetailedMessage extends js.Object {
+trait DetailedMessage extends StObject {
   
   var buttons: js.UndefOr[StringDictionary[js.Function0[Unit]]] = js.native
   
@@ -23,33 +24,21 @@ object DetailedMessage {
   }
   
   @scala.inline
-  implicit class DetailedMessageOps[Self <: DetailedMessage] (val x: Self) extends AnyVal {
+  implicit class DetailedMessageMutableBuilder[Self <: DetailedMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: StringDictionary[js.Function0[Unit]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailedMessage(value: String): Self = StObject.set(x, "detailedMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setDetailedMessageUndefined: Self = StObject.set(x, "detailedMessage", js.undefined)
     
     @scala.inline
-    def setButtons(value: StringDictionary[js.Function0[Unit]]): Self = this.set("buttons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
-    
-    @scala.inline
-    def setDetailedMessage(value: String): Self = this.set("detailedMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetailedMessage: Self = this.set("detailedMessage", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

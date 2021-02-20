@@ -1,6 +1,7 @@
 package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,48 +74,36 @@ object IController {
   }
   
   @scala.inline
-  implicit class IControllerOps[Self <: IController] (val x: Self) extends AnyVal {
+  implicit class IControllerMutableBuilder[Self <: IController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$doCheck(value: () => Unit): Self = StObject.set(x, "$doCheck", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$doCheckUndefined: Self = StObject.set(x, "$doCheck", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$onChanges(value: /* onChangesObj */ IOnChangesObject => Unit): Self = StObject.set(x, "$onChanges", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set$doCheck(value: () => Unit): Self = this.set("$doCheck", js.Any.fromFunction0(value))
+    def set$onChangesUndefined: Self = StObject.set(x, "$onChanges", js.undefined)
     
     @scala.inline
-    def delete$doCheck: Self = this.set("$doCheck", js.undefined)
+    def set$onDestroy(value: () => Unit): Self = StObject.set(x, "$onDestroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set$onChanges(value: /* onChangesObj */ IOnChangesObject => Unit): Self = this.set("$onChanges", js.Any.fromFunction1(value))
+    def set$onDestroyUndefined: Self = StObject.set(x, "$onDestroy", js.undefined)
     
     @scala.inline
-    def delete$onChanges: Self = this.set("$onChanges", js.undefined)
+    def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set$onDestroy(value: () => Unit): Self = this.set("$onDestroy", js.Any.fromFunction0(value))
+    def set$onInitUndefined: Self = StObject.set(x, "$onInit", js.undefined)
     
     @scala.inline
-    def delete$onDestroy: Self = this.set("$onDestroy", js.undefined)
+    def set$postLink(value: () => Unit): Self = StObject.set(x, "$postLink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set$onInit(value: () => Unit): Self = this.set("$onInit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def delete$onInit: Self = this.set("$onInit", js.undefined)
-    
-    @scala.inline
-    def set$postLink(value: () => Unit): Self = this.set("$postLink", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def delete$postLink: Self = this.set("$postLink", js.undefined)
+    def set$postLinkUndefined: Self = StObject.set(x, "$postLink", js.undefined)
   }
 }

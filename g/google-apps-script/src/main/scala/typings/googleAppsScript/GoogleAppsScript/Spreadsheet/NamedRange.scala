@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Named ranges... menu.
   */
 @js.native
-trait NamedRange extends js.Object {
+trait NamedRange extends StObject {
   
   def getName(): String = js.native
   
@@ -37,33 +38,21 @@ object NamedRange {
   }
   
   @scala.inline
-  implicit class NamedRangeOps[Self <: NamedRange] (val x: Self) extends AnyVal {
+  implicit class NamedRangeMutableBuilder[Self <: NamedRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRange(value: () => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setSetName(value: String => NamedRange): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRange(value: () => Range): Self = this.set("getRange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetName(value: String => NamedRange): Self = this.set("setName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRange(value: Range => NamedRange): Self = this.set("setRange", js.Any.fromFunction1(value))
+    def setSetRange(value: Range => NamedRange): Self = StObject.set(x, "setRange", js.Any.fromFunction1(value))
   }
 }

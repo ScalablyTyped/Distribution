@@ -2,16 +2,18 @@ package typings.jupyterlabSettingeditor
 
 import typings.jupyterlabSettingeditor.settingeditorMod.SettingEditor.IOptions
 import typings.luminoCoreutils.mod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/settingeditor", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@jupyterlab/settingeditor", "ISettingEditorTracker")
+  @js.native
   val ISettingEditorTracker: Token[typings.jupyterlabSettingeditor.tokensMod.ISettingEditorTracker] = js.native
   
+  @JSImport("@jupyterlab/settingeditor", "SettingEditor")
   @js.native
   class SettingEditor protected ()
     extends typings.jupyterlabSettingeditor.settingeditorMod.SettingEditor {

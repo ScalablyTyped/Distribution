@@ -7,12 +7,13 @@ import typings.hexo.mod.Locals.Tag
 import typings.underscore.mod.TypeOfCollection
 import typings.underscore.mod.Underscore
 import typings.underscore.mod.UnderscoreStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateLocals extends js.Object {
+trait TemplateLocals extends StObject {
   
   /*******
     * OOP *

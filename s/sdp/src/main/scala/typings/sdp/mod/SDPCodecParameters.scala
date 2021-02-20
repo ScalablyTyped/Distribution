@@ -1,11 +1,12 @@
 package typings.sdp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SDPCodecParameters extends js.Object {
+trait SDPCodecParameters extends StObject {
   
   var channels: Double = js.native
   
@@ -30,48 +31,36 @@ object SDPCodecParameters {
   }
   
   @scala.inline
-  implicit class SDPCodecParametersOps[Self <: SDPCodecParameters] (val x: Self) extends AnyVal {
+  implicit class SDPCodecParametersMutableBuilder[Self <: SDPCodecParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClockRate(value: Double): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxptime(value: Double): Self = StObject.set(x, "maxptime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: Double): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setMaxptimeUndefined: Self = StObject.set(x, "maxptime", js.undefined)
     
     @scala.inline
-    def setClockRate(value: Double): Self = this.set("clockRate", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumChannels(value: Double): Self = StObject.set(x, "numChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadType(value: Double): Self = this.set("payloadType", value.asInstanceOf[js.Any])
+    def setNumChannelsUndefined: Self = StObject.set(x, "numChannels", js.undefined)
     
     @scala.inline
-    def setMaxptime(value: Double): Self = this.set("maxptime", value.asInstanceOf[js.Any])
+    def setPayloadType(value: Double): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxptime: Self = this.set("maxptime", js.undefined)
+    def setPreferredPayloadType(value: Double): Self = StObject.set(x, "preferredPayloadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumChannels(value: Double): Self = this.set("numChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumChannels: Self = this.set("numChannels", js.undefined)
-    
-    @scala.inline
-    def setPreferredPayloadType(value: Double): Self = this.set("preferredPayloadType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferredPayloadType: Self = this.set("preferredPayloadType", js.undefined)
+    def setPreferredPayloadTypeUndefined: Self = StObject.set(x, "preferredPayloadType", js.undefined)
   }
 }

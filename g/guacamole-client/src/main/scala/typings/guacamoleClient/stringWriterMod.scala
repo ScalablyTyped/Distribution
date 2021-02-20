@@ -2,16 +2,16 @@ package typings.guacamoleClient
 
 import typings.guacamoleClient.outputStreamMod.OutputStream
 import typings.guacamoleClient.statusMod.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/StringWriter", JSImport.Namespace)
-@js.native
-object stringWriterMod extends js.Object {
+object stringWriterMod {
   
+  @JSImport("guacamole-client/lib/StringWriter", "StringWriter")
   @js.native
-  class StringWriter protected () extends js.Object {
+  class StringWriter protected () extends StObject {
     /**
       * @param stream The stream that data will be written to.
       */

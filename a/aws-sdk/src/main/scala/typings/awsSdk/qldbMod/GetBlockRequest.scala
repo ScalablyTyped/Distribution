@@ -1,11 +1,12 @@
 package typings.awsSdk.qldbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBlockRequest extends js.Object {
+trait GetBlockRequest extends StObject {
   
   /**
     * The location of the block that you want to request. An address is an Amazon Ion structure that has two fields: strandId and sequenceNo. For example: {strandId:"BlFTjlSXze9BIh1KOszcE3",sequenceNo:14} 
@@ -31,30 +32,18 @@ object GetBlockRequest {
   }
   
   @scala.inline
-  implicit class GetBlockRequestOps[Self <: GetBlockRequest] (val x: Self) extends AnyVal {
+  implicit class GetBlockRequestMutableBuilder[Self <: GetBlockRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockAddress(value: ValueHolder): Self = StObject.set(x, "BlockAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigestTipAddress(value: ValueHolder): Self = StObject.set(x, "DigestTipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDigestTipAddressUndefined: Self = StObject.set(x, "DigestTipAddress", js.undefined)
     
     @scala.inline
-    def setBlockAddress(value: ValueHolder): Self = this.set("BlockAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: LedgerName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDigestTipAddress(value: ValueHolder): Self = this.set("DigestTipAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDigestTipAddress: Self = this.set("DigestTipAddress", js.undefined)
+    def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

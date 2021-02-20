@@ -1,6 +1,7 @@
 package typings.xlsx.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,117 +50,105 @@ object FullProperties {
   }
   
   @scala.inline
-  implicit class FullPropertiesOps[Self <: FullProperties] (val x: Self) extends AnyVal {
+  implicit class FullPropertiesMutableBuilder[Self <: FullProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppVersion(value: String): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppVersionUndefined: Self = StObject.set(x, "AppVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplication(value: String): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersion(value: String): Self = this.set("AppVersion", value.asInstanceOf[js.Any])
+    def setApplicationUndefined: Self = StObject.set(x, "Application", js.undefined)
     
     @scala.inline
-    def deleteAppVersion: Self = this.set("AppVersion", js.undefined)
+    def setContentStatus(value: String): Self = StObject.set(x, "ContentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: String): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setContentStatusUndefined: Self = StObject.set(x, "ContentStatus", js.undefined)
     
     @scala.inline
-    def deleteApplication: Self = this.set("Application", js.undefined)
+    def setDocSecurity(value: String): Self = StObject.set(x, "DocSecurity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentStatus(value: String): Self = this.set("ContentStatus", value.asInstanceOf[js.Any])
+    def setDocSecurityUndefined: Self = StObject.set(x, "DocSecurity", js.undefined)
     
     @scala.inline
-    def deleteContentStatus: Self = this.set("ContentStatus", js.undefined)
+    def setHyperlinksChanged(value: Boolean): Self = StObject.set(x, "HyperlinksChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocSecurity(value: String): Self = this.set("DocSecurity", value.asInstanceOf[js.Any])
+    def setHyperlinksChangedUndefined: Self = StObject.set(x, "HyperlinksChanged", js.undefined)
     
     @scala.inline
-    def deleteDocSecurity: Self = this.set("DocSecurity", js.undefined)
+    def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlinksChanged(value: Boolean): Self = this.set("HyperlinksChanged", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
     
     @scala.inline
-    def deleteHyperlinksChanged: Self = this.set("HyperlinksChanged", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("Identifier", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("Identifier", js.undefined)
+    def setLastPrinted(value: String): Self = StObject.set(x, "LastPrinted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("Language", value.asInstanceOf[js.Any])
+    def setLastPrintedUndefined: Self = StObject.set(x, "LastPrinted", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("Language", js.undefined)
+    def setLinksUpToDate(value: Boolean): Self = StObject.set(x, "LinksUpToDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPrinted(value: String): Self = this.set("LastPrinted", value.asInstanceOf[js.Any])
+    def setLinksUpToDateUndefined: Self = StObject.set(x, "LinksUpToDate", js.undefined)
     
     @scala.inline
-    def deleteLastPrinted: Self = this.set("LastPrinted", js.undefined)
+    def setModifiedDate(value: Date): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinksUpToDate(value: Boolean): Self = this.set("LinksUpToDate", value.asInstanceOf[js.Any])
+    def setModifiedDateUndefined: Self = StObject.set(x, "ModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteLinksUpToDate: Self = this.set("LinksUpToDate", js.undefined)
+    def setRevision(value: String | Double): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedDate(value: Date): Self = this.set("ModifiedDate", value.asInstanceOf[js.Any])
+    def setRevisionUndefined: Self = StObject.set(x, "Revision", js.undefined)
     
     @scala.inline
-    def deleteModifiedDate: Self = this.set("ModifiedDate", js.undefined)
+    def setScaleCrop(value: Boolean): Self = StObject.set(x, "ScaleCrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: String | Double): Self = this.set("Revision", value.asInstanceOf[js.Any])
+    def setScaleCropUndefined: Self = StObject.set(x, "ScaleCrop", js.undefined)
     
     @scala.inline
-    def deleteRevision: Self = this.set("Revision", js.undefined)
+    def setSharedDoc(value: Boolean): Self = StObject.set(x, "SharedDoc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleCrop(value: Boolean): Self = this.set("ScaleCrop", value.asInstanceOf[js.Any])
+    def setSharedDocUndefined: Self = StObject.set(x, "SharedDoc", js.undefined)
     
     @scala.inline
-    def deleteScaleCrop: Self = this.set("ScaleCrop", js.undefined)
+    def setSheetNames(value: js.Array[String]): Self = StObject.set(x, "SheetNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedDoc(value: Boolean): Self = this.set("SharedDoc", value.asInstanceOf[js.Any])
+    def setSheetNamesUndefined: Self = StObject.set(x, "SheetNames", js.undefined)
     
     @scala.inline
-    def deleteSharedDoc: Self = this.set("SharedDoc", js.undefined)
+    def setSheetNamesVarargs(value: String*): Self = StObject.set(x, "SheetNames", js.Array(value :_*))
     
     @scala.inline
-    def setSheetNamesVarargs(value: String*): Self = this.set("SheetNames", js.Array(value :_*))
+    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetNames(value: js.Array[String]): Self = this.set("SheetNames", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
     
     @scala.inline
-    def deleteSheetNames: Self = this.set("SheetNames", js.undefined)
+    def setWorksheets(value: Double): Self = StObject.set(x, "Worksheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
-    
-    @scala.inline
-    def setWorksheets(value: Double): Self = this.set("Worksheets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorksheets: Self = this.set("Worksheets", js.undefined)
+    def setWorksheetsUndefined: Self = StObject.set(x, "Worksheets", js.undefined)
   }
 }

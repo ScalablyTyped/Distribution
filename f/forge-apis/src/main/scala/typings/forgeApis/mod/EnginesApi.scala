@@ -1,12 +1,13 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "EnginesApi")
 @js.native
-class EnginesApi () extends js.Object {
+class EnginesApi () extends StObject {
   
   /**
     * Returns the details of all available AutoCAD core engines.

@@ -1,6 +1,7 @@
 package typings.pouchdbCore.PouchDB.Core
 
 import typings.pouchdbCore.pouchdbCoreStrings.all
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,30 +28,18 @@ object GetOpenRevisions {
   }
   
   @scala.inline
-  implicit class GetOpenRevisionsOps[Self <: GetOpenRevisions] (val x: Self) extends AnyVal {
+  implicit class GetOpenRevisionsMutableBuilder[Self <: GetOpenRevisions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpen_revs(value: all | js.Array[RevisionId]): Self = StObject.set(x, "open_revs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpen_revsVarargs(value: RevisionId*): Self = StObject.set(x, "open_revs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevs(value: Boolean): Self = StObject.set(x, "revs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen_revsVarargs(value: RevisionId*): Self = this.set("open_revs", js.Array(value :_*))
-    
-    @scala.inline
-    def setOpen_revs(value: all | js.Array[RevisionId]): Self = this.set("open_revs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevs(value: Boolean): Self = this.set("revs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevs: Self = this.set("revs", js.undefined)
+    def setRevsUndefined: Self = StObject.set(x, "revs", js.undefined)
   }
 }

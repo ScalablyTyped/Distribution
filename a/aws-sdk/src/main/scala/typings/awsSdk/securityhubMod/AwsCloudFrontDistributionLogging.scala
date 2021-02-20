@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCloudFrontDistributionLogging extends js.Object {
+trait AwsCloudFrontDistributionLogging extends StObject {
   
   /**
     * The Amazon S3 bucket to store the access logs in.
@@ -36,42 +37,30 @@ object AwsCloudFrontDistributionLogging {
   }
   
   @scala.inline
-  implicit class AwsCloudFrontDistributionLoggingOps[Self <: AwsCloudFrontDistributionLogging] (val x: Self) extends AnyVal {
+  implicit class AwsCloudFrontDistributionLoggingMutableBuilder[Self <: AwsCloudFrontDistributionLogging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: NonEmptyString): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: NonEmptyString): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    def setIncludeCookies(value: Boolean): Self = StObject.set(x, "IncludeCookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setIncludeCookiesUndefined: Self = StObject.set(x, "IncludeCookies", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setPrefix(value: NonEmptyString): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCookies(value: Boolean): Self = this.set("IncludeCookies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeCookies: Self = this.set("IncludeCookies", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: NonEmptyString): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jose.mod.JWKS.KeyStore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,9 +39,7 @@ class Issuer[TClient /* <: Client */] protected ()
   var static: js.Any = js.native
 }
 /* static members */
-@JSImport("openid-client", "Issuer")
-@js.native
-object Issuer extends js.Object {
+object Issuer {
   
   /**
     * Loads OpenID Connect 1.0 and/or OAuth 2.0 Authorization Server Metadata documents.
@@ -48,11 +47,15 @@ object Issuer extends js.Object {
     * performs both openid-configuration and oauth-authorization-server requests.
     * @param issuer Issuer Identifier or metadata URL
     */
+  @JSImport("openid-client", "Issuer.discover")
+  @js.native
   def discover(issuer: String): js.Promise[Issuer[Client]] = js.native
   
   /**
     * Performs OpenID Provider Issuer Discovery based on End-User input.
     * @param input EMAIL, URL, Hostname and Port, acct or syntax input
     */
+  @JSImport("openid-client", "Issuer.webfinger")
+  @js.native
   def webfinger(input: String): js.Promise[Issuer[Client]] = js.native
 }

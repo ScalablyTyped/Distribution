@@ -5,12 +5,13 @@ import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethods
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddOrUpdateMembershipForUserInOrg extends js.Object {
+trait AddOrUpdateMembershipForUserInOrg extends StObject {
   
   /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.

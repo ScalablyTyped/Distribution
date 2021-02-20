@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CarriersCarrier extends js.Object {
+trait CarriersCarrier extends StObject {
   
   /** The CLDR country code of the carrier (e.g., "US"). Always present. */
   var country: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object CarriersCarrier {
   }
   
   @scala.inline
-  implicit class CarriersCarrierOps[Self <: CarriersCarrier] (val x: Self) extends AnyVal {
+  implicit class CarriersCarrierMutableBuilder[Self <: CarriersCarrier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setServicesVarargs(value: String*): Self = this.set("services", js.Array(value :_*))
-    
-    @scala.inline
-    def setServices(value: js.Array[String]): Self = this.set("services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServices: Self = this.set("services", js.undefined)
+    def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

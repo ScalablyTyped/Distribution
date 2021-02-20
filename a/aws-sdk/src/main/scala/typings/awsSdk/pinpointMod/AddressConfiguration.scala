@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddressConfiguration extends js.Object {
+trait AddressConfiguration extends StObject {
   
   /**
     * The message body to use instead of the default message body. This value overrides the default message body.
@@ -46,54 +47,42 @@ object AddressConfiguration {
   }
   
   @scala.inline
-  implicit class AddressConfigurationOps[Self <: AddressConfiguration] (val x: Self) extends AnyVal {
+  implicit class AddressConfigurationMutableBuilder[Self <: AddressConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyOverride(value: string): Self = StObject.set(x, "BodyOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyOverrideUndefined: Self = StObject.set(x, "BodyOverride", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelType(value: ChannelType): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyOverride(value: string): Self = this.set("BodyOverride", value.asInstanceOf[js.Any])
+    def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
     
     @scala.inline
-    def deleteBodyOverride: Self = this.set("BodyOverride", js.undefined)
+    def setContext(value: MapOfString): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelType(value: ChannelType): Self = this.set("ChannelType", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
     
     @scala.inline
-    def deleteChannelType: Self = this.set("ChannelType", js.undefined)
+    def setRawContent(value: string): Self = StObject.set(x, "RawContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: MapOfString): Self = this.set("Context", value.asInstanceOf[js.Any])
+    def setRawContentUndefined: Self = StObject.set(x, "RawContent", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("Context", js.undefined)
+    def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawContent(value: string): Self = this.set("RawContent", value.asInstanceOf[js.Any])
+    def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
     
     @scala.inline
-    def deleteRawContent: Self = this.set("RawContent", js.undefined)
+    def setTitleOverride(value: string): Self = StObject.set(x, "TitleOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubstitutions(value: MapOfListOfString): Self = this.set("Substitutions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubstitutions: Self = this.set("Substitutions", js.undefined)
-    
-    @scala.inline
-    def setTitleOverride(value: string): Self = this.set("TitleOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleOverride: Self = this.set("TitleOverride", js.undefined)
+    def setTitleOverrideUndefined: Self = StObject.set(x, "TitleOverride", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.MouseEvent
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,30 +48,18 @@ object SceneViewHitTestResult {
   }
   
   @scala.inline
-  implicit class SceneViewHitTestResultOps[Self <: SceneViewHitTestResult] (val x: Self) extends AnyVal {
+  implicit class SceneViewHitTestResultMutableBuilder[Self <: SceneViewHitTestResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGround(value: HitTestResultGround): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResults(value: js.Array[SceneViewHitTestResultResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultsVarargs(value: SceneViewHitTestResultResults*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setGround(value: HitTestResultGround): Self = this.set("ground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: SceneViewHitTestResultResults*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[SceneViewHitTestResultResults]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScreenPoint(value: SceneViewScreenPoint | MouseEvent): Self = this.set("screenPoint", value.asInstanceOf[js.Any])
+    def setScreenPoint(value: SceneViewScreenPoint | MouseEvent): Self = StObject.set(x, "screenPoint", value.asInstanceOf[js.Any])
   }
 }

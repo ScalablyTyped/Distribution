@@ -1,14 +1,14 @@
 package typings.babylonjs
 
 import typings.babylonjs.iparticleemittertypeMod.IParticleEmitterType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/EmitterTypes/hemisphericParticleEmitter", JSImport.Namespace)
-@js.native
-object hemisphericParticleEmitterMod extends js.Object {
+object hemisphericParticleEmitterMod {
   
+  @JSImport("babylonjs/Particles/EmitterTypes/hemisphericParticleEmitter", "HemisphericParticleEmitter")
   @js.native
   /**
     * Creates a new instance HemisphericParticleEmitter

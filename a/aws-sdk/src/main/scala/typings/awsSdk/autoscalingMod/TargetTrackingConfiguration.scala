@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetTrackingConfiguration extends js.Object {
+trait TargetTrackingConfiguration extends StObject {
   
   /**
     * A customized metric. You must specify either a predefined metric or a customized metric.
@@ -36,39 +37,27 @@ object TargetTrackingConfiguration {
   }
   
   @scala.inline
-  implicit class TargetTrackingConfigurationOps[Self <: TargetTrackingConfiguration] (val x: Self) extends AnyVal {
+  implicit class TargetTrackingConfigurationMutableBuilder[Self <: TargetTrackingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomizedMetricSpecification(value: CustomizedMetricSpecification): Self = StObject.set(x, "CustomizedMetricSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomizedMetricSpecificationUndefined: Self = StObject.set(x, "CustomizedMetricSpecification", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableScaleIn(value: DisableScaleIn): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetValue(value: MetricScale): Self = this.set("TargetValue", value.asInstanceOf[js.Any])
+    def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
     
     @scala.inline
-    def setCustomizedMetricSpecification(value: CustomizedMetricSpecification): Self = this.set("CustomizedMetricSpecification", value.asInstanceOf[js.Any])
+    def setPredefinedMetricSpecification(value: PredefinedMetricSpecification): Self = StObject.set(x, "PredefinedMetricSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomizedMetricSpecification: Self = this.set("CustomizedMetricSpecification", js.undefined)
+    def setPredefinedMetricSpecificationUndefined: Self = StObject.set(x, "PredefinedMetricSpecification", js.undefined)
     
     @scala.inline
-    def setDisableScaleIn(value: DisableScaleIn): Self = this.set("DisableScaleIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableScaleIn: Self = this.set("DisableScaleIn", js.undefined)
-    
-    @scala.inline
-    def setPredefinedMetricSpecification(value: PredefinedMetricSpecification): Self = this.set("PredefinedMetricSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePredefinedMetricSpecification: Self = this.set("PredefinedMetricSpecification", js.undefined)
+    def setTargetValue(value: MetricScale): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
   }
 }

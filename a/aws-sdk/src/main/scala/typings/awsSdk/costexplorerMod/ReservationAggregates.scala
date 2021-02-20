@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservationAggregates extends js.Object {
+trait ReservationAggregates extends StObject {
   
   /**
     * The monthly cost of your reservation, amortized over the reservation period.
@@ -86,102 +87,90 @@ object ReservationAggregates {
   }
   
   @scala.inline
-  implicit class ReservationAggregatesOps[Self <: ReservationAggregates] (val x: Self) extends AnyVal {
+  implicit class ReservationAggregatesMutableBuilder[Self <: ReservationAggregates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmortizedRecurringFee(value: AmortizedRecurringFee): Self = StObject.set(x, "AmortizedRecurringFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmortizedRecurringFeeUndefined: Self = StObject.set(x, "AmortizedRecurringFee", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmortizedUpfrontFee(value: AmortizedUpfrontFee): Self = StObject.set(x, "AmortizedUpfrontFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmortizedRecurringFee(value: AmortizedRecurringFee): Self = this.set("AmortizedRecurringFee", value.asInstanceOf[js.Any])
+    def setAmortizedUpfrontFeeUndefined: Self = StObject.set(x, "AmortizedUpfrontFee", js.undefined)
     
     @scala.inline
-    def deleteAmortizedRecurringFee: Self = this.set("AmortizedRecurringFee", js.undefined)
+    def setNetRISavings(value: NetRISavings): Self = StObject.set(x, "NetRISavings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmortizedUpfrontFee(value: AmortizedUpfrontFee): Self = this.set("AmortizedUpfrontFee", value.asInstanceOf[js.Any])
+    def setNetRISavingsUndefined: Self = StObject.set(x, "NetRISavings", js.undefined)
     
     @scala.inline
-    def deleteAmortizedUpfrontFee: Self = this.set("AmortizedUpfrontFee", js.undefined)
+    def setOnDemandCostOfRIHoursUsed(value: OnDemandCostOfRIHoursUsed): Self = StObject.set(x, "OnDemandCostOfRIHoursUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetRISavings(value: NetRISavings): Self = this.set("NetRISavings", value.asInstanceOf[js.Any])
+    def setOnDemandCostOfRIHoursUsedUndefined: Self = StObject.set(x, "OnDemandCostOfRIHoursUsed", js.undefined)
     
     @scala.inline
-    def deleteNetRISavings: Self = this.set("NetRISavings", js.undefined)
+    def setPurchasedHours(value: PurchasedHours): Self = StObject.set(x, "PurchasedHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDemandCostOfRIHoursUsed(value: OnDemandCostOfRIHoursUsed): Self = this.set("OnDemandCostOfRIHoursUsed", value.asInstanceOf[js.Any])
+    def setPurchasedHoursUndefined: Self = StObject.set(x, "PurchasedHours", js.undefined)
     
     @scala.inline
-    def deleteOnDemandCostOfRIHoursUsed: Self = this.set("OnDemandCostOfRIHoursUsed", js.undefined)
+    def setPurchasedUnits(value: PurchasedUnits): Self = StObject.set(x, "PurchasedUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchasedHours(value: PurchasedHours): Self = this.set("PurchasedHours", value.asInstanceOf[js.Any])
+    def setPurchasedUnitsUndefined: Self = StObject.set(x, "PurchasedUnits", js.undefined)
     
     @scala.inline
-    def deletePurchasedHours: Self = this.set("PurchasedHours", js.undefined)
+    def setTotalActualHours(value: TotalActualHours): Self = StObject.set(x, "TotalActualHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchasedUnits(value: PurchasedUnits): Self = this.set("PurchasedUnits", value.asInstanceOf[js.Any])
+    def setTotalActualHoursUndefined: Self = StObject.set(x, "TotalActualHours", js.undefined)
     
     @scala.inline
-    def deletePurchasedUnits: Self = this.set("PurchasedUnits", js.undefined)
+    def setTotalActualUnits(value: TotalActualUnits): Self = StObject.set(x, "TotalActualUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalActualHours(value: TotalActualHours): Self = this.set("TotalActualHours", value.asInstanceOf[js.Any])
+    def setTotalActualUnitsUndefined: Self = StObject.set(x, "TotalActualUnits", js.undefined)
     
     @scala.inline
-    def deleteTotalActualHours: Self = this.set("TotalActualHours", js.undefined)
+    def setTotalAmortizedFee(value: TotalAmortizedFee): Self = StObject.set(x, "TotalAmortizedFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalActualUnits(value: TotalActualUnits): Self = this.set("TotalActualUnits", value.asInstanceOf[js.Any])
+    def setTotalAmortizedFeeUndefined: Self = StObject.set(x, "TotalAmortizedFee", js.undefined)
     
     @scala.inline
-    def deleteTotalActualUnits: Self = this.set("TotalActualUnits", js.undefined)
+    def setTotalPotentialRISavings(value: TotalPotentialRISavings): Self = StObject.set(x, "TotalPotentialRISavings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalAmortizedFee(value: TotalAmortizedFee): Self = this.set("TotalAmortizedFee", value.asInstanceOf[js.Any])
+    def setTotalPotentialRISavingsUndefined: Self = StObject.set(x, "TotalPotentialRISavings", js.undefined)
     
     @scala.inline
-    def deleteTotalAmortizedFee: Self = this.set("TotalAmortizedFee", js.undefined)
+    def setUnusedHours(value: UnusedHours): Self = StObject.set(x, "UnusedHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalPotentialRISavings(value: TotalPotentialRISavings): Self = this.set("TotalPotentialRISavings", value.asInstanceOf[js.Any])
+    def setUnusedHoursUndefined: Self = StObject.set(x, "UnusedHours", js.undefined)
     
     @scala.inline
-    def deleteTotalPotentialRISavings: Self = this.set("TotalPotentialRISavings", js.undefined)
+    def setUnusedUnits(value: UnusedUnits): Self = StObject.set(x, "UnusedUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnusedHours(value: UnusedHours): Self = this.set("UnusedHours", value.asInstanceOf[js.Any])
+    def setUnusedUnitsUndefined: Self = StObject.set(x, "UnusedUnits", js.undefined)
     
     @scala.inline
-    def deleteUnusedHours: Self = this.set("UnusedHours", js.undefined)
+    def setUtilizationPercentage(value: UtilizationPercentage): Self = StObject.set(x, "UtilizationPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnusedUnits(value: UnusedUnits): Self = this.set("UnusedUnits", value.asInstanceOf[js.Any])
+    def setUtilizationPercentageInUnits(value: UtilizationPercentageInUnits): Self = StObject.set(x, "UtilizationPercentageInUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnusedUnits: Self = this.set("UnusedUnits", js.undefined)
+    def setUtilizationPercentageInUnitsUndefined: Self = StObject.set(x, "UtilizationPercentageInUnits", js.undefined)
     
     @scala.inline
-    def setUtilizationPercentage(value: UtilizationPercentage): Self = this.set("UtilizationPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtilizationPercentage: Self = this.set("UtilizationPercentage", js.undefined)
-    
-    @scala.inline
-    def setUtilizationPercentageInUnits(value: UtilizationPercentageInUnits): Self = this.set("UtilizationPercentageInUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtilizationPercentageInUnits: Self = this.set("UtilizationPercentageInUnits", js.undefined)
+    def setUtilizationPercentageUndefined: Self = StObject.set(x, "UtilizationPercentage", js.undefined)
   }
 }

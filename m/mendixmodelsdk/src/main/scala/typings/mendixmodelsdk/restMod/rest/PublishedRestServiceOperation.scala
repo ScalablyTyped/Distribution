@@ -15,6 +15,7 @@ import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.servicesMod.services.HttpMethod
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,16 +99,20 @@ class PublishedRestServiceOperation protected () extends Element[IModel] {
   def summary: String = js.native
   def summary_=(newValue: String): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation")
-@js.native
-object PublishedRestServiceOperation extends js.Object {
+object PublishedRestServiceOperation {
+  
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new PublishedRestServiceOperation instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation.create")
+  @js.native
   def create(model: IModel): PublishedRestServiceOperation = js.native
   
   /**
@@ -118,9 +123,22 @@ object PublishedRestServiceOperation extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.7.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation.createIn")
+  @js.native
   def createIn(container: PublishedRestServiceResource): PublishedRestServiceOperation = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

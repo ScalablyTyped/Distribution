@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * details on determining the collection of supported device events.
   */
 @js.native
-trait DeviceEvents extends js.Object {
+trait DeviceEvents extends StObject {
   
   /** Returns the specified item in the collection by position */
   def apply(Index: Double): DeviceEvent = js.native

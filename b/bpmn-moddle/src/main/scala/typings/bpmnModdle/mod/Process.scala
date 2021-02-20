@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,78 +71,66 @@ object Process {
   }
   
   @scala.inline
-  implicit class ProcessOps[Self <: Process] (val x: Self) extends AnyVal {
+  implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuditing(value: Auditing): Self = StObject.set(x, "auditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactsVarargs(value: Artifact*): Self = this.set("artifacts", js.Array(value :_*))
+    def setCorrelationSubscriptions(value: js.Array[CorrelationSubscription]): Self = StObject.set(x, "correlationSubscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifacts(value: js.Array[Artifact]): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    def setCorrelationSubscriptionsVarargs(value: CorrelationSubscription*): Self = StObject.set(x, "correlationSubscriptions", js.Array(value :_*))
     
     @scala.inline
-    def setAuditing(value: Auditing): Self = this.set("auditing", value.asInstanceOf[js.Any])
+    def setDefinitionalCollaborationRef(value: Collaboration): Self = StObject.set(x, "definitionalCollaborationRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrelationSubscriptionsVarargs(value: CorrelationSubscription*): Self = this.set("correlationSubscriptions", js.Array(value :_*))
+    def setIoBinding(value: InputOutputBinding): Self = StObject.set(x, "ioBinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrelationSubscriptions(value: js.Array[CorrelationSubscription]): Self = this.set("correlationSubscriptions", value.asInstanceOf[js.Any])
+    def setIoSpecification(value: InputOutputSpecification): Self = StObject.set(x, "ioSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionalCollaborationRef(value: Collaboration): Self = this.set("definitionalCollaborationRef", value.asInstanceOf[js.Any])
+    def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIoBinding(value: InputOutputBinding): Self = this.set("ioBinding", value.asInstanceOf[js.Any])
+    def setIsExecutable(value: Boolean): Self = StObject.set(x, "isExecutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIoSpecification(value: InputOutputSpecification): Self = this.set("ioSpecification", value.asInstanceOf[js.Any])
+    def setMonitoring(value: Monitoring): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClosed(value: Boolean): Self = this.set("isClosed", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExecutable(value: Boolean): Self = this.set("isExecutable", value.asInstanceOf[js.Any])
+    def setProcessType(value: String): Self = StObject.set(x, "processType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoring(value: Monitoring): Self = this.set("monitoring", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setProcessType(value: String): Self = this.set("processType", value.asInstanceOf[js.Any])
+    def setResources(value: js.Array[ResourceRole]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertiesVarargs(value: Property*): Self = this.set("properties", js.Array(value :_*))
+    def setResourcesVarargs(value: ResourceRole*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setProperties(value: js.Array[Property]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setSupportedInterfaceRef(value: Interface): Self = StObject.set(x, "supportedInterfaceRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesVarargs(value: ResourceRole*): Self = this.set("resources", js.Array(value :_*))
+    def setSupports(value: js.Array[Process]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[ResourceRole]): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedInterfaceRef(value: Interface): Self = this.set("supportedInterfaceRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsVarargs(value: Process*): Self = this.set("supports", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupports(value: js.Array[Process]): Self = this.set("supports", value.asInstanceOf[js.Any])
+    def setSupportsVarargs(value: Process*): Self = StObject.set(x, "supports", js.Array(value :_*))
   }
 }

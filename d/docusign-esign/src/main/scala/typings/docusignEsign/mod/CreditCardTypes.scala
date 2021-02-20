@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreditCardTypes extends js.Object {
+trait CreditCardTypes extends StObject {
   
   /**
     * An array containing supported credit card types.
@@ -21,27 +22,15 @@ object CreditCardTypes {
   }
   
   @scala.inline
-  implicit class CreditCardTypesOps[Self <: CreditCardTypes] (val x: Self) extends AnyVal {
+  implicit class CreditCardTypesMutableBuilder[Self <: CreditCardTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardTypes(value: js.Array[String]): Self = StObject.set(x, "cardTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardTypesUndefined: Self = StObject.set(x, "cardTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCardTypesVarargs(value: String*): Self = this.set("cardTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setCardTypes(value: js.Array[String]): Self = this.set("cardTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCardTypes: Self = this.set("cardTypes", js.undefined)
+    def setCardTypesVarargs(value: String*): Self = StObject.set(x, "cardTypes", js.Array(value :_*))
   }
 }

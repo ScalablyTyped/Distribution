@@ -1,11 +1,12 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelMatrixTransformInfo extends js.Object {
+trait RaphaelMatrixTransformInfo extends StObject {
   
   /** Translation in the horizontal direction. */
   var dx: Double = js.native
@@ -48,39 +49,27 @@ object RaphaelMatrixTransformInfo {
   }
   
   @scala.inline
-  implicit class RaphaelMatrixTransformInfoOps[Self <: RaphaelMatrixTransformInfo] (val x: Self) extends AnyVal {
+  implicit class RaphaelMatrixTransformInfoMutableBuilder[Self <: RaphaelMatrixTransformInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSimple(value: Boolean): Self = StObject.set(x, "isSimple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDx(value: Double): Self = this.set("dx", value.asInstanceOf[js.Any])
+    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDy(value: Double): Self = this.set("dy", value.asInstanceOf[js.Any])
+    def setScalex(value: Double): Self = StObject.set(x, "scalex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSimple(value: Boolean): Self = this.set("isSimple", value.asInstanceOf[js.Any])
+    def setScaley(value: Double): Self = StObject.set(x, "scaley", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: Double): Self = this.set("rotate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScalex(value: Double): Self = this.set("scalex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaley(value: Double): Self = this.set("scaley", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShear(value: Double): Self = this.set("shear", value.asInstanceOf[js.Any])
+    def setShear(value: Double): Self = StObject.set(x, "shear", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.grammarkdown.grammarkdownMod
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.CloseBracketToken
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.LookaheadKeyword
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.OpenBracketToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

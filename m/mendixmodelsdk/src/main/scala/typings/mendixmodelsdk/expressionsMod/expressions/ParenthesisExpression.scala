@@ -36,6 +36,7 @@ import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,16 +68,20 @@ class ParenthesisExpression protected () extends Expression {
   def expression: Expression = js.native
   def expression_=(newValue: Expression): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression")
-@js.native
-object ParenthesisExpression extends js.Object {
+object ParenthesisExpression {
+  
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new ParenthesisExpression instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.create")
+  @js.native
   def create(model: IModel): ParenthesisExpression = js.native
   
   /**
@@ -87,6 +92,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInAppServiceCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): ParenthesisExpression = js.native
   
   /**
@@ -97,6 +105,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInBasicCodeActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): ParenthesisExpression = js.native
   
   /**
@@ -107,6 +118,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 to 7.20.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInBasicJavaActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): ParenthesisExpression = js.native
   
   /**
@@ -117,6 +131,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInBinaryExpressionUnderLeft")
+  @js.native
   def createInBinaryExpressionUnderLeft(container: BinaryExpression): ParenthesisExpression = js.native
   
   /**
@@ -127,6 +144,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInBinaryExpressionUnderRight")
+  @js.native
   def createInBinaryExpressionUnderRight(container: BinaryExpression): ParenthesisExpression = js.native
   
   /**
@@ -137,6 +157,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInBinaryRequestHandlingUnderExpressionModel")
+  @js.native
   def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): ParenthesisExpression = js.native
   
   /**
@@ -147,6 +170,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInChangeListActionUnderValueModel")
+  @js.native
   def createInChangeListActionUnderValueModel(container: ChangeListAction): ParenthesisExpression = js.native
   
   /**
@@ -157,6 +183,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInChangeVariableActionUnderValueModel")
+  @js.native
   def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): ParenthesisExpression = js.native
   
   /**
@@ -167,6 +196,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInConditionalSettingsUnderExpressionModel")
+  @js.native
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): ParenthesisExpression = js.native
   
   /**
@@ -177,6 +209,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInConsumedODataServiceUnderTimeoutModel")
+  @js.native
   def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): ParenthesisExpression = js.native
   
   /**
@@ -187,6 +222,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInCreateVariableActionUnderInitialValueModel")
+  @js.native
   def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): ParenthesisExpression = js.native
   
   /**
@@ -197,6 +235,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInCustomRangeUnderLimitExpressionModel")
+  @js.native
   def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): ParenthesisExpression = js.native
   
   /**
@@ -207,6 +248,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInCustomRangeUnderOffsetExpressionModel")
+  @js.native
   def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): ParenthesisExpression = js.native
   
   /**
@@ -217,6 +261,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInDocumentTemplateParameterMappingUnderArgumentModel")
+  @js.native
   def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): ParenthesisExpression = js.native
   
   /**
@@ -227,6 +274,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInEndEventUnderReturnValueModel")
+  @js.native
   def createInEndEventUnderReturnValueModel(container: EndEvent): ParenthesisExpression = js.native
   
   /**
@@ -237,6 +287,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInExpressionSplitConditionUnderExpressionModel")
+  @js.native
   def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): ParenthesisExpression = js.native
   
   /**
@@ -247,6 +300,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInFormDataPartUnderValueModel")
+  @js.native
   def createInFormDataPartUnderValueModel(container: FormDataPart): ParenthesisExpression = js.native
   
   /**
@@ -257,6 +313,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInFunctionCallExpressionUnderArguments")
+  @js.native
   def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): ParenthesisExpression = js.native
   
   /**
@@ -267,6 +326,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInGenerateDocumentActionUnderMarginBottomInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): ParenthesisExpression = js.native
   
   /**
@@ -277,6 +339,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInGenerateDocumentActionUnderMarginLeftInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): ParenthesisExpression = js.native
   
   /**
@@ -287,6 +352,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInGenerateDocumentActionUnderMarginRightInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): ParenthesisExpression = js.native
   
   /**
@@ -297,6 +365,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInGenerateDocumentActionUnderMarginTopInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): ParenthesisExpression = js.native
   
   /**
@@ -307,6 +378,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInHttpConfigurationUnderCustomLocationModel")
+  @js.native
   def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): ParenthesisExpression = js.native
   
   /**
@@ -317,6 +391,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInHttpConfigurationUnderPassword")
+  @js.native
   def createInHttpConfigurationUnderPassword(container: HttpConfiguration): ParenthesisExpression = js.native
   
   /**
@@ -327,6 +404,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInHttpConfigurationUnderUsername")
+  @js.native
   def createInHttpConfigurationUnderUsername(container: HttpConfiguration): ParenthesisExpression = js.native
   
   /**
@@ -337,6 +417,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInHttpHeaderEntryUnderValueModel")
+  @js.native
   def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): ParenthesisExpression = js.native
   
   /**
@@ -347,6 +430,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInIfExpressionUnderCondition")
+  @js.native
   def createInIfExpressionUnderCondition(container: IfExpression): ParenthesisExpression = js.native
   
   /**
@@ -357,6 +443,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInIfExpressionUnderIfFalse")
+  @js.native
   def createInIfExpressionUnderIfFalse(container: IfExpression): ParenthesisExpression = js.native
   
   /**
@@ -367,6 +456,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInIfExpressionUnderIfTrue")
+  @js.native
   def createInIfExpressionUnderIfTrue(container: IfExpression): ParenthesisExpression = js.native
   
   /**
@@ -377,6 +469,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInInspectAttributeUnderExpressionModel")
+  @js.native
   def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): ParenthesisExpression = js.native
   
   /**
@@ -387,6 +482,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInLogMessageActionUnderNodeModel")
+  @js.native
   def createInLogMessageActionUnderNodeModel(container: LogMessageAction): ParenthesisExpression = js.native
   
   /**
@@ -397,6 +495,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInMemberChangeUnderValueModel")
+  @js.native
   def createInMemberChangeUnderValueModel(container: MemberChange): ParenthesisExpression = js.native
   
   /**
@@ -407,6 +508,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInMicroflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): ParenthesisExpression = js.native
   
   /**
@@ -417,6 +521,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInNanoflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): ParenthesisExpression = js.native
   
   /**
@@ -427,6 +534,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInParenthesisExpressionUnderExpression")
+  @js.native
   def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): ParenthesisExpression = js.native
   
   /**
@@ -437,6 +547,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInProxyConfigurationUnderHostExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): ParenthesisExpression = js.native
   
   /**
@@ -447,6 +560,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInProxyConfigurationUnderPasswordExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): ParenthesisExpression = js.native
   
   /**
@@ -457,6 +573,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInProxyConfigurationUnderPortExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): ParenthesisExpression = js.native
   
   /**
@@ -467,6 +586,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInProxyConfigurationUnderUseConfigurationExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): ParenthesisExpression = js.native
   
   /**
@@ -477,6 +599,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInProxyConfigurationUnderUsernameExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): ParenthesisExpression = js.native
   
   /**
@@ -487,6 +612,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInRestCallActionUnderTimeOutModel")
+  @js.native
   def createInRestCallActionUnderTimeOutModel(container: RestCallAction): ParenthesisExpression = js.native
   
   /**
@@ -497,6 +625,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInRuleCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): ParenthesisExpression = js.native
   
   /**
@@ -507,6 +638,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInTemplateArgumentUnderExpressionModel")
+  @js.native
   def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): ParenthesisExpression = js.native
   
   /**
@@ -517,6 +651,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInUnaryExpressionUnderExpression")
+  @js.native
   def createInUnaryExpressionUnderExpression(container: UnaryExpression): ParenthesisExpression = js.native
   
   /**
@@ -527,6 +664,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInWebServiceCallActionUnderTimeOutModel")
+  @js.native
   def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): ParenthesisExpression = js.native
   
   /**
@@ -537,6 +677,9 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInWebServiceOperationParameterMappingUnderArgumentModel")
+  @js.native
   def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): ParenthesisExpression = js.native
   
   /**
@@ -547,9 +690,22 @@ object ParenthesisExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.createInWidgetValidationUnderExpressionModel")
+  @js.native
   def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): ParenthesisExpression = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.ParenthesisExpression.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

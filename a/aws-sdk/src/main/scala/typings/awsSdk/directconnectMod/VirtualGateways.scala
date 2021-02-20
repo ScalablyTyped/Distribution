@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGateways extends js.Object {
+trait VirtualGateways extends StObject {
   
   /**
     * The virtual private gateways.
@@ -21,27 +22,15 @@ object VirtualGateways {
   }
   
   @scala.inline
-  implicit class VirtualGatewaysOps[Self <: VirtualGateways] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewaysMutableBuilder[Self <: VirtualGateways] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVirtualGateways(value: VirtualGatewayList): Self = StObject.set(x, "virtualGateways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVirtualGatewaysUndefined: Self = StObject.set(x, "virtualGateways", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVirtualGatewaysVarargs(value: VirtualGateway*): Self = this.set("virtualGateways", js.Array(value :_*))
-    
-    @scala.inline
-    def setVirtualGateways(value: VirtualGatewayList): Self = this.set("virtualGateways", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualGateways: Self = this.set("virtualGateways", js.undefined)
+    def setVirtualGatewaysVarargs(value: VirtualGateway*): Self = StObject.set(x, "virtualGateways", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [registerForPushNotifications](Titanium.Network.registerForPushNotifications).
   */
 @js.native
-trait PushNotificationConfig extends js.Object {
+trait PushNotificationConfig extends StObject {
   
   /**
     * Callback function invoked upon receiving a new push notification.
@@ -40,45 +41,33 @@ object PushNotificationConfig {
   }
   
   @scala.inline
-  implicit class PushNotificationConfigOps[Self <: PushNotificationConfig] (val x: Self) extends AnyVal {
+  implicit class PushNotificationConfigMutableBuilder[Self <: PushNotificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: /* param0 */ PushNotificationData => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: /* param0 */ PushNotificationErrorArg => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallback(value: /* param0 */ PushNotificationData => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setSuccess(value: /* param0 */ PushNotificationSuccessArg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: /* param0 */ PushNotificationErrorArg => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setTypes(value: js.Array[Double]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: /* param0 */ PushNotificationSuccessArg => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setTypesVarargs(value: Double*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[Double]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesVarargs(value: Double*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

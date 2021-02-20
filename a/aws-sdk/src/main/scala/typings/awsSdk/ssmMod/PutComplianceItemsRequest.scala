@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutComplianceItemsRequest extends js.Object {
+trait PutComplianceItemsRequest extends StObject {
   
   /**
     * Specify the compliance type. For example, specify Association (for a State Manager association), Patch, or Custom:string.
@@ -57,48 +58,36 @@ object PutComplianceItemsRequest {
   }
   
   @scala.inline
-  implicit class PutComplianceItemsRequestOps[Self <: PutComplianceItemsRequest] (val x: Self) extends AnyVal {
+  implicit class PutComplianceItemsRequestMutableBuilder[Self <: PutComplianceItemsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceType(value: ComplianceTypeName): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionSummary(value: ComplianceExecutionSummary): Self = StObject.set(x, "ExecutionSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemContentHash(value: ComplianceItemContentHash): Self = StObject.set(x, "ItemContentHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceType(value: ComplianceTypeName): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    def setItemContentHashUndefined: Self = StObject.set(x, "ItemContentHash", js.undefined)
     
     @scala.inline
-    def setExecutionSummary(value: ComplianceExecutionSummary): Self = this.set("ExecutionSummary", value.asInstanceOf[js.Any])
+    def setItems(value: ComplianceItemEntryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: ComplianceItemEntry*): Self = this.set("Items", js.Array(value :_*))
+    def setItemsVarargs(value: ComplianceItemEntry*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
     @scala.inline
-    def setItems(value: ComplianceItemEntryList): Self = this.set("Items", value.asInstanceOf[js.Any])
+    def setResourceId(value: ComplianceResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ComplianceResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setResourceType(value: ComplianceResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ComplianceResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    def setUploadType(value: ComplianceUploadType): Self = StObject.set(x, "UploadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemContentHash(value: ComplianceItemContentHash): Self = this.set("ItemContentHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemContentHash: Self = this.set("ItemContentHash", js.undefined)
-    
-    @scala.inline
-    def setUploadType(value: ComplianceUploadType): Self = this.set("UploadType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadType: Self = this.set("UploadType", js.undefined)
+    def setUploadTypeUndefined: Self = StObject.set(x, "UploadType", js.undefined)
   }
 }

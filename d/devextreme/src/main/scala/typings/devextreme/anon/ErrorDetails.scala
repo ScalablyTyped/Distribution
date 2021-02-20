@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorDetails extends js.Object {
+trait ErrorDetails extends StObject {
   
   var errorDetails: js.UndefOr[js.Any] = js.native
   
@@ -22,36 +23,24 @@ object ErrorDetails {
   }
   
   @scala.inline
-  implicit class ErrorDetailsOps[Self <: ErrorDetails] (val x: Self) extends AnyVal {
+  implicit class ErrorDetailsMutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorDetails(value: js.Any): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: js.Any): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpStatus(value: Double): Self = this.set("httpStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpStatus: Self = this.set("httpStatus", js.undefined)
-    
-    @scala.inline
-    def setRequestOptions(value: js.Any): Self = this.set("requestOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestOptions: Self = this.set("requestOptions", js.undefined)
+    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
   }
 }

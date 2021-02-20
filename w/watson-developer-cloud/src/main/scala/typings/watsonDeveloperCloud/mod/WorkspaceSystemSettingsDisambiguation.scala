@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Workspace settings related to the disambiguation feature. **Note:** This feature is available only to Premium users. */
 @js.native
-trait WorkspaceSystemSettingsDisambiguation extends js.Object {
+trait WorkspaceSystemSettingsDisambiguation extends StObject {
   
   /** Whether the disambiguation feature is enabled for the workspace. */
   var enabled: js.UndefOr[Boolean] = js.native
@@ -29,42 +30,30 @@ object WorkspaceSystemSettingsDisambiguation {
   }
   
   @scala.inline
-  implicit class WorkspaceSystemSettingsDisambiguationOps[Self <: WorkspaceSystemSettingsDisambiguation] (val x: Self) extends AnyVal {
+  implicit class WorkspaceSystemSettingsDisambiguationMutableBuilder[Self <: WorkspaceSystemSettingsDisambiguation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNone_of_the_above_prompt(value: String): Self = StObject.set(x, "none_of_the_above_prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setNone_of_the_above_promptUndefined: Self = StObject.set(x, "none_of_the_above_prompt", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone_of_the_above_prompt(value: String): Self = this.set("none_of_the_above_prompt", value.asInstanceOf[js.Any])
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
     @scala.inline
-    def deleteNone_of_the_above_prompt: Self = this.set("none_of_the_above_prompt", js.undefined)
+    def setSensitivity(value: String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
-    
-    @scala.inline
-    def setSensitivity(value: String): Self = this.set("sensitivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensitivity: Self = this.set("sensitivity", js.undefined)
+    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
   }
 }

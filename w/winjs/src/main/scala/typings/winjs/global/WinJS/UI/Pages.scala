@@ -3,6 +3,7 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import typings.winjs.WinJS.Promise
 import typings.winjs.WinJS.UI.Pages.IPageControlMembers
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides methods for defining and displaying PageControl objects.
 **/
-@JSGlobal("WinJS.UI.Pages")
-@js.native
-object Pages extends js.Object {
+object Pages {
   
   //#endregion Interfaces
   //#region Objects
@@ -24,6 +23,8 @@ object Pages extends js.Object {
     * @param members An object that defines the members that the control will have.
     * @returns A constructor function that creates the PageControl.
     **/
+  @JSGlobal("WinJS.UI.Pages.define")
+  @js.native
   def define(uri: String, members: IPageControlMembers): js.Function4[
     /* element */ js.UndefOr[HTMLElement], 
     /* options */ js.UndefOr[js.Any], 
@@ -37,6 +38,8 @@ object Pages extends js.Object {
     * @param uri The URI for the content that defines the page.
     * @returns A constructor function that creates the page.
     **/
+  @JSGlobal("WinJS.UI.Pages.get")
+  @js.native
   def get(uri: String): js.Function4[
     /* element */ js.UndefOr[HTMLElement], 
     /* options */ js.UndefOr[js.Any], 
@@ -53,17 +56,33 @@ object Pages extends js.Object {
     * @param parentedPromise A Promise that is fulfilled when the new PageControl is done rendering and its contents becomes the child of element.
     * @returns A promise that is fulfilled when rendering is complete, if asynchronous processing is necessary. If not, returns nothing.
     **/
+  @JSGlobal("WinJS.UI.Pages.render")
+  @js.native
   def render(uri: String): Promise[_] = js.native
+  @JSGlobal("WinJS.UI.Pages.render")
+  @js.native
   def render(
     uri: String,
     element: js.UndefOr[scala.Nothing],
     options: js.UndefOr[scala.Nothing],
     parentedPromise: Promise[_]
   ): Promise[_] = js.native
+  @JSGlobal("WinJS.UI.Pages.render")
+  @js.native
   def render(uri: String, element: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
+  @JSGlobal("WinJS.UI.Pages.render")
+  @js.native
   def render(uri: String, element: js.UndefOr[scala.Nothing], options: js.Any, parentedPromise: Promise[_]): Promise[_] = js.native
+  @JSGlobal("WinJS.UI.Pages.render")
+  @js.native
   def render(uri: String, element: HTMLElement): Promise[_] = js.native
+  @JSGlobal("WinJS.UI.Pages.render")
+  @js.native
   def render(uri: String, element: HTMLElement, options: js.UndefOr[scala.Nothing], parentedPromise: Promise[_]): Promise[_] = js.native
+  @JSGlobal("WinJS.UI.Pages.render")
+  @js.native
   def render(uri: String, element: HTMLElement, options: js.Any): Promise[_] = js.native
+  @JSGlobal("WinJS.UI.Pages.render")
+  @js.native
   def render(uri: String, element: HTMLElement, options: js.Any, parentedPromise: Promise[_]): Promise[_] = js.native
 }

@@ -1,15 +1,15 @@
 package typings.ejWebAll.global.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.PivotAnalysis")
-@js.native
-object PivotAnalysis extends js.Object {
+object PivotAnalysis {
   
+  @JSGlobal("ej.PivotAnalysis.FilterType")
   @js.native
-  object FilterType extends js.Object {
+  object FilterType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotAnalysis.FilterType with Double] = js.native
@@ -19,8 +19,9 @@ object PivotAnalysis extends js.Object {
     /* 1 */ val Include: typings.ejWebAll.ej.PivotAnalysis.FilterType.Include with Double = js.native
   }
   
+  @JSGlobal("ej.PivotAnalysis.SortOrder")
   @js.native
-  object SortOrder extends js.Object {
+  object SortOrder extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotAnalysis.SortOrder with Double] = js.native
@@ -32,8 +33,9 @@ object PivotAnalysis extends js.Object {
     /* 2 */ val None: typings.ejWebAll.ej.PivotAnalysis.SortOrder.None with Double = js.native
   }
   
+  @JSGlobal("ej.PivotAnalysis.SummaryType")
   @js.native
-  object SummaryType extends js.Object {
+  object SummaryType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotAnalysis.SummaryType with Double] = js.native

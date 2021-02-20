@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,51 +52,39 @@ object BootstrapPopupControlEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapPopupControlEventMapOps[Self <: BootstrapPopupControlEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapPopupControlEventMapMutableBuilder[Self <: BootstrapPopupControlEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterResizing(value: PopupWindowEventArgs): Self = StObject.set(x, "afterResizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeResizing(value: PopupWindowEventArgs): Self = StObject.set(x, "beforeResizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterResizing(value: PopupWindowEventArgs): Self = this.set("afterResizing", value.asInstanceOf[js.Any])
+    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeResizing(value: PopupWindowEventArgs): Self = this.set("beforeResizing", value.asInstanceOf[js.Any])
+    def setCloseUp(value: PopupWindowCloseUpEventArgs): Self = StObject.set(x, "closeUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = this.set("beginCallback", value.asInstanceOf[js.Any])
+    def setClosing(value: PopupWindowCancelEventArgs): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = this.set("callbackError", value.asInstanceOf[js.Any])
+    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseUp(value: PopupWindowCloseUpEventArgs): Self = this.set("closeUp", value.asInstanceOf[js.Any])
+    def setPinnedChanged(value: PopupWindowPinnedChangedEventArgs): Self = StObject.set(x, "pinnedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosing(value: PopupWindowCancelEventArgs): Self = this.set("closing", value.asInstanceOf[js.Any])
+    def setPopUp(value: PopupWindowEventArgs): Self = StObject.set(x, "popUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = this.set("endCallback", value.asInstanceOf[js.Any])
+    def setResize(value: PopupWindowResizeEventArgs): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinnedChanged(value: PopupWindowPinnedChangedEventArgs): Self = this.set("pinnedChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopUp(value: PopupWindowEventArgs): Self = this.set("popUp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResize(value: PopupWindowResizeEventArgs): Self = this.set("resize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShown(value: PopupWindowEventArgs): Self = this.set("shown", value.asInstanceOf[js.Any])
+    def setShown(value: PopupWindowEventArgs): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
   }
 }

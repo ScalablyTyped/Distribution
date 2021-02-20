@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,33 +57,21 @@ object ConditionalType {
   }
   
   @scala.inline
-  implicit class ConditionalTypeOps[Self <: ConditionalType] (val x: Self) extends AnyVal {
+  implicit class ConditionalTypeMutableBuilder[Self <: ConditionalType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckType(value: Type): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtendsType(value: Type): Self = StObject.set(x, "extendsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolvedFalseType(value: Type): Self = StObject.set(x, "resolvedFalseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckType(value: Type): Self = this.set("checkType", value.asInstanceOf[js.Any])
+    def setResolvedTrueType(value: Type): Self = StObject.set(x, "resolvedTrueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendsType(value: Type): Self = this.set("extendsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedFalseType(value: Type): Self = this.set("resolvedFalseType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedTrueType(value: Type): Self = this.set("resolvedTrueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: ConditionalRoot): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRoot(value: ConditionalRoot): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

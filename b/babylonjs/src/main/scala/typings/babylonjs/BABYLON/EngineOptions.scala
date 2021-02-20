@@ -1,6 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.WebGLContextAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,90 +81,78 @@ object EngineOptions {
   }
   
   @scala.inline
-  implicit class EngineOptionsOps[Self <: EngineOptions] (val x: Self) extends AnyVal {
+  implicit class EngineOptionsMutableBuilder[Self <: EngineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioEngine(value: Boolean): Self = StObject.set(x, "audioEngine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioEngineUndefined: Self = StObject.set(x, "audioEngine", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoEnableWebVR(value: Boolean): Self = StObject.set(x, "autoEnableWebVR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioEngine(value: Boolean): Self = this.set("audioEngine", value.asInstanceOf[js.Any])
+    def setAutoEnableWebVRUndefined: Self = StObject.set(x, "autoEnableWebVR", js.undefined)
     
     @scala.inline
-    def deleteAudioEngine: Self = this.set("audioEngine", js.undefined)
+    def setDeterministicLockstep(value: Boolean): Self = StObject.set(x, "deterministicLockstep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoEnableWebVR(value: Boolean): Self = this.set("autoEnableWebVR", value.asInstanceOf[js.Any])
+    def setDeterministicLockstepUndefined: Self = StObject.set(x, "deterministicLockstep", js.undefined)
     
     @scala.inline
-    def deleteAutoEnableWebVR: Self = this.set("autoEnableWebVR", js.undefined)
+    def setDisableWebGL2Support(value: Boolean): Self = StObject.set(x, "disableWebGL2Support", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeterministicLockstep(value: Boolean): Self = this.set("deterministicLockstep", value.asInstanceOf[js.Any])
+    def setDisableWebGL2SupportUndefined: Self = StObject.set(x, "disableWebGL2Support", js.undefined)
     
     @scala.inline
-    def deleteDeterministicLockstep: Self = this.set("deterministicLockstep", js.undefined)
+    def setDoNotHandleContextLost(value: Boolean): Self = StObject.set(x, "doNotHandleContextLost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableWebGL2Support(value: Boolean): Self = this.set("disableWebGL2Support", value.asInstanceOf[js.Any])
+    def setDoNotHandleContextLostUndefined: Self = StObject.set(x, "doNotHandleContextLost", js.undefined)
     
     @scala.inline
-    def deleteDisableWebGL2Support: Self = this.set("disableWebGL2Support", js.undefined)
+    def setDoNotHandleTouchAction(value: Boolean): Self = StObject.set(x, "doNotHandleTouchAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoNotHandleContextLost(value: Boolean): Self = this.set("doNotHandleContextLost", value.asInstanceOf[js.Any])
+    def setDoNotHandleTouchActionUndefined: Self = StObject.set(x, "doNotHandleTouchAction", js.undefined)
     
     @scala.inline
-    def deleteDoNotHandleContextLost: Self = this.set("doNotHandleContextLost", js.undefined)
+    def setLimitDeviceRatio(value: Double): Self = StObject.set(x, "limitDeviceRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoNotHandleTouchAction(value: Boolean): Self = this.set("doNotHandleTouchAction", value.asInstanceOf[js.Any])
+    def setLimitDeviceRatioUndefined: Self = StObject.set(x, "limitDeviceRatio", js.undefined)
     
     @scala.inline
-    def deleteDoNotHandleTouchAction: Self = this.set("doNotHandleTouchAction", js.undefined)
+    def setLockstepMaxSteps(value: Double): Self = StObject.set(x, "lockstepMaxSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitDeviceRatio(value: Double): Self = this.set("limitDeviceRatio", value.asInstanceOf[js.Any])
+    def setLockstepMaxStepsUndefined: Self = StObject.set(x, "lockstepMaxSteps", js.undefined)
     
     @scala.inline
-    def deleteLimitDeviceRatio: Self = this.set("limitDeviceRatio", js.undefined)
+    def setTimeStep(value: Double): Self = StObject.set(x, "timeStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockstepMaxSteps(value: Double): Self = this.set("lockstepMaxSteps", value.asInstanceOf[js.Any])
+    def setTimeStepUndefined: Self = StObject.set(x, "timeStep", js.undefined)
     
     @scala.inline
-    def deleteLockstepMaxSteps: Self = this.set("lockstepMaxSteps", js.undefined)
+    def setUseHighPrecisionFloats(value: Boolean): Self = StObject.set(x, "useHighPrecisionFloats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStep(value: Double): Self = this.set("timeStep", value.asInstanceOf[js.Any])
+    def setUseHighPrecisionFloatsUndefined: Self = StObject.set(x, "useHighPrecisionFloats", js.undefined)
     
     @scala.inline
-    def deleteTimeStep: Self = this.set("timeStep", js.undefined)
+    def setUseHighPrecisionMatrix(value: Boolean): Self = StObject.set(x, "useHighPrecisionMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseHighPrecisionFloats(value: Boolean): Self = this.set("useHighPrecisionFloats", value.asInstanceOf[js.Any])
+    def setUseHighPrecisionMatrixUndefined: Self = StObject.set(x, "useHighPrecisionMatrix", js.undefined)
     
     @scala.inline
-    def deleteUseHighPrecisionFloats: Self = this.set("useHighPrecisionFloats", js.undefined)
+    def setXrCompatible(value: Boolean): Self = StObject.set(x, "xrCompatible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseHighPrecisionMatrix(value: Boolean): Self = this.set("useHighPrecisionMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseHighPrecisionMatrix: Self = this.set("useHighPrecisionMatrix", js.undefined)
-    
-    @scala.inline
-    def setXrCompatible(value: Boolean): Self = this.set("xrCompatible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXrCompatible: Self = this.set("xrCompatible", js.undefined)
+    def setXrCompatibleUndefined: Self = StObject.set(x, "xrCompatible", js.undefined)
   }
 }

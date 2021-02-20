@@ -1,11 +1,12 @@
 package typings.expoLocation.locationTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationGeocodedAddress extends js.Object {
+trait LocationGeocodedAddress extends StObject {
   
   var city: String | Null = js.native
   
@@ -36,78 +37,66 @@ object LocationGeocodedAddress {
   }
   
   @scala.inline
-  implicit class LocationGeocodedAddressOps[Self <: LocationGeocodedAddress] (val x: Self) extends AnyVal {
+  implicit class LocationGeocodedAddressMutableBuilder[Self <: LocationGeocodedAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCityNull: Self = StObject.set(x, "city", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setCountryNull: Self = StObject.set(x, "country", null)
     
     @scala.inline
-    def setCityNull: Self = this.set("city", null)
+    def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setDistrictNull: Self = StObject.set(x, "district", null)
     
     @scala.inline
-    def setCountryNull: Self = this.set("country", null)
+    def setIsoCountryCode(value: String): Self = StObject.set(x, "isoCountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistrict(value: String): Self = this.set("district", value.asInstanceOf[js.Any])
+    def setIsoCountryCodeNull: Self = StObject.set(x, "isoCountryCode", null)
     
     @scala.inline
-    def setDistrictNull: Self = this.set("district", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoCountryCode(value: String): Self = this.set("isoCountryCode", value.asInstanceOf[js.Any])
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setIsoCountryCodeNull: Self = this.set("isoCountryCode", null)
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPostalCodeNull: Self = StObject.set(x, "postalCode", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setRegionNull: Self = StObject.set(x, "region", null)
     
     @scala.inline
-    def setPostalCodeNull: Self = this.set("postalCode", null)
+    def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setStreetNull: Self = StObject.set(x, "street", null)
     
     @scala.inline
-    def setRegionNull: Self = this.set("region", null)
+    def setSubregion(value: String): Self = StObject.set(x, "subregion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreet(value: String): Self = this.set("street", value.asInstanceOf[js.Any])
+    def setSubregionNull: Self = StObject.set(x, "subregion", null)
     
     @scala.inline
-    def setStreetNull: Self = this.set("street", null)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubregion(value: String): Self = this.set("subregion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubregionNull: Self = this.set("subregion", null)
-    
-    @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimezoneNull: Self = this.set("timezone", null)
+    def setTimezoneNull: Self = StObject.set(x, "timezone", null)
   }
 }

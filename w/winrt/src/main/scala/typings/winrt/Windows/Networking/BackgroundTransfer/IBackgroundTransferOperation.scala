@@ -2,12 +2,13 @@ package typings.winrt.Windows.Networking.BackgroundTransfer
 
 import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBackgroundTransferOperation extends js.Object {
+trait IBackgroundTransferOperation extends StObject {
   
   var costPolicy: BackgroundTransferCostPolicy = js.native
   
@@ -40,39 +41,27 @@ object IBackgroundTransferOperation {
   }
   
   @scala.inline
-  implicit class IBackgroundTransferOperationOps[Self <: IBackgroundTransferOperation] (val x: Self) extends AnyVal {
+  implicit class IBackgroundTransferOperationMutableBuilder[Self <: IBackgroundTransferOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetResponseInformation(value: () => ResponseInformation): Self = StObject.set(x, "getResponseInformation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetResultStreamAt(value: Double => IInputStream): Self = StObject.set(x, "getResultStreamAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCostPolicy(value: BackgroundTransferCostPolicy): Self = this.set("costPolicy", value.asInstanceOf[js.Any])
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetResponseInformation(value: () => ResponseInformation): Self = this.set("getResponseInformation", js.Any.fromFunction0(value))
+    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetResultStreamAt(value: Double => IInputStream): Self = this.set("getResultStreamAt", js.Any.fromFunction1(value))
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGuid(value: String): Self = this.set("guid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestedUri(value: Uri): Self = this.set("requestedUri", value.asInstanceOf[js.Any])
+    def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
   }
 }

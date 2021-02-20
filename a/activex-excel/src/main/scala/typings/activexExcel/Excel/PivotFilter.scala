@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotFilter extends js.Object {
+trait PivotFilter extends StObject {
   
   val Active: Boolean = js.native
   
@@ -70,69 +71,57 @@ object PivotFilter {
   }
   
   @scala.inline
-  implicit class PivotFilterOps[Self <: PivotFilter] (val x: Self) extends AnyVal {
+  implicit class PivotFilterMutableBuilder[Self <: PivotFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("Active", value.asInstanceOf[js.Any])
+    def setDataCubeField(value: CubeField): Self = StObject.set(x, "DataCubeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDataField(value: PivotField): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataCubeField(value: CubeField): Self = this.set("DataCubeField", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataField(value: PivotField): Self = this.set("DataField", value.asInstanceOf[js.Any])
+    def setExcelDotPivotFilter_typekey(value: PivotFilter): Self = StObject.set(x, "Excel.PivotFilter_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setFilterType(value: XlPivotFilterType): Self = StObject.set(x, "FilterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIsMemberPropertyFilter(value: Boolean): Self = StObject.set(x, "IsMemberPropertyFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotPivotFilter_typekey(value: PivotFilter): Self = this.set("Excel.PivotFilter_typekey", value.asInstanceOf[js.Any])
+    def setMemberPropertyField(value: PivotField): Self = StObject.set(x, "MemberPropertyField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterType(value: XlPivotFilterType): Self = this.set("FilterType", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMemberPropertyFilter(value: Boolean): Self = this.set("IsMemberPropertyFilter", value.asInstanceOf[js.Any])
+    def setOrder(value: Double): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberPropertyField(value: PivotField): Self = this.set("MemberPropertyField", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPivotField(value: PivotField): Self = StObject.set(x, "PivotField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: Double): Self = this.set("Order", value.asInstanceOf[js.Any])
+    def setValue1(value: js.Any): Self = StObject.set(x, "Value1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPivotField(value: PivotField): Self = this.set("PivotField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue1(value: js.Any): Self = this.set("Value1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue2(value: js.Any): Self = this.set("Value2", value.asInstanceOf[js.Any])
+    def setValue2(value: js.Any): Self = StObject.set(x, "Value2", value.asInstanceOf[js.Any])
   }
 }

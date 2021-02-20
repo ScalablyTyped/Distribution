@@ -1,12 +1,13 @@
 package typings.sweetalert
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sweetalert/typings/modules/markup/content", JSImport.Namespace)
-@js.native
-object markupContentMod extends js.Object {
+object markupContentMod {
   
+  @JSImport("sweetalert/typings/modules/markup/content", "contentMarkup")
+  @js.native
   val contentMarkup: String = js.native
 }

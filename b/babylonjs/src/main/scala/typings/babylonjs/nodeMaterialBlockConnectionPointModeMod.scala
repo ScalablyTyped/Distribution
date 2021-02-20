@@ -1,18 +1,17 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Enums/nodeMaterialBlockConnectionPointMode", JSImport.Namespace)
-@js.native
-object nodeMaterialBlockConnectionPointModeMod extends js.Object {
+object nodeMaterialBlockConnectionPointModeMod {
   
   @js.native
-  sealed trait NodeMaterialBlockConnectionPointMode extends js.Object
+  sealed trait NodeMaterialBlockConnectionPointMode extends StObject
+  @JSImport("babylonjs/Materials/Node/Enums/nodeMaterialBlockConnectionPointMode", "NodeMaterialBlockConnectionPointMode")
   @js.native
-  object NodeMaterialBlockConnectionPointMode extends js.Object {
+  object NodeMaterialBlockConnectionPointMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[NodeMaterialBlockConnectionPointMode with Double] = js.native
@@ -20,25 +19,21 @@ object nodeMaterialBlockConnectionPointModeMod extends js.Object {
     /** Value is a mesh attribute */
     @js.native
     sealed trait Attribute extends NodeMaterialBlockConnectionPointMode
-    /* 1 */ @js.native
-    object Attribute extends TopLevel[Attribute with Double]
+    /* 1 */ val Attribute: typings.babylonjs.nodeMaterialBlockConnectionPointModeMod.NodeMaterialBlockConnectionPointMode.Attribute with Double = js.native
     
     /** Mode is undefined */
     @js.native
     sealed trait Undefined extends NodeMaterialBlockConnectionPointMode
-    /* 3 */ @js.native
-    object Undefined extends TopLevel[Undefined with Double]
+    /* 3 */ val Undefined: typings.babylonjs.nodeMaterialBlockConnectionPointModeMod.NodeMaterialBlockConnectionPointMode.Undefined with Double = js.native
     
     /** Value is an uniform */
     @js.native
     sealed trait Uniform extends NodeMaterialBlockConnectionPointMode
-    /* 0 */ @js.native
-    object Uniform extends TopLevel[Uniform with Double]
+    /* 0 */ val Uniform: typings.babylonjs.nodeMaterialBlockConnectionPointModeMod.NodeMaterialBlockConnectionPointMode.Uniform with Double = js.native
     
     /** Value is a varying between vertex and fragment shaders */
     @js.native
     sealed trait Varying extends NodeMaterialBlockConnectionPointMode
-    /* 2 */ @js.native
-    object Varying extends TopLevel[Varying with Double]
+    /* 2 */ val Varying: typings.babylonjs.nodeMaterialBlockConnectionPointModeMod.NodeMaterialBlockConnectionPointMode.Varying with Double = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewCreateInstruction extends js.Object {
+trait ViewCreateInstruction extends StObject {
   
   /**
     * Indicates that the view is being created by enhancing existing DOM.
@@ -26,30 +27,18 @@ object ViewCreateInstruction {
   }
   
   @scala.inline
-  implicit class ViewCreateInstructionOps[Self <: ViewCreateInstruction] (val x: Self) extends AnyVal {
+  implicit class ViewCreateInstructionMutableBuilder[Self <: ViewCreateInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnhance(value: Boolean): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartReplacements(value: js.Object): Self = StObject.set(x, "partReplacements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhance(value: Boolean): Self = this.set("enhance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnhance: Self = this.set("enhance", js.undefined)
-    
-    @scala.inline
-    def setPartReplacements(value: js.Object): Self = this.set("partReplacements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartReplacements: Self = this.set("partReplacements", js.undefined)
+    def setPartReplacementsUndefined: Self = StObject.set(x, "partReplacements", js.undefined)
   }
 }

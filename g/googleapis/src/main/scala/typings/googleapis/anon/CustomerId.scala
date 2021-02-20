@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerId extends js.Object {
+trait CustomerId extends StObject {
   
   var customerId: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object CustomerId {
   }
   
   @scala.inline
-  implicit class CustomerIdOps[Self <: CustomerId] (val x: Self) extends AnyVal {
+  implicit class CustomerIdMutableBuilder[Self <: CustomerId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     @scala.inline
-    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     @scala.inline
-    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUserEmail(value: String): Self = this.set("userEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEmail: Self = this.set("userEmail", js.undefined)
+    def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
   }
 }

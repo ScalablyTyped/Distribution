@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutBucketTaggingRequest extends js.Object {
+trait PutBucketTaggingRequest extends StObject {
   
   /**
     * The AWS account ID of the Outposts bucket.
@@ -31,27 +32,15 @@ object PutBucketTaggingRequest {
   }
   
   @scala.inline
-  implicit class PutBucketTaggingRequestOps[Self <: PutBucketTaggingRequest] (val x: Self) extends AnyVal {
+  implicit class PutBucketTaggingRequestMutableBuilder[Self <: PutBucketTaggingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagging(value: Tagging): Self = this.set("Tagging", value.asInstanceOf[js.Any])
+    def setTagging(value: Tagging): Self = StObject.set(x, "Tagging", value.asInstanceOf[js.Any])
   }
 }

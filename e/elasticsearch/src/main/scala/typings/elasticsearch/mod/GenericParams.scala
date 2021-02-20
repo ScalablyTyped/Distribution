@@ -1,11 +1,12 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenericParams extends js.Object {
+trait GenericParams extends StObject {
   
   var body: js.UndefOr[js.Any] = js.native
   
@@ -28,60 +29,48 @@ object GenericParams {
   }
   
   @scala.inline
-  implicit class GenericParamsOps[Self <: GenericParams] (val x: Self) extends AnyVal {
+  implicit class GenericParamsMutableBuilder[Self <: GenericParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterPath(value: String | js.Array[String]): Self = StObject.set(x, "filterPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: js.Any): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setFilterPathUndefined: Self = StObject.set(x, "filterPath", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setFilterPathVarargs(value: String*): Self = StObject.set(x, "filterPath", js.Array(value :_*))
     
     @scala.inline
-    def setFilterPathVarargs(value: String*): Self = this.set("filterPath", js.Array(value :_*))
+    def setIgnore(value: Double | js.Array[Double]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterPath(value: String | js.Array[String]): Self = this.set("filterPath", value.asInstanceOf[js.Any])
+    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
     @scala.inline
-    def deleteFilterPath: Self = this.set("filterPath", js.undefined)
+    def setIgnoreVarargs(value: Double*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreVarargs(value: Double*): Self = this.set("ignore", js.Array(value :_*))
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore(value: Double | js.Array[Double]): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
     @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setRequestTimeout(value: Double): Self = this.set("requestTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestTimeout: Self = this.set("requestTimeout", js.undefined)
+    def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
   }
 }

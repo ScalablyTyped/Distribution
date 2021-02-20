@@ -2,12 +2,13 @@ package typings.businessRulesEngine.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.q.mod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAbstractValidationRule[T] extends js.Object {
+trait IAbstractValidationRule[T] extends StObject {
   
   var Children: StringDictionary[IAbstractValidationRule[_]] = js.native
   
@@ -43,42 +44,30 @@ object IAbstractValidationRule {
   }
   
   @scala.inline
-  implicit class IAbstractValidationRuleOps[Self <: IAbstractValidationRule[_], T] (val x: Self with IAbstractValidationRule[T]) extends AnyVal {
+  implicit class IAbstractValidationRuleMutableBuilder[Self <: IAbstractValidationRule[_], T] (val x: Self with IAbstractValidationRule[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: StringDictionary[IAbstractValidationRule[_]]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRules(value: StringDictionary[IPropertyValidationRule[T]]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValidate(value: T => IValidationResult): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildren(value: StringDictionary[IAbstractValidationRule[_]]): Self = this.set("Children", value.asInstanceOf[js.Any])
+    def setValidateAll(value: T => Promise[IValidationResult]): Self = StObject.set(x, "ValidateAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRules(value: StringDictionary[IPropertyValidationRule[T]]): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    def setValidateAsync(value: T => Promise[IValidationResult]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValidate(value: T => IValidationResult): Self = this.set("Validate", js.Any.fromFunction1(value))
+    def setValidateProperty(value: (T, String) => Unit): Self = StObject.set(x, "ValidateProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setValidateAll(value: T => Promise[IValidationResult]): Self = this.set("ValidateAll", js.Any.fromFunction1(value))
+    def setValidationResult(value: IValidationResult): Self = StObject.set(x, "ValidationResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateAsync(value: T => Promise[IValidationResult]): Self = this.set("ValidateAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidateProperty(value: (T, String) => Unit): Self = this.set("ValidateProperty", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValidationResult(value: IValidationResult): Self = this.set("ValidationResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidators(value: StringDictionary[IValidator]): Self = this.set("Validators", value.asInstanceOf[js.Any])
+    def setValidators(value: StringDictionary[IValidator]): Self = StObject.set(x, "Validators", value.asInstanceOf[js.Any])
   }
 }

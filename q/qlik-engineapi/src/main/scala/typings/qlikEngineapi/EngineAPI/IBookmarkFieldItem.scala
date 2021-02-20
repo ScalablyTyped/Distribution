@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * BookmarkFieldItem...
   */
 @js.native
-trait IBookmarkFieldItem extends js.Object {
+trait IBookmarkFieldItem extends StObject {
   
   /**
     * If set to true, selections within a list object are made in AND mode;
@@ -74,45 +75,33 @@ object IBookmarkFieldItem {
   }
   
   @scala.inline
-  implicit class IBookmarkFieldItemOps[Self <: IBookmarkFieldItem] (val x: Self) extends AnyVal {
+  implicit class IBookmarkFieldItemMutableBuilder[Self <: IBookmarkFieldItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAndMode(value: Boolean): Self = StObject.set(x, "qAndMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDef(value: IFieldDefEx): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQExcludedValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qExcludedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAndMode(value: Boolean): Self = this.set("qAndMode", value.asInstanceOf[js.Any])
+    def setQExcludedValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qExcludedValues", js.Array(value :_*))
     
     @scala.inline
-    def setQDef(value: IFieldDefEx): Self = this.set("qDef", value.asInstanceOf[js.Any])
+    def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQExcludedValuesVarargs(value: IFieldValue*): Self = this.set("qExcludedValues", js.Array(value :_*))
+    def setQOneAndOnlyOne(value: Boolean): Self = StObject.set(x, "qOneAndOnlyOne", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQExcludedValues(value: js.Array[IFieldValue]): Self = this.set("qExcludedValues", value.asInstanceOf[js.Any])
+    def setQSelectInfo(value: ISelectInfo): Self = StObject.set(x, "qSelectInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLocked(value: Boolean): Self = this.set("qLocked", value.asInstanceOf[js.Any])
+    def setQValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQOneAndOnlyOne(value: Boolean): Self = this.set("qOneAndOnlyOne", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSelectInfo(value: ISelectInfo): Self = this.set("qSelectInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQValuesVarargs(value: IFieldValue*): Self = this.set("qValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setQValues(value: js.Array[IFieldValue]): Self = this.set("qValues", value.asInstanceOf[js.Any])
+    def setQValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
   }
 }

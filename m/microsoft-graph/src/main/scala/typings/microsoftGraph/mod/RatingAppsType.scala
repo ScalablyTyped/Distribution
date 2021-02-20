@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.agesAbove12
   - typings.microsoftGraph.microsoftGraphStrings.agesAbove17
 */
-trait RatingAppsType extends js.Object
+trait RatingAppsType extends StObject
 object RatingAppsType {
   
   @scala.inline

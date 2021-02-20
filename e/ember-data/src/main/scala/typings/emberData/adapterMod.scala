@@ -1,13 +1,12 @@
 package typings.emberData
 
 import typings.emberData.mod.DS.Adapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember-data/adapter", JSImport.Namespace)
-@js.native
-object adapterMod extends js.Object {
+object adapterMod {
   
   /**
     * An adapter is an object that receives requests from a store and
@@ -17,6 +16,7 @@ object adapterMod extends js.Object {
     * adapter is not invoked directly instead its functionality is accessed
     * through the `store`.
     */
+  @JSImport("ember-data/adapter", JSImport.Default)
   @js.native
   class default () extends Adapter
 }

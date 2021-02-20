@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVaultOutput extends js.Object {
+trait DescribeVaultOutput extends StObject {
   
   /**
     * The Universal Coordinated Time (UTC) date when the vault was created. This value should be a string in the ISO 8601 date format, for example 2012-03-20T17:03:43.221Z.
@@ -46,54 +47,42 @@ object DescribeVaultOutput {
   }
   
   @scala.inline
-  implicit class DescribeVaultOutputOps[Self <: DescribeVaultOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeVaultOutputMutableBuilder[Self <: DescribeVaultOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastInventoryDate(value: String): Self = StObject.set(x, "LastInventoryDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: String): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setLastInventoryDateUndefined: Self = StObject.set(x, "LastInventoryDate", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setNumberOfArchives(value: long): Self = StObject.set(x, "NumberOfArchives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastInventoryDate(value: String): Self = this.set("LastInventoryDate", value.asInstanceOf[js.Any])
+    def setNumberOfArchivesUndefined: Self = StObject.set(x, "NumberOfArchives", js.undefined)
     
     @scala.inline
-    def deleteLastInventoryDate: Self = this.set("LastInventoryDate", js.undefined)
+    def setSizeInBytes(value: long): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfArchives(value: long): Self = this.set("NumberOfArchives", value.asInstanceOf[js.Any])
+    def setSizeInBytesUndefined: Self = StObject.set(x, "SizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteNumberOfArchives: Self = this.set("NumberOfArchives", js.undefined)
+    def setVaultARN(value: String): Self = StObject.set(x, "VaultARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeInBytes(value: long): Self = this.set("SizeInBytes", value.asInstanceOf[js.Any])
+    def setVaultARNUndefined: Self = StObject.set(x, "VaultARN", js.undefined)
     
     @scala.inline
-    def deleteSizeInBytes: Self = this.set("SizeInBytes", js.undefined)
+    def setVaultName(value: String): Self = StObject.set(x, "VaultName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVaultARN(value: String): Self = this.set("VaultARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVaultARN: Self = this.set("VaultARN", js.undefined)
-    
-    @scala.inline
-    def setVaultName(value: String): Self = this.set("VaultName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVaultName: Self = this.set("VaultName", js.undefined)
+    def setVaultNameUndefined: Self = StObject.set(x, "VaultName", js.undefined)
   }
 }

@@ -10,14 +10,14 @@ import typings.three.constantsMod.TextureFilter
 import typings.three.constantsMod.Wrapping
 import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/textures/CompressedTexture", JSImport.Namespace)
-@js.native
-object compressedTextureMod extends js.Object {
+object compressedTextureMod {
   
+  @JSImport("three/src/textures/CompressedTexture", "CompressedTexture")
   @js.native
   class CompressedTexture protected () extends Texture {
     /**

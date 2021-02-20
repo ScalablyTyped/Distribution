@@ -3,12 +3,13 @@ package typings.fabric.fabricImplMod
 import typings.std.Event
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUtilDomEvent extends js.Object {
+trait IUtilDomEvent extends StObject {
   
   /**
     * Adds an event listener to an element
@@ -40,27 +41,15 @@ object IUtilDomEvent {
   }
   
   @scala.inline
-  implicit class IUtilDomEventOps[Self <: IUtilDomEvent] (val x: Self) extends AnyVal {
+  implicit class IUtilDomEventMutableBuilder[Self <: IUtilDomEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddListener(value: (HTMLElement, String, js.Function) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPointer(value: (Event, HTMLCanvasElement) => Point): Self = StObject.set(x, "getPointer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddListener(value: (HTMLElement, String, js.Function) => Unit): Self = this.set("addListener", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetPointer(value: (Event, HTMLCanvasElement) => Point): Self = this.set("getPointer", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveListener(value: (HTMLElement, String, js.Function) => Unit): Self = this.set("removeListener", js.Any.fromFunction3(value))
+    def setRemoveListener(value: (HTMLElement, String, js.Function) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
   }
 }

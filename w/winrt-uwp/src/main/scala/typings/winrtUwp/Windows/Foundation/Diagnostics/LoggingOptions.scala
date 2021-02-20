@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents advanced event settings. */
 @js.native
-trait LoggingOptions extends js.Object {
+trait LoggingOptions extends StObject {
   
   /** Gets or sets the unique identifier associated with an activity. */
   var activityId: String = js.native
@@ -42,36 +43,24 @@ object LoggingOptions {
   }
   
   @scala.inline
-  implicit class LoggingOptionsOps[Self <: LoggingOptions] (val x: Self) extends AnyVal {
+  implicit class LoggingOptionsMutableBuilder[Self <: LoggingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeywords(value: Double): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpcode(value: LoggingOpcode): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityId(value: String): Self = this.set("activityId", value.asInstanceOf[js.Any])
+    def setRelatedActivityId(value: String): Self = StObject.set(x, "relatedActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: Double): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setTags(value: Double): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpcode(value: LoggingOpcode): Self = this.set("opcode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelatedActivityId(value: String): Self = this.set("relatedActivityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTags(value: Double): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTask(value: Double): Self = this.set("task", value.asInstanceOf[js.Any])
+    def setTask(value: Double): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
   }
 }

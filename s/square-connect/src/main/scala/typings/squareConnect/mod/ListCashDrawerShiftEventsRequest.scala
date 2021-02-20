@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListCashDrawerShiftEventsRequest")
 @js.native
-class ListCashDrawerShiftEventsRequest () extends js.Object {
+class ListCashDrawerShiftEventsRequest () extends StObject {
   
   /**
     * Opaque cursor for fetching the next page of results.

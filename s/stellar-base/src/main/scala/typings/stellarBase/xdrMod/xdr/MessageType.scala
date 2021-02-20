@@ -30,12 +30,13 @@ import typings.stellarBase.stellarBaseStrings.surveyRequest
 import typings.stellarBase.stellarBaseStrings.surveyResponse
 import typings.stellarBase.stellarBaseStrings.transaction
 import typings.stellarBase.stellarBaseStrings.txSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageType extends js.Object {
+trait MessageType extends StObject {
   
   val name: errorMsg | auth | dontHave | getPeers | peers | getTxSet | txSet | transaction | getScpQuorumset | scpQuorumset | scpMessage | getScpState | hello | surveyRequest | surveyResponse = js.native
   
@@ -53,28 +54,16 @@ object MessageType {
   }
   
   @scala.inline
-  implicit class MessageTypeOps[Self <: MessageType] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class MessageTypeMutableBuilder[Self <: MessageType] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setName(
       value: errorMsg | auth | dontHave | getPeers | peers | getTxSet | txSet | transaction | getScpQuorumset | scpQuorumset | scpMessage | getScpState | hello | surveyRequest | surveyResponse
-    ): Self = this.set("name", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValue(
       value: `0` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15`
-    ): Self = this.set("value", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

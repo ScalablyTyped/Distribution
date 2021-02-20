@@ -10,13 +10,14 @@ import typings.jssip.jssipStrings.registrationExpiring
 import typings.jssip.jssipStrings.registrationFailed
 import typings.jssip.jssipStrings.sipEvent
 import typings.jssip.jssipStrings.unregistered
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jssip", "UA")
 @js.native
-class UA protected () extends js.Object {
+class UA protected () extends StObject {
   def this(configuration: UserAgentConfiguration) = this()
   
   def call(target: String): js.Any = js.native

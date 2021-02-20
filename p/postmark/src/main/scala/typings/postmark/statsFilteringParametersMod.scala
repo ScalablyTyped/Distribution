@@ -1,15 +1,15 @@
 package typings.postmark
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark/dist/client/models/stats/StatsFilteringParameters", JSImport.Namespace)
-@js.native
-object statsFilteringParametersMod extends js.Object {
+object statsFilteringParametersMod {
   
+  @JSImport("postmark/dist/client/models/stats/StatsFilteringParameters", "StatisticsFilteringParameters")
   @js.native
-  class StatisticsFilteringParameters () extends js.Object {
+  class StatisticsFilteringParameters () extends StObject {
     def this(tag: String) = this()
     def this(tag: js.UndefOr[scala.Nothing], fromDate: String) = this()
     def this(tag: String, fromDate: String) = this()

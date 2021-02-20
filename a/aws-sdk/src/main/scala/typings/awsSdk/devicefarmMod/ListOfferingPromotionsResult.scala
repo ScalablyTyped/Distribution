@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOfferingPromotionsResult extends js.Object {
+trait ListOfferingPromotionsResult extends StObject {
   
   /**
     * An identifier to be used in the next call to this operation, to return the next set of items in the list.
@@ -26,33 +27,21 @@ object ListOfferingPromotionsResult {
   }
   
   @scala.inline
-  implicit class ListOfferingPromotionsResultOps[Self <: ListOfferingPromotionsResult] (val x: Self) extends AnyVal {
+  implicit class ListOfferingPromotionsResultMutableBuilder[Self <: ListOfferingPromotionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOfferingPromotions(value: OfferingPromotions): Self = StObject.set(x, "offeringPromotions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setOfferingPromotionsUndefined: Self = StObject.set(x, "offeringPromotions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setOfferingPromotionsVarargs(value: OfferingPromotion*): Self = this.set("offeringPromotions", js.Array(value :_*))
-    
-    @scala.inline
-    def setOfferingPromotions(value: OfferingPromotions): Self = this.set("offeringPromotions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfferingPromotions: Self = this.set("offeringPromotions", js.undefined)
+    def setOfferingPromotionsVarargs(value: OfferingPromotion*): Self = StObject.set(x, "offeringPromotions", js.Array(value :_*))
   }
 }

@@ -16,6 +16,7 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.tagsChanged
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.textChanged
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.userInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,17 +25,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BootstrapTagBox extends BootstrapClientEdit {
   
   def addItem(text: String): Double = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def addItem(text: String, value: js.Any): Double = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def addItem(text: String, value: js.Any, iconCssClass: String): Double = js.native
   def addItem(texts: js.Array[String]): Double = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def addItem(texts: js.Array[String], value: js.Any): Double = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def addItem(texts: js.Array[String], value: js.Any, iconCssClass: String): Double = js.native
   
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def addItemCssClass(index: Double, className: String): Unit = js.native
   
   def addItemTextCellCssClass(itemIndex: Double, textCellIndex: Double, className: String): Unit = js.native
@@ -88,17 +89,17 @@ trait BootstrapTagBox extends BootstrapClientEdit {
   def hideDropDown(): Unit = js.native
   
   def insertItem(index: Double, text: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def insertItem(index: Double, text: String, value: js.Any): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def insertItem(index: Double, text: String, value: js.Any, iconCssClass: String): Unit = js.native
   def insertItem(index: Double, texts: js.Array[String]): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def insertItem(index: Double, texts: js.Array[String], value: js.Any): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def insertItem(index: Double, texts: js.Array[String], value: js.Any, iconCssClass: String): Unit = js.native
   
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def isCustomTag(text: String, caseSensitive: Boolean): Boolean = js.native
   
   def makeItemVisible(index: Double): Unit = js.native

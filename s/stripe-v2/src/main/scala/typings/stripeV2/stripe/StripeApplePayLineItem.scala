@@ -2,13 +2,14 @@ package typings.stripeV2.stripe
 
 import typings.stripeV2.stripeV2Strings.`final`
 import typings.stripeV2.stripeV2Strings.pending
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/reference/applepayjs/1916082-applepay_js_data_types
 @js.native
-trait StripeApplePayLineItem extends js.Object {
+trait StripeApplePayLineItem extends StObject {
   
   var amount: Double = js.native
   
@@ -26,27 +27,15 @@ object StripeApplePayLineItem {
   }
   
   @scala.inline
-  implicit class StripeApplePayLineItemOps[Self <: StripeApplePayLineItem] (val x: Self) extends AnyVal {
+  implicit class StripeApplePayLineItemMutableBuilder[Self <: StripeApplePayLineItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: pending | `final`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: pending | `final`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

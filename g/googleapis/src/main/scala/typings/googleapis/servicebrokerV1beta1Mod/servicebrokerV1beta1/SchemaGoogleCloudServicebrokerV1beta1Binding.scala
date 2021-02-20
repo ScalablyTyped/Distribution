@@ -1,6 +1,7 @@
 package typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes the binding.
   */
 @js.native
-trait SchemaGoogleCloudServicebrokerV1beta1Binding extends js.Object {
+trait SchemaGoogleCloudServicebrokerV1beta1Binding extends StObject {
   
   /**
     * A JSON object that contains data for platform resources associated with
@@ -67,66 +68,54 @@ object SchemaGoogleCloudServicebrokerV1beta1Binding {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1beta1BindingOps[Self <: SchemaGoogleCloudServicebrokerV1beta1Binding] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudServicebrokerV1beta1BindingMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1beta1Binding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBind_resource(value: StringDictionary[js.Any]): Self = StObject.set(x, "bind_resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBind_resourceUndefined: Self = StObject.set(x, "bind_resource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinding_id(value: String): Self = StObject.set(x, "binding_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBind_resource(value: StringDictionary[js.Any]): Self = this.set("bind_resource", value.asInstanceOf[js.Any])
+    def setBinding_idUndefined: Self = StObject.set(x, "binding_id", js.undefined)
     
     @scala.inline
-    def deleteBind_resource: Self = this.set("bind_resource", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinding_id(value: String): Self = this.set("binding_id", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteBinding_id: Self = this.set("binding_id", js.undefined)
+    def setDeploymentName(value: String): Self = StObject.set(x, "deploymentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDeploymentNameUndefined: Self = StObject.set(x, "deploymentName", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentName(value: String): Self = this.set("deploymentName", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteDeploymentName: Self = this.set("deploymentName", js.undefined)
+    def setPlan_id(value: String): Self = StObject.set(x, "plan_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: StringDictionary[js.Any]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setPlan_idUndefined: Self = StObject.set(x, "plan_id", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlan_id(value: String): Self = this.set("plan_id", value.asInstanceOf[js.Any])
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def deletePlan_id: Self = this.set("plan_id", js.undefined)
+    def setService_id(value: String): Self = StObject.set(x, "service_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
-    
-    @scala.inline
-    def setService_id(value: String): Self = this.set("service_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService_id: Self = this.set("service_id", js.undefined)
+    def setService_idUndefined: Self = StObject.set(x, "service_id", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * List AccountUsers Response.
   */
 @js.native
-trait SchemaListAccountUsersResponse extends js.Object {
+trait SchemaListAccountUsersResponse extends StObject {
   
   /**
     * All GTM AccountUsers of a GTM Account.
@@ -24,27 +25,15 @@ object SchemaListAccountUsersResponse {
   }
   
   @scala.inline
-  implicit class SchemaListAccountUsersResponseOps[Self <: SchemaListAccountUsersResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListAccountUsersResponseMutableBuilder[Self <: SchemaListAccountUsersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUserAccess(value: js.Array[SchemaUserAccess]): Self = StObject.set(x, "userAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUserAccessUndefined: Self = StObject.set(x, "userAccess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUserAccessVarargs(value: SchemaUserAccess*): Self = this.set("userAccess", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserAccess(value: js.Array[SchemaUserAccess]): Self = this.set("userAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAccess: Self = this.set("userAccess", js.undefined)
+    def setUserAccessVarargs(value: SchemaUserAccess*): Self = StObject.set(x, "userAccess", js.Array(value :_*))
   }
 }

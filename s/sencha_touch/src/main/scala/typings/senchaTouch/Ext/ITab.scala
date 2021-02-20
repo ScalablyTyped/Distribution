@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,72 +56,60 @@ object ITab {
   }
   
   @scala.inline
-  implicit class ITabOps[Self <: ITab] (val x: Self) extends AnyVal {
+  implicit class ITabMutableBuilder[Self <: ITab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveCls(value: java.lang.String): Self = StObject.set(x, "activeCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveClsUndefined: Self = StObject.set(x, "activeCls", js.undefined)
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setGetActive(value: () => Boolean): Self = StObject.set(x, "getActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActiveCls(value: java.lang.String): Self = this.set("activeCls", value.asInstanceOf[js.Any])
+    def setGetActiveCls(value: () => java.lang.String): Self = StObject.set(x, "getActiveCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteActiveCls: Self = this.set("activeCls", js.undefined)
+    def setGetActiveClsUndefined: Self = StObject.set(x, "getActiveCls", js.undefined)
     
     @scala.inline
-    def setGetActive(value: () => Boolean): Self = this.set("getActive", js.Any.fromFunction0(value))
+    def setGetActiveUndefined: Self = StObject.set(x, "getActive", js.undefined)
     
     @scala.inline
-    def deleteGetActive: Self = this.set("getActive", js.undefined)
+    def setGetTitle(value: () => java.lang.String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveCls(value: () => java.lang.String): Self = this.set("getActiveCls", js.Any.fromFunction0(value))
+    def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
     
     @scala.inline
-    def deleteGetActiveCls: Self = this.set("getActiveCls", js.undefined)
+    def setSetActive(value: /* active */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTitle(value: () => java.lang.String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setSetActiveCls(value: /* activeCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setActiveCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetTitle: Self = this.set("getTitle", js.undefined)
+    def setSetActiveClsUndefined: Self = StObject.set(x, "setActiveCls", js.undefined)
     
     @scala.inline
-    def setSetActive(value: /* active */ js.UndefOr[Boolean] => Unit): Self = this.set("setActive", js.Any.fromFunction1(value))
+    def setSetActiveUndefined: Self = StObject.set(x, "setActive", js.undefined)
     
     @scala.inline
-    def deleteSetActive: Self = this.set("setActive", js.undefined)
+    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetActiveCls(value: /* activeCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setActiveCls", js.Any.fromFunction1(value))
+    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
     @scala.inline
-    def deleteSetActiveCls: Self = this.set("setActiveCls", js.undefined)
+    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: java.lang.String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * audioContext 通过 audioId 跟一个 <audio/> 组件绑定，通过它可以操作对应的 <audio/> 组件。
   */
 @js.native
-trait AudioContext extends js.Object {
+trait AudioContext extends StObject {
   
   /**
     * 暂停
@@ -40,30 +41,18 @@ object AudioContext {
   }
   
   @scala.inline
-  implicit class AudioContextOps[Self <: AudioContext] (val x: Self) extends AnyVal {
+  implicit class AudioContextMutableBuilder[Self <: AudioContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = this.set("seek", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSrc(value: String => Unit): Self = this.set("setSrc", js.Any.fromFunction1(value))
+    def setSetSrc(value: String => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction1(value))
   }
 }

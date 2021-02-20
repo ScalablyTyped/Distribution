@@ -1,12 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.SceneLoaderAnimationGroupLoadingMode")
 @js.native
-object SceneLoaderAnimationGroupLoadingMode extends js.Object {
+object SceneLoaderAnimationGroupLoadingMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.SceneLoaderAnimationGroupLoadingMode with Double] = js.native

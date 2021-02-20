@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a new audio item.
   */
 @js.native
-trait INewAudio extends js.Object {
+trait INewAudio extends StObject {
   
   /**
     * The audio's album name.
@@ -54,57 +55,45 @@ object INewAudio {
   }
   
   @scala.inline
-  implicit class INewAudioOps[Self <: INewAudio] (val x: Self) extends AnyVal {
+  implicit class INewAudioMutableBuilder[Self <: INewAudio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlbum_artist(value: String): Self = StObject.set(x, "album_artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setAlbum_artistUndefined: Self = StObject.set(x, "album_artist", js.undefined)
     
     @scala.inline
-    def setAlbum(value: String): Self = this.set("album", value.asInstanceOf[js.Any])
+    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlbum: Self = this.set("album", js.undefined)
+    def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
     
     @scala.inline
-    def setAlbum_artist(value: String): Self = this.set("album_artist", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlbum_artist: Self = this.set("album_artist", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setArtist(value: String): Self = this.set("artist", value.asInstanceOf[js.Any])
+    def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArtist: Self = this.set("artist", js.undefined)
+    def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenre(value: String): Self = this.set("genre", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenre: Self = this.set("genre", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

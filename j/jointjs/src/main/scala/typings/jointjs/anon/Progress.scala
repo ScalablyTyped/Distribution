@@ -5,12 +5,13 @@ import typings.jointjs.mod.dia.Paper.ProgressCallback
 import typings.jointjs.mod.dia.Paper.UpdateStats
 import typings.jointjs.mod.dia.Paper.ViewportCallback
 import typings.jointjs.mod.mvc.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Progress extends js.Object {
+trait Progress extends StObject {
   
   var batchSize: js.UndefOr[Double] = js.native
   
@@ -27,38 +28,26 @@ object Progress {
   }
   
   @scala.inline
-  implicit class ProgressOps[Self <: Progress] (val x: Self) extends AnyVal {
+  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
     def setProgress(
       value: (/* done */ Boolean, /* processed */ Double, /* total */ Double, /* stats */ UpdateStats, /* paper */ Paper) => scala.Unit
-    ): Self = this.set("progress", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "progress", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def setViewport(value: (/* view */ View[js.Any], /* isMounted */ Boolean, /* paper */ Paper) => Boolean): Self = this.set("viewport", js.Any.fromFunction3(value))
+    def setViewport(value: (/* view */ View[js.Any], /* isMounted */ Boolean, /* paper */ Paper) => Boolean): Self = StObject.set(x, "viewport", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteViewport: Self = this.set("viewport", js.undefined)
+    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Declare client constants that specify the Gantt's view type.
   */
 @js.native
-trait ASPxClientGanttViewType extends js.Object {
+trait ASPxClientGanttViewType extends StObject {
   
   /**
     * Displays days.
@@ -39,30 +40,18 @@ object ASPxClientGanttViewType {
   }
   
   @scala.inline
-  implicit class ASPxClientGanttViewTypeOps[Self <: ASPxClientGanttViewType] (val x: Self) extends AnyVal {
+  implicit class ASPxClientGanttViewTypeMutableBuilder[Self <: ASPxClientGanttViewType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHours(value: Double): Self = StObject.set(x, "Hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonths(value: Double): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays(value: Double): Self = this.set("Days", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHours(value: Double): Self = this.set("Hours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonths(value: Double): Self = this.set("Months", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeeks(value: Double): Self = this.set("Weeks", value.asInstanceOf[js.Any])
+    def setWeeks(value: Double): Self = StObject.set(x, "Weeks", value.asInstanceOf[js.Any])
   }
 }

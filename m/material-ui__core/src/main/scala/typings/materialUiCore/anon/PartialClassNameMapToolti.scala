@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Tooltip/Tooltip.TooltipClassKey>> */
 @js.native
-trait PartialClassNameMapToolti extends js.Object {
+trait PartialClassNameMapToolti extends StObject {
   
   var popper: js.UndefOr[String] = js.native
   
@@ -33,66 +34,54 @@ object PartialClassNameMapToolti {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapTooltiOps[Self <: PartialClassNameMapToolti] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapTooltiMutableBuilder[Self <: PartialClassNameMapToolti] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPopper(value: String): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPopperInteractive(value: String): Self = StObject.set(x, "popperInteractive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPopperInteractiveUndefined: Self = StObject.set(x, "popperInteractive", js.undefined)
     
     @scala.inline
-    def setPopper(value: String): Self = this.set("popper", value.asInstanceOf[js.Any])
+    def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
     
     @scala.inline
-    def deletePopper: Self = this.set("popper", js.undefined)
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopperInteractive(value: String): Self = this.set("popperInteractive", value.asInstanceOf[js.Any])
+    def setTooltipPlacementBottom(value: String): Self = StObject.set(x, "tooltipPlacementBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopperInteractive: Self = this.set("popperInteractive", js.undefined)
+    def setTooltipPlacementBottomUndefined: Self = StObject.set(x, "tooltipPlacementBottom", js.undefined)
     
     @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTooltipPlacementLeft(value: String): Self = StObject.set(x, "tooltipPlacementLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipPlacementLeftUndefined: Self = StObject.set(x, "tooltipPlacementLeft", js.undefined)
     
     @scala.inline
-    def setTooltipPlacementBottom(value: String): Self = this.set("tooltipPlacementBottom", value.asInstanceOf[js.Any])
+    def setTooltipPlacementRight(value: String): Self = StObject.set(x, "tooltipPlacementRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltipPlacementBottom: Self = this.set("tooltipPlacementBottom", js.undefined)
+    def setTooltipPlacementRightUndefined: Self = StObject.set(x, "tooltipPlacementRight", js.undefined)
     
     @scala.inline
-    def setTooltipPlacementLeft(value: String): Self = this.set("tooltipPlacementLeft", value.asInstanceOf[js.Any])
+    def setTooltipPlacementTop(value: String): Self = StObject.set(x, "tooltipPlacementTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltipPlacementLeft: Self = this.set("tooltipPlacementLeft", js.undefined)
+    def setTooltipPlacementTopUndefined: Self = StObject.set(x, "tooltipPlacementTop", js.undefined)
     
     @scala.inline
-    def setTooltipPlacementRight(value: String): Self = this.set("tooltipPlacementRight", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteTooltipPlacementRight: Self = this.set("tooltipPlacementRight", js.undefined)
+    def setTouch(value: String): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipPlacementTop(value: String): Self = this.set("tooltipPlacementTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipPlacementTop: Self = this.set("tooltipPlacementTop", js.undefined)
-    
-    @scala.inline
-    def setTouch(value: String): Self = this.set("touch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouch: Self = this.set("touch", js.undefined)
+    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovisioningV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Captures the processing status for each device in the operation.
   */
 @js.native
-trait SchemaPerDeviceStatusInBatch extends js.Object {
+trait SchemaPerDeviceStatusInBatch extends StObject {
   
   /**
     * If processing succeeds, the device ID of the device.
@@ -39,42 +40,30 @@ object SchemaPerDeviceStatusInBatch {
   }
   
   @scala.inline
-  implicit class SchemaPerDeviceStatusInBatchOps[Self <: SchemaPerDeviceStatusInBatch] (val x: Self) extends AnyVal {
+  implicit class SchemaPerDeviceStatusInBatchMutableBuilder[Self <: SchemaPerDeviceStatusInBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorIdentifier(value: String): Self = StObject.set(x, "errorIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setErrorIdentifierUndefined: Self = StObject.set(x, "errorIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorIdentifier(value: String): Self = this.set("errorIdentifier", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorIdentifier: Self = this.set("errorIdentifier", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

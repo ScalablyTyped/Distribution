@@ -3,6 +3,7 @@ package typings.babylonjs.postProcessesIndexMod
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

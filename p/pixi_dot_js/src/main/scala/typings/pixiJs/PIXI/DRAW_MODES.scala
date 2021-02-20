@@ -1,11 +1,12 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DRAW_MODES extends js.Object
+sealed trait DRAW_MODES extends StObject
 /**
   * Various webgl draw modes. These can be used to specify which GL drawMode to use
   * under certain situations and renderers.
@@ -24,7 +25,7 @@ sealed trait DRAW_MODES extends js.Object
   */
 @JSGlobal("PIXI.DRAW_MODES")
 @js.native
-object DRAW_MODES extends js.Object {
+object DRAW_MODES extends StObject {
   
   @js.native
   sealed trait LINES extends DRAW_MODES

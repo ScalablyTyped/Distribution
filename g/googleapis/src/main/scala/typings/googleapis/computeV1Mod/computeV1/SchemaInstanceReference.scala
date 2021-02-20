@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInstanceReference extends js.Object {
+trait SchemaInstanceReference extends StObject {
   
   /**
     * The URL for a specific instance.
@@ -21,24 +22,12 @@ object SchemaInstanceReference {
   }
   
   @scala.inline
-  implicit class SchemaInstanceReferenceOps[Self <: SchemaInstanceReference] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceReferenceMutableBuilder[Self <: SchemaInstanceReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
   }
 }

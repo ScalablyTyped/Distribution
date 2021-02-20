@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletedInProgress extends js.Object {
+trait CompletedInProgress extends StObject {
   
   var completed: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object CompletedInProgress {
   }
   
   @scala.inline
-  implicit class CompletedInProgressOps[Self <: CompletedInProgress] (val x: Self) extends AnyVal {
+  implicit class CompletedInProgressMutableBuilder[Self <: CompletedInProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompleted(value: scala.Double): Self = this.set("completed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = this.set("inProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueued(value: scala.Double): Self = this.set("queued", value.asInstanceOf[js.Any])
+    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
   }
 }

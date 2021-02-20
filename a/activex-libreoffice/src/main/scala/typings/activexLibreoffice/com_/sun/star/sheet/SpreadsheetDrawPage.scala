@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.drawing.XShapeGroup
 import typings.activexLibreoffice.com_.sun.star.drawing.XShapeGrouper
 import typings.activexLibreoffice.com_.sun.star.drawing.XShapes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

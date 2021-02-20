@@ -12,12 +12,13 @@ import typings.devextreme.mod.DevExpress.ui.PatternRule
 import typings.devextreme.mod.DevExpress.ui.RangeRule
 import typings.devextreme.mod.DevExpress.ui.RequiredRule
 import typings.devextreme.mod.DevExpress.ui.StringLengthRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrokenRule extends js.Object {
+trait BrokenRule extends StObject {
   
   var brokenRule: js.UndefOr[
     RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
@@ -52,80 +53,68 @@ object BrokenRule {
   }
   
   @scala.inline
-  implicit class BrokenRuleOps[Self <: BrokenRule] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class BrokenRuleMutableBuilder[Self <: BrokenRule] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBrokenRule(
       value: RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-    ): Self = this.set("brokenRule", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "brokenRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrokenRule: Self = this.set("brokenRule", js.undefined)
-    
-    @scala.inline
-    def setBrokenRulesVarargs(
-      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
-    ): Self = this.set("brokenRules", js.Array(value :_*))
+    def setBrokenRuleUndefined: Self = StObject.set(x, "brokenRule", js.undefined)
     
     @scala.inline
     def setBrokenRules(
       value: js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
-    ): Self = this.set("brokenRules", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "brokenRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrokenRules: Self = this.set("brokenRules", js.undefined)
+    def setBrokenRulesUndefined: Self = StObject.set(x, "brokenRules", js.undefined)
     
     @scala.inline
-    def setIsValid(value: Boolean): Self = this.set("isValid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsValid: Self = this.set("isValid", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: valid | invalid | pending): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setValidationRulesVarargs(
+    def setBrokenRulesVarargs(
       value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
-    ): Self = this.set("validationRules", js.Array(value :_*))
+    ): Self = StObject.set(x, "brokenRules", js.Array(value :_*))
+    
+    @scala.inline
+    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    @scala.inline
+    def setStatus(value: valid | invalid | pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
     def setValidationRules(
       value: js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
-    ): Self = this.set("validationRules", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidationRules: Self = this.set("validationRules", js.undefined)
+    def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValidationRulesVarargs(
+      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+    ): Self = StObject.set(x, "validationRules", js.Array(value :_*))
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

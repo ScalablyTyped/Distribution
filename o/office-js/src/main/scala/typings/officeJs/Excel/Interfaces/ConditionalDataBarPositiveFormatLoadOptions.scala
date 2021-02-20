@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalDataBarPositiveFormatLoadOptions extends js.Object {
+trait ConditionalDataBarPositiveFormatLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -53,42 +54,30 @@ object ConditionalDataBarPositiveFormatLoadOptions {
   }
   
   @scala.inline
-  implicit class ConditionalDataBarPositiveFormatLoadOptionsOps[Self <: ConditionalDataBarPositiveFormatLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ConditionalDataBarPositiveFormatLoadOptionsMutableBuilder[Self <: ConditionalDataBarPositiveFormatLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderColor(value: Boolean): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setFillColor(value: Boolean): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: Boolean): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setGradientFill(value: Boolean): Self = StObject.set(x, "gradientFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: Boolean): Self = this.set("fillColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
-    
-    @scala.inline
-    def setGradientFill(value: Boolean): Self = this.set("gradientFill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGradientFill: Self = this.set("gradientFill", js.undefined)
+    def setGradientFillUndefined: Self = StObject.set(x, "gradientFill", js.undefined)
   }
 }

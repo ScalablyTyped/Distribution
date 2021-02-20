@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.persistenceSubjectMod.Subject
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/persistence/tree/MaterializedPathSubjectExecutor", JSImport.Namespace)
-@js.native
-object treeMaterializedPathSubjectExecutorMod extends js.Object {
+object treeMaterializedPathSubjectExecutorMod {
   
+  @JSImport("typeorm/persistence/tree/MaterializedPathSubjectExecutor", "MaterializedPathSubjectExecutor")
   @js.native
-  class MaterializedPathSubjectExecutor protected () extends js.Object {
+  class MaterializedPathSubjectExecutor protected () extends StObject {
     def this(queryRunner: QueryRunner) = this()
     
     /**

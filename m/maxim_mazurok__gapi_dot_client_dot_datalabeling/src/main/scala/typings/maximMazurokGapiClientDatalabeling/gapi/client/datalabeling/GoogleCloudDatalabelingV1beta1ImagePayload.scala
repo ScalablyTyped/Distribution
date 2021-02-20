@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1ImagePayload extends js.Object {
+trait GoogleCloudDatalabelingV1beta1ImagePayload extends StObject {
   
   /** A byte string of a thumbnail image. */
   var imageThumbnail: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object GoogleCloudDatalabelingV1beta1ImagePayload {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ImagePayloadOps[Self <: GoogleCloudDatalabelingV1beta1ImagePayload] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1ImagePayloadMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImagePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageThumbnail(value: String): Self = StObject.set(x, "imageThumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageThumbnailUndefined: Self = StObject.set(x, "imageThumbnail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageThumbnail(value: String): Self = this.set("imageThumbnail", value.asInstanceOf[js.Any])
+    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
     @scala.inline
-    def deleteImageThumbnail: Self = this.set("imageThumbnail", js.undefined)
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+    def setSignedUri(value: String): Self = StObject.set(x, "signedUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
-    
-    @scala.inline
-    def setSignedUri(value: String): Self = this.set("signedUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedUri: Self = this.set("signedUri", js.undefined)
+    def setSignedUriUndefined: Self = StObject.set(x, "signedUri", js.undefined)
   }
 }

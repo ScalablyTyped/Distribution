@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPromotion extends js.Object {
+trait SchemaPromotion extends StObject {
   
   /**
     * [required] Amount of the promotion. The values here are the promotion
@@ -27,30 +28,18 @@ object SchemaPromotion {
   }
   
   @scala.inline
-  implicit class SchemaPromotionOps[Self <: SchemaPromotion] (val x: Self) extends AnyVal {
+  implicit class SchemaPromotionMutableBuilder[Self <: SchemaPromotion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPromotionAmount(value: SchemaAmount): Self = StObject.set(x, "promotionAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPromotionAmountUndefined: Self = StObject.set(x, "promotionAmount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPromotionId(value: String): Self = StObject.set(x, "promotionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotionAmount(value: SchemaAmount): Self = this.set("promotionAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromotionAmount: Self = this.set("promotionAmount", js.undefined)
-    
-    @scala.inline
-    def setPromotionId(value: String): Self = this.set("promotionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromotionId: Self = this.set("promotionId", js.undefined)
+    def setPromotionIdUndefined: Self = StObject.set(x, "promotionId", js.undefined)
   }
 }

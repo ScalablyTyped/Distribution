@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR
 */
-trait GoogleActionsV2SignInValueStatus extends js.Object
+trait GoogleActionsV2SignInValueStatus extends StObject
 object GoogleActionsV2SignInValueStatus {
   
   @scala.inline

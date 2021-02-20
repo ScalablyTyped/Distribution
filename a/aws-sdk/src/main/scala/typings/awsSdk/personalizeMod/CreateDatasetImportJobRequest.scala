@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDatasetImportJobRequest extends js.Object {
+trait CreateDatasetImportJobRequest extends StObject {
   
   /**
     * The Amazon S3 bucket that contains the training data to import.
@@ -36,30 +37,18 @@ object CreateDatasetImportJobRequest {
   }
   
   @scala.inline
-  implicit class CreateDatasetImportJobRequestOps[Self <: CreateDatasetImportJobRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDatasetImportJobRequestMutableBuilder[Self <: CreateDatasetImportJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobName(value: Name): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDatasetArn(value: Arn): Self = this.set("datasetArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJobName(value: Name): Self = this.set("jobName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

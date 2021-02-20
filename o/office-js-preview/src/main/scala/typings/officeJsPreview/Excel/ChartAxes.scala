@@ -12,6 +12,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Primary
 import typings.officeJsPreview.officeJsPreviewStrings.Secondary
 import typings.officeJsPreview.officeJsPreviewStrings.Series
 import typings.officeJsPreview.officeJsPreviewStrings.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

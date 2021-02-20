@@ -1,11 +1,12 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSecretVersionIdsResponse extends js.Object {
+trait ListSecretVersionIdsResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the secret.  Secrets Manager automatically adds several random characters to the name at the end of the ARN when you initially create a secret. This affects only the ARN and not the actual friendly name. This ensures that if you create a new secret with the same name as an old secret that you previously deleted, then users with access to the old secret don't automatically get access to the new secret because the ARNs are different. 
@@ -36,45 +37,33 @@ object ListSecretVersionIdsResponse {
   }
   
   @scala.inline
-  implicit class ListSecretVersionIdsResponseOps[Self <: ListSecretVersionIdsResponse] (val x: Self) extends AnyVal {
+  implicit class ListSecretVersionIdsResponseMutableBuilder[Self <: ListSecretVersionIdsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARN(value: SecretARNType): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteARN: Self = this.set("ARN", js.undefined)
+    def setNextToken(value: NextTokenType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SecretNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setVersions(value: SecretVersionsListType): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextTokenType): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setVersionsVarargs(value: SecretVersionsListEntry*): Self = this.set("Versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: SecretVersionsListType): Self = this.set("Versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("Versions", js.undefined)
+    def setVersionsVarargs(value: SecretVersionsListEntry*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

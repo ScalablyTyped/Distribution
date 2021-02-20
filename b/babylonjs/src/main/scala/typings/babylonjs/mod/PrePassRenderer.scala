@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,10 @@ class PrePassRenderer protected ()
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
 }
 /* static members */
-@JSImport("babylonjs", "PrePassRenderer")
-@js.native
-object PrePassRenderer extends js.Object {
+object PrePassRenderer {
   
   /** @hidden */
+  @JSImport("babylonjs", "PrePassRenderer._SceneComponentInitialization")
+  @js.native
   def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetExportSnapshotRecordsResult extends js.Object {
+trait GetExportSnapshotRecordsResult extends StObject {
   
   /**
     * A list of objects describing the export snapshot records.
@@ -26,33 +27,21 @@ object GetExportSnapshotRecordsResult {
   }
   
   @scala.inline
-  implicit class GetExportSnapshotRecordsResultOps[Self <: GetExportSnapshotRecordsResult] (val x: Self) extends AnyVal {
+  implicit class GetExportSnapshotRecordsResultMutableBuilder[Self <: GetExportSnapshotRecordsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportSnapshotRecords(value: ExportSnapshotRecordList): Self = StObject.set(x, "exportSnapshotRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportSnapshotRecordsUndefined: Self = StObject.set(x, "exportSnapshotRecords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportSnapshotRecordsVarargs(value: ExportSnapshotRecord*): Self = StObject.set(x, "exportSnapshotRecords", js.Array(value :_*))
     
     @scala.inline
-    def setExportSnapshotRecordsVarargs(value: ExportSnapshotRecord*): Self = this.set("exportSnapshotRecords", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportSnapshotRecords(value: ExportSnapshotRecordList): Self = this.set("exportSnapshotRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportSnapshotRecords: Self = this.set("exportSnapshotRecords", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

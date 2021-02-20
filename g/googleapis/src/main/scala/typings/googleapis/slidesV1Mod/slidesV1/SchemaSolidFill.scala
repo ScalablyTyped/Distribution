@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * from a parent placeholder if it exists.
   */
 @js.native
-trait SchemaSolidFill extends js.Object {
+trait SchemaSolidFill extends StObject {
   
   /**
     * The fraction of this `color` that should be applied to the pixel. That
@@ -35,30 +36,18 @@ object SchemaSolidFill {
   }
   
   @scala.inline
-  implicit class SchemaSolidFillOps[Self <: SchemaSolidFill] (val x: Self) extends AnyVal {
+  implicit class SchemaSolidFillMutableBuilder[Self <: SchemaSolidFill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: SchemaOpaqueColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
-    
-    @scala.inline
-    def setColor(value: SchemaOpaqueColor): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

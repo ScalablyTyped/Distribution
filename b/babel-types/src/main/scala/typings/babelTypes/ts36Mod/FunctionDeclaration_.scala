@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.FunctionDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,51 +54,39 @@ object FunctionDeclaration_ {
   }
   
   @scala.inline
-  implicit class FunctionDeclaration_Ops[Self <: FunctionDeclaration_] (val x: Self) extends AnyVal {
+  implicit class FunctionDeclaration_MutableBuilder[Self <: FunctionDeclaration_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerator(value: Boolean): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: BlockStatement_): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setParams(value: js.Array[LVal]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerator(value: Boolean): Self = this.set("generator", value.asInstanceOf[js.Any])
+    def setParamsVarargs(value: LVal*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Identifier_): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setReturnType(value: TypeAnnotation_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: LVal*): Self = this.set("params", js.Array(value :_*))
+    def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     
     @scala.inline
-    def setParams(value: js.Array[LVal]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setType(value: FunctionDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: FunctionDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnType(value: TypeAnnotation_): Self = this.set("returnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnType: Self = this.set("returnType", js.undefined)
-    
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeParameters: Self = this.set("typeParameters", js.undefined)
+    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

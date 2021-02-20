@@ -7,14 +7,14 @@ import typings.awsSdkClientSqsNode.typesChangeMessageVisibilityBatchInputMod.Cha
 import typings.awsSdkClientSqsNode.typesChangeMessageVisibilityBatchOutputMod.ChangeMessageVisibilityBatchOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/commands/ChangeMessageVisibilityBatchCommand", JSImport.Namespace)
-@js.native
-object changeMessageVisibilityBatchCommandMod extends js.Object {
+object changeMessageVisibilityBatchCommandMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/commands/ChangeMessageVisibilityBatchCommand", "ChangeMessageVisibilityBatchCommand")
   @js.native
   class ChangeMessageVisibilityBatchCommand protected () extends Command[
           InputTypesUnion, 

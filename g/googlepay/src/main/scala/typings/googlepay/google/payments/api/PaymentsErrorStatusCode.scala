@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlepay.googlepayStrings.MERCHANT_ACCOUNT_ERROR
   - typings.googlepay.googlepayStrings.INTERNAL_ERROR
 */
-trait PaymentsErrorStatusCode extends js.Object
+trait PaymentsErrorStatusCode extends StObject
 object PaymentsErrorStatusCode {
   
   @scala.inline

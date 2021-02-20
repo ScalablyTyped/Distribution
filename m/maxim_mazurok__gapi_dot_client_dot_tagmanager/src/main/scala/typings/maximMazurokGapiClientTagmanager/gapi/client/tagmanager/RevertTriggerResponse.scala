@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevertTriggerResponse extends js.Object {
+trait RevertTriggerResponse extends StObject {
   
   /**
     * Trigger as it appears in the latest container version since the last workspace synchronization operation. If no trigger is present, that means the trigger was deleted in the latest
@@ -22,24 +23,12 @@ object RevertTriggerResponse {
   }
   
   @scala.inline
-  implicit class RevertTriggerResponseOps[Self <: RevertTriggerResponse] (val x: Self) extends AnyVal {
+  implicit class RevertTriggerResponseMutableBuilder[Self <: RevertTriggerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTrigger(value: Trigger): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

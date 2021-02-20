@@ -1,11 +1,12 @@
 package typings.antd.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentStack extends js.Object {
+trait ComponentStack extends StObject {
   
   var componentStack: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object ComponentStack {
   }
   
   @scala.inline
-  implicit class ComponentStackOps[Self <: ComponentStack] (val x: Self) extends AnyVal {
+  implicit class ComponentStackMutableBuilder[Self <: ComponentStack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentStack(value: String): Self = StObject.set(x, "componentStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentStack(value: String): Self = this.set("componentStack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponentStack: Self = this.set("componentStack", js.undefined)
+    def setComponentStackUndefined: Self = StObject.set(x, "componentStack", js.undefined)
   }
 }

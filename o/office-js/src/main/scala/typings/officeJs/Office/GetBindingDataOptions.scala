@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If the rows option is used, the value must be "thisRow".
   */
 @js.native
-trait GetBindingDataOptions extends js.Object {
+trait GetBindingDataOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
@@ -74,72 +75,60 @@ object GetBindingDataOptions {
   }
   
   @scala.inline
-  implicit class GetBindingDataOptionsOps[Self <: GetBindingDataOptions] (val x: Self) extends AnyVal {
+  implicit class GetBindingDataOptionsMutableBuilder[Self <: GetBindingDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoercionType(value: CoercionType | String): Self = StObject.set(x, "coercionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncContext(value: js.Any): Self = this.set("asyncContext", value.asInstanceOf[js.Any])
+    def setCoercionTypeUndefined: Self = StObject.set(x, "coercionType", js.undefined)
     
     @scala.inline
-    def deleteAsyncContext: Self = this.set("asyncContext", js.undefined)
+    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoercionType(value: CoercionType | String): Self = this.set("coercionType", value.asInstanceOf[js.Any])
+    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
     @scala.inline
-    def deleteCoercionType: Self = this.set("coercionType", js.undefined)
+    def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterType(value: FilterType | String): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: String): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
+    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
     
     @scala.inline
-    def deleteStartColumn: Self = this.set("startColumn", js.undefined)
+    def setValueFormat(value: ValueFormat | String): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRow: Self = this.set("startRow", js.undefined)
-    
-    @scala.inline
-    def setValueFormat(value: ValueFormat | String): Self = this.set("valueFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueFormat: Self = this.set("valueFormat", js.undefined)
+    def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
   }
 }

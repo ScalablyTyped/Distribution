@@ -5,16 +5,16 @@ import typings.angularCompiler.metadataResolverMod.CompileMetadataResolver
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolverHost
 import typings.angularCompiler.summaryResolverMod.AotSummaryResolverHost
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/i18n/extractor", JSImport.Namespace)
-@js.native
-object extractorMod extends js.Object {
+object extractorMod {
   
+  @JSImport("@angular/compiler/src/i18n/extractor", "Extractor")
   @js.native
-  class Extractor protected () extends js.Object {
+  class Extractor protected () extends StObject {
     def this(
       host: ExtractorHost,
       staticSymbolResolver: StaticSymbolResolver,
@@ -33,10 +33,13 @@ object extractorMod extends js.Object {
     var staticSymbolResolver: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Extractor extends js.Object {
+  object Extractor {
     
+    @JSImport("@angular/compiler/src/i18n/extractor", "Extractor.create")
+    @js.native
     def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = js.native
+    @JSImport("@angular/compiler/src/i18n/extractor", "Extractor.create")
+    @js.native
     def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = js.native
   }
   

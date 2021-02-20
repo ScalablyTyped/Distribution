@@ -1,11 +1,12 @@
 package typings.reactNativeNavigation.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionsSearchBar extends js.Object {
+trait OptionsSearchBar extends StObject {
   
   var backgroundColor: js.UndefOr[Color] = js.native
   
@@ -30,60 +31,48 @@ object OptionsSearchBar {
   }
   
   @scala.inline
-  implicit class OptionsSearchBarOps[Self <: OptionsSearchBar] (val x: Self) extends AnyVal {
+  implicit class OptionsSearchBarMutableBuilder[Self <: OptionsSearchBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideOnScroll(value: Boolean): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setHideTopBarOnFocus(value: Boolean): Self = StObject.set(x, "hideTopBarOnFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideOnScroll(value: Boolean): Self = this.set("hideOnScroll", value.asInstanceOf[js.Any])
+    def setHideTopBarOnFocusUndefined: Self = StObject.set(x, "hideTopBarOnFocus", js.undefined)
     
     @scala.inline
-    def deleteHideOnScroll: Self = this.set("hideOnScroll", js.undefined)
+    def setObscuresBackgroundDuringPresentation(value: Boolean): Self = StObject.set(x, "obscuresBackgroundDuringPresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideTopBarOnFocus(value: Boolean): Self = this.set("hideTopBarOnFocus", value.asInstanceOf[js.Any])
+    def setObscuresBackgroundDuringPresentationUndefined: Self = StObject.set(x, "obscuresBackgroundDuringPresentation", js.undefined)
     
     @scala.inline
-    def deleteHideTopBarOnFocus: Self = this.set("hideTopBarOnFocus", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObscuresBackgroundDuringPresentation(value: Boolean): Self = this.set("obscuresBackgroundDuringPresentation", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteObscuresBackgroundDuringPresentation: Self = this.set("obscuresBackgroundDuringPresentation", js.undefined)
+    def setTintColor(value: Color): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: Color): Self = this.set("tintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

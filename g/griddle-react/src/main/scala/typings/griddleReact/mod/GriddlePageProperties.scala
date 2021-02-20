@@ -1,11 +1,12 @@
 package typings.griddleReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GriddlePageProperties extends js.Object {
+trait GriddlePageProperties extends StObject {
   
   var currentPage: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object GriddlePageProperties {
   }
   
   @scala.inline
-  implicit class GriddlePagePropertiesOps[Self <: GriddlePageProperties] (val x: Self) extends AnyVal {
+  implicit class GriddlePagePropertiesMutableBuilder[Self <: GriddlePageProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPage(value: Double): Self = this.set("currentPage", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteCurrentPage: Self = this.set("currentPage", js.undefined)
+    def setRecordCount(value: Double): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
-    
-    @scala.inline
-    def setRecordCount(value: Double): Self = this.set("recordCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordCount: Self = this.set("recordCount", js.undefined)
+    def setRecordCountUndefined: Self = StObject.set(x, "recordCount", js.undefined)
   }
 }

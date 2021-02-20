@@ -1,5 +1,6 @@
 package typings.regexpp.astMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,45 +49,33 @@ object Flags {
   }
   
   @scala.inline
-  implicit class FlagsOps[Self <: Flags] (val x: Self) extends AnyVal {
+  implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDotAll(value: Boolean): Self = StObject.set(x, "dotAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotAll(value: Boolean): Self = this.set("dotAll", value.asInstanceOf[js.Any])
+    def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: Boolean): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setParent(value: RegExpLiteral): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    def setParentNull: Self = StObject.set(x, "parent", null)
     
     @scala.inline
-    def setMultiline(value: Boolean): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSticky(value: Boolean): Self = this.set("sticky", value.asInstanceOf[js.Any])
+    def setType(value: typings.regexpp.regexppStrings.Flags): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.Flags): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnicode(value: Boolean): Self = this.set("unicode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: RegExpLiteral): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentNull: Self = this.set("parent", null)
+    def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
   }
 }

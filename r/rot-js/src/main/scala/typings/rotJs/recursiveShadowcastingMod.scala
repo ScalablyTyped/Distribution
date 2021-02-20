@@ -1,13 +1,16 @@
 package typings.rotJs
 
 import typings.rotJs.fovFovMod.VisibilityCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/fov/recursive-shadowcasting", JSImport.Namespace)
-@js.native
-object recursiveShadowcastingMod extends js.Object {
+object recursiveShadowcastingMod {
+  
+  @JSImport("rot-js/lib/fov/recursive-shadowcasting", JSImport.Default)
+  @js.native
+  class default () extends RecursiveShadowcasting
   
   @js.native
   trait RecursiveShadowcasting
@@ -71,7 +74,4 @@ object recursiveShadowcastingMod extends js.Object {
       */
     def compute90(x: Double, y: Double, R: Double, dir: Double, callback: VisibilityCallback): Unit = js.native
   }
-  
-  @js.native
-  class default () extends RecursiveShadowcasting
 }

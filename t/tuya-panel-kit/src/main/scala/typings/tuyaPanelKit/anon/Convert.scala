@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Convert extends js.Object {
+trait Convert extends StObject {
   
   var HRatio: Double = js.native
   
@@ -71,72 +72,60 @@ object Convert {
   }
   
   @scala.inline
-  implicit class ConvertOps[Self <: Convert] (val x: Self) extends AnyVal {
+  implicit class ConvertMutableBuilder[Self <: Convert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvert(value: Double => Double): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertX(value: Double => Double): Self = StObject.set(x, "convertX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConvertY(value: Double => Double): Self = StObject.set(x, "convertY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHRatio(value: Double): Self = this.set("HRatio", value.asInstanceOf[js.Any])
+    def setHRatio(value: Double): Self = StObject.set(x, "HRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVRatio(value: Double): Self = this.set("VRatio", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert(value: Double => Double): Self = this.set("convert", js.Any.fromFunction1(value))
+    def setIsIos(value: Boolean): Self = StObject.set(x, "isIos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertX(value: Double => Double): Self = this.set("convertX", js.Any.fromFunction1(value))
+    def setIsIphoneX(value: Boolean): Self = StObject.set(x, "isIphoneX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertY(value: Double => Double): Self = this.set("convertY", js.Any.fromFunction1(value))
+    def setIsSmallH(value: Boolean): Self = StObject.set(x, "isSmallH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIsSmallW(value: Boolean): Self = StObject.set(x, "isSmallW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIos(value: Boolean): Self = this.set("isIos", value.asInstanceOf[js.Any])
+    def setIsWeb(value: Boolean): Self = StObject.set(x, "isWeb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIphoneX(value: Boolean): Self = this.set("isIphoneX", value.asInstanceOf[js.Any])
+    def setStatusBarHeight(value: Double): Self = StObject.set(x, "statusBarHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSmallH(value: Boolean): Self = this.set("isSmallH", value.asInstanceOf[js.Any])
+    def setTopBarHeight(value: Double): Self = StObject.set(x, "topBarHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSmallW(value: Boolean): Self = this.set("isSmallW", value.asInstanceOf[js.Any])
+    def setVRatio(value: Double): Self = StObject.set(x, "VRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWeb(value: Boolean): Self = this.set("isWeb", value.asInstanceOf[js.Any])
+    def setViewHeight(value: Double): Self = StObject.set(x, "viewHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusBarHeight(value: Double): Self = this.set("statusBarHeight", value.asInstanceOf[js.Any])
+    def setViewWidth(value: Double): Self = StObject.set(x, "viewWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopBarHeight(value: Double): Self = this.set("topBarHeight", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewHeight(value: Double): Self = this.set("viewHeight", value.asInstanceOf[js.Any])
+    def setWinHeight(value: Double): Self = StObject.set(x, "winHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewWidth(value: Double): Self = this.set("viewWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWinHeight(value: Double): Self = this.set("winHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWinWidth(value: Double): Self = this.set("winWidth", value.asInstanceOf[js.Any])
+    def setWinWidth(value: Double): Self = StObject.set(x, "winWidth", value.asInstanceOf[js.Any])
   }
 }

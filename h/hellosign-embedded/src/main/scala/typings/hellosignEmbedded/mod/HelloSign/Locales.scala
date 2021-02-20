@@ -14,12 +14,13 @@ import typings.hellosignEmbedded.hellosignEmbeddedStrings.pl_PL
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.pt_BR
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.sv_SE
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.zh_CN
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Locales extends js.Object {
+trait Locales extends StObject {
   
   var CS_CZ: cs_CZ = js.native
   
@@ -73,60 +74,48 @@ object Locales {
   }
   
   @scala.inline
-  implicit class LocalesOps[Self <: Locales] (val x: Self) extends AnyVal {
+  implicit class LocalesMutableBuilder[Self <: Locales] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCS_CZ(value: cs_CZ): Self = StObject.set(x, "CS_CZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDA_DK(value: da_DK): Self = StObject.set(x, "DA_DK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDE_DE(value: de_DE): Self = StObject.set(x, "DE_DE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCS_CZ(value: cs_CZ): Self = this.set("CS_CZ", value.asInstanceOf[js.Any])
+    def setEN_US(value: en_US): Self = StObject.set(x, "EN_US", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDA_DK(value: da_DK): Self = this.set("DA_DK", value.asInstanceOf[js.Any])
+    def setES_ES(value: es_ES): Self = StObject.set(x, "ES_ES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDE_DE(value: de_DE): Self = this.set("DE_DE", value.asInstanceOf[js.Any])
+    def setES_MX(value: es_MX): Self = StObject.set(x, "ES_MX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEN_US(value: en_US): Self = this.set("EN_US", value.asInstanceOf[js.Any])
+    def setFR_FR(value: fr_FR): Self = StObject.set(x, "FR_FR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setES_ES(value: es_ES): Self = this.set("ES_ES", value.asInstanceOf[js.Any])
+    def setIT_IT(value: it_IT): Self = StObject.set(x, "IT_IT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setES_MX(value: es_MX): Self = this.set("ES_MX", value.asInstanceOf[js.Any])
+    def setJA_JP(value: ja_JP): Self = StObject.set(x, "JA_JP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFR_FR(value: fr_FR): Self = this.set("FR_FR", value.asInstanceOf[js.Any])
+    def setNL_NL(value: nl_NL): Self = StObject.set(x, "NL_NL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIT_IT(value: it_IT): Self = this.set("IT_IT", value.asInstanceOf[js.Any])
+    def setPL_PL(value: pl_PL): Self = StObject.set(x, "PL_PL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJA_JP(value: ja_JP): Self = this.set("JA_JP", value.asInstanceOf[js.Any])
+    def setPT_BR(value: pt_BR): Self = StObject.set(x, "PT_BR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNL_NL(value: nl_NL): Self = this.set("NL_NL", value.asInstanceOf[js.Any])
+    def setSV_SE(value: sv_SE): Self = StObject.set(x, "SV_SE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPL_PL(value: pl_PL): Self = this.set("PL_PL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPT_BR(value: pt_BR): Self = this.set("PT_BR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSV_SE(value: sv_SE): Self = this.set("SV_SE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZH_CN(value: zh_CN): Self = this.set("ZH_CN", value.asInstanceOf[js.Any])
+    def setZH_CN(value: zh_CN): Self = StObject.set(x, "ZH_CN", value.asInstanceOf[js.Any])
   }
 }

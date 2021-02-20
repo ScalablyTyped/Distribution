@@ -6,6 +6,7 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.utilMod.Vector7
 import typings.vegaTypings.vegaTypingsStrings.wordcloud
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,87 +48,75 @@ object WordcloudTransform {
   }
   
   @scala.inline
-  implicit class WordcloudTransformOps[Self <: WordcloudTransform] (val x: Self) extends AnyVal {
+  implicit class WordcloudTransformMutableBuilder[Self <: WordcloudTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: (Vector7[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFont(value: String | TransformField): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: wordcloud): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFontSize(value: Double | TransformField): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: (Vector7[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setFontSizeRange(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "fontSizeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setFontSizeRangeUndefined: Self = StObject.set(x, "fontSizeRange", js.undefined)
     
     @scala.inline
-    def setFont(value: String | TransformField): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setFontStyle(value: FontStyle | TransformField): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double | TransformField): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def setFontSizeRange(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("fontSizeRange", value.asInstanceOf[js.Any])
+    def setFontWeight(value: FontWeight | TransformField): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSizeRange: Self = this.set("fontSizeRange", js.undefined)
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def setFontStyle(value: FontStyle | TransformField): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setPadding(value: Double | TransformField): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def setFontWeight(value: FontWeight | TransformField): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setRotate(value: Double | TransformField): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def setPadding(value: Double | TransformField): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setRotate(value: Double | TransformField): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setSpiral(value: WordcloudSpiral | SignalRef): Self = StObject.set(x, "spiral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setSpiralUndefined: Self = StObject.set(x, "spiral", js.undefined)
     
     @scala.inline
-    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setText(value: String | TransformField): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setSpiral(value: WordcloudSpiral | SignalRef): Self = this.set("spiral", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpiral: Self = this.set("spiral", js.undefined)
-    
-    @scala.inline
-    def setText(value: String | TransformField): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setType(value: wordcloud): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

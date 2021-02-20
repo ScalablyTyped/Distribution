@@ -1,11 +1,12 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mode_ extends js.Object {
+trait Mode_ extends StObject {
   
   /**
     * Processes the data block at offset.
@@ -28,21 +29,9 @@ object Mode_ {
   }
   
   @scala.inline
-  implicit class Mode_Ops[Self <: Mode_] (val x: Self) extends AnyVal {
+  implicit class Mode_MutableBuilder[Self <: Mode_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProcessBlock(value: (js.Array[Double], Double) => Unit): Self = this.set("processBlock", js.Any.fromFunction2(value))
+    def setProcessBlock(value: (js.Array[Double], Double) => Unit): Self = StObject.set(x, "processBlock", js.Any.fromFunction2(value))
   }
 }

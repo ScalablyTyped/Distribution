@@ -1,12 +1,13 @@
 package typings.mongodb.anon
 
 import typings.mongodb.mod.ReadPreferenceOrMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Full extends js.Object {
+trait Full extends StObject {
   
   var full: js.UndefOr[Boolean] = js.native
   
@@ -21,30 +22,18 @@ object Full {
   }
   
   @scala.inline
-  implicit class FullOps[Self <: Full] (val x: Self) extends AnyVal {
+  implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: Boolean): Self = this.set("full", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFull: Self = this.set("full", js.undefined)
-    
-    @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

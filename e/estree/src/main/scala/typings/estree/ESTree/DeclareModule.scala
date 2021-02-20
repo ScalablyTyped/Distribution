@@ -1,12 +1,13 @@
 package typings.estree.ESTree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Declaration * / any */ @js.native
-trait DeclareModule extends js.Object {
+trait DeclareModule extends StObject {
   
   var body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockStatement */ js.Any = js.native
   
@@ -24,28 +25,16 @@ object DeclareModule {
   }
   
   @scala.inline
-  implicit class DeclareModuleOps[Self <: DeclareModule] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class DeclareModuleMutableBuilder[Self <: DeclareModule] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBody(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockStatement */ js.Any
-    ): Self = this.set("body", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Literal */ js.Any
-    ): Self = this.set("id", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

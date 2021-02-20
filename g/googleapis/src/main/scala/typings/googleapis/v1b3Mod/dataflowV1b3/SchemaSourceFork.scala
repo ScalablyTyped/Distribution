@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DEPRECATED in favor of DynamicSourceSplit.
   */
 @js.native
-trait SchemaSourceFork extends js.Object {
+trait SchemaSourceFork extends StObject {
   
   /**
     * DEPRECATED
@@ -39,42 +40,30 @@ object SchemaSourceFork {
   }
   
   @scala.inline
-  implicit class SchemaSourceForkOps[Self <: SchemaSourceFork] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceForkMutableBuilder[Self <: SchemaSourceFork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrimary(value: SchemaSourceSplitShard): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrimarySource(value: SchemaDerivedSource): Self = StObject.set(x, "primarySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimarySourceUndefined: Self = StObject.set(x, "primarySource", js.undefined)
     
     @scala.inline
-    def setPrimary(value: SchemaSourceSplitShard): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setResidual(value: SchemaSourceSplitShard): Self = StObject.set(x, "residual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimarySource(value: SchemaDerivedSource): Self = this.set("primarySource", value.asInstanceOf[js.Any])
+    def setResidualSource(value: SchemaDerivedSource): Self = StObject.set(x, "residualSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimarySource: Self = this.set("primarySource", js.undefined)
+    def setResidualSourceUndefined: Self = StObject.set(x, "residualSource", js.undefined)
     
     @scala.inline
-    def setResidual(value: SchemaSourceSplitShard): Self = this.set("residual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResidual: Self = this.set("residual", js.undefined)
-    
-    @scala.inline
-    def setResidualSource(value: SchemaDerivedSource): Self = this.set("residualSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResidualSource: Self = this.set("residualSource", js.undefined)
+    def setResidualUndefined: Self = StObject.set(x, "residual", js.undefined)
   }
 }

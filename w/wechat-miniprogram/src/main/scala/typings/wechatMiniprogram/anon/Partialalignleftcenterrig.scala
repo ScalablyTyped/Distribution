@@ -15,13 +15,14 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.rtl
 import typings.wechatMiniprogram.wechatMiniprogramStrings.strong
 import typings.wechatMiniprogram.wechatMiniprogramStrings.sub
 import typings.wechatMiniprogram.wechatMiniprogramStrings.unchecked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  align :'left' | 'center' | 'right' | 'justify',   bold :'strong',   italic :'em',   underline :true,   strike :'del',   lineHeight :string,   letterSpacing :string,   marginTop :string,   marginBottom :string,   fontFamily :string,   fontSize :string,   color :string,   backgroundColor :string,   list :'checked' | 'unchecked' | 'ordered' | 'bullet',   indent :number,   header :number,   script :'sub' | 'super',   direction :'rtl'}> */
 @js.native
-trait Partialalignleftcenterrig extends js.Object {
+trait Partialalignleftcenterrig extends StObject {
   
   var align: js.UndefOr[left | center | right | justify] = js.native
   
@@ -68,126 +69,114 @@ object Partialalignleftcenterrig {
   }
   
   @scala.inline
-  implicit class PartialalignleftcenterrigOps[Self <: Partialalignleftcenterrig] (val x: Self) extends AnyVal {
+  implicit class PartialalignleftcenterrigMutableBuilder[Self <: Partialalignleftcenterrig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | center | right | justify): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: left | center | right | justify): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setBold(value: strong): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: strong): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBold: Self = this.set("bold", js.undefined)
+    def setDirection(value: rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: rtl): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setHeader(value: Double): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: Double): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setItalic(value: em): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setLetterSpacing(value: String): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: em): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
     @scala.inline
-    def deleteItalic: Self = this.set("italic", js.undefined)
+    def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacing(value: String): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    def setList(value: checked | unchecked | ordered | bullet): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: String): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setMarginBottom(value: String): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: checked | unchecked | ordered | bullet): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def deleteList: Self = this.set("list", js.undefined)
+    def setMarginTop(value: String): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBottom(value: String): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setScript(value: sub | `super`): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: String): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setStrike(value: del): Self = StObject.set(x, "strike", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: sub | `super`): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setStrikeUndefined: Self = StObject.set(x, "strike", js.undefined)
     
     @scala.inline
-    def deleteScript: Self = this.set("script", js.undefined)
+    def setUnderline(value: `true`): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrike(value: del): Self = this.set("strike", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrike: Self = this.set("strike", js.undefined)
-    
-    @scala.inline
-    def setUnderline(value: `true`): Self = this.set("underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderline: Self = this.set("underline", js.undefined)
+    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

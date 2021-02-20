@@ -1,7 +1,8 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _ContainerFormat extends js.Object
+trait _ContainerFormat extends StObject

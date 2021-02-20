@@ -1,5 +1,6 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +16,7 @@ class By protected ()
   def this(using: String, value: String) = this()
 }
 /* static members */
-@JSImport("selenium-webdriver", "By")
-@js.native
-object By extends js.Object {
+object By {
   
   /**
     * Locates elements that have a specific class name.
@@ -27,6 +26,8 @@ object By extends js.Object {
     * @see http://www.w3.org/TR/2011/WD-html5-20110525/elements.html#classes
     * @see http://www.w3.org/TR/CSS2/selector.html#class-html
     */
+  @JSImport("selenium-webdriver", "By.className")
+  @js.native
   def className(name: String): typings.seleniumWebdriver.byMod.By = js.native
   
   /**
@@ -36,6 +37,8 @@ object By extends js.Object {
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/CSS2/selector.html
     */
+  @JSImport("selenium-webdriver", "By.css")
+  @js.native
   def css(selector: String): typings.seleniumWebdriver.byMod.By = js.native
   
   /**
@@ -45,6 +48,8 @@ object By extends js.Object {
     * @param {string} id The ID to search for.
     * @return {!By} The new locator.
     */
+  @JSImport("selenium-webdriver", "By.id")
+  @js.native
   def id(id: String): typings.seleniumWebdriver.byMod.By = js.native
   
   /**
@@ -57,9 +62,11 @@ object By extends js.Object {
     * @return {function(!./WebDriver): !./Promise}
     *     A new JavaScript-based locator function.
     */
-  @JSName("js")
+  @JSImport("selenium-webdriver", "By.js")
+  @js.native
   def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
-  @JSName("js")
+  @JSImport("selenium-webdriver", "By.js")
+  @js.native
   def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
   
   /**
@@ -70,6 +77,8 @@ object By extends js.Object {
     * @param {string} text The link text to search for.
     * @return {!By} The new locator.
     */
+  @JSImport("selenium-webdriver", "By.linkText")
+  @js.native
   def linkText(text: String): typings.seleniumWebdriver.byMod.By = js.native
   
   /**
@@ -78,6 +87,8 @@ object By extends js.Object {
     * @param {string} name The name attribute to search for.
     * @return {!By} The new locator.
     */
+  @JSImport("selenium-webdriver", "By.name")
+  @js.native
   def name(name: String): typings.seleniumWebdriver.byMod.By = js.native
   
   /**
@@ -88,6 +99,8 @@ object By extends js.Object {
     * @param {string} text The substring to check for in a link's visible text.
     * @return {!By} The new locator.
     */
+  @JSImport("selenium-webdriver", "By.partialLinkText")
+  @js.native
   def partialLinkText(text: String): typings.seleniumWebdriver.byMod.By = js.native
   
   /**
@@ -97,6 +110,8 @@ object By extends js.Object {
     * @return {!By} The new locator.
     * @deprecated Use {@link By.css() By.css(tagName)} instead.
     */
+  @JSImport("selenium-webdriver", "By.tagName")
+  @js.native
   def tagName(name: String): typings.seleniumWebdriver.byMod.By = js.native
   
   /**
@@ -110,5 +125,7 @@ object By extends js.Object {
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/xpath/
     */
+  @JSImport("selenium-webdriver", "By.xpath")
+  @js.native
   def xpath(xpath: String): typings.seleniumWebdriver.byMod.By = js.native
 }

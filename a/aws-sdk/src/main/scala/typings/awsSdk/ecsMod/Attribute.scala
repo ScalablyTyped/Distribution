@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attribute extends js.Object {
+trait Attribute extends StObject {
   
   /**
     * The name of the attribute. The name must contain between 1 and 128 characters and name may contain letters (uppercase and lowercase), numbers, hyphens, underscores, forward slashes, back slashes, or periods.
@@ -36,39 +37,27 @@ object Attribute {
   }
   
   @scala.inline
-  implicit class AttributeOps[Self <: Attribute] (val x: Self) extends AnyVal {
+  implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTargetType(value: TargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetId(value: String): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     
     @scala.inline
-    def deleteTargetId: Self = this.set("targetId", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetType(value: TargetType): Self = this.set("targetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetType: Self = this.set("targetType", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

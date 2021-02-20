@@ -3,6 +3,7 @@ package typings.ckeditorCkeditor5Engine.mod.view
 import typings.std.Iterable
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,10 +37,16 @@ class AttributeElement protected () extends Element {
   
   val priority: Double = js.native
 }
-/* static members */
-@JSImport("@ckeditor/ckeditor5-engine", "view.AttributeElement")
-@js.native
-object AttributeElement extends js.Object {
+object AttributeElement {
   
-  var DEFAULT_PRIORITY: Double = js.native
+  @JSImport("@ckeditor/ckeditor5-engine", "view.AttributeElement")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("@ckeditor/ckeditor5-engine", "view.AttributeElement.DEFAULT_PRIORITY")
+  @js.native
+  def DEFAULT_PRIORITY: Double = js.native
+  @scala.inline
+  def DEFAULT_PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PRIORITY")(x.asInstanceOf[js.Any])
 }

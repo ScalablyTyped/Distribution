@@ -3,13 +3,14 @@ package typings.luxon.mod
 import typings.luxon.anon.IncludeConfig
 import typings.std.Date
 import typings.std.Intl.ResolvedDateTimeFormatOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("luxon", "DateTime")
 @js.native
-class DateTime () extends js.Object {
+class DateTime () extends StObject {
   
   var day: Double = js.native
   
@@ -186,92 +187,178 @@ class DateTime () extends js.Object {
   var zoneName: String = js.native
 }
 /* static members */
-@JSImport("luxon", "DateTime")
-@js.native
-object DateTime extends js.Object {
+object DateTime {
   
+  @JSImport("luxon", "DateTime.DATETIME_FULL")
+  @js.native
   val DATETIME_FULL: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATETIME_FULL_WITH_SECONDS")
+  @js.native
   val DATETIME_FULL_WITH_SECONDS: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATETIME_HUGE")
+  @js.native
   val DATETIME_HUGE: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATETIME_HUGE_WITH_SECONDS")
+  @js.native
   val DATETIME_HUGE_WITH_SECONDS: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATETIME_MED")
+  @js.native
   val DATETIME_MED: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATETIME_MED_WITH_SECONDS")
+  @js.native
   val DATETIME_MED_WITH_SECONDS: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATETIME_SHORT")
+  @js.native
   val DATETIME_SHORT: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATETIME_SHORT_WITH_SECONDS")
+  @js.native
   val DATETIME_SHORT_WITH_SECONDS: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATE_FULL")
+  @js.native
   val DATE_FULL: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATE_HUGE")
+  @js.native
   val DATE_HUGE: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATE_MED")
+  @js.native
   val DATE_MED: DateTimeFormatOptions = js.native
   
   /** abbreviated date with weekday */
+  @JSImport("luxon", "DateTime.DATE_MED_WITH_WEEKDAY")
+  @js.native
   val DATE_MED_WITH_WEEKDAY: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.DATE_SHORT")
+  @js.native
   val DATE_SHORT: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.TIME_24_SIMPLE")
+  @js.native
   val TIME_24_SIMPLE: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.TIME_24_WITH_LONG_OFFSET")
+  @js.native
   val TIME_24_WITH_LONG_OFFSET: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.TIME_24_WITH_SECONDS")
+  @js.native
   val TIME_24_WITH_SECONDS: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.TIME_24_WITH_SHORT_OFFSET")
+  @js.native
   val TIME_24_WITH_SHORT_OFFSET: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.TIME_SIMPLE")
+  @js.native
   val TIME_SIMPLE: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.TIME_WITH_LONG_OFFSET")
+  @js.native
   val TIME_WITH_LONG_OFFSET: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.TIME_WITH_SECONDS")
+  @js.native
   val TIME_WITH_SECONDS: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.TIME_WITH_SHORT_OFFSET")
+  @js.native
   val TIME_WITH_SHORT_OFFSET: DateTimeFormatOptions = js.native
   
+  @JSImport("luxon", "DateTime.fromFormat")
+  @js.native
   def fromFormat(text: String, format: String): DateTime = js.native
+  @JSImport("luxon", "DateTime.fromFormat")
+  @js.native
   def fromFormat(text: String, format: String, opts: DateTimeOptions): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.fromFormatExplain")
+  @js.native
   def fromFormatExplain(text: String, format: String): ExplainedFormat = js.native
+  @JSImport("luxon", "DateTime.fromFormatExplain")
+  @js.native
   def fromFormatExplain(text: String, format: String, opts: DateTimeOptions): ExplainedFormat = js.native
   
+  @JSImport("luxon", "DateTime.fromHTTP")
+  @js.native
   def fromHTTP(text: String): DateTime = js.native
+  @JSImport("luxon", "DateTime.fromHTTP")
+  @js.native
   def fromHTTP(text: String, options: DateTimeOptions): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.fromISO")
+  @js.native
   def fromISO(text: String): DateTime = js.native
+  @JSImport("luxon", "DateTime.fromISO")
+  @js.native
   def fromISO(text: String, options: DateTimeOptions): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.fromJSDate")
+  @js.native
   def fromJSDate(date: Date): DateTime = js.native
+  @JSImport("luxon", "DateTime.fromJSDate")
+  @js.native
   def fromJSDate(date: Date, options: DateTimeJSOptions): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.fromMillis")
+  @js.native
   def fromMillis(ms: Double): DateTime = js.native
+  @JSImport("luxon", "DateTime.fromMillis")
+  @js.native
   def fromMillis(ms: Double, options: DateTimeOptions): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.fromObject")
+  @js.native
   def fromObject(obj: DateObject): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.fromRFC2822")
+  @js.native
   def fromRFC2822(text: String): DateTime = js.native
+  @JSImport("luxon", "DateTime.fromRFC2822")
+  @js.native
   def fromRFC2822(text: String, options: DateTimeOptions): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.fromSQL")
+  @js.native
   def fromSQL(text: String): DateTime = js.native
+  @JSImport("luxon", "DateTime.fromSQL")
+  @js.native
   def fromSQL(text: String, options: DateTimeOptions): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.fromSeconds")
+  @js.native
   def fromSeconds(seconds: Double): DateTime = js.native
+  @JSImport("luxon", "DateTime.fromSeconds")
+  @js.native
   def fromSeconds(seconds: Double, options: DateTimeOptions): DateTime = js.native
   
   /**
     * @deprecated since 0.3.0. Use fromFormat instead
     */
+  @JSImport("luxon", "DateTime.fromString")
+  @js.native
   def fromString(text: String, format: String): DateTime = js.native
+  @JSImport("luxon", "DateTime.fromString")
+  @js.native
   def fromString(text: String, format: String, options: DateTimeOptions): DateTime = js.native
   
   /**
     * @deprecated 0.3.0. Use fromFormatExplain instead
     */
+  @JSImport("luxon", "DateTime.fromStringExplain")
+  @js.native
   def fromStringExplain(text: String, format: String): ExplainedFormat = js.native
+  @JSImport("luxon", "DateTime.fromStringExplain")
+  @js.native
   def fromStringExplain(text: String, format: String, options: DateTimeOptions): ExplainedFormat = js.native
   
   /**
@@ -280,11 +367,19 @@ object DateTime extends js.Object {
     * Should not contain parameters or anything else data-dependent
     * @param [explanation=null] - longer explanation, may include parameters and other useful debugging information
     */
+  @JSImport("luxon", "DateTime.invalid")
+  @js.native
   def invalid(reason: String): DateTime = js.native
+  @JSImport("luxon", "DateTime.invalid")
+  @js.native
   def invalid(reason: String, explanation: String): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.isDateTime")
+  @js.native
   def isDateTime(o: js.Any): /* is luxon.luxon.DateTime */ Boolean = js.native
   
+  @JSImport("luxon", "DateTime.local")
+  @js.native
   def local(
     year: js.UndefOr[Double],
     month: js.UndefOr[Double],
@@ -295,12 +390,22 @@ object DateTime extends js.Object {
     millisecond: js.UndefOr[Double]
   ): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.max")
+  @js.native
   def max(): js.UndefOr[scala.Nothing] = js.native
+  @JSImport("luxon", "DateTime.max")
+  @js.native
   def max(dateTimes: DateTime*): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.min")
+  @js.native
   def min(): js.UndefOr[scala.Nothing] = js.native
+  @JSImport("luxon", "DateTime.min")
+  @js.native
   def min(dateTimes: DateTime*): DateTime = js.native
   
+  @JSImport("luxon", "DateTime.utc")
+  @js.native
   def utc(
     year: js.UndefOr[Double],
     month: js.UndefOr[Double],

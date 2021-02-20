@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShardingOption extends js.Object {
+trait ShardingOption extends StObject {
   
   /** Shards test cases into the specified groups of packages, classes, and/or methods. */
   var manualSharding: js.UndefOr[ManualSharding] = js.native
@@ -22,30 +23,18 @@ object ShardingOption {
   }
   
   @scala.inline
-  implicit class ShardingOptionOps[Self <: ShardingOption] (val x: Self) extends AnyVal {
+  implicit class ShardingOptionMutableBuilder[Self <: ShardingOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManualSharding(value: ManualSharding): Self = StObject.set(x, "manualSharding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManualShardingUndefined: Self = StObject.set(x, "manualSharding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUniformSharding(value: UniformSharding): Self = StObject.set(x, "uniformSharding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualSharding(value: ManualSharding): Self = this.set("manualSharding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManualSharding: Self = this.set("manualSharding", js.undefined)
-    
-    @scala.inline
-    def setUniformSharding(value: UniformSharding): Self = this.set("uniformSharding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniformSharding: Self = this.set("uniformSharding", js.undefined)
+    def setUniformShardingUndefined: Self = StObject.set(x, "uniformSharding", js.undefined)
   }
 }

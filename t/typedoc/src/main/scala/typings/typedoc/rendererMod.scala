@@ -5,16 +5,18 @@ import typings.typedoc.componentMod.ChildableComponent
 import typings.typedoc.outputComponentsMod.RendererComponent
 import typings.typedoc.projectMod.ProjectReflection
 import typings.typedoc.themeMod.Theme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/renderer", JSImport.Namespace)
-@js.native
-object rendererMod extends js.Object {
+object rendererMod {
   
+  @JSImport("typedoc/dist/lib/output/renderer", "Renderer")
   @js.native
-  class Renderer () extends ChildableComponent[Application, RendererComponent] {
+  class Renderer protected () extends ChildableComponent[Application, RendererComponent] {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Application) = this()
     
     var disableOutputCheck: Boolean = js.native
     
@@ -41,11 +43,14 @@ object rendererMod extends js.Object {
     var toc: js.Array[String] = js.native
   }
   /* static members */
-  @js.native
-  object Renderer extends js.Object {
+  object Renderer {
     
+    @JSImport("typedoc/dist/lib/output/renderer", "Renderer.getDefaultTheme")
+    @js.native
     def getDefaultTheme(): String = js.native
     
+    @JSImport("typedoc/dist/lib/output/renderer", "Renderer.getThemeDirectory")
+    @js.native
     def getThemeDirectory(): String = js.native
   }
 }

@@ -10,13 +10,14 @@ import typings.winrtUwp.winrtUwpStrings.enumerationcompleted
 import typings.winrtUwp.winrtUwpStrings.removed
 import typings.winrtUwp.winrtUwpStrings.stopped
 import typings.winrtUwp.winrtUwpStrings.updated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides events that fire during enumeration of users, when the collection of users changes, or when a user's authentication status changes. */
 @js.native
-trait UserWatcher extends js.Object {
+trait UserWatcher extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

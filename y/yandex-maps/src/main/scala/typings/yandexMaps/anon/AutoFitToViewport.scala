@@ -3,12 +3,13 @@ package typings.yandexMaps.anon
 import typings.yandexMaps.yandexMapsStrings.always
 import typings.yandexMaps.yandexMapsStrings.ifNull
 import typings.yandexMaps.yandexMapsStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoFitToViewport extends js.Object {
+trait AutoFitToViewport extends StObject {
   
   var autoFitToViewport: js.UndefOr[none | ifNull | always] = js.native
   
@@ -33,69 +34,57 @@ object AutoFitToViewport {
   }
   
   @scala.inline
-  implicit class AutoFitToViewportOps[Self <: AutoFitToViewport] (val x: Self) extends AnyVal {
+  implicit class AutoFitToViewportMutableBuilder[Self <: AutoFitToViewport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFitToViewport(value: none | ifNull | always): Self = StObject.set(x, "autoFitToViewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFitToViewportUndefined: Self = StObject.set(x, "autoFitToViewport", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControls(value: js.Array[String]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFitToViewport(value: none | ifNull | always): Self = this.set("autoFitToViewport", value.asInstanceOf[js.Any])
+    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
     @scala.inline
-    def deleteAutoFitToViewport: Self = this.set("autoFitToViewport", js.undefined)
+    def setControlsVarargs(value: String*): Self = StObject.set(x, "controls", js.Array(value :_*))
     
     @scala.inline
-    def setControlsVarargs(value: String*): Self = this.set("controls", js.Array(value :_*))
+    def setDirection(value: js.Array[Double] | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControls(value: js.Array[String]): Self = this.set("controls", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteControls: Self = this.set("controls", js.undefined)
+    def setDirectionVarargs(value: Double*): Self = StObject.set(x, "direction", js.Array(value :_*))
     
     @scala.inline
-    def setDirectionVarargs(value: Double*): Self = this.set("direction", js.Array(value :_*))
+    def setHotkeysEnabled(value: Boolean): Self = StObject.set(x, "hotkeysEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: js.Array[Double] | String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setHotkeysEnabledUndefined: Self = StObject.set(x, "hotkeysEnabled", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setScrollZoomBehavior(value: Boolean): Self = StObject.set(x, "scrollZoomBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotkeysEnabled(value: Boolean): Self = this.set("hotkeysEnabled", value.asInstanceOf[js.Any])
+    def setScrollZoomBehaviorUndefined: Self = StObject.set(x, "scrollZoomBehavior", js.undefined)
     
     @scala.inline
-    def deleteHotkeysEnabled: Self = this.set("hotkeysEnabled", js.undefined)
+    def setSpan(value: js.Array[Double] | String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollZoomBehavior(value: Boolean): Self = this.set("scrollZoomBehavior", value.asInstanceOf[js.Any])
+    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
     
     @scala.inline
-    def deleteScrollZoomBehavior: Self = this.set("scrollZoomBehavior", js.undefined)
+    def setSpanVarargs(value: Double*): Self = StObject.set(x, "span", js.Array(value :_*))
     
     @scala.inline
-    def setSpanVarargs(value: Double*): Self = this.set("span", js.Array(value :_*))
+    def setSuppressMapOpenBlock(value: Boolean): Self = StObject.set(x, "suppressMapOpenBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpan(value: js.Array[Double] | String): Self = this.set("span", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpan: Self = this.set("span", js.undefined)
-    
-    @scala.inline
-    def setSuppressMapOpenBlock(value: Boolean): Self = this.set("suppressMapOpenBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressMapOpenBlock: Self = this.set("suppressMapOpenBlock", js.undefined)
+    def setSuppressMapOpenBlockUndefined: Self = StObject.set(x, "suppressMapOpenBlock", js.undefined)
   }
 }

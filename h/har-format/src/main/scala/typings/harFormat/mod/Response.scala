@@ -1,11 +1,12 @@
 package typings.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response extends js.Object {
+trait Response extends StObject {
   
   /** _non-standard_  */
   var _transferSize: js.UndefOr[Double | Null] = js.native
@@ -74,66 +75,54 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseOps[Self <: Response] (val x: Self) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def setBodySize(value: Double): Self = this.set("bodySize", value.asInstanceOf[js.Any])
+    def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Content): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookiesVarargs(value: Cookie*): Self = this.set("cookies", js.Array(value :_*))
+    def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
     
     @scala.inline
-    def setCookies(value: js.Array[Cookie]): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Array[Header]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersVarargs(value: Header*): Self = this.set("headers", js.Array(value :_*))
+    def setHeadersSize(value: Double): Self = StObject.set(x, "headersSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[Header]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersSize(value: Double): Self = this.set("headersSize", value.asInstanceOf[js.Any])
+    def setHttpVersion(value: String): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpVersion(value: String): Self = this.set("httpVersion", value.asInstanceOf[js.Any])
+    def setRedirectURL(value: String): Self = StObject.set(x, "redirectURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectURL(value: String): Self = this.set("redirectURL", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusText(value: String): Self = this.set("statusText", value.asInstanceOf[js.Any])
+    def set_transferSize(value: Double): Self = StObject.set(x, "_transferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_transferSize(value: Double): Self = this.set("_transferSize", value.asInstanceOf[js.Any])
+    def set_transferSizeNull: Self = StObject.set(x, "_transferSize", null)
     
     @scala.inline
-    def delete_transferSize: Self = this.set("_transferSize", js.undefined)
-    
-    @scala.inline
-    def set_transferSizeNull: Self = this.set("_transferSize", null)
-    
-    @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def set_transferSizeUndefined: Self = StObject.set(x, "_transferSize", js.undefined)
   }
 }

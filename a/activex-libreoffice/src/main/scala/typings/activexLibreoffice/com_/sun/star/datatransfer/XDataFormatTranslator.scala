@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,24 +45,12 @@ object XDataFormatTranslator {
   }
   
   @scala.inline
-  implicit class XDataFormatTranslatorOps[Self <: XDataFormatTranslator] (val x: Self) extends AnyVal {
+  implicit class XDataFormatTranslatorMutableBuilder[Self <: XDataFormatTranslator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDataFlavorFromSystemDataType(value: js.Any => DataFlavor): Self = StObject.set(x, "getDataFlavorFromSystemDataType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDataFlavorFromSystemDataType(value: js.Any => DataFlavor): Self = this.set("getDataFlavorFromSystemDataType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSystemDataTypeFromDataFlavor(value: DataFlavor => js.Any): Self = this.set("getSystemDataTypeFromDataFlavor", js.Any.fromFunction1(value))
+    def setGetSystemDataTypeFromDataFlavor(value: DataFlavor => js.Any): Self = StObject.set(x, "getSystemDataTypeFromDataFlavor", js.Any.fromFunction1(value))
   }
 }

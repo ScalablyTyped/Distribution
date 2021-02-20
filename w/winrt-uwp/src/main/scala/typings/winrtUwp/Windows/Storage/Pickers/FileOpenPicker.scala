@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a UI element that lets the user choose and open files. */
 @js.native
-trait FileOpenPicker extends js.Object {
+trait FileOpenPicker extends StObject {
   
   /** Gets or sets the label text of the file open picker's commit button. */
   var commitButtonText: String = js.native

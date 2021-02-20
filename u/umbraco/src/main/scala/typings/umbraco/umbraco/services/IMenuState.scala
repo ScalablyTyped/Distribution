@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Menu State
   */
 @js.native
-trait IMenuState extends js.Object {
+trait IMenuState extends StObject {
   
   //The tree node that the ctx menu is launched for
   var currentNode: js.Any = js.native
@@ -40,33 +41,21 @@ object IMenuState {
   }
   
   @scala.inline
-  implicit class IMenuStateOps[Self <: IMenuState] (val x: Self) extends AnyVal {
+  implicit class IMenuStateMutableBuilder[Self <: IMenuState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentNode(value: js.Any): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMenuActions(value: js.Any): Self = StObject.set(x, "menuActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentNode(value: js.Any): Self = this.set("currentNode", value.asInstanceOf[js.Any])
+    def setShowMenu(value: Boolean): Self = StObject.set(x, "showMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogTitle(value: String): Self = this.set("dialogTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMenuActions(value: js.Any): Self = this.set("menuActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowMenu(value: Boolean): Self = this.set("showMenu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowMenuDialog(value: Boolean): Self = this.set("showMenuDialog", value.asInstanceOf[js.Any])
+    def setShowMenuDialog(value: Boolean): Self = StObject.set(x, "showMenuDialog", value.asInstanceOf[js.Any])
   }
 }

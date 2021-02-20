@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateJsonClassifierRequest extends js.Object {
+trait UpdateJsonClassifierRequest extends StObject {
   
   /**
     * A JsonPath string defining the JSON data for the classifier to classify. AWS Glue supports a subset of JsonPath, as described in Writing JsonPath Custom Classifiers.
@@ -26,27 +27,15 @@ object UpdateJsonClassifierRequest {
   }
   
   @scala.inline
-  implicit class UpdateJsonClassifierRequestOps[Self <: UpdateJsonClassifierRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateJsonClassifierRequestMutableBuilder[Self <: UpdateJsonClassifierRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJsonPathUndefined: Self = StObject.set(x, "JsonPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJsonPath(value: JsonPath): Self = this.set("JsonPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJsonPath: Self = this.set("JsonPath", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,11 @@
 package typings.popmotion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion/lib/easing/types", JSImport.Namespace)
-@js.native
-object easingTypesMod extends js.Object {
+object easingTypesMod {
   
   type Easing = js.Function1[/* v */ Double, Double]
   

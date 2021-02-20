@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CarrierRate extends js.Object {
+trait CarrierRate extends StObject {
   
   /** Carrier service, such as `"UPS"` or `"Fedex"`. The list of supported carriers can be retrieved via the `getSupportedCarriers` method. Required. */
   var carrierName: js.UndefOr[String] = js.native
@@ -37,54 +38,42 @@ object CarrierRate {
   }
   
   @scala.inline
-  implicit class CarrierRateOps[Self <: CarrierRate] (val x: Self) extends AnyVal {
+  implicit class CarrierRateMutableBuilder[Self <: CarrierRate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarrierNameUndefined: Self = StObject.set(x, "carrierName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCarrierService(value: String): Self = StObject.set(x, "carrierService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrierName(value: String): Self = this.set("carrierName", value.asInstanceOf[js.Any])
+    def setCarrierServiceUndefined: Self = StObject.set(x, "carrierService", js.undefined)
     
     @scala.inline
-    def deleteCarrierName: Self = this.set("carrierName", js.undefined)
+    def setFlatAdjustment(value: Price): Self = StObject.set(x, "flatAdjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrierService(value: String): Self = this.set("carrierService", value.asInstanceOf[js.Any])
+    def setFlatAdjustmentUndefined: Self = StObject.set(x, "flatAdjustment", js.undefined)
     
     @scala.inline
-    def deleteCarrierService: Self = this.set("carrierService", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatAdjustment(value: Price): Self = this.set("flatAdjustment", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFlatAdjustment: Self = this.set("flatAdjustment", js.undefined)
+    def setOriginPostalCode(value: String): Self = StObject.set(x, "originPostalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOriginPostalCodeUndefined: Self = StObject.set(x, "originPostalCode", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPercentageAdjustment(value: String): Self = StObject.set(x, "percentageAdjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginPostalCode(value: String): Self = this.set("originPostalCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginPostalCode: Self = this.set("originPostalCode", js.undefined)
-    
-    @scala.inline
-    def setPercentageAdjustment(value: String): Self = this.set("percentageAdjustment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercentageAdjustment: Self = this.set("percentageAdjustment", js.undefined)
+    def setPercentageAdjustmentUndefined: Self = StObject.set(x, "percentageAdjustment", js.undefined)
   }
 }

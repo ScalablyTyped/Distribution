@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Folder extends js.Object {
+trait Folder extends StObject {
   
   var folder: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object Folder {
   }
   
   @scala.inline
-  implicit class FolderOps[Self <: Folder] (val x: Self) extends AnyVal {
+  implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFolder(value: scala.Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalid(value: scala.Double): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFolder(value: scala.Double): Self = this.set("folder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInvalid(value: scala.Double): Self = this.set("invalid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRef(value: scala.Double): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setRef(value: scala.Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.spotifyApi.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [](https://developer.spotify.com/web-api/object-model/)
   */
 @js.native
-trait FollowersObject extends js.Object {
+trait FollowersObject extends StObject {
   
   /**
     * A link to the Web API endpoint providing full details of the followers; `null` if not available.
@@ -31,24 +32,12 @@ object FollowersObject {
   }
   
   @scala.inline
-  implicit class FollowersObjectOps[Self <: FollowersObject] (val x: Self) extends AnyVal {
+  implicit class FollowersObjectMutableBuilder[Self <: FollowersObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHref(value: Null): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHref(value: Null): Self = this.set("href", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

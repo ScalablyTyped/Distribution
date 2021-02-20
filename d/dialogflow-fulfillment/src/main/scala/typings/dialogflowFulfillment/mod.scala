@@ -1,7 +1,6 @@
 package typings.dialogflowFulfillment
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.actionsOnGoogle.commonMod.JsonObject
 import typings.actionsOnGoogle.contextMod.Contexts
 import typings.actionsOnGoogle.mod.DialogflowConversation
@@ -10,14 +9,14 @@ import typings.dialogflowFulfillment.anon.Lifespan
 import typings.dialogflowFulfillment.anon.RawPayload
 import typings.dialogflowFulfillment.anon.Request
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dialogflow-fulfillment", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("dialogflow-fulfillment", "Card")
   @js.native
   class Card protected () extends RichResponse {
     def this(card: String) = this()
@@ -36,6 +35,7 @@ object mod extends js.Object {
     def setTitle(title: String): Card = js.native
   }
   
+  @JSImport("dialogflow-fulfillment", "Image")
   @js.native
   class Image protected () extends RichResponse {
     def this(image: String) = this()
@@ -48,6 +48,7 @@ object mod extends js.Object {
     def setImage(imageUrl: String): Image = js.native
   }
   
+  @JSImport("dialogflow-fulfillment", "Payload")
   @js.native
   class Payload protected () extends RichResponse {
     def this(platform: Platforms, payload: js.Any) = this()
@@ -65,67 +66,61 @@ object mod extends js.Object {
   }
   
   @js.native
-  sealed trait Platforms extends js.Object
+  sealed trait Platforms extends StObject
+  @JSImport("dialogflow-fulfillment", "Platforms")
   @js.native
-  object Platforms extends js.Object {
+  object Platforms extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Platforms with String] = js.native
     
     @js.native
     sealed trait ACTIONS_ON_GOOGLE extends Platforms
-    /* "ACTIONS_ON_GOOGLE" */ @js.native
-    object ACTIONS_ON_GOOGLE extends TopLevel[ACTIONS_ON_GOOGLE with String]
+    /* "ACTIONS_ON_GOOGLE" */ val ACTIONS_ON_GOOGLE: typings.dialogflowFulfillment.mod.Platforms.ACTIONS_ON_GOOGLE with String = js.native
     
     @js.native
     sealed trait FACEBOOK extends Platforms
-    /* "FACEBOOK" */ @js.native
-    object FACEBOOK extends TopLevel[FACEBOOK with String]
+    /* "FACEBOOK" */ val FACEBOOK: typings.dialogflowFulfillment.mod.Platforms.FACEBOOK with String = js.native
     
     @js.native
     sealed trait KIK extends Platforms
-    /* "KIK" */ @js.native
-    object KIK extends TopLevel[KIK with String]
+    /* "KIK" */ val KIK: typings.dialogflowFulfillment.mod.Platforms.KIK with String = js.native
     
     @js.native
     sealed trait LINE extends Platforms
-    /* "LINE" */ @js.native
-    object LINE extends TopLevel[LINE with String]
+    /* "LINE" */ val LINE: typings.dialogflowFulfillment.mod.Platforms.LINE with String = js.native
     
     @js.native
     sealed trait SKYPE extends Platforms
-    /* "SKYPE" */ @js.native
-    object SKYPE extends TopLevel[SKYPE with String]
+    /* "SKYPE" */ val SKYPE: typings.dialogflowFulfillment.mod.Platforms.SKYPE with String = js.native
     
     @js.native
     sealed trait SLACK extends Platforms
-    /* "SLACK" */ @js.native
-    object SLACK extends TopLevel[SLACK with String]
+    /* "SLACK" */ val SLACK: typings.dialogflowFulfillment.mod.Platforms.SLACK with String = js.native
     
     @js.native
     sealed trait TELEGRAM extends Platforms
-    /* "TELEGRAM" */ @js.native
-    object TELEGRAM extends TopLevel[TELEGRAM with String]
+    /* "TELEGRAM" */ val TELEGRAM: typings.dialogflowFulfillment.mod.Platforms.TELEGRAM with String = js.native
     
     @js.native
     sealed trait UNSPECIFIED extends Platforms
-    /* "PLATFORM_UNSPECIFIED" */ @js.native
-    object UNSPECIFIED extends TopLevel[UNSPECIFIED with String]
+    /* "PLATFORM_UNSPECIFIED" */ val UNSPECIFIED: typings.dialogflowFulfillment.mod.Platforms.UNSPECIFIED with String = js.native
     
     @js.native
     sealed trait VIBER extends Platforms
-    /* "VIBER" */ @js.native
-    object VIBER extends TopLevel[VIBER with String]
+    /* "VIBER" */ val VIBER: typings.dialogflowFulfillment.mod.Platforms.VIBER with String = js.native
   }
   
+  @JSImport("dialogflow-fulfillment", "RichResponse")
   @js.native
-  class RichResponse () extends js.Object {
+  class RichResponse () extends StObject {
     
     var platform: Platforms = js.native
     
     def setPlatform(platform: Platforms): RichResponse = js.native
   }
   
+  @JSImport("dialogflow-fulfillment", "Suggestion")
   @js.native
   class Suggestion protected () extends RichResponse {
     def this(suggestion: String) = this()
@@ -140,6 +135,7 @@ object mod extends js.Object {
     def setReply(reply: String): Suggestion = js.native
   }
   
+  @JSImport("dialogflow-fulfillment", "Text")
   @js.native
   class Text protected () extends RichResponse {
     def this(text: String) = this()
@@ -154,8 +150,9 @@ object mod extends js.Object {
     def setText(text: String): Text = js.native
   }
   
+  @JSImport("dialogflow-fulfillment", "WebhookClient")
   @js.native
-  class WebhookClient protected () extends js.Object {
+  class WebhookClient protected () extends StObject {
     def this(options: js.Object) = this()
     /**
       * Constructor for WebhookClient object To be used in the Dialogflow fulfillment webhook logic

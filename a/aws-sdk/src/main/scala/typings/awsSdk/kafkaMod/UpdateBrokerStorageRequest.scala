@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateBrokerStorageRequest extends js.Object {
+trait UpdateBrokerStorageRequest extends StObject {
   
   /**
     * 
@@ -37,30 +38,18 @@ object UpdateBrokerStorageRequest {
   }
   
   @scala.inline
-  implicit class UpdateBrokerStorageRequestOps[Self <: UpdateBrokerStorageRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateBrokerStorageRequestMutableBuilder[Self <: UpdateBrokerStorageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetBrokerEBSVolumeInfo(value: listOfBrokerEBSVolumeInfo): Self = StObject.set(x, "TargetBrokerEBSVolumeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentVersion(value: string): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = this.set("TargetBrokerEBSVolumeInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetBrokerEBSVolumeInfo(value: listOfBrokerEBSVolumeInfo): Self = this.set("TargetBrokerEBSVolumeInfo", value.asInstanceOf[js.Any])
+    def setTargetBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = StObject.set(x, "TargetBrokerEBSVolumeInfo", js.Array(value :_*))
   }
 }

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,27 +39,15 @@ object Schemes {
   }
   
   @scala.inline
-  implicit class SchemesOps[Self <: Schemes] (val x: Self) extends AnyVal {
+  implicit class SchemesMutableBuilder[Self <: Schemes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrimaryScheme(value: Scheme): Self = StObject.set(x, "primaryScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecondarySchemes(value: js.Array[Scheme]): Self = StObject.set(x, "secondarySchemes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrimaryScheme(value: Scheme): Self = this.set("primaryScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondarySchemesVarargs(value: Scheme*): Self = this.set("secondarySchemes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecondarySchemes(value: js.Array[Scheme]): Self = this.set("secondarySchemes", value.asInstanceOf[js.Any])
+    def setSecondarySchemesVarargs(value: Scheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value :_*))
   }
 }

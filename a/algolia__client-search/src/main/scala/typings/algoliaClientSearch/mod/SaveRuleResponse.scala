@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SaveRuleResponse extends js.Object {
+trait SaveRuleResponse extends StObject {
   
   /**
     * The operation task id. May be used to perform a wait task.
@@ -26,24 +27,12 @@ object SaveRuleResponse {
   }
   
   @scala.inline
-  implicit class SaveRuleResponseOps[Self <: SaveRuleResponse] (val x: Self) extends AnyVal {
+  implicit class SaveRuleResponseMutableBuilder[Self <: SaveRuleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTaskID(value: Double): Self = this.set("taskID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedAt(value: Double): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

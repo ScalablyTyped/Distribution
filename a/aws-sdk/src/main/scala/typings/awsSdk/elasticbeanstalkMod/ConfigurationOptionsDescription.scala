@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationOptionsDescription extends js.Object {
+trait ConfigurationOptionsDescription extends StObject {
   
   /**
     *  A list of ConfigurationOptionDescription. 
@@ -31,39 +32,27 @@ object ConfigurationOptionsDescription {
   }
   
   @scala.inline
-  implicit class ConfigurationOptionsDescriptionOps[Self <: ConfigurationOptionsDescription] (val x: Self) extends AnyVal {
+  implicit class ConfigurationOptionsDescriptionMutableBuilder[Self <: ConfigurationOptionsDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptions(value: ConfigurationOptionDescriptionsList): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionsVarargs(value: ConfigurationOptionDescription*): Self = StObject.set(x, "Options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: ConfigurationOptionDescription*): Self = this.set("Options", js.Array(value :_*))
+    def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: ConfigurationOptionDescriptionsList): Self = this.set("Options", value.asInstanceOf[js.Any])
+    def setPlatformArnUndefined: Self = StObject.set(x, "PlatformArn", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("Options", js.undefined)
+    def setSolutionStackName(value: SolutionStackName): Self = StObject.set(x, "SolutionStackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformArn(value: PlatformArn): Self = this.set("PlatformArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatformArn: Self = this.set("PlatformArn", js.undefined)
-    
-    @scala.inline
-    def setSolutionStackName(value: SolutionStackName): Self = this.set("SolutionStackName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSolutionStackName: Self = this.set("SolutionStackName", js.undefined)
+    def setSolutionStackNameUndefined: Self = StObject.set(x, "SolutionStackName", js.undefined)
   }
 }

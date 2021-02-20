@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.WiFi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiReconnectionKind extends js.Object
+sealed trait WiFiReconnectionKind extends StObject
 /** Describes whether to automatically reconnect to this network. */
 @JSGlobal("Windows.Devices.WiFi.WiFiReconnectionKind")
 @js.native
-object WiFiReconnectionKind extends js.Object {
+object WiFiReconnectionKind extends StObject {
   
   /** Reconnect automatically. */
   @js.native

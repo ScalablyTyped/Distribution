@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TokenResult. */
 @js.native
-trait TokenResult extends js.Object {
+trait TokenResult extends StObject {
   
   /** The [lemma](https://wikipedia.org/wiki/Lemma_%28morphology%29) of the token. */
   var lemma: js.UndefOr[String] = js.native
@@ -29,45 +30,33 @@ object TokenResult {
   }
   
   @scala.inline
-  implicit class TokenResultOps[Self <: TokenResult] (val x: Self) extends AnyVal {
+  implicit class TokenResultMutableBuilder[Self <: TokenResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLemmaUndefined: Self = StObject.set(x, "lemma", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLemma(value: String): Self = this.set("lemma", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLemma: Self = this.set("lemma", js.undefined)
+    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
     @scala.inline
-    def setLocationVarargs(value: Double*): Self = this.set("location", js.Array(value :_*))
+    def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: js.Array[Double]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPart_of_speech(value: String): Self = this.set("part_of_speech", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePart_of_speech: Self = this.set("part_of_speech", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

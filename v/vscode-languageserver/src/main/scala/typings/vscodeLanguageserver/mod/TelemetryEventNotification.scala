@@ -1,13 +1,14 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "TelemetryEventNotification")
-@js.native
-object TelemetryEventNotification extends js.Object {
+object TelemetryEventNotification {
   
+  @JSImport("vscode-languageserver", "TelemetryEventNotification.type")
+  @js.native
   val `type`: ProtocolNotificationType[js.Any, Unit] = js.native
 }

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TrainingStatus. */
 @js.native
-trait TrainingStatus extends js.Object {
+trait TrainingStatus extends StObject {
   
   /** When `true`, the collection has been successfully trained. */
   var available: js.UndefOr[Boolean] = js.native
@@ -44,72 +45,60 @@ object TrainingStatus {
   }
   
   @scala.inline
-  implicit class TrainingStatusOps[Self <: TrainingStatus] (val x: Self) extends AnyVal {
+  implicit class TrainingStatusMutableBuilder[Self <: TrainingStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData_updated(value: String): Self = StObject.set(x, "data_updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: Boolean): Self = this.set("available", value.asInstanceOf[js.Any])
+    def setData_updatedUndefined: Self = StObject.set(x, "data_updated", js.undefined)
     
     @scala.inline
-    def deleteAvailable: Self = this.set("available", js.undefined)
+    def setMinimum_examples_added(value: Boolean): Self = StObject.set(x, "minimum_examples_added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData_updated(value: String): Self = this.set("data_updated", value.asInstanceOf[js.Any])
+    def setMinimum_examples_addedUndefined: Self = StObject.set(x, "minimum_examples_added", js.undefined)
     
     @scala.inline
-    def deleteData_updated: Self = this.set("data_updated", js.undefined)
+    def setMinimum_queries_added(value: Boolean): Self = StObject.set(x, "minimum_queries_added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum_examples_added(value: Boolean): Self = this.set("minimum_examples_added", value.asInstanceOf[js.Any])
+    def setMinimum_queries_addedUndefined: Self = StObject.set(x, "minimum_queries_added", js.undefined)
     
     @scala.inline
-    def deleteMinimum_examples_added: Self = this.set("minimum_examples_added", js.undefined)
+    def setNotices(value: Double): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum_queries_added(value: Boolean): Self = this.set("minimum_queries_added", value.asInstanceOf[js.Any])
+    def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
     
     @scala.inline
-    def deleteMinimum_queries_added: Self = this.set("minimum_queries_added", js.undefined)
+    def setProcessing(value: Boolean): Self = StObject.set(x, "processing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotices(value: Double): Self = this.set("notices", value.asInstanceOf[js.Any])
+    def setProcessingUndefined: Self = StObject.set(x, "processing", js.undefined)
     
     @scala.inline
-    def deleteNotices: Self = this.set("notices", js.undefined)
+    def setSuccessfully_trained(value: String): Self = StObject.set(x, "successfully_trained", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessing(value: Boolean): Self = this.set("processing", value.asInstanceOf[js.Any])
+    def setSuccessfully_trainedUndefined: Self = StObject.set(x, "successfully_trained", js.undefined)
     
     @scala.inline
-    def deleteProcessing: Self = this.set("processing", js.undefined)
+    def setSufficient_label_diversity(value: Boolean): Self = StObject.set(x, "sufficient_label_diversity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessfully_trained(value: String): Self = this.set("successfully_trained", value.asInstanceOf[js.Any])
+    def setSufficient_label_diversityUndefined: Self = StObject.set(x, "sufficient_label_diversity", js.undefined)
     
     @scala.inline
-    def deleteSuccessfully_trained: Self = this.set("successfully_trained", js.undefined)
+    def setTotal_examples(value: Double): Self = StObject.set(x, "total_examples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSufficient_label_diversity(value: Boolean): Self = this.set("sufficient_label_diversity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSufficient_label_diversity: Self = this.set("sufficient_label_diversity", js.undefined)
-    
-    @scala.inline
-    def setTotal_examples(value: Double): Self = this.set("total_examples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal_examples: Self = this.set("total_examples", js.undefined)
+    def setTotal_examplesUndefined: Self = StObject.set(x, "total_examples", js.undefined)
   }
 }

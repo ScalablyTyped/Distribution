@@ -1,20 +1,19 @@
 package typings.phaser.Phaser
 
 import typings.std.FrameRequestCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.DOM")
-@js.native
-object DOM extends js.Object {
+object DOM {
   
   /**
     * Abstracts away the use of RAF or setTimeOut for the core game update loop.
     * This is invoked automatically by the Phaser.Game instance.
     */
   @js.native
-  trait RequestAnimationFrame extends js.Object {
+  trait RequestAnimationFrame extends StObject {
     
     /**
       * The callback to be invoked each step.

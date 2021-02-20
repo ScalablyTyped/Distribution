@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectTypeAdmin extends js.Object {
+trait IObjectTypeAdmin extends StObject {
   
   def Clone(): IObjectTypeAdmin = js.native
   
@@ -59,60 +60,48 @@ object IObjectTypeAdmin {
   }
   
   @scala.inline
-  implicit class IObjectTypeAdminOps[Self <: IObjectTypeAdmin] (val x: Self) extends AnyVal {
+  implicit class IObjectTypeAdminMutableBuilder[Self <: IObjectTypeAdmin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IObjectTypeAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnMappings(value: IObjectTypeColumnMappings): Self = StObject.set(x, "ColumnMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionString(value: String): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IObjectTypeAdmin): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setDefaultForAutomaticPermissions(value: IAutomaticPermissions): Self = StObject.set(x, "DefaultForAutomaticPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnMappings(value: IObjectTypeColumnMappings): Self = this.set("ColumnMappings", value.asInstanceOf[js.Any])
+    def setDeleteStatement(value: String): Self = StObject.set(x, "DeleteStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionString(value: String): Self = this.set("ConnectionString", value.asInstanceOf[js.Any])
+    def setInsertIntoStatement(value: String): Self = StObject.set(x, "InsertIntoStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultForAutomaticPermissions(value: IAutomaticPermissions): Self = this.set("DefaultForAutomaticPermissions", value.asInstanceOf[js.Any])
+    def setNamedValueNamespaces(value: INamedValueNamespaces): Self = StObject.set(x, "NamedValueNamespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteStatement(value: String): Self = this.set("DeleteStatement", value.asInstanceOf[js.Any])
+    def setObjectType(value: IObjectType): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertIntoStatement(value: String): Self = this.set("InsertIntoStatement", value.asInstanceOf[js.Any])
+    def setSelectExtIDStatement(value: String): Self = StObject.set(x, "SelectExtIDStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedValueNamespaces(value: INamedValueNamespaces): Self = this.set("NamedValueNamespaces", value.asInstanceOf[js.Any])
+    def setSelectStatement(value: String): Self = StObject.set(x, "SelectStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: IObjectType): Self = this.set("ObjectType", value.asInstanceOf[js.Any])
+    def setSelectStatementOneRecord(value: String): Self = StObject.set(x, "SelectStatementOneRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectExtIDStatement(value: String): Self = this.set("SelectExtIDStatement", value.asInstanceOf[js.Any])
+    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectStatement(value: String): Self = this.set("SelectStatement", value.asInstanceOf[js.Any])
+    def setTranslatable(value: Boolean): Self = StObject.set(x, "Translatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectStatementOneRecord(value: String): Self = this.set("SelectStatementOneRecord", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = this.set("SemanticAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslatable(value: Boolean): Self = this.set("Translatable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateStatement(value: String): Self = this.set("UpdateStatement", value.asInstanceOf[js.Any])
+    def setUpdateStatement(value: String): Self = StObject.set(x, "UpdateStatement", value.asInstanceOf[js.Any])
   }
 }

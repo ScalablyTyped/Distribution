@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChoiceColumn extends js.Object {
+trait ChoiceColumn extends StObject {
   
   // If true, allows custom values that aren't in the configured choices.
   var allowTextEntry: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -25,48 +26,36 @@ object ChoiceColumn {
   }
   
   @scala.inline
-  implicit class ChoiceColumnOps[Self <: ChoiceColumn] (val x: Self) extends AnyVal {
+  implicit class ChoiceColumnMutableBuilder[Self <: ChoiceColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowTextEntry(value: NullableOption[Boolean]): Self = StObject.set(x, "allowTextEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowTextEntryNull: Self = StObject.set(x, "allowTextEntry", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowTextEntryUndefined: Self = StObject.set(x, "allowTextEntry", js.undefined)
     
     @scala.inline
-    def setAllowTextEntry(value: NullableOption[Boolean]): Self = this.set("allowTextEntry", value.asInstanceOf[js.Any])
+    def setChoices(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowTextEntry: Self = this.set("allowTextEntry", js.undefined)
+    def setChoicesNull: Self = StObject.set(x, "choices", null)
     
     @scala.inline
-    def setAllowTextEntryNull: Self = this.set("allowTextEntry", null)
+    def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
     
     @scala.inline
-    def setChoicesVarargs(value: String*): Self = this.set("choices", js.Array(value :_*))
+    def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
     
     @scala.inline
-    def setChoices(value: NullableOption[js.Array[String]]): Self = this.set("choices", value.asInstanceOf[js.Any])
+    def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChoices: Self = this.set("choices", js.undefined)
+    def setDisplayAsNull: Self = StObject.set(x, "displayAs", null)
     
     @scala.inline
-    def setChoicesNull: Self = this.set("choices", null)
-    
-    @scala.inline
-    def setDisplayAs(value: NullableOption[String]): Self = this.set("displayAs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayAs: Self = this.set("displayAs", js.undefined)
-    
-    @scala.inline
-    def setDisplayAsNull: Self = this.set("displayAs", null)
+    def setDisplayAsUndefined: Self = StObject.set(x, "displayAs", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegexMatcher extends js.Object {
+trait RegexMatcher extends StObject {
   
   /** Google's RE2 regex engine. */
   var googleRe2: js.UndefOr[GoogleRE2] = js.native
@@ -22,30 +23,18 @@ object RegexMatcher {
   }
   
   @scala.inline
-  implicit class RegexMatcherOps[Self <: RegexMatcher] (val x: Self) extends AnyVal {
+  implicit class RegexMatcherMutableBuilder[Self <: RegexMatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoogleRe2(value: GoogleRE2): Self = StObject.set(x, "googleRe2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoogleRe2Undefined: Self = StObject.set(x, "googleRe2", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleRe2(value: GoogleRE2): Self = this.set("googleRe2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoogleRe2: Self = this.set("googleRe2", js.undefined)
-    
-    @scala.inline
-    def setRegex(value: String): Self = this.set("regex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegex: Self = this.set("regex", js.undefined)
+    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
   }
 }

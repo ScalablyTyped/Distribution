@@ -5,13 +5,14 @@ import typings.gun.gunStrings.`SHA-256`
 import typings.gun.gunStrings.base16
 import typings.gun.gunStrings.base32
 import typings.gun.gunStrings.base64
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  name :'SHA-256' | 'PBKDF2',   encode :'base64' | 'base32' | 'base16',   iterations :number,   salt :any,   hash :string,   length :any}> */
 @js.native
-trait PartialnameSHA256PBKDF2en extends js.Object {
+trait PartialnameSHA256PBKDF2en extends StObject {
   
   var encode: js.UndefOr[base64 | base32 | base16] = js.native
   
@@ -34,54 +35,42 @@ object PartialnameSHA256PBKDF2en {
   }
   
   @scala.inline
-  implicit class PartialnameSHA256PBKDF2enOps[Self <: PartialnameSHA256PBKDF2en] (val x: Self) extends AnyVal {
+  implicit class PartialnameSHA256PBKDF2enMutableBuilder[Self <: PartialnameSHA256PBKDF2en] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncode(value: base64 | base32 | base16): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncode(value: base64 | base32 | base16): Self = this.set("encode", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteEncode: Self = this.set("encode", js.undefined)
+    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteIterations: Self = this.set("iterations", js.undefined)
+    def setName(value: `SHA-256` | PBKDF2): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: js.Any): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setSalt(value: js.Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: `SHA-256` | PBKDF2): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSalt(value: js.Any): Self = this.set("salt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSalt: Self = this.set("salt", js.undefined)
+    def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
   }
 }

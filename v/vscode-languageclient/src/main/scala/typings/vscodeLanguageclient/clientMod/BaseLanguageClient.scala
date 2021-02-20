@@ -56,13 +56,14 @@ import typings.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlas
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashwillSaveWaitUntil
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.workspaceSlashsymbol
 import typings.vscodeLanguageserverProtocol.protocolMod.InitializeResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient/lib/client", "BaseLanguageClient")
 @js.native
-abstract class BaseLanguageClient protected () extends js.Object {
+abstract class BaseLanguageClient protected () extends StObject {
   def this(id: String, name: String, clientOptions: LanguageClientOptions) = this()
   
   var _c2p: js.Any = js.native

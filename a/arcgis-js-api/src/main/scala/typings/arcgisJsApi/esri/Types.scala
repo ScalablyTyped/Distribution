@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.HashMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Types[T /* <: Base */, Base] extends js.Object {
+trait Types[T /* <: Base */, Base] extends StObject {
   
   var base: Constructor[Base] | js.Function = js.native
   
@@ -27,30 +28,18 @@ object Types {
   }
   
   @scala.inline
-  implicit class TypesOps[Self <: Types[_, _], T /* <: Base */, Base] (val x: Self with (Types[T, Base])) extends AnyVal {
+  implicit class TypesMutableBuilder[Self <: Types[_, _], T /* <: Base */, Base] (val x: Self with (Types[T, Base])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: Constructor[Base] | js.Function): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: String | (js.Function1[/* obj */ js.Any, String])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyFunction1(value: /* obj */ js.Any => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBase(value: Constructor[Base] | js.Function): Self = this.set("base", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyFunction1(value: /* obj */ js.Any => String): Self = this.set("key", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setKey(value: String | (js.Function1[/* obj */ js.Any, String])): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeMap(value: HashMap[Constructor[T]]): Self = this.set("typeMap", value.asInstanceOf[js.Any])
+    def setTypeMap(value: HashMap[Constructor[T]]): Self = StObject.set(x, "typeMap", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.angularfire
 import typings.angular.mod.IHttpPromise
 import typings.angular.mod.IPromise
 import typings.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

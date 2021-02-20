@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityManagerProperties extends js.Object {
+trait EntityManagerProperties extends StObject {
   
   var dataService: js.UndefOr[DataService] = js.native
   
@@ -30,60 +31,48 @@ object EntityManagerProperties {
   }
   
   @scala.inline
-  implicit class EntityManagerPropertiesOps[Self <: EntityManagerProperties] (val x: Self) extends AnyVal {
+  implicit class EntityManagerPropertiesMutableBuilder[Self <: EntityManagerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataServiceUndefined: Self = StObject.set(x, "dataService", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyGeneratorCtor(value: js.Function): Self = StObject.set(x, "keyGeneratorCtor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataService(value: DataService): Self = this.set("dataService", value.asInstanceOf[js.Any])
+    def setKeyGeneratorCtorUndefined: Self = StObject.set(x, "keyGeneratorCtor", js.undefined)
     
     @scala.inline
-    def deleteDataService: Self = this.set("dataService", js.undefined)
+    def setMetadataStore(value: MetadataStore): Self = StObject.set(x, "metadataStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyGeneratorCtor(value: js.Function): Self = this.set("keyGeneratorCtor", value.asInstanceOf[js.Any])
+    def setMetadataStoreUndefined: Self = StObject.set(x, "metadataStore", js.undefined)
     
     @scala.inline
-    def deleteKeyGeneratorCtor: Self = this.set("keyGeneratorCtor", js.undefined)
+    def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataStore(value: MetadataStore): Self = this.set("metadataStore", value.asInstanceOf[js.Any])
+    def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
     
     @scala.inline
-    def deleteMetadataStore: Self = this.set("metadataStore", js.undefined)
+    def setSaveOptions(value: SaveOptions): Self = StObject.set(x, "saveOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryOptions(value: QueryOptions): Self = this.set("queryOptions", value.asInstanceOf[js.Any])
+    def setSaveOptionsUndefined: Self = StObject.set(x, "saveOptions", js.undefined)
     
     @scala.inline
-    def deleteQueryOptions: Self = this.set("queryOptions", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveOptions(value: SaveOptions): Self = this.set("saveOptions", value.asInstanceOf[js.Any])
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     @scala.inline
-    def deleteSaveOptions: Self = this.set("saveOptions", js.undefined)
+    def setValidationOptions(value: ValidationOptions): Self = StObject.set(x, "validationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
-    
-    @scala.inline
-    def setValidationOptions(value: ValidationOptions): Self = this.set("validationOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationOptions: Self = this.set("validationOptions", js.undefined)
+    def setValidationOptionsUndefined: Self = StObject.set(x, "validationOptions", js.undefined)
   }
 }

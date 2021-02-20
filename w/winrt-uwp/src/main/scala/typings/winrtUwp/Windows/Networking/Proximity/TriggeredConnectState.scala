@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Proximity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TriggeredConnectState extends js.Object
+sealed trait TriggeredConnectState extends StObject
 /** Indicates the current state of a connection to a peer application. */
 @JSGlobal("Windows.Networking.Proximity.TriggeredConnectState")
 @js.native
-object TriggeredConnectState extends js.Object {
+object TriggeredConnectState extends StObject {
   
   /** The connection was stopped before it was completed. */
   @js.native

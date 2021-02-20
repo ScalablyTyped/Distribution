@@ -1,5 +1,6 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * each entry) to a binding will be a separate entry.
   */
 @js.native
-trait SchemaBindingDelta extends js.Object {
+trait SchemaBindingDelta extends StObject {
   
   /**
     * The action that was performed on a Binding. Required
@@ -43,42 +44,30 @@ object SchemaBindingDelta {
   }
   
   @scala.inline
-  implicit class SchemaBindingDeltaOps[Self <: SchemaBindingDelta] (val x: Self) extends AnyVal {
+  implicit class SchemaBindingDeltaMutableBuilder[Self <: SchemaBindingDelta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCondition(value: SchemaExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setMember(value: String): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: SchemaExpr): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMember(value: String): Self = this.set("member", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMember: Self = this.set("member", js.undefined)
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

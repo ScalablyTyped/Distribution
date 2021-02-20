@@ -1,7 +1,8 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _NumericOperator extends js.Object
+trait _NumericOperator extends StObject

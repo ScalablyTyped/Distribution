@@ -2,12 +2,13 @@ package typings.flexmonster.anon
 
 import typings.flexmonster.mod.GetDataErrorObject
 import typings.flexmonster.mod.GetDataValueObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAxisFormat extends js.Object {
+trait GetAxisFormat extends StObject {
   
   def getAxisFormat(format: js.Object): String = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartBulkDeploymentResponse extends js.Object {
+trait StartBulkDeploymentResponse extends StObject {
   
   /**
     * The ARN of the bulk deployment.
@@ -26,30 +27,18 @@ object StartBulkDeploymentResponse {
   }
   
   @scala.inline
-  implicit class StartBulkDeploymentResponseOps[Self <: StartBulkDeploymentResponse] (val x: Self) extends AnyVal {
+  implicit class StartBulkDeploymentResponseMutableBuilder[Self <: StartBulkDeploymentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkDeploymentArn(value: string): Self = StObject.set(x, "BulkDeploymentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkDeploymentArnUndefined: Self = StObject.set(x, "BulkDeploymentArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBulkDeploymentId(value: string): Self = StObject.set(x, "BulkDeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkDeploymentArn(value: string): Self = this.set("BulkDeploymentArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBulkDeploymentArn: Self = this.set("BulkDeploymentArn", js.undefined)
-    
-    @scala.inline
-    def setBulkDeploymentId(value: string): Self = this.set("BulkDeploymentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBulkDeploymentId: Self = this.set("BulkDeploymentId", js.undefined)
+    def setBulkDeploymentIdUndefined: Self = StObject.set(x, "BulkDeploymentId", js.undefined)
   }
 }

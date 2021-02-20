@@ -1,12 +1,13 @@
 package typings.muiDatatables.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  useDisplayedColumnsOnly :boolean,   useDisplayedRowsOnly :boolean}> */
 @js.native
-trait PartialuseDisplayedColumn extends js.Object {
+trait PartialuseDisplayedColumn extends StObject {
   
   var useDisplayedColumnsOnly: js.UndefOr[Boolean] = js.native
   
@@ -21,30 +22,18 @@ object PartialuseDisplayedColumn {
   }
   
   @scala.inline
-  implicit class PartialuseDisplayedColumnOps[Self <: PartialuseDisplayedColumn] (val x: Self) extends AnyVal {
+  implicit class PartialuseDisplayedColumnMutableBuilder[Self <: PartialuseDisplayedColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUseDisplayedColumnsOnly(value: Boolean): Self = StObject.set(x, "useDisplayedColumnsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUseDisplayedColumnsOnlyUndefined: Self = StObject.set(x, "useDisplayedColumnsOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseDisplayedRowsOnly(value: Boolean): Self = StObject.set(x, "useDisplayedRowsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseDisplayedColumnsOnly(value: Boolean): Self = this.set("useDisplayedColumnsOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseDisplayedColumnsOnly: Self = this.set("useDisplayedColumnsOnly", js.undefined)
-    
-    @scala.inline
-    def setUseDisplayedRowsOnly(value: Boolean): Self = this.set("useDisplayedRowsOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseDisplayedRowsOnly: Self = this.set("useDisplayedRowsOnly", js.undefined)
+    def setUseDisplayedRowsOnlyUndefined: Self = StObject.set(x, "useDisplayedRowsOnly", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.data
 
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,66 +56,54 @@ object IWriter {
   }
   
   @scala.inline
-  implicit class IWriterOps[Self <: IWriter] (val x: Self) extends AnyVal {
+  implicit class IWriterMutableBuilder[Self <: IWriter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNameProperty(value: () => String): Self = StObject.set(x, "getNameProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNamePropertyUndefined: Self = StObject.set(x, "getNameProperty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNameProperty(value: () => String): Self = this.set("getNameProperty", js.Any.fromFunction0(value))
+    def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
     
     @scala.inline
-    def deleteGetNameProperty: Self = this.set("getNameProperty", js.undefined)
+    def setGetWriteAllFields(value: () => Boolean): Self = StObject.set(x, "getWriteAllFields", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => _): Self = this.set("getRecordData", js.Any.fromFunction1(value))
+    def setGetWriteAllFieldsUndefined: Self = StObject.set(x, "getWriteAllFields", js.undefined)
     
     @scala.inline
-    def deleteGetRecordData: Self = this.set("getRecordData", js.undefined)
+    def setNameProperty(value: String): Self = StObject.set(x, "nameProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetWriteAllFields(value: () => Boolean): Self = this.set("getWriteAllFields", js.Any.fromFunction0(value))
+    def setNamePropertyUndefined: Self = StObject.set(x, "nameProperty", js.undefined)
     
     @scala.inline
-    def deleteGetWriteAllFields: Self = this.set("getWriteAllFields", js.undefined)
+    def setSetNameProperty(value: /* nameProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setNameProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNameProperty(value: String): Self = this.set("nameProperty", value.asInstanceOf[js.Any])
+    def setSetNamePropertyUndefined: Self = StObject.set(x, "setNameProperty", js.undefined)
     
     @scala.inline
-    def deleteNameProperty: Self = this.set("nameProperty", js.undefined)
+    def setSetWriteAllFields(value: /* writeAllFields */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setWriteAllFields", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetNameProperty(value: /* nameProperty */ js.UndefOr[String] => Unit): Self = this.set("setNameProperty", js.Any.fromFunction1(value))
+    def setSetWriteAllFieldsUndefined: Self = StObject.set(x, "setWriteAllFields", js.undefined)
     
     @scala.inline
-    def deleteSetNameProperty: Self = this.set("setNameProperty", js.undefined)
+    def setWrite(value: /* request */ js.UndefOr[IRequest] => IRequest): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetWriteAllFields(value: /* writeAllFields */ js.UndefOr[Boolean] => Unit): Self = this.set("setWriteAllFields", js.Any.fromFunction1(value))
+    def setWriteAllFields(value: Boolean): Self = StObject.set(x, "writeAllFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetWriteAllFields: Self = this.set("setWriteAllFields", js.undefined)
+    def setWriteAllFieldsUndefined: Self = StObject.set(x, "writeAllFields", js.undefined)
     
     @scala.inline
-    def setWrite(value: /* request */ js.UndefOr[IRequest] => IRequest): Self = this.set("write", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
-    
-    @scala.inline
-    def setWriteAllFields(value: Boolean): Self = this.set("writeAllFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteAllFields: Self = this.set("writeAllFields", js.undefined)
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

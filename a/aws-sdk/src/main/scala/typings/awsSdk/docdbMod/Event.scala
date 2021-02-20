@@ -1,11 +1,12 @@
 package typings.awsSdk.docdbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Event extends js.Object {
+trait Event extends StObject {
   
   /**
     * Specifies the date and time of the event.
@@ -46,57 +47,45 @@ object Event {
   }
   
   @scala.inline
-  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: TStamp): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventCategories(value: EventCategoriesList): Self = StObject.set(x, "EventCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: TStamp): Self = this.set("Date", value.asInstanceOf[js.Any])
+    def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("Date", js.undefined)
+    def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
     
     @scala.inline
-    def setEventCategoriesVarargs(value: String*): Self = this.set("EventCategories", js.Array(value :_*))
+    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventCategories(value: EventCategoriesList): Self = this.set("EventCategories", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteEventCategories: Self = this.set("EventCategories", js.undefined)
+    def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setSourceIdentifier(value: String): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceArn(value: String): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setSourceIdentifierUndefined: Self = StObject.set(x, "SourceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+    def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceIdentifier(value: String): Self = this.set("SourceIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceIdentifier: Self = this.set("SourceIdentifier", js.undefined)
-    
-    @scala.inline
-    def setSourceType(value: SourceType): Self = this.set("SourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
   }
 }

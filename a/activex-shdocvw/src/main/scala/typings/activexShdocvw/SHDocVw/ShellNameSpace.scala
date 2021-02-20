@@ -1,11 +1,12 @@
 package typings.activexShdocvw.SHDocVw
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShellNameSpace extends js.Object {
+trait ShellNameSpace extends StObject {
   
   var Columns: String = js.native
   
@@ -121,99 +122,87 @@ object ShellNameSpace {
   }
   
   @scala.inline
-  implicit class ShellNameSpaceOps[Self <: ShellNameSpace] (val x: Self) extends AnyVal {
+  implicit class ShellNameSpaceMutableBuilder[Self <: ShellNameSpace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: String): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountViewTypes(value: Double): Self = StObject.set(x, "CountViewTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateSubscriptionForSelection(value: () => Boolean): Self = StObject.set(x, "CreateSubscriptionForSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumns(value: String): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    def setDeleteSubscriptionForSelection(value: () => Boolean): Self = StObject.set(x, "DeleteSubscriptionForSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCountViewTypes(value: Double): Self = this.set("CountViewTypes", value.asInstanceOf[js.Any])
+    def setDepth(value: Double): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSubscriptionForSelection(value: () => Boolean): Self = this.set("CreateSubscriptionForSelection", js.Any.fromFunction0(value))
+    def setEnumOptions(value: Double): Self = StObject.set(x, "EnumOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteSubscriptionForSelection(value: () => Boolean): Self = this.set("DeleteSubscriptionForSelection", js.Any.fromFunction0(value))
+    def setExpand(value: (js.Any, Double) => Unit): Self = StObject.set(x, "Expand", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("Depth", value.asInstanceOf[js.Any])
+    def setExport(value: () => Unit): Self = StObject.set(x, "Export", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnumOptions(value: Double): Self = this.set("EnumOptions", value.asInstanceOf[js.Any])
+    def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: (js.Any, Double) => Unit): Self = this.set("Expand", js.Any.fromFunction2(value))
+    def setImport(value: () => Unit): Self = StObject.set(x, "Import", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExport(value: () => Unit): Self = this.set("Export", js.Any.fromFunction0(value))
+    def setInvokeContextMenuCommand(value: String => Unit): Self = StObject.set(x, "InvokeContextMenuCommand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlags(value: Double): Self = this.set("Flags", value.asInstanceOf[js.Any])
+    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImport(value: () => Unit): Self = this.set("Import", js.Any.fromFunction0(value))
+    def setMoveSelectionDown(value: () => Unit): Self = StObject.set(x, "MoveSelectionDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInvokeContextMenuCommand(value: String => Unit): Self = this.set("InvokeContextMenuCommand", js.Any.fromFunction1(value))
+    def setMoveSelectionTo(value: () => Unit): Self = StObject.set(x, "MoveSelectionTo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMode(value: Double): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setMoveSelectionUp(value: () => Unit): Self = StObject.set(x, "MoveSelectionUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMoveSelectionDown(value: () => Unit): Self = this.set("MoveSelectionDown", js.Any.fromFunction0(value))
+    def setNewFolder(value: () => Unit): Self = StObject.set(x, "NewFolder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMoveSelectionTo(value: () => Unit): Self = this.set("MoveSelectionTo", js.Any.fromFunction0(value))
+    def setResetSort(value: () => Unit): Self = StObject.set(x, "ResetSort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMoveSelectionUp(value: () => Unit): Self = this.set("MoveSelectionUp", js.Any.fromFunction0(value))
+    def setRoot(value: js.Any): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewFolder(value: () => Unit): Self = this.set("NewFolder", js.Any.fromFunction0(value))
+    def setSHDocVwDotShellNameSpace_typekey(value: ShellNameSpace): Self = StObject.set(x, "SHDocVw.ShellNameSpace_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetSort(value: () => Unit): Self = this.set("ResetSort", js.Any.fromFunction0(value))
+    def setSelectedItem(value: js.Any): Self = StObject.set(x, "SelectedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: js.Any): Self = this.set("Root", value.asInstanceOf[js.Any])
+    def setSelectedItems(value: () => js.Any): Self = StObject.set(x, "SelectedItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSHDocVwDotShellNameSpace_typekey(value: ShellNameSpace): Self = this.set("SHDocVw.ShellNameSpace_typekey", value.asInstanceOf[js.Any])
+    def setSetRoot(value: String => Unit): Self = StObject.set(x, "SetRoot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedItem(value: js.Any): Self = this.set("SelectedItem", value.asInstanceOf[js.Any])
+    def setSetViewType(value: Double => Unit): Self = StObject.set(x, "SetViewType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedItems(value: () => js.Any): Self = this.set("SelectedItems", js.Any.fromFunction0(value))
+    def setSubscriptionsEnabled(value: Boolean): Self = StObject.set(x, "SubscriptionsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetRoot(value: String => Unit): Self = this.set("SetRoot", js.Any.fromFunction1(value))
+    def setSynchronize(value: () => Unit): Self = StObject.set(x, "Synchronize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetViewType(value: Double => Unit): Self = this.set("SetViewType", js.Any.fromFunction1(value))
+    def setTVFlags(value: Double): Self = StObject.set(x, "TVFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionsEnabled(value: Boolean): Self = this.set("SubscriptionsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSynchronize(value: () => Unit): Self = this.set("Synchronize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTVFlags(value: Double): Self = this.set("TVFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnselectAll(value: () => Unit): Self = this.set("UnselectAll", js.Any.fromFunction0(value))
+    def setUnselectAll(value: () => Unit): Self = StObject.set(x, "UnselectAll", js.Any.fromFunction0(value))
   }
 }

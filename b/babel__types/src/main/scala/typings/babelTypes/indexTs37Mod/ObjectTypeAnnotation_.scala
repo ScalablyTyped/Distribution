@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.ObjectTypeAnnotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,63 +42,51 @@ object ObjectTypeAnnotation_ {
   }
   
   @scala.inline
-  implicit class ObjectTypeAnnotation_Ops[Self <: ObjectTypeAnnotation_] (val x: Self) extends AnyVal {
+  implicit class ObjectTypeAnnotation_MutableBuilder[Self <: ObjectTypeAnnotation_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallProperties(value: js.Array[ObjectTypeCallProperty_]): Self = StObject.set(x, "callProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallPropertiesNull: Self = StObject.set(x, "callProperties", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallPropertiesVarargs(value: ObjectTypeCallProperty_ *): Self = StObject.set(x, "callProperties", js.Array(value :_*))
     
     @scala.inline
-    def setExact(value: Boolean): Self = this.set("exact", value.asInstanceOf[js.Any])
+    def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertiesVarargs(value: (ObjectTypeProperty_ | ObjectTypeSpreadProperty_)*): Self = this.set("properties", js.Array(value :_*))
+    def setIndexers(value: js.Array[ObjectTypeIndexer_]): Self = StObject.set(x, "indexers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setIndexersNull: Self = StObject.set(x, "indexers", null)
     
     @scala.inline
-    def setType(value: ObjectTypeAnnotation): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setIndexersVarargs(value: ObjectTypeIndexer_ *): Self = StObject.set(x, "indexers", js.Array(value :_*))
     
     @scala.inline
-    def setCallPropertiesVarargs(value: ObjectTypeCallProperty_ *): Self = this.set("callProperties", js.Array(value :_*))
+    def setInexact(value: Boolean): Self = StObject.set(x, "inexact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallProperties(value: js.Array[ObjectTypeCallProperty_]): Self = this.set("callProperties", value.asInstanceOf[js.Any])
+    def setInexactNull: Self = StObject.set(x, "inexact", null)
     
     @scala.inline
-    def setCallPropertiesNull: Self = this.set("callProperties", null)
+    def setInternalSlots(value: js.Array[ObjectTypeInternalSlot_]): Self = StObject.set(x, "internalSlots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexersVarargs(value: ObjectTypeIndexer_ *): Self = this.set("indexers", js.Array(value :_*))
+    def setInternalSlotsNull: Self = StObject.set(x, "internalSlots", null)
     
     @scala.inline
-    def setIndexers(value: js.Array[ObjectTypeIndexer_]): Self = this.set("indexers", value.asInstanceOf[js.Any])
+    def setInternalSlotsVarargs(value: ObjectTypeInternalSlot_ *): Self = StObject.set(x, "internalSlots", js.Array(value :_*))
     
     @scala.inline
-    def setIndexersNull: Self = this.set("indexers", null)
+    def setProperties(value: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInexact(value: Boolean): Self = this.set("inexact", value.asInstanceOf[js.Any])
+    def setPropertiesVarargs(value: (ObjectTypeProperty_ | ObjectTypeSpreadProperty_)*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setInexactNull: Self = this.set("inexact", null)
-    
-    @scala.inline
-    def setInternalSlotsVarargs(value: ObjectTypeInternalSlot_ *): Self = this.set("internalSlots", js.Array(value :_*))
-    
-    @scala.inline
-    def setInternalSlots(value: js.Array[ObjectTypeInternalSlot_]): Self = this.set("internalSlots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInternalSlotsNull: Self = this.set("internalSlots", null)
+    def setType(value: ObjectTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,38 +1,34 @@
 package typings.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SceneMode extends js.Object
+sealed trait SceneMode extends StObject
 @JSImport("cesium", "SceneMode")
 @js.native
-object SceneMode extends js.Object {
+object SceneMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SceneMode with Double] = js.native
   
-  def getMorphTime(value: SceneMode): Double = js.native
-  
   @js.native
   sealed trait COLUMBUS_VIEW extends SceneMode
-  /* 1 */ @js.native
-  object COLUMBUS_VIEW extends TopLevel[COLUMBUS_VIEW with Double]
+  /* 1 */ val COLUMBUS_VIEW: typings.cesium.mod.SceneMode.COLUMBUS_VIEW with Double = js.native
   
   @js.native
   sealed trait MORPHING extends SceneMode
-  /* 0 */ @js.native
-  object MORPHING extends TopLevel[MORPHING with Double]
+  /* 0 */ val MORPHING: typings.cesium.mod.SceneMode.MORPHING with Double = js.native
   
   @js.native
   sealed trait SCENE2D extends SceneMode
-  /* 2 */ @js.native
-  object SCENE2D extends TopLevel[SCENE2D with Double]
+  /* 2 */ val SCENE2D: typings.cesium.mod.SceneMode.SCENE2D with Double = js.native
   
   @js.native
   sealed trait SCENE3D extends SceneMode
-  /* 3 */ @js.native
-  object SCENE3D extends TopLevel[SCENE3D with Double]
+  /* 3 */ val SCENE3D: typings.cesium.mod.SceneMode.SCENE3D with Double = js.native
+  
+  def getMorphTime(value: SceneMode): Double = js.native
 }

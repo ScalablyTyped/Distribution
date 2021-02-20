@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDetectDominantLanguageResponse extends js.Object {
+trait BatchDetectDominantLanguageResponse extends StObject {
   
   /**
     * A list containing one object for each document that contained an error. The results are sorted in ascending order by the Index field and match the order of the documents in the input list. If there are no errors in the batch, the ErrorList is empty.
@@ -26,30 +27,18 @@ object BatchDetectDominantLanguageResponse {
   }
   
   @scala.inline
-  implicit class BatchDetectDominantLanguageResponseOps[Self <: BatchDetectDominantLanguageResponse] (val x: Self) extends AnyVal {
+  implicit class BatchDetectDominantLanguageResponseMutableBuilder[Self <: BatchDetectDominantLanguageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorList(value: BatchItemErrorList): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorListVarargs(value: BatchItemError*): Self = StObject.set(x, "ErrorList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultList(value: ListOfDetectDominantLanguageResult): Self = StObject.set(x, "ResultList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorListVarargs(value: BatchItemError*): Self = this.set("ErrorList", js.Array(value :_*))
-    
-    @scala.inline
-    def setErrorList(value: BatchItemErrorList): Self = this.set("ErrorList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultListVarargs(value: BatchDetectDominantLanguageItemResult*): Self = this.set("ResultList", js.Array(value :_*))
-    
-    @scala.inline
-    def setResultList(value: ListOfDetectDominantLanguageResult): Self = this.set("ResultList", value.asInstanceOf[js.Any])
+    def setResultListVarargs(value: BatchDetectDominantLanguageItemResult*): Self = StObject.set(x, "ResultList", js.Array(value :_*))
   }
 }

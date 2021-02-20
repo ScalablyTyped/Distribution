@@ -1,18 +1,14 @@
 package typings.akamaiEdgeworkers.streamsMod
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.akamaiEdgeworkers.anon.Mode
 import typings.akamaiEdgeworkers.anon.Readable
-import typings.akamaiEdgeworkers.anon.Size
-import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadableStream[R] extends js.Object {
+trait ReadableStream[R] extends StObject {
   
   def cancel(): js.Promise[Unit] = js.native
   def cancel(reason: js.Any): js.Promise[Unit] = js.native
@@ -30,18 +26,3 @@ trait ReadableStream[R] extends js.Object {
   
   def tee(): js.Tuple2[ReadableStream[R], ReadableStream[R]] = js.native
 }
-@JSImport("streams", "ReadableStream")
-@js.native
-object ReadableStream
-  extends Instantiable0[ReadableStream[js.Object]]
-     with Instantiable1[
-      (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
-      ReadableStream[js.Object | Uint8Array]
-    ]
-     with Instantiable2[
-      js.UndefOr[
-        (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object])
-      ], 
-      (/* strategy */ QueuingStrategy[js.Object]) | (/* strategy */ Size), 
-      ReadableStream[js.Object | Uint8Array]
-    ]

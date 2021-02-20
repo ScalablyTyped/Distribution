@@ -1,11 +1,12 @@
 package typings.mapsjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundColorStr extends js.Object {
+trait BackgroundColorStr extends StObject {
   
   var backgroundColorStr: js.UndefOr[String] = js.native
   
@@ -40,90 +41,78 @@ object BackgroundColorStr {
   }
   
   @scala.inline
-  implicit class BackgroundColorStrOps[Self <: BackgroundColorStr] (val x: Self) extends AnyVal {
+  implicit class BackgroundColorStrMutableBuilder[Self <: BackgroundColorStr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColorStr(value: String): Self = StObject.set(x, "backgroundColorStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorStrUndefined: Self = StObject.set(x, "backgroundColorStr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBleedRatio(value: Double): Self = StObject.set(x, "bleedRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColorStr(value: String): Self = this.set("backgroundColorStr", value.asInstanceOf[js.Any])
+    def setBleedRatioUndefined: Self = StObject.set(x, "bleedRatio", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColorStr: Self = this.set("backgroundColorStr", js.undefined)
+    def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBleedRatio(value: Double): Self = this.set("bleedRatio", value.asInstanceOf[js.Any])
+    def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
     
     @scala.inline
-    def deleteBleedRatio: Self = this.set("bleedRatio", js.undefined)
+    def setLayerFill(value: js.Object): Self = StObject.set(x, "layerFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageType(value: String): Self = this.set("imageType", value.asInstanceOf[js.Any])
+    def setLayerFillUndefined: Self = StObject.set(x, "layerFill", js.undefined)
     
     @scala.inline
-    def deleteImageType: Self = this.set("imageType", js.undefined)
+    def setLayerOutline(value: js.Object): Self = StObject.set(x, "layerOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerFill(value: js.Object): Self = this.set("layerFill", value.asInstanceOf[js.Any])
+    def setLayerOutlineUndefined: Self = StObject.set(x, "layerOutline", js.undefined)
     
     @scala.inline
-    def deleteLayerFill: Self = this.set("layerFill", js.undefined)
+    def setLayerVisibility(value: js.Object): Self = StObject.set(x, "layerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerOutline(value: js.Object): Self = this.set("layerOutline", value.asInstanceOf[js.Any])
+    def setLayerVisibilityUndefined: Self = StObject.set(x, "layerVisibility", js.undefined)
     
     @scala.inline
-    def deleteLayerOutline: Self = this.set("layerOutline", js.undefined)
+    def setLayerWhere(value: js.Object): Self = StObject.set(x, "layerWhere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerVisibility(value: js.Object): Self = this.set("layerVisibility", value.asInstanceOf[js.Any])
+    def setLayerWhereUndefined: Self = StObject.set(x, "layerWhere", js.undefined)
     
     @scala.inline
-    def deleteLayerVisibility: Self = this.set("layerVisibility", js.undefined)
+    def setMapCacheName(value: String): Self = StObject.set(x, "mapCacheName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerWhere(value: js.Object): Self = this.set("layerWhere", value.asInstanceOf[js.Any])
+    def setMapCacheNameUndefined: Self = StObject.set(x, "mapCacheName", js.undefined)
     
     @scala.inline
-    def deleteLayerWhere: Self = this.set("layerWhere", js.undefined)
+    def setMapCacheOption(value: String): Self = StObject.set(x, "mapCacheOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapCacheName(value: String): Self = this.set("mapCacheName", value.asInstanceOf[js.Any])
+    def setMapCacheOptionUndefined: Self = StObject.set(x, "mapCacheOption", js.undefined)
     
     @scala.inline
-    def deleteMapCacheName: Self = this.set("mapCacheName", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapCacheOption(value: String): Self = this.set("mapCacheOption", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteMapCacheOption: Self = this.set("mapCacheOption", js.undefined)
+    def setUseQuadKeyForMapCacheName(value: Boolean): Self = StObject.set(x, "useQuadKeyForMapCacheName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setUseQuadKeyForMapCacheNameUndefined: Self = StObject.set(x, "useQuadKeyForMapCacheName", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseQuadKeyForMapCacheName(value: Boolean): Self = this.set("useQuadKeyForMapCacheName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseQuadKeyForMapCacheName: Self = this.set("useQuadKeyForMapCacheName", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

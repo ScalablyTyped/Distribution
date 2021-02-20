@@ -1,5 +1,6 @@
 package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The public key for a given CryptoKeyVersion. Obtained via GetPublicKey.
   */
 @js.native
-trait SchemaPublicKey extends js.Object {
+trait SchemaPublicKey extends StObject {
   
   /**
     * The Algorithm associated with this key.
@@ -33,30 +34,18 @@ object SchemaPublicKey {
   }
   
   @scala.inline
-  implicit class SchemaPublicKeyOps[Self <: SchemaPublicKey] (val x: Self) extends AnyVal {
+  implicit class SchemaPublicKeyMutableBuilder[Self <: SchemaPublicKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
-    
-    @scala.inline
-    def setPem(value: String): Self = this.set("pem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePem: Self = this.set("pem", js.undefined)
+    def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
   }
 }

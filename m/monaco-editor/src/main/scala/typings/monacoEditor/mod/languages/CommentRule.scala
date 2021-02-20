@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.languages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentRule extends js.Object {
+trait CommentRule extends StObject {
   
   /**
     * The block comment character pair, like `/ * block comment *&#47;`
@@ -26,36 +27,24 @@ object CommentRule {
   }
   
   @scala.inline
-  implicit class CommentRuleOps[Self <: CommentRule] (val x: Self) extends AnyVal {
+  implicit class CommentRuleMutableBuilder[Self <: CommentRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockComment(value: CharacterPair): Self = StObject.set(x, "blockComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockCommentNull: Self = StObject.set(x, "blockComment", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockCommentUndefined: Self = StObject.set(x, "blockComment", js.undefined)
     
     @scala.inline
-    def setBlockComment(value: CharacterPair): Self = this.set("blockComment", value.asInstanceOf[js.Any])
+    def setLineComment(value: String): Self = StObject.set(x, "lineComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockComment: Self = this.set("blockComment", js.undefined)
+    def setLineCommentNull: Self = StObject.set(x, "lineComment", null)
     
     @scala.inline
-    def setBlockCommentNull: Self = this.set("blockComment", null)
-    
-    @scala.inline
-    def setLineComment(value: String): Self = this.set("lineComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineComment: Self = this.set("lineComment", js.undefined)
-    
-    @scala.inline
-    def setLineCommentNull: Self = this.set("lineComment", null)
+    def setLineCommentUndefined: Self = StObject.set(x, "lineComment", js.undefined)
   }
 }

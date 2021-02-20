@@ -1,11 +1,12 @@
 package typings.camljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IJoinable extends js.Object {
+trait IJoinable extends StObject {
   
   /** Join the list you're querying with another list.
     Joins are only allowed through a lookup field relation.

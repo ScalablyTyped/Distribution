@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "DataSourceCollection")
 @js.native
-class DataSourceCollection () extends js.Object {
+class DataSourceCollection () extends StObject {
   
   def add(dataSource: js.Promise[DataSource]): js.Promise[DataSource] = js.native
   def add(dataSource: DataSource): js.Promise[DataSource] = js.native

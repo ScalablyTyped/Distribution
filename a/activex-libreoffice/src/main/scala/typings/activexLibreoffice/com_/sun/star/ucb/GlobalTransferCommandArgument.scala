@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This struct contains information needed to transfer objects from one location to another. */
 @js.native
-trait GlobalTransferCommandArgument extends js.Object {
+trait GlobalTransferCommandArgument extends StObject {
   
   /**
     * describes how to act in case of title clashes while transferring the data.
@@ -47,33 +48,21 @@ object GlobalTransferCommandArgument {
   }
   
   @scala.inline
-  implicit class GlobalTransferCommandArgumentOps[Self <: GlobalTransferCommandArgument] (val x: Self) extends AnyVal {
+  implicit class GlobalTransferCommandArgumentMutableBuilder[Self <: GlobalTransferCommandArgument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewTitle(value: String): Self = StObject.set(x, "NewTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperation(value: TransferCommandOperation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameClash(value: Double): Self = this.set("NameClash", value.asInstanceOf[js.Any])
+    def setSourceURL(value: String): Self = StObject.set(x, "SourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewTitle(value: String): Self = this.set("NewTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperation(value: TransferCommandOperation): Self = this.set("Operation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceURL(value: String): Self = this.set("SourceURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetURL(value: String): Self = this.set("TargetURL", value.asInstanceOf[js.Any])
+    def setTargetURL(value: String): Self = StObject.set(x, "TargetURL", value.asInstanceOf[js.Any])
   }
 }

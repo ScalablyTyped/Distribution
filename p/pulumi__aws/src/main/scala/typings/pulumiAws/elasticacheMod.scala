@@ -18,20 +18,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/elasticache", JSImport.Namespace)
-@js.native
-object elasticacheMod extends js.Object {
+object elasticacheMod {
   
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
-  
-  def getReplicationGroup(args: GetReplicationGroupArgs): js.Promise[GetReplicationGroupResult] = js.native
-  def getReplicationGroup(args: GetReplicationGroupArgs, opts: InvokeOptions): js.Promise[GetReplicationGroupResult] = js.native
-  
+  @JSImport("@pulumi/aws/elasticache", "Cluster")
   @js.native
   class Cluster protected ()
     extends typings.pulumiAws.elasticacheClusterMod.Cluster {
@@ -48,8 +42,7 @@ object elasticacheMod extends js.Object {
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Cluster extends js.Object {
+  object Cluster {
     
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
@@ -60,18 +53,29 @@ object elasticacheMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticache", "Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticacheClusterMod.Cluster = js.native
+    @JSImport("@pulumi/aws/elasticache", "Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticacheClusterMod.Cluster = js.native
+    @JSImport("@pulumi/aws/elasticache", "Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.elasticacheClusterMod.Cluster = js.native
+    @JSImport("@pulumi/aws/elasticache", "Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.elasticacheClusterMod.Cluster = js.native
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticache", "Cluster.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/cluster.Cluster */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/elasticache", "ParameterGroup")
   @js.native
   class ParameterGroup protected ()
     extends typings.pulumiAws.elasticacheParameterGroupMod.ParameterGroup {
@@ -86,8 +90,7 @@ object elasticacheMod extends js.Object {
     def this(name: String, args: ParameterGroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ParameterGroup extends js.Object {
+  object ParameterGroup {
     
     /**
       * Get an existing ParameterGroup resource's state with the given name, ID, and optional extra
@@ -98,18 +101,29 @@ object elasticacheMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticache", "ParameterGroup.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticacheParameterGroupMod.ParameterGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "ParameterGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticacheParameterGroupMod.ParameterGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "ParameterGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState): typings.pulumiAws.elasticacheParameterGroupMod.ParameterGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "ParameterGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.elasticacheParameterGroupMod.ParameterGroup = js.native
     
     /**
       * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticache", "ParameterGroup.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/parameterGroup.ParameterGroup */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/elasticache", "ReplicationGroup")
   @js.native
   class ReplicationGroup protected ()
     extends typings.pulumiAws.replicationGroupMod.ReplicationGroup {
@@ -124,8 +138,7 @@ object elasticacheMod extends js.Object {
     def this(name: String, args: ReplicationGroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ReplicationGroup extends js.Object {
+  object ReplicationGroup {
     
     /**
       * Get an existing ReplicationGroup resource's state with the given name, ID, and optional extra
@@ -136,18 +149,29 @@ object elasticacheMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticache", "ReplicationGroup.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.replicationGroupMod.ReplicationGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "ReplicationGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.replicationGroupMod.ReplicationGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "ReplicationGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ReplicationGroupState): typings.pulumiAws.replicationGroupMod.ReplicationGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "ReplicationGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ReplicationGroupState, opts: CustomResourceOptions): typings.pulumiAws.replicationGroupMod.ReplicationGroup = js.native
     
     /**
       * Returns true if the given object is an instance of ReplicationGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticache", "ReplicationGroup.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/replicationGroup.ReplicationGroup */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/elasticache", "SecurityGroup")
   @js.native
   class SecurityGroup protected ()
     extends typings.pulumiAws.elasticacheSecurityGroupMod.SecurityGroup {
@@ -162,8 +186,7 @@ object elasticacheMod extends js.Object {
     def this(name: String, args: SecurityGroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object SecurityGroup extends js.Object {
+  object SecurityGroup {
     
     /**
       * Get an existing SecurityGroup resource's state with the given name, ID, and optional extra
@@ -174,18 +197,29 @@ object elasticacheMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticache", "SecurityGroup.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticacheSecurityGroupMod.SecurityGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "SecurityGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticacheSecurityGroupMod.SecurityGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "SecurityGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: SecurityGroupState): typings.pulumiAws.elasticacheSecurityGroupMod.SecurityGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "SecurityGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: SecurityGroupState, opts: CustomResourceOptions): typings.pulumiAws.elasticacheSecurityGroupMod.SecurityGroup = js.native
     
     /**
       * Returns true if the given object is an instance of SecurityGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticache", "SecurityGroup.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/securityGroup.SecurityGroup */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/elasticache", "SubnetGroup")
   @js.native
   class SubnetGroup protected ()
     extends typings.pulumiAws.elasticacheSubnetGroupMod.SubnetGroup {
@@ -200,8 +234,7 @@ object elasticacheMod extends js.Object {
     def this(name: String, args: SubnetGroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object SubnetGroup extends js.Object {
+  object SubnetGroup {
     
     /**
       * Get an existing SubnetGroup resource's state with the given name, ID, and optional extra
@@ -212,15 +245,39 @@ object elasticacheMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticache", "SubnetGroup.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticacheSubnetGroupMod.SubnetGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "SubnetGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticacheSubnetGroupMod.SubnetGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "SubnetGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState): typings.pulumiAws.elasticacheSubnetGroupMod.SubnetGroup = js.native
+    @JSImport("@pulumi/aws/elasticache", "SubnetGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState, opts: CustomResourceOptions): typings.pulumiAws.elasticacheSubnetGroupMod.SubnetGroup = js.native
     
     /**
       * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticache", "SubnetGroup.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/subnetGroup.SubnetGroup */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws/elasticache", "getCluster")
+  @js.native
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
+  @JSImport("@pulumi/aws/elasticache", "getCluster")
+  @js.native
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  
+  @JSImport("@pulumi/aws/elasticache", "getReplicationGroup")
+  @js.native
+  def getReplicationGroup(args: GetReplicationGroupArgs): js.Promise[GetReplicationGroupResult] = js.native
+  @JSImport("@pulumi/aws/elasticache", "getReplicationGroup")
+  @js.native
+  def getReplicationGroup(args: GetReplicationGroupArgs, opts: InvokeOptions): js.Promise[GetReplicationGroupResult] = js.native
 }

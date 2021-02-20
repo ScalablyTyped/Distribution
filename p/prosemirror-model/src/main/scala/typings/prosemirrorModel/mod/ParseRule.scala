@@ -3,12 +3,13 @@ package typings.prosemirrorModel.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.prosemirrorModelBooleans.`false`
 import typings.prosemirrorModel.prosemirrorModelStrings.full
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParseRule extends js.Object {
+trait ParseRule extends StObject {
   
   /**
     * Attributes for the node or mark created by this rule. When
@@ -143,147 +144,135 @@ object ParseRule {
   }
   
   @scala.inline
-  implicit class ParseRuleOps[Self <: ParseRule] (val x: Self) extends AnyVal {
+  implicit class ParseRuleMutableBuilder[Self <: ParseRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrsNull: Self = StObject.set(x, "attrs", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
     
     @scala.inline
-    def setAttrs(value: StringDictionary[js.Any]): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    def setContentElement(value: String | (js.Function1[/* p */ typings.std.Node, typings.std.Node])): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttrs: Self = this.set("attrs", js.undefined)
+    def setContentElementFunction1(value: /* p */ typings.std.Node => typings.std.Node): Self = StObject.set(x, "contentElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttrsNull: Self = this.set("attrs", null)
+    def setContentElementNull: Self = StObject.set(x, "contentElement", null)
     
     @scala.inline
-    def setContentElementFunction1(value: /* p */ typings.std.Node => typings.std.Node): Self = this.set("contentElement", js.Any.fromFunction1(value))
+    def setContentElementUndefined: Self = StObject.set(x, "contentElement", js.undefined)
     
     @scala.inline
-    def setContentElement(value: String | (js.Function1[/* p */ typings.std.Node, typings.std.Node])): Self = this.set("contentElement", value.asInstanceOf[js.Any])
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentElement: Self = this.set("contentElement", js.undefined)
+    def setContextNull: Self = StObject.set(x, "context", null)
     
     @scala.inline
-    def setContentElementNull: Self = this.set("contentElement", null)
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setGetAttrs(value: /* p */ typings.std.Node | String => js.UndefOr[StringDictionary[_] | `false` | Null]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setGetAttrsNull: Self = StObject.set(x, "getAttrs", null)
     
     @scala.inline
-    def setContextNull: Self = this.set("context", null)
+    def setGetAttrsUndefined: Self = StObject.set(x, "getAttrs", js.undefined)
     
     @scala.inline
-    def setGetAttrs(value: /* p */ typings.std.Node | String => js.UndefOr[StringDictionary[_] | `false` | Null]): Self = this.set("getAttrs", js.Any.fromFunction1(value))
+    def setGetContent(value: (/* p */ typings.std.Node, /* schema */ js.Any) => Fragment[_]): Self = StObject.set(x, "getContent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetAttrs: Self = this.set("getAttrs", js.undefined)
+    def setGetContentNull: Self = StObject.set(x, "getContent", null)
     
     @scala.inline
-    def setGetAttrsNull: Self = this.set("getAttrs", null)
+    def setGetContentUndefined: Self = StObject.set(x, "getContent", js.undefined)
     
     @scala.inline
-    def setGetContent(value: (/* p */ typings.std.Node, /* schema */ js.Any) => Fragment[_]): Self = this.set("getContent", js.Any.fromFunction2(value))
+    def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetContent: Self = this.set("getContent", js.undefined)
+    def setIgnoreNull: Self = StObject.set(x, "ignore", null)
     
     @scala.inline
-    def setGetContentNull: Self = this.set("getContent", null)
+    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
     @scala.inline
-    def setIgnore(value: Boolean): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    def setMarkNull: Self = StObject.set(x, "mark", null)
     
     @scala.inline
-    def setIgnoreNull: Self = this.set("ignore", null)
+    def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
     @scala.inline
-    def setMark(value: String): Self = this.set("mark", value.asInstanceOf[js.Any])
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMark: Self = this.set("mark", js.undefined)
+    def setNamespaceNull: Self = StObject.set(x, "namespace", null)
     
     @scala.inline
-    def setMarkNull: Self = this.set("mark", null)
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setNodeNull: Self = StObject.set(x, "node", null)
     
     @scala.inline
-    def setNamespaceNull: Self = this.set("namespace", null)
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def setNode(value: String): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setPreserveWhitespace(value: Boolean | full): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setPreserveWhitespaceNull: Self = StObject.set(x, "preserveWhitespace", null)
     
     @scala.inline
-    def setNodeNull: Self = this.set("node", null)
+    def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
     
     @scala.inline
-    def setPreserveWhitespace(value: Boolean | full): Self = this.set("preserveWhitespace", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreserveWhitespace: Self = this.set("preserveWhitespace", js.undefined)
+    def setPriorityNull: Self = StObject.set(x, "priority", null)
     
     @scala.inline
-    def setPreserveWhitespaceNull: Self = this.set("preserveWhitespace", null)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setSkipNull: Self = StObject.set(x, "skip", null)
     
     @scala.inline
-    def setPriorityNull: Self = this.set("priority", null)
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def setSkip(value: Boolean): Self = this.set("skip", value.asInstanceOf[js.Any])
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def setSkipNull: Self = this.set("skip", null)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTagNull: Self = StObject.set(x, "tag", null)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
-    
-    @scala.inline
-    def setTagNull: Self = this.set("tag", null)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

@@ -24,12 +24,13 @@ import typings.tizenTvWebapis.tizenTvWebapisStrings.PLAYER_STREAMING_EVENT
 import typings.tizenTvWebapis.tizenTvWebapisStrings.PLAYREADY
 import typings.tizenTvWebapis.tizenTvWebapisStrings.VERIMATRIX
 import typings.tizenTvWebapis.tizenTvWebapisStrings.WIDEVINE_CDM
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AVPlayPlaybackCallback extends js.Object {
+trait AVPlayPlaybackCallback extends StObject {
   
   /**
     * Callback method for asynchronous buffering complete notifications.
@@ -139,80 +140,68 @@ object AVPlayPlaybackCallback {
   }
   
   @scala.inline
-  implicit class AVPlayPlaybackCallbackOps[Self <: AVPlayPlaybackCallback] (val x: Self) extends AnyVal {
+  implicit class AVPlayPlaybackCallbackMutableBuilder[Self <: AVPlayPlaybackCallback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnbufferingcomplete(value: () => Unit): Self = StObject.set(x, "onbufferingcomplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnbufferingcompleteUndefined: Self = StObject.set(x, "onbufferingcomplete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnbufferingprogress(value: /* percent */ Double => Unit): Self = StObject.set(x, "onbufferingprogress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnbufferingcomplete(value: () => Unit): Self = this.set("onbufferingcomplete", js.Any.fromFunction0(value))
+    def setOnbufferingprogressUndefined: Self = StObject.set(x, "onbufferingprogress", js.undefined)
     
     @scala.inline
-    def deleteOnbufferingcomplete: Self = this.set("onbufferingcomplete", js.undefined)
+    def setOnbufferingstart(value: () => Unit): Self = StObject.set(x, "onbufferingstart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnbufferingprogress(value: /* percent */ Double => Unit): Self = this.set("onbufferingprogress", js.Any.fromFunction1(value))
+    def setOnbufferingstartUndefined: Self = StObject.set(x, "onbufferingstart", js.undefined)
     
     @scala.inline
-    def deleteOnbufferingprogress: Self = this.set("onbufferingprogress", js.undefined)
+    def setOncurrentplaytime(value: /* currentTime */ Double => Unit): Self = StObject.set(x, "oncurrentplaytime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnbufferingstart(value: () => Unit): Self = this.set("onbufferingstart", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnbufferingstart: Self = this.set("onbufferingstart", js.undefined)
-    
-    @scala.inline
-    def setOncurrentplaytime(value: /* currentTime */ Double => Unit): Self = this.set("oncurrentplaytime", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOncurrentplaytime: Self = this.set("oncurrentplaytime", js.undefined)
+    def setOncurrentplaytimeUndefined: Self = StObject.set(x, "oncurrentplaytime", js.undefined)
     
     @scala.inline
     def setOndrmevent(
       value: (/* type */ AVPlayDrmType | PLAYREADY | EME_PLAYREADY | VERIMATRIX | WIDEVINE_CDM | EME_WIDEVINE_CDM, /* data */ js.Object) => Unit
-    ): Self = this.set("ondrmevent", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "ondrmevent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOndrmevent: Self = this.set("ondrmevent", js.undefined)
+    def setOndrmeventUndefined: Self = StObject.set(x, "ondrmevent", js.undefined)
     
     @scala.inline
     def setOnerror(
       value: /* eventid */ AVPlayError | PLAYER_ERROR_NONE | PLAYER_ERROR_INVALID_PARAMETER | PLAYER_ERROR_NO_SUCH_FILE | PLAYER_ERROR_INVALID_OPERATION | PLAYER_ERROR_SEEK_FAILED | PLAYER_ERROR_INVALID_STATE | PLAYER_ERROR_NOT_SUPPORTED_FILE | PLAYER_ERROR_NOT_SUPPORTED_FORMAT | PLAYER_ERROR_INVALID_URI | PLAYER_ERROR_CONNECTION_FAILED | PLAYER_ERROR_GENEREIC => Unit
-    ): Self = this.set("onerror", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnerror: Self = this.set("onerror", js.undefined)
+    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
     @scala.inline
     def setOnevent(
       value: (/* eventid */ AVPlayEvent | PLAYER_MSG_NONE | PLAYER_MSG_RESOLUTION_CHANGED | PLAYER_MSG_BITRATE_CHANGE | PLAYER_MSG_FRAGMENT_INFO | PLAYER_SPARSE_TRACK_DETECT | PLAYER_STREAMING_EVENT | PLAYER_MSG_HTTP_ERROR_CODE | PLAYER_MSG_DRM_CHALLENGE_DATA, /* data */ String) => Unit
-    ): Self = this.set("onevent", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onevent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnevent: Self = this.set("onevent", js.undefined)
+    def setOneventUndefined: Self = StObject.set(x, "onevent", js.undefined)
     
     @scala.inline
-    def setOnstreamcompleted(value: () => Unit): Self = this.set("onstreamcompleted", js.Any.fromFunction0(value))
+    def setOnstreamcompleted(value: () => Unit): Self = StObject.set(x, "onstreamcompleted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnstreamcompleted: Self = this.set("onstreamcompleted", js.undefined)
+    def setOnstreamcompletedUndefined: Self = StObject.set(x, "onstreamcompleted", js.undefined)
     
     @scala.inline
     def setOnsubtitlechange(
       value: (/* duration */ Double, /* subtitles */ String, /* type */ Double, /* attributes */ AVPlaySubtitleAttribute) => Unit
-    ): Self = this.set("onsubtitlechange", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onsubtitlechange", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnsubtitlechange: Self = this.set("onsubtitlechange", js.undefined)
+    def setOnsubtitlechangeUndefined: Self = StObject.set(x, "onsubtitlechange", js.undefined)
   }
 }

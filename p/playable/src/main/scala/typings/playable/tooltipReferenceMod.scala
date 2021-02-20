@@ -4,13 +4,18 @@ import typings.playable.tooltipTypesMod.ITooltipReference
 import typings.playable.tooltipTypesMod.ITooltipReferenceOptions
 import typings.playable.tooltipTypesMod.ITooltipService
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/core/tooltip/tooltip-reference", JSImport.Namespace)
-@js.native
-object tooltipReferenceMod extends js.Object {
+object tooltipReferenceMod {
+  
+  @JSImport("playable/dist/src/modules/ui/core/tooltip/tooltip-reference", JSImport.Default)
+  @js.native
+  class default protected () extends TooltipReference {
+    def this(reference: HTMLElement, tooltipService: ITooltipService, options: ITooltipReferenceOptions) = this()
+  }
   
   @js.native
   trait TooltipReference extends ITooltipReference {
@@ -33,10 +38,5 @@ object tooltipReferenceMod extends js.Object {
     
     @JSName("isHidden")
     def isHidden_MTooltipReference: Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends TooltipReference {
-    def this(reference: HTMLElement, tooltipService: ITooltipService, options: ITooltipReferenceOptions) = this()
   }
 }

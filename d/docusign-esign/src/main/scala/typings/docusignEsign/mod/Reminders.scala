@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reminders extends js.Object {
+trait Reminders extends StObject {
   
   /**
     * An integer specifying the number of days after the recipient receives the envelope that reminder emails are sent to the recipient.
@@ -32,36 +33,24 @@ object Reminders {
   }
   
   @scala.inline
-  implicit class RemindersOps[Self <: Reminders] (val x: Self) extends AnyVal {
+  implicit class RemindersMutableBuilder[Self <: Reminders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReminderDelay(value: String): Self = StObject.set(x, "reminderDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReminderDelayUndefined: Self = StObject.set(x, "reminderDelay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReminderEnabled(value: String): Self = StObject.set(x, "reminderEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminderDelay(value: String): Self = this.set("reminderDelay", value.asInstanceOf[js.Any])
+    def setReminderEnabledUndefined: Self = StObject.set(x, "reminderEnabled", js.undefined)
     
     @scala.inline
-    def deleteReminderDelay: Self = this.set("reminderDelay", js.undefined)
+    def setReminderFrequency(value: String): Self = StObject.set(x, "reminderFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminderEnabled(value: String): Self = this.set("reminderEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReminderEnabled: Self = this.set("reminderEnabled", js.undefined)
-    
-    @scala.inline
-    def setReminderFrequency(value: String): Self = this.set("reminderFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReminderFrequency: Self = this.set("reminderFrequency", js.undefined)
+    def setReminderFrequencyUndefined: Self = StObject.set(x, "reminderFrequency", js.undefined)
   }
 }

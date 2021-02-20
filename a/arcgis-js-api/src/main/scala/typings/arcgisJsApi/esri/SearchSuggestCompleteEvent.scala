@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchSuggestCompleteEvent extends js.Object {
+trait SearchSuggestCompleteEvent extends StObject {
   
   var activeSourceIndex: Double = js.native
   
@@ -32,39 +33,27 @@ object SearchSuggestCompleteEvent {
   }
   
   @scala.inline
-  implicit class SearchSuggestCompleteEventOps[Self <: SearchSuggestCompleteEvent] (val x: Self) extends AnyVal {
+  implicit class SearchSuggestCompleteEventMutableBuilder[Self <: SearchSuggestCompleteEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setActiveSourceIndex(value: Double): Self = this.set("activeSourceIndex", value.asInstanceOf[js.Any])
+    def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: Error*): Self = this.set("errors", js.Array(value :_*))
+    def setResults(value: js.Array[SearchSuggestCompleteEventResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[Error]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: SearchSuggestCompleteEventResults*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setNumResults(value: Double): Self = this.set("numResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: SearchSuggestCompleteEventResults*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[SearchSuggestCompleteEventResults]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchTerm(value: String): Self = this.set("searchTerm", value.asInstanceOf[js.Any])
+    def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
   }
 }

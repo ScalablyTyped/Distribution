@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReceivedMessage extends js.Object {
+trait ReceivedMessage extends StObject {
   
   /** This ID can be used to acknowledge the received message. */
   var ackId: js.UndefOr[String] = js.native
@@ -30,36 +31,24 @@ object ReceivedMessage {
   }
   
   @scala.inline
-  implicit class ReceivedMessageOps[Self <: ReceivedMessage] (val x: Self) extends AnyVal {
+  implicit class ReceivedMessageMutableBuilder[Self <: ReceivedMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeliveryAttempt(value: Double): Self = StObject.set(x, "deliveryAttempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAckId(value: String): Self = this.set("ackId", value.asInstanceOf[js.Any])
+    def setDeliveryAttemptUndefined: Self = StObject.set(x, "deliveryAttempt", js.undefined)
     
     @scala.inline
-    def deleteAckId: Self = this.set("ackId", js.undefined)
+    def setMessage(value: PubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryAttempt(value: Double): Self = this.set("deliveryAttempt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeliveryAttempt: Self = this.set("deliveryAttempt", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: PubsubMessage): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

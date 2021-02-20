@@ -1,5 +1,6 @@
 package typings.atlassianConnectJs.AP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Note: This is only enabled for page modules (Admin page, General page, Configure page, User profile page). It cannot be used if the page module is launched as a dialog.
   */
-@JSGlobal("AP.history")
-@js.native
-object history extends js.Object
+object history

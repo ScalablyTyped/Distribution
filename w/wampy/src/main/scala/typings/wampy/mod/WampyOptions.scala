@@ -2,12 +2,13 @@ package typings.wampy.mod
 
 import typings.wampy.wampyStrings.loose
 import typings.wampy.wampyStrings.strict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WampyOptions extends js.Object {
+trait WampyOptions extends StObject {
   
   var authid: js.UndefOr[String] = js.native
   
@@ -50,117 +51,105 @@ object WampyOptions {
   }
   
   @scala.inline
-  implicit class WampyOptionsOps[Self <: WampyOptions] (val x: Self) extends AnyVal {
+  implicit class WampyOptionsMutableBuilder[Self <: WampyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthid(value: String): Self = StObject.set(x, "authid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthidUndefined: Self = StObject.set(x, "authid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthmethods(value: js.Array[String]): Self = StObject.set(x, "authmethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthid(value: String): Self = this.set("authid", value.asInstanceOf[js.Any])
+    def setAuthmethodsUndefined: Self = StObject.set(x, "authmethods", js.undefined)
     
     @scala.inline
-    def deleteAuthid: Self = this.set("authid", js.undefined)
+    def setAuthmethodsVarargs(value: String*): Self = StObject.set(x, "authmethods", js.Array(value :_*))
     
     @scala.inline
-    def setAuthmethodsVarargs(value: String*): Self = this.set("authmethods", js.Array(value :_*))
+    def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthmethods(value: js.Array[String]): Self = this.set("authmethods", value.asInstanceOf[js.Any])
+    def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
     
     @scala.inline
-    def deleteAuthmethods: Self = this.set("authmethods", js.undefined)
+    def setHelloCustomDetails(value: js.Any): Self = StObject.set(x, "helloCustomDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoReconnect(value: Boolean): Self = this.set("autoReconnect", value.asInstanceOf[js.Any])
+    def setHelloCustomDetailsUndefined: Self = StObject.set(x, "helloCustomDetails", js.undefined)
     
     @scala.inline
-    def deleteAutoReconnect: Self = this.set("autoReconnect", js.undefined)
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelloCustomDetails(value: js.Any): Self = this.set("helloCustomDetails", value.asInstanceOf[js.Any])
+    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
     @scala.inline
-    def deleteHelloCustomDetails: Self = this.set("helloCustomDetails", js.undefined)
+    def setOnChallenge(value: (/* auth_method */ String, /* extra */ Dict) => String): Self = StObject.set(x, "onChallenge", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setOnChallengeUndefined: Self = StObject.set(x, "onChallenge", js.undefined)
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnChallenge(value: (/* auth_method */ String, /* extra */ Dict) => String): Self = this.set("onChallenge", js.Any.fromFunction2(value))
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteOnChallenge: Self = this.set("onChallenge", js.undefined)
+    def setOnConnect(value: () => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnConnect(value: () => Unit): Self = this.set("onConnect", js.Any.fromFunction0(value))
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteOnConnect: Self = this.set("onConnect", js.undefined)
+    def setOnReconnect(value: () => Unit): Self = StObject.set(x, "onReconnect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnError(value: () => Unit): Self = this.set("onError", js.Any.fromFunction0(value))
+    def setOnReconnectSuccess(value: () => Unit): Self = StObject.set(x, "onReconnectSuccess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnReconnectSuccessUndefined: Self = StObject.set(x, "onReconnectSuccess", js.undefined)
     
     @scala.inline
-    def setOnReconnect(value: () => Unit): Self = this.set("onReconnect", js.Any.fromFunction0(value))
+    def setOnReconnectUndefined: Self = StObject.set(x, "onReconnect", js.undefined)
     
     @scala.inline
-    def deleteOnReconnect: Self = this.set("onReconnect", js.undefined)
+    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnReconnectSuccess(value: () => Unit): Self = this.set("onReconnectSuccess", js.Any.fromFunction0(value))
+    def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
     
     @scala.inline
-    def deleteOnReconnectSuccess: Self = this.set("onReconnectSuccess", js.undefined)
+    def setReconnectInterval(value: Double): Self = StObject.set(x, "reconnectInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealm(value: String): Self = this.set("realm", value.asInstanceOf[js.Any])
+    def setReconnectIntervalUndefined: Self = StObject.set(x, "reconnectInterval", js.undefined)
     
     @scala.inline
-    def deleteRealm: Self = this.set("realm", js.undefined)
+    def setSerializer(value: js.Any): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReconnectInterval(value: Double): Self = this.set("reconnectInterval", value.asInstanceOf[js.Any])
+    def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
     
     @scala.inline
-    def deleteReconnectInterval: Self = this.set("reconnectInterval", js.undefined)
+    def setUrlValidation(value: strict | loose): Self = StObject.set(x, "urlValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerializer(value: js.Any): Self = this.set("serializer", value.asInstanceOf[js.Any])
+    def setUrlValidationUndefined: Self = StObject.set(x, "urlValidation", js.undefined)
     
     @scala.inline
-    def deleteSerializer: Self = this.set("serializer", js.undefined)
+    def setWs(value: js.Any): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlValidation(value: strict | loose): Self = this.set("urlValidation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlValidation: Self = this.set("urlValidation", js.undefined)
-    
-    @scala.inline
-    def setWs(value: js.Any): Self = this.set("ws", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWs: Self = this.set("ws", js.undefined)
+    def setWsUndefined: Self = StObject.set(x, "ws", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLDocument extends js.Object {
+trait IHTMLDocument extends StObject {
   
   @JSName("MSHTML.IHTMLDocument_typekey")
   var MSHTMLDotIHTMLDocument_typekey: IHTMLDocument = js.native
@@ -22,24 +23,12 @@ object IHTMLDocument {
   }
   
   @scala.inline
-  implicit class IHTMLDocumentOps[Self <: IHTMLDocument] (val x: Self) extends AnyVal {
+  implicit class IHTMLDocumentMutableBuilder[Self <: IHTMLDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSHTMLDotIHTMLDocument_typekey(value: IHTMLDocument): Self = StObject.set(x, "MSHTML.IHTMLDocument_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotIHTMLDocument_typekey(value: IHTMLDocument): Self = this.set("MSHTML.IHTMLDocument_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScript(value: js.Any): Self = this.set("Script", value.asInstanceOf[js.Any])
+    def setScript(value: js.Any): Self = StObject.set(x, "Script", value.asInstanceOf[js.Any])
   }
 }

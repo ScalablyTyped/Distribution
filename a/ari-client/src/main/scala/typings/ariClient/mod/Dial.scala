@@ -1,6 +1,7 @@
 package typings.ariClient.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,48 +49,36 @@ object Dial {
   }
   
   @scala.inline
-  implicit class DialOps[Self <: Dial] (val x: Self) extends AnyVal {
+  implicit class DialMutableBuilder[Self <: Dial] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaller(value: Channel): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDialstatus(value: String): Self = StObject.set(x, "dialstatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialstatus(value: String): Self = this.set("dialstatus", value.asInstanceOf[js.Any])
+    def setDialstring(value: String): Self = StObject.set(x, "dialstring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeer(value: Channel): Self = this.set("peer", value.asInstanceOf[js.Any])
+    def setDialstringUndefined: Self = StObject.set(x, "dialstring", js.undefined)
     
     @scala.inline
-    def setCaller(value: Channel): Self = this.set("caller", value.asInstanceOf[js.Any])
+    def setForward(value: String): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaller: Self = this.set("caller", js.undefined)
+    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
     @scala.inline
-    def setDialstring(value: String): Self = this.set("dialstring", value.asInstanceOf[js.Any])
+    def setForwarded(value: Channel): Self = StObject.set(x, "forwarded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDialstring: Self = this.set("dialstring", js.undefined)
+    def setForwardedUndefined: Self = StObject.set(x, "forwarded", js.undefined)
     
     @scala.inline
-    def setForward(value: String): Self = this.set("forward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForward: Self = this.set("forward", js.undefined)
-    
-    @scala.inline
-    def setForwarded(value: Channel): Self = this.set("forwarded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForwarded: Self = this.set("forwarded", js.undefined)
+    def setPeer(value: Channel): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
   }
 }

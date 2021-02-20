@@ -2,6 +2,7 @@ package typings.ssh2.mod
 
 import typings.node.Buffer
 import typings.ssh2.ssh2Strings.publickey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,16 +1,15 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Vertices")
 @js.native
-class Vertices () extends js.Object
+class Vertices () extends StObject
 /* static members */
-@JSImport("matter-js", "Vertices")
-@js.native
-object Vertices extends js.Object {
+object Vertices {
   
   /**
     * Returns the area of the set of vertices.
@@ -19,6 +18,8 @@ object Vertices extends js.Object {
     * @param {bool} signed
     * @return {number} The area
     */
+  @JSImport("matter-js", "Vertices.area")
+  @js.native
   def area(vertices: js.Array[Vector], signed: Boolean): Double = js.native
   
   /**
@@ -27,8 +28,12 @@ object Vertices extends js.Object {
     * @param {vertices} vertices
     * @return {vector} The centre point
     */
+  @JSImport("matter-js", "Vertices.centre")
+  @js.native
   def centre(vertices: js.Array[Vector]): Vector = js.native
   
+  @JSImport("matter-js", "Vertices.chamfer")
+  @js.native
   def chamfer(
     vertices: js.Array[Vector],
     radius: js.Array[Double],
@@ -47,6 +52,8 @@ object Vertices extends js.Object {
     * @param {number} qualityMax
     * @return {vertices} vertices
     */
+  @JSImport("matter-js", "Vertices.chamfer")
+  @js.native
   def chamfer(
     vertices: js.Array[Vector],
     radius: Double,
@@ -61,6 +68,8 @@ object Vertices extends js.Object {
     * @param {vertices} vertices
     * @return {vertices} vertices
     */
+  @JSImport("matter-js", "Vertices.clockwiseSort")
+  @js.native
   def clockwiseSort(vertices: js.Array[Vector]): js.Array[Vector] = js.native
   
   /**
@@ -70,6 +79,8 @@ object Vertices extends js.Object {
     * @param {vector} point
     * @return {boolean} True if the vertices contains point, otherwise false
     */
+  @JSImport("matter-js", "Vertices.contains")
+  @js.native
   def contains(vertices: js.Array[Vector], point: Vector): Boolean = js.native
   
   /**
@@ -88,6 +99,8 @@ object Vertices extends js.Object {
     * @param {body} body
     * @return {vertices} vertices
     */
+  @JSImport("matter-js", "Vertices.create")
+  @js.native
   def create(points: js.Array[Vector], body: Body): js.Array[Vector] = js.native
   
   /**
@@ -99,6 +112,8 @@ object Vertices extends js.Object {
     * @param {body} body
     * @return {vertices} vertices
     */
+  @JSImport("matter-js", "Vertices.fromPath")
+  @js.native
   def fromPath(path: String, body: Body): js.Array[Vector] = js.native
   
   /**
@@ -107,6 +122,8 @@ object Vertices extends js.Object {
     * @param {vertices} vertices
     * @return [vertex] vertices
     */
+  @JSImport("matter-js", "Vertices.hull")
+  @js.native
   def hull(vertices: js.Array[Vector]): js.Array[Vector] = js.native
   
   /**
@@ -116,6 +133,8 @@ object Vertices extends js.Object {
     * @param {number} mass
     * @return {number} The polygon's moment of inertia
     */
+  @JSImport("matter-js", "Vertices.inertia")
+  @js.native
   def inertia(vertices: js.Array[Vector], mass: Double): Double = js.native
   
   /**
@@ -124,6 +143,8 @@ object Vertices extends js.Object {
     * @param {vertices} vertices
     * @return {bool} `true` if the `vertices` are convex, `false` if not (or `null` if not computable).
     */
+  @JSImport("matter-js", "Vertices.isConvex")
+  @js.native
   def isConvex(vertices: js.Array[Vector]): Boolean = js.native
   
   /**
@@ -132,6 +153,8 @@ object Vertices extends js.Object {
     * @param {vertices} vertices
     * @return {vector} The average point
     */
+  @JSImport("matter-js", "Vertices.mean")
+  @js.native
   def mean(vertices: js.Array[Vector]): js.Array[Vector] = js.native
   
   /**
@@ -142,6 +165,8 @@ object Vertices extends js.Object {
     * @param {vector} point
     * @return {vertices} vertices
     */
+  @JSImport("matter-js", "Vertices.rotate")
+  @js.native
   def rotate(vertices: js.Array[Vector], angle: Double, point: Vector): js.Array[Vector] = js.native
   
   /**
@@ -153,6 +178,8 @@ object Vertices extends js.Object {
     * @param {vector} point
     * @return {vertices} vertices
     */
+  @JSImport("matter-js", "Vertices.scale")
+  @js.native
   def scale(vertices: js.Array[Vector], scaleX: Double, scaleY: Double, point: Vector): js.Array[Vector] = js.native
   
   /**
@@ -163,5 +190,7 @@ object Vertices extends js.Object {
     * @param {number} scalar
     * @return {vertices} vertices
     */
+  @JSImport("matter-js", "Vertices.translate")
+  @js.native
   def translate(vertices: js.Array[Vector], vector: Vector, scalar: Double): js.Array[Vector] = js.native
 }

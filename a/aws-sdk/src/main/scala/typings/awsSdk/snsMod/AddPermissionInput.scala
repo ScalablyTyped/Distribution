@@ -1,11 +1,12 @@
 package typings.awsSdk.snsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddPermissionInput extends js.Object {
+trait AddPermissionInput extends StObject {
   
   /**
     * The AWS account IDs of the users (principals) who will be given access to the specified actions. The users must have AWS accounts, but do not need to be signed up for this service.
@@ -36,36 +37,24 @@ object AddPermissionInput {
   }
   
   @scala.inline
-  implicit class AddPermissionInputOps[Self <: AddPermissionInput] (val x: Self) extends AnyVal {
+  implicit class AddPermissionInputMutableBuilder[Self <: AddPermissionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAWSAccountId(value: DelegatesList): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAWSAccountIdVarargs(value: delegate*): Self = StObject.set(x, "AWSAccountId", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionName(value: ActionsList): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAWSAccountIdVarargs(value: delegate*): Self = this.set("AWSAccountId", js.Array(value :_*))
+    def setActionNameVarargs(value: action*): Self = StObject.set(x, "ActionName", js.Array(value :_*))
     
     @scala.inline
-    def setAWSAccountId(value: DelegatesList): Self = this.set("AWSAccountId", value.asInstanceOf[js.Any])
+    def setLabel(value: label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionNameVarargs(value: action*): Self = this.set("ActionName", js.Array(value :_*))
-    
-    @scala.inline
-    def setActionName(value: ActionsList): Self = this.set("ActionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: label): Self = this.set("Label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

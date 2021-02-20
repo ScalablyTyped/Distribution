@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFirewallPolicyResponse extends js.Object {
+trait UpdateFirewallPolicyResponse extends StObject {
   
   /**
     * The high-level properties of a firewall policy. This, along with the FirewallPolicy, define the policy. You can retrieve all objects for a firewall policy by calling DescribeFirewallPolicy. 
@@ -26,24 +27,12 @@ object UpdateFirewallPolicyResponse {
   }
   
   @scala.inline
-  implicit class UpdateFirewallPolicyResponseOps[Self <: UpdateFirewallPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateFirewallPolicyResponseMutableBuilder[Self <: UpdateFirewallPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirewallPolicyResponse(value: FirewallPolicyResponse): Self = StObject.set(x, "FirewallPolicyResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFirewallPolicyResponse(value: FirewallPolicyResponse): Self = this.set("FirewallPolicyResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = this.set("UpdateToken", value.asInstanceOf[js.Any])
+    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
   }
 }

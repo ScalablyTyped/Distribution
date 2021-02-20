@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Activation
 
 import typings.winrtUwp.Windows.Devices.Printers.Extensions.PrintTaskConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information in response to the event that is raised when print task settings are activated. */
 @js.native
-trait PrintTaskSettingsActivatedEventArgs extends js.Object {
+trait PrintTaskSettingsActivatedEventArgs extends StObject {
   
   /** Gets the configuration information for the print task. */
   var configuration: PrintTaskConfiguration = js.native
@@ -35,30 +36,18 @@ object PrintTaskSettingsActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class PrintTaskSettingsActivatedEventArgsOps[Self <: PrintTaskSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class PrintTaskSettingsActivatedEventArgsMutableBuilder[Self <: PrintTaskSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: PrintTaskConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: PrintTaskConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

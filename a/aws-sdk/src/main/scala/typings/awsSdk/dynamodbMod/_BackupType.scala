@@ -1,7 +1,8 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _BackupType extends js.Object
+trait _BackupType extends StObject

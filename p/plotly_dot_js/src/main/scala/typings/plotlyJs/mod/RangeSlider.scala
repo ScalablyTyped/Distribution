@@ -1,11 +1,12 @@
 package typings.plotlyJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangeSlider extends js.Object {
+trait RangeSlider extends StObject {
   
   var bgcolor: String = js.native
   
@@ -35,36 +36,24 @@ object RangeSlider {
   }
   
   @scala.inline
-  implicit class RangeSliderOps[Self <: RangeSlider] (val x: Self) extends AnyVal {
+  implicit class RangeSliderMutableBuilder[Self <: RangeSlider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBordercolor(value: String): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgcolor(value: String): Self = this.set("bgcolor", value.asInstanceOf[js.Any])
+    def setRange(value: js.Tuple2[Datum, Datum]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBordercolor(value: String): Self = this.set("bordercolor", value.asInstanceOf[js.Any])
+    def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderwidth(value: Double): Self = this.set("borderwidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: js.Tuple2[Datum, Datum]): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThickness(value: Double): Self = this.set("thickness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

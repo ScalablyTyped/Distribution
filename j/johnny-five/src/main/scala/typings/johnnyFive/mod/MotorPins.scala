@@ -1,11 +1,12 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MotorPins extends js.Object {
+trait MotorPins extends StObject {
   
   var brake: js.UndefOr[Double] = js.native
   
@@ -24,36 +25,24 @@ object MotorPins {
   }
   
   @scala.inline
-  implicit class MotorPinsOps[Self <: MotorPins] (val x: Self) extends AnyVal {
+  implicit class MotorPinsMutableBuilder[Self <: MotorPins] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrake(value: Double): Self = StObject.set(x, "brake", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrakeUndefined: Self = StObject.set(x, "brake", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCdir(value: Double): Self = StObject.set(x, "cdir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: Double): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setCdirUndefined: Self = StObject.set(x, "cdir", js.undefined)
     
     @scala.inline
-    def setPwm(value: Double): Self = this.set("pwm", value.asInstanceOf[js.Any])
+    def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrake(value: Double): Self = this.set("brake", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrake: Self = this.set("brake", js.undefined)
-    
-    @scala.inline
-    def setCdir(value: Double): Self = this.set("cdir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCdir: Self = this.set("cdir", js.undefined)
+    def setPwm(value: Double): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
   }
 }

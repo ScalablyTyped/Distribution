@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Invoice extends js.Object {
+trait Invoice extends StObject {
   
   var currency: String = js.native
   
@@ -32,33 +33,21 @@ object Invoice {
   }
   
   @scala.inline
-  implicit class InvoiceOps[Self <: Invoice] (val x: Self) extends AnyVal {
+  implicit class InvoiceMutableBuilder[Self <: Invoice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart_parameter(value: String): Self = StObject.set(x, "start_parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_parameter(value: String): Self = this.set("start_parameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_amount(value: Double): Self = this.set("total_amount", value.asInstanceOf[js.Any])
+    def setTotal_amount(value: Double): Self = StObject.set(x, "total_amount", value.asInstanceOf[js.Any])
   }
 }

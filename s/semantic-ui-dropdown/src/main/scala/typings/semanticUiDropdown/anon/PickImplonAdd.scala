@@ -1,13 +1,14 @@
 package typings.semanticUiDropdown.anon
 
 import typings.semanticUiDropdown.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'onAdd'> */
 @js.native
-trait PickImplonAdd extends js.Object {
+trait PickImplonAdd extends StObject {
   
   def onAdd(addedValue: js.Any, addedText: String, $addedChoice: JQuery): Unit = js.native
   @JSName("onAdd")

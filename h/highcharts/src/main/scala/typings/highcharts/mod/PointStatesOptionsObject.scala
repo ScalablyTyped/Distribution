@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointStatesOptionsObject extends js.Object {
+trait PointStatesOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock) The hover state for a single point marker.
@@ -41,42 +42,30 @@ object PointStatesOptionsObject {
   }
   
   @scala.inline
-  implicit class PointStatesOptionsObjectOps[Self <: PointStatesOptionsObject] (val x: Self) extends AnyVal {
+  implicit class PointStatesOptionsObjectMutableBuilder[Self <: PointStatesOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHover(value: PointStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInactive(value: PointStatesInactiveOptionsObject): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: PointStatesHoverOptionsObject): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setNormal(value: PointStatesNormalOptionsObject): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactive(value: PointStatesInactiveOptionsObject): Self = this.set("inactive", value.asInstanceOf[js.Any])
+    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
     @scala.inline
-    def deleteInactive: Self = this.set("inactive", js.undefined)
+    def setSelect(value: PointStatesSelectOptionsObject): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: PointStatesNormalOptionsObject): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormal: Self = this.set("normal", js.undefined)
-    
-    @scala.inline
-    def setSelect(value: PointStatesSelectOptionsObject): Self = this.set("select", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

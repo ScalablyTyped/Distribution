@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Count extends js.Object {
+trait Count extends StObject {
   
   var count: Double = js.native
   
@@ -22,39 +23,27 @@ object Count {
   }
   
   @scala.inline
-  implicit class CountOps[Self <: Count] (val x: Self) extends AnyVal {
+  implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangeData(value: js.Array[EndOffset]): Self = StObject.set(x, "rangeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRangeDataUndefined: Self = StObject.set(x, "rangeData", js.undefined)
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setRangeDataVarargs(value: EndOffset*): Self = StObject.set(x, "rangeData", js.Array(value :_*))
     
     @scala.inline
-    def setRangeDataVarargs(value: EndOffset*): Self = this.set("rangeData", js.Array(value :_*))
+    def setRectData(value: js.Array[RectsAndTexts]): Self = StObject.set(x, "rectData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeData(value: js.Array[EndOffset]): Self = this.set("rangeData", value.asInstanceOf[js.Any])
+    def setRectDataUndefined: Self = StObject.set(x, "rectData", js.undefined)
     
     @scala.inline
-    def deleteRangeData: Self = this.set("rangeData", js.undefined)
-    
-    @scala.inline
-    def setRectDataVarargs(value: RectsAndTexts*): Self = this.set("rectData", js.Array(value :_*))
-    
-    @scala.inline
-    def setRectData(value: js.Array[RectsAndTexts]): Self = this.set("rectData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRectData: Self = this.set("rectData", js.undefined)
+    def setRectDataVarargs(value: RectsAndTexts*): Self = StObject.set(x, "rectData", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsiveContainerProps extends js.Object {
+trait ResponsiveContainerProps extends StObject {
   
   var aspect: js.UndefOr[Double] = js.native
   
@@ -37,78 +38,66 @@ object ResponsiveContainerProps {
   }
   
   @scala.inline
-  implicit class ResponsiveContainerPropsOps[Self <: ResponsiveContainerProps] (val x: Self) extends AnyVal {
+  implicit class ResponsiveContainerPropsMutableBuilder[Self <: ResponsiveContainerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspect(value: Double): Self = this.set("aspect", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteAspect: Self = this.set("aspect", js.undefined)
+    def setClassName(value: String | Double): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String | Double): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebounce(value: Double): Self = this.set("debounce", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDebounce: Self = this.set("debounce", js.undefined)
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMaxHeight(value: String | Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMinHeight(value: String | Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: String | Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setMinWidth(value: String | Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHeight(value: String | Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: String | Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

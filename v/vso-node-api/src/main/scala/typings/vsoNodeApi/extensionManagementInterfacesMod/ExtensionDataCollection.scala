@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionDataCollection extends js.Object {
+trait ExtensionDataCollection extends StObject {
   
   /**
     * The name of the collection
@@ -36,33 +37,21 @@ object ExtensionDataCollection {
   }
   
   @scala.inline
-  implicit class ExtensionDataCollectionOps[Self <: ExtensionDataCollection] (val x: Self) extends AnyVal {
+  implicit class ExtensionDataCollectionMutableBuilder[Self <: ExtensionDataCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocuments(value: js.Array[_]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentsVarargs(value: js.Any*): Self = StObject.set(x, "documents", js.Array(value :_*))
     
     @scala.inline
-    def setCollectionName(value: String): Self = this.set("collectionName", value.asInstanceOf[js.Any])
+    def setScopeType(value: String): Self = StObject.set(x, "scopeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentsVarargs(value: js.Any*): Self = this.set("documents", js.Array(value :_*))
-    
-    @scala.inline
-    def setDocuments(value: js.Array[_]): Self = this.set("documents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeType(value: String): Self = this.set("scopeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeValue(value: String): Self = this.set("scopeValue", value.asInstanceOf[js.Any])
+    def setScopeValue(value: String): Self = StObject.set(x, "scopeValue", value.asInstanceOf[js.Any])
   }
 }

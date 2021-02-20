@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationFilter extends js.Object {
+trait OperationFilter extends StObject {
   
   /**
     * The operator that you want to use to determine whether an operation matches the specified value. Valid values for condition include:    EQ: When you specify EQ for the condition, you can specify only one value. EQ is supported for NAMESPACE_ID, SERVICE_ID, STATUS, and TYPE. EQ is the default condition and can be omitted.    IN: When you specify IN for the condition, you can specify a list of one or more values. IN is supported for STATUS and TYPE. An operation must match one of the specified values to be returned in the response.    BETWEEN: Specify a start date and an end date in Unix date/time format and Coordinated Universal Time (UTC). The start date must be the first value. BETWEEN is supported for UPDATE_DATE.   
@@ -31,33 +32,21 @@ object OperationFilter {
   }
   
   @scala.inline
-  implicit class OperationFilterOps[Self <: OperationFilter] (val x: Self) extends AnyVal {
+  implicit class OperationFilterMutableBuilder[Self <: OperationFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: FilterCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: OperationFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: OperationFilterName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuesVarargs(value: FilterValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: FilterValues): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCondition(value: FilterCondition): Self = this.set("Condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("Condition", js.undefined)
+    def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

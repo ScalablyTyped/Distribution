@@ -1,11 +1,12 @@
 package typings.googleapis.dnsV1beta2Mod.dnsV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPolicyAlternativeNameServerConfig extends js.Object {
+trait SchemaPolicyAlternativeNameServerConfig extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -24,33 +25,21 @@ object SchemaPolicyAlternativeNameServerConfig {
   }
   
   @scala.inline
-  implicit class SchemaPolicyAlternativeNameServerConfigOps[Self <: SchemaPolicyAlternativeNameServerConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaPolicyAlternativeNameServerConfigMutableBuilder[Self <: SchemaPolicyAlternativeNameServerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetNameServers(value: js.Array[SchemaPolicyAlternativeNameServerConfigTargetNameServer]): Self = StObject.set(x, "targetNameServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setTargetNameServersUndefined: Self = StObject.set(x, "targetNameServers", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setTargetNameServersVarargs(value: SchemaPolicyAlternativeNameServerConfigTargetNameServer*): Self = this.set("targetNameServers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetNameServers(value: js.Array[SchemaPolicyAlternativeNameServerConfigTargetNameServer]): Self = this.set("targetNameServers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetNameServers: Self = this.set("targetNameServers", js.undefined)
+    def setTargetNameServersVarargs(value: SchemaPolicyAlternativeNameServerConfigTargetNameServer*): Self = StObject.set(x, "targetNameServers", js.Array(value :_*))
   }
 }

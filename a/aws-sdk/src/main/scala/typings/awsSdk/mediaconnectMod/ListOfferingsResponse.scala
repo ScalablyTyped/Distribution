@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOfferingsResponse extends js.Object {
+trait ListOfferingsResponse extends StObject {
   
   /**
     * The token that identifies which batch of results that you want to see. For example, you submit a ListOfferings request with MaxResults set at 5. The service returns the first batch of results (up to 5) and a NextToken value. To see the next batch of results, you can submit the ListOfferings request a second time and specify the NextToken value.
@@ -26,33 +27,21 @@ object ListOfferingsResponse {
   }
   
   @scala.inline
-  implicit class ListOfferingsResponseOps[Self <: ListOfferingsResponse] (val x: Self) extends AnyVal {
+  implicit class ListOfferingsResponseMutableBuilder[Self <: ListOfferingsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOfferings(value: listOfOffering): Self = StObject.set(x, "Offerings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setOfferingsUndefined: Self = StObject.set(x, "Offerings", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setOfferingsVarargs(value: Offering*): Self = this.set("Offerings", js.Array(value :_*))
-    
-    @scala.inline
-    def setOfferings(value: listOfOffering): Self = this.set("Offerings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfferings: Self = this.set("Offerings", js.undefined)
+    def setOfferingsVarargs(value: Offering*): Self = StObject.set(x, "Offerings", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateEmbeddedObjectPositionRequest extends js.Object {
+trait UpdateEmbeddedObjectPositionRequest extends StObject {
   
   /**
     * The fields of OverlayPosition that should be updated when setting a new position. Used only if newPosition.overlayPosition is set, in which case at least one field must be
@@ -31,36 +32,24 @@ object UpdateEmbeddedObjectPositionRequest {
   }
   
   @scala.inline
-  implicit class UpdateEmbeddedObjectPositionRequestOps[Self <: UpdateEmbeddedObjectPositionRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateEmbeddedObjectPositionRequestMutableBuilder[Self <: UpdateEmbeddedObjectPositionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewPosition(value: EmbeddedObjectPosition): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setNewPositionUndefined: Self = StObject.set(x, "newPosition", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPosition(value: EmbeddedObjectPosition): Self = this.set("newPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewPosition: Self = this.set("newPosition", js.undefined)
-    
-    @scala.inline
-    def setObjectId(value: Double): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

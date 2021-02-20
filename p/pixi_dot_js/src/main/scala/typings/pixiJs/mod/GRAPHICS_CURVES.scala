@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,15 +20,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} minSegments=8 - minimal number of segments in the curve (if adaptive = false, ignored)
   * @property {number} maxSegments=2048 - maximal number of segments in the curve (if adaptive = false, ignored)
   */
-@JSImport("pixi.js", "GRAPHICS_CURVES")
-@js.native
-object GRAPHICS_CURVES extends js.Object {
+object GRAPHICS_CURVES {
   
-  var adaptive: Boolean = js.native
+  @JSImport("pixi.js", "GRAPHICS_CURVES")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var maxLength: Double = js.native
+  @JSImport("pixi.js", "GRAPHICS_CURVES.adaptive")
+  @js.native
+  def adaptive: Boolean = js.native
+  @scala.inline
+  def adaptive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adaptive")(x.asInstanceOf[js.Any])
   
-  var maxSegments: Double = js.native
+  @JSImport("pixi.js", "GRAPHICS_CURVES.maxLength")
+  @js.native
+  def maxLength: Double = js.native
+  @scala.inline
+  def maxLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLength")(x.asInstanceOf[js.Any])
   
-  var minSegments: Double = js.native
+  @JSImport("pixi.js", "GRAPHICS_CURVES.maxSegments")
+  @js.native
+  def maxSegments: Double = js.native
+  @scala.inline
+  def maxSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSegments")(x.asInstanceOf[js.Any])
+  
+  @JSImport("pixi.js", "GRAPHICS_CURVES.minSegments")
+  @js.native
+  def minSegments: Double = js.native
+  @scala.inline
+  def minSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minSegments")(x.asInstanceOf[js.Any])
 }

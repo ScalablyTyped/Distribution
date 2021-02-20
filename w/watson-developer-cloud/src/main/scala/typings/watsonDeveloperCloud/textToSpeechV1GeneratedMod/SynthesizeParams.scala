@@ -1,13 +1,14 @@
 package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
 import typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.SynthesizeConstants.Accept
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `synthesize` operation. */
 @js.native
-trait SynthesizeParams extends js.Object {
+trait SynthesizeParams extends StObject {
   
   /** The requested format (MIME type) of the audio. You can use the `Accept` header or the `accept` parameter to specify the audio format. For more information about specifying an audio format, see **Audio formats (accept types)** in the method description. Default: `audio/ogg;codecs=opus`. */
   var accept: js.UndefOr[Accept | String] = js.native
@@ -36,51 +37,39 @@ object SynthesizeParams {
   }
   
   @scala.inline
-  implicit class SynthesizeParamsOps[Self <: SynthesizeParams] (val x: Self) extends AnyVal {
+  implicit class SynthesizeParamsMutableBuilder[Self <: SynthesizeParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: Accept | String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setCustomization_idUndefined: Self = StObject.set(x, "customization_id", js.undefined)
     
     @scala.inline
-    def setAccept(value: Accept | String): Self = this.set("accept", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccept: Self = this.set("accept", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setCustomization_id(value: String): Self = this.set("customization_id", value.asInstanceOf[js.Any])
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomization_id: Self = this.set("customization_id", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setVoice(value: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.SynthesizeConstants.Voice | String): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
-    
-    @scala.inline
-    def setVoice(value: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.SynthesizeConstants.Voice | String): Self = this.set("voice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoice: Self = this.set("voice", js.undefined)
+    def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
   }
 }

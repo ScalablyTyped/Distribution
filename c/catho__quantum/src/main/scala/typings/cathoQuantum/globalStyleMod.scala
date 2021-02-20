@@ -2,19 +2,21 @@ package typings.cathoQuantum
 
 import typings.react.mod.Component
 import typings.react.mod.FC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@catho/quantum/GlobalStyle", JSImport.Namespace)
-@js.native
-object globalStyleMod extends js.Object {
+object globalStyleMod {
   
-  val Typography: FC[js.Object] = js.native
-  
+  @JSImport("@catho/quantum/GlobalStyle", JSImport.Default)
   @js.native
   class default ()
     extends Component[js.Object, js.Object, js.Any]
+  
+  @JSImport("@catho/quantum/GlobalStyle", "Typography")
+  @js.native
+  val Typography: FC[js.Object] = js.native
   
   type GlobalStyle = Component[js.Object, js.Object, js.Any]
 }

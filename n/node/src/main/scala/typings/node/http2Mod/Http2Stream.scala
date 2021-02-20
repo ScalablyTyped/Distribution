@@ -9,6 +9,7 @@ import typings.node.nodeStrings.timeout
 import typings.node.nodeStrings.trailers
 import typings.node.nodeStrings.wantTrailers
 import typings.node.streamMod.Duplex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

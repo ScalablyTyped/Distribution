@@ -2,6 +2,7 @@ package typings.kendoUi.global.kendo.mobile.ui
 
 import typings.kendoUi.kendo.mobile.ui.ListViewOptions
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,21 @@ class ListView protected ()
   def this(element: Element) = this()
   def this(element: Element, options: ListViewOptions) = this()
 }
-/* static members */
-@JSGlobal("kendo.mobile.ui.ListView")
-@js.native
-object ListView extends js.Object {
+object ListView {
   
+  @JSGlobal("kendo.mobile.ui.ListView")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("kendo.mobile.ui.ListView.extend")
+  @js.native
   def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.ListView = js.native
   
-  var fn: typings.kendoUi.kendo.mobile.ui.ListView = js.native
+  /* static member */
+  @JSGlobal("kendo.mobile.ui.ListView.fn")
+  @js.native
+  def fn: typings.kendoUi.kendo.mobile.ui.ListView = js.native
+  @scala.inline
+  def fn_=(x: typings.kendoUi.kendo.mobile.ui.ListView): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

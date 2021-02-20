@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LookupResponse extends js.Object {
+trait LookupResponse extends StObject {
   
   /** A list of keys that were not looked up due to resource constraints. The order of results in this field is undefined and has no relation to the order of the keys in the input. */
   var deferred: js.UndefOr[js.Array[Key]] = js.native
@@ -25,45 +26,33 @@ object LookupResponse {
   }
   
   @scala.inline
-  implicit class LookupResponseOps[Self <: LookupResponse] (val x: Self) extends AnyVal {
+  implicit class LookupResponseMutableBuilder[Self <: LookupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeferred(value: js.Array[Key]): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeferredVarargs(value: Key*): Self = StObject.set(x, "deferred", js.Array(value :_*))
     
     @scala.inline
-    def setDeferredVarargs(value: Key*): Self = this.set("deferred", js.Array(value :_*))
+    def setFound(value: js.Array[EntityResult]): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferred(value: js.Array[Key]): Self = this.set("deferred", value.asInstanceOf[js.Any])
+    def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
     
     @scala.inline
-    def deleteDeferred: Self = this.set("deferred", js.undefined)
+    def setFoundVarargs(value: EntityResult*): Self = StObject.set(x, "found", js.Array(value :_*))
     
     @scala.inline
-    def setFoundVarargs(value: EntityResult*): Self = this.set("found", js.Array(value :_*))
+    def setMissing(value: js.Array[EntityResult]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFound(value: js.Array[EntityResult]): Self = this.set("found", value.asInstanceOf[js.Any])
+    def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
     
     @scala.inline
-    def deleteFound: Self = this.set("found", js.undefined)
-    
-    @scala.inline
-    def setMissingVarargs(value: EntityResult*): Self = this.set("missing", js.Array(value :_*))
-    
-    @scala.inline
-    def setMissing(value: js.Array[EntityResult]): Self = this.set("missing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMissing: Self = this.set("missing", js.undefined)
+    def setMissingVarargs(value: EntityResult*): Self = StObject.set(x, "missing", js.Array(value :_*))
   }
 }

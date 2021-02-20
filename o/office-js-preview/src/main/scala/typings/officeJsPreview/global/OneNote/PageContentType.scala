@@ -1,5 +1,6 @@
 package typings.officeJsPreview.global.OneNote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OneNote.PageContentType")
 @js.native
-object PageContentType extends js.Object {
+object PageContentType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.OneNote.PageContentType with String] = js.native

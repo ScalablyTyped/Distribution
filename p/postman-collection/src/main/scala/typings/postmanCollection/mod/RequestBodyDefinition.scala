@@ -1,6 +1,7 @@
 package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.SrcString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,51 +28,39 @@ object RequestBodyDefinition {
   }
   
   @scala.inline
-  implicit class RequestBodyDefinitionOps[Self <: RequestBodyDefinition] (val x: Self) extends AnyVal {
+  implicit class RequestBodyDefinitionMutableBuilder[Self <: RequestBodyDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile(value: String | SrcString): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormdata(value: js.Array[FormParamDefinition] | PropertyList[FormParam]): Self = StObject.set(x, "formdata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setFormdataUndefined: Self = StObject.set(x, "formdata", js.undefined)
     
     @scala.inline
-    def setFile(value: String | SrcString): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setFormdataVarargs(value: FormParamDefinition*): Self = StObject.set(x, "formdata", js.Array(value :_*))
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormdataVarargs(value: FormParamDefinition*): Self = this.set("formdata", js.Array(value :_*))
+    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormdata(value: js.Array[FormParamDefinition] | PropertyList[FormParam]): Self = this.set("formdata", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deleteFormdata: Self = this.set("formdata", js.undefined)
+    def setUrlencoded(value: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setUrlencodedUndefined: Self = StObject.set(x, "urlencoded", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
-    
-    @scala.inline
-    def setUrlencodedVarargs(value: QueryParamDefinition*): Self = this.set("urlencoded", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrlencoded(value: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String): Self = this.set("urlencoded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlencoded: Self = this.set("urlencoded", js.undefined)
+    def setUrlencodedVarargs(value: QueryParamDefinition*): Self = StObject.set(x, "urlencoded", js.Array(value :_*))
   }
 }

@@ -5,12 +5,13 @@ import typings.cesium.mod.Camera.FlightCompleteCallback
 import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.EasingFunction
 import typings.cesium.mod.Matrix4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cancel extends js.Object {
+trait Cancel extends StObject {
   
   var cancel: js.UndefOr[FlightCancelledCallback] = js.native
   
@@ -45,87 +46,75 @@ object Cancel {
   }
   
   @scala.inline
-  implicit class CancelOps[Self <: Cancel] (val x: Self) extends AnyVal {
+  implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestination(value: Cartesian3 | typings.cesium.mod.Rectangle): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setDestination(value: Cartesian3 | typings.cesium.mod.Rectangle): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteConvert: Self = this.set("convert", js.undefined)
+    def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingFunctionUndefined: Self = StObject.set(x, "easingFunction", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setEndTransform(value: Matrix4): Self = StObject.set(x, "endTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasingFunction(value: EasingFunction): Self = this.set("easingFunction", value.asInstanceOf[js.Any])
+    def setEndTransformUndefined: Self = StObject.set(x, "endTransform", js.undefined)
     
     @scala.inline
-    def deleteEasingFunction: Self = this.set("easingFunction", js.undefined)
+    def setFlyOverLongitude(value: Double): Self = StObject.set(x, "flyOverLongitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTransform(value: Matrix4): Self = this.set("endTransform", value.asInstanceOf[js.Any])
+    def setFlyOverLongitudeUndefined: Self = StObject.set(x, "flyOverLongitude", js.undefined)
     
     @scala.inline
-    def deleteEndTransform: Self = this.set("endTransform", js.undefined)
+    def setFlyOverLongitudeWeight(value: Double): Self = StObject.set(x, "flyOverLongitudeWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlyOverLongitude(value: Double): Self = this.set("flyOverLongitude", value.asInstanceOf[js.Any])
+    def setFlyOverLongitudeWeightUndefined: Self = StObject.set(x, "flyOverLongitudeWeight", js.undefined)
     
     @scala.inline
-    def deleteFlyOverLongitude: Self = this.set("flyOverLongitude", js.undefined)
+    def setMaximumHeight(value: Double): Self = StObject.set(x, "maximumHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlyOverLongitudeWeight(value: Double): Self = this.set("flyOverLongitudeWeight", value.asInstanceOf[js.Any])
+    def setMaximumHeightUndefined: Self = StObject.set(x, "maximumHeight", js.undefined)
     
     @scala.inline
-    def deleteFlyOverLongitudeWeight: Self = this.set("flyOverLongitudeWeight", js.undefined)
+    def setOrientation(value: Direction | Heading): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumHeight(value: Double): Self = this.set("maximumHeight", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMaximumHeight: Self = this.set("maximumHeight", js.undefined)
+    def setPitchAdjustHeight(value: Double): Self = StObject.set(x, "pitchAdjustHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Direction | Heading): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
-    
-    @scala.inline
-    def setPitchAdjustHeight(value: Double): Self = this.set("pitchAdjustHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePitchAdjustHeight: Self = this.set("pitchAdjustHeight", js.undefined)
+    def setPitchAdjustHeightUndefined: Self = StObject.set(x, "pitchAdjustHeight", js.undefined)
   }
 }

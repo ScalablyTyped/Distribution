@@ -5,32 +5,44 @@ import typings.officeUiFabricReact.anon.ReadonlyIPanelProps
 import typings.officeUiFabricReact.anon.ReadonlyIPanelState
 import typings.officeUiFabricReact.panelTypesMod.IPanelProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Panel", JSImport.Namespace)
-@js.native
-object libPanelMod extends js.Object {
+object libPanelMod {
   
+  @JSImport("office-ui-fabric-react/lib/Panel", "Panel")
+  @js.native
   val Panel: FunctionComponent[IPanelProps] = js.native
   
+  @JSImport("office-ui-fabric-react/lib/Panel", "PanelBase")
   @js.native
   class PanelBase protected ()
     extends typings.officeUiFabricReact.panelMod.PanelBase {
     def this(props: IPanelProps) = this()
   }
   /* static members */
-  @js.native
-  object PanelBase extends js.Object {
+  object PanelBase {
     
-    var defaultProps: IPanelProps = js.native
+    @JSImport("office-ui-fabric-react/lib/Panel", "PanelBase")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSImport("office-ui-fabric-react/lib/Panel", "PanelBase.defaultProps")
+    @js.native
+    def defaultProps: IPanelProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IPanelProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("office-ui-fabric-react/lib/Panel", "PanelBase.getDerivedStateFromProps")
+    @js.native
     def getDerivedStateFromProps(nextProps: ReadonlyIPanelProps, prevState: ReadonlyIPanelState): PartialIPanelState | Null = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/Panel", "PanelType")
   @js.native
-  object PanelType extends js.Object {
+  object PanelType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.panelTypesMod.PanelType with Double] = js.native
@@ -54,8 +66,9 @@ object libPanelMod extends js.Object {
     /* 0 */ val smallFluid: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFluid with Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/Panel", "PanelVisibilityState")
   @js.native
-  object PanelVisibilityState extends js.Object {
+  object PanelVisibilityState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState with Double] = js.native

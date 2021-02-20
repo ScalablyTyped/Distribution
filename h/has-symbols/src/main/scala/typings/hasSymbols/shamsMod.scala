@@ -1,12 +1,13 @@
 package typings.hasSymbols
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("has-symbols/shams", JSImport.Namespace)
-@js.native
-object shamsMod extends js.Object {
+object shamsMod {
   
+  @JSImport("has-symbols/shams", JSImport.Namespace)
+  @js.native
   def apply(): Boolean = js.native
 }

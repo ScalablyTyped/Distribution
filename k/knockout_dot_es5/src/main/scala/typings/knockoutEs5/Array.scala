@@ -1,11 +1,12 @@
 package typings.knockoutEs5
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Array[T] extends js.Object {
+trait Array[T] extends StObject {
   
   def destroy(item: T): Unit = js.native
   

@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.warn
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,27 +43,15 @@ object configLog {
   }
   
   @scala.inline
-  implicit class configLogOps[Self <: configLog] (val x: Self) extends AnyVal {
+  implicit class configLogMutableBuilder[Self <: configLog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterceptors(value: js.Array[LogInterceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterceptorsVarargs(value: LogInterceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInterceptorsVarargs(value: LogInterceptor*): Self = this.set("interceptors", js.Array(value :_*))
-    
-    @scala.inline
-    def setInterceptors(value: js.Array[LogInterceptor]): Self = this.set("interceptors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevel(value: none | error | warn | info): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLevel(value: none | error | warn | info): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

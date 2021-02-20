@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the physical location of a device in its enclosure. */
 @js.native
-trait EnclosureLocation extends js.Object {
+trait EnclosureLocation extends StObject {
   
   /** Indicates whether the device is physically located in the docking station of the portable computer. */
   var inDock: Boolean = js.native
@@ -26,27 +27,15 @@ object EnclosureLocation {
   }
   
   @scala.inline
-  implicit class EnclosureLocationOps[Self <: EnclosureLocation] (val x: Self) extends AnyVal {
+  implicit class EnclosureLocationMutableBuilder[Self <: EnclosureLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInDock(value: Boolean): Self = StObject.set(x, "inDock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInLid(value: Boolean): Self = StObject.set(x, "inLid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInDock(value: Boolean): Self = this.set("inDock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInLid(value: Boolean): Self = this.set("inLid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPanel(value: Panel): Self = this.set("panel", value.asInstanceOf[js.Any])
+    def setPanel(value: Panel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
   }
 }

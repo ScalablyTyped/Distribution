@@ -5,33 +5,39 @@ import typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo.ElectionsRe
 import typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo.RepresentativesResource
 import typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.civicinfo
 import typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.v2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Google Civic Information API v2 */
-      def load(name: civicinfo, version: v2): js.Thenable[Unit] = js.native
-      def load(name: civicinfo, version: v2, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object civicinfo extends js.Object {
+      object civicinfo {
         
+        @JSGlobal("gapi.client.civicinfo.divisions")
+        @js.native
         val divisions: DivisionsResource = js.native
         
+        @JSGlobal("gapi.client.civicinfo.elections")
+        @js.native
         val elections: ElectionsResource = js.native
         
+        @JSGlobal("gapi.client.civicinfo.representatives")
+        @js.native
         val representatives: RepresentativesResource = js.native
       }
+      
+      /** Load Google Civic Information API v2 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: civicinfo, version: v2): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: civicinfo, version: v2, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

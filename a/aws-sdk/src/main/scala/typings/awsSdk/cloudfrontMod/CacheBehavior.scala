@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheBehavior extends js.Object {
+trait CacheBehavior extends StObject {
   
   var AllowedMethods: js.UndefOr[typings.awsSdk.cloudfrontMod.AllowedMethods] = js.native
   
@@ -98,111 +99,99 @@ object CacheBehavior {
   }
   
   @scala.inline
-  implicit class CacheBehaviorOps[Self <: CacheBehavior] (val x: Self) extends AnyVal {
+  implicit class CacheBehaviorMutableBuilder[Self <: CacheBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedMethods(value: AllowedMethods): Self = StObject.set(x, "AllowedMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedMethodsUndefined: Self = StObject.set(x, "AllowedMethods", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCachePolicyId(value: String): Self = StObject.set(x, "CachePolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathPattern(value: String): Self = this.set("PathPattern", value.asInstanceOf[js.Any])
+    def setCachePolicyIdUndefined: Self = StObject.set(x, "CachePolicyId", js.undefined)
     
     @scala.inline
-    def setTargetOriginId(value: String): Self = this.set("TargetOriginId", value.asInstanceOf[js.Any])
+    def setCompress(value: Boolean): Self = StObject.set(x, "Compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewerProtocolPolicy(value: ViewerProtocolPolicy): Self = this.set("ViewerProtocolPolicy", value.asInstanceOf[js.Any])
+    def setCompressUndefined: Self = StObject.set(x, "Compress", js.undefined)
     
     @scala.inline
-    def setAllowedMethods(value: AllowedMethods): Self = this.set("AllowedMethods", value.asInstanceOf[js.Any])
+    def setDefaultTTL(value: long): Self = StObject.set(x, "DefaultTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowedMethods: Self = this.set("AllowedMethods", js.undefined)
+    def setDefaultTTLUndefined: Self = StObject.set(x, "DefaultTTL", js.undefined)
     
     @scala.inline
-    def setCachePolicyId(value: String): Self = this.set("CachePolicyId", value.asInstanceOf[js.Any])
+    def setFieldLevelEncryptionId(value: String): Self = StObject.set(x, "FieldLevelEncryptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCachePolicyId: Self = this.set("CachePolicyId", js.undefined)
+    def setFieldLevelEncryptionIdUndefined: Self = StObject.set(x, "FieldLevelEncryptionId", js.undefined)
     
     @scala.inline
-    def setCompress(value: Boolean): Self = this.set("Compress", value.asInstanceOf[js.Any])
+    def setForwardedValues(value: ForwardedValues): Self = StObject.set(x, "ForwardedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompress: Self = this.set("Compress", js.undefined)
+    def setForwardedValuesUndefined: Self = StObject.set(x, "ForwardedValues", js.undefined)
     
     @scala.inline
-    def setDefaultTTL(value: long): Self = this.set("DefaultTTL", value.asInstanceOf[js.Any])
+    def setLambdaFunctionAssociations(value: LambdaFunctionAssociations): Self = StObject.set(x, "LambdaFunctionAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultTTL: Self = this.set("DefaultTTL", js.undefined)
+    def setLambdaFunctionAssociationsUndefined: Self = StObject.set(x, "LambdaFunctionAssociations", js.undefined)
     
     @scala.inline
-    def setFieldLevelEncryptionId(value: String): Self = this.set("FieldLevelEncryptionId", value.asInstanceOf[js.Any])
+    def setMaxTTL(value: long): Self = StObject.set(x, "MaxTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldLevelEncryptionId: Self = this.set("FieldLevelEncryptionId", js.undefined)
+    def setMaxTTLUndefined: Self = StObject.set(x, "MaxTTL", js.undefined)
     
     @scala.inline
-    def setForwardedValues(value: ForwardedValues): Self = this.set("ForwardedValues", value.asInstanceOf[js.Any])
+    def setMinTTL(value: long): Self = StObject.set(x, "MinTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForwardedValues: Self = this.set("ForwardedValues", js.undefined)
+    def setMinTTLUndefined: Self = StObject.set(x, "MinTTL", js.undefined)
     
     @scala.inline
-    def setLambdaFunctionAssociations(value: LambdaFunctionAssociations): Self = this.set("LambdaFunctionAssociations", value.asInstanceOf[js.Any])
+    def setOriginRequestPolicyId(value: String): Self = StObject.set(x, "OriginRequestPolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLambdaFunctionAssociations: Self = this.set("LambdaFunctionAssociations", js.undefined)
+    def setOriginRequestPolicyIdUndefined: Self = StObject.set(x, "OriginRequestPolicyId", js.undefined)
     
     @scala.inline
-    def setMaxTTL(value: long): Self = this.set("MaxTTL", value.asInstanceOf[js.Any])
+    def setPathPattern(value: String): Self = StObject.set(x, "PathPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxTTL: Self = this.set("MaxTTL", js.undefined)
+    def setRealtimeLogConfigArn(value: String): Self = StObject.set(x, "RealtimeLogConfigArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTTL(value: long): Self = this.set("MinTTL", value.asInstanceOf[js.Any])
+    def setRealtimeLogConfigArnUndefined: Self = StObject.set(x, "RealtimeLogConfigArn", js.undefined)
     
     @scala.inline
-    def deleteMinTTL: Self = this.set("MinTTL", js.undefined)
+    def setSmoothStreaming(value: Boolean): Self = StObject.set(x, "SmoothStreaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginRequestPolicyId(value: String): Self = this.set("OriginRequestPolicyId", value.asInstanceOf[js.Any])
+    def setSmoothStreamingUndefined: Self = StObject.set(x, "SmoothStreaming", js.undefined)
     
     @scala.inline
-    def deleteOriginRequestPolicyId: Self = this.set("OriginRequestPolicyId", js.undefined)
+    def setTargetOriginId(value: String): Self = StObject.set(x, "TargetOriginId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealtimeLogConfigArn(value: String): Self = this.set("RealtimeLogConfigArn", value.asInstanceOf[js.Any])
+    def setTrustedKeyGroups(value: TrustedKeyGroups): Self = StObject.set(x, "TrustedKeyGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRealtimeLogConfigArn: Self = this.set("RealtimeLogConfigArn", js.undefined)
+    def setTrustedKeyGroupsUndefined: Self = StObject.set(x, "TrustedKeyGroups", js.undefined)
     
     @scala.inline
-    def setSmoothStreaming(value: Boolean): Self = this.set("SmoothStreaming", value.asInstanceOf[js.Any])
+    def setTrustedSigners(value: TrustedSigners): Self = StObject.set(x, "TrustedSigners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmoothStreaming: Self = this.set("SmoothStreaming", js.undefined)
+    def setTrustedSignersUndefined: Self = StObject.set(x, "TrustedSigners", js.undefined)
     
     @scala.inline
-    def setTrustedKeyGroups(value: TrustedKeyGroups): Self = this.set("TrustedKeyGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustedKeyGroups: Self = this.set("TrustedKeyGroups", js.undefined)
-    
-    @scala.inline
-    def setTrustedSigners(value: TrustedSigners): Self = this.set("TrustedSigners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustedSigners: Self = this.set("TrustedSigners", js.undefined)
+    def setViewerProtocolPolicy(value: ViewerProtocolPolicy): Self = StObject.set(x, "ViewerProtocolPolicy", value.asInstanceOf[js.Any])
   }
 }

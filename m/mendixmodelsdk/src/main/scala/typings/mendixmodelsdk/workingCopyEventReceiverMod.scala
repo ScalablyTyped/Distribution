@@ -5,16 +5,16 @@ import typings.mendixmodelsdk.anon.HandleError
 import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
 import typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent
 import typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/working-copy-events/WorkingCopyEventReceiver", JSImport.Namespace)
-@js.native
-object workingCopyEventReceiverMod extends js.Object {
+object workingCopyEventReceiverMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/working-copy-events/WorkingCopyEventReceiver", "WorkingCopyEventReceiver")
   @js.native
-  class WorkingCopyEventReceiver protected () extends js.Object {
+  class WorkingCopyEventReceiver protected () extends StObject {
     def this(workingCopyId: String, client: IModelServerClient, errorHandler: HandleError) = this()
     
     var buildResultEventEmitter: js.Any = js.native
@@ -23,7 +23,7 @@ object workingCopyEventReceiverMod extends js.Object {
     
     var errorHandler: js.Any = js.native
     
-    var eventSource: ^  | Null = js.native
+    var eventSource: ^ | Null = js.native
     
     def isRunning: Boolean = js.native
     

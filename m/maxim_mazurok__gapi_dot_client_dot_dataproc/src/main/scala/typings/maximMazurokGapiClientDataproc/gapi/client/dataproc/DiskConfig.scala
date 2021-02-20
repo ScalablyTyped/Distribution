@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiskConfig extends js.Object {
+trait DiskConfig extends StObject {
   
   /** Optional. Size in GB of the boot disk (default is 500GB). */
   var bootDiskSizeGb: js.UndefOr[Double] = js.native
@@ -29,36 +30,24 @@ object DiskConfig {
   }
   
   @scala.inline
-  implicit class DiskConfigOps[Self <: DiskConfig] (val x: Self) extends AnyVal {
+  implicit class DiskConfigMutableBuilder[Self <: DiskConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBootDiskSizeGbUndefined: Self = StObject.set(x, "bootDiskSizeGb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBootDiskType(value: String): Self = StObject.set(x, "bootDiskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootDiskSizeGb(value: Double): Self = this.set("bootDiskSizeGb", value.asInstanceOf[js.Any])
+    def setBootDiskTypeUndefined: Self = StObject.set(x, "bootDiskType", js.undefined)
     
     @scala.inline
-    def deleteBootDiskSizeGb: Self = this.set("bootDiskSizeGb", js.undefined)
+    def setNumLocalSsds(value: Double): Self = StObject.set(x, "numLocalSsds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootDiskType(value: String): Self = this.set("bootDiskType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBootDiskType: Self = this.set("bootDiskType", js.undefined)
-    
-    @scala.inline
-    def setNumLocalSsds(value: Double): Self = this.set("numLocalSsds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumLocalSsds: Self = this.set("numLocalSsds", js.undefined)
+    def setNumLocalSsdsUndefined: Self = StObject.set(x, "numLocalSsds", js.undefined)
   }
 }

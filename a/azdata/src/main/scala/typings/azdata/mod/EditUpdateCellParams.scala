@@ -1,5 +1,6 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object EditUpdateCellParams {
   }
   
   @scala.inline
-  implicit class EditUpdateCellParamsOps[Self <: EditUpdateCellParams] (val x: Self) extends AnyVal {
+  implicit class EditUpdateCellParamsMutableBuilder[Self <: EditUpdateCellParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumnId(value: Double): Self = this.set("columnId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewValue(value: String): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
   }
 }

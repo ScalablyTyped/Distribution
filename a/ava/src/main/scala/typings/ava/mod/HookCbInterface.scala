@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HookCbInterface[Context] extends js.Object {
+trait HookCbInterface[Context] extends StObject {
   
   /** Declare a hook that must call `t.end()` when it's done. */
   def apply(implementation: CbImplementation[Context]): Unit = js.native

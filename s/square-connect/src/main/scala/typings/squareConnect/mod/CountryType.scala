@@ -1,5 +1,6 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -256,7 +257,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.squareConnect.squareConnectStrings.ZM
   - typings.squareConnect.squareConnectStrings.ZW
 */
-trait CountryType extends js.Object
+trait CountryType extends StObject
 object CountryType {
   
   @scala.inline

@@ -2,12 +2,13 @@ package typings.wegameApi.anon
 
 import typings.wegameApi.wegameApiStrings.gcj02
 import typings.wegameApi.wegameApiStrings.wgs84
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Altitude extends js.Object {
+trait Altitude extends StObject {
   
   /**
     * 传入 true 会返回高度信息，由于获取高度需要较高精确度，会减慢接口返回速度    >= 1.6.0
@@ -34,48 +35,36 @@ object Altitude {
   }
   
   @scala.inline
-  implicit class AltitudeOps[Self <: Altitude] (val x: Self) extends AnyVal {
+  implicit class AltitudeMutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: Boolean): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAltitude(value: Boolean): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setSuccess(value: /* res */ Accuracy => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setType(value: wgs84 | gcj02): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: /* res */ Accuracy => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setType(value: wgs84 | gcj02): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

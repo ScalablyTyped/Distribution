@@ -1,12 +1,11 @@
 package typings.ngTable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ng-table/src/core/filtering/filterComparator", JSImport.Namespace)
-@js.native
-object filterComparatorMod extends js.Object {
+object filterComparatorMod {
   
   type FilterComparator[T] = Boolean | IFilterComparatorFunc[T]
   

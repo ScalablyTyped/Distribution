@@ -1,11 +1,12 @@
 package typings.c3.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Labels extends js.Object {
+trait Labels extends StObject {
   
   def apply(): Unit = js.native
   

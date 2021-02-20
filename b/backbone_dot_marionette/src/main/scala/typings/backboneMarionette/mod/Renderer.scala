@@ -1,12 +1,11 @@
 package typings.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("backbone.marionette", "Renderer")
-@js.native
-object Renderer extends js.Object {
+object Renderer {
   
   /**
     *  This method returns a string containing the result of applying the
@@ -19,5 +18,7 @@ object Renderer extends js.Object {
     * that returns valid HTML as a string from the data parameter passed to
     * the function.
     */
+  @JSImport("backbone.marionette", "Renderer.render")
+  @js.native
   def render(template: js.Any, data: js.Any): String = js.native
 }

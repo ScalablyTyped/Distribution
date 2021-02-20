@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * staging      failure).
   */
 @js.native
-trait SchemaWorkerMessageCode extends js.Object {
+trait SchemaWorkerMessageCode extends StObject {
   
   /**
     * The code is a string intended for consumption by a machine that
@@ -53,30 +54,18 @@ object SchemaWorkerMessageCode {
   }
   
   @scala.inline
-  implicit class SchemaWorkerMessageCodeOps[Self <: SchemaWorkerMessageCode] (val x: Self) extends AnyVal {
+  implicit class SchemaWorkerMessageCodeMutableBuilder[Self <: SchemaWorkerMessageCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
-    
-    @scala.inline
-    def setParameters(value: StringDictionary[js.Any]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

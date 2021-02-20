@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IneligibleCard extends js.Object {
+trait IneligibleCard extends StObject {
   
   var IneligibleCard: String = js.native
   
@@ -22,27 +23,15 @@ object IneligibleCard {
   }
   
   @scala.inline
-  implicit class IneligibleCardOps[Self <: IneligibleCard] (val x: Self) extends AnyVal {
+  implicit class IneligibleCardMutableBuilder[Self <: IneligibleCard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIneligibleCard(value: String): Self = StObject.set(x, "IneligibleCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsufficientPoints(value: String): Self = StObject.set(x, "InsufficientPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIneligibleCard(value: String): Self = this.set("IneligibleCard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsufficientPoints(value: String): Self = this.set("InsufficientPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: String): Self = this.set("Success", value.asInstanceOf[js.Any])
+    def setSuccess(value: String): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
   }
 }

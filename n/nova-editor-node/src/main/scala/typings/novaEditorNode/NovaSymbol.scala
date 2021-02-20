@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // name change to avoid conflict with base ecmascript Symbol
 @js.native
-trait NovaSymbol extends js.Object {
+trait NovaSymbol extends StObject {
   
   val comment: String | Null = js.native
   
@@ -32,45 +33,33 @@ object NovaSymbol {
   }
   
   @scala.inline
-  implicit class NovaSymbolOps[Self <: NovaSymbol] (val x: Self) extends AnyVal {
+  implicit class NovaSymbolMutableBuilder[Self <: NovaSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentNull: Self = StObject.set(x, "comment", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNameRange(value: Range): Self = StObject.set(x, "nameRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameRange(value: Range): Self = this.set("nameRange", value.asInstanceOf[js.Any])
+    def setParent(value: NovaSymbol): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setParentNull: Self = StObject.set(x, "parent", null)
     
     @scala.inline
-    def setType(value: NovaSymbolType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommentNull: Self = this.set("comment", null)
-    
-    @scala.inline
-    def setParent(value: NovaSymbol): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentNull: Self = this.set("parent", null)
+    def setType(value: NovaSymbolType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

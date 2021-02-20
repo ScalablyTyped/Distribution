@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1TimeSegment extends js.Object {
+trait GoogleCloudDatalabelingV1beta1TimeSegment extends StObject {
   
   /** End of the time segment (exclusive), represented as the duration since the example start. */
   var endTimeOffset: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudDatalabelingV1beta1TimeSegment {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1TimeSegmentOps[Self <: GoogleCloudDatalabelingV1beta1TimeSegment] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1TimeSegmentMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1TimeSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimeOffset(value: String): Self = this.set("endTimeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTimeOffset: Self = this.set("endTimeOffset", js.undefined)
-    
-    @scala.inline
-    def setStartTimeOffset(value: String): Self = this.set("startTimeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeOffset: Self = this.set("startTimeOffset", js.undefined)
+    def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
   }
 }

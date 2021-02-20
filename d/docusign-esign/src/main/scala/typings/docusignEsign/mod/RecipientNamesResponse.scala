@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientNamesResponse extends js.Object {
+trait RecipientNamesResponse extends StObject {
   
   /**
     * When set to **true**, the email address is used by more than one user.
@@ -31,39 +32,27 @@ object RecipientNamesResponse {
   }
   
   @scala.inline
-  implicit class RecipientNamesResponseOps[Self <: RecipientNamesResponse] (val x: Self) extends AnyVal {
+  implicit class RecipientNamesResponseMutableBuilder[Self <: RecipientNamesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultipleUsers(value: String): Self = StObject.set(x, "multipleUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultipleUsersUndefined: Self = StObject.set(x, "multipleUsers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipientNames(value: js.Array[String]): Self = StObject.set(x, "recipientNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleUsers(value: String): Self = this.set("multipleUsers", value.asInstanceOf[js.Any])
+    def setRecipientNamesUndefined: Self = StObject.set(x, "recipientNames", js.undefined)
     
     @scala.inline
-    def deleteMultipleUsers: Self = this.set("multipleUsers", js.undefined)
+    def setRecipientNamesVarargs(value: String*): Self = StObject.set(x, "recipientNames", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientNamesVarargs(value: String*): Self = this.set("recipientNames", js.Array(value :_*))
+    def setReservedRecipientEmail(value: String): Self = StObject.set(x, "reservedRecipientEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientNames(value: js.Array[String]): Self = this.set("recipientNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientNames: Self = this.set("recipientNames", js.undefined)
-    
-    @scala.inline
-    def setReservedRecipientEmail(value: String): Self = this.set("reservedRecipientEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedRecipientEmail: Self = this.set("reservedRecipientEmail", js.undefined)
+    def setReservedRecipientEmailUndefined: Self = StObject.set(x, "reservedRecipientEmail", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommitmentInterval extends js.Object {
+trait CommitmentInterval extends StObject {
   
   var commitmentInterval: js.UndefOr[EndTime] = js.native
   
@@ -22,36 +23,24 @@ object CommitmentInterval {
   }
   
   @scala.inline
-  implicit class CommitmentIntervalOps[Self <: CommitmentInterval] (val x: Self) extends AnyVal {
+  implicit class CommitmentIntervalMutableBuilder[Self <: CommitmentInterval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitmentInterval(value: EndTime): Self = StObject.set(x, "commitmentInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitmentIntervalUndefined: Self = StObject.set(x, "commitmentInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsCommitmentPlan(value: Boolean): Self = StObject.set(x, "isCommitmentPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitmentInterval(value: EndTime): Self = this.set("commitmentInterval", value.asInstanceOf[js.Any])
+    def setIsCommitmentPlanUndefined: Self = StObject.set(x, "isCommitmentPlan", js.undefined)
     
     @scala.inline
-    def deleteCommitmentInterval: Self = this.set("commitmentInterval", js.undefined)
+    def setPlanName(value: String): Self = StObject.set(x, "planName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCommitmentPlan(value: Boolean): Self = this.set("isCommitmentPlan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsCommitmentPlan: Self = this.set("isCommitmentPlan", js.undefined)
-    
-    @scala.inline
-    def setPlanName(value: String): Self = this.set("planName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlanName: Self = this.set("planName", js.undefined)
+    def setPlanNameUndefined: Self = StObject.set(x, "planName", js.undefined)
   }
 }

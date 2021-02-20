@@ -4,32 +4,35 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
 import typings.babylonjs.webVRCameraMod.WebVROptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/VR/index", JSImport.Namespace)
-@js.native
-object vRIndexMod extends js.Object {
+object vRIndexMod {
   
+  @JSImport("babylonjs/Cameras/VR/index", "OnAfterEnteringVRObservableEvent")
   @js.native
   class OnAfterEnteringVRObservableEvent ()
     extends typings.babylonjs.vrExperienceHelperMod.OnAfterEnteringVRObservableEvent
   
+  @JSImport("babylonjs/Cameras/VR/index", "VRCameraMetrics")
   @js.native
   class VRCameraMetrics ()
     extends typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
   /* static members */
-  @js.native
-  object VRCameraMetrics extends js.Object {
+  object VRCameraMetrics {
     
     /**
       * Get the default VRMetrics based on the most generic setup.
       * @returns the default vr metrics
       */
+    @JSImport("babylonjs/Cameras/VR/index", "VRCameraMetrics.GetDefault")
+    @js.native
     def GetDefault(): typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics = js.native
   }
   
+  @JSImport("babylonjs/Cameras/VR/index", "VRDeviceOrientationArcRotateCamera")
   @js.native
   class VRDeviceOrientationArcRotateCamera protected ()
     extends typings.babylonjs.vrDeviceOrientationArcRotateCameraMod.VRDeviceOrientationArcRotateCamera {
@@ -76,6 +79,7 @@ object vRIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Cameras/VR/index", "VRDeviceOrientationFreeCamera")
   @js.native
   class VRDeviceOrientationFreeCamera protected ()
     extends typings.babylonjs.vrDeviceOrientationFreeCameraMod.VRDeviceOrientationFreeCamera {
@@ -105,6 +109,7 @@ object vRIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Cameras/VR/index", "VRDeviceOrientationGamepadCamera")
   @js.native
   class VRDeviceOrientationGamepadCamera protected ()
     extends typings.babylonjs.vrDeviceOrientationGamepadCameraMod.VRDeviceOrientationGamepadCamera {
@@ -134,6 +139,7 @@ object vRIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Cameras/VR/index", "VRExperienceHelper")
   @js.native
   class VRExperienceHelper protected ()
     extends typings.babylonjs.vrExperienceHelperMod.VRExperienceHelper {
@@ -151,20 +157,24 @@ object vRIndexMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object VRExperienceHelper extends js.Object {
+  object VRExperienceHelper {
     
     /**
       * Speed Constant Teleportation Mode
       */
+    @JSImport("babylonjs/Cameras/VR/index", "VRExperienceHelper.TELEPORTATIONMODE_CONSTANTSPEED")
+    @js.native
     val TELEPORTATIONMODE_CONSTANTSPEED: Double = js.native
     
     /**
       * Time Constant Teleportation Mode
       */
+    @JSImport("babylonjs/Cameras/VR/index", "VRExperienceHelper.TELEPORTATIONMODE_CONSTANTTIME")
+    @js.native
     val TELEPORTATIONMODE_CONSTANTTIME: Double = js.native
   }
   
+  @JSImport("babylonjs/Cameras/VR/index", "WebVRFreeCamera")
   @js.native
   class WebVRFreeCamera protected ()
     extends typings.babylonjs.webVRCameraMod.WebVRFreeCamera {

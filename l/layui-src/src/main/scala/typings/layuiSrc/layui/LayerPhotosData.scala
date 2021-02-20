@@ -1,11 +1,12 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerPhotosData extends js.Object {
+trait LayerPhotosData extends StObject {
   
   var data: js.Array[LayerPhotosDataItem] = js.native
   
@@ -24,36 +25,24 @@ object LayerPhotosData {
   }
   
   @scala.inline
-  implicit class LayerPhotosDataOps[Self <: LayerPhotosData] (val x: Self) extends AnyVal {
+  implicit class LayerPhotosDataMutableBuilder[Self <: LayerPhotosData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[LayerPhotosDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: LayerPhotosDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: LayerPhotosDataItem*): Self = this.set("data", js.Array(value :_*))
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[LayerPhotosDataItem]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cross extends js.Object {
+trait Cross extends StObject {
   
   var direction: String = js.native
   
@@ -38,39 +39,27 @@ object Cross {
   }
   
   @scala.inline
-  implicit class CrossOps[Self <: Cross] (val x: Self) extends AnyVal {
+  implicit class CrossMutableBuilder[Self <: Cross] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirst_id(value: String): Self = StObject.set(x, "first_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_id(value: String): Self = this.set("first_id", value.asInstanceOf[js.Any])
+    def setSecond_id(value: String): Self = StObject.set(x, "second_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: LngLat): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecond_id(value: String): Self = this.set("second_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecond_name(value: String): Self = this.set("second_name", value.asInstanceOf[js.Any])
+    def setSecond_name(value: String): Self = StObject.set(x, "second_name", value.asInstanceOf[js.Any])
   }
 }

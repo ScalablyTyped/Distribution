@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnhancedElementInstance[T] extends js.Object {
+trait EnhancedElementInstance[T] extends StObject {
   
   /**
     * The locate strategy to be used with `selector` when finding the element within the DOM.
@@ -38,30 +39,18 @@ object EnhancedElementInstance {
   }
   
   @scala.inline
-  implicit class EnhancedElementInstanceOps[Self <: EnhancedElementInstance[_], T] (val x: Self with EnhancedElementInstance[T]) extends AnyVal {
+  implicit class EnhancedElementInstanceMutableBuilder[Self <: EnhancedElementInstance[_], T] (val x: Self with EnhancedElementInstance[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocateStrategy(value: LocateStrategy): Self = StObject.set(x, "locateStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParent(value: T): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocateStrategy(value: LocateStrategy): Self = this.set("locateStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: T): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.curveMod.Curve
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/extras/curves/CatmullRomCurve3", JSImport.Namespace)
-@js.native
-object catmullRomCurve3Mod extends js.Object {
+object catmullRomCurve3Mod {
   
+  @JSImport("three/src/extras/curves/CatmullRomCurve3", "CatmullRomCurve3")
   @js.native
   /**
   	 * @param [points=[]]
@@ -60,15 +60,22 @@ object catmullRomCurve3Mod extends js.Object {
     var points: js.Array[Vector3] = js.native
   }
   
-  @js.native
-  object CurveUtils extends js.Object {
+  object CurveUtils {
     
+    @JSImport("three/src/extras/curves/CatmullRomCurve3", "CurveUtils.interpolate")
+    @js.native
     def interpolate(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double = js.native
     
+    @JSImport("three/src/extras/curves/CatmullRomCurve3", "CurveUtils.tangentCubicBezier")
+    @js.native
     def tangentCubicBezier(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
     
+    @JSImport("three/src/extras/curves/CatmullRomCurve3", "CurveUtils.tangentQuadraticBezier")
+    @js.native
     def tangentQuadraticBezier(t: Double, p0: Double, p1: Double, p2: Double): Double = js.native
     
+    @JSImport("three/src/extras/curves/CatmullRomCurve3", "CurveUtils.tangentSpline")
+    @js.native
     def tangentSpline(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
   }
 }

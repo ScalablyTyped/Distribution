@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetExtConfigSyncRes extends js.Object {
+trait GetExtConfigSyncRes extends StObject {
   
   /**
     * 第三方平台自定义的数据
@@ -21,24 +22,12 @@ object GetExtConfigSyncRes {
   }
   
   @scala.inline
-  implicit class GetExtConfigSyncResOps[Self <: GetExtConfigSyncRes] (val x: Self) extends AnyVal {
+  implicit class GetExtConfigSyncResMutableBuilder[Self <: GetExtConfigSyncRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtConfig(value: js.Any): Self = this.set("extConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtConfig: Self = this.set("extConfig", js.undefined)
+    def setExtConfigUndefined: Self = StObject.set(x, "extConfig", js.undefined)
   }
 }

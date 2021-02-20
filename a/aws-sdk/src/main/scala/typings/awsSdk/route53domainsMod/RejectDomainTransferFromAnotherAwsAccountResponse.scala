@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RejectDomainTransferFromAnotherAwsAccountResponse extends js.Object {
+trait RejectDomainTransferFromAnotherAwsAccountResponse extends StObject {
   
   /**
     * The identifier that TransferDomainToAnotherAwsAccount returned to track the progress of the request. Because the transfer request was rejected, the value is no longer valid, and you can't use GetOperationDetail to query the operation status.
@@ -21,24 +22,12 @@ object RejectDomainTransferFromAnotherAwsAccountResponse {
   }
   
   @scala.inline
-  implicit class RejectDomainTransferFromAnotherAwsAccountResponseOps[Self <: RejectDomainTransferFromAnotherAwsAccountResponse] (val x: Self) extends AnyVal {
+  implicit class RejectDomainTransferFromAnotherAwsAccountResponseMutableBuilder[Self <: RejectDomainTransferFromAnotherAwsAccountResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOperationId(value: OperationId): Self = this.set("OperationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationId: Self = this.set("OperationId", js.undefined)
+    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
   }
 }

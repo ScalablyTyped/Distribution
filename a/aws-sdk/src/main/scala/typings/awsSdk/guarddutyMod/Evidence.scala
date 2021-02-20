@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Evidence extends js.Object {
+trait Evidence extends StObject {
   
   /**
     * A list of threat intelligence details related to the evidence.
@@ -21,27 +22,15 @@ object Evidence {
   }
   
   @scala.inline
-  implicit class EvidenceOps[Self <: Evidence] (val x: Self) extends AnyVal {
+  implicit class EvidenceMutableBuilder[Self <: Evidence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setThreatIntelligenceDetails(value: ThreatIntelligenceDetails): Self = StObject.set(x, "ThreatIntelligenceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThreatIntelligenceDetailsUndefined: Self = StObject.set(x, "ThreatIntelligenceDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setThreatIntelligenceDetailsVarargs(value: ThreatIntelligenceDetail*): Self = this.set("ThreatIntelligenceDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setThreatIntelligenceDetails(value: ThreatIntelligenceDetails): Self = this.set("ThreatIntelligenceDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatIntelligenceDetails: Self = this.set("ThreatIntelligenceDetails", js.undefined)
+    def setThreatIntelligenceDetailsVarargs(value: ThreatIntelligenceDetail*): Self = StObject.set(x, "ThreatIntelligenceDetails", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.bingmaps.global.Microsoft.Maps
 
 import typings.bingmaps.Microsoft.Maps.IHeatMapLayerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeExportTasksRequest extends js.Object {
+trait DescribeExportTasksRequest extends StObject {
   
   /**
     * The export task IDs.
@@ -26,36 +27,24 @@ object DescribeExportTasksRequest {
   }
   
   @scala.inline
-  implicit class DescribeExportTasksRequestOps[Self <: DescribeExportTasksRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeExportTasksRequestMutableBuilder[Self <: DescribeExportTasksRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportTaskIds(value: ExportTaskIdStringList): Self = StObject.set(x, "ExportTaskIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportTaskIdsUndefined: Self = StObject.set(x, "ExportTaskIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportTaskIdsVarargs(value: ExportTaskId*): Self = StObject.set(x, "ExportTaskIds", js.Array(value :_*))
     
     @scala.inline
-    def setExportTaskIdsVarargs(value: ExportTaskId*): Self = this.set("ExportTaskIds", js.Array(value :_*))
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportTaskIds(value: ExportTaskIdStringList): Self = this.set("ExportTaskIds", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteExportTaskIds: Self = this.set("ExportTaskIds", js.undefined)
-    
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.mobx.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Promise<void> & {cancel (): void} */
 @js.native
-trait Promisevoidcancelvoid extends js.Object {
+trait Promisevoidcancelvoid extends StObject {
   
   def cancel(): Unit = js.native
   

@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RangeValueType extends js.Object
+sealed trait RangeValueType extends StObject
 /**
   * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
   */
 @JSGlobal("Excel.RangeValueType")
 @js.native
-object RangeValueType extends js.Object {
+object RangeValueType extends StObject {
   
   @js.native
   sealed trait boolean extends RangeValueType

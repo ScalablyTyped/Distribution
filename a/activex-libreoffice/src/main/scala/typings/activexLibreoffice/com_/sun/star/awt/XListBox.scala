@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -153,105 +154,93 @@ object XListBox {
   }
   
   @scala.inline
-  implicit class XListBoxOps[Self <: XListBox] (val x: Self) extends AnyVal {
+  implicit class XListBoxMutableBuilder[Self <: XListBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddItem(value: (String, Double) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDropDownLineCount(value: Double): Self = this.set("DropDownLineCount", value.asInstanceOf[js.Any])
+    def setAddItems(value: (SeqEquiv[String], Double) => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setItemCount(value: Double): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setDropDownLineCount(value: Double): Self = StObject.set(x, "DropDownLineCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: SafeArray[String]): Self = this.set("Items", value.asInstanceOf[js.Any])
+    def setGetDropDownLineCount(value: () => Double): Self = StObject.set(x, "getDropDownLineCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelectedItem(value: String): Self = this.set("SelectedItem", value.asInstanceOf[js.Any])
+    def setGetItem(value: Double => String): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedItemPos(value: Double): Self = this.set("SelectedItemPos", value.asInstanceOf[js.Any])
+    def setGetItemCount(value: () => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelectedItems(value: SafeArray[String]): Self = this.set("SelectedItems", value.asInstanceOf[js.Any])
+    def setGetItems(value: () => SafeArray[String]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelectedItemsPos(value: SafeArray[Double]): Self = this.set("SelectedItemsPos", value.asInstanceOf[js.Any])
+    def setGetSelectedItem(value: () => String): Self = StObject.set(x, "getSelectedItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddActionListener(value: XActionListener => Unit): Self = this.set("addActionListener", js.Any.fromFunction1(value))
+    def setGetSelectedItemPos(value: () => Double): Self = StObject.set(x, "getSelectedItemPos", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddItem(value: (String, Double) => Unit): Self = this.set("addItem", js.Any.fromFunction2(value))
+    def setGetSelectedItems(value: () => SafeArray[String]): Self = StObject.set(x, "getSelectedItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddItemListener(value: XItemListener => Unit): Self = this.set("addItemListener", js.Any.fromFunction1(value))
+    def setGetSelectedItemsPos(value: () => SafeArray[Double]): Self = StObject.set(x, "getSelectedItemsPos", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddItems(value: (SeqEquiv[String], Double) => Unit): Self = this.set("addItems", js.Any.fromFunction2(value))
+    def setIsMutipleMode(value: () => Boolean): Self = StObject.set(x, "isMutipleMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDropDownLineCount(value: () => Double): Self = this.set("getDropDownLineCount", js.Any.fromFunction0(value))
+    def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItem(value: Double => String): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setItems(value: SafeArray[String]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItemCount(value: () => Double): Self = this.set("getItemCount", js.Any.fromFunction0(value))
+    def setMakeVisible(value: Double => Unit): Self = StObject.set(x, "makeVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItems(value: () => SafeArray[String]): Self = this.set("getItems", js.Any.fromFunction0(value))
+    def setRemoveActionListener(value: XActionListener => Unit): Self = StObject.set(x, "removeActionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSelectedItem(value: () => String): Self = this.set("getSelectedItem", js.Any.fromFunction0(value))
+    def setRemoveItemListener(value: XItemListener => Unit): Self = StObject.set(x, "removeItemListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSelectedItemPos(value: () => Double): Self = this.set("getSelectedItemPos", js.Any.fromFunction0(value))
+    def setRemoveItems(value: (Double, Double) => Unit): Self = StObject.set(x, "removeItems", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSelectedItems(value: () => SafeArray[String]): Self = this.set("getSelectedItems", js.Any.fromFunction0(value))
+    def setSelectItem(value: (String, Boolean) => Unit): Self = StObject.set(x, "selectItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSelectedItemsPos(value: () => SafeArray[Double]): Self = this.set("getSelectedItemsPos", js.Any.fromFunction0(value))
+    def setSelectItemPos(value: (Double, Boolean) => Unit): Self = StObject.set(x, "selectItemPos", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsMutipleMode(value: () => Boolean): Self = this.set("isMutipleMode", js.Any.fromFunction0(value))
+    def setSelectItemsPos(value: (SeqEquiv[Double], Boolean) => Unit): Self = StObject.set(x, "selectItemsPos", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMakeVisible(value: Double => Unit): Self = this.set("makeVisible", js.Any.fromFunction1(value))
+    def setSelectedItem(value: String): Self = StObject.set(x, "SelectedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveActionListener(value: XActionListener => Unit): Self = this.set("removeActionListener", js.Any.fromFunction1(value))
+    def setSelectedItemPos(value: Double): Self = StObject.set(x, "SelectedItemPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveItemListener(value: XItemListener => Unit): Self = this.set("removeItemListener", js.Any.fromFunction1(value))
+    def setSelectedItems(value: SafeArray[String]): Self = StObject.set(x, "SelectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveItems(value: (Double, Double) => Unit): Self = this.set("removeItems", js.Any.fromFunction2(value))
+    def setSelectedItemsPos(value: SafeArray[Double]): Self = StObject.set(x, "SelectedItemsPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectItem(value: (String, Boolean) => Unit): Self = this.set("selectItem", js.Any.fromFunction2(value))
+    def setSetDropDownLineCount(value: Double => Unit): Self = StObject.set(x, "setDropDownLineCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectItemPos(value: (Double, Boolean) => Unit): Self = this.set("selectItemPos", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSelectItemsPos(value: (SeqEquiv[Double], Boolean) => Unit): Self = this.set("selectItemsPos", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetDropDownLineCount(value: Double => Unit): Self = this.set("setDropDownLineCount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMultipleMode(value: Boolean => Unit): Self = this.set("setMultipleMode", js.Any.fromFunction1(value))
+    def setSetMultipleMode(value: Boolean => Unit): Self = StObject.set(x, "setMultipleMode", js.Any.fromFunction1(value))
   }
 }

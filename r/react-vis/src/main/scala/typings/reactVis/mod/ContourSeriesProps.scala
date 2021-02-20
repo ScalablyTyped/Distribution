@@ -1,5 +1,6 @@
 package typings.reactVis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ trait ContourSeriesProps extends AbstractSeriesProps[ContourSeriesPoint] {
   
   var bandwidth: js.UndefOr[Double] = js.native
   
-   // default: 40
+  // default: 40
   var marginLeft: js.UndefOr[Double] = js.native
   
   var marginTop: js.UndefOr[Double] = js.native
@@ -23,36 +24,24 @@ object ContourSeriesProps {
   }
   
   @scala.inline
-  implicit class ContourSeriesPropsOps[Self <: ContourSeriesProps] (val x: Self) extends AnyVal {
+  implicit class ContourSeriesPropsMutableBuilder[Self <: ContourSeriesProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: Double): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
-    
-    @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
   }
 }

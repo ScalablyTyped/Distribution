@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.autoscaling.v2beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * MetricTarget defines the target value, average value, or average utilization of a specific metric
   */
 @js.native
-trait MetricTarget extends js.Object {
+trait MetricTarget extends StObject {
   
   /**
     * averageUtilization is the target value of the average of the resource metric across all relevant pods, represented as a percentage of the requested value of the resource for the pods. Currently only valid for Resource metric source type
@@ -40,30 +41,18 @@ object MetricTarget {
   }
   
   @scala.inline
-  implicit class MetricTargetOps[Self <: MetricTarget] (val x: Self) extends AnyVal {
+  implicit class MetricTargetMutableBuilder[Self <: MetricTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageUtilization(value: Double): Self = StObject.set(x, "averageUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageValue(value: String): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageUtilization(value: Double): Self = this.set("averageUtilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAverageValue(value: String): Self = this.set("averageValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

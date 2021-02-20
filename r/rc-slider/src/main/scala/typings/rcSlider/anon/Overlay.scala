@@ -1,11 +1,12 @@
 package typings.rcSlider.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Overlay extends js.Object {
+trait Overlay extends StObject {
   
   var overlay: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object Overlay {
   }
   
   @scala.inline
-  implicit class OverlayOps[Self <: Overlay] (val x: Self) extends AnyVal {
+  implicit class OverlayMutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: String): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
     @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: String): Self = this.set("placement", value.asInstanceOf[js.Any])
+    def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
     @scala.inline
-    def deletePlacement: Self = this.set("placement", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

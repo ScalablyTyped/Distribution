@@ -1,12 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ClientReceiptGetResponse.Status
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,16 +35,49 @@ class ClientReceiptGetResponse () extends IClientReceiptGetResponse {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse")
-@js.native
-object ClientReceiptGetResponse extends js.Object {
+object ClientReceiptGetResponse {
+  
+  @js.native
+  sealed trait Status extends StObject
+  /** Status enum. */
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.Status")
+  @js.native
+  object Status extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    
+    @js.native
+    sealed trait INTERNAL_ERROR extends Status
+    /* 2 */ val INTERNAL_ERROR: typings.sawtoothSdk.protobufMod.ClientReceiptGetResponse.Status.INTERNAL_ERROR with Double = js.native
+    
+    @js.native
+    sealed trait INVALID_ID extends Status
+    /* 8 */ val INVALID_ID: typings.sawtoothSdk.protobufMod.ClientReceiptGetResponse.Status.INVALID_ID with Double = js.native
+    
+    @js.native
+    sealed trait NO_RESOURCE extends Status
+    /* 5 */ val NO_RESOURCE: typings.sawtoothSdk.protobufMod.ClientReceiptGetResponse.Status.NO_RESOURCE with Double = js.native
+    
+    @js.native
+    sealed trait OK extends Status
+    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ClientReceiptGetResponse.Status.OK with Double = js.native
+    
+    @js.native
+    sealed trait STATUS_UNSET extends Status
+    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ClientReceiptGetResponse.Status.STATUS_UNSET with Double = js.native
+  }
   
   /**
     * Creates a new ClientReceiptGetResponse instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientReceiptGetResponse instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.create")
+  @js.native
   def create(): ClientReceiptGetResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.create")
+  @js.native
   def create(properties: IClientReceiptGetResponse): ClientReceiptGetResponse = js.native
   
   /**
@@ -55,9 +88,17 @@ object ClientReceiptGetResponse extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.decode")
+  @js.native
   def decode(reader: Reader): ClientReceiptGetResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.decode")
+  @js.native
   def decode(reader: Reader, length: Double): ClientReceiptGetResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.decode")
+  @js.native
   def decode(reader: Uint8Array): ClientReceiptGetResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): ClientReceiptGetResponse = js.native
   
   /**
@@ -67,7 +108,11 @@ object ClientReceiptGetResponse extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): ClientReceiptGetResponse = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): ClientReceiptGetResponse = js.native
   
   /**
@@ -76,7 +121,11 @@ object ClientReceiptGetResponse extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.encode")
+  @js.native
   def encode(message: IClientReceiptGetResponse): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.encode")
+  @js.native
   def encode(message: IClientReceiptGetResponse, writer: Writer): Writer = js.native
   
   /**
@@ -85,7 +134,11 @@ object ClientReceiptGetResponse extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientReceiptGetResponse): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientReceiptGetResponse, writer: Writer): Writer = js.native
   
   /**
@@ -93,6 +146,8 @@ object ClientReceiptGetResponse extends js.Object {
     * @param object Plain object
     * @returns ClientReceiptGetResponse
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): ClientReceiptGetResponse = js.native
   
   /**
@@ -101,7 +156,11 @@ object ClientReceiptGetResponse extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.toObject")
+  @js.native
   def toObject(message: ClientReceiptGetResponse): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.toObject")
+  @js.native
   def toObject(message: ClientReceiptGetResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -109,40 +168,7 @@ object ClientReceiptGetResponse extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientReceiptGetResponse.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
-  
-  @js.native
-  sealed trait Status extends js.Object
-  /** Status enum. */
-  @js.native
-  object Status extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Status with Double] = js.native
-    
-    @js.native
-    sealed trait INTERNAL_ERROR extends Status
-    /* 2 */ @js.native
-    object INTERNAL_ERROR extends TopLevel[INTERNAL_ERROR with Double]
-    
-    @js.native
-    sealed trait INVALID_ID extends Status
-    /* 8 */ @js.native
-    object INVALID_ID extends TopLevel[INVALID_ID with Double]
-    
-    @js.native
-    sealed trait NO_RESOURCE extends Status
-    /* 5 */ @js.native
-    object NO_RESOURCE extends TopLevel[NO_RESOURCE with Double]
-    
-    @js.native
-    sealed trait OK extends Status
-    /* 1 */ @js.native
-    object OK extends TopLevel[OK with Double]
-    
-    @js.native
-    sealed trait STATUS_UNSET extends Status
-    /* 0 */ @js.native
-    object STATUS_UNSET extends TopLevel[STATUS_UNSET with Double]
-  }
 }

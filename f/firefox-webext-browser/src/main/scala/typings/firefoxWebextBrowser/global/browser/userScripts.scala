@@ -4,6 +4,7 @@ import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.userScripts.OnBeforeScriptUserScript
 import typings.firefoxWebextBrowser.browser.userScripts.RegisteredUserScript
 import typings.firefoxWebextBrowser.browser.userScripts.UserScriptOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Not allowed in: Devtools pages
   */
-@JSGlobal("browser.userScripts")
-@js.native
-object userScripts extends js.Object {
+object userScripts {
   
   /* userScripts events */
   /**
@@ -23,11 +22,15 @@ object userScripts extends js.Object {
     *
     * Allowed in: Content scripts only
     */
+  @JSGlobal("browser.userScripts.onBeforeScript")
+  @js.native
   val onBeforeScript: WebExtEvent[js.Function1[/* userScript */ OnBeforeScriptUserScript, Unit]] = js.native
   
   /* userScripts functions */
   /**
     * Register a user script programmatically given its `userScripts.UserScriptOptions`, and resolves to a `userScripts.RegisteredUserScript` instance
     */
+  @JSGlobal("browser.userScripts.register")
+  @js.native
   def register(userScriptOptions: UserScriptOptions): js.Promise[RegisteredUserScript] = js.native
 }

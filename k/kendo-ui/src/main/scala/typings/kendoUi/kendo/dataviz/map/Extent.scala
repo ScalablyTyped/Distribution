@@ -1,6 +1,7 @@
 package typings.kendoUi.kendo.dataviz.map
 
 import typings.kendoUi.kendo.Class
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,51 +52,39 @@ object Extent {
   }
   
   @scala.inline
-  implicit class ExtentOps[Self <: Extent] (val x: Self) extends AnyVal {
+  implicit class ExtentMutableBuilder[Self <: Extent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: () => Location): Self = StObject.set(x, "center", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContains(value: Location => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsAny(value: js.Any => Boolean): Self = StObject.set(x, "containsAny", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCenter(value: () => Location): Self = this.set("center", js.Any.fromFunction0(value))
+    def setEdges(value: () => js.Any): Self = StObject.set(x, "edges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContains(value: Location => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    def setInclude(value: Location => Unit): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainsAny(value: js.Any => Boolean): Self = this.set("containsAny", js.Any.fromFunction1(value))
+    def setIncludeAll(value: js.Any => Unit): Self = StObject.set(x, "includeAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEdges(value: () => js.Any): Self = this.set("edges", js.Any.fromFunction0(value))
+    def setNw(value: Location): Self = StObject.set(x, "nw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: Location => Unit): Self = this.set("include", js.Any.fromFunction1(value))
+    def setOptions(value: ExtentOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAll(value: js.Any => Unit): Self = this.set("includeAll", js.Any.fromFunction1(value))
+    def setOverlaps(value: Extent => Boolean): Self = StObject.set(x, "overlaps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNw(value: Location): Self = this.set("nw", value.asInstanceOf[js.Any])
+    def setSe(value: Location): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: ExtentOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverlaps(value: Extent => Boolean): Self = this.set("overlaps", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSe(value: Location): Self = this.set("se", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToArray(value: () => js.Any): Self = this.set("toArray", js.Any.fromFunction0(value))
+    def setToArray(value: () => js.Any): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

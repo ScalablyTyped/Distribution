@@ -1,18 +1,18 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Conference_Data")
-@js.native
-object ConferenceData extends js.Object {
+object ConferenceData {
   
   /**
     * Enum that defines the types of errors that you can specify in a ConferenceError.
     */
+  @JSGlobal("GoogleAppsScript.Conference_Data.ConferenceErrorType")
   @js.native
-  object ConferenceErrorType extends js.Object {
+  object ConferenceErrorType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -35,8 +35,9 @@ object ConferenceData extends js.Object {
   /**
     * Enum that defines the features of the entry point that can be created by a conferencing add-on.
     */
+  @JSGlobal("GoogleAppsScript.Conference_Data.EntryPointFeature")
   @js.native
-  object EntryPointFeature extends js.Object {
+  object EntryPointFeature extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -53,8 +54,9 @@ object ConferenceData extends js.Object {
   /**
     * Enum that defines the types of entry points that can be created by a conferencing add-on.
     */
+  @JSGlobal("GoogleAppsScript.Conference_Data.EntryPointType")
   @js.native
-  object EntryPointType extends js.Object {
+  object EntryPointType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[

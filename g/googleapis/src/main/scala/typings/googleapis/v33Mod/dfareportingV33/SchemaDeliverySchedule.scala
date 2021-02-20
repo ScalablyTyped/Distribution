@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Delivery Schedule.
   */
 @js.native
-trait SchemaDeliverySchedule extends js.Object {
+trait SchemaDeliverySchedule extends StObject {
   
   /**
     * Limit on the number of times an individual user can be served the ad
@@ -47,42 +48,30 @@ object SchemaDeliverySchedule {
   }
   
   @scala.inline
-  implicit class SchemaDeliveryScheduleOps[Self <: SchemaDeliverySchedule] (val x: Self) extends AnyVal {
+  implicit class SchemaDeliveryScheduleMutableBuilder[Self <: SchemaDeliverySchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrequencyCap(value: SchemaFrequencyCap): Self = StObject.set(x, "frequencyCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrequencyCapUndefined: Self = StObject.set(x, "frequencyCap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHardCutoff(value: Boolean): Self = StObject.set(x, "hardCutoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequencyCap(value: SchemaFrequencyCap): Self = this.set("frequencyCap", value.asInstanceOf[js.Any])
+    def setHardCutoffUndefined: Self = StObject.set(x, "hardCutoff", js.undefined)
     
     @scala.inline
-    def deleteFrequencyCap: Self = this.set("frequencyCap", js.undefined)
+    def setImpressionRatio(value: String): Self = StObject.set(x, "impressionRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardCutoff(value: Boolean): Self = this.set("hardCutoff", value.asInstanceOf[js.Any])
+    def setImpressionRatioUndefined: Self = StObject.set(x, "impressionRatio", js.undefined)
     
     @scala.inline
-    def deleteHardCutoff: Self = this.set("hardCutoff", js.undefined)
+    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionRatio(value: String): Self = this.set("impressionRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImpressionRatio: Self = this.set("impressionRatio", js.undefined)
-    
-    @scala.inline
-    def setPriority(value: String): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

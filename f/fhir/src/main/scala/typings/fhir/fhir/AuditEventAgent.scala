@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,117 +95,105 @@ object AuditEventAgent {
   }
   
   @scala.inline
-  implicit class AuditEventAgentOps[Self <: AuditEventAgent] (val x: Self) extends AnyVal {
+  implicit class AuditEventAgentMutableBuilder[Self <: AuditEventAgent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltId(value: String): Self = StObject.set(x, "altId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltIdUndefined: Self = StObject.set(x, "altId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestor(value: Boolean): Self = this.set("requestor", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set_altId(value: Element): Self = this.set("_altId", value.asInstanceOf[js.Any])
+    def setMedia(value: Coding): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_altId: Self = this.set("_altId", js.undefined)
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set_policyVarargs(value: Element*): Self = this.set("_policy", js.Array(value :_*))
+    def setNetwork(value: AuditEventAgentNetwork): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_policy(value: js.Array[Element]): Self = this.set("_policy", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def delete_policy: Self = this.set("_policy", js.undefined)
+    def setPolicy(value: js.Array[uri]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_requestor(value: Element): Self = this.set("_requestor", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def delete_requestor: Self = this.set("_requestor", js.undefined)
+    def setPolicyVarargs(value: uri*): Self = StObject.set(x, "policy", js.Array(value :_*))
     
     @scala.inline
-    def setAltId(value: String): Self = this.set("altId", value.asInstanceOf[js.Any])
+    def setPurposeOfUse(value: js.Array[CodeableConcept]): Self = StObject.set(x, "purposeOfUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAltId: Self = this.set("altId", js.undefined)
+    def setPurposeOfUseUndefined: Self = StObject.set(x, "purposeOfUse", js.undefined)
     
     @scala.inline
-    def setLocation(value: Reference): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPurposeOfUseVarargs(value: CodeableConcept*): Self = StObject.set(x, "purposeOfUse", js.Array(value :_*))
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: Coding): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setRequestor(value: Boolean): Self = StObject.set(x, "requestor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRole(value: js.Array[CodeableConcept]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def setNetwork(value: AuditEventAgentNetwork): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setRoleVarargs(value: CodeableConcept*): Self = StObject.set(x, "role", js.Array(value :_*))
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setUserId(value: Identifier): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyVarargs(value: uri*): Self = this.set("policy", js.Array(value :_*))
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def setPolicy(value: js.Array[uri]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def set_altId(value: Element): Self = StObject.set(x, "_altId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def set_altIdUndefined: Self = StObject.set(x, "_altId", js.undefined)
     
     @scala.inline
-    def setPurposeOfUseVarargs(value: CodeableConcept*): Self = this.set("purposeOfUse", js.Array(value :_*))
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurposeOfUse(value: js.Array[CodeableConcept]): Self = this.set("purposeOfUse", value.asInstanceOf[js.Any])
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def deletePurposeOfUse: Self = this.set("purposeOfUse", js.undefined)
+    def set_policy(value: js.Array[Element]): Self = StObject.set(x, "_policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReference(value: Reference): Self = this.set("reference", value.asInstanceOf[js.Any])
+    def set_policyUndefined: Self = StObject.set(x, "_policy", js.undefined)
     
     @scala.inline
-    def deleteReference: Self = this.set("reference", js.undefined)
+    def set_policyVarargs(value: Element*): Self = StObject.set(x, "_policy", js.Array(value :_*))
     
     @scala.inline
-    def setRoleVarargs(value: CodeableConcept*): Self = this.set("role", js.Array(value :_*))
+    def set_requestor(value: Element): Self = StObject.set(x, "_requestor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: js.Array[CodeableConcept]): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: Identifier): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def set_requestorUndefined: Self = StObject.set(x, "_requestor", js.undefined)
   }
 }

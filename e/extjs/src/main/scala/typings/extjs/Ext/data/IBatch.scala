@@ -2,6 +2,7 @@ package typings.extjs.Ext.data
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.util.IObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,102 +74,90 @@ object IBatch {
   }
   
   @scala.inline
-  implicit class IBatchOps[Self <: IBatch] (val x: Self) extends AnyVal {
+  implicit class IBatchMutableBuilder[Self <: IBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: /* operation */ js.UndefOr[js.Any] => IBatch): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: /* operation */ js.UndefOr[js.Any] => IBatch): Self = this.set("add", js.Any.fromFunction1(value))
+    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoStart(value: Boolean): Self = this.set("autoStart", value.asInstanceOf[js.Any])
+    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
     @scala.inline
-    def deleteAutoStart: Self = this.set("autoStart", js.undefined)
+    def setExceptions(value: Array): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent(value: Double): Self = this.set("current", value.asInstanceOf[js.Any])
+    def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     
     @scala.inline
-    def deleteCurrent: Self = this.set("current", js.undefined)
+    def setHasException(value: Boolean): Self = StObject.set(x, "hasException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExceptions(value: Array): Self = this.set("exceptions", value.asInstanceOf[js.Any])
+    def setHasExceptionUndefined: Self = StObject.set(x, "hasException", js.undefined)
     
     @scala.inline
-    def deleteExceptions: Self = this.set("exceptions", js.undefined)
+    def setIsComplete(value: Boolean): Self = StObject.set(x, "isComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasException(value: Boolean): Self = this.set("hasException", value.asInstanceOf[js.Any])
+    def setIsCompleteUndefined: Self = StObject.set(x, "isComplete", js.undefined)
     
     @scala.inline
-    def deleteHasException: Self = this.set("hasException", js.undefined)
+    def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComplete(value: Boolean): Self = this.set("isComplete", value.asInstanceOf[js.Any])
+    def setIsRunningUndefined: Self = StObject.set(x, "isRunning", js.undefined)
     
     @scala.inline
-    def deleteIsComplete: Self = this.set("isComplete", js.undefined)
+    def setOperations(value: Array): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRunning(value: Boolean): Self = this.set("isRunning", value.asInstanceOf[js.Any])
+    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
     @scala.inline
-    def deleteIsRunning: Self = this.set("isRunning", js.undefined)
+    def setPause(value: () => IBatch): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOperations(value: Array): Self = this.set("operations", value.asInstanceOf[js.Any])
+    def setPauseOnException(value: Boolean): Self = StObject.set(x, "pauseOnException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperations: Self = this.set("operations", js.undefined)
+    def setPauseOnExceptionUndefined: Self = StObject.set(x, "pauseOnException", js.undefined)
     
     @scala.inline
-    def setPause(value: () => IBatch): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
     @scala.inline
-    def deletePause: Self = this.set("pause", js.undefined)
+    def setRetry(value: () => IBatch): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPauseOnException(value: Boolean): Self = this.set("pauseOnException", value.asInstanceOf[js.Any])
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
     @scala.inline
-    def deletePauseOnException: Self = this.set("pauseOnException", js.undefined)
+    def setRunOperation(value: /* index */ js.UndefOr[Double] => IBatch): Self = StObject.set(x, "runOperation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRetry(value: () => IBatch): Self = this.set("retry", js.Any.fromFunction0(value))
+    def setRunOperationUndefined: Self = StObject.set(x, "runOperation", js.undefined)
     
     @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
+    def setStart(value: /* index */ js.UndefOr[js.Any] => IBatch): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRunOperation(value: /* index */ js.UndefOr[Double] => IBatch): Self = this.set("runOperation", js.Any.fromFunction1(value))
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteRunOperation: Self = this.set("runOperation", js.undefined)
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: /* index */ js.UndefOr[js.Any] => IBatch): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

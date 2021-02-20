@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientEventarc.anon.Oauthtoken
 import typings.maximMazurokGapiClientEventarc.anon.OrderBy
 import typings.maximMazurokGapiClientEventarc.anon.PrettyPrint
 import typings.maximMazurokGapiClientEventarc.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TriggersResource extends js.Object {
+trait TriggersResource extends StObject {
   
   /** Create a new trigger in a particular project and location. */
   def create(request: Fields): Request[Operation] = js.native

@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEdgesRendererOptions extends js.Object {
+trait IEdgesRendererOptions extends StObject {
   
   /**
     * Gets or sets a boolean indicating that tessellation should be applied before finding the edges. You may need to activate this option if your geometry is a bit
@@ -51,48 +52,36 @@ object IEdgesRendererOptions {
   }
   
   @scala.inline
-  implicit class IEdgesRendererOptionsOps[Self <: IEdgesRendererOptions] (val x: Self) extends AnyVal {
+  implicit class IEdgesRendererOptionsMutableBuilder[Self <: IEdgesRendererOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyTessellation(value: Boolean): Self = StObject.set(x, "applyTessellation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyTessellationUndefined: Self = StObject.set(x, "applyTessellation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEpsilonVertexAligned(value: Double): Self = StObject.set(x, "epsilonVertexAligned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyTessellation(value: Boolean): Self = this.set("applyTessellation", value.asInstanceOf[js.Any])
+    def setEpsilonVertexAlignedUndefined: Self = StObject.set(x, "epsilonVertexAligned", js.undefined)
     
     @scala.inline
-    def deleteApplyTessellation: Self = this.set("applyTessellation", js.undefined)
+    def setEpsilonVertexMerge(value: Double): Self = StObject.set(x, "epsilonVertexMerge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpsilonVertexAligned(value: Double): Self = this.set("epsilonVertexAligned", value.asInstanceOf[js.Any])
+    def setEpsilonVertexMergeUndefined: Self = StObject.set(x, "epsilonVertexMerge", js.undefined)
     
     @scala.inline
-    def deleteEpsilonVertexAligned: Self = this.set("epsilonVertexAligned", js.undefined)
+    def setUseAlternateEdgeFinder(value: Boolean): Self = StObject.set(x, "useAlternateEdgeFinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpsilonVertexMerge(value: Double): Self = this.set("epsilonVertexMerge", value.asInstanceOf[js.Any])
+    def setUseAlternateEdgeFinderUndefined: Self = StObject.set(x, "useAlternateEdgeFinder", js.undefined)
     
     @scala.inline
-    def deleteEpsilonVertexMerge: Self = this.set("epsilonVertexMerge", js.undefined)
+    def setUseFastVertexMerger(value: Boolean): Self = StObject.set(x, "useFastVertexMerger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseAlternateEdgeFinder(value: Boolean): Self = this.set("useAlternateEdgeFinder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAlternateEdgeFinder: Self = this.set("useAlternateEdgeFinder", js.undefined)
-    
-    @scala.inline
-    def setUseFastVertexMerger(value: Boolean): Self = this.set("useFastVertexMerger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseFastVertexMerger: Self = this.set("useFastVertexMerger", js.undefined)
+    def setUseFastVertexMergerUndefined: Self = StObject.set(x, "useFastVertexMerger", js.undefined)
   }
 }

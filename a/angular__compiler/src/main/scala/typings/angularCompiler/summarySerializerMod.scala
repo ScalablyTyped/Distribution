@@ -9,16 +9,19 @@ import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import typings.angularCompiler.staticSymbolMod.StaticSymbolCache
 import typings.angularCompiler.staticSymbolResolverMod.ResolvedStaticSymbol
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/aot/summary_serializer", JSImport.Namespace)
-@js.native
-object summarySerializerMod extends js.Object {
+object summarySerializerMod {
   
+  @JSImport("@angular/compiler/src/aot/summary_serializer", "createForJitStub")
+  @js.native
   def createForJitStub(outputCtx: OutputContext, reference: StaticSymbol): Unit = js.native
   
+  @JSImport("@angular/compiler/src/aot/summary_serializer", "deserializeSummaries")
+  @js.native
   def deserializeSummaries(
     symbolCache: StaticSymbolCache,
     summaryResolver: SummaryResolver[StaticSymbol],
@@ -26,6 +29,8 @@ object summarySerializerMod extends js.Object {
     json: String
   ): ModuleName = js.native
   
+  @JSImport("@angular/compiler/src/aot/summary_serializer", "serializeSummaries")
+  @js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: Null,
@@ -34,6 +39,8 @@ object summarySerializerMod extends js.Object {
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[Metadata]
   ): Json = js.native
+  @JSImport("@angular/compiler/src/aot/summary_serializer", "serializeSummaries")
+  @js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: Null,
@@ -43,6 +50,8 @@ object summarySerializerMod extends js.Object {
     types: js.Array[Metadata],
     createExternalSymbolReexports: Boolean
   ): Json = js.native
+  @JSImport("@angular/compiler/src/aot/summary_serializer", "serializeSummaries")
+  @js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: OutputContext,
@@ -51,6 +60,8 @@ object summarySerializerMod extends js.Object {
     symbols: js.Array[ResolvedStaticSymbol],
     types: js.Array[Metadata]
   ): Json = js.native
+  @JSImport("@angular/compiler/src/aot/summary_serializer", "serializeSummaries")
+  @js.native
   def serializeSummaries(
     srcFileName: String,
     forJitCtx: OutputContext,

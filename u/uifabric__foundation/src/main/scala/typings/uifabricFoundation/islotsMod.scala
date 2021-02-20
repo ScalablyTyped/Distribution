@@ -5,13 +5,12 @@ import typings.uifabricFoundation.icomponentMod.IComponentOptions
 import typings.uifabricFoundation.libIslotsMod.ISlottableProps
 import typings.uifabricFoundation.libIslotsMod.ValidProps
 import typings.uifabricMergeStyles.istylesetMod.IStyleSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/foundation/lib/next/ISlots", JSImport.Namespace)
-@js.native
-object islotsMod extends js.Object {
+object islotsMod {
   
   @js.native
   trait IFoundationComponent[TComponentProps /* <: ValidProps with ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps /* <: TComponentProps */, TComponentSlots, TStatics]

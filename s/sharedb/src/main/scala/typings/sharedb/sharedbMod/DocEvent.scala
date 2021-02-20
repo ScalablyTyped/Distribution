@@ -1,5 +1,6 @@
 package typings.sharedb.sharedbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sharedb.sharedbStrings.`no write pending`
   - typings.sharedb.sharedbStrings.`nothing pending`
 */
-trait DocEvent extends js.Object
+trait DocEvent extends StObject
 object DocEvent {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDiscovererResponse extends js.Object {
+trait CreateDiscovererResponse extends StObject {
   
   /**
     * The description of the discoverer.
@@ -46,54 +47,42 @@ object CreateDiscovererResponse {
   }
   
   @scala.inline
-  implicit class CreateDiscovererResponseOps[Self <: CreateDiscovererResponse] (val x: Self) extends AnyVal {
+  implicit class CreateDiscovererResponseMutableBuilder[Self <: CreateDiscovererResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiscovererArn(value: string): Self = StObject.set(x, "DiscovererArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDiscovererArnUndefined: Self = StObject.set(x, "DiscovererArn", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscovererArn(value: string): Self = this.set("DiscovererArn", value.asInstanceOf[js.Any])
+    def setDiscovererIdUndefined: Self = StObject.set(x, "DiscovererId", js.undefined)
     
     @scala.inline
-    def deleteDiscovererArn: Self = this.set("DiscovererArn", js.undefined)
+    def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscovererId(value: string): Self = this.set("DiscovererId", value.asInstanceOf[js.Any])
+    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
     @scala.inline
-    def deleteDiscovererId: Self = this.set("DiscovererId", js.undefined)
+    def setState(value: DiscovererState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceArn(value: string): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: DiscovererState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

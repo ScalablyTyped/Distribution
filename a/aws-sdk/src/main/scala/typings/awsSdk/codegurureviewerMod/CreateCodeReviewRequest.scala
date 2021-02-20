@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCodeReviewRequest extends js.Object {
+trait CreateCodeReviewRequest extends StObject {
   
   /**
     *  Amazon CodeGuru Reviewer uses this value to prevent the accidental creation of duplicate code reviews if there are failures and retries. 
@@ -36,33 +37,21 @@ object CreateCodeReviewRequest {
   }
   
   @scala.inline
-  implicit class CreateCodeReviewRequestOps[Self <: CreateCodeReviewRequest] (val x: Self) extends AnyVal {
+  implicit class CreateCodeReviewRequestMutableBuilder[Self <: CreateCodeReviewRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: CodeReviewName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: CodeReviewName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRepositoryAssociationArn(value: AssociationArn): Self = StObject.set(x, "RepositoryAssociationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryAssociationArn(value: AssociationArn): Self = this.set("RepositoryAssociationArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: CodeReviewType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setType(value: CodeReviewType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

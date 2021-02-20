@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsonClassifier extends js.Object {
+trait JsonClassifier extends StObject {
   
   /**
     * The time that this classifier was registered.
@@ -41,42 +42,30 @@ object JsonClassifier {
   }
   
   @scala.inline
-  implicit class JsonClassifierOps[Self <: JsonClassifier] (val x: Self) extends AnyVal {
+  implicit class JsonClassifierMutableBuilder[Self <: JsonClassifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonPath(value: JsonPath): Self = this.set("JsonPath", value.asInstanceOf[js.Any])
+    def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setVersion(value: VersionId): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: Timestamp): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: VersionId): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

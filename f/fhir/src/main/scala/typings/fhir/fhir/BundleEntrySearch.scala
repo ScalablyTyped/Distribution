@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,42 +40,30 @@ object BundleEntrySearch {
   }
   
   @scala.inline
-  implicit class BundleEntrySearchOps[Self <: BundleEntrySearch] (val x: Self) extends AnyVal {
+  implicit class BundleEntrySearchMutableBuilder[Self <: BundleEntrySearch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScore(value: decimal): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_mode(value: Element): Self = this.set("_mode", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def delete_mode: Self = this.set("_mode", js.undefined)
+    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_score(value: Element): Self = this.set("_score", value.asInstanceOf[js.Any])
+    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
     
     @scala.inline
-    def delete_score: Self = this.set("_score", js.undefined)
+    def set_score(value: Element): Self = StObject.set(x, "_score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: code): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setScore(value: decimal): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def set_scoreUndefined: Self = StObject.set(x, "_score", js.undefined)
   }
 }

@@ -1,16 +1,15 @@
 package typings.grunt.grunt
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("grunt.template")
-@js.native
-object template extends js.Object {
+object template {
   
   @js.native
-  trait TemplateModule extends js.Object {
+  trait TemplateModule extends StObject {
     
     /**
       * Add a named set of Lo-Dash template delimiters.

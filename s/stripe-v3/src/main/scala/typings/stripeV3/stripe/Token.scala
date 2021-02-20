@@ -1,11 +1,12 @@
 package typings.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Token extends js.Object {
+trait Token extends StObject {
   
   var bank_account: js.UndefOr[BankAccount] = js.native
   
@@ -44,51 +45,39 @@ object Token {
   }
   
   @scala.inline
-  implicit class TokenOps[Self <: Token] (val x: Self) extends AnyVal {
+  implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBank_account(value: BankAccount): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_ip(value: String): Self = this.set("client_ip", value.asInstanceOf[js.Any])
+    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLivemode(value: Boolean): Self = this.set("livemode", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: String): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsed(value: Boolean): Self = this.set("used", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBank_account(value: BankAccount): Self = this.set("bank_account", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBank_account: Self = this.set("bank_account", js.undefined)
-    
-    @scala.inline
-    def setCard(value: Card): Self = this.set("card", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCard: Self = this.set("card", js.undefined)
+    def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
   }
 }

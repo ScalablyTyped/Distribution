@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitMarginOptions extends js.Object {
+trait UIkitMarginOptions extends StObject {
   
   var `first-column`: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object UIkitMarginOptions {
   }
   
   @scala.inline
-  implicit class UIkitMarginOptionsOps[Self <: UIkitMarginOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitMarginOptionsMutableBuilder[Self <: UIkitMarginOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setFirst-column`(value: String): Self = StObject.set(x, "first-column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setFirst-columnUndefined`: Self = StObject.set(x, "first-column", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFirst-column`(value: String): Self = this.set("first-column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteFirst-column`: Self = this.set("first-column", js.undefined)
-    
-    @scala.inline
-    def setMargin(value: String): Self = this.set("margin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
   }
 }

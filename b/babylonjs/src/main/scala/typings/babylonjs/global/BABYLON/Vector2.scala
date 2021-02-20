@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.DeepImmutable
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +29,7 @@ class Vector2 ()
   y: Double) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.Vector2")
-@js.native
-object Vector2 extends js.Object {
+object Vector2 {
   
   /**
     * Gets a new Vector2 located for "amount" (float) on the CatmullRom spline defined by the given four Vector2
@@ -41,6 +40,8 @@ object Vector2 extends js.Object {
     * @param amount defines the interpolation factor
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.CatmullRom")
+  @js.native
   def CatmullRom(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
@@ -55,6 +56,8 @@ object Vector2 extends js.Object {
     * @param value2 defines second vector
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.Center")
+  @js.native
   def Center(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
@@ -69,6 +72,8 @@ object Vector2 extends js.Object {
     * @param max defines the upper limit
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.Clamp")
+  @js.native
   def Clamp(
     value: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     min: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
@@ -81,6 +86,8 @@ object Vector2 extends js.Object {
     * @param value2 defines second vector
     * @returns the distance between vectors
     */
+  @JSGlobal("BABYLON.Vector2.Distance")
+  @js.native
   def Distance(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
@@ -93,6 +100,8 @@ object Vector2 extends js.Object {
     * @param segB defines the other point of the segment
     * @returns the shortest distance
     */
+  @JSGlobal("BABYLON.Vector2.DistanceOfPointFromSegment")
+  @js.native
   def DistanceOfPointFromSegment(
     p: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     segA: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
@@ -105,6 +114,8 @@ object Vector2 extends js.Object {
     * @param value2 defines second vector
     * @returns the squared distance between vectors
     */
+  @JSGlobal("BABYLON.Vector2.DistanceSquared")
+  @js.native
   def DistanceSquared(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
@@ -116,6 +127,8 @@ object Vector2 extends js.Object {
     * @param right defines second vector
     * @returns the dot product (float)
     */
+  @JSGlobal("BABYLON.Vector2.Dot")
+  @js.native
   def Dot(
     left: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     right: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
@@ -127,7 +140,11 @@ object Vector2 extends js.Object {
     * @param offset defines the offset in the data source
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.FromArray")
+  @js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.BABYLON.Vector2 = js.native
+  @JSGlobal("BABYLON.Vector2.FromArray")
+  @js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.BABYLON.Vector2 = js.native
   
   /**
@@ -136,6 +153,8 @@ object Vector2 extends js.Object {
     * @param offset defines the offset in the data source
     * @param result defines the target vector
     */
+  @JSGlobal("BABYLON.Vector2.FromArrayToRef")
+  @js.native
   def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: typings.babylonjs.BABYLON.Vector2): Unit = js.native
   
   /**
@@ -147,6 +166,8 @@ object Vector2 extends js.Object {
     * @param amount defines the interpolation factor
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.Hermite")
+  @js.native
   def Hermite(
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     tangent1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
@@ -162,6 +183,8 @@ object Vector2 extends js.Object {
     * @param amount defines the interpolation factor
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.Lerp")
+  @js.native
   def Lerp(
     start: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     end: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
@@ -174,6 +197,8 @@ object Vector2 extends js.Object {
     * @param right defines 2nd vector
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.Maximize")
+  @js.native
   def Maximize(
     left: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     right: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
@@ -185,6 +210,8 @@ object Vector2 extends js.Object {
     * @param right defines 2nd vector
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.Minimize")
+  @js.native
   def Minimize(
     left: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     right: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
@@ -195,12 +222,16 @@ object Vector2 extends js.Object {
     * @param vector defines the vector to normalize
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.Normalize")
+  @js.native
   def Normalize(vector: DeepImmutable[typings.babylonjs.BABYLON.Vector2]): typings.babylonjs.BABYLON.Vector2 = js.native
   
   /**
     * Gets a new Vector2(1, 1)
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.One")
+  @js.native
   def One(): typings.babylonjs.BABYLON.Vector2 = js.native
   
   /**
@@ -211,6 +242,8 @@ object Vector2 extends js.Object {
     * @param p2 defines 3rd triangle point
     * @returns true if the point "p" is in the triangle defined by the vertors "p0", "p1", "p2"
     */
+  @JSGlobal("BABYLON.Vector2.PointInTriangle")
+  @js.native
   def PointInTriangle(
     p: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     p0: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
@@ -224,6 +257,8 @@ object Vector2 extends js.Object {
     * @param transformation defines the matrix to apply
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.Transform")
+  @js.native
   def Transform(
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
@@ -235,6 +270,8 @@ object Vector2 extends js.Object {
     * @param transformation defines the matrix to apply
     * @param result defines the target vector
     */
+  @JSGlobal("BABYLON.Vector2.TransformToRef")
+  @js.native
   def TransformToRef(
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
@@ -245,5 +282,7 @@ object Vector2 extends js.Object {
     * Gets a new Vector2(0, 0)
     * @returns a new Vector2
     */
+  @JSGlobal("BABYLON.Vector2.Zero")
+  @js.native
   def Zero(): typings.babylonjs.BABYLON.Vector2 = js.native
 }

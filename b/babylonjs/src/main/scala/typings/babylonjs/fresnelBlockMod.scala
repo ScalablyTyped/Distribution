@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/fresnelBlock", JSImport.Namespace)
-@js.native
-object fresnelBlockMod extends js.Object {
+object fresnelBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/fresnelBlock", "FresnelBlock")
   @js.native
   class FresnelBlock protected () extends NodeMaterialBlock {
     /**

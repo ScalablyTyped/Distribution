@@ -1,11 +1,12 @@
 package typings.trtcJsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoteMutedState extends js.Object {
+trait RemoteMutedState extends StObject {
   
   /** 是否静音 */
   var audioMuted: Boolean = js.native
@@ -31,33 +32,21 @@ object RemoteMutedState {
   }
   
   @scala.inline
-  implicit class RemoteMutedStateOps[Self <: RemoteMutedState] (val x: Self) extends AnyVal {
+  implicit class RemoteMutedStateMutableBuilder[Self <: RemoteMutedState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioMuted(value: Boolean): Self = StObject.set(x, "audioMuted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasAudio(value: Boolean): Self = StObject.set(x, "hasAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasVideo(value: Boolean): Self = StObject.set(x, "hasVideo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioMuted(value: Boolean): Self = this.set("audioMuted", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAudio(value: Boolean): Self = this.set("hasAudio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasVideo(value: Boolean): Self = this.set("hasVideo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoMuted(value: Boolean): Self = this.set("videoMuted", value.asInstanceOf[js.Any])
+    def setVideoMuted(value: Boolean): Self = StObject.set(x, "videoMuted", value.asInstanceOf[js.Any])
   }
 }

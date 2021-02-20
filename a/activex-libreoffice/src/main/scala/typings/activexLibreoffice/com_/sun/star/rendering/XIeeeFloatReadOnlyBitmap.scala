@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.IntegerRectangle2D
 import typings.activexLibreoffice.com_.sun.star.geometry.IntegerSize2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,30 +84,18 @@ object XIeeeFloatReadOnlyBitmap {
   }
   
   @scala.inline
-  implicit class XIeeeFloatReadOnlyBitmapOps[Self <: XIeeeFloatReadOnlyBitmap] (val x: Self) extends AnyVal {
+  implicit class XIeeeFloatReadOnlyBitmapMutableBuilder[Self <: XIeeeFloatReadOnlyBitmap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetData(value: (js.Array[FloatingPointBitmapLayout], IntegerRectangle2D) => SafeArray[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMemoryLayout(value: () => FloatingPointBitmapLayout): Self = StObject.set(x, "getMemoryLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPixel(value: (js.Array[FloatingPointBitmapLayout], IntegerPoint2D) => SafeArray[Double]): Self = StObject.set(x, "getPixel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMemoryLayout(value: FloatingPointBitmapLayout): Self = this.set("MemoryLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetData(value: (js.Array[FloatingPointBitmapLayout], IntegerRectangle2D) => SafeArray[Double]): Self = this.set("getData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetMemoryLayout(value: () => FloatingPointBitmapLayout): Self = this.set("getMemoryLayout", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPixel(value: (js.Array[FloatingPointBitmapLayout], IntegerPoint2D) => SafeArray[Double]): Self = this.set("getPixel", js.Any.fromFunction2(value))
+    def setMemoryLayout(value: FloatingPointBitmapLayout): Self = StObject.set(x, "MemoryLayout", value.asInstanceOf[js.Any])
   }
 }

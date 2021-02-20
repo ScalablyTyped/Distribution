@@ -1,11 +1,12 @@
 package typings.awsSdk.qldbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3ExportConfiguration extends js.Object {
+trait S3ExportConfiguration extends StObject {
   
   /**
     * The Amazon S3 bucket name in which a journal export job writes the journal contents. The bucket name must comply with the Amazon S3 bucket naming conventions. For more information, see Bucket Restrictions and Limitations in the Amazon S3 Developer Guide.
@@ -31,27 +32,15 @@ object S3ExportConfiguration {
   }
   
   @scala.inline
-  implicit class S3ExportConfigurationOps[Self <: S3ExportConfiguration] (val x: Self) extends AnyVal {
+  implicit class S3ExportConfigurationMutableBuilder[Self <: S3ExportConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: S3Bucket): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionConfiguration(value: S3EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBucket(value: S3Bucket): Self = this.set("Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncryptionConfiguration(value: S3EncryptionConfiguration): Self = this.set("EncryptionConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefix(value: S3Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    def setPrefix(value: S3Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
   }
 }

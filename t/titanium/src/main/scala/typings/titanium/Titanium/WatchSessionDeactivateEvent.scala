@@ -1,5 +1,6 @@
 package typings.titanium.Titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,42 +75,30 @@ object WatchSessionDeactivateEvent {
   }
   
   @scala.inline
-  implicit class WatchSessionDeactivateEventOps[Self <: WatchSessionDeactivateEvent] (val x: Self) extends AnyVal {
+  implicit class WatchSessionDeactivateEventMutableBuilder[Self <: WatchSessionDeactivateEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationState(value: Double): Self = StObject.set(x, "activationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasContentPending(value: Boolean): Self = StObject.set(x, "hasContentPending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsActivated(value: Boolean): Self = StObject.set(x, "isActivated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationState(value: Double): Self = this.set("activationState", value.asInstanceOf[js.Any])
+    def setIsComplicationEnabled(value: Boolean): Self = StObject.set(x, "isComplicationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasContentPending(value: Boolean): Self = this.set("hasContentPending", value.asInstanceOf[js.Any])
+    def setIsPaired(value: Boolean): Self = StObject.set(x, "isPaired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActivated(value: Boolean): Self = this.set("isActivated", value.asInstanceOf[js.Any])
+    def setIsReachable(value: Boolean): Self = StObject.set(x, "isReachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComplicationEnabled(value: Boolean): Self = this.set("isComplicationEnabled", value.asInstanceOf[js.Any])
+    def setIsWatchAppInstalled(value: Boolean): Self = StObject.set(x, "isWatchAppInstalled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPaired(value: Boolean): Self = this.set("isPaired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsReachable(value: Boolean): Self = this.set("isReachable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsWatchAppInstalled(value: Boolean): Self = this.set("isWatchAppInstalled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemainingComplicationUserInfoTransfers(value: Boolean): Self = this.set("remainingComplicationUserInfoTransfers", value.asInstanceOf[js.Any])
+    def setRemainingComplicationUserInfoTransfers(value: Boolean): Self = StObject.set(x, "remainingComplicationUserInfoTransfers", value.asInstanceOf[js.Any])
   }
 }

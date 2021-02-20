@@ -1,12 +1,13 @@
 package typings.reactEmailEditor.mod
 
 import typings.std.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileInfo extends js.Object {
+trait FileInfo extends StObject {
   
   val accepted: js.Array[File] = js.native
   
@@ -21,30 +22,18 @@ object FileInfo {
   }
   
   @scala.inline
-  implicit class FileInfoOps[Self <: FileInfo] (val x: Self) extends AnyVal {
+  implicit class FileInfoMutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccepted(value: js.Array[File]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptedVarargs(value: File*): Self = StObject.set(x, "accepted", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachments(value: js.Array[File]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptedVarargs(value: File*): Self = this.set("accepted", js.Array(value :_*))
-    
-    @scala.inline
-    def setAccepted(value: js.Array[File]): Self = this.set("accepted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttachmentsVarargs(value: File*): Self = this.set("attachments", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttachments(value: js.Array[File]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setAttachmentsVarargs(value: File*): Self = StObject.set(x, "attachments", js.Array(value :_*))
   }
 }

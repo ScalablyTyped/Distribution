@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetReservedInstancesExchangeQuoteRequest extends js.Object {
+trait GetReservedInstancesExchangeQuoteRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -31,39 +32,27 @@ object GetReservedInstancesExchangeQuoteRequest {
   }
   
   @scala.inline
-  implicit class GetReservedInstancesExchangeQuoteRequestOps[Self <: GetReservedInstancesExchangeQuoteRequest] (val x: Self) extends AnyVal {
+  implicit class GetReservedInstancesExchangeQuoteRequestMutableBuilder[Self <: GetReservedInstancesExchangeQuoteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservedInstanceIds(value: ReservedInstanceIdSet): Self = StObject.set(x, "ReservedInstanceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedInstanceIdsVarargs(value: ReservationId*): Self = this.set("ReservedInstanceIds", js.Array(value :_*))
+    def setReservedInstanceIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstanceIds", js.Array(value :_*))
     
     @scala.inline
-    def setReservedInstanceIds(value: ReservedInstanceIdSet): Self = this.set("ReservedInstanceIds", value.asInstanceOf[js.Any])
+    def setTargetConfigurations(value: TargetConfigurationRequestSet): Self = StObject.set(x, "TargetConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setTargetConfigurationsUndefined: Self = StObject.set(x, "TargetConfigurations", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
-    
-    @scala.inline
-    def setTargetConfigurationsVarargs(value: TargetConfigurationRequest*): Self = this.set("TargetConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetConfigurations(value: TargetConfigurationRequestSet): Self = this.set("TargetConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetConfigurations: Self = this.set("TargetConfigurations", js.undefined)
+    def setTargetConfigurationsVarargs(value: TargetConfigurationRequest*): Self = StObject.set(x, "TargetConfigurations", js.Array(value :_*))
   }
 }

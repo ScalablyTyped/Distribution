@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WizardOptions extends js.Object {
+trait WizardOptions extends StObject {
   
   var actionBar: js.UndefOr[Boolean] = js.native
   
@@ -50,123 +51,111 @@ object WizardOptions {
   }
   
   @scala.inline
-  implicit class WizardOptionsOps[Self <: WizardOptions] (val x: Self) extends AnyVal {
+  implicit class WizardOptionsMutableBuilder[Self <: WizardOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionBar(value: Boolean): Self = StObject.set(x, "actionBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionBarUndefined: Self = StObject.set(x, "actionBar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivate(value: /* e */ WizardActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActionBar(value: Boolean): Self = this.set("actionBar", value.asInstanceOf[js.Any])
+    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
     @scala.inline
-    def deleteActionBar: Self = this.set("actionBar", js.undefined)
+    def setContentLoad(value: /* e */ WizardContentLoadEvent => Unit): Self = StObject.set(x, "contentLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActivate(value: /* e */ WizardActivateEvent => Unit): Self = this.set("activate", js.Any.fromFunction1(value))
+    def setContentLoadUndefined: Self = StObject.set(x, "contentLoad", js.undefined)
     
     @scala.inline
-    def deleteActivate: Self = this.set("activate", js.undefined)
+    def setContentPosition(value: String): Self = StObject.set(x, "contentPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLoad(value: /* e */ WizardContentLoadEvent => Unit): Self = this.set("contentLoad", js.Any.fromFunction1(value))
+    def setContentPositionUndefined: Self = StObject.set(x, "contentPosition", js.undefined)
     
     @scala.inline
-    def deleteContentLoad: Self = this.set("contentLoad", js.undefined)
+    def setDone(value: /* e */ WizardDoneEvent => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContentPosition(value: String): Self = this.set("contentPosition", value.asInstanceOf[js.Any])
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def deleteContentPosition: Self = this.set("contentPosition", js.undefined)
+    def setError(value: /* e */ WizardErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDone(value: /* e */ WizardDoneEvent => Unit): Self = this.set("done", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
+    def setFormValidateFailed(value: /* e */ WizardFormValidateFailedEvent => Unit): Self = StObject.set(x, "formValidateFailed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: /* e */ WizardErrorEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setFormValidateFailedUndefined: Self = StObject.set(x, "formValidateFailed", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setLoadOnDemand(value: Boolean): Self = StObject.set(x, "loadOnDemand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormValidateFailed(value: /* e */ WizardFormValidateFailedEvent => Unit): Self = this.set("formValidateFailed", js.Any.fromFunction1(value))
+    def setLoadOnDemandUndefined: Self = StObject.set(x, "loadOnDemand", js.undefined)
     
     @scala.inline
-    def deleteFormValidateFailed: Self = this.set("formValidateFailed", js.undefined)
+    def setMessages(value: WizardMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadOnDemand(value: Boolean): Self = this.set("loadOnDemand", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteLoadOnDemand: Self = this.set("loadOnDemand", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: WizardMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setPager(value: Boolean): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReloadOnSelect(value: Boolean): Self = StObject.set(x, "reloadOnSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPager(value: Boolean): Self = this.set("pager", value.asInstanceOf[js.Any])
+    def setReloadOnSelectUndefined: Self = StObject.set(x, "reloadOnSelect", js.undefined)
     
     @scala.inline
-    def deletePager: Self = this.set("pager", js.undefined)
+    def setReset(value: /* e */ WizardResetEvent => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReloadOnSelect(value: Boolean): Self = this.set("reloadOnSelect", value.asInstanceOf[js.Any])
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteReloadOnSelect: Self = this.set("reloadOnSelect", js.undefined)
+    def setSelect(value: /* e */ WizardSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: /* e */ WizardResetEvent => Unit): Self = this.set("reset", js.Any.fromFunction1(value))
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setStepper(value: WizardStepper): Self = StObject.set(x, "stepper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: /* e */ WizardSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    def setStepperUndefined: Self = StObject.set(x, "stepper", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSteps(value: js.Array[WizardStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepper(value: WizardStepper): Self = this.set("stepper", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def deleteStepper: Self = this.set("stepper", js.undefined)
+    def setStepsVarargs(value: WizardStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
     @scala.inline
-    def setStepsVarargs(value: WizardStep*): Self = this.set("steps", js.Array(value :_*))
+    def setValidateForms(value: Boolean): Self = StObject.set(x, "validateForms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteps(value: js.Array[WizardStep]): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
-    
-    @scala.inline
-    def setValidateForms(value: Boolean): Self = this.set("validateForms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateForms: Self = this.set("validateForms", js.undefined)
+    def setValidateFormsUndefined: Self = StObject.set(x, "validateForms", js.undefined)
   }
 }

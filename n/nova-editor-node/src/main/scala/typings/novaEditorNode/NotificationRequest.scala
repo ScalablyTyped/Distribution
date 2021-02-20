@@ -2,13 +2,14 @@ package typings.novaEditorNode
 
 import typings.novaEditorNode.novaEditorNodeStrings.`secure-input`
 import typings.novaEditorNode.novaEditorNodeStrings.input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/notification-request/
 @js.native
-trait NotificationRequest extends js.Object {
+trait NotificationRequest extends StObject {
   
   var actions: js.UndefOr[js.Array[String]] = js.native
   
@@ -33,60 +34,48 @@ object NotificationRequest {
   }
   
   @scala.inline
-  implicit class NotificationRequestOps[Self <: NotificationRequest] (val x: Self) extends AnyVal {
+  implicit class NotificationRequestMutableBuilder[Self <: NotificationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setActions(value: js.Array[String]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setTextInputPlaceholder(value: String): Self = StObject.set(x, "textInputPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setTextInputPlaceholderUndefined: Self = StObject.set(x, "textInputPlaceholder", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setTextInputValue(value: String): Self = StObject.set(x, "textInputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextInputPlaceholder(value: String): Self = this.set("textInputPlaceholder", value.asInstanceOf[js.Any])
+    def setTextInputValueUndefined: Self = StObject.set(x, "textInputValue", js.undefined)
     
     @scala.inline
-    def deleteTextInputPlaceholder: Self = this.set("textInputPlaceholder", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextInputValue(value: String): Self = this.set("textInputValue", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTextInputValue: Self = this.set("textInputValue", js.undefined)
+    def setType(value: input | `secure-input`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: input | `secure-input`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

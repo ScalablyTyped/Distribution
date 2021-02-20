@@ -4,17 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.snabbdom.mod.ArrayOrElement
 import typings.snabbdom.vnodeMod.VNodeData
 import typings.snabbdom.vnodeMod.VNode_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("snabbdom/build/package/jsx", JSImport.Namespace)
-@js.native
-object jsxMod extends js.Object {
+object jsxMod {
   
+  @JSImport("snabbdom/build/package/jsx", "jsx")
+  @js.native
   def jsx(tag: String, data: Null, children: JsxVNodeChildren*): VNode_ = js.native
+  @JSImport("snabbdom/build/package/jsx", "jsx")
+  @js.native
   def jsx(tag: String, data: VNodeData, children: JsxVNodeChildren*): VNode_ = js.native
+  @JSImport("snabbdom/build/package/jsx", "jsx")
+  @js.native
   def jsx(tag: FunctionComponent, data: Null, children: JsxVNodeChildren*): VNode_ = js.native
+  @JSImport("snabbdom/build/package/jsx", "jsx")
+  @js.native
   def jsx(tag: FunctionComponent, data: VNodeData, children: JsxVNodeChildren*): VNode_ = js.native
   
   type FunctionComponent = js.Function2[

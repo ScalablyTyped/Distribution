@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfoWindowOptions extends js.Object {
+trait InfoWindowOptions extends StObject {
   
   var enableAutoPan: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object InfoWindowOptions {
   }
   
   @scala.inline
-  implicit class InfoWindowOptionsOps[Self <: InfoWindowOptions] (val x: Self) extends AnyVal {
+  implicit class InfoWindowOptionsMutableBuilder[Self <: InfoWindowOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableAutoPan(value: Boolean): Self = StObject.set(x, "enableAutoPan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableAutoPanUndefined: Self = StObject.set(x, "enableAutoPan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableCloseOnClick(value: Boolean): Self = StObject.set(x, "enableCloseOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoPan(value: Boolean): Self = this.set("enableAutoPan", value.asInstanceOf[js.Any])
+    def setEnableCloseOnClickUndefined: Self = StObject.set(x, "enableCloseOnClick", js.undefined)
     
     @scala.inline
-    def deleteEnableAutoPan: Self = this.set("enableAutoPan", js.undefined)
+    def setEnableMessage(value: Boolean): Self = StObject.set(x, "enableMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCloseOnClick(value: Boolean): Self = this.set("enableCloseOnClick", value.asInstanceOf[js.Any])
+    def setEnableMessageUndefined: Self = StObject.set(x, "enableMessage", js.undefined)
     
     @scala.inline
-    def deleteEnableCloseOnClick: Self = this.set("enableCloseOnClick", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMessage(value: Boolean): Self = this.set("enableMessage", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteEnableMessage: Self = this.set("enableMessage", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Size): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

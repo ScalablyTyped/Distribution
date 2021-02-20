@@ -5,19 +5,19 @@ import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceInput
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.models0Mod.ListTagsForResourceInput
 import typings.awsSdkClientCognitoIdentity.models0Mod.ListTagsForResourceResponse
-import typings.awsSdkSmithyClient.commandMod.Command
+import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.awsSdkTypes.responseMod.MetadataBearer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity/types/commands/ListTagsForResourceCommand", JSImport.Namespace)
-@js.native
-object listTagsForResourceCommandMod extends js.Object {
+object listTagsForResourceCommandMod {
   
+  @JSImport("@aws-sdk/client-cognito-identity/types/commands/ListTagsForResourceCommand", "ListTagsForResourceCommand")
   @js.native
   class ListTagsForResourceCommand protected ()
     extends Command[

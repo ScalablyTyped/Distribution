@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportingCsvOptions extends js.Object {
+trait ExportingCsvOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for annotations in the
@@ -76,63 +77,51 @@ object ExportingCsvOptions {
   }
   
   @scala.inline
-  implicit class ExportingCsvOptionsOps[Self <: ExportingCsvOptions] (val x: Self) extends AnyVal {
+  implicit class ExportingCsvOptionsMutableBuilder[Self <: ExportingCsvOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: ExportingCsvAnnotationsOptions): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnHeaderFormatter(value: js.Function): Self = StObject.set(x, "columnHeaderFormatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: ExportingCsvAnnotationsOptions): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setColumnHeaderFormatterNull: Self = StObject.set(x, "columnHeaderFormatter", null)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setColumnHeaderFormatterUndefined: Self = StObject.set(x, "columnHeaderFormatter", js.undefined)
     
     @scala.inline
-    def setColumnHeaderFormatter(value: js.Function): Self = this.set("columnHeaderFormatter", value.asInstanceOf[js.Any])
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnHeaderFormatter: Self = this.set("columnHeaderFormatter", js.undefined)
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def setColumnHeaderFormatterNull: Self = this.set("columnHeaderFormatter", null)
+    def setDecimalPoint(value: String): Self = StObject.set(x, "decimalPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDecimalPointNull: Self = StObject.set(x, "decimalPoint", null)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setDecimalPointUndefined: Self = StObject.set(x, "decimalPoint", js.undefined)
     
     @scala.inline
-    def setDecimalPoint(value: String): Self = this.set("decimalPoint", value.asInstanceOf[js.Any])
+    def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecimalPoint: Self = this.set("decimalPoint", js.undefined)
+    def setItemDelimiterNull: Self = StObject.set(x, "itemDelimiter", null)
     
     @scala.inline
-    def setDecimalPointNull: Self = this.set("decimalPoint", null)
+    def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
     
     @scala.inline
-    def setItemDelimiter(value: String): Self = this.set("itemDelimiter", value.asInstanceOf[js.Any])
+    def setLineDelimiter(value: String): Self = StObject.set(x, "lineDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemDelimiter: Self = this.set("itemDelimiter", js.undefined)
-    
-    @scala.inline
-    def setItemDelimiterNull: Self = this.set("itemDelimiter", null)
-    
-    @scala.inline
-    def setLineDelimiter(value: String): Self = this.set("lineDelimiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineDelimiter: Self = this.set("lineDelimiter", js.undefined)
+    def setLineDelimiterUndefined: Self = StObject.set(x, "lineDelimiter", js.undefined)
   }
 }

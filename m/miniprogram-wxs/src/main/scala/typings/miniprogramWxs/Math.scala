@@ -1,11 +1,12 @@
 package typings.miniprogramWxs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Math extends js.Object {
+trait Math extends StObject {
   
   /** The mathematical constant e. This is Euler's number, the base of natural logarithms. */
   val E: Double = js.native
@@ -175,96 +176,84 @@ object Math {
   }
   
   @scala.inline
-  implicit class MathOps[Self <: Math] (val x: Self) extends AnyVal {
+  implicit class MathMutableBuilder[Self <: Math] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbs(value: Double => Double): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcos(value: Double => Double): Self = StObject.set(x, "acos", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsin(value: Double => Double): Self = StObject.set(x, "asin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setE(value: Double): Self = this.set("E", value.asInstanceOf[js.Any])
+    def setAtan(value: Double => Double): Self = StObject.set(x, "atan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLN10(value: Double): Self = this.set("LN10", value.asInstanceOf[js.Any])
+    def setAtan2(value: (Double, Double) => Double): Self = StObject.set(x, "atan2", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLN2(value: Double): Self = this.set("LN2", value.asInstanceOf[js.Any])
+    def setCeil(value: Double => Double): Self = StObject.set(x, "ceil", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLOG10E(value: Double): Self = this.set("LOG10E", value.asInstanceOf[js.Any])
+    def setCos(value: Double => Double): Self = StObject.set(x, "cos", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLOG2E(value: Double): Self = this.set("LOG2E", value.asInstanceOf[js.Any])
+    def setE(value: Double): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPI(value: Double): Self = this.set("PI", value.asInstanceOf[js.Any])
+    def setExp(value: Double => Double): Self = StObject.set(x, "exp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSQRT1_2(value: Double): Self = this.set("SQRT1_2", value.asInstanceOf[js.Any])
+    def setFloor(value: Double => Double): Self = StObject.set(x, "floor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSQRT2(value: Double): Self = this.set("SQRT2", value.asInstanceOf[js.Any])
+    def setLN10(value: Double): Self = StObject.set(x, "LN10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbs(value: Double => Double): Self = this.set("abs", js.Any.fromFunction1(value))
+    def setLN2(value: Double): Self = StObject.set(x, "LN2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcos(value: Double => Double): Self = this.set("acos", js.Any.fromFunction1(value))
+    def setLOG10E(value: Double): Self = StObject.set(x, "LOG10E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsin(value: Double => Double): Self = this.set("asin", js.Any.fromFunction1(value))
+    def setLOG2E(value: Double): Self = StObject.set(x, "LOG2E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtan(value: Double => Double): Self = this.set("atan", js.Any.fromFunction1(value))
+    def setLog(value: Double => Double): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAtan2(value: (Double, Double) => Double): Self = this.set("atan2", js.Any.fromFunction2(value))
+    def setMax(value: /* repeated */ Double => Double): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCeil(value: Double => Double): Self = this.set("ceil", js.Any.fromFunction1(value))
+    def setMin(value: /* repeated */ Double => Double): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCos(value: Double => Double): Self = this.set("cos", js.Any.fromFunction1(value))
+    def setPI(value: Double): Self = StObject.set(x, "PI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExp(value: Double => Double): Self = this.set("exp", js.Any.fromFunction1(value))
+    def setPow(value: (Double, Double) => Double): Self = StObject.set(x, "pow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFloor(value: Double => Double): Self = this.set("floor", js.Any.fromFunction1(value))
+    def setRandom(value: () => Double): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLog(value: Double => Double): Self = this.set("log", js.Any.fromFunction1(value))
+    def setRound(value: Double => Double): Self = StObject.set(x, "round", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMax(value: /* repeated */ Double => Double): Self = this.set("max", js.Any.fromFunction1(value))
+    def setSQRT1_2(value: Double): Self = StObject.set(x, "SQRT1_2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: /* repeated */ Double => Double): Self = this.set("min", js.Any.fromFunction1(value))
+    def setSQRT2(value: Double): Self = StObject.set(x, "SQRT2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPow(value: (Double, Double) => Double): Self = this.set("pow", js.Any.fromFunction2(value))
+    def setSin(value: Double => Double): Self = StObject.set(x, "sin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRandom(value: () => Double): Self = this.set("random", js.Any.fromFunction0(value))
+    def setSqrt(value: Double => Double): Self = StObject.set(x, "sqrt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRound(value: Double => Double): Self = this.set("round", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSin(value: Double => Double): Self = this.set("sin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSqrt(value: Double => Double): Self = this.set("sqrt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTan(value: Double => Double): Self = this.set("tan", js.Any.fromFunction1(value))
+    def setTan(value: Double => Double): Self = StObject.set(x, "tan", js.Any.fromFunction1(value))
   }
 }

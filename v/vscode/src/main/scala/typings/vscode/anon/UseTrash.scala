@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseTrash extends js.Object {
+trait UseTrash extends StObject {
   
   var recursive: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object UseTrash {
   }
   
   @scala.inline
-  implicit class UseTrashOps[Self <: UseTrash] (val x: Self) extends AnyVal {
+  implicit class UseTrashMutableBuilder[Self <: UseTrash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseTrash(value: Boolean): Self = StObject.set(x, "useTrash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
-    
-    @scala.inline
-    def setUseTrash(value: Boolean): Self = this.set("useTrash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseTrash: Self = this.set("useTrash", js.undefined)
+    def setUseTrashUndefined: Self = StObject.set(x, "useTrash", js.undefined)
   }
 }

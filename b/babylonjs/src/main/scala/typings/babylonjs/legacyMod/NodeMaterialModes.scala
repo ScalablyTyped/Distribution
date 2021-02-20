@@ -1,12 +1,13 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Legacy/legacy", "NodeMaterialModes")
 @js.native
-object NodeMaterialModes extends js.Object {
+object NodeMaterialModes extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.nodeMaterialModesMod.NodeMaterialModes with Double] = js.native

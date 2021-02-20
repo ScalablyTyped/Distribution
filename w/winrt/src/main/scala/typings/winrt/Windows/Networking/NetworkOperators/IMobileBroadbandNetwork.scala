@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
 import typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMobileBroadbandNetwork extends js.Object {
+trait IMobileBroadbandNetwork extends StObject {
   
   var accessPointName: String = js.native
   
@@ -48,48 +49,36 @@ object IMobileBroadbandNetwork {
   }
   
   @scala.inline
-  implicit class IMobileBroadbandNetworkOps[Self <: IMobileBroadbandNetwork] (val x: Self) extends AnyVal {
+  implicit class IMobileBroadbandNetworkMutableBuilder[Self <: IMobileBroadbandNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationNetworkError(value: Double): Self = StObject.set(x, "activationNetworkError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkAdapter(value: NetworkAdapter): Self = StObject.set(x, "networkAdapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPointName(value: String): Self = this.set("accessPointName", value.asInstanceOf[js.Any])
+    def setNetworkRegistrationState(value: NetworkRegistrationState): Self = StObject.set(x, "networkRegistrationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationNetworkError(value: Double): Self = this.set("activationNetworkError", value.asInstanceOf[js.Any])
+    def setPacketAttachNetworkError(value: Double): Self = StObject.set(x, "packetAttachNetworkError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkAdapter(value: NetworkAdapter): Self = this.set("networkAdapter", value.asInstanceOf[js.Any])
+    def setRegisteredDataClass(value: DataClasses): Self = StObject.set(x, "registeredDataClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkRegistrationState(value: NetworkRegistrationState): Self = this.set("networkRegistrationState", value.asInstanceOf[js.Any])
+    def setRegisteredProviderId(value: String): Self = StObject.set(x, "registeredProviderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacketAttachNetworkError(value: Double): Self = this.set("packetAttachNetworkError", value.asInstanceOf[js.Any])
+    def setRegisteredProviderName(value: String): Self = StObject.set(x, "registeredProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredDataClass(value: DataClasses): Self = this.set("registeredDataClass", value.asInstanceOf[js.Any])
+    def setRegistrationNetworkError(value: Double): Self = StObject.set(x, "registrationNetworkError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredProviderId(value: String): Self = this.set("registeredProviderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegisteredProviderName(value: String): Self = this.set("registeredProviderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegistrationNetworkError(value: Double): Self = this.set("registrationNetworkError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowConnectionUI(value: () => Unit): Self = this.set("showConnectionUI", js.Any.fromFunction0(value))
+    def setShowConnectionUI(value: () => Unit): Self = StObject.set(x, "showConnectionUI", js.Any.fromFunction0(value))
   }
 }

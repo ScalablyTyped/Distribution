@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Image extends js.Object {
+trait Image extends StObject {
   
   /**
     * An URL to an image with a default lifetime of 30 minutes. This URL is tagged with the account of the requester. Anyone with the URL effectively accesses the image as the original
@@ -28,36 +29,24 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentUrl(value: String): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
     
     @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageProperties(value: ImageProperties): Self = this.set("imageProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageProperties: Self = this.set("imageProperties", js.undefined)
-    
-    @scala.inline
-    def setSourceUrl(value: String): Self = this.set("sourceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceUrl: Self = this.set("sourceUrl", js.undefined)
+    def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
   }
 }

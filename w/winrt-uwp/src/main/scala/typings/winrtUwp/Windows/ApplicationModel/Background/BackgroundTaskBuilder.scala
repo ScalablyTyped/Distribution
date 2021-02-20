@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a background task to be registered with the system. */
 @js.native
-trait BackgroundTaskBuilder extends js.Object {
+trait BackgroundTaskBuilder extends StObject {
   
   /**
     * Adds a condition to a background task.
@@ -55,39 +56,27 @@ object BackgroundTaskBuilder {
   }
   
   @scala.inline
-  implicit class BackgroundTaskBuilderOps[Self <: BackgroundTaskBuilder] (val x: Self) extends AnyVal {
+  implicit class BackgroundTaskBuilderMutableBuilder[Self <: BackgroundTaskBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCondition(value: IBackgroundCondition => Unit): Self = StObject.set(x, "addCondition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelOnConditionLoss(value: Boolean): Self = StObject.set(x, "cancelOnConditionLoss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNetworkRequested(value: Boolean): Self = StObject.set(x, "isNetworkRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddCondition(value: IBackgroundCondition => Unit): Self = this.set("addCondition", js.Any.fromFunction1(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelOnConditionLoss(value: Boolean): Self = this.set("cancelOnConditionLoss", value.asInstanceOf[js.Any])
+    def setRegister(value: () => BackgroundTaskRegistration): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsNetworkRequested(value: Boolean): Self = this.set("isNetworkRequested", value.asInstanceOf[js.Any])
+    def setSetTrigger(value: IBackgroundTrigger => Unit): Self = StObject.set(x, "setTrigger", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegister(value: () => BackgroundTaskRegistration): Self = this.set("register", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetTrigger(value: IBackgroundTrigger => Unit): Self = this.set("setTrigger", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTaskEntryPoint(value: String): Self = this.set("taskEntryPoint", value.asInstanceOf[js.Any])
+    def setTaskEntryPoint(value: String): Self = StObject.set(x, "taskEntryPoint", value.asInstanceOf[js.Any])
   }
 }

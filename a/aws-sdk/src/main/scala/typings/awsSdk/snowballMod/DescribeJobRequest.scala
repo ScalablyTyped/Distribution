@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeJobRequest extends js.Object {
+trait DescribeJobRequest extends StObject {
   
   /**
     * The automatically generated ID for a job, for example JID123e4567-e89b-12d3-a456-426655440000.
@@ -21,21 +22,9 @@ object DescribeJobRequest {
   }
   
   @scala.inline
-  implicit class DescribeJobRequestOps[Self <: DescribeJobRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeJobRequestMutableBuilder[Self <: DescribeJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

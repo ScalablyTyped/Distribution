@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplyWorkspaceEditResponse extends js.Object {
+trait ApplyWorkspaceEditResponse extends StObject {
   
   /**
     * Indicates whether the edit was applied or not.
@@ -35,33 +36,21 @@ object ApplyWorkspaceEditResponse {
   }
   
   @scala.inline
-  implicit class ApplyWorkspaceEditResponseOps[Self <: ApplyWorkspaceEditResponse] (val x: Self) extends AnyVal {
+  implicit class ApplyWorkspaceEditResponseMutableBuilder[Self <: ApplyWorkspaceEditResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplied(value: Boolean): Self = StObject.set(x, "applied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedChange(value: Double): Self = StObject.set(x, "failedChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedChangeUndefined: Self = StObject.set(x, "failedChange", js.undefined)
     
     @scala.inline
-    def setApplied(value: Boolean): Self = this.set("applied", value.asInstanceOf[js.Any])
+    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedChange(value: Double): Self = this.set("failedChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedChange: Self = this.set("failedChange", js.undefined)
-    
-    @scala.inline
-    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlacementStatistics extends js.Object {
+trait PlacementStatistics extends StObject {
   
   /**
     * The percentage of emails that were authenticated by using DomainKeys Identified Mail (DKIM) during the predictive inbox placement test.
@@ -41,48 +42,36 @@ object PlacementStatistics {
   }
   
   @scala.inline
-  implicit class PlacementStatisticsOps[Self <: PlacementStatistics] (val x: Self) extends AnyVal {
+  implicit class PlacementStatisticsMutableBuilder[Self <: PlacementStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDkimPercentage(value: Percentage): Self = StObject.set(x, "DkimPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDkimPercentageUndefined: Self = StObject.set(x, "DkimPercentage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInboxPercentage(value: Percentage): Self = StObject.set(x, "InboxPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDkimPercentage(value: Percentage): Self = this.set("DkimPercentage", value.asInstanceOf[js.Any])
+    def setInboxPercentageUndefined: Self = StObject.set(x, "InboxPercentage", js.undefined)
     
     @scala.inline
-    def deleteDkimPercentage: Self = this.set("DkimPercentage", js.undefined)
+    def setMissingPercentage(value: Percentage): Self = StObject.set(x, "MissingPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboxPercentage(value: Percentage): Self = this.set("InboxPercentage", value.asInstanceOf[js.Any])
+    def setMissingPercentageUndefined: Self = StObject.set(x, "MissingPercentage", js.undefined)
     
     @scala.inline
-    def deleteInboxPercentage: Self = this.set("InboxPercentage", js.undefined)
+    def setSpamPercentage(value: Percentage): Self = StObject.set(x, "SpamPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissingPercentage(value: Percentage): Self = this.set("MissingPercentage", value.asInstanceOf[js.Any])
+    def setSpamPercentageUndefined: Self = StObject.set(x, "SpamPercentage", js.undefined)
     
     @scala.inline
-    def deleteMissingPercentage: Self = this.set("MissingPercentage", js.undefined)
+    def setSpfPercentage(value: Percentage): Self = StObject.set(x, "SpfPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpamPercentage(value: Percentage): Self = this.set("SpamPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpamPercentage: Self = this.set("SpamPercentage", js.undefined)
-    
-    @scala.inline
-    def setSpfPercentage(value: Percentage): Self = this.set("SpfPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpfPercentage: Self = this.set("SpfPercentage", js.undefined)
+    def setSpfPercentageUndefined: Self = StObject.set(x, "SpfPercentage", js.undefined)
   }
 }

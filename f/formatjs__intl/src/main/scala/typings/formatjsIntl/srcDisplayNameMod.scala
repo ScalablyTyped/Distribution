@@ -4,14 +4,15 @@ import typings.formatjsIntl.anon.Locale
 import typings.formatjsIntl.anon.TypeofDisplayNames
 import typings.formatjsIntlDisplaynames.mod.DisplayNames
 import typings.std.ConstructorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/intl/src/displayName", JSImport.Namespace)
-@js.native
-object srcDisplayNameMod extends js.Object {
+object srcDisplayNameMod {
   
+  @JSImport("@formatjs/intl/src/displayName", "formatDisplayName")
+  @js.native
   def formatDisplayName(
     hasLocaleOnError: Locale,
     getDisplayNames: js.Function1[/* args */ ConstructorParameters[TypeofDisplayNames], DisplayNames],

@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.`have-remote-pranswer`
   - typings.std.stdStrings.stable
 */
-trait RTCSignalingState extends js.Object
+trait RTCSignalingState extends StObject
 object RTCSignalingState {
   
   @scala.inline

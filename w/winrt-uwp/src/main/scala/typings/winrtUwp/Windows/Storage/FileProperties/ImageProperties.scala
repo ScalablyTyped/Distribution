@@ -8,13 +8,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the image-related properties of an item (like a file or folder). */
 @js.native
-trait ImageProperties extends js.Object {
+trait ImageProperties extends StObject {
   
   /** Gets or sets the manufacturer of the camera that took the photo. */
   var cameraManufacturer: String = js.native

@@ -1,11 +1,12 @@
 package typings.antvComponent.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Padding extends js.Object {
+trait Padding extends StObject {
   
   var padding: Double = js.native
   
@@ -20,24 +21,12 @@ object Padding {
   }
   
   @scala.inline
-  implicit class PaddingOps[Self <: Padding] (val x: Self) extends AnyVal {
+  implicit class PaddingMutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: StrokeString): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: StrokeString): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

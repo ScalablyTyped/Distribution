@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.foreignKeyMetadataMod.ForeignKeyMetadata
 import typings.typeorm.tableForeignKeyOptionsMod.TableForeignKeyOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/schema-builder/table/TableForeignKey", JSImport.Namespace)
-@js.native
-object tableForeignKeyMod extends js.Object {
+object tableForeignKeyMod {
   
+  @JSImport("typeorm/browser/schema-builder/table/TableForeignKey", "TableForeignKey")
   @js.native
-  class TableForeignKey protected () extends js.Object {
+  class TableForeignKey protected () extends StObject {
     def this(options: TableForeignKeyOptions) = this()
     
     /**
@@ -53,12 +53,13 @@ object tableForeignKeyMod extends js.Object {
     var referencedTableName: String = js.native
   }
   /* static members */
-  @js.native
-  object TableForeignKey extends js.Object {
+  object TableForeignKey {
     
     /**
       * Creates a new table foreign key from the given foreign key metadata.
       */
+    @JSImport("typeorm/browser/schema-builder/table/TableForeignKey", "TableForeignKey.create")
+    @js.native
     def create(metadata: ForeignKeyMetadata): TableForeignKey = js.native
   }
 }

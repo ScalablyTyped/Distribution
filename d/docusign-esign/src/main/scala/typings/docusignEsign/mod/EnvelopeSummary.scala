@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeSummary extends js.Object {
+trait EnvelopeSummary extends StObject {
   
   /**
     * An object that describes the status of the bulk send envelopes.
@@ -57,56 +58,44 @@ object EnvelopeSummary {
   }
   
   @scala.inline
-  implicit class EnvelopeSummaryOps[Self <: EnvelopeSummary] (val x: Self) extends AnyVal {
+  implicit class EnvelopeSummaryMutableBuilder[Self <: EnvelopeSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkEnvelopeStatus(value: BulkEnvelopeStatus): Self = StObject.set(x, "bulkEnvelopeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkEnvelopeStatusUndefined: Self = StObject.set(x, "bulkEnvelopeStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkEnvelopeStatus(value: BulkEnvelopeStatus): Self = this.set("bulkEnvelopeStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBulkEnvelopeStatus: Self = this.set("bulkEnvelopeStatus", js.undefined)
-    
-    @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusDateTime(value: String): Self = StObject.set(x, "statusDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusDateTime(value: String): Self = this.set("statusDateTime", value.asInstanceOf[js.Any])
+    def setStatusDateTimeUndefined: Self = StObject.set(x, "statusDateTime", js.undefined)
     
     @scala.inline
-    def deleteStatusDateTime: Self = this.set("statusDateTime", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

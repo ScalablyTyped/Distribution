@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,81 +83,69 @@ object BootstrapCardViewEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapCardViewEventMapOps[Self <: BootstrapCardViewEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapCardViewEventMapMutableBuilder[Self <: BootstrapCardViewEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchEditCardDeleting(value: CardViewBatchEditCardDeletingEventArgs): Self = StObject.set(x, "batchEditCardDeleting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchEditCardInserting(value: CardViewBatchEditCardInsertingEventArgs): Self = StObject.set(x, "batchEditCardInserting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchEditCardValidating(value: CardViewBatchEditCardValidatingEventArgs): Self = StObject.set(x, "batchEditCardValidating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditCardDeleting(value: CardViewBatchEditCardDeletingEventArgs): Self = this.set("batchEditCardDeleting", value.asInstanceOf[js.Any])
+    def setBatchEditChangesCanceling(value: CardViewBatchEditChangesCancelingEventArgs): Self = StObject.set(x, "batchEditChangesCanceling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditCardInserting(value: CardViewBatchEditCardInsertingEventArgs): Self = this.set("batchEditCardInserting", value.asInstanceOf[js.Any])
+    def setBatchEditChangesSaving(value: CardViewBatchEditChangesSavingEventArgs): Self = StObject.set(x, "batchEditChangesSaving", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditCardValidating(value: CardViewBatchEditCardValidatingEventArgs): Self = this.set("batchEditCardValidating", value.asInstanceOf[js.Any])
+    def setBatchEditConfirmShowing(value: CardViewBatchEditConfirmShowingEventArgs): Self = StObject.set(x, "batchEditConfirmShowing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditChangesCanceling(value: CardViewBatchEditChangesCancelingEventArgs): Self = this.set("batchEditChangesCanceling", value.asInstanceOf[js.Any])
+    def setBatchEditEndEditing(value: CardViewBatchEditEndEditingEventArgs): Self = StObject.set(x, "batchEditEndEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditChangesSaving(value: CardViewBatchEditChangesSavingEventArgs): Self = this.set("batchEditChangesSaving", value.asInstanceOf[js.Any])
+    def setBatchEditStartEditing(value: CardViewBatchEditStartEditingEventArgs): Self = StObject.set(x, "batchEditStartEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditConfirmShowing(value: CardViewBatchEditConfirmShowingEventArgs): Self = this.set("batchEditConfirmShowing", value.asInstanceOf[js.Any])
+    def setBatchEditTemplateCellFocused(value: CardViewBatchEditTemplateCellFocusedEventArgs): Self = StObject.set(x, "batchEditTemplateCellFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditEndEditing(value: CardViewBatchEditEndEditingEventArgs): Self = this.set("batchEditEndEditing", value.asInstanceOf[js.Any])
+    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditStartEditing(value: CardViewBatchEditStartEditingEventArgs): Self = this.set("batchEditStartEditing", value.asInstanceOf[js.Any])
+    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditTemplateCellFocused(value: CardViewBatchEditTemplateCellFocusedEventArgs): Self = this.set("batchEditTemplateCellFocused", value.asInstanceOf[js.Any])
+    def setCardClick(value: CardViewCardClickEventArgs): Self = StObject.set(x, "cardClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = this.set("beginCallback", value.asInstanceOf[js.Any])
+    def setCardDblClick(value: CardViewCardClickEventArgs): Self = StObject.set(x, "cardDblClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = this.set("callbackError", value.asInstanceOf[js.Any])
+    def setCardFocusing(value: CardViewCardFocusingEventArgs): Self = StObject.set(x, "cardFocusing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardClick(value: CardViewCardClickEventArgs): Self = this.set("cardClick", value.asInstanceOf[js.Any])
+    def setColumnSorting(value: CardViewColumnCancelEventArgs): Self = StObject.set(x, "columnSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardDblClick(value: CardViewCardClickEventArgs): Self = this.set("cardDblClick", value.asInstanceOf[js.Any])
+    def setCustomButtonClick(value: CardViewCustomButtonEventArgs): Self = StObject.set(x, "customButtonClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardFocusing(value: CardViewCardFocusingEventArgs): Self = this.set("cardFocusing", value.asInstanceOf[js.Any])
+    def setCustomizationWindowCloseUp(value: EventArgs): Self = StObject.set(x, "customizationWindowCloseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSorting(value: CardViewColumnCancelEventArgs): Self = this.set("columnSorting", value.asInstanceOf[js.Any])
+    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomButtonClick(value: CardViewCustomButtonEventArgs): Self = this.set("customButtonClick", value.asInstanceOf[js.Any])
+    def setFocusedCardChanged(value: CardViewFocusEventArgs): Self = StObject.set(x, "focusedCardChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizationWindowCloseUp(value: EventArgs): Self = this.set("customizationWindowCloseUp", value.asInstanceOf[js.Any])
+    def setFocusedCellChanging(value: CardViewFocusedCellChangingEventArgs): Self = StObject.set(x, "focusedCellChanging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = this.set("endCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFocusedCardChanged(value: CardViewFocusEventArgs): Self = this.set("focusedCardChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFocusedCellChanging(value: CardViewFocusedCellChangingEventArgs): Self = this.set("focusedCellChanging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionChanged(value: CardViewSelectionEventArgs): Self = this.set("selectionChanged", value.asInstanceOf[js.Any])
+    def setSelectionChanged(value: CardViewSelectionEventArgs): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
   }
 }

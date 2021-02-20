@@ -4,12 +4,13 @@ import typings.reactCalendarTimeline.anon.CollisionLeft
 import typings.reactCalendarTimeline.anon.X
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.left
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemContext extends js.Object {
+trait ItemContext extends StObject {
   
   var canMove: Boolean = js.native
   
@@ -69,66 +70,54 @@ object ItemContext {
   }
   
   @scala.inline
-  implicit class ItemContextOps[Self <: ItemContext] (val x: Self) extends AnyVal {
+  implicit class ItemContextMutableBuilder[Self <: ItemContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanMove(value: Boolean): Self = StObject.set(x, "canMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanResizeLeft(value: Boolean): Self = StObject.set(x, "canResizeLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanResizeRight(value: Boolean): Self = StObject.set(x, "canResizeRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanMove(value: Boolean): Self = this.set("canMove", value.asInstanceOf[js.Any])
+    def setDimensions(value: CollisionLeft): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanResizeLeft(value: Boolean): Self = this.set("canResizeLeft", value.asInstanceOf[js.Any])
+    def setDragGroupDelta(value: Double): Self = StObject.set(x, "dragGroupDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanResizeRight(value: Boolean): Self = this.set("canResizeRight", value.asInstanceOf[js.Any])
+    def setDragStart(value: X): Self = StObject.set(x, "dragStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: CollisionLeft): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setDragTime(value: Double): Self = StObject.set(x, "dragTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragGroupDelta(value: Double): Self = this.set("dragGroupDelta", value.asInstanceOf[js.Any])
+    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragStart(value: X): Self = this.set("dragStart", value.asInstanceOf[js.Any])
+    def setResizeEdge(value: left | right): Self = StObject.set(x, "resizeEdge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragTime(value: Double): Self = this.set("dragTime", value.asInstanceOf[js.Any])
+    def setResizeStart(value: Double): Self = StObject.set(x, "resizeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragging(value: Boolean): Self = this.set("dragging", value.asInstanceOf[js.Any])
+    def setResizeTime(value: Double): Self = StObject.set(x, "resizeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeEdge(value: left | right): Self = this.set("resizeEdge", value.asInstanceOf[js.Any])
+    def setResizing(value: Boolean): Self = StObject.set(x, "resizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeStart(value: Double): Self = this.set("resizeStart", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeTime(value: Double): Self = this.set("resizeTime", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizing(value: Boolean): Self = this.set("resizing", value.asInstanceOf[js.Any])
+    def setUseResizeHandle(value: Boolean): Self = StObject.set(x, "useResizeHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseResizeHandle(value: Boolean): Self = this.set("useResizeHandle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

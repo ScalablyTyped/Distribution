@@ -1,11 +1,12 @@
 package typings.plugapi.mod.Event
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Emote extends js.Object {
+trait Emote extends StObject {
   
   var chatID: String = js.native
   
@@ -27,33 +28,21 @@ object Emote {
   }
   
   @scala.inline
-  implicit class EmoteOps[Self <: Emote] (val x: Self) extends AnyVal {
+  implicit class EmoteMutableBuilder[Self <: Emote] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChatID(value: String): Self = StObject.set(x, "chatID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromID(value: String): Self = StObject.set(x, "fromID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChatID(value: String): Self = this.set("chatID", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFromID(value: String): Self = this.set("fromID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpcPeeringConnectivity extends js.Object {
+trait VpcPeeringConnectivity extends StObject {
   
   /** The name of the VPC network to peer with the Cloud SQL private network. */
   var vpc: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object VpcPeeringConnectivity {
   }
   
   @scala.inline
-  implicit class VpcPeeringConnectivityOps[Self <: VpcPeeringConnectivity] (val x: Self) extends AnyVal {
+  implicit class VpcPeeringConnectivityMutableBuilder[Self <: VpcPeeringConnectivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVpc(value: String): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVpc(value: String): Self = this.set("vpc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpc: Self = this.set("vpc", js.undefined)
+    def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
   }
 }

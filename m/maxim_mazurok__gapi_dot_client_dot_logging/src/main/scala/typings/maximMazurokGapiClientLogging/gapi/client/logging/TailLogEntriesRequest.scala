@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TailLogEntriesRequest extends js.Object {
+trait TailLogEntriesRequest extends StObject {
   
   /**
     * Optional. The amount of time to buffer log entries at the server before being returned to prevent out of order results due to late arriving log entries. Valid values are between
@@ -37,39 +38,27 @@ object TailLogEntriesRequest {
   }
   
   @scala.inline
-  implicit class TailLogEntriesRequestOps[Self <: TailLogEntriesRequest] (val x: Self) extends AnyVal {
+  implicit class TailLogEntriesRequestMutableBuilder[Self <: TailLogEntriesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBufferWindow(value: String): Self = StObject.set(x, "bufferWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferWindowUndefined: Self = StObject.set(x, "bufferWindow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferWindow(value: String): Self = this.set("bufferWindow", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteBufferWindow: Self = this.set("bufferWindow", js.undefined)
+    def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setResourceNamesVarargs(value: String*): Self = this.set("resourceNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceNames(value: js.Array[String]): Self = this.set("resourceNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceNames: Self = this.set("resourceNames", js.undefined)
+    def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
   }
 }

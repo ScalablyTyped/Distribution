@@ -1,6 +1,7 @@
 package typings.wxJsSdkDt.wx
 
 import typings.wxJsSdkDt.anon.ResultStr
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,39 +34,27 @@ object ScanQRCodeConfig {
   }
   
   @scala.inline
-  implicit class ScanQRCodeConfigOps[Self <: ScanQRCodeConfig] (val x: Self) extends AnyVal {
+  implicit class ScanQRCodeConfigMutableBuilder[Self <: ScanQRCodeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNeedResult(value: Double): Self = StObject.set(x, "needResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNeedResultUndefined: Self = StObject.set(x, "needResult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScanType(value: js.Array[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedResult(value: Double): Self = this.set("needResult", value.asInstanceOf[js.Any])
+    def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
     
     @scala.inline
-    def deleteNeedResult: Self = this.set("needResult", js.undefined)
+    def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value :_*))
     
     @scala.inline
-    def setScanTypeVarargs(value: String*): Self = this.set("scanType", js.Array(value :_*))
+    def setSuccess(value: /* res */ ResultStr => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanType(value: js.Array[String]): Self = this.set("scanType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanType: Self = this.set("scanType", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ ResultStr => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

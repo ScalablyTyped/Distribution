@@ -1,13 +1,14 @@
 package typings.luxon.mod
 
 import typings.luxon.anon.IncludeConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("luxon", "Duration")
 @js.native
-class Duration () extends js.Object {
+class Duration () extends StObject {
   
   def as(unit: DurationUnit): Double = js.native
   
@@ -74,20 +75,34 @@ class Duration () extends js.Object {
   var years: Double = js.native
 }
 /* static members */
-@JSImport("luxon", "Duration")
-@js.native
-object Duration extends js.Object {
+object Duration {
   
+  @JSImport("luxon", "Duration.fromISO")
+  @js.native
   def fromISO(text: String): Duration = js.native
+  @JSImport("luxon", "Duration.fromISO")
+  @js.native
   def fromISO(text: String, options: DurationOptions): Duration = js.native
   
+  @JSImport("luxon", "Duration.fromMillis")
+  @js.native
   def fromMillis(count: Double): Duration = js.native
+  @JSImport("luxon", "Duration.fromMillis")
+  @js.native
   def fromMillis(count: Double, options: DurationOptions): Duration = js.native
   
+  @JSImport("luxon", "Duration.fromObject")
+  @js.native
   def fromObject(Object: DurationObject): Duration = js.native
   
+  @JSImport("luxon", "Duration.invalid")
+  @js.native
   def invalid(): Duration = js.native
+  @JSImport("luxon", "Duration.invalid")
+  @js.native
   def invalid(reason: String): Duration = js.native
   
+  @JSImport("luxon", "Duration.isDuration")
+  @js.native
   def isDuration(o: js.Any): /* is luxon.luxon.Duration */ Boolean = js.native
 }

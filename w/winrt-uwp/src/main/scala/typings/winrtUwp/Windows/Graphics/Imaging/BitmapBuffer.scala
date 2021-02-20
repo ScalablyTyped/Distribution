@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
 import typings.winrtUwp.Windows.Foundation.IMemoryBufferReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the pixel data buffer of a bitmap. */
 @js.native
-trait BitmapBuffer extends js.Object {
+trait BitmapBuffer extends StObject {
   
   /** Disposes of the object and associated resources. */
   def close(): Unit = js.native
@@ -45,30 +46,18 @@ object BitmapBuffer {
   }
   
   @scala.inline
-  implicit class BitmapBufferOps[Self <: BitmapBuffer] (val x: Self) extends AnyVal {
+  implicit class BitmapBufferMutableBuilder[Self <: BitmapBuffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateReference(value: () => IMemoryBufferReference): Self = StObject.set(x, "createReference", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPlaneCount(value: () => Double): Self = StObject.set(x, "getPlaneCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCreateReference(value: () => IMemoryBufferReference): Self = this.set("createReference", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPlaneCount(value: () => Double): Self = this.set("getPlaneCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPlaneDescription(value: Double => BitmapPlaneDescription): Self = this.set("getPlaneDescription", js.Any.fromFunction1(value))
+    def setGetPlaneDescription(value: Double => BitmapPlaneDescription): Self = StObject.set(x, "getPlaneDescription", js.Any.fromFunction1(value))
   }
 }

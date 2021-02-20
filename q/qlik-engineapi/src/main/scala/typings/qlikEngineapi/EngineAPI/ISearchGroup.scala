@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchGroup...
   */
 @js.native
-trait ISearchGroup extends js.Object {
+trait ISearchGroup extends StObject {
   
   /**
     * Type of the search group.
@@ -62,39 +63,27 @@ object ISearchGroup {
   }
   
   @scala.inline
-  implicit class ISearchGroupOps[Self <: ISearchGroup] (val x: Self) extends AnyVal {
+  implicit class ISearchGroupMutableBuilder[Self <: ISearchGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQGroupType(value: SearchObjectsGroupType): Self = StObject.set(x, "qGroupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQId(value: Double): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQItems(value: js.Array[ISearchGroupItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQGroupType(value: SearchObjectsGroupType): Self = this.set("qGroupType", value.asInstanceOf[js.Any])
+    def setQItemsVarargs(value: ISearchGroupItem*): Self = StObject.set(x, "qItems", js.Array(value :_*))
     
     @scala.inline
-    def setQId(value: Double): Self = this.set("qId", value.asInstanceOf[js.Any])
+    def setQSearchTermsMatched(value: js.Array[Double]): Self = StObject.set(x, "qSearchTermsMatched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQItemsVarargs(value: ISearchGroupItem*): Self = this.set("qItems", js.Array(value :_*))
+    def setQSearchTermsMatchedVarargs(value: Double*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value :_*))
     
     @scala.inline
-    def setQItems(value: js.Array[ISearchGroupItem]): Self = this.set("qItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSearchTermsMatchedVarargs(value: Double*): Self = this.set("qSearchTermsMatched", js.Array(value :_*))
-    
-    @scala.inline
-    def setQSearchTermsMatched(value: js.Array[Double]): Self = this.set("qSearchTermsMatched", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTotalNumberOfItems(value: Double): Self = this.set("qTotalNumberOfItems", value.asInstanceOf[js.Any])
+    def setQTotalNumberOfItems(value: Double): Self = StObject.set(x, "qTotalNumberOfItems", value.asInstanceOf[js.Any])
   }
 }

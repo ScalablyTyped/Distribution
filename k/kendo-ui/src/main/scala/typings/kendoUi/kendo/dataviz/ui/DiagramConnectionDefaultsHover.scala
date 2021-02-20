@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagramConnectionDefaultsHover extends js.Object {
+trait DiagramConnectionDefaultsHover extends StObject {
   
   var stroke: js.UndefOr[DiagramConnectionDefaultsHoverStroke] = js.native
 }
@@ -18,24 +19,12 @@ object DiagramConnectionDefaultsHover {
   }
   
   @scala.inline
-  implicit class DiagramConnectionDefaultsHoverOps[Self <: DiagramConnectionDefaultsHover] (val x: Self) extends AnyVal {
+  implicit class DiagramConnectionDefaultsHoverMutableBuilder[Self <: DiagramConnectionDefaultsHover] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStroke(value: DiagramConnectionDefaultsHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStroke(value: DiagramConnectionDefaultsHoverStroke): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

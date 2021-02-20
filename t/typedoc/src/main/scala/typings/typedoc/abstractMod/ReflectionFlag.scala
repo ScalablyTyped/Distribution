@@ -1,96 +1,80 @@
 package typings.typedoc.abstractMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReflectionFlag extends js.Object
+sealed trait ReflectionFlag extends StObject
 @JSImport("typedoc/dist/lib/models/reflections/abstract", "ReflectionFlag")
 @js.native
-object ReflectionFlag extends js.Object {
+object ReflectionFlag extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReflectionFlag with Double] = js.native
   
   @js.native
   sealed trait Abstract extends ReflectionFlag
-  /* 2048 */ @js.native
-  object Abstract extends TopLevel[Abstract with Double]
+  /* 2048 */ val Abstract: typings.typedoc.abstractMod.ReflectionFlag.Abstract with Double = js.native
   
   @js.native
   sealed trait Const extends ReflectionFlag
-  /* 4096 */ @js.native
-  object Const extends TopLevel[Const with Double]
+  /* 4096 */ val Const: typings.typedoc.abstractMod.ReflectionFlag.Const with Double = js.native
   
   @js.native
   sealed trait ConstructorProperty extends ReflectionFlag
-  /* 1024 */ @js.native
-  object ConstructorProperty extends TopLevel[ConstructorProperty with Double]
+  /* 1024 */ val ConstructorProperty: typings.typedoc.abstractMod.ReflectionFlag.ConstructorProperty with Double = js.native
   
   @js.native
   sealed trait DefaultValue extends ReflectionFlag
-  /* 256 */ @js.native
-  object DefaultValue extends TopLevel[DefaultValue with Double]
+  /* 256 */ val DefaultValue: typings.typedoc.abstractMod.ReflectionFlag.DefaultValue with Double = js.native
   
   @js.native
   sealed trait ExportAssignment extends ReflectionFlag
-  /* 32 */ @js.native
-  object ExportAssignment extends TopLevel[ExportAssignment with Double]
+  /* 32 */ val ExportAssignment: typings.typedoc.abstractMod.ReflectionFlag.ExportAssignment with Double = js.native
   
   @js.native
   sealed trait Exported extends ReflectionFlag
-  /* 16 */ @js.native
-  object Exported extends TopLevel[Exported with Double]
+  /* 16 */ val Exported: typings.typedoc.abstractMod.ReflectionFlag.Exported with Double = js.native
   
   @js.native
   sealed trait External extends ReflectionFlag
-  /* 64 */ @js.native
-  object External extends TopLevel[External with Double]
+  /* 64 */ val External: typings.typedoc.abstractMod.ReflectionFlag.External with Double = js.native
   
   @js.native
   sealed trait Let extends ReflectionFlag
-  /* 8192 */ @js.native
-  object Let extends TopLevel[Let with Double]
+  /* 8192 */ val Let: typings.typedoc.abstractMod.ReflectionFlag.Let with Double = js.native
   
   @js.native
   sealed trait None extends ReflectionFlag
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.typedoc.abstractMod.ReflectionFlag.None with Double = js.native
   
   @js.native
   sealed trait Optional extends ReflectionFlag
-  /* 128 */ @js.native
-  object Optional extends TopLevel[Optional with Double]
+  /* 128 */ val Optional: typings.typedoc.abstractMod.ReflectionFlag.Optional with Double = js.native
   
   @js.native
   sealed trait Private extends ReflectionFlag
-  /* 1 */ @js.native
-  object Private extends TopLevel[Private with Double]
+  /* 1 */ val Private: typings.typedoc.abstractMod.ReflectionFlag.Private with Double = js.native
   
   @js.native
   sealed trait Protected extends ReflectionFlag
-  /* 2 */ @js.native
-  object Protected extends TopLevel[Protected with Double]
+  /* 2 */ val Protected: typings.typedoc.abstractMod.ReflectionFlag.Protected with Double = js.native
   
   @js.native
   sealed trait Public extends ReflectionFlag
-  /* 4 */ @js.native
-  object Public extends TopLevel[Public with Double]
+  /* 4 */ val Public: typings.typedoc.abstractMod.ReflectionFlag.Public with Double = js.native
   
   @js.native
   sealed trait Readonly extends ReflectionFlag
-  /* 16384 */ @js.native
-  object Readonly extends TopLevel[Readonly with Double]
+  /* 16384 */ val Readonly: typings.typedoc.abstractMod.ReflectionFlag.Readonly with Double = js.native
   
   @js.native
   sealed trait Rest extends ReflectionFlag
-  /* 512 */ @js.native
-  object Rest extends TopLevel[Rest with Double]
+  /* 512 */ val Rest: typings.typedoc.abstractMod.ReflectionFlag.Rest with Double = js.native
   
   @js.native
   sealed trait Static extends ReflectionFlag
-  /* 8 */ @js.native
-  object Static extends TopLevel[Static with Double]
+  /* 8 */ val Static: typings.typedoc.abstractMod.ReflectionFlag.Static with Double = js.native
 }

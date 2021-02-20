@@ -1,11 +1,12 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRWebGLLayerInit extends js.Object {
+trait XRWebGLLayerInit extends StObject {
   
   var alpha: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object XRWebGLLayerInit {
   }
   
   @scala.inline
-  implicit class XRWebGLLayerInitOps[Self <: XRWebGLLayerInit] (val x: Self) extends AnyVal {
+  implicit class XRWebGLLayerInitMutableBuilder[Self <: XRWebGLLayerInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Boolean): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntialias(value: Boolean): Self = this.set("antialias", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteAntialias: Self = this.set("antialias", js.undefined)
+    def setFramebufferScaleFactor(value: Double): Self = StObject.set(x, "framebufferScaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Boolean): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setFramebufferScaleFactorUndefined: Self = StObject.set(x, "framebufferScaleFactor", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setMultiview(value: Boolean): Self = StObject.set(x, "multiview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramebufferScaleFactor(value: Double): Self = this.set("framebufferScaleFactor", value.asInstanceOf[js.Any])
+    def setMultiviewUndefined: Self = StObject.set(x, "multiview", js.undefined)
     
     @scala.inline
-    def deleteFramebufferScaleFactor: Self = this.set("framebufferScaleFactor", js.undefined)
+    def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiview(value: Boolean): Self = this.set("multiview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiview: Self = this.set("multiview", js.undefined)
-    
-    @scala.inline
-    def setStencil(value: Boolean): Self = this.set("stencil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStencil: Self = this.set("stencil", js.undefined)
+    def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
   }
 }

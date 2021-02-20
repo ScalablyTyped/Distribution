@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublicIpv4PoolRange extends js.Object {
+trait PublicIpv4PoolRange extends StObject {
   
   /**
     * The number of addresses in the range.
@@ -36,42 +37,30 @@ object PublicIpv4PoolRange {
   }
   
   @scala.inline
-  implicit class PublicIpv4PoolRangeOps[Self <: PublicIpv4PoolRange] (val x: Self) extends AnyVal {
+  implicit class PublicIpv4PoolRangeMutableBuilder[Self <: PublicIpv4PoolRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressCount(value: Integer): Self = StObject.set(x, "AddressCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressCountUndefined: Self = StObject.set(x, "AddressCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailableAddressCount(value: Integer): Self = StObject.set(x, "AvailableAddressCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressCount(value: Integer): Self = this.set("AddressCount", value.asInstanceOf[js.Any])
+    def setAvailableAddressCountUndefined: Self = StObject.set(x, "AvailableAddressCount", js.undefined)
     
     @scala.inline
-    def deleteAddressCount: Self = this.set("AddressCount", js.undefined)
+    def setFirstAddress(value: String): Self = StObject.set(x, "FirstAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableAddressCount(value: Integer): Self = this.set("AvailableAddressCount", value.asInstanceOf[js.Any])
+    def setFirstAddressUndefined: Self = StObject.set(x, "FirstAddress", js.undefined)
     
     @scala.inline
-    def deleteAvailableAddressCount: Self = this.set("AvailableAddressCount", js.undefined)
+    def setLastAddress(value: String): Self = StObject.set(x, "LastAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstAddress(value: String): Self = this.set("FirstAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirstAddress: Self = this.set("FirstAddress", js.undefined)
-    
-    @scala.inline
-    def setLastAddress(value: String): Self = this.set("LastAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastAddress: Self = this.set("LastAddress", js.undefined)
+    def setLastAddressUndefined: Self = StObject.set(x, "LastAddress", js.undefined)
   }
 }

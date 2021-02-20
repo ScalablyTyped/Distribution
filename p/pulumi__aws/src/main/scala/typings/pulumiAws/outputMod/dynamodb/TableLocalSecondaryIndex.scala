@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.dynamodb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableLocalSecondaryIndex extends js.Object {
+trait TableLocalSecondaryIndex extends StObject {
   
   /**
     * The name of the index
@@ -42,36 +43,24 @@ object TableLocalSecondaryIndex {
   }
   
   @scala.inline
-  implicit class TableLocalSecondaryIndexOps[Self <: TableLocalSecondaryIndex] (val x: Self) extends AnyVal {
+  implicit class TableLocalSecondaryIndexMutableBuilder[Self <: TableLocalSecondaryIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNonKeyAttributes(value: js.Array[String]): Self = StObject.set(x, "nonKeyAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNonKeyAttributesUndefined: Self = StObject.set(x, "nonKeyAttributes", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "nonKeyAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setProjectionType(value: String): Self = this.set("projectionType", value.asInstanceOf[js.Any])
+    def setProjectionType(value: String): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeKey(value: String): Self = this.set("rangeKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNonKeyAttributesVarargs(value: String*): Self = this.set("nonKeyAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setNonKeyAttributes(value: js.Array[String]): Self = this.set("nonKeyAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonKeyAttributes: Self = this.set("nonKeyAttributes", js.undefined)
+    def setRangeKey(value: String): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
   }
 }

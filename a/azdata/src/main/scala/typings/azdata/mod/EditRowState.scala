@@ -1,36 +1,32 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EditRowState extends js.Object
+sealed trait EditRowState extends StObject
 @JSImport("azdata", "EditRowState")
 @js.native
-object EditRowState extends js.Object {
+object EditRowState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EditRowState with Double] = js.native
   
   @js.native
   sealed trait clean extends EditRowState
-  /* 0 */ @js.native
-  object clean extends TopLevel[clean with Double]
+  /* 0 */ val clean: typings.azdata.mod.EditRowState.clean with Double = js.native
   
   @js.native
   sealed trait dirtyDelete extends EditRowState
-  /* 2 */ @js.native
-  object dirtyDelete extends TopLevel[dirtyDelete with Double]
+  /* 2 */ val dirtyDelete: typings.azdata.mod.EditRowState.dirtyDelete with Double = js.native
   
   @js.native
   sealed trait dirtyInsert extends EditRowState
-  /* 1 */ @js.native
-  object dirtyInsert extends TopLevel[dirtyInsert with Double]
+  /* 1 */ val dirtyInsert: typings.azdata.mod.EditRowState.dirtyInsert with Double = js.native
   
   @js.native
   sealed trait dirtyUpdate extends EditRowState
-  /* 3 */ @js.native
-  object dirtyUpdate extends TopLevel[dirtyUpdate with Double]
+  /* 3 */ val dirtyUpdate: typings.azdata.mod.EditRowState.dirtyUpdate with Double = js.native
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesisanalyticsv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationCloudwatchLoggingOptions extends js.Object {
+trait ApplicationCloudwatchLoggingOptions extends StObject {
   
   var cloudwatchLoggingOptionId: js.UndefOr[Input[String]] = js.native
   
@@ -24,27 +25,15 @@ object ApplicationCloudwatchLoggingOptions {
   }
   
   @scala.inline
-  implicit class ApplicationCloudwatchLoggingOptionsOps[Self <: ApplicationCloudwatchLoggingOptions] (val x: Self) extends AnyVal {
+  implicit class ApplicationCloudwatchLoggingOptionsMutableBuilder[Self <: ApplicationCloudwatchLoggingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudwatchLoggingOptionId(value: Input[String]): Self = StObject.set(x, "cloudwatchLoggingOptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudwatchLoggingOptionIdUndefined: Self = StObject.set(x, "cloudwatchLoggingOptionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogStreamArn(value: Input[String]): Self = this.set("logStreamArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCloudwatchLoggingOptionId(value: Input[String]): Self = this.set("cloudwatchLoggingOptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudwatchLoggingOptionId: Self = this.set("cloudwatchLoggingOptionId", js.undefined)
+    def setLogStreamArn(value: Input[String]): Self = StObject.set(x, "logStreamArn", value.asInstanceOf[js.Any])
   }
 }

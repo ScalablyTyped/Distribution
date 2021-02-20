@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenersConfigDump extends js.Object {
+trait ListenersConfigDump extends StObject {
   
   /** State for any warming, active, or draining listeners. */
   var dynamicListeners: js.UndefOr[js.Array[DynamicListener]] = js.native
@@ -25,42 +26,30 @@ object ListenersConfigDump {
   }
   
   @scala.inline
-  implicit class ListenersConfigDumpOps[Self <: ListenersConfigDump] (val x: Self) extends AnyVal {
+  implicit class ListenersConfigDumpMutableBuilder[Self <: ListenersConfigDump] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicListeners(value: js.Array[DynamicListener]): Self = StObject.set(x, "dynamicListeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicListenersUndefined: Self = StObject.set(x, "dynamicListeners", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicListenersVarargs(value: DynamicListener*): Self = StObject.set(x, "dynamicListeners", js.Array(value :_*))
     
     @scala.inline
-    def setDynamicListenersVarargs(value: DynamicListener*): Self = this.set("dynamicListeners", js.Array(value :_*))
+    def setStaticListeners(value: js.Array[StaticListener]): Self = StObject.set(x, "staticListeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicListeners(value: js.Array[DynamicListener]): Self = this.set("dynamicListeners", value.asInstanceOf[js.Any])
+    def setStaticListenersUndefined: Self = StObject.set(x, "staticListeners", js.undefined)
     
     @scala.inline
-    def deleteDynamicListeners: Self = this.set("dynamicListeners", js.undefined)
+    def setStaticListenersVarargs(value: StaticListener*): Self = StObject.set(x, "staticListeners", js.Array(value :_*))
     
     @scala.inline
-    def setStaticListenersVarargs(value: StaticListener*): Self = this.set("staticListeners", js.Array(value :_*))
+    def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticListeners(value: js.Array[StaticListener]): Self = this.set("staticListeners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticListeners: Self = this.set("staticListeners", js.undefined)
-    
-    @scala.inline
-    def setVersionInfo(value: String): Self = this.set("versionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionInfo: Self = this.set("versionInfo", js.undefined)
+    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.BackUVsCap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TubeBuilder ()
   extends typings.babylonjs.BABYLON.TubeBuilder
 /* static members */
-@JSGlobal("BABYLON.TubeBuilder")
-@js.native
-object TubeBuilder extends js.Object {
+object TubeBuilder {
   
   /**
     * Creates a tube mesh.
@@ -37,6 +36,10 @@ object TubeBuilder extends js.Object {
     * @see https://doc.babylonjs.com/how_to/parametric_shapes
     * @see https://doc.babylonjs.com/how_to/set_shapes#tube
     */
+  @JSGlobal("BABYLON.TubeBuilder.CreateTube")
+  @js.native
   def CreateTube(name: String, options: BackUVsCap): typings.babylonjs.BABYLON.Mesh = js.native
+  @JSGlobal("BABYLON.TubeBuilder.CreateTube")
+  @js.native
   def CreateTube(name: String, options: BackUVsCap, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
 }

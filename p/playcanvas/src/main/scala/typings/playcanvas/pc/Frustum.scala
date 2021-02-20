@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * var frustum = new pc.Frustum();
   */
 @js.native
-trait Frustum extends js.Object {
+trait Frustum extends StObject {
   
   /**
     * Tests whether a point is inside the frustum. Note that points lying in a frustum plane are
@@ -58,27 +59,15 @@ object Frustum {
   }
   
   @scala.inline
-  implicit class FrustumOps[Self <: Frustum] (val x: Self) extends AnyVal {
+  implicit class FrustumMutableBuilder[Self <: Frustum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsPoint(value: Vec3 => Boolean): Self = StObject.set(x, "containsPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsSphere(value: BoundingSphere => Double): Self = StObject.set(x, "containsSphere", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContainsPoint(value: Vec3 => Boolean): Self = this.set("containsPoint", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setContainsSphere(value: BoundingSphere => Double): Self = this.set("containsSphere", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFromMat4(value: Mat4 => Unit): Self = this.set("setFromMat4", js.Any.fromFunction1(value))
+    def setSetFromMat4(value: Mat4 => Unit): Self = StObject.set(x, "setFromMat4", js.Any.fromFunction1(value))
   }
 }

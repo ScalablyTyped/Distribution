@@ -1,11 +1,12 @@
 package typings.ngCordova.ngCordova
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDeviceService extends js.Object {
+trait IDeviceService extends StObject {
   
   /**
     * Returns the Cordova version.
@@ -79,42 +80,30 @@ object IDeviceService {
   }
   
   @scala.inline
-  implicit class IDeviceServiceOps[Self <: IDeviceService] (val x: Self) extends AnyVal {
+  implicit class IDeviceServiceMutableBuilder[Self <: IDeviceService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCordova(value: () => String): Self = StObject.set(x, "getCordova", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDevice(value: () => IDeviceInfo): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetManufacturer(value: () => String): Self = StObject.set(x, "getManufacturer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCordova(value: () => String): Self = this.set("getCordova", js.Any.fromFunction0(value))
+    def setGetModel(value: () => String): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDevice(value: () => IDeviceInfo): Self = this.set("getDevice", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetManufacturer(value: () => String): Self = this.set("getManufacturer", js.Any.fromFunction0(value))
+    def setGetPlatform(value: () => String): Self = StObject.set(x, "getPlatform", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetModel(value: () => String): Self = this.set("getModel", js.Any.fromFunction0(value))
+    def setGetUUID(value: () => String): Self = StObject.set(x, "getUUID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPlatform(value: () => String): Self = this.set("getPlatform", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUUID(value: () => String): Self = this.set("getUUID", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVersion(value: () => String): Self = this.set("getVersion", js.Any.fromFunction0(value))
+    def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
   }
 }

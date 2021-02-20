@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ToastDismissalReason extends js.Object
+sealed trait ToastDismissalReason extends StObject
 @JSGlobal("Windows.UI.Notifications.ToastDismissalReason")
 @js.native
-object ToastDismissalReason extends js.Object {
+object ToastDismissalReason extends StObject {
   
   @js.native
   sealed trait applicationHidden extends ToastDismissalReason

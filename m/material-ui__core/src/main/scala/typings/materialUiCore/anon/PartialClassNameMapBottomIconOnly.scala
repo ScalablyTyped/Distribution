@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/BottomNavigationAction/BottomNavigationAction.BottomNavigationActionClassKey>> */
 @js.native
-trait PartialClassNameMapBottomIconOnly extends js.Object {
+trait PartialClassNameMapBottomIconOnly extends StObject {
   
   var iconOnly: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object PartialClassNameMapBottomIconOnly {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapBottomIconOnlyOps[Self <: PartialClassNameMapBottomIconOnly] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapBottomIconOnlyMutableBuilder[Self <: PartialClassNameMapBottomIconOnly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconOnly(value: String): Self = StObject.set(x, "iconOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconOnlyUndefined: Self = StObject.set(x, "iconOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconOnly(value: String): Self = this.set("iconOnly", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIconOnly: Self = this.set("iconOnly", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setWrapper(value: String): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
-    
-    @scala.inline
-    def setWrapper(value: String): Self = this.set("wrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
   }
 }

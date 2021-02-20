@@ -1,15 +1,14 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpinnerProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends HTMLProps[js.Any] {
   
   var singleColor: js.UndefOr[Boolean] = js.native
 }
@@ -22,24 +21,12 @@ object SpinnerProps {
   }
   
   @scala.inline
-  implicit class SpinnerPropsOps[Self <: SpinnerProps] (val x: Self) extends AnyVal {
+  implicit class SpinnerPropsMutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSingleColor(value: Boolean): Self = StObject.set(x, "singleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSingleColor(value: Boolean): Self = this.set("singleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleColor: Self = this.set("singleColor", js.undefined)
+    def setSingleColorUndefined: Self = StObject.set(x, "singleColor", js.undefined)
   }
 }

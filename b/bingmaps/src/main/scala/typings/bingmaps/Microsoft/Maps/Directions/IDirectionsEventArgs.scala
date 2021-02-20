@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDirectionsEventArgs extends js.Object {
+trait IDirectionsEventArgs extends StObject {
   
   /** The calculated route (or routes, if the route mode is transit). */
   var route: js.Array[IRoute] = js.native
@@ -22,30 +23,18 @@ object IDirectionsEventArgs {
   }
   
   @scala.inline
-  implicit class IDirectionsEventArgsOps[Self <: IDirectionsEventArgs] (val x: Self) extends AnyVal {
+  implicit class IDirectionsEventArgsMutableBuilder[Self <: IDirectionsEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoute(value: js.Array[IRoute]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRouteSummary(value: js.Array[IRouteSummary]): Self = StObject.set(x, "routeSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRouteSummaryVarargs(value: IRouteSummary*): Self = StObject.set(x, "routeSummary", js.Array(value :_*))
     
     @scala.inline
-    def setRouteVarargs(value: IRoute*): Self = this.set("route", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoute(value: js.Array[IRoute]): Self = this.set("route", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRouteSummaryVarargs(value: IRouteSummary*): Self = this.set("routeSummary", js.Array(value :_*))
-    
-    @scala.inline
-    def setRouteSummary(value: js.Array[IRouteSummary]): Self = this.set("routeSummary", value.asInstanceOf[js.Any])
+    def setRouteVarargs(value: IRoute*): Self = StObject.set(x, "route", js.Array(value :_*))
   }
 }

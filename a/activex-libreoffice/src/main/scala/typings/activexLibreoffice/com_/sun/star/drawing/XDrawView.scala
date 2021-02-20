@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,27 +45,15 @@ object XDrawView {
   }
   
   @scala.inline
-  implicit class XDrawViewOps[Self <: XDrawView] (val x: Self) extends AnyVal {
+  implicit class XDrawViewMutableBuilder[Self <: XDrawView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPage(value: XDrawPage): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentPage(value: () => XDrawPage): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentPage(value: XDrawPage): Self = this.set("CurrentPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetCurrentPage(value: () => XDrawPage): Self = this.set("getCurrentPage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCurrentPage(value: XDrawPage => Unit): Self = this.set("setCurrentPage", js.Any.fromFunction1(value))
+    def setSetCurrentPage(value: XDrawPage => Unit): Self = StObject.set(x, "setCurrentPage", js.Any.fromFunction1(value))
   }
 }

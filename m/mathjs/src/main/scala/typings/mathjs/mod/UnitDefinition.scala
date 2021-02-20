@@ -1,11 +1,12 @@
 package typings.mathjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnitDefinition extends js.Object {
+trait UnitDefinition extends StObject {
   
   var aliases: js.UndefOr[js.Array[String]] = js.native
   
@@ -24,45 +25,33 @@ object UnitDefinition {
   }
   
   @scala.inline
-  implicit class UnitDefinitionOps[Self <: UnitDefinition] (val x: Self) extends AnyVal {
+  implicit class UnitDefinitionMutableBuilder[Self <: UnitDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
     @scala.inline
-    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    def setDefinition(value: String | Unit): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def deleteAliases: Self = this.set("aliases", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: String | Unit): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setPrefixes(value: String): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setPrefixes(value: String): Self = this.set("prefixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixes: Self = this.set("prefixes", js.undefined)
+    def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
   }
 }

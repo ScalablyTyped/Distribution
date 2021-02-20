@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDevtoolsRemoteworkersV1test2Digest extends js.Object {
+trait GoogleDevtoolsRemoteworkersV1test2Digest extends StObject {
   
   /** A string-encoded hash (eg "1a2b3c", not the byte array [0x1a, 0x2b, 0x3c]) using an implementation-defined hash algorithm (eg SHA-256). */
   var hash: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object GoogleDevtoolsRemoteworkersV1test2Digest {
   }
   
   @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2DigestOps[Self <: GoogleDevtoolsRemoteworkersV1test2Digest] (val x: Self) extends AnyVal {
+  implicit class GoogleDevtoolsRemoteworkersV1test2DigestMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2Digest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
-    
-    @scala.inline
-    def setSizeBytes(value: String): Self = this.set("sizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeBytes: Self = this.set("sizeBytes", js.undefined)
+    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

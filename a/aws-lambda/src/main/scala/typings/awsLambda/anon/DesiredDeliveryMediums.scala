@@ -6,12 +6,13 @@ import typings.awsLambda.awsLambdaStrings.SMS
 import typings.awsLambda.awsLambdaStrings.SUPPRESS
 import typings.awsLambda.commonMod.StringMap
 import typings.awsLambda.userMigrationMod.UserStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DesiredDeliveryMediums extends js.Object {
+trait DesiredDeliveryMediums extends StObject {
   
   var desiredDeliveryMediums: js.Array[SMS | EMAIL] = js.native
   
@@ -32,45 +33,33 @@ object DesiredDeliveryMediums {
   }
   
   @scala.inline
-  implicit class DesiredDeliveryMediumsOps[Self <: DesiredDeliveryMediums] (val x: Self) extends AnyVal {
+  implicit class DesiredDeliveryMediumsMutableBuilder[Self <: DesiredDeliveryMediums] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredDeliveryMediums(value: js.Array[SMS | EMAIL]): Self = StObject.set(x, "desiredDeliveryMediums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredDeliveryMediumsVarargs(value: (SMS | EMAIL)*): Self = StObject.set(x, "desiredDeliveryMediums", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinalUserStatus(value: UserStatus): Self = StObject.set(x, "finalUserStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredDeliveryMediumsVarargs(value: (SMS | EMAIL)*): Self = this.set("desiredDeliveryMediums", js.Array(value :_*))
+    def setFinalUserStatusUndefined: Self = StObject.set(x, "finalUserStatus", js.undefined)
     
     @scala.inline
-    def setDesiredDeliveryMediums(value: js.Array[SMS | EMAIL]): Self = this.set("desiredDeliveryMediums", value.asInstanceOf[js.Any])
+    def setForceAliasCreation(value: Boolean): Self = StObject.set(x, "forceAliasCreation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAttributes(value: StringMap): Self = this.set("userAttributes", value.asInstanceOf[js.Any])
+    def setForceAliasCreationUndefined: Self = StObject.set(x, "forceAliasCreation", js.undefined)
     
     @scala.inline
-    def setFinalUserStatus(value: UserStatus): Self = this.set("finalUserStatus", value.asInstanceOf[js.Any])
+    def setMessageAction(value: RESEND | SUPPRESS): Self = StObject.set(x, "messageAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFinalUserStatus: Self = this.set("finalUserStatus", js.undefined)
+    def setMessageActionUndefined: Self = StObject.set(x, "messageAction", js.undefined)
     
     @scala.inline
-    def setForceAliasCreation(value: Boolean): Self = this.set("forceAliasCreation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceAliasCreation: Self = this.set("forceAliasCreation", js.undefined)
-    
-    @scala.inline
-    def setMessageAction(value: RESEND | SUPPRESS): Self = this.set("messageAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageAction: Self = this.set("messageAction", js.undefined)
+    def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
   }
 }

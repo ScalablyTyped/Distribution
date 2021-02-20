@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SigV4Authorization extends js.Object {
+trait SigV4Authorization extends StObject {
   
   /**
     * The ARN of the signing role.
@@ -31,27 +32,15 @@ object SigV4Authorization {
   }
   
   @scala.inline
-  implicit class SigV4AuthorizationOps[Self <: SigV4Authorization] (val x: Self) extends AnyVal {
+  implicit class SigV4AuthorizationMutableBuilder[Self <: SigV4Authorization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceName(value: ServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigningRegion(value: SigningRegion): Self = this.set("signingRegion", value.asInstanceOf[js.Any])
+    def setSigningRegion(value: SigningRegion): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
   }
 }

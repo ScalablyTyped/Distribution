@@ -1,5 +1,6 @@
 package typings.xrm.XrmEnum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.MaxChildIncidentNumber
   - typings.xrm.xrmStrings.MaxIncidentMergeNumber
 */
-trait AdvancedConfigSettingOption extends js.Object
+trait AdvancedConfigSettingOption extends StObject
 object AdvancedConfigSettingOption {
   
   @scala.inline

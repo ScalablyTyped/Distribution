@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricRule extends js.Object {
+trait MetricRule extends StObject {
   
   /**
     * Metrics to update when the selected methods are called, and the associated cost applied to each metric. The key of the map is the metric name, and the values are the amount
@@ -30,34 +31,22 @@ object MetricRule {
   }
   
   @scala.inline
-  implicit class MetricRuleOps[Self <: MetricRule] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class MetricRuleMutableBuilder[Self <: MetricRule] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setMetricCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.MetricRule with TopLevel[js.Any]
-    ): Self = this.set("metricCosts", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metricCosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetricCosts: Self = this.set("metricCosts", js.undefined)
+    def setMetricCostsUndefined: Self = StObject.set(x, "metricCosts", js.undefined)
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

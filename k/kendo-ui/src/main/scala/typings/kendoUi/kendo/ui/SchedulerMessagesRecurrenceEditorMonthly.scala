@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerMessagesRecurrenceEditorMonthly extends js.Object {
+trait SchedulerMessagesRecurrenceEditorMonthly extends StObject {
   
   var day: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object SchedulerMessagesRecurrenceEditorMonthly {
   }
   
   @scala.inline
-  implicit class SchedulerMessagesRecurrenceEditorMonthlyOps[Self <: SchedulerMessagesRecurrenceEditorMonthly] (val x: Self) extends AnyVal {
+  implicit class SchedulerMessagesRecurrenceEditorMonthlyMutableBuilder[Self <: SchedulerMessagesRecurrenceEditorMonthly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: String): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteDay: Self = this.set("day", js.undefined)
+    def setRepeatEvery(value: String): Self = StObject.set(x, "repeatEvery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: String): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setRepeatEveryUndefined: Self = StObject.set(x, "repeatEvery", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setRepeatOn(value: String): Self = StObject.set(x, "repeatOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatEvery(value: String): Self = this.set("repeatEvery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeatEvery: Self = this.set("repeatEvery", js.undefined)
-    
-    @scala.inline
-    def setRepeatOn(value: String): Self = this.set("repeatOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeatOn: Self = this.set("repeatOn", js.undefined)
+    def setRepeatOnUndefined: Self = StObject.set(x, "repeatOn", js.undefined)
   }
 }

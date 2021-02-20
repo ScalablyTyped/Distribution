@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * google.bigtable.admin.v2.BigtableTableAdmin.DropRowRange
   */
 @js.native
-trait SchemaDropRowRangeRequest extends js.Object {
+trait SchemaDropRowRangeRequest extends StObject {
   
   /**
     * Delete all rows in the table. Setting this to false is a no-op.
@@ -31,30 +32,18 @@ object SchemaDropRowRangeRequest {
   }
   
   @scala.inline
-  implicit class SchemaDropRowRangeRequestOps[Self <: SchemaDropRowRangeRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaDropRowRangeRequestMutableBuilder[Self <: SchemaDropRowRangeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteAllDataFromTable(value: Boolean): Self = StObject.set(x, "deleteAllDataFromTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteAllDataFromTableUndefined: Self = StObject.set(x, "deleteAllDataFromTable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowKeyPrefix(value: String): Self = StObject.set(x, "rowKeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteAllDataFromTable(value: Boolean): Self = this.set("deleteAllDataFromTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteAllDataFromTable: Self = this.set("deleteAllDataFromTable", js.undefined)
-    
-    @scala.inline
-    def setRowKeyPrefix(value: String): Self = this.set("rowKeyPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowKeyPrefix: Self = this.set("rowKeyPrefix", js.undefined)
+    def setRowKeyPrefixUndefined: Self = StObject.set(x, "rowKeyPrefix", js.undefined)
   }
 }

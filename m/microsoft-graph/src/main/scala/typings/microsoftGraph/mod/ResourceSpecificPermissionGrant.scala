@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,63 +27,51 @@ object ResourceSpecificPermissionGrant {
   }
   
   @scala.inline
-  implicit class ResourceSpecificPermissionGrantOps[Self <: ResourceSpecificPermissionGrant] (val x: Self) extends AnyVal {
+  implicit class ResourceSpecificPermissionGrantMutableBuilder[Self <: ResourceSpecificPermissionGrant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientAppId(value: NullableOption[String]): Self = StObject.set(x, "clientAppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientAppIdNull: Self = StObject.set(x, "clientAppId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientAppIdUndefined: Self = StObject.set(x, "clientAppId", js.undefined)
     
     @scala.inline
-    def setClientAppId(value: NullableOption[String]): Self = this.set("clientAppId", value.asInstanceOf[js.Any])
+    def setClientId(value: NullableOption[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientAppId: Self = this.set("clientAppId", js.undefined)
+    def setClientIdNull: Self = StObject.set(x, "clientId", null)
     
     @scala.inline
-    def setClientAppIdNull: Self = this.set("clientAppId", null)
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def setClientId(value: NullableOption[String]): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setPermission(value: NullableOption[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setPermissionNull: Self = StObject.set(x, "permission", null)
     
     @scala.inline
-    def setClientIdNull: Self = this.set("clientId", null)
+    def setPermissionType(value: NullableOption[String]): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermission(value: NullableOption[String]): Self = this.set("permission", value.asInstanceOf[js.Any])
+    def setPermissionTypeNull: Self = StObject.set(x, "permissionType", null)
     
     @scala.inline
-    def deletePermission: Self = this.set("permission", js.undefined)
+    def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
     
     @scala.inline
-    def setPermissionNull: Self = this.set("permission", null)
+    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
     @scala.inline
-    def setPermissionType(value: NullableOption[String]): Self = this.set("permissionType", value.asInstanceOf[js.Any])
+    def setResourceAppId(value: NullableOption[String]): Self = StObject.set(x, "resourceAppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermissionType: Self = this.set("permissionType", js.undefined)
+    def setResourceAppIdNull: Self = StObject.set(x, "resourceAppId", null)
     
     @scala.inline
-    def setPermissionTypeNull: Self = this.set("permissionType", null)
-    
-    @scala.inline
-    def setResourceAppId(value: NullableOption[String]): Self = this.set("resourceAppId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceAppId: Self = this.set("resourceAppId", js.undefined)
-    
-    @scala.inline
-    def setResourceAppIdNull: Self = this.set("resourceAppId", null)
+    def setResourceAppIdUndefined: Self = StObject.set(x, "resourceAppId", js.undefined)
   }
 }

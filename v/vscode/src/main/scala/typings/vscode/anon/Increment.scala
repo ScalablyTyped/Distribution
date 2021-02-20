@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Increment extends js.Object {
+trait Increment extends StObject {
   
   var increment: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object Increment {
   }
   
   @scala.inline
-  implicit class IncrementOps[Self <: Increment] (val x: Self) extends AnyVal {
+  implicit class IncrementMutableBuilder[Self <: Increment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrement(value: Double): Self = this.set("increment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncrement: Self = this.set("increment", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

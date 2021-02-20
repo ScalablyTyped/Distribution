@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,57 +87,45 @@ object XLocaleData {
   }
   
   @scala.inline
-  implicit class XLocaleDataOps[Self <: XLocaleData] (val x: Self) extends AnyVal {
+  implicit class XLocaleDataMutableBuilder[Self <: XLocaleData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllInstalledLocaleNames(value: SafeArray[Locale]): Self = StObject.set(x, "AllInstalledLocaleNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllCalendars(value: Locale => SafeArray[Calendar]): Self = StObject.set(x, "getAllCalendars", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAllCurrencies(value: Locale => SafeArray[Currency]): Self = StObject.set(x, "getAllCurrencies", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllInstalledLocaleNames(value: SafeArray[Locale]): Self = this.set("AllInstalledLocaleNames", value.asInstanceOf[js.Any])
+    def setGetAllFormats(value: Locale => SafeArray[FormatElement]): Self = StObject.set(x, "getAllFormats", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllCalendars(value: Locale => SafeArray[Calendar]): Self = this.set("getAllCalendars", js.Any.fromFunction1(value))
+    def setGetAllInstalledLocaleNames(value: () => SafeArray[Locale]): Self = StObject.set(x, "getAllInstalledLocaleNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllCurrencies(value: Locale => SafeArray[Currency]): Self = this.set("getAllCurrencies", js.Any.fromFunction1(value))
+    def setGetCollationOptions(value: Locale => SafeArray[String]): Self = StObject.set(x, "getCollationOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllFormats(value: Locale => SafeArray[FormatElement]): Self = this.set("getAllFormats", js.Any.fromFunction1(value))
+    def setGetCollatorImplementations(value: Locale => SafeArray[Implementation]): Self = StObject.set(x, "getCollatorImplementations", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllInstalledLocaleNames(value: () => SafeArray[Locale]): Self = this.set("getAllInstalledLocaleNames", js.Any.fromFunction0(value))
+    def setGetForbiddenCharacters(value: Locale => ForbiddenCharacters): Self = StObject.set(x, "getForbiddenCharacters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCollationOptions(value: Locale => SafeArray[String]): Self = this.set("getCollationOptions", js.Any.fromFunction1(value))
+    def setGetLanguageCountryInfo(value: Locale => LanguageCountryInfo): Self = StObject.set(x, "getLanguageCountryInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCollatorImplementations(value: Locale => SafeArray[Implementation]): Self = this.set("getCollatorImplementations", js.Any.fromFunction1(value))
+    def setGetLocaleItem(value: Locale => LocaleDataItem): Self = StObject.set(x, "getLocaleItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetForbiddenCharacters(value: Locale => ForbiddenCharacters): Self = this.set("getForbiddenCharacters", js.Any.fromFunction1(value))
+    def setGetReservedWord(value: Locale => SafeArray[String]): Self = StObject.set(x, "getReservedWord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLanguageCountryInfo(value: Locale => LanguageCountryInfo): Self = this.set("getLanguageCountryInfo", js.Any.fromFunction1(value))
+    def setGetSearchOptions(value: Locale => SafeArray[String]): Self = StObject.set(x, "getSearchOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLocaleItem(value: Locale => LocaleDataItem): Self = this.set("getLocaleItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetReservedWord(value: Locale => SafeArray[String]): Self = this.set("getReservedWord", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSearchOptions(value: Locale => SafeArray[String]): Self = this.set("getSearchOptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetTransliterations(value: Locale => SafeArray[String]): Self = this.set("getTransliterations", js.Any.fromFunction1(value))
+    def setGetTransliterations(value: Locale => SafeArray[String]): Self = StObject.set(x, "getTransliterations", js.Any.fromFunction1(value))
   }
 }

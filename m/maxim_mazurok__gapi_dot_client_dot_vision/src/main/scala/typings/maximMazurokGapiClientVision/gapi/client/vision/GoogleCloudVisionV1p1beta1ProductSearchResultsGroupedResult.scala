@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult extends js.Object {
+trait GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult extends StObject {
   
   /** The bounding polygon around the product detected in the query image. */
   var boundingPoly: js.UndefOr[GoogleCloudVisionV1p1beta1BoundingPoly] = js.native
@@ -25,42 +26,30 @@ object GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult {
   }
   
   @scala.inline
-  implicit class GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResultOps[Self <: GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResultMutableBuilder[Self <: GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingPoly(value: GoogleCloudVisionV1p1beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectAnnotations(value: js.Array[GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation]): Self = StObject.set(x, "objectAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingPoly(value: GoogleCloudVisionV1p1beta1BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    def setObjectAnnotationsUndefined: Self = StObject.set(x, "objectAnnotations", js.undefined)
     
     @scala.inline
-    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    def setObjectAnnotationsVarargs(value: GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value :_*))
     
     @scala.inline
-    def setObjectAnnotationsVarargs(value: GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation*): Self = this.set("objectAnnotations", js.Array(value :_*))
+    def setResults(value: js.Array[GoogleCloudVisionV1p1beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectAnnotations(value: js.Array[GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation]): Self = this.set("objectAnnotations", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteObjectAnnotations: Self = this.set("objectAnnotations", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: GoogleCloudVisionV1p1beta1ProductSearchResultsResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[GoogleCloudVisionV1p1beta1ProductSearchResultsResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: GoogleCloudVisionV1p1beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

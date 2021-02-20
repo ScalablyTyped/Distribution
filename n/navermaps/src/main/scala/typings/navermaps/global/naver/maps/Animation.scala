@@ -1,5 +1,6 @@
 package typings.navermaps.global.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("naver.maps.Animation")
 @js.native
-object Animation extends js.Object {
+object Animation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.Animation with Double] = js.native

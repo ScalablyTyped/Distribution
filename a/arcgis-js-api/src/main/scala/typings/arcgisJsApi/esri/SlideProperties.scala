@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlideProperties extends js.Object {
+trait SlideProperties extends StObject {
   
   /**
     * The basemap of the scene.
@@ -79,75 +80,63 @@ object SlideProperties {
   }
   
   @scala.inline
-  implicit class SlidePropertiesOps[Self <: SlideProperties] (val x: Self) extends AnyVal {
+  implicit class SlidePropertiesMutableBuilder[Self <: SlideProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemap(value: BasemapProperties | String): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: SlideDescriptionProperties | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemap(value: BasemapProperties | String): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    def setEnvironment(value: SlideEnvironmentProperties): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: SlideDescriptionProperties | String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setGround(value: SlideGroundProperties): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: SlideEnvironmentProperties): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setGroundUndefined: Self = StObject.set(x, "ground", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGround(value: SlideGroundProperties): Self = this.set("ground", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGround: Self = this.set("ground", js.undefined)
+    def setThumbnail(value: SlideThumbnailProperties | String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setTitle(value: SlideTitleProperties | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail(value: SlideThumbnailProperties | String): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+    def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: SlideTitleProperties | String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setVisibleLayers(value: CollectionProperties[SlideVisibleLayersProperties]): Self = StObject.set(x, "visibleLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewpoint(value: ViewpointProperties): Self = this.set("viewpoint", value.asInstanceOf[js.Any])
+    def setVisibleLayersUndefined: Self = StObject.set(x, "visibleLayers", js.undefined)
     
     @scala.inline
-    def deleteViewpoint: Self = this.set("viewpoint", js.undefined)
-    
-    @scala.inline
-    def setVisibleLayersVarargs(value: SlideVisibleLayersProperties*): Self = this.set("visibleLayers", js.Array(value :_*))
-    
-    @scala.inline
-    def setVisibleLayers(value: CollectionProperties[SlideVisibleLayersProperties]): Self = this.set("visibleLayers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleLayers: Self = this.set("visibleLayers", js.undefined)
+    def setVisibleLayersVarargs(value: SlideVisibleLayersProperties*): Self = StObject.set(x, "visibleLayers", js.Array(value :_*))
   }
 }

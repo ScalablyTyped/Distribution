@@ -1,11 +1,12 @@
 package typings.chromeApps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofsockets extends js.Object {
+trait Typeofsockets extends StObject {
   
   /**
     * Use the chrome.sockets.tcp API to send and receive data over the network using TCP connections.
@@ -44,27 +45,15 @@ object Typeofsockets {
   }
   
   @scala.inline
-  implicit class TypeofsocketsOps[Self <: Typeofsockets] (val x: Self) extends AnyVal {
+  implicit class TypeofsocketsMutableBuilder[Self <: Typeofsockets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTcp(value: Typeoftcp): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTcpServer(value: TypeoftcpServer): Self = StObject.set(x, "tcpServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTcp(value: Typeoftcp): Self = this.set("tcp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTcpServer(value: TypeoftcpServer): Self = this.set("tcpServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUdp(value: Typeofudp): Self = this.set("udp", value.asInstanceOf[js.Any])
+    def setUdp(value: Typeofudp): Self = StObject.set(x, "udp", value.asInstanceOf[js.Any])
   }
 }

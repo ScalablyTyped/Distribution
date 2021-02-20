@@ -4,12 +4,13 @@ import typings.std.RTCIceCandidate
 import typings.std.RTCIceCandidatePair
 import typings.std.RTCIceGatheringState
 import typings.std.RTCIceParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCIceTransport extends js.Object {
+trait RTCIceTransport extends StObject {
   
   //readonly role: RTCIceRole;
   //readonly component: RTCIceComponent;
@@ -48,54 +49,42 @@ object RTCIceTransport {
   }
   
   @scala.inline
-  implicit class RTCIceTransportOps[Self <: RTCIceTransport] (val x: Self) extends AnyVal {
+  implicit class RTCIceTransportMutableBuilder[Self <: RTCIceTransport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatheringState(value: RTCIceGatheringState): Self = StObject.set(x, "gatheringState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLocalCandidates(value: () => js.Array[RTCIceCandidate]): Self = StObject.set(x, "getLocalCandidates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLocalParameters(value: () => RTCIceParameters | Null): Self = StObject.set(x, "getLocalParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGatheringState(value: RTCIceGatheringState): Self = this.set("gatheringState", value.asInstanceOf[js.Any])
+    def setGetRemoteCandidates(value: () => js.Array[RTCIceCandidate]): Self = StObject.set(x, "getRemoteCandidates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocalCandidates(value: () => js.Array[RTCIceCandidate]): Self = this.set("getLocalCandidates", js.Any.fromFunction0(value))
+    def setGetRemoteParameters(value: () => RTCIceParameters | Null): Self = StObject.set(x, "getRemoteParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocalParameters(value: () => RTCIceParameters | Null): Self = this.set("getLocalParameters", js.Any.fromFunction0(value))
+    def setGetSelectedCandidatePair(value: () => RTCIceCandidatePair | Null): Self = StObject.set(x, "getSelectedCandidatePair", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRemoteCandidates(value: () => js.Array[RTCIceCandidate]): Self = this.set("getRemoteCandidates", js.Any.fromFunction0(value))
+    def setOngatheringstatechange(value: IceTransportEventHandler): Self = StObject.set(x, "ongatheringstatechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRemoteParameters(value: () => RTCIceParameters | Null): Self = this.set("getRemoteParameters", js.Any.fromFunction0(value))
+    def setOngatheringstatechangeNull: Self = StObject.set(x, "ongatheringstatechange", null)
     
     @scala.inline
-    def setGetSelectedCandidatePair(value: () => RTCIceCandidatePair | Null): Self = this.set("getSelectedCandidatePair", js.Any.fromFunction0(value))
+    def setOnselectedcandidatepairchange(value: IceTransportEventHandler): Self = StObject.set(x, "onselectedcandidatepairchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOngatheringstatechange(value: IceTransportEventHandler): Self = this.set("ongatheringstatechange", value.asInstanceOf[js.Any])
+    def setOnselectedcandidatepairchangeNull: Self = StObject.set(x, "onselectedcandidatepairchange", null)
     
     @scala.inline
-    def setOngatheringstatechangeNull: Self = this.set("ongatheringstatechange", null)
+    def setOnstatechange(value: IceTransportEventHandler): Self = StObject.set(x, "onstatechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnselectedcandidatepairchange(value: IceTransportEventHandler): Self = this.set("onselectedcandidatepairchange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnselectedcandidatepairchangeNull: Self = this.set("onselectedcandidatepairchange", null)
-    
-    @scala.inline
-    def setOnstatechange(value: IceTransportEventHandler): Self = this.set("onstatechange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnstatechangeNull: Self = this.set("onstatechange", null)
+    def setOnstatechangeNull: Self = StObject.set(x, "onstatechange", null)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDns.gapi.client.dns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Operation extends js.Object {
+trait Operation extends StObject {
   
   /** Only populated if the operation targeted a DnsKey (output only). */
   var dnsKeyContext: js.UndefOr[OperationDnsKeyContext] = js.native
@@ -45,66 +46,54 @@ object Operation {
   }
   
   @scala.inline
-  implicit class OperationOps[Self <: Operation] (val x: Self) extends AnyVal {
+  implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsKeyContext(value: OperationDnsKeyContext): Self = StObject.set(x, "dnsKeyContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsKeyContextUndefined: Self = StObject.set(x, "dnsKeyContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsKeyContext(value: OperationDnsKeyContext): Self = this.set("dnsKeyContext", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDnsKeyContext: Self = this.set("dnsKeyContext", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setZoneContext(value: OperationManagedZoneContext): Self = StObject.set(x, "zoneContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setZoneContext(value: OperationManagedZoneContext): Self = this.set("zoneContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoneContext: Self = this.set("zoneContext", js.undefined)
+    def setZoneContextUndefined: Self = StObject.set(x, "zoneContext", js.undefined)
   }
 }

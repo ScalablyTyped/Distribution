@@ -7,14 +7,14 @@ import typings.jupyterlabCoreutils.anon.Raw
 import typings.jupyterlabCoreutils.urlMod.URLExt.IUrl
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/coreutils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@jupyterlab/coreutils", "ActivityMonitor")
   @js.native
   class ActivityMonitor[Sender, Args] protected ()
     extends typings.jupyterlabCoreutils.activitymonitorMod.ActivityMonitor[Sender, Args] {
@@ -24,10 +24,18 @@ object mod extends js.Object {
     def this(options: IOptions[Sender, Args]) = this()
   }
   
-  @js.native
-  object MarkdownCodeBlocks extends js.Object {
+  object MarkdownCodeBlocks {
     
+    @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks.CODE_BLOCK_MARKER")
+    @js.native
     val CODE_BLOCK_MARKER: /* "```" */ String = js.native
+    
+    @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks.MarkdownCodeBlock")
+    @js.native
+    class MarkdownCodeBlock protected ()
+      extends typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock {
+      def this(startLine: Double) = this()
+    }
     
     /**
       * Construct all code snippets from current text
@@ -36,6 +44,8 @@ object mod extends js.Object {
       *
       * @returns An array of MarkdownCodeBlocks.
       */
+    @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks.findMarkdownCodeBlocks")
+    @js.native
     def findMarkdownCodeBlocks(text: String): js.Array[
         typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
       ] = js.native
@@ -46,32 +56,71 @@ object mod extends js.Object {
       *
       * @returns true/false depending on whether this is a supported markdown extension
       */
-    def isMarkdown(extension: String): Boolean = js.native
-    
+    @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks.isMarkdown")
     @js.native
-    class MarkdownCodeBlock protected ()
-      extends typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock {
-      def this(startLine: Double) = this()
-    }
+    def isMarkdown(extension: String): Boolean = js.native
   }
   
-  @js.native
-  object PageConfig extends js.Object {
+  object PageConfig {
+    
+    /**
+      * The namespace for page config `Extension` functions.
+      */
+    object Extension {
+      
+      /**
+        * The collection of deferred extensions in page config.
+        */
+      @JSImport("@jupyterlab/coreutils", "PageConfig.Extension.deferred")
+      @js.native
+      val deferred: js.Array[Raw] = js.native
+      
+      /**
+        * The collection of disabled extensions in page config.
+        */
+      @JSImport("@jupyterlab/coreutils", "PageConfig.Extension.disabled")
+      @js.native
+      val disabled: js.Array[Raw] = js.native
+      
+      /**
+        * Returns whether a plugin is deferred.
+        *
+        * @param id - The plugin ID.
+        */
+      @JSImport("@jupyterlab/coreutils", "PageConfig.Extension.isDeferred")
+      @js.native
+      def isDeferred(id: String): Boolean = js.native
+      
+      /**
+        * Returns whether a plugin is disabled.
+        *
+        * @param id - The plugin ID.
+        */
+      @JSImport("@jupyterlab/coreutils", "PageConfig.Extension.isDisabled")
+      @js.native
+      def isDisabled(id: String): Boolean = js.native
+    }
     
     /**
       * Get the base url for a Jupyter application, or the base url of the page.
       */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getBaseUrl")
+    @js.native
     def getBaseUrl(): String = js.native
     
     /**
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getNBConvertURL")
+    @js.native
     def getNBConvertURL(hasPathFormatDownload: Download): String = js.native
     
     /**
       * Get the Notebook version info [major, minor, patch].
       */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getNotebookVersion")
+    @js.native
     def getNotebookVersion(): js.Tuple3[Double, Double, Double] = js.native
     
     /**
@@ -92,16 +141,22 @@ object mod extends js.Object {
       * with a `--jupyter-config-data` option pointing to a JSON settings
       * file.
       */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getOption")
+    @js.native
     def getOption(name: String): String = js.native
     
     /**
       * Get the base url for sharing links (usually baseUrl)
       */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getShareUrl")
+    @js.native
     def getShareUrl(): String = js.native
     
     /**
       * Get the authorization token for a Jupyter application.
       */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getToken")
+    @js.native
     def getToken(): String = js.native
     
     /**
@@ -109,17 +164,25 @@ object mod extends js.Object {
       * Usually the same as treeUrl,
       * but overrideable e.g. when sharing with JupyterHub.
       */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getTreeShareUrl")
+    @js.native
     def getTreeShareUrl(): String = js.native
     
     /**
       * Get the tree url for a JupyterLab application.
       */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getTreeUrl")
+    @js.native
     def getTreeUrl(): String = js.native
     
     /**
       * Get the base websocket url for a Jupyter application, or an empty string.
       */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getWsUrl")
+    @js.native
     def getWsUrl(): String = js.native
+    @JSImport("@jupyterlab/coreutils", "PageConfig.getWsUrl")
+    @js.native
     def getWsUrl(baseUrl: String): String = js.native
     
     /**
@@ -130,42 +193,12 @@ object mod extends js.Object {
       *
       * @returns The last config value or an empty string if it doesn't exist.
       */
-    def setOption(name: String, value: String): String = js.native
-    
-    /**
-      * The namespace for page config `Extension` functions.
-      */
+    @JSImport("@jupyterlab/coreutils", "PageConfig.setOption")
     @js.native
-    object Extension extends js.Object {
-      
-      /**
-        * The collection of deferred extensions in page config.
-        */
-      val deferred: js.Array[Raw] = js.native
-      
-      /**
-        * The collection of disabled extensions in page config.
-        */
-      val disabled: js.Array[Raw] = js.native
-      
-      /**
-        * Returns whether a plugin is deferred.
-        *
-        * @param id - The plugin ID.
-        */
-      def isDeferred(id: String): Boolean = js.native
-      
-      /**
-        * Returns whether a plugin is disabled.
-        *
-        * @param id - The plugin ID.
-        */
-      def isDisabled(id: String): Boolean = js.native
-    }
+    def setOption(name: String, value: String): String = js.native
   }
   
-  @js.native
-  object PathExt extends js.Object {
+  object PathExt {
     
     /**
       * Return the last portion of a path. Similar to the Unix basename command.
@@ -175,7 +208,11 @@ object mod extends js.Object {
       *
       * @param ext - An extension to remove from the result.
       */
+    @JSImport("@jupyterlab/coreutils", "PathExt.basename")
+    @js.native
     def basename(path: String): String = js.native
+    @JSImport("@jupyterlab/coreutils", "PathExt.basename")
+    @js.native
     def basename(path: String, ext: String): String = js.native
     
     /**
@@ -184,6 +221,8 @@ object mod extends js.Object {
       *
       * @param path - The file path.
       */
+    @JSImport("@jupyterlab/coreutils", "PathExt.dirname")
+    @js.native
     def dirname(path: String): String = js.native
     
     /**
@@ -200,6 +239,8 @@ object mod extends js.Object {
       * character of the basename of path [[basename]] is `.`, then an
       * empty string is returned.
       */
+    @JSImport("@jupyterlab/coreutils", "PathExt.extname")
+    @js.native
     def extname(path: String): String = js.native
     
     /**
@@ -208,6 +249,8 @@ object mod extends js.Object {
       *
       * @param paths - The string paths to join.
       */
+    @JSImport("@jupyterlab/coreutils", "PathExt.join")
+    @js.native
     def join(paths: String*): String = js.native
     
     /**
@@ -217,6 +260,8 @@ object mod extends js.Object {
       *
       * @param path - The string path to normalize.
       */
+    @JSImport("@jupyterlab/coreutils", "PathExt.normalize")
+    @js.native
     def normalize(path: String): String = js.native
     
     /**
@@ -227,6 +272,8 @@ object mod extends js.Object {
       * #### Notes
       * Adds a leading dot if not present and converts to lower case.
       */
+    @JSImport("@jupyterlab/coreutils", "PathExt.normalizeExtension")
+    @js.native
     def normalizeExtension(extension: String): String = js.native
     
     /**
@@ -242,6 +289,8 @@ object mod extends js.Object {
       * If a zero-length string is passed as from or to, `/`
       * will be used instead of the zero-length strings.
       */
+    @JSImport("@jupyterlab/coreutils", "PathExt.relative")
+    @js.native
     def relative(from: String, to: String): String = js.native
     
     /**
@@ -249,6 +298,8 @@ object mod extends js.Object {
       *
       * @param path: the path from which to remove a leading slash.
       */
+    @JSImport("@jupyterlab/coreutils", "PathExt.removeSlash")
+    @js.native
     def removeSlash(path: String): String = js.native
     
     /**
@@ -264,11 +315,12 @@ object mod extends js.Object {
       *
       * If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
       */
+    @JSImport("@jupyterlab/coreutils", "PathExt.resolve")
+    @js.native
     def resolve(parts: String*): String = js.native
   }
   
-  @js.native
-  object Text extends js.Object {
+  object Text {
     
     /**
       * Given a 'snake-case', 'snake_case', 'snake:case', or
@@ -281,7 +333,11 @@ object mod extends js.Object {
       *
       * @returns the camel case version of the input string.
       */
+    @JSImport("@jupyterlab/coreutils", "Text.camelCase")
+    @js.native
     def camelCase(str: String): String = js.native
+    @JSImport("@jupyterlab/coreutils", "Text.camelCase")
+    @js.native
     def camelCase(str: String, upper: Boolean): String = js.native
     
     /**
@@ -293,6 +349,8 @@ object mod extends js.Object {
       *
       * @returns The js-native index
       */
+    @JSImport("@jupyterlab/coreutils", "Text.charIndexToJsIndex")
+    @js.native
     def charIndexToJsIndex(charIdx: Double, text: String): Double = js.native
     
     /**
@@ -304,6 +362,8 @@ object mod extends js.Object {
       *
       * @returns The unicode character offset
       */
+    @JSImport("@jupyterlab/coreutils", "Text.jsIndexToCharIndex")
+    @js.native
     def jsIndexToCharIndex(jsIdx: Double, text: String): Double = js.native
     
     /**
@@ -313,11 +373,12 @@ object mod extends js.Object {
       *
       * @returns the same string, but with each word capitalized.
       */
+    @JSImport("@jupyterlab/coreutils", "Text.titleCase")
+    @js.native
     def titleCase(str: String): String = js.native
   }
   
-  @js.native
-  object Time extends js.Object {
+  object Time {
     
     /**
       * Convert a timestring to a date format.
@@ -328,9 +389,17 @@ object mod extends js.Object {
       *
       * @returns A formatted date.
       */
+    @JSImport("@jupyterlab/coreutils", "Time.format")
+    @js.native
     def format(value: String): String = js.native
+    @JSImport("@jupyterlab/coreutils", "Time.format")
+    @js.native
     def format(value: String, timeFormat: String): String = js.native
+    @JSImport("@jupyterlab/coreutils", "Time.format")
+    @js.native
     def format(value: Date): String = js.native
+    @JSImport("@jupyterlab/coreutils", "Time.format")
+    @js.native
     def format(value: Date, timeFormat: String): String = js.native
     
     /**
@@ -340,12 +409,15 @@ object mod extends js.Object {
       *
       * @returns A formatted date.
       */
+    @JSImport("@jupyterlab/coreutils", "Time.formatHuman")
+    @js.native
     def formatHuman(value: String): String = js.native
+    @JSImport("@jupyterlab/coreutils", "Time.formatHuman")
+    @js.native
     def formatHuman(value: Date): String = js.native
   }
   
-  @js.native
-  object URLExt extends js.Object {
+  object URLExt {
     
     /**
       * Encode the components of a multi-segment url.
@@ -358,6 +430,8 @@ object mod extends js.Object {
       * Preserves the `'/'` separators.
       * Should not include the base url, since all parts are escaped.
       */
+    @JSImport("@jupyterlab/coreutils", "URLExt.encodeParts")
+    @js.native
     def encodeParts(url: String): String = js.native
     
     /**
@@ -367,6 +441,8 @@ object mod extends js.Object {
       * This function returns `false` for any fully qualified url, including
       * `data:`, `file:`, and `//` protocol URLs.
       */
+    @JSImport("@jupyterlab/coreutils", "URLExt.isLocal")
+    @js.native
     def isLocal(url: String): Boolean = js.native
     
     /**
@@ -376,15 +452,24 @@ object mod extends js.Object {
       *
       * @returns the joined url.
       */
+    @JSImport("@jupyterlab/coreutils", "URLExt.join")
+    @js.native
     def join(parts: String*): String = js.native
     
+    @JSImport("@jupyterlab/coreutils", "URLExt.normalize")
+    @js.native
     def normalize(): js.UndefOr[String] = js.native
+    @JSImport("@jupyterlab/coreutils", "URLExt.normalize")
+    @js.native
     def normalize(url: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
     /**
       * Normalize a url.
       */
+    @JSImport("@jupyterlab/coreutils", "URLExt.normalize")
+    @js.native
     def normalize(url: String): String = js.native
-    @JSName("normalize")
+    @JSImport("@jupyterlab/coreutils", "URLExt.normalize")
+    @js.native
     def normalize_Union(url: String): js.UndefOr[String] = js.native
     
     /**
@@ -397,6 +482,8 @@ object mod extends js.Object {
       * #### Notes
       * Modified version of [stackoverflow](http://stackoverflow.com/a/30707423).
       */
+    @JSImport("@jupyterlab/coreutils", "URLExt.objectToQueryString")
+    @js.native
     def objectToQueryString(value: PartialJSONObject): String = js.native
     
     /**
@@ -406,11 +493,15 @@ object mod extends js.Object {
       *
       * @returns A URL object.
       */
+    @JSImport("@jupyterlab/coreutils", "URLExt.parse")
+    @js.native
     def parse(url: String): IUrl = js.native
     
     /**
       * Return a parsed object that represents the values in a query string.
       */
+    @JSImport("@jupyterlab/coreutils", "URLExt.queryStringToObject")
+    @js.native
     def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = js.native
   }
 }

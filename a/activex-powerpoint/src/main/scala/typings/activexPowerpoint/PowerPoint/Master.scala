@@ -4,12 +4,13 @@ import typings.activexOffice.Office.MsoBackgroundStyleIndex
 import typings.activexOffice.Office.OfficeTheme
 import typings.activexOffice.Office.Script
 import typings.activexOffice.Office.Scripts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Master extends js.Object {
+trait Master extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   

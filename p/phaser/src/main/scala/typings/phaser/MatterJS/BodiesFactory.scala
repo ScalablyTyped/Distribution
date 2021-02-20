@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BodiesFactory extends js.Object {
+trait BodiesFactory extends StObject {
   
   /**
     * Creates a new rigid body model with a circle hull.

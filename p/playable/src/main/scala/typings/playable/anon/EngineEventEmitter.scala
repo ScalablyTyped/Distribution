@@ -3,12 +3,13 @@ package typings.playable.anon
 import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.playbackEngineTypesMod.IPlaybackEngine
 import typings.playable.themeTypesMod.IThemeService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EngineEventEmitter extends js.Object {
+trait EngineEventEmitter extends StObject {
   
   var engine: IPlaybackEngine = js.native
   
@@ -25,27 +26,15 @@ object EngineEventEmitter {
   }
   
   @scala.inline
-  implicit class EngineEventEmitterOps[Self <: EngineEventEmitter] (val x: Self) extends AnyVal {
+  implicit class EngineEventEmitterMutableBuilder[Self <: EngineEventEmitter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = this.set("engine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = this.set("eventEmitter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTheme(value: IThemeService): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

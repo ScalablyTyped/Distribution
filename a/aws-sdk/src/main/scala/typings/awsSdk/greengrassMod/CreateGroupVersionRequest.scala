@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateGroupVersionRequest extends js.Object {
+trait CreateGroupVersionRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
@@ -61,69 +62,57 @@ object CreateGroupVersionRequest {
   }
   
   @scala.inline
-  implicit class CreateGroupVersionRequestOps[Self <: CreateGroupVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateGroupVersionRequestMutableBuilder[Self <: CreateGroupVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectorDefinitionVersionArn(value: string): Self = StObject.set(x, "ConnectorDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: string): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    def setConnectorDefinitionVersionArnUndefined: Self = StObject.set(x, "ConnectorDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def setAmznClientToken(value: string): Self = this.set("AmznClientToken", value.asInstanceOf[js.Any])
+    def setCoreDefinitionVersionArn(value: string): Self = StObject.set(x, "CoreDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmznClientToken: Self = this.set("AmznClientToken", js.undefined)
+    def setCoreDefinitionVersionArnUndefined: Self = StObject.set(x, "CoreDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def setConnectorDefinitionVersionArn(value: string): Self = this.set("ConnectorDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setDeviceDefinitionVersionArn(value: string): Self = StObject.set(x, "DeviceDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectorDefinitionVersionArn: Self = this.set("ConnectorDefinitionVersionArn", js.undefined)
+    def setDeviceDefinitionVersionArnUndefined: Self = StObject.set(x, "DeviceDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def setCoreDefinitionVersionArn(value: string): Self = this.set("CoreDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setFunctionDefinitionVersionArn(value: string): Self = StObject.set(x, "FunctionDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCoreDefinitionVersionArn: Self = this.set("CoreDefinitionVersionArn", js.undefined)
+    def setFunctionDefinitionVersionArnUndefined: Self = StObject.set(x, "FunctionDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def setDeviceDefinitionVersionArn(value: string): Self = this.set("DeviceDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceDefinitionVersionArn: Self = this.set("DeviceDefinitionVersionArn", js.undefined)
+    def setLoggerDefinitionVersionArn(value: string): Self = StObject.set(x, "LoggerDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionDefinitionVersionArn(value: string): Self = this.set("FunctionDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setLoggerDefinitionVersionArnUndefined: Self = StObject.set(x, "LoggerDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def deleteFunctionDefinitionVersionArn: Self = this.set("FunctionDefinitionVersionArn", js.undefined)
+    def setResourceDefinitionVersionArn(value: string): Self = StObject.set(x, "ResourceDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggerDefinitionVersionArn(value: string): Self = this.set("LoggerDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setResourceDefinitionVersionArnUndefined: Self = StObject.set(x, "ResourceDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def deleteLoggerDefinitionVersionArn: Self = this.set("LoggerDefinitionVersionArn", js.undefined)
+    def setSubscriptionDefinitionVersionArn(value: string): Self = StObject.set(x, "SubscriptionDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceDefinitionVersionArn(value: string): Self = this.set("ResourceDefinitionVersionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceDefinitionVersionArn: Self = this.set("ResourceDefinitionVersionArn", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionDefinitionVersionArn(value: string): Self = this.set("SubscriptionDefinitionVersionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionDefinitionVersionArn: Self = this.set("SubscriptionDefinitionVersionArn", js.undefined)
+    def setSubscriptionDefinitionVersionArnUndefined: Self = StObject.set(x, "SubscriptionDefinitionVersionArn", js.undefined)
   }
 }

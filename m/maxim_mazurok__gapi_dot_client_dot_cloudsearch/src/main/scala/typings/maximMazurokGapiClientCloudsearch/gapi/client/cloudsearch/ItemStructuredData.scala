@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemStructuredData extends js.Object {
+trait ItemStructuredData extends StObject {
   
   /** Hashing value provided by the API caller. This can be used with the items.push method to calculate modified state. The maximum length is 2048 characters. */
   var hash: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ItemStructuredData {
   }
   
   @scala.inline
-  implicit class ItemStructuredDataOps[Self <: ItemStructuredData] (val x: Self) extends AnyVal {
+  implicit class ItemStructuredDataMutableBuilder[Self <: ItemStructuredData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObject(value: StructuredDataObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
-    
-    @scala.inline
-    def setObject(value: StructuredDataObject): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
   }
 }

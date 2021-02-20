@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FaqSummary extends js.Object {
+trait FaqSummary extends StObject {
   
   /**
     * The UNIX datetime that the FAQ was added to the index.
@@ -46,54 +47,42 @@ object FaqSummary {
   }
   
   @scala.inline
-  implicit class FaqSummaryOps[Self <: FaqSummary] (val x: Self) extends AnyVal {
+  implicit class FaqSummaryMutableBuilder[Self <: FaqSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileFormat(value: FaqFileFormat): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setFileFormatUndefined: Self = StObject.set(x, "FileFormat", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setId(value: FaqId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileFormat(value: FaqFileFormat): Self = this.set("FileFormat", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteFileFormat: Self = this.set("FileFormat", js.undefined)
+    def setName(value: FaqName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: FaqId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setStatus(value: FaqStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: FaqName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: FaqStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.reactBeautifulDnd.mod
 
 import typings.reactBeautifulDnd.reactBeautifulDndBooleans.`true`
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.DROP_PENDING
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,72 +67,60 @@ object DropPendingState {
   }
   
   @scala.inline
-  implicit class DropPendingStateOps[Self <: DropPendingState] (val x: Self) extends AnyVal {
+  implicit class DropPendingStateMutableBuilder[Self <: DropPendingState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterCritical(value: LiftEffect): Self = StObject.set(x, "afterCritical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCritical(value: Critical): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrent(value: DragPositions): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterCritical(value: LiftEffect): Self = this.set("afterCritical", value.asInstanceOf[js.Any])
+    def setDimensions(value: DimensionMap): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCritical(value: Critical): Self = this.set("critical", value.asInstanceOf[js.Any])
+    def setForceShouldAnimate(value: Boolean): Self = StObject.set(x, "forceShouldAnimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent(value: DragPositions): Self = this.set("current", value.asInstanceOf[js.Any])
+    def setForceShouldAnimateUndefined: Self = StObject.set(x, "forceShouldAnimate", js.undefined)
     
     @scala.inline
-    def setDimensions(value: DimensionMap): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setImpact(value: DragImpact): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpact(value: DragImpact): Self = this.set("impact", value.asInstanceOf[js.Any])
+    def setInitial(value: DragPositions): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitial(value: DragPositions): Self = this.set("initial", value.asInstanceOf[js.Any])
+    def setIsDragging(value: `true`): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDragging(value: `true`): Self = this.set("isDragging", value.asInstanceOf[js.Any])
+    def setIsWaiting(value: Boolean): Self = StObject.set(x, "isWaiting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWaiting(value: Boolean): Self = this.set("isWaiting", value.asInstanceOf[js.Any])
+    def setIsWindowScrollAllowed(value: Boolean): Self = StObject.set(x, "isWindowScrollAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWindowScrollAllowed(value: Boolean): Self = this.set("isWindowScrollAllowed", value.asInstanceOf[js.Any])
+    def setMovementMode(value: MovementMode): Self = StObject.set(x, "movementMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovementMode(value: MovementMode): Self = this.set("movementMode", value.asInstanceOf[js.Any])
+    def setOnLiftImpact(value: DragImpact): Self = StObject.set(x, "onLiftImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLiftImpact(value: DragImpact): Self = this.set("onLiftImpact", value.asInstanceOf[js.Any])
+    def setPhase(value: DROP_PENDING): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase(value: DROP_PENDING): Self = this.set("phase", value.asInstanceOf[js.Any])
+    def setReason(value: DropReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: DropReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setScrollJumpRequest(value: Position): Self = StObject.set(x, "scrollJumpRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewport(value: Viewport): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    def setScrollJumpRequestUndefined: Self = StObject.set(x, "scrollJumpRequest", js.undefined)
     
     @scala.inline
-    def setForceShouldAnimate(value: Boolean): Self = this.set("forceShouldAnimate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceShouldAnimate: Self = this.set("forceShouldAnimate", js.undefined)
-    
-    @scala.inline
-    def setScrollJumpRequest(value: Position): Self = this.set("scrollJumpRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollJumpRequest: Self = this.set("scrollJumpRequest", js.undefined)
+    def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

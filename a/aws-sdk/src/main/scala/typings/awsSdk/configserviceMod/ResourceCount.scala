@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceCount extends js.Object {
+trait ResourceCount extends StObject {
   
   /**
     * The number of resources.
@@ -26,30 +27,18 @@ object ResourceCount {
   }
   
   @scala.inline
-  implicit class ResourceCountOps[Self <: ResourceCount] (val x: Self) extends AnyVal {
+  implicit class ResourceCountMutableBuilder[Self <: ResourceCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Long): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

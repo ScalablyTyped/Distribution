@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** Analysis results for each requested feature. */
 @js.native
-trait AnalysisResults extends js.Object {
+trait AnalysisResults extends StObject {
   
   /** Text that was used in the analysis. */
   var analyzed_text: js.UndefOr[String] = js.native
@@ -62,120 +63,108 @@ object AnalysisResults {
   }
   
   @scala.inline
-  implicit class AnalysisResultsOps[Self <: AnalysisResults] (val x: Self) extends AnyVal {
+  implicit class AnalysisResultsMutableBuilder[Self <: AnalysisResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzed_text(value: String): Self = StObject.set(x, "analyzed_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyzed_textUndefined: Self = StObject.set(x, "analyzed_text", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategories(value: js.Array[CategoriesResult]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyzed_text(value: String): Self = this.set("analyzed_text", value.asInstanceOf[js.Any])
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def deleteAnalyzed_text: Self = this.set("analyzed_text", js.undefined)
+    def setCategoriesVarargs(value: CategoriesResult*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: CategoriesResult*): Self = this.set("categories", js.Array(value :_*))
+    def setConcepts(value: js.Array[ConceptsResult]): Self = StObject.set(x, "concepts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[CategoriesResult]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setConceptsUndefined: Self = StObject.set(x, "concepts", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setConceptsVarargs(value: ConceptsResult*): Self = StObject.set(x, "concepts", js.Array(value :_*))
     
     @scala.inline
-    def setConceptsVarargs(value: ConceptsResult*): Self = this.set("concepts", js.Array(value :_*))
+    def setEmotion(value: EmotionResult): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcepts(value: js.Array[ConceptsResult]): Self = this.set("concepts", value.asInstanceOf[js.Any])
+    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
     
     @scala.inline
-    def deleteConcepts: Self = this.set("concepts", js.undefined)
+    def setEntities(value: js.Array[EntitiesResult]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmotion(value: EmotionResult): Self = this.set("emotion", value.asInstanceOf[js.Any])
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def deleteEmotion: Self = this.set("emotion", js.undefined)
+    def setEntitiesVarargs(value: EntitiesResult*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def setEntitiesVarargs(value: EntitiesResult*): Self = this.set("entities", js.Array(value :_*))
+    def setKeywords(value: js.Array[KeywordsResult]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: js.Array[EntitiesResult]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
+    def setKeywordsVarargs(value: KeywordsResult*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
     @scala.inline
-    def setKeywordsVarargs(value: KeywordsResult*): Self = this.set("keywords", js.Array(value :_*))
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: js.Array[KeywordsResult]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setMetadata(value: AnalysisResultsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setRelations(value: js.Array[RelationsResult]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: AnalysisResultsMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setRelationsVarargs(value: RelationsResult*): Self = StObject.set(x, "relations", js.Array(value :_*))
     
     @scala.inline
-    def setRelationsVarargs(value: RelationsResult*): Self = this.set("relations", js.Array(value :_*))
+    def setRetrieved_url(value: String): Self = StObject.set(x, "retrieved_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelations(value: js.Array[RelationsResult]): Self = this.set("relations", value.asInstanceOf[js.Any])
+    def setRetrieved_urlUndefined: Self = StObject.set(x, "retrieved_url", js.undefined)
     
     @scala.inline
-    def deleteRelations: Self = this.set("relations", js.undefined)
+    def setSemantic_roles(value: js.Array[SemanticRolesResult]): Self = StObject.set(x, "semantic_roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetrieved_url(value: String): Self = this.set("retrieved_url", value.asInstanceOf[js.Any])
+    def setSemantic_rolesUndefined: Self = StObject.set(x, "semantic_roles", js.undefined)
     
     @scala.inline
-    def deleteRetrieved_url: Self = this.set("retrieved_url", js.undefined)
+    def setSemantic_rolesVarargs(value: SemanticRolesResult*): Self = StObject.set(x, "semantic_roles", js.Array(value :_*))
     
     @scala.inline
-    def setSemantic_rolesVarargs(value: SemanticRolesResult*): Self = this.set("semantic_roles", js.Array(value :_*))
+    def setSentiment(value: SentimentResult): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemantic_roles(value: js.Array[SemanticRolesResult]): Self = this.set("semantic_roles", value.asInstanceOf[js.Any])
+    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
     
     @scala.inline
-    def deleteSemantic_roles: Self = this.set("semantic_roles", js.undefined)
+    def setSyntax(value: SyntaxResult): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentiment(value: SentimentResult): Self = this.set("sentiment", value.asInstanceOf[js.Any])
+    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
     
     @scala.inline
-    def deleteSentiment: Self = this.set("sentiment", js.undefined)
+    def setUsage(value: AnalysisResultsUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyntax(value: SyntaxResult): Self = this.set("syntax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyntax: Self = this.set("syntax", js.undefined)
-    
-    @scala.inline
-    def setUsage(value: AnalysisResultsUsage): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

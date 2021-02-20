@@ -3,12 +3,13 @@ package typings.inboxsdk.mod.Conversations
 import typings.inboxsdk.inboxsdkStrings.recipient
 import typings.inboxsdk.inboxsdkStrings.sender
 import typings.inboxsdk.mod.Common.Contact
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContactHoverEvent extends js.Object {
+trait ContactHoverEvent extends StObject {
   
   var contact: Contact = js.native
   
@@ -32,30 +33,18 @@ object ContactHoverEvent {
   }
   
   @scala.inline
-  implicit class ContactHoverEventOps[Self <: ContactHoverEvent] (val x: Self) extends AnyVal {
+  implicit class ContactHoverEventMutableBuilder[Self <: ContactHoverEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactType(value: sender | recipient): Self = StObject.set(x, "contactType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageView(value: MessageView): Self = StObject.set(x, "messageView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContact(value: Contact): Self = this.set("contact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContactType(value: sender | recipient): Self = this.set("contactType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageView(value: MessageView): Self = this.set("messageView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreadView(value: ThreadView): Self = this.set("threadView", value.asInstanceOf[js.Any])
+    def setThreadView(value: ThreadView): Self = StObject.set(x, "threadView", value.asInstanceOf[js.Any])
   }
 }

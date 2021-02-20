@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Full extends js.Object {
+trait Full extends StObject {
   
   var full: scala.Double = js.native
   
@@ -29,30 +30,18 @@ object Full {
   }
   
   @scala.inline
-  implicit class FullOps[Self <: Full] (val x: Self) extends AnyVal {
+  implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: scala.Double): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOneLevel(value: scala.Double): Self = StObject.set(x, "oneLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: scala.Double): Self = this.set("full", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOneLevel(value: scala.Double): Self = this.set("oneLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOneLevelPlusNestedEmptyFolders(value: scala.Double): Self = this.set("oneLevelPlusNestedEmptyFolders", value.asInstanceOf[js.Any])
+    def setOneLevelPlusNestedEmptyFolders(value: scala.Double): Self = StObject.set(x, "oneLevelPlusNestedEmptyFolders", value.asInstanceOf[js.Any])
   }
 }

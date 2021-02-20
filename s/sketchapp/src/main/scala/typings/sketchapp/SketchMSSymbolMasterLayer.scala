@@ -1,6 +1,7 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.symbolMaster
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,45 +71,33 @@ object SketchMSSymbolMasterLayer {
   }
   
   @scala.inline
-  implicit class SketchMSSymbolMasterLayerOps[Self <: SketchMSSymbolMasterLayer] (val x: Self) extends AnyVal {
+  implicit class SketchMSSymbolMasterLayerMutableBuilder[Self <: SketchMSSymbolMasterLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: SketchMSColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeIdentifier(value: Double): Self = StObject.set(x, "changeIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasBackgroundColor(value: Boolean): Self = StObject.set(x, "hasBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: symbolMaster): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setIncludeBackgroundColorInExport(value: Boolean): Self = StObject.set(x, "includeBackgroundColorInExport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: SketchMSColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setIncludeBackgroundColorInInstance(value: Boolean): Self = StObject.set(x, "includeBackgroundColorInInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeIdentifier(value: Double): Self = this.set("changeIdentifier", value.asInstanceOf[js.Any])
+    def setIsFlowHome(value: Boolean): Self = StObject.set(x, "isFlowHome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBackgroundColor(value: Boolean): Self = this.set("hasBackgroundColor", value.asInstanceOf[js.Any])
+    def setResizesContent(value: Boolean): Self = StObject.set(x, "resizesContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeBackgroundColorInExport(value: Boolean): Self = this.set("includeBackgroundColorInExport", value.asInstanceOf[js.Any])
+    def setSymbolID(value: String): Self = StObject.set(x, "symbolID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeBackgroundColorInInstance(value: Boolean): Self = this.set("includeBackgroundColorInInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFlowHome(value: Boolean): Self = this.set("isFlowHome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResizesContent(value: Boolean): Self = this.set("resizesContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbolID(value: String): Self = this.set("symbolID", value.asInstanceOf[js.Any])
+    def set_class(value: symbolMaster): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

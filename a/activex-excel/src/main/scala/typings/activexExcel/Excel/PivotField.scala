@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotField extends js.Object {
+trait PivotField extends StObject {
   
   def AddPageItem(Item: String): Unit = js.native
   def AddPageItem(Item: String, ClearList: Boolean): Unit = js.native

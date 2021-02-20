@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigqueryconnection.gapi.client.bigqueryconnection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudSqlProperties extends js.Object {
+trait CloudSqlProperties extends StObject {
   
   /** Input only. Cloud SQL credential. */
   var credential: js.UndefOr[CloudSqlCredential] = js.native
@@ -28,42 +29,30 @@ object CloudSqlProperties {
   }
   
   @scala.inline
-  implicit class CloudSqlPropertiesOps[Self <: CloudSqlProperties] (val x: Self) extends AnyVal {
+  implicit class CloudSqlPropertiesMutableBuilder[Self <: CloudSqlProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredential(value: CloudSqlCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredential(value: CloudSqlCredential): Self = this.set("credential", value.asInstanceOf[js.Any])
+    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
     @scala.inline
-    def deleteCredential: Self = this.set("credential", js.undefined)
+    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: String): Self = this.set("database", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
     @scala.inline
-    def deleteDatabase: Self = this.set("database", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

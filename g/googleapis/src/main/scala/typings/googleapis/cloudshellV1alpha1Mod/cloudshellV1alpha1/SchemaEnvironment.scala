@@ -1,5 +1,6 @@
 package typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * has a single environment with the ID &quot;default&quot;.
   */
 @js.native
-trait SchemaEnvironment extends js.Object {
+trait SchemaEnvironment extends StObject {
   
   /**
     * Required. Full path to the Docker image used to run this environment,
@@ -75,69 +76,57 @@ object SchemaEnvironment {
   }
   
   @scala.inline
-  implicit class SchemaEnvironmentOps[Self <: SchemaEnvironment] (val x: Self) extends AnyVal {
+  implicit class SchemaEnvironmentMutableBuilder[Self <: SchemaEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDockerImage(value: String): Self = StObject.set(x, "dockerImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDockerImageUndefined: Self = StObject.set(x, "dockerImage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerImage(value: String): Self = this.set("dockerImage", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDockerImage: Self = this.set("dockerImage", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPublicKeys(value: js.Array[SchemaPublicKey]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPublicKeysVarargs(value: SchemaPublicKey*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
     
     @scala.inline
-    def setPublicKeysVarargs(value: SchemaPublicKey*): Self = this.set("publicKeys", js.Array(value :_*))
+    def setSshHost(value: String): Self = StObject.set(x, "sshHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKeys(value: js.Array[SchemaPublicKey]): Self = this.set("publicKeys", value.asInstanceOf[js.Any])
+    def setSshHostUndefined: Self = StObject.set(x, "sshHost", js.undefined)
     
     @scala.inline
-    def deletePublicKeys: Self = this.set("publicKeys", js.undefined)
+    def setSshPort(value: Double): Self = StObject.set(x, "sshPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshHost(value: String): Self = this.set("sshHost", value.asInstanceOf[js.Any])
+    def setSshPortUndefined: Self = StObject.set(x, "sshPort", js.undefined)
     
     @scala.inline
-    def deleteSshHost: Self = this.set("sshHost", js.undefined)
+    def setSshUsername(value: String): Self = StObject.set(x, "sshUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshPort(value: Double): Self = this.set("sshPort", value.asInstanceOf[js.Any])
+    def setSshUsernameUndefined: Self = StObject.set(x, "sshUsername", js.undefined)
     
     @scala.inline
-    def deleteSshPort: Self = this.set("sshPort", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshUsername(value: String): Self = this.set("sshUsername", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSshUsername: Self = this.set("sshUsername", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

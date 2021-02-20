@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.UI.StartScreen
 
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for creating and defining jump list items for an app's jump list. */
 @js.native
-trait JumpListItem extends js.Object {
+trait JumpListItem extends StObject {
   
   /** Gets the command line arguments for the jump list item. */
   var arguments: String = js.native
@@ -47,39 +48,27 @@ object JumpListItem {
   }
   
   @scala.inline
-  implicit class JumpListItemOps[Self <: JumpListItem] (val x: Self) extends AnyVal {
+  implicit class JumpListItemMutableBuilder[Self <: JumpListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: String): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setKind(value: JumpListItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setLogo(value: Uri): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: JumpListItemKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogo(value: Uri): Self = this.set("logo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemovedByUser(value: Boolean): Self = this.set("removedByUser", value.asInstanceOf[js.Any])
+    def setRemovedByUser(value: Boolean): Self = StObject.set(x, "removedByUser", value.asInstanceOf[js.Any])
   }
 }

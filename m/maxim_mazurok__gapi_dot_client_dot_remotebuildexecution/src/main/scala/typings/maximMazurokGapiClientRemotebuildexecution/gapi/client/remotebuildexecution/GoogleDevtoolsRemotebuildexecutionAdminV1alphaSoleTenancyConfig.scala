@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig extends js.Object {
+trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig extends StObject {
   
   /** The sole-tenant node type to host the pool's workers on. */
   var nodeType: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig {
   }
   
   @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfigOps[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfigMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodesZone(value: String): Self = StObject.set(x, "nodesZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: String): Self = this.set("nodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeType: Self = this.set("nodeType", js.undefined)
-    
-    @scala.inline
-    def setNodesZone(value: String): Self = this.set("nodesZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodesZone: Self = this.set("nodesZone", js.undefined)
+    def setNodesZoneUndefined: Self = StObject.set(x, "nodesZone", js.undefined)
   }
 }

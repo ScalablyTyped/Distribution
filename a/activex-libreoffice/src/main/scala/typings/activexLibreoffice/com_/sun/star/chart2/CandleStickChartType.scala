@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** chart type service for candlestick charts. */
 @js.native
 trait CandleStickChartType
-  extends XChartType
-     with XDataSeriesContainer
-     with XPropertySet {
+  extends typings.activexLibreoffice.com_.sun.star.chart2.ChartType {
   
   /**
     * If the candlestick chart shows Japanese candlesticks, that is the property {@link Japanese} is `TRUE` , the property set given here contains the
@@ -107,33 +106,21 @@ object CandleStickChartType {
   }
   
   @scala.inline
-  implicit class CandleStickChartTypeOps[Self <: CandleStickChartType] (val x: Self) extends AnyVal {
+  implicit class CandleStickChartTypeMutableBuilder[Self <: CandleStickChartType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlackDay(value: XPropertySet): Self = StObject.set(x, "BlackDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJapanese(value: Boolean): Self = StObject.set(x, "Japanese", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowFirst(value: Boolean): Self = StObject.set(x, "ShowFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackDay(value: XPropertySet): Self = this.set("BlackDay", value.asInstanceOf[js.Any])
+    def setShowHighLow(value: Boolean): Self = StObject.set(x, "ShowHighLow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJapanese(value: Boolean): Self = this.set("Japanese", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowFirst(value: Boolean): Self = this.set("ShowFirst", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowHighLow(value: Boolean): Self = this.set("ShowHighLow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhiteDay(value: XPropertySet): Self = this.set("WhiteDay", value.asInstanceOf[js.Any])
+    def setWhiteDay(value: XPropertySet): Self = StObject.set(x, "WhiteDay", value.asInstanceOf[js.Any])
   }
 }

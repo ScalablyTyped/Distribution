@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "LoyaltyEventLocationFilter")
 @js.native
-class LoyaltyEventLocationFilter () extends js.Object {
+class LoyaltyEventLocationFilter () extends StObject {
   
   /**
     * The `location` IDs for loyalty events to query.

@@ -1,12 +1,13 @@
 package typings.gapiPagespeedonline
 
 import typings.gapiPagespeedonline.anon.Header
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiPageSpeedOnlineRuleResource extends js.Object {
+trait GoogleApiPageSpeedOnlineRuleResource extends StObject {
   
   /**
     * Localized name of the rule, intended for presentation to a user.
@@ -37,33 +38,21 @@ object GoogleApiPageSpeedOnlineRuleResource {
   }
   
   @scala.inline
-  implicit class GoogleApiPageSpeedOnlineRuleResourceOps[Self <: GoogleApiPageSpeedOnlineRuleResource] (val x: Self) extends AnyVal {
+  implicit class GoogleApiPageSpeedOnlineRuleResourceMutableBuilder[Self <: GoogleApiPageSpeedOnlineRuleResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleImpact(value: Double): Self = StObject.set(x, "ruleImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleScore(value: Double): Self = StObject.set(x, "ruleScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizedRuleName(value: String): Self = this.set("localizedRuleName", value.asInstanceOf[js.Any])
+    def setUrlBlocks(value: js.Array[Header]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleImpact(value: Double): Self = this.set("ruleImpact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleScore(value: Double): Self = this.set("ruleScore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrlBlocksVarargs(value: Header*): Self = this.set("urlBlocks", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrlBlocks(value: js.Array[Header]): Self = this.set("urlBlocks", value.asInstanceOf[js.Any])
+    def setUrlBlocksVarargs(value: Header*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
   }
 }

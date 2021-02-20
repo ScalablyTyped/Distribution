@@ -2,12 +2,13 @@ package typings.ssh2Streams.mod
 
 import typings.node.Buffer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParsedKey extends js.Object {
+trait ParsedKey extends StObject {
   
   var comment: String = js.native
   

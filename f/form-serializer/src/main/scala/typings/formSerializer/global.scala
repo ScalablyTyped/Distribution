@@ -1,17 +1,23 @@
 package typings.formSerializer
 
 import typings.formSerializer.FormSerializer.FormSerializerPatterns
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object FormSerializer extends js.Object {
+  object FormSerializer {
     
-    var patterns: FormSerializerPatterns = js.native
+    @JSGlobal("FormSerializer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("FormSerializer.patterns")
+    @js.native
+    def patterns: FormSerializerPatterns = js.native
+    @scala.inline
+    def patterns_=(x: FormSerializerPatterns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("patterns")(x.asInstanceOf[js.Any])
   }
 }

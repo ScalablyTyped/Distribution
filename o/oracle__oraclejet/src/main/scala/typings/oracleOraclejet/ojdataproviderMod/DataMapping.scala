@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.ojdataproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataMapping[K, D, Kin, Din] extends js.Object {
+trait DataMapping[K, D, Kin, Din] extends StObject {
   
   def mapFields(item: Item[Kin, Din]): Item[K, D] = js.native
   
@@ -30,39 +31,27 @@ object DataMapping {
   }
   
   @scala.inline
-  implicit class DataMappingOps[Self <: DataMapping[_, _, _, _], K, D, Kin, Din] (val x: Self with (DataMapping[K, D, Kin, Din])) extends AnyVal {
+  implicit class DataMappingMutableBuilder[Self <: DataMapping[_, _, _, _], K, D, Kin, Din] (val x: Self with (DataMapping[K, D, Kin, Din])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMapFields(value: Item[Kin, Din] => Item[K, D]): Self = StObject.set(x, "mapFields", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMapFilterCriterion(value: /* filterCriterion */ js.Array[FilterOperator[D]] => js.Array[FilterOperator[Din]]): Self = StObject.set(x, "mapFilterCriterion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapFilterCriterionUndefined: Self = StObject.set(x, "mapFilterCriterion", js.undefined)
     
     @scala.inline
-    def setMapFields(value: Item[Kin, Din] => Item[K, D]): Self = this.set("mapFields", js.Any.fromFunction1(value))
+    def setMapSortCriteria(value: /* sortCriteria */ js.Array[SortCriterion[D]] => js.Array[SortCriterion[Din]]): Self = StObject.set(x, "mapSortCriteria", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMapFilterCriterion(value: /* filterCriterion */ js.Array[FilterOperator[D]] => js.Array[FilterOperator[Din]]): Self = this.set("mapFilterCriterion", js.Any.fromFunction1(value))
+    def setMapSortCriteriaUndefined: Self = StObject.set(x, "mapSortCriteria", js.undefined)
     
     @scala.inline
-    def deleteMapFilterCriterion: Self = this.set("mapFilterCriterion", js.undefined)
+    def setUnmapSortCriteria(value: /* sortCriteria */ js.Array[SortCriterion[Din]] => js.Array[SortCriterion[D]]): Self = StObject.set(x, "unmapSortCriteria", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMapSortCriteria(value: /* sortCriteria */ js.Array[SortCriterion[D]] => js.Array[SortCriterion[Din]]): Self = this.set("mapSortCriteria", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteMapSortCriteria: Self = this.set("mapSortCriteria", js.undefined)
-    
-    @scala.inline
-    def setUnmapSortCriteria(value: /* sortCriteria */ js.Array[SortCriterion[Din]] => js.Array[SortCriterion[D]]): Self = this.set("unmapSortCriteria", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUnmapSortCriteria: Self = this.set("unmapSortCriteria", js.undefined)
+    def setUnmapSortCriteriaUndefined: Self = StObject.set(x, "unmapSortCriteria", js.undefined)
   }
 }

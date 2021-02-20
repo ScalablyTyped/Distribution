@@ -3,6 +3,7 @@ package typings.webcl.WEBCL
 import typings.webcl.webclNumbers.`0x1090`
 import typings.webcl.webclNumbers.`0x1091`
 import typings.webcl.webclNumbers.`0x1093`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x1091`
   - typings.webcl.webclNumbers.`0x1093`
 */
-trait ContextProperties extends js.Object
+trait ContextProperties extends StObject
 object ContextProperties {
   
   //CONTEXT_PLATFORM                          = 0x1084, // disallowed, no context properties in Web /* cl_command_queue_info */

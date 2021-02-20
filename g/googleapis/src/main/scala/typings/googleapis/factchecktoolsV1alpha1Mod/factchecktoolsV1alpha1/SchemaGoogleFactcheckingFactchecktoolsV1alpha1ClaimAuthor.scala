@@ -1,5 +1,6 @@
 package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about the claim author.
   */
 @js.native
-trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor extends js.Object {
+trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor extends StObject {
   
   /**
     * Corresponds to `ClaimReview.itemReviewed.author.image`.
@@ -41,42 +42,30 @@ object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor {
   }
   
   @scala.inline
-  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthorOps[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthorMutableBuilder[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobTitle(value: String): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setJobTitleUndefined: Self = StObject.set(x, "jobTitle", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTitle(value: String): Self = this.set("jobTitle", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteJobTitle: Self = this.set("jobTitle", js.undefined)
+    def setSameAs(value: String): Self = StObject.set(x, "sameAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSameAs(value: String): Self = this.set("sameAs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSameAs: Self = this.set("sameAs", js.undefined)
+    def setSameAsUndefined: Self = StObject.set(x, "sameAs", js.undefined)
   }
 }

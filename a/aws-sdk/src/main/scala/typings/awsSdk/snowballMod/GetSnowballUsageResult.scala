@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSnowballUsageResult extends js.Object {
+trait GetSnowballUsageResult extends StObject {
   
   /**
     * The service limit for number of Snow devices this account can have at once. The default service limit is 1 (one).
@@ -26,30 +27,18 @@ object GetSnowballUsageResult {
   }
   
   @scala.inline
-  implicit class GetSnowballUsageResultOps[Self <: GetSnowballUsageResult] (val x: Self) extends AnyVal {
+  implicit class GetSnowballUsageResultMutableBuilder[Self <: GetSnowballUsageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSnowballLimit(value: Integer): Self = StObject.set(x, "SnowballLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSnowballLimitUndefined: Self = StObject.set(x, "SnowballLimit", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnowballsInUse(value: Integer): Self = StObject.set(x, "SnowballsInUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnowballLimit(value: Integer): Self = this.set("SnowballLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnowballLimit: Self = this.set("SnowballLimit", js.undefined)
-    
-    @scala.inline
-    def setSnowballsInUse(value: Integer): Self = this.set("SnowballsInUse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnowballsInUse: Self = this.set("SnowballsInUse", js.undefined)
+    def setSnowballsInUseUndefined: Self = StObject.set(x, "SnowballsInUse", js.undefined)
   }
 }

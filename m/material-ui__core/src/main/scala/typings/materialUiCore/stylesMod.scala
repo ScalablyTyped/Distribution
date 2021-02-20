@@ -13,26 +13,41 @@ import typings.materialUiCore.withStylesMod.WithStylesOptions
 import typings.materialUiCore.withThemeMod.ThemedComponentProps
 import typings.materialUiCore.withThemeMod.WithTheme
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/styles", JSImport.Namespace)
-@js.native
-object stylesMod extends js.Object {
+object stylesMod {
   
+  @JSImport("@material-ui/core/styles", "MuiThemeProvider")
+  @js.native
   val MuiThemeProvider: ComponentType[MuiThemeProviderProps] = js.native
   
+  @JSImport("@material-ui/core/styles", "createGenerateClassName")
+  @js.native
   def createGenerateClassName(): js.Any = js.native
+  @JSImport("@material-ui/core/styles", "createGenerateClassName")
+  @js.native
   def createGenerateClassName(options: GenerateClassNameOptions): js.Any = js.native
   
+  @JSImport("@material-ui/core/styles", "createMuiTheme")
+  @js.native
   def createMuiTheme(): Theme = js.native
+  @JSImport("@material-ui/core/styles", "createMuiTheme")
+  @js.native
   def createMuiTheme(options: ThemeOptions): Theme = js.native
   
+  @JSImport("@material-ui/core/styles", "createStyles")
+  @js.native
   def createStyles[C /* <: String */](styles: StyleRules[C]): StyleRules[C] = js.native
   
+  @JSImport("@material-ui/core/styles", "jssPreset")
+  @js.native
   def jssPreset(): js.Any = js.native
   
+  @JSImport("@material-ui/core/styles", "withStyles")
+  @js.native
   def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
@@ -40,6 +55,8 @@ object stylesMod extends js.Object {
     ], 
     StyledComponentProps[ClassKey]
   ] = js.native
+  @JSImport("@material-ui/core/styles", "withStyles")
+  @js.native
   def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
@@ -47,6 +64,8 @@ object stylesMod extends js.Object {
     ], 
     StyledComponentProps[ClassKey]
   ] = js.native
+  @JSImport("@material-ui/core/styles", "withStyles")
+  @js.native
   def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
@@ -54,6 +73,8 @@ object stylesMod extends js.Object {
     ], 
     StyledComponentProps[ClassKey]
   ] = js.native
+  @JSImport("@material-ui/core/styles", "withStyles")
+  @js.native
   def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
@@ -62,5 +83,7 @@ object stylesMod extends js.Object {
     StyledComponentProps[ClassKey]
   ] = js.native
   
+  @JSImport("@material-ui/core/styles", "withTheme")
+  @js.native
   def withTheme(): PropInjector[WithTheme, ThemedComponentProps] = js.native
 }

@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Common.Math.b2Sweep
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2TOIInput extends js.Object {
+trait b2TOIInput extends StObject {
   
   /**
     * Proxy A
@@ -48,33 +49,21 @@ object b2TOIInput {
   }
   
   @scala.inline
-  implicit class b2TOIInputOps[Self <: b2TOIInput] (val x: Self) extends AnyVal {
+  implicit class b2TOIInputMutableBuilder[Self <: b2TOIInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProxyA(value: b2DistanceProxy): Self = StObject.set(x, "proxyA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProxyB(value: b2DistanceProxy): Self = StObject.set(x, "proxyB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSweepA(value: b2Sweep): Self = StObject.set(x, "sweepA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyA(value: b2DistanceProxy): Self = this.set("proxyA", value.asInstanceOf[js.Any])
+    def setSweepB(value: b2Sweep): Self = StObject.set(x, "sweepB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyB(value: b2DistanceProxy): Self = this.set("proxyB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSweepA(value: b2Sweep): Self = this.set("sweepA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSweepB(value: b2Sweep): Self = this.set("sweepB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTolerance(value: Double): Self = this.set("tolerance", value.asInstanceOf[js.Any])
+    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
   }
 }

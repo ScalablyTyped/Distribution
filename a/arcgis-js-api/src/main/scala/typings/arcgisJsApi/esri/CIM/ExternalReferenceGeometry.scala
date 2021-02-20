@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,30 +11,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisJsApi.esri.CIM.ExternalReferencePolygon
   - typings.arcgisJsApi.esri.CIM.ExternalReferenceEnvelope
 */
-trait ExternalReferenceGeometry extends js.Object
+trait ExternalReferenceGeometry extends StObject
 object ExternalReferenceGeometry {
   
   @scala.inline
-  def ExternalReferencePoint(): ExternalReferenceGeometry = {
+  def ExternalReferenceEnvelope(): typings.arcgisJsApi.esri.CIM.ExternalReferenceEnvelope = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ExternalReferenceGeometry]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.ExternalReferenceEnvelope]
   }
   
   @scala.inline
-  def ExternalReferencePolyline(): ExternalReferenceGeometry = {
+  def ExternalReferencePoint(): typings.arcgisJsApi.esri.CIM.ExternalReferencePoint = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ExternalReferenceGeometry]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.ExternalReferencePoint]
   }
   
   @scala.inline
-  def ExternalReferencePolygon(): ExternalReferenceGeometry = {
+  def ExternalReferencePolygon(): typings.arcgisJsApi.esri.CIM.ExternalReferencePolygon = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ExternalReferenceGeometry]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.ExternalReferencePolygon]
   }
   
   @scala.inline
-  def ExternalReferenceEnvelope(): ExternalReferenceGeometry = {
+  def ExternalReferencePolyline(): typings.arcgisJsApi.esri.CIM.ExternalReferencePolyline = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ExternalReferenceGeometry]
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.ExternalReferencePolyline]
   }
 }

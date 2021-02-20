@@ -1,5 +1,6 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If you need to, store the contactId and connectionId of the connection and make sure that the contact and connection still exist by fetching them in order from the Agent API object before calling methods on them.
   */
 @js.native
-trait BaseConnection extends js.Object {
+trait BaseConnection extends StObject {
   
   /** The unique connectionId for this connection. */
   val connectionId: String = js.native

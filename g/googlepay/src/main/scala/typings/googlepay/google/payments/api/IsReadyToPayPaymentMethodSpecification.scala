@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specification of accepted payment method for use in `isReadyToPay`.
   */
 @js.native
-trait IsReadyToPayPaymentMethodSpecification extends js.Object {
+trait IsReadyToPayPaymentMethodSpecification extends StObject {
   
   /**
     * Payment method parameters.
@@ -44,30 +45,18 @@ object IsReadyToPayPaymentMethodSpecification {
   }
   
   @scala.inline
-  implicit class IsReadyToPayPaymentMethodSpecificationOps[Self <: IsReadyToPayPaymentMethodSpecification] (val x: Self) extends AnyVal {
+  implicit class IsReadyToPayPaymentMethodSpecificationMutableBuilder[Self <: IsReadyToPayPaymentMethodSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: CardParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTokenizationSpecification(value: PaymentMethodTokenizationSpecification): Self = StObject.set(x, "tokenizationSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTokenizationSpecificationUndefined: Self = StObject.set(x, "tokenizationSpecification", js.undefined)
     
     @scala.inline
-    def setParameters(value: CardParameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: PaymentMethodType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokenizationSpecification(value: PaymentMethodTokenizationSpecification): Self = this.set("tokenizationSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenizationSpecification: Self = this.set("tokenizationSpecification", js.undefined)
+    def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

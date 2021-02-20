@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RiskExceptionConfigurationType extends js.Object {
+trait RiskExceptionConfigurationType extends StObject {
   
   /**
     * Overrides the risk decision to always block the pre-authentication requests. The IP range is in CIDR notation: a compact representation of an IP address and its associated routing prefix.
@@ -26,36 +27,24 @@ object RiskExceptionConfigurationType {
   }
   
   @scala.inline
-  implicit class RiskExceptionConfigurationTypeOps[Self <: RiskExceptionConfigurationType] (val x: Self) extends AnyVal {
+  implicit class RiskExceptionConfigurationTypeMutableBuilder[Self <: RiskExceptionConfigurationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockedIPRangeList(value: BlockedIPRangeListType): Self = StObject.set(x, "BlockedIPRangeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedIPRangeListUndefined: Self = StObject.set(x, "BlockedIPRangeList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockedIPRangeListVarargs(value: StringType*): Self = StObject.set(x, "BlockedIPRangeList", js.Array(value :_*))
     
     @scala.inline
-    def setBlockedIPRangeListVarargs(value: StringType*): Self = this.set("BlockedIPRangeList", js.Array(value :_*))
+    def setSkippedIPRangeList(value: SkippedIPRangeListType): Self = StObject.set(x, "SkippedIPRangeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockedIPRangeList(value: BlockedIPRangeListType): Self = this.set("BlockedIPRangeList", value.asInstanceOf[js.Any])
+    def setSkippedIPRangeListUndefined: Self = StObject.set(x, "SkippedIPRangeList", js.undefined)
     
     @scala.inline
-    def deleteBlockedIPRangeList: Self = this.set("BlockedIPRangeList", js.undefined)
-    
-    @scala.inline
-    def setSkippedIPRangeListVarargs(value: StringType*): Self = this.set("SkippedIPRangeList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkippedIPRangeList(value: SkippedIPRangeListType): Self = this.set("SkippedIPRangeList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkippedIPRangeList: Self = this.set("SkippedIPRangeList", js.undefined)
+    def setSkippedIPRangeListVarargs(value: StringType*): Self = StObject.set(x, "SkippedIPRangeList", js.Array(value :_*))
   }
 }

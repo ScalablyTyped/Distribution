@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoClosingPairs extends js.Object {
+trait AutoClosingPairs extends StObject {
   
   var autoClosingPairs: js.Array[NotIn] = js.native
 }
@@ -18,24 +19,12 @@ object AutoClosingPairs {
   }
   
   @scala.inline
-  implicit class AutoClosingPairsOps[Self <: AutoClosingPairs] (val x: Self) extends AnyVal {
+  implicit class AutoClosingPairsMutableBuilder[Self <: AutoClosingPairs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoClosingPairs(value: js.Array[NotIn]): Self = StObject.set(x, "autoClosingPairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoClosingPairsVarargs(value: NotIn*): Self = this.set("autoClosingPairs", js.Array(value :_*))
-    
-    @scala.inline
-    def setAutoClosingPairs(value: js.Array[NotIn]): Self = this.set("autoClosingPairs", value.asInstanceOf[js.Any])
+    def setAutoClosingPairsVarargs(value: NotIn*): Self = StObject.set(x, "autoClosingPairs", js.Array(value :_*))
   }
 }

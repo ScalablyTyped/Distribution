@@ -1,12 +1,13 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Point")
 @js.native
-class Point_ protected () extends js.Object {
+class Point_ protected () extends StObject {
   def this(x: Double, y: Double) = this()
   def this(x: Double, y: Double, round: Boolean) = this()
   
@@ -30,7 +31,7 @@ class Point_ protected () extends js.Object {
   
   def scaleBy(scale: PointExpression): Point_ = js.native
   
-   // non-destructive, returns a new point
+  // non-destructive, returns a new point
   def subtract(otherPoint: PointExpression): Point_ = js.native
   
   def unscaleBy(scale: PointExpression): Point_ = js.native

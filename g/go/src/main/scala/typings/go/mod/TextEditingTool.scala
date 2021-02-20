@@ -1,6 +1,7 @@
 package typings.go.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,26 +48,58 @@ class TextEditingTool () extends Tool {
   /**Gets or sets the predicate that determines whether or not a string of text is valid.*/
   def textValidation(tb: TextBlock, oldstr: String, newstr: String): Boolean = js.native
 }
-/* static members */
-@JSImport("go", "TextEditingTool")
-@js.native
-object TextEditingTool extends js.Object {
+object TextEditingTool {
+  
+  @JSImport("go", "TextEditingTool")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**The user has typed ENTER.*/
-  var Enter: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextEditingTool.Enter")
+  @js.native
+  def Enter: EnumValue = js.native
+  @scala.inline
+  def Enter_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enter")(x.asInstanceOf[js.Any])
   
   /**The text editing control has lost focus.*/
-  var LostFocus: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextEditingTool.LostFocus")
+  @js.native
+  def LostFocus: EnumValue = js.native
+  @scala.inline
+  def LostFocus_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LostFocus")(x.asInstanceOf[js.Any])
   
   /**The user has clicked somewhere else in the diagram.*/
-  var MouseDown: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextEditingTool.MouseDown")
+  @js.native
+  def MouseDown: EnumValue = js.native
+  @scala.inline
+  def MouseDown_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MouseDown")(x.asInstanceOf[js.Any])
   
   /**A single click on a TextBlock with TextBlock.editable property set to true will start in-place editing.*/
-  var SingleClick: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextEditingTool.SingleClick")
+  @js.native
+  def SingleClick: EnumValue = js.native
   
   /**A single click on a TextBlock with TextBlock.editable property set to true will start in-place editing, but only if the Part that the TextBlock is in is already selected.*/
-  var SingleClickSelected: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextEditingTool.SingleClickSelected")
+  @js.native
+  def SingleClickSelected: EnumValue = js.native
+  @scala.inline
+  def SingleClickSelected_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleClickSelected")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def SingleClick_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleClick")(x.asInstanceOf[js.Any])
   
   /**The user has typed TAB.*/
-  var Tab: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "TextEditingTool.Tab")
+  @js.native
+  def Tab: EnumValue = js.native
+  @scala.inline
+  def Tab_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
 }

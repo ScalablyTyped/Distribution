@@ -2,6 +2,7 @@ package typings.babylonjs.legacyMod
 
 import typings.babylonjs.anon.DiameterX
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SphereBuilder ()
   extends typings.babylonjs.indexMod.SphereBuilder
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "SphereBuilder")
-@js.native
-object SphereBuilder extends js.Object {
+object SphereBuilder {
   
   /**
     * Creates a sphere mesh
@@ -31,6 +30,10 @@ object SphereBuilder extends js.Object {
     * @returns the sphere mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#sphere
     */
+  @JSImport("babylonjs/Legacy/legacy", "SphereBuilder.CreateSphere")
+  @js.native
   def CreateSphere(name: String, options: DiameterX): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/Legacy/legacy", "SphereBuilder.CreateSphere")
+  @js.native
   def CreateSphere(name: String, options: DiameterX, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }

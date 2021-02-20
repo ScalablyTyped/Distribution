@@ -1,22 +1,43 @@
 package typings.rxjs
 
 import typings.std.PromiseConstructorLike
+import typings.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/config", JSImport.Namespace)
-@js.native
-object configMod extends js.Object {
+object configMod {
   
-  @js.native
-  object config extends js.Object {
+  object config {
+    
+    @JSImport("rxjs/internal/config", "config")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The promise constructor used by default for methods such as
       * {@link toPromise} and {@link forEach}
       */
-    var Promise: PromiseConstructorLike = js.native
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("rxjs/internal/config", "config.Promise")
+    @js.native
+    class Promise[T] protected () extends PromiseLike[T] {
+      def this(executor: js.Function2[
+                /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
+                /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+                Unit
+              ]) = this()
+    }
+    /**
+      * The promise constructor used by default for methods such as
+      * {@link toPromise} and {@link forEach}
+      */
+    @JSImport("rxjs/internal/config", "config.Promise")
+    @js.native
+    def Promise: PromiseConstructorLike = js.native
+    @scala.inline
+    def Promise_=(x: PromiseConstructorLike): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
     
     /**
       * If true, turns on synchronous error rethrowing, which is a deprecated behavior
@@ -26,6 +47,10 @@ object configMod extends js.Object {
       * an unhandled error. DO NOT USE THIS FLAG UNLESS IT'S NEEDED TO BY TIME
       * FOR MIGRATION REASONS.
       */
-    var useDeprecatedSynchronousErrorHandling: Boolean = js.native
+    @JSImport("rxjs/internal/config", "config.useDeprecatedSynchronousErrorHandling")
+    @js.native
+    def useDeprecatedSynchronousErrorHandling: Boolean = js.native
+    @scala.inline
+    def useDeprecatedSynchronousErrorHandling_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useDeprecatedSynchronousErrorHandling")(x.asInstanceOf[js.Any])
   }
 }

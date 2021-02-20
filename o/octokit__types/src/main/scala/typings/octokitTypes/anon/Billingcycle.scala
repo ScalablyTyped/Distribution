@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Billingcycle extends js.Object {
+trait Billingcycle extends StObject {
   
   var billing_cycle: String = js.native
   
@@ -38,39 +39,27 @@ object Billingcycle {
   }
   
   @scala.inline
-  implicit class BillingcycleOps[Self <: Billingcycle] (val x: Self) extends AnyVal {
+  implicit class BillingcycleMutableBuilder[Self <: Billingcycle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilling_cycle(value: String): Self = StObject.set(x, "billing_cycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFree_trial_ends_on(value: String): Self = StObject.set(x, "free_trial_ends_on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNext_billing_date(value: String): Self = StObject.set(x, "next_billing_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilling_cycle(value: String): Self = this.set("billing_cycle", value.asInstanceOf[js.Any])
+    def setOn_free_trial(value: Boolean): Self = StObject.set(x, "on_free_trial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFree_trial_ends_on(value: String): Self = this.set("free_trial_ends_on", value.asInstanceOf[js.Any])
+    def setPlan(value: Bullets): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_billing_date(value: String): Self = this.set("next_billing_date", value.asInstanceOf[js.Any])
+    def setUnit_count(value: Double): Self = StObject.set(x, "unit_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn_free_trial(value: Boolean): Self = this.set("on_free_trial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlan(value: Bullets): Self = this.set("plan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit_count(value: Double): Self = this.set("unit_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }
 }

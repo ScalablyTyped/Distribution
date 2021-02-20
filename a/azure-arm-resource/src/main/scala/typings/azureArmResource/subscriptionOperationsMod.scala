@@ -8,16 +8,15 @@ import typings.azureArmResource.subscriptionModelsMod.SubscriptionListResult
 import typings.azureArmResource.subscriptionModelsMod.TenantListResult
 import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource/lib/subscription/operations", JSImport.Namespace)
-@js.native
-object subscriptionOperationsMod extends js.Object {
+object subscriptionOperationsMod {
   
   @js.native
-  trait Operations extends js.Object {
+  trait Operations extends StObject {
     
     /**
       * Lists all of the available Microsoft.Resources REST API operations.
@@ -131,7 +130,7 @@ object subscriptionOperationsMod extends js.Object {
   }
   
   @js.native
-  trait Subscriptions extends js.Object {
+  trait Subscriptions extends StObject {
     
     /**
       * Gets details about a specified subscription.
@@ -367,7 +366,7 @@ object subscriptionOperationsMod extends js.Object {
   }
   
   @js.native
-  trait Tenants extends js.Object {
+  trait Tenants extends StObject {
     
     /**
       * Gets the tenants for your account.

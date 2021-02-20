@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalculatedSpend extends js.Object {
+trait CalculatedSpend extends StObject {
   
   /**
     * The amount of cost, usage, RI units, or Savings Plans units that you have used.
@@ -26,27 +27,15 @@ object CalculatedSpend {
   }
   
   @scala.inline
-  implicit class CalculatedSpendOps[Self <: CalculatedSpend] (val x: Self) extends AnyVal {
+  implicit class CalculatedSpendMutableBuilder[Self <: CalculatedSpend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualSpend(value: Spend): Self = StObject.set(x, "ActualSpend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForecastedSpend(value: Spend): Self = StObject.set(x, "ForecastedSpend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActualSpend(value: Spend): Self = this.set("ActualSpend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForecastedSpend(value: Spend): Self = this.set("ForecastedSpend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForecastedSpend: Self = this.set("ForecastedSpend", js.undefined)
+    def setForecastedSpendUndefined: Self = StObject.set(x, "ForecastedSpend", js.undefined)
   }
 }

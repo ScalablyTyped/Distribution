@@ -2,14 +2,14 @@ package typings.instagramPrivateApi
 
 import typings.instagramPrivateApi.instaStickerMod.InstaSticker
 import typings.luxon.mod.DateTime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/sticker-builder/stickers/countdown.sticker", JSImport.Namespace)
-@js.native
-object countdownStickerMod extends js.Object {
+object countdownStickerMod {
   
+  @JSImport("instagram-private-api/dist/sticker-builder/stickers/countdown.sticker", "CountdownSticker")
   @js.native
   class CountdownSticker () extends InstaSticker {
     

@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * suggested value.
   */
 @js.native
-trait SchemaSizeSuggestionState extends js.Object {
+trait SchemaSizeSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to height.
@@ -31,30 +32,18 @@ object SchemaSizeSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaSizeSuggestionStateOps[Self <: SchemaSizeSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaSizeSuggestionStateMutableBuilder[Self <: SchemaSizeSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeightSuggested(value: Boolean): Self = StObject.set(x, "heightSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightSuggestedUndefined: Self = StObject.set(x, "heightSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidthSuggested(value: Boolean): Self = StObject.set(x, "widthSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightSuggested(value: Boolean): Self = this.set("heightSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeightSuggested: Self = this.set("heightSuggested", js.undefined)
-    
-    @scala.inline
-    def setWidthSuggested(value: Boolean): Self = this.set("widthSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthSuggested: Self = this.set("widthSuggested", js.undefined)
+    def setWidthSuggestedUndefined: Self = StObject.set(x, "widthSuggested", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.euclidean
 import typings.arcgisJsApi.arcgisJsApiStrings.geodesic
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,27 +49,15 @@ object AreaMeasurement3DViewModelMeasurement {
   }
   
   @scala.inline
-  implicit class AreaMeasurement3DViewModelMeasurementOps[Self <: AreaMeasurement3DViewModelMeasurement] (val x: Self) extends AnyVal {
+  implicit class AreaMeasurement3DViewModelMeasurementMutableBuilder[Self <: AreaMeasurement3DViewModelMeasurement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: MeasurementValue): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeasurementMode(value: euclidean | geodesic): Self = StObject.set(x, "measurementMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArea(value: MeasurementValue): Self = this.set("area", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeasurementMode(value: euclidean | geodesic): Self = this.set("measurementMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPerimeterLength(value: MeasurementValue): Self = this.set("perimeterLength", value.asInstanceOf[js.Any])
+    def setPerimeterLength(value: MeasurementValue): Self = StObject.set(x, "perimeterLength", value.asInstanceOf[js.Any])
   }
 }

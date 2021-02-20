@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.JDBC
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * java.sql.ResultSetMetaData.
   */
 @js.native
-trait JdbcResultSetMetaData extends js.Object {
+trait JdbcResultSetMetaData extends StObject {
   
   def getCatalogName(column: Integer): String = js.native
   
@@ -85,81 +86,69 @@ object JdbcResultSetMetaData {
   }
   
   @scala.inline
-  implicit class JdbcResultSetMetaDataOps[Self <: JdbcResultSetMetaData] (val x: Self) extends AnyVal {
+  implicit class JdbcResultSetMetaDataMutableBuilder[Self <: JdbcResultSetMetaData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCatalogName(value: Integer => String): Self = StObject.set(x, "getCatalogName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetColumnClassName(value: Integer => String): Self = StObject.set(x, "getColumnClassName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetColumnCount(value: () => Integer): Self = StObject.set(x, "getColumnCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCatalogName(value: Integer => String): Self = this.set("getCatalogName", js.Any.fromFunction1(value))
+    def setGetColumnDisplaySize(value: Integer => Integer): Self = StObject.set(x, "getColumnDisplaySize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColumnClassName(value: Integer => String): Self = this.set("getColumnClassName", js.Any.fromFunction1(value))
+    def setGetColumnLabel(value: Integer => String): Self = StObject.set(x, "getColumnLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColumnCount(value: () => Integer): Self = this.set("getColumnCount", js.Any.fromFunction0(value))
+    def setGetColumnName(value: Integer => String): Self = StObject.set(x, "getColumnName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColumnDisplaySize(value: Integer => Integer): Self = this.set("getColumnDisplaySize", js.Any.fromFunction1(value))
+    def setGetColumnType(value: Integer => Integer): Self = StObject.set(x, "getColumnType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColumnLabel(value: Integer => String): Self = this.set("getColumnLabel", js.Any.fromFunction1(value))
+    def setGetColumnTypeName(value: Integer => String): Self = StObject.set(x, "getColumnTypeName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColumnName(value: Integer => String): Self = this.set("getColumnName", js.Any.fromFunction1(value))
+    def setGetPrecision(value: Integer => Integer): Self = StObject.set(x, "getPrecision", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColumnType(value: Integer => Integer): Self = this.set("getColumnType", js.Any.fromFunction1(value))
+    def setGetScale(value: Integer => Integer): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColumnTypeName(value: Integer => String): Self = this.set("getColumnTypeName", js.Any.fromFunction1(value))
+    def setGetSchemaName(value: Integer => String): Self = StObject.set(x, "getSchemaName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPrecision(value: Integer => Integer): Self = this.set("getPrecision", js.Any.fromFunction1(value))
+    def setGetTableName(value: Integer => String): Self = StObject.set(x, "getTableName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScale(value: Integer => Integer): Self = this.set("getScale", js.Any.fromFunction1(value))
+    def setIsAutoIncrement(value: Integer => Boolean): Self = StObject.set(x, "isAutoIncrement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSchemaName(value: Integer => String): Self = this.set("getSchemaName", js.Any.fromFunction1(value))
+    def setIsCaseSensitive(value: Integer => Boolean): Self = StObject.set(x, "isCaseSensitive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTableName(value: Integer => String): Self = this.set("getTableName", js.Any.fromFunction1(value))
+    def setIsCurrency(value: Integer => Boolean): Self = StObject.set(x, "isCurrency", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsAutoIncrement(value: Integer => Boolean): Self = this.set("isAutoIncrement", js.Any.fromFunction1(value))
+    def setIsDefinitelyWritable(value: Integer => Boolean): Self = StObject.set(x, "isDefinitelyWritable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsCaseSensitive(value: Integer => Boolean): Self = this.set("isCaseSensitive", js.Any.fromFunction1(value))
+    def setIsNullable(value: Integer => Integer): Self = StObject.set(x, "isNullable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsCurrency(value: Integer => Boolean): Self = this.set("isCurrency", js.Any.fromFunction1(value))
+    def setIsReadOnly(value: Integer => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsDefinitelyWritable(value: Integer => Boolean): Self = this.set("isDefinitelyWritable", js.Any.fromFunction1(value))
+    def setIsSearchable(value: Integer => Boolean): Self = StObject.set(x, "isSearchable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNullable(value: Integer => Integer): Self = this.set("isNullable", js.Any.fromFunction1(value))
+    def setIsSigned(value: Integer => Boolean): Self = StObject.set(x, "isSigned", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsReadOnly(value: Integer => Boolean): Self = this.set("isReadOnly", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsSearchable(value: Integer => Boolean): Self = this.set("isSearchable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsSigned(value: Integer => Boolean): Self = this.set("isSigned", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsWritable(value: Integer => Boolean): Self = this.set("isWritable", js.Any.fromFunction1(value))
+    def setIsWritable(value: Integer => Boolean): Self = StObject.set(x, "isWritable", js.Any.fromFunction1(value))
   }
 }

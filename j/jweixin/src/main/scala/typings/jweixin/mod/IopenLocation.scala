@@ -1,5 +1,6 @@
 package typings.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,21 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IopenLocation extends BaseParams {
   
-   // 位置名
+  // 位置名
   var address: String = js.native
   
-   // 地图缩放级别,整形值,范围从1~28。默认为最大
+  // 地图缩放级别,整形值,范围从1~28。默认为最大
   var infoUrl: String = js.native
   
   var latitude: Double = js.native
   
-   // 纬度，浮点数，范围为90 ~ -90
+  // 纬度，浮点数，范围为90 ~ -90
   var longitude: Double = js.native
   
-   // 经度，浮点数，范围为180 ~ -180。
+  // 经度，浮点数，范围为180 ~ -180。
   var name: String = js.native
   
-   // 地址详情说明
+  // 地址详情说明
   var scale: Double = js.native
 }
 object IopenLocation {
@@ -35,36 +36,24 @@ object IopenLocation {
   }
   
   @scala.inline
-  implicit class IopenLocationOps[Self <: IopenLocation] (val x: Self) extends AnyVal {
+  implicit class IopenLocationMutableBuilder[Self <: IopenLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoUrl(value: String): Self = StObject.set(x, "infoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoUrl(value: String): Self = this.set("infoUrl", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

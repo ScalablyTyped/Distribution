@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,48 +49,36 @@ object BuildingSceneLayerProperties {
   }
   
   @scala.inline
-  implicit class BuildingSceneLayerPropertiesOps[Self <: BuildingSceneLayerProperties] (val x: Self) extends AnyVal {
+  implicit class BuildingSceneLayerPropertiesMutableBuilder[Self <: BuildingSceneLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveFilterId(value: String): Self = StObject.set(x, "activeFilterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveFilterIdUndefined: Self = StObject.set(x, "activeFilterId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElevationInfo(value: BuildingSceneLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveFilterId(value: String): Self = this.set("activeFilterId", value.asInstanceOf[js.Any])
+    def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
     @scala.inline
-    def deleteActiveFilterId: Self = this.set("activeFilterId", js.undefined)
+    def setFilters(value: CollectionProperties[BuildingFilterProperties]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevationInfo(value: BuildingSceneLayerElevationInfo): Self = this.set("elevationInfo", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteElevationInfo: Self = this.set("elevationInfo", js.undefined)
+    def setFiltersVarargs(value: BuildingFilterProperties*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: BuildingFilterProperties*): Self = this.set("filters", js.Array(value :_*))
+    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: CollectionProperties[BuildingFilterProperties]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
-    
-    @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = this.set("outFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutFields(value: js.Array[String]): Self = this.set("outFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutFields: Self = this.set("outFields", js.undefined)
+    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
   }
 }

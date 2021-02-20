@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRegistrationCodeResponse extends js.Object {
+trait GetRegistrationCodeResponse extends StObject {
   
   /**
     * The CA certificate registration code.
@@ -21,24 +22,12 @@ object GetRegistrationCodeResponse {
   }
   
   @scala.inline
-  implicit class GetRegistrationCodeResponseOps[Self <: GetRegistrationCodeResponse] (val x: Self) extends AnyVal {
+  implicit class GetRegistrationCodeResponseMutableBuilder[Self <: GetRegistrationCodeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegistrationCode(value: RegistrationCode): Self = StObject.set(x, "registrationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRegistrationCode(value: RegistrationCode): Self = this.set("registrationCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistrationCode: Self = this.set("registrationCode", js.undefined)
+    def setRegistrationCodeUndefined: Self = StObject.set(x, "registrationCode", js.undefined)
   }
 }

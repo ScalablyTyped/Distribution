@@ -1,5 +1,6 @@
 package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single field of a message type.
   */
 @js.native
-trait SchemaField extends js.Object {
+trait SchemaField extends StObject {
   
   /**
     * The field cardinality.
@@ -72,81 +73,69 @@ object SchemaField {
   }
   
   @scala.inline
-  implicit class SchemaFieldOps[Self <: SchemaField] (val x: Self) extends AnyVal {
+  implicit class SchemaFieldMutableBuilder[Self <: SchemaField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardinality(value: String): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardinality(value: String): Self = this.set("cardinality", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def deleteCardinality: Self = this.set("cardinality", js.undefined)
+    def setJsonName(value: String): Self = StObject.set(x, "jsonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setJsonNameUndefined: Self = StObject.set(x, "jsonName", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonName(value: String): Self = this.set("jsonName", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteJsonName: Self = this.set("jsonName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOneofIndex(value: Double): Self = StObject.set(x, "oneofIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setOneofIndexUndefined: Self = StObject.set(x, "oneofIndex", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setOptions(value: js.Array[SchemaOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneofIndex(value: Double): Self = this.set("oneofIndex", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOneofIndex: Self = this.set("oneofIndex", js.undefined)
+    def setOptionsVarargs(value: SchemaOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: SchemaOption*): Self = this.set("options", js.Array(value :_*))
+    def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[SchemaOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setTypeUrl(value: String): Self = StObject.set(x, "typeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacked(value: Boolean): Self = this.set("packed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacked: Self = this.set("packed", js.undefined)
-    
-    @scala.inline
-    def setTypeUrl(value: String): Self = this.set("typeUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeUrl: Self = this.set("typeUrl", js.undefined)
+    def setTypeUrlUndefined: Self = StObject.set(x, "typeUrl", js.undefined)
   }
 }

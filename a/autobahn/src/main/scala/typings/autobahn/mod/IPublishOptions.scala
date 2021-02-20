@@ -1,11 +1,12 @@
 package typings.autobahn.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPublishOptions extends js.Object {
+trait IPublishOptions extends StObject {
   
   var acknowledge: js.UndefOr[Boolean] = js.native
   
@@ -36,96 +37,84 @@ object IPublishOptions {
   }
   
   @scala.inline
-  implicit class IPublishOptionsOps[Self <: IPublishOptions] (val x: Self) extends AnyVal {
+  implicit class IPublishOptionsMutableBuilder[Self <: IPublishOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcknowledgeUndefined: Self = StObject.set(x, "acknowledge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisclose_me(value: Boolean): Self = StObject.set(x, "disclose_me", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcknowledge(value: Boolean): Self = this.set("acknowledge", value.asInstanceOf[js.Any])
+    def setDisclose_meUndefined: Self = StObject.set(x, "disclose_me", js.undefined)
     
     @scala.inline
-    def deleteAcknowledge: Self = this.set("acknowledge", js.undefined)
+    def setEligible(value: js.Array[Double]): Self = StObject.set(x, "eligible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisclose_me(value: Boolean): Self = this.set("disclose_me", value.asInstanceOf[js.Any])
+    def setEligibleUndefined: Self = StObject.set(x, "eligible", js.undefined)
     
     @scala.inline
-    def deleteDisclose_me: Self = this.set("disclose_me", js.undefined)
+    def setEligibleVarargs(value: Double*): Self = StObject.set(x, "eligible", js.Array(value :_*))
     
     @scala.inline
-    def setEligibleVarargs(value: Double*): Self = this.set("eligible", js.Array(value :_*))
+    def setEligible_authid(value: js.Array[String]): Self = StObject.set(x, "eligible_authid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEligible(value: js.Array[Double]): Self = this.set("eligible", value.asInstanceOf[js.Any])
+    def setEligible_authidUndefined: Self = StObject.set(x, "eligible_authid", js.undefined)
     
     @scala.inline
-    def deleteEligible: Self = this.set("eligible", js.undefined)
+    def setEligible_authidVarargs(value: String*): Self = StObject.set(x, "eligible_authid", js.Array(value :_*))
     
     @scala.inline
-    def setEligible_authidVarargs(value: String*): Self = this.set("eligible_authid", js.Array(value :_*))
+    def setEligible_authrole(value: js.Array[String]): Self = StObject.set(x, "eligible_authrole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEligible_authid(value: js.Array[String]): Self = this.set("eligible_authid", value.asInstanceOf[js.Any])
+    def setEligible_authroleUndefined: Self = StObject.set(x, "eligible_authrole", js.undefined)
     
     @scala.inline
-    def deleteEligible_authid: Self = this.set("eligible_authid", js.undefined)
+    def setEligible_authroleVarargs(value: String*): Self = StObject.set(x, "eligible_authrole", js.Array(value :_*))
     
     @scala.inline
-    def setEligible_authroleVarargs(value: String*): Self = this.set("eligible_authrole", js.Array(value :_*))
+    def setExclude(value: js.Array[Double]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEligible_authrole(value: js.Array[String]): Self = this.set("eligible_authrole", value.asInstanceOf[js.Any])
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def deleteEligible_authrole: Self = this.set("eligible_authrole", js.undefined)
+    def setExcludeVarargs(value: Double*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeVarargs(value: Double*): Self = this.set("exclude", js.Array(value :_*))
+    def setExclude_authid(value: js.Array[String]): Self = StObject.set(x, "exclude_authid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: js.Array[Double]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setExclude_authidUndefined: Self = StObject.set(x, "exclude_authid", js.undefined)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setExclude_authidVarargs(value: String*): Self = StObject.set(x, "exclude_authid", js.Array(value :_*))
     
     @scala.inline
-    def setExclude_authidVarargs(value: String*): Self = this.set("exclude_authid", js.Array(value :_*))
+    def setExclude_authrole(value: js.Array[String]): Self = StObject.set(x, "exclude_authrole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_authid(value: js.Array[String]): Self = this.set("exclude_authid", value.asInstanceOf[js.Any])
+    def setExclude_authroleUndefined: Self = StObject.set(x, "exclude_authrole", js.undefined)
     
     @scala.inline
-    def deleteExclude_authid: Self = this.set("exclude_authid", js.undefined)
+    def setExclude_authroleVarargs(value: String*): Self = StObject.set(x, "exclude_authrole", js.Array(value :_*))
     
     @scala.inline
-    def setExclude_authroleVarargs(value: String*): Self = this.set("exclude_authrole", js.Array(value :_*))
+    def setExclude_me(value: Boolean): Self = StObject.set(x, "exclude_me", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_authrole(value: js.Array[String]): Self = this.set("exclude_authrole", value.asInstanceOf[js.Any])
+    def setExclude_meUndefined: Self = StObject.set(x, "exclude_me", js.undefined)
     
     @scala.inline
-    def deleteExclude_authrole: Self = this.set("exclude_authrole", js.undefined)
+    def setRetain(value: Boolean): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_me(value: Boolean): Self = this.set("exclude_me", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclude_me: Self = this.set("exclude_me", js.undefined)
-    
-    @scala.inline
-    def setRetain(value: Boolean): Self = this.set("retain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetain: Self = this.set("retain", js.undefined)
+    def setRetainUndefined: Self = StObject.set(x, "retain", js.undefined)
   }
 }

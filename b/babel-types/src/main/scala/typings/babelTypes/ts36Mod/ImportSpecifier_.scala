@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.ImportSpecifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,27 +35,15 @@ object ImportSpecifier_ {
   }
   
   @scala.inline
-  implicit class ImportSpecifier_Ops[Self <: ImportSpecifier_] (val x: Self) extends AnyVal {
+  implicit class ImportSpecifier_MutableBuilder[Self <: ImportSpecifier_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImported(value: Identifier_): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImported(value: Identifier_): Self = this.set("imported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocal(value: Identifier_): Self = this.set("local", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ImportSpecifier): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ImportSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -6,13 +6,12 @@ import typings.openui5.sap.m.ListGrowingDirection
 import typings.openui5.sap.ui.base.EventProvider
 import typings.openui5.sap.ui.base.Object
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.delegate")
-@js.native
-object delegate extends js.Object {
+object delegate {
   
   @js.native
   trait ItemNavigation extends EventProvider {

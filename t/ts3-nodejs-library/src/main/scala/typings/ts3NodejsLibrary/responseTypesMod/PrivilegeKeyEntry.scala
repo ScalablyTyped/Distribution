@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,42 +41,30 @@ object PrivilegeKeyEntry {
   }
   
   @scala.inline
-  implicit class PrivilegeKeyEntryOps[Self <: PrivilegeKeyEntry] (val x: Self) extends AnyVal {
+  implicit class PrivilegeKeyEntryMutableBuilder[Self <: PrivilegeKeyEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTokenCreated(value: Double): Self = StObject.set(x, "tokenCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTokenCustomset(value: js.Array[TokenCustomSet]): Self = StObject.set(x, "tokenCustomset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setTokenCustomsetVarargs(value: TokenCustomSet*): Self = StObject.set(x, "tokenCustomset", js.Array(value :_*))
     
     @scala.inline
-    def setTokenCreated(value: Double): Self = this.set("tokenCreated", value.asInstanceOf[js.Any])
+    def setTokenDescription(value: String): Self = StObject.set(x, "tokenDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenCustomsetVarargs(value: TokenCustomSet*): Self = this.set("tokenCustomset", js.Array(value :_*))
+    def setTokenId1(value: Double): Self = StObject.set(x, "tokenId1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenCustomset(value: js.Array[TokenCustomSet]): Self = this.set("tokenCustomset", value.asInstanceOf[js.Any])
+    def setTokenId2(value: Double): Self = StObject.set(x, "tokenId2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenDescription(value: String): Self = this.set("tokenDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokenId1(value: Double): Self = this.set("tokenId1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokenId2(value: Double): Self = this.set("tokenId2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokenType(value: Double): Self = this.set("tokenType", value.asInstanceOf[js.Any])
+    def setTokenType(value: Double): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
   }
 }

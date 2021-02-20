@@ -1,5 +1,6 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the type of entries in the list.
   */
 @js.native
-trait SchemaThreatListDescriptor extends js.Object {
+trait SchemaThreatListDescriptor extends StObject {
   
   /**
     * The platform type targeted by the list&#39;s entries.
@@ -36,36 +37,24 @@ object SchemaThreatListDescriptor {
   }
   
   @scala.inline
-  implicit class SchemaThreatListDescriptorOps[Self <: SchemaThreatListDescriptor] (val x: Self) extends AnyVal {
+  implicit class SchemaThreatListDescriptorMutableBuilder[Self <: SchemaThreatListDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThreatEntryType(value: String): Self = StObject.set(x, "threatEntryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformType(value: String): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    def setThreatEntryTypeUndefined: Self = StObject.set(x, "threatEntryType", js.undefined)
     
     @scala.inline
-    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreatEntryType(value: String): Self = this.set("threatEntryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatEntryType: Self = this.set("threatEntryType", js.undefined)
-    
-    @scala.inline
-    def setThreatType(value: String): Self = this.set("threatType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatType: Self = this.set("threatType", js.undefined)
+    def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
   }
 }

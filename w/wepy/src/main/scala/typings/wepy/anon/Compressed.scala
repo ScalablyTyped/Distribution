@@ -1,11 +1,12 @@
 package typings.wepy.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Compressed extends js.Object {
+trait Compressed extends StObject {
   
   var compressed: Boolean = js.native
   
@@ -22,30 +23,18 @@ object Compressed {
   }
   
   @scala.inline
-  implicit class CompressedOps[Self <: Compressed] (val x: Self) extends AnyVal {
+  implicit class CompressedMutableBuilder[Self <: Compressed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceType(value: js.Array[String]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressed(value: Boolean): Self = this.set("compressed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxDuration(value: Double): Self = this.set("maxDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceTypeVarargs(value: String*): Self = this.set("sourceType", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceType(value: js.Array[String]): Self = this.set("sourceType", value.asInstanceOf[js.Any])
+    def setSourceTypeVarargs(value: String*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
   }
 }

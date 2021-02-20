@@ -1,18 +1,19 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartSectionAnchorPosition extends js.Object {
+trait SmartSectionAnchorPosition extends StObject {
   
   /**
     * The page number being accessed.
     */
   var pageNumber: js.UndefOr[Double] = js.native
   
-   // int32
+  // int32
   /**
     * This property indicates the horizontal offset of the object on the page.
     * DocuSign uses 72 DPI when determining position.
@@ -21,7 +22,7 @@ trait SmartSectionAnchorPosition extends js.Object {
     */
   var xPosition: js.UndefOr[Double] = js.native
   
-   // double
+  // double
   /**
     * This indicates the vertical offset of the object on the page. DocuSign uses 72 DPI when determining position.
     */
@@ -36,36 +37,24 @@ object SmartSectionAnchorPosition {
   }
   
   @scala.inline
-  implicit class SmartSectionAnchorPositionOps[Self <: SmartSectionAnchorPosition] (val x: Self) extends AnyVal {
+  implicit class SmartSectionAnchorPositionMutableBuilder[Self <: SmartSectionAnchorPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXPosition(value: Double): Self = StObject.set(x, "xPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumber(value: Double): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
+    def setXPositionUndefined: Self = StObject.set(x, "xPosition", js.undefined)
     
     @scala.inline
-    def deletePageNumber: Self = this.set("pageNumber", js.undefined)
+    def setYPosition(value: Double): Self = StObject.set(x, "yPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXPosition(value: Double): Self = this.set("xPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXPosition: Self = this.set("xPosition", js.undefined)
-    
-    @scala.inline
-    def setYPosition(value: Double): Self = this.set("yPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYPosition: Self = this.set("yPosition", js.undefined)
+    def setYPositionUndefined: Self = StObject.set(x, "yPosition", js.undefined)
   }
 }

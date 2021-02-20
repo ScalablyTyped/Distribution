@@ -1,17 +1,17 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/eachQuarterOfInterval/index", JSImport.Namespace)
-@js.native
-object eachQuarterOfIntervalIndexMod extends js.Object {
+object eachQuarterOfIntervalIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/eachQuarterOfInterval/index", JSImport.Default)
+    @js.native
     def apply(interval: typings.dateFns.mod.Interval): js.Array[Date] = js.native
   }
 }

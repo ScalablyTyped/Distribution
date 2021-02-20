@@ -3,12 +3,13 @@ package typings.jointjs.mod.shapes.standard
 import typings.jointjs.mod.attributes.SVGAttributes
 import typings.jointjs.mod.attributes.SVGImageAttributes
 import typings.jointjs.mod.attributes.SVGTextAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageSelectors extends js.Object {
+trait ImageSelectors extends StObject {
   
   var image: js.UndefOr[SVGImageAttributes] = js.native
   
@@ -25,36 +26,24 @@ object ImageSelectors {
   }
   
   @scala.inline
-  implicit class ImageSelectorsOps[Self <: ImageSelectors] (val x: Self) extends AnyVal {
+  implicit class ImageSelectorsMutableBuilder[Self <: ImageSelectors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImage(value: SVGImageAttributes): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: SVGTextAttributes): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: SVGImageAttributes): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: SVGTextAttributes): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

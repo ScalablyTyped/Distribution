@@ -1,19 +1,19 @@
 package typings.phaser.global.Phaser
 
 import typings.phaser.Phaser.Events.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Data")
-@js.native
-object Data extends js.Object {
+object Data {
   
   /**
     * The Data Manager Component features a means to store pieces of data specific to a Game Object, System or Plugin.
     * You can then search, query it, and retrieve the data. The parent must either extend EventEmitter,
     * or have a property called `events` that is an instance of it.
     */
+  @JSGlobal("Phaser.Data.DataManager")
   @js.native
   class DataManager protected ()
     extends typings.phaser.Phaser.Data.DataManager {
@@ -31,6 +31,7 @@ object Data extends js.Object {
     * You can then search, query it, and retrieve the data. The parent must either extend EventEmitter,
     * or have a property called `events` that is an instance of it.
     */
+  @JSGlobal("Phaser.Data.DataManagerPlugin")
   @js.native
   class DataManagerPlugin protected ()
     extends typings.phaser.Phaser.Data.DataManagerPlugin {
@@ -41,8 +42,7 @@ object Data extends js.Object {
     def this(scene: typings.phaser.Phaser.Scene) = this()
   }
   
-  @js.native
-  object Events extends js.Object {
+  object Events {
     
     /**
       * The Change Data Event.
@@ -55,6 +55,8 @@ object Data extends js.Object {
       * This event is dispatched for all items that change in the Data Manager.
       * To listen for the change of a specific item, use the `CHANGE_DATA_KEY_EVENT` event.
       */
+    @JSGlobal("Phaser.Data.Events.CHANGE_DATA")
+    @js.native
     val CHANGE_DATA: js.Any = js.native
     
     /**
@@ -67,6 +69,8 @@ object Data extends js.Object {
       * where `key` is the unique string key of the data item. For example, if you have a data item stored called `gold`
       * then you can listen for `sprite.data.on('changedata-gold')`.
       */
+    @JSGlobal("Phaser.Data.Events.CHANGE_DATA_KEY")
+    @js.native
     val CHANGE_DATA_KEY: js.Any = js.native
     
     /**
@@ -77,6 +81,8 @@ object Data extends js.Object {
       * Game Objects with data enabled have an instance of a Data Manager under the `data` property. So, to listen for
       * the removal of a data item on a Game Object you would use: `sprite.data.on('removedata', listener)`.
       */
+    @JSGlobal("Phaser.Data.Events.REMOVE_DATA")
+    @js.native
     val REMOVE_DATA: js.Any = js.native
     
     /**
@@ -87,6 +93,8 @@ object Data extends js.Object {
       * Game Objects with data enabled have an instance of a Data Manager under the `data` property. So, to listen for
       * the addition of a new data item on a Game Object you would use: `sprite.data.on('setdata', listener)`.
       */
+    @JSGlobal("Phaser.Data.Events.SET_DATA")
+    @js.native
     val SET_DATA: js.Any = js.native
   }
 }

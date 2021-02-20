@@ -1,11 +1,12 @@
 package typings.gamequery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileMapOptions extends js.Object {
+trait TileMapOptions extends StObject {
   
   var buffer: js.UndefOr[Double] = js.native
   
@@ -30,60 +31,48 @@ object TileMapOptions {
   }
   
   @scala.inline
-  implicit class TileMapOptionsOps[Self <: TileMapOptions] (val x: Self) extends AnyVal {
+  implicit class TileMapOptionsMutableBuilder[Self <: TileMapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffer(value: Double): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    def setPosx(value: Double): Self = StObject.set(x, "posx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPosxUndefined: Self = StObject.set(x, "posx", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPosy(value: Double): Self = StObject.set(x, "posy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosx(value: Double): Self = this.set("posx", value.asInstanceOf[js.Any])
+    def setPosyUndefined: Self = StObject.set(x, "posy", js.undefined)
     
     @scala.inline
-    def deletePosx: Self = this.set("posx", js.undefined)
+    def setSizex(value: Double): Self = StObject.set(x, "sizex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosy(value: Double): Self = this.set("posy", value.asInstanceOf[js.Any])
+    def setSizexUndefined: Self = StObject.set(x, "sizex", js.undefined)
     
     @scala.inline
-    def deletePosy: Self = this.set("posy", js.undefined)
+    def setSizey(value: Double): Self = StObject.set(x, "sizey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizex(value: Double): Self = this.set("sizex", value.asInstanceOf[js.Any])
+    def setSizeyUndefined: Self = StObject.set(x, "sizey", js.undefined)
     
     @scala.inline
-    def deleteSizex: Self = this.set("sizex", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizey(value: Double): Self = this.set("sizey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizey: Self = this.set("sizey", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

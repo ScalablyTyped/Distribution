@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Operation extends js.Object {
+trait Operation extends StObject {
   
   /**
     * The timestamp when the operation was initialized (e.g., 1479816991.349).
@@ -76,90 +77,78 @@ object Operation {
   }
   
   @scala.inline
-  implicit class OperationOps[Self <: Operation] (val x: Self) extends AnyVal {
+  implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: String): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: String): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setIsTerminal(value: Boolean): Self = StObject.set(x, "isTerminal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NonEmptyString): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsTerminalUndefined: Self = StObject.set(x, "isTerminal", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTerminal(value: Boolean): Self = this.set("isTerminal", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteIsTerminal: Self = this.set("isTerminal", js.undefined)
+    def setOperationDetails(value: String): Self = StObject.set(x, "operationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setOperationDetailsUndefined: Self = StObject.set(x, "operationDetails", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setOperationType(value: OperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationDetails(value: String): Self = this.set("operationDetails", value.asInstanceOf[js.Any])
+    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
     @scala.inline
-    def deleteOperationDetails: Self = this.set("operationDetails", js.undefined)
+    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: OperationType): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: ResourceName): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setStatus(value: OperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setStatusChangedAt(value: IsoDate): Self = StObject.set(x, "statusChangedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setStatusChangedAtUndefined: Self = StObject.set(x, "statusChangedAt", js.undefined)
     
     @scala.inline
-    def setStatus(value: OperationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusChangedAt(value: IsoDate): Self = this.set("statusChangedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusChangedAt: Self = this.set("statusChangedAt", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

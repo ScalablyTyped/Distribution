@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GuestAcceleratorCount extends js.Object {
+trait GuestAcceleratorCount extends StObject {
   
   /** Number of accelerator cards exposed to the guest. */
   var guestAcceleratorCount: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object GuestAcceleratorCount {
   }
   
   @scala.inline
-  implicit class GuestAcceleratorCountOps[Self <: GuestAcceleratorCount] (val x: Self) extends AnyVal {
+  implicit class GuestAcceleratorCountMutableBuilder[Self <: GuestAcceleratorCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGuestAcceleratorCount(value: Double): Self = StObject.set(x, "guestAcceleratorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGuestAcceleratorCountUndefined: Self = StObject.set(x, "guestAcceleratorCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGuestAcceleratorType(value: String): Self = StObject.set(x, "guestAcceleratorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuestAcceleratorCount(value: Double): Self = this.set("guestAcceleratorCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGuestAcceleratorCount: Self = this.set("guestAcceleratorCount", js.undefined)
-    
-    @scala.inline
-    def setGuestAcceleratorType(value: String): Self = this.set("guestAcceleratorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGuestAcceleratorType: Self = this.set("guestAcceleratorType", js.undefined)
+    def setGuestAcceleratorTypeUndefined: Self = StObject.set(x, "guestAcceleratorType", js.undefined)
   }
 }

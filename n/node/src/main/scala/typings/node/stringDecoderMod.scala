@@ -1,15 +1,15 @@
 package typings.node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("string_decoder", JSImport.Namespace)
-@js.native
-object stringDecoderMod extends js.Object {
+object stringDecoderMod {
   
+  @JSImport("string_decoder", "StringDecoder")
   @js.native
-  class StringDecoder () extends js.Object {
+  class StringDecoder () extends StObject {
     def this(encoding: BufferEncoding) = this()
     
     def end(): java.lang.String = js.native

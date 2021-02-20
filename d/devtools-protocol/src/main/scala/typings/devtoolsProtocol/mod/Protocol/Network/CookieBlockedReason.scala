@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteLax
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteUnspecifiedTreatedAsLax
 */
-trait CookieBlockedReason extends js.Object
+trait CookieBlockedReason extends StObject
 object CookieBlockedReason {
   
   @scala.inline

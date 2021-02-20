@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisioningInformation extends js.Object {
+trait ProvisioningInformation extends StObject {
   
   var defaultConnectionId: js.UndefOr[String] = js.native
   
@@ -36,60 +37,48 @@ object ProvisioningInformation {
   }
   
   @scala.inline
-  implicit class ProvisioningInformationOps[Self <: ProvisioningInformation] (val x: Self) extends AnyVal {
+  implicit class ProvisioningInformationMutableBuilder[Self <: ProvisioningInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultConnectionId(value: String): Self = StObject.set(x, "defaultConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultConnectionIdUndefined: Self = StObject.set(x, "defaultConnectionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultPlanId(value: String): Self = StObject.set(x, "defaultPlanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultConnectionId(value: String): Self = this.set("defaultConnectionId", value.asInstanceOf[js.Any])
+    def setDefaultPlanIdUndefined: Self = StObject.set(x, "defaultPlanId", js.undefined)
     
     @scala.inline
-    def deleteDefaultConnectionId: Self = this.set("defaultConnectionId", js.undefined)
+    def setDistributorCode(value: String): Self = StObject.set(x, "distributorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPlanId(value: String): Self = this.set("defaultPlanId", value.asInstanceOf[js.Any])
+    def setDistributorCodeUndefined: Self = StObject.set(x, "distributorCode", js.undefined)
     
     @scala.inline
-    def deleteDefaultPlanId: Self = this.set("defaultPlanId", js.undefined)
+    def setDistributorPassword(value: String): Self = StObject.set(x, "distributorPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributorCode(value: String): Self = this.set("distributorCode", value.asInstanceOf[js.Any])
+    def setDistributorPasswordUndefined: Self = StObject.set(x, "distributorPassword", js.undefined)
     
     @scala.inline
-    def deleteDistributorCode: Self = this.set("distributorCode", js.undefined)
+    def setPasswordRuleText(value: String): Self = StObject.set(x, "passwordRuleText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributorPassword(value: String): Self = this.set("distributorPassword", value.asInstanceOf[js.Any])
+    def setPasswordRuleTextUndefined: Self = StObject.set(x, "passwordRuleText", js.undefined)
     
     @scala.inline
-    def deleteDistributorPassword: Self = this.set("distributorPassword", js.undefined)
+    def setPlanPromotionText(value: String): Self = StObject.set(x, "planPromotionText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordRuleText(value: String): Self = this.set("passwordRuleText", value.asInstanceOf[js.Any])
+    def setPlanPromotionTextUndefined: Self = StObject.set(x, "planPromotionText", js.undefined)
     
     @scala.inline
-    def deletePasswordRuleText: Self = this.set("passwordRuleText", js.undefined)
+    def setPurchaseOrderOrPromAllowed(value: String): Self = StObject.set(x, "purchaseOrderOrPromAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanPromotionText(value: String): Self = this.set("planPromotionText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlanPromotionText: Self = this.set("planPromotionText", js.undefined)
-    
-    @scala.inline
-    def setPurchaseOrderOrPromAllowed(value: String): Self = this.set("purchaseOrderOrPromAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchaseOrderOrPromAllowed: Self = this.set("purchaseOrderOrPromAllowed", js.undefined)
+    def setPurchaseOrderOrPromAllowedUndefined: Self = StObject.set(x, "purchaseOrderOrPromAllowed", js.undefined)
   }
 }

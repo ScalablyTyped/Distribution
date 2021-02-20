@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPoly.gapi.client.poly
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PresentationParams extends js.Object {
+trait PresentationParams extends StObject {
   
   /**
     * A background color which could be used for displaying the 3D asset in a 'thumbnail' or 'palette' style view. Authors have the option to set this background color when publishing or
@@ -34,36 +35,24 @@ object PresentationParams {
   }
   
   @scala.inline
-  implicit class PresentationParamsOps[Self <: PresentationParams] (val x: Self) extends AnyVal {
+  implicit class PresentationParamsMutableBuilder[Self <: PresentationParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setOrientingRotation(value: Quaternion): Self = StObject.set(x, "orientingRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpace(value: String): Self = this.set("colorSpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorSpace: Self = this.set("colorSpace", js.undefined)
-    
-    @scala.inline
-    def setOrientingRotation(value: Quaternion): Self = this.set("orientingRotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientingRotation: Self = this.set("orientingRotation", js.undefined)
+    def setOrientingRotationUndefined: Self = StObject.set(x, "orientingRotation", js.undefined)
   }
 }

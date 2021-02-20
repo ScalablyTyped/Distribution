@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayReplaceAt extends js.Object {
+trait ArrayReplaceAt extends StObject {
   
   var arrayReplaceAt: js.Any = js.native
   
@@ -65,66 +66,54 @@ object ArrayReplaceAt {
   }
   
   @scala.inline
-  implicit class ArrayReplaceAtOps[Self <: ArrayReplaceAt] (val x: Self) extends AnyVal {
+  implicit class ArrayReplaceAtMutableBuilder[Self <: ArrayReplaceAt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayReplaceAt(value: js.Any): Self = StObject.set(x, "arrayReplaceAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssign(value: js.Any): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEscapeHtml(value: js.Any): Self = StObject.set(x, "escapeHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayReplaceAt(value: js.Any): Self = this.set("arrayReplaceAt", value.asInstanceOf[js.Any])
+    def setEscapeRE(value: js.Any): Self = StObject.set(x, "escapeRE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssign(value: js.Any): Self = this.set("assign", value.asInstanceOf[js.Any])
+    def setFromCodePoint(value: js.Any): Self = StObject.set(x, "fromCodePoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeHtml(value: js.Any): Self = this.set("escapeHtml", value.asInstanceOf[js.Any])
+    def setHas(value: js.Any): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeRE(value: js.Any): Self = this.set("escapeRE", value.asInstanceOf[js.Any])
+    def setIsMdAsciiPunct(value: js.Any): Self = StObject.set(x, "isMdAsciiPunct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromCodePoint(value: js.Any): Self = this.set("fromCodePoint", value.asInstanceOf[js.Any])
+    def setIsPunctChar(value: js.Any): Self = StObject.set(x, "isPunctChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas(value: js.Any): Self = this.set("has", value.asInstanceOf[js.Any])
+    def setIsSpace(value: js.Any): Self = StObject.set(x, "isSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMdAsciiPunct(value: js.Any): Self = this.set("isMdAsciiPunct", value.asInstanceOf[js.Any])
+    def setIsString(value: js.Any): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPunctChar(value: js.Any): Self = this.set("isPunctChar", value.asInstanceOf[js.Any])
+    def setIsValidEntityCode(value: js.Any): Self = StObject.set(x, "isValidEntityCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSpace(value: js.Any): Self = this.set("isSpace", value.asInstanceOf[js.Any])
+    def setIsWhiteSpace(value: js.Any): Self = StObject.set(x, "isWhiteSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsString(value: js.Any): Self = this.set("isString", value.asInstanceOf[js.Any])
+    def setLib(value: Mdurl): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValidEntityCode(value: js.Any): Self = this.set("isValidEntityCode", value.asInstanceOf[js.Any])
+    def setNormalizeReference(value: js.Any): Self = StObject.set(x, "normalizeReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWhiteSpace(value: js.Any): Self = this.set("isWhiteSpace", value.asInstanceOf[js.Any])
+    def setUnescapeAll(value: js.Any): Self = StObject.set(x, "unescapeAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLib(value: Mdurl): Self = this.set("lib", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalizeReference(value: js.Any): Self = this.set("normalizeReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnescapeAll(value: js.Any): Self = this.set("unescapeAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnescapeMd(value: js.Any): Self = this.set("unescapeMd", value.asInstanceOf[js.Any])
+    def setUnescapeMd(value: js.Any): Self = StObject.set(x, "unescapeMd", value.asInstanceOf[js.Any])
   }
 }

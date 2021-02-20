@@ -1,11 +1,12 @@
 package typings.saxes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonOptions extends js.Object {
+trait CommonOptions extends StObject {
   
   /**
     * A file name to use for error reporting. "File name" is a loose concept. You
@@ -28,36 +29,24 @@ object CommonOptions {
   }
   
   @scala.inline
-  implicit class CommonOptionsOps[Self <: CommonOptions] (val x: Self) extends AnyVal {
+  implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFragment(value: Boolean): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragment(value: Boolean): Self = this.set("fragment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFragment: Self = this.set("fragment", js.undefined)
-    
-    @scala.inline
-    def setPosition(value: Boolean): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

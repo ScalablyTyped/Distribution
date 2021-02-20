@@ -1,12 +1,13 @@
 package typings.ethereumProtocol.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StructLog extends js.Object {
+trait StructLog extends StObject {
   
   var depth: Double = js.native
   
@@ -45,51 +46,39 @@ object StructLog {
   }
   
   @scala.inline
-  implicit class StructLogOps[Self <: StructLog] (val x: Self) extends AnyVal {
+  implicit class StructLogMutableBuilder[Self <: StructLog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setGasCost(value: Double): Self = StObject.set(x, "gasCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setMemory(value: js.Array[String]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGas(value: Double): Self = this.set("gas", value.asInstanceOf[js.Any])
+    def setMemoryVarargs(value: String*): Self = StObject.set(x, "memory", js.Array(value :_*))
     
     @scala.inline
-    def setGasCost(value: Double): Self = this.set("gasCost", value.asInstanceOf[js.Any])
+    def setOp(value: OpCode): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryVarargs(value: String*): Self = this.set("memory", js.Array(value :_*))
+    def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemory(value: js.Array[String]): Self = this.set("memory", value.asInstanceOf[js.Any])
+    def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOp(value: OpCode): Self = this.set("op", value.asInstanceOf[js.Any])
+    def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
     
     @scala.inline
-    def setPc(value: Double): Self = this.set("pc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStackVarargs(value: String*): Self = this.set("stack", js.Array(value :_*))
-    
-    @scala.inline
-    def setStack(value: js.Array[String]): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorage(value: StringDictionary[String]): Self = this.set("storage", value.asInstanceOf[js.Any])
+    def setStorage(value: StringDictionary[String]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }
 }

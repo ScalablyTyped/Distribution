@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBackgroundColorsResponse extends js.Object {
+trait GetBackgroundColorsResponse extends StObject {
   
   /**
     * The range of background colors behind this element, if it contains any visible text. If no
@@ -36,39 +37,27 @@ object GetBackgroundColorsResponse {
   }
   
   @scala.inline
-  implicit class GetBackgroundColorsResponseOps[Self <: GetBackgroundColorsResponse] (val x: Self) extends AnyVal {
+  implicit class GetBackgroundColorsResponseMutableBuilder[Self <: GetBackgroundColorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColors(value: js.Array[String]): Self = StObject.set(x, "backgroundColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorsUndefined: Self = StObject.set(x, "backgroundColors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColorsVarargs(value: String*): Self = StObject.set(x, "backgroundColors", js.Array(value :_*))
     
     @scala.inline
-    def setBackgroundColorsVarargs(value: String*): Self = this.set("backgroundColors", js.Array(value :_*))
+    def setComputedFontSize(value: String): Self = StObject.set(x, "computedFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColors(value: js.Array[String]): Self = this.set("backgroundColors", value.asInstanceOf[js.Any])
+    def setComputedFontSizeUndefined: Self = StObject.set(x, "computedFontSize", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColors: Self = this.set("backgroundColors", js.undefined)
+    def setComputedFontWeight(value: String): Self = StObject.set(x, "computedFontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputedFontSize(value: String): Self = this.set("computedFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputedFontSize: Self = this.set("computedFontSize", js.undefined)
-    
-    @scala.inline
-    def setComputedFontWeight(value: String): Self = this.set("computedFontWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputedFontWeight: Self = this.set("computedFontWeight", js.undefined)
+    def setComputedFontWeightUndefined: Self = StObject.set(x, "computedFontWeight", js.undefined)
   }
 }

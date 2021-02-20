@@ -1,12 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/GetBucketAccelerateConfiguration", JSImport.Namespace)
-@js.native
-object getBucketAccelerateConfigurationMod extends js.Object {
+object getBucketAccelerateConfigurationMod {
   
+  @JSImport("@aws-sdk/client-s3-node/model/GetBucketAccelerateConfiguration", "GetBucketAccelerateConfiguration")
+  @js.native
   val GetBucketAccelerateConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

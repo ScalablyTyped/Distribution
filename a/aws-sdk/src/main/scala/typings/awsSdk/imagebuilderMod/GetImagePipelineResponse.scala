@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetImagePipelineResponse extends js.Object {
+trait GetImagePipelineResponse extends StObject {
   
   /**
     * The image pipeline object. 
@@ -26,30 +27,18 @@ object GetImagePipelineResponse {
   }
   
   @scala.inline
-  implicit class GetImagePipelineResponseOps[Self <: GetImagePipelineResponse] (val x: Self) extends AnyVal {
+  implicit class GetImagePipelineResponseMutableBuilder[Self <: GetImagePipelineResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImagePipeline(value: ImagePipeline): Self = StObject.set(x, "imagePipeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagePipelineUndefined: Self = StObject.set(x, "imagePipeline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePipeline(value: ImagePipeline): Self = this.set("imagePipeline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImagePipeline: Self = this.set("imagePipeline", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

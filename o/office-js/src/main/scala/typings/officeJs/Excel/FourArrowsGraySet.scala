@@ -1,6 +1,7 @@
 package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object FourArrowsGraySet {
   }
   
   @scala.inline
-  implicit class FourArrowsGraySetOps[Self <: FourArrowsGraySet] (val x: Self) extends AnyVal {
+  implicit class FourArrowsGraySetMutableBuilder[Self <: FourArrowsGraySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrayDownArrow(value: Icon): Self = StObject.set(x, "grayDownArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrayDownInclineArrow(value: Icon): Self = StObject.set(x, "grayDownInclineArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrayUpArrow(value: Icon): Self = StObject.set(x, "grayUpArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrayDownArrow(value: Icon): Self = this.set("grayDownArrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGrayDownInclineArrow(value: Icon): Self = this.set("grayDownInclineArrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGrayUpArrow(value: Icon): Self = this.set("grayUpArrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGrayUpInclineArrow(value: Icon): Self = this.set("grayUpInclineArrow", value.asInstanceOf[js.Any])
+    def setGrayUpInclineArrow(value: Icon): Self = StObject.set(x, "grayUpInclineArrow", value.asInstanceOf[js.Any])
   }
 }

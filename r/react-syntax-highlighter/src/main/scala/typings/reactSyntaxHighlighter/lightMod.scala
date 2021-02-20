@@ -2,21 +2,22 @@ package typings.reactSyntaxHighlighter
 
 import typings.react.mod.Component
 import typings.reactSyntaxHighlighter.mod.SyntaxHighlighterProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/light", JSImport.Namespace)
-@js.native
-object lightMod extends js.Object {
+object lightMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/light", JSImport.Default)
   @js.native
   class default ()
     extends Component[SyntaxHighlighterProps, js.Object, js.Any]
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("react-syntax-highlighter/dist/cjs/light", "default.registerLanguage")
+    @js.native
     def registerLanguage(name: String, func: js.Any): Unit = js.native
   }
   

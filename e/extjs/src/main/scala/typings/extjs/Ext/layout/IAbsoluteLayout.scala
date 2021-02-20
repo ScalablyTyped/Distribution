@@ -1,6 +1,7 @@
 package typings.extjs.Ext.layout
 
 import typings.extjs.Ext.layout.container.IAnchor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object IAbsoluteLayout {
   }
   
   @scala.inline
-  implicit class IAbsoluteLayoutOps[Self <: IAbsoluteLayout] (val x: Self) extends AnyVal {
+  implicit class IAbsoluteLayoutMutableBuilder[Self <: IAbsoluteLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreOnContentChange(value: Boolean): Self = StObject.set(x, "ignoreOnContentChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreOnContentChangeUndefined: Self = StObject.set(x, "ignoreOnContentChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnContentChange(value: () => Boolean): Self = StObject.set(x, "onContentChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIgnoreOnContentChange(value: Boolean): Self = this.set("ignoreOnContentChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreOnContentChange: Self = this.set("ignoreOnContentChange", js.undefined)
-    
-    @scala.inline
-    def setOnContentChange(value: () => Boolean): Self = this.set("onContentChange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnContentChange: Self = this.set("onContentChange", js.undefined)
+    def setOnContentChangeUndefined: Self = StObject.set(x, "onContentChange", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.aureliaTemplating.mod
 
 import typings.aureliaDependencyInjection.mod.Container
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompositionContext extends js.Object {
+trait CompositionContext extends StObject {
   
   /**
     * The context in which the view model is executed in.
@@ -84,84 +85,72 @@ object CompositionContext {
   }
   
   @scala.inline
-  implicit class CompositionContextOps[Self <: CompositionContext] (val x: Self) extends AnyVal {
+  implicit class CompositionContextMutableBuilder[Self <: CompositionContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindingContext(value: js.Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildContainer(value: Container): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
     
     @scala.inline
-    def setBindingContext(value: js.Any): Self = this.set("bindingContext", value.asInstanceOf[js.Any])
+    def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: Container): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setHost(value: Element): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewResources(value: ViewResources_): Self = this.set("viewResources", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setViewSlot(value: ViewSlot): Self = this.set("viewSlot", value.asInstanceOf[js.Any])
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildContainer(value: Container): Self = this.set("childContainer", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteChildContainer: Self = this.set("childContainer", js.undefined)
+    def setOverrideContext(value: js.Any): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: Element): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setOverrideContextUndefined: Self = StObject.set(x, "overrideContext", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setOwningView(value: View_): Self = StObject.set(x, "owningView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setOwningViewUndefined: Self = StObject.set(x, "owningView", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setSkipActivation(value: Boolean): Self = StObject.set(x, "skipActivation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideContext(value: js.Any): Self = this.set("overrideContext", value.asInstanceOf[js.Any])
+    def setSkipActivationUndefined: Self = StObject.set(x, "skipActivation", js.undefined)
     
     @scala.inline
-    def deleteOverrideContext: Self = this.set("overrideContext", js.undefined)
+    def setView(value: String | ViewStrategy_): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwningView(value: View_): Self = this.set("owningView", value.asInstanceOf[js.Any])
+    def setViewModel(value: js.Any): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwningView: Self = this.set("owningView", js.undefined)
+    def setViewModelResource(value: HtmlBehaviorResource): Self = StObject.set(x, "viewModelResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipActivation(value: Boolean): Self = this.set("skipActivation", value.asInstanceOf[js.Any])
+    def setViewModelResourceUndefined: Self = StObject.set(x, "viewModelResource", js.undefined)
     
     @scala.inline
-    def deleteSkipActivation: Self = this.set("skipActivation", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: String | ViewStrategy_): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setViewResources(value: ViewResources_): Self = StObject.set(x, "viewResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewSlot(value: ViewSlot): Self = StObject.set(x, "viewSlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewModel(value: js.Any): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
-    
-    @scala.inline
-    def setViewModelResource(value: HtmlBehaviorResource): Self = this.set("viewModelResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModelResource: Self = this.set("viewModelResource", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

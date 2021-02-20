@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,42 +54,30 @@ object IndexedAccessType {
   }
   
   @scala.inline
-  implicit class IndexedAccessTypeOps[Self <: IndexedAccessType] (val x: Self) extends AnyVal {
+  implicit class IndexedAccessTypeMutableBuilder[Self <: IndexedAccessType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraint(value: Type): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexType(value: Type): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexType(value: Type): Self = this.set("indexType", value.asInstanceOf[js.Any])
+    def setObjectType(value: Type): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: Type): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    def setSimplifiedForReading(value: Type): Self = StObject.set(x, "simplifiedForReading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraint(value: Type): Self = this.set("constraint", value.asInstanceOf[js.Any])
+    def setSimplifiedForReadingUndefined: Self = StObject.set(x, "simplifiedForReading", js.undefined)
     
     @scala.inline
-    def deleteConstraint: Self = this.set("constraint", js.undefined)
+    def setSimplifiedForWriting(value: Type): Self = StObject.set(x, "simplifiedForWriting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimplifiedForReading(value: Type): Self = this.set("simplifiedForReading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimplifiedForReading: Self = this.set("simplifiedForReading", js.undefined)
-    
-    @scala.inline
-    def setSimplifiedForWriting(value: Type): Self = this.set("simplifiedForWriting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimplifiedForWriting: Self = this.set("simplifiedForWriting", js.undefined)
+    def setSimplifiedForWritingUndefined: Self = StObject.set(x, "simplifiedForWriting", js.undefined)
   }
 }

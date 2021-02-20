@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,33 +75,21 @@ object XUntitledNumbers {
   }
   
   @scala.inline
-  implicit class XUntitledNumbersOps[Self <: XUntitledNumbers] (val x: Self) extends AnyVal {
+  implicit class XUntitledNumbersMutableBuilder[Self <: XUntitledNumbers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetUntitledPrefix(value: () => String): Self = StObject.set(x, "getUntitledPrefix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeaseNumber(value: XInterface => Double): Self = StObject.set(x, "leaseNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReleaseNumber(value: Double => Unit): Self = StObject.set(x, "releaseNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUntitledPrefix(value: String): Self = this.set("UntitledPrefix", value.asInstanceOf[js.Any])
+    def setReleaseNumberForComponent(value: XInterface => Unit): Self = StObject.set(x, "releaseNumberForComponent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUntitledPrefix(value: () => String): Self = this.set("getUntitledPrefix", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLeaseNumber(value: XInterface => Double): Self = this.set("leaseNumber", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReleaseNumber(value: Double => Unit): Self = this.set("releaseNumber", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReleaseNumberForComponent(value: XInterface => Unit): Self = this.set("releaseNumberForComponent", js.Any.fromFunction1(value))
+    def setUntitledPrefix(value: String): Self = StObject.set(x, "UntitledPrefix", value.asInstanceOf[js.Any])
   }
 }

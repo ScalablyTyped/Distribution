@@ -2,6 +2,7 @@ package typings.babylonjs.miscIndexMod
 
 import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class PanoramaToCubeMapTools ()
   extends typings.babylonjs.highDynamicRangeIndexMod.PanoramaToCubeMapTools
 /* static members */
-@JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools")
-@js.native
-object PanoramaToCubeMapTools extends js.Object {
+object PanoramaToCubeMapTools {
   
-  var CalcProjectionSpherical: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools.CalcProjectionSpherical")
+  @js.native
+  def CalcProjectionSpherical: js.Any = js.native
+  @scala.inline
+  def CalcProjectionSpherical_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CalcProjectionSpherical")(x.asInstanceOf[js.Any])
   
   /**
     * Converts a panorma stored in RGB right to left up to down format into a cubemap (6 faces).
@@ -26,19 +33,49 @@ object PanoramaToCubeMapTools extends js.Object {
     * @param size The willing size of the generated cubemap (each faces will be size * size pixels)
     * @return The cubemap data
     */
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools.ConvertPanoramaToCubemap")
+  @js.native
   def ConvertPanoramaToCubemap(float32Array: Float32Array, inputWidth: Double, inputHeight: Double, size: Double): CubeMapInfo = js.native
   
-  var CreateCubemapTexture: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools.CreateCubemapTexture")
+  @js.native
+  def CreateCubemapTexture: js.Any = js.native
+  @scala.inline
+  def CreateCubemapTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateCubemapTexture")(x.asInstanceOf[js.Any])
   
-  var FACE_BACK: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools.FACE_BACK")
+  @js.native
+  def FACE_BACK: js.Any = js.native
+  @scala.inline
+  def FACE_BACK_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_BACK")(x.asInstanceOf[js.Any])
   
-  var FACE_DOWN: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools.FACE_DOWN")
+  @js.native
+  def FACE_DOWN: js.Any = js.native
+  @scala.inline
+  def FACE_DOWN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_DOWN")(x.asInstanceOf[js.Any])
   
-  var FACE_FRONT: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools.FACE_FRONT")
+  @js.native
+  def FACE_FRONT: js.Any = js.native
+  @scala.inline
+  def FACE_FRONT_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_FRONT")(x.asInstanceOf[js.Any])
   
-  var FACE_LEFT: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools.FACE_LEFT")
+  @js.native
+  def FACE_LEFT: js.Any = js.native
+  @scala.inline
+  def FACE_LEFT_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_LEFT")(x.asInstanceOf[js.Any])
   
-  var FACE_RIGHT: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools.FACE_RIGHT")
+  @js.native
+  def FACE_RIGHT: js.Any = js.native
+  @scala.inline
+  def FACE_RIGHT_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_RIGHT")(x.asInstanceOf[js.Any])
   
-  var FACE_UP: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools.FACE_UP")
+  @js.native
+  def FACE_UP: js.Any = js.native
+  @scala.inline
+  def FACE_UP_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_UP")(x.asInstanceOf[js.Any])
 }

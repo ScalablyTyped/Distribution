@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,39 +26,27 @@ object MacOSCustomConfiguration {
   }
   
   @scala.inline
-  implicit class MacOSCustomConfigurationOps[Self <: MacOSCustomConfiguration] (val x: Self) extends AnyVal {
+  implicit class MacOSCustomConfigurationMutableBuilder[Self <: MacOSCustomConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayloadFileName(value: NullableOption[String]): Self = StObject.set(x, "payloadFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayloadFileNameNull: Self = StObject.set(x, "payloadFileName", null)
     
     @scala.inline
-    def setPayload(value: Double): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setPayloadFileNameUndefined: Self = StObject.set(x, "payloadFileName", js.undefined)
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setPayloadName(value: String): Self = StObject.set(x, "payloadName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadFileName(value: NullableOption[String]): Self = this.set("payloadFileName", value.asInstanceOf[js.Any])
+    def setPayloadNameUndefined: Self = StObject.set(x, "payloadName", js.undefined)
     
     @scala.inline
-    def deletePayloadFileName: Self = this.set("payloadFileName", js.undefined)
-    
-    @scala.inline
-    def setPayloadFileNameNull: Self = this.set("payloadFileName", null)
-    
-    @scala.inline
-    def setPayloadName(value: String): Self = this.set("payloadName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayloadName: Self = this.set("payloadName", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

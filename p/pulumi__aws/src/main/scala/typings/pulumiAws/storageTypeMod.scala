@@ -1,24 +1,28 @@
 package typings.pulumiAws
 
 import typings.pulumiAws.enumsRdsMod.StorageType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/rds/storageType", JSImport.Namespace)
-@js.native
-object storageTypeMod extends js.Object {
+object storageTypeMod {
   
-  @js.native
-  object StorageTypes extends js.Object {
+  object StorageTypes {
     
     /** Use StorageType.GP2 instead. */
+    @JSImport("@pulumi/aws/rds/storageType", "StorageTypes.GP2")
+    @js.native
     val GP2: StorageType = js.native
     
     /** Use StorageType.IO1 instead. */
+    @JSImport("@pulumi/aws/rds/storageType", "StorageTypes.Io1")
+    @js.native
     val Io1: StorageType = js.native
     
     /** Use StorageType.Standard instead. */
+    @JSImport("@pulumi/aws/rds/storageType", "StorageTypes.Standard")
+    @js.native
     val Standard: StorageType = js.native
   }
 }

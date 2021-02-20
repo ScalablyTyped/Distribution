@@ -3,6 +3,7 @@ package typings.googleSpreadsheet.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleSpreadsheet.anon.Data
 import typings.googleSpreadsheet.anon.Insert
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

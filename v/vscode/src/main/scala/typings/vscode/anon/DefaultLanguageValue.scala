@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultLanguageValue[T] extends js.Object {
+trait DefaultLanguageValue[T] extends StObject {
   
   var defaultLanguageValue: js.UndefOr[T] = js.native
   
@@ -36,78 +37,66 @@ object DefaultLanguageValue {
   }
   
   @scala.inline
-  implicit class DefaultLanguageValueOps[Self <: DefaultLanguageValue[_], T] (val x: Self with DefaultLanguageValue[T]) extends AnyVal {
+  implicit class DefaultLanguageValueMutableBuilder[Self <: DefaultLanguageValue[_], T] (val x: Self with DefaultLanguageValue[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultLanguageValue(value: T): Self = StObject.set(x, "defaultLanguageValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultLanguageValueUndefined: Self = StObject.set(x, "defaultLanguageValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setDefaultLanguageValue(value: T): Self = this.set("defaultLanguageValue", value.asInstanceOf[js.Any])
+    def setGlobalLanguageValue(value: T): Self = StObject.set(x, "globalLanguageValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultLanguageValue: Self = this.set("defaultLanguageValue", js.undefined)
+    def setGlobalLanguageValueUndefined: Self = StObject.set(x, "globalLanguageValue", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: T): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setGlobalValue(value: T): Self = StObject.set(x, "globalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setGlobalValueUndefined: Self = StObject.set(x, "globalValue", js.undefined)
     
     @scala.inline
-    def setGlobalLanguageValue(value: T): Self = this.set("globalLanguageValue", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobalLanguageValue: Self = this.set("globalLanguageValue", js.undefined)
+    def setLanguageIds(value: js.Array[String]): Self = StObject.set(x, "languageIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalValue(value: T): Self = this.set("globalValue", value.asInstanceOf[js.Any])
+    def setLanguageIdsUndefined: Self = StObject.set(x, "languageIds", js.undefined)
     
     @scala.inline
-    def deleteGlobalValue: Self = this.set("globalValue", js.undefined)
+    def setLanguageIdsVarargs(value: String*): Self = StObject.set(x, "languageIds", js.Array(value :_*))
     
     @scala.inline
-    def setLanguageIdsVarargs(value: String*): Self = this.set("languageIds", js.Array(value :_*))
+    def setWorkspaceFolderLanguageValue(value: T): Self = StObject.set(x, "workspaceFolderLanguageValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageIds(value: js.Array[String]): Self = this.set("languageIds", value.asInstanceOf[js.Any])
+    def setWorkspaceFolderLanguageValueUndefined: Self = StObject.set(x, "workspaceFolderLanguageValue", js.undefined)
     
     @scala.inline
-    def deleteLanguageIds: Self = this.set("languageIds", js.undefined)
+    def setWorkspaceFolderValue(value: T): Self = StObject.set(x, "workspaceFolderValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspaceFolderLanguageValue(value: T): Self = this.set("workspaceFolderLanguageValue", value.asInstanceOf[js.Any])
+    def setWorkspaceFolderValueUndefined: Self = StObject.set(x, "workspaceFolderValue", js.undefined)
     
     @scala.inline
-    def deleteWorkspaceFolderLanguageValue: Self = this.set("workspaceFolderLanguageValue", js.undefined)
+    def setWorkspaceLanguageValue(value: T): Self = StObject.set(x, "workspaceLanguageValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspaceFolderValue(value: T): Self = this.set("workspaceFolderValue", value.asInstanceOf[js.Any])
+    def setWorkspaceLanguageValueUndefined: Self = StObject.set(x, "workspaceLanguageValue", js.undefined)
     
     @scala.inline
-    def deleteWorkspaceFolderValue: Self = this.set("workspaceFolderValue", js.undefined)
+    def setWorkspaceValue(value: T): Self = StObject.set(x, "workspaceValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspaceLanguageValue(value: T): Self = this.set("workspaceLanguageValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceLanguageValue: Self = this.set("workspaceLanguageValue", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceValue(value: T): Self = this.set("workspaceValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceValue: Self = this.set("workspaceValue", js.undefined)
+    def setWorkspaceValueUndefined: Self = StObject.set(x, "workspaceValue", js.undefined)
   }
 }

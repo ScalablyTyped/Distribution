@@ -1,16 +1,16 @@
 package typings.egjsAxes
 
 import typings.egjsAxes.axesMod.AxesOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@egjs/axes/InterruptManager", JSImport.Namespace)
-@js.native
-object interruptManagerMod extends js.Object {
+object interruptManagerMod {
   
+  @JSImport("@egjs/axes/InterruptManager", "InterruptManager")
   @js.native
-  class InterruptManager protected () extends js.Object {
+  class InterruptManager protected () extends StObject {
     def this(options: AxesOption) = this()
     
     var _prevented: js.Any = js.native

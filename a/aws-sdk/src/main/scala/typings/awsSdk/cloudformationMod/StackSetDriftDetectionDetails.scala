@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackSetDriftDetectionDetails extends js.Object {
+trait StackSetDriftDetectionDetails extends StObject {
   
   /**
     * The status of the stack set drift detection operation.    COMPLETED: The drift detection operation completed without failing on any stack instances.    FAILED: The drift detection operation exceeded the specified failure tolerance.     PARTIAL_SUCCESS: The drift detection operation completed without exceeding the failure tolerance for the operation.    IN_PROGRESS: The drift detection operation is currently being performed.    STOPPED: The user has cancelled the drift detection operation.  
@@ -56,66 +57,54 @@ object StackSetDriftDetectionDetails {
   }
   
   @scala.inline
-  implicit class StackSetDriftDetectionDetailsOps[Self <: StackSetDriftDetectionDetails] (val x: Self) extends AnyVal {
+  implicit class StackSetDriftDetectionDetailsMutableBuilder[Self <: StackSetDriftDetectionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriftDetectionStatus(value: StackSetDriftDetectionStatus): Self = StObject.set(x, "DriftDetectionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDriftDetectionStatusUndefined: Self = StObject.set(x, "DriftDetectionStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriftStatus(value: StackSetDriftStatus): Self = StObject.set(x, "DriftStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriftDetectionStatus(value: StackSetDriftDetectionStatus): Self = this.set("DriftDetectionStatus", value.asInstanceOf[js.Any])
+    def setDriftStatusUndefined: Self = StObject.set(x, "DriftStatus", js.undefined)
     
     @scala.inline
-    def deleteDriftDetectionStatus: Self = this.set("DriftDetectionStatus", js.undefined)
+    def setDriftedStackInstancesCount(value: DriftedStackInstancesCount): Self = StObject.set(x, "DriftedStackInstancesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriftStatus(value: StackSetDriftStatus): Self = this.set("DriftStatus", value.asInstanceOf[js.Any])
+    def setDriftedStackInstancesCountUndefined: Self = StObject.set(x, "DriftedStackInstancesCount", js.undefined)
     
     @scala.inline
-    def deleteDriftStatus: Self = this.set("DriftStatus", js.undefined)
+    def setFailedStackInstancesCount(value: FailedStackInstancesCount): Self = StObject.set(x, "FailedStackInstancesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriftedStackInstancesCount(value: DriftedStackInstancesCount): Self = this.set("DriftedStackInstancesCount", value.asInstanceOf[js.Any])
+    def setFailedStackInstancesCountUndefined: Self = StObject.set(x, "FailedStackInstancesCount", js.undefined)
     
     @scala.inline
-    def deleteDriftedStackInstancesCount: Self = this.set("DriftedStackInstancesCount", js.undefined)
+    def setInProgressStackInstancesCount(value: InProgressStackInstancesCount): Self = StObject.set(x, "InProgressStackInstancesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedStackInstancesCount(value: FailedStackInstancesCount): Self = this.set("FailedStackInstancesCount", value.asInstanceOf[js.Any])
+    def setInProgressStackInstancesCountUndefined: Self = StObject.set(x, "InProgressStackInstancesCount", js.undefined)
     
     @scala.inline
-    def deleteFailedStackInstancesCount: Self = this.set("FailedStackInstancesCount", js.undefined)
+    def setInSyncStackInstancesCount(value: InSyncStackInstancesCount): Self = StObject.set(x, "InSyncStackInstancesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInProgressStackInstancesCount(value: InProgressStackInstancesCount): Self = this.set("InProgressStackInstancesCount", value.asInstanceOf[js.Any])
+    def setInSyncStackInstancesCountUndefined: Self = StObject.set(x, "InSyncStackInstancesCount", js.undefined)
     
     @scala.inline
-    def deleteInProgressStackInstancesCount: Self = this.set("InProgressStackInstancesCount", js.undefined)
+    def setLastDriftCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInSyncStackInstancesCount(value: InSyncStackInstancesCount): Self = this.set("InSyncStackInstancesCount", value.asInstanceOf[js.Any])
+    def setLastDriftCheckTimestampUndefined: Self = StObject.set(x, "LastDriftCheckTimestamp", js.undefined)
     
     @scala.inline
-    def deleteInSyncStackInstancesCount: Self = this.set("InSyncStackInstancesCount", js.undefined)
+    def setTotalStackInstancesCount(value: TotalStackInstancesCount): Self = StObject.set(x, "TotalStackInstancesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastDriftCheckTimestamp(value: Timestamp): Self = this.set("LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastDriftCheckTimestamp: Self = this.set("LastDriftCheckTimestamp", js.undefined)
-    
-    @scala.inline
-    def setTotalStackInstancesCount(value: TotalStackInstancesCount): Self = this.set("TotalStackInstancesCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalStackInstancesCount: Self = this.set("TotalStackInstancesCount", js.undefined)
+    def setTotalStackInstancesCountUndefined: Self = StObject.set(x, "TotalStackInstancesCount", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.pkgcloud.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,60 +33,48 @@ object ClientError {
   }
   
   @scala.inline
-  implicit class ClientErrorOps[Self <: ClientError] (val x: Self) extends AnyVal {
+  implicit class ClientErrorMutableBuilder[Self <: ClientError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailCode(value: String): Self = StObject.set(x, "failCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailCodeUndefined: Self = StObject.set(x, "failCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailCode(value: String): Self = this.set("failCode", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFailCode: Self = this.set("failCode", js.undefined)
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteHref: Self = this.set("href", js.undefined)
+    def setProvider(value: Providers): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: Providers): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
-    
-    @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLCanvasElement extends js.Object {
+trait IHTMLCanvasElement extends StObject {
   
   @JSName("MSHTML.IHTMLCanvasElement_typekey")
   var MSHTMLDotIHTMLCanvasElement_typekey: IHTMLCanvasElement = js.native
@@ -34,33 +35,21 @@ object IHTMLCanvasElement {
   }
   
   @scala.inline
-  implicit class IHTMLCanvasElementOps[Self <: IHTMLCanvasElement] (val x: Self) extends AnyVal {
+  implicit class IHTMLCanvasElementMutableBuilder[Self <: IHTMLCanvasElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetContext(value: String => ICanvasRenderingContext2D): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSHTMLDotIHTMLCanvasElement_typekey(value: IHTMLCanvasElement): Self = StObject.set(x, "MSHTML.IHTMLCanvasElement_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotIHTMLCanvasElement_typekey(value: IHTMLCanvasElement): Self = this.set("MSHTML.IHTMLCanvasElement_typekey", value.asInstanceOf[js.Any])
+    def setToDataURL(value: (String, js.Any) => String): Self = StObject.set(x, "toDataURL", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetContext(value: String => ICanvasRenderingContext2D): Self = this.set("getContext", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToDataURL(value: (String, js.Any) => String): Self = this.set("toDataURL", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

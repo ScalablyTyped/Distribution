@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Badgeurl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsListRepoWorkflowsResponseData extends js.Object {
+trait ActionsListRepoWorkflowsResponseData extends StObject {
   
   var total_count: Double = js.native
   
@@ -21,27 +22,15 @@ object ActionsListRepoWorkflowsResponseData {
   }
   
   @scala.inline
-  implicit class ActionsListRepoWorkflowsResponseDataOps[Self <: ActionsListRepoWorkflowsResponseData] (val x: Self) extends AnyVal {
+  implicit class ActionsListRepoWorkflowsResponseDataMutableBuilder[Self <: ActionsListRepoWorkflowsResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWorkflows(value: js.Array[Badgeurl]): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkflowsVarargs(value: Badgeurl*): Self = this.set("workflows", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkflows(value: js.Array[Badgeurl]): Self = this.set("workflows", value.asInstanceOf[js.Any])
+    def setWorkflowsVarargs(value: Badgeurl*): Self = StObject.set(x, "workflows", js.Array(value :_*))
   }
 }

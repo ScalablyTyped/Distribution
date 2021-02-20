@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceCodeType extends js.Object {
+trait SourceCodeType extends StObject {
   
   /**
     *  A  SourceCodeType  that specifies a commit diff created by a pull request on an associated repository. 
@@ -23,30 +24,18 @@ object SourceCodeType {
   }
   
   @scala.inline
-  implicit class SourceCodeTypeOps[Self <: SourceCodeType] (val x: Self) extends AnyVal {
+  implicit class SourceCodeTypeMutableBuilder[Self <: SourceCodeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitDiff(value: CommitDiffSourceCodeType): Self = StObject.set(x, "CommitDiff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitDiffUndefined: Self = StObject.set(x, "CommitDiff", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = StObject.set(x, "RepositoryHead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitDiff(value: CommitDiffSourceCodeType): Self = this.set("CommitDiff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommitDiff: Self = this.set("CommitDiff", js.undefined)
-    
-    @scala.inline
-    def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = this.set("RepositoryHead", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryHead: Self = this.set("RepositoryHead", js.undefined)
+    def setRepositoryHeadUndefined: Self = StObject.set(x, "RepositoryHead", js.undefined)
   }
 }

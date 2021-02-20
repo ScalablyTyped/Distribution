@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlueTable extends js.Object {
+trait GlueTable extends StObject {
   
   /**
     * A unique identifier for the AWS Glue Data Catalog.
@@ -36,36 +37,24 @@ object GlueTable {
   }
   
   @scala.inline
-  implicit class GlueTableOps[Self <: GlueTable] (val x: Self) extends AnyVal {
+  implicit class GlueTableMutableBuilder[Self <: GlueTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogId(value: NameString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionName(value: NameString): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setConnectionNameUndefined: Self = StObject.set(x, "ConnectionName", js.undefined)
     
     @scala.inline
-    def setTableName(value: NameString): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogId(value: NameString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
-    
-    @scala.inline
-    def setConnectionName(value: NameString): Self = this.set("ConnectionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionName: Self = this.set("ConnectionName", js.undefined)
+    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

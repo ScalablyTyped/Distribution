@@ -2,14 +2,14 @@ package typings.rxjs
 
 import typings.rxjs.subscriptionMod.Subscription
 import typings.rxjs.typesMod.PartialObserver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/Subscriber", JSImport.Namespace)
-@js.native
-object subscriberMod extends js.Object {
+object subscriberMod {
   
+  @JSImport("rxjs/internal/Subscriber", "SafeSubscriber")
   @js.native
   class SafeSubscriber[T] protected () extends Subscriber[T] {
     def this(_parentSubscriber: Subscriber[T]) = this()
@@ -80,7 +80,8 @@ object subscriberMod extends js.Object {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.rxjs.typesMod.Observer because var conflicts: closed. Inlined next, error, complete */ @js.native
+  - typings.rxjs.typesMod.Observer because var conflicts: closed. Inlined next, error, complete */ @JSImport("rxjs/internal/Subscriber", "Subscriber")
+  @js.native
   /**
     * @param {Observer|function(value: T): void} [destinationOrNext] A partially
     * defined Observer or a `next` callback function.
@@ -180,8 +181,7 @@ object subscriberMod extends js.Object {
     /** @internal */ var syncErrorValue: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Subscriber extends js.Object {
+  object Subscriber {
     
     /**
       * A static factory for a Subscriber, given a (potentially partial) definition
@@ -195,24 +195,40 @@ object subscriberMod extends js.Object {
       * Observer represented by the given arguments.
       * @nocollapse
       */
+    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
+    @js.native
     def create[T](): Subscriber[T] = js.native
+    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
+    @js.native
     def create[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): Subscriber[T] = js.native
+    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
+    @js.native
     def create[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Subscriber[T] = js.native
+    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
+    @js.native
     def create[T](
       next: js.UndefOr[scala.Nothing],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ): Subscriber[T] = js.native
+    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
+    @js.native
     def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): Subscriber[T] = js.native
+    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
+    @js.native
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.UndefOr[scala.Nothing],
       complete: js.Function0[Unit]
     ): Subscriber[T] = js.native
+    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
+    @js.native
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ): Subscriber[T] = js.native
+    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
+    @js.native
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],

@@ -2,16 +2,16 @@ package typings.babylonjs
 
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/meshLODLevel", JSImport.Namespace)
-@js.native
-object meshLODLevelMod extends js.Object {
+object meshLODLevelMod {
   
+  @JSImport("babylonjs/Meshes/meshLODLevel", "MeshLODLevel")
   @js.native
-  class MeshLODLevel protected () extends js.Object {
+  class MeshLODLevel protected () extends StObject {
     /**
       * Creates a new LOD level
       * @param distance defines the distance where this level should star being displayed

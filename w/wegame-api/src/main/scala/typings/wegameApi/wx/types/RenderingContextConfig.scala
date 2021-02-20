@@ -1,11 +1,12 @@
 package typings.wegameApi.wx.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderingContextConfig extends js.Object {
+trait RenderingContextConfig extends StObject {
   
   /**
     * 表示是否抗锯齿
@@ -31,36 +32,24 @@ object RenderingContextConfig {
   }
   
   @scala.inline
-  implicit class RenderingContextConfigOps[Self <: RenderingContextConfig] (val x: Self) extends AnyVal {
+  implicit class RenderingContextConfigMutableBuilder[Self <: RenderingContextConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAntialiasSamples(value: Double): Self = StObject.set(x, "antialiasSamples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAntialiasSamplesUndefined: Self = StObject.set(x, "antialiasSamples", js.undefined)
     
     @scala.inline
-    def setAntialias(value: Boolean): Self = this.set("antialias", value.asInstanceOf[js.Any])
+    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
     @scala.inline
-    def deleteAntialias: Self = this.set("antialias", js.undefined)
+    def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntialiasSamples(value: Double): Self = this.set("antialiasSamples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAntialiasSamples: Self = this.set("antialiasSamples", js.undefined)
-    
-    @scala.inline
-    def setPreserveDrawingBuffer(value: Boolean): Self = this.set("preserveDrawingBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveDrawingBuffer: Self = this.set("preserveDrawingBuffer", js.undefined)
+    def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
   }
 }

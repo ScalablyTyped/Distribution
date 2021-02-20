@@ -1,12 +1,13 @@
 package typings.lodash.fpMod
 
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashBefore extends js.Object {
+trait LodashBefore extends StObject {
   
   def apply(func: __, n: Double): LodashBefore1x2 = js.native
   def apply[TFunc /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunc): LodashBefore1x1[TFunc] = js.native

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,42 +85,30 @@ object XMethodParameter {
   }
   
   @scala.inline
-  implicit class XMethodParameterOps[Self <: XMethodParameter] (val x: Self) extends AnyVal {
+  implicit class XMethodParameterMutableBuilder[Self <: XMethodParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetType(value: () => XTypeDescription): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setIsIn(value: () => Boolean): Self = StObject.set(x, "isIn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("Position", value.asInstanceOf[js.Any])
+    def setIsOut(value: () => Boolean): Self = StObject.set(x, "isOut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setType(value: XTypeDescription): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPosition(value: () => Double): Self = this.set("getPosition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetType(value: () => XTypeDescription): Self = this.set("getType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsIn(value: () => Boolean): Self = this.set("isIn", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOut(value: () => Boolean): Self = this.set("isOut", js.Any.fromFunction0(value))
+    def setType(value: XTypeDescription): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

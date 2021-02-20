@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeActivationsFilter extends js.Object {
+trait DescribeActivationsFilter extends StObject {
   
   /**
     * The name of the filter.
@@ -26,33 +27,21 @@ object DescribeActivationsFilter {
   }
   
   @scala.inline
-  implicit class DescribeActivationsFilterOps[Self <: DescribeActivationsFilter] (val x: Self) extends AnyVal {
+  implicit class DescribeActivationsFilterMutableBuilder[Self <: DescribeActivationsFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterKey(value: DescribeActivationsFilterKeys): Self = StObject.set(x, "FilterKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterKeyUndefined: Self = StObject.set(x, "FilterKey", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterValues(value: StringList): Self = StObject.set(x, "FilterValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterKey(value: DescribeActivationsFilterKeys): Self = this.set("FilterKey", value.asInstanceOf[js.Any])
+    def setFilterValuesUndefined: Self = StObject.set(x, "FilterValues", js.undefined)
     
     @scala.inline
-    def deleteFilterKey: Self = this.set("FilterKey", js.undefined)
-    
-    @scala.inline
-    def setFilterValuesVarargs(value: String*): Self = this.set("FilterValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilterValues(value: StringList): Self = this.set("FilterValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterValues: Self = this.set("FilterValues", js.undefined)
+    def setFilterValuesVarargs(value: String*): Self = StObject.set(x, "FilterValues", js.Array(value :_*))
   }
 }

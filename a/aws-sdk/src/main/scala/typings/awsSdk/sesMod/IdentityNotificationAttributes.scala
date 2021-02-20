@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityNotificationAttributes extends js.Object {
+trait IdentityNotificationAttributes extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon SNS topic where Amazon SES will publish bounce notifications.
@@ -56,48 +57,36 @@ object IdentityNotificationAttributes {
   }
   
   @scala.inline
-  implicit class IdentityNotificationAttributesOps[Self <: IdentityNotificationAttributes] (val x: Self) extends AnyVal {
+  implicit class IdentityNotificationAttributesMutableBuilder[Self <: IdentityNotificationAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounceTopic(value: NotificationTopic): Self = StObject.set(x, "BounceTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplaintTopic(value: NotificationTopic): Self = StObject.set(x, "ComplaintTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeliveryTopic(value: NotificationTopic): Self = StObject.set(x, "DeliveryTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounceTopic(value: NotificationTopic): Self = this.set("BounceTopic", value.asInstanceOf[js.Any])
+    def setForwardingEnabled(value: Enabled): Self = StObject.set(x, "ForwardingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplaintTopic(value: NotificationTopic): Self = this.set("ComplaintTopic", value.asInstanceOf[js.Any])
+    def setHeadersInBounceNotificationsEnabled(value: Enabled): Self = StObject.set(x, "HeadersInBounceNotificationsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryTopic(value: NotificationTopic): Self = this.set("DeliveryTopic", value.asInstanceOf[js.Any])
+    def setHeadersInBounceNotificationsEnabledUndefined: Self = StObject.set(x, "HeadersInBounceNotificationsEnabled", js.undefined)
     
     @scala.inline
-    def setForwardingEnabled(value: Enabled): Self = this.set("ForwardingEnabled", value.asInstanceOf[js.Any])
+    def setHeadersInComplaintNotificationsEnabled(value: Enabled): Self = StObject.set(x, "HeadersInComplaintNotificationsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersInBounceNotificationsEnabled(value: Enabled): Self = this.set("HeadersInBounceNotificationsEnabled", value.asInstanceOf[js.Any])
+    def setHeadersInComplaintNotificationsEnabledUndefined: Self = StObject.set(x, "HeadersInComplaintNotificationsEnabled", js.undefined)
     
     @scala.inline
-    def deleteHeadersInBounceNotificationsEnabled: Self = this.set("HeadersInBounceNotificationsEnabled", js.undefined)
+    def setHeadersInDeliveryNotificationsEnabled(value: Enabled): Self = StObject.set(x, "HeadersInDeliveryNotificationsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersInComplaintNotificationsEnabled(value: Enabled): Self = this.set("HeadersInComplaintNotificationsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadersInComplaintNotificationsEnabled: Self = this.set("HeadersInComplaintNotificationsEnabled", js.undefined)
-    
-    @scala.inline
-    def setHeadersInDeliveryNotificationsEnabled(value: Enabled): Self = this.set("HeadersInDeliveryNotificationsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadersInDeliveryNotificationsEnabled: Self = this.set("HeadersInDeliveryNotificationsEnabled", js.undefined)
+    def setHeadersInDeliveryNotificationsEnabledUndefined: Self = StObject.set(x, "HeadersInDeliveryNotificationsEnabled", js.undefined)
   }
 }

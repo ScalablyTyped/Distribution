@@ -4,13 +4,14 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IAsyncAction
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages secure stop messages. */
 @js.native
-trait PlayReadySecureStopServiceRequest extends js.Object {
+trait PlayReadySecureStopServiceRequest extends StObject {
   
   /**
     * Begins an asynchronous service request operation.
@@ -92,60 +93,48 @@ object PlayReadySecureStopServiceRequest {
   }
   
   @scala.inline
-  implicit class PlayReadySecureStopServiceRequestOps[Self <: PlayReadySecureStopServiceRequest] (val x: Self) extends AnyVal {
+  implicit class PlayReadySecureStopServiceRequestMutableBuilder[Self <: PlayReadySecureStopServiceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginServiceRequest(value: () => IAsyncAction): Self = StObject.set(x, "beginServiceRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChallengeCustomData(value: String): Self = StObject.set(x, "challengeCustomData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerateManualEnablingChallenge(value: () => PlayReadySoapMessage): Self = StObject.set(x, "generateManualEnablingChallenge", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeginServiceRequest(value: () => IAsyncAction): Self = this.set("beginServiceRequest", js.Any.fromFunction0(value))
+    def setNextServiceRequest(value: () => IPlayReadyServiceRequest): Self = StObject.set(x, "nextServiceRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChallengeCustomData(value: String): Self = this.set("challengeCustomData", value.asInstanceOf[js.Any])
+    def setProcessManualEnablingResponse(value: js.Array[Double] => WinRTError): Self = StObject.set(x, "processManualEnablingResponse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGenerateManualEnablingChallenge(value: () => PlayReadySoapMessage): Self = this.set("generateManualEnablingChallenge", js.Any.fromFunction0(value))
+    def setProtectionSystem(value: String): Self = StObject.set(x, "protectionSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextServiceRequest(value: () => IPlayReadyServiceRequest): Self = this.set("nextServiceRequest", js.Any.fromFunction0(value))
+    def setPublisherCertificate(value: Double): Self = StObject.set(x, "publisherCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessManualEnablingResponse(value: js.Array[Double] => WinRTError): Self = this.set("processManualEnablingResponse", js.Any.fromFunction1(value))
+    def setResponseCustomData(value: String): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectionSystem(value: String): Self = this.set("protectionSystem", value.asInstanceOf[js.Any])
+    def setSessionID(value: String): Self = StObject.set(x, "sessionID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherCertificate(value: Double): Self = this.set("publisherCertificate", value.asInstanceOf[js.Any])
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseCustomData(value: String): Self = this.set("responseCustomData", value.asInstanceOf[js.Any])
+    def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionID(value: String): Self = this.set("sessionID", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopped(value: Boolean): Self = this.set("stopped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateTime(value: Date): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: Uri): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

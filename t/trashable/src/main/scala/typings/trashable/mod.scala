@@ -1,18 +1,19 @@
 package typings.trashable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("trashable", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("trashable", JSImport.Namespace)
+  @js.native
   def apply[T](promise: js.Promise[T]): TrashablePromise[T] = js.native
   
   /* Inlined std.Promise<T> & {trash (): void} */
   @js.native
-  trait TrashablePromise[T] extends js.Object {
+  trait TrashablePromise[T] extends StObject {
     
     /**
       * Attaches a callback for only the rejection of the Promise.

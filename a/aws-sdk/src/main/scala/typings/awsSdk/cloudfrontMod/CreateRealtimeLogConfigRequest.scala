@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRealtimeLogConfigRequest extends js.Object {
+trait CreateRealtimeLogConfigRequest extends StObject {
   
   /**
     * Contains information about the Amazon Kinesis data stream where you are sending real-time log data.
@@ -36,36 +37,24 @@ object CreateRealtimeLogConfigRequest {
   }
   
   @scala.inline
-  implicit class CreateRealtimeLogConfigRequestOps[Self <: CreateRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRealtimeLogConfigRequestMutableBuilder[Self <: CreateRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPoints(value: EndPointList): Self = StObject.set(x, "EndPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndPointsVarargs(value: EndPoint*): Self = StObject.set(x, "EndPoints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: FieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPointsVarargs(value: EndPoint*): Self = this.set("EndPoints", js.Array(value :_*))
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "Fields", js.Array(value :_*))
     
     @scala.inline
-    def setEndPoints(value: EndPointList): Self = this.set("EndPoints", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("Fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: FieldList): Self = this.set("Fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSamplingRate(value: long): Self = this.set("SamplingRate", value.asInstanceOf[js.Any])
+    def setSamplingRate(value: long): Self = StObject.set(x, "SamplingRate", value.asInstanceOf[js.Any])
   }
 }

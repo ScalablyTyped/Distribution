@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolverEndpoint extends js.Object {
+trait ResolverEndpoint extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) for the Resolver endpoint.
@@ -76,93 +77,81 @@ object ResolverEndpoint {
   }
   
   @scala.inline
-  implicit class ResolverEndpointOps[Self <: ResolverEndpoint] (val x: Self) extends AnyVal {
+  implicit class ResolverEndpointMutableBuilder[Self <: ResolverEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Rfc3339TimeString): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setCreatorRequestId(value: CreatorRequestId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Rfc3339TimeString): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setDirection(value: ResolverEndpointDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorRequestId(value: CreatorRequestId): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "Direction", js.undefined)
     
     @scala.inline
-    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    def setHostVPCId(value: ResourceId): Self = StObject.set(x, "HostVPCId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: ResolverEndpointDirection): Self = this.set("Direction", value.asInstanceOf[js.Any])
+    def setHostVPCIdUndefined: Self = StObject.set(x, "HostVPCId", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("Direction", js.undefined)
+    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostVPCId(value: ResourceId): Self = this.set("HostVPCId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteHostVPCId: Self = this.set("HostVPCId", js.undefined)
+    def setIpAddressCount(value: IpAddressCount): Self = StObject.set(x, "IpAddressCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ResourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setIpAddressCountUndefined: Self = StObject.set(x, "IpAddressCount", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setModificationTime(value: Rfc3339TimeString): Self = StObject.set(x, "ModificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddressCount(value: IpAddressCount): Self = this.set("IpAddressCount", value.asInstanceOf[js.Any])
+    def setModificationTimeUndefined: Self = StObject.set(x, "ModificationTime", js.undefined)
     
     @scala.inline
-    def deleteIpAddressCount: Self = this.set("IpAddressCount", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModificationTime(value: Rfc3339TimeString): Self = this.set("ModificationTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteModificationTime: Self = this.set("ModificationTime", js.undefined)
+    def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSecurityGroupIdsVarargs(value: ResourceId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupIdsVarargs(value: ResourceId*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    def setStatus(value: ResolverEndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIds(value: SecurityGroupIds): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: ResolverEndpointStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

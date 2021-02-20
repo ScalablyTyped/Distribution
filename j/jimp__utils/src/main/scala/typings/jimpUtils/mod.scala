@@ -5,17 +5,22 @@ import typings.jimpUtils.jimpUtilsBooleans.`true`
 import typings.std.Error
 import typings.std.Omit
 import typings.typescript.mod.ThrowStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jimp/utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@jimp/utils", "isNodePattern")
+  @js.native
   def isNodePattern(cb: js.Function): `true` = js.native
+  @JSImport("@jimp/utils", "isNodePattern")
+  @js.native
   def isNodePattern(cb: Omit[_, js.Function]): `false` = js.native
   
+  @JSImport("@jimp/utils", "scan")
+  @js.native
   def scan(
     image: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Image */ js.Any,
     x: Double,
@@ -31,8 +36,16 @@ object mod extends js.Object {
     ]
   ): js.Any = js.native
   
+  @JSImport("@jimp/utils", "throwError")
+  @js.native
   def throwError(error: String): ThrowStatement = js.native
+  @JSImport("@jimp/utils", "throwError")
+  @js.native
   def throwError(error: String, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = js.native
+  @JSImport("@jimp/utils", "throwError")
+  @js.native
   def throwError(error: Error): ThrowStatement = js.native
+  @JSImport("@jimp/utils", "throwError")
+  @js.native
   def throwError(error: Error, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = js.native
 }

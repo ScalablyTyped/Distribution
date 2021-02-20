@@ -3,6 +3,7 @@ package typings.std
 import typings.std.stdStrings.controllerchange
 import typings.std.stdStrings.message
 import typings.std.stdStrings.messageerror
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

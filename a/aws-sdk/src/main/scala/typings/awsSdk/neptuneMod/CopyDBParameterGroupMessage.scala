@@ -1,11 +1,12 @@
 package typings.awsSdk.neptuneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyDBParameterGroupMessage extends js.Object {
+trait CopyDBParameterGroupMessage extends StObject {
   
   /**
     * The identifier or ARN for the source DB parameter group. For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN). Constraints:   Must specify a valid DB parameter group.   Must specify a valid DB parameter group identifier, for example my-db-param-group, or a valid ARN.  
@@ -40,36 +41,24 @@ object CopyDBParameterGroupMessage {
   }
   
   @scala.inline
-  implicit class CopyDBParameterGroupMessageOps[Self <: CopyDBParameterGroupMessage] (val x: Self) extends AnyVal {
+  implicit class CopyDBParameterGroupMessageMutableBuilder[Self <: CopyDBParameterGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceDBParameterGroupIdentifier(value: String): Self = StObject.set(x, "SourceDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def setSourceDBParameterGroupIdentifier(value: String): Self = this.set("SourceDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTargetDBParameterGroupDescription(value: String): Self = this.set("TargetDBParameterGroupDescription", value.asInstanceOf[js.Any])
+    def setTargetDBParameterGroupDescription(value: String): Self = StObject.set(x, "TargetDBParameterGroupDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetDBParameterGroupIdentifier(value: String): Self = this.set("TargetDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTargetDBParameterGroupIdentifier(value: String): Self = StObject.set(x, "TargetDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
   }
 }

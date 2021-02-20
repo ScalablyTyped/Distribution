@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridTemplateRowsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait GridTemplateRowsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The grid-template-rows CSS property defines the line names and track sizing functions of the grid rows.
@@ -23,30 +24,18 @@ object GridTemplateRowsProps {
   }
   
   @scala.inline
-  implicit class GridTemplateRowsPropsOps[Self <: GridTemplateRowsProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridTemplateRowsProps[ThemeType, TVal])) extends AnyVal {
+  implicit class GridTemplateRowsPropsMutableBuilder[Self <: GridTemplateRowsProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridTemplateRowsProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGridTemplateRows(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGridTemplateRowsNull: Self = StObject.set(x, "gridTemplateRows", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
     
     @scala.inline
-    def setGridTemplateRowsVarargs(value: (TVal | Null)*): Self = this.set("gridTemplateRows", js.Array(value :_*))
-    
-    @scala.inline
-    def setGridTemplateRows(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("gridTemplateRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridTemplateRows: Self = this.set("gridTemplateRows", js.undefined)
-    
-    @scala.inline
-    def setGridTemplateRowsNull: Self = this.set("gridTemplateRows", null)
+    def setGridTemplateRowsVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridTemplateRows", js.Array(value :_*))
   }
 }

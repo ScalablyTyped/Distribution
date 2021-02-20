@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Classifications extends js.Object {
+trait Classifications extends StObject {
   
   var endOfLineState: EndOfLineState = js.native
   
@@ -20,27 +21,15 @@ object Classifications {
   }
   
   @scala.inline
-  implicit class ClassificationsOps[Self <: Classifications] (val x: Self) extends AnyVal {
+  implicit class ClassificationsMutableBuilder[Self <: Classifications] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndOfLineState(value: EndOfLineState): Self = StObject.set(x, "endOfLineState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpans(value: js.Array[Double]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndOfLineState(value: EndOfLineState): Self = this.set("endOfLineState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpansVarargs(value: Double*): Self = this.set("spans", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpans(value: js.Array[Double]): Self = this.set("spans", value.asInstanceOf[js.Any])
+    def setSpansVarargs(value: Double*): Self = StObject.set(x, "spans", js.Array(value :_*))
   }
 }

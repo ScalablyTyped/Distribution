@@ -1,11 +1,12 @@
 package typings.ngCordova.ngCordova
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IToastService extends js.Object {
+trait IToastService extends StObject {
   
   def show(message: String, duration: String, position: String): js.Any = js.native
   
@@ -38,39 +39,27 @@ object IToastService {
   }
   
   @scala.inline
-  implicit class IToastServiceOps[Self <: IToastService] (val x: Self) extends AnyVal {
+  implicit class IToastServiceMutableBuilder[Self <: IToastService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShow(value: (String, String, String) => js.Any): Self = StObject.set(x, "show", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowLongBottom(value: String => js.Any): Self = StObject.set(x, "showLongBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowLongCenter(value: String => js.Any): Self = StObject.set(x, "showLongCenter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShow(value: (String, String, String) => js.Any): Self = this.set("show", js.Any.fromFunction3(value))
+    def setShowLongTop(value: String => js.Any): Self = StObject.set(x, "showLongTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowLongBottom(value: String => js.Any): Self = this.set("showLongBottom", js.Any.fromFunction1(value))
+    def setShowShortBottom(value: String => js.Any): Self = StObject.set(x, "showShortBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowLongCenter(value: String => js.Any): Self = this.set("showLongCenter", js.Any.fromFunction1(value))
+    def setShowShortCenter(value: String => js.Any): Self = StObject.set(x, "showShortCenter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowLongTop(value: String => js.Any): Self = this.set("showLongTop", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowShortBottom(value: String => js.Any): Self = this.set("showShortBottom", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowShortCenter(value: String => js.Any): Self = this.set("showShortCenter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowShortTop(value: String => js.Any): Self = this.set("showShortTop", js.Any.fromFunction1(value))
+    def setShowShortTop(value: String => js.Any): Self = StObject.set(x, "showShortTop", js.Any.fromFunction1(value))
   }
 }

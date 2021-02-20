@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * google.bigtable.admin.v2.BigtableTableAdmin.ModifyColumnFamilies
   */
 @js.native
-trait SchemaModifyColumnFamiliesRequest extends js.Object {
+trait SchemaModifyColumnFamiliesRequest extends StObject {
   
   /**
     * Modifications to be atomically applied to the specified table&#39;s
@@ -28,27 +29,15 @@ object SchemaModifyColumnFamiliesRequest {
   }
   
   @scala.inline
-  implicit class SchemaModifyColumnFamiliesRequestOps[Self <: SchemaModifyColumnFamiliesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaModifyColumnFamiliesRequestMutableBuilder[Self <: SchemaModifyColumnFamiliesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModifications(value: js.Array[SchemaModification]): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModificationsVarargs(value: SchemaModification*): Self = this.set("modifications", js.Array(value :_*))
-    
-    @scala.inline
-    def setModifications(value: js.Array[SchemaModification]): Self = this.set("modifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifications: Self = this.set("modifications", js.undefined)
+    def setModificationsVarargs(value: SchemaModification*): Self = StObject.set(x, "modifications", js.Array(value :_*))
   }
 }

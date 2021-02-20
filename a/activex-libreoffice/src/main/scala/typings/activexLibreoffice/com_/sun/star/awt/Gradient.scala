@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the colors and what "intensity" means.
   */
 @js.native
-trait Gradient extends js.Object {
+trait Gradient extends StObject {
   
   /** angle of the gradient in 1/10 degree. */
   var Angle: Double = js.native
@@ -65,48 +66,36 @@ object Gradient {
   }
   
   @scala.inline
-  implicit class GradientOps[Self <: Gradient] (val x: Self) extends AnyVal {
+  implicit class GradientMutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndColor(value: Color): Self = StObject.set(x, "EndColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("Angle", value.asInstanceOf[js.Any])
+    def setEndIntensity(value: Double): Self = StObject.set(x, "EndIntensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: Double): Self = this.set("Border", value.asInstanceOf[js.Any])
+    def setStartColor(value: Color): Self = StObject.set(x, "StartColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColor(value: Color): Self = this.set("EndColor", value.asInstanceOf[js.Any])
+    def setStartIntensity(value: Double): Self = StObject.set(x, "StartIntensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIntensity(value: Double): Self = this.set("EndIntensity", value.asInstanceOf[js.Any])
+    def setStepCount(value: Double): Self = StObject.set(x, "StepCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColor(value: Color): Self = this.set("StartColor", value.asInstanceOf[js.Any])
+    def setStyle(value: GradientStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIntensity(value: Double): Self = this.set("StartIntensity", value.asInstanceOf[js.Any])
+    def setXOffset(value: Double): Self = StObject.set(x, "XOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepCount(value: Double): Self = this.set("StepCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: GradientStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXOffset(value: Double): Self = this.set("XOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYOffset(value: Double): Self = this.set("YOffset", value.asInstanceOf[js.Any])
+    def setYOffset(value: Double): Self = StObject.set(x, "YOffset", value.asInstanceOf[js.Any])
   }
 }

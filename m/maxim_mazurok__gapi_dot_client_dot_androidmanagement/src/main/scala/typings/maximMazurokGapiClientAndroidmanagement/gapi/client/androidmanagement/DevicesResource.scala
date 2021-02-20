@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientAndroidmanagement.anon.Key
 import typings.maximMazurokGapiClientAndroidmanagement.anon.Name
 import typings.maximMazurokGapiClientAndroidmanagement.anon.Oauthtoken
 import typings.maximMazurokGapiClientAndroidmanagement.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevicesResource extends js.Object {
+trait DevicesResource extends StObject {
   
   /** Deletes a device. This operation wipes the device. */
   def delete(): Request[js.Object] = js.native

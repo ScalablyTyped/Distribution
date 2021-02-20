@@ -3,6 +3,7 @@ package typings.oracleOraclejet.ojthematicmapMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.off
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,81 +42,69 @@ object ojThematicMapAreaSettablePropertiesLenient {
   }
   
   @scala.inline
-  implicit class ojThematicMapAreaSettablePropertiesLenientOps[Self <: ojThematicMapAreaSettablePropertiesLenient] (val x: Self) extends AnyVal {
+  implicit class ojThematicMapAreaSettablePropertiesLenientMutableBuilder[Self <: ojThematicMapAreaSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: js.Object): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setSelectable(value: auto | off): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectable(value: auto | off): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
+    def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
     
     @scala.inline
-    def deleteShortDesc: Self = this.set("shortDesc", js.undefined)
+    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
-    
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
+    def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
   }
 }

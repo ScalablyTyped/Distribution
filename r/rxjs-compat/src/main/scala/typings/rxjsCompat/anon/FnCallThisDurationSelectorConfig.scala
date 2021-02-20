@@ -1,11 +1,12 @@
 package typings.rxjsCompat.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallThisDurationSelectorConfig extends js.Object {
+trait FnCallThisDurationSelectorConfig extends StObject {
   
   def apply[T](
     durationSelector: js.Function1[

@@ -1,5 +1,6 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBeautifulDnd.reactBeautifulDndStrings.FLUID
   - typings.reactBeautifulDnd.reactBeautifulDndStrings.SNAP
 */
-trait MovementMode extends js.Object
+trait MovementMode extends StObject
 object MovementMode {
   
   @scala.inline

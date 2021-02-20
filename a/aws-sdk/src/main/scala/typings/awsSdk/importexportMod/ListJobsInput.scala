@@ -1,11 +1,12 @@
 package typings.awsSdk.importexportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJobsInput extends js.Object {
+trait ListJobsInput extends StObject {
   
   var APIVersion: js.UndefOr[APIVersion_] = js.native
   
@@ -22,36 +23,24 @@ object ListJobsInput {
   }
   
   @scala.inline
-  implicit class ListJobsInputOps[Self <: ListJobsInput] (val x: Self) extends AnyVal {
+  implicit class ListJobsInputMutableBuilder[Self <: ListJobsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAPIVersionUndefined: Self = StObject.set(x, "APIVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPIVersion(value: APIVersion_): Self = this.set("APIVersion", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteAPIVersion: Self = this.set("APIVersion", js.undefined)
+    def setMaxJobs(value: MaxJobs): Self = StObject.set(x, "MaxJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setMaxJobs(value: MaxJobs): Self = this.set("MaxJobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxJobs: Self = this.set("MaxJobs", js.undefined)
+    def setMaxJobsUndefined: Self = StObject.set(x, "MaxJobs", js.undefined)
   }
 }

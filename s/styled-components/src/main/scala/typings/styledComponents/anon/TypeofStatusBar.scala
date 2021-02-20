@@ -1,17 +1,18 @@
 package typings.styledComponents.anon
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.StatusBar
 import typings.reactNative.mod.StatusBarAnimation
 import typings.reactNative.mod.StatusBarProps
 import typings.reactNative.mod.StatusBarStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofStatusBar extends Instantiable0[StatusBar] {
+trait TypeofStatusBar extends Instantiable1[/* props */ ReadonlyStatusBarProps, StatusBar] {
   
   /**
     * The current height of the status bar on the device.

@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Metrics extends js.Object {
+trait Metrics extends StObject {
   
   /** Number of documents in the page. */
   var Documents: Double = js.native
@@ -69,57 +70,45 @@ object Metrics {
   }
   
   @scala.inline
-  implicit class MetricsOps[Self <: Metrics] (val x: Self) extends AnyVal {
+  implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocuments(value: Double): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrames(value: Double): Self = StObject.set(x, "Frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJSEventListeners(value: Double): Self = StObject.set(x, "JSEventListeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocuments(value: Double): Self = this.set("Documents", value.asInstanceOf[js.Any])
+    def setJSHeapTotalSize(value: Double): Self = StObject.set(x, "JSHeapTotalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrames(value: Double): Self = this.set("Frames", value.asInstanceOf[js.Any])
+    def setJSHeapUsedSize(value: Double): Self = StObject.set(x, "JSHeapUsedSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJSEventListeners(value: Double): Self = this.set("JSEventListeners", value.asInstanceOf[js.Any])
+    def setLayoutCount(value: Double): Self = StObject.set(x, "LayoutCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJSHeapTotalSize(value: Double): Self = this.set("JSHeapTotalSize", value.asInstanceOf[js.Any])
+    def setLayoutDuration(value: Double): Self = StObject.set(x, "LayoutDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJSHeapUsedSize(value: Double): Self = this.set("JSHeapUsedSize", value.asInstanceOf[js.Any])
+    def setNodes(value: Double): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutCount(value: Double): Self = this.set("LayoutCount", value.asInstanceOf[js.Any])
+    def setRecalcStyleCount(value: Double): Self = StObject.set(x, "RecalcStyleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutDuration(value: Double): Self = this.set("LayoutDuration", value.asInstanceOf[js.Any])
+    def setRecalcStyleDuration(value: Double): Self = StObject.set(x, "RecalcStyleDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: Double): Self = this.set("Nodes", value.asInstanceOf[js.Any])
+    def setScriptDuration(value: Double): Self = StObject.set(x, "ScriptDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecalcStyleCount(value: Double): Self = this.set("RecalcStyleCount", value.asInstanceOf[js.Any])
+    def setTaskDuration(value: Double): Self = StObject.set(x, "TaskDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecalcStyleDuration(value: Double): Self = this.set("RecalcStyleDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptDuration(value: Double): Self = this.set("ScriptDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskDuration(value: Double): Self = this.set("TaskDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A known user.
   */
 @js.native
-trait SchemaKnownUser extends js.Object {
+trait SchemaKnownUser extends StObject {
   
   /**
     * True if this is the user making the request.
@@ -31,30 +32,18 @@ object SchemaKnownUser {
   }
   
   @scala.inline
-  implicit class SchemaKnownUserOps[Self <: SchemaKnownUser] (val x: Self) extends AnyVal {
+  implicit class SchemaKnownUserMutableBuilder[Self <: SchemaKnownUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCurrentUser(value: Boolean): Self = StObject.set(x, "isCurrentUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCurrentUserUndefined: Self = StObject.set(x, "isCurrentUser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPersonName(value: String): Self = StObject.set(x, "personName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCurrentUser(value: Boolean): Self = this.set("isCurrentUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsCurrentUser: Self = this.set("isCurrentUser", js.undefined)
-    
-    @scala.inline
-    def setPersonName(value: String): Self = this.set("personName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersonName: Self = this.set("personName", js.undefined)
+    def setPersonNameUndefined: Self = StObject.set(x, "personName", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.coinbaseCommerceNode.mod
 
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.asc
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.desc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @link https://commerce.coinbase.com/docs/api/#pagination
   */
 @js.native
-trait PaginationRequest extends js.Object {
+trait PaginationRequest extends StObject {
   
   /**
     * A cursor for use in pagination.
@@ -50,48 +51,36 @@ object PaginationRequest {
   }
   
   @scala.inline
-  implicit class PaginationRequestOps[Self <: PaginationRequest] (val x: Self) extends AnyVal {
+  implicit class PaginationRequestMutableBuilder[Self <: PaginationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnding_beforeNull: Self = StObject.set(x, "ending_before", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
     
     @scala.inline
-    def setEnding_before(value: String): Self = this.set("ending_before", value.asInstanceOf[js.Any])
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnding_before: Self = this.set("ending_before", js.undefined)
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def setEnding_beforeNull: Self = this.set("ending_before", null)
+    def setOrder(value: asc | desc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: asc | desc): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setStarting_afterNull: Self = StObject.set(x, "starting_after", null)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
-    
-    @scala.inline
-    def setStarting_after(value: String): Self = this.set("starting_after", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarting_after: Self = this.set("starting_after", js.undefined)
-    
-    @scala.inline
-    def setStarting_afterNull: Self = this.set("starting_after", null)
+    def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
   }
 }

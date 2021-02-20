@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +53,7 @@ object KmlIconStyle {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getColor: () => KmlColor,
     getColorMode: () => KmlColorModeEnum,
     getHeading: () => Double,
@@ -75,44 +76,33 @@ object KmlIconStyle {
     setIcon: KmlIcon => Unit,
     setScale: Double => Unit
   ): KmlIconStyle = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getColor = js.Any.fromFunction0(getColor), getColorMode = js.Any.fromFunction0(getColorMode), getHeading = js.Any.fromFunction0(getHeading), getHotSpot = js.Any.fromFunction0(getHotSpot), getIcon = js.Any.fromFunction0(getIcon), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getScale = js.Any.fromFunction0(getScale), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setColorMode = js.Any.fromFunction1(setColorMode), setHeading = js.Any.fromFunction1(setHeading), setIcon = js.Any.fromFunction1(setIcon), setScale = js.Any.fromFunction1(setScale))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getColor = js.Any.fromFunction0(getColor), getColorMode = js.Any.fromFunction0(getColorMode), getHeading = js.Any.fromFunction0(getHeading), getHotSpot = js.Any.fromFunction0(getHotSpot), getIcon = js.Any.fromFunction0(getIcon), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getScale = js.Any.fromFunction0(getScale), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setColorMode = js.Any.fromFunction1(setColorMode), setHeading = js.Any.fromFunction1(setHeading), setIcon = js.Any.fromFunction1(setIcon), setScale = js.Any.fromFunction1(setScale))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlIconStyle]
   }
   
   @scala.inline
-  implicit class KmlIconStyleOps[Self <: KmlIconStyle] (val x: Self) extends AnyVal {
+  implicit class KmlIconStyleMutableBuilder[Self <: KmlIconStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHeading(value: () => Double): Self = StObject.set(x, "getHeading", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHotSpot(value: () => KmlVec2): Self = StObject.set(x, "getHotSpot", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIcon(value: () => KmlIcon): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeading(value: () => Double): Self = this.set("getHeading", js.Any.fromFunction0(value))
+    def setGetScale(value: () => Double): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHotSpot(value: () => KmlVec2): Self = this.set("getHotSpot", js.Any.fromFunction0(value))
+    def setSetHeading(value: Double => Unit): Self = StObject.set(x, "setHeading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetIcon(value: () => KmlIcon): Self = this.set("getIcon", js.Any.fromFunction0(value))
+    def setSetIcon(value: KmlIcon => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScale(value: () => Double): Self = this.set("getScale", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetHeading(value: Double => Unit): Self = this.set("setHeading", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetIcon(value: KmlIcon => Unit): Self = this.set("setIcon", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetScale(value: Double => Unit): Self = this.set("setScale", js.Any.fromFunction1(value))
+    def setSetScale(value: Double => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction1(value))
   }
 }

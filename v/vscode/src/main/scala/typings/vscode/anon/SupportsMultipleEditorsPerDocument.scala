@@ -1,12 +1,13 @@
 package typings.vscode.anon
 
 import typings.vscode.mod.WebviewPanelOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SupportsMultipleEditorsPerDocument extends js.Object {
+trait SupportsMultipleEditorsPerDocument extends StObject {
   
   /**
     * Only applies to `CustomReadonlyEditorProvider | CustomEditorProvider`.
@@ -38,30 +39,18 @@ object SupportsMultipleEditorsPerDocument {
   }
   
   @scala.inline
-  implicit class SupportsMultipleEditorsPerDocumentOps[Self <: SupportsMultipleEditorsPerDocument] (val x: Self) extends AnyVal {
+  implicit class SupportsMultipleEditorsPerDocumentMutableBuilder[Self <: SupportsMultipleEditorsPerDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSupportsMultipleEditorsPerDocument(value: Boolean): Self = StObject.set(x, "supportsMultipleEditorsPerDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportsMultipleEditorsPerDocumentUndefined: Self = StObject.set(x, "supportsMultipleEditorsPerDocument", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWebviewOptions(value: WebviewPanelOptions): Self = StObject.set(x, "webviewOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsMultipleEditorsPerDocument(value: Boolean): Self = this.set("supportsMultipleEditorsPerDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsMultipleEditorsPerDocument: Self = this.set("supportsMultipleEditorsPerDocument", js.undefined)
-    
-    @scala.inline
-    def setWebviewOptions(value: WebviewPanelOptions): Self = this.set("webviewOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebviewOptions: Self = this.set("webviewOptions", js.undefined)
+    def setWebviewOptionsUndefined: Self = StObject.set(x, "webviewOptions", js.undefined)
   }
 }

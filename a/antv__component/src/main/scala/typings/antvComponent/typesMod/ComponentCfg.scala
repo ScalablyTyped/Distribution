@@ -1,5 +1,6 @@
 package typings.antvComponent.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,90 +105,78 @@ object ComponentCfg {
   }
   
   @scala.inline
-  implicit class ComponentCfgOps[Self <: ComponentCfg] (val x: Self) extends AnyVal {
+  implicit class ComponentCfgMutableBuilder[Self <: ComponentCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateOption(value: AnimateOption): Self = StObject.set(x, "animateOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimateOptionUndefined: Self = StObject.set(x, "animateOption", js.undefined)
     
     @scala.inline
-    def setLocationType(value: String): Self = this.set("LocationType", value.asInstanceOf[js.Any])
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def deleteLocationType: Self = this.set("LocationType", js.undefined)
+    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setDefaultCfg(value: js.Object): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateOption(value: AnimateOption): Self = this.set("animateOption", value.asInstanceOf[js.Any])
+    def setDefaultCfgUndefined: Self = StObject.set(x, "defaultCfg", js.undefined)
     
     @scala.inline
-    def deleteAnimateOption: Self = this.set("animateOption", js.undefined)
+    def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Boolean): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteCapture: Self = this.set("capture", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCfg(value: js.Object): Self = this.set("defaultCfg", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDefaultCfg: Self = this.set("defaultCfg", js.undefined)
+    def setLocationType(value: String): Self = StObject.set(x, "LocationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Object): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setLocationTypeUndefined: Self = StObject.set(x, "LocationType", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
     @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    def setUpdateAutoRender(value: Boolean): Self = StObject.set(x, "updateAutoRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUpdateAutoRender(value: Boolean): Self = this.set("updateAutoRender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateAutoRender: Self = this.set("updateAutoRender", js.undefined)
+    def setUpdateAutoRenderUndefined: Self = StObject.set(x, "updateAutoRender", js.undefined)
   }
 }

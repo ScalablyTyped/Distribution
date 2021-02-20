@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Proposal extends js.Object {
+trait Proposal extends StObject {
   
   /** Reference to the buyer that will get billed for this proposal. (readonly) */
   var billedBuyer: js.UndefOr[Buyer] = js.native
@@ -91,168 +92,156 @@ object Proposal {
   }
   
   @scala.inline
-  implicit class ProposalOps[Self <: Proposal] (val x: Self) extends AnyVal {
+  implicit class ProposalMutableBuilder[Self <: Proposal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilledBuyer(value: Buyer): Self = StObject.set(x, "billedBuyer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBilledBuyerUndefined: Self = StObject.set(x, "billedBuyer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuyer(value: Buyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilledBuyer(value: Buyer): Self = this.set("billedBuyer", value.asInstanceOf[js.Any])
+    def setBuyerContacts(value: js.Array[ContactInformation]): Self = StObject.set(x, "buyerContacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBilledBuyer: Self = this.set("billedBuyer", js.undefined)
+    def setBuyerContactsUndefined: Self = StObject.set(x, "buyerContacts", js.undefined)
     
     @scala.inline
-    def setBuyer(value: Buyer): Self = this.set("buyer", value.asInstanceOf[js.Any])
+    def setBuyerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "buyerContacts", js.Array(value :_*))
     
     @scala.inline
-    def deleteBuyer: Self = this.set("buyer", js.undefined)
+    def setBuyerPrivateData(value: PrivateData): Self = StObject.set(x, "buyerPrivateData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyerContactsVarargs(value: ContactInformation*): Self = this.set("buyerContacts", js.Array(value :_*))
+    def setBuyerPrivateDataUndefined: Self = StObject.set(x, "buyerPrivateData", js.undefined)
     
     @scala.inline
-    def setBuyerContacts(value: js.Array[ContactInformation]): Self = this.set("buyerContacts", value.asInstanceOf[js.Any])
+    def setBuyerUndefined: Self = StObject.set(x, "buyer", js.undefined)
     
     @scala.inline
-    def deleteBuyerContacts: Self = this.set("buyerContacts", js.undefined)
+    def setDbmAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "dbmAdvertiserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyerPrivateData(value: PrivateData): Self = this.set("buyerPrivateData", value.asInstanceOf[js.Any])
+    def setDbmAdvertiserIdsUndefined: Self = StObject.set(x, "dbmAdvertiserIds", js.undefined)
     
     @scala.inline
-    def deleteBuyerPrivateData: Self = this.set("buyerPrivateData", js.undefined)
+    def setDbmAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "dbmAdvertiserIds", js.Array(value :_*))
     
     @scala.inline
-    def setDbmAdvertiserIdsVarargs(value: String*): Self = this.set("dbmAdvertiserIds", js.Array(value :_*))
+    def setHasBuyerSignedOff(value: Boolean): Self = StObject.set(x, "hasBuyerSignedOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbmAdvertiserIds(value: js.Array[String]): Self = this.set("dbmAdvertiserIds", value.asInstanceOf[js.Any])
+    def setHasBuyerSignedOffUndefined: Self = StObject.set(x, "hasBuyerSignedOff", js.undefined)
     
     @scala.inline
-    def deleteDbmAdvertiserIds: Self = this.set("dbmAdvertiserIds", js.undefined)
+    def setHasSellerSignedOff(value: Boolean): Self = StObject.set(x, "hasSellerSignedOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBuyerSignedOff(value: Boolean): Self = this.set("hasBuyerSignedOff", value.asInstanceOf[js.Any])
+    def setHasSellerSignedOffUndefined: Self = StObject.set(x, "hasSellerSignedOff", js.undefined)
     
     @scala.inline
-    def deleteHasBuyerSignedOff: Self = this.set("hasBuyerSignedOff", js.undefined)
+    def setInventorySource(value: String): Self = StObject.set(x, "inventorySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSellerSignedOff(value: Boolean): Self = this.set("hasSellerSignedOff", value.asInstanceOf[js.Any])
+    def setInventorySourceUndefined: Self = StObject.set(x, "inventorySource", js.undefined)
     
     @scala.inline
-    def deleteHasSellerSignedOff: Self = this.set("hasSellerSignedOff", js.undefined)
+    def setIsRenegotiating(value: Boolean): Self = StObject.set(x, "isRenegotiating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventorySource(value: String): Self = this.set("inventorySource", value.asInstanceOf[js.Any])
+    def setIsRenegotiatingUndefined: Self = StObject.set(x, "isRenegotiating", js.undefined)
     
     @scala.inline
-    def deleteInventorySource: Self = this.set("inventorySource", js.undefined)
+    def setIsSetupComplete(value: Boolean): Self = StObject.set(x, "isSetupComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRenegotiating(value: Boolean): Self = this.set("isRenegotiating", value.asInstanceOf[js.Any])
+    def setIsSetupCompleteUndefined: Self = StObject.set(x, "isSetupComplete", js.undefined)
     
     @scala.inline
-    def deleteIsRenegotiating: Self = this.set("isRenegotiating", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSetupComplete(value: Boolean): Self = this.set("isSetupComplete", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIsSetupComplete: Self = this.set("isSetupComplete", js.undefined)
+    def setLabels(value: js.Array[MarketplaceLabel]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLabelsVarargs(value: MarketplaceLabel*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: MarketplaceLabel*): Self = this.set("labels", js.Array(value :_*))
+    def setLastUpdaterOrCommentorRole(value: String): Self = StObject.set(x, "lastUpdaterOrCommentorRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[MarketplaceLabel]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLastUpdaterOrCommentorRoleUndefined: Self = StObject.set(x, "lastUpdaterOrCommentorRole", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdaterOrCommentorRole(value: String): Self = this.set("lastUpdaterOrCommentorRole", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdaterOrCommentorRole: Self = this.set("lastUpdaterOrCommentorRole", js.undefined)
+    def setNegotiationId(value: String): Self = StObject.set(x, "negotiationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNegotiationIdUndefined: Self = StObject.set(x, "negotiationId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOriginatorRole(value: String): Self = StObject.set(x, "originatorRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegotiationId(value: String): Self = this.set("negotiationId", value.asInstanceOf[js.Any])
+    def setOriginatorRoleUndefined: Self = StObject.set(x, "originatorRole", js.undefined)
     
     @scala.inline
-    def deleteNegotiationId: Self = this.set("negotiationId", js.undefined)
+    def setPrivateAuctionId(value: String): Self = StObject.set(x, "privateAuctionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginatorRole(value: String): Self = this.set("originatorRole", value.asInstanceOf[js.Any])
+    def setPrivateAuctionIdUndefined: Self = StObject.set(x, "privateAuctionId", js.undefined)
     
     @scala.inline
-    def deleteOriginatorRole: Self = this.set("originatorRole", js.undefined)
+    def setProposalId(value: String): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateAuctionId(value: String): Self = this.set("privateAuctionId", value.asInstanceOf[js.Any])
+    def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
     
     @scala.inline
-    def deletePrivateAuctionId: Self = this.set("privateAuctionId", js.undefined)
+    def setProposalState(value: String): Self = StObject.set(x, "proposalState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposalId(value: String): Self = this.set("proposalId", value.asInstanceOf[js.Any])
+    def setProposalStateUndefined: Self = StObject.set(x, "proposalState", js.undefined)
     
     @scala.inline
-    def deleteProposalId: Self = this.set("proposalId", js.undefined)
+    def setRevisionNumber(value: String): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposalState(value: String): Self = this.set("proposalState", value.asInstanceOf[js.Any])
+    def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
     
     @scala.inline
-    def deleteProposalState: Self = this.set("proposalState", js.undefined)
+    def setRevisionTimeMs(value: String): Self = StObject.set(x, "revisionTimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionNumber(value: String): Self = this.set("revisionNumber", value.asInstanceOf[js.Any])
+    def setRevisionTimeMsUndefined: Self = StObject.set(x, "revisionTimeMs", js.undefined)
     
     @scala.inline
-    def deleteRevisionNumber: Self = this.set("revisionNumber", js.undefined)
+    def setSeller(value: Seller): Self = StObject.set(x, "seller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionTimeMs(value: String): Self = this.set("revisionTimeMs", value.asInstanceOf[js.Any])
+    def setSellerContacts(value: js.Array[ContactInformation]): Self = StObject.set(x, "sellerContacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRevisionTimeMs: Self = this.set("revisionTimeMs", js.undefined)
+    def setSellerContactsUndefined: Self = StObject.set(x, "sellerContacts", js.undefined)
     
     @scala.inline
-    def setSeller(value: Seller): Self = this.set("seller", value.asInstanceOf[js.Any])
+    def setSellerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "sellerContacts", js.Array(value :_*))
     
     @scala.inline
-    def deleteSeller: Self = this.set("seller", js.undefined)
-    
-    @scala.inline
-    def setSellerContactsVarargs(value: ContactInformation*): Self = this.set("sellerContacts", js.Array(value :_*))
-    
-    @scala.inline
-    def setSellerContacts(value: js.Array[ContactInformation]): Self = this.set("sellerContacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSellerContacts: Self = this.set("sellerContacts", js.undefined)
+    def setSellerUndefined: Self = StObject.set(x, "seller", js.undefined)
   }
 }

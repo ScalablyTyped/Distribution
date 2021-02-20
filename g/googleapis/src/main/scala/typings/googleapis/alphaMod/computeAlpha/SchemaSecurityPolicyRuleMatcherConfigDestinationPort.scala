@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSecurityPolicyRuleMatcherConfigDestinationPort extends js.Object {
+trait SchemaSecurityPolicyRuleMatcherConfigDestinationPort extends StObject {
   
   /**
     * The IP protocol to which this rule applies. The protocol type is required
@@ -34,33 +35,21 @@ object SchemaSecurityPolicyRuleMatcherConfigDestinationPort {
   }
   
   @scala.inline
-  implicit class SchemaSecurityPolicyRuleMatcherConfigDestinationPortOps[Self <: SchemaSecurityPolicyRuleMatcherConfigDestinationPort] (val x: Self) extends AnyVal {
+  implicit class SchemaSecurityPolicyRuleMatcherConfigDestinationPortMutableBuilder[Self <: SchemaSecurityPolicyRuleMatcherConfigDestinationPort] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpProtocol(value: String): Self = StObject.set(x, "ipProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpProtocolUndefined: Self = StObject.set(x, "ipProtocol", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPorts(value: js.Array[String]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpProtocol(value: String): Self = this.set("ipProtocol", value.asInstanceOf[js.Any])
+    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
     @scala.inline
-    def deleteIpProtocol: Self = this.set("ipProtocol", js.undefined)
-    
-    @scala.inline
-    def setPortsVarargs(value: String*): Self = this.set("ports", js.Array(value :_*))
-    
-    @scala.inline
-    def setPorts(value: js.Array[String]): Self = this.set("ports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePorts: Self = this.set("ports", js.undefined)
+    def setPortsVarargs(value: String*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

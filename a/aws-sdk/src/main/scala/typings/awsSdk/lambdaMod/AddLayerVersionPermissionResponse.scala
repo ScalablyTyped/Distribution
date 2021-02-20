@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddLayerVersionPermissionResponse extends js.Object {
+trait AddLayerVersionPermissionResponse extends StObject {
   
   /**
     * A unique identifier for the current revision of the policy.
@@ -26,30 +27,18 @@ object AddLayerVersionPermissionResponse {
   }
   
   @scala.inline
-  implicit class AddLayerVersionPermissionResponseOps[Self <: AddLayerVersionPermissionResponse] (val x: Self) extends AnyVal {
+  implicit class AddLayerVersionPermissionResponseMutableBuilder[Self <: AddLayerVersionPermissionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatement(value: String): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: String): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
-    
-    @scala.inline
-    def setStatement(value: String): Self = this.set("Statement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatement: Self = this.set("Statement", js.undefined)
+    def setStatementUndefined: Self = StObject.set(x, "Statement", js.undefined)
   }
 }

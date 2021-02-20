@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * fire when they need to.
   */
 @js.native
-trait IFormHelper extends js.Object {
+trait IFormHelper extends StObject {
   
   /**
     * @ngdoc function
@@ -86,30 +87,18 @@ object IFormHelper {
   }
   
   @scala.inline
-  implicit class IFormHelperOps[Self <: IFormHelper] (val x: Self) extends AnyVal {
+  implicit class IFormHelperMutableBuilder[Self <: IFormHelper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandleError(value: js.Object => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleServerValidation(value: IModelState => Unit): Self = StObject.set(x, "handleServerValidation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResetForm(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "resetForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandleError(value: js.Object => Unit): Self = this.set("handleError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHandleServerValidation(value: IModelState => Unit): Self = this.set("handleServerValidation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResetForm(value: /* repeated */ js.Any => Unit): Self = this.set("resetForm", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubmitForm(value: /* repeated */ js.Any => Unit): Self = this.set("submitForm", js.Any.fromFunction1(value))
+    def setSubmitForm(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
   }
 }

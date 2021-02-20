@@ -2,12 +2,13 @@ package typings.activexMsforms.MSForms
 
 import typings.activexStdole.stdole.StdPicture
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComboBox extends js.Object {
+trait ComboBox extends StObject {
   
   def AddItem(): Unit = js.native
   def AddItem(pvargItem: js.UndefOr[scala.Nothing], pvargIndex: Double): Unit = js.native

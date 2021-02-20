@@ -1,10 +1,22 @@
 package typings.elasticlunr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
+  @scala.inline
+  def apply[T](): typings.elasticlunr.mod.Index[T] = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.elasticlunr.mod.Index[T]]
+  @scala.inline
+  def apply[T](
+    config: js.ThisFunction1[
+      /* this */ typings.elasticlunr.mod.Index[T], 
+      /* idx */ typings.elasticlunr.mod.Index[T], 
+      scala.Unit
+    ]
+  ): typings.elasticlunr.mod.Index[T] = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.elasticlunr.mod.Index[T]]
   
   type DocumentReference = java.lang.String | scala.Double
   
@@ -30,4 +42,16 @@ package object mod {
   type SearchScores = org.scalablytyped.runtime.StringDictionary[scala.Double]
   
   type SerialisedPipeline = js.Array[java.lang.String]
+  
+  @scala.inline
+  def addStopWords(words: js.Array[java.lang.String]): scala.Unit = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addStopWords")(words.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def clearStopWords(): scala.Unit = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearStopWords")().asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def resetStopWords(): scala.Unit = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetStopWords")().asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def version: java.lang.String = typings.elasticlunr.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
 }

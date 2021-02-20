@@ -2,12 +2,13 @@ package typings.c3.mod
 
 import typings.c3.c3Strings.dashed
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionOptions extends js.Object {
+trait RegionOptions extends StObject {
   
   /**
     * The axis on which `start` and `end` values lie.
@@ -71,78 +72,66 @@ object RegionOptions {
   }
   
   @scala.inline
-  implicit class RegionOptionsOps[Self <: RegionOptions] (val x: Self) extends AnyVal {
+  implicit class RegionOptionsMutableBuilder[Self <: RegionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: AxisName): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: AxisName): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setEnd(value: String | Double | Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: String | Double | Date): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingX(value: Double): Self = this.set("paddingX", value.asInstanceOf[js.Any])
+    def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
     @scala.inline
-    def deletePaddingX: Self = this.set("paddingX", js.undefined)
+    def setStart(value: String | Double | Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingY(value: Double): Self = this.set("paddingY", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deletePaddingY: Self = this.set("paddingY", js.undefined)
+    def setStyle(value: dashed): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: String | Double | Date): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: dashed): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

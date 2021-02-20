@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CachedResource extends js.Object {
+trait CachedResource extends StObject {
   
   /**
     * Cached response body size.
@@ -37,33 +38,21 @@ object CachedResource {
   }
   
   @scala.inline
-  implicit class CachedResourceOps[Self <: CachedResource] (val x: Self) extends AnyVal {
+  implicit class CachedResourceMutableBuilder[Self <: CachedResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def setBodySize(value: Double): Self = this.set("bodySize", value.asInstanceOf[js.Any])
+    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ResourceType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: Response): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

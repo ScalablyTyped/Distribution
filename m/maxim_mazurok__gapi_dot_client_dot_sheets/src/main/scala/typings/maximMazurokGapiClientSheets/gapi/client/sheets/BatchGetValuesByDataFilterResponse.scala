@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetValuesByDataFilterResponse extends js.Object {
+trait BatchGetValuesByDataFilterResponse extends StObject {
   
   /** The ID of the spreadsheet the data was retrieved from. */
   var spreadsheetId: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object BatchGetValuesByDataFilterResponse {
   }
   
   @scala.inline
-  implicit class BatchGetValuesByDataFilterResponseOps[Self <: BatchGetValuesByDataFilterResponse] (val x: Self) extends AnyVal {
+  implicit class BatchGetValuesByDataFilterResponseMutableBuilder[Self <: BatchGetValuesByDataFilterResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueRanges(value: js.Array[MatchedValueRange]): Self = StObject.set(x, "valueRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
+    def setValueRangesUndefined: Self = StObject.set(x, "valueRanges", js.undefined)
     
     @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
-    
-    @scala.inline
-    def setValueRangesVarargs(value: MatchedValueRange*): Self = this.set("valueRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setValueRanges(value: js.Array[MatchedValueRange]): Self = this.set("valueRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueRanges: Self = this.set("valueRanges", js.undefined)
+    def setValueRangesVarargs(value: MatchedValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value :_*))
   }
 }

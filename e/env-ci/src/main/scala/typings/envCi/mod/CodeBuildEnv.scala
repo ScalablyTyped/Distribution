@@ -3,6 +3,7 @@ package typings.envCi.mod
 import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.`AWS CodeBuild`
 import typings.envCi.envCiStrings.codebuild
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,39 +45,27 @@ object CodeBuildEnv {
   }
   
   @scala.inline
-  implicit class CodeBuildEnvOps[Self <: CodeBuildEnv] (val x: Self) extends AnyVal {
+  implicit class CodeBuildEnvMutableBuilder[Self <: CodeBuildEnv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildUrl(value: String): Self = StObject.set(x, "buildUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: String): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setName(value: `AWS CodeBuild`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildUrl(value: String): Self = this.set("buildUrl", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit(value: String): Self = this.set("commit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: `AWS CodeBuild`): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setService(value: codebuild): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setService(value: codebuild): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
   }
 }

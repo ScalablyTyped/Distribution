@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IssuesUpdateLabelEndpoint extends js.Object {
+trait IssuesUpdateLabelEndpoint extends StObject {
   
   /**
     * The [hexadecimal color code](http://www.color-hex.com/) for the label, without the leading `#`.
@@ -37,45 +38,33 @@ object IssuesUpdateLabelEndpoint {
   }
   
   @scala.inline
-  implicit class IssuesUpdateLabelEndpointOps[Self <: IssuesUpdateLabelEndpoint] (val x: Self) extends AnyVal {
+  implicit class IssuesUpdateLabelEndpointMutableBuilder[Self <: IssuesUpdateLabelEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setNew_name(value: String): Self = StObject.set(x, "new_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setNew_nameUndefined: Self = StObject.set(x, "new_name", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setNew_name(value: String): Self = this.set("new_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNew_name: Self = this.set("new_name", js.undefined)
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

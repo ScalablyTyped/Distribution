@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminListDevicesRequest extends js.Object {
+trait AdminListDevicesRequest extends StObject {
   
   /**
     * The limit of the devices request.
@@ -36,36 +37,24 @@ object AdminListDevicesRequest {
   }
   
   @scala.inline
-  implicit class AdminListDevicesRequestOps[Self <: AdminListDevicesRequest] (val x: Self) extends AnyVal {
+  implicit class AdminListDevicesRequestMutableBuilder[Self <: AdminListDevicesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: QueryLimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaginationToken(value: SearchPaginationTokenType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
     @scala.inline
-    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: QueryLimitType): Self = this.set("Limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
-    
-    @scala.inline
-    def setPaginationToken(value: SearchPaginationTokenType): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

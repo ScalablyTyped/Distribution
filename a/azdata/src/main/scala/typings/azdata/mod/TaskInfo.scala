@@ -1,12 +1,13 @@
 package typings.azdata.mod
 
 import typings.azdata.mod.connection.Connection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskInfo extends js.Object {
+trait TaskInfo extends StObject {
   
   var connection: js.UndefOr[Connection] = js.native
   
@@ -47,51 +48,39 @@ object TaskInfo {
   }
   
   @scala.inline
-  implicit class TaskInfoOps[Self <: TaskInfo] (val x: Self) extends AnyVal {
+  implicit class TaskInfoMutableBuilder[Self <: TaskInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIsCancelable(value: Boolean): Self = StObject.set(x, "isCancelable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCancelable(value: Boolean): Self = this.set("isCancelable", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderName(value: String): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    def setServerName(value: String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: String): Self = this.set("serverName", value.asInstanceOf[js.Any])
+    def setStatus(value: TaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TaskStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTaskExecutionMode(value: TaskExecutionMode): Self = StObject.set(x, "taskExecutionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskExecutionMode(value: TaskExecutionMode): Self = this.set("taskExecutionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskId(value: String): Self = this.set("taskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnection(value: Connection): Self = this.set("connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnection: Self = this.set("connection", js.undefined)
+    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceManagedByIgmErrorInstanceActionDetails extends js.Object {
+trait InstanceManagedByIgmErrorInstanceActionDetails extends StObject {
   
   /** [Output Only] Action that managed instance group was executing on the instance when the error occurred. Possible values: */
   var action: js.UndefOr[String] = js.native
@@ -28,36 +29,24 @@ object InstanceManagedByIgmErrorInstanceActionDetails {
   }
   
   @scala.inline
-  implicit class InstanceManagedByIgmErrorInstanceActionDetailsOps[Self <: InstanceManagedByIgmErrorInstanceActionDetails] (val x: Self) extends AnyVal {
+  implicit class InstanceManagedByIgmErrorInstanceActionDetailsMutableBuilder[Self <: InstanceManagedByIgmErrorInstanceActionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setVersion(value: ManagedInstanceVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: ManagedInstanceVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

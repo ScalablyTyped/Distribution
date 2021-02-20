@@ -1,13 +1,14 @@
 package typings.web3CoreHelpers.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core-helpers", "HttpProviderBase")
 @js.native
-class HttpProviderBase protected () extends js.Object {
+class HttpProviderBase protected () extends StObject {
   def this(host: String) = this()
   def this(host: String, options: HttpProviderOptions) = this()
   

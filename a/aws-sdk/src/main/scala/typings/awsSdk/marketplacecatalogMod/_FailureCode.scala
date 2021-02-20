@@ -1,7 +1,8 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _FailureCode extends js.Object
+trait _FailureCode extends StObject

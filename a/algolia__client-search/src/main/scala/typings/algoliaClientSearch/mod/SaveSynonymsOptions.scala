@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SaveSynonymsOptions extends js.Object {
+trait SaveSynonymsOptions extends StObject {
   
   /**
     * If the existing synonyms should be removed.
@@ -32,36 +33,24 @@ object SaveSynonymsOptions {
   }
   
   @scala.inline
-  implicit class SaveSynonymsOptionsOps[Self <: SaveSynonymsOptions] (val x: Self) extends AnyVal {
+  implicit class SaveSynonymsOptionsMutableBuilder[Self <: SaveSynonymsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearExistingSynonyms(value: Boolean): Self = StObject.set(x, "clearExistingSynonyms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearExistingSynonymsUndefined: Self = StObject.set(x, "clearExistingSynonyms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearExistingSynonyms(value: Boolean): Self = this.set("clearExistingSynonyms", value.asInstanceOf[js.Any])
+    def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
     
     @scala.inline
-    def deleteClearExistingSynonyms: Self = this.set("clearExistingSynonyms", js.undefined)
+    def setReplaceExistingSynonyms(value: Boolean): Self = StObject.set(x, "replaceExistingSynonyms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardToReplicas(value: Boolean): Self = this.set("forwardToReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForwardToReplicas: Self = this.set("forwardToReplicas", js.undefined)
-    
-    @scala.inline
-    def setReplaceExistingSynonyms(value: Boolean): Self = this.set("replaceExistingSynonyms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceExistingSynonyms: Self = this.set("replaceExistingSynonyms", js.undefined)
+    def setReplaceExistingSynonymsUndefined: Self = StObject.set(x, "replaceExistingSynonyms", js.undefined)
   }
 }

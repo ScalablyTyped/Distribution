@@ -6,6 +6,7 @@ import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Input.Pointer
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the `options` object on creation.
   */
 @js.native
-trait PointerConstraint extends js.Object {
+trait PointerConstraint extends StObject {
   
   /**
     * Is this Constraint active or not?
@@ -151,66 +152,54 @@ object PointerConstraint {
   }
   
   @scala.inline
-  implicit class PointerConstraintOps[Self <: PointerConstraint] (val x: Self) extends AnyVal {
+  implicit class PointerConstraintMutableBuilder[Self <: PointerConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setConstraint(value: ConstraintType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: BodyType): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCamera(value: Camera): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setGetBody(value: () => Boolean): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConstraint(value: ConstraintType): Self = this.set("constraint", value.asInstanceOf[js.Any])
+    def setHitTestBody(value: (BodyType, Vector2) => Boolean): Self = StObject.set(x, "hitTestBody", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setOnDown(value: Pointer => Unit): Self = StObject.set(x, "onDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBody(value: () => Boolean): Self = this.set("getBody", js.Any.fromFunction0(value))
+    def setOnUp(value: Pointer => Unit): Self = StObject.set(x, "onUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHitTestBody(value: (BodyType, Vector2) => Boolean): Self = this.set("hitTestBody", js.Any.fromFunction2(value))
+    def setPart(value: BodyType): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDown(value: Pointer => Unit): Self = this.set("onDown", js.Any.fromFunction1(value))
+    def setPointer(value: Pointer): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUp(value: Pointer => Unit): Self = this.set("onUp", js.Any.fromFunction1(value))
+    def setPosition(value: Vector2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPart(value: BodyType): Self = this.set("part", value.asInstanceOf[js.Any])
+    def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointer(value: Pointer): Self = this.set("pointer", value.asInstanceOf[js.Any])
+    def setStopDrag(value: () => Unit): Self = StObject.set(x, "stopDrag", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPosition(value: Vector2): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScene(value: Scene): Self = this.set("scene", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopDrag(value: () => Unit): Self = this.set("stopDrag", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWorld(value: World): Self = this.set("world", value.asInstanceOf[js.Any])
+    def setWorld(value: World): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
   }
 }

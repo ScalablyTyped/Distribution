@@ -1,11 +1,12 @@
 package typings.slonik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InterceptorType extends js.Object {
+trait InterceptorType extends StObject {
   
   var afterPoolConnection: js.UndefOr[
     js.Function2[
@@ -92,94 +93,82 @@ object InterceptorType {
   }
   
   @scala.inline
-  implicit class InterceptorTypeOps[Self <: InterceptorType] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class InterceptorTypeMutableBuilder[Self <: InterceptorType] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAfterPoolConnection(
       value: (/* connectionContext */ ConnectionContextType, /* connection */ DatabasePoolConnectionType) => MaybePromiseType[Null]
-    ): Self = this.set("afterPoolConnection", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "afterPoolConnection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteAfterPoolConnection: Self = this.set("afterPoolConnection", js.undefined)
+    def setAfterPoolConnectionUndefined: Self = StObject.set(x, "afterPoolConnection", js.undefined)
     
     @scala.inline
     def setAfterQueryExecution(
       value: (/* queryContext */ QueryContextType, /* query */ QueryType, /* result */ QueryResultType[QueryResultRowType[String]]) => MaybePromiseType[Null]
-    ): Self = this.set("afterQueryExecution", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "afterQueryExecution", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteAfterQueryExecution: Self = this.set("afterQueryExecution", js.undefined)
+    def setAfterQueryExecutionUndefined: Self = StObject.set(x, "afterQueryExecution", js.undefined)
     
     @scala.inline
     def setBeforePoolConnection(
       value: /* connectionContext */ PoolContextType => MaybePromiseType[js.UndefOr[DatabasePoolType | Null]]
-    ): Self = this.set("beforePoolConnection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteBeforePoolConnection: Self = this.set("beforePoolConnection", js.undefined)
+    ): Self = StObject.set(x, "beforePoolConnection", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforePoolConnectionRelease(
       value: (/* connectionContext */ ConnectionContextType, /* connection */ DatabasePoolConnectionType) => MaybePromiseType[Null]
-    ): Self = this.set("beforePoolConnectionRelease", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "beforePoolConnectionRelease", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteBeforePoolConnectionRelease: Self = this.set("beforePoolConnectionRelease", js.undefined)
+    def setBeforePoolConnectionReleaseUndefined: Self = StObject.set(x, "beforePoolConnectionRelease", js.undefined)
+    
+    @scala.inline
+    def setBeforePoolConnectionUndefined: Self = StObject.set(x, "beforePoolConnection", js.undefined)
     
     @scala.inline
     def setBeforeQueryExecution(
       value: (/* queryContext */ QueryContextType, /* query */ QueryType) => MaybePromiseType[QueryResultType[QueryResultRowType[String]] | Null]
-    ): Self = this.set("beforeQueryExecution", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "beforeQueryExecution", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteBeforeQueryExecution: Self = this.set("beforeQueryExecution", js.undefined)
+    def setBeforeQueryExecutionUndefined: Self = StObject.set(x, "beforeQueryExecution", js.undefined)
     
     @scala.inline
     def setBeforeQueryResult(
       value: (/* queryContext */ QueryContextType, /* query */ QueryType, /* result */ QueryResultType[QueryResultRowType[String]]) => MaybePromiseType[Null]
-    ): Self = this.set("beforeQueryResult", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "beforeQueryResult", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteBeforeQueryResult: Self = this.set("beforeQueryResult", js.undefined)
+    def setBeforeQueryResultUndefined: Self = StObject.set(x, "beforeQueryResult", js.undefined)
     
     @scala.inline
-    def setBeforeTransformQuery(value: (/* queryContext */ QueryContextType, /* query */ QueryType) => MaybePromiseType[Null]): Self = this.set("beforeTransformQuery", js.Any.fromFunction2(value))
+    def setBeforeTransformQuery(value: (/* queryContext */ QueryContextType, /* query */ QueryType) => MaybePromiseType[Null]): Self = StObject.set(x, "beforeTransformQuery", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteBeforeTransformQuery: Self = this.set("beforeTransformQuery", js.undefined)
+    def setBeforeTransformQueryUndefined: Self = StObject.set(x, "beforeTransformQuery", js.undefined)
     
     @scala.inline
     def setQueryExecutionError(
       value: (/* queryContext */ QueryContextType, /* query */ QueryType, /* error */ SlonikError) => MaybePromiseType[Null]
-    ): Self = this.set("queryExecutionError", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "queryExecutionError", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteQueryExecutionError: Self = this.set("queryExecutionError", js.undefined)
+    def setQueryExecutionErrorUndefined: Self = StObject.set(x, "queryExecutionError", js.undefined)
     
     @scala.inline
-    def setTransformQuery(value: (/* queryContext */ QueryContextType, /* query */ QueryType) => QueryType): Self = this.set("transformQuery", js.Any.fromFunction2(value))
+    def setTransformQuery(value: (/* queryContext */ QueryContextType, /* query */ QueryType) => QueryType): Self = StObject.set(x, "transformQuery", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteTransformQuery: Self = this.set("transformQuery", js.undefined)
+    def setTransformQueryUndefined: Self = StObject.set(x, "transformQuery", js.undefined)
     
     @scala.inline
     def setTransformRow(
       value: (/* queryContext */ QueryContextType, /* query */ QueryType, /* row */ QueryResultRowType[String], /* fields */ js.Array[FieldType]) => QueryResultRowType[String]
-    ): Self = this.set("transformRow", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "transformRow", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteTransformRow: Self = this.set("transformRow", js.undefined)
+    def setTransformRowUndefined: Self = StObject.set(x, "transformRow", js.undefined)
   }
 }

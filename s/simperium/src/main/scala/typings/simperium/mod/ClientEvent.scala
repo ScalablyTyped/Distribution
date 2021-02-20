@@ -4,6 +4,7 @@ import typings.simperium.simperiumNumbers.`0`
 import typings.simperium.simperiumNumbers.`1`
 import typings.simperium.simperiumNumbers.`2`
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

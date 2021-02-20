@@ -4,6 +4,7 @@ import typings.officeJs.Office.MailboxEnums.OWAView
 import typings.officeJs.officeJsStrings.OneColumn
 import typings.officeJs.officeJsStrings.ThreeColumns
 import typings.officeJs.officeJsStrings.TwoColumns
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
-trait Diagnostics extends js.Object {
+trait Diagnostics extends StObject {
   
   /**
     * Gets a string that represents the current view of Outlook on the web.
@@ -83,27 +84,15 @@ object Diagnostics {
   }
   
   @scala.inline
-  implicit class DiagnosticsOps[Self <: Diagnostics] (val x: Self) extends AnyVal {
+  implicit class DiagnosticsMutableBuilder[Self <: Diagnostics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostVersion(value: String): Self = StObject.set(x, "hostVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOWAView(value: OWAView | OneColumn | TwoColumns | ThreeColumns): Self = this.set("OWAView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostName(value: String): Self = this.set("hostName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostVersion(value: String): Self = this.set("hostVersion", value.asInstanceOf[js.Any])
+    def setOWAView(value: OWAView | OneColumn | TwoColumns | ThreeColumns): Self = StObject.set(x, "OWAView", value.asInstanceOf[js.Any])
   }
 }

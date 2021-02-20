@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeRange extends js.Object {
+trait TimeRange extends StObject {
   
   // End time for the time range.
   var endTime: js.UndefOr[NullableOption[String]] = js.native
@@ -22,36 +23,24 @@ object TimeRange {
   }
   
   @scala.inline
-  implicit class TimeRangeOps[Self <: TimeRange] (val x: Self) extends AnyVal {
+  implicit class TimeRangeMutableBuilder[Self <: TimeRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: NullableOption[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeNull: Self = StObject.set(x, "endTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def setEndTime(value: NullableOption[String]): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: NullableOption[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setStartTimeNull: Self = StObject.set(x, "startTime", null)
     
     @scala.inline
-    def setEndTimeNull: Self = this.set("endTime", null)
-    
-    @scala.inline
-    def setStartTime(value: NullableOption[String]): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setStartTimeNull: Self = this.set("startTime", null)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

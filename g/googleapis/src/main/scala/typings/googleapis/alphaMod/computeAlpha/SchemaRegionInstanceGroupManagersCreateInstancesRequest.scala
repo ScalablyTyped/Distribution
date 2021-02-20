@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * RegionInstanceGroupManagers.createInstances
   */
 @js.native
-trait SchemaRegionInstanceGroupManagersCreateInstancesRequest extends js.Object {
+trait SchemaRegionInstanceGroupManagersCreateInstancesRequest extends StObject {
   
   /**
     * [Required] List of specifications of per-instance configs.
@@ -24,27 +25,15 @@ object SchemaRegionInstanceGroupManagersCreateInstancesRequest {
   }
   
   @scala.inline
-  implicit class SchemaRegionInstanceGroupManagersCreateInstancesRequestOps[Self <: SchemaRegionInstanceGroupManagersCreateInstancesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaRegionInstanceGroupManagersCreateInstancesRequestMutableBuilder[Self <: SchemaRegionInstanceGroupManagersCreateInstancesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstances(value: js.Array[SchemaPerInstanceConfig]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstancesVarargs(value: SchemaPerInstanceConfig*): Self = this.set("instances", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstances(value: js.Array[SchemaPerInstanceConfig]): Self = this.set("instances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
+    def setInstancesVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

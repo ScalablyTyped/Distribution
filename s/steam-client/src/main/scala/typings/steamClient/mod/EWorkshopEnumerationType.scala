@@ -1,51 +1,44 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EWorkshopEnumerationType extends js.Object
+sealed trait EWorkshopEnumerationType extends StObject
 @JSImport("steam-client", "EWorkshopEnumerationType")
 @js.native
-object EWorkshopEnumerationType extends js.Object {
+object EWorkshopEnumerationType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EWorkshopEnumerationType with Double] = js.native
   
   @js.native
   sealed trait ContentByFriends extends EWorkshopEnumerationType
-  /* 5 */ @js.native
-  object ContentByFriends extends TopLevel[ContentByFriends with Double]
+  /* 5 */ val ContentByFriends: typings.steamClient.mod.EWorkshopEnumerationType.ContentByFriends with Double = js.native
   
   @js.native
   sealed trait FavoriteOfFriends extends EWorkshopEnumerationType
-  /* 3 */ @js.native
-  object FavoriteOfFriends extends TopLevel[FavoriteOfFriends with Double]
+  /* 3 */ val FavoriteOfFriends: typings.steamClient.mod.EWorkshopEnumerationType.FavoriteOfFriends with Double = js.native
   
   @js.native
   sealed trait RankedByVote extends EWorkshopEnumerationType
-  /* 0 */ @js.native
-  object RankedByVote extends TopLevel[RankedByVote with Double]
+  /* 0 */ val RankedByVote: typings.steamClient.mod.EWorkshopEnumerationType.RankedByVote with Double = js.native
   
   @js.native
   sealed trait Recent extends EWorkshopEnumerationType
-  /* 1 */ @js.native
-  object Recent extends TopLevel[Recent with Double]
+  /* 1 */ val Recent: typings.steamClient.mod.EWorkshopEnumerationType.Recent with Double = js.native
   
   @js.native
   sealed trait RecentFromFollowedUsers extends EWorkshopEnumerationType
-  /* 6 */ @js.native
-  object RecentFromFollowedUsers extends TopLevel[RecentFromFollowedUsers with Double]
+  /* 6 */ val RecentFromFollowedUsers: typings.steamClient.mod.EWorkshopEnumerationType.RecentFromFollowedUsers with Double = js.native
   
   @js.native
   sealed trait Trending extends EWorkshopEnumerationType
-  /* 2 */ @js.native
-  object Trending extends TopLevel[Trending with Double]
+  /* 2 */ val Trending: typings.steamClient.mod.EWorkshopEnumerationType.Trending with Double = js.native
   
   @js.native
   sealed trait VotedByFriends extends EWorkshopEnumerationType
-  /* 4 */ @js.native
-  object VotedByFriends extends TopLevel[VotedByFriends with Double]
+  /* 4 */ val VotedByFriends: typings.steamClient.mod.EWorkshopEnumerationType.VotedByFriends with Double = js.native
 }

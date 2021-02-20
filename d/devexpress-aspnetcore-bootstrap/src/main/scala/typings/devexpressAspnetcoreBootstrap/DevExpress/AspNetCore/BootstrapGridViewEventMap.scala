@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,114 +116,102 @@ object BootstrapGridViewEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapGridViewEventMapOps[Self <: BootstrapGridViewEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapGridViewEventMapMutableBuilder[Self <: BootstrapGridViewEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchEditChangesCanceling(value: GridViewBatchEditChangesCancelingEventArgs): Self = StObject.set(x, "batchEditChangesCanceling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchEditChangesSaving(value: GridViewBatchEditChangesSavingEventArgs): Self = StObject.set(x, "batchEditChangesSaving", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchEditConfirmShowing(value: GridViewBatchEditConfirmShowingEventArgs): Self = StObject.set(x, "batchEditConfirmShowing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditChangesCanceling(value: GridViewBatchEditChangesCancelingEventArgs): Self = this.set("batchEditChangesCanceling", value.asInstanceOf[js.Any])
+    def setBatchEditEndEditing(value: GridViewBatchEditEndEditingEventArgs): Self = StObject.set(x, "batchEditEndEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditChangesSaving(value: GridViewBatchEditChangesSavingEventArgs): Self = this.set("batchEditChangesSaving", value.asInstanceOf[js.Any])
+    def setBatchEditRowDeleting(value: GridViewBatchEditRowDeletingEventArgs): Self = StObject.set(x, "batchEditRowDeleting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditConfirmShowing(value: GridViewBatchEditConfirmShowingEventArgs): Self = this.set("batchEditConfirmShowing", value.asInstanceOf[js.Any])
+    def setBatchEditRowInserting(value: GridViewBatchEditRowInsertingEventArgs): Self = StObject.set(x, "batchEditRowInserting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditEndEditing(value: GridViewBatchEditEndEditingEventArgs): Self = this.set("batchEditEndEditing", value.asInstanceOf[js.Any])
+    def setBatchEditRowValidating(value: GridViewBatchEditRowValidatingEventArgs): Self = StObject.set(x, "batchEditRowValidating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditRowDeleting(value: GridViewBatchEditRowDeletingEventArgs): Self = this.set("batchEditRowDeleting", value.asInstanceOf[js.Any])
+    def setBatchEditStartEditing(value: GridViewBatchEditStartEditingEventArgs): Self = StObject.set(x, "batchEditStartEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditRowInserting(value: GridViewBatchEditRowInsertingEventArgs): Self = this.set("batchEditRowInserting", value.asInstanceOf[js.Any])
+    def setBatchEditTemplateCellFocused(value: GridViewBatchEditTemplateCellFocusedEventArgs): Self = StObject.set(x, "batchEditTemplateCellFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditRowValidating(value: GridViewBatchEditRowValidatingEventArgs): Self = this.set("batchEditRowValidating", value.asInstanceOf[js.Any])
+    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditStartEditing(value: GridViewBatchEditStartEditingEventArgs): Self = this.set("batchEditStartEditing", value.asInstanceOf[js.Any])
+    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchEditTemplateCellFocused(value: GridViewBatchEditTemplateCellFocusedEventArgs): Self = this.set("batchEditTemplateCellFocused", value.asInstanceOf[js.Any])
+    def setColumnGrouping(value: GridViewColumnCancelEventArgs): Self = StObject.set(x, "columnGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = this.set("beginCallback", value.asInstanceOf[js.Any])
+    def setColumnMoving(value: GridViewColumnMovingEventArgs): Self = StObject.set(x, "columnMoving", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = this.set("callbackError", value.asInstanceOf[js.Any])
+    def setColumnResized(value: GridViewColumnProcessingModeEventArgs): Self = StObject.set(x, "columnResized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnGrouping(value: GridViewColumnCancelEventArgs): Self = this.set("columnGrouping", value.asInstanceOf[js.Any])
+    def setColumnResizing(value: GridViewColumnCancelEventArgs): Self = StObject.set(x, "columnResizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnMoving(value: GridViewColumnMovingEventArgs): Self = this.set("columnMoving", value.asInstanceOf[js.Any])
+    def setColumnSorting(value: GridViewColumnCancelEventArgs): Self = StObject.set(x, "columnSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnResized(value: GridViewColumnProcessingModeEventArgs): Self = this.set("columnResized", value.asInstanceOf[js.Any])
+    def setColumnStartDragging(value: GridViewColumnCancelEventArgs): Self = StObject.set(x, "columnStartDragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnResizing(value: GridViewColumnCancelEventArgs): Self = this.set("columnResizing", value.asInstanceOf[js.Any])
+    def setContextMenu(value: GridViewContextMenuEventArgs): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSorting(value: GridViewColumnCancelEventArgs): Self = this.set("columnSorting", value.asInstanceOf[js.Any])
+    def setContextMenuItemClick(value: GridViewContextMenuItemClickEventArgs): Self = StObject.set(x, "contextMenuItemClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnStartDragging(value: GridViewColumnCancelEventArgs): Self = this.set("columnStartDragging", value.asInstanceOf[js.Any])
+    def setCustomButtonClick(value: GridViewCustomButtonEventArgs): Self = StObject.set(x, "customButtonClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenu(value: GridViewContextMenuEventArgs): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    def setCustomizationWindowCloseUp(value: EventArgs): Self = StObject.set(x, "customizationWindowCloseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenuItemClick(value: GridViewContextMenuItemClickEventArgs): Self = this.set("contextMenuItemClick", value.asInstanceOf[js.Any])
+    def setDetailRowCollapsing(value: GridViewRowCancelEventArgs): Self = StObject.set(x, "detailRowCollapsing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomButtonClick(value: GridViewCustomButtonEventArgs): Self = this.set("customButtonClick", value.asInstanceOf[js.Any])
+    def setDetailRowExpanding(value: GridViewRowCancelEventArgs): Self = StObject.set(x, "detailRowExpanding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizationWindowCloseUp(value: EventArgs): Self = this.set("customizationWindowCloseUp", value.asInstanceOf[js.Any])
+    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailRowCollapsing(value: GridViewRowCancelEventArgs): Self = this.set("detailRowCollapsing", value.asInstanceOf[js.Any])
+    def setFocusedCellChanging(value: GridViewFocusedCellChangingEventArgs): Self = StObject.set(x, "focusedCellChanging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailRowExpanding(value: GridViewRowCancelEventArgs): Self = this.set("detailRowExpanding", value.asInstanceOf[js.Any])
+    def setFocusedRowChanged(value: GridViewFocusEventArgs): Self = StObject.set(x, "focusedRowChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = this.set("endCallback", value.asInstanceOf[js.Any])
+    def setRowClick(value: GridViewRowClickEventArgs): Self = StObject.set(x, "rowClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusedCellChanging(value: GridViewFocusedCellChangingEventArgs): Self = this.set("focusedCellChanging", value.asInstanceOf[js.Any])
+    def setRowCollapsing(value: GridViewRowCancelEventArgs): Self = StObject.set(x, "rowCollapsing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusedRowChanged(value: GridViewFocusEventArgs): Self = this.set("focusedRowChanged", value.asInstanceOf[js.Any])
+    def setRowDblClick(value: GridViewRowClickEventArgs): Self = StObject.set(x, "rowDblClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowClick(value: GridViewRowClickEventArgs): Self = this.set("rowClick", value.asInstanceOf[js.Any])
+    def setRowExpanding(value: GridViewRowCancelEventArgs): Self = StObject.set(x, "rowExpanding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCollapsing(value: GridViewRowCancelEventArgs): Self = this.set("rowCollapsing", value.asInstanceOf[js.Any])
+    def setRowFocusing(value: GridViewRowFocusingEventArgs): Self = StObject.set(x, "rowFocusing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowDblClick(value: GridViewRowClickEventArgs): Self = this.set("rowDblClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowExpanding(value: GridViewRowCancelEventArgs): Self = this.set("rowExpanding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowFocusing(value: GridViewRowFocusingEventArgs): Self = this.set("rowFocusing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionChanged(value: GridViewSelectionEventArgs): Self = this.set("selectionChanged", value.asInstanceOf[js.Any])
+    def setSelectionChanged(value: GridViewSelectionEventArgs): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
   }
 }

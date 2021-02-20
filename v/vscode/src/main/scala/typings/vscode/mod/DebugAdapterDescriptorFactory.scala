@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugAdapterDescriptorFactory extends js.Object {
+trait DebugAdapterDescriptorFactory extends StObject {
   
   /**
     * 'createDebugAdapterDescriptor' is called at the start of a debug session to provide details about the debug adapter to use.

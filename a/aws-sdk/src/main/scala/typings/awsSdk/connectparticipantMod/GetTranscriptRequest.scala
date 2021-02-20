@@ -1,11 +1,12 @@
 package typings.awsSdk.connectparticipantMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTranscriptRequest extends js.Object {
+trait GetTranscriptRequest extends StObject {
   
   /**
     * The authentication token associated with the participant's connection.
@@ -51,57 +52,45 @@ object GetTranscriptRequest {
   }
   
   @scala.inline
-  implicit class GetTranscriptRequestOps[Self <: GetTranscriptRequest] (val x: Self) extends AnyVal {
+  implicit class GetTranscriptRequestMutableBuilder[Self <: GetTranscriptRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionToken(value: ParticipantToken): Self = StObject.set(x, "ConnectionToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactIdUndefined: Self = StObject.set(x, "ContactId", js.undefined)
     
     @scala.inline
-    def setConnectionToken(value: ParticipantToken): Self = this.set("ConnectionToken", value.asInstanceOf[js.Any])
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactId(value: ContactId): Self = this.set("ContactId", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteContactId: Self = this.set("ContactId", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setScanDirection(value: ScanDirection): Self = StObject.set(x, "ScanDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setScanDirectionUndefined: Self = StObject.set(x, "ScanDirection", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSortOrder(value: SortKey): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScanDirection(value: ScanDirection): Self = this.set("ScanDirection", value.asInstanceOf[js.Any])
+    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
     
     @scala.inline
-    def deleteScanDirection: Self = this.set("ScanDirection", js.undefined)
+    def setStartPosition(value: StartPosition): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortOrder(value: SortKey): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
-    
-    @scala.inline
-    def setStartPosition(value: StartPosition): Self = this.set("StartPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartPosition: Self = this.set("StartPosition", js.undefined)
+    def setStartPositionUndefined: Self = StObject.set(x, "StartPosition", js.undefined)
   }
 }

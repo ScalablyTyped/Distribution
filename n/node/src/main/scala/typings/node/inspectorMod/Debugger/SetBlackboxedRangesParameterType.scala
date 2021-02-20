@@ -1,12 +1,13 @@
 package typings.node.inspectorMod.Debugger
 
 import typings.node.inspectorMod.Runtime.ScriptId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetBlackboxedRangesParameterType extends js.Object {
+trait SetBlackboxedRangesParameterType extends StObject {
   
   var positions: js.Array[ScriptPosition] = js.native
   
@@ -24,27 +25,15 @@ object SetBlackboxedRangesParameterType {
   }
   
   @scala.inline
-  implicit class SetBlackboxedRangesParameterTypeOps[Self <: SetBlackboxedRangesParameterType] (val x: Self) extends AnyVal {
+  implicit class SetBlackboxedRangesParameterTypeMutableBuilder[Self <: SetBlackboxedRangesParameterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPositions(value: js.Array[ScriptPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionsVarargs(value: ScriptPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPositionsVarargs(value: ScriptPosition*): Self = this.set("positions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPositions(value: js.Array[ScriptPosition]): Self = this.set("positions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("scriptId", value.asInstanceOf[js.Any])
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
   }
 }

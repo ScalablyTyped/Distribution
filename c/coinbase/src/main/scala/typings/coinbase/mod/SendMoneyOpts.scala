@@ -1,12 +1,13 @@
 package typings.coinbase.mod
 
 import typings.coinbase.coinbaseStrings.send
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendMoneyOpts extends js.Object {
+trait SendMoneyOpts extends StObject {
   
   /**
     * Amount to be sent
@@ -69,66 +70,54 @@ object SendMoneyOpts {
   }
   
   @scala.inline
-  implicit class SendMoneyOptsOps[Self <: SendMoneyOpts] (val x: Self) extends AnyVal {
+  implicit class SendMoneyOptsMutableBuilder[Self <: SendMoneyOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setFee(value: String): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setFeeUndefined: Self = StObject.set(x, "fee", js.undefined)
     
     @scala.inline
-    def setType(value: send): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFinancial_institution_website(value: String): Self = StObject.set(x, "financial_institution_website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFinancial_institution_websiteUndefined: Self = StObject.set(x, "financial_institution_website", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIdem(value: String): Self = StObject.set(x, "idem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFee(value: String): Self = this.set("fee", value.asInstanceOf[js.Any])
+    def setIdemUndefined: Self = StObject.set(x, "idem", js.undefined)
     
     @scala.inline
-    def deleteFee: Self = this.set("fee", js.undefined)
+    def setSkip_notifications(value: Boolean): Self = StObject.set(x, "skip_notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinancial_institution_website(value: String): Self = this.set("financial_institution_website", value.asInstanceOf[js.Any])
+    def setSkip_notificationsUndefined: Self = StObject.set(x, "skip_notifications", js.undefined)
     
     @scala.inline
-    def deleteFinancial_institution_website: Self = this.set("financial_institution_website", js.undefined)
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdem(value: String): Self = this.set("idem", value.asInstanceOf[js.Any])
+    def setTo_financial_institution(value: Boolean): Self = StObject.set(x, "to_financial_institution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdem: Self = this.set("idem", js.undefined)
+    def setTo_financial_institutionUndefined: Self = StObject.set(x, "to_financial_institution", js.undefined)
     
     @scala.inline
-    def setSkip_notifications(value: Boolean): Self = this.set("skip_notifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkip_notifications: Self = this.set("skip_notifications", js.undefined)
-    
-    @scala.inline
-    def setTo_financial_institution(value: Boolean): Self = this.set("to_financial_institution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo_financial_institution: Self = this.set("to_financial_institution", js.undefined)
+    def setType(value: send): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

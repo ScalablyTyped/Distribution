@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +30,12 @@ object NaturalEffect {
   }
   
   @scala.inline
-  implicit class NaturalEffectOps[Self <: NaturalEffect] (val x: Self) extends AnyVal {
+  implicit class NaturalEffectMutableBuilder[Self <: NaturalEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffect(value: EffectConstant): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEffect(value: EffectConstant): Self = this.set("effect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicksRemaining(value: Double): Self = this.set("ticksRemaining", value.asInstanceOf[js.Any])
+    def setTicksRemaining(value: Double): Self = StObject.set(x, "ticksRemaining", value.asInstanceOf[js.Any])
   }
 }

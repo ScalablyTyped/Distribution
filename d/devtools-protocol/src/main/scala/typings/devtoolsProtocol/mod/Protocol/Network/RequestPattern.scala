@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestPattern extends js.Object {
+trait RequestPattern extends StObject {
   
   /**
     * Stage at wich to begin intercepting requests. Default is Request.
@@ -32,36 +33,24 @@ object RequestPattern {
   }
   
   @scala.inline
-  implicit class RequestPatternOps[Self <: RequestPattern] (val x: Self) extends AnyVal {
+  implicit class RequestPatternMutableBuilder[Self <: RequestPattern] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterceptionStage(value: InterceptionStage): Self = StObject.set(x, "interceptionStage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterceptionStageUndefined: Self = StObject.set(x, "interceptionStage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterceptionStage(value: InterceptionStage): Self = this.set("interceptionStage", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deleteInterceptionStage: Self = this.set("interceptionStage", js.undefined)
+    def setUrlPattern(value: String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
-    
-    @scala.inline
-    def setUrlPattern(value: String): Self = this.set("urlPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlPattern: Self = this.set("urlPattern", js.undefined)
+    def setUrlPatternUndefined: Self = StObject.set(x, "urlPattern", js.undefined)
   }
 }

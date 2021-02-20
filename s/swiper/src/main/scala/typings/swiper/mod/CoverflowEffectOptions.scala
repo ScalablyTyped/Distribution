@@ -1,11 +1,12 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoverflowEffectOptions extends js.Object {
+trait CoverflowEffectOptions extends StObject {
   
   var depth: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object CoverflowEffectOptions {
   }
   
   @scala.inline
-  implicit class CoverflowEffectOptionsOps[Self <: CoverflowEffectOptions] (val x: Self) extends AnyVal {
+  implicit class CoverflowEffectOptionsMutableBuilder[Self <: CoverflowEffectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifier(value: Double): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifier(value: Double): Self = this.set("modifier", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deleteModifier: Self = this.set("modifier", js.undefined)
+    def setSlideShadows(value: Boolean): Self = StObject.set(x, "slideShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: Double): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setSlideShadowsUndefined: Self = StObject.set(x, "slideShadows", js.undefined)
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setStretch(value: Double): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlideShadows(value: Boolean): Self = this.set("slideShadows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideShadows: Self = this.set("slideShadows", js.undefined)
-    
-    @scala.inline
-    def setStretch(value: Double): Self = this.set("stretch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStretch: Self = this.set("stretch", js.undefined)
+    def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
   }
 }

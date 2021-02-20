@@ -8,12 +8,13 @@ import typings.stylableCore.stylableTransformerMod.StylableExports
 import typings.stylableWebpackPlugin.typesMod.CalcResult
 import typings.stylableWebpackPlugin.typesMod.StylableModule
 import typings.stylableWebpackPlugin.typesMod.WebpackAssetModule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileDependencies extends js.Object {
+trait FileDependencies extends StObject {
   
   var fileDependencies: Set[String] = js.native
   
@@ -58,57 +59,45 @@ object FileDependencies {
   }
   
   @scala.inline
-  implicit class FileDependenciesOps[Self <: FileDependencies] (val x: Self) extends AnyVal {
+  implicit class FileDependenciesMutableBuilder[Self <: FileDependencies] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileDependencies(value: Set[String]): Self = StObject.set(x, "fileDependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsImportedByNonStylable(value: Boolean): Self = StObject.set(x, "isImportedByNonStylable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptimize(value: ClassNameOptimizations): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDependencies(value: Set[String]): Self = this.set("fileDependencies", value.asInstanceOf[js.Any])
+    def setRuntimeInfo(value: CalcResult): Self = StObject.set(x, "runtimeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsImportedByNonStylable(value: Boolean): Self = this.set("isImportedByNonStylable", value.asInstanceOf[js.Any])
+    def setStylableAssetReplacement(value: js.Array[WebpackAssetModule]): Self = StObject.set(x, "stylableAssetReplacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimize(value: ClassNameOptimizations): Self = this.set("optimize", value.asInstanceOf[js.Any])
+    def setStylableAssetReplacementVarargs(value: WebpackAssetModule*): Self = StObject.set(x, "stylableAssetReplacement", js.Array(value :_*))
     
     @scala.inline
-    def setRuntimeInfo(value: CalcResult): Self = this.set("runtimeInfo", value.asInstanceOf[js.Any])
+    def setStylableMeta(value: StylableMeta): Self = StObject.set(x, "stylableMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylableAssetReplacementVarargs(value: WebpackAssetModule*): Self = this.set("stylableAssetReplacement", js.Array(value :_*))
+    def setStylableTransformed(value: Boolean): Self = StObject.set(x, "stylableTransformed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylableAssetReplacement(value: js.Array[WebpackAssetModule]): Self = this.set("stylableAssetReplacement", value.asInstanceOf[js.Any])
+    def setStylableTransformedAst(value: Root_): Self = StObject.set(x, "stylableTransformedAst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylableMeta(value: StylableMeta): Self = this.set("stylableMeta", value.asInstanceOf[js.Any])
+    def setStylableTransformedExports(value: StylableExports): Self = StObject.set(x, "stylableTransformedExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylableTransformed(value: Boolean): Self = this.set("stylableTransformed", value.asInstanceOf[js.Any])
+    def setUsageMapping(value: Record[String, Boolean]): Self = StObject.set(x, "usageMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylableTransformedAst(value: Root_): Self = this.set("stylableTransformedAst", value.asInstanceOf[js.Any])
+    def setUsedStylableModules(value: js.Array[StylableModule]): Self = StObject.set(x, "usedStylableModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylableTransformedExports(value: StylableExports): Self = this.set("stylableTransformedExports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageMapping(value: Record[String, Boolean]): Self = this.set("usageMapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsedStylableModulesVarargs(value: StylableModule*): Self = this.set("usedStylableModules", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsedStylableModules(value: js.Array[StylableModule]): Self = this.set("usedStylableModules", value.asInstanceOf[js.Any])
+    def setUsedStylableModulesVarargs(value: StylableModule*): Self = StObject.set(x, "usedStylableModules", js.Array(value :_*))
   }
 }

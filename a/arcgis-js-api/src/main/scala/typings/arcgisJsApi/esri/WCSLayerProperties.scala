@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.bilinear
 import typings.arcgisJsApi.arcgisJsApiStrings.cubic
 import typings.arcgisJsApi.arcgisJsApiStrings.majority
 import typings.arcgisJsApi.arcgisJsApiStrings.nearest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,57 +68,45 @@ object WCSLayerProperties {
   }
   
   @scala.inline
-  implicit class WCSLayerPropertiesOps[Self <: WCSLayerProperties] (val x: Self) extends AnyVal {
+  implicit class WCSLayerPropertiesMutableBuilder[Self <: WCSLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoverageId(value: String): Self = StObject.set(x, "coverageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverageIdUndefined: Self = StObject.set(x, "coverageId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomParameters(value: js.Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverageId(value: String): Self = this.set("coverageId", value.asInstanceOf[js.Any])
+    def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
     
     @scala.inline
-    def deleteCoverageId: Self = this.set("coverageId", js.undefined)
+    def setInterpolation(value: nearest | bilinear | cubic | majority): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomParameters(value: js.Any): Self = this.set("customParameters", value.asInstanceOf[js.Any])
+    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
     @scala.inline
-    def deleteCustomParameters: Self = this.set("customParameters", js.undefined)
+    def setMultidimensionalDefinition(value: js.Array[DimensionalDefinitionProperties]): Self = StObject.set(x, "multidimensionalDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolation(value: nearest | bilinear | cubic | majority): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    def setMultidimensionalDefinitionUndefined: Self = StObject.set(x, "multidimensionalDefinition", js.undefined)
     
     @scala.inline
-    def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    def setMultidimensionalDefinitionVarargs(value: DimensionalDefinitionProperties*): Self = StObject.set(x, "multidimensionalDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setMultidimensionalDefinitionVarargs(value: DimensionalDefinitionProperties*): Self = this.set("multidimensionalDefinition", js.Array(value :_*))
+    def setRenderer(value: ClassBreaksRendererProperties | RasterStretchRendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultidimensionalDefinition(value: js.Array[DimensionalDefinitionProperties]): Self = this.set("multidimensionalDefinition", value.asInstanceOf[js.Any])
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def deleteMultidimensionalDefinition: Self = this.set("multidimensionalDefinition", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: ClassBreaksRendererProperties | RasterStretchRendererProperties): Self = this.set("renderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

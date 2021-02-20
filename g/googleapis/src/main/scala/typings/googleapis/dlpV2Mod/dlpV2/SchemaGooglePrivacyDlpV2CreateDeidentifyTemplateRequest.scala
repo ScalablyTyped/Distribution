@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for CreateDeidentifyTemplate.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2CreateDeidentifyTemplateRequest extends js.Object {
+trait SchemaGooglePrivacyDlpV2CreateDeidentifyTemplateRequest extends StObject {
   
   /**
     * The DeidentifyTemplate to create.
@@ -32,30 +33,18 @@ object SchemaGooglePrivacyDlpV2CreateDeidentifyTemplateRequest {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CreateDeidentifyTemplateRequestOps[Self <: SchemaGooglePrivacyDlpV2CreateDeidentifyTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2CreateDeidentifyTemplateRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CreateDeidentifyTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeidentifyTemplate(value: SchemaGooglePrivacyDlpV2DeidentifyTemplate): Self = StObject.set(x, "deidentifyTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeidentifyTemplateUndefined: Self = StObject.set(x, "deidentifyTemplate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeidentifyTemplate(value: SchemaGooglePrivacyDlpV2DeidentifyTemplate): Self = this.set("deidentifyTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeidentifyTemplate: Self = this.set("deidentifyTemplate", js.undefined)
-    
-    @scala.inline
-    def setTemplateId(value: String): Self = this.set("templateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateId: Self = this.set("templateId", js.undefined)
+    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

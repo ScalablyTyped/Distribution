@@ -2,22 +2,25 @@ package typings.devexpressUtils
 
 import typings.devexpressUtils.offsetsMod.Offsets
 import typings.devexpressUtils.typesMod.ICloneable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/geometry/margins", JSImport.Namespace)
-@js.native
-object marginsMod extends js.Object {
+object marginsMod {
   
+  @JSImport("@devexpress/utils/lib/geometry/margins", "Margins")
   @js.native
-  class Margins ()
+  class Margins protected ()
     extends Offsets
-       with ICloneable[Margins]
+       with ICloneable[Margins] {
+    def this(left: Double, right: Double, top: Double, bottom: Double) = this()
+  }
   /* static members */
-  @js.native
-  object Margins extends js.Object {
+  object Margins {
     
+    @JSImport("@devexpress/utils/lib/geometry/margins", "Margins.empty")
+    @js.native
     def empty(): Margins = js.native
   }
 }

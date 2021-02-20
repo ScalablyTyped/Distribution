@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewAnimationProperties extends js.Object {
+trait ViewAnimationProperties extends StObject {
   
   /**
     * The target of the animation.
@@ -23,24 +24,12 @@ object ViewAnimationProperties {
   }
   
   @scala.inline
-  implicit class ViewAnimationPropertiesOps[Self <: ViewAnimationProperties] (val x: Self) extends AnyVal {
+  implicit class ViewAnimationPropertiesMutableBuilder[Self <: ViewAnimationProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTarget(value: ViewpointProperties): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTarget(value: ViewpointProperties): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

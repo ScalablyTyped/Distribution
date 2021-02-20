@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilityChartTypesOptions extends js.Object {
+trait LangAccessibilityChartTypesOptions extends StObject {
   
   var barMultiple: js.UndefOr[String] = js.native
   
@@ -60,150 +61,138 @@ object LangAccessibilityChartTypesOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilityChartTypesOptionsOps[Self <: LangAccessibilityChartTypesOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilityChartTypesOptionsMutableBuilder[Self <: LangAccessibilityChartTypesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarMultiple(value: String): Self = StObject.set(x, "barMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarMultipleUndefined: Self = StObject.set(x, "barMultiple", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarSingle(value: String): Self = StObject.set(x, "barSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarMultiple(value: String): Self = this.set("barMultiple", value.asInstanceOf[js.Any])
+    def setBarSingleUndefined: Self = StObject.set(x, "barSingle", js.undefined)
     
     @scala.inline
-    def deleteBarMultiple: Self = this.set("barMultiple", js.undefined)
+    def setBoxplotMultiple(value: String): Self = StObject.set(x, "boxplotMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarSingle(value: String): Self = this.set("barSingle", value.asInstanceOf[js.Any])
+    def setBoxplotMultipleUndefined: Self = StObject.set(x, "boxplotMultiple", js.undefined)
     
     @scala.inline
-    def deleteBarSingle: Self = this.set("barSingle", js.undefined)
+    def setBoxplotSingle(value: String): Self = StObject.set(x, "boxplotSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxplotMultiple(value: String): Self = this.set("boxplotMultiple", value.asInstanceOf[js.Any])
+    def setBoxplotSingleUndefined: Self = StObject.set(x, "boxplotSingle", js.undefined)
     
     @scala.inline
-    def deleteBoxplotMultiple: Self = this.set("boxplotMultiple", js.undefined)
+    def setBubbleMultiple(value: String): Self = StObject.set(x, "bubbleMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxplotSingle(value: String): Self = this.set("boxplotSingle", value.asInstanceOf[js.Any])
+    def setBubbleMultipleUndefined: Self = StObject.set(x, "bubbleMultiple", js.undefined)
     
     @scala.inline
-    def deleteBoxplotSingle: Self = this.set("boxplotSingle", js.undefined)
+    def setBubbleSingle(value: String): Self = StObject.set(x, "bubbleSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleMultiple(value: String): Self = this.set("bubbleMultiple", value.asInstanceOf[js.Any])
+    def setBubbleSingleUndefined: Self = StObject.set(x, "bubbleSingle", js.undefined)
     
     @scala.inline
-    def deleteBubbleMultiple: Self = this.set("bubbleMultiple", js.undefined)
+    def setColumnMultiple(value: String): Self = StObject.set(x, "columnMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleSingle(value: String): Self = this.set("bubbleSingle", value.asInstanceOf[js.Any])
+    def setColumnMultipleUndefined: Self = StObject.set(x, "columnMultiple", js.undefined)
     
     @scala.inline
-    def deleteBubbleSingle: Self = this.set("bubbleSingle", js.undefined)
+    def setColumnSingle(value: String): Self = StObject.set(x, "columnSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnMultiple(value: String): Self = this.set("columnMultiple", value.asInstanceOf[js.Any])
+    def setColumnSingleUndefined: Self = StObject.set(x, "columnSingle", js.undefined)
     
     @scala.inline
-    def deleteColumnMultiple: Self = this.set("columnMultiple", js.undefined)
+    def setCombinationChart(value: String): Self = StObject.set(x, "combinationChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSingle(value: String): Self = this.set("columnSingle", value.asInstanceOf[js.Any])
+    def setCombinationChartUndefined: Self = StObject.set(x, "combinationChart", js.undefined)
     
     @scala.inline
-    def deleteColumnSingle: Self = this.set("columnSingle", js.undefined)
+    def setDefaultMultiple(value: String): Self = StObject.set(x, "defaultMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCombinationChart(value: String): Self = this.set("combinationChart", value.asInstanceOf[js.Any])
+    def setDefaultMultipleUndefined: Self = StObject.set(x, "defaultMultiple", js.undefined)
     
     @scala.inline
-    def deleteCombinationChart: Self = this.set("combinationChart", js.undefined)
+    def setDefaultSingle(value: String): Self = StObject.set(x, "defaultSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMultiple(value: String): Self = this.set("defaultMultiple", value.asInstanceOf[js.Any])
+    def setDefaultSingleUndefined: Self = StObject.set(x, "defaultSingle", js.undefined)
     
     @scala.inline
-    def deleteDefaultMultiple: Self = this.set("defaultMultiple", js.undefined)
+    def setEmptyChart(value: String): Self = StObject.set(x, "emptyChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSingle(value: String): Self = this.set("defaultSingle", value.asInstanceOf[js.Any])
+    def setEmptyChartUndefined: Self = StObject.set(x, "emptyChart", js.undefined)
     
     @scala.inline
-    def deleteDefaultSingle: Self = this.set("defaultSingle", js.undefined)
+    def setLineMultiple(value: String): Self = StObject.set(x, "lineMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyChart(value: String): Self = this.set("emptyChart", value.asInstanceOf[js.Any])
+    def setLineMultipleUndefined: Self = StObject.set(x, "lineMultiple", js.undefined)
     
     @scala.inline
-    def deleteEmptyChart: Self = this.set("emptyChart", js.undefined)
+    def setLineSingle(value: String): Self = StObject.set(x, "lineSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineMultiple(value: String): Self = this.set("lineMultiple", value.asInstanceOf[js.Any])
+    def setLineSingleUndefined: Self = StObject.set(x, "lineSingle", js.undefined)
     
     @scala.inline
-    def deleteLineMultiple: Self = this.set("lineMultiple", js.undefined)
+    def setMapTypeDescription(value: String): Self = StObject.set(x, "mapTypeDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSingle(value: String): Self = this.set("lineSingle", value.asInstanceOf[js.Any])
+    def setMapTypeDescriptionUndefined: Self = StObject.set(x, "mapTypeDescription", js.undefined)
     
     @scala.inline
-    def deleteLineSingle: Self = this.set("lineSingle", js.undefined)
+    def setPieMultiple(value: String): Self = StObject.set(x, "pieMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapTypeDescription(value: String): Self = this.set("mapTypeDescription", value.asInstanceOf[js.Any])
+    def setPieMultipleUndefined: Self = StObject.set(x, "pieMultiple", js.undefined)
     
     @scala.inline
-    def deleteMapTypeDescription: Self = this.set("mapTypeDescription", js.undefined)
+    def setPieSingle(value: String): Self = StObject.set(x, "pieSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieMultiple(value: String): Self = this.set("pieMultiple", value.asInstanceOf[js.Any])
+    def setPieSingleUndefined: Self = StObject.set(x, "pieSingle", js.undefined)
     
     @scala.inline
-    def deletePieMultiple: Self = this.set("pieMultiple", js.undefined)
+    def setScatterMultiple(value: String): Self = StObject.set(x, "scatterMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieSingle(value: String): Self = this.set("pieSingle", value.asInstanceOf[js.Any])
+    def setScatterMultipleUndefined: Self = StObject.set(x, "scatterMultiple", js.undefined)
     
     @scala.inline
-    def deletePieSingle: Self = this.set("pieSingle", js.undefined)
+    def setScatterSingle(value: String): Self = StObject.set(x, "scatterSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScatterMultiple(value: String): Self = this.set("scatterMultiple", value.asInstanceOf[js.Any])
+    def setScatterSingleUndefined: Self = StObject.set(x, "scatterSingle", js.undefined)
     
     @scala.inline
-    def deleteScatterMultiple: Self = this.set("scatterMultiple", js.undefined)
+    def setSplineMultiple(value: String): Self = StObject.set(x, "splineMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScatterSingle(value: String): Self = this.set("scatterSingle", value.asInstanceOf[js.Any])
+    def setSplineMultipleUndefined: Self = StObject.set(x, "splineMultiple", js.undefined)
     
     @scala.inline
-    def deleteScatterSingle: Self = this.set("scatterSingle", js.undefined)
+    def setSplineSingle(value: String): Self = StObject.set(x, "splineSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplineMultiple(value: String): Self = this.set("splineMultiple", value.asInstanceOf[js.Any])
+    def setSplineSingleUndefined: Self = StObject.set(x, "splineSingle", js.undefined)
     
     @scala.inline
-    def deleteSplineMultiple: Self = this.set("splineMultiple", js.undefined)
+    def setUnknownMap(value: String): Self = StObject.set(x, "unknownMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplineSingle(value: String): Self = this.set("splineSingle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplineSingle: Self = this.set("splineSingle", js.undefined)
-    
-    @scala.inline
-    def setUnknownMap(value: String): Self = this.set("unknownMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownMap: Self = this.set("unknownMap", js.undefined)
+    def setUnknownMapUndefined: Self = StObject.set(x, "unknownMap", js.undefined)
   }
 }

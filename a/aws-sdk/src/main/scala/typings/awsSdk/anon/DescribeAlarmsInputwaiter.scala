@@ -10,13 +10,14 @@ import typings.awsSdk.cloudwatchMod.MaxRecords
 import typings.awsSdk.cloudwatchMod.NextToken
 import typings.awsSdk.cloudwatchMod.StateValue
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/cloudwatch.DescribeAlarmsInput & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait DescribeAlarmsInputwaiter extends js.Object {
+trait DescribeAlarmsInputwaiter extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -75,84 +76,72 @@ object DescribeAlarmsInputwaiter {
   }
   
   @scala.inline
-  implicit class DescribeAlarmsInputwaiterOps[Self <: DescribeAlarmsInputwaiter] (val x: Self) extends AnyVal {
+  implicit class DescribeAlarmsInputwaiterMutableBuilder[Self <: DescribeAlarmsInputwaiter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionPrefix(value: ActionPrefix): Self = StObject.set(x, "ActionPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    def setActionPrefixUndefined: Self = StObject.set(x, "ActionPrefix", js.undefined)
     
     @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    def setAlarmNamePrefix(value: AlarmNamePrefix): Self = StObject.set(x, "AlarmNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionPrefix(value: ActionPrefix): Self = this.set("ActionPrefix", value.asInstanceOf[js.Any])
+    def setAlarmNamePrefixUndefined: Self = StObject.set(x, "AlarmNamePrefix", js.undefined)
     
     @scala.inline
-    def deleteActionPrefix: Self = this.set("ActionPrefix", js.undefined)
+    def setAlarmNames(value: AlarmNames): Self = StObject.set(x, "AlarmNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarmNamePrefix(value: AlarmNamePrefix): Self = this.set("AlarmNamePrefix", value.asInstanceOf[js.Any])
+    def setAlarmNamesUndefined: Self = StObject.set(x, "AlarmNames", js.undefined)
     
     @scala.inline
-    def deleteAlarmNamePrefix: Self = this.set("AlarmNamePrefix", js.undefined)
+    def setAlarmNamesVarargs(value: AlarmName*): Self = StObject.set(x, "AlarmNames", js.Array(value :_*))
     
     @scala.inline
-    def setAlarmNamesVarargs(value: AlarmName*): Self = this.set("AlarmNames", js.Array(value :_*))
+    def setAlarmTypes(value: AlarmTypes): Self = StObject.set(x, "AlarmTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarmNames(value: AlarmNames): Self = this.set("AlarmNames", value.asInstanceOf[js.Any])
+    def setAlarmTypesUndefined: Self = StObject.set(x, "AlarmTypes", js.undefined)
     
     @scala.inline
-    def deleteAlarmNames: Self = this.set("AlarmNames", js.undefined)
+    def setAlarmTypesVarargs(value: AlarmType*): Self = StObject.set(x, "AlarmTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAlarmTypesVarargs(value: AlarmType*): Self = this.set("AlarmTypes", js.Array(value :_*))
+    def setChildrenOfAlarmName(value: AlarmName): Self = StObject.set(x, "ChildrenOfAlarmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarmTypes(value: AlarmTypes): Self = this.set("AlarmTypes", value.asInstanceOf[js.Any])
+    def setChildrenOfAlarmNameUndefined: Self = StObject.set(x, "ChildrenOfAlarmName", js.undefined)
     
     @scala.inline
-    def deleteAlarmTypes: Self = this.set("AlarmTypes", js.undefined)
+    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenOfAlarmName(value: AlarmName): Self = this.set("ChildrenOfAlarmName", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteChildrenOfAlarmName: Self = this.set("ChildrenOfAlarmName", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setParentsOfAlarmName(value: AlarmName): Self = StObject.set(x, "ParentsOfAlarmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setParentsOfAlarmNameUndefined: Self = StObject.set(x, "ParentsOfAlarmName", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setStateValue(value: StateValue): Self = StObject.set(x, "StateValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentsOfAlarmName(value: AlarmName): Self = this.set("ParentsOfAlarmName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentsOfAlarmName: Self = this.set("ParentsOfAlarmName", js.undefined)
-    
-    @scala.inline
-    def setStateValue(value: StateValue): Self = this.set("StateValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateValue: Self = this.set("StateValue", js.undefined)
+    def setStateValueUndefined: Self = StObject.set(x, "StateValue", js.undefined)
   }
 }

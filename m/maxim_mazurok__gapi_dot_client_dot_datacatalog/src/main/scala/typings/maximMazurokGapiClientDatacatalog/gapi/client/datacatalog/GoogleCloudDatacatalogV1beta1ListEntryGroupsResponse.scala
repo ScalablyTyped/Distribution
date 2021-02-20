@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse extends js.Object {
+trait GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse extends StObject {
   
   /** EntryGroup details. */
   var entryGroups: js.UndefOr[js.Array[GoogleCloudDatacatalogV1beta1EntryGroup]] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1ListEntryGroupsResponseOps[Self <: GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1ListEntryGroupsResponseMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntryGroups(value: js.Array[GoogleCloudDatacatalogV1beta1EntryGroup]): Self = StObject.set(x, "entryGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntryGroupsUndefined: Self = StObject.set(x, "entryGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryGroupsVarargs(value: GoogleCloudDatacatalogV1beta1EntryGroup*): Self = StObject.set(x, "entryGroups", js.Array(value :_*))
     
     @scala.inline
-    def setEntryGroupsVarargs(value: GoogleCloudDatacatalogV1beta1EntryGroup*): Self = this.set("entryGroups", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryGroups(value: js.Array[GoogleCloudDatacatalogV1beta1EntryGroup]): Self = this.set("entryGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntryGroups: Self = this.set("entryGroups", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

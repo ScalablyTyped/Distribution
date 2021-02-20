@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.mod
 
 import typings.nodeRedEditorClient.anon.Cancelable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   def hasPermission(permission: String): Boolean = js.native
   def hasPermission(permission: js.Object): Boolean = js.native

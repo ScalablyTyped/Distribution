@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/infrastructure/Utils", JSImport.Namespace)
-@js.native
-object utilsMod extends js.Object {
+object utilsMod {
   
+  @JSImport("gitlab/dist/types/core/infrastructure/Utils", "bundler")
+  @js.native
   def bundler[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */](services: T): Bundle[T, P] = js.native
   
   @js.native

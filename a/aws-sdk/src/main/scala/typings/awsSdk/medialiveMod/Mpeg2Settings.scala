@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mpeg2Settings extends js.Object {
+trait Mpeg2Settings extends StObject {
   
   /**
     * Choose Off to disable adaptive quantization. Or choose another value to enable the quantizer and set its strength. The strengths are: Auto, Off, Low, Medium, High. When you enable this field, MediaLive allows intra-frame quantizers to vary, which might improve visual quality.
@@ -109,108 +110,96 @@ object Mpeg2Settings {
   }
   
   @scala.inline
-  implicit class Mpeg2SettingsOps[Self <: Mpeg2Settings] (val x: Self) extends AnyVal {
+  implicit class Mpeg2SettingsMutableBuilder[Self <: Mpeg2Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdaptiveQuantization(value: Mpeg2AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdaptiveQuantizationUndefined: Self = StObject.set(x, "AdaptiveQuantization", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfdSignaling(value: AfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramerateDenominator(value: integerMin1): Self = this.set("FramerateDenominator", value.asInstanceOf[js.Any])
+    def setAfdSignalingUndefined: Self = StObject.set(x, "AfdSignaling", js.undefined)
     
     @scala.inline
-    def setFramerateNumerator(value: integerMin1): Self = this.set("FramerateNumerator", value.asInstanceOf[js.Any])
+    def setColorMetadata(value: Mpeg2ColorMetadata): Self = StObject.set(x, "ColorMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdaptiveQuantization(value: Mpeg2AdaptiveQuantization): Self = this.set("AdaptiveQuantization", value.asInstanceOf[js.Any])
+    def setColorMetadataUndefined: Self = StObject.set(x, "ColorMetadata", js.undefined)
     
     @scala.inline
-    def deleteAdaptiveQuantization: Self = this.set("AdaptiveQuantization", js.undefined)
+    def setColorSpace(value: Mpeg2ColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfdSignaling(value: AfdSignaling): Self = this.set("AfdSignaling", value.asInstanceOf[js.Any])
+    def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
     
     @scala.inline
-    def deleteAfdSignaling: Self = this.set("AfdSignaling", js.undefined)
+    def setDisplayAspectRatio(value: Mpeg2DisplayRatio): Self = StObject.set(x, "DisplayAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMetadata(value: Mpeg2ColorMetadata): Self = this.set("ColorMetadata", value.asInstanceOf[js.Any])
+    def setDisplayAspectRatioUndefined: Self = StObject.set(x, "DisplayAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteColorMetadata: Self = this.set("ColorMetadata", js.undefined)
+    def setFilterSettings(value: Mpeg2FilterSettings): Self = StObject.set(x, "FilterSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpace(value: Mpeg2ColorSpace): Self = this.set("ColorSpace", value.asInstanceOf[js.Any])
+    def setFilterSettingsUndefined: Self = StObject.set(x, "FilterSettings", js.undefined)
     
     @scala.inline
-    def deleteColorSpace: Self = this.set("ColorSpace", js.undefined)
+    def setFixedAfd(value: FixedAfd): Self = StObject.set(x, "FixedAfd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayAspectRatio(value: Mpeg2DisplayRatio): Self = this.set("DisplayAspectRatio", value.asInstanceOf[js.Any])
+    def setFixedAfdUndefined: Self = StObject.set(x, "FixedAfd", js.undefined)
     
     @scala.inline
-    def deleteDisplayAspectRatio: Self = this.set("DisplayAspectRatio", js.undefined)
+    def setFramerateDenominator(value: integerMin1): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSettings(value: Mpeg2FilterSettings): Self = this.set("FilterSettings", value.asInstanceOf[js.Any])
+    def setFramerateNumerator(value: integerMin1): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterSettings: Self = this.set("FilterSettings", js.undefined)
+    def setGopClosedCadence(value: integerMin0): Self = StObject.set(x, "GopClosedCadence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedAfd(value: FixedAfd): Self = this.set("FixedAfd", value.asInstanceOf[js.Any])
+    def setGopClosedCadenceUndefined: Self = StObject.set(x, "GopClosedCadence", js.undefined)
     
     @scala.inline
-    def deleteFixedAfd: Self = this.set("FixedAfd", js.undefined)
+    def setGopNumBFrames(value: integerMin0Max7): Self = StObject.set(x, "GopNumBFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGopClosedCadence(value: integerMin0): Self = this.set("GopClosedCadence", value.asInstanceOf[js.Any])
+    def setGopNumBFramesUndefined: Self = StObject.set(x, "GopNumBFrames", js.undefined)
     
     @scala.inline
-    def deleteGopClosedCadence: Self = this.set("GopClosedCadence", js.undefined)
+    def setGopSize(value: double): Self = StObject.set(x, "GopSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGopNumBFrames(value: integerMin0Max7): Self = this.set("GopNumBFrames", value.asInstanceOf[js.Any])
+    def setGopSizeUndefined: Self = StObject.set(x, "GopSize", js.undefined)
     
     @scala.inline
-    def deleteGopNumBFrames: Self = this.set("GopNumBFrames", js.undefined)
+    def setGopSizeUnits(value: Mpeg2GopSizeUnits): Self = StObject.set(x, "GopSizeUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGopSize(value: double): Self = this.set("GopSize", value.asInstanceOf[js.Any])
+    def setGopSizeUnitsUndefined: Self = StObject.set(x, "GopSizeUnits", js.undefined)
     
     @scala.inline
-    def deleteGopSize: Self = this.set("GopSize", js.undefined)
+    def setScanType(value: Mpeg2ScanType): Self = StObject.set(x, "ScanType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGopSizeUnits(value: Mpeg2GopSizeUnits): Self = this.set("GopSizeUnits", value.asInstanceOf[js.Any])
+    def setScanTypeUndefined: Self = StObject.set(x, "ScanType", js.undefined)
     
     @scala.inline
-    def deleteGopSizeUnits: Self = this.set("GopSizeUnits", js.undefined)
+    def setSubgopLength(value: Mpeg2SubGopLength): Self = StObject.set(x, "SubgopLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScanType(value: Mpeg2ScanType): Self = this.set("ScanType", value.asInstanceOf[js.Any])
+    def setSubgopLengthUndefined: Self = StObject.set(x, "SubgopLength", js.undefined)
     
     @scala.inline
-    def deleteScanType: Self = this.set("ScanType", js.undefined)
+    def setTimecodeInsertion(value: Mpeg2TimecodeInsertionBehavior): Self = StObject.set(x, "TimecodeInsertion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubgopLength(value: Mpeg2SubGopLength): Self = this.set("SubgopLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubgopLength: Self = this.set("SubgopLength", js.undefined)
-    
-    @scala.inline
-    def setTimecodeInsertion(value: Mpeg2TimecodeInsertionBehavior): Self = this.set("TimecodeInsertion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimecodeInsertion: Self = this.set("TimecodeInsertion", js.undefined)
+    def setTimecodeInsertionUndefined: Self = StObject.set(x, "TimecodeInsertion", js.undefined)
   }
 }

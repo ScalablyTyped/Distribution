@@ -1,12 +1,13 @@
 package typings.libp2pGossipsub.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-stats.TopicStats> */
 @js.native
-trait PartialTopicStats extends js.Object {
+trait PartialTopicStats extends StObject {
   
   var firstMessageDeliveries: js.UndefOr[Double] = js.native
   
@@ -33,66 +34,54 @@ object PartialTopicStats {
   }
   
   @scala.inline
-  implicit class PartialTopicStatsOps[Self <: PartialTopicStats] (val x: Self) extends AnyVal {
+  implicit class PartialTopicStatsMutableBuilder[Self <: PartialTopicStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstMessageDeliveries(value: Double): Self = StObject.set(x, "firstMessageDeliveries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstMessageDeliveriesUndefined: Self = StObject.set(x, "firstMessageDeliveries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraftTime(value: Double): Self = StObject.set(x, "graftTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMessageDeliveries(value: Double): Self = this.set("firstMessageDeliveries", value.asInstanceOf[js.Any])
+    def setGraftTimeUndefined: Self = StObject.set(x, "graftTime", js.undefined)
     
     @scala.inline
-    def deleteFirstMessageDeliveries: Self = this.set("firstMessageDeliveries", js.undefined)
+    def setInMesh(value: Boolean): Self = StObject.set(x, "inMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraftTime(value: Double): Self = this.set("graftTime", value.asInstanceOf[js.Any])
+    def setInMeshUndefined: Self = StObject.set(x, "inMesh", js.undefined)
     
     @scala.inline
-    def deleteGraftTime: Self = this.set("graftTime", js.undefined)
+    def setInvalidMessageDeliveries(value: Double): Self = StObject.set(x, "invalidMessageDeliveries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInMesh(value: Boolean): Self = this.set("inMesh", value.asInstanceOf[js.Any])
+    def setInvalidMessageDeliveriesUndefined: Self = StObject.set(x, "invalidMessageDeliveries", js.undefined)
     
     @scala.inline
-    def deleteInMesh: Self = this.set("inMesh", js.undefined)
+    def setMeshFailurePenalty(value: Double): Self = StObject.set(x, "meshFailurePenalty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidMessageDeliveries(value: Double): Self = this.set("invalidMessageDeliveries", value.asInstanceOf[js.Any])
+    def setMeshFailurePenaltyUndefined: Self = StObject.set(x, "meshFailurePenalty", js.undefined)
     
     @scala.inline
-    def deleteInvalidMessageDeliveries: Self = this.set("invalidMessageDeliveries", js.undefined)
+    def setMeshMessageDeliveries(value: Double): Self = StObject.set(x, "meshMessageDeliveries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshFailurePenalty(value: Double): Self = this.set("meshFailurePenalty", value.asInstanceOf[js.Any])
+    def setMeshMessageDeliveriesActive(value: Boolean): Self = StObject.set(x, "meshMessageDeliveriesActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMeshFailurePenalty: Self = this.set("meshFailurePenalty", js.undefined)
+    def setMeshMessageDeliveriesActiveUndefined: Self = StObject.set(x, "meshMessageDeliveriesActive", js.undefined)
     
     @scala.inline
-    def setMeshMessageDeliveries(value: Double): Self = this.set("meshMessageDeliveries", value.asInstanceOf[js.Any])
+    def setMeshMessageDeliveriesUndefined: Self = StObject.set(x, "meshMessageDeliveries", js.undefined)
     
     @scala.inline
-    def deleteMeshMessageDeliveries: Self = this.set("meshMessageDeliveries", js.undefined)
+    def setMeshTime(value: Double): Self = StObject.set(x, "meshTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshMessageDeliveriesActive(value: Boolean): Self = this.set("meshMessageDeliveriesActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeshMessageDeliveriesActive: Self = this.set("meshMessageDeliveriesActive", js.undefined)
-    
-    @scala.inline
-    def setMeshTime(value: Double): Self = this.set("meshTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeshTime: Self = this.set("meshTime", js.undefined)
+    def setMeshTimeUndefined: Self = StObject.set(x, "meshTime", js.undefined)
   }
 }

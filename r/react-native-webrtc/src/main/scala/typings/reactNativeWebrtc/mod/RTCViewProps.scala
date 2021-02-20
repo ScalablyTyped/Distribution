@@ -3,12 +3,13 @@ package typings.reactNativeWebrtc.mod
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeWebrtc.reactNativeWebrtcStrings.contain
 import typings.reactNativeWebrtc.reactNativeWebrtcStrings.cover
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCViewProps extends js.Object {
+trait RTCViewProps extends StObject {
   
   var mirror: js.UndefOr[Boolean] = js.native
   
@@ -29,45 +30,33 @@ object RTCViewProps {
   }
   
   @scala.inline
-  implicit class RTCViewPropsOps[Self <: RTCViewProps] (val x: Self) extends AnyVal {
+  implicit class RTCViewPropsMutableBuilder[Self <: RTCViewProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectFit(value: contain | cover): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamURL(value: String): Self = this.set("streamURL", value.asInstanceOf[js.Any])
+    def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
     @scala.inline
-    def setMirror(value: Boolean): Self = this.set("mirror", value.asInstanceOf[js.Any])
+    def setStreamURL(value: String): Self = StObject.set(x, "streamURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMirror: Self = this.set("mirror", js.undefined)
+    def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectFit(value: contain | cover): Self = this.set("objectFit", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteObjectFit: Self = this.set("objectFit", js.undefined)
+    def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: ViewStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setZOrder(value: Double): Self = this.set("zOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZOrder: Self = this.set("zOrder", js.undefined)
+    def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
   }
 }

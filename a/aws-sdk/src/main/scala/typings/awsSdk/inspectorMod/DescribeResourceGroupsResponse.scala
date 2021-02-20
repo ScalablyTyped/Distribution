@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeResourceGroupsResponse extends js.Object {
+trait DescribeResourceGroupsResponse extends StObject {
   
   /**
     * Resource group details that cannot be described. An error code is provided for each failed item.
@@ -26,27 +27,15 @@ object DescribeResourceGroupsResponse {
   }
   
   @scala.inline
-  implicit class DescribeResourceGroupsResponseOps[Self <: DescribeResourceGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeResourceGroupsResponseMutableBuilder[Self <: DescribeResourceGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceGroups(value: ResourceGroupList): Self = StObject.set(x, "resourceGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailedItems(value: FailedItems): Self = this.set("failedItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceGroupsVarargs(value: ResourceGroup*): Self = this.set("resourceGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceGroups(value: ResourceGroupList): Self = this.set("resourceGroups", value.asInstanceOf[js.Any])
+    def setResourceGroupsVarargs(value: ResourceGroup*): Self = StObject.set(x, "resourceGroups", js.Array(value :_*))
   }
 }

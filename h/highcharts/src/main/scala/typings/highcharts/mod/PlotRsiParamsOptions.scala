@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotRsiParamsOptions extends js.Object {
+trait PlotRsiParamsOptions extends StObject {
   
   /**
     * (Highstock) Number of maximum decimals that are used in RSI calculations.
@@ -28,30 +29,18 @@ object PlotRsiParamsOptions {
   }
   
   @scala.inline
-  implicit class PlotRsiParamsOptionsOps[Self <: PlotRsiParamsOptions] (val x: Self) extends AnyVal {
+  implicit class PlotRsiParamsOptionsMutableBuilder[Self <: PlotRsiParamsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimals(value: Double): Self = this.set("decimals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDecimals: Self = this.set("decimals", js.undefined)
-    
-    @scala.inline
-    def setPeriod(value: Double): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

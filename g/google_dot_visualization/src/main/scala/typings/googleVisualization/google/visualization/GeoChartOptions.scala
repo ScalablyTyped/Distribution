@@ -1,12 +1,13 @@
 package typings.googleVisualization.google.visualization
 
 import typings.googleVisualization.googleVisualizationStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoChartOptions extends js.Object {
+trait GeoChartOptions extends StObject {
   
   var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.native
   
@@ -49,114 +50,102 @@ object GeoChartOptions {
   }
   
   @scala.inline
-  implicit class GeoChartOptionsOps[Self <: GeoChartOptions] (val x: Self) extends AnyVal {
+  implicit class GeoChartOptionsMutableBuilder[Self <: GeoChartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String | ChartStrokeFill): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorAxis(value: ChartColorAxis): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String | ChartStrokeFill): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setDatalessRegionColor(value: String): Self = StObject.set(x, "datalessRegionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorAxis(value: ChartColorAxis): Self = this.set("colorAxis", value.asInstanceOf[js.Any])
+    def setDatalessRegionColorUndefined: Self = StObject.set(x, "datalessRegionColor", js.undefined)
     
     @scala.inline
-    def deleteColorAxis: Self = this.set("colorAxis", js.undefined)
+    def setDefaultColor(value: String): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatalessRegionColor(value: String): Self = this.set("datalessRegionColor", value.asInstanceOf[js.Any])
+    def setDefaultColorUndefined: Self = StObject.set(x, "defaultColor", js.undefined)
     
     @scala.inline
-    def deleteDatalessRegionColor: Self = this.set("datalessRegionColor", js.undefined)
+    def setDisplayMode(value: String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultColor(value: String): Self = this.set("defaultColor", value.asInstanceOf[js.Any])
+    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
     @scala.inline
-    def deleteDefaultColor: Self = this.set("defaultColor", js.undefined)
+    def setEnableRegionInteractivity(value: Boolean): Self = StObject.set(x, "enableRegionInteractivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMode(value: String): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    def setEnableRegionInteractivityUndefined: Self = StObject.set(x, "enableRegionInteractivity", js.undefined)
     
     @scala.inline
-    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRegionInteractivity(value: Boolean): Self = this.set("enableRegionInteractivity", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteEnableRegionInteractivity: Self = this.set("enableRegionInteractivity", js.undefined)
+    def setKeepAspectRatio(value: Boolean): Self = StObject.set(x, "keepAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setKeepAspectRatioUndefined: Self = StObject.set(x, "keepAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLegend(value: ChartLegend | none): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepAspectRatio(value: Boolean): Self = this.set("keepAspectRatio", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteKeepAspectRatio: Self = this.set("keepAspectRatio", js.undefined)
+    def setMagnifyingGlass(value: GeoChartMagnifyingGlass): Self = StObject.set(x, "magnifyingGlass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: ChartLegend | none): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setMagnifyingGlassUndefined: Self = StObject.set(x, "magnifyingGlass", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setMarkerOpacity(value: Double): Self = StObject.set(x, "markerOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagnifyingGlass(value: GeoChartMagnifyingGlass): Self = this.set("magnifyingGlass", value.asInstanceOf[js.Any])
+    def setMarkerOpacityUndefined: Self = StObject.set(x, "markerOpacity", js.undefined)
     
     @scala.inline
-    def deleteMagnifyingGlass: Self = this.set("magnifyingGlass", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerOpacity(value: Double): Self = this.set("markerOpacity", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteMarkerOpacity: Self = this.set("markerOpacity", js.undefined)
+    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setSizeAxis(value: ChartSizeAxis): Self = StObject.set(x, "sizeAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: String): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setSizeAxisUndefined: Self = StObject.set(x, "sizeAxis", js.undefined)
     
     @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setTooltip(value: ChartTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeAxis(value: ChartSizeAxis): Self = this.set("sizeAxis", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteSizeAxis: Self = this.set("sizeAxis", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: ChartTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

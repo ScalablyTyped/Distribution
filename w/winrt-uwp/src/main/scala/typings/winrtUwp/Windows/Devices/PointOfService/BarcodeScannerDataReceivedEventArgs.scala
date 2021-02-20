@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the barcode data from the DataReceived event. */
 @js.native
-trait BarcodeScannerDataReceivedEventArgs extends js.Object {
+trait BarcodeScannerDataReceivedEventArgs extends StObject {
   
   /** Gets the data from the DataReceived event. */
   var report: BarcodeScannerReport = js.native
@@ -20,21 +21,9 @@ object BarcodeScannerDataReceivedEventArgs {
   }
   
   @scala.inline
-  implicit class BarcodeScannerDataReceivedEventArgsOps[Self <: BarcodeScannerDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  implicit class BarcodeScannerDataReceivedEventArgsMutableBuilder[Self <: BarcodeScannerDataReceivedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReport(value: BarcodeScannerReport): Self = this.set("report", value.asInstanceOf[js.Any])
+    def setReport(value: BarcodeScannerReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
   }
 }

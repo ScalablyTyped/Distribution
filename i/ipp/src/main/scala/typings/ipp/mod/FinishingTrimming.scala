@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishingTrimming extends js.Object {
+trait FinishingTrimming extends StObject {
   
   var `trimming-offset`: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object FinishingTrimming {
   }
   
   @scala.inline
-  implicit class FinishingTrimmingOps[Self <: FinishingTrimming] (val x: Self) extends AnyVal {
+  implicit class FinishingTrimmingMutableBuilder[Self <: FinishingTrimming] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setTrimming-offset`(value: Double): Self = StObject.set(x, "trimming-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setTrimming-offsetUndefined`: Self = StObject.set(x, "trimming-offset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setTrimming-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "trimming-reference-edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTrimming-offset`(value: Double): Self = this.set("trimming-offset", value.asInstanceOf[js.Any])
+    def `setTrimming-reference-edgeUndefined`: Self = StObject.set(x, "trimming-reference-edge", js.undefined)
     
     @scala.inline
-    def `deleteTrimming-offset`: Self = this.set("trimming-offset", js.undefined)
+    def `setTrimming-type`(value: TrimmingType): Self = StObject.set(x, "trimming-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTrimming-reference-edge`(value: ReferenceEdge): Self = this.set("trimming-reference-edge", value.asInstanceOf[js.Any])
+    def `setTrimming-typeUndefined`: Self = StObject.set(x, "trimming-type", js.undefined)
     
     @scala.inline
-    def `deleteTrimming-reference-edge`: Self = this.set("trimming-reference-edge", js.undefined)
+    def `setTrimming-when`(value: String): Self = StObject.set(x, "trimming-when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTrimming-type`(value: TrimmingType): Self = this.set("trimming-type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteTrimming-type`: Self = this.set("trimming-type", js.undefined)
-    
-    @scala.inline
-    def `setTrimming-when`(value: String): Self = this.set("trimming-when", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteTrimming-when`: Self = this.set("trimming-when", js.undefined)
+    def `setTrimming-whenUndefined`: Self = StObject.set(x, "trimming-when", js.undefined)
   }
 }

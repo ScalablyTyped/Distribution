@@ -12,12 +12,13 @@ import typings.openlayers.mod.TileLoadFunctionType
 import typings.openlayers.mod.olx.LogoOptions
 import typings.openlayers.mod.source.WMTSRequestEncoding
 import typings.openlayers.mod.tilegrid.WMTS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WMTSOptions extends js.Object {
+trait WMTSOptions extends StObject {
   
   var attributions: js.UndefOr[AttributionLike] = js.native
   
@@ -78,134 +79,122 @@ object WMTSOptions {
   }
   
   @scala.inline
-  implicit class WMTSOptionsOps[Self <: WMTSOptions] (val x: Self) extends AnyVal {
+  implicit class WMTSOptionsMutableBuilder[Self <: WMTSOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
     
     @scala.inline
-    def setLayer(value: String): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatrixSet(value: String): Self = this.set("matrixSet", value.asInstanceOf[js.Any])
+    def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileGrid(value: WMTS): Self = this.set("tileGrid", value.asInstanceOf[js.Any])
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def setAttributionsVarargs(value: (Attribution | String)*): Self = this.set("attributions", js.Array(value :_*))
+    def setDimensions(value: GlobalObject): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributions(value: AttributionLike): Self = this.set("attributions", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def deleteAttributions: Self = this.set("attributions", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheSize(value: Double): Self = this.set("cacheSize", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteCacheSize: Self = this.set("cacheSize", js.undefined)
+    def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def setDimensions(value: GlobalObject): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setMatrixSet(value: String): Self = StObject.set(x, "matrixSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setReprojectionErrorThreshold(value: Double): Self = StObject.set(x, "reprojectionErrorThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: String | LogoOptions): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setReprojectionErrorThresholdUndefined: Self = StObject.set(x, "reprojectionErrorThreshold", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setRequestEncoding(value: WMTSRequestEncoding | String): Self = StObject.set(x, "requestEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: ProjectionLike): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setRequestEncodingUndefined: Self = StObject.set(x, "requestEncoding", js.undefined)
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
-    
-    @scala.inline
-    def setReprojectionErrorThreshold(value: Double): Self = this.set("reprojectionErrorThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReprojectionErrorThreshold: Self = this.set("reprojectionErrorThreshold", js.undefined)
-    
-    @scala.inline
-    def setRequestEncoding(value: WMTSRequestEncoding | String): Self = this.set("requestEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestEncoding: Self = this.set("requestEncoding", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTileClass(
       value: (/* n */ ImageTile, /* coords */ TileCoord, /* state */ State, /* s1 */ String, /* s2 */ String, /* type */ TileLoadFunctionType) => _
-    ): Self = this.set("tileClass", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "tileClass", js.Any.fromFunction6(value))
     
     @scala.inline
-    def deleteTileClass: Self = this.set("tileClass", js.undefined)
+    def setTileClassUndefined: Self = StObject.set(x, "tileClass", js.undefined)
     
     @scala.inline
-    def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Unit): Self = this.set("tileLoadFunction", js.Any.fromFunction2(value))
+    def setTileGrid(value: WMTS): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTileLoadFunction: Self = this.set("tileLoadFunction", js.undefined)
+    def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Unit): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTilePixelRatio(value: Double): Self = this.set("tilePixelRatio", value.asInstanceOf[js.Any])
+    def setTileLoadFunctionUndefined: Self = StObject.set(x, "tileLoadFunction", js.undefined)
     
     @scala.inline
-    def deleteTilePixelRatio: Self = this.set("tilePixelRatio", js.undefined)
+    def setTilePixelRatio(value: Double): Self = StObject.set(x, "tilePixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTilePixelRatioUndefined: Self = StObject.set(x, "tilePixelRatio", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlsVarargs(value: String*): Self = this.set("urls", js.Array(value :_*))
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setUrls(value: js.Array[String]): Self = this.set("urls", value.asInstanceOf[js.Any])
+    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapX(value: Boolean): Self = this.set("wrapX", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteWrapX: Self = this.set("wrapX", js.undefined)
+    def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
   }
 }

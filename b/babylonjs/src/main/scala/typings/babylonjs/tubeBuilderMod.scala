@@ -4,19 +4,18 @@ import typings.babylonjs.anon.RadiusFunction
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/Builders/tubeBuilder", JSImport.Namespace)
-@js.native
-object tubeBuilderMod extends js.Object {
+object tubeBuilderMod {
   
+  @JSImport("babylonjs/Meshes/Builders/tubeBuilder", "TubeBuilder")
   @js.native
-  class TubeBuilder () extends js.Object
+  class TubeBuilder () extends StObject
   /* static members */
-  @js.native
-  object TubeBuilder extends js.Object {
+  object TubeBuilder {
     
     /**
       * Creates a tube mesh.
@@ -40,7 +39,11 @@ object tubeBuilderMod extends js.Object {
       * @see https://doc.babylonjs.com/how_to/parametric_shapes
       * @see https://doc.babylonjs.com/how_to/set_shapes#tube
       */
+    @JSImport("babylonjs/Meshes/Builders/tubeBuilder", "TubeBuilder.CreateTube")
+    @js.native
     def CreateTube(name: String, options: RadiusFunction): Mesh = js.native
+    @JSImport("babylonjs/Meshes/Builders/tubeBuilder", "TubeBuilder.CreateTube")
+    @js.native
     def CreateTube(name: String, options: RadiusFunction, scene: Nullable[Scene]): Mesh = js.native
   }
 }

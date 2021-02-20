@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetNetwork extends js.Object {
+trait TargetNetwork extends StObject {
   
   /**
     * The ID of the association.
@@ -46,57 +47,45 @@ object TargetNetwork {
   }
   
   @scala.inline
-  implicit class TargetNetworkOps[Self <: TargetNetwork] (val x: Self) extends AnyVal {
+  implicit class TargetNetworkMutableBuilder[Self <: TargetNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationId(value: String): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "ClientVpnEndpointId", js.undefined)
     
     @scala.inline
-    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    def setSecurityGroups(value: ValueStringList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientVpnEndpointId(value: String): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteClientVpnEndpointId: Self = this.set("ClientVpnEndpointId", js.undefined)
+    def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupsVarargs(value: String*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    def setStatus(value: AssociationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroups(value: ValueStringList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    def setTargetNetworkId(value: String): Self = StObject.set(x, "TargetNetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: AssociationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTargetNetworkIdUndefined: Self = StObject.set(x, "TargetNetworkId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetNetworkId(value: String): Self = this.set("TargetNetworkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetNetworkId: Self = this.set("TargetNetworkId", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

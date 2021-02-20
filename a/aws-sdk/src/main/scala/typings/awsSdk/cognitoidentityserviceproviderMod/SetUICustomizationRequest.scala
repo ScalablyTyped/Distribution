@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetUICustomizationRequest extends js.Object {
+trait SetUICustomizationRequest extends StObject {
   
   /**
     * The CSS values in the UI customization.
@@ -36,39 +37,27 @@ object SetUICustomizationRequest {
   }
   
   @scala.inline
-  implicit class SetUICustomizationRequestOps[Self <: SetUICustomizationRequest] (val x: Self) extends AnyVal {
+  implicit class SetUICustomizationRequestMutableBuilder[Self <: SetUICustomizationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCSS(value: CSSType): Self = StObject.set(x, "CSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCSSUndefined: Self = StObject.set(x, "CSS", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
     @scala.inline
-    def setCSS(value: CSSType): Self = this.set("CSS", value.asInstanceOf[js.Any])
+    def setImageFile(value: ImageFileType): Self = StObject.set(x, "ImageFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCSS: Self = this.set("CSS", js.undefined)
+    def setImageFileUndefined: Self = StObject.set(x, "ImageFile", js.undefined)
     
     @scala.inline
-    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientId: Self = this.set("ClientId", js.undefined)
-    
-    @scala.inline
-    def setImageFile(value: ImageFileType): Self = this.set("ImageFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageFile: Self = this.set("ImageFile", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.riotjsDomBindings.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Expression[Scope] extends js.Object {
+trait Expression[Scope] extends StObject {
   
   def mount(scope: Scope): Expression[_] = js.native
   
@@ -37,36 +38,24 @@ object Expression {
   }
   
   @scala.inline
-  implicit class ExpressionOps[Self <: Expression[_], Scope] (val x: Self with Expression[Scope]) extends AnyVal {
+  implicit class ExpressionMutableBuilder[Self <: Expression[_], Scope] (val x: Self with Expression[Scope]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMount(value: Scope => Expression[_]): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: ExpressionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMount(value: Scope => Expression[_]): Self = this.set("mount", js.Any.fromFunction1(value))
+    def setUnmount(value: Scope => Expression[_]): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNode(value: HTMLElement): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setUpdate(value: Scope => Expression[_]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setType(value: ExpressionType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnmount(value: Scope => Expression[_]): Self = this.set("unmount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: Scope => Expression[_]): Self = this.set("update", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

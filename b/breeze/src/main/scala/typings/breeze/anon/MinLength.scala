@@ -1,11 +1,12 @@
 package typings.breeze.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MinLength extends js.Object {
+trait MinLength extends StObject {
   
   var maxLength: Double = js.native
   
@@ -22,30 +23,18 @@ object MinLength {
   }
   
   @scala.inline
-  implicit class MinLengthOps[Self <: MinLength] (val x: Self) extends AnyVal {
+  implicit class MinLengthMutableBuilder[Self <: MinLength] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageTemplate(value: String): Self = this.set("messageTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageTemplate: Self = this.set("messageTemplate", js.undefined)
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
   }
 }

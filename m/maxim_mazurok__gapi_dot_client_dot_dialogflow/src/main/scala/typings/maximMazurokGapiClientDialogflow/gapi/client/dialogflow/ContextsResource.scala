@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDialogflow.anon.Name
 import typings.maximMazurokGapiClientDialogflow.anon.PageToken
 import typings.maximMazurokGapiClientDialogflow.anon.Uploadprotocol
 import typings.maximMazurokGapiClientDialogflow.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextsResource extends js.Object {
+trait ContextsResource extends StObject {
   
   def create(request: Alt, body: GoogleCloudDialogflowV2Context): Request[GoogleCloudDialogflowV2Context] = js.native
   /** Creates a context. If the specified context already exists, overrides the context. */

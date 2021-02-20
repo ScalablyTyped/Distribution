@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/remapBlock", JSImport.Namespace)
-@js.native
-object remapBlockMod extends js.Object {
+object remapBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/remapBlock", "RemapBlock")
   @js.native
   class RemapBlock protected () extends NodeMaterialBlock {
     /**

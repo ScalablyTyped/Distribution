@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateCampaignResponse extends js.Object {
+trait UpdateCampaignResponse extends StObject {
   
   /**
     * The same campaign ARN as given in the request.
@@ -21,24 +22,12 @@ object UpdateCampaignResponse {
   }
   
   @scala.inline
-  implicit class UpdateCampaignResponseOps[Self <: UpdateCampaignResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateCampaignResponseMutableBuilder[Self <: UpdateCampaignResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCampaignArn(value: Arn): Self = this.set("campaignArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCampaignArn: Self = this.set("campaignArn", js.undefined)
+    def setCampaignArnUndefined: Self = StObject.set(x, "campaignArn", js.undefined)
   }
 }

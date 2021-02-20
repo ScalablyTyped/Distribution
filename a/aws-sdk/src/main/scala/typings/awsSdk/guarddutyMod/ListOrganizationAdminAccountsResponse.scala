@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOrganizationAdminAccountsResponse extends js.Object {
+trait ListOrganizationAdminAccountsResponse extends StObject {
   
   /**
     * An AdminAccounts object that includes a list of accounts configured as GuardDuty delegated administrators.
@@ -26,33 +27,21 @@ object ListOrganizationAdminAccountsResponse {
   }
   
   @scala.inline
-  implicit class ListOrganizationAdminAccountsResponseOps[Self <: ListOrganizationAdminAccountsResponse] (val x: Self) extends AnyVal {
+  implicit class ListOrganizationAdminAccountsResponseMutableBuilder[Self <: ListOrganizationAdminAccountsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminAccounts(value: AdminAccounts): Self = StObject.set(x, "AdminAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminAccountsUndefined: Self = StObject.set(x, "AdminAccounts", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdminAccountsVarargs(value: AdminAccount*): Self = StObject.set(x, "AdminAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setAdminAccountsVarargs(value: AdminAccount*): Self = this.set("AdminAccounts", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminAccounts(value: AdminAccounts): Self = this.set("AdminAccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdminAccounts: Self = this.set("AdminAccounts", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

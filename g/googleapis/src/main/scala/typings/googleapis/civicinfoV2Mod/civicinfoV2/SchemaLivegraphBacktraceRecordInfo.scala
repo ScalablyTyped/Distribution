@@ -1,11 +1,12 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLivegraphBacktraceRecordInfo extends js.Object {
+trait SchemaLivegraphBacktraceRecordInfo extends StObject {
   
   var dataSourcePublishMsec: js.UndefOr[String] = js.native
   
@@ -48,114 +49,102 @@ object SchemaLivegraphBacktraceRecordInfo {
   }
   
   @scala.inline
-  implicit class SchemaLivegraphBacktraceRecordInfoOps[Self <: SchemaLivegraphBacktraceRecordInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaLivegraphBacktraceRecordInfoMutableBuilder[Self <: SchemaLivegraphBacktraceRecordInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourcePublishMsec(value: String): Self = StObject.set(x, "dataSourcePublishMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourcePublishMsecUndefined: Self = StObject.set(x, "dataSourcePublishMsec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpId(value: String): Self = StObject.set(x, "expId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourcePublishMsec(value: String): Self = this.set("dataSourcePublishMsec", value.asInstanceOf[js.Any])
+    def setExpIdUndefined: Self = StObject.set(x, "expId", js.undefined)
     
     @scala.inline
-    def deleteDataSourcePublishMsec: Self = this.set("dataSourcePublishMsec", js.undefined)
+    def setExpInfo(value: SchemaLivegraphBacktraceRecordInfoExpInfo): Self = StObject.set(x, "expInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpId(value: String): Self = this.set("expId", value.asInstanceOf[js.Any])
+    def setExpInfoUndefined: Self = StObject.set(x, "expInfo", js.undefined)
     
     @scala.inline
-    def deleteExpId: Self = this.set("expId", js.undefined)
+    def setIsRecon(value: Boolean): Self = StObject.set(x, "isRecon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpInfo(value: SchemaLivegraphBacktraceRecordInfoExpInfo): Self = this.set("expInfo", value.asInstanceOf[js.Any])
+    def setIsReconUndefined: Self = StObject.set(x, "isRecon", js.undefined)
     
     @scala.inline
-    def deleteExpInfo: Self = this.set("expInfo", js.undefined)
+    def setIsWlmThrottled(value: Boolean): Self = StObject.set(x, "isWlmThrottled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRecon(value: Boolean): Self = this.set("isRecon", value.asInstanceOf[js.Any])
+    def setIsWlmThrottledUndefined: Self = StObject.set(x, "isWlmThrottled", js.undefined)
     
     @scala.inline
-    def deleteIsRecon: Self = this.set("isRecon", js.undefined)
+    def setNumberOfTriples(value: String): Self = StObject.set(x, "numberOfTriples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWlmThrottled(value: Boolean): Self = this.set("isWlmThrottled", value.asInstanceOf[js.Any])
+    def setNumberOfTriplesUndefined: Self = StObject.set(x, "numberOfTriples", js.undefined)
     
     @scala.inline
-    def deleteIsWlmThrottled: Self = this.set("isWlmThrottled", js.undefined)
+    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfTriples(value: String): Self = this.set("numberOfTriples", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteNumberOfTriples: Self = this.set("numberOfTriples", js.undefined)
+    def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: String): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setProxyReceiveMsec(value: String): Self = StObject.set(x, "proxyReceiveMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcess(value: String): Self = this.set("process", value.asInstanceOf[js.Any])
+    def setProxyReceiveMsecUndefined: Self = StObject.set(x, "proxyReceiveMsec", js.undefined)
     
     @scala.inline
-    def deleteProcess: Self = this.set("process", js.undefined)
+    def setProxySentMsec(value: String): Self = StObject.set(x, "proxySentMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyReceiveMsec(value: String): Self = this.set("proxyReceiveMsec", value.asInstanceOf[js.Any])
+    def setProxySentMsecUndefined: Self = StObject.set(x, "proxySentMsec", js.undefined)
     
     @scala.inline
-    def deleteProxyReceiveMsec: Self = this.set("proxyReceiveMsec", js.undefined)
+    def setRecordId(value: String): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxySentMsec(value: String): Self = this.set("proxySentMsec", value.asInstanceOf[js.Any])
+    def setRecordIdUndefined: Self = StObject.set(x, "recordId", js.undefined)
     
     @scala.inline
-    def deleteProxySentMsec: Self = this.set("proxySentMsec", js.undefined)
+    def setShouldMonitorLatency(value: Boolean): Self = StObject.set(x, "shouldMonitorLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordId(value: String): Self = this.set("recordId", value.asInstanceOf[js.Any])
+    def setShouldMonitorLatencyUndefined: Self = StObject.set(x, "shouldMonitorLatency", js.undefined)
     
     @scala.inline
-    def deleteRecordId: Self = this.set("recordId", js.undefined)
+    def setSubscriberReceiveMsec(value: String): Self = StObject.set(x, "subscriberReceiveMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldMonitorLatency(value: Boolean): Self = this.set("shouldMonitorLatency", value.asInstanceOf[js.Any])
+    def setSubscriberReceiveMsecUndefined: Self = StObject.set(x, "subscriberReceiveMsec", js.undefined)
     
     @scala.inline
-    def deleteShouldMonitorLatency: Self = this.set("shouldMonitorLatency", js.undefined)
+    def setTopicBuildFinishMsec(value: String): Self = StObject.set(x, "topicBuildFinishMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriberReceiveMsec(value: String): Self = this.set("subscriberReceiveMsec", value.asInstanceOf[js.Any])
+    def setTopicBuildFinishMsecUndefined: Self = StObject.set(x, "topicBuildFinishMsec", js.undefined)
     
     @scala.inline
-    def deleteSubscriberReceiveMsec: Self = this.set("subscriberReceiveMsec", js.undefined)
+    def setTopicBuildStartMsec(value: String): Self = StObject.set(x, "topicBuildStartMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicBuildFinishMsec(value: String): Self = this.set("topicBuildFinishMsec", value.asInstanceOf[js.Any])
+    def setTopicBuildStartMsecUndefined: Self = StObject.set(x, "topicBuildStartMsec", js.undefined)
     
     @scala.inline
-    def deleteTopicBuildFinishMsec: Self = this.set("topicBuildFinishMsec", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicBuildStartMsec(value: String): Self = this.set("topicBuildStartMsec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicBuildStartMsec: Self = this.set("topicBuildStartMsec", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

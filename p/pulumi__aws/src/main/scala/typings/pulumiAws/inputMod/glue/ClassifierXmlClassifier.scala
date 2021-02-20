@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.glue
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassifierXmlClassifier extends js.Object {
+trait ClassifierXmlClassifier extends StObject {
   
   /**
     * An identifier of the data format that the classifier matches.
@@ -27,24 +28,12 @@ object ClassifierXmlClassifier {
   }
   
   @scala.inline
-  implicit class ClassifierXmlClassifierOps[Self <: ClassifierXmlClassifier] (val x: Self) extends AnyVal {
+  implicit class ClassifierXmlClassifierMutableBuilder[Self <: ClassifierXmlClassifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassification(value: Input[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClassification(value: Input[String]): Self = this.set("classification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowTag(value: Input[String]): Self = this.set("rowTag", value.asInstanceOf[js.Any])
+    def setRowTag(value: Input[String]): Self = StObject.set(x, "rowTag", value.asInstanceOf[js.Any])
   }
 }

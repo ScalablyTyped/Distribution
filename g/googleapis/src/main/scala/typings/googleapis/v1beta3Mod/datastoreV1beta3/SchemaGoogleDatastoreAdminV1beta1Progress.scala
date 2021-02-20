@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Measures the progress of a particular metric.
   */
 @js.native
-trait SchemaGoogleDatastoreAdminV1beta1Progress extends js.Object {
+trait SchemaGoogleDatastoreAdminV1beta1Progress extends StObject {
   
   /**
     * The amount of work that has been completed. Note that this may be greater
@@ -31,30 +32,18 @@ object SchemaGoogleDatastoreAdminV1beta1Progress {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1beta1ProgressOps[Self <: SchemaGoogleDatastoreAdminV1beta1Progress] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDatastoreAdminV1beta1ProgressMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1beta1Progress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkCompleted(value: String): Self = StObject.set(x, "workCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWorkCompletedUndefined: Self = StObject.set(x, "workCompleted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkEstimated(value: String): Self = StObject.set(x, "workEstimated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkCompleted(value: String): Self = this.set("workCompleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkCompleted: Self = this.set("workCompleted", js.undefined)
-    
-    @scala.inline
-    def setWorkEstimated(value: String): Self = this.set("workEstimated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkEstimated: Self = this.set("workEstimated", js.undefined)
+    def setWorkEstimatedUndefined: Self = StObject.set(x, "workEstimated", js.undefined)
   }
 }

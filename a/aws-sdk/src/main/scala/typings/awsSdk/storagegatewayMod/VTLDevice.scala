@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VTLDevice extends js.Object {
+trait VTLDevice extends StObject {
   
   /**
     * A list of iSCSI information about a VTL device.
@@ -41,48 +42,36 @@ object VTLDevice {
   }
   
   @scala.inline
-  implicit class VTLDeviceOps[Self <: VTLDevice] (val x: Self) extends AnyVal {
+  implicit class VTLDeviceMutableBuilder[Self <: VTLDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceiSCSIAttributes(value: DeviceiSCSIAttributes): Self = StObject.set(x, "DeviceiSCSIAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceiSCSIAttributesUndefined: Self = StObject.set(x, "DeviceiSCSIAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVTLDeviceARN(value: VTLDeviceARN): Self = StObject.set(x, "VTLDeviceARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceiSCSIAttributes(value: DeviceiSCSIAttributes): Self = this.set("DeviceiSCSIAttributes", value.asInstanceOf[js.Any])
+    def setVTLDeviceARNUndefined: Self = StObject.set(x, "VTLDeviceARN", js.undefined)
     
     @scala.inline
-    def deleteDeviceiSCSIAttributes: Self = this.set("DeviceiSCSIAttributes", js.undefined)
+    def setVTLDeviceProductIdentifier(value: VTLDeviceProductIdentifier): Self = StObject.set(x, "VTLDeviceProductIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVTLDeviceARN(value: VTLDeviceARN): Self = this.set("VTLDeviceARN", value.asInstanceOf[js.Any])
+    def setVTLDeviceProductIdentifierUndefined: Self = StObject.set(x, "VTLDeviceProductIdentifier", js.undefined)
     
     @scala.inline
-    def deleteVTLDeviceARN: Self = this.set("VTLDeviceARN", js.undefined)
+    def setVTLDeviceType(value: VTLDeviceType): Self = StObject.set(x, "VTLDeviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVTLDeviceProductIdentifier(value: VTLDeviceProductIdentifier): Self = this.set("VTLDeviceProductIdentifier", value.asInstanceOf[js.Any])
+    def setVTLDeviceTypeUndefined: Self = StObject.set(x, "VTLDeviceType", js.undefined)
     
     @scala.inline
-    def deleteVTLDeviceProductIdentifier: Self = this.set("VTLDeviceProductIdentifier", js.undefined)
+    def setVTLDeviceVendor(value: VTLDeviceVendor): Self = StObject.set(x, "VTLDeviceVendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVTLDeviceType(value: VTLDeviceType): Self = this.set("VTLDeviceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVTLDeviceType: Self = this.set("VTLDeviceType", js.undefined)
-    
-    @scala.inline
-    def setVTLDeviceVendor(value: VTLDeviceVendor): Self = this.set("VTLDeviceVendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVTLDeviceVendor: Self = this.set("VTLDeviceVendor", js.undefined)
+    def setVTLDeviceVendorUndefined: Self = StObject.set(x, "VTLDeviceVendor", js.undefined)
   }
 }

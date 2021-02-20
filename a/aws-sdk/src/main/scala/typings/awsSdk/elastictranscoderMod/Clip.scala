@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Clip extends js.Object {
+trait Clip extends StObject {
   
   /**
     * Settings that determine when a clip begins and how long it lasts.
@@ -21,24 +22,12 @@ object Clip {
   }
   
   @scala.inline
-  implicit class ClipOps[Self <: Clip] (val x: Self) extends AnyVal {
+  implicit class ClipMutableBuilder[Self <: Clip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimeSpan(value: TimeSpan): Self = StObject.set(x, "TimeSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTimeSpan(value: TimeSpan): Self = this.set("TimeSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSpan: Self = this.set("TimeSpan", js.undefined)
+    def setTimeSpanUndefined: Self = StObject.set(x, "TimeSpan", js.undefined)
   }
 }

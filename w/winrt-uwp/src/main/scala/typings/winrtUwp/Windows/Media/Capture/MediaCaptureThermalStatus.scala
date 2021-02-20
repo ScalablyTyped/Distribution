@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaCaptureThermalStatus extends js.Object
+sealed trait MediaCaptureThermalStatus extends StObject
 /** Specifies the thermal status of a media capture device. */
 @JSGlobal("Windows.Media.Capture.MediaCaptureThermalStatus")
 @js.native
-object MediaCaptureThermalStatus extends js.Object {
+object MediaCaptureThermalStatus extends StObject {
   
   /** The thermal state is normal. */
   @js.native

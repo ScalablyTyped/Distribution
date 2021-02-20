@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The data included in a domain or series.
   */
 @js.native
-trait SchemaChartData extends js.Object {
+trait SchemaChartData extends StObject {
   
   /**
     * The source ranges of the data.
@@ -24,24 +25,12 @@ object SchemaChartData {
   }
   
   @scala.inline
-  implicit class SchemaChartDataOps[Self <: SchemaChartData] (val x: Self) extends AnyVal {
+  implicit class SchemaChartDataMutableBuilder[Self <: SchemaChartData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceRange(value: SchemaChartSourceRange): Self = StObject.set(x, "sourceRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSourceRange(value: SchemaChartSourceRange): Self = this.set("sourceRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceRange: Self = this.set("sourceRange", js.undefined)
+    def setSourceRangeUndefined: Self = StObject.set(x, "sourceRange", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDRTAccessResponse extends js.Object {
+trait DescribeDRTAccessResponse extends StObject {
   
   /**
     * The list of Amazon S3 buckets accessed by the DRT.
@@ -26,33 +27,21 @@ object DescribeDRTAccessResponse {
   }
   
   @scala.inline
-  implicit class DescribeDRTAccessResponseOps[Self <: DescribeDRTAccessResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDRTAccessResponseMutableBuilder[Self <: DescribeDRTAccessResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogBucketList(value: LogBucketList): Self = StObject.set(x, "LogBucketList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogBucketListUndefined: Self = StObject.set(x, "LogBucketList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogBucketListVarargs(value: LogBucket*): Self = StObject.set(x, "LogBucketList", js.Array(value :_*))
     
     @scala.inline
-    def setLogBucketListVarargs(value: LogBucket*): Self = this.set("LogBucketList", js.Array(value :_*))
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogBucketList(value: LogBucketList): Self = this.set("LogBucketList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogBucketList: Self = this.set("LogBucketList", js.undefined)
-    
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

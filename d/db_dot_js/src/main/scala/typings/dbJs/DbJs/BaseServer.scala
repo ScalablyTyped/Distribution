@@ -1,12 +1,13 @@
 package typings.dbJs.DbJs
 
 import typings.std.IDBDatabase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseServer extends js.Object {
+trait BaseServer extends StObject {
   
   def close(): Unit = js.native
   
@@ -21,24 +22,12 @@ object BaseServer {
   }
   
   @scala.inline
-  implicit class BaseServerOps[Self <: BaseServer] (val x: Self) extends AnyVal {
+  implicit class BaseServerMutableBuilder[Self <: BaseServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIndexedDB(value: () => IDBDatabase): Self = this.set("getIndexedDB", js.Any.fromFunction0(value))
+    def setGetIndexedDB(value: () => IDBDatabase): Self = StObject.set(x, "getIndexedDB", js.Any.fromFunction0(value))
   }
 }

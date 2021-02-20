@@ -1,17 +1,19 @@
 package typings.gitlab
 
+import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.GetResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/services/SidekiqMetrics", JSImport.Namespace)
-@js.native
-object sidekiqMetricsMod extends js.Object {
+object sidekiqMetricsMod {
   
+  @JSImport("gitlab/dist/types/core/services/SidekiqMetrics", "SidekiqMetrics")
   @js.native
   class SidekiqMetrics () extends BaseService {
+    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def compoundMetrics(): js.Promise[GetResponse] = js.native
     

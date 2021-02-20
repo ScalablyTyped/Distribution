@@ -1,16 +1,16 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTTransferMode extends js.Object
+sealed trait EnumDWTTransferMode extends StObject
 /** ICAP_XFERMECH values. */
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_TransferMode")
 @js.native
-object EnumDWTTransferMode extends js.Object {
+object EnumDWTTransferMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTTransferMode with Double] = js.native
@@ -18,14 +18,12 @@ object EnumDWTTransferMode extends js.Object {
   /** Disk File Mode Transfers. */
   @js.native
   sealed trait TWSX_FILE extends EnumDWTTransferMode
-  /* 1 */ @js.native
-  object TWSX_FILE extends TopLevel[TWSX_FILE with Double]
+  /* 1 */ val TWSX_FILE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTransferMode.TWSX_FILE with Double = js.native
   
   /** Buffered Memory Mode Transfers. */
   @js.native
   sealed trait TWSX_MEMORY extends EnumDWTTransferMode
-  /* 2 */ @js.native
-  object TWSX_MEMORY extends TopLevel[TWSX_MEMORY with Double]
+  /* 2 */ val TWSX_MEMORY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTransferMode.TWSX_MEMORY with Double = js.native
   
   /**
     * Native transfers require the data to be transferred to a single large block of RAM. Therefore,
@@ -33,6 +31,5 @@ object EnumDWTTransferMode extends js.Object {
     */
   @js.native
   sealed trait TWSX_NATIVE extends EnumDWTTransferMode
-  /* 0 */ @js.native
-  object TWSX_NATIVE extends TopLevel[TWSX_NATIVE with Double]
+  /* 0 */ val TWSX_NATIVE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTransferMode.TWSX_NATIVE with Double = js.native
 }

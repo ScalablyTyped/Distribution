@@ -1,5 +1,6 @@
 package typings.googleapis.fileV1Mod.fileV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * File share configuration for the instance.
   */
 @js.native
-trait SchemaFileShareConfig extends js.Object {
+trait SchemaFileShareConfig extends StObject {
   
   /**
     * File share capacity in gigabytes (GB). Cloud Filestore defines 1 GB as
@@ -30,30 +31,18 @@ object SchemaFileShareConfig {
   }
   
   @scala.inline
-  implicit class SchemaFileShareConfigOps[Self <: SchemaFileShareConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaFileShareConfigMutableBuilder[Self <: SchemaFileShareConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityGb(value: String): Self = StObject.set(x, "capacityGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityGbUndefined: Self = StObject.set(x, "capacityGb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityGb(value: String): Self = this.set("capacityGb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapacityGb: Self = this.set("capacityGb", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

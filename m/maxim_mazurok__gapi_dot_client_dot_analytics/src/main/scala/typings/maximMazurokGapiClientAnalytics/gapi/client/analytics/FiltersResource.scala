@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientAnalytics.anon.FilterId
 import typings.maximMazurokGapiClientAnalytics.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientAnalytics.anon.Maxresults
 import typings.maximMazurokGapiClientAnalytics.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FiltersResource extends js.Object {
+trait FiltersResource extends StObject {
   
   /** Delete a filter. */
   def delete(): Request[Filter] = js.native

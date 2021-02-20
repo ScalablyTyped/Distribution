@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactStoreAccessType extends js.Object
+sealed trait ContactStoreAccessType extends StObject
 /** Defines the type of access the app has to the ContactStore . */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactStoreAccessType")
 @js.native
-object ContactStoreAccessType extends js.Object {
+object ContactStoreAccessType extends StObject {
   
   /** Read access to all app and system contacts. This value requires the contacts capability. See App capability declarations for more information. */
   @js.native

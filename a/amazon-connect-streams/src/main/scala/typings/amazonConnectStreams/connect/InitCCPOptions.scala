@@ -1,11 +1,12 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitCCPOptions extends js.Object {
+trait InitCCPOptions extends StObject {
   
   /**
     * The URL of the CCP.
@@ -47,51 +48,39 @@ object InitCCPOptions {
   }
   
   @scala.inline
-  implicit class InitCCPOptionsOps[Self <: InitCCPOptions] (val x: Self) extends AnyVal {
+  implicit class InitCCPOptionsMutableBuilder[Self <: InitCCPOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCcpUrl(value: String): Self = StObject.set(x, "ccpUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoginPopup(value: Boolean): Self = StObject.set(x, "loginPopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoginPopupAutoClose(value: Boolean): Self = StObject.set(x, "loginPopupAutoClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcpUrl(value: String): Self = this.set("ccpUrl", value.asInstanceOf[js.Any])
+    def setLoginPopupAutoCloseUndefined: Self = StObject.set(x, "loginPopupAutoClose", js.undefined)
     
     @scala.inline
-    def setLoginPopup(value: Boolean): Self = this.set("loginPopup", value.asInstanceOf[js.Any])
+    def setLoginPopupUndefined: Self = StObject.set(x, "loginPopup", js.undefined)
     
     @scala.inline
-    def deleteLoginPopup: Self = this.set("loginPopup", js.undefined)
+    def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginPopupAutoClose(value: Boolean): Self = this.set("loginPopupAutoClose", value.asInstanceOf[js.Any])
+    def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
     
     @scala.inline
-    def deleteLoginPopupAutoClose: Self = this.set("loginPopupAutoClose", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginUrl(value: String): Self = this.set("loginUrl", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteLoginUrl: Self = this.set("loginUrl", js.undefined)
+    def setSoftphone(value: SoftPhoneOptions): Self = StObject.set(x, "softphone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
-    
-    @scala.inline
-    def setSoftphone(value: SoftPhoneOptions): Self = this.set("softphone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoftphone: Self = this.set("softphone", js.undefined)
+    def setSoftphoneUndefined: Self = StObject.set(x, "softphone", js.undefined)
   }
 }

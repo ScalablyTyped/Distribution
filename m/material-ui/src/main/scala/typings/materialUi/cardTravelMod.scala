@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/action/card-travel", JSImport.Namespace)
-@js.native
-object cardTravelMod extends js.Object {
+object cardTravelMod {
   
+  @JSImport("material-ui/svg-icons/action/card-travel", JSImport.Default)
+  @js.native
+  class default () extends ActionCardTravel
+  
+  @JSImport("material-ui/svg-icons/action/card-travel", "ActionCardTravel")
   @js.native
   class ActionCardTravel ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

@@ -1,12 +1,13 @@
 package typings.three.anon
 
 import typings.three.uniformsLibMod.IUniform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvMap extends js.Object {
+trait EnvMap extends StObject {
   
   var envMap: IUniform = js.native
   
@@ -33,33 +34,21 @@ object EnvMap {
   }
   
   @scala.inline
-  implicit class EnvMapOps[Self <: EnvMap] (val x: Self) extends AnyVal {
+  implicit class EnvMapMutableBuilder[Self <: EnvMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvMap(value: IUniform): Self = StObject.set(x, "envMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlipEnvMap(value: IUniform): Self = StObject.set(x, "flipEnvMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxMipLevel(value: IUniform): Self = StObject.set(x, "maxMipLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvMap(value: IUniform): Self = this.set("envMap", value.asInstanceOf[js.Any])
+    def setReflectivity(value: IUniform): Self = StObject.set(x, "reflectivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlipEnvMap(value: IUniform): Self = this.set("flipEnvMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxMipLevel(value: IUniform): Self = this.set("maxMipLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReflectivity(value: IUniform): Self = this.set("reflectivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefractionRatio(value: IUniform): Self = this.set("refractionRatio", value.asInstanceOf[js.Any])
+    def setRefractionRatio(value: IUniform): Self = StObject.set(x, "refractionRatio", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.typedoc.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Area extends js.Object {
+trait Area extends StObject {
   
   var area: Boolean = js.native
   
@@ -59,60 +60,48 @@ object Area {
   }
   
   @scala.inline
-  implicit class AreaOps[Self <: Area] (val x: Self) extends AnyVal {
+  implicit class AreaMutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: Boolean): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBase(value: Boolean): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBr(value: Boolean): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: Boolean): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setCol(value: Boolean): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: Boolean): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setCommand(value: Boolean): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBr(value: Boolean): Self = this.set("br", value.asInstanceOf[js.Any])
+    def setEmbed(value: Boolean): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCol(value: Boolean): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setHr(value: Boolean): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: Boolean): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setImg(value: Boolean): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbed(value: Boolean): Self = this.set("embed", value.asInstanceOf[js.Any])
+    def setInput(value: Boolean): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHr(value: Boolean): Self = this.set("hr", value.asInstanceOf[js.Any])
+    def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImg(value: Boolean): Self = this.set("img", value.asInstanceOf[js.Any])
+    def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: Boolean): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setParam(value: Boolean): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: Boolean): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: Boolean): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParam(value: Boolean): Self = this.set("param", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: Boolean): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWbr(value: Boolean): Self = this.set("wbr", value.asInstanceOf[js.Any])
+    def setWbr(value: Boolean): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
   }
 }

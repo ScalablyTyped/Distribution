@@ -3,13 +3,14 @@ package typings.leafletGeosearch.mod
 import typings.leafletGeosearch.leafletGeosearchNumbers.`-1`
 import typings.leafletGeosearch.leafletGeosearchNumbers.`0`
 import typings.leafletGeosearch.leafletGeosearchNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  key :string,   adminDistrict :string | undefined,   includeNeighborhood :-1 | 0 | 1 | undefined,   inclnb :-1 | 0 | 1 | undefined,   include :string | undefined,   incl :string | undefined,   maxResults :number | undefined} & leaflet-geosearch.leaflet-geosearch.BingProviderCultureOptions & leaflet-geosearch.leaflet-geosearch.BingProviderUserContextOptions */
 @js.native
-trait BingProviderOptions extends js.Object {
+trait BingProviderOptions extends StObject {
   
   var adminDistrict: js.UndefOr[String] = js.native
   
@@ -52,111 +53,99 @@ object BingProviderOptions {
   }
   
   @scala.inline
-  implicit class BingProviderOptionsOps[Self <: BingProviderOptions] (val x: Self) extends AnyVal {
+  implicit class BingProviderOptionsMutableBuilder[Self <: BingProviderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminDistrict(value: String): Self = StObject.set(x, "adminDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminDistrictUndefined: Self = StObject.set(x, "adminDistrict", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
     @scala.inline
-    def setAdminDistrict(value: String): Self = this.set("adminDistrict", value.asInstanceOf[js.Any])
+    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdminDistrict: Self = this.set("adminDistrict", js.undefined)
+    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
     @scala.inline
-    def setC(value: String): Self = this.set("c", value.asInstanceOf[js.Any])
+    def setIncl(value: String): Self = StObject.set(x, "incl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteC: Self = this.set("c", js.undefined)
+    def setInclUndefined: Self = StObject.set(x, "incl", js.undefined)
     
     @scala.inline
-    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    def setInclnb(value: `-1` | `0` | `1`): Self = StObject.set(x, "inclnb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCulture: Self = this.set("culture", js.undefined)
+    def setInclnbUndefined: Self = StObject.set(x, "inclnb", js.undefined)
     
     @scala.inline
-    def setIncl(value: String): Self = this.set("incl", value.asInstanceOf[js.Any])
+    def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncl: Self = this.set("incl", js.undefined)
+    def setIncludeNeighborhood(value: `-1` | `0` | `1`): Self = StObject.set(x, "includeNeighborhood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclnb(value: `-1` | `0` | `1`): Self = this.set("inclnb", value.asInstanceOf[js.Any])
+    def setIncludeNeighborhoodUndefined: Self = StObject.set(x, "includeNeighborhood", js.undefined)
     
     @scala.inline
-    def deleteInclnb: Self = this.set("inclnb", js.undefined)
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def setInclude(value: String): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNeighborhood(value: `-1` | `0` | `1`): Self = this.set("includeNeighborhood", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteIncludeNeighborhood: Self = this.set("includeNeighborhood", js.undefined)
+    def setUl(value: String): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setUmv(value: String): Self = StObject.set(x, "umv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUl(value: String): Self = this.set("ul", value.asInstanceOf[js.Any])
+    def setUmvUndefined: Self = StObject.set(x, "umv", js.undefined)
     
     @scala.inline
-    def deleteUl: Self = this.set("ul", js.undefined)
+    def setUr(value: String): Self = StObject.set(x, "ur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUmv(value: String): Self = this.set("umv", value.asInstanceOf[js.Any])
+    def setUrUndefined: Self = StObject.set(x, "ur", js.undefined)
     
     @scala.inline
-    def deleteUmv: Self = this.set("umv", js.undefined)
+    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUr(value: String): Self = this.set("ur", value.asInstanceOf[js.Any])
+    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
     
     @scala.inline
-    def deleteUr: Self = this.set("ur", js.undefined)
+    def setUserLocation(value: String): Self = StObject.set(x, "userLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
+    def setUserLocationUndefined: Self = StObject.set(x, "userLocation", js.undefined)
     
     @scala.inline
-    def deleteUserIp: Self = this.set("userIp", js.undefined)
+    def setUserMapView(value: String): Self = StObject.set(x, "userMapView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserLocation(value: String): Self = this.set("userLocation", value.asInstanceOf[js.Any])
+    def setUserMapViewUndefined: Self = StObject.set(x, "userMapView", js.undefined)
     
     @scala.inline
-    def deleteUserLocation: Self = this.set("userLocation", js.undefined)
+    def setUserRegion(value: String): Self = StObject.set(x, "userRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserMapView(value: String): Self = this.set("userMapView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserMapView: Self = this.set("userMapView", js.undefined)
-    
-    @scala.inline
-    def setUserRegion(value: String): Self = this.set("userRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRegion: Self = this.set("userRegion", js.undefined)
+    def setUserRegionUndefined: Self = StObject.set(x, "userRegion", js.undefined)
   }
 }

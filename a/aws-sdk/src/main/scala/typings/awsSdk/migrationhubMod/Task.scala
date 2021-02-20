@@ -1,11 +1,12 @@
 package typings.awsSdk.migrationhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Task extends js.Object {
+trait Task extends StObject {
   
   /**
     * Indication of the percentage completion of the task.
@@ -31,33 +32,21 @@ object Task {
   }
   
   @scala.inline
-  implicit class TaskOps[Self <: Task] (val x: Self) extends AnyVal {
+  implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusDetail(value: StatusDetail): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressPercent(value: ProgressPercent): Self = this.set("ProgressPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressPercent: Self = this.set("ProgressPercent", js.undefined)
-    
-    @scala.inline
-    def setStatusDetail(value: StatusDetail): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
+    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
   }
 }

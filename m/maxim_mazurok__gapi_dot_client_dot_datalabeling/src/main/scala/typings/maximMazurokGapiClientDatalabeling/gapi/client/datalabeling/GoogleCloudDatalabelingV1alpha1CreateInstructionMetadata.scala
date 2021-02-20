@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1alpha1CreateInstructionMetadata extends js.Object {
+trait GoogleCloudDatalabelingV1alpha1CreateInstructionMetadata extends StObject {
   
   /** Timestamp when create instruction request was created. */
   var createTime: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object GoogleCloudDatalabelingV1alpha1CreateInstructionMetadata {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1alpha1CreateInstructionMetadataOps[Self <: GoogleCloudDatalabelingV1alpha1CreateInstructionMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1alpha1CreateInstructionMetadataMutableBuilder[Self <: GoogleCloudDatalabelingV1alpha1CreateInstructionMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setInstructionUndefined: Self = StObject.set(x, "instruction", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setPartialFailures(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "partialFailures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstruction(value: String): Self = this.set("instruction", value.asInstanceOf[js.Any])
+    def setPartialFailuresUndefined: Self = StObject.set(x, "partialFailures", js.undefined)
     
     @scala.inline
-    def deleteInstruction: Self = this.set("instruction", js.undefined)
-    
-    @scala.inline
-    def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = this.set("partialFailures", js.Array(value :_*))
-    
-    @scala.inline
-    def setPartialFailures(value: js.Array[GoogleRpcStatus]): Self = this.set("partialFailures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartialFailures: Self = this.set("partialFailures", js.undefined)
+    def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value :_*))
   }
 }

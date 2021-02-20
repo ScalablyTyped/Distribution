@@ -4,6 +4,7 @@ import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable
 import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTableCollection
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -319,225 +320,213 @@ object Result {
   }
   
   @scala.inline
-  implicit class ResultOps[Self <: Result] (val x: Self) extends AnyVal {
+  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: (String, String, String, String, String, String, String, String, String) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction9(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeQueryLanguage(value: Double => Unit): Self = StObject.set(x, "changeQueryLanguage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeQueryTerm(value: js.Any => Unit): Self = StObject.set(x, "changeQueryTerm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActivate(value: (String, String, String, String, String, String, String, String, String) => Unit): Self = this.set("activate", js.Any.fromFunction9(value))
+    def setGet_advancedSearchPageAddress(value: () => String): Self = StObject.set(x, "get_advancedSearchPageAddress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeQueryLanguage(value: Double => Unit): Self = this.set("changeQueryLanguage", js.Any.fromFunction1(value))
+    def setGet_advancedUrl(value: () => String): Self = StObject.set(x, "get_advancedUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeQueryTerm(value: js.Any => Unit): Self = this.set("changeQueryTerm", js.Any.fromFunction1(value))
+    def setGet_currentPageNumber(value: () => Double): Self = StObject.set(x, "get_currentPageNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_advancedSearchPageAddress(value: () => String): Self = this.set("get_advancedSearchPageAddress", js.Any.fromFunction0(value))
+    def setGet_currentTerm(value: () => String): Self = StObject.set(x, "get_currentTerm", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_advancedUrl(value: () => String): Self = this.set("get_advancedUrl", js.Any.fromFunction0(value))
+    def setGet_emptyRefinementMessageId(value: () => String): Self = StObject.set(x, "get_emptyRefinementMessageId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_currentPageNumber(value: () => Double): Self = this.set("get_currentPageNumber", js.Any.fromFunction0(value))
+    def setGet_groupTemplateId(value: () => String): Self = StObject.set(x, "get_groupTemplateId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_currentTerm(value: () => String): Self = this.set("get_currentTerm", js.Any.fromFunction0(value))
+    def setGet_initialPrompt(value: () => String): Self = StObject.set(x, "get_initialPrompt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_emptyRefinementMessageId(value: () => String): Self = this.set("get_emptyRefinementMessageId", js.Any.fromFunction0(value))
+    def setGet_itemBodyTemplateId(value: () => String): Self = StObject.set(x, "get_itemBodyTemplateId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_groupTemplateId(value: () => String): Self = this.set("get_groupTemplateId", js.Any.fromFunction0(value))
+    def setGet_itemTemplateId(value: () => String): Self = StObject.set(x, "get_itemTemplateId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_initialPrompt(value: () => String): Self = this.set("get_initialPrompt", js.Any.fromFunction0(value))
+    def setGet_maxPagesAfterCurrent(value: () => Double): Self = StObject.set(x, "get_maxPagesAfterCurrent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_itemBodyTemplateId(value: () => String): Self = this.set("get_itemBodyTemplateId", js.Any.fromFunction0(value))
+    def setGet_maxPagesBeforeCurrent(value: () => Double): Self = StObject.set(x, "get_maxPagesBeforeCurrent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_itemTemplateId(value: () => String): Self = this.set("get_itemTemplateId", js.Any.fromFunction0(value))
+    def setGet_pagingInfo(value: () => js.Any): Self = StObject.set(x, "get_pagingInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_maxPagesAfterCurrent(value: () => Double): Self = this.set("get_maxPagesAfterCurrent", js.Any.fromFunction0(value))
+    def setGet_preloadedItemTemplateIds(value: () => js.Array[String]): Self = StObject.set(x, "get_preloadedItemTemplateIds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_maxPagesBeforeCurrent(value: () => Double): Self = this.set("get_maxPagesBeforeCurrent", js.Any.fromFunction0(value))
+    def setGet_repositionLanguageDropDown(value: () => Boolean): Self = StObject.set(x, "get_repositionLanguageDropDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_pagingInfo(value: () => js.Any): Self = this.set("get_pagingInfo", js.Any.fromFunction0(value))
+    def setGet_scrollToTopOnRedraw(value: () => Boolean): Self = StObject.set(x, "get_scrollToTopOnRedraw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_preloadedItemTemplateIds(value: () => js.Array[String]): Self = this.set("get_preloadedItemTemplateIds", js.Any.fromFunction0(value))
+    def setGet_selectedRefinementControls(value: () => js.Array[CSRRefinementControl]): Self = StObject.set(x, "get_selectedRefinementControls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_repositionLanguageDropDown(value: () => Boolean): Self = this.set("get_repositionLanguageDropDown", js.Any.fromFunction0(value))
+    def setGet_showAdvancedLink(value: () => Boolean): Self = StObject.set(x, "get_showAdvancedLink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_scrollToTopOnRedraw(value: () => Boolean): Self = this.set("get_scrollToTopOnRedraw", js.Any.fromFunction0(value))
+    def setGet_showAlertMe(value: () => Boolean): Self = StObject.set(x, "get_showAlertMe", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_selectedRefinementControls(value: () => js.Array[CSRRefinementControl]): Self = this.set("get_selectedRefinementControls", js.Any.fromFunction0(value))
+    def setGet_showBestBets(value: () => Boolean): Self = StObject.set(x, "get_showBestBets", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showAdvancedLink(value: () => Boolean): Self = this.set("get_showAdvancedLink", js.Any.fromFunction0(value))
+    def setGet_showDefinitions(value: () => Boolean): Self = StObject.set(x, "get_showDefinitions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showAlertMe(value: () => Boolean): Self = this.set("get_showAlertMe", js.Any.fromFunction0(value))
+    def setGet_showDidYouMean(value: () => Boolean): Self = StObject.set(x, "get_showDidYouMean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showBestBets(value: () => Boolean): Self = this.set("get_showBestBets", js.Any.fromFunction0(value))
+    def setGet_showLanguageOptions(value: () => Boolean): Self = StObject.set(x, "get_showLanguageOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showDefinitions(value: () => Boolean): Self = this.set("get_showDefinitions", js.Any.fromFunction0(value))
+    def setGet_showNavigation(value: () => Boolean): Self = StObject.set(x, "get_showNavigation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showDidYouMean(value: () => Boolean): Self = this.set("get_showDidYouMean", js.Any.fromFunction0(value))
+    def setGet_showPaging(value: () => Boolean): Self = StObject.set(x, "get_showPaging", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showLanguageOptions(value: () => Boolean): Self = this.set("get_showLanguageOptions", js.Any.fromFunction0(value))
+    def setGet_showPersonalFavorites(value: () => Boolean): Self = StObject.set(x, "get_showPersonalFavorites", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showNavigation(value: () => Boolean): Self = this.set("get_showNavigation", js.Any.fromFunction0(value))
+    def setGet_showPreferencesLink(value: () => Boolean): Self = StObject.set(x, "get_showPreferencesLink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showPaging(value: () => Boolean): Self = this.set("get_showPaging", js.Any.fromFunction0(value))
+    def setGet_showQuerySuggestions(value: () => Boolean): Self = StObject.set(x, "get_showQuerySuggestions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showPersonalFavorites(value: () => Boolean): Self = this.set("get_showPersonalFavorites", js.Any.fromFunction0(value))
+    def setGet_showResultCount(value: () => Boolean): Self = StObject.set(x, "get_showResultCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showPreferencesLink(value: () => Boolean): Self = this.set("get_showPreferencesLink", js.Any.fromFunction0(value))
+    def setGet_showResults(value: () => Boolean): Self = StObject.set(x, "get_showResults", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showQuerySuggestions(value: () => Boolean): Self = this.set("get_showQuerySuggestions", js.Any.fromFunction0(value))
+    def setGet_showSortOptions(value: () => Boolean): Self = StObject.set(x, "get_showSortOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showResultCount(value: () => Boolean): Self = this.set("get_showResultCount", js.Any.fromFunction0(value))
+    def setGet_showUpScopeMessage(value: () => Boolean): Self = StObject.set(x, "get_showUpScopeMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showResults(value: () => Boolean): Self = this.set("get_showResults", js.Any.fromFunction0(value))
+    def setGet_showViewDuplicates(value: () => Boolean): Self = StObject.set(x, "get_showViewDuplicates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showSortOptions(value: () => Boolean): Self = this.set("get_showSortOptions", js.Any.fromFunction0(value))
+    def setGet_useSimplifiedQueryBuilder(value: () => Boolean): Self = StObject.set(x, "get_useSimplifiedQueryBuilder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_showUpScopeMessage(value: () => Boolean): Self = this.set("get_showUpScopeMessage", js.Any.fromFunction0(value))
+    def setHandleClickOnCategoryLink(value: String => Unit): Self = StObject.set(x, "handleClickOnCategoryLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_showViewDuplicates(value: () => Boolean): Self = this.set("get_showViewDuplicates", js.Any.fromFunction0(value))
+    def setPage(value: Double => Unit): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_useSimplifiedQueryBuilder(value: () => Boolean): Self = this.set("get_useSimplifiedQueryBuilder", js.Any.fromFunction0(value))
+    def setProcessResultReady(value: ResultTableCollection => Unit): Self = StObject.set(x, "processResultReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandleClickOnCategoryLink(value: String => Unit): Self = this.set("handleClickOnCategoryLink", js.Any.fromFunction1(value))
+    def setSetAriaCollapsed(value: HTMLElement => Unit): Self = StObject.set(x, "setAriaCollapsed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPage(value: Double => Unit): Self = this.set("page", js.Any.fromFunction1(value))
+    def setSet_advancedUrl(value: String => String): Self = StObject.set(x, "set_advancedUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProcessResultReady(value: ResultTableCollection => Unit): Self = this.set("processResultReady", js.Any.fromFunction1(value))
+    def setSet_currentPageNumber(value: Double => Double): Self = StObject.set(x, "set_currentPageNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAriaCollapsed(value: HTMLElement => Unit): Self = this.set("setAriaCollapsed", js.Any.fromFunction1(value))
+    def setSet_groupTemplateId(value: String => String): Self = StObject.set(x, "set_groupTemplateId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_advancedUrl(value: String => String): Self = this.set("set_advancedUrl", js.Any.fromFunction1(value))
+    def setSet_itemBodyTemplateId(value: String => String): Self = StObject.set(x, "set_itemBodyTemplateId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_currentPageNumber(value: Double => Double): Self = this.set("set_currentPageNumber", js.Any.fromFunction1(value))
+    def setSet_itemTemplateId(value: String => String): Self = StObject.set(x, "set_itemTemplateId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_groupTemplateId(value: String => String): Self = this.set("set_groupTemplateId", js.Any.fromFunction1(value))
+    def setSet_maxPagesAfterCurrent(value: Double => Double): Self = StObject.set(x, "set_maxPagesAfterCurrent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_itemBodyTemplateId(value: String => String): Self = this.set("set_itemBodyTemplateId", js.Any.fromFunction1(value))
+    def setSet_maxPagesBeforeCurrent(value: Double => Double): Self = StObject.set(x, "set_maxPagesBeforeCurrent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_itemTemplateId(value: String => String): Self = this.set("set_itemTemplateId", js.Any.fromFunction1(value))
+    def setSet_preloadedItemTemplateIds(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "set_preloadedItemTemplateIds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_maxPagesAfterCurrent(value: Double => Double): Self = this.set("set_maxPagesAfterCurrent", js.Any.fromFunction1(value))
+    def setSet_repositionLanguageDropDown(value: Boolean => Boolean): Self = StObject.set(x, "set_repositionLanguageDropDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_maxPagesBeforeCurrent(value: Double => Double): Self = this.set("set_maxPagesBeforeCurrent", js.Any.fromFunction1(value))
+    def setSet_scrollToTopOnRedraw(value: Boolean => Boolean): Self = StObject.set(x, "set_scrollToTopOnRedraw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_preloadedItemTemplateIds(value: js.Array[String] => js.Array[String]): Self = this.set("set_preloadedItemTemplateIds", js.Any.fromFunction1(value))
+    def setSet_showAdvancedLink(value: Boolean => Boolean): Self = StObject.set(x, "set_showAdvancedLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_repositionLanguageDropDown(value: Boolean => Boolean): Self = this.set("set_repositionLanguageDropDown", js.Any.fromFunction1(value))
+    def setSet_showAlertMe(value: Boolean => Boolean): Self = StObject.set(x, "set_showAlertMe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_scrollToTopOnRedraw(value: Boolean => Boolean): Self = this.set("set_scrollToTopOnRedraw", js.Any.fromFunction1(value))
+    def setSet_showBestBets(value: Boolean => Boolean): Self = StObject.set(x, "set_showBestBets", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showAdvancedLink(value: Boolean => Boolean): Self = this.set("set_showAdvancedLink", js.Any.fromFunction1(value))
+    def setSet_showDefinitions(value: Boolean => Boolean): Self = StObject.set(x, "set_showDefinitions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showAlertMe(value: Boolean => Boolean): Self = this.set("set_showAlertMe", js.Any.fromFunction1(value))
+    def setSet_showDidYouMean(value: Boolean => Boolean): Self = StObject.set(x, "set_showDidYouMean", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showBestBets(value: Boolean => Boolean): Self = this.set("set_showBestBets", js.Any.fromFunction1(value))
+    def setSet_showLanguageOptions(value: Boolean => Boolean): Self = StObject.set(x, "set_showLanguageOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showDefinitions(value: Boolean => Boolean): Self = this.set("set_showDefinitions", js.Any.fromFunction1(value))
+    def setSet_showPaging(value: Boolean => Boolean): Self = StObject.set(x, "set_showPaging", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showDidYouMean(value: Boolean => Boolean): Self = this.set("set_showDidYouMean", js.Any.fromFunction1(value))
+    def setSet_showPersonalFavorites(value: Boolean => Boolean): Self = StObject.set(x, "set_showPersonalFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showLanguageOptions(value: Boolean => Boolean): Self = this.set("set_showLanguageOptions", js.Any.fromFunction1(value))
+    def setSet_showPreferencesLink(value: Boolean => Boolean): Self = StObject.set(x, "set_showPreferencesLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showPaging(value: Boolean => Boolean): Self = this.set("set_showPaging", js.Any.fromFunction1(value))
+    def setSet_showResultCount(value: Boolean => Boolean): Self = StObject.set(x, "set_showResultCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showPersonalFavorites(value: Boolean => Boolean): Self = this.set("set_showPersonalFavorites", js.Any.fromFunction1(value))
+    def setSet_showResults(value: Boolean => Boolean): Self = StObject.set(x, "set_showResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showPreferencesLink(value: Boolean => Boolean): Self = this.set("set_showPreferencesLink", js.Any.fromFunction1(value))
+    def setSet_showSortOptions(value: Boolean => Boolean): Self = StObject.set(x, "set_showSortOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showResultCount(value: Boolean => Boolean): Self = this.set("set_showResultCount", js.Any.fromFunction1(value))
+    def setSet_showUpScopeMessage(value: Boolean => Boolean): Self = StObject.set(x, "set_showUpScopeMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showResults(value: Boolean => Boolean): Self = this.set("set_showResults", js.Any.fromFunction1(value))
+    def setSet_showViewDuplicates(value: Boolean => Boolean): Self = StObject.set(x, "set_showViewDuplicates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showSortOptions(value: Boolean => Boolean): Self = this.set("set_showSortOptions", js.Any.fromFunction1(value))
+    def setSet_useSimplifiedQueryBuilder(value: Boolean => Boolean): Self = StObject.set(x, "set_useSimplifiedQueryBuilder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showUpScopeMessage(value: Boolean => Boolean): Self = this.set("set_showUpScopeMessage", js.Any.fromFunction1(value))
+    def setShouldShowTable(value: ResultTable => Boolean): Self = StObject.set(x, "shouldShowTable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_showViewDuplicates(value: Boolean => Boolean): Self = this.set("set_showViewDuplicates", js.Any.fromFunction1(value))
+    def setSort(value: String => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_useSimplifiedQueryBuilder(value: Boolean => Boolean): Self = this.set("set_useSimplifiedQueryBuilder", js.Any.fromFunction1(value))
+    def setSortOrRank(value: String => Unit): Self = StObject.set(x, "sortOrRank", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShouldShowTable(value: ResultTable => Boolean): Self = this.set("shouldShowTable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSort(value: String => Unit): Self = this.set("sort", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSortOrRank(value: String => Unit): Self = this.set("sortOrRank", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setViewDuplicates(value: Double => Unit): Self = this.set("viewDuplicates", js.Any.fromFunction1(value))
+    def setViewDuplicates(value: Double => Unit): Self = StObject.set(x, "viewDuplicates", js.Any.fromFunction1(value))
   }
 }

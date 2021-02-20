@@ -2,12 +2,13 @@ package typings.devextreme.anon
 
 import typings.devextreme.devextremeStrings.instantly
 import typings.devextreme.devextremeStrings.onDemand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplyChangesMode extends js.Object {
+trait ApplyChangesMode extends StObject {
   
   var allowSearch: js.UndefOr[Boolean] = js.native
   
@@ -38,74 +39,62 @@ object ApplyChangesMode {
   }
   
   @scala.inline
-  implicit class ApplyChangesModeOps[Self <: ApplyChangesMode] (val x: Self) extends AnyVal {
+  implicit class ApplyChangesModeMutableBuilder[Self <: ApplyChangesMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSearchUndefined: Self = StObject.set(x, "allowSearch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyChangesMode(value: instantly | onDemand): Self = StObject.set(x, "applyChangesMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSearch(value: Boolean): Self = this.set("allowSearch", value.asInstanceOf[js.Any])
+    def setApplyChangesModeUndefined: Self = StObject.set(x, "applyChangesMode", js.undefined)
     
     @scala.inline
-    def deleteAllowSearch: Self = this.set("allowSearch", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyChangesMode(value: instantly | onDemand): Self = this.set("applyChangesMode", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteApplyChangesMode: Self = this.set("applyChangesMode", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
     def setLayout(
       value: typings.devextreme.devextremeNumbers.`0` | typings.devextreme.devextremeNumbers.`1` | typings.devextreme.devextremeNumbers.`2`
-    ): Self = this.set("layout", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def setSearchTimeout(value: Double): Self = this.set("searchTimeout", value.asInstanceOf[js.Any])
+    def setSearchTimeout(value: Double): Self = StObject.set(x, "searchTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchTimeout: Self = this.set("searchTimeout", js.undefined)
+    def setSearchTimeoutUndefined: Self = StObject.set(x, "searchTimeout", js.undefined)
     
     @scala.inline
-    def setTexts(value: AllFields): Self = this.set("texts", value.asInstanceOf[js.Any])
+    def setTexts(value: AllFields): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTexts: Self = this.set("texts", js.undefined)
+    def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

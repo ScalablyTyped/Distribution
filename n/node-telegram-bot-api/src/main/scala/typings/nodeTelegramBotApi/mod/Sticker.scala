@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sticker extends js.Object {
+trait Sticker extends StObject {
   
   var emoji: js.UndefOr[String] = js.native
   
@@ -36,63 +37,51 @@ object Sticker {
   }
   
   @scala.inline
-  implicit class StickerOps[Self <: Sticker] (val x: Self) extends AnyVal {
+  implicit class StickerMutableBuilder[Self <: Sticker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFile_id(value: String): Self = StObject.set(x, "file_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile_id(value: String): Self = this.set("file_id", value.asInstanceOf[js.Any])
+    def setFile_size(value: Double): Self = StObject.set(x, "file_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile_unique_id(value: String): Self = this.set("file_unique_id", value.asInstanceOf[js.Any])
+    def setFile_sizeUndefined: Self = StObject.set(x, "file_size", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setFile_unique_id(value: String): Self = StObject.set(x, "file_unique_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_animated(value: Boolean): Self = this.set("is_animated", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setIs_animated(value: Boolean): Self = StObject.set(x, "is_animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmoji(value: String): Self = this.set("emoji", value.asInstanceOf[js.Any])
+    def setMask_position(value: MaskPosition): Self = StObject.set(x, "mask_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmoji: Self = this.set("emoji", js.undefined)
+    def setMask_positionUndefined: Self = StObject.set(x, "mask_position", js.undefined)
     
     @scala.inline
-    def setFile_size(value: Double): Self = this.set("file_size", value.asInstanceOf[js.Any])
+    def setSet_name(value: String): Self = StObject.set(x, "set_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile_size: Self = this.set("file_size", js.undefined)
+    def setSet_nameUndefined: Self = StObject.set(x, "set_name", js.undefined)
     
     @scala.inline
-    def setMask_position(value: MaskPosition): Self = this.set("mask_position", value.asInstanceOf[js.Any])
+    def setThumb(value: PhotoSize): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMask_position: Self = this.set("mask_position", js.undefined)
+    def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
     
     @scala.inline
-    def setSet_name(value: String): Self = this.set("set_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSet_name: Self = this.set("set_name", js.undefined)
-    
-    @scala.inline
-    def setThumb(value: PhotoSize): Self = this.set("thumb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumb: Self = this.set("thumb", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,30 +54,18 @@ object IArrowFunctionExpressionSyntax {
   }
   
   @scala.inline
-  implicit class IArrowFunctionExpressionSyntaxOps[Self <: IArrowFunctionExpressionSyntax] (val x: Self) extends AnyVal {
+  implicit class IArrowFunctionExpressionSyntaxMutableBuilder[Self <: IArrowFunctionExpressionSyntax] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: BlockSyntax): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEqualsGreaterThanToken(value: ISyntaxToken): Self = StObject.set(x, "equalsGreaterThanToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpression(value: IExpressionSyntax): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlock(value: BlockSyntax): Self = this.set("block", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEqualsGreaterThanToken(value: ISyntaxToken): Self = this.set("equalsGreaterThanToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpression(value: IExpressionSyntax): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsArrowFunctionExpression(value: () => Boolean): Self = this.set("isArrowFunctionExpression", js.Any.fromFunction0(value))
+    def setIsArrowFunctionExpression(value: () => Boolean): Self = StObject.set(x, "isArrowFunctionExpression", js.Any.fromFunction0(value))
   }
 }

@@ -5,14 +5,14 @@ import typings.ionicCore.ionicCoreStrings.inset
 import typings.ionicCore.ionicCoreStrings.none
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/list-header/list-header", JSImport.Namespace)
-@js.native
-object listHeaderMod extends js.Object {
+object listHeaderMod {
   
+  @JSImport("@ionic/core/dist/types/components/list-header/list-header", "ListHeader")
   @js.native
   class ListHeader () extends ComponentInterface {
     

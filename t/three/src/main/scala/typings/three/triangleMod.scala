@@ -4,16 +4,16 @@ import typings.three.box3Mod.Box3
 import typings.three.planeMod.Plane
 import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Triangle", JSImport.Namespace)
-@js.native
-object triangleMod extends js.Object {
+object triangleMod {
   
+  @JSImport("three/src/math/Triangle", "Triangle")
   @js.native
-  class Triangle () extends js.Object {
+  class Triangle () extends StObject {
     def this(a: Vector3) = this()
     def this(a: js.UndefOr[scala.Nothing], b: Vector3) = this()
     def this(a: Vector3, b: Vector3) = this()
@@ -66,15 +66,22 @@ object triangleMod extends js.Object {
     def setFromPointsAndIndices(points: js.Array[Vector3], i0: Double, i1: Double, i2: Double): Triangle = js.native
   }
   /* static members */
-  @js.native
-  object Triangle extends js.Object {
+  object Triangle {
     
+    @JSImport("three/src/math/Triangle", "Triangle.containsPoint")
+    @js.native
     def containsPoint(point: Vector3, a: Vector3, b: Vector3, c: Vector3): Boolean = js.native
     
+    @JSImport("three/src/math/Triangle", "Triangle.getBarycoord")
+    @js.native
     def getBarycoord(point: Vector3, a: Vector3, b: Vector3, c: Vector3, target: Vector3): Vector3 = js.native
     
+    @JSImport("three/src/math/Triangle", "Triangle.getNormal")
+    @js.native
     def getNormal(a: Vector3, b: Vector3, c: Vector3, target: Vector3): Vector3 = js.native
     
+    @JSImport("three/src/math/Triangle", "Triangle.getUV")
+    @js.native
     def getUV(
       point: Vector3,
       p1: Vector3,
@@ -86,6 +93,8 @@ object triangleMod extends js.Object {
       target: Vector2
     ): Vector2 = js.native
     
+    @JSImport("three/src/math/Triangle", "Triangle.isFrontFacing")
+    @js.native
     def isFrontFacing(a: Vector3, b: Vector3, c: Vector3, direction: Vector3): Boolean = js.native
   }
 }

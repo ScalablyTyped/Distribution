@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Single crop hint that is used to generate a new crop when serving an image.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p3beta1CropHint extends js.Object {
+trait SchemaGoogleCloudVisionV1p3beta1CropHint extends StObject {
   
   /**
     * The bounding polygon for the crop region. The coordinates of the bounding
@@ -36,36 +37,24 @@ object SchemaGoogleCloudVisionV1p3beta1CropHint {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1CropHintOps[Self <: SchemaGoogleCloudVisionV1p3beta1CropHint] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p3beta1CropHintMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1CropHint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p3beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p3beta1BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    def setImportanceFraction(value: Double): Self = StObject.set(x, "importanceFraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
-    
-    @scala.inline
-    def setImportanceFraction(value: Double): Self = this.set("importanceFraction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportanceFraction: Self = this.set("importanceFraction", js.undefined)
+    def setImportanceFractionUndefined: Self = StObject.set(x, "importanceFraction", js.undefined)
   }
 }

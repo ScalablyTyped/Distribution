@@ -1,11 +1,12 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceMap extends js.Object {
+trait SourceMap extends StObject {
   
   var file: String = js.native
   
@@ -38,48 +39,36 @@ object SourceMap {
   }
   
   @scala.inline
-  implicit class SourceMapOps[Self <: SourceMap] (val x: Self) extends AnyVal {
+  implicit class SourceMapMutableBuilder[Self <: SourceMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     
     @scala.inline
-    def setMappings(value: String): Self = this.set("mappings", value.asInstanceOf[js.Any])
+    def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
+    def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: js.Array[String]): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
     
     @scala.inline
-    def setSourcesVarargs(value: String*): Self = this.set("sources", js.Array(value :_*))
+    def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
     @scala.inline
-    def setSources(value: js.Array[String]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setToUrl(value: () => String): Self = StObject.set(x, "toUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSourcesContentVarargs(value: String*): Self = this.set("sourcesContent", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourcesContent(value: js.Array[String]): Self = this.set("sourcesContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToUrl(value: () => String): Self = this.set("toUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.jose.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jose.joseStrings.unwrapKey
   - typings.jose.joseStrings.deriveKey
 */
-trait keyOperation extends js.Object
+trait keyOperation extends StObject
 object keyOperation {
   
   @scala.inline

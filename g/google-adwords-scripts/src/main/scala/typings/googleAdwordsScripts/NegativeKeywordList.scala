@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,39 +39,27 @@ object NegativeKeywordList {
   }
   
   @scala.inline
-  implicit class NegativeKeywordListOps[Self <: NegativeKeywordList] (val x: Self) extends AnyVal {
+  implicit class NegativeKeywordListMutableBuilder[Self <: NegativeKeywordList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNegativeKeyword(value: String => Unit): Self = StObject.set(x, "addNegativeKeyword", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddNegativeKeywords(value: js.Array[String] => Unit): Self = StObject.set(x, "addNegativeKeywords", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaigns(value: () => AdWordsSelector[Campaign]): Self = StObject.set(x, "campaigns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddNegativeKeyword(value: String => Unit): Self = this.set("addNegativeKeyword", js.Any.fromFunction1(value))
+    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddNegativeKeywords(value: js.Array[String] => Unit): Self = this.set("addNegativeKeywords", js.Any.fromFunction1(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCampaigns(value: () => AdWordsSelector[Campaign]): Self = this.set("campaigns", js.Any.fromFunction0(value))
+    def setNegativeKeywords(value: () => AdWordsSelector[SharedNegativeKeyword]): Self = StObject.set(x, "negativeKeywords", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Double): Self = this.set("getId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNegativeKeywords(value: () => AdWordsSelector[SharedNegativeKeyword]): Self = this.set("negativeKeywords", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetName(value: () => String): Self = this.set("setName", js.Any.fromFunction0(value))
+    def setSetName(value: () => String): Self = StObject.set(x, "setName", js.Any.fromFunction0(value))
   }
 }

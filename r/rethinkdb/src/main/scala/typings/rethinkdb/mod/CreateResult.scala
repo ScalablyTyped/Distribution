@@ -1,11 +1,12 @@
 package typings.rethinkdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateResult extends js.Object {
+trait CreateResult extends StObject {
   
   var created: Double = js.native
 }
@@ -18,21 +19,9 @@ object CreateResult {
   }
   
   @scala.inline
-  implicit class CreateResultOps[Self <: CreateResult] (val x: Self) extends AnyVal {
+  implicit class CreateResultMutableBuilder[Self <: CreateResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
   }
 }

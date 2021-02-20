@@ -17,12 +17,13 @@ import typings.contentfulManagement.teamSpaceMembershipMod.TeamSpaceMembership
 import typings.contentfulManagement.teamSpaceMembershipMod.TeamSpaceMembershipProps
 import typings.contentfulManagement.userMod.User
 import typings.contentfulManagement.userMod.UserProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAppDefinition extends js.Object {
+trait CreateAppDefinition extends StObject {
   
   /**
     * Creates an app definition

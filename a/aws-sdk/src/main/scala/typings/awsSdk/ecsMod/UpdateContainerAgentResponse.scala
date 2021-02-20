@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateContainerAgentResponse extends js.Object {
+trait UpdateContainerAgentResponse extends StObject {
   
   /**
     * The container instance for which the container agent was updated.
@@ -21,24 +22,12 @@ object UpdateContainerAgentResponse {
   }
   
   @scala.inline
-  implicit class UpdateContainerAgentResponseOps[Self <: UpdateContainerAgentResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateContainerAgentResponseMutableBuilder[Self <: UpdateContainerAgentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerInstance(value: ContainerInstance): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContainerInstance(value: ContainerInstance): Self = this.set("containerInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerInstance: Self = this.set("containerInstance", js.undefined)
+    def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
   }
 }

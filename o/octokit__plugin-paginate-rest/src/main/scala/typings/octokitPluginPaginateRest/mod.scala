@@ -3,21 +3,30 @@ package typings.octokitPluginPaginateRest
 import typings.octokitCore.mod.Octokit
 import typings.octokitPluginPaginateRest.anon.Paginate
 import typings.octokitPluginPaginateRest.typesMod.ComposePaginateInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@octokit/plugin-paginate-rest", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@octokit/plugin-paginate-rest", "composePaginateRest")
+  @js.native
   val composePaginateRest: ComposePaginateInterface = js.native
   
-  @js.native
-  object paginateRest extends js.Object {
+  object paginateRest {
     
+    @JSImport("@octokit/plugin-paginate-rest", "paginateRest")
+    @js.native
     def apply(octokit: Octokit): Paginate = js.native
+    @JSImport("@octokit/plugin-paginate-rest", "paginateRest")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var VERSION: String = js.native
+    @JSImport("@octokit/plugin-paginate-rest", "paginateRest.VERSION")
+    @js.native
+    def VERSION: String = js.native
+    @scala.inline
+    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
 }

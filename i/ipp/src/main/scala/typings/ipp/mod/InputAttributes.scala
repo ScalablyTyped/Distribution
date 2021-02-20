@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputAttributes extends js.Object {
+trait InputAttributes extends StObject {
   
   var `input-auto-scaling`: js.UndefOr[Boolean] = js.native
   
@@ -52,129 +53,117 @@ object InputAttributes {
   }
   
   @scala.inline
-  implicit class InputAttributesOps[Self <: InputAttributes] (val x: Self) extends AnyVal {
+  implicit class InputAttributesMutableBuilder[Self <: InputAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setInput-auto-scaling`(value: Boolean): Self = StObject.set(x, "input-auto-scaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setInput-auto-scalingUndefined`: Self = StObject.set(x, "input-auto-scaling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setInput-auto-skew-correction`(value: Boolean): Self = StObject.set(x, "input-auto-skew-correction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-auto-scaling`(value: Boolean): Self = this.set("input-auto-scaling", value.asInstanceOf[js.Any])
+    def `setInput-auto-skew-correctionUndefined`: Self = StObject.set(x, "input-auto-skew-correction", js.undefined)
     
     @scala.inline
-    def `deleteInput-auto-scaling`: Self = this.set("input-auto-scaling", js.undefined)
+    def `setInput-brightness`(value: Double): Self = StObject.set(x, "input-brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-auto-skew-correction`(value: Boolean): Self = this.set("input-auto-skew-correction", value.asInstanceOf[js.Any])
+    def `setInput-brightnessUndefined`: Self = StObject.set(x, "input-brightness", js.undefined)
     
     @scala.inline
-    def `deleteInput-auto-skew-correction`: Self = this.set("input-auto-skew-correction", js.undefined)
+    def `setInput-color-mode`(value: InputColorMode): Self = StObject.set(x, "input-color-mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-brightness`(value: Double): Self = this.set("input-brightness", value.asInstanceOf[js.Any])
+    def `setInput-color-modeUndefined`: Self = StObject.set(x, "input-color-mode", js.undefined)
     
     @scala.inline
-    def `deleteInput-brightness`: Self = this.set("input-brightness", js.undefined)
+    def `setInput-content-type`(value: InputContentType): Self = StObject.set(x, "input-content-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-color-mode`(value: InputColorMode): Self = this.set("input-color-mode", value.asInstanceOf[js.Any])
+    def `setInput-content-typeUndefined`: Self = StObject.set(x, "input-content-type", js.undefined)
     
     @scala.inline
-    def `deleteInput-color-mode`: Self = this.set("input-color-mode", js.undefined)
+    def `setInput-contrast`(value: Double): Self = StObject.set(x, "input-contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-content-type`(value: InputContentType): Self = this.set("input-content-type", value.asInstanceOf[js.Any])
+    def `setInput-contrastUndefined`: Self = StObject.set(x, "input-contrast", js.undefined)
     
     @scala.inline
-    def `deleteInput-content-type`: Self = this.set("input-content-type", js.undefined)
+    def `setInput-film-scan-mode`(value: InputFilmScanMode): Self = StObject.set(x, "input-film-scan-mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-contrast`(value: Double): Self = this.set("input-contrast", value.asInstanceOf[js.Any])
+    def `setInput-film-scan-modeUndefined`: Self = StObject.set(x, "input-film-scan-mode", js.undefined)
     
     @scala.inline
-    def `deleteInput-contrast`: Self = this.set("input-contrast", js.undefined)
+    def `setInput-images-to-transfer`(value: Double): Self = StObject.set(x, "input-images-to-transfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-film-scan-mode`(value: InputFilmScanMode): Self = this.set("input-film-scan-mode", value.asInstanceOf[js.Any])
+    def `setInput-images-to-transferUndefined`: Self = StObject.set(x, "input-images-to-transfer", js.undefined)
     
     @scala.inline
-    def `deleteInput-film-scan-mode`: Self = this.set("input-film-scan-mode", js.undefined)
+    def `setInput-media`(value: MediaName | MediaSizeName): Self = StObject.set(x, "input-media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-images-to-transfer`(value: Double): Self = this.set("input-images-to-transfer", value.asInstanceOf[js.Any])
+    def `setInput-mediaUndefined`: Self = StObject.set(x, "input-media", js.undefined)
     
     @scala.inline
-    def `deleteInput-images-to-transfer`: Self = this.set("input-images-to-transfer", js.undefined)
+    def `setInput-orientation-requested`(value: OrientationRequested): Self = StObject.set(x, "input-orientation-requested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-media`(value: MediaName | MediaSizeName): Self = this.set("input-media", value.asInstanceOf[js.Any])
+    def `setInput-orientation-requestedUndefined`: Self = StObject.set(x, "input-orientation-requested", js.undefined)
     
     @scala.inline
-    def `deleteInput-media`: Self = this.set("input-media", js.undefined)
+    def `setInput-quality`(value: PrintQuality): Self = StObject.set(x, "input-quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-orientation-requested`(value: OrientationRequested): Self = this.set("input-orientation-requested", value.asInstanceOf[js.Any])
+    def `setInput-qualityUndefined`: Self = StObject.set(x, "input-quality", js.undefined)
     
     @scala.inline
-    def `deleteInput-orientation-requested`: Self = this.set("input-orientation-requested", js.undefined)
+    def `setInput-resolution`(value: Resolution): Self = StObject.set(x, "input-resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-quality`(value: PrintQuality): Self = this.set("input-quality", value.asInstanceOf[js.Any])
+    def `setInput-resolutionUndefined`: Self = StObject.set(x, "input-resolution", js.undefined)
     
     @scala.inline
-    def `deleteInput-quality`: Self = this.set("input-quality", js.undefined)
+    def `setInput-scaling-height`(value: Double): Self = StObject.set(x, "input-scaling-height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-resolution`(value: Resolution): Self = this.set("input-resolution", value.asInstanceOf[js.Any])
+    def `setInput-scaling-heightUndefined`: Self = StObject.set(x, "input-scaling-height", js.undefined)
     
     @scala.inline
-    def `deleteInput-resolution`: Self = this.set("input-resolution", js.undefined)
+    def `setInput-scaling-width`(value: Double): Self = StObject.set(x, "input-scaling-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-scaling-height`(value: Double): Self = this.set("input-scaling-height", value.asInstanceOf[js.Any])
+    def `setInput-scaling-widthUndefined`: Self = StObject.set(x, "input-scaling-width", js.undefined)
     
     @scala.inline
-    def `deleteInput-scaling-height`: Self = this.set("input-scaling-height", js.undefined)
+    def `setInput-scan-regions`(value: js.Array[PPScanRegions]): Self = StObject.set(x, "input-scan-regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-scaling-width`(value: Double): Self = this.set("input-scaling-width", value.asInstanceOf[js.Any])
+    def `setInput-scan-regionsUndefined`: Self = StObject.set(x, "input-scan-regions", js.undefined)
     
     @scala.inline
-    def `deleteInput-scaling-width`: Self = this.set("input-scaling-width", js.undefined)
+    def `setInput-scan-regionsVarargs`(value: PPScanRegions*): Self = StObject.set(x, "input-scan-regions", js.Array(value :_*))
     
     @scala.inline
-    def `setInput-scan-regionsVarargs`(value: PPScanRegions*): Self = this.set("input-scan-regions", js.Array(value :_*))
+    def `setInput-sharpness`(value: Double): Self = StObject.set(x, "input-sharpness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-scan-regions`(value: js.Array[PPScanRegions]): Self = this.set("input-scan-regions", value.asInstanceOf[js.Any])
+    def `setInput-sharpnessUndefined`: Self = StObject.set(x, "input-sharpness", js.undefined)
     
     @scala.inline
-    def `deleteInput-scan-regions`: Self = this.set("input-scan-regions", js.undefined)
+    def `setInput-sides`(value: Sides): Self = StObject.set(x, "input-sides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-sharpness`(value: Double): Self = this.set("input-sharpness", value.asInstanceOf[js.Any])
+    def `setInput-sidesUndefined`: Self = StObject.set(x, "input-sides", js.undefined)
     
     @scala.inline
-    def `deleteInput-sharpness`: Self = this.set("input-sharpness", js.undefined)
+    def `setInput-source`(value: InputSource): Self = StObject.set(x, "input-source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-sides`(value: Sides): Self = this.set("input-sides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteInput-sides`: Self = this.set("input-sides", js.undefined)
-    
-    @scala.inline
-    def `setInput-source`(value: InputSource): Self = this.set("input-source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteInput-source`: Self = this.set("input-source", js.undefined)
+    def `setInput-sourceUndefined`: Self = StObject.set(x, "input-source", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.firebase.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object Pagelocation {
   }
   
   @scala.inline
-  implicit class PagelocationOps[Self <: Pagelocation] (val x: Self) extends AnyVal {
+  implicit class PagelocationMutableBuilder[Self <: Pagelocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPage_location(value: String): Self = StObject.set(x, "page_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPage_locationUndefined: Self = StObject.set(x, "page_location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPage_path(value: String): Self = StObject.set(x, "page_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage_location(value: String): Self = this.set("page_location", value.asInstanceOf[js.Any])
+    def setPage_pathUndefined: Self = StObject.set(x, "page_path", js.undefined)
     
     @scala.inline
-    def deletePage_location: Self = this.set("page_location", js.undefined)
+    def setPage_title(value: String): Self = StObject.set(x, "page_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage_path(value: String): Self = this.set("page_path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePage_path: Self = this.set("page_path", js.undefined)
-    
-    @scala.inline
-    def setPage_title(value: String): Self = this.set("page_title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePage_title: Self = this.set("page_title", js.undefined)
+    def setPage_titleUndefined: Self = StObject.set(x, "page_title", js.undefined)
   }
 }

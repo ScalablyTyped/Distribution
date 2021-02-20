@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult extends StObject {
   
   /** ID of the recommended catalog item */
   var id: js.UndefOr[String] = js.native
@@ -30,34 +31,22 @@ object GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResultOps[Self <: GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResultMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
     def setItemMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult with TopLevel[js.Any]
-    ): Self = this.set("itemMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "itemMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemMetadata: Self = this.set("itemMetadata", js.undefined)
+    def setItemMetadataUndefined: Self = StObject.set(x, "itemMetadata", js.undefined)
   }
 }

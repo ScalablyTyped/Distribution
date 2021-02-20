@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemoryInfo extends js.Object {
+trait MemoryInfo extends StObject {
   
   /** Maximum memory that can be allocated to the process in KiB */
   var memoryCapInKibibyte: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object MemoryInfo {
   }
   
   @scala.inline
-  implicit class MemoryInfoOps[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+  implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMemoryCapInKibibyte(value: String): Self = StObject.set(x, "memoryCapInKibibyte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMemoryCapInKibibyteUndefined: Self = StObject.set(x, "memoryCapInKibibyte", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemoryTotalInKibibyte(value: String): Self = StObject.set(x, "memoryTotalInKibibyte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryCapInKibibyte(value: String): Self = this.set("memoryCapInKibibyte", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemoryCapInKibibyte: Self = this.set("memoryCapInKibibyte", js.undefined)
-    
-    @scala.inline
-    def setMemoryTotalInKibibyte(value: String): Self = this.set("memoryTotalInKibibyte", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemoryTotalInKibibyte: Self = this.set("memoryTotalInKibibyte", js.undefined)
+    def setMemoryTotalInKibibyteUndefined: Self = StObject.set(x, "memoryTotalInKibibyte", js.undefined)
   }
 }

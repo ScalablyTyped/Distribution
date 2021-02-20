@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ASPxClientOfficeDocumentLinkType extends js.Object
+sealed trait ASPxClientOfficeDocumentLinkType extends StObject
 /**
   * Lists the available link types within office documents.
   */
 @JSGlobal("ASPxClientOfficeDocumentLinkType")
 @js.native
-object ASPxClientOfficeDocumentLinkType extends js.Object {
+object ASPxClientOfficeDocumentLinkType extends StObject {
   
   /**
     * The processed link is a bookmark.

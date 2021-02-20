@@ -1,12 +1,13 @@
 package typings.antd.anon
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BodyContent extends js.Object {
+trait BodyContent extends StObject {
   
   var bodyContent: js.UndefOr[js.Object | ReactElement | Null] = js.native
   
@@ -21,30 +22,18 @@ object BodyContent {
   }
   
   @scala.inline
-  implicit class BodyContentOps[Self <: BodyContent] (val x: Self) extends AnyVal {
+  implicit class BodyContentMutableBuilder[Self <: BodyContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyContent(value: js.Object | ReactElement): Self = StObject.set(x, "bodyContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyContentNull: Self = StObject.set(x, "bodyContent", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyContentUndefined: Self = StObject.set(x, "bodyContent", js.undefined)
     
     @scala.inline
-    def setCustomize(value: Boolean): Self = this.set("customize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBodyContent(value: js.Object | ReactElement): Self = this.set("bodyContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBodyContent: Self = this.set("bodyContent", js.undefined)
-    
-    @scala.inline
-    def setBodyContentNull: Self = this.set("bodyContent", null)
+    def setCustomize(value: Boolean): Self = StObject.set(x, "customize", value.asInstanceOf[js.Any])
   }
 }

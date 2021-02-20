@@ -1,5 +1,6 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object XmlProps {
   }
   
   @scala.inline
-  implicit class XmlPropsOps[Self <: XmlProps] (val x: Self) extends AnyVal {
+  implicit class XmlPropsMutableBuilder[Self <: XmlProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverride(value: SvgProps): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverride(value: SvgProps): Self = this.set("override", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverride: Self = this.set("override", js.undefined)
-    
-    @scala.inline
-    def setXml(value: String): Self = this.set("xml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXmlNull: Self = this.set("xml", null)
+    def setXmlNull: Self = StObject.set(x, "xml", null)
   }
 }

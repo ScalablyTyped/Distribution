@@ -1,13 +1,14 @@
 package typings.atom.anon
 
 import typings.atom.mod.PointCompatible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<atom.atom.Point> */
 @js.native
-trait ReadonlyPoint extends js.Object {
+trait ReadonlyPoint extends StObject {
   
   val column: Double = js.native
   

@@ -1,11 +1,12 @@
 package typings.es6Shim
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait String extends js.Object {
+trait String extends StObject {
   
   /**
     * Shim for an ES6 iterable. Not intended for direct use by user code.

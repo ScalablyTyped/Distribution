@@ -1,12 +1,13 @@
 package typings.sharepoint.global.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.RowHeaderStatePriorities")
 @js.native
-object RowHeaderStatePriorities extends js.Object {
+object RowHeaderStatePriorities extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities with Double] = js.native

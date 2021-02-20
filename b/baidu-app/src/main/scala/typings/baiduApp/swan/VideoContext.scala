@@ -6,21 +6,22 @@ import typings.baiduApp.baiduAppNumbers.`0.8`
 import typings.baiduApp.baiduAppNumbers.`1.0`
 import typings.baiduApp.baiduAppNumbers.`1.25`
 import typings.baiduApp.baiduAppNumbers.`1.5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 媒体-----视频组件控制
 @js.native
-trait VideoContext extends js.Object {
+trait VideoContext extends StObject {
   
-   // 进入全屏;
+  // 进入全屏;
   /**
     * 退出全屏
     */
   def exitFullScreen(): Unit = js.native
   
-   // 显示状态栏，仅在iOS全屏下有效;
+  // 显示状态栏，仅在iOS全屏下有效;
   /**
     * 隐藏状态栏，仅在iOS全屏下有效
     */
@@ -65,7 +66,7 @@ trait VideoContext extends js.Object {
     */
   def sendDanmu(danmu: Color): Unit = js.native
   
-   // 退出全屏;
+  // 退出全屏;
   /**
     * 显示状态栏，仅在iOS全屏下有效
     */

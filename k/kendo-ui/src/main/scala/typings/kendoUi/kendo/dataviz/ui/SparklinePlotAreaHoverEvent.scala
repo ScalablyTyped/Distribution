@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object SparklinePlotAreaHoverEvent {
   }
   
   @scala.inline
-  implicit class SparklinePlotAreaHoverEventOps[Self <: SparklinePlotAreaHoverEvent] (val x: Self) extends AnyVal {
+  implicit class SparklinePlotAreaHoverEventMutableBuilder[Self <: SparklinePlotAreaHoverEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: js.Any): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: js.Any): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalEvent(value: js.Any): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalEvent: Self = this.set("originalEvent", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

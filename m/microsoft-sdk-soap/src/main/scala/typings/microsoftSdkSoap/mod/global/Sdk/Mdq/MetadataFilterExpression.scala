@@ -1,12 +1,13 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Mdq.MetadataFilterExpression")
 @js.native
-class MetadataFilterExpression protected () extends js.Object {
+class MetadataFilterExpression protected () extends StObject {
   def this(filterOperator: LogicalOperator) = this()
   
   def addCondition(propertyName: SearchableAttributeMetadataProperties, conditionOperator: MetadataConditionOperator): Unit = js.native

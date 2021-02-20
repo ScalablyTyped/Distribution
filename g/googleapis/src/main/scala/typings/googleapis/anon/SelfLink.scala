@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelfLink extends js.Object {
+trait SelfLink extends StObject {
   
   var selfLink: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object SelfLink {
   }
   
   @scala.inline
-  implicit class SelfLinkOps[Self <: SelfLink] (val x: Self) extends AnyVal {
+  implicit class SelfLinkMutableBuilder[Self <: SelfLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
-    
-    @scala.inline
-    def setTotalItems(value: Double): Self = this.set("totalItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalItems: Self = this.set("totalItems", js.undefined)
+    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

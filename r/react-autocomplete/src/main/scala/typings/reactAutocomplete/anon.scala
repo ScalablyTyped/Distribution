@@ -4,23 +4,22 @@ import typings.reactAutocomplete.reactAutocompleteStrings.backward
 import typings.reactAutocomplete.reactAutocompleteStrings.forward
 import typings.reactAutocomplete.reactAutocompleteStrings.none
 import typings.std.FocusOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply(): Unit = js.native
     def apply(options: FocusOptions): Unit = js.native
   }
   
   @js.native
-  trait FnCallStartEndDirection extends js.Object {
+  trait FnCallStartEndDirection extends StObject {
     
     def apply(start: Double, end: Double): Unit = js.native
     def apply(start: Double, end: Double, direction: backward): Unit = js.native

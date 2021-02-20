@@ -2,16 +2,18 @@ package typings.ionic
 
 import typings.ionic.configBaseMod.BaseConfigCommand
 import typings.ionic.configBaseMod.ConfigContext
+import typings.ionic.definitionsMod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/config/get", JSImport.Namespace)
-@js.native
-object getMod extends js.Object {
+object getMod {
   
+  @JSImport("ionic/commands/config/get", "ConfigGetCommand")
   @js.native
-  class ConfigGetCommand () extends BaseConfigCommand {
+  class ConfigGetCommand protected () extends BaseConfigCommand {
+    def this(namespace: INamespace) = this()
     
     def printConfig(ctx: ConfigContext, v: js.Any): Unit = js.native
     

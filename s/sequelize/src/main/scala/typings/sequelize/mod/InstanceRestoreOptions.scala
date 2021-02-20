@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options used for Instance.restore method
   */
 @js.native
-trait InstanceRestoreOptions extends js.Object {
+trait InstanceRestoreOptions extends StObject {
   
   /**
     * A function that gets executed while running the query to log the sql.
@@ -29,30 +30,18 @@ object InstanceRestoreOptions {
   }
   
   @scala.inline
-  implicit class InstanceRestoreOptionsOps[Self <: InstanceRestoreOptions] (val x: Self) extends AnyVal {
+  implicit class InstanceRestoreOptionsMutableBuilder[Self <: InstanceRestoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Boolean | js.Function): Self = this.set("logging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: Transaction): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

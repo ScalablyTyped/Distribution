@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The node this Taint is attached to has the "effect" on any pod that does not tolerate the Taint.
   */
 @js.native
-trait Taint extends js.Object {
+trait Taint extends StObject {
   
   /**
     * Required. The effect of the taint on pods that do not tolerate the taint. Valid effects are NoSchedule, PreferNoSchedule and NoExecute.
@@ -40,36 +41,24 @@ object Taint {
   }
   
   @scala.inline
-  implicit class TaintOps[Self <: Taint] (val x: Self) extends AnyVal {
+  implicit class TaintMutableBuilder[Self <: Taint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffect(value: Input[String]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeAdded(value: Input[String]): Self = StObject.set(x, "timeAdded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: Input[String]): Self = this.set("effect", value.asInstanceOf[js.Any])
+    def setTimeAddedUndefined: Self = StObject.set(x, "timeAdded", js.undefined)
     
     @scala.inline
-    def setKey(value: Input[String]): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeAdded(value: Input[String]): Self = this.set("timeAdded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeAdded: Self = this.set("timeAdded", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Input[String]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

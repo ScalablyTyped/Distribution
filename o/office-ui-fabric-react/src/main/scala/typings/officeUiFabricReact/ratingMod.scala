@@ -2,30 +2,40 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.ratingTypesMod.IRatingProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Rating", JSImport.Namespace)
-@js.native
-object ratingMod extends js.Object {
+object ratingMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Rating", "Rating")
+  @js.native
   val Rating: FunctionComponent[IRatingProps] = js.native
   
+  @JSImport("office-ui-fabric-react/lib/components/Rating", "RatingBase")
   @js.native
   class RatingBase protected ()
     extends typings.officeUiFabricReact.ratingBaseMod.RatingBase {
     def this(props: IRatingProps) = this()
   }
   /* static members */
-  @js.native
-  object RatingBase extends js.Object {
+  object RatingBase {
     
-    var defaultProps: IRatingProps = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Rating", "RatingBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/Rating", "RatingBase.defaultProps")
+    @js.native
+    def defaultProps: IRatingProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IRatingProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/Rating", "RatingSize")
   @js.native
-  object RatingSize extends js.Object {
+  object RatingSize extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.ratingTypesMod.RatingSize with Double] = js.native

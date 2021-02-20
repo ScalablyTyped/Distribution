@@ -4,12 +4,13 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Requireable
 import typings.react.mod.Validator
 import typings.reactVirtualized.esColumnSizerMod.SizedColumnProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Children extends js.Object {
+trait Children extends StObject {
   
   var children: Validator[js.Function1[/* props */ SizedColumnProps, ReactNode]] = js.native
   
@@ -36,33 +37,21 @@ object Children {
   }
   
   @scala.inline
-  implicit class ChildrenOps[Self <: Children] (val x: Self) extends AnyVal {
+  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: Validator[js.Function1[/* props */ SizedColumnProps, ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnCount(value: Validator[Double]): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnMaxWidth(value: Requireable[Double]): Self = StObject.set(x, "columnMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: Validator[js.Function1[/* props */ SizedColumnProps, ReactNode]]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setColumnMinWidth(value: Requireable[Double]): Self = StObject.set(x, "columnMinWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCount(value: Validator[Double]): Self = this.set("columnCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnMaxWidth(value: Requireable[Double]): Self = this.set("columnMaxWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnMinWidth(value: Requireable[Double]): Self = this.set("columnMinWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Validator[Double]): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Validator[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBackupVaultNotificationsOutput extends js.Object {
+trait GetBackupVaultNotificationsOutput extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a backup vault; for example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.
@@ -36,45 +37,33 @@ object GetBackupVaultNotificationsOutput {
   }
   
   @scala.inline
-  implicit class GetBackupVaultNotificationsOutputOps[Self <: GetBackupVaultNotificationsOutput] (val x: Self) extends AnyVal {
+  implicit class GetBackupVaultNotificationsOutputMutableBuilder[Self <: GetBackupVaultNotificationsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupVaultEvents(value: BackupVaultEvents): Self = StObject.set(x, "BackupVaultEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupVaultArn(value: ARN): Self = this.set("BackupVaultArn", value.asInstanceOf[js.Any])
+    def setBackupVaultEventsUndefined: Self = StObject.set(x, "BackupVaultEvents", js.undefined)
     
     @scala.inline
-    def deleteBackupVaultArn: Self = this.set("BackupVaultArn", js.undefined)
+    def setBackupVaultEventsVarargs(value: BackupVaultEvent*): Self = StObject.set(x, "BackupVaultEvents", js.Array(value :_*))
     
     @scala.inline
-    def setBackupVaultEventsVarargs(value: BackupVaultEvent*): Self = this.set("BackupVaultEvents", js.Array(value :_*))
+    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupVaultEvents(value: BackupVaultEvents): Self = this.set("BackupVaultEvents", value.asInstanceOf[js.Any])
+    def setBackupVaultNameUndefined: Self = StObject.set(x, "BackupVaultName", js.undefined)
     
     @scala.inline
-    def deleteBackupVaultEvents: Self = this.set("BackupVaultEvents", js.undefined)
+    def setSNSTopicArn(value: ARN): Self = StObject.set(x, "SNSTopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = this.set("BackupVaultName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupVaultName: Self = this.set("BackupVaultName", js.undefined)
-    
-    @scala.inline
-    def setSNSTopicArn(value: ARN): Self = this.set("SNSTopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSNSTopicArn: Self = this.set("SNSTopicArn", js.undefined)
+    def setSNSTopicArnUndefined: Self = StObject.set(x, "SNSTopicArn", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /// DOM Iterable APIs
 /////////////////////////////
 @js.native
-trait AudioParam extends js.Object {
+trait AudioParam extends StObject {
   
   var automationRate: AutomationRate = js.native
   

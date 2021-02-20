@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.perspectiveCameraMod.PerspectiveCamera
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/cameras/ArrayCamera", JSImport.Namespace)
-@js.native
-object arrayCameraMod extends js.Object {
+object arrayCameraMod {
   
+  @JSImport("three/src/cameras/ArrayCamera", "ArrayCamera")
   @js.native
   class ArrayCamera () extends PerspectiveCamera {
     def this(cameras: js.Array[PerspectiveCamera]) = this()

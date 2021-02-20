@@ -3,12 +3,13 @@ package typings.yandexMaps.mod.control
 import typings.yandexMaps.anon.Content
 import typings.yandexMaps.anon.Enabled
 import typings.yandexMaps.anon.IBaseButtonParametersOpti
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IButtonParameters extends js.Object {
+trait IButtonParameters extends StObject {
   
   var data: js.UndefOr[Content] = js.native
   
@@ -25,36 +26,24 @@ object IButtonParameters {
   }
   
   @scala.inline
-  implicit class IButtonParametersOps[Self <: IButtonParameters] (val x: Self) extends AnyVal {
+  implicit class IButtonParametersMutableBuilder[Self <: IButtonParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Content): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: IBaseButtonParametersOpti): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Content): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setState(value: Enabled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: IBaseButtonParametersOpti): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setState(value: Enabled): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

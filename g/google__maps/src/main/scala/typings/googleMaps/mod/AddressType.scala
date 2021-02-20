@@ -1,5 +1,6 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleMaps.googleMapsStrings.park
   - typings.googleMaps.googleMapsStrings.point_of_interest
 */
-trait AddressType extends js.Object
+trait AddressType extends StObject
 object AddressType {
   
   @scala.inline

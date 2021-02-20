@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeatDiscount extends js.Object {
+trait SeatDiscount extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -33,36 +34,24 @@ object SeatDiscount {
   }
   
   @scala.inline
-  implicit class SeatDiscountOps[Self <: SeatDiscount] (val x: Self) extends AnyVal {
+  implicit class SeatDiscountMutableBuilder[Self <: SeatDiscount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginSeatCount(value: String): Self = StObject.set(x, "beginSeatCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginSeatCountUndefined: Self = StObject.set(x, "beginSeatCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiscountPercent(value: String): Self = StObject.set(x, "discountPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginSeatCount(value: String): Self = this.set("beginSeatCount", value.asInstanceOf[js.Any])
+    def setDiscountPercentUndefined: Self = StObject.set(x, "discountPercent", js.undefined)
     
     @scala.inline
-    def deleteBeginSeatCount: Self = this.set("beginSeatCount", js.undefined)
+    def setEndSeatCount(value: String): Self = StObject.set(x, "endSeatCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscountPercent(value: String): Self = this.set("discountPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiscountPercent: Self = this.set("discountPercent", js.undefined)
-    
-    @scala.inline
-    def setEndSeatCount(value: String): Self = this.set("endSeatCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndSeatCount: Self = this.set("endSeatCount", js.undefined)
+    def setEndSeatCountUndefined: Self = StObject.set(x, "endSeatCount", js.undefined)
   }
 }

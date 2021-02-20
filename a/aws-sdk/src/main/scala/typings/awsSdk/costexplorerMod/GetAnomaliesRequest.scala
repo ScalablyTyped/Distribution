@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAnomaliesRequest extends js.Object {
+trait GetAnomaliesRequest extends StObject {
   
   /**
     * Assigns the start and end dates for retrieving cost anomalies. The returned anomaly object will have an AnomalyEndDate in the specified time range. 
@@ -46,51 +47,39 @@ object GetAnomaliesRequest {
   }
   
   @scala.inline
-  implicit class GetAnomaliesRequestOps[Self <: GetAnomaliesRequest] (val x: Self) extends AnyVal {
+  implicit class GetAnomaliesRequestMutableBuilder[Self <: GetAnomaliesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateInterval(value: AnomalyDateInterval): Self = StObject.set(x, "DateInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedback(value: AnomalyFeedbackType): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeedbackUndefined: Self = StObject.set(x, "Feedback", js.undefined)
     
     @scala.inline
-    def setDateInterval(value: AnomalyDateInterval): Self = this.set("DateInterval", value.asInstanceOf[js.Any])
+    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedback(value: AnomalyFeedbackType): Self = this.set("Feedback", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteFeedback: Self = this.set("Feedback", js.undefined)
+    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: PageSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setMonitorArnUndefined: Self = StObject.set(x, "MonitorArn", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitorArn(value: GenericString): Self = this.set("MonitorArn", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def deleteMonitorArn: Self = this.set("MonitorArn", js.undefined)
+    def setTotalImpact(value: TotalImpactFilter): Self = StObject.set(x, "TotalImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTotalImpact(value: TotalImpactFilter): Self = this.set("TotalImpact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalImpact: Self = this.set("TotalImpact", js.undefined)
+    def setTotalImpactUndefined: Self = StObject.set(x, "TotalImpact", js.undefined)
   }
 }

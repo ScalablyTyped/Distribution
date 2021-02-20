@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INavMeshParameters extends js.Object {
+trait INavMeshParameters extends StObject {
   
   /**
     * The y-axis cell size to use for fields. [Limit: > 0] [Units: wu]
@@ -102,57 +103,45 @@ object INavMeshParameters {
   }
   
   @scala.inline
-  implicit class INavMeshParametersOps[Self <: INavMeshParameters] (val x: Self) extends AnyVal {
+  implicit class INavMeshParametersMutableBuilder[Self <: INavMeshParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCh(value: Double): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCs(value: Double): Self = StObject.set(x, "cs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailSampleDist(value: Double): Self = StObject.set(x, "detailSampleDist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCh(value: Double): Self = this.set("ch", value.asInstanceOf[js.Any])
+    def setDetailSampleMaxError(value: Double): Self = StObject.set(x, "detailSampleMaxError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCs(value: Double): Self = this.set("cs", value.asInstanceOf[js.Any])
+    def setMaxEdgeLen(value: Double): Self = StObject.set(x, "maxEdgeLen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailSampleDist(value: Double): Self = this.set("detailSampleDist", value.asInstanceOf[js.Any])
+    def setMaxSimplificationError(value: Double): Self = StObject.set(x, "maxSimplificationError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailSampleMaxError(value: Double): Self = this.set("detailSampleMaxError", value.asInstanceOf[js.Any])
+    def setMaxVertsPerPoly(value: Double): Self = StObject.set(x, "maxVertsPerPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxEdgeLen(value: Double): Self = this.set("maxEdgeLen", value.asInstanceOf[js.Any])
+    def setMergeRegionArea(value: Double): Self = StObject.set(x, "mergeRegionArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSimplificationError(value: Double): Self = this.set("maxSimplificationError", value.asInstanceOf[js.Any])
+    def setMinRegionArea(value: Double): Self = StObject.set(x, "minRegionArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVertsPerPoly(value: Double): Self = this.set("maxVertsPerPoly", value.asInstanceOf[js.Any])
+    def setWalkableClimb(value: Double): Self = StObject.set(x, "walkableClimb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeRegionArea(value: Double): Self = this.set("mergeRegionArea", value.asInstanceOf[js.Any])
+    def setWalkableHeight(value: Double): Self = StObject.set(x, "walkableHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinRegionArea(value: Double): Self = this.set("minRegionArea", value.asInstanceOf[js.Any])
+    def setWalkableRadius(value: Double): Self = StObject.set(x, "walkableRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWalkableClimb(value: Double): Self = this.set("walkableClimb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWalkableHeight(value: Double): Self = this.set("walkableHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWalkableRadius(value: Double): Self = this.set("walkableRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWalkableSlopeAngle(value: Double): Self = this.set("walkableSlopeAngle", value.asInstanceOf[js.Any])
+    def setWalkableSlopeAngle(value: Double): Self = StObject.set(x, "walkableSlopeAngle", value.asInstanceOf[js.Any])
   }
 }

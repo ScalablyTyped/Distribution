@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Disk extends js.Object {
+trait Disk extends StObject {
   
   /**
     * An array of objects representing the add-ons enabled on the disk.
@@ -101,126 +102,114 @@ object Disk {
   }
   
   @scala.inline
-  implicit class DiskOps[Self <: Disk] (val x: Self) extends AnyVal {
+  implicit class DiskMutableBuilder[Self <: Disk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOns(value: AddOnList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value :_*))
     
     @scala.inline
-    def setAddOnsVarargs(value: AddOn*): Self = this.set("addOns", js.Array(value :_*))
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOns(value: AddOnList): Self = this.set("addOns", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def deleteAddOns: Self = this.set("addOns", js.undefined)
+    def setAttachedTo(value: ResourceName): Self = StObject.set(x, "attachedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setAttachedToUndefined: Self = StObject.set(x, "attachedTo", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setAttachmentState(value: String): Self = StObject.set(x, "attachmentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedTo(value: ResourceName): Self = this.set("attachedTo", value.asInstanceOf[js.Any])
+    def setAttachmentStateUndefined: Self = StObject.set(x, "attachmentState", js.undefined)
     
     @scala.inline
-    def deleteAttachedTo: Self = this.set("attachedTo", js.undefined)
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentState(value: String): Self = this.set("attachmentState", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteAttachmentState: Self = this.set("attachmentState", js.undefined)
+    def setGbInUse(value: integer): Self = StObject.set(x, "gbInUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setGbInUseUndefined: Self = StObject.set(x, "gbInUse", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setIops(value: integer): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGbInUse(value: integer): Self = this.set("gbInUse", value.asInstanceOf[js.Any])
+    def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
     
     @scala.inline
-    def deleteGbInUse: Self = this.set("gbInUse", js.undefined)
+    def setIsAttached(value: Boolean): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIops(value: integer): Self = this.set("iops", value.asInstanceOf[js.Any])
+    def setIsAttachedUndefined: Self = StObject.set(x, "isAttached", js.undefined)
     
     @scala.inline
-    def deleteIops: Self = this.set("iops", js.undefined)
+    def setIsSystemDisk(value: Boolean): Self = StObject.set(x, "isSystemDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAttached(value: Boolean): Self = this.set("isAttached", value.asInstanceOf[js.Any])
+    def setIsSystemDiskUndefined: Self = StObject.set(x, "isSystemDisk", js.undefined)
     
     @scala.inline
-    def deleteIsAttached: Self = this.set("isAttached", js.undefined)
+    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSystemDisk(value: Boolean): Self = this.set("isSystemDisk", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteIsSystemDisk: Self = this.set("isSystemDisk", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setSizeInGbUndefined: Self = StObject.set(x, "sizeInGb", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setState(value: DiskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeInGb(value: integer): Self = this.set("sizeInGb", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteSizeInGb: Self = this.set("sizeInGb", js.undefined)
+    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: DiskState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

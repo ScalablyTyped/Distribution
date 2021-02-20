@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikEngineapi.qlikEngineapiStrings.LockedFieldsOnly
   - typings.qlikEngineapi.qlikEngineapiStrings.CurrentSelections
 */
-trait ContextType extends js.Object
+trait ContextType extends StObject
 object ContextType {
   
   @scala.inline

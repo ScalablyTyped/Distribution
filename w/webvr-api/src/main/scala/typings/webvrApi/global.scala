@@ -1,67 +1,53 @@
 package typings.webvrApi
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("VRDisplay")
   @js.native
   class VRDisplay ()
     extends typings.webvrApi.VRDisplay
-  @js.native
-  object VRDisplay
-    extends Instantiable0[typings.webvrApi.VRDisplay]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("VRDisplayCapabilities")
   @js.native
   class VRDisplayCapabilities ()
     extends typings.webvrApi.VRDisplayCapabilities
-  @js.native
-  object VRDisplayCapabilities
-    extends Instantiable0[typings.webvrApi.VRDisplayCapabilities]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("VRDisplayEvent")
   @js.native
   class VRDisplayEvent protected ()
     extends typings.webvrApi.VRDisplayEvent {
     def this(`type`: String, eventInitDict: VRDisplayEventInit) = this()
   }
-  @js.native
-  object VRDisplayEvent
-    extends Instantiable2[
-          /* type */ String, 
-          /* eventInitDict */ VRDisplayEventInit, 
-          typings.webvrApi.VRDisplayEvent
-        ]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("VREyeParameters")
   @js.native
   class VREyeParameters ()
     extends typings.webvrApi.VREyeParameters
-  @js.native
-  object VREyeParameters
-    extends Instantiable0[typings.webvrApi.VREyeParameters]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("VRFieldOfView")
   @js.native
   class VRFieldOfView ()
     extends typings.webvrApi.VRFieldOfView
-  @js.native
-  object VRFieldOfView
-    extends Instantiable0[typings.webvrApi.VRFieldOfView]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("VRFrameData")
   @js.native
   class VRFrameData ()
     extends typings.webvrApi.VRFrameData
-  @js.native
-  object VRFrameData
-    extends Instantiable0[typings.webvrApi.VRFrameData]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("VRPose")
   @js.native
   class VRPose ()
     extends typings.webvrApi.VRPose
-  @js.native
-  object VRPose
-    extends Instantiable0[typings.webvrApi.VRPose]
 }

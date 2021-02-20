@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFindingsFilterRequest extends js.Object {
+trait CreateFindingsFilterRequest extends StObject {
   
   /**
     * The action to perform on findings that meet the filter criteria (findingCriteria). Valid values are: ARCHIVE, suppress (automatically archive) the findings; and, NOOP, don't perform any action on the findings.
@@ -51,51 +52,39 @@ object CreateFindingsFilterRequest {
   }
   
   @scala.inline
-  implicit class CreateFindingsFilterRequestOps[Self <: CreateFindingsFilterRequest] (val x: Self) extends AnyVal {
+  implicit class CreateFindingsFilterRequestMutableBuilder[Self <: CreateFindingsFilterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: FindingsFilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def setAction(value: FindingsFilterAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setDescription(value: string): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingCriteria(value: FindingCriteria): Self = this.set("findingCriteria", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: string): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setPosition(value: integer): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: integer): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

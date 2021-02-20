@@ -1,14 +1,14 @@
 package typings.tensorflowTfjsBackendWebgl
 
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/mulmat_packed_gpu", JSImport.Namespace)
-@js.native
-object mulmatPackedGpuMod extends js.Object {
+object mulmatPackedGpuMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/mulmat_packed_gpu", "MatMulPackedProgram")
   @js.native
   class MatMulPackedProgram protected () extends GPGPUProgram {
     def this(

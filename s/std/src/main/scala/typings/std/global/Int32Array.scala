@@ -1,14 +1,14 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.ArrayBufferLike
 import typings.std.ArrayLike
-import typings.std.Int32ArrayConstructor
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Int32Array")
 @js.native
 class Int32Array ()
@@ -21,6 +21,3 @@ class Int32Array ()
   def this(buffer: ArrayBufferLike, byteOffset: js.UndefOr[scala.Nothing], length: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
 }
-@JSGlobal("Int32Array")
-@js.native
-object Int32Array extends TopLevel[Int32ArrayConstructor]

@@ -1,5 +1,6 @@
 package typings.relayRuntime.relayStoreTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.relayRuntime.anon.Kind
   - typings.relayRuntime.anon.HandleKind
 */
-trait MissingFieldHandler extends js.Object
+trait MissingFieldHandler extends StObject

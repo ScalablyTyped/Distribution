@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricWindow extends js.Object {
+trait MetricWindow extends StObject {
   
   /**
     * The tumbling time interval window.
@@ -21,24 +22,12 @@ object MetricWindow {
   }
   
   @scala.inline
-  implicit class MetricWindowOps[Self <: MetricWindow] (val x: Self) extends AnyVal {
+  implicit class MetricWindowMutableBuilder[Self <: MetricWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTumbling(value: TumblingWindow): Self = StObject.set(x, "tumbling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTumbling(value: TumblingWindow): Self = this.set("tumbling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTumbling: Self = this.set("tumbling", js.undefined)
+    def setTumblingUndefined: Self = StObject.set(x, "tumbling", js.undefined)
   }
 }

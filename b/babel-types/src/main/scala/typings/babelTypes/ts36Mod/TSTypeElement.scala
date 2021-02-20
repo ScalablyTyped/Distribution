@@ -1,5 +1,6 @@
 package typings.babelTypes.ts36Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,21 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.ts36Mod.TSMethodSignature
   - typings.babelTypes.ts36Mod.TSPropertySignature
 */
-trait TSTypeElement extends js.Object
+trait TSTypeElement extends StObject
 object TSTypeElement {
-  
-  @scala.inline
-  def TSMethodSignature(
-    end: Double,
-    key: Expression,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typings.babelTypes.babelTypesStrings.TSMethodSignature
-  ): TSTypeElement = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
-  }
   
   @scala.inline
   def TSCallSignatureDeclaration(
@@ -33,10 +21,10 @@ object TSTypeElement {
     loc: SourceLocation,
     start: Double,
     `type`: typings.babelTypes.babelTypesStrings.TSCallSignatureDeclaration
-  ): TSTypeElement = {
+  ): typings.babelTypes.ts36Mod.TSCallSignatureDeclaration = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSCallSignatureDeclaration]
   }
   
   @scala.inline
@@ -45,10 +33,10 @@ object TSTypeElement {
     loc: SourceLocation,
     start: Double,
     `type`: typings.babelTypes.babelTypesStrings.TSConstructSignatureDeclaration
-  ): TSTypeElement = {
+  ): typings.babelTypes.ts36Mod.TSConstructSignatureDeclaration = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSConstructSignatureDeclaration]
   }
   
   @scala.inline
@@ -58,10 +46,23 @@ object TSTypeElement {
     parameters: js.Array[Identifier_],
     start: Double,
     `type`: typings.babelTypes.babelTypesStrings.TSIndexSignature
-  ): TSTypeElement = {
+  ): typings.babelTypes.ts36Mod.TSIndexSignature = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSIndexSignature]
+  }
+  
+  @scala.inline
+  def TSMethodSignature(
+    end: Double,
+    key: Expression,
+    loc: SourceLocation,
+    start: Double,
+    `type`: typings.babelTypes.babelTypesStrings.TSMethodSignature
+  ): typings.babelTypes.ts36Mod.TSMethodSignature = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSMethodSignature]
   }
   
   @scala.inline
@@ -71,9 +72,9 @@ object TSTypeElement {
     loc: SourceLocation,
     start: Double,
     `type`: typings.babelTypes.babelTypesStrings.TSPropertySignature
-  ): TSTypeElement = {
+  ): typings.babelTypes.ts36Mod.TSPropertySignature = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.TSPropertySignature]
   }
 }

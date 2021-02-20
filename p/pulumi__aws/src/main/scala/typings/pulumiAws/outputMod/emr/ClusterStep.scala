@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.emr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterStep extends js.Object {
+trait ClusterStep extends StObject {
   
   /**
     * The action to take if the step fails. Valid values: `TERMINATE_JOB_FLOW`, `TERMINATE_CLUSTER`, `CANCEL_AND_WAIT`, and `CONTINUE`
@@ -31,27 +32,15 @@ object ClusterStep {
   }
   
   @scala.inline
-  implicit class ClusterStepOps[Self <: ClusterStep] (val x: Self) extends AnyVal {
+  implicit class ClusterStepMutableBuilder[Self <: ClusterStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionOnFailure(value: String): Self = StObject.set(x, "actionOnFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHadoopJarStep(value: ClusterStepHadoopJarStep): Self = StObject.set(x, "hadoopJarStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionOnFailure(value: String): Self = this.set("actionOnFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHadoopJarStep(value: ClusterStepHadoopJarStep): Self = this.set("hadoopJarStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

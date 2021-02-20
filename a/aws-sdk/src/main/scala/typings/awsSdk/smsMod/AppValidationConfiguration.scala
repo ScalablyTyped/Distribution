@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppValidationConfiguration extends js.Object {
+trait AppValidationConfiguration extends StObject {
   
   /**
     * The validation strategy.
@@ -36,42 +37,30 @@ object AppValidationConfiguration {
   }
   
   @scala.inline
-  implicit class AppValidationConfigurationOps[Self <: AppValidationConfiguration] (val x: Self) extends AnyVal {
+  implicit class AppValidationConfigurationMutableBuilder[Self <: AppValidationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppValidationStrategy(value: AppValidationStrategy): Self = StObject.set(x, "appValidationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppValidationStrategyUndefined: Self = StObject.set(x, "appValidationStrategy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: NonEmptyStringWithMaxLen255): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppValidationStrategy(value: AppValidationStrategy): Self = this.set("appValidationStrategy", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteAppValidationStrategy: Self = this.set("appValidationStrategy", js.undefined)
+    def setSsmValidationParameters(value: SSMValidationParameters): Self = StObject.set(x, "ssmValidationParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyStringWithMaxLen255): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSsmValidationParametersUndefined: Self = StObject.set(x, "ssmValidationParameters", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setValidationId(value: ValidationId): Self = StObject.set(x, "validationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsmValidationParameters(value: SSMValidationParameters): Self = this.set("ssmValidationParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsmValidationParameters: Self = this.set("ssmValidationParameters", js.undefined)
-    
-    @scala.inline
-    def setValidationId(value: ValidationId): Self = this.set("validationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationId: Self = this.set("validationId", js.undefined)
+    def setValidationIdUndefined: Self = StObject.set(x, "validationId", js.undefined)
   }
 }

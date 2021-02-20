@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/comparison
   */
 @js.native
-trait CollectionComparision extends js.Object {
+trait CollectionComparision extends StObject {
   
   /**
     * Determine whether all elements in the collection match a selector.

@@ -3,6 +3,7 @@ package typings.senchaTouch.Ext.form
 import typings.senchaTouch.Ext.data.IConnection
 import typings.senchaTouch.Ext.data.IModel
 import typings.senchaTouch.Ext.dom.IElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -259,324 +260,312 @@ object IPanel {
   }
   
   @scala.inline
-  implicit class IPanelOps[Self <: IPanel] (val x: Self) extends AnyVal {
+  implicit class IPanelMutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi(value: js.Any): Self = this.set("api", value.asInstanceOf[js.Any])
+    def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
     
     @scala.inline
-    def deleteApi: Self = this.set("api", js.undefined)
+    def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[js.Any] => IPanel): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBaseParams(value: js.Any): Self = this.set("baseParams", value.asInstanceOf[js.Any])
+    def setDoSetDisabledUndefined: Self = StObject.set(x, "doSetDisabled", js.undefined)
     
     @scala.inline
-    def deleteBaseParams: Self = this.set("baseParams", js.undefined)
+    def setEnableSubmissionForm(value: Boolean): Self = StObject.set(x, "enableSubmissionForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[js.Any] => IPanel): Self = this.set("doSetDisabled", js.Any.fromFunction1(value))
+    def setEnableSubmissionFormUndefined: Self = StObject.set(x, "enableSubmissionForm", js.undefined)
     
     @scala.inline
-    def deleteDoSetDisabled: Self = this.set("doSetDisabled", js.undefined)
+    def setEnctype(value: js.Any): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSubmissionForm(value: Boolean): Self = this.set("enableSubmissionForm", value.asInstanceOf[js.Any])
+    def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
     
     @scala.inline
-    def deleteEnableSubmissionForm: Self = this.set("enableSubmissionForm", js.undefined)
+    def setGetApi(value: () => _): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnctype(value: js.Any): Self = this.set("enctype", value.asInstanceOf[js.Any])
+    def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
     
     @scala.inline
-    def deleteEnctype: Self = this.set("enctype", js.undefined)
+    def setGetBaseParams(value: () => _): Self = StObject.set(x, "getBaseParams", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetApi(value: () => _): Self = this.set("getApi", js.Any.fromFunction0(value))
+    def setGetBaseParamsUndefined: Self = StObject.set(x, "getBaseParams", js.undefined)
     
     @scala.inline
-    def deleteGetApi: Self = this.set("getApi", js.undefined)
+    def setGetEnableSubmissionForm(value: () => Boolean): Self = StObject.set(x, "getEnableSubmissionForm", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBaseParams(value: () => _): Self = this.set("getBaseParams", js.Any.fromFunction0(value))
+    def setGetEnableSubmissionFormUndefined: Self = StObject.set(x, "getEnableSubmissionForm", js.undefined)
     
     @scala.inline
-    def deleteGetBaseParams: Self = this.set("getBaseParams", js.undefined)
+    def setGetEnctype(value: () => _): Self = StObject.set(x, "getEnctype", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnableSubmissionForm(value: () => Boolean): Self = this.set("getEnableSubmissionForm", js.Any.fromFunction0(value))
+    def setGetEnctypeUndefined: Self = StObject.set(x, "getEnctype", js.undefined)
     
     @scala.inline
-    def deleteGetEnableSubmissionForm: Self = this.set("getEnableSubmissionForm", js.undefined)
+    def setGetMethod(value: () => String): Self = StObject.set(x, "getMethod", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnctype(value: () => _): Self = this.set("getEnctype", js.Any.fromFunction0(value))
+    def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
     
     @scala.inline
-    def deleteGetEnctype: Self = this.set("getEnctype", js.undefined)
+    def setGetMultipartDetection(value: () => Boolean): Self = StObject.set(x, "getMultipartDetection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMethod(value: () => String): Self = this.set("getMethod", js.Any.fromFunction0(value))
+    def setGetMultipartDetectionUndefined: Self = StObject.set(x, "getMultipartDetection", js.undefined)
     
     @scala.inline
-    def deleteGetMethod: Self = this.set("getMethod", js.undefined)
+    def setGetParamOrder(value: () => _): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMultipartDetection(value: () => Boolean): Self = this.set("getMultipartDetection", js.Any.fromFunction0(value))
+    def setGetParamOrderUndefined: Self = StObject.set(x, "getParamOrder", js.undefined)
     
     @scala.inline
-    def deleteGetMultipartDetection: Self = this.set("getMultipartDetection", js.undefined)
+    def setGetParamsAsHash(value: () => Boolean): Self = StObject.set(x, "getParamsAsHash", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParamOrder(value: () => _): Self = this.set("getParamOrder", js.Any.fromFunction0(value))
+    def setGetParamsAsHashUndefined: Self = StObject.set(x, "getParamsAsHash", js.undefined)
     
     @scala.inline
-    def deleteGetParamOrder: Self = this.set("getParamOrder", js.undefined)
+    def setGetStandardSubmit(value: () => Boolean): Self = StObject.set(x, "getStandardSubmit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParamsAsHash(value: () => Boolean): Self = this.set("getParamsAsHash", js.Any.fromFunction0(value))
+    def setGetStandardSubmitUndefined: Self = StObject.set(x, "getStandardSubmit", js.undefined)
     
     @scala.inline
-    def deleteGetParamsAsHash: Self = this.set("getParamsAsHash", js.undefined)
+    def setGetSubmitOnAction(value: () => _): Self = StObject.set(x, "getSubmitOnAction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStandardSubmit(value: () => Boolean): Self = this.set("getStandardSubmit", js.Any.fromFunction0(value))
+    def setGetSubmitOnActionUndefined: Self = StObject.set(x, "getSubmitOnAction", js.undefined)
     
     @scala.inline
-    def deleteGetStandardSubmit: Self = this.set("getStandardSubmit", js.undefined)
+    def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubmitOnAction(value: () => _): Self = this.set("getSubmitOnAction", js.Any.fromFunction0(value))
+    def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
     
     @scala.inline
-    def deleteGetSubmitOnAction: Self = this.set("getSubmitOnAction", js.undefined)
+    def setGetTrackResetOnLoad(value: () => Boolean): Self = StObject.set(x, "getTrackResetOnLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTimeout(value: () => Double): Self = this.set("getTimeout", js.Any.fromFunction0(value))
+    def setGetTrackResetOnLoadUndefined: Self = StObject.set(x, "getTrackResetOnLoad", js.undefined)
     
     @scala.inline
-    def deleteGetTimeout: Self = this.set("getTimeout", js.undefined)
+    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTrackResetOnLoad(value: () => Boolean): Self = this.set("getTrackResetOnLoad", js.Any.fromFunction0(value))
+    def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
     @scala.inline
-    def deleteGetTrackResetOnLoad: Self = this.set("getTrackResetOnLoad", js.undefined)
+    def setGetValues(value: (/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "getValues", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetUrl(value: () => String): Self = this.set("getUrl", js.Any.fromFunction0(value))
+    def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
     
     @scala.inline
-    def deleteGetUrl: Self = this.set("getUrl", js.undefined)
+    def setHideMask(value: () => IPanel): Self = StObject.set(x, "hideMask", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetValues(value: (/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean]) => _): Self = this.set("getValues", js.Any.fromFunction2(value))
+    def setHideMaskUndefined: Self = StObject.set(x, "hideMask", js.undefined)
     
     @scala.inline
-    def deleteGetValues: Self = this.set("getValues", js.undefined)
+    def setLoad(value: /* options */ js.UndefOr[js.Any] => IConnection): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideMask(value: () => IPanel): Self = this.set("hideMask", js.Any.fromFunction0(value))
+    def setLoadModel(value: /* record */ js.UndefOr[IModel] => IPanel): Self = StObject.set(x, "loadModel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHideMask: Self = this.set("hideMask", js.undefined)
+    def setLoadModelUndefined: Self = StObject.set(x, "loadModel", js.undefined)
     
     @scala.inline
-    def setLoad(value: /* options */ js.UndefOr[js.Any] => IConnection): Self = this.set("load", js.Any.fromFunction1(value))
+    def setLoadRecord(value: /* record */ js.UndefOr[IModel] => IPanel): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
+    def setLoadRecordUndefined: Self = StObject.set(x, "loadRecord", js.undefined)
     
     @scala.inline
-    def setLoadModel(value: /* record */ js.UndefOr[IModel] => IPanel): Self = this.set("loadModel", js.Any.fromFunction1(value))
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def deleteLoadModel: Self = this.set("loadModel", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadRecord(value: /* record */ js.UndefOr[IModel] => IPanel): Self = this.set("loadRecord", js.Any.fromFunction1(value))
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteLoadRecord: Self = this.set("loadRecord", js.undefined)
+    def setMultipartDetection(value: Boolean): Self = StObject.set(x, "multipartDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMultipartDetectionUndefined: Self = StObject.set(x, "multipartDetection", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setParamOrder(value: js.Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipartDetection(value: Boolean): Self = this.set("multipartDetection", value.asInstanceOf[js.Any])
+    def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
     
     @scala.inline
-    def deleteMultipartDetection: Self = this.set("multipartDetection", js.undefined)
+    def setParamsAsHash(value: Boolean): Self = StObject.set(x, "paramsAsHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamOrder(value: js.Any): Self = this.set("paramOrder", value.asInstanceOf[js.Any])
+    def setParamsAsHashUndefined: Self = StObject.set(x, "paramsAsHash", js.undefined)
     
     @scala.inline
-    def deleteParamOrder: Self = this.set("paramOrder", js.undefined)
+    def setReset(value: () => IPanel): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParamsAsHash(value: Boolean): Self = this.set("paramsAsHash", value.asInstanceOf[js.Any])
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteParamsAsHash: Self = this.set("paramsAsHash", js.undefined)
+    def setSetApi(value: /* api */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setApi", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: () => IPanel): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setSetApiUndefined: Self = StObject.set(x, "setApi", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setSetBaseParams(value: /* baseParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBaseParams", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetApi(value: /* api */ js.UndefOr[js.Any] => Unit): Self = this.set("setApi", js.Any.fromFunction1(value))
+    def setSetBaseParamsUndefined: Self = StObject.set(x, "setBaseParams", js.undefined)
     
     @scala.inline
-    def deleteSetApi: Self = this.set("setApi", js.undefined)
+    def setSetEnableSubmissionForm(value: /* enableSubmissionForm */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEnableSubmissionForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBaseParams(value: /* baseParams */ js.UndefOr[js.Any] => Unit): Self = this.set("setBaseParams", js.Any.fromFunction1(value))
+    def setSetEnableSubmissionFormUndefined: Self = StObject.set(x, "setEnableSubmissionForm", js.undefined)
     
     @scala.inline
-    def deleteSetBaseParams: Self = this.set("setBaseParams", js.undefined)
+    def setSetEnctype(value: /* enctype */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEnctype", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnableSubmissionForm(value: /* enableSubmissionForm */ js.UndefOr[Boolean] => Unit): Self = this.set("setEnableSubmissionForm", js.Any.fromFunction1(value))
+    def setSetEnctypeUndefined: Self = StObject.set(x, "setEnctype", js.undefined)
     
     @scala.inline
-    def deleteSetEnableSubmissionForm: Self = this.set("setEnableSubmissionForm", js.undefined)
+    def setSetMethod(value: /* method */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMethod", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnctype(value: /* enctype */ js.UndefOr[js.Any] => Unit): Self = this.set("setEnctype", js.Any.fromFunction1(value))
+    def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
     
     @scala.inline
-    def deleteSetEnctype: Self = this.set("setEnctype", js.undefined)
+    def setSetMultipartDetection(value: /* multipartDetection */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setMultipartDetection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMethod(value: /* method */ js.UndefOr[String] => Unit): Self = this.set("setMethod", js.Any.fromFunction1(value))
+    def setSetMultipartDetectionUndefined: Self = StObject.set(x, "setMultipartDetection", js.undefined)
     
     @scala.inline
-    def deleteSetMethod: Self = this.set("setMethod", js.undefined)
+    def setSetParamOrder(value: /* paramOrder */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParamOrder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMultipartDetection(value: /* multipartDetection */ js.UndefOr[Boolean] => Unit): Self = this.set("setMultipartDetection", js.Any.fromFunction1(value))
+    def setSetParamOrderUndefined: Self = StObject.set(x, "setParamOrder", js.undefined)
     
     @scala.inline
-    def deleteSetMultipartDetection: Self = this.set("setMultipartDetection", js.undefined)
+    def setSetParamsAsHash(value: /* paramsAsHash */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setParamsAsHash", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetParamOrder(value: /* paramOrder */ js.UndefOr[js.Any] => Unit): Self = this.set("setParamOrder", js.Any.fromFunction1(value))
+    def setSetParamsAsHashUndefined: Self = StObject.set(x, "setParamsAsHash", js.undefined)
     
     @scala.inline
-    def deleteSetParamOrder: Self = this.set("setParamOrder", js.undefined)
+    def setSetStandardSubmit(value: /* standardSubmit */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStandardSubmit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetParamsAsHash(value: /* paramsAsHash */ js.UndefOr[Boolean] => Unit): Self = this.set("setParamsAsHash", js.Any.fromFunction1(value))
+    def setSetStandardSubmitUndefined: Self = StObject.set(x, "setStandardSubmit", js.undefined)
     
     @scala.inline
-    def deleteSetParamsAsHash: Self = this.set("setParamsAsHash", js.undefined)
+    def setSetSubmitOnAction(value: /* submitOnAction */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSubmitOnAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetStandardSubmit(value: /* standardSubmit */ js.UndefOr[Boolean] => Unit): Self = this.set("setStandardSubmit", js.Any.fromFunction1(value))
+    def setSetSubmitOnActionUndefined: Self = StObject.set(x, "setSubmitOnAction", js.undefined)
     
     @scala.inline
-    def deleteSetStandardSubmit: Self = this.set("setStandardSubmit", js.undefined)
+    def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSubmitOnAction(value: /* submitOnAction */ js.UndefOr[js.Any] => Unit): Self = this.set("setSubmitOnAction", js.Any.fromFunction1(value))
+    def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
     
     @scala.inline
-    def deleteSetSubmitOnAction: Self = this.set("setSubmitOnAction", js.undefined)
+    def setSetTrackResetOnLoad(value: /* trackResetOnLoad */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setTrackResetOnLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = this.set("setTimeout", js.Any.fromFunction1(value))
+    def setSetTrackResetOnLoadUndefined: Self = StObject.set(x, "setTrackResetOnLoad", js.undefined)
     
     @scala.inline
-    def deleteSetTimeout: Self = this.set("setTimeout", js.undefined)
+    def setSetUrl(value: /* url */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTrackResetOnLoad(value: /* trackResetOnLoad */ js.UndefOr[Boolean] => Unit): Self = this.set("setTrackResetOnLoad", js.Any.fromFunction1(value))
+    def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
     @scala.inline
-    def deleteSetTrackResetOnLoad: Self = this.set("setTrackResetOnLoad", js.undefined)
+    def setSetValues(value: /* values */ js.UndefOr[js.Any] => IPanel): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetUrl(value: /* url */ js.UndefOr[String] => Unit): Self = this.set("setUrl", js.Any.fromFunction1(value))
+    def setSetValuesUndefined: Self = StObject.set(x, "setValues", js.undefined)
     
     @scala.inline
-    def deleteSetUrl: Self = this.set("setUrl", js.undefined)
+    def setShowMask(value: (/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => IPanel): Self = StObject.set(x, "showMask", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetValues(value: /* values */ js.UndefOr[js.Any] => IPanel): Self = this.set("setValues", js.Any.fromFunction1(value))
+    def setShowMaskUndefined: Self = StObject.set(x, "showMask", js.undefined)
     
     @scala.inline
-    def deleteSetValues: Self = this.set("setValues", js.undefined)
+    def setStandardSubmit(value: Boolean): Self = StObject.set(x, "standardSubmit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMask(value: (/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => IPanel): Self = this.set("showMask", js.Any.fromFunction2(value))
+    def setStandardSubmitUndefined: Self = StObject.set(x, "standardSubmit", js.undefined)
     
     @scala.inline
-    def deleteShowMask: Self = this.set("showMask", js.undefined)
+    def setSubmit(value: /* options */ js.UndefOr[js.Any] => IConnection): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStandardSubmit(value: Boolean): Self = this.set("standardSubmit", value.asInstanceOf[js.Any])
+    def setSubmitOnAction(value: js.Any): Self = StObject.set(x, "submitOnAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStandardSubmit: Self = this.set("standardSubmit", js.undefined)
+    def setSubmitOnActionUndefined: Self = StObject.set(x, "submitOnAction", js.undefined)
     
     @scala.inline
-    def setSubmit(value: /* options */ js.UndefOr[js.Any] => IConnection): Self = this.set("submit", js.Any.fromFunction1(value))
+    def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
     
     @scala.inline
-    def deleteSubmit: Self = this.set("submit", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmitOnAction(value: js.Any): Self = this.set("submitOnAction", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteSubmitOnAction: Self = this.set("submitOnAction", js.undefined)
+    def setTrackResetOnLoad(value: Boolean): Self = StObject.set(x, "trackResetOnLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTrackResetOnLoadUndefined: Self = StObject.set(x, "trackResetOnLoad", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackResetOnLoad(value: Boolean): Self = this.set("trackResetOnLoad", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTrackResetOnLoad: Self = this.set("trackResetOnLoad", js.undefined)
+    def setWaitMsgTarget(value: IElement): Self = StObject.set(x, "waitMsgTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setWaitMsgTargetUndefined: Self = StObject.set(x, "waitMsgTarget", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setWaitTpl(value: js.Any): Self = StObject.set(x, "waitTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitMsgTarget(value: IElement): Self = this.set("waitMsgTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitMsgTarget: Self = this.set("waitMsgTarget", js.undefined)
-    
-    @scala.inline
-    def setWaitTpl(value: js.Any): Self = this.set("waitTpl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitTpl: Self = this.set("waitTpl", js.undefined)
+    def setWaitTplUndefined: Self = StObject.set(x, "waitTpl", js.undefined)
   }
 }

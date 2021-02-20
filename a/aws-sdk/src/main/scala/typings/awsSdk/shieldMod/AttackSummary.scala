@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttackSummary extends js.Object {
+trait AttackSummary extends StObject {
   
   /**
     * The unique identifier (ID) of the attack.
@@ -41,51 +42,39 @@ object AttackSummary {
   }
   
   @scala.inline
-  implicit class AttackSummaryOps[Self <: AttackSummary] (val x: Self) extends AnyVal {
+  implicit class AttackSummaryMutableBuilder[Self <: AttackSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttackId(value: String): Self = StObject.set(x, "AttackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttackIdUndefined: Self = StObject.set(x, "AttackId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttackVectors(value: AttackVectorDescriptionList): Self = StObject.set(x, "AttackVectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackId(value: String): Self = this.set("AttackId", value.asInstanceOf[js.Any])
+    def setAttackVectorsUndefined: Self = StObject.set(x, "AttackVectors", js.undefined)
     
     @scala.inline
-    def deleteAttackId: Self = this.set("AttackId", js.undefined)
+    def setAttackVectorsVarargs(value: AttackVectorDescription*): Self = StObject.set(x, "AttackVectors", js.Array(value :_*))
     
     @scala.inline
-    def setAttackVectorsVarargs(value: AttackVectorDescription*): Self = this.set("AttackVectors", js.Array(value :_*))
+    def setEndTime(value: AttackTimestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackVectors(value: AttackVectorDescriptionList): Self = this.set("AttackVectors", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteAttackVectors: Self = this.set("AttackVectors", js.undefined)
+    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: AttackTimestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setStartTime(value: AttackTimestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArn(value: String): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: AttackTimestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

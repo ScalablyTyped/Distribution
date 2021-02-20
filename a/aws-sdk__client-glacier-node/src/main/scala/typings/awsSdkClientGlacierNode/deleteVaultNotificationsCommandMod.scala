@@ -7,14 +7,14 @@ import typings.awsSdkClientGlacierNode.typesDeleteVaultNotificationsInputMod.Del
 import typings.awsSdkClientGlacierNode.typesDeleteVaultNotificationsOutputMod.DeleteVaultNotificationsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/commands/DeleteVaultNotificationsCommand", JSImport.Namespace)
-@js.native
-object deleteVaultNotificationsCommandMod extends js.Object {
+object deleteVaultNotificationsCommandMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/commands/DeleteVaultNotificationsCommand", "DeleteVaultNotificationsCommand")
   @js.native
   class DeleteVaultNotificationsCommand protected () extends Command[
           InputTypesUnion, 

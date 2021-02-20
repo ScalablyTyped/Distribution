@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDeploymentRequest extends js.Object {
+trait CreateDeploymentRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
@@ -41,42 +42,30 @@ object CreateDeploymentRequest {
   }
   
   @scala.inline
-  implicit class CreateDeploymentRequestOps[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDeploymentRequestMutableBuilder[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentType(value: DeploymentType): Self = this.set("DeploymentType", value.asInstanceOf[js.Any])
+    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
     @scala.inline
-    def setGroupId(value: string): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    def setDeploymentType(value: DeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmznClientToken(value: string): Self = this.set("AmznClientToken", value.asInstanceOf[js.Any])
+    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmznClientToken: Self = this.set("AmznClientToken", js.undefined)
+    def setGroupVersionId(value: string): Self = StObject.set(x, "GroupVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: string): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
-    
-    @scala.inline
-    def setGroupVersionId(value: string): Self = this.set("GroupVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupVersionId: Self = this.set("GroupVersionId", js.undefined)
+    def setGroupVersionIdUndefined: Self = StObject.set(x, "GroupVersionId", js.undefined)
   }
 }

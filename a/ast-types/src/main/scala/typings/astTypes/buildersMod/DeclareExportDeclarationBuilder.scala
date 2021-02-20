@@ -12,12 +12,13 @@ import typings.astTypes.kindsMod.InterfaceDeclarationKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.TypeAliasKind
 import typings.astTypes.namedTypesMod.namedTypes.DeclareExportDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeclareExportDeclarationBuilder extends js.Object {
+trait DeclareExportDeclarationBuilder extends StObject {
   
   def apply(defaultParam: Boolean): DeclareExportDeclaration = js.native
   def apply(

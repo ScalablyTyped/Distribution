@@ -1,13 +1,14 @@
 package typings.cucumber.mod
 
 import typings.cucumber.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cucumber", "EventListener")
 @js.native
-class EventListener () extends js.Object {
+class EventListener () extends StObject {
   
   def buildHandlerName(shortName: String): String = js.native
   

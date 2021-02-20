@@ -1,11 +1,12 @@
 package typings.awsSdk.cloud9Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Environment extends js.Object {
+trait Environment extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the environment.
@@ -56,66 +57,54 @@ object Environment {
   }
   
   @scala.inline
-  implicit class EnvironmentOps[Self <: Environment] (val x: Self) extends AnyVal {
+  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionType(value: ConnectionType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDescription(value: EnvironmentDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionType(value: ConnectionType): Self = this.set("connectionType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteConnectionType: Self = this.set("connectionType", js.undefined)
+    def setId(value: EnvironmentId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: EnvironmentDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLifecycle(value: EnvironmentLifecycle): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: EnvironmentId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLifecycleUndefined: Self = StObject.set(x, "lifecycle", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: EnvironmentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycle(value: EnvironmentLifecycle): Self = this.set("lifecycle", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLifecycle: Self = this.set("lifecycle", js.undefined)
+    def setOwnerArn(value: String): Self = StObject.set(x, "ownerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: EnvironmentName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerArnUndefined: Self = StObject.set(x, "ownerArn", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setType(value: EnvironmentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerArn(value: String): Self = this.set("ownerArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerArn: Self = this.set("ownerArn", js.undefined)
-    
-    @scala.inline
-    def setType(value: EnvironmentType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -2,14 +2,14 @@ package typings.sentryUtils
 
 import typings.sentryTypes.dsnMod.DsnComponents
 import typings.sentryTypes.dsnMod.DsnLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/utils/dist/dsn", JSImport.Namespace)
-@js.native
-object dsnMod extends js.Object {
+object dsnMod {
   
+  @JSImport("@sentry/utils/dist/dsn", "Dsn")
   @js.native
   class Dsn protected () extends DsnComponents {
     /** Creates a new Dsn component */

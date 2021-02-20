@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientTranslate.anon.Filter
 import typings.maximMazurokGapiClientTranslate.anon.Oauthtoken
 import typings.maximMazurokGapiClientTranslate.anon.Parent
 import typings.maximMazurokGapiClientTranslate.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationsResource extends js.Object {
+trait LocationsResource extends StObject {
   
   def batchTranslateText(request: Alt, body: BatchTranslateTextRequest): Request[Operation] = js.native
   /**

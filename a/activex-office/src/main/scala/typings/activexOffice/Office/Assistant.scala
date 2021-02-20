@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Assistant extends js.Object {
+trait Assistant extends StObject {
   
   def ActivateWizard(WizardID: Double, act: MsoWizardActType): Unit = js.native
   def ActivateWizard(WizardID: Double, act: MsoWizardActType, Animation: MsoAnimationType): Unit = js.native

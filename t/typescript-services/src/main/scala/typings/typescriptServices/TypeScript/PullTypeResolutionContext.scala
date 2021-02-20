@@ -3,12 +3,13 @@ package typings.typescriptServices.TypeScript
 import typings.typescriptServices.anon.EnclosingTypeWalkerState1
 import typings.typescriptServices.anon.IndexSigs1
 import typings.typescriptServices.anon.StateWhenStartedWalkingTypes1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullTypeResolutionContext extends js.Object {
+trait PullTypeResolutionContext extends StObject {
   
   /* private */ def _pushAnyContextualType(`type`: js.Any, provisional: js.Any, isInferentiallyTyping: js.Any, argContext: js.Any): js.Any = js.native
   

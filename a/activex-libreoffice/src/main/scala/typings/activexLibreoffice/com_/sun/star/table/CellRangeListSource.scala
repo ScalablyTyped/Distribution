@@ -2,12 +2,12 @@ package typings.activexLibreoffice.com_.sun.star.table
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
+import typings.activexLibreoffice.com_.sun.star.form.binding.ListEntrySource
 import typings.activexLibreoffice.com_.sun.star.form.binding.XListEntryListener
-import typings.activexLibreoffice.com_.sun.star.form.binding.XListEntrySource
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,8 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait CellRangeListSource
-  extends XListEntrySource
-     with XComponent
+  extends ListEntrySource
      with XInitialization {
   
   /** specifies the cell range within a document to which the component is bound. */
@@ -52,21 +51,9 @@ object CellRangeListSource {
   }
   
   @scala.inline
-  implicit class CellRangeListSourceOps[Self <: CellRangeListSource] (val x: Self) extends AnyVal {
+  implicit class CellRangeListSourceMutableBuilder[Self <: CellRangeListSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCellRange(value: CellRangeAddress): Self = this.set("CellRange", value.asInstanceOf[js.Any])
+    def setCellRange(value: CellRangeAddress): Self = StObject.set(x, "CellRange", value.asInstanceOf[js.Any])
   }
 }

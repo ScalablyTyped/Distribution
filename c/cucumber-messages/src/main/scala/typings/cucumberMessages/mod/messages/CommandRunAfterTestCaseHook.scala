@@ -6,6 +6,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,17 +22,19 @@ class CommandRunAfterTestCaseHook ()
   extends typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook {
   def this(properties: ICommandRunAfterTestCaseHook) = this()
 }
-/* static members */
-@JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook")
-@js.native
-object CommandRunAfterTestCaseHook extends js.Object {
+object CommandRunAfterTestCaseHook {
   
   /**
     * Creates a new CommandRunAfterTestCaseHook instance using the specified properties.
     * @param [properties] Properties to set
     * @returns CommandRunAfterTestCaseHook instance
     */
+  /* static member */
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.create")
+  @js.native
   def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.create")
+  @js.native
   def create(properties: ICommandRunAfterTestCaseHook): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook = js.native
   
   /**
@@ -42,9 +45,18 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.decode")
+  @js.native
   def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.decode")
+  @js.native
   def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.decode")
+  @js.native
   def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook = js.native
   
   /**
@@ -54,7 +66,12 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook = js.native
   
   /**
@@ -63,7 +80,12 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.encode")
+  @js.native
   def encode(message: ICommandRunAfterTestCaseHook): Writer = js.native
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.encode")
+  @js.native
   def encode(message: ICommandRunAfterTestCaseHook, writer: Writer): Writer = js.native
   
   /**
@@ -72,7 +94,12 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ICommandRunAfterTestCaseHook): Writer = js.native
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ICommandRunAfterTestCaseHook, writer: Writer): Writer = js.native
   
   /**
@@ -80,6 +107,9 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param object Plain object
     * @returns CommandRunAfterTestCaseHook
     */
+  /* static member */
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook = js.native
   
   /**
@@ -88,9 +118,14 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  /* static member */
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.toObject")
+  @js.native
   def toObject(
     message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook
   ): StringDictionary[js.Any] = js.native
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.toObject")
+  @js.native
   def toObject(
     message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.CommandRunAfterTestCaseHook,
     options: IConversionOptions
@@ -101,5 +136,8 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  /* static member */
+  @JSImport("cucumber-messages", "messages.CommandRunAfterTestCaseHook.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

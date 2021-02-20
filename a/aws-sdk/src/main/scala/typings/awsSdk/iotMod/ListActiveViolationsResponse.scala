@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListActiveViolationsResponse extends js.Object {
+trait ListActiveViolationsResponse extends StObject {
   
   /**
     * The list of active violations.
@@ -26,33 +27,21 @@ object ListActiveViolationsResponse {
   }
   
   @scala.inline
-  implicit class ListActiveViolationsResponseOps[Self <: ListActiveViolationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListActiveViolationsResponseMutableBuilder[Self <: ListActiveViolationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveViolations(value: ActiveViolations): Self = StObject.set(x, "activeViolations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveViolationsUndefined: Self = StObject.set(x, "activeViolations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveViolationsVarargs(value: ActiveViolation*): Self = StObject.set(x, "activeViolations", js.Array(value :_*))
     
     @scala.inline
-    def setActiveViolationsVarargs(value: ActiveViolation*): Self = this.set("activeViolations", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveViolations(value: ActiveViolations): Self = this.set("activeViolations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActiveViolations: Self = this.set("activeViolations", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

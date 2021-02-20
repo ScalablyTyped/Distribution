@@ -26,6 +26,7 @@ import typings.arangodb.arangodbGeneralGraphMod.PathsOptions
 import typings.arangodb.arangodbGeneralGraphMod.RadiusOptions
 import typings.arangodb.arangodbGeneralGraphMod.ShortestPath
 import typings.arangodb.arangodbGeneralGraphMod.ShortestPathOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

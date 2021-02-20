@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpekeKeyProvider extends js.Object {
+trait SpekeKeyProvider extends StObject {
   
   /**
     * If you want your key provider to encrypt the content keys that it provides to MediaConvert, set up a certificate with a master key using AWS Certificate Manager. Specify the certificate's Amazon Resource Name (ARN) here.
@@ -37,45 +38,33 @@ object SpekeKeyProvider {
   }
   
   @scala.inline
-  implicit class SpekeKeyProviderOps[Self <: SpekeKeyProvider] (val x: Self) extends AnyVal {
+  implicit class SpekeKeyProviderMutableBuilder[Self <: SpekeKeyProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: stringPatternArnAwsUsGovAcm): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: stringPatternArnAwsUsGovAcm): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    def setSystemIds(value: listOfStringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = StObject.set(x, "SystemIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: string): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setSystemIdsUndefined: Self = StObject.set(x, "SystemIds", js.undefined)
     
     @scala.inline
-    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    def setSystemIdsVarargs(value: stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = StObject.set(x, "SystemIds", js.Array(value :_*))
     
     @scala.inline
-    def setSystemIdsVarargs(value: stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = this.set("SystemIds", js.Array(value :_*))
+    def setUrl(value: stringPatternHttps): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemIds(value: listOfStringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = this.set("SystemIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemIds: Self = this.set("SystemIds", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: stringPatternHttps): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

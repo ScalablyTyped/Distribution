@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.animations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * event should be raised a defined amount of time after the event is triggered.
   */
 @js.native
-trait Event extends js.Object {
+trait Event extends StObject {
   
   /** an optional offset in seconds or Timing::INDEFINITE. This is the timespan between the triggering of the event and actually raising the event */
   var Offset: js.Any = js.native
@@ -32,30 +33,18 @@ object Event {
   }
   
   @scala.inline
-  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOffset(value: js.Any): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepeat(value: Double): Self = StObject.set(x, "Repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: js.Any): Self = this.set("Offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeat(value: Double): Self = this.set("Repeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: js.Any): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrigger(value: Double): Self = this.set("Trigger", value.asInstanceOf[js.Any])
+    def setTrigger(value: Double): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
   }
 }

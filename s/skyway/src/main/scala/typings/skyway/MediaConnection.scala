@@ -4,12 +4,13 @@ import typings.skyway.skywayStrings.close
 import typings.skyway.skywayStrings.removeStream
 import typings.skyway.skywayStrings.stream
 import typings.std.MediaStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaConnection extends js.Object {
+trait MediaConnection extends StObject {
   
   def answer(stream: MediaStream): js.UndefOr[scala.Nothing] = js.native
   def answer(stream: MediaStream, options: AnswerOptions): js.UndefOr[scala.Nothing] = js.native

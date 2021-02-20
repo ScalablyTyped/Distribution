@@ -1,5 +1,6 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [](https://developer.spotify.com/web-api/object-model/#cursor-based-paging-object)
   */
 @js.native
-trait CursorBasedPagingObject[T] extends js.Object {
+trait CursorBasedPagingObject[T] extends StObject {
   
   var cursors: CursorObject = js.native
   
@@ -32,42 +33,30 @@ object CursorBasedPagingObject {
   }
   
   @scala.inline
-  implicit class CursorBasedPagingObjectOps[Self <: CursorBasedPagingObject[_], T] (val x: Self with CursorBasedPagingObject[T]) extends AnyVal {
+  implicit class CursorBasedPagingObjectMutableBuilder[Self <: CursorBasedPagingObject[_], T] (val x: Self with CursorBasedPagingObject[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursors(value: CursorObject): Self = StObject.set(x, "cursors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursors(value: CursorObject): Self = this.set("cursors", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: T*): Self = this.set("items", js.Array(value :_*))
+    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[T]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

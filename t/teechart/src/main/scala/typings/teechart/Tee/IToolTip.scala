@@ -1,5 +1,6 @@
 package typings.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,42 +58,30 @@ object IToolTip {
   }
   
   @scala.inline
-  implicit class IToolTipOps[Self <: IToolTip] (val x: Self) extends AnyVal {
+  implicit class IToolTipMutableBuilder[Self <: IToolTip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Double): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoRedraw(value: Boolean): Self = StObject.set(x, "autoRedraw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Double): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    def setCurrentSeries(value: ISeries): Self = StObject.set(x, "currentSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRedraw(value: Boolean): Self = this.set("autoRedraw", value.asInstanceOf[js.Any])
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentIndex(value: Double): Self = this.set("currentIndex", value.asInstanceOf[js.Any])
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentSeries(value: ISeries): Self = this.set("currentSeries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRefresh(value: (ISeries, Double) => Unit): Self = this.set("refresh", js.Any.fromFunction2(value))
+    def setRefresh(value: (ISeries, Double) => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction2(value))
   }
 }

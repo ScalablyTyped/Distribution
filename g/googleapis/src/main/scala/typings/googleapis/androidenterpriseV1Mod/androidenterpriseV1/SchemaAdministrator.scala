@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * managed Google Play store.
   */
 @js.native
-trait SchemaAdministrator extends js.Object {
+trait SchemaAdministrator extends StObject {
   
   /**
     * The admin&#39;s email address.
@@ -25,24 +26,12 @@ object SchemaAdministrator {
   }
   
   @scala.inline
-  implicit class SchemaAdministratorOps[Self <: SchemaAdministrator] (val x: Self) extends AnyVal {
+  implicit class SchemaAdministratorMutableBuilder[Self <: SchemaAdministrator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

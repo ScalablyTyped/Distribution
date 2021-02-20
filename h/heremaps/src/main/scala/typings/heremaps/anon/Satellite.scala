@@ -1,12 +1,13 @@
 package typings.heremaps.anon
 
 import typings.heremaps.H.service.MapType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Satellite extends js.Object {
+trait Satellite extends StObject {
   
   var normal: MapType = js.native
   
@@ -23,27 +24,15 @@ object Satellite {
   }
   
   @scala.inline
-  implicit class SatelliteOps[Self <: Satellite] (val x: Self) extends AnyVal {
+  implicit class SatelliteMutableBuilder[Self <: Satellite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNormal(value: MapType): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSatellite(value: MapType): Self = StObject.set(x, "satellite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNormal(value: MapType): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSatellite(value: MapType): Self = this.set("satellite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTerrain(value: MapType): Self = this.set("terrain", value.asInstanceOf[js.Any])
+    def setTerrain(value: MapType): Self = StObject.set(x, "terrain", value.asInstanceOf[js.Any])
   }
 }

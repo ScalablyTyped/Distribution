@@ -1,6 +1,7 @@
 package typings.pixiJs.global.PIXI
 
 import typings.pixiJs.PIXI.GD8Symmetry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,9 +31,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @namespace PIXI.groupD8
   * @memberof PIXI
   */
-@JSGlobal("PIXI.groupD8")
-@js.native
-object groupD8 extends js.Object {
+object groupD8 {
+  
+  @JSGlobal("PIXI.groupD8")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * | Rotation | Direction |
@@ -42,7 +45,11 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var E: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.E")
+  @js.native
+  def E: GD8Symmetry = js.native
+  @scala.inline
+  def E_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("E")(x.asInstanceOf[js.Any])
   
   /**
     * Reflection about the main diagonal.
@@ -50,7 +57,11 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var MAIN_DIAGONAL: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.MAIN_DIAGONAL")
+  @js.native
+  def MAIN_DIAGONAL: GD8Symmetry = js.native
+  @scala.inline
+  def MAIN_DIAGONAL_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAIN_DIAGONAL")(x.asInstanceOf[js.Any])
   
   /**
     * Reflection about X-axis.
@@ -58,7 +69,11 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var MIRROR_HORIZONTAL: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.MIRROR_HORIZONTAL")
+  @js.native
+  def MIRROR_HORIZONTAL: GD8Symmetry = js.native
+  @scala.inline
+  def MIRROR_HORIZONTAL_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIRROR_HORIZONTAL")(x.asInstanceOf[js.Any])
   
   /**
     * Reflection about Y-axis.
@@ -66,7 +81,11 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var MIRROR_VERTICAL: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.MIRROR_VERTICAL")
+  @js.native
+  def MIRROR_VERTICAL: GD8Symmetry = js.native
+  @scala.inline
+  def MIRROR_VERTICAL_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIRROR_VERTICAL")(x.asInstanceOf[js.Any])
   
   /**
     * | Rotation    | Direction    |
@@ -76,7 +95,9 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var N: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.N")
+  @js.native
+  def N: GD8Symmetry = js.native
   
   /**
     * | Rotation    | Direction    |
@@ -86,7 +107,11 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var NE: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.NE")
+  @js.native
+  def NE: GD8Symmetry = js.native
+  @scala.inline
+  def NE_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NE")(x.asInstanceOf[js.Any])
   
   /**
     * | Rotation    | Direction    |
@@ -96,7 +121,14 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var NW: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.NW")
+  @js.native
+  def NW: GD8Symmetry = js.native
+  @scala.inline
+  def NW_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NW")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def N_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("N")(x.asInstanceOf[js.Any])
   
   /**
     * Reflection about reverse diagonal.
@@ -104,7 +136,11 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var REVERSE_DIAGONAL: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.REVERSE_DIAGONAL")
+  @js.native
+  def REVERSE_DIAGONAL: GD8Symmetry = js.native
+  @scala.inline
+  def REVERSE_DIAGONAL_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REVERSE_DIAGONAL")(x.asInstanceOf[js.Any])
   
   /**
     * | Rotation | Direction |
@@ -114,7 +150,9 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var S: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.S")
+  @js.native
+  def S: GD8Symmetry = js.native
   
   /**
     * | Rotation | Direction |
@@ -124,7 +162,11 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var SE: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.SE")
+  @js.native
+  def SE: GD8Symmetry = js.native
+  @scala.inline
+  def SE_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SE")(x.asInstanceOf[js.Any])
   
   /**
     * | Rotation | Direction |
@@ -134,7 +176,14 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var SW: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.SW")
+  @js.native
+  def SW: GD8Symmetry = js.native
+  @scala.inline
+  def SW_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SW")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def S_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S")(x.asInstanceOf[js.Any])
   
   /**
     * | Rotation | Direction |
@@ -144,7 +193,11 @@ object groupD8 extends js.Object {
     * @memberof PIXI.groupD8
     * @constant {PIXI.GD8Symmetry}
     */
-  var W: GD8Symmetry = js.native
+  @JSGlobal("PIXI.groupD8.W")
+  @js.native
+  def W: GD8Symmetry = js.native
+  @scala.inline
+  def W_=(x: GD8Symmetry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("W")(x.asInstanceOf[js.Any])
   
   /**
     * Composes the two D8 operations.
@@ -170,6 +223,8 @@ object groupD8 extends js.Object {
     *   is the column in the above cayley table.
     * @return {PIXI.GD8Symmetry} Composed operation
     */
+  @JSGlobal("PIXI.groupD8.add")
+  @js.native
   def add(rotationSecond: GD8Symmetry, rotationFirst: GD8Symmetry): GD8Symmetry = js.native
   
   /**
@@ -182,6 +237,8 @@ object groupD8 extends js.Object {
     * @return {PIXI.GD8Symmetry} Approximation of the vector into
     *  one of the eight symmetries.
     */
+  @JSGlobal("PIXI.groupD8.byDirection")
+  @js.native
   def byDirection(dx: Double, dy: Double): GD8Symmetry = js.native
   
   /**
@@ -191,6 +248,8 @@ object groupD8 extends js.Object {
     *   reflections don't.
     * @return {PIXI.GD8Symmetry} The opposite symmetry of `rotation`
     */
+  @JSGlobal("PIXI.groupD8.inv")
+  @js.native
   def inv(rotation: GD8Symmetry): GD8Symmetry = js.native
   
   /**
@@ -201,6 +260,8 @@ object groupD8 extends js.Object {
     * @param {PIXI.GD8Symmetry} rotation - The number to check.
     * @returns {boolean} Whether or not the direction is vertical
     */
+  @JSGlobal("PIXI.groupD8.isVertical")
+  @js.native
   def isVertical(rotation: GD8Symmetry): Boolean = js.native
   
   /**
@@ -212,6 +273,8 @@ object groupD8 extends js.Object {
     * @param {number} tx - sprite anchoring
     * @param {number} ty - sprite anchoring
     */
+  @JSGlobal("PIXI.groupD8.matrixAppendRotationInv")
+  @js.native
   def matrixAppendRotationInv(matrix: typings.pixiJs.PIXI.Matrix, rotation: GD8Symmetry, tx: Double, ty: Double): Unit = js.native
   
   /**
@@ -222,6 +285,8 @@ object groupD8 extends js.Object {
     * @param {number} rotation - The number to rotate.
     * @returns {number} Rotated number
     */
+  @JSGlobal("PIXI.groupD8.rotate180")
+  @js.native
   def rotate180(rotation: Double): Double = js.native
   
   /**
@@ -232,6 +297,8 @@ object groupD8 extends js.Object {
     * @param {PIXI.GD8Symmetry} rotationFirst - First operation
     * @return {PIXI.GD8Symmetry} Result
     */
+  @JSGlobal("PIXI.groupD8.sub")
+  @js.native
   def sub(rotationSecond: GD8Symmetry, rotationFirst: GD8Symmetry): GD8Symmetry = js.native
   
   /**
@@ -240,6 +307,8 @@ object groupD8 extends js.Object {
     * @return {PIXI.GD8Symmetry} The X-component of the U-axis
     *    after rotating the axes.
     */
+  @JSGlobal("PIXI.groupD8.uX")
+  @js.native
   def uX(ind: GD8Symmetry): GD8Symmetry = js.native
   
   /**
@@ -248,6 +317,8 @@ object groupD8 extends js.Object {
     * @return {PIXI.GD8Symmetry} The Y-component of the U-axis
     *    after rotating the axes.
     */
+  @JSGlobal("PIXI.groupD8.uY")
+  @js.native
   def uY(ind: GD8Symmetry): GD8Symmetry = js.native
   
   /**
@@ -256,6 +327,8 @@ object groupD8 extends js.Object {
     * @return {PIXI.GD8Symmetry} The X-component of the V-axis
     *    after rotating the axes.
     */
+  @JSGlobal("PIXI.groupD8.vX")
+  @js.native
   def vX(ind: GD8Symmetry): GD8Symmetry = js.native
   
   /**
@@ -264,5 +337,7 @@ object groupD8 extends js.Object {
     * @return {PIXI.GD8Symmetry} The Y-component of the V-axis
     *    after rotating the axes.
     */
+  @JSGlobal("PIXI.groupD8.vY")
+  @js.native
   def vY(ind: GD8Symmetry): GD8Symmetry = js.native
 }

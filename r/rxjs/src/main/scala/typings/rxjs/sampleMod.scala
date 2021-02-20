@@ -2,13 +2,14 @@ package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.MonoTypeOperatorFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/operators/sample", JSImport.Namespace)
-@js.native
-object sampleMod extends js.Object {
+object sampleMod {
   
+  @JSImport("rxjs/internal/operators/sample", "sample")
+  @js.native
   def sample[T](notifier: Observable[_]): MonoTypeOperatorFunction[T] = js.native
 }

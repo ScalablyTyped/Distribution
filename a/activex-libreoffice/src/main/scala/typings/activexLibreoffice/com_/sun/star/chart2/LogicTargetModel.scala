@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * chart2} file format.
   */
 @js.native
-trait LogicTargetModel extends js.Object {
+trait LogicTargetModel extends StObject {
   
   /**
     * not BOUND nor CONSTRAINED in terms of Listener notifications, each element in the sequence must implement the service {@link
@@ -48,30 +49,18 @@ object LogicTargetModel {
   }
   
   @scala.inline
-  implicit class LogicTargetModelOps[Self <: LogicTargetModel] (val x: Self) extends AnyVal {
+  implicit class LogicTargetModelMutableBuilder[Self <: LogicTargetModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordinateSystems(value: SafeArray[XPropertySet]): Self = StObject.set(x, "CoordinateSystems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLegendID(value: String): Self = StObject.set(x, "LegendID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinateSystems(value: SafeArray[XPropertySet]): Self = this.set("CoordinateSystems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLegendID(value: String): Self = this.set("LegendID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogicTargetModels(value: SafeArray[XPropertySet]): Self = this.set("LogicTargetModels", value.asInstanceOf[js.Any])
+    def setLogicTargetModels(value: SafeArray[XPropertySet]): Self = StObject.set(x, "LogicTargetModels", value.asInstanceOf[js.Any])
   }
 }

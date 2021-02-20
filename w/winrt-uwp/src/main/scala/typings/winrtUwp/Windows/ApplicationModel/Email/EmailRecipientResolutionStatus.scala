@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailRecipientResolutionStatus extends js.Object
+sealed trait EmailRecipientResolutionStatus extends StObject
 /** Describes the state of an attempt to resolve an email recipient. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailRecipientResolutionStatus")
 @js.native
-object EmailRecipientResolutionStatus extends js.Object {
+object EmailRecipientResolutionStatus extends StObject {
   
   /** Resolution failed. Multiple results returned. Refinement needed. */
   @js.native

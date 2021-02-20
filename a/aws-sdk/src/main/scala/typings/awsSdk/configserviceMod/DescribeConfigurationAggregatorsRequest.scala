@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeConfigurationAggregatorsRequest extends js.Object {
+trait DescribeConfigurationAggregatorsRequest extends StObject {
   
   /**
     * The name of the configuration aggregators.
@@ -31,39 +32,27 @@ object DescribeConfigurationAggregatorsRequest {
   }
   
   @scala.inline
-  implicit class DescribeConfigurationAggregatorsRequestOps[Self <: DescribeConfigurationAggregatorsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeConfigurationAggregatorsRequestMutableBuilder[Self <: DescribeConfigurationAggregatorsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationAggregatorNames(value: ConfigurationAggregatorNameList): Self = StObject.set(x, "ConfigurationAggregatorNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationAggregatorNamesUndefined: Self = StObject.set(x, "ConfigurationAggregatorNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationAggregatorNamesVarargs(value: ConfigurationAggregatorName*): Self = StObject.set(x, "ConfigurationAggregatorNames", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationAggregatorNamesVarargs(value: ConfigurationAggregatorName*): Self = this.set("ConfigurationAggregatorNames", js.Array(value :_*))
+    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationAggregatorNames(value: ConfigurationAggregatorNameList): Self = this.set("ConfigurationAggregatorNames", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteConfigurationAggregatorNames: Self = this.set("ConfigurationAggregatorNames", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

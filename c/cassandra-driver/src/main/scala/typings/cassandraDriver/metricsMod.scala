@@ -4,19 +4,21 @@ import typings.cassandraDriver.mod.errors.AuthenticationError
 import typings.cassandraDriver.mod.errors.OperationTimedOutError
 import typings.cassandraDriver.mod.errors.ResponseError
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver/lib/metrics", JSImport.Namespace)
-@js.native
-object metricsMod extends js.Object {
+object metricsMod {
   
-  @js.native
-  object metrics extends js.Object {
+  object metrics {
+    
+    @JSImport("cassandra-driver/lib/metrics", "metrics.DefaultMetrics")
+    @js.native
+    class DefaultMetrics () extends ClientMetrics
     
     @js.native
-    trait ClientMetrics extends js.Object {
+    trait ClientMetrics extends StObject {
       
       def onAuthenticationError(e: AuthenticationError): Unit = js.native
       def onAuthenticationError(e: Error): Unit = js.native
@@ -51,8 +53,5 @@ object metricsMod extends js.Object {
       
       def onWriteTimeoutRetry(e: Error): Unit = js.native
     }
-    
-    @js.native
-    class DefaultMetrics () extends ClientMetrics
   }
 }

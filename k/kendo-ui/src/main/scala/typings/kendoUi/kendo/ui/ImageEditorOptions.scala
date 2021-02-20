@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageEditorOptions extends js.Object {
+trait ImageEditorOptions extends StObject {
   
   var error: js.UndefOr[js.Function1[/* e */ ImageEditorErrorEvent, Unit]] = js.native
   
@@ -38,84 +39,72 @@ object ImageEditorOptions {
   }
   
   @scala.inline
-  implicit class ImageEditorOptionsOps[Self <: ImageEditorOptions] (val x: Self) extends AnyVal {
+  implicit class ImageEditorOptionsMutableBuilder[Self <: ImageEditorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: /* e */ ImageEditorErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecute(value: /* e */ ImageEditorExecuteEvent => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: /* e */ ImageEditorErrorEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecute(value: /* e */ ImageEditorExecuteEvent => Unit): Self = this.set("execute", js.Any.fromFunction1(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteExecute: Self = this.set("execute", js.undefined)
+    def setImageLoaded(value: /* e */ ImageEditorImageLoadedEvent => Unit): Self = StObject.set(x, "imageLoaded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setImageLoadedUndefined: Self = StObject.set(x, "imageLoaded", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setImageRendered(value: /* e */ ImageEditorImageRenderedEvent => Unit): Self = StObject.set(x, "imageRendered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImageLoaded(value: /* e */ ImageEditorImageLoadedEvent => Unit): Self = this.set("imageLoaded", js.Any.fromFunction1(value))
+    def setImageRenderedUndefined: Self = StObject.set(x, "imageRendered", js.undefined)
     
     @scala.inline
-    def deleteImageLoaded: Self = this.set("imageLoaded", js.undefined)
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageRendered(value: /* e */ ImageEditorImageRenderedEvent => Unit): Self = this.set("imageRendered", js.Any.fromFunction1(value))
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteImageRendered: Self = this.set("imageRendered", js.undefined)
+    def setMessages(value: ImageEditorMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: ImageEditorMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setSaveAs(value: ImageEditorSaveAs): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSaveAsUndefined: Self = StObject.set(x, "saveAs", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setToolbar(value: Boolean | ImageEditorToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveAs(value: ImageEditorSaveAs): Self = this.set("saveAs", value.asInstanceOf[js.Any])
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def deleteSaveAs: Self = this.set("saveAs", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolbar(value: Boolean | ImageEditorToolbar): Self = this.set("toolbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

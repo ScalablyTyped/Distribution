@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITooltipOptions extends js.Object {
+trait ITooltipOptions extends StObject {
   
   var clickOpen: js.UndefOr[Boolean] = js.native
   
@@ -44,102 +45,90 @@ object ITooltipOptions {
   }
   
   @scala.inline
-  implicit class ITooltipOptionsOps[Self <: ITooltipOptions] (val x: Self) extends AnyVal {
+  implicit class ITooltipOptionsMutableBuilder[Self <: ITooltipOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickOpen(value: Boolean): Self = StObject.set(x, "clickOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickOpenUndefined: Self = StObject.set(x, "clickOpen", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickOpen(value: Boolean): Self = this.set("clickOpen", value.asInstanceOf[js.Any])
+    def setDisableHoverUndefined: Self = StObject.set(x, "disableHover", js.undefined)
     
     @scala.inline
-    def deleteClickOpen: Self = this.set("clickOpen", js.undefined)
+    def setFadeInDuration(value: Double): Self = StObject.set(x, "fadeInDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableHover(value: Boolean): Self = this.set("disableHover", value.asInstanceOf[js.Any])
+    def setFadeInDurationUndefined: Self = StObject.set(x, "fadeInDuration", js.undefined)
     
     @scala.inline
-    def deleteDisableHover: Self = this.set("disableHover", js.undefined)
+    def setFadeOutDuration(value: Double): Self = StObject.set(x, "fadeOutDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeInDuration(value: Double): Self = this.set("fadeInDuration", value.asInstanceOf[js.Any])
+    def setFadeOutDurationUndefined: Self = StObject.set(x, "fadeOutDuration", js.undefined)
     
     @scala.inline
-    def deleteFadeInDuration: Self = this.set("fadeInDuration", js.undefined)
+    def setHOffset(value: Double): Self = StObject.set(x, "hOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeOutDuration(value: Double): Self = this.set("fadeOutDuration", value.asInstanceOf[js.Any])
+    def setHOffsetUndefined: Self = StObject.set(x, "hOffset", js.undefined)
     
     @scala.inline
-    def deleteFadeOutDuration: Self = this.set("fadeOutDuration", js.undefined)
+    def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHOffset(value: Double): Self = this.set("hOffset", value.asInstanceOf[js.Any])
+    def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
     
     @scala.inline
-    def deleteHOffset: Self = this.set("hOffset", js.undefined)
+    def setPositionClass(value: String): Self = StObject.set(x, "positionClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverDelay(value: Double): Self = this.set("hoverDelay", value.asInstanceOf[js.Any])
+    def setPositionClassUndefined: Self = StObject.set(x, "positionClass", js.undefined)
     
     @scala.inline
-    def deleteHoverDelay: Self = this.set("hoverDelay", js.undefined)
+    def setShowOn(value: String): Self = StObject.set(x, "showOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionClass(value: String): Self = this.set("positionClass", value.asInstanceOf[js.Any])
+    def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
     
     @scala.inline
-    def deletePositionClass: Self = this.set("positionClass", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOn(value: String): Self = this.set("showOn", value.asInstanceOf[js.Any])
+    def setTemplateClasses(value: String): Self = StObject.set(x, "templateClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowOn: Self = this.set("showOn", js.undefined)
+    def setTemplateClassesUndefined: Self = StObject.set(x, "templateClasses", js.undefined)
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTipText(value: String): Self = StObject.set(x, "tipText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateClasses(value: String): Self = this.set("templateClasses", value.asInstanceOf[js.Any])
+    def setTipTextUndefined: Self = StObject.set(x, "tipText", js.undefined)
     
     @scala.inline
-    def deleteTemplateClasses: Self = this.set("templateClasses", js.undefined)
+    def setTooltipClass(value: String): Self = StObject.set(x, "tooltipClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTipText(value: String): Self = this.set("tipText", value.asInstanceOf[js.Any])
+    def setTooltipClassUndefined: Self = StObject.set(x, "tooltipClass", js.undefined)
     
     @scala.inline
-    def deleteTipText: Self = this.set("tipText", js.undefined)
+    def setTriggerClass(value: String): Self = StObject.set(x, "triggerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipClass(value: String): Self = this.set("tooltipClass", value.asInstanceOf[js.Any])
+    def setTriggerClassUndefined: Self = StObject.set(x, "triggerClass", js.undefined)
     
     @scala.inline
-    def deleteTooltipClass: Self = this.set("tooltipClass", js.undefined)
+    def setVOffset(value: Double): Self = StObject.set(x, "vOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerClass(value: String): Self = this.set("triggerClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerClass: Self = this.set("triggerClass", js.undefined)
-    
-    @scala.inline
-    def setVOffset(value: Double): Self = this.set("vOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVOffset: Self = this.set("vOffset", js.undefined)
+    def setVOffsetUndefined: Self = StObject.set(x, "vOffset", js.undefined)
   }
 }

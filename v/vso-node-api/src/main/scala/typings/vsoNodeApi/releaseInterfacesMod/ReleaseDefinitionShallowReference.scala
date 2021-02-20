@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseDefinitionShallowReference extends js.Object {
+trait ReleaseDefinitionShallowReference extends StObject {
   
   /**
     * Gets the links to related resources, APIs, and views for the release definition.
@@ -36,30 +37,18 @@ object ReleaseDefinitionShallowReference {
   }
   
   @scala.inline
-  implicit class ReleaseDefinitionShallowReferenceOps[Self <: ReleaseDefinitionShallowReference] (val x: Self) extends AnyVal {
+  implicit class ReleaseDefinitionShallowReferenceMutableBuilder[Self <: ReleaseDefinitionShallowReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

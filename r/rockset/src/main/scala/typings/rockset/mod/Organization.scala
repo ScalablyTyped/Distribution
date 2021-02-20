@@ -8,12 +8,13 @@ import typings.rockset.rocksetStrings.FREE
 import typings.rockset.rocksetStrings.PRO
 import typings.rockset.rocksetStrings.TRIAL
 import typings.rockset.rocksetStrings.TRIAL_EXPIRED
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Organization extends js.Object {
+trait Organization extends StObject {
   
   // name of the company
   var company_name: js.UndefOr[String] = js.native
@@ -45,60 +46,48 @@ object Organization {
   }
   
   @scala.inline
-  implicit class OrganizationOps[Self <: Organization] (val x: Self) extends AnyVal {
+  implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompany_name(value: String): Self = StObject.set(x, "company_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompany_nameUndefined: Self = StObject.set(x, "company_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany_name(value: String): Self = this.set("company_name", value.asInstanceOf[js.Any])
+    def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
     @scala.inline
-    def deleteCompany_name: Self = this.set("company_name", js.undefined)
+    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
     
     @scala.inline
-    def deleteCreated_at: Self = this.set("created_at", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_name(value: String): Self = this.set("display_name", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDisplay_name: Self = this.set("display_name", js.undefined)
+    def setQcu(value: Double): Self = StObject.set(x, "qcu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setQcuUndefined: Self = StObject.set(x, "qcu", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setState(value: ACTIVE | TRIAL | TRIAL_EXPIRED | DELETED): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQcu(value: Double): Self = this.set("qcu", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteQcu: Self = this.set("qcu", js.undefined)
+    def setTier(value: FREE | BASIC | PRO | ENTERPRISE): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: ACTIVE | TRIAL | TRIAL_EXPIRED | DELETED): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setTier(value: FREE | BASIC | PRO | ENTERPRISE): Self = this.set("tier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTier: Self = this.set("tier", js.undefined)
+    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

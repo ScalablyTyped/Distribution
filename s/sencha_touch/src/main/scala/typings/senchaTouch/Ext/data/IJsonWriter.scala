@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,90 +70,78 @@ object IJsonWriter {
   }
   
   @scala.inline
-  implicit class IJsonWriterOps[Self <: IJsonWriter] (val x: Self) extends AnyVal {
+  implicit class IJsonWriterMutableBuilder[Self <: IJsonWriter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSingle(value: Boolean): Self = StObject.set(x, "allowSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSingleUndefined: Self = StObject.set(x, "allowSingle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSingle(value: Boolean): Self = this.set("allowSingle", value.asInstanceOf[js.Any])
+    def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
     
     @scala.inline
-    def deleteAllowSingle: Self = this.set("allowSingle", js.undefined)
+    def setGetAllowSingle(value: () => Boolean): Self = StObject.set(x, "getAllowSingle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEncode(value: Boolean): Self = this.set("encode", value.asInstanceOf[js.Any])
+    def setGetAllowSingleUndefined: Self = StObject.set(x, "getAllowSingle", js.undefined)
     
     @scala.inline
-    def deleteEncode: Self = this.set("encode", js.undefined)
+    def setGetEncode(value: () => Boolean): Self = StObject.set(x, "getEncode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllowSingle(value: () => Boolean): Self = this.set("getAllowSingle", js.Any.fromFunction0(value))
+    def setGetEncodeRequest(value: () => Boolean): Self = StObject.set(x, "getEncodeRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetAllowSingle: Self = this.set("getAllowSingle", js.undefined)
+    def setGetEncodeRequestUndefined: Self = StObject.set(x, "getEncodeRequest", js.undefined)
     
     @scala.inline
-    def setGetEncode(value: () => Boolean): Self = this.set("getEncode", js.Any.fromFunction0(value))
+    def setGetEncodeUndefined: Self = StObject.set(x, "getEncode", js.undefined)
     
     @scala.inline
-    def deleteGetEncode: Self = this.set("getEncode", js.undefined)
+    def setGetRootProperty(value: () => String): Self = StObject.set(x, "getRootProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEncodeRequest(value: () => Boolean): Self = this.set("getEncodeRequest", js.Any.fromFunction0(value))
+    def setGetRootPropertyUndefined: Self = StObject.set(x, "getRootProperty", js.undefined)
     
     @scala.inline
-    def deleteGetEncodeRequest: Self = this.set("getEncodeRequest", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRootProperty(value: () => String): Self = this.set("getRootProperty", js.Any.fromFunction0(value))
+    def setRootProperty(value: String): Self = StObject.set(x, "rootProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetRootProperty: Self = this.set("getRootProperty", js.undefined)
+    def setRootPropertyUndefined: Self = StObject.set(x, "rootProperty", js.undefined)
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSetAllowSingle(value: /* allowSingle */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowSingle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRootProperty(value: String): Self = this.set("rootProperty", value.asInstanceOf[js.Any])
+    def setSetAllowSingleUndefined: Self = StObject.set(x, "setAllowSingle", js.undefined)
     
     @scala.inline
-    def deleteRootProperty: Self = this.set("rootProperty", js.undefined)
+    def setSetEncode(value: /* encode */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEncode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAllowSingle(value: /* allowSingle */ js.UndefOr[Boolean] => Unit): Self = this.set("setAllowSingle", js.Any.fromFunction1(value))
+    def setSetEncodeRequest(value: /* encodeRequest */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEncodeRequest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetAllowSingle: Self = this.set("setAllowSingle", js.undefined)
+    def setSetEncodeRequestUndefined: Self = StObject.set(x, "setEncodeRequest", js.undefined)
     
     @scala.inline
-    def setSetEncode(value: /* encode */ js.UndefOr[Boolean] => Unit): Self = this.set("setEncode", js.Any.fromFunction1(value))
+    def setSetEncodeUndefined: Self = StObject.set(x, "setEncode", js.undefined)
     
     @scala.inline
-    def deleteSetEncode: Self = this.set("setEncode", js.undefined)
+    def setSetRootProperty(value: /* rootProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setRootProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEncodeRequest(value: /* encodeRequest */ js.UndefOr[Boolean] => Unit): Self = this.set("setEncodeRequest", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetEncodeRequest: Self = this.set("setEncodeRequest", js.undefined)
-    
-    @scala.inline
-    def setSetRootProperty(value: /* rootProperty */ js.UndefOr[String] => Unit): Self = this.set("setRootProperty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetRootProperty: Self = this.set("setRootProperty", js.undefined)
+    def setSetRootPropertyUndefined: Self = StObject.set(x, "setRootProperty", js.undefined)
   }
 }

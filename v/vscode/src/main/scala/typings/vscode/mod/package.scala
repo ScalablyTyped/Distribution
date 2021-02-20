@@ -1,5 +1,6 @@
 package typings.vscode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,4 +34,7 @@ package object mod {
   type MarkedString = typings.vscode.mod._MarkedString | java.lang.String
   
   type ProviderResult[T] = js.UndefOr[T | scala.Null | (typings.vscode.Thenable[js.UndefOr[T | scala.Null]])]
+  
+  @scala.inline
+  def version: java.lang.String = typings.vscode.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
 }

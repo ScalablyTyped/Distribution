@@ -1,11 +1,12 @@
 package typings.ariClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsteriskInfo extends js.Object {
+trait AsteriskInfo extends StObject {
   
   /**
     * Info about how Asterisk was built.
@@ -36,42 +37,30 @@ object AsteriskInfo {
   }
   
   @scala.inline
-  implicit class AsteriskInfoOps[Self <: AsteriskInfo] (val x: Self) extends AnyVal {
+  implicit class AsteriskInfoMutableBuilder[Self <: AsteriskInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: BuildInfo): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: ConfigInfo): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: BuildInfo): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setStatus(value: StatusInfo): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: ConfigInfo): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setSystem(value: SystemInfo): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: StatusInfo): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setSystem(value: SystemInfo): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
   }
 }

@@ -1,6 +1,6 @@
 package typings.asana.mod.auth
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +13,16 @@ trait ChromeExtensionFlow extends BaseBrowserFlow {
     */
   def runReceiver(): Unit = js.native
 }
-@JSImport("asana", "auth.ChromeExtensionFlow")
-@js.native
-object ChromeExtensionFlow extends TopLevel[ChromeExtensionFlowStatic]
+object ChromeExtensionFlow {
+  
+  @JSImport("asana", "auth.ChromeExtensionFlow")
+  @js.native
+  val ^ : ChromeExtensionFlowStatic = js.native
+  
+  @scala.inline
+  implicit class ChromeExtensionFlowMutableBuilder[Self <: ChromeExtensionFlow] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setRunReceiver(value: () => Unit): Self = StObject.set(x, "runReceiver", js.Any.fromFunction0(value))
+  }
+}

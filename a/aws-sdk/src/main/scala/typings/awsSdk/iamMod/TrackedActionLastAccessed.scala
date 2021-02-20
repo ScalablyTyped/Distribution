@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrackedActionLastAccessed extends js.Object {
+trait TrackedActionLastAccessed extends StObject {
   
   /**
     * The name of the tracked action to which access was attempted. Tracked actions are actions that report activity to IAM.
@@ -33,42 +34,30 @@ object TrackedActionLastAccessed {
   }
   
   @scala.inline
-  implicit class TrackedActionLastAccessedOps[Self <: TrackedActionLastAccessed] (val x: Self) extends AnyVal {
+  implicit class TrackedActionLastAccessedMutableBuilder[Self <: TrackedActionLastAccessed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionName(value: stringType): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionNameUndefined: Self = StObject.set(x, "ActionName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastAccessedEntity(value: arnType): Self = StObject.set(x, "LastAccessedEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: stringType): Self = this.set("ActionName", value.asInstanceOf[js.Any])
+    def setLastAccessedEntityUndefined: Self = StObject.set(x, "LastAccessedEntity", js.undefined)
     
     @scala.inline
-    def deleteActionName: Self = this.set("ActionName", js.undefined)
+    def setLastAccessedRegion(value: stringType): Self = StObject.set(x, "LastAccessedRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAccessedEntity(value: arnType): Self = this.set("LastAccessedEntity", value.asInstanceOf[js.Any])
+    def setLastAccessedRegionUndefined: Self = StObject.set(x, "LastAccessedRegion", js.undefined)
     
     @scala.inline
-    def deleteLastAccessedEntity: Self = this.set("LastAccessedEntity", js.undefined)
+    def setLastAccessedTime(value: dateType): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAccessedRegion(value: stringType): Self = this.set("LastAccessedRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastAccessedRegion: Self = this.set("LastAccessedRegion", js.undefined)
-    
-    @scala.inline
-    def setLastAccessedTime(value: dateType): Self = this.set("LastAccessedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastAccessedTime: Self = this.set("LastAccessedTime", js.undefined)
+    def setLastAccessedTimeUndefined: Self = StObject.set(x, "LastAccessedTime", js.undefined)
   }
 }

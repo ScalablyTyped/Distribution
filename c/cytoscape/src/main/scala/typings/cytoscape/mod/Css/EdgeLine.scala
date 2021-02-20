@@ -13,6 +13,7 @@ import typings.cytoscape.cytoscapeStrings.square
 import typings.cytoscape.cytoscapeStrings.straight
 import typings.cytoscape.cytoscapeStrings.taxi
 import typings.cytoscape.mod.EdgeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#style/edge-line
   */
 @js.native
-trait EdgeLine extends js.Object {
+trait EdgeLine extends StObject {
   
   /**
     * The curving method used to separate two or more edges between two nodes;
@@ -94,108 +95,96 @@ object EdgeLine {
   }
   
   @scala.inline
-  implicit class EdgeLineOps[Self <: EdgeLine] (val x: Self) extends AnyVal {
+  implicit class EdgeLineMutableBuilder[Self <: EdgeLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setCurve-style`(value: PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi]): Self = StObject.set(x, "curve-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setCurve-styleFunction1`(value: EdgeSingular => haystack | straight | bezier | `unbundled-bezier` | segments | taxi): Self = StObject.set(x, "curve-style", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setCurve-styleUndefined`: Self = StObject.set(x, "curve-style", js.undefined)
     
     @scala.inline
-    def `setCurve-styleFunction1`(value: EdgeSingular => haystack | straight | bezier | `unbundled-bezier` | segments | taxi): Self = this.set("curve-style", js.Any.fromFunction1(value))
+    def `setLine-cap`(value: PropertyValueEdge[butt | round | square]): Self = StObject.set(x, "line-cap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCurve-style`(value: PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi]): Self = this.set("curve-style", value.asInstanceOf[js.Any])
+    def `setLine-capFunction1`(value: EdgeSingular => butt | round | square): Self = StObject.set(x, "line-cap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteCurve-style`: Self = this.set("curve-style", js.undefined)
+    def `setLine-capUndefined`: Self = StObject.set(x, "line-cap", js.undefined)
     
     @scala.inline
-    def `setLine-capFunction1`(value: EdgeSingular => butt | round | square): Self = this.set("line-cap", js.Any.fromFunction1(value))
+    def `setLine-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-cap`(value: PropertyValueEdge[butt | round | square]): Self = this.set("line-cap", value.asInstanceOf[js.Any])
+    def `setLine-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "line-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteLine-cap`: Self = this.set("line-cap", js.undefined)
+    def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
     
     @scala.inline
-    def `setLine-colorFunction1`(value: EdgeSingular => Colour): Self = this.set("line-color", js.Any.fromFunction1(value))
+    def `setLine-dash-offset`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "line-dash-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-color`(value: PropertyValueEdge[Colour]): Self = this.set("line-color", value.asInstanceOf[js.Any])
+    def `setLine-dash-offsetFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "line-dash-offset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteLine-color`: Self = this.set("line-color", js.undefined)
+    def `setLine-dash-offsetUndefined`: Self = StObject.set(x, "line-dash-offset", js.undefined)
     
     @scala.inline
-    def `setLine-dash-offsetFunction1`(value: EdgeSingular => Double): Self = this.set("line-dash-offset", js.Any.fromFunction1(value))
+    def `setLine-dash-pattern`(value: js.Array[PropertyValueEdge[Double]]): Self = StObject.set(x, "line-dash-pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-dash-offset`(value: PropertyValueEdge[Double]): Self = this.set("line-dash-offset", value.asInstanceOf[js.Any])
+    def `setLine-dash-patternUndefined`: Self = StObject.set(x, "line-dash-pattern", js.undefined)
     
     @scala.inline
-    def `deleteLine-dash-offset`: Self = this.set("line-dash-offset", js.undefined)
+    def `setLine-dash-patternVarargs`(value: PropertyValueEdge[Double]*): Self = StObject.set(x, "line-dash-pattern", js.Array(value :_*))
     
     @scala.inline
-    def `setLine-dash-patternVarargs`(value: PropertyValueEdge[Double]*): Self = this.set("line-dash-pattern", js.Array(value :_*))
+    def `setLine-fill`(value: PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`]): Self = StObject.set(x, "line-fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-dash-pattern`(value: js.Array[PropertyValueEdge[Double]]): Self = this.set("line-dash-pattern", value.asInstanceOf[js.Any])
+    def `setLine-fillFunction1`(value: EdgeSingular => solid | `linear-gradient` | `radial-gradient`): Self = StObject.set(x, "line-fill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteLine-dash-pattern`: Self = this.set("line-dash-pattern", js.undefined)
+    def `setLine-fillUndefined`: Self = StObject.set(x, "line-fill", js.undefined)
     
     @scala.inline
-    def `setLine-fillFunction1`(value: EdgeSingular => solid | `linear-gradient` | `radial-gradient`): Self = this.set("line-fill", js.Any.fromFunction1(value))
+    def `setLine-style`(value: PropertyValueEdge[LineStyle]): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-fill`(value: PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`]): Self = this.set("line-fill", value.asInstanceOf[js.Any])
+    def `setLine-styleFunction1`(value: EdgeSingular => LineStyle): Self = StObject.set(x, "line-style", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteLine-fill`: Self = this.set("line-fill", js.undefined)
+    def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
     @scala.inline
-    def `setLine-styleFunction1`(value: EdgeSingular => LineStyle): Self = this.set("line-style", js.Any.fromFunction1(value))
+    def `setSource-distance-from-node`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "source-distance-from-node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-style`(value: PropertyValueEdge[LineStyle]): Self = this.set("line-style", value.asInstanceOf[js.Any])
+    def `setSource-distance-from-nodeFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "source-distance-from-node", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteLine-style`: Self = this.set("line-style", js.undefined)
+    def `setSource-distance-from-nodeUndefined`: Self = StObject.set(x, "source-distance-from-node", js.undefined)
     
     @scala.inline
-    def `setSource-distance-from-nodeFunction1`(value: EdgeSingular => Double): Self = this.set("source-distance-from-node", js.Any.fromFunction1(value))
+    def `setTarget-distance-from-node`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "target-distance-from-node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSource-distance-from-node`(value: PropertyValueEdge[Double]): Self = this.set("source-distance-from-node", value.asInstanceOf[js.Any])
+    def `setTarget-distance-from-nodeFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "target-distance-from-node", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteSource-distance-from-node`: Self = this.set("source-distance-from-node", js.undefined)
+    def `setTarget-distance-from-nodeUndefined`: Self = StObject.set(x, "target-distance-from-node", js.undefined)
     
     @scala.inline
-    def `setTarget-distance-from-nodeFunction1`(value: EdgeSingular => Double): Self = this.set("target-distance-from-node", js.Any.fromFunction1(value))
+    def setWidth(value: PropertyValueEdge[Double | String]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTarget-distance-from-node`(value: PropertyValueEdge[Double]): Self = this.set("target-distance-from-node", value.asInstanceOf[js.Any])
+    def setWidthFunction1(value: EdgeSingular => Double | String): Self = StObject.set(x, "width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteTarget-distance-from-node`: Self = this.set("target-distance-from-node", js.undefined)
-    
-    @scala.inline
-    def setWidthFunction1(value: EdgeSingular => Double | String): Self = this.set("width", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWidth(value: PropertyValueEdge[Double | String]): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.babylonjs.effectMod.IEffectCreationOptions
 import typings.babylonjs.iEffectFallbacksMod.IEffectFallbacks
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,19 +46,29 @@ class Effect protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Materials/index", "Effect")
-@js.native
-object Effect extends js.Object {
+object Effect {
+  
+  @JSImport("babylonjs/Materials/index", "Effect")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Store of each included file for a shader (The can be looked up using effect.key)
     */
-  var IncludesShadersStore: StringDictionary[String] = js.native
+  @JSImport("babylonjs/Materials/index", "Effect.IncludesShadersStore")
+  @js.native
+  def IncludesShadersStore: StringDictionary[String] = js.native
+  @scala.inline
+  def IncludesShadersStore_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IncludesShadersStore")(x.asInstanceOf[js.Any])
   
   /**
     * Enable logging of the shader code when a compilation error occurs
     */
-  var LogShaderCodeOnCompilationError: Boolean = js.native
+  @JSImport("babylonjs/Materials/index", "Effect.LogShaderCodeOnCompilationError")
+  @js.native
+  def LogShaderCodeOnCompilationError: Boolean = js.native
+  @scala.inline
+  def LogShaderCodeOnCompilationError_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogShaderCodeOnCompilationError")(x.asInstanceOf[js.Any])
   
   /**
     * This function will add a new shader to the shader store
@@ -65,27 +76,53 @@ object Effect extends js.Object {
     * @param pixelShader optional pixel shader content
     * @param vertexShader optional vertex shader content
     */
+  @JSImport("babylonjs/Materials/index", "Effect.RegisterShader")
+  @js.native
   def RegisterShader(name: String): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "Effect.RegisterShader")
+  @js.native
   def RegisterShader(name: String, pixelShader: js.UndefOr[scala.Nothing], vertexShader: String): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "Effect.RegisterShader")
+  @js.native
   def RegisterShader(name: String, pixelShader: String): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "Effect.RegisterShader")
+  @js.native
   def RegisterShader(name: String, pixelShader: String, vertexShader: String): Unit = js.native
   
   /**
     * Resets the cache of effects.
     */
+  @JSImport("babylonjs/Materials/index", "Effect.ResetCache")
+  @js.native
   def ResetCache(): Unit = js.native
   
   /**
     * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
     */
-  var ShadersRepository: String = js.native
+  @JSImport("babylonjs/Materials/index", "Effect.ShadersRepository")
+  @js.native
+  def ShadersRepository: String = js.native
+  @scala.inline
+  def ShadersRepository_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersRepository")(x.asInstanceOf[js.Any])
   
   /**
     * Store of each shader (The can be looked up using effect.key)
     */
-  var ShadersStore: StringDictionary[String] = js.native
+  @JSImport("babylonjs/Materials/index", "Effect.ShadersStore")
+  @js.native
+  def ShadersStore: StringDictionary[String] = js.native
+  @scala.inline
+  def ShadersStore_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersStore")(x.asInstanceOf[js.Any])
   
-  var _baseCache: js.Any = js.native
+  @JSImport("babylonjs/Materials/index", "Effect._baseCache")
+  @js.native
+  def _baseCache: js.Any = js.native
+  @scala.inline
+  def _baseCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_baseCache")(x.asInstanceOf[js.Any])
   
-  var _uniqueIdSeed: js.Any = js.native
+  @JSImport("babylonjs/Materials/index", "Effect._uniqueIdSeed")
+  @js.native
+  def _uniqueIdSeed: js.Any = js.native
+  @scala.inline
+  def _uniqueIdSeed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueIdSeed")(x.asInstanceOf[js.Any])
 }

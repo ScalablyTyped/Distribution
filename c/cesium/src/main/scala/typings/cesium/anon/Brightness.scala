@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.ImageryLayer
 import typings.cesium.mod.ImageryLayer.ValueFunc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Brightness extends js.Object {
+trait Brightness extends StObject {
   
   var alpha: js.UndefOr[Double | ValueFunc] = js.native
   
@@ -40,114 +41,102 @@ object Brightness {
   }
   
   @scala.inline
-  implicit class BrightnessOps[Self <: Brightness] (val x: Self) extends AnyVal {
+  implicit class BrightnessMutableBuilder[Self <: Brightness] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlpha(value: Double | ValueFunc): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAlphaFunction5(
       value: (/* frameState */ js.Any, /* layer */ ImageryLayer, /* x */ Double, /* y */ Double, /* level */ Double) => Double
-    ): Self = this.set("alpha", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "alpha", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setAlpha(value: Double | ValueFunc): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setBrightness(value: Double | ValueFunc): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBrightnessFunction5(
       value: (/* frameState */ js.Any, /* layer */ ImageryLayer, /* x */ Double, /* y */ Double, /* level */ Double) => Double
-    ): Self = this.set("brightness", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "brightness", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setBrightness(value: Double | ValueFunc): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
     
     @scala.inline
-    def deleteBrightness: Self = this.set("brightness", js.undefined)
+    def setContrast(value: Double | ValueFunc): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContrastFunction5(
       value: (/* frameState */ js.Any, /* layer */ ImageryLayer, /* x */ Double, /* y */ Double, /* level */ Double) => Double
-    ): Self = this.set("contrast", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "contrast", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setContrast(value: Double | ValueFunc): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
     
     @scala.inline
-    def deleteContrast: Self = this.set("contrast", js.undefined)
+    def setGamma(value: Double | ValueFunc): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGammaFunction5(
       value: (/* frameState */ js.Any, /* layer */ ImageryLayer, /* x */ Double, /* y */ Double, /* level */ Double) => Double
-    ): Self = this.set("gamma", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "gamma", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGamma(value: Double | ValueFunc): Self = this.set("gamma", value.asInstanceOf[js.Any])
+    def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
     
     @scala.inline
-    def deleteGamma: Self = this.set("gamma", js.undefined)
+    def setHue(value: Double | ValueFunc): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHueFunction5(
       value: (/* frameState */ js.Any, /* layer */ ImageryLayer, /* x */ Double, /* y */ Double, /* level */ Double) => Double
-    ): Self = this.set("hue", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "hue", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setHue(value: Double | ValueFunc): Self = this.set("hue", value.asInstanceOf[js.Any])
+    def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
     
     @scala.inline
-    def deleteHue: Self = this.set("hue", js.undefined)
+    def setMaximumAnisotropy(value: Double): Self = StObject.set(x, "maximumAnisotropy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumAnisotropy(value: Double): Self = this.set("maximumAnisotropy", value.asInstanceOf[js.Any])
+    def setMaximumAnisotropyUndefined: Self = StObject.set(x, "maximumAnisotropy", js.undefined)
     
     @scala.inline
-    def deleteMaximumAnisotropy: Self = this.set("maximumAnisotropy", js.undefined)
+    def setMaximumTerrainLevel(value: Double): Self = StObject.set(x, "maximumTerrainLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumTerrainLevel(value: Double): Self = this.set("maximumTerrainLevel", value.asInstanceOf[js.Any])
+    def setMaximumTerrainLevelUndefined: Self = StObject.set(x, "maximumTerrainLevel", js.undefined)
     
     @scala.inline
-    def deleteMaximumTerrainLevel: Self = this.set("maximumTerrainLevel", js.undefined)
+    def setMinimumTerrainLevel(value: Double): Self = StObject.set(x, "minimumTerrainLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumTerrainLevel(value: Double): Self = this.set("minimumTerrainLevel", value.asInstanceOf[js.Any])
+    def setMinimumTerrainLevelUndefined: Self = StObject.set(x, "minimumTerrainLevel", js.undefined)
     
     @scala.inline
-    def deleteMinimumTerrainLevel: Self = this.set("minimumTerrainLevel", js.undefined)
+    def setRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRectangle(value: typings.cesium.mod.Rectangle): Self = this.set("rectangle", value.asInstanceOf[js.Any])
+    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
     
     @scala.inline
-    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    def setSaturation(value: Double | ValueFunc): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSaturationFunction5(
       value: (/* frameState */ js.Any, /* layer */ ImageryLayer, /* x */ Double, /* y */ Double, /* level */ Double) => Double
-    ): Self = this.set("saturation", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "saturation", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setSaturation(value: Double | ValueFunc): Self = this.set("saturation", value.asInstanceOf[js.Any])
+    def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
     
     @scala.inline
-    def deleteSaturation: Self = this.set("saturation", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

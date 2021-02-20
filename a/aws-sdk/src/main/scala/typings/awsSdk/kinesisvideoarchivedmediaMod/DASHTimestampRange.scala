@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DASHTimestampRange extends js.Object {
+trait DASHTimestampRange extends StObject {
   
   /**
     * The end of the timestamp range for the requested media. This value must be within 3 hours of the specified StartTimestamp, and it must be later than the StartTimestamp value. If FragmentSelectorType for the request is SERVER_TIMESTAMP, this value must be in the past. The EndTimestamp value is required for ON_DEMAND mode, but optional for LIVE_REPLAY mode. If the EndTimestamp is not set for LIVE_REPLAY mode then the session will continue to include newly ingested fragments until the session expires.  This value is inclusive. The EndTimestamp is compared to the (starting) timestamp of the fragment. Fragments that start before the EndTimestamp value and continue past it are included in the session. 
@@ -26,30 +27,18 @@ object DASHTimestampRange {
   }
   
   @scala.inline
-  implicit class DASHTimestampRangeOps[Self <: DASHTimestampRange] (val x: Self) extends AnyVal {
+  implicit class DASHTimestampRangeMutableBuilder[Self <: DASHTimestampRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTimestamp(value: Timestamp): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimestampUndefined: Self = StObject.set(x, "EndTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimestamp(value: Timestamp): Self = this.set("EndTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTimestamp: Self = this.set("EndTimestamp", js.undefined)
-    
-    @scala.inline
-    def setStartTimestamp(value: Timestamp): Self = this.set("StartTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimestamp: Self = this.set("StartTimestamp", js.undefined)
+    def setStartTimestampUndefined: Self = StObject.set(x, "StartTimestamp", js.undefined)
   }
 }

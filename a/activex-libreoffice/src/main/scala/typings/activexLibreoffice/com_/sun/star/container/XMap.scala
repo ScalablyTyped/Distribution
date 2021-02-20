@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.container
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,42 +115,30 @@ object XMap {
   }
   
   @scala.inline
-  implicit class XMapOps[Self <: XMap] (val x: Self) extends AnyVal {
+  implicit class XMapMutableBuilder[Self <: XMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsKey(value: js.Any => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsValue(value: js.Any => Boolean): Self = StObject.set(x, "containsValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyType(value: `type`): Self = this.set("KeyType", value.asInstanceOf[js.Any])
+    def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValueType(value: `type`): Self = this.set("ValueType", value.asInstanceOf[js.Any])
+    def setKeyType(value: `type`): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setPut(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setContainsKey(value: js.Any => Boolean): Self = this.set("containsKey", js.Any.fromFunction1(value))
+    def setRemove(value: js.Any => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainsValue(value: js.Any => Boolean): Self = this.set("containsValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGet(value: js.Any => js.Any): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPut(value: (js.Any, js.Any) => js.Any): Self = this.set("put", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemove(value: js.Any => js.Any): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setValueType(value: `type`): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
   }
 }

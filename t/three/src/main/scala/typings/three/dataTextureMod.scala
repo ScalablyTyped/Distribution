@@ -10,14 +10,14 @@ import typings.three.constantsMod.Wrapping
 import typings.three.polyfillsMod.TypedArray
 import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/textures/DataTexture", JSImport.Namespace)
-@js.native
-object dataTextureMod extends js.Object {
+object dataTextureMod {
   
+  @JSImport("three/src/textures/DataTexture", "DataTexture")
   @js.native
   class DataTexture protected () extends Texture {
     /**

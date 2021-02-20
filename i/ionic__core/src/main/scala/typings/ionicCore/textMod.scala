@@ -2,14 +2,14 @@ package typings.ionicCore
 
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/text/text", JSImport.Namespace)
-@js.native
-object textMod extends js.Object {
+object textMod {
   
+  @JSImport("@ionic/core/dist/types/components/text/text", "Text")
   @js.native
   class Text () extends ComponentInterface {
     

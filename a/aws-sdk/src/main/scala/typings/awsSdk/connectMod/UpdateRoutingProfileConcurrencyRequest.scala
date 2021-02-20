@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRoutingProfileConcurrencyRequest extends js.Object {
+trait UpdateRoutingProfileConcurrencyRequest extends StObject {
   
   /**
     * The identifier of the Amazon Connect instance.
@@ -31,30 +32,18 @@ object UpdateRoutingProfileConcurrencyRequest {
   }
   
   @scala.inline
-  implicit class UpdateRoutingProfileConcurrencyRequestOps[Self <: UpdateRoutingProfileConcurrencyRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRoutingProfileConcurrencyRequestMutableBuilder[Self <: UpdateRoutingProfileConcurrencyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMediaConcurrencies(value: MediaConcurrencies): Self = StObject.set(x, "MediaConcurrencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = this.set("MediaConcurrencies", js.Array(value :_*))
-    
-    @scala.inline
-    def setMediaConcurrencies(value: MediaConcurrencies): Self = this.set("MediaConcurrencies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = this.set("RoutingProfileId", value.asInstanceOf[js.Any])
+    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }
 }

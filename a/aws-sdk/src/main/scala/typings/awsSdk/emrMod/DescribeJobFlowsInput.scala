@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeJobFlowsInput extends js.Object {
+trait DescribeJobFlowsInput extends StObject {
   
   /**
     * Return only job flows created after this date and time.
@@ -36,48 +37,36 @@ object DescribeJobFlowsInput {
   }
   
   @scala.inline
-  implicit class DescribeJobFlowsInputOps[Self <: DescribeJobFlowsInput] (val x: Self) extends AnyVal {
+  implicit class DescribeJobFlowsInputMutableBuilder[Self <: DescribeJobFlowsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAfter(value: Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBefore(value: Date): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAfter(value: Date): Self = this.set("CreatedAfter", value.asInstanceOf[js.Any])
+    def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
     
     @scala.inline
-    def deleteCreatedAfter: Self = this.set("CreatedAfter", js.undefined)
+    def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBefore(value: Date): Self = this.set("CreatedBefore", value.asInstanceOf[js.Any])
+    def setJobFlowIdsUndefined: Self = StObject.set(x, "JobFlowIds", js.undefined)
     
     @scala.inline
-    def deleteCreatedBefore: Self = this.set("CreatedBefore", js.undefined)
+    def setJobFlowIdsVarargs(value: XmlString*): Self = StObject.set(x, "JobFlowIds", js.Array(value :_*))
     
     @scala.inline
-    def setJobFlowIdsVarargs(value: XmlString*): Self = this.set("JobFlowIds", js.Array(value :_*))
+    def setJobFlowStates(value: JobFlowExecutionStateList): Self = StObject.set(x, "JobFlowStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobFlowIds(value: XmlStringList): Self = this.set("JobFlowIds", value.asInstanceOf[js.Any])
+    def setJobFlowStatesUndefined: Self = StObject.set(x, "JobFlowStates", js.undefined)
     
     @scala.inline
-    def deleteJobFlowIds: Self = this.set("JobFlowIds", js.undefined)
-    
-    @scala.inline
-    def setJobFlowStatesVarargs(value: JobFlowExecutionState*): Self = this.set("JobFlowStates", js.Array(value :_*))
-    
-    @scala.inline
-    def setJobFlowStates(value: JobFlowExecutionStateList): Self = this.set("JobFlowStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobFlowStates: Self = this.set("JobFlowStates", js.undefined)
+    def setJobFlowStatesVarargs(value: JobFlowExecutionState*): Self = StObject.set(x, "JobFlowStates", js.Array(value :_*))
   }
 }

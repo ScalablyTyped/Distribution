@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultDisplayMetadata extends js.Object {
+trait ResultDisplayMetadata extends StObject {
   
   /** The metalines content to be displayed with the result. */
   var metalines: js.UndefOr[js.Array[ResultDisplayLine]] = js.native
@@ -22,33 +23,21 @@ object ResultDisplayMetadata {
   }
   
   @scala.inline
-  implicit class ResultDisplayMetadataOps[Self <: ResultDisplayMetadata] (val x: Self) extends AnyVal {
+  implicit class ResultDisplayMetadataMutableBuilder[Self <: ResultDisplayMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetalines(value: js.Array[ResultDisplayLine]): Self = StObject.set(x, "metalines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetalinesUndefined: Self = StObject.set(x, "metalines", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetalinesVarargs(value: ResultDisplayLine*): Self = StObject.set(x, "metalines", js.Array(value :_*))
     
     @scala.inline
-    def setMetalinesVarargs(value: ResultDisplayLine*): Self = this.set("metalines", js.Array(value :_*))
+    def setObjectTypeLabel(value: String): Self = StObject.set(x, "objectTypeLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetalines(value: js.Array[ResultDisplayLine]): Self = this.set("metalines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetalines: Self = this.set("metalines", js.undefined)
-    
-    @scala.inline
-    def setObjectTypeLabel(value: String): Self = this.set("objectTypeLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectTypeLabel: Self = this.set("objectTypeLabel", js.undefined)
+    def setObjectTypeLabelUndefined: Self = StObject.set(x, "objectTypeLabel", js.undefined)
   }
 }

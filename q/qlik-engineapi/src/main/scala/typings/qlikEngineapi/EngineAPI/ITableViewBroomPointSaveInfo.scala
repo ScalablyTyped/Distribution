@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TableViewBroomPointSaveInfo...
   */
 @js.native
-trait ITableViewBroomPointSaveInfo extends js.Object {
+trait ITableViewBroomPointSaveInfo extends StObject {
   
   /**
     * List of fields in the table.
@@ -34,30 +35,18 @@ object ITableViewBroomPointSaveInfo {
   }
   
   @scala.inline
-  implicit class ITableViewBroomPointSaveInfoOps[Self <: ITableViewBroomPointSaveInfo] (val x: Self) extends AnyVal {
+  implicit class ITableViewBroomPointSaveInfoMutableBuilder[Self <: ITableViewBroomPointSaveInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQFields(value: js.Array[String]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFieldsVarargs(value: String*): Self = StObject.set(x, "qFields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQPos(value: IPoint): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldsVarargs(value: String*): Self = this.set("qFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setQFields(value: js.Array[String]): Self = this.set("qFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQPos(value: IPoint): Self = this.set("qPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTable(value: String): Self = this.set("qTable", value.asInstanceOf[js.Any])
+    def setQTable(value: String): Self = StObject.set(x, "qTable", value.asInstanceOf[js.Any])
   }
 }

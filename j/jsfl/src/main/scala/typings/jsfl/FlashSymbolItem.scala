@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashSymbolItem extends js.Object {
+trait FlashSymbolItem extends StObject {
   
   def convertToCompiledClip(): Unit = js.native
   
@@ -47,48 +48,36 @@ object FlashSymbolItem {
   }
   
   @scala.inline
-  implicit class FlashSymbolItemOps[Self <: FlashSymbolItem] (val x: Self) extends AnyVal {
+  implicit class FlashSymbolItemMutableBuilder[Self <: FlashSymbolItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvertToCompiledClip(value: () => Unit): Self = StObject.set(x, "convertToCompiledClip", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportSWC(value: String => Unit): Self = StObject.set(x, "exportSWC", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportSWF(value: String => Unit): Self = StObject.set(x, "exportSWF", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvertToCompiledClip(value: () => Unit): Self = this.set("convertToCompiledClip", js.Any.fromFunction0(value))
+    def setScalingGrid(value: Boolean): Self = StObject.set(x, "scalingGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportSWC(value: String => Unit): Self = this.set("exportSWC", js.Any.fromFunction1(value))
+    def setScalingGridRect(value: FlashRectangle): Self = StObject.set(x, "scalingGridRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportSWF(value: String => Unit): Self = this.set("exportSWF", js.Any.fromFunction1(value))
+    def setSourceAutoUpdate(value: Boolean): Self = StObject.set(x, "sourceAutoUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingGrid(value: Boolean): Self = this.set("scalingGrid", value.asInstanceOf[js.Any])
+    def setSourceFilePath(value: String): Self = StObject.set(x, "sourceFilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingGridRect(value: FlashRectangle): Self = this.set("scalingGridRect", value.asInstanceOf[js.Any])
+    def setSourceLibraryName(value: String): Self = StObject.set(x, "sourceLibraryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceAutoUpdate(value: Boolean): Self = this.set("sourceAutoUpdate", value.asInstanceOf[js.Any])
+    def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFilePath(value: String): Self = this.set("sourceFilePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceLibraryName(value: String): Self = this.set("sourceLibraryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbolType(value: String): Self = this.set("symbolType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeline(value: FlashTimeline): Self = this.set("timeline", value.asInstanceOf[js.Any])
+    def setTimeline(value: FlashTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.storybookUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Depth extends js.Object {
+trait Depth extends StObject {
   
   var depth: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object Depth {
   }
   
   @scala.inline
-  implicit class DepthOps[Self <: Depth] (val x: Self) extends AnyVal {
+  implicit class DepthMutableBuilder[Self <: Depth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setIsComponentUndefined: Self = StObject.set(x, "isComponent", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setIsExpandable(value: Boolean): Self = StObject.set(x, "isExpandable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComponent(value: Boolean): Self = this.set("isComponent", value.asInstanceOf[js.Any])
+    def setIsExpandableUndefined: Self = StObject.set(x, "isExpandable", js.undefined)
     
     @scala.inline
-    def deleteIsComponent: Self = this.set("isComponent", js.undefined)
+    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExpandable(value: Boolean): Self = this.set("isExpandable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsExpandable: Self = this.set("isExpandable", js.undefined)
-    
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = this.set("isExpanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsExpanded: Self = this.set("isExpanded", js.undefined)
+    def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
   }
 }

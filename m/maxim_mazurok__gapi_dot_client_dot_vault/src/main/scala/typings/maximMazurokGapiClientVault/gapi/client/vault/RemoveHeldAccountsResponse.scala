@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVault.gapi.client.vault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveHeldAccountsResponse extends js.Object {
+trait RemoveHeldAccountsResponse extends StObject {
   
   /** A list of statuses for deleted accounts. Results have the same order as the request. */
   var statuses: js.UndefOr[js.Array[Status]] = js.native
@@ -19,27 +20,15 @@ object RemoveHeldAccountsResponse {
   }
   
   @scala.inline
-  implicit class RemoveHeldAccountsResponseOps[Self <: RemoveHeldAccountsResponse] (val x: Self) extends AnyVal {
+  implicit class RemoveHeldAccountsResponseMutableBuilder[Self <: RemoveHeldAccountsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatuses(value: js.Array[Status]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatusesVarargs(value: Status*): Self = this.set("statuses", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatuses(value: js.Array[Status]): Self = this.set("statuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatuses: Self = this.set("statuses", js.undefined)
+    def setStatusesVarargs(value: Status*): Self = StObject.set(x, "statuses", js.Array(value :_*))
   }
 }

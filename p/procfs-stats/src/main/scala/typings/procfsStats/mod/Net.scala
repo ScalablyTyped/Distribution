@@ -3,12 +3,13 @@ package typings.procfsStats.mod
 import typings.procfsStats.anon.Receive
 import typings.procfsStats.anon.ReceiveString
 import typings.procfsStats.anon.Transmit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Net extends js.Object {
+trait Net extends StObject {
   
   var Interface: String = js.native
   
@@ -53,51 +54,39 @@ object Net {
   }
   
   @scala.inline
-  implicit class NetOps[Self <: Net] (val x: Self) extends AnyVal {
+  implicit class NetMutableBuilder[Self <: Net] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytes(value: Receive): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarrier(value: Transmit): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColls(value: Transmit): Self = StObject.set(x, "colls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterface(value: String): Self = this.set("Interface", value.asInstanceOf[js.Any])
+    def setCompressed(value: Receive): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytes(value: Receive): Self = this.set("bytes", value.asInstanceOf[js.Any])
+    def setDrop(value: Receive): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrier(value: Transmit): Self = this.set("carrier", value.asInstanceOf[js.Any])
+    def setErrs(value: Receive): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColls(value: Transmit): Self = this.set("colls", value.asInstanceOf[js.Any])
+    def setFifo(value: Receive): Self = StObject.set(x, "fifo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressed(value: Receive): Self = this.set("compressed", value.asInstanceOf[js.Any])
+    def setFrame(value: ReceiveString): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrop(value: Receive): Self = this.set("drop", value.asInstanceOf[js.Any])
+    def setInterface(value: String): Self = StObject.set(x, "Interface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrs(value: Receive): Self = this.set("errs", value.asInstanceOf[js.Any])
+    def setMulticast(value: ReceiveString): Self = StObject.set(x, "multicast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFifo(value: Receive): Self = this.set("fifo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrame(value: ReceiveString): Self = this.set("frame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMulticast(value: ReceiveString): Self = this.set("multicast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackets(value: Receive): Self = this.set("packets", value.asInstanceOf[js.Any])
+    def setPackets(value: Receive): Self = StObject.set(x, "packets", value.asInstanceOf[js.Any])
   }
 }

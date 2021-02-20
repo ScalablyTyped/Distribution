@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhoneNumberError extends js.Object {
+trait PhoneNumberError extends StObject {
   
   /**
     * The error code.
@@ -31,36 +32,24 @@ object PhoneNumberError {
   }
   
   @scala.inline
-  implicit class PhoneNumberErrorOps[Self <: PhoneNumberError] (val x: Self) extends AnyVal {
+  implicit class PhoneNumberErrorMutableBuilder[Self <: PhoneNumberError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: ErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setPhoneNumberId(value: NonEmptyString): Self = StObject.set(x, "PhoneNumberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
-    
-    @scala.inline
-    def setPhoneNumberId(value: NonEmptyString): Self = this.set("PhoneNumberId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumberId: Self = this.set("PhoneNumberId", js.undefined)
+    def setPhoneNumberIdUndefined: Self = StObject.set(x, "PhoneNumberId", js.undefined)
   }
 }

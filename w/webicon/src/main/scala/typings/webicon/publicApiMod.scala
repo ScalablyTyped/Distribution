@@ -9,16 +9,20 @@ import typings.webicon.svgCumulativeIconSetMod.SvgCumulativeIconSet
 import typings.webicon.svgIconMod.SvgIcon
 import typings.webicon.svgIconSetMod.SvgIconSet
 import typings.webicon.urlConfigMod.UrlConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webicon/System/PublicApi", JSImport.Namespace)
-@js.native
-object publicApiMod extends js.Object {
+object publicApiMod {
   
   @js.native
-  trait PublicApi extends js.Object {
+  trait PublicApi extends StObject {
+    
+    /**
+      * An alias of the `defaultSource`-method.
+      */
+    var default: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultSource'] */ js.Any = js.native
     
     /**
       * Adds a link to the `alias` icon-set.
@@ -30,11 +34,6 @@ object publicApiMod extends js.Object {
       * The id of the icon-set to refer to.
       */
     def alias(id: String, alias: String): this.type = js.native
-    
-    /**
-      * An alias of the `defaultSource`-method.
-      */
-    var default: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultSource'] */ js.Any = js.native
     
     /**
       * Adds a default svg-set.

@@ -1,12 +1,13 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-fbsdk", "ShareOpenGraphValueContainer")
 @js.native
-class ShareOpenGraphValueContainer protected () extends js.Object {
+class ShareOpenGraphValueContainer protected () extends StObject {
   def this(properties: OpenGraphProperties) = this()
   
   var _properties: OpenGraphProperties = js.native

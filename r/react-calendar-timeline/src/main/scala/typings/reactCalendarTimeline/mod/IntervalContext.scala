@@ -1,12 +1,13 @@
 package typings.reactCalendarTimeline.mod
 
 import typings.reactCalendarTimeline.anon.EndTime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntervalContext extends js.Object {
+trait IntervalContext extends StObject {
   
   var interval: EndTime = js.native
   
@@ -21,24 +22,12 @@ object IntervalContext {
   }
   
   @scala.inline
-  implicit class IntervalContextOps[Self <: IntervalContext] (val x: Self) extends AnyVal {
+  implicit class IntervalContextMutableBuilder[Self <: IntervalContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterval(value: EndTime): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInterval(value: EndTime): Self = this.set("interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntervalText(value: String): Self = this.set("intervalText", value.asInstanceOf[js.Any])
+    def setIntervalText(value: String): Self = StObject.set(x, "intervalText", value.asInstanceOf[js.Any])
   }
 }

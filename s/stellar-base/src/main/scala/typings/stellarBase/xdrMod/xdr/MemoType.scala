@@ -10,12 +10,13 @@ import typings.stellarBase.stellarBaseStrings.memoId
 import typings.stellarBase.stellarBaseStrings.memoNone
 import typings.stellarBase.stellarBaseStrings.memoReturn
 import typings.stellarBase.stellarBaseStrings.memoText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemoType extends js.Object {
+trait MemoType extends StObject {
   
   val name: memoNone | memoText | memoId | memoHash | memoReturn = js.native
   
@@ -30,24 +31,12 @@ object MemoType {
   }
   
   @scala.inline
-  implicit class MemoTypeOps[Self <: MemoType] (val x: Self) extends AnyVal {
+  implicit class MemoTypeMutableBuilder[Self <: MemoType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: memoNone | memoText | memoId | memoHash | memoReturn): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: memoNone | memoText | memoId | memoHash | memoReturn): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: `0` | `1` | `2` | `3` | `4`): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: `0` | `1` | `2` | `3` | `4`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.materializeCss.M
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TabsOptions> * / any */ @js.native
-trait Tabs extends js.Object {
+trait Tabs extends StObject {
   
   /**
     * The index of tab that is currently shown
@@ -33,27 +34,15 @@ object Tabs {
   }
   
   @scala.inline
-  implicit class TabsOps[Self <: Tabs] (val x: Self) extends AnyVal {
+  implicit class TabsMutableBuilder[Self <: Tabs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelect(value: String => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelect(value: String => Unit): Self = this.set("select", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateTabIndicator(value: () => Unit): Self = this.set("updateTabIndicator", js.Any.fromFunction0(value))
+    def setUpdateTabIndicator(value: () => Unit): Self = StObject.set(x, "updateTabIndicator", js.Any.fromFunction0(value))
   }
 }

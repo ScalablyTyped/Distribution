@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,39 +107,27 @@ object XStorable {
   }
   
   @scala.inline
-  implicit class XStorableOps[Self <: XStorable] (val x: Self) extends AnyVal {
+  implicit class XStorableMutableBuilder[Self <: XStorable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLocation(value: () => String): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasLocation(value: () => Boolean): Self = StObject.set(x, "hasLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsReadonly(value: () => Boolean): Self = StObject.set(x, "isReadonly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLocation(value: () => String): Self = this.set("getLocation", js.Any.fromFunction0(value))
+    def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasLocation(value: () => Boolean): Self = this.set("hasLocation", js.Any.fromFunction0(value))
+    def setStoreAsURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeAsURL", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsReadonly(value: () => Boolean): Self = this.set("isReadonly", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStore(value: () => Unit): Self = this.set("store", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStoreAsURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = this.set("storeAsURL", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStoreToURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = this.set("storeToURL", js.Any.fromFunction2(value))
+    def setStoreToURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToURL", js.Any.fromFunction2(value))
   }
 }

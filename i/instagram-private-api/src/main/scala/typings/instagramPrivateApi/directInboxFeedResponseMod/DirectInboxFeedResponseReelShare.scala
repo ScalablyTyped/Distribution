@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.directInboxFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectInboxFeedResponseReelShare extends js.Object {
+trait DirectInboxFeedResponseReelShare extends StObject {
   
   var is_reel_persisted: Boolean = js.native
   
@@ -36,36 +37,24 @@ object DirectInboxFeedResponseReelShare {
   }
   
   @scala.inline
-  implicit class DirectInboxFeedResponseReelShareOps[Self <: DirectInboxFeedResponseReelShare] (val x: Self) extends AnyVal {
+  implicit class DirectInboxFeedResponseReelShareMutableBuilder[Self <: DirectInboxFeedResponseReelShare] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIs_reel_persisted(value: Boolean): Self = StObject.set(x, "is_reel_persisted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMedia(value: DirectInboxFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReel_owner_id(value: Double): Self = StObject.set(x, "reel_owner_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_reel_persisted(value: Boolean): Self = this.set("is_reel_persisted", value.asInstanceOf[js.Any])
+    def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: DirectInboxFeedResponseMedia): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReel_owner_id(value: Double): Self = this.set("reel_owner_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReel_type(value: String): Self = this.set("reel_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

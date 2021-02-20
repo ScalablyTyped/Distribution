@@ -3,6 +3,7 @@ package typings.naverWhale.whale.contentSettings
 import typings.naverWhale.naverWhaleStrings.allow
 import typings.naverWhale.naverWhaleStrings.ask
 import typings.naverWhale.naverWhaleStrings.block
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,21 +24,9 @@ object PpapiBrokerSetDetails {
   }
   
   @scala.inline
-  implicit class PpapiBrokerSetDetailsOps[Self <: PpapiBrokerSetDetails] (val x: Self) extends AnyVal {
+  implicit class PpapiBrokerSetDetailsMutableBuilder[Self <: PpapiBrokerSetDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetting(value: allow | block | ask): Self = this.set("setting", value.asInstanceOf[js.Any])
+    def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

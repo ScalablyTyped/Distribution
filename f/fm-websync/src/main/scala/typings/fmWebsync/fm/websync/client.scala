@@ -1,11 +1,12 @@
 package typings.fmWebsync.fm.websync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait client extends js.Object {
+trait client extends StObject {
   
   /**
     * Sets up and maintains a streaming connection to the server.

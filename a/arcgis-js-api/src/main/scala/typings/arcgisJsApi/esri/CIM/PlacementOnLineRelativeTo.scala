@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlacementOnLineRelativeTo extends js.Object
+sealed trait PlacementOnLineRelativeTo extends StObject
 @JSGlobal("__esri.CIM.PlacementOnLineRelativeTo")
 @js.native
-object PlacementOnLineRelativeTo extends js.Object {
+object PlacementOnLineRelativeTo extends StObject {
   
   /**
     * Marker is placed at the beginning of the line.

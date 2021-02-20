@@ -1,6 +1,7 @@
 package typings.coinbaseCommerceNode.mod
 
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.checkout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,36 +43,24 @@ object CheckoutResource {
   }
   
   @scala.inline
-  implicit class CheckoutResourceOps[Self <: CheckoutResource] (val x: Self) extends AnyVal {
+  implicit class CheckoutResourceMutableBuilder[Self <: CheckoutResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocal_price(value: Price[FiatCurrency]): Self = StObject.set(x, "local_price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocal_priceUndefined: Self = StObject.set(x, "local_price", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLogo_url(value: String): Self = StObject.set(x, "logo_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: checkout): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setLogo_urlUndefined: Self = StObject.set(x, "logo_url", js.undefined)
     
     @scala.inline
-    def setLocal_price(value: Price[FiatCurrency]): Self = this.set("local_price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocal_price: Self = this.set("local_price", js.undefined)
-    
-    @scala.inline
-    def setLogo_url(value: String): Self = this.set("logo_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogo_url: Self = this.set("logo_url", js.undefined)
+    def setResource(value: checkout): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.CampaignIds
 import typings.maximMazurokGapiClientDfareporting.anon.ResourceUploadTypeUploadprotocol
 import typings.maximMazurokGapiClientDfareporting.anon.UploadTypeUploadprotocolXgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlacementGroupsResource extends js.Object {
+trait PlacementGroupsResource extends StObject {
   
   /** Gets one placement group by ID. */
   def get(): Request[PlacementGroup] = js.native

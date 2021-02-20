@@ -8,12 +8,13 @@ import typings.ariClient.anon.ModuleName
 import typings.ariClient.anon.Only
 import typings.ariClient.anon.Value
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Asterisk extends js.Object {
+trait Asterisk extends StObject {
   
   /**
     * Adds a log channel.

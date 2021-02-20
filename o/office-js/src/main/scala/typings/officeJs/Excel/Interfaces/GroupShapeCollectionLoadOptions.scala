@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait GroupShapeCollectionLoadOptions extends js.Object {
+trait GroupShapeCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -232,174 +233,162 @@ object GroupShapeCollectionLoadOptions {
   }
   
   @scala.inline
-  implicit class GroupShapeCollectionLoadOptionsOps[Self <: GroupShapeCollectionLoadOptions] (val x: Self) extends AnyVal {
+  implicit class GroupShapeCollectionLoadOptionsMutableBuilder[Self <: GroupShapeCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAltTextDescription(value: Boolean): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setAltTextDescriptionUndefined: Self = StObject.set(x, "altTextDescription", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setAltTextTitle(value: Boolean): Self = StObject.set(x, "altTextTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltTextDescription(value: Boolean): Self = this.set("altTextDescription", value.asInstanceOf[js.Any])
+    def setAltTextTitleUndefined: Self = StObject.set(x, "altTextTitle", js.undefined)
     
     @scala.inline
-    def deleteAltTextDescription: Self = this.set("altTextDescription", js.undefined)
+    def setConnectionSiteCount(value: Boolean): Self = StObject.set(x, "connectionSiteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltTextTitle(value: Boolean): Self = this.set("altTextTitle", value.asInstanceOf[js.Any])
+    def setConnectionSiteCountUndefined: Self = StObject.set(x, "connectionSiteCount", js.undefined)
     
     @scala.inline
-    def deleteAltTextTitle: Self = this.set("altTextTitle", js.undefined)
+    def setFill(value: ShapeFillLoadOptions): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionSiteCount(value: Boolean): Self = this.set("connectionSiteCount", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteConnectionSiteCount: Self = this.set("connectionSiteCount", js.undefined)
+    def setGeometricShape(value: GeometricShapeLoadOptions): Self = StObject.set(x, "geometricShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: ShapeFillLoadOptions): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setGeometricShapeType(value: Boolean): Self = StObject.set(x, "geometricShapeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setGeometricShapeTypeUndefined: Self = StObject.set(x, "geometricShapeType", js.undefined)
     
     @scala.inline
-    def setGeometricShape(value: GeometricShapeLoadOptions): Self = this.set("geometricShape", value.asInstanceOf[js.Any])
+    def setGeometricShapeUndefined: Self = StObject.set(x, "geometricShape", js.undefined)
     
     @scala.inline
-    def deleteGeometricShape: Self = this.set("geometricShape", js.undefined)
+    def setGroup(value: ShapeGroupLoadOptions): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometricShapeType(value: Boolean): Self = this.set("geometricShapeType", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteGeometricShapeType: Self = this.set("geometricShapeType", js.undefined)
+    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: ShapeGroupLoadOptions): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Boolean): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setImage(value: ImageLoadOptions): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ImageLoadOptions): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Boolean): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setLine(value: LineLoadOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Boolean): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLineFormat(value: ShapeLineFormatLoadOptions): Self = StObject.set(x, "lineFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setLineFormatUndefined: Self = StObject.set(x, "lineFormat", js.undefined)
     
     @scala.inline
-    def setLine(value: LineLoadOptions): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setLockAspectRatio(value: Boolean): Self = StObject.set(x, "lockAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineFormat(value: ShapeLineFormatLoadOptions): Self = this.set("lineFormat", value.asInstanceOf[js.Any])
+    def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteLineFormat: Self = this.set("lineFormat", js.undefined)
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockAspectRatio(value: Boolean): Self = this.set("lockAspectRatio", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLockAspectRatio: Self = this.set("lockAspectRatio", js.undefined)
+    def setParentGroup(value: ShapeLoadOptions): Self = StObject.set(x, "parentGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentGroupUndefined: Self = StObject.set(x, "parentGroup", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPlacement(value: Boolean): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentGroup(value: ShapeLoadOptions): Self = this.set("parentGroup", value.asInstanceOf[js.Any])
+    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
     @scala.inline
-    def deleteParentGroup: Self = this.set("parentGroup", js.undefined)
+    def setRotation(value: Boolean): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: Boolean): Self = this.set("placement", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deletePlacement: Self = this.set("placement", js.undefined)
+    def setTextFrame(value: TextFrameLoadOptions): Self = StObject.set(x, "textFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Boolean): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setTextFrameUndefined: Self = StObject.set(x, "textFrame", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextFrame(value: TextFrameLoadOptions): Self = this.set("textFrame", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteTextFrame: Self = this.set("textFrame", js.undefined)
+    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: Boolean): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Boolean): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setZOrderPosition(value: Boolean): Self = StObject.set(x, "zOrderPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setZOrderPosition(value: Boolean): Self = this.set("zOrderPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZOrderPosition: Self = this.set("zOrderPosition", js.undefined)
+    def setZOrderPositionUndefined: Self = StObject.set(x, "zOrderPosition", js.undefined)
   }
 }

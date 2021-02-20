@@ -1,12 +1,13 @@
 package typings.typedoc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TraverseProperty")
 @js.native
-object TraverseProperty extends js.Object {
+object TraverseProperty extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typedoc.abstractMod.TraverseProperty with Double] = js.native

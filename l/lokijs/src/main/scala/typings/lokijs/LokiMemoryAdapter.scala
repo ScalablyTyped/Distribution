@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.lokijs.anon.AsyncResponses
 import typings.lokijs.anon.Lastsave
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,30 +59,18 @@ object LokiMemoryAdapter {
   }
   
   @scala.inline
-  implicit class LokiMemoryAdapterOps[Self <: LokiMemoryAdapter] (val x: Self) extends AnyVal {
+  implicit class LokiMemoryAdapterMutableBuilder[Self <: LokiMemoryAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteDatabase(value: (String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashStore(value: StringDictionary[Lastsave]): Self = StObject.set(x, "hashStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: AsyncResponses): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteDatabase(value: (String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = this.set("deleteDatabase", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setHashStore(value: StringDictionary[Lastsave]): Self = this.set("hashStore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: AsyncResponses): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaveDatabase(value: (String, js.Any, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = this.set("saveDatabase", js.Any.fromFunction3(value))
+    def setSaveDatabase(value: (String, js.Any, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "saveDatabase", js.Any.fromFunction3(value))
   }
 }

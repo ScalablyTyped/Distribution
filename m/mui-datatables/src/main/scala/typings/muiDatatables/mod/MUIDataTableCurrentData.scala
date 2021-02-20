@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableCurrentData extends js.Object {
+trait MUIDataTableCurrentData extends StObject {
   
   var dataIndex: Double = js.native
   
@@ -20,24 +21,12 @@ object MUIDataTableCurrentData {
   }
   
   @scala.inline
-  implicit class MUIDataTableCurrentDataOps[Self <: MUIDataTableCurrentData] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableCurrentDataMutableBuilder[Self <: MUIDataTableCurrentData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataIndex(value: Double): Self = this.set("dataIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
   }
 }

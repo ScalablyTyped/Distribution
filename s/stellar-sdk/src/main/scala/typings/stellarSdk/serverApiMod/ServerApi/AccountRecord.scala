@@ -7,6 +7,7 @@ import typings.stellarSdk.horizonApiMod.Horizon.AccountThresholds
 import typings.stellarSdk.horizonApiMod.Horizon.BalanceLine
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
 import typings.stellarSdk.horizonApiMod.Horizon.Flags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

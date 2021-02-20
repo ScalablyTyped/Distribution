@@ -12,21 +12,16 @@ import typings.figma.figmaStrings.RIGHT
 import typings.figma.figmaStrings.TEXT
 import typings.figma.figmaStrings.TOP
 import typings.figma.figmaStrings.WIDTH_AND_HEIGHT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextNode
-  extends SceneNode
-     with BaseNodeMixin
-     with SceneNodeMixin
-     with ReactionMixin
-     with BlendMixin
-     with GeometryMixin
-     with LayoutMixin
-     with ExportMixin
-     with ConstraintMixin {
+  extends DefaultShapeMixin
+     with ConstraintMixin
+     with SceneNode {
   
   var autoRename: Boolean = js.native
   

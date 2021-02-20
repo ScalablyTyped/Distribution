@@ -13,6 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -211,90 +212,78 @@ object UnoControlListBoxModel {
   }
   
   @scala.inline
-  implicit class UnoControlListBoxModelOps[Self <: UnoControlListBoxModel] (val x: Self) extends AnyVal {
+  implicit class UnoControlListBoxModelMutableBuilder[Self <: UnoControlListBoxModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: Double): Self = this.set("Align", value.asInstanceOf[js.Any])
+    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("BackgroundColor", value.asInstanceOf[js.Any])
+    def setDropdown(value: Boolean): Self = StObject.set(x, "Dropdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: Double): Self = this.set("Border", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: Double): Self = this.set("BorderColor", value.asInstanceOf[js.Any])
+    def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdown(value: Boolean): Self = this.set("Dropdown", value.asInstanceOf[js.Any])
+    def setFontEmphasisMark(value: Double): Self = StObject.set(x, "FontEmphasisMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontDescriptor(value: FontDescriptor): Self = this.set("FontDescriptor", value.asInstanceOf[js.Any])
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFontEmphasisMark(value: Double): Self = this.set("FontEmphasisMark", value.asInstanceOf[js.Any])
+    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontRelief(value: Double): Self = this.set("FontRelief", value.asInstanceOf[js.Any])
+    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    def setItemSeparatorPos(value: Double): Self = StObject.set(x, "ItemSeparatorPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    def setLineCount(value: Double): Self = StObject.set(x, "LineCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemSeparatorPos(value: Double): Self = this.set("ItemSeparatorPos", value.asInstanceOf[js.Any])
+    def setMouseWheelBehavior(value: Double): Self = StObject.set(x, "MouseWheelBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineCount(value: Double): Self = this.set("LineCount", value.asInstanceOf[js.Any])
+    def setMultiSelection(value: Boolean): Self = StObject.set(x, "MultiSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseWheelBehavior(value: Double): Self = this.set("MouseWheelBehavior", value.asInstanceOf[js.Any])
+    def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiSelection(value: Boolean): Self = this.set("MultiSelection", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintable(value: Boolean): Self = this.set("Printable", value.asInstanceOf[js.Any])
+    def setSelectedItems(value: SafeArray[Double]): Self = StObject.set(x, "SelectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setStringItemList(value: SafeArray[String]): Self = StObject.set(x, "StringItemList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItems(value: SafeArray[Double]): Self = this.set("SelectedItems", value.asInstanceOf[js.Any])
+    def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringItemList(value: SafeArray[String]): Self = this.set("StringItemList", value.asInstanceOf[js.Any])
+    def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabstop(value: Boolean): Self = this.set("Tabstop", value.asInstanceOf[js.Any])
+    def setTextLineColor(value: Color): Self = StObject.set(x, "TextLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor(value: Color): Self = this.set("TextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextLineColor(value: Color): Self = this.set("TextLineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWritingMode(value: Double): Self = this.set("WritingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
+    def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
   }
 }

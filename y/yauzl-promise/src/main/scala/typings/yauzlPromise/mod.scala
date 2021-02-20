@@ -2,34 +2,19 @@ package typings.yauzlPromise
 
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
+import typings.node.eventsMod.EventEmitterOptions
 import typings.node.streamMod.Readable
 import typings.std.Date
 import typings.yauzl.mod.Options
 import typings.yauzl.mod.ZipFileOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yauzl-promise", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def dosDateTimeToDate(date: Double, time: Double): Date = js.native
-  
-  def fromBuffer(buffer: Buffer): js.Promise[ZipFile] = js.native
-  def fromBuffer(buffer: Buffer, options: Options): js.Promise[ZipFile] = js.native
-  
-  def fromFd(fd: Double): js.Promise[ZipFile] = js.native
-  def fromFd(fd: Double, options: Options): js.Promise[ZipFile] = js.native
-  
-  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double): js.Promise[ZipFile] = js.native
-  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double, options: Options): js.Promise[ZipFile] = js.native
-  
-  def open(path: String): js.Promise[ZipFile] = js.native
-  def open(path: String, options: Options): js.Promise[ZipFile] = js.native
-  
-  def validateFileName(fileName: String): String | Null = js.native
-  
+  @JSImport("yauzl-promise", "Entry")
   @js.native
   class Entry ()
     extends typings.yauzl.mod.Entry {
@@ -38,10 +23,14 @@ object mod extends js.Object {
     def openReadStream(options: ZipFileOptions): js.Promise[Readable] = js.native
   }
   
+  @JSImport("yauzl-promise", "RandomAccessReader")
   @js.native
   abstract class RandomAccessReader ()
-    extends typings.yauzl.mod.RandomAccessReader
+    extends typings.yauzl.mod.RandomAccessReader {
+    def this(options: EventEmitterOptions) = this()
+  }
   
+  @JSImport("yauzl-promise", "ZipFile")
   @js.native
   class ZipFile protected () extends EventEmitter {
     def this(
@@ -93,4 +82,40 @@ object mod extends js.Object {
     def walkEntries(callback: js.Function1[/* entry */ Entry, js.Promise[Unit] | Unit]): js.Promise[Unit] = js.native
     def walkEntries(callback: js.Function1[/* entry */ Entry, js.Promise[Unit] | Unit], numEntries: Double): js.Promise[Unit] = js.native
   }
+  
+  @JSImport("yauzl-promise", "dosDateTimeToDate")
+  @js.native
+  def dosDateTimeToDate(date: Double, time: Double): Date = js.native
+  
+  @JSImport("yauzl-promise", "fromBuffer")
+  @js.native
+  def fromBuffer(buffer: Buffer): js.Promise[ZipFile] = js.native
+  @JSImport("yauzl-promise", "fromBuffer")
+  @js.native
+  def fromBuffer(buffer: Buffer, options: Options): js.Promise[ZipFile] = js.native
+  
+  @JSImport("yauzl-promise", "fromFd")
+  @js.native
+  def fromFd(fd: Double): js.Promise[ZipFile] = js.native
+  @JSImport("yauzl-promise", "fromFd")
+  @js.native
+  def fromFd(fd: Double, options: Options): js.Promise[ZipFile] = js.native
+  
+  @JSImport("yauzl-promise", "fromRandomAccessReader")
+  @js.native
+  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double): js.Promise[ZipFile] = js.native
+  @JSImport("yauzl-promise", "fromRandomAccessReader")
+  @js.native
+  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double, options: Options): js.Promise[ZipFile] = js.native
+  
+  @JSImport("yauzl-promise", "open")
+  @js.native
+  def open(path: String): js.Promise[ZipFile] = js.native
+  @JSImport("yauzl-promise", "open")
+  @js.native
+  def open(path: String, options: Options): js.Promise[ZipFile] = js.native
+  
+  @JSImport("yauzl-promise", "validateFileName")
+  @js.native
+  def validateFileName(fileName: String): String | Null = js.native
 }

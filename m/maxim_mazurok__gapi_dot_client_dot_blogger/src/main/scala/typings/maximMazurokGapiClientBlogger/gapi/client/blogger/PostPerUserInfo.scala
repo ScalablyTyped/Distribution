@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBlogger.gapi.client.blogger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostPerUserInfo extends js.Object {
+trait PostPerUserInfo extends StObject {
   
   /** ID of the Blog that the post resource belongs to. */
   var blogId: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object PostPerUserInfo {
   }
   
   @scala.inline
-  implicit class PostPerUserInfoOps[Self <: PostPerUserInfo] (val x: Self) extends AnyVal {
+  implicit class PostPerUserInfoMutableBuilder[Self <: PostPerUserInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasEditAccess(value: Boolean): Self = StObject.set(x, "hasEditAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlogId(value: String): Self = this.set("blogId", value.asInstanceOf[js.Any])
+    def setHasEditAccessUndefined: Self = StObject.set(x, "hasEditAccess", js.undefined)
     
     @scala.inline
-    def deleteBlogId: Self = this.set("blogId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasEditAccess(value: Boolean): Self = this.set("hasEditAccess", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteHasEditAccess: Self = this.set("hasEditAccess", js.undefined)
+    def setPostId(value: String): Self = StObject.set(x, "postId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPostIdUndefined: Self = StObject.set(x, "postId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostId(value: String): Self = this.set("postId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostId: Self = this.set("postId", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

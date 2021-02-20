@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cert extends js.Object {
+trait Cert extends StObject {
   
   var cert: String = js.native
   
@@ -20,24 +21,12 @@ object Cert {
   }
   
   @scala.inline
-  implicit class CertOps[Self <: Cert] (val x: Self) extends AnyVal {
+  implicit class CertMutableBuilder[Self <: Cert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCert(value: String): Self = this.set("cert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasis(value: Boolean): Self = this.set("hasis", value.asInstanceOf[js.Any])
+    def setHasis(value: Boolean): Self = StObject.set(x, "hasis", value.asInstanceOf[js.Any])
   }
 }

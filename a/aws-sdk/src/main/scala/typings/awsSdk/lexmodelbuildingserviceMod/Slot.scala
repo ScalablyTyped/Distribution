@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Slot extends js.Object {
+trait Slot extends StObject {
   
   /**
     * A list of default values for the slot. Default values are used when Amazon Lex hasn't determined a value for a slot. You can specify default values from context variables, session attributes, and defined values.
@@ -71,81 +72,69 @@ object Slot {
   }
   
   @scala.inline
-  implicit class SlotOps[Self <: Slot] (val x: Self) extends AnyVal {
+  implicit class SlotMutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValueSpec(value: SlotDefaultValueSpec): Self = StObject.set(x, "defaultValueSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueSpecUndefined: Self = StObject.set(x, "defaultValueSpec", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SlotName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setSlotConstraint(value: SlotConstraint): Self = this.set("slotConstraint", value.asInstanceOf[js.Any])
+    def setName(value: SlotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueSpec(value: SlotDefaultValueSpec): Self = this.set("defaultValueSpec", value.asInstanceOf[js.Any])
+    def setObfuscationSetting(value: ObfuscationSetting): Self = StObject.set(x, "obfuscationSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValueSpec: Self = this.set("defaultValueSpec", js.undefined)
+    def setObfuscationSettingUndefined: Self = StObject.set(x, "obfuscationSetting", js.undefined)
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setObfuscationSetting(value: ObfuscationSetting): Self = this.set("obfuscationSetting", value.asInstanceOf[js.Any])
+    def setResponseCard(value: ResponseCard): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObfuscationSetting: Self = this.set("obfuscationSetting", js.undefined)
+    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
     
     @scala.inline
-    def setPriority(value: Priority): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSampleUtterances(value: SlotUtteranceList): Self = StObject.set(x, "sampleUtterances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
     
     @scala.inline
-    def setResponseCard(value: ResponseCard): Self = this.set("responseCard", value.asInstanceOf[js.Any])
+    def setSampleUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
     
     @scala.inline
-    def deleteResponseCard: Self = this.set("responseCard", js.undefined)
+    def setSlotConstraint(value: SlotConstraint): Self = StObject.set(x, "slotConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleUtterancesVarargs(value: Utterance*): Self = this.set("sampleUtterances", js.Array(value :_*))
+    def setSlotType(value: CustomOrBuiltinSlotTypeName): Self = StObject.set(x, "slotType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleUtterances(value: SlotUtteranceList): Self = this.set("sampleUtterances", value.asInstanceOf[js.Any])
+    def setSlotTypeUndefined: Self = StObject.set(x, "slotType", js.undefined)
     
     @scala.inline
-    def deleteSampleUtterances: Self = this.set("sampleUtterances", js.undefined)
+    def setSlotTypeVersion(value: Version): Self = StObject.set(x, "slotTypeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotType(value: CustomOrBuiltinSlotTypeName): Self = this.set("slotType", value.asInstanceOf[js.Any])
+    def setSlotTypeVersionUndefined: Self = StObject.set(x, "slotTypeVersion", js.undefined)
     
     @scala.inline
-    def deleteSlotType: Self = this.set("slotType", js.undefined)
+    def setValueElicitationPrompt(value: Prompt): Self = StObject.set(x, "valueElicitationPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotTypeVersion(value: Version): Self = this.set("slotTypeVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlotTypeVersion: Self = this.set("slotTypeVersion", js.undefined)
-    
-    @scala.inline
-    def setValueElicitationPrompt(value: Prompt): Self = this.set("valueElicitationPrompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueElicitationPrompt: Self = this.set("valueElicitationPrompt", js.undefined)
+    def setValueElicitationPromptUndefined: Self = StObject.set(x, "valueElicitationPrompt", js.undefined)
   }
 }

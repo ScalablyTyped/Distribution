@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,16 +31,20 @@ class TemplatePlaceholder protected () extends Widget {
   def `type`: String = js.native
   def type_=(newValue: String): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder")
-@js.native
-object TemplatePlaceholder extends js.Object {
+object TemplatePlaceholder {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new TemplatePlaceholder instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.create")
+  @js.native
   def create(model: IModel): TemplatePlaceholder = js.native
   
   /**
@@ -50,6 +55,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInBuildingBlockUnderWidgets")
+  @js.native
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): TemplatePlaceholder = js.native
   
   /**
@@ -60,6 +68,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInDataViewUnderFooterWidgets")
+  @js.native
   def createInDataViewUnderFooterWidgets(container: DataView): TemplatePlaceholder = js.native
   
   /**
@@ -70,6 +81,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInDataViewUnderWidgets")
+  @js.native
   def createInDataViewUnderWidgets(container: DataView): TemplatePlaceholder = js.native
   
   /**
@@ -80,6 +94,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInDivContainerUnderWidgets")
+  @js.native
   def createInDivContainerUnderWidgets(container: DivContainer): TemplatePlaceholder = js.native
   
   /**
@@ -90,6 +107,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInGroupBoxUnderWidgets")
+  @js.native
   def createInGroupBoxUnderWidgets(container: GroupBox): TemplatePlaceholder = js.native
   
   /**
@@ -100,6 +120,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInHeaderUnderLeftWidgets")
+  @js.native
   def createInHeaderUnderLeftWidgets(container: Header): TemplatePlaceholder = js.native
   
   /**
@@ -110,6 +133,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInHeaderUnderRightWidgets")
+  @js.native
   def createInHeaderUnderRightWidgets(container: Header): TemplatePlaceholder = js.native
   
   /**
@@ -120,6 +146,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): TemplatePlaceholder = js.native
   
   /**
@@ -130,6 +159,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInLayoutGridColumnUnderWidgets")
+  @js.native
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): TemplatePlaceholder = js.native
   
   /**
@@ -140,6 +172,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInListViewTemplateUnderWidgets")
+  @js.native
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): TemplatePlaceholder = js.native
   
   /**
@@ -150,6 +185,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInListViewUnderWidgets")
+  @js.native
   def createInListViewUnderWidgets(container: ListView): TemplatePlaceholder = js.native
   
   /**
@@ -160,6 +198,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInNativeLayoutContentUnderSidebarWidgets")
+  @js.native
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TemplatePlaceholder = js.native
   
   /**
@@ -170,6 +211,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInNativeLayoutContentUnderWidgets")
+  @js.native
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): TemplatePlaceholder = js.native
   
   /**
@@ -180,6 +224,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInNavigationListItemUnderWidgets")
+  @js.native
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): TemplatePlaceholder = js.native
   
   /**
@@ -190,6 +237,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInScrollContainerRegionUnderWidgets")
+  @js.native
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): TemplatePlaceholder = js.native
   
   /**
@@ -200,6 +250,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInSnippetUnderWidgets")
+  @js.native
   def createInSnippetUnderWidgets(container: Snippet): TemplatePlaceholder = js.native
   
   /**
@@ -210,6 +263,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInTabPageUnderWidgets")
+  @js.native
   def createInTabPageUnderWidgets(container: TabPage): TemplatePlaceholder = js.native
   
   /**
@@ -220,6 +276,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInTableCellUnderWidgets")
+  @js.native
   def createInTableCellUnderWidgets(container: TableCell): TemplatePlaceholder = js.native
   
   /**
@@ -230,6 +289,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInTemplateGridContentsUnderWidgets")
+  @js.native
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): TemplatePlaceholder = js.native
   
   /**
@@ -240,6 +302,9 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInWebLayoutContentUnderWidgets")
+  @js.native
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): TemplatePlaceholder = js.native
   
   /**
@@ -250,9 +315,22 @@ object TemplatePlaceholder extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.createInWidgetValueUnderWidgets")
+  @js.native
   def createInWidgetValueUnderWidgets(container: WidgetValue): TemplatePlaceholder = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

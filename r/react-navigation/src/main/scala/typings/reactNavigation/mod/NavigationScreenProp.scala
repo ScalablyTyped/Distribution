@@ -5,12 +5,13 @@ import typings.reactNavigation.anon.`2`
 import typings.reactNavigation.reactNavigationStrings.refocus
 import typings.std.NonNullable
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationScreenProp[S, P] extends js.Object {
+trait NavigationScreenProp[S, P] extends StObject {
   
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   

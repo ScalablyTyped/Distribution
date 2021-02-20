@@ -1,11 +1,12 @@
 package typings.playable.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndTS extends js.Object {
+trait EndTS extends StObject {
   
   var endTS: js.UndefOr[Double] = js.native
   
@@ -22,33 +23,21 @@ object EndTS {
   }
   
   @scala.inline
-  implicit class EndTSOps[Self <: EndTS] (val x: Self) extends AnyVal {
+  implicit class EndTSMutableBuilder[Self <: EndTS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTS(value: Double): Self = StObject.set(x, "endTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTSUndefined: Self = StObject.set(x, "endTS", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setStartTS(value: Double): Self = StObject.set(x, "startTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTS(value: Double): Self = this.set("endTS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTS: Self = this.set("endTS", js.undefined)
-    
-    @scala.inline
-    def setStartTS(value: Double): Self = this.set("startTS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTS: Self = this.set("startTS", js.undefined)
+    def setStartTSUndefined: Self = StObject.set(x, "startTS", js.undefined)
   }
 }

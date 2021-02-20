@@ -1,8 +1,10 @@
 package typings.egg.mod
 
+import typings.eggCore.mod.EggCoreOptions
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("egg", "Application")
 @js.native
 class Application () extends EggApplication {
+  def this(options: EggCoreOptions) = this()
   
   var controller: IController = js.native
   

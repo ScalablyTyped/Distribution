@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGetPeersResponse extends js.Object {
+trait IGetPeersResponse extends StObject {
   
   /** GetPeersResponse peerEndpoints */
   var peerEndpoints: js.UndefOr[js.Array[String] | Null] = js.native
@@ -19,30 +20,18 @@ object IGetPeersResponse {
   }
   
   @scala.inline
-  implicit class IGetPeersResponseOps[Self <: IGetPeersResponse] (val x: Self) extends AnyVal {
+  implicit class IGetPeersResponseMutableBuilder[Self <: IGetPeersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPeerEndpoints(value: js.Array[String]): Self = StObject.set(x, "peerEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPeerEndpointsNull: Self = StObject.set(x, "peerEndpoints", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeerEndpointsUndefined: Self = StObject.set(x, "peerEndpoints", js.undefined)
     
     @scala.inline
-    def setPeerEndpointsVarargs(value: String*): Self = this.set("peerEndpoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setPeerEndpoints(value: js.Array[String]): Self = this.set("peerEndpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeerEndpoints: Self = this.set("peerEndpoints", js.undefined)
-    
-    @scala.inline
-    def setPeerEndpointsNull: Self = this.set("peerEndpoints", null)
+    def setPeerEndpointsVarargs(value: String*): Self = StObject.set(x, "peerEndpoints", js.Array(value :_*))
   }
 }

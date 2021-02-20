@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLaunchTemplateVersionsResult extends js.Object {
+trait DescribeLaunchTemplateVersionsResult extends StObject {
   
   /**
     * Information about the launch template versions.
@@ -26,33 +27,21 @@ object DescribeLaunchTemplateVersionsResult {
   }
   
   @scala.inline
-  implicit class DescribeLaunchTemplateVersionsResultOps[Self <: DescribeLaunchTemplateVersionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeLaunchTemplateVersionsResultMutableBuilder[Self <: DescribeLaunchTemplateVersionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLaunchTemplateVersions(value: LaunchTemplateVersionSet): Self = StObject.set(x, "LaunchTemplateVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLaunchTemplateVersionsUndefined: Self = StObject.set(x, "LaunchTemplateVersions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchTemplateVersionsVarargs(value: LaunchTemplateVersion*): Self = StObject.set(x, "LaunchTemplateVersions", js.Array(value :_*))
     
     @scala.inline
-    def setLaunchTemplateVersionsVarargs(value: LaunchTemplateVersion*): Self = this.set("LaunchTemplateVersions", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplateVersions(value: LaunchTemplateVersionSet): Self = this.set("LaunchTemplateVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchTemplateVersions: Self = this.set("LaunchTemplateVersions", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

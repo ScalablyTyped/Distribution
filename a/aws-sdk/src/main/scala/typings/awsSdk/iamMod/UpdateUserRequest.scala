@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateUserRequest extends js.Object {
+trait UpdateUserRequest extends StObject {
   
   /**
     * New path for the IAM user. Include this parameter only if you're changing the user's path. This parameter allows (through its regex pattern) a string of characters consisting of either a forward slash (/) by itself or a string that must begin and end with forward slashes. In addition, it can contain any ASCII character from the ! (\\u0021) through the DEL character (\\u007F), including most punctuation characters, digits, and upper and lowercased letters.
@@ -31,33 +32,21 @@ object UpdateUserRequest {
   }
   
   @scala.inline
-  implicit class UpdateUserRequestOps[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateUserRequestMutableBuilder[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewPathUndefined: Self = StObject.set(x, "NewPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewUserName(value: userNameType): Self = StObject.set(x, "NewUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserName(value: existingUserNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setNewUserNameUndefined: Self = StObject.set(x, "NewUserName", js.undefined)
     
     @scala.inline
-    def setNewPath(value: pathType): Self = this.set("NewPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewPath: Self = this.set("NewPath", js.undefined)
-    
-    @scala.inline
-    def setNewUserName(value: userNameType): Self = this.set("NewUserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewUserName: Self = this.set("NewUserName", js.undefined)
+    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

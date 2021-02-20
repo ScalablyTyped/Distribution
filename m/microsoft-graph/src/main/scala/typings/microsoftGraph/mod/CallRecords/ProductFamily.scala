@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod.CallRecords
 
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.lync
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
-trait ProductFamily extends js.Object
+trait ProductFamily extends StObject
 object ProductFamily {
   
   @scala.inline

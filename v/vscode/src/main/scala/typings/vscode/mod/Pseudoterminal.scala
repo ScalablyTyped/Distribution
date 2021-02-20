@@ -1,5 +1,6 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines the interface of a terminal pty, enabling extensions to control a terminal.
   */
 @js.native
-trait Pseudoterminal extends js.Object {
+trait Pseudoterminal extends StObject {
   
   /**
     * Implement to handle when the terminal is closed by an act of the user.

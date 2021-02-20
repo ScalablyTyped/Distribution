@@ -1,5 +1,6 @@
 package typings.coreJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Modules: core.date
 // #############################################################################################
 @js.native
-trait Date extends js.Object {
+trait Date extends StObject {
   
   /**
     * Non-standard.

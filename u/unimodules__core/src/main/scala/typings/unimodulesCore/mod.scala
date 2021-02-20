@@ -1,7 +1,5 @@
 package typings.unimodulesCore
 
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.reactNative.mod.DeviceEventEmitterStatic
 import typings.unimodulesCore.anon.CurrentVersion
@@ -11,58 +9,62 @@ import typings.unimodulesCore.unimodulesCoreStrings.macos
 import typings.unimodulesCore.unimodulesCoreStrings.web
 import typings.unimodulesCore.unimodulesCoreStrings.windows
 import typings.unimodulesReactNativeAdapter.eventEmitterMod.NativeModule
-import typings.unimodulesReactNativeAdapter.nativeModulesProxyTypesMod.ProxyNativeModule
 import typings.unimodulesReactNativeAdapter.platformMod.PlatformSelect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@unimodules/core", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val SyntheticPlatformEmitter: typings.unimodulesReactNativeAdapter.syntheticPlatformEmitterMod.SyntheticPlatformEmitter = js.native
-  
-  def deprecate(library: String, deprecatedAPI: String): Unit = js.native
-  def deprecate(library: String, deprecatedAPI: String, options: CurrentVersion): Unit = js.native
-  
-  def requireNativeViewManager[P](viewName: String): ComponentType[P] = js.native
-  
+  @JSImport("@unimodules/core", "CodedError")
   @js.native
   class CodedError protected ()
     extends typings.unimodulesCore.adapterProxyMod.CodedError {
     def this(code: String, message: String) = this()
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("@unimodules/core", "DeviceEventEmitter")
   @js.native
   class DeviceEventEmitter ()
     extends typings.unimodulesCore.adapterProxyMod.DeviceEventEmitter
+  @JSImport("@unimodules/core", "DeviceEventEmitter")
   @js.native
-  object DeviceEventEmitter extends TopLevel[DeviceEventEmitterStatic]
+  val DeviceEventEmitter: DeviceEventEmitterStatic = js.native
   
+  @JSImport("@unimodules/core", "EventEmitter")
   @js.native
   class EventEmitter protected ()
     extends typings.unimodulesCore.adapterProxyMod.EventEmitter {
     def this(nativeModule: NativeModule) = this()
   }
   
-  @js.native
-  object NativeModulesProxy extends /* moduleName */ StringDictionary[ProxyNativeModule]
-  
-  @js.native
-  object Platform extends js.Object {
+  object Platform {
+    
+    @JSImport("@unimodules/core", "Platform")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Denotes the currently running platform.
       * Can be one of ios, android, web.
       */
-    var OS: ios | android | windows | macos | web = js.native
+    @JSImport("@unimodules/core", "Platform.OS")
+    @js.native
+    def OS: ios | android | windows | macos | web = js.native
+    @scala.inline
+    def OS_=(x: ios | android | windows | macos | web): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OS")(x.asInstanceOf[js.Any])
     
     /**
       * Denotes if the DOM API is available in the current environment.
       * The DOM is not available in native React runtimes and Node.js.
       */
-    var isDOMAvailable: Boolean = js.native
+    @JSImport("@unimodules/core", "Platform.isDOMAvailable")
+    @js.native
+    def isDOMAvailable: Boolean = js.native
+    @scala.inline
+    def isDOMAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDOMAvailable")(x.asInstanceOf[js.Any])
     
     /**
       * Returns the value with the matching platform.
@@ -72,18 +74,41 @@ object mod extends js.Object {
       * @android android, native, default
       * @web web, default
       */
-    var select: PlatformSelect = js.native
+    @JSImport("@unimodules/core", "Platform.select")
+    @js.native
+    def select: PlatformSelect = js.native
+    @scala.inline
+    def select_=(x: PlatformSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("@unimodules/core", "RCTDeviceEventEmitter")
   @js.native
   class RCTDeviceEventEmitter ()
     extends typings.unimodulesCore.adapterProxyMod.RCTDeviceEventEmitter
+  @JSImport("@unimodules/core", "RCTDeviceEventEmitter")
   @js.native
-  object RCTDeviceEventEmitter extends TopLevel[DeviceEventEmitterStatic]
+  val RCTDeviceEventEmitter: DeviceEventEmitterStatic = js.native
   
+  @JSImport("@unimodules/core", "SyntheticPlatformEmitter")
+  @js.native
+  val SyntheticPlatformEmitter: typings.unimodulesReactNativeAdapter.syntheticPlatformEmitterMod.SyntheticPlatformEmitter = js.native
+  
+  @JSImport("@unimodules/core", "UnavailabilityError")
   @js.native
   class UnavailabilityError protected ()
     extends typings.unimodulesCore.adapterProxyMod.UnavailabilityError {
     def this(moduleName: String, propertyName: String) = this()
   }
+  
+  @JSImport("@unimodules/core", "deprecate")
+  @js.native
+  def deprecate(library: String, deprecatedAPI: String): Unit = js.native
+  @JSImport("@unimodules/core", "deprecate")
+  @js.native
+  def deprecate(library: String, deprecatedAPI: String, options: CurrentVersion): Unit = js.native
+  
+  @JSImport("@unimodules/core", "requireNativeViewManager")
+  @js.native
+  def requireNativeViewManager[P](viewName: String): ComponentType[P] = js.native
 }

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "relay-test-utils"
-version := "6.0-dt-20201022Z-c87601"
+version := "6.0-dt-20201022Z-adccfe"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-0012d8",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-cfb347",
-  "org.scalablytyped" %%% "react-relay" % "7.0-dt-20201102Z-86096b",
-  "org.scalablytyped" %%% "relay-runtime" % "10.1-dt-20201120Z-5d4df3",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-b4f267",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-7dc507",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-9253ae",
+  "org.scalablytyped" %%% "react-relay" % "7.0-dt-20201102Z-b56c0e",
+  "org.scalablytyped" %%% "relay-runtime" % "10.1-dt-20201120Z-52f09b",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

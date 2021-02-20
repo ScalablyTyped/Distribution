@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterOptions extends js.Object {
+trait FilterOptions extends StObject {
   
   var applyButton: js.UndefOr[Boolean] = js.native
   
@@ -37,81 +38,69 @@ object FilterOptions {
   }
   
   @scala.inline
-  implicit class FilterOptionsOps[Self <: FilterOptions] (val x: Self) extends AnyVal {
+  implicit class FilterOptionsMutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyButton(value: Boolean): Self = StObject.set(x, "applyButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyButtonUndefined: Self = StObject.set(x, "applyButton", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChange(value: /* e */ FilterChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplyButton(value: Boolean): Self = this.set("applyButton", value.asInstanceOf[js.Any])
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteApplyButton: Self = this.set("applyButton", js.undefined)
+    def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ FilterChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setExpression(value: js.Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setExpressionPreview(value: Boolean): Self = StObject.set(x, "expressionPreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setExpressionPreviewUndefined: Self = StObject.set(x, "expressionPreview", js.undefined)
     
     @scala.inline
-    def setExpression(value: js.Any): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
+    def setFields(value: js.Array[FilterField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionPreview(value: Boolean): Self = this.set("expressionPreview", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteExpressionPreview: Self = this.set("expressionPreview", js.undefined)
+    def setFieldsVarargs(value: FilterField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: FilterField*): Self = this.set("fields", js.Array(value :_*))
+    def setMainLogic(value: String): Self = StObject.set(x, "mainLogic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[FilterField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setMainLogicUndefined: Self = StObject.set(x, "mainLogic", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setMessages(value: FilterMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainLogic(value: String): Self = this.set("mainLogic", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteMainLogic: Self = this.set("mainLogic", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: FilterMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setOperators(value: FilterOperators): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOperators(value: FilterOperators): Self = this.set("operators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperators: Self = this.set("operators", js.undefined)
+    def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
   }
 }

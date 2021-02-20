@@ -1,20 +1,23 @@
 package typings.antvComponent
 
-import typings.antvComponent.groupComponentMod.GroupComponent
 import typings.antvComponent.typesMod.CrosshairBaseCfg
 import typings.antvComponent.typesMod.GroupComponentCfg
 import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/crosshair/base", JSImport.Namespace)
-@js.native
-object crosshairBaseMod extends js.Object {
+object crosshairBaseMod {
+  
+  @JSImport("@antv/component/lib/crosshair/base", JSImport.Default)
+  @js.native
+  abstract class default[T /* <: CrosshairBaseCfg */] () extends CrosshairBase[T]
   
   @js.native
-  trait CrosshairBase[T /* <: CrosshairBaseCfg */] extends GroupComponent[GroupComponentCfg] {
+  trait CrosshairBase[T /* <: CrosshairBaseCfg */]
+    extends typings.antvComponent.groupComponentMod.default[GroupComponentCfg] {
     
     /* protected */ def getLinePath(): js.Array[_] = js.native
     
@@ -33,7 +36,4 @@ object crosshairBaseMod extends js.Object {
     
     /* protected */ def renderText(group: IGroup): Unit = js.native
   }
-  
-  @js.native
-  abstract class default[T /* <: CrosshairBaseCfg */] () extends CrosshairBase[T]
 }

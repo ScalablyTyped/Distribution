@@ -1,12 +1,13 @@
 package typings.bitwise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/utilities", JSImport.Namespace)
-@js.native
-object bitwiseUtilitiesMod extends js.Object {
+object bitwiseUtilitiesMod {
   
+  @JSImport("bitwise/utilities", "p2")
+  @js.native
   val p2: js.Array[Double] = js.native
 }

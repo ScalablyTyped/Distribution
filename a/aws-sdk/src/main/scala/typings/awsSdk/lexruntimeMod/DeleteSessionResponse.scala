@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteSessionResponse extends js.Object {
+trait DeleteSessionResponse extends StObject {
   
   /**
     * The alias in use for the bot associated with the session data.
@@ -36,42 +37,30 @@ object DeleteSessionResponse {
   }
   
   @scala.inline
-  implicit class DeleteSessionResponseOps[Self <: DeleteSessionResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteSessionResponseMutableBuilder[Self <: DeleteSessionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBotAliasUndefined: Self = StObject.set(x, "botAlias", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotAlias(value: BotAlias): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
     
     @scala.inline
-    def deleteBotAlias: Self = this.set("botAlias", js.undefined)
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
     @scala.inline
-    def deleteBotName: Self = this.set("botName", js.undefined)
+    def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: UserId): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.log4js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Levels_ extends js.Object {
+trait Levels_ extends StObject {
   
   var ALL: Level = js.native
   
@@ -53,57 +54,45 @@ object Levels_ {
   }
   
   @scala.inline
-  implicit class Levels_Ops[Self <: Levels_] (val x: Self) extends AnyVal {
+  implicit class Levels_MutableBuilder[Self <: Levels_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALL(value: Level): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddLevels(value: js.Object => Unit): Self = StObject.set(x, "addLevels", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDEBUG(value: Level): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALL(value: Level): Self = this.set("ALL", value.asInstanceOf[js.Any])
+    def setERROR(value: Level): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDEBUG(value: Level): Self = this.set("DEBUG", value.asInstanceOf[js.Any])
+    def setFATAL(value: Level): Self = StObject.set(x, "FATAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setERROR(value: Level): Self = this.set("ERROR", value.asInstanceOf[js.Any])
+    def setGetLevel(value: String => Level): Self = StObject.set(x, "getLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFATAL(value: Level): Self = this.set("FATAL", value.asInstanceOf[js.Any])
+    def setINFO(value: Level): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINFO(value: Level): Self = this.set("INFO", value.asInstanceOf[js.Any])
+    def setLevels(value: js.Array[Level]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMARK(value: Level): Self = this.set("MARK", value.asInstanceOf[js.Any])
+    def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
     @scala.inline
-    def setOFF(value: Level): Self = this.set("OFF", value.asInstanceOf[js.Any])
+    def setMARK(value: Level): Self = StObject.set(x, "MARK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTRACE(value: Level): Self = this.set("TRACE", value.asInstanceOf[js.Any])
+    def setOFF(value: Level): Self = StObject.set(x, "OFF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWARN(value: Level): Self = this.set("WARN", value.asInstanceOf[js.Any])
+    def setTRACE(value: Level): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddLevels(value: js.Object => Unit): Self = this.set("addLevels", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetLevel(value: String => Level): Self = this.set("getLevel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLevelsVarargs(value: Level*): Self = this.set("levels", js.Array(value :_*))
-    
-    @scala.inline
-    def setLevels(value: js.Array[Level]): Self = this.set("levels", value.asInstanceOf[js.Any])
+    def setWARN(value: Level): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
   }
 }

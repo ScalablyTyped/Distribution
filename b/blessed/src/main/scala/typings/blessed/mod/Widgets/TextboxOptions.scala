@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object TextboxOptions {
   }
   
   @scala.inline
-  implicit class TextboxOptionsOps[Self <: TextboxOptions] (val x: Self) extends AnyVal {
+  implicit class TextboxOptionsMutableBuilder[Self <: TextboxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCensor(value: Boolean): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCensorUndefined: Self = StObject.set(x, "censor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecret(value: Boolean): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCensor(value: Boolean): Self = this.set("censor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCensor: Self = this.set("censor", js.undefined)
-    
-    @scala.inline
-    def setSecret(value: Boolean): Self = this.set("secret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecret: Self = this.set("secret", js.undefined)
+    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
   }
 }

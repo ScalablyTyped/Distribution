@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorImageBrowserTransport extends js.Object {
+trait EditorImageBrowserTransport extends StObject {
   
   var create: js.UndefOr[String | EditorImageBrowserTransportCreate] = js.native
   
@@ -28,54 +29,42 @@ object EditorImageBrowserTransport {
   }
   
   @scala.inline
-  implicit class EditorImageBrowserTransportOps[Self <: EditorImageBrowserTransport] (val x: Self) extends AnyVal {
+  implicit class EditorImageBrowserTransportMutableBuilder[Self <: EditorImageBrowserTransport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: String | EditorImageBrowserTransportCreate): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroy(value: String | EditorImageBrowserTransportDestroy): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: String | EditorImageBrowserTransportCreate): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setImageUrl(value: String | js.Function): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: String | EditorImageBrowserTransportDestroy): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setRead(value: String | js.Function | EditorImageBrowserTransportRead): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String | js.Function): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setThumbnailUrl(value: String | js.Function): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: String | js.Function | EditorImageBrowserTransportRead): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
     
     @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailUrl(value: String | js.Function): Self = this.set("thumbnailUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailUrl: Self = this.set("thumbnailUrl", js.undefined)
-    
-    @scala.inline
-    def setUploadUrl(value: String): Self = this.set("uploadUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadUrl: Self = this.set("uploadUrl", js.undefined)
+    def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.hide
 import typings.arcgisJsApi.arcgisJsApiStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,57 +63,45 @@ object BuildingComponentSublayerProperties {
   }
   
   @scala.inline
-  implicit class BuildingComponentSublayerPropertiesOps[Self <: BuildingComponentSublayerProperties] (val x: Self) extends AnyVal {
+  implicit class BuildingComponentSublayerPropertiesMutableBuilder[Self <: BuildingComponentSublayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListMode(value: show | hide): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionExpression(value: String): Self = this.set("definitionExpression", value.asInstanceOf[js.Any])
+    def setListModeUndefined: Self = StObject.set(x, "listMode", js.undefined)
     
     @scala.inline
-    def deleteDefinitionExpression: Self = this.set("definitionExpression", js.undefined)
+    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListMode(value: show | hide): Self = this.set("listMode", value.asInstanceOf[js.Any])
+    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
     @scala.inline
-    def deleteListMode: Self = this.set("listMode", js.undefined)
+    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
     
     @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = this.set("outFields", js.Array(value :_*))
+    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutFields(value: js.Array[String]): Self = this.set("outFields", value.asInstanceOf[js.Any])
+    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
     @scala.inline
-    def deleteOutFields: Self = this.set("outFields", js.undefined)
+    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupEnabled(value: Boolean): Self = this.set("popupEnabled", value.asInstanceOf[js.Any])
+    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
     @scala.inline
-    def deletePopupEnabled: Self = this.set("popupEnabled", js.undefined)
+    def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = this.set("popupTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePopupTemplate: Self = this.set("popupTemplate", js.undefined)
-    
-    @scala.inline
-    def setRenderer(value: RendererProperties): Self = this.set("renderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
   }
 }

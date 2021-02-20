@@ -1,11 +1,12 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IToSVGOptions extends js.Object {
+trait IToSVGOptions extends StObject {
   
   /**
     * Encoding of SVG output
@@ -41,48 +42,36 @@ object IToSVGOptions {
   }
   
   @scala.inline
-  implicit class IToSVGOptionsOps[Self <: IToSVGOptions] (val x: Self) extends AnyVal {
+  implicit class IToSVGOptionsMutableBuilder[Self <: IToSVGOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setSuppressPreamble(value: Boolean): Self = StObject.set(x, "suppressPreamble", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setSuppressPreambleUndefined: Self = StObject.set(x, "suppressPreamble", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setViewBox(value: IViewBox): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressPreamble(value: Boolean): Self = this.set("suppressPreamble", value.asInstanceOf[js.Any])
+    def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
     
     @scala.inline
-    def deleteSuppressPreamble: Self = this.set("suppressPreamble", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewBox(value: IViewBox): Self = this.set("viewBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewBox: Self = this.set("viewBox", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

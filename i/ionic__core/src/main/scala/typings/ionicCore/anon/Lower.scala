@@ -1,11 +1,12 @@
 package typings.ionicCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lower extends js.Object {
+trait Lower extends StObject {
   
   var lower: Double = js.native
   
@@ -20,24 +21,12 @@ object Lower {
   }
   
   @scala.inline
-  implicit class LowerOps[Self <: Lower] (val x: Self) extends AnyVal {
+  implicit class LowerMutableBuilder[Self <: Lower] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLower(value: Double): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLower(value: Double): Self = this.set("lower", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpper(value: Double): Self = this.set("upper", value.asInstanceOf[js.Any])
+    def setUpper(value: Double): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
   }
 }

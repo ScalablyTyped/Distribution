@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MoveAccountRequest extends js.Object {
+trait MoveAccountRequest extends StObject {
   
   /**
     * The unique identifier (ID) of the account that you want to move. The regex pattern for an account ID string requires exactly 12 digits.
@@ -31,27 +32,15 @@ object MoveAccountRequest {
   }
   
   @scala.inline
-  implicit class MoveAccountRequestOps[Self <: MoveAccountRequest] (val x: Self) extends AnyVal {
+  implicit class MoveAccountRequestMutableBuilder[Self <: MoveAccountRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationParentId(value: ParentId): Self = StObject.set(x, "DestinationParentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestinationParentId(value: ParentId): Self = this.set("DestinationParentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceParentId(value: ParentId): Self = this.set("SourceParentId", value.asInstanceOf[js.Any])
+    def setSourceParentId(value: ParentId): Self = StObject.set(x, "SourceParentId", value.asInstanceOf[js.Any])
   }
 }

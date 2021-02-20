@@ -1,12 +1,13 @@
 package typings.nextServer.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AmpBindInitData extends js.Object {
+trait AmpBindInitData extends StObject {
   
   var ampBindInitData: Boolean = js.native
   
@@ -45,57 +46,45 @@ object AmpBindInitData {
   }
   
   @scala.inline
-  implicit class AmpBindInitDataOps[Self <: AmpBindInitData] (val x: Self) extends AnyVal {
+  implicit class AmpBindInitDataMutableBuilder[Self <: AmpBindInitData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmpBindInitData(value: Boolean): Self = StObject.set(x, "ampBindInitData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
     
     @scala.inline
-    def setAmpBindInitData(value: Boolean): Self = this.set("ampBindInitData", value.asInstanceOf[js.Any])
+    def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildId(value: String): Self = this.set("buildId", value.asInstanceOf[js.Any])
+    def setCanonicalBase(value: String): Self = StObject.set(x, "canonicalBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanonicalBase(value: String): Self = this.set("canonicalBase", value.asInstanceOf[js.Any])
+    def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentMiddlewareEnabled(value: Boolean): Self = this.set("documentMiddlewareEnabled", value.asInstanceOf[js.Any])
+    def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
     
     @scala.inline
-    def setGenerateEtags(value: Boolean): Self = this.set("generateEtags", value.asInstanceOf[js.Any])
+    def setDocumentMiddlewareEnabled(value: Boolean): Self = StObject.set(x, "documentMiddlewareEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoweredByHeader(value: Boolean): Self = this.set("poweredByHeader", value.asInstanceOf[js.Any])
+    def setGenerateEtags(value: Boolean): Self = StObject.set(x, "generateEtags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticMarkup(value: Boolean): Self = this.set("staticMarkup", value.asInstanceOf[js.Any])
+    def setPoweredByHeader(value: Boolean): Self = StObject.set(x, "poweredByHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetPrefix(value: String): Self = this.set("assetPrefix", value.asInstanceOf[js.Any])
+    def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetPrefix: Self = this.set("assetPrefix", js.undefined)
+    def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
     
     @scala.inline
-    def setDev(value: Boolean): Self = this.set("dev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDev: Self = this.set("dev", js.undefined)
-    
-    @scala.inline
-    def setRuntimeConfig(value: StringDictionary[js.Any]): Self = this.set("runtimeConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntimeConfig: Self = this.set("runtimeConfig", js.undefined)
+    def setStaticMarkup(value: Boolean): Self = StObject.set(x, "staticMarkup", value.asInstanceOf[js.Any])
   }
 }

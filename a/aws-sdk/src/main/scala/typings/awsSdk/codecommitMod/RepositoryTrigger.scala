@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepositoryTrigger extends js.Object {
+trait RepositoryTrigger extends StObject {
   
   /**
     * The branches to be included in the trigger configuration. If you specify an empty array, the trigger applies to all branches.  Although no content is required in the array, you must include the array itself. 
@@ -41,45 +42,33 @@ object RepositoryTrigger {
   }
   
   @scala.inline
-  implicit class RepositoryTriggerOps[Self <: RepositoryTrigger] (val x: Self) extends AnyVal {
+  implicit class RepositoryTriggerMutableBuilder[Self <: RepositoryTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranches(value: BranchNameList): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranchesVarargs(value: BranchName*): Self = StObject.set(x, "branches", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationArn(value: Arn): Self = this.set("destinationArn", value.asInstanceOf[js.Any])
+    def setCustomData(value: RepositoryTriggerCustomData): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsVarargs(value: RepositoryTriggerEventEnum*): Self = this.set("events", js.Array(value :_*))
+    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
     @scala.inline
-    def setEvents(value: RepositoryTriggerEventList): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setDestinationArn(value: Arn): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: RepositoryTriggerName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEvents(value: RepositoryTriggerEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchesVarargs(value: BranchName*): Self = this.set("branches", js.Array(value :_*))
+    def setEventsVarargs(value: RepositoryTriggerEventEnum*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setBranches(value: BranchNameList): Self = this.set("branches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBranches: Self = this.set("branches", js.undefined)
-    
-    @scala.inline
-    def setCustomData(value: RepositoryTriggerCustomData): Self = this.set("customData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomData: Self = this.set("customData", js.undefined)
+    def setName(value: RepositoryTriggerName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

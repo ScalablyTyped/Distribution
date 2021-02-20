@@ -1,12 +1,13 @@
 package typings.chromecastCafSender.cast.framework
 
 import typings.chrome.chrome.cast.media.PlayerState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavedPlayerState extends js.Object {
+trait SavedPlayerState extends StObject {
   
   var currentTime: Double = js.native
   
@@ -23,30 +24,18 @@ object SavedPlayerState {
   }
   
   @scala.inline
-  implicit class SavedPlayerStateOps[Self <: SavedPlayerState] (val x: Self) extends AnyVal {
+  implicit class SavedPlayerStateMutableBuilder[Self <: SavedPlayerState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaInfo(value: PlayerState): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPaused(value: Boolean): Self = this.set("isPaused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaInfo(value: PlayerState): Self = this.set("mediaInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaInfoNull: Self = this.set("mediaInfo", null)
+    def setMediaInfoNull: Self = StObject.set(x, "mediaInfo", null)
   }
 }

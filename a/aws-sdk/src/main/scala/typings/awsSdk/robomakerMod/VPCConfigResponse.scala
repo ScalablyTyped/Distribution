@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VPCConfigResponse extends js.Object {
+trait VPCConfigResponse extends StObject {
   
   /**
     * A boolean indicating if a public IP was assigned.
@@ -36,48 +37,36 @@ object VPCConfigResponse {
   }
   
   @scala.inline
-  implicit class VPCConfigResponseOps[Self <: VPCConfigResponse] (val x: Self) extends AnyVal {
+  implicit class VPCConfigResponseMutableBuilder[Self <: VPCConfigResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignPublicIp(value: Boolean): Self = StObject.set(x, "assignPublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignPublicIpUndefined: Self = StObject.set(x, "assignPublicIp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignPublicIp(value: Boolean): Self = this.set("assignPublicIp", value.asInstanceOf[js.Any])
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
     
     @scala.inline
-    def deleteAssignPublicIp: Self = this.set("assignPublicIp", js.undefined)
+    def setSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupsVarargs(value: NonEmptyString*): Self = this.set("securityGroups", js.Array(value :_*))
+    def setSubnets(value: Subnets): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
+    def setSubnetsVarargs(value: NonEmptyString*): Self = StObject.set(x, "subnets", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetsVarargs(value: NonEmptyString*): Self = this.set("subnets", js.Array(value :_*))
+    def setVpcId(value: GenericString): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnets(value: Subnets): Self = this.set("subnets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnets: Self = this.set("subnets", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: GenericString): Self = this.set("vpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
   }
 }

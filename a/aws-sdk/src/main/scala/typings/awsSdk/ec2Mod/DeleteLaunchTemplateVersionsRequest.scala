@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteLaunchTemplateVersionsRequest extends js.Object {
+trait DeleteLaunchTemplateVersionsRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -36,42 +37,30 @@ object DeleteLaunchTemplateVersionsRequest {
   }
   
   @scala.inline
-  implicit class DeleteLaunchTemplateVersionsRequestOps[Self <: DeleteLaunchTemplateVersionsRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteLaunchTemplateVersionsRequestMutableBuilder[Self <: DeleteLaunchTemplateVersionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchTemplateId(value: LaunchTemplateId): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionsVarargs(value: String*): Self = this.set("Versions", js.Array(value :_*))
+    def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
     
     @scala.inline
-    def setVersions(value: VersionStringList): Self = this.set("Versions", value.asInstanceOf[js.Any])
+    def setLaunchTemplateName(value: LaunchTemplateName): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setVersions(value: VersionStringList): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplateId(value: LaunchTemplateId): Self = this.set("LaunchTemplateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchTemplateId: Self = this.set("LaunchTemplateId", js.undefined)
-    
-    @scala.inline
-    def setLaunchTemplateName(value: LaunchTemplateName): Self = this.set("LaunchTemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchTemplateName: Self = this.set("LaunchTemplateName", js.undefined)
+    def setVersionsVarargs(value: String*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

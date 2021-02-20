@@ -1,42 +1,22 @@
 package typings.samchon
 
 import typings.samchon.ientityMod.IEntity
-import typings.std.Iterator
 import typings.sxml.mod.XML
-import typings.tstl.iforwarditeratorMod.IForwardIterator
-import typings.tstl.mod.base.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/protocol/entity/IEntityGroup", JSImport.Namespace)
-@js.native
-object ientitygroupMod extends js.Object {
+object ientitygroupMod {
   
-  @js.native
-  trait IEntityGroup[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */]
-    extends typings.tstl.containerContainerMod.Container[T, SourceT, IteratorT, ReverseT, T]
-       with IEntity {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> * / any */ @js.native
+  trait IEntityGroup[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] extends IEntity {
     
     /**
       * A tag name of children objects.
       */
     def CHILD_TAG(): String = js.native
-    
-    /**
-      * Range Assigner.
-      *
-      * @param first Input iteartor of the first position.
-      * @param last Input iterator of the last position.
-      */
-    /* InferMemberOverrides */
-    override def assign[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
-    
-    /**
-      * @inheritDoc
-      */
-    /* InferMemberOverrides */
-    override def clear(): Unit = js.native
     
     /**
       * Count elements with a specific key.
@@ -59,24 +39,6 @@ object ientitygroupMod extends js.Object {
       * @return A new child Entity belongs to EntityArray.
       */
     def createChild(xml: XML): T = js.native
-    
-    /**
-      * Erase elements in range.
-      *
-      * @param first Range of the first position to erase.
-      * @param last Rangee of the last position to erase.
-      * @return Iterator following the last removed element, strained by the erasing.
-      */
-    /* InferMemberOverrides */
-    override def erase(first: IteratorT, last: IteratorT): IteratorT = js.native
-    /**
-      * Erase an element.
-      *
-      * @param pos Position to erase.
-      * @return Iterator following the *pos*, strained by the erasing.
-      */
-    /* InferMemberOverrides */
-    override def erase(pos: IteratorT): IteratorT = js.native
     
     /**
       * Get an element
@@ -117,40 +79,68 @@ object ientitygroupMod extends js.Object {
       * @return Whether the map has an item having the specified identifier.
       */
     def has(key: js.Any): Boolean = js.native
-    
-    /**
-      * Swap elements.
-      *
-      * @param obj Target container to swap.
-      */
-    /* InferMemberOverrides */
-    override def swap(obj: SourceT): Unit = js.native
-    
-    /**
-      * Native function for `JSON.stringify()`.
-      *
-      * @return An array containing children elements.
-      */
-    /* InferMemberOverrides */
-    override def toJSON(): js.Array[T] = js.native
   }
-  @js.native
-  object IEntityGroup extends js.Object {
+  object IEntityGroup {
+    
+    @scala.inline
+    def apply[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](
+      CHILD_TAG: () => String,
+      TAG: () => String,
+      construct: XML => Unit,
+      count: js.Any => Double,
+      createChild: XML => T,
+      get: js.Any => T,
+      has: js.Any => Boolean,
+      key: () => js.Any,
+      toXML: () => XML
+    ): IEntityGroup[T, SourceT, IteratorT, ReverseT] = {
+      val __obj = js.Dynamic.literal(CHILD_TAG = js.Any.fromFunction0(CHILD_TAG), TAG = js.Any.fromFunction0(TAG), construct = js.Any.fromFunction1(construct), count = js.Any.fromFunction1(count), createChild = js.Any.fromFunction1(createChild), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), key = js.Any.fromFunction0(key), toXML = js.Any.fromFunction0(toXML))
+      __obj.asInstanceOf[IEntityGroup[T, SourceT, IteratorT, ReverseT]]
+    }
     
     /**
       * @hidden
       */
-    def construct[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], xml: XML, prohibited_names: String*): Unit = js.native
+    @JSImport("samchon/protocol/entity/IEntityGroup", "IEntityGroup.construct")
+    @js.native
+    def construct[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], xml: XML, prohibited_names: String*): Unit = js.native
     
-    def count[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], key: js.Any): Double = js.native
+    @JSImport("samchon/protocol/entity/IEntityGroup", "IEntityGroup.count")
+    @js.native
+    def count[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], key: js.Any): Double = js.native
     
-    def get[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], key: js.Any): T = js.native
+    @JSImport("samchon/protocol/entity/IEntityGroup", "IEntityGroup.get")
+    @js.native
+    def get[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], key: js.Any): T = js.native
     
-    def has[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], key: js.Any): Boolean = js.native
+    @JSImport("samchon/protocol/entity/IEntityGroup", "IEntityGroup.has")
+    @js.native
+    def has[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](entityGroup: IEntityGroup[T, SourceT, IteratorT, ReverseT], key: js.Any): Boolean = js.native
     
     /**
       * @hidden
       */
-    def toXML[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](group: IEntityGroup[T, SourceT, IteratorT, ReverseT], prohibited_names: String*): XML = js.native
+    @JSImport("samchon/protocol/entity/IEntityGroup", "IEntityGroup.toXML")
+    @js.native
+    def toXML[T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](group: IEntityGroup[T, SourceT, IteratorT, ReverseT], prohibited_names: String*): XML = js.native
+    
+    @scala.inline
+    implicit class IEntityGroupMutableBuilder[Self <: IEntityGroup[_, _, _, _], T /* <: IEntity */, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Container<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] (val x: Self with (IEntityGroup[T, SourceT, IteratorT, ReverseT])) extends AnyVal {
+      
+      @scala.inline
+      def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setCount(value: js.Any => Double): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setCreateChild(value: XML => T): Self = StObject.set(x, "createChild", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGet(value: js.Any => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    }
   }
 }

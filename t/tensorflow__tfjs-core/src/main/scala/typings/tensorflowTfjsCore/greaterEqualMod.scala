@@ -3,20 +3,23 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/greater_equal", JSImport.Namespace)
-@js.native
-object greaterEqualMod extends js.Object {
+object greaterEqualMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/greater_equal", "greaterEqual")
   @js.native
-  object greaterEqual extends js.Object {
-    
-    def apply[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-    def apply[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-    def apply[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-    def apply[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
-  }
+  def greaterEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/greater_equal", "greaterEqual")
+  @js.native
+  def greaterEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/greater_equal", "greaterEqual")
+  @js.native
+  def greaterEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/greater_equal", "greaterEqual")
+  @js.native
+  def greaterEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
 }

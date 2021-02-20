@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShareOptions extends js.Object {
+trait ShareOptions extends StObject {
   
   var dialogTitle: js.UndefOr[String] = js.native
   
@@ -24,45 +25,33 @@ object ShareOptions {
   }
   
   @scala.inline
-  implicit class ShareOptionsOps[Self <: ShareOptions] (val x: Self) extends AnyVal {
+  implicit class ShareOptionsMutableBuilder[Self <: ShareOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDialogTitleUndefined: Self = StObject.set(x, "dialogTitle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedActivityTypes(value: js.Array[String]): Self = StObject.set(x, "excludedActivityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogTitle(value: String): Self = this.set("dialogTitle", value.asInstanceOf[js.Any])
+    def setExcludedActivityTypesUndefined: Self = StObject.set(x, "excludedActivityTypes", js.undefined)
     
     @scala.inline
-    def deleteDialogTitle: Self = this.set("dialogTitle", js.undefined)
+    def setExcludedActivityTypesVarargs(value: String*): Self = StObject.set(x, "excludedActivityTypes", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedActivityTypesVarargs(value: String*): Self = this.set("excludedActivityTypes", js.Array(value :_*))
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedActivityTypes(value: js.Array[String]): Self = this.set("excludedActivityTypes", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteExcludedActivityTypes: Self = this.set("excludedActivityTypes", js.undefined)
+    def setTintColor(value: ColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setTintColor(value: ColorValue): Self = this.set("tintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
   }
 }

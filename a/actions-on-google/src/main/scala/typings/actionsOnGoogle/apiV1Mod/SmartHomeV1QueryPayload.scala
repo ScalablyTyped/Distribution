@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.apiV1Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartHomeV1QueryPayload extends js.Object {
+trait SmartHomeV1QueryPayload extends StObject {
   
   var devices: ApiClientObjectMap[_] = js.native
 }
@@ -19,21 +20,9 @@ object SmartHomeV1QueryPayload {
   }
   
   @scala.inline
-  implicit class SmartHomeV1QueryPayloadOps[Self <: SmartHomeV1QueryPayload] (val x: Self) extends AnyVal {
+  implicit class SmartHomeV1QueryPayloadMutableBuilder[Self <: SmartHomeV1QueryPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDevices(value: ApiClientObjectMap[_]): Self = this.set("devices", value.asInstanceOf[js.Any])
+    def setDevices(value: ApiClientObjectMap[_]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
   }
 }

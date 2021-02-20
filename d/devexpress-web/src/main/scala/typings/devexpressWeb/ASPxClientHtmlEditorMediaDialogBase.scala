@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,33 +62,21 @@ object ASPxClientHtmlEditorMediaDialogBase {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorMediaDialogBaseOps[Self <: ASPxClientHtmlEditorMediaDialogBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorMediaDialogBaseMutableBuilder[Self <: ASPxClientHtmlEditorMediaDialogBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHeightSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetHeightSpinEdit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMediaFileSelector(value: () => ASPxClientMediaFileSelector): Self = StObject.set(x, "GetMediaFileSelector", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMoreOptionsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetMoreOptionsCheckBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeightSpinEdit(value: () => ASPxClientSpinEdit): Self = this.set("GetHeightSpinEdit", js.Any.fromFunction0(value))
+    def setGetPositionComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetPositionComboBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMediaFileSelector(value: () => ASPxClientMediaFileSelector): Self = this.set("GetMediaFileSelector", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMoreOptionsCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetMoreOptionsCheckBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPositionComboBox(value: () => ASPxClientComboBox): Self = this.set("GetPositionComboBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWidthSpinEdit(value: () => ASPxClientSpinEdit): Self = this.set("GetWidthSpinEdit", js.Any.fromFunction0(value))
+    def setGetWidthSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetWidthSpinEdit", js.Any.fromFunction0(value))
   }
 }

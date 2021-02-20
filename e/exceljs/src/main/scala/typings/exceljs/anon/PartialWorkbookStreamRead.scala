@@ -3,13 +3,14 @@ package typings.exceljs.anon
 import typings.exceljs.exceljsStrings.cache
 import typings.exceljs.exceljsStrings.emit
 import typings.exceljs.exceljsStrings.ignore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.stream.xlsx.WorkbookStreamReaderOptions> */
 @js.native
-trait PartialWorkbookStreamRead extends js.Object {
+trait PartialWorkbookStreamRead extends StObject {
   
   var entries: js.UndefOr[emit | ignore] = js.native
   
@@ -30,48 +31,36 @@ object PartialWorkbookStreamRead {
   }
   
   @scala.inline
-  implicit class PartialWorkbookStreamReadOps[Self <: PartialWorkbookStreamRead] (val x: Self) extends AnyVal {
+  implicit class PartialWorkbookStreamReadMutableBuilder[Self <: PartialWorkbookStreamRead] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: emit | ignore): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHyperlinks(value: cache | emit | ignore): Self = StObject.set(x, "hyperlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: emit | ignore): Self = this.set("entries", value.asInstanceOf[js.Any])
+    def setHyperlinksUndefined: Self = StObject.set(x, "hyperlinks", js.undefined)
     
     @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
+    def setSharedStrings(value: cache | emit | ignore): Self = StObject.set(x, "sharedStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlinks(value: cache | emit | ignore): Self = this.set("hyperlinks", value.asInstanceOf[js.Any])
+    def setSharedStringsUndefined: Self = StObject.set(x, "sharedStrings", js.undefined)
     
     @scala.inline
-    def deleteHyperlinks: Self = this.set("hyperlinks", js.undefined)
+    def setStyles(value: cache | ignore): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedStrings(value: cache | emit | ignore): Self = this.set("sharedStrings", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteSharedStrings: Self = this.set("sharedStrings", js.undefined)
+    def setWorksheets(value: emit | ignore): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: cache | ignore): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
-    
-    @scala.inline
-    def setWorksheets(value: emit | ignore): Self = this.set("worksheets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorksheets: Self = this.set("worksheets", js.undefined)
+    def setWorksheetsUndefined: Self = StObject.set(x, "worksheets", js.undefined)
   }
 }

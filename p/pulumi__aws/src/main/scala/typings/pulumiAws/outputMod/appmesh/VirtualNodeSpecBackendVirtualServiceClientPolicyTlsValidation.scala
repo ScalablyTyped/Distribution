@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation extends js.Object {
+trait VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation extends StObject {
   
   /**
     * The TLS validation context trust.
@@ -21,21 +22,9 @@ object VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation {
   }
   
   @scala.inline
-  implicit class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOps[Self <: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation] (val x: Self) extends AnyVal {
+  implicit class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationMutableBuilder[Self <: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTrust(value: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust): Self = this.set("trust", value.asInstanceOf[js.Any])
+    def setTrust(value: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
   }
 }

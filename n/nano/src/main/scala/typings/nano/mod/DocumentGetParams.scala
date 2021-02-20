@@ -1,12 +1,13 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/document/common.html#get--db-docid
 @js.native
-trait DocumentGetParams extends js.Object {
+trait DocumentGetParams extends StObject {
   
   // Includes encoding information in attachment stubs if the particular attachment is compressed. Default is
   // false.
@@ -55,96 +56,84 @@ object DocumentGetParams {
   }
   
   @scala.inline
-  implicit class DocumentGetParamsOps[Self <: DocumentGetParams] (val x: Self) extends AnyVal {
+  implicit class DocumentGetParamsMutableBuilder[Self <: DocumentGetParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtt_encoding_info(value: Boolean): Self = StObject.set(x, "att_encoding_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtt_encoding_infoUndefined: Self = StObject.set(x, "att_encoding_info", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtt_encoding_info(value: Boolean): Self = this.set("att_encoding_info", value.asInstanceOf[js.Any])
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def deleteAtt_encoding_info: Self = this.set("att_encoding_info", js.undefined)
+    def setAtts_since(value: js.Array[_]): Self = StObject.set(x, "atts_since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: Boolean): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setAtts_sinceUndefined: Self = StObject.set(x, "atts_since", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setAtts_sinceVarargs(value: js.Any*): Self = StObject.set(x, "atts_since", js.Array(value :_*))
     
     @scala.inline
-    def setAtts_sinceVarargs(value: js.Any*): Self = this.set("atts_since", js.Array(value :_*))
+    def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtts_since(value: js.Array[_]): Self = this.set("atts_since", value.asInstanceOf[js.Any])
+    def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
     
     @scala.inline
-    def deleteAtts_since: Self = this.set("atts_since", js.undefined)
+    def setDeleted_conflicts(value: Boolean): Self = StObject.set(x, "deleted_conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflicts(value: Boolean): Self = this.set("conflicts", value.asInstanceOf[js.Any])
+    def setDeleted_conflictsUndefined: Self = StObject.set(x, "deleted_conflicts", js.undefined)
     
     @scala.inline
-    def deleteConflicts: Self = this.set("conflicts", js.undefined)
+    def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted_conflicts(value: Boolean): Self = this.set("deleted_conflicts", value.asInstanceOf[js.Any])
+    def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
     
     @scala.inline
-    def deleteDeleted_conflicts: Self = this.set("deleted_conflicts", js.undefined)
+    def setLocal_seq(value: Boolean): Self = StObject.set(x, "local_seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatest(value: Boolean): Self = this.set("latest", value.asInstanceOf[js.Any])
+    def setLocal_seqUndefined: Self = StObject.set(x, "local_seq", js.undefined)
     
     @scala.inline
-    def deleteLatest: Self = this.set("latest", js.undefined)
+    def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal_seq(value: Boolean): Self = this.set("local_seq", value.asInstanceOf[js.Any])
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def deleteLocal_seq: Self = this.set("local_seq", js.undefined)
+    def setOpen_revs(value: js.Array[_]): Self = StObject.set(x, "open_revs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: Boolean): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setOpen_revsUndefined: Self = StObject.set(x, "open_revs", js.undefined)
     
     @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def setOpen_revsVarargs(value: js.Any*): Self = StObject.set(x, "open_revs", js.Array(value :_*))
     
     @scala.inline
-    def setOpen_revsVarargs(value: js.Any*): Self = this.set("open_revs", js.Array(value :_*))
+    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen_revs(value: js.Array[_]): Self = this.set("open_revs", value.asInstanceOf[js.Any])
+    def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     @scala.inline
-    def deleteOpen_revs: Self = this.set("open_revs", js.undefined)
+    def setRevs(value: Boolean): Self = StObject.set(x, "revs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRev(value: String): Self = this.set("rev", value.asInstanceOf[js.Any])
+    def setRevsUndefined: Self = StObject.set(x, "revs", js.undefined)
     
     @scala.inline
-    def deleteRev: Self = this.set("rev", js.undefined)
+    def setRevs_info(value: Boolean): Self = StObject.set(x, "revs_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevs(value: Boolean): Self = this.set("revs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevs: Self = this.set("revs", js.undefined)
-    
-    @scala.inline
-    def setRevs_info(value: Boolean): Self = this.set("revs_info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevs_info: Self = this.set("revs_info", js.undefined)
+    def setRevs_infoUndefined: Self = StObject.set(x, "revs_info", js.undefined)
   }
 }

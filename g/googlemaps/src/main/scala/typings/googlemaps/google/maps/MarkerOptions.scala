@@ -1,6 +1,7 @@
 package typings.googlemaps.google.maps
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#MarkerOptions Maps JavaScript API}
   */
 @js.native
-trait MarkerOptions extends js.Object {
+trait MarkerOptions extends StObject {
   
   /**
     * The offset from the marker's position to the tip of an InfoWindow that
@@ -138,114 +139,102 @@ object MarkerOptions {
   }
   
   @scala.inline
-  implicit class MarkerOptionsOps[Self <: MarkerOptions] (val x: Self) extends AnyVal {
+  implicit class MarkerOptionsMutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorPoint(value: Point): Self = StObject.set(x, "anchorPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorPointUndefined: Self = StObject.set(x, "anchorPoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorPoint(value: Point): Self = this.set("anchorPoint", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAnchorPoint: Self = this.set("anchorPoint", js.undefined)
+    def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Animation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setCrossOnDrag(value: Boolean): Self = StObject.set(x, "crossOnDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickable(value: Boolean): Self = this.set("clickable", value.asInstanceOf[js.Any])
+    def setCrossOnDragUndefined: Self = StObject.set(x, "crossOnDrag", js.undefined)
     
     @scala.inline
-    def deleteClickable: Self = this.set("clickable", js.undefined)
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOnDrag(value: Boolean): Self = this.set("crossOnDrag", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteCrossOnDrag: Self = this.set("crossOnDrag", js.undefined)
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setIcon(value: String | Icon | Symbol): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setLabel(value: String | MarkerLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String | Icon | Symbol): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setMap(value: Map[Element] | StreetViewPanorama): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String | MarkerLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: Map[Element] | StreetViewPanorama): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setOptimized(value: Boolean): Self = StObject.set(x, "optimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setOptimizedUndefined: Self = StObject.set(x, "optimized", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setPosition(value: LatLng | LatLngLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimized(value: Boolean): Self = this.set("optimized", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOptimized: Self = this.set("optimized", js.undefined)
+    def setShape(value: MarkerShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: LatLng | LatLngLiteral): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: MarkerShape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

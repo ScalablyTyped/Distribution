@@ -3,16 +3,18 @@ package typings.materialNotchedOutline
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialNotchedOutline.foundationMod.MDCNotchedOutlineFoundation
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/notched-outline/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/notched-outline/component", "MDCNotchedOutline")
   @js.native
-  class MDCNotchedOutline () extends MDCComponent[MDCNotchedOutlineFoundation] {
+  class MDCNotchedOutline protected () extends MDCComponent[MDCNotchedOutlineFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCNotchedOutlineFoundation, args: js.Any*) = this()
     
     /**
       * Updates classes and styles to close the notch.
@@ -26,9 +28,10 @@ object componentMod extends js.Object {
     def notch(notchWidth: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCNotchedOutline extends js.Object {
+  object MDCNotchedOutline {
     
+    @JSImport("@material/notched-outline/component", "MDCNotchedOutline.attachTo")
+    @js.native
     def attachTo(root: Element): MDCNotchedOutline = js.native
   }
   

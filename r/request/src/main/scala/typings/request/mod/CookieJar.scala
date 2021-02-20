@@ -2,12 +2,13 @@ package typings.request.mod
 
 import typings.node.urlMod.Url
 import typings.toughCookie.mod.CookieJar.SetCookieOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CookieJar extends js.Object {
+trait CookieJar extends StObject {
   
   def getCookieString(uri: String): String = js.native
   def getCookieString(uri: Url): String = js.native

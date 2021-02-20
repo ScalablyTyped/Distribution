@@ -1,5 +1,6 @@
 package typings.saslPlain
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("sasl-plain", JSImport.Namespace)
 @js.native
-object saslPlainRequire extends js.Object
+object saslPlainRequire extends StObject

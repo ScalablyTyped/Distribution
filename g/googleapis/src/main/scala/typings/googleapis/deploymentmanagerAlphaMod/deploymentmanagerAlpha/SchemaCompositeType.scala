@@ -1,5 +1,6 @@
 package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Holds the composite type.
   */
 @js.native
-trait SchemaCompositeType extends js.Object {
+trait SchemaCompositeType extends StObject {
   
   /**
     * An optional textual description of the resource; provided by the client
@@ -66,75 +67,63 @@ object SchemaCompositeType {
   }
   
   @scala.inline
-  implicit class SchemaCompositeTypeOps[Self <: SchemaCompositeType] (val x: Self) extends AnyVal {
+  implicit class SchemaCompositeTypeMutableBuilder[Self <: SchemaCompositeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabels(value: js.Array[SchemaCompositeTypeLabelEntry]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertTime(value: String): Self = this.set("insertTime", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteInsertTime: Self = this.set("insertTime", js.undefined)
+    def setLabelsVarargs(value: SchemaCompositeTypeLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: SchemaCompositeTypeLabelEntry*): Self = this.set("labels", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[SchemaCompositeTypeLabelEntry]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: SchemaOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setTemplateContents(value: SchemaTemplateContents): Self = StObject.set(x, "templateContents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTemplateContents(value: SchemaTemplateContents): Self = this.set("templateContents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateContents: Self = this.set("templateContents", js.undefined)
+    def setTemplateContentsUndefined: Self = StObject.set(x, "templateContents", js.undefined)
   }
 }

@@ -1,23 +1,34 @@
 package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.Align
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/flex", JSImport.Namespace)
-@js.native
-object flexMod extends js.Object {
+object flexMod {
   
+  @JSImport("@ant-design/react-native/lib/flex", JSImport.Default)
   @js.native
   class default ()
     extends typings.antDesignReactNative.flexFlexMod.default
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var Item: js.Any = js.native
+    @JSImport("@ant-design/react-native/lib/flex", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var defaultProps: Align = js.native
+    @JSImport("@ant-design/react-native/lib/flex", "default.Item")
+    @js.native
+    def Item: js.Any = js.native
+    @scala.inline
+    def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/react-native/lib/flex", "default.defaultProps")
+    @js.native
+    def defaultProps: Align = js.native
+    @scala.inline
+    def defaultProps_=(x: Align): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestLaunchTemplateData extends js.Object {
+trait RequestLaunchTemplateData extends StObject {
   
   /**
     * The block device mapping.
@@ -151,204 +152,192 @@ object RequestLaunchTemplateData {
   }
   
   @scala.inline
-  implicit class RequestLaunchTemplateDataOps[Self <: RequestLaunchTemplateData] (val x: Self) extends AnyVal {
+  implicit class RequestLaunchTemplateDataMutableBuilder[Self <: RequestLaunchTemplateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockDeviceMappings(value: LaunchTemplateBlockDeviceMappingRequestList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockDeviceMappingsVarargs(value: LaunchTemplateBlockDeviceMappingRequest*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
     
     @scala.inline
-    def setBlockDeviceMappingsVarargs(value: LaunchTemplateBlockDeviceMappingRequest*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    def setCapacityReservationSpecification(value: LaunchTemplateCapacityReservationSpecificationRequest): Self = StObject.set(x, "CapacityReservationSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDeviceMappings(value: LaunchTemplateBlockDeviceMappingRequestList): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    def setCapacityReservationSpecificationUndefined: Self = StObject.set(x, "CapacityReservationSpecification", js.undefined)
     
     @scala.inline
-    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    def setCpuOptions(value: LaunchTemplateCpuOptionsRequest): Self = StObject.set(x, "CpuOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityReservationSpecification(value: LaunchTemplateCapacityReservationSpecificationRequest): Self = this.set("CapacityReservationSpecification", value.asInstanceOf[js.Any])
+    def setCpuOptionsUndefined: Self = StObject.set(x, "CpuOptions", js.undefined)
     
     @scala.inline
-    def deleteCapacityReservationSpecification: Self = this.set("CapacityReservationSpecification", js.undefined)
+    def setCreditSpecification(value: CreditSpecificationRequest): Self = StObject.set(x, "CreditSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuOptions(value: LaunchTemplateCpuOptionsRequest): Self = this.set("CpuOptions", value.asInstanceOf[js.Any])
+    def setCreditSpecificationUndefined: Self = StObject.set(x, "CreditSpecification", js.undefined)
     
     @scala.inline
-    def deleteCpuOptions: Self = this.set("CpuOptions", js.undefined)
+    def setDisableApiTermination(value: Boolean): Self = StObject.set(x, "DisableApiTermination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditSpecification(value: CreditSpecificationRequest): Self = this.set("CreditSpecification", value.asInstanceOf[js.Any])
+    def setDisableApiTerminationUndefined: Self = StObject.set(x, "DisableApiTermination", js.undefined)
     
     @scala.inline
-    def deleteCreditSpecification: Self = this.set("CreditSpecification", js.undefined)
+    def setEbsOptimized(value: Boolean): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableApiTermination(value: Boolean): Self = this.set("DisableApiTermination", value.asInstanceOf[js.Any])
+    def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
     
     @scala.inline
-    def deleteDisableApiTermination: Self = this.set("DisableApiTermination", js.undefined)
+    def setElasticGpuSpecifications(value: ElasticGpuSpecificationList): Self = StObject.set(x, "ElasticGpuSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsOptimized(value: Boolean): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    def setElasticGpuSpecificationsUndefined: Self = StObject.set(x, "ElasticGpuSpecifications", js.undefined)
     
     @scala.inline
-    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    def setElasticGpuSpecificationsVarargs(value: ElasticGpuSpecification*): Self = StObject.set(x, "ElasticGpuSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setElasticGpuSpecificationsVarargs(value: ElasticGpuSpecification*): Self = this.set("ElasticGpuSpecifications", js.Array(value :_*))
+    def setElasticInferenceAccelerators(value: LaunchTemplateElasticInferenceAcceleratorList): Self = StObject.set(x, "ElasticInferenceAccelerators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticGpuSpecifications(value: ElasticGpuSpecificationList): Self = this.set("ElasticGpuSpecifications", value.asInstanceOf[js.Any])
+    def setElasticInferenceAcceleratorsUndefined: Self = StObject.set(x, "ElasticInferenceAccelerators", js.undefined)
     
     @scala.inline
-    def deleteElasticGpuSpecifications: Self = this.set("ElasticGpuSpecifications", js.undefined)
+    def setElasticInferenceAcceleratorsVarargs(value: LaunchTemplateElasticInferenceAccelerator*): Self = StObject.set(x, "ElasticInferenceAccelerators", js.Array(value :_*))
     
     @scala.inline
-    def setElasticInferenceAcceleratorsVarargs(value: LaunchTemplateElasticInferenceAccelerator*): Self = this.set("ElasticInferenceAccelerators", js.Array(value :_*))
+    def setEnclaveOptions(value: LaunchTemplateEnclaveOptionsRequest): Self = StObject.set(x, "EnclaveOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticInferenceAccelerators(value: LaunchTemplateElasticInferenceAcceleratorList): Self = this.set("ElasticInferenceAccelerators", value.asInstanceOf[js.Any])
+    def setEnclaveOptionsUndefined: Self = StObject.set(x, "EnclaveOptions", js.undefined)
     
     @scala.inline
-    def deleteElasticInferenceAccelerators: Self = this.set("ElasticInferenceAccelerators", js.undefined)
+    def setHibernationOptions(value: LaunchTemplateHibernationOptionsRequest): Self = StObject.set(x, "HibernationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnclaveOptions(value: LaunchTemplateEnclaveOptionsRequest): Self = this.set("EnclaveOptions", value.asInstanceOf[js.Any])
+    def setHibernationOptionsUndefined: Self = StObject.set(x, "HibernationOptions", js.undefined)
     
     @scala.inline
-    def deleteEnclaveOptions: Self = this.set("EnclaveOptions", js.undefined)
+    def setIamInstanceProfile(value: LaunchTemplateIamInstanceProfileSpecificationRequest): Self = StObject.set(x, "IamInstanceProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHibernationOptions(value: LaunchTemplateHibernationOptionsRequest): Self = this.set("HibernationOptions", value.asInstanceOf[js.Any])
+    def setIamInstanceProfileUndefined: Self = StObject.set(x, "IamInstanceProfile", js.undefined)
     
     @scala.inline
-    def deleteHibernationOptions: Self = this.set("HibernationOptions", js.undefined)
+    def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamInstanceProfile(value: LaunchTemplateIamInstanceProfileSpecificationRequest): Self = this.set("IamInstanceProfile", value.asInstanceOf[js.Any])
+    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
     @scala.inline
-    def deleteIamInstanceProfile: Self = this.set("IamInstanceProfile", js.undefined)
+    def setInstanceInitiatedShutdownBehavior(value: ShutdownBehavior): Self = StObject.set(x, "InstanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageId(value: ImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    def setInstanceInitiatedShutdownBehaviorUndefined: Self = StObject.set(x, "InstanceInitiatedShutdownBehavior", js.undefined)
     
     @scala.inline
-    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    def setInstanceMarketOptions(value: LaunchTemplateInstanceMarketOptionsRequest): Self = StObject.set(x, "InstanceMarketOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceInitiatedShutdownBehavior(value: ShutdownBehavior): Self = this.set("InstanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
+    def setInstanceMarketOptionsUndefined: Self = StObject.set(x, "InstanceMarketOptions", js.undefined)
     
     @scala.inline
-    def deleteInstanceInitiatedShutdownBehavior: Self = this.set("InstanceInitiatedShutdownBehavior", js.undefined)
+    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceMarketOptions(value: LaunchTemplateInstanceMarketOptionsRequest): Self = this.set("InstanceMarketOptions", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteInstanceMarketOptions: Self = this.set("InstanceMarketOptions", js.undefined)
+    def setKernelId(value: KernelId): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setKeyName(value: KeyPairName): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelId(value: KernelId): Self = this.set("KernelId", value.asInstanceOf[js.Any])
+    def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
     
     @scala.inline
-    def deleteKernelId: Self = this.set("KernelId", js.undefined)
+    def setLicenseSpecifications(value: LaunchTemplateLicenseSpecificationListRequest): Self = StObject.set(x, "LicenseSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyName(value: KeyPairName): Self = this.set("KeyName", value.asInstanceOf[js.Any])
+    def setLicenseSpecificationsUndefined: Self = StObject.set(x, "LicenseSpecifications", js.undefined)
     
     @scala.inline
-    def deleteKeyName: Self = this.set("KeyName", js.undefined)
+    def setLicenseSpecificationsVarargs(value: LaunchTemplateLicenseConfigurationRequest*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setLicenseSpecificationsVarargs(value: LaunchTemplateLicenseConfigurationRequest*): Self = this.set("LicenseSpecifications", js.Array(value :_*))
+    def setMetadataOptions(value: LaunchTemplateInstanceMetadataOptionsRequest): Self = StObject.set(x, "MetadataOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseSpecifications(value: LaunchTemplateLicenseSpecificationListRequest): Self = this.set("LicenseSpecifications", value.asInstanceOf[js.Any])
+    def setMetadataOptionsUndefined: Self = StObject.set(x, "MetadataOptions", js.undefined)
     
     @scala.inline
-    def deleteLicenseSpecifications: Self = this.set("LicenseSpecifications", js.undefined)
+    def setMonitoring(value: LaunchTemplatesMonitoringRequest): Self = StObject.set(x, "Monitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataOptions(value: LaunchTemplateInstanceMetadataOptionsRequest): Self = this.set("MetadataOptions", value.asInstanceOf[js.Any])
+    def setMonitoringUndefined: Self = StObject.set(x, "Monitoring", js.undefined)
     
     @scala.inline
-    def deleteMetadataOptions: Self = this.set("MetadataOptions", js.undefined)
+    def setNetworkInterfaces(value: LaunchTemplateInstanceNetworkInterfaceSpecificationRequestList): Self = StObject.set(x, "NetworkInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoring(value: LaunchTemplatesMonitoringRequest): Self = this.set("Monitoring", value.asInstanceOf[js.Any])
+    def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
     
     @scala.inline
-    def deleteMonitoring: Self = this.set("Monitoring", js.undefined)
+    def setNetworkInterfacesVarargs(value: LaunchTemplateInstanceNetworkInterfaceSpecificationRequest*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkInterfacesVarargs(value: LaunchTemplateInstanceNetworkInterfaceSpecificationRequest*): Self = this.set("NetworkInterfaces", js.Array(value :_*))
+    def setPlacement(value: LaunchTemplatePlacementRequest): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaces(value: LaunchTemplateInstanceNetworkInterfaceSpecificationRequestList): Self = this.set("NetworkInterfaces", value.asInstanceOf[js.Any])
+    def setPlacementUndefined: Self = StObject.set(x, "Placement", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaces: Self = this.set("NetworkInterfaces", js.undefined)
+    def setRamDiskId(value: RamdiskId): Self = StObject.set(x, "RamDiskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: LaunchTemplatePlacementRequest): Self = this.set("Placement", value.asInstanceOf[js.Any])
+    def setRamDiskIdUndefined: Self = StObject.set(x, "RamDiskId", js.undefined)
     
     @scala.inline
-    def deletePlacement: Self = this.set("Placement", js.undefined)
+    def setSecurityGroupIds(value: SecurityGroupIdStringList): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRamDiskId(value: RamdiskId): Self = this.set("RamDiskId", value.asInstanceOf[js.Any])
+    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
     @scala.inline
-    def deleteRamDiskId: Self = this.set("RamDiskId", js.undefined)
+    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    def setSecurityGroups(value: SecurityGroupStringList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIds(value: SecurityGroupIdStringList): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    def setSecurityGroupsVarargs(value: SecurityGroupName*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroupName*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    def setTagSpecifications(value: LaunchTemplateTagSpecificationRequestList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroups(value: SecurityGroupStringList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    def setTagSpecificationsVarargs(value: LaunchTemplateTagSpecificationRequest*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setTagSpecificationsVarargs(value: LaunchTemplateTagSpecificationRequest*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    def setUserData(value: String): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagSpecifications(value: LaunchTemplateTagSpecificationRequestList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
-    
-    @scala.inline
-    def setUserData(value: String): Self = this.set("UserData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserData: Self = this.set("UserData", js.undefined)
+    def setUserDataUndefined: Self = StObject.set(x, "UserData", js.undefined)
   }
 }

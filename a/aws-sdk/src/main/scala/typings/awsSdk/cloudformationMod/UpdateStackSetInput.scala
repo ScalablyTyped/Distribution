@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateStackSetInput extends js.Object {
+trait UpdateStackSetInput extends StObject {
   
   /**
     * [Self-managed permissions] The accounts in which to update associated stack instances. If you specify accounts, you must also specify the Regions in which to update stack set instances. To update all the stack instances associated with this stack set, do not specify the Accounts or Regions properties. If the stack set update includes changes to the template (that is, if the TemplateBody or TemplateURL properties are specified), or the Parameters property, AWS CloudFormation marks all stack instances with a status of OUTDATED prior to updating the stack instances in the specified accounts and Regions. If the stack set update does not include changes to the template or parameters, AWS CloudFormation updates the stack instances in the specified accounts and Regions, while leaving all other stack instances with their existing stack instance status. 
@@ -101,132 +102,120 @@ object UpdateStackSetInput {
   }
   
   @scala.inline
-  implicit class UpdateStackSetInputOps[Self <: UpdateStackSetInput] (val x: Self) extends AnyVal {
+  implicit class UpdateStackSetInputMutableBuilder[Self <: UpdateStackSetInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
     
     @scala.inline
-    def setStackSetName(value: StackSetName): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    def setAdministrationRoleARN(value: RoleARN_): Self = StObject.set(x, "AdministrationRoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountsVarargs(value: Account*): Self = this.set("Accounts", js.Array(value :_*))
+    def setAdministrationRoleARNUndefined: Self = StObject.set(x, "AdministrationRoleARN", js.undefined)
     
     @scala.inline
-    def setAccounts(value: AccountList): Self = this.set("Accounts", value.asInstanceOf[js.Any])
+    def setAutoDeployment(value: AutoDeployment): Self = StObject.set(x, "AutoDeployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccounts: Self = this.set("Accounts", js.undefined)
+    def setAutoDeploymentUndefined: Self = StObject.set(x, "AutoDeployment", js.undefined)
     
     @scala.inline
-    def setAdministrationRoleARN(value: RoleARN_): Self = this.set("AdministrationRoleARN", value.asInstanceOf[js.Any])
+    def setCapabilities(value: Capabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdministrationRoleARN: Self = this.set("AdministrationRoleARN", js.undefined)
+    def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
     @scala.inline
-    def setAutoDeployment(value: AutoDeployment): Self = this.set("AutoDeployment", value.asInstanceOf[js.Any])
+    def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoDeployment: Self = this.set("AutoDeployment", js.undefined)
+    def setDeploymentTargets(value: DeploymentTargets): Self = StObject.set(x, "DeploymentTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    def setDeploymentTargetsUndefined: Self = StObject.set(x, "DeploymentTargets", js.undefined)
     
     @scala.inline
-    def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setDeploymentTargets(value: DeploymentTargets): Self = this.set("DeploymentTargets", value.asInstanceOf[js.Any])
+    def setExecutionRoleName(value: ExecutionRoleName): Self = StObject.set(x, "ExecutionRoleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeploymentTargets: Self = this.set("DeploymentTargets", js.undefined)
+    def setExecutionRoleNameUndefined: Self = StObject.set(x, "ExecutionRoleName", js.undefined)
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
     
     @scala.inline
-    def setExecutionRoleName(value: ExecutionRoleName): Self = this.set("ExecutionRoleName", value.asInstanceOf[js.Any])
+    def setOperationPreferences(value: StackSetOperationPreferences): Self = StObject.set(x, "OperationPreferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionRoleName: Self = this.set("ExecutionRoleName", js.undefined)
+    def setOperationPreferencesUndefined: Self = StObject.set(x, "OperationPreferences", js.undefined)
     
     @scala.inline
-    def setOperationId(value: ClientRequestToken): Self = this.set("OperationId", value.asInstanceOf[js.Any])
+    def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperationId: Self = this.set("OperationId", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def setOperationPreferences(value: StackSetOperationPreferences): Self = this.set("OperationPreferences", value.asInstanceOf[js.Any])
+    def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
     @scala.inline
-    def deleteOperationPreferences: Self = this.set("OperationPreferences", js.undefined)
+    def setPermissionModel(value: PermissionModels): Self = StObject.set(x, "PermissionModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    def setPermissionModelUndefined: Self = StObject.set(x, "PermissionModel", js.undefined)
     
     @scala.inline
-    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setRegions(value: RegionList): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
     
     @scala.inline
-    def setPermissionModel(value: PermissionModels): Self = this.set("PermissionModel", value.asInstanceOf[js.Any])
+    def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value :_*))
     
     @scala.inline
-    def deletePermissionModel: Self = this.set("PermissionModel", js.undefined)
+    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionsVarargs(value: Region*): Self = this.set("Regions", js.Array(value :_*))
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegions(value: RegionList): Self = this.set("Regions", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRegions: Self = this.set("Regions", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTemplateURL(value: TemplateURL): Self = StObject.set(x, "TemplateURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    def setTemplateURLUndefined: Self = StObject.set(x, "TemplateURL", js.undefined)
     
     @scala.inline
-    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+    def setUsePreviousTemplate(value: UsePreviousTemplate): Self = StObject.set(x, "UsePreviousTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateURL(value: TemplateURL): Self = this.set("TemplateURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateURL: Self = this.set("TemplateURL", js.undefined)
-    
-    @scala.inline
-    def setUsePreviousTemplate(value: UsePreviousTemplate): Self = this.set("UsePreviousTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePreviousTemplate: Self = this.set("UsePreviousTemplate", js.undefined)
+    def setUsePreviousTemplateUndefined: Self = StObject.set(x, "UsePreviousTemplate", js.undefined)
   }
 }

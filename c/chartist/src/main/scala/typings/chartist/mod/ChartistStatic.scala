@@ -1,12 +1,13 @@
 package typings.chartist.mod
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartistStatic extends js.Object {
+trait ChartistStatic extends StObject {
   
   var AutoScaleAxis: IAutoScaleAxisStatic = js.native
   
@@ -50,7 +51,7 @@ trait ChartistStatic extends js.Object {
   
   var noop: js.Function = js.native
   
-   // TODO: Figure out if this is returning a ChartistSVGWrapper or an actual SVGElement
+  // TODO: Figure out if this is returning a ChartistSVGWrapper or an actual SVGElement
   var plugins: js.Any = js.native
   
   /**
@@ -72,7 +73,7 @@ trait ChartistStatic extends js.Object {
   def serialMap(arr: js.Array[_], cb: js.Function): js.Array[_] = js.native
   
   def serialize(data: String): String = js.native
-   // this method is not documented, but it is used in the examples
+  // this method is not documented, but it is used in the examples
   def serialize(data: js.Object): String = js.native
   def serialize(data: Double): String = js.native
   

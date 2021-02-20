@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,81 +65,69 @@ object EncounterHospitalization {
   }
   
   @scala.inline
-  implicit class EncounterHospitalizationOps[Self <: EncounterHospitalization] (val x: Self) extends AnyVal {
+  implicit class EncounterHospitalizationMutableBuilder[Self <: EncounterHospitalization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdmitSource(value: CodeableConcept): Self = StObject.set(x, "admitSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdmitSourceUndefined: Self = StObject.set(x, "admitSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination(value: Reference): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdmitSource(value: CodeableConcept): Self = this.set("admitSource", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def deleteAdmitSource: Self = this.set("admitSource", js.undefined)
+    def setDietPreference(value: js.Array[CodeableConcept]): Self = StObject.set(x, "dietPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: Reference): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setDietPreferenceUndefined: Self = StObject.set(x, "dietPreference", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setDietPreferenceVarargs(value: CodeableConcept*): Self = StObject.set(x, "dietPreference", js.Array(value :_*))
     
     @scala.inline
-    def setDietPreferenceVarargs(value: CodeableConcept*): Self = this.set("dietPreference", js.Array(value :_*))
+    def setDischargeDisposition(value: CodeableConcept): Self = StObject.set(x, "dischargeDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDietPreference(value: js.Array[CodeableConcept]): Self = this.set("dietPreference", value.asInstanceOf[js.Any])
+    def setDischargeDispositionUndefined: Self = StObject.set(x, "dischargeDisposition", js.undefined)
     
     @scala.inline
-    def deleteDietPreference: Self = this.set("dietPreference", js.undefined)
+    def setOrigin(value: Reference): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDischargeDisposition(value: CodeableConcept): Self = this.set("dischargeDisposition", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteDischargeDisposition: Self = this.set("dischargeDisposition", js.undefined)
+    def setPreAdmissionIdentifier(value: Identifier): Self = StObject.set(x, "preAdmissionIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: Reference): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setPreAdmissionIdentifierUndefined: Self = StObject.set(x, "preAdmissionIdentifier", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setReAdmission(value: CodeableConcept): Self = StObject.set(x, "reAdmission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreAdmissionIdentifier(value: Identifier): Self = this.set("preAdmissionIdentifier", value.asInstanceOf[js.Any])
+    def setReAdmissionUndefined: Self = StObject.set(x, "reAdmission", js.undefined)
     
     @scala.inline
-    def deletePreAdmissionIdentifier: Self = this.set("preAdmissionIdentifier", js.undefined)
+    def setSpecialArrangement(value: js.Array[CodeableConcept]): Self = StObject.set(x, "specialArrangement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReAdmission(value: CodeableConcept): Self = this.set("reAdmission", value.asInstanceOf[js.Any])
+    def setSpecialArrangementUndefined: Self = StObject.set(x, "specialArrangement", js.undefined)
     
     @scala.inline
-    def deleteReAdmission: Self = this.set("reAdmission", js.undefined)
+    def setSpecialArrangementVarargs(value: CodeableConcept*): Self = StObject.set(x, "specialArrangement", js.Array(value :_*))
     
     @scala.inline
-    def setSpecialArrangementVarargs(value: CodeableConcept*): Self = this.set("specialArrangement", js.Array(value :_*))
+    def setSpecialCourtesy(value: js.Array[CodeableConcept]): Self = StObject.set(x, "specialCourtesy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecialArrangement(value: js.Array[CodeableConcept]): Self = this.set("specialArrangement", value.asInstanceOf[js.Any])
+    def setSpecialCourtesyUndefined: Self = StObject.set(x, "specialCourtesy", js.undefined)
     
     @scala.inline
-    def deleteSpecialArrangement: Self = this.set("specialArrangement", js.undefined)
-    
-    @scala.inline
-    def setSpecialCourtesyVarargs(value: CodeableConcept*): Self = this.set("specialCourtesy", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpecialCourtesy(value: js.Array[CodeableConcept]): Self = this.set("specialCourtesy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecialCourtesy: Self = this.set("specialCourtesy", js.undefined)
+    def setSpecialCourtesyVarargs(value: CodeableConcept*): Self = StObject.set(x, "specialCourtesy", js.Array(value :_*))
   }
 }

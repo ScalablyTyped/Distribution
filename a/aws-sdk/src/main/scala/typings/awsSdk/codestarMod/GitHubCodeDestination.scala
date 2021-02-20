@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitHubCodeDestination extends js.Object {
+trait GitHubCodeDestination extends StObject {
   
   /**
     * Description for the GitHub repository to be created in AWS CodeStar. This description displays in GitHub after the repository is created.
@@ -59,42 +60,30 @@ object GitHubCodeDestination {
   }
   
   @scala.inline
-  implicit class GitHubCodeDestinationOps[Self <: GitHubCodeDestination] (val x: Self) extends AnyVal {
+  implicit class GitHubCodeDestinationMutableBuilder[Self <: GitHubCodeDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: RepositoryDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuesEnabled(value: RepositoryEnableIssues): Self = StObject.set(x, "issuesEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuesEnabled(value: RepositoryEnableIssues): Self = this.set("issuesEnabled", value.asInstanceOf[js.Any])
+    def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: RepositoryName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwner(value: RepositoryOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: RepositoryOwner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPrivateRepository(value: RepositoryIsPrivate): Self = StObject.set(x, "privateRepository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateRepository(value: RepositoryIsPrivate): Self = this.set("privateRepository", value.asInstanceOf[js.Any])
+    def setToken(value: GitHubPersonalToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: GitHubPersonalToken): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: RepositoryType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: RepositoryDescription): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setType(value: RepositoryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Compliance extends js.Object {
+trait Compliance extends StObject {
   
   /**
     * For a control, the industry or regulatory framework requirements that are related to the control. The check for that control is aligned with these requirements.
@@ -31,42 +32,30 @@ object Compliance {
   }
   
   @scala.inline
-  implicit class ComplianceOps[Self <: Compliance] (val x: Self) extends AnyVal {
+  implicit class ComplianceMutableBuilder[Self <: Compliance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelatedRequirements(value: RelatedRequirementsList): Self = StObject.set(x, "RelatedRequirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelatedRequirementsUndefined: Self = StObject.set(x, "RelatedRequirements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = StObject.set(x, "RelatedRequirements", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = this.set("RelatedRequirements", js.Array(value :_*))
+    def setStatus(value: ComplianceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedRequirements(value: RelatedRequirementsList): Self = this.set("RelatedRequirements", value.asInstanceOf[js.Any])
+    def setStatusReasons(value: StatusReasonsList): Self = StObject.set(x, "StatusReasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelatedRequirements: Self = this.set("RelatedRequirements", js.undefined)
+    def setStatusReasonsUndefined: Self = StObject.set(x, "StatusReasons", js.undefined)
     
     @scala.inline
-    def setStatus(value: ComplianceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusReasonsVarargs(value: StatusReason*): Self = StObject.set(x, "StatusReasons", js.Array(value :_*))
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStatusReasonsVarargs(value: StatusReason*): Self = this.set("StatusReasons", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatusReasons(value: StatusReasonsList): Self = this.set("StatusReasons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusReasons: Self = this.set("StatusReasons", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 消息来源的结构化信息 */
 @js.native
-trait RemoteInfo extends js.Object {
+trait RemoteInfo extends StObject {
   
   /** 发送消息的 socket 的地址 */
   var address: String = js.native
@@ -29,30 +30,18 @@ object RemoteInfo {
   }
   
   @scala.inline
-  implicit class RemoteInfoOps[Self <: RemoteInfo] (val x: Self) extends AnyVal {
+  implicit class RemoteInfoMutableBuilder[Self <: RemoteInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

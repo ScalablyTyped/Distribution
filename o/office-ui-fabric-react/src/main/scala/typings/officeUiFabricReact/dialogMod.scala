@@ -4,52 +4,75 @@ import typings.officeUiFabricReact.dialogContentTypesMod.IDialogContentProps
 import typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps
 import typings.officeUiFabricReact.dialogTypesMod.IDialogProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Dialog", JSImport.Namespace)
-@js.native
-object dialogMod extends js.Object {
+object dialogMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Dialog", "Dialog")
+  @js.native
   val Dialog: FunctionComponent[IDialogProps] = js.native
   
-  val DialogContent: FunctionComponent[IDialogContentProps] = js.native
-  
-  val DialogFooter: FunctionComponent[IDialogFooterProps] = js.native
-  
+  @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogBase")
   @js.native
   class DialogBase protected ()
     extends typings.officeUiFabricReact.dialogBaseMod.DialogBase {
     def this(props: IDialogProps) = this()
   }
   /* static members */
-  @js.native
-  object DialogBase extends js.Object {
+  object DialogBase {
     
-    var defaultProps: IDialogProps = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogBase.defaultProps")
+    @js.native
+    def defaultProps: IDialogProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IDialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogContent")
+  @js.native
+  val DialogContent: FunctionComponent[IDialogContentProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogContentBase")
   @js.native
   class DialogContentBase protected ()
     extends typings.officeUiFabricReact.dialogContentBaseMod.DialogContentBase {
     def this(props: IDialogContentProps) = this()
   }
   /* static members */
-  @js.native
-  object DialogContentBase extends js.Object {
+  object DialogContentBase {
     
-    var defaultProps: IDialogContentProps = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogContentBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogContentBase.defaultProps")
+    @js.native
+    def defaultProps: IDialogContentProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IDialogContentProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogFooter")
+  @js.native
+  val DialogFooter: FunctionComponent[IDialogFooterProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogFooterBase")
   @js.native
   class DialogFooterBase protected ()
     extends typings.officeUiFabricReact.dialogFooterBaseMod.DialogFooterBase {
     def this(props: IDialogFooterProps) = this()
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/Dialog", "DialogType")
   @js.native
-  object DialogType extends js.Object {
+  object DialogType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.dialogContentTypesMod.DialogType with Double] = js.native
@@ -61,8 +84,9 @@ object dialogMod extends js.Object {
     /* 0 */ val normal: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.normal with Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/Dialog", "ResponsiveMode")
   @js.native
-  object ResponsiveMode extends js.Object {
+  object ResponsiveMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocaleMessages extends js.Object {
+trait LocaleMessages extends StObject {
   
   var addDescription: String = js.native
   
@@ -56,57 +57,45 @@ object LocaleMessages {
   }
   
   @scala.inline
-  implicit class LocaleMessagesOps[Self <: LocaleMessages] (val x: Self) extends AnyVal {
+  implicit class LocaleMessagesMutableBuilder[Self <: LocaleMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDescription(value: String): Self = StObject.set(x, "addDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddEdge(value: String): Self = StObject.set(x, "addEdge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddNode(value: String): Self = StObject.set(x, "addNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddDescription(value: String): Self = this.set("addDescription", value.asInstanceOf[js.Any])
+    def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddEdge(value: String): Self = this.set("addEdge", value.asInstanceOf[js.Any])
+    def setCreateEdgeError(value: String): Self = StObject.set(x, "createEdgeError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddNode(value: String): Self = this.set("addNode", value.asInstanceOf[js.Any])
+    def setDel(value: String): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBack(value: String): Self = this.set("back", value.asInstanceOf[js.Any])
+    def setDeleteClusterError(value: String): Self = StObject.set(x, "deleteClusterError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateEdgeError(value: String): Self = this.set("createEdgeError", value.asInstanceOf[js.Any])
+    def setEdgeDescription(value: String): Self = StObject.set(x, "edgeDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDel(value: String): Self = this.set("del", value.asInstanceOf[js.Any])
+    def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteClusterError(value: String): Self = this.set("deleteClusterError", value.asInstanceOf[js.Any])
+    def setEditClusterError(value: String): Self = StObject.set(x, "editClusterError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeDescription(value: String): Self = this.set("edgeDescription", value.asInstanceOf[js.Any])
+    def setEditEdge(value: String): Self = StObject.set(x, "editEdge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: String): Self = this.set("edit", value.asInstanceOf[js.Any])
+    def setEditEdgeDescription(value: String): Self = StObject.set(x, "editEdgeDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditClusterError(value: String): Self = this.set("editClusterError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditEdge(value: String): Self = this.set("editEdge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditEdgeDescription(value: String): Self = this.set("editEdgeDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditNode(value: String): Self = this.set("editNode", value.asInstanceOf[js.Any])
+    def setEditNode(value: String): Self = StObject.set(x, "editNode", value.asInstanceOf[js.Any])
   }
 }

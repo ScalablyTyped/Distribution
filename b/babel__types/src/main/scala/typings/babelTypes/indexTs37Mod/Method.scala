@@ -7,6 +7,7 @@ import typings.babelTypes.babelTypesStrings.constructor
 import typings.babelTypes.babelTypesStrings.get
 import typings.babelTypes.babelTypesStrings.method
 import typings.babelTypes.babelTypesStrings.set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,22 +21,6 @@ trait Method extends _Node
 object Method {
   
   @scala.inline
-  def ObjectMethod_(
-    async: Boolean,
-    body: BlockStatement_,
-    computed: Boolean,
-    generator: Boolean,
-    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
-    kind: method | get | set,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    `type`: ObjectMethod
-  ): Method = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Method]
-  }
-  
-  @scala.inline
   def ClassMethod_(
     async: Boolean,
     body: BlockStatement_,
@@ -46,10 +31,10 @@ object Method {
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     static: Boolean,
     `type`: ClassMethod
-  ): Method = {
+  ): typings.babelTypes.indexTs37Mod.ClassMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Method]
+    __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassMethod_]
   }
   
   @scala.inline
@@ -63,9 +48,25 @@ object Method {
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     static: Boolean,
     `type`: ClassPrivateMethod
-  ): Method = {
+  ): typings.babelTypes.indexTs37Mod.ClassPrivateMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Method]
+    __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassPrivateMethod_]
+  }
+  
+  @scala.inline
+  def ObjectMethod_(
+    async: Boolean,
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
+    kind: method | get | set,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    `type`: ObjectMethod
+  ): typings.babelTypes.indexTs37Mod.ObjectMethod_ = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ObjectMethod_]
   }
 }

@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "JsonMetadata")
 @js.native
-class JsonMetadata () extends js.Object {
+class JsonMetadata () extends StObject {
   
   def addAlterNativeClassName(name: String, alternativeName: String): Unit = js.native
   

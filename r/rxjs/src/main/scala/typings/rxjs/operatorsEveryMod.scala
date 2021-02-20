@@ -1,13 +1,14 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/every", JSImport.Namespace)
-@js.native
-object operatorsEveryMod extends js.Object {
+object operatorsEveryMod {
   
+  @JSImport("rxjs/operators/every", "every")
+  @js.native
   def every[T](
     predicate: js.Function3[
       /* value */ T, 
@@ -16,6 +17,8 @@ object operatorsEveryMod extends js.Object {
       Boolean
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operators/every", "every")
+  @js.native
   def every[T](
     predicate: js.Function3[
       /* value */ T, 

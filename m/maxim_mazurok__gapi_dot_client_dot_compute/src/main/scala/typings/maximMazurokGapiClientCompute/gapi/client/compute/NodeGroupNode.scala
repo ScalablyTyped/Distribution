@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeGroupNode extends js.Object {
+trait NodeGroupNode extends StObject {
   
   /** CPU overcommit. */
   var cpuOvercommitType: js.UndefOr[String] = js.native
@@ -36,63 +37,51 @@ object NodeGroupNode {
   }
   
   @scala.inline
-  implicit class NodeGroupNodeOps[Self <: NodeGroupNode] (val x: Self) extends AnyVal {
+  implicit class NodeGroupNodeMutableBuilder[Self <: NodeGroupNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpuOvercommitType(value: String): Self = StObject.set(x, "cpuOvercommitType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpuOvercommitTypeUndefined: Self = StObject.set(x, "cpuOvercommitType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuOvercommitType(value: String): Self = this.set("cpuOvercommitType", value.asInstanceOf[js.Any])
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
     @scala.inline
-    def deleteCpuOvercommitType: Self = this.set("cpuOvercommitType", js.undefined)
+    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
     @scala.inline
-    def setInstancesVarargs(value: String*): Self = this.set("instances", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstances(value: js.Array[String]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
+    def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setServerBinding(value: ServerBinding): Self = StObject.set(x, "serverBinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: String): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    def setServerBindingUndefined: Self = StObject.set(x, "serverBinding", js.undefined)
     
     @scala.inline
-    def deleteNodeType: Self = this.set("nodeType", js.undefined)
+    def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerBinding(value: ServerBinding): Self = this.set("serverBinding", value.asInstanceOf[js.Any])
+    def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
     
     @scala.inline
-    def deleteServerBinding: Self = this.set("serverBinding", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerId(value: String): Self = this.set("serverId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerId: Self = this.set("serverId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import typings.sendgrid.anon.Enable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClickTracking extends js.Object {
+trait ClickTracking extends StObject {
   
   def getEnable(): Boolean = js.native
   
@@ -33,33 +34,21 @@ object ClickTracking {
   }
   
   @scala.inline
-  implicit class ClickTrackingOps[Self <: ClickTracking] (val x: Self) extends AnyVal {
+  implicit class ClickTrackingMutableBuilder[Self <: ClickTracking] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEnableText(value: () => Boolean): Self = StObject.set(x, "getEnableText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEnable(value: () => Boolean): Self = this.set("getEnable", js.Any.fromFunction0(value))
+    def setSetEnableText(value: Boolean => Unit): Self = StObject.set(x, "setEnableText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEnableText(value: () => Boolean): Self = this.set("getEnableText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = this.set("setEnable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetEnableText(value: Boolean => Unit): Self = this.set("setEnableText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToJSON(value: () => Enable): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => Enable): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTCPropertyBehavior extends js.Object {
+trait HTCPropertyBehavior extends StObject {
   
   @JSName("MSHTML.HTCPropertyBehavior_typekey")
   var MSHTMLDotHTCPropertyBehavior_typekey: HTCPropertyBehavior = js.native
@@ -24,27 +25,15 @@ object HTCPropertyBehavior {
   }
   
   @scala.inline
-  implicit class HTCPropertyBehaviorOps[Self <: HTCPropertyBehavior] (val x: Self) extends AnyVal {
+  implicit class HTCPropertyBehaviorMutableBuilder[Self <: HTCPropertyBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFireChange(value: () => Unit): Self = StObject.set(x, "fireChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMSHTMLDotHTCPropertyBehavior_typekey(value: HTCPropertyBehavior): Self = StObject.set(x, "MSHTML.HTCPropertyBehavior_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotHTCPropertyBehavior_typekey(value: HTCPropertyBehavior): Self = this.set("MSHTML.HTCPropertyBehavior_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFireChange(value: () => Unit): Self = this.set("fireChange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

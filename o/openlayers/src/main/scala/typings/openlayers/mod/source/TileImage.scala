@@ -3,6 +3,7 @@ package typings.openlayers.mod.source
 import typings.openlayers.mod.ProjectionLike
 import typings.openlayers.mod.olx.source.TileImageOptions
 import typings.openlayers.mod.tilegrid.TileGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

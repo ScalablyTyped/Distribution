@@ -1,12 +1,13 @@
 package typings.backbone.mod
 
 import typings.jquery.JQueryXHR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersistenceOptions extends js.Object {
+trait PersistenceOptions extends StObject {
   
   var beforeSend: js.UndefOr[js.Function1[/* jqxhr */ JQueryXHR, Unit]] = js.native
   
@@ -48,70 +49,58 @@ object PersistenceOptions {
   }
   
   @scala.inline
-  implicit class PersistenceOptionsOps[Self <: PersistenceOptions] (val x: Self) extends AnyVal {
+  implicit class PersistenceOptionsMutableBuilder[Self <: PersistenceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeSend(value: /* jqxhr */ JQueryXHR => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSend(value: /* jqxhr */ JQueryXHR => Unit): Self = this.set("beforeSend", js.Any.fromFunction1(value))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteBeforeSend: Self = this.set("beforeSend", js.undefined)
+    def setEmulateHTTP(value: Boolean): Self = StObject.set(x, "emulateHTTP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setEmulateHTTPUndefined: Self = StObject.set(x, "emulateHTTP", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEmulateJSON(value: Boolean): Self = StObject.set(x, "emulateJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmulateHTTP(value: Boolean): Self = this.set("emulateHTTP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmulateHTTP: Self = this.set("emulateHTTP", js.undefined)
-    
-    @scala.inline
-    def setEmulateJSON(value: Boolean): Self = this.set("emulateJSON", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmulateJSON: Self = this.set("emulateJSON", js.undefined)
+    def setEmulateJSONUndefined: Self = StObject.set(x, "emulateJSON", js.undefined)
     
     @scala.inline
     def setError(
       value: (/* modelOrCollection */ js.UndefOr[js.Any], /* jqxhr */ js.UndefOr[JQueryXHR], /* options */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("error", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
     def setSuccess(
       value: (/* modelOrCollection */ js.UndefOr[js.Any], /* response */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("success", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

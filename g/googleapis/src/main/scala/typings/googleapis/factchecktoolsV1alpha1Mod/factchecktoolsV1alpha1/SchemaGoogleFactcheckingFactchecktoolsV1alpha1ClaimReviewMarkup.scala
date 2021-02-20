@@ -1,5 +1,6 @@
 package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://schema.org/ClaimReview. We list the precise mapping for each field.
   */
 @js.native
-trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup extends js.Object {
+trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup extends StObject {
   
   /**
     * A list of links to works in which this claim appears, aside from the one
@@ -70,69 +71,57 @@ object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup {
   }
   
   @scala.inline
-  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupOps[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupMutableBuilder[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClaimAppearances(value: js.Array[String]): Self = StObject.set(x, "claimAppearances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClaimAppearancesUndefined: Self = StObject.set(x, "claimAppearances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClaimAppearancesVarargs(value: String*): Self = StObject.set(x, "claimAppearances", js.Array(value :_*))
     
     @scala.inline
-    def setClaimAppearancesVarargs(value: String*): Self = this.set("claimAppearances", js.Array(value :_*))
+    def setClaimAuthor(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor): Self = StObject.set(x, "claimAuthor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimAppearances(value: js.Array[String]): Self = this.set("claimAppearances", value.asInstanceOf[js.Any])
+    def setClaimAuthorUndefined: Self = StObject.set(x, "claimAuthor", js.undefined)
     
     @scala.inline
-    def deleteClaimAppearances: Self = this.set("claimAppearances", js.undefined)
+    def setClaimDate(value: String): Self = StObject.set(x, "claimDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimAuthor(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor): Self = this.set("claimAuthor", value.asInstanceOf[js.Any])
+    def setClaimDateUndefined: Self = StObject.set(x, "claimDate", js.undefined)
     
     @scala.inline
-    def deleteClaimAuthor: Self = this.set("claimAuthor", js.undefined)
+    def setClaimFirstAppearance(value: String): Self = StObject.set(x, "claimFirstAppearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimDate(value: String): Self = this.set("claimDate", value.asInstanceOf[js.Any])
+    def setClaimFirstAppearanceUndefined: Self = StObject.set(x, "claimFirstAppearance", js.undefined)
     
     @scala.inline
-    def deleteClaimDate: Self = this.set("claimDate", js.undefined)
+    def setClaimLocation(value: String): Self = StObject.set(x, "claimLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimFirstAppearance(value: String): Self = this.set("claimFirstAppearance", value.asInstanceOf[js.Any])
+    def setClaimLocationUndefined: Self = StObject.set(x, "claimLocation", js.undefined)
     
     @scala.inline
-    def deleteClaimFirstAppearance: Self = this.set("claimFirstAppearance", js.undefined)
+    def setClaimReviewed(value: String): Self = StObject.set(x, "claimReviewed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimLocation(value: String): Self = this.set("claimLocation", value.asInstanceOf[js.Any])
+    def setClaimReviewedUndefined: Self = StObject.set(x, "claimReviewed", js.undefined)
     
     @scala.inline
-    def deleteClaimLocation: Self = this.set("claimLocation", js.undefined)
+    def setRating(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimReviewed(value: String): Self = this.set("claimReviewed", value.asInstanceOf[js.Any])
+    def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
     
     @scala.inline
-    def deleteClaimReviewed: Self = this.set("claimReviewed", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRating(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating): Self = this.set("rating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRating: Self = this.set("rating", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

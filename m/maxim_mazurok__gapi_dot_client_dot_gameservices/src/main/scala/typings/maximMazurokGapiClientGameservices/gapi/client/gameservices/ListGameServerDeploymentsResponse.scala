@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGameServerDeploymentsResponse extends js.Object {
+trait ListGameServerDeploymentsResponse extends StObject {
   
   /** The list of game server deployments. */
   var gameServerDeployments: js.UndefOr[js.Array[GameServerDeployment]] = js.native
@@ -25,42 +26,30 @@ object ListGameServerDeploymentsResponse {
   }
   
   @scala.inline
-  implicit class ListGameServerDeploymentsResponseOps[Self <: ListGameServerDeploymentsResponse] (val x: Self) extends AnyVal {
+  implicit class ListGameServerDeploymentsResponseMutableBuilder[Self <: ListGameServerDeploymentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameServerDeployments(value: js.Array[GameServerDeployment]): Self = StObject.set(x, "gameServerDeployments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGameServerDeploymentsUndefined: Self = StObject.set(x, "gameServerDeployments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGameServerDeploymentsVarargs(value: GameServerDeployment*): Self = StObject.set(x, "gameServerDeployments", js.Array(value :_*))
     
     @scala.inline
-    def setGameServerDeploymentsVarargs(value: GameServerDeployment*): Self = this.set("gameServerDeployments", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameServerDeployments(value: js.Array[GameServerDeployment]): Self = this.set("gameServerDeployments", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteGameServerDeployments: Self = this.set("gameServerDeployments", js.undefined)
+    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = this.set("unreachable", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = this.set("unreachable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreachable: Self = this.set("unreachable", js.undefined)
+    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
   }
 }

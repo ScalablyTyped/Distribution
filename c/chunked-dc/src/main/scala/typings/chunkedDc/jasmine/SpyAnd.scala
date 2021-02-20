@@ -1,11 +1,12 @@
 package typings.chunkedDc.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpyAnd extends js.Object {
+trait SpyAnd extends StObject {
   
   /** By chaining the spy with and.callFake, all calls to the spy will delegate to the supplied function. */
   def callFake(fn: js.Function): Spy = js.native
@@ -41,36 +42,24 @@ object SpyAnd {
   }
   
   @scala.inline
-  implicit class SpyAndOps[Self <: SpyAnd] (val x: Self) extends AnyVal {
+  implicit class SpyAndMutableBuilder[Self <: SpyAnd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallFake(value: js.Function => Spy): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallThrough(value: () => Spy): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnValue(value: js.Any => Spy): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallFake(value: js.Function => Spy): Self = this.set("callFake", js.Any.fromFunction1(value))
+    def setReturnValues(value: /* repeated */ js.Any => Spy): Self = StObject.set(x, "returnValues", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallThrough(value: () => Spy): Self = this.set("callThrough", js.Any.fromFunction0(value))
+    def setStub(value: () => Spy): Self = StObject.set(x, "stub", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReturnValue(value: js.Any => Spy): Self = this.set("returnValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReturnValues(value: /* repeated */ js.Any => Spy): Self = this.set("returnValues", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStub(value: () => Spy): Self = this.set("stub", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setThrowError(value: String => Spy): Self = this.set("throwError", js.Any.fromFunction1(value))
+    def setThrowError(value: String => Spy): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
   }
 }

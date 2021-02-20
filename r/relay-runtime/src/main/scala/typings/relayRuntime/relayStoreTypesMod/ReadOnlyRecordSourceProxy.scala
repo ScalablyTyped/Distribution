@@ -1,12 +1,13 @@
 package typings.relayRuntime.relayStoreTypesMod
 
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadOnlyRecordSourceProxy extends js.Object {
+trait ReadOnlyRecordSourceProxy extends StObject {
   
   def get(dataID: DataID): js.UndefOr[ReadOnlyRecordProxy | Null] = js.native
   
@@ -21,24 +22,12 @@ object ReadOnlyRecordSourceProxy {
   }
   
   @scala.inline
-  implicit class ReadOnlyRecordSourceProxyOps[Self <: ReadOnlyRecordSourceProxy] (val x: Self) extends AnyVal {
+  implicit class ReadOnlyRecordSourceProxyMutableBuilder[Self <: ReadOnlyRecordSourceProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: DataID => js.UndefOr[ReadOnlyRecordProxy | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: DataID => js.UndefOr[ReadOnlyRecordProxy | Null]): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRoot(value: () => ReadOnlyRecordProxy): Self = this.set("getRoot", js.Any.fromFunction0(value))
+    def setGetRoot(value: () => ReadOnlyRecordProxy): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
   }
 }

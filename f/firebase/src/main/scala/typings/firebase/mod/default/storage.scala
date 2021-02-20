@@ -2,6 +2,7 @@ package typings.firebase.mod.default
 
 import typings.firebase.mod.firebase.app.App
 import typings.firebase.mod.firebase.storage.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @webonly
   */
-@JSImport("firebase", "storage")
-@js.native
-object storage extends js.Object {
+object storage {
   
   /**
     * Gets the {@link firebase.storage.Storage `Storage`} service for the default
@@ -40,11 +39,18 @@ object storage extends js.Object {
     * @param app The app to create a storage service for.
     *     If not passed, uses the default app.
     */
+  @JSImport("firebase", "default.storage")
+  @js.native
   def apply(): Storage = js.native
+  @JSImport("firebase", "default.storage")
+  @js.native
   def apply(app: App): Storage = js.native
   
-  @js.native
-  object StringFormat extends js.Object {
+  object StringFormat {
+    
+    @JSImport("firebase", "default.storage.StringFormat")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Indicates the string should be interpreted as base64-encoded data.
@@ -52,7 +58,9 @@ object storage extends js.Object {
       * Example: The string 'rWmO++E6t7/rlw==' becomes the byte sequence
       * ad 69 8e fb e1 3a b7 bf eb 97
       */
-    var BASE64: typings.firebase.mod.firebase.storage.StringFormat = js.native
+    @JSImport("firebase", "default.storage.StringFormat.BASE64")
+    @js.native
+    def BASE64: typings.firebase.mod.firebase.storage.StringFormat = js.native
     
     /**
       * Indicates the string should be interpreted as base64url-encoded data.
@@ -60,7 +68,14 @@ object storage extends js.Object {
       * Example: The string 'rWmO--E6t7_rlw==' becomes the byte sequence
       * ad 69 8e fb e1 3a b7 bf eb 97
       */
-    var BASE64URL: typings.firebase.mod.firebase.storage.StringFormat = js.native
+    @JSImport("firebase", "default.storage.StringFormat.BASE64URL")
+    @js.native
+    def BASE64URL: typings.firebase.mod.firebase.storage.StringFormat = js.native
+    @scala.inline
+    def BASE64URL_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE64URL")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def BASE64_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE64")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates the string is a data URL, such as one obtained from
@@ -71,7 +86,11 @@ object storage extends js.Object {
       * (the content-type "application/octet-stream" is also applied, but can
       * be overridden in the metadata object).
       */
-    var DATA_URL: typings.firebase.mod.firebase.storage.StringFormat = js.native
+    @JSImport("firebase", "default.storage.StringFormat.DATA_URL")
+    @js.native
+    def DATA_URL: typings.firebase.mod.firebase.storage.StringFormat = js.native
+    @scala.inline
+    def DATA_URL_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_URL")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates the string should be interpreted "raw", that is, as normal text.
@@ -80,11 +99,18 @@ object storage extends js.Object {
       * Example: The string 'Hello! \\ud83d\\ude0a' becomes the byte sequence
       * 48 65 6c 6c 6f 21 20 f0 9f 98 8a
       */
-    var RAW: typings.firebase.mod.firebase.storage.StringFormat = js.native
+    @JSImport("firebase", "default.storage.StringFormat.RAW")
+    @js.native
+    def RAW: typings.firebase.mod.firebase.storage.StringFormat = js.native
+    @scala.inline
+    def RAW_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RAW")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object TaskEvent extends js.Object {
+  object TaskEvent {
+    
+    @JSImport("firebase", "default.storage.TaskEvent")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * For this event,
@@ -99,20 +125,47 @@ object storage extends js.Object {
       *       successfully.</li>
       * </ul>
       */
-    var STATE_CHANGED: typings.firebase.mod.firebase.storage.TaskEvent = js.native
+    @JSImport("firebase", "default.storage.TaskEvent.STATE_CHANGED")
+    @js.native
+    def STATE_CHANGED: typings.firebase.mod.firebase.storage.TaskEvent = js.native
+    @scala.inline
+    def STATE_CHANGED_=(x: typings.firebase.mod.firebase.storage.TaskEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_CHANGED")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object TaskState extends js.Object {
+  object TaskState {
     
-    var CANCELED: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @JSImport("firebase", "default.storage.TaskState")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ERROR: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @JSImport("firebase", "default.storage.TaskState.CANCELED")
+    @js.native
+    def CANCELED: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @scala.inline
+    def CANCELED_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELED")(x.asInstanceOf[js.Any])
     
-    var PAUSED: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @JSImport("firebase", "default.storage.TaskState.ERROR")
+    @js.native
+    def ERROR: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @scala.inline
+    def ERROR_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
     
-    var RUNNING: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @JSImport("firebase", "default.storage.TaskState.PAUSED")
+    @js.native
+    def PAUSED: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @scala.inline
+    def PAUSED_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
     
-    var SUCCESS: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @JSImport("firebase", "default.storage.TaskState.RUNNING")
+    @js.native
+    def RUNNING: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @scala.inline
+    def RUNNING_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
+    
+    @JSImport("firebase", "default.storage.TaskState.SUCCESS")
+    @js.native
+    def SUCCESS: typings.firebase.mod.firebase.storage.TaskState = js.native
+    @scala.inline
+    def SUCCESS_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
   }
 }

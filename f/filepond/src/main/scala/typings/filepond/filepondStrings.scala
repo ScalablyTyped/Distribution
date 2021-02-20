@@ -3,267 +3,225 @@ package typings.filepond
 import typings.filepond.mod.CaptureAttribute
 import typings.filepond.mod.FilePondEvent
 import typings.filepond.mod.FilePondEventPrefixed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filepondStrings {
   
+  @js.native
+  sealed trait DELETE extends StObject
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
+  @js.native
+  sealed trait FilePondColonaddfile extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonaddfile: FilePondColonaddfile = "FilePond:addfile".asInstanceOf[FilePondColonaddfile]
   
+  @js.native
+  sealed trait FilePondColonaddfileprogress extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonaddfileprogress: FilePondColonaddfileprogress = "FilePond:addfileprogress".asInstanceOf[FilePondColonaddfileprogress]
   
+  @js.native
+  sealed trait FilePondColonaddfilestart extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonaddfilestart: FilePondColonaddfilestart = "FilePond:addfilestart".asInstanceOf[FilePondColonaddfilestart]
   
+  @js.native
+  sealed trait FilePondColonerror extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonerror: FilePondColonerror = "FilePond:error".asInstanceOf[FilePondColonerror]
   
+  @js.native
+  sealed trait FilePondColoninit extends FilePondEventPrefixed
   @scala.inline
   def FilePondColoninit: FilePondColoninit = "FilePond:init".asInstanceOf[FilePondColoninit]
   
+  @js.native
+  sealed trait FilePondColonprocessfile extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonprocessfile: FilePondColonprocessfile = "FilePond:processfile".asInstanceOf[FilePondColonprocessfile]
   
+  @js.native
+  sealed trait FilePondColonprocessfileabort extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonprocessfileabort: FilePondColonprocessfileabort = "FilePond:processfileabort".asInstanceOf[FilePondColonprocessfileabort]
   
+  @js.native
+  sealed trait FilePondColonprocessfileprogress extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonprocessfileprogress: FilePondColonprocessfileprogress = "FilePond:processfileprogress".asInstanceOf[FilePondColonprocessfileprogress]
   
+  @js.native
+  sealed trait FilePondColonprocessfilerevert extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonprocessfilerevert: FilePondColonprocessfilerevert = "FilePond:processfilerevert".asInstanceOf[FilePondColonprocessfilerevert]
   
+  @js.native
+  sealed trait FilePondColonprocessfilestart extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonprocessfilestart: FilePondColonprocessfilestart = "FilePond:processfilestart".asInstanceOf[FilePondColonprocessfilestart]
   
+  @js.native
+  sealed trait FilePondColonremovefile extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonremovefile: FilePondColonremovefile = "FilePond:removefile".asInstanceOf[FilePondColonremovefile]
   
+  @js.native
+  sealed trait FilePondColonreorderfiles extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonreorderfiles: FilePondColonreorderfiles = "FilePond:reorderfiles".asInstanceOf[FilePondColonreorderfiles]
   
+  @js.native
+  sealed trait FilePondColonupdatefiles extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonupdatefiles: FilePondColonupdatefiles = "FilePond:updatefiles".asInstanceOf[FilePondColonupdatefiles]
   
+  @js.native
+  sealed trait FilePondColonwarning extends FilePondEventPrefixed
   @scala.inline
   def FilePondColonwarning: FilePondColonwarning = "FilePond:warning".asInstanceOf[FilePondColonwarning]
   
+  @js.native
+  sealed trait GET extends StObject
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
+  @js.native
+  sealed trait POST extends StObject
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
+  @js.native
+  sealed trait PUT extends StObject
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
+  @js.native
+  sealed trait addfile extends FilePondEvent
   @scala.inline
   def addfile: addfile = "addfile".asInstanceOf[addfile]
   
+  @js.native
+  sealed trait addfileprogress extends FilePondEvent
   @scala.inline
   def addfileprogress: addfileprogress = "addfileprogress".asInstanceOf[addfileprogress]
   
+  @js.native
+  sealed trait addfilestart extends FilePondEvent
   @scala.inline
   def addfilestart: addfilestart = "addfilestart".asInstanceOf[addfilestart]
   
+  @js.native
+  sealed trait after extends StObject
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   
+  @js.native
+  sealed trait before extends StObject
   @scala.inline
   def before: before = "before".asInstanceOf[before]
   
+  @js.native
+  sealed trait camcorder extends CaptureAttribute
   @scala.inline
   def camcorder: camcorder = "camcorder".asInstanceOf[camcorder]
   
+  @js.native
+  sealed trait camera extends CaptureAttribute
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   
+  @js.native
+  sealed trait circle extends StObject
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   
+  @js.native
+  sealed trait compact extends StObject
   @scala.inline
   def compact: compact = "compact".asInstanceOf[compact]
   
+  @js.native
+  sealed trait error extends FilePondEvent
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
+  @js.native
+  sealed trait init extends FilePondEvent
   @scala.inline
   def init: init = "init".asInstanceOf[init]
   
+  @js.native
+  sealed trait input extends StObject
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   
+  @js.native
+  sealed trait integrated extends StObject
   @scala.inline
   def integrated: integrated = "integrated".asInstanceOf[integrated]
   
+  @js.native
+  sealed trait limbo extends StObject
   @scala.inline
   def limbo: limbo = "limbo".asInstanceOf[limbo]
   
+  @js.native
+  sealed trait local extends StObject
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   
+  @js.native
+  sealed trait microphone extends CaptureAttribute
   @scala.inline
   def microphone: microphone = "microphone".asInstanceOf[microphone]
   
+  @js.native
+  sealed trait processfile extends FilePondEvent
   @scala.inline
   def processfile: processfile = "processfile".asInstanceOf[processfile]
   
+  @js.native
+  sealed trait processfileabort extends FilePondEvent
   @scala.inline
   def processfileabort: processfileabort = "processfileabort".asInstanceOf[processfileabort]
   
+  @js.native
+  sealed trait processfileprogress extends FilePondEvent
   @scala.inline
   def processfileprogress: processfileprogress = "processfileprogress".asInstanceOf[processfileprogress]
   
+  @js.native
+  sealed trait processfilerevert extends FilePondEvent
   @scala.inline
   def processfilerevert: processfilerevert = "processfilerevert".asInstanceOf[processfilerevert]
   
+  @js.native
+  sealed trait processfilestart extends FilePondEvent
   @scala.inline
   def processfilestart: processfilestart = "processfilestart".asInstanceOf[processfilestart]
   
+  @js.native
+  sealed trait removefile extends FilePondEvent
   @scala.inline
   def removefile: removefile = "removefile".asInstanceOf[removefile]
   
+  @js.native
+  sealed trait reorderfiles extends FilePondEvent
   @scala.inline
   def reorderfiles: reorderfiles = "reorderfiles".asInstanceOf[reorderfiles]
   
+  @js.native
+  sealed trait updatefiles extends FilePondEvent
   @scala.inline
   def updatefiles: updatefiles = "updatefiles".asInstanceOf[updatefiles]
   
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  
-  @js.native
-  sealed trait DELETE extends js.Object
-  
-  @js.native
-  sealed trait FilePondColonaddfile extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonaddfileprogress extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonaddfilestart extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonerror extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColoninit extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonprocessfile extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonprocessfileabort extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonprocessfileprogress extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonprocessfilerevert extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonprocessfilestart extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonremovefile extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonreorderfiles extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonupdatefiles extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait FilePondColonwarning extends FilePondEventPrefixed
-  
-  @js.native
-  sealed trait GET extends js.Object
-  
-  @js.native
-  sealed trait POST extends js.Object
-  
-  @js.native
-  sealed trait PUT extends js.Object
-  
-  @js.native
-  sealed trait addfile extends FilePondEvent
-  
-  @js.native
-  sealed trait addfileprogress extends FilePondEvent
-  
-  @js.native
-  sealed trait addfilestart extends FilePondEvent
-  
-  @js.native
-  sealed trait after extends js.Object
-  
-  @js.native
-  sealed trait before extends js.Object
-  
-  @js.native
-  sealed trait camcorder extends CaptureAttribute
-  
-  @js.native
-  sealed trait camera extends CaptureAttribute
-  
-  @js.native
-  sealed trait circle extends js.Object
-  
-  @js.native
-  sealed trait compact extends js.Object
-  
-  @js.native
-  sealed trait error extends FilePondEvent
-  
-  @js.native
-  sealed trait init extends FilePondEvent
-  
-  @js.native
-  sealed trait input extends js.Object
-  
-  @js.native
-  sealed trait integrated extends js.Object
-  
-  @js.native
-  sealed trait limbo extends js.Object
-  
-  @js.native
-  sealed trait local extends js.Object
-  
-  @js.native
-  sealed trait microphone extends CaptureAttribute
-  
-  @js.native
-  sealed trait processfile extends FilePondEvent
-  
-  @js.native
-  sealed trait processfileabort extends FilePondEvent
-  
-  @js.native
-  sealed trait processfileprogress extends FilePondEvent
-  
-  @js.native
-  sealed trait processfilerevert extends FilePondEvent
-  
-  @js.native
-  sealed trait processfilestart extends FilePondEvent
-  
-  @js.native
-  sealed trait removefile extends FilePondEvent
-  
-  @js.native
-  sealed trait reorderfiles extends FilePondEvent
-  
-  @js.native
-  sealed trait updatefiles extends FilePondEvent
-  
   @js.native
   sealed trait warning extends FilePondEvent
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
 }

@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSpanner.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackupOperationsResource extends js.Object {
+trait BackupOperationsResource extends StObject {
   
   /**
     * Lists the backup long-running operations in the given instance. A backup operation has a name of the form `projects//instances//backups//operations/`. The long-running operation

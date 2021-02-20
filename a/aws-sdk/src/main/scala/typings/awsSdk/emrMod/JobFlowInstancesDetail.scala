@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobFlowInstancesDetail extends js.Object {
+trait JobFlowInstancesDetail extends StObject {
   
   /**
     * The name of an Amazon EC2 key pair that can be used to ssh to the master node.
@@ -81,90 +82,78 @@ object JobFlowInstancesDetail {
   }
   
   @scala.inline
-  implicit class JobFlowInstancesDetailOps[Self <: JobFlowInstancesDetail] (val x: Self) extends AnyVal {
+  implicit class JobFlowInstancesDetailMutableBuilder[Self <: JobFlowInstancesDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEc2KeyName(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2KeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEc2KeyNameUndefined: Self = StObject.set(x, "Ec2KeyName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEc2SubnetId(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    def setEc2SubnetIdUndefined: Self = StObject.set(x, "Ec2SubnetId", js.undefined)
     
     @scala.inline
-    def setMasterInstanceType(value: InstanceType): Self = this.set("MasterInstanceType", value.asInstanceOf[js.Any])
+    def setHadoopVersion(value: XmlStringMaxLen256): Self = StObject.set(x, "HadoopVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlaveInstanceType(value: InstanceType): Self = this.set("SlaveInstanceType", value.asInstanceOf[js.Any])
+    def setHadoopVersionUndefined: Self = StObject.set(x, "HadoopVersion", js.undefined)
     
     @scala.inline
-    def setEc2KeyName(value: XmlStringMaxLen256): Self = this.set("Ec2KeyName", value.asInstanceOf[js.Any])
+    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEc2KeyName: Self = this.set("Ec2KeyName", js.undefined)
+    def setInstanceGroups(value: InstanceGroupDetailList): Self = StObject.set(x, "InstanceGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2SubnetId(value: XmlStringMaxLen256): Self = this.set("Ec2SubnetId", value.asInstanceOf[js.Any])
+    def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
     
     @scala.inline
-    def deleteEc2SubnetId: Self = this.set("Ec2SubnetId", js.undefined)
+    def setInstanceGroupsVarargs(value: InstanceGroupDetail*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
     
     @scala.inline
-    def setHadoopVersion(value: XmlStringMaxLen256): Self = this.set("HadoopVersion", value.asInstanceOf[js.Any])
+    def setKeepJobFlowAliveWhenNoSteps(value: Boolean): Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHadoopVersion: Self = this.set("HadoopVersion", js.undefined)
+    def setKeepJobFlowAliveWhenNoStepsUndefined: Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", js.undefined)
     
     @scala.inline
-    def setInstanceGroupsVarargs(value: InstanceGroupDetail*): Self = this.set("InstanceGroups", js.Array(value :_*))
+    def setMasterInstanceId(value: XmlString): Self = StObject.set(x, "MasterInstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceGroups(value: InstanceGroupDetailList): Self = this.set("InstanceGroups", value.asInstanceOf[js.Any])
+    def setMasterInstanceIdUndefined: Self = StObject.set(x, "MasterInstanceId", js.undefined)
     
     @scala.inline
-    def deleteInstanceGroups: Self = this.set("InstanceGroups", js.undefined)
+    def setMasterInstanceType(value: InstanceType): Self = StObject.set(x, "MasterInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepJobFlowAliveWhenNoSteps(value: Boolean): Self = this.set("KeepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
+    def setMasterPublicDnsName(value: XmlString): Self = StObject.set(x, "MasterPublicDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeepJobFlowAliveWhenNoSteps: Self = this.set("KeepJobFlowAliveWhenNoSteps", js.undefined)
+    def setMasterPublicDnsNameUndefined: Self = StObject.set(x, "MasterPublicDnsName", js.undefined)
     
     @scala.inline
-    def setMasterInstanceId(value: XmlString): Self = this.set("MasterInstanceId", value.asInstanceOf[js.Any])
+    def setNormalizedInstanceHours(value: Integer): Self = StObject.set(x, "NormalizedInstanceHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMasterInstanceId: Self = this.set("MasterInstanceId", js.undefined)
+    def setNormalizedInstanceHoursUndefined: Self = StObject.set(x, "NormalizedInstanceHours", js.undefined)
     
     @scala.inline
-    def setMasterPublicDnsName(value: XmlString): Self = this.set("MasterPublicDnsName", value.asInstanceOf[js.Any])
+    def setPlacement(value: PlacementType): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMasterPublicDnsName: Self = this.set("MasterPublicDnsName", js.undefined)
+    def setPlacementUndefined: Self = StObject.set(x, "Placement", js.undefined)
     
     @scala.inline
-    def setNormalizedInstanceHours(value: Integer): Self = this.set("NormalizedInstanceHours", value.asInstanceOf[js.Any])
+    def setSlaveInstanceType(value: InstanceType): Self = StObject.set(x, "SlaveInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNormalizedInstanceHours: Self = this.set("NormalizedInstanceHours", js.undefined)
+    def setTerminationProtected(value: Boolean): Self = StObject.set(x, "TerminationProtected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: PlacementType): Self = this.set("Placement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlacement: Self = this.set("Placement", js.undefined)
-    
-    @scala.inline
-    def setTerminationProtected(value: Boolean): Self = this.set("TerminationProtected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminationProtected: Self = this.set("TerminationProtected", js.undefined)
+    def setTerminationProtectedUndefined: Self = StObject.set(x, "TerminationProtected", js.undefined)
   }
 }

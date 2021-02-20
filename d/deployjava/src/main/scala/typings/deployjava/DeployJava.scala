@@ -1,13 +1,12 @@
 package typings.deployjava
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DeployJava")
-@js.native
-object DeployJava extends js.Object {
+object DeployJava {
   
   /**
     * @summary Interface for {@link deployJava} object.
@@ -15,7 +14,7 @@ object DeployJava extends js.Object {
     * @version 1.0
     */
   @js.native
-  trait DeployJavaStatic extends js.Object {
+  trait DeployJavaStatic extends StObject {
     
     /**
       * @summary Early Access state.

@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworkscmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportServerEngineAttributeRequest extends js.Object {
+trait ExportServerEngineAttributeRequest extends StObject {
   
   /**
     * The name of the export attribute. Currently, the supported export attribute is Userdata. This exports a user data script that includes parameters and values provided in the InputAttributes list.
@@ -31,33 +32,21 @@ object ExportServerEngineAttributeRequest {
   }
   
   @scala.inline
-  implicit class ExportServerEngineAttributeRequestOps[Self <: ExportServerEngineAttributeRequest] (val x: Self) extends AnyVal {
+  implicit class ExportServerEngineAttributeRequestMutableBuilder[Self <: ExportServerEngineAttributeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportAttributeName(value: String): Self = StObject.set(x, "ExportAttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputAttributes(value: EngineAttributes): Self = StObject.set(x, "InputAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputAttributesUndefined: Self = StObject.set(x, "InputAttributes", js.undefined)
     
     @scala.inline
-    def setExportAttributeName(value: String): Self = this.set("ExportAttributeName", value.asInstanceOf[js.Any])
+    def setInputAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "InputAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setServerName(value: ServerName): Self = this.set("ServerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputAttributesVarargs(value: EngineAttribute*): Self = this.set("InputAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputAttributes(value: EngineAttributes): Self = this.set("InputAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputAttributes: Self = this.set("InputAttributes", js.undefined)
+    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }
 }

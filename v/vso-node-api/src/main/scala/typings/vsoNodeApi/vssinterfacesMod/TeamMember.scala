@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.vssinterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamMember extends js.Object {
+trait TeamMember extends StObject {
   
   var identity: IdentityRef = js.native
   
@@ -20,24 +21,12 @@ object TeamMember {
   }
   
   @scala.inline
-  implicit class TeamMemberOps[Self <: TeamMember] (val x: Self) extends AnyVal {
+  implicit class TeamMemberMutableBuilder[Self <: TeamMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentity(value: IdentityRef): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIdentity(value: IdentityRef): Self = this.set("identity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsTeamAdmin(value: Boolean): Self = this.set("isTeamAdmin", value.asInstanceOf[js.Any])
+    def setIsTeamAdmin(value: Boolean): Self = StObject.set(x, "isTeamAdmin", value.asInstanceOf[js.Any])
   }
 }

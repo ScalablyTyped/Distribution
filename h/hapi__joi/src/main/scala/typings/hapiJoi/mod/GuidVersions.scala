@@ -1,5 +1,6 @@
 package typings.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hapiJoi.hapiJoiStrings.uuidv4
   - typings.hapiJoi.hapiJoiStrings.uuidv5
 */
-trait GuidVersions extends js.Object
+trait GuidVersions extends StObject
 object GuidVersions {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentControls extends js.Object {
+trait ContentControls extends StObject {
   
   /** @param Word.WdContentControlType [Type=0] */
   def Add(): ContentControl = js.native

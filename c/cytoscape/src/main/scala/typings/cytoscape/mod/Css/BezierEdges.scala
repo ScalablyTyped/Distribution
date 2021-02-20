@@ -3,6 +3,7 @@ package typings.cytoscape.mod.Css
 import typings.cytoscape.cytoscapeStrings.`node-position`
 import typings.cytoscape.cytoscapeStrings.intersection
 import typings.cytoscape.mod.EdgeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#style/bezier-edges
   */
 @js.native
-trait BezierEdges extends js.Object {
+trait BezierEdges extends StObject {
   
   /**
     * A single value that overrides "control-point-step-size" with a manual value.
@@ -67,42 +68,30 @@ object BezierEdges {
   }
   
   @scala.inline
-  implicit class BezierEdgesOps[Self <: BezierEdges] (val x: Self) extends AnyVal {
+  implicit class BezierEdgesMutableBuilder[Self <: BezierEdges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setControl-point-distance`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setControl-point-distanceFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "control-point-distance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setControl-point-step-size`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-step-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setControl-point-distanceFunction1`(value: EdgeSingular => Double): Self = this.set("control-point-distance", js.Any.fromFunction1(value))
+    def `setControl-point-step-sizeFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "control-point-step-size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setControl-point-distance`(value: PropertyValueEdge[Double]): Self = this.set("control-point-distance", value.asInstanceOf[js.Any])
+    def `setControl-point-weight`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setControl-point-step-sizeFunction1`(value: EdgeSingular => Double): Self = this.set("control-point-step-size", js.Any.fromFunction1(value))
+    def `setControl-point-weightFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "control-point-weight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setControl-point-step-size`(value: PropertyValueEdge[Double]): Self = this.set("control-point-step-size", value.asInstanceOf[js.Any])
+    def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setControl-point-weightFunction1`(value: EdgeSingular => Double): Self = this.set("control-point-weight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setControl-point-weight`(value: PropertyValueEdge[Double]): Self = this.set("control-point-weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = this.set("edge-distances", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = this.set("edge-distances", value.asInstanceOf[js.Any])
+    def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = StObject.set(x, "edge-distances", js.Any.fromFunction1(value))
   }
 }

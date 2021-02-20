@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDocumentationPartsRequest extends js.Object {
+trait GetDocumentationPartsRequest extends StObject {
   
   /**
     * The maximum number of returned results per page. The default value is 25 and the maximum value is 500.
@@ -51,57 +52,45 @@ object GetDocumentationPartsRequest {
   }
   
   @scala.inline
-  implicit class GetDocumentationPartsRequestOps[Self <: GetDocumentationPartsRequest] (val x: Self) extends AnyVal {
+  implicit class GetDocumentationPartsRequestMutableBuilder[Self <: GetDocumentationPartsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationStatus(value: LocationStatusType): Self = StObject.set(x, "locationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    def setLocationStatusUndefined: Self = StObject.set(x, "locationStatus", js.undefined)
     
     @scala.inline
-    def setLimit(value: NullableInteger): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setNameQuery(value: String): Self = StObject.set(x, "nameQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setNameQueryUndefined: Self = StObject.set(x, "nameQuery", js.undefined)
     
     @scala.inline
-    def setLocationStatus(value: LocationStatusType): Self = this.set("locationStatus", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocationStatus: Self = this.set("locationStatus", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setNameQuery(value: String): Self = this.set("nameQuery", value.asInstanceOf[js.Any])
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNameQuery: Self = this.set("nameQuery", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setType(value: DocumentationPartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setType(value: DocumentationPartType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

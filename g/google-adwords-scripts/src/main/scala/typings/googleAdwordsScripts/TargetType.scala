@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleAdwordsScripts.googleAdwordsScriptsStrings.`Union Territory`
   - typings.googleAdwordsScripts.googleAdwordsScriptsStrings.University
 */
-trait TargetType extends js.Object
+trait TargetType extends StObject
 object TargetType {
   
   @scala.inline

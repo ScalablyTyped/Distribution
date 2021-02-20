@@ -1,5 +1,6 @@
 package typings.officeJsPreview.global.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Excel.ShapeTextHorizontalAlignment")
 @js.native
-object ShapeTextHorizontalAlignment extends js.Object {
+object ShapeTextHorizontalAlignment extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ShapeTextHorizontalAlignment with String] = js.native

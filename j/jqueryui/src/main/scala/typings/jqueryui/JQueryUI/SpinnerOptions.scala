@@ -1,5 +1,6 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +17,13 @@ trait SpinnerOptions extends SpinnerEvents {
   
   var incremental: js.UndefOr[js.Any] = js.native
   
-   // boolean or ()
+  // boolean or ()
   var max: js.UndefOr[js.Any] = js.native
   
-   // number or string
+  // number or string
   var min: js.UndefOr[js.Any] = js.native
   
-   // number or string
+  // number or string
   var numberFormat: js.UndefOr[String] = js.native
   
   var page: js.UndefOr[Double] = js.native
@@ -38,72 +39,60 @@ object SpinnerOptions {
   }
   
   @scala.inline
-  implicit class SpinnerOptionsOps[Self <: SpinnerOptions] (val x: Self) extends AnyVal {
+  implicit class SpinnerOptionsMutableBuilder[Self <: SpinnerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteCulture: Self = this.set("culture", js.undefined)
+    def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setIncremental(value: js.Any): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: js.Any): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncremental(value: js.Any): Self = this.set("incremental", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteIncremental: Self = this.set("incremental", js.undefined)
+    def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: js.Any): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: js.Any): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: String): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
-    
-    @scala.inline
-    def setStep(value: js.Any): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

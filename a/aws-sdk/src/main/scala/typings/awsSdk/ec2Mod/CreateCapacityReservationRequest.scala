@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCapacityReservationRequest extends js.Object {
+trait CreateCapacityReservationRequest extends StObject {
   
   /**
     * The Availability Zone in which to create the Capacity Reservation.
@@ -90,96 +91,84 @@ object CreateCapacityReservationRequest {
   }
   
   @scala.inline
-  implicit class CreateCapacityReservationRequestOps[Self <: CreateCapacityReservationRequest] (val x: Self) extends AnyVal {
+  implicit class CreateCapacityReservationRequestMutableBuilder[Self <: CreateCapacityReservationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneId(value: String): Self = StObject.set(x, "AvailabilityZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZoneIdUndefined: Self = StObject.set(x, "AvailabilityZoneId", js.undefined)
     
     @scala.inline
-    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def setInstancePlatform(value: CapacityReservationInstancePlatform): Self = this.set("InstancePlatform", value.asInstanceOf[js.Any])
+    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setAvailabilityZoneId(value: String): Self = this.set("AvailabilityZoneId", value.asInstanceOf[js.Any])
+    def setEbsOptimized(value: Boolean): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvailabilityZoneId: Self = this.set("AvailabilityZoneId", js.undefined)
+    def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setEndDateType(value: EndDateType): Self = StObject.set(x, "EndDateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setEndDateTypeUndefined: Self = StObject.set(x, "EndDateType", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
     @scala.inline
-    def setEbsOptimized(value: Boolean): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    def setEphemeralStorage(value: Boolean): Self = StObject.set(x, "EphemeralStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    def setEphemeralStorageUndefined: Self = StObject.set(x, "EphemeralStorage", js.undefined)
     
     @scala.inline
-    def setEndDate(value: DateTime): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    def setInstanceMatchCriteria(value: InstanceMatchCriteria): Self = StObject.set(x, "InstanceMatchCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDateType(value: EndDateType): Self = this.set("EndDateType", value.asInstanceOf[js.Any])
+    def setInstanceMatchCriteriaUndefined: Self = StObject.set(x, "InstanceMatchCriteria", js.undefined)
     
     @scala.inline
-    def deleteEndDateType: Self = this.set("EndDateType", js.undefined)
+    def setInstancePlatform(value: CapacityReservationInstancePlatform): Self = StObject.set(x, "InstancePlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEphemeralStorage(value: Boolean): Self = this.set("EphemeralStorage", value.asInstanceOf[js.Any])
+    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEphemeralStorage: Self = this.set("EphemeralStorage", js.undefined)
+    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceMatchCriteria(value: InstanceMatchCriteria): Self = this.set("InstanceMatchCriteria", value.asInstanceOf[js.Any])
+    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
     @scala.inline
-    def deleteInstanceMatchCriteria: Self = this.set("InstanceMatchCriteria", js.undefined)
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    def setTenancy(value: CapacityReservationTenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
-    
-    @scala.inline
-    def setTenancy(value: CapacityReservationTenancy): Self = this.set("Tenancy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenancy: Self = this.set("Tenancy", js.undefined)
+    def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
   }
 }

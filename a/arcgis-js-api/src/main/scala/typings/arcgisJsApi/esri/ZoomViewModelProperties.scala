@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoomViewModelProperties extends js.Object {
+trait ZoomViewModelProperties extends StObject {
   
   /**
     * Indicates if the view can zoom in.
@@ -37,36 +38,24 @@ object ZoomViewModelProperties {
   }
   
   @scala.inline
-  implicit class ZoomViewModelPropertiesOps[Self <: ZoomViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class ZoomViewModelPropertiesMutableBuilder[Self <: ZoomViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanZoomIn(value: Boolean): Self = StObject.set(x, "canZoomIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanZoomInUndefined: Self = StObject.set(x, "canZoomIn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanZoomOut(value: Boolean): Self = StObject.set(x, "canZoomOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanZoomIn(value: Boolean): Self = this.set("canZoomIn", value.asInstanceOf[js.Any])
+    def setCanZoomOutUndefined: Self = StObject.set(x, "canZoomOut", js.undefined)
     
     @scala.inline
-    def deleteCanZoomIn: Self = this.set("canZoomIn", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanZoomOut(value: Boolean): Self = this.set("canZoomOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanZoomOut: Self = this.set("canZoomOut", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

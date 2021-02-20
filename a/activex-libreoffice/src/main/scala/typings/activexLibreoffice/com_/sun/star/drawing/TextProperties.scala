@@ -23,6 +23,7 @@ import typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
 import typings.activexLibreoffice.com_.sun.star.text.WritingMode
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -315,87 +316,75 @@ object TextProperties {
   }
   
   @scala.inline
-  implicit class TextPropertiesOps[Self <: TextProperties] (val x: Self) extends AnyVal {
+  implicit class TextPropertiesMutableBuilder[Self <: TextProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsNumbering(value: Boolean): Self = StObject.set(x, "IsNumbering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTextAnimationAmount(value: Double): Self = StObject.set(x, "TextAnimationAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextAnimationCount(value: Double): Self = StObject.set(x, "TextAnimationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNumbering(value: Boolean): Self = this.set("IsNumbering", value.asInstanceOf[js.Any])
+    def setTextAnimationDelay(value: Double): Self = StObject.set(x, "TextAnimationDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnimationAmount(value: Double): Self = this.set("TextAnimationAmount", value.asInstanceOf[js.Any])
+    def setTextAnimationDirection(value: TextAnimationDirection): Self = StObject.set(x, "TextAnimationDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnimationCount(value: Double): Self = this.set("TextAnimationCount", value.asInstanceOf[js.Any])
+    def setTextAnimationKind(value: TextAnimationKind): Self = StObject.set(x, "TextAnimationKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnimationDelay(value: Double): Self = this.set("TextAnimationDelay", value.asInstanceOf[js.Any])
+    def setTextAnimationStartInside(value: Boolean): Self = StObject.set(x, "TextAnimationStartInside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnimationDirection(value: TextAnimationDirection): Self = this.set("TextAnimationDirection", value.asInstanceOf[js.Any])
+    def setTextAnimationStopInside(value: Boolean): Self = StObject.set(x, "TextAnimationStopInside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnimationKind(value: TextAnimationKind): Self = this.set("TextAnimationKind", value.asInstanceOf[js.Any])
+    def setTextAutoGrowHeight(value: Boolean): Self = StObject.set(x, "TextAutoGrowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnimationStartInside(value: Boolean): Self = this.set("TextAnimationStartInside", value.asInstanceOf[js.Any])
+    def setTextAutoGrowWidth(value: Boolean): Self = StObject.set(x, "TextAutoGrowWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnimationStopInside(value: Boolean): Self = this.set("TextAnimationStopInside", value.asInstanceOf[js.Any])
+    def setTextContourFrame(value: Boolean): Self = StObject.set(x, "TextContourFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAutoGrowHeight(value: Boolean): Self = this.set("TextAutoGrowHeight", value.asInstanceOf[js.Any])
+    def setTextFitToSize(value: TextFitToSizeType): Self = StObject.set(x, "TextFitToSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAutoGrowWidth(value: Boolean): Self = this.set("TextAutoGrowWidth", value.asInstanceOf[js.Any])
+    def setTextHorizontalAdjust(value: TextHorizontalAdjust): Self = StObject.set(x, "TextHorizontalAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextContourFrame(value: Boolean): Self = this.set("TextContourFrame", value.asInstanceOf[js.Any])
+    def setTextLeftDistance(value: Double): Self = StObject.set(x, "TextLeftDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextFitToSize(value: TextFitToSizeType): Self = this.set("TextFitToSize", value.asInstanceOf[js.Any])
+    def setTextLowerDistance(value: Double): Self = StObject.set(x, "TextLowerDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextHorizontalAdjust(value: TextHorizontalAdjust): Self = this.set("TextHorizontalAdjust", value.asInstanceOf[js.Any])
+    def setTextMaximumFrameHeight(value: Double): Self = StObject.set(x, "TextMaximumFrameHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextLeftDistance(value: Double): Self = this.set("TextLeftDistance", value.asInstanceOf[js.Any])
+    def setTextMaximumFrameWidth(value: Double): Self = StObject.set(x, "TextMaximumFrameWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextLowerDistance(value: Double): Self = this.set("TextLowerDistance", value.asInstanceOf[js.Any])
+    def setTextMinimumFrameHeight(value: Double): Self = StObject.set(x, "TextMinimumFrameHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextMaximumFrameHeight(value: Double): Self = this.set("TextMaximumFrameHeight", value.asInstanceOf[js.Any])
+    def setTextMinimumFrameWidth(value: Double): Self = StObject.set(x, "TextMinimumFrameWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextMaximumFrameWidth(value: Double): Self = this.set("TextMaximumFrameWidth", value.asInstanceOf[js.Any])
+    def setTextRightDistance(value: Double): Self = StObject.set(x, "TextRightDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextMinimumFrameHeight(value: Double): Self = this.set("TextMinimumFrameHeight", value.asInstanceOf[js.Any])
+    def setTextUpperDistance(value: Double): Self = StObject.set(x, "TextUpperDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextMinimumFrameWidth(value: Double): Self = this.set("TextMinimumFrameWidth", value.asInstanceOf[js.Any])
+    def setTextVerticalAdjust(value: TextVerticalAdjust): Self = StObject.set(x, "TextVerticalAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextRightDistance(value: Double): Self = this.set("TextRightDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextUpperDistance(value: Double): Self = this.set("TextUpperDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextVerticalAdjust(value: TextVerticalAdjust): Self = this.set("TextVerticalAdjust", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextWritingMode(value: WritingMode): Self = this.set("TextWritingMode", value.asInstanceOf[js.Any])
+    def setTextWritingMode(value: WritingMode): Self = StObject.set(x, "TextWritingMode", value.asInstanceOf[js.Any])
   }
 }

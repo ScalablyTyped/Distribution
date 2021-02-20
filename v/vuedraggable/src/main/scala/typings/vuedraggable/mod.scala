@@ -1,17 +1,21 @@
 package typings.vuedraggable
 
+import org.scalablytyped.runtime.Shortcut
 import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vuedraggable", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("vuedraggable", JSImport.Default)
+  @js.native
   val default: DraggableConstructor = js.native
   
+  @JSImport("vuedraggable", "draggable")
+  @js.native
   val draggable: DraggableConstructor = js.native
   
   @js.native
@@ -25,4 +29,9 @@ object mod extends js.Object {
     
     var watch: js.Any = js.native
   }
+  
+  type _To = DraggableConstructor
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: DraggableConstructor = default
 }

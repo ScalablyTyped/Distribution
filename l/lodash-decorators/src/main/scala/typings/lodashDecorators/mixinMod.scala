@@ -1,18 +1,22 @@
 package typings.lodashDecorators
 
 import typings.std.ClassDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/mixin", JSImport.Namespace)
-@js.native
-object mixinMod extends js.Object {
+object mixinMod {
   
-  @JSName("Mixin")
-  def Mixin_(srcs: js.Object*): ClassDecorator = js.native
-  
+  @JSImport("lodash-decorators/mixin", JSImport.Default)
+  @js.native
   def default(srcs: js.Object*): ClassDecorator = js.native
   
+  @JSImport("lodash-decorators/mixin", "Mixin")
+  @js.native
+  def Mixin_(srcs: js.Object*): ClassDecorator = js.native
+  
+  @JSImport("lodash-decorators/mixin", "mixin")
+  @js.native
   def mixin(srcs: js.Object*): ClassDecorator = js.native
 }

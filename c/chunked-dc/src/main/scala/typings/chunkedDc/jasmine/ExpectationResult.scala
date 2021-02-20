@@ -1,5 +1,6 @@
 package typings.chunkedDc.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,36 +38,24 @@ object ExpectationResult {
   }
   
   @scala.inline
-  implicit class ExpectationResultOps[Self <: ExpectationResult] (val x: Self) extends AnyVal {
+  implicit class ExpectationResultMutableBuilder[Self <: ExpectationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatcherName(value: String): Self = StObject.set(x, "matcherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActual(value: js.Any): Self = this.set("actual", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpected(value: js.Any): Self = this.set("expected", value.asInstanceOf[js.Any])
+    def setPassed(value: () => Boolean): Self = StObject.set(x, "passed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMatcherName(value: String): Self = this.set("matcherName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPassed(value: () => Boolean): Self = this.set("passed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTrace(value: Trace): Self = this.set("trace", value.asInstanceOf[js.Any])
+    def setTrace(value: Trace): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.antvComponent.typesMod
 
 import typings.antvGBase.interfacesMod.IGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,51 +83,39 @@ object ContinueLegendCfg {
   }
   
   @scala.inline
-  implicit class ContinueLegendCfgOps[Self <: ContinueLegendCfg] (val x: Self) extends AnyVal {
+  implicit class ContinueLegendCfgMutableBuilder[Self <: ContinueLegendCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandler(value: ContinueLegendHandlerCfg): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorsVarargs(value: Double*): Self = this.set("colors", js.Array(value :_*))
+    def setLabel(value: ContinueLegendLabelCfg): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[Double]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: ContinueLegendHandlerCfg): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: ContinueLegendLabelCfg): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setRail(value: ContinueLegendRailCfg): Self = StObject.set(x, "rail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setSlidable(value: Boolean): Self = StObject.set(x, "slidable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setTrack(value: ContinueLegendTrackCfg): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRail(value: ContinueLegendRailCfg): Self = this.set("rail", value.asInstanceOf[js.Any])
+    def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlidable(value: Boolean): Self = this.set("slidable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrack(value: ContinueLegendTrackCfg): Self = this.set("track", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueVarargs(value: Double*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: js.Array[Double]): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.tern.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Depth extends js.Object {
+trait Depth extends StObject {
   
   var depth: js.UndefOr[Double] = js.native
   
@@ -28,51 +29,39 @@ object Depth {
   }
   
   @scala.inline
-  implicit class DepthOps[Self <: Depth] (val x: Self) extends AnyVal {
+  implicit class DepthMutableBuilder[Self <: Depth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc(value: String): Self = this.set("doc", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteDoc: Self = this.set("doc", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

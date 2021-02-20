@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Ad Slot
   */
 @js.native
-trait SchemaAdSlot extends js.Object {
+trait SchemaAdSlot extends StObject {
   
   /**
     * Comment for this ad slot.
@@ -64,66 +65,54 @@ object SchemaAdSlot {
   }
   
   @scala.inline
-  implicit class SchemaAdSlotOps[Self <: SchemaAdSlot] (val x: Self) extends AnyVal {
+  implicit class SchemaAdSlotMutableBuilder[Self <: SchemaAdSlot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompatibility(value: String): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setCompatibilityUndefined: Self = StObject.set(x, "compatibility", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatibility(value: String): Self = this.set("compatibility", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteCompatibility: Self = this.set("compatibility", js.undefined)
+    def setLinkedPlacementId(value: String): Self = StObject.set(x, "linkedPlacementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLinkedPlacementIdUndefined: Self = StObject.set(x, "linkedPlacementId", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedPlacementId(value: String): Self = this.set("linkedPlacementId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLinkedPlacementId: Self = this.set("linkedPlacementId", js.undefined)
+    def setPaymentSourceType(value: String): Self = StObject.set(x, "paymentSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPaymentSourceTypeUndefined: Self = StObject.set(x, "paymentSourceType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentSourceType(value: String): Self = this.set("paymentSourceType", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deletePaymentSourceType: Self = this.set("paymentSourceType", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

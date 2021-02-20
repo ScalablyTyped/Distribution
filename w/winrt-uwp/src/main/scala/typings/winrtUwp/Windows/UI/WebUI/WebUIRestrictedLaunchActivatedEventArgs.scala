@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.UI.WebUI
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides event information when a restricted app is launched. */
 @js.native
-trait WebUIRestrictedLaunchActivatedEventArgs extends js.Object {
+trait WebUIRestrictedLaunchActivatedEventArgs extends StObject {
   
   /** Gets the app activated operation. */
   var activatedOperation: ActivatedOperation = js.native
@@ -41,33 +42,21 @@ object WebUIRestrictedLaunchActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class WebUIRestrictedLaunchActivatedEventArgsOps[Self <: WebUIRestrictedLaunchActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WebUIRestrictedLaunchActivatedEventArgsMutableBuilder[Self <: WebUIRestrictedLaunchActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatedOperation(value: ActivatedOperation): Self = this.set("activatedOperation", value.asInstanceOf[js.Any])
+    def setSharedContext(value: js.Any): Self = StObject.set(x, "sharedContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedContext(value: js.Any): Self = this.set("sharedContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

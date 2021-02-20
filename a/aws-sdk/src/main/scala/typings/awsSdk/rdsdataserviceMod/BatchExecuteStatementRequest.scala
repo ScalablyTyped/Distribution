@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsdataserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchExecuteStatementRequest extends js.Object {
+trait BatchExecuteStatementRequest extends StObject {
   
   /**
     * The name of the database.
@@ -51,54 +52,42 @@ object BatchExecuteStatementRequest {
   }
   
   @scala.inline
-  implicit class BatchExecuteStatementRequestOps[Self <: BatchExecuteStatementRequest] (val x: Self) extends AnyVal {
+  implicit class BatchExecuteStatementRequestMutableBuilder[Self <: BatchExecuteStatementRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterSets(value: SqlParameterSets): Self = StObject.set(x, "parameterSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArn(value: Arn): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    def setParameterSetsUndefined: Self = StObject.set(x, "parameterSets", js.undefined)
     
     @scala.inline
-    def setSecretArn(value: Arn): Self = this.set("secretArn", value.asInstanceOf[js.Any])
+    def setParameterSetsVarargs(value: SqlParametersList*): Self = StObject.set(x, "parameterSets", js.Array(value :_*))
     
     @scala.inline
-    def setSql(value: SqlStatement): Self = this.set("sql", value.asInstanceOf[js.Any])
+    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: DbName): Self = this.set("database", value.asInstanceOf[js.Any])
+    def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDatabase: Self = this.set("database", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def setParameterSetsVarargs(value: SqlParametersList*): Self = this.set("parameterSets", js.Array(value :_*))
+    def setSecretArn(value: Arn): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterSets(value: SqlParameterSets): Self = this.set("parameterSets", value.asInstanceOf[js.Any])
+    def setSql(value: SqlStatement): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameterSets: Self = this.set("parameterSets", js.undefined)
+    def setTransactionId(value: Id): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: DbName): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
-    
-    @scala.inline
-    def setTransactionId(value: Id): Self = this.set("transactionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

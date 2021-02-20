@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.DB
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISnapshot extends js.Object {
+trait ISnapshot extends StObject {
   
   var docChanges: js.Array[ISingleDBEvent] = js.native
   
@@ -25,36 +26,24 @@ object ISnapshot {
   }
   
   @scala.inline
-  implicit class ISnapshotOps[Self <: ISnapshot] (val x: Self) extends AnyVal {
+  implicit class ISnapshotMutableBuilder[Self <: ISnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocChanges(value: js.Array[ISingleDBEvent]): Self = StObject.set(x, "docChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocChangesVarargs(value: ISingleDBEvent*): Self = StObject.set(x, "docChanges", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocs(value: Record[String, _]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocChangesVarargs(value: ISingleDBEvent*): Self = this.set("docChanges", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocChanges(value: js.Array[ISingleDBEvent]): Self = this.set("docChanges", value.asInstanceOf[js.Any])
+    def setType(value: SnapshotType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocs(value: Record[String, _]): Self = this.set("docs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: SnapshotType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

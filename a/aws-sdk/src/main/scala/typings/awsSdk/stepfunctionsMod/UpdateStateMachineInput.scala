@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateStateMachineInput extends js.Object {
+trait UpdateStateMachineInput extends StObject {
   
   /**
     * The Amazon States Language definition of the state machine. See Amazon States Language.
@@ -41,45 +42,33 @@ object UpdateStateMachineInput {
   }
   
   @scala.inline
-  implicit class UpdateStateMachineInputOps[Self <: UpdateStateMachineInput] (val x: Self) extends AnyVal {
+  implicit class UpdateStateMachineInputMutableBuilder[Self <: UpdateStateMachineInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "loggingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateMachineArn(value: Arn): Self = this.set("stateMachineArn", value.asInstanceOf[js.Any])
+    def setLoggingConfigurationUndefined: Self = StObject.set(x, "loggingConfiguration", js.undefined)
     
     @scala.inline
-    def setDefinition(value: Definition): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
     @scala.inline
-    def setLoggingConfiguration(value: LoggingConfiguration): Self = this.set("loggingConfiguration", value.asInstanceOf[js.Any])
+    def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoggingConfiguration: Self = this.set("loggingConfiguration", js.undefined)
+    def setTracingConfiguration(value: TracingConfiguration): Self = StObject.set(x, "tracingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Arn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
-    
-    @scala.inline
-    def setTracingConfiguration(value: TracingConfiguration): Self = this.set("tracingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracingConfiguration: Self = this.set("tracingConfiguration", js.undefined)
+    def setTracingConfigurationUndefined: Self = StObject.set(x, "tracingConfiguration", js.undefined)
   }
 }

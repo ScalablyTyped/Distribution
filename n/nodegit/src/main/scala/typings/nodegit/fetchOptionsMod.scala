@@ -3,14 +3,14 @@ package typings.nodegit
 import org.scalablytyped.runtime.StringDictionary
 import typings.nodegit.remoteCallbacksMod.RemoteCallbacks
 import typings.nodegit.strArrayMod.Strarray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/fetch-options", JSImport.Namespace)
-@js.native
-object fetchOptionsMod extends js.Object {
+object fetchOptionsMod {
   
+  @JSImport("nodegit/fetch-options", "FetchOptions")
   @js.native
   class FetchOptions ()
     extends /* key */ StringDictionary[js.Any] {

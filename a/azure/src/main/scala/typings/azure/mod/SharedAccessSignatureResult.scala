@@ -1,12 +1,13 @@
 package typings.azure.mod
 
 import typings.azure.anon.Se
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedAccessSignatureResult extends js.Object {
+trait SharedAccessSignatureResult extends StObject {
   
   var baseUrl: String = js.native
   
@@ -25,30 +26,18 @@ object SharedAccessSignatureResult {
   }
   
   @scala.inline
-  implicit class SharedAccessSignatureResultOps[Self <: SharedAccessSignatureResult] (val x: Self) extends AnyVal {
+  implicit class SharedAccessSignatureResultMutableBuilder[Self <: SharedAccessSignatureResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryString(value: Se): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryString(value: Se): Self = this.set("queryString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: () => String): Self = this.set("url", js.Any.fromFunction0(value))
+    def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
   }
 }

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents transfer coding information used in the Transfer-Encoding HTTP header on an HTTP request. */
 @js.native
-trait HttpTransferCodingHeaderValue extends js.Object {
+trait HttpTransferCodingHeaderValue extends StObject {
   
   /** Gets a set of parameters used in the Transfer-Encoding HTTP header. */
   var parameters: IVector[HttpNameValueHeaderValue] = js.native
@@ -24,24 +25,12 @@ object HttpTransferCodingHeaderValue {
   }
   
   @scala.inline
-  implicit class HttpTransferCodingHeaderValueOps[Self <: HttpTransferCodingHeaderValue] (val x: Self) extends AnyVal {
+  implicit class HttpTransferCodingHeaderValueMutableBuilder[Self <: HttpTransferCodingHeaderValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,13 @@ import typings.isMyJsonValid.anon.`2`
 import typings.isMyJsonValid.anon.`3`
 import typings.isMyJsonValid.anon.`4`
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Factory extends js.Object {
+trait Factory extends StObject {
   
   def apply(schema: AllOptionalObjectSchema[Record[String, AnySchema]]): Validator[
     AllOptionalObjectSchema[Record[String, AnySchema]], 

@@ -11,13 +11,14 @@ import typings.fhir.fhir.id
 import typings.fhir.fhir.unsignedInt
 import typings.fhir.fhir.uri
 import typings.fhirKitClient.fhirKitClientStrings.`batch-response`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined fhir.fhir.Bundle & {  type :'batch-response'} */
 @js.native
-trait Bundletypebatchresponse extends js.Object {
+trait Bundletypebatchresponse extends StObject {
   
   /**
     * Contains extended information for property 'id'.
@@ -114,123 +115,111 @@ object Bundletypebatchresponse {
   }
   
   @scala.inline
-  implicit class BundletypebatchresponseOps[Self <: Bundletypebatchresponse] (val x: Self) extends AnyVal {
+  implicit class BundletypebatchresponseMutableBuilder[Self <: Bundletypebatchresponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntry(value: js.Array[BundleEntry]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryVarargs(value: BundleEntry*): Self = StObject.set(x, "entry", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: code with `batch-response`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_id(value: Element): Self = this.set("_id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def delete_id: Self = this.set("_id", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_implicitRules(value: Element): Self = this.set("_implicitRules", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def delete_implicitRules: Self = this.set("_implicitRules", js.undefined)
+    def setImplicitRules(value: uri): Self = StObject.set(x, "implicitRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_language(value: Element): Self = this.set("_language", value.asInstanceOf[js.Any])
+    def setImplicitRulesUndefined: Self = StObject.set(x, "implicitRules", js.undefined)
     
     @scala.inline
-    def delete_language: Self = this.set("_language", js.undefined)
+    def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_resourceType(value: Element): Self = this.set("_resourceType", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def delete_resourceType: Self = this.set("_resourceType", js.undefined)
+    def setLink(value: js.Array[BundleLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_total(value: Element): Self = this.set("_total", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def delete_total: Self = this.set("_total", js.undefined)
+    def setLinkVarargs(value: BundleLink*): Self = StObject.set(x, "link", js.Array(value :_*))
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def setEntryVarargs(value: BundleEntry*): Self = this.set("entry", js.Array(value :_*))
+    def setResourceType(value: code): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntry(value: js.Array[BundleEntry]): Self = this.set("entry", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deleteEntry: Self = this.set("entry", js.undefined)
+    def setSignature(value: Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: id): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setTotal(value: unsignedInt): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setType(value: code with `batch-response`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplicitRules(value: uri): Self = this.set("implicitRules", value.asInstanceOf[js.Any])
+    def set_id(value: Element): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImplicitRules: Self = this.set("implicitRules", js.undefined)
+    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
     
     @scala.inline
-    def setLanguage(value: code): Self = this.set("language", value.asInstanceOf[js.Any])
+    def set_implicitRules(value: Element): Self = StObject.set(x, "_implicitRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def set_implicitRulesUndefined: Self = StObject.set(x, "_implicitRules", js.undefined)
     
     @scala.inline
-    def setLinkVarargs(value: BundleLink*): Self = this.set("link", js.Array(value :_*))
+    def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: js.Array[BundleLink]): Self = this.set("link", value.asInstanceOf[js.Any])
+    def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def set_resourceType(value: Element): Self = StObject.set(x, "_resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: Meta): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def set_resourceTypeUndefined: Self = StObject.set(x, "_resourceType", js.undefined)
     
     @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def set_total(value: Element): Self = StObject.set(x, "_total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: code): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def set_totalUndefined: Self = StObject.set(x, "_total", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignature(value: Signature): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: unsignedInt): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.rcTable.interfaceMod
 
 import typings.std.HTMLElement
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableSticky extends js.Object {
+trait TableSticky extends StObject {
   
   var getContainer: js.UndefOr[js.Function0[Window | HTMLElement]] = js.native
   
@@ -24,36 +25,24 @@ object TableSticky {
   }
   
   @scala.inline
-  implicit class TableStickyOps[Self <: TableSticky] (val x: Self) extends AnyVal {
+  implicit class TableStickyMutableBuilder[Self <: TableSticky] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetContainer(value: () => Window | HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetHeader(value: Double): Self = StObject.set(x, "offsetHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetContainer(value: () => Window | HTMLElement): Self = this.set("getContainer", js.Any.fromFunction0(value))
+    def setOffsetHeaderUndefined: Self = StObject.set(x, "offsetHeader", js.undefined)
     
     @scala.inline
-    def deleteGetContainer: Self = this.set("getContainer", js.undefined)
+    def setOffsetScroll(value: Double): Self = StObject.set(x, "offsetScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetHeader(value: Double): Self = this.set("offsetHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetHeader: Self = this.set("offsetHeader", js.undefined)
-    
-    @scala.inline
-    def setOffsetScroll(value: Double): Self = this.set("offsetScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetScroll: Self = this.set("offsetScroll", js.undefined)
+    def setOffsetScrollUndefined: Self = StObject.set(x, "offsetScroll", js.undefined)
   }
 }

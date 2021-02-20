@@ -1,11 +1,12 @@
 package typings.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinearInterpolatorProps extends js.Object {
+trait LinearInterpolatorProps extends StObject {
   
   var around: js.UndefOr[js.Array[Double]] = js.native
   
@@ -20,36 +21,24 @@ object LinearInterpolatorProps {
   }
   
   @scala.inline
-  implicit class LinearInterpolatorPropsOps[Self <: LinearInterpolatorProps] (val x: Self) extends AnyVal {
+  implicit class LinearInterpolatorPropsMutableBuilder[Self <: LinearInterpolatorProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAround(value: js.Array[Double]): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAroundUndefined: Self = StObject.set(x, "around", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAroundVarargs(value: Double*): Self = StObject.set(x, "around", js.Array(value :_*))
     
     @scala.inline
-    def setAroundVarargs(value: Double*): Self = this.set("around", js.Array(value :_*))
+    def setTransitionProps(value: js.Array[String]): Self = StObject.set(x, "transitionProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAround(value: js.Array[Double]): Self = this.set("around", value.asInstanceOf[js.Any])
+    def setTransitionPropsUndefined: Self = StObject.set(x, "transitionProps", js.undefined)
     
     @scala.inline
-    def deleteAround: Self = this.set("around", js.undefined)
-    
-    @scala.inline
-    def setTransitionPropsVarargs(value: String*): Self = this.set("transitionProps", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransitionProps(value: js.Array[String]): Self = this.set("transitionProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionProps: Self = this.set("transitionProps", js.undefined)
+    def setTransitionPropsVarargs(value: String*): Self = StObject.set(x, "transitionProps", js.Array(value :_*))
   }
 }

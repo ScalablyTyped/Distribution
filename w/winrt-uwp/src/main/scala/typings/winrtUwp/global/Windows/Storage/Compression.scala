@@ -3,18 +3,18 @@ package typings.winrtUwp.global.Windows.Storage
 import typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a unified interface to the compression features included in Windows that frees developers from responsibility for managing block sizes, compression parameters, and other details that the native compression API requires. */
-@JSGlobal("Windows.Storage.Compression")
-@js.native
-object Compression extends js.Object {
+object Compression {
   
   /** Identifies a compression algorithm to use when creating an instance of a compressor. */
+  @JSGlobal("Windows.Storage.Compression.CompressAlgorithm")
   @js.native
-  object CompressAlgorithm extends js.Object {
+  object CompressAlgorithm extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Compression.CompressAlgorithm with Double] = js.native
@@ -33,6 +33,7 @@ object Compression extends js.Object {
   }
   
   /** A compressor takes information written to a stream and compresses it using a compression algorithm. */
+  @JSGlobal("Windows.Storage.Compression.Compressor")
   @js.native
   class Compressor protected ()
     extends typings.winrtUwp.Windows.Storage.Compression.Compressor {
@@ -51,6 +52,7 @@ object Compression extends js.Object {
   }
   
   /** A decompressor takes a stream compressed by a compressor and decompresses it. */
+  @JSGlobal("Windows.Storage.Compression.Decompressor")
   @js.native
   class Decompressor protected ()
     extends typings.winrtUwp.Windows.Storage.Compression.Decompressor {

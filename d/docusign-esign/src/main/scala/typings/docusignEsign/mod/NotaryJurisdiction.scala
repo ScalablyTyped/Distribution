@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotaryJurisdiction extends js.Object {
+trait NotaryJurisdiction extends StObject {
   
   var commissionExpiration: js.UndefOr[String] = js.native
   
@@ -35,62 +36,50 @@ object NotaryJurisdiction {
   }
   
   @scala.inline
-  implicit class NotaryJurisdictionOps[Self <: NotaryJurisdiction] (val x: Self) extends AnyVal {
+  implicit class NotaryJurisdictionMutableBuilder[Self <: NotaryJurisdiction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommissionExpiration(value: String): Self = StObject.set(x, "commissionExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommissionExpirationUndefined: Self = StObject.set(x, "commissionExpiration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommissionId(value: String): Self = StObject.set(x, "commissionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommissionExpiration(value: String): Self = this.set("commissionExpiration", value.asInstanceOf[js.Any])
+    def setCommissionIdUndefined: Self = StObject.set(x, "commissionId", js.undefined)
     
     @scala.inline
-    def deleteCommissionExpiration: Self = this.set("commissionExpiration", js.undefined)
+    def setCounty(value: String): Self = StObject.set(x, "county", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommissionId(value: String): Self = this.set("commissionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommissionId: Self = this.set("commissionId", js.undefined)
-    
-    @scala.inline
-    def setCounty(value: String): Self = this.set("county", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCounty: Self = this.set("county", js.undefined)
+    def setCountyUndefined: Self = StObject.set(x, "county", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setJurisdiction(value: Jurisdiction): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
+    def setJurisdiction(value: Jurisdiction): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
+    def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
     
     @scala.inline
-    def setRegisteredName(value: String): Self = this.set("registeredName", value.asInstanceOf[js.Any])
+    def setRegisteredName(value: String): Self = StObject.set(x, "registeredName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegisteredName: Self = this.set("registeredName", js.undefined)
+    def setRegisteredNameUndefined: Self = StObject.set(x, "registeredName", js.undefined)
     
     @scala.inline
-    def setSealType(value: String): Self = this.set("sealType", value.asInstanceOf[js.Any])
+    def setSealType(value: String): Self = StObject.set(x, "sealType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSealType: Self = this.set("sealType", js.undefined)
+    def setSealTypeUndefined: Self = StObject.set(x, "sealType", js.undefined)
   }
 }

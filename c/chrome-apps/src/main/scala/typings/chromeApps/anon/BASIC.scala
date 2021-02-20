@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.basic_
 import typings.chromeApps.chromeAppsStrings.image_
 import typings.chromeApps.chromeAppsStrings.list_
 import typings.chromeApps.chromeAppsStrings.progress_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BASIC extends js.Object {
+trait BASIC extends StObject {
   
   var BASIC: basic_ = js.native
   
@@ -28,30 +29,18 @@ object BASIC {
   }
   
   @scala.inline
-  implicit class BASICOps[Self <: BASIC] (val x: Self) extends AnyVal {
+  implicit class BASICMutableBuilder[Self <: BASIC] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBASIC(value: basic_): Self = StObject.set(x, "BASIC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIMAGE(value: image_): Self = StObject.set(x, "IMAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLIST(value: list_): Self = StObject.set(x, "LIST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBASIC(value: basic_): Self = this.set("BASIC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIMAGE(value: image_): Self = this.set("IMAGE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLIST(value: list_): Self = this.set("LIST", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPROGRESS(value: progress_): Self = this.set("PROGRESS", value.asInstanceOf[js.Any])
+    def setPROGRESS(value: progress_): Self = StObject.set(x, "PROGRESS", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.nvd3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 @js.native
-trait Models extends js.Object {
+trait Models extends StObject {
   
   def boxPlotChart(): BoxPlotChart = js.native
   

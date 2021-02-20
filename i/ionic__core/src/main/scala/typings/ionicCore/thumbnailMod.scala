@@ -1,14 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/thumbnail/thumbnail", JSImport.Namespace)
-@js.native
-object thumbnailMod extends js.Object {
+object thumbnailMod {
   
+  @JSImport("@ionic/core/dist/types/components/thumbnail/thumbnail", "Thumbnail")
   @js.native
   class Thumbnail () extends ComponentInterface {
     

@@ -2,6 +2,7 @@ package typings.jqueryui.JQueryUI
 
 import typings.jqueryui.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,198 +77,186 @@ object DraggableOptions {
   }
   
   @scala.inline
-  implicit class DraggableOptionsOps[Self <: DraggableOptions] (val x: Self) extends AnyVal {
+  implicit class DraggableOptionsMutableBuilder[Self <: DraggableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddClasses(value: Boolean): Self = StObject.set(x, "addClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddClassesUndefined: Self = StObject.set(x, "addClasses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddClasses(value: Boolean): Self = this.set("addClasses", value.asInstanceOf[js.Any])
+    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
     @scala.inline
-    def deleteAddClasses: Self = this.set("addClasses", js.undefined)
+    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendTo(value: js.Any): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setClasses(value: DraggableClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setConnectToSortable(value: Element | js.Array[Element] | JQuery | String): Self = StObject.set(x, "connectToSortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: DraggableClasses): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setConnectToSortableUndefined: Self = StObject.set(x, "connectToSortable", js.undefined)
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setConnectToSortableVarargs(value: Element*): Self = StObject.set(x, "connectToSortable", js.Array(value :_*))
     
     @scala.inline
-    def setConnectToSortableVarargs(value: Element*): Self = this.set("connectToSortable", js.Array(value :_*))
+    def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectToSortable(value: Element | js.Array[Element] | JQuery | String): Self = this.set("connectToSortable", value.asInstanceOf[js.Any])
+    def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
     @scala.inline
-    def deleteConnectToSortable: Self = this.set("connectToSortable", js.undefined)
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainment(value: js.Any): Self = this.set("containment", value.asInstanceOf[js.Any])
+    def setCursorAt(value: js.Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainment: Self = this.set("containment", js.undefined)
+    def setCursorAtUndefined: Self = StObject.set(x, "cursorAt", js.undefined)
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorAt(value: js.Any): Self = this.set("cursorAt", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteCursorAt: Self = this.set("cursorAt", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setGrid(value: js.Array[Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value :_*))
     
     @scala.inline
-    def setGridVarargs(value: Double*): Self = this.set("grid", js.Array(value :_*))
+    def setHandle(value: js.Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: js.Array[Double]): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setHelper(value: js.Any): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: js.Any): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
     @scala.inline
-    def deleteHandle: Self = this.set("handle", js.undefined)
+    def setIframeFix(value: js.Any): Self = StObject.set(x, "iframeFix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelper(value: js.Any): Self = this.set("helper", value.asInstanceOf[js.Any])
+    def setIframeFixUndefined: Self = StObject.set(x, "iframeFix", js.undefined)
     
     @scala.inline
-    def deleteHelper: Self = this.set("helper", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframeFix(value: js.Any): Self = this.set("iframeFix", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteIframeFix: Self = this.set("iframeFix", js.undefined)
+    def setRefreshPositions(value: Boolean): Self = StObject.set(x, "refreshPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setRefreshPositionsUndefined: Self = StObject.set(x, "refreshPositions", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setRevert(value: js.Any): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshPositions(value: Boolean): Self = this.set("refreshPositions", value.asInstanceOf[js.Any])
+    def setRevertDuration(value: Double): Self = StObject.set(x, "revertDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRefreshPositions: Self = this.set("refreshPositions", js.undefined)
+    def setRevertDurationUndefined: Self = StObject.set(x, "revertDuration", js.undefined)
     
     @scala.inline
-    def setRevert(value: js.Any): Self = this.set("revert", value.asInstanceOf[js.Any])
+    def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
     
     @scala.inline
-    def deleteRevert: Self = this.set("revert", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevertDuration(value: Double): Self = this.set("revertDuration", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteRevertDuration: Self = this.set("revertDuration", js.undefined)
+    def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
     
     @scala.inline
-    def setScroll(value: Boolean): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
     
     @scala.inline
-    def setScrollSensitivity(value: Double): Self = this.set("scrollSensitivity", value.asInstanceOf[js.Any])
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
     @scala.inline
-    def deleteScrollSensitivity: Self = this.set("scrollSensitivity", js.undefined)
+    def setSnap(value: js.Any): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSpeed(value: Double): Self = this.set("scrollSpeed", value.asInstanceOf[js.Any])
+    def setSnapMode(value: String): Self = StObject.set(x, "snapMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSpeed: Self = this.set("scrollSpeed", js.undefined)
+    def setSnapModeUndefined: Self = StObject.set(x, "snapMode", js.undefined)
     
     @scala.inline
-    def setSnap(value: js.Any): Self = this.set("snap", value.asInstanceOf[js.Any])
+    def setSnapTolerance(value: Double): Self = StObject.set(x, "snapTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSnap: Self = this.set("snap", js.undefined)
+    def setSnapToleranceUndefined: Self = StObject.set(x, "snapTolerance", js.undefined)
     
     @scala.inline
-    def setSnapMode(value: String): Self = this.set("snapMode", value.asInstanceOf[js.Any])
+    def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
     
     @scala.inline
-    def deleteSnapMode: Self = this.set("snapMode", js.undefined)
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapTolerance(value: Double): Self = this.set("snapTolerance", value.asInstanceOf[js.Any])
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def deleteSnapTolerance: Self = this.set("snapTolerance", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

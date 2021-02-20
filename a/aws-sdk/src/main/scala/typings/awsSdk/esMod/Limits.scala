@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Limits extends js.Object {
+trait Limits extends StObject {
   
   /**
     *  List of additional limits that are specific to a given InstanceType and for each of it's  InstanceRole  . 
@@ -28,42 +29,30 @@ object Limits {
   }
   
   @scala.inline
-  implicit class LimitsOps[Self <: Limits] (val x: Self) extends AnyVal {
+  implicit class LimitsMutableBuilder[Self <: Limits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalLimits(value: AdditionalLimitList): Self = StObject.set(x, "AdditionalLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalLimitsUndefined: Self = StObject.set(x, "AdditionalLimits", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalLimitsVarargs(value: AdditionalLimit*): Self = StObject.set(x, "AdditionalLimits", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalLimitsVarargs(value: AdditionalLimit*): Self = this.set("AdditionalLimits", js.Array(value :_*))
+    def setInstanceLimits(value: InstanceLimits): Self = StObject.set(x, "InstanceLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalLimits(value: AdditionalLimitList): Self = this.set("AdditionalLimits", value.asInstanceOf[js.Any])
+    def setInstanceLimitsUndefined: Self = StObject.set(x, "InstanceLimits", js.undefined)
     
     @scala.inline
-    def deleteAdditionalLimits: Self = this.set("AdditionalLimits", js.undefined)
+    def setStorageTypes(value: StorageTypeList): Self = StObject.set(x, "StorageTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceLimits(value: InstanceLimits): Self = this.set("InstanceLimits", value.asInstanceOf[js.Any])
+    def setStorageTypesUndefined: Self = StObject.set(x, "StorageTypes", js.undefined)
     
     @scala.inline
-    def deleteInstanceLimits: Self = this.set("InstanceLimits", js.undefined)
-    
-    @scala.inline
-    def setStorageTypesVarargs(value: StorageType*): Self = this.set("StorageTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setStorageTypes(value: StorageTypeList): Self = this.set("StorageTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageTypes: Self = this.set("StorageTypes", js.undefined)
+    def setStorageTypesVarargs(value: StorageType*): Self = StObject.set(x, "StorageTypes", js.Array(value :_*))
   }
 }

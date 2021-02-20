@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.core.v1
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ServiceSpec describes the attributes that a user creates on a service.
   */
 @js.native
-trait ServiceSpec extends js.Object {
+trait ServiceSpec extends StObject {
   
   /**
     * clusterIP is the IP address of the service and is usually assigned randomly by the master. If an address is specified manually and is not in use by others, it will be allocated to the service; otherwise, creation of the service will fail. This field can not be changed through updates. Valid values are "None", empty string (""), or a valid IP address. "None" can be specified for headless services when proxying is not required. Only applies to types ClusterIP, NodePort, and LoadBalancer. Ignored if type is ExternalName. More info: https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies
@@ -96,120 +97,108 @@ object ServiceSpec {
   }
   
   @scala.inline
-  implicit class ServiceSpecOps[Self <: ServiceSpec] (val x: Self) extends AnyVal {
+  implicit class ServiceSpecMutableBuilder[Self <: ServiceSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIP(value: Input[String]): Self = StObject.set(x, "clusterIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterIPUndefined: Self = StObject.set(x, "clusterIP", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalIPs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "externalIPs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIP(value: Input[String]): Self = this.set("clusterIP", value.asInstanceOf[js.Any])
+    def setExternalIPsUndefined: Self = StObject.set(x, "externalIPs", js.undefined)
     
     @scala.inline
-    def deleteClusterIP: Self = this.set("clusterIP", js.undefined)
+    def setExternalIPsVarargs(value: Input[String]*): Self = StObject.set(x, "externalIPs", js.Array(value :_*))
     
     @scala.inline
-    def setExternalIPsVarargs(value: Input[String]*): Self = this.set("externalIPs", js.Array(value :_*))
+    def setExternalName(value: Input[String]): Self = StObject.set(x, "externalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalIPs(value: Input[js.Array[Input[String]]]): Self = this.set("externalIPs", value.asInstanceOf[js.Any])
+    def setExternalNameUndefined: Self = StObject.set(x, "externalName", js.undefined)
     
     @scala.inline
-    def deleteExternalIPs: Self = this.set("externalIPs", js.undefined)
+    def setExternalTrafficPolicy(value: Input[String]): Self = StObject.set(x, "externalTrafficPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalName(value: Input[String]): Self = this.set("externalName", value.asInstanceOf[js.Any])
+    def setExternalTrafficPolicyUndefined: Self = StObject.set(x, "externalTrafficPolicy", js.undefined)
     
     @scala.inline
-    def deleteExternalName: Self = this.set("externalName", js.undefined)
+    def setHealthCheckNodePort(value: Input[Double]): Self = StObject.set(x, "healthCheckNodePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalTrafficPolicy(value: Input[String]): Self = this.set("externalTrafficPolicy", value.asInstanceOf[js.Any])
+    def setHealthCheckNodePortUndefined: Self = StObject.set(x, "healthCheckNodePort", js.undefined)
     
     @scala.inline
-    def deleteExternalTrafficPolicy: Self = this.set("externalTrafficPolicy", js.undefined)
+    def setIpFamily(value: Input[String]): Self = StObject.set(x, "ipFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckNodePort(value: Input[Double]): Self = this.set("healthCheckNodePort", value.asInstanceOf[js.Any])
+    def setIpFamilyUndefined: Self = StObject.set(x, "ipFamily", js.undefined)
     
     @scala.inline
-    def deleteHealthCheckNodePort: Self = this.set("healthCheckNodePort", js.undefined)
+    def setLoadBalancerIP(value: Input[String]): Self = StObject.set(x, "loadBalancerIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpFamily(value: Input[String]): Self = this.set("ipFamily", value.asInstanceOf[js.Any])
+    def setLoadBalancerIPUndefined: Self = StObject.set(x, "loadBalancerIP", js.undefined)
     
     @scala.inline
-    def deleteIpFamily: Self = this.set("ipFamily", js.undefined)
+    def setLoadBalancerSourceRanges(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "loadBalancerSourceRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerIP(value: Input[String]): Self = this.set("loadBalancerIP", value.asInstanceOf[js.Any])
+    def setLoadBalancerSourceRangesUndefined: Self = StObject.set(x, "loadBalancerSourceRanges", js.undefined)
     
     @scala.inline
-    def deleteLoadBalancerIP: Self = this.set("loadBalancerIP", js.undefined)
+    def setLoadBalancerSourceRangesVarargs(value: Input[String]*): Self = StObject.set(x, "loadBalancerSourceRanges", js.Array(value :_*))
     
     @scala.inline
-    def setLoadBalancerSourceRangesVarargs(value: Input[String]*): Self = this.set("loadBalancerSourceRanges", js.Array(value :_*))
+    def setPorts(value: Input[js.Array[Input[ServicePort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerSourceRanges(value: Input[js.Array[Input[String]]]): Self = this.set("loadBalancerSourceRanges", value.asInstanceOf[js.Any])
+    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
     @scala.inline
-    def deleteLoadBalancerSourceRanges: Self = this.set("loadBalancerSourceRanges", js.undefined)
+    def setPortsVarargs(value: Input[ServicePort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
     @scala.inline
-    def setPortsVarargs(value: Input[ServicePort]*): Self = this.set("ports", js.Array(value :_*))
+    def setPublishNotReadyAddresses(value: Input[Boolean]): Self = StObject.set(x, "publishNotReadyAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPorts(value: Input[js.Array[Input[ServicePort]]]): Self = this.set("ports", value.asInstanceOf[js.Any])
+    def setPublishNotReadyAddressesUndefined: Self = StObject.set(x, "publishNotReadyAddresses", js.undefined)
     
     @scala.inline
-    def deletePorts: Self = this.set("ports", js.undefined)
+    def setSelector(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishNotReadyAddresses(value: Input[Boolean]): Self = this.set("publishNotReadyAddresses", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deletePublishNotReadyAddresses: Self = this.set("publishNotReadyAddresses", js.undefined)
+    def setSessionAffinity(value: Input[String]): Self = StObject.set(x, "sessionAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: Input[StringDictionary[Input[String]]]): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSessionAffinityConfig(value: Input[SessionAffinityConfig]): Self = StObject.set(x, "sessionAffinityConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSessionAffinityConfigUndefined: Self = StObject.set(x, "sessionAffinityConfig", js.undefined)
     
     @scala.inline
-    def setSessionAffinity(value: Input[String]): Self = this.set("sessionAffinity", value.asInstanceOf[js.Any])
+    def setSessionAffinityUndefined: Self = StObject.set(x, "sessionAffinity", js.undefined)
     
     @scala.inline
-    def deleteSessionAffinity: Self = this.set("sessionAffinity", js.undefined)
+    def setTopologyKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "topologyKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionAffinityConfig(value: Input[SessionAffinityConfig]): Self = this.set("sessionAffinityConfig", value.asInstanceOf[js.Any])
+    def setTopologyKeysUndefined: Self = StObject.set(x, "topologyKeys", js.undefined)
     
     @scala.inline
-    def deleteSessionAffinityConfig: Self = this.set("sessionAffinityConfig", js.undefined)
+    def setTopologyKeysVarargs(value: Input[String]*): Self = StObject.set(x, "topologyKeys", js.Array(value :_*))
     
     @scala.inline
-    def setTopologyKeysVarargs(value: Input[String]*): Self = this.set("topologyKeys", js.Array(value :_*))
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopologyKeys(value: Input[js.Array[Input[String]]]): Self = this.set("topologyKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopologyKeys: Self = this.set("topologyKeys", js.undefined)
-    
-    @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

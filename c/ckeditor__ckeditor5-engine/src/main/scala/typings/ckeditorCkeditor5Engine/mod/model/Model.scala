@@ -10,6 +10,7 @@ import typings.ckeditorCkeditor5Engine.mod.model.operation.Operation
 import typings.ckeditorCkeditor5Utils.mod.Emitter
 import typings.ckeditorCkeditor5Utils.mod.Observable
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

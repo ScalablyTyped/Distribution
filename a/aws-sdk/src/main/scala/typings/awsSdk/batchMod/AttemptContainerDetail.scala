@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttemptContainerDetail extends js.Object {
+trait AttemptContainerDetail extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon ECS container instance that hosts the job attempt.
@@ -46,57 +47,45 @@ object AttemptContainerDetail {
   }
   
   @scala.inline
-  implicit class AttemptContainerDetailOps[Self <: AttemptContainerDetail] (val x: Self) extends AnyVal {
+  implicit class AttemptContainerDetailMutableBuilder[Self <: AttemptContainerDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerInstanceArn(value: String): Self = StObject.set(x, "containerInstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerInstanceArnUndefined: Self = StObject.set(x, "containerInstanceArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExitCode(value: Integer): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerInstanceArn(value: String): Self = this.set("containerInstanceArn", value.asInstanceOf[js.Any])
+    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
     @scala.inline
-    def deleteContainerInstanceArn: Self = this.set("containerInstanceArn", js.undefined)
+    def setLogStreamName(value: String): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitCode(value: Integer): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    def setLogStreamNameUndefined: Self = StObject.set(x, "logStreamName", js.undefined)
     
     @scala.inline
-    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    def setNetworkInterfaces(value: NetworkInterfaceList): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogStreamName(value: String): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
+    def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
     
     @scala.inline
-    def deleteLogStreamName: Self = this.set("logStreamName", js.undefined)
+    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = this.set("networkInterfaces", js.Array(value :_*))
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaces(value: NetworkInterfaceList): Self = this.set("networkInterfaces", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaces: Self = this.set("networkInterfaces", js.undefined)
+    def setTaskArn(value: String): Self = StObject.set(x, "taskArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
-    
-    @scala.inline
-    def setTaskArn(value: String): Self = this.set("taskArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskArn: Self = this.set("taskArn", js.undefined)
+    def setTaskArnUndefined: Self = StObject.set(x, "taskArn", js.undefined)
   }
 }

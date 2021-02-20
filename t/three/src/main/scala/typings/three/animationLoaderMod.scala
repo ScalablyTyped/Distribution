@@ -6,14 +6,14 @@ import typings.std.ProgressEvent
 import typings.three.animationClipMod.AnimationClip
 import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/loaders/AnimationLoader", JSImport.Namespace)
-@js.native
-object animationLoaderMod extends js.Object {
+object animationLoaderMod {
   
+  @JSImport("three/src/loaders/AnimationLoader", "AnimationLoader")
   @js.native
   class AnimationLoader () extends Loader {
     def this(manager: LoadingManager) = this()

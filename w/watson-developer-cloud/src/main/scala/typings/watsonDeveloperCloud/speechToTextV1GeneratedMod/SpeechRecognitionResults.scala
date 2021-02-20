@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SpeechRecognitionResults. */
 @js.native
-trait SpeechRecognitionResults extends js.Object {
+trait SpeechRecognitionResults extends StObject {
   
   /** An index that indicates a change point in the `results` array. The service increments the index only for additional results that it sends for new audio for the same request. */
   var result_index: js.UndefOr[Double] = js.native
@@ -29,51 +30,39 @@ object SpeechRecognitionResults {
   }
   
   @scala.inline
-  implicit class SpeechRecognitionResultsOps[Self <: SpeechRecognitionResults] (val x: Self) extends AnyVal {
+  implicit class SpeechRecognitionResultsMutableBuilder[Self <: SpeechRecognitionResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResult_index(value: Double): Self = StObject.set(x, "result_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResult_indexUndefined: Self = StObject.set(x, "result_index", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[SpeechRecognitionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult_index(value: Double): Self = this.set("result_index", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteResult_index: Self = this.set("result_index", js.undefined)
+    def setResultsVarargs(value: SpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setResultsVarargs(value: SpeechRecognitionResult*): Self = this.set("results", js.Array(value :_*))
+    def setSpeaker_labels(value: js.Array[SpeakerLabelsResult]): Self = StObject.set(x, "speaker_labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: js.Array[SpeechRecognitionResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setSpeaker_labelsUndefined: Self = StObject.set(x, "speaker_labels", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setSpeaker_labelsVarargs(value: SpeakerLabelsResult*): Self = StObject.set(x, "speaker_labels", js.Array(value :_*))
     
     @scala.inline
-    def setSpeaker_labelsVarargs(value: SpeakerLabelsResult*): Self = this.set("speaker_labels", js.Array(value :_*))
+    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeaker_labels(value: js.Array[SpeakerLabelsResult]): Self = this.set("speaker_labels", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
     @scala.inline
-    def deleteSpeaker_labels: Self = this.set("speaker_labels", js.undefined)
-    
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

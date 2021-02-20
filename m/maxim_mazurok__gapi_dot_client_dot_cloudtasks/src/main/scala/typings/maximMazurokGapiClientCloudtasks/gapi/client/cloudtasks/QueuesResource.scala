@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientCloudtasks.anon.Resource
 import typings.maximMazurokGapiClientCloudtasks.anon.UpdateMask
 import typings.maximMazurokGapiClientCloudtasks.anon.UploadType
 import typings.maximMazurokGapiClientCloudtasks.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueuesResource extends js.Object {
+trait QueuesResource extends StObject {
   
   def create(request: Alt, body: Queue): Request[Queue] = js.native
   /**

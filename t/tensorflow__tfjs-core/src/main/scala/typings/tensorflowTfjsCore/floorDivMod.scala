@@ -3,20 +3,23 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/floorDiv", JSImport.Namespace)
-@js.native
-object floorDivMod extends js.Object {
+object floorDivMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/floorDiv", "floorDiv")
   @js.native
-  object floorDiv extends js.Object {
-    
-    def apply[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-    def apply[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-    def apply[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-    def apply[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
-  }
+  def floorDiv[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/floorDiv", "floorDiv")
+  @js.native
+  def floorDiv[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/floorDiv", "floorDiv")
+  @js.native
+  def floorDiv[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/floorDiv", "floorDiv")
+  @js.native
+  def floorDiv[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
 }

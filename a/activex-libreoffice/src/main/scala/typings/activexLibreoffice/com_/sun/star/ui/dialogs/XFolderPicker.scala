@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.ui.dialogs
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,36 +71,24 @@ object XFolderPicker {
   }
   
   @scala.inline
-  implicit class XFolderPickerOps[Self <: XFolderPicker] (val x: Self) extends AnyVal {
+  implicit class XFolderPickerMutableBuilder[Self <: XFolderPicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectory(value: String): Self = StObject.set(x, "Directory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayDirectory(value: String): Self = StObject.set(x, "DisplayDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDirectory(value: () => String): Self = StObject.set(x, "getDirectory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDirectory(value: String): Self = this.set("Directory", value.asInstanceOf[js.Any])
+    def setGetDisplayDirectory(value: () => String): Self = StObject.set(x, "getDisplayDirectory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisplayDirectory(value: String): Self = this.set("DisplayDirectory", value.asInstanceOf[js.Any])
+    def setSetDescription(value: String => Unit): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDirectory(value: () => String): Self = this.set("getDirectory", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetDisplayDirectory(value: () => String): Self = this.set("getDisplayDirectory", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDescription(value: String => Unit): Self = this.set("setDescription", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDisplayDirectory(value: String => Unit): Self = this.set("setDisplayDirectory", js.Any.fromFunction1(value))
+    def setSetDisplayDirectory(value: String => Unit): Self = StObject.set(x, "setDisplayDirectory", js.Any.fromFunction1(value))
   }
 }

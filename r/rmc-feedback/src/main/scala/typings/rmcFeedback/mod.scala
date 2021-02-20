@@ -1,21 +1,28 @@
 package typings.rmcFeedback
 
 import typings.rmcFeedback.anon.Disabled
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rmc-feedback", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("rmc-feedback", JSImport.Default)
   @js.native
   class default ()
     extends typings.rmcFeedback.touchFeedbackMod.default
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var defaultProps: Disabled = js.native
+    @JSImport("rmc-feedback", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rmc-feedback", "default.defaultProps")
+    @js.native
+    def defaultProps: Disabled = js.native
+    @scala.inline
+    def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

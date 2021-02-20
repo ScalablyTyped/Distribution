@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommenderV1MarkRecommendationClaimedRequest extends js.Object {
+trait GoogleCloudRecommenderV1MarkRecommendationClaimedRequest extends StObject {
   
   /** Required. Fingerprint of the Recommendation. Provides optimistic locking. */
   var etag: js.UndefOr[String] = js.native
@@ -30,34 +31,22 @@ object GoogleCloudRecommenderV1MarkRecommendationClaimedRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommenderV1MarkRecommendationClaimedRequestOps[Self <: GoogleCloudRecommenderV1MarkRecommendationClaimedRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommenderV1MarkRecommendationClaimedRequestMutableBuilder[Self <: GoogleCloudRecommenderV1MarkRecommendationClaimedRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
     def setStateMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkRecommendationClaimedRequest with TopLevel[js.Any]
-    ): Self = this.set("stateMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "stateMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStateMetadata: Self = this.set("stateMetadata", js.undefined)
+    def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowCxV3beta1PageInfo extends js.Object {
+trait GoogleCloudDialogflowCxV3beta1PageInfo extends StObject {
   
   /** Always present for WebhookRequest. Ignored for WebhookResponse. The unique identifier of the current page. Format: `projects//locations//agents//flows//pages/`. */
   var currentPage: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudDialogflowCxV3beta1PageInfo {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1PageInfoOps[Self <: GoogleCloudDialogflowCxV3beta1PageInfo] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowCxV3beta1PageInfoMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1PageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPage(value: String): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormInfo(value: GoogleCloudDialogflowCxV3beta1PageInfoFormInfo): Self = StObject.set(x, "formInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPage(value: String): Self = this.set("currentPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrentPage: Self = this.set("currentPage", js.undefined)
-    
-    @scala.inline
-    def setFormInfo(value: GoogleCloudDialogflowCxV3beta1PageInfoFormInfo): Self = this.set("formInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormInfo: Self = this.set("formInfo", js.undefined)
+    def setFormInfoUndefined: Self = StObject.set(x, "formInfo", js.undefined)
   }
 }

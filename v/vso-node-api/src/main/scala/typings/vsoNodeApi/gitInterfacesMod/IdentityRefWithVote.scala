@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,33 +53,21 @@ object IdentityRefWithVote {
   }
   
   @scala.inline
-  implicit class IdentityRefWithVoteOps[Self <: IdentityRefWithVote] (val x: Self) extends AnyVal {
+  implicit class IdentityRefWithVoteMutableBuilder[Self <: IdentityRefWithVote] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReviewerUrl(value: String): Self = StObject.set(x, "reviewerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVote(value: Double): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRequired(value: Boolean): Self = this.set("isRequired", value.asInstanceOf[js.Any])
+    def setVotedFor(value: js.Array[IdentityRefWithVote]): Self = StObject.set(x, "votedFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewerUrl(value: String): Self = this.set("reviewerUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVote(value: Double): Self = this.set("vote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVotedForVarargs(value: IdentityRefWithVote*): Self = this.set("votedFor", js.Array(value :_*))
-    
-    @scala.inline
-    def setVotedFor(value: js.Array[IdentityRefWithVote]): Self = this.set("votedFor", value.asInstanceOf[js.Any])
+    def setVotedForVarargs(value: IdentityRefWithVote*): Self = StObject.set(x, "votedFor", js.Array(value :_*))
   }
 }

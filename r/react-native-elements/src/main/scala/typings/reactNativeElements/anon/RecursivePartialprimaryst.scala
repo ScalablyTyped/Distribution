@@ -1,13 +1,14 @@
 package typings.reactNativeElements.anon
 
 import typings.reactNativeElements.mod.RecursivePartial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<{  primary :string,   secondary :string,   success :string,   error :string,   warning :string}> */
 @js.native
-trait RecursivePartialprimaryst extends js.Object {
+trait RecursivePartialprimaryst extends StObject {
   
   var error: js.UndefOr[RecursivePartial[String]] = js.native
   
@@ -28,48 +29,36 @@ object RecursivePartialprimaryst {
   }
   
   @scala.inline
-  implicit class RecursivePartialprimarystOps[Self <: RecursivePartialprimaryst] (val x: Self) extends AnyVal {
+  implicit class RecursivePartialprimarystMutableBuilder[Self <: RecursivePartialprimaryst] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: RecursivePartial[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimary(value: RecursivePartial[String]): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: RecursivePartial[String]): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setSecondary(value: RecursivePartial[String]): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: RecursivePartial[String]): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setSuccess(value: RecursivePartial[String]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondary(value: RecursivePartial[String]): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    def setWarning(value: RecursivePartial[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: RecursivePartial[String]): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: RecursivePartial[String]): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

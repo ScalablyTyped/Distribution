@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rule extends js.Object {
+trait Rule extends StObject {
   
   val Actions: RuleActions = js.native
   

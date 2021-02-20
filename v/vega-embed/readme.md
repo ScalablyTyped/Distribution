@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-embed
 
-Typings are for version 4.2.2
+Typings are for version 6.13.0
 
 ## Library description:
 Publish Vega visualizations as embedded web components.
@@ -10,9 +10,9 @@ Publish Vega visualizations as embedded web components.
 | ------------------ | :-------------: |
 | Full name          | vega-embed |
 | Keywords           | vega, data, visualization, component, embed |
-| # releases         | 77 |
-| # dependents       | 18 |
-| # downloads        | 1268664 |
+| # releases         | 41 |
+| # dependents       | 35 |
+| # downloads        | 1958688 |
 | # stars            | 0 |
 
 ## Links

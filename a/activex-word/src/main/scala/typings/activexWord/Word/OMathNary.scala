@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OMathNary extends js.Object {
+trait OMathNary extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -55,54 +56,42 @@ object OMathNary {
   }
   
   @scala.inline
-  implicit class OMathNaryOps[Self <: OMathNary] (val x: Self) extends AnyVal {
+  implicit class OMathNaryMutableBuilder[Self <: OMathNary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChar(value: Double): Self = StObject.set(x, "Char", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChar(value: Double): Self = this.set("Char", value.asInstanceOf[js.Any])
+    def setGrow(value: Boolean): Self = StObject.set(x, "Grow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setHideSub(value: Boolean): Self = StObject.set(x, "HideSub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: OMath): Self = this.set("E", value.asInstanceOf[js.Any])
+    def setHideSup(value: Boolean): Self = StObject.set(x, "HideSup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrow(value: Boolean): Self = this.set("Grow", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideSub(value: Boolean): Self = this.set("HideSub", value.asInstanceOf[js.Any])
+    def setSub(value: OMath): Self = StObject.set(x, "Sub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideSup(value: Boolean): Self = this.set("HideSup", value.asInstanceOf[js.Any])
+    def setSubSupLim(value: Boolean): Self = StObject.set(x, "SubSupLim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSup(value: OMath): Self = StObject.set(x, "Sup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSub(value: OMath): Self = this.set("Sub", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubSupLim(value: Boolean): Self = this.set("SubSupLim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSup(value: OMath): Self = this.set("Sup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotOMathNary_typekey(value: OMathNary): Self = this.set("Word.OMathNary_typekey", value.asInstanceOf[js.Any])
+    def setWordDotOMathNary_typekey(value: OMathNary): Self = StObject.set(x, "Word.OMathNary_typekey", value.asInstanceOf[js.Any])
   }
 }

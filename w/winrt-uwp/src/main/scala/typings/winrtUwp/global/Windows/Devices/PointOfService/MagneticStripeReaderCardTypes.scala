@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,20 +10,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class MagneticStripeReaderCardTypes ()
   extends typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderCardTypes
-/* static members */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderCardTypes")
-@js.native
-object MagneticStripeReaderCardTypes extends js.Object {
+object MagneticStripeReaderCardTypes {
+  
+  @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderCardTypes")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Indicates the American Association of Motor Vehicle Administrators (AAMVA) card type. */
-  var aamva: Double = js.native
+  /* static member */
+  @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderCardTypes.aamva")
+  @js.native
+  def aamva: Double = js.native
+  @scala.inline
+  def aamva_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aamva")(x.asInstanceOf[js.Any])
   
   /** Indicates a bank card type. */
-  var bank: Double = js.native
+  /* static member */
+  @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderCardTypes.bank")
+  @js.native
+  def bank: Double = js.native
+  @scala.inline
+  def bank_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bank")(x.asInstanceOf[js.Any])
   
   /** Indicates vendor-specific card type. */
-  var extendedBase: Double = js.native
+  /* static member */
+  @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderCardTypes.extendedBase")
+  @js.native
+  def extendedBase: Double = js.native
+  @scala.inline
+  def extendedBase_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extendedBase")(x.asInstanceOf[js.Any])
   
   /** Indicates an unknown card type. */
-  var unknown: Double = js.native
+  /* static member */
+  @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderCardTypes.unknown")
+  @js.native
+  def unknown: Double = js.native
+  @scala.inline
+  def unknown_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unknown")(x.asInstanceOf[js.Any])
 }

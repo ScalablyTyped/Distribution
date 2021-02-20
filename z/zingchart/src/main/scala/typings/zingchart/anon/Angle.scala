@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Angle extends js.Object {
+trait Angle extends StObject {
   
   /**
     * Sets the view angle when using the isometric 3D engine. Value can be between 0 and 90, with the default viewing angle being 45°. 5
@@ -53,60 +54,48 @@ object Angle {
   }
   
   @scala.inline
-  implicit class AngleOps[Self <: Angle] (val x: Self) extends AnyVal {
+  implicit class AngleMutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setTrue3d(value: Boolean): Self = StObject.set(x, "true3d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setTrue3dUndefined: Self = StObject.set(x, "true3d", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def `setX-angle`(value: Double): Self = StObject.set(x, "x-angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrue3d(value: Boolean): Self = this.set("true3d", value.asInstanceOf[js.Any])
+    def `setX-angleUndefined`: Self = StObject.set(x, "x-angle", js.undefined)
     
     @scala.inline
-    def deleteTrue3d: Self = this.set("true3d", js.undefined)
+    def `setY-angle`(value: Double): Self = StObject.set(x, "y-angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setX-angle`(value: Double): Self = this.set("x-angle", value.asInstanceOf[js.Any])
+    def `setY-angleUndefined`: Self = StObject.set(x, "y-angle", js.undefined)
     
     @scala.inline
-    def `deleteX-angle`: Self = this.set("x-angle", js.undefined)
+    def `setZ-angle`(value: Double): Self = StObject.set(x, "z-angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-angle`(value: Double): Self = this.set("y-angle", value.asInstanceOf[js.Any])
+    def `setZ-angleUndefined`: Self = StObject.set(x, "z-angle", js.undefined)
     
     @scala.inline
-    def `deleteY-angle`: Self = this.set("y-angle", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setZ-angle`(value: Double): Self = this.set("z-angle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteZ-angle`: Self = this.set("z-angle", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

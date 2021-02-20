@@ -4,13 +4,14 @@ import typings.mangopay2NodejsSdk.mod.Timestamp
 import typings.mangopay2NodejsSdk.mod.disputeDocument.DisputeDocumentType
 import typings.mangopay2NodejsSdk.mod.disputeDocument.DocumentStatus
 import typings.mangopay2NodejsSdk.mod.disputeDocument.RefusedReasonType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.disputeDocument.DisputeDocumentData> */
 @js.native
-trait PartialDisputeDocumentDat extends js.Object {
+trait PartialDisputeDocumentDat extends StObject {
   
   var CreationDate: js.UndefOr[Double] = js.native
   
@@ -41,78 +42,66 @@ object PartialDisputeDocumentDat {
   }
   
   @scala.inline
-  implicit class PartialDisputeDocumentDatOps[Self <: PartialDisputeDocumentDat] (val x: Self) extends AnyVal {
+  implicit class PartialDisputeDocumentDatMutableBuilder[Self <: PartialDisputeDocumentDat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisputeId(value: String): Self = StObject.set(x, "DisputeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Double): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setDisputeIdUndefined: Self = StObject.set(x, "DisputeId", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisputeId(value: String): Self = this.set("DisputeId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteDisputeId: Self = this.set("DisputeId", js.undefined)
+    def setProcessedDate(value: Timestamp): Self = StObject.set(x, "ProcessedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setProcessedDateUndefined: Self = StObject.set(x, "ProcessedDate", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setRefusedReasonMessage(value: String): Self = StObject.set(x, "RefusedReasonMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessedDate(value: Timestamp): Self = this.set("ProcessedDate", value.asInstanceOf[js.Any])
+    def setRefusedReasonMessageUndefined: Self = StObject.set(x, "RefusedReasonMessage", js.undefined)
     
     @scala.inline
-    def deleteProcessedDate: Self = this.set("ProcessedDate", js.undefined)
+    def setRefusedReasonType(value: RefusedReasonType): Self = StObject.set(x, "RefusedReasonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefusedReasonMessage(value: String): Self = this.set("RefusedReasonMessage", value.asInstanceOf[js.Any])
+    def setRefusedReasonTypeUndefined: Self = StObject.set(x, "RefusedReasonType", js.undefined)
     
     @scala.inline
-    def deleteRefusedReasonMessage: Self = this.set("RefusedReasonMessage", js.undefined)
+    def setStatus(value: DocumentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefusedReasonType(value: RefusedReasonType): Self = this.set("RefusedReasonType", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteRefusedReasonType: Self = this.set("RefusedReasonType", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DocumentStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setType(value: DisputeDocumentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("Tag", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: DisputeDocumentType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("UserId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("UserId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

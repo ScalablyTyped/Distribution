@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnsuccessfulInstanceCreditSpecificationItem extends js.Object {
+trait UnsuccessfulInstanceCreditSpecificationItem extends StObject {
   
   /**
     * The applicable error for the burstable performance instance whose credit option for CPU usage was not modified.
@@ -26,30 +27,18 @@ object UnsuccessfulInstanceCreditSpecificationItem {
   }
   
   @scala.inline
-  implicit class UnsuccessfulInstanceCreditSpecificationItemOps[Self <: UnsuccessfulInstanceCreditSpecificationItem] (val x: Self) extends AnyVal {
+  implicit class UnsuccessfulInstanceCreditSpecificationItemMutableBuilder[Self <: UnsuccessfulInstanceCreditSpecificationItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: UnsuccessfulInstanceCreditSpecificationItemError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: UnsuccessfulInstanceCreditSpecificationItemError): Self = this.set("Error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
-    
-    @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

@@ -1,14 +1,15 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventType extends js.Object
+sealed trait EventType extends StObject
 @JSGlobal("SP.JsGrid.EventType")
 @js.native
-object EventType extends js.Object {
+object EventType extends StObject {
   
   @js.native
   sealed trait OnBeforeGridDispose extends EventType

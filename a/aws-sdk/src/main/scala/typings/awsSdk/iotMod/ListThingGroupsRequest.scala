@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListThingGroupsRequest extends js.Object {
+trait ListThingGroupsRequest extends StObject {
   
   /**
     * The maximum number of results to return at one time.
@@ -41,48 +42,36 @@ object ListThingGroupsRequest {
   }
   
   @scala.inline
-  implicit class ListThingGroupsRequestOps[Self <: ListThingGroupsRequest] (val x: Self) extends AnyVal {
+  implicit class ListThingGroupsRequestMutableBuilder[Self <: ListThingGroupsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: RegistryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamePrefixFilter(value: ThingGroupName): Self = StObject.set(x, "namePrefixFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: RegistryMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNamePrefixFilterUndefined: Self = StObject.set(x, "namePrefixFilter", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePrefixFilter(value: ThingGroupName): Self = this.set("namePrefixFilter", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteNamePrefixFilter: Self = this.set("namePrefixFilter", js.undefined)
+    def setParentGroup(value: ThingGroupName): Self = StObject.set(x, "parentGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setParentGroupUndefined: Self = StObject.set(x, "parentGroup", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setRecursive(value: RecursiveWithoutDefault): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentGroup(value: ThingGroupName): Self = this.set("parentGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentGroup: Self = this.set("parentGroup", js.undefined)
-    
-    @scala.inline
-    def setRecursive(value: RecursiveWithoutDefault): Self = this.set("recursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

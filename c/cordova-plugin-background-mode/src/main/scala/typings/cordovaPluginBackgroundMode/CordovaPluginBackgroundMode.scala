@@ -1,11 +1,12 @@
 package typings.cordovaPluginBackgroundMode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CordovaPluginBackgroundMode extends js.Object {
+trait CordovaPluginBackgroundMode extends StObject {
   
   /**
     * Configure the default background notification
@@ -71,45 +72,33 @@ object CordovaPluginBackgroundMode {
   }
   
   @scala.inline
-  implicit class CordovaPluginBackgroundModeOps[Self <: CordovaPluginBackgroundMode] (val x: Self) extends AnyVal {
+  implicit class CordovaPluginBackgroundModeMutableBuilder[Self <: CordovaPluginBackgroundMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigure(value: ICordovaPluginBackgroundModeNotificationItem => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfigure(value: ICordovaPluginBackgroundModeNotificationItem => Unit): Self = this.set("configure", js.Any.fromFunction1(value))
+    def setIsActivated(value: () => Boolean): Self = StObject.set(x, "isActivated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisable(value: () => Unit): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setOnactivate(value: () => Unit): Self = StObject.set(x, "onactivate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsActivated(value: () => Boolean): Self = this.set("isActivated", js.Any.fromFunction0(value))
+    def setOndeactivate(value: () => Unit): Self = StObject.set(x, "ondeactivate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = this.set("isEnabled", js.Any.fromFunction0(value))
+    def setOnfailure(value: js.Function1[/* errorCode */ Double, Unit] => Unit): Self = StObject.set(x, "onfailure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnactivate(value: () => Unit): Self = this.set("onactivate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOndeactivate(value: () => Unit): Self = this.set("ondeactivate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnfailure(value: js.Function1[/* errorCode */ Double, Unit] => Unit): Self = this.set("onfailure", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDefaults(value: ICordovaPluginBackgroundModeNotificationItem => Unit): Self = this.set("setDefaults", js.Any.fromFunction1(value))
+    def setSetDefaults(value: ICordovaPluginBackgroundModeNotificationItem => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
   }
 }

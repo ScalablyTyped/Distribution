@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IEditorParameterHintOptions>> */
 @js.native
-trait InternalParameterHintOptions extends js.Object {
+trait InternalParameterHintOptions extends StObject {
   
   val cycle: Boolean = js.native
   
@@ -21,24 +22,12 @@ object InternalParameterHintOptions {
   }
   
   @scala.inline
-  implicit class InternalParameterHintOptionsOps[Self <: InternalParameterHintOptions] (val x: Self) extends AnyVal {
+  implicit class InternalParameterHintOptionsMutableBuilder[Self <: InternalParameterHintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCycle(value: Boolean): Self = this.set("cycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

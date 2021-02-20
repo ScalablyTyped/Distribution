@@ -13,14 +13,14 @@ import typings.jupyterlabServices.sessionSessionMod.ISessionConnection
 import typings.jupyterlabServices.sessionSessionMod.ISessionConnection.IKernelChangedArgs
 import typings.jupyterlabServices.sessionSessionMod.ISessionConnection.IOptions
 import typings.luminoSignaling.mod.ISignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/services/lib/session/default", JSImport.Namespace)
-@js.native
-object sessionDefaultMod extends js.Object {
+object sessionDefaultMod {
   
+  @JSImport("@jupyterlab/services/lib/session/default", "SessionConnection")
   @js.native
   class SessionConnection protected () extends ISessionConnection {
     /**

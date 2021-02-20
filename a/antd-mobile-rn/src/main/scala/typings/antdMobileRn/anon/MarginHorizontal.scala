@@ -1,11 +1,12 @@
 package typings.antdMobileRn.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarginHorizontal extends js.Object {
+trait MarginHorizontal extends StObject {
   
   var marginHorizontal: Double = js.native
   
@@ -20,24 +21,12 @@ object MarginHorizontal {
   }
   
   @scala.inline
-  implicit class MarginHorizontalOps[Self <: MarginHorizontal] (val x: Self) extends AnyVal {
+  implicit class MarginHorizontalMutableBuilder[Self <: MarginHorizontal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarginHorizontal(value: Double): Self = StObject.set(x, "marginHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMarginHorizontal(value: Double): Self = this.set("marginHorizontal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMarginVertical(value: Double): Self = this.set("marginVertical", value.asInstanceOf[js.Any])
+    def setMarginVertical(value: Double): Self = StObject.set(x, "marginVertical", value.asInstanceOf[js.Any])
   }
 }

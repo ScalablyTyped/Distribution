@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object describing a contextual entity mention. */
 @js.native
-trait EntityMention extends js.Object {
+trait EntityMention extends StObject {
   
   /** The name of the intent. */
   var intent: String = js.native
@@ -26,30 +27,18 @@ object EntityMention {
   }
   
   @scala.inline
-  implicit class EntityMentionOps[Self <: EntityMention] (val x: Self) extends AnyVal {
+  implicit class EntityMentionMutableBuilder[Self <: EntityMention] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
     @scala.inline
-    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocationVarargs(value: Double*): Self = this.set("location", js.Array(value :_*))
-    
-    @scala.inline
-    def setLocation(value: js.Array[Double]): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

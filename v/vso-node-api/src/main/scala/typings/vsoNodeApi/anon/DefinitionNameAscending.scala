@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefinitionNameAscending extends js.Object {
+trait DefinitionNameAscending extends StObject {
   
   var definitionNameAscending: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object DefinitionNameAscending {
   }
   
   @scala.inline
-  implicit class DefinitionNameAscendingOps[Self <: DefinitionNameAscending] (val x: Self) extends AnyVal {
+  implicit class DefinitionNameAscendingMutableBuilder[Self <: DefinitionNameAscending] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionNameAscending(value: scala.Double): Self = StObject.set(x, "definitionNameAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionNameDescending(value: scala.Double): Self = StObject.set(x, "definitionNameDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastModifiedAscending(value: scala.Double): Self = StObject.set(x, "lastModifiedAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionNameAscending(value: scala.Double): Self = this.set("definitionNameAscending", value.asInstanceOf[js.Any])
+    def setLastModifiedDescending(value: scala.Double): Self = StObject.set(x, "lastModifiedDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionNameDescending(value: scala.Double): Self = this.set("definitionNameDescending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastModifiedAscending(value: scala.Double): Self = this.set("lastModifiedAscending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastModifiedDescending(value: scala.Double): Self = this.set("lastModifiedDescending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

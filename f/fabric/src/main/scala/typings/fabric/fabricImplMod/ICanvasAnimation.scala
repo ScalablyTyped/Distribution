@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // animation mixin
 // ----------------------------------------------------
 @js.native
-trait ICanvasAnimation[T] extends js.Object {
+trait ICanvasAnimation[T] extends StObject {
   
   var FX_DURATION: Double = js.native
   

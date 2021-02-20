@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserContext extends js.Object {
+trait UserContext extends StObject {
   
   /**
     * The user context token. It must be a JWT or a JSON token.
@@ -21,24 +22,12 @@ object UserContext {
   }
   
   @scala.inline
-  implicit class UserContextOps[Self <: UserContext] (val x: Self) extends AnyVal {
+  implicit class UserContextMutableBuilder[Self <: UserContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToken(value: Token): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setToken(value: Token): Self = this.set("Token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("Token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

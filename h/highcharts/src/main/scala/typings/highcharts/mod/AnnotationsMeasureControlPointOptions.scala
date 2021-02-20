@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationsMeasureControlPointOptions extends js.Object {
+trait AnnotationsMeasureControlPointOptions extends StObject {
   
   var events: js.UndefOr[js.Any] = js.native
 }
@@ -18,24 +19,12 @@ object AnnotationsMeasureControlPointOptions {
   }
   
   @scala.inline
-  implicit class AnnotationsMeasureControlPointOptionsOps[Self <: AnnotationsMeasureControlPointOptions] (val x: Self) extends AnyVal {
+  implicit class AnnotationsMeasureControlPointOptionsMutableBuilder[Self <: AnnotationsMeasureControlPointOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }
 }

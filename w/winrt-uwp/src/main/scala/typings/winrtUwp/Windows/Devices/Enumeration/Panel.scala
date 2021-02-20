@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Panel extends js.Object
+sealed trait Panel extends StObject
 /** Indicates the location of a panel on a computer. This enumeration is used for indicating the physical location of a device. */
 @JSGlobal("Windows.Devices.Enumeration.Panel")
 @js.native
-object Panel extends js.Object {
+object Panel extends StObject {
   
   /** The back panel of the computer. */
   @js.native

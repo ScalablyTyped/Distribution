@@ -1,13 +1,12 @@
 package typings.libp2pNoise
 
 import typings.buffer.mod.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libp2p-noise/dist/src/basic", JSImport.Namespace)
-@js.native
-object basicMod extends js.Object {
+object basicMod {
   
   type bytes = Buffer
   

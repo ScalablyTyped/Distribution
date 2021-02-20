@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePresetRequest extends js.Object {
+trait CreatePresetRequest extends StObject {
   
   /**
     * A section of the request body that specifies the audio parameters.
@@ -46,48 +47,36 @@ object CreatePresetRequest {
   }
   
   @scala.inline
-  implicit class CreatePresetRequestOps[Self <: CreatePresetRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePresetRequestMutableBuilder[Self <: CreatePresetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: AudioParameters): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioUndefined: Self = StObject.set(x, "Audio", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: PresetContainer): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: PresetContainer): Self = this.set("Container", value.asInstanceOf[js.Any])
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setAudio(value: AudioParameters): Self = this.set("Audio", value.asInstanceOf[js.Any])
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudio: Self = this.set("Audio", js.undefined)
+    def setThumbnails(value: Thumbnails): Self = StObject.set(x, "Thumbnails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setThumbnailsUndefined: Self = StObject.set(x, "Thumbnails", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setVideo(value: VideoParameters): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnails(value: Thumbnails): Self = this.set("Thumbnails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnails: Self = this.set("Thumbnails", js.undefined)
-    
-    @scala.inline
-    def setVideo(value: VideoParameters): Self = this.set("Video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("Video", js.undefined)
+    def setVideoUndefined: Self = StObject.set(x, "Video", js.undefined)
   }
 }

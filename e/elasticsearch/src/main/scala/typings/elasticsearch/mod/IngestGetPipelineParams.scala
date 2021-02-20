@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,27 +21,15 @@ object IngestGetPipelineParams {
   }
   
   @scala.inline
-  implicit class IngestGetPipelineParamsOps[Self <: IngestGetPipelineParams] (val x: Self) extends AnyVal {
+  implicit class IngestGetPipelineParamsMutableBuilder[Self <: IngestGetPipelineParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMasterTimeout(value: Double): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMasterTimeout(value: Double): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
+    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
   }
 }

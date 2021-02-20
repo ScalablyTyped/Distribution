@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnInfo extends js.Object {
+trait ColumnInfo extends StObject {
   
   /**
     * Indicates whether values in the column are case-sensitive.
@@ -66,72 +67,60 @@ object ColumnInfo {
   }
   
   @scala.inline
-  implicit class ColumnInfoOps[Self <: ColumnInfo] (val x: Self) extends AnyVal {
+  implicit class ColumnInfoMutableBuilder[Self <: ColumnInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseSensitiveUndefined: Self = StObject.set(x, "CaseSensitive", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setCatalogNameUndefined: Self = StObject.set(x, "CatalogName", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("CaseSensitive", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
     @scala.inline
-    def deleteCaseSensitive: Self = this.set("CaseSensitive", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogName(value: String): Self = this.set("CatalogName", value.asInstanceOf[js.Any])
+    def setNullable(value: ColumnNullable): Self = StObject.set(x, "Nullable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCatalogName: Self = this.set("CatalogName", js.undefined)
+    def setNullableUndefined: Self = StObject.set(x, "Nullable", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setPrecision(value: Integer): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
+    def setPrecisionUndefined: Self = StObject.set(x, "Precision", js.undefined)
     
     @scala.inline
-    def setNullable(value: ColumnNullable): Self = this.set("Nullable", value.asInstanceOf[js.Any])
+    def setScale(value: Integer): Self = StObject.set(x, "Scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNullable: Self = this.set("Nullable", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "Scale", js.undefined)
     
     @scala.inline
-    def setPrecision(value: Integer): Self = this.set("Precision", value.asInstanceOf[js.Any])
+    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrecision: Self = this.set("Precision", js.undefined)
+    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
     
     @scala.inline
-    def setScale(value: Integer): Self = this.set("Scale", value.asInstanceOf[js.Any])
+    def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScale: Self = this.set("Scale", js.undefined)
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
     @scala.inline
-    def setSchemaName(value: String): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaName: Self = this.set("SchemaName", js.undefined)
-    
-    @scala.inline
-    def setTableName(value: String): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

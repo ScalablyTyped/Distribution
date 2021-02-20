@@ -1,11 +1,12 @@
 package typings.awsSdk.detectiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteMembersResponse extends js.Object {
+trait DeleteMembersResponse extends StObject {
   
   /**
     * The list of AWS account identifiers for the member accounts that Detective successfully deleted from the behavior graph.
@@ -26,36 +27,24 @@ object DeleteMembersResponse {
   }
   
   @scala.inline
-  implicit class DeleteMembersResponseOps[Self <: DeleteMembersResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteMembersResponseMutableBuilder[Self <: DeleteMembersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
     @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = this.set("AccountIds", js.Array(value :_*))
+    def setUnprocessedAccounts(value: UnprocessedAccountList): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIds(value: AccountIdList): Self = this.set("AccountIds", value.asInstanceOf[js.Any])
+    def setUnprocessedAccountsUndefined: Self = StObject.set(x, "UnprocessedAccounts", js.undefined)
     
     @scala.inline
-    def deleteAccountIds: Self = this.set("AccountIds", js.undefined)
-    
-    @scala.inline
-    def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = this.set("UnprocessedAccounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnprocessedAccounts(value: UnprocessedAccountList): Self = this.set("UnprocessedAccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnprocessedAccounts: Self = this.set("UnprocessedAccounts", js.undefined)
+    def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
   }
 }

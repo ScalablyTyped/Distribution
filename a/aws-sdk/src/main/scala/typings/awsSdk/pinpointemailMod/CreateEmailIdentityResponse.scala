@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateEmailIdentityResponse extends js.Object {
+trait CreateEmailIdentityResponse extends StObject {
   
   /**
     * An object that contains information about the DKIM attributes for the identity. This object includes the tokens that you use to create the CNAME records that are required to complete the DKIM verification process.
@@ -31,36 +32,24 @@ object CreateEmailIdentityResponse {
   }
   
   @scala.inline
-  implicit class CreateEmailIdentityResponseOps[Self <: CreateEmailIdentityResponse] (val x: Self) extends AnyVal {
+  implicit class CreateEmailIdentityResponseMutableBuilder[Self <: CreateEmailIdentityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDkimAttributesUndefined: Self = StObject.set(x, "DkimAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDkimAttributes(value: DkimAttributes): Self = this.set("DkimAttributes", value.asInstanceOf[js.Any])
+    def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
     
     @scala.inline
-    def deleteDkimAttributes: Self = this.set("DkimAttributes", js.undefined)
+    def setVerifiedForSendingStatus(value: Enabled): Self = StObject.set(x, "VerifiedForSendingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityType: Self = this.set("IdentityType", js.undefined)
-    
-    @scala.inline
-    def setVerifiedForSendingStatus(value: Enabled): Self = this.set("VerifiedForSendingStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifiedForSendingStatus: Self = this.set("VerifiedForSendingStatus", js.undefined)
+    def setVerifiedForSendingStatusUndefined: Self = StObject.set(x, "VerifiedForSendingStatus", js.undefined)
   }
 }

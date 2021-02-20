@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChecksSetSuitesPreferencesParamsAutoTriggerChecks extends js.Object {
+trait ChecksSetSuitesPreferencesParamsAutoTriggerChecks extends StObject {
   
   var app_id: Double = js.native
   
@@ -20,24 +21,12 @@ object ChecksSetSuitesPreferencesParamsAutoTriggerChecks {
   }
   
   @scala.inline
-  implicit class ChecksSetSuitesPreferencesParamsAutoTriggerChecksOps[Self <: ChecksSetSuitesPreferencesParamsAutoTriggerChecks] (val x: Self) extends AnyVal {
+  implicit class ChecksSetSuitesPreferencesParamsAutoTriggerChecksMutableBuilder[Self <: ChecksSetSuitesPreferencesParamsAutoTriggerChecks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp_id(value: Double): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApp_id(value: Double): Self = this.set("app_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetting(value: Boolean): Self = this.set("setting", value.asInstanceOf[js.Any])
+    def setSetting(value: Boolean): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

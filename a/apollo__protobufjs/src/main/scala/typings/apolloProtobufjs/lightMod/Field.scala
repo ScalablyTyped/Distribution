@@ -25,6 +25,7 @@ import typings.apolloProtobufjs.mod.FieldDecorator
 import typings.apolloProtobufjs.mod.IField
 import typings.long.mod.Long
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -149,9 +150,7 @@ class Field protected ()
   ) = this()
 }
 /* static members */
-@JSImport("@apollo/protobufjs/light", "Field")
-@js.native
-object Field extends js.Object {
+object Field {
   
   /**
     * Field decorator (TypeScript).
@@ -161,12 +160,16 @@ object Field extends js.Object {
     * @param [defaultValue] Default value
     * @returns Decorator function
     */
+  @JSImport("@apollo/protobufjs/light", "Field.d")
+  @js.native
   def d[T /* <: Double | (js.Array[Boolean | Buffer | Double | Long | String | Uint8Array]) | Long | String | Boolean | Uint8Array | Buffer */](
     fieldId: Double,
     fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
     fieldRule: js.UndefOr[optional | required | repeated],
     defaultValue: js.UndefOr[T]
   ): FieldDecorator = js.native
+  @JSImport("@apollo/protobufjs/light", "Field.d")
+  @js.native
   def d[T /* <: typings.apolloProtobufjs.mod.Message[T] */](fieldId: Double, fieldType: String): FieldDecorator = js.native
   /**
     * Field decorator (TypeScript).
@@ -175,18 +178,26 @@ object Field extends js.Object {
     * @param [fieldRule="optional"] Field rule
     * @returns Decorator function
     */
+  @JSImport("@apollo/protobufjs/light", "Field.d")
+  @js.native
   def d[T /* <: typings.apolloProtobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T]): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("@apollo/protobufjs/light", "Field.d")
+  @js.native
   def d_optional[T /* <: typings.apolloProtobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: optional): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("@apollo/protobufjs/light", "Field.d")
+  @js.native
   def d_optional[T /* <: typings.apolloProtobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: optional): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("@apollo/protobufjs/light", "Field.d")
+  @js.native
   def d_repeated[T /* <: typings.apolloProtobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: repeated): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("@apollo/protobufjs/light", "Field.d")
+  @js.native
   def d_repeated[T /* <: typings.apolloProtobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: repeated): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("@apollo/protobufjs/light", "Field.d")
+  @js.native
   def d_required[T /* <: typings.apolloProtobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: required): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("@apollo/protobufjs/light", "Field.d")
+  @js.native
   def d_required[T /* <: typings.apolloProtobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: required): FieldDecorator = js.native
   
   /**
@@ -196,5 +207,7 @@ object Field extends js.Object {
     * @returns Created field
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("@apollo/protobufjs/light", "Field.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IField): typings.apolloProtobufjs.mod.Field = js.native
 }

@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISymmetricAlgorithmNamesStatics extends js.Object {
+trait ISymmetricAlgorithmNamesStatics extends StObject {
   
   var aesCbc: String = js.native
   
@@ -74,75 +75,63 @@ object ISymmetricAlgorithmNamesStatics {
   }
   
   @scala.inline
-  implicit class ISymmetricAlgorithmNamesStaticsOps[Self <: ISymmetricAlgorithmNamesStatics] (val x: Self) extends AnyVal {
+  implicit class ISymmetricAlgorithmNamesStaticsMutableBuilder[Self <: ISymmetricAlgorithmNamesStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAesCbc(value: String): Self = StObject.set(x, "aesCbc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAesCbcPkcs7(value: String): Self = StObject.set(x, "aesCbcPkcs7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAesCcm(value: String): Self = StObject.set(x, "aesCcm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAesCbc(value: String): Self = this.set("aesCbc", value.asInstanceOf[js.Any])
+    def setAesEcb(value: String): Self = StObject.set(x, "aesEcb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAesCbcPkcs7(value: String): Self = this.set("aesCbcPkcs7", value.asInstanceOf[js.Any])
+    def setAesEcbPkcs7(value: String): Self = StObject.set(x, "aesEcbPkcs7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAesCcm(value: String): Self = this.set("aesCcm", value.asInstanceOf[js.Any])
+    def setAesGcm(value: String): Self = StObject.set(x, "aesGcm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAesEcb(value: String): Self = this.set("aesEcb", value.asInstanceOf[js.Any])
+    def setDesCbc(value: String): Self = StObject.set(x, "desCbc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAesEcbPkcs7(value: String): Self = this.set("aesEcbPkcs7", value.asInstanceOf[js.Any])
+    def setDesCbcPkcs7(value: String): Self = StObject.set(x, "desCbcPkcs7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAesGcm(value: String): Self = this.set("aesGcm", value.asInstanceOf[js.Any])
+    def setDesEcb(value: String): Self = StObject.set(x, "desEcb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesCbc(value: String): Self = this.set("desCbc", value.asInstanceOf[js.Any])
+    def setDesEcbPkcs7(value: String): Self = StObject.set(x, "desEcbPkcs7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesCbcPkcs7(value: String): Self = this.set("desCbcPkcs7", value.asInstanceOf[js.Any])
+    def setRc2Cbc(value: String): Self = StObject.set(x, "rc2Cbc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesEcb(value: String): Self = this.set("desEcb", value.asInstanceOf[js.Any])
+    def setRc2CbcPkcs7(value: String): Self = StObject.set(x, "rc2CbcPkcs7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesEcbPkcs7(value: String): Self = this.set("desEcbPkcs7", value.asInstanceOf[js.Any])
+    def setRc2Ecb(value: String): Self = StObject.set(x, "rc2Ecb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRc2Cbc(value: String): Self = this.set("rc2Cbc", value.asInstanceOf[js.Any])
+    def setRc2EcbPkcs7(value: String): Self = StObject.set(x, "rc2EcbPkcs7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRc2CbcPkcs7(value: String): Self = this.set("rc2CbcPkcs7", value.asInstanceOf[js.Any])
+    def setRc4(value: String): Self = StObject.set(x, "rc4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRc2Ecb(value: String): Self = this.set("rc2Ecb", value.asInstanceOf[js.Any])
+    def setTripleDesCbc(value: String): Self = StObject.set(x, "tripleDesCbc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRc2EcbPkcs7(value: String): Self = this.set("rc2EcbPkcs7", value.asInstanceOf[js.Any])
+    def setTripleDesCbcPkcs7(value: String): Self = StObject.set(x, "tripleDesCbcPkcs7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRc4(value: String): Self = this.set("rc4", value.asInstanceOf[js.Any])
+    def setTripleDesEcb(value: String): Self = StObject.set(x, "tripleDesEcb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTripleDesCbc(value: String): Self = this.set("tripleDesCbc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTripleDesCbcPkcs7(value: String): Self = this.set("tripleDesCbcPkcs7", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTripleDesEcb(value: String): Self = this.set("tripleDesEcb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTripleDesEcbPkcs7(value: String): Self = this.set("tripleDesEcbPkcs7", value.asInstanceOf[js.Any])
+    def setTripleDesEcbPkcs7(value: String): Self = StObject.set(x, "tripleDesEcbPkcs7", value.asInstanceOf[js.Any])
   }
 }

@@ -16,12 +16,13 @@ import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.UpdateRegistrationReq
 import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.WorkerErrorReportedEvent
 import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.WorkerRegistrationUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.WorkerVersionUpdatedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceWorkerApi extends js.Object {
+trait ServiceWorkerApi extends StObject {
   
   def deliverPushMessage(params: DeliverPushMessageRequest): js.Promise[Unit] = js.native
   

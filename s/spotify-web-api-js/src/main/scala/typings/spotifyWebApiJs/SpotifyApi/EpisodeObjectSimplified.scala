@@ -1,6 +1,7 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.episode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [episode object (simplified)](https://developer.spotify.com/documentation/web-api/reference/object-model/#episode-object-simplified)
   */
 @js.native
-trait EpisodeObjectSimplified extends js.Object {
+trait EpisodeObjectSimplified extends StObject {
   
   var audio_preview_url: String | Null = js.native
   
@@ -73,78 +74,66 @@ object EpisodeObjectSimplified {
   }
   
   @scala.inline
-  implicit class EpisodeObjectSimplifiedOps[Self <: EpisodeObjectSimplified] (val x: Self) extends AnyVal {
+  implicit class EpisodeObjectSimplifiedMutableBuilder[Self <: EpisodeObjectSimplified] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio_preview_url(value: String): Self = StObject.set(x, "audio_preview_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudio_preview_urlNull: Self = StObject.set(x, "audio_preview_url", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDuration_ms(value: Double): Self = StObject.set(x, "duration_ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration_ms(value: Double): Self = this.set("duration_ms", value.asInstanceOf[js.Any])
+    def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicit(value: Boolean): Self = this.set("explicit", value.asInstanceOf[js.Any])
+    def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_urls(value: ExternalUrlObject): Self = this.set("external_urls", value.asInstanceOf[js.Any])
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: ImageObject*): Self = this.set("images", js.Array(value :_*))
+    def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setImages(value: js.Array[ImageObject]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setIs_externally_hosted(value: Boolean): Self = StObject.set(x, "is_externally_hosted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_externally_hosted(value: Boolean): Self = this.set("is_externally_hosted", value.asInstanceOf[js.Any])
+    def setIs_playable(value: Boolean): Self = StObject.set(x, "is_playable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_playable(value: Boolean): Self = this.set("is_playable", value.asInstanceOf[js.Any])
+    def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguagesVarargs(value: String*): Self = this.set("languages", js.Array(value :_*))
+    def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
     @scala.inline
-    def setLanguages(value: js.Array[String]): Self = this.set("languages", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRelease_date(value: String): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelease_date(value: String): Self = this.set("release_date", value.asInstanceOf[js.Any])
+    def setRelease_date_precision(value: String): Self = StObject.set(x, "release_date_precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelease_date_precision(value: String): Self = this.set("release_date_precision", value.asInstanceOf[js.Any])
+    def setResume_point(value: ResumePointObject): Self = StObject.set(x, "resume_point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResume_point(value: ResumePointObject): Self = this.set("resume_point", value.asInstanceOf[js.Any])
+    def setType(value: episode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: episode): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAudio_preview_url(value: String): Self = this.set("audio_preview_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAudio_preview_urlNull: Self = this.set("audio_preview_url", null)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

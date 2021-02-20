@@ -4,16 +4,16 @@ import typings.firebaseDatabase.miscMod.Indexable
 import typings.firebaseDatabase.pathMod.Path
 import typings.firebaseDatabase.repoMod.Repo
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/api/onDisconnect", JSImport.Namespace)
-@js.native
-object onDisconnectMod extends js.Object {
+object onDisconnectMod {
   
+  @JSImport("@firebase/database/dist/src/api/onDisconnect", "OnDisconnect")
   @js.native
-  class OnDisconnect protected () extends js.Object {
+  class OnDisconnect protected () extends StObject {
     /**
       * @param {!Repo} repo_
       * @param {!Path} path_

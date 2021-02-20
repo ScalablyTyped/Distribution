@@ -13,12 +13,13 @@ import typings.cadesplugin.cadespluginNumbers.`6`
 import typings.cadesplugin.cadespluginNumbers.`7`
 import typings.cadesplugin.cadespluginNumbers.`8`
 import typings.cadesplugin.cadespluginNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CAPICOM_CERTIFICATE_FIND_TYPE extends js.Object {
+trait CAPICOM_CERTIFICATE_FIND_TYPE extends StObject {
   
   val CAPICOM_CERTIFICATE_FIND_APPLICATION_POLICY: `7` = js.native
   
@@ -69,57 +70,45 @@ object CAPICOM_CERTIFICATE_FIND_TYPE {
   }
   
   @scala.inline
-  implicit class CAPICOM_CERTIFICATE_FIND_TYPEOps[Self <: CAPICOM_CERTIFICATE_FIND_TYPE] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_CERTIFICATE_FIND_TYPEMutableBuilder[Self <: CAPICOM_CERTIFICATE_FIND_TYPE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_CERTIFICATE_FIND_APPLICATION_POLICY(value: `7`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_APPLICATION_POLICY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_CERTIFICATE_FIND_CERTIFICATE_POLICY(value: `8`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_CERTIFICATE_POLICY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCAPICOM_CERTIFICATE_FIND_EXTENDED_PROPERTY(value: `6`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_EXTENDED_PROPERTY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_APPLICATION_POLICY(value: `7`): Self = this.set("CAPICOM_CERTIFICATE_FIND_APPLICATION_POLICY", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_EXTENSION(value: `5`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_CERTIFICATE_POLICY(value: `8`): Self = this.set("CAPICOM_CERTIFICATE_FIND_CERTIFICATE_POLICY", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_ISSUER_NAME(value: `2`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_ISSUER_NAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_EXTENDED_PROPERTY(value: `6`): Self = this.set("CAPICOM_CERTIFICATE_FIND_EXTENDED_PROPERTY", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_KEY_USAGE(value: `12`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_KEY_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_EXTENSION(value: `5`): Self = this.set("CAPICOM_CERTIFICATE_FIND_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_ROOT_NAME(value: `3`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_ROOT_NAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_ISSUER_NAME(value: `2`): Self = this.set("CAPICOM_CERTIFICATE_FIND_ISSUER_NAME", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_SHA1_HASH(value: `0`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_SHA1_HASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_KEY_USAGE(value: `12`): Self = this.set("CAPICOM_CERTIFICATE_FIND_KEY_USAGE", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_SUBJECT_NAME(value: `1`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_SUBJECT_NAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_ROOT_NAME(value: `3`): Self = this.set("CAPICOM_CERTIFICATE_FIND_ROOT_NAME", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_TEMPLATE_NAME(value: `4`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_TEMPLATE_NAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_SHA1_HASH(value: `0`): Self = this.set("CAPICOM_CERTIFICATE_FIND_SHA1_HASH", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_TIME_EXPIRED(value: `11`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_TIME_EXPIRED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_SUBJECT_NAME(value: `1`): Self = this.set("CAPICOM_CERTIFICATE_FIND_SUBJECT_NAME", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_TIME_NOT_YET_VALID(value: `10`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_TIME_NOT_YET_VALID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_TEMPLATE_NAME(value: `4`): Self = this.set("CAPICOM_CERTIFICATE_FIND_TEMPLATE_NAME", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_TIME_EXPIRED(value: `11`): Self = this.set("CAPICOM_CERTIFICATE_FIND_TIME_EXPIRED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_TIME_NOT_YET_VALID(value: `10`): Self = this.set("CAPICOM_CERTIFICATE_FIND_TIME_NOT_YET_VALID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_CERTIFICATE_FIND_TIME_VALID(value: `9`): Self = this.set("CAPICOM_CERTIFICATE_FIND_TIME_VALID", value.asInstanceOf[js.Any])
+    def setCAPICOM_CERTIFICATE_FIND_TIME_VALID(value: `9`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_TIME_VALID", value.asInstanceOf[js.Any])
   }
 }

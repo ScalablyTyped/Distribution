@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,72 +66,60 @@ object ParamsResourceMylibraryBookshelvesVolumesList {
   }
   
   @scala.inline
-  implicit class ParamsResourceMylibraryBookshelvesVolumesListOps[Self <: ParamsResourceMylibraryBookshelvesVolumesList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceMylibraryBookshelvesVolumesListMutableBuilder[Self <: ParamsResourceMylibraryBookshelvesVolumesList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setShelf(value: String): Self = StObject.set(x, "shelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setShelfUndefined: Self = StObject.set(x, "shelf", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setShowPreorders(value: Boolean): Self = StObject.set(x, "showPreorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShelf(value: String): Self = this.set("shelf", value.asInstanceOf[js.Any])
+    def setShowPreordersUndefined: Self = StObject.set(x, "showPreorders", js.undefined)
     
     @scala.inline
-    def deleteShelf: Self = this.set("shelf", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPreorders(value: Boolean): Self = this.set("showPreorders", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteShowPreorders: Self = this.set("showPreorders", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

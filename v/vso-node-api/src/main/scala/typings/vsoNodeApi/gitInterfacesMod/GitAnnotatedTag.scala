@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitAnnotatedTag extends js.Object {
+trait GitAnnotatedTag extends StObject {
   
   /**
     * The tagging Message
@@ -50,36 +51,24 @@ object GitAnnotatedTag {
   }
   
   @scala.inline
-  implicit class GitAnnotatedTagOps[Self <: GitAnnotatedTag] (val x: Self) extends AnyVal {
+  implicit class GitAnnotatedTagMutableBuilder[Self <: GitAnnotatedTag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setTaggedBy(value: GitUserDate): Self = StObject.set(x, "taggedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTaggedObject(value: GitObject): Self = StObject.set(x, "taggedObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaggedBy(value: GitUserDate): Self = this.set("taggedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaggedObject(value: GitObject): Self = this.set("taggedObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

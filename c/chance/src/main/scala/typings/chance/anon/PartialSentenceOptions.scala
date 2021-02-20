@@ -5,13 +5,14 @@ import typings.chance.chanceStrings.Dot
 import typings.chance.chanceStrings.Exclamationmark
 import typings.chance.chanceStrings.Questionmark
 import typings.chance.chanceStrings.Semicolon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<chance.Chance.SentenceOptions> */
 @js.native
-trait PartialSentenceOptions extends js.Object {
+trait PartialSentenceOptions extends StObject {
   
   var punctuation: js.UndefOr[Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean] = js.native
   
@@ -26,30 +27,18 @@ object PartialSentenceOptions {
   }
   
   @scala.inline
-  implicit class PartialSentenceOptionsOps[Self <: PartialSentenceOptions] (val x: Self) extends AnyVal {
+  implicit class PartialSentenceOptionsMutableBuilder[Self <: PartialSentenceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPunctuation(value: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPunctuationUndefined: Self = StObject.set(x, "punctuation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPunctuation(value: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean): Self = this.set("punctuation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePunctuation: Self = this.set("punctuation", js.undefined)
-    
-    @scala.inline
-    def setWords(value: Double): Self = this.set("words", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWords: Self = this.set("words", js.undefined)
+    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
   }
 }

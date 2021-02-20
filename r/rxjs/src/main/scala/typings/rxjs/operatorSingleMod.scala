@@ -1,14 +1,17 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/single", JSImport.Namespace)
-@js.native
-object operatorSingleMod extends js.Object {
+object operatorSingleMod {
   
+  @JSImport("rxjs/operator/single", "single")
+  @js.native
   def single[T](): js.Any = js.native
+  @JSImport("rxjs/operator/single", "single")
+  @js.native
   def single[T](
     predicate: js.Function3[
       /* value */ T, 

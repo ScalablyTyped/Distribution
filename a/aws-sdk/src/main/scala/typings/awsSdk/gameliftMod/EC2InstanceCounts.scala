@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EC2InstanceCounts extends js.Object {
+trait EC2InstanceCounts extends StObject {
   
   /**
     * Actual number of active instances in the fleet.
@@ -51,60 +52,48 @@ object EC2InstanceCounts {
   }
   
   @scala.inline
-  implicit class EC2InstanceCountsOps[Self <: EC2InstanceCounts] (val x: Self) extends AnyVal {
+  implicit class EC2InstanceCountsMutableBuilder[Self <: EC2InstanceCounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setACTIVE(value: WholeNumber): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setACTIVEUndefined: Self = StObject.set(x, "ACTIVE", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDESIRED(value: WholeNumber): Self = StObject.set(x, "DESIRED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setACTIVE(value: WholeNumber): Self = this.set("ACTIVE", value.asInstanceOf[js.Any])
+    def setDESIREDUndefined: Self = StObject.set(x, "DESIRED", js.undefined)
     
     @scala.inline
-    def deleteACTIVE: Self = this.set("ACTIVE", js.undefined)
+    def setIDLE(value: WholeNumber): Self = StObject.set(x, "IDLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDESIRED(value: WholeNumber): Self = this.set("DESIRED", value.asInstanceOf[js.Any])
+    def setIDLEUndefined: Self = StObject.set(x, "IDLE", js.undefined)
     
     @scala.inline
-    def deleteDESIRED: Self = this.set("DESIRED", js.undefined)
+    def setMAXIMUM(value: WholeNumber): Self = StObject.set(x, "MAXIMUM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIDLE(value: WholeNumber): Self = this.set("IDLE", value.asInstanceOf[js.Any])
+    def setMAXIMUMUndefined: Self = StObject.set(x, "MAXIMUM", js.undefined)
     
     @scala.inline
-    def deleteIDLE: Self = this.set("IDLE", js.undefined)
+    def setMINIMUM(value: WholeNumber): Self = StObject.set(x, "MINIMUM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAXIMUM(value: WholeNumber): Self = this.set("MAXIMUM", value.asInstanceOf[js.Any])
+    def setMINIMUMUndefined: Self = StObject.set(x, "MINIMUM", js.undefined)
     
     @scala.inline
-    def deleteMAXIMUM: Self = this.set("MAXIMUM", js.undefined)
+    def setPENDING(value: WholeNumber): Self = StObject.set(x, "PENDING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMINIMUM(value: WholeNumber): Self = this.set("MINIMUM", value.asInstanceOf[js.Any])
+    def setPENDINGUndefined: Self = StObject.set(x, "PENDING", js.undefined)
     
     @scala.inline
-    def deleteMINIMUM: Self = this.set("MINIMUM", js.undefined)
+    def setTERMINATING(value: WholeNumber): Self = StObject.set(x, "TERMINATING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPENDING(value: WholeNumber): Self = this.set("PENDING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePENDING: Self = this.set("PENDING", js.undefined)
-    
-    @scala.inline
-    def setTERMINATING(value: WholeNumber): Self = this.set("TERMINATING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTERMINATING: Self = this.set("TERMINATING", js.undefined)
+    def setTERMINATINGUndefined: Self = StObject.set(x, "TERMINATING", js.undefined)
   }
 }

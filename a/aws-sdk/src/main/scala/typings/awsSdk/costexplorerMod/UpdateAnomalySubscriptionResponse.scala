@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAnomalySubscriptionResponse extends js.Object {
+trait UpdateAnomalySubscriptionResponse extends StObject {
   
   /**
     *  A cost anomaly subscription ARN. 
@@ -21,21 +22,9 @@ object UpdateAnomalySubscriptionResponse {
   }
   
   @scala.inline
-  implicit class UpdateAnomalySubscriptionResponseOps[Self <: UpdateAnomalySubscriptionResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateAnomalySubscriptionResponseMutableBuilder[Self <: UpdateAnomalySubscriptionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSubscriptionArn(value: GenericString): Self = this.set("SubscriptionArn", value.asInstanceOf[js.Any])
+    def setSubscriptionArn(value: GenericString): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
   }
 }

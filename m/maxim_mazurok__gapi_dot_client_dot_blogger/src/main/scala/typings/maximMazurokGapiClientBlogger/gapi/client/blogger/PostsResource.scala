@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientBlogger.anon.PublishDate
 import typings.maximMazurokGapiClientBlogger.anon.Resource
 import typings.maximMazurokGapiClientBlogger.anon.Revert
 import typings.maximMazurokGapiClientBlogger.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostsResource extends js.Object {
+trait PostsResource extends StObject {
   
   /** Deletes a post by blog id and post id. */
   def delete(): Request[Unit] = js.native

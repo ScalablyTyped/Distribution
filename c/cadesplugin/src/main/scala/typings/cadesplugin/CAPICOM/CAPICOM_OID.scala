@@ -53,6 +53,7 @@ import typings.cadesplugin.cadespluginNumbers.`6`
 import typings.cadesplugin.cadespluginNumbers.`7`
 import typings.cadesplugin.cadespluginNumbers.`8`
 import typings.cadesplugin.cadespluginNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -225,171 +226,159 @@ object CAPICOM_OID {
   }
   
   @scala.inline
-  implicit class CAPICOM_OIDOps[Self <: CAPICOM_OID] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_OIDMutableBuilder[Self <: CAPICOM_OID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_OID_APPLICATION_CERT_POLICIES_EXTENSION(value: `23`): Self = StObject.set(x, "CAPICOM_OID_APPLICATION_CERT_POLICIES_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_OID_APPLICATION_POLICY_CONSTRAINTS_EXTENSION(value: `25`): Self = StObject.set(x, "CAPICOM_OID_APPLICATION_POLICY_CONSTRAINTS_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCAPICOM_OID_APPLICATION_POLICY_MAPPINGS_EXTENSION(value: `24`): Self = StObject.set(x, "CAPICOM_OID_APPLICATION_POLICY_MAPPINGS_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_APPLICATION_CERT_POLICIES_EXTENSION(value: `23`): Self = this.set("CAPICOM_OID_APPLICATION_CERT_POLICIES_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_AUTHORITY_INFO_ACCESS_EXTENSION(value: `26`): Self = StObject.set(x, "CAPICOM_OID_AUTHORITY_INFO_ACCESS_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_APPLICATION_POLICY_CONSTRAINTS_EXTENSION(value: `25`): Self = this.set("CAPICOM_OID_APPLICATION_POLICY_CONSTRAINTS_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_AUTHORITY_KEY_IDENTIFIER2_EXTENSION(value: `19`): Self = StObject.set(x, "CAPICOM_OID_AUTHORITY_KEY_IDENTIFIER2_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_APPLICATION_POLICY_MAPPINGS_EXTENSION(value: `24`): Self = this.set("CAPICOM_OID_APPLICATION_POLICY_MAPPINGS_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_AUTHORITY_KEY_IDENTIFIER_EXTENSION(value: `1`): Self = StObject.set(x, "CAPICOM_OID_AUTHORITY_KEY_IDENTIFIER_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_AUTHORITY_INFO_ACCESS_EXTENSION(value: `26`): Self = this.set("CAPICOM_OID_AUTHORITY_INFO_ACCESS_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_BASIC_CONSTRAINTS2_EXTENSION(value: `14`): Self = StObject.set(x, "CAPICOM_OID_BASIC_CONSTRAINTS2_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_AUTHORITY_KEY_IDENTIFIER2_EXTENSION(value: `19`): Self = this.set("CAPICOM_OID_AUTHORITY_KEY_IDENTIFIER2_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_BASIC_CONSTRAINTS_EXTENSION(value: `8`): Self = StObject.set(x, "CAPICOM_OID_BASIC_CONSTRAINTS_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_AUTHORITY_KEY_IDENTIFIER_EXTENSION(value: `1`): Self = this.set("CAPICOM_OID_AUTHORITY_KEY_IDENTIFIER_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_CERTIFICATE_TEMPLATE_EXTENSION(value: `22`): Self = StObject.set(x, "CAPICOM_OID_CERTIFICATE_TEMPLATE_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_BASIC_CONSTRAINTS2_EXTENSION(value: `14`): Self = this.set("CAPICOM_OID_BASIC_CONSTRAINTS2_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_CERT_POLICIES_95_EXTENSION(value: `3`): Self = StObject.set(x, "CAPICOM_OID_CERT_POLICIES_95_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_BASIC_CONSTRAINTS_EXTENSION(value: `8`): Self = this.set("CAPICOM_OID_BASIC_CONSTRAINTS_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_CERT_POLICIES_EXTENSION(value: `17`): Self = StObject.set(x, "CAPICOM_OID_CERT_POLICIES_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_CERTIFICATE_TEMPLATE_EXTENSION(value: `22`): Self = this.set("CAPICOM_OID_CERTIFICATE_TEMPLATE_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_CLIENT_AUTH_EKU(value: `101`): Self = StObject.set(x, "CAPICOM_OID_CLIENT_AUTH_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_CERT_POLICIES_95_EXTENSION(value: `3`): Self = this.set("CAPICOM_OID_CERT_POLICIES_95_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_CODE_SIGNING_EKU(value: `102`): Self = StObject.set(x, "CAPICOM_OID_CODE_SIGNING_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_CERT_POLICIES_EXTENSION(value: `17`): Self = this.set("CAPICOM_OID_CERT_POLICIES_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_CRL_DIST_POINTS_EXTENSION(value: `16`): Self = StObject.set(x, "CAPICOM_OID_CRL_DIST_POINTS_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_CLIENT_AUTH_EKU(value: `101`): Self = this.set("CAPICOM_OID_CLIENT_AUTH_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_CTL_USAGE_SIGNING_EKU(value: `108`): Self = StObject.set(x, "CAPICOM_OID_CTL_USAGE_SIGNING_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_CODE_SIGNING_EKU(value: `102`): Self = this.set("CAPICOM_OID_CODE_SIGNING_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_DIGITAL_RIGHTS_EKU(value: `120`): Self = StObject.set(x, "CAPICOM_OID_DIGITAL_RIGHTS_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_CRL_DIST_POINTS_EXTENSION(value: `16`): Self = this.set("CAPICOM_OID_CRL_DIST_POINTS_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_EFS_RECOVERY_EKU(value: `112`): Self = StObject.set(x, "CAPICOM_OID_EFS_RECOVERY_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_CTL_USAGE_SIGNING_EKU(value: `108`): Self = this.set("CAPICOM_OID_CTL_USAGE_SIGNING_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_EMAIL_PROTECTION_EKU(value: `103`): Self = StObject.set(x, "CAPICOM_OID_EMAIL_PROTECTION_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_DIGITAL_RIGHTS_EKU(value: `120`): Self = this.set("CAPICOM_OID_DIGITAL_RIGHTS_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_EMBEDED_NT_CRYPTO_EKU(value: `116`): Self = StObject.set(x, "CAPICOM_OID_EMBEDED_NT_CRYPTO_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_EFS_RECOVERY_EKU(value: `112`): Self = this.set("CAPICOM_OID_EFS_RECOVERY_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_ENCRYPTING_FILE_SYSTEM_EKU(value: `111`): Self = StObject.set(x, "CAPICOM_OID_ENCRYPTING_FILE_SYSTEM_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_EMAIL_PROTECTION_EKU(value: `103`): Self = this.set("CAPICOM_OID_EMAIL_PROTECTION_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_ENHANCED_KEY_USAGE_EXTENSION(value: `21`): Self = StObject.set(x, "CAPICOM_OID_ENHANCED_KEY_USAGE_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_EMBEDED_NT_CRYPTO_EKU(value: `116`): Self = this.set("CAPICOM_OID_EMBEDED_NT_CRYPTO_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_IPSEC_END_SYSTEM_EKU(value: `104`): Self = StObject.set(x, "CAPICOM_OID_IPSEC_END_SYSTEM_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_ENCRYPTING_FILE_SYSTEM_EKU(value: `111`): Self = this.set("CAPICOM_OID_ENCRYPTING_FILE_SYSTEM_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_IPSEC_TUNNEL_EKU(value: `105`): Self = StObject.set(x, "CAPICOM_OID_IPSEC_TUNNEL_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_ENHANCED_KEY_USAGE_EXTENSION(value: `21`): Self = this.set("CAPICOM_OID_ENHANCED_KEY_USAGE_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_IPSEC_USER_EKU(value: `106`): Self = StObject.set(x, "CAPICOM_OID_IPSEC_USER_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_IPSEC_END_SYSTEM_EKU(value: `104`): Self = this.set("CAPICOM_OID_IPSEC_END_SYSTEM_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_ISSUER_ALT_NAME2_EXTENSION(value: `13`): Self = StObject.set(x, "CAPICOM_OID_ISSUER_ALT_NAME2_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_IPSEC_TUNNEL_EKU(value: `105`): Self = this.set("CAPICOM_OID_IPSEC_TUNNEL_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_ISSUER_ALT_NAME_EXTENSION(value: `7`): Self = StObject.set(x, "CAPICOM_OID_ISSUER_ALT_NAME_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_IPSEC_USER_EKU(value: `106`): Self = this.set("CAPICOM_OID_IPSEC_USER_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_KEY_ATTRIBUTES_EXTENSION(value: `2`): Self = StObject.set(x, "CAPICOM_OID_KEY_ATTRIBUTES_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_ISSUER_ALT_NAME2_EXTENSION(value: `13`): Self = this.set("CAPICOM_OID_ISSUER_ALT_NAME2_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_KEY_RECOVERY_EKU(value: `119`): Self = StObject.set(x, "CAPICOM_OID_KEY_RECOVERY_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_ISSUER_ALT_NAME_EXTENSION(value: `7`): Self = this.set("CAPICOM_OID_ISSUER_ALT_NAME_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_KEY_USAGE_RESTRICTION_EXTENSION(value: `4`): Self = StObject.set(x, "CAPICOM_OID_KEY_USAGE_RESTRICTION_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_KEY_ATTRIBUTES_EXTENSION(value: `2`): Self = this.set("CAPICOM_OID_KEY_ATTRIBUTES_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_LEGACY_POLICY_MAPPINGS_EXTENSION(value: `5`): Self = StObject.set(x, "CAPICOM_OID_LEGACY_POLICY_MAPPINGS_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_KEY_RECOVERY_EKU(value: `119`): Self = this.set("CAPICOM_OID_KEY_RECOVERY_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_LICENSES_EKU(value: `121`): Self = StObject.set(x, "CAPICOM_OID_LICENSES_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_KEY_USAGE_RESTRICTION_EXTENSION(value: `4`): Self = this.set("CAPICOM_OID_KEY_USAGE_RESTRICTION_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_LICENSE_SERVER_EKU(value: `122`): Self = StObject.set(x, "CAPICOM_OID_LICENSE_SERVER_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_LEGACY_POLICY_MAPPINGS_EXTENSION(value: `5`): Self = this.set("CAPICOM_OID_LEGACY_POLICY_MAPPINGS_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_NAME_CONSTRAINTS_EXTENSION(value: `15`): Self = StObject.set(x, "CAPICOM_OID_NAME_CONSTRAINTS_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_LICENSES_EKU(value: `121`): Self = this.set("CAPICOM_OID_LICENSES_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_NT5_CRYPTO_EKU(value: `114`): Self = StObject.set(x, "CAPICOM_OID_NT5_CRYPTO_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_LICENSE_SERVER_EKU(value: `122`): Self = this.set("CAPICOM_OID_LICENSE_SERVER_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_OEM_WHQL_CRYPTO_EKU(value: `115`): Self = StObject.set(x, "CAPICOM_OID_OEM_WHQL_CRYPTO_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_NAME_CONSTRAINTS_EXTENSION(value: `15`): Self = this.set("CAPICOM_OID_NAME_CONSTRAINTS_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_PKIX_POLICY_QUALIFIER_CPS(value: `124`): Self = StObject.set(x, "CAPICOM_OID_PKIX_POLICY_QUALIFIER_CPS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_NT5_CRYPTO_EKU(value: `114`): Self = this.set("CAPICOM_OID_NT5_CRYPTO_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_PKIX_POLICY_QUALIFIER_USERNOTICE(value: `125`): Self = StObject.set(x, "CAPICOM_OID_PKIX_POLICY_QUALIFIER_USERNOTICE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_OEM_WHQL_CRYPTO_EKU(value: `115`): Self = this.set("CAPICOM_OID_OEM_WHQL_CRYPTO_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_POLICY_CONSTRAINTS_EXTENSION(value: `20`): Self = StObject.set(x, "CAPICOM_OID_POLICY_CONSTRAINTS_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_PKIX_POLICY_QUALIFIER_CPS(value: `124`): Self = this.set("CAPICOM_OID_PKIX_POLICY_QUALIFIER_CPS", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_POLICY_MAPPINGS_EXTENSION(value: `18`): Self = StObject.set(x, "CAPICOM_OID_POLICY_MAPPINGS_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_PKIX_POLICY_QUALIFIER_USERNOTICE(value: `125`): Self = this.set("CAPICOM_OID_PKIX_POLICY_QUALIFIER_USERNOTICE", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_PRIVATEKEY_USAGE_PERIOD_EXTENSION(value: `11`): Self = StObject.set(x, "CAPICOM_OID_PRIVATEKEY_USAGE_PERIOD_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_POLICY_CONSTRAINTS_EXTENSION(value: `20`): Self = this.set("CAPICOM_OID_POLICY_CONSTRAINTS_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_QUALIFIED_SUBORDINATION_EKU(value: `118`): Self = StObject.set(x, "CAPICOM_OID_QUALIFIED_SUBORDINATION_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_POLICY_MAPPINGS_EXTENSION(value: `18`): Self = this.set("CAPICOM_OID_POLICY_MAPPINGS_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_ROOT_LIST_SIGNER_EKU(value: `117`): Self = StObject.set(x, "CAPICOM_OID_ROOT_LIST_SIGNER_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_PRIVATEKEY_USAGE_PERIOD_EXTENSION(value: `11`): Self = this.set("CAPICOM_OID_PRIVATEKEY_USAGE_PERIOD_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_SERVER_AUTH_EKU(value: `100`): Self = StObject.set(x, "CAPICOM_OID_SERVER_AUTH_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_QUALIFIED_SUBORDINATION_EKU(value: `118`): Self = this.set("CAPICOM_OID_QUALIFIED_SUBORDINATION_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_SERVER_GATED_CRYPTO_EKU(value: `110`): Self = StObject.set(x, "CAPICOM_OID_SERVER_GATED_CRYPTO_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_ROOT_LIST_SIGNER_EKU(value: `117`): Self = this.set("CAPICOM_OID_ROOT_LIST_SIGNER_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_SMART_CARD_LOGON_EKU(value: `123`): Self = StObject.set(x, "CAPICOM_OID_SMART_CARD_LOGON_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_SERVER_AUTH_EKU(value: `100`): Self = this.set("CAPICOM_OID_SERVER_AUTH_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_SUBJECT_ALT_NAME2_EXTENSION(value: `12`): Self = StObject.set(x, "CAPICOM_OID_SUBJECT_ALT_NAME2_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_SERVER_GATED_CRYPTO_EKU(value: `110`): Self = this.set("CAPICOM_OID_SERVER_GATED_CRYPTO_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_SUBJECT_ALT_NAME_EXTENSION(value: `6`): Self = StObject.set(x, "CAPICOM_OID_SUBJECT_ALT_NAME_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_SMART_CARD_LOGON_EKU(value: `123`): Self = this.set("CAPICOM_OID_SMART_CARD_LOGON_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_SUBJECT_KEY_IDENTIFIER_EXTENSION(value: `9`): Self = StObject.set(x, "CAPICOM_OID_SUBJECT_KEY_IDENTIFIER_EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_SUBJECT_ALT_NAME2_EXTENSION(value: `12`): Self = this.set("CAPICOM_OID_SUBJECT_ALT_NAME2_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_TIME_STAMPING_EKU(value: `107`): Self = StObject.set(x, "CAPICOM_OID_TIME_STAMPING_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_SUBJECT_ALT_NAME_EXTENSION(value: `6`): Self = this.set("CAPICOM_OID_SUBJECT_ALT_NAME_EXTENSION", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_TIME_STAMP_SIGNING_EKU(value: `109`): Self = StObject.set(x, "CAPICOM_OID_TIME_STAMP_SIGNING_EKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_OID_SUBJECT_KEY_IDENTIFIER_EXTENSION(value: `9`): Self = this.set("CAPICOM_OID_SUBJECT_KEY_IDENTIFIER_EXTENSION", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_OID_TIME_STAMPING_EKU(value: `107`): Self = this.set("CAPICOM_OID_TIME_STAMPING_EKU", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_OID_TIME_STAMP_SIGNING_EKU(value: `109`): Self = this.set("CAPICOM_OID_TIME_STAMP_SIGNING_EKU", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_OID_WHQL_CRYPTO_EKU(value: `113`): Self = this.set("CAPICOM_OID_WHQL_CRYPTO_EKU", value.asInstanceOf[js.Any])
+    def setCAPICOM_OID_WHQL_CRYPTO_EKU(value: `113`): Self = StObject.set(x, "CAPICOM_OID_WHQL_CRYPTO_EKU", value.asInstanceOf[js.Any])
   }
 }

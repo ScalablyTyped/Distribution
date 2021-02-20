@@ -8,6 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XDrawPage
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.frame.XModel
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,42 +64,30 @@ object XFastShapeContextHandler {
   }
   
   @scala.inline
-  implicit class XFastShapeContextHandlerOps[Self <: XFastShapeContextHandler] (val x: Self) extends AnyVal {
+  implicit class XFastShapeContextHandlerMutableBuilder[Self <: XFastShapeContextHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentProperties(value: XDocumentProperties): Self = StObject.set(x, "DocumentProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawPage(value: XDrawPage): Self = StObject.set(x, "DrawPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaDescriptor(value: SafeArray[PropertyValue]): Self = StObject.set(x, "MediaDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentProperties(value: XDocumentProperties): Self = this.set("DocumentProperties", value.asInstanceOf[js.Any])
+    def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawPage(value: XDrawPage): Self = this.set("DrawPage", value.asInstanceOf[js.Any])
+    def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaDescriptor(value: SafeArray[PropertyValue]): Self = this.set("MediaDescriptor", value.asInstanceOf[js.Any])
+    def setRelationFragmentPath(value: String): Self = StObject.set(x, "RelationFragmentPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: XModel): Self = this.set("Model", value.asInstanceOf[js.Any])
+    def setShape(value: XShape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Point): Self = this.set("Position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelationFragmentPath(value: String): Self = this.set("RelationFragmentPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape(value: XShape): Self = this.set("Shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartToken(value: Double): Self = this.set("StartToken", value.asInstanceOf[js.Any])
+    def setStartToken(value: Double): Self = StObject.set(x, "StartToken", value.asInstanceOf[js.Any])
   }
 }

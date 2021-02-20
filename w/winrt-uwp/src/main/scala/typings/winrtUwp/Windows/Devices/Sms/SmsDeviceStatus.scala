@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsDeviceStatus extends js.Object
+sealed trait SmsDeviceStatus extends StObject
 /** Contains values that indicate the readiness of an SMS device to engage in cellular network traffic operations. */
 @JSGlobal("Windows.Devices.Sms.SmsDeviceStatus")
 @js.native
-object SmsDeviceStatus extends js.Object {
+object SmsDeviceStatus extends StObject {
   
   /** The SIM is invalid; PIN unblock key retrials have exceeded the limit. */
   @js.native

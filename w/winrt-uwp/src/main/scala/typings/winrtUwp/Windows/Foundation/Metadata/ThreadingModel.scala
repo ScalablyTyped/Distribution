@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ThreadingModel extends js.Object
+sealed trait ThreadingModel extends StObject
 /** Specifies the threading model. */
 @JSGlobal("Windows.Foundation.Metadata.ThreadingModel")
 @js.native
-object ThreadingModel extends js.Object {
+object ThreadingModel extends StObject {
   
   /** Both single-threaded and multithreaded apartments. */
   @js.native

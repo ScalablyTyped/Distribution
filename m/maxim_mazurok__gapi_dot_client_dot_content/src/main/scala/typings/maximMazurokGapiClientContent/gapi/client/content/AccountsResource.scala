@@ -14,12 +14,13 @@ import typings.maximMazurokGapiClientContent.anon.Resource
 import typings.maximMazurokGapiClientContent.anon.UploadType
 import typings.maximMazurokGapiClientContent.anon.Uploadprotocol
 import typings.maximMazurokGapiClientContent.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountsResource extends js.Object {
+trait AccountsResource extends StObject {
   
   /** Returns information about the authenticated user. */
   def authinfo(): Request[AccountsAuthInfoResponse] = js.native

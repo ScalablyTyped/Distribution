@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacemeteringMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchMeterUsageResult extends js.Object {
+trait BatchMeterUsageResult extends StObject {
   
   /**
     * Contains all UsageRecords processed by BatchMeterUsage. These records were either honored by AWS Marketplace Metering Service or were invalid.
@@ -26,36 +27,24 @@ object BatchMeterUsageResult {
   }
   
   @scala.inline
-  implicit class BatchMeterUsageResultOps[Self <: BatchMeterUsageResult] (val x: Self) extends AnyVal {
+  implicit class BatchMeterUsageResultMutableBuilder[Self <: BatchMeterUsageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResults(value: UsageRecordResultList): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultsVarargs(value: UsageRecordResult*): Self = StObject.set(x, "Results", js.Array(value :_*))
     
     @scala.inline
-    def setResultsVarargs(value: UsageRecordResult*): Self = this.set("Results", js.Array(value :_*))
+    def setUnprocessedRecords(value: UsageRecordList): Self = StObject.set(x, "UnprocessedRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: UsageRecordResultList): Self = this.set("Results", value.asInstanceOf[js.Any])
+    def setUnprocessedRecordsUndefined: Self = StObject.set(x, "UnprocessedRecords", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("Results", js.undefined)
-    
-    @scala.inline
-    def setUnprocessedRecordsVarargs(value: UsageRecord*): Self = this.set("UnprocessedRecords", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnprocessedRecords(value: UsageRecordList): Self = this.set("UnprocessedRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnprocessedRecords: Self = this.set("UnprocessedRecords", js.undefined)
+    def setUnprocessedRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UnprocessedRecords", js.Array(value :_*))
   }
 }

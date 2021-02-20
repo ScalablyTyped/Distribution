@@ -1,17 +1,18 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PointOfInterestCategory extends js.Object
+sealed trait PointOfInterestCategory extends StObject
 /**
   * Point of interest categories.
   */
 @JSGlobal("mapkit.PointOfInterestCategory")
 @js.native
-object PointOfInterestCategory extends js.Object {
+object PointOfInterestCategory extends StObject {
   
   /**
     * The point of interest category for ATM machines.

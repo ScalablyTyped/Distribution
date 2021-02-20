@@ -9,13 +9,12 @@ import typings.openui5.sap.ui.model.Model
 import typings.openui5.sap.ui.model.PropertyBinding
 import typings.openui5.sap.ui.model.Sorter
 import typings.openui5.sap.ui.model.odata.`type`.ODataType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.odata.v4")
-@js.native
-object v4 extends js.Object {
+object v4 {
   
   @js.native
   trait Context

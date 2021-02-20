@@ -1,12 +1,13 @@
 package typings.postal
 
 import typings.postal.anon.Binding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IResolver extends js.Object {
+trait IResolver extends StObject {
   
   def compare(binding: String, topic: String, headerOptions: js.Object): Boolean = js.native
   

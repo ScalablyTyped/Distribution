@@ -1,11 +1,12 @@
 package typings.rxjsCompat.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallThisV2V3V4V5V6Project extends js.Object {
+trait FnCallThisV2V3V4V5V6Project extends StObject {
   
   def apply[T, R](
     array: js.Array[

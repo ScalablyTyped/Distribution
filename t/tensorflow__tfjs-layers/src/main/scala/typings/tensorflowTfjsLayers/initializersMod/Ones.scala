@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsLayers.initializersMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Ones () extends Initializer
 /* static members */
-@JSImport("@tensorflow/tfjs-layers/dist/initializers", "Ones")
-@js.native
-object Ones extends js.Object {
+object Ones {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/initializers", "Ones")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @nocollapse */
-  var className: String = js.native
+  @JSImport("@tensorflow/tfjs-layers/dist/initializers", "Ones.className")
+  @js.native
+  def className: String = js.native
+  @scala.inline
+  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

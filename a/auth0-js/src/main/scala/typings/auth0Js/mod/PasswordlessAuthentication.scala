@@ -1,12 +1,13 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "PasswordlessAuthentication")
 @js.native
-class PasswordlessAuthentication protected () extends js.Object {
+class PasswordlessAuthentication protected () extends StObject {
   def this(request: js.Any, option: js.Any) = this()
   
   /**

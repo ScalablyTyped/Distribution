@@ -3,17 +3,14 @@ package typings.nodeExpat
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-expat", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def createParser(): Parser = js.native
-  def createParser(cb: js.Function1[/* repeated */ js.Any, Unit]): Parser = js.native
-  
+  @JSImport("node-expat", "Parser")
   @js.native
   class Parser () extends Stream {
     def this(encoding: String) = this()
@@ -67,4 +64,11 @@ object mod extends js.Object {
     def write(data: String): Boolean = js.native
     def write(data: Buffer): Boolean = js.native
   }
+  
+  @JSImport("node-expat", "createParser")
+  @js.native
+  def createParser(): Parser = js.native
+  @JSImport("node-expat", "createParser")
+  @js.native
+  def createParser(cb: js.Function1[/* repeated */ js.Any, Unit]): Parser = js.native
 }

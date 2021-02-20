@@ -1,5 +1,6 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.exceljs.exceljsStrings.mediumDashDotDot
   - typings.exceljs.exceljsStrings.mediumDashDot
 */
-trait BorderStyle extends js.Object
+trait BorderStyle extends StObject
 object BorderStyle {
   
   @scala.inline

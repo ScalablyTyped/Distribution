@@ -1,11 +1,12 @@
 package typings.reactNavigationStack.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnPageChangeCancel extends js.Object {
+trait OnPageChangeCancel extends StObject {
   
   def onPageChangeCancel(): Unit = js.native
   
@@ -26,27 +27,15 @@ object OnPageChangeCancel {
   }
   
   @scala.inline
-  implicit class OnPageChangeCancelOps[Self <: OnPageChangeCancel] (val x: Self) extends AnyVal {
+  implicit class OnPageChangeCancelMutableBuilder[Self <: OnPageChangeCancel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnPageChangeCancel(value: () => Unit): Self = StObject.set(x, "onPageChangeCancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnPageChangeConfirm(value: Boolean => Unit): Self = StObject.set(x, "onPageChangeConfirm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnPageChangeCancel(value: () => Unit): Self = this.set("onPageChangeCancel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnPageChangeConfirm(value: Boolean => Unit): Self = this.set("onPageChangeConfirm", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnPageChangeStart(value: () => Unit): Self = this.set("onPageChangeStart", js.Any.fromFunction0(value))
+    def setOnPageChangeStart(value: () => Unit): Self = StObject.set(x, "onPageChangeStart", js.Any.fromFunction0(value))
   }
 }

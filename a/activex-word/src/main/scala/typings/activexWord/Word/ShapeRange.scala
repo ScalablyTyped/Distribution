@@ -11,12 +11,13 @@ import typings.activexOffice.Office.MsoShapeStyleIndex
 import typings.activexOffice.Office.MsoShapeType
 import typings.activexOffice.Office.MsoTriState
 import typings.activexOffice.Office.MsoZOrderCmd
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapeRange extends js.Object {
+trait ShapeRange extends StObject {
   
   def Activate(): Unit = js.native
   

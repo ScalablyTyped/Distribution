@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountSharingInfo extends js.Object {
+trait AccountSharingInfo extends StObject {
   
   /**
     * The AWS account ID where the current document is shared.
@@ -26,30 +27,18 @@ object AccountSharingInfo {
   }
   
   @scala.inline
-  implicit class AccountSharingInfoOps[Self <: AccountSharingInfo] (val x: Self) extends AnyVal {
+  implicit class AccountSharingInfoMutableBuilder[Self <: AccountSharingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSharedDocumentVersion(value: SharedDocumentVersion): Self = StObject.set(x, "SharedDocumentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
-    
-    @scala.inline
-    def setSharedDocumentVersion(value: SharedDocumentVersion): Self = this.set("SharedDocumentVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharedDocumentVersion: Self = this.set("SharedDocumentVersion", js.undefined)
+    def setSharedDocumentVersionUndefined: Self = StObject.set(x, "SharedDocumentVersion", js.undefined)
   }
 }

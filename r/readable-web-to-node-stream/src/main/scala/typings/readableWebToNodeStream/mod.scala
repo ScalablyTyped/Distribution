@@ -2,14 +2,14 @@ package typings.readableWebToNodeStream
 
 import typings.readableStream.mod.Readable
 import typings.std.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("readable-web-to-node-stream", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("readable-web-to-node-stream", "ReadableWebToNodeStream")
   @js.native
   class ReadableWebToNodeStream protected () extends Readable {
     /**

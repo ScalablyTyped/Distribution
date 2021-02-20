@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class KeytipLayerBase protected ()
   def this(props: IKeytipLayerProps, context: js.Any) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "KeytipLayerBase")
-@js.native
-object KeytipLayerBase extends js.Object {
+object KeytipLayerBase {
   
-  var defaultProps: IKeytipLayerProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "KeytipLayerBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "KeytipLayerBase.defaultProps")
+  @js.native
+  def defaultProps: IKeytipLayerProps = js.native
+  @scala.inline
+  def defaultProps_=(x: IKeytipLayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

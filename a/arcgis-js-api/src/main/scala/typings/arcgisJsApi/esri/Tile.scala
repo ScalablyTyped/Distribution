@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,51 +95,39 @@ object Tile {
   }
   
   @scala.inline
-  implicit class TileOps[Self <: Tile] (val x: Self) extends AnyVal {
+  implicit class TileMutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsVarargs(value: Double*): Self = this.set("bounds", js.Array(value :_*))
+    def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: js.Array[Double]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
     
     @scala.inline
-    def setCol(value: Double): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordsVarargs(value: Double*): Self = this.set("coords", js.Array(value :_*))
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoords(value: js.Array[Double]): Self = this.set("coords", value.asInstanceOf[js.Any])
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorld(value: Double): Self = this.set("world", value.asInstanceOf[js.Any])
+    def setWorld(value: Double): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
   }
 }

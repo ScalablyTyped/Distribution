@@ -1,5 +1,6 @@
 package typings.googleapis.webmastersV3Mod.webmastersV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about the various content types in the sitemap.
   */
 @js.native
-trait SchemaWmxSitemapContent extends js.Object {
+trait SchemaWmxSitemapContent extends StObject {
   
   /**
     * The number of URLs from the sitemap that were indexed (of the content
@@ -35,36 +36,24 @@ object SchemaWmxSitemapContent {
   }
   
   @scala.inline
-  implicit class SchemaWmxSitemapContentOps[Self <: SchemaWmxSitemapContent] (val x: Self) extends AnyVal {
+  implicit class SchemaWmxSitemapContentMutableBuilder[Self <: SchemaWmxSitemapContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexed(value: String): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubmitted(value: String): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexed(value: String): Self = this.set("indexed", value.asInstanceOf[js.Any])
+    def setSubmittedUndefined: Self = StObject.set(x, "submitted", js.undefined)
     
     @scala.inline
-    def deleteIndexed: Self = this.set("indexed", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmitted(value: String): Self = this.set("submitted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmitted: Self = this.set("submitted", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

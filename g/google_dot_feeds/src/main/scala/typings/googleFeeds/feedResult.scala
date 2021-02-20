@@ -1,11 +1,12 @@
 package typings.googleFeeds
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait feedResult extends js.Object {
+trait feedResult extends StObject {
   
   var error: js.UndefOr[feedError] = js.native
   
@@ -22,33 +23,21 @@ object feedResult {
   }
   
   @scala.inline
-  implicit class feedResultOps[Self <: feedResult] (val x: Self) extends AnyVal {
+  implicit class feedResultMutableBuilder[Self <: feedResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: feedError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeed(value: feedJSON): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeed(value: feedJSON): Self = this.set("feed", value.asInstanceOf[js.Any])
+    def setXmlDocument(value: String): Self = StObject.set(x, "xmlDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: feedError): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
-    
-    @scala.inline
-    def setXmlDocument(value: String): Self = this.set("xmlDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlDocument: Self = this.set("xmlDocument", js.undefined)
+    def setXmlDocumentUndefined: Self = StObject.set(x, "xmlDocument", js.undefined)
   }
 }

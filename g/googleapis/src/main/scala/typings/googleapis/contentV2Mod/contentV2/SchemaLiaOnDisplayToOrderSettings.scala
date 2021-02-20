@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLiaOnDisplayToOrderSettings extends js.Object {
+trait SchemaLiaOnDisplayToOrderSettings extends StObject {
   
   /**
     * Shipping cost and policy URL.
@@ -26,30 +27,18 @@ object SchemaLiaOnDisplayToOrderSettings {
   }
   
   @scala.inline
-  implicit class SchemaLiaOnDisplayToOrderSettingsOps[Self <: SchemaLiaOnDisplayToOrderSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaLiaOnDisplayToOrderSettingsMutableBuilder[Self <: SchemaLiaOnDisplayToOrderSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShippingCostPolicyUrl(value: String): Self = StObject.set(x, "shippingCostPolicyUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShippingCostPolicyUrlUndefined: Self = StObject.set(x, "shippingCostPolicyUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingCostPolicyUrl(value: String): Self = this.set("shippingCostPolicyUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingCostPolicyUrl: Self = this.set("shippingCostPolicyUrl", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

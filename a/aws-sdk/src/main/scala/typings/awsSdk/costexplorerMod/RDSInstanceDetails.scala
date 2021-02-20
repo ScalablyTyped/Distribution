@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RDSInstanceDetails extends js.Object {
+trait RDSInstanceDetails extends StObject {
   
   /**
     * Whether the recommendation is for a current-generation instance. 
@@ -61,72 +62,60 @@ object RDSInstanceDetails {
   }
   
   @scala.inline
-  implicit class RDSInstanceDetailsOps[Self <: RDSInstanceDetails] (val x: Self) extends AnyVal {
+  implicit class RDSInstanceDetailsMutableBuilder[Self <: RDSInstanceDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentGeneration(value: GenericBoolean): Self = StObject.set(x, "CurrentGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentGenerationUndefined: Self = StObject.set(x, "CurrentGeneration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseEdition(value: GenericString): Self = StObject.set(x, "DatabaseEdition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentGeneration(value: GenericBoolean): Self = this.set("CurrentGeneration", value.asInstanceOf[js.Any])
+    def setDatabaseEditionUndefined: Self = StObject.set(x, "DatabaseEdition", js.undefined)
     
     @scala.inline
-    def deleteCurrentGeneration: Self = this.set("CurrentGeneration", js.undefined)
+    def setDatabaseEngine(value: GenericString): Self = StObject.set(x, "DatabaseEngine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseEdition(value: GenericString): Self = this.set("DatabaseEdition", value.asInstanceOf[js.Any])
+    def setDatabaseEngineUndefined: Self = StObject.set(x, "DatabaseEngine", js.undefined)
     
     @scala.inline
-    def deleteDatabaseEdition: Self = this.set("DatabaseEdition", js.undefined)
+    def setDeploymentOption(value: GenericString): Self = StObject.set(x, "DeploymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseEngine(value: GenericString): Self = this.set("DatabaseEngine", value.asInstanceOf[js.Any])
+    def setDeploymentOptionUndefined: Self = StObject.set(x, "DeploymentOption", js.undefined)
     
     @scala.inline
-    def deleteDatabaseEngine: Self = this.set("DatabaseEngine", js.undefined)
+    def setFamily(value: GenericString): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentOption(value: GenericString): Self = this.set("DeploymentOption", value.asInstanceOf[js.Any])
+    def setFamilyUndefined: Self = StObject.set(x, "Family", js.undefined)
     
     @scala.inline
-    def deleteDeploymentOption: Self = this.set("DeploymentOption", js.undefined)
+    def setInstanceType(value: GenericString): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: GenericString): Self = this.set("Family", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("Family", js.undefined)
+    def setLicenseModel(value: GenericString): Self = StObject.set(x, "LicenseModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: GenericString): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setLicenseModelUndefined: Self = StObject.set(x, "LicenseModel", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setRegion(value: GenericString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseModel(value: GenericString): Self = this.set("LicenseModel", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def deleteLicenseModel: Self = this.set("LicenseModel", js.undefined)
+    def setSizeFlexEligible(value: GenericBoolean): Self = StObject.set(x, "SizeFlexEligible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: GenericString): Self = this.set("Region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
-    
-    @scala.inline
-    def setSizeFlexEligible(value: GenericBoolean): Self = this.set("SizeFlexEligible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeFlexEligible: Self = this.set("SizeFlexEligible", js.undefined)
+    def setSizeFlexEligibleUndefined: Self = StObject.set(x, "SizeFlexEligible", js.undefined)
   }
 }

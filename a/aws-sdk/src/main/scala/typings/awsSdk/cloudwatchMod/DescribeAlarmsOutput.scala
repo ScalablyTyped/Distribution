@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAlarmsOutput extends js.Object {
+trait DescribeAlarmsOutput extends StObject {
   
   /**
     * The information about any composite alarms returned by the operation.
@@ -31,42 +32,30 @@ object DescribeAlarmsOutput {
   }
   
   @scala.inline
-  implicit class DescribeAlarmsOutputOps[Self <: DescribeAlarmsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeAlarmsOutputMutableBuilder[Self <: DescribeAlarmsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompositeAlarms(value: CompositeAlarms): Self = StObject.set(x, "CompositeAlarms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompositeAlarmsUndefined: Self = StObject.set(x, "CompositeAlarms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompositeAlarmsVarargs(value: CompositeAlarm*): Self = StObject.set(x, "CompositeAlarms", js.Array(value :_*))
     
     @scala.inline
-    def setCompositeAlarmsVarargs(value: CompositeAlarm*): Self = this.set("CompositeAlarms", js.Array(value :_*))
+    def setMetricAlarms(value: MetricAlarms): Self = StObject.set(x, "MetricAlarms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompositeAlarms(value: CompositeAlarms): Self = this.set("CompositeAlarms", value.asInstanceOf[js.Any])
+    def setMetricAlarmsUndefined: Self = StObject.set(x, "MetricAlarms", js.undefined)
     
     @scala.inline
-    def deleteCompositeAlarms: Self = this.set("CompositeAlarms", js.undefined)
+    def setMetricAlarmsVarargs(value: MetricAlarm*): Self = StObject.set(x, "MetricAlarms", js.Array(value :_*))
     
     @scala.inline
-    def setMetricAlarmsVarargs(value: MetricAlarm*): Self = this.set("MetricAlarms", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricAlarms(value: MetricAlarms): Self = this.set("MetricAlarms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricAlarms: Self = this.set("MetricAlarms", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

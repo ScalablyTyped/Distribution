@@ -1,7 +1,8 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _ChannelStatus extends js.Object
+trait _ChannelStatus extends StObject

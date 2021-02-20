@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,45 +61,33 @@ object ThematicStops {
   }
   
   @scala.inline
-  implicit class ThematicStopsOps[Self <: ThematicStops] (val x: Self) extends AnyVal {
+  implicit class ThematicStopsMutableBuilder[Self <: ThematicStops] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopsVarargs(value: SizeStop*): Self = this.set("stops", js.Array(value :_*))
+    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
     @scala.inline
-    def setStops(value: js.Array[SizeStop]): Self = this.set("stops", value.asInstanceOf[js.Any])
+    def setStops(value: js.Array[SizeStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setStopsVarargs(value: SizeStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizationField(value: String): Self = this.set("normalizationField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalizationField: Self = this.set("normalizationField", js.undefined)
-    
-    @scala.inline
-    def setValueExpression(value: String): Self = this.set("valueExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueExpression: Self = this.set("valueExpression", js.undefined)
+    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
   }
 }

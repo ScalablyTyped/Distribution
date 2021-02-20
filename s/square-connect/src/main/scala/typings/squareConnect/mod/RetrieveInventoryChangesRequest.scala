@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "RetrieveInventoryChangesRequest")
 @js.native
-class RetrieveInventoryChangesRequest () extends js.Object {
+class RetrieveInventoryChangesRequest () extends StObject {
   
   /**
     * A pagination cursor returned by a previous call to this endpoint.

@@ -1,5 +1,6 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details about the user that encountered the threat.
   */
 @js.native
-trait SchemaUserInfo extends js.Object {
+trait SchemaUserInfo extends StObject {
   
   /**
     * The UN M.49 region code associated with the user&#39;s location.
@@ -29,30 +30,18 @@ object SchemaUserInfo {
   }
   
   @scala.inline
-  implicit class SchemaUserInfoOps[Self <: SchemaUserInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaUserInfoMutableBuilder[Self <: SchemaUserInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

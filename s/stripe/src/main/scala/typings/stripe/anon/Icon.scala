@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Icon extends js.Object {
+trait Icon extends StObject {
   
   /**
     * (ID of a file) An icon for the account. Must be square and at
@@ -35,36 +36,24 @@ object Icon {
   }
   
   @scala.inline
-  implicit class IconOps[Self <: Icon] (val x: Self) extends AnyVal {
+  implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setPrimary_color(value: String): Self = StObject.set(x, "primary_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
-    
-    @scala.inline
-    def setPrimary_color(value: String): Self = this.set("primary_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimary_color: Self = this.set("primary_color", js.undefined)
+    def setPrimary_colorUndefined: Self = StObject.set(x, "primary_color", js.undefined)
   }
 }

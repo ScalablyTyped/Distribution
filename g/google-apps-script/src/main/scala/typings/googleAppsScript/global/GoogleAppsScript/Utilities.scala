@@ -1,18 +1,18 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Utilities")
-@js.native
-object Utilities extends js.Object {
+object Utilities {
   
   /**
     * A typesafe enum for character sets.
     */
+  @JSGlobal("GoogleAppsScript.Utilities.Charset")
   @js.native
-  object Charset extends js.Object {
+  object Charset extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.Charset with Double] = js.native
@@ -25,8 +25,9 @@ object Utilities extends js.Object {
   /**
     * Selector of Digest algorithm.
     */
+  @JSGlobal("GoogleAppsScript.Utilities.DigestAlgorithm")
   @js.native
-  object DigestAlgorithm extends js.Object {
+  object DigestAlgorithm extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.DigestAlgorithm with Double] = js.native
@@ -47,8 +48,9 @@ object Utilities extends js.Object {
   /**
     * Selector of MAC algorithm
     */
+  @JSGlobal("GoogleAppsScript.Utilities.MacAlgorithm")
   @js.native
-  object MacAlgorithm extends js.Object {
+  object MacAlgorithm extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.MacAlgorithm with Double] = js.native
@@ -67,8 +69,9 @@ object Utilities extends js.Object {
   /**
     * Selector of RSA algorithm
     */
+  @JSGlobal("GoogleAppsScript.Utilities.RsaAlgorithm")
   @js.native
-  object RsaAlgorithm extends js.Object {
+  object RsaAlgorithm extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Utilities.RsaAlgorithm with Double] = js.native

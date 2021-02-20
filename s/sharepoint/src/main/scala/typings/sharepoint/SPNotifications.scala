@@ -1,17 +1,17 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SPNotifications")
-@js.native
-object SPNotifications extends js.Object {
+object SPNotifications {
   
   @js.native
-  sealed trait ContainerID extends js.Object
+  sealed trait ContainerID extends StObject
+  @JSGlobal("SPNotifications.ContainerID")
   @js.native
-  object ContainerID extends js.Object {
+  object ContainerID extends StObject {
     
     @js.native
     sealed trait Basic extends ContainerID
@@ -21,9 +21,10 @@ object SPNotifications extends js.Object {
   }
   
   @js.native
-  sealed trait EventID extends js.Object
+  sealed trait EventID extends StObject
+  @JSGlobal("SPNotifications.EventID")
   @js.native
-  object EventID extends js.Object {
+  object EventID extends StObject {
     
     @js.native
     sealed trait OnDisplayNotification extends EventID

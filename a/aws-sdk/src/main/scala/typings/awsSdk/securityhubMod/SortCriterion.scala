@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortCriterion extends js.Object {
+trait SortCriterion extends StObject {
   
   /**
     * The finding attribute used to sort findings.
@@ -26,30 +27,18 @@ object SortCriterion {
   }
   
   @scala.inline
-  implicit class SortCriterionOps[Self <: SortCriterion] (val x: Self) extends AnyVal {
+  implicit class SortCriterionMutableBuilder[Self <: SortCriterion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: NonEmptyString): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "Field", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: NonEmptyString): Self = this.set("Field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteField: Self = this.set("Field", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojtableMod.ojTable.ContextStatus
 import typings.oracleOraclejet.oracleOraclejetStrings.edit
 import typings.oracleOraclejet.oracleOraclejetStrings.navigation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Datasource[K, D] extends js.Object {
+trait Datasource[K, D] extends StObject {
   
   var datasource: (DataProvider[K, D]) | Null = js.native
   
@@ -26,30 +27,18 @@ object Datasource {
   }
   
   @scala.inline
-  implicit class DatasourceOps[Self <: Datasource[_, _], K, D] (val x: Self with (Datasource[K, D])) extends AnyVal {
+  implicit class DatasourceMutableBuilder[Self <: Datasource[_, _], K, D] (val x: Self with (Datasource[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasourceNull: Self = StObject.set(x, "datasource", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: edit | navigation): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: edit | navigation): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: ContextStatus[K]): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDatasource(value: DataProvider[K, D]): Self = this.set("datasource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDatasourceNull: Self = this.set("datasource", null)
+    def setStatus(value: ContextStatus[K]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

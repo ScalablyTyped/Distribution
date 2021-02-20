@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PowerFormRecipient extends js.Object {
+trait PowerFormRecipient extends StObject {
   
   /**
     * (Optional) The access code that the recipient must enter to access the PowerForm.
@@ -119,96 +120,84 @@ object PowerFormRecipient {
   }
   
   @scala.inline
-  implicit class PowerFormRecipientOps[Self <: PowerFormRecipient] (val x: Self) extends AnyVal {
+  implicit class PowerFormRecipientMutableBuilder[Self <: PowerFormRecipient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessCodeLocked(value: String): Self = StObject.set(x, "accessCodeLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessCodeLockedUndefined: Self = StObject.set(x, "accessCodeLocked", js.undefined)
     
     @scala.inline
-    def setAccessCode(value: String): Self = this.set("accessCode", value.asInstanceOf[js.Any])
+    def setAccessCodeRequired(value: String): Self = StObject.set(x, "accessCodeRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessCode: Self = this.set("accessCode", js.undefined)
+    def setAccessCodeRequiredUndefined: Self = StObject.set(x, "accessCodeRequired", js.undefined)
     
     @scala.inline
-    def setAccessCodeLocked(value: String): Self = this.set("accessCodeLocked", value.asInstanceOf[js.Any])
+    def setAccessCodeUndefined: Self = StObject.set(x, "accessCode", js.undefined)
     
     @scala.inline
-    def deleteAccessCodeLocked: Self = this.set("accessCodeLocked", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessCodeRequired(value: String): Self = this.set("accessCodeRequired", value.asInstanceOf[js.Any])
+    def setEmailLocked(value: String): Self = StObject.set(x, "emailLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessCodeRequired: Self = this.set("accessCodeRequired", js.undefined)
+    def setEmailLockedUndefined: Self = StObject.set(x, "emailLocked", js.undefined)
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setIdCheckConfigurationName(value: String): Self = StObject.set(x, "idCheckConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailLocked(value: String): Self = this.set("emailLocked", value.asInstanceOf[js.Any])
+    def setIdCheckConfigurationNameUndefined: Self = StObject.set(x, "idCheckConfigurationName", js.undefined)
     
     @scala.inline
-    def deleteEmailLocked: Self = this.set("emailLocked", js.undefined)
+    def setIdCheckRequired(value: String): Self = StObject.set(x, "idCheckRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdCheckConfigurationName(value: String): Self = this.set("idCheckConfigurationName", value.asInstanceOf[js.Any])
+    def setIdCheckRequiredUndefined: Self = StObject.set(x, "idCheckRequired", js.undefined)
     
     @scala.inline
-    def deleteIdCheckConfigurationName: Self = this.set("idCheckConfigurationName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdCheckRequired(value: String): Self = this.set("idCheckRequired", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIdCheckRequired: Self = this.set("idCheckRequired", js.undefined)
+    def setRecipientType(value: String): Self = StObject.set(x, "recipientType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRecipientTypeUndefined: Self = StObject.set(x, "recipientType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientType(value: String): Self = this.set("recipientType", value.asInstanceOf[js.Any])
+    def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     
     @scala.inline
-    def deleteRecipientType: Self = this.set("recipientType", js.undefined)
+    def setRoutingOrder(value: String): Self = StObject.set(x, "routingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleName(value: String): Self = this.set("roleName", value.asInstanceOf[js.Any])
+    def setRoutingOrderUndefined: Self = StObject.set(x, "routingOrder", js.undefined)
     
     @scala.inline
-    def deleteRoleName: Self = this.set("roleName", js.undefined)
+    def setTemplateRequiresIdLookup(value: String): Self = StObject.set(x, "templateRequiresIdLookup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingOrder(value: String): Self = this.set("routingOrder", value.asInstanceOf[js.Any])
+    def setTemplateRequiresIdLookupUndefined: Self = StObject.set(x, "templateRequiresIdLookup", js.undefined)
     
     @scala.inline
-    def deleteRoutingOrder: Self = this.set("routingOrder", js.undefined)
+    def setUserNameLocked(value: String): Self = StObject.set(x, "userNameLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateRequiresIdLookup(value: String): Self = this.set("templateRequiresIdLookup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateRequiresIdLookup: Self = this.set("templateRequiresIdLookup", js.undefined)
-    
-    @scala.inline
-    def setUserNameLocked(value: String): Self = this.set("userNameLocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserNameLocked: Self = this.set("userNameLocked", js.undefined)
+    def setUserNameLockedUndefined: Self = StObject.set(x, "userNameLocked", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationStatisticsQueryConditions extends js.Object {
+trait NotificationStatisticsQueryConditions extends StObject {
   
   var endDate: Date = js.native
   
@@ -38,36 +39,24 @@ object NotificationStatisticsQueryConditions {
   }
   
   @scala.inline
-  implicit class NotificationStatisticsQueryConditionsOps[Self <: NotificationStatisticsQueryConditions] (val x: Self) extends AnyVal {
+  implicit class NotificationStatisticsQueryConditionsMutableBuilder[Self <: NotificationStatisticsQueryConditions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHitCountMinimum(value: Double): Self = StObject.set(x, "hitCountMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: Date): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitCountMinimum(value: Double): Self = this.set("hitCountMinimum", value.asInstanceOf[js.Any])
+    def setType(value: NotificationStatisticType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartDate(value: Date): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: NotificationStatisticType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: IdentityRef): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: IdentityRef): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

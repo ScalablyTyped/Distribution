@@ -1,17 +1,17 @@
 package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.reactNative.anon.Screen
 import typings.reactNative.reactNativeStrings.change
 import typings.reactNative.reactNativeStrings.screen
 import typings.reactNative.reactNativeStrings.window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dimensions extends js.Object {
+trait Dimensions extends StObject {
   
   /**
     * Add an event listener for dimension changes
@@ -56,6 +56,3 @@ trait Dimensions extends js.Object {
     */
   def set(dims: StringDictionary[js.Any]): Unit = js.native
 }
-@JSImport("react-native", "Dimensions")
-@js.native
-object Dimensions extends TopLevel[Dimensions]

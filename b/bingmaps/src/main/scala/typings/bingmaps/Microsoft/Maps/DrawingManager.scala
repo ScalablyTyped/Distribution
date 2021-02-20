@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps
 
 import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawingManager extends js.Object {
+trait DrawingManager extends StObject {
   
   def add(data: js.Array[IPrimitive]): Unit = js.native
   def add(data: js.Array[IPrimitive], index: Double): Unit = js.native

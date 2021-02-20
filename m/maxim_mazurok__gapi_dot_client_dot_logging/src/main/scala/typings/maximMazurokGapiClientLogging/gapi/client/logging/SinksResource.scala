@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientLogging.anon.UniqueWriterIdentity
 import typings.maximMazurokGapiClientLogging.anon.UpdateMask
 import typings.maximMazurokGapiClientLogging.anon.Uploadprotocol
 import typings.maximMazurokGapiClientLogging.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinksResource extends js.Object {
+trait SinksResource extends StObject {
   
   /**
     * Creates a sink that exports specified log entries to a destination. The export of newly-ingested log entries begins immediately, unless the sink's writer_identity is not permitted

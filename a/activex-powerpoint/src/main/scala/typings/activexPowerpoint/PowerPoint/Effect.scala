@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Effect extends js.Object {
+trait Effect extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -77,75 +78,63 @@ object Effect {
   }
   
   @scala.inline
-  implicit class EffectOps[Self <: Effect] (val x: Self) extends AnyVal {
+  implicit class EffectMutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviors(value: AnimationBehaviors): Self = StObject.set(x, "Behaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviors(value: AnimationBehaviors): Self = this.set("Behaviors", value.asInstanceOf[js.Any])
+    def setEffectInformation(value: EffectInformation): Self = StObject.set(x, "EffectInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setEffectParameters(value: EffectParameters): Self = StObject.set(x, "EffectParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setEffectType(value: MsoAnimEffect): Self = StObject.set(x, "EffectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectInformation(value: EffectInformation): Self = this.set("EffectInformation", value.asInstanceOf[js.Any])
+    def setExit(value: MsoTriState): Self = StObject.set(x, "Exit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectParameters(value: EffectParameters): Self = this.set("EffectParameters", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectType(value: MsoAnimEffect): Self = this.set("EffectType", value.asInstanceOf[js.Any])
+    def setMoveAfter(value: Effect => Unit): Self = StObject.set(x, "MoveAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExit(value: MsoTriState): Self = this.set("Exit", value.asInstanceOf[js.Any])
+    def setMoveBefore(value: Effect => Unit): Self = StObject.set(x, "MoveBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setMoveTo(value: Double => Unit): Self = StObject.set(x, "MoveTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveAfter(value: Effect => Unit): Self = this.set("MoveAfter", js.Any.fromFunction1(value))
+    def setParagraph(value: Double): Self = StObject.set(x, "Paragraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveBefore(value: Effect => Unit): Self = this.set("MoveBefore", js.Any.fromFunction1(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveTo(value: Double => Unit): Self = this.set("MoveTo", js.Any.fromFunction1(value))
+    def setPowerPointDotEffect_typekey(value: Effect): Self = StObject.set(x, "PowerPoint.Effect_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraph(value: Double): Self = this.set("Paragraph", value.asInstanceOf[js.Any])
+    def setShape(value: Shape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setTextRangeLength(value: Double): Self = StObject.set(x, "TextRangeLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotEffect_typekey(value: Effect): Self = this.set("PowerPoint.Effect_typekey", value.asInstanceOf[js.Any])
+    def setTextRangeStart(value: Double): Self = StObject.set(x, "TextRangeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: Shape): Self = this.set("Shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextRangeLength(value: Double): Self = this.set("TextRangeLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextRangeStart(value: Double): Self = this.set("TextRangeStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiming(value: Timing): Self = this.set("Timing", value.asInstanceOf[js.Any])
+    def setTiming(value: Timing): Self = StObject.set(x, "Timing", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * export configuration.
   */
 @js.native
-trait SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination extends js.Object {
+trait SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination extends StObject {
   
   /**
     * MIME types supported by DICOM spec. Each file will be written in the
@@ -43,30 +44,18 @@ object SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1beta1DicomGcsDestinationOps[Self <: SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudHealthcareV1beta1DicomGcsDestinationMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUriPrefix(value: String): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
-    
-    @scala.inline
-    def setUriPrefix(value: String): Self = this.set("uriPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUriPrefix: Self = this.set("uriPrefix", js.undefined)
+    def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
   }
 }

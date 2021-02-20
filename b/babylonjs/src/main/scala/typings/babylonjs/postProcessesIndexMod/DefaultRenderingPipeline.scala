@@ -2,6 +2,7 @@ package typings.babylonjs.postProcessesIndexMod
 
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -161,9 +162,7 @@ class DefaultRenderingPipeline ()
   def this(name: String, hdr: Boolean, scene: Scene, cameras: js.Array[Camera], automaticBuild: Boolean) = this()
 }
 /* static members */
-@JSImport("babylonjs/PostProcesses/index", "DefaultRenderingPipeline")
-@js.native
-object DefaultRenderingPipeline extends js.Object {
+object DefaultRenderingPipeline {
   
   /**
     * Parse the serialized pipeline
@@ -172,5 +171,7 @@ object DefaultRenderingPipeline extends js.Object {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
+  @JSImport("babylonjs/PostProcesses/index", "DefaultRenderingPipeline.Parse")
+  @js.native
   def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.defaultRenderingPipelineMod.DefaultRenderingPipeline = js.native
 }

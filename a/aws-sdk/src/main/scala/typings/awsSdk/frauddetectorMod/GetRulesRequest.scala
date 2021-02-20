@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRulesRequest extends js.Object {
+trait GetRulesRequest extends StObject {
   
   /**
     * The detector ID.
@@ -41,45 +42,33 @@ object GetRulesRequest {
   }
   
   @scala.inline
-  implicit class GetRulesRequestOps[Self <: GetRulesRequest] (val x: Self) extends AnyVal {
+  implicit class GetRulesRequestMutableBuilder[Self <: GetRulesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResults(value: RulesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setDetectorId(value: identifier): Self = this.set("detectorId", value.asInstanceOf[js.Any])
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: RulesMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setRuleId(value: identifier): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setRuleVersion(value: wholeNumberVersionString): Self = StObject.set(x, "ruleVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleId(value: identifier): Self = this.set("ruleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleId: Self = this.set("ruleId", js.undefined)
-    
-    @scala.inline
-    def setRuleVersion(value: wholeNumberVersionString): Self = this.set("ruleVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleVersion: Self = this.set("ruleVersion", js.undefined)
+    def setRuleVersionUndefined: Self = StObject.set(x, "ruleVersion", js.undefined)
   }
 }

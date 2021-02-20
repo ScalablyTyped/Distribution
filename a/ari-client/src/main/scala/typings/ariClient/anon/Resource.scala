@@ -1,11 +1,12 @@
 package typings.ariClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Resource extends js.Object {
+trait Resource extends StObject {
   
   var resource: String = js.native
   
@@ -20,24 +21,12 @@ object Resource {
   }
   
   @scala.inline
-  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTech(value: String): Self = this.set("tech", value.asInstanceOf[js.Any])
+    def setTech(value: String): Self = StObject.set(x, "tech", value.asInstanceOf[js.Any])
   }
 }

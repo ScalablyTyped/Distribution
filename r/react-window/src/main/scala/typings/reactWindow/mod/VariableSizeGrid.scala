@@ -3,14 +3,21 @@ package typings.reactWindow.mod
 import typings.react.mod.Component
 import typings.reactWindow.anon.RowIndex
 import typings.reactWindow.anon.ScrollLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-window", "VariableSizeGrid")
 @js.native
-class VariableSizeGrid ()
+class VariableSizeGrid protected ()
   extends Component[VariableSizeGridProps, js.Object, js.Any] {
+  def this(props: VariableSizeGridProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: VariableSizeGridProps, context: js.Any) = this()
   
   /**
     * VariableSizeGrid caches offsets and measurements for each column index for performance purposes.

@@ -7,12 +7,13 @@ import typings.chromeApps.chrome.certificateProvider.SignRequest
 import typings.chromeApps.chrome.certificateProvider.StopRequestPinDetails
 import typings.chromeApps.chrome.events.Event
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofcertificateProvider extends js.Object {
+trait TypeofcertificateProvider extends StObject {
   
   /**
     * The types of errors that can be presented to the user through the requestPin function.
@@ -108,25 +109,7 @@ object TypeofcertificateProvider {
   }
   
   @scala.inline
-  implicit class TypeofcertificateProviderOps[Self <: TypeofcertificateProvider] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPinRequestErrorType(value: INVALIDPIN): Self = this.set("PinRequestErrorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPinRequestType(value: PIN): Self = this.set("PinRequestType", value.asInstanceOf[js.Any])
+  implicit class TypeofcertificateProviderMutableBuilder[Self <: TypeofcertificateProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setOnCertificatesRequested(
@@ -137,7 +120,7 @@ object TypeofcertificateProvider {
             _
           ]
         ]
-    ): Self = this.set("onCertificatesRequested", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onCertificatesRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSignDigestRequested(
@@ -148,14 +131,20 @@ object TypeofcertificateProvider {
             _
           ]
         ]
-    ): Self = this.set("onSignDigestRequested", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onSignDigestRequested", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPinRequestErrorType(value: INVALIDPIN): Self = StObject.set(x, "PinRequestErrorType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPinRequestType(value: PIN): Self = StObject.set(x, "PinRequestType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRequestPin(
       value: (RequestPinDetails, js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]) => Unit
-    ): Self = this.set("requestPin", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "requestPin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStopPinRequest(value: (StopRequestPinDetails, js.Function0[Unit]) => Unit): Self = this.set("stopPinRequest", js.Any.fromFunction2(value))
+    def setStopPinRequest(value: (StopRequestPinDetails, js.Function0[Unit]) => Unit): Self = StObject.set(x, "stopPinRequest", js.Any.fromFunction2(value))
   }
 }

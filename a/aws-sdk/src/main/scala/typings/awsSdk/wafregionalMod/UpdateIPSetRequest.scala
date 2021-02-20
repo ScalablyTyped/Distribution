@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateIPSetRequest extends js.Object {
+trait UpdateIPSetRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
@@ -31,30 +32,18 @@ object UpdateIPSetRequest {
   }
   
   @scala.inline
-  implicit class UpdateIPSetRequestOps[Self <: UpdateIPSetRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateIPSetRequestMutableBuilder[Self <: UpdateIPSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIPSetId(value: ResourceId): Self = StObject.set(x, "IPSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdates(value: IPSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIPSetId(value: ResourceId): Self = this.set("IPSetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatesVarargs(value: IPSetUpdate*): Self = this.set("Updates", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdates(value: IPSetUpdates): Self = this.set("Updates", value.asInstanceOf[js.Any])
+    def setUpdatesVarargs(value: IPSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
   }
 }

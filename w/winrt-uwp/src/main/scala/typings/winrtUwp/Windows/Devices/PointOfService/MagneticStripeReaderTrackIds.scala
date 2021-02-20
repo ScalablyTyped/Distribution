@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MagneticStripeReaderTrackIds extends js.Object
+sealed trait MagneticStripeReaderTrackIds extends StObject
 /** Defines the constants that indicates the device track ID to read. */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderTrackIds")
 @js.native
-object MagneticStripeReaderTrackIds extends js.Object {
+object MagneticStripeReaderTrackIds extends StObject {
   
   /** No track ID */
   @js.native

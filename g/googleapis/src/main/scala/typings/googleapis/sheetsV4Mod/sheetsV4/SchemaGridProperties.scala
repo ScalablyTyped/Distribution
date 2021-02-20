@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Properties of a grid.
   */
 @js.native
-trait SchemaGridProperties extends js.Object {
+trait SchemaGridProperties extends StObject {
   
   /**
     * The number of columns in the grid.
@@ -54,60 +55,48 @@ object SchemaGridProperties {
   }
   
   @scala.inline
-  implicit class SchemaGridPropertiesOps[Self <: SchemaGridProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaGridPropertiesMutableBuilder[Self <: SchemaGridProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnGroupControlAfter(value: Boolean): Self = StObject.set(x, "columnGroupControlAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    def setColumnGroupControlAfterUndefined: Self = StObject.set(x, "columnGroupControlAfter", js.undefined)
     
     @scala.inline
-    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    def setFrozenColumnCount(value: Double): Self = StObject.set(x, "frozenColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnGroupControlAfter(value: Boolean): Self = this.set("columnGroupControlAfter", value.asInstanceOf[js.Any])
+    def setFrozenColumnCountUndefined: Self = StObject.set(x, "frozenColumnCount", js.undefined)
     
     @scala.inline
-    def deleteColumnGroupControlAfter: Self = this.set("columnGroupControlAfter", js.undefined)
+    def setFrozenRowCount(value: Double): Self = StObject.set(x, "frozenRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrozenColumnCount(value: Double): Self = this.set("frozenColumnCount", value.asInstanceOf[js.Any])
+    def setFrozenRowCountUndefined: Self = StObject.set(x, "frozenRowCount", js.undefined)
     
     @scala.inline
-    def deleteFrozenColumnCount: Self = this.set("frozenColumnCount", js.undefined)
+    def setHideGridlines(value: Boolean): Self = StObject.set(x, "hideGridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrozenRowCount(value: Double): Self = this.set("frozenRowCount", value.asInstanceOf[js.Any])
+    def setHideGridlinesUndefined: Self = StObject.set(x, "hideGridlines", js.undefined)
     
     @scala.inline
-    def deleteFrozenRowCount: Self = this.set("frozenRowCount", js.undefined)
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideGridlines(value: Boolean): Self = this.set("hideGridlines", value.asInstanceOf[js.Any])
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def deleteHideGridlines: Self = this.set("hideGridlines", js.undefined)
+    def setRowGroupControlAfter(value: Boolean): Self = StObject.set(x, "rowGroupControlAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
-    
-    @scala.inline
-    def setRowGroupControlAfter(value: Boolean): Self = this.set("rowGroupControlAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowGroupControlAfter: Self = this.set("rowGroupControlAfter", js.undefined)
+    def setRowGroupControlAfterUndefined: Self = StObject.set(x, "rowGroupControlAfter", js.undefined)
   }
 }

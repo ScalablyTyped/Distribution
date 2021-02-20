@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.behaviorMod.Behavior
 import typings.babylonjs.meshMod.Mesh
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Behaviors/Meshes/fadeInOutBehavior", JSImport.Namespace)
-@js.native
-object fadeInOutBehaviorMod extends js.Object {
+object fadeInOutBehaviorMod {
   
+  @JSImport("babylonjs/Behaviors/Meshes/fadeInOutBehavior", "FadeInOutBehavior")
   @js.native
   /**
     * Instatiates the FadeInOutBehavior

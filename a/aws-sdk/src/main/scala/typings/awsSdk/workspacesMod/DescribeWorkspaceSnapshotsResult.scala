@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeWorkspaceSnapshotsResult extends js.Object {
+trait DescribeWorkspaceSnapshotsResult extends StObject {
   
   /**
     * Information about the snapshots that can be used to rebuild a WorkSpace. These snapshots include the user volume.
@@ -26,36 +27,24 @@ object DescribeWorkspaceSnapshotsResult {
   }
   
   @scala.inline
-  implicit class DescribeWorkspaceSnapshotsResultOps[Self <: DescribeWorkspaceSnapshotsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeWorkspaceSnapshotsResultMutableBuilder[Self <: DescribeWorkspaceSnapshotsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRebuildSnapshots(value: SnapshotList): Self = StObject.set(x, "RebuildSnapshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRebuildSnapshotsUndefined: Self = StObject.set(x, "RebuildSnapshots", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRebuildSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RebuildSnapshots", js.Array(value :_*))
     
     @scala.inline
-    def setRebuildSnapshotsVarargs(value: Snapshot*): Self = this.set("RebuildSnapshots", js.Array(value :_*))
+    def setRestoreSnapshots(value: SnapshotList): Self = StObject.set(x, "RestoreSnapshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRebuildSnapshots(value: SnapshotList): Self = this.set("RebuildSnapshots", value.asInstanceOf[js.Any])
+    def setRestoreSnapshotsUndefined: Self = StObject.set(x, "RestoreSnapshots", js.undefined)
     
     @scala.inline
-    def deleteRebuildSnapshots: Self = this.set("RebuildSnapshots", js.undefined)
-    
-    @scala.inline
-    def setRestoreSnapshotsVarargs(value: Snapshot*): Self = this.set("RestoreSnapshots", js.Array(value :_*))
-    
-    @scala.inline
-    def setRestoreSnapshots(value: SnapshotList): Self = this.set("RestoreSnapshots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestoreSnapshots: Self = this.set("RestoreSnapshots", js.undefined)
+    def setRestoreSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RestoreSnapshots", js.Array(value :_*))
   }
 }

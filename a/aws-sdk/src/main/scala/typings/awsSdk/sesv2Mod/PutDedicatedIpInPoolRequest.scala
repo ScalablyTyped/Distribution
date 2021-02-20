@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutDedicatedIpInPoolRequest extends js.Object {
+trait PutDedicatedIpInPoolRequest extends StObject {
   
   /**
     * The name of the IP pool that you want to add the dedicated IP address to. You have to specify an IP pool that already exists.
@@ -26,24 +27,12 @@ object PutDedicatedIpInPoolRequest {
   }
   
   @scala.inline
-  implicit class PutDedicatedIpInPoolRequestOps[Self <: PutDedicatedIpInPoolRequest] (val x: Self) extends AnyVal {
+  implicit class PutDedicatedIpInPoolRequestMutableBuilder[Self <: PutDedicatedIpInPoolRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationPoolName(value: PoolName): Self = StObject.set(x, "DestinationPoolName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestinationPoolName(value: PoolName): Self = this.set("DestinationPoolName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIp(value: Ip): Self = this.set("Ip", value.asInstanceOf[js.Any])
+    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
   }
 }

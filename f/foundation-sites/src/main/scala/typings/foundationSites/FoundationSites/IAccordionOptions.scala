@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAccordionOptions extends js.Object {
+trait IAccordionOptions extends StObject {
   
   var allowAllClosed: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object IAccordionOptions {
   }
   
   @scala.inline
-  implicit class IAccordionOptionsOps[Self <: IAccordionOptions] (val x: Self) extends AnyVal {
+  implicit class IAccordionOptionsMutableBuilder[Self <: IAccordionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAllClosed(value: Boolean): Self = StObject.set(x, "allowAllClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAllClosedUndefined: Self = StObject.set(x, "allowAllClosed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiExpand(value: Boolean): Self = StObject.set(x, "multiExpand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAllClosed(value: Boolean): Self = this.set("allowAllClosed", value.asInstanceOf[js.Any])
+    def setMultiExpandUndefined: Self = StObject.set(x, "multiExpand", js.undefined)
     
     @scala.inline
-    def deleteAllowAllClosed: Self = this.set("allowAllClosed", js.undefined)
+    def setSlideSpeed(value: Double): Self = StObject.set(x, "slideSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiExpand(value: Boolean): Self = this.set("multiExpand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiExpand: Self = this.set("multiExpand", js.undefined)
-    
-    @scala.inline
-    def setSlideSpeed(value: Double): Self = this.set("slideSpeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideSpeed: Self = this.set("slideSpeed", js.undefined)
+    def setSlideSpeedUndefined: Self = StObject.set(x, "slideSpeed", js.undefined)
   }
 }

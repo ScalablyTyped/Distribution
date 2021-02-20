@@ -4,12 +4,13 @@ import typings.ariClient.anon.DestinationRecordingName
 import typings.ariClient.anon.RecordingName
 import typings.node.Buffer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Recordings extends js.Object {
+trait Recordings extends StObject {
   
   /**
     * Stop a live recording and discard it.

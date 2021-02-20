@@ -1,5 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * default service will be used.
   */
 @js.native
-trait SchemaPathMatcher extends js.Object {
+trait SchemaPathMatcher extends StObject {
   
   /**
     * The full or partial URL to the BackendService resource. This will be used
@@ -64,45 +65,33 @@ object SchemaPathMatcher {
   }
   
   @scala.inline
-  implicit class SchemaPathMatcherOps[Self <: SchemaPathMatcher] (val x: Self) extends AnyVal {
+  implicit class SchemaPathMatcherMutableBuilder[Self <: SchemaPathMatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultService(value: String): Self = StObject.set(x, "defaultService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultServiceUndefined: Self = StObject.set(x, "defaultService", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultService(value: String): Self = this.set("defaultService", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultService: Self = this.set("defaultService", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPathRules(value: js.Array[SchemaPathRule]): Self = StObject.set(x, "pathRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPathRulesUndefined: Self = StObject.set(x, "pathRules", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setPathRulesVarargs(value: SchemaPathRule*): Self = this.set("pathRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setPathRules(value: js.Array[SchemaPathRule]): Self = this.set("pathRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathRules: Self = this.set("pathRules", js.undefined)
+    def setPathRulesVarargs(value: SchemaPathRule*): Self = StObject.set(x, "pathRules", js.Array(value :_*))
   }
 }

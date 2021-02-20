@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayAppliancePage extends js.Object {
+trait DisplayAppliancePage extends StObject {
   
   var documentId: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object DisplayAppliancePage {
   }
   
   @scala.inline
-  implicit class DisplayAppliancePageOps[Self <: DisplayAppliancePage] (val x: Self) extends AnyVal {
+  implicit class DisplayAppliancePageMutableBuilder[Self <: DisplayAppliancePage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentName(value: String): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    def setDocumentNameUndefined: Self = StObject.set(x, "documentName", js.undefined)
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    def setExternalDocumentId(value: String): Self = StObject.set(x, "externalDocumentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentName(value: String): Self = this.set("documentName", value.asInstanceOf[js.Any])
+    def setExternalDocumentIdUndefined: Self = StObject.set(x, "externalDocumentId", js.undefined)
     
     @scala.inline
-    def deleteDocumentName: Self = this.set("documentName", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalDocumentId(value: String): Self = this.set("externalDocumentId", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteExternalDocumentId: Self = this.set("externalDocumentId", js.undefined)
+    def setIsFirstPage(value: Boolean): Self = StObject.set(x, "isFirstPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIsFirstPageUndefined: Self = StObject.set(x, "isFirstPage", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFirstPage(value: Boolean): Self = this.set("isFirstPage", value.asInstanceOf[js.Any])
+    def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
     
     @scala.inline
-    def deleteIsFirstPage: Self = this.set("isFirstPage", js.undefined)
+    def setPageNo(value: Double): Self = StObject.set(x, "pageNo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageId(value: String): Self = this.set("pageId", value.asInstanceOf[js.Any])
+    def setPageNoUndefined: Self = StObject.set(x, "pageNo", js.undefined)
     
     @scala.inline
-    def deletePageId: Self = this.set("pageId", js.undefined)
+    def setPageStatus(value: String): Self = StObject.set(x, "pageStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNo(value: Double): Self = this.set("pageNo", value.asInstanceOf[js.Any])
+    def setPageStatusUndefined: Self = StObject.set(x, "pageStatus", js.undefined)
     
     @scala.inline
-    def deletePageNo: Self = this.set("pageNo", js.undefined)
+    def setPageType(value: String): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageStatus(value: String): Self = this.set("pageStatus", value.asInstanceOf[js.Any])
+    def setPageTypeUndefined: Self = StObject.set(x, "pageType", js.undefined)
     
     @scala.inline
-    def deletePageStatus: Self = this.set("pageStatus", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageType(value: String): Self = this.set("pageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageType: Self = this.set("pageType", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

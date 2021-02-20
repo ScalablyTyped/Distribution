@@ -4,12 +4,13 @@ import typings.materializeCss.materializeCssStrings.buttom
 import typings.materializeCss.materializeCssStrings.left
 import typings.materializeCss.materializeCssStrings.right
 import typings.materializeCss.materializeCssStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FloatingActionButtonOptions extends js.Object {
+trait FloatingActionButtonOptions extends StObject {
   
   /**
     * Direction FAB menu opens
@@ -38,27 +39,15 @@ object FloatingActionButtonOptions {
   }
   
   @scala.inline
-  implicit class FloatingActionButtonOptionsOps[Self <: FloatingActionButtonOptions] (val x: Self) extends AnyVal {
+  implicit class FloatingActionButtonOptionsMutableBuilder[Self <: FloatingActionButtonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: top | right | buttom | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoverEnabled(value: Boolean): Self = StObject.set(x, "hoverEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirection(value: top | right | buttom | left): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHoverEnabled(value: Boolean): Self = this.set("hoverEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolbarEnabled(value: Boolean): Self = this.set("toolbarEnabled", value.asInstanceOf[js.Any])
+    def setToolbarEnabled(value: Boolean): Self = StObject.set(x, "toolbarEnabled", value.asInstanceOf[js.Any])
   }
 }

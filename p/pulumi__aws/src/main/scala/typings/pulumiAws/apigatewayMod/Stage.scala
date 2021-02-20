@@ -5,6 +5,7 @@ import typings.pulumiAws.apigatewayStageMod.StageState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class Stage protected ()
   def this(name: String, args: StageArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/apigateway", "Stage")
-@js.native
-object Stage extends js.Object {
+object Stage {
   
   /**
     * Get an existing Stage resource's state with the given name, ID, and optional extra
@@ -37,14 +36,24 @@ object Stage extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/apigateway", "Stage.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.apigatewayStageMod.Stage = js.native
+  @JSImport("@pulumi/aws/apigateway", "Stage.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.apigatewayStageMod.Stage = js.native
+  @JSImport("@pulumi/aws/apigateway", "Stage.get")
+  @js.native
   def get(name: String, id: Input[ID], state: StageState): typings.pulumiAws.apigatewayStageMod.Stage = js.native
+  @JSImport("@pulumi/aws/apigateway", "Stage.get")
+  @js.native
   def get(name: String, id: Input[ID], state: StageState, opts: CustomResourceOptions): typings.pulumiAws.apigatewayStageMod.Stage = js.native
   
   /**
     * Returns true if the given object is an instance of Stage.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/apigateway", "Stage.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/stage.Stage */ Boolean = js.native
 }

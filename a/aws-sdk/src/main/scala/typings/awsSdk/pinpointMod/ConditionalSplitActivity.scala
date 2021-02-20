@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalSplitActivity extends js.Object {
+trait ConditionalSplitActivity extends StObject {
   
   /**
     * The conditions that define the paths for the activity, and the relationship between the conditions.
@@ -36,42 +37,30 @@ object ConditionalSplitActivity {
   }
   
   @scala.inline
-  implicit class ConditionalSplitActivityOps[Self <: ConditionalSplitActivity] (val x: Self) extends AnyVal {
+  implicit class ConditionalSplitActivityMutableBuilder[Self <: ConditionalSplitActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvaluationWaitTime(value: WaitTime): Self = StObject.set(x, "EvaluationWaitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: Condition): Self = this.set("Condition", value.asInstanceOf[js.Any])
+    def setEvaluationWaitTimeUndefined: Self = StObject.set(x, "EvaluationWaitTime", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("Condition", js.undefined)
+    def setFalseActivity(value: string): Self = StObject.set(x, "FalseActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationWaitTime(value: WaitTime): Self = this.set("EvaluationWaitTime", value.asInstanceOf[js.Any])
+    def setFalseActivityUndefined: Self = StObject.set(x, "FalseActivity", js.undefined)
     
     @scala.inline
-    def deleteEvaluationWaitTime: Self = this.set("EvaluationWaitTime", js.undefined)
+    def setTrueActivity(value: string): Self = StObject.set(x, "TrueActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFalseActivity(value: string): Self = this.set("FalseActivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFalseActivity: Self = this.set("FalseActivity", js.undefined)
-    
-    @scala.inline
-    def setTrueActivity(value: string): Self = this.set("TrueActivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrueActivity: Self = this.set("TrueActivity", js.undefined)
+    def setTrueActivityUndefined: Self = StObject.set(x, "TrueActivity", js.undefined)
   }
 }

@@ -9,13 +9,14 @@ import typings.octokitTypes.octokitTypesStrings.heart
 import typings.octokitTypes.octokitTypesStrings.hooray
 import typings.octokitTypes.octokitTypesStrings.laugh
 import typings.octokitTypes.octokitTypesStrings.rocket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  owner :string,   repo :string,   comment_id :number,   content :'+1' | '-1' | 'laugh' | 'confused' | 'heart' | 'hooray' | 'rocket' | 'eyes' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'squirrel-girl'> */
 @js.native
-trait ReactionsListForCommitCommentEndpoint extends js.Object {
+trait ReactionsListForCommitCommentEndpoint extends StObject {
   
   var comment_id: Double = js.native
   
@@ -49,48 +50,36 @@ object ReactionsListForCommitCommentEndpoint {
   }
   
   @scala.inline
-  implicit class ReactionsListForCommitCommentEndpointOps[Self <: ReactionsListForCommitCommentEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReactionsListForCommitCommentEndpointMutableBuilder[Self <: ReactionsListForCommitCommentEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setComment_id(value: Double): Self = this.set("comment_id", value.asInstanceOf[js.Any])
+    def setMediaType(value: `9`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: `9`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
-    
-    @scala.inline
-    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePer_page: Self = this.set("per_page", js.undefined)
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

@@ -6,6 +6,7 @@ import typings.typescriptServices.TypeScript.PullSymbol
 import typings.typescriptServices.TypeScript.PullTypeSymbol
 import typings.typescriptServices.TypeScript.SyntaxTree
 import typings.typescriptServices.TypeScript.TextSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -226,147 +227,135 @@ object LanguageService {
   }
   
   @scala.inline
-  implicit class LanguageServiceOps[Self <: LanguageService] (val x: Self) extends AnyVal {
+  implicit class LanguageServiceMutableBuilder[Self <: LanguageService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveCompletionSession(value: js.Any): Self = StObject.set(x, "activeCompletionSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddDeclaration(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addDeclaration", js.Any.fromFunction6(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddDeclarations(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addDeclarations", js.Any.fromFunction6(value))
     
     @scala.inline
-    def set_getHostFileName(value: js.Any => js.Any): Self = this.set("_getHostFileName", js.Any.fromFunction1(value))
+    def setCompiler(value: js.Any): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_getHostSpecificDiagnosticWithFileName(value: js.Any => js.Any): Self = this.set("_getHostSpecificDiagnosticWithFileName", js.Any.fromFunction1(value))
+    def setContainErrors(value: js.Any => js.Any): Self = StObject.set(x, "containErrors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_syntaxTreeCache(value: js.Any): Self = this.set("_syntaxTreeCache", value.asInstanceOf[js.Any])
+    def setFindSearchValueInPullDecl(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findSearchValueInPullDecl", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setActiveCompletionSession(value: js.Any): Self = this.set("activeCompletionSession", value.asInstanceOf[js.Any])
+    def setFormattingRulesProvider(value: js.Any): Self = StObject.set(x, "formattingRulesProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddDeclaration(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("addDeclaration", js.Any.fromFunction6(value))
+    def setGetAllSemanticDiagnostics(value: () => js.Any): Self = StObject.set(x, "getAllSemanticDiagnostics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddDeclarations(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("addDeclarations", js.Any.fromFunction6(value))
+    def setGetAllSyntacticDiagnostics(value: () => js.Any): Self = StObject.set(x, "getAllSyntacticDiagnostics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCompiler(value: js.Any): Self = this.set("compiler", value.asInstanceOf[js.Any])
+    def setGetCompletionEntriesForKeywords(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getCompletionEntriesForKeywords", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setContainErrors(value: js.Any => js.Any): Self = this.set("containErrors", js.Any.fromFunction1(value))
+    def setGetCompletionEntriesFromDecls(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getCompletionEntriesFromDecls", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFindSearchValueInPullDecl(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("findSearchValueInPullDecl", js.Any.fromFunction6(value))
+    def setGetCompletionEntriesFromSymbols(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getCompletionEntriesFromSymbols", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFormattingRulesProvider(value: js.Any): Self = this.set("formattingRulesProvider", value.asInstanceOf[js.Any])
+    def setGetFormattingManager(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getFormattingManager", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAllSemanticDiagnostics(value: () => js.Any): Self = this.set("getAllSemanticDiagnostics", js.Any.fromFunction0(value))
+    def setGetFullNameOfSymbol(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getFullNameOfSymbol", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAllSyntacticDiagnostics(value: () => js.Any): Self = this.set("getAllSyntacticDiagnostics", js.Any.fromFunction0(value))
+    def setGetImplementorsInFile(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getImplementorsInFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCompletionEntriesForKeywords(value: (js.Any, js.Any) => js.Any): Self = this.set("getCompletionEntriesForKeywords", js.Any.fromFunction2(value))
+    def setGetModuleOrEnumKind(value: js.Any => js.Any): Self = StObject.set(x, "getModuleOrEnumKind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCompletionEntriesFromDecls(value: (js.Any, js.Any) => js.Any): Self = this.set("getCompletionEntriesFromDecls", js.Any.fromFunction2(value))
+    def setGetOverrides(value: (PullTypeSymbol, PullSymbol) => js.Array[PullTypeSymbol]): Self = StObject.set(x, "getOverrides", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCompletionEntriesFromSymbols(value: (js.Any, js.Any) => js.Any): Self = this.set("getCompletionEntriesFromSymbols", js.Any.fromFunction2(value))
+    def setGetPossibleSymbolReferencePositions(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getPossibleSymbolReferencePositions", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetFormattingManager(value: (js.Any, js.Any) => js.Any): Self = this.set("getFormattingManager", js.Any.fromFunction2(value))
+    def setGetReferencesInFile(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "getReferencesInFile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetFullNameOfSymbol(value: (js.Any, js.Any) => js.Any): Self = this.set("getFullNameOfSymbol", js.Any.fromFunction2(value))
+    def setGetResolvedCompletionEntryDetailsFromSymbol(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getResolvedCompletionEntryDetailsFromSymbol", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetImplementorsInFile(value: (js.Any, js.Any) => js.Any): Self = this.set("getImplementorsInFile", js.Any.fromFunction2(value))
+    def setGetScriptElementKindModifiers(value: js.Any => js.Any): Self = StObject.set(x, "getScriptElementKindModifiers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetModuleOrEnumKind(value: js.Any => js.Any): Self = this.set("getModuleOrEnumKind", js.Any.fromFunction1(value))
+    def setGetScriptElementKindModifiersFromDecl(value: js.Any => js.Any): Self = StObject.set(x, "getScriptElementKindModifiersFromDecl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOverrides(value: (PullTypeSymbol, PullSymbol) => js.Array[PullTypeSymbol]): Self = this.set("getOverrides", js.Any.fromFunction2(value))
+    def setGetScriptElementKindModifiersFromFlags(value: js.Any => js.Any): Self = StObject.set(x, "getScriptElementKindModifiersFromFlags", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPossibleSymbolReferencePositions(value: (js.Any, js.Any) => js.Any): Self = this.set("getPossibleSymbolReferencePositions", js.Any.fromFunction2(value))
+    def setGetSingleNodeReferenceAtPosition(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getSingleNodeReferenceAtPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetReferencesInFile(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("getReferencesInFile", js.Any.fromFunction3(value))
+    def setGetSymbolInfoAtPosition(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "getSymbolInfoAtPosition", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetResolvedCompletionEntryDetailsFromSymbol(value: (js.Any, js.Any) => js.Any): Self = this.set("getResolvedCompletionEntryDetailsFromSymbol", js.Any.fromFunction2(value))
+    def setGetSymbolScopeAST(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getSymbolScopeAST", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetScriptElementKindModifiers(value: js.Any => js.Any): Self = this.set("getScriptElementKindModifiers", js.Any.fromFunction1(value))
+    def setGetTypeInfoEligiblePath(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "getTypeInfoEligiblePath", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetScriptElementKindModifiersFromDecl(value: js.Any => js.Any): Self = this.set("getScriptElementKindModifiersFromDecl", js.Any.fromFunction1(value))
+    def setGetTypeParameterSignatureFromPartiallyWrittenExpression(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "getTypeParameterSignatureFromPartiallyWrittenExpression", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetScriptElementKindModifiersFromFlags(value: js.Any => js.Any): Self = this.set("getScriptElementKindModifiersFromFlags", js.Any.fromFunction1(value))
+    def setHasAnyUpperCaseCharacter(value: js.Any => js.Any): Self = StObject.set(x, "hasAnyUpperCaseCharacter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSingleNodeReferenceAtPosition(value: (js.Any, js.Any) => js.Any): Self = this.set("getSingleNodeReferenceAtPosition", js.Any.fromFunction2(value))
+    def setHost(value: ILanguageServiceHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSymbolInfoAtPosition(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("getSymbolInfoAtPosition", js.Any.fromFunction3(value))
+    def setIsContainerDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "isContainerDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSymbolScopeAST(value: (js.Any, js.Any) => js.Any): Self = this.set("getSymbolScopeAST", js.Any.fromFunction2(value))
+    def setIsLetterOrDigit(value: js.Any => js.Any): Self = StObject.set(x, "isLetterOrDigit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTypeInfoEligiblePath(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("getTypeInfoEligiblePath", js.Any.fromFunction3(value))
+    def setIsWriteAccess(value: js.Any => js.Any): Self = StObject.set(x, "isWriteAccess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTypeParameterSignatureFromPartiallyWrittenExpression(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("getTypeParameterSignatureFromPartiallyWrittenExpression", js.Any.fromFunction3(value))
+    def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAnyUpperCaseCharacter(value: js.Any => js.Any): Self = this.set("hasAnyUpperCaseCharacter", js.Any.fromFunction1(value))
+    def setMapPullElementKind(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "mapPullElementKind", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setHost(value: ILanguageServiceHost): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setShouldIncludeDeclarationInNavigationItems(value: js.Any => js.Any): Self = StObject.set(x, "shouldIncludeDeclarationInNavigationItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsContainerDeclaration(value: js.Any => js.Any): Self = this.set("isContainerDeclaration", js.Any.fromFunction1(value))
+    def setTryAddConstructor(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "tryAddConstructor", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setIsLetterOrDigit(value: js.Any => js.Any): Self = this.set("isLetterOrDigit", js.Any.fromFunction1(value))
+    def setTryAddDefinition(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "tryAddDefinition", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setIsWriteAccess(value: js.Any => js.Any): Self = this.set("isWriteAccess", js.Any.fromFunction1(value))
+    def setTryAddSignatures(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "tryAddSignatures", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setLogger(value: js.Any): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setTryFindDeclFromPreviousCompilerVersion(value: js.Any => js.Any): Self = StObject.set(x, "tryFindDeclFromPreviousCompilerVersion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMapPullElementKind(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("mapPullElementKind", js.Any.fromFunction5(value))
+    def set_getHostFileName(value: js.Any => js.Any): Self = StObject.set(x, "_getHostFileName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShouldIncludeDeclarationInNavigationItems(value: js.Any => js.Any): Self = this.set("shouldIncludeDeclarationInNavigationItems", js.Any.fromFunction1(value))
+    def set_getHostSpecificDiagnosticWithFileName(value: js.Any => js.Any): Self = StObject.set(x, "_getHostSpecificDiagnosticWithFileName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTryAddConstructor(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("tryAddConstructor", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setTryAddDefinition(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("tryAddDefinition", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setTryAddSignatures(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("tryAddSignatures", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setTryFindDeclFromPreviousCompilerVersion(value: js.Any => js.Any): Self = this.set("tryFindDeclFromPreviousCompilerVersion", js.Any.fromFunction1(value))
+    def set_syntaxTreeCache(value: js.Any): Self = StObject.set(x, "_syntaxTreeCache", value.asInstanceOf[js.Any])
   }
 }

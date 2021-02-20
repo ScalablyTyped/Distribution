@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatMessageStatus extends js.Object
+sealed trait ChatMessageStatus extends StObject
 /** Specifies the current status of a chat message such as draft, sent, or received. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageStatus")
 @js.native
-object ChatMessageStatus extends js.Object {
+object ChatMessageStatus extends StObject {
   
   /** Cancelled */
   @js.native

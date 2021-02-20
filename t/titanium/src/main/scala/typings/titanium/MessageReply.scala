@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Reply message received from watch app.
   */
 @js.native
-trait MessageReply extends js.Object {
+trait MessageReply extends StObject {
   
   /**
     * Error code. Returns 0 if `success` is `true`.
@@ -39,42 +40,30 @@ object MessageReply {
   }
   
   @scala.inline
-  implicit class MessageReplyOps[Self <: MessageReply] (val x: Self) extends AnyVal {
+  implicit class MessageReplyMutableBuilder[Self <: MessageReply] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: js.Any): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

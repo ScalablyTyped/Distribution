@@ -6,12 +6,13 @@ import typings.hapi.hapiBooleans.`false`
 import typings.hapi.hapiBooleans.`true`
 import typings.hapi.hapiStrings.deny
 import typings.hapi.hapiStrings.sameorigin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteOptionsSecureObject extends js.Object {
+trait RouteOptionsSecureObject extends StObject {
   
   /**
     * hsts - controls the 'Strict-Transport-Security' header
@@ -55,51 +56,39 @@ object RouteOptionsSecureObject {
   }
   
   @scala.inline
-  implicit class RouteOptionsSecureObjectOps[Self <: RouteOptionsSecureObject] (val x: Self) extends AnyVal {
+  implicit class RouteOptionsSecureObjectMutableBuilder[Self <: RouteOptionsSecureObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHsts(value: Boolean | Double | IncludeSubdomains): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoOpen(value: Boolean): Self = StObject.set(x, "noOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXss(value: Boolean): Self = this.set("xss", value.asInstanceOf[js.Any])
+    def setNoOpenUndefined: Self = StObject.set(x, "noOpen", js.undefined)
     
     @scala.inline
-    def setHsts(value: Boolean | Double | IncludeSubdomains): Self = this.set("hsts", value.asInstanceOf[js.Any])
+    def setNoSniff(value: Boolean): Self = StObject.set(x, "noSniff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHsts: Self = this.set("hsts", js.undefined)
+    def setNoSniffUndefined: Self = StObject.set(x, "noSniff", js.undefined)
     
     @scala.inline
-    def setNoOpen(value: Boolean): Self = this.set("noOpen", value.asInstanceOf[js.Any])
+    def setReferrer(value: `false` | ReferrerPolicy): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoOpen: Self = this.set("noOpen", js.undefined)
+    def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
     
     @scala.inline
-    def setNoSniff(value: Boolean): Self = this.set("noSniff", value.asInstanceOf[js.Any])
+    def setXframe(value: `true` | deny | sameorigin | Rule): Self = StObject.set(x, "xframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoSniff: Self = this.set("noSniff", js.undefined)
+    def setXframeUndefined: Self = StObject.set(x, "xframe", js.undefined)
     
     @scala.inline
-    def setReferrer(value: `false` | ReferrerPolicy): Self = this.set("referrer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferrer: Self = this.set("referrer", js.undefined)
-    
-    @scala.inline
-    def setXframe(value: `true` | deny | sameorigin | Rule): Self = this.set("xframe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXframe: Self = this.set("xframe", js.undefined)
+    def setXss(value: Boolean): Self = StObject.set(x, "xss", value.asInstanceOf[js.Any])
   }
 }

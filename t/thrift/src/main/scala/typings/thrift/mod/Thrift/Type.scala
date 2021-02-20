@@ -1,101 +1,84 @@
 package typings.thrift.mod.Thrift
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Type extends js.Object
+sealed trait Type extends StObject
 @JSImport("thrift", "Thrift.Type")
 @js.native
-object Type extends js.Object {
+object Type extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Type with Double] = js.native
   
   @js.native
   sealed trait BOOL extends Type
-  /* 2 */ @js.native
-  object BOOL extends TopLevel[BOOL with Double]
+  /* 2 */ val BOOL: typings.thrift.mod.Thrift.Type.BOOL with Double = js.native
   
   @js.native
   sealed trait BYTE extends Type
-  /* 3 */ @js.native
-  object BYTE extends TopLevel[BYTE with Double]
+  /* 3 */ val BYTE: typings.thrift.mod.Thrift.Type.BYTE with Double = js.native
   
   @js.native
   sealed trait DOUBLE extends Type
-  /* 4 */ @js.native
-  object DOUBLE extends TopLevel[DOUBLE with Double]
+  /* 4 */ val DOUBLE: typings.thrift.mod.Thrift.Type.DOUBLE with Double = js.native
   
   @js.native
   sealed trait I08 extends Type
-  /* 3 */ @js.native
-  object I08 extends TopLevel[I08 with Double]
+  /* 3 */ val I08: typings.thrift.mod.Thrift.Type.I08 with Double = js.native
   
   @js.native
   sealed trait I16 extends Type
-  /* 6 */ @js.native
-  object I16 extends TopLevel[I16 with Double]
+  /* 6 */ val I16: typings.thrift.mod.Thrift.Type.I16 with Double = js.native
   
   @js.native
   sealed trait I32 extends Type
-  /* 8 */ @js.native
-  object I32 extends TopLevel[I32 with Double]
+  /* 8 */ val I32: typings.thrift.mod.Thrift.Type.I32 with Double = js.native
   
   @js.native
   sealed trait I64 extends Type
-  /* 10 */ @js.native
-  object I64 extends TopLevel[I64 with Double]
+  /* 10 */ val I64: typings.thrift.mod.Thrift.Type.I64 with Double = js.native
   
   @js.native
   sealed trait LIST extends Type
-  /* 15 */ @js.native
-  object LIST extends TopLevel[LIST with Double]
+  /* 15 */ val LIST: typings.thrift.mod.Thrift.Type.LIST with Double = js.native
   
   @js.native
   sealed trait MAP extends Type
-  /* 13 */ @js.native
-  object MAP extends TopLevel[MAP with Double]
+  /* 13 */ val MAP: typings.thrift.mod.Thrift.Type.MAP with Double = js.native
   
   @js.native
   sealed trait SET extends Type
-  /* 14 */ @js.native
-  object SET extends TopLevel[SET with Double]
+  /* 14 */ val SET: typings.thrift.mod.Thrift.Type.SET with Double = js.native
   
   @js.native
   sealed trait STOP extends Type
-  /* 0 */ @js.native
-  object STOP extends TopLevel[STOP with Double]
+  /* 0 */ val STOP: typings.thrift.mod.Thrift.Type.STOP with Double = js.native
   
   @js.native
   sealed trait STRING extends Type
-  /* 11 */ @js.native
-  object STRING extends TopLevel[STRING with Double]
+  /* 11 */ val STRING: typings.thrift.mod.Thrift.Type.STRING with Double = js.native
   
   @js.native
   sealed trait STRUCT extends Type
-  /* 12 */ @js.native
-  object STRUCT extends TopLevel[STRUCT with Double]
+  /* 12 */ val STRUCT: typings.thrift.mod.Thrift.Type.STRUCT with Double = js.native
   
   @js.native
   sealed trait UTF16 extends Type
-  /* 17 */ @js.native
-  object UTF16 extends TopLevel[UTF16 with Double]
+  /* 17 */ val UTF16: typings.thrift.mod.Thrift.Type.UTF16 with Double = js.native
   
   @js.native
   sealed trait UTF7 extends Type
-  /* 11 */ @js.native
-  object UTF7 extends TopLevel[UTF7 with Double]
+  /* 11 */ val UTF7: typings.thrift.mod.Thrift.Type.UTF7 with Double = js.native
   
   @js.native
   sealed trait UTF8 extends Type
-  /* 16 */ @js.native
-  object UTF8 extends TopLevel[UTF8 with Double]
+  /* 16 */ val UTF8: typings.thrift.mod.Thrift.Type.UTF8 with Double = js.native
   
   @js.native
   sealed trait VOID extends Type
-  /* 1 */ @js.native
-  object VOID extends TopLevel[VOID with Double]
+  /* 1 */ val VOID: typings.thrift.mod.Thrift.Type.VOID with Double = js.native
 }

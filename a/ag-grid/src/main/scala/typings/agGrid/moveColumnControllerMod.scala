@@ -6,14 +6,14 @@ import typings.agGrid.dragAndDropServiceMod.DraggingEvent
 import typings.agGrid.eventsMod.ColumnEventType
 import typings.agGrid.gridPanelMod.GridPanel
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/headerRendering/moveColumnController", JSImport.Namespace)
-@js.native
-object moveColumnControllerMod extends js.Object {
+object moveColumnControllerMod {
   
+  @JSImport("ag-grid/dist/lib/headerRendering/moveColumnController", "MoveColumnController")
   @js.native
   class MoveColumnController protected () extends DropListener {
     def this(pinned: String, eContainer: HTMLElement) = this()

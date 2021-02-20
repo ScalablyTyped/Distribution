@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This data has nothing to do with `Memory` contents, it's a separate data container.
   */
 @js.native
-trait InterShardMemory extends js.Object {
+trait InterShardMemory extends StObject {
   
   /**
     * Returns the string contents of the current shard's data.
@@ -45,27 +46,15 @@ object InterShardMemory {
   }
   
   @scala.inline
-  implicit class InterShardMemoryOps[Self <: InterShardMemory] (val x: Self) extends AnyVal {
+  implicit class InterShardMemoryMutableBuilder[Self <: InterShardMemory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLocal(value: () => String): Self = StObject.set(x, "getLocal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRemote(value: String => String | Null): Self = StObject.set(x, "getRemote", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetLocal(value: () => String): Self = this.set("getLocal", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRemote(value: String => String | Null): Self = this.set("getRemote", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLocal(value: String => Unit): Self = this.set("setLocal", js.Any.fromFunction1(value))
+    def setSetLocal(value: String => Unit): Self = StObject.set(x, "setLocal", js.Any.fromFunction1(value))
   }
 }

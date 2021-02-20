@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param graphicsDevice - The graphics device used by the renderer.
   */
 @js.native
-trait ForwardRenderer extends js.Object
+trait ForwardRenderer extends StObject

@@ -1,11 +1,12 @@
 package typings.reactTouch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HoldConfig extends js.Object {
+trait HoldConfig extends StObject {
   
   /** @default 1000 */
   var holdFor: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object HoldConfig {
   }
   
   @scala.inline
-  implicit class HoldConfigOps[Self <: HoldConfig] (val x: Self) extends AnyVal {
+  implicit class HoldConfigMutableBuilder[Self <: HoldConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHoldFor(value: Double): Self = StObject.set(x, "holdFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoldForUndefined: Self = StObject.set(x, "holdFor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateEvery(value: Double): Self = StObject.set(x, "updateEvery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoldFor(value: Double): Self = this.set("holdFor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoldFor: Self = this.set("holdFor", js.undefined)
-    
-    @scala.inline
-    def setUpdateEvery(value: Double): Self = this.set("updateEvery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateEvery: Self = this.set("updateEvery", js.undefined)
+    def setUpdateEveryUndefined: Self = StObject.set(x, "updateEvery", js.undefined)
   }
 }

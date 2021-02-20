@@ -1,11 +1,12 @@
 package typings.rcSelect.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options[OptionsType /* <: js.Array[js.Object] */] extends js.Object {
+trait Options[OptionsType /* <: js.Array[js.Object] */] extends StObject {
   
   var options: OptionsType = js.native
 }
@@ -18,21 +19,9 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options[_], OptionsType /* <: js.Array[js.Object] */] (val x: Self with Options[OptionsType]) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options[_], OptionsType /* <: js.Array[js.Object] */] (val x: Self with Options[OptionsType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOptions(value: OptionsType): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptions(value: OptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

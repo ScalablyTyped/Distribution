@@ -2,12 +2,13 @@ package typings.stripeV3.anon
 
 import typings.stripeV3.stripe.elements.PaymentRequestButtonStyleOptions
 import typings.stripeV3.stripe.elements.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Complete extends js.Object {
+trait Complete extends StObject {
   
   var base: js.UndefOr[Style] = js.native
   
@@ -28,48 +29,36 @@ object Complete {
   }
   
   @scala.inline
-  implicit class CompleteOps[Self <: Complete] (val x: Self) extends AnyVal {
+  implicit class CompleteMutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: Style): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: Style): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: Style): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
+    def setEmpty(value: Style): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: Style): Self = this.set("complete", value.asInstanceOf[js.Any])
+    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setInvalid(value: Style): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmpty(value: Style): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
     @scala.inline
-    def deleteEmpty: Self = this.set("empty", js.undefined)
+    def setPaymentRequestButton(value: PaymentRequestButtonStyleOptions): Self = StObject.set(x, "paymentRequestButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalid(value: Style): Self = this.set("invalid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvalid: Self = this.set("invalid", js.undefined)
-    
-    @scala.inline
-    def setPaymentRequestButton(value: PaymentRequestButtonStyleOptions): Self = this.set("paymentRequestButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentRequestButton: Self = this.set("paymentRequestButton", js.undefined)
+    def setPaymentRequestButtonUndefined: Self = StObject.set(x, "paymentRequestButton", js.undefined)
   }
 }

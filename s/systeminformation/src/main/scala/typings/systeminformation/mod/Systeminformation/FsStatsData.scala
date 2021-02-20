@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FsStatsData extends js.Object {
+trait FsStatsData extends StObject {
   
   var ms: Double = js.native
   
@@ -30,39 +31,27 @@ object FsStatsData {
   }
   
   @scala.inline
-  implicit class FsStatsDataOps[Self <: FsStatsData] (val x: Self) extends AnyVal {
+  implicit class FsStatsDataMutableBuilder[Self <: FsStatsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRx_sec(value: Double): Self = StObject.set(x, "rx_sec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMs(value: Double): Self = this.set("ms", value.asInstanceOf[js.Any])
+    def setTx(value: Double): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRx(value: Double): Self = this.set("rx", value.asInstanceOf[js.Any])
+    def setTx_sec(value: Double): Self = StObject.set(x, "tx_sec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRx_sec(value: Double): Self = this.set("rx_sec", value.asInstanceOf[js.Any])
+    def setWx(value: Double): Self = StObject.set(x, "wx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTx(value: Double): Self = this.set("tx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTx_sec(value: Double): Self = this.set("tx_sec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWx(value: Double): Self = this.set("wx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWx_sec(value: Double): Self = this.set("wx_sec", value.asInstanceOf[js.Any])
+    def setWx_sec(value: Double): Self = StObject.set(x, "wx_sec", value.asInstanceOf[js.Any])
   }
 }

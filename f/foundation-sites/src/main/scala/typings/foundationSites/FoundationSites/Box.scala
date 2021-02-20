@@ -1,5 +1,6 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Utilities
 // ---------
 @js.native
-trait Box extends js.Object {
+trait Box extends StObject {
   
   def GetDimensions(element: js.Object): js.Object = js.native
   

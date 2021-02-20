@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LongLabel extends js.Object {
+trait LongLabel extends StObject {
   
   var id: String = js.native
   
@@ -22,33 +23,21 @@ object LongLabel {
   }
   
   @scala.inline
-  implicit class LongLabelOps[Self <: LongLabel] (val x: Self) extends AnyVal {
+  implicit class LongLabelMutableBuilder[Self <: LongLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLongLabel(value: String): Self = StObject.set(x, "longLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLongLabelUndefined: Self = StObject.set(x, "longLabel", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setShortLabel(value: String): Self = StObject.set(x, "shortLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongLabel(value: String): Self = this.set("longLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongLabel: Self = this.set("longLabel", js.undefined)
-    
-    @scala.inline
-    def setShortLabel(value: String): Self = this.set("shortLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortLabel: Self = this.set("shortLabel", js.undefined)
+    def setShortLabelUndefined: Self = StObject.set(x, "shortLabel", js.undefined)
   }
 }

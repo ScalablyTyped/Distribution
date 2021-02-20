@@ -1,11 +1,12 @@
 package typings.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusyIndicatorOptions extends js.Object {
+trait BusyIndicatorOptions extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object BusyIndicatorOptions {
   }
   
   @scala.inline
-  implicit class BusyIndicatorOptionsOps[Self <: BusyIndicatorOptions] (val x: Self) extends AnyVal {
+  implicit class BusyIndicatorOptionsMutableBuilder[Self <: BusyIndicatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentTextText(value: String): Self = StObject.set(x, "contentTextText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setContentTextTextUndefined: Self = StObject.set(x, "contentTextText", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setContentTitle(value: String): Self = StObject.set(x, "contentTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentTextText(value: String): Self = this.set("contentTextText", value.asInstanceOf[js.Any])
+    def setContentTitleUndefined: Self = StObject.set(x, "contentTitle", js.undefined)
     
     @scala.inline
-    def deleteContentTextText: Self = this.set("contentTextText", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentTitle(value: String): Self = this.set("contentTitle", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteContentTitle: Self = this.set("contentTitle", js.undefined)
+    def setNotificationId(value: Double): Self = StObject.set(x, "notificationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setNotificationIdUndefined: Self = StObject.set(x, "notificationId", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setTickerText(value: String): Self = StObject.set(x, "tickerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationId(value: Double): Self = this.set("notificationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationId: Self = this.set("notificationId", js.undefined)
-    
-    @scala.inline
-    def setTickerText(value: String): Self = this.set("tickerText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTickerText: Self = this.set("tickerText", js.undefined)
+    def setTickerTextUndefined: Self = StObject.set(x, "tickerText", js.undefined)
   }
 }

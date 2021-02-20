@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterImageRequest extends js.Object {
+trait RegisterImageRequest extends StObject {
   
   /**
     * The architecture of the AMI. Default: For Amazon EBS-backed AMIs, i386. For instance store-backed AMIs, the architecture specified in the manifest file.
@@ -81,99 +82,87 @@ object RegisterImageRequest {
   }
   
   @scala.inline
-  implicit class RegisterImageRequestOps[Self <: RegisterImageRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterImageRequestMutableBuilder[Self <: RegisterImageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchitecture(value: ArchitectureValues): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchitectureUndefined: Self = StObject.set(x, "Architecture", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingProducts(value: BillingProductList): Self = StObject.set(x, "BillingProducts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setBillingProductsUndefined: Self = StObject.set(x, "BillingProducts", js.undefined)
     
     @scala.inline
-    def setArchitecture(value: ArchitectureValues): Self = this.set("Architecture", value.asInstanceOf[js.Any])
+    def setBillingProductsVarargs(value: String*): Self = StObject.set(x, "BillingProducts", js.Array(value :_*))
     
     @scala.inline
-    def deleteArchitecture: Self = this.set("Architecture", js.undefined)
+    def setBlockDeviceMappings(value: BlockDeviceMappingRequestList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingProductsVarargs(value: String*): Self = this.set("BillingProducts", js.Array(value :_*))
+    def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
     @scala.inline
-    def setBillingProducts(value: BillingProductList): Self = this.set("BillingProducts", value.asInstanceOf[js.Any])
+    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
     
     @scala.inline
-    def deleteBillingProducts: Self = this.set("BillingProducts", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setBlockDeviceMappings(value: BlockDeviceMappingRequestList): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEnaSupport(value: Boolean): Self = StObject.set(x, "EnaSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEnaSupportUndefined: Self = StObject.set(x, "EnaSupport", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setImageLocation(value: String): Self = StObject.set(x, "ImageLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setImageLocationUndefined: Self = StObject.set(x, "ImageLocation", js.undefined)
     
     @scala.inline
-    def setEnaSupport(value: Boolean): Self = this.set("EnaSupport", value.asInstanceOf[js.Any])
+    def setKernelId(value: KernelId): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnaSupport: Self = this.set("EnaSupport", js.undefined)
+    def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
     
     @scala.inline
-    def setImageLocation(value: String): Self = this.set("ImageLocation", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageLocation: Self = this.set("ImageLocation", js.undefined)
+    def setRamdiskId(value: RamdiskId): Self = StObject.set(x, "RamdiskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelId(value: KernelId): Self = this.set("KernelId", value.asInstanceOf[js.Any])
+    def setRamdiskIdUndefined: Self = StObject.set(x, "RamdiskId", js.undefined)
     
     @scala.inline
-    def deleteKernelId: Self = this.set("KernelId", js.undefined)
+    def setRootDeviceName(value: String): Self = StObject.set(x, "RootDeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRamdiskId(value: RamdiskId): Self = this.set("RamdiskId", value.asInstanceOf[js.Any])
+    def setRootDeviceNameUndefined: Self = StObject.set(x, "RootDeviceName", js.undefined)
     
     @scala.inline
-    def deleteRamdiskId: Self = this.set("RamdiskId", js.undefined)
+    def setSriovNetSupport(value: String): Self = StObject.set(x, "SriovNetSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootDeviceName(value: String): Self = this.set("RootDeviceName", value.asInstanceOf[js.Any])
+    def setSriovNetSupportUndefined: Self = StObject.set(x, "SriovNetSupport", js.undefined)
     
     @scala.inline
-    def deleteRootDeviceName: Self = this.set("RootDeviceName", js.undefined)
+    def setVirtualizationType(value: String): Self = StObject.set(x, "VirtualizationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSriovNetSupport(value: String): Self = this.set("SriovNetSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSriovNetSupport: Self = this.set("SriovNetSupport", js.undefined)
-    
-    @scala.inline
-    def setVirtualizationType(value: String): Self = this.set("VirtualizationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualizationType: Self = this.set("VirtualizationType", js.undefined)
+    def setVirtualizationTypeUndefined: Self = StObject.set(x, "VirtualizationType", js.undefined)
   }
 }

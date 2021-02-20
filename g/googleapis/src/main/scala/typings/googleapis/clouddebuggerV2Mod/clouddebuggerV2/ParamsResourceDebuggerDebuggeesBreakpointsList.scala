@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,66 +70,54 @@ object ParamsResourceDebuggerDebuggeesBreakpointsList {
   }
   
   @scala.inline
-  implicit class ParamsResourceDebuggerDebuggeesBreakpointsListOps[Self <: ParamsResourceDebuggerDebuggeesBreakpointsList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceDebuggerDebuggeesBreakpointsListMutableBuilder[Self <: ParamsResourceDebuggerDebuggeesBreakpointsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionDotvalue(value: String): Self = StObject.set(x, "action.value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionDotvalueUndefined: Self = StObject.set(x, "action.value", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionDotvalue(value: String): Self = this.set("action.value", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteActionDotvalue: Self = this.set("action.value", js.undefined)
+    def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setDebuggeeId(value: String): Self = StObject.set(x, "debuggeeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientVersion(value: String): Self = this.set("clientVersion", value.asInstanceOf[js.Any])
+    def setDebuggeeIdUndefined: Self = StObject.set(x, "debuggeeId", js.undefined)
     
     @scala.inline
-    def deleteClientVersion: Self = this.set("clientVersion", js.undefined)
+    def setIncludeAllUsers(value: Boolean): Self = StObject.set(x, "includeAllUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebuggeeId(value: String): Self = this.set("debuggeeId", value.asInstanceOf[js.Any])
+    def setIncludeAllUsersUndefined: Self = StObject.set(x, "includeAllUsers", js.undefined)
     
     @scala.inline
-    def deleteDebuggeeId: Self = this.set("debuggeeId", js.undefined)
+    def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAllUsers(value: Boolean): Self = this.set("includeAllUsers", value.asInstanceOf[js.Any])
+    def setIncludeInactiveUndefined: Self = StObject.set(x, "includeInactive", js.undefined)
     
     @scala.inline
-    def deleteIncludeAllUsers: Self = this.set("includeAllUsers", js.undefined)
+    def setStripResults(value: Boolean): Self = StObject.set(x, "stripResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeInactive(value: Boolean): Self = this.set("includeInactive", value.asInstanceOf[js.Any])
+    def setStripResultsUndefined: Self = StObject.set(x, "stripResults", js.undefined)
     
     @scala.inline
-    def deleteIncludeInactive: Self = this.set("includeInactive", js.undefined)
+    def setWaitToken(value: String): Self = StObject.set(x, "waitToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStripResults(value: Boolean): Self = this.set("stripResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripResults: Self = this.set("stripResults", js.undefined)
-    
-    @scala.inline
-    def setWaitToken(value: String): Self = this.set("waitToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitToken: Self = this.set("waitToken", js.undefined)
+    def setWaitTokenUndefined: Self = StObject.set(x, "waitToken", js.undefined)
   }
 }

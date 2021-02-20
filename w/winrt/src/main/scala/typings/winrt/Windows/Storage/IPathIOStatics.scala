@@ -7,12 +7,13 @@ import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import typings.winrt.Windows.Storage.Streams.UnicodeEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPathIOStatics extends js.Object {
+trait IPathIOStatics extends StObject {
   
   def appendLinesAsync(absolutePath: String, lines: IIterable[String]): IAsyncAction = js.native
   def appendLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IAsyncAction = js.native

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketNotificationLambdaFunction extends js.Object {
+trait BucketNotificationLambdaFunction extends StObject {
   
   /**
     * Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations) for which to send notifications.
@@ -42,48 +43,36 @@ object BucketNotificationLambdaFunction {
   }
   
   @scala.inline
-  implicit class BucketNotificationLambdaFunctionOps[Self <: BucketNotificationLambdaFunction] (val x: Self) extends AnyVal {
+  implicit class BucketNotificationLambdaFunctionMutableBuilder[Self <: BucketNotificationLambdaFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventsVarargs(value: Input[String]*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterPrefix(value: Input[String]): Self = StObject.set(x, "filterPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsVarargs(value: Input[String]*): Self = this.set("events", js.Array(value :_*))
+    def setFilterPrefixUndefined: Self = StObject.set(x, "filterPrefix", js.undefined)
     
     @scala.inline
-    def setEvents(value: Input[js.Array[Input[String]]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setFilterSuffix(value: Input[String]): Self = StObject.set(x, "filterSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterPrefix(value: Input[String]): Self = this.set("filterPrefix", value.asInstanceOf[js.Any])
+    def setFilterSuffixUndefined: Self = StObject.set(x, "filterSuffix", js.undefined)
     
     @scala.inline
-    def deleteFilterPrefix: Self = this.set("filterPrefix", js.undefined)
+    def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSuffix(value: Input[String]): Self = this.set("filterSuffix", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFilterSuffix: Self = this.set("filterSuffix", js.undefined)
+    def setLambdaFunctionArn(value: Input[String]): Self = StObject.set(x, "lambdaFunctionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Input[String]): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setLambdaFunctionArn(value: Input[String]): Self = this.set("lambdaFunctionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLambdaFunctionArn: Self = this.set("lambdaFunctionArn", js.undefined)
+    def setLambdaFunctionArnUndefined: Self = StObject.set(x, "lambdaFunctionArn", js.undefined)
   }
 }

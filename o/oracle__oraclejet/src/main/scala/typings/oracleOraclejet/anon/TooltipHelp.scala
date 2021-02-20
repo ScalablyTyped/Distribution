@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TooltipHelp extends js.Object {
+trait TooltipHelp extends StObject {
   
   var tooltipHelp: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object TooltipHelp {
   }
   
   @scala.inline
-  implicit class TooltipHelpOps[Self <: TooltipHelp] (val x: Self) extends AnyVal {
+  implicit class TooltipHelpMutableBuilder[Self <: TooltipHelp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTooltipHelp(value: String): Self = StObject.set(x, "tooltipHelp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTooltipHelpUndefined: Self = StObject.set(x, "tooltipHelp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTooltipRequired(value: String): Self = StObject.set(x, "tooltipRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipHelp(value: String): Self = this.set("tooltipHelp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipHelp: Self = this.set("tooltipHelp", js.undefined)
-    
-    @scala.inline
-    def setTooltipRequired(value: String): Self = this.set("tooltipRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipRequired: Self = this.set("tooltipRequired", js.undefined)
+    def setTooltipRequiredUndefined: Self = StObject.set(x, "tooltipRequired", js.undefined)
   }
 }

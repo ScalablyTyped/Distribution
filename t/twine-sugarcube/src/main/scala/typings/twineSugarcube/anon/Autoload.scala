@@ -6,12 +6,13 @@ import typings.twineSugarcube.extensionsMod.global.Array
 import typings.twineSugarcube.saveMod.SaveObject
 import typings.twineSugarcube.twineSugarcubeBooleans.`true`
 import typings.twineSugarcube.twineSugarcubeStrings.prompt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Autoload extends js.Object {
+trait Autoload extends StObject {
   
   /**
     * Determines whether the autosave, if it exists, is automatically loaded upon story startup. Valid values are
@@ -148,63 +149,51 @@ object Autoload {
   }
   
   @scala.inline
-  implicit class AutoloadOps[Self <: Autoload] (val x: Self) extends AnyVal {
+  implicit class AutoloadMutableBuilder[Self <: Autoload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoload(value: Boolean | prompt | js.Function0[Boolean]): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoloadFunction0(value: () => Boolean): Self = StObject.set(x, "autoload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoloadNull: Self = StObject.set(x, "autoload", null)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setAutosave(value: `true` | String | Array[String] | js.Function0[Boolean]): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlots(value: Double): Self = this.set("slots", value.asInstanceOf[js.Any])
+    def setAutosaveFunction0(value: () => Boolean): Self = StObject.set(x, "autosave", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setVersion(value: js.Any): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setAutosaveNull: Self = StObject.set(x, "autosave", null)
     
     @scala.inline
-    def setAutoloadFunction0(value: () => Boolean): Self = this.set("autoload", js.Any.fromFunction0(value))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoload(value: Boolean | prompt | js.Function0[Boolean]): Self = this.set("autoload", value.asInstanceOf[js.Any])
+    def setIsAllowed(value: () => Boolean): Self = StObject.set(x, "isAllowed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAutoloadNull: Self = this.set("autoload", null)
+    def setIsAllowedNull: Self = StObject.set(x, "isAllowed", null)
     
     @scala.inline
-    def setAutosaveFunction0(value: () => Boolean): Self = this.set("autosave", js.Any.fromFunction0(value))
+    def setOnLoad(value: (/* save */ SaveObject, /* details */ SaveDetails) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAutosave(value: `true` | String | Array[String] | js.Function0[Boolean]): Self = this.set("autosave", value.asInstanceOf[js.Any])
+    def setOnLoadNull: Self = StObject.set(x, "onLoad", null)
     
     @scala.inline
-    def setAutosaveNull: Self = this.set("autosave", null)
+    def setOnSave(value: (/* save */ SaveObject, /* details */ SaveDetails) => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsAllowed(value: () => Boolean): Self = this.set("isAllowed", js.Any.fromFunction0(value))
+    def setOnSaveNull: Self = StObject.set(x, "onSave", null)
     
     @scala.inline
-    def setIsAllowedNull: Self = this.set("isAllowed", null)
+    def setSlots(value: Double): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoad(value: (/* save */ SaveObject, /* details */ SaveDetails) => Unit): Self = this.set("onLoad", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOnLoadNull: Self = this.set("onLoad", null)
-    
-    @scala.inline
-    def setOnSave(value: (/* save */ SaveObject, /* details */ SaveDetails) => Unit): Self = this.set("onSave", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOnSaveNull: Self = this.set("onSave", null)
+    def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

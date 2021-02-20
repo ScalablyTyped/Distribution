@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyTransitGatewayOptions extends js.Object {
+trait ModifyTransitGatewayOptions extends StObject {
   
   /**
     * The ID of the default association route table.
@@ -51,60 +52,48 @@ object ModifyTransitGatewayOptions {
   }
   
   @scala.inline
-  implicit class ModifyTransitGatewayOptionsOps[Self <: ModifyTransitGatewayOptions] (val x: Self) extends AnyVal {
+  implicit class ModifyTransitGatewayOptionsMutableBuilder[Self <: ModifyTransitGatewayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationDefaultRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "AssociationDefaultRouteTableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationDefaultRouteTableIdUndefined: Self = StObject.set(x, "AssociationDefaultRouteTableId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoAcceptSharedAttachments(value: AutoAcceptSharedAttachmentsValue): Self = StObject.set(x, "AutoAcceptSharedAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationDefaultRouteTableId(value: TransitGatewayRouteTableId): Self = this.set("AssociationDefaultRouteTableId", value.asInstanceOf[js.Any])
+    def setAutoAcceptSharedAttachmentsUndefined: Self = StObject.set(x, "AutoAcceptSharedAttachments", js.undefined)
     
     @scala.inline
-    def deleteAssociationDefaultRouteTableId: Self = this.set("AssociationDefaultRouteTableId", js.undefined)
+    def setDefaultRouteTableAssociation(value: DefaultRouteTableAssociationValue): Self = StObject.set(x, "DefaultRouteTableAssociation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAcceptSharedAttachments(value: AutoAcceptSharedAttachmentsValue): Self = this.set("AutoAcceptSharedAttachments", value.asInstanceOf[js.Any])
+    def setDefaultRouteTableAssociationUndefined: Self = StObject.set(x, "DefaultRouteTableAssociation", js.undefined)
     
     @scala.inline
-    def deleteAutoAcceptSharedAttachments: Self = this.set("AutoAcceptSharedAttachments", js.undefined)
+    def setDefaultRouteTablePropagation(value: DefaultRouteTablePropagationValue): Self = StObject.set(x, "DefaultRouteTablePropagation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRouteTableAssociation(value: DefaultRouteTableAssociationValue): Self = this.set("DefaultRouteTableAssociation", value.asInstanceOf[js.Any])
+    def setDefaultRouteTablePropagationUndefined: Self = StObject.set(x, "DefaultRouteTablePropagation", js.undefined)
     
     @scala.inline
-    def deleteDefaultRouteTableAssociation: Self = this.set("DefaultRouteTableAssociation", js.undefined)
+    def setDnsSupport(value: DnsSupportValue): Self = StObject.set(x, "DnsSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRouteTablePropagation(value: DefaultRouteTablePropagationValue): Self = this.set("DefaultRouteTablePropagation", value.asInstanceOf[js.Any])
+    def setDnsSupportUndefined: Self = StObject.set(x, "DnsSupport", js.undefined)
     
     @scala.inline
-    def deleteDefaultRouteTablePropagation: Self = this.set("DefaultRouteTablePropagation", js.undefined)
+    def setPropagationDefaultRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "PropagationDefaultRouteTableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsSupport(value: DnsSupportValue): Self = this.set("DnsSupport", value.asInstanceOf[js.Any])
+    def setPropagationDefaultRouteTableIdUndefined: Self = StObject.set(x, "PropagationDefaultRouteTableId", js.undefined)
     
     @scala.inline
-    def deleteDnsSupport: Self = this.set("DnsSupport", js.undefined)
+    def setVpnEcmpSupport(value: VpnEcmpSupportValue): Self = StObject.set(x, "VpnEcmpSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropagationDefaultRouteTableId(value: TransitGatewayRouteTableId): Self = this.set("PropagationDefaultRouteTableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropagationDefaultRouteTableId: Self = this.set("PropagationDefaultRouteTableId", js.undefined)
-    
-    @scala.inline
-    def setVpnEcmpSupport(value: VpnEcmpSupportValue): Self = this.set("VpnEcmpSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnEcmpSupport: Self = this.set("VpnEcmpSupport", js.undefined)
+    def setVpnEcmpSupportUndefined: Self = StObject.set(x, "VpnEcmpSupport", js.undefined)
   }
 }

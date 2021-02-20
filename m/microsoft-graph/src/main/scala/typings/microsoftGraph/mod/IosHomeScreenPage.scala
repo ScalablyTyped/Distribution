@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosHomeScreenPage extends js.Object {
+trait IosHomeScreenPage extends StObject {
   
   // Name of the page
   var displayName: js.UndefOr[NullableOption[String]] = js.native
@@ -22,36 +23,24 @@ object IosHomeScreenPage {
   }
   
   @scala.inline
-  implicit class IosHomeScreenPageOps[Self <: IosHomeScreenPage] (val x: Self) extends AnyVal {
+  implicit class IosHomeScreenPageMutableBuilder[Self <: IosHomeScreenPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIcons(value: js.Array[IosHomeScreenItem]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
-    
-    @scala.inline
-    def setIconsVarargs(value: IosHomeScreenItem*): Self = this.set("icons", js.Array(value :_*))
-    
-    @scala.inline
-    def setIcons(value: js.Array[IosHomeScreenItem]): Self = this.set("icons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setIconsVarargs(value: IosHomeScreenItem*): Self = StObject.set(x, "icons", js.Array(value :_*))
   }
 }

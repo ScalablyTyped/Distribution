@@ -1,11 +1,12 @@
 package typings.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RSAKeyPairKeyObjectOptions extends js.Object {
+trait RSAKeyPairKeyObjectOptions extends StObject {
   
   /**
     * Key size in bits
@@ -26,27 +27,15 @@ object RSAKeyPairKeyObjectOptions {
   }
   
   @scala.inline
-  implicit class RSAKeyPairKeyObjectOptionsOps[Self <: RSAKeyPairKeyObjectOptions] (val x: Self) extends AnyVal {
+  implicit class RSAKeyPairKeyObjectOptionsMutableBuilder[Self <: RSAKeyPairKeyObjectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublicExponent(value: Double): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModulusLength(value: Double): Self = this.set("modulusLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicExponent(value: Double): Self = this.set("publicExponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicExponent: Self = this.set("publicExponent", js.undefined)
+    def setPublicExponentUndefined: Self = StObject.set(x, "publicExponent", js.undefined)
   }
 }

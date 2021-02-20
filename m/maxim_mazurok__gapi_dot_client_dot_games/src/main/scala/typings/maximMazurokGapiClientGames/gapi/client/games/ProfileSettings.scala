@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProfileSettings extends js.Object {
+trait ProfileSettings extends StObject {
   
   var friendsListVisibility: js.UndefOr[String] = js.native
   
@@ -24,36 +25,24 @@ object ProfileSettings {
   }
   
   @scala.inline
-  implicit class ProfileSettingsOps[Self <: ProfileSettings] (val x: Self) extends AnyVal {
+  implicit class ProfileSettingsMutableBuilder[Self <: ProfileSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFriendsListVisibility(value: String): Self = StObject.set(x, "friendsListVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFriendsListVisibilityUndefined: Self = StObject.set(x, "friendsListVisibility", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendsListVisibility(value: String): Self = this.set("friendsListVisibility", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFriendsListVisibility: Self = this.set("friendsListVisibility", js.undefined)
+    def setProfileVisible(value: Boolean): Self = StObject.set(x, "profileVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setProfileVisible(value: Boolean): Self = this.set("profileVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileVisible: Self = this.set("profileVisible", js.undefined)
+    def setProfileVisibleUndefined: Self = StObject.set(x, "profileVisible", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FoolBuilding extends js.Object {
+trait FoolBuilding extends StObject {
   
   var desc: String = js.native
   
@@ -22,27 +23,15 @@ object FoolBuilding {
   }
   
   @scala.inline
-  implicit class FoolBuildingOps[Self <: FoolBuilding] (val x: Self) extends AnyVal {
+  implicit class FoolBuildingMutableBuilder[Self <: FoolBuilding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIcon(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIcon(value: js.Tuple2[Double, Double]): Self = this.set("icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

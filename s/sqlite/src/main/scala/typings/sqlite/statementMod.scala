@@ -1,16 +1,16 @@
 package typings.sqlite
 
 import typings.sqlite.interfacesMod.ISqlite.RunResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sqlite/build/Statement", JSImport.Namespace)
-@js.native
-object statementMod extends js.Object {
+object statementMod {
   
+  @JSImport("sqlite/build/Statement", "Statement")
   @js.native
-  class Statement[S /* <: typings.sqlite.sqlite3Mod.Statement */] protected () extends js.Object {
+  class Statement[S /* <: typings.sqlite.sqlite3Mod.Statement */] protected () extends StObject {
     def this(stmt: S) = this()
     
     /**

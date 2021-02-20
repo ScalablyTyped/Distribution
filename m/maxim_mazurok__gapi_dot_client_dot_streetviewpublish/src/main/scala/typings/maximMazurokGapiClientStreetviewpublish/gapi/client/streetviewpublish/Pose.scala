@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpublish
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pose extends js.Object {
+trait Pose extends StObject {
   
   /**
     * The estimated horizontal accuracy of this pose in meters with 68% confidence (one standard deviation). For example, on Android, this value is available from this method:
@@ -47,60 +48,48 @@ object Pose {
   }
   
   @scala.inline
-  implicit class PoseOps[Self <: Pose] (val x: Self) extends AnyVal {
+  implicit class PoseMutableBuilder[Self <: Pose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracyMeters(value: Double): Self = StObject.set(x, "accuracyMeters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyMetersUndefined: Self = StObject.set(x, "accuracyMeters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracyMeters(value: Double): Self = this.set("accuracyMeters", value.asInstanceOf[js.Any])
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def deleteAccuracyMeters: Self = this.set("accuracyMeters", js.undefined)
+    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setLatLngPair(value: LatLng): Self = StObject.set(x, "latLngPair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setLatLngPairUndefined: Self = StObject.set(x, "latLngPair", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatLngPair(value: LatLng): Self = this.set("latLngPair", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteLatLngPair: Self = this.set("latLngPair", js.undefined)
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Level): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePitch: Self = this.set("pitch", js.undefined)
-    
-    @scala.inline
-    def setRoll(value: Double): Self = this.set("roll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoll: Self = this.set("roll", js.undefined)
+    def setRollUndefined: Self = StObject.set(x, "roll", js.undefined)
   }
 }

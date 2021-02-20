@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientContent.anon.CallbackFieldsKeyOauthtoken
 import typings.maximMazurokGapiClientContent.anon.Key
 import typings.maximMazurokGapiClientContent.anon.PrettyPrintProductId
 import typings.maximMazurokGapiClientContent.anon.ProductIdQuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionalinventoryResource extends js.Object {
+trait RegionalinventoryResource extends StObject {
   
   /** Updates regional inventory for multiple products or regions in a single request. */
   def custombatch(request: CallbackFieldsKeyOauthtoken): Request[RegionalinventoryCustomBatchResponse] = js.native

@@ -2,12 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.vsoNodeApi.coreInterfacesMod.SourceControlTypes
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionControlProjectInfo extends js.Object {
+trait VersionControlProjectInfo extends StObject {
   
   var defaultSourceControlType: SourceControlTypes = js.native
   
@@ -31,30 +32,18 @@ object VersionControlProjectInfo {
   }
   
   @scala.inline
-  implicit class VersionControlProjectInfoOps[Self <: VersionControlProjectInfo] (val x: Self) extends AnyVal {
+  implicit class VersionControlProjectInfoMutableBuilder[Self <: VersionControlProjectInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSourceControlType(value: SourceControlTypes): Self = StObject.set(x, "defaultSourceControlType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsGit(value: Boolean): Self = StObject.set(x, "supportsGit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSourceControlType(value: SourceControlTypes): Self = this.set("defaultSourceControlType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProject(value: TeamProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsGit(value: Boolean): Self = this.set("supportsGit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsTFVC(value: Boolean): Self = this.set("supportsTFVC", value.asInstanceOf[js.Any])
+    def setSupportsTFVC(value: Boolean): Self = StObject.set(x, "supportsTFVC", value.asInstanceOf[js.Any])
   }
 }

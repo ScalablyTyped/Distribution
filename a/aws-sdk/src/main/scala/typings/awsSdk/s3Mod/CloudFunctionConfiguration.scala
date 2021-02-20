@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudFunctionConfiguration extends js.Object {
+trait CloudFunctionConfiguration extends StObject {
   
   /**
     * Lambda cloud function ARN that Amazon S3 can invoke when it detects events of the specified type.
@@ -35,51 +36,39 @@ object CloudFunctionConfiguration {
   }
   
   @scala.inline
-  implicit class CloudFunctionConfigurationOps[Self <: CloudFunctionConfiguration] (val x: Self) extends AnyVal {
+  implicit class CloudFunctionConfigurationMutableBuilder[Self <: CloudFunctionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudFunction(value: CloudFunction): Self = StObject.set(x, "CloudFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudFunctionUndefined: Self = StObject.set(x, "CloudFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: Event): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudFunction(value: CloudFunction): Self = this.set("CloudFunction", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "Event", js.undefined)
     
     @scala.inline
-    def deleteCloudFunction: Self = this.set("CloudFunction", js.undefined)
+    def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: Event): Self = this.set("Event", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("Event", js.undefined)
+    def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: Event*): Self = this.set("Events", js.Array(value :_*))
+    def setId(value: NotificationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: EventList): Self = this.set("Events", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("Events", js.undefined)
+    def setInvocationRole(value: CloudFunctionInvocationRole): Self = StObject.set(x, "InvocationRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NotificationId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
-    
-    @scala.inline
-    def setInvocationRole(value: CloudFunctionInvocationRole): Self = this.set("InvocationRole", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvocationRole: Self = this.set("InvocationRole", js.undefined)
+    def setInvocationRoleUndefined: Self = StObject.set(x, "InvocationRole", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRoomMembershipRequest extends js.Object {
+trait UpdateRoomMembershipRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
@@ -36,33 +37,21 @@ object UpdateRoomMembershipRequest {
   }
   
   @scala.inline
-  implicit class UpdateRoomMembershipRequestOps[Self <: UpdateRoomMembershipRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRoomMembershipRequestMutableBuilder[Self <: UpdateRoomMembershipRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMemberId(value: NonEmptyString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRole(value: RoomMembershipRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def setMemberId(value: NonEmptyString): Self = this.set("MemberId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoomId(value: NonEmptyString): Self = this.set("RoomId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRole(value: RoomMembershipRole): Self = this.set("Role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setRoomId(value: NonEmptyString): Self = StObject.set(x, "RoomId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextArrayOptions extends js.Object {
+trait TextArrayOptions extends StObject {
   
   /**
     * The name of an analysis scheme for a text-array field.
@@ -41,48 +42,36 @@ object TextArrayOptions {
   }
   
   @scala.inline
-  implicit class TextArrayOptionsOps[Self <: TextArrayOptions] (val x: Self) extends AnyVal {
+  implicit class TextArrayOptionsMutableBuilder[Self <: TextArrayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisScheme(value: Word): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisSchemeUndefined: Self = StObject.set(x, "AnalysisScheme", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValue(value: FieldValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisScheme(value: Word): Self = this.set("AnalysisScheme", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
     @scala.inline
-    def deleteAnalysisScheme: Self = this.set("AnalysisScheme", js.undefined)
+    def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "HighlightEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: FieldValue): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    def setHighlightEnabledUndefined: Self = StObject.set(x, "HighlightEnabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    def setReturnEnabled(value: Boolean): Self = StObject.set(x, "ReturnEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightEnabled(value: Boolean): Self = this.set("HighlightEnabled", value.asInstanceOf[js.Any])
+    def setReturnEnabledUndefined: Self = StObject.set(x, "ReturnEnabled", js.undefined)
     
     @scala.inline
-    def deleteHighlightEnabled: Self = this.set("HighlightEnabled", js.undefined)
+    def setSourceFields(value: FieldNameCommaList): Self = StObject.set(x, "SourceFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnEnabled(value: Boolean): Self = this.set("ReturnEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnEnabled: Self = this.set("ReturnEnabled", js.undefined)
-    
-    @scala.inline
-    def setSourceFields(value: FieldNameCommaList): Self = this.set("SourceFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceFields: Self = this.set("SourceFields", js.undefined)
+    def setSourceFieldsUndefined: Self = StObject.set(x, "SourceFields", js.undefined)
   }
 }

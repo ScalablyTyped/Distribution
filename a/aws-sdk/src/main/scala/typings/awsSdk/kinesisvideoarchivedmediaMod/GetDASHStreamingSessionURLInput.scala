@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDASHStreamingSessionURLInput extends js.Object {
+trait GetDASHStreamingSessionURLInput extends StObject {
   
   /**
     * The time range of the requested fragment and the source of the timestamps. This parameter is required if PlaybackMode is ON_DEMAND or LIVE_REPLAY. This parameter is optional if PlaybackMode is LIVE. If PlaybackMode is LIVE, the FragmentSelectorType can be set, but the TimestampRange should not be set. If PlaybackMode is ON_DEMAND or LIVE_REPLAY, both FragmentSelectorType and TimestampRange must be set.
@@ -56,66 +57,54 @@ object GetDASHStreamingSessionURLInput {
   }
   
   @scala.inline
-  implicit class GetDASHStreamingSessionURLInputOps[Self <: GetDASHStreamingSessionURLInput] (val x: Self) extends AnyVal {
+  implicit class GetDASHStreamingSessionURLInputMutableBuilder[Self <: GetDASHStreamingSessionURLInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDASHFragmentSelector(value: DASHFragmentSelector): Self = StObject.set(x, "DASHFragmentSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDASHFragmentSelectorUndefined: Self = StObject.set(x, "DASHFragmentSelector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayFragmentNumber(value: DASHDisplayFragmentNumber): Self = StObject.set(x, "DisplayFragmentNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDASHFragmentSelector(value: DASHFragmentSelector): Self = this.set("DASHFragmentSelector", value.asInstanceOf[js.Any])
+    def setDisplayFragmentNumberUndefined: Self = StObject.set(x, "DisplayFragmentNumber", js.undefined)
     
     @scala.inline
-    def deleteDASHFragmentSelector: Self = this.set("DASHFragmentSelector", js.undefined)
+    def setDisplayFragmentTimestamp(value: DASHDisplayFragmentTimestamp): Self = StObject.set(x, "DisplayFragmentTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFragmentNumber(value: DASHDisplayFragmentNumber): Self = this.set("DisplayFragmentNumber", value.asInstanceOf[js.Any])
+    def setDisplayFragmentTimestampUndefined: Self = StObject.set(x, "DisplayFragmentTimestamp", js.undefined)
     
     @scala.inline
-    def deleteDisplayFragmentNumber: Self = this.set("DisplayFragmentNumber", js.undefined)
+    def setExpires(value: Expires): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFragmentTimestamp(value: DASHDisplayFragmentTimestamp): Self = this.set("DisplayFragmentTimestamp", value.asInstanceOf[js.Any])
+    def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
     
     @scala.inline
-    def deleteDisplayFragmentTimestamp: Self = this.set("DisplayFragmentTimestamp", js.undefined)
+    def setMaxManifestFragmentResults(value: PageLimit): Self = StObject.set(x, "MaxManifestFragmentResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: Expires): Self = this.set("Expires", value.asInstanceOf[js.Any])
+    def setMaxManifestFragmentResultsUndefined: Self = StObject.set(x, "MaxManifestFragmentResults", js.undefined)
     
     @scala.inline
-    def deleteExpires: Self = this.set("Expires", js.undefined)
+    def setPlaybackMode(value: DASHPlaybackMode): Self = StObject.set(x, "PlaybackMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxManifestFragmentResults(value: PageLimit): Self = this.set("MaxManifestFragmentResults", value.asInstanceOf[js.Any])
+    def setPlaybackModeUndefined: Self = StObject.set(x, "PlaybackMode", js.undefined)
     
     @scala.inline
-    def deleteMaxManifestFragmentResults: Self = this.set("MaxManifestFragmentResults", js.undefined)
+    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackMode(value: DASHPlaybackMode): Self = this.set("PlaybackMode", value.asInstanceOf[js.Any])
+    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
     @scala.inline
-    def deletePlaybackMode: Self = this.set("PlaybackMode", js.undefined)
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamARN(value: ResourceARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
-    
-    @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

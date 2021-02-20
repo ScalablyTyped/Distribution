@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceAssociationOutputUrl extends js.Object {
+trait InstanceAssociationOutputUrl extends StObject {
   
   /**
     * The URL of S3 bucket where you want to store the results of this request.
@@ -21,24 +22,12 @@ object InstanceAssociationOutputUrl {
   }
   
   @scala.inline
-  implicit class InstanceAssociationOutputUrlOps[Self <: InstanceAssociationOutputUrl] (val x: Self) extends AnyVal {
+  implicit class InstanceAssociationOutputUrlMutableBuilder[Self <: InstanceAssociationOutputUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3OutputUrl(value: S3OutputUrl): Self = StObject.set(x, "S3OutputUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setS3OutputUrl(value: S3OutputUrl): Self = this.set("S3OutputUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3OutputUrl: Self = this.set("S3OutputUrl", js.undefined)
+    def setS3OutputUrlUndefined: Self = StObject.set(x, "S3OutputUrl", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.antDesignProUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/pro-utils/lib/omitUndefined", JSImport.Namespace)
-@js.native
-object omitUndefinedMod extends js.Object {
+object omitUndefinedMod {
   
+  @JSImport("@ant-design/pro-utils/lib/omitUndefined", JSImport.Default)
+  @js.native
   def default[T](obj: T): T = js.native
 }

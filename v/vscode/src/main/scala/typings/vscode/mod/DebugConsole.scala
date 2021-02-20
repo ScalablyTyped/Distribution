@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugConsole extends js.Object {
+trait DebugConsole extends StObject {
   
   /**
     * Append the given value to the debug console.
@@ -31,24 +32,12 @@ object DebugConsole {
   }
   
   @scala.inline
-  implicit class DebugConsoleOps[Self <: DebugConsole] (val x: Self) extends AnyVal {
+  implicit class DebugConsoleMutableBuilder[Self <: DebugConsole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppend(value: String => Unit): Self = this.set("append", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAppendLine(value: String => Unit): Self = this.set("appendLine", js.Any.fromFunction1(value))
+    def setAppendLine(value: String => Unit): Self = StObject.set(x, "appendLine", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuneDto extends js.Object {
+trait RuneDto extends StObject {
   
   var colloq: String = js.native
   
@@ -84,96 +85,84 @@ object RuneDto {
   }
   
   @scala.inline
-  implicit class RuneDtoOps[Self <: RuneDto] (val x: Self) extends AnyVal {
+  implicit class RuneDtoMutableBuilder[Self <: RuneDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColloq(value: String): Self = StObject.set(x, "colloq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumeOnFull(value: Boolean): Self = StObject.set(x, "consumeOnFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumed(value: Boolean): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColloq(value: String): Self = this.set("colloq", value.asInstanceOf[js.Any])
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumeOnFull(value: Boolean): Self = this.set("consumeOnFull", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumed(value: Boolean): Self = this.set("consumed", value.asInstanceOf[js.Any])
+    def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromVarargs(value: String*): Self = this.set("from", js.Array(value :_*))
+    def setHideFromAll(value: Boolean): Self = StObject.set(x, "hideFromAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: js.Array[String]): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideFromAll(value: Boolean): Self = this.set("hideFromAll", value.asInstanceOf[js.Any])
+    def setInStore(value: Boolean): Self = StObject.set(x, "inStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInto(value: js.Array[String]): Self = StObject.set(x, "into", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ImageDto): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setIntoVarargs(value: String*): Self = StObject.set(x, "into", js.Array(value :_*))
     
     @scala.inline
-    def setInStore(value: Boolean): Self = this.set("inStore", value.asInstanceOf[js.Any])
+    def setMaps(value: js.Array[StringDictionary[Boolean]]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntoVarargs(value: String*): Self = this.set("into", js.Array(value :_*))
+    def setMapsVarargs(value: StringDictionary[Boolean]*): Self = StObject.set(x, "maps", js.Array(value :_*))
     
     @scala.inline
-    def setInto(value: js.Array[String]): Self = this.set("into", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapsVarargs(value: StringDictionary[Boolean]*): Self = this.set("maps", js.Array(value :_*))
+    def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaps(value: js.Array[StringDictionary[Boolean]]): Self = this.set("maps", value.asInstanceOf[js.Any])
+    def setRequiredChampion(value: String): Self = StObject.set(x, "requiredChampion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRune(value: MetaDataDto): Self = StObject.set(x, "rune", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaintext(value: String): Self = this.set("plaintext", value.asInstanceOf[js.Any])
+    def setSanitizedDescription(value: String): Self = StObject.set(x, "sanitizedDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredChampion(value: String): Self = this.set("requiredChampion", value.asInstanceOf[js.Any])
+    def setSpecialRecipe(value: Double): Self = StObject.set(x, "specialRecipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRune(value: MetaDataDto): Self = this.set("rune", value.asInstanceOf[js.Any])
+    def setStacks(value: Double): Self = StObject.set(x, "stacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSanitizedDescription(value: String): Self = this.set("sanitizedDescription", value.asInstanceOf[js.Any])
+    def setStats(value: BasicDataStatsDto): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecialRecipe(value: Double): Self = this.set("specialRecipe", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStacks(value: Double): Self = this.set("stacks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStats(value: BasicDataStatsDto): Self = this.set("stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

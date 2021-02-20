@@ -1,5 +1,6 @@
 package typings.uiGrid.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -263,272 +264,260 @@ object IColumnDefOf {
   }
   
   @scala.inline
-  implicit class IColumnDefOfOps[Self <: IColumnDefOf[_], TEntity] (val x: Self with IColumnDefOf[TEntity]) extends AnyVal {
+  implicit class IColumnDefOfMutableBuilder[Self <: IColumnDefOf[_], TEntity] (val x: Self with IColumnDefOf[TEntity]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationHideLabel(value: Boolean): Self = StObject.set(x, "aggregationHideLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationHideLabelUndefined: Self = StObject.set(x, "aggregationHideLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregationType(value: Double | js.Function): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationHideLabel(value: Boolean): Self = this.set("aggregationHideLabel", value.asInstanceOf[js.Any])
+    def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
     
     @scala.inline
-    def deleteAggregationHideLabel: Self = this.set("aggregationHideLabel", js.undefined)
-    
-    @scala.inline
-    def setAggregationType(value: Double | js.Function): Self = this.set("aggregationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregationType: Self = this.set("aggregationType", js.undefined)
+    def setCellClass(value: String | ICellClassGetter[TEntity]): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCellClassFunction5(
       value: (/* grid */ js.UndefOr[IGridInstanceOf[TEntity]], /* gridRow */ js.UndefOr[IGridRowOf[TEntity]], /* gridCol */ js.UndefOr[IGridColumnOf[TEntity]], /* rowRenderIndex */ js.UndefOr[Double], /* colRenderIndex */ js.UndefOr[Double]) => String
-    ): Self = this.set("cellClass", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "cellClass", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setCellClass(value: String | ICellClassGetter[TEntity]): Self = this.set("cellClass", value.asInstanceOf[js.Any])
+    def setCellClassUndefined: Self = StObject.set(x, "cellClass", js.undefined)
     
     @scala.inline
-    def deleteCellClass: Self = this.set("cellClass", js.undefined)
+    def setCellFilter(value: String): Self = StObject.set(x, "cellFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellFilter(value: String): Self = this.set("cellFilter", value.asInstanceOf[js.Any])
+    def setCellFilterUndefined: Self = StObject.set(x, "cellFilter", js.undefined)
     
     @scala.inline
-    def deleteCellFilter: Self = this.set("cellFilter", js.undefined)
+    def setCellTemplate(value: String): Self = StObject.set(x, "cellTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellTemplate(value: String): Self = this.set("cellTemplate", value.asInstanceOf[js.Any])
+    def setCellTemplateUndefined: Self = StObject.set(x, "cellTemplate", js.undefined)
     
     @scala.inline
-    def deleteCellTemplate: Self = this.set("cellTemplate", js.undefined)
+    def setCellTooltip(value: Boolean | String | ICellTooltipGetter[TEntity]): Self = StObject.set(x, "cellTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellTooltipFunction2(value: (/* gridRow */ IGridRowOf[TEntity], /* gridCol */ IGridColumnOf[TEntity]) => String): Self = this.set("cellTooltip", js.Any.fromFunction2(value))
+    def setCellTooltipFunction2(value: (/* gridRow */ IGridRowOf[TEntity], /* gridCol */ IGridColumnOf[TEntity]) => String): Self = StObject.set(x, "cellTooltip", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCellTooltip(value: Boolean | String | ICellTooltipGetter[TEntity]): Self = this.set("cellTooltip", value.asInstanceOf[js.Any])
+    def setCellTooltipUndefined: Self = StObject.set(x, "cellTooltip", js.undefined)
     
     @scala.inline
-    def deleteCellTooltip: Self = this.set("cellTooltip", js.undefined)
+    def setDefaultSort(value: ISortInfo): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSort(value: ISortInfo): Self = this.set("defaultSort", value.asInstanceOf[js.Any])
+    def setDefaultSortUndefined: Self = StObject.set(x, "defaultSort", js.undefined)
     
     @scala.inline
-    def deleteDefaultSort: Self = this.set("defaultSort", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEnableColumnMenu(value: Boolean): Self = StObject.set(x, "enableColumnMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableColumnMenu(value: Boolean): Self = this.set("enableColumnMenu", value.asInstanceOf[js.Any])
+    def setEnableColumnMenuUndefined: Self = StObject.set(x, "enableColumnMenu", js.undefined)
     
     @scala.inline
-    def deleteEnableColumnMenu: Self = this.set("enableColumnMenu", js.undefined)
+    def setEnableColumnMenus(value: Boolean): Self = StObject.set(x, "enableColumnMenus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableColumnMenus(value: Boolean): Self = this.set("enableColumnMenus", value.asInstanceOf[js.Any])
+    def setEnableColumnMenusUndefined: Self = StObject.set(x, "enableColumnMenus", js.undefined)
     
     @scala.inline
-    def deleteEnableColumnMenus: Self = this.set("enableColumnMenus", js.undefined)
+    def setEnableFiltering(value: Boolean): Self = StObject.set(x, "enableFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFiltering(value: Boolean): Self = this.set("enableFiltering", value.asInstanceOf[js.Any])
+    def setEnableFilteringUndefined: Self = StObject.set(x, "enableFiltering", js.undefined)
     
     @scala.inline
-    def deleteEnableFiltering: Self = this.set("enableFiltering", js.undefined)
+    def setEnableHiding(value: Boolean): Self = StObject.set(x, "enableHiding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHiding(value: Boolean): Self = this.set("enableHiding", value.asInstanceOf[js.Any])
+    def setEnableHidingUndefined: Self = StObject.set(x, "enableHiding", js.undefined)
     
     @scala.inline
-    def deleteEnableHiding: Self = this.set("enableHiding", js.undefined)
+    def setEnableSorting(value: Boolean): Self = StObject.set(x, "enableSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSorting(value: Boolean): Self = this.set("enableSorting", value.asInstanceOf[js.Any])
+    def setEnableSortingUndefined: Self = StObject.set(x, "enableSorting", js.undefined)
     
     @scala.inline
-    def deleteEnableSorting: Self = this.set("enableSorting", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setFilter(value: IFilterOptions): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: IFilterOptions): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFilterCellFiltered(value: Boolean): Self = StObject.set(x, "filterCellFiltered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterCellFilteredUndefined: Self = StObject.set(x, "filterCellFiltered", js.undefined)
     
     @scala.inline
-    def setFilterCellFiltered(value: Boolean): Self = this.set("filterCellFiltered", value.asInstanceOf[js.Any])
+    def setFilterHeaderTemplate(value: String): Self = StObject.set(x, "filterHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterCellFiltered: Self = this.set("filterCellFiltered", js.undefined)
+    def setFilterHeaderTemplateUndefined: Self = StObject.set(x, "filterHeaderTemplate", js.undefined)
     
     @scala.inline
-    def setFilterHeaderTemplate(value: String): Self = this.set("filterHeaderTemplate", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteFilterHeaderTemplate: Self = this.set("filterHeaderTemplate", js.undefined)
+    def setFilters(value: js.Array[IFilterOptions]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltersVarargs(value: IFilterOptions*): Self = this.set("filters", js.Array(value :_*))
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def setFilters(value: js.Array[IFilterOptions]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setFooterCellClass(value: String | IHeaderFooterCellClassGetter[TEntity]): Self = StObject.set(x, "footerCellClass", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFooterCellClassFunction5(
       value: (/* grid */ IGridInstanceOf[TEntity], /* gridRow */ IGridRowOf[TEntity], /* gridCol */ IGridColumnOf[TEntity], /* rowRenderIndex */ Double, /* colRenderIndex */ Double) => String
-    ): Self = this.set("footerCellClass", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "footerCellClass", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setFooterCellClass(value: String | IHeaderFooterCellClassGetter[TEntity]): Self = this.set("footerCellClass", value.asInstanceOf[js.Any])
+    def setFooterCellClassUndefined: Self = StObject.set(x, "footerCellClass", js.undefined)
     
     @scala.inline
-    def deleteFooterCellClass: Self = this.set("footerCellClass", js.undefined)
+    def setFooterCellFilter(value: String): Self = StObject.set(x, "footerCellFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterCellFilter(value: String): Self = this.set("footerCellFilter", value.asInstanceOf[js.Any])
+    def setFooterCellFilterUndefined: Self = StObject.set(x, "footerCellFilter", js.undefined)
     
     @scala.inline
-    def deleteFooterCellFilter: Self = this.set("footerCellFilter", js.undefined)
+    def setFooterCellTemplate(value: String): Self = StObject.set(x, "footerCellTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterCellTemplate(value: String): Self = this.set("footerCellTemplate", value.asInstanceOf[js.Any])
+    def setFooterCellTemplateUndefined: Self = StObject.set(x, "footerCellTemplate", js.undefined)
     
     @scala.inline
-    def deleteFooterCellTemplate: Self = this.set("footerCellTemplate", js.undefined)
+    def setHeaderCellClass(value: String | IHeaderFooterCellClassGetter[TEntity]): Self = StObject.set(x, "headerCellClass", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHeaderCellClassFunction5(
       value: (/* grid */ IGridInstanceOf[TEntity], /* gridRow */ IGridRowOf[TEntity], /* gridCol */ IGridColumnOf[TEntity], /* rowRenderIndex */ Double, /* colRenderIndex */ Double) => String
-    ): Self = this.set("headerCellClass", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "headerCellClass", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setHeaderCellClass(value: String | IHeaderFooterCellClassGetter[TEntity]): Self = this.set("headerCellClass", value.asInstanceOf[js.Any])
+    def setHeaderCellClassUndefined: Self = StObject.set(x, "headerCellClass", js.undefined)
     
     @scala.inline
-    def deleteHeaderCellClass: Self = this.set("headerCellClass", js.undefined)
+    def setHeaderCellFilter(value: String): Self = StObject.set(x, "headerCellFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCellFilter(value: String): Self = this.set("headerCellFilter", value.asInstanceOf[js.Any])
+    def setHeaderCellFilterUndefined: Self = StObject.set(x, "headerCellFilter", js.undefined)
     
     @scala.inline
-    def deleteHeaderCellFilter: Self = this.set("headerCellFilter", js.undefined)
+    def setHeaderCellTemplate(value: String): Self = StObject.set(x, "headerCellTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCellTemplate(value: String): Self = this.set("headerCellTemplate", value.asInstanceOf[js.Any])
+    def setHeaderCellTemplateUndefined: Self = StObject.set(x, "headerCellTemplate", js.undefined)
     
     @scala.inline
-    def deleteHeaderCellTemplate: Self = this.set("headerCellTemplate", js.undefined)
+    def setHeaderTooltip(value: Boolean | String | IHeaderTooltipGetter[TEntity]): Self = StObject.set(x, "headerTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTooltipFunction1(value: /* gridCol */ IGridColumnOf[TEntity] => String): Self = this.set("headerTooltip", js.Any.fromFunction1(value))
+    def setHeaderTooltipFunction1(value: /* gridCol */ IGridColumnOf[TEntity] => String): Self = StObject.set(x, "headerTooltip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeaderTooltip(value: Boolean | String | IHeaderTooltipGetter[TEntity]): Self = this.set("headerTooltip", value.asInstanceOf[js.Any])
+    def setHeaderTooltipUndefined: Self = StObject.set(x, "headerTooltip", js.undefined)
     
     @scala.inline
-    def deleteHeaderTooltip: Self = this.set("headerTooltip", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setMenuItems(value: js.Array[IMenuItem]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuItemsVarargs(value: IMenuItem*): Self = this.set("menuItems", js.Array(value :_*))
+    def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
     
     @scala.inline
-    def setMenuItems(value: js.Array[IMenuItem]): Self = this.set("menuItems", value.asInstanceOf[js.Any])
+    def setMenuItemsVarargs(value: IMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
     
     @scala.inline
-    def deleteMenuItems: Self = this.set("menuItems", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSort(value: ISortInfo): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: ISortInfo): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setSortCellFiltered(value: Boolean): Self = StObject.set(x, "sortCellFiltered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortCellFilteredUndefined: Self = StObject.set(x, "sortCellFiltered", js.undefined)
     
     @scala.inline
-    def setSortCellFiltered(value: Boolean): Self = this.set("sortCellFiltered", value.asInstanceOf[js.Any])
+    def setSortDirectionCycle(value: js.Array[Null | String]): Self = StObject.set(x, "sortDirectionCycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortCellFiltered: Self = this.set("sortCellFiltered", js.undefined)
+    def setSortDirectionCycleUndefined: Self = StObject.set(x, "sortDirectionCycle", js.undefined)
     
     @scala.inline
-    def setSortDirectionCycleVarargs(value: (Null | String)*): Self = this.set("sortDirectionCycle", js.Array(value :_*))
+    def setSortDirectionCycleVarargs(value: (Null | String)*): Self = StObject.set(x, "sortDirectionCycle", js.Array(value :_*))
     
     @scala.inline
-    def setSortDirectionCycle(value: js.Array[Null | String]): Self = this.set("sortDirectionCycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortDirectionCycle: Self = this.set("sortDirectionCycle", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
     def setSortingAlgorithm(
       value: (/* a */ js.Any, /* b */ js.Any, /* rowA */ IGridRowOf[TEntity], /* rowB */ IGridRowOf[TEntity], /* direction */ String) => Double
-    ): Self = this.set("sortingAlgorithm", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "sortingAlgorithm", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteSortingAlgorithm: Self = this.set("sortingAlgorithm", js.undefined)
+    def setSortingAlgorithmUndefined: Self = StObject.set(x, "sortingAlgorithm", js.undefined)
     
     @scala.inline
-    def setSuppressRemoveSort(value: Boolean): Self = this.set("suppressRemoveSort", value.asInstanceOf[js.Any])
+    def setSuppressRemoveSort(value: Boolean): Self = StObject.set(x, "suppressRemoveSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuppressRemoveSort: Self = this.set("suppressRemoveSort", js.undefined)
+    def setSuppressRemoveSortUndefined: Self = StObject.set(x, "suppressRemoveSort", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

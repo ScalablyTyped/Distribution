@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityFilter extends js.Object {
+trait EntityFilter extends StObject {
   
   /**
     * The name of the entity search filter field. REFERENCED_ENTITY_ID filters on entities that are used by the entity in the result set. For example, you can filter on the ID of a property that is used in a state.
@@ -26,33 +27,21 @@ object EntityFilter {
   }
   
   @scala.inline
-  implicit class EntityFilterOps[Self <: EntityFilter] (val x: Self) extends AnyVal {
+  implicit class EntityFilterMutableBuilder[Self <: EntityFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: EntityFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: EntityFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: EntityFilterName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setValueVarargs(value: EntityFilterValue*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: EntityFilterValues): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueVarargs(value: EntityFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

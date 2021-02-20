@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationSettingsResource extends js.Object {
+trait ApplicationSettingsResource extends StObject {
   
   /**
     * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
@@ -41,45 +42,33 @@ object ApplicationSettingsResource {
   }
   
   @scala.inline
-  implicit class ApplicationSettingsResourceOps[Self <: ApplicationSettingsResource] (val x: Self) extends AnyVal {
+  implicit class ApplicationSettingsResourceMutableBuilder[Self <: ApplicationSettingsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaignHook(value: CampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
     
     @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignHook(value: CampaignHook): Self = this.set("CampaignHook", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteCampaignHook: Self = this.set("CampaignHook", js.undefined)
+    def setLimits(value: CampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimits(value: CampaignLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimits: Self = this.set("Limits", js.undefined)
-    
-    @scala.inline
-    def setQuietTime(value: QuietTime): Self = this.set("QuietTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuietTime: Self = this.set("QuietTime", js.undefined)
+    def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
   }
 }

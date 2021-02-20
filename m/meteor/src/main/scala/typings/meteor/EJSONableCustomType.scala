@@ -1,11 +1,12 @@
 package typings.meteor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EJSONableCustomType extends js.Object {
+trait EJSONableCustomType extends StObject {
   
   @JSName("clone")
   var clone_FEJSONableCustomType: js.UndefOr[js.Function0[this.type]] = js.native
@@ -26,36 +27,24 @@ object EJSONableCustomType {
   }
   
   @scala.inline
-  implicit class EJSONableCustomTypeOps[Self <: EJSONableCustomType] (val x: Self) extends AnyVal {
+  implicit class EJSONableCustomTypeMutableBuilder[Self <: EJSONableCustomType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone_(value: () => EJSONableCustomType): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEquals_(value: /* other */ js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToJSONValue(value: () => JSONable): Self = this.set("toJSONValue", js.Any.fromFunction0(value))
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def setTypeName(value: () => String): Self = this.set("typeName", js.Any.fromFunction0(value))
+    def setToJSONValue(value: () => JSONable): Self = StObject.set(x, "toJSONValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: () => EJSONableCustomType): Self = this.set("clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteClone: Self = this.set("clone", js.undefined)
-    
-    @scala.inline
-    def setEquals(value: /* other */ js.Object => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setTypeName(value: () => String): Self = StObject.set(x, "typeName", js.Any.fromFunction0(value))
   }
 }

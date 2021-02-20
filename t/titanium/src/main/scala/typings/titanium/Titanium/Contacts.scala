@@ -1,5 +1,6 @@
 package typings.titanium.Titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The top-level Contacts module, used for accessing and modifying the system contacts address book.
   */
-@JSGlobal("Titanium.Contacts")
-@js.native
-object Contacts extends js.Object {
+object Contacts {
   
   /**
     * An object which represents a group in the system contacts address book.

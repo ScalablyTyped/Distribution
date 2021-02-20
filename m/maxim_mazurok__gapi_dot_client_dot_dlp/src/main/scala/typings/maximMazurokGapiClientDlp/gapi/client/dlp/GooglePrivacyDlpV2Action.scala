@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2Action extends js.Object {
+trait GooglePrivacyDlpV2Action extends StObject {
   
   /** Enable email notification for project owners and editors on job's completion/failure. */
   var jobNotificationEmails: js.UndefOr[js.Any] = js.native
@@ -34,54 +35,42 @@ object GooglePrivacyDlpV2Action {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2ActionOps[Self <: GooglePrivacyDlpV2Action] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2ActionMutableBuilder[Self <: GooglePrivacyDlpV2Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobNotificationEmails(value: js.Any): Self = StObject.set(x, "jobNotificationEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobNotificationEmailsUndefined: Self = StObject.set(x, "jobNotificationEmails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPubSub(value: GooglePrivacyDlpV2PublishToPubSub): Self = StObject.set(x, "pubSub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobNotificationEmails(value: js.Any): Self = this.set("jobNotificationEmails", value.asInstanceOf[js.Any])
+    def setPubSubUndefined: Self = StObject.set(x, "pubSub", js.undefined)
     
     @scala.inline
-    def deleteJobNotificationEmails: Self = this.set("jobNotificationEmails", js.undefined)
+    def setPublishFindingsToCloudDataCatalog(value: js.Any): Self = StObject.set(x, "publishFindingsToCloudDataCatalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubSub(value: GooglePrivacyDlpV2PublishToPubSub): Self = this.set("pubSub", value.asInstanceOf[js.Any])
+    def setPublishFindingsToCloudDataCatalogUndefined: Self = StObject.set(x, "publishFindingsToCloudDataCatalog", js.undefined)
     
     @scala.inline
-    def deletePubSub: Self = this.set("pubSub", js.undefined)
+    def setPublishSummaryToCscc(value: js.Any): Self = StObject.set(x, "publishSummaryToCscc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishFindingsToCloudDataCatalog(value: js.Any): Self = this.set("publishFindingsToCloudDataCatalog", value.asInstanceOf[js.Any])
+    def setPublishSummaryToCsccUndefined: Self = StObject.set(x, "publishSummaryToCscc", js.undefined)
     
     @scala.inline
-    def deletePublishFindingsToCloudDataCatalog: Self = this.set("publishFindingsToCloudDataCatalog", js.undefined)
+    def setPublishToStackdriver(value: js.Any): Self = StObject.set(x, "publishToStackdriver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishSummaryToCscc(value: js.Any): Self = this.set("publishSummaryToCscc", value.asInstanceOf[js.Any])
+    def setPublishToStackdriverUndefined: Self = StObject.set(x, "publishToStackdriver", js.undefined)
     
     @scala.inline
-    def deletePublishSummaryToCscc: Self = this.set("publishSummaryToCscc", js.undefined)
+    def setSaveFindings(value: GooglePrivacyDlpV2SaveFindings): Self = StObject.set(x, "saveFindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishToStackdriver(value: js.Any): Self = this.set("publishToStackdriver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishToStackdriver: Self = this.set("publishToStackdriver", js.undefined)
-    
-    @scala.inline
-    def setSaveFindings(value: GooglePrivacyDlpV2SaveFindings): Self = this.set("saveFindings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaveFindings: Self = this.set("saveFindings", js.undefined)
+    def setSaveFindingsUndefined: Self = StObject.set(x, "saveFindings", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.formInputInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputFilter extends js.Object {
+trait InputFilter extends StObject {
   
   /**
     * Groups of input filter expressions. This filter matches a set of inputs if any (one or more) of the groups evaluates to true.
@@ -21,24 +22,12 @@ object InputFilter {
   }
   
   @scala.inline
-  implicit class InputFilterOps[Self <: InputFilter] (val x: Self) extends AnyVal {
+  implicit class InputFilterMutableBuilder[Self <: InputFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[InputFilterCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConditionsVarargs(value: InputFilterCondition*): Self = this.set("conditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConditions(value: js.Array[InputFilterCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: InputFilterCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

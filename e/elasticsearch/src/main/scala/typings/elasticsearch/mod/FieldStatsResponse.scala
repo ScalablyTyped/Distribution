@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldStatsResponse extends js.Object {
+trait FieldStatsResponse extends StObject {
   
   var _shards: ShardsResponse = js.native
   
@@ -23,30 +24,18 @@ object FieldStatsResponse {
   }
   
   @scala.inline
-  implicit class FieldStatsResponseOps[Self <: FieldStatsResponse] (val x: Self) extends AnyVal {
+  implicit class FieldStatsResponseMutableBuilder[Self <: FieldStatsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConflicts(value: StringDictionary[String]): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndices(value: StringDictionary[FieldStatsResponseIndex]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_shards(value: ShardsResponse): Self = this.set("_shards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndices(value: StringDictionary[FieldStatsResponseIndex]): Self = this.set("indices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConflicts(value: StringDictionary[String]): Self = this.set("conflicts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConflicts: Self = this.set("conflicts", js.undefined)
+    def set_shards(value: ShardsResponse): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
   }
 }

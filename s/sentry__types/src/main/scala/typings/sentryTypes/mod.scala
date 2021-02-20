@@ -1,15 +1,15 @@
 package typings.sentryTypes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/types", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@sentry/types", "LogLevel")
   @js.native
-  object LogLevel extends js.Object {
+  object LogLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sentryTypes.loglevelMod.LogLevel with Double] = js.native
@@ -23,8 +23,9 @@ object mod extends js.Object {
     /* 3 */ val Verbose: typings.sentryTypes.loglevelMod.LogLevel.Verbose with Double = js.native
   }
   
+  @JSImport("@sentry/types", "SessionStatus")
   @js.native
-  object SessionStatus extends js.Object {
+  object SessionStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.sentryTypes.sessionMod.SessionStatus with String] = js.native
@@ -38,8 +39,9 @@ object mod extends js.Object {
     /* "ok" */ val Ok: typings.sentryTypes.sessionMod.SessionStatus.Ok with String = js.native
   }
   
+  @JSImport("@sentry/types", "Severity")
   @js.native
-  object Severity extends js.Object {
+  object Severity extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.sentryTypes.severityMod.Severity with String] = js.native
@@ -67,8 +69,9 @@ object mod extends js.Object {
     def fromString(level: String): typings.sentryTypes.severityMod.Severity = js.native
   }
   
+  @JSImport("@sentry/types", "Status")
   @js.native
-  object Status extends js.Object {
+  object Status extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.sentryTypes.statusMod.Status with String] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3DestinationProperties extends js.Object {
+trait S3DestinationProperties extends StObject {
   
   /**
     *  The Amazon S3 bucket name in which Amazon AppFlow places the transferred data. 
@@ -28,33 +29,21 @@ object S3DestinationProperties {
   }
   
   @scala.inline
-  implicit class S3DestinationPropertiesOps[Self <: S3DestinationProperties] (val x: Self) extends AnyVal {
+  implicit class S3DestinationPropertiesMutableBuilder[Self <: S3DestinationProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
     
     @scala.inline
-    def setBucketName(value: BucketName): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    def setS3OutputFormatConfig(value: S3OutputFormatConfig): Self = StObject.set(x, "s3OutputFormatConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = this.set("bucketPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketPrefix: Self = this.set("bucketPrefix", js.undefined)
-    
-    @scala.inline
-    def setS3OutputFormatConfig(value: S3OutputFormatConfig): Self = this.set("s3OutputFormatConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3OutputFormatConfig: Self = this.set("s3OutputFormatConfig", js.undefined)
+    def setS3OutputFormatConfigUndefined: Self = StObject.set(x, "s3OutputFormatConfig", js.undefined)
   }
 }

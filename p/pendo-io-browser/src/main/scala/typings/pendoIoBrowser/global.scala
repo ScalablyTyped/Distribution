@@ -1,15 +1,23 @@
 package typings.pendoIoBrowser
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.pendoIoBrowser.pendo.Pendo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object pendo extends TopLevel[Pendo]
+  object pendo extends Shortcut {
+    
+    @JSGlobal("pendo")
+    @js.native
+    val ^ : Pendo = js.native
+    
+    type _To = Pendo
+    
+    /* This means you don't have to write `^`, but can instead just say `pendo.foo` */
+    override def _to: Pendo = ^
+  }
 }

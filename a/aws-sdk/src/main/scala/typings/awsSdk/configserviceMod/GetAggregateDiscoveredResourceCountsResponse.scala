@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAggregateDiscoveredResourceCountsResponse extends js.Object {
+trait GetAggregateDiscoveredResourceCountsResponse extends StObject {
   
   /**
     * The key passed into the request object. If GroupByKey is not provided, the result will be empty.
@@ -36,42 +37,30 @@ object GetAggregateDiscoveredResourceCountsResponse {
   }
   
   @scala.inline
-  implicit class GetAggregateDiscoveredResourceCountsResponseOps[Self <: GetAggregateDiscoveredResourceCountsResponse] (val x: Self) extends AnyVal {
+  implicit class GetAggregateDiscoveredResourceCountsResponseMutableBuilder[Self <: GetAggregateDiscoveredResourceCountsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupByKey(value: StringWithCharLimit256): Self = StObject.set(x, "GroupByKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupByKeyUndefined: Self = StObject.set(x, "GroupByKey", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupedResourceCounts(value: GroupedResourceCountList): Self = StObject.set(x, "GroupedResourceCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalDiscoveredResources(value: Long): Self = this.set("TotalDiscoveredResources", value.asInstanceOf[js.Any])
+    def setGroupedResourceCountsUndefined: Self = StObject.set(x, "GroupedResourceCounts", js.undefined)
     
     @scala.inline
-    def setGroupByKey(value: StringWithCharLimit256): Self = this.set("GroupByKey", value.asInstanceOf[js.Any])
+    def setGroupedResourceCountsVarargs(value: GroupedResourceCount*): Self = StObject.set(x, "GroupedResourceCounts", js.Array(value :_*))
     
     @scala.inline
-    def deleteGroupByKey: Self = this.set("GroupByKey", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupedResourceCountsVarargs(value: GroupedResourceCount*): Self = this.set("GroupedResourceCounts", js.Array(value :_*))
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setGroupedResourceCounts(value: GroupedResourceCountList): Self = this.set("GroupedResourceCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupedResourceCounts: Self = this.set("GroupedResourceCounts", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setTotalDiscoveredResources(value: Long): Self = StObject.set(x, "TotalDiscoveredResources", value.asInstanceOf[js.Any])
   }
 }

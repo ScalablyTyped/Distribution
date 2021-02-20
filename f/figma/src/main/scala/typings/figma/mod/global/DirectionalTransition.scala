@@ -9,6 +9,7 @@ import typings.figma.figmaStrings.RIGHT
 import typings.figma.figmaStrings.SLIDE_IN
 import typings.figma.figmaStrings.SLIDE_OUT
 import typings.figma.figmaStrings.TOP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,33 +43,21 @@ object DirectionalTransition {
   }
   
   @scala.inline
-  implicit class DirectionalTransitionOps[Self <: DirectionalTransition] (val x: Self) extends AnyVal {
+  implicit class DirectionalTransitionMutableBuilder[Self <: DirectionalTransition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: LEFT | RIGHT | TOP | BOTTOM): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: LEFT | RIGHT | TOP | BOTTOM): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setMatchLayers(value: Boolean): Self = StObject.set(x, "matchLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEasing(value: Easing): Self = this.set("easing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchLayers(value: Boolean): Self = this.set("matchLayers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MOVE_IN | MOVE_OUT | PUSH | SLIDE_IN | SLIDE_OUT): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MOVE_IN | MOVE_OUT | PUSH | SLIDE_IN | SLIDE_OUT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the current status of a chat message such as draft, sent, or received. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageStatus")
 @js.native
-object ChatMessageStatus extends js.Object {
+object ChatMessageStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageStatus with Double] = js.native

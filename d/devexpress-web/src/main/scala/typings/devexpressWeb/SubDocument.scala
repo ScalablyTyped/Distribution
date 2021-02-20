@@ -1,6 +1,7 @@
 package typings.devexpressWeb
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Exposes the settings providing the information about the essential document functionality.
   */
 @js.native
-trait SubDocument extends js.Object {
+trait SubDocument extends StObject {
   
   /**
     * Provides information about document bookmarks.

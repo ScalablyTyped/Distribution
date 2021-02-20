@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TetheringOperationStatus extends js.Object
+sealed trait TetheringOperationStatus extends StObject
 /** Defines the values returned with a NetworkOperatorTetheringOperationResult object to indicate the status of a tethering operation. */
 @JSGlobal("Windows.Networking.NetworkOperators.TetheringOperationStatus")
 @js.native
-object TetheringOperationStatus extends js.Object {
+object TetheringOperationStatus extends StObject {
   
   /** The operation did not complete because the account does not currently support tethering operations. */
   @js.native

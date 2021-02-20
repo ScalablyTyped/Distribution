@@ -3,12 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.devtoolsProtocolStrings.CancelAuth
 import typings.devtoolsProtocol.devtoolsProtocolStrings.Default
 import typings.devtoolsProtocol.devtoolsProtocolStrings.ProvideCredentials
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthChallengeResponse extends js.Object {
+trait AuthChallengeResponse extends StObject {
   
   /**
     * The password to provide, possibly empty. Should only be set if response is
@@ -38,33 +39,21 @@ object AuthChallengeResponse {
   }
   
   @scala.inline
-  implicit class AuthChallengeResponseOps[Self <: AuthChallengeResponse] (val x: Self) extends AnyVal {
+  implicit class AuthChallengeResponseMutableBuilder[Self <: AuthChallengeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponse(value: Default | CancelAuth | ProvideCredentials): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: Default | CancelAuth | ProvideCredentials): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

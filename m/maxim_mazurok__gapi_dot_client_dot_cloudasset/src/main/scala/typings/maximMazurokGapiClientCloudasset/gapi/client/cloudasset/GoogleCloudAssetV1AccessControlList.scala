@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudAssetV1AccessControlList extends js.Object {
+trait GoogleCloudAssetV1AccessControlList extends StObject {
   
   /**
     * The accesses that match one of the following conditions: - The access_selector, if it is specified in request; - Otherwise, access specifiers reachable from the policy binding's
@@ -31,45 +32,33 @@ object GoogleCloudAssetV1AccessControlList {
   }
   
   @scala.inline
-  implicit class GoogleCloudAssetV1AccessControlListOps[Self <: GoogleCloudAssetV1AccessControlList] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudAssetV1AccessControlListMutableBuilder[Self <: GoogleCloudAssetV1AccessControlList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccesses(value: js.Array[GoogleCloudAssetV1Access]): Self = StObject.set(x, "accesses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessesUndefined: Self = StObject.set(x, "accesses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessesVarargs(value: GoogleCloudAssetV1Access*): Self = StObject.set(x, "accesses", js.Array(value :_*))
     
     @scala.inline
-    def setAccessesVarargs(value: GoogleCloudAssetV1Access*): Self = this.set("accesses", js.Array(value :_*))
+    def setResourceEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = StObject.set(x, "resourceEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccesses(value: js.Array[GoogleCloudAssetV1Access]): Self = this.set("accesses", value.asInstanceOf[js.Any])
+    def setResourceEdgesUndefined: Self = StObject.set(x, "resourceEdges", js.undefined)
     
     @scala.inline
-    def deleteAccesses: Self = this.set("accesses", js.undefined)
+    def setResourceEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "resourceEdges", js.Array(value :_*))
     
     @scala.inline
-    def setResourceEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = this.set("resourceEdges", js.Array(value :_*))
+    def setResources(value: js.Array[GoogleCloudAssetV1Resource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = this.set("resourceEdges", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteResourceEdges: Self = this.set("resourceEdges", js.undefined)
-    
-    @scala.inline
-    def setResourcesVarargs(value: GoogleCloudAssetV1Resource*): Self = this.set("resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setResources(value: js.Array[GoogleCloudAssetV1Resource]): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setResourcesVarargs(value: GoogleCloudAssetV1Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

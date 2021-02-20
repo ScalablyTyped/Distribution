@@ -1,5 +1,6 @@
 package typings.materializeCss.M
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<SidenavOptions> * / any
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ @js.native
-trait Sidenav extends js.Object {
+trait Sidenav extends StObject {
   
   /**
     * Closes Sidenav
@@ -43,33 +44,21 @@ object Sidenav {
   }
   
   @scala.inline
-  implicit class SidenavOps[Self <: Sidenav] (val x: Self) extends AnyVal {
+  implicit class SidenavMutableBuilder[Self <: Sidenav] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDragged(value: Boolean): Self = this.set("isDragged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = this.set("isFixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpen(value: () => Unit): Self = this.set("open", js.Any.fromFunction0(value))
+    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

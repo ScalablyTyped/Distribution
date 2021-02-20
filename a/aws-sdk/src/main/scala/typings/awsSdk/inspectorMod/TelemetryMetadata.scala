@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TelemetryMetadata extends js.Object {
+trait TelemetryMetadata extends StObject {
   
   /**
     * The count of messages that the agent sends to the Amazon Inspector service.
@@ -31,30 +32,18 @@ object TelemetryMetadata {
   }
   
   @scala.inline
-  implicit class TelemetryMetadataOps[Self <: TelemetryMetadata] (val x: Self) extends AnyVal {
+  implicit class TelemetryMetadataMutableBuilder[Self <: TelemetryMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSize(value: Long): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSizeUndefined: Self = StObject.set(x, "dataSize", js.undefined)
     
     @scala.inline
-    def setCount(value: Long): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageType(value: MessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataSize(value: Long): Self = this.set("dataSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSize: Self = this.set("dataSize", js.undefined)
+    def setMessageType(value: MessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
   }
 }

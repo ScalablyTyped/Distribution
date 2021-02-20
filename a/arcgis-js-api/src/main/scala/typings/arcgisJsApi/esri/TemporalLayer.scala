@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemporalLayer extends js.Object {
+trait TemporalLayer extends StObject {
   
   /**
     * The layer's time extent.
@@ -44,30 +45,18 @@ object TemporalLayer {
   }
   
   @scala.inline
-  implicit class TemporalLayerOps[Self <: TemporalLayer] (val x: Self) extends AnyVal {
+  implicit class TemporalLayerMutableBuilder[Self <: TemporalLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimeExtent(value: TimeExtent): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTimeInfo(value: TimeInfo): Self = StObject.set(x, "timeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeOffset(value: TimeInterval): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeExtent(value: TimeExtent): Self = this.set("timeExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeInfo(value: TimeInfo): Self = this.set("timeInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeOffset(value: TimeInterval): Self = this.set("timeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseViewTime(value: Boolean): Self = this.set("useViewTime", value.asInstanceOf[js.Any])
+    def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
   }
 }

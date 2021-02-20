@@ -7,14 +7,14 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionRequi
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2DeliveryAddressValueSpec
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionDecisionValueSpec
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionRequirementsCheckSpec
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction", JSImport.Namespace)
-@js.native
-object transactionMod extends js.Object {
+object transactionMod {
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction", "CompletePurchase")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsTransactionsV3CompletePurchaseValueSpec}
@@ -25,6 +25,7 @@ object transactionMod extends js.Object {
     def this(options: GoogleActionsTransactionsV3CompletePurchaseValueSpec) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction", "DeliveryAddress")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsV2DeliveryAddressValueSpec}
@@ -35,6 +36,7 @@ object transactionMod extends js.Object {
     def this(options: GoogleActionsV2DeliveryAddressValueSpec) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction", "DigitalPurchaseCheck")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsTransactionsV3DigitalPurchaseCheckSpec}
@@ -45,6 +47,7 @@ object transactionMod extends js.Object {
     def this(options: GoogleActionsTransactionsV3DigitalPurchaseCheckSpec) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction", "TransactionDecision")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsV2TransactionDecisionValueSpec}
@@ -58,6 +61,7 @@ object transactionMod extends js.Object {
     def this(options: GoogleActionsV2TransactionDecisionValueSpec) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/transaction", "TransactionRequirements")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsV2TransactionRequirementsCheckSpec}

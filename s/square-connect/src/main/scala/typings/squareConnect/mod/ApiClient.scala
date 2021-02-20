@@ -2,13 +2,14 @@ package typings.squareConnect.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.squareConnect.anon.Oauth2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ApiClient")
 @js.native
-class ApiClient () extends js.Object {
+class ApiClient () extends StObject {
   
   /**
     * The authentication methods to be included for all API calls.
@@ -41,12 +42,18 @@ class ApiClient () extends js.Object {
   var timeout: Double = js.native
 }
 /* static members */
-@JSImport("square-connect", "ApiClient")
-@js.native
-object ApiClient extends js.Object {
+object ApiClient {
+  
+  @JSImport("square-connect", "ApiClient")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The default API client implementation.
     */
-  var instance: ApiClient = js.native
+  @JSImport("square-connect", "ApiClient.instance")
+  @js.native
+  def instance: ApiClient = js.native
+  @scala.inline
+  def instance_=(x: ApiClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 }

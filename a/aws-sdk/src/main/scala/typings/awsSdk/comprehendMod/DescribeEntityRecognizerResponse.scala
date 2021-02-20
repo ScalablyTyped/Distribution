@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEntityRecognizerResponse extends js.Object {
+trait DescribeEntityRecognizerResponse extends StObject {
   
   /**
     * Describes information associated with an entity recognizer.
@@ -21,24 +22,12 @@ object DescribeEntityRecognizerResponse {
   }
   
   @scala.inline
-  implicit class DescribeEntityRecognizerResponseOps[Self <: DescribeEntityRecognizerResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeEntityRecognizerResponseMutableBuilder[Self <: DescribeEntityRecognizerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityRecognizerProperties(value: EntityRecognizerProperties): Self = StObject.set(x, "EntityRecognizerProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntityRecognizerProperties(value: EntityRecognizerProperties): Self = this.set("EntityRecognizerProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityRecognizerProperties: Self = this.set("EntityRecognizerProperties", js.undefined)
+    def setEntityRecognizerPropertiesUndefined: Self = StObject.set(x, "EntityRecognizerProperties", js.undefined)
   }
 }

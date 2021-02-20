@@ -1,5 +1,6 @@
 package typings.googleapis.cloudprivatecatalogproducerV1beta1Mod.cloudprivatecatalogproducerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * google.cloud.v1beta1.PrivateCatalog.SearchCatalogs action.
   */
 @js.native
-trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Association extends js.Object {
+trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Association extends StObject {
   
   /**
     * The creation time of the association.
@@ -53,36 +54,24 @@ object SchemaGoogleCloudPrivatecatalogproducerV1beta1Association {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudPrivatecatalogproducerV1beta1AssociationOps[Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudPrivatecatalogproducerV1beta1AssociationMutableBuilder[Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

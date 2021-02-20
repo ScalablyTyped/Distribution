@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteLagRequest extends js.Object {
+trait DeleteLagRequest extends StObject {
   
   /**
     * The ID of the LAG.
@@ -21,21 +22,9 @@ object DeleteLagRequest {
   }
   
   @scala.inline
-  implicit class DeleteLagRequestOps[Self <: DeleteLagRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteLagRequestMutableBuilder[Self <: DeleteLagRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLagId(value: LagId): Self = this.set("lagId", value.asInstanceOf[js.Any])
+    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
   }
 }

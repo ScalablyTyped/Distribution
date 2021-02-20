@@ -1,5 +1,6 @@
 package typings.baiduApp.swan.ai
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 获取全局唯一的语音识别器voiceRecognizer。
   */
 @js.native
-trait VoiceRecognizerStart extends js.Object {
+trait VoiceRecognizerStart extends StObject {
   
-   // 是否开启长语音
+  // 是否开启长语音
   var context: js.UndefOr[String] = js.native
   
-   // 听音模式，有效值dnn/touch
+  // 听音模式，有效值dnn/touch
   var longSpeech: js.UndefOr[Boolean] = js.native
   
   var mode: js.UndefOr[String] = js.native
@@ -27,36 +28,24 @@ object VoiceRecognizerStart {
   }
   
   @scala.inline
-  implicit class VoiceRecognizerStartOps[Self <: VoiceRecognizerStart] (val x: Self) extends AnyVal {
+  implicit class VoiceRecognizerStartMutableBuilder[Self <: VoiceRecognizerStart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLongSpeech(value: Boolean): Self = StObject.set(x, "longSpeech", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setLongSpeechUndefined: Self = StObject.set(x, "longSpeech", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongSpeech(value: Boolean): Self = this.set("longSpeech", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongSpeech: Self = this.set("longSpeech", js.undefined)
-    
-    @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.wegameApi.anon.LineHeight
 import typings.wegameApi.wegameApiStrings.bold
 import typings.wegameApi.wegameApiStrings.italic
 import typings.wegameApi.wegameApiStrings.normal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineHeightParams extends js.Object {
+trait LineHeightParams extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -36,60 +37,48 @@ object LineHeightParams {
   }
   
   @scala.inline
-  implicit class LineHeightParamsOps[Self <: LineHeightParams] (val x: Self) extends AnyVal {
+  implicit class LineHeightParamsMutableBuilder[Self <: LineHeightParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    def setFontStyle(value: normal | italic): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontWeight(value: normal | bold): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def setFontStyle(value: normal | italic): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* res */ LineHeight => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setFontWeight(value: normal | bold): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ LineHeight => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

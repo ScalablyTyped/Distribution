@@ -1,5 +1,6 @@
 package typings.reactNativeModals.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeModals.reactNativeModalsStrings.left
   - typings.reactNativeModals.reactNativeModalsStrings.right
 */
-trait SwipeDirection extends js.Object
+trait SwipeDirection extends StObject
 object SwipeDirection {
   
   @scala.inline

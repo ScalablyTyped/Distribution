@@ -1,30 +1,27 @@
 package typings.sipJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/user-agent-state", JSImport.Namespace)
-@js.native
-object userAgentStateMod extends js.Object {
+object userAgentStateMod {
   
   @js.native
-  sealed trait UserAgentState extends js.Object
+  sealed trait UserAgentState extends StObject
+  @JSImport("sip.js/lib/api/user-agent-state", "UserAgentState")
   @js.native
-  object UserAgentState extends js.Object {
+  object UserAgentState extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[UserAgentState with String] = js.native
     
     @js.native
     sealed trait Started extends UserAgentState
-    /* "Started" */ @js.native
-    object Started extends TopLevel[Started with String]
+    /* "Started" */ val Started: typings.sipJs.userAgentStateMod.UserAgentState.Started with String = js.native
     
     @js.native
     sealed trait Stopped extends UserAgentState
-    /* "Stopped" */ @js.native
-    object Stopped extends TopLevel[Stopped with String]
+    /* "Stopped" */ val Stopped: typings.sipJs.userAgentStateMod.UserAgentState.Stopped with String = js.native
   }
 }

@@ -10,16 +10,39 @@ import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.olMod.Transform
 import typings.ol.pluggableMapMod.DeclutterItems
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/render/canvas/ExecutorGroup", JSImport.Namespace)
-@js.native
-object executorGroupMod extends js.Object {
+object executorGroupMod {
   
+  @JSImport("ol/render/canvas/ExecutorGroup", JSImport.Default)
+  @js.native
+  class default protected () extends ExecutorGroup {
+    def this(
+      maxExtent: Extent,
+      resolution: Double,
+      pixelRatio: Double,
+      overlaps: Boolean,
+      allInstructions: StringDictionary[typings.ol.olStrings.default with TopLevel[js.Any]]
+    ) = this()
+    def this(
+      maxExtent: Extent,
+      resolution: Double,
+      pixelRatio: Double,
+      overlaps: Boolean,
+      allInstructions: StringDictionary[typings.ol.olStrings.default with TopLevel[js.Any]],
+      opt_renderBuffer: Double
+    ) = this()
+  }
+  
+  @JSImport("ol/render/canvas/ExecutorGroup", "getCircleArray")
+  @js.native
   def getCircleArray(radius: Double): js.Array[js.Array[js.UndefOr[Boolean]]] = js.native
   
+  @JSImport("ol/render/canvas/ExecutorGroup", "replayDeclutter")
+  @js.native
   def replayDeclutter(
     declutterReplays: StringDictionary[js.Array[_]],
     context: CanvasRenderingContext2D,
@@ -30,7 +53,7 @@ object executorGroupMod extends js.Object {
   ): Unit = js.native
   
   @js.native
-  trait ExecutorGroup extends js.Object {
+  trait ExecutorGroup extends StObject {
     
     def clip(context: CanvasRenderingContext2D, transform: Transform): Unit = js.native
     
@@ -82,24 +105,5 @@ object executorGroupMod extends js.Object {
     def hasExecutors(executors: js.Array[BuilderType]): Boolean = js.native
     
     def isEmpty(): Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends ExecutorGroup {
-    def this(
-      maxExtent: Extent,
-      resolution: Double,
-      pixelRatio: Double,
-      overlaps: Boolean,
-      allInstructions: StringDictionary[typings.ol.olStrings.default with TopLevel[js.Any]]
-    ) = this()
-    def this(
-      maxExtent: Extent,
-      resolution: Double,
-      pixelRatio: Double,
-      overlaps: Boolean,
-      allInstructions: StringDictionary[typings.ol.olStrings.default with TopLevel[js.Any]],
-      opt_renderBuffer: Double
-    ) = this()
   }
 }

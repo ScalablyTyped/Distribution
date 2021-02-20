@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientRemotebuildexecution.anon.InstanceName
 import typings.maximMazurokGapiClientRemotebuildexecution.anon.Key
 import typings.maximMazurokGapiClientRemotebuildexecution.anon.Oauthtoken
 import typings.maximMazurokGapiClientRemotebuildexecution.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlobsResource extends js.Object {
+trait BlobsResource extends StObject {
   
   def batchRead(request: InstanceName, body: BuildBazelRemoteExecutionV2BatchReadBlobsRequest): Request[BuildBazelRemoteExecutionV2BatchReadBlobsResponse] = js.native
   /**

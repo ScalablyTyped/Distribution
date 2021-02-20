@@ -1,13 +1,14 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObserveResponse extends js.Object {
+trait ObserveResponse extends StObject {
   
-   // 相交区域占目标节点的布局区域的比例
+  // 相交区域占目标节点的布局区域的比例
   var boundingClientRect: RectArea = js.native
   
   var dataset: js.Any = js.native
@@ -39,39 +40,27 @@ object ObserveResponse {
   }
   
   @scala.inline
-  implicit class ObserveResponseOps[Self <: ObserveResponse] (val x: Self) extends AnyVal {
+  implicit class ObserveResponseMutableBuilder[Self <: ObserveResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingClientRect(value: RectArea): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataset(value: js.Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingClientRect(value: RectArea): Self = this.set("boundingClientRect", value.asInstanceOf[js.Any])
+    def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: js.Any): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setIntersectionRect(value: RectArea): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRelativeRect(value: RectArea): Self = StObject.set(x, "relativeRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersectionRatio(value: Double): Self = this.set("intersectionRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntersectionRect(value: RectArea): Self = this.set("intersectionRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelativeRect(value: RectArea): Self = this.set("relativeRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

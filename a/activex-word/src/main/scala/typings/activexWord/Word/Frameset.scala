@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Frameset extends js.Object {
+trait Frameset extends StObject {
   
   def AddNewFrame(Where: WdFramesetNewFrameLocation): Frameset = js.native
   
@@ -85,84 +86,72 @@ object Frameset {
   }
   
   @scala.inline
-  implicit class FramesetOps[Self <: Frameset] (val x: Self) extends AnyVal {
+  implicit class FramesetMutableBuilder[Self <: Frameset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNewFrame(value: WdFramesetNewFrameLocation => Frameset): Self = StObject.set(x, "AddNewFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildFramesetCount(value: Double): Self = StObject.set(x, "ChildFramesetCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddNewFrame(value: WdFramesetNewFrameLocation => Frameset): Self = this.set("AddNewFrame", js.Any.fromFunction1(value))
+    def setChildFramesetItem(value: Double => Frameset): Self = StObject.set(x, "ChildFramesetItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildFramesetCount(value: Double): Self = this.set("ChildFramesetCount", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChildFramesetItem(value: Double => Frameset): Self = this.set("ChildFramesetItem", js.Any.fromFunction1(value))
+    def setFrameDefaultURL(value: String): Self = StObject.set(x, "FrameDefaultURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setFrameDisplayBorders(value: Boolean): Self = StObject.set(x, "FrameDisplayBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setFrameLinkToFile(value: Boolean): Self = StObject.set(x, "FrameLinkToFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameDefaultURL(value: String): Self = this.set("FrameDefaultURL", value.asInstanceOf[js.Any])
+    def setFrameName(value: String): Self = StObject.set(x, "FrameName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameDisplayBorders(value: Boolean): Self = this.set("FrameDisplayBorders", value.asInstanceOf[js.Any])
+    def setFrameResizable(value: Boolean): Self = StObject.set(x, "FrameResizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameLinkToFile(value: Boolean): Self = this.set("FrameLinkToFile", value.asInstanceOf[js.Any])
+    def setFrameScrollbarType(value: WdScrollbarType): Self = StObject.set(x, "FrameScrollbarType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameName(value: String): Self = this.set("FrameName", value.asInstanceOf[js.Any])
+    def setFramesetBorderColor(value: WdColor): Self = StObject.set(x, "FramesetBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameResizable(value: Boolean): Self = this.set("FrameResizable", value.asInstanceOf[js.Any])
+    def setFramesetBorderWidth(value: Double): Self = StObject.set(x, "FramesetBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameScrollbarType(value: WdScrollbarType): Self = this.set("FrameScrollbarType", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramesetBorderColor(value: WdColor): Self = this.set("FramesetBorderColor", value.asInstanceOf[js.Any])
+    def setHeightType(value: WdFramesetSizeType): Self = StObject.set(x, "HeightType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramesetBorderWidth(value: Double): Self = this.set("FramesetBorderWidth", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setParentFrameset(value: Frameset): Self = StObject.set(x, "ParentFrameset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightType(value: WdFramesetSizeType): Self = this.set("HeightType", value.asInstanceOf[js.Any])
+    def setType(value: WdFramesetType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentFrameset(value: Frameset): Self = this.set("ParentFrameset", value.asInstanceOf[js.Any])
+    def setWidthType(value: WdFramesetSizeType): Self = StObject.set(x, "WidthType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: WdFramesetType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidthType(value: WdFramesetSizeType): Self = this.set("WidthType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotFrameset_typekey(value: Frameset): Self = this.set("Word.Frameset_typekey", value.asInstanceOf[js.Any])
+    def setWordDotFrameset_typekey(value: Frameset): Self = StObject.set(x, "Word.Frameset_typekey", value.asInstanceOf[js.Any])
   }
 }

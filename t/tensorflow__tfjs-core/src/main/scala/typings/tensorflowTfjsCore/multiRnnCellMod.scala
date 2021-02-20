@@ -2,14 +2,15 @@ package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/multi_rnn_cell", JSImport.Namespace)
-@js.native
-object multiRnnCellMod extends js.Object {
+object multiRnnCellMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/multi_rnn_cell", "multiRNNCell")
+  @js.native
   val multiRNNCell: js.Function4[
     /* lstmCells */ js.Array[LSTMCellFunc], 
     /* data */ Tensor2D | TensorLike, 

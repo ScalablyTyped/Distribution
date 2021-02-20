@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectUserObject extends js.Object {
+trait ConnectUserObject extends StObject {
   
   /**
     * The type of custom Connect configuration being accessed.
@@ -35,51 +36,39 @@ object ConnectUserObject {
   }
   
   @scala.inline
-  implicit class ConnectUserObjectOps[Self <: ConnectUserObject] (val x: Self) extends AnyVal {
+  implicit class ConnectUserObjectMutableBuilder[Self <: ConnectUserObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationtype(value: String): Self = StObject.set(x, "configurationtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationtypeUndefined: Self = StObject.set(x, "configurationtype", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectId(value: String): Self = StObject.set(x, "connectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationtype(value: String): Self = this.set("configurationtype", value.asInstanceOf[js.Any])
+    def setConnectIdUndefined: Self = StObject.set(x, "connectId", js.undefined)
     
     @scala.inline
-    def deleteConfigurationtype: Self = this.set("configurationtype", js.undefined)
+    def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectId(value: String): Self = this.set("connectId", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteConnectId: Self = this.set("connectId", js.undefined)
+    def setHasAccess(value: String): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: String): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHasAccessUndefined: Self = StObject.set(x, "hasAccess", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setSenderSearchableItems(value: js.Array[String]): Self = StObject.set(x, "senderSearchableItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAccess(value: String): Self = this.set("hasAccess", value.asInstanceOf[js.Any])
+    def setSenderSearchableItemsUndefined: Self = StObject.set(x, "senderSearchableItems", js.undefined)
     
     @scala.inline
-    def deleteHasAccess: Self = this.set("hasAccess", js.undefined)
-    
-    @scala.inline
-    def setSenderSearchableItemsVarargs(value: String*): Self = this.set("senderSearchableItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setSenderSearchableItems(value: js.Array[String]): Self = this.set("senderSearchableItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSenderSearchableItems: Self = this.set("senderSearchableItems", js.undefined)
+    def setSenderSearchableItemsVarargs(value: String*): Self = StObject.set(x, "senderSearchableItems", js.Array(value :_*))
   }
 }

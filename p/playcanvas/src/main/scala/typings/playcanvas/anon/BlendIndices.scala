@@ -1,11 +1,12 @@
 package typings.playcanvas.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlendIndices extends js.Object {
+trait BlendIndices extends StObject {
   
   var blendIndices: js.UndefOr[js.Array[Double]] = js.native
   
@@ -32,90 +33,78 @@ object BlendIndices {
   }
   
   @scala.inline
-  implicit class BlendIndicesOps[Self <: BlendIndices] (val x: Self) extends AnyVal {
+  implicit class BlendIndicesMutableBuilder[Self <: BlendIndices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlendIndices(value: js.Array[Double]): Self = StObject.set(x, "blendIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlendIndicesUndefined: Self = StObject.set(x, "blendIndices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlendIndicesVarargs(value: Double*): Self = StObject.set(x, "blendIndices", js.Array(value :_*))
     
     @scala.inline
-    def setBlendIndicesVarargs(value: Double*): Self = this.set("blendIndices", js.Array(value :_*))
+    def setBlendWeights(value: js.Array[Double]): Self = StObject.set(x, "blendWeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendIndices(value: js.Array[Double]): Self = this.set("blendIndices", value.asInstanceOf[js.Any])
+    def setBlendWeightsUndefined: Self = StObject.set(x, "blendWeights", js.undefined)
     
     @scala.inline
-    def deleteBlendIndices: Self = this.set("blendIndices", js.undefined)
+    def setBlendWeightsVarargs(value: Double*): Self = StObject.set(x, "blendWeights", js.Array(value :_*))
     
     @scala.inline
-    def setBlendWeightsVarargs(value: Double*): Self = this.set("blendWeights", js.Array(value :_*))
+    def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendWeights(value: js.Array[Double]): Self = this.set("blendWeights", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteBlendWeights: Self = this.set("blendWeights", js.undefined)
+    def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: Double*): Self = this.set("colors", js.Array(value :_*))
+    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[Double]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
     
     @scala.inline
-    def setIndicesVarargs(value: Double*): Self = this.set("indices", js.Array(value :_*))
+    def setNormals(value: js.Array[Double]): Self = StObject.set(x, "normals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndices(value: js.Array[Double]): Self = this.set("indices", value.asInstanceOf[js.Any])
+    def setNormalsUndefined: Self = StObject.set(x, "normals", js.undefined)
     
     @scala.inline
-    def deleteIndices: Self = this.set("indices", js.undefined)
+    def setNormalsVarargs(value: Double*): Self = StObject.set(x, "normals", js.Array(value :_*))
     
     @scala.inline
-    def setNormalsVarargs(value: Double*): Self = this.set("normals", js.Array(value :_*))
+    def setTangents(value: js.Array[Double]): Self = StObject.set(x, "tangents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormals(value: js.Array[Double]): Self = this.set("normals", value.asInstanceOf[js.Any])
+    def setTangentsUndefined: Self = StObject.set(x, "tangents", js.undefined)
     
     @scala.inline
-    def deleteNormals: Self = this.set("normals", js.undefined)
+    def setTangentsVarargs(value: Double*): Self = StObject.set(x, "tangents", js.Array(value :_*))
     
     @scala.inline
-    def setTangentsVarargs(value: Double*): Self = this.set("tangents", js.Array(value :_*))
+    def setUvs(value: js.Array[Double]): Self = StObject.set(x, "uvs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTangents(value: js.Array[Double]): Self = this.set("tangents", value.asInstanceOf[js.Any])
+    def setUvs1(value: js.Array[Double]): Self = StObject.set(x, "uvs1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTangents: Self = this.set("tangents", js.undefined)
+    def setUvs1Undefined: Self = StObject.set(x, "uvs1", js.undefined)
     
     @scala.inline
-    def setUvsVarargs(value: Double*): Self = this.set("uvs", js.Array(value :_*))
+    def setUvs1Varargs(value: Double*): Self = StObject.set(x, "uvs1", js.Array(value :_*))
     
     @scala.inline
-    def setUvs(value: js.Array[Double]): Self = this.set("uvs", value.asInstanceOf[js.Any])
+    def setUvsUndefined: Self = StObject.set(x, "uvs", js.undefined)
     
     @scala.inline
-    def deleteUvs: Self = this.set("uvs", js.undefined)
-    
-    @scala.inline
-    def setUvs1Varargs(value: Double*): Self = this.set("uvs1", js.Array(value :_*))
-    
-    @scala.inline
-    def setUvs1(value: js.Array[Double]): Self = this.set("uvs1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUvs1: Self = this.set("uvs1", js.undefined)
+    def setUvsVarargs(value: Double*): Self = StObject.set(x, "uvs", js.Array(value :_*))
   }
 }

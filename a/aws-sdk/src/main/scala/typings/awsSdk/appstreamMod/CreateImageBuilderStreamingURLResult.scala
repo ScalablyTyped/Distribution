@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateImageBuilderStreamingURLResult extends js.Object {
+trait CreateImageBuilderStreamingURLResult extends StObject {
   
   /**
     * The elapsed time, in seconds after the Unix epoch, when this URL expires.
@@ -26,30 +27,18 @@ object CreateImageBuilderStreamingURLResult {
   }
   
   @scala.inline
-  implicit class CreateImageBuilderStreamingURLResultOps[Self <: CreateImageBuilderStreamingURLResult] (val x: Self) extends AnyVal {
+  implicit class CreateImageBuilderStreamingURLResultMutableBuilder[Self <: CreateImageBuilderStreamingURLResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpires(value: Timestamp): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamingURL(value: String): Self = StObject.set(x, "StreamingURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: Timestamp): Self = this.set("Expires", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpires: Self = this.set("Expires", js.undefined)
-    
-    @scala.inline
-    def setStreamingURL(value: String): Self = this.set("StreamingURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamingURL: Self = this.set("StreamingURL", js.undefined)
+    def setStreamingURLUndefined: Self = StObject.set(x, "StreamingURL", js.undefined)
   }
 }

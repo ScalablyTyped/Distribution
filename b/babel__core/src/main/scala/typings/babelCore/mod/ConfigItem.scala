@@ -2,12 +2,13 @@ package typings.babelCore.mod
 
 import typings.babelCore.anon.Request
 import typings.babelCore.babelCoreBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigItem extends js.Object {
+trait ConfigItem extends StObject {
   
   /**
     * The path that the options are relative to.
@@ -44,48 +45,36 @@ object ConfigItem {
   }
   
   @scala.inline
-  implicit class ConfigItemOps[Self <: ConfigItem] (val x: Self) extends AnyVal {
+  implicit class ConfigItemMutableBuilder[Self <: ConfigItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile(value: Request): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileNull: Self = StObject.set(x, "file", null)
     
     @scala.inline
-    def setDirname(value: String): Self = this.set("dirname", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def setValueFunction1(value: /* repeated */ js.Any => _): Self = this.set("value", js.Any.fromFunction1(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Object | (js.Function1[/* repeated */ js.Any, _])): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setFile(value: Request): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Object | `false`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setFileNull: Self = this.set("file", null)
+    def setValue(value: js.Object | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: js.Object | `false`): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setValueFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

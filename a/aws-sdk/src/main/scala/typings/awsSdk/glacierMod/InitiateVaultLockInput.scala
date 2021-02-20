@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitiateVaultLockInput extends js.Object {
+trait InitiateVaultLockInput extends StObject {
   
   /**
     * The AccountId value is the AWS account ID. This value must match the AWS account ID associated with the credentials used to sign the request. You can either specify an AWS account ID or optionally a single '-' (hyphen), in which case Amazon Glacier uses the AWS account ID associated with the credentials used to sign the request. If you specify your account ID, do not include any hyphens ('-') in the ID.
@@ -31,30 +32,18 @@ object InitiateVaultLockInput {
   }
   
   @scala.inline
-  implicit class InitiateVaultLockInputOps[Self <: InitiateVaultLockInput] (val x: Self) extends AnyVal {
+  implicit class InitiateVaultLockInputMutableBuilder[Self <: InitiateVaultLockInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicy(value: VaultLockPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVaultName(value: String): Self = this.set("vaultName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicy(value: VaultLockPolicy): Self = this.set("policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

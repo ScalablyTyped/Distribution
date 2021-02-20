@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BreakType extends js.Object
+sealed trait BreakType extends StObject
 /**
   *
   * Specifies the form of a break.
@@ -14,7 +15,7 @@ sealed trait BreakType extends js.Object
   */
 @JSGlobal("Word.BreakType")
 @js.native
-object BreakType extends js.Object {
+object BreakType extends StObject {
   
   /**
     * Line break.

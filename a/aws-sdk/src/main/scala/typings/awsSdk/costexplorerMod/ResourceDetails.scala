@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceDetails extends js.Object {
+trait ResourceDetails extends StObject {
   
   /**
     * Details on the Amazon EC2 resource.
@@ -21,24 +22,12 @@ object ResourceDetails {
   }
   
   @scala.inline
-  implicit class ResourceDetailsOps[Self <: ResourceDetails] (val x: Self) extends AnyVal {
+  implicit class ResourceDetailsMutableBuilder[Self <: ResourceDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEC2ResourceDetails(value: EC2ResourceDetails): Self = StObject.set(x, "EC2ResourceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEC2ResourceDetails(value: EC2ResourceDetails): Self = this.set("EC2ResourceDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEC2ResourceDetails: Self = this.set("EC2ResourceDetails", js.undefined)
+    def setEC2ResourceDetailsUndefined: Self = StObject.set(x, "EC2ResourceDetails", js.undefined)
   }
 }

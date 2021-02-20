@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceFleetStatus extends js.Object {
+trait InstanceFleetStatus extends StObject {
   
   /**
     * A code representing the instance fleet status.    PROVISIONING—The instance fleet is provisioning EC2 resources and is not yet ready to run jobs.    BOOTSTRAPPING—EC2 instances and other resources have been provisioned and the bootstrap actions specified for the instances are underway.    RUNNING—EC2 instances and other resources are running. They are either executing jobs or waiting to execute jobs.    RESIZING—A resize operation is underway. EC2 instances are either being added or removed.    SUSPENDED—A resize operation could not complete. Existing EC2 instances are running, but instances can't be added or removed.    TERMINATING—The instance fleet is terminating EC2 instances.    TERMINATED—The instance fleet is no longer active, and all EC2 instances have been terminated.  
@@ -31,36 +32,24 @@ object InstanceFleetStatus {
   }
   
   @scala.inline
-  implicit class InstanceFleetStatusOps[Self <: InstanceFleetStatus] (val x: Self) extends AnyVal {
+  implicit class InstanceFleetStatusMutableBuilder[Self <: InstanceFleetStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setState(value: InstanceFleetState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStateChangeReason(value: InstanceFleetStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
     
     @scala.inline
-    def setState(value: InstanceFleetState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTimeline(value: InstanceFleetTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateChangeReason(value: InstanceFleetStateChangeReason): Self = this.set("StateChangeReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateChangeReason: Self = this.set("StateChangeReason", js.undefined)
-    
-    @scala.inline
-    def setTimeline(value: InstanceFleetTimeline): Self = this.set("Timeline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeline: Self = this.set("Timeline", js.undefined)
+    def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
   }
 }

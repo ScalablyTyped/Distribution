@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_IN_APP
   - typings.actionsOnGoogle.actionsOnGoogleStrings.SKU_TYPE_SUBSCRIPTION
 */
-trait GoogleActionsTransactionsV3SkuIdSkuType extends js.Object
+trait GoogleActionsTransactionsV3SkuIdSkuType extends StObject
 object GoogleActionsTransactionsV3SkuIdSkuType {
   
   @scala.inline

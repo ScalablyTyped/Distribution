@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAuthn
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Credential extends js.Object {
+trait Credential extends StObject {
   
   var credentialId: String = js.native
   
@@ -45,42 +46,30 @@ object Credential {
   }
   
   @scala.inline
-  implicit class CredentialOps[Self <: Credential] (val x: Self) extends AnyVal {
+  implicit class CredentialMutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentialId(value: String): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsResidentCredential(value: Boolean): Self = StObject.set(x, "isResidentCredential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialId(value: String): Self = this.set("credentialId", value.asInstanceOf[js.Any])
+    def setRpId(value: String): Self = StObject.set(x, "rpId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsResidentCredential(value: Boolean): Self = this.set("isResidentCredential", value.asInstanceOf[js.Any])
+    def setRpIdUndefined: Self = StObject.set(x, "rpId", js.undefined)
     
     @scala.inline
-    def setPrivateKey(value: String): Self = this.set("privateKey", value.asInstanceOf[js.Any])
+    def setSignCount(value: integer): Self = StObject.set(x, "signCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignCount(value: integer): Self = this.set("signCount", value.asInstanceOf[js.Any])
+    def setUserHandle(value: String): Self = StObject.set(x, "userHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRpId(value: String): Self = this.set("rpId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRpId: Self = this.set("rpId", js.undefined)
-    
-    @scala.inline
-    def setUserHandle(value: String): Self = this.set("userHandle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserHandle: Self = this.set("userHandle", js.undefined)
+    def setUserHandleUndefined: Self = StObject.set(x, "userHandle", js.undefined)
   }
 }

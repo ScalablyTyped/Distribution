@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFile.gapi.client.file
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion extends js.Object {
+trait GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion extends StObject {
   
   /**
     * Exclusion duration. No restrictions on the possible values. When an ongoing operation is taking longer than initially expected, an existing entry in the exclusion list can be
@@ -35,42 +36,30 @@ object GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion {
   }
   
   @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1SloExclusionOps[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudSaasacceleratorManagementProvidersV1SloExclusionMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setSliName(value: String): Self = StObject.set(x, "sliName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setSliNameUndefined: Self = StObject.set(x, "sliName", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSliName(value: String): Self = this.set("sliName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSliName: Self = this.set("sliName", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

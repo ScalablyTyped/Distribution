@@ -2,12 +2,13 @@ package typings.plotlyJs.mod
 
 import typings.plotlyJs.plotlyJsStrings.animate
 import typings.plotlyJs.plotlyJsStrings.skip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SliderStep extends js.Object {
+trait SliderStep extends StObject {
   
   /**
     * Sets the arguments values to be passed to the Plotly
@@ -65,41 +66,29 @@ object SliderStep {
   }
   
   @scala.inline
-  implicit class SliderStepOps[Self <: SliderStep] (val x: Self) extends AnyVal {
+  implicit class SliderStepMutableBuilder[Self <: SliderStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = this.set("args", js.Array(value :_*))
-    
-    @scala.inline
-    def setArgs(value: js.Array[_]): Self = this.set("args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecute(value: Boolean): Self = this.set("execute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMethod(
       value: animate | typings.plotlyJs.plotlyJsStrings.relayout | typings.plotlyJs.plotlyJsStrings.restyle | skip | typings.plotlyJs.plotlyJsStrings.update
-    ): Self = this.set("method", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

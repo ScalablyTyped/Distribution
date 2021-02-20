@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,36 +41,24 @@ object UsageInfo {
   }
   
   @scala.inline
-  implicit class UsageInfoOps[Self <: UsageInfo] (val x: Self) extends AnyVal {
+  implicit class UsageInfoMutableBuilder[Self <: UsageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_bandwidth(value: () => Double): Self = StObject.set(x, "get_bandwidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_discussionStorage(value: () => Double): Self = StObject.set(x, "get_discussionStorage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_hits(value: () => Double): Self = StObject.set(x, "get_hits", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_bandwidth(value: () => Double): Self = this.set("get_bandwidth", js.Any.fromFunction0(value))
+    def setGet_storage(value: () => Double): Self = StObject.set(x, "get_storage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_discussionStorage(value: () => Double): Self = this.set("get_discussionStorage", js.Any.fromFunction0(value))
+    def setGet_storagePercentageUsed(value: () => Double): Self = StObject.set(x, "get_storagePercentageUsed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_hits(value: () => Double): Self = this.set("get_hits", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_storage(value: () => Double): Self = this.set("get_storage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_storagePercentageUsed(value: () => Double): Self = this.set("get_storagePercentageUsed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_visits(value: () => Double): Self = this.set("get_visits", js.Any.fromFunction0(value))
+    def setGet_visits(value: () => Double): Self = StObject.set(x, "get_visits", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelRemoteExecutionV2GetTreeResponse extends js.Object {
+trait BuildBazelRemoteExecutionV2GetTreeResponse extends StObject {
   
   /** The directories descended from the requested root. */
   var directories: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2Directory]] = js.native
@@ -25,33 +26,21 @@ object BuildBazelRemoteExecutionV2GetTreeResponse {
   }
   
   @scala.inline
-  implicit class BuildBazelRemoteExecutionV2GetTreeResponseOps[Self <: BuildBazelRemoteExecutionV2GetTreeResponse] (val x: Self) extends AnyVal {
+  implicit class BuildBazelRemoteExecutionV2GetTreeResponseMutableBuilder[Self <: BuildBazelRemoteExecutionV2GetTreeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectories(value: js.Array[BuildBazelRemoteExecutionV2Directory]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoriesVarargs(value: BuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "directories", js.Array(value :_*))
     
     @scala.inline
-    def setDirectoriesVarargs(value: BuildBazelRemoteExecutionV2Directory*): Self = this.set("directories", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectories(value: js.Array[BuildBazelRemoteExecutionV2Directory]): Self = this.set("directories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectories: Self = this.set("directories", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -219,75 +220,63 @@ object XAccessibleContext {
   }
   
   @scala.inline
-  implicit class XAccessibleContextOps[Self <: XAccessibleContext] (val x: Self) extends AnyVal {
+  implicit class XAccessibleContextMutableBuilder[Self <: XAccessibleContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleChildCount(value: Double): Self = StObject.set(x, "AccessibleChildCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleDescription(value: String): Self = StObject.set(x, "AccessibleDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibleIndexInParent(value: Double): Self = StObject.set(x, "AccessibleIndexInParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleChildCount(value: Double): Self = this.set("AccessibleChildCount", value.asInstanceOf[js.Any])
+    def setAccessibleName(value: String): Self = StObject.set(x, "AccessibleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleDescription(value: String): Self = this.set("AccessibleDescription", value.asInstanceOf[js.Any])
+    def setAccessibleParent(value: XAccessible): Self = StObject.set(x, "AccessibleParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleIndexInParent(value: Double): Self = this.set("AccessibleIndexInParent", value.asInstanceOf[js.Any])
+    def setAccessibleRelationSet(value: XAccessibleRelationSet): Self = StObject.set(x, "AccessibleRelationSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleName(value: String): Self = this.set("AccessibleName", value.asInstanceOf[js.Any])
+    def setAccessibleRole(value: Double): Self = StObject.set(x, "AccessibleRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleParent(value: XAccessible): Self = this.set("AccessibleParent", value.asInstanceOf[js.Any])
+    def setAccessibleStateSet(value: XAccessibleStateSet): Self = StObject.set(x, "AccessibleStateSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleRelationSet(value: XAccessibleRelationSet): Self = this.set("AccessibleRelationSet", value.asInstanceOf[js.Any])
+    def setGetAccessibleChild(value: Double => XAccessible): Self = StObject.set(x, "getAccessibleChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAccessibleRole(value: Double): Self = this.set("AccessibleRole", value.asInstanceOf[js.Any])
+    def setGetAccessibleChildCount(value: () => Double): Self = StObject.set(x, "getAccessibleChildCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessibleStateSet(value: XAccessibleStateSet): Self = this.set("AccessibleStateSet", value.asInstanceOf[js.Any])
+    def setGetAccessibleDescription(value: () => String): Self = StObject.set(x, "getAccessibleDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    def setGetAccessibleIndexInParent(value: () => Double): Self = StObject.set(x, "getAccessibleIndexInParent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleChild(value: Double => XAccessible): Self = this.set("getAccessibleChild", js.Any.fromFunction1(value))
+    def setGetAccessibleName(value: () => String): Self = StObject.set(x, "getAccessibleName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleChildCount(value: () => Double): Self = this.set("getAccessibleChildCount", js.Any.fromFunction0(value))
+    def setGetAccessibleParent(value: () => XAccessible): Self = StObject.set(x, "getAccessibleParent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleDescription(value: () => String): Self = this.set("getAccessibleDescription", js.Any.fromFunction0(value))
+    def setGetAccessibleRelationSet(value: () => XAccessibleRelationSet): Self = StObject.set(x, "getAccessibleRelationSet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleIndexInParent(value: () => Double): Self = this.set("getAccessibleIndexInParent", js.Any.fromFunction0(value))
+    def setGetAccessibleRole(value: () => Double): Self = StObject.set(x, "getAccessibleRole", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleName(value: () => String): Self = this.set("getAccessibleName", js.Any.fromFunction0(value))
+    def setGetAccessibleStateSet(value: () => XAccessibleStateSet): Self = StObject.set(x, "getAccessibleStateSet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleParent(value: () => XAccessible): Self = this.set("getAccessibleParent", js.Any.fromFunction0(value))
+    def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAccessibleRelationSet(value: () => XAccessibleRelationSet): Self = this.set("getAccessibleRelationSet", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAccessibleRole(value: () => Double): Self = this.set("getAccessibleRole", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAccessibleStateSet(value: () => XAccessibleStateSet): Self = this.set("getAccessibleStateSet", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLocale(value: () => Locale): Self = this.set("getLocale", js.Any.fromFunction0(value))
+    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentDimensions extends js.Object {
+trait SegmentDimensions extends StObject {
   
   /**
     * One or more custom attributes to use as criteria for the segment.
@@ -46,54 +47,42 @@ object SegmentDimensions {
   }
   
   @scala.inline
-  implicit class SegmentDimensionsOps[Self <: SegmentDimensions] (val x: Self) extends AnyVal {
+  implicit class SegmentDimensionsMutableBuilder[Self <: SegmentDimensions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBehavior(value: SegmentBehaviors): Self = StObject.set(x, "Behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: MapOfAttributeDimension): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setBehaviorUndefined: Self = StObject.set(x, "Behavior", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setDemographic(value: SegmentDemographics): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehavior(value: SegmentBehaviors): Self = this.set("Behavior", value.asInstanceOf[js.Any])
+    def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
     
     @scala.inline
-    def deleteBehavior: Self = this.set("Behavior", js.undefined)
+    def setLocation(value: SegmentLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemographic(value: SegmentDemographics): Self = this.set("Demographic", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     @scala.inline
-    def deleteDemographic: Self = this.set("Demographic", js.undefined)
+    def setMetrics(value: MapOfMetricDimension): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: SegmentLocation): Self = this.set("Location", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("Location", js.undefined)
+    def setUserAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: MapOfMetricDimension): Self = this.set("Metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetrics: Self = this.set("Metrics", js.undefined)
-    
-    @scala.inline
-    def setUserAttributes(value: MapOfAttributeDimension): Self = this.set("UserAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAttributes: Self = this.set("UserAttributes", js.undefined)
+    def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
   }
 }

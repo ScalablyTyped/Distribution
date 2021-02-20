@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderReturnDiscount")
 @js.native
-class OrderReturnDiscount () extends js.Object {
+class OrderReturnDiscount () extends StObject {
   
   /**
     * The total declared monetary amount of the discount. `amount_money` is not set for percentage-based discounts.

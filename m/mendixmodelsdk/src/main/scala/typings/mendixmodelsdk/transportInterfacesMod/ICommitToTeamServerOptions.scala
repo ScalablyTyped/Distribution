@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
 import typings.mendixmodelsdk.mendixmodelsdkStrings.git
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mendixmodelsdk.transportInterfacesMod.ICommitToGitTeamServerOptions
   - typings.mendixmodelsdk.transportInterfacesMod.ICommitToSVNTeamServerOptions
 */
-trait ICommitToTeamServerOptions extends js.Object
+trait ICommitToTeamServerOptions extends StObject
 object ICommitToTeamServerOptions {
   
   @scala.inline
@@ -21,9 +22,9 @@ object ICommitToTeamServerOptions {
     targetBranch: String,
     targetCommitId: String,
     teamServerGitUrl: String
-  ): ICommitToTeamServerOptions = {
+  ): typings.mendixmodelsdk.transportInterfacesMod.ICommitToGitTeamServerOptions = {
     val __obj = js.Dynamic.literal(authorEmail = authorEmail.asInstanceOf[js.Any], authorName = authorName.asInstanceOf[js.Any], commitMessage = commitMessage.asInstanceOf[js.Any], repositoryType = repositoryType.asInstanceOf[js.Any], targetBranch = targetBranch.asInstanceOf[js.Any], targetCommitId = targetCommitId.asInstanceOf[js.Any], teamServerGitUrl = teamServerGitUrl.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ICommitToTeamServerOptions]
+    __obj.asInstanceOf[typings.mendixmodelsdk.transportInterfacesMod.ICommitToGitTeamServerOptions]
   }
   
   @scala.inline
@@ -33,8 +34,8 @@ object ICommitToTeamServerOptions {
     targetRevision: Double,
     teamServerPassword: String,
     teamServerUsername: String
-  ): ICommitToTeamServerOptions = {
+  ): typings.mendixmodelsdk.transportInterfacesMod.ICommitToSVNTeamServerOptions = {
     val __obj = js.Dynamic.literal(commitMessage = commitMessage.asInstanceOf[js.Any], targetBranch = targetBranch.asInstanceOf[js.Any], targetRevision = targetRevision.asInstanceOf[js.Any], teamServerPassword = teamServerPassword.asInstanceOf[js.Any], teamServerUsername = teamServerUsername.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ICommitToTeamServerOptions]
+    __obj.asInstanceOf[typings.mendixmodelsdk.transportInterfacesMod.ICommitToSVNTeamServerOptions]
   }
 }

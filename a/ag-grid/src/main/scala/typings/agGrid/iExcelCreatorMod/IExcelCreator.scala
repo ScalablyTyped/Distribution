@@ -1,11 +1,12 @@
 package typings.agGrid.iExcelCreatorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExcelCreator extends js.Object {
+trait IExcelCreator extends StObject {
   
   def exportDataAsExcel(): Unit = js.native
   def exportDataAsExcel(params: ExcelExportParams): Unit = js.native

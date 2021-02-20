@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateIntentVersionRequest extends js.Object {
+trait CreateIntentVersionRequest extends StObject {
   
   /**
     * Checksum of the $LATEST version of the intent that should be used to create the new version. If you specify a checksum and the $LATEST version of the intent has a different checksum, Amazon Lex returns a PreconditionFailedException exception and doesn't publish a new version. If you don't specify a checksum, Amazon Lex publishes the $LATEST version.
@@ -26,27 +27,15 @@ object CreateIntentVersionRequest {
   }
   
   @scala.inline
-  implicit class CreateIntentVersionRequestOps[Self <: CreateIntentVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateIntentVersionRequestMutableBuilder[Self <: CreateIntentVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: IntentName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

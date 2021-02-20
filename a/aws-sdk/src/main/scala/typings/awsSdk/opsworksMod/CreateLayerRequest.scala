@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLayerRequest extends js.Object {
+trait CreateLayerRequest extends StObject {
   
   /**
     * One or more user-defined key-value pairs to be added to the stack attributes. To create a cluster layer, set the EcsClusterArn attribute to the cluster's ARN.
@@ -106,123 +107,111 @@ object CreateLayerRequest {
   }
   
   @scala.inline
-  implicit class CreateLayerRequestOps[Self <: CreateLayerRequest] (val x: Self) extends AnyVal {
+  implicit class CreateLayerRequestMutableBuilder[Self <: CreateLayerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: LayerAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoAssignElasticIps(value: Boolean): Self = StObject.set(x, "AutoAssignElasticIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setAutoAssignElasticIpsUndefined: Self = StObject.set(x, "AutoAssignElasticIps", js.undefined)
     
     @scala.inline
-    def setShortname(value: String): Self = this.set("Shortname", value.asInstanceOf[js.Any])
+    def setAutoAssignPublicIps(value: Boolean): Self = StObject.set(x, "AutoAssignPublicIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    def setAutoAssignPublicIpsUndefined: Self = StObject.set(x, "AutoAssignPublicIps", js.undefined)
     
     @scala.inline
-    def setType(value: LayerType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setCloudWatchLogsConfiguration(value: CloudWatchLogsConfiguration): Self = StObject.set(x, "CloudWatchLogsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: LayerAttributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setCloudWatchLogsConfigurationUndefined: Self = StObject.set(x, "CloudWatchLogsConfiguration", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setCustomInstanceProfileArn(value: String): Self = StObject.set(x, "CustomInstanceProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAssignElasticIps(value: Boolean): Self = this.set("AutoAssignElasticIps", value.asInstanceOf[js.Any])
+    def setCustomInstanceProfileArnUndefined: Self = StObject.set(x, "CustomInstanceProfileArn", js.undefined)
     
     @scala.inline
-    def deleteAutoAssignElasticIps: Self = this.set("AutoAssignElasticIps", js.undefined)
+    def setCustomJson(value: String): Self = StObject.set(x, "CustomJson", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAssignPublicIps(value: Boolean): Self = this.set("AutoAssignPublicIps", value.asInstanceOf[js.Any])
+    def setCustomJsonUndefined: Self = StObject.set(x, "CustomJson", js.undefined)
     
     @scala.inline
-    def deleteAutoAssignPublicIps: Self = this.set("AutoAssignPublicIps", js.undefined)
+    def setCustomRecipes(value: Recipes): Self = StObject.set(x, "CustomRecipes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLogsConfiguration(value: CloudWatchLogsConfiguration): Self = this.set("CloudWatchLogsConfiguration", value.asInstanceOf[js.Any])
+    def setCustomRecipesUndefined: Self = StObject.set(x, "CustomRecipes", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLogsConfiguration: Self = this.set("CloudWatchLogsConfiguration", js.undefined)
+    def setCustomSecurityGroupIds(value: Strings): Self = StObject.set(x, "CustomSecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomInstanceProfileArn(value: String): Self = this.set("CustomInstanceProfileArn", value.asInstanceOf[js.Any])
+    def setCustomSecurityGroupIdsUndefined: Self = StObject.set(x, "CustomSecurityGroupIds", js.undefined)
     
     @scala.inline
-    def deleteCustomInstanceProfileArn: Self = this.set("CustomInstanceProfileArn", js.undefined)
+    def setCustomSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "CustomSecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setCustomJson(value: String): Self = this.set("CustomJson", value.asInstanceOf[js.Any])
+    def setEnableAutoHealing(value: Boolean): Self = StObject.set(x, "EnableAutoHealing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomJson: Self = this.set("CustomJson", js.undefined)
+    def setEnableAutoHealingUndefined: Self = StObject.set(x, "EnableAutoHealing", js.undefined)
     
     @scala.inline
-    def setCustomRecipes(value: Recipes): Self = this.set("CustomRecipes", value.asInstanceOf[js.Any])
+    def setInstallUpdatesOnBoot(value: Boolean): Self = StObject.set(x, "InstallUpdatesOnBoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomRecipes: Self = this.set("CustomRecipes", js.undefined)
+    def setInstallUpdatesOnBootUndefined: Self = StObject.set(x, "InstallUpdatesOnBoot", js.undefined)
     
     @scala.inline
-    def setCustomSecurityGroupIdsVarargs(value: String*): Self = this.set("CustomSecurityGroupIds", js.Array(value :_*))
+    def setLifecycleEventConfiguration(value: LifecycleEventConfiguration): Self = StObject.set(x, "LifecycleEventConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSecurityGroupIds(value: Strings): Self = this.set("CustomSecurityGroupIds", value.asInstanceOf[js.Any])
+    def setLifecycleEventConfigurationUndefined: Self = StObject.set(x, "LifecycleEventConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCustomSecurityGroupIds: Self = this.set("CustomSecurityGroupIds", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoHealing(value: Boolean): Self = this.set("EnableAutoHealing", value.asInstanceOf[js.Any])
+    def setPackages(value: Strings): Self = StObject.set(x, "Packages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableAutoHealing: Self = this.set("EnableAutoHealing", js.undefined)
+    def setPackagesUndefined: Self = StObject.set(x, "Packages", js.undefined)
     
     @scala.inline
-    def setInstallUpdatesOnBoot(value: Boolean): Self = this.set("InstallUpdatesOnBoot", value.asInstanceOf[js.Any])
+    def setPackagesVarargs(value: String*): Self = StObject.set(x, "Packages", js.Array(value :_*))
     
     @scala.inline
-    def deleteInstallUpdatesOnBoot: Self = this.set("InstallUpdatesOnBoot", js.undefined)
+    def setShortname(value: String): Self = StObject.set(x, "Shortname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycleEventConfiguration(value: LifecycleEventConfiguration): Self = this.set("LifecycleEventConfiguration", value.asInstanceOf[js.Any])
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLifecycleEventConfiguration: Self = this.set("LifecycleEventConfiguration", js.undefined)
+    def setType(value: LayerType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackagesVarargs(value: String*): Self = this.set("Packages", js.Array(value :_*))
+    def setUseEbsOptimizedInstances(value: Boolean): Self = StObject.set(x, "UseEbsOptimizedInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackages(value: Strings): Self = this.set("Packages", value.asInstanceOf[js.Any])
+    def setUseEbsOptimizedInstancesUndefined: Self = StObject.set(x, "UseEbsOptimizedInstances", js.undefined)
     
     @scala.inline
-    def deletePackages: Self = this.set("Packages", js.undefined)
+    def setVolumeConfigurations(value: VolumeConfigurations): Self = StObject.set(x, "VolumeConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseEbsOptimizedInstances(value: Boolean): Self = this.set("UseEbsOptimizedInstances", value.asInstanceOf[js.Any])
+    def setVolumeConfigurationsUndefined: Self = StObject.set(x, "VolumeConfigurations", js.undefined)
     
     @scala.inline
-    def deleteUseEbsOptimizedInstances: Self = this.set("UseEbsOptimizedInstances", js.undefined)
-    
-    @scala.inline
-    def setVolumeConfigurationsVarargs(value: VolumeConfiguration*): Self = this.set("VolumeConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumeConfigurations(value: VolumeConfigurations): Self = this.set("VolumeConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeConfigurations: Self = this.set("VolumeConfigurations", js.undefined)
+    def setVolumeConfigurationsVarargs(value: VolumeConfiguration*): Self = StObject.set(x, "VolumeConfigurations", js.Array(value :_*))
   }
 }

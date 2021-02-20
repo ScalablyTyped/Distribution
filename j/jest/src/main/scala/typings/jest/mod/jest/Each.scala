@@ -1,12 +1,13 @@
 package typings.jest.mod.jest
 
 import typings.std.TemplateStringsArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Each extends js.Object {
+trait Each extends StObject {
   
   def apply(cases: js.Array[js.Array[_]]): js.Function3[
     /* name */ String, 

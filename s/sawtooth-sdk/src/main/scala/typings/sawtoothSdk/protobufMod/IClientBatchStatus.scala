@@ -2,12 +2,13 @@ package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ClientBatchStatus.IInvalidTransaction
 import typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientBatchStatus extends js.Object {
+trait IClientBatchStatus extends StObject {
   
   /** ClientBatchStatus batchId */
   var batchId: js.UndefOr[String | Null] = js.native
@@ -27,48 +28,36 @@ object IClientBatchStatus {
   }
   
   @scala.inline
-  implicit class IClientBatchStatusOps[Self <: IClientBatchStatus] (val x: Self) extends AnyVal {
+  implicit class IClientBatchStatusMutableBuilder[Self <: IClientBatchStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchIdNull: Self = StObject.set(x, "batchId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def setBatchId(value: String): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setInvalidTransactions(value: js.Array[IInvalidTransaction]): Self = StObject.set(x, "invalidTransactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setInvalidTransactionsNull: Self = StObject.set(x, "invalidTransactions", null)
     
     @scala.inline
-    def setBatchIdNull: Self = this.set("batchId", null)
+    def setInvalidTransactionsUndefined: Self = StObject.set(x, "invalidTransactions", js.undefined)
     
     @scala.inline
-    def setInvalidTransactionsVarargs(value: IInvalidTransaction*): Self = this.set("invalidTransactions", js.Array(value :_*))
+    def setInvalidTransactionsVarargs(value: IInvalidTransaction*): Self = StObject.set(x, "invalidTransactions", js.Array(value :_*))
     
     @scala.inline
-    def setInvalidTransactions(value: js.Array[IInvalidTransaction]): Self = this.set("invalidTransactions", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvalidTransactions: Self = this.set("invalidTransactions", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setInvalidTransactionsNull: Self = this.set("invalidTransactions", null)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

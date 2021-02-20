@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Location extends js.Object {
+trait Location extends StObject {
   
   var names: Translations = js.native
   
@@ -20,27 +21,15 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPokemon(value: js.Array[LocationPokemon]): Self = StObject.set(x, "pokemon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNames(value: Translations): Self = this.set("names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPokemonVarargs(value: LocationPokemon*): Self = this.set("pokemon", js.Array(value :_*))
-    
-    @scala.inline
-    def setPokemon(value: js.Array[LocationPokemon]): Self = this.set("pokemon", value.asInstanceOf[js.Any])
+    def setPokemonVarargs(value: LocationPokemon*): Self = StObject.set(x, "pokemon", js.Array(value :_*))
   }
 }

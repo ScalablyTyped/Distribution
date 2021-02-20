@@ -2,113 +2,299 @@ package typings.googleCloudPubsub.protosMod.google.protobuf
 
 import typings.googleCloudPubsub.protosMod.google.api.IResourceDescriptor
 import typings.googleCloudPubsub.protosMod.google.protobuf.FileOptions.OptimizeMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a FileOptions. */
-trait IFileOptions extends js.Object {
+@js.native
+trait IFileOptions extends StObject {
+  
   /** FileOptions .google.api.resourceDefinition */
   @JSName(".google.api.resourceDefinition")
-  var DotgoogleDotapiDotresourceDefinition: js.UndefOr[js.Array[IResourceDescriptor] | Null] = js.undefined
+  var DotgoogleDotapiDotresourceDefinition: js.UndefOr[js.Array[IResourceDescriptor] | Null] = js.native
+  
   /** FileOptions ccEnableArenas */
-  var ccEnableArenas: js.UndefOr[Boolean | Null] = js.undefined
+  var ccEnableArenas: js.UndefOr[Boolean | Null] = js.native
+  
   /** FileOptions ccGenericServices */
-  var ccGenericServices: js.UndefOr[Boolean | Null] = js.undefined
+  var ccGenericServices: js.UndefOr[Boolean | Null] = js.native
+  
   /** FileOptions csharpNamespace */
-  var csharpNamespace: js.UndefOr[String | Null] = js.undefined
+  var csharpNamespace: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions deprecated */
-  var deprecated: js.UndefOr[Boolean | Null] = js.undefined
+  var deprecated: js.UndefOr[Boolean | Null] = js.native
+  
   /** FileOptions goPackage */
-  var goPackage: js.UndefOr[String | Null] = js.undefined
+  var goPackage: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions javaGenerateEqualsAndHash */
-  var javaGenerateEqualsAndHash: js.UndefOr[Boolean | Null] = js.undefined
+  var javaGenerateEqualsAndHash: js.UndefOr[Boolean | Null] = js.native
+  
   /** FileOptions javaGenericServices */
-  var javaGenericServices: js.UndefOr[Boolean | Null] = js.undefined
+  var javaGenericServices: js.UndefOr[Boolean | Null] = js.native
+  
   /** FileOptions javaMultipleFiles */
-  var javaMultipleFiles: js.UndefOr[Boolean | Null] = js.undefined
+  var javaMultipleFiles: js.UndefOr[Boolean | Null] = js.native
+  
   /** FileOptions javaOuterClassname */
-  var javaOuterClassname: js.UndefOr[String | Null] = js.undefined
+  var javaOuterClassname: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions javaPackage */
-  var javaPackage: js.UndefOr[String | Null] = js.undefined
+  var javaPackage: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions javaStringCheckUtf8 */
-  var javaStringCheckUtf8: js.UndefOr[Boolean | Null] = js.undefined
+  var javaStringCheckUtf8: js.UndefOr[Boolean | Null] = js.native
+  
   /** FileOptions objcClassPrefix */
-  var objcClassPrefix: js.UndefOr[String | Null] = js.undefined
+  var objcClassPrefix: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions optimizeFor */
   var optimizeFor: js.UndefOr[
     OptimizeMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FileOptions.OptimizeMode * / any */ String) | Null
-  ] = js.undefined
+  ] = js.native
+  
   /** FileOptions phpClassPrefix */
-  var phpClassPrefix: js.UndefOr[String | Null] = js.undefined
+  var phpClassPrefix: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions phpGenericServices */
-  var phpGenericServices: js.UndefOr[Boolean | Null] = js.undefined
+  var phpGenericServices: js.UndefOr[Boolean | Null] = js.native
+  
   /** FileOptions phpMetadataNamespace */
-  var phpMetadataNamespace: js.UndefOr[String | Null] = js.undefined
+  var phpMetadataNamespace: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions phpNamespace */
-  var phpNamespace: js.UndefOr[String | Null] = js.undefined
+  var phpNamespace: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions pyGenericServices */
-  var pyGenericServices: js.UndefOr[Boolean | Null] = js.undefined
+  var pyGenericServices: js.UndefOr[Boolean | Null] = js.native
+  
   /** FileOptions rubyPackage */
-  var rubyPackage: js.UndefOr[String | Null] = js.undefined
+  var rubyPackage: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions swiftPrefix */
-  var swiftPrefix: js.UndefOr[String | Null] = js.undefined
+  var swiftPrefix: js.UndefOr[String | Null] = js.native
+  
   /** FileOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
 }
-
 object IFileOptions {
+  
   @scala.inline
-  def apply(
-    DotgoogleDotapiDotresourceDefinition: js.UndefOr[Null | js.Array[IResourceDescriptor]] = js.undefined,
-    ccEnableArenas: js.UndefOr[Null | Boolean] = js.undefined,
-    ccGenericServices: js.UndefOr[Null | Boolean] = js.undefined,
-    csharpNamespace: js.UndefOr[Null | String] = js.undefined,
-    deprecated: js.UndefOr[Null | Boolean] = js.undefined,
-    goPackage: js.UndefOr[Null | String] = js.undefined,
-    javaGenerateEqualsAndHash: js.UndefOr[Null | Boolean] = js.undefined,
-    javaGenericServices: js.UndefOr[Null | Boolean] = js.undefined,
-    javaMultipleFiles: js.UndefOr[Null | Boolean] = js.undefined,
-    javaOuterClassname: js.UndefOr[Null | String] = js.undefined,
-    javaPackage: js.UndefOr[Null | String] = js.undefined,
-    javaStringCheckUtf8: js.UndefOr[Null | Boolean] = js.undefined,
-    objcClassPrefix: js.UndefOr[Null | String] = js.undefined,
-    optimizeFor: js.UndefOr[
-      Null | OptimizeMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FileOptions.OptimizeMode * / any */ String)
-    ] = js.undefined,
-    phpClassPrefix: js.UndefOr[Null | String] = js.undefined,
-    phpGenericServices: js.UndefOr[Null | Boolean] = js.undefined,
-    phpMetadataNamespace: js.UndefOr[Null | String] = js.undefined,
-    phpNamespace: js.UndefOr[Null | String] = js.undefined,
-    pyGenericServices: js.UndefOr[Null | Boolean] = js.undefined,
-    rubyPackage: js.UndefOr[Null | String] = js.undefined,
-    swiftPrefix: js.UndefOr[Null | String] = js.undefined,
-    uninterpretedOption: js.UndefOr[Null | js.Array[IUninterpretedOption]] = js.undefined
-  ): IFileOptions = {
+  def apply(): IFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DotgoogleDotapiDotresourceDefinition)) __obj.updateDynamic(".google.api.resourceDefinition")(DotgoogleDotapiDotresourceDefinition.asInstanceOf[js.Any])
-    if (!js.isUndefined(ccEnableArenas)) __obj.updateDynamic("ccEnableArenas")(ccEnableArenas.asInstanceOf[js.Any])
-    if (!js.isUndefined(ccGenericServices)) __obj.updateDynamic("ccGenericServices")(ccGenericServices.asInstanceOf[js.Any])
-    if (!js.isUndefined(csharpNamespace)) __obj.updateDynamic("csharpNamespace")(csharpNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (!js.isUndefined(goPackage)) __obj.updateDynamic("goPackage")(goPackage.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaGenerateEqualsAndHash)) __obj.updateDynamic("javaGenerateEqualsAndHash")(javaGenerateEqualsAndHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaGenericServices)) __obj.updateDynamic("javaGenericServices")(javaGenericServices.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaMultipleFiles)) __obj.updateDynamic("javaMultipleFiles")(javaMultipleFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaOuterClassname)) __obj.updateDynamic("javaOuterClassname")(javaOuterClassname.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaPackage)) __obj.updateDynamic("javaPackage")(javaPackage.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaStringCheckUtf8)) __obj.updateDynamic("javaStringCheckUtf8")(javaStringCheckUtf8.asInstanceOf[js.Any])
-    if (!js.isUndefined(objcClassPrefix)) __obj.updateDynamic("objcClassPrefix")(objcClassPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimizeFor)) __obj.updateDynamic("optimizeFor")(optimizeFor.asInstanceOf[js.Any])
-    if (!js.isUndefined(phpClassPrefix)) __obj.updateDynamic("phpClassPrefix")(phpClassPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(phpGenericServices)) __obj.updateDynamic("phpGenericServices")(phpGenericServices.asInstanceOf[js.Any])
-    if (!js.isUndefined(phpMetadataNamespace)) __obj.updateDynamic("phpMetadataNamespace")(phpMetadataNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(phpNamespace)) __obj.updateDynamic("phpNamespace")(phpNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(pyGenericServices)) __obj.updateDynamic("pyGenericServices")(pyGenericServices.asInstanceOf[js.Any])
-    if (!js.isUndefined(rubyPackage)) __obj.updateDynamic("rubyPackage")(rubyPackage.asInstanceOf[js.Any])
-    if (!js.isUndefined(swiftPrefix)) __obj.updateDynamic("swiftPrefix")(swiftPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(uninterpretedOption)) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileOptions]
   }
+  
+  @scala.inline
+  implicit class IFileOptionsMutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCcEnableArenas(value: Boolean): Self = StObject.set(x, "ccEnableArenas", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCcEnableArenasNull: Self = StObject.set(x, "ccEnableArenas", null)
+    
+    @scala.inline
+    def setCcEnableArenasUndefined: Self = StObject.set(x, "ccEnableArenas", js.undefined)
+    
+    @scala.inline
+    def setCcGenericServices(value: Boolean): Self = StObject.set(x, "ccGenericServices", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCcGenericServicesNull: Self = StObject.set(x, "ccGenericServices", null)
+    
+    @scala.inline
+    def setCcGenericServicesUndefined: Self = StObject.set(x, "ccGenericServices", js.undefined)
+    
+    @scala.inline
+    def setCsharpNamespace(value: String): Self = StObject.set(x, "csharpNamespace", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCsharpNamespaceNull: Self = StObject.set(x, "csharpNamespace", null)
+    
+    @scala.inline
+    def setCsharpNamespaceUndefined: Self = StObject.set(x, "csharpNamespace", js.undefined)
+    
+    @scala.inline
+    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
+    
+    @scala.inline
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    
+    @scala.inline
+    def setDotgoogleDotapiDotresourceDefinition(value: js.Array[IResourceDescriptor]): Self = StObject.set(x, ".google.api.resourceDefinition", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDotgoogleDotapiDotresourceDefinitionNull: Self = StObject.set(x, ".google.api.resourceDefinition", null)
+    
+    @scala.inline
+    def setDotgoogleDotapiDotresourceDefinitionUndefined: Self = StObject.set(x, ".google.api.resourceDefinition", js.undefined)
+    
+    @scala.inline
+    def setDotgoogleDotapiDotresourceDefinitionVarargs(value: IResourceDescriptor*): Self = StObject.set(x, ".google.api.resourceDefinition", js.Array(value :_*))
+    
+    @scala.inline
+    def setGoPackage(value: String): Self = StObject.set(x, "goPackage", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGoPackageNull: Self = StObject.set(x, "goPackage", null)
+    
+    @scala.inline
+    def setGoPackageUndefined: Self = StObject.set(x, "goPackage", js.undefined)
+    
+    @scala.inline
+    def setJavaGenerateEqualsAndHash(value: Boolean): Self = StObject.set(x, "javaGenerateEqualsAndHash", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setJavaGenerateEqualsAndHashNull: Self = StObject.set(x, "javaGenerateEqualsAndHash", null)
+    
+    @scala.inline
+    def setJavaGenerateEqualsAndHashUndefined: Self = StObject.set(x, "javaGenerateEqualsAndHash", js.undefined)
+    
+    @scala.inline
+    def setJavaGenericServices(value: Boolean): Self = StObject.set(x, "javaGenericServices", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setJavaGenericServicesNull: Self = StObject.set(x, "javaGenericServices", null)
+    
+    @scala.inline
+    def setJavaGenericServicesUndefined: Self = StObject.set(x, "javaGenericServices", js.undefined)
+    
+    @scala.inline
+    def setJavaMultipleFiles(value: Boolean): Self = StObject.set(x, "javaMultipleFiles", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setJavaMultipleFilesNull: Self = StObject.set(x, "javaMultipleFiles", null)
+    
+    @scala.inline
+    def setJavaMultipleFilesUndefined: Self = StObject.set(x, "javaMultipleFiles", js.undefined)
+    
+    @scala.inline
+    def setJavaOuterClassname(value: String): Self = StObject.set(x, "javaOuterClassname", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setJavaOuterClassnameNull: Self = StObject.set(x, "javaOuterClassname", null)
+    
+    @scala.inline
+    def setJavaOuterClassnameUndefined: Self = StObject.set(x, "javaOuterClassname", js.undefined)
+    
+    @scala.inline
+    def setJavaPackage(value: String): Self = StObject.set(x, "javaPackage", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setJavaPackageNull: Self = StObject.set(x, "javaPackage", null)
+    
+    @scala.inline
+    def setJavaPackageUndefined: Self = StObject.set(x, "javaPackage", js.undefined)
+    
+    @scala.inline
+    def setJavaStringCheckUtf8(value: Boolean): Self = StObject.set(x, "javaStringCheckUtf8", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setJavaStringCheckUtf8Null: Self = StObject.set(x, "javaStringCheckUtf8", null)
+    
+    @scala.inline
+    def setJavaStringCheckUtf8Undefined: Self = StObject.set(x, "javaStringCheckUtf8", js.undefined)
+    
+    @scala.inline
+    def setObjcClassPrefix(value: String): Self = StObject.set(x, "objcClassPrefix", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setObjcClassPrefixNull: Self = StObject.set(x, "objcClassPrefix", null)
+    
+    @scala.inline
+    def setObjcClassPrefixUndefined: Self = StObject.set(x, "objcClassPrefix", js.undefined)
+    
+    @scala.inline
+    def setOptimizeFor(
+      value: OptimizeMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FileOptions.OptimizeMode * / any */ String)
+    ): Self = StObject.set(x, "optimizeFor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOptimizeForNull: Self = StObject.set(x, "optimizeFor", null)
+    
+    @scala.inline
+    def setOptimizeForUndefined: Self = StObject.set(x, "optimizeFor", js.undefined)
+    
+    @scala.inline
+    def setPhpClassPrefix(value: String): Self = StObject.set(x, "phpClassPrefix", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPhpClassPrefixNull: Self = StObject.set(x, "phpClassPrefix", null)
+    
+    @scala.inline
+    def setPhpClassPrefixUndefined: Self = StObject.set(x, "phpClassPrefix", js.undefined)
+    
+    @scala.inline
+    def setPhpGenericServices(value: Boolean): Self = StObject.set(x, "phpGenericServices", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPhpGenericServicesNull: Self = StObject.set(x, "phpGenericServices", null)
+    
+    @scala.inline
+    def setPhpGenericServicesUndefined: Self = StObject.set(x, "phpGenericServices", js.undefined)
+    
+    @scala.inline
+    def setPhpMetadataNamespace(value: String): Self = StObject.set(x, "phpMetadataNamespace", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPhpMetadataNamespaceNull: Self = StObject.set(x, "phpMetadataNamespace", null)
+    
+    @scala.inline
+    def setPhpMetadataNamespaceUndefined: Self = StObject.set(x, "phpMetadataNamespace", js.undefined)
+    
+    @scala.inline
+    def setPhpNamespace(value: String): Self = StObject.set(x, "phpNamespace", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPhpNamespaceNull: Self = StObject.set(x, "phpNamespace", null)
+    
+    @scala.inline
+    def setPhpNamespaceUndefined: Self = StObject.set(x, "phpNamespace", js.undefined)
+    
+    @scala.inline
+    def setPyGenericServices(value: Boolean): Self = StObject.set(x, "pyGenericServices", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPyGenericServicesNull: Self = StObject.set(x, "pyGenericServices", null)
+    
+    @scala.inline
+    def setPyGenericServicesUndefined: Self = StObject.set(x, "pyGenericServices", js.undefined)
+    
+    @scala.inline
+    def setRubyPackage(value: String): Self = StObject.set(x, "rubyPackage", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRubyPackageNull: Self = StObject.set(x, "rubyPackage", null)
+    
+    @scala.inline
+    def setRubyPackageUndefined: Self = StObject.set(x, "rubyPackage", js.undefined)
+    
+    @scala.inline
+    def setSwiftPrefix(value: String): Self = StObject.set(x, "swiftPrefix", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSwiftPrefixNull: Self = StObject.set(x, "swiftPrefix", null)
+    
+    @scala.inline
+    def setSwiftPrefixUndefined: Self = StObject.set(x, "swiftPrefix", js.undefined)
+    
+    @scala.inline
+    def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
+    
+    @scala.inline
+    def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
+    
+    @scala.inline
+    def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+  }
 }
-

@@ -1,6 +1,7 @@
 package typings.parse.mod
 
 import typings.parse.mod.global.Parse.Attributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

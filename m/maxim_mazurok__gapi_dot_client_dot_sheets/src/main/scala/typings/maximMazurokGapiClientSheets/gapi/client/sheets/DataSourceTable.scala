@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceTable extends js.Object {
+trait DataSourceTable extends StObject {
   
   /** The type to select columns for the data source table. Defaults to SELECTED. */
   var columnSelectionType: js.UndefOr[String] = js.native
@@ -37,69 +38,57 @@ object DataSourceTable {
   }
   
   @scala.inline
-  implicit class DataSourceTableOps[Self <: DataSourceTable] (val x: Self) extends AnyVal {
+  implicit class DataSourceTableMutableBuilder[Self <: DataSourceTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnSelectionType(value: String): Self = StObject.set(x, "columnSelectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnSelectionTypeUndefined: Self = StObject.set(x, "columnSelectionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[DataSourceColumnReference]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSelectionType(value: String): Self = this.set("columnSelectionType", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteColumnSelectionType: Self = this.set("columnSelectionType", js.undefined)
+    def setColumnsVarargs(value: DataSourceColumnReference*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: DataSourceColumnReference*): Self = this.set("columns", js.Array(value :_*))
+    def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[DataSourceColumnReference]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataExecutionStatus(value: DataExecutionStatus): Self = this.set("dataExecutionStatus", value.asInstanceOf[js.Any])
+    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
     @scala.inline
-    def deleteDataExecutionStatus: Self = this.set("dataExecutionStatus", js.undefined)
+    def setFilterSpecs(value: js.Array[FilterSpec]): Self = StObject.set(x, "filterSpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
     
     @scala.inline
-    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
     
     @scala.inline
-    def setFilterSpecsVarargs(value: FilterSpec*): Self = this.set("filterSpecs", js.Array(value :_*))
+    def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSpecs(value: js.Array[FilterSpec]): Self = this.set("filterSpecs", value.asInstanceOf[js.Any])
+    def setRowLimitUndefined: Self = StObject.set(x, "rowLimit", js.undefined)
     
     @scala.inline
-    def deleteFilterSpecs: Self = this.set("filterSpecs", js.undefined)
+    def setSortSpecs(value: js.Array[SortSpec]): Self = StObject.set(x, "sortSpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowLimit(value: Double): Self = this.set("rowLimit", value.asInstanceOf[js.Any])
+    def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
     @scala.inline
-    def deleteRowLimit: Self = this.set("rowLimit", js.undefined)
-    
-    @scala.inline
-    def setSortSpecsVarargs(value: SortSpec*): Self = this.set("sortSpecs", js.Array(value :_*))
-    
-    @scala.inline
-    def setSortSpecs(value: js.Array[SortSpec]): Self = this.set("sortSpecs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortSpecs: Self = this.set("sortSpecs", js.undefined)
+    def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
   }
 }

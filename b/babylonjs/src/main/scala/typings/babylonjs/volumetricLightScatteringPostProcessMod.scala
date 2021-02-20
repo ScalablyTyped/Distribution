@@ -9,14 +9,14 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/volumetricLightScatteringPostProcess", JSImport.Namespace)
-@js.native
-object volumetricLightScatteringPostProcessMod extends js.Object {
+object volumetricLightScatteringPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/volumetricLightScatteringPostProcess", "VolumetricLightScatteringPostProcess")
   @js.native
   class VolumetricLightScatteringPostProcess protected () extends PostProcess {
     /**
@@ -137,8 +137,7 @@ object volumetricLightScatteringPostProcessMod extends js.Object {
     var weight: Double = js.native
   }
   /* static members */
-  @js.native
-  object VolumetricLightScatteringPostProcess extends js.Object {
+  object VolumetricLightScatteringPostProcess {
     
     /**
       * Creates a default mesh for the Volumeric Light Scattering post-process
@@ -146,6 +145,8 @@ object volumetricLightScatteringPostProcessMod extends js.Object {
       * @param scene The scene where to create the mesh
       * @return the default mesh
       */
+    @JSImport("babylonjs/PostProcesses/volumetricLightScatteringPostProcess", "VolumetricLightScatteringPostProcess.CreateDefaultMesh")
+    @js.native
     def CreateDefaultMesh(name: String, scene: Scene): Mesh = js.native
   }
 }

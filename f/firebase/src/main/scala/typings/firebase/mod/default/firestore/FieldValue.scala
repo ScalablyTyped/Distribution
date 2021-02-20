@@ -1,12 +1,13 @@
 package typings.firebase.mod.default.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "firestore.FieldValue")
+@JSImport("firebase", "default.firestore.FieldValue")
 @js.native
-class FieldValue protected () extends js.Object {
+class FieldValue protected () extends StObject {
   
   /**
     * Returns true if this `FieldValue` is equal to the provided one.
@@ -17,9 +18,7 @@ class FieldValue protected () extends js.Object {
   def isEqual(other: typings.firebase.mod.firebase.firestore.FieldValue): Boolean = js.native
 }
 /* static members */
-@JSImport("firebase", "firestore.FieldValue")
-@js.native
-object FieldValue extends js.Object {
+object FieldValue {
   
   /**
     * Returns a special value that can be used with `set()` or `update()` that tells
@@ -31,6 +30,8 @@ object FieldValue extends js.Object {
     * @param elements The elements to remove from the array.
     * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
     */
+  @JSImport("firebase", "default.firestore.FieldValue.arrayRemove")
+  @js.native
   def arrayRemove(elements: js.Any*): typings.firebase.mod.firebase.firestore.FieldValue = js.native
   
   /**
@@ -44,11 +45,15 @@ object FieldValue extends js.Object {
     * @param elements The elements to union into the array.
     * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
     */
+  @JSImport("firebase", "default.firestore.FieldValue.arrayUnion")
+  @js.native
   def arrayUnion(elements: js.Any*): typings.firebase.mod.firebase.firestore.FieldValue = js.native
   
   /**
     * Returns a sentinel for use with `update()` to mark a field for deletion.
     */
+  @JSImport("firebase", "default.firestore.FieldValue.delete")
+  @js.native
   def delete(): typings.firebase.mod.firebase.firestore.FieldValue = js.native
   
   /**
@@ -68,11 +73,15 @@ object FieldValue extends js.Object {
     * @param n The value to increment by.
     * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
     */
+  @JSImport("firebase", "default.firestore.FieldValue.increment")
+  @js.native
   def increment(n: Double): typings.firebase.mod.firebase.firestore.FieldValue = js.native
   
   /**
     * Returns a sentinel used with `set()` or `update()` to include a
     * server-generated timestamp in the written data.
     */
+  @JSImport("firebase", "default.firestore.FieldValue.serverTimestamp")
+  @js.native
   def serverTimestamp(): typings.firebase.mod.firebase.firestore.FieldValue = js.native
 }

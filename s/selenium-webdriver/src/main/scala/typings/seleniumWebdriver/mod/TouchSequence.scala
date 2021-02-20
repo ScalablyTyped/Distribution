@@ -1,12 +1,13 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "TouchSequence")
 @js.native
-class TouchSequence protected () extends js.Object {
+class TouchSequence protected () extends StObject {
   /*
     * @param {!WebDriver} driver The driver instance to use.
     * @constructor

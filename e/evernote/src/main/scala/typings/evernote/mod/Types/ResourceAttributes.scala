@@ -1,13 +1,14 @@
 package typings.evernote.mod.Types
 
 import typings.evernote.anon.ApplicationData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.ResourceAttributes")
 @js.native
-class ResourceAttributes () extends js.Object {
+class ResourceAttributes () extends StObject {
   def this(args: ApplicationData) = this()
   
   var altitude: js.UndefOr[Double] = js.native

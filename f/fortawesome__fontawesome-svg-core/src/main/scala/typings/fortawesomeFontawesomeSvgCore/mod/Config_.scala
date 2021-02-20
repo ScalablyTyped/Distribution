@@ -2,12 +2,13 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
 import typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.nest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config_ extends js.Object {
+trait Config_ extends StObject {
   
   var autoA11y: Boolean = js.native
   
@@ -49,48 +50,36 @@ object Config_ {
   }
   
   @scala.inline
-  implicit class Config_Ops[Self <: Config_] (val x: Self) extends AnyVal {
+  implicit class Config_MutableBuilder[Self <: Config_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoA11y(value: Boolean): Self = StObject.set(x, "autoA11y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoAddCss(value: Boolean): Self = StObject.set(x, "autoAddCss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoReplaceSvg(value: Boolean | nest): Self = StObject.set(x, "autoReplaceSvg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoA11y(value: Boolean): Self = this.set("autoA11y", value.asInstanceOf[js.Any])
+    def setFamilyPrefix(value: IconPrefix): Self = StObject.set(x, "familyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAddCss(value: Boolean): Self = this.set("autoAddCss", value.asInstanceOf[js.Any])
+    def setKeepOriginalSource(value: Boolean): Self = StObject.set(x, "keepOriginalSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoReplaceSvg(value: Boolean | nest): Self = this.set("autoReplaceSvg", value.asInstanceOf[js.Any])
+    def setMeasurePerformance(value: Boolean): Self = StObject.set(x, "measurePerformance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyPrefix(value: IconPrefix): Self = this.set("familyPrefix", value.asInstanceOf[js.Any])
+    def setObserveMutations(value: Boolean): Self = StObject.set(x, "observeMutations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepOriginalSource(value: Boolean): Self = this.set("keepOriginalSource", value.asInstanceOf[js.Any])
+    def setReplacementClass(value: String): Self = StObject.set(x, "replacementClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasurePerformance(value: Boolean): Self = this.set("measurePerformance", value.asInstanceOf[js.Any])
+    def setSearchPseudoElements(value: Boolean): Self = StObject.set(x, "searchPseudoElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserveMutations(value: Boolean): Self = this.set("observeMutations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplacementClass(value: String): Self = this.set("replacementClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchPseudoElements(value: Boolean): Self = this.set("searchPseudoElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowMissingIcons(value: Boolean): Self = this.set("showMissingIcons", value.asInstanceOf[js.Any])
+    def setShowMissingIcons(value: Boolean): Self = StObject.set(x, "showMissingIcons", value.asInstanceOf[js.Any])
   }
 }

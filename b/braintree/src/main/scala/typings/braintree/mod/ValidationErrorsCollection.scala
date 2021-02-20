@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationErrorsCollection extends js.Object {
+trait ValidationErrorsCollection extends StObject {
   
   def deepErrors(): js.Array[ValidationError] = js.native
   
@@ -30,30 +31,18 @@ object ValidationErrorsCollection {
   }
   
   @scala.inline
-  implicit class ValidationErrorsCollectionOps[Self <: ValidationErrorsCollection] (val x: Self) extends AnyVal {
+  implicit class ValidationErrorsCollectionMutableBuilder[Self <: ValidationErrorsCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeepErrors(value: () => js.Array[ValidationError]): Self = StObject.set(x, "deepErrors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFor(value: String => ValidationErrorsCollection): Self = StObject.set(x, "for", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForIndex(value: Double => ValidationErrorsCollection): Self = StObject.set(x, "forIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeepErrors(value: () => js.Array[ValidationError]): Self = this.set("deepErrors", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFor(value: String => ValidationErrorsCollection): Self = this.set("for", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setForIndex(value: Double => ValidationErrorsCollection): Self = this.set("forIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOn(value: String => ValidationError): Self = this.set("on", js.Any.fromFunction1(value))
+    def setOn(value: String => ValidationError): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactNativeAuth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthorizeUrlParams extends js.Object {
+trait AuthorizeUrlParams extends StObject {
   
   var redirectUri: String = js.native
   
@@ -22,27 +23,15 @@ object AuthorizeUrlParams {
   }
   
   @scala.inline
-  implicit class AuthorizeUrlParamsOps[Self <: AuthorizeUrlParams] (val x: Self) extends AnyVal {
+  implicit class AuthorizeUrlParamsMutableBuilder[Self <: AuthorizeUrlParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRedirectUri(value: String): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

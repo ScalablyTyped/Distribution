@@ -7,12 +7,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.portrait
 import typings.arcgisJsApi.arcgisJsApiStrings.small
 import typings.arcgisJsApi.arcgisJsApiStrings.xlarge
 import typings.arcgisJsApi.arcgisJsApiStrings.xsmall
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BreakpointsOwner extends js.Object {
+trait BreakpointsOwner extends StObject {
   
   /**
     * A convenience property used for defining the breakpoints on the [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#height) and [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#width) of the view.
@@ -56,30 +57,18 @@ object BreakpointsOwner {
   }
   
   @scala.inline
-  implicit class BreakpointsOwnerOps[Self <: BreakpointsOwner] (val x: Self) extends AnyVal {
+  implicit class BreakpointsOwnerMutableBuilder[Self <: BreakpointsOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakpoints(value: BreakpointsOwnerBreakpoints): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "heightBreakpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrientation(value: landscape | portrait): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakpoints(value: BreakpointsOwnerBreakpoints): Self = this.set("breakpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeightBreakpoint(value: xsmall | small | medium | large | xlarge): Self = this.set("heightBreakpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: landscape | portrait): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidthBreakpoint(value: xsmall | small | medium | large | xlarge): Self = this.set("widthBreakpoint", value.asInstanceOf[js.Any])
+    def setWidthBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "widthBreakpoint", value.asInstanceOf[js.Any])
   }
 }

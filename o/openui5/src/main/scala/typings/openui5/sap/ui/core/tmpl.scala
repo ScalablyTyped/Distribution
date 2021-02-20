@@ -2,13 +2,12 @@ package typings.openui5.sap.ui.core
 
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.core.mvc.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.tmpl")
-@js.native
-object tmpl extends js.Object {
+object tmpl {
   
   @js.native
   trait DOMAttribute extends Element {

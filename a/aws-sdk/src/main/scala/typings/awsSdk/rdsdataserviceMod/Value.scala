@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsdataserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Value extends js.Object {
+trait Value extends StObject {
   
   /**
     * An array of column values.
@@ -66,81 +67,69 @@ object Value {
   }
   
   @scala.inline
-  implicit class ValueOps[Self <: Value] (val x: Self) extends AnyVal {
+  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayValues(value: ArrayValueList): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayValuesVarargs(value: Value*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
     
     @scala.inline
-    def setArrayValuesVarargs(value: Value*): Self = this.set("arrayValues", js.Array(value :_*))
+    def setBigIntValue(value: BoxedLong): Self = StObject.set(x, "bigIntValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayValues(value: ArrayValueList): Self = this.set("arrayValues", value.asInstanceOf[js.Any])
+    def setBigIntValueUndefined: Self = StObject.set(x, "bigIntValue", js.undefined)
     
     @scala.inline
-    def deleteArrayValues: Self = this.set("arrayValues", js.undefined)
+    def setBitValue(value: BoxedBoolean): Self = StObject.set(x, "bitValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigIntValue(value: BoxedLong): Self = this.set("bigIntValue", value.asInstanceOf[js.Any])
+    def setBitValueUndefined: Self = StObject.set(x, "bitValue", js.undefined)
     
     @scala.inline
-    def deleteBigIntValue: Self = this.set("bigIntValue", js.undefined)
+    def setBlobValue(value: _Blob): Self = StObject.set(x, "blobValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitValue(value: BoxedBoolean): Self = this.set("bitValue", value.asInstanceOf[js.Any])
+    def setBlobValueUndefined: Self = StObject.set(x, "blobValue", js.undefined)
     
     @scala.inline
-    def deleteBitValue: Self = this.set("bitValue", js.undefined)
+    def setDoubleValue(value: BoxedDouble): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlobValue(value: _Blob): Self = this.set("blobValue", value.asInstanceOf[js.Any])
+    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
     @scala.inline
-    def deleteBlobValue: Self = this.set("blobValue", js.undefined)
+    def setIntValue(value: BoxedInteger): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleValue(value: BoxedDouble): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     
     @scala.inline
-    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    def setIsNull(value: BoxedBoolean): Self = StObject.set(x, "isNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntValue(value: BoxedInteger): Self = this.set("intValue", value.asInstanceOf[js.Any])
+    def setIsNullUndefined: Self = StObject.set(x, "isNull", js.undefined)
     
     @scala.inline
-    def deleteIntValue: Self = this.set("intValue", js.undefined)
+    def setRealValue(value: BoxedFloat): Self = StObject.set(x, "realValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNull(value: BoxedBoolean): Self = this.set("isNull", value.asInstanceOf[js.Any])
+    def setRealValueUndefined: Self = StObject.set(x, "realValue", js.undefined)
     
     @scala.inline
-    def deleteIsNull: Self = this.set("isNull", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealValue(value: BoxedFloat): Self = this.set("realValue", value.asInstanceOf[js.Any])
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
     @scala.inline
-    def deleteRealValue: Self = this.set("realValue", js.undefined)
+    def setStructValue(value: StructValue): Self = StObject.set(x, "structValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
-    
-    @scala.inline
-    def setStructValue(value: StructValue): Self = this.set("structValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructValue: Self = this.set("structValue", js.undefined)
+    def setStructValueUndefined: Self = StObject.set(x, "structValue", js.undefined)
   }
 }

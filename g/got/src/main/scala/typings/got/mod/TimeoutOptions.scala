@@ -1,5 +1,6 @@
 package typings.got.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://github.com/sindresorhus/got#timeout
   */
 @js.native
-trait TimeoutOptions extends js.Object {
+trait TimeoutOptions extends StObject {
   
   /**
     * Starts when `lookup` completes (or when the socket is assigned if lookup does not apply
@@ -61,60 +62,48 @@ object TimeoutOptions {
   }
   
   @scala.inline
-  implicit class TimeoutOptionsOps[Self <: TimeoutOptions] (val x: Self) extends AnyVal {
+  implicit class TimeoutOptionsMutableBuilder[Self <: TimeoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLookup(value: Double): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect(value: Double): Self = this.set("connect", value.asInstanceOf[js.Any])
+    def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
     
     @scala.inline
-    def deleteConnect: Self = this.set("connect", js.undefined)
+    def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookup(value: Double): Self = this.set("lookup", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteLookup: Self = this.set("lookup", js.undefined)
+    def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: Double): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setSecureConnect(value: Double): Self = StObject.set(x, "secureConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: Double): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setSecureConnectUndefined: Self = StObject.set(x, "secureConnect", js.undefined)
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setSend(value: Double): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecureConnect(value: Double): Self = this.set("secureConnect", value.asInstanceOf[js.Any])
+    def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     
     @scala.inline
-    def deleteSecureConnect: Self = this.set("secureConnect", js.undefined)
+    def setSocket(value: Double): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSend(value: Double): Self = this.set("send", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSend: Self = this.set("send", js.undefined)
-    
-    @scala.inline
-    def setSocket(value: Double): Self = this.set("socket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocket: Self = this.set("socket", js.undefined)
+    def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
   }
 }

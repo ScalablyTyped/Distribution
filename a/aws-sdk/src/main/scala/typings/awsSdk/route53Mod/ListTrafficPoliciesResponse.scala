@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTrafficPoliciesResponse extends js.Object {
+trait ListTrafficPoliciesResponse extends StObject {
   
   /**
     * A flag that indicates whether there are more traffic policies to be listed. If the response was truncated, you can get the next group of traffic policies by submitting another ListTrafficPolicies request and specifying the value of TrafficPolicyIdMarker in the TrafficPolicyIdMarker request parameter.
@@ -41,33 +42,21 @@ object ListTrafficPoliciesResponse {
   }
   
   @scala.inline
-  implicit class ListTrafficPoliciesResponseOps[Self <: ListTrafficPoliciesResponse] (val x: Self) extends AnyVal {
+  implicit class ListTrafficPoliciesResponseMutableBuilder[Self <: ListTrafficPoliciesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrafficPolicyIdMarker(value: TrafficPolicyId): Self = StObject.set(x, "TrafficPolicyIdMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setTrafficPolicySummaries(value: TrafficPolicySummaries): Self = StObject.set(x, "TrafficPolicySummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficPolicyIdMarker(value: TrafficPolicyId): Self = this.set("TrafficPolicyIdMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficPolicySummariesVarargs(value: TrafficPolicySummary*): Self = this.set("TrafficPolicySummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrafficPolicySummaries(value: TrafficPolicySummaries): Self = this.set("TrafficPolicySummaries", value.asInstanceOf[js.Any])
+    def setTrafficPolicySummariesVarargs(value: TrafficPolicySummary*): Self = StObject.set(x, "TrafficPolicySummaries", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelStaticGetColor extends js.Object {
+trait RaphaelStaticGetColor extends StObject {
   
   /**
     * On each call returns next colour in the spectrum. To reset it back to red call

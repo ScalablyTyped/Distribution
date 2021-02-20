@@ -6,14 +6,15 @@ import typings.reactRelay.entryPointTypesMod.PreloadedEntryPoint
 import typings.reactRelay.helpersMod.GetEntryPointComponentFromEntryPoint
 import typings.reactRelay.helpersMod.GetEntryPointParamsFromEntryPoint
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-relay/lib/relay-experimental/loadEntryPoint", JSImport.Namespace)
-@js.native
-object loadEntryPointMod extends js.Object {
+object loadEntryPointMod {
   
+  @JSImport("react-relay/lib/relay-experimental/loadEntryPoint", "loadEntryPoint")
+  @js.native
   def loadEntryPoint[TEntryPoint](
     environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions[Record[String, _]]],
     entryPoint: TEntryPoint,

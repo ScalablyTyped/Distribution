@@ -1,5 +1,6 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * image cutter
   */
 @js.native
-trait ImageCutterOption extends js.Object {
+trait ImageCutterOption extends StObject {
   
   var coverColor: js.UndefOr[String] = js.native
   
@@ -37,72 +38,60 @@ object ImageCutterOption {
   }
   
   @scala.inline
-  implicit class ImageCutterOptionOps[Self <: ImageCutterOption] (val x: Self) extends AnyVal {
+  implicit class ImageCutterOptionMutableBuilder[Self <: ImageCutterOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoverColor(value: String): Self = StObject.set(x, "coverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverColorUndefined: Self = StObject.set(x, "coverColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoverOpacity(value: Double): Self = StObject.set(x, "coverOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverColor(value: String): Self = this.set("coverColor", value.asInstanceOf[js.Any])
+    def setCoverOpacityUndefined: Self = StObject.set(x, "coverOpacity", js.undefined)
     
     @scala.inline
-    def deleteCoverColor: Self = this.set("coverColor", js.undefined)
+    def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverOpacity(value: Double): Self = this.set("coverOpacity", value.asInstanceOf[js.Any])
+    def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
     
     @scala.inline
-    def deleteCoverOpacity: Self = this.set("coverOpacity", js.undefined)
+    def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHeight(value: Double): Self = this.set("defaultHeight", value.asInstanceOf[js.Any])
+    def setDefaultWidthUndefined: Self = StObject.set(x, "defaultWidth", js.undefined)
     
     @scala.inline
-    def deleteDefaultHeight: Self = this.set("defaultHeight", js.undefined)
+    def setFixedRatio(value: Boolean): Self = StObject.set(x, "fixedRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultWidth(value: Double): Self = this.set("defaultWidth", value.asInstanceOf[js.Any])
+    def setFixedRatioUndefined: Self = StObject.set(x, "fixedRatio", js.undefined)
     
     @scala.inline
-    def deleteDefaultWidth: Self = this.set("defaultWidth", js.undefined)
+    def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedRatio(value: Boolean): Self = this.set("fixedRatio", value.asInstanceOf[js.Any])
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteFixedRatio: Self = this.set("fixedRatio", js.undefined)
+    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: String): Self = this.set("get", value.asInstanceOf[js.Any])
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
-    
-    @scala.inline
-    def setPost(value: String): Self = this.set("post", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePost: Self = this.set("post", js.undefined)
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.anon.PartialFont
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotNumber extends js.Object {
+trait PlotNumber extends StObject {
   
   var font: PartialFont = js.native
   
@@ -25,30 +26,18 @@ object PlotNumber {
   }
   
   @scala.inline
-  implicit class PlotNumberOps[Self <: PlotNumber] (val x: Self) extends AnyVal {
+  implicit class PlotNumberMutableBuilder[Self <: PlotNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: PartialFont): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueformat(value: String): Self = this.set("valueformat", value.asInstanceOf[js.Any])
+    def setValueformat(value: String): Self = StObject.set(x, "valueformat", value.asInstanceOf[js.Any])
   }
 }

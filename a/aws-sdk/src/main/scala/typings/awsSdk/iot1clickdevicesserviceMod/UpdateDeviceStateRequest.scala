@@ -1,11 +1,12 @@
 package typings.awsSdk.iot1clickdevicesserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDeviceStateRequest extends js.Object {
+trait UpdateDeviceStateRequest extends StObject {
   
   /**
     * The unique identifier of the device.
@@ -27,27 +28,15 @@ object UpdateDeviceStateRequest {
   }
   
   @scala.inline
-  implicit class UpdateDeviceStateRequestOps[Self <: UpdateDeviceStateRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDeviceStateRequestMutableBuilder[Self <: UpdateDeviceStateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceId(value: string): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

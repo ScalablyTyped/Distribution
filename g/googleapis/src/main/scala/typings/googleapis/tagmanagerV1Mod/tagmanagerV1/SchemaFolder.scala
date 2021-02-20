@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Google Tag Manager Folder.
   */
 @js.native
-trait SchemaFolder extends js.Object {
+trait SchemaFolder extends StObject {
   
   /**
     * GTM Account ID.
@@ -45,48 +46,36 @@ object SchemaFolder {
   }
   
   @scala.inline
-  implicit class SchemaFolderOps[Self <: SchemaFolder] (val x: Self) extends AnyVal {
+  implicit class SchemaFolderMutableBuilder[Self <: SchemaFolder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderId(value: String): Self = this.set("folderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFolderId: Self = this.set("folderId", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

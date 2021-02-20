@@ -19,13 +19,14 @@ import typings.officeJsPreview.officeJsPreviewStrings.ThickBetweenThin
 import typings.officeJsPreview.officeJsPreviewStrings.ThickThin
 import typings.officeJsPreview.officeJsPreviewStrings.ThinThick
 import typings.officeJsPreview.officeJsPreviewStrings.ThinThin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
 @js.native
-trait ShapeLineFormatData extends js.Object {
+trait ShapeLineFormatData extends StObject {
   
   /**
     *
@@ -86,56 +87,44 @@ object ShapeLineFormatData {
   }
   
   @scala.inline
-  implicit class ShapeLineFormatDataOps[Self <: ShapeLineFormatData] (val x: Self) extends AnyVal {
+  implicit class ShapeLineFormatDataMutableBuilder[Self <: ShapeLineFormatData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
     def setDashStyle(
       value: ShapeLineDashStyle | Dash | DashDot | DashDotDot | LongDash | LongDashDot | RoundDot | Solid | SquareDot | LongDashDotDot | SystemDash | SystemDot | SystemDashDot
-    ): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     @scala.inline
-    def setStyle(value: ShapeLineStyle | Single | ThickBetweenThin | ThickThin | ThinThick | ThinThin): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: ShapeLineStyle | Single | ThickBetweenThin | ThickThin | ThinThick | ThinThin): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setTransparency(value: Double): Self = this.set("transparency", value.asInstanceOf[js.Any])
+    def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransparency: Self = this.set("transparency", js.undefined)
+    def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

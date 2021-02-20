@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,42 +56,30 @@ object ParamsResourcePeopleGet {
   }
   
   @scala.inline
-  implicit class ParamsResourcePeopleGetOps[Self <: ParamsResourcePeopleGet] (val x: Self) extends AnyVal {
+  implicit class ParamsResourcePeopleGetMutableBuilder[Self <: ParamsResourcePeopleGet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPersonFields(value: String): Self = StObject.set(x, "personFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setPersonFieldsUndefined: Self = StObject.set(x, "personFields", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setRequestMaskDotincludeField(value: String): Self = StObject.set(x, "requestMask.includeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonFields(value: String): Self = this.set("personFields", value.asInstanceOf[js.Any])
+    def setRequestMaskDotincludeFieldUndefined: Self = StObject.set(x, "requestMask.includeField", js.undefined)
     
     @scala.inline
-    def deletePersonFields: Self = this.set("personFields", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestMaskDotincludeField(value: String): Self = this.set("requestMask.includeField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestMaskDotincludeField: Self = this.set("requestMask.includeField", js.undefined)
-    
-    @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

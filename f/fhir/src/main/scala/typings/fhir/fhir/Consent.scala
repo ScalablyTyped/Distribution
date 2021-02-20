@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,180 +136,168 @@ object Consent {
   }
   
   @scala.inline
-  implicit class ConsentOps[Self <: Consent] (val x: Self) extends AnyVal {
+  implicit class ConsentMutableBuilder[Self <: Consent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionVarargs(value: CodeableConcept*): Self = StObject.set(x, "action", js.Array(value :_*))
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setActor(value: js.Array[ConsentActor]): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
     @scala.inline
-    def set_dateTime(value: Element): Self = this.set("_dateTime", value.asInstanceOf[js.Any])
+    def setActorVarargs(value: ConsentActor*): Self = StObject.set(x, "actor", js.Array(value :_*))
     
     @scala.inline
-    def delete_dateTime: Self = this.set("_dateTime", js.undefined)
+    def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_policyRule(value: Element): Self = this.set("_policyRule", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def delete_policyRule: Self = this.set("_policyRule", js.undefined)
+    def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value :_*))
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setConsentingParty(value: js.Array[Reference]): Self = StObject.set(x, "consentingParty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setConsentingPartyUndefined: Self = StObject.set(x, "consentingParty", js.undefined)
     
     @scala.inline
-    def setActionVarargs(value: CodeableConcept*): Self = this.set("action", js.Array(value :_*))
+    def setConsentingPartyVarargs(value: Reference*): Self = StObject.set(x, "consentingParty", js.Array(value :_*))
     
     @scala.inline
-    def setAction(value: js.Array[CodeableConcept]): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[ConsentData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setDataPeriod(value: Period): Self = StObject.set(x, "dataPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActorVarargs(value: ConsentActor*): Self = this.set("actor", js.Array(value :_*))
+    def setDataPeriodUndefined: Self = StObject.set(x, "dataPeriod", js.undefined)
     
     @scala.inline
-    def setActor(value: js.Array[ConsentActor]): Self = this.set("actor", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteActor: Self = this.set("actor", js.undefined)
+    def setDataVarargs(value: ConsentData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setCategoryVarargs(value: CodeableConcept*): Self = this.set("category", js.Array(value :_*))
+    def setDateTime(value: dateTime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: js.Array[CodeableConcept]): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setExcept(value: js.Array[ConsentExcept]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsentingPartyVarargs(value: Reference*): Self = this.set("consentingParty", js.Array(value :_*))
+    def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
     
     @scala.inline
-    def setConsentingParty(value: js.Array[Reference]): Self = this.set("consentingParty", value.asInstanceOf[js.Any])
+    def setExceptVarargs(value: ConsentExcept*): Self = StObject.set(x, "except", js.Array(value :_*))
     
     @scala.inline
-    def deleteConsentingParty: Self = this.set("consentingParty", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: ConsentData*): Self = this.set("data", js.Array(value :_*))
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[ConsentData]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setOrganization(value: js.Array[Reference]): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
     @scala.inline
-    def setDataPeriod(value: Period): Self = this.set("dataPeriod", value.asInstanceOf[js.Any])
+    def setOrganizationVarargs(value: Reference*): Self = StObject.set(x, "organization", js.Array(value :_*))
     
     @scala.inline
-    def deleteDataPeriod: Self = this.set("dataPeriod", js.undefined)
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTime(value: dateTime): Self = this.set("dateTime", value.asInstanceOf[js.Any])
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateTime: Self = this.set("dateTime", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def setExceptVarargs(value: ConsentExcept*): Self = this.set("except", js.Array(value :_*))
+    def setPolicy(value: js.Array[ConsentPolicy]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcept(value: js.Array[ConsentExcept]): Self = this.set("except", value.asInstanceOf[js.Any])
+    def setPolicyRule(value: uri): Self = StObject.set(x, "policyRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcept: Self = this.set("except", js.undefined)
+    def setPolicyRuleUndefined: Self = StObject.set(x, "policyRule", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setPolicyVarargs(value: ConsentPolicy*): Self = StObject.set(x, "policy", js.Array(value :_*))
     
     @scala.inline
-    def setOrganizationVarargs(value: Reference*): Self = this.set("organization", js.Array(value :_*))
+    def setPurpose(value: js.Array[Coding]): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: js.Array[Reference]): Self = this.set("organization", value.asInstanceOf[js.Any])
+    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
     @scala.inline
-    def deleteOrganization: Self = this.set("organization", js.undefined)
+    def setPurposeVarargs(value: Coding*): Self = StObject.set(x, "purpose", js.Array(value :_*))
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setSecurityLabel(value: js.Array[Coding]): Self = StObject.set(x, "securityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setSecurityLabelUndefined: Self = StObject.set(x, "securityLabel", js.undefined)
     
     @scala.inline
-    def setPolicyVarargs(value: ConsentPolicy*): Self = this.set("policy", js.Array(value :_*))
+    def setSecurityLabelVarargs(value: Coding*): Self = StObject.set(x, "securityLabel", js.Array(value :_*))
     
     @scala.inline
-    def setPolicy(value: js.Array[ConsentPolicy]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def setSourceAttachment(value: Attachment): Self = StObject.set(x, "sourceAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def setSourceAttachmentUndefined: Self = StObject.set(x, "sourceAttachment", js.undefined)
     
     @scala.inline
-    def setPolicyRule(value: uri): Self = this.set("policyRule", value.asInstanceOf[js.Any])
+    def setSourceIdentifier(value: Identifier): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolicyRule: Self = this.set("policyRule", js.undefined)
+    def setSourceIdentifierUndefined: Self = StObject.set(x, "sourceIdentifier", js.undefined)
     
     @scala.inline
-    def setPurposeVarargs(value: Coding*): Self = this.set("purpose", js.Array(value :_*))
+    def setSourceReference(value: Reference): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurpose(value: js.Array[Coding]): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
     
     @scala.inline
-    def deletePurpose: Self = this.set("purpose", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityLabelVarargs(value: Coding*): Self = this.set("securityLabel", js.Array(value :_*))
+    def set_dateTime(value: Element): Self = StObject.set(x, "_dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityLabel(value: js.Array[Coding]): Self = this.set("securityLabel", value.asInstanceOf[js.Any])
+    def set_dateTimeUndefined: Self = StObject.set(x, "_dateTime", js.undefined)
     
     @scala.inline
-    def deleteSecurityLabel: Self = this.set("securityLabel", js.undefined)
+    def set_policyRule(value: Element): Self = StObject.set(x, "_policyRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceAttachment(value: Attachment): Self = this.set("sourceAttachment", value.asInstanceOf[js.Any])
+    def set_policyRuleUndefined: Self = StObject.set(x, "_policyRule", js.undefined)
     
     @scala.inline
-    def deleteSourceAttachment: Self = this.set("sourceAttachment", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceIdentifier(value: Identifier): Self = this.set("sourceIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceIdentifier: Self = this.set("sourceIdentifier", js.undefined)
-    
-    @scala.inline
-    def setSourceReference(value: Reference): Self = this.set("sourceReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceReference: Self = this.set("sourceReference", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

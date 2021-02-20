@@ -13,13 +13,14 @@ import typings.winrtUwp.winrtUwpStrings.availablechanged
 import typings.winrtUwp.winrtUwpStrings.cameraintrinsicschanged
 import typings.winrtUwp.winrtUwpStrings.propertieschanged
 import typings.winrtUwp.winrtUwpStrings.videoprofilechanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A frame source that provides color frames. */
 @js.native
-trait PerceptionColorFrameSource extends js.Object {
+trait PerceptionColorFrameSource extends StObject {
   
   /**
     * Attempts to acquire Controller Mode on the color frame source.
@@ -63,7 +64,8 @@ trait PerceptionColorFrameSource extends js.Object {
   
   var deviceId: js.Any = js.native
   
-   /* unmapped type */ /** Gets a string value indicating the kind of physical device that generates the color frames for this source. */
+  /* unmapped type */
+  /** Gets a string value indicating the kind of physical device that generates the color frames for this source. */
   var deviceKind: String = js.native
   
   /** Gets a string value indicating the display name of the color frame source. */

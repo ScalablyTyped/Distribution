@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDataflow.anon.Accesstoken
 import typings.maximMazurokGapiClientDataflow.anon.Alt
 import typings.maximMazurokGapiClientDataflow.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateVersionsResource extends js.Object {
+trait TemplateVersionsResource extends StObject {
   
   /** Creates a new Template with TemplateVersion. Requires project_id(projects) and template display_name(catalogTemplates). The template display_name is set by the user. */
   def create(request: Accesstoken): Request[TemplateVersion] = js.native

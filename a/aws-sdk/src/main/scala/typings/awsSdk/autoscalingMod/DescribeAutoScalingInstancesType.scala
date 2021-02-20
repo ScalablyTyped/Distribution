@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAutoScalingInstancesType extends js.Object {
+trait DescribeAutoScalingInstancesType extends StObject {
   
   /**
     * The IDs of the instances. You can specify up to MaxRecords IDs. If you omit this parameter, all Auto Scaling instances are described. If you specify an ID that does not exist, it is ignored with no error.
@@ -31,39 +32,27 @@ object DescribeAutoScalingInstancesType {
   }
   
   @scala.inline
-  implicit class DescribeAutoScalingInstancesTypeOps[Self <: DescribeAutoScalingInstancesType] (val x: Self) extends AnyVal {
+  implicit class DescribeAutoScalingInstancesTypeMutableBuilder[Self <: DescribeAutoScalingInstancesType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = this.set("InstanceIds", js.Array(value :_*))
+    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceIds(value: InstanceIds): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

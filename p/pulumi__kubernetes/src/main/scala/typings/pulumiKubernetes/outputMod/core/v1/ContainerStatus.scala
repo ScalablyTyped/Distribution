@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ContainerStatus contains details for the current status of this container.
   */
 @js.native
-trait ContainerStatus extends js.Object {
+trait ContainerStatus extends StObject {
   
   /**
     * Container's ID in the format 'docker://<container_id>'.
@@ -74,45 +75,33 @@ object ContainerStatus {
   }
   
   @scala.inline
-  implicit class ContainerStatusOps[Self <: ContainerStatus] (val x: Self) extends AnyVal {
+  implicit class ContainerStatusMutableBuilder[Self <: ContainerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerID(value: String): Self = StObject.set(x, "containerID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageID(value: String): Self = StObject.set(x, "imageID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerID(value: String): Self = this.set("containerID", value.asInstanceOf[js.Any])
+    def setLastState(value: ContainerState): Self = StObject.set(x, "lastState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageID(value: String): Self = this.set("imageID", value.asInstanceOf[js.Any])
+    def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastState(value: ContainerState): Self = this.set("lastState", value.asInstanceOf[js.Any])
+    def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReady(value: Boolean): Self = this.set("ready", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestartCount(value: Double): Self = this.set("restartCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStarted(value: Boolean): Self = this.set("started", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: ContainerState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: ContainerState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

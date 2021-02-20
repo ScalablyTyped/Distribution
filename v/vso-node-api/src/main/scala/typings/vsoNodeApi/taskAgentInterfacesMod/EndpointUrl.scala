@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointUrl extends js.Object {
+trait EndpointUrl extends StObject {
   
   var dependsOn: DependsOn = js.native
   
@@ -26,33 +27,21 @@ object EndpointUrl {
   }
   
   @scala.inline
-  implicit class EndpointUrlOps[Self <: EndpointUrl] (val x: Self) extends AnyVal {
+  implicit class EndpointUrlMutableBuilder[Self <: EndpointUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependsOn(value: DependsOn): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHelpText(value: String): Self = StObject.set(x, "helpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependsOn(value: DependsOn): Self = this.set("dependsOn", value.asInstanceOf[js.Any])
+    def setIsVisible(value: String): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHelpText(value: String): Self = this.set("helpText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsVisible(value: String): Self = this.set("isVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

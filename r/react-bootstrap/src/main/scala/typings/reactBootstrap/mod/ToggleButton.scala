@@ -1,8 +1,6 @@
 package typings.reactBootstrap.mod
 
-import typings.react.mod.Component
-import typings.reactBootstrap.buttonMod.ButtonProps
-import typings.reactBootstrap.toggleButtonMod.ToggleButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-bootstrap", "ToggleButton")
 @js.native
 class ToggleButton ()
-  extends Component[ToggleButtonProps with ButtonProps, js.Object, js.Any]
+  extends typings.reactBootstrap.libMod.ToggleButton

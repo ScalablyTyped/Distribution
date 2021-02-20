@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Codehead extends js.Object {
+trait Codehead extends StObject {
   
   var code_head: js.UndefOr[String] = js.native
   
@@ -62,75 +63,63 @@ object Codehead {
   }
   
   @scala.inline
-  implicit class CodeheadOps[Self <: Codehead] (val x: Self) extends AnyVal {
+  implicit class CodeheadMutableBuilder[Self <: Codehead] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode_head(value: String): Self = StObject.set(x, "code_head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode_headUndefined: Self = StObject.set(x, "code_head", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDot_shiftY(value: Double): Self = StObject.set(x, "dot_shiftY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDot_shiftY(value: Double): Self = this.set("dot_shiftY", value.asInstanceOf[js.Any])
+    def setFlag(value: Boolean): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlag(value: Boolean): Self = this.set("flag", value.asInstanceOf[js.Any])
+    def setGracenote_stem_down_extension(value: Double): Self = StObject.set(x, "gracenote_stem_down_extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGracenote_stem_down_extension(value: Double): Self = this.set("gracenote_stem_down_extension", value.asInstanceOf[js.Any])
+    def setGracenote_stem_up_extension(value: Double): Self = StObject.set(x, "gracenote_stem_up_extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGracenote_stem_up_extension(value: Double): Self = this.set("gracenote_stem_up_extension", value.asInstanceOf[js.Any])
+    def setHead_width(value: Double): Self = StObject.set(x, "head_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead_width(value: Double): Self = this.set("head_width", value.asInstanceOf[js.Any])
+    def setLine_above(value: Double): Self = StObject.set(x, "line_above", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine_above(value: Double): Self = this.set("line_above", value.asInstanceOf[js.Any])
+    def setLine_below(value: Double): Self = StObject.set(x, "line_below", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine_below(value: Double): Self = this.set("line_below", value.asInstanceOf[js.Any])
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStem(value: Boolean): Self = this.set("stem", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setStem_down_extension(value: Double): Self = this.set("stem_down_extension", value.asInstanceOf[js.Any])
+    def setRest(value: Boolean): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStem_offset(value: Double): Self = this.set("stem_offset", value.asInstanceOf[js.Any])
+    def setRestUndefined: Self = StObject.set(x, "rest", js.undefined)
     
     @scala.inline
-    def setStem_up_extension(value: Double): Self = this.set("stem_up_extension", value.asInstanceOf[js.Any])
+    def setStem(value: Boolean): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabnote_stem_down_extension(value: Double): Self = this.set("tabnote_stem_down_extension", value.asInstanceOf[js.Any])
+    def setStem_down_extension(value: Double): Self = StObject.set(x, "stem_down_extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabnote_stem_up_extension(value: Double): Self = this.set("tabnote_stem_up_extension", value.asInstanceOf[js.Any])
+    def setStem_offset(value: Double): Self = StObject.set(x, "stem_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode_head(value: String): Self = this.set("code_head", value.asInstanceOf[js.Any])
+    def setStem_up_extension(value: Double): Self = StObject.set(x, "stem_up_extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode_head: Self = this.set("code_head", js.undefined)
+    def setTabnote_stem_down_extension(value: Double): Self = StObject.set(x, "tabnote_stem_down_extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setRest(value: Boolean): Self = this.set("rest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRest: Self = this.set("rest", js.undefined)
+    def setTabnote_stem_up_extension(value: Double): Self = StObject.set(x, "tabnote_stem_up_extension", value.asInstanceOf[js.Any])
   }
 }

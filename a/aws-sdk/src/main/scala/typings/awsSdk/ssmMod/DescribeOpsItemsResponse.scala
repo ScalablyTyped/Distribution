@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeOpsItemsResponse extends js.Object {
+trait DescribeOpsItemsResponse extends StObject {
   
   /**
     * The token for the next set of items to return. Use this token to get the next set of results.
@@ -26,33 +27,21 @@ object DescribeOpsItemsResponse {
   }
   
   @scala.inline
-  implicit class DescribeOpsItemsResponseOps[Self <: DescribeOpsItemsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeOpsItemsResponseMutableBuilder[Self <: DescribeOpsItemsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpsItemSummaries(value: OpsItemSummaries): Self = StObject.set(x, "OpsItemSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setOpsItemSummariesUndefined: Self = StObject.set(x, "OpsItemSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setOpsItemSummariesVarargs(value: OpsItemSummary*): Self = this.set("OpsItemSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setOpsItemSummaries(value: OpsItemSummaries): Self = this.set("OpsItemSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpsItemSummaries: Self = this.set("OpsItemSummaries", js.undefined)
+    def setOpsItemSummariesVarargs(value: OpsItemSummary*): Self = StObject.set(x, "OpsItemSummaries", js.Array(value :_*))
   }
 }

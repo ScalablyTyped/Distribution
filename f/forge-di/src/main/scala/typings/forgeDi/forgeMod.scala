@@ -5,16 +5,21 @@ import typings.forgeDi.argumentsMod.Arguments
 import typings.forgeDi.configMod.Config
 import typings.forgeDi.inspectorMod.Inspector
 import typings.forgeDi.modeMod.Mode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("forge-di/dist/Forge", JSImport.Namespace)
-@js.native
-object forgeMod extends js.Object {
+object forgeMod {
+  
+  @JSImport("forge-di/dist/Forge", JSImport.Default)
+  @js.native
+  class default () extends Forge {
+    def this(config: Config) = this()
+  }
   
   @js.native
-  trait Forge extends js.Object {
+  trait Forge extends StObject {
     
     def bind(name: String): typings.forgeDi.bindingMod.default = js.native
     
@@ -51,10 +56,5 @@ object forgeMod extends js.Object {
     ): js.Any = js.native
     
     def unbind(name: String): Double = js.native
-  }
-  
-  @js.native
-  class default () extends Forge {
-    def this(config: Config) = this()
   }
 }

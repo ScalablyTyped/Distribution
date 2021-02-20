@@ -4,16 +4,18 @@ import typings.materialBase.componentMod.MDCComponent
 import typings.materialSnackbar.foundationMod.MDCSnackbarFoundation
 import typings.materialSnackbar.typesMod.MDCSnackbarAnnouncerFactory
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/snackbar/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/snackbar/component", "MDCSnackbar")
   @js.native
-  class MDCSnackbar () extends MDCComponent[MDCSnackbarFoundation] {
+  class MDCSnackbar protected () extends MDCComponent[MDCSnackbarFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCSnackbarFoundation, args: js.Any*) = this()
     
     def actionButtonText: String = js.native
     def actionButtonText_=(actionButtonText: String): Unit = js.native
@@ -43,9 +45,10 @@ object componentMod extends js.Object {
     def timeoutMs_=(timeoutMs: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCSnackbar extends js.Object {
+  object MDCSnackbar {
     
+    @JSImport("@material/snackbar/component", "MDCSnackbar.attachTo")
+    @js.native
     def attachTo(root: Element): MDCSnackbar = js.native
   }
 }

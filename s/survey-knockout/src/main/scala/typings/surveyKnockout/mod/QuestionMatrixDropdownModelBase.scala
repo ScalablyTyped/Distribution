@@ -1,6 +1,7 @@
 package typings.surveyKnockout.mod
 
 import typings.surveyKnockout.anon.Calculations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -240,11 +241,19 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   val visibleTotalRow: MatrixDropdownRowModelBase = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
-@js.native
-object QuestionMatrixDropdownModelBase extends js.Object {
+object QuestionMatrixDropdownModelBase {
   
+  @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase.addDefaultColumns")
+  @js.native
   def addDefaultColumns(matrix: QuestionMatrixDropdownModelBase): Unit = js.native
   
-  var defaultCellType: String = js.native
+  @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase.defaultCellType")
+  @js.native
+  def defaultCellType: String = js.native
+  @scala.inline
+  def defaultCellType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCellType")(x.asInstanceOf[js.Any])
 }

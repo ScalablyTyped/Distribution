@@ -1,19 +1,21 @@
 package typings.navermaps.global.naver.maps
 
 import typings.navermaps.naver.maps.drawing.DrawingOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("naver.maps.drawing")
-@js.native
-object drawing extends js.Object {
+object drawing {
   
   // Sub module: drawing
+  @JSGlobal("naver.maps.drawing")
+  @js.native
   def apply(): Unit = js.native
   
+  @JSGlobal("naver.maps.drawing.DrawingEvent")
   @js.native
-  object DrawingEvent extends js.Object {
+  object DrawingEvent extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.drawing.DrawingEvent with Double] = js.native
@@ -31,14 +33,16 @@ object drawing extends js.Object {
     /* 5 */ val Selected: typings.navermaps.naver.maps.drawing.DrawingEvent.Selected with Double = js.native
   }
   
+  @JSGlobal("naver.maps.drawing.DrawingManager")
   @js.native
   class DrawingManager ()
     extends typings.navermaps.naver.maps.drawing.DrawingManager {
     def this(options: DrawingOptions) = this()
   }
   
+  @JSGlobal("naver.maps.drawing.DrawingMode")
   @js.native
-  object DrawingMode extends js.Object {
+  object DrawingMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.drawing.DrawingMode with Double] = js.native
@@ -58,8 +62,9 @@ object drawing extends js.Object {
     /* 0 */ val RECTANGLE: typings.navermaps.naver.maps.drawing.DrawingMode.RECTANGLE with Double = js.native
   }
   
+  @JSGlobal("naver.maps.drawing.DrawingStyle")
   @js.native
-  object DrawingStyle extends js.Object {
+  object DrawingStyle extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.drawing.DrawingStyle with Double] = js.native

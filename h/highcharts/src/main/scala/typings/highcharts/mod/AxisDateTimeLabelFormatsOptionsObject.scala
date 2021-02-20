@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisDateTimeLabelFormatsOptionsObject extends js.Object {
+trait AxisDateTimeLabelFormatsOptionsObject extends StObject {
   
   var main: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object AxisDateTimeLabelFormatsOptionsObject {
   }
   
   @scala.inline
-  implicit class AxisDateTimeLabelFormatsOptionsObjectOps[Self <: AxisDateTimeLabelFormatsOptionsObject] (val x: Self) extends AnyVal {
+  implicit class AxisDateTimeLabelFormatsOptionsObjectMutableBuilder[Self <: AxisDateTimeLabelFormatsOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMain(value: String): Self = this.set("main", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMain: Self = this.set("main", js.undefined)
-    
-    @scala.inline
-    def setRange(value: Boolean): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

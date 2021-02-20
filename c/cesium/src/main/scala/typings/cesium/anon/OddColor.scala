@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Property
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OddColor extends js.Object {
+trait OddColor extends StObject {
   
   var evenColor: js.UndefOr[Property] = js.native
   
@@ -27,48 +28,36 @@ object OddColor {
   }
   
   @scala.inline
-  implicit class OddColorOps[Self <: OddColor] (val x: Self) extends AnyVal {
+  implicit class OddColorMutableBuilder[Self <: OddColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvenColor(value: Property): Self = StObject.set(x, "evenColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvenColorUndefined: Self = StObject.set(x, "evenColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOddColor(value: Property): Self = StObject.set(x, "oddColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvenColor(value: Property): Self = this.set("evenColor", value.asInstanceOf[js.Any])
+    def setOddColorUndefined: Self = StObject.set(x, "oddColor", js.undefined)
     
     @scala.inline
-    def deleteEvenColor: Self = this.set("evenColor", js.undefined)
+    def setOffset(value: Property): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOddColor(value: Property): Self = this.set("oddColor", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteOddColor: Self = this.set("oddColor", js.undefined)
+    def setOrientation(value: Property): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Property): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setRepeat(value: Property): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Property): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
-    
-    @scala.inline
-    def setRepeat(value: Property): Self = this.set("repeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
   }
 }

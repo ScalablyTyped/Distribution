@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a homogeneous matrix by four homogeneous lines. */
 @js.native
-trait HomogenMatrix4 extends js.Object {
+trait HomogenMatrix4 extends StObject {
   
   var Line1: HomogenMatrixLine4 = js.native
   
@@ -30,30 +31,18 @@ object HomogenMatrix4 {
   }
   
   @scala.inline
-  implicit class HomogenMatrix4Ops[Self <: HomogenMatrix4] (val x: Self) extends AnyVal {
+  implicit class HomogenMatrix4MutableBuilder[Self <: HomogenMatrix4] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLine1(value: HomogenMatrixLine4): Self = StObject.set(x, "Line1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLine2(value: HomogenMatrixLine4): Self = StObject.set(x, "Line2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLine3(value: HomogenMatrixLine4): Self = StObject.set(x, "Line3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine1(value: HomogenMatrixLine4): Self = this.set("Line1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine2(value: HomogenMatrixLine4): Self = this.set("Line2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine3(value: HomogenMatrixLine4): Self = this.set("Line3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine4(value: HomogenMatrixLine4): Self = this.set("Line4", value.asInstanceOf[js.Any])
+    def setLine4(value: HomogenMatrixLine4): Self = StObject.set(x, "Line4", value.asInstanceOf[js.Any])
   }
 }

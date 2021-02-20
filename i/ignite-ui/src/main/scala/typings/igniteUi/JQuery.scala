@@ -2322,12 +2322,13 @@ import typings.igniteUi.igniteUiStrings.zoomWindowMoveDistance
 import typings.igniteUi.igniteUiStrings.zoomable
 import typings.std.Date
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   @JSName("data")
   def data_igBaseChart(propertyName: igBaseChart): IgBaseChartMethods = js.native

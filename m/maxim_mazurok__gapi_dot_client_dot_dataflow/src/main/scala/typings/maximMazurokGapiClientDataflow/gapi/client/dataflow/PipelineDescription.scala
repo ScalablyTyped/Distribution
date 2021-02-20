@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PipelineDescription extends js.Object {
+trait PipelineDescription extends StObject {
   
   /** Pipeline level display data. */
   var displayData: js.UndefOr[js.Array[DisplayData]] = js.native
@@ -25,45 +26,33 @@ object PipelineDescription {
   }
   
   @scala.inline
-  implicit class PipelineDescriptionOps[Self <: PipelineDescription] (val x: Self) extends AnyVal {
+  implicit class PipelineDescriptionMutableBuilder[Self <: PipelineDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayData(value: js.Array[DisplayData]): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayDataVarargs(value: DisplayData*): Self = StObject.set(x, "displayData", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayDataVarargs(value: DisplayData*): Self = this.set("displayData", js.Array(value :_*))
+    def setExecutionPipelineStage(value: js.Array[ExecutionStageSummary]): Self = StObject.set(x, "executionPipelineStage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayData(value: js.Array[DisplayData]): Self = this.set("displayData", value.asInstanceOf[js.Any])
+    def setExecutionPipelineStageUndefined: Self = StObject.set(x, "executionPipelineStage", js.undefined)
     
     @scala.inline
-    def deleteDisplayData: Self = this.set("displayData", js.undefined)
+    def setExecutionPipelineStageVarargs(value: ExecutionStageSummary*): Self = StObject.set(x, "executionPipelineStage", js.Array(value :_*))
     
     @scala.inline
-    def setExecutionPipelineStageVarargs(value: ExecutionStageSummary*): Self = this.set("executionPipelineStage", js.Array(value :_*))
+    def setOriginalPipelineTransform(value: js.Array[TransformSummary]): Self = StObject.set(x, "originalPipelineTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionPipelineStage(value: js.Array[ExecutionStageSummary]): Self = this.set("executionPipelineStage", value.asInstanceOf[js.Any])
+    def setOriginalPipelineTransformUndefined: Self = StObject.set(x, "originalPipelineTransform", js.undefined)
     
     @scala.inline
-    def deleteExecutionPipelineStage: Self = this.set("executionPipelineStage", js.undefined)
-    
-    @scala.inline
-    def setOriginalPipelineTransformVarargs(value: TransformSummary*): Self = this.set("originalPipelineTransform", js.Array(value :_*))
-    
-    @scala.inline
-    def setOriginalPipelineTransform(value: js.Array[TransformSummary]): Self = this.set("originalPipelineTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalPipelineTransform: Self = this.set("originalPipelineTransform", js.undefined)
+    def setOriginalPipelineTransformVarargs(value: TransformSummary*): Self = StObject.set(x, "originalPipelineTransform", js.Array(value :_*))
   }
 }

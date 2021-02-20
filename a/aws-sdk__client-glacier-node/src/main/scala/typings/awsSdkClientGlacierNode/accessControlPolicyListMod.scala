@@ -1,13 +1,13 @@
 package typings.awsSdkClientGlacierNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/model/_AccessControlPolicyList", JSImport.Namespace)
-@js.native
-object accessControlPolicyListMod extends js.Object {
+object accessControlPolicyListMod {
   
-  @JSName("_AccessControlPolicyList")
+  @JSImport("@aws-sdk/client-glacier-node/model/_AccessControlPolicyList", "_AccessControlPolicyList")
+  @js.native
   val AccessControlPolicyList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

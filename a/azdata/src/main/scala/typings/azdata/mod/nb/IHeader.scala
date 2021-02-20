@@ -1,11 +1,12 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHeader extends js.Object {
+trait IHeader extends StObject {
   
   var msg_id: String = js.native
   
@@ -26,33 +27,21 @@ object IHeader {
   }
   
   @scala.inline
-  implicit class IHeaderOps[Self <: IHeader] (val x: Self) extends AnyVal {
+  implicit class IHeaderMutableBuilder[Self <: IHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMsg_id(value: String): Self = StObject.set(x, "msg_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMsg_type(value: String): Self = StObject.set(x, "msg_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsg_id(value: String): Self = this.set("msg_id", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsg_type(value: String): Self = this.set("msg_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: String): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

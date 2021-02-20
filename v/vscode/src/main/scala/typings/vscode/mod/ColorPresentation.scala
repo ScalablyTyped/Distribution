@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "ColorPresentation")
 @js.native
-class ColorPresentation protected () extends js.Object {
+class ColorPresentation protected () extends StObject {
   /**
     * Creates a new color presentation.
     *

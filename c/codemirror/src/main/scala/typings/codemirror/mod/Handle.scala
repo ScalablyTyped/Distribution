@@ -1,12 +1,13 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Handle used to interact with the autocomplete dialog box.*/
 @js.native
-trait Handle extends js.Object {
+trait Handle extends StObject {
   
   def close(): Unit = js.native
   
@@ -39,39 +40,27 @@ object Handle {
   }
   
   @scala.inline
-  implicit class HandleOps[Self <: Handle] (val x: Self) extends AnyVal {
+  implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setMenuSize(value: () => Double): Self = StObject.set(x, "menuSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMoveFocus(value: (Double, Boolean) => Unit): Self = StObject.set(x, "moveFocus", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setPick(value: () => Unit): Self = StObject.set(x, "pick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMenuSize(value: () => Double): Self = this.set("menuSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMoveFocus(value: (Double, Boolean) => Unit): Self = this.set("moveFocus", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPick(value: () => Unit): Self = this.set("pick", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetFocus(value: Double => Unit): Self = this.set("setFocus", js.Any.fromFunction1(value))
+    def setSetFocus(value: Double => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction1(value))
   }
 }

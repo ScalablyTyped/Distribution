@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NodeSpec describes the attributes that a node is created with.
   */
 @js.native
-trait NodeSpec extends js.Object {
+trait NodeSpec extends StObject {
   
   /**
     * If specified, the source to get node configuration from The DynamicKubeletConfig feature gate must be enabled for the Kubelet to use this field
@@ -55,66 +56,54 @@ object NodeSpec {
   }
   
   @scala.inline
-  implicit class NodeSpecOps[Self <: NodeSpec] (val x: Self) extends AnyVal {
+  implicit class NodeSpecMutableBuilder[Self <: NodeSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigSource(value: Input[NodeConfigSource]): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigSourceUndefined: Self = StObject.set(x, "configSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalID(value: Input[String]): Self = StObject.set(x, "externalID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigSource(value: Input[NodeConfigSource]): Self = this.set("configSource", value.asInstanceOf[js.Any])
+    def setExternalIDUndefined: Self = StObject.set(x, "externalID", js.undefined)
     
     @scala.inline
-    def deleteConfigSource: Self = this.set("configSource", js.undefined)
+    def setPodCIDR(value: Input[String]): Self = StObject.set(x, "podCIDR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalID(value: Input[String]): Self = this.set("externalID", value.asInstanceOf[js.Any])
+    def setPodCIDRUndefined: Self = StObject.set(x, "podCIDR", js.undefined)
     
     @scala.inline
-    def deleteExternalID: Self = this.set("externalID", js.undefined)
+    def setPodCIDRs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "podCIDRs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPodCIDR(value: Input[String]): Self = this.set("podCIDR", value.asInstanceOf[js.Any])
+    def setPodCIDRsUndefined: Self = StObject.set(x, "podCIDRs", js.undefined)
     
     @scala.inline
-    def deletePodCIDR: Self = this.set("podCIDR", js.undefined)
+    def setPodCIDRsVarargs(value: Input[String]*): Self = StObject.set(x, "podCIDRs", js.Array(value :_*))
     
     @scala.inline
-    def setPodCIDRsVarargs(value: Input[String]*): Self = this.set("podCIDRs", js.Array(value :_*))
+    def setProviderID(value: Input[String]): Self = StObject.set(x, "providerID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPodCIDRs(value: Input[js.Array[Input[String]]]): Self = this.set("podCIDRs", value.asInstanceOf[js.Any])
+    def setProviderIDUndefined: Self = StObject.set(x, "providerID", js.undefined)
     
     @scala.inline
-    def deletePodCIDRs: Self = this.set("podCIDRs", js.undefined)
+    def setTaints(value: Input[js.Array[Input[Taint]]]): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderID(value: Input[String]): Self = this.set("providerID", value.asInstanceOf[js.Any])
+    def setTaintsUndefined: Self = StObject.set(x, "taints", js.undefined)
     
     @scala.inline
-    def deleteProviderID: Self = this.set("providerID", js.undefined)
+    def setTaintsVarargs(value: Input[Taint]*): Self = StObject.set(x, "taints", js.Array(value :_*))
     
     @scala.inline
-    def setTaintsVarargs(value: Input[Taint]*): Self = this.set("taints", js.Array(value :_*))
+    def setUnschedulable(value: Input[Boolean]): Self = StObject.set(x, "unschedulable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaints(value: Input[js.Array[Input[Taint]]]): Self = this.set("taints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaints: Self = this.set("taints", js.undefined)
-    
-    @scala.inline
-    def setUnschedulable(value: Input[Boolean]): Self = this.set("unschedulable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnschedulable: Self = this.set("unschedulable", js.undefined)
+    def setUnschedulableUndefined: Self = StObject.set(x, "unschedulable", js.undefined)
   }
 }

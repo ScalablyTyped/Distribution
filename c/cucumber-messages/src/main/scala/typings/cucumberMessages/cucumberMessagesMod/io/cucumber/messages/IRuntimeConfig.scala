@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a RuntimeConfig. */
 @js.native
-trait IRuntimeConfig extends js.Object {
+trait IRuntimeConfig extends StObject {
   
   /** RuntimeConfig isDryRun */
   var isDryRun: js.UndefOr[Boolean | Null] = js.native
@@ -31,56 +32,44 @@ object IRuntimeConfig {
   }
   
   @scala.inline
-  implicit class IRuntimeConfigOps[Self <: IRuntimeConfig] (val x: Self) extends AnyVal {
+  implicit class IRuntimeConfigMutableBuilder[Self <: IRuntimeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsDryRun(value: Boolean): Self = StObject.set(x, "isDryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDryRunNull: Self = StObject.set(x, "isDryRun", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDryRunUndefined: Self = StObject.set(x, "isDryRun", js.undefined)
     
     @scala.inline
-    def setIsDryRun(value: Boolean): Self = this.set("isDryRun", value.asInstanceOf[js.Any])
+    def setIsFailFast(value: Boolean): Self = StObject.set(x, "isFailFast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDryRun: Self = this.set("isDryRun", js.undefined)
+    def setIsFailFastNull: Self = StObject.set(x, "isFailFast", null)
     
     @scala.inline
-    def setIsDryRunNull: Self = this.set("isDryRun", null)
+    def setIsFailFastUndefined: Self = StObject.set(x, "isFailFast", js.undefined)
     
     @scala.inline
-    def setIsFailFast(value: Boolean): Self = this.set("isFailFast", value.asInstanceOf[js.Any])
+    def setIsStrict(value: Boolean): Self = StObject.set(x, "isStrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsFailFast: Self = this.set("isFailFast", js.undefined)
+    def setIsStrictNull: Self = StObject.set(x, "isStrict", null)
     
     @scala.inline
-    def setIsFailFastNull: Self = this.set("isFailFast", null)
-    
-    @scala.inline
-    def setIsStrict(value: Boolean): Self = this.set("isStrict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsStrict: Self = this.set("isStrict", js.undefined)
-    
-    @scala.inline
-    def setIsStrictNull: Self = this.set("isStrict", null)
+    def setIsStrictUndefined: Self = StObject.set(x, "isStrict", js.undefined)
     
     @scala.inline
     def setMaxParallel(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
-    ): Self = this.set("maxParallel", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxParallel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxParallel: Self = this.set("maxParallel", js.undefined)
+    def setMaxParallelNull: Self = StObject.set(x, "maxParallel", null)
     
     @scala.inline
-    def setMaxParallelNull: Self = this.set("maxParallel", null)
+    def setMaxParallelUndefined: Self = StObject.set(x, "maxParallel", js.undefined)
   }
 }

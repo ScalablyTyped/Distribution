@@ -2,6 +2,7 @@ package typings.leafletDraw.mod
 
 import typings.leafletDraw.mod.Control.DrawConstructorOptions
 import typings.leafletDraw.mod.Draw.Feature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("leaflet", "EditToolbar")
 @js.native
 class EditToolbar () extends Toolbar {
+  def this(options: ToolbarOptions) = this()
   
   def getActions(handler: Feature): js.Array[ToolbarAction] = js.native
   
@@ -16,10 +18,9 @@ class EditToolbar () extends Toolbar {
   
   def setOptions(options: DrawConstructorOptions): Unit = js.native
 }
-@JSImport("leaflet", "EditToolbar")
-@js.native
-object EditToolbar extends js.Object {
+object EditToolbar {
   
+  @JSImport("leaflet", "EditToolbar.Delete")
   @js.native
   class Delete protected () extends Toolbar {
     def this(map: DrawMap) = this()
@@ -32,6 +33,7 @@ object EditToolbar extends js.Object {
     def save(): Unit = js.native
   }
   
+  @JSImport("leaflet", "EditToolbar.Edit")
   @js.native
   class Edit protected () extends Toolbar {
     def this(map: DrawMap) = this()

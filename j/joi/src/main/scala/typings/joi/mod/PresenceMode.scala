@@ -1,5 +1,6 @@
 package typings.joi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.joi.joiStrings.required
   - typings.joi.joiStrings.forbidden
 */
-trait PresenceMode extends js.Object
+trait PresenceMode extends StObject
 object PresenceMode {
   
   @scala.inline

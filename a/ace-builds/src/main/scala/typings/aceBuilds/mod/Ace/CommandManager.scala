@@ -3,6 +3,7 @@ package typings.aceBuilds.mod.Ace
 import typings.aceBuilds.aceBuildsStrings.afterExec
 import typings.aceBuilds.aceBuildsStrings.exec
 import typings.aceBuilds.anon.Mac
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

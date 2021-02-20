@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOpList extends js.Object {
+trait IOpList extends StObject {
   
   /** OpList op */
   var op: js.UndefOr[js.Array[IOpDef] | Null] = js.native
@@ -19,30 +20,18 @@ object IOpList {
   }
   
   @scala.inline
-  implicit class IOpListOps[Self <: IOpList] (val x: Self) extends AnyVal {
+  implicit class IOpListMutableBuilder[Self <: IOpList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOp(value: js.Array[IOpDef]): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpNull: Self = StObject.set(x, "op", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
     @scala.inline
-    def setOpVarargs(value: IOpDef*): Self = this.set("op", js.Array(value :_*))
-    
-    @scala.inline
-    def setOp(value: js.Array[IOpDef]): Self = this.set("op", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOp: Self = this.set("op", js.undefined)
-    
-    @scala.inline
-    def setOpNull: Self = this.set("op", null)
+    def setOpVarargs(value: IOpDef*): Self = StObject.set(x, "op", js.Array(value :_*))
   }
 }

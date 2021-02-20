@@ -9,6 +9,7 @@ import typings.node.nodeStrings.pipe
 import typings.node.processMod.global.NodeJS.Signals
 import typings.node.streamMod.Stream
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,60 +38,48 @@ object ExecSyncOptions {
   }
   
   @scala.inline
-  implicit class ExecSyncOptionsOps[Self <: ExecSyncOptions] (val x: Self) extends AnyVal {
+  implicit class ExecSyncOptionsMutableBuilder[Self <: ExecSyncOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: BufferEncoding | buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setEncoding(value: BufferEncoding | buffer_): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setInput(value: String | Uint8Array): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def setEncodingNull: Self = this.set("encoding", null)
+    def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: String | Uint8Array): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKillSignal(value: Signals | Double): Self = this.set("killSignal", value.asInstanceOf[js.Any])
+    def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
     
     @scala.inline
-    def deleteKillSignal: Self = this.set("killSignal", js.undefined)
+    def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBuffer(value: Double): Self = this.set("maxBuffer", value.asInstanceOf[js.Any])
+    def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
     
     @scala.inline
-    def deleteMaxBuffer: Self = this.set("maxBuffer", js.undefined)
+    def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShell(value: String): Self = this.set("shell", value.asInstanceOf[js.Any])
+    def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     
     @scala.inline
-    def deleteShell: Self = this.set("shell", js.undefined)
-    
-    @scala.inline
-    def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = this.set("stdio", js.Array(value :_*))
-    
-    @scala.inline
-    def setStdio(value: StdioOptions): Self = this.set("stdio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdio: Self = this.set("stdio", js.undefined)
+    def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
   }
 }

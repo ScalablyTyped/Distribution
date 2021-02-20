@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1TagField extends js.Object {
+trait GoogleCloudDatacatalogV1beta1TagField extends StObject {
   
   /** Holds the value for a tag field with boolean type. */
   var boolValue: js.UndefOr[Boolean] = js.native
@@ -40,60 +41,48 @@ object GoogleCloudDatacatalogV1beta1TagField {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1TagFieldOps[Self <: GoogleCloudDatacatalogV1beta1TagField] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1TagFieldMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1TagField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolValue(value: Boolean): Self = this.set("boolValue", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteBoolValue: Self = this.set("boolValue", js.undefined)
+    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEnumValue(value: GoogleCloudDatacatalogV1beta1TagFieldEnumValue): Self = StObject.set(x, "enumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleValue(value: Double): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    def setEnumValueUndefined: Self = StObject.set(x, "enumValue", js.undefined)
     
     @scala.inline
-    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumValue(value: GoogleCloudDatacatalogV1beta1TagFieldEnumValue): Self = this.set("enumValue", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteEnumValue: Self = this.set("enumValue", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: Double): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
-    
-    @scala.inline
-    def setTimestampValue(value: String): Self = this.set("timestampValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampValue: Self = this.set("timestampValue", js.undefined)
+    def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
   }
 }

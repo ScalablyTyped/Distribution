@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for the Check method.
   */
 @js.native
-trait SchemaCheckResponse extends js.Object {
+trait SchemaCheckResponse extends StObject {
   
   /**
     * Indicate the decision of the check.  If no check errors are present, the
@@ -47,51 +48,39 @@ object SchemaCheckResponse {
   }
   
   @scala.inline
-  implicit class SchemaCheckResponseOps[Self <: SchemaCheckResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaCheckResponseMutableBuilder[Self <: SchemaCheckResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckErrors(value: js.Array[SchemaCheckError]): Self = StObject.set(x, "checkErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckErrorsUndefined: Self = StObject.set(x, "checkErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckErrorsVarargs(value: SchemaCheckError*): Self = StObject.set(x, "checkErrors", js.Array(value :_*))
     
     @scala.inline
-    def setCheckErrorsVarargs(value: SchemaCheckError*): Self = this.set("checkErrors", js.Array(value :_*))
+    def setCheckInfo(value: SchemaCheckInfo): Self = StObject.set(x, "checkInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckErrors(value: js.Array[SchemaCheckError]): Self = this.set("checkErrors", value.asInstanceOf[js.Any])
+    def setCheckInfoUndefined: Self = StObject.set(x, "checkInfo", js.undefined)
     
     @scala.inline
-    def deleteCheckErrors: Self = this.set("checkErrors", js.undefined)
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckInfo(value: SchemaCheckInfo): Self = this.set("checkInfo", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteCheckInfo: Self = this.set("checkInfo", js.undefined)
+    def setQuotaInfo(value: SchemaQuotaInfo): Self = StObject.set(x, "quotaInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setQuotaInfoUndefined: Self = StObject.set(x, "quotaInfo", js.undefined)
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaInfo(value: SchemaQuotaInfo): Self = this.set("quotaInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuotaInfo: Self = this.set("quotaInfo", js.undefined)
-    
-    @scala.inline
-    def setServiceConfigId(value: String): Self = this.set("serviceConfigId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceConfigId: Self = this.set("serviceConfigId", js.undefined)
+    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }
 }

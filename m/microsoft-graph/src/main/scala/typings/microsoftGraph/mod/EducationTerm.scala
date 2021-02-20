@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EducationTerm extends js.Object {
+trait EducationTerm extends StObject {
   
   // Display name of the term.
   var displayName: js.UndefOr[NullableOption[String]] = js.native
@@ -28,54 +29,42 @@ object EducationTerm {
   }
   
   @scala.inline
-  implicit class EducationTermOps[Self <: EducationTerm] (val x: Self) extends AnyVal {
+  implicit class EducationTermMutableBuilder[Self <: EducationTerm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEndDate(value: NullableOption[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEndDateNull: Self = StObject.set(x, "endDate", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def setEndDate(value: NullableOption[String]): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
     @scala.inline
-    def setEndDateNull: Self = this.set("endDate", null)
+    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
     @scala.inline
-    def setExternalId(value: NullableOption[String]): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setStartDate(value: NullableOption[String]): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    def setStartDateNull: Self = StObject.set(x, "startDate", null)
     
     @scala.inline
-    def setExternalIdNull: Self = this.set("externalId", null)
-    
-    @scala.inline
-    def setStartDate(value: NullableOption[String]): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
-    
-    @scala.inline
-    def setStartDateNull: Self = this.set("startDate", null)
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

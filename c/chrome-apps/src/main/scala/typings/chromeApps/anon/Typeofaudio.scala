@@ -7,12 +7,13 @@ import typings.chromeApps.chrome.audio.SetDeviceProperties
 import typings.chromeApps.chrome.audio.StreamType
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofaudio extends js.Object {
+trait Typeofaudio extends StObject {
   
   def getDevices(callback: js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]): Unit = js.native
   /**

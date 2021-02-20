@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateServiceRequest extends js.Object {
+trait UpdateServiceRequest extends StObject {
   
   /**
     * The capacity provider strategy to update the service to use. If the service is using the default capacity provider strategy for the cluster, the service can be updated to use one or more capacity providers as opposed to the default capacity provider strategy. However, when a service is using a capacity provider strategy that is not the default capacity provider strategy, the service cannot be updated to use the cluster's default capacity provider strategy. A capacity provider strategy consists of one or more capacity providers along with the base and weight to assign to them. A capacity provider must be associated with the cluster to be used in a capacity provider strategy. The PutClusterCapacityProviders API is used to associate a capacity provider with a cluster. Only capacity providers with an ACTIVE or UPDATING status can be used. If specifying a capacity provider that uses an Auto Scaling group, the capacity provider must already be created. New capacity providers can be created with the CreateCapacityProvider API operation. To use a AWS Fargate capacity provider, specify either the FARGATE or FARGATE_SPOT capacity providers. The AWS Fargate capacity providers are available to all accounts and only need to be associated with a cluster to be used. The PutClusterCapacityProviders API operation is used to update the list of available capacity providers for a cluster after the cluster is created. 
@@ -73,96 +74,84 @@ object UpdateServiceRequest {
   }
   
   @scala.inline
-  implicit class UpdateServiceRequestOps[Self <: UpdateServiceRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateServiceRequestMutableBuilder[Self <: UpdateServiceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = StObject.set(x, "capacityProviderStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityProviderStrategyUndefined: Self = StObject.set(x, "capacityProviderStrategy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = StObject.set(x, "capacityProviderStrategy", js.Array(value :_*))
     
     @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = this.set("capacityProviderStrategy", js.Array(value :_*))
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = this.set("capacityProviderStrategy", value.asInstanceOf[js.Any])
+    def setDeploymentConfiguration(value: DeploymentConfiguration): Self = StObject.set(x, "deploymentConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapacityProviderStrategy: Self = this.set("capacityProviderStrategy", js.undefined)
+    def setDeploymentConfigurationUndefined: Self = StObject.set(x, "deploymentConfiguration", js.undefined)
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setDesiredCount(value: BoxedInteger): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setDesiredCountUndefined: Self = StObject.set(x, "desiredCount", js.undefined)
     
     @scala.inline
-    def setDeploymentConfiguration(value: DeploymentConfiguration): Self = this.set("deploymentConfiguration", value.asInstanceOf[js.Any])
+    def setForceNewDeployment(value: Boolean): Self = StObject.set(x, "forceNewDeployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeploymentConfiguration: Self = this.set("deploymentConfiguration", js.undefined)
+    def setForceNewDeploymentUndefined: Self = StObject.set(x, "forceNewDeployment", js.undefined)
     
     @scala.inline
-    def setDesiredCount(value: BoxedInteger): Self = this.set("desiredCount", value.asInstanceOf[js.Any])
+    def setHealthCheckGracePeriodSeconds(value: BoxedInteger): Self = StObject.set(x, "healthCheckGracePeriodSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDesiredCount: Self = this.set("desiredCount", js.undefined)
+    def setHealthCheckGracePeriodSecondsUndefined: Self = StObject.set(x, "healthCheckGracePeriodSeconds", js.undefined)
     
     @scala.inline
-    def setForceNewDeployment(value: Boolean): Self = this.set("forceNewDeployment", value.asInstanceOf[js.Any])
+    def setNetworkConfiguration(value: NetworkConfiguration): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForceNewDeployment: Self = this.set("forceNewDeployment", js.undefined)
+    def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
     
     @scala.inline
-    def setHealthCheckGracePeriodSeconds(value: BoxedInteger): Self = this.set("healthCheckGracePeriodSeconds", value.asInstanceOf[js.Any])
+    def setPlacementConstraints(value: PlacementConstraints): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHealthCheckGracePeriodSeconds: Self = this.set("healthCheckGracePeriodSeconds", js.undefined)
+    def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
     
     @scala.inline
-    def setNetworkConfiguration(value: NetworkConfiguration): Self = this.set("networkConfiguration", value.asInstanceOf[js.Any])
+    def setPlacementConstraintsVarargs(value: PlacementConstraint*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
     
     @scala.inline
-    def deleteNetworkConfiguration: Self = this.set("networkConfiguration", js.undefined)
+    def setPlacementStrategy(value: PlacementStrategies): Self = StObject.set(x, "placementStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementConstraintsVarargs(value: PlacementConstraint*): Self = this.set("placementConstraints", js.Array(value :_*))
+    def setPlacementStrategyUndefined: Self = StObject.set(x, "placementStrategy", js.undefined)
     
     @scala.inline
-    def setPlacementConstraints(value: PlacementConstraints): Self = this.set("placementConstraints", value.asInstanceOf[js.Any])
+    def setPlacementStrategyVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategy", js.Array(value :_*))
     
     @scala.inline
-    def deletePlacementConstraints: Self = this.set("placementConstraints", js.undefined)
+    def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementStrategyVarargs(value: PlacementStrategy*): Self = this.set("placementStrategy", js.Array(value :_*))
+    def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
     
     @scala.inline
-    def setPlacementStrategy(value: PlacementStrategies): Self = this.set("placementStrategy", value.asInstanceOf[js.Any])
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlacementStrategy: Self = this.set("placementStrategy", js.undefined)
+    def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
-    
-    @scala.inline
-    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskDefinition: Self = this.set("taskDefinition", js.undefined)
+    def setTaskDefinitionUndefined: Self = StObject.set(x, "taskDefinition", js.undefined)
   }
 }

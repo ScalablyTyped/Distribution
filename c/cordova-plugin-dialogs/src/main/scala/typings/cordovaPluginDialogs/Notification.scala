@@ -1,12 +1,13 @@
 package typings.cordovaPluginDialogs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This plugin provides access to some native dialog UI elements. */
 @js.native
-trait Notification extends js.Object {
+trait Notification extends StObject {
   
   /**
     * Shows a custom alert or dialog box. Most Cordova implementations use a native dialog box for this feature,

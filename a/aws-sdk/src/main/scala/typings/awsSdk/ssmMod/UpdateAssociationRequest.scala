@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAssociationRequest extends js.Object {
+trait UpdateAssociationRequest extends StObject {
   
   /**
     * By default, when you update an association, the system runs it immediately after it is updated and then according to the schedule you specified. Specify this option if you don't want an association to run immediately after you update it. Also, if you specified this option when you created the association, you can reset it. To do so, specify the no-apply-only-at-cron-interval parameter when you update the association from the command line. This parameter forces the association to run immediately after updating it and according to the interval specified.
@@ -91,108 +92,96 @@ object UpdateAssociationRequest {
   }
   
   @scala.inline
-  implicit class UpdateAssociationRequestOps[Self <: UpdateAssociationRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAssociationRequestMutableBuilder[Self <: UpdateAssociationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyOnlyAtCronInterval(value: ApplyOnlyAtCronInterval): Self = StObject.set(x, "ApplyOnlyAtCronInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyOnlyAtCronIntervalUndefined: Self = StObject.set(x, "ApplyOnlyAtCronInterval", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationId(value: AssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    def setAssociationName(value: AssociationName): Self = StObject.set(x, "AssociationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyOnlyAtCronInterval(value: ApplyOnlyAtCronInterval): Self = this.set("ApplyOnlyAtCronInterval", value.asInstanceOf[js.Any])
+    def setAssociationNameUndefined: Self = StObject.set(x, "AssociationName", js.undefined)
     
     @scala.inline
-    def deleteApplyOnlyAtCronInterval: Self = this.set("ApplyOnlyAtCronInterval", js.undefined)
+    def setAssociationVersion(value: AssociationVersion): Self = StObject.set(x, "AssociationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationName(value: AssociationName): Self = this.set("AssociationName", value.asInstanceOf[js.Any])
+    def setAssociationVersionUndefined: Self = StObject.set(x, "AssociationVersion", js.undefined)
     
     @scala.inline
-    def deleteAssociationName: Self = this.set("AssociationName", js.undefined)
+    def setAutomationTargetParameterName(value: AutomationTargetParameterName): Self = StObject.set(x, "AutomationTargetParameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationVersion(value: AssociationVersion): Self = this.set("AssociationVersion", value.asInstanceOf[js.Any])
+    def setAutomationTargetParameterNameUndefined: Self = StObject.set(x, "AutomationTargetParameterName", js.undefined)
     
     @scala.inline
-    def deleteAssociationVersion: Self = this.set("AssociationVersion", js.undefined)
+    def setComplianceSeverity(value: AssociationComplianceSeverity): Self = StObject.set(x, "ComplianceSeverity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomationTargetParameterName(value: AutomationTargetParameterName): Self = this.set("AutomationTargetParameterName", value.asInstanceOf[js.Any])
+    def setComplianceSeverityUndefined: Self = StObject.set(x, "ComplianceSeverity", js.undefined)
     
     @scala.inline
-    def deleteAutomationTargetParameterName: Self = this.set("AutomationTargetParameterName", js.undefined)
+    def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceSeverity(value: AssociationComplianceSeverity): Self = this.set("ComplianceSeverity", value.asInstanceOf[js.Any])
+    def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
     
     @scala.inline
-    def deleteComplianceSeverity: Self = this.set("ComplianceSeverity", js.undefined)
+    def setMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "MaxConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    def setMaxConcurrencyUndefined: Self = StObject.set(x, "MaxConcurrency", js.undefined)
     
     @scala.inline
-    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    def setMaxErrors(value: MaxErrors): Self = StObject.set(x, "MaxErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrency(value: MaxConcurrency): Self = this.set("MaxConcurrency", value.asInstanceOf[js.Any])
+    def setMaxErrorsUndefined: Self = StObject.set(x, "MaxErrors", js.undefined)
     
     @scala.inline
-    def deleteMaxConcurrency: Self = this.set("MaxConcurrency", js.undefined)
+    def setName(value: DocumentARN): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxErrors(value: MaxErrors): Self = this.set("MaxErrors", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMaxErrors: Self = this.set("MaxErrors", js.undefined)
+    def setOutputLocation(value: InstanceAssociationOutputLocation): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DocumentARN): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputLocation(value: InstanceAssociationOutputLocation): Self = this.set("OutputLocation", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteOutputLocation: Self = this.set("OutputLocation", js.undefined)
+    def setScheduleExpression(value: ScheduleExpression): Self = StObject.set(x, "ScheduleExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setScheduleExpressionUndefined: Self = StObject.set(x, "ScheduleExpression", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setSyncCompliance(value: AssociationSyncCompliance): Self = StObject.set(x, "SyncCompliance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleExpression(value: ScheduleExpression): Self = this.set("ScheduleExpression", value.asInstanceOf[js.Any])
+    def setSyncComplianceUndefined: Self = StObject.set(x, "SyncCompliance", js.undefined)
     
     @scala.inline
-    def deleteScheduleExpression: Self = this.set("ScheduleExpression", js.undefined)
+    def setTargets(value: Targets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncCompliance(value: AssociationSyncCompliance): Self = this.set("SyncCompliance", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
     @scala.inline
-    def deleteSyncCompliance: Self = this.set("SyncCompliance", js.undefined)
-    
-    @scala.inline
-    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargets: Self = this.set("Targets", js.undefined)
+    def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnappedSpeedLimitsRequest extends js.Object {
+trait SnappedSpeedLimitsRequest extends StObject {
   
   /**
     * A list of latitude/longitude pairs representing a path. Latitude and longitude values must be separated by commas.
@@ -35,30 +36,18 @@ object SnappedSpeedLimitsRequest {
   }
   
   @scala.inline
-  implicit class SnappedSpeedLimitsRequestOps[Self <: SnappedSpeedLimitsRequest] (val x: Self) extends AnyVal {
+  implicit class SnappedSpeedLimitsRequestMutableBuilder[Self <: SnappedSpeedLimitsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnits(value: SpeedLimitUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: LatLng*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[LatLng]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnits(value: SpeedLimitUnit): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /**
     * A file metadata value that shows the last time a file was accessed (that is, when the file was read or written to). If you set Atime to BEST_EFFORT, DataSync attempts to preserve the original Atime attribute on all source files (that is, the version before the PREPARING phase). However, Atime's behavior is not fully standard across platforms, so AWS DataSync can only do this on a best-effort basis.  Default value: BEST_EFFORT. BEST_EFFORT: Attempt to preserve the per-file Atime value (recommended). NONE: Ignore Atime.  If Atime is set to BEST_EFFORT, Mtime must be set to PRESERVE.  If Atime is set to NONE, Mtime must also be NONE.  
@@ -81,96 +82,84 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtime(value: Atime): Self = StObject.set(x, "Atime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtimeUndefined: Self = StObject.set(x, "Atime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytesPerSecond(value: BytesPerSecond): Self = StObject.set(x, "BytesPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtime(value: Atime): Self = this.set("Atime", value.asInstanceOf[js.Any])
+    def setBytesPerSecondUndefined: Self = StObject.set(x, "BytesPerSecond", js.undefined)
     
     @scala.inline
-    def deleteAtime: Self = this.set("Atime", js.undefined)
+    def setGid(value: Gid): Self = StObject.set(x, "Gid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesPerSecond(value: BytesPerSecond): Self = this.set("BytesPerSecond", value.asInstanceOf[js.Any])
+    def setGidUndefined: Self = StObject.set(x, "Gid", js.undefined)
     
     @scala.inline
-    def deleteBytesPerSecond: Self = this.set("BytesPerSecond", js.undefined)
+    def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGid(value: Gid): Self = this.set("Gid", value.asInstanceOf[js.Any])
+    def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
     
     @scala.inline
-    def deleteGid: Self = this.set("Gid", js.undefined)
+    def setMtime(value: Mtime): Self = StObject.set(x, "Mtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: LogLevel): Self = this.set("LogLevel", value.asInstanceOf[js.Any])
+    def setMtimeUndefined: Self = StObject.set(x, "Mtime", js.undefined)
     
     @scala.inline
-    def deleteLogLevel: Self = this.set("LogLevel", js.undefined)
+    def setOverwriteMode(value: OverwriteMode): Self = StObject.set(x, "OverwriteMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMtime(value: Mtime): Self = this.set("Mtime", value.asInstanceOf[js.Any])
+    def setOverwriteModeUndefined: Self = StObject.set(x, "OverwriteMode", js.undefined)
     
     @scala.inline
-    def deleteMtime: Self = this.set("Mtime", js.undefined)
+    def setPosixPermissions(value: PosixPermissions): Self = StObject.set(x, "PosixPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwriteMode(value: OverwriteMode): Self = this.set("OverwriteMode", value.asInstanceOf[js.Any])
+    def setPosixPermissionsUndefined: Self = StObject.set(x, "PosixPermissions", js.undefined)
     
     @scala.inline
-    def deleteOverwriteMode: Self = this.set("OverwriteMode", js.undefined)
+    def setPreserveDeletedFiles(value: PreserveDeletedFiles): Self = StObject.set(x, "PreserveDeletedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosixPermissions(value: PosixPermissions): Self = this.set("PosixPermissions", value.asInstanceOf[js.Any])
+    def setPreserveDeletedFilesUndefined: Self = StObject.set(x, "PreserveDeletedFiles", js.undefined)
     
     @scala.inline
-    def deletePosixPermissions: Self = this.set("PosixPermissions", js.undefined)
+    def setPreserveDevices(value: PreserveDevices): Self = StObject.set(x, "PreserveDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveDeletedFiles(value: PreserveDeletedFiles): Self = this.set("PreserveDeletedFiles", value.asInstanceOf[js.Any])
+    def setPreserveDevicesUndefined: Self = StObject.set(x, "PreserveDevices", js.undefined)
     
     @scala.inline
-    def deletePreserveDeletedFiles: Self = this.set("PreserveDeletedFiles", js.undefined)
+    def setTaskQueueing(value: TaskQueueing): Self = StObject.set(x, "TaskQueueing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveDevices(value: PreserveDevices): Self = this.set("PreserveDevices", value.asInstanceOf[js.Any])
+    def setTaskQueueingUndefined: Self = StObject.set(x, "TaskQueueing", js.undefined)
     
     @scala.inline
-    def deletePreserveDevices: Self = this.set("PreserveDevices", js.undefined)
+    def setTransferMode(value: TransferMode): Self = StObject.set(x, "TransferMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskQueueing(value: TaskQueueing): Self = this.set("TaskQueueing", value.asInstanceOf[js.Any])
+    def setTransferModeUndefined: Self = StObject.set(x, "TransferMode", js.undefined)
     
     @scala.inline
-    def deleteTaskQueueing: Self = this.set("TaskQueueing", js.undefined)
+    def setUid(value: Uid): Self = StObject.set(x, "Uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferMode(value: TransferMode): Self = this.set("TransferMode", value.asInstanceOf[js.Any])
+    def setUidUndefined: Self = StObject.set(x, "Uid", js.undefined)
     
     @scala.inline
-    def deleteTransferMode: Self = this.set("TransferMode", js.undefined)
+    def setVerifyMode(value: VerifyMode): Self = StObject.set(x, "VerifyMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUid(value: Uid): Self = this.set("Uid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUid: Self = this.set("Uid", js.undefined)
-    
-    @scala.inline
-    def setVerifyMode(value: VerifyMode): Self = this.set("VerifyMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyMode: Self = this.set("VerifyMode", js.undefined)
+    def setVerifyModeUndefined: Self = StObject.set(x, "VerifyMode", js.undefined)
   }
 }

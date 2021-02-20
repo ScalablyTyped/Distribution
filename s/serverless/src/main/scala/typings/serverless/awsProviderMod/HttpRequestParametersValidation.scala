@@ -1,12 +1,13 @@
 package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpRequestParametersValidation extends js.Object {
+trait HttpRequestParametersValidation extends StObject {
   
   var headers: js.UndefOr[StringDictionary[Boolean]] = js.native
   
@@ -23,36 +24,24 @@ object HttpRequestParametersValidation {
   }
   
   @scala.inline
-  implicit class HttpRequestParametersValidationOps[Self <: HttpRequestParametersValidation] (val x: Self) extends AnyVal {
+  implicit class HttpRequestParametersValidationMutableBuilder[Self <: HttpRequestParametersValidation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: StringDictionary[Boolean]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaths(value: StringDictionary[Boolean]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: StringDictionary[Boolean]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setQuerystrings(value: StringDictionary[Boolean]): Self = StObject.set(x, "querystrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaths(value: StringDictionary[Boolean]): Self = this.set("paths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaths: Self = this.set("paths", js.undefined)
-    
-    @scala.inline
-    def setQuerystrings(value: StringDictionary[Boolean]): Self = this.set("querystrings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuerystrings: Self = this.set("querystrings", js.undefined)
+    def setQuerystringsUndefined: Self = StObject.set(x, "querystrings", js.undefined)
   }
 }

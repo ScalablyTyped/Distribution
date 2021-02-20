@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Tags ()
   extends typings.babylonjs.indexMod.Tags
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "Tags")
-@js.native
-object Tags extends js.Object {
+object Tags {
   
   /**
     * Adds tags to an object
@@ -19,18 +18,24 @@ object Tags extends js.Object {
     * @param tagsString defines the tag string. The tags 'true' and 'false' are reserved and cannot be used as tags.
     * A tag cannot start with '||', '&&', and '!'. It cannot contain whitespaces
     */
+  @JSImport("babylonjs/Legacy/legacy", "Tags.AddTagsTo")
+  @js.native
   def AddTagsTo(obj: js.Any, tagsString: String): Unit = js.native
   
   /**
     * Removes tags support
     * @param obj defines the object to use
     */
+  @JSImport("babylonjs/Legacy/legacy", "Tags.DisableFor")
+  @js.native
   def DisableFor(obj: js.Any): Unit = js.native
   
   /**
     * Adds support for tags on the given object
     * @param obj defines the object to use
     */
+  @JSImport("babylonjs/Legacy/legacy", "Tags.EnableFor")
+  @js.native
   def EnableFor(obj: js.Any): Unit = js.native
   
   /**
@@ -39,7 +44,11 @@ object Tags extends js.Object {
     * @param asString defines if the tags must be returned as a string instead of an array of strings
     * @returns the tags
     */
+  @JSImport("babylonjs/Legacy/legacy", "Tags.GetTags")
+  @js.native
   def GetTags(obj: js.Any): js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Tags.GetTags")
+  @js.native
   def GetTags(obj: js.Any, asString: Boolean): js.Any = js.native
   
   /**
@@ -47,6 +56,8 @@ object Tags extends js.Object {
     * @param obj defines the object to use
     * @returns a boolean
     */
+  @JSImport("babylonjs/Legacy/legacy", "Tags.HasTags")
+  @js.native
   def HasTags(obj: js.Any): Boolean = js.native
   
   /**
@@ -55,6 +66,8 @@ object Tags extends js.Object {
     * @param tagsQuery defines the tag query
     * @returns a boolean
     */
+  @JSImport("babylonjs/Legacy/legacy", "Tags.MatchesQuery")
+  @js.native
   def MatchesQuery(obj: js.Any, tagsQuery: String): Boolean = js.native
   
   /**
@@ -62,15 +75,21 @@ object Tags extends js.Object {
     * @param obj defines the object to use
     * @param tagsString defines the tags to remove
     */
+  @JSImport("babylonjs/Legacy/legacy", "Tags.RemoveTagsFrom")
+  @js.native
   def RemoveTagsFrom(obj: js.Any, tagsString: String): Unit = js.native
   
   /**
     * @hidden
     */
+  @JSImport("babylonjs/Legacy/legacy", "Tags._AddTagTo")
+  @js.native
   def _AddTagTo(obj: js.Any, tag: String): Unit = js.native
   
   /**
     * @hidden
     */
+  @JSImport("babylonjs/Legacy/legacy", "Tags._RemoveTagFrom")
+  @js.native
   def _RemoveTagFrom(obj: js.Any, tag: String): Unit = js.native
 }

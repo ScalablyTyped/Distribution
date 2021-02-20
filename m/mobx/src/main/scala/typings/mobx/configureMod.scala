@@ -1,13 +1,14 @@
 package typings.mobx
 
 import typings.mobx.anon.ComputedConfigurable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx/lib/api/configure", JSImport.Namespace)
-@js.native
-object configureMod extends js.Object {
+object configureMod {
   
+  @JSImport("mobx/lib/api/configure", "configure")
+  @js.native
   def configure(options: ComputedConfigurable): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.winrt.Windows.ApplicationModel.Resources
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IResourceLoaderFactory extends js.Object {
+trait IResourceLoaderFactory extends StObject {
   
   def createResourceLoaderByName(name: String): ResourceLoader = js.native
 }
@@ -18,21 +19,9 @@ object IResourceLoaderFactory {
   }
   
   @scala.inline
-  implicit class IResourceLoaderFactoryOps[Self <: IResourceLoaderFactory] (val x: Self) extends AnyVal {
+  implicit class IResourceLoaderFactoryMutableBuilder[Self <: IResourceLoaderFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateResourceLoaderByName(value: String => ResourceLoader): Self = this.set("createResourceLoaderByName", js.Any.fromFunction1(value))
+    def setCreateResourceLoaderByName(value: String => ResourceLoader): Self = StObject.set(x, "createResourceLoaderByName", js.Any.fromFunction1(value))
   }
 }

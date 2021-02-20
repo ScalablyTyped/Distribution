@@ -1,11 +1,12 @@
 package typings.mangopay2NodejsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TwoArgsMethodOverload[T, U, R] extends js.Object {
+trait TwoArgsMethodOverload[T, U, R] extends StObject {
   
   def apply(data: T, extra: U): js.Promise[R] = js.native
   def apply(data: T, extra: U, callback: js.Function1[(/* data */ R) | (/* data */ WithResponse[R]), Unit]): Unit = js.native

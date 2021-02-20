@@ -2,12 +2,13 @@ package typings.jasmine.jasmine
 
 import typings.std.Error
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpyAnd[Fn /* <: Func */] extends js.Object {
+trait SpyAnd[Fn /* <: Func */] extends StObject {
   
   /** By chaining the spy with and.callFake, all calls to the spy will delegate to the supplied function. */
   def callFake(fn: Fn): Spy[Fn] = js.native

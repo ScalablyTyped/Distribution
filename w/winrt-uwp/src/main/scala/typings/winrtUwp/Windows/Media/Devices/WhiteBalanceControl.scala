@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Devices
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the white balance settings on a capture device. */
 @js.native
-trait WhiteBalanceControl extends js.Object {
+trait WhiteBalanceControl extends StObject {
   
   /** Gets the maximum white balance value. */
   var max: Double = js.native
@@ -59,42 +60,30 @@ object WhiteBalanceControl {
   }
   
   @scala.inline
-  implicit class WhiteBalanceControlOps[Self <: WhiteBalanceControl] (val x: Self) extends AnyVal {
+  implicit class WhiteBalanceControlMutableBuilder[Self <: WhiteBalanceControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreset(value: ColorTemperaturePreset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setSetPresetAsync(value: ColorTemperaturePreset => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPresetAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreset(value: ColorTemperaturePreset): Self = this.set("preset", value.asInstanceOf[js.Any])
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPresetAsync(value: ColorTemperaturePreset => IPromiseWithIAsyncAction): Self = this.set("setPresetAsync", js.Any.fromFunction1(value))
+    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = this.set("setValueAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupported(value: Boolean): Self = this.set("supported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

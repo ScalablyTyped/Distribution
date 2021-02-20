@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.0
   */
 @js.native
-trait DataPilotTableResultData extends js.Object {
+trait DataPilotTableResultData extends StObject {
   
   /**
     * This is a 0-based index that specifies which data field the data displayed in the cell is for; the value of 0 means the cell is for the first data
@@ -45,27 +46,15 @@ object DataPilotTableResultData {
   }
   
   @scala.inline
-  implicit class DataPilotTableResultDataOps[Self <: DataPilotTableResultData] (val x: Self) extends AnyVal {
+  implicit class DataPilotTableResultDataMutableBuilder[Self <: DataPilotTableResultData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataFieldIndex(value: Double): Self = StObject.set(x, "DataFieldIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldFilters(value: SafeArray[DataPilotFieldFilter]): Self = StObject.set(x, "FieldFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataFieldIndex(value: Double): Self = this.set("DataFieldIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldFilters(value: SafeArray[DataPilotFieldFilter]): Self = this.set("FieldFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: DataResult): Self = this.set("Result", value.asInstanceOf[js.Any])
+    def setResult(value: DataResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

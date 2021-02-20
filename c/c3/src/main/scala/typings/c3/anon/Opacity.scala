@@ -1,11 +1,12 @@
 package typings.c3.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Opacity extends js.Object {
+trait Opacity extends StObject {
   
   /** Class to apply to the region. */
   var `class`: js.UndefOr[String] = js.native
@@ -26,42 +27,30 @@ object Opacity {
   }
   
   @scala.inline
-  implicit class OpacityOps[Self <: Opacity] (val x: Self) extends AnyVal {
+  implicit class OpacityMutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsVarargs(value: X*): Self = this.set("points", js.Array(value :_*))
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setPoints(value: js.Array[X]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setPoints(value: js.Array[X]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setPointsVarargs(value: X*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setText(value: (/* value */ Double, /* percentage */ Double) => String): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setText(value: (/* value */ Double, /* percentage */ Double) => String): Self = this.set("text", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

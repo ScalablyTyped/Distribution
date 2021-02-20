@@ -1,14 +1,15 @@
 package typings.jsClipper.ClipperLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClipType extends js.Object
+sealed trait ClipType extends StObject
 @JSGlobal("ClipperLib.ClipType")
 @js.native
-object ClipType extends js.Object {
+object ClipType extends StObject {
   
   @js.native
   sealed trait ctDifference extends ClipType

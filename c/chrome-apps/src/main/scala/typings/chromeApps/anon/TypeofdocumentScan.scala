@@ -2,12 +2,13 @@ package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.documentScan.DocumentScanCallbackArg
 import typings.chromeApps.chrome.documentScan.DocumentScanOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofdocumentScan extends js.Object {
+trait TypeofdocumentScan extends StObject {
   
   /**
     * Performs a document scan. On success, the PNG data will be sent to the callback.
@@ -25,21 +26,9 @@ object TypeofdocumentScan {
   }
   
   @scala.inline
-  implicit class TypeofdocumentScanOps[Self <: TypeofdocumentScan] (val x: Self) extends AnyVal {
+  implicit class TypeofdocumentScanMutableBuilder[Self <: TypeofdocumentScan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScan(value: (DocumentScanOptions, js.Function1[/* result */ DocumentScanCallbackArg, Unit]) => Unit): Self = this.set("scan", js.Any.fromFunction2(value))
+    def setScan(value: (DocumentScanOptions, js.Function1[/* result */ DocumentScanCallbackArg, Unit]) => Unit): Self = StObject.set(x, "scan", js.Any.fromFunction2(value))
   }
 }

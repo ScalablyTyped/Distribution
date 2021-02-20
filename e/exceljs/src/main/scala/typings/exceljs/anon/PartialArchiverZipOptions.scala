@@ -1,12 +1,13 @@
 package typings.exceljs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.stream.xlsx.ArchiverZipOptions> */
 @js.native
-trait PartialArchiverZipOptions extends js.Object {
+trait PartialArchiverZipOptions extends StObject {
   
   var comment: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object PartialArchiverZipOptions {
   }
   
   @scala.inline
-  implicit class PartialArchiverZipOptionsOps[Self <: PartialArchiverZipOptions] (val x: Self) extends AnyVal {
+  implicit class PartialArchiverZipOptionsMutableBuilder[Self <: PartialArchiverZipOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceLocalTime(value: Boolean): Self = StObject.set(x, "forceLocalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setForceLocalTimeUndefined: Self = StObject.set(x, "forceLocalTime", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setForceZip64(value: Boolean): Self = StObject.set(x, "forceZip64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceLocalTime(value: Boolean): Self = this.set("forceLocalTime", value.asInstanceOf[js.Any])
+    def setForceZip64Undefined: Self = StObject.set(x, "forceZip64", js.undefined)
     
     @scala.inline
-    def deleteForceLocalTime: Self = this.set("forceLocalTime", js.undefined)
+    def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceZip64(value: Boolean): Self = this.set("forceZip64", value.asInstanceOf[js.Any])
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     @scala.inline
-    def deleteForceZip64: Self = this.set("forceZip64", js.undefined)
+    def setZlib(value: PartialZlibOptions): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStore(value: Boolean): Self = this.set("store", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
-    
-    @scala.inline
-    def setZlib(value: PartialZlibOptions): Self = this.set("zlib", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZlib: Self = this.set("zlib", js.undefined)
+    def setZlibUndefined: Self = StObject.set(x, "zlib", js.undefined)
   }
 }

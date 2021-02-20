@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.bufferMod.VertexBuffer
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Data extends js.Object {
+trait Data extends StObject {
   
   var data: StringDictionary[Float32Array] = js.native
   
@@ -33,30 +34,18 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataOps[Self <: Data] (val x: Self) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: StringDictionary[Float32Array]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSizes(value: StringDictionary[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrides(value: StringDictionary[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StringDictionary[Float32Array]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizes(value: StringDictionary[Double]): Self = this.set("sizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrides(value: StringDictionary[Double]): Self = this.set("strides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertexBuffers(value: StringDictionary[Nullable[VertexBuffer]]): Self = this.set("vertexBuffers", value.asInstanceOf[js.Any])
+    def setVertexBuffers(value: StringDictionary[Nullable[VertexBuffer]]): Self = StObject.set(x, "vertexBuffers", value.asInstanceOf[js.Any])
   }
 }

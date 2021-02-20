@@ -7,12 +7,13 @@ import typings.hafasClient.hafasClientStrings.`stop-website`
 import typings.hafasClient.hafasClientStrings.`transit-authority`
 import typings.hafasClient.hafasClientStrings.hint
 import typings.hafasClient.hafasClientStrings.status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hint extends js.Object {
+trait Hint extends StObject {
   
   var code: js.UndefOr[String] = js.native
   
@@ -37,44 +38,32 @@ object Hint {
   }
   
   @scala.inline
-  implicit class HintOps[Self <: Hint] (val x: Self) extends AnyVal {
+  implicit class HintMutableBuilder[Self <: Hint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    
+    @scala.inline
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTripId(value: String): Self = StObject.set(x, "tripId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTripIdUndefined: Self = StObject.set(x, "tripId", js.undefined)
     
     @scala.inline
     def setType(
       value: hint | status | `foreign-id` | `local-fare-zone` | `stop-website` | `stop-dhid` | `transit-authority`
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
-    
-    @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
-    
-    @scala.inline
-    def setTripId(value: String): Self = this.set("tripId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTripId: Self = this.set("tripId", js.undefined)
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

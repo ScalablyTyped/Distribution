@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResumeWorkflowRunResponse extends js.Object {
+trait ResumeWorkflowRunResponse extends StObject {
   
   /**
     * A list of the node IDs for the nodes that were actually restarted.
@@ -26,33 +27,21 @@ object ResumeWorkflowRunResponse {
   }
   
   @scala.inline
-  implicit class ResumeWorkflowRunResponseOps[Self <: ResumeWorkflowRunResponse] (val x: Self) extends AnyVal {
+  implicit class ResumeWorkflowRunResponseMutableBuilder[Self <: ResumeWorkflowRunResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeIds(value: NodeIdList): Self = StObject.set(x, "NodeIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeIdsUndefined: Self = StObject.set(x, "NodeIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeIdsVarargs(value: NameString*): Self = StObject.set(x, "NodeIds", js.Array(value :_*))
     
     @scala.inline
-    def setNodeIdsVarargs(value: NameString*): Self = this.set("NodeIds", js.Array(value :_*))
+    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeIds(value: NodeIdList): Self = this.set("NodeIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeIds: Self = this.set("NodeIds", js.undefined)
-    
-    @scala.inline
-    def setRunId(value: IdString): Self = this.set("RunId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunId: Self = this.set("RunId", js.undefined)
+    def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
   }
 }

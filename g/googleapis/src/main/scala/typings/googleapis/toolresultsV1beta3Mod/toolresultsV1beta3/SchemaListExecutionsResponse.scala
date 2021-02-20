@@ -1,11 +1,12 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaListExecutionsResponse extends js.Object {
+trait SchemaListExecutionsResponse extends StObject {
   
   /**
     * Executions.  Always set.
@@ -27,33 +28,21 @@ object SchemaListExecutionsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListExecutionsResponseOps[Self <: SchemaListExecutionsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListExecutionsResponseMutableBuilder[Self <: SchemaListExecutionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutions(value: js.Array[SchemaExecution]): Self = StObject.set(x, "executions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionsUndefined: Self = StObject.set(x, "executions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionsVarargs(value: SchemaExecution*): Self = StObject.set(x, "executions", js.Array(value :_*))
     
     @scala.inline
-    def setExecutionsVarargs(value: SchemaExecution*): Self = this.set("executions", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutions(value: js.Array[SchemaExecution]): Self = this.set("executions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutions: Self = this.set("executions", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

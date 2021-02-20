@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeIpv6PoolsRequest extends js.Object {
+trait DescribeIpv6PoolsRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -41,54 +42,42 @@ object DescribeIpv6PoolsRequest {
   }
   
   @scala.inline
-  implicit class DescribeIpv6PoolsRequestOps[Self <: DescribeIpv6PoolsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeIpv6PoolsRequestMutableBuilder[Self <: DescribeIpv6PoolsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setMaxResults(value: Ipv6PoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Ipv6PoolMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setPoolIds(value: Ipv6PoolIdList): Self = StObject.set(x, "PoolIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPoolIdsUndefined: Self = StObject.set(x, "PoolIds", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPoolIdsVarargs(value: Ipv6PoolEc2Id*): Self = this.set("PoolIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setPoolIds(value: Ipv6PoolIdList): Self = this.set("PoolIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoolIds: Self = this.set("PoolIds", js.undefined)
+    def setPoolIdsVarargs(value: Ipv6PoolEc2Id*): Self = StObject.set(x, "PoolIds", js.Array(value :_*))
   }
 }

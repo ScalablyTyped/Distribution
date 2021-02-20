@@ -1,6 +1,7 @@
 package typings.twoJs.mod
 
 import typings.twoJs.anon.Left
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,10 +20,10 @@ class Anchor protected () extends Vector {
   
   def listen(): this.type = js.native
 }
-/* static members */
-@JSImport("two.js", "Anchor")
-@js.native
-object Anchor extends js.Object {
+object Anchor {
   
+  /* static member */
+  @JSImport("two.js", "Anchor.AppendCurveProperties")
+  @js.native
   def AppendCurveProperties(): Unit = js.native
 }

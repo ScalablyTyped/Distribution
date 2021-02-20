@@ -2,12 +2,13 @@ package typings.evernote.anon
 
 import typings.evernote.mod.Types.ServiceLevel
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoteStoreUrl extends js.Object {
+trait NoteStoreUrl extends StObject {
   
   var noteStoreUrl: js.UndefOr[String] = js.native
   
@@ -28,48 +29,36 @@ object NoteStoreUrl {
   }
   
   @scala.inline
-  implicit class NoteStoreUrlOps[Self <: NoteStoreUrl] (val x: Self) extends AnyVal {
+  implicit class NoteStoreUrlMutableBuilder[Self <: NoteStoreUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoteStoreUrl(value: String): Self = StObject.set(x, "noteStoreUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoteStoreUrlUndefined: Self = StObject.set(x, "noteStoreUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceLevel(value: ServiceLevel): Self = StObject.set(x, "serviceLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteStoreUrl(value: String): Self = this.set("noteStoreUrl", value.asInstanceOf[js.Any])
+    def setServiceLevelUndefined: Self = StObject.set(x, "serviceLevel", js.undefined)
     
     @scala.inline
-    def deleteNoteStoreUrl: Self = this.set("noteStoreUrl", js.undefined)
+    def setUserId(value: UserID): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceLevel(value: ServiceLevel): Self = this.set("serviceLevel", value.asInstanceOf[js.Any])
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def deleteServiceLevel: Self = this.set("serviceLevel", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: UserID): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setWebApiUrlPrefix(value: String): Self = StObject.set(x, "webApiUrlPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
-    
-    @scala.inline
-    def setWebApiUrlPrefix(value: String): Self = this.set("webApiUrlPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebApiUrlPrefix: Self = this.set("webApiUrlPrefix", js.undefined)
+    def setWebApiUrlPrefixUndefined: Self = StObject.set(x, "webApiUrlPrefix", js.undefined)
   }
 }

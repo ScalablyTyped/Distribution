@@ -2,12 +2,13 @@ package typings.sdp.mod
 
 import typings.sdp.anon.Mechanism
 import typings.sdp.anon.Ssrc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SDPEncodingParameters extends js.Object {
+trait SDPEncodingParameters extends StObject {
   
   var codecPayloadType: js.UndefOr[Double] = js.native
   
@@ -26,39 +27,27 @@ object SDPEncodingParameters {
   }
   
   @scala.inline
-  implicit class SDPEncodingParametersOps[Self <: SDPEncodingParameters] (val x: Self) extends AnyVal {
+  implicit class SDPEncodingParametersMutableBuilder[Self <: SDPEncodingParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodecPayloadType(value: Double): Self = StObject.set(x, "codecPayloadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodecPayloadTypeUndefined: Self = StObject.set(x, "codecPayloadType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFec(value: Mechanism): Self = StObject.set(x, "fec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsrc(value: Double): Self = this.set("ssrc", value.asInstanceOf[js.Any])
+    def setFecUndefined: Self = StObject.set(x, "fec", js.undefined)
     
     @scala.inline
-    def setCodecPayloadType(value: Double): Self = this.set("codecPayloadType", value.asInstanceOf[js.Any])
+    def setRtx(value: Ssrc): Self = StObject.set(x, "rtx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodecPayloadType: Self = this.set("codecPayloadType", js.undefined)
+    def setRtxUndefined: Self = StObject.set(x, "rtx", js.undefined)
     
     @scala.inline
-    def setFec(value: Mechanism): Self = this.set("fec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFec: Self = this.set("fec", js.undefined)
-    
-    @scala.inline
-    def setRtx(value: Ssrc): Self = this.set("rtx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRtx: Self = this.set("rtx", js.undefined)
+    def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceOperationRequest extends js.Object {
+trait SourceOperationRequest extends StObject {
   
   /** Information about a request to get metadata about a source. */
   var getMetadata: js.UndefOr[SourceGetMetadataRequest] = js.native
@@ -34,54 +35,42 @@ object SourceOperationRequest {
   }
   
   @scala.inline
-  implicit class SourceOperationRequestOps[Self <: SourceOperationRequest] (val x: Self) extends AnyVal {
+  implicit class SourceOperationRequestMutableBuilder[Self <: SourceOperationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMetadata(value: SourceGetMetadataRequest): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMetadata(value: SourceGetMetadataRequest): Self = this.set("getMetadata", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteGetMetadata: Self = this.set("getMetadata", js.undefined)
+    def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSplit(value: SourceSplitRequest): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalName(value: String): Self = this.set("originalName", value.asInstanceOf[js.Any])
+    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     
     @scala.inline
-    def deleteOriginalName: Self = this.set("originalName", js.undefined)
+    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplit(value: SourceSplitRequest): Self = this.set("split", value.asInstanceOf[js.Any])
+    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
     @scala.inline
-    def deleteSplit: Self = this.set("split", js.undefined)
+    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageName: Self = this.set("stageName", js.undefined)
-    
-    @scala.inline
-    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemName: Self = this.set("systemName", js.undefined)
+    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
   }
 }

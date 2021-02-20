@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ToneScore. */
 @js.native
-trait ToneScore extends js.Object {
+trait ToneScore extends StObject {
   
   /** The score for the tone. * **`2017-09-21`:** The score that is returned lies in the range of 0.5 to 1. A score greater than 0.75 indicates a high likelihood that the tone is perceived in the content. * **`2016-05-19`:** The score that is returned lies in the range of 0 to 1. A score less than 0.5 indicates that the tone is unlikely to be perceived in the content; a score greater than 0.75 indicates a high likelihood that the tone is perceived. */
   var score: Double = js.native
@@ -26,27 +27,15 @@ object ToneScore {
   }
   
   @scala.inline
-  implicit class ToneScoreOps[Self <: ToneScore] (val x: Self) extends AnyVal {
+  implicit class ToneScoreMutableBuilder[Self <: ToneScore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTone_id(value: String): Self = StObject.set(x, "tone_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTone_id(value: String): Self = this.set("tone_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTone_name(value: String): Self = this.set("tone_name", value.asInstanceOf[js.Any])
+    def setTone_name(value: String): Self = StObject.set(x, "tone_name", value.asInstanceOf[js.Any])
   }
 }

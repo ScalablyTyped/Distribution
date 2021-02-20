@@ -1,11 +1,12 @@
 package typings.jsmediatags.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagFrameHeader extends js.Object {
+trait TagFrameHeader extends StObject {
   
   var flags: js.UndefOr[TagFrameFlags] = js.native
   
@@ -24,33 +25,21 @@ object TagFrameHeader {
   }
   
   @scala.inline
-  implicit class TagFrameHeaderOps[Self <: TagFrameHeader] (val x: Self) extends AnyVal {
+  implicit class TagFrameHeaderMutableBuilder[Self <: TagFrameHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlags(value: TagFrameFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderSize(value: Double): Self = StObject.set(x, "headerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderSize(value: Double): Self = this.set("headerSize", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlags(value: TagFrameFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

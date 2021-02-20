@@ -1,5 +1,6 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,39 +47,27 @@ object HingeConstraint {
   }
   
   @scala.inline
-  implicit class HingeConstraintOps[Self <: HingeConstraint] (val x: Self) extends AnyVal {
+  implicit class HingeConstraintMutableBuilder[Self <: HingeConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableMotor(value: () => Unit): Self = StObject.set(x, "disableMotor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableMotor(value: () => Unit): Self = StObject.set(x, "enableMotor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMotorEnabled(value: Boolean): Self = StObject.set(x, "motorEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableMotor(value: () => Unit): Self = this.set("disableMotor", js.Any.fromFunction0(value))
+    def setMotorEquation(value: RotationalMotorEquation): Self = StObject.set(x, "motorEquation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMotor(value: () => Unit): Self = this.set("enableMotor", js.Any.fromFunction0(value))
+    def setMotorMaxForce(value: Double): Self = StObject.set(x, "motorMaxForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotorEnabled(value: Boolean): Self = this.set("motorEnabled", value.asInstanceOf[js.Any])
+    def setMotorMinForce(value: Double): Self = StObject.set(x, "motorMinForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotorEquation(value: RotationalMotorEquation): Self = this.set("motorEquation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMotorMaxForce(value: Double): Self = this.set("motorMaxForce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMotorMinForce(value: Double): Self = this.set("motorMinForce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMotorTargetVelocity(value: Double): Self = this.set("motorTargetVelocity", value.asInstanceOf[js.Any])
+    def setMotorTargetVelocity(value: Double): Self = StObject.set(x, "motorTargetVelocity", value.asInstanceOf[js.Any])
   }
 }

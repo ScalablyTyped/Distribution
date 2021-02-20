@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebhookFilterRule extends js.Object {
+trait WebhookFilterRule extends StObject {
   
   /**
     * A JsonPath expression that is applied to the body/payload of the webhook. The value selected by the JsonPath expression must match the value specified in the MatchEquals field. Otherwise, the request is ignored. For more information, see Java JsonPath implementation in GitHub.
@@ -26,27 +27,15 @@ object WebhookFilterRule {
   }
   
   @scala.inline
-  implicit class WebhookFilterRuleOps[Self <: WebhookFilterRule] (val x: Self) extends AnyVal {
+  implicit class WebhookFilterRuleMutableBuilder[Self <: WebhookFilterRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJsonPath(value: JsonPath): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchEquals(value: MatchEquals): Self = StObject.set(x, "matchEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJsonPath(value: JsonPath): Self = this.set("jsonPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchEquals(value: MatchEquals): Self = this.set("matchEquals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchEquals: Self = this.set("matchEquals", js.undefined)
+    def setMatchEqualsUndefined: Self = StObject.set(x, "matchEquals", js.undefined)
   }
 }

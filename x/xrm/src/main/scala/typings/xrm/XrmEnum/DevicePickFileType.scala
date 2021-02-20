@@ -3,6 +3,7 @@ package typings.xrm.XrmEnum
 import typings.xrm.xrmStrings.audio
 import typings.xrm.xrmStrings.image
 import typings.xrm.xrmStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.video
   - typings.xrm.xrmStrings.image
 */
-trait DevicePickFileType extends js.Object
+trait DevicePickFileType extends StObject
 object DevicePickFileType {
   
   @scala.inline

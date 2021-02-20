@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2UiElementsTableCardRow extends js.Object {
+trait GoogleActionsV2UiElementsTableCardRow extends StObject {
   
   /**
     * Cells in this row. The first 3 cells are guaranteed to be shown but
@@ -28,33 +29,21 @@ object GoogleActionsV2UiElementsTableCardRow {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2UiElementsTableCardRowOps[Self <: GoogleActionsV2UiElementsTableCardRow] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2UiElementsTableCardRowMutableBuilder[Self <: GoogleActionsV2UiElementsTableCardRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCells(value: js.Array[GoogleActionsV2UiElementsTableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellsVarargs(value: GoogleActionsV2UiElementsTableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
     @scala.inline
-    def setCellsVarargs(value: GoogleActionsV2UiElementsTableCardCell*): Self = this.set("cells", js.Array(value :_*))
+    def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCells(value: js.Array[GoogleActionsV2UiElementsTableCardCell]): Self = this.set("cells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCells: Self = this.set("cells", js.undefined)
-    
-    @scala.inline
-    def setDividerAfter(value: Boolean): Self = this.set("dividerAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDividerAfter: Self = this.set("dividerAfter", js.undefined)
+    def setDividerAfterUndefined: Self = StObject.set(x, "dividerAfter", js.undefined)
   }
 }

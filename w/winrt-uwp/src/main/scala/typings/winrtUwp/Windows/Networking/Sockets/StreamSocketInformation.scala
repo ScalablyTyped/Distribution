@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate
 import typings.winrtUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides socket information on a StreamSocket object. */
 @js.native
-trait StreamSocketInformation extends js.Object {
+trait StreamSocketInformation extends StObject {
   
   /** Gets bandwidth information for network data transfer on a StreamSocket object. */
   var bandwidthStatistics: BandwidthStatistics = js.native
@@ -79,60 +80,48 @@ object StreamSocketInformation {
   }
   
   @scala.inline
-  implicit class StreamSocketInformationOps[Self <: StreamSocketInformation] (val x: Self) extends AnyVal {
+  implicit class StreamSocketInformationMutableBuilder[Self <: StreamSocketInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandwidthStatistics(value: BandwidthStatistics): Self = StObject.set(x, "bandwidthStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalAddress(value: HostName): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalPort(value: String): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidthStatistics(value: BandwidthStatistics): Self = this.set("bandwidthStatistics", value.asInstanceOf[js.Any])
+    def setProtectionLevel(value: SocketProtectionLevel): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAddress(value: HostName): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    def setRemoteAddress(value: HostName): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalPort(value: String): Self = this.set("localPort", value.asInstanceOf[js.Any])
+    def setRemoteHostName(value: HostName): Self = StObject.set(x, "remoteHostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectionLevel(value: SocketProtectionLevel): Self = this.set("protectionLevel", value.asInstanceOf[js.Any])
+    def setRemotePort(value: String): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteAddress(value: HostName): Self = this.set("remoteAddress", value.asInstanceOf[js.Any])
+    def setRemoteServiceName(value: String): Self = StObject.set(x, "remoteServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteHostName(value: HostName): Self = this.set("remoteHostName", value.asInstanceOf[js.Any])
+    def setRoundTripTimeStatistics(value: RoundTripTimeStatistics): Self = StObject.set(x, "roundTripTimeStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemotePort(value: String): Self = this.set("remotePort", value.asInstanceOf[js.Any])
+    def setServerCertificate(value: Certificate): Self = StObject.set(x, "serverCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteServiceName(value: String): Self = this.set("remoteServiceName", value.asInstanceOf[js.Any])
+    def setServerCertificateErrorSeverity(value: SocketSslErrorSeverity): Self = StObject.set(x, "serverCertificateErrorSeverity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundTripTimeStatistics(value: RoundTripTimeStatistics): Self = this.set("roundTripTimeStatistics", value.asInstanceOf[js.Any])
+    def setServerCertificateErrors(value: IVectorView[ChainValidationResult]): Self = StObject.set(x, "serverCertificateErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertificate(value: Certificate): Self = this.set("serverCertificate", value.asInstanceOf[js.Any])
+    def setServerIntermediateCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "serverIntermediateCertificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertificateErrorSeverity(value: SocketSslErrorSeverity): Self = this.set("serverCertificateErrorSeverity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerCertificateErrors(value: IVectorView[ChainValidationResult]): Self = this.set("serverCertificateErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerIntermediateCertificates(value: IVectorView[Certificate]): Self = this.set("serverIntermediateCertificates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionKey(value: IBuffer): Self = this.set("sessionKey", value.asInstanceOf[js.Any])
+    def setSessionKey(value: IBuffer): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
   }
 }

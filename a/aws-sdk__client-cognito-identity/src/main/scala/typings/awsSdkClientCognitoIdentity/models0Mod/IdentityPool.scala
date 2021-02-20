@@ -1,12 +1,13 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityPool extends js.Object {
+trait IdentityPool extends StObject {
   
   /**
     * <p>Enables or disables the Basic (Classic) authentication flow. For more information, see
@@ -62,9 +63,88 @@ trait IdentityPool extends js.Object {
     */
   var SupportedLoginProviders: js.UndefOr[StringDictionary[String]] = js.native
 }
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "IdentityPool")
-@js.native
-object IdentityPool extends js.Object {
+object IdentityPool {
   
+  @scala.inline
+  def apply(): IdentityPool = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[IdentityPool]
+  }
+  
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "IdentityPool.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: IdentityPool): js.Any = js.native
+  
+  @scala.inline
+  implicit class IdentityPoolMutableBuilder[Self <: IdentityPool] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAllowClassicFlow(value: Boolean): Self = StObject.set(x, "AllowClassicFlow", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAllowClassicFlowUndefined: Self = StObject.set(x, "AllowClassicFlow", js.undefined)
+    
+    @scala.inline
+    def setAllowUnauthenticatedIdentities(value: Boolean): Self = StObject.set(x, "AllowUnauthenticatedIdentities", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAllowUnauthenticatedIdentitiesUndefined: Self = StObject.set(x, "AllowUnauthenticatedIdentities", js.undefined)
+    
+    @scala.inline
+    def setCognitoIdentityProviders(value: js.Array[CognitoIdentityProvider]): Self = StObject.set(x, "CognitoIdentityProviders", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "CognitoIdentityProviders", js.undefined)
+    
+    @scala.inline
+    def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = StObject.set(x, "CognitoIdentityProviders", js.Array(value :_*))
+    
+    @scala.inline
+    def setDeveloperProviderName(value: String): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeveloperProviderNameUndefined: Self = StObject.set(x, "DeveloperProviderName", js.undefined)
+    
+    @scala.inline
+    def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    
+    @scala.inline
+    def setIdentityPoolName(value: String): Self = StObject.set(x, "IdentityPoolName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityPoolNameUndefined: Self = StObject.set(x, "IdentityPoolName", js.undefined)
+    
+    @scala.inline
+    def setIdentityPoolTags(value: StringDictionary[String]): Self = StObject.set(x, "IdentityPoolTags", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityPoolTagsUndefined: Self = StObject.set(x, "IdentityPoolTags", js.undefined)
+    
+    @scala.inline
+    def setOpenIdConnectProviderARNs(value: js.Array[String]): Self = StObject.set(x, "OpenIdConnectProviderARNs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOpenIdConnectProviderARNsUndefined: Self = StObject.set(x, "OpenIdConnectProviderARNs", js.undefined)
+    
+    @scala.inline
+    def setOpenIdConnectProviderARNsVarargs(value: String*): Self = StObject.set(x, "OpenIdConnectProviderARNs", js.Array(value :_*))
+    
+    @scala.inline
+    def setSamlProviderARNs(value: js.Array[String]): Self = StObject.set(x, "SamlProviderARNs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSamlProviderARNsUndefined: Self = StObject.set(x, "SamlProviderARNs", js.undefined)
+    
+    @scala.inline
+    def setSamlProviderARNsVarargs(value: String*): Self = StObject.set(x, "SamlProviderARNs", js.Array(value :_*))
+    
+    @scala.inline
+    def setSupportedLoginProviders(value: StringDictionary[String]): Self = StObject.set(x, "SupportedLoginProviders", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSupportedLoginProvidersUndefined: Self = StObject.set(x, "SupportedLoginProviders", js.undefined)
+  }
 }

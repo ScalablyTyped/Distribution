@@ -2,12 +2,13 @@ package typings.actionsOnGoogle.apiV1Mod
 
 import typings.actionsOnGoogle.anon.Ack
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartHomeV1ExecuteRequestExecution extends js.Object {
+trait SmartHomeV1ExecuteRequestExecution extends StObject {
   
   var challenge: js.UndefOr[Ack] = js.native
   
@@ -24,33 +25,21 @@ object SmartHomeV1ExecuteRequestExecution {
   }
   
   @scala.inline
-  implicit class SmartHomeV1ExecuteRequestExecutionOps[Self <: SmartHomeV1ExecuteRequestExecution] (val x: Self) extends AnyVal {
+  implicit class SmartHomeV1ExecuteRequestExecutionMutableBuilder[Self <: SmartHomeV1ExecuteRequestExecution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallenge(value: Ack): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChallengeUndefined: Self = StObject.set(x, "challenge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setParams(value: ApiClientObjectMap[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallenge(value: Ack): Self = this.set("challenge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChallenge: Self = this.set("challenge", js.undefined)
-    
-    @scala.inline
-    def setParams(value: ApiClientObjectMap[_]): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

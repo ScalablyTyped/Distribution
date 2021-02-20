@@ -1,11 +1,12 @@
 package typings.pixiJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoPlay extends js.Object {
+trait AutoPlay extends StObject {
   
   var autoLoad: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object AutoPlay {
   }
   
   @scala.inline
-  implicit class AutoPlayOps[Self <: AutoPlay] (val x: Self) extends AnyVal {
+  implicit class AutoPlayMutableBuilder[Self <: AutoPlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoLoad(value: Boolean): Self = this.set("autoLoad", value.asInstanceOf[js.Any])
+    def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
     @scala.inline
-    def deleteAutoLoad: Self = this.set("autoLoad", js.undefined)
+    def setCrossorigin(value: Boolean): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    def setCrossoriginUndefined: Self = StObject.set(x, "crossorigin", js.undefined)
     
     @scala.inline
-    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    def setUpdateFPS(value: Double): Self = StObject.set(x, "updateFPS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossorigin(value: Boolean): Self = this.set("crossorigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrossorigin: Self = this.set("crossorigin", js.undefined)
-    
-    @scala.inline
-    def setUpdateFPS(value: Double): Self = this.set("updateFPS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateFPS: Self = this.set("updateFPS", js.undefined)
+    def setUpdateFPSUndefined: Self = StObject.set(x, "updateFPS", js.undefined)
   }
 }

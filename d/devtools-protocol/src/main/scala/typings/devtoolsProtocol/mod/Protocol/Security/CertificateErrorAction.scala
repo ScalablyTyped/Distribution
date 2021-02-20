@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Security
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.continue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.cancel
 */
-trait CertificateErrorAction extends js.Object
+trait CertificateErrorAction extends StObject
 object CertificateErrorAction {
   
   @scala.inline

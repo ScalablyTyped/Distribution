@@ -9,27 +9,42 @@ import typings.rebass.mod.HeadingProps
 import typings.rebass.mod.ImageProps
 import typings.rebass.mod.LinkProps
 import typings.rebass.mod.TextProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rebass/styled-components", JSImport.Namespace)
-@js.native
-object styledComponentsMod extends js.Object {
+object styledComponentsMod {
   
+  @JSImport("rebass/styled-components", "Box")
+  @js.native
   val Box: FunctionComponent[BoxProps] = js.native
   
+  @JSImport("rebass/styled-components", "Button")
+  @js.native
   val Button: FunctionComponent[ButtonProps] = js.native
   
+  @JSImport("rebass/styled-components", "Card")
+  @js.native
   val Card: FunctionComponent[BoxKnownProps] = js.native
   
+  @JSImport("rebass/styled-components", "Flex")
+  @js.native
   val Flex: FunctionComponent[FlexProps] = js.native
   
+  @JSImport("rebass/styled-components", "Heading")
+  @js.native
   val Heading: FunctionComponent[HeadingProps] = js.native
   
+  @JSImport("rebass/styled-components", "Image")
+  @js.native
   val Image: FunctionComponent[ImageProps] = js.native
   
+  @JSImport("rebass/styled-components", "Link")
+  @js.native
   val Link: FunctionComponent[LinkProps] = js.native
   
+  @JSImport("rebass/styled-components", "Text")
+  @js.native
   val Text: FunctionComponent[TextProps] = js.native
 }

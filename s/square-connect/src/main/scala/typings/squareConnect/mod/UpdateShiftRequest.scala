@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "UpdateShiftRequest")
 @js.native
-class UpdateShiftRequest () extends js.Object {
+class UpdateShiftRequest () extends StObject {
   
   /**
     * The updated `Shift` object.

@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeoXmlReadOptions extends js.Object {
+trait IGeoXmlReadOptions extends StObject {
   
   /** Specifies if KML ScreenOverlays should be read or ignored. Default: true */
   var allowKmlScreenOverlays: js.UndefOr[Boolean] = js.native
@@ -51,66 +52,54 @@ object IGeoXmlReadOptions {
   }
   
   @scala.inline
-  implicit class IGeoXmlReadOptionsOps[Self <: IGeoXmlReadOptions] (val x: Self) extends AnyVal {
+  implicit class IGeoXmlReadOptionsMutableBuilder[Self <: IGeoXmlReadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowKmlScreenOverlays(value: Boolean): Self = StObject.set(x, "allowKmlScreenOverlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowKmlScreenOverlaysUndefined: Self = StObject.set(x, "allowKmlScreenOverlays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptureGpxPathWaypoints(value: Boolean): Self = StObject.set(x, "captureGpxPathWaypoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowKmlScreenOverlays(value: Boolean): Self = this.set("allowKmlScreenOverlays", value.asInstanceOf[js.Any])
+    def setCaptureGpxPathWaypointsUndefined: Self = StObject.set(x, "captureGpxPathWaypoints", js.undefined)
     
     @scala.inline
-    def deleteAllowKmlScreenOverlays: Self = this.set("allowKmlScreenOverlays", js.undefined)
+    def setDefaultStyles(value: IStylesOptions): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureGpxPathWaypoints(value: Boolean): Self = this.set("captureGpxPathWaypoints", value.asInstanceOf[js.Any])
+    def setDefaultStylesUndefined: Self = StObject.set(x, "defaultStyles", js.undefined)
     
     @scala.inline
-    def deleteCaptureGpxPathWaypoints: Self = this.set("captureGpxPathWaypoints", js.undefined)
+    def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultStyles(value: IStylesOptions): Self = this.set("defaultStyles", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDefaultStyles: Self = this.set("defaultStyles", js.undefined)
+    def setIgnoreVisibility(value: Boolean): Self = StObject.set(x, "ignoreVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* msg */ String => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setIgnoreVisibilityUndefined: Self = StObject.set(x, "ignoreVisibility", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setMaxNetworkLinkDepth(value: Double): Self = StObject.set(x, "maxNetworkLinkDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreVisibility(value: Boolean): Self = this.set("ignoreVisibility", value.asInstanceOf[js.Any])
+    def setMaxNetworkLinkDepthUndefined: Self = StObject.set(x, "maxNetworkLinkDepth", js.undefined)
     
     @scala.inline
-    def deleteIgnoreVisibility: Self = this.set("ignoreVisibility", js.undefined)
+    def setMaxNetworkLinks(value: Double): Self = StObject.set(x, "maxNetworkLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNetworkLinkDepth(value: Double): Self = this.set("maxNetworkLinkDepth", value.asInstanceOf[js.Any])
+    def setMaxNetworkLinksUndefined: Self = StObject.set(x, "maxNetworkLinks", js.undefined)
     
     @scala.inline
-    def deleteMaxNetworkLinkDepth: Self = this.set("maxNetworkLinkDepth", js.undefined)
+    def setSetPushpinTitles(value: Boolean): Self = StObject.set(x, "setPushpinTitles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNetworkLinks(value: Double): Self = this.set("maxNetworkLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxNetworkLinks: Self = this.set("maxNetworkLinks", js.undefined)
-    
-    @scala.inline
-    def setSetPushpinTitles(value: Boolean): Self = this.set("setPushpinTitles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetPushpinTitles: Self = this.set("setPushpinTitles", js.undefined)
+    def setSetPushpinTitlesUndefined: Self = StObject.set(x, "setPushpinTitles", js.undefined)
   }
 }

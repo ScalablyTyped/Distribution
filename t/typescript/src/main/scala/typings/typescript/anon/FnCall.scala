@@ -3,12 +3,13 @@ package typings.typescript.anon
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.Visitor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCall extends js.Object {
+trait FnCall extends StObject {
   
   def apply[T /* <: Node */](): js.UndefOr[NodeArray[T]] = js.native
   def apply[T /* <: Node */](

@@ -1,15 +1,16 @@
 package typings.sharepoint.SP.Social
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialStatusCode extends js.Object
+sealed trait SocialStatusCode extends StObject
 /** Specifies a status or error code. */
 @JSGlobal("SP.Social.SocialStatusCode")
 @js.native
-object SocialStatusCode extends js.Object {
+object SocialStatusCode extends StObject {
   
   @js.native
   sealed trait OK extends SocialStatusCode

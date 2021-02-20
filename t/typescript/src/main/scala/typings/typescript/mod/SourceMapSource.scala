@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceMapSource extends js.Object {
+trait SourceMapSource extends StObject {
   
   var fileName: java.lang.String = js.native
   
@@ -28,33 +29,21 @@ object SourceMapSource {
   }
   
   @scala.inline
-  implicit class SourceMapSourceOps[Self <: SourceMapSource] (val x: Self) extends AnyVal {
+  implicit class SourceMapSourceMutableBuilder[Self <: SourceMapSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLineAndCharacterOfPosition(value: Double => LineAndCharacter): Self = StObject.set(x, "getLineAndCharacterOfPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkipTrivia(value: /* pos */ Double => Double): Self = StObject.set(x, "skipTrivia", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFileName(value: java.lang.String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setSkipTriviaUndefined: Self = StObject.set(x, "skipTrivia", js.undefined)
     
     @scala.inline
-    def setGetLineAndCharacterOfPosition(value: Double => LineAndCharacter): Self = this.set("getLineAndCharacterOfPosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setText(value: java.lang.String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipTrivia(value: /* pos */ Double => Double): Self = this.set("skipTrivia", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSkipTrivia: Self = this.set("skipTrivia", js.undefined)
+    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

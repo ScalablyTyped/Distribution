@@ -4,13 +4,14 @@ import typings.orientjs.orientjsStrings.document
 import typings.orientjs.orientjsStrings.graph
 import typings.orientjs.orientjsStrings.memory
 import typings.orientjs.orientjsStrings.plocal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "OSessionManager")
 @js.native
-class OSessionManager () extends js.Object {
+class OSessionManager () extends StObject {
   
   def acquireSession(op: js.Any, data: js.Any): js.Promise[ODatabaseSession] = js.native
   

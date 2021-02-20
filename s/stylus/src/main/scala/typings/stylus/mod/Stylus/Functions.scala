@@ -14,12 +14,13 @@ import typings.stylus.mod.Stylus.Nodes.Property
 import typings.stylus.mod.Stylus.Nodes.RGBA
 import typings.stylus.mod.Stylus.Nodes.String
 import typings.stylus.mod.Stylus.Nodes.Unit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Functions extends js.Object {
+trait Functions extends StObject {
   
   /**
     * Return the opposites of the given `positions`.

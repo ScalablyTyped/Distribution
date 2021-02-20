@@ -2,7 +2,7 @@ package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ddTrace.anon.Execute
-import typings.ddTrace.mod.Analyzable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,9 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```
   */
 @js.native
-trait graphql
-  extends Integration
-     with Analyzable {
+trait graphql extends Instrumentation {
   
   /**
     * Whether to collapse list items into a single element. (i.e. single
@@ -87,56 +85,44 @@ object graphql {
   }
   
   @scala.inline
-  implicit class graphqlOps[Self <: graphql] (val x: Self) extends AnyVal {
+  implicit class graphqlMutableBuilder[Self <: graphql] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapse(value: Boolean): Self = this.set("collapse", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    def setHooks(value: Execute): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setSignature(value: Boolean): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHooks(value: Execute): Self = this.set("hooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHooks: Self = this.set("hooks", js.undefined)
-    
-    @scala.inline
-    def setSignature(value: Boolean): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
-    
-    @scala.inline
-    def setVariablesVarargs(value: String*): Self = this.set("variables", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariablesFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[_]): Self = this.set("variables", js.Any.fromFunction1(value))
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
     @scala.inline
     def setVariables(
       value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[_]])
-    ): Self = this.set("variables", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVariables: Self = this.set("variables", js.undefined)
+    def setVariablesFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[_]): Self = StObject.set(x, "variables", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+    
+    @scala.inline
+    def setVariablesVarargs(value: String*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

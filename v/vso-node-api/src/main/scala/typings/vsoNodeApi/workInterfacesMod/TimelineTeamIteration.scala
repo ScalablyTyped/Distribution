@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.workInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineTeamIteration extends js.Object {
+trait TimelineTeamIteration extends StObject {
   
   /**
     * The end date of the iteration
@@ -60,45 +61,33 @@ object TimelineTeamIteration {
   }
   
   @scala.inline
-  implicit class TimelineTeamIterationOps[Self <: TimelineTeamIteration] (val x: Self) extends AnyVal {
+  implicit class TimelineTeamIterationMutableBuilder[Self <: TimelineTeamIteration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinishDate(value: Date): Self = StObject.set(x, "finishDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartiallyPagedWorkItems(value: js.Array[js.Array[_]]): Self = StObject.set(x, "partiallyPagedWorkItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishDate(value: Date): Self = this.set("finishDate", value.asInstanceOf[js.Any])
+    def setPartiallyPagedWorkItemsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "partiallyPagedWorkItems", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartiallyPagedWorkItemsVarargs(value: js.Array[js.Any]*): Self = this.set("partiallyPagedWorkItems", js.Array(value :_*))
+    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartiallyPagedWorkItems(value: js.Array[js.Array[_]]): Self = this.set("partiallyPagedWorkItems", value.asInstanceOf[js.Any])
+    def setStatus(value: TimelineIterationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setWorkItems(value: js.Array[js.Array[_]]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: Date): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: TimelineIterationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemsVarargs(value: js.Array[js.Any]*): Self = this.set("workItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkItems(value: js.Array[js.Array[_]]): Self = this.set("workItems", value.asInstanceOf[js.Any])
+    def setWorkItemsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "workItems", js.Array(value :_*))
   }
 }

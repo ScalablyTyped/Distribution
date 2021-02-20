@@ -4,13 +4,12 @@ import typings.openui5.sap.ui.base.EventProvider
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.base.Object
 import typings.openui5.sap.ui.model.ListBinding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.message")
-@js.native
-object message extends js.Object {
+object message {
   
   @js.native
   trait ControlMessageProcessor extends MessageProcessor {

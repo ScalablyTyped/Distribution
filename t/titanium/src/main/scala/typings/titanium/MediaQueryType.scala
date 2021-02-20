@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A specifier for a media library query. By default, filters perform an exact match.
   */
 @js.native
-trait MediaQueryType extends js.Object {
+trait MediaQueryType extends StObject {
   
   /**
     * The album artist to filter on. Value should be a String.
@@ -117,132 +118,120 @@ object MediaQueryType {
   }
   
   @scala.inline
-  implicit class MediaQueryTypeOps[Self <: MediaQueryType] (val x: Self) extends AnyVal {
+  implicit class MediaQueryTypeMutableBuilder[Self <: MediaQueryType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbumArtist(value: MediaQueryInfoType | String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbumArtistPersistentID(value: MediaQueryInfoType | Double): Self = StObject.set(x, "albumArtistPersistentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlbumArtistPersistentIDUndefined: Self = StObject.set(x, "albumArtistPersistentID", js.undefined)
     
     @scala.inline
-    def setAlbumArtist(value: MediaQueryInfoType | String): Self = this.set("albumArtist", value.asInstanceOf[js.Any])
+    def setAlbumArtistUndefined: Self = StObject.set(x, "albumArtist", js.undefined)
     
     @scala.inline
-    def deleteAlbumArtist: Self = this.set("albumArtist", js.undefined)
+    def setAlbumPersistentID(value: MediaQueryInfoType | Double): Self = StObject.set(x, "albumPersistentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumArtistPersistentID(value: MediaQueryInfoType | Double): Self = this.set("albumArtistPersistentID", value.asInstanceOf[js.Any])
+    def setAlbumPersistentIDUndefined: Self = StObject.set(x, "albumPersistentID", js.undefined)
     
     @scala.inline
-    def deleteAlbumArtistPersistentID: Self = this.set("albumArtistPersistentID", js.undefined)
+    def setAlbumTitle(value: MediaQueryInfoType | String): Self = StObject.set(x, "albumTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumPersistentID(value: MediaQueryInfoType | Double): Self = this.set("albumPersistentID", value.asInstanceOf[js.Any])
+    def setAlbumTitleUndefined: Self = StObject.set(x, "albumTitle", js.undefined)
     
     @scala.inline
-    def deleteAlbumPersistentID: Self = this.set("albumPersistentID", js.undefined)
+    def setArtist(value: MediaQueryInfoType | String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumTitle(value: MediaQueryInfoType | String): Self = this.set("albumTitle", value.asInstanceOf[js.Any])
+    def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
     
     @scala.inline
-    def deleteAlbumTitle: Self = this.set("albumTitle", js.undefined)
+    def setComposer(value: MediaQueryInfoType | String): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtist(value: MediaQueryInfoType | String): Self = this.set("artist", value.asInstanceOf[js.Any])
+    def setComposerPersistentID(value: MediaQueryInfoType | Double): Self = StObject.set(x, "composerPersistentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArtist: Self = this.set("artist", js.undefined)
+    def setComposerPersistentIDUndefined: Self = StObject.set(x, "composerPersistentID", js.undefined)
     
     @scala.inline
-    def setComposer(value: MediaQueryInfoType | String): Self = this.set("composer", value.asInstanceOf[js.Any])
+    def setComposerUndefined: Self = StObject.set(x, "composer", js.undefined)
     
     @scala.inline
-    def deleteComposer: Self = this.set("composer", js.undefined)
+    def setGenre(value: MediaQueryInfoType | String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposerPersistentID(value: MediaQueryInfoType | Double): Self = this.set("composerPersistentID", value.asInstanceOf[js.Any])
+    def setGenrePersistentID(value: MediaQueryInfoType | Double): Self = StObject.set(x, "genrePersistentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComposerPersistentID: Self = this.set("composerPersistentID", js.undefined)
+    def setGenrePersistentIDUndefined: Self = StObject.set(x, "genrePersistentID", js.undefined)
     
     @scala.inline
-    def setGenre(value: MediaQueryInfoType | String): Self = this.set("genre", value.asInstanceOf[js.Any])
+    def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
     
     @scala.inline
-    def deleteGenre: Self = this.set("genre", js.undefined)
+    def setGrouping(value: Double): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenrePersistentID(value: MediaQueryInfoType | Double): Self = this.set("genrePersistentID", value.asInstanceOf[js.Any])
+    def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
     
     @scala.inline
-    def deleteGenrePersistentID: Self = this.set("genrePersistentID", js.undefined)
+    def setHasProtectedAsset(value: MediaQueryInfoType | Boolean): Self = StObject.set(x, "hasProtectedAsset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrouping(value: Double): Self = this.set("grouping", value.asInstanceOf[js.Any])
+    def setHasProtectedAssetUndefined: Self = StObject.set(x, "hasProtectedAsset", js.undefined)
     
     @scala.inline
-    def deleteGrouping: Self = this.set("grouping", js.undefined)
+    def setIsCloudItem(value: MediaQueryInfoType | Boolean): Self = StObject.set(x, "isCloudItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasProtectedAsset(value: MediaQueryInfoType | Boolean): Self = this.set("hasProtectedAsset", value.asInstanceOf[js.Any])
+    def setIsCloudItemUndefined: Self = StObject.set(x, "isCloudItem", js.undefined)
     
     @scala.inline
-    def deleteHasProtectedAsset: Self = this.set("hasProtectedAsset", js.undefined)
+    def setIsCompilation(value: MediaQueryInfoType | Boolean): Self = StObject.set(x, "isCompilation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCloudItem(value: MediaQueryInfoType | Boolean): Self = this.set("isCloudItem", value.asInstanceOf[js.Any])
+    def setIsCompilationUndefined: Self = StObject.set(x, "isCompilation", js.undefined)
     
     @scala.inline
-    def deleteIsCloudItem: Self = this.set("isCloudItem", js.undefined)
+    def setMediaType(value: MediaQueryInfoType | Double): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCompilation(value: MediaQueryInfoType | Boolean): Self = this.set("isCompilation", value.asInstanceOf[js.Any])
+    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
     @scala.inline
-    def deleteIsCompilation: Self = this.set("isCompilation", js.undefined)
+    def setPersistentID(value: MediaQueryInfoType | Double): Self = StObject.set(x, "persistentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: MediaQueryInfoType | Double): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setPersistentIDUndefined: Self = StObject.set(x, "persistentID", js.undefined)
     
     @scala.inline
-    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+    def setPlayCount(value: MediaQueryInfoType | Double): Self = StObject.set(x, "playCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentID(value: MediaQueryInfoType | Double): Self = this.set("persistentID", value.asInstanceOf[js.Any])
+    def setPlayCountUndefined: Self = StObject.set(x, "playCount", js.undefined)
     
     @scala.inline
-    def deletePersistentID: Self = this.set("persistentID", js.undefined)
+    def setPodcastPersistentID(value: MediaQueryInfoType | Double): Self = StObject.set(x, "podcastPersistentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayCount(value: MediaQueryInfoType | Double): Self = this.set("playCount", value.asInstanceOf[js.Any])
+    def setPodcastPersistentIDUndefined: Self = StObject.set(x, "podcastPersistentID", js.undefined)
     
     @scala.inline
-    def deletePlayCount: Self = this.set("playCount", js.undefined)
+    def setPodcastTitle(value: MediaQueryInfoType | String): Self = StObject.set(x, "podcastTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPodcastPersistentID(value: MediaQueryInfoType | Double): Self = this.set("podcastPersistentID", value.asInstanceOf[js.Any])
+    def setPodcastTitleUndefined: Self = StObject.set(x, "podcastTitle", js.undefined)
     
     @scala.inline
-    def deletePodcastPersistentID: Self = this.set("podcastPersistentID", js.undefined)
+    def setTitle(value: MediaQueryInfoType | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPodcastTitle(value: MediaQueryInfoType | String): Self = this.set("podcastTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePodcastTitle: Self = this.set("podcastTitle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: MediaQueryInfoType | String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

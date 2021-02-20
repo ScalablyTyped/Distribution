@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientBooks.anon.AnnotationIdCallback
 import typings.maximMazurokGapiClientBooks.anon.LayerIds
 import typings.maximMazurokGapiClientBooks.anon.ShowOnlySummaryInResponse
 import typings.maximMazurokGapiClientBooks.anon.VolumeId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationsResource extends js.Object {
+trait AnnotationsResource extends StObject {
   
   /** Deletes an annotation. */
   def delete(): Request[js.Object] = js.native

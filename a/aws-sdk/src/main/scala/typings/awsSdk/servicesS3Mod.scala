@@ -8,17 +8,22 @@ import typings.awsSdk.presignedPostMod.PresignedPost.Params
 import typings.awsSdk.s3Mod.PresignedPost
 import typings.awsSdk.s3Mod.PutObjectRequest
 import typings.awsSdk.serviceMod.Service
+import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/lib/services/s3", JSImport.Namespace)
-@js.native
-object servicesS3Mod extends js.Object {
+object servicesS3Mod {
   
+  @JSImport("aws-sdk/lib/services/s3", "S3Customizations")
   @js.native
+  /**
+    * Creates a new service object with a configuration object.
+    */
   class S3Customizations () extends Service {
+    def this(config: ServiceConfigurationOptions) = this()
     
     /**
       * Get the form fields and target URL for direct POST uploading.
@@ -65,9 +70,16 @@ object servicesS3Mod extends js.Object {
     ): ManagedUpload = js.native
   }
   /* static members */
-  @js.native
-  object S3Customizations extends js.Object {
+  object S3Customizations {
     
-    var ManagedUpload: TypeofManagedUpload = js.native
+    @JSImport("aws-sdk/lib/services/s3", "S3Customizations")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("aws-sdk/lib/services/s3", "S3Customizations.ManagedUpload")
+    @js.native
+    def ManagedUpload: TypeofManagedUpload = js.native
+    @scala.inline
+    def ManagedUpload_=(x: TypeofManagedUpload): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ManagedUpload")(x.asInstanceOf[js.Any])
   }
 }

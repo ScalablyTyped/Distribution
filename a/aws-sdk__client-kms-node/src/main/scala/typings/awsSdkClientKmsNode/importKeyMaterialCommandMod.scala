@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesImportKeyMaterialInputMod.ImportKeyMater
 import typings.awsSdkClientKmsNode.typesImportKeyMaterialOutputMod.ImportKeyMaterialOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/ImportKeyMaterialCommand", JSImport.Namespace)
-@js.native
-object importKeyMaterialCommandMod extends js.Object {
+object importKeyMaterialCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/ImportKeyMaterialCommand", "ImportKeyMaterialCommand")
   @js.native
   class ImportKeyMaterialCommand protected () extends Command[
           InputTypesUnion, 

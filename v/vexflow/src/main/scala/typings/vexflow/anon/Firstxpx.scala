@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Firstxpx extends js.Object {
+trait Firstxpx extends StObject {
   
   var direction: Double = js.native
   
@@ -32,39 +33,27 @@ object Firstxpx {
   }
   
   @scala.inline
-  implicit class FirstxpxOps[Self <: Firstxpx] (val x: Self) extends AnyVal {
+  implicit class FirstxpxMutableBuilder[Self <: Firstxpx] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst_x_px(value: Double): Self = StObject.set(x, "first_x_px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirst_ys(value: js.Array[Double]): Self = StObject.set(x, "first_ys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFirst_ysVarargs(value: Double*): Self = StObject.set(x, "first_ys", js.Array(value :_*))
     
     @scala.inline
-    def setFirst_x_px(value: Double): Self = this.set("first_x_px", value.asInstanceOf[js.Any])
+    def setLast_x_px(value: Double): Self = StObject.set(x, "last_x_px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_ysVarargs(value: Double*): Self = this.set("first_ys", js.Array(value :_*))
+    def setLast_ys(value: js.Array[Double]): Self = StObject.set(x, "last_ys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_ys(value: js.Array[Double]): Self = this.set("first_ys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLast_x_px(value: Double): Self = this.set("last_x_px", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLast_ysVarargs(value: Double*): Self = this.set("last_ys", js.Array(value :_*))
-    
-    @scala.inline
-    def setLast_ys(value: js.Array[Double]): Self = this.set("last_ys", value.asInstanceOf[js.Any])
+    def setLast_ysVarargs(value: Double*): Self = StObject.set(x, "last_ys", js.Array(value :_*))
   }
 }

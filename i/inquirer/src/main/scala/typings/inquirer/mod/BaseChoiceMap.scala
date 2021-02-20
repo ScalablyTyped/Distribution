@@ -1,5 +1,6 @@
 package typings.inquirer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The type of the answers.
   */
 @js.native
-trait BaseChoiceMap[T /* <: Answers */] extends js.Object {
+trait BaseChoiceMap[T /* <: Answers */] extends StObject {
   
   var Choice: typings.inquirer.choiceMod.^[T] = js.native
   
@@ -35,30 +36,18 @@ object BaseChoiceMap {
   }
   
   @scala.inline
-  implicit class BaseChoiceMapOps[Self <: BaseChoiceMap[_], T /* <: Answers */] (val x: Self with BaseChoiceMap[T]) extends AnyVal {
+  implicit class BaseChoiceMapMutableBuilder[Self <: BaseChoiceMap[_], T /* <: Answers */] (val x: Self with BaseChoiceMap[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChoice(value: typings.inquirer.choiceMod.^[T]): Self = StObject.set(x, "Choice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChoiceOptions(value: ChoiceOptions[T]): Self = StObject.set(x, "ChoiceOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeparator(value: typings.inquirer.separatorMod.^): Self = StObject.set(x, "Separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChoice(value: typings.inquirer.choiceMod.^[T]): Self = this.set("Choice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChoiceOptions(value: ChoiceOptions[T]): Self = this.set("ChoiceOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparator(value: typings.inquirer.separatorMod.^): Self = this.set("Separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparatorOptions(value: SeparatorOptions): Self = this.set("SeparatorOptions", value.asInstanceOf[js.Any])
+    def setSeparatorOptions(value: SeparatorOptions): Self = StObject.set(x, "SeparatorOptions", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.sparqljs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.sparqljsStrings.DESCRIBE
 import typings.sparqljs.sparqljsStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,27 +32,15 @@ object DescribeQuery {
   }
   
   @scala.inline
-  implicit class DescribeQueryOps[Self <: DescribeQuery] (val x: Self) extends AnyVal {
+  implicit class DescribeQueryMutableBuilder[Self <: DescribeQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryType(value: DESCRIBE): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVariables(value: js.Array[Variable | Wildcard]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQueryType(value: DESCRIBE): Self = this.set("queryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariablesVarargs(value: (Variable | Wildcard)*): Self = this.set("variables", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariables(value: js.Array[Variable | Wildcard]): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariablesVarargs(value: (Variable | Wildcard)*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

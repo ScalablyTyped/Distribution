@@ -1,12 +1,11 @@
 package typings.arcgisJsApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("esri/views/layers/GeoJSONLayerView", JSImport.Namespace)
-@js.native
-object geoJSONLayerViewMod extends js.Object {
+object geoJSONLayerViewMod {
   
   type GeoJSONLayerView = typings.arcgisJsApi.esri.GeoJSONLayerView
 }

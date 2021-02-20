@@ -1,5 +1,6 @@
 package typings.agoraRtcSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * After joining the channel, the SDK triggers the `"network-quality"` callback once every two seconds and provides the network quality ratings in this interface.
   */
 @js.native
-trait NetworkQualityStats extends js.Object {
+trait NetworkQualityStats extends StObject {
   
   /**
     * Downlink network quality rating of the user in terms of packet loss rate, average RTT, and jitter of the downlink network.
@@ -47,30 +48,18 @@ object NetworkQualityStats {
   }
   
   @scala.inline
-  implicit class NetworkQualityStatsOps[Self <: NetworkQualityStats] (val x: Self) extends AnyVal {
+  implicit class NetworkQualityStatsMutableBuilder[Self <: NetworkQualityStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownlinkNetworkQuality(value: String): Self = StObject.set(x, "downlinkNetworkQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownlinkNetworkQualityUndefined: Self = StObject.set(x, "downlinkNetworkQuality", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUplinkNetworkQuality(value: String): Self = StObject.set(x, "uplinkNetworkQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownlinkNetworkQuality(value: String): Self = this.set("downlinkNetworkQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDownlinkNetworkQuality: Self = this.set("downlinkNetworkQuality", js.undefined)
-    
-    @scala.inline
-    def setUplinkNetworkQuality(value: String): Self = this.set("uplinkNetworkQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUplinkNetworkQuality: Self = this.set("uplinkNetworkQuality", js.undefined)
+    def setUplinkNetworkQualityUndefined: Self = StObject.set(x, "uplinkNetworkQuality", js.undefined)
   }
 }

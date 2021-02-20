@@ -1,11 +1,12 @@
 package typings.angularCompiler.compileMetadataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompileQueryMetadata extends js.Object {
+trait CompileQueryMetadata extends StObject {
   
   var descendants: Boolean = js.native
   
@@ -34,42 +35,30 @@ object CompileQueryMetadata {
   }
   
   @scala.inline
-  implicit class CompileQueryMetadataOps[Self <: CompileQueryMetadata] (val x: Self) extends AnyVal {
+  implicit class CompileQueryMetadataMutableBuilder[Self <: CompileQueryMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescendants(value: Boolean): Self = this.set("descendants", value.asInstanceOf[js.Any])
+    def setRead(value: CompileTokenMetadata): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: Boolean): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setSelectors(value: js.Array[CompileTokenMetadata]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
+    def setSelectorsVarargs(value: CompileTokenMetadata*): Self = StObject.set(x, "selectors", js.Array(value :_*))
     
     @scala.inline
-    def setRead(value: CompileTokenMetadata): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectorsVarargs(value: CompileTokenMetadata*): Self = this.set("selectors", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectors(value: js.Array[CompileTokenMetadata]): Self = this.set("selectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatic: Self = this.set("static", js.undefined)
+    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
   }
 }

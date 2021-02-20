@@ -4,12 +4,13 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.TypeParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignaturePolicyIdentifier extends js.Object {
+trait SignaturePolicyIdentifier extends StObject {
   
   var SignaturePolicyIdentifier: Oid = js.native
   
@@ -30,27 +31,15 @@ object SignaturePolicyIdentifier {
   }
   
   @scala.inline
-  implicit class SignaturePolicyIdentifierOps[Self <: SignaturePolicyIdentifier] (val x: Self) extends AnyVal {
+  implicit class SignaturePolicyIdentifierMutableBuilder[Self <: SignaturePolicyIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSignaturePolicyIdentifier(value: Oid): Self = StObject.set(x, "SignaturePolicyIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSigningCertificateV2(value: ArrayParam[String] | Array | SigningCertificateV2): Self = StObject.set(x, "SigningCertificateV2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSignaturePolicyIdentifier(value: Oid): Self = this.set("SignaturePolicyIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigningCertificateV2(value: ArrayParam[String] | Array | SigningCertificateV2): Self = this.set("SigningCertificateV2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigningTime(value: TypeParam | StringParam): Self = this.set("SigningTime", value.asInstanceOf[js.Any])
+    def setSigningTime(value: TypeParam | StringParam): Self = StObject.set(x, "SigningTime", value.asInstanceOf[js.Any])
   }
 }

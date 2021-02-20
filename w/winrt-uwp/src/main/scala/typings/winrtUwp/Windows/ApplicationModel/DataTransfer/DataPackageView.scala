@@ -6,13 +6,14 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Security.EnterpriseData.ProtectionPolicyEvaluationResult
 import typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A read-only version of a DataPackage . Apps that receive shared content get this object when acquiring content. */
 @js.native
-trait DataPackageView extends js.Object {
+trait DataPackageView extends StObject {
   
   /** Returns the formats the DataPackageView contains. */
   var availableFormats: IVectorView[String] = js.native

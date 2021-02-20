@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * subcollection.
   */
 @js.native
-trait SchemaStorePage extends js.Object {
+trait SchemaStorePage extends StObject {
   
   /**
     * Unique ID of this page. Assigned by the server. Immutable once assigned.
@@ -47,48 +48,36 @@ object SchemaStorePage {
   }
   
   @scala.inline
-  implicit class SchemaStorePageOps[Self <: SchemaStorePage] (val x: Self) extends AnyVal {
+  implicit class SchemaStorePageMutableBuilder[Self <: SchemaStorePage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLink(value: js.Array[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value :_*))
     
     @scala.inline
-    def setLinkVarargs(value: String*): Self = this.set("link", js.Array(value :_*))
+    def setName(value: js.Array[SchemaLocalizedText]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: js.Array[String]): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
-    
-    @scala.inline
-    def setNameVarargs(value: SchemaLocalizedText*): Self = this.set("name", js.Array(value :_*))
-    
-    @scala.inline
-    def setName(value: js.Array[SchemaLocalizedText]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameVarargs(value: SchemaLocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

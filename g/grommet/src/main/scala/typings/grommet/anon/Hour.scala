@@ -4,12 +4,13 @@ import typings.grommet.baseMod.ExtendProps
 import typings.grommet.baseMod.ExtendType
 import typings.grommet.baseMod.ExtendValue
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hour extends js.Object {
+trait Hour extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
   
@@ -30,51 +31,39 @@ object Hour {
   }
   
   @scala.inline
-  implicit class HourOps[Self <: Hour] (val x: Self) extends AnyVal {
+  implicit class HourMutableBuilder[Self <: Hour] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = this.set("extend", js.Any.fromFunction1(value))
+    def setHour(value: Shape): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = this.set("extend", value.asInstanceOf[js.Any])
+    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
     @scala.inline
-    def deleteExtend: Self = this.set("extend", js.undefined)
+    def setMinute(value: Shape): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHour(value: Shape): Self = this.set("hour", value.asInstanceOf[js.Any])
+    def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
     @scala.inline
-    def deleteHour: Self = this.set("hour", js.undefined)
+    def setSecond(value: Shape): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinute(value: Shape): Self = this.set("minute", value.asInstanceOf[js.Any])
+    def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
     
     @scala.inline
-    def deleteMinute: Self = this.set("minute", js.undefined)
+    def setSize(value: Huge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecond(value: Shape): Self = this.set("second", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecond: Self = this.set("second", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Huge): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

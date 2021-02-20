@@ -1,5 +1,6 @@
 package typings.naverWhale.whale.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object WebResponseHeadersDetails {
   }
   
   @scala.inline
-  implicit class WebResponseHeadersDetailsOps[Self <: WebResponseHeadersDetails] (val x: Self) extends AnyVal {
+  implicit class WebResponseHeadersDetailsMutableBuilder[Self <: WebResponseHeadersDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponseHeaders(value: js.Array[typings.chrome.chrome.webRequest.HttpHeader]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseHeadersVarargs(value: typings.chrome.chrome.webRequest.HttpHeader*): Self = this.set("responseHeaders", js.Array(value :_*))
-    
-    @scala.inline
-    def setResponseHeaders(value: js.Array[typings.chrome.chrome.webRequest.HttpHeader]): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseHeaders: Self = this.set("responseHeaders", js.undefined)
+    def setResponseHeadersVarargs(value: typings.chrome.chrome.webRequest.HttpHeader*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
   }
 }

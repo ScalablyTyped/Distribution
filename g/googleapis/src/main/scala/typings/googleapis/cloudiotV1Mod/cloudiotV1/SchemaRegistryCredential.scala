@@ -1,5 +1,6 @@
 package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A server-stored registry credential used to validate device credentials.
   */
 @js.native
-trait SchemaRegistryCredential extends js.Object {
+trait SchemaRegistryCredential extends StObject {
   
   /**
     * A public key certificate used to verify the device credentials.
@@ -24,24 +25,12 @@ object SchemaRegistryCredential {
   }
   
   @scala.inline
-  implicit class SchemaRegistryCredentialOps[Self <: SchemaRegistryCredential] (val x: Self) extends AnyVal {
+  implicit class SchemaRegistryCredentialMutableBuilder[Self <: SchemaRegistryCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublicKeyCertificate(value: SchemaPublicKeyCertificate): Self = StObject.set(x, "publicKeyCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPublicKeyCertificate(value: SchemaPublicKeyCertificate): Self = this.set("publicKeyCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeyCertificate: Self = this.set("publicKeyCertificate", js.undefined)
+    def setPublicKeyCertificateUndefined: Self = StObject.set(x, "publicKeyCertificate", js.undefined)
   }
 }

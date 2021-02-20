@@ -3,12 +3,13 @@ package typings.minappEnv.wx
 import typings.minappEnv.minappEnvNumbers.`10`
 import typings.minappEnv.minappEnvNumbers.`15`
 import typings.minappEnv.minappEnvNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnMemoryWarningCallbackResult extends js.Object {
+trait OnMemoryWarningCallbackResult extends StObject {
   
   /** 内存告警等级，只有 Android 才有，对应系统宏定义
     *
@@ -27,21 +28,9 @@ object OnMemoryWarningCallbackResult {
   }
   
   @scala.inline
-  implicit class OnMemoryWarningCallbackResultOps[Self <: OnMemoryWarningCallbackResult] (val x: Self) extends AnyVal {
+  implicit class OnMemoryWarningCallbackResultMutableBuilder[Self <: OnMemoryWarningCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLevel(value: `5` | `10` | `15`): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLevel(value: `5` | `10` | `15`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

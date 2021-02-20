@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeQueryDefinitionsRequest extends js.Object {
+trait DescribeQueryDefinitionsRequest extends StObject {
   
   /**
     * Limits the number of returned query definitions to the specified number.
@@ -28,36 +29,24 @@ object DescribeQueryDefinitionsRequest {
   }
   
   @scala.inline
-  implicit class DescribeQueryDefinitionsRequestOps[Self <: DescribeQueryDefinitionsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeQueryDefinitionsRequestMutableBuilder[Self <: DescribeQueryDefinitionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: QueryListMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: QueryListMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setQueryDefinitionNamePrefix(value: QueryDefinitionName): Self = StObject.set(x, "queryDefinitionNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setQueryDefinitionNamePrefix(value: QueryDefinitionName): Self = this.set("queryDefinitionNamePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryDefinitionNamePrefix: Self = this.set("queryDefinitionNamePrefix", js.undefined)
+    def setQueryDefinitionNamePrefixUndefined: Self = StObject.set(x, "queryDefinitionNamePrefix", js.undefined)
   }
 }

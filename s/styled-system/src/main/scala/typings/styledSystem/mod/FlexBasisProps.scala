@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlexBasisProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait FlexBasisProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   // TODO: The FlexBasisValue currently really only exists for documentation
   //       purposes, because flex-basis also accepts `Nem` and `Npx` strings.
@@ -22,30 +23,18 @@ object FlexBasisProps {
   }
   
   @scala.inline
-  implicit class FlexBasisPropsOps[Self <: FlexBasisProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (FlexBasisProps[ThemeType, TVal])) extends AnyVal {
+  implicit class FlexBasisPropsMutableBuilder[Self <: FlexBasisProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (FlexBasisProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlexBasis(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlexBasisNull: Self = StObject.set(x, "flexBasis", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
     
     @scala.inline
-    def setFlexBasisVarargs(value: (TVal | Null)*): Self = this.set("flexBasis", js.Array(value :_*))
-    
-    @scala.inline
-    def setFlexBasis(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("flexBasis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlexBasis: Self = this.set("flexBasis", js.undefined)
-    
-    @scala.inline
-    def setFlexBasisNull: Self = this.set("flexBasis", null)
+    def setFlexBasisVarargs(value: (TVal | Null)*): Self = StObject.set(x, "flexBasis", js.Array(value :_*))
   }
 }

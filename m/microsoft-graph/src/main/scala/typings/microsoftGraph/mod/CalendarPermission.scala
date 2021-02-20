@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,66 +42,54 @@ object CalendarPermission {
   }
   
   @scala.inline
-  implicit class CalendarPermissionOps[Self <: CalendarPermission] (val x: Self) extends AnyVal {
+  implicit class CalendarPermissionMutableBuilder[Self <: CalendarPermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedRoles(value: NullableOption[js.Array[CalendarRoleType]]): Self = StObject.set(x, "allowedRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedRolesNull: Self = StObject.set(x, "allowedRoles", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedRolesUndefined: Self = StObject.set(x, "allowedRoles", js.undefined)
     
     @scala.inline
-    def setAllowedRolesVarargs(value: CalendarRoleType*): Self = this.set("allowedRoles", js.Array(value :_*))
+    def setAllowedRolesVarargs(value: CalendarRoleType*): Self = StObject.set(x, "allowedRoles", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedRoles(value: NullableOption[js.Array[CalendarRoleType]]): Self = this.set("allowedRoles", value.asInstanceOf[js.Any])
+    def setEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowedRoles: Self = this.set("allowedRoles", js.undefined)
+    def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
     
     @scala.inline
-    def setAllowedRolesNull: Self = this.set("allowedRoles", null)
+    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
     @scala.inline
-    def setEmailAddress(value: NullableOption[EmailAddress]): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    def setIsInsideOrganization(value: NullableOption[Boolean]): Self = StObject.set(x, "isInsideOrganization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    def setIsInsideOrganizationNull: Self = StObject.set(x, "isInsideOrganization", null)
     
     @scala.inline
-    def setEmailAddressNull: Self = this.set("emailAddress", null)
+    def setIsInsideOrganizationUndefined: Self = StObject.set(x, "isInsideOrganization", js.undefined)
     
     @scala.inline
-    def setIsInsideOrganization(value: NullableOption[Boolean]): Self = this.set("isInsideOrganization", value.asInstanceOf[js.Any])
+    def setIsRemovable(value: NullableOption[Boolean]): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsInsideOrganization: Self = this.set("isInsideOrganization", js.undefined)
+    def setIsRemovableNull: Self = StObject.set(x, "isRemovable", null)
     
     @scala.inline
-    def setIsInsideOrganizationNull: Self = this.set("isInsideOrganization", null)
+    def setIsRemovableUndefined: Self = StObject.set(x, "isRemovable", js.undefined)
     
     @scala.inline
-    def setIsRemovable(value: NullableOption[Boolean]): Self = this.set("isRemovable", value.asInstanceOf[js.Any])
+    def setRole(value: NullableOption[CalendarRoleType]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsRemovable: Self = this.set("isRemovable", js.undefined)
+    def setRoleNull: Self = StObject.set(x, "role", null)
     
     @scala.inline
-    def setIsRemovableNull: Self = this.set("isRemovable", null)
-    
-    @scala.inline
-    def setRole(value: NullableOption[CalendarRoleType]): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
-    
-    @scala.inline
-    def setRoleNull: Self = this.set("role", null)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

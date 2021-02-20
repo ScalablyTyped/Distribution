@@ -1,11 +1,12 @@
 package typings.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewportComponentInfo extends js.Object {
+trait ViewportComponentInfo extends StObject {
   
   /**
     * 子元素（canDragIn才有）
@@ -32,33 +33,21 @@ object ViewportComponentInfo {
   }
   
   @scala.inline
-  implicit class ViewportComponentInfoOps[Self <: ViewportComponentInfo] (val x: Self) extends AnyVal {
+  implicit class ViewportComponentInfoMutableBuilder[Self <: ViewportComponentInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayoutChilds(value: js.Array[String]): Self = StObject.set(x, "layoutChilds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayoutChildsUndefined: Self = StObject.set(x, "layoutChilds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayoutChildsVarargs(value: String*): Self = StObject.set(x, "layoutChilds", js.Array(value :_*))
     
     @scala.inline
-    def setParentMapUniqueKey(value: String): Self = this.set("parentMapUniqueKey", value.asInstanceOf[js.Any])
+    def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProps(value: ComponentProps): Self = this.set("props", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayoutChildsVarargs(value: String*): Self = this.set("layoutChilds", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayoutChilds(value: js.Array[String]): Self = this.set("layoutChilds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayoutChilds: Self = this.set("layoutChilds", js.undefined)
+    def setProps(value: ComponentProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

@@ -5,6 +5,7 @@ import typings.reactNative.reactNativeStrings.butt
 import typings.reactNative.reactNativeStrings.miter
 import typings.reactNative.reactNativeStrings.round
 import typings.reactNative.reactNativeStrings.square
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,57 +34,45 @@ object ARTRenderableMixin {
   }
   
   @scala.inline
-  implicit class ARTRenderableMixinOps[Self <: ARTRenderableMixin] (val x: Self) extends AnyVal {
+  implicit class ARTRenderableMixinMutableBuilder[Self <: ARTRenderableMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setStrokeCap(value: butt | square | round): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setStrokeCapUndefined: Self = StObject.set(x, "strokeCap", js.undefined)
     
     @scala.inline
-    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    def setStrokeDash(value: js.Array[Double]): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
     
     @scala.inline
-    def setStrokeCap(value: butt | square | round): Self = this.set("strokeCap", value.asInstanceOf[js.Any])
+    def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
     
     @scala.inline
-    def deleteStrokeCap: Self = this.set("strokeCap", js.undefined)
+    def setStrokeJoin(value: bevel | miter | round): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeDashVarargs(value: Double*): Self = this.set("strokeDash", js.Array(value :_*))
+    def setStrokeJoinUndefined: Self = StObject.set(x, "strokeJoin", js.undefined)
     
     @scala.inline
-    def setStrokeDash(value: js.Array[Double]): Self = this.set("strokeDash", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteStrokeDash: Self = this.set("strokeDash", js.undefined)
+    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeJoin(value: bevel | miter | round): Self = this.set("strokeJoin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeJoin: Self = this.set("strokeJoin", js.undefined)
-    
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

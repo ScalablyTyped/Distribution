@@ -1,11 +1,12 @@
 package typings.sourceMap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartOfSourceMap extends js.Object {
+trait StartOfSourceMap extends StObject {
   
   var file: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object StartOfSourceMap {
   }
   
   @scala.inline
-  implicit class StartOfSourceMapOps[Self <: StartOfSourceMap] (val x: Self) extends AnyVal {
+  implicit class StartOfSourceMapMutableBuilder[Self <: StartOfSourceMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkipValidation(value: Boolean): Self = StObject.set(x, "skipValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setSkipValidationUndefined: Self = StObject.set(x, "skipValidation", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipValidation(value: Boolean): Self = this.set("skipValidation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipValidation: Self = this.set("skipValidation", js.undefined)
-    
-    @scala.inline
-    def setSourceRoot(value: String): Self = this.set("sourceRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceRoot: Self = this.set("sourceRoot", js.undefined)
+    def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
   }
 }

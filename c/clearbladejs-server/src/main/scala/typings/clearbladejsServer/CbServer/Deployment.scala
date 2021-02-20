@@ -1,11 +1,12 @@
 package typings.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Deployment extends js.Object {
+trait Deployment extends StObject {
   
   def create(name: String, description: String, options: DeploymentOptions, callback: CbCallback): Unit = js.native
   
@@ -41,42 +42,30 @@ object Deployment {
   }
   
   @scala.inline
-  implicit class DeploymentOps[Self <: Deployment] (val x: Self) extends AnyVal {
+  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: (String, String, DeploymentOptions, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: (String, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRead(value: (String, CbCallback) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreate(value: (String, String, DeploymentOptions, CbCallback) => Unit): Self = this.set("create", js.Any.fromFunction4(value))
+    def setReadAll(value: (QueryObj, CbCallback) => Unit): Self = StObject.set(x, "readAll", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDelete(value: (String, CbCallback) => Unit): Self = this.set("delete", js.Any.fromFunction2(value))
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: (String, CbCallback) => Unit): Self = this.set("read", js.Any.fromFunction2(value))
+    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadAll(value: (QueryObj, CbCallback) => Unit): Self = this.set("readAll", js.Any.fromFunction2(value))
+    def setUpdate(value: (String, DeploymentOptions, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemSecret(value: String): Self = this.set("systemSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: (String, DeploymentOptions, CbCallback) => Unit): Self = this.set("update", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUser(value: APIUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

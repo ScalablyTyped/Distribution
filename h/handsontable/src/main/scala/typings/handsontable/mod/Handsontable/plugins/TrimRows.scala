@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,51 +61,39 @@ object TrimRows {
   }
   
   @scala.inline
-  implicit class TrimRowsOps[Self <: TrimRows] (val x: Self) extends AnyVal {
+  implicit class TrimRowsMutableBuilder[Self <: TrimRows] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTrimmedRows(value: () => js.Array[Double]): Self = StObject.set(x, "getTrimmedRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsTrimmed(value: Double => Boolean): Self = StObject.set(x, "isTrimmed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemovedRows(value: js.Array[_]): Self = StObject.set(x, "removedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTrimmedRows(value: () => js.Array[Double]): Self = this.set("getTrimmedRows", js.Any.fromFunction0(value))
+    def setRemovedRowsVarargs(value: js.Any*): Self = StObject.set(x, "removedRows", js.Array(value :_*))
     
     @scala.inline
-    def setIsTrimmed(value: Double => Boolean): Self = this.set("isTrimmed", js.Any.fromFunction1(value))
+    def setTrimRow(value: Double => Unit): Self = StObject.set(x, "trimRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemovedRowsVarargs(value: js.Any*): Self = this.set("removedRows", js.Array(value :_*))
+    def setTrimRows(value: js.Array[Double] => Unit): Self = StObject.set(x, "trimRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemovedRows(value: js.Array[_]): Self = this.set("removedRows", value.asInstanceOf[js.Any])
+    def setTrimmedRows(value: js.Array[_]): Self = StObject.set(x, "trimmedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrimRow(value: Double => Unit): Self = this.set("trimRow", js.Any.fromFunction1(value))
+    def setTrimmedRowsVarargs(value: js.Any*): Self = StObject.set(x, "trimmedRows", js.Array(value :_*))
     
     @scala.inline
-    def setTrimRows(value: js.Array[Double] => Unit): Self = this.set("trimRows", js.Any.fromFunction1(value))
+    def setUntrimAll(value: () => Unit): Self = StObject.set(x, "untrimAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTrimmedRowsVarargs(value: js.Any*): Self = this.set("trimmedRows", js.Array(value :_*))
+    def setUntrimRow(value: Double => Unit): Self = StObject.set(x, "untrimRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTrimmedRows(value: js.Array[_]): Self = this.set("trimmedRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUntrimAll(value: () => Unit): Self = this.set("untrimAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUntrimRow(value: Double => Unit): Self = this.set("untrimRow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUntrimRows(value: js.Array[Double] => Unit): Self = this.set("untrimRows", js.Any.fromFunction1(value))
+    def setUntrimRows(value: js.Array[Double] => Unit): Self = StObject.set(x, "untrimRows", js.Any.fromFunction1(value))
   }
 }

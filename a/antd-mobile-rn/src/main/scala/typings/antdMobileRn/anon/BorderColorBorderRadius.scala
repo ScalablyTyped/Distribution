@@ -1,11 +1,12 @@
 package typings.antdMobileRn.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderColorBorderRadius extends js.Object {
+trait BorderColorBorderRadius extends StObject {
   
   var borderColor: String = js.native
   
@@ -32,33 +33,21 @@ object BorderColorBorderRadius {
   }
   
   @scala.inline
-  implicit class BorderColorBorderRadiusOps[Self <: BorderColorBorderRadius] (val x: Self) extends AnyVal {
+  implicit class BorderColorBorderRadiusMutableBuilder[Self <: BorderColorBorderRadius] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRadius(value: Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlexDirection(value: String): Self = this.set("flexDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverflow(value: String): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
   }
 }

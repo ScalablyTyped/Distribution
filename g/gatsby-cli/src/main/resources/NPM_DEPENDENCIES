@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "gatsby-cli" : "2.14.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "gatsby-cli" : "2.14.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

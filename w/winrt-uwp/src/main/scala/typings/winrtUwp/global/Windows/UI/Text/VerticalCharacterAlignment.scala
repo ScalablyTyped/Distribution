@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the vertical position of a character relative to a bounding rectangle. */
 @JSGlobal("Windows.UI.Text.VerticalCharacterAlignment")
 @js.native
-object VerticalCharacterAlignment extends js.Object {
+object VerticalCharacterAlignment extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.VerticalCharacterAlignment with Double] = js.native

@@ -1,22 +1,24 @@
 package typings.antvComponent
 
 import typings.antvComponent.interfacesMod.IList
-import typings.antvComponent.legendBaseMod.LegendBase
 import typings.antvComponent.typesMod.CategoryLegendCfg
 import typings.antvComponent.typesMod.ListItem
 import typings.antvEventEmitter.mod.EventType
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/legend/category", JSImport.Namespace)
-@js.native
-object categoryMod extends js.Object {
+object categoryMod {
+  
+  @JSImport("@antv/component/lib/legend/category", JSImport.Default)
+  @js.native
+  class default () extends Category
   
   @js.native
   trait Category
-    extends LegendBase[CategoryLegendCfg]
+    extends typings.antvComponent.legendBaseMod.default[CategoryLegendCfg]
        with IList {
     
     var adjustNavigation: js.Any = js.native
@@ -41,7 +43,7 @@ object categoryMod extends js.Object {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): js.Any with (Record[String, js.Array[EventType]]) = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) with js.Any = js.native
     
     var getItemHeight: js.Any = js.native
     
@@ -57,35 +59,29 @@ object categoryMod extends js.Object {
     var getLimitItemWidth: js.Any = js.native
     
     /**
-      * 移除事件
+      * 取消监听一个事件，或者一个channel
+      * @param evt
+      * @param callback
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): js.Any with this.type = js.native
-    /**
-      * 移除事件
-      * @param eventName 事件名
-      */
+    override def off(): this.type with js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(eventName: String): js.Any with this.type = js.native
-    /**
-      * 移除事件
-      * @param eventName 事件名
-      * @param callback  回调函数
-      */
+    override def off(evt: String): this.type with js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(eventName: String, callback: js.Function): js.Any with this.type = js.native
+    override def off(evt: String, callback: js.Function): this.type with js.Any = js.native
     
     /**
-      * 绑定事件
-      * @param  eventName 事件名
-      * @param callback  回调函数
+      * 监听一个事件
+      * @param evt
+      * @param callback
+      * @param once
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(eventName: String, callback: js.Function): js.Any with this.type = js.native
+    override def on(evt: String, callback: js.Function): this.type with js.Any = js.native
     
     var onNavigationAfter: js.Any = js.native
     
@@ -105,7 +101,4 @@ object categoryMod extends js.Object {
     
     var updateNavigation: js.Any = js.native
   }
-  
-  @js.native
-  class default () extends Category
 }

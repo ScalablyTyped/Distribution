@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.Matrix4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugShowBoundingVolume extends js.Object {
+trait DebugShowBoundingVolume extends StObject {
   
   var center: js.UndefOr[Cartesian3] = js.native
   
@@ -32,60 +33,48 @@ object DebugShowBoundingVolume {
   }
   
   @scala.inline
-  implicit class DebugShowBoundingVolumeOps[Self <: DebugShowBoundingVolume] (val x: Self) extends AnyVal {
+  implicit class DebugShowBoundingVolumeMutableBuilder[Self <: DebugShowBoundingVolume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Cartesian3): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Cartesian3): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugShowBoundingVolume(value: Boolean): Self = this.set("debugShowBoundingVolume", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDebugShowBoundingVolume: Self = this.set("debugShowBoundingVolume", js.undefined)
+    def setMaterial(value: typings.cesium.mod.Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: typings.cesium.mod.Material): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setRadii(value: Cartesian3): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelMatrix(value: Matrix4): Self = this.set("modelMatrix", value.asInstanceOf[js.Any])
+    def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
     
     @scala.inline
-    def deleteModelMatrix: Self = this.set("modelMatrix", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadii(value: Cartesian3): Self = this.set("radii", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadii: Self = this.set("radii", js.undefined)
-    
-    @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

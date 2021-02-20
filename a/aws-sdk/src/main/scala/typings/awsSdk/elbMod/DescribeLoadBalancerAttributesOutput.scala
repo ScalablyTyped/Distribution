@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLoadBalancerAttributesOutput extends js.Object {
+trait DescribeLoadBalancerAttributesOutput extends StObject {
   
   /**
     * Information about the load balancer attributes.
@@ -21,24 +22,12 @@ object DescribeLoadBalancerAttributesOutput {
   }
   
   @scala.inline
-  implicit class DescribeLoadBalancerAttributesOutputOps[Self <: DescribeLoadBalancerAttributesOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeLoadBalancerAttributesOutputMutableBuilder[Self <: DescribeLoadBalancerAttributesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadBalancerAttributes(value: LoadBalancerAttributes): Self = StObject.set(x, "LoadBalancerAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoadBalancerAttributes(value: LoadBalancerAttributes): Self = this.set("LoadBalancerAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadBalancerAttributes: Self = this.set("LoadBalancerAttributes", js.undefined)
+    def setLoadBalancerAttributesUndefined: Self = StObject.set(x, "LoadBalancerAttributes", js.undefined)
   }
 }

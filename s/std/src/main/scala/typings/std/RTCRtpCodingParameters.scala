@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCRtpCodingParameters extends js.Object {
+trait RTCRtpCodingParameters extends StObject {
   
   var rid: js.UndefOr[java.lang.String] = js.native
 }
@@ -18,24 +19,12 @@ object RTCRtpCodingParameters {
   }
   
   @scala.inline
-  implicit class RTCRtpCodingParametersOps[Self <: RTCRtpCodingParameters] (val x: Self) extends AnyVal {
+  implicit class RTCRtpCodingParametersMutableBuilder[Self <: RTCRtpCodingParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRid(value: java.lang.String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRid(value: java.lang.String): Self = this.set("rid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRid: Self = this.set("rid", js.undefined)
+    def setRidUndefined: Self = StObject.set(x, "rid", js.undefined)
   }
 }

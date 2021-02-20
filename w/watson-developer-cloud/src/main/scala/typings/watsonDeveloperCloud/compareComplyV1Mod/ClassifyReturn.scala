@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The analysis of objects returned by the **Element classification** method. */
 @js.native
-trait ClassifyReturn extends js.Object {
+trait ClassifyReturn extends StObject {
   
   /** The monetary amounts that identify the total amount of the contract that needs to be paid from one party to another. */
   var contract_amounts: js.UndefOr[js.Array[ContractAmts]] = js.native
@@ -50,105 +51,93 @@ object ClassifyReturn {
   }
   
   @scala.inline
-  implicit class ClassifyReturnOps[Self <: ClassifyReturn] (val x: Self) extends AnyVal {
+  implicit class ClassifyReturnMutableBuilder[Self <: ClassifyReturn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContract_amounts(value: js.Array[ContractAmts]): Self = StObject.set(x, "contract_amounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContract_amountsUndefined: Self = StObject.set(x, "contract_amounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContract_amountsVarargs(value: ContractAmts*): Self = StObject.set(x, "contract_amounts", js.Array(value :_*))
     
     @scala.inline
-    def setContract_amountsVarargs(value: ContractAmts*): Self = this.set("contract_amounts", js.Array(value :_*))
+    def setContract_type(value: js.Array[ContractType]): Self = StObject.set(x, "contract_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContract_amounts(value: js.Array[ContractAmts]): Self = this.set("contract_amounts", value.asInstanceOf[js.Any])
+    def setContract_typeUndefined: Self = StObject.set(x, "contract_type", js.undefined)
     
     @scala.inline
-    def deleteContract_amounts: Self = this.set("contract_amounts", js.undefined)
+    def setContract_typeVarargs(value: ContractType*): Self = StObject.set(x, "contract_type", js.Array(value :_*))
     
     @scala.inline
-    def setContract_typeVarargs(value: ContractType*): Self = this.set("contract_type", js.Array(value :_*))
+    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContract_type(value: js.Array[ContractType]): Self = this.set("contract_type", value.asInstanceOf[js.Any])
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def deleteContract_type: Self = this.set("contract_type", js.undefined)
+    def setDocument_structure(value: DocStructure): Self = StObject.set(x, "document_structure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: Document): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setDocument_structureUndefined: Self = StObject.set(x, "document_structure", js.undefined)
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def setEffective_dates(value: js.Array[EffectiveDates]): Self = StObject.set(x, "effective_dates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument_structure(value: DocStructure): Self = this.set("document_structure", value.asInstanceOf[js.Any])
+    def setEffective_datesUndefined: Self = StObject.set(x, "effective_dates", js.undefined)
     
     @scala.inline
-    def deleteDocument_structure: Self = this.set("document_structure", js.undefined)
+    def setEffective_datesVarargs(value: EffectiveDates*): Self = StObject.set(x, "effective_dates", js.Array(value :_*))
     
     @scala.inline
-    def setEffective_datesVarargs(value: EffectiveDates*): Self = this.set("effective_dates", js.Array(value :_*))
+    def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffective_dates(value: js.Array[EffectiveDates]): Self = this.set("effective_dates", value.asInstanceOf[js.Any])
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def deleteEffective_dates: Self = this.set("effective_dates", js.undefined)
+    def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def setElementsVarargs(value: Element*): Self = this.set("elements", js.Array(value :_*))
+    def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElements(value: js.Array[Element]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
     
     @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setModel_version(value: String): Self = StObject.set(x, "model_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_id(value: String): Self = this.set("model_id", value.asInstanceOf[js.Any])
+    def setModel_versionUndefined: Self = StObject.set(x, "model_version", js.undefined)
     
     @scala.inline
-    def deleteModel_id: Self = this.set("model_id", js.undefined)
+    def setParties(value: js.Array[Parties]): Self = StObject.set(x, "parties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_version(value: String): Self = this.set("model_version", value.asInstanceOf[js.Any])
+    def setPartiesUndefined: Self = StObject.set(x, "parties", js.undefined)
     
     @scala.inline
-    def deleteModel_version: Self = this.set("model_version", js.undefined)
+    def setPartiesVarargs(value: Parties*): Self = StObject.set(x, "parties", js.Array(value :_*))
     
     @scala.inline
-    def setPartiesVarargs(value: Parties*): Self = this.set("parties", js.Array(value :_*))
+    def setTables(value: js.Array[Tables]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParties(value: js.Array[Parties]): Self = this.set("parties", value.asInstanceOf[js.Any])
+    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
     @scala.inline
-    def deleteParties: Self = this.set("parties", js.undefined)
+    def setTablesVarargs(value: Tables*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
     @scala.inline
-    def setTablesVarargs(value: Tables*): Self = this.set("tables", js.Array(value :_*))
+    def setTermination_dates(value: js.Array[TerminationDates]): Self = StObject.set(x, "termination_dates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTables(value: js.Array[Tables]): Self = this.set("tables", value.asInstanceOf[js.Any])
+    def setTermination_datesUndefined: Self = StObject.set(x, "termination_dates", js.undefined)
     
     @scala.inline
-    def deleteTables: Self = this.set("tables", js.undefined)
-    
-    @scala.inline
-    def setTermination_datesVarargs(value: TerminationDates*): Self = this.set("termination_dates", js.Array(value :_*))
-    
-    @scala.inline
-    def setTermination_dates(value: js.Array[TerminationDates]): Self = this.set("termination_dates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTermination_dates: Self = this.set("termination_dates", js.undefined)
+    def setTermination_datesVarargs(value: TerminationDates*): Self = StObject.set(x, "termination_dates", js.Array(value :_*))
   }
 }

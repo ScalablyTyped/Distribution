@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrainingResult extends js.Object {
+trait TrainingResult extends StObject {
   
   /**
     * The validation metrics.
@@ -26,30 +27,18 @@ object TrainingResult {
   }
   
   @scala.inline
-  implicit class TrainingResultOps[Self <: TrainingResult] (val x: Self) extends AnyVal {
+  implicit class TrainingResultMutableBuilder[Self <: TrainingResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataValidationMetrics(value: DataValidationMetrics): Self = StObject.set(x, "dataValidationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataValidationMetricsUndefined: Self = StObject.set(x, "dataValidationMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrainingMetrics(value: TrainingMetrics): Self = StObject.set(x, "trainingMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataValidationMetrics(value: DataValidationMetrics): Self = this.set("dataValidationMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataValidationMetrics: Self = this.set("dataValidationMetrics", js.undefined)
-    
-    @scala.inline
-    def setTrainingMetrics(value: TrainingMetrics): Self = this.set("trainingMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingMetrics: Self = this.set("trainingMetrics", js.undefined)
+    def setTrainingMetricsUndefined: Self = StObject.set(x, "trainingMetrics", js.undefined)
   }
 }

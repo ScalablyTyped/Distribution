@@ -1,13 +1,14 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.ITestStep
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestCase. */
 @js.native
-trait ITestCase extends js.Object {
+trait ITestCase extends StObject {
   
   /** TestCase id */
   var id: js.UndefOr[String | Null] = js.native
@@ -27,48 +28,36 @@ object ITestCase {
   }
   
   @scala.inline
-  implicit class ITestCaseOps[Self <: ITestCase] (val x: Self) extends AnyVal {
+  implicit class ITestCaseMutableBuilder[Self <: ITestCase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPickleIdNull: Self = StObject.set(x, "pickleId", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setPickleIdUndefined: Self = StObject.set(x, "pickleId", js.undefined)
     
     @scala.inline
-    def setPickleId(value: String): Self = this.set("pickleId", value.asInstanceOf[js.Any])
+    def setTestSteps(value: js.Array[ITestStep]): Self = StObject.set(x, "testSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePickleId: Self = this.set("pickleId", js.undefined)
+    def setTestStepsNull: Self = StObject.set(x, "testSteps", null)
     
     @scala.inline
-    def setPickleIdNull: Self = this.set("pickleId", null)
+    def setTestStepsUndefined: Self = StObject.set(x, "testSteps", js.undefined)
     
     @scala.inline
-    def setTestStepsVarargs(value: ITestStep*): Self = this.set("testSteps", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestSteps(value: js.Array[ITestStep]): Self = this.set("testSteps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestSteps: Self = this.set("testSteps", js.undefined)
-    
-    @scala.inline
-    def setTestStepsNull: Self = this.set("testSteps", null)
+    def setTestStepsVarargs(value: ITestStep*): Self = StObject.set(x, "testSteps", js.Array(value :_*))
   }
 }

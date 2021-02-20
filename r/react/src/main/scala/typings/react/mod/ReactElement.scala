@@ -1,11 +1,12 @@
 package typings.react.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReactElement extends js.Object {
+trait ReactElement extends StObject {
   
   var key: Key | Null = js.native
   
@@ -23,30 +24,18 @@ object ReactElement {
   }
   
   @scala.inline
-  implicit class ReactElementOps[Self <: ReactElement] (val x: Self) extends AnyVal {
+  implicit class ReactElementMutableBuilder[Self <: ReactElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyNull: Self = StObject.set(x, "key", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProps(value: js.Any): Self = this.set("props", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyNull: Self = this.set("key", null)
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

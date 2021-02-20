@@ -1,6 +1,7 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Common audit log format for Google Cloud Platform API operations.
   */
 @js.native
-trait SchemaAuditLog extends js.Object {
+trait SchemaAuditLog extends StObject {
   
   /**
     * Authentication information.
@@ -115,105 +116,93 @@ object SchemaAuditLog {
   }
   
   @scala.inline
-  implicit class SchemaAuditLogOps[Self <: SchemaAuditLog] (val x: Self) extends AnyVal {
+  implicit class SchemaAuditLogMutableBuilder[Self <: SchemaAuditLog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationInfo(value: SchemaAuthenticationInfo): Self = StObject.set(x, "authenticationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationInfoUndefined: Self = StObject.set(x, "authenticationInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizationInfo(value: js.Array[SchemaAuthorizationInfo]): Self = StObject.set(x, "authorizationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationInfo(value: SchemaAuthenticationInfo): Self = this.set("authenticationInfo", value.asInstanceOf[js.Any])
+    def setAuthorizationInfoUndefined: Self = StObject.set(x, "authorizationInfo", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationInfo: Self = this.set("authenticationInfo", js.undefined)
+    def setAuthorizationInfoVarargs(value: SchemaAuthorizationInfo*): Self = StObject.set(x, "authorizationInfo", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorizationInfoVarargs(value: SchemaAuthorizationInfo*): Self = this.set("authorizationInfo", js.Array(value :_*))
+    def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationInfo(value: js.Array[SchemaAuthorizationInfo]): Self = this.set("authorizationInfo", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationInfo: Self = this.set("authorizationInfo", js.undefined)
+    def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: StringDictionary[js.Any]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setNumResponseItems(value: String): Self = StObject.set(x, "numResponseItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodName(value: String): Self = this.set("methodName", value.asInstanceOf[js.Any])
+    def setNumResponseItemsUndefined: Self = StObject.set(x, "numResponseItems", js.undefined)
     
     @scala.inline
-    def deleteMethodName: Self = this.set("methodName", js.undefined)
+    def setRequest(value: StringDictionary[js.Any]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumResponseItems(value: String): Self = this.set("numResponseItems", value.asInstanceOf[js.Any])
+    def setRequestMetadata(value: SchemaRequestMetadata): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumResponseItems: Self = this.set("numResponseItems", js.undefined)
+    def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
     
     @scala.inline
-    def setRequest(value: StringDictionary[js.Any]): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setResourceLocation(value: SchemaResourceLocation): Self = StObject.set(x, "resourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestMetadata(value: SchemaRequestMetadata): Self = this.set("requestMetadata", value.asInstanceOf[js.Any])
+    def setResourceLocationUndefined: Self = StObject.set(x, "resourceLocation", js.undefined)
     
     @scala.inline
-    def deleteRequestMetadata: Self = this.set("requestMetadata", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceLocation(value: SchemaResourceLocation): Self = this.set("resourceLocation", value.asInstanceOf[js.Any])
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def deleteResourceLocation: Self = this.set("resourceLocation", js.undefined)
+    def setResourceOriginalState(value: StringDictionary[js.Any]): Self = StObject.set(x, "resourceOriginalState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setResourceOriginalStateUndefined: Self = StObject.set(x, "resourceOriginalState", js.undefined)
     
     @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setResponse(value: StringDictionary[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceOriginalState(value: StringDictionary[js.Any]): Self = this.set("resourceOriginalState", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deleteResourceOriginalState: Self = this.set("resourceOriginalState", js.undefined)
+    def setServiceData(value: StringDictionary[js.Any]): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: StringDictionary[js.Any]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceData(value: StringDictionary[js.Any]): Self = this.set("serviceData", value.asInstanceOf[js.Any])
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     @scala.inline
-    def deleteServiceData: Self = this.set("serviceData", js.undefined)
+    def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: SchemaStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

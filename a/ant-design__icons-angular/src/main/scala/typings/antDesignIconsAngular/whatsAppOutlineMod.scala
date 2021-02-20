@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/WhatsAppOutline", JSImport.Namespace)
-@js.native
-object whatsAppOutlineMod extends js.Object {
+object whatsAppOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/WhatsAppOutline", "WhatsAppOutline")
+  @js.native
   val WhatsAppOutline: IconDefinition = js.native
 }

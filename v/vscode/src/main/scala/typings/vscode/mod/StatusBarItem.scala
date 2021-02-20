@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatusBarItem extends js.Object {
+trait StatusBarItem extends StObject {
   
   /**
     * Accessibility information used when screen reader interacts with this StatusBar item
@@ -84,63 +85,51 @@ object StatusBarItem {
   }
   
   @scala.inline
-  implicit class StatusBarItemOps[Self <: StatusBarItem] (val x: Self) extends AnyVal {
+  implicit class StatusBarItemMutableBuilder[Self <: StatusBarItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityInformation(value: AccessibilityInformation): Self = StObject.set(x, "accessibilityInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityInformationUndefined: Self = StObject.set(x, "accessibilityInformation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlignment(value: StatusBarAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: StatusBarAlignment): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setColor(value: String | ThemeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setCommand(value: String | Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessibilityInformation(value: AccessibilityInformation): Self = this.set("accessibilityInformation", value.asInstanceOf[js.Any])
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteAccessibilityInformation: Self = this.set("accessibilityInformation", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String | ThemeColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCommand(value: String | Command): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

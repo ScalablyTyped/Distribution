@@ -1,50 +1,59 @@
 package typings.antvComponent
 
-import typings.antvComponent.arcMod.ArcAnnotation
-import typings.antvComponent.dataMarkerMod.DataMarkerAnnotation
-import typings.antvComponent.dataRegionMod.DataRegionAnnotation
-import typings.antvComponent.htmlMod.HtmlAnnotation
-import typings.antvComponent.imageMod.ImageAnnotation
-import typings.antvComponent.lineMod.LineAnnotation
-import typings.antvComponent.regionFilterMod.RegionFilterAnnotation
-import typings.antvComponent.regionMod.RegionAnnotation
-import typings.antvComponent.shapeMod.ShapeAnnotation
-import typings.antvComponent.textMod.TextAnnotation
+import typings.antvComponent.arcMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/annotation", JSImport.Namespace)
-@js.native
-object annotationMod extends js.Object {
+object annotationMod {
   
+  @JSImport("@antv/component/lib/annotation", "Arc")
   @js.native
-  class Arc () extends ArcAnnotation
+  class Arc () extends default
   
+  @JSImport("@antv/component/lib/annotation", "DataMarker")
   @js.native
-  class DataMarker () extends DataMarkerAnnotation
+  class DataMarker ()
+    extends typings.antvComponent.dataMarkerMod.default
   
+  @JSImport("@antv/component/lib/annotation", "DataRegion")
   @js.native
-  class DataRegion () extends DataRegionAnnotation
+  class DataRegion ()
+    extends typings.antvComponent.dataRegionMod.default
   
+  @JSImport("@antv/component/lib/annotation", "Html")
   @js.native
-  class Html () extends HtmlAnnotation
+  class Html ()
+    extends typings.antvComponent.htmlMod.default
   
+  @JSImport("@antv/component/lib/annotation", "Image")
   @js.native
-  class Image () extends ImageAnnotation
+  class Image ()
+    extends typings.antvComponent.imageMod.default
   
+  @JSImport("@antv/component/lib/annotation", "Line")
   @js.native
-  class Line () extends LineAnnotation
+  class Line ()
+    extends typings.antvComponent.lineMod.default
   
+  @JSImport("@antv/component/lib/annotation", "Region")
   @js.native
-  class Region () extends RegionAnnotation
+  class Region ()
+    extends typings.antvComponent.regionMod.default
   
+  @JSImport("@antv/component/lib/annotation", "RegionFilter")
   @js.native
-  class RegionFilter () extends RegionFilterAnnotation
+  class RegionFilter ()
+    extends typings.antvComponent.regionFilterMod.default
   
+  @JSImport("@antv/component/lib/annotation", "Shape")
   @js.native
-  class Shape () extends ShapeAnnotation
+  class Shape ()
+    extends typings.antvComponent.shapeMod.default
   
+  @JSImport("@antv/component/lib/annotation", "Text")
   @js.native
-  class Text () extends TextAnnotation
+  class Text ()
+    extends typings.antvComponent.textMod.default
 }

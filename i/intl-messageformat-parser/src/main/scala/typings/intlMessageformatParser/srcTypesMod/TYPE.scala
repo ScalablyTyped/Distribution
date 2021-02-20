@@ -1,15 +1,15 @@
 package typings.intlMessageformatParser.srcTypesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TYPE extends js.Object
+sealed trait TYPE extends StObject
 @JSImport("intl-messageformat-parser/src/types", "TYPE")
 @js.native
-object TYPE extends js.Object {
+object TYPE extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TYPE with Double] = js.native
@@ -19,40 +19,35 @@ object TYPE extends js.Object {
     */
   @js.native
   sealed trait argument extends TYPE
-  /* 1 */ @js.native
-  object argument extends TopLevel[argument with Double]
+  /* 1 */ val argument: typings.intlMessageformatParser.srcTypesMod.TYPE.argument with Double = js.native
   
   /**
     * Variable w/ date format
     */
   @js.native
   sealed trait date extends TYPE
-  /* 3 */ @js.native
-  object date extends TopLevel[date with Double]
+  /* 3 */ val date: typings.intlMessageformatParser.srcTypesMod.TYPE.date with Double = js.native
   
   /**
     * Raw text
     */
   @js.native
   sealed trait literal extends TYPE
-  /* 0 */ @js.native
-  object literal extends TopLevel[literal with Double]
+  /* 0 */ val literal: typings.intlMessageformatParser.srcTypesMod.TYPE.literal with Double = js.native
   
   /**
     * Variable w/ number format
     */
   @js.native
   sealed trait number extends TYPE
-  /* 2 */ @js.native
-  object number extends TopLevel[number with Double]
+  /* 2 */ val number: typings.intlMessageformatParser.srcTypesMod.TYPE.number with Double = js.native
   
   /**
     * Variable w/ plural format
     */
   @js.native
   sealed trait plural extends TYPE
-  /* 6 */ @js.native
-  object plural extends TopLevel[plural with Double]
+  /* 6 */ val plural: typings.intlMessageformatParser.srcTypesMod.TYPE.plural with Double = js.native
   
   /**
     * Only possible within plural argument.
@@ -60,30 +55,26 @@ object TYPE extends js.Object {
     */
   @js.native
   sealed trait pound extends TYPE
-  /* 7 */ @js.native
-  object pound extends TopLevel[pound with Double]
+  /* 7 */ val pound: typings.intlMessageformatParser.srcTypesMod.TYPE.pound with Double = js.native
   
   /**
     * Variable w/ select format
     */
   @js.native
   sealed trait select extends TYPE
-  /* 5 */ @js.native
-  object select extends TopLevel[select with Double]
+  /* 5 */ val select: typings.intlMessageformatParser.srcTypesMod.TYPE.select with Double = js.native
   
   /**
     * XML-like tag
     */
   @js.native
   sealed trait tag extends TYPE
-  /* 8 */ @js.native
-  object tag extends TopLevel[tag with Double]
+  /* 8 */ val tag: typings.intlMessageformatParser.srcTypesMod.TYPE.tag with Double = js.native
   
   /**
     * Variable w/ time format
     */
   @js.native
   sealed trait time extends TYPE
-  /* 4 */ @js.native
-  object time extends TopLevel[time with Double]
+  /* 4 */ val time: typings.intlMessageformatParser.srcTypesMod.TYPE.time with Double = js.native
 }

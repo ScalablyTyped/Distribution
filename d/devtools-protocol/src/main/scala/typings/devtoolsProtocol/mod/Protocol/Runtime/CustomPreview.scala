@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomPreview extends js.Object {
+trait CustomPreview extends StObject {
   
   /**
     * If formatter returns true as a result of formatter.hasBody call then bodyGetterId will
@@ -29,27 +30,15 @@ object CustomPreview {
   }
   
   @scala.inline
-  implicit class CustomPreviewOps[Self <: CustomPreview] (val x: Self) extends AnyVal {
+  implicit class CustomPreviewMutableBuilder[Self <: CustomPreview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyGetterId(value: RemoteObjectId): Self = StObject.set(x, "bodyGetterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyGetterIdUndefined: Self = StObject.set(x, "bodyGetterId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBodyGetterId(value: RemoteObjectId): Self = this.set("bodyGetterId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBodyGetterId: Self = this.set("bodyGetterId", js.undefined)
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

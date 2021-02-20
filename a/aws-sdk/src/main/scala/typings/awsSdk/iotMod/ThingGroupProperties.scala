@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThingGroupProperties extends js.Object {
+trait ThingGroupProperties extends StObject {
   
   /**
     * The thing group attributes in JSON format.
@@ -26,30 +27,18 @@ object ThingGroupProperties {
   }
   
   @scala.inline
-  implicit class ThingGroupPropertiesOps[Self <: ThingGroupProperties] (val x: Self) extends AnyVal {
+  implicit class ThingGroupPropertiesMutableBuilder[Self <: ThingGroupProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributePayload(value: AttributePayload): Self = StObject.set(x, "attributePayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributePayloadUndefined: Self = StObject.set(x, "attributePayload", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThingGroupDescription(value: ThingGroupDescription): Self = StObject.set(x, "thingGroupDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributePayload(value: AttributePayload): Self = this.set("attributePayload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributePayload: Self = this.set("attributePayload", js.undefined)
-    
-    @scala.inline
-    def setThingGroupDescription(value: ThingGroupDescription): Self = this.set("thingGroupDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingGroupDescription: Self = this.set("thingGroupDescription", js.undefined)
+    def setThingGroupDescriptionUndefined: Self = StObject.set(x, "thingGroupDescription", js.undefined)
   }
 }

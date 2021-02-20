@@ -1,11 +1,12 @@
 package typings.jsSchema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayConstructor extends js.Object {
+trait ArrayConstructor extends StObject {
   
   def like(arr: js.Array[_]): ArrayConstructor = js.native
   

@@ -1,11 +1,12 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateOverridesOptions extends js.Object {
+trait TemplateOverridesOptions extends StObject {
   
   /** Base view ID (SPView.BaseViewID) for which the template should be applied.
     If not defined, the templates will be applied to all views. */
@@ -37,66 +38,54 @@ object TemplateOverridesOptions {
   }
   
   @scala.inline
-  implicit class TemplateOverridesOptionsOps[Self <: TemplateOverridesOptions] (val x: Self) extends AnyVal {
+  implicit class TemplateOverridesOptionsMutableBuilder[Self <: TemplateOverridesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseViewID(value: Double | String): Self = StObject.set(x, "BaseViewID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseViewIDUndefined: Self = StObject.set(x, "BaseViewID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListTemplateType(value: Double): Self = StObject.set(x, "ListTemplateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseViewID(value: Double | String): Self = this.set("BaseViewID", value.asInstanceOf[js.Any])
+    def setListTemplateTypeUndefined: Self = StObject.set(x, "ListTemplateType", js.undefined)
     
     @scala.inline
-    def deleteBaseViewID: Self = this.set("BaseViewID", js.undefined)
+    def setOnPostRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPostRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListTemplateType(value: Double): Self = this.set("ListTemplateType", value.asInstanceOf[js.Any])
+    def setOnPostRenderFunction1(value: /* ctx */ RenderContext => Unit): Self = StObject.set(x, "OnPostRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteListTemplateType: Self = this.set("ListTemplateType", js.undefined)
+    def setOnPostRenderUndefined: Self = StObject.set(x, "OnPostRender", js.undefined)
     
     @scala.inline
-    def setOnPostRenderVarargs(value: RenderCallback*): Self = this.set("OnPostRender", js.Array(value :_*))
+    def setOnPostRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPostRender", js.Array(value :_*))
     
     @scala.inline
-    def setOnPostRenderFunction1(value: /* ctx */ RenderContext => Unit): Self = this.set("OnPostRender", js.Any.fromFunction1(value))
+    def setOnPreRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPreRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPostRender(value: RenderCallback | js.Array[RenderCallback]): Self = this.set("OnPostRender", value.asInstanceOf[js.Any])
+    def setOnPreRenderFunction1(value: /* ctx */ RenderContext => Unit): Self = StObject.set(x, "OnPreRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPostRender: Self = this.set("OnPostRender", js.undefined)
+    def setOnPreRenderUndefined: Self = StObject.set(x, "OnPreRender", js.undefined)
     
     @scala.inline
-    def setOnPreRenderVarargs(value: RenderCallback*): Self = this.set("OnPreRender", js.Array(value :_*))
+    def setOnPreRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPreRender", js.Array(value :_*))
     
     @scala.inline
-    def setOnPreRenderFunction1(value: /* ctx */ RenderContext => Unit): Self = this.set("OnPreRender", js.Any.fromFunction1(value))
+    def setTemplates(value: TemplateOverrides): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPreRender(value: RenderCallback | js.Array[RenderCallback]): Self = this.set("OnPreRender", value.asInstanceOf[js.Any])
+    def setTemplatesUndefined: Self = StObject.set(x, "Templates", js.undefined)
     
     @scala.inline
-    def deleteOnPreRender: Self = this.set("OnPreRender", js.undefined)
+    def setViewStyle(value: Double): Self = StObject.set(x, "ViewStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplates(value: TemplateOverrides): Self = this.set("Templates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplates: Self = this.set("Templates", js.undefined)
-    
-    @scala.inline
-    def setViewStyle(value: Double): Self = this.set("ViewStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewStyle: Self = this.set("ViewStyle", js.undefined)
+    def setViewStyleUndefined: Self = StObject.set(x, "ViewStyle", js.undefined)
   }
 }

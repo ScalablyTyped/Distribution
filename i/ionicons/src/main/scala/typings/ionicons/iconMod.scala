@@ -1,16 +1,16 @@
 package typings.ionicons
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionicons/dist/types/components/icon/icon", JSImport.Namespace)
-@js.native
-object iconMod extends js.Object {
+object iconMod {
   
+  @JSImport("ionicons/dist/types/components/icon/icon", "Icon")
   @js.native
-  class Icon () extends js.Object {
+  class Icon () extends StObject {
     
     /**
       * Set the icon to hidden, respectively `true`, to remove it from the accessibility tree.

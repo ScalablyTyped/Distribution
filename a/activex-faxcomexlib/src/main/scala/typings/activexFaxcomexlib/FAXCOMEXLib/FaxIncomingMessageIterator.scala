@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxIncomingMessageIterator Class */
 @js.native
-trait FaxIncomingMessageIterator extends js.Object {
+trait FaxIncomingMessageIterator extends StObject {
   
   /** End of archive marker */
   val AtEOF: Boolean = js.native
@@ -43,36 +44,24 @@ object FaxIncomingMessageIterator {
   }
   
   @scala.inline
-  implicit class FaxIncomingMessageIteratorOps[Self <: FaxIncomingMessageIterator] (val x: Self) extends AnyVal {
+  implicit class FaxIncomingMessageIteratorMutableBuilder[Self <: FaxIncomingMessageIterator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtEOF(value: Boolean): Self = StObject.set(x, "AtEOF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFAXCOMEXLibDotFaxIncomingMessageIterator_typekey(value: FaxIncomingMessageIterator): Self = StObject.set(x, "FAXCOMEXLib.FaxIncomingMessageIterator_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: IFaxIncomingMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtEOF(value: Boolean): Self = this.set("AtEOF", value.asInstanceOf[js.Any])
+    def setMoveFirst(value: () => Unit): Self = StObject.set(x, "MoveFirst", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxIncomingMessageIterator_typekey(value: FaxIncomingMessageIterator): Self = this.set("FAXCOMEXLib.FaxIncomingMessageIterator_typekey", value.asInstanceOf[js.Any])
+    def setMoveNext(value: () => Unit): Self = StObject.set(x, "MoveNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMessage(value: IFaxIncomingMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMoveFirst(value: () => Unit): Self = this.set("MoveFirst", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMoveNext(value: () => Unit): Self = this.set("MoveNext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrefetchSize(value: Double): Self = this.set("PrefetchSize", value.asInstanceOf[js.Any])
+    def setPrefetchSize(value: Double): Self = StObject.set(x, "PrefetchSize", value.asInstanceOf[js.Any])
   }
 }

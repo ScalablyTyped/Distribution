@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cluster extends js.Object {
+trait Cluster extends StObject {
   
   /**
     * The cluster's backup policy.
@@ -91,114 +92,102 @@ object Cluster {
   }
   
   @scala.inline
-  implicit class ClusterOps[Self <: Cluster] (val x: Self) extends AnyVal {
+  implicit class ClusterMutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPolicy(value: BackupPolicy): Self = StObject.set(x, "BackupPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupPolicyUndefined: Self = StObject.set(x, "BackupPolicy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupRetentionPolicy(value: BackupRetentionPolicy): Self = StObject.set(x, "BackupRetentionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupPolicy(value: BackupPolicy): Self = this.set("BackupPolicy", value.asInstanceOf[js.Any])
+    def setBackupRetentionPolicyUndefined: Self = StObject.set(x, "BackupRetentionPolicy", js.undefined)
     
     @scala.inline
-    def deleteBackupPolicy: Self = this.set("BackupPolicy", js.undefined)
+    def setCertificates(value: Certificates): Self = StObject.set(x, "Certificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupRetentionPolicy(value: BackupRetentionPolicy): Self = this.set("BackupRetentionPolicy", value.asInstanceOf[js.Any])
+    def setCertificatesUndefined: Self = StObject.set(x, "Certificates", js.undefined)
     
     @scala.inline
-    def deleteBackupRetentionPolicy: Self = this.set("BackupRetentionPolicy", js.undefined)
+    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificates(value: Certificates): Self = this.set("Certificates", value.asInstanceOf[js.Any])
+    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
     @scala.inline
-    def deleteCertificates: Self = this.set("Certificates", js.undefined)
+    def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
     @scala.inline
-    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    def setHsmType(value: HsmType): Self = StObject.set(x, "HsmType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTimestamp(value: Timestamp): Self = this.set("CreateTimestamp", value.asInstanceOf[js.Any])
+    def setHsmTypeUndefined: Self = StObject.set(x, "HsmType", js.undefined)
     
     @scala.inline
-    def deleteCreateTimestamp: Self = this.set("CreateTimestamp", js.undefined)
+    def setHsms(value: Hsms): Self = StObject.set(x, "Hsms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmType(value: HsmType): Self = this.set("HsmType", value.asInstanceOf[js.Any])
+    def setHsmsUndefined: Self = StObject.set(x, "Hsms", js.undefined)
     
     @scala.inline
-    def deleteHsmType: Self = this.set("HsmType", js.undefined)
+    def setHsmsVarargs(value: Hsm*): Self = StObject.set(x, "Hsms", js.Array(value :_*))
     
     @scala.inline
-    def setHsmsVarargs(value: Hsm*): Self = this.set("Hsms", js.Array(value :_*))
+    def setPreCoPassword(value: PreCoPassword): Self = StObject.set(x, "PreCoPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsms(value: Hsms): Self = this.set("Hsms", value.asInstanceOf[js.Any])
+    def setPreCoPasswordUndefined: Self = StObject.set(x, "PreCoPassword", js.undefined)
     
     @scala.inline
-    def deleteHsms: Self = this.set("Hsms", js.undefined)
+    def setSecurityGroup(value: SecurityGroup): Self = StObject.set(x, "SecurityGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreCoPassword(value: PreCoPassword): Self = this.set("PreCoPassword", value.asInstanceOf[js.Any])
+    def setSecurityGroupUndefined: Self = StObject.set(x, "SecurityGroup", js.undefined)
     
     @scala.inline
-    def deletePreCoPassword: Self = this.set("PreCoPassword", js.undefined)
+    def setSourceBackupId(value: BackupId): Self = StObject.set(x, "SourceBackupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroup(value: SecurityGroup): Self = this.set("SecurityGroup", value.asInstanceOf[js.Any])
+    def setSourceBackupIdUndefined: Self = StObject.set(x, "SourceBackupId", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroup: Self = this.set("SecurityGroup", js.undefined)
+    def setState(value: ClusterState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceBackupId(value: BackupId): Self = this.set("SourceBackupId", value.asInstanceOf[js.Any])
+    def setStateMessage(value: StateMessage): Self = StObject.set(x, "StateMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceBackupId: Self = this.set("SourceBackupId", js.undefined)
+    def setStateMessageUndefined: Self = StObject.set(x, "StateMessage", js.undefined)
     
     @scala.inline
-    def setState(value: ClusterState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setSubnetMapping(value: ExternalSubnetMapping): Self = StObject.set(x, "SubnetMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateMessage(value: StateMessage): Self = this.set("StateMessage", value.asInstanceOf[js.Any])
+    def setSubnetMappingUndefined: Self = StObject.set(x, "SubnetMapping", js.undefined)
     
     @scala.inline
-    def deleteStateMessage: Self = this.set("StateMessage", js.undefined)
+    def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetMapping(value: ExternalSubnetMapping): Self = this.set("SubnetMapping", value.asInstanceOf[js.Any])
+    def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
     @scala.inline
-    def deleteSubnetMapping: Self = this.set("SubnetMapping", js.undefined)
+    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
     
     @scala.inline
-    def setTagListVarargs(value: Tag*): Self = this.set("TagList", js.Array(value :_*))
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagList(value: TagList): Self = this.set("TagList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagList: Self = this.set("TagList", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

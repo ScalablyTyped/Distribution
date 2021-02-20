@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus", JSImport.Namespace)
-@js.native
-object vscDarkPlusMod extends js.Object {
+object vscDarkPlusMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

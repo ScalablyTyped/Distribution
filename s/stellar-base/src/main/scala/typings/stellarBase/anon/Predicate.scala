@@ -1,12 +1,13 @@
 package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.ClaimPredicate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Predicate extends js.Object {
+trait Predicate extends StObject {
   
   var destination: typings.stellarBase.xdrMod.xdr.AccountId = js.native
   
@@ -21,24 +22,12 @@ object Predicate {
   }
   
   @scala.inline
-  implicit class PredicateOps[Self <: Predicate] (val x: Self) extends AnyVal {
+  implicit class PredicateMutableBuilder[Self <: Predicate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestination(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = this.set("destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredicate(value: ClaimPredicate): Self = this.set("predicate", value.asInstanceOf[js.Any])
+    def setPredicate(value: ClaimPredicate): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
   }
 }

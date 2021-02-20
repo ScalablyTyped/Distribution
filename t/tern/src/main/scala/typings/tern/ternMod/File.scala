@@ -5,12 +5,13 @@ import typings.tern.inferMod.Scope
 import typings.tern.ternStrings.delete
 import typings.tern.ternStrings.full
 import typings.tern.ternStrings.part
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait File extends js.Object {
+trait File extends StObject {
   
   var asLineChar: js.UndefOr[js.Function1[/* nodePosition */ Double, Position]] = js.native
   
@@ -33,42 +34,30 @@ object File {
   }
   
   @scala.inline
-  implicit class FileOps[Self <: File] (val x: Self) extends AnyVal {
+  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsLineChar(value: /* nodePosition */ Double => Position): Self = StObject.set(x, "asLineChar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsLineCharUndefined: Self = StObject.set(x, "asLineChar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAst(value: Program): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAst(value: Program): Self = this.set("ast", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: Scope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setType(value: full | part | delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsLineChar(value: /* nodePosition */ Double => Position): Self = this.set("asLineChar", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteAsLineChar: Self = this.set("asLineChar", js.undefined)
-    
-    @scala.inline
-    def setType(value: full | part | delete): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A reference to a file.
   */
 @js.native
-trait SchemaFileReference extends js.Object {
+trait SchemaFileReference extends StObject {
   
   /**
     * The URI of a file stored in Google Cloud Storage.  For example:
@@ -29,24 +30,12 @@ object SchemaFileReference {
   }
   
   @scala.inline
-  implicit class SchemaFileReferenceOps[Self <: SchemaFileReference] (val x: Self) extends AnyVal {
+  implicit class SchemaFileReferenceMutableBuilder[Self <: SchemaFileReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileUri(value: String): Self = this.set("fileUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileUri: Self = this.set("fileUri", js.undefined)
+    def setFileUriUndefined: Self = StObject.set(x, "fileUri", js.undefined)
   }
 }

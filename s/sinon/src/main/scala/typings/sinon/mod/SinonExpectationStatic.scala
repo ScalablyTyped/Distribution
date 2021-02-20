@@ -1,11 +1,12 @@
 package typings.sinon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonExpectationStatic extends js.Object {
+trait SinonExpectationStatic extends StObject {
   
   /**
     * Creates an expectation without a mock object, basically an anonymous mock function.

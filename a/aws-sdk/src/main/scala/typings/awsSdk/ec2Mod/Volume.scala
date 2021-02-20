@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Volume extends js.Object {
+trait Volume extends StObject {
   
   /**
     * Information about the volume attachments.
@@ -91,114 +92,102 @@ object Volume {
   }
   
   @scala.inline
-  implicit class VolumeOps[Self <: Volume] (val x: Self) extends AnyVal {
+  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: VolumeAttachmentList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsVarargs(value: VolumeAttachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentsVarargs(value: VolumeAttachment*): Self = this.set("Attachments", js.Array(value :_*))
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: VolumeAttachmentList): Self = this.set("Attachments", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("Attachments", js.undefined)
+    def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setEncrypted(value: Boolean): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    def setFastRestored(value: Boolean): Self = StObject.set(x, "FastRestored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    def setFastRestoredUndefined: Self = StObject.set(x, "FastRestored", js.undefined)
     
     @scala.inline
-    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastRestored(value: Boolean): Self = this.set("FastRestored", value.asInstanceOf[js.Any])
+    def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
     @scala.inline
-    def deleteFastRestored: Self = this.set("FastRestored", js.undefined)
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIops(value: Integer): Self = this.set("Iops", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteIops: Self = this.set("Iops", js.undefined)
+    def setMultiAttachEnabled(value: Boolean): Self = StObject.set(x, "MultiAttachEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setMultiAttachEnabledUndefined: Self = StObject.set(x, "MultiAttachEnabled", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiAttachEnabled(value: Boolean): Self = this.set("MultiAttachEnabled", value.asInstanceOf[js.Any])
+    def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
     
     @scala.inline
-    def deleteMultiAttachEnabled: Self = this.set("MultiAttachEnabled", js.undefined)
+    def setSize(value: Integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutpostArn(value: String): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
     @scala.inline
-    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
+    def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Integer): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("Size", js.undefined)
+    def setState(value: VolumeState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotId(value: String): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: VolumeState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setVolumeType(value: VolumeType): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
-    
-    @scala.inline
-    def setVolumeType(value: VolumeType): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+    def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
   }
 }

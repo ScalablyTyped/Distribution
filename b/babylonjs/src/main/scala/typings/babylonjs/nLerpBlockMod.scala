@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/nLerpBlock", JSImport.Namespace)
-@js.native
-object nLerpBlockMod extends js.Object {
+object nLerpBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/nLerpBlock", "NLerpBlock")
   @js.native
   class NLerpBlock protected () extends NodeMaterialBlock {
     /**

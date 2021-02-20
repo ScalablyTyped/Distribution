@@ -1,22 +1,23 @@
 package typings.pLimit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-limit", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   Run multiple promise-returning & async functions with limited concurrency.
   @param concurrency - Concurrency limit. Minimum: `1`.
   @returns A `limit` function.
   */
+  @JSImport("p-limit", JSImport.Namespace)
+  @js.native
   def apply(concurrency: Double): Limit = js.native
   
   @js.native
-  trait Limit extends js.Object {
+  trait Limit extends StObject {
     
     /**
     		@param fn - Promise-returning/async function.

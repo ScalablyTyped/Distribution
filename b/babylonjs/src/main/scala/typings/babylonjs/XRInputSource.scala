@@ -1,11 +1,12 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRInputSource extends js.Object {
+trait XRInputSource extends StObject {
   
   val gamepad: js.UndefOr[Gamepad] = js.native
   
@@ -35,51 +36,39 @@ object XRInputSource {
   }
   
   @scala.inline
-  implicit class XRInputSourceOps[Self <: XRInputSource] (val x: Self) extends AnyVal {
+  implicit class XRInputSourceMutableBuilder[Self <: XRInputSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGamepad(value: Gamepad): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGamepadUndefined: Self = StObject.set(x, "gamepad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGripSpace(value: XRSpace): Self = StObject.set(x, "gripSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandedness(value: XRHandedness): Self = this.set("handedness", value.asInstanceOf[js.Any])
+    def setGripSpaceUndefined: Self = StObject.set(x, "gripSpace", js.undefined)
     
     @scala.inline
-    def setProfilesVarargs(value: String*): Self = this.set("profiles", js.Array(value :_*))
+    def setHand(value: XRHand): Self = StObject.set(x, "hand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfiles(value: js.Array[String]): Self = this.set("profiles", value.asInstanceOf[js.Any])
+    def setHandUndefined: Self = StObject.set(x, "hand", js.undefined)
     
     @scala.inline
-    def setTargetRayMode(value: XRTargetRayMode): Self = this.set("targetRayMode", value.asInstanceOf[js.Any])
+    def setHandedness(value: XRHandedness): Self = StObject.set(x, "handedness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetRaySpace(value: XRSpace): Self = this.set("targetRaySpace", value.asInstanceOf[js.Any])
+    def setProfiles(value: js.Array[String]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGamepad(value: Gamepad): Self = this.set("gamepad", value.asInstanceOf[js.Any])
+    def setProfilesVarargs(value: String*): Self = StObject.set(x, "profiles", js.Array(value :_*))
     
     @scala.inline
-    def deleteGamepad: Self = this.set("gamepad", js.undefined)
+    def setTargetRayMode(value: XRTargetRayMode): Self = StObject.set(x, "targetRayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGripSpace(value: XRSpace): Self = this.set("gripSpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGripSpace: Self = this.set("gripSpace", js.undefined)
-    
-    @scala.inline
-    def setHand(value: XRHand): Self = this.set("hand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHand: Self = this.set("hand", js.undefined)
+    def setTargetRaySpace(value: XRSpace): Self = StObject.set(x, "targetRaySpace", value.asInstanceOf[js.Any])
   }
 }

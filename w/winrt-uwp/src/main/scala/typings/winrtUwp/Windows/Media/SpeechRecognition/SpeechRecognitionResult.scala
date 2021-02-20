@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The result of a speech recognition session. */
 @js.native
-trait SpeechRecognitionResult extends js.Object {
+trait SpeechRecognitionResult extends StObject {
   
   /** Gets a value that indicates the confidence of the speech recognizer in the recognition result. */
   var confidence: SpeechRecognitionConfidence = js.native
@@ -64,48 +65,36 @@ object SpeechRecognitionResult {
   }
   
   @scala.inline
-  implicit class SpeechRecognitionResultOps[Self <: SpeechRecognitionResult] (val x: Self) extends AnyVal {
+  implicit class SpeechRecognitionResultMutableBuilder[Self <: SpeechRecognitionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: SpeechRecognitionConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraint(value: ISpeechRecognitionConstraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAlternates(value: Double => IVectorView[SpeechRecognitionResult]): Self = StObject.set(x, "getAlternates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConfidence(value: SpeechRecognitionConfidence): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setPhraseDuration(value: Double): Self = StObject.set(x, "phraseDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraint(value: ISpeechRecognitionConstraint): Self = this.set("constraint", value.asInstanceOf[js.Any])
+    def setPhraseStartTime(value: Date): Self = StObject.set(x, "phraseStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAlternates(value: Double => IVectorView[SpeechRecognitionResult]): Self = this.set("getAlternates", js.Any.fromFunction1(value))
+    def setRawConfidence(value: Double): Self = StObject.set(x, "rawConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhraseDuration(value: Double): Self = this.set("phraseDuration", value.asInstanceOf[js.Any])
+    def setRulePath(value: IVectorView[String]): Self = StObject.set(x, "rulePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhraseStartTime(value: Date): Self = this.set("phraseStartTime", value.asInstanceOf[js.Any])
+    def setSemanticInterpretation(value: SpeechRecognitionSemanticInterpretation): Self = StObject.set(x, "semanticInterpretation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawConfidence(value: Double): Self = this.set("rawConfidence", value.asInstanceOf[js.Any])
+    def setStatus(value: SpeechRecognitionResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulePath(value: IVectorView[String]): Self = this.set("rulePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSemanticInterpretation(value: SpeechRecognitionSemanticInterpretation): Self = this.set("semanticInterpretation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: SpeechRecognitionResultStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

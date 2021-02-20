@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceInformationKind extends js.Object
+sealed trait DeviceInformationKind extends StObject
 /** Represents the kind of DeviceInformation object. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceInformationKind")
 @js.native
-object DeviceInformationKind extends js.Object {
+object DeviceInformationKind extends StObject {
   
   /** The DeviceInformation object represents a device association endpoint (AEP). AEPs usually represent a device discovered over a wireless or network protocol. Some of these endpoints can be used without needing to first pair the device. Use CanPair to determine if a device supports pairing and IsPaired to determine if a device is already paired with the system. Only AssociationEndpoint objects have a non-NULL value for Pairing . For more information about pairing over a network, see Enumerate devices over a network. An AssociationEndpoint object is a child of a single AssociationEndpointContainer object and can contain 0 or more AssociationEndpointService objects. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.karma.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilePattern extends js.Object {
+trait FilePattern extends StObject {
   
   /**
     * @default true
@@ -56,51 +57,39 @@ object FilePattern {
   }
   
   @scala.inline
-  implicit class FilePatternOps[Self <: FilePattern] (val x: Self) extends AnyVal {
+  implicit class FilePatternMutableBuilder[Self <: FilePattern] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNocache(value: Boolean): Self = StObject.set(x, "nocache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setNocacheUndefined: Self = StObject.set(x, "nocache", js.undefined)
     
     @scala.inline
-    def setIncluded(value: Boolean): Self = this.set("included", value.asInstanceOf[js.Any])
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncluded: Self = this.set("included", js.undefined)
+    def setServed(value: Boolean): Self = StObject.set(x, "served", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNocache(value: Boolean): Self = this.set("nocache", value.asInstanceOf[js.Any])
+    def setServedUndefined: Self = StObject.set(x, "served", js.undefined)
     
     @scala.inline
-    def deleteNocache: Self = this.set("nocache", js.undefined)
+    def setType(value: FilePatternTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServed(value: Boolean): Self = this.set("served", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteServed: Self = this.set("served", js.undefined)
+    def setWatched(value: Boolean): Self = StObject.set(x, "watched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: FilePatternTypes): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setWatched(value: Boolean): Self = this.set("watched", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatched: Self = this.set("watched", js.undefined)
+    def setWatchedUndefined: Self = StObject.set(x, "watched", js.undefined)
   }
 }

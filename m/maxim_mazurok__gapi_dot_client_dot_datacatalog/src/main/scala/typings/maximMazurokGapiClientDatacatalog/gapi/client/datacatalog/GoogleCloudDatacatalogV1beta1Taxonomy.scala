@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1Taxonomy extends js.Object {
+trait GoogleCloudDatacatalogV1beta1Taxonomy extends StObject {
   
   /** Optional. A list of policy types that are activated for this taxonomy. If not set, defaults to an empty list. */
   var activatedPolicyTypes: js.UndefOr[js.Array[String]] = js.native
@@ -40,57 +41,45 @@ object GoogleCloudDatacatalogV1beta1Taxonomy {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1TaxonomyOps[Self <: GoogleCloudDatacatalogV1beta1Taxonomy] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1TaxonomyMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1Taxonomy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatedPolicyTypes(value: js.Array[String]): Self = StObject.set(x, "activatedPolicyTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivatedPolicyTypesUndefined: Self = StObject.set(x, "activatedPolicyTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivatedPolicyTypesVarargs(value: String*): Self = StObject.set(x, "activatedPolicyTypes", js.Array(value :_*))
     
     @scala.inline
-    def setActivatedPolicyTypesVarargs(value: String*): Self = this.set("activatedPolicyTypes", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatedPolicyTypes(value: js.Array[String]): Self = this.set("activatedPolicyTypes", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteActivatedPolicyTypes: Self = this.set("activatedPolicyTypes", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setPolicyTagCount(value: Double): Self = StObject.set(x, "policyTagCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPolicyTagCountUndefined: Self = StObject.set(x, "policyTagCount", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTaxonomyTimestamps(value: GoogleCloudDatacatalogV1beta1SystemTimestamps): Self = StObject.set(x, "taxonomyTimestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyTagCount(value: Double): Self = this.set("policyTagCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyTagCount: Self = this.set("policyTagCount", js.undefined)
-    
-    @scala.inline
-    def setTaxonomyTimestamps(value: GoogleCloudDatacatalogV1beta1SystemTimestamps): Self = this.set("taxonomyTimestamps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaxonomyTimestamps: Self = this.set("taxonomyTimestamps", js.undefined)
+    def setTaxonomyTimestampsUndefined: Self = StObject.set(x, "taxonomyTimestamps", js.undefined)
   }
 }

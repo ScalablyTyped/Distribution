@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGViewElement extends js.Object {
+trait SVGViewElement extends StObject {
   
   @JSName("MSHTML.SVGViewElement_typekey")
   var MSHTMLDotSVGViewElement_typekey: SVGViewElement = js.native
@@ -49,48 +50,36 @@ object SVGViewElement {
   }
   
   @scala.inline
-  implicit class SVGViewElementOps[Self <: SVGViewElement] (val x: Self) extends AnyVal {
+  implicit class SVGViewElementMutableBuilder[Self <: SVGViewElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSHTMLDotSVGViewElement_typekey(value: SVGViewElement): Self = StObject.set(x, "MSHTML.SVGViewElement_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotSVGViewElement_typekey(value: SVGViewElement): Self = this.set("MSHTML.SVGViewElement_typekey", value.asInstanceOf[js.Any])
+    def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = this.set("externalResourcesRequired", value.asInstanceOf[js.Any])
+    def setPreserveAspectRatio(value: SVGAnimatedPreserveAspectRatio): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusable(value: SVGAnimatedEnumeration): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    def setViewBox(value: SVGAnimatedRect): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerSVGElement(value: ISVGSVGElement): Self = this.set("ownerSVGElement", value.asInstanceOf[js.Any])
+    def setViewTarget(value: SVGStringList): Self = StObject.set(x, "viewTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveAspectRatio(value: SVGAnimatedPreserveAspectRatio): Self = this.set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewBox(value: SVGAnimatedRect): Self = this.set("viewBox", value.asInstanceOf[js.Any])
+    def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewTarget(value: SVGStringList): Self = this.set("viewTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportElement(value: ISVGElement): Self = this.set("viewportElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXmlbase(value: String): Self = this.set("xmlbase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomAndPan(value: Double): Self = this.set("zoomAndPan", value.asInstanceOf[js.Any])
+    def setZoomAndPan(value: Double): Self = StObject.set(x, "zoomAndPan", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InlineKeyboardButton extends js.Object {
+trait InlineKeyboardButton extends StObject {
   
   var callback_data: js.UndefOr[String] = js.native
   
@@ -32,63 +33,51 @@ object InlineKeyboardButton {
   }
   
   @scala.inline
-  implicit class InlineKeyboardButtonOps[Self <: InlineKeyboardButton] (val x: Self) extends AnyVal {
+  implicit class InlineKeyboardButtonMutableBuilder[Self <: InlineKeyboardButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback_data(value: String): Self = StObject.set(x, "callback_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallback_dataUndefined: Self = StObject.set(x, "callback_data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback_game(value: CallbackGame): Self = StObject.set(x, "callback_game", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setCallback_gameUndefined: Self = StObject.set(x, "callback_game", js.undefined)
     
     @scala.inline
-    def setCallback_data(value: String): Self = this.set("callback_data", value.asInstanceOf[js.Any])
+    def setLogin_url(value: LoginUrl): Self = StObject.set(x, "login_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallback_data: Self = this.set("callback_data", js.undefined)
+    def setLogin_urlUndefined: Self = StObject.set(x, "login_url", js.undefined)
     
     @scala.inline
-    def setCallback_game(value: CallbackGame): Self = this.set("callback_game", value.asInstanceOf[js.Any])
+    def setPay(value: Boolean): Self = StObject.set(x, "pay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallback_game: Self = this.set("callback_game", js.undefined)
+    def setPayUndefined: Self = StObject.set(x, "pay", js.undefined)
     
     @scala.inline
-    def setLogin_url(value: LoginUrl): Self = this.set("login_url", value.asInstanceOf[js.Any])
+    def setSwitch_inline_query(value: String): Self = StObject.set(x, "switch_inline_query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogin_url: Self = this.set("login_url", js.undefined)
+    def setSwitch_inline_queryUndefined: Self = StObject.set(x, "switch_inline_query", js.undefined)
     
     @scala.inline
-    def setPay(value: Boolean): Self = this.set("pay", value.asInstanceOf[js.Any])
+    def setSwitch_inline_query_current_chat(value: String): Self = StObject.set(x, "switch_inline_query_current_chat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePay: Self = this.set("pay", js.undefined)
+    def setSwitch_inline_query_current_chatUndefined: Self = StObject.set(x, "switch_inline_query_current_chat", js.undefined)
     
     @scala.inline
-    def setSwitch_inline_query(value: String): Self = this.set("switch_inline_query", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSwitch_inline_query: Self = this.set("switch_inline_query", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwitch_inline_query_current_chat(value: String): Self = this.set("switch_inline_query_current_chat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwitch_inline_query_current_chat: Self = this.set("switch_inline_query_current_chat", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

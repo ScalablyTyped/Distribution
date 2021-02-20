@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureAvailableMetadata extends js.Object {
+trait FeatureAvailableMetadata extends StObject {
   
   var availabilty: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object FeatureAvailableMetadata {
   }
   
   @scala.inline
-  implicit class FeatureAvailableMetadataOps[Self <: FeatureAvailableMetadata] (val x: Self) extends AnyVal {
+  implicit class FeatureAvailableMetadataMutableBuilder[Self <: FeatureAvailableMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilty(value: String): Self = StObject.set(x, "availabilty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabiltyUndefined: Self = StObject.set(x, "availabilty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilty(value: String): Self = this.set("availabilty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailabilty: Self = this.set("availabilty", js.undefined)
-    
-    @scala.inline
-    def setFeatureName(value: String): Self = this.set("featureName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatureName: Self = this.set("featureName", js.undefined)
+    def setFeatureNameUndefined: Self = StObject.set(x, "featureName", js.undefined)
   }
 }

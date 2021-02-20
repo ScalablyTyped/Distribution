@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.table
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,30 +55,18 @@ object XColumnRowRange {
   }
   
   @scala.inline
-  implicit class XColumnRowRangeOps[Self <: XColumnRowRange] (val x: Self) extends AnyVal {
+  implicit class XColumnRowRangeMutableBuilder[Self <: XColumnRowRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: XTableColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetColumns(value: () => XTableColumns): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRows(value: () => XTableRows): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumns(value: XTableColumns): Self = this.set("Columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRows(value: XTableRows): Self = this.set("Rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetColumns(value: () => XTableColumns): Self = this.set("getColumns", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRows(value: () => XTableRows): Self = this.set("getRows", js.Any.fromFunction0(value))
+    def setRows(value: XTableRows): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
   }
 }

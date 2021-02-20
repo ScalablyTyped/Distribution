@@ -1,6 +1,7 @@
 package typings.extjs.Ext.chart
 
 import typings.extjs.Ext.chart.series.ICartesian
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,78 +52,66 @@ object IStackedBarChart {
   }
   
   @scala.inline
-  implicit class IStackedBarChartOps[Self <: IStackedBarChart] (val x: Self) extends AnyVal {
+  implicit class IStackedBarChartMutableBuilder[Self <: IStackedBarChart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Boolean): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawSeries(value: () => Unit): Self = StObject.set(x, "drawSeries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumn(value: Boolean): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setDrawSeriesUndefined: Self = StObject.set(x, "drawSeries", js.undefined)
     
     @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setGroupGutter(value: Double): Self = StObject.set(x, "groupGutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawSeries(value: () => Unit): Self = this.set("drawSeries", js.Any.fromFunction0(value))
+    def setGroupGutterUndefined: Self = StObject.set(x, "groupGutter", js.undefined)
     
     @scala.inline
-    def deleteDrawSeries: Self = this.set("drawSeries", js.undefined)
+    def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupGutter(value: Double): Self = this.set("groupGutter", value.asInstanceOf[js.Any])
+    def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
     
     @scala.inline
-    def deleteGroupGutter: Self = this.set("groupGutter", js.undefined)
+    def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGutter(value: Double): Self = this.set("gutter", value.asInstanceOf[js.Any])
+    def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     
     @scala.inline
-    def deleteGutter: Self = this.set("gutter", js.undefined)
+    def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("highlightItem", js.Any.fromFunction1(value))
+    def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
     
     @scala.inline
-    def deleteHighlightItem: Self = this.set("highlightItem", js.undefined)
+    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStacked(value: Boolean): Self = this.set("stacked", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStacked: Self = this.set("stacked", js.undefined)
+    def setUnHighlightItem(value: () => Unit): Self = StObject.set(x, "unHighlightItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setXPadding(value: js.Any): Self = StObject.set(x, "xPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnHighlightItem(value: () => Unit): Self = this.set("unHighlightItem", js.Any.fromFunction0(value))
+    def setXPaddingUndefined: Self = StObject.set(x, "xPadding", js.undefined)
     
     @scala.inline
-    def deleteUnHighlightItem: Self = this.set("unHighlightItem", js.undefined)
+    def setYPadding(value: js.Any): Self = StObject.set(x, "yPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXPadding(value: js.Any): Self = this.set("xPadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXPadding: Self = this.set("xPadding", js.undefined)
-    
-    @scala.inline
-    def setYPadding(value: js.Any): Self = this.set("yPadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYPadding: Self = this.set("yPadding", js.undefined)
+    def setYPaddingUndefined: Self = StObject.set(x, "yPadding", js.undefined)
   }
 }

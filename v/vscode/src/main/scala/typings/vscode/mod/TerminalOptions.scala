@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminalOptions extends js.Object {
+trait TerminalOptions extends StObject {
   
   /**
     * A path or Uri for the current working directory to be used for the terminal.
@@ -61,63 +62,51 @@ object TerminalOptions {
   }
   
   @scala.inline
-  implicit class TerminalOptionsOps[Self <: TerminalOptions] (val x: Self) extends AnyVal {
+  implicit class TerminalOptionsMutableBuilder[Self <: TerminalOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCwd(value: String | Uri): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnv(value: StringDictionary[String | Null]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCwd(value: String | Uri): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteCwd: Self = this.set("cwd", js.undefined)
+    def setHideFromUser(value: Boolean): Self = StObject.set(x, "hideFromUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: StringDictionary[String | Null]): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setHideFromUserUndefined: Self = StObject.set(x, "hideFromUser", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideFromUser(value: Boolean): Self = this.set("hideFromUser", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHideFromUser: Self = this.set("hideFromUser", js.undefined)
+    def setShellArgs(value: js.Array[String] | String): Self = StObject.set(x, "shellArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setShellArgsUndefined: Self = StObject.set(x, "shellArgs", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setShellArgsVarargs(value: String*): Self = StObject.set(x, "shellArgs", js.Array(value :_*))
     
     @scala.inline
-    def setShellArgsVarargs(value: String*): Self = this.set("shellArgs", js.Array(value :_*))
+    def setShellPath(value: String): Self = StObject.set(x, "shellPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShellArgs(value: js.Array[String] | String): Self = this.set("shellArgs", value.asInstanceOf[js.Any])
+    def setShellPathUndefined: Self = StObject.set(x, "shellPath", js.undefined)
     
     @scala.inline
-    def deleteShellArgs: Self = this.set("shellArgs", js.undefined)
+    def setStrictEnv(value: Boolean): Self = StObject.set(x, "strictEnv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShellPath(value: String): Self = this.set("shellPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShellPath: Self = this.set("shellPath", js.undefined)
-    
-    @scala.inline
-    def setStrictEnv(value: Boolean): Self = this.set("strictEnv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictEnv: Self = this.set("strictEnv", js.undefined)
+    def setStrictEnvUndefined: Self = StObject.set(x, "strictEnv", js.undefined)
   }
 }

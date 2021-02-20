@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserSecurityState extends js.Object {
+trait UserSecurityState extends StObject {
   
   // AAD User object identifier (GUID) - represents the physical/multi-account user entity.
   var aadUserId: js.UndefOr[NullableOption[String]] = js.native
@@ -67,144 +68,132 @@ object UserSecurityState {
   }
   
   @scala.inline
-  implicit class UserSecurityStateOps[Self <: UserSecurityState] (val x: Self) extends AnyVal {
+  implicit class UserSecurityStateMutableBuilder[Self <: UserSecurityState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAadUserId(value: NullableOption[String]): Self = StObject.set(x, "aadUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAadUserIdNull: Self = StObject.set(x, "aadUserId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAadUserIdUndefined: Self = StObject.set(x, "aadUserId", js.undefined)
     
     @scala.inline
-    def setAadUserId(value: NullableOption[String]): Self = this.set("aadUserId", value.asInstanceOf[js.Any])
+    def setAccountName(value: NullableOption[String]): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAadUserId: Self = this.set("aadUserId", js.undefined)
+    def setAccountNameNull: Self = StObject.set(x, "accountName", null)
     
     @scala.inline
-    def setAadUserIdNull: Self = this.set("aadUserId", null)
+    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
     @scala.inline
-    def setAccountName(value: NullableOption[String]): Self = this.set("accountName", value.asInstanceOf[js.Any])
+    def setDomainName(value: NullableOption[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountName: Self = this.set("accountName", js.undefined)
+    def setDomainNameNull: Self = StObject.set(x, "domainName", null)
     
     @scala.inline
-    def setAccountNameNull: Self = this.set("accountName", null)
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def setDomainName(value: NullableOption[String]): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setEmailRole(value: NullableOption[EmailRole]): Self = StObject.set(x, "emailRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    def setEmailRoleNull: Self = StObject.set(x, "emailRole", null)
     
     @scala.inline
-    def setDomainNameNull: Self = this.set("domainName", null)
+    def setEmailRoleUndefined: Self = StObject.set(x, "emailRole", js.undefined)
     
     @scala.inline
-    def setEmailRole(value: NullableOption[EmailRole]): Self = this.set("emailRole", value.asInstanceOf[js.Any])
+    def setIsVpn(value: NullableOption[Boolean]): Self = StObject.set(x, "isVpn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailRole: Self = this.set("emailRole", js.undefined)
+    def setIsVpnNull: Self = StObject.set(x, "isVpn", null)
     
     @scala.inline
-    def setEmailRoleNull: Self = this.set("emailRole", null)
+    def setIsVpnUndefined: Self = StObject.set(x, "isVpn", js.undefined)
     
     @scala.inline
-    def setIsVpn(value: NullableOption[Boolean]): Self = this.set("isVpn", value.asInstanceOf[js.Any])
+    def setLogonDateTime(value: NullableOption[String]): Self = StObject.set(x, "logonDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsVpn: Self = this.set("isVpn", js.undefined)
+    def setLogonDateTimeNull: Self = StObject.set(x, "logonDateTime", null)
     
     @scala.inline
-    def setIsVpnNull: Self = this.set("isVpn", null)
+    def setLogonDateTimeUndefined: Self = StObject.set(x, "logonDateTime", js.undefined)
     
     @scala.inline
-    def setLogonDateTime(value: NullableOption[String]): Self = this.set("logonDateTime", value.asInstanceOf[js.Any])
+    def setLogonId(value: NullableOption[String]): Self = StObject.set(x, "logonId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogonDateTime: Self = this.set("logonDateTime", js.undefined)
+    def setLogonIdNull: Self = StObject.set(x, "logonId", null)
     
     @scala.inline
-    def setLogonDateTimeNull: Self = this.set("logonDateTime", null)
+    def setLogonIdUndefined: Self = StObject.set(x, "logonId", js.undefined)
     
     @scala.inline
-    def setLogonId(value: NullableOption[String]): Self = this.set("logonId", value.asInstanceOf[js.Any])
+    def setLogonIp(value: NullableOption[String]): Self = StObject.set(x, "logonIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogonId: Self = this.set("logonId", js.undefined)
+    def setLogonIpNull: Self = StObject.set(x, "logonIp", null)
     
     @scala.inline
-    def setLogonIdNull: Self = this.set("logonId", null)
+    def setLogonIpUndefined: Self = StObject.set(x, "logonIp", js.undefined)
     
     @scala.inline
-    def setLogonIp(value: NullableOption[String]): Self = this.set("logonIp", value.asInstanceOf[js.Any])
+    def setLogonLocation(value: NullableOption[String]): Self = StObject.set(x, "logonLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogonIp: Self = this.set("logonIp", js.undefined)
+    def setLogonLocationNull: Self = StObject.set(x, "logonLocation", null)
     
     @scala.inline
-    def setLogonIpNull: Self = this.set("logonIp", null)
+    def setLogonLocationUndefined: Self = StObject.set(x, "logonLocation", js.undefined)
     
     @scala.inline
-    def setLogonLocation(value: NullableOption[String]): Self = this.set("logonLocation", value.asInstanceOf[js.Any])
+    def setLogonType(value: NullableOption[LogonType]): Self = StObject.set(x, "logonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogonLocation: Self = this.set("logonLocation", js.undefined)
+    def setLogonTypeNull: Self = StObject.set(x, "logonType", null)
     
     @scala.inline
-    def setLogonLocationNull: Self = this.set("logonLocation", null)
+    def setLogonTypeUndefined: Self = StObject.set(x, "logonType", js.undefined)
     
     @scala.inline
-    def setLogonType(value: NullableOption[LogonType]): Self = this.set("logonType", value.asInstanceOf[js.Any])
+    def setOnPremisesSecurityIdentifier(value: NullableOption[String]): Self = StObject.set(x, "onPremisesSecurityIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogonType: Self = this.set("logonType", js.undefined)
+    def setOnPremisesSecurityIdentifierNull: Self = StObject.set(x, "onPremisesSecurityIdentifier", null)
     
     @scala.inline
-    def setLogonTypeNull: Self = this.set("logonType", null)
+    def setOnPremisesSecurityIdentifierUndefined: Self = StObject.set(x, "onPremisesSecurityIdentifier", js.undefined)
     
     @scala.inline
-    def setOnPremisesSecurityIdentifier(value: NullableOption[String]): Self = this.set("onPremisesSecurityIdentifier", value.asInstanceOf[js.Any])
+    def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesSecurityIdentifier: Self = this.set("onPremisesSecurityIdentifier", js.undefined)
+    def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
     
     @scala.inline
-    def setOnPremisesSecurityIdentifierNull: Self = this.set("onPremisesSecurityIdentifier", null)
+    def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
     
     @scala.inline
-    def setRiskScore(value: NullableOption[String]): Self = this.set("riskScore", value.asInstanceOf[js.Any])
+    def setUserAccountType(value: NullableOption[UserAccountSecurityType]): Self = StObject.set(x, "userAccountType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRiskScore: Self = this.set("riskScore", js.undefined)
+    def setUserAccountTypeNull: Self = StObject.set(x, "userAccountType", null)
     
     @scala.inline
-    def setRiskScoreNull: Self = this.set("riskScore", null)
+    def setUserAccountTypeUndefined: Self = StObject.set(x, "userAccountType", js.undefined)
     
     @scala.inline
-    def setUserAccountType(value: NullableOption[UserAccountSecurityType]): Self = this.set("userAccountType", value.asInstanceOf[js.Any])
+    def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserAccountType: Self = this.set("userAccountType", js.undefined)
+    def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
     @scala.inline
-    def setUserAccountTypeNull: Self = this.set("userAccountType", null)
-    
-    @scala.inline
-    def setUserPrincipalName(value: NullableOption[String]): Self = this.set("userPrincipalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPrincipalName: Self = this.set("userPrincipalName", js.undefined)
-    
-    @scala.inline
-    def setUserPrincipalNameNull: Self = this.set("userPrincipalName", null)
+    def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
   }
 }

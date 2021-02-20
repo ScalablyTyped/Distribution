@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedrivePolicy extends js.Object {
+trait RedrivePolicy extends StObject {
   
   var deadLetterTargetArn: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object RedrivePolicy {
   }
   
   @scala.inline
-  implicit class RedrivePolicyOps[Self <: RedrivePolicy] (val x: Self) extends AnyVal {
+  implicit class RedrivePolicyMutableBuilder[Self <: RedrivePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeadLetterTargetArn(value: String): Self = StObject.set(x, "deadLetterTargetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadLetterTargetArnUndefined: Self = StObject.set(x, "deadLetterTargetArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeadLetterTargetImport(value: DeadLetterTargetImport): Self = StObject.set(x, "deadLetterTargetImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetterTargetArn(value: String): Self = this.set("deadLetterTargetArn", value.asInstanceOf[js.Any])
+    def setDeadLetterTargetImportUndefined: Self = StObject.set(x, "deadLetterTargetImport", js.undefined)
     
     @scala.inline
-    def deleteDeadLetterTargetArn: Self = this.set("deadLetterTargetArn", js.undefined)
+    def setDeadLetterTargetRef(value: String): Self = StObject.set(x, "deadLetterTargetRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetterTargetImport(value: DeadLetterTargetImport): Self = this.set("deadLetterTargetImport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeadLetterTargetImport: Self = this.set("deadLetterTargetImport", js.undefined)
-    
-    @scala.inline
-    def setDeadLetterTargetRef(value: String): Self = this.set("deadLetterTargetRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeadLetterTargetRef: Self = this.set("deadLetterTargetRef", js.undefined)
+    def setDeadLetterTargetRefUndefined: Self = StObject.set(x, "deadLetterTargetRef", js.undefined)
   }
 }

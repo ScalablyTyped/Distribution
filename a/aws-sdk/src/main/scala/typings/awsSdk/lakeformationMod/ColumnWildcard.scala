@@ -1,11 +1,12 @@
 package typings.awsSdk.lakeformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnWildcard extends js.Object {
+trait ColumnWildcard extends StObject {
   
   /**
     * Excludes column names. Any column with this name will be excluded.
@@ -21,27 +22,15 @@ object ColumnWildcard {
   }
   
   @scala.inline
-  implicit class ColumnWildcardOps[Self <: ColumnWildcard] (val x: Self) extends AnyVal {
+  implicit class ColumnWildcardMutableBuilder[Self <: ColumnWildcard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedColumnNames(value: ColumnNames): Self = StObject.set(x, "ExcludedColumnNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedColumnNamesUndefined: Self = StObject.set(x, "ExcludedColumnNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExcludedColumnNamesVarargs(value: NameString*): Self = this.set("ExcludedColumnNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setExcludedColumnNames(value: ColumnNames): Self = this.set("ExcludedColumnNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludedColumnNames: Self = this.set("ExcludedColumnNames", js.undefined)
+    def setExcludedColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ExcludedColumnNames", js.Array(value :_*))
   }
 }

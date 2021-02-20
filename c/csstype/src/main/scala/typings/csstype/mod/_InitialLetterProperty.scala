@@ -1,7 +1,8 @@
 package typings.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _InitialLetterProperty extends js.Object
+trait _InitialLetterProperty extends StObject

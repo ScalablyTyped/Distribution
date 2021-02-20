@@ -1,5 +1,6 @@
 package typings.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBootstrapTable.reactBootstrapTableStrings.checkbox
   - typings.reactBootstrapTable.reactBootstrapTableStrings.datetime
 */
-trait EditCellType extends js.Object
+trait EditCellType extends StObject
 object EditCellType {
   
   @scala.inline

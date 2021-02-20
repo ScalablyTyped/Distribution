@@ -1,5 +1,6 @@
 package typings.pouchdbCore.PouchDB.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pouchdbCore.pouchdbCoreStrings.`not compacted`
   - typings.pouchdbCore.pouchdbCoreStrings.missing
 */
-trait Availability extends js.Object
+trait Availability extends StObject
 object Availability {
   
   @scala.inline

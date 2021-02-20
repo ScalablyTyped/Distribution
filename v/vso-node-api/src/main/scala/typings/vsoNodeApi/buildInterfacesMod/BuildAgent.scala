@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildAgent extends js.Object {
+trait BuildAgent extends StObject {
   
   var buildDirectory: String = js.native
   
@@ -63,63 +64,51 @@ object BuildAgent {
   }
   
   @scala.inline
-  implicit class BuildAgentOps[Self <: BuildAgent] (val x: Self) extends AnyVal {
+  implicit class BuildAgentMutableBuilder[Self <: BuildAgent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildDirectory(value: String): Self = StObject.set(x, "buildDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setController(value: XamlBuildControllerReference): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildDirectory(value: String): Self = this.set("buildDirectory", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setController(value: XamlBuildControllerReference): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Date): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMessageQueueUrl(value: String): Self = StObject.set(x, "messageQueueUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setReservedForBuild(value: String): Self = StObject.set(x, "reservedForBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageQueueUrl(value: String): Self = this.set("messageQueueUrl", value.asInstanceOf[js.Any])
+    def setServer(value: XamlBuildServerReference): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStatus(value: AgentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedForBuild(value: String): Self = this.set("reservedForBuild", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: XamlBuildServerReference): Self = this.set("server", value.asInstanceOf[js.Any])
+    def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: AgentStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedDate(value: Date): Self = this.set("updatedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

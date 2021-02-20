@@ -1,12 +1,13 @@
 package typings.reactBigCalendar.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceHeaderProps extends js.Object {
+trait ResourceHeaderProps extends StObject {
   
   var index: Double = js.native
   
@@ -23,30 +24,18 @@ object ResourceHeaderProps {
   }
   
   @scala.inline
-  implicit class ResourceHeaderPropsOps[Self <: ResourceHeaderProps] (val x: Self) extends AnyVal {
+  implicit class ResourceHeaderPropsMutableBuilder[Self <: ResourceHeaderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResource(value: js.Object): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: ReactNode): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setResource(value: js.Object): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

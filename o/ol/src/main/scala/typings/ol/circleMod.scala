@@ -2,13 +2,21 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/Circle", JSImport.Namespace)
-@js.native
-object circleMod extends js.Object {
+object circleMod {
+  
+  @JSImport("ol/geom/Circle", JSImport.Default)
+  @js.native
+  class default protected () extends Circle {
+    def this(center: Coordinate) = this()
+    def this(center: Coordinate, opt_radius: Double) = this()
+    def this(center: Coordinate, opt_radius: js.UndefOr[scala.Nothing], opt_layout: GeometryLayout) = this()
+    def this(center: Coordinate, opt_radius: Double, opt_layout: GeometryLayout) = this()
+  }
   
   @js.native
   trait Circle
@@ -40,13 +48,5 @@ object circleMod extends js.Object {
       * Set the radius of the circle. The radius is in the units of the projection.
       */
     def setRadius(radius: Double): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends Circle {
-    def this(center: Coordinate) = this()
-    def this(center: Coordinate, opt_radius: Double) = this()
-    def this(center: Coordinate, opt_radius: js.UndefOr[scala.Nothing], opt_layout: GeometryLayout) = this()
-    def this(center: Coordinate, opt_radius: Double, opt_layout: GeometryLayout) = this()
   }
 }

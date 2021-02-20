@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for an update on the status of a peer in a room.
   */
 @js.native
-trait SchemaRoomP2PStatus extends js.Object {
+trait SchemaRoomP2PStatus extends StObject {
   
   /**
     * The amount of time in milliseconds it took to establish connections with
@@ -65,60 +66,48 @@ object SchemaRoomP2PStatus {
   }
   
   @scala.inline
-  implicit class SchemaRoomP2PStatusOps[Self <: SchemaRoomP2PStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaRoomP2PStatusMutableBuilder[Self <: SchemaRoomP2PStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionSetupLatencyMillis(value: Double): Self = StObject.set(x, "connectionSetupLatencyMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionSetupLatencyMillisUndefined: Self = StObject.set(x, "connectionSetupLatencyMillis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionSetupLatencyMillis(value: Double): Self = this.set("connectionSetupLatencyMillis", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteConnectionSetupLatencyMillis: Self = this.set("connectionSetupLatencyMillis", js.undefined)
+    def setError_reason(value: String): Self = StObject.set(x, "error_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError_reasonUndefined: Self = StObject.set(x, "error_reason", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_reason(value: String): Self = this.set("error_reason", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteError_reason: Self = this.set("error_reason", js.undefined)
+    def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipantId(value: String): Self = this.set("participantId", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteParticipantId: Self = this.set("participantId", js.undefined)
+    def setUnreliableRoundtripLatencyMillis(value: Double): Self = StObject.set(x, "unreliableRoundtripLatencyMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setUnreliableRoundtripLatencyMillis(value: Double): Self = this.set("unreliableRoundtripLatencyMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreliableRoundtripLatencyMillis: Self = this.set("unreliableRoundtripLatencyMillis", js.undefined)
+    def setUnreliableRoundtripLatencyMillisUndefined: Self = StObject.set(x, "unreliableRoundtripLatencyMillis", js.undefined)
   }
 }

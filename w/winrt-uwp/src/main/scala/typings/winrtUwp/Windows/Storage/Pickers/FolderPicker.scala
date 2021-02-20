@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a UI element that lets the user choose folders. */
 @js.native
-trait FolderPicker extends js.Object {
+trait FolderPicker extends StObject {
   
   /** Gets or sets the label text of the folder picker's commit button. */
   var commitButtonText: String = js.native
@@ -57,42 +58,30 @@ object FolderPicker {
   }
   
   @scala.inline
-  implicit class FolderPickerOps[Self <: FolderPicker] (val x: Self) extends AnyVal {
+  implicit class FolderPickerMutableBuilder[Self <: FolderPicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileTypeFilter(value: IVector[String]): Self = StObject.set(x, "fileTypeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitButtonText(value: String): Self = this.set("commitButtonText", value.asInstanceOf[js.Any])
+    def setPickFolderAndContinue(value: () => Unit): Self = StObject.set(x, "pickFolderAndContinue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContinuationData(value: ValueSet): Self = this.set("continuationData", value.asInstanceOf[js.Any])
+    def setPickSingleFolderAsync(value: () => IPromiseWithIAsyncOperation[StorageFolder]): Self = StObject.set(x, "pickSingleFolderAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFileTypeFilter(value: IVector[String]): Self = this.set("fileTypeFilter", value.asInstanceOf[js.Any])
+    def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickFolderAndContinue(value: () => Unit): Self = this.set("pickFolderAndContinue", js.Any.fromFunction0(value))
+    def setSuggestedStartLocation(value: PickerLocationId): Self = StObject.set(x, "suggestedStartLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickSingleFolderAsync(value: () => IPromiseWithIAsyncOperation[StorageFolder]): Self = this.set("pickSingleFolderAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSettingsIdentifier(value: String): Self = this.set("settingsIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedStartLocation(value: PickerLocationId): Self = this.set("suggestedStartLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewMode(value: PickerViewMode): Self = this.set("viewMode", value.asInstanceOf[js.Any])
+    def setViewMode(value: PickerViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options object for the [accept](Titanium.Network.Socket.TCP.accept) method.
   */
 @js.native
-trait AcceptDict extends js.Object {
+trait AcceptDict extends StObject {
   
   /**
     * Callback to be fired when the socket enters the [ERROR](Titanium.Network.Socket.ERROR) state.
@@ -29,30 +30,18 @@ object AcceptDict {
   }
   
   @scala.inline
-  implicit class AcceptDictOps[Self <: AcceptDict] (val x: Self) extends AnyVal {
+  implicit class AcceptDictMutableBuilder[Self <: AcceptDict] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: /* param0 */ ErrorCallbackArgs => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* param0 */ ErrorCallbackArgs => Unit): Self = this.set("error", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

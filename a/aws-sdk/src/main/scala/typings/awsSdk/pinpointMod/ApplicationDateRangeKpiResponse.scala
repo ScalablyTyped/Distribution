@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationDateRangeKpiResponse extends js.Object {
+trait ApplicationDateRangeKpiResponse extends StObject {
   
   /**
     * The unique identifier for the application that the metric applies to.
@@ -52,39 +53,27 @@ object ApplicationDateRangeKpiResponse {
   }
   
   @scala.inline
-  implicit class ApplicationDateRangeKpiResponseOps[Self <: ApplicationDateRangeKpiResponse] (val x: Self) extends AnyVal {
+  implicit class ApplicationDateRangeKpiResponseMutableBuilder[Self <: ApplicationDateRangeKpiResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKpiName(value: string): Self = StObject.set(x, "KpiName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setKpiResult(value: BaseKpiResult): Self = StObject.set(x, "KpiResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: timestampIso8601): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKpiName(value: string): Self = this.set("KpiName", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setKpiResult(value: BaseKpiResult): Self = this.set("KpiResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: timestampIso8601): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

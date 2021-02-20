@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityContext extends js.Object {
+trait SecurityContext extends StObject {
   
   /** The security types in this context. */
   var securities: js.UndefOr[js.Array[String]] = js.native
@@ -19,27 +20,15 @@ object SecurityContext {
   }
   
   @scala.inline
-  implicit class SecurityContextOps[Self <: SecurityContext] (val x: Self) extends AnyVal {
+  implicit class SecurityContextMutableBuilder[Self <: SecurityContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSecurities(value: js.Array[String]): Self = StObject.set(x, "securities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecuritiesUndefined: Self = StObject.set(x, "securities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSecuritiesVarargs(value: String*): Self = this.set("securities", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurities(value: js.Array[String]): Self = this.set("securities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurities: Self = this.set("securities", js.undefined)
+    def setSecuritiesVarargs(value: String*): Self = StObject.set(x, "securities", js.Array(value :_*))
   }
 }

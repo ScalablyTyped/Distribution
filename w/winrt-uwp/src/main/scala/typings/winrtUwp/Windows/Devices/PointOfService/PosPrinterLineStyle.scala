@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PosPrinterLineStyle extends js.Object
+sealed trait PosPrinterLineStyle extends StObject
 /** Describes the line styles that a receipt or slip printer station can use to print a ruled line. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterLineStyle")
 @js.native
-object PosPrinterLineStyle extends js.Object {
+object PosPrinterLineStyle extends StObject {
   
   /** Prints a sequence of short lines separated by spaces. */
   @js.native

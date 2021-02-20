@@ -2,16 +2,16 @@ package typings.devexpressUtils
 
 import typings.devexpressUtils.optionsMod.IDateFormatterOptions
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/formatters/date", JSImport.Namespace)
-@js.native
-object dateMod extends js.Object {
+object dateMod {
   
+  @JSImport("@devexpress/utils/lib/formatters/date", "DateFormatter")
   @js.native
-  class DateFormatter protected () extends js.Object {
+  class DateFormatter protected () extends StObject {
     def this(options: IDateFormatterOptions) = this()
     
     var applyMonth: js.Any = js.native
@@ -147,9 +147,10 @@ object dateMod extends js.Object {
     var strToParse: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object DateFormatter extends js.Object {
+  object DateFormatter {
     
+    @JSImport("@devexpress/utils/lib/formatters/date", "DateFormatter.expandPredefinedFormat")
+    @js.native
     def expandPredefinedFormat(format: String, options: IDateFormatterOptions): String = js.native
   }
 }

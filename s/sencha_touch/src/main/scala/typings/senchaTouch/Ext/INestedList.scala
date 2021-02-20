@@ -3,6 +3,7 @@ package typings.senchaTouch.Ext
 import typings.senchaTouch.Ext.data.INodeInterface
 import typings.senchaTouch.Ext.data.IRecord
 import typings.senchaTouch.Ext.event.IEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -331,428 +332,416 @@ object INestedList {
   }
   
   @scala.inline
-  implicit class INestedListOps[Self <: INestedList] (val x: Self) extends AnyVal {
+  implicit class INestedListMutableBuilder[Self <: INestedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDeselectUndefined: Self = StObject.set(x, "allowDeselect", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackButton(value: js.Any): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDeselect(value: Boolean): Self = this.set("allowDeselect", value.asInstanceOf[js.Any])
+    def setBackButtonUndefined: Self = StObject.set(x, "backButton", js.undefined)
     
     @scala.inline
-    def deleteAllowDeselect: Self = this.set("allowDeselect", js.undefined)
+    def setBackText(value: java.lang.String): Self = StObject.set(x, "backText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackButton(value: js.Any): Self = this.set("backButton", value.asInstanceOf[js.Any])
+    def setBackTextUndefined: Self = StObject.set(x, "backText", js.undefined)
     
     @scala.inline
-    def deleteBackButton: Self = this.set("backButton", js.undefined)
+    def setClearSelectionDelay(value: Double): Self = StObject.set(x, "clearSelectionDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackText(value: java.lang.String): Self = this.set("backText", value.asInstanceOf[js.Any])
+    def setClearSelectionDelayUndefined: Self = StObject.set(x, "clearSelectionDelay", js.undefined)
     
     @scala.inline
-    def deleteBackText: Self = this.set("backText", js.undefined)
+    def setDetailCard(value: IComponent): Self = StObject.set(x, "detailCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearSelectionDelay(value: Double): Self = this.set("clearSelectionDelay", value.asInstanceOf[js.Any])
+    def setDetailCardUndefined: Self = StObject.set(x, "detailCard", js.undefined)
     
     @scala.inline
-    def deleteClearSelectionDelay: Self = this.set("clearSelectionDelay", js.undefined)
+    def setDetailContainer(value: IContainer): Self = StObject.set(x, "detailContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailCard(value: IComponent): Self = this.set("detailCard", value.asInstanceOf[js.Any])
+    def setDetailContainerUndefined: Self = StObject.set(x, "detailContainer", js.undefined)
     
     @scala.inline
-    def deleteDetailCard: Self = this.set("detailCard", js.undefined)
+    def setDisplayField(value: java.lang.String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailContainer(value: IContainer): Self = this.set("detailContainer", value.asInstanceOf[js.Any])
+    def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
     @scala.inline
-    def deleteDetailContainer: Self = this.set("detailContainer", js.undefined)
+    def setEmptyText(value: java.lang.String): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayField(value: java.lang.String): Self = this.set("displayField", value.asInstanceOf[js.Any])
+    def setEmptyTextUndefined: Self = StObject.set(x, "emptyText", js.undefined)
     
     @scala.inline
-    def deleteDisplayField: Self = this.set("displayField", js.undefined)
+    def setGetAllowDeselect(value: () => Boolean): Self = StObject.set(x, "getAllowDeselect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEmptyText(value: java.lang.String): Self = this.set("emptyText", value.asInstanceOf[js.Any])
+    def setGetAllowDeselectUndefined: Self = StObject.set(x, "getAllowDeselect", js.undefined)
     
     @scala.inline
-    def deleteEmptyText: Self = this.set("emptyText", js.undefined)
+    def setGetBackButton(value: () => _): Self = StObject.set(x, "getBackButton", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllowDeselect(value: () => Boolean): Self = this.set("getAllowDeselect", js.Any.fromFunction0(value))
+    def setGetBackButtonUndefined: Self = StObject.set(x, "getBackButton", js.undefined)
     
     @scala.inline
-    def deleteGetAllowDeselect: Self = this.set("getAllowDeselect", js.undefined)
+    def setGetBackText(value: () => java.lang.String): Self = StObject.set(x, "getBackText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBackButton(value: () => _): Self = this.set("getBackButton", js.Any.fromFunction0(value))
+    def setGetBackTextUndefined: Self = StObject.set(x, "getBackText", js.undefined)
     
     @scala.inline
-    def deleteGetBackButton: Self = this.set("getBackButton", js.undefined)
+    def setGetClearSelectionOnListChange(value: () => Boolean): Self = StObject.set(x, "getClearSelectionOnListChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBackText(value: () => java.lang.String): Self = this.set("getBackText", js.Any.fromFunction0(value))
+    def setGetClearSelectionOnListChangeUndefined: Self = StObject.set(x, "getClearSelectionOnListChange", js.undefined)
     
     @scala.inline
-    def deleteGetBackText: Self = this.set("getBackText", js.undefined)
+    def setGetDetailCard(value: () => IComponent): Self = StObject.set(x, "getDetailCard", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClearSelectionOnListChange(value: () => Boolean): Self = this.set("getClearSelectionOnListChange", js.Any.fromFunction0(value))
+    def setGetDetailCardUndefined: Self = StObject.set(x, "getDetailCard", js.undefined)
     
     @scala.inline
-    def deleteGetClearSelectionOnListChange: Self = this.set("getClearSelectionOnListChange", js.undefined)
+    def setGetDetailContainer(value: () => IContainer): Self = StObject.set(x, "getDetailContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDetailCard(value: () => IComponent): Self = this.set("getDetailCard", js.Any.fromFunction0(value))
+    def setGetDetailContainerUndefined: Self = StObject.set(x, "getDetailContainer", js.undefined)
     
     @scala.inline
-    def deleteGetDetailCard: Self = this.set("getDetailCard", js.undefined)
+    def setGetDisplayField(value: () => java.lang.String): Self = StObject.set(x, "getDisplayField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDetailContainer(value: () => IContainer): Self = this.set("getDetailContainer", js.Any.fromFunction0(value))
+    def setGetDisplayFieldUndefined: Self = StObject.set(x, "getDisplayField", js.undefined)
     
     @scala.inline
-    def deleteGetDetailContainer: Self = this.set("getDetailContainer", js.undefined)
+    def setGetEmptyText(value: () => java.lang.String): Self = StObject.set(x, "getEmptyText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayField(value: () => java.lang.String): Self = this.set("getDisplayField", js.Any.fromFunction0(value))
+    def setGetEmptyTextUndefined: Self = StObject.set(x, "getEmptyText", js.undefined)
     
     @scala.inline
-    def deleteGetDisplayField: Self = this.set("getDisplayField", js.undefined)
+    def setGetItemHeight(value: () => Double): Self = StObject.set(x, "getItemHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEmptyText(value: () => java.lang.String): Self = this.set("getEmptyText", js.Any.fromFunction0(value))
+    def setGetItemHeightUndefined: Self = StObject.set(x, "getItemHeight", js.undefined)
     
     @scala.inline
-    def deleteGetEmptyText: Self = this.set("getEmptyText", js.undefined)
+    def setGetItemTextTpl(value: /* node */ js.UndefOr[IRecord] => java.lang.String): Self = StObject.set(x, "getItemTextTpl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItemHeight(value: () => Double): Self = this.set("getItemHeight", js.Any.fromFunction0(value))
+    def setGetItemTextTplUndefined: Self = StObject.set(x, "getItemTextTpl", js.undefined)
     
     @scala.inline
-    def deleteGetItemHeight: Self = this.set("getItemHeight", js.undefined)
+    def setGetListConfig(value: () => _): Self = StObject.set(x, "getListConfig", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemTextTpl(value: /* node */ js.UndefOr[IRecord] => java.lang.String): Self = this.set("getItemTextTpl", js.Any.fromFunction1(value))
+    def setGetListConfigUndefined: Self = StObject.set(x, "getListConfig", js.undefined)
     
     @scala.inline
-    def deleteGetItemTextTpl: Self = this.set("getItemTextTpl", js.undefined)
+    def setGetLoadingText(value: () => java.lang.String): Self = StObject.set(x, "getLoadingText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetListConfig(value: () => _): Self = this.set("getListConfig", js.Any.fromFunction0(value))
+    def setGetLoadingTextUndefined: Self = StObject.set(x, "getLoadingText", js.undefined)
     
     @scala.inline
-    def deleteGetListConfig: Self = this.set("getListConfig", js.undefined)
+    def setGetOnItemDisclosure(value: () => _): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLoadingText(value: () => java.lang.String): Self = this.set("getLoadingText", js.Any.fromFunction0(value))
+    def setGetOnItemDisclosureUndefined: Self = StObject.set(x, "getOnItemDisclosure", js.undefined)
     
     @scala.inline
-    def deleteGetLoadingText: Self = this.set("getLoadingText", js.undefined)
+    def setGetStore(value: () => _): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOnItemDisclosure(value: () => _): Self = this.set("getOnItemDisclosure", js.Any.fromFunction0(value))
+    def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
     @scala.inline
-    def deleteGetOnItemDisclosure: Self = this.set("getOnItemDisclosure", js.undefined)
+    def setGetSubList(value: () => Unit): Self = StObject.set(x, "getSubList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStore(value: () => _): Self = this.set("getStore", js.Any.fromFunction0(value))
+    def setGetSubListUndefined: Self = StObject.set(x, "getSubList", js.undefined)
     
     @scala.inline
-    def deleteGetStore: Self = this.set("getStore", js.undefined)
+    def setGetTitle(value: () => java.lang.String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubList(value: () => Unit): Self = this.set("getSubList", js.Any.fromFunction0(value))
+    def setGetTitleTextTpl(value: /* node */ js.UndefOr[IRecord] => java.lang.String): Self = StObject.set(x, "getTitleTextTpl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetSubList: Self = this.set("getSubList", js.undefined)
+    def setGetTitleTextTplUndefined: Self = StObject.set(x, "getTitleTextTpl", js.undefined)
     
     @scala.inline
-    def setGetTitle(value: () => java.lang.String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
     
     @scala.inline
-    def deleteGetTitle: Self = this.set("getTitle", js.undefined)
+    def setGetToolbar(value: () => _): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTitleTextTpl(value: /* node */ js.UndefOr[IRecord] => java.lang.String): Self = this.set("getTitleTextTpl", js.Any.fromFunction1(value))
+    def setGetToolbarUndefined: Self = StObject.set(x, "getToolbar", js.undefined)
     
     @scala.inline
-    def deleteGetTitleTextTpl: Self = this.set("getTitleTextTpl", js.undefined)
+    def setGetUpdateTitleText(value: () => Boolean): Self = StObject.set(x, "getUpdateTitleText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetToolbar(value: () => _): Self = this.set("getToolbar", js.Any.fromFunction0(value))
+    def setGetUpdateTitleTextUndefined: Self = StObject.set(x, "getUpdateTitleText", js.undefined)
     
     @scala.inline
-    def deleteGetToolbar: Self = this.set("getToolbar", js.undefined)
+    def setGetUseSimpleItems(value: () => Boolean): Self = StObject.set(x, "getUseSimpleItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUpdateTitleText(value: () => Boolean): Self = this.set("getUpdateTitleText", js.Any.fromFunction0(value))
+    def setGetUseSimpleItemsUndefined: Self = StObject.set(x, "getUseSimpleItems", js.undefined)
     
     @scala.inline
-    def deleteGetUpdateTitleText: Self = this.set("getUpdateTitleText", js.undefined)
+    def setGetUseTitleAsBackText(value: () => Boolean): Self = StObject.set(x, "getUseTitleAsBackText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUseSimpleItems(value: () => Boolean): Self = this.set("getUseSimpleItems", js.Any.fromFunction0(value))
+    def setGetUseTitleAsBackTextUndefined: Self = StObject.set(x, "getUseTitleAsBackText", js.undefined)
     
     @scala.inline
-    def deleteGetUseSimpleItems: Self = this.set("getUseSimpleItems", js.undefined)
+    def setGetUseToolbar(value: () => Boolean): Self = StObject.set(x, "getUseToolbar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUseTitleAsBackText(value: () => Boolean): Self = this.set("getUseTitleAsBackText", js.Any.fromFunction0(value))
+    def setGetUseToolbarUndefined: Self = StObject.set(x, "getUseToolbar", js.undefined)
     
     @scala.inline
-    def deleteGetUseTitleAsBackText: Self = this.set("getUseTitleAsBackText", js.undefined)
+    def setGetVariableHeights(value: () => Boolean): Self = StObject.set(x, "getVariableHeights", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUseToolbar(value: () => Boolean): Self = this.set("getUseToolbar", js.Any.fromFunction0(value))
+    def setGetVariableHeightsUndefined: Self = StObject.set(x, "getVariableHeights", js.undefined)
     
     @scala.inline
-    def deleteGetUseToolbar: Self = this.set("getUseToolbar", js.undefined)
+    def setGoToLeaf(value: /* node */ js.UndefOr[INodeInterface] => Unit): Self = StObject.set(x, "goToLeaf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetVariableHeights(value: () => Boolean): Self = this.set("getVariableHeights", js.Any.fromFunction0(value))
+    def setGoToLeafUndefined: Self = StObject.set(x, "goToLeaf", js.undefined)
     
     @scala.inline
-    def deleteGetVariableHeights: Self = this.set("getVariableHeights", js.undefined)
+    def setGoToNode(value: /* node */ js.UndefOr[INodeInterface] => Unit): Self = StObject.set(x, "goToNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoToLeaf(value: /* node */ js.UndefOr[INodeInterface] => Unit): Self = this.set("goToLeaf", js.Any.fromFunction1(value))
+    def setGoToNodeUndefined: Self = StObject.set(x, "goToNode", js.undefined)
     
     @scala.inline
-    def deleteGoToLeaf: Self = this.set("goToLeaf", js.undefined)
+    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoToNode(value: /* node */ js.UndefOr[INodeInterface] => Unit): Self = this.set("goToNode", js.Any.fromFunction1(value))
+    def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
     @scala.inline
-    def deleteGoToNode: Self = this.set("goToNode", js.undefined)
+    def setListConfig(value: js.Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemHeight(value: Double): Self = this.set("itemHeight", value.asInstanceOf[js.Any])
+    def setListConfigUndefined: Self = StObject.set(x, "listConfig", js.undefined)
     
     @scala.inline
-    def deleteItemHeight: Self = this.set("itemHeight", js.undefined)
+    def setLoadingText(value: java.lang.String): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListConfig(value: js.Any): Self = this.set("listConfig", value.asInstanceOf[js.Any])
+    def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
     
     @scala.inline
-    def deleteListConfig: Self = this.set("listConfig", js.undefined)
+    def setOnBackTap(value: () => Unit): Self = StObject.set(x, "onBackTap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoadingText(value: java.lang.String): Self = this.set("loadingText", value.asInstanceOf[js.Any])
+    def setOnBackTapUndefined: Self = StObject.set(x, "onBackTap", js.undefined)
     
     @scala.inline
-    def deleteLoadingText: Self = this.set("loadingText", js.undefined)
+    def setOnItemDisclosure(value: js.Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBackTap(value: () => Unit): Self = this.set("onBackTap", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnBackTap: Self = this.set("onBackTap", js.undefined)
-    
-    @scala.inline
-    def setOnItemDisclosure(value: js.Any): Self = this.set("onItemDisclosure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnItemDisclosure: Self = this.set("onItemDisclosure", js.undefined)
+    def setOnItemDisclosureUndefined: Self = StObject.set(x, "onItemDisclosure", js.undefined)
     
     @scala.inline
     def setOnItemTap(
       value: (/* list */ js.UndefOr[IList], /* index */ js.UndefOr[Double], /* target */ js.UndefOr[IElement], /* record */ js.UndefOr[IRecord], /* e */ js.UndefOr[IEvent]) => Unit
-    ): Self = this.set("onItemTap", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "onItemTap", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteOnItemTap: Self = this.set("onItemTap", js.undefined)
+    def setOnItemTapUndefined: Self = StObject.set(x, "onItemTap", js.undefined)
     
     @scala.inline
-    def setSetAllowDeselect(value: /* allowDeselect */ js.UndefOr[Boolean] => Unit): Self = this.set("setAllowDeselect", js.Any.fromFunction1(value))
+    def setSetAllowDeselect(value: /* allowDeselect */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowDeselect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetAllowDeselect: Self = this.set("setAllowDeselect", js.undefined)
+    def setSetAllowDeselectUndefined: Self = StObject.set(x, "setAllowDeselect", js.undefined)
     
     @scala.inline
-    def setSetBackButton(value: /* backButton */ js.UndefOr[js.Any] => Unit): Self = this.set("setBackButton", js.Any.fromFunction1(value))
+    def setSetBackButton(value: /* backButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetBackButton: Self = this.set("setBackButton", js.undefined)
+    def setSetBackButtonUndefined: Self = StObject.set(x, "setBackButton", js.undefined)
     
     @scala.inline
-    def setSetBackText(value: /* backText */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setBackText", js.Any.fromFunction1(value))
+    def setSetBackText(value: /* backText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setBackText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetBackText: Self = this.set("setBackText", js.undefined)
+    def setSetBackTextUndefined: Self = StObject.set(x, "setBackText", js.undefined)
     
     @scala.inline
-    def setSetClearSelectionOnListChange(value: /* clearSelectionOnListChange */ js.UndefOr[Boolean] => Unit): Self = this.set("setClearSelectionOnListChange", js.Any.fromFunction1(value))
+    def setSetClearSelectionOnListChange(value: /* clearSelectionOnListChange */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setClearSelectionOnListChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetClearSelectionOnListChange: Self = this.set("setClearSelectionOnListChange", js.undefined)
+    def setSetClearSelectionOnListChangeUndefined: Self = StObject.set(x, "setClearSelectionOnListChange", js.undefined)
     
     @scala.inline
-    def setSetDetailCard(value: /* detailCard */ js.UndefOr[IComponent] => Unit): Self = this.set("setDetailCard", js.Any.fromFunction1(value))
+    def setSetDetailCard(value: /* detailCard */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "setDetailCard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDetailCard: Self = this.set("setDetailCard", js.undefined)
+    def setSetDetailCardUndefined: Self = StObject.set(x, "setDetailCard", js.undefined)
     
     @scala.inline
-    def setSetDetailContainer(value: /* detailContainer */ js.UndefOr[IContainer] => Unit): Self = this.set("setDetailContainer", js.Any.fromFunction1(value))
+    def setSetDetailContainer(value: /* detailContainer */ js.UndefOr[IContainer] => Unit): Self = StObject.set(x, "setDetailContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDetailContainer: Self = this.set("setDetailContainer", js.undefined)
+    def setSetDetailContainerUndefined: Self = StObject.set(x, "setDetailContainer", js.undefined)
     
     @scala.inline
-    def setSetDisplayField(value: /* displayField */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setDisplayField", js.Any.fromFunction1(value))
+    def setSetDisplayField(value: /* displayField */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDisplayField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDisplayField: Self = this.set("setDisplayField", js.undefined)
+    def setSetDisplayFieldUndefined: Self = StObject.set(x, "setDisplayField", js.undefined)
     
     @scala.inline
-    def setSetEmptyText(value: /* emptyText */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setEmptyText", js.Any.fromFunction1(value))
+    def setSetEmptyText(value: /* emptyText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setEmptyText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetEmptyText: Self = this.set("setEmptyText", js.undefined)
+    def setSetEmptyTextUndefined: Self = StObject.set(x, "setEmptyText", js.undefined)
     
     @scala.inline
-    def setSetItemHeight(value: /* itemHeight */ js.UndefOr[Double] => Unit): Self = this.set("setItemHeight", js.Any.fromFunction1(value))
+    def setSetItemHeight(value: /* itemHeight */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setItemHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetItemHeight: Self = this.set("setItemHeight", js.undefined)
+    def setSetItemHeightUndefined: Self = StObject.set(x, "setItemHeight", js.undefined)
     
     @scala.inline
-    def setSetListConfig(value: /* listConfig */ js.UndefOr[js.Any] => Unit): Self = this.set("setListConfig", js.Any.fromFunction1(value))
+    def setSetListConfig(value: /* listConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setListConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetListConfig: Self = this.set("setListConfig", js.undefined)
+    def setSetListConfigUndefined: Self = StObject.set(x, "setListConfig", js.undefined)
     
     @scala.inline
-    def setSetLoadingText(value: /* loadingText */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setLoadingText", js.Any.fromFunction1(value))
+    def setSetLoadingText(value: /* loadingText */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setLoadingText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetLoadingText: Self = this.set("setLoadingText", js.undefined)
+    def setSetLoadingTextUndefined: Self = StObject.set(x, "setLoadingText", js.undefined)
     
     @scala.inline
-    def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit): Self = this.set("setOnItemDisclosure", js.Any.fromFunction1(value))
+    def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetOnItemDisclosure: Self = this.set("setOnItemDisclosure", js.undefined)
+    def setSetOnItemDisclosureUndefined: Self = StObject.set(x, "setOnItemDisclosure", js.undefined)
     
     @scala.inline
-    def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = this.set("setStore", js.Any.fromFunction1(value))
+    def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetStore: Self = this.set("setStore", js.undefined)
+    def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
     
     @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
+    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
     @scala.inline
-    def setSetToolbar(value: /* toolbar */ js.UndefOr[js.Any] => Unit): Self = this.set("setToolbar", js.Any.fromFunction1(value))
+    def setSetToolbar(value: /* toolbar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setToolbar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetToolbar: Self = this.set("setToolbar", js.undefined)
+    def setSetToolbarUndefined: Self = StObject.set(x, "setToolbar", js.undefined)
     
     @scala.inline
-    def setSetUi(value: /* ui */ js.UndefOr[js.Any] => Unit): Self = this.set("setUi", js.Any.fromFunction1(value))
+    def setSetUi(value: /* ui */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUi", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetUi: Self = this.set("setUi", js.undefined)
+    def setSetUiUndefined: Self = StObject.set(x, "setUi", js.undefined)
     
     @scala.inline
-    def setSetUpdateTitleText(value: /* updateTitleText */ js.UndefOr[Boolean] => Unit): Self = this.set("setUpdateTitleText", js.Any.fromFunction1(value))
+    def setSetUpdateTitleText(value: /* updateTitleText */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUpdateTitleText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetUpdateTitleText: Self = this.set("setUpdateTitleText", js.undefined)
+    def setSetUpdateTitleTextUndefined: Self = StObject.set(x, "setUpdateTitleText", js.undefined)
     
     @scala.inline
-    def setSetUseSimpleItems(value: /* useSimpleItems */ js.UndefOr[Boolean] => Unit): Self = this.set("setUseSimpleItems", js.Any.fromFunction1(value))
+    def setSetUseSimpleItems(value: /* useSimpleItems */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseSimpleItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetUseSimpleItems: Self = this.set("setUseSimpleItems", js.undefined)
+    def setSetUseSimpleItemsUndefined: Self = StObject.set(x, "setUseSimpleItems", js.undefined)
     
     @scala.inline
-    def setSetUseTitleAsBackText(value: /* useTitleAsBackText */ js.UndefOr[Boolean] => Unit): Self = this.set("setUseTitleAsBackText", js.Any.fromFunction1(value))
+    def setSetUseTitleAsBackText(value: /* useTitleAsBackText */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseTitleAsBackText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetUseTitleAsBackText: Self = this.set("setUseTitleAsBackText", js.undefined)
+    def setSetUseTitleAsBackTextUndefined: Self = StObject.set(x, "setUseTitleAsBackText", js.undefined)
     
     @scala.inline
-    def setSetUseToolbar(value: /* useToolbar */ js.UndefOr[Boolean] => Unit): Self = this.set("setUseToolbar", js.Any.fromFunction1(value))
+    def setSetUseToolbar(value: /* useToolbar */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseToolbar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetUseToolbar: Self = this.set("setUseToolbar", js.undefined)
+    def setSetUseToolbarUndefined: Self = StObject.set(x, "setUseToolbar", js.undefined)
     
     @scala.inline
-    def setSetVariableHeights(value: /* variableHeights */ js.UndefOr[Boolean] => Unit): Self = this.set("setVariableHeights", js.Any.fromFunction1(value))
+    def setSetVariableHeights(value: /* variableHeights */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setVariableHeights", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetVariableHeights: Self = this.set("setVariableHeights", js.undefined)
+    def setSetVariableHeightsUndefined: Self = StObject.set(x, "setVariableHeights", js.undefined)
     
     @scala.inline
-    def setStore(value: js.Any): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     @scala.inline
-    def setTitle(value: java.lang.String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setToolbar(value: js.Any): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    def setToolbar(value: js.Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def setUpdateTitleText(value: Boolean): Self = this.set("updateTitleText", value.asInstanceOf[js.Any])
+    def setUpdateTitleText(value: Boolean): Self = StObject.set(x, "updateTitleText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTitleText: Self = this.set("updateTitleText", js.undefined)
+    def setUpdateTitleTextUndefined: Self = StObject.set(x, "updateTitleText", js.undefined)
     
     @scala.inline
-    def setUseSimpleItems(value: Boolean): Self = this.set("useSimpleItems", value.asInstanceOf[js.Any])
+    def setUseSimpleItems(value: Boolean): Self = StObject.set(x, "useSimpleItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseSimpleItems: Self = this.set("useSimpleItems", js.undefined)
+    def setUseSimpleItemsUndefined: Self = StObject.set(x, "useSimpleItems", js.undefined)
     
     @scala.inline
-    def setUseTitleAsBackText(value: Boolean): Self = this.set("useTitleAsBackText", value.asInstanceOf[js.Any])
+    def setUseTitleAsBackText(value: Boolean): Self = StObject.set(x, "useTitleAsBackText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseTitleAsBackText: Self = this.set("useTitleAsBackText", js.undefined)
+    def setUseTitleAsBackTextUndefined: Self = StObject.set(x, "useTitleAsBackText", js.undefined)
     
     @scala.inline
-    def setUseToolbar(value: Boolean): Self = this.set("useToolbar", value.asInstanceOf[js.Any])
+    def setUseToolbar(value: Boolean): Self = StObject.set(x, "useToolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseToolbar: Self = this.set("useToolbar", js.undefined)
+    def setUseToolbarUndefined: Self = StObject.set(x, "useToolbar", js.undefined)
     
     @scala.inline
-    def setVariableHeights(value: Boolean): Self = this.set("variableHeights", value.asInstanceOf[js.Any])
+    def setVariableHeights(value: Boolean): Self = StObject.set(x, "variableHeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVariableHeights: Self = this.set("variableHeights", js.undefined)
+    def setVariableHeightsUndefined: Self = StObject.set(x, "variableHeights", js.undefined)
   }
 }

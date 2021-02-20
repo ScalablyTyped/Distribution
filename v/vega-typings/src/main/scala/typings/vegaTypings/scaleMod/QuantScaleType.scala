@@ -1,5 +1,6 @@
 package typings.vegaTypings.scaleMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.utc
   - typings.vegaTypings.vegaTypingsStrings.sequential
 */
-trait QuantScaleType extends js.Object
+trait QuantScaleType extends StObject
 object QuantScaleType {
   
   @scala.inline

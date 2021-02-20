@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILookups extends js.Object {
+trait ILookups extends StObject {
   
   def Add(Index: Double, Lookup: ILookup): Unit = js.native
   
@@ -41,42 +42,30 @@ object ILookups {
   }
   
   @scala.inline
-  implicit class ILookupsOps[Self <: ILookups] (val x: Self) extends AnyVal {
+  implicit class ILookupsMutableBuilder[Self <: ILookups] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (Double, ILookup) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => ILookups): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloneFrom(value: ILookups => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: (Double, ILookup) => Unit): Self = this.set("Add", js.Any.fromFunction2(value))
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ILookups): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setGetLookupByItem(value: Double => ILookup): Self = StObject.set(x, "GetLookupByItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloneFrom(value: ILookups => Unit): Self = this.set("CloneFrom", js.Any.fromFunction1(value))
+    def setGetLookupIndexByItem(value: Double => Double): Self = StObject.set(x, "GetLookupIndexByItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setItem(value: Double => ILookup): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLookupByItem(value: Double => ILookup): Self = this.set("GetLookupByItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetLookupIndexByItem(value: Double => Double): Self = this.set("GetLookupIndexByItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setItem(value: Double => ILookup): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
+    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

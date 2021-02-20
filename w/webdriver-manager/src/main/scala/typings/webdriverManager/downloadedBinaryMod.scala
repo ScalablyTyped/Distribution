@@ -1,14 +1,14 @@
 package typings.webdriverManager
 
 import typings.webdriverManager.mod.Binary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriver-manager/built/lib/files/downloaded_binary", JSImport.Namespace)
-@js.native
-object downloadedBinaryMod extends js.Object {
+object downloadedBinaryMod {
   
+  @JSImport("webdriver-manager/built/lib/files/downloaded_binary", "DownloadedBinary")
   @js.native
   class DownloadedBinary protected () extends Binary {
     def this(binary: Binary) = this()

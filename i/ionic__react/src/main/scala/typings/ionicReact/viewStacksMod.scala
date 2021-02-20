@@ -5,16 +5,16 @@ import typings.ionicReact.viewItemMod.ViewItem
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/react/dist/types/routing/ViewStacks", JSImport.Namespace)
-@js.native
-object viewStacksMod extends js.Object {
+object viewStacksMod {
   
+  @JSImport("@ionic/react/dist/types/routing/ViewStacks", "ViewStacks")
   @js.native
-  abstract class ViewStacks () extends js.Object {
+  abstract class ViewStacks () extends StObject {
     
     def add(viewItem: ViewItem[_]): Unit = js.native
     

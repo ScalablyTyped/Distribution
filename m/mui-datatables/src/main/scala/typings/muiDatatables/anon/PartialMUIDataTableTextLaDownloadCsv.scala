@@ -1,12 +1,13 @@
 package typings.muiDatatables.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsToolbar> */
 @js.native
-trait PartialMUIDataTableTextLaDownloadCsv extends js.Object {
+trait PartialMUIDataTableTextLaDownloadCsv extends StObject {
   
   var downloadCsv: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object PartialMUIDataTableTextLaDownloadCsv {
   }
   
   @scala.inline
-  implicit class PartialMUIDataTableTextLaDownloadCsvOps[Self <: PartialMUIDataTableTextLaDownloadCsv] (val x: Self) extends AnyVal {
+  implicit class PartialMUIDataTableTextLaDownloadCsvMutableBuilder[Self <: PartialMUIDataTableTextLaDownloadCsv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadCsv(value: String): Self = StObject.set(x, "downloadCsv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadCsvUndefined: Self = StObject.set(x, "downloadCsv", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterTable(value: String): Self = StObject.set(x, "filterTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadCsv(value: String): Self = this.set("downloadCsv", value.asInstanceOf[js.Any])
+    def setFilterTableUndefined: Self = StObject.set(x, "filterTable", js.undefined)
     
     @scala.inline
-    def deleteDownloadCsv: Self = this.set("downloadCsv", js.undefined)
+    def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterTable(value: String): Self = this.set("filterTable", value.asInstanceOf[js.Any])
+    def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
     @scala.inline
-    def deleteFilterTable: Self = this.set("filterTable", js.undefined)
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrint(value: String): Self = this.set("print", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deletePrint: Self = this.set("print", js.undefined)
+    def setViewColumns(value: String): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
-    
-    @scala.inline
-    def setViewColumns(value: String): Self = this.set("viewColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewColumns: Self = this.set("viewColumns", js.undefined)
+    def setViewColumnsUndefined: Self = StObject.set(x, "viewColumns", js.undefined)
   }
 }

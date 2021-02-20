@@ -1,11 +1,12 @@
 package typings.baseui.selectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutosizeInputState extends js.Object {
+trait AutosizeInputState extends StObject {
   
   var inputWidth: Double = js.native
 }
@@ -18,21 +19,9 @@ object AutosizeInputState {
   }
   
   @scala.inline
-  implicit class AutosizeInputStateOps[Self <: AutosizeInputState] (val x: Self) extends AnyVal {
+  implicit class AutosizeInputStateMutableBuilder[Self <: AutosizeInputState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputWidth(value: Double): Self = this.set("inputWidth", value.asInstanceOf[js.Any])
+    def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
   }
 }

@@ -7,6 +7,7 @@ import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.middle
 import typings.victory.victoryStrings.parent
 import typings.victory.victoryStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -116,72 +117,60 @@ object VictoryBarProps {
   }
   
   @scala.inline
-  implicit class VictoryBarPropsOps[Self <: VictoryBarProps] (val x: Self) extends AnyVal {
+  implicit class VictoryBarPropsMutableBuilder[Self <: VictoryBarProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: start | middle | end): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarRatio(value: Double): Self = StObject.set(x, "barRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: start | middle | end): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setBarRatioUndefined: Self = StObject.set(x, "barRatio", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setBarWidth(value: NumberOrCallback): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarRatio(value: Double): Self = this.set("barRatio", value.asInstanceOf[js.Any])
+    def setBarWidthFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "barWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBarRatio: Self = this.set("barRatio", js.undefined)
+    def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
     
     @scala.inline
-    def setBarWidthFunction1(value: /* args */ CallbackArgs => Double): Self = this.set("barWidth", js.Any.fromFunction1(value))
+    def setCornerRadius(value: NumberOrCallback | Bottom): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarWidth(value: NumberOrCallback): Self = this.set("barWidth", value.asInstanceOf[js.Any])
+    def setCornerRadiusFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "cornerRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBarWidth: Self = this.set("barWidth", js.undefined)
+    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
     @scala.inline
-    def setCornerRadiusFunction1(value: /* args */ CallbackArgs => Double): Self = this.set("cornerRadius", js.Any.fromFunction1(value))
+    def setEventKey(value: StringOrNumberOrCallback): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCornerRadius(value: NumberOrCallback | Bottom): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCornerRadius: Self = this.set("cornerRadius", js.undefined)
+    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
     @scala.inline
-    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("eventKey", js.Any.fromFunction1(value))
+    def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventKey(value: StringOrNumberOrCallback): Self = this.set("eventKey", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEventKey: Self = this.set("eventKey", js.undefined)
+    def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, Double | String])*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, Double | String])*): Self = this.set("events", js.Array(value :_*))
+    def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: VictoryStyleInterface): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.appleMusicApi.AppleMusicApi
 
 import typings.appleMusicApi.anon.Data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/song/relationships
 @js.native
-trait SongRelationships extends js.Object {
+trait SongRelationships extends StObject {
   
   var albums: Relationship[Album] = js.native
   
@@ -26,36 +27,24 @@ object SongRelationships {
   }
   
   @scala.inline
-  implicit class SongRelationshipsOps[Self <: SongRelationships] (val x: Self) extends AnyVal {
+  implicit class SongRelationshipsMutableBuilder[Self <: SongRelationships] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbums(value: Relationship[Album]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtists(value: Relationship[Artist]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenres(value: Relationship[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbums(value: Relationship[Album]): Self = this.set("albums", value.asInstanceOf[js.Any])
+    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
     @scala.inline
-    def setArtists(value: Relationship[Artist]): Self = this.set("artists", value.asInstanceOf[js.Any])
+    def setStation(value: Data): Self = StObject.set(x, "station", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenres(value: Relationship[Genre]): Self = this.set("genres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenres: Self = this.set("genres", js.undefined)
-    
-    @scala.inline
-    def setStation(value: Data): Self = this.set("station", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStation: Self = this.set("station", js.undefined)
+    def setStationUndefined: Self = StObject.set(x, "station", js.undefined)
   }
 }

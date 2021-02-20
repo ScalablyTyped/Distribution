@@ -2,29 +2,30 @@ package typings.jqueryDynatree
 
 import typings.jquery.JQueryAjaxSettings
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynatreeOptions extends js.Object {
+trait DynatreeOptions extends StObject {
   
-   // 1:activate, 2:expand, 3:activate and expand
+  // 1:activate, 2:expand, 3:activate and expand
   var activeVisible: js.UndefOr[Boolean] = js.native
   
-    // Drag'n'drop support
+  // Drag'n'drop support
   var ajaxDefaults: js.UndefOr[DynaTreeAjaxOptions] = js.native
   
-   // Persist expand-status to a cookie
+  // Persist expand-status to a cookie
   var autoCollapse: js.UndefOr[Boolean] = js.native
   
-   // Ajax options used to initialize the tree strucuture.
+  // Ajax options used to initialize the tree strucuture.
   var autoFocus: js.UndefOr[Boolean] = js.native
   
-   // Make sure, active nodes are visible (expanded).
+  // Make sure, active nodes are visible (expanded).
   var checkbox: js.UndefOr[Boolean] = js.native
   
-   // Path to a folder containing icons. Defaults to 'skin/' subdirectory.
+  // Path to a folder containing icons. Defaults to 'skin/' subdirectory.
   var children: js.UndefOr[js.Array[DynaTreeDataModel]] = js.native
   
   // Class names used, when rendering the HTML markup.
@@ -32,113 +33,113 @@ trait DynatreeOptions extends js.Object {
   // values are still set to default.
   var classNames: js.UndefOr[DynatreeClassNamesOptions] = js.native
   
-   // Automatically collapse all siblings, when a node is expanded.
+  // Automatically collapse all siblings, when a node is expanded.
   var clickFolderMode: js.UndefOr[Double] = js.native
   
   var cookie: js.UndefOr[DynaTreeCookieOptions] = js.native
   
-   // Used by node.getKeyPath() and tree.loadKeyPath().
+  // Used by node.getKeyPath() and tree.loadKeyPath().
   var cookieId: js.UndefOr[String] = js.native
   
-   // Use <span> instead of <a> tags for all nodes
+  // Use <span> instead of <a> tags for all nodes
   var debugLevel: js.UndefOr[Double] = js.native
   
-   // Choose a more unique name, to allow multiple trees.
+  // Choose a more unique name, to allow multiple trees.
   var dnd: js.UndefOr[DynaTreeDNDOptions] = js.native
   
-   // 1:single, 2:multi, 3:multi-hier
+  // 1:single, 2:multi, 3:multi-hier
   var fx: js.UndefOr[js.Any] = js.native
   
-   // 0:quiet, 1:normal, 2:debug
+  // 0:quiet, 1:normal, 2:debug
   var generateIds: js.UndefOr[Boolean] = js.native
   
-   // Generate id attributes like <span id='dynatree-id-KEY'>
+  // Generate id attributes like <span id='dynatree-id-KEY'>
   var idPrefix: js.UndefOr[String] = js.native
   
-   // 1: root node is not collapsible
+  // 1: root node is not collapsible
   var imagePath: js.UndefOr[String] = js.native
   
-   // Init tree structure from a <ul> element with this ID.
+  // Init tree structure from a <ul> element with this ID.
   var initAjax: js.UndefOr[JQueryAjaxSettings] = js.native
   
-   // Init tree structure from this object array.
+  // Init tree structure from this object array.
   var initId: js.UndefOr[String] = js.native
   
-   // Used to generate node id's like <span id="dynatree-id-<key>">.
+  // Used to generate node id's like <span id="dynatree-id-<key>">.
   var keyPathSeparator: js.UndefOr[String] = js.native
   
-   // Set focus to first child, when expanding or lazy-loading.
+  // Set focus to first child, when expanding or lazy-loading.
   var keyboard: js.UndefOr[Boolean] = js.native
   
-   // Tree's name (only used for debug outpu)
+  // Tree's name (only used for debug outpu)
   var minExpandLevel: js.UndefOr[Double] = js.native
   
-   // Animations, e.g. null or { height: "toggle", duration: 200 }
+  // Animations, e.g. null or { height: "toggle", duration: 200 }
   var noLink: js.UndefOr[Boolean] = js.native
   
   // Callback(isReloading, isError) when tree was (re)loaded.
   var onActivate: js.UndefOr[js.Function1[/* dtnode */ DynaTreeNode, Unit]] = js.native
   
-   // null: set focus to node.
+  // null: set focus to node.
   var onBlur: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.native
   
   // Low level event handlers: onEvent(dtnode, event): return false, to stop default processing
   var onClick: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.native
   
-   // Callback(dtnode) before a node is rendered. Return a HTML string to override.
+  // Callback(dtnode) before a node is rendered. Return a HTML string to override.
   var onCreate: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any, Unit]] = js.native
   
-   // Callback(dtnode) when a lazy node is expanded for the first time.
+  // Callback(dtnode) when a lazy node is expanded for the first time.
   var onCustomRender: js.UndefOr[js.Function1[/* dtnode */ DynaTreeNode, Unit]] = js.native
   
-   // null: generate focus, expand, activate, select events.
+  // null: generate focus, expand, activate, select events.
   var onDblClick: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.native
   
-   // Callback(dtnode) when a node is activated.
+  // Callback(dtnode) when a node is activated.
   var onDeactivate: js.UndefOr[js.Function1[/* dtnode */ DynaTreeNode, Unit]] = js.native
   
-   // Callback(flag, dtnode) when a node is (de)selected.
+  // Callback(flag, dtnode) when a node is (de)selected.
   var onExpand: js.UndefOr[js.Function2[/* flag */ String, /* dtnode */ DynaTreeNode, Unit]] = js.native
   
-   // (No default actions.)
+  // (No default actions.)
   var onFocus: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.native
   
-   // (No default actions.)
+  // (No default actions.)
   var onKeydown: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.native
   
-   // null: generate keyboard navigation (focus, expand, activate).
+  // null: generate keyboard navigation (focus, expand, activate).
   var onKeypress: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.native
   
-   // Callback(flag, dtnode) when a node is expanded/collapsed.
+  // Callback(flag, dtnode) when a node is expanded/collapsed.
   var onLazyRead: js.UndefOr[js.Function1[/* dtnode */ DynaTreeNode, Unit]] = js.native
   
   // Callback(flag, dtnode) before a node is expanded/collpsed.
   // High level event handlers
   var onPostInit: js.UndefOr[js.Function2[/* isReloading */ Boolean, /* isError */ Boolean, Unit]] = js.native
   
-   // null: remove focus from node.
+  // null: remove focus from node.
   // Pre-event handlers onQueryEvent(flag, dtnode): return false, to stop processing
   var onQueryActivate: js.UndefOr[js.Function2[/* flag */ String, /* dtnode */ DynaTreeNode, Unit]] = js.native
   
   // Callback(flag, dtnode) before a node is (de)selected.
   var onQueryExpand: js.UndefOr[js.Function2[/* flag */ String, /* dtnode */ DynaTreeNode, Unit]] = js.native
   
-   // Callback(flag, dtnode) before a node is (de)activated.
+  // Callback(flag, dtnode) before a node is (de)activated.
   var onQuerySelect: js.UndefOr[js.Function2[/* flag */ String, /* dtnode */ DynaTreeNode, Unit]] = js.native
   
-   // Callback(dtnode, nodeSpan) after a node was rendered for the first time.
+  // Callback(dtnode, nodeSpan) after a node was rendered for the first time.
   var onRender: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any, Unit]] = js.native
   
-   // Callback(dtnode) when a node is deactivated.
+  // Callback(dtnode) when a node is deactivated.
   var onSelect: js.UndefOr[js.Function2[/* flag */ String, /* dtnode */ DynaTreeNode, Unit]] = js.native
   
-   // Support keyboard navigation.
+  // Support keyboard navigation.
   var persist: js.UndefOr[Boolean] = js.native
   
-   // Callback(dtnode, nodeSpan) after a node was rendered.
+  // Callback(dtnode, nodeSpan) after a node was rendered.
   var postProcess: js.UndefOr[js.Function2[/* data */ js.Any, /* dataType */ js.Any, Unit]] = js.native
   
-   // Show checkboxes.
+  // Show checkboxes.
   var selectMode: js.UndefOr[Double] = js.native
   
   // Used by initAjax option
@@ -155,291 +156,279 @@ object DynatreeOptions {
   }
   
   @scala.inline
-  implicit class DynatreeOptionsOps[Self <: DynatreeOptions] (val x: Self) extends AnyVal {
+  implicit class DynatreeOptionsMutableBuilder[Self <: DynatreeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveVisible(value: Boolean): Self = StObject.set(x, "activeVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveVisibleUndefined: Self = StObject.set(x, "activeVisible", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAjaxDefaults(value: DynaTreeAjaxOptions): Self = StObject.set(x, "ajaxDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveVisible(value: Boolean): Self = this.set("activeVisible", value.asInstanceOf[js.Any])
+    def setAjaxDefaultsUndefined: Self = StObject.set(x, "ajaxDefaults", js.undefined)
     
     @scala.inline
-    def deleteActiveVisible: Self = this.set("activeVisible", js.undefined)
+    def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjaxDefaults(value: DynaTreeAjaxOptions): Self = this.set("ajaxDefaults", value.asInstanceOf[js.Any])
+    def setAutoCollapseUndefined: Self = StObject.set(x, "autoCollapse", js.undefined)
     
     @scala.inline
-    def deleteAjaxDefaults: Self = this.set("ajaxDefaults", js.undefined)
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCollapse(value: Boolean): Self = this.set("autoCollapse", value.asInstanceOf[js.Any])
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def deleteAutoCollapse: Self = this.set("autoCollapse", js.undefined)
+    def setCheckbox(value: Boolean): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setChildren(value: js.Array[DynaTreeDataModel]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckbox(value: Boolean): Self = this.set("checkbox", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteCheckbox: Self = this.set("checkbox", js.undefined)
+    def setChildrenVarargs(value: DynaTreeDataModel*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: DynaTreeDataModel*): Self = this.set("children", js.Array(value :_*))
+    def setClassNames(value: DynatreeClassNamesOptions): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[DynaTreeDataModel]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setClickFolderMode(value: Double): Self = StObject.set(x, "clickFolderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNames(value: DynatreeClassNamesOptions): Self = this.set("classNames", value.asInstanceOf[js.Any])
+    def setClickFolderModeUndefined: Self = StObject.set(x, "clickFolderMode", js.undefined)
     
     @scala.inline
-    def deleteClassNames: Self = this.set("classNames", js.undefined)
+    def setCookie(value: DynaTreeCookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickFolderMode(value: Double): Self = this.set("clickFolderMode", value.asInstanceOf[js.Any])
+    def setCookieId(value: String): Self = StObject.set(x, "cookieId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickFolderMode: Self = this.set("clickFolderMode", js.undefined)
+    def setCookieIdUndefined: Self = StObject.set(x, "cookieId", js.undefined)
     
     @scala.inline
-    def setCookie(value: DynaTreeCookieOptions): Self = this.set("cookie", value.asInstanceOf[js.Any])
+    def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
     
     @scala.inline
-    def deleteCookie: Self = this.set("cookie", js.undefined)
+    def setDebugLevel(value: Double): Self = StObject.set(x, "debugLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookieId(value: String): Self = this.set("cookieId", value.asInstanceOf[js.Any])
+    def setDebugLevelUndefined: Self = StObject.set(x, "debugLevel", js.undefined)
     
     @scala.inline
-    def deleteCookieId: Self = this.set("cookieId", js.undefined)
+    def setDnd(value: DynaTreeDNDOptions): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugLevel(value: Double): Self = this.set("debugLevel", value.asInstanceOf[js.Any])
+    def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
     
     @scala.inline
-    def deleteDebugLevel: Self = this.set("debugLevel", js.undefined)
+    def setFx(value: js.Any): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnd(value: DynaTreeDNDOptions): Self = this.set("dnd", value.asInstanceOf[js.Any])
+    def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
     
     @scala.inline
-    def deleteDnd: Self = this.set("dnd", js.undefined)
+    def setGenerateIds(value: Boolean): Self = StObject.set(x, "generateIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFx(value: js.Any): Self = this.set("fx", value.asInstanceOf[js.Any])
+    def setGenerateIdsUndefined: Self = StObject.set(x, "generateIds", js.undefined)
     
     @scala.inline
-    def deleteFx: Self = this.set("fx", js.undefined)
+    def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateIds(value: Boolean): Self = this.set("generateIds", value.asInstanceOf[js.Any])
+    def setIdPrefixUndefined: Self = StObject.set(x, "idPrefix", js.undefined)
     
     @scala.inline
-    def deleteGenerateIds: Self = this.set("generateIds", js.undefined)
+    def setImagePath(value: String): Self = StObject.set(x, "imagePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdPrefix(value: String): Self = this.set("idPrefix", value.asInstanceOf[js.Any])
+    def setImagePathUndefined: Self = StObject.set(x, "imagePath", js.undefined)
     
     @scala.inline
-    def deleteIdPrefix: Self = this.set("idPrefix", js.undefined)
+    def setInitAjax(value: JQueryAjaxSettings): Self = StObject.set(x, "initAjax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePath(value: String): Self = this.set("imagePath", value.asInstanceOf[js.Any])
+    def setInitAjaxUndefined: Self = StObject.set(x, "initAjax", js.undefined)
     
     @scala.inline
-    def deleteImagePath: Self = this.set("imagePath", js.undefined)
+    def setInitId(value: String): Self = StObject.set(x, "initId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitAjax(value: JQueryAjaxSettings): Self = this.set("initAjax", value.asInstanceOf[js.Any])
+    def setInitIdUndefined: Self = StObject.set(x, "initId", js.undefined)
     
     @scala.inline
-    def deleteInitAjax: Self = this.set("initAjax", js.undefined)
+    def setKeyPathSeparator(value: String): Self = StObject.set(x, "keyPathSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitId(value: String): Self = this.set("initId", value.asInstanceOf[js.Any])
+    def setKeyPathSeparatorUndefined: Self = StObject.set(x, "keyPathSeparator", js.undefined)
     
     @scala.inline
-    def deleteInitId: Self = this.set("initId", js.undefined)
+    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPathSeparator(value: String): Self = this.set("keyPathSeparator", value.asInstanceOf[js.Any])
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def deleteKeyPathSeparator: Self = this.set("keyPathSeparator", js.undefined)
+    def setMinExpandLevel(value: Double): Self = StObject.set(x, "minExpandLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setMinExpandLevelUndefined: Self = StObject.set(x, "minExpandLevel", js.undefined)
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setNoLink(value: Boolean): Self = StObject.set(x, "noLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinExpandLevel(value: Double): Self = this.set("minExpandLevel", value.asInstanceOf[js.Any])
+    def setNoLinkUndefined: Self = StObject.set(x, "noLink", js.undefined)
     
     @scala.inline
-    def deleteMinExpandLevel: Self = this.set("minExpandLevel", js.undefined)
+    def setOnActivate(value: /* dtnode */ DynaTreeNode => Unit): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoLink(value: Boolean): Self = this.set("noLink", value.asInstanceOf[js.Any])
+    def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
     
     @scala.inline
-    def deleteNoLink: Self = this.set("noLink", js.undefined)
+    def setOnBlur(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnActivate(value: /* dtnode */ DynaTreeNode => Unit): Self = this.set("onActivate", js.Any.fromFunction1(value))
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def deleteOnActivate: Self = this.set("onActivate", js.undefined)
+    def setOnClick(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnBlur(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = this.set("onBlur", js.Any.fromFunction2(value))
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnCreate(value: (/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any) => Unit): Self = StObject.set(x, "onCreate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnClick(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = this.set("onClick", js.Any.fromFunction2(value))
+    def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnCustomRender(value: /* dtnode */ DynaTreeNode => Unit): Self = StObject.set(x, "onCustomRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCreate(value: (/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any) => Unit): Self = this.set("onCreate", js.Any.fromFunction2(value))
+    def setOnCustomRenderUndefined: Self = StObject.set(x, "onCustomRender", js.undefined)
     
     @scala.inline
-    def deleteOnCreate: Self = this.set("onCreate", js.undefined)
+    def setOnDblClick(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = StObject.set(x, "onDblClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnCustomRender(value: /* dtnode */ DynaTreeNode => Unit): Self = this.set("onCustomRender", js.Any.fromFunction1(value))
+    def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
     
     @scala.inline
-    def deleteOnCustomRender: Self = this.set("onCustomRender", js.undefined)
+    def setOnDeactivate(value: /* dtnode */ DynaTreeNode => Unit): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDblClick(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = this.set("onDblClick", js.Any.fromFunction2(value))
+    def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
     
     @scala.inline
-    def deleteOnDblClick: Self = this.set("onDblClick", js.undefined)
+    def setOnExpand(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnDeactivate(value: /* dtnode */ DynaTreeNode => Unit): Self = this.set("onDeactivate", js.Any.fromFunction1(value))
+    def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
     
     @scala.inline
-    def deleteOnDeactivate: Self = this.set("onDeactivate", js.undefined)
+    def setOnFocus(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnExpand(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = this.set("onExpand", js.Any.fromFunction2(value))
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def deleteOnExpand: Self = this.set("onExpand", js.undefined)
+    def setOnKeydown(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = StObject.set(x, "onKeydown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnFocus(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = this.set("onFocus", js.Any.fromFunction2(value))
+    def setOnKeydownUndefined: Self = StObject.set(x, "onKeydown", js.undefined)
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setOnKeypress(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = StObject.set(x, "onKeypress", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnKeydown(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = this.set("onKeydown", js.Any.fromFunction2(value))
+    def setOnKeypressUndefined: Self = StObject.set(x, "onKeypress", js.undefined)
     
     @scala.inline
-    def deleteOnKeydown: Self = this.set("onKeydown", js.undefined)
+    def setOnLazyRead(value: /* dtnode */ DynaTreeNode => Unit): Self = StObject.set(x, "onLazyRead", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnKeypress(value: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean): Self = this.set("onKeypress", js.Any.fromFunction2(value))
+    def setOnLazyReadUndefined: Self = StObject.set(x, "onLazyRead", js.undefined)
     
     @scala.inline
-    def deleteOnKeypress: Self = this.set("onKeypress", js.undefined)
+    def setOnPostInit(value: (/* isReloading */ Boolean, /* isError */ Boolean) => Unit): Self = StObject.set(x, "onPostInit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnLazyRead(value: /* dtnode */ DynaTreeNode => Unit): Self = this.set("onLazyRead", js.Any.fromFunction1(value))
+    def setOnPostInitUndefined: Self = StObject.set(x, "onPostInit", js.undefined)
     
     @scala.inline
-    def deleteOnLazyRead: Self = this.set("onLazyRead", js.undefined)
+    def setOnQueryActivate(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = StObject.set(x, "onQueryActivate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPostInit(value: (/* isReloading */ Boolean, /* isError */ Boolean) => Unit): Self = this.set("onPostInit", js.Any.fromFunction2(value))
+    def setOnQueryActivateUndefined: Self = StObject.set(x, "onQueryActivate", js.undefined)
     
     @scala.inline
-    def deleteOnPostInit: Self = this.set("onPostInit", js.undefined)
+    def setOnQueryExpand(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = StObject.set(x, "onQueryExpand", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnQueryActivate(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = this.set("onQueryActivate", js.Any.fromFunction2(value))
+    def setOnQueryExpandUndefined: Self = StObject.set(x, "onQueryExpand", js.undefined)
     
     @scala.inline
-    def deleteOnQueryActivate: Self = this.set("onQueryActivate", js.undefined)
+    def setOnQuerySelect(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = StObject.set(x, "onQuerySelect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnQueryExpand(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = this.set("onQueryExpand", js.Any.fromFunction2(value))
+    def setOnQuerySelectUndefined: Self = StObject.set(x, "onQuerySelect", js.undefined)
     
     @scala.inline
-    def deleteOnQueryExpand: Self = this.set("onQueryExpand", js.undefined)
+    def setOnRender(value: (/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any) => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnQuerySelect(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = this.set("onQuerySelect", js.Any.fromFunction2(value))
+    def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
     @scala.inline
-    def deleteOnQuerySelect: Self = this.set("onQuerySelect", js.undefined)
+    def setOnSelect(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnRender(value: (/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any) => Unit): Self = this.set("onRender", js.Any.fromFunction2(value))
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def deleteOnRender: Self = this.set("onRender", js.undefined)
+    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSelect(value: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit): Self = this.set("onSelect", js.Any.fromFunction2(value))
+    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setPostProcess(value: (/* data */ js.Any, /* dataType */ js.Any) => Unit): Self = StObject.set(x, "postProcess", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPersist(value: Boolean): Self = this.set("persist", value.asInstanceOf[js.Any])
+    def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     
     @scala.inline
-    def deletePersist: Self = this.set("persist", js.undefined)
+    def setSelectMode(value: Double): Self = StObject.set(x, "selectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostProcess(value: (/* data */ js.Any, /* dataType */ js.Any) => Unit): Self = this.set("postProcess", js.Any.fromFunction2(value))
+    def setSelectModeUndefined: Self = StObject.set(x, "selectMode", js.undefined)
     
     @scala.inline
-    def deletePostProcess: Self = this.set("postProcess", js.undefined)
+    def setStrings(value: DynaTreeStringsOptions): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectMode(value: Double): Self = this.set("selectMode", value.asInstanceOf[js.Any])
+    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     
     @scala.inline
-    def deleteSelectMode: Self = this.set("selectMode", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrings(value: DynaTreeStringsOptions): Self = this.set("strings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrings: Self = this.set("strings", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

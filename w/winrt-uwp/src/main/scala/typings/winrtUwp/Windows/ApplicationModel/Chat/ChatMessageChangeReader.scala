@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for reading and accepting message change revisions. */
 @js.native
-trait ChatMessageChangeReader extends js.Object {
+trait ChatMessageChangeReader extends StObject {
   
   /** Accepts all the changes up to and including the latest change to the message. */
   def acceptChanges(): Unit = js.native
@@ -38,27 +39,15 @@ object ChatMessageChangeReader {
   }
   
   @scala.inline
-  implicit class ChatMessageChangeReaderOps[Self <: ChatMessageChangeReader] (val x: Self) extends AnyVal {
+  implicit class ChatMessageChangeReaderMutableBuilder[Self <: ChatMessageChangeReader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptChangesThrough(value: ChatMessageChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAcceptChanges(value: () => Unit): Self = this.set("acceptChanges", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setAcceptChangesThrough(value: ChatMessageChange => Unit): Self = this.set("acceptChangesThrough", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = this.set("readBatchAsync", js.Any.fromFunction0(value))
+    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

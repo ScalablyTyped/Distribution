@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,51 +70,39 @@ object XTabControllerModel {
   }
   
   @scala.inline
-  implicit class XTabControllerModelOps[Self <: XTabControllerModel] (val x: Self) extends AnyVal {
+  implicit class XTabControllerModelMutableBuilder[Self <: XTabControllerModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlModels(value: SafeArray[XControlModel]): Self = StObject.set(x, "ControlModels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetControlModels(value: () => SafeArray[XControlModel]): Self = StObject.set(x, "getControlModels", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetGroup(value: (Double, js.Array[SeqEquiv[XControlModel]], js.Array[String]) => Unit): Self = StObject.set(x, "getGroup", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setControlModels(value: SafeArray[XControlModel]): Self = this.set("ControlModels", value.asInstanceOf[js.Any])
+    def setGetGroupByName(value: (String, js.Array[SeqEquiv[XControlModel]]) => Unit): Self = StObject.set(x, "getGroupByName", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGroupControl(value: Boolean): Self = this.set("GroupControl", value.asInstanceOf[js.Any])
+    def setGetGroupControl(value: () => Boolean): Self = StObject.set(x, "getGroupControl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGroupCount(value: Double): Self = this.set("GroupCount", value.asInstanceOf[js.Any])
+    def setGetGroupCount(value: () => Double): Self = StObject.set(x, "getGroupCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetControlModels(value: () => SafeArray[XControlModel]): Self = this.set("getControlModels", js.Any.fromFunction0(value))
+    def setGroupControl(value: Boolean): Self = StObject.set(x, "GroupControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetGroup(value: (Double, js.Array[SeqEquiv[XControlModel]], js.Array[String]) => Unit): Self = this.set("getGroup", js.Any.fromFunction3(value))
+    def setGroupCount(value: Double): Self = StObject.set(x, "GroupCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetGroupByName(value: (String, js.Array[SeqEquiv[XControlModel]]) => Unit): Self = this.set("getGroupByName", js.Any.fromFunction2(value))
+    def setSetControlModels(value: SeqEquiv[XControlModel] => Unit): Self = StObject.set(x, "setControlModels", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetGroupControl(value: () => Boolean): Self = this.set("getGroupControl", js.Any.fromFunction0(value))
+    def setSetGroup(value: (SeqEquiv[XControlModel], String) => Unit): Self = StObject.set(x, "setGroup", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetGroupCount(value: () => Double): Self = this.set("getGroupCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetControlModels(value: SeqEquiv[XControlModel] => Unit): Self = this.set("setControlModels", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetGroup(value: (SeqEquiv[XControlModel], String) => Unit): Self = this.set("setGroup", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetGroupControl(value: Boolean => Unit): Self = this.set("setGroupControl", js.Any.fromFunction1(value))
+    def setSetGroupControl(value: Boolean => Unit): Self = StObject.set(x, "setGroupControl", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hub extends js.Object {
+trait Hub extends StObject {
   
   /*The name of the browser as determined by MathJax. It will be one of Firefox, Safari, Chrome, Opera, MSIE,
     * Konqueror, or unkown. This is actually an object with additional properties and methods concerning the
@@ -187,123 +188,111 @@ object Hub {
   }
   
   @scala.inline
-  implicit class HubOps[Self <: Hub] (val x: Self) extends AnyVal {
+  implicit class HubMutableBuilder[Self <: Hub] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowser(value: BrowserInfo): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserUndefined: Self = StObject.set(x, "Browser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: Config => Unit): Self = StObject.set(x, "Config", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConfig(value: Config => Unit): Self = this.set("Config", js.Any.fromFunction1(value))
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def setConfigured(value: () => Unit): Self = this.set("Configured", js.Any.fromFunction0(value))
+    def setConfigured(value: () => Unit): Self = StObject.set(x, "Configured", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInsert(value: (js.Any, js.Any) => js.Any): Self = this.set("Insert", js.Any.fromFunction2(value))
+    def setFormatError(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "formatError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPreProcess(value: (js.Any, js.Any) => js.Any): Self = this.set("PreProcess", js.Any.fromFunction2(value))
+    def setGetAllJax(value: js.Any => js.Array[_]): Self = StObject.set(x, "getAllJax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProcess(value: (js.Any, js.Any) => js.Any): Self = this.set("Process", js.Any.fromFunction2(value))
+    def setGetJaxByInputType(value: (String, js.Any) => Unit): Self = StObject.set(x, "getJaxByInputType", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setQueue(value: js.Any => js.Any): Self = this.set("Queue", js.Any.fromFunction1(value))
+    def setGetJaxByType(value: (String, js.Any) => Unit): Self = StObject.set(x, "getJaxByType", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReprocess(value: (js.Any, js.Any) => js.Any): Self = this.set("Reprocess", js.Any.fromFunction2(value))
+    def setGetJaxFor(value: js.Any => js.Any): Self = StObject.set(x, "getJaxFor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRerender(value: (js.Any, js.Any) => js.Any): Self = this.set("Rerender", js.Any.fromFunction2(value))
+    def setInputJax(value: js.Any): Self = StObject.set(x, "inputJax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeset(value: (js.Any, js.Any) => js.Any): Self = this.set("Typeset", js.Any.fromFunction2(value))
+    def setInputJaxUndefined: Self = StObject.set(x, "inputJax", js.undefined)
     
     @scala.inline
-    def setUpdate(value: (js.Any, js.Any) => js.Any): Self = this.set("Update", js.Any.fromFunction2(value))
+    def setInsert(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFormatError(value: (js.Any, js.Any) => Unit): Self = this.set("formatError", js.Any.fromFunction2(value))
+    def setIsJax(value: js.Any => Double): Self = StObject.set(x, "isJax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllJax(value: js.Any => js.Array[_]): Self = this.set("getAllJax", js.Any.fromFunction1(value))
+    def setOutputJax(value: js.Any): Self = StObject.set(x, "outputJax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetJaxByInputType(value: (String, js.Any) => Unit): Self = this.set("getJaxByInputType", js.Any.fromFunction2(value))
+    def setOutputJaxUndefined: Self = StObject.set(x, "outputJax", js.undefined)
     
     @scala.inline
-    def setGetJaxByType(value: (String, js.Any) => Unit): Self = this.set("getJaxByType", js.Any.fromFunction2(value))
+    def setPreProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "PreProcess", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetJaxFor(value: js.Any => js.Any): Self = this.set("getJaxFor", js.Any.fromFunction1(value))
+    def setProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsJax(value: js.Any => Double): Self = this.set("isJax", js.Any.fromFunction1(value))
+    def setProcessSectionDelay(value: Double): Self = StObject.set(x, "processSectionDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetRenderer(value: (String, String) => Unit): Self = this.set("setRenderer", js.Any.fromFunction2(value))
+    def setProcessSectionDelayUndefined: Self = StObject.set(x, "processSectionDelay", js.undefined)
     
     @scala.inline
-    def setBrowser(value: BrowserInfo): Self = this.set("Browser", value.asInstanceOf[js.Any])
+    def setProcessUpdateDelay(value: Double): Self = StObject.set(x, "processUpdateDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrowser: Self = this.set("Browser", js.undefined)
+    def setProcessUpdateDelayUndefined: Self = StObject.set(x, "processUpdateDelay", js.undefined)
     
     @scala.inline
-    def setRegister(value: Register): Self = this.set("Register", value.asInstanceOf[js.Any])
+    def setProcessUpdateTime(value: Double): Self = StObject.set(x, "processUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegister: Self = this.set("Register", js.undefined)
+    def setProcessUpdateTimeUndefined: Self = StObject.set(x, "processUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setQueue(value: js.Any => js.Any): Self = StObject.set(x, "Queue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInputJax(value: js.Any): Self = this.set("inputJax", value.asInstanceOf[js.Any])
+    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
     @scala.inline
-    def deleteInputJax: Self = this.set("inputJax", js.undefined)
+    def setRegister(value: Register): Self = StObject.set(x, "Register", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputJax(value: js.Any): Self = this.set("outputJax", value.asInstanceOf[js.Any])
+    def setRegisterUndefined: Self = StObject.set(x, "Register", js.undefined)
     
     @scala.inline
-    def deleteOutputJax: Self = this.set("outputJax", js.undefined)
+    def setReprocess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Reprocess", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setProcessSectionDelay(value: Double): Self = this.set("processSectionDelay", value.asInstanceOf[js.Any])
+    def setRerender(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Rerender", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteProcessSectionDelay: Self = this.set("processSectionDelay", js.undefined)
+    def setSetRenderer(value: (String, String) => Unit): Self = StObject.set(x, "setRenderer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setProcessUpdateDelay(value: Double): Self = this.set("processUpdateDelay", value.asInstanceOf[js.Any])
+    def setSignal(value: Signal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProcessUpdateDelay: Self = this.set("processUpdateDelay", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def setProcessUpdateTime(value: Double): Self = this.set("processUpdateTime", value.asInstanceOf[js.Any])
+    def setTypeset(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Typeset", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteProcessUpdateTime: Self = this.set("processUpdateTime", js.undefined)
-    
-    @scala.inline
-    def deleteQueue: Self = this.set("queue", js.undefined)
-    
-    @scala.inline
-    def setSignal(value: Signal): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setUpdate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
   }
 }

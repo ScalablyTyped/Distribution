@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This contains item&#39;s status and any errors.
   */
 @js.native
-trait SchemaItemStatus extends js.Object {
+trait SchemaItemStatus extends StObject {
   
   /**
     * Status code.
@@ -34,42 +35,30 @@ object SchemaItemStatus {
   }
   
   @scala.inline
-  implicit class SchemaItemStatusOps[Self <: SchemaItemStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaItemStatusMutableBuilder[Self <: SchemaItemStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcessingErrors(value: js.Array[SchemaProcessingError]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setProcessingErrorsUndefined: Self = StObject.set(x, "processingErrors", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setProcessingErrorsVarargs(value: SchemaProcessingError*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
     
     @scala.inline
-    def setProcessingErrorsVarargs(value: SchemaProcessingError*): Self = this.set("processingErrors", js.Array(value :_*))
+    def setRepositoryErrors(value: js.Array[SchemaRepositoryError]): Self = StObject.set(x, "repositoryErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingErrors(value: js.Array[SchemaProcessingError]): Self = this.set("processingErrors", value.asInstanceOf[js.Any])
+    def setRepositoryErrorsUndefined: Self = StObject.set(x, "repositoryErrors", js.undefined)
     
     @scala.inline
-    def deleteProcessingErrors: Self = this.set("processingErrors", js.undefined)
-    
-    @scala.inline
-    def setRepositoryErrorsVarargs(value: SchemaRepositoryError*): Self = this.set("repositoryErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setRepositoryErrors(value: js.Array[SchemaRepositoryError]): Self = this.set("repositoryErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryErrors: Self = this.set("repositoryErrors", js.undefined)
+    def setRepositoryErrorsVarargs(value: SchemaRepositoryError*): Self = StObject.set(x, "repositoryErrors", js.Array(value :_*))
   }
 }

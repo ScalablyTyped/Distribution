@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,57 +92,45 @@ object BoundedMinMax {
   }
   
   @scala.inline
-  implicit class BoundedMinMaxOps[Self <: BoundedMinMax] (val x: Self) extends AnyVal {
+  implicit class BoundedMinMaxMutableBuilder[Self <: BoundedMinMax] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDataValue(value: Double): Self = StObject.set(x, "maxDataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDataValue(value: Double): Self = this.set("maxDataValue", value.asInstanceOf[js.Any])
+    def setMaxSize(value: String | Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: String | Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setMinDataValue(value: Double): Self = StObject.set(x, "minDataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDataValue(value: Double): Self = this.set("minDataValue", value.asInstanceOf[js.Any])
+    def setMinSize(value: String | Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: String | Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizationField(value: String): Self = this.set("normalizationField", value.asInstanceOf[js.Any])
+    def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNormalizationField: Self = this.set("normalizationField", js.undefined)
+    def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
     
     @scala.inline
-    def setValueExpression(value: String): Self = this.set("valueExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueExpression: Self = this.set("valueExpression", js.undefined)
-    
-    @scala.inline
-    def setValueExpressionTitle(value: String): Self = this.set("valueExpressionTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueExpressionTitle: Self = this.set("valueExpressionTitle", js.undefined)
+    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
   }
 }

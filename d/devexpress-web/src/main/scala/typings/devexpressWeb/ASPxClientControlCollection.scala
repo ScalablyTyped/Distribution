@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A collection object used on the client side to maintain particular client control objects
   */
 @js.native
-trait ASPxClientControlCollection extends js.Object {
+trait ASPxClientControlCollection extends StObject {
   
   /**
     * Occurs when a callback for server-side processing is initiated by any DevExpress control.
@@ -92,51 +93,39 @@ object ASPxClientControlCollection {
   }
   
   @scala.inline
-  implicit class ASPxClientControlCollectionOps[Self <: ASPxClientControlCollection] (val x: Self) extends AnyVal {
+  implicit class ASPxClientControlCollectionMutableBuilder[Self <: ASPxClientControlCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginCallback(value: ASPxClientEvent[ASPxClientGlobalBeginCallbackEventHandler[ASPxClientControlCollection]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserWindowResized(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlCollection]]): Self = StObject.set(x, "BrowserWindowResized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallbackError(value: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[ASPxClientControlCollection]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientGlobalBeginCallbackEventHandler[ASPxClientControlCollection]]): Self = this.set("BeginCallback", value.asInstanceOf[js.Any])
+    def setControlsInitialized(value: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[ASPxClientControlCollection]]): Self = StObject.set(x, "ControlsInitialized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserWindowResized(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlCollection]]): Self = this.set("BrowserWindowResized", value.asInstanceOf[js.Any])
+    def setEndCallback(value: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[ASPxClientControlCollection]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[ASPxClientControlCollection]]): Self = this.set("CallbackError", value.asInstanceOf[js.Any])
+    def setForEachControl(value: ASPxClientControlAction => Unit): Self = StObject.set(x, "ForEachControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setControlsInitialized(value: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[ASPxClientControlCollection]]): Self = this.set("ControlsInitialized", value.asInstanceOf[js.Any])
+    def setGet(value: js.Any => js.Any): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[ASPxClientControlCollection]]): Self = this.set("EndCallback", value.asInstanceOf[js.Any])
+    def setGetByName(value: String => js.Any): Self = StObject.set(x, "GetByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForEachControl(value: ASPxClientControlAction => Unit): Self = this.set("ForEachControl", js.Any.fromFunction1(value))
+    def setGetControlsByPredicate(value: ASPxClientControlPredicate => js.Array[_]): Self = StObject.set(x, "GetControlsByPredicate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: js.Any => js.Any): Self = this.set("Get", js.Any.fromFunction1(value))
+    def setGetControlsByType(value: js.Any => js.Array[_]): Self = StObject.set(x, "GetControlsByType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetByName(value: String => js.Any): Self = this.set("GetByName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetControlsByPredicate(value: ASPxClientControlPredicate => js.Array[_]): Self = this.set("GetControlsByPredicate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetControlsByType(value: js.Any => js.Array[_]): Self = this.set("GetControlsByType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidationCompleted(value: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientControlCollection]]): Self = this.set("ValidationCompleted", value.asInstanceOf[js.Any])
+    def setValidationCompleted(value: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientControlCollection]]): Self = StObject.set(x, "ValidationCompleted", value.asInstanceOf[js.Any])
   }
 }

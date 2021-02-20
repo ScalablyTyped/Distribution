@@ -1,11 +1,12 @@
 package typings.zipkin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context[T] extends js.Object {
+trait Context[T] extends StObject {
   
   def getContext(): T = js.native
   
@@ -29,30 +30,18 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context[_], T] (val x: Self with Context[T]) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context[_], T] (val x: Self with Context[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetContext(value: () => T): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLetContext(value: (T, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "letContext", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScoped(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "scoped", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetContext(value: () => T): Self = this.set("getContext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLetContext(value: (T, js.Function0[js.Any]) => js.Any): Self = this.set("letContext", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setScoped(value: js.Function0[js.Any] => js.Any): Self = this.set("scoped", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetContext(value: T => Unit): Self = this.set("setContext", js.Any.fromFunction1(value))
+    def setSetContext(value: T => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
   }
 }

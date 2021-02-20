@@ -1,11 +1,12 @@
 package typings.firebaseDatabase.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Domain extends js.Object {
+trait Domain extends StObject {
   
   var domain: String = js.native
   
@@ -41,42 +42,30 @@ object Domain {
   }
   
   @scala.inline
-  implicit class DomainOps[Self <: Domain] (val x: Self) extends AnyVal {
+  implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setPathString(value: String): Self = StObject.set(x, "pathString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathString(value: String): Self = this.set("pathString", value.asInstanceOf[js.Any])
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubdomain(value: String): Self = this.set("subdomain", value.asInstanceOf[js.Any])
+    def setSubdomain(value: String): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
   }
 }

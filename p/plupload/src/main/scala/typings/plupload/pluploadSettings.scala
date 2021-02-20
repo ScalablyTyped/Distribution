@@ -1,11 +1,12 @@
 package typings.plupload
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait pluploadSettings extends js.Object {
+trait pluploadSettings extends StObject {
   
   /** Required Options */
   var browse_button: js.Any = js.native
@@ -63,126 +64,114 @@ object pluploadSettings {
   }
   
   @scala.inline
-  implicit class pluploadSettingsOps[Self <: pluploadSettings] (val x: Self) extends AnyVal {
+  implicit class pluploadSettingsMutableBuilder[Self <: pluploadSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowse_button(value: js.Any): Self = StObject.set(x, "browse_button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunk_size(value: Double | String): Self = StObject.set(x, "chunk_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChunk_sizeUndefined: Self = StObject.set(x, "chunk_size", js.undefined)
     
     @scala.inline
-    def setBrowse_button(value: js.Any): Self = this.set("browse_button", value.asInstanceOf[js.Any])
+    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setChunk_size(value: Double | String): Self = this.set("chunk_size", value.asInstanceOf[js.Any])
+    def setDrop_element(value: String): Self = StObject.set(x, "drop_element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChunk_size: Self = this.set("chunk_size", js.undefined)
+    def setDrop_elementUndefined: Self = StObject.set(x, "drop_element", js.undefined)
     
     @scala.inline
-    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setFile_data_name(value: String): Self = StObject.set(x, "file_data_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setFile_data_nameUndefined: Self = StObject.set(x, "file_data_name", js.undefined)
     
     @scala.inline
-    def setDrop_element(value: String): Self = this.set("drop_element", value.asInstanceOf[js.Any])
+    def setFilters(value: pluploadFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrop_element: Self = this.set("drop_element", js.undefined)
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def setFile_data_name(value: String): Self = this.set("file_data_name", value.asInstanceOf[js.Any])
+    def setFlash_swf_url(value: String): Self = StObject.set(x, "flash_swf_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile_data_name: Self = this.set("file_data_name", js.undefined)
+    def setFlash_swf_urlUndefined: Self = StObject.set(x, "flash_swf_url", js.undefined)
     
     @scala.inline
-    def setFilters(value: pluploadFilters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setFlash_swf_url(value: String): Self = this.set("flash_swf_url", value.asInstanceOf[js.Any])
+    def setInit(value: pluploadEvents): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlash_swf_url: Self = this.set("flash_swf_url", js.undefined)
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMax_retries(value: Double): Self = StObject.set(x, "max_retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setMax_retriesUndefined: Self = StObject.set(x, "max_retries", js.undefined)
     
     @scala.inline
-    def setInit(value: pluploadEvents): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setMulti_selection(value: Boolean): Self = StObject.set(x, "multi_selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setMulti_selectionUndefined: Self = StObject.set(x, "multi_selection", js.undefined)
     
     @scala.inline
-    def setMax_retries(value: Double): Self = this.set("max_retries", value.asInstanceOf[js.Any])
+    def setMultipart(value: Boolean): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax_retries: Self = this.set("max_retries", js.undefined)
+    def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
     @scala.inline
-    def setMulti_selection(value: Boolean): Self = this.set("multi_selection", value.asInstanceOf[js.Any])
+    def setMultipart_params(value: js.Any): Self = StObject.set(x, "multipart_params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMulti_selection: Self = this.set("multi_selection", js.undefined)
+    def setMultipart_paramsUndefined: Self = StObject.set(x, "multipart_params", js.undefined)
     
     @scala.inline
-    def setMultipart(value: Boolean): Self = this.set("multipart", value.asInstanceOf[js.Any])
+    def setRequired_features(value: String | js.Any): Self = StObject.set(x, "required_features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultipart: Self = this.set("multipart", js.undefined)
+    def setRequired_featuresUndefined: Self = StObject.set(x, "required_features", js.undefined)
     
     @scala.inline
-    def setMultipart_params(value: js.Any): Self = this.set("multipart_params", value.asInstanceOf[js.Any])
+    def setResize(value: pluploadResize): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultipart_params: Self = this.set("multipart_params", js.undefined)
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def setRequired_features(value: String | js.Any): Self = this.set("required_features", value.asInstanceOf[js.Any])
+    def setRuntimes(value: String): Self = StObject.set(x, "runtimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequired_features: Self = this.set("required_features", js.undefined)
+    def setRuntimesUndefined: Self = StObject.set(x, "runtimes", js.undefined)
     
     @scala.inline
-    def setResize(value: pluploadResize): Self = this.set("resize", value.asInstanceOf[js.Any])
+    def setSilverlight_xap_url(value: String): Self = StObject.set(x, "silverlight_xap_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setSilverlight_xap_urlUndefined: Self = StObject.set(x, "silverlight_xap_url", js.undefined)
     
     @scala.inline
-    def setRuntimes(value: String): Self = this.set("runtimes", value.asInstanceOf[js.Any])
+    def setUnique_names(value: Boolean): Self = StObject.set(x, "unique_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuntimes: Self = this.set("runtimes", js.undefined)
+    def setUnique_namesUndefined: Self = StObject.set(x, "unique_names", js.undefined)
     
     @scala.inline
-    def setSilverlight_xap_url(value: String): Self = this.set("silverlight_xap_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSilverlight_xap_url: Self = this.set("silverlight_xap_url", js.undefined)
-    
-    @scala.inline
-    def setUnique_names(value: Boolean): Self = this.set("unique_names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique_names: Self = this.set("unique_names", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

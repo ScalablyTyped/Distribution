@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientFile.anon.Name
 import typings.maximMazurokGapiClientFile.anon.Oauthtoken
 import typings.maximMazurokGapiClientFile.anon.PrettyPrint
 import typings.maximMazurokGapiClientFile.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesResource extends js.Object {
+trait InstancesResource extends StObject {
   
   /**
     * Creates an instance. When creating from a backup, the capacity of the new instance needs to be equal to or larger than the capacity of the backup (and also equal to or larger than

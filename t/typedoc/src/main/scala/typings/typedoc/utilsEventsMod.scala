@@ -1,16 +1,16 @@
 package typings.typedoc
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/utils/events", JSImport.Namespace)
-@js.native
-object utilsEventsMod extends js.Object {
+object utilsEventsMod {
   
+  @JSImport("typedoc/dist/lib/utils/events", "Event")
   @js.native
-  class Event protected () extends js.Object {
+  class Event protected () extends StObject {
     def this(name: String) = this()
     
     var _isDefaultPrevented: js.Any = js.native
@@ -30,15 +30,9 @@ object utilsEventsMod extends js.Object {
     def stopPropagation(): Unit = js.native
   }
   
+  @JSImport("typedoc/dist/lib/utils/events", "EventDispatcher")
   @js.native
-  trait EventCallback
-    extends js.Function {
-    
-    var _callback: js.UndefOr[js.Function] = js.native
-  }
-  
-  @js.native
-  class EventDispatcher () extends js.Object {
+  class EventDispatcher () extends StObject {
     
     var _events: js.Any = js.native
     
@@ -119,6 +113,13 @@ object utilsEventsMod extends js.Object {
     def trigger(name: String, args: js.Any*): this.type = js.native
     def trigger(name: EventMap, args: js.Any*): this.type = js.native
     def trigger(name: Event, args: js.Any*): this.type = js.native
+  }
+  
+  @js.native
+  trait EventCallback
+    extends js.Function {
+    
+    var _callback: js.UndefOr[js.Function] = js.native
   }
   
   type EventMap = StringDictionary[EventCallback]

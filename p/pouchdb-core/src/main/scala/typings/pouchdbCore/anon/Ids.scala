@@ -1,12 +1,13 @@
 package typings.pouchdbCore.anon
 
 import typings.pouchdbCore.PouchDB.Core.RevisionId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ids extends js.Object {
+trait Ids extends StObject {
   
   var ids: js.Array[RevisionId] = js.native
   
@@ -21,27 +22,15 @@ object Ids {
   }
   
   @scala.inline
-  implicit class IdsOps[Self <: Ids] (val x: Self) extends AnyVal {
+  implicit class IdsMutableBuilder[Self <: Ids] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIds(value: js.Array[RevisionId]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdsVarargs(value: RevisionId*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIdsVarargs(value: RevisionId*): Self = this.set("ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setIds(value: js.Array[RevisionId]): Self = this.set("ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

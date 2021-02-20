@@ -6,6 +6,7 @@ import typings.activexShell.activexShellNumbers.`1`
 import typings.activexShell.activexShellNumbers.`2`
 import typings.activexShell.activexShellNumbers.`3`
 import typings.activexShell.activexShellNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellNumbers.`4`
   - typings.activexShell.activexShellNumbers.`-1`
 */
-trait FileSystemDetails extends js.Object
+trait FileSystemDetails extends StObject
 object FileSystemDetails {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceMapSpan extends js.Object {
+trait SourceMapSpan extends StObject {
   
   /** Column number in the .js file. */
   var emittedColumn: Double = js.native
@@ -40,39 +41,27 @@ object SourceMapSpan {
   }
   
   @scala.inline
-  implicit class SourceMapSpanOps[Self <: SourceMapSpan] (val x: Self) extends AnyVal {
+  implicit class SourceMapSpanMutableBuilder[Self <: SourceMapSpan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmittedColumn(value: Double): Self = StObject.set(x, "emittedColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmittedLine(value: Double): Self = StObject.set(x, "emittedLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameIndex(value: Double): Self = StObject.set(x, "nameIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmittedColumn(value: Double): Self = this.set("emittedColumn", value.asInstanceOf[js.Any])
+    def setNameIndexUndefined: Self = StObject.set(x, "nameIndex", js.undefined)
     
     @scala.inline
-    def setEmittedLine(value: Double): Self = this.set("emittedLine", value.asInstanceOf[js.Any])
+    def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceColumn(value: Double): Self = this.set("sourceColumn", value.asInstanceOf[js.Any])
+    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceIndex(value: Double): Self = this.set("sourceIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceLine(value: Double): Self = this.set("sourceLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameIndex(value: Double): Self = this.set("nameIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNameIndex: Self = this.set("nameIndex", js.undefined)
+    def setSourceLine(value: Double): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
   }
 }

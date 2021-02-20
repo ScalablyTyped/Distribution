@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TypeStore ()
   extends typings.babylonjs.BABYLON.TypeStore
 /* static members */
-@JSGlobal("BABYLON._TypeStore")
-@js.native
-object TypeStore extends js.Object {
+object TypeStore {
+  
+  @JSGlobal("BABYLON._TypeStore")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @hidden */
+  @JSGlobal("BABYLON._TypeStore.GetClass")
+  @js.native
   def GetClass(fqdn: String): js.Any = js.native
   
   /** @hidden */
-  var RegisteredTypes: org.scalablytyped.runtime.StringDictionary[js.Object] = js.native
+  @JSGlobal("BABYLON._TypeStore.RegisteredTypes")
+  @js.native
+  def RegisteredTypes: org.scalablytyped.runtime.StringDictionary[js.Object] = js.native
+  @scala.inline
+  def RegisteredTypes_=(x: org.scalablytyped.runtime.StringDictionary[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RegisteredTypes")(x.asInstanceOf[js.Any])
 }

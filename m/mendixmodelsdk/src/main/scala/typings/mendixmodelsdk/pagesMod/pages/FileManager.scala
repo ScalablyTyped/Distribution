@@ -11,6 +11,7 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgumen
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,16 +43,20 @@ class FileManager protected () extends InputWidget {
   def `type`: FileManagerType = js.native
   def type_=(newValue: FileManagerType): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager")
-@js.native
-object FileManager extends js.Object {
+object FileManager {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.create")
+  @js.native
   def create(model: IModel): FileManager = js.native
   
   /**
@@ -62,6 +67,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInBuildingBlockUnderWidget")
+  @js.native
   def createInBuildingBlockUnderWidget(container: BuildingBlock): FileManager = js.native
   
   /**
@@ -72,6 +80,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInBuildingBlockUnderWidgets")
+  @js.native
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): FileManager = js.native
   
   /**
@@ -82,6 +93,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): FileManager = js.native
   
   /**
@@ -92,6 +106,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDataViewUnderFooterWidgets")
+  @js.native
   def createInDataViewUnderFooterWidgets(container: DataView): FileManager = js.native
   
   /**
@@ -102,6 +119,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): FileManager = js.native
   
   /**
@@ -112,6 +132,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDataViewUnderWidgets")
+  @js.native
   def createInDataViewUnderWidgets(container: DataView): FileManager = js.native
   
   /**
@@ -122,6 +145,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): FileManager = js.native
   
   /**
@@ -132,6 +158,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDivContainerUnderWidgets")
+  @js.native
   def createInDivContainerUnderWidgets(container: DivContainer): FileManager = js.native
   
   /**
@@ -142,6 +171,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): FileManager = js.native
   
   /**
@@ -152,6 +184,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInGroupBoxUnderWidgets")
+  @js.native
   def createInGroupBoxUnderWidgets(container: GroupBox): FileManager = js.native
   
   /**
@@ -162,6 +197,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): FileManager = js.native
   
   /**
@@ -172,6 +210,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInHeaderUnderLeftWidgets")
+  @js.native
   def createInHeaderUnderLeftWidgets(container: Header): FileManager = js.native
   
   /**
@@ -182,6 +223,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): FileManager = js.native
   
   /**
@@ -192,6 +236,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInHeaderUnderRightWidgets")
+  @js.native
   def createInHeaderUnderRightWidgets(container: Header): FileManager = js.native
   
   /**
@@ -202,6 +249,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): FileManager = js.native
   
   /**
@@ -212,6 +262,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): FileManager = js.native
   
   /**
@@ -222,6 +275,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): FileManager = js.native
   
   /**
@@ -232,6 +288,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutGridColumnUnderWidgets")
+  @js.native
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): FileManager = js.native
   
   /**
@@ -242,6 +301,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): FileManager = js.native
   
   /**
@@ -252,6 +314,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutUnderWidgets")
+  @js.native
   def createInLayoutUnderWidgets(container: Layout): FileManager = js.native
   
   /**
@@ -262,6 +327,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): FileManager = js.native
   
   /**
@@ -272,6 +340,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInListViewTemplateUnderWidgets")
+  @js.native
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): FileManager = js.native
   
   /**
@@ -282,6 +353,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): FileManager = js.native
   
   /**
@@ -292,6 +366,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInListViewUnderWidgets")
+  @js.native
   def createInListViewUnderWidgets(container: ListView): FileManager = js.native
   
   /**
@@ -302,6 +379,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.1.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInMasterDetailRegionUnderWidget")
+  @js.native
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): FileManager = js.native
   
   /**
@@ -312,6 +392,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): FileManager = js.native
   
   /**
@@ -322,6 +405,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutContentUnderSidebarWidgets")
+  @js.native
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): FileManager = js.native
   
   /**
@@ -332,6 +418,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutContentUnderWidgets")
+  @js.native
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): FileManager = js.native
   
   /**
@@ -342,6 +431,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.22.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutUnderHeaderWidget")
+  @js.native
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): FileManager = js.native
   
   /**
@@ -352,6 +444,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutUnderWidgets")
+  @js.native
   def createInNativeLayoutUnderWidgets(container: NativeLayout): FileManager = js.native
   
   /**
@@ -362,6 +457,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): FileManager = js.native
   
   /**
@@ -372,6 +470,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNavigationListItemUnderWidgets")
+  @js.native
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): FileManager = js.native
   
   /**
@@ -382,6 +483,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInReportPaneUnderParameterWidget")
+  @js.native
   def createInReportPaneUnderParameterWidget(container: ReportPane): FileManager = js.native
   
   /**
@@ -392,6 +496,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInReportPaneUnderReportWidget")
+  @js.native
   def createInReportPaneUnderReportWidget(container: ReportPane): FileManager = js.native
   
   /**
@@ -402,6 +509,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): FileManager = js.native
   
   /**
@@ -412,6 +522,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInScrollContainerRegionUnderWidgets")
+  @js.native
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): FileManager = js.native
   
   /**
@@ -422,6 +535,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): FileManager = js.native
   
   /**
@@ -432,6 +548,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSnippetUnderWidgets")
+  @js.native
   def createInSnippetUnderWidgets(container: Snippet): FileManager = js.native
   
   /**
@@ -442,6 +561,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): FileManager = js.native
   
   /**
@@ -452,6 +574,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSplitPaneUnderFirstWidgets")
+  @js.native
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): FileManager = js.native
   
   /**
@@ -462,6 +587,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): FileManager = js.native
   
   /**
@@ -472,6 +600,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSplitPaneUnderSecondWidgets")
+  @js.native
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): FileManager = js.native
   
   /**
@@ -482,6 +613,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): FileManager = js.native
   
   /**
@@ -492,6 +626,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTabPageUnderWidgets")
+  @js.native
   def createInTabPageUnderWidgets(container: TabPage): FileManager = js.native
   
   /**
@@ -502,6 +639,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): FileManager = js.native
   
   /**
@@ -512,6 +652,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTableCellUnderWidgets")
+  @js.native
   def createInTableCellUnderWidgets(container: TableCell): FileManager = js.native
   
   /**
@@ -522,6 +665,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): FileManager = js.native
   
   /**
@@ -532,6 +678,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTemplateGridContentsUnderWidgets")
+  @js.native
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): FileManager = js.native
   
   /**
@@ -542,6 +691,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): FileManager = js.native
   
   /**
@@ -552,6 +704,9 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInWebLayoutContentUnderWidgets")
+  @js.native
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): FileManager = js.native
   
   /**
@@ -562,9 +717,22 @@ object FileManager extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.2.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInWidgetValueUnderWidgets")
+  @js.native
   def createInWidgetValueUnderWidgets(container: WidgetValue): FileManager = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

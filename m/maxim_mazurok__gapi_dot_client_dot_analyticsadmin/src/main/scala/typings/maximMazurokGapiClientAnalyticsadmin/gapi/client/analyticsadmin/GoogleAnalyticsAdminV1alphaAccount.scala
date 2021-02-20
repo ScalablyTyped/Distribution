@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAnalyticsAdminV1alphaAccount extends js.Object {
+trait GoogleAnalyticsAdminV1alphaAccount extends StObject {
   
   /** Country of business. Must be a non-deprecated code for a UN M.49 region. https: //unicode.org/cldr/charts/latest/supplem // ental/territory_containment_un_m_49.html */
   var countryCode: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object GoogleAnalyticsAdminV1alphaAccount {
   }
   
   @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaAccountOps[Self <: GoogleAnalyticsAdminV1alphaAccount] (val x: Self) extends AnyVal {
+  implicit class GoogleAnalyticsAdminV1alphaAccountMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

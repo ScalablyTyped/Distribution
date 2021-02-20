@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminateClientVpnConnectionsResult extends js.Object {
+trait TerminateClientVpnConnectionsResult extends StObject {
   
   /**
     * The ID of the Client VPN endpoint.
@@ -31,39 +32,27 @@ object TerminateClientVpnConnectionsResult {
   }
   
   @scala.inline
-  implicit class TerminateClientVpnConnectionsResultOps[Self <: TerminateClientVpnConnectionsResult] (val x: Self) extends AnyVal {
+  implicit class TerminateClientVpnConnectionsResultMutableBuilder[Self <: TerminateClientVpnConnectionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "ClientVpnEndpointId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionStatuses(value: TerminateConnectionStatusSet): Self = StObject.set(x, "ConnectionStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientVpnEndpointId(value: String): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    def setConnectionStatusesUndefined: Self = StObject.set(x, "ConnectionStatuses", js.undefined)
     
     @scala.inline
-    def deleteClientVpnEndpointId: Self = this.set("ClientVpnEndpointId", js.undefined)
+    def setConnectionStatusesVarargs(value: TerminateConnectionStatus*): Self = StObject.set(x, "ConnectionStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionStatusesVarargs(value: TerminateConnectionStatus*): Self = this.set("ConnectionStatuses", js.Array(value :_*))
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionStatuses(value: TerminateConnectionStatusSet): Self = this.set("ConnectionStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionStatuses: Self = this.set("ConnectionStatuses", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

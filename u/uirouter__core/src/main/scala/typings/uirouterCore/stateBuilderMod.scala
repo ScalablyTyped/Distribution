@@ -4,18 +4,16 @@ import typings.uirouterCore.resolvableMod.Resolvable
 import typings.uirouterCore.stateMatcherMod.StateMatcher
 import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.urlMatcherFactoryMod.UrlMatcherFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/state/stateBuilder", JSImport.Namespace)
-@js.native
-object stateBuilderMod extends js.Object {
+object stateBuilderMod {
   
-  def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = js.native
-  
+  @JSImport("@uirouter/core/lib/state/stateBuilder", "StateBuilder")
   @js.native
-  class StateBuilder protected () extends js.Object {
+  class StateBuilder protected () extends StObject {
     def this(matcher: StateMatcher, urlMatcherFactory: UrlMatcherFactory) = this()
     
     /**
@@ -56,6 +54,10 @@ object stateBuilderMod extends js.Object {
     
     def parentName(state: StateObject): String = js.native
   }
+  
+  @JSImport("@uirouter/core/lib/state/stateBuilder", "resolvablesBuilder")
+  @js.native
+  def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = js.native
   
   type BuilderFunction = js.Function2[
     /* state */ StateObject, 

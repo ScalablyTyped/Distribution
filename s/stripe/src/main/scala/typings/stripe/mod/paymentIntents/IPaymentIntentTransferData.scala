@@ -3,12 +3,13 @@ package typings.stripe.mod.paymentIntents
 import typings.stripe.mod.accounts.IAccountCreationOptions
 import typings.stripe.mod.bankAccounts.IBankAccount
 import typings.stripe.mod.cards.ICardHash
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPaymentIntentTransferData extends js.Object {
+trait IPaymentIntentTransferData extends StObject {
   
   /**
     * The amount that will be transferred automatically when a charge succeeds. The amount is capped at the total transaction amount and if no amount is set, the full amount is transferred.
@@ -30,27 +31,15 @@ object IPaymentIntentTransferData {
   }
   
   @scala.inline
-  implicit class IPaymentIntentTransferDataOps[Self <: IPaymentIntentTransferData] (val x: Self) extends AnyVal {
+  implicit class IPaymentIntentTransferDataMutableBuilder[Self <: IPaymentIntentTransferData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestination(value: String | IBankAccount | ICardHash | IAccountCreationOptions): Self = this.set("destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setDestination(value: String | IBankAccount | ICardHash | IAccountCreationOptions): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
   }
 }

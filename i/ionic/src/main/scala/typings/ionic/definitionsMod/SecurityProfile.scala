@@ -3,12 +3,13 @@ package typings.ionic.definitionsMod
 import typings.ionic.anon.Android
 import typings.ionic.ionicStrings.development
 import typings.ionic.ionicStrings.production
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityProfile extends js.Object {
+trait SecurityProfile extends StObject {
   
   var created: String = js.native
   
@@ -30,33 +31,21 @@ object SecurityProfile {
   }
   
   @scala.inline
-  implicit class SecurityProfileOps[Self <: SecurityProfile] (val x: Self) extends AnyVal {
+  implicit class SecurityProfileMutableBuilder[Self <: SecurityProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentials(value: Android): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: Android): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: development | production): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: development | production): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

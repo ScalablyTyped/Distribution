@@ -29,20 +29,23 @@ import typings.node.nodeStrings.buffer_
 import typings.node.workerThreadsMod._TransferListItem
 import typings.std.Date
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fs/promises", JSImport.Namespace)
-@js.native
-object promisesMod extends js.Object {
+object promisesMod {
   
   /**
     * Asynchronously tests a user's permissions for the file specified by path.
     * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
+  @JSImport("fs/promises", "access")
+  @js.native
   def access(path: PathLike): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "access")
+  @js.native
   def access(path: PathLike, mode: Double): js.Promise[Unit] = js.native
   
   /**
@@ -57,17 +60,41 @@ object promisesMod extends js.Object {
     * If `mode` is a string, it is parsed as an octal integer.
     * If `flag` is not supplied, the default of `'a'` is used.
     */
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: PathLike, data: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: PathLike, data: java.lang.String, options: BufferEncoding): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: PathLike, data: java.lang.String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: PathLike, data: Uint8Array): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: PathLike, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: PathLike, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: FileHandle, data: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: FileHandle, data: java.lang.String, options: BufferEncoding): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: FileHandle, data: java.lang.String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: FileHandle, data: Uint8Array): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: FileHandle, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "appendFile")
+  @js.native
   def appendFile(path: FileHandle, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
   
   /**
@@ -75,12 +102,16 @@ object promisesMod extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
+  @JSImport("fs/promises", "chmod")
+  @js.native
   def chmod(path: PathLike, mode: Mode): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous chown(2) - Change ownership of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
+  @JSImport("fs/promises", "chown")
+  @js.native
   def chown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = js.native
   
   /**
@@ -94,7 +125,11 @@ object promisesMod extends js.Object {
     * supported flag is `fs.constants.COPYFILE_EXCL`, which causes the copy operation to fail if
     * `dest` already exists.
     */
+  @JSImport("fs/promises", "copyFile")
+  @js.native
   def copyFile(src: PathLike, dest: PathLike): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "copyFile")
+  @js.native
   def copyFile(src: PathLike, dest: PathLike, flags: Double): js.Promise[Unit] = js.native
   
   /**
@@ -102,30 +137,40 @@ object promisesMod extends js.Object {
     * @param handle A `FileHandle`.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
+  @JSImport("fs/promises", "fchmod")
+  @js.native
   def fchmod(handle: FileHandle, mode: Mode): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous fchown(2) - Change ownership of a file.
     * @param handle A `FileHandle`.
     */
+  @JSImport("fs/promises", "fchown")
+  @js.native
   def fchown(handle: FileHandle, uid: Double, gid: Double): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
     * @param handle A `FileHandle`.
     */
+  @JSImport("fs/promises", "fdatasync")
+  @js.native
   def fdatasync(handle: FileHandle): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous fstat(2) - Get file status.
     * @param handle A `FileHandle`.
     */
+  @JSImport("fs/promises", "fstat")
+  @js.native
   def fstat(handle: FileHandle): js.Promise[Stats] = js.native
   
   /**
     * Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
     * @param handle A `FileHandle`.
     */
+  @JSImport("fs/promises", "fsync")
+  @js.native
   def fsync(handle: FileHandle): js.Promise[Unit] = js.native
   
   /**
@@ -133,7 +178,11 @@ object promisesMod extends js.Object {
     * @param handle A `FileHandle`.
     * @param len If not specified, defaults to `0`.
     */
+  @JSImport("fs/promises", "ftruncate")
+  @js.native
   def ftruncate(handle: FileHandle): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "ftruncate")
+  @js.native
   def ftruncate(handle: FileHandle, len: Double): js.Promise[Unit] = js.native
   
   /**
@@ -142,14 +191,32 @@ object promisesMod extends js.Object {
     * @param atime The last access time. If a string is provided, it will be coerced to number.
     * @param mtime The last modified time. If a string is provided, it will be coerced to number.
     */
+  @JSImport("fs/promises", "futimes")
+  @js.native
   def futimes(handle: FileHandle, atime: java.lang.String, mtime: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "futimes")
+  @js.native
   def futimes(handle: FileHandle, atime: java.lang.String, mtime: Double): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "futimes")
+  @js.native
   def futimes(handle: FileHandle, atime: java.lang.String, mtime: Date): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "futimes")
+  @js.native
   def futimes(handle: FileHandle, atime: Double, mtime: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "futimes")
+  @js.native
   def futimes(handle: FileHandle, atime: Double, mtime: Double): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "futimes")
+  @js.native
   def futimes(handle: FileHandle, atime: Double, mtime: Date): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "futimes")
+  @js.native
   def futimes(handle: FileHandle, atime: Date, mtime: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "futimes")
+  @js.native
   def futimes(handle: FileHandle, atime: Date, mtime: Double): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "futimes")
+  @js.native
   def futimes(handle: FileHandle, atime: Date, mtime: Date): js.Promise[Unit] = js.native
   
   /**
@@ -157,12 +224,16 @@ object promisesMod extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
+  @JSImport("fs/promises", "lchmod")
+  @js.native
   def lchmod(path: PathLike, mode: Mode): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
+  @JSImport("fs/promises", "lchown")
+  @js.native
   def lchown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = js.native
   
   /**
@@ -170,12 +241,16 @@ object promisesMod extends js.Object {
     * @param existingPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
+  @JSImport("fs/promises", "link")
+  @js.native
   def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
+  @JSImport("fs/promises", "lstat")
+  @js.native
   def lstat(path: PathLike): js.Promise[Stats] = js.native
   
   /**
@@ -186,14 +261,32 @@ object promisesMod extends js.Object {
     * @param atime The last access time. If a string is provided, it will be coerced to number.
     * @param mtime The last modified time. If a string is provided, it will be coerced to number.
     */
+  @JSImport("fs/promises", "lutimes")
+  @js.native
   def lutimes(path: PathLike, atime: java.lang.String, mtime: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "lutimes")
+  @js.native
   def lutimes(path: PathLike, atime: java.lang.String, mtime: Double): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "lutimes")
+  @js.native
   def lutimes(path: PathLike, atime: java.lang.String, mtime: Date): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "lutimes")
+  @js.native
   def lutimes(path: PathLike, atime: Double, mtime: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "lutimes")
+  @js.native
   def lutimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "lutimes")
+  @js.native
   def lutimes(path: PathLike, atime: Double, mtime: Date): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "lutimes")
+  @js.native
   def lutimes(path: PathLike, atime: Date, mtime: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "lutimes")
+  @js.native
   def lutimes(path: PathLike, atime: Date, mtime: Double): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "lutimes")
+  @js.native
   def lutimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = js.native
   
   /**
@@ -202,6 +295,8 @@ object promisesMod extends js.Object {
     * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
     * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
     */
+  @JSImport("fs/promises", "mkdir")
+  @js.native
   def mkdir(path: PathLike): js.Promise[Unit] = js.native
   /**
     * Asynchronous mkdir(2) - create a directory.
@@ -209,9 +304,17 @@ object promisesMod extends js.Object {
     * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
     * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
     */
+  @JSImport("fs/promises", "mkdir")
+  @js.native
   def mkdir(path: PathLike, options: MakeDirectoryOptionsrecur): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "mkdir")
+  @js.native
   def mkdir(path: PathLike, options: MakeDirectoryOptionsrecurMode): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "mkdir")
+  @js.native
   def mkdir(path: PathLike, options: MakeDirectoryOptions): js.Promise[js.UndefOr[java.lang.String]] = js.native
+  @JSImport("fs/promises", "mkdir")
+  @js.native
   def mkdir(path: PathLike, options: Mode): js.Promise[Unit] = js.native
   
   /**
@@ -219,14 +322,22 @@ object promisesMod extends js.Object {
     * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
+  @JSImport("fs/promises", "mkdtemp")
+  @js.native
   def mkdtemp(prefix: java.lang.String): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "mkdtemp")
+  @js.native
   def mkdtemp(prefix: java.lang.String, options: BufferEncoding): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "mkdtemp")
+  @js.native
   def mkdtemp(prefix: java.lang.String, options: BaseEncodingOptions): js.Promise[java.lang.String] = js.native
   /**
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
+  @JSImport("fs/promises", "mkdtemp")
+  @js.native
   def mkdtemp(prefix: java.lang.String, options: BufferEncodingOption): js.Promise[Buffer] = js.native
   
   /**
@@ -235,12 +346,24 @@ object promisesMod extends js.Object {
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer. If not
     * supplied, defaults to `0o666`.
     */
+  @JSImport("fs/promises", "open")
+  @js.native
   def open(path: PathLike, flags: java.lang.String): js.Promise[FileHandle] = js.native
+  @JSImport("fs/promises", "open")
+  @js.native
   def open(path: PathLike, flags: java.lang.String, mode: Mode): js.Promise[FileHandle] = js.native
+  @JSImport("fs/promises", "open")
+  @js.native
   def open(path: PathLike, flags: Double): js.Promise[FileHandle] = js.native
+  @JSImport("fs/promises", "open")
+  @js.native
   def open(path: PathLike, flags: Double, mode: Mode): js.Promise[FileHandle] = js.native
   
+  @JSImport("fs/promises", "opendir")
+  @js.native
   def opendir(path: java.lang.String): js.Promise[Dir] = js.native
+  @JSImport("fs/promises", "opendir")
+  @js.native
   def opendir(path: java.lang.String, options: OpenDirOptions): js.Promise[Dir] = js.native
   
   /**
@@ -252,7 +375,11 @@ object promisesMod extends js.Object {
     * @param position The offset from the beginning of the file from which data should be read. If
     * `null`, data will be read from the current position.
     */
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -260,7 +387,11 @@ object promisesMod extends js.Object {
     length: js.UndefOr[scala.Nothing],
     position: Double
   ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -268,6 +399,8 @@ object promisesMod extends js.Object {
     length: Double,
     position: Double
   ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -275,7 +408,11 @@ object promisesMod extends js.Object {
     length: Null,
     position: Double
   ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -283,9 +420,17 @@ object promisesMod extends js.Object {
     length: js.UndefOr[scala.Nothing],
     position: Double
   ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -293,8 +438,14 @@ object promisesMod extends js.Object {
     length: js.UndefOr[scala.Nothing],
     position: Double
   ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  @JSImport("fs/promises", "read")
+  @js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
   
   /**
@@ -304,8 +455,14 @@ object promisesMod extends js.Object {
     * @param options An object that may contain an optional flag.
     * If a flag is not provided, it defaults to `'r'`.
     */
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: PathLike): js.Promise[Buffer] = js.native
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: PathLike, options: BufferEncoding): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: PathLike, options: BaseEncodingOptionsflagOp): js.Promise[java.lang.String | Buffer] = js.native
   /**
     * Asynchronously reads the entire contents of a file.
@@ -314,12 +471,26 @@ object promisesMod extends js.Object {
     * @param options An object that may contain an optional flag.
     * If a flag is not provided, it defaults to `'r'`.
     */
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: PathLike, options: EncodingFlag): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: PathLike, options: Flag): js.Promise[Buffer] = js.native
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: FileHandle): js.Promise[Buffer] = js.native
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: FileHandle, options: BufferEncoding): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: FileHandle, options: BaseEncodingOptionsflagOp): js.Promise[java.lang.String | Buffer] = js.native
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: FileHandle, options: EncodingFlag): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "readFile")
+  @js.native
   def readFile(path: FileHandle, options: Flag): js.Promise[Buffer] = js.native
   
   /**
@@ -327,22 +498,33 @@ object promisesMod extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
+  @JSImport("fs/promises", "readdir")
+  @js.native
   def readdir(path: PathLike): js.Promise[js.Array[java.lang.String]] = js.native
+  @JSImport("fs/promises", "readdir")
+  @js.native
   def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
+  @JSImport("fs/promises", "readdir")
+  @js.native
   def readdir(path: PathLike, options: BaseEncodingOptionswithFi): js.Promise[js.Array[java.lang.String]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
+  @JSImport("fs/promises", "readdir")
+  @js.native
   def readdir(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Promise[js.Array[Dirent]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
+  @JSImport("fs/promises", "readdir")
+  @js.native
   def readdir(path: PathLike, options: Encoding): js.Promise[js.Array[Buffer]] = js.native
-  @JSName("readdir")
+  @JSImport("fs/promises", "readdir")
+  @js.native
   def readdir_buffer(path: PathLike, options: buffer_): js.Promise[js.Array[Buffer]] = js.native
   
   /**
@@ -350,15 +532,25 @@ object promisesMod extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
+  @JSImport("fs/promises", "readlink")
+  @js.native
   def readlink(path: PathLike): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "readlink")
+  @js.native
   def readlink(path: PathLike, options: java.lang.String): js.Promise[java.lang.String | Buffer] = js.native
+  @JSImport("fs/promises", "readlink")
+  @js.native
   def readlink(path: PathLike, options: BufferEncoding): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "readlink")
+  @js.native
   def readlink(path: PathLike, options: BaseEncodingOptions): js.Promise[java.lang.String] = js.native
   /**
     * Asynchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
+  @JSImport("fs/promises", "readlink")
+  @js.native
   def readlink(path: PathLike, options: BufferEncodingOption): js.Promise[Buffer] = js.native
   
   /**
@@ -366,14 +558,22 @@ object promisesMod extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
+  @JSImport("fs/promises", "realpath")
+  @js.native
   def realpath(path: PathLike): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "realpath")
+  @js.native
   def realpath(path: PathLike, options: BufferEncoding): js.Promise[java.lang.String] = js.native
+  @JSImport("fs/promises", "realpath")
+  @js.native
   def realpath(path: PathLike, options: BaseEncodingOptions): js.Promise[java.lang.String] = js.native
   /**
     * Asynchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
+  @JSImport("fs/promises", "realpath")
+  @js.native
   def realpath(path: PathLike, options: BufferEncodingOption): js.Promise[Buffer] = js.native
   
   /**
@@ -383,25 +583,37 @@ object promisesMod extends js.Object {
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
+  @JSImport("fs/promises", "rename")
+  @js.native
   def rename(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
   
   /**
     * Asynchronously removes files and directories (modeled on the standard POSIX `rm` utility).
     */
+  @JSImport("fs/promises", "rm")
+  @js.native
   def rm(path: PathLike): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "rm")
+  @js.native
   def rm(path: PathLike, options: RmOptions): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous rmdir(2) - delete a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
+  @JSImport("fs/promises", "rmdir")
+  @js.native
   def rmdir(path: PathLike): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "rmdir")
+  @js.native
   def rmdir(path: PathLike, options: RmDirOptions): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous stat(2) - Get file status.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
+  @JSImport("fs/promises", "stat")
+  @js.native
   def stat(path: PathLike): js.Promise[Stats] = js.native
   
   /**
@@ -411,7 +623,11 @@ object promisesMod extends js.Object {
     * @param type May be set to `'dir'`, `'file'`, or `'junction'` (default is `'file'`) and is only available on Windows (ignored on other platforms).
     * When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.
     */
+  @JSImport("fs/promises", "symlink")
+  @js.native
   def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "symlink")
+  @js.native
   def symlink(target: PathLike, path: PathLike, `type`: java.lang.String): js.Promise[Unit] = js.native
   
   /**
@@ -419,13 +635,19 @@ object promisesMod extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param len If not specified, defaults to `0`.
     */
+  @JSImport("fs/promises", "truncate")
+  @js.native
   def truncate(path: PathLike): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "truncate")
+  @js.native
   def truncate(path: PathLike, len: Double): js.Promise[Unit] = js.native
   
   /**
     * Asynchronous unlink(2) - delete a name and possibly the file it refers to.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
+  @JSImport("fs/promises", "unlink")
+  @js.native
   def unlink(path: PathLike): js.Promise[Unit] = js.native
   
   /**
@@ -434,14 +656,32 @@ object promisesMod extends js.Object {
     * @param atime The last access time. If a string is provided, it will be coerced to number.
     * @param mtime The last modified time. If a string is provided, it will be coerced to number.
     */
+  @JSImport("fs/promises", "utimes")
+  @js.native
   def utimes(path: PathLike, atime: java.lang.String, mtime: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "utimes")
+  @js.native
   def utimes(path: PathLike, atime: java.lang.String, mtime: Double): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "utimes")
+  @js.native
   def utimes(path: PathLike, atime: java.lang.String, mtime: Date): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "utimes")
+  @js.native
   def utimes(path: PathLike, atime: Double, mtime: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "utimes")
+  @js.native
   def utimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "utimes")
+  @js.native
   def utimes(path: PathLike, atime: Double, mtime: Date): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "utimes")
+  @js.native
   def utimes(path: PathLike, atime: Date, mtime: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "utimes")
+  @js.native
   def utimes(path: PathLike, atime: Date, mtime: Double): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "utimes")
+  @js.native
   def utimes(path: PathLike, atime: Date, mtime: Date): js.Promise[Unit] = js.native
   
   /**
@@ -453,15 +693,25 @@ object promisesMod extends js.Object {
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     * @param encoding The expected string encoding.
     */
+  @JSImport("fs/promises", "write")
+  @js.native
   def write(handle: FileHandle, string: java.lang.String): js.Promise[BufferBytesWritten] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write(
     handle: FileHandle,
     string: java.lang.String,
     position: js.UndefOr[scala.Nothing],
     encoding: BufferEncoding
   ): js.Promise[BufferBytesWritten] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write(handle: FileHandle, string: java.lang.String, position: Double): js.Promise[BufferBytesWritten] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write(handle: FileHandle, string: java.lang.String, position: Double, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write(handle: FileHandle, string: java.lang.String, position: Null, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
   /**
     * Asynchronously writes `buffer` to the file referenced by the supplied `FileHandle`.
@@ -473,7 +723,11 @@ object promisesMod extends js.Object {
     * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -481,7 +735,11 @@ object promisesMod extends js.Object {
     length: js.UndefOr[scala.Nothing],
     position: Double
   ): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -489,6 +747,8 @@ object promisesMod extends js.Object {
     length: Double,
     position: Double
   ): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -496,7 +756,11 @@ object promisesMod extends js.Object {
     length: Null,
     position: Double
   ): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -504,9 +768,17 @@ object promisesMod extends js.Object {
     length: js.UndefOr[scala.Nothing],
     position: Double
   ): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
@@ -514,8 +786,14 @@ object promisesMod extends js.Object {
     length: js.UndefOr[scala.Nothing],
     position: Double
   ): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  @JSImport("fs/promises", "write")
+  @js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
   
   /**
@@ -531,17 +809,41 @@ object promisesMod extends js.Object {
     * If `mode` is a string, it is parsed as an octal integer.
     * If `flag` is not supplied, the default of `'w'` is used.
     */
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: PathLike, data: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: PathLike, data: java.lang.String, options: BufferEncoding): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: PathLike, data: java.lang.String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: PathLike, data: Uint8Array): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: PathLike, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: PathLike, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: FileHandle, data: java.lang.String): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: FileHandle, data: java.lang.String, options: BufferEncoding): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: FileHandle, data: java.lang.String, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: FileHandle, data: Uint8Array): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: FileHandle, data: Uint8Array, options: BufferEncoding): js.Promise[Unit] = js.native
+  @JSImport("fs/promises", "writeFile")
+  @js.native
   def writeFile(path: FileHandle, data: Uint8Array, options: BaseEncodingOptionsmodeMo): js.Promise[Unit] = js.native
   
   @js.native

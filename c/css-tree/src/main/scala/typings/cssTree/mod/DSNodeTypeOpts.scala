@@ -1,12 +1,13 @@
 package typings.cssTree.mod
 
 import typings.cssTree.cssTreeStrings.Range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DSNodeTypeOpts extends js.Object {
+trait DSNodeTypeOpts extends StObject {
   
   var max: Double | Null = js.native
   
@@ -24,33 +25,21 @@ object DSNodeTypeOpts {
   }
   
   @scala.inline
-  implicit class DSNodeTypeOptsOps[Self <: DSNodeTypeOpts] (val x: Self) extends AnyVal {
+  implicit class DSNodeTypeOptsMutableBuilder[Self <: DSNodeTypeOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxNull: Self = StObject.set(x, "max", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Range): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setMinNull: Self = StObject.set(x, "min", null)
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxNull: Self = this.set("max", null)
-    
-    @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinNull: Self = this.set("min", null)
+    def setType(value: Range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

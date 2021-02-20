@@ -1,11 +1,12 @@
 package typings.tern.ternMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefinitionQueryResult extends js.Object {
+trait DefinitionQueryResult extends StObject {
   
   /** A slice of the code in front of the definition Can be used to find a definition’s location in a modified file. */
   var context: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object DefinitionQueryResult {
   }
   
   @scala.inline
-  implicit class DefinitionQueryResultOps[Self <: DefinitionQueryResult] (val x: Self) extends AnyVal {
+  implicit class DefinitionQueryResultMutableBuilder[Self <: DefinitionQueryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextOffset(value: Double): Self = StObject.set(x, "contextOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextOffsetUndefined: Self = StObject.set(x, "contextOffset", js.undefined)
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextOffset(value: Double): Self = this.set("contextOffset", value.asInstanceOf[js.Any])
+    def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
     
     @scala.inline
-    def deleteContextOffset: Self = this.set("contextOffset", js.undefined)
+    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc(value: String): Self = this.set("doc", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteDoc: Self = this.set("doc", js.undefined)
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double | Position): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Double | Position): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

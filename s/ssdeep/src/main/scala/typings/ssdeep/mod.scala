@@ -1,17 +1,21 @@
 package typings.ssdeep
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ssdeep", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("ssdeep", "compare")
+  @js.native
   def compare(hash1: String, hash2: String): Double = js.native
   
+  @JSImport("ssdeep", "hash")
+  @js.native
   def hash(content: String): String = js.native
   
-  @JSName("hash_from_file")
+  @JSImport("ssdeep", "hash_from_file")
+  @js.native
   def hashFromFile(path: String): String = js.native
 }

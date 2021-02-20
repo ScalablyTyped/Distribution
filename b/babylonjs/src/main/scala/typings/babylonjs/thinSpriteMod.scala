@@ -3,19 +3,19 @@ package typings.babylonjs
 import typings.babylonjs.mathLikeMod.IColor4Like
 import typings.babylonjs.mathLikeMod.IVector3Like
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Sprites/thinSprite", JSImport.Namespace)
-@js.native
-object thinSpriteMod extends js.Object {
+object thinSpriteMod {
   
+  @JSImport("babylonjs/Sprites/thinSprite", "ThinSprite")
   @js.native
   /**
     * Creates a new Thin Sprite
     */
-  class ThinSprite () extends js.Object {
+  class ThinSprite () extends StObject {
     
     /** @hidden */
     def _animate(deltaTime: Double): Unit = js.native

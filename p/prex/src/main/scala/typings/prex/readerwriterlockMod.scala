@@ -3,25 +3,16 @@ package typings.prex
 import typings.esfxCancelable.distMod.Cancelable
 import typings.esfxDisposable.distMod.Disposable
 import typings.prex.cancellationMod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prex/out/lib/readerwriterlock", JSImport.Namespace)
-@js.native
-object readerwriterlockMod extends js.Object {
+object readerwriterlockMod {
   
+  @JSImport("prex/out/lib/readerwriterlock", "ReaderWriterLock")
   @js.native
-  trait LockHandle extends Disposable {
-    
-    /**
-      * Releases the lock.
-      */
-    def release(): Unit = js.native
-  }
-  
-  @js.native
-  class ReaderWriterLock () extends js.Object {
+  class ReaderWriterLock () extends StObject {
     
     var _canTakeReadLock: js.Any = js.native
     
@@ -100,6 +91,15 @@ object readerwriterlockMod extends js.Object {
     def write(): js.Promise[LockHandle] = js.native
     def write(token: Cancelable): js.Promise[LockHandle] = js.native
     def write(token: CancellationToken): js.Promise[LockHandle] = js.native
+  }
+  
+  @js.native
+  trait LockHandle extends Disposable {
+    
+    /**
+      * Releases the lock.
+      */
+    def release(): Unit = js.native
   }
   
   @js.native

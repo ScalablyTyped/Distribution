@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ecs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskDefinitionPlacementConstraint extends js.Object {
+trait TaskDefinitionPlacementConstraint extends StObject {
   
   /**
     * Cluster Query Language expression to apply to the constraint.
@@ -30,27 +31,15 @@ object TaskDefinitionPlacementConstraint {
   }
   
   @scala.inline
-  implicit class TaskDefinitionPlacementConstraintOps[Self <: TaskDefinitionPlacementConstraint] (val x: Self) extends AnyVal {
+  implicit class TaskDefinitionPlacementConstraintMutableBuilder[Self <: TaskDefinitionPlacementConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

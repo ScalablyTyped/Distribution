@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,27 +61,15 @@ object ChartTwoAxisYSupplier {
   }
   
   @scala.inline
-  implicit class ChartTwoAxisYSupplierOps[Self <: ChartTwoAxisYSupplier] (val x: Self) extends AnyVal {
+  implicit class ChartTwoAxisYSupplierMutableBuilder[Self <: ChartTwoAxisYSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasSecondaryYAxis(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasSecondaryYAxisDescription(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxisDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasSecondaryYAxis(value: Boolean): Self = this.set("HasSecondaryYAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasSecondaryYAxisDescription(value: Boolean): Self = this.set("HasSecondaryYAxisDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasSecondaryYAxisTitle(value: Boolean): Self = this.set("HasSecondaryYAxisTitle", value.asInstanceOf[js.Any])
+    def setHasSecondaryYAxisTitle(value: Boolean): Self = StObject.set(x, "HasSecondaryYAxisTitle", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.awsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-sdk", "Response")
 @js.native
 class Response[D, E] ()
-  extends typings.awsSdk.responseMod.Response[D, E]
+  extends typings.awsSdk.coreMod.Response[D, E]

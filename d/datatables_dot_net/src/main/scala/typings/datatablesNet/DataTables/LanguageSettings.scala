@@ -1,5 +1,6 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region "language-settings"
 // these are all optional
 @js.native
-trait LanguageSettings extends js.Object {
+trait LanguageSettings extends StObject {
   
   var aria: js.UndefOr[LanguageAriaSettings] = js.native
   
@@ -51,114 +52,102 @@ object LanguageSettings {
   }
   
   @scala.inline
-  implicit class LanguageSettingsOps[Self <: LanguageSettings] (val x: Self) extends AnyVal {
+  implicit class LanguageSettingsMutableBuilder[Self <: LanguageSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAria(value: LanguageAriaSettings): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAria(value: LanguageAriaSettings): Self = this.set("aria", value.asInstanceOf[js.Any])
+    def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
     
     @scala.inline
-    def deleteAria: Self = this.set("aria", js.undefined)
+    def setEmptyTable(value: String): Self = StObject.set(x, "emptyTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimal(value: String): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    def setEmptyTableUndefined: Self = StObject.set(x, "emptyTable", js.undefined)
     
     @scala.inline
-    def deleteDecimal: Self = this.set("decimal", js.undefined)
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyTable(value: String): Self = this.set("emptyTable", value.asInstanceOf[js.Any])
+    def setInfoEmpty(value: String): Self = StObject.set(x, "infoEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmptyTable: Self = this.set("emptyTable", js.undefined)
+    def setInfoEmptyUndefined: Self = StObject.set(x, "infoEmpty", js.undefined)
     
     @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setInfoFiltered(value: String): Self = StObject.set(x, "infoFiltered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def setInfoFilteredUndefined: Self = StObject.set(x, "infoFiltered", js.undefined)
     
     @scala.inline
-    def setInfoEmpty(value: String): Self = this.set("infoEmpty", value.asInstanceOf[js.Any])
+    def setInfoPostFix(value: String): Self = StObject.set(x, "infoPostFix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInfoEmpty: Self = this.set("infoEmpty", js.undefined)
+    def setInfoPostFixUndefined: Self = StObject.set(x, "infoPostFix", js.undefined)
     
     @scala.inline
-    def setInfoFiltered(value: String): Self = this.set("infoFiltered", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteInfoFiltered: Self = this.set("infoFiltered", js.undefined)
+    def setLengthMenu(value: String): Self = StObject.set(x, "lengthMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPostFix(value: String): Self = this.set("infoPostFix", value.asInstanceOf[js.Any])
+    def setLengthMenuUndefined: Self = StObject.set(x, "lengthMenu", js.undefined)
     
     @scala.inline
-    def deleteInfoPostFix: Self = this.set("infoPostFix", js.undefined)
+    def setLoadingRecords(value: String): Self = StObject.set(x, "loadingRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthMenu(value: String): Self = this.set("lengthMenu", value.asInstanceOf[js.Any])
+    def setLoadingRecordsUndefined: Self = StObject.set(x, "loadingRecords", js.undefined)
     
     @scala.inline
-    def deleteLengthMenu: Self = this.set("lengthMenu", js.undefined)
+    def setPaginate(value: LanguagePaginateSettings): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingRecords(value: String): Self = this.set("loadingRecords", value.asInstanceOf[js.Any])
+    def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
     
     @scala.inline
-    def deleteLoadingRecords: Self = this.set("loadingRecords", js.undefined)
+    def setProcessing(value: String): Self = StObject.set(x, "processing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginate(value: LanguagePaginateSettings): Self = this.set("paginate", value.asInstanceOf[js.Any])
+    def setProcessingUndefined: Self = StObject.set(x, "processing", js.undefined)
     
     @scala.inline
-    def deletePaginate: Self = this.set("paginate", js.undefined)
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessing(value: String): Self = this.set("processing", value.asInstanceOf[js.Any])
+    def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProcessing: Self = this.set("processing", js.undefined)
+    def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
     
     @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
+    def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchPlaceholder(value: String): Self = this.set("searchPlaceholder", value.asInstanceOf[js.Any])
+    def setThousandsUndefined: Self = StObject.set(x, "thousands", js.undefined)
     
     @scala.inline
-    def deleteSearchPlaceholder: Self = this.set("searchPlaceholder", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThousands(value: String): Self = this.set("thousands", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteThousands: Self = this.set("thousands", js.undefined)
+    def setZeroRecords(value: String): Self = StObject.set(x, "zeroRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setZeroRecords(value: String): Self = this.set("zeroRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZeroRecords: Self = this.set("zeroRecords", js.undefined)
+    def setZeroRecordsUndefined: Self = StObject.set(x, "zeroRecords", js.undefined)
   }
 }

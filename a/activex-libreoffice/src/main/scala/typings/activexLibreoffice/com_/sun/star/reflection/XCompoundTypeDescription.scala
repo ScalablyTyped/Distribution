@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,36 +81,24 @@ object XCompoundTypeDescription {
   }
   
   @scala.inline
-  implicit class XCompoundTypeDescriptionOps[Self <: XCompoundTypeDescription] (val x: Self) extends AnyVal {
+  implicit class XCompoundTypeDescriptionMutableBuilder[Self <: XCompoundTypeDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseType(value: XTypeDescription): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBaseType(value: () => XTypeDescription): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMemberNames(value: () => SafeArray[String]): Self = StObject.set(x, "getMemberNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBaseType(value: XTypeDescription): Self = this.set("BaseType", value.asInstanceOf[js.Any])
+    def setGetMemberTypes(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getMemberTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMemberNames(value: SafeArray[String]): Self = this.set("MemberNames", value.asInstanceOf[js.Any])
+    def setMemberNames(value: SafeArray[String]): Self = StObject.set(x, "MemberNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberTypes(value: SafeArray[XTypeDescription]): Self = this.set("MemberTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetBaseType(value: () => XTypeDescription): Self = this.set("getBaseType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMemberNames(value: () => SafeArray[String]): Self = this.set("getMemberNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMemberTypes(value: () => SafeArray[XTypeDescription]): Self = this.set("getMemberTypes", js.Any.fromFunction0(value))
+    def setMemberTypes(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "MemberTypes", value.asInstanceOf[js.Any])
   }
 }

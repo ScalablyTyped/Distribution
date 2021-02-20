@@ -7,6 +7,7 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.ISystem
 import typings.minecraftScriptingTypesShared.ITickingArea
 import typings.minecraftScriptingTypesShared.VectorXYZ
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

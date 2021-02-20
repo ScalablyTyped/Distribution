@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Moves one or more rows or columns.
   */
 @js.native
-trait SchemaMoveDimensionRequest extends js.Object {
+trait SchemaMoveDimensionRequest extends StObject {
   
   /**
     * The zero-based start index of where to move the source data to, based on
@@ -38,30 +39,18 @@ object SchemaMoveDimensionRequest {
   }
   
   @scala.inline
-  implicit class SchemaMoveDimensionRequestOps[Self <: SchemaMoveDimensionRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaMoveDimensionRequestMutableBuilder[Self <: SchemaMoveDimensionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationIndex(value: Double): Self = StObject.set(x, "destinationIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationIndexUndefined: Self = StObject.set(x, "destinationIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: SchemaDimensionRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationIndex(value: Double): Self = this.set("destinationIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationIndex: Self = this.set("destinationIndex", js.undefined)
-    
-    @scala.inline
-    def setSource(value: SchemaDimensionRange): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

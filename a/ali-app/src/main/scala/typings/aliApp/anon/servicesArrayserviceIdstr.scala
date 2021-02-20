@@ -1,13 +1,14 @@
 package typings.aliApp.anon
 
 import typings.aliApp.aliAppStrings.ok
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  services :std.Array<{  serviceId :string,   isPrimary :boolean}>} & ali-app.my.ErrMsgResponse */
 @js.native
-trait servicesArrayserviceIdstr extends js.Object {
+trait servicesArrayserviceIdstr extends StObject {
   
   /** 成功：ok，错误：详细信息 */
   var errMsg: ok | String = js.native
@@ -23,27 +24,15 @@ object servicesArrayserviceIdstr {
   }
   
   @scala.inline
-  implicit class servicesArrayserviceIdstrOps[Self <: servicesArrayserviceIdstr] (val x: Self) extends AnyVal {
+  implicit class servicesArrayserviceIdstrMutableBuilder[Self <: servicesArrayserviceIdstr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServices(value: js.Array[IsPrimary]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrMsg(value: ok | String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServicesVarargs(value: IsPrimary*): Self = this.set("services", js.Array(value :_*))
-    
-    @scala.inline
-    def setServices(value: js.Array[IsPrimary]): Self = this.set("services", value.asInstanceOf[js.Any])
+    def setServicesVarargs(value: IsPrimary*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

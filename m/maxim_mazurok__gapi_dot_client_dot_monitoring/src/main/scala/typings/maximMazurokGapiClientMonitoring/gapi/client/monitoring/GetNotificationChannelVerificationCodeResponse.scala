@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNotificationChannelVerificationCodeResponse extends js.Object {
+trait GetNotificationChannelVerificationCodeResponse extends StObject {
   
   /**
     * The verification code, which may be used to verify other channels that have an equivalent identity (i.e. other channels of the same type with the same fingerprint such as other
@@ -28,30 +29,18 @@ object GetNotificationChannelVerificationCodeResponse {
   }
   
   @scala.inline
-  implicit class GetNotificationChannelVerificationCodeResponseOps[Self <: GetNotificationChannelVerificationCodeResponse] (val x: Self) extends AnyVal {
+  implicit class GetNotificationChannelVerificationCodeResponseMutableBuilder[Self <: GetNotificationChannelVerificationCodeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
-    
-    @scala.inline
-    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
+    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
   }
 }

@@ -15,12 +15,13 @@ import typings.qlik.qlikStrings.OTHER_SORT_DEFAULT
 import typings.qlik.qlikStrings.OTHER_SORT_DESCENDING
 import typings.qlik.qlikStrings.TOTAL_EXPR
 import typings.qlik.qlikStrings.TOTAL_OFF
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OtherTotalSpecProp extends js.Object {
+trait OtherTotalSpecProp extends StObject {
   
   var qApplyEvenWhenPossiblyWrongResult: Boolean = js.native
   
@@ -68,56 +69,44 @@ object OtherTotalSpecProp {
   }
   
   @scala.inline
-  implicit class OtherTotalSpecPropOps[Self <: OtherTotalSpecProp] (val x: Self) extends AnyVal {
+  implicit class OtherTotalSpecPropMutableBuilder[Self <: OtherTotalSpecProp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQApplyEvenWhenPossiblyWrongResult(value: Boolean): Self = StObject.set(x, "qApplyEvenWhenPossiblyWrongResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQForceBadValueKeeping(value: Boolean): Self = StObject.set(x, "qForceBadValueKeeping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQGlobalOtherGrouping(value: Boolean): Self = StObject.set(x, "qGlobalOtherGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQApplyEvenWhenPossiblyWrongResult(value: Boolean): Self = this.set("qApplyEvenWhenPossiblyWrongResult", value.asInstanceOf[js.Any])
+    def setQOtherCollapseInnerDimensions(value: Boolean): Self = StObject.set(x, "qOtherCollapseInnerDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQForceBadValueKeeping(value: Boolean): Self = this.set("qForceBadValueKeeping", value.asInstanceOf[js.Any])
+    def setQOtherCounted(value: ValueExpr): Self = StObject.set(x, "qOtherCounted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQGlobalOtherGrouping(value: Boolean): Self = this.set("qGlobalOtherGrouping", value.asInstanceOf[js.Any])
+    def setQOtherLimit(value: ValueExpr): Self = StObject.set(x, "qOtherLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQOtherCollapseInnerDimensions(value: Boolean): Self = this.set("qOtherCollapseInnerDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQOtherCounted(value: ValueExpr): Self = this.set("qOtherCounted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQOtherLimit(value: ValueExpr): Self = this.set("qOtherLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQOtherLimitMode(value: OTHER_GE_LIMIT | OTHER_LE_LIMIT | OTHER_GT_LIMIT | OTHER_LT_LIMIT): Self = this.set("qOtherLimitMode", value.asInstanceOf[js.Any])
+    def setQOtherLimitMode(value: OTHER_GE_LIMIT | OTHER_LE_LIMIT | OTHER_GT_LIMIT | OTHER_LT_LIMIT): Self = StObject.set(x, "qOtherLimitMode", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQOtherMode(
       value: OTHER_OFF | OTHER_COUNTED | OTHER_ABS_LIMITED | OTHER_ABS_ACC_TARGET | OTHER_REL_LIMITED | OTHER_REL_ACC_TARGET
-    ): Self = this.set("qOtherMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "qOtherMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQOtherSortMode(value: OTHER_SORT_DEFAULT | OTHER_SORT_DESCENDING | OTHER_SORT_ASCENDING): Self = this.set("qOtherSortMode", value.asInstanceOf[js.Any])
+    def setQOtherSortMode(value: OTHER_SORT_DEFAULT | OTHER_SORT_DESCENDING | OTHER_SORT_ASCENDING): Self = StObject.set(x, "qOtherSortMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQReferencedExpression(value: String): Self = this.set("qReferencedExpression", value.asInstanceOf[js.Any])
+    def setQReferencedExpression(value: String): Self = StObject.set(x, "qReferencedExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSupressOther(value: Boolean): Self = this.set("qSupressOther", value.asInstanceOf[js.Any])
+    def setQSupressOther(value: Boolean): Self = StObject.set(x, "qSupressOther", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQTotalMode(value: TOTAL_OFF | TOTAL_EXPR): Self = this.set("qTotalMode", value.asInstanceOf[js.Any])
+    def setQTotalMode(value: TOTAL_OFF | TOTAL_EXPR): Self = StObject.set(x, "qTotalMode", value.asInstanceOf[js.Any])
   }
 }

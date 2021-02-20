@@ -4,13 +4,14 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dockerode", "Container")
 @js.native
-class Container protected () extends js.Object {
+class Container protected () extends StObject {
   def this(modem: js.Any, id: String) = this()
   
   def attach(options: js.Object): js.Promise[ReadWriteStream] = js.native

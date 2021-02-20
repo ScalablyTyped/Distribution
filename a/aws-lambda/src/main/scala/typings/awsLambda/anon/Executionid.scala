@@ -1,12 +1,13 @@
 package typings.awsLambda.anon
 
 import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Executionid extends js.Object {
+trait Executionid extends StObject {
   
   var action: String = js.native
   
@@ -41,39 +42,27 @@ object Executionid {
   }
   
   @scala.inline
-  implicit class ExecutionidOps[Self <: Executionid] (val x: Self) extends AnyVal {
+  implicit class ExecutionidMutableBuilder[Self <: Executionid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setExecution-id`(value: String): Self = StObject.set(x, "execution-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipeline(value: String): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setExecution-id`(value: String): Self = this.set("execution-id", value.asInstanceOf[js.Any])
+    def setState(value: CodePipelineActionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipeline(value: String): Self = this.set("pipeline", value.asInstanceOf[js.Any])
+    def setType(value: Category): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStage(value: String): Self = this.set("stage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: CodePipelineActionState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Category): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

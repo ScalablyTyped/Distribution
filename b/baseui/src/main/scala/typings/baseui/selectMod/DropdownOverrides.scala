@@ -1,11 +1,12 @@
 package typings.baseui.selectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropdownOverrides extends js.Object {
+trait DropdownOverrides extends StObject {
   
   var Dropdown: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
@@ -40,66 +41,54 @@ object DropdownOverrides {
   }
   
   @scala.inline
-  implicit class DropdownOverridesOps[Self <: DropdownOverrides] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class DropdownOverridesMutableBuilder[Self <: DropdownOverrides] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDropdown(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("Dropdown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDropdown: Self = this.set("Dropdown", js.undefined)
+    ): Self = StObject.set(x, "Dropdown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDropdownContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("DropdownContainer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "DropdownContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropdownContainer: Self = this.set("DropdownContainer", js.undefined)
+    def setDropdownContainerUndefined: Self = StObject.set(x, "DropdownContainer", js.undefined)
     
     @scala.inline
     def setDropdownListItem(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("DropdownListItem", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "DropdownListItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropdownListItem: Self = this.set("DropdownListItem", js.undefined)
+    def setDropdownListItemUndefined: Self = StObject.set(x, "DropdownListItem", js.undefined)
     
     @scala.inline
     def setDropdownOption(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("DropdownOption", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "DropdownOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropdownOption: Self = this.set("DropdownOption", js.undefined)
+    def setDropdownOptionUndefined: Self = StObject.set(x, "DropdownOption", js.undefined)
+    
+    @scala.inline
+    def setDropdownUndefined: Self = StObject.set(x, "Dropdown", js.undefined)
     
     @scala.inline
     def setOptionContent(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("OptionContent", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "OptionContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptionContent: Self = this.set("OptionContent", js.undefined)
+    def setOptionContentUndefined: Self = StObject.set(x, "OptionContent", js.undefined)
     
     @scala.inline
     def setStatefulMenu(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("StatefulMenu", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "StatefulMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatefulMenu: Self = this.set("StatefulMenu", js.undefined)
+    def setStatefulMenuUndefined: Self = StObject.set(x, "StatefulMenu", js.undefined)
   }
 }

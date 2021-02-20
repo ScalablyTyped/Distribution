@@ -1,11 +1,12 @@
 package typings.fridaGum.Java
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Field[Value, Holder /* <: Members[Holder] */] extends js.Object {
+trait Field[Value, Holder /* <: Members[Holder] */] extends StObject {
   
   /**
     * Type of value.
@@ -36,30 +37,18 @@ object Field {
   }
   
   @scala.inline
-  implicit class FieldOps[Self <: Field[_, _], Value, Holder /* <: Members[Holder] */] (val x: Self with (Field[Value, Holder])) extends AnyVal {
+  implicit class FieldMutableBuilder[Self <: Field[_, _], Value, Holder /* <: Members[Holder] */] (val x: Self with (Field[Value, Holder])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldReturnType(value: Type): Self = StObject.set(x, "fieldReturnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldType(value: FieldType): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHolder(value: Wrapper[Holder]): Self = StObject.set(x, "holder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldReturnType(value: Type): Self = this.set("fieldReturnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldType(value: FieldType): Self = this.set("fieldType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHolder(value: Wrapper[Holder]): Self = this.set("holder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Value): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

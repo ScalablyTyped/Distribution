@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,24 +25,12 @@ object IFindLoopsOptions {
   }
   
   @scala.inline
-  implicit class IFindLoopsOptionsOps[Self <: IFindLoopsOptions] (val x: Self) extends AnyVal {
+  implicit class IFindLoopsOptionsMutableBuilder[Self <: IFindLoopsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemoveFromOriginal(value: Boolean): Self = StObject.set(x, "removeFromOriginal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRemoveFromOriginal(value: Boolean): Self = this.set("removeFromOriginal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveFromOriginal: Self = this.set("removeFromOriginal", js.undefined)
+    def setRemoveFromOriginalUndefined: Self = StObject.set(x, "removeFromOriginal", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftSdkSoap.microsoftSdkSoapStrings.ManyToManyRelationship
   - typings.microsoftSdkSoap.microsoftSdkSoapStrings.OneToManyRelationship
 */
-trait RelationshipType extends js.Object
+trait RelationshipType extends StObject
 object RelationshipType {
   
   @scala.inline

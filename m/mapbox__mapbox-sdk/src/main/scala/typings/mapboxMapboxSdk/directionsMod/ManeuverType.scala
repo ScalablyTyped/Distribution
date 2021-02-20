@@ -1,5 +1,6 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`exit roundabout`
   - typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`exit rotary`
 */
-trait ManeuverType extends js.Object
+trait ManeuverType extends StObject
 object ManeuverType {
   
   @scala.inline

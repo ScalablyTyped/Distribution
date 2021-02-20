@@ -1,5 +1,6 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A batch entry encoding a single non-batch accounts request.
   */
 @js.native
-trait SchemaAccountsCustomBatchRequestEntry extends js.Object {
+trait SchemaAccountsCustomBatchRequestEntry extends StObject {
   
   /**
     * The account to create or update. Only defined if the method is insert or
@@ -62,66 +63,54 @@ object SchemaAccountsCustomBatchRequestEntry {
   }
   
   @scala.inline
-  implicit class SchemaAccountsCustomBatchRequestEntryOps[Self <: SchemaAccountsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountsCustomBatchRequestEntryMutableBuilder[Self <: SchemaAccountsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: SchemaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def setAccount(value: SchemaAccount): Self = this.set("account", value.asInstanceOf[js.Any])
+    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
     @scala.inline
-    def deleteAccount: Self = this.set("account", js.undefined)
+    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setLinkRequest(value: SchemaAccountsCustomBatchRequestEntryLinkRequest): Self = StObject.set(x, "linkRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setLinkRequestUndefined: Self = StObject.set(x, "linkRequest", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkRequest(value: SchemaAccountsCustomBatchRequestEntryLinkRequest): Self = this.set("linkRequest", value.asInstanceOf[js.Any])
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     @scala.inline
-    def deleteLinkRequest: Self = this.set("linkRequest", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

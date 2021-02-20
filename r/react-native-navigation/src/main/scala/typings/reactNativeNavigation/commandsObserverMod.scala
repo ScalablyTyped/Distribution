@@ -3,16 +3,16 @@ package typings.reactNativeNavigation
 import typings.reactNativeNavigation.eventSubscriptionMod.EventSubscription
 import typings.reactNativeNavigation.uniqueIdProviderMod.UniqueIdProvider
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-navigation/lib/dist/events/CommandsObserver", JSImport.Namespace)
-@js.native
-object commandsObserverMod extends js.Object {
+object commandsObserverMod {
   
+  @JSImport("react-native-navigation/lib/dist/events/CommandsObserver", "CommandsObserver")
   @js.native
-  class CommandsObserver protected () extends js.Object {
+  class CommandsObserver protected () extends StObject {
     def this(uniqueIdProvider: UniqueIdProvider) = this()
     
     var listeners: js.Any = js.native

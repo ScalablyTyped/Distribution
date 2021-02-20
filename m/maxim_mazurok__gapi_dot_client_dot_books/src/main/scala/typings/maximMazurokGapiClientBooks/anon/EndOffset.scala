@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndOffset extends js.Object {
+trait EndOffset extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -95,165 +96,153 @@ object EndOffset {
   }
   
   @scala.inline
-  implicit class EndOffsetOps[Self <: EndOffset] (val x: Self) extends AnyVal {
+  implicit class EndOffsetMutableBuilder[Self <: EndOffset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentVersion(value: String): Self = this.set("contentVersion", value.asInstanceOf[js.Any])
+    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
     @scala.inline
-    def setLayerId(value: String): Self = this.set("layerId", value.asInstanceOf[js.Any])
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def set$Dotxgafv(value: String): Self = this.set("$.xgafv", value.asInstanceOf[js.Any])
+    def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$Dotxgafv: Self = this.set("$.xgafv", js.undefined)
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
+    def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccess_token: Self = this.set("access_token", js.undefined)
+    def setEndOffset(value: String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: String): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOffset(value: String): Self = this.set("endOffset", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteEndOffset: Self = this.set("endOffset", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPosition(value: String): Self = this.set("endPosition", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     @scala.inline
-    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
     
     @scala.inline
-    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setShowDeleted(value: Boolean): Self = this.set("showDeleted", value.asInstanceOf[js.Any])
+    def setStartOffset(value: String): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowDeleted: Self = this.set("showDeleted", js.undefined)
+    def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
     @scala.inline
-    def setStartOffset(value: String): Self = this.set("startOffset", value.asInstanceOf[js.Any])
+    def setUpdatedMax(value: String): Self = StObject.set(x, "updatedMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartOffset: Self = this.set("startOffset", js.undefined)
+    def setUpdatedMaxUndefined: Self = StObject.set(x, "updatedMax", js.undefined)
     
     @scala.inline
-    def setStartPosition(value: String): Self = this.set("startPosition", value.asInstanceOf[js.Any])
+    def setUpdatedMin(value: String): Self = StObject.set(x, "updatedMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
+    def setUpdatedMinUndefined: Self = StObject.set(x, "updatedMin", js.undefined)
     
     @scala.inline
-    def setUpdatedMax(value: String): Self = this.set("updatedMax", value.asInstanceOf[js.Any])
+    def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdatedMax: Self = this.set("updatedMax", js.undefined)
+    def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
     
     @scala.inline
-    def setUpdatedMin(value: String): Self = this.set("updatedMin", value.asInstanceOf[js.Any])
+    def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdatedMin: Self = this.set("updatedMin", js.undefined)
+    def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
     
     @scala.inline
-    def setUploadType(value: String): Self = this.set("uploadType", value.asInstanceOf[js.Any])
+    def setVolumeAnnotationsVersion(value: String): Self = StObject.set(x, "volumeAnnotationsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUploadType: Self = this.set("uploadType", js.undefined)
+    def setVolumeAnnotationsVersionUndefined: Self = StObject.set(x, "volumeAnnotationsVersion", js.undefined)
     
     @scala.inline
-    def setUpload_protocol(value: String): Self = this.set("upload_protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpload_protocol: Self = this.set("upload_protocol", js.undefined)
-    
-    @scala.inline
-    def setVolumeAnnotationsVersion(value: String): Self = this.set("volumeAnnotationsVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeAnnotationsVersion: Self = this.set("volumeAnnotationsVersion", js.undefined)
+    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
   }
 }

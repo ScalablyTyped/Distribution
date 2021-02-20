@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirectory
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Endpoint extends js.Object {
+trait Endpoint extends StObject {
   
   /** Optional. An IPv4 or IPv6 address. Service Directory will reject bad addresses like: "8.8.8" "8.8.8.8:53" "test:bad:address" "[::1]" "[::1]:8080" Limited to 45 characters. */
   var address: js.UndefOr[String] = js.native
@@ -40,46 +41,34 @@ object Endpoint {
   }
   
   @scala.inline
-  implicit class EndpointOps[Self <: Endpoint] (val x: Self) extends AnyVal {
+  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Endpoint with TopLevel[js.Any]
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

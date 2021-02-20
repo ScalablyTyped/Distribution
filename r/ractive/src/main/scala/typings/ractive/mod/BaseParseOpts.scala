@@ -1,11 +1,12 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseParseOpts extends js.Object {
+trait BaseParseOpts extends StObject {
   
   /** The number of lines of template above and below a line with an error to include in the error message. */
   var contextLines: js.UndefOr[Double] = js.native
@@ -43,72 +44,60 @@ object BaseParseOpts {
   }
   
   @scala.inline
-  implicit class BaseParseOptsOps[Self <: BaseParseOpts] (val x: Self) extends AnyVal {
+  implicit class BaseParseOptsMutableBuilder[Self <: BaseParseOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextLinesUndefined: Self = StObject.set(x, "contextLines", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCsp(value: Boolean): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextLines(value: Double): Self = this.set("contextLines", value.asInstanceOf[js.Any])
+    def setCspUndefined: Self = StObject.set(x, "csp", js.undefined)
     
     @scala.inline
-    def deleteContextLines: Self = this.set("contextLines", js.undefined)
+    def setDelimiters(value: ParseDelimiters): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsp(value: Boolean): Self = this.set("csp", value.asInstanceOf[js.Any])
+    def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
     
     @scala.inline
-    def deleteCsp: Self = this.set("csp", js.undefined)
+    def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiters(value: ParseDelimiters): Self = this.set("delimiters", value.asInstanceOf[js.Any])
+    def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
     
     @scala.inline
-    def deleteDelimiters: Self = this.set("delimiters", js.undefined)
+    def setSanitize(value: Boolean | SanitizeOpts): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveWhitespace(value: Boolean): Self = this.set("preserveWhitespace", value.asInstanceOf[js.Any])
+    def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
     
     @scala.inline
-    def deletePreserveWhitespace: Self = this.set("preserveWhitespace", js.undefined)
+    def setStaticDelimiters(value: ParseDelimiters): Self = StObject.set(x, "staticDelimiters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSanitize(value: Boolean | SanitizeOpts): Self = this.set("sanitize", value.asInstanceOf[js.Any])
+    def setStaticDelimitersUndefined: Self = StObject.set(x, "staticDelimiters", js.undefined)
     
     @scala.inline
-    def deleteSanitize: Self = this.set("sanitize", js.undefined)
+    def setStaticTripleDelimiters(value: ParseDelimiters): Self = StObject.set(x, "staticTripleDelimiters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticDelimiters(value: ParseDelimiters): Self = this.set("staticDelimiters", value.asInstanceOf[js.Any])
+    def setStaticTripleDelimitersUndefined: Self = StObject.set(x, "staticTripleDelimiters", js.undefined)
     
     @scala.inline
-    def deleteStaticDelimiters: Self = this.set("staticDelimiters", js.undefined)
+    def setStripComments(value: Boolean): Self = StObject.set(x, "stripComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticTripleDelimiters(value: ParseDelimiters): Self = this.set("staticTripleDelimiters", value.asInstanceOf[js.Any])
+    def setStripCommentsUndefined: Self = StObject.set(x, "stripComments", js.undefined)
     
     @scala.inline
-    def deleteStaticTripleDelimiters: Self = this.set("staticTripleDelimiters", js.undefined)
+    def setTripleDelimiters(value: ParseDelimiters): Self = StObject.set(x, "tripleDelimiters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStripComments(value: Boolean): Self = this.set("stripComments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripComments: Self = this.set("stripComments", js.undefined)
-    
-    @scala.inline
-    def setTripleDelimiters(value: ParseDelimiters): Self = this.set("tripleDelimiters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTripleDelimiters: Self = this.set("tripleDelimiters", js.undefined)
+    def setTripleDelimitersUndefined: Self = StObject.set(x, "tripleDelimiters", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserFetcher extends js.Object {
+trait BrowserFetcher extends StObject {
   
   /** The method initiates a HEAD request to check if the revision is available. */
   def canDownload(revision: String): js.Promise[Boolean] = js.native

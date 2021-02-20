@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PendingMaintenanceAction extends js.Object {
+trait PendingMaintenanceAction extends StObject {
   
   /**
     * The type of pending maintenance action that is available for the resource.
@@ -46,54 +47,42 @@ object PendingMaintenanceAction {
   }
   
   @scala.inline
-  implicit class PendingMaintenanceActionOps[Self <: PendingMaintenanceAction] (val x: Self) extends AnyVal {
+  implicit class PendingMaintenanceActionMutableBuilder[Self <: PendingMaintenanceAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoAppliedAfterDate(value: TStamp): Self = StObject.set(x, "AutoAppliedAfterDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setAutoAppliedAfterDateUndefined: Self = StObject.set(x, "AutoAppliedAfterDate", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
+    def setCurrentApplyDate(value: TStamp): Self = StObject.set(x, "CurrentApplyDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAppliedAfterDate(value: TStamp): Self = this.set("AutoAppliedAfterDate", value.asInstanceOf[js.Any])
+    def setCurrentApplyDateUndefined: Self = StObject.set(x, "CurrentApplyDate", js.undefined)
     
     @scala.inline
-    def deleteAutoAppliedAfterDate: Self = this.set("AutoAppliedAfterDate", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentApplyDate(value: TStamp): Self = this.set("CurrentApplyDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCurrentApplyDate: Self = this.set("CurrentApplyDate", js.undefined)
+    def setForcedApplyDate(value: TStamp): Self = StObject.set(x, "ForcedApplyDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setForcedApplyDateUndefined: Self = StObject.set(x, "ForcedApplyDate", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setOptInStatus(value: String): Self = StObject.set(x, "OptInStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForcedApplyDate(value: TStamp): Self = this.set("ForcedApplyDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForcedApplyDate: Self = this.set("ForcedApplyDate", js.undefined)
-    
-    @scala.inline
-    def setOptInStatus(value: String): Self = this.set("OptInStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptInStatus: Self = this.set("OptInStatus", js.undefined)
+    def setOptInStatusUndefined: Self = StObject.set(x, "OptInStatus", js.undefined)
   }
 }

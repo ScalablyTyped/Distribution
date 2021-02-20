@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelJobRequest extends js.Object {
+trait CancelJobRequest extends StObject {
   
   /**
     * The AWS Batch job ID of the job to cancel.
@@ -26,24 +27,12 @@ object CancelJobRequest {
   }
   
   @scala.inline
-  implicit class CancelJobRequestOps[Self <: CancelJobRequest] (val x: Self) extends AnyVal {
+  implicit class CancelJobRequestMutableBuilder[Self <: CancelJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

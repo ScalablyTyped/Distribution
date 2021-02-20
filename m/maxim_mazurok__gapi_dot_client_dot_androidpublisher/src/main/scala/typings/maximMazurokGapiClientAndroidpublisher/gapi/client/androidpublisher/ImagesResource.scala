@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Fields
 import typings.maximMazurokGapiClientAndroidpublisher.anon.ImageType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImagesResource extends js.Object {
+trait ImagesResource extends StObject {
   
   /** Deletes the image (specified by id) from the edit. */
   def delete(): Request[Unit] = js.native

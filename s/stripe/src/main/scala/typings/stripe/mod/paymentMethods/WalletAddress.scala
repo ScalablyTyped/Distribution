@@ -1,11 +1,12 @@
 package typings.stripe.mod.paymentMethods
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WalletAddress extends js.Object {
+trait WalletAddress extends StObject {
   
   /** City/District/Suburb/Town/Village. */
   var city: String = js.native
@@ -34,36 +35,24 @@ object WalletAddress {
   }
   
   @scala.inline
-  implicit class WalletAddressOps[Self <: WalletAddress] (val x: Self) extends AnyVal {
+  implicit class WalletAddressMutableBuilder[Self <: WalletAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine1(value: String): Self = this.set("line1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine2(value: String): Self = this.set("line2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostal_code(value: String): Self = this.set("postal_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

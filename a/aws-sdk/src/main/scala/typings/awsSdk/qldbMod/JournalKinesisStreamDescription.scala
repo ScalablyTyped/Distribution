@@ -1,11 +1,12 @@
 package typings.awsSdk.qldbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JournalKinesisStreamDescription extends js.Object {
+trait JournalKinesisStreamDescription extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the QLDB journal stream.
@@ -78,66 +79,54 @@ object JournalKinesisStreamDescription {
   }
   
   @scala.inline
-  implicit class JournalKinesisStreamDescriptionOps[Self <: JournalKinesisStreamDescription] (val x: Self) extends AnyVal {
+  implicit class JournalKinesisStreamDescriptionMutableBuilder[Self <: JournalKinesisStreamDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisConfiguration(value: KinesisConfiguration): Self = this.set("KinesisConfiguration", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def setLedgerName(value: LedgerName): Self = this.set("LedgerName", value.asInstanceOf[js.Any])
+    def setErrorCause(value: ErrorCause): Self = StObject.set(x, "ErrorCause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Arn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setErrorCauseUndefined: Self = StObject.set(x, "ErrorCause", js.undefined)
     
     @scala.inline
-    def setStatus(value: StreamStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setExclusiveEndTime(value: Timestamp): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamId(value: UniqueId): Self = this.set("StreamId", value.asInstanceOf[js.Any])
+    def setExclusiveEndTimeUndefined: Self = StObject.set(x, "ExclusiveEndTime", js.undefined)
     
     @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    def setInclusiveStartTime(value: Timestamp): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setInclusiveStartTimeUndefined: Self = StObject.set(x, "InclusiveStartTime", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setKinesisConfiguration(value: KinesisConfiguration): Self = StObject.set(x, "KinesisConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCause(value: ErrorCause): Self = this.set("ErrorCause", value.asInstanceOf[js.Any])
+    def setStatus(value: StreamStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorCause: Self = this.set("ErrorCause", js.undefined)
+    def setStreamId(value: UniqueId): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveEndTime(value: Timestamp): Self = this.set("ExclusiveEndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusiveEndTime: Self = this.set("ExclusiveEndTime", js.undefined)
-    
-    @scala.inline
-    def setInclusiveStartTime(value: Timestamp): Self = this.set("InclusiveStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclusiveStartTime: Self = this.set("InclusiveStartTime", js.undefined)
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

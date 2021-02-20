@@ -9,12 +9,13 @@ import typings.devextreme.devextremeStrings.flowchart
 import typings.devextreme.devextremeStrings.general
 import typings.devextreme.devextremeStrings.orgChart
 import typings.devextreme.devextremeStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapeIconsPerRow extends js.Object {
+trait ShapeIconsPerRow extends StObject {
   
   var groups: js.UndefOr[js.Array[general | flowchart | orgChart | containers | custom | DisplayMode]] = js.native
   
@@ -35,51 +36,39 @@ object ShapeIconsPerRow {
   }
   
   @scala.inline
-  implicit class ShapeIconsPerRowOps[Self <: ShapeIconsPerRow] (val x: Self) extends AnyVal {
+  implicit class ShapeIconsPerRowMutableBuilder[Self <: ShapeIconsPerRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroups(value: js.Array[general | flowchart | orgChart | containers | custom | DisplayMode]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupsVarargs(value: (general | flowchart | orgChart | containers | custom | DisplayMode)*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: (general | flowchart | orgChart | containers | custom | DisplayMode)*): Self = this.set("groups", js.Array(value :_*))
+    def setShapeIconsPerRow(value: Double): Self = StObject.set(x, "shapeIconsPerRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Array[general | flowchart | orgChart | containers | custom | DisplayMode]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setShapeIconsPerRowUndefined: Self = StObject.set(x, "shapeIconsPerRow", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeIconsPerRow(value: Double): Self = this.set("shapeIconsPerRow", value.asInstanceOf[js.Any])
+    def setShowSearchUndefined: Self = StObject.set(x, "showSearch", js.undefined)
     
     @scala.inline
-    def deleteShapeIconsPerRow: Self = this.set("shapeIconsPerRow", js.undefined)
+    def setVisibility(value: auto | visible | collapsed | disabled): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSearch(value: Boolean): Self = this.set("showSearch", value.asInstanceOf[js.Any])
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     @scala.inline
-    def deleteShowSearch: Self = this.set("showSearch", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibility(value: auto | visible | collapsed | disabled): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

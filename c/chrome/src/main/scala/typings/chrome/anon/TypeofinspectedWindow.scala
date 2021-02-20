@@ -6,12 +6,13 @@ import typings.chrome.chrome.devtools.inspectedWindow.ReloadOptions
 import typings.chrome.chrome.devtools.inspectedWindow.Resource
 import typings.chrome.chrome.devtools.inspectedWindow.ResourceAddedEvent
 import typings.chrome.chrome.devtools.inspectedWindow.ResourceContentCommittedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofinspectedWindow extends js.Object {
+trait TypeofinspectedWindow extends StObject {
   
   def eval[T](expression: String): Unit = js.native
   def eval[T](

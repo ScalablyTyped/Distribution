@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertDimensionRequest extends js.Object {
+trait InsertDimensionRequest extends StObject {
   
   /**
     * Whether dimension properties should be extended from the dimensions before or after the newly inserted dimensions. True to inherit from the dimensions before (in which case the
@@ -27,30 +28,18 @@ object InsertDimensionRequest {
   }
   
   @scala.inline
-  implicit class InsertDimensionRequestOps[Self <: InsertDimensionRequest] (val x: Self) extends AnyVal {
+  implicit class InsertDimensionRequestMutableBuilder[Self <: InsertDimensionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInheritFromBefore(value: Boolean): Self = StObject.set(x, "inheritFromBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInheritFromBeforeUndefined: Self = StObject.set(x, "inheritFromBefore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: DimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInheritFromBefore(value: Boolean): Self = this.set("inheritFromBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInheritFromBefore: Self = this.set("inheritFromBefore", js.undefined)
-    
-    @scala.inline
-    def setRange(value: DimensionRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

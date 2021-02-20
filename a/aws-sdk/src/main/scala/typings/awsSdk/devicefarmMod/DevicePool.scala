@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevicePool extends js.Object {
+trait DevicePool extends StObject {
   
   /**
     * The device pool's ARN.
@@ -46,57 +47,45 @@ object DevicePool {
   }
   
   @scala.inline
-  implicit class DevicePoolOps[Self <: DevicePool] (val x: Self) extends AnyVal {
+  implicit class DevicePoolMutableBuilder[Self <: DevicePool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setMaxDevices(value: Integer): Self = StObject.set(x, "maxDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Message): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMaxDevicesUndefined: Self = StObject.set(x, "maxDevices", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDevices(value: Integer): Self = this.set("maxDevices", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaxDevices: Self = this.set("maxDevices", js.undefined)
+    def setRules(value: Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
     @scala.inline
-    def setRulesVarargs(value: Rule*): Self = this.set("rules", js.Array(value :_*))
+    def setType(value: DevicePoolType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: Rules): Self = this.set("rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
-    
-    @scala.inline
-    def setType(value: DevicePoolType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -4,14 +4,14 @@ import typings.agGrid.eventsMod.AgEvent
 import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
 import typings.agGrid.iEventEmitterMod.IEventEmitter
 import typings.agGrid.loggerMod.LoggerFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/eventService", JSImport.Namespace)
-@js.native
-object eventServiceMod extends js.Object {
+object eventServiceMod {
   
+  @JSImport("ag-grid/dist/lib/eventService", "EventService")
   @js.native
   class EventService () extends IEventEmitter {
     
@@ -56,9 +56,16 @@ object eventServiceMod extends js.Object {
     ): Unit = js.native
   }
   /* static members */
-  @js.native
-  object EventService extends js.Object {
+  object EventService {
     
-    var PRIORITY: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/eventService", "EventService")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ag-grid/dist/lib/eventService", "EventService.PRIORITY")
+    @js.native
+    def PRIORITY: js.Any = js.native
+    @scala.inline
+    def PRIORITY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
 }

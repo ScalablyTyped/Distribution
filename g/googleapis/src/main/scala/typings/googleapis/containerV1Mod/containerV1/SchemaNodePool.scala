@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1Mod.containerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * accommodate the workload.
   */
 @js.native
-trait SchemaNodePool extends js.Object {
+trait SchemaNodePool extends StObject {
   
   /**
     * Autoscaler configuration for this NodePool. Autoscaler is enabled only if
@@ -86,90 +87,78 @@ object SchemaNodePool {
   }
   
   @scala.inline
-  implicit class SchemaNodePoolOps[Self <: SchemaNodePool] (val x: Self) extends AnyVal {
+  implicit class SchemaNodePoolMutableBuilder[Self <: SchemaNodePool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoscaling(value: SchemaNodePoolAutoscaling): Self = StObject.set(x, "autoscaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoscalingUndefined: Self = StObject.set(x, "autoscaling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: js.Array[SchemaStatusCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoscaling(value: SchemaNodePoolAutoscaling): Self = this.set("autoscaling", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def deleteAutoscaling: Self = this.set("autoscaling", js.undefined)
+    def setConditionsVarargs(value: SchemaStatusCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: SchemaStatusCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setConfig(value: SchemaNodeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[SchemaStatusCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setInitialNodeCount(value: Double): Self = StObject.set(x, "initialNodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: SchemaNodeConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setInitialNodeCountUndefined: Self = StObject.set(x, "initialNodeCount", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setInstanceGroupUrls(value: js.Array[String]): Self = StObject.set(x, "instanceGroupUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialNodeCount(value: Double): Self = this.set("initialNodeCount", value.asInstanceOf[js.Any])
+    def setInstanceGroupUrlsUndefined: Self = StObject.set(x, "instanceGroupUrls", js.undefined)
     
     @scala.inline
-    def deleteInitialNodeCount: Self = this.set("initialNodeCount", js.undefined)
+    def setInstanceGroupUrlsVarargs(value: String*): Self = StObject.set(x, "instanceGroupUrls", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceGroupUrlsVarargs(value: String*): Self = this.set("instanceGroupUrls", js.Array(value :_*))
+    def setManagement(value: SchemaNodeManagement): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceGroupUrls(value: js.Array[String]): Self = this.set("instanceGroupUrls", value.asInstanceOf[js.Any])
+    def setManagementUndefined: Self = StObject.set(x, "management", js.undefined)
     
     @scala.inline
-    def deleteInstanceGroupUrls: Self = this.set("instanceGroupUrls", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagement(value: SchemaNodeManagement): Self = this.set("management", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteManagement: Self = this.set("management", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

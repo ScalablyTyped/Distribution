@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Where Complex nested query
   */
 @js.native
-trait WhereNested extends js.Object {
+trait WhereNested extends StObject {
   
   @JSName("$and")
   var $and: js.Array[AnyWhereOptions | WhereLogic] = js.native
@@ -25,30 +26,18 @@ object WhereNested {
   }
   
   @scala.inline
-  implicit class WhereNestedOps[Self <: WhereNested] (val x: Self) extends AnyVal {
+  implicit class WhereNestedMutableBuilder[Self <: WhereNested] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$and(value: js.Array[AnyWhereOptions | WhereLogic]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$andVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$and", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$or(value: js.Array[AnyWhereOptions | WhereLogic]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$andVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = this.set("$and", js.Array(value :_*))
-    
-    @scala.inline
-    def set$and(value: js.Array[AnyWhereOptions | WhereLogic]): Self = this.set("$and", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$orVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = this.set("$or", js.Array(value :_*))
-    
-    @scala.inline
-    def set$or(value: js.Array[AnyWhereOptions | WhereLogic]): Self = this.set("$or", value.asInstanceOf[js.Any])
+    def set$orVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$or", js.Array(value :_*))
   }
 }

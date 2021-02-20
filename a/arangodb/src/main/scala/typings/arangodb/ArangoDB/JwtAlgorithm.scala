@@ -1,5 +1,6 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arangodb.arangodbStrings.HS384
   - typings.arangodb.arangodbStrings.HS256
 */
-trait JwtAlgorithm extends js.Object
+trait JwtAlgorithm extends StObject
 object JwtAlgorithm {
   
   @scala.inline

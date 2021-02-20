@@ -1,12 +1,13 @@
 package typings.std
 
 import typings.std.stdStrings.bytes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnderlyingByteSource extends js.Object {
+trait UnderlyingByteSource extends StObject {
   
   var autoAllocateChunkSize: js.UndefOr[Double] = js.native
   
@@ -28,45 +29,33 @@ object UnderlyingByteSource {
   }
   
   @scala.inline
-  implicit class UnderlyingByteSourceOps[Self <: UnderlyingByteSource] (val x: Self) extends AnyVal {
+  implicit class UnderlyingByteSourceMutableBuilder[Self <: UnderlyingByteSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoAllocateChunkSize(value: Double): Self = StObject.set(x, "autoAllocateChunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoAllocateChunkSizeUndefined: Self = StObject.set(x, "autoAllocateChunkSize", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setType(value: bytes): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def setAutoAllocateChunkSize(value: Double): Self = this.set("autoAllocateChunkSize", value.asInstanceOf[js.Any])
+    def setPull(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAutoAllocateChunkSize: Self = this.set("autoAllocateChunkSize", js.undefined)
+    def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     
     @scala.inline
-    def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = this.set("cancel", js.Any.fromFunction1(value))
+    def setStart(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setPull(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = this.set("pull", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deletePull: Self = this.set("pull", js.undefined)
-    
-    @scala.inline
-    def setStart(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setType(value: bytes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

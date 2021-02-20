@@ -1,7 +1,8 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _TargetTypeEnum extends js.Object
+trait _TargetTypeEnum extends StObject

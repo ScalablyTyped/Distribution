@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudSecuritycenterV1Resource extends js.Object {
+trait GoogleCloudSecuritycenterV1Resource extends StObject {
   
   /** The full resource name of the resource. See: https://cloud.google.com/apis/design/resource_names#full_resource_name */
   var name: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object GoogleCloudSecuritycenterV1Resource {
   }
   
   @scala.inline
-  implicit class GoogleCloudSecuritycenterV1ResourceOps[Self <: GoogleCloudSecuritycenterV1Resource] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudSecuritycenterV1ResourceMutableBuilder[Self <: GoogleCloudSecuritycenterV1Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentDisplayName(value: String): Self = StObject.set(x, "parentDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParentDisplayNameUndefined: Self = StObject.set(x, "parentDisplayName", js.undefined)
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentDisplayName(value: String): Self = this.set("parentDisplayName", value.asInstanceOf[js.Any])
+    def setProjectDisplayName(value: String): Self = StObject.set(x, "projectDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentDisplayName: Self = this.set("parentDisplayName", js.undefined)
+    def setProjectDisplayNameUndefined: Self = StObject.set(x, "projectDisplayName", js.undefined)
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
-    
-    @scala.inline
-    def setProjectDisplayName(value: String): Self = this.set("projectDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectDisplayName: Self = this.set("projectDisplayName", js.undefined)
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

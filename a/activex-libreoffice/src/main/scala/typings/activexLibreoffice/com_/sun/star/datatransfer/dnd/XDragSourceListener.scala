@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer.dnd
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,33 +69,21 @@ object XDragSourceListener {
   }
   
   @scala.inline
-  implicit class XDragSourceListenerOps[Self <: XDragSourceListener] (val x: Self) extends AnyVal {
+  implicit class XDragSourceListenerMutableBuilder[Self <: XDragSourceListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragDropEnd(value: DragSourceDropEvent => Unit): Self = StObject.set(x, "dragDropEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragEnter(value: DragSourceDragEvent => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragExit(value: DragSourceEvent => Unit): Self = StObject.set(x, "dragExit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragDropEnd(value: DragSourceDropEvent => Unit): Self = this.set("dragDropEnd", js.Any.fromFunction1(value))
+    def setDragOver(value: DragSourceDragEvent => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragEnter(value: DragSourceDragEvent => Unit): Self = this.set("dragEnter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDragExit(value: DragSourceEvent => Unit): Self = this.set("dragExit", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDragOver(value: DragSourceDragEvent => Unit): Self = this.set("dragOver", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDropActionChanged(value: DragSourceDragEvent => Unit): Self = this.set("dropActionChanged", js.Any.fromFunction1(value))
+    def setDropActionChanged(value: DragSourceDragEvent => Unit): Self = StObject.set(x, "dropActionChanged", js.Any.fromFunction1(value))
   }
 }

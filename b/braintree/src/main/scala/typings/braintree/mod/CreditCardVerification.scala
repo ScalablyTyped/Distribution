@@ -3,13 +3,14 @@ package typings.braintree.mod
 import typings.braintree.anon.Bin
 import typings.braintree.anon.CountryName
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "CreditCardVerification")
 @js.native
-class CreditCardVerification () extends js.Object {
+class CreditCardVerification () extends StObject {
   
   var amount: String = js.native
   

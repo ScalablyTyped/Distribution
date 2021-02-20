@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetDeploymentTargetsOutput extends js.Object {
+trait BatchGetDeploymentTargetsOutput extends StObject {
   
   /**
     *  A list of target objects for a deployment. Each target object contains details about the target, such as its status and lifecycle events. The type of the target objects depends on the deployment' compute platform.     EC2/On-premises: Each target object is an EC2 or on-premises instance.     AWS Lambda: The target object is a specific version of an AWS Lambda function.     Amazon ECS: The target object is an Amazon ECS service.     CloudFormation: The target object is an AWS CloudFormation blue/green deployment.   
@@ -21,27 +22,15 @@ object BatchGetDeploymentTargetsOutput {
   }
   
   @scala.inline
-  implicit class BatchGetDeploymentTargetsOutputOps[Self <: BatchGetDeploymentTargetsOutput] (val x: Self) extends AnyVal {
+  implicit class BatchGetDeploymentTargetsOutputMutableBuilder[Self <: BatchGetDeploymentTargetsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentTargets(value: DeploymentTargetList): Self = StObject.set(x, "deploymentTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentTargetsUndefined: Self = StObject.set(x, "deploymentTargets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeploymentTargetsVarargs(value: DeploymentTarget*): Self = this.set("deploymentTargets", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeploymentTargets(value: DeploymentTargetList): Self = this.set("deploymentTargets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentTargets: Self = this.set("deploymentTargets", js.undefined)
+    def setDeploymentTargetsVarargs(value: DeploymentTarget*): Self = StObject.set(x, "deploymentTargets", js.Array(value :_*))
   }
 }

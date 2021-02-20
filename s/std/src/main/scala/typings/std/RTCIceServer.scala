@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCIceServer extends js.Object {
+trait RTCIceServer extends StObject {
   
   var credential: js.UndefOr[java.lang.String | RTCOAuthCredential] = js.native
   
@@ -24,42 +25,30 @@ object RTCIceServer {
   }
   
   @scala.inline
-  implicit class RTCIceServerOps[Self <: RTCIceServer] (val x: Self) extends AnyVal {
+  implicit class RTCIceServerMutableBuilder[Self <: RTCIceServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredential(value: java.lang.String | RTCOAuthCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialType(value: RTCIceCredentialType): Self = StObject.set(x, "credentialType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentialTypeUndefined: Self = StObject.set(x, "credentialType", js.undefined)
     
     @scala.inline
-    def setUrlsVarargs(value: java.lang.String*): Self = this.set("urls", js.Array(value :_*))
+    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
     @scala.inline
-    def setUrls(value: java.lang.String | js.Array[java.lang.String]): Self = this.set("urls", value.asInstanceOf[js.Any])
+    def setUrls(value: java.lang.String | js.Array[java.lang.String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredential(value: java.lang.String | RTCOAuthCredential): Self = this.set("credential", value.asInstanceOf[js.Any])
+    def setUrlsVarargs(value: java.lang.String*): Self = StObject.set(x, "urls", js.Array(value :_*))
     
     @scala.inline
-    def deleteCredential: Self = this.set("credential", js.undefined)
+    def setUsername(value: java.lang.String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialType(value: RTCIceCredentialType): Self = this.set("credentialType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentialType: Self = this.set("credentialType", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: java.lang.String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

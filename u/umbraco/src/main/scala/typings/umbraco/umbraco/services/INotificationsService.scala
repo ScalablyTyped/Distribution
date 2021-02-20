@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait INotificationsService extends js.Object {
+trait INotificationsService extends StObject {
   
   /**
     * @ngdoc method
@@ -187,57 +188,45 @@ object INotificationsService {
   }
   
   @scala.inline
-  implicit class INotificationsServiceOps[Self <: INotificationsService] (val x: Self) extends AnyVal {
+  implicit class INotificationsServiceMutableBuilder[Self <: INotificationsService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: INotificationItem => INotification): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddView(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "addView", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrent(value: js.Array[String]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: INotificationItem => INotification): Self = this.set("add", js.Any.fromFunction1(value))
+    def setCurrentVarargs(value: String*): Self = StObject.set(x, "current", js.Array(value :_*))
     
     @scala.inline
-    def setAddView(value: (String, /* repeated */ js.Any) => Unit): Self = this.set("addView", js.Any.fromFunction2(value))
+    def setError(value: (String, String) => INotification): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCurrentVarargs(value: String*): Self = this.set("current", js.Array(value :_*))
+    def setGetCurrent(value: () => js.Array[INotification]): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrent(value: js.Array[String]): Self = this.set("current", value.asInstanceOf[js.Any])
+    def setHasView(value: String => Boolean): Self = StObject.set(x, "hasView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: (String, String) => INotification): Self = this.set("error", js.Any.fromFunction2(value))
+    def setInfo(value: (String, String) => INotification): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCurrent(value: () => js.Array[INotification]): Self = this.set("getCurrent", js.Any.fromFunction0(value))
+    def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasView(value: String => Boolean): Self = this.set("hasView", js.Any.fromFunction1(value))
+    def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInfo(value: (String, String) => INotification): Self = this.set("info", js.Any.fromFunction2(value))
+    def setShowNotification(value: INotificationArgs => INotification): Self = StObject.set(x, "showNotification", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: Double => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setSuccess(value: (String, String) => INotification): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveAll(value: () => Unit): Self = this.set("removeAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowNotification(value: INotificationArgs => INotification): Self = this.set("showNotification", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSuccess(value: (String, String) => INotification): Self = this.set("success", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWarning(value: (String, String) => INotification): Self = this.set("warning", js.Any.fromFunction2(value))
+    def setWarning(value: (String, String) => INotification): Self = StObject.set(x, "warning", js.Any.fromFunction2(value))
   }
 }

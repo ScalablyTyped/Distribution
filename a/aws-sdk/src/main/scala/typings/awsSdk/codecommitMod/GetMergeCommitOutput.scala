@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMergeCommitOutput extends js.Object {
+trait GetMergeCommitOutput extends StObject {
   
   /**
     * The commit ID of the merge base.
@@ -36,42 +37,30 @@ object GetMergeCommitOutput {
   }
   
   @scala.inline
-  implicit class GetMergeCommitOutputOps[Self <: GetMergeCommitOutput] (val x: Self) extends AnyVal {
+  implicit class GetMergeCommitOutputMutableBuilder[Self <: GetMergeCommitOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseCommitIdUndefined: Self = StObject.set(x, "baseCommitId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseCommitId(value: ObjectId): Self = this.set("baseCommitId", value.asInstanceOf[js.Any])
+    def setDestinationCommitIdUndefined: Self = StObject.set(x, "destinationCommitId", js.undefined)
     
     @scala.inline
-    def deleteBaseCommitId: Self = this.set("baseCommitId", js.undefined)
+    def setMergedCommitId(value: ObjectId): Self = StObject.set(x, "mergedCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationCommitId(value: ObjectId): Self = this.set("destinationCommitId", value.asInstanceOf[js.Any])
+    def setMergedCommitIdUndefined: Self = StObject.set(x, "mergedCommitId", js.undefined)
     
     @scala.inline
-    def deleteDestinationCommitId: Self = this.set("destinationCommitId", js.undefined)
+    def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergedCommitId(value: ObjectId): Self = this.set("mergedCommitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergedCommitId: Self = this.set("mergedCommitId", js.undefined)
-    
-    @scala.inline
-    def setSourceCommitId(value: ObjectId): Self = this.set("sourceCommitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceCommitId: Self = this.set("sourceCommitId", js.undefined)
+    def setSourceCommitIdUndefined: Self = StObject.set(x, "sourceCommitId", js.undefined)
   }
 }

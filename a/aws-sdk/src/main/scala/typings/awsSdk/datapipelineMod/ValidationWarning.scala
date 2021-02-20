@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationWarning extends js.Object {
+trait ValidationWarning extends StObject {
   
   /**
     * The identifier of the object that contains the validation warning.
@@ -26,33 +27,21 @@ object ValidationWarning {
   }
   
   @scala.inline
-  implicit class ValidationWarningOps[Self <: ValidationWarning] (val x: Self) extends AnyVal {
+  implicit class ValidationWarningMutableBuilder[Self <: ValidationWarning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWarnings(value: validationMessages): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: id): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setWarningsVarargs(value: validationMessage*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: validationMessages): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsVarargs(value: validationMessage*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

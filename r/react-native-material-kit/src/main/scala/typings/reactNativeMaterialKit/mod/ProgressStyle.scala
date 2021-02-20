@@ -1,11 +1,12 @@
 package typings.reactNativeMaterialKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressStyle extends js.Object {
+trait ProgressStyle extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ProgressStyle {
   }
   
   @scala.inline
-  implicit class ProgressStyleOps[Self <: ProgressStyle] (val x: Self) extends AnyVal {
+  implicit class ProgressStyleMutableBuilder[Self <: ProgressStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferColor(value: String): Self = StObject.set(x, "bufferColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBufferColorUndefined: Self = StObject.set(x, "bufferColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferColor(value: String): Self = this.set("bufferColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBufferColor: Self = this.set("bufferColor", js.undefined)
-    
-    @scala.inline
-    def setProgressColor(value: String): Self = this.set("progressColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressColor: Self = this.set("progressColor", js.undefined)
+    def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
   }
 }

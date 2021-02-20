@@ -1,13 +1,14 @@
 package typings.nano.mod
 
 import typings.nano.anon.Active
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/database/common.html#get--db
 @js.native
-trait DatabaseGetResponse extends js.Object {
+trait DatabaseGetResponse extends StObject {
   
   // Set to true if the database compaction routine is operating on this database.
   var compact_running: Boolean = js.native
@@ -62,51 +63,39 @@ object DatabaseGetResponse {
   }
   
   @scala.inline
-  implicit class DatabaseGetResponseOps[Self <: DatabaseGetResponse] (val x: Self) extends AnyVal {
+  implicit class DatabaseGetResponseMutableBuilder[Self <: DatabaseGetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompact_running(value: Boolean): Self = StObject.set(x, "compact_running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData_size(value: Double): Self = StObject.set(x, "data_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDb_name(value: String): Self = StObject.set(x, "db_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompact_running(value: Boolean): Self = this.set("compact_running", value.asInstanceOf[js.Any])
+    def setDisk_format_version(value: Double): Self = StObject.set(x, "disk_format_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData_size(value: Double): Self = this.set("data_size", value.asInstanceOf[js.Any])
+    def setDisk_size(value: Double): Self = StObject.set(x, "disk_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDb_name(value: String): Self = this.set("db_name", value.asInstanceOf[js.Any])
+    def setDoc_count(value: Double): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisk_format_version(value: Double): Self = this.set("disk_format_version", value.asInstanceOf[js.Any])
+    def setDoc_del_count(value: Double): Self = StObject.set(x, "doc_del_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisk_size(value: Double): Self = this.set("disk_size", value.asInstanceOf[js.Any])
+    def setInstance_start_time(value: String): Self = StObject.set(x, "instance_start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc_count(value: Double): Self = this.set("doc_count", value.asInstanceOf[js.Any])
+    def setPurge_seq(value: Double): Self = StObject.set(x, "purge_seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc_del_count(value: Double): Self = this.set("doc_del_count", value.asInstanceOf[js.Any])
+    def setSizes(value: Active): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance_start_time(value: String): Self = this.set("instance_start_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPurge_seq(value: Double): Self = this.set("purge_seq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizes(value: Active): Self = this.set("sizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate_seq(value: Double): Self = this.set("update_seq", value.asInstanceOf[js.Any])
+    def setUpdate_seq(value: Double): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
   }
 }

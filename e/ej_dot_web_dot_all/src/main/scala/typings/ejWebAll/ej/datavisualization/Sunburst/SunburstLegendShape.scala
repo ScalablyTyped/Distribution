@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej.datavisualization.Sunburst
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstLegendShape extends js.Object
+sealed trait SunburstLegendShape extends StObject
 @JSGlobal("ej.datavisualization.Sunburst.SunburstLegendShape")
 @js.native
-object SunburstLegendShape extends js.Object {
+object SunburstLegendShape extends StObject {
   
   //string
   @js.native

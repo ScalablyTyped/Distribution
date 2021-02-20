@@ -1,11 +1,12 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IChangesObject[T] extends js.Object {
+trait IChangesObject[T] extends StObject {
   
   var currentValue: T = js.native
   
@@ -22,27 +23,15 @@ object IChangesObject {
   }
   
   @scala.inline
-  implicit class IChangesObjectOps[Self <: IChangesObject[_], T] (val x: Self with IChangesObject[T]) extends AnyVal {
+  implicit class IChangesObjectMutableBuilder[Self <: IChangesObject[_], T] (val x: Self with IChangesObject[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentValue(value: T): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFirstChange(value: () => Boolean): Self = StObject.set(x, "isFirstChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentValue(value: T): Self = this.set("currentValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFirstChange(value: () => Boolean): Self = this.set("isFirstChange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPreviousValue(value: T): Self = this.set("previousValue", value.asInstanceOf[js.Any])
+    def setPreviousValue(value: T): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
   }
 }

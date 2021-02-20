@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Simple object holding floor of the building on which the user is located.
   */
 @js.native
-trait LocationCoordinatesFloor extends js.Object {
+trait LocationCoordinatesFloor extends StObject {
   
   /**
     * The logical floor of the building.
@@ -24,24 +25,12 @@ object LocationCoordinatesFloor {
   }
   
   @scala.inline
-  implicit class LocationCoordinatesFloorOps[Self <: LocationCoordinatesFloor] (val x: Self) extends AnyVal {
+  implicit class LocationCoordinatesFloorMutableBuilder[Self <: LocationCoordinatesFloor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

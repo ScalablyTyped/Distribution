@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Messages extends js.Object {
+trait Messages extends StObject {
   
   /**
     * Text passed to the error event handler if a submitted item is zero bits
@@ -107,96 +108,84 @@ object Messages {
   }
   
   @scala.inline
-  implicit class MessagesOps[Self <: Messages] (val x: Self) extends AnyVal {
+  implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmptyError(value: String): Self = StObject.set(x, "emptyError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmptyErrorUndefined: Self = StObject.set(x, "emptyError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxHeightImageError(value: String): Self = StObject.set(x, "maxHeightImageError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyError(value: String): Self = this.set("emptyError", value.asInstanceOf[js.Any])
+    def setMaxHeightImageErrorUndefined: Self = StObject.set(x, "maxHeightImageError", js.undefined)
     
     @scala.inline
-    def deleteEmptyError: Self = this.set("emptyError", js.undefined)
+    def setMaxWidthImageError(value: String): Self = StObject.set(x, "maxWidthImageError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeightImageError(value: String): Self = this.set("maxHeightImageError", value.asInstanceOf[js.Any])
+    def setMaxWidthImageErrorUndefined: Self = StObject.set(x, "maxWidthImageError", js.undefined)
     
     @scala.inline
-    def deleteMaxHeightImageError: Self = this.set("maxHeightImageError", js.undefined)
+    def setMinHeightImageError(value: String): Self = StObject.set(x, "minHeightImageError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidthImageError(value: String): Self = this.set("maxWidthImageError", value.asInstanceOf[js.Any])
+    def setMinHeightImageErrorUndefined: Self = StObject.set(x, "minHeightImageError", js.undefined)
     
     @scala.inline
-    def deleteMaxWidthImageError: Self = this.set("maxWidthImageError", js.undefined)
+    def setMinSizeError(value: String): Self = StObject.set(x, "minSizeError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHeightImageError(value: String): Self = this.set("minHeightImageError", value.asInstanceOf[js.Any])
+    def setMinSizeErrorUndefined: Self = StObject.set(x, "minSizeError", js.undefined)
     
     @scala.inline
-    def deleteMinHeightImageError: Self = this.set("minHeightImageError", js.undefined)
+    def setMinWidthImageError(value: String): Self = StObject.set(x, "minWidthImageError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSizeError(value: String): Self = this.set("minSizeError", value.asInstanceOf[js.Any])
+    def setMinWidthImageErrorUndefined: Self = StObject.set(x, "minWidthImageError", js.undefined)
     
     @scala.inline
-    def deleteMinSizeError: Self = this.set("minSizeError", js.undefined)
+    def setNoFilesError(value: String): Self = StObject.set(x, "noFilesError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidthImageError(value: String): Self = this.set("minWidthImageError", value.asInstanceOf[js.Any])
+    def setNoFilesErrorUndefined: Self = StObject.set(x, "noFilesError", js.undefined)
     
     @scala.inline
-    def deleteMinWidthImageError: Self = this.set("minWidthImageError", js.undefined)
+    def setOnLeave(value: String): Self = StObject.set(x, "onLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoFilesError(value: String): Self = this.set("noFilesError", value.asInstanceOf[js.Any])
+    def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
     
     @scala.inline
-    def deleteNoFilesError: Self = this.set("noFilesError", js.undefined)
+    def setRetryFailTooManyItemsError(value: String): Self = StObject.set(x, "retryFailTooManyItemsError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLeave(value: String): Self = this.set("onLeave", value.asInstanceOf[js.Any])
+    def setRetryFailTooManyItemsErrorUndefined: Self = StObject.set(x, "retryFailTooManyItemsError", js.undefined)
     
     @scala.inline
-    def deleteOnLeave: Self = this.set("onLeave", js.undefined)
+    def setSizeError(value: String): Self = StObject.set(x, "sizeError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryFailTooManyItemsError(value: String): Self = this.set("retryFailTooManyItemsError", value.asInstanceOf[js.Any])
+    def setSizeErrorUndefined: Self = StObject.set(x, "sizeError", js.undefined)
     
     @scala.inline
-    def deleteRetryFailTooManyItemsError: Self = this.set("retryFailTooManyItemsError", js.undefined)
+    def setTooManyItemsError(value: String): Self = StObject.set(x, "tooManyItemsError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeError(value: String): Self = this.set("sizeError", value.asInstanceOf[js.Any])
+    def setTooManyItemsErrorUndefined: Self = StObject.set(x, "tooManyItemsError", js.undefined)
     
     @scala.inline
-    def deleteSizeError: Self = this.set("sizeError", js.undefined)
+    def setTypeError(value: String): Self = StObject.set(x, "typeError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooManyItemsError(value: String): Self = this.set("tooManyItemsError", value.asInstanceOf[js.Any])
+    def setTypeErrorUndefined: Self = StObject.set(x, "typeError", js.undefined)
     
     @scala.inline
-    def deleteTooManyItemsError: Self = this.set("tooManyItemsError", js.undefined)
+    def setUnsupportedBrowserIos8Safari(value: String): Self = StObject.set(x, "unsupportedBrowserIos8Safari", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeError(value: String): Self = this.set("typeError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeError: Self = this.set("typeError", js.undefined)
-    
-    @scala.inline
-    def setUnsupportedBrowserIos8Safari(value: String): Self = this.set("unsupportedBrowserIos8Safari", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnsupportedBrowserIos8Safari: Self = this.set("unsupportedBrowserIos8Safari", js.undefined)
+    def setUnsupportedBrowserIos8SafariUndefined: Self = StObject.set(x, "unsupportedBrowserIos8Safari", js.undefined)
   }
 }

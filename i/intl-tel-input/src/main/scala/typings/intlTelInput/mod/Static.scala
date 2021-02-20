@@ -1,12 +1,13 @@
 package typings.intlTelInput.mod
 
 import typings.intlTelInput.mod.intlTelInputUtils.CountryData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Static extends js.Object {
+trait Static extends StObject {
   
   /**
     * Default options for all instances

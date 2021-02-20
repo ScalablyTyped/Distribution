@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkillsStoreSkill extends js.Object {
+trait SkillsStoreSkill extends StObject {
   
   /**
     * The URL where the skill icon resides.
@@ -51,63 +52,51 @@ object SkillsStoreSkill {
   }
   
   @scala.inline
-  implicit class SkillsStoreSkillOps[Self <: SkillsStoreSkill] (val x: Self) extends AnyVal {
+  implicit class SkillsStoreSkillMutableBuilder[Self <: SkillsStoreSkill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconUrl(value: IconUrl): Self = StObject.set(x, "IconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconUrlUndefined: Self = StObject.set(x, "IconUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSampleUtterances(value: SampleUtterances): Self = StObject.set(x, "SampleUtterances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: IconUrl): Self = this.set("IconUrl", value.asInstanceOf[js.Any])
+    def setSampleUtterancesUndefined: Self = StObject.set(x, "SampleUtterances", js.undefined)
     
     @scala.inline
-    def deleteIconUrl: Self = this.set("IconUrl", js.undefined)
+    def setSampleUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "SampleUtterances", js.Array(value :_*))
     
     @scala.inline
-    def setSampleUtterancesVarargs(value: Utterance*): Self = this.set("SampleUtterances", js.Array(value :_*))
+    def setShortDescription(value: ShortDescription): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleUtterances(value: SampleUtterances): Self = this.set("SampleUtterances", value.asInstanceOf[js.Any])
+    def setShortDescriptionUndefined: Self = StObject.set(x, "ShortDescription", js.undefined)
     
     @scala.inline
-    def deleteSampleUtterances: Self = this.set("SampleUtterances", js.undefined)
+    def setSkillDetails(value: SkillDetails): Self = StObject.set(x, "SkillDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortDescription(value: ShortDescription): Self = this.set("ShortDescription", value.asInstanceOf[js.Any])
+    def setSkillDetailsUndefined: Self = StObject.set(x, "SkillDetails", js.undefined)
     
     @scala.inline
-    def deleteShortDescription: Self = this.set("ShortDescription", js.undefined)
+    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkillDetails(value: SkillDetails): Self = this.set("SkillDetails", value.asInstanceOf[js.Any])
+    def setSkillIdUndefined: Self = StObject.set(x, "SkillId", js.undefined)
     
     @scala.inline
-    def deleteSkillDetails: Self = this.set("SkillDetails", js.undefined)
+    def setSkillName(value: SkillName): Self = StObject.set(x, "SkillName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkillId(value: SkillId): Self = this.set("SkillId", value.asInstanceOf[js.Any])
+    def setSkillNameUndefined: Self = StObject.set(x, "SkillName", js.undefined)
     
     @scala.inline
-    def deleteSkillId: Self = this.set("SkillId", js.undefined)
+    def setSupportsLinking(value: scala.Boolean): Self = StObject.set(x, "SupportsLinking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkillName(value: SkillName): Self = this.set("SkillName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkillName: Self = this.set("SkillName", js.undefined)
-    
-    @scala.inline
-    def setSupportsLinking(value: scala.Boolean): Self = this.set("SupportsLinking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsLinking: Self = this.set("SupportsLinking", js.undefined)
+    def setSupportsLinkingUndefined: Self = StObject.set(x, "SupportsLinking", js.undefined)
   }
 }

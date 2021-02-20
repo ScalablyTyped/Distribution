@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskStartFailedEventDetails extends js.Object {
+trait TaskStartFailedEventDetails extends StObject {
   
   /**
     * A more detailed explanation of the cause of the failure.
@@ -36,36 +37,24 @@ object TaskStartFailedEventDetails {
   }
   
   @scala.inline
-  implicit class TaskStartFailedEventDetailsOps[Self <: TaskStartFailedEventDetails] (val x: Self) extends AnyVal {
+  implicit class TaskStartFailedEventDetailsMutableBuilder[Self <: TaskStartFailedEventDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: SensitiveError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Name): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setResourceType(value: Name): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setResource(value: Name): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCause(value: SensitiveCause): Self = this.set("cause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCause: Self = this.set("cause", js.undefined)
-    
-    @scala.inline
-    def setError(value: SensitiveError): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setResourceType(value: Name): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

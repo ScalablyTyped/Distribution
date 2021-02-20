@@ -2,6 +2,7 @@ package typings.titanium
 
 import typings.titanium.Titanium.Blob
 import typings.titanium.Titanium.UI.iOS.LivePhoto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,48 +48,36 @@ object CameraMediaItemType {
   }
   
   @scala.inline
-  implicit class CameraMediaItemTypeOps[Self <: CameraMediaItemType] (val x: Self) extends AnyVal {
+  implicit class CameraMediaItemTypeMutableBuilder[Self <: CameraMediaItemType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCropRect(value: Dimension): Self = StObject.set(x, "cropRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCropRectUndefined: Self = StObject.set(x, "cropRect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLivePhoto(value: LivePhoto): Self = StObject.set(x, "livePhoto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropRect(value: Dimension): Self = this.set("cropRect", value.asInstanceOf[js.Any])
+    def setLivePhotoUndefined: Self = StObject.set(x, "livePhoto", js.undefined)
     
     @scala.inline
-    def deleteCropRect: Self = this.set("cropRect", js.undefined)
+    def setMedia(value: Blob): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLivePhoto(value: LivePhoto): Self = this.set("livePhoto", value.asInstanceOf[js.Any])
+    def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLivePhoto: Self = this.set("livePhoto", js.undefined)
+    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
     @scala.inline
-    def setMedia(value: Blob): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setPreviewRect(value: Size): Self = StObject.set(x, "previewRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: String): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaType: Self = this.set("mediaType", js.undefined)
-    
-    @scala.inline
-    def setPreviewRect(value: Size): Self = this.set("previewRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviewRect: Self = this.set("previewRect", js.undefined)
+    def setPreviewRectUndefined: Self = StObject.set(x, "previewRect", js.undefined)
   }
 }

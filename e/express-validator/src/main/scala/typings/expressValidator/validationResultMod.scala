@@ -5,18 +5,16 @@ import typings.expressValidator.anon.WithDefaults
 import typings.expressValidator.baseMod.Request
 import typings.expressValidator.baseMod.ValidationError
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-validator/src/validation-result", JSImport.Namespace)
-@js.native
-object validationResultMod extends js.Object {
+object validationResultMod {
   
-  val validationResult: ResultFactory[ValidationError] with WithDefaults = js.native
-  
+  @JSImport("express-validator/src/validation-result", "Result")
   @js.native
-  class Result[T] protected () extends js.Object {
+  class Result[T] protected () extends StObject {
     def this(formatter: ErrorFormatter[T], errors: js.Array[ValidationError]) = this()
     
     def array(): js.Array[T] = js.native
@@ -35,15 +33,19 @@ object validationResultMod extends js.Object {
     def `throw`(): Unit = js.native
   }
   
+  @JSImport("express-validator/src/validation-result", "validationResult")
   @js.native
-  trait ResultFactoryBuilderOptions[T] extends js.Object {
+  val validationResult: ResultFactory[ValidationError] with WithDefaults = js.native
+  
+  type ErrorFormatter[T] = js.Function1[/* error */ ValidationError, T]
+  
+  type ResultFactory[T] = js.Function1[/* req */ Request, Result[T]]
+  
+  @js.native
+  trait ResultFactoryBuilderOptions[T] extends StObject {
     
     def formatter(error: ValidationError): T = js.native
     @JSName("formatter")
     var formatter_Original: ErrorFormatter[T] = js.native
   }
-  
-  type ErrorFormatter[T] = js.Function1[/* error */ ValidationError, T]
-  
-  type ResultFactory[T] = js.Function1[/* req */ Request, Result[T]]
 }

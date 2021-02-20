@@ -1,11 +1,12 @@
 package typings.postmark.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BounceID extends js.Object {
+trait BounceID extends StObject {
   
   var BounceID: Double = js.native
   
@@ -20,24 +21,12 @@ object BounceID {
   }
   
   @scala.inline
-  implicit class BounceIDOps[Self <: BounceID] (val x: Self) extends AnyVal {
+  implicit class BounceIDMutableBuilder[Self <: BounceID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounceID(value: Double): Self = StObject.set(x, "BounceID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBounceID(value: Double): Self = this.set("BounceID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummary(value: String): Self = this.set("Summary", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
   }
 }

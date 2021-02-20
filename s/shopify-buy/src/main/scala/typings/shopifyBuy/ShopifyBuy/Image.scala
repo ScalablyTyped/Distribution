@@ -1,5 +1,6 @@
 package typings.shopifyBuy.ShopifyBuy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,42 +39,30 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct_id(value: String): Self = this.set("product_id", value.asInstanceOf[js.Any])
+    def setVariant_ids(value: js.Array[String]): Self = StObject.set(x, "variant_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariant_idsVarargs(value: String*): Self = this.set("variant_ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariant_ids(value: js.Array[String]): Self = this.set("variant_ids", value.asInstanceOf[js.Any])
+    def setVariant_idsVarargs(value: String*): Self = StObject.set(x, "variant_ids", js.Array(value :_*))
   }
 }

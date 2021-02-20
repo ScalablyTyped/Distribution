@@ -1,11 +1,12 @@
 package typings.kuromoji.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpadicFeatures extends js.Object {
+trait IpadicFeatures extends StObject {
   
   var basic_form: String = js.native
   
@@ -54,63 +55,51 @@ object IpadicFeatures {
   }
   
   @scala.inline
-  implicit class IpadicFeaturesOps[Self <: IpadicFeatures] (val x: Self) extends AnyVal {
+  implicit class IpadicFeaturesMutableBuilder[Self <: IpadicFeatures] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasic_form(value: String): Self = StObject.set(x, "basic_form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConjugated_form(value: String): Self = StObject.set(x, "conjugated_form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConjugated_type(value: String): Self = StObject.set(x, "conjugated_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasic_form(value: String): Self = this.set("basic_form", value.asInstanceOf[js.Any])
+    def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConjugated_form(value: String): Self = this.set("conjugated_form", value.asInstanceOf[js.Any])
+    def setPos_detail_1(value: String): Self = StObject.set(x, "pos_detail_1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConjugated_type(value: String): Self = this.set("conjugated_type", value.asInstanceOf[js.Any])
+    def setPos_detail_2(value: String): Self = StObject.set(x, "pos_detail_2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPos(value: String): Self = this.set("pos", value.asInstanceOf[js.Any])
+    def setPos_detail_3(value: String): Self = StObject.set(x, "pos_detail_3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPos_detail_1(value: String): Self = this.set("pos_detail_1", value.asInstanceOf[js.Any])
+    def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPos_detail_2(value: String): Self = this.set("pos_detail_2", value.asInstanceOf[js.Any])
+    def setPronunciationUndefined: Self = StObject.set(x, "pronunciation", js.undefined)
     
     @scala.inline
-    def setPos_detail_3(value: String): Self = this.set("pos_detail_3", value.asInstanceOf[js.Any])
+    def setReading(value: String): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurface_form(value: String): Self = this.set("surface_form", value.asInstanceOf[js.Any])
+    def setReadingUndefined: Self = StObject.set(x, "reading", js.undefined)
     
     @scala.inline
-    def setWord_id(value: Double): Self = this.set("word_id", value.asInstanceOf[js.Any])
+    def setSurface_form(value: String): Self = StObject.set(x, "surface_form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWord_position(value: Double): Self = this.set("word_position", value.asInstanceOf[js.Any])
+    def setWord_id(value: Double): Self = StObject.set(x, "word_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWord_type(value: String): Self = this.set("word_type", value.asInstanceOf[js.Any])
+    def setWord_position(value: Double): Self = StObject.set(x, "word_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPronunciation(value: String): Self = this.set("pronunciation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePronunciation: Self = this.set("pronunciation", js.undefined)
-    
-    @scala.inline
-    def setReading(value: String): Self = this.set("reading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReading: Self = this.set("reading", js.undefined)
+    def setWord_type(value: String): Self = StObject.set(x, "word_type", value.asInstanceOf[js.Any])
   }
 }

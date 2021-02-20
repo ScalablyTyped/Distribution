@@ -1,12 +1,13 @@
 package typings.typescript.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait System extends js.Object {
+trait System extends StObject {
   
   var args: js.Array[java.lang.String] = js.native
   

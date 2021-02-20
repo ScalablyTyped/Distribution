@@ -1,13 +1,14 @@
 package typings.postcssSelectorParser.mod
 
 import typings.postcssSelectorParser.anon.PartialOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postcss-selector-parser", "Processor")
 @js.native
-class Processor[TransformType, SyncSelectorsType /* <: Selectors | scala.Nothing */] () extends js.Object {
+class Processor[TransformType, SyncSelectorsType /* <: Selectors | scala.Nothing */] () extends StObject {
   
   def ast(selectors: Selectors): js.Promise[Root_] = js.native
   def ast(selectors: Selectors, options: PartialOptions): js.Promise[Root_] = js.native

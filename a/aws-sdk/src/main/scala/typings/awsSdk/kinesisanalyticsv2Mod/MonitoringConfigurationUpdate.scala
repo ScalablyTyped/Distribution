@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitoringConfigurationUpdate extends js.Object {
+trait MonitoringConfigurationUpdate extends StObject {
   
   /**
     * Describes updates to whether to use the default CloudWatch logging configuration for an application. You must set this property to CUSTOM in order to set the LogLevel or MetricsLevel parameters.
@@ -31,36 +32,24 @@ object MonitoringConfigurationUpdate {
   }
   
   @scala.inline
-  implicit class MonitoringConfigurationUpdateOps[Self <: MonitoringConfigurationUpdate] (val x: Self) extends AnyVal {
+  implicit class MonitoringConfigurationUpdateMutableBuilder[Self <: MonitoringConfigurationUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationTypeUpdate(value: ConfigurationType): Self = StObject.set(x, "ConfigurationTypeUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationTypeUpdateUndefined: Self = StObject.set(x, "ConfigurationTypeUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogLevelUpdate(value: LogLevel): Self = StObject.set(x, "LogLevelUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationTypeUpdate(value: ConfigurationType): Self = this.set("ConfigurationTypeUpdate", value.asInstanceOf[js.Any])
+    def setLogLevelUpdateUndefined: Self = StObject.set(x, "LogLevelUpdate", js.undefined)
     
     @scala.inline
-    def deleteConfigurationTypeUpdate: Self = this.set("ConfigurationTypeUpdate", js.undefined)
+    def setMetricsLevelUpdate(value: MetricsLevel): Self = StObject.set(x, "MetricsLevelUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevelUpdate(value: LogLevel): Self = this.set("LogLevelUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogLevelUpdate: Self = this.set("LogLevelUpdate", js.undefined)
-    
-    @scala.inline
-    def setMetricsLevelUpdate(value: MetricsLevel): Self = this.set("MetricsLevelUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricsLevelUpdate: Self = this.set("MetricsLevelUpdate", js.undefined)
+    def setMetricsLevelUpdateUndefined: Self = StObject.set(x, "MetricsLevelUpdate", js.undefined)
   }
 }

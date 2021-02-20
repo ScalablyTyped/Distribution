@@ -3,13 +3,14 @@ package typings.evernote.mod.NoteStore
 import typings.evernote.anon.IncludeContainingNotebooks
 import typings.evernote.mod.Types.RelatedContentType
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.RelatedResultSpec")
 @js.native
-class RelatedResultSpec () extends js.Object {
+class RelatedResultSpec () extends StObject {
   def this(args: IncludeContainingNotebooks) = this()
   
   var includeContainingNotebooks: js.UndefOr[Boolean] = js.native

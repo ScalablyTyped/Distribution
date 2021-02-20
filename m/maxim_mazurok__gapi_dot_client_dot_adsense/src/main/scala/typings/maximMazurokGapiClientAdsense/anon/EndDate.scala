@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdsense.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndDate extends js.Object {
+trait EndDate extends StObject {
   
   /** Accounts upon which to report. */
   var accountId: js.UndefOr[String | js.Array[String]] = js.native
@@ -76,141 +77,129 @@ object EndDate {
   }
   
   @scala.inline
-  implicit class EndDateOps[Self <: EndDate] (val x: Self) extends AnyVal {
+  implicit class EndDateMutableBuilder[Self <: EndDate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String | js.Array[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountIdVarargs(value: String*): Self = StObject.set(x, "accountId", js.Array(value :_*))
     
     @scala.inline
-    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def setAccountIdVarargs(value: String*): Self = this.set("accountId", js.Array(value :_*))
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String | js.Array[String]): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setDimension(value: String | js.Array[String]): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setDimensionVarargs(value: String*): Self = StObject.set(x, "dimension", js.Array(value :_*))
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionVarargs(value: String*): Self = this.set("dimension", js.Array(value :_*))
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setDimension(value: String | js.Array[String]): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    def setFilter(value: String | js.Array[String]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDimension: Self = this.set("dimension", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterVarargs(value: String*): Self = this.set("filter", js.Array(value :_*))
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setFilter(value: String | js.Array[String]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMetric(value: String | js.Array[String]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricVarargs(value: String*): Self = this.set("metric", js.Array(value :_*))
+    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
     @scala.inline
-    def setMetric(value: String | js.Array[String]): Self = this.set("metric", value.asInstanceOf[js.Any])
+    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
+    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     @scala.inline
-    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     @scala.inline
-    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    def setSort(value: String | js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
     @scala.inline
-    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortVarargs(value: String*): Self = this.set("sort", js.Array(value :_*))
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: String | js.Array[String]): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setUseTimezoneReporting(value: Boolean): Self = StObject.set(x, "useTimezoneReporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    def setUseTimezoneReportingUndefined: Self = StObject.set(x, "useTimezoneReporting", js.undefined)
     
     @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseTimezoneReporting(value: Boolean): Self = this.set("useTimezoneReporting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseTimezoneReporting: Self = this.set("useTimezoneReporting", js.undefined)
-    
-    @scala.inline
-    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIp: Self = this.set("userIp", js.undefined)
+    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
   }
 }

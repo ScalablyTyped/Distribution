@@ -1,12 +1,13 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.instancedMeshMod.InstancedMesh
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableDefaultHandMesh extends js.Object {
+trait DisableDefaultHandMesh extends StObject {
   
   /**
     * Should the default hand mesh be disabled. In this case, the spheres will be visible (unless set invisible).
@@ -78,80 +79,68 @@ object DisableDefaultHandMesh {
   }
   
   @scala.inline
-  implicit class DisableDefaultHandMeshOps[Self <: DisableDefaultHandMesh] (val x: Self) extends AnyVal {
+  implicit class DisableDefaultHandMeshMutableBuilder[Self <: DisableDefaultHandMesh] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableDefaultHandMesh(value: Boolean): Self = StObject.set(x, "disableDefaultHandMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableDefaultHandMeshUndefined: Self = StObject.set(x, "disableDefaultHandMesh", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnablePhysics(value: Boolean): Self = StObject.set(x, "enablePhysics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDefaultHandMesh(value: Boolean): Self = this.set("disableDefaultHandMesh", value.asInstanceOf[js.Any])
+    def setEnablePhysicsUndefined: Self = StObject.set(x, "enablePhysics", js.undefined)
     
     @scala.inline
-    def deleteDisableDefaultHandMesh: Self = this.set("disableDefaultHandMesh", js.undefined)
+    def setHandMeshes(value: Left): Self = StObject.set(x, "handMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePhysics(value: Boolean): Self = this.set("enablePhysics", value.asInstanceOf[js.Any])
+    def setHandMeshesUndefined: Self = StObject.set(x, "handMeshes", js.undefined)
     
     @scala.inline
-    def deleteEnablePhysics: Self = this.set("enablePhysics", js.undefined)
+    def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandMeshes(value: Left): Self = this.set("handMeshes", value.asInstanceOf[js.Any])
+    def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
     
     @scala.inline
-    def deleteHandMeshes: Self = this.set("handMeshes", js.undefined)
+    def setKeepOriginalVisible(value: Boolean): Self = StObject.set(x, "keepOriginalVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvisible(value: Boolean): Self = this.set("invisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvisible: Self = this.set("invisible", js.undefined)
-    
-    @scala.inline
-    def setKeepOriginalVisible(value: Boolean): Self = this.set("keepOriginalVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepOriginalVisible: Self = this.set("keepOriginalVisible", js.undefined)
+    def setKeepOriginalVisibleUndefined: Self = StObject.set(x, "keepOriginalVisible", js.undefined)
     
     @scala.inline
     def setOnHandJointMeshGenerated(
       value: (/* meshInstance */ InstancedMesh, /* jointId */ Double, /* controllerId */ String) => js.UndefOr[typings.babylonjs.meshMod.Mesh]
-    ): Self = this.set("onHandJointMeshGenerated", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onHandJointMeshGenerated", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnHandJointMeshGenerated: Self = this.set("onHandJointMeshGenerated", js.undefined)
+    def setOnHandJointMeshGeneratedUndefined: Self = StObject.set(x, "onHandJointMeshGenerated", js.undefined)
     
     @scala.inline
-    def setPhysicsProps(value: Restitution): Self = this.set("physicsProps", value.asInstanceOf[js.Any])
+    def setPhysicsProps(value: Restitution): Self = StObject.set(x, "physicsProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhysicsProps: Self = this.set("physicsProps", js.undefined)
+    def setPhysicsPropsUndefined: Self = StObject.set(x, "physicsProps", js.undefined)
     
     @scala.inline
-    def setRigMapping(value: Right): Self = this.set("rigMapping", value.asInstanceOf[js.Any])
+    def setRigMapping(value: Right): Self = StObject.set(x, "rigMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRigMapping: Self = this.set("rigMapping", js.undefined)
+    def setRigMappingUndefined: Self = StObject.set(x, "rigMapping", js.undefined)
     
     @scala.inline
-    def setScaleFactor(value: Double): Self = this.set("scaleFactor", value.asInstanceOf[js.Any])
+    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScaleFactor: Self = this.set("scaleFactor", js.undefined)
+    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
     
     @scala.inline
-    def setSourceMesh(value: typings.babylonjs.meshMod.Mesh): Self = this.set("sourceMesh", value.asInstanceOf[js.Any])
+    def setSourceMesh(value: typings.babylonjs.meshMod.Mesh): Self = StObject.set(x, "sourceMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceMesh: Self = this.set("sourceMesh", js.undefined)
+    def setSourceMeshUndefined: Self = StObject.set(x, "sourceMesh", js.undefined)
   }
 }

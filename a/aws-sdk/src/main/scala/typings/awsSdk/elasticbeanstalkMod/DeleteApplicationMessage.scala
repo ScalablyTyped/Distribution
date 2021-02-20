@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteApplicationMessage extends js.Object {
+trait DeleteApplicationMessage extends StObject {
   
   /**
     * The name of the application to delete.
@@ -26,27 +27,15 @@ object DeleteApplicationMessage {
   }
   
   @scala.inline
-  implicit class DeleteApplicationMessageOps[Self <: DeleteApplicationMessage] (val x: Self) extends AnyVal {
+  implicit class DeleteApplicationMessageMutableBuilder[Self <: DeleteApplicationMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTerminateEnvByForce(value: TerminateEnvForce): Self = StObject.set(x, "TerminateEnvByForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTerminateEnvByForce(value: TerminateEnvForce): Self = this.set("TerminateEnvByForce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminateEnvByForce: Self = this.set("TerminateEnvByForce", js.undefined)
+    def setTerminateEnvByForceUndefined: Self = StObject.set(x, "TerminateEnvByForce", js.undefined)
   }
 }

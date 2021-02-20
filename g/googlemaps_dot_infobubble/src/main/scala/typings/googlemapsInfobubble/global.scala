@@ -1,18 +1,15 @@
 package typings.googlemapsInfobubble
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object google extends js.Object {
+  object google {
     
-    @js.native
-    object maps extends js.Object {
+    object maps {
       
       /**
         * @name CSS3 InfoBubble with tabs for Google Maps API V3
@@ -41,8 +38,7 @@ object global extends js.Object {
       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
       THE SOFTWARE.
       */
-      @js.native
-      object infobubble extends js.Object
+      object infobubble
     }
   }
 }

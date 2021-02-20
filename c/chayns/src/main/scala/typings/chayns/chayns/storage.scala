@@ -1,5 +1,6 @@
 package typings.chayns.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,14 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * chayns.storage
   */
-@JSGlobal("chayns.storage")
-@js.native
-object storage extends js.Object {
+object storage {
   
   @js.native
-  sealed trait accessMode extends js.Object
+  sealed trait accessMode extends StObject
+  @JSGlobal("chayns.storage.accessMode")
   @js.native
-  object accessMode extends js.Object {
+  object accessMode extends StObject {
     
     @js.native
     sealed trait PRIVATE extends accessMode

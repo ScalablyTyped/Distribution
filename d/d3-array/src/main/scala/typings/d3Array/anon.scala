@@ -9,16 +9,15 @@ import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply(array: Float32Array): Float32Array = js.native
     def apply(array: Float32Array, lo: js.UndefOr[scala.Nothing], hi: Double): Float32Array = js.native

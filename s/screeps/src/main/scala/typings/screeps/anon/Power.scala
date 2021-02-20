@@ -1,12 +1,13 @@
 package typings.screeps.anon
 
 import typings.screeps.PowerConstant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Power extends js.Object {
+trait Power extends StObject {
   
   var power: PowerConstant = js.native
   
@@ -21,24 +22,12 @@ object Power {
   }
   
   @scala.inline
-  implicit class PowerOps[Self <: Power] (val x: Self) extends AnyVal {
+  implicit class PowerMutableBuilder[Self <: Power] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPower(value: PowerConstant): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPower(value: PowerConstant): Self = this.set("power", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetId(value: String): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

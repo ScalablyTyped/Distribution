@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.draw
 
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,84 +68,72 @@ object ILimitedCache {
   }
   
   @scala.inline
-  implicit class ILimitedCacheOps[Self <: ILimitedCache] (val x: Self) extends AnyVal {
+  implicit class ILimitedCacheMutableBuilder[Self <: ILimitedCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeeder(value: js.Any): Self = StObject.set(x, "feeder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setFeederUndefined: Self = StObject.set(x, "feeder", js.undefined)
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setGet(value: (/* id */ String, /* repeated */ js.Any) => _): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFeeder(value: js.Any): Self = this.set("feeder", value.asInstanceOf[js.Any])
+    def setGetFeeder(value: () => _): Self = StObject.set(x, "getFeeder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFeeder: Self = this.set("feeder", js.undefined)
+    def setGetFeederUndefined: Self = StObject.set(x, "getFeeder", js.undefined)
     
     @scala.inline
-    def setGet(value: (/* id */ String, /* repeated */ js.Any) => _): Self = this.set("get", js.Any.fromFunction2(value))
+    def setGetLimit(value: () => Double): Self = StObject.set(x, "getLimit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setGetLimitUndefined: Self = StObject.set(x, "getLimit", js.undefined)
     
     @scala.inline
-    def setGetFeeder(value: () => _): Self = this.set("getFeeder", js.Any.fromFunction0(value))
+    def setGetScope(value: () => _): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetFeeder: Self = this.set("getFeeder", js.undefined)
+    def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
     @scala.inline
-    def setGetLimit(value: () => Double): Self = this.set("getLimit", js.Any.fromFunction0(value))
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteGetLimit: Self = this.set("getLimit", js.undefined)
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetScope(value: () => _): Self = this.set("getScope", js.Any.fromFunction0(value))
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteGetScope: Self = this.set("getScope", js.undefined)
+    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setSetFeeder(value: /* feeder */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "setFeeder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScope(value: js.Any): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSetFeederUndefined: Self = StObject.set(x, "setFeeder", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setSetLimit(value: /* limit */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setLimit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFeeder(value: /* feeder */ js.UndefOr[js.Any] => Double): Self = this.set("setFeeder", js.Any.fromFunction1(value))
+    def setSetLimitUndefined: Self = StObject.set(x, "setLimit", js.undefined)
     
     @scala.inline
-    def deleteSetFeeder: Self = this.set("setFeeder", js.undefined)
+    def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLimit(value: /* limit */ js.UndefOr[Double] => Unit): Self = this.set("setLimit", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetLimit: Self = this.set("setLimit", js.undefined)
-    
-    @scala.inline
-    def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = this.set("setScope", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetScope: Self = this.set("setScope", js.undefined)
+    def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
   }
 }

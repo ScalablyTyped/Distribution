@@ -3,13 +3,12 @@ package typings.twilioMcsClient
 import typings.std.Date
 import typings.twilioMcsClient.configurationMod.Configuration
 import typings.twilioMcsClient.networkMod.Network
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-mcs-client/lib/media", JSImport.Namespace)
-@js.native
-object mediaMod extends js.Object {
+object mediaMod {
   
   /**
     * @classdesc A Media represents a metadata information for the media upload
@@ -21,8 +20,9 @@ object mediaMod extends js.Object {
     * @property {String} contentType - content type of media
     * @property {String} fileName - file name, if present, null otherwise
     */
+  @JSImport("twilio-mcs-client/lib/media", "Media")
   @js.native
-  class Media protected () extends js.Object {
+  class Media protected () extends StObject {
     def this(config: Configuration, network: Network, data: js.Any) = this()
     
     var _update: js.Any = js.native

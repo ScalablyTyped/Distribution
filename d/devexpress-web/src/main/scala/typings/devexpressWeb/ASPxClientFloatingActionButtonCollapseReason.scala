@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Lists values specifying whether the user action or APIs has collapsed the action group.
   */
 @js.native
-trait ASPxClientFloatingActionButtonCollapseReason extends js.Object {
+trait ASPxClientFloatingActionButtonCollapseReason extends StObject {
   
   /**
     * The action group is collapsed using APIs.
@@ -34,27 +35,15 @@ object ASPxClientFloatingActionButtonCollapseReason {
   }
   
   @scala.inline
-  implicit class ASPxClientFloatingActionButtonCollapseReasonOps[Self <: ASPxClientFloatingActionButtonCollapseReason] (val x: Self) extends AnyVal {
+  implicit class ASPxClientFloatingActionButtonCollapseReasonMutableBuilder[Self <: ASPxClientFloatingActionButtonCollapseReason] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAPI(value: String): Self = StObject.set(x, "API", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionItem(value: String): Self = StObject.set(x, "ActionItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAPI(value: String): Self = this.set("API", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActionItem(value: String): Self = this.set("ActionItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCollapseButton(value: String): Self = this.set("CollapseButton", value.asInstanceOf[js.Any])
+    def setCollapseButton(value: String): Self = StObject.set(x, "CollapseButton", value.asInstanceOf[js.Any])
   }
 }

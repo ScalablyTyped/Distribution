@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,63 +67,51 @@ object ParamsResourceUsersHistoryList {
   }
   
   @scala.inline
-  implicit class ParamsResourceUsersHistoryListOps[Self <: ParamsResourceUsersHistoryList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceUsersHistoryListMutableBuilder[Self <: ParamsResourceUsersHistoryList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistoryTypes(value: js.Array[String]): Self = StObject.set(x, "historyTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setHistoryTypesUndefined: Self = StObject.set(x, "historyTypes", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setHistoryTypesVarargs(value: String*): Self = StObject.set(x, "historyTypes", js.Array(value :_*))
     
     @scala.inline
-    def setHistoryTypesVarargs(value: String*): Self = this.set("historyTypes", js.Array(value :_*))
+    def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryTypes(value: js.Array[String]): Self = this.set("historyTypes", value.asInstanceOf[js.Any])
+    def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
     
     @scala.inline
-    def deleteHistoryTypes: Self = this.set("historyTypes", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelId(value: String): Self = this.set("labelId", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteLabelId: Self = this.set("labelId", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setStartHistoryId(value: String): Self = StObject.set(x, "startHistoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setStartHistoryIdUndefined: Self = StObject.set(x, "startHistoryId", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartHistoryId(value: String): Self = this.set("startHistoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartHistoryId: Self = this.set("startHistoryId", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

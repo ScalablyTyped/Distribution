@@ -2,6 +2,7 @@ package typings.muicss.reactMod
 
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,78 +39,66 @@ object ColProps {
   }
   
   @scala.inline
-  implicit class ColPropsOps[Self <: ColProps] (val x: Self) extends AnyVal {
+  implicit class ColPropsMutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setLg-offset`(value: Double): Self = StObject.set(x, "lg-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setLg-offsetUndefined`: Self = StObject.set(x, "lg-offset", js.undefined)
     
     @scala.inline
-    def setLg(value: Double): Self = this.set("lg", value.asInstanceOf[js.Any])
+    def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
     
     @scala.inline
-    def deleteLg: Self = this.set("lg", js.undefined)
+    def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLg-offset`(value: Double): Self = this.set("lg-offset", value.asInstanceOf[js.Any])
+    def `setMd-offset`(value: Double): Self = StObject.set(x, "md-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteLg-offset`: Self = this.set("lg-offset", js.undefined)
+    def `setMd-offsetUndefined`: Self = StObject.set(x, "md-offset", js.undefined)
     
     @scala.inline
-    def setMd(value: Double): Self = this.set("md", value.asInstanceOf[js.Any])
+    def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
     
     @scala.inline
-    def deleteMd: Self = this.set("md", js.undefined)
+    def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMd-offset`(value: Double): Self = this.set("md-offset", value.asInstanceOf[js.Any])
+    def `setSm-offset`(value: Double): Self = StObject.set(x, "sm-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMd-offset`: Self = this.set("md-offset", js.undefined)
+    def `setSm-offsetUndefined`: Self = StObject.set(x, "sm-offset", js.undefined)
     
     @scala.inline
-    def setSm(value: Double): Self = this.set("sm", value.asInstanceOf[js.Any])
+    def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
     
     @scala.inline
-    def deleteSm: Self = this.set("sm", js.undefined)
+    def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSm-offset`(value: Double): Self = this.set("sm-offset", value.asInstanceOf[js.Any])
+    def `setXl-offset`(value: Double): Self = StObject.set(x, "xl-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteSm-offset`: Self = this.set("sm-offset", js.undefined)
+    def `setXl-offsetUndefined`: Self = StObject.set(x, "xl-offset", js.undefined)
     
     @scala.inline
-    def setXl(value: Double): Self = this.set("xl", value.asInstanceOf[js.Any])
+    def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
     
     @scala.inline
-    def deleteXl: Self = this.set("xl", js.undefined)
+    def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setXl-offset`(value: Double): Self = this.set("xl-offset", value.asInstanceOf[js.Any])
+    def `setXs-offset`(value: Double): Self = StObject.set(x, "xs-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteXl-offset`: Self = this.set("xl-offset", js.undefined)
+    def `setXs-offsetUndefined`: Self = StObject.set(x, "xs-offset", js.undefined)
     
     @scala.inline
-    def setXs(value: Double): Self = this.set("xs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXs: Self = this.set("xs", js.undefined)
-    
-    @scala.inline
-    def `setXs-offset`(value: Double): Self = this.set("xs-offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteXs-offset`: Self = this.set("xs-offset", js.undefined)
+    def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
   }
 }

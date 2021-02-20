@@ -1,13 +1,14 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnnotationsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Annotation")
 @js.native
-class Annotation protected () extends js.Object {
+class Annotation protected () extends StObject {
   /**
     * An annotation class which serves as a container for items like labels or
     * shapes. Created items are positioned on the chart either by linking them

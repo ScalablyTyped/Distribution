@@ -7,12 +7,13 @@ import typings.hapiHapi.mod.Lifecycle.FailAction
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import typings.hapiHapi.mod.Util.Dictionary
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteOptionsPayload extends js.Object {
+trait RouteOptionsPayload extends StObject {
   
   /**
     * @default allows parsing of the following mime types:
@@ -128,92 +129,80 @@ object RouteOptionsPayload {
   }
   
   @scala.inline
-  implicit class RouteOptionsPayloadOps[Self <: RouteOptionsPayload] (val x: Self) extends AnyVal {
+  implicit class RouteOptionsPayloadMutableBuilder[Self <: RouteOptionsPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow(value: String | js.Array[String]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value :_*))
     
     @scala.inline
-    def setAllowVarargs(value: String*): Self = this.set("allow", js.Array(value :_*))
+    def setCompression(value: Dictionary[PayloadCompressionDecoderSettings]): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow(value: String | js.Array[String]): Self = this.set("allow", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def deleteAllow: Self = this.set("allow", js.undefined)
+    def setDefaultContentType(value: String): Self = StObject.set(x, "defaultContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: Dictionary[PayloadCompressionDecoderSettings]): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setDefaultContentTypeUndefined: Self = StObject.set(x, "defaultContentType", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
-    
-    @scala.inline
-    def setDefaultContentType(value: String): Self = this.set("defaultContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultContentType: Self = this.set("defaultContentType", js.undefined)
+    def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFailActionFunction3(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
-    ): Self = this.set("failAction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFailAction(value: FailAction): Self = this.set("failAction", value.asInstanceOf[js.Any])
+    def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
     @scala.inline
-    def deleteFailAction: Self = this.set("failAction", js.undefined)
+    def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBytes(value: Double): Self = this.set("maxBytes", value.asInstanceOf[js.Any])
+    def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
     
     @scala.inline
-    def deleteMaxBytes: Self = this.set("maxBytes", js.undefined)
+    def setMultipart(value: `false` | Output): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipart(value: `false` | Output): Self = this.set("multipart", value.asInstanceOf[js.Any])
+    def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
     @scala.inline
-    def deleteMultipart: Self = this.set("multipart", js.undefined)
+    def setOutput(value: PayloadOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: PayloadOutput): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
+    def setOverride(value: String): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverride(value: String): Self = this.set("override", value.asInstanceOf[js.Any])
+    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
     @scala.inline
-    def deleteOverride: Self = this.set("override", js.undefined)
+    def setParse(value: Boolean | gunzip): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParse(value: Boolean | gunzip): Self = this.set("parse", value.asInstanceOf[js.Any])
+    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
     @scala.inline
-    def deleteParse: Self = this.set("parse", js.undefined)
+    def setTimeout(value: `false` | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: `false` | Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUploads(value: String): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploads(value: String): Self = this.set("uploads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploads: Self = this.set("uploads", js.undefined)
+    def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
   }
 }

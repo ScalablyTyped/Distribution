@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,63 +51,51 @@ object ParamsResourceCitiesList {
   }
   
   @scala.inline
-  implicit class ParamsResourceCitiesListOps[Self <: ParamsResourceCitiesList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceCitiesListMutableBuilder[Self <: ParamsResourceCitiesList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryDartIds(value: js.Array[String]): Self = StObject.set(x, "countryDartIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCountryDartIdsUndefined: Self = StObject.set(x, "countryDartIds", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setCountryDartIdsVarargs(value: String*): Self = StObject.set(x, "countryDartIds", js.Array(value :_*))
     
     @scala.inline
-    def setCountryDartIdsVarargs(value: String*): Self = this.set("countryDartIds", js.Array(value :_*))
+    def setDartIds(value: js.Array[String]): Self = StObject.set(x, "dartIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryDartIds(value: js.Array[String]): Self = this.set("countryDartIds", value.asInstanceOf[js.Any])
+    def setDartIdsUndefined: Self = StObject.set(x, "dartIds", js.undefined)
     
     @scala.inline
-    def deleteCountryDartIds: Self = this.set("countryDartIds", js.undefined)
+    def setDartIdsVarargs(value: String*): Self = StObject.set(x, "dartIds", js.Array(value :_*))
     
     @scala.inline
-    def setDartIdsVarargs(value: String*): Self = this.set("dartIds", js.Array(value :_*))
+    def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDartIds(value: js.Array[String]): Self = this.set("dartIds", value.asInstanceOf[js.Any])
+    def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
     
     @scala.inline
-    def deleteDartIds: Self = this.set("dartIds", js.undefined)
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePrefix(value: String): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     @scala.inline
-    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    def setRegionDartIds(value: js.Array[String]): Self = StObject.set(x, "regionDartIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setRegionDartIdsUndefined: Self = StObject.set(x, "regionDartIds", js.undefined)
     
     @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
-    
-    @scala.inline
-    def setRegionDartIdsVarargs(value: String*): Self = this.set("regionDartIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegionDartIds(value: js.Array[String]): Self = this.set("regionDartIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionDartIds: Self = this.set("regionDartIds", js.undefined)
+    def setRegionDartIdsVarargs(value: String*): Self = StObject.set(x, "regionDartIds", js.Array(value :_*))
   }
 }

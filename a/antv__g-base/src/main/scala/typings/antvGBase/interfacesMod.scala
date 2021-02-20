@@ -17,13 +17,12 @@ import typings.antvGBase.typesMod.Renderer
 import typings.antvGBase.typesMod.ShapeBase
 import typings.antvGBase.typesMod.ShapeCfg
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-base/lib/interfaces", JSImport.Namespace)
-@js.native
-object interfacesMod extends js.Object {
+object interfacesMod {
   
   @js.native
   trait IBase extends IObservable {
@@ -607,7 +606,7 @@ object interfacesMod extends js.Object {
   }
   
   @js.native
-  trait IObservable extends js.Object {
+  trait IObservable extends StObject {
     
     /**
       * 触发事件, trigger 的别名函数

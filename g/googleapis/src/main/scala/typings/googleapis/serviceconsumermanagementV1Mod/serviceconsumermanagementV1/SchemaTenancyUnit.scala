@@ -1,5 +1,6 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Representation of a tenancy unit.
   */
 @js.native
-trait SchemaTenancyUnit extends js.Object {
+trait SchemaTenancyUnit extends StObject {
   
   /**
     * @OutputOnly Cloud resource name of the consumer of this service. For
@@ -50,51 +51,39 @@ object SchemaTenancyUnit {
   }
   
   @scala.inline
-  implicit class SchemaTenancyUnitOps[Self <: SchemaTenancyUnit] (val x: Self) extends AnyVal {
+  implicit class SchemaTenancyUnitMutableBuilder[Self <: SchemaTenancyUnit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumer(value: String): Self = StObject.set(x, "consumer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerUndefined: Self = StObject.set(x, "consumer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumer(value: String): Self = this.set("consumer", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteConsumer: Self = this.set("consumer", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTenantResources(value: js.Array[SchemaTenantResource]): Self = StObject.set(x, "tenantResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setTenantResourcesUndefined: Self = StObject.set(x, "tenantResources", js.undefined)
     
     @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
-    
-    @scala.inline
-    def setTenantResourcesVarargs(value: SchemaTenantResource*): Self = this.set("tenantResources", js.Array(value :_*))
-    
-    @scala.inline
-    def setTenantResources(value: js.Array[SchemaTenantResource]): Self = this.set("tenantResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenantResources: Self = this.set("tenantResources", js.undefined)
+    def setTenantResourcesVarargs(value: SchemaTenantResource*): Self = StObject.set(x, "tenantResources", js.Array(value :_*))
   }
 }

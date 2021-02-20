@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.lex
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntentFollowUpPromptPrompt extends js.Object {
+trait IntentFollowUpPromptPrompt extends StObject {
   
   /**
     * The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).
@@ -36,33 +37,21 @@ object IntentFollowUpPromptPrompt {
   }
   
   @scala.inline
-  implicit class IntentFollowUpPromptPromptOps[Self <: IntentFollowUpPromptPrompt] (val x: Self) extends AnyVal {
+  implicit class IntentFollowUpPromptPromptMutableBuilder[Self <: IntentFollowUpPromptPrompt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxAttempts(value: Input[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessages(value: Input[js.Array[Input[IntentFollowUpPromptPromptMessage]]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessagesVarargs(value: Input[IntentFollowUpPromptPromptMessage]*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setMaxAttempts(value: Input[Double]): Self = this.set("maxAttempts", value.asInstanceOf[js.Any])
+    def setResponseCard(value: Input[String]): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesVarargs(value: Input[IntentFollowUpPromptPromptMessage]*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: Input[js.Array[Input[IntentFollowUpPromptPromptMessage]]]): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseCard(value: Input[String]): Self = this.set("responseCard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseCard: Self = this.set("responseCard", js.undefined)
+    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
   }
 }

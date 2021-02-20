@@ -1,12 +1,13 @@
 package typings.aframe.anon
 
 import typings.aframe.mod.Coordinate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsCoordinate extends js.Object {
+trait IsCoordinate extends StObject {
   
   def isCoordinate(value: String): Boolean = js.native
   
@@ -23,27 +24,15 @@ object IsCoordinate {
   }
   
   @scala.inline
-  implicit class IsCoordinateOps[Self <: IsCoordinate] (val x: Self) extends AnyVal {
+  implicit class IsCoordinateMutableBuilder[Self <: IsCoordinate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCoordinate(value: String => Boolean): Self = StObject.set(x, "isCoordinate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParse(value: String => Coordinate): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsCoordinate(value: String => Boolean): Self = this.set("isCoordinate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParse(value: String => Coordinate): Self = this.set("parse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStringify(value: Coordinate => String): Self = this.set("stringify", js.Any.fromFunction1(value))
+    def setStringify(value: Coordinate => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
   }
 }

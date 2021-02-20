@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a feature report. */
 @js.native
-trait HidFeatureReport extends js.Object {
+trait HidFeatureReport extends StObject {
   
   /** Retrieves, or sets, the data associated with a given feature report. */
   var data: IBuffer = js.native
@@ -61,36 +62,24 @@ object HidFeatureReport {
   }
   
   @scala.inline
-  implicit class HidFeatureReportOps[Self <: HidFeatureReport] (val x: Self) extends AnyVal {
+  implicit class HidFeatureReportMutableBuilder[Self <: HidFeatureReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBooleanControl(value: (Double, Double) => HidBooleanControl): Self = StObject.set(x, "getBooleanControl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBooleanControlByDescription(value: HidBooleanControlDescription => HidBooleanControl): Self = StObject.set(x, "getBooleanControlByDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setData(value: IBuffer): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGetNumericControl(value: (Double, Double) => HidNumericControl): Self = StObject.set(x, "getNumericControl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetBooleanControl(value: (Double, Double) => HidBooleanControl): Self = this.set("getBooleanControl", js.Any.fromFunction2(value))
+    def setGetNumericControlByDescription(value: HidNumericControlDescription => HidNumericControl): Self = StObject.set(x, "getNumericControlByDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBooleanControlByDescription(value: HidBooleanControlDescription => HidBooleanControl): Self = this.set("getBooleanControlByDescription", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetNumericControl(value: (Double, Double) => HidNumericControl): Self = this.set("getNumericControl", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetNumericControlByDescription(value: HidNumericControlDescription => HidNumericControl): Self = this.set("getNumericControlByDescription", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

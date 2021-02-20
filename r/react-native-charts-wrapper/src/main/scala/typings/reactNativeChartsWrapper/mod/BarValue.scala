@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BarValue extends js.Object {
+trait BarValue extends StObject {
   
   var marker: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -22,42 +23,30 @@ object BarValue {
   }
   
   @scala.inline
-  implicit class BarValueOps[Self <: BarValue] (val x: Self) extends AnyVal {
+  implicit class BarValueMutableBuilder[Self <: BarValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String | js.Array[String]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkerVarargs(value: String*): Self = StObject.set(x, "marker", js.Array(value :_*))
     
     @scala.inline
-    def setMarkerVarargs(value: String*): Self = this.set("marker", js.Array(value :_*))
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String | js.Array[String]): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setY(value: Double | js.Array[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setYVarargs(value: Double*): Self = this.set("y", js.Array(value :_*))
-    
-    @scala.inline
-    def setY(value: Double | js.Array[Double]): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

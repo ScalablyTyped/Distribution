@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Not allowed in: Content scripts, Devtools pages
   */
-@JSGlobal("browser.pkcs11")
-@js.native
-object pkcs11 extends js.Object
+object pkcs11

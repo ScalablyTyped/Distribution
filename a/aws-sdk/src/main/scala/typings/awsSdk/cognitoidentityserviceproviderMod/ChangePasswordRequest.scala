@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangePasswordRequest extends js.Object {
+trait ChangePasswordRequest extends StObject {
   
   /**
     * The access token.
@@ -31,27 +32,15 @@ object ChangePasswordRequest {
   }
   
   @scala.inline
-  implicit class ChangePasswordRequestOps[Self <: ChangePasswordRequest] (val x: Self) extends AnyVal {
+  implicit class ChangePasswordRequestMutableBuilder[Self <: ChangePasswordRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreviousPassword(value: PasswordType): Self = StObject.set(x, "PreviousPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousPassword(value: PasswordType): Self = this.set("PreviousPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProposedPassword(value: PasswordType): Self = this.set("ProposedPassword", value.asInstanceOf[js.Any])
+    def setProposedPassword(value: PasswordType): Self = StObject.set(x, "ProposedPassword", value.asInstanceOf[js.Any])
   }
 }

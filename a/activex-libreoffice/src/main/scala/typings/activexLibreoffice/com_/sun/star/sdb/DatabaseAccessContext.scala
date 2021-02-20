@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XLocalizable
 import typings.activexLibreoffice.com_.sun.star.util.AliasProgrammaticPair
 import typings.activexLibreoffice.com_.sun.star.util.XLocalizedAliases
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

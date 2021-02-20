@@ -3,14 +3,14 @@ package typings.three
 import typings.three.extrudeBufferGeometryMod.ExtrudeGeometryOptions
 import typings.three.geometryMod.Geometry
 import typings.three.shapeMod.Shape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/ExtrudeGeometry", JSImport.Namespace)
-@js.native
-object extrudeGeometryMod extends js.Object {
+object extrudeGeometryMod {
   
+  @JSImport("three/src/geometries/ExtrudeGeometry", "ExtrudeGeometry")
   @js.native
   class ExtrudeGeometry protected () extends Geometry {
     def this(shapes: js.Array[Shape]) = this()

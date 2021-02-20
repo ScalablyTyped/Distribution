@@ -2,13 +2,14 @@ package typings.walkSync.anon
 
 import typings.minimatch.mod.IMinimatch
 import typings.minimatch.mod.IOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined walk-sync.walk-sync.Optionalize<walk-sync.walk-sync.Options, 'fs'> */
 @js.native
-trait OptionalizeOptionsfs extends js.Object {
+trait OptionalizeOptionsfs extends StObject {
   
   var directories: js.UndefOr[Boolean] = js.native
   
@@ -31,60 +32,48 @@ object OptionalizeOptionsfs {
   }
   
   @scala.inline
-  implicit class OptionalizeOptionsfsOps[Self <: OptionalizeOptionsfs] (val x: Self) extends AnyVal {
+  implicit class OptionalizeOptionsfsMutableBuilder[Self <: OptionalizeOptionsfs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectories(value: Boolean): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFs(value: TypeoffsNode): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectories(value: Boolean): Self = this.set("directories", value.asInstanceOf[js.Any])
+    def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
     @scala.inline
-    def deleteDirectories: Self = this.set("directories", js.undefined)
+    def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFs(value: TypeoffsNode): Self = this.set("fs", value.asInstanceOf[js.Any])
+    def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
     
     @scala.inline
-    def deleteFs: Self = this.set("fs", js.undefined)
+    def setGlobs(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobOptions(value: IOptions): Self = this.set("globOptions", value.asInstanceOf[js.Any])
+    def setGlobsUndefined: Self = StObject.set(x, "globs", js.undefined)
     
     @scala.inline
-    def deleteGlobOptions: Self = this.set("globOptions", js.undefined)
+    def setGlobsVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "globs", js.Array(value :_*))
     
     @scala.inline
-    def setGlobsVarargs(value: (String | IMinimatch)*): Self = this.set("globs", js.Array(value :_*))
+    def setIgnore(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobs(value: js.Array[String | IMinimatch]): Self = this.set("globs", value.asInstanceOf[js.Any])
+    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
     @scala.inline
-    def deleteGlobs: Self = this.set("globs", js.undefined)
+    def setIgnoreVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreVarargs(value: (String | IMinimatch)*): Self = this.set("ignore", js.Array(value :_*))
+    def setIncludeBasePath(value: Boolean): Self = StObject.set(x, "includeBasePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore(value: js.Array[String | IMinimatch]): Self = this.set("ignore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
-    
-    @scala.inline
-    def setIncludeBasePath(value: Boolean): Self = this.set("includeBasePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeBasePath: Self = this.set("includeBasePath", js.undefined)
+    def setIncludeBasePathUndefined: Self = StObject.set(x, "includeBasePath", js.undefined)
   }
 }

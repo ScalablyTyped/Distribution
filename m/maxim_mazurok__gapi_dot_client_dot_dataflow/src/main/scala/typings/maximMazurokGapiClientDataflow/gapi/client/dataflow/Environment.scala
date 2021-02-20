@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Environment extends js.Object {
+trait Environment extends StObject {
   
   /**
     * The type of cluster manager API to use. If unknown or unspecified, the service will attempt to choose a reasonable default. This should be in the form of the API service name, e.g.
@@ -94,124 +95,112 @@ object Environment {
   }
   
   @scala.inline
-  implicit class EnvironmentOps[Self <: Environment] (val x: Self) extends AnyVal {
+  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterManagerApiService(value: String): Self = StObject.set(x, "clusterManagerApiService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterManagerApiServiceUndefined: Self = StObject.set(x, "clusterManagerApiService", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterManagerApiService(value: String): Self = this.set("clusterManagerApiService", value.asInstanceOf[js.Any])
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def deleteClusterManagerApiService: Self = this.set("clusterManagerApiService", js.undefined)
+    def setExperiments(value: js.Array[String]): Self = StObject.set(x, "experiments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: String): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setExperimentsUndefined: Self = StObject.set(x, "experiments", js.undefined)
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setExperimentsVarargs(value: String*): Self = StObject.set(x, "experiments", js.Array(value :_*))
     
     @scala.inline
-    def setExperimentsVarargs(value: String*): Self = this.set("experiments", js.Array(value :_*))
+    def setFlexResourceSchedulingGoal(value: String): Self = StObject.set(x, "flexResourceSchedulingGoal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperiments(value: js.Array[String]): Self = this.set("experiments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExperiments: Self = this.set("experiments", js.undefined)
-    
-    @scala.inline
-    def setFlexResourceSchedulingGoal(value: String): Self = this.set("flexResourceSchedulingGoal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlexResourceSchedulingGoal: Self = this.set("flexResourceSchedulingGoal", js.undefined)
+    def setFlexResourceSchedulingGoalUndefined: Self = StObject.set(x, "flexResourceSchedulingGoal", js.undefined)
     
     @scala.inline
     def setInternalExperiments(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment with TopLevel[js.Any]
-    ): Self = this.set("internalExperiments", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "internalExperiments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInternalExperiments: Self = this.set("internalExperiments", js.undefined)
+    def setInternalExperimentsUndefined: Self = StObject.set(x, "internalExperiments", js.undefined)
     
     @scala.inline
     def setSdkPipelineOptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment with TopLevel[js.Any]
-    ): Self = this.set("sdkPipelineOptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "sdkPipelineOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSdkPipelineOptions: Self = this.set("sdkPipelineOptions", js.undefined)
+    def setSdkPipelineOptionsUndefined: Self = StObject.set(x, "sdkPipelineOptions", js.undefined)
     
     @scala.inline
-    def setServiceAccountEmail(value: String): Self = this.set("serviceAccountEmail", value.asInstanceOf[js.Any])
+    def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServiceAccountEmail: Self = this.set("serviceAccountEmail", js.undefined)
+    def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
     
     @scala.inline
-    def setServiceKmsKeyName(value: String): Self = this.set("serviceKmsKeyName", value.asInstanceOf[js.Any])
+    def setServiceKmsKeyName(value: String): Self = StObject.set(x, "serviceKmsKeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServiceKmsKeyName: Self = this.set("serviceKmsKeyName", js.undefined)
+    def setServiceKmsKeyNameUndefined: Self = StObject.set(x, "serviceKmsKeyName", js.undefined)
     
     @scala.inline
-    def setTempStoragePrefix(value: String): Self = this.set("tempStoragePrefix", value.asInstanceOf[js.Any])
+    def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTempStoragePrefix: Self = this.set("tempStoragePrefix", js.undefined)
+    def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
     
     @scala.inline
     def setUserAgent(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment with TopLevel[js.Any]
-    ): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     
     @scala.inline
     def setVersion(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Environment with TopLevel[js.Any]
-    ): Self = this.set("version", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def setWorkerPoolsVarargs(value: WorkerPool*): Self = this.set("workerPools", js.Array(value :_*))
+    def setWorkerPools(value: js.Array[WorkerPool]): Self = StObject.set(x, "workerPools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerPools(value: js.Array[WorkerPool]): Self = this.set("workerPools", value.asInstanceOf[js.Any])
+    def setWorkerPoolsUndefined: Self = StObject.set(x, "workerPools", js.undefined)
     
     @scala.inline
-    def deleteWorkerPools: Self = this.set("workerPools", js.undefined)
+    def setWorkerPoolsVarargs(value: WorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value :_*))
     
     @scala.inline
-    def setWorkerRegion(value: String): Self = this.set("workerRegion", value.asInstanceOf[js.Any])
+    def setWorkerRegion(value: String): Self = StObject.set(x, "workerRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWorkerRegion: Self = this.set("workerRegion", js.undefined)
+    def setWorkerRegionUndefined: Self = StObject.set(x, "workerRegion", js.undefined)
     
     @scala.inline
-    def setWorkerZone(value: String): Self = this.set("workerZone", value.asInstanceOf[js.Any])
+    def setWorkerZone(value: String): Self = StObject.set(x, "workerZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWorkerZone: Self = this.set("workerZone", js.undefined)
+    def setWorkerZoneUndefined: Self = StObject.set(x, "workerZone", js.undefined)
   }
 }

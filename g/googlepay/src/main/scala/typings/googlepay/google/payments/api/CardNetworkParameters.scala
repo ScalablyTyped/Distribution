@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This should only be set for [[PaymentMethodType|`CARD`]].
   */
 @js.native
-trait CardNetworkParameters extends js.Object {
+trait CardNetworkParameters extends StObject {
   
   /**
     * Acquiring institution identification code as assigned by the DS
@@ -47,33 +48,21 @@ object CardNetworkParameters {
   }
   
   @scala.inline
-  implicit class CardNetworkParametersOps[Self <: CardNetworkParameters] (val x: Self) extends AnyVal {
+  implicit class CardNetworkParametersMutableBuilder[Self <: CardNetworkParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquirerBin(value: String): Self = StObject.set(x, "acquirerBin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcquirerBinUndefined: Self = StObject.set(x, "acquirerBin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcquirerMerchantId(value: String): Self = StObject.set(x, "acquirerMerchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardNetwork(value: CardNetwork): Self = this.set("cardNetwork", value.asInstanceOf[js.Any])
+    def setAcquirerMerchantIdUndefined: Self = StObject.set(x, "acquirerMerchantId", js.undefined)
     
     @scala.inline
-    def setAcquirerBin(value: String): Self = this.set("acquirerBin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcquirerBin: Self = this.set("acquirerBin", js.undefined)
-    
-    @scala.inline
-    def setAcquirerMerchantId(value: String): Self = this.set("acquirerMerchantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcquirerMerchantId: Self = this.set("acquirerMerchantId", js.undefined)
+    def setCardNetwork(value: CardNetwork): Self = StObject.set(x, "cardNetwork", value.asInstanceOf[js.Any])
   }
 }

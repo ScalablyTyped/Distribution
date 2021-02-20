@@ -1,12 +1,13 @@
 package typings.reactEmailEditor.mod
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailEditorProps extends js.Object {
+trait EmailEditorProps extends StObject {
   
   val appearance: js.UndefOr[AppearanceConfig] = js.native
   
@@ -31,60 +32,48 @@ object EmailEditorProps {
   }
   
   @scala.inline
-  implicit class EmailEditorPropsOps[Self <: EmailEditorProps] (val x: Self) extends AnyVal {
+  implicit class EmailEditorPropsMutableBuilder[Self <: EmailEditorProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppearance(value: AppearanceConfig): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearance(value: AppearanceConfig): Self = this.set("appearance", value.asInstanceOf[js.Any])
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def deleteAppearance: Self = this.set("appearance", js.undefined)
+    def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setOptions(value: UnlayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoad(value: () => Unit): Self = this.set("onLoad", js.Any.fromFunction0(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    def setProjectId(value: Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: UnlayerOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: Double): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setTools(value: ToolsConfig): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTools(value: ToolsConfig): Self = this.set("tools", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTools: Self = this.set("tools", js.undefined)
+    def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
   }
 }

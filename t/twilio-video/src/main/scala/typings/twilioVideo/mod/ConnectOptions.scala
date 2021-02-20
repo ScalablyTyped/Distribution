@@ -12,12 +12,13 @@ import typings.twilioVideo.twilioVideoStrings.jp1
 import typings.twilioVideo.twilioVideoStrings.sg1
 import typings.twilioVideo.twilioVideoStrings.us1
 import typings.twilioVideo.twilioVideoStrings.us2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectOptions extends js.Object {
+trait ConnectOptions extends StObject {
   
   var abortOnIceServersTimeout: js.UndefOr[Boolean] = js.native
   
@@ -70,165 +71,153 @@ object ConnectOptions {
   }
   
   @scala.inline
-  implicit class ConnectOptionsOps[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+  implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortOnIceServersTimeout(value: Boolean): Self = StObject.set(x, "abortOnIceServersTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortOnIceServersTimeoutUndefined: Self = StObject.set(x, "abortOnIceServersTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudio(value: Boolean | CreateLocalTrackOptions): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortOnIceServersTimeout(value: Boolean): Self = this.set("abortOnIceServersTimeout", value.asInstanceOf[js.Any])
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def deleteAbortOnIceServersTimeout: Self = this.set("abortOnIceServersTimeout", js.undefined)
+    def setAutomaticSubscription(value: Boolean): Self = StObject.set(x, "automaticSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: Boolean | CreateLocalTrackOptions): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setAutomaticSubscriptionUndefined: Self = StObject.set(x, "automaticSubscription", js.undefined)
     
     @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
+    def setBandwidthProfile(value: BandwidthProfileOptions): Self = StObject.set(x, "bandwidthProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticSubscription(value: Boolean): Self = this.set("automaticSubscription", value.asInstanceOf[js.Any])
+    def setBandwidthProfileUndefined: Self = StObject.set(x, "bandwidthProfile", js.undefined)
     
     @scala.inline
-    def deleteAutomaticSubscription: Self = this.set("automaticSubscription", js.undefined)
+    def setDominantSpeaker(value: Boolean): Self = StObject.set(x, "dominantSpeaker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidthProfile(value: BandwidthProfileOptions): Self = this.set("bandwidthProfile", value.asInstanceOf[js.Any])
+    def setDominantSpeakerUndefined: Self = StObject.set(x, "dominantSpeaker", js.undefined)
     
     @scala.inline
-    def deleteBandwidthProfile: Self = this.set("bandwidthProfile", js.undefined)
+    def setDscpTagging(value: Boolean): Self = StObject.set(x, "dscpTagging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDominantSpeaker(value: Boolean): Self = this.set("dominantSpeaker", value.asInstanceOf[js.Any])
+    def setDscpTaggingUndefined: Self = StObject.set(x, "dscpTagging", js.undefined)
     
     @scala.inline
-    def deleteDominantSpeaker: Self = this.set("dominantSpeaker", js.undefined)
+    def setEnableDscp(value: Boolean): Self = StObject.set(x, "enableDscp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDscpTagging(value: Boolean): Self = this.set("dscpTagging", value.asInstanceOf[js.Any])
+    def setEnableDscpUndefined: Self = StObject.set(x, "enableDscp", js.undefined)
     
     @scala.inline
-    def deleteDscpTagging: Self = this.set("dscpTagging", js.undefined)
+    def setIceServers(value: js.Array[RTCIceServer]): Self = StObject.set(x, "iceServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDscp(value: Boolean): Self = this.set("enableDscp", value.asInstanceOf[js.Any])
+    def setIceServersTimeout(value: Double): Self = StObject.set(x, "iceServersTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableDscp: Self = this.set("enableDscp", js.undefined)
+    def setIceServersTimeoutUndefined: Self = StObject.set(x, "iceServersTimeout", js.undefined)
     
     @scala.inline
-    def setIceServersVarargs(value: RTCIceServer*): Self = this.set("iceServers", js.Array(value :_*))
+    def setIceServersUndefined: Self = StObject.set(x, "iceServers", js.undefined)
     
     @scala.inline
-    def setIceServers(value: js.Array[RTCIceServer]): Self = this.set("iceServers", value.asInstanceOf[js.Any])
+    def setIceServersVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceServers", js.Array(value :_*))
     
     @scala.inline
-    def deleteIceServers: Self = this.set("iceServers", js.undefined)
+    def setIceTransportPolicy(value: RTCIceTransportPolicy): Self = StObject.set(x, "iceTransportPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIceServersTimeout(value: Double): Self = this.set("iceServersTimeout", value.asInstanceOf[js.Any])
+    def setIceTransportPolicyUndefined: Self = StObject.set(x, "iceTransportPolicy", js.undefined)
     
     @scala.inline
-    def deleteIceServersTimeout: Self = this.set("iceServersTimeout", js.undefined)
+    def setInsights(value: Boolean): Self = StObject.set(x, "insights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIceTransportPolicy(value: RTCIceTransportPolicy): Self = this.set("iceTransportPolicy", value.asInstanceOf[js.Any])
+    def setInsightsUndefined: Self = StObject.set(x, "insights", js.undefined)
     
     @scala.inline
-    def deleteIceTransportPolicy: Self = this.set("iceTransportPolicy", js.undefined)
+    def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsights(value: Boolean): Self = this.set("insights", value.asInstanceOf[js.Any])
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def deleteInsights: Self = this.set("insights", js.undefined)
+    def setMaxAudioBitrate(value: Double): Self = StObject.set(x, "maxAudioBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: LogLevel | LogLevels): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    def setMaxAudioBitrateNull: Self = StObject.set(x, "maxAudioBitrate", null)
     
     @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    def setMaxAudioBitrateUndefined: Self = StObject.set(x, "maxAudioBitrate", js.undefined)
     
     @scala.inline
-    def setMaxAudioBitrate(value: Double): Self = this.set("maxAudioBitrate", value.asInstanceOf[js.Any])
+    def setMaxVideoBitrate(value: Double): Self = StObject.set(x, "maxVideoBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxAudioBitrate: Self = this.set("maxAudioBitrate", js.undefined)
+    def setMaxVideoBitrateNull: Self = StObject.set(x, "maxVideoBitrate", null)
     
     @scala.inline
-    def setMaxAudioBitrateNull: Self = this.set("maxAudioBitrate", null)
+    def setMaxVideoBitrateUndefined: Self = StObject.set(x, "maxVideoBitrate", js.undefined)
     
     @scala.inline
-    def setMaxVideoBitrate(value: Double): Self = this.set("maxVideoBitrate", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxVideoBitrate: Self = this.set("maxVideoBitrate", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setMaxVideoBitrateNull: Self = this.set("maxVideoBitrate", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworkQuality(value: Boolean | NetworkQualityConfiguration): Self = StObject.set(x, "networkQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNetworkQualityUndefined: Self = StObject.set(x, "networkQuality", js.undefined)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setPreferredAudioCodecs(value: js.Array[AudioCodec]): Self = StObject.set(x, "preferredAudioCodecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkQuality(value: Boolean | NetworkQualityConfiguration): Self = this.set("networkQuality", value.asInstanceOf[js.Any])
+    def setPreferredAudioCodecsUndefined: Self = StObject.set(x, "preferredAudioCodecs", js.undefined)
     
     @scala.inline
-    def deleteNetworkQuality: Self = this.set("networkQuality", js.undefined)
+    def setPreferredAudioCodecsVarargs(value: AudioCodec*): Self = StObject.set(x, "preferredAudioCodecs", js.Array(value :_*))
     
     @scala.inline
-    def setPreferredAudioCodecsVarargs(value: AudioCodec*): Self = this.set("preferredAudioCodecs", js.Array(value :_*))
+    def setPreferredVideoCodecs(value: js.Array[VideoCodec | VideoCodecSettings | VP8CodecSettings]): Self = StObject.set(x, "preferredVideoCodecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredAudioCodecs(value: js.Array[AudioCodec]): Self = this.set("preferredAudioCodecs", value.asInstanceOf[js.Any])
+    def setPreferredVideoCodecsUndefined: Self = StObject.set(x, "preferredVideoCodecs", js.undefined)
     
     @scala.inline
-    def deletePreferredAudioCodecs: Self = this.set("preferredAudioCodecs", js.undefined)
+    def setPreferredVideoCodecsVarargs(value: (VideoCodec | VideoCodecSettings | VP8CodecSettings)*): Self = StObject.set(x, "preferredVideoCodecs", js.Array(value :_*))
     
     @scala.inline
-    def setPreferredVideoCodecsVarargs(value: (VideoCodec | VideoCodecSettings | VP8CodecSettings)*): Self = this.set("preferredVideoCodecs", js.Array(value :_*))
+    def setRegion(value: au1 | br1 | ie1 | de1 | jp1 | sg1 | us1 | us2 | gll): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredVideoCodecs(value: js.Array[VideoCodec | VideoCodecSettings | VP8CodecSettings]): Self = this.set("preferredVideoCodecs", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePreferredVideoCodecs: Self = this.set("preferredVideoCodecs", js.undefined)
+    def setTracks(value: js.Array[LocalTrack | MediaStreamTrack]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: au1 | br1 | ie1 | de1 | jp1 | sg1 | us1 | us2 | gll): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setTracksVarargs(value: (LocalTrack | MediaStreamTrack)*): Self = StObject.set(x, "tracks", js.Array(value :_*))
     
     @scala.inline
-    def setTracksVarargs(value: (LocalTrack | MediaStreamTrack)*): Self = this.set("tracks", js.Array(value :_*))
+    def setVideo(value: Boolean | CreateLocalTrackOptions): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracks(value: js.Array[LocalTrack | MediaStreamTrack]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracks: Self = this.set("tracks", js.undefined)
-    
-    @scala.inline
-    def setVideo(value: Boolean | CreateLocalTrackOptions): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

@@ -1,38 +1,36 @@
 package typings.plottable
 
-import org.scalablytyped.runtime.TopLevel
 import typings.plottable.anon.ValueOf
 import typings.plottable.componentMod.Component
 import typings.plottable.interfacesMod.Bounds
 import typings.plottable.interfacesMod.SimpleSelection
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/selectionBoxLayer", JSImport.Namespace)
-@js.native
-object selectionBoxLayerMod extends js.Object {
+object selectionBoxLayerMod {
   
   @js.native
-  sealed trait PropertyMode extends js.Object
+  sealed trait PropertyMode extends StObject
+  @JSImport("plottable/build/src/components/selectionBoxLayer", "PropertyMode")
   @js.native
-  object PropertyMode extends js.Object {
+  object PropertyMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[PropertyMode with Double] = js.native
     
     @js.native
     sealed trait PIXEL extends PropertyMode
-    /* 1 */ @js.native
-    object PIXEL extends TopLevel[PIXEL with Double]
+    /* 1 */ val PIXEL: typings.plottable.selectionBoxLayerMod.PropertyMode.PIXEL with Double = js.native
     
     @js.native
     sealed trait VALUE extends PropertyMode
-    /* 0 */ @js.native
-    object VALUE extends TopLevel[VALUE with Double]
+    /* 0 */ val VALUE: typings.plottable.selectionBoxLayerMod.PropertyMode.VALUE with Double = js.native
   }
   
+  @JSImport("plottable/build/src/components/selectionBoxLayer", "SelectionBoxLayer")
   @js.native
   class SelectionBoxLayer () extends Component {
     

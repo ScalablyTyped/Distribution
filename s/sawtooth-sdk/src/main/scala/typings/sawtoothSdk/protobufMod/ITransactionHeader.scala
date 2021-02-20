@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITransactionHeader extends js.Object {
+trait ITransactionHeader extends StObject {
   
   /** TransactionHeader batcherPublicKey */
   var batcherPublicKey: js.UndefOr[String | Null] = js.native
@@ -43,108 +44,96 @@ object ITransactionHeader {
   }
   
   @scala.inline
-  implicit class ITransactionHeaderOps[Self <: ITransactionHeader] (val x: Self) extends AnyVal {
+  implicit class ITransactionHeaderMutableBuilder[Self <: ITransactionHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatcherPublicKey(value: String): Self = StObject.set(x, "batcherPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatcherPublicKeyNull: Self = StObject.set(x, "batcherPublicKey", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatcherPublicKeyUndefined: Self = StObject.set(x, "batcherPublicKey", js.undefined)
     
     @scala.inline
-    def setBatcherPublicKey(value: String): Self = this.set("batcherPublicKey", value.asInstanceOf[js.Any])
+    def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatcherPublicKey: Self = this.set("batcherPublicKey", js.undefined)
+    def setDependenciesNull: Self = StObject.set(x, "dependencies", null)
     
     @scala.inline
-    def setBatcherPublicKeyNull: Self = this.set("batcherPublicKey", null)
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def setDependenciesVarargs(value: String*): Self = this.set("dependencies", js.Array(value :_*))
+    def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
     @scala.inline
-    def setDependencies(value: js.Array[String]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    def setFamilyNameNull: Self = StObject.set(x, "familyName", null)
     
     @scala.inline
-    def setDependenciesNull: Self = this.set("dependencies", null)
+    def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
     @scala.inline
-    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    def setFamilyVersion(value: String): Self = StObject.set(x, "familyVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFamilyName: Self = this.set("familyName", js.undefined)
+    def setFamilyVersionNull: Self = StObject.set(x, "familyVersion", null)
     
     @scala.inline
-    def setFamilyNameNull: Self = this.set("familyName", null)
+    def setFamilyVersionUndefined: Self = StObject.set(x, "familyVersion", js.undefined)
     
     @scala.inline
-    def setFamilyVersion(value: String): Self = this.set("familyVersion", value.asInstanceOf[js.Any])
+    def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFamilyVersion: Self = this.set("familyVersion", js.undefined)
+    def setInputsNull: Self = StObject.set(x, "inputs", null)
     
     @scala.inline
-    def setFamilyVersionNull: Self = this.set("familyVersion", null)
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def setInputsVarargs(value: String*): Self = this.set("inputs", js.Array(value :_*))
+    def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputs(value: js.Array[String]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setNonceNull: Self = StObject.set(x, "nonce", null)
     
     @scala.inline
-    def setInputsNull: Self = this.set("inputs", null)
+    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNonce: Self = this.set("nonce", js.undefined)
+    def setOutputsNull: Self = StObject.set(x, "outputs", null)
     
     @scala.inline
-    def setNonceNull: Self = this.set("nonce", null)
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
     @scala.inline
-    def setOutputsVarargs(value: String*): Self = this.set("outputs", js.Array(value :_*))
+    def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputs(value: js.Array[String]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setPayloadSha512(value: String): Self = StObject.set(x, "payloadSha512", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    def setPayloadSha512Null: Self = StObject.set(x, "payloadSha512", null)
     
     @scala.inline
-    def setOutputsNull: Self = this.set("outputs", null)
+    def setPayloadSha512Undefined: Self = StObject.set(x, "payloadSha512", js.undefined)
     
     @scala.inline
-    def setPayloadSha512(value: String): Self = this.set("payloadSha512", value.asInstanceOf[js.Any])
+    def setSignerPublicKey(value: String): Self = StObject.set(x, "signerPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayloadSha512: Self = this.set("payloadSha512", js.undefined)
+    def setSignerPublicKeyNull: Self = StObject.set(x, "signerPublicKey", null)
     
     @scala.inline
-    def setPayloadSha512Null: Self = this.set("payloadSha512", null)
-    
-    @scala.inline
-    def setSignerPublicKey(value: String): Self = this.set("signerPublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignerPublicKey: Self = this.set("signerPublicKey", js.undefined)
-    
-    @scala.inline
-    def setSignerPublicKeyNull: Self = this.set("signerPublicKey", null)
+    def setSignerPublicKeyUndefined: Self = StObject.set(x, "signerPublicKey", js.undefined)
   }
 }

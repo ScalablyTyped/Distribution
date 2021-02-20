@@ -1,11 +1,12 @@
 package typings.awsSdk.simpledbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDomainsRequest extends js.Object {
+trait ListDomainsRequest extends StObject {
   
   /**
     * The maximum number of domain names you want returned. The range is 1 to 100. The default setting is 100.
@@ -26,30 +27,18 @@ object ListDomainsRequest {
   }
   
   @scala.inline
-  implicit class ListDomainsRequestOps[Self <: ListDomainsRequest] (val x: Self) extends AnyVal {
+  implicit class ListDomainsRequestMutableBuilder[Self <: ListDomainsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxNumberOfDomains(value: Integer): Self = StObject.set(x, "MaxNumberOfDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxNumberOfDomainsUndefined: Self = StObject.set(x, "MaxNumberOfDomains", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNumberOfDomains(value: Integer): Self = this.set("MaxNumberOfDomains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxNumberOfDomains: Self = this.set("MaxNumberOfDomains", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

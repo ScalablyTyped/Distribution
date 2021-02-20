@@ -1,6 +1,7 @@
 package typings.angularCore.mod
 
 import typings.angularCore.anon.Attached
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * in tests.
   */
 @js.native
-trait LViewDebug extends js.Object {
+trait LViewDebug extends StObject {
   
   /**
     * Child `LView`s
@@ -108,75 +109,63 @@ object LViewDebug {
   }
   
   @scala.inline
-  implicit class LViewDebugOps[Self <: LViewDebug] (val x: Self) extends AnyVal {
+  implicit class LViewDebugMutableBuilder[Self <: LViewDebug] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildViews(value: js.Array[LViewDebug | LContainerDebug]): Self = StObject.set(x, "childViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildViewsVarargs(value: (LViewDebug | LContainerDebug)*): Self = StObject.set(x, "childViews", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildViewsVarargs(value: (LViewDebug | LContainerDebug)*): Self = this.set("childViews", js.Array(value :_*))
+    def setContextNull: Self = StObject.set(x, "context", null)
     
     @scala.inline
-    def setChildViews(value: js.Array[LViewDebug | LContainerDebug]): Self = this.set("childViews", value.asInstanceOf[js.Any])
+    def setDecls(value: LViewDebugRange): Self = StObject.set(x, "decls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecls(value: LViewDebugRange): Self = this.set("decls", value.asInstanceOf[js.Any])
+    def setExpando(value: LViewDebugRange): Self = StObject.set(x, "expando", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpando(value: LViewDebugRange): Self = this.set("expando", value.asInstanceOf[js.Any])
+    def setFlags(value: Attached): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: Attached): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setHostHTML(value: String): Self = StObject.set(x, "hostHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setHostHTMLNull: Self = StObject.set(x, "hostHTML", null)
     
     @scala.inline
-    def setNodesVarargs(value: DebugNode2*): Self = this.set("nodes", js.Array(value :_*))
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: js.Array[DebugNode2]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setNext(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTView(value: TView): Self = this.set("tView", value.asInstanceOf[js.Any])
+    def setNextNull: Self = StObject.set(x, "next", null)
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setNodes(value: js.Array[DebugNode2]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVars(value: LViewDebugRange): Self = this.set("vars", value.asInstanceOf[js.Any])
+    def setNodesVarargs(value: DebugNode2*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setContext(value: js.Object): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setParent(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextNull: Self = this.set("context", null)
+    def setParentNull: Self = StObject.set(x, "parent", null)
     
     @scala.inline
-    def setHostHTML(value: String): Self = this.set("hostHTML", value.asInstanceOf[js.Any])
+    def setTView(value: TView): Self = StObject.set(x, "tView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostHTMLNull: Self = this.set("hostHTML", null)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: LViewDebug | LContainerDebug): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextNull: Self = this.set("next", null)
-    
-    @scala.inline
-    def setParent(value: LViewDebug | LContainerDebug): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentNull: Self = this.set("parent", null)
+    def setVars(value: LViewDebugRange): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
   }
 }

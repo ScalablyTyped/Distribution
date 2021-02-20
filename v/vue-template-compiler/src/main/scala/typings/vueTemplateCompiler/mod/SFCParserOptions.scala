@@ -3,6 +3,7 @@ package typings.vueTemplateCompiler.mod
 import typings.vueTemplateCompiler.vueTemplateCompilerBooleans.`true`
 import typings.vueTemplateCompiler.vueTemplateCompilerStrings.line
 import typings.vueTemplateCompiler.vueTemplateCompilerStrings.space
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SFC parser related types
   */
 @js.native
-trait SFCParserOptions extends js.Object {
+trait SFCParserOptions extends StObject {
   
   var deindent: js.UndefOr[Boolean] = js.native
   
@@ -26,30 +27,18 @@ object SFCParserOptions {
   }
   
   @scala.inline
-  implicit class SFCParserOptionsOps[Self <: SFCParserOptions] (val x: Self) extends AnyVal {
+  implicit class SFCParserOptionsMutableBuilder[Self <: SFCParserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeindent(value: Boolean): Self = StObject.set(x, "deindent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeindentUndefined: Self = StObject.set(x, "deindent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPad(value: `true` | line | space): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeindent(value: Boolean): Self = this.set("deindent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeindent: Self = this.set("deindent", js.undefined)
-    
-    @scala.inline
-    def setPad(value: `true` | line | space): Self = this.set("pad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePad: Self = this.set("pad", js.undefined)
+    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
   }
 }

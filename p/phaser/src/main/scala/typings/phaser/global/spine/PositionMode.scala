@@ -1,12 +1,13 @@
 package typings.phaser.global.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.PositionMode")
 @js.native
-object PositionMode extends js.Object {
+object PositionMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.phaser.spine.PositionMode with Double] = js.native

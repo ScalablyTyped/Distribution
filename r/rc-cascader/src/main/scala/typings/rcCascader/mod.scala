@@ -2,25 +2,35 @@ package typings.rcCascader
 
 import typings.rcCascader.cascaderMod.CascaderProps
 import typings.rcCascader.cascaderMod.CascaderState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-cascader", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("rc-cascader", JSImport.Default)
   @js.native
   class default protected ()
     extends typings.rcCascader.cascaderMod.default {
     def this(props: CascaderProps) = this()
   }
-  /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var defaultProps: CascaderProps = js.native
+    @JSImport("rc-cascader", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
+    /* static member */
+    @JSImport("rc-cascader", "default.defaultProps")
+    @js.native
+    def defaultProps: CascaderProps = js.native
+    @scala.inline
+    def defaultProps_=(x: CascaderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("rc-cascader", "default.getDerivedStateFromProps")
+    @js.native
     def getDerivedStateFromProps(nextProps: CascaderProps, prevState: CascaderState): CascaderState = js.native
   }
 }

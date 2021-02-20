@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGAnimatedNumber extends js.Object {
+trait SVGAnimatedNumber extends StObject {
   
   @JSName("MSHTML.SVGAnimatedNumber_typekey")
   var MSHTMLDotSVGAnimatedNumber_typekey: SVGAnimatedNumber = js.native
@@ -24,27 +25,15 @@ object SVGAnimatedNumber {
   }
   
   @scala.inline
-  implicit class SVGAnimatedNumberOps[Self <: SVGAnimatedNumber] (val x: Self) extends AnyVal {
+  implicit class SVGAnimatedNumberMutableBuilder[Self <: SVGAnimatedNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimVal(value: Double): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseVal(value: Double): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedNumber_typekey(value: SVGAnimatedNumber): Self = this.set("MSHTML.SVGAnimatedNumber_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnimVal(value: Double): Self = this.set("animVal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBaseVal(value: Double): Self = this.set("baseVal", value.asInstanceOf[js.Any])
+    def setMSHTMLDotSVGAnimatedNumber_typekey(value: SVGAnimatedNumber): Self = StObject.set(x, "MSHTML.SVGAnimatedNumber_typekey", value.asInstanceOf[js.Any])
   }
 }

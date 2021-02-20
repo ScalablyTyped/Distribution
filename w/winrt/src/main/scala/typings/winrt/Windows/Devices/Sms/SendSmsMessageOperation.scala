@@ -2,6 +2,7 @@ package typings.winrt.Windows.Devices.Sms
 
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.anon.CompletedGetResults
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

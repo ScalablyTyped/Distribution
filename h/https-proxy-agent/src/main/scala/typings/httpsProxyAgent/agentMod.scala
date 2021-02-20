@@ -2,13 +2,19 @@ package typings.httpsProxyAgent
 
 import typings.agentBase.mod.Agent
 import typings.httpsProxyAgent.mod.HttpsProxyAgentOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("https-proxy-agent/dist/agent", JSImport.Namespace)
-@js.native
-object agentMod extends js.Object {
+object agentMod {
+  
+  @JSImport("https-proxy-agent/dist/agent", JSImport.Default)
+  @js.native
+  class default protected () extends HttpsProxyAgent {
+    def this(_opts: String) = this()
+    def this(_opts: HttpsProxyAgentOptions) = this()
+  }
   
   @js.native
   trait HttpsProxyAgent extends Agent {
@@ -16,11 +22,5 @@ object agentMod extends js.Object {
     var proxy: js.Any = js.native
     
     var secureProxy: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends HttpsProxyAgent {
-    def this(_opts: String) = this()
-    def this(_opts: HttpsProxyAgentOptions) = this()
   }
 }

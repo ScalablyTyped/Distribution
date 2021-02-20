@@ -1,12 +1,13 @@
 package typings.elasticJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GeoPolygonFilter")
 @js.native
-class GeoPolygonFilter protected () extends js.Object {
+class GeoPolygonFilter protected () extends StObject {
   /*
     Filter results to those which are contained within the polygon of points.
     */

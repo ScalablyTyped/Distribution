@@ -1,6 +1,7 @@
 package typings.winrt.Windows.UI.Core
 
 import typings.winrt.Windows.System.VirtualKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,27 +29,15 @@ object IAcceleratorKeyEventArgs {
   }
   
   @scala.inline
-  implicit class IAcceleratorKeyEventArgsOps[Self <: IAcceleratorKeyEventArgs] (val x: Self) extends AnyVal {
+  implicit class IAcceleratorKeyEventArgsMutableBuilder[Self <: IAcceleratorKeyEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventType(value: CoreAcceleratorKeyEventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyStatus(value: CorePhysicalKeyStatus): Self = StObject.set(x, "keyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventType(value: CoreAcceleratorKeyEventType): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyStatus(value: CorePhysicalKeyStatus): Self = this.set("keyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualKey(value: VirtualKey): Self = this.set("virtualKey", value.asInstanceOf[js.Any])
+    def setVirtualKey(value: VirtualKey): Self = StObject.set(x, "virtualKey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCandidatesForAutoMLJobRequest extends js.Object {
+trait ListCandidatesForAutoMLJobRequest extends StObject {
   
   /**
     * List the Candidates created for the job by providing the job's name.
@@ -51,57 +52,45 @@ object ListCandidatesForAutoMLJobRequest {
   }
   
   @scala.inline
-  implicit class ListCandidatesForAutoMLJobRequestOps[Self <: ListCandidatesForAutoMLJobRequest] (val x: Self) extends AnyVal {
+  implicit class ListCandidatesForAutoMLJobRequestMutableBuilder[Self <: ListCandidatesForAutoMLJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCandidateNameEquals(value: CandidateName): Self = StObject.set(x, "CandidateNameEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCandidateNameEqualsUndefined: Self = StObject.set(x, "CandidateNameEquals", js.undefined)
     
     @scala.inline
-    def setAutoMLJobName(value: AutoMLJobName): Self = this.set("AutoMLJobName", value.asInstanceOf[js.Any])
+    def setMaxResults(value: AutoMLMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandidateNameEquals(value: CandidateName): Self = this.set("CandidateNameEquals", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteCandidateNameEquals: Self = this.set("CandidateNameEquals", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: AutoMLMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setSortBy(value: CandidateSortBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSortOrder(value: AutoMLSortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBy(value: CandidateSortBy): Self = this.set("SortBy", value.asInstanceOf[js.Any])
+    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
     
     @scala.inline
-    def deleteSortBy: Self = this.set("SortBy", js.undefined)
+    def setStatusEquals(value: CandidateStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortOrder(value: AutoMLSortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
-    
-    @scala.inline
-    def setStatusEquals(value: CandidateStatus): Self = this.set("StatusEquals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusEquals: Self = this.set("StatusEquals", js.undefined)
+    def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
   }
 }

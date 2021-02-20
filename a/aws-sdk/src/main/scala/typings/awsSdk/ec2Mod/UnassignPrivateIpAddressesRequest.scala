@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnassignPrivateIpAddressesRequest extends js.Object {
+trait UnassignPrivateIpAddressesRequest extends StObject {
   
   /**
     * The ID of the network interface.
@@ -26,27 +27,15 @@ object UnassignPrivateIpAddressesRequest {
   }
   
   @scala.inline
-  implicit class UnassignPrivateIpAddressesRequestOps[Self <: UnassignPrivateIpAddressesRequest] (val x: Self) extends AnyVal {
+  implicit class UnassignPrivateIpAddressesRequestMutableBuilder[Self <: UnassignPrivateIpAddressesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivateIpAddresses(value: PrivateIpAddressStringList): Self = StObject.set(x, "PrivateIpAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivateIpAddressesVarargs(value: String*): Self = this.set("PrivateIpAddresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrivateIpAddresses(value: PrivateIpAddressStringList): Self = this.set("PrivateIpAddresses", value.asInstanceOf[js.Any])
+    def setPrivateIpAddressesVarargs(value: String*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value :_*))
   }
 }

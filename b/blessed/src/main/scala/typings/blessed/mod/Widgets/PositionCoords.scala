@@ -1,12 +1,13 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "Widgets.PositionCoords")
 @js.native
-class PositionCoords () extends js.Object {
+class PositionCoords () extends StObject {
   
   var xi: Double = js.native
   

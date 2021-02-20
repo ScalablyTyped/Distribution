@@ -1,6 +1,7 @@
 package typings.kendoUi.kendo.ui
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object RatingChangeEvent {
   }
   
   @scala.inline
-  implicit class RatingChangeEventOps[Self <: RatingChangeEvent] (val x: Self) extends AnyVal {
+  implicit class RatingChangeEventMutableBuilder[Self <: RatingChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewValue(value: Double): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     
     @scala.inline
-    def deleteNewValue: Self = this.set("newValue", js.undefined)
+    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldValue(value: Double): Self = this.set("oldValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldValue: Self = this.set("oldValue", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: Element): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

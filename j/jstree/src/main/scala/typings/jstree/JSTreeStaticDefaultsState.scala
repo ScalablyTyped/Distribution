@@ -1,11 +1,12 @@
 package typings.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSTreeStaticDefaultsState extends js.Object {
+trait JSTreeStaticDefaultsState extends StObject {
   
   /**
     * A space separated list of events that trigger a state save. Defaults to `changed.jstree open_node.jstree close_node.jstree`.
@@ -51,33 +52,21 @@ object JSTreeStaticDefaultsState {
   }
   
   @scala.inline
-  implicit class JSTreeStaticDefaultsStateOps[Self <: JSTreeStaticDefaultsState] (val x: Self) extends AnyVal {
+  implicit class JSTreeStaticDefaultsStateMutableBuilder[Self <: JSTreeStaticDefaultsState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: String): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: String): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setPreserve_loaded(value: Boolean): Self = StObject.set(x, "preserve_loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: js.Any): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreserve_loaded(value: Boolean): Self = this.set("preserve_loaded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTtl(value: js.Any): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    def setTtl(value: js.Any): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

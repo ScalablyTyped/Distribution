@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.extensions.v1beta1
 
 import typings.pulumiKubernetes.outputMod.core.v1.TypedLocalObjectReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * IngressBackend describes all endpoints for a given service and port.
   */
 @js.native
-trait IngressBackend extends js.Object {
+trait IngressBackend extends StObject {
   
   /**
     * Resource is an ObjectRef to another Kubernetes resource in the namespace of the Ingress object. If resource is specified, serviceName and servicePort must not be specified.
@@ -35,27 +36,15 @@ object IngressBackend {
   }
   
   @scala.inline
-  implicit class IngressBackendOps[Self <: IngressBackend] (val x: Self) extends AnyVal {
+  implicit class IngressBackendMutableBuilder[Self <: IngressBackend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResource(value: TypedLocalObjectReference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResource(value: TypedLocalObjectReference): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServicePort(value: Double | String): Self = this.set("servicePort", value.asInstanceOf[js.Any])
+    def setServicePort(value: Double | String): Self = StObject.set(x, "servicePort", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.mqttPacket.mod
 
 import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.subscribe
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object ISubscribePacket {
   }
   
   @scala.inline
-  implicit class ISubscribePacketOps[Self <: ISubscribePacket] (val x: Self) extends AnyVal {
+  implicit class ISubscribePacketMutableBuilder[Self <: ISubscribePacket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmd(value: subscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setCmd(value: subscribe): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    def setSubscriptions(value: js.Array[ISubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionsVarargs(value: ISubscription*): Self = this.set("subscriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscriptions(value: js.Array[ISubscription]): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: ReasonString): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setSubscriptionsVarargs(value: ISubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
   }
 }

@@ -25,6 +25,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Date
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -235,57 +236,45 @@ object XDatabaseDataProvider {
   }
   
   @scala.inline
-  implicit class XDatabaseDataProviderOps[Self <: XDatabaseDataProvider] (val x: Self) extends AnyVal {
+  implicit class XDatabaseDataProviderMutableBuilder[Self <: XDatabaseDataProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyFilter(value: Boolean): Self = StObject.set(x, "ApplyFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveConnection(value: XConnection): Self = this.set("ActiveConnection", value.asInstanceOf[js.Any])
+    def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyFilter(value: Boolean): Self = this.set("ApplyFilter", value.asInstanceOf[js.Any])
+    def setDataSourceName(value: String): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setDetailFields(value: SafeArray[String]): Self = StObject.set(x, "DetailFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandType(value: Double): Self = this.set("CommandType", value.asInstanceOf[js.Any])
+    def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceName(value: String): Self = this.set("DataSourceName", value.asInstanceOf[js.Any])
+    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailFields(value: SafeArray[String]): Self = this.set("DetailFields", value.asInstanceOf[js.Any])
+    def setGroupBy(value: String): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeProcessing(value: Boolean): Self = this.set("EscapeProcessing", value.asInstanceOf[js.Any])
+    def setHavingClause(value: String): Self = StObject.set(x, "HavingClause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setMasterFields(value: SafeArray[String]): Self = StObject.set(x, "MasterFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: String): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHavingClause(value: String): Self = this.set("HavingClause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMasterFields(value: SafeArray[String]): Self = this.set("MasterFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder(value: String): Self = this.set("Order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowLimit(value: Double): Self = this.set("RowLimit", value.asInstanceOf[js.Any])
+    def setRowLimit(value: Double): Self = StObject.set(x, "RowLimit", value.asInstanceOf[js.Any])
   }
 }

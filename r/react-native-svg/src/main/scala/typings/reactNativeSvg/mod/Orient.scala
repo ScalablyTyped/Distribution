@@ -1,26 +1,24 @@
 package typings.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Orient extends js.Object
+sealed trait Orient extends StObject
 @JSImport("react-native-svg", "Orient")
 @js.native
-object Orient extends js.Object {
+object Orient extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Orient with String] = js.native
   
   @js.native
   sealed trait AUTO extends Orient
-  /* "auto" */ @js.native
-  object AUTO extends TopLevel[AUTO with String]
+  /* "auto" */ val AUTO: typings.reactNativeSvg.mod.Orient.AUTO with String = js.native
   
   @js.native
   sealed trait AUTO_START_REVERSE extends Orient
-  /* "auto-start-reverse" */ @js.native
-  object AUTO_START_REVERSE extends TopLevel[AUTO_START_REVERSE with String]
+  /* "auto-start-reverse" */ val AUTO_START_REVERSE: typings.reactNativeSvg.mod.Orient.AUTO_START_REVERSE with String = js.native
 }

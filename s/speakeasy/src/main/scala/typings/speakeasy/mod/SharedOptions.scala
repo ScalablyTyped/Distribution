@@ -1,11 +1,12 @@
 package typings.speakeasy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedOptions extends js.Object {
+trait SharedOptions extends StObject {
   
   /**
     * Algorithm, defaults to sha1
@@ -26,30 +27,18 @@ object SharedOptions {
   }
   
   @scala.inline
-  implicit class SharedOptionsOps[Self <: SharedOptions] (val x: Self) extends AnyVal {
+  implicit class SharedOptionsMutableBuilder[Self <: SharedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: Algorithm): Self = this.set("algorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
-    
-    @scala.inline
-    def setEncoding(value: Encoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

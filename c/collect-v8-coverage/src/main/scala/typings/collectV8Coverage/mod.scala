@@ -1,16 +1,16 @@
 package typings.collectV8Coverage
 
 import typings.node.inspectorMod.Profiler.ScriptCoverage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("collect-v8-coverage", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("collect-v8-coverage", "CoverageInstrumenter")
   @js.native
-  class CoverageInstrumenter () extends js.Object {
+  class CoverageInstrumenter () extends StObject {
     
     def startInstrumenting(): js.Promise[Unit] = js.native
     

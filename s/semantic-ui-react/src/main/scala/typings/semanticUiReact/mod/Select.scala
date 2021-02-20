@@ -1,11 +1,52 @@
 package typings.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.Component
+import typings.react.mod.ComponentState
+import typings.semanticUiReact.dropdownDividerMod.DropdownDividerProps
+import typings.semanticUiReact.dropdownHeaderMod.DropdownHeaderProps
+import typings.semanticUiReact.dropdownItemMod.DropdownItemProps
 import typings.semanticUiReact.selectSelectMod.SelectComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("semantic-ui-react", "Select")
-@js.native
-object Select extends TopLevel[SelectComponent]
+object Select extends Shortcut {
+  
+  @JSImport("semantic-ui-react", "Select")
+  @js.native
+  val ^ : SelectComponent = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("semantic-ui-react", "Select.Divider")
+  @js.native
+  class Divider protected ()
+    extends Component[DropdownDividerProps, ComponentState, js.Any] {
+    def this(props: DropdownDividerProps) = this()
+    def this(props: DropdownDividerProps, context: js.Any) = this()
+  }
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("semantic-ui-react", "Select.Header")
+  @js.native
+  class Header protected ()
+    extends Component[DropdownHeaderProps, ComponentState, js.Any] {
+    def this(props: DropdownHeaderProps) = this()
+    def this(props: DropdownHeaderProps, context: js.Any) = this()
+  }
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("semantic-ui-react", "Select.Item")
+  @js.native
+  class Item protected ()
+    extends Component[DropdownItemProps, ComponentState, js.Any] {
+    def this(props: DropdownItemProps) = this()
+    def this(props: DropdownItemProps, context: js.Any) = this()
+  }
+  
+  type _To = SelectComponent
+  
+  /* This means you don't have to write `^`, but can instead just say `Select.foo` */
+  override def _to: SelectComponent = ^
+}

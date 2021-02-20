@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_QueueConfigurationDeprecated", JSImport.Namespace)
-@js.native
-object queueConfigurationDeprecatedMod extends js.Object {
+object queueConfigurationDeprecatedMod {
   
-  @JSName("_QueueConfigurationDeprecated")
+  @JSImport("@aws-sdk/client-s3-node/model/_QueueConfigurationDeprecated", "_QueueConfigurationDeprecated")
+  @js.native
   val QueueConfigurationDeprecated: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

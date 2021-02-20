@@ -1,11 +1,12 @@
 package typings.ionicCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Destroy extends js.Object {
+trait Destroy extends StObject {
   
   def destroy(): Unit = js.native
   

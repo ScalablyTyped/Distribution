@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.task.XStatusIndicator
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.beans.PropertyValue
   */
 @js.native
-trait MediaDescriptor extends js.Object {
+trait MediaDescriptor extends StObject {
   
   /** May be set by filters or detection services if user has chosen to abort loading/saving, e.g. while entering a password. */
   var Aborted: Boolean = js.native
@@ -433,156 +434,144 @@ object MediaDescriptor {
   }
   
   @scala.inline
-  implicit class MediaDescriptorOps[Self <: MediaDescriptor] (val x: Self) extends AnyVal {
+  implicit class MediaDescriptorMutableBuilder[Self <: MediaDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAborted(value: Boolean): Self = StObject.set(x, "Aborted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsTemplate(value: Boolean): Self = StObject.set(x, "AsTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAborted(value: Boolean): Self = this.set("Aborted", value.asInstanceOf[js.Any])
+    def setCharacterSet(value: String): Self = StObject.set(x, "CharacterSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsTemplate(value: Boolean): Self = this.set("AsTemplate", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("Author", value.asInstanceOf[js.Any])
+    def setComponentData(value: js.Any): Self = StObject.set(x, "ComponentData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterSet(value: String): Self = this.set("CharacterSet", value.asInstanceOf[js.Any])
+    def setDocumentBaseURL(value: String): Self = StObject.set(x, "DocumentBaseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setDocumentTitle(value: String): Self = StObject.set(x, "DocumentTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentData(value: js.Any): Self = this.set("ComponentData", value.asInstanceOf[js.Any])
+    def setEncryptionData(value: SafeArray[NamedValue]): Self = StObject.set(x, "EncryptionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentBaseURL(value: String): Self = this.set("DocumentBaseURL", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentTitle(value: String): Self = this.set("DocumentTitle", value.asInstanceOf[js.Any])
+    def setFilterData(value: js.Any): Self = StObject.set(x, "FilterData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionData(value: SafeArray[NamedValue]): Self = this.set("EncryptionData", value.asInstanceOf[js.Any])
+    def setFilterFlags(value: String): Self = StObject.set(x, "FilterFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("FileName", value.asInstanceOf[js.Any])
+    def setFilterName(value: String): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterData(value: js.Any): Self = this.set("FilterData", value.asInstanceOf[js.Any])
+    def setFilterOptions(value: String): Self = StObject.set(x, "FilterOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterFlags(value: String): Self = this.set("FilterFlags", value.asInstanceOf[js.Any])
+    def setFrame(value: XFrame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterName(value: String): Self = this.set("FilterName", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOptions(value: String): Self = this.set("FilterOptions", value.asInstanceOf[js.Any])
+    def setHierarchicalDocumentName(value: String): Self = StObject.set(x, "HierarchicalDocumentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame(value: XFrame): Self = this.set("Frame", value.asInstanceOf[js.Any])
+    def setInputStream(value: XInputStream): Self = StObject.set(x, "InputStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("Hidden", value.asInstanceOf[js.Any])
+    def setInteractionHandler(value: XInteractionHandler): Self = StObject.set(x, "InteractionHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchicalDocumentName(value: String): Self = this.set("HierarchicalDocumentName", value.asInstanceOf[js.Any])
+    def setJumpMark(value: String): Self = StObject.set(x, "JumpMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputStream(value: XInputStream): Self = this.set("InputStream", value.asInstanceOf[js.Any])
+    def setMacroExecutionMode(value: Double): Self = StObject.set(x, "MacroExecutionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractionHandler(value: XInteractionHandler): Self = this.set("InteractionHandler", value.asInstanceOf[js.Any])
+    def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJumpMark(value: String): Self = this.set("JumpMark", value.asInstanceOf[js.Any])
+    def setOpenFlags(value: String): Self = StObject.set(x, "OpenFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMacroExecutionMode(value: Double): Self = this.set("MacroExecutionMode", value.asInstanceOf[js.Any])
+    def setOpenNewView(value: Boolean): Self = StObject.set(x, "OpenNewView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: String): Self = this.set("MediaType", value.asInstanceOf[js.Any])
+    def setOutputStream(value: XOutputStream): Self = StObject.set(x, "OutputStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenFlags(value: String): Self = this.set("OpenFlags", value.asInstanceOf[js.Any])
+    def setOverwrite(value: Boolean): Self = StObject.set(x, "Overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenNewView(value: Boolean): Self = this.set("OpenNewView", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputStream(value: XOutputStream): Self = this.set("OutputStream", value.asInstanceOf[js.Any])
+    def setPostData(value: SafeArray[Double]): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwrite(value: Boolean): Self = this.set("Overwrite", value.asInstanceOf[js.Any])
+    def setPostString(value: String): Self = StObject.set(x, "PostString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setPreview(value: Boolean): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostData(value: SafeArray[Double]): Self = this.set("PostData", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostString(value: String): Self = this.set("PostString", value.asInstanceOf[js.Any])
+    def setReferer(value: String): Self = StObject.set(x, "Referer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: Boolean): Self = this.set("Preview", value.asInstanceOf[js.Any])
+    def setRepairPackage(value: Boolean): Self = StObject.set(x, "RepairPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setStartPresentation(value: Boolean): Self = StObject.set(x, "StartPresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferer(value: String): Self = this.set("Referer", value.asInstanceOf[js.Any])
+    def setStatusIndicator(value: XStatusIndicator): Self = StObject.set(x, "StatusIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepairPackage(value: Boolean): Self = this.set("RepairPackage", value.asInstanceOf[js.Any])
+    def setSuggestedSaveAsDir(value: String): Self = StObject.set(x, "SuggestedSaveAsDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPresentation(value: Boolean): Self = this.set("StartPresentation", value.asInstanceOf[js.Any])
+    def setSuggestedSaveAsName(value: String): Self = StObject.set(x, "SuggestedSaveAsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusIndicator(value: XStatusIndicator): Self = this.set("StatusIndicator", value.asInstanceOf[js.Any])
+    def setTemplateName(value: String): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedSaveAsDir(value: String): Self = this.set("SuggestedSaveAsDir", value.asInstanceOf[js.Any])
+    def setTemplateRegionName(value: String): Self = StObject.set(x, "TemplateRegionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedSaveAsName(value: String): Self = this.set("SuggestedSaveAsName", value.asInstanceOf[js.Any])
+    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: String): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    def setUnpacked(value: Boolean): Self = StObject.set(x, "Unpacked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateRegionName(value: String): Self = this.set("TemplateRegionName", value.asInstanceOf[js.Any])
+    def setUpdateDocMode(value: Double): Self = StObject.set(x, "UpdateDocMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnpacked(value: Boolean): Self = this.set("Unpacked", value.asInstanceOf[js.Any])
+    def setViewControllerName(value: String): Self = StObject.set(x, "ViewControllerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateDocMode(value: Double): Self = this.set("UpdateDocMode", value.asInstanceOf[js.Any])
+    def setViewData(value: js.Any): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewControllerName(value: String): Self = this.set("ViewControllerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewData(value: js.Any): Self = this.set("ViewData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewId(value: Double): Self = this.set("ViewId", value.asInstanceOf[js.Any])
+    def setViewId(value: Double): Self = StObject.set(x, "ViewId", value.asInstanceOf[js.Any])
   }
 }

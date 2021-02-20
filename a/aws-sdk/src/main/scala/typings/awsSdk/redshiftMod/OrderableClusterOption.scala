@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderableClusterOption extends js.Object {
+trait OrderableClusterOption extends StObject {
   
   /**
     * A list of availability zones for the orderable cluster.
@@ -36,45 +37,33 @@ object OrderableClusterOption {
   }
   
   @scala.inline
-  implicit class OrderableClusterOptionOps[Self <: OrderableClusterOption] (val x: Self) extends AnyVal {
+  implicit class OrderableClusterOptionMutableBuilder[Self <: OrderableClusterOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    def setClusterType(value: String): Self = StObject.set(x, "ClusterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZones(value: AvailabilityZoneList): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    def setClusterTypeUndefined: Self = StObject.set(x, "ClusterType", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    def setClusterVersion(value: String): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterType(value: String): Self = this.set("ClusterType", value.asInstanceOf[js.Any])
+    def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
     
     @scala.inline
-    def deleteClusterType: Self = this.set("ClusterType", js.undefined)
+    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterVersion(value: String): Self = this.set("ClusterVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterVersion: Self = this.set("ClusterVersion", js.undefined)
-    
-    @scala.inline
-    def setNodeType(value: String): Self = this.set("NodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeType: Self = this.set("NodeType", js.undefined)
+    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
   }
 }

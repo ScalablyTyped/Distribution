@@ -13,13 +13,14 @@ import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  rows :number,   roworder :'top to bottom' | 'bottom to top',   columns :number,   subplots :std.Array<string>,   xaxes :std.Array<string>,   yaxes :std.Array<string>,   pattern :'independent' | 'coupled',   xgap :number,   ygap :number,   domain :std.Partial<{  x :std.Array<number>,   y :std.Array<number>}>,   xside :'bottom' | 'bottom plot' | 'top plot' | 'top',   yside :'left' | 'left plot' | 'right plot' | 'right'}> */
 @js.native
-trait PartialrowsnumberroworderColumns extends js.Object {
+trait PartialrowsnumberroworderColumns extends StObject {
   
   var columns: js.UndefOr[Double] = js.native
   
@@ -54,99 +55,87 @@ object PartialrowsnumberroworderColumns {
   }
   
   @scala.inline
-  implicit class PartialrowsnumberroworderColumnsOps[Self <: PartialrowsnumberroworderColumns] (val x: Self) extends AnyVal {
+  implicit class PartialrowsnumberroworderColumnsMutableBuilder[Self <: PartialrowsnumberroworderColumns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomain(value: Partial[X]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setPattern(value: independent | coupled): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: Partial[X]): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setRoworder(value: (`top to bottom`) | (`bottom to top`)): Self = StObject.set(x, "roworder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: independent | coupled): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setRoworderUndefined: Self = StObject.set(x, "roworder", js.undefined)
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoworder(value: (`top to bottom`) | (`bottom to top`)): Self = this.set("roworder", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRoworder: Self = this.set("roworder", js.undefined)
+    def setSubplots(value: js.Array[String]): Self = StObject.set(x, "subplots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setSubplotsUndefined: Self = StObject.set(x, "subplots", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setSubplotsVarargs(value: String*): Self = StObject.set(x, "subplots", js.Array(value :_*))
     
     @scala.inline
-    def setSubplotsVarargs(value: String*): Self = this.set("subplots", js.Array(value :_*))
+    def setXaxes(value: js.Array[String]): Self = StObject.set(x, "xaxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubplots(value: js.Array[String]): Self = this.set("subplots", value.asInstanceOf[js.Any])
+    def setXaxesUndefined: Self = StObject.set(x, "xaxes", js.undefined)
     
     @scala.inline
-    def deleteSubplots: Self = this.set("subplots", js.undefined)
+    def setXaxesVarargs(value: String*): Self = StObject.set(x, "xaxes", js.Array(value :_*))
     
     @scala.inline
-    def setXaxesVarargs(value: String*): Self = this.set("xaxes", js.Array(value :_*))
+    def setXgap(value: Double): Self = StObject.set(x, "xgap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXaxes(value: js.Array[String]): Self = this.set("xaxes", value.asInstanceOf[js.Any])
+    def setXgapUndefined: Self = StObject.set(x, "xgap", js.undefined)
     
     @scala.inline
-    def deleteXaxes: Self = this.set("xaxes", js.undefined)
+    def setXside(value: bottom | (`bottom plot`) | (`top plot`) | top): Self = StObject.set(x, "xside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXgap(value: Double): Self = this.set("xgap", value.asInstanceOf[js.Any])
+    def setXsideUndefined: Self = StObject.set(x, "xside", js.undefined)
     
     @scala.inline
-    def deleteXgap: Self = this.set("xgap", js.undefined)
+    def setYaxes(value: js.Array[String]): Self = StObject.set(x, "yaxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXside(value: bottom | (`bottom plot`) | (`top plot`) | top): Self = this.set("xside", value.asInstanceOf[js.Any])
+    def setYaxesUndefined: Self = StObject.set(x, "yaxes", js.undefined)
     
     @scala.inline
-    def deleteXside: Self = this.set("xside", js.undefined)
+    def setYaxesVarargs(value: String*): Self = StObject.set(x, "yaxes", js.Array(value :_*))
     
     @scala.inline
-    def setYaxesVarargs(value: String*): Self = this.set("yaxes", js.Array(value :_*))
+    def setYgap(value: Double): Self = StObject.set(x, "ygap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYaxes(value: js.Array[String]): Self = this.set("yaxes", value.asInstanceOf[js.Any])
+    def setYgapUndefined: Self = StObject.set(x, "ygap", js.undefined)
     
     @scala.inline
-    def deleteYaxes: Self = this.set("yaxes", js.undefined)
+    def setYside(value: left | (`left plot`) | (`right plot`) | right): Self = StObject.set(x, "yside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYgap(value: Double): Self = this.set("ygap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYgap: Self = this.set("ygap", js.undefined)
-    
-    @scala.inline
-    def setYside(value: left | (`left plot`) | (`right plot`) | right): Self = this.set("yside", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYside: Self = this.set("yside", js.undefined)
+    def setYsideUndefined: Self = StObject.set(x, "yside", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.extjs.Ext.chart
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,108 +65,96 @@ object ILegend {
   }
   
   @scala.inline
-  implicit class ILegendOps[Self <: ILegend] (val x: Self) extends AnyVal {
+  implicit class ILegendMutableBuilder[Self <: ILegend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoxFill(value: String): Self = StObject.set(x, "boxFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoxFillUndefined: Self = StObject.set(x, "boxFill", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoxStroke(value: String): Self = StObject.set(x, "boxStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxFill(value: String): Self = this.set("boxFill", value.asInstanceOf[js.Any])
+    def setBoxStrokeUndefined: Self = StObject.set(x, "boxStroke", js.undefined)
     
     @scala.inline
-    def deleteBoxFill: Self = this.set("boxFill", js.undefined)
+    def setBoxStrokeWidth(value: String): Self = StObject.set(x, "boxStrokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxStroke(value: String): Self = this.set("boxStroke", value.asInstanceOf[js.Any])
+    def setBoxStrokeWidthUndefined: Self = StObject.set(x, "boxStrokeWidth", js.undefined)
     
     @scala.inline
-    def deleteBoxStroke: Self = this.set("boxStroke", js.undefined)
+    def setBoxZIndex(value: Double): Self = StObject.set(x, "boxZIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxStrokeWidth(value: String): Self = this.set("boxStrokeWidth", value.asInstanceOf[js.Any])
+    def setBoxZIndexUndefined: Self = StObject.set(x, "boxZIndex", js.undefined)
     
     @scala.inline
-    def deleteBoxStrokeWidth: Self = this.set("boxStrokeWidth", js.undefined)
+    def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxZIndex(value: Double): Self = this.set("boxZIndex", value.asInstanceOf[js.Any])
+    def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
     
     @scala.inline
-    def deleteBoxZIndex: Self = this.set("boxZIndex", js.undefined)
+    def setItemSpacing(value: Double): Self = StObject.set(x, "itemSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVertical(value: Boolean): Self = this.set("isVertical", value.asInstanceOf[js.Any])
+    def setItemSpacingUndefined: Self = StObject.set(x, "itemSpacing", js.undefined)
     
     @scala.inline
-    def deleteIsVertical: Self = this.set("isVertical", js.undefined)
+    def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemSpacing(value: Double): Self = this.set("itemSpacing", value.asInstanceOf[js.Any])
+    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
     @scala.inline
-    def deleteItemSpacing: Self = this.set("itemSpacing", js.undefined)
+    def setLabelFont(value: String): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelColor(value: String): Self = this.set("labelColor", value.asInstanceOf[js.Any])
+    def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
     
     @scala.inline
-    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFont(value: String): Self = this.set("labelFont", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteLabelFont: Self = this.set("labelFont", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setToggle(value: /* show */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggle(value: /* show */ js.UndefOr[Boolean] => Unit): Self = this.set("toggle", js.Any.fromFunction1(value))
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

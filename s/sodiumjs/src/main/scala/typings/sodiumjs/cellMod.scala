@@ -10,16 +10,16 @@ import typings.sodiumjs.lazyMod.Lazy
 import typings.sodiumjs.streamMod.Stream
 import typings.sodiumjs.vertexMod.Source
 import typings.sodiumjs.vertexMod.Vertex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/Cell", JSImport.Namespace)
-@js.native
-object cellMod extends js.Object {
+object cellMod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell")
   @js.native
-  class Cell[A] protected () extends js.Object {
+  class Cell[A] protected () extends StObject {
     def this(initValue: A) = this()
     def this(initValue: A, str: Stream[A]) = this()
     
@@ -180,41 +180,57 @@ object cellMod extends js.Object {
     var vertex: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Cell extends js.Object {
+  object Cell {
     
-    var _liftArray: js.Any = js.native
+    @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell._liftArray")
+    @js.native
+    def _liftArray: js.Any = js.native
+    @scala.inline
+    def _liftArray_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_liftArray")(x.asInstanceOf[js.Any])
     
     /**
       * Apply a value inside a cell to a function inside a cell. This is the
       * primitive for all function lifting.
       */
-    @JSName("apply")
+    @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell.apply")
+    @js.native
     def apply[A, B](cf: Cell[js.Function1[/* a */ A, B]], ca: Cell[A]): Cell[B] = js.native
-    @JSName("apply")
+    @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell.apply")
+    @js.native
     def apply[A, B](cf: Cell[js.Function1[/* a */ A, B]], ca: Cell[A], sources: js.Array[Source]): Cell[B] = js.native
+    
+    /**
+      * Lift an array of cells into a cell of an array.
+      */
+    @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell.liftArray")
+    @js.native
+    def liftArray[A](ca: js.Array[Cell[A]]): Cell[js.Array[A]] = js.native
+    
+    /**
+      * Unwrap a cell inside another cell to give a time-varying cell implementation.
+      */
+    @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell.switchC")
+    @js.native
+    def switchC[A](cca: Cell[Cell[A]]): Cell[A] = js.native
+    
+    /**
+      * Unwrap a stream inside a cell to give a time-varying stream implementation.
+      */
+    @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell.switchS")
+    @js.native
+    def switchS[A](csa: Cell[Stream[A]]): Stream[A] = js.native
     
     /**
       * Fantasy-land Algebraic Data Type Compatability.
       * Cell satisfies the Functor, Apply, Applicative categories
       * @see {@link https://github.com/fantasyland/fantasy-land} for more info
       */
-    @JSName("fantasy-land/of")
+    @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell.fantasy-land/of")
+    @js.native
     def `fantasy-landSlashof`[A](a: A): Cell[A] = js.native
-    
-    /**
-      * Lift an array of cells into a cell of an array.
-      */
-    def liftArray[A](ca: js.Array[Cell[A]]): Cell[js.Array[A]] = js.native
-    
-    /**
-      * Unwrap a cell inside another cell to give a time-varying cell implementation.
-      */
-    def switchC[A](cca: Cell[Cell[A]]): Cell[A] = js.native
-    
-    /**
-      * Unwrap a stream inside a cell to give a time-varying stream implementation.
-      */
-    def switchS[A](csa: Cell[Stream[A]]): Stream[A] = js.native
   }
 }

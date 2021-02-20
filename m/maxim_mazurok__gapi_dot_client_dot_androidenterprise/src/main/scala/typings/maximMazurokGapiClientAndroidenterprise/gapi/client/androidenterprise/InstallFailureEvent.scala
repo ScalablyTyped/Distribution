@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstallFailureEvent extends js.Object {
+trait InstallFailureEvent extends StObject {
   
   /** The Android ID of the device. This field will always be present. */
   var deviceId: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object InstallFailureEvent {
   }
   
   @scala.inline
-  implicit class InstallFailureEventOps[Self <: InstallFailureEvent] (val x: Self) extends AnyVal {
+  implicit class InstallFailureEventMutableBuilder[Self <: InstallFailureEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureDetails(value: String): Self = StObject.set(x, "failureDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setFailureDetailsUndefined: Self = StObject.set(x, "failureDetails", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureDetails(value: String): Self = this.set("failureDetails", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteFailureDetails: Self = this.set("failureDetails", js.undefined)
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

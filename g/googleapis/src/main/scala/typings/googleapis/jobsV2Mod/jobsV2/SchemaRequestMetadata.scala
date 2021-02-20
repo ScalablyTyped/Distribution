@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * performance of the service.
   */
 @js.native
-trait SchemaRequestMetadata extends js.Object {
+trait SchemaRequestMetadata extends StObject {
   
   /**
     * Optional.  The type of device used by the job seeker at the time of the
@@ -63,42 +64,30 @@ object SchemaRequestMetadata {
   }
   
   @scala.inline
-  implicit class SchemaRequestMetadataOps[Self <: SchemaRequestMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaRequestMetadataMutableBuilder[Self <: SchemaRequestMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceInfo(value: SchemaDeviceInfo): Self = StObject.set(x, "deviceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceInfoUndefined: Self = StObject.set(x, "deviceInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceInfo(value: SchemaDeviceInfo): Self = this.set("deviceInfo", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteDeviceInfo: Self = this.set("deviceInfo", js.undefined)
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

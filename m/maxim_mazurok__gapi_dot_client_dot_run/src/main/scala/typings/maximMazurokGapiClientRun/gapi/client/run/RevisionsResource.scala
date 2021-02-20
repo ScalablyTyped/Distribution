@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientRun.anon.Alt
 import typings.maximMazurokGapiClientRun.anon.ApiVersion
 import typings.maximMazurokGapiClientRun.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevisionsResource extends js.Object {
+trait RevisionsResource extends StObject {
   
   /** Delete a revision. */
   def delete(): Request[Status] = js.native

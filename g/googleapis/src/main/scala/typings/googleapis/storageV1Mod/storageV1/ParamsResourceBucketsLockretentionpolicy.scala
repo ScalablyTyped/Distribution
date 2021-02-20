@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,42 +43,30 @@ object ParamsResourceBucketsLockretentionpolicy {
   }
   
   @scala.inline
-  implicit class ParamsResourceBucketsLockretentionpolicyOps[Self <: ParamsResourceBucketsLockretentionpolicy] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceBucketsLockretentionpolicyMutableBuilder[Self <: ParamsResourceBucketsLockretentionpolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setIfMetagenerationMatch(value: String): Self = StObject.set(x, "ifMetagenerationMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setIfMetagenerationMatchUndefined: Self = StObject.set(x, "ifMetagenerationMatch", js.undefined)
     
     @scala.inline
-    def deleteBucket: Self = this.set("bucket", js.undefined)
+    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfMetagenerationMatch(value: String): Self = this.set("ifMetagenerationMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIfMetagenerationMatch: Self = this.set("ifMetagenerationMatch", js.undefined)
-    
-    @scala.inline
-    def setUserProject(value: String): Self = this.set("userProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProject: Self = this.set("userProject", js.undefined)
+    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

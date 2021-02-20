@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkerLifecycleEvent extends js.Object {
+trait WorkerLifecycleEvent extends StObject {
   
   /** The start time of this container. All events will report this so that events can be grouped together across container/VM restarts. */
   var containerStartTime: js.UndefOr[String] = js.native
@@ -30,40 +31,28 @@ object WorkerLifecycleEvent {
   }
   
   @scala.inline
-  implicit class WorkerLifecycleEventOps[Self <: WorkerLifecycleEvent] (val x: Self) extends AnyVal {
+  implicit class WorkerLifecycleEventMutableBuilder[Self <: WorkerLifecycleEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerStartTime(value: String): Self = StObject.set(x, "containerStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerStartTimeUndefined: Self = StObject.set(x, "containerStartTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStartTime(value: String): Self = this.set("containerStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerStartTime: Self = this.set("containerStartTime", js.undefined)
-    
-    @scala.inline
-    def setEvent(value: String): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerLifecycleEvent with TopLevel[js.Any]
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

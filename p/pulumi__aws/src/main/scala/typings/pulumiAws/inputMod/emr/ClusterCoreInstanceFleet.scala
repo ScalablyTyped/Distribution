@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.emr
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterCoreInstanceFleet extends js.Object {
+trait ClusterCoreInstanceFleet extends StObject {
   
   /**
     * The ID of the EMR Cluster
@@ -51,69 +52,57 @@ object ClusterCoreInstanceFleet {
   }
   
   @scala.inline
-  implicit class ClusterCoreInstanceFleetOps[Self <: ClusterCoreInstanceFleet] (val x: Self) extends AnyVal {
+  implicit class ClusterCoreInstanceFleetMutableBuilder[Self <: ClusterCoreInstanceFleet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceTypeConfigs(value: Input[js.Array[Input[ClusterCoreInstanceFleetInstanceTypeConfig]]]): Self = StObject.set(x, "instanceTypeConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Input[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInstanceTypeConfigsUndefined: Self = StObject.set(x, "instanceTypeConfigs", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInstanceTypeConfigsVarargs(value: Input[ClusterCoreInstanceFleetInstanceTypeConfig]*): Self = StObject.set(x, "instanceTypeConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceTypeConfigsVarargs(value: Input[ClusterCoreInstanceFleetInstanceTypeConfig]*): Self = this.set("instanceTypeConfigs", js.Array(value :_*))
+    def setLaunchSpecifications(value: Input[ClusterCoreInstanceFleetLaunchSpecifications]): Self = StObject.set(x, "launchSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceTypeConfigs(value: Input[js.Array[Input[ClusterCoreInstanceFleetInstanceTypeConfig]]]): Self = this.set("instanceTypeConfigs", value.asInstanceOf[js.Any])
+    def setLaunchSpecificationsUndefined: Self = StObject.set(x, "launchSpecifications", js.undefined)
     
     @scala.inline
-    def deleteInstanceTypeConfigs: Self = this.set("instanceTypeConfigs", js.undefined)
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchSpecifications(value: Input[ClusterCoreInstanceFleetLaunchSpecifications]): Self = this.set("launchSpecifications", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLaunchSpecifications: Self = this.set("launchSpecifications", js.undefined)
+    def setProvisionedOnDemandCapacity(value: Input[Double]): Self = StObject.set(x, "provisionedOnDemandCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProvisionedOnDemandCapacityUndefined: Self = StObject.set(x, "provisionedOnDemandCapacity", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProvisionedSpotCapacity(value: Input[Double]): Self = StObject.set(x, "provisionedSpotCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedOnDemandCapacity(value: Input[Double]): Self = this.set("provisionedOnDemandCapacity", value.asInstanceOf[js.Any])
+    def setProvisionedSpotCapacityUndefined: Self = StObject.set(x, "provisionedSpotCapacity", js.undefined)
     
     @scala.inline
-    def deleteProvisionedOnDemandCapacity: Self = this.set("provisionedOnDemandCapacity", js.undefined)
+    def setTargetOnDemandCapacity(value: Input[Double]): Self = StObject.set(x, "targetOnDemandCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedSpotCapacity(value: Input[Double]): Self = this.set("provisionedSpotCapacity", value.asInstanceOf[js.Any])
+    def setTargetOnDemandCapacityUndefined: Self = StObject.set(x, "targetOnDemandCapacity", js.undefined)
     
     @scala.inline
-    def deleteProvisionedSpotCapacity: Self = this.set("provisionedSpotCapacity", js.undefined)
+    def setTargetSpotCapacity(value: Input[Double]): Self = StObject.set(x, "targetSpotCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetOnDemandCapacity(value: Input[Double]): Self = this.set("targetOnDemandCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetOnDemandCapacity: Self = this.set("targetOnDemandCapacity", js.undefined)
-    
-    @scala.inline
-    def setTargetSpotCapacity(value: Input[Double]): Self = this.set("targetSpotCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetSpotCapacity: Self = this.set("targetSpotCapacity", js.undefined)
+    def setTargetSpotCapacityUndefined: Self = StObject.set(x, "targetSpotCapacity", js.undefined)
   }
 }

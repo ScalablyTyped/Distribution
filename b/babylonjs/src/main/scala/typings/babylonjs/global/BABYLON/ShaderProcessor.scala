@@ -6,6 +6,7 @@ import typings.babylonjs.BABYLON.ProcessingOptions
 import typings.std.ArrayBuffer
 import typings.std.EventTarget
 import typings.std.ProgressEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ShaderProcessor ()
   extends typings.babylonjs.BABYLON.ShaderProcessor
 /* static members */
-@JSGlobal("BABYLON.ShaderProcessor")
-@js.native
-object ShaderProcessor extends js.Object {
+object ShaderProcessor {
   
+  @JSGlobal("BABYLON.ShaderProcessor")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("BABYLON.ShaderProcessor.Process")
+  @js.native
   def Process(
     sourceCode: String,
     options: ProcessingOptions,
@@ -26,13 +31,29 @@ object ShaderProcessor extends js.Object {
     engine: typings.babylonjs.BABYLON.ThinEngine
   ): Unit = js.native
   
-  var _BuildExpression: js.Any = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._BuildExpression")
+  @js.native
+  def _BuildExpression: js.Any = js.native
+  @scala.inline
+  def _BuildExpression_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BuildExpression")(x.asInstanceOf[js.Any])
   
-  var _BuildSubExpression: js.Any = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._BuildSubExpression")
+  @js.native
+  def _BuildSubExpression: js.Any = js.native
+  @scala.inline
+  def _BuildSubExpression_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BuildSubExpression")(x.asInstanceOf[js.Any])
   
-  var _EvaluatePreProcessors: js.Any = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._EvaluatePreProcessors")
+  @js.native
+  def _EvaluatePreProcessors: js.Any = js.native
+  @scala.inline
+  def _EvaluatePreProcessors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EvaluatePreProcessors")(x.asInstanceOf[js.Any])
   
-  var _ExtractOperation: js.Any = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._ExtractOperation")
+  @js.native
+  def _ExtractOperation: js.Any = js.native
+  @scala.inline
+  def _ExtractOperation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ExtractOperation")(x.asInstanceOf[js.Any])
   
   /**
     * Loads a file from a url
@@ -45,10 +66,14 @@ object ShaderProcessor extends js.Object {
     * @returns a file request object
     * @hidden
     */
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit]
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -61,6 +86,8 @@ object ShaderProcessor extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -68,6 +95,8 @@ object ShaderProcessor extends js.Object {
     offlineProvider: js.UndefOr[scala.Nothing],
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -80,12 +109,16 @@ object ShaderProcessor extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
     onProgress: js.UndefOr[scala.Nothing],
     offlineProvider: IOfflineProvider
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -98,6 +131,8 @@ object ShaderProcessor extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -105,6 +140,8 @@ object ShaderProcessor extends js.Object {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -117,11 +154,15 @@ object ShaderProcessor extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -134,6 +175,8 @@ object ShaderProcessor extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -141,6 +184,8 @@ object ShaderProcessor extends js.Object {
     offlineProvider: js.UndefOr[scala.Nothing],
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -153,12 +198,16 @@ object ShaderProcessor extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -171,6 +220,8 @@ object ShaderProcessor extends js.Object {
       Unit
     ]
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -178,6 +229,8 @@ object ShaderProcessor extends js.Object {
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean
   ): IFileRequest = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._FileToolsLoadFile")
+  @js.native
   def _FileToolsLoadFile(
     url: String,
     onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
@@ -191,15 +244,40 @@ object ShaderProcessor extends js.Object {
     ]
   ): IFileRequest = js.native
   
-  var _MoveCursor: js.Any = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._MoveCursor")
+  @js.native
+  def _MoveCursor: js.Any = js.native
   
-  var _MoveCursorWithinIf: js.Any = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._MoveCursorWithinIf")
+  @js.native
+  def _MoveCursorWithinIf: js.Any = js.native
+  @scala.inline
+  def _MoveCursorWithinIf_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MoveCursorWithinIf")(x.asInstanceOf[js.Any])
   
-  var _PreparePreProcessors: js.Any = js.native
+  @scala.inline
+  def _MoveCursor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MoveCursor")(x.asInstanceOf[js.Any])
   
-  var _ProcessIncludes: js.Any = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._PreparePreProcessors")
+  @js.native
+  def _PreparePreProcessors: js.Any = js.native
+  @scala.inline
+  def _PreparePreProcessors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PreparePreProcessors")(x.asInstanceOf[js.Any])
   
-  var _ProcessPrecision: js.Any = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._ProcessIncludes")
+  @js.native
+  def _ProcessIncludes: js.Any = js.native
+  @scala.inline
+  def _ProcessIncludes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProcessIncludes")(x.asInstanceOf[js.Any])
   
-  var _ProcessShaderConversion: js.Any = js.native
+  @JSGlobal("BABYLON.ShaderProcessor._ProcessPrecision")
+  @js.native
+  def _ProcessPrecision: js.Any = js.native
+  @scala.inline
+  def _ProcessPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProcessPrecision")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("BABYLON.ShaderProcessor._ProcessShaderConversion")
+  @js.native
+  def _ProcessShaderConversion: js.Any = js.native
+  @scala.inline
+  def _ProcessShaderConversion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProcessShaderConversion")(x.asInstanceOf[js.Any])
 }

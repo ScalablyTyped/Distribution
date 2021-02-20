@@ -2,6 +2,7 @@ package typings.phaser.mod
 
 import typings.phaser.MatterJS.ConstraintType
 import typings.phaser.MatterJS.IConstraintDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,10 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Constraint ()
   extends typings.phaser.MatterJS.Constraint
-/* static members */
-@JSImport("matter", "Constraint")
-@js.native
-object Constraint extends js.Object {
+object Constraint {
   
   /**
     * Creates a new constraint.
@@ -32,5 +30,8 @@ object Constraint extends js.Object {
     * @param {} options
     * @return {constraint} constraint
     */
+  /* static member */
+  @JSImport("matter", "Constraint.create")
+  @js.native
   def create(options: IConstraintDefinition): ConstraintType = js.native
 }

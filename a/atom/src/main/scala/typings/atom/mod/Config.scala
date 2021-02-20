@@ -170,12 +170,13 @@ import typings.atom.atomStrings.tab
 import typings.atom.atomStrings.textOrSnippet
 import typings.atom.atomStrings.undecided
 import typings.atom.atomStrings.yes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   @JSName("getAll")
   def getAll_autocompleteplusautoActivationDelay(keyPath: `autocomplete-plusDotautoActivationDelay`): js.Array[ValueNumber] = js.native

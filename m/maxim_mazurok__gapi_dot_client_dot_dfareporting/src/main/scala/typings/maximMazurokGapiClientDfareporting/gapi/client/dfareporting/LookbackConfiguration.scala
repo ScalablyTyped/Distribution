@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LookbackConfiguration extends js.Object {
+trait LookbackConfiguration extends StObject {
   
   /**
     * Lookback window, in days, from the last time a given user clicked on one of your ads. If you enter 0, clicks will not be considered as triggering events for floodlight tracking. If
@@ -28,30 +29,18 @@ object LookbackConfiguration {
   }
   
   @scala.inline
-  implicit class LookbackConfigurationOps[Self <: LookbackConfiguration] (val x: Self) extends AnyVal {
+  implicit class LookbackConfigurationMutableBuilder[Self <: LookbackConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickDuration(value: Double): Self = StObject.set(x, "clickDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickDurationUndefined: Self = StObject.set(x, "clickDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostImpressionActivitiesDuration(value: Double): Self = StObject.set(x, "postImpressionActivitiesDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickDuration(value: Double): Self = this.set("clickDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClickDuration: Self = this.set("clickDuration", js.undefined)
-    
-    @scala.inline
-    def setPostImpressionActivitiesDuration(value: Double): Self = this.set("postImpressionActivitiesDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostImpressionActivitiesDuration: Self = this.set("postImpressionActivitiesDuration", js.undefined)
+    def setPostImpressionActivitiesDurationUndefined: Self = StObject.set(x, "postImpressionActivitiesDuration", js.undefined)
   }
 }

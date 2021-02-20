@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStickyOptions extends js.Object {
+trait IStickyOptions extends StObject {
   
   var anchor: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object IStickyOptions {
   }
   
   @scala.inline
-  implicit class IStickyOptionsOps[Self <: IStickyOptions] (val x: Self) extends AnyVal {
+  implicit class IStickyOptionsMutableBuilder[Self <: IStickyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBtmAnchor(value: String): Self = StObject.set(x, "btmAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: String): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setBtmAnchorUndefined: Self = StObject.set(x, "btmAnchor", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setCheckEvery(value: Double): Self = StObject.set(x, "checkEvery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtmAnchor(value: String): Self = this.set("btmAnchor", value.asInstanceOf[js.Any])
+    def setCheckEveryUndefined: Self = StObject.set(x, "checkEvery", js.undefined)
     
     @scala.inline
-    def deleteBtmAnchor: Self = this.set("btmAnchor", js.undefined)
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckEvery(value: Double): Self = this.set("checkEvery", value.asInstanceOf[js.Any])
+    def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheckEvery: Self = this.set("checkEvery", js.undefined)
+    def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerClass(value: String): Self = this.set("containerClass", value.asInstanceOf[js.Any])
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def deleteContainerClass: Self = this.set("containerClass", js.undefined)
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBottom(value: Double): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setStickTo(value: String): Self = StObject.set(x, "stickTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setStickToUndefined: Self = StObject.set(x, "stickTo", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setStickyClass(value: String): Self = StObject.set(x, "stickyClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStickTo(value: String): Self = this.set("stickTo", value.asInstanceOf[js.Any])
+    def setStickyClassUndefined: Self = StObject.set(x, "stickyClass", js.undefined)
     
     @scala.inline
-    def deleteStickTo: Self = this.set("stickTo", js.undefined)
+    def setStickyOn(value: String): Self = StObject.set(x, "stickyOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStickyClass(value: String): Self = this.set("stickyClass", value.asInstanceOf[js.Any])
+    def setStickyOnUndefined: Self = StObject.set(x, "stickyOn", js.undefined)
     
     @scala.inline
-    def deleteStickyClass: Self = this.set("stickyClass", js.undefined)
+    def setTopAnchor(value: String): Self = StObject.set(x, "topAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStickyOn(value: String): Self = this.set("stickyOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStickyOn: Self = this.set("stickyOn", js.undefined)
-    
-    @scala.inline
-    def setTopAnchor(value: String): Self = this.set("topAnchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopAnchor: Self = this.set("topAnchor", js.undefined)
+    def setTopAnchorUndefined: Self = StObject.set(x, "topAnchor", js.undefined)
   }
 }

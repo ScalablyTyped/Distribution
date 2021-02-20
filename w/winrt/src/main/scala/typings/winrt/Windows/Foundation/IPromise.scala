@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Foundation
 
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPromise[T] extends js.Object {
+trait IPromise[T] extends StObject {
   
   var addEventListener: js.UndefOr[
     js.Function3[/* type */ String, /* listener */ js.Function, /* capture */ js.UndefOr[Boolean], Unit]

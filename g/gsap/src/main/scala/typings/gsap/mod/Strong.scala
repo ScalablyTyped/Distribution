@@ -1,22 +1,41 @@
 package typings.gsap.mod
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* was `typeof Quint` */
 @JSImport("gsap", "Strong")
 @js.native
 class Strong ()
   extends typings.gsap.gsap.Ease
-@JSImport("gsap", "Strong")
-@js.native
-object Strong
-  extends Instantiable0[typings.gsap.gsap.Quint] {
+/* was `typeof Quint` */
+object Strong {
   
-  var easeIn: typings.gsap.gsap.Quint = js.native
+  @JSImport("gsap", "Strong")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var easeInOut: typings.gsap.gsap.Quint = js.native
+  /* static member */
+  @JSImport("gsap", "Strong.easeIn")
+  @js.native
+  def easeIn: typings.gsap.gsap.Quint = js.native
   
-  var easeOut: typings.gsap.gsap.Quint = js.native
+  /* static member */
+  @JSImport("gsap", "Strong.easeInOut")
+  @js.native
+  def easeInOut: typings.gsap.gsap.Quint = js.native
+  @scala.inline
+  def easeInOut_=(x: typings.gsap.gsap.Quint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeInOut")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def easeIn_=(x: typings.gsap.gsap.Quint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeIn")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("gsap", "Strong.easeOut")
+  @js.native
+  def easeOut: typings.gsap.gsap.Quint = js.native
+  @scala.inline
+  def easeOut_=(x: typings.gsap.gsap.Quint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeOut")(x.asInstanceOf[js.Any])
 }

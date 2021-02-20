@@ -1,22 +1,22 @@
 package typings.sipJs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/grammar", JSImport.Namespace)
-@js.native
-object grammarMod extends js.Object {
+object grammarMod {
   
-  @js.native
-  object Grammar extends js.Object {
+  object Grammar {
     
     /**
       * Parse the given string and returns a SIP.URI instance or undefined if
       * it is an invalid URI.
       * @param uri -
       */
+    @JSImport("sip.js/lib/grammar", "Grammar.URIParse")
+    @js.native
     def URIParse(uri: String): js.UndefOr[typings.sipJs.uriMod.URI] = js.native
     
     /**
@@ -24,6 +24,8 @@ object grammarMod extends js.Object {
       * it is an invalid NameAddrHeader.
       * @param name_addr_header -
       */
+    @JSImport("sip.js/lib/grammar", "Grammar.nameAddrHeaderParse")
+    @js.native
     def nameAddrHeaderParse(nameAddrHeader: String): js.UndefOr[typings.sipJs.nameAddrHeaderMod.NameAddrHeader] = js.native
     
     /**
@@ -31,9 +33,12 @@ object grammarMod extends js.Object {
       * @param input -
       * @param startRule -
       */
+    @JSImport("sip.js/lib/grammar", "Grammar.parse")
+    @js.native
     def parse(input: String, startRule: String): js.Any = js.native
   }
   
+  @JSImport("sip.js/lib/grammar", "NameAddrHeader")
   @js.native
   class NameAddrHeader protected ()
     extends typings.sipJs.nameAddrHeaderMod.NameAddrHeader {
@@ -46,12 +51,14 @@ object grammarMod extends js.Object {
     def this(uri: typings.sipJs.uriMod.URI, displayName: String, parameters: StringDictionary[String]) = this()
   }
   
+  @JSImport("sip.js/lib/grammar", "Parameters")
   @js.native
   class Parameters protected ()
     extends typings.sipJs.parametersMod.Parameters {
     def this(parameters: StringDictionary[String]) = this()
   }
   
+  @JSImport("sip.js/lib/grammar", "URI")
   @js.native
   class URI protected ()
     extends typings.sipJs.uriMod.URI {

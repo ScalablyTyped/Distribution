@@ -1,6 +1,7 @@
 package typings.mdast.mod
 
 import typings.mdast.mdastStrings.list
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,45 +33,33 @@ object List {
   }
   
   @scala.inline
-  implicit class ListOps[Self <: List] (val x: Self) extends AnyVal {
+  implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[ListContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: ListContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: ListContent*): Self = this.set("children", js.Array(value :_*))
+    def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Array[ListContent]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: list): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
     
     @scala.inline
-    def setOrdered(value: Boolean): Self = this.set("ordered", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrdered: Self = this.set("ordered", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setSpread(value: Boolean): Self = this.set("spread", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpread: Self = this.set("spread", js.undefined)
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

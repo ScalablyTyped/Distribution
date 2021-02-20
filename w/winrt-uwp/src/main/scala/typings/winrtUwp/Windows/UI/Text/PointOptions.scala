@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PointOptions extends js.Object
+sealed trait PointOptions extends StObject
 /** Defines options for specifying or retrieving a point. */
 @JSGlobal("Windows.UI.Text.PointOptions")
 @js.native
-object PointOptions extends js.Object {
+object PointOptions extends StObject {
   
   /** Allow points outside of the client area. */
   @js.native

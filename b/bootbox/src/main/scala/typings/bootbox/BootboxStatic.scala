@@ -2,12 +2,13 @@ package typings.bootbox
 
 import typings.jquery.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootboxStatic extends js.Object {
+trait BootboxStatic extends StObject {
   
   def addLocale(name: String, values: BootboxLocaleValues): Unit = js.native
   

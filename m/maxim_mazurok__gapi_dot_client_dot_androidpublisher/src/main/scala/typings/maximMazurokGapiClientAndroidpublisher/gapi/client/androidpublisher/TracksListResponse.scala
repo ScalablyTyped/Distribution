@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TracksListResponse extends js.Object {
+trait TracksListResponse extends StObject {
   
   /** The kind of this response ("androidpublisher#tracksListResponse"). */
   var kind: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object TracksListResponse {
   }
   
   @scala.inline
-  implicit class TracksListResponseOps[Self <: TracksListResponse] (val x: Self) extends AnyVal {
+  implicit class TracksListResponseMutableBuilder[Self <: TracksListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTracks(value: js.Array[Track]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setTracksVarargs(value: Track*): Self = this.set("tracks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTracks(value: js.Array[Track]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracks: Self = this.set("tracks", js.undefined)
+    def setTracksVarargs(value: Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IViewOptions extends js.Object {
+trait IViewOptions extends StObject {
   
   /** The bounding rectangle of the map view. If both bounds and center are specified, bounds takes precedence over center. */
   var bounds: js.UndefOr[LocationRect] = js.native
@@ -46,72 +47,60 @@ object IViewOptions {
   }
   
   @scala.inline
-  implicit class IViewOptionsOps[Self <: IViewOptions] (val x: Self) extends AnyVal {
+  implicit class IViewOptionsMutableBuilder[Self <: IViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: LocationRect): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setCenterOffset(value: Point): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setCenterOffsetUndefined: Self = StObject.set(x, "centerOffset", js.undefined)
     
     @scala.inline
-    def setCenter(value: Location): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterOffset(value: Point): Self = this.set("centerOffset", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteCenterOffset: Self = this.set("centerOffset", js.undefined)
+    def setLabelOverlay(value: LabelOverlay): Self = StObject.set(x, "labelOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setLabelOverlayUndefined: Self = StObject.set(x, "labelOverlay", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setMapTypeId(value: MapTypeId): Self = StObject.set(x, "mapTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOverlay(value: LabelOverlay): Self = this.set("labelOverlay", value.asInstanceOf[js.Any])
+    def setMapTypeIdUndefined: Self = StObject.set(x, "mapTypeId", js.undefined)
     
     @scala.inline
-    def deleteLabelOverlay: Self = this.set("labelOverlay", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapTypeId(value: MapTypeId): Self = this.set("mapTypeId", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteMapTypeId: Self = this.set("mapTypeId", js.undefined)
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePitch: Self = this.set("pitch", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

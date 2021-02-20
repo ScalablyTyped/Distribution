@@ -6,12 +6,13 @@ import typings.fabric.anon.X
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUtilMisc extends js.Object {
+trait IUtilMisc extends StObject {
   
   /**
     * Clear char widths cache for the given font family or all the cache if no

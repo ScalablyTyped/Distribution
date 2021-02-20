@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the Bluetooth address type. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothAddressType")
 @js.native
-object BluetoothAddressType extends js.Object {
+object BluetoothAddressType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothAddressType with Double] = js.native

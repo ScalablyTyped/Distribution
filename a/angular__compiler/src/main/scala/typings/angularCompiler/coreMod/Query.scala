@@ -1,11 +1,12 @@
 package typings.angularCompiler.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query extends js.Object {
+trait Query extends StObject {
   
   var descendants: Boolean = js.native
   
@@ -28,39 +29,27 @@ object Query {
   }
   
   @scala.inline
-  implicit class QueryOps[Self <: Query] (val x: Self) extends AnyVal {
+  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsViewQuery(value: Boolean): Self = StObject.set(x, "isViewQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescendants(value: Boolean): Self = this.set("descendants", value.asInstanceOf[js.Any])
+    def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: Boolean): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setSelector(value: js.Any): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsViewQuery(value: Boolean): Self = this.set("isViewQuery", value.asInstanceOf[js.Any])
+    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: js.Any): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: js.Any): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatic: Self = this.set("static", js.undefined)
+    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
   }
 }

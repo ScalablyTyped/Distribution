@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TLSInfo extends js.Object {
+trait TLSInfo extends StObject {
   
   var CertIssuerPublicKey: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object TLSInfo {
   }
   
   @scala.inline
-  implicit class TLSInfoOps[Self <: TLSInfo] (val x: Self) extends AnyVal {
+  implicit class TLSInfoMutableBuilder[Self <: TLSInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertIssuerPublicKey(value: String): Self = StObject.set(x, "CertIssuerPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertIssuerPublicKeyUndefined: Self = StObject.set(x, "CertIssuerPublicKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertIssuerSubject(value: String): Self = StObject.set(x, "CertIssuerSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertIssuerPublicKey(value: String): Self = this.set("CertIssuerPublicKey", value.asInstanceOf[js.Any])
+    def setCertIssuerSubjectUndefined: Self = StObject.set(x, "CertIssuerSubject", js.undefined)
     
     @scala.inline
-    def deleteCertIssuerPublicKey: Self = this.set("CertIssuerPublicKey", js.undefined)
+    def setTrustRoot(value: String): Self = StObject.set(x, "TrustRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertIssuerSubject(value: String): Self = this.set("CertIssuerSubject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertIssuerSubject: Self = this.set("CertIssuerSubject", js.undefined)
-    
-    @scala.inline
-    def setTrustRoot(value: String): Self = this.set("TrustRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustRoot: Self = this.set("TrustRoot", js.undefined)
+    def setTrustRootUndefined: Self = StObject.set(x, "TrustRoot", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutInsightRuleInput extends js.Object {
+trait PutInsightRuleInput extends StObject {
   
   /**
     * The definition of the rule, as a JSON object. For details on the valid syntax, see Contributor Insights Rule Syntax.
@@ -36,39 +37,27 @@ object PutInsightRuleInput {
   }
   
   @scala.inline
-  implicit class PutInsightRuleInputOps[Self <: PutInsightRuleInput] (val x: Self) extends AnyVal {
+  implicit class PutInsightRuleInputMutableBuilder[Self <: PutInsightRuleInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuleDefinition(value: InsightRuleDefinition): Self = StObject.set(x, "RuleDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleName(value: InsightRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleState(value: InsightRuleState): Self = StObject.set(x, "RuleState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleDefinition(value: InsightRuleDefinition): Self = this.set("RuleDefinition", value.asInstanceOf[js.Any])
+    def setRuleStateUndefined: Self = StObject.set(x, "RuleState", js.undefined)
     
     @scala.inline
-    def setRuleName(value: InsightRuleName): Self = this.set("RuleName", value.asInstanceOf[js.Any])
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleState(value: InsightRuleState): Self = this.set("RuleState", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRuleState: Self = this.set("RuleState", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

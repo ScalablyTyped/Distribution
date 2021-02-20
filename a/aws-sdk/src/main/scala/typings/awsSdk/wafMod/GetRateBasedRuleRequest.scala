@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRateBasedRuleRequest extends js.Object {
+trait GetRateBasedRuleRequest extends StObject {
   
   /**
     * The RuleId of the RateBasedRule that you want to get. RuleId is returned by CreateRateBasedRule and by ListRateBasedRules.
@@ -21,21 +22,9 @@ object GetRateBasedRuleRequest {
   }
   
   @scala.inline
-  implicit class GetRateBasedRuleRequestOps[Self <: GetRateBasedRuleRequest] (val x: Self) extends AnyVal {
+  implicit class GetRateBasedRuleRequestMutableBuilder[Self <: GetRateBasedRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRuleId(value: ResourceId): Self = this.set("RuleId", value.asInstanceOf[js.Any])
+    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }
 }

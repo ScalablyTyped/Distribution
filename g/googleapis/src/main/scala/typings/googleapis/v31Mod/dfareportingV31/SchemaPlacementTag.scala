@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Placement Tag
   */
 @js.native
-trait SchemaPlacementTag extends js.Object {
+trait SchemaPlacementTag extends StObject {
   
   /**
     * Placement ID
@@ -29,33 +30,21 @@ object SchemaPlacementTag {
   }
   
   @scala.inline
-  implicit class SchemaPlacementTagOps[Self <: SchemaPlacementTag] (val x: Self) extends AnyVal {
+  implicit class SchemaPlacementTagMutableBuilder[Self <: SchemaPlacementTag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagDatas(value: js.Array[SchemaTagData]): Self = StObject.set(x, "tagDatas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementId(value: String): Self = this.set("placementId", value.asInstanceOf[js.Any])
+    def setTagDatasUndefined: Self = StObject.set(x, "tagDatas", js.undefined)
     
     @scala.inline
-    def deletePlacementId: Self = this.set("placementId", js.undefined)
-    
-    @scala.inline
-    def setTagDatasVarargs(value: SchemaTagData*): Self = this.set("tagDatas", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagDatas(value: js.Array[SchemaTagData]): Self = this.set("tagDatas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagDatas: Self = this.set("tagDatas", js.undefined)
+    def setTagDatasVarargs(value: SchemaTagData*): Self = StObject.set(x, "tagDatas", js.Array(value :_*))
   }
 }

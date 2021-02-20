@@ -1,12 +1,13 @@
 package typings.vis.anon
 
 import typings.vis.mod.TimelineAnimationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animation extends js.Object {
+trait Animation extends StObject {
   
   var animation: TimelineAnimationOptions = js.native
   
@@ -21,24 +22,12 @@ object Animation {
   }
   
   @scala.inline
-  implicit class AnimationOps[Self <: Animation] (val x: Self) extends AnyVal {
+  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: TimelineAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnimation(value: TimelineAnimationOptions): Self = this.set("animation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFocus(value: Boolean): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICoreWindowStatic extends js.Object {
+trait ICoreWindowStatic extends StObject {
   
   def getForCurrentThread(): CoreWindow = js.native
 }
@@ -18,21 +19,9 @@ object ICoreWindowStatic {
   }
   
   @scala.inline
-  implicit class ICoreWindowStaticOps[Self <: ICoreWindowStatic] (val x: Self) extends AnyVal {
+  implicit class ICoreWindowStaticMutableBuilder[Self <: ICoreWindowStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetForCurrentThread(value: () => CoreWindow): Self = this.set("getForCurrentThread", js.Any.fromFunction0(value))
+    def setGetForCurrentThread(value: () => CoreWindow): Self = StObject.set(x, "getForCurrentThread", js.Any.fromFunction0(value))
   }
 }

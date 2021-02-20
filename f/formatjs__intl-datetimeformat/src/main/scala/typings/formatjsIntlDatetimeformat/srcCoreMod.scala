@@ -3,7 +3,6 @@ package typings.formatjsIntlDatetimeformat
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
 import typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormatLocaleInternalData
 import typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormatOptions
 import typings.formatjsEcma402Abstract.typesDateTimeMod.UnpackedZoneData
@@ -12,14 +11,15 @@ import typings.formatjsIntlDatetimeformat.srcTypesMod.PackedData
 import typings.formatjsIntlDatetimeformat.srcTypesMod.RawDateTimeLocaleData
 import typings.std.Record
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/intl-datetimeformat/src/core", JSImport.Namespace)
-@js.native
-object srcCoreMod extends js.Object {
+object srcCoreMod {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("@formatjs/intl-datetimeformat/src/core", "DateTimeFormat")
   @js.native
   class DateTimeFormat ()
     extends typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat {
@@ -29,8 +29,9 @@ object srcCoreMod extends js.Object {
     def this(locales: String, options: DateTimeFormatOptions) = this()
     def this(locales: js.Array[String], options: DateTimeFormatOptions) = this()
   }
+  @JSImport("@formatjs/intl-datetimeformat/src/core", "DateTimeFormat")
   @js.native
-  object DateTimeFormat extends TopLevel[DateTimeFormatConstructor]
+  val DateTimeFormat: DateTimeFormatConstructor = js.native
   
   @js.native
   trait DateTimeFormatConstructor

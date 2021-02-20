@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GETourPlayer extends js.Object {
+trait GETourPlayer extends StObject {
   
   /**
     * The current elapsed playing time of the active tour, in seconds.
@@ -61,39 +62,27 @@ object GETourPlayer {
   }
   
   @scala.inline
-  implicit class GETourPlayerOps[Self <: GETourPlayer] (val x: Self) extends AnyVal {
+  implicit class GETourPlayerMutableBuilder[Self <: GETourPlayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCurrentTime(value: () => Double): Self = StObject.set(x, "getCurrentTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentTime(value: () => Double): Self = this.set("getCurrentTime", js.Any.fromFunction0(value))
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDuration(value: () => Double): Self = this.set("getDuration", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setSetCurrentTime(value: Double => Unit): Self = StObject.set(x, "setCurrentTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCurrentTime(value: Double => Unit): Self = this.set("setCurrentTime", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTour(value: KmlTour => Unit): Self = this.set("setTour", js.Any.fromFunction1(value))
+    def setSetTour(value: KmlTour => Unit): Self = StObject.set(x, "setTour", js.Any.fromFunction1(value))
   }
 }

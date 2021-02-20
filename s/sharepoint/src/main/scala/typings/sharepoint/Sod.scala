@@ -1,11 +1,12 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sod extends js.Object {
+trait Sod extends StObject {
   
   var depkeys: js.UndefOr[js.Array[String]] = js.native
   
@@ -30,54 +31,42 @@ object Sod {
   }
   
   @scala.inline
-  implicit class SodOps[Self <: Sod] (val x: Self) extends AnyVal {
+  implicit class SodMutableBuilder[Self <: Sod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepkeys(value: js.Array[String]): Self = StObject.set(x, "depkeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepkeysUndefined: Self = StObject.set(x, "depkeys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepkeysVarargs(value: String*): Self = StObject.set(x, "depkeys", js.Array(value :_*))
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaded(value: Boolean): Self = this.set("loaded", value.asInstanceOf[js.Any])
+    def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: Sods): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setQfn(value: js.Array[_]): Self = StObject.set(x, "qfn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setQfnUndefined: Self = StObject.set(x, "qfn", js.undefined)
     
     @scala.inline
-    def setDepkeysVarargs(value: String*): Self = this.set("depkeys", js.Array(value :_*))
+    def setQfnVarargs(value: js.Any*): Self = StObject.set(x, "qfn", js.Array(value :_*))
     
     @scala.inline
-    def setDepkeys(value: js.Array[String]): Self = this.set("depkeys", value.asInstanceOf[js.Any])
+    def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDepkeys: Self = this.set("depkeys", js.undefined)
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def setQfnVarargs(value: js.Any*): Self = this.set("qfn", js.Array(value :_*))
+    def setState(value: Sods): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQfn(value: js.Array[_]): Self = this.set("qfn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQfn: Self = this.set("qfn", js.undefined)
-    
-    @scala.inline
-    def setReset(value: Boolean): Self = this.set("reset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStateAdmin extends js.Object {
+trait IStateAdmin extends StObject {
   
   var ActionAssignToUser: Boolean = js.native
   
@@ -95,96 +96,84 @@ object IStateAdmin {
   }
   
   @scala.inline
-  implicit class IStateAdminOps[Self <: IStateAdmin] (val x: Self) extends AnyVal {
+  implicit class IStateAdminMutableBuilder[Self <: IStateAdmin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionAssignToUser(value: Boolean): Self = StObject.set(x, "ActionAssignToUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionAssignToUserDefinition(value: IActionCreateAssignment): Self = StObject.set(x, "ActionAssignToUserDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionConvertToPDF(value: Boolean): Self = StObject.set(x, "ActionConvertToPDF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionAssignToUser(value: Boolean): Self = this.set("ActionAssignToUser", value.asInstanceOf[js.Any])
+    def setActionConvertToPDFDefinition(value: IActionConvertToPDF): Self = StObject.set(x, "ActionConvertToPDFDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionAssignToUserDefinition(value: IActionCreateAssignment): Self = this.set("ActionAssignToUserDefinition", value.asInstanceOf[js.Any])
+    def setActionCreateSeparateAssignment(value: Boolean): Self = StObject.set(x, "ActionCreateSeparateAssignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionConvertToPDF(value: Boolean): Self = this.set("ActionConvertToPDF", value.asInstanceOf[js.Any])
+    def setActionDefinitions(value: IActionDefinitions): Self = StObject.set(x, "ActionDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionConvertToPDFDefinition(value: IActionConvertToPDF): Self = this.set("ActionConvertToPDFDefinition", value.asInstanceOf[js.Any])
+    def setActionDelete(value: Boolean): Self = StObject.set(x, "ActionDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionCreateSeparateAssignment(value: Boolean): Self = this.set("ActionCreateSeparateAssignment", value.asInstanceOf[js.Any])
+    def setActionMarkForArchiving(value: Boolean): Self = StObject.set(x, "ActionMarkForArchiving", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionDefinitions(value: IActionDefinitions): Self = this.set("ActionDefinitions", value.asInstanceOf[js.Any])
+    def setActionRunVBScript(value: Boolean): Self = StObject.set(x, "ActionRunVBScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionDelete(value: Boolean): Self = this.set("ActionDelete", value.asInstanceOf[js.Any])
+    def setActionRunVBScriptDefinition(value: String): Self = StObject.set(x, "ActionRunVBScriptDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionMarkForArchiving(value: Boolean): Self = this.set("ActionMarkForArchiving", value.asInstanceOf[js.Any])
+    def setActionSendNotification(value: Boolean): Self = StObject.set(x, "ActionSendNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionRunVBScript(value: Boolean): Self = this.set("ActionRunVBScript", value.asInstanceOf[js.Any])
+    def setActionSendNotificationDefinition(value: IActionSendNotification): Self = StObject.set(x, "ActionSendNotificationDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionRunVBScriptDefinition(value: String): Self = this.set("ActionRunVBScriptDefinition", value.asInstanceOf[js.Any])
+    def setActionSetPermissions(value: Boolean): Self = StObject.set(x, "ActionSetPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionSendNotification(value: Boolean): Self = this.set("ActionSendNotification", value.asInstanceOf[js.Any])
+    def setActionSetPermissionsDetailedDefinition(value: IActionSetPermissions): Self = StObject.set(x, "ActionSetPermissionsDetailedDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionSendNotificationDefinition(value: IActionSendNotification): Self = this.set("ActionSendNotificationDefinition", value.asInstanceOf[js.Any])
+    def setActionSetProperties(value: Boolean): Self = StObject.set(x, "ActionSetProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionSetPermissions(value: Boolean): Self = this.set("ActionSetPermissions", value.asInstanceOf[js.Any])
+    def setActionSetPropertiesDefinition(value: IActionSetProperties): Self = StObject.set(x, "ActionSetPropertiesDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionSetPermissionsDetailedDefinition(value: IActionSetPermissions): Self = this.set("ActionSetPermissionsDetailedDefinition", value.asInstanceOf[js.Any])
+    def setCheckInOutPermissions(value: Boolean): Self = StObject.set(x, "CheckInOutPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionSetProperties(value: Boolean): Self = this.set("ActionSetProperties", value.asInstanceOf[js.Any])
+    def setClone(value: () => IStateAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActionSetPropertiesDefinition(value: IActionSetProperties): Self = this.set("ActionSetPropertiesDefinition", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckInOutPermissions(value: Boolean): Self = this.set("CheckInOutPermissions", value.asInstanceOf[js.Any])
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IStateAdmin): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setInOutPermissions(value: IAccessControlList): Self = StObject.set(x, "InOutPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setPostconditions(value: IStateConditions): Self = StObject.set(x, "Postconditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInOutPermissions(value: IAccessControlList): Self = this.set("InOutPermissions", value.asInstanceOf[js.Any])
+    def setPreconditions(value: IStateConditions): Self = StObject.set(x, "Preconditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostconditions(value: IStateConditions): Self = this.set("Postconditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreconditions(value: IStateConditions): Self = this.set("Preconditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = this.set("SemanticAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionsRequireEditAccessToObject(value: Boolean): Self = this.set("TransitionsRequireEditAccessToObject", value.asInstanceOf[js.Any])
+    def setTransitionsRequireEditAccessToObject(value: Boolean): Self = StObject.set(x, "TransitionsRequireEditAccessToObject", value.asInstanceOf[js.Any])
   }
 }

@@ -8,14 +8,14 @@ import typings.awsSdkClientS3Browser.typesPutObjectOutputMod.PutObjectOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/PutObjectCommand", JSImport.Namespace)
-@js.native
-object putObjectCommandMod extends js.Object {
+object putObjectCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/PutObjectCommand", "PutObjectCommand")
   @js.native
   class PutObjectCommand protected () extends Command[
           InputTypesUnion, 

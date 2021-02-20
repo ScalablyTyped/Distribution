@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.TextureRotationAngle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "RectanglePrimitive")
 @js.native
-class RectanglePrimitive () extends js.Object {
+class RectanglePrimitive () extends StObject {
   def this(options: TextureRotationAngle) = this()
   
   var asynchronous: Boolean = js.native

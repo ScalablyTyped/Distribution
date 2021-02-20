@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.alb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenerRuleActionForward extends js.Object {
+trait ListenerRuleActionForward extends StObject {
   
   /**
     * The target group stickiness for the rule.
@@ -26,30 +27,18 @@ object ListenerRuleActionForward {
   }
   
   @scala.inline
-  implicit class ListenerRuleActionForwardOps[Self <: ListenerRuleActionForward] (val x: Self) extends AnyVal {
+  implicit class ListenerRuleActionForwardMutableBuilder[Self <: ListenerRuleActionForward] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStickiness(value: ListenerRuleActionForwardStickiness): Self = StObject.set(x, "stickiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStickinessUndefined: Self = StObject.set(x, "stickiness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetGroups(value: js.Array[ListenerRuleActionForwardTargetGroup]): Self = StObject.set(x, "targetGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroupsVarargs(value: ListenerRuleActionForwardTargetGroup*): Self = this.set("targetGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetGroups(value: js.Array[ListenerRuleActionForwardTargetGroup]): Self = this.set("targetGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStickiness(value: ListenerRuleActionForwardStickiness): Self = this.set("stickiness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStickiness: Self = this.set("stickiness", js.undefined)
+    def setTargetGroupsVarargs(value: ListenerRuleActionForwardTargetGroup*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
   }
 }

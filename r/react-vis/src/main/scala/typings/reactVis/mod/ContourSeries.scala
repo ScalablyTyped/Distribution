@@ -1,11 +1,17 @@
 package typings.reactVis.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-vis", "ContourSeries")
 @js.native
-class ContourSeries ()
-  extends Component[ContourSeriesProps, js.Object, js.Any]
+class ContourSeries protected () extends AbstractSeries[ContourSeriesProps] {
+  def this(props: ContourSeriesProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: ContourSeriesProps, context: js.Any) = this()
+}

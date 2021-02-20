@@ -1,11 +1,12 @@
 package typings.openapiTypes.mod.OpenAPIV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathItemObject extends js.Object {
+trait PathItemObject extends StObject {
   
   @JSName("$ref")
   var $ref: js.UndefOr[String] = js.native
@@ -43,102 +44,90 @@ object PathItemObject {
   }
   
   @scala.inline
-  implicit class PathItemObjectOps[Self <: PathItemObject] (val x: Self) extends AnyVal {
+  implicit class PathItemObjectMutableBuilder[Self <: PathItemObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: OperationObject): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$ref(value: String): Self = this.set("$ref", value.asInstanceOf[js.Any])
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def delete$ref: Self = this.set("$ref", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: OperationObject): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setGet(value: OperationObject): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHead(value: OperationObject): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: OperationObject): Self = this.set("get", value.asInstanceOf[js.Any])
+    def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setOptions(value: OperationObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead(value: OperationObject): Self = this.set("head", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteHead: Self = this.set("head", js.undefined)
+    def setParameters(value: js.Array[ReferenceObject | ParameterObject]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: OperationObject): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setParametersVarargs(value: (ReferenceObject | ParameterObject)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParametersVarargs(value: (ReferenceObject | ParameterObject)*): Self = this.set("parameters", js.Array(value :_*))
+    def setPatch(value: OperationObject): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Array[ReferenceObject | ParameterObject]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setPost(value: OperationObject): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatch(value: OperationObject): Self = this.set("patch", value.asInstanceOf[js.Any])
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
     @scala.inline
-    def deletePatch: Self = this.set("patch", js.undefined)
+    def setPut(value: OperationObject): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPost(value: OperationObject): Self = this.set("post", value.asInstanceOf[js.Any])
+    def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
     
     @scala.inline
-    def deletePost: Self = this.set("post", js.undefined)
+    def setServers(value: js.Array[ServerObject]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPut(value: OperationObject): Self = this.set("put", value.asInstanceOf[js.Any])
+    def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
     
     @scala.inline
-    def deletePut: Self = this.set("put", js.undefined)
+    def setServersVarargs(value: ServerObject*): Self = StObject.set(x, "servers", js.Array(value :_*))
     
     @scala.inline
-    def setServersVarargs(value: ServerObject*): Self = this.set("servers", js.Array(value :_*))
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServers(value: js.Array[ServerObject]): Self = this.set("servers", value.asInstanceOf[js.Any])
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
     @scala.inline
-    def deleteServers: Self = this.set("servers", js.undefined)
+    def setTrace(value: OperationObject): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
-    
-    @scala.inline
-    def setTrace(value: OperationObject): Self = this.set("trace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrace: Self = this.set("trace", js.undefined)
+    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
   }
 }

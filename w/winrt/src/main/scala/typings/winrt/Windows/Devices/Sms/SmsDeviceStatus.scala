@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsDeviceStatus extends js.Object
+sealed trait SmsDeviceStatus extends StObject
 @JSGlobal("Windows.Devices.Sms.SmsDeviceStatus")
 @js.native
-object SmsDeviceStatus extends js.Object {
+object SmsDeviceStatus extends StObject {
   
   @js.native
   sealed trait badSim extends SmsDeviceStatus

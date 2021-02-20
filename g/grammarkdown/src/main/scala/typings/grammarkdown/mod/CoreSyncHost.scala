@@ -1,6 +1,7 @@
 package typings.grammarkdown.mod
 
 import typings.grammarkdown.hostMod.CoreSyncHostOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,7 @@ class CoreSyncHost protected ()
   def this(options: CoreSyncHostOptions, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost) = this()
 }
 /* static members */
-@JSImport("grammarkdown", "CoreSyncHost")
-@js.native
-object CoreSyncHost extends js.Object {
+object CoreSyncHost {
   
   /**
     * Creates a {@link StringSyncHost} for the provided content.
@@ -27,13 +26,21 @@ object CoreSyncHost extends js.Object {
     * @param file The file name for the content.
     * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
     */
+  @JSImport("grammarkdown", "CoreSyncHost.forFile")
+  @js.native
   def forFile(content: String): typings.grammarkdown.hostMod.StringSyncHost = js.native
+  @JSImport("grammarkdown", "CoreSyncHost.forFile")
+  @js.native
   def forFile(
     content: String,
     file: js.UndefOr[scala.Nothing],
     hostFallback: typings.grammarkdown.hostMod.CoreSyncHost
   ): typings.grammarkdown.hostMod.StringSyncHost = js.native
+  @JSImport("grammarkdown", "CoreSyncHost.forFile")
+  @js.native
   def forFile(content: String, file: String): typings.grammarkdown.hostMod.StringSyncHost = js.native
+  @JSImport("grammarkdown", "CoreSyncHost.forFile")
+  @js.native
   def forFile(content: String, file: String, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): typings.grammarkdown.hostMod.StringSyncHost = js.native
   
   /**
@@ -41,6 +48,10 @@ object CoreSyncHost extends js.Object {
     * @param options The options used to configure the host.
     * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
     */
+  @JSImport("grammarkdown", "CoreSyncHost.from")
+  @js.native
   def from(options: CoreSyncHostOptions): typings.grammarkdown.hostMod.CoreSyncHost = js.native
+  @JSImport("grammarkdown", "CoreSyncHost.from")
+  @js.native
   def from(options: CoreSyncHostOptions, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): typings.grammarkdown.hostMod.CoreSyncHost = js.native
 }

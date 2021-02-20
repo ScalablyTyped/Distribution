@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDataBuffer extends js.Object {
+trait IDataBuffer extends StObject {
   
   /**
     * The byte length of the buffer.
@@ -30,24 +31,12 @@ object IDataBuffer {
   }
   
   @scala.inline
-  implicit class IDataBufferOps[Self <: IDataBuffer] (val x: Self) extends AnyVal {
+  implicit class IDataBufferMutableBuilder[Self <: IDataBuffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setByteLength(value: Double): Self = this.set("byteLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadAsync(value: (Double, Double) => js.Promise[ArrayBufferView]): Self = this.set("readAsync", js.Any.fromFunction2(value))
+    def setReadAsync(value: (Double, Double) => js.Promise[ArrayBufferView]): Self = StObject.set(x, "readAsync", js.Any.fromFunction2(value))
   }
 }

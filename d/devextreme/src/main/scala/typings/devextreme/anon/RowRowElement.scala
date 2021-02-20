@@ -3,12 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.ui.dxTreeList
 import typings.devextreme.mod.DevExpress.ui.dxTreeListRowObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowRowElement extends js.Object {
+trait RowRowElement extends StObject {
   
   var component: js.UndefOr[dxTreeList] = js.native
   
@@ -31,54 +32,42 @@ object RowRowElement {
   }
   
   @scala.inline
-  implicit class RowRowElementOps[Self <: RowRowElement] (val x: Self) extends AnyVal {
+  implicit class RowRowElementMutableBuilder[Self <: RowRowElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: dxTreeList): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: dxTreeList): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setRow(value: dxTreeListRowObject): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setRowElement(value: dxElement): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setRowElementUndefined: Self = StObject.set(x, "rowElement", js.undefined)
     
     @scala.inline
-    def setRow(value: dxTreeListRowObject): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def setRowElement(value: dxElement): Self = this.set("rowElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowElement: Self = this.set("rowElement", js.undefined)
-    
-    @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

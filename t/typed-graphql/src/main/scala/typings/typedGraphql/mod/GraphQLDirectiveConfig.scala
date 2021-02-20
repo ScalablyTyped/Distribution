@@ -1,11 +1,12 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphQLDirectiveConfig extends js.Object {
+trait GraphQLDirectiveConfig extends StObject {
   
   var args: js.UndefOr[js.Array[GraphQLArgument]] = js.native
   
@@ -28,54 +29,42 @@ object GraphQLDirectiveConfig {
   }
   
   @scala.inline
-  implicit class GraphQLDirectiveConfigOps[Self <: GraphQLDirectiveConfig] (val x: Self) extends AnyVal {
+  implicit class GraphQLDirectiveConfigMutableBuilder[Self <: GraphQLDirectiveConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[GraphQLArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: GraphQLArgument*): Self = this.set("args", js.Array(value :_*))
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setArgs(value: js.Array[GraphQLArgument]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setOnField(value: Boolean): Self = StObject.set(x, "onField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setOnFieldUndefined: Self = StObject.set(x, "onField", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setOnFragment(value: Boolean): Self = StObject.set(x, "onFragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnField(value: Boolean): Self = this.set("onField", value.asInstanceOf[js.Any])
+    def setOnFragmentUndefined: Self = StObject.set(x, "onFragment", js.undefined)
     
     @scala.inline
-    def deleteOnField: Self = this.set("onField", js.undefined)
+    def setOnOperation(value: Boolean): Self = StObject.set(x, "onOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFragment(value: Boolean): Self = this.set("onFragment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnFragment: Self = this.set("onFragment", js.undefined)
-    
-    @scala.inline
-    def setOnOperation(value: Boolean): Self = this.set("onOperation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnOperation: Self = this.set("onOperation", js.undefined)
+    def setOnOperationUndefined: Self = StObject.set(x, "onOperation", js.undefined)
   }
 }

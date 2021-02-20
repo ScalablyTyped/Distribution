@@ -1,12 +1,13 @@
 package typings.atom.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FullKeybindingMatchEvent extends js.Object {
+trait FullKeybindingMatchEvent extends StObject {
   
   /** The KeyBinding that the keystrokes matched. */
   var binding: KeyBinding = js.native
@@ -26,27 +27,15 @@ object FullKeybindingMatchEvent {
   }
   
   @scala.inline
-  implicit class FullKeybindingMatchEventOps[Self <: FullKeybindingMatchEvent] (val x: Self) extends AnyVal {
+  implicit class FullKeybindingMatchEventMutableBuilder[Self <: FullKeybindingMatchEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinding(value: KeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBinding(value: KeyBinding): Self = this.set("binding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyboardEventTarget(value: Element): Self = this.set("keyboardEventTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeystrokes(value: String): Self = this.set("keystrokes", value.asInstanceOf[js.Any])
+    def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
   }
 }

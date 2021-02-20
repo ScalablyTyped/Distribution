@@ -1,17 +1,19 @@
 package typings.winrtUwp.Windows.Devices.SmartCards
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents info about, and operations for, configuring smart cards. */
 @js.native
-trait SmartCardProvisioning extends js.Object {
+trait SmartCardProvisioning extends StObject {
   
   var getAuthorityKeyContainerNameAsync: js.Any = js.native
   
-   /* unmapped type */ /**
+  /* unmapped type */
+  /**
     * Returns a smart card's authentication challenge/response context.
     * @return After the asynchronous operation completes, returns an instance of SmartCardChalllengeContext , representing the smart card's authentication challenge/response context.
     */
@@ -62,39 +64,27 @@ object SmartCardProvisioning {
   }
   
   @scala.inline
-  implicit class SmartCardProvisioningOps[Self <: SmartCardProvisioning] (val x: Self) extends AnyVal {
+  implicit class SmartCardProvisioningMutableBuilder[Self <: SmartCardProvisioning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAuthorityKeyContainerNameAsync(value: js.Any): Self = StObject.set(x, "getAuthorityKeyContainerNameAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetChallengeContextAsync(value: () => IPromiseWithIAsyncOperation[SmartCardChallengeContext]): Self = StObject.set(x, "getChallengeContextAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIdAsync(value: () => IPromiseWithIAsyncOperation[String]): Self = StObject.set(x, "getIdAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAuthorityKeyContainerNameAsync(value: js.Any): Self = this.set("getAuthorityKeyContainerNameAsync", value.asInstanceOf[js.Any])
+    def setGetNameAsync(value: () => IPromiseWithIAsyncOperation[String]): Self = StObject.set(x, "getNameAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChallengeContextAsync(value: () => IPromiseWithIAsyncOperation[SmartCardChallengeContext]): Self = this.set("getChallengeContextAsync", js.Any.fromFunction0(value))
+    def setRequestPinChangeAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "requestPinChangeAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIdAsync(value: () => IPromiseWithIAsyncOperation[String]): Self = this.set("getIdAsync", js.Any.fromFunction0(value))
+    def setRequestPinResetAsync(value: SmartCardPinResetHandler => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "requestPinResetAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNameAsync(value: () => IPromiseWithIAsyncOperation[String]): Self = this.set("getNameAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRequestPinChangeAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = this.set("requestPinChangeAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRequestPinResetAsync(value: SmartCardPinResetHandler => IPromiseWithIAsyncOperation[Boolean]): Self = this.set("requestPinResetAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSmartCard(value: SmartCard): Self = this.set("smartCard", value.asInstanceOf[js.Any])
+    def setSmartCard(value: SmartCard): Self = StObject.set(x, "smartCard", value.asInstanceOf[js.Any])
   }
 }

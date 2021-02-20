@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "CompositionEngine")
 @js.native
-class CompositionEngine protected () extends js.Object {
+class CompositionEngine protected () extends StObject {
   /**
     * Creates an instance of the CompositionEngine.
     * @param viewEngine The ViewEngine used during composition.

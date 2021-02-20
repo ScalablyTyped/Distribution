@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.Profiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBestEffortCoverageReturnType extends js.Object {
+trait GetBestEffortCoverageReturnType extends StObject {
   
   /**
     * Coverage data for the current isolate.
@@ -21,24 +22,12 @@ object GetBestEffortCoverageReturnType {
   }
   
   @scala.inline
-  implicit class GetBestEffortCoverageReturnTypeOps[Self <: GetBestEffortCoverageReturnType] (val x: Self) extends AnyVal {
+  implicit class GetBestEffortCoverageReturnTypeMutableBuilder[Self <: GetBestEffortCoverageReturnType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResultVarargs(value: ScriptCoverage*): Self = this.set("result", js.Array(value :_*))
-    
-    @scala.inline
-    def setResult(value: js.Array[ScriptCoverage]): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResultVarargs(value: ScriptCoverage*): Self = StObject.set(x, "result", js.Array(value :_*))
   }
 }

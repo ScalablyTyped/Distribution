@@ -6,6 +6,7 @@ import typings.openlayers.mod.Extent_
 import typings.openlayers.mod.Feature
 import typings.openlayers.mod.FeatureUrlFunction
 import typings.openlayers.mod.olx.source.VectorOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

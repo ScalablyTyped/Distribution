@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +24,11 @@ class AbstractBatchRenderer protected ()
   extends typings.pixiJs.PIXI.AbstractBatchRenderer {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
 }
-/* static members */
-@JSImport("pixi.js", "AbstractBatchRenderer")
-@js.native
-object AbstractBatchRenderer extends js.Object {
+object AbstractBatchRenderer {
+  
+  @JSImport("pixi.js", "AbstractBatchRenderer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Pool of `BatchDrawCall` objects that `flush` used
@@ -38,7 +40,13 @@ object AbstractBatchRenderer extends js.Object {
     * @static
     * @member {PIXI.BatchDrawCall[]}
     */
-  var _drawCallPool: js.Array[typings.pixiJs.PIXI.BatchDrawCall] = js.native
+  /* static member */
+  @JSImport("pixi.js", "AbstractBatchRenderer._drawCallPool")
+  @js.native
+  def drawCallPool: js.Array[typings.pixiJs.PIXI.BatchDrawCall] = js.native
+  
+  @scala.inline
+  def drawCallPool_=(x: js.Array[typings.pixiJs.PIXI.BatchDrawCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_drawCallPool")(x.asInstanceOf[js.Any])
   
   /**
     * Pool of `BatchDrawCall` objects that `flush` used
@@ -50,5 +58,11 @@ object AbstractBatchRenderer extends js.Object {
     * @static
     * @member {PIXI.BatchTextureArray[]}
     */
-  var _textureArrayPool: js.Array[typings.pixiJs.PIXI.BatchTextureArray] = js.native
+  /* static member */
+  @JSImport("pixi.js", "AbstractBatchRenderer._textureArrayPool")
+  @js.native
+  def textureArrayPool: js.Array[typings.pixiJs.PIXI.BatchTextureArray] = js.native
+  
+  @scala.inline
+  def textureArrayPool_=(x: js.Array[typings.pixiJs.PIXI.BatchTextureArray]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_textureArrayPool")(x.asInstanceOf[js.Any])
 }

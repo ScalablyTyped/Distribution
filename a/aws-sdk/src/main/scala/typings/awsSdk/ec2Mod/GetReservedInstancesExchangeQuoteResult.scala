@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetReservedInstancesExchangeQuoteResult extends js.Object {
+trait GetReservedInstancesExchangeQuoteResult extends StObject {
   
   /**
     * The currency of the transaction.
@@ -61,78 +62,66 @@ object GetReservedInstancesExchangeQuoteResult {
   }
   
   @scala.inline
-  implicit class GetReservedInstancesExchangeQuoteResultOps[Self <: GetReservedInstancesExchangeQuoteResult] (val x: Self) extends AnyVal {
+  implicit class GetReservedInstancesExchangeQuoteResultMutableBuilder[Self <: GetReservedInstancesExchangeQuoteResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: String): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsValidExchange(value: Boolean): Self = StObject.set(x, "IsValidExchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    def setIsValidExchangeUndefined: Self = StObject.set(x, "IsValidExchange", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    def setOutputReservedInstancesWillExpireAt(value: DateTime): Self = StObject.set(x, "OutputReservedInstancesWillExpireAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValidExchange(value: Boolean): Self = this.set("IsValidExchange", value.asInstanceOf[js.Any])
+    def setOutputReservedInstancesWillExpireAtUndefined: Self = StObject.set(x, "OutputReservedInstancesWillExpireAt", js.undefined)
     
     @scala.inline
-    def deleteIsValidExchange: Self = this.set("IsValidExchange", js.undefined)
+    def setPaymentDue(value: String): Self = StObject.set(x, "PaymentDue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputReservedInstancesWillExpireAt(value: DateTime): Self = this.set("OutputReservedInstancesWillExpireAt", value.asInstanceOf[js.Any])
+    def setPaymentDueUndefined: Self = StObject.set(x, "PaymentDue", js.undefined)
     
     @scala.inline
-    def deleteOutputReservedInstancesWillExpireAt: Self = this.set("OutputReservedInstancesWillExpireAt", js.undefined)
+    def setReservedInstanceValueRollup(value: ReservationValue): Self = StObject.set(x, "ReservedInstanceValueRollup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentDue(value: String): Self = this.set("PaymentDue", value.asInstanceOf[js.Any])
+    def setReservedInstanceValueRollupUndefined: Self = StObject.set(x, "ReservedInstanceValueRollup", js.undefined)
     
     @scala.inline
-    def deletePaymentDue: Self = this.set("PaymentDue", js.undefined)
+    def setReservedInstanceValueSet(value: ReservedInstanceReservationValueSet): Self = StObject.set(x, "ReservedInstanceValueSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedInstanceValueRollup(value: ReservationValue): Self = this.set("ReservedInstanceValueRollup", value.asInstanceOf[js.Any])
+    def setReservedInstanceValueSetUndefined: Self = StObject.set(x, "ReservedInstanceValueSet", js.undefined)
     
     @scala.inline
-    def deleteReservedInstanceValueRollup: Self = this.set("ReservedInstanceValueRollup", js.undefined)
+    def setReservedInstanceValueSetVarargs(value: ReservedInstanceReservationValue*): Self = StObject.set(x, "ReservedInstanceValueSet", js.Array(value :_*))
     
     @scala.inline
-    def setReservedInstanceValueSetVarargs(value: ReservedInstanceReservationValue*): Self = this.set("ReservedInstanceValueSet", js.Array(value :_*))
+    def setTargetConfigurationValueRollup(value: ReservationValue): Self = StObject.set(x, "TargetConfigurationValueRollup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedInstanceValueSet(value: ReservedInstanceReservationValueSet): Self = this.set("ReservedInstanceValueSet", value.asInstanceOf[js.Any])
+    def setTargetConfigurationValueRollupUndefined: Self = StObject.set(x, "TargetConfigurationValueRollup", js.undefined)
     
     @scala.inline
-    def deleteReservedInstanceValueSet: Self = this.set("ReservedInstanceValueSet", js.undefined)
+    def setTargetConfigurationValueSet(value: TargetReservationValueSet): Self = StObject.set(x, "TargetConfigurationValueSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetConfigurationValueRollup(value: ReservationValue): Self = this.set("TargetConfigurationValueRollup", value.asInstanceOf[js.Any])
+    def setTargetConfigurationValueSetUndefined: Self = StObject.set(x, "TargetConfigurationValueSet", js.undefined)
     
     @scala.inline
-    def deleteTargetConfigurationValueRollup: Self = this.set("TargetConfigurationValueRollup", js.undefined)
+    def setTargetConfigurationValueSetVarargs(value: TargetReservationValue*): Self = StObject.set(x, "TargetConfigurationValueSet", js.Array(value :_*))
     
     @scala.inline
-    def setTargetConfigurationValueSetVarargs(value: TargetReservationValue*): Self = this.set("TargetConfigurationValueSet", js.Array(value :_*))
+    def setValidationFailureReason(value: String): Self = StObject.set(x, "ValidationFailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetConfigurationValueSet(value: TargetReservationValueSet): Self = this.set("TargetConfigurationValueSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetConfigurationValueSet: Self = this.set("TargetConfigurationValueSet", js.undefined)
-    
-    @scala.inline
-    def setValidationFailureReason(value: String): Self = this.set("ValidationFailureReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationFailureReason: Self = this.set("ValidationFailureReason", js.undefined)
+    def setValidationFailureReasonUndefined: Self = StObject.set(x, "ValidationFailureReason", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientSpecificActorInfo extends js.Object {
+trait ClientSpecificActorInfo extends StObject {
   
   var clientSpecificActorInfo: js.UndefOr[YoutubeActorInfo] = js.native
   
@@ -30,60 +31,48 @@ object ClientSpecificActorInfo {
   }
   
   @scala.inline
-  implicit class ClientSpecificActorInfoOps[Self <: ClientSpecificActorInfo] (val x: Self) extends AnyVal {
+  implicit class ClientSpecificActorInfoMutableBuilder[Self <: ClientSpecificActorInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientSpecificActorInfo(value: YoutubeActorInfo): Self = StObject.set(x, "clientSpecificActorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientSpecificActorInfoUndefined: Self = StObject.set(x, "clientSpecificActorInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientSpecificActorInfo(value: YoutubeActorInfo): Self = this.set("clientSpecificActorInfo", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteClientSpecificActorInfo: Self = this.set("clientSpecificActorInfo", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setImage(value: Url): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Url): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: FamilyName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setVerification(value: AdHocVerified): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setVerification(value: AdHocVerified): Self = this.set("verification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerification: Self = this.set("verification", js.undefined)
+    def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
   }
 }

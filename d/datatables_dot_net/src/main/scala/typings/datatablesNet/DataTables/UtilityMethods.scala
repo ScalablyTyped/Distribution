@@ -1,6 +1,7 @@
 package typings.datatablesNet.DataTables
 
 import typings.datatablesNet.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion "core-methods"
 //#region "util-methods"
 @js.native
-trait UtilityMethods extends js.Object {
+trait UtilityMethods extends StObject {
   
   /*
     * Get a boolean value to indicate if there are any entries in the API instance's result set (i.e. any data, selected rows, etc).

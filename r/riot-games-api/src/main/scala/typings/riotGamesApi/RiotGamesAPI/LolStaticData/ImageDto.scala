@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageDto extends js.Object {
+trait ImageDto extends StObject {
   
   var full: String = js.native
   
@@ -30,39 +31,27 @@ object ImageDto {
   }
   
   @scala.inline
-  implicit class ImageDtoOps[Self <: ImageDto] (val x: Self) extends AnyVal {
+  implicit class ImageDtoMutableBuilder[Self <: ImageDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: String): Self = this.set("full", value.asInstanceOf[js.Any])
+    def setSprite(value: String): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH(value: Double): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSprite(value: String): Self = this.set("sprite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setW(value: Double): Self = this.set("w", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

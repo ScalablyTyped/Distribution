@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the possible sensors available for a printer station of a point-of-service printer to use to report the status of the printer. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterCartridgeSensors")
 @js.native
-object PosPrinterCartridgeSensors extends js.Object {
+object PosPrinterCartridgeSensors extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

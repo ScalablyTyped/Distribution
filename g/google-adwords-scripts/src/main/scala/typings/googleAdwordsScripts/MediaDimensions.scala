@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaDimensions extends js.Object {
+trait MediaDimensions extends StObject {
   
   def getFullMediaDimensions(): Dimensions = js.native
   
@@ -29,30 +30,18 @@ object MediaDimensions {
   }
   
   @scala.inline
-  implicit class MediaDimensionsOps[Self <: MediaDimensions] (val x: Self) extends AnyVal {
+  implicit class MediaDimensionsMutableBuilder[Self <: MediaDimensions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFullMediaDimensions(value: () => Dimensions): Self = StObject.set(x, "getFullMediaDimensions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPreviewMediaDimensions(value: () => Dimensions): Self = StObject.set(x, "getPreviewMediaDimensions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetShrunkenMediaDimensions(value: () => Dimensions): Self = StObject.set(x, "getShrunkenMediaDimensions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFullMediaDimensions(value: () => Dimensions): Self = this.set("getFullMediaDimensions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPreviewMediaDimensions(value: () => Dimensions): Self = this.set("getPreviewMediaDimensions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetShrunkenMediaDimensions(value: () => Dimensions): Self = this.set("getShrunkenMediaDimensions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVideoThumbnailDimensions(value: () => Dimensions): Self = this.set("getVideoThumbnailDimensions", js.Any.fromFunction0(value))
+    def setGetVideoThumbnailDimensions(value: () => Dimensions): Self = StObject.set(x, "getVideoThumbnailDimensions", js.Any.fromFunction0(value))
   }
 }

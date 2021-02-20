@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterStandbyQuery extends js.Object {
+trait EnterStandbyQuery extends StObject {
   
   /**
     * The name of the Auto Scaling group.
@@ -31,33 +32,21 @@ object EnterStandbyQuery {
   }
   
   @scala.inline
-  implicit class EnterStandbyQueryOps[Self <: EnterStandbyQuery] (val x: Self) extends AnyVal {
+  implicit class EnterStandbyQueryMutableBuilder[Self <: EnterStandbyQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
     @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
     
     @scala.inline
-    def setShouldDecrementDesiredCapacity(value: ShouldDecrementDesiredCapacity): Self = this.set("ShouldDecrementDesiredCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = this.set("InstanceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstanceIds(value: InstanceIds): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+    def setShouldDecrementDesiredCapacity(value: ShouldDecrementDesiredCapacity): Self = StObject.set(x, "ShouldDecrementDesiredCapacity", value.asInstanceOf[js.Any])
   }
 }

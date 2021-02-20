@@ -1,12 +1,13 @@
 package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocketConnectParams extends js.Object {
+trait SocketConnectParams extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -31,60 +32,48 @@ object SocketConnectParams {
   }
   
   @scala.inline
-  implicit class SocketConnectParamsOps[Self <: SocketConnectParams] (val x: Self) extends AnyVal {
+  implicit class SocketConnectParamsMutableBuilder[Self <: SocketConnectParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setHeader(value: StringDictionary[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setHeader(value: StringDictionary[String]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
     @scala.inline
-    def setMethod(value: RequestMethod): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProtocolsVarargs(value: String*): Self = this.set("protocols", js.Array(value :_*))
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setProtocols(value: js.Array[String]): Self = this.set("protocols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocols: Self = this.set("protocols", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

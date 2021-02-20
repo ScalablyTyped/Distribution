@@ -3,6 +3,7 @@ package typings.sharepoint.SP
 import typings.sharepoint.SP.WebParts.LimitedWebPartManager
 import typings.sharepoint.SP.WebParts.PersonalizationScope
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

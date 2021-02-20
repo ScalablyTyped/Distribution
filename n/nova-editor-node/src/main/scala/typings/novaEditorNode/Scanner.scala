@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/scanner/
 @js.native
-trait Scanner extends js.Object {
+trait Scanner extends StObject {
   
   val atEnd: Boolean = js.native
   
@@ -57,57 +58,45 @@ object Scanner {
   }
   
   @scala.inline
-  implicit class ScannerOps[Self <: Scanner] (val x: Self) extends AnyVal {
+  implicit class ScannerMutableBuilder[Self <: Scanner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtEnd(value: Boolean): Self = StObject.set(x, "atEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtEnd(value: Boolean): Self = this.set("atEnd", value.asInstanceOf[js.Any])
+    def setScanChars(value: Charset => String | Null): Self = StObject.set(x, "scanChars", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    def setScanFloat(value: () => Double | Null): Self = StObject.set(x, "scanFloat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLocation(value: Double): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setScanHexFloat(value: () => Double | Null): Self = StObject.set(x, "scanHexFloat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanChars(value: Charset => String | Null): Self = this.set("scanChars", js.Any.fromFunction1(value))
+    def setScanHexInt(value: () => Double | Null): Self = StObject.set(x, "scanHexInt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanFloat(value: () => Double | Null): Self = this.set("scanFloat", js.Any.fromFunction0(value))
+    def setScanInt(value: () => Double | Null): Self = StObject.set(x, "scanInt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanHexFloat(value: () => Double | Null): Self = this.set("scanHexFloat", js.Any.fromFunction0(value))
+    def setScanString(value: String => String | Null): Self = StObject.set(x, "scanString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanHexInt(value: () => Double | Null): Self = this.set("scanHexInt", js.Any.fromFunction0(value))
+    def setScanUpToChars(value: Charset => String | Null): Self = StObject.set(x, "scanUpToChars", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanInt(value: () => Double | Null): Self = this.set("scanInt", js.Any.fromFunction0(value))
+    def setScanUpToString(value: String => String | Null): Self = StObject.set(x, "scanUpToString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanString(value: String => String | Null): Self = this.set("scanString", js.Any.fromFunction1(value))
+    def setSkipChars(value: Charset): Self = StObject.set(x, "skipChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScanUpToChars(value: Charset => String | Null): Self = this.set("scanUpToChars", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScanUpToString(value: String => String | Null): Self = this.set("scanUpToString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSkipChars(value: Charset): Self = this.set("skipChars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: String): Self = this.set("string", value.asInstanceOf[js.Any])
+    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
   }
 }

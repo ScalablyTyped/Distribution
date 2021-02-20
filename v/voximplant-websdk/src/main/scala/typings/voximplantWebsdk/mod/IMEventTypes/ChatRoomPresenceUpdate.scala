@@ -3,6 +3,7 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 import typings.voximplantWebsdk.mod.ParticipantInfo
 import typings.voximplantWebsdk.mod.UserStatuses
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,30 +43,18 @@ object ChatRoomPresenceUpdate {
   }
   
   @scala.inline
-  implicit class ChatRoomPresenceUpdateOps[Self <: ChatRoomPresenceUpdate] (val x: Self) extends AnyVal {
+  implicit class ChatRoomPresenceUpdateMutableBuilder[Self <: ChatRoomPresenceUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParticipant(value: ParticipantInfo): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPresence(value: UserStatuses): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParticipant(value: ParticipantInfo): Self = this.set("participant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPresence(value: UserStatuses): Self = this.set("presence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoom(value: String): Self = this.set("room", value.asInstanceOf[js.Any])
+    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

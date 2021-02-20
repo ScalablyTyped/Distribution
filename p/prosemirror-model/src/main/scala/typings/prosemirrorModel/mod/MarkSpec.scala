@@ -1,6 +1,7 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,84 +75,72 @@ object MarkSpec {
   }
   
   @scala.inline
-  implicit class MarkSpecOps[Self <: MarkSpec] (val x: Self) extends AnyVal {
+  implicit class MarkSpecMutableBuilder[Self <: MarkSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs(value: StringDictionary[AttributeSpec]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrsNull: Self = StObject.set(x, "attrs", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
     
     @scala.inline
-    def setAttrs(value: StringDictionary[AttributeSpec]): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    def setExcludes(value: String): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttrs: Self = this.set("attrs", js.undefined)
+    def setExcludesNull: Self = StObject.set(x, "excludes", null)
     
     @scala.inline
-    def setAttrsNull: Self = this.set("attrs", null)
+    def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
     @scala.inline
-    def setExcludes(value: String): Self = this.set("excludes", value.asInstanceOf[js.Any])
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludes: Self = this.set("excludes", js.undefined)
+    def setGroupNull: Self = StObject.set(x, "group", null)
     
     @scala.inline
-    def setExcludesNull: Self = this.set("excludes", null)
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setInclusiveNull: Self = StObject.set(x, "inclusive", null)
     
     @scala.inline
-    def setGroupNull: Self = this.set("group", null)
+    def setInclusiveUndefined: Self = StObject.set(x, "inclusive", js.undefined)
     
     @scala.inline
-    def setInclusive(value: Boolean): Self = this.set("inclusive", value.asInstanceOf[js.Any])
+    def setParseDOM(value: js.Array[ParseRule]): Self = StObject.set(x, "parseDOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInclusive: Self = this.set("inclusive", js.undefined)
+    def setParseDOMNull: Self = StObject.set(x, "parseDOM", null)
     
     @scala.inline
-    def setInclusiveNull: Self = this.set("inclusive", null)
+    def setParseDOMUndefined: Self = StObject.set(x, "parseDOM", js.undefined)
     
     @scala.inline
-    def setParseDOMVarargs(value: ParseRule*): Self = this.set("parseDOM", js.Array(value :_*))
+    def setParseDOMVarargs(value: ParseRule*): Self = StObject.set(x, "parseDOM", js.Array(value :_*))
     
     @scala.inline
-    def setParseDOM(value: js.Array[ParseRule]): Self = this.set("parseDOM", value.asInstanceOf[js.Any])
+    def setSpanning(value: Boolean): Self = StObject.set(x, "spanning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParseDOM: Self = this.set("parseDOM", js.undefined)
+    def setSpanningNull: Self = StObject.set(x, "spanning", null)
     
     @scala.inline
-    def setParseDOMNull: Self = this.set("parseDOM", null)
+    def setSpanningUndefined: Self = StObject.set(x, "spanning", js.undefined)
     
     @scala.inline
-    def setSpanning(value: Boolean): Self = this.set("spanning", value.asInstanceOf[js.Any])
+    def setToDOM(value: (/* mark */ Mark[_], /* inline */ Boolean) => DOMOutputSpec): Self = StObject.set(x, "toDOM", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSpanning: Self = this.set("spanning", js.undefined)
+    def setToDOMNull: Self = StObject.set(x, "toDOM", null)
     
     @scala.inline
-    def setSpanningNull: Self = this.set("spanning", null)
-    
-    @scala.inline
-    def setToDOM(value: (/* mark */ Mark[_], /* inline */ Boolean) => DOMOutputSpec): Self = this.set("toDOM", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteToDOM: Self = this.set("toDOM", js.undefined)
-    
-    @scala.inline
-    def setToDOMNull: Self = this.set("toDOM", null)
+    def setToDOMUndefined: Self = StObject.set(x, "toDOM", js.undefined)
   }
 }

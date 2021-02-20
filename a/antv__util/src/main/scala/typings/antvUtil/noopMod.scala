@@ -1,12 +1,13 @@
 package typings.antvUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/util/lib/noop", JSImport.Namespace)
-@js.native
-object noopMod extends js.Object {
+object noopMod {
   
+  @JSImport("@antv/util/lib/noop", JSImport.Default)
+  @js.native
   def default(): Unit = js.native
 }

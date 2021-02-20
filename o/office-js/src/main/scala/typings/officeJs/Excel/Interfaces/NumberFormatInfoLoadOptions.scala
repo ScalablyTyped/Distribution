@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.11]
   */
 @js.native
-trait NumberFormatInfoLoadOptions extends js.Object {
+trait NumberFormatInfoLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -44,36 +45,24 @@ object NumberFormatInfoLoadOptions {
   }
   
   @scala.inline
-  implicit class NumberFormatInfoLoadOptionsOps[Self <: NumberFormatInfoLoadOptions] (val x: Self) extends AnyVal {
+  implicit class NumberFormatInfoLoadOptionsMutableBuilder[Self <: NumberFormatInfoLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberDecimalSeparator(value: Boolean): Self = StObject.set(x, "numberDecimalSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setNumberDecimalSeparatorUndefined: Self = StObject.set(x, "numberDecimalSeparator", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setNumberGroupSeparator(value: Boolean): Self = StObject.set(x, "numberGroupSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberDecimalSeparator(value: Boolean): Self = this.set("numberDecimalSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberDecimalSeparator: Self = this.set("numberDecimalSeparator", js.undefined)
-    
-    @scala.inline
-    def setNumberGroupSeparator(value: Boolean): Self = this.set("numberGroupSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberGroupSeparator: Self = this.set("numberGroupSeparator", js.undefined)
+    def setNumberGroupSeparatorUndefined: Self = StObject.set(x, "numberGroupSeparator", js.undefined)
   }
 }

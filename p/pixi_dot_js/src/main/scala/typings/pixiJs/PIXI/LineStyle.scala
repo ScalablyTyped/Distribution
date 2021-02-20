@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,36 +85,24 @@ object LineStyle {
   }
   
   @scala.inline
-  implicit class LineStyleOps[Self <: LineStyle] (val x: Self) extends AnyVal {
+  implicit class LineStyleMutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: Double): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCap(value: LINE_CAP): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJoin(value: LINE_JOIN): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: Double): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCap(value: LINE_CAP): Self = this.set("cap", value.asInstanceOf[js.Any])
+    def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoin(value: LINE_JOIN): Self = this.set("join", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMiterLimit(value: Double): Self = this.set("miterLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNative(value: Boolean): Self = this.set("native", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

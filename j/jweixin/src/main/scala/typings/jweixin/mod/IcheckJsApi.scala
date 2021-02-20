@@ -1,6 +1,7 @@
 package typings.jweixin.mod
 
 import typings.jweixin.anon.CheckResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ trait IcheckJsApi extends BaseParams {
   
   var jsApiList: typings.jweixin.mod.jsApiList = js.native
   
-   // 需要检测的JS接口列表，所有JS接口列表见附录2,
+  // 需要检测的JS接口列表，所有JS接口列表见附录2,
   // 以键值对的形式返回，可用的api值true，不可用为false
   // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
   @JSName("success")
@@ -25,27 +26,15 @@ object IcheckJsApi {
   }
   
   @scala.inline
-  implicit class IcheckJsApiOps[Self <: IcheckJsApi] (val x: Self) extends AnyVal {
+  implicit class IcheckJsApiMutableBuilder[Self <: IcheckJsApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJsApiList(value: jsApiList): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJsApiListVarargs(value: ApiMethod*): Self = StObject.set(x, "jsApiList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJsApiListVarargs(value: ApiMethod*): Self = this.set("jsApiList", js.Array(value :_*))
-    
-    @scala.inline
-    def setJsApiList(value: jsApiList): Self = this.set("jsApiList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: CheckResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setSuccess(value: CheckResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

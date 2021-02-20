@@ -2,12 +2,13 @@ package typings.box2d.Box2D.Dynamics
 
 import typings.box2d.Box2D.Collision.b2Manifold
 import typings.box2d.Box2D.Dynamics.Contacts.b2Contact
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2ContactListener extends js.Object {
+trait b2ContactListener extends StObject {
   
   /**
     * Called when two fixtures begin to touch.
@@ -49,30 +50,18 @@ object b2ContactListener {
   }
   
   @scala.inline
-  implicit class b2ContactListenerOps[Self <: b2ContactListener] (val x: Self) extends AnyVal {
+  implicit class b2ContactListenerMutableBuilder[Self <: b2ContactListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginContact(value: b2Contact => Unit): Self = StObject.set(x, "BeginContact", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndContact(value: b2Contact => Unit): Self = StObject.set(x, "EndContact", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostSolve(value: (b2Contact, b2ContactImpulse) => Unit): Self = StObject.set(x, "PostSolve", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeginContact(value: b2Contact => Unit): Self = this.set("BeginContact", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEndContact(value: b2Contact => Unit): Self = this.set("EndContact", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPostSolve(value: (b2Contact, b2ContactImpulse) => Unit): Self = this.set("PostSolve", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPreSolve(value: (b2Contact, b2Manifold) => Unit): Self = this.set("PreSolve", js.Any.fromFunction2(value))
+    def setPreSolve(value: (b2Contact, b2Manifold) => Unit): Self = StObject.set(x, "PreSolve", js.Any.fromFunction2(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.marked.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "Lexer")
 @js.native
-class Lexer_ () extends js.Object {
+class Lexer_ () extends StObject {
   def this(options: MarkedOptions) = this()
   
   def `inline`(tokens: TokensList): TokensList = js.native
@@ -21,13 +22,24 @@ class Lexer_ () extends js.Object {
   
   var tokens: TokensList = js.native
 }
-/* static members */
-@JSImport("marked", "Lexer")
-@js.native
-object Lexer_ extends js.Object {
+object Lexer_ {
   
+  @JSImport("marked", "Lexer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("marked", "Lexer.lex")
+  @js.native
   def lex(src: TokensList): TokensList = js.native
+  @JSImport("marked", "Lexer.lex")
+  @js.native
   def lex(src: TokensList, options: MarkedOptions): TokensList = js.native
   
-  var rules: Rules = js.native
+  /* static member */
+  @JSImport("marked", "Lexer.rules")
+  @js.native
+  def rules: Rules = js.native
+  @scala.inline
+  def rules_=(x: Rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
 }

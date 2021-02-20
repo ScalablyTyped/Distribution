@@ -5,6 +5,7 @@ import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,27 +32,15 @@ object BootboxConfirmOptions {
   }
   
   @scala.inline
-  implicit class BootboxConfirmOptionsOps[Self <: BootboxConfirmOptions] (val x: Self) extends AnyVal {
+  implicit class BootboxConfirmOptionsMutableBuilder[Self <: BootboxConfirmOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: BootboxConfirmPromptButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCallback(value: Boolean => js.Any): Self = this.set("callback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setButtons(value: BootboxConfirmPromptButtonMap): Self = this.set("buttons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setCallback(value: Boolean => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
   }
 }

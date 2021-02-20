@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountsLinkRequest extends js.Object {
+trait AccountsLinkRequest extends StObject {
   
   /** Action to perform for this link. The `"request"` action is only available to select merchants. Acceptable values are: - "`approve`" - "`remove`" - "`request`" */
   var action: js.UndefOr[String] = js.native
@@ -28,45 +29,33 @@ object AccountsLinkRequest {
   }
   
   @scala.inline
-  implicit class AccountsLinkRequestOps[Self <: AccountsLinkRequest] (val x: Self) extends AnyVal {
+  implicit class AccountsLinkRequestMutableBuilder[Self <: AccountsLinkRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setLinkedAccountId(value: String): Self = StObject.set(x, "linkedAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkType(value: String): Self = this.set("linkType", value.asInstanceOf[js.Any])
+    def setLinkedAccountIdUndefined: Self = StObject.set(x, "linkedAccountId", js.undefined)
     
     @scala.inline
-    def deleteLinkType: Self = this.set("linkType", js.undefined)
+    def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedAccountId(value: String): Self = this.set("linkedAccountId", value.asInstanceOf[js.Any])
+    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
     @scala.inline
-    def deleteLinkedAccountId: Self = this.set("linkedAccountId", js.undefined)
-    
-    @scala.inline
-    def setServicesVarargs(value: String*): Self = this.set("services", js.Array(value :_*))
-    
-    @scala.inline
-    def setServices(value: js.Array[String]): Self = this.set("services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServices: Self = this.set("services", js.undefined)
+    def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

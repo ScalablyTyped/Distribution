@@ -1,11 +1,12 @@
 package typings.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultProcessingOptions extends js.Object {
+trait ResultProcessingOptions extends StObject {
   
   var build: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object ResultProcessingOptions {
   }
   
   @scala.inline
-  implicit class ResultProcessingOptionsOps[Self <: ResultProcessingOptions] (val x: Self) extends AnyVal {
+  implicit class ResultProcessingOptionsMutableBuilder[Self <: ResultProcessingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: Boolean): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecompose(value: DecomposeOptions): Self = StObject.set(x, "decompose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: Boolean): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setDecomposeUndefined: Self = StObject.set(x, "decompose", js.undefined)
     
     @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setDocument(value: Boolean): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecompose(value: DecomposeOptions): Self = this.set("decompose", value.asInstanceOf[js.Any])
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def deleteDecompose: Self = this.set("decompose", js.undefined)
+    def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: Boolean): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingle(value: Boolean): Self = this.set("single", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingle: Self = this.set("single", js.undefined)
-    
-    @scala.inline
-    def setStream(value: Boolean): Self = this.set("stream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

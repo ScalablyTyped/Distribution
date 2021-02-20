@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutConfigurationSetDeliveryOptionsRequest extends js.Object {
+trait PutConfigurationSetDeliveryOptionsRequest extends StObject {
   
   /**
     * The name of the configuration set that you want to associate with a dedicated IP pool.
@@ -31,33 +32,21 @@ object PutConfigurationSetDeliveryOptionsRequest {
   }
   
   @scala.inline
-  implicit class PutConfigurationSetDeliveryOptionsRequestOps[Self <: PutConfigurationSetDeliveryOptionsRequest] (val x: Self) extends AnyVal {
+  implicit class PutConfigurationSetDeliveryOptionsRequestMutableBuilder[Self <: PutConfigurationSetDeliveryOptionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSendingPoolName(value: SendingPoolName): Self = StObject.set(x, "SendingPoolName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSendingPoolNameUndefined: Self = StObject.set(x, "SendingPoolName", js.undefined)
     
     @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    def setTlsPolicy(value: TlsPolicy): Self = StObject.set(x, "TlsPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendingPoolName(value: SendingPoolName): Self = this.set("SendingPoolName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendingPoolName: Self = this.set("SendingPoolName", js.undefined)
-    
-    @scala.inline
-    def setTlsPolicy(value: TlsPolicy): Self = this.set("TlsPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTlsPolicy: Self = this.set("TlsPolicy", js.undefined)
+    def setTlsPolicyUndefined: Self = StObject.set(x, "TlsPolicy", js.undefined)
   }
 }

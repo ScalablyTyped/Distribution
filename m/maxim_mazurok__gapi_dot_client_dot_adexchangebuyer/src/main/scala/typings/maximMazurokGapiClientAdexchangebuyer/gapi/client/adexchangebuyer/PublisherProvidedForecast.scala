@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublisherProvidedForecast extends js.Object {
+trait PublisherProvidedForecast extends StObject {
   
   /** Publisher provided dimensions. E.g. geo, sizes etc... */
   var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
@@ -25,39 +26,27 @@ object PublisherProvidedForecast {
   }
   
   @scala.inline
-  implicit class PublisherProvidedForecastOps[Self <: PublisherProvidedForecast] (val x: Self) extends AnyVal {
+  implicit class PublisherProvidedForecastMutableBuilder[Self <: PublisherProvidedForecast] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = this.set("dimensions", js.Array(value :_*))
+    def setWeeklyImpressions(value: String): Self = StObject.set(x, "weeklyImpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: js.Array[Dimension]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setWeeklyImpressionsUndefined: Self = StObject.set(x, "weeklyImpressions", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setWeeklyUniques(value: String): Self = StObject.set(x, "weeklyUniques", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeeklyImpressions(value: String): Self = this.set("weeklyImpressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeklyImpressions: Self = this.set("weeklyImpressions", js.undefined)
-    
-    @scala.inline
-    def setWeeklyUniques(value: String): Self = this.set("weeklyUniques", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeklyUniques: Self = this.set("weeklyUniques", js.undefined)
+    def setWeeklyUniquesUndefined: Self = StObject.set(x, "weeklyUniques", js.undefined)
   }
 }

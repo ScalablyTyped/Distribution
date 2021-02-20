@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/prism/t4-cs", JSImport.Namespace)
-@js.native
-object t4CsMod extends js.Object {
+object t4CsMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/prism/t4-cs", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

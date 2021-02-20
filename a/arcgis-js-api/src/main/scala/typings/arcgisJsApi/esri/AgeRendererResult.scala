@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,42 +87,30 @@ object AgeRendererResult {
   }
   
   @scala.inline
-  implicit class AgeRendererResultOps[Self <: AgeRendererResult] (val x: Self) extends AnyVal {
+  implicit class AgeRendererResultMutableBuilder[Self <: AgeRendererResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapId(value: String): Self = this.set("basemapId", value.asInstanceOf[js.Any])
+    def setDefaultValuesUsed(value: Boolean): Self = StObject.set(x, "defaultValuesUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapTheme(value: String): Self = this.set("basemapTheme", value.asInstanceOf[js.Any])
+    def setRenderer(value: ClassBreaksRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScheme(value: ColorScheme): Self = this.set("colorScheme", value.asInstanceOf[js.Any])
+    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValuesUsed(value: Boolean): Self = this.set("defaultValuesUsed", value.asInstanceOf[js.Any])
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: ClassBreaksRenderer): Self = this.set("renderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisualVariable(value: ColorVariable): Self = this.set("visualVariable", value.asInstanceOf[js.Any])
+    def setVisualVariable(value: ColorVariable): Self = StObject.set(x, "visualVariable", value.asInstanceOf[js.Any])
   }
 }

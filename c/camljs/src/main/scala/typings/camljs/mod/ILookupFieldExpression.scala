@@ -1,11 +1,12 @@
 package typings.camljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILookupFieldExpression extends js.Object {
+trait ILookupFieldExpression extends StObject {
   
   /** Specifies that lookup id value will be used. */
   def Id(): INumberFieldExpression = js.native
@@ -41,36 +42,24 @@ object ILookupFieldExpression {
   }
   
   @scala.inline
-  implicit class ILookupFieldExpressionOps[Self <: ILookupFieldExpression] (val x: Self) extends AnyVal {
+  implicit class ILookupFieldExpressionMutableBuilder[Self <: ILookupFieldExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: () => INumberFieldExpression): Self = StObject.set(x, "Id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueAsBoolean(value: () => IBooleanFieldExpression): Self = StObject.set(x, "ValueAsBoolean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueAsDate(value: () => IDateTimeFieldExpression): Self = StObject.set(x, "ValueAsDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setId(value: () => INumberFieldExpression): Self = this.set("Id", js.Any.fromFunction0(value))
+    def setValueAsDateTime(value: () => IDateTimeFieldExpression): Self = StObject.set(x, "ValueAsDateTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setValueAsBoolean(value: () => IBooleanFieldExpression): Self = this.set("ValueAsBoolean", js.Any.fromFunction0(value))
+    def setValueAsNumber(value: () => INumberFieldExpression): Self = StObject.set(x, "ValueAsNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setValueAsDate(value: () => IDateTimeFieldExpression): Self = this.set("ValueAsDate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValueAsDateTime(value: () => IDateTimeFieldExpression): Self = this.set("ValueAsDateTime", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValueAsNumber(value: () => INumberFieldExpression): Self = this.set("ValueAsNumber", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValueAsText(value: () => ITextFieldExpression): Self = this.set("ValueAsText", js.Any.fromFunction0(value))
+    def setValueAsText(value: () => ITextFieldExpression): Self = StObject.set(x, "ValueAsText", js.Any.fromFunction0(value))
   }
 }

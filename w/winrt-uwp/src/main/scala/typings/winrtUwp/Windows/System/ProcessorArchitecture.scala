@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProcessorArchitecture extends js.Object
+sealed trait ProcessorArchitecture extends StObject
 /** Specifies the processor architecture supported by an app. */
 @JSGlobal("Windows.System.ProcessorArchitecture")
 @js.native
-object ProcessorArchitecture extends js.Object {
+object ProcessorArchitecture extends StObject {
   
   /** The ARM processor architecture. */
   @js.native

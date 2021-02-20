@@ -1,12 +1,13 @@
 package typings.firmata.mod
 
 import typings.firmata.anon.BaudRate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Settings extends js.Object {
+trait Settings extends StObject {
   
   var reportVersionTimeout: Double = js.native
   
@@ -23,27 +24,15 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReportVersionTimeout(value: Double): Self = StObject.set(x, "reportVersionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReportVersionTimeout(value: Double): Self = this.set("reportVersionTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSamplingInterval(value: Double): Self = this.set("samplingInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerialport(value: BaudRate): Self = this.set("serialport", value.asInstanceOf[js.Any])
+    def setSerialport(value: BaudRate): Self = StObject.set(x, "serialport", value.asInstanceOf[js.Any])
   }
 }

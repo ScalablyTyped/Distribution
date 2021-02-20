@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkSendingCopy extends js.Object {
+trait BulkSendingCopy extends StObject {
   
   /**
     * The custom fields for this copy of the envelope.
@@ -48,25 +49,7 @@ object BulkSendingCopy {
   }
   
   @scala.inline
-  implicit class BulkSendingCopyOps[Self <: BulkSendingCopy] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomFieldsVarargs(
-      value: (/* This object contains details about a custom field for a bulk send copy. In a bulk send request, each custom field in the bulk send list
-      must match a custom field in the envelope or template that you want to send. */ BulkSendingCopyCustomField)*
-    ): Self = this.set("customFields", js.Array(value :_*))
+  implicit class BulkSendingCopyMutableBuilder[Self <: BulkSendingCopy] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCustomFields(
@@ -74,34 +57,40 @@ object BulkSendingCopy {
           /* This object contains details about a custom field for a bulk send copy. In a bulk send request, each custom field in the bulk send list
       must match a custom field in the envelope or template that you want to send. */ BulkSendingCopyCustomField
         ]
-    ): Self = this.set("customFields", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomFields: Self = this.set("customFields", js.undefined)
+    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
     @scala.inline
-    def setEmailBlurb(value: String): Self = this.set("emailBlurb", value.asInstanceOf[js.Any])
+    def setCustomFieldsVarargs(
+      value: (/* This object contains details about a custom field for a bulk send copy. In a bulk send request, each custom field in the bulk send list
+      must match a custom field in the envelope or template that you want to send. */ BulkSendingCopyCustomField)*
+    ): Self = StObject.set(x, "customFields", js.Array(value :_*))
     
     @scala.inline
-    def deleteEmailBlurb: Self = this.set("emailBlurb", js.undefined)
+    def setEmailBlurb(value: String): Self = StObject.set(x, "emailBlurb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailSubject(value: String): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
+    def setEmailBlurbUndefined: Self = StObject.set(x, "emailBlurb", js.undefined)
     
     @scala.inline
-    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
+    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientsVarargs(value: (/* This object contains details about a bulk send recipient. */ BulkSendingCopyRecipient)*): Self = this.set("recipients", js.Array(value :_*))
+    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
     @scala.inline
     def setRecipients(
       value: js.Array[
           /* This object contains details about a bulk send recipient. */ BulkSendingCopyRecipient
         ]
-    ): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
+    
+    @scala.inline
+    def setRecipientsVarargs(value: (/* This object contains details about a bulk send recipient. */ BulkSendingCopyRecipient)*): Self = StObject.set(x, "recipients", js.Array(value :_*))
   }
 }

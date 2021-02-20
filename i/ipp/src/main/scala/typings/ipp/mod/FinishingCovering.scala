@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishingCovering extends js.Object {
+trait FinishingCovering extends StObject {
   
   var `covering-name`: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object FinishingCovering {
   }
   
   @scala.inline
-  implicit class FinishingCoveringOps[Self <: FinishingCovering] (val x: Self) extends AnyVal {
+  implicit class FinishingCoveringMutableBuilder[Self <: FinishingCovering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setCovering-name`(value: String): Self = StObject.set(x, "covering-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def `setCovering-name`(value: String): Self = this.set("covering-name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteCovering-name`: Self = this.set("covering-name", js.undefined)
+    def `setCovering-nameUndefined`: Self = StObject.set(x, "covering-name", js.undefined)
   }
 }

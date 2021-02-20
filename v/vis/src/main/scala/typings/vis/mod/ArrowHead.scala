@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrowHead extends js.Object {
+trait ArrowHead extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object ArrowHead {
   }
   
   @scala.inline
-  implicit class ArrowHeadOps[Self <: ArrowHead] (val x: Self) extends AnyVal {
+  implicit class ArrowHeadMutableBuilder[Self <: ArrowHead] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageHeight(value: Double): Self = this.set("imageHeight", value.asInstanceOf[js.Any])
+    def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
     
     @scala.inline
-    def deleteImageHeight: Self = this.set("imageHeight", js.undefined)
+    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageWidth(value: Double): Self = this.set("imageWidth", value.asInstanceOf[js.Any])
+    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
     
     @scala.inline
-    def deleteImageWidth: Self = this.set("imageWidth", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleFactor(value: Double): Self = this.set("scaleFactor", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def deleteScaleFactor: Self = this.set("scaleFactor", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

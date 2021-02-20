@@ -1,11 +1,12 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReactionMixin extends js.Object {
+trait ReactionMixin extends StObject {
   
   val reactions: js.Array[Reaction] = js.native
 }
@@ -18,24 +19,12 @@ object ReactionMixin {
   }
   
   @scala.inline
-  implicit class ReactionMixinOps[Self <: ReactionMixin] (val x: Self) extends AnyVal {
+  implicit class ReactionMixinMutableBuilder[Self <: ReactionMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReactions(value: js.Array[Reaction]): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReactionsVarargs(value: Reaction*): Self = this.set("reactions", js.Array(value :_*))
-    
-    @scala.inline
-    def setReactions(value: js.Array[Reaction]): Self = this.set("reactions", value.asInstanceOf[js.Any])
+    def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "reactions", js.Array(value :_*))
   }
 }

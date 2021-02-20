@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHtmlElementTextureOptions extends js.Object {
+trait IHtmlElementTextureOptions extends StObject {
   
   /**
     * Defines the engine instance to use the texture with. It is not mandatory if you define a scene.
@@ -36,42 +37,30 @@ object IHtmlElementTextureOptions {
   }
   
   @scala.inline
-  implicit class IHtmlElementTextureOptionsOps[Self <: IHtmlElementTextureOptions] (val x: Self) extends AnyVal {
+  implicit class IHtmlElementTextureOptionsMutableBuilder[Self <: IHtmlElementTextureOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEngine(value: Nullable[ThinEngine]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEngineNull: Self = StObject.set(x, "engine", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerateMipMaps(value: Boolean): Self = StObject.set(x, "generateMipMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: Nullable[ThinEngine]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    def setGenerateMipMapsUndefined: Self = StObject.set(x, "generateMipMaps", js.undefined)
     
     @scala.inline
-    def setEngineNull: Self = this.set("engine", null)
+    def setSamplingMode(value: Double): Self = StObject.set(x, "samplingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateMipMaps(value: Boolean): Self = this.set("generateMipMaps", value.asInstanceOf[js.Any])
+    def setSamplingModeUndefined: Self = StObject.set(x, "samplingMode", js.undefined)
     
     @scala.inline
-    def deleteGenerateMipMaps: Self = this.set("generateMipMaps", js.undefined)
+    def setScene(value: Nullable[Scene]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplingMode(value: Double): Self = this.set("samplingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSamplingMode: Self = this.set("samplingMode", js.undefined)
-    
-    @scala.inline
-    def setScene(value: Nullable[Scene]): Self = this.set("scene", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSceneNull: Self = this.set("scene", null)
+    def setSceneNull: Self = StObject.set(x, "scene", null)
   }
 }

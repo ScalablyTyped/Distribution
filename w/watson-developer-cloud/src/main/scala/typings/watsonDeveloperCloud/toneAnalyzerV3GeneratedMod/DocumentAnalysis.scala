@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** An object of type `DocumentAnalysis` that provides the results of the analysis for the full input document. */
 @js.native
-trait DocumentAnalysis extends js.Object {
+trait DocumentAnalysis extends StObject {
   
   /** **`2017-09-21`:** Not returned. **`2016-05-19`:** An array of `ToneCategory` objects that provides the results of the tone analysis for the full document of the input content. The service returns results only for the tones specified with the `tones` parameter of the request. */
   var tone_categories: js.UndefOr[js.Array[ToneCategory]] = js.native
@@ -29,42 +30,30 @@ object DocumentAnalysis {
   }
   
   @scala.inline
-  implicit class DocumentAnalysisOps[Self <: DocumentAnalysis] (val x: Self) extends AnyVal {
+  implicit class DocumentAnalysisMutableBuilder[Self <: DocumentAnalysis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTone_categories(value: js.Array[ToneCategory]): Self = StObject.set(x, "tone_categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTone_categoriesUndefined: Self = StObject.set(x, "tone_categories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTone_categoriesVarargs(value: ToneCategory*): Self = StObject.set(x, "tone_categories", js.Array(value :_*))
     
     @scala.inline
-    def setTone_categoriesVarargs(value: ToneCategory*): Self = this.set("tone_categories", js.Array(value :_*))
+    def setTones(value: js.Array[ToneScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTone_categories(value: js.Array[ToneCategory]): Self = this.set("tone_categories", value.asInstanceOf[js.Any])
+    def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
     
     @scala.inline
-    def deleteTone_categories: Self = this.set("tone_categories", js.undefined)
+    def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
     
     @scala.inline
-    def setTonesVarargs(value: ToneScore*): Self = this.set("tones", js.Array(value :_*))
+    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTones(value: js.Array[ToneScore]): Self = this.set("tones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTones: Self = this.set("tones", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: String): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

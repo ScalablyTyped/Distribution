@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSignalingChannelInput extends js.Object {
+trait CreateSignalingChannelInput extends StObject {
   
   /**
     * A name for the signaling channel that you are creating. It must be unique for each AWS account and AWS Region.
@@ -36,42 +37,30 @@ object CreateSignalingChannelInput {
   }
   
   @scala.inline
-  implicit class CreateSignalingChannelInputOps[Self <: CreateSignalingChannelInput] (val x: Self) extends AnyVal {
+  implicit class CreateSignalingChannelInputMutableBuilder[Self <: CreateSignalingChannelInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelName(value: ChannelName): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelType(value: ChannelType): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
     
     @scala.inline
-    def setChannelName(value: ChannelName): Self = this.set("ChannelName", value.asInstanceOf[js.Any])
+    def setSingleMasterConfiguration(value: SingleMasterConfiguration): Self = StObject.set(x, "SingleMasterConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelType(value: ChannelType): Self = this.set("ChannelType", value.asInstanceOf[js.Any])
+    def setSingleMasterConfigurationUndefined: Self = StObject.set(x, "SingleMasterConfiguration", js.undefined)
     
     @scala.inline
-    def deleteChannelType: Self = this.set("ChannelType", js.undefined)
+    def setTags(value: TagOnCreateList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleMasterConfiguration(value: SingleMasterConfiguration): Self = this.set("SingleMasterConfiguration", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSingleMasterConfiguration: Self = this.set("SingleMasterConfiguration", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagOnCreateList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.nodeMailjet.mod.SMS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendParams extends js.Object {
+trait SendParams extends StObject {
   
   var From: String = js.native
   
@@ -22,27 +23,15 @@ object SendParams {
   }
   
   @scala.inline
-  implicit class SendParamsOps[Self <: SendParams] (val x: Self) extends AnyVal {
+  implicit class SendParamsMutableBuilder[Self <: SendParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrom(value: String): Self = this.set("From", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("To", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

@@ -2,15 +2,29 @@ package typings.xmldsigjs
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Node
-import typings.xmlCore.mod.XmlObject
 import typings.xmlCore.typesMod.IXmlSerializable
+import typings.xmldsigjs.xmlObjectMod.XmlSignatureObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xmldsigjs/build/types/xml/transform", JSImport.Namespace)
-@js.native
-object transformMod extends js.Object {
+object transformMod {
+  
+  @JSImport("xmldsigjs/build/types/xml/transform", "Transform")
+  @js.native
+  class Transform ()
+    extends XmlSignatureObject
+       with ITransform {
+    def this(properties: js.Object) = this()
+    
+    /**
+      * XPath of the transformation
+      */
+    var XPath: String = js.native
+    
+    var innerXml: Node | Null = js.native
+  }
   
   @js.native
   trait ITransform extends IXmlSerializable {
@@ -22,19 +36,6 @@ object transformMod extends js.Object {
     def GetOutput(): js.Any = js.native
     
     def LoadInnerXml(node: Node): Unit = js.native
-  }
-  
-  @js.native
-  class Transform ()
-    extends XmlObject
-       with ITransform {
-    
-    /**
-      * XPath of the transformation
-      */
-    var XPath: String = js.native
-    
-    var innerXml: Node | Null = js.native
   }
   
   type ITransformConstructable = Instantiable0[Transform]

@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3 extends js.Object {
+trait S3 extends StObject {
   
   var bucket: String = js.native
   
@@ -24,36 +25,24 @@ object S3 {
   }
   
   @scala.inline
-  implicit class S3Ops[Self <: S3] (val x: Self) extends AnyVal {
+  implicit class S3MutableBuilder[Self <: S3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExisting(value: Boolean): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setExistingUndefined: Self = StObject.set(x, "existing", js.undefined)
     
     @scala.inline
-    def setEvent(value: String): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setRules(value: js.Array[S3Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesVarargs(value: S3Rule*): Self = this.set("rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: js.Array[S3Rule]): Self = this.set("rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExisting(value: Boolean): Self = this.set("existing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExisting: Self = this.set("existing", js.undefined)
+    def setRulesVarargs(value: S3Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

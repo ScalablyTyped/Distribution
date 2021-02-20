@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchAttributes extends js.Object {
+trait MatchAttributes extends StObject {
   
   /**
     * The destination ports to inspect for. If not specified, this matches with any destination port. This setting is only used for protocols 6 (TCP) and 17 (UDP).  You can specify individual ports, for example 1994 and you can specify port ranges, for example 1990-1994. 
@@ -46,72 +47,60 @@ object MatchAttributes {
   }
   
   @scala.inline
-  implicit class MatchAttributesOps[Self <: MatchAttributes] (val x: Self) extends AnyVal {
+  implicit class MatchAttributesMutableBuilder[Self <: MatchAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationPorts(value: PortRanges): Self = StObject.set(x, "DestinationPorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationPortsUndefined: Self = StObject.set(x, "DestinationPorts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationPortsVarargs(value: PortRange*): Self = StObject.set(x, "DestinationPorts", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationPortsVarargs(value: PortRange*): Self = this.set("DestinationPorts", js.Array(value :_*))
+    def setDestinations(value: Addresses): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationPorts(value: PortRanges): Self = this.set("DestinationPorts", value.asInstanceOf[js.Any])
+    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
     @scala.inline
-    def deleteDestinationPorts: Self = this.set("DestinationPorts", js.undefined)
+    def setDestinationsVarargs(value: Address*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationsVarargs(value: Address*): Self = this.set("Destinations", js.Array(value :_*))
+    def setProtocols(value: ProtocolNumbers): Self = StObject.set(x, "Protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinations(value: Addresses): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    def setProtocolsUndefined: Self = StObject.set(x, "Protocols", js.undefined)
     
     @scala.inline
-    def deleteDestinations: Self = this.set("Destinations", js.undefined)
+    def setProtocolsVarargs(value: ProtocolNumber*): Self = StObject.set(x, "Protocols", js.Array(value :_*))
     
     @scala.inline
-    def setProtocolsVarargs(value: ProtocolNumber*): Self = this.set("Protocols", js.Array(value :_*))
+    def setSourcePorts(value: PortRanges): Self = StObject.set(x, "SourcePorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocols(value: ProtocolNumbers): Self = this.set("Protocols", value.asInstanceOf[js.Any])
+    def setSourcePortsUndefined: Self = StObject.set(x, "SourcePorts", js.undefined)
     
     @scala.inline
-    def deleteProtocols: Self = this.set("Protocols", js.undefined)
+    def setSourcePortsVarargs(value: PortRange*): Self = StObject.set(x, "SourcePorts", js.Array(value :_*))
     
     @scala.inline
-    def setSourcePortsVarargs(value: PortRange*): Self = this.set("SourcePorts", js.Array(value :_*))
+    def setSources(value: Addresses): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcePorts(value: PortRanges): Self = this.set("SourcePorts", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
     @scala.inline
-    def deleteSourcePorts: Self = this.set("SourcePorts", js.undefined)
+    def setSourcesVarargs(value: Address*): Self = StObject.set(x, "Sources", js.Array(value :_*))
     
     @scala.inline
-    def setSourcesVarargs(value: Address*): Self = this.set("Sources", js.Array(value :_*))
+    def setTCPFlags(value: TCPFlags): Self = StObject.set(x, "TCPFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSources(value: Addresses): Self = this.set("Sources", value.asInstanceOf[js.Any])
+    def setTCPFlagsUndefined: Self = StObject.set(x, "TCPFlags", js.undefined)
     
     @scala.inline
-    def deleteSources: Self = this.set("Sources", js.undefined)
-    
-    @scala.inline
-    def setTCPFlagsVarargs(value: TCPFlagField*): Self = this.set("TCPFlags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTCPFlags(value: TCPFlags): Self = this.set("TCPFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTCPFlags: Self = this.set("TCPFlags", js.undefined)
+    def setTCPFlagsVarargs(value: TCPFlagField*): Self = StObject.set(x, "TCPFlags", js.Array(value :_*))
   }
 }

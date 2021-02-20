@@ -1,12 +1,13 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gdal", "Geometry")
 @js.native
-abstract class Geometry () extends js.Object {
+abstract class Geometry () extends StObject {
   
   def boundary(): Geometry = js.native
   
@@ -98,19 +99,31 @@ abstract class Geometry () extends js.Object {
   val wkbType: Double = js.native
 }
 /* static members */
-@JSImport("gdal", "Geometry")
-@js.native
-object Geometry extends js.Object {
+object Geometry {
   
+  @JSImport("gdal", "Geometry.create")
+  @js.native
   def create(`type`: Double): Geometry = js.native
   
+  @JSImport("gdal", "Geometry.fromWKB")
+  @js.native
   def fromWKB(wkb: Double): Geometry = js.native
+  @JSImport("gdal", "Geometry.fromWKB")
+  @js.native
   def fromWKB(wkb: Double, srs: SpatialReference): Geometry = js.native
   
+  @JSImport("gdal", "Geometry.fromWKT")
+  @js.native
   def fromWKT(wkt: String): Geometry = js.native
+  @JSImport("gdal", "Geometry.fromWKT")
+  @js.native
   def fromWKT(wkt: String, srs: SpatialReference): Geometry = js.native
   
+  @JSImport("gdal", "Geometry.getConstructor")
+  @js.native
   def getConstructor(`type`: Double): Geometry = js.native
   
+  @JSImport("gdal", "Geometry.getName")
+  @js.native
   def getName(`type`: Double): String = js.native
 }

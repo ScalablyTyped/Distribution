@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationMethod extends js.Object {
+trait AuthenticationMethod extends StObject {
   
   /**
     * Indicates the type of authentication. Valid values are:
@@ -44,42 +45,30 @@ object AuthenticationMethod {
   }
   
   @scala.inline
-  implicit class AuthenticationMethodOps[Self <: AuthenticationMethod] (val x: Self) extends AnyVal {
+  implicit class AuthenticationMethodMutableBuilder[Self <: AuthenticationMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastProvider(value: String): Self = StObject.set(x, "lastProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationType(value: String): Self = this.set("authenticationType", value.asInstanceOf[js.Any])
+    def setLastProviderUndefined: Self = StObject.set(x, "lastProvider", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationType: Self = this.set("authenticationType", js.undefined)
+    def setLastTimestamp(value: String): Self = StObject.set(x, "lastTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastProvider(value: String): Self = this.set("lastProvider", value.asInstanceOf[js.Any])
+    def setLastTimestampUndefined: Self = StObject.set(x, "lastTimestamp", js.undefined)
     
     @scala.inline
-    def deleteLastProvider: Self = this.set("lastProvider", js.undefined)
+    def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastTimestamp(value: String): Self = this.set("lastTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastTimestamp: Self = this.set("lastTimestamp", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: String): Self = this.set("totalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

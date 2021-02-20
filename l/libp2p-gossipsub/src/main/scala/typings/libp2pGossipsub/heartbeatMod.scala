@@ -2,16 +2,16 @@ package typings.libp2pGossipsub
 
 import typings.libp2pGossipsub.anon.Cancel
 import typings.libp2pGossipsub.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libp2p-gossipsub/src/heartbeat", JSImport.Namespace)
-@js.native
-object heartbeatMod extends js.Object {
+object heartbeatMod {
   
+  @JSImport("libp2p-gossipsub/src/heartbeat", "Heartbeat")
   @js.native
-  class Heartbeat protected () extends js.Object {
+  class Heartbeat protected () extends StObject {
     /**
       * @param {Object} gossipsub
       * @constructor

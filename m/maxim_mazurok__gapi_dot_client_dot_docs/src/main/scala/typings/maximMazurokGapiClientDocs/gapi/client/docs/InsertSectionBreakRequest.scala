@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertSectionBreakRequest extends js.Object {
+trait InsertSectionBreakRequest extends StObject {
   
   /**
     * Inserts a newline and a section break at the end of the document body. Section breaks cannot be inserted inside a footnote, header or footer. Because section breaks can only be
@@ -32,36 +33,24 @@ object InsertSectionBreakRequest {
   }
   
   @scala.inline
-  implicit class InsertSectionBreakRequestOps[Self <: InsertSectionBreakRequest] (val x: Self) extends AnyVal {
+  implicit class InsertSectionBreakRequestMutableBuilder[Self <: InsertSectionBreakRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = this.set("endOfSegmentLocation", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteEndOfSegmentLocation: Self = this.set("endOfSegmentLocation", js.undefined)
+    def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setSectionType(value: String): Self = this.set("sectionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSectionType: Self = this.set("sectionType", js.undefined)
+    def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.store
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoreJsStorage extends js.Object {
+trait StoreJsStorage extends StObject {
   
   def clearAll(): Unit = js.native
   
@@ -35,36 +36,24 @@ object StoreJsStorage {
   }
   
   @scala.inline
-  implicit class StoreJsStorageOps[Self <: StoreJsStorage] (val x: Self) extends AnyVal {
+  implicit class StoreJsStorageMutableBuilder[Self <: StoreJsStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEach(value: js.Function2[/* val */ String, /* key */ String, _] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearAll(value: () => Unit): Self = this.set("clearAll", js.Any.fromFunction0(value))
+    def setRead(value: String => String | Null): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEach(value: js.Function2[/* val */ String, /* key */ String, _] => Unit): Self = this.set("each", js.Any.fromFunction1(value))
+    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRead(value: String => String | Null): Self = this.set("read", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: String => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWrite(value: (String, String) => Unit): Self = this.set("write", js.Any.fromFunction2(value))
+    def setWrite(value: (String, String) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptRequest extends js.Object {
+trait EncryptRequest extends StObject {
   
   /**
     * Optional. Optional data that, if specified, must also be provided during decryption through DecryptRequest.additional_authenticated_data. The maximum size depends on the key
@@ -48,42 +49,30 @@ object EncryptRequest {
   }
   
   @scala.inline
-  implicit class EncryptRequestOps[Self <: EncryptRequest] (val x: Self) extends AnyVal {
+  implicit class EncryptRequestMutableBuilder[Self <: EncryptRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalAuthenticatedDataCrc32c(value: String): Self = StObject.set(x, "additionalAuthenticatedDataCrc32c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalAuthenticatedDataCrc32cUndefined: Self = StObject.set(x, "additionalAuthenticatedDataCrc32c", js.undefined)
     
     @scala.inline
-    def setAdditionalAuthenticatedData(value: String): Self = this.set("additionalAuthenticatedData", value.asInstanceOf[js.Any])
+    def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
     
     @scala.inline
-    def deleteAdditionalAuthenticatedData: Self = this.set("additionalAuthenticatedData", js.undefined)
+    def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalAuthenticatedDataCrc32c(value: String): Self = this.set("additionalAuthenticatedDataCrc32c", value.asInstanceOf[js.Any])
+    def setPlaintextCrc32c(value: String): Self = StObject.set(x, "plaintextCrc32c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdditionalAuthenticatedDataCrc32c: Self = this.set("additionalAuthenticatedDataCrc32c", js.undefined)
+    def setPlaintextCrc32cUndefined: Self = StObject.set(x, "plaintextCrc32c", js.undefined)
     
     @scala.inline
-    def setPlaintext(value: String): Self = this.set("plaintext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaintext: Self = this.set("plaintext", js.undefined)
-    
-    @scala.inline
-    def setPlaintextCrc32c(value: String): Self = this.set("plaintextCrc32c", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaintextCrc32c: Self = this.set("plaintextCrc32c", js.undefined)
+    def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
   }
 }

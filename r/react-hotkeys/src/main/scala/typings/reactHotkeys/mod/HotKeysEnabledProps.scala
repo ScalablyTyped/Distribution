@@ -1,5 +1,6 @@
 package typings.reactHotkeys.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,36 +34,24 @@ object HotKeysEnabledProps {
   }
   
   @scala.inline
-  implicit class HotKeysEnabledPropsOps[Self <: HotKeysEnabledProps] (val x: Self) extends AnyVal {
+  implicit class HotKeysEnabledPropsMutableBuilder[Self <: HotKeysEnabledProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnBlur(value: () => Unit): Self = this.set("onBlur", js.Any.fromFunction0(value))
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFocus(value: () => Unit): Self = this.set("onFocus", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: Boolean): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

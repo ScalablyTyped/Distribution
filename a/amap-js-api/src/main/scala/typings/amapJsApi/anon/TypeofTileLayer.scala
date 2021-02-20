@@ -9,12 +9,13 @@ import typings.amapJsApi.AMap.TileLayer.Satellite
 import typings.amapJsApi.AMap.TileLayer.Traffic
 import typings.amapJsApi.AMap.TileLayer.WMS
 import typings.amapJsApi.AMap.TileLayer.WMTS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofTileLayer extends js.Object {
+trait TypeofTileLayer extends StObject {
   
   val Flexible: Instantiable1[/* options */ js.UndefOr[Options], typings.amapJsApi.AMap.TileLayer.Flexible] = js.native
   
@@ -62,28 +63,16 @@ object TypeofTileLayer {
   }
   
   @scala.inline
-  implicit class TypeofTileLayerOps[Self <: TypeofTileLayer] (val x: Self) extends AnyVal {
+  implicit class TypeofTileLayerMutableBuilder[Self <: TypeofTileLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlexible(value: Instantiable1[/* options */ js.UndefOr[Options], Flexible]): Self = StObject.set(x, "Flexible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoadNet(value: Instantiable0[RoadNet]): Self = StObject.set(x, "RoadNet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFlexible(value: Instantiable1[/* options */ js.UndefOr[Options], Flexible]): Self = this.set("Flexible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoadNet(value: Instantiable0[RoadNet]): Self = this.set("RoadNet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSatellite(value: Instantiable0[Satellite]): Self = this.set("Satellite", value.asInstanceOf[js.Any])
+    def setSatellite(value: Instantiable0[Satellite]): Self = StObject.set(x, "Satellite", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTraffic(
@@ -91,12 +80,12 @@ object TypeofTileLayer {
           /* options */ js.UndefOr[typings.amapJsApi.AMap.TileLayer.Traffic.Options], 
           Traffic
         ]
-    ): Self = this.set("Traffic", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Traffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWMS(value: Instantiable1[/* options */ typings.amapJsApi.AMap.TileLayer.WMS.Options, WMS]): Self = this.set("WMS", value.asInstanceOf[js.Any])
+    def setWMS(value: Instantiable1[/* options */ typings.amapJsApi.AMap.TileLayer.WMS.Options, WMS]): Self = StObject.set(x, "WMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWMTS(value: Instantiable1[/* options */ typings.amapJsApi.AMap.TileLayer.WMTS.Options, WMTS]): Self = this.set("WMTS", value.asInstanceOf[js.Any])
+    def setWMTS(value: Instantiable1[/* options */ typings.amapJsApi.AMap.TileLayer.WMTS.Options, WMTS]): Self = StObject.set(x, "WMTS", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,14 @@ package typings.angularCompiler
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.compileReflectorMod.CompileReflector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/render3/r3_jit", JSImport.Namespace)
-@js.native
-object r3JitMod extends js.Object {
+object r3JitMod {
   
+  @JSImport("@angular/compiler/src/render3/r3_jit", "R3JitReflector")
   @js.native
   class R3JitReflector protected () extends CompileReflector {
     def this(context: StringDictionary[js.Any]) = this()

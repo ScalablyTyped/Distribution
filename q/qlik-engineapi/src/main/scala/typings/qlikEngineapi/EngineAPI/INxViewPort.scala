@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxViewPort...
   */
 @js.native
-trait INxViewPort extends js.Object {
+trait INxViewPort extends StObject {
   
   /**
     * Height of the canvas in pixels.
@@ -34,27 +35,15 @@ object INxViewPort {
   }
   
   @scala.inline
-  implicit class INxViewPortOps[Self <: INxViewPort] (val x: Self) extends AnyVal {
+  implicit class INxViewPortMutableBuilder[Self <: INxViewPort] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQWidth(value: Double): Self = StObject.set(x, "qWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQHeight(value: Double): Self = this.set("qHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQWidth(value: Double): Self = this.set("qWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQZoomLevel(value: Double): Self = this.set("qZoomLevel", value.asInstanceOf[js.Any])
+    def setQZoomLevel(value: Double): Self = StObject.set(x, "qZoomLevel", value.asInstanceOf[js.Any])
   }
 }

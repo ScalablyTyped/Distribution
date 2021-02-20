@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListStorageLensConfigurationEntry extends js.Object {
+trait ListStorageLensConfigurationEntry extends StObject {
   
   /**
     * A container for the S3 Storage Lens home Region. Your metrics data is stored and retained in your designated S3 Storage Lens home Region.
@@ -36,33 +37,21 @@ object ListStorageLensConfigurationEntry {
   }
   
   @scala.inline
-  implicit class ListStorageLensConfigurationEntryOps[Self <: ListStorageLensConfigurationEntry] (val x: Self) extends AnyVal {
+  implicit class ListStorageLensConfigurationEntryMutableBuilder[Self <: ListStorageLensConfigurationEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHomeRegion(value: S3AWSRegion): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: ConfigId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeRegion(value: S3AWSRegion): Self = this.set("HomeRegion", value.asInstanceOf[js.Any])
+    def setIsEnabledUndefined: Self = StObject.set(x, "IsEnabled", js.undefined)
     
     @scala.inline
-    def setId(value: ConfigId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageLensArn(value: StorageLensArn): Self = this.set("StorageLensArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEnabled(value: IsEnabled): Self = this.set("IsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsEnabled: Self = this.set("IsEnabled", js.undefined)
+    def setStorageLensArn(value: StorageLensArn): Self = StObject.set(x, "StorageLensArn", value.asInstanceOf[js.Any])
   }
 }

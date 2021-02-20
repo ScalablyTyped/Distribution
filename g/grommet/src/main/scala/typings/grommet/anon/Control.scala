@@ -11,12 +11,13 @@ import typings.react.mod.ReactComponentElement
 import typings.std.Exclude
 import typings.std.Pick
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Control extends js.Object {
+trait Control extends StObject {
   
   var background: js.UndefOr[BackgroundType] = js.native
   
@@ -52,58 +53,46 @@ object Control {
   }
   
   @scala.inline
-  implicit class ControlOps[Self <: Control] (val x: Self) extends AnyVal {
+  implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: `14`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: BackgroundType): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setControl(value: Open): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: `14`): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: Open): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
+    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = this.set("extend", js.Any.fromFunction1(value))
+    def setIcons(value: Up): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = this.set("extend", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteExtend: Self = this.set("extend", js.undefined)
+    def setOptions(value: ContainerText): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: Up): Self = this.set("icons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: ContainerText): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
     def setSearchInput(
@@ -114,15 +103,15 @@ object Control {
             Exclude[/* keyof react.react.ComponentProps<any> */ String, key | ref]
           ]
         ]
-    ): Self = this.set("searchInput", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "searchInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchInput: Self = this.set("searchInput", js.undefined)
+    def setSearchInputUndefined: Self = StObject.set(x, "searchInput", js.undefined)
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

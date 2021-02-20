@@ -2,12 +2,13 @@ package typings.vis.mod
 
 import typings.vis.anon.Canvas
 import typings.vis.anon.Nodes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Properties extends js.Object {
+trait Properties extends StObject {
   
   var edges: js.Array[String] = js.native
   
@@ -28,45 +29,33 @@ object Properties {
   }
   
   @scala.inline
-  implicit class PropertiesOps[Self <: Properties] (val x: Self) extends AnyVal {
+  implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdges(value: js.Array[String]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdgesVarargs(value: String*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: js.Array[String]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgesVarargs(value: String*): Self = this.set("edges", js.Array(value :_*))
+    def setEventVarargs(value: String*): Self = StObject.set(x, "event", js.Array(value :_*))
     
     @scala.inline
-    def setEdges(value: js.Array[String]): Self = this.set("edges", value.asInstanceOf[js.Any])
+    def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventVarargs(value: String*): Self = this.set("event", js.Array(value :_*))
+    def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setEvent(value: js.Array[String]): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setPointer(value: Canvas): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodesVarargs(value: String*): Self = this.set("nodes", js.Array(value :_*))
+    def setPreviousSelection(value: Nodes): Self = StObject.set(x, "previousSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: js.Array[String]): Self = this.set("nodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointer(value: Canvas): Self = this.set("pointer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousSelection(value: Nodes): Self = this.set("previousSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousSelection: Self = this.set("previousSelection", js.undefined)
+    def setPreviousSelectionUndefined: Self = StObject.set(x, "previousSelection", js.undefined)
   }
 }

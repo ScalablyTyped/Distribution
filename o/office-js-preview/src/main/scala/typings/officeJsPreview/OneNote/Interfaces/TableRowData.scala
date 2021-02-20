@@ -1,12 +1,13 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "tableRow.toJSON()". */
 @js.native
-trait TableRowData extends js.Object {
+trait TableRowData extends StObject {
   
   /**
     *
@@ -49,45 +50,33 @@ object TableRowData {
   }
   
   @scala.inline
-  implicit class TableRowDataOps[Self <: TableRowData] (val x: Self) extends AnyVal {
+  implicit class TableRowDataMutableBuilder[Self <: TableRowData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCells(value: js.Array[TableCellData]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellCount(value: Double): Self = this.set("cellCount", value.asInstanceOf[js.Any])
+    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
     @scala.inline
-    def deleteCellCount: Self = this.set("cellCount", js.undefined)
+    def setCellsVarargs(value: TableCellData*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
     @scala.inline
-    def setCellsVarargs(value: TableCellData*): Self = this.set("cells", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCells(value: js.Array[TableCellData]): Self = this.set("cells", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCells: Self = this.set("cells", js.undefined)
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
   }
 }

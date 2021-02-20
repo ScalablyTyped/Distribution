@@ -1,19 +1,22 @@
 package typings.antvComponent
 
-import typings.antvComponent.htmlComponentMod.HtmlComponent
 import typings.antvComponent.typesMod.HtmlComponentCfg
 import typings.antvComponent.typesMod.TooltipCfg
 import typings.antvGBase.typesMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/tooltip/html", JSImport.Namespace)
-@js.native
-object tooltipHtmlMod extends js.Object {
+object tooltipHtmlMod {
+  
+  @JSImport("@antv/component/lib/tooltip/html", JSImport.Default)
+  @js.native
+  class default[T /* <: TooltipCfg */] () extends Tooltip[T]
   
   @js.native
-  trait Tooltip[T /* <: TooltipCfg */] extends HtmlComponent[HtmlComponentCfg] {
+  trait Tooltip[T /* <: TooltipCfg */]
+    extends typings.antvComponent.htmlComponentMod.default[HtmlComponentCfg] {
     
     var cacheDoms: js.Any = js.native
     
@@ -41,7 +44,4 @@ object tooltipHtmlMod extends js.Object {
     
     var setTitle: js.Any = js.native
   }
-  
-  @js.native
-  class default[T /* <: TooltipCfg */] () extends Tooltip[T]
 }

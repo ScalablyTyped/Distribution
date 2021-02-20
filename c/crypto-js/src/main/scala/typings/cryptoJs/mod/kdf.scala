@@ -1,18 +1,16 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("crypto-js", "kdf")
-@js.native
-object kdf extends js.Object {
+object kdf {
   
   /**
     * OpenSSL key derivation function.
     */
-  @js.native
-  object OpenSSL extends js.Object {
+  object OpenSSL {
     
     /**
       * Derives a key and IV from a password.
@@ -29,8 +27,14 @@ object kdf extends js.Object {
       *     var derivedParams = CryptoJS.kdf.OpenSSL.execute('Password', 256/32, 128/32);
       *     var derivedParams = CryptoJS.kdf.OpenSSL.execute('Password', 256/32, 128/32, 'saltsalt');
       */
+    @JSImport("crypto-js", "kdf.OpenSSL.execute")
+    @js.native
     def execute(password: String, keySize: Double, ivSize: Double): CipherParams = js.native
+    @JSImport("crypto-js", "kdf.OpenSSL.execute")
+    @js.native
     def execute(password: String, keySize: Double, ivSize: Double, salt: String): CipherParams = js.native
+    @JSImport("crypto-js", "kdf.OpenSSL.execute")
+    @js.native
     def execute(password: String, keySize: Double, ivSize: Double, salt: WordArray): CipherParams = js.native
   }
 }

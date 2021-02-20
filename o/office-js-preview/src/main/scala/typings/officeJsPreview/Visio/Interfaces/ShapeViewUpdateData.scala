@@ -1,13 +1,14 @@
 package typings.officeJsPreview.Visio.Interfaces
 
 import typings.officeJsPreview.Visio.Highlight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ShapeView object, for use in "shapeView.set({ ... })". */
 @js.native
-trait ShapeViewUpdateData extends js.Object {
+trait ShapeViewUpdateData extends StObject {
   
   /**
     *
@@ -26,24 +27,12 @@ object ShapeViewUpdateData {
   }
   
   @scala.inline
-  implicit class ShapeViewUpdateDataOps[Self <: ShapeViewUpdateData] (val x: Self) extends AnyVal {
+  implicit class ShapeViewUpdateDataMutableBuilder[Self <: ShapeViewUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlight(value: Highlight): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHighlight(value: Highlight): Self = this.set("highlight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditAtom extends js.Object {
+trait EditAtom extends StObject {
   
   /** End time in seconds for the atom, relative to the input file timeline. When `end_time_offset` is not specified, the `inputs` are used until the end of the atom. */
   var endTimeOffset: js.UndefOr[String] = js.native
@@ -28,45 +29,33 @@ object EditAtom {
   }
   
   @scala.inline
-  implicit class EditAtomOps[Self <: EditAtom] (val x: Self) extends AnyVal {
+  implicit class EditAtomMutableBuilder[Self <: EditAtom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimeOffset(value: String): Self = this.set("endTimeOffset", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def deleteEndTimeOffset: Self = this.set("endTimeOffset", js.undefined)
+    def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: String*): Self = this.set("inputs", js.Array(value :_*))
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[String]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setStartTimeOffset(value: String): Self = this.set("startTimeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeOffset: Self = this.set("startTimeOffset", js.undefined)
+    def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
   }
 }

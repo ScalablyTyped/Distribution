@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * instruction.
   */
 @js.native
-trait SchemaInstructionInput extends js.Object {
+trait SchemaInstructionInput extends StObject {
   
   /**
     * The output index (origin zero) within the producer.
@@ -32,30 +33,18 @@ object SchemaInstructionInput {
   }
   
   @scala.inline
-  implicit class SchemaInstructionInputOps[Self <: SchemaInstructionInput] (val x: Self) extends AnyVal {
+  implicit class SchemaInstructionInputMutableBuilder[Self <: SchemaInstructionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutputNum(value: Double): Self = StObject.set(x, "outputNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutputNumUndefined: Self = StObject.set(x, "outputNum", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProducerInstructionIndex(value: Double): Self = StObject.set(x, "producerInstructionIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputNum(value: Double): Self = this.set("outputNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputNum: Self = this.set("outputNum", js.undefined)
-    
-    @scala.inline
-    def setProducerInstructionIndex(value: Double): Self = this.set("producerInstructionIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProducerInstructionIndex: Self = this.set("producerInstructionIndex", js.undefined)
+    def setProducerInstructionIndexUndefined: Self = StObject.set(x, "producerInstructionIndex", js.undefined)
   }
 }

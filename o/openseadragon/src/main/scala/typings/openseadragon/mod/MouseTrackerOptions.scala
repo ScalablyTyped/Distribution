@@ -1,12 +1,13 @@
 package typings.openseadragon.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MouseTrackerOptions extends js.Object {
+trait MouseTrackerOptions extends StObject {
   
   var blurHandler: js.UndefOr[EventHandler[OSDEvent[_]]] = js.native
   
@@ -69,171 +70,159 @@ object MouseTrackerOptions {
   }
   
   @scala.inline
-  implicit class MouseTrackerOptionsOps[Self <: MouseTrackerOptions] (val x: Self) extends AnyVal {
+  implicit class MouseTrackerOptionsMutableBuilder[Self <: MouseTrackerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlurHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "blurHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlurHandlerUndefined: Self = StObject.set(x, "blurHandler", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickDistThreshold(value: Double): Self = StObject.set(x, "clickDistThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: Element | String): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setClickDistThresholdUndefined: Self = StObject.set(x, "clickDistThreshold", js.undefined)
     
     @scala.inline
-    def setBlurHandler(value: OSDEvent[_] => Unit): Self = this.set("blurHandler", js.Any.fromFunction1(value))
+    def setClickHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "clickHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBlurHandler: Self = this.set("blurHandler", js.undefined)
+    def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
     
     @scala.inline
-    def setClickDistThreshold(value: Double): Self = this.set("clickDistThreshold", value.asInstanceOf[js.Any])
+    def setClickTimeThreshold(value: Double): Self = StObject.set(x, "clickTimeThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickDistThreshold: Self = this.set("clickDistThreshold", js.undefined)
+    def setClickTimeThresholdUndefined: Self = StObject.set(x, "clickTimeThreshold", js.undefined)
     
     @scala.inline
-    def setClickHandler(value: OSDEvent[_] => Unit): Self = this.set("clickHandler", js.Any.fromFunction1(value))
+    def setDblClickDistThreshold(value: Double): Self = StObject.set(x, "dblClickDistThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickHandler: Self = this.set("clickHandler", js.undefined)
+    def setDblClickDistThresholdUndefined: Self = StObject.set(x, "dblClickDistThreshold", js.undefined)
     
     @scala.inline
-    def setClickTimeThreshold(value: Double): Self = this.set("clickTimeThreshold", value.asInstanceOf[js.Any])
+    def setDblClickHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "dblClickHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClickTimeThreshold: Self = this.set("clickTimeThreshold", js.undefined)
+    def setDblClickHandlerUndefined: Self = StObject.set(x, "dblClickHandler", js.undefined)
     
     @scala.inline
-    def setDblClickDistThreshold(value: Double): Self = this.set("dblClickDistThreshold", value.asInstanceOf[js.Any])
+    def setDblClickTimeThreshold(value: Double): Self = StObject.set(x, "dblClickTimeThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDblClickDistThreshold: Self = this.set("dblClickDistThreshold", js.undefined)
+    def setDblClickTimeThresholdUndefined: Self = StObject.set(x, "dblClickTimeThreshold", js.undefined)
     
     @scala.inline
-    def setDblClickHandler(value: OSDEvent[_] => Unit): Self = this.set("dblClickHandler", js.Any.fromFunction1(value))
+    def setDragEndHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "dragEndHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDblClickHandler: Self = this.set("dblClickHandler", js.undefined)
+    def setDragEndHandlerUndefined: Self = StObject.set(x, "dragEndHandler", js.undefined)
     
     @scala.inline
-    def setDblClickTimeThreshold(value: Double): Self = this.set("dblClickTimeThreshold", value.asInstanceOf[js.Any])
+    def setDragHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "dragHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDblClickTimeThreshold: Self = this.set("dblClickTimeThreshold", js.undefined)
+    def setDragHandlerUndefined: Self = StObject.set(x, "dragHandler", js.undefined)
     
     @scala.inline
-    def setDragEndHandler(value: OSDEvent[_] => Unit): Self = this.set("dragEndHandler", js.Any.fromFunction1(value))
+    def setElement(value: Element | String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDragEndHandler: Self = this.set("dragEndHandler", js.undefined)
+    def setEnterHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "enterHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragHandler(value: OSDEvent[_] => Unit): Self = this.set("dragHandler", js.Any.fromFunction1(value))
+    def setEnterHandlerUndefined: Self = StObject.set(x, "enterHandler", js.undefined)
     
     @scala.inline
-    def deleteDragHandler: Self = this.set("dragHandler", js.undefined)
+    def setExitHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "exitHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnterHandler(value: OSDEvent[_] => Unit): Self = this.set("enterHandler", js.Any.fromFunction1(value))
+    def setExitHandlerUndefined: Self = StObject.set(x, "exitHandler", js.undefined)
     
     @scala.inline
-    def deleteEnterHandler: Self = this.set("enterHandler", js.undefined)
+    def setFocusHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "focusHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExitHandler(value: OSDEvent[_] => Unit): Self = this.set("exitHandler", js.Any.fromFunction1(value))
+    def setFocusHandlerUndefined: Self = StObject.set(x, "focusHandler", js.undefined)
     
     @scala.inline
-    def deleteExitHandler: Self = this.set("exitHandler", js.undefined)
+    def setKeyDownHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "keyDownHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFocusHandler(value: OSDEvent[_] => Unit): Self = this.set("focusHandler", js.Any.fromFunction1(value))
+    def setKeyDownHandlerUndefined: Self = StObject.set(x, "keyDownHandler", js.undefined)
     
     @scala.inline
-    def deleteFocusHandler: Self = this.set("focusHandler", js.undefined)
+    def setKeyHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "keyHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyDownHandler(value: OSDEvent[_] => Unit): Self = this.set("keyDownHandler", js.Any.fromFunction1(value))
+    def setKeyHandlerUndefined: Self = StObject.set(x, "keyHandler", js.undefined)
     
     @scala.inline
-    def deleteKeyDownHandler: Self = this.set("keyDownHandler", js.undefined)
+    def setKeyUpHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "keyUpHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyHandler(value: OSDEvent[_] => Unit): Self = this.set("keyHandler", js.Any.fromFunction1(value))
+    def setKeyUpHandlerUndefined: Self = StObject.set(x, "keyUpHandler", js.undefined)
     
     @scala.inline
-    def deleteKeyHandler: Self = this.set("keyHandler", js.undefined)
+    def setMoveHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "moveHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyUpHandler(value: OSDEvent[_] => Unit): Self = this.set("keyUpHandler", js.Any.fromFunction1(value))
+    def setMoveHandlerUndefined: Self = StObject.set(x, "moveHandler", js.undefined)
     
     @scala.inline
-    def deleteKeyUpHandler: Self = this.set("keyUpHandler", js.undefined)
+    def setNonPrimaryPressHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "nonPrimaryPressHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveHandler(value: OSDEvent[_] => Unit): Self = this.set("moveHandler", js.Any.fromFunction1(value))
+    def setNonPrimaryPressHandlerUndefined: Self = StObject.set(x, "nonPrimaryPressHandler", js.undefined)
     
     @scala.inline
-    def deleteMoveHandler: Self = this.set("moveHandler", js.undefined)
+    def setNonPrimaryReleaseHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "nonPrimaryReleaseHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNonPrimaryPressHandler(value: OSDEvent[_] => Unit): Self = this.set("nonPrimaryPressHandler", js.Any.fromFunction1(value))
+    def setNonPrimaryReleaseHandlerUndefined: Self = StObject.set(x, "nonPrimaryReleaseHandler", js.undefined)
     
     @scala.inline
-    def deleteNonPrimaryPressHandler: Self = this.set("nonPrimaryPressHandler", js.undefined)
+    def setPinchHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "pinchHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNonPrimaryReleaseHandler(value: OSDEvent[_] => Unit): Self = this.set("nonPrimaryReleaseHandler", js.Any.fromFunction1(value))
+    def setPinchHandlerUndefined: Self = StObject.set(x, "pinchHandler", js.undefined)
     
     @scala.inline
-    def deleteNonPrimaryReleaseHandler: Self = this.set("nonPrimaryReleaseHandler", js.undefined)
+    def setPressHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "pressHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPinchHandler(value: OSDEvent[_] => Unit): Self = this.set("pinchHandler", js.Any.fromFunction1(value))
+    def setPressHandlerUndefined: Self = StObject.set(x, "pressHandler", js.undefined)
     
     @scala.inline
-    def deletePinchHandler: Self = this.set("pinchHandler", js.undefined)
+    def setReleaseHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "releaseHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPressHandler(value: OSDEvent[_] => Unit): Self = this.set("pressHandler", js.Any.fromFunction1(value))
+    def setReleaseHandlerUndefined: Self = StObject.set(x, "releaseHandler", js.undefined)
     
     @scala.inline
-    def deletePressHandler: Self = this.set("pressHandler", js.undefined)
+    def setScrollHandler(value: OSDEvent[_] => Unit): Self = StObject.set(x, "scrollHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReleaseHandler(value: OSDEvent[_] => Unit): Self = this.set("releaseHandler", js.Any.fromFunction1(value))
+    def setScrollHandlerUndefined: Self = StObject.set(x, "scrollHandler", js.undefined)
     
     @scala.inline
-    def deleteReleaseHandler: Self = this.set("releaseHandler", js.undefined)
+    def setStartDisabled(value: Boolean): Self = StObject.set(x, "startDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollHandler(value: OSDEvent[_] => Unit): Self = this.set("scrollHandler", js.Any.fromFunction1(value))
+    def setStartDisabledUndefined: Self = StObject.set(x, "startDisabled", js.undefined)
     
     @scala.inline
-    def deleteScrollHandler: Self = this.set("scrollHandler", js.undefined)
+    def setStopDelay(value: Double): Self = StObject.set(x, "stopDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDisabled(value: Boolean): Self = this.set("startDisabled", value.asInstanceOf[js.Any])
+    def setStopDelayUndefined: Self = StObject.set(x, "stopDelay", js.undefined)
     
     @scala.inline
-    def deleteStartDisabled: Self = this.set("startDisabled", js.undefined)
+    def setUserData(value: js.Object): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopDelay(value: Double): Self = this.set("stopDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopDelay: Self = this.set("stopDelay", js.undefined)
-    
-    @scala.inline
-    def setUserData(value: js.Object): Self = this.set("userData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserData: Self = this.set("userData", js.undefined)
+    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }
 }

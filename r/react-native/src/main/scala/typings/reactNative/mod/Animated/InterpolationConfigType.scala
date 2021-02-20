@@ -1,11 +1,12 @@
 package typings.reactNative.mod.Animated
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InterpolationConfigType extends js.Object {
+trait InterpolationConfigType extends StObject {
   
   var easing: js.UndefOr[js.Function1[/* input */ Double, Double]] = js.native
   
@@ -28,54 +29,42 @@ object InterpolationConfigType {
   }
   
   @scala.inline
-  implicit class InterpolationConfigTypeOps[Self <: InterpolationConfigType] (val x: Self) extends AnyVal {
+  implicit class InterpolationConfigTypeMutableBuilder[Self <: InterpolationConfigType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEasing(value: /* input */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtrapolate(value: ExtrapolateType): Self = StObject.set(x, "extrapolate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputRangeVarargs(value: Double*): Self = this.set("inputRange", js.Array(value :_*))
+    def setExtrapolateLeft(value: ExtrapolateType): Self = StObject.set(x, "extrapolateLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputRange(value: js.Array[Double]): Self = this.set("inputRange", value.asInstanceOf[js.Any])
+    def setExtrapolateLeftUndefined: Self = StObject.set(x, "extrapolateLeft", js.undefined)
     
     @scala.inline
-    def setOutputRangeVarargs(value: (Double | String)*): Self = this.set("outputRange", js.Array(value :_*))
+    def setExtrapolateRight(value: ExtrapolateType): Self = StObject.set(x, "extrapolateRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputRange(value: js.Array[Double | String]): Self = this.set("outputRange", value.asInstanceOf[js.Any])
+    def setExtrapolateRightUndefined: Self = StObject.set(x, "extrapolateRight", js.undefined)
     
     @scala.inline
-    def setEasing(value: /* input */ Double => Double): Self = this.set("easing", js.Any.fromFunction1(value))
+    def setExtrapolateUndefined: Self = StObject.set(x, "extrapolate", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setInputRange(value: js.Array[Double]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtrapolate(value: ExtrapolateType): Self = this.set("extrapolate", value.asInstanceOf[js.Any])
+    def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value :_*))
     
     @scala.inline
-    def deleteExtrapolate: Self = this.set("extrapolate", js.undefined)
+    def setOutputRange(value: js.Array[Double | String]): Self = StObject.set(x, "outputRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtrapolateLeft(value: ExtrapolateType): Self = this.set("extrapolateLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtrapolateLeft: Self = this.set("extrapolateLeft", js.undefined)
-    
-    @scala.inline
-    def setExtrapolateRight(value: ExtrapolateType): Self = this.set("extrapolateRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtrapolateRight: Self = this.set("extrapolateRight", js.undefined)
+    def setOutputRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "outputRange", js.Array(value :_*))
   }
 }

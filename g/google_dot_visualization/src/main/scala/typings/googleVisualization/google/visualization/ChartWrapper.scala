@@ -1,12 +1,13 @@
 package typings.googleVisualization.google.visualization
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartWrapper extends js.Object {
+trait ChartWrapper extends StObject {
   
   def draw(): Unit = js.native
   def draw(container_ref: HTMLElement): Unit = js.native

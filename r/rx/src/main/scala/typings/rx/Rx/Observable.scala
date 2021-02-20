@@ -6,6 +6,7 @@ import typings.rx.Set
 import typings.rx.anon.Instantiable
 import typings.rx.anon.InstantiableTPromise
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1536,7 +1537,7 @@ trait Observable[T] extends IObservable[T] {
   ): ConnectableObservable[T] = js.native
   def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double, window: Double): ConnectableObservable[T] = js.native
   def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double, window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
-  	// hack to catch first omitted parameter
+  // hack to catch first omitted parameter
   /**
     * Returns an observable sequence that is the result of invoking the selector on a connectable observable sequence that shares a single subscription to the underlying sequence replaying notifications subject to a maximum time length for the replay buffer.
     * This operator is a specialization of Multicast using a ReplaySubject.

@@ -1,11 +1,12 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICriteriaParts extends js.Object {
+trait ICriteriaParts extends StObject {
   
   var noDatabaseProperties: js.Array[String] = js.native
   
@@ -32,39 +33,27 @@ object ICriteriaParts {
   }
   
   @scala.inline
-  implicit class ICriteriaPartsOps[Self <: ICriteriaParts] (val x: Self) extends AnyVal {
+  implicit class ICriteriaPartsMutableBuilder[Self <: ICriteriaParts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoDatabaseProperties(value: js.Array[String]): Self = StObject.set(x, "noDatabaseProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoDatabasePropertiesVarargs(value: String*): Self = StObject.set(x, "noDatabaseProperties", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRawCriteriaObject(value: js.Any): Self = StObject.set(x, "rawCriteriaObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDatabasePropertiesVarargs(value: String*): Self = this.set("noDatabaseProperties", js.Array(value :_*))
+    def setSelectFromClause(value: Table[js.Any] => String): Self = StObject.set(x, "selectFromClause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoDatabaseProperties(value: js.Array[String]): Self = this.set("noDatabaseProperties", value.asInstanceOf[js.Any])
+    def setTables(value: js.Array[TableToSearchPart]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawCriteriaObject(value: js.Any): Self = this.set("rawCriteriaObject", value.asInstanceOf[js.Any])
+    def setTablesVarargs(value: TableToSearchPart*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
     @scala.inline
-    def setSelectFromClause(value: Table[js.Any] => String): Self = this.set("selectFromClause", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTablesVarargs(value: TableToSearchPart*): Self = this.set("tables", js.Array(value :_*))
-    
-    @scala.inline
-    def setTables(value: js.Array[TableToSearchPart]): Self = this.set("tables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhereClause(value: String): Self = this.set("whereClause", value.asInstanceOf[js.Any])
+    def setWhereClause(value: String): Self = StObject.set(x, "whereClause", value.asInstanceOf[js.Any])
   }
 }

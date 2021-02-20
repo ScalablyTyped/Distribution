@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoSelectorSettings extends js.Object {
+trait VideoSelectorSettings extends StObject {
   
   var VideoSelectorPid: js.UndefOr[typings.awsSdk.medialiveMod.VideoSelectorPid] = js.native
   
@@ -20,30 +21,18 @@ object VideoSelectorSettings {
   }
   
   @scala.inline
-  implicit class VideoSelectorSettingsOps[Self <: VideoSelectorSettings] (val x: Self) extends AnyVal {
+  implicit class VideoSelectorSettingsMutableBuilder[Self <: VideoSelectorSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVideoSelectorPid(value: VideoSelectorPid): Self = StObject.set(x, "VideoSelectorPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVideoSelectorPidUndefined: Self = StObject.set(x, "VideoSelectorPid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVideoSelectorProgramId(value: VideoSelectorProgramId): Self = StObject.set(x, "VideoSelectorProgramId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoSelectorPid(value: VideoSelectorPid): Self = this.set("VideoSelectorPid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoSelectorPid: Self = this.set("VideoSelectorPid", js.undefined)
-    
-    @scala.inline
-    def setVideoSelectorProgramId(value: VideoSelectorProgramId): Self = this.set("VideoSelectorProgramId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoSelectorProgramId: Self = this.set("VideoSelectorProgramId", js.undefined)
+    def setVideoSelectorProgramIdUndefined: Self = StObject.set(x, "VideoSelectorProgramId", js.undefined)
   }
 }

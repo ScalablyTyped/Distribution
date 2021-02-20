@@ -1,6 +1,7 @@
 package typings.asn1js.mod
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,42 +28,30 @@ object LocalBitStringValueBlockParams {
   }
   
   @scala.inline
-  implicit class LocalBitStringValueBlockParamsOps[Self <: LocalBitStringValueBlockParams] (val x: Self) extends AnyVal {
+  implicit class LocalBitStringValueBlockParamsMutableBuilder[Self <: LocalBitStringValueBlockParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsConstructed(value: scala.Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsConstructedUndefined: Self = StObject.set(x, "isConstructed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConstructed(value: scala.Boolean): Self = this.set("isConstructed", value.asInstanceOf[js.Any])
+    def setIsHexOnlyUndefined: Self = StObject.set(x, "isHexOnly", js.undefined)
     
     @scala.inline
-    def deleteIsConstructed: Self = this.set("isConstructed", js.undefined)
+    def setUnusedBits(value: Double): Self = StObject.set(x, "unusedBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHexOnly(value: scala.Boolean): Self = this.set("isHexOnly", value.asInstanceOf[js.Any])
+    def setUnusedBitsUndefined: Self = StObject.set(x, "unusedBits", js.undefined)
     
     @scala.inline
-    def deleteIsHexOnly: Self = this.set("isHexOnly", js.undefined)
+    def setValueHex(value: ArrayBuffer): Self = StObject.set(x, "valueHex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnusedBits(value: Double): Self = this.set("unusedBits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnusedBits: Self = this.set("unusedBits", js.undefined)
-    
-    @scala.inline
-    def setValueHex(value: ArrayBuffer): Self = this.set("valueHex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueHex: Self = this.set("valueHex", js.undefined)
+    def setValueHexUndefined: Self = StObject.set(x, "valueHex", js.undefined)
   }
 }

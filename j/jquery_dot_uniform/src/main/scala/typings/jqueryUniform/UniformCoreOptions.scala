@@ -1,11 +1,12 @@
 package typings.jqueryUniform
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UniformCoreOptions extends js.Object {
+trait UniformCoreOptions extends StObject {
   
   var activeClass: js.UndefOr[String] = js.native
   
@@ -70,180 +71,168 @@ object UniformCoreOptions {
   }
   
   @scala.inline
-  implicit class UniformCoreOptionsOps[Self <: UniformCoreOptions] (val x: Self) extends AnyVal {
+  implicit class UniformCoreOptionsMutableBuilder[Self <: UniformCoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
+    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
     @scala.inline
-    def deleteActiveClass: Self = this.set("activeClass", js.undefined)
+    def setButtonClass(value: String): Self = StObject.set(x, "buttonClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    def setButtonClassUndefined: Self = StObject.set(x, "buttonClass", js.undefined)
     
     @scala.inline
-    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    def setCheckboxClass(value: String): Self = StObject.set(x, "checkboxClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonClass(value: String): Self = this.set("buttonClass", value.asInstanceOf[js.Any])
+    def setCheckboxClassUndefined: Self = StObject.set(x, "checkboxClass", js.undefined)
     
     @scala.inline
-    def deleteButtonClass: Self = this.set("buttonClass", js.undefined)
+    def setCheckedClass(value: String): Self = StObject.set(x, "checkedClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxClass(value: String): Self = this.set("checkboxClass", value.asInstanceOf[js.Any])
+    def setCheckedClassUndefined: Self = StObject.set(x, "checkedClass", js.undefined)
     
     @scala.inline
-    def deleteCheckboxClass: Self = this.set("checkboxClass", js.undefined)
+    def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedClass(value: String): Self = this.set("checkedClass", value.asInstanceOf[js.Any])
+    def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
     
     @scala.inline
-    def deleteCheckedClass: Self = this.set("checkedClass", js.undefined)
+    def setEventNamespace(value: String): Self = StObject.set(x, "eventNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledClass(value: String): Self = this.set("disabledClass", value.asInstanceOf[js.Any])
+    def setEventNamespaceUndefined: Self = StObject.set(x, "eventNamespace", js.undefined)
     
     @scala.inline
-    def deleteDisabledClass: Self = this.set("disabledClass", js.undefined)
+    def setFileButtonClass(value: String): Self = StObject.set(x, "fileButtonClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventNamespace(value: String): Self = this.set("eventNamespace", value.asInstanceOf[js.Any])
+    def setFileButtonClassUndefined: Self = StObject.set(x, "fileButtonClass", js.undefined)
     
     @scala.inline
-    def deleteEventNamespace: Self = this.set("eventNamespace", js.undefined)
+    def setFileButtonHtml(value: String): Self = StObject.set(x, "fileButtonHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileButtonClass(value: String): Self = this.set("fileButtonClass", value.asInstanceOf[js.Any])
+    def setFileButtonHtmlUndefined: Self = StObject.set(x, "fileButtonHtml", js.undefined)
     
     @scala.inline
-    def deleteFileButtonClass: Self = this.set("fileButtonClass", js.undefined)
+    def setFileClass(value: String): Self = StObject.set(x, "fileClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileButtonHtml(value: String): Self = this.set("fileButtonHtml", value.asInstanceOf[js.Any])
+    def setFileClassUndefined: Self = StObject.set(x, "fileClass", js.undefined)
     
     @scala.inline
-    def deleteFileButtonHtml: Self = this.set("fileButtonHtml", js.undefined)
+    def setFileDefaultHtml(value: String): Self = StObject.set(x, "fileDefaultHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileClass(value: String): Self = this.set("fileClass", value.asInstanceOf[js.Any])
+    def setFileDefaultHtmlUndefined: Self = StObject.set(x, "fileDefaultHtml", js.undefined)
     
     @scala.inline
-    def deleteFileClass: Self = this.set("fileClass", js.undefined)
+    def setFilenameClass(value: String): Self = StObject.set(x, "filenameClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDefaultHtml(value: String): Self = this.set("fileDefaultHtml", value.asInstanceOf[js.Any])
+    def setFilenameClassUndefined: Self = StObject.set(x, "filenameClass", js.undefined)
     
     @scala.inline
-    def deleteFileDefaultHtml: Self = this.set("fileDefaultHtml", js.undefined)
+    def setFocusClass(value: String): Self = StObject.set(x, "focusClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilenameClass(value: String): Self = this.set("filenameClass", value.asInstanceOf[js.Any])
+    def setFocusClassUndefined: Self = StObject.set(x, "focusClass", js.undefined)
     
     @scala.inline
-    def deleteFilenameClass: Self = this.set("filenameClass", js.undefined)
+    def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusClass(value: String): Self = this.set("focusClass", value.asInstanceOf[js.Any])
+    def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
     
     @scala.inline
-    def deleteFocusClass: Self = this.set("focusClass", js.undefined)
+    def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverClass(value: String): Self = this.set("hoverClass", value.asInstanceOf[js.Any])
+    def setIdPrefixUndefined: Self = StObject.set(x, "idPrefix", js.undefined)
     
     @scala.inline
-    def deleteHoverClass: Self = this.set("hoverClass", js.undefined)
+    def setInputAddTypeAsClass(value: Boolean): Self = StObject.set(x, "inputAddTypeAsClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdPrefix(value: String): Self = this.set("idPrefix", value.asInstanceOf[js.Any])
+    def setInputAddTypeAsClassUndefined: Self = StObject.set(x, "inputAddTypeAsClass", js.undefined)
     
     @scala.inline
-    def deleteIdPrefix: Self = this.set("idPrefix", js.undefined)
+    def setInputClass(value: String): Self = StObject.set(x, "inputClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputAddTypeAsClass(value: Boolean): Self = this.set("inputAddTypeAsClass", value.asInstanceOf[js.Any])
+    def setInputClassUndefined: Self = StObject.set(x, "inputClass", js.undefined)
     
     @scala.inline
-    def deleteInputAddTypeAsClass: Self = this.set("inputAddTypeAsClass", js.undefined)
+    def setRadioClass(value: String): Self = StObject.set(x, "radioClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputClass(value: String): Self = this.set("inputClass", value.asInstanceOf[js.Any])
+    def setRadioClassUndefined: Self = StObject.set(x, "radioClass", js.undefined)
     
     @scala.inline
-    def deleteInputClass: Self = this.set("inputClass", js.undefined)
+    def setResetDefaultHtml(value: String): Self = StObject.set(x, "resetDefaultHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadioClass(value: String): Self = this.set("radioClass", value.asInstanceOf[js.Any])
+    def setResetDefaultHtmlUndefined: Self = StObject.set(x, "resetDefaultHtml", js.undefined)
     
     @scala.inline
-    def deleteRadioClass: Self = this.set("radioClass", js.undefined)
+    def setResetSelector(value: js.Any): Self = StObject.set(x, "resetSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetDefaultHtml(value: String): Self = this.set("resetDefaultHtml", value.asInstanceOf[js.Any])
+    def setResetSelectorUndefined: Self = StObject.set(x, "resetSelector", js.undefined)
     
     @scala.inline
-    def deleteResetDefaultHtml: Self = this.set("resetDefaultHtml", js.undefined)
+    def setSelectAutoWidth(value: Boolean): Self = StObject.set(x, "selectAutoWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetSelector(value: js.Any): Self = this.set("resetSelector", value.asInstanceOf[js.Any])
+    def setSelectAutoWidthUndefined: Self = StObject.set(x, "selectAutoWidth", js.undefined)
     
     @scala.inline
-    def deleteResetSelector: Self = this.set("resetSelector", js.undefined)
+    def setSelectClass(value: String): Self = StObject.set(x, "selectClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAutoWidth(value: Boolean): Self = this.set("selectAutoWidth", value.asInstanceOf[js.Any])
+    def setSelectClassUndefined: Self = StObject.set(x, "selectClass", js.undefined)
     
     @scala.inline
-    def deleteSelectAutoWidth: Self = this.set("selectAutoWidth", js.undefined)
+    def setSelectMultiClass(value: String): Self = StObject.set(x, "selectMultiClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectClass(value: String): Self = this.set("selectClass", value.asInstanceOf[js.Any])
+    def setSelectMultiClassUndefined: Self = StObject.set(x, "selectMultiClass", js.undefined)
     
     @scala.inline
-    def deleteSelectClass: Self = this.set("selectClass", js.undefined)
+    def setSubmitDefaultHtml(value: String): Self = StObject.set(x, "submitDefaultHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectMultiClass(value: String): Self = this.set("selectMultiClass", value.asInstanceOf[js.Any])
+    def setSubmitDefaultHtmlUndefined: Self = StObject.set(x, "submitDefaultHtml", js.undefined)
     
     @scala.inline
-    def deleteSelectMultiClass: Self = this.set("selectMultiClass", js.undefined)
+    def setTextareaClass(value: String): Self = StObject.set(x, "textareaClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmitDefaultHtml(value: String): Self = this.set("submitDefaultHtml", value.asInstanceOf[js.Any])
+    def setTextareaClassUndefined: Self = StObject.set(x, "textareaClass", js.undefined)
     
     @scala.inline
-    def deleteSubmitDefaultHtml: Self = this.set("submitDefaultHtml", js.undefined)
+    def setUseID(value: Boolean): Self = StObject.set(x, "useID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextareaClass(value: String): Self = this.set("textareaClass", value.asInstanceOf[js.Any])
+    def setUseIDUndefined: Self = StObject.set(x, "useID", js.undefined)
     
     @scala.inline
-    def deleteTextareaClass: Self = this.set("textareaClass", js.undefined)
+    def setWrapperClass(value: String): Self = StObject.set(x, "wrapperClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseID(value: Boolean): Self = this.set("useID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseID: Self = this.set("useID", js.undefined)
-    
-    @scala.inline
-    def setWrapperClass(value: String): Self = this.set("wrapperClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperClass: Self = this.set("wrapperClass", js.undefined)
+    def setWrapperClassUndefined: Self = StObject.set(x, "wrapperClass", js.undefined)
   }
 }

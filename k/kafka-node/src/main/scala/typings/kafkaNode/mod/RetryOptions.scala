@@ -1,11 +1,12 @@
 package typings.kafkaNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetryOptions extends js.Object {
+trait RetryOptions extends StObject {
   
   var factor: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object RetryOptions {
   }
   
   @scala.inline
-  implicit class RetryOptionsOps[Self <: RetryOptions] (val x: Self) extends AnyVal {
+  implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactor(value: Double): Self = this.set("factor", value.asInstanceOf[js.Any])
+    def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
     
     @scala.inline
-    def deleteFactor: Self = this.set("factor", js.undefined)
+    def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTimeout(value: Double): Self = this.set("maxTimeout", value.asInstanceOf[js.Any])
+    def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
     
     @scala.inline
-    def deleteMaxTimeout: Self = this.set("maxTimeout", js.undefined)
+    def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTimeout(value: Double): Self = this.set("minTimeout", value.asInstanceOf[js.Any])
+    def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
     
     @scala.inline
-    def deleteMinTimeout: Self = this.set("minTimeout", js.undefined)
+    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRandomize(value: Boolean): Self = this.set("randomize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRandomize: Self = this.set("randomize", js.undefined)
-    
-    @scala.inline
-    def setRetries(value: Double): Self = this.set("retries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetries: Self = this.set("retries", js.undefined)
+    def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
   }
 }

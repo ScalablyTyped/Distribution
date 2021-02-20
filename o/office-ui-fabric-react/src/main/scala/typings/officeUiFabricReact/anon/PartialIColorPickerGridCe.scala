@@ -10,13 +10,14 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/SwatchColorPicker/ColorPickerGridCell.types.IColorPickerGridCellProps> */
 @js.native
-trait PartialIColorPickerGridCe extends js.Object {
+trait PartialIColorPickerGridCe extends StObject {
   
   var borderWidth: js.UndefOr[Double] = js.native
   
@@ -77,153 +78,141 @@ object PartialIColorPickerGridCe {
   }
   
   @scala.inline
-  implicit class PartialIColorPickerGridCeOps[Self <: PartialIColorPickerGridCe] (val x: Self) extends AnyVal {
+  implicit class PartialIColorPickerGridCeMutableBuilder[Self <: PartialIColorPickerGridCe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircle(value: Boolean): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCircle: Self = this.set("circle", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIdPrefixUndefined: Self = StObject.set(x, "idPrefix", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdPrefix(value: String): Self = this.set("idPrefix", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteIdPrefix: Self = this.set("idPrefix", js.undefined)
+    def setItem(value: IColorCellProps): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: IColorCellProps): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setOnClick(value: /* item */ IColorCellProps => scala.Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setOnFocus(value: /* item */ IColorCellProps => scala.Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClick(value: /* item */ IColorCellProps => scala.Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnHover(value: /* item */ js.UndefOr[IColorCellProps] => scala.Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFocus(value: /* item */ IColorCellProps => scala.Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setOnKeyDown(value: /* ev */ KeyboardEvent[HTMLButtonElement] => scala.Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnHover(value: /* item */ js.UndefOr[IColorCellProps] => scala.Unit): Self = this.set("onHover", js.Any.fromFunction1(value))
+    def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
     @scala.inline
-    def deleteOnHover: Self = this.set("onHover", js.undefined)
+    def setOnMouseEnter(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Boolean): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnKeyDown(value: /* ev */ KeyboardEvent[HTMLButtonElement] => scala.Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    def setOnMouseLeave(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => scala.Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseEnter(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Boolean): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     @scala.inline
-    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    def setOnMouseMove(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Boolean): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseLeave(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => scala.Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     @scala.inline
-    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    def setOnWheel(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => scala.Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseMove(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Boolean): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
     @scala.inline
-    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnWheel(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => scala.Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    def setStyles(value: IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setStylesFunction1(value: IColorPickerGridCellStyleProps => DeepPartial[IColorPickerGridCellStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def setStylesFunction1(value: IColorPickerGridCellStyleProps => DeepPartial[IColorPickerGridCellStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

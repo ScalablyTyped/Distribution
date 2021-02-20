@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GenericBookmarkEntry...
   */
 @js.native
-trait IGenericBookmarkEntry extends js.Object {
+trait IGenericBookmarkEntry extends StObject {
   
   /**
     * Information about the bookmark.
@@ -29,24 +30,12 @@ object IGenericBookmarkEntry {
   }
   
   @scala.inline
-  implicit class IGenericBookmarkEntryOps[Self <: IGenericBookmarkEntry] (val x: Self) extends AnyVal {
+  implicit class IGenericBookmarkEntryMutableBuilder[Self <: IGenericBookmarkEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQBookmark(value: INxBookmark): Self = StObject.set(x, "qBookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQBookmark(value: INxBookmark): Self = this.set("qBookmark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQProperties(value: IGenericBookmarkProperties): Self = this.set("qProperties", value.asInstanceOf[js.Any])
+    def setQProperties(value: IGenericBookmarkProperties): Self = StObject.set(x, "qProperties", value.asInstanceOf[js.Any])
   }
 }

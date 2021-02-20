@@ -1,16 +1,16 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.dropdownTypesMod.IDropdownOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Dropdown/utilities/DropdownSizePosCache", JSImport.Namespace)
-@js.native
-object dropdownSizePosCacheMod extends js.Object {
+object dropdownSizePosCacheMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Dropdown/utilities/DropdownSizePosCache", "DropdownSizePosCache")
   @js.native
-  class DropdownSizePosCache () extends js.Object {
+  class DropdownSizePosCache () extends StObject {
     
     var _cachedOptions: js.Any = js.native
     

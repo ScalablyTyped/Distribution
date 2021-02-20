@@ -1,6 +1,7 @@
 package typings.titanium.Titanium
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,51 +52,39 @@ object WatchSessionEventMap {
   }
   
   @scala.inline
-  implicit class WatchSessionEventMapOps[Self <: WatchSessionEventMap] (val x: Self) extends AnyVal {
+  implicit class WatchSessionEventMapMutableBuilder[Self <: WatchSessionEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationCompleted(value: WatchSessionActivationCompletedEvent): Self = StObject.set(x, "activationCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeactivate(value: WatchSessionDeactivateEvent): Self = StObject.set(x, "deactivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinishfiletransfer(value: WatchSessionFinishfiletransferEvent): Self = StObject.set(x, "finishfiletransfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationCompleted(value: WatchSessionActivationCompletedEvent): Self = this.set("activationCompleted", value.asInstanceOf[js.Any])
+    def setFinishuserinfotransfer(value: WatchSessionFinishuserinfotransferEvent): Self = StObject.set(x, "finishuserinfotransfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeactivate(value: WatchSessionDeactivateEvent): Self = this.set("deactivate", value.asInstanceOf[js.Any])
+    def setInactive(value: WatchSessionInactiveEvent): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishfiletransfer(value: WatchSessionFinishfiletransferEvent): Self = this.set("finishfiletransfer", value.asInstanceOf[js.Any])
+    def setReachabilitychanged(value: WatchSessionReachabilitychangedEvent): Self = StObject.set(x, "reachabilitychanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishuserinfotransfer(value: WatchSessionFinishuserinfotransferEvent): Self = this.set("finishuserinfotransfer", value.asInstanceOf[js.Any])
+    def setReceiveapplicationcontext(value: WatchSessionReceiveapplicationcontextEvent): Self = StObject.set(x, "receiveapplicationcontext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactive(value: WatchSessionInactiveEvent): Self = this.set("inactive", value.asInstanceOf[js.Any])
+    def setReceivefile(value: WatchSessionReceivefileEvent): Self = StObject.set(x, "receivefile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReachabilitychanged(value: WatchSessionReachabilitychangedEvent): Self = this.set("reachabilitychanged", value.asInstanceOf[js.Any])
+    def setReceivemessage(value: WatchSessionReceivemessageEvent): Self = StObject.set(x, "receivemessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveapplicationcontext(value: WatchSessionReceiveapplicationcontextEvent): Self = this.set("receiveapplicationcontext", value.asInstanceOf[js.Any])
+    def setReceiveuserinfo(value: WatchSessionReceiveuserinfoEvent): Self = StObject.set(x, "receiveuserinfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceivefile(value: WatchSessionReceivefileEvent): Self = this.set("receivefile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceivemessage(value: WatchSessionReceivemessageEvent): Self = this.set("receivemessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceiveuserinfo(value: WatchSessionReceiveuserinfoEvent): Self = this.set("receiveuserinfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWatchstatechanged(value: WatchSessionWatchstatechangedEvent): Self = this.set("watchstatechanged", value.asInstanceOf[js.Any])
+    def setWatchstatechanged(value: WatchSessionWatchstatechangedEvent): Self = StObject.set(x, "watchstatechanged", value.asInstanceOf[js.Any])
   }
 }

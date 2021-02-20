@@ -1,13 +1,14 @@
 package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
 import typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.CreateVoiceModelConstants.Language
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createVoiceModel` operation. */
 @js.native
-trait CreateVoiceModelParams extends js.Object {
+trait CreateVoiceModelParams extends StObject {
   
   /** A description of the new custom voice model. Specifying a description is recommended. */
   var description: js.UndefOr[String] = js.native
@@ -31,45 +32,33 @@ object CreateVoiceModelParams {
   }
   
   @scala.inline
-  implicit class CreateVoiceModelParamsOps[Self <: CreateVoiceModelParams] (val x: Self) extends AnyVal {
+  implicit class CreateVoiceModelParamsMutableBuilder[Self <: CreateVoiceModelParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLanguage(value: Language | String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: Language | String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

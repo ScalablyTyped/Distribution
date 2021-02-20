@@ -1,5 +1,6 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object SjclCipherEncryptParams {
   }
   
   @scala.inline
-  implicit class SjclCipherEncryptParamsOps[Self <: SjclCipherEncryptParams] (val x: Self) extends AnyVal {
+  implicit class SjclCipherEncryptParamsMutableBuilder[Self <: SjclCipherEncryptParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIv(value: BitArray_): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIvVarargs(value: Double*): Self = StObject.set(x, "iv", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIvVarargs(value: Double*): Self = this.set("iv", js.Array(value :_*))
-    
-    @scala.inline
-    def setIv(value: BitArray_): Self = this.set("iv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaltVarargs(value: Double*): Self = this.set("salt", js.Array(value :_*))
-    
-    @scala.inline
-    def setSalt(value: BitArray_): Self = this.set("salt", value.asInstanceOf[js.Any])
+    def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
   }
 }

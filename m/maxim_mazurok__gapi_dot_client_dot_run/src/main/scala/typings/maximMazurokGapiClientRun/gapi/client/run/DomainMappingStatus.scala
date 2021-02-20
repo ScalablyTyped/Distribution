@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainMappingStatus extends js.Object {
+trait DomainMappingStatus extends StObject {
   
   /** Array of observed DomainMappingConditions, indicating the current state of the DomainMapping. */
   var conditions: js.UndefOr[js.Array[GoogleCloudRunV1Condition]] = js.native
@@ -37,54 +38,42 @@ object DomainMappingStatus {
   }
   
   @scala.inline
-  implicit class DomainMappingStatusOps[Self <: DomainMappingStatus] (val x: Self) extends AnyVal {
+  implicit class DomainMappingStatusMutableBuilder[Self <: DomainMappingStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[GoogleCloudRunV1Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: GoogleCloudRunV1Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: GoogleCloudRunV1Condition*): Self = this.set("conditions", js.Array(value :_*))
+    def setMappedRouteName(value: String): Self = StObject.set(x, "mappedRouteName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[GoogleCloudRunV1Condition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setMappedRouteNameUndefined: Self = StObject.set(x, "mappedRouteName", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMappedRouteName(value: String): Self = this.set("mappedRouteName", value.asInstanceOf[js.Any])
+    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
     @scala.inline
-    def deleteMappedRouteName: Self = this.set("mappedRouteName", js.undefined)
+    def setResourceRecords(value: js.Array[ResourceRecord]): Self = StObject.set(x, "resourceRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
+    def setResourceRecordsUndefined: Self = StObject.set(x, "resourceRecords", js.undefined)
     
     @scala.inline
-    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
+    def setResourceRecordsVarargs(value: ResourceRecord*): Self = StObject.set(x, "resourceRecords", js.Array(value :_*))
     
     @scala.inline
-    def setResourceRecordsVarargs(value: ResourceRecord*): Self = this.set("resourceRecords", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRecords(value: js.Array[ResourceRecord]): Self = this.set("resourceRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceRecords: Self = this.set("resourceRecords", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

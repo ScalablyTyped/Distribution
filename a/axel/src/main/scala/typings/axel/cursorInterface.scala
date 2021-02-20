@@ -1,11 +1,12 @@
 package typings.axel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait cursorInterface extends js.Object {
+trait cursorInterface extends StObject {
   
   def off(): Unit = js.native
   
@@ -24,30 +25,18 @@ object cursorInterface {
   }
   
   @scala.inline
-  implicit class cursorInterfaceOps[Self <: cursorInterface] (val x: Self) extends AnyVal {
+  implicit class cursorInterfaceMutableBuilder[Self <: cursorInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOff(value: () => Unit): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOn(value: () => Unit): Self = StObject.set(x, "on", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOff(value: () => Unit): Self = this.set("off", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOn(value: () => Unit): Self = this.set("on", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRestore(value: () => Unit): Self = this.set("restore", js.Any.fromFunction0(value))
+    def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
   }
 }

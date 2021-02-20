@@ -1,5 +1,6 @@
 package typings.cytoscape.mod.Css
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cytoscape.cytoscapeStrings.uppercase
   - typings.cytoscape.cytoscapeStrings.lowercase
 */
-trait TextTranformation extends js.Object
+trait TextTranformation extends StObject
 object TextTranformation {
   
   @scala.inline

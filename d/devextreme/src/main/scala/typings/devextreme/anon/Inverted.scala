@@ -5,12 +5,13 @@ import typings.devextreme.devextremeStrings.datetime
 import typings.devextreme.devextremeStrings.logarithmic
 import typings.devextreme.devextremeStrings.numeric
 import typings.devextreme.devextremeStrings.string_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Inverted extends js.Object {
+trait Inverted extends StObject {
   
   var inverted: js.UndefOr[Boolean] = js.native
   
@@ -33,54 +34,42 @@ object Inverted {
   }
   
   @scala.inline
-  implicit class InvertedOps[Self <: Inverted] (val x: Self) extends AnyVal {
+  implicit class InvertedMutableBuilder[Self <: Inverted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogarithmBase(value: Double): Self = StObject.set(x, "logarithmBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    def setLogarithmBaseUndefined: Self = StObject.set(x, "logarithmBase", js.undefined)
     
     @scala.inline
-    def deleteInverted: Self = this.set("inverted", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogarithmBase(value: Double): Self = this.set("logarithmBase", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteLogarithmBase: Self = this.set("logarithmBase", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setType(value: continuous | logarithmic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setValueType(value: datetime | numeric | string_): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: continuous | logarithmic): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValueType(value: datetime | numeric | string_): Self = this.set("valueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueType: Self = this.set("valueType", js.undefined)
+    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

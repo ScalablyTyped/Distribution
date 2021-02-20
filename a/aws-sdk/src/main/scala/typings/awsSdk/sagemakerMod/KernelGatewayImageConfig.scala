@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KernelGatewayImageConfig extends js.Object {
+trait KernelGatewayImageConfig extends StObject {
   
   /**
     * The Amazon Elastic File System (EFS) storage configuration for a SageMaker image.
@@ -26,30 +27,18 @@ object KernelGatewayImageConfig {
   }
   
   @scala.inline
-  implicit class KernelGatewayImageConfigOps[Self <: KernelGatewayImageConfig] (val x: Self) extends AnyVal {
+  implicit class KernelGatewayImageConfigMutableBuilder[Self <: KernelGatewayImageConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileSystemConfig(value: FileSystemConfig): Self = StObject.set(x, "FileSystemConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSystemConfigUndefined: Self = StObject.set(x, "FileSystemConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKernelSpecs(value: KernelSpecs): Self = StObject.set(x, "KernelSpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelSpecsVarargs(value: KernelSpec*): Self = this.set("KernelSpecs", js.Array(value :_*))
-    
-    @scala.inline
-    def setKernelSpecs(value: KernelSpecs): Self = this.set("KernelSpecs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileSystemConfig(value: FileSystemConfig): Self = this.set("FileSystemConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileSystemConfig: Self = this.set("FileSystemConfig", js.undefined)
+    def setKernelSpecsVarargs(value: KernelSpec*): Self = StObject.set(x, "KernelSpecs", js.Array(value :_*))
   }
 }

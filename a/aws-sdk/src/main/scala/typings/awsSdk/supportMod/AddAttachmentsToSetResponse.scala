@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddAttachmentsToSetResponse extends js.Object {
+trait AddAttachmentsToSetResponse extends StObject {
   
   /**
     * The ID of the attachment set. If an attachmentSetId was not specified, a new attachment set is created, and the ID of the set is returned in the response. If an attachmentSetId was specified, the attachments are added to the specified set, if it exists.
@@ -26,30 +27,18 @@ object AddAttachmentsToSetResponse {
   }
   
   @scala.inline
-  implicit class AddAttachmentsToSetResponseOps[Self <: AddAttachmentsToSetResponse] (val x: Self) extends AnyVal {
+  implicit class AddAttachmentsToSetResponseMutableBuilder[Self <: AddAttachmentsToSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiryTime(value: ExpiryTime): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentSetId(value: AttachmentSetId): Self = this.set("attachmentSetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachmentSetId: Self = this.set("attachmentSetId", js.undefined)
-    
-    @scala.inline
-    def setExpiryTime(value: ExpiryTime): Self = this.set("expiryTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiryTime: Self = this.set("expiryTime", js.undefined)
+    def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
   }
 }

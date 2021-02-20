@@ -1,11 +1,12 @@
 package typings.awsSdk.detectiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateGraphResponse extends js.Object {
+trait CreateGraphResponse extends StObject {
   
   /**
     * The ARN of the new behavior graph.
@@ -21,24 +22,12 @@ object CreateGraphResponse {
   }
   
   @scala.inline
-  implicit class CreateGraphResponseOps[Self <: CreateGraphResponse] (val x: Self) extends AnyVal {
+  implicit class CreateGraphResponseMutableBuilder[Self <: CreateGraphResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGraphArn(value: GraphArn): Self = this.set("GraphArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGraphArn: Self = this.set("GraphArn", js.undefined)
+    def setGraphArnUndefined: Self = StObject.set(x, "GraphArn", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.reactBigCalendar.anon
 
 import typings.react.mod.ComponentType
 import typings.reactBigCalendar.mod.ViewStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Agenda extends js.Object {
+trait Agenda extends StObject {
   
   var agenda: js.UndefOr[Boolean | (ComponentType[_] with ViewStatic)] = js.native
   
@@ -28,48 +29,36 @@ object Agenda {
   }
   
   @scala.inline
-  implicit class AgendaOps[Self <: Agenda] (val x: Self) extends AnyVal {
+  implicit class AgendaMutableBuilder[Self <: Agenda] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgenda(value: Boolean | (ComponentType[_] with ViewStatic)): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgendaUndefined: Self = StObject.set(x, "agenda", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDay(value: Boolean | (ComponentType[_] with ViewStatic)): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgenda(value: Boolean | (ComponentType[_] with ViewStatic)): Self = this.set("agenda", value.asInstanceOf[js.Any])
+    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def deleteAgenda: Self = this.set("agenda", js.undefined)
+    def setMonth(value: Boolean | (ComponentType[_] with ViewStatic)): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: Boolean | (ComponentType[_] with ViewStatic)): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
     @scala.inline
-    def deleteDay: Self = this.set("day", js.undefined)
+    def setWeek(value: Boolean | (ComponentType[_] with ViewStatic)): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: Boolean | (ComponentType[_] with ViewStatic)): Self = this.set("month", value.asInstanceOf[js.Any])
+    def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
     
     @scala.inline
-    def deleteMonth: Self = this.set("month", js.undefined)
+    def setWork_week(value: Boolean | (ComponentType[_] with ViewStatic)): Self = StObject.set(x, "work_week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeek(value: Boolean | (ComponentType[_] with ViewStatic)): Self = this.set("week", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeek: Self = this.set("week", js.undefined)
-    
-    @scala.inline
-    def setWork_week(value: Boolean | (ComponentType[_] with ViewStatic)): Self = this.set("work_week", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWork_week: Self = this.set("work_week", js.undefined)
+    def setWork_weekUndefined: Self = StObject.set(x, "work_week", js.undefined)
   }
 }

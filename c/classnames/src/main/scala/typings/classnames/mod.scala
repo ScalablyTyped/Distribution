@@ -1,11 +1,20 @@
 package typings.classnames
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.classnames.typesMod.ClassNamesExport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("classnames", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[ClassNamesExport]
+object mod extends Shortcut {
+  
+  @JSImport("classnames", JSImport.Namespace)
+  @js.native
+  val ^ : ClassNamesExport = js.native
+  
+  type _To = ClassNamesExport
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: ClassNamesExport = ^
+}

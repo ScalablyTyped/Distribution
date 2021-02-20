@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.detailsListTypesMod
 
 import typings.uifabricMergeStyles.istyleMod.IStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDetailsListStyles extends js.Object {
+trait IDetailsListStyles extends StObject {
   
   var contentWrapper: IStyle = js.native
   
@@ -25,54 +26,42 @@ object IDetailsListStyles {
   }
   
   @scala.inline
-  implicit class IDetailsListStylesOps[Self <: IDetailsListStyles] (val x: Self) extends AnyVal {
+  implicit class IDetailsListStylesMutableBuilder[Self <: IDetailsListStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentWrapper(value: IStyle): Self = StObject.set(x, "contentWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentWrapperNull: Self = StObject.set(x, "contentWrapper", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentWrapperUndefined: Self = StObject.set(x, "contentWrapper", js.undefined)
     
     @scala.inline
-    def setContentWrapper(value: IStyle): Self = this.set("contentWrapper", value.asInstanceOf[js.Any])
+    def setFocusZone(value: IStyle): Self = StObject.set(x, "focusZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentWrapper: Self = this.set("contentWrapper", js.undefined)
+    def setFocusZoneNull: Self = StObject.set(x, "focusZone", null)
     
     @scala.inline
-    def setContentWrapperNull: Self = this.set("contentWrapper", null)
+    def setFocusZoneUndefined: Self = StObject.set(x, "focusZone", js.undefined)
     
     @scala.inline
-    def setFocusZone(value: IStyle): Self = this.set("focusZone", value.asInstanceOf[js.Any])
+    def setHeaderWrapper(value: IStyle): Self = StObject.set(x, "headerWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFocusZone: Self = this.set("focusZone", js.undefined)
+    def setHeaderWrapperNull: Self = StObject.set(x, "headerWrapper", null)
     
     @scala.inline
-    def setFocusZoneNull: Self = this.set("focusZone", null)
+    def setHeaderWrapperUndefined: Self = StObject.set(x, "headerWrapper", js.undefined)
     
     @scala.inline
-    def setHeaderWrapper(value: IStyle): Self = this.set("headerWrapper", value.asInstanceOf[js.Any])
+    def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderWrapper: Self = this.set("headerWrapper", js.undefined)
+    def setRootNull: Self = StObject.set(x, "root", null)
     
     @scala.inline
-    def setHeaderWrapperNull: Self = this.set("headerWrapper", null)
-    
-    @scala.inline
-    def setRoot(value: IStyle): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setRootNull: Self = this.set("root", null)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

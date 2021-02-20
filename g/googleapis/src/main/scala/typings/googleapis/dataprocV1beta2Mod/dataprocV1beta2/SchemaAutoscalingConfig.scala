@@ -1,5 +1,6 @@
 package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Autoscaling Policy config associated with the cluster.
   */
 @js.native
-trait SchemaAutoscalingConfig extends js.Object {
+trait SchemaAutoscalingConfig extends StObject {
   
   /**
     * Optional. The autoscaling policy used by the cluster.Only resource names
@@ -28,24 +29,12 @@ object SchemaAutoscalingConfig {
   }
   
   @scala.inline
-  implicit class SchemaAutoscalingConfigOps[Self <: SchemaAutoscalingConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaAutoscalingConfigMutableBuilder[Self <: SchemaAutoscalingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyUri(value: String): Self = StObject.set(x, "policyUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyUri(value: String): Self = this.set("policyUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyUri: Self = this.set("policyUri", js.undefined)
+    def setPolicyUriUndefined: Self = StObject.set(x, "policyUri", js.undefined)
   }
 }

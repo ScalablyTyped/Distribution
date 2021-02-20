@@ -1,5 +1,6 @@
 package typings.fortawesomeFontawesomeSvgCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`180`
   - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreNumbers.`270`
 */
-trait RotateProp extends js.Object
+trait RotateProp extends StObject
 object RotateProp {
   
   @scala.inline

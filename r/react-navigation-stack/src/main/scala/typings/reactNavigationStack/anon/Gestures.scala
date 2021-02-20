@@ -6,12 +6,13 @@ import typings.reactNavigationStack.cardStackMod.GestureValues
 import typings.reactNavigationStack.vendorTypesMod.Scene
 import typings.reactNavigationStack.vendorTypesMod.StackDescriptorMap
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gestures extends js.Object {
+trait Gestures extends StObject {
   
   var descriptors: StackDescriptorMap = js.native
   
@@ -38,39 +39,27 @@ object Gestures {
   }
   
   @scala.inline
-  implicit class GesturesOps[Self <: Gestures] (val x: Self) extends AnyVal {
+  implicit class GesturesMutableBuilder[Self <: Gestures] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGestures(value: GestureValues): Self = StObject.set(x, "gestures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderHeights(value: Record[String, Double]): Self = StObject.set(x, "headerHeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptors(value: StackDescriptorMap): Self = this.set("descriptors", value.asInstanceOf[js.Any])
+    def setRoutes(value: js.Array[NavigationRoute[NavigationParams]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGestures(value: GestureValues): Self = this.set("gestures", value.asInstanceOf[js.Any])
+    def setRoutesVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
     @scala.inline
-    def setHeaderHeights(value: Record[String, Double]): Self = this.set("headerHeights", value.asInstanceOf[js.Any])
+    def setScenes(value: js.Array[Scene[NavigationRoute[NavigationParams]]]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutesVarargs(value: NavigationRoute[NavigationParams]*): Self = this.set("routes", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoutes(value: js.Array[NavigationRoute[NavigationParams]]): Self = this.set("routes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScenesVarargs(value: Scene[NavigationRoute[NavigationParams]]*): Self = this.set("scenes", js.Array(value :_*))
-    
-    @scala.inline
-    def setScenes(value: js.Array[Scene[NavigationRoute[NavigationParams]]]): Self = this.set("scenes", value.asInstanceOf[js.Any])
+    def setScenesVarargs(value: Scene[NavigationRoute[NavigationParams]]*): Self = StObject.set(x, "scenes", js.Array(value :_*))
   }
 }

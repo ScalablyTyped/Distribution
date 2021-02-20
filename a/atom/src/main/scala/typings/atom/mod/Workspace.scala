@@ -4,12 +4,13 @@ import typings.atom.anon.AutoFocus
 import typings.atom.anon.FilePath
 import typings.atom.anon.Priority
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Workspace extends js.Object {
+trait Workspace extends StObject {
   
   /** Make the next pane active. */
   def activateNextPane(): Boolean = js.native

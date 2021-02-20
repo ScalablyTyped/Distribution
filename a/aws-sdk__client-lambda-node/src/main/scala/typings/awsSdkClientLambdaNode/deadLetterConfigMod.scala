@@ -1,13 +1,13 @@
 package typings.awsSdkClientLambdaNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/model/_DeadLetterConfig", JSImport.Namespace)
-@js.native
-object deadLetterConfigMod extends js.Object {
+object deadLetterConfigMod {
   
-  @JSName("_DeadLetterConfig")
+  @JSImport("@aws-sdk/client-lambda-node/model/_DeadLetterConfig", "_DeadLetterConfig")
+  @js.native
   val DeadLetterConfig: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

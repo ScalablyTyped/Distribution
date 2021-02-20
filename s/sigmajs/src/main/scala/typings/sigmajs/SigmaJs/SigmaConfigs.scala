@@ -2,12 +2,13 @@ package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SigmaConfigs extends js.Object {
+trait SigmaConfigs extends StObject {
   
   var container: js.UndefOr[Element] = js.native
   
@@ -28,51 +29,39 @@ object SigmaConfigs {
   }
   
   @scala.inline
-  implicit class SigmaConfigsOps[Self <: SigmaConfigs] (val x: Self) extends AnyVal {
+  implicit class SigmaConfigsMutableBuilder[Self <: SigmaConfigs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraph(value: GraphData): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: Element): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraph(value: GraphData): Self = this.set("graph", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGraph: Self = this.set("graph", js.undefined)
+    def setRenderers(value: js.Array[Renderer]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRenderersVarargs(value: Renderer*): Self = StObject.set(x, "renderers", js.Array(value :_*))
     
     @scala.inline
-    def setRenderersVarargs(value: Renderer*): Self = this.set("renderers", js.Array(value :_*))
+    def setSettings(value: StringDictionary[js.Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderers(value: js.Array[Renderer]): Self = this.set("renderers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderers: Self = this.set("renderers", js.undefined)
-    
-    @scala.inline
-    def setSettings(value: StringDictionary[js.Any]): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
   }
 }

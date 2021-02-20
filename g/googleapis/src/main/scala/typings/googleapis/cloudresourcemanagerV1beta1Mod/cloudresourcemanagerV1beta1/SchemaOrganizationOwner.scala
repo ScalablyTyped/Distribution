@@ -1,5 +1,6 @@
 package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * will be deleted.
   */
 @js.native
-trait SchemaOrganizationOwner extends js.Object {
+trait SchemaOrganizationOwner extends StObject {
   
   /**
     * The G Suite customer id used in the Directory API.
@@ -27,24 +28,12 @@ object SchemaOrganizationOwner {
   }
   
   @scala.inline
-  implicit class SchemaOrganizationOwnerOps[Self <: SchemaOrganizationOwner] (val x: Self) extends AnyVal {
+  implicit class SchemaOrganizationOwnerMutableBuilder[Self <: SchemaOrganizationOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryCustomerId(value: String): Self = StObject.set(x, "directoryCustomerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirectoryCustomerId(value: String): Self = this.set("directoryCustomerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectoryCustomerId: Self = this.set("directoryCustomerId", js.undefined)
+    def setDirectoryCustomerIdUndefined: Self = StObject.set(x, "directoryCustomerId", js.undefined)
   }
 }

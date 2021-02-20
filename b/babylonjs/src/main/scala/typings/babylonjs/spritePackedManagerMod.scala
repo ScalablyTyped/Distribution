@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.spriteManagerMod.SpriteManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Sprites/spritePackedManager", JSImport.Namespace)
-@js.native
-object spritePackedManagerMod extends js.Object {
+object spritePackedManagerMod {
   
+  @JSImport("babylonjs/Sprites/spritePackedManager", "SpritePackedManager")
   @js.native
   class SpritePackedManager protected () extends SpriteManager {
     /**

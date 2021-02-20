@@ -11,6 +11,7 @@ import typings.react.mod.GetDerivedStateFromProps
 import typings.react.mod.ValidationMap
 import typings.react.mod.WeakValidationMap
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

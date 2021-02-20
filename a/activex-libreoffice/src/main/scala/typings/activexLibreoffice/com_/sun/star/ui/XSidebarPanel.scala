@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Optional interface of sidebar panels. */
 @js.native
-trait XSidebarPanel extends js.Object {
+trait XSidebarPanel extends StObject {
   
   /** Minimal possible width of this panel. */
   val MinimalWidth: Double = js.native
@@ -32,27 +33,15 @@ object XSidebarPanel {
   }
   
   @scala.inline
-  implicit class XSidebarPanelOps[Self <: XSidebarPanel] (val x: Self) extends AnyVal {
+  implicit class XSidebarPanelMutableBuilder[Self <: XSidebarPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHeightForWidth(value: Double => LayoutSize): Self = StObject.set(x, "getHeightForWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMinimalWidth(value: () => Double): Self = StObject.set(x, "getMinimalWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMinimalWidth(value: Double): Self = this.set("MinimalWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetHeightForWidth(value: Double => LayoutSize): Self = this.set("getHeightForWidth", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetMinimalWidth(value: () => Double): Self = this.set("getMinimalWidth", js.Any.fromFunction0(value))
+    def setMinimalWidth(value: Double): Self = StObject.set(x, "MinimalWidth", value.asInstanceOf[js.Any])
   }
 }

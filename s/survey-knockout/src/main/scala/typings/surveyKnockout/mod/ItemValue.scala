@@ -1,6 +1,7 @@
 package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,22 +57,40 @@ class ItemValue protected ()
   var visibleIf: String = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "ItemValue")
-@js.native
-object ItemValue extends js.Object {
+object ItemValue {
   
-  var Separator: String = js.native
+  @JSImport("survey-knockout", "ItemValue")
+  @js.native
+  val ^ : js.Any = js.native
   
+  @JSImport("survey-knockout", "ItemValue.Separator")
+  @js.native
+  def Separator: String = js.native
+  @scala.inline
+  def Separator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Separator")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "ItemValue.createArray")
+  @js.native
   def createArray(locOwner: ILocalizableOwner): js.Array[ItemValue] = js.native
   
+  @JSImport("survey-knockout", "ItemValue.getData")
+  @js.native
   def getData(items: js.Array[ItemValue]): js.Any = js.native
   
+  @JSImport("survey-knockout", "ItemValue.getItemByValue")
+  @js.native
   def getItemByValue(items: js.Array[ItemValue], `val`: js.Any): ItemValue = js.native
   
+  @JSImport("survey-knockout", "ItemValue.getTextOrHtmlByValue")
+  @js.native
   def getTextOrHtmlByValue(items: js.Array[ItemValue], `val`: js.Any): String = js.native
   
+  @JSImport("survey-knockout", "ItemValue.locStrsChanged")
+  @js.native
   def locStrsChanged(items: js.Array[ItemValue]): Unit = js.native
   
+  @JSImport("survey-knockout", "ItemValue.runConditionsForItems")
+  @js.native
   def runConditionsForItems(
     items: js.Array[ItemValue],
     filteredItems: js.Array[ItemValue],
@@ -79,6 +98,8 @@ object ItemValue extends js.Object {
     values: js.Any,
     properties: js.Any
   ): Boolean = js.native
+  @JSImport("survey-knockout", "ItemValue.runConditionsForItems")
+  @js.native
   def runConditionsForItems(
     items: js.Array[ItemValue],
     filteredItems: js.Array[ItemValue],
@@ -88,7 +109,11 @@ object ItemValue extends js.Object {
     useItemExpression: Boolean
   ): Boolean = js.native
   
+  @JSImport("survey-knockout", "ItemValue.runEnabledConditionsForItems")
+  @js.native
   def runEnabledConditionsForItems(items: js.Array[ItemValue], runner: ConditionRunner, values: js.Any, properties: js.Any): Boolean = js.native
+  @JSImport("survey-knockout", "ItemValue.runEnabledConditionsForItems")
+  @js.native
   def runEnabledConditionsForItems(
     items: js.Array[ItemValue],
     runner: ConditionRunner,
@@ -97,7 +122,11 @@ object ItemValue extends js.Object {
     onItemCallBack: js.Function1[/* item */ this.type, Boolean]
   ): Boolean = js.native
   
+  @JSImport("survey-knockout", "ItemValue.setData")
+  @js.native
   def setData(items: js.Array[ItemValue], values: js.Array[_]): Unit = js.native
   
+  @JSImport("survey-knockout", "ItemValue.setupArray")
+  @js.native
   def setupArray(items: js.Array[ItemValue], locOwner: ILocalizableOwner): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.jqueryTimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimePickerMinutes extends js.Object {
+trait TimePickerMinutes extends StObject {
   
   /** last displayed minute */
   var ends: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object TimePickerMinutes {
   }
   
   @scala.inline
-  implicit class TimePickerMinutesOps[Self <: TimePickerMinutes] (val x: Self) extends AnyVal {
+  implicit class TimePickerMinutesMutableBuilder[Self <: TimePickerMinutes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnds(value: Double): Self = StObject.set(x, "ends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndsUndefined: Self = StObject.set(x, "ends", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnds(value: Double): Self = this.set("ends", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteEnds: Self = this.set("ends", js.undefined)
+    def setStarts(value: Double): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
-    
-    @scala.inline
-    def setStarts(value: Double): Self = this.set("starts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarts: Self = this.set("starts", js.undefined)
+    def setStartsUndefined: Self = StObject.set(x, "starts", js.undefined)
   }
 }

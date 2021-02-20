@@ -1,11 +1,12 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scale_ extends js.Object {
+trait Scale_ extends StObject {
   
   var sx: Double = js.native
   
@@ -20,24 +21,12 @@ object Scale_ {
   }
   
   @scala.inline
-  implicit class Scale_Ops[Self <: Scale_] (val x: Self) extends AnyVal {
+  implicit class Scale_MutableBuilder[Self <: Scale_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSx(value: Double): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSx(value: Double): Self = this.set("sx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSy(value: Double): Self = this.set("sy", value.asInstanceOf[js.Any])
+    def setSy(value: Double): Self = StObject.set(x, "sy", value.asInstanceOf[js.Any])
   }
 }

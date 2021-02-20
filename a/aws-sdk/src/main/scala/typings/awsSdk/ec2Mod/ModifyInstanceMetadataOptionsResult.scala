@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyInstanceMetadataOptionsResult extends js.Object {
+trait ModifyInstanceMetadataOptionsResult extends StObject {
   
   /**
     * The ID of the instance.
@@ -26,30 +27,18 @@ object ModifyInstanceMetadataOptionsResult {
   }
   
   @scala.inline
-  implicit class ModifyInstanceMetadataOptionsResultOps[Self <: ModifyInstanceMetadataOptionsResult] (val x: Self) extends AnyVal {
+  implicit class ModifyInstanceMetadataOptionsResultMutableBuilder[Self <: ModifyInstanceMetadataOptionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceMetadataOptions(value: InstanceMetadataOptionsResponse): Self = StObject.set(x, "InstanceMetadataOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
-    
-    @scala.inline
-    def setInstanceMetadataOptions(value: InstanceMetadataOptionsResponse): Self = this.set("InstanceMetadataOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceMetadataOptions: Self = this.set("InstanceMetadataOptions", js.undefined)
+    def setInstanceMetadataOptionsUndefined: Self = StObject.set(x, "InstanceMetadataOptions", js.undefined)
   }
 }

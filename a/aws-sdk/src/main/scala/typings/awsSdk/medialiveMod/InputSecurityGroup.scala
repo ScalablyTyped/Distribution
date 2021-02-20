@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputSecurityGroup extends js.Object {
+trait InputSecurityGroup extends StObject {
   
   /**
     * Unique ARN of Input Security Group
@@ -46,60 +47,48 @@ object InputSecurityGroup {
   }
   
   @scala.inline
-  implicit class InputSecurityGroupOps[Self <: InputSecurityGroup] (val x: Self) extends AnyVal {
+  implicit class InputSecurityGroupMutableBuilder[Self <: InputSecurityGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setInputs(value: listOfString): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setInputsVarargs(value: string*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: string*): Self = this.set("Inputs", js.Array(value :_*))
+    def setState(value: InputSecurityGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: listOfString): Self = this.set("Inputs", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("Inputs", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: InputSecurityGroupState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setWhitelistRules(value: listOfInputWhitelistRule): Self = StObject.set(x, "WhitelistRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setWhitelistRulesUndefined: Self = StObject.set(x, "WhitelistRules", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setWhitelistRulesVarargs(value: InputWhitelistRule*): Self = this.set("WhitelistRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhitelistRules(value: listOfInputWhitelistRule): Self = this.set("WhitelistRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelistRules: Self = this.set("WhitelistRules", js.undefined)
+    def setWhitelistRulesVarargs(value: InputWhitelistRule*): Self = StObject.set(x, "WhitelistRules", js.Array(value :_*))
   }
 }

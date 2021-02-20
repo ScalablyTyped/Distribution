@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceContext extends js.Object {
+trait SourceContext extends StObject {
   
   /** A SourceContext referring to a revision in a cloud repo. */
   var cloudRepo: js.UndefOr[CloudRepoSourceContext] = js.native
@@ -28,42 +29,30 @@ object SourceContext {
   }
   
   @scala.inline
-  implicit class SourceContextOps[Self <: SourceContext] (val x: Self) extends AnyVal {
+  implicit class SourceContextMutableBuilder[Self <: SourceContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudRepo(value: CloudRepoSourceContext): Self = StObject.set(x, "cloudRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudRepoUndefined: Self = StObject.set(x, "cloudRepo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudWorkspace(value: CloudWorkspaceSourceContext): Self = StObject.set(x, "cloudWorkspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudRepo(value: CloudRepoSourceContext): Self = this.set("cloudRepo", value.asInstanceOf[js.Any])
+    def setCloudWorkspaceUndefined: Self = StObject.set(x, "cloudWorkspace", js.undefined)
     
     @scala.inline
-    def deleteCloudRepo: Self = this.set("cloudRepo", js.undefined)
+    def setGerrit(value: GerritSourceContext): Self = StObject.set(x, "gerrit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWorkspace(value: CloudWorkspaceSourceContext): Self = this.set("cloudWorkspace", value.asInstanceOf[js.Any])
+    def setGerritUndefined: Self = StObject.set(x, "gerrit", js.undefined)
     
     @scala.inline
-    def deleteCloudWorkspace: Self = this.set("cloudWorkspace", js.undefined)
+    def setGit(value: GitSourceContext): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGerrit(value: GerritSourceContext): Self = this.set("gerrit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGerrit: Self = this.set("gerrit", js.undefined)
-    
-    @scala.inline
-    def setGit(value: GitSourceContext): Self = this.set("git", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGit: Self = this.set("git", js.undefined)
+    def setGitUndefined: Self = StObject.set(x, "git", js.undefined)
   }
 }

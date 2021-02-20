@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.draw
 
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,46 +61,34 @@ object ISegmentTree {
   }
   
   @scala.inline
-  implicit class ISegmentTreeOps[Self <: ISegmentTree] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ISegmentTreeMutableBuilder[Self <: ISegmentTree] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setGetAggregation(
       value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStep */ js.UndefOr[Double]) => _
-    ): Self = this.set("getAggregation", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "getAggregation", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGetAggregation: Self = this.set("getAggregation", js.undefined)
+    def setGetAggregationUndefined: Self = StObject.set(x, "getAggregation", js.undefined)
     
     @scala.inline
-    def setGetStrategy(value: () => String): Self = this.set("getStrategy", js.Any.fromFunction0(value))
+    def setGetStrategy(value: () => String): Self = StObject.set(x, "getStrategy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetStrategy: Self = this.set("getStrategy", js.undefined)
+    def setGetStrategyUndefined: Self = StObject.set(x, "getStrategy", js.undefined)
     
     @scala.inline
     def setSetData(
       value: (/* dataX */ js.UndefOr[Double], /* dataOpen */ js.UndefOr[Double], /* dataHigh */ js.UndefOr[Double], /* dataLow */ js.UndefOr[Double], /* dataClose */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("setData", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "setData", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteSetData: Self = this.set("setData", js.undefined)
+    def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
     
     @scala.inline
-    def setSetStrategy(value: /* strategy */ js.UndefOr[String] => Unit): Self = this.set("setStrategy", js.Any.fromFunction1(value))
+    def setSetStrategy(value: /* strategy */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStrategy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetStrategy: Self = this.set("setStrategy", js.undefined)
+    def setSetStrategyUndefined: Self = StObject.set(x, "setStrategy", js.undefined)
   }
 }

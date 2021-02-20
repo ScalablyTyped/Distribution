@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridMessages extends js.Object {
+trait GridMessages extends StObject {
   
   var commands: js.UndefOr[GridMessagesCommands] = js.native
   
@@ -22,36 +23,24 @@ object GridMessages {
   }
   
   @scala.inline
-  implicit class GridMessagesOps[Self <: GridMessages] (val x: Self) extends AnyVal {
+  implicit class GridMessagesMutableBuilder[Self <: GridMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommands(value: GridMessagesCommands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandCollapseColumnHeader(value: String): Self = StObject.set(x, "expandCollapseColumnHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommands(value: GridMessagesCommands): Self = this.set("commands", value.asInstanceOf[js.Any])
+    def setExpandCollapseColumnHeaderUndefined: Self = StObject.set(x, "expandCollapseColumnHeader", js.undefined)
     
     @scala.inline
-    def deleteCommands: Self = this.set("commands", js.undefined)
+    def setNoRecords(value: String): Self = StObject.set(x, "noRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandCollapseColumnHeader(value: String): Self = this.set("expandCollapseColumnHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpandCollapseColumnHeader: Self = this.set("expandCollapseColumnHeader", js.undefined)
-    
-    @scala.inline
-    def setNoRecords(value: String): Self = this.set("noRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoRecords: Self = this.set("noRecords", js.undefined)
+    def setNoRecordsUndefined: Self = StObject.set(x, "noRecords", js.undefined)
   }
 }

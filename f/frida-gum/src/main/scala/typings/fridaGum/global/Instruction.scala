@@ -1,6 +1,7 @@
 package typings.fridaGum.global
 
 import typings.fridaGum.NativePointerValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Instruction ()
   extends typings.fridaGum.Instruction
-/* static members */
-@JSGlobal("Instruction")
-@js.native
-object Instruction extends js.Object {
+object Instruction {
   
   /**
     * Parses the instruction at the `target` address in memory.
@@ -24,5 +22,8 @@ object Instruction extends js.Object {
     *
     * @param target Memory location containing instruction to parse.
     */
+  /* static member */
+  @JSGlobal("Instruction.parse")
+  @js.native
   def parse(target: NativePointerValue): typings.fridaGum.Instruction | typings.fridaGum.X86Instruction | typings.fridaGum.ArmInstruction | typings.fridaGum.Arm64Instruction | typings.fridaGum.MipsInstruction = js.native
 }

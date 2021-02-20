@@ -5,6 +5,7 @@ import typings.stripe.mod.IDataOptions
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.invoices.IInvoice
 import typings.stripe.mod.invoices.IInvoiceCreationOptions
@@ -17,13 +18,15 @@ import typings.stripe.mod.invoices.IInvoiceListUpcomingLineItemsOptions
 import typings.stripe.mod.invoices.IInvoicePayOptions
 import typings.stripe.mod.invoices.IInvoiceUpcomingOptions
 import typings.stripe.mod.invoices.IInvoiceUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Invoices")
 @js.native
-class Invoices () extends StripeResource {
+class Invoices protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def create(data: IInvoiceCreationOptions): js.Promise[IInvoice] = js.native
   /**

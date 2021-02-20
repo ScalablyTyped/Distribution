@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaddingProps[TLength] extends js.Object {
+trait PaddingProps[TLength] extends StObject {
   
   val p: js.UndefOr[
     ResponsiveValue[
@@ -28,44 +29,32 @@ object PaddingProps {
   }
   
   @scala.inline
-  implicit class PaddingPropsOps[Self <: PaddingProps[_], TLength] (val x: Self with PaddingProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPVarargs(value: js.Any*): Self = this.set("p", js.Array(value :_*))
+  implicit class PaddingPropsMutableBuilder[Self <: PaddingProps[_], TLength] (val x: Self with PaddingProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setP(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
         ]
-    ): Self = this.set("p", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def setPaddingVarargs(value: js.Any*): Self = this.set("padding", js.Array(value :_*))
+    def setPVarargs(value: js.Any*): Self = StObject.set(x, "p", js.Array(value :_*))
     
     @scala.inline
     def setPadding(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
         ]
-    ): Self = this.set("padding", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    @scala.inline
+    def setPaddingVarargs(value: js.Any*): Self = StObject.set(x, "padding", js.Array(value :_*))
   }
 }

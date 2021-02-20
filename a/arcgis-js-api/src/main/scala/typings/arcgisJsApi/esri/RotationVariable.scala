@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.heading
 import typings.arcgisJsApi.arcgisJsApiStrings.roll
 import typings.arcgisJsApi.arcgisJsApiStrings.rotation
 import typings.arcgisJsApi.arcgisJsApiStrings.tilt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

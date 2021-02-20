@@ -2,14 +2,14 @@ package typings.webpackStatsPlugin
 
 import typings.webpackStatsPlugin.statsWriterPluginMod.Options
 import typings.webpackStatsPlugin.statsWriterPluginMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack-stats-plugin", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("webpack-stats-plugin", "StatsWriterPlugin")
   @js.native
   class StatsWriterPlugin () extends ^ {
     def this(opts: Options) = this()

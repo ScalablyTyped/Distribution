@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeocoderResult extends js.Object {
+trait GeocoderResult extends StObject {
   
   var address: String = js.native
   
@@ -32,36 +33,24 @@ object GeocoderResult {
   }
   
   @scala.inline
-  implicit class GeocoderResultOps[Self <: GeocoderResult] (val x: Self) extends AnyVal {
+  implicit class GeocoderResultMutableBuilder[Self <: GeocoderResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressComponents(value: AddressComponent): Self = StObject.set(x, "addressComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressComponents(value: AddressComponent): Self = this.set("addressComponents", value.asInstanceOf[js.Any])
+    def setSurroundingPoi(value: js.Array[LocalResultPoi]): Self = StObject.set(x, "surroundingPoi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusiness(value: String): Self = this.set("business", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoint(value: Point): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurroundingPoiVarargs(value: LocalResultPoi*): Self = this.set("surroundingPoi", js.Array(value :_*))
-    
-    @scala.inline
-    def setSurroundingPoi(value: js.Array[LocalResultPoi]): Self = this.set("surroundingPoi", value.asInstanceOf[js.Any])
+    def setSurroundingPoiVarargs(value: LocalResultPoi*): Self = StObject.set(x, "surroundingPoi", js.Array(value :_*))
   }
 }

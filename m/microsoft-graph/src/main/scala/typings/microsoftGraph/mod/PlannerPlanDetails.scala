@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,36 +27,24 @@ object PlannerPlanDetails {
   }
   
   @scala.inline
-  implicit class PlannerPlanDetailsOps[Self <: PlannerPlanDetails] (val x: Self) extends AnyVal {
+  implicit class PlannerPlanDetailsMutableBuilder[Self <: PlannerPlanDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryDescriptions(value: NullableOption[PlannerCategoryDescriptions]): Self = StObject.set(x, "categoryDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryDescriptionsNull: Self = StObject.set(x, "categoryDescriptions", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryDescriptionsUndefined: Self = StObject.set(x, "categoryDescriptions", js.undefined)
     
     @scala.inline
-    def setCategoryDescriptions(value: NullableOption[PlannerCategoryDescriptions]): Self = this.set("categoryDescriptions", value.asInstanceOf[js.Any])
+    def setSharedWith(value: NullableOption[PlannerUserIds]): Self = StObject.set(x, "sharedWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategoryDescriptions: Self = this.set("categoryDescriptions", js.undefined)
+    def setSharedWithNull: Self = StObject.set(x, "sharedWith", null)
     
     @scala.inline
-    def setCategoryDescriptionsNull: Self = this.set("categoryDescriptions", null)
-    
-    @scala.inline
-    def setSharedWith(value: NullableOption[PlannerUserIds]): Self = this.set("sharedWith", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharedWith: Self = this.set("sharedWith", js.undefined)
-    
-    @scala.inline
-    def setSharedWithNull: Self = this.set("sharedWith", null)
+    def setSharedWithUndefined: Self = StObject.set(x, "sharedWith", js.undefined)
   }
 }

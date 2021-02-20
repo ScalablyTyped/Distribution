@@ -2,6 +2,7 @@ package typings.googlepay.google.payments.api
 
 import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Optional billing address parameters for the returned billing address.
   */
 @js.native
-trait BillingAddressParameters extends js.Object {
+trait BillingAddressParameters extends StObject {
   
   /**
     * Billing address format.
@@ -47,27 +48,15 @@ object BillingAddressParameters {
   }
   
   @scala.inline
-  implicit class BillingAddressParametersOps[Self <: BillingAddressParameters] (val x: Self) extends AnyVal {
+  implicit class BillingAddressParametersMutableBuilder[Self <: BillingAddressParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: BillingAddressFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPhoneNumberRequired(value: `false` | `true`): Self = StObject.set(x, "phoneNumberRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormat(value: BillingAddressFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhoneNumberRequired(value: `false` | `true`): Self = this.set("phoneNumberRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumberRequired: Self = this.set("phoneNumberRequired", js.undefined)
+    def setPhoneNumberRequiredUndefined: Self = StObject.set(x, "phoneNumberRequired", js.undefined)
   }
 }

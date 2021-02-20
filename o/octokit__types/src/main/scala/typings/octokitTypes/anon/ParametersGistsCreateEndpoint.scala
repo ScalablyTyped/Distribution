@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.GistsCreateEndpoint
 import typings.octokitTypes.endpointsMod.GistsCreateRequestOptions
 import typings.octokitTypes.endpointsMod.GistsCreateResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersGistsCreateEndpoint extends js.Object {
+trait ParametersGistsCreateEndpoint extends StObject {
   
   var parameters: GistsCreateEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersGistsCreateEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersGistsCreateEndpointOps[Self <: ParametersGistsCreateEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersGistsCreateEndpointMutableBuilder[Self <: ParametersGistsCreateEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: GistsCreateEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: GistsCreateRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: GistsCreateEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: GistsCreateRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[GistsCreateResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[GistsCreateResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

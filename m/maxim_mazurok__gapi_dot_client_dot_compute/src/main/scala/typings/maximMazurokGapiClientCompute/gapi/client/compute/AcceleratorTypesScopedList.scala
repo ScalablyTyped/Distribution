@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcceleratorTypesScopedList extends js.Object {
+trait AcceleratorTypesScopedList extends StObject {
   
   /** [Output Only] A list of accelerator types contained in this scope. */
   var acceleratorTypes: js.UndefOr[js.Array[AcceleratorType]] = js.native
@@ -23,33 +24,21 @@ object AcceleratorTypesScopedList {
   }
   
   @scala.inline
-  implicit class AcceleratorTypesScopedListOps[Self <: AcceleratorTypesScopedList] (val x: Self) extends AnyVal {
+  implicit class AcceleratorTypesScopedListMutableBuilder[Self <: AcceleratorTypesScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorTypes(value: js.Array[AcceleratorType]): Self = StObject.set(x, "acceleratorTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorTypesUndefined: Self = StObject.set(x, "acceleratorTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceleratorTypesVarargs(value: AcceleratorType*): Self = StObject.set(x, "acceleratorTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAcceleratorTypesVarargs(value: AcceleratorType*): Self = this.set("acceleratorTypes", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorTypes(value: js.Array[AcceleratorType]): Self = this.set("acceleratorTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceleratorTypes: Self = this.set("acceleratorTypes", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

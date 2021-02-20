@@ -7,12 +7,13 @@ import typings.stripeV3.stripeV3Strings.fr
 import typings.stripeV3.stripeV3Strings.it
 import typings.stripeV3.stripeV3Strings.nl
 import typings.stripeV3.stripeV3Strings.pl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Country extends js.Object {
+trait Country extends StObject {
   
   var country: String = js.native
   
@@ -27,27 +28,15 @@ object Country {
   }
   
   @scala.inline
-  implicit class CountryOps[Self <: Country] (val x: Self) extends AnyVal {
+  implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreferred_language(value: de | en | es | it | fr | nl | pl): Self = StObject.set(x, "preferred_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferred_language(value: de | en | es | it | fr | nl | pl): Self = this.set("preferred_language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferred_language: Self = this.set("preferred_language", js.undefined)
+    def setPreferred_languageUndefined: Self = StObject.set(x, "preferred_language", js.undefined)
   }
 }

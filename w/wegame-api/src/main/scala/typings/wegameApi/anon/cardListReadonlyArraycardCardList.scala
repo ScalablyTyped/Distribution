@@ -1,12 +1,13 @@
 package typings.wegameApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  cardList :std.ReadonlyArray<{  cardId :string,   cardExt :string}>} & wegame-api.wx.types.CallbacksWithType<{  cardList :std.ReadonlyArray<{  code :string,   cardId :string,   cardExt :string,   isSuccess :boolean}>}> */
 @js.native
-trait cardListReadonlyArraycardCardList extends js.Object {
+trait cardListReadonlyArraycardCardList extends StObject {
   
   /**
     * 需要添加的卡券列表
@@ -28,42 +29,30 @@ object cardListReadonlyArraycardCardList {
   }
   
   @scala.inline
-  implicit class cardListReadonlyArraycardCardListOps[Self <: cardListReadonlyArraycardCardList] (val x: Self) extends AnyVal {
+  implicit class cardListReadonlyArraycardCardListMutableBuilder[Self <: cardListReadonlyArraycardCardList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardList(value: js.Array[CardExt]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardListVarargs(value: CardExt*): Self = StObject.set(x, "cardList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCardListVarargs(value: CardExt*): Self = this.set("cardList", js.Array(value :_*))
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def setCardList(value: js.Array[CardExt]): Self = this.set("cardList", value.asInstanceOf[js.Any])
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setSuccess(value: /* res */ CardList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ CardList => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

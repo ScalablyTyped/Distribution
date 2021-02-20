@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapMarkerTooltipAnimationClose extends js.Object {
+trait MapMarkerTooltipAnimationClose extends StObject {
   
   var duration: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object MapMarkerTooltipAnimationClose {
   }
   
   @scala.inline
-  implicit class MapMarkerTooltipAnimationCloseOps[Self <: MapMarkerTooltipAnimationClose] (val x: Self) extends AnyVal {
+  implicit class MapMarkerTooltipAnimationCloseMutableBuilder[Self <: MapMarkerTooltipAnimationClose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffects(value: String): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setEffects(value: String): Self = this.set("effects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEffects: Self = this.set("effects", js.undefined)
+    def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
   }
 }

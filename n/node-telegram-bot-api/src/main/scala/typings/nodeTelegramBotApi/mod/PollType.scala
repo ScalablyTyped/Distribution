@@ -1,5 +1,6 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.regular
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.quiz
 */
-trait PollType extends js.Object
+trait PollType extends StObject
 object PollType {
   
   @scala.inline

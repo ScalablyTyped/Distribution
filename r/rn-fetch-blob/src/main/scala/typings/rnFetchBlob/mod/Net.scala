@@ -1,11 +1,12 @@
 package typings.rnFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Net extends js.Object {
+trait Net extends StObject {
   
   /**
     * Get cookie according to the given url.

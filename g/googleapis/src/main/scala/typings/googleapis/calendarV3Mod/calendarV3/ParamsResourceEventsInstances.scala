@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,90 +99,78 @@ object ParamsResourceEventsInstances {
   }
   
   @scala.inline
-  implicit class ParamsResourceEventsInstancesOps[Self <: ParamsResourceEventsInstances] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceEventsInstancesMutableBuilder[Self <: ParamsResourceEventsInstances] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysIncludeEmail(value: Boolean): Self = StObject.set(x, "alwaysIncludeEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysIncludeEmailUndefined: Self = StObject.set(x, "alwaysIncludeEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysIncludeEmail(value: Boolean): Self = this.set("alwaysIncludeEmail", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAlwaysIncludeEmail: Self = this.set("alwaysIncludeEmail", js.undefined)
+    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarId(value: String): Self = this.set("calendarId", value.asInstanceOf[js.Any])
+    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
     @scala.inline
-    def deleteCalendarId: Self = this.set("calendarId", js.undefined)
+    def setMaxAttendees(value: Double): Self = StObject.set(x, "maxAttendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    def setMaxAttendeesUndefined: Self = StObject.set(x, "maxAttendees", js.undefined)
     
     @scala.inline
-    def deleteEventId: Self = this.set("eventId", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAttendees(value: Double): Self = this.set("maxAttendees", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteMaxAttendees: Self = this.set("maxAttendees", js.undefined)
+    def setOriginalStart(value: String): Self = StObject.set(x, "originalStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setOriginalStartUndefined: Self = StObject.set(x, "originalStart", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalStart(value: String): Self = this.set("originalStart", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteOriginalStart: Self = this.set("originalStart", js.undefined)
+    def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDeleted(value: Boolean): Self = this.set("showDeleted", value.asInstanceOf[js.Any])
+    def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
     
     @scala.inline
-    def deleteShowDeleted: Self = this.set("showDeleted", js.undefined)
+    def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeMax(value: String): Self = this.set("timeMax", value.asInstanceOf[js.Any])
+    def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
     
     @scala.inline
-    def deleteTimeMax: Self = this.set("timeMax", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeMin(value: String): Self = this.set("timeMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeMin: Self = this.set("timeMin", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.mongodb.mod
 
 import typings.std.PromiseConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,102 +89,90 @@ object DbCreateOptions {
   }
   
   @scala.inline
-  implicit class DbCreateOptionsOps[Self <: DbCreateOptions] (val x: Self) extends AnyVal {
+  implicit class DbCreateOptionsMutableBuilder[Self <: DbCreateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthSource(value: String): Self = StObject.set(x, "authSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthSourceUndefined: Self = StObject.set(x, "authSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferMaxEntries(value: scala.Double): Self = StObject.set(x, "bufferMaxEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthSource(value: String): Self = this.set("authSource", value.asInstanceOf[js.Any])
+    def setBufferMaxEntriesUndefined: Self = StObject.set(x, "bufferMaxEntries", js.undefined)
     
     @scala.inline
-    def deleteAuthSource: Self = this.set("authSource", js.undefined)
+    def setForceServerObjectId(value: Boolean): Self = StObject.set(x, "forceServerObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferMaxEntries(value: scala.Double): Self = this.set("bufferMaxEntries", value.asInstanceOf[js.Any])
+    def setForceServerObjectIdUndefined: Self = StObject.set(x, "forceServerObjectId", js.undefined)
     
     @scala.inline
-    def deleteBufferMaxEntries: Self = this.set("bufferMaxEntries", js.undefined)
+    def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceServerObjectId(value: Boolean): Self = this.set("forceServerObjectId", value.asInstanceOf[js.Any])
+    def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
     
     @scala.inline
-    def deleteForceServerObjectId: Self = this.set("forceServerObjectId", js.undefined)
+    def setNative_parser(value: Boolean): Self = StObject.set(x, "native_parser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreUndefined(value: Boolean): Self = this.set("ignoreUndefined", value.asInstanceOf[js.Any])
+    def setNative_parserUndefined: Self = StObject.set(x, "native_parser", js.undefined)
     
     @scala.inline
-    def deleteIgnoreUndefined: Self = this.set("ignoreUndefined", js.undefined)
+    def setPkFactory(value: js.Object): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNative_parser(value: Boolean): Self = this.set("native_parser", value.asInstanceOf[js.Any])
+    def setPkFactoryUndefined: Self = StObject.set(x, "pkFactory", js.undefined)
     
     @scala.inline
-    def deleteNative_parser: Self = this.set("native_parser", js.undefined)
+    def setPromiseLibrary(value: PromiseConstructor): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPkFactory(value: js.Object): Self = this.set("pkFactory", value.asInstanceOf[js.Any])
+    def setPromiseLibraryUndefined: Self = StObject.set(x, "promiseLibrary", js.undefined)
     
     @scala.inline
-    def deletePkFactory: Self = this.set("pkFactory", js.undefined)
+    def setPromoteBuffers(value: Boolean): Self = StObject.set(x, "promoteBuffers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromiseLibrary(value: PromiseConstructor): Self = this.set("promiseLibrary", value.asInstanceOf[js.Any])
+    def setPromoteBuffersUndefined: Self = StObject.set(x, "promoteBuffers", js.undefined)
     
     @scala.inline
-    def deletePromiseLibrary: Self = this.set("promiseLibrary", js.undefined)
+    def setPromoteLongs(value: Boolean): Self = StObject.set(x, "promoteLongs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromoteBuffers(value: Boolean): Self = this.set("promoteBuffers", value.asInstanceOf[js.Any])
+    def setPromoteLongsUndefined: Self = StObject.set(x, "promoteLongs", js.undefined)
     
     @scala.inline
-    def deletePromoteBuffers: Self = this.set("promoteBuffers", js.undefined)
+    def setPromoteValues(value: Boolean): Self = StObject.set(x, "promoteValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromoteLongs(value: Boolean): Self = this.set("promoteLongs", value.asInstanceOf[js.Any])
+    def setPromoteValuesUndefined: Self = StObject.set(x, "promoteValues", js.undefined)
     
     @scala.inline
-    def deletePromoteLongs: Self = this.set("promoteLongs", js.undefined)
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromoteValues(value: Boolean): Self = this.set("promoteValues", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deletePromoteValues: Self = this.set("promoteValues", js.undefined)
+    def setReadConcern(value: ReadConcern | String): Self = StObject.set(x, "readConcern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setReadConcernUndefined: Self = StObject.set(x, "readConcern", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadConcern(value: ReadConcern | String): Self = this.set("readConcern", value.asInstanceOf[js.Any])
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
     @scala.inline
-    def deleteReadConcern: Self = this.set("readConcern", js.undefined)
+    def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
-    
-    @scala.inline
-    def setSerializeFunctions(value: Boolean): Self = this.set("serializeFunctions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSerializeFunctions: Self = this.set("serializeFunctions", js.undefined)
+    def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
   }
 }

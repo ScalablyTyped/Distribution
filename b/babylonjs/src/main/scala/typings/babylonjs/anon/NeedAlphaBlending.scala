@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NeedAlphaBlending extends js.Object {
+trait NeedAlphaBlending extends StObject {
   
   var needAlphaBlending: Boolean = js.native
   
@@ -29,30 +30,18 @@ object NeedAlphaBlending {
   }
   
   @scala.inline
-  implicit class NeedAlphaBlendingOps[Self <: NeedAlphaBlending] (val x: Self) extends AnyVal {
+  implicit class NeedAlphaBlendingMutableBuilder[Self <: NeedAlphaBlending] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNeedAlphaBlending(value: Boolean): Self = StObject.set(x, "needAlphaBlending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNeedAlphaTesting(value: Boolean): Self = StObject.set(x, "needAlphaTesting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNeedWorldViewMatrix(value: Boolean): Self = StObject.set(x, "needWorldViewMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedAlphaBlending(value: Boolean): Self = this.set("needAlphaBlending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNeedAlphaTesting(value: Boolean): Self = this.set("needAlphaTesting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNeedWorldViewMatrix(value: Boolean): Self = this.set("needWorldViewMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNeedWorldViewProjectionMatrix(value: Boolean): Self = this.set("needWorldViewProjectionMatrix", value.asInstanceOf[js.Any])
+    def setNeedWorldViewProjectionMatrix(value: Boolean): Self = StObject.set(x, "needWorldViewProjectionMatrix", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.fill
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSFill extends js.Object {
+trait SketchMSFill extends StObject {
   
   var _class: fill = js.native
   
@@ -43,51 +44,39 @@ object SketchMSFill {
   }
   
   @scala.inline
-  implicit class SketchMSFillOps[Self <: SketchMSFill] (val x: Self) extends AnyVal {
+  implicit class SketchMSFillMutableBuilder[Self <: SketchMSFill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillType(value: SketchMSFillTypeEnum): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: fill): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setImage(value: SketchMSImageDataReference): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillType(value: SketchMSFillTypeEnum): Self = this.set("fillType", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoiseIndex(value: Double): Self = this.set("noiseIndex", value.asInstanceOf[js.Any])
+    def setNoiseIndex(value: Double): Self = StObject.set(x, "noiseIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoiseIntensity(value: Double): Self = this.set("noiseIntensity", value.asInstanceOf[js.Any])
+    def setNoiseIntensity(value: Double): Self = StObject.set(x, "noiseIntensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternFillType(value: SketchMSPatternFillTypeEnum): Self = this.set("patternFillType", value.asInstanceOf[js.Any])
+    def setPatternFillType(value: SketchMSPatternFillTypeEnum): Self = StObject.set(x, "patternFillType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternTileScale(value: Double): Self = this.set("patternTileScale", value.asInstanceOf[js.Any])
+    def setPatternTileScale(value: Double): Self = StObject.set(x, "patternTileScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: SketchMSColor): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
-    
-    @scala.inline
-    def setImage(value: SketchMSImageDataReference): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def set_class(value: fill): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

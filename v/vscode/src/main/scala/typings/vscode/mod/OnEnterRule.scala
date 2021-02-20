@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnEnterRule extends js.Object {
+trait OnEnterRule extends StObject {
   
   /**
     * The action to execute.
@@ -32,30 +33,18 @@ object OnEnterRule {
   }
   
   @scala.inline
-  implicit class OnEnterRuleOps[Self <: OnEnterRule] (val x: Self) extends AnyVal {
+  implicit class OnEnterRuleMutableBuilder[Self <: OnEnterRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: EnterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterText(value: RegExp): Self = StObject.set(x, "afterText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterTextUndefined: Self = StObject.set(x, "afterText", js.undefined)
     
     @scala.inline
-    def setAction(value: EnterAction): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBeforeText(value: RegExp): Self = this.set("beforeText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAfterText(value: RegExp): Self = this.set("afterText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAfterText: Self = this.set("afterText", js.undefined)
+    def setBeforeText(value: RegExp): Self = StObject.set(x, "beforeText", value.asInstanceOf[js.Any])
   }
 }

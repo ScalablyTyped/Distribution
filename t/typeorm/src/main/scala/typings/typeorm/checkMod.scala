@@ -2,14 +2,17 @@ package typings.typeorm
 
 import typings.std.ClassDecorator
 import typings.std.PropertyDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/decorator/Check", JSImport.Namespace)
-@js.native
-object checkMod extends js.Object {
+object checkMod {
   
+  @JSImport("typeorm/browser/decorator/Check", "Check")
+  @js.native
   def Check(expression: String): ClassDecorator with PropertyDecorator = js.native
+  @JSImport("typeorm/browser/decorator/Check", "Check")
+  @js.native
   def Check(name: String, expression: String): ClassDecorator with PropertyDecorator = js.native
 }

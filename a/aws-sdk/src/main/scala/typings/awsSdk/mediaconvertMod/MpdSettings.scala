@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MpdSettings extends js.Object {
+trait MpdSettings extends StObject {
   
   /**
     * Use this setting only in DASH output groups that include sidecar TTML or IMSC captions.  You specify sidecar captions in a separate output from your audio and video. Choose Raw (RAW) for captions in a single XML file in a raw container. Choose Fragmented MPEG-4 (FRAGMENTED_MP4) for captions in XML format contained within fragmented MP4 files. This set of fragmented MP4 files is separate from your video and audio fragmented MP4 files.
@@ -31,36 +32,24 @@ object MpdSettings {
   }
   
   @scala.inline
-  implicit class MpdSettingsOps[Self <: MpdSettings] (val x: Self) extends AnyVal {
+  implicit class MpdSettingsMutableBuilder[Self <: MpdSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptionContainerType(value: MpdCaptionContainerType): Self = StObject.set(x, "CaptionContainerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionContainerTypeUndefined: Self = StObject.set(x, "CaptionContainerType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScte35Esam(value: MpdScte35Esam): Self = StObject.set(x, "Scte35Esam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptionContainerType(value: MpdCaptionContainerType): Self = this.set("CaptionContainerType", value.asInstanceOf[js.Any])
+    def setScte35EsamUndefined: Self = StObject.set(x, "Scte35Esam", js.undefined)
     
     @scala.inline
-    def deleteCaptionContainerType: Self = this.set("CaptionContainerType", js.undefined)
+    def setScte35Source(value: MpdScte35Source): Self = StObject.set(x, "Scte35Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScte35Esam(value: MpdScte35Esam): Self = this.set("Scte35Esam", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScte35Esam: Self = this.set("Scte35Esam", js.undefined)
-    
-    @scala.inline
-    def setScte35Source(value: MpdScte35Source): Self = this.set("Scte35Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScte35Source: Self = this.set("Scte35Source", js.undefined)
+    def setScte35SourceUndefined: Self = StObject.set(x, "Scte35Source", js.undefined)
   }
 }

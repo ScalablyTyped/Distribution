@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,129 +124,117 @@ object Composition {
   }
   
   @scala.inline
-  implicit class CompositionOps[Self <: Composition] (val x: Self) extends AnyVal {
+  implicit class CompositionMutableBuilder[Self <: Composition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttester(value: js.Array[CompositionAttester]): Self = StObject.set(x, "attester", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttesterUndefined: Self = StObject.set(x, "attester", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttesterVarargs(value: CompositionAttester*): Self = StObject.set(x, "attester", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorVarargs(value: Reference*): Self = this.set("author", js.Array(value :_*))
+    def setAuthor(value: js.Array[Reference]): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: js.Array[Reference]): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setAuthorVarargs(value: Reference*): Self = StObject.set(x, "author", js.Array(value :_*))
     
     @scala.inline
-    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setClass(value: CodeableConcept): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setConfidentiality(value: code): Self = StObject.set(x, "confidentiality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setConfidentialityUndefined: Self = StObject.set(x, "confidentiality", js.undefined)
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCustodian(value: Reference): Self = StObject.set(x, "custodian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_confidentiality(value: Element): Self = this.set("_confidentiality", value.asInstanceOf[js.Any])
+    def setCustodianUndefined: Self = StObject.set(x, "custodian", js.undefined)
     
     @scala.inline
-    def delete_confidentiality: Self = this.set("_confidentiality", js.undefined)
+    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setEvent(value: js.Array[CompositionEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def setEventVarargs(value: CompositionEvent*): Self = StObject.set(x, "event", js.Array(value :_*))
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttesterVarargs(value: CompositionAttester*): Self = this.set("attester", js.Array(value :_*))
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setAttester(value: js.Array[CompositionAttester]): Self = this.set("attester", value.asInstanceOf[js.Any])
+    def setRelatesTo(value: js.Array[CompositionRelatesTo]): Self = StObject.set(x, "relatesTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttester: Self = this.set("attester", js.undefined)
+    def setRelatesToUndefined: Self = StObject.set(x, "relatesTo", js.undefined)
     
     @scala.inline
-    def setClass(value: CodeableConcept): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setRelatesToVarargs(value: CompositionRelatesTo*): Self = StObject.set(x, "relatesTo", js.Array(value :_*))
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setSection(value: js.Array[CompositionSection]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidentiality(value: code): Self = this.set("confidentiality", value.asInstanceOf[js.Any])
+    def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
     
     @scala.inline
-    def deleteConfidentiality: Self = this.set("confidentiality", js.undefined)
+    def setSectionVarargs(value: CompositionSection*): Self = StObject.set(x, "section", js.Array(value :_*))
     
     @scala.inline
-    def setCustodian(value: Reference): Self = this.set("custodian", value.asInstanceOf[js.Any])
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustodian: Self = this.set("custodian", js.undefined)
+    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncounter(value: Reference): Self = this.set("encounter", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncounter: Self = this.set("encounter", js.undefined)
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventVarargs(value: CompositionEvent*): Self = this.set("event", js.Array(value :_*))
+    def set_confidentiality(value: Element): Self = StObject.set(x, "_confidentiality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: js.Array[CompositionEvent]): Self = this.set("event", value.asInstanceOf[js.Any])
+    def set_confidentialityUndefined: Self = StObject.set(x, "_confidentiality", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatesToVarargs(value: CompositionRelatesTo*): Self = this.set("relatesTo", js.Array(value :_*))
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
     @scala.inline
-    def setRelatesTo(value: js.Array[CompositionRelatesTo]): Self = this.set("relatesTo", value.asInstanceOf[js.Any])
+    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelatesTo: Self = this.set("relatesTo", js.undefined)
-    
-    @scala.inline
-    def setSectionVarargs(value: CompositionSection*): Self = this.set("section", js.Array(value :_*))
-    
-    @scala.inline
-    def setSection(value: js.Array[CompositionSection]): Self = this.set("section", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSection: Self = this.set("section", js.undefined)
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
   }
 }

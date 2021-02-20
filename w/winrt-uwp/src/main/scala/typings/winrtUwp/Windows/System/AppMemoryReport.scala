@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents app memory usage at a single point in time. */
 @js.native
-trait AppMemoryReport extends js.Object {
+trait AppMemoryReport extends StObject {
   
   /** Gets the app's peak usage of private commit. */
   var peakPrivateCommitUsage: Double = js.native
@@ -34,30 +35,18 @@ object AppMemoryReport {
   }
   
   @scala.inline
-  implicit class AppMemoryReportOps[Self <: AppMemoryReport] (val x: Self) extends AnyVal {
+  implicit class AppMemoryReportMutableBuilder[Self <: AppMemoryReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPeakPrivateCommitUsage(value: Double): Self = StObject.set(x, "peakPrivateCommitUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivateCommitUsage(value: Double): Self = StObject.set(x, "privateCommitUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalCommitLimit(value: Double): Self = StObject.set(x, "totalCommitLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeakPrivateCommitUsage(value: Double): Self = this.set("peakPrivateCommitUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivateCommitUsage(value: Double): Self = this.set("privateCommitUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalCommitLimit(value: Double): Self = this.set("totalCommitLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalCommitUsage(value: Double): Self = this.set("totalCommitUsage", value.asInstanceOf[js.Any])
+    def setTotalCommitUsage(value: Double): Self = StObject.set(x, "totalCommitUsage", value.asInstanceOf[js.Any])
   }
 }

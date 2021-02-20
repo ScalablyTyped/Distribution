@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnConfiguration extends js.Object {
+trait ColumnConfiguration extends StObject {
   
   /**
     * One to five columns that indicate when a document in the database has changed.
@@ -45,45 +46,33 @@ object ColumnConfiguration {
   }
   
   @scala.inline
-  implicit class ColumnConfigurationOps[Self <: ColumnConfiguration] (val x: Self) extends AnyVal {
+  implicit class ColumnConfigurationMutableBuilder[Self <: ColumnConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeDetectingColumns(value: ChangeDetectingColumns): Self = StObject.set(x, "ChangeDetectingColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeDetectingColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "ChangeDetectingColumns", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentDataColumnName(value: ColumnName): Self = StObject.set(x, "DocumentDataColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeDetectingColumnsVarargs(value: ColumnName*): Self = this.set("ChangeDetectingColumns", js.Array(value :_*))
+    def setDocumentIdColumnName(value: ColumnName): Self = StObject.set(x, "DocumentIdColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeDetectingColumns(value: ChangeDetectingColumns): Self = this.set("ChangeDetectingColumns", value.asInstanceOf[js.Any])
+    def setDocumentTitleColumnName(value: ColumnName): Self = StObject.set(x, "DocumentTitleColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentDataColumnName(value: ColumnName): Self = this.set("DocumentDataColumnName", value.asInstanceOf[js.Any])
+    def setDocumentTitleColumnNameUndefined: Self = StObject.set(x, "DocumentTitleColumnName", js.undefined)
     
     @scala.inline
-    def setDocumentIdColumnName(value: ColumnName): Self = this.set("DocumentIdColumnName", value.asInstanceOf[js.Any])
+    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "FieldMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentTitleColumnName(value: ColumnName): Self = this.set("DocumentTitleColumnName", value.asInstanceOf[js.Any])
+    def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
     @scala.inline
-    def deleteDocumentTitleColumnName: Self = this.set("DocumentTitleColumnName", js.undefined)
-    
-    @scala.inline
-    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = this.set("FieldMappings", js.Array(value :_*))
-    
-    @scala.inline
-    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = this.set("FieldMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldMappings: Self = this.set("FieldMappings", js.undefined)
+    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
   }
 }

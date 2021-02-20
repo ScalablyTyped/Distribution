@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyOptionGroupMessage extends js.Object {
+trait ModifyOptionGroupMessage extends StObject {
   
   /**
     * A value that indicates whether to apply the change immediately or during the next maintenance window for each instance associated with the option group.
@@ -36,45 +37,33 @@ object ModifyOptionGroupMessage {
   }
   
   @scala.inline
-  implicit class ModifyOptionGroupMessageOps[Self <: ModifyOptionGroupMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyOptionGroupMessageMutableBuilder[Self <: ModifyOptionGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyImmediatelyUndefined: Self = StObject.set(x, "ApplyImmediately", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionGroupName(value: String): Self = this.set("OptionGroupName", value.asInstanceOf[js.Any])
+    def setOptionsToInclude(value: OptionConfigurationList): Self = StObject.set(x, "OptionsToInclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyImmediately(value: Boolean): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    def setOptionsToIncludeUndefined: Self = StObject.set(x, "OptionsToInclude", js.undefined)
     
     @scala.inline
-    def deleteApplyImmediately: Self = this.set("ApplyImmediately", js.undefined)
+    def setOptionsToIncludeVarargs(value: OptionConfiguration*): Self = StObject.set(x, "OptionsToInclude", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsToIncludeVarargs(value: OptionConfiguration*): Self = this.set("OptionsToInclude", js.Array(value :_*))
+    def setOptionsToRemove(value: OptionNamesList): Self = StObject.set(x, "OptionsToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsToInclude(value: OptionConfigurationList): Self = this.set("OptionsToInclude", value.asInstanceOf[js.Any])
+    def setOptionsToRemoveUndefined: Self = StObject.set(x, "OptionsToRemove", js.undefined)
     
     @scala.inline
-    def deleteOptionsToInclude: Self = this.set("OptionsToInclude", js.undefined)
-    
-    @scala.inline
-    def setOptionsToRemoveVarargs(value: String*): Self = this.set("OptionsToRemove", js.Array(value :_*))
-    
-    @scala.inline
-    def setOptionsToRemove(value: OptionNamesList): Self = this.set("OptionsToRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionsToRemove: Self = this.set("OptionsToRemove", js.undefined)
+    def setOptionsToRemoveVarargs(value: String*): Self = StObject.set(x, "OptionsToRemove", js.Array(value :_*))
   }
 }

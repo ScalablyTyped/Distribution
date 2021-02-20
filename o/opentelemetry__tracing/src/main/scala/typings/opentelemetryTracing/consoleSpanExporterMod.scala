@@ -1,14 +1,14 @@
 package typings.opentelemetryTracing
 
 import typings.opentelemetryTracing.spanExporterMod.SpanExporter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/tracing/build/src/export/ConsoleSpanExporter", JSImport.Namespace)
-@js.native
-object consoleSpanExporterMod extends js.Object {
+object consoleSpanExporterMod {
   
+  @JSImport("@opentelemetry/tracing/build/src/export/ConsoleSpanExporter", "ConsoleSpanExporter")
   @js.native
   class ConsoleSpanExporter () extends SpanExporter {
     

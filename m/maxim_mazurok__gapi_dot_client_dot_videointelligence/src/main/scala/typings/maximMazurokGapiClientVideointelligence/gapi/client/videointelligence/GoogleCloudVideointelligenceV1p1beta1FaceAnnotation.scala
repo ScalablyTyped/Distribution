@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1p1beta1FaceAnnotation extends js.Object {
+trait GoogleCloudVideointelligenceV1p1beta1FaceAnnotation extends StObject {
   
   /** All video frames where a face was detected. */
   var frames: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1FaceFrame]] = js.native
@@ -25,42 +26,30 @@ object GoogleCloudVideointelligenceV1p1beta1FaceAnnotation {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1p1beta1FaceAnnotationOps[Self <: GoogleCloudVideointelligenceV1p1beta1FaceAnnotation] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1p1beta1FaceAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1p1beta1FaceAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrames(value: js.Array[GoogleCloudVideointelligenceV1p1beta1FaceFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFramesVarargs(value: GoogleCloudVideointelligenceV1p1beta1FaceFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
     @scala.inline
-    def setFramesVarargs(value: GoogleCloudVideointelligenceV1p1beta1FaceFrame*): Self = this.set("frames", js.Array(value :_*))
+    def setSegments(value: js.Array[GoogleCloudVideointelligenceV1p1beta1FaceSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrames(value: js.Array[GoogleCloudVideointelligenceV1p1beta1FaceFrame]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
     @scala.inline
-    def deleteFrames: Self = this.set("frames", js.undefined)
+    def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1p1beta1FaceSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1p1beta1FaceSegment*): Self = this.set("segments", js.Array(value :_*))
+    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: js.Array[GoogleCloudVideointelligenceV1p1beta1FaceSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegments: Self = this.set("segments", js.undefined)
-    
-    @scala.inline
-    def setThumbnail(value: String): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

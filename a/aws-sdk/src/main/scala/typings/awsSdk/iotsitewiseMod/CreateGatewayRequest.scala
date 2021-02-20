@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateGatewayRequest extends js.Object {
+trait CreateGatewayRequest extends StObject {
   
   /**
     * A unique, friendly name for the gateway.
@@ -31,30 +32,18 @@ object CreateGatewayRequest {
   }
   
   @scala.inline
-  implicit class CreateGatewayRequestOps[Self <: CreateGatewayRequest] (val x: Self) extends AnyVal {
+  implicit class CreateGatewayRequestMutableBuilder[Self <: CreateGatewayRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatewayName(value: Name): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayPlatform(value: GatewayPlatform): Self = StObject.set(x, "gatewayPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayName(value: Name): Self = this.set("gatewayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGatewayPlatform(value: GatewayPlatform): Self = this.set("gatewayPlatform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

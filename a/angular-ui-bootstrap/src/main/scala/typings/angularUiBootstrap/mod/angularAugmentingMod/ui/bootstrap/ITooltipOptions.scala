@@ -1,11 +1,12 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITooltipOptions extends js.Object {
+trait ITooltipOptions extends StObject {
   
   /**
     * Should the modal fade in and out?
@@ -65,60 +66,48 @@ object ITooltipOptions {
   }
   
   @scala.inline
-  implicit class ITooltipOptionsOps[Self <: ITooltipOptions] (val x: Self) extends AnyVal {
+  implicit class ITooltipOptionsMutableBuilder[Self <: ITooltipOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAppendToBodyUndefined: Self = StObject.set(x, "appendToBody", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendToBody(value: Boolean): Self = this.set("appendToBody", value.asInstanceOf[js.Any])
+    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
     @scala.inline
-    def deleteAppendToBody: Self = this.set("appendToBody", js.undefined)
+    def setPopupCloseDelay(value: Double): Self = StObject.set(x, "popupCloseDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: String): Self = this.set("placement", value.asInstanceOf[js.Any])
+    def setPopupCloseDelayUndefined: Self = StObject.set(x, "popupCloseDelay", js.undefined)
     
     @scala.inline
-    def deletePlacement: Self = this.set("placement", js.undefined)
+    def setPopupDelay(value: Double): Self = StObject.set(x, "popupDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupCloseDelay(value: Double): Self = this.set("popupCloseDelay", value.asInstanceOf[js.Any])
+    def setPopupDelayUndefined: Self = StObject.set(x, "popupDelay", js.undefined)
     
     @scala.inline
-    def deletePopupCloseDelay: Self = this.set("popupCloseDelay", js.undefined)
+    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupDelay(value: Double): Self = this.set("popupDelay", value.asInstanceOf[js.Any])
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
     @scala.inline
-    def deletePopupDelay: Self = this.set("popupDelay", js.undefined)
+    def setUseContentExp(value: Boolean): Self = StObject.set(x, "useContentExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
-    
-    @scala.inline
-    def setUseContentExp(value: Boolean): Self = this.set("useContentExp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseContentExp: Self = this.set("useContentExp", js.undefined)
+    def setUseContentExpUndefined: Self = StObject.set(x, "useContentExp", js.undefined)
   }
 }

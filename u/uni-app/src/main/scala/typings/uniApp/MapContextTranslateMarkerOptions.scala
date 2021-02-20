@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapContextTranslateMarkerOptions extends js.Object {
+trait MapContextTranslateMarkerOptions extends StObject {
   
   /**
     * 动画结束回调函数
@@ -51,60 +52,48 @@ object MapContextTranslateMarkerOptions {
   }
   
   @scala.inline
-  implicit class MapContextTranslateMarkerOptionsOps[Self <: MapContextTranslateMarkerOptions] (val x: Self) extends AnyVal {
+  implicit class MapContextTranslateMarkerOptionsMutableBuilder[Self <: MapContextTranslateMarkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationEnd(value: () => Unit): Self = StObject.set(x, "animationEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationEndUndefined: Self = StObject.set(x, "animationEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationEnd(value: () => Unit): Self = this.set("animationEnd", js.Any.fromFunction0(value))
+    def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
     
     @scala.inline
-    def deleteAnimationEnd: Self = this.set("animationEnd", js.undefined)
+    def setDestination(value: LocationObject): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRotate(value: Boolean): Self = this.set("autoRotate", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def deleteAutoRotate: Self = this.set("autoRotate", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: LocationObject): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    def setMarkerIdUndefined: Self = StObject.set(x, "markerId", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerId(value: Double): Self = this.set("markerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkerId: Self = this.set("markerId", js.undefined)
-    
-    @scala.inline
-    def setRotate(value: Double): Self = this.set("rotate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
   }
 }

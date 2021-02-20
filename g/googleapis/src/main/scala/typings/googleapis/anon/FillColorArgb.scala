@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FillColorArgb extends js.Object {
+trait FillColorArgb extends StObject {
   
   var fillColorArgb: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object FillColorArgb {
   }
   
   @scala.inline
-  implicit class FillColorArgbOps[Self <: FillColorArgb] (val x: Self) extends AnyVal {
+  implicit class FillColorArgbMutableBuilder[Self <: FillColorArgb] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillColorArgb(value: String): Self = StObject.set(x, "fillColorArgb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillColorArgbUndefined: Self = StObject.set(x, "fillColorArgb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColorArgb(value: String): Self = this.set("fillColorArgb", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteFillColorArgb: Self = this.set("fillColorArgb", js.undefined)
+    def setMaskColorArgb(value: String): Self = StObject.set(x, "maskColorArgb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setMaskColorArgbUndefined: Self = StObject.set(x, "maskColorArgb", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setMoreButtonText(value: String): Self = StObject.set(x, "moreButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskColorArgb(value: String): Self = this.set("maskColorArgb", value.asInstanceOf[js.Any])
+    def setMoreButtonTextUndefined: Self = StObject.set(x, "moreButtonText", js.undefined)
     
     @scala.inline
-    def deleteMaskColorArgb: Self = this.set("maskColorArgb", js.undefined)
+    def setMoreButtonUrl(value: String): Self = StObject.set(x, "moreButtonUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoreButtonText(value: String): Self = this.set("moreButtonText", value.asInstanceOf[js.Any])
+    def setMoreButtonUrlUndefined: Self = StObject.set(x, "moreButtonUrl", js.undefined)
     
     @scala.inline
-    def deleteMoreButtonText: Self = this.set("moreButtonText", js.undefined)
+    def setTextColorArgb(value: String): Self = StObject.set(x, "textColorArgb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoreButtonUrl(value: String): Self = this.set("moreButtonUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMoreButtonUrl: Self = this.set("moreButtonUrl", js.undefined)
-    
-    @scala.inline
-    def setTextColorArgb(value: String): Self = this.set("textColorArgb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColorArgb: Self = this.set("textColorArgb", js.undefined)
+    def setTextColorArgbUndefined: Self = StObject.set(x, "textColorArgb", js.undefined)
   }
 }

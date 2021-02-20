@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Latency extends js.Object {
+trait Latency extends StObject {
   
   /**
     * The average latency for the slowest 90 percent of requests over the last 10 seconds.
@@ -56,66 +57,54 @@ object Latency {
   }
   
   @scala.inline
-  implicit class LatencyOps[Self <: Latency] (val x: Self) extends AnyVal {
+  implicit class LatencyMutableBuilder[Self <: Latency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setP10(value: NullableDouble): Self = StObject.set(x, "P10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setP10Undefined: Self = StObject.set(x, "P10", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setP50(value: NullableDouble): Self = StObject.set(x, "P50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP10(value: NullableDouble): Self = this.set("P10", value.asInstanceOf[js.Any])
+    def setP50Undefined: Self = StObject.set(x, "P50", js.undefined)
     
     @scala.inline
-    def deleteP10: Self = this.set("P10", js.undefined)
+    def setP75(value: NullableDouble): Self = StObject.set(x, "P75", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP50(value: NullableDouble): Self = this.set("P50", value.asInstanceOf[js.Any])
+    def setP75Undefined: Self = StObject.set(x, "P75", js.undefined)
     
     @scala.inline
-    def deleteP50: Self = this.set("P50", js.undefined)
+    def setP85(value: NullableDouble): Self = StObject.set(x, "P85", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP75(value: NullableDouble): Self = this.set("P75", value.asInstanceOf[js.Any])
+    def setP85Undefined: Self = StObject.set(x, "P85", js.undefined)
     
     @scala.inline
-    def deleteP75: Self = this.set("P75", js.undefined)
+    def setP90(value: NullableDouble): Self = StObject.set(x, "P90", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP85(value: NullableDouble): Self = this.set("P85", value.asInstanceOf[js.Any])
+    def setP90Undefined: Self = StObject.set(x, "P90", js.undefined)
     
     @scala.inline
-    def deleteP85: Self = this.set("P85", js.undefined)
+    def setP95(value: NullableDouble): Self = StObject.set(x, "P95", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP90(value: NullableDouble): Self = this.set("P90", value.asInstanceOf[js.Any])
+    def setP95Undefined: Self = StObject.set(x, "P95", js.undefined)
     
     @scala.inline
-    def deleteP90: Self = this.set("P90", js.undefined)
+    def setP99(value: NullableDouble): Self = StObject.set(x, "P99", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP95(value: NullableDouble): Self = this.set("P95", value.asInstanceOf[js.Any])
+    def setP999(value: NullableDouble): Self = StObject.set(x, "P999", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteP95: Self = this.set("P95", js.undefined)
+    def setP999Undefined: Self = StObject.set(x, "P999", js.undefined)
     
     @scala.inline
-    def setP99(value: NullableDouble): Self = this.set("P99", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteP99: Self = this.set("P99", js.undefined)
-    
-    @scala.inline
-    def setP999(value: NullableDouble): Self = this.set("P999", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteP999: Self = this.set("P999", js.undefined)
+    def setP99Undefined: Self = StObject.set(x, "P99", js.undefined)
   }
 }

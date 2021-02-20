@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStacksOutput extends js.Object {
+trait DescribeStacksOutput extends StObject {
   
   /**
     * If the output exceeds 1 MB in size, a string that identifies the next page of stacks. If no additional page exists, this value is null.
@@ -26,33 +27,21 @@ object DescribeStacksOutput {
   }
   
   @scala.inline
-  implicit class DescribeStacksOutputOps[Self <: DescribeStacksOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeStacksOutputMutableBuilder[Self <: DescribeStacksOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStacks(value: Stacks): Self = StObject.set(x, "Stacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStacksUndefined: Self = StObject.set(x, "Stacks", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStacksVarargs(value: Stack*): Self = this.set("Stacks", js.Array(value :_*))
-    
-    @scala.inline
-    def setStacks(value: Stacks): Self = this.set("Stacks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStacks: Self = this.set("Stacks", js.undefined)
+    def setStacksVarargs(value: Stack*): Self = StObject.set(x, "Stacks", js.Array(value :_*))
   }
 }

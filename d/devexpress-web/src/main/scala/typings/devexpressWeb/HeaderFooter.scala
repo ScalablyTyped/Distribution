@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains settings defining a header or footer in a document.
   */
 @js.native
-trait HeaderFooter extends js.Object {
+trait HeaderFooter extends StObject {
   
   /**
     * Provides access to an object implementing the basic document functionality that is common to the header, footer and the main document body.
@@ -30,24 +31,12 @@ object HeaderFooter {
   }
   
   @scala.inline
-  implicit class HeaderFooterOps[Self <: HeaderFooter] (val x: Self) extends AnyVal {
+  implicit class HeaderFooterMutableBuilder[Self <: HeaderFooter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubDocument(value: SubDocument): Self = StObject.set(x, "subDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSubDocument(value: SubDocument): Self = this.set("subDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: HeaderFooterType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: HeaderFooterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateScalingPlanRequest extends js.Object {
+trait UpdateScalingPlanRequest extends StObject {
   
   /**
     * A CloudFormation stack or set of tags.
@@ -36,39 +37,27 @@ object UpdateScalingPlanRequest {
   }
   
   @scala.inline
-  implicit class UpdateScalingPlanRequestOps[Self <: UpdateScalingPlanRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateScalingPlanRequestMutableBuilder[Self <: UpdateScalingPlanRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationSource(value: ApplicationSource): Self = StObject.set(x, "ApplicationSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationSourceUndefined: Self = StObject.set(x, "ApplicationSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScalingInstructions(value: ScalingInstructions): Self = StObject.set(x, "ScalingInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingPlanName(value: ScalingPlanName): Self = this.set("ScalingPlanName", value.asInstanceOf[js.Any])
+    def setScalingInstructionsUndefined: Self = StObject.set(x, "ScalingInstructions", js.undefined)
     
     @scala.inline
-    def setScalingPlanVersion(value: ScalingPlanVersion): Self = this.set("ScalingPlanVersion", value.asInstanceOf[js.Any])
+    def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationSource(value: ApplicationSource): Self = this.set("ApplicationSource", value.asInstanceOf[js.Any])
+    def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationSource: Self = this.set("ApplicationSource", js.undefined)
-    
-    @scala.inline
-    def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = this.set("ScalingInstructions", js.Array(value :_*))
-    
-    @scala.inline
-    def setScalingInstructions(value: ScalingInstructions): Self = this.set("ScalingInstructions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingInstructions: Self = this.set("ScalingInstructions", js.undefined)
+    def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
   }
 }

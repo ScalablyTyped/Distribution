@@ -1,12 +1,13 @@
 package typings.victory.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in keyof react.react.CSSProperties ]: victory.victory.StringOrNumberOrCallback} */
 @js.native
-trait VictoryStyleObject extends js.Object {
+trait VictoryStyleObject extends StObject {
   
   var KhtmlBoxAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
   
@@ -904,6 +905,8 @@ trait VictoryStyleObject extends js.Object {
   
   var gridTemplateRows: js.UndefOr[StringOrNumberOrCallback] = js.native
   
+  var hack: js.UndefOr[StringOrNumberOrCallback] = js.native
+  
   var hangingPunctuation: js.UndefOr[StringOrNumberOrCallback] = js.native
   
   var height: js.UndefOr[StringOrNumberOrCallback] = js.native
@@ -1569,7002 +1572,6999 @@ object VictoryStyleObject {
   }
   
   @scala.inline
-  implicit class VictoryStyleObjectOps[Self <: VictoryStyleObject] (val x: Self) extends AnyVal {
+  implicit class VictoryStyleObjectMutableBuilder[Self <: VictoryStyleObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignContent(value: StringOrNumberOrCallback): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "alignContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
     
     @scala.inline
-    def setKhtmlBoxAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlBoxAlign", js.Any.fromFunction1(value))
+    def setAlignItems(value: StringOrNumberOrCallback): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKhtmlBoxAlign(value: StringOrNumberOrCallback): Self = this.set("KhtmlBoxAlign", value.asInstanceOf[js.Any])
+    def setAlignItemsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "alignItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKhtmlBoxAlign: Self = this.set("KhtmlBoxAlign", js.undefined)
+    def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
     @scala.inline
-    def setKhtmlBoxDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlBoxDirection", js.Any.fromFunction1(value))
+    def setAlignSelf(value: StringOrNumberOrCallback): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKhtmlBoxDirection(value: StringOrNumberOrCallback): Self = this.set("KhtmlBoxDirection", value.asInstanceOf[js.Any])
+    def setAlignSelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "alignSelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKhtmlBoxDirection: Self = this.set("KhtmlBoxDirection", js.undefined)
+    def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
     
     @scala.inline
-    def setKhtmlBoxFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlBoxFlex", js.Any.fromFunction1(value))
+    def setAlignTracks(value: StringOrNumberOrCallback): Self = StObject.set(x, "alignTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKhtmlBoxFlex(value: StringOrNumberOrCallback): Self = this.set("KhtmlBoxFlex", value.asInstanceOf[js.Any])
+    def setAlignTracksFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "alignTracks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKhtmlBoxFlex: Self = this.set("KhtmlBoxFlex", js.undefined)
+    def setAlignTracksUndefined: Self = StObject.set(x, "alignTracks", js.undefined)
     
     @scala.inline
-    def setKhtmlBoxFlexGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlBoxFlexGroup", js.Any.fromFunction1(value))
+    def setAlignmentBaseline(value: StringOrNumberOrCallback): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKhtmlBoxFlexGroup(value: StringOrNumberOrCallback): Self = this.set("KhtmlBoxFlexGroup", value.asInstanceOf[js.Any])
+    def setAlignmentBaselineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "alignmentBaseline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKhtmlBoxFlexGroup: Self = this.set("KhtmlBoxFlexGroup", js.undefined)
+    def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
     
     @scala.inline
-    def setKhtmlBoxLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlBoxLines", js.Any.fromFunction1(value))
+    def setAll(value: StringOrNumberOrCallback): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKhtmlBoxLines(value: StringOrNumberOrCallback): Self = this.set("KhtmlBoxLines", value.asInstanceOf[js.Any])
+    def setAllFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKhtmlBoxLines: Self = this.set("KhtmlBoxLines", js.undefined)
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def setKhtmlBoxOrdinalGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlBoxOrdinalGroup", js.Any.fromFunction1(value))
+    def setAnimation(value: StringOrNumberOrCallback): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKhtmlBoxOrdinalGroup(value: StringOrNumberOrCallback): Self = this.set("KhtmlBoxOrdinalGroup", value.asInstanceOf[js.Any])
+    def setAnimationDelay(value: StringOrNumberOrCallback): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKhtmlBoxOrdinalGroup: Self = this.set("KhtmlBoxOrdinalGroup", js.undefined)
+    def setAnimationDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "animationDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKhtmlBoxOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlBoxOrient", js.Any.fromFunction1(value))
+    def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
     
     @scala.inline
-    def setKhtmlBoxOrient(value: StringOrNumberOrCallback): Self = this.set("KhtmlBoxOrient", value.asInstanceOf[js.Any])
+    def setAnimationDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKhtmlBoxOrient: Self = this.set("KhtmlBoxOrient", js.undefined)
+    def setAnimationDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "animationDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKhtmlBoxPackFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlBoxPack", js.Any.fromFunction1(value))
+    def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
     
     @scala.inline
-    def setKhtmlBoxPack(value: StringOrNumberOrCallback): Self = this.set("KhtmlBoxPack", value.asInstanceOf[js.Any])
+    def setAnimationDuration(value: StringOrNumberOrCallback): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKhtmlBoxPack: Self = this.set("KhtmlBoxPack", js.undefined)
+    def setAnimationDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "animationDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKhtmlLineBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlLineBreak", js.Any.fromFunction1(value))
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def setKhtmlLineBreak(value: StringOrNumberOrCallback): Self = this.set("KhtmlLineBreak", value.asInstanceOf[js.Any])
+    def setAnimationFillMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKhtmlLineBreak: Self = this.set("KhtmlLineBreak", js.undefined)
+    def setAnimationFillModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "animationFillMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKhtmlOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlOpacity", js.Any.fromFunction1(value))
+    def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
     
     @scala.inline
-    def setKhtmlOpacity(value: StringOrNumberOrCallback): Self = this.set("KhtmlOpacity", value.asInstanceOf[js.Any])
+    def setAnimationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "animation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKhtmlOpacity: Self = this.set("KhtmlOpacity", js.undefined)
+    def setAnimationIterationCount(value: StringOrNumberOrCallback): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKhtmlUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("KhtmlUserSelect", js.Any.fromFunction1(value))
+    def setAnimationIterationCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "animationIterationCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKhtmlUserSelect(value: StringOrNumberOrCallback): Self = this.set("KhtmlUserSelect", value.asInstanceOf[js.Any])
+    def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
     
     @scala.inline
-    def deleteKhtmlUserSelect: Self = this.set("KhtmlUserSelect", js.undefined)
+    def setAnimationName(value: StringOrNumberOrCallback): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozAnimationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAnimation", js.Any.fromFunction1(value))
+    def setAnimationNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "animationName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozAnimation(value: StringOrNumberOrCallback): Self = this.set("MozAnimation", value.asInstanceOf[js.Any])
+    def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
     
     @scala.inline
-    def deleteMozAnimation: Self = this.set("MozAnimation", js.undefined)
+    def setAnimationPlayState(value: StringOrNumberOrCallback): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozAnimationDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAnimationDelay", js.Any.fromFunction1(value))
+    def setAnimationPlayStateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "animationPlayState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozAnimationDelay(value: StringOrNumberOrCallback): Self = this.set("MozAnimationDelay", value.asInstanceOf[js.Any])
+    def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
     
     @scala.inline
-    def deleteMozAnimationDelay: Self = this.set("MozAnimationDelay", js.undefined)
+    def setAnimationTimingFunction(value: StringOrNumberOrCallback): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozAnimationDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAnimationDirection", js.Any.fromFunction1(value))
+    def setAnimationTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "animationTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozAnimationDirection(value: StringOrNumberOrCallback): Self = this.set("MozAnimationDirection", value.asInstanceOf[js.Any])
+    def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
     
     @scala.inline
-    def deleteMozAnimationDirection: Self = this.set("MozAnimationDirection", js.undefined)
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def setMozAnimationDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAnimationDuration", js.Any.fromFunction1(value))
+    def setAppearance(value: StringOrNumberOrCallback): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozAnimationDuration(value: StringOrNumberOrCallback): Self = this.set("MozAnimationDuration", value.asInstanceOf[js.Any])
+    def setAppearanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "appearance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozAnimationDuration: Self = this.set("MozAnimationDuration", js.undefined)
+    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
     @scala.inline
-    def setMozAnimationFillModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAnimationFillMode", js.Any.fromFunction1(value))
+    def setAspectRatio(value: StringOrNumberOrCallback): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozAnimationFillMode(value: StringOrNumberOrCallback): Self = this.set("MozAnimationFillMode", value.asInstanceOf[js.Any])
+    def setAspectRatioFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "aspectRatio", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozAnimationFillMode: Self = this.set("MozAnimationFillMode", js.undefined)
+    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
     @scala.inline
-    def setMozAnimationIterationCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAnimationIterationCount", js.Any.fromFunction1(value))
+    def setAzimuth(value: StringOrNumberOrCallback): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozAnimationIterationCount(value: StringOrNumberOrCallback): Self = this.set("MozAnimationIterationCount", value.asInstanceOf[js.Any])
+    def setAzimuthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "azimuth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozAnimationIterationCount: Self = this.set("MozAnimationIterationCount", js.undefined)
+    def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
     
     @scala.inline
-    def setMozAnimationNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAnimationName", js.Any.fromFunction1(value))
+    def setBackdropFilter(value: StringOrNumberOrCallback): Self = StObject.set(x, "backdropFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozAnimationName(value: StringOrNumberOrCallback): Self = this.set("MozAnimationName", value.asInstanceOf[js.Any])
+    def setBackdropFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backdropFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozAnimationName: Self = this.set("MozAnimationName", js.undefined)
+    def setBackdropFilterUndefined: Self = StObject.set(x, "backdropFilter", js.undefined)
     
     @scala.inline
-    def setMozAnimationPlayStateFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAnimationPlayState", js.Any.fromFunction1(value))
+    def setBackfaceVisibility(value: StringOrNumberOrCallback): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozAnimationPlayState(value: StringOrNumberOrCallback): Self = this.set("MozAnimationPlayState", value.asInstanceOf[js.Any])
+    def setBackfaceVisibilityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backfaceVisibility", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozAnimationPlayState: Self = this.set("MozAnimationPlayState", js.undefined)
+    def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
     
     @scala.inline
-    def setMozAnimationTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAnimationTimingFunction", js.Any.fromFunction1(value))
+    def setBackground(value: StringOrNumberOrCallback): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozAnimationTimingFunction(value: StringOrNumberOrCallback): Self = this.set("MozAnimationTimingFunction", value.asInstanceOf[js.Any])
+    def setBackgroundAttachment(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozAnimationTimingFunction: Self = this.set("MozAnimationTimingFunction", js.undefined)
+    def setBackgroundAttachmentFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundAttachment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozAppearanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozAppearance", js.Any.fromFunction1(value))
+    def setBackgroundAttachmentUndefined: Self = StObject.set(x, "backgroundAttachment", js.undefined)
     
     @scala.inline
-    def setMozAppearance(value: StringOrNumberOrCallback): Self = this.set("MozAppearance", value.asInstanceOf[js.Any])
+    def setBackgroundBlendMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozAppearance: Self = this.set("MozAppearance", js.undefined)
+    def setBackgroundBlendModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundBlendMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBackfaceVisibilityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBackfaceVisibility", js.Any.fromFunction1(value))
+    def setBackgroundBlendModeUndefined: Self = StObject.set(x, "backgroundBlendMode", js.undefined)
     
     @scala.inline
-    def setMozBackfaceVisibility(value: StringOrNumberOrCallback): Self = this.set("MozBackfaceVisibility", value.asInstanceOf[js.Any])
+    def setBackgroundClip(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundClip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozBackfaceVisibility: Self = this.set("MozBackfaceVisibility", js.undefined)
+    def setBackgroundClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundClip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBackgroundClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBackgroundClip", js.Any.fromFunction1(value))
+    def setBackgroundClipUndefined: Self = StObject.set(x, "backgroundClip", js.undefined)
     
     @scala.inline
-    def setMozBackgroundClip(value: StringOrNumberOrCallback): Self = this.set("MozBackgroundClip", value.asInstanceOf[js.Any])
+    def setBackgroundColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozBackgroundClip: Self = this.set("MozBackgroundClip", js.undefined)
+    def setBackgroundColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBackgroundInlinePolicyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBackgroundInlinePolicy", js.Any.fromFunction1(value))
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def setMozBackgroundInlinePolicy(value: StringOrNumberOrCallback): Self = this.set("MozBackgroundInlinePolicy", value.asInstanceOf[js.Any])
+    def setBackgroundFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "background", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBackgroundInlinePolicy: Self = this.set("MozBackgroundInlinePolicy", js.undefined)
+    def setBackgroundImage(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBackgroundOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBackgroundOrigin", js.Any.fromFunction1(value))
+    def setBackgroundImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBackgroundOrigin(value: StringOrNumberOrCallback): Self = this.set("MozBackgroundOrigin", value.asInstanceOf[js.Any])
+    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
     @scala.inline
-    def deleteMozBackgroundOrigin: Self = this.set("MozBackgroundOrigin", js.undefined)
+    def setBackgroundOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBackgroundSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBackgroundSize", js.Any.fromFunction1(value))
+    def setBackgroundOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBackgroundSize(value: StringOrNumberOrCallback): Self = this.set("MozBackgroundSize", value.asInstanceOf[js.Any])
+    def setBackgroundOriginUndefined: Self = StObject.set(x, "backgroundOrigin", js.undefined)
     
     @scala.inline
-    def deleteMozBackgroundSize: Self = this.set("MozBackgroundSize", js.undefined)
+    def setBackgroundPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBindingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBinding", js.Any.fromFunction1(value))
+    def setBackgroundPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBinding(value: StringOrNumberOrCallback): Self = this.set("MozBinding", value.asInstanceOf[js.Any])
+    def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
     @scala.inline
-    def deleteMozBinding: Self = this.set("MozBinding", js.undefined)
+    def setBackgroundPositionX(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundPositionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderBottomColorsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderBottomColors", js.Any.fromFunction1(value))
+    def setBackgroundPositionXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundPositionX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderBottomColors(value: StringOrNumberOrCallback): Self = this.set("MozBorderBottomColors", value.asInstanceOf[js.Any])
+    def setBackgroundPositionXUndefined: Self = StObject.set(x, "backgroundPositionX", js.undefined)
     
     @scala.inline
-    def deleteMozBorderBottomColors: Self = this.set("MozBorderBottomColors", js.undefined)
+    def setBackgroundPositionY(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundPositionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderEndColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderEndColor", js.Any.fromFunction1(value))
+    def setBackgroundPositionYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundPositionY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderEndColor(value: StringOrNumberOrCallback): Self = this.set("MozBorderEndColor", value.asInstanceOf[js.Any])
+    def setBackgroundPositionYUndefined: Self = StObject.set(x, "backgroundPositionY", js.undefined)
     
     @scala.inline
-    def deleteMozBorderEndColor: Self = this.set("MozBorderEndColor", js.undefined)
+    def setBackgroundRepeat(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderEndStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderEndStyle", js.Any.fromFunction1(value))
+    def setBackgroundRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderEndStyle(value: StringOrNumberOrCallback): Self = this.set("MozBorderEndStyle", value.asInstanceOf[js.Any])
+    def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
     @scala.inline
-    def deleteMozBorderEndStyle: Self = this.set("MozBorderEndStyle", js.undefined)
+    def setBackgroundSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderEndWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderEndWidth", js.Any.fromFunction1(value))
+    def setBackgroundSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "backgroundSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderEndWidth(value: StringOrNumberOrCallback): Self = this.set("MozBorderEndWidth", value.asInstanceOf[js.Any])
+    def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
     @scala.inline
-    def deleteMozBorderEndWidth: Self = this.set("MozBorderEndWidth", js.undefined)
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def setMozBorderImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderImage", js.Any.fromFunction1(value))
+    def setBaselineShift(value: StringOrNumberOrCallback): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderImage(value: StringOrNumberOrCallback): Self = this.set("MozBorderImage", value.asInstanceOf[js.Any])
+    def setBaselineShiftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "baselineShift", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBorderImage: Self = this.set("MozBorderImage", js.undefined)
+    def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
     
     @scala.inline
-    def setMozBorderLeftColorsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderLeftColors", js.Any.fromFunction1(value))
+    def setBlockOverflow(value: StringOrNumberOrCallback): Self = StObject.set(x, "blockOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderLeftColors(value: StringOrNumberOrCallback): Self = this.set("MozBorderLeftColors", value.asInstanceOf[js.Any])
+    def setBlockOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "blockOverflow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBorderLeftColors: Self = this.set("MozBorderLeftColors", js.undefined)
+    def setBlockOverflowUndefined: Self = StObject.set(x, "blockOverflow", js.undefined)
     
     @scala.inline
-    def setMozBorderRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderRadius", js.Any.fromFunction1(value))
+    def setBlockSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderRadius(value: StringOrNumberOrCallback): Self = this.set("MozBorderRadius", value.asInstanceOf[js.Any])
+    def setBlockSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "blockSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBorderRadius: Self = this.set("MozBorderRadius", js.undefined)
+    def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
     
     @scala.inline
-    def setMozBorderRadiusBottomleftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderRadiusBottomleft", js.Any.fromFunction1(value))
+    def setBorder(value: StringOrNumberOrCallback): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderRadiusBottomleft(value: StringOrNumberOrCallback): Self = this.set("MozBorderRadiusBottomleft", value.asInstanceOf[js.Any])
+    def setBorderBlock(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozBorderRadiusBottomleft: Self = this.set("MozBorderRadiusBottomleft", js.undefined)
+    def setBorderBlockColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderRadiusBottomrightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderRadiusBottomright", js.Any.fromFunction1(value))
+    def setBorderBlockColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderRadiusBottomright(value: StringOrNumberOrCallback): Self = this.set("MozBorderRadiusBottomright", value.asInstanceOf[js.Any])
+    def setBorderBlockColorUndefined: Self = StObject.set(x, "borderBlockColor", js.undefined)
     
     @scala.inline
-    def deleteMozBorderRadiusBottomright: Self = this.set("MozBorderRadiusBottomright", js.undefined)
+    def setBorderBlockEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderRadiusTopleftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderRadiusTopleft", js.Any.fromFunction1(value))
+    def setBorderBlockEndColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockEndColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderRadiusTopleft(value: StringOrNumberOrCallback): Self = this.set("MozBorderRadiusTopleft", value.asInstanceOf[js.Any])
+    def setBorderBlockEndColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockEndColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBorderRadiusTopleft: Self = this.set("MozBorderRadiusTopleft", js.undefined)
+    def setBorderBlockEndColorUndefined: Self = StObject.set(x, "borderBlockEndColor", js.undefined)
     
     @scala.inline
-    def setMozBorderRadiusToprightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderRadiusTopright", js.Any.fromFunction1(value))
+    def setBorderBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderRadiusTopright(value: StringOrNumberOrCallback): Self = this.set("MozBorderRadiusTopright", value.asInstanceOf[js.Any])
+    def setBorderBlockEndStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockEndStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozBorderRadiusTopright: Self = this.set("MozBorderRadiusTopright", js.undefined)
+    def setBorderBlockEndStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockEndStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderRightColorsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderRightColors", js.Any.fromFunction1(value))
+    def setBorderBlockEndStyleUndefined: Self = StObject.set(x, "borderBlockEndStyle", js.undefined)
     
     @scala.inline
-    def setMozBorderRightColors(value: StringOrNumberOrCallback): Self = this.set("MozBorderRightColors", value.asInstanceOf[js.Any])
+    def setBorderBlockEndUndefined: Self = StObject.set(x, "borderBlockEnd", js.undefined)
     
     @scala.inline
-    def deleteMozBorderRightColors: Self = this.set("MozBorderRightColors", js.undefined)
+    def setBorderBlockEndWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockEndWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderStartColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderStartColor", js.Any.fromFunction1(value))
+    def setBorderBlockEndWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockEndWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderStartColor(value: StringOrNumberOrCallback): Self = this.set("MozBorderStartColor", value.asInstanceOf[js.Any])
+    def setBorderBlockEndWidthUndefined: Self = StObject.set(x, "borderBlockEndWidth", js.undefined)
     
     @scala.inline
-    def deleteMozBorderStartColor: Self = this.set("MozBorderStartColor", js.undefined)
+    def setBorderBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderStartStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderStartStyle", js.Any.fromFunction1(value))
+    def setBorderBlockStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBorderStartStyle(value: StringOrNumberOrCallback): Self = this.set("MozBorderStartStyle", value.asInstanceOf[js.Any])
+    def setBorderBlockStartColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockStartColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozBorderStartStyle: Self = this.set("MozBorderStartStyle", js.undefined)
+    def setBorderBlockStartColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockStartColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBorderTopColorsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBorderTopColors", js.Any.fromFunction1(value))
+    def setBorderBlockStartColorUndefined: Self = StObject.set(x, "borderBlockStartColor", js.undefined)
     
     @scala.inline
-    def setMozBorderTopColors(value: StringOrNumberOrCallback): Self = this.set("MozBorderTopColors", value.asInstanceOf[js.Any])
+    def setBorderBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBorderTopColors: Self = this.set("MozBorderTopColors", js.undefined)
+    def setBorderBlockStartStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockStartStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBoxAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBoxAlign", js.Any.fromFunction1(value))
+    def setBorderBlockStartStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockStartStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBoxAlign(value: StringOrNumberOrCallback): Self = this.set("MozBoxAlign", value.asInstanceOf[js.Any])
+    def setBorderBlockStartStyleUndefined: Self = StObject.set(x, "borderBlockStartStyle", js.undefined)
     
     @scala.inline
-    def deleteMozBoxAlign: Self = this.set("MozBoxAlign", js.undefined)
+    def setBorderBlockStartUndefined: Self = StObject.set(x, "borderBlockStart", js.undefined)
     
     @scala.inline
-    def setMozBoxDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBoxDirection", js.Any.fromFunction1(value))
+    def setBorderBlockStartWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockStartWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBoxDirection(value: StringOrNumberOrCallback): Self = this.set("MozBoxDirection", value.asInstanceOf[js.Any])
+    def setBorderBlockStartWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockStartWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBoxDirection: Self = this.set("MozBoxDirection", js.undefined)
+    def setBorderBlockStartWidthUndefined: Self = StObject.set(x, "borderBlockStartWidth", js.undefined)
     
     @scala.inline
-    def setMozBoxFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBoxFlex", js.Any.fromFunction1(value))
+    def setBorderBlockStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBoxFlex(value: StringOrNumberOrCallback): Self = this.set("MozBoxFlex", value.asInstanceOf[js.Any])
+    def setBorderBlockStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBoxFlex: Self = this.set("MozBoxFlex", js.undefined)
+    def setBorderBlockStyleUndefined: Self = StObject.set(x, "borderBlockStyle", js.undefined)
     
     @scala.inline
-    def setMozBoxOrdinalGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBoxOrdinalGroup", js.Any.fromFunction1(value))
+    def setBorderBlockUndefined: Self = StObject.set(x, "borderBlock", js.undefined)
     
     @scala.inline
-    def setMozBoxOrdinalGroup(value: StringOrNumberOrCallback): Self = this.set("MozBoxOrdinalGroup", value.asInstanceOf[js.Any])
+    def setBorderBlockWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBlockWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozBoxOrdinalGroup: Self = this.set("MozBoxOrdinalGroup", js.undefined)
+    def setBorderBlockWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBlockWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBoxOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBoxOrient", js.Any.fromFunction1(value))
+    def setBorderBlockWidthUndefined: Self = StObject.set(x, "borderBlockWidth", js.undefined)
     
     @scala.inline
-    def setMozBoxOrient(value: StringOrNumberOrCallback): Self = this.set("MozBoxOrient", value.asInstanceOf[js.Any])
+    def setBorderBottom(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozBoxOrient: Self = this.set("MozBoxOrient", js.undefined)
+    def setBorderBottomColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBoxPackFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBoxPack", js.Any.fromFunction1(value))
+    def setBorderBottomColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBottomColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBoxPack(value: StringOrNumberOrCallback): Self = this.set("MozBoxPack", value.asInstanceOf[js.Any])
+    def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
     
     @scala.inline
-    def deleteMozBoxPack: Self = this.set("MozBoxPack", js.undefined)
+    def setBorderBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozBoxShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBoxShadow", js.Any.fromFunction1(value))
+    def setBorderBottomLeftRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBoxShadow(value: StringOrNumberOrCallback): Self = this.set("MozBoxShadow", value.asInstanceOf[js.Any])
+    def setBorderBottomLeftRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBottomLeftRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBoxShadow: Self = this.set("MozBoxShadow", js.undefined)
+    def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
     
     @scala.inline
-    def setMozBoxSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozBoxSizing", js.Any.fromFunction1(value))
+    def setBorderBottomRightRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozBoxSizing(value: StringOrNumberOrCallback): Self = this.set("MozBoxSizing", value.asInstanceOf[js.Any])
+    def setBorderBottomRightRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBottomRightRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozBoxSizing: Self = this.set("MozBoxSizing", js.undefined)
+    def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
     
     @scala.inline
-    def setMozColumnCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozColumnCount", js.Any.fromFunction1(value))
+    def setBorderBottomStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozColumnCount(value: StringOrNumberOrCallback): Self = this.set("MozColumnCount", value.asInstanceOf[js.Any])
+    def setBorderBottomStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBottomStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozColumnCount: Self = this.set("MozColumnCount", js.undefined)
+    def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
     
     @scala.inline
-    def setMozColumnFillFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozColumnFill", js.Any.fromFunction1(value))
+    def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
     @scala.inline
-    def setMozColumnFill(value: StringOrNumberOrCallback): Self = this.set("MozColumnFill", value.asInstanceOf[js.Any])
+    def setBorderBottomWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozColumnFill: Self = this.set("MozColumnFill", js.undefined)
+    def setBorderBottomWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderBottomWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozColumnGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozColumnGap", js.Any.fromFunction1(value))
+    def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
     
     @scala.inline
-    def setMozColumnGap(value: StringOrNumberOrCallback): Self = this.set("MozColumnGap", value.asInstanceOf[js.Any])
+    def setBorderCollapse(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozColumnGap: Self = this.set("MozColumnGap", js.undefined)
+    def setBorderCollapseFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderCollapse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozColumnRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozColumnRule", js.Any.fromFunction1(value))
+    def setBorderCollapseUndefined: Self = StObject.set(x, "borderCollapse", js.undefined)
     
     @scala.inline
-    def setMozColumnRule(value: StringOrNumberOrCallback): Self = this.set("MozColumnRule", value.asInstanceOf[js.Any])
+    def setBorderColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozColumnRule: Self = this.set("MozColumnRule", js.undefined)
+    def setBorderColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozColumnRuleColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozColumnRuleColor", js.Any.fromFunction1(value))
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def setMozColumnRuleColor(value: StringOrNumberOrCallback): Self = this.set("MozColumnRuleColor", value.asInstanceOf[js.Any])
+    def setBorderEndEndRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderEndEndRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozColumnRuleColor: Self = this.set("MozColumnRuleColor", js.undefined)
+    def setBorderEndEndRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderEndEndRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozColumnRuleStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozColumnRuleStyle", js.Any.fromFunction1(value))
+    def setBorderEndEndRadiusUndefined: Self = StObject.set(x, "borderEndEndRadius", js.undefined)
     
     @scala.inline
-    def setMozColumnRuleStyle(value: StringOrNumberOrCallback): Self = this.set("MozColumnRuleStyle", value.asInstanceOf[js.Any])
+    def setBorderEndStartRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderEndStartRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozColumnRuleStyle: Self = this.set("MozColumnRuleStyle", js.undefined)
+    def setBorderEndStartRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderEndStartRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozColumnRuleWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozColumnRuleWidth", js.Any.fromFunction1(value))
+    def setBorderEndStartRadiusUndefined: Self = StObject.set(x, "borderEndStartRadius", js.undefined)
     
     @scala.inline
-    def setMozColumnRuleWidth(value: StringOrNumberOrCallback): Self = this.set("MozColumnRuleWidth", value.asInstanceOf[js.Any])
+    def setBorderFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozColumnRuleWidth: Self = this.set("MozColumnRuleWidth", js.undefined)
+    def setBorderImage(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozColumnWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozColumnWidth", js.Any.fromFunction1(value))
+    def setBorderImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozColumnWidth(value: StringOrNumberOrCallback): Self = this.set("MozColumnWidth", value.asInstanceOf[js.Any])
+    def setBorderImageOutset(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderImageOutset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozColumnWidth: Self = this.set("MozColumnWidth", js.undefined)
+    def setBorderImageOutsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderImageOutset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozColumns", js.Any.fromFunction1(value))
+    def setBorderImageOutsetUndefined: Self = StObject.set(x, "borderImageOutset", js.undefined)
     
     @scala.inline
-    def setMozColumns(value: StringOrNumberOrCallback): Self = this.set("MozColumns", value.asInstanceOf[js.Any])
+    def setBorderImageRepeat(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderImageRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozColumns: Self = this.set("MozColumns", js.undefined)
+    def setBorderImageRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderImageRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozContextPropertiesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozContextProperties", js.Any.fromFunction1(value))
+    def setBorderImageRepeatUndefined: Self = StObject.set(x, "borderImageRepeat", js.undefined)
     
     @scala.inline
-    def setMozContextProperties(value: StringOrNumberOrCallback): Self = this.set("MozContextProperties", value.asInstanceOf[js.Any])
+    def setBorderImageSlice(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderImageSlice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozContextProperties: Self = this.set("MozContextProperties", js.undefined)
+    def setBorderImageSliceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderImageSlice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozFloatEdgeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozFloatEdge", js.Any.fromFunction1(value))
+    def setBorderImageSliceUndefined: Self = StObject.set(x, "borderImageSlice", js.undefined)
     
     @scala.inline
-    def setMozFloatEdge(value: StringOrNumberOrCallback): Self = this.set("MozFloatEdge", value.asInstanceOf[js.Any])
+    def setBorderImageSource(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderImageSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozFloatEdge: Self = this.set("MozFloatEdge", js.undefined)
+    def setBorderImageSourceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderImageSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozFontFeatureSettingsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozFontFeatureSettings", js.Any.fromFunction1(value))
+    def setBorderImageSourceUndefined: Self = StObject.set(x, "borderImageSource", js.undefined)
     
     @scala.inline
-    def setMozFontFeatureSettings(value: StringOrNumberOrCallback): Self = this.set("MozFontFeatureSettings", value.asInstanceOf[js.Any])
+    def setBorderImageUndefined: Self = StObject.set(x, "borderImage", js.undefined)
     
     @scala.inline
-    def deleteMozFontFeatureSettings: Self = this.set("MozFontFeatureSettings", js.undefined)
+    def setBorderImageWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderImageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozFontLanguageOverrideFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozFontLanguageOverride", js.Any.fromFunction1(value))
+    def setBorderImageWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderImageWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozFontLanguageOverride(value: StringOrNumberOrCallback): Self = this.set("MozFontLanguageOverride", value.asInstanceOf[js.Any])
+    def setBorderImageWidthUndefined: Self = StObject.set(x, "borderImageWidth", js.undefined)
     
     @scala.inline
-    def deleteMozFontLanguageOverride: Self = this.set("MozFontLanguageOverride", js.undefined)
+    def setBorderInline(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozForceBrokenImageIconFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozForceBrokenImageIcon", js.Any.fromFunction1(value))
+    def setBorderInlineColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozForceBrokenImageIcon(value: StringOrNumberOrCallback): Self = this.set("MozForceBrokenImageIcon", value.asInstanceOf[js.Any])
+    def setBorderInlineColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozForceBrokenImageIcon: Self = this.set("MozForceBrokenImageIcon", js.undefined)
+    def setBorderInlineColorUndefined: Self = StObject.set(x, "borderInlineColor", js.undefined)
     
     @scala.inline
-    def setMozHyphensFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozHyphens", js.Any.fromFunction1(value))
+    def setBorderInlineEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozHyphens(value: StringOrNumberOrCallback): Self = this.set("MozHyphens", value.asInstanceOf[js.Any])
+    def setBorderInlineEndColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineEndColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozHyphens: Self = this.set("MozHyphens", js.undefined)
+    def setBorderInlineEndColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineEndColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozImageRegionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozImageRegion", js.Any.fromFunction1(value))
+    def setBorderInlineEndColorUndefined: Self = StObject.set(x, "borderInlineEndColor", js.undefined)
     
     @scala.inline
-    def setMozImageRegion(value: StringOrNumberOrCallback): Self = this.set("MozImageRegion", value.asInstanceOf[js.Any])
+    def setBorderInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozImageRegion: Self = this.set("MozImageRegion", js.undefined)
+    def setBorderInlineEndStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineEndStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozMarginEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozMarginEnd", js.Any.fromFunction1(value))
+    def setBorderInlineEndStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineEndStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozMarginEnd(value: StringOrNumberOrCallback): Self = this.set("MozMarginEnd", value.asInstanceOf[js.Any])
+    def setBorderInlineEndStyleUndefined: Self = StObject.set(x, "borderInlineEndStyle", js.undefined)
     
     @scala.inline
-    def deleteMozMarginEnd: Self = this.set("MozMarginEnd", js.undefined)
+    def setBorderInlineEndUndefined: Self = StObject.set(x, "borderInlineEnd", js.undefined)
     
     @scala.inline
-    def setMozMarginStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozMarginStart", js.Any.fromFunction1(value))
+    def setBorderInlineEndWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineEndWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozMarginStart(value: StringOrNumberOrCallback): Self = this.set("MozMarginStart", value.asInstanceOf[js.Any])
+    def setBorderInlineEndWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineEndWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozMarginStart: Self = this.set("MozMarginStart", js.undefined)
+    def setBorderInlineEndWidthUndefined: Self = StObject.set(x, "borderInlineEndWidth", js.undefined)
     
     @scala.inline
-    def setMozOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOpacity", js.Any.fromFunction1(value))
+    def setBorderInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOpacity(value: StringOrNumberOrCallback): Self = this.set("MozOpacity", value.asInstanceOf[js.Any])
+    def setBorderInlineStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozOpacity: Self = this.set("MozOpacity", js.undefined)
+    def setBorderInlineStartColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineStartColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOrient", js.Any.fromFunction1(value))
+    def setBorderInlineStartColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineStartColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOrient(value: StringOrNumberOrCallback): Self = this.set("MozOrient", value.asInstanceOf[js.Any])
+    def setBorderInlineStartColorUndefined: Self = StObject.set(x, "borderInlineStartColor", js.undefined)
     
     @scala.inline
-    def deleteMozOrient: Self = this.set("MozOrient", js.undefined)
+    def setBorderInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOsxFontSmoothingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOsxFontSmoothing", js.Any.fromFunction1(value))
+    def setBorderInlineStartStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineStartStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozOsxFontSmoothing(value: StringOrNumberOrCallback): Self = this.set("MozOsxFontSmoothing", value.asInstanceOf[js.Any])
+    def setBorderInlineStartStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineStartStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozOsxFontSmoothing: Self = this.set("MozOsxFontSmoothing", js.undefined)
+    def setBorderInlineStartStyleUndefined: Self = StObject.set(x, "borderInlineStartStyle", js.undefined)
     
     @scala.inline
-    def setMozOutlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOutline", js.Any.fromFunction1(value))
+    def setBorderInlineStartUndefined: Self = StObject.set(x, "borderInlineStart", js.undefined)
     
     @scala.inline
-    def setMozOutline(value: StringOrNumberOrCallback): Self = this.set("MozOutline", value.asInstanceOf[js.Any])
+    def setBorderInlineStartWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineStartWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozOutline: Self = this.set("MozOutline", js.undefined)
+    def setBorderInlineStartWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineStartWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOutlineColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOutlineColor", js.Any.fromFunction1(value))
+    def setBorderInlineStartWidthUndefined: Self = StObject.set(x, "borderInlineStartWidth", js.undefined)
     
     @scala.inline
-    def setMozOutlineColor(value: StringOrNumberOrCallback): Self = this.set("MozOutlineColor", value.asInstanceOf[js.Any])
+    def setBorderInlineStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozOutlineColor: Self = this.set("MozOutlineColor", js.undefined)
+    def setBorderInlineStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOutlineRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOutlineRadius", js.Any.fromFunction1(value))
+    def setBorderInlineStyleUndefined: Self = StObject.set(x, "borderInlineStyle", js.undefined)
     
     @scala.inline
-    def setMozOutlineRadius(value: StringOrNumberOrCallback): Self = this.set("MozOutlineRadius", value.asInstanceOf[js.Any])
+    def setBorderInlineUndefined: Self = StObject.set(x, "borderInline", js.undefined)
     
     @scala.inline
-    def deleteMozOutlineRadius: Self = this.set("MozOutlineRadius", js.undefined)
+    def setBorderInlineWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderInlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozOutlineRadiusBottomleftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOutlineRadiusBottomleft", js.Any.fromFunction1(value))
+    def setBorderInlineWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderInlineWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOutlineRadiusBottomleft(value: StringOrNumberOrCallback): Self = this.set("MozOutlineRadiusBottomleft", value.asInstanceOf[js.Any])
+    def setBorderInlineWidthUndefined: Self = StObject.set(x, "borderInlineWidth", js.undefined)
     
     @scala.inline
-    def deleteMozOutlineRadiusBottomleft: Self = this.set("MozOutlineRadiusBottomleft", js.undefined)
+    def setBorderLeft(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozOutlineRadiusBottomrightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOutlineRadiusBottomright", js.Any.fromFunction1(value))
+    def setBorderLeftColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozOutlineRadiusBottomright(value: StringOrNumberOrCallback): Self = this.set("MozOutlineRadiusBottomright", value.asInstanceOf[js.Any])
+    def setBorderLeftColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderLeftColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozOutlineRadiusBottomright: Self = this.set("MozOutlineRadiusBottomright", js.undefined)
+    def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
     
     @scala.inline
-    def setMozOutlineRadiusTopleftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOutlineRadiusTopleft", js.Any.fromFunction1(value))
+    def setBorderLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOutlineRadiusTopleft(value: StringOrNumberOrCallback): Self = this.set("MozOutlineRadiusTopleft", value.asInstanceOf[js.Any])
+    def setBorderLeftStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozOutlineRadiusTopleft: Self = this.set("MozOutlineRadiusTopleft", js.undefined)
+    def setBorderLeftStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderLeftStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOutlineRadiusToprightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOutlineRadiusTopright", js.Any.fromFunction1(value))
+    def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
     
     @scala.inline
-    def setMozOutlineRadiusTopright(value: StringOrNumberOrCallback): Self = this.set("MozOutlineRadiusTopright", value.asInstanceOf[js.Any])
+    def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
     @scala.inline
-    def deleteMozOutlineRadiusTopright: Self = this.set("MozOutlineRadiusTopright", js.undefined)
+    def setBorderLeftWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozOutlineStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOutlineStyle", js.Any.fromFunction1(value))
+    def setBorderLeftWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderLeftWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOutlineStyle(value: StringOrNumberOrCallback): Self = this.set("MozOutlineStyle", value.asInstanceOf[js.Any])
+    def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
     
     @scala.inline
-    def deleteMozOutlineStyle: Self = this.set("MozOutlineStyle", js.undefined)
+    def setBorderRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozOutlineWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozOutlineWidth", js.Any.fromFunction1(value))
+    def setBorderRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozOutlineWidth(value: StringOrNumberOrCallback): Self = this.set("MozOutlineWidth", value.asInstanceOf[js.Any])
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def deleteMozOutlineWidth: Self = this.set("MozOutlineWidth", js.undefined)
+    def setBorderRight(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozPaddingEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozPaddingEnd", js.Any.fromFunction1(value))
+    def setBorderRightColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozPaddingEnd(value: StringOrNumberOrCallback): Self = this.set("MozPaddingEnd", value.asInstanceOf[js.Any])
+    def setBorderRightColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderRightColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozPaddingEnd: Self = this.set("MozPaddingEnd", js.undefined)
+    def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
     
     @scala.inline
-    def setMozPaddingStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozPaddingStart", js.Any.fromFunction1(value))
+    def setBorderRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozPaddingStart(value: StringOrNumberOrCallback): Self = this.set("MozPaddingStart", value.asInstanceOf[js.Any])
+    def setBorderRightStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozPaddingStart: Self = this.set("MozPaddingStart", js.undefined)
+    def setBorderRightStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderRightStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozPerspectiveFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozPerspective", js.Any.fromFunction1(value))
+    def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
     
     @scala.inline
-    def setMozPerspective(value: StringOrNumberOrCallback): Self = this.set("MozPerspective", value.asInstanceOf[js.Any])
+    def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
     
     @scala.inline
-    def deleteMozPerspective: Self = this.set("MozPerspective", js.undefined)
+    def setBorderRightWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozPerspectiveOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozPerspectiveOrigin", js.Any.fromFunction1(value))
+    def setBorderRightWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderRightWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozPerspectiveOrigin(value: StringOrNumberOrCallback): Self = this.set("MozPerspectiveOrigin", value.asInstanceOf[js.Any])
+    def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
     
     @scala.inline
-    def deleteMozPerspectiveOrigin: Self = this.set("MozPerspectiveOrigin", js.undefined)
+    def setBorderSpacing(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozStackSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozStackSizing", js.Any.fromFunction1(value))
+    def setBorderSpacingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderSpacing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozStackSizing(value: StringOrNumberOrCallback): Self = this.set("MozStackSizing", value.asInstanceOf[js.Any])
+    def setBorderSpacingUndefined: Self = StObject.set(x, "borderSpacing", js.undefined)
     
     @scala.inline
-    def deleteMozStackSizing: Self = this.set("MozStackSizing", js.undefined)
+    def setBorderStartEndRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderStartEndRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTabSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTabSize", js.Any.fromFunction1(value))
+    def setBorderStartEndRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderStartEndRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozTabSize(value: StringOrNumberOrCallback): Self = this.set("MozTabSize", value.asInstanceOf[js.Any])
+    def setBorderStartEndRadiusUndefined: Self = StObject.set(x, "borderStartEndRadius", js.undefined)
     
     @scala.inline
-    def deleteMozTabSize: Self = this.set("MozTabSize", js.undefined)
+    def setBorderStartStartRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderStartStartRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTextAlignLastFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTextAlignLast", js.Any.fromFunction1(value))
+    def setBorderStartStartRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderStartStartRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozTextAlignLast(value: StringOrNumberOrCallback): Self = this.set("MozTextAlignLast", value.asInstanceOf[js.Any])
+    def setBorderStartStartRadiusUndefined: Self = StObject.set(x, "borderStartStartRadius", js.undefined)
     
     @scala.inline
-    def deleteMozTextAlignLast: Self = this.set("MozTextAlignLast", js.undefined)
+    def setBorderStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTextBlinkFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTextBlink", js.Any.fromFunction1(value))
+    def setBorderStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozTextBlink(value: StringOrNumberOrCallback): Self = this.set("MozTextBlink", value.asInstanceOf[js.Any])
+    def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
     @scala.inline
-    def deleteMozTextBlink: Self = this.set("MozTextBlink", js.undefined)
+    def setBorderTop(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTextDecorationColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTextDecorationColor", js.Any.fromFunction1(value))
+    def setBorderTopColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTextDecorationColor(value: StringOrNumberOrCallback): Self = this.set("MozTextDecorationColor", value.asInstanceOf[js.Any])
+    def setBorderTopColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderTopColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozTextDecorationColor: Self = this.set("MozTextDecorationColor", js.undefined)
+    def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
     
     @scala.inline
-    def setMozTextDecorationLineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTextDecorationLine", js.Any.fromFunction1(value))
+    def setBorderTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozTextDecorationLine(value: StringOrNumberOrCallback): Self = this.set("MozTextDecorationLine", value.asInstanceOf[js.Any])
+    def setBorderTopLeftRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozTextDecorationLine: Self = this.set("MozTextDecorationLine", js.undefined)
+    def setBorderTopLeftRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderTopLeftRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozTextDecorationStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTextDecorationStyle", js.Any.fromFunction1(value))
+    def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
     
     @scala.inline
-    def setMozTextDecorationStyle(value: StringOrNumberOrCallback): Self = this.set("MozTextDecorationStyle", value.asInstanceOf[js.Any])
+    def setBorderTopRightRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozTextDecorationStyle: Self = this.set("MozTextDecorationStyle", js.undefined)
+    def setBorderTopRightRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderTopRightRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozTextSizeAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTextSizeAdjust", js.Any.fromFunction1(value))
+    def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
     
     @scala.inline
-    def setMozTextSizeAdjust(value: StringOrNumberOrCallback): Self = this.set("MozTextSizeAdjust", value.asInstanceOf[js.Any])
+    def setBorderTopStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMozTextSizeAdjust: Self = this.set("MozTextSizeAdjust", js.undefined)
+    def setBorderTopStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderTopStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTransformOrigin", js.Any.fromFunction1(value))
+    def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
     
     @scala.inline
-    def setMozTransformOrigin(value: StringOrNumberOrCallback): Self = this.set("MozTransformOrigin", value.asInstanceOf[js.Any])
+    def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
     
     @scala.inline
-    def deleteMozTransformOrigin: Self = this.set("MozTransformOrigin", js.undefined)
+    def setBorderTopWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTransformStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTransformStyle", js.Any.fromFunction1(value))
+    def setBorderTopWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderTopWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozTransformStyle(value: StringOrNumberOrCallback): Self = this.set("MozTransformStyle", value.asInstanceOf[js.Any])
+    def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
     
     @scala.inline
-    def deleteMozTransformStyle: Self = this.set("MozTransformStyle", js.undefined)
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def setMozTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTransition", js.Any.fromFunction1(value))
+    def setBorderWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTransition(value: StringOrNumberOrCallback): Self = this.set("MozTransition", value.asInstanceOf[js.Any])
+    def setBorderWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "borderWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozTransition: Self = this.set("MozTransition", js.undefined)
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def setMozTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTransitionDelay", js.Any.fromFunction1(value))
+    def setBottom(value: StringOrNumberOrCallback): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTransitionDelay(value: StringOrNumberOrCallback): Self = this.set("MozTransitionDelay", value.asInstanceOf[js.Any])
+    def setBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "bottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozTransitionDelay: Self = this.set("MozTransitionDelay", js.undefined)
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def setMozTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTransitionDuration", js.Any.fromFunction1(value))
+    def setBoxAlign(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTransitionDuration(value: StringOrNumberOrCallback): Self = this.set("MozTransitionDuration", value.asInstanceOf[js.Any])
+    def setBoxAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozTransitionDuration: Self = this.set("MozTransitionDuration", js.undefined)
+    def setBoxAlignUndefined: Self = StObject.set(x, "boxAlign", js.undefined)
     
     @scala.inline
-    def setMozTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTransitionProperty", js.Any.fromFunction1(value))
+    def setBoxDecorationBreak(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxDecorationBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTransitionProperty(value: StringOrNumberOrCallback): Self = this.set("MozTransitionProperty", value.asInstanceOf[js.Any])
+    def setBoxDecorationBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxDecorationBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozTransitionProperty: Self = this.set("MozTransitionProperty", js.undefined)
+    def setBoxDecorationBreakUndefined: Self = StObject.set(x, "boxDecorationBreak", js.undefined)
     
     @scala.inline
-    def setMozTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozTransitionTimingFunction", js.Any.fromFunction1(value))
+    def setBoxDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozTransitionTimingFunction(value: StringOrNumberOrCallback): Self = this.set("MozTransitionTimingFunction", value.asInstanceOf[js.Any])
+    def setBoxDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozTransitionTimingFunction: Self = this.set("MozTransitionTimingFunction", js.undefined)
+    def setBoxDirectionUndefined: Self = StObject.set(x, "boxDirection", js.undefined)
     
     @scala.inline
-    def setMozUserFocusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozUserFocus", js.Any.fromFunction1(value))
+    def setBoxFlex(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxFlex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozUserFocus(value: StringOrNumberOrCallback): Self = this.set("MozUserFocus", value.asInstanceOf[js.Any])
+    def setBoxFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxFlex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozUserFocus: Self = this.set("MozUserFocus", js.undefined)
+    def setBoxFlexGroup(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxFlexGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozUserInputFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozUserInput", js.Any.fromFunction1(value))
+    def setBoxFlexGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxFlexGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMozUserInput(value: StringOrNumberOrCallback): Self = this.set("MozUserInput", value.asInstanceOf[js.Any])
+    def setBoxFlexGroupUndefined: Self = StObject.set(x, "boxFlexGroup", js.undefined)
     
     @scala.inline
-    def deleteMozUserInput: Self = this.set("MozUserInput", js.undefined)
+    def setBoxFlexUndefined: Self = StObject.set(x, "boxFlex", js.undefined)
     
     @scala.inline
-    def setMozUserModifyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozUserModify", js.Any.fromFunction1(value))
+    def setBoxLines(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozUserModify(value: StringOrNumberOrCallback): Self = this.set("MozUserModify", value.asInstanceOf[js.Any])
+    def setBoxLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxLines", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozUserModify: Self = this.set("MozUserModify", js.undefined)
+    def setBoxLinesUndefined: Self = StObject.set(x, "boxLines", js.undefined)
     
     @scala.inline
-    def setMozUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozUserSelect", js.Any.fromFunction1(value))
+    def setBoxOrdinalGroup(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxOrdinalGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozUserSelect(value: StringOrNumberOrCallback): Self = this.set("MozUserSelect", value.asInstanceOf[js.Any])
+    def setBoxOrdinalGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxOrdinalGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozUserSelect: Self = this.set("MozUserSelect", js.undefined)
+    def setBoxOrdinalGroupUndefined: Self = StObject.set(x, "boxOrdinalGroup", js.undefined)
     
     @scala.inline
-    def setMozWindowDraggingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozWindowDragging", js.Any.fromFunction1(value))
+    def setBoxOrient(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozWindowDragging(value: StringOrNumberOrCallback): Self = this.set("MozWindowDragging", value.asInstanceOf[js.Any])
+    def setBoxOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxOrient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozWindowDragging: Self = this.set("MozWindowDragging", js.undefined)
+    def setBoxOrientUndefined: Self = StObject.set(x, "boxOrient", js.undefined)
     
     @scala.inline
-    def setMozWindowShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("MozWindowShadow", js.Any.fromFunction1(value))
+    def setBoxPack(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxPack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozWindowShadow(value: StringOrNumberOrCallback): Self = this.set("MozWindowShadow", value.asInstanceOf[js.Any])
+    def setBoxPackFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxPack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMozWindowShadow: Self = this.set("MozWindowShadow", js.undefined)
+    def setBoxPackUndefined: Self = StObject.set(x, "boxPack", js.undefined)
     
     @scala.inline
-    def setOAnimationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OAnimation", js.Any.fromFunction1(value))
+    def setBoxShadow(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAnimation(value: StringOrNumberOrCallback): Self = this.set("OAnimation", value.asInstanceOf[js.Any])
+    def setBoxShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxShadow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOAnimation: Self = this.set("OAnimation", js.undefined)
+    def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
     @scala.inline
-    def setOAnimationDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OAnimationDelay", js.Any.fromFunction1(value))
+    def setBoxSizing(value: StringOrNumberOrCallback): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAnimationDelay(value: StringOrNumberOrCallback): Self = this.set("OAnimationDelay", value.asInstanceOf[js.Any])
+    def setBoxSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "boxSizing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOAnimationDelay: Self = this.set("OAnimationDelay", js.undefined)
+    def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
     
     @scala.inline
-    def setOAnimationDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OAnimationDirection", js.Any.fromFunction1(value))
+    def setBreakAfter(value: StringOrNumberOrCallback): Self = StObject.set(x, "breakAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAnimationDirection(value: StringOrNumberOrCallback): Self = this.set("OAnimationDirection", value.asInstanceOf[js.Any])
+    def setBreakAfterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "breakAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOAnimationDirection: Self = this.set("OAnimationDirection", js.undefined)
+    def setBreakAfterUndefined: Self = StObject.set(x, "breakAfter", js.undefined)
     
     @scala.inline
-    def setOAnimationDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OAnimationDuration", js.Any.fromFunction1(value))
+    def setBreakBefore(value: StringOrNumberOrCallback): Self = StObject.set(x, "breakBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAnimationDuration(value: StringOrNumberOrCallback): Self = this.set("OAnimationDuration", value.asInstanceOf[js.Any])
+    def setBreakBeforeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "breakBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOAnimationDuration: Self = this.set("OAnimationDuration", js.undefined)
+    def setBreakBeforeUndefined: Self = StObject.set(x, "breakBefore", js.undefined)
     
     @scala.inline
-    def setOAnimationFillModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OAnimationFillMode", js.Any.fromFunction1(value))
+    def setBreakInside(value: StringOrNumberOrCallback): Self = StObject.set(x, "breakInside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAnimationFillMode(value: StringOrNumberOrCallback): Self = this.set("OAnimationFillMode", value.asInstanceOf[js.Any])
+    def setBreakInsideFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "breakInside", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOAnimationFillMode: Self = this.set("OAnimationFillMode", js.undefined)
+    def setBreakInsideUndefined: Self = StObject.set(x, "breakInside", js.undefined)
     
     @scala.inline
-    def setOAnimationIterationCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OAnimationIterationCount", js.Any.fromFunction1(value))
+    def setCaptionSide(value: StringOrNumberOrCallback): Self = StObject.set(x, "captionSide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAnimationIterationCount(value: StringOrNumberOrCallback): Self = this.set("OAnimationIterationCount", value.asInstanceOf[js.Any])
+    def setCaptionSideFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "captionSide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOAnimationIterationCount: Self = this.set("OAnimationIterationCount", js.undefined)
+    def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
     
     @scala.inline
-    def setOAnimationNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OAnimationName", js.Any.fromFunction1(value))
+    def setCaretColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAnimationName(value: StringOrNumberOrCallback): Self = this.set("OAnimationName", value.asInstanceOf[js.Any])
+    def setCaretColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "caretColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOAnimationName: Self = this.set("OAnimationName", js.undefined)
+    def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
     
     @scala.inline
-    def setOAnimationPlayStateFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OAnimationPlayState", js.Any.fromFunction1(value))
+    def setClear(value: StringOrNumberOrCallback): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAnimationPlayState(value: StringOrNumberOrCallback): Self = this.set("OAnimationPlayState", value.asInstanceOf[js.Any])
+    def setClearFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOAnimationPlayState: Self = this.set("OAnimationPlayState", js.undefined)
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def setOAnimationTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OAnimationTimingFunction", js.Any.fromFunction1(value))
+    def setClip(value: StringOrNumberOrCallback): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAnimationTimingFunction(value: StringOrNumberOrCallback): Self = this.set("OAnimationTimingFunction", value.asInstanceOf[js.Any])
+    def setClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "clip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOAnimationTimingFunction: Self = this.set("OAnimationTimingFunction", js.undefined)
+    def setClipPath(value: StringOrNumberOrCallback): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOBackgroundSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OBackgroundSize", js.Any.fromFunction1(value))
+    def setClipPathFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "clipPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOBackgroundSize(value: StringOrNumberOrCallback): Self = this.set("OBackgroundSize", value.asInstanceOf[js.Any])
+    def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
     
     @scala.inline
-    def deleteOBackgroundSize: Self = this.set("OBackgroundSize", js.undefined)
+    def setClipRule(value: StringOrNumberOrCallback): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOBorderImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OBorderImage", js.Any.fromFunction1(value))
+    def setClipRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "clipRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOBorderImage(value: StringOrNumberOrCallback): Self = this.set("OBorderImage", value.asInstanceOf[js.Any])
+    def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
     
     @scala.inline
-    def deleteOBorderImage: Self = this.set("OBorderImage", js.undefined)
+    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
     @scala.inline
-    def setOObjectFitFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OObjectFit", js.Any.fromFunction1(value))
+    def setColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOObjectFit(value: StringOrNumberOrCallback): Self = this.set("OObjectFit", value.asInstanceOf[js.Any])
+    def setColorAdjust(value: StringOrNumberOrCallback): Self = StObject.set(x, "colorAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOObjectFit: Self = this.set("OObjectFit", js.undefined)
+    def setColorAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "colorAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOObjectPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OObjectPosition", js.Any.fromFunction1(value))
+    def setColorAdjustUndefined: Self = StObject.set(x, "colorAdjust", js.undefined)
     
     @scala.inline
-    def setOObjectPosition(value: StringOrNumberOrCallback): Self = this.set("OObjectPosition", value.asInstanceOf[js.Any])
+    def setColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOObjectPosition: Self = this.set("OObjectPosition", js.undefined)
+    def setColorInterpolation(value: StringOrNumberOrCallback): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOTabSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OTabSize", js.Any.fromFunction1(value))
+    def setColorInterpolationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "colorInterpolation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOTabSize(value: StringOrNumberOrCallback): Self = this.set("OTabSize", value.asInstanceOf[js.Any])
+    def setColorInterpolationUndefined: Self = StObject.set(x, "colorInterpolation", js.undefined)
     
     @scala.inline
-    def deleteOTabSize: Self = this.set("OTabSize", js.undefined)
+    def setColorRendering(value: StringOrNumberOrCallback): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOTextOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OTextOverflow", js.Any.fromFunction1(value))
+    def setColorRenderingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "colorRendering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOTextOverflow(value: StringOrNumberOrCallback): Self = this.set("OTextOverflow", value.asInstanceOf[js.Any])
+    def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
     
     @scala.inline
-    def deleteOTextOverflow: Self = this.set("OTextOverflow", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setOTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OTransform", js.Any.fromFunction1(value))
+    def setColumnCount(value: StringOrNumberOrCallback): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOTransform(value: StringOrNumberOrCallback): Self = this.set("OTransform", value.asInstanceOf[js.Any])
+    def setColumnCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columnCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOTransform: Self = this.set("OTransform", js.undefined)
+    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
     @scala.inline
-    def setOTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OTransformOrigin", js.Any.fromFunction1(value))
+    def setColumnFill(value: StringOrNumberOrCallback): Self = StObject.set(x, "columnFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOTransformOrigin(value: StringOrNumberOrCallback): Self = this.set("OTransformOrigin", value.asInstanceOf[js.Any])
+    def setColumnFillFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columnFill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOTransformOrigin: Self = this.set("OTransformOrigin", js.undefined)
+    def setColumnFillUndefined: Self = StObject.set(x, "columnFill", js.undefined)
     
     @scala.inline
-    def setOTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OTransition", js.Any.fromFunction1(value))
+    def setColumnGap(value: StringOrNumberOrCallback): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOTransition(value: StringOrNumberOrCallback): Self = this.set("OTransition", value.asInstanceOf[js.Any])
+    def setColumnGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columnGap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOTransition: Self = this.set("OTransition", js.undefined)
+    def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
     
     @scala.inline
-    def setOTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OTransitionDelay", js.Any.fromFunction1(value))
+    def setColumnRule(value: StringOrNumberOrCallback): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOTransitionDelay(value: StringOrNumberOrCallback): Self = this.set("OTransitionDelay", value.asInstanceOf[js.Any])
+    def setColumnRuleColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "columnRuleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOTransitionDelay: Self = this.set("OTransitionDelay", js.undefined)
+    def setColumnRuleColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columnRuleColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OTransitionDuration", js.Any.fromFunction1(value))
+    def setColumnRuleColorUndefined: Self = StObject.set(x, "columnRuleColor", js.undefined)
     
     @scala.inline
-    def setOTransitionDuration(value: StringOrNumberOrCallback): Self = this.set("OTransitionDuration", value.asInstanceOf[js.Any])
+    def setColumnRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columnRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOTransitionDuration: Self = this.set("OTransitionDuration", js.undefined)
+    def setColumnRuleStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "columnRuleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OTransitionProperty", js.Any.fromFunction1(value))
+    def setColumnRuleStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columnRuleStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOTransitionProperty(value: StringOrNumberOrCallback): Self = this.set("OTransitionProperty", value.asInstanceOf[js.Any])
+    def setColumnRuleStyleUndefined: Self = StObject.set(x, "columnRuleStyle", js.undefined)
     
     @scala.inline
-    def deleteOTransitionProperty: Self = this.set("OTransitionProperty", js.undefined)
+    def setColumnRuleUndefined: Self = StObject.set(x, "columnRule", js.undefined)
     
     @scala.inline
-    def setOTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("OTransitionTimingFunction", js.Any.fromFunction1(value))
+    def setColumnRuleWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "columnRuleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOTransitionTimingFunction(value: StringOrNumberOrCallback): Self = this.set("OTransitionTimingFunction", value.asInstanceOf[js.Any])
+    def setColumnRuleWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columnRuleWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOTransitionTimingFunction: Self = this.set("OTransitionTimingFunction", js.undefined)
+    def setColumnRuleWidthUndefined: Self = StObject.set(x, "columnRuleWidth", js.undefined)
     
     @scala.inline
-    def setWebkitAlignContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAlignContent", js.Any.fromFunction1(value))
+    def setColumnSpan(value: StringOrNumberOrCallback): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAlignContent(value: StringOrNumberOrCallback): Self = this.set("WebkitAlignContent", value.asInstanceOf[js.Any])
+    def setColumnSpanFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columnSpan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAlignContent: Self = this.set("WebkitAlignContent", js.undefined)
+    def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
     @scala.inline
-    def setWebkitAlignItemsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAlignItems", js.Any.fromFunction1(value))
+    def setColumnWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAlignItems(value: StringOrNumberOrCallback): Self = this.set("WebkitAlignItems", value.asInstanceOf[js.Any])
+    def setColumnWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columnWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAlignItems: Self = this.set("WebkitAlignItems", js.undefined)
+    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     @scala.inline
-    def setWebkitAlignSelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAlignSelf", js.Any.fromFunction1(value))
+    def setColumns(value: StringOrNumberOrCallback): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAlignSelf(value: StringOrNumberOrCallback): Self = this.set("WebkitAlignSelf", value.asInstanceOf[js.Any])
+    def setColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAlignSelf: Self = this.set("WebkitAlignSelf", js.undefined)
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def setWebkitAnimationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAnimation", js.Any.fromFunction1(value))
+    def setContain(value: StringOrNumberOrCallback): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAnimation(value: StringOrNumberOrCallback): Self = this.set("WebkitAnimation", value.asInstanceOf[js.Any])
+    def setContainFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAnimation: Self = this.set("WebkitAnimation", js.undefined)
+    def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
     
     @scala.inline
-    def setWebkitAnimationDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAnimationDelay", js.Any.fromFunction1(value))
+    def setContent(value: StringOrNumberOrCallback): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAnimationDelay(value: StringOrNumberOrCallback): Self = this.set("WebkitAnimationDelay", value.asInstanceOf[js.Any])
+    def setContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAnimationDelay: Self = this.set("WebkitAnimationDelay", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setWebkitAnimationDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAnimationDirection", js.Any.fromFunction1(value))
+    def setCounterIncrement(value: StringOrNumberOrCallback): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAnimationDirection(value: StringOrNumberOrCallback): Self = this.set("WebkitAnimationDirection", value.asInstanceOf[js.Any])
+    def setCounterIncrementFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "counterIncrement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAnimationDirection: Self = this.set("WebkitAnimationDirection", js.undefined)
+    def setCounterIncrementUndefined: Self = StObject.set(x, "counterIncrement", js.undefined)
     
     @scala.inline
-    def setWebkitAnimationDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAnimationDuration", js.Any.fromFunction1(value))
+    def setCounterReset(value: StringOrNumberOrCallback): Self = StObject.set(x, "counterReset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAnimationDuration(value: StringOrNumberOrCallback): Self = this.set("WebkitAnimationDuration", value.asInstanceOf[js.Any])
+    def setCounterResetFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "counterReset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAnimationDuration: Self = this.set("WebkitAnimationDuration", js.undefined)
+    def setCounterResetUndefined: Self = StObject.set(x, "counterReset", js.undefined)
     
     @scala.inline
-    def setWebkitAnimationFillModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAnimationFillMode", js.Any.fromFunction1(value))
+    def setCounterSet(value: StringOrNumberOrCallback): Self = StObject.set(x, "counterSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAnimationFillMode(value: StringOrNumberOrCallback): Self = this.set("WebkitAnimationFillMode", value.asInstanceOf[js.Any])
+    def setCounterSetFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "counterSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAnimationFillMode: Self = this.set("WebkitAnimationFillMode", js.undefined)
+    def setCounterSetUndefined: Self = StObject.set(x, "counterSet", js.undefined)
     
     @scala.inline
-    def setWebkitAnimationIterationCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAnimationIterationCount", js.Any.fromFunction1(value))
+    def setCursor(value: StringOrNumberOrCallback): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAnimationIterationCount(value: StringOrNumberOrCallback): Self = this.set("WebkitAnimationIterationCount", value.asInstanceOf[js.Any])
+    def setCursorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "cursor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAnimationIterationCount: Self = this.set("WebkitAnimationIterationCount", js.undefined)
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def setWebkitAnimationNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAnimationName", js.Any.fromFunction1(value))
+    def setDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAnimationName(value: StringOrNumberOrCallback): Self = this.set("WebkitAnimationName", value.asInstanceOf[js.Any])
+    def setDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "direction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAnimationName: Self = this.set("WebkitAnimationName", js.undefined)
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setWebkitAnimationPlayStateFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAnimationPlayState", js.Any.fromFunction1(value))
+    def setDisplay(value: StringOrNumberOrCallback): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAnimationPlayState(value: StringOrNumberOrCallback): Self = this.set("WebkitAnimationPlayState", value.asInstanceOf[js.Any])
+    def setDisplayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAnimationPlayState: Self = this.set("WebkitAnimationPlayState", js.undefined)
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def setWebkitAnimationTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAnimationTimingFunction", js.Any.fromFunction1(value))
+    def setDominantBaseline(value: StringOrNumberOrCallback): Self = StObject.set(x, "dominantBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAnimationTimingFunction(value: StringOrNumberOrCallback): Self = this.set("WebkitAnimationTimingFunction", value.asInstanceOf[js.Any])
+    def setDominantBaselineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "dominantBaseline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAnimationTimingFunction: Self = this.set("WebkitAnimationTimingFunction", js.undefined)
+    def setDominantBaselineUndefined: Self = StObject.set(x, "dominantBaseline", js.undefined)
     
     @scala.inline
-    def setWebkitAppearanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitAppearance", js.Any.fromFunction1(value))
+    def setEmptyCells(value: StringOrNumberOrCallback): Self = StObject.set(x, "emptyCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitAppearance(value: StringOrNumberOrCallback): Self = this.set("WebkitAppearance", value.asInstanceOf[js.Any])
+    def setEmptyCellsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "emptyCells", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitAppearance: Self = this.set("WebkitAppearance", js.undefined)
+    def setEmptyCellsUndefined: Self = StObject.set(x, "emptyCells", js.undefined)
     
     @scala.inline
-    def setWebkitBackdropFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBackdropFilter", js.Any.fromFunction1(value))
+    def setFill(value: StringOrNumberOrCallback): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBackdropFilter(value: StringOrNumberOrCallback): Self = this.set("WebkitBackdropFilter", value.asInstanceOf[js.Any])
+    def setFillFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitBackdropFilter: Self = this.set("WebkitBackdropFilter", js.undefined)
+    def setFillOpacity(value: StringOrNumberOrCallback): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBackfaceVisibilityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBackfaceVisibility", js.Any.fromFunction1(value))
+    def setFillOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fillOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBackfaceVisibility(value: StringOrNumberOrCallback): Self = this.set("WebkitBackfaceVisibility", value.asInstanceOf[js.Any])
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def deleteWebkitBackfaceVisibility: Self = this.set("WebkitBackfaceVisibility", js.undefined)
+    def setFillRule(value: StringOrNumberOrCallback): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBackgroundClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBackgroundClip", js.Any.fromFunction1(value))
+    def setFillRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fillRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBackgroundClip(value: StringOrNumberOrCallback): Self = this.set("WebkitBackgroundClip", value.asInstanceOf[js.Any])
+    def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
     
     @scala.inline
-    def deleteWebkitBackgroundClip: Self = this.set("WebkitBackgroundClip", js.undefined)
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def setWebkitBackgroundOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBackgroundOrigin", js.Any.fromFunction1(value))
+    def setFilter(value: StringOrNumberOrCallback): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBackgroundOrigin(value: StringOrNumberOrCallback): Self = this.set("WebkitBackgroundOrigin", value.asInstanceOf[js.Any])
+    def setFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitBackgroundOrigin: Self = this.set("WebkitBackgroundOrigin", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setWebkitBackgroundSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBackgroundSize", js.Any.fromFunction1(value))
+    def setFlex(value: StringOrNumberOrCallback): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBackgroundSize(value: StringOrNumberOrCallback): Self = this.set("WebkitBackgroundSize", value.asInstanceOf[js.Any])
+    def setFlexBasis(value: StringOrNumberOrCallback): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitBackgroundSize: Self = this.set("WebkitBackgroundSize", js.undefined)
+    def setFlexBasisFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "flexBasis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBorderBeforeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderBefore", js.Any.fromFunction1(value))
+    def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
     
     @scala.inline
-    def setWebkitBorderBefore(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderBefore", value.asInstanceOf[js.Any])
+    def setFlexDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitBorderBefore: Self = this.set("WebkitBorderBefore", js.undefined)
+    def setFlexDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "flexDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBorderBeforeColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderBeforeColor", js.Any.fromFunction1(value))
+    def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
     
     @scala.inline
-    def setWebkitBorderBeforeColor(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderBeforeColor", value.asInstanceOf[js.Any])
+    def setFlexFlow(value: StringOrNumberOrCallback): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitBorderBeforeColor: Self = this.set("WebkitBorderBeforeColor", js.undefined)
+    def setFlexFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "flexFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBorderBeforeStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderBeforeStyle", js.Any.fromFunction1(value))
+    def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
     
     @scala.inline
-    def setWebkitBorderBeforeStyle(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderBeforeStyle", value.asInstanceOf[js.Any])
+    def setFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "flex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitBorderBeforeStyle: Self = this.set("WebkitBorderBeforeStyle", js.undefined)
+    def setFlexGrow(value: StringOrNumberOrCallback): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBorderBeforeWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderBeforeWidth", js.Any.fromFunction1(value))
+    def setFlexGrowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "flexGrow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBorderBeforeWidth(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderBeforeWidth", value.asInstanceOf[js.Any])
+    def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
     
     @scala.inline
-    def deleteWebkitBorderBeforeWidth: Self = this.set("WebkitBorderBeforeWidth", js.undefined)
+    def setFlexShrink(value: StringOrNumberOrCallback): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBorderBottomLeftRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderBottomLeftRadius", js.Any.fromFunction1(value))
+    def setFlexShrinkFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "flexShrink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBorderBottomLeftRadius(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderBottomLeftRadius", value.asInstanceOf[js.Any])
+    def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
     
     @scala.inline
-    def deleteWebkitBorderBottomLeftRadius: Self = this.set("WebkitBorderBottomLeftRadius", js.undefined)
+    def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
     @scala.inline
-    def setWebkitBorderBottomRightRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderBottomRightRadius", js.Any.fromFunction1(value))
+    def setFlexWrap(value: StringOrNumberOrCallback): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBorderBottomRightRadius(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderBottomRightRadius", value.asInstanceOf[js.Any])
+    def setFlexWrapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "flexWrap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitBorderBottomRightRadius: Self = this.set("WebkitBorderBottomRightRadius", js.undefined)
+    def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
     
     @scala.inline
-    def setWebkitBorderImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderImage", js.Any.fromFunction1(value))
+    def setFloat(value: StringOrNumberOrCallback): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBorderImage(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderImage", value.asInstanceOf[js.Any])
+    def setFloatFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "float", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitBorderImage: Self = this.set("WebkitBorderImage", js.undefined)
+    def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
     
     @scala.inline
-    def setWebkitBorderImageSliceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderImageSlice", js.Any.fromFunction1(value))
+    def setFloodColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "floodColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBorderImageSlice(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderImageSlice", value.asInstanceOf[js.Any])
+    def setFloodColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "floodColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitBorderImageSlice: Self = this.set("WebkitBorderImageSlice", js.undefined)
+    def setFloodColorUndefined: Self = StObject.set(x, "floodColor", js.undefined)
     
     @scala.inline
-    def setWebkitBorderRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderRadius", js.Any.fromFunction1(value))
+    def setFloodOpacity(value: StringOrNumberOrCallback): Self = StObject.set(x, "floodOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBorderRadius(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderRadius", value.asInstanceOf[js.Any])
+    def setFloodOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "floodOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitBorderRadius: Self = this.set("WebkitBorderRadius", js.undefined)
+    def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
     
     @scala.inline
-    def setWebkitBorderTopLeftRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderTopLeftRadius", js.Any.fromFunction1(value))
+    def setFont(value: StringOrNumberOrCallback): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBorderTopLeftRadius(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderTopLeftRadius", value.asInstanceOf[js.Any])
+    def setFontFamily(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitBorderTopLeftRadius: Self = this.set("WebkitBorderTopLeftRadius", js.undefined)
+    def setFontFamilyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontFamily", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBorderTopRightRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBorderTopRightRadius", js.Any.fromFunction1(value))
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def setWebkitBorderTopRightRadius(value: StringOrNumberOrCallback): Self = this.set("WebkitBorderTopRightRadius", value.asInstanceOf[js.Any])
+    def setFontFeatureSettings(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontFeatureSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitBorderTopRightRadius: Self = this.set("WebkitBorderTopRightRadius", js.undefined)
+    def setFontFeatureSettingsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontFeatureSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxAlign", js.Any.fromFunction1(value))
+    def setFontFeatureSettingsUndefined: Self = StObject.set(x, "fontFeatureSettings", js.undefined)
     
     @scala.inline
-    def setWebkitBoxAlign(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxAlign", value.asInstanceOf[js.Any])
+    def setFontFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "font", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitBoxAlign: Self = this.set("WebkitBoxAlign", js.undefined)
+    def setFontKerning(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxDecorationBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxDecorationBreak", js.Any.fromFunction1(value))
+    def setFontKerningFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontKerning", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxDecorationBreak(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxDecorationBreak", value.asInstanceOf[js.Any])
+    def setFontKerningUndefined: Self = StObject.set(x, "fontKerning", js.undefined)
     
     @scala.inline
-    def deleteWebkitBoxDecorationBreak: Self = this.set("WebkitBoxDecorationBreak", js.undefined)
+    def setFontLanguageOverride(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontLanguageOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxDirection", js.Any.fromFunction1(value))
+    def setFontLanguageOverrideFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontLanguageOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxDirection(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxDirection", value.asInstanceOf[js.Any])
+    def setFontLanguageOverrideUndefined: Self = StObject.set(x, "fontLanguageOverride", js.undefined)
     
     @scala.inline
-    def deleteWebkitBoxDirection: Self = this.set("WebkitBoxDirection", js.undefined)
+    def setFontOpticalSizing(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontOpticalSizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxFlex", js.Any.fromFunction1(value))
+    def setFontOpticalSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontOpticalSizing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxFlex(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxFlex", value.asInstanceOf[js.Any])
+    def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
     
     @scala.inline
-    def deleteWebkitBoxFlex: Self = this.set("WebkitBoxFlex", js.undefined)
+    def setFontSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxFlexGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxFlexGroup", js.Any.fromFunction1(value))
+    def setFontSizeAdjust(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxFlexGroup(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxFlexGroup", value.asInstanceOf[js.Any])
+    def setFontSizeAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontSizeAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitBoxFlexGroup: Self = this.set("WebkitBoxFlexGroup", js.undefined)
+    def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
     
     @scala.inline
-    def setWebkitBoxLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxLines", js.Any.fromFunction1(value))
+    def setFontSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxLines(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxLines", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteWebkitBoxLines: Self = this.set("WebkitBoxLines", js.undefined)
+    def setFontSmooth(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontSmooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxOrdinalGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxOrdinalGroup", js.Any.fromFunction1(value))
+    def setFontSmoothFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontSmooth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxOrdinalGroup(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxOrdinalGroup", value.asInstanceOf[js.Any])
+    def setFontSmoothUndefined: Self = StObject.set(x, "fontSmooth", js.undefined)
     
     @scala.inline
-    def deleteWebkitBoxOrdinalGroup: Self = this.set("WebkitBoxOrdinalGroup", js.undefined)
+    def setFontStretch(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxOrient", js.Any.fromFunction1(value))
+    def setFontStretchFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontStretch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxOrient(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxOrient", value.asInstanceOf[js.Any])
+    def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
     
     @scala.inline
-    def deleteWebkitBoxOrient: Self = this.set("WebkitBoxOrient", js.undefined)
+    def setFontStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxPackFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxPack", js.Any.fromFunction1(value))
+    def setFontStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxPack(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxPack", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteWebkitBoxPack: Self = this.set("WebkitBoxPack", js.undefined)
+    def setFontSynthesis(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxReflectFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxReflect", js.Any.fromFunction1(value))
+    def setFontSynthesisFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontSynthesis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxReflect(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxReflect", value.asInstanceOf[js.Any])
+    def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
     
     @scala.inline
-    def deleteWebkitBoxReflect: Self = this.set("WebkitBoxReflect", js.undefined)
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def setWebkitBoxShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxShadow", js.Any.fromFunction1(value))
+    def setFontVariant(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitBoxShadow(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxShadow", value.asInstanceOf[js.Any])
+    def setFontVariantAlternates(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontVariantAlternates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitBoxShadow: Self = this.set("WebkitBoxShadow", js.undefined)
+    def setFontVariantAlternatesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariantAlternates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitBoxSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitBoxSizing", js.Any.fromFunction1(value))
+    def setFontVariantAlternatesUndefined: Self = StObject.set(x, "fontVariantAlternates", js.undefined)
     
     @scala.inline
-    def setWebkitBoxSizing(value: StringOrNumberOrCallback): Self = this.set("WebkitBoxSizing", value.asInstanceOf[js.Any])
+    def setFontVariantCaps(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontVariantCaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitBoxSizing: Self = this.set("WebkitBoxSizing", js.undefined)
+    def setFontVariantCapsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariantCaps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitClipPathFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitClipPath", js.Any.fromFunction1(value))
+    def setFontVariantCapsUndefined: Self = StObject.set(x, "fontVariantCaps", js.undefined)
     
     @scala.inline
-    def setWebkitClipPath(value: StringOrNumberOrCallback): Self = this.set("WebkitClipPath", value.asInstanceOf[js.Any])
+    def setFontVariantEastAsian(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitClipPath: Self = this.set("WebkitClipPath", js.undefined)
+    def setFontVariantEastAsianFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariantEastAsian", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitColumnCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumnCount", js.Any.fromFunction1(value))
+    def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
     
     @scala.inline
-    def setWebkitColumnCount(value: StringOrNumberOrCallback): Self = this.set("WebkitColumnCount", value.asInstanceOf[js.Any])
+    def setFontVariantFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariant", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitColumnCount: Self = this.set("WebkitColumnCount", js.undefined)
+    def setFontVariantLigatures(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitColumnFillFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumnFill", js.Any.fromFunction1(value))
+    def setFontVariantLigaturesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariantLigatures", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitColumnFill(value: StringOrNumberOrCallback): Self = this.set("WebkitColumnFill", value.asInstanceOf[js.Any])
+    def setFontVariantLigaturesUndefined: Self = StObject.set(x, "fontVariantLigatures", js.undefined)
     
     @scala.inline
-    def deleteWebkitColumnFill: Self = this.set("WebkitColumnFill", js.undefined)
+    def setFontVariantNumeric(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontVariantNumeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitColumnGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumnGap", js.Any.fromFunction1(value))
+    def setFontVariantNumericFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariantNumeric", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitColumnGap(value: StringOrNumberOrCallback): Self = this.set("WebkitColumnGap", value.asInstanceOf[js.Any])
+    def setFontVariantNumericUndefined: Self = StObject.set(x, "fontVariantNumeric", js.undefined)
     
     @scala.inline
-    def deleteWebkitColumnGap: Self = this.set("WebkitColumnGap", js.undefined)
+    def setFontVariantPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontVariantPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitColumnRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumnRule", js.Any.fromFunction1(value))
+    def setFontVariantPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariantPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitColumnRule(value: StringOrNumberOrCallback): Self = this.set("WebkitColumnRule", value.asInstanceOf[js.Any])
+    def setFontVariantPositionUndefined: Self = StObject.set(x, "fontVariantPosition", js.undefined)
     
     @scala.inline
-    def deleteWebkitColumnRule: Self = this.set("WebkitColumnRule", js.undefined)
+    def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
     
     @scala.inline
-    def setWebkitColumnRuleColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumnRuleColor", js.Any.fromFunction1(value))
+    def setFontVariationSettings(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontVariationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitColumnRuleColor(value: StringOrNumberOrCallback): Self = this.set("WebkitColumnRuleColor", value.asInstanceOf[js.Any])
+    def setFontVariationSettingsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariationSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitColumnRuleColor: Self = this.set("WebkitColumnRuleColor", js.undefined)
+    def setFontVariationSettingsUndefined: Self = StObject.set(x, "fontVariationSettings", js.undefined)
     
     @scala.inline
-    def setWebkitColumnRuleStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumnRuleStyle", js.Any.fromFunction1(value))
+    def setFontWeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitColumnRuleStyle(value: StringOrNumberOrCallback): Self = this.set("WebkitColumnRuleStyle", value.asInstanceOf[js.Any])
+    def setFontWeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontWeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitColumnRuleStyle: Self = this.set("WebkitColumnRuleStyle", js.undefined)
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def setWebkitColumnRuleWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumnRuleWidth", js.Any.fromFunction1(value))
+    def setGap(value: StringOrNumberOrCallback): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitColumnRuleWidth(value: StringOrNumberOrCallback): Self = this.set("WebkitColumnRuleWidth", value.asInstanceOf[js.Any])
+    def setGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitColumnRuleWidth: Self = this.set("WebkitColumnRuleWidth", js.undefined)
+    def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
     @scala.inline
-    def setWebkitColumnSpanFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumnSpan", js.Any.fromFunction1(value))
+    def setGlyphOrientationVertical(value: StringOrNumberOrCallback): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitColumnSpan(value: StringOrNumberOrCallback): Self = this.set("WebkitColumnSpan", value.asInstanceOf[js.Any])
+    def setGlyphOrientationVerticalFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "glyphOrientationVertical", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitColumnSpan: Self = this.set("WebkitColumnSpan", js.undefined)
+    def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
     
     @scala.inline
-    def setWebkitColumnWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumnWidth", js.Any.fromFunction1(value))
+    def setGrid(value: StringOrNumberOrCallback): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitColumnWidth(value: StringOrNumberOrCallback): Self = this.set("WebkitColumnWidth", value.asInstanceOf[js.Any])
+    def setGridArea(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitColumnWidth: Self = this.set("WebkitColumnWidth", js.undefined)
+    def setGridAreaFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridArea", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitColumns", js.Any.fromFunction1(value))
+    def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
     @scala.inline
-    def setWebkitColumns(value: StringOrNumberOrCallback): Self = this.set("WebkitColumns", value.asInstanceOf[js.Any])
+    def setGridAutoColumns(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitColumns: Self = this.set("WebkitColumns", js.undefined)
+    def setGridAutoColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridAutoColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFilter", js.Any.fromFunction1(value))
+    def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
     
     @scala.inline
-    def setWebkitFilter(value: StringOrNumberOrCallback): Self = this.set("WebkitFilter", value.asInstanceOf[js.Any])
+    def setGridAutoFlow(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitFilter: Self = this.set("WebkitFilter", js.undefined)
+    def setGridAutoFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridAutoFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFlex", js.Any.fromFunction1(value))
+    def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
     
     @scala.inline
-    def setWebkitFlex(value: StringOrNumberOrCallback): Self = this.set("WebkitFlex", value.asInstanceOf[js.Any])
+    def setGridAutoRows(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitFlex: Self = this.set("WebkitFlex", js.undefined)
+    def setGridAutoRowsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridAutoRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitFlexBasisFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFlexBasis", js.Any.fromFunction1(value))
+    def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
     
     @scala.inline
-    def setWebkitFlexBasis(value: StringOrNumberOrCallback): Self = this.set("WebkitFlexBasis", value.asInstanceOf[js.Any])
+    def setGridColumn(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitFlexBasis: Self = this.set("WebkitFlexBasis", js.undefined)
+    def setGridColumnEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridColumnEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitFlexDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFlexDirection", js.Any.fromFunction1(value))
+    def setGridColumnEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridColumnEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitFlexDirection(value: StringOrNumberOrCallback): Self = this.set("WebkitFlexDirection", value.asInstanceOf[js.Any])
+    def setGridColumnEndUndefined: Self = StObject.set(x, "gridColumnEnd", js.undefined)
     
     @scala.inline
-    def deleteWebkitFlexDirection: Self = this.set("WebkitFlexDirection", js.undefined)
+    def setGridColumnFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitFlexFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFlexFlow", js.Any.fromFunction1(value))
+    def setGridColumnGap(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitFlexFlow(value: StringOrNumberOrCallback): Self = this.set("WebkitFlexFlow", value.asInstanceOf[js.Any])
+    def setGridColumnGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridColumnGap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitFlexFlow: Self = this.set("WebkitFlexFlow", js.undefined)
+    def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
     
     @scala.inline
-    def setWebkitFlexGrowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFlexGrow", js.Any.fromFunction1(value))
+    def setGridColumnStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridColumnStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitFlexGrow(value: StringOrNumberOrCallback): Self = this.set("WebkitFlexGrow", value.asInstanceOf[js.Any])
+    def setGridColumnStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridColumnStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitFlexGrow: Self = this.set("WebkitFlexGrow", js.undefined)
+    def setGridColumnStartUndefined: Self = StObject.set(x, "gridColumnStart", js.undefined)
     
     @scala.inline
-    def setWebkitFlexShrinkFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFlexShrink", js.Any.fromFunction1(value))
+    def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
     
     @scala.inline
-    def setWebkitFlexShrink(value: StringOrNumberOrCallback): Self = this.set("WebkitFlexShrink", value.asInstanceOf[js.Any])
+    def setGridFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "grid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitFlexShrink: Self = this.set("WebkitFlexShrink", js.undefined)
+    def setGridGap(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitFlexWrapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFlexWrap", js.Any.fromFunction1(value))
+    def setGridGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridGap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitFlexWrap(value: StringOrNumberOrCallback): Self = this.set("WebkitFlexWrap", value.asInstanceOf[js.Any])
+    def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
     
     @scala.inline
-    def deleteWebkitFlexWrap: Self = this.set("WebkitFlexWrap", js.undefined)
+    def setGridRow(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitFontFeatureSettingsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFontFeatureSettings", js.Any.fromFunction1(value))
+    def setGridRowEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridRowEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitFontFeatureSettings(value: StringOrNumberOrCallback): Self = this.set("WebkitFontFeatureSettings", value.asInstanceOf[js.Any])
+    def setGridRowEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridRowEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitFontFeatureSettings: Self = this.set("WebkitFontFeatureSettings", js.undefined)
+    def setGridRowEndUndefined: Self = StObject.set(x, "gridRowEnd", js.undefined)
     
     @scala.inline
-    def setWebkitFontKerningFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFontKerning", js.Any.fromFunction1(value))
+    def setGridRowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitFontKerning(value: StringOrNumberOrCallback): Self = this.set("WebkitFontKerning", value.asInstanceOf[js.Any])
+    def setGridRowGap(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitFontKerning: Self = this.set("WebkitFontKerning", js.undefined)
+    def setGridRowGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridRowGap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitFontSmoothingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFontSmoothing", js.Any.fromFunction1(value))
+    def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
     
     @scala.inline
-    def setWebkitFontSmoothing(value: StringOrNumberOrCallback): Self = this.set("WebkitFontSmoothing", value.asInstanceOf[js.Any])
+    def setGridRowStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridRowStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitFontSmoothing: Self = this.set("WebkitFontSmoothing", js.undefined)
+    def setGridRowStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridRowStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitFontVariantLigaturesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitFontVariantLigatures", js.Any.fromFunction1(value))
+    def setGridRowStartUndefined: Self = StObject.set(x, "gridRowStart", js.undefined)
     
     @scala.inline
-    def setWebkitFontVariantLigatures(value: StringOrNumberOrCallback): Self = this.set("WebkitFontVariantLigatures", value.asInstanceOf[js.Any])
+    def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
     
     @scala.inline
-    def deleteWebkitFontVariantLigatures: Self = this.set("WebkitFontVariantLigatures", js.undefined)
+    def setGridTemplate(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitHyphensFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitHyphens", js.Any.fromFunction1(value))
+    def setGridTemplateAreas(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitHyphens(value: StringOrNumberOrCallback): Self = this.set("WebkitHyphens", value.asInstanceOf[js.Any])
+    def setGridTemplateAreasFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridTemplateAreas", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitHyphens: Self = this.set("WebkitHyphens", js.undefined)
+    def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
     
     @scala.inline
-    def setWebkitJustifyContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitJustifyContent", js.Any.fromFunction1(value))
+    def setGridTemplateColumns(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitJustifyContent(value: StringOrNumberOrCallback): Self = this.set("WebkitJustifyContent", value.asInstanceOf[js.Any])
+    def setGridTemplateColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridTemplateColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitJustifyContent: Self = this.set("WebkitJustifyContent", js.undefined)
+    def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
     
     @scala.inline
-    def setWebkitLineBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitLineBreak", js.Any.fromFunction1(value))
+    def setGridTemplateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridTemplate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitLineBreak(value: StringOrNumberOrCallback): Self = this.set("WebkitLineBreak", value.asInstanceOf[js.Any])
+    def setGridTemplateRows(value: StringOrNumberOrCallback): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitLineBreak: Self = this.set("WebkitLineBreak", js.undefined)
+    def setGridTemplateRowsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "gridTemplateRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitLineClampFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitLineClamp", js.Any.fromFunction1(value))
+    def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
     
     @scala.inline
-    def setWebkitLineClamp(value: StringOrNumberOrCallback): Self = this.set("WebkitLineClamp", value.asInstanceOf[js.Any])
+    def setGridTemplateUndefined: Self = StObject.set(x, "gridTemplate", js.undefined)
     
     @scala.inline
-    def deleteWebkitLineClamp: Self = this.set("WebkitLineClamp", js.undefined)
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def setWebkitMarginEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMarginEnd", js.Any.fromFunction1(value))
+    def setHack(value: StringOrNumberOrCallback): Self = StObject.set(x, "hack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMarginEnd(value: StringOrNumberOrCallback): Self = this.set("WebkitMarginEnd", value.asInstanceOf[js.Any])
+    def setHackFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "hack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMarginEnd: Self = this.set("WebkitMarginEnd", js.undefined)
+    def setHackUndefined: Self = StObject.set(x, "hack", js.undefined)
     
     @scala.inline
-    def setWebkitMarginStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMarginStart", js.Any.fromFunction1(value))
+    def setHangingPunctuation(value: StringOrNumberOrCallback): Self = StObject.set(x, "hangingPunctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMarginStart(value: StringOrNumberOrCallback): Self = this.set("WebkitMarginStart", value.asInstanceOf[js.Any])
+    def setHangingPunctuationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "hangingPunctuation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMarginStart: Self = this.set("WebkitMarginStart", js.undefined)
+    def setHangingPunctuationUndefined: Self = StObject.set(x, "hangingPunctuation", js.undefined)
     
     @scala.inline
-    def setWebkitMaskFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMask", js.Any.fromFunction1(value))
+    def setHeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMask(value: StringOrNumberOrCallback): Self = this.set("WebkitMask", value.asInstanceOf[js.Any])
+    def setHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "height", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMask: Self = this.set("WebkitMask", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setWebkitMaskAttachmentFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskAttachment", js.Any.fromFunction1(value))
+    def setHyphens(value: StringOrNumberOrCallback): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskAttachment(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskAttachment", value.asInstanceOf[js.Any])
+    def setHyphensFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "hyphens", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskAttachment: Self = this.set("WebkitMaskAttachment", js.undefined)
+    def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
     
     @scala.inline
-    def setWebkitMaskClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskClip", js.Any.fromFunction1(value))
+    def setImageOrientation(value: StringOrNumberOrCallback): Self = StObject.set(x, "imageOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskClip(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskClip", value.asInstanceOf[js.Any])
+    def setImageOrientationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "imageOrientation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskClip: Self = this.set("WebkitMaskClip", js.undefined)
+    def setImageOrientationUndefined: Self = StObject.set(x, "imageOrientation", js.undefined)
     
     @scala.inline
-    def setWebkitMaskCompositeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskComposite", js.Any.fromFunction1(value))
+    def setImageRendering(value: StringOrNumberOrCallback): Self = StObject.set(x, "imageRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskComposite(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskComposite", value.asInstanceOf[js.Any])
+    def setImageRenderingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "imageRendering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskComposite: Self = this.set("WebkitMaskComposite", js.undefined)
+    def setImageRenderingUndefined: Self = StObject.set(x, "imageRendering", js.undefined)
     
     @scala.inline
-    def setWebkitMaskImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskImage", js.Any.fromFunction1(value))
+    def setImageResolution(value: StringOrNumberOrCallback): Self = StObject.set(x, "imageResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskImage(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskImage", value.asInstanceOf[js.Any])
+    def setImageResolutionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "imageResolution", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskImage: Self = this.set("WebkitMaskImage", js.undefined)
+    def setImageResolutionUndefined: Self = StObject.set(x, "imageResolution", js.undefined)
     
     @scala.inline
-    def setWebkitMaskOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskOrigin", js.Any.fromFunction1(value))
+    def setImeMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "imeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskOrigin(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskOrigin", value.asInstanceOf[js.Any])
+    def setImeModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "imeMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskOrigin: Self = this.set("WebkitMaskOrigin", js.undefined)
+    def setImeModeUndefined: Self = StObject.set(x, "imeMode", js.undefined)
     
     @scala.inline
-    def setWebkitMaskPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskPosition", js.Any.fromFunction1(value))
+    def setInitialLetter(value: StringOrNumberOrCallback): Self = StObject.set(x, "initialLetter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskPosition(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskPosition", value.asInstanceOf[js.Any])
+    def setInitialLetterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "initialLetter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskPosition: Self = this.set("WebkitMaskPosition", js.undefined)
+    def setInitialLetterUndefined: Self = StObject.set(x, "initialLetter", js.undefined)
     
     @scala.inline
-    def setWebkitMaskPositionXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskPositionX", js.Any.fromFunction1(value))
+    def setInlineSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskPositionX(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskPositionX", value.asInstanceOf[js.Any])
+    def setInlineSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "inlineSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskPositionX: Self = this.set("WebkitMaskPositionX", js.undefined)
+    def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
     
     @scala.inline
-    def setWebkitMaskPositionYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskPositionY", js.Any.fromFunction1(value))
+    def setInset(value: StringOrNumberOrCallback): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskPositionY(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskPositionY", value.asInstanceOf[js.Any])
+    def setInsetBlock(value: StringOrNumberOrCallback): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitMaskPositionY: Self = this.set("WebkitMaskPositionY", js.undefined)
+    def setInsetBlockEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskRepeat", js.Any.fromFunction1(value))
+    def setInsetBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "insetBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitMaskRepeat(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskRepeat", value.asInstanceOf[js.Any])
+    def setInsetBlockEndUndefined: Self = StObject.set(x, "insetBlockEnd", js.undefined)
     
     @scala.inline
-    def deleteWebkitMaskRepeat: Self = this.set("WebkitMaskRepeat", js.undefined)
+    def setInsetBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "insetBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitMaskRepeatXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskRepeatX", js.Any.fromFunction1(value))
+    def setInsetBlockStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskRepeatX(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskRepeatX", value.asInstanceOf[js.Any])
+    def setInsetBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "insetBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskRepeatX: Self = this.set("WebkitMaskRepeatX", js.undefined)
+    def setInsetBlockStartUndefined: Self = StObject.set(x, "insetBlockStart", js.undefined)
     
     @scala.inline
-    def setWebkitMaskRepeatYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskRepeatY", js.Any.fromFunction1(value))
+    def setInsetBlockUndefined: Self = StObject.set(x, "insetBlock", js.undefined)
     
     @scala.inline
-    def setWebkitMaskRepeatY(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskRepeatY", value.asInstanceOf[js.Any])
+    def setInsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "inset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskRepeatY: Self = this.set("WebkitMaskRepeatY", js.undefined)
+    def setInsetInline(value: StringOrNumberOrCallback): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaskSize", js.Any.fromFunction1(value))
+    def setInsetInlineEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitMaskSize(value: StringOrNumberOrCallback): Self = this.set("WebkitMaskSize", value.asInstanceOf[js.Any])
+    def setInsetInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "insetInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitMaskSize: Self = this.set("WebkitMaskSize", js.undefined)
+    def setInsetInlineEndUndefined: Self = StObject.set(x, "insetInlineEnd", js.undefined)
     
     @scala.inline
-    def setWebkitMaxInlineSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitMaxInlineSize", js.Any.fromFunction1(value))
+    def setInsetInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "insetInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitMaxInlineSize(value: StringOrNumberOrCallback): Self = this.set("WebkitMaxInlineSize", value.asInstanceOf[js.Any])
+    def setInsetInlineStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitMaxInlineSize: Self = this.set("WebkitMaxInlineSize", js.undefined)
+    def setInsetInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "insetInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitOrderFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitOrder", js.Any.fromFunction1(value))
+    def setInsetInlineStartUndefined: Self = StObject.set(x, "insetInlineStart", js.undefined)
     
     @scala.inline
-    def setWebkitOrder(value: StringOrNumberOrCallback): Self = this.set("WebkitOrder", value.asInstanceOf[js.Any])
+    def setInsetInlineUndefined: Self = StObject.set(x, "insetInline", js.undefined)
     
     @scala.inline
-    def deleteWebkitOrder: Self = this.set("WebkitOrder", js.undefined)
+    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
     @scala.inline
-    def setWebkitOverflowScrollingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitOverflowScrolling", js.Any.fromFunction1(value))
+    def setIsolation(value: StringOrNumberOrCallback): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitOverflowScrolling(value: StringOrNumberOrCallback): Self = this.set("WebkitOverflowScrolling", value.asInstanceOf[js.Any])
+    def setIsolationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "isolation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitOverflowScrolling: Self = this.set("WebkitOverflowScrolling", js.undefined)
+    def setIsolationUndefined: Self = StObject.set(x, "isolation", js.undefined)
     
     @scala.inline
-    def setWebkitPaddingEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitPaddingEnd", js.Any.fromFunction1(value))
+    def setJustifyContent(value: StringOrNumberOrCallback): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitPaddingEnd(value: StringOrNumberOrCallback): Self = this.set("WebkitPaddingEnd", value.asInstanceOf[js.Any])
+    def setJustifyContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "justifyContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitPaddingEnd: Self = this.set("WebkitPaddingEnd", js.undefined)
+    def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
     @scala.inline
-    def setWebkitPaddingStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitPaddingStart", js.Any.fromFunction1(value))
+    def setJustifyItems(value: StringOrNumberOrCallback): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitPaddingStart(value: StringOrNumberOrCallback): Self = this.set("WebkitPaddingStart", value.asInstanceOf[js.Any])
+    def setJustifyItemsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "justifyItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitPaddingStart: Self = this.set("WebkitPaddingStart", js.undefined)
+    def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
     
     @scala.inline
-    def setWebkitPerspectiveFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitPerspective", js.Any.fromFunction1(value))
+    def setJustifySelf(value: StringOrNumberOrCallback): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitPerspective(value: StringOrNumberOrCallback): Self = this.set("WebkitPerspective", value.asInstanceOf[js.Any])
+    def setJustifySelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "justifySelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitPerspective: Self = this.set("WebkitPerspective", js.undefined)
+    def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
     
     @scala.inline
-    def setWebkitPerspectiveOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitPerspectiveOrigin", js.Any.fromFunction1(value))
+    def setJustifyTracks(value: StringOrNumberOrCallback): Self = StObject.set(x, "justifyTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitPerspectiveOrigin(value: StringOrNumberOrCallback): Self = this.set("WebkitPerspectiveOrigin", value.asInstanceOf[js.Any])
+    def setJustifyTracksFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "justifyTracks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitPerspectiveOrigin: Self = this.set("WebkitPerspectiveOrigin", js.undefined)
+    def setJustifyTracksUndefined: Self = StObject.set(x, "justifyTracks", js.undefined)
     
     @scala.inline
-    def setWebkitPrintColorAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitPrintColorAdjust", js.Any.fromFunction1(value))
+    def setKhtmlBoxAlign(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlBoxAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitPrintColorAdjust(value: StringOrNumberOrCallback): Self = this.set("WebkitPrintColorAdjust", value.asInstanceOf[js.Any])
+    def setKhtmlBoxAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlBoxAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitPrintColorAdjust: Self = this.set("WebkitPrintColorAdjust", js.undefined)
+    def setKhtmlBoxAlignUndefined: Self = StObject.set(x, "KhtmlBoxAlign", js.undefined)
     
     @scala.inline
-    def setWebkitRubyPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitRubyPosition", js.Any.fromFunction1(value))
+    def setKhtmlBoxDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlBoxDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitRubyPosition(value: StringOrNumberOrCallback): Self = this.set("WebkitRubyPosition", value.asInstanceOf[js.Any])
+    def setKhtmlBoxDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlBoxDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitRubyPosition: Self = this.set("WebkitRubyPosition", js.undefined)
+    def setKhtmlBoxDirectionUndefined: Self = StObject.set(x, "KhtmlBoxDirection", js.undefined)
     
     @scala.inline
-    def setWebkitScrollSnapPointsXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitScrollSnapPointsX", js.Any.fromFunction1(value))
+    def setKhtmlBoxFlex(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlBoxFlex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitScrollSnapPointsX(value: StringOrNumberOrCallback): Self = this.set("WebkitScrollSnapPointsX", value.asInstanceOf[js.Any])
+    def setKhtmlBoxFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlBoxFlex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitScrollSnapPointsX: Self = this.set("WebkitScrollSnapPointsX", js.undefined)
+    def setKhtmlBoxFlexGroup(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlBoxFlexGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitScrollSnapPointsYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitScrollSnapPointsY", js.Any.fromFunction1(value))
+    def setKhtmlBoxFlexGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlBoxFlexGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitScrollSnapPointsY(value: StringOrNumberOrCallback): Self = this.set("WebkitScrollSnapPointsY", value.asInstanceOf[js.Any])
+    def setKhtmlBoxFlexGroupUndefined: Self = StObject.set(x, "KhtmlBoxFlexGroup", js.undefined)
     
     @scala.inline
-    def deleteWebkitScrollSnapPointsY: Self = this.set("WebkitScrollSnapPointsY", js.undefined)
+    def setKhtmlBoxFlexUndefined: Self = StObject.set(x, "KhtmlBoxFlex", js.undefined)
     
     @scala.inline
-    def setWebkitScrollSnapTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitScrollSnapType", js.Any.fromFunction1(value))
+    def setKhtmlBoxLines(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlBoxLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitScrollSnapType(value: StringOrNumberOrCallback): Self = this.set("WebkitScrollSnapType", value.asInstanceOf[js.Any])
+    def setKhtmlBoxLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlBoxLines", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitScrollSnapType: Self = this.set("WebkitScrollSnapType", js.undefined)
+    def setKhtmlBoxLinesUndefined: Self = StObject.set(x, "KhtmlBoxLines", js.undefined)
     
     @scala.inline
-    def setWebkitShapeMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitShapeMargin", js.Any.fromFunction1(value))
+    def setKhtmlBoxOrdinalGroup(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlBoxOrdinalGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitShapeMargin(value: StringOrNumberOrCallback): Self = this.set("WebkitShapeMargin", value.asInstanceOf[js.Any])
+    def setKhtmlBoxOrdinalGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlBoxOrdinalGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitShapeMargin: Self = this.set("WebkitShapeMargin", js.undefined)
+    def setKhtmlBoxOrdinalGroupUndefined: Self = StObject.set(x, "KhtmlBoxOrdinalGroup", js.undefined)
     
     @scala.inline
-    def setWebkitTapHighlightColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTapHighlightColor", js.Any.fromFunction1(value))
+    def setKhtmlBoxOrient(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlBoxOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTapHighlightColor(value: StringOrNumberOrCallback): Self = this.set("WebkitTapHighlightColor", value.asInstanceOf[js.Any])
+    def setKhtmlBoxOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlBoxOrient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTapHighlightColor: Self = this.set("WebkitTapHighlightColor", js.undefined)
+    def setKhtmlBoxOrientUndefined: Self = StObject.set(x, "KhtmlBoxOrient", js.undefined)
     
     @scala.inline
-    def setWebkitTextCombineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextCombine", js.Any.fromFunction1(value))
+    def setKhtmlBoxPack(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlBoxPack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextCombine(value: StringOrNumberOrCallback): Self = this.set("WebkitTextCombine", value.asInstanceOf[js.Any])
+    def setKhtmlBoxPackFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlBoxPack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextCombine: Self = this.set("WebkitTextCombine", js.undefined)
+    def setKhtmlBoxPackUndefined: Self = StObject.set(x, "KhtmlBoxPack", js.undefined)
     
     @scala.inline
-    def setWebkitTextDecorationColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextDecorationColor", js.Any.fromFunction1(value))
+    def setKhtmlLineBreak(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlLineBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextDecorationColor(value: StringOrNumberOrCallback): Self = this.set("WebkitTextDecorationColor", value.asInstanceOf[js.Any])
+    def setKhtmlLineBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlLineBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextDecorationColor: Self = this.set("WebkitTextDecorationColor", js.undefined)
+    def setKhtmlLineBreakUndefined: Self = StObject.set(x, "KhtmlLineBreak", js.undefined)
     
     @scala.inline
-    def setWebkitTextDecorationLineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextDecorationLine", js.Any.fromFunction1(value))
+    def setKhtmlOpacity(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextDecorationLine(value: StringOrNumberOrCallback): Self = this.set("WebkitTextDecorationLine", value.asInstanceOf[js.Any])
+    def setKhtmlOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextDecorationLine: Self = this.set("WebkitTextDecorationLine", js.undefined)
+    def setKhtmlOpacityUndefined: Self = StObject.set(x, "KhtmlOpacity", js.undefined)
     
     @scala.inline
-    def setWebkitTextDecorationSkipFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextDecorationSkip", js.Any.fromFunction1(value))
+    def setKhtmlUserSelect(value: StringOrNumberOrCallback): Self = StObject.set(x, "KhtmlUserSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextDecorationSkip(value: StringOrNumberOrCallback): Self = this.set("WebkitTextDecorationSkip", value.asInstanceOf[js.Any])
+    def setKhtmlUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "KhtmlUserSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextDecorationSkip: Self = this.set("WebkitTextDecorationSkip", js.undefined)
+    def setKhtmlUserSelectUndefined: Self = StObject.set(x, "KhtmlUserSelect", js.undefined)
     
     @scala.inline
-    def setWebkitTextDecorationStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextDecorationStyle", js.Any.fromFunction1(value))
+    def setLeft(value: StringOrNumberOrCallback): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextDecorationStyle(value: StringOrNumberOrCallback): Self = this.set("WebkitTextDecorationStyle", value.asInstanceOf[js.Any])
+    def setLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextDecorationStyle: Self = this.set("WebkitTextDecorationStyle", js.undefined)
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def setWebkitTextEmphasisFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextEmphasis", js.Any.fromFunction1(value))
+    def setLetterSpacing(value: StringOrNumberOrCallback): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextEmphasis(value: StringOrNumberOrCallback): Self = this.set("WebkitTextEmphasis", value.asInstanceOf[js.Any])
+    def setLetterSpacingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "letterSpacing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextEmphasis: Self = this.set("WebkitTextEmphasis", js.undefined)
+    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
     @scala.inline
-    def setWebkitTextEmphasisColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextEmphasisColor", js.Any.fromFunction1(value))
+    def setLightingColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "lightingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextEmphasisColor(value: StringOrNumberOrCallback): Self = this.set("WebkitTextEmphasisColor", value.asInstanceOf[js.Any])
+    def setLightingColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "lightingColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextEmphasisColor: Self = this.set("WebkitTextEmphasisColor", js.undefined)
+    def setLightingColorUndefined: Self = StObject.set(x, "lightingColor", js.undefined)
     
     @scala.inline
-    def setWebkitTextEmphasisPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextEmphasisPosition", js.Any.fromFunction1(value))
+    def setLineBreak(value: StringOrNumberOrCallback): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextEmphasisPosition(value: StringOrNumberOrCallback): Self = this.set("WebkitTextEmphasisPosition", value.asInstanceOf[js.Any])
+    def setLineBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "lineBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextEmphasisPosition: Self = this.set("WebkitTextEmphasisPosition", js.undefined)
+    def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
     
     @scala.inline
-    def setWebkitTextEmphasisStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextEmphasisStyle", js.Any.fromFunction1(value))
+    def setLineClamp(value: StringOrNumberOrCallback): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextEmphasisStyle(value: StringOrNumberOrCallback): Self = this.set("WebkitTextEmphasisStyle", value.asInstanceOf[js.Any])
+    def setLineClampFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "lineClamp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextEmphasisStyle: Self = this.set("WebkitTextEmphasisStyle", js.undefined)
+    def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
     
     @scala.inline
-    def setWebkitTextFillColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextFillColor", js.Any.fromFunction1(value))
+    def setLineHeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextFillColor(value: StringOrNumberOrCallback): Self = this.set("WebkitTextFillColor", value.asInstanceOf[js.Any])
+    def setLineHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "lineHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextFillColor: Self = this.set("WebkitTextFillColor", js.undefined)
+    def setLineHeightStep(value: StringOrNumberOrCallback): Self = StObject.set(x, "lineHeightStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextOrientationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextOrientation", js.Any.fromFunction1(value))
+    def setLineHeightStepFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "lineHeightStep", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTextOrientation(value: StringOrNumberOrCallback): Self = this.set("WebkitTextOrientation", value.asInstanceOf[js.Any])
+    def setLineHeightStepUndefined: Self = StObject.set(x, "lineHeightStep", js.undefined)
     
     @scala.inline
-    def deleteWebkitTextOrientation: Self = this.set("WebkitTextOrientation", js.undefined)
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def setWebkitTextSizeAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextSizeAdjust", js.Any.fromFunction1(value))
+    def setListStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextSizeAdjust(value: StringOrNumberOrCallback): Self = this.set("WebkitTextSizeAdjust", value.asInstanceOf[js.Any])
+    def setListStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "listStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTextSizeAdjust: Self = this.set("WebkitTextSizeAdjust", js.undefined)
+    def setListStyleImage(value: StringOrNumberOrCallback): Self = StObject.set(x, "listStyleImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextStrokeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextStroke", js.Any.fromFunction1(value))
+    def setListStyleImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "listStyleImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTextStroke(value: StringOrNumberOrCallback): Self = this.set("WebkitTextStroke", value.asInstanceOf[js.Any])
+    def setListStyleImageUndefined: Self = StObject.set(x, "listStyleImage", js.undefined)
     
     @scala.inline
-    def deleteWebkitTextStroke: Self = this.set("WebkitTextStroke", js.undefined)
+    def setListStylePosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "listStylePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextStrokeColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextStrokeColor", js.Any.fromFunction1(value))
+    def setListStylePositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "listStylePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTextStrokeColor(value: StringOrNumberOrCallback): Self = this.set("WebkitTextStrokeColor", value.asInstanceOf[js.Any])
+    def setListStylePositionUndefined: Self = StObject.set(x, "listStylePosition", js.undefined)
     
     @scala.inline
-    def deleteWebkitTextStrokeColor: Self = this.set("WebkitTextStrokeColor", js.undefined)
+    def setListStyleType(value: StringOrNumberOrCallback): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextStrokeWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextStrokeWidth", js.Any.fromFunction1(value))
+    def setListStyleTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "listStyleType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTextStrokeWidth(value: StringOrNumberOrCallback): Self = this.set("WebkitTextStrokeWidth", value.asInstanceOf[js.Any])
+    def setListStyleTypeUndefined: Self = StObject.set(x, "listStyleType", js.undefined)
     
     @scala.inline
-    def deleteWebkitTextStrokeWidth: Self = this.set("WebkitTextStrokeWidth", js.undefined)
+    def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
     
     @scala.inline
-    def setWebkitTextUnderlinePositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTextUnderlinePosition", js.Any.fromFunction1(value))
+    def setMargin(value: StringOrNumberOrCallback): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTextUnderlinePosition(value: StringOrNumberOrCallback): Self = this.set("WebkitTextUnderlinePosition", value.asInstanceOf[js.Any])
+    def setMarginBlock(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitTextUnderlinePosition: Self = this.set("WebkitTextUnderlinePosition", js.undefined)
+    def setMarginBlockEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTouchCalloutFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTouchCallout", js.Any.fromFunction1(value))
+    def setMarginBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTouchCallout(value: StringOrNumberOrCallback): Self = this.set("WebkitTouchCallout", value.asInstanceOf[js.Any])
+    def setMarginBlockEndUndefined: Self = StObject.set(x, "marginBlockEnd", js.undefined)
     
     @scala.inline
-    def deleteWebkitTouchCallout: Self = this.set("WebkitTouchCallout", js.undefined)
+    def setMarginBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTransform", js.Any.fromFunction1(value))
+    def setMarginBlockStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTransform(value: StringOrNumberOrCallback): Self = this.set("WebkitTransform", value.asInstanceOf[js.Any])
+    def setMarginBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTransform: Self = this.set("WebkitTransform", js.undefined)
+    def setMarginBlockStartUndefined: Self = StObject.set(x, "marginBlockStart", js.undefined)
     
     @scala.inline
-    def setWebkitTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTransformOrigin", js.Any.fromFunction1(value))
+    def setMarginBlockUndefined: Self = StObject.set(x, "marginBlock", js.undefined)
     
     @scala.inline
-    def setWebkitTransformOrigin(value: StringOrNumberOrCallback): Self = this.set("WebkitTransformOrigin", value.asInstanceOf[js.Any])
+    def setMarginBottom(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitTransformOrigin: Self = this.set("WebkitTransformOrigin", js.undefined)
+    def setMarginBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTransformStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTransformStyle", js.Any.fromFunction1(value))
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def setWebkitTransformStyle(value: StringOrNumberOrCallback): Self = this.set("WebkitTransformStyle", value.asInstanceOf[js.Any])
+    def setMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "margin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTransformStyle: Self = this.set("WebkitTransformStyle", js.undefined)
+    def setMarginInline(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTransition", js.Any.fromFunction1(value))
+    def setMarginInlineEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTransition(value: StringOrNumberOrCallback): Self = this.set("WebkitTransition", value.asInstanceOf[js.Any])
+    def setMarginInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitTransition: Self = this.set("WebkitTransition", js.undefined)
+    def setMarginInlineEndUndefined: Self = StObject.set(x, "marginInlineEnd", js.undefined)
     
     @scala.inline
-    def setWebkitTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTransitionDelay", js.Any.fromFunction1(value))
+    def setMarginInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTransitionDelay(value: StringOrNumberOrCallback): Self = this.set("WebkitTransitionDelay", value.asInstanceOf[js.Any])
+    def setMarginInlineStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitTransitionDelay: Self = this.set("WebkitTransitionDelay", js.undefined)
+    def setMarginInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTransitionDuration", js.Any.fromFunction1(value))
+    def setMarginInlineStartUndefined: Self = StObject.set(x, "marginInlineStart", js.undefined)
     
     @scala.inline
-    def setWebkitTransitionDuration(value: StringOrNumberOrCallback): Self = this.set("WebkitTransitionDuration", value.asInstanceOf[js.Any])
+    def setMarginInlineUndefined: Self = StObject.set(x, "marginInline", js.undefined)
     
     @scala.inline
-    def deleteWebkitTransitionDuration: Self = this.set("WebkitTransitionDuration", js.undefined)
+    def setMarginLeft(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTransitionProperty", js.Any.fromFunction1(value))
+    def setMarginLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTransitionProperty(value: StringOrNumberOrCallback): Self = this.set("WebkitTransitionProperty", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteWebkitTransitionProperty: Self = this.set("WebkitTransitionProperty", js.undefined)
+    def setMarginRight(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitTransitionTimingFunction", js.Any.fromFunction1(value))
+    def setMarginRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitTransitionTimingFunction(value: StringOrNumberOrCallback): Self = this.set("WebkitTransitionTimingFunction", value.asInstanceOf[js.Any])
+    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
     @scala.inline
-    def deleteWebkitTransitionTimingFunction: Self = this.set("WebkitTransitionTimingFunction", js.undefined)
+    def setMarginTop(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitUserModifyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitUserModify", js.Any.fromFunction1(value))
+    def setMarginTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitUserModify(value: StringOrNumberOrCallback): Self = this.set("WebkitUserModify", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteWebkitUserModify: Self = this.set("WebkitUserModify", js.undefined)
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def setWebkitUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitUserSelect", js.Any.fromFunction1(value))
+    def setMarker(value: StringOrNumberOrCallback): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebkitUserSelect(value: StringOrNumberOrCallback): Self = this.set("WebkitUserSelect", value.asInstanceOf[js.Any])
+    def setMarkerEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebkitUserSelect: Self = this.set("WebkitUserSelect", js.undefined)
+    def setMarkerEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "markerEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebkitWritingModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("WebkitWritingMode", js.Any.fromFunction1(value))
+    def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
     
     @scala.inline
-    def setWebkitWritingMode(value: StringOrNumberOrCallback): Self = this.set("WebkitWritingMode", value.asInstanceOf[js.Any])
+    def setMarkerFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWebkitWritingMode: Self = this.set("WebkitWritingMode", js.undefined)
+    def setMarkerMid(value: StringOrNumberOrCallback): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("alignContent", js.Any.fromFunction1(value))
+    def setMarkerMidFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "markerMid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignContent(value: StringOrNumberOrCallback): Self = this.set("alignContent", value.asInstanceOf[js.Any])
+    def setMarkerMidUndefined: Self = StObject.set(x, "markerMid", js.undefined)
     
     @scala.inline
-    def deleteAlignContent: Self = this.set("alignContent", js.undefined)
+    def setMarkerStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignItemsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("alignItems", js.Any.fromFunction1(value))
+    def setMarkerStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "markerStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignItems(value: StringOrNumberOrCallback): Self = this.set("alignItems", value.asInstanceOf[js.Any])
+    def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
     
     @scala.inline
-    def deleteAlignItems: Self = this.set("alignItems", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def setAlignSelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("alignSelf", js.Any.fromFunction1(value))
+    def setMask(value: StringOrNumberOrCallback): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignSelf(value: StringOrNumberOrCallback): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    def setMaskBorder(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    def setMaskBorderFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskBorder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignTracksFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("alignTracks", js.Any.fromFunction1(value))
+    def setMaskBorderMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskBorderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignTracks(value: StringOrNumberOrCallback): Self = this.set("alignTracks", value.asInstanceOf[js.Any])
+    def setMaskBorderModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskBorderMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAlignTracks: Self = this.set("alignTracks", js.undefined)
+    def setMaskBorderModeUndefined: Self = StObject.set(x, "maskBorderMode", js.undefined)
     
     @scala.inline
-    def setAlignmentBaselineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("alignmentBaseline", js.Any.fromFunction1(value))
+    def setMaskBorderOutset(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskBorderOutset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignmentBaseline(value: StringOrNumberOrCallback): Self = this.set("alignmentBaseline", value.asInstanceOf[js.Any])
+    def setMaskBorderOutsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskBorderOutset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAlignmentBaseline: Self = this.set("alignmentBaseline", js.undefined)
+    def setMaskBorderOutsetUndefined: Self = StObject.set(x, "maskBorderOutset", js.undefined)
     
     @scala.inline
-    def setAllFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("all", js.Any.fromFunction1(value))
+    def setMaskBorderRepeat(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskBorderRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: StringOrNumberOrCallback): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setMaskBorderRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskBorderRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setMaskBorderRepeatUndefined: Self = StObject.set(x, "maskBorderRepeat", js.undefined)
     
     @scala.inline
-    def setAnimationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("animation", js.Any.fromFunction1(value))
+    def setMaskBorderSlice(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskBorderSlice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: StringOrNumberOrCallback): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setMaskBorderSliceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskBorderSlice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setMaskBorderSliceUndefined: Self = StObject.set(x, "maskBorderSlice", js.undefined)
     
     @scala.inline
-    def setAnimationDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("animationDelay", js.Any.fromFunction1(value))
+    def setMaskBorderSource(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskBorderSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDelay(value: StringOrNumberOrCallback): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    def setMaskBorderSourceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskBorderSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    def setMaskBorderSourceUndefined: Self = StObject.set(x, "maskBorderSource", js.undefined)
     
     @scala.inline
-    def setAnimationDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("animationDirection", js.Any.fromFunction1(value))
+    def setMaskBorderUndefined: Self = StObject.set(x, "maskBorder", js.undefined)
     
     @scala.inline
-    def setAnimationDirection(value: StringOrNumberOrCallback): Self = this.set("animationDirection", value.asInstanceOf[js.Any])
+    def setMaskBorderWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationDirection: Self = this.set("animationDirection", js.undefined)
+    def setMaskBorderWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskBorderWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("animationDuration", js.Any.fromFunction1(value))
+    def setMaskBorderWidthUndefined: Self = StObject.set(x, "maskBorderWidth", js.undefined)
     
     @scala.inline
-    def setAnimationDuration(value: StringOrNumberOrCallback): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setMaskClip(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setMaskClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskClip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationFillModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("animationFillMode", js.Any.fromFunction1(value))
+    def setMaskClipUndefined: Self = StObject.set(x, "maskClip", js.undefined)
     
     @scala.inline
-    def setAnimationFillMode(value: StringOrNumberOrCallback): Self = this.set("animationFillMode", value.asInstanceOf[js.Any])
+    def setMaskComposite(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskComposite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationFillMode: Self = this.set("animationFillMode", js.undefined)
+    def setMaskCompositeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskComposite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationIterationCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("animationIterationCount", js.Any.fromFunction1(value))
+    def setMaskCompositeUndefined: Self = StObject.set(x, "maskComposite", js.undefined)
     
     @scala.inline
-    def setAnimationIterationCount(value: StringOrNumberOrCallback): Self = this.set("animationIterationCount", value.asInstanceOf[js.Any])
+    def setMaskFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAnimationIterationCount: Self = this.set("animationIterationCount", js.undefined)
+    def setMaskImage(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("animationName", js.Any.fromFunction1(value))
+    def setMaskImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationName(value: StringOrNumberOrCallback): Self = this.set("animationName", value.asInstanceOf[js.Any])
+    def setMaskImageUndefined: Self = StObject.set(x, "maskImage", js.undefined)
     
     @scala.inline
-    def deleteAnimationName: Self = this.set("animationName", js.undefined)
+    def setMaskMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationPlayStateFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("animationPlayState", js.Any.fromFunction1(value))
+    def setMaskModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationPlayState(value: StringOrNumberOrCallback): Self = this.set("animationPlayState", value.asInstanceOf[js.Any])
+    def setMaskModeUndefined: Self = StObject.set(x, "maskMode", js.undefined)
     
     @scala.inline
-    def deleteAnimationPlayState: Self = this.set("animationPlayState", js.undefined)
+    def setMaskOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("animationTimingFunction", js.Any.fromFunction1(value))
+    def setMaskOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationTimingFunction(value: StringOrNumberOrCallback): Self = this.set("animationTimingFunction", value.asInstanceOf[js.Any])
+    def setMaskOriginUndefined: Self = StObject.set(x, "maskOrigin", js.undefined)
     
     @scala.inline
-    def deleteAnimationTimingFunction: Self = this.set("animationTimingFunction", js.undefined)
+    def setMaskPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("appearance", js.Any.fromFunction1(value))
+    def setMaskPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppearance(value: StringOrNumberOrCallback): Self = this.set("appearance", value.asInstanceOf[js.Any])
+    def setMaskPositionUndefined: Self = StObject.set(x, "maskPosition", js.undefined)
     
     @scala.inline
-    def deleteAppearance: Self = this.set("appearance", js.undefined)
+    def setMaskRepeat(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectRatioFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("aspectRatio", js.Any.fromFunction1(value))
+    def setMaskRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAspectRatio(value: StringOrNumberOrCallback): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    def setMaskRepeatUndefined: Self = StObject.set(x, "maskRepeat", js.undefined)
     
     @scala.inline
-    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    def setMaskSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzimuthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("azimuth", js.Any.fromFunction1(value))
+    def setMaskSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAzimuth(value: StringOrNumberOrCallback): Self = this.set("azimuth", value.asInstanceOf[js.Any])
+    def setMaskSizeUndefined: Self = StObject.set(x, "maskSize", js.undefined)
     
     @scala.inline
-    def deleteAzimuth: Self = this.set("azimuth", js.undefined)
+    def setMaskType(value: StringOrNumberOrCallback): Self = StObject.set(x, "maskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackdropFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backdropFilter", js.Any.fromFunction1(value))
+    def setMaskTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maskType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackdropFilter(value: StringOrNumberOrCallback): Self = this.set("backdropFilter", value.asInstanceOf[js.Any])
+    def setMaskTypeUndefined: Self = StObject.set(x, "maskType", js.undefined)
     
     @scala.inline
-    def deleteBackdropFilter: Self = this.set("backdropFilter", js.undefined)
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def setBackfaceVisibilityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backfaceVisibility", js.Any.fromFunction1(value))
+    def setMasonryAutoFlow(value: StringOrNumberOrCallback): Self = StObject.set(x, "masonryAutoFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackfaceVisibility(value: StringOrNumberOrCallback): Self = this.set("backfaceVisibility", value.asInstanceOf[js.Any])
+    def setMasonryAutoFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "masonryAutoFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackfaceVisibility: Self = this.set("backfaceVisibility", js.undefined)
+    def setMasonryAutoFlowUndefined: Self = StObject.set(x, "masonryAutoFlow", js.undefined)
     
     @scala.inline
-    def setBackgroundFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("background", js.Any.fromFunction1(value))
+    def setMathStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "mathStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: StringOrNumberOrCallback): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setMathStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "mathStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setMathStyleUndefined: Self = StObject.set(x, "mathStyle", js.undefined)
     
     @scala.inline
-    def setBackgroundAttachmentFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundAttachment", js.Any.fromFunction1(value))
+    def setMaxBlockSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundAttachment(value: StringOrNumberOrCallback): Self = this.set("backgroundAttachment", value.asInstanceOf[js.Any])
+    def setMaxBlockSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maxBlockSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundAttachment: Self = this.set("backgroundAttachment", js.undefined)
+    def setMaxBlockSizeUndefined: Self = StObject.set(x, "maxBlockSize", js.undefined)
     
     @scala.inline
-    def setBackgroundBlendModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundBlendMode", js.Any.fromFunction1(value))
+    def setMaxHeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundBlendMode(value: StringOrNumberOrCallback): Self = this.set("backgroundBlendMode", value.asInstanceOf[js.Any])
+    def setMaxHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maxHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundBlendMode: Self = this.set("backgroundBlendMode", js.undefined)
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def setBackgroundClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundClip", js.Any.fromFunction1(value))
+    def setMaxInlineSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "maxInlineSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundClip(value: StringOrNumberOrCallback): Self = this.set("backgroundClip", value.asInstanceOf[js.Any])
+    def setMaxInlineSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maxInlineSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundClip: Self = this.set("backgroundClip", js.undefined)
+    def setMaxInlineSizeUndefined: Self = StObject.set(x, "maxInlineSize", js.undefined)
     
     @scala.inline
-    def setBackgroundColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundColor", js.Any.fromFunction1(value))
+    def setMaxLines(value: StringOrNumberOrCallback): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: StringOrNumberOrCallback): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setMaxLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maxLines", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
     
     @scala.inline
-    def setBackgroundImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundImage", js.Any.fromFunction1(value))
+    def setMaxWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundImage(value: StringOrNumberOrCallback): Self = this.set("backgroundImage", value.asInstanceOf[js.Any])
+    def setMaxWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "maxWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundImage: Self = this.set("backgroundImage", js.undefined)
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def setBackgroundOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundOrigin", js.Any.fromFunction1(value))
+    def setMinBlockSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "minBlockSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundOrigin(value: StringOrNumberOrCallback): Self = this.set("backgroundOrigin", value.asInstanceOf[js.Any])
+    def setMinBlockSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "minBlockSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundOrigin: Self = this.set("backgroundOrigin", js.undefined)
+    def setMinBlockSizeUndefined: Self = StObject.set(x, "minBlockSize", js.undefined)
     
     @scala.inline
-    def setBackgroundPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundPosition", js.Any.fromFunction1(value))
+    def setMinHeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundPosition(value: StringOrNumberOrCallback): Self = this.set("backgroundPosition", value.asInstanceOf[js.Any])
+    def setMinHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "minHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundPosition: Self = this.set("backgroundPosition", js.undefined)
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def setBackgroundPositionXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundPositionX", js.Any.fromFunction1(value))
+    def setMinInlineSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "minInlineSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundPositionX(value: StringOrNumberOrCallback): Self = this.set("backgroundPositionX", value.asInstanceOf[js.Any])
+    def setMinInlineSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "minInlineSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundPositionX: Self = this.set("backgroundPositionX", js.undefined)
+    def setMinInlineSizeUndefined: Self = StObject.set(x, "minInlineSize", js.undefined)
     
     @scala.inline
-    def setBackgroundPositionYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundPositionY", js.Any.fromFunction1(value))
+    def setMinWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundPositionY(value: StringOrNumberOrCallback): Self = this.set("backgroundPositionY", value.asInstanceOf[js.Any])
+    def setMinWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "minWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundPositionY: Self = this.set("backgroundPositionY", js.undefined)
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def setBackgroundRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundRepeat", js.Any.fromFunction1(value))
+    def setMixBlendMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "mixBlendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundRepeat(value: StringOrNumberOrCallback): Self = this.set("backgroundRepeat", value.asInstanceOf[js.Any])
+    def setMixBlendModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "mixBlendMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundRepeat: Self = this.set("backgroundRepeat", js.undefined)
+    def setMixBlendModeUndefined: Self = StObject.set(x, "mixBlendMode", js.undefined)
     
     @scala.inline
-    def setBackgroundSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("backgroundSize", js.Any.fromFunction1(value))
+    def setMotion(value: StringOrNumberOrCallback): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundSize(value: StringOrNumberOrCallback): Self = this.set("backgroundSize", value.asInstanceOf[js.Any])
+    def setMotionDistance(value: StringOrNumberOrCallback): Self = StObject.set(x, "motionDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundSize: Self = this.set("backgroundSize", js.undefined)
+    def setMotionDistanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "motionDistance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBaselineShiftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("baselineShift", js.Any.fromFunction1(value))
+    def setMotionDistanceUndefined: Self = StObject.set(x, "motionDistance", js.undefined)
     
     @scala.inline
-    def setBaselineShift(value: StringOrNumberOrCallback): Self = this.set("baselineShift", value.asInstanceOf[js.Any])
+    def setMotionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "motion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBaselineShift: Self = this.set("baselineShift", js.undefined)
+    def setMotionPath(value: StringOrNumberOrCallback): Self = StObject.set(x, "motionPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("blockOverflow", js.Any.fromFunction1(value))
+    def setMotionPathFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "motionPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBlockOverflow(value: StringOrNumberOrCallback): Self = this.set("blockOverflow", value.asInstanceOf[js.Any])
+    def setMotionPathUndefined: Self = StObject.set(x, "motionPath", js.undefined)
     
     @scala.inline
-    def deleteBlockOverflow: Self = this.set("blockOverflow", js.undefined)
+    def setMotionRotation(value: StringOrNumberOrCallback): Self = StObject.set(x, "motionRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("blockSize", js.Any.fromFunction1(value))
+    def setMotionRotationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "motionRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBlockSize(value: StringOrNumberOrCallback): Self = this.set("blockSize", value.asInstanceOf[js.Any])
+    def setMotionRotationUndefined: Self = StObject.set(x, "motionRotation", js.undefined)
     
     @scala.inline
-    def deleteBlockSize: Self = this.set("blockSize", js.undefined)
+    def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
     
     @scala.inline
-    def setBorderFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("border", js.Any.fromFunction1(value))
+    def setMozAnimation(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: StringOrNumberOrCallback): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setMozAnimationDelay(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAnimationDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setMozAnimationDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAnimationDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlock", js.Any.fromFunction1(value))
+    def setMozAnimationDelayUndefined: Self = StObject.set(x, "MozAnimationDelay", js.undefined)
     
     @scala.inline
-    def setBorderBlock(value: StringOrNumberOrCallback): Self = this.set("borderBlock", value.asInstanceOf[js.Any])
+    def setMozAnimationDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAnimationDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlock: Self = this.set("borderBlock", js.undefined)
+    def setMozAnimationDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAnimationDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockColor", js.Any.fromFunction1(value))
+    def setMozAnimationDirectionUndefined: Self = StObject.set(x, "MozAnimationDirection", js.undefined)
     
     @scala.inline
-    def setBorderBlockColor(value: StringOrNumberOrCallback): Self = this.set("borderBlockColor", value.asInstanceOf[js.Any])
+    def setMozAnimationDuration(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAnimationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockColor: Self = this.set("borderBlockColor", js.undefined)
+    def setMozAnimationDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAnimationDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockEnd", js.Any.fromFunction1(value))
+    def setMozAnimationDurationUndefined: Self = StObject.set(x, "MozAnimationDuration", js.undefined)
     
     @scala.inline
-    def setBorderBlockEnd(value: StringOrNumberOrCallback): Self = this.set("borderBlockEnd", value.asInstanceOf[js.Any])
+    def setMozAnimationFillMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAnimationFillMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBlockEnd: Self = this.set("borderBlockEnd", js.undefined)
+    def setMozAnimationFillModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAnimationFillMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockEndColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockEndColor", js.Any.fromFunction1(value))
+    def setMozAnimationFillModeUndefined: Self = StObject.set(x, "MozAnimationFillMode", js.undefined)
     
     @scala.inline
-    def setBorderBlockEndColor(value: StringOrNumberOrCallback): Self = this.set("borderBlockEndColor", value.asInstanceOf[js.Any])
+    def setMozAnimationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBlockEndColor: Self = this.set("borderBlockEndColor", js.undefined)
+    def setMozAnimationIterationCount(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAnimationIterationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBlockEndStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockEndStyle", js.Any.fromFunction1(value))
+    def setMozAnimationIterationCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAnimationIterationCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockEndStyle(value: StringOrNumberOrCallback): Self = this.set("borderBlockEndStyle", value.asInstanceOf[js.Any])
+    def setMozAnimationIterationCountUndefined: Self = StObject.set(x, "MozAnimationIterationCount", js.undefined)
     
     @scala.inline
-    def deleteBorderBlockEndStyle: Self = this.set("borderBlockEndStyle", js.undefined)
+    def setMozAnimationName(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAnimationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBlockEndWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockEndWidth", js.Any.fromFunction1(value))
+    def setMozAnimationNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAnimationName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockEndWidth(value: StringOrNumberOrCallback): Self = this.set("borderBlockEndWidth", value.asInstanceOf[js.Any])
+    def setMozAnimationNameUndefined: Self = StObject.set(x, "MozAnimationName", js.undefined)
     
     @scala.inline
-    def deleteBorderBlockEndWidth: Self = this.set("borderBlockEndWidth", js.undefined)
+    def setMozAnimationPlayState(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAnimationPlayState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockStart", js.Any.fromFunction1(value))
+    def setMozAnimationPlayStateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAnimationPlayState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockStart(value: StringOrNumberOrCallback): Self = this.set("borderBlockStart", value.asInstanceOf[js.Any])
+    def setMozAnimationPlayStateUndefined: Self = StObject.set(x, "MozAnimationPlayState", js.undefined)
     
     @scala.inline
-    def deleteBorderBlockStart: Self = this.set("borderBlockStart", js.undefined)
+    def setMozAnimationTimingFunction(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAnimationTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBlockStartColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockStartColor", js.Any.fromFunction1(value))
+    def setMozAnimationTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAnimationTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderBlockStartColor(value: StringOrNumberOrCallback): Self = this.set("borderBlockStartColor", value.asInstanceOf[js.Any])
+    def setMozAnimationTimingFunctionUndefined: Self = StObject.set(x, "MozAnimationTimingFunction", js.undefined)
     
     @scala.inline
-    def deleteBorderBlockStartColor: Self = this.set("borderBlockStartColor", js.undefined)
+    def setMozAnimationUndefined: Self = StObject.set(x, "MozAnimation", js.undefined)
     
     @scala.inline
-    def setBorderBlockStartStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockStartStyle", js.Any.fromFunction1(value))
+    def setMozAppearance(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozAppearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBlockStartStyle(value: StringOrNumberOrCallback): Self = this.set("borderBlockStartStyle", value.asInstanceOf[js.Any])
+    def setMozAppearanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozAppearance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBlockStartStyle: Self = this.set("borderBlockStartStyle", js.undefined)
+    def setMozAppearanceUndefined: Self = StObject.set(x, "MozAppearance", js.undefined)
     
     @scala.inline
-    def setBorderBlockStartWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockStartWidth", js.Any.fromFunction1(value))
+    def setMozBackfaceVisibility(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBackfaceVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBlockStartWidth(value: StringOrNumberOrCallback): Self = this.set("borderBlockStartWidth", value.asInstanceOf[js.Any])
+    def setMozBackfaceVisibilityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBackfaceVisibility", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBlockStartWidth: Self = this.set("borderBlockStartWidth", js.undefined)
+    def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
     
     @scala.inline
-    def setBorderBlockStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockStyle", js.Any.fromFunction1(value))
+    def setMozBackgroundClip(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBackgroundClip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBlockStyle(value: StringOrNumberOrCallback): Self = this.set("borderBlockStyle", value.asInstanceOf[js.Any])
+    def setMozBackgroundClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBackgroundClip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBlockStyle: Self = this.set("borderBlockStyle", js.undefined)
+    def setMozBackgroundClipUndefined: Self = StObject.set(x, "MozBackgroundClip", js.undefined)
     
     @scala.inline
-    def setBorderBlockWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBlockWidth", js.Any.fromFunction1(value))
+    def setMozBackgroundInlinePolicy(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBackgroundInlinePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBlockWidth(value: StringOrNumberOrCallback): Self = this.set("borderBlockWidth", value.asInstanceOf[js.Any])
+    def setMozBackgroundInlinePolicyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBackgroundInlinePolicy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBlockWidth: Self = this.set("borderBlockWidth", js.undefined)
+    def setMozBackgroundInlinePolicyUndefined: Self = StObject.set(x, "MozBackgroundInlinePolicy", js.undefined)
     
     @scala.inline
-    def setBorderBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBottom", js.Any.fromFunction1(value))
+    def setMozBackgroundOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBackgroundOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottom(value: StringOrNumberOrCallback): Self = this.set("borderBottom", value.asInstanceOf[js.Any])
+    def setMozBackgroundOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBackgroundOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBottom: Self = this.set("borderBottom", js.undefined)
+    def setMozBackgroundOriginUndefined: Self = StObject.set(x, "MozBackgroundOrigin", js.undefined)
     
     @scala.inline
-    def setBorderBottomColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBottomColor", js.Any.fromFunction1(value))
+    def setMozBackgroundSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBackgroundSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomColor(value: StringOrNumberOrCallback): Self = this.set("borderBottomColor", value.asInstanceOf[js.Any])
+    def setMozBackgroundSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBackgroundSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBottomColor: Self = this.set("borderBottomColor", js.undefined)
+    def setMozBackgroundSizeUndefined: Self = StObject.set(x, "MozBackgroundSize", js.undefined)
     
     @scala.inline
-    def setBorderBottomLeftRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBottomLeftRadius", js.Any.fromFunction1(value))
+    def setMozBinding(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomLeftRadius(value: StringOrNumberOrCallback): Self = this.set("borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    def setMozBindingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBinding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBottomLeftRadius: Self = this.set("borderBottomLeftRadius", js.undefined)
+    def setMozBindingUndefined: Self = StObject.set(x, "MozBinding", js.undefined)
     
     @scala.inline
-    def setBorderBottomRightRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBottomRightRadius", js.Any.fromFunction1(value))
+    def setMozBorderBottomColors(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderBottomColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomRightRadius(value: StringOrNumberOrCallback): Self = this.set("borderBottomRightRadius", value.asInstanceOf[js.Any])
+    def setMozBorderBottomColorsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderBottomColors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBottomRightRadius: Self = this.set("borderBottomRightRadius", js.undefined)
+    def setMozBorderBottomColorsUndefined: Self = StObject.set(x, "MozBorderBottomColors", js.undefined)
     
     @scala.inline
-    def setBorderBottomStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBottomStyle", js.Any.fromFunction1(value))
+    def setMozBorderEndColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderEndColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomStyle(value: StringOrNumberOrCallback): Self = this.set("borderBottomStyle", value.asInstanceOf[js.Any])
+    def setMozBorderEndColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderEndColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBottomStyle: Self = this.set("borderBottomStyle", js.undefined)
+    def setMozBorderEndColorUndefined: Self = StObject.set(x, "MozBorderEndColor", js.undefined)
     
     @scala.inline
-    def setBorderBottomWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderBottomWidth", js.Any.fromFunction1(value))
+    def setMozBorderEndStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderEndStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomWidth(value: StringOrNumberOrCallback): Self = this.set("borderBottomWidth", value.asInstanceOf[js.Any])
+    def setMozBorderEndStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderEndStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderBottomWidth: Self = this.set("borderBottomWidth", js.undefined)
+    def setMozBorderEndStyleUndefined: Self = StObject.set(x, "MozBorderEndStyle", js.undefined)
     
     @scala.inline
-    def setBorderCollapseFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderCollapse", js.Any.fromFunction1(value))
+    def setMozBorderEndWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderEndWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderCollapse(value: StringOrNumberOrCallback): Self = this.set("borderCollapse", value.asInstanceOf[js.Any])
+    def setMozBorderEndWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderEndWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderCollapse: Self = this.set("borderCollapse", js.undefined)
+    def setMozBorderEndWidthUndefined: Self = StObject.set(x, "MozBorderEndWidth", js.undefined)
     
     @scala.inline
-    def setBorderColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderColor", js.Any.fromFunction1(value))
+    def setMozBorderImage(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: StringOrNumberOrCallback): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setMozBorderImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setMozBorderImageUndefined: Self = StObject.set(x, "MozBorderImage", js.undefined)
     
     @scala.inline
-    def setBorderEndEndRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderEndEndRadius", js.Any.fromFunction1(value))
+    def setMozBorderLeftColors(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderLeftColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderEndEndRadius(value: StringOrNumberOrCallback): Self = this.set("borderEndEndRadius", value.asInstanceOf[js.Any])
+    def setMozBorderLeftColorsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderLeftColors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderEndEndRadius: Self = this.set("borderEndEndRadius", js.undefined)
+    def setMozBorderLeftColorsUndefined: Self = StObject.set(x, "MozBorderLeftColors", js.undefined)
     
     @scala.inline
-    def setBorderEndStartRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderEndStartRadius", js.Any.fromFunction1(value))
+    def setMozBorderRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderEndStartRadius(value: StringOrNumberOrCallback): Self = this.set("borderEndStartRadius", value.asInstanceOf[js.Any])
+    def setMozBorderRadiusBottomleft(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderRadiusBottomleft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderEndStartRadius: Self = this.set("borderEndStartRadius", js.undefined)
+    def setMozBorderRadiusBottomleftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderRadiusBottomleft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderImage", js.Any.fromFunction1(value))
+    def setMozBorderRadiusBottomleftUndefined: Self = StObject.set(x, "MozBorderRadiusBottomleft", js.undefined)
     
     @scala.inline
-    def setBorderImage(value: StringOrNumberOrCallback): Self = this.set("borderImage", value.asInstanceOf[js.Any])
+    def setMozBorderRadiusBottomright(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderRadiusBottomright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderImage: Self = this.set("borderImage", js.undefined)
+    def setMozBorderRadiusBottomrightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderRadiusBottomright", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageOutsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderImageOutset", js.Any.fromFunction1(value))
+    def setMozBorderRadiusBottomrightUndefined: Self = StObject.set(x, "MozBorderRadiusBottomright", js.undefined)
     
     @scala.inline
-    def setBorderImageOutset(value: StringOrNumberOrCallback): Self = this.set("borderImageOutset", value.asInstanceOf[js.Any])
+    def setMozBorderRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderImageOutset: Self = this.set("borderImageOutset", js.undefined)
+    def setMozBorderRadiusTopleft(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderRadiusTopleft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderImageRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderImageRepeat", js.Any.fromFunction1(value))
+    def setMozBorderRadiusTopleftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderRadiusTopleft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageRepeat(value: StringOrNumberOrCallback): Self = this.set("borderImageRepeat", value.asInstanceOf[js.Any])
+    def setMozBorderRadiusTopleftUndefined: Self = StObject.set(x, "MozBorderRadiusTopleft", js.undefined)
     
     @scala.inline
-    def deleteBorderImageRepeat: Self = this.set("borderImageRepeat", js.undefined)
+    def setMozBorderRadiusTopright(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderRadiusTopright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderImageSliceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderImageSlice", js.Any.fromFunction1(value))
+    def setMozBorderRadiusToprightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderRadiusTopright", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderImageSlice(value: StringOrNumberOrCallback): Self = this.set("borderImageSlice", value.asInstanceOf[js.Any])
+    def setMozBorderRadiusToprightUndefined: Self = StObject.set(x, "MozBorderRadiusTopright", js.undefined)
     
     @scala.inline
-    def deleteBorderImageSlice: Self = this.set("borderImageSlice", js.undefined)
+    def setMozBorderRadiusUndefined: Self = StObject.set(x, "MozBorderRadius", js.undefined)
     
     @scala.inline
-    def setBorderImageSourceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderImageSource", js.Any.fromFunction1(value))
+    def setMozBorderRightColors(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderRightColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderImageSource(value: StringOrNumberOrCallback): Self = this.set("borderImageSource", value.asInstanceOf[js.Any])
+    def setMozBorderRightColorsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderRightColors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderImageSource: Self = this.set("borderImageSource", js.undefined)
+    def setMozBorderRightColorsUndefined: Self = StObject.set(x, "MozBorderRightColors", js.undefined)
     
     @scala.inline
-    def setBorderImageWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderImageWidth", js.Any.fromFunction1(value))
+    def setMozBorderStartColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderStartColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderImageWidth(value: StringOrNumberOrCallback): Self = this.set("borderImageWidth", value.asInstanceOf[js.Any])
+    def setMozBorderStartColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderStartColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderImageWidth: Self = this.set("borderImageWidth", js.undefined)
+    def setMozBorderStartColorUndefined: Self = StObject.set(x, "MozBorderStartColor", js.undefined)
     
     @scala.inline
-    def setBorderInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInline", js.Any.fromFunction1(value))
+    def setMozBorderStartStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderStartStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInline(value: StringOrNumberOrCallback): Self = this.set("borderInline", value.asInstanceOf[js.Any])
+    def setMozBorderStartStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderStartStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInline: Self = this.set("borderInline", js.undefined)
+    def setMozBorderStartStyleUndefined: Self = StObject.set(x, "MozBorderStartStyle", js.undefined)
     
     @scala.inline
-    def setBorderInlineColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineColor", js.Any.fromFunction1(value))
+    def setMozBorderTopColors(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBorderTopColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineColor(value: StringOrNumberOrCallback): Self = this.set("borderInlineColor", value.asInstanceOf[js.Any])
+    def setMozBorderTopColorsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBorderTopColors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineColor: Self = this.set("borderInlineColor", js.undefined)
+    def setMozBorderTopColorsUndefined: Self = StObject.set(x, "MozBorderTopColors", js.undefined)
     
     @scala.inline
-    def setBorderInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineEnd", js.Any.fromFunction1(value))
+    def setMozBoxAlign(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBoxAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineEnd(value: StringOrNumberOrCallback): Self = this.set("borderInlineEnd", value.asInstanceOf[js.Any])
+    def setMozBoxAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBoxAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineEnd: Self = this.set("borderInlineEnd", js.undefined)
+    def setMozBoxAlignUndefined: Self = StObject.set(x, "MozBoxAlign", js.undefined)
     
     @scala.inline
-    def setBorderInlineEndColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineEndColor", js.Any.fromFunction1(value))
+    def setMozBoxDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBoxDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineEndColor(value: StringOrNumberOrCallback): Self = this.set("borderInlineEndColor", value.asInstanceOf[js.Any])
+    def setMozBoxDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBoxDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineEndColor: Self = this.set("borderInlineEndColor", js.undefined)
+    def setMozBoxDirectionUndefined: Self = StObject.set(x, "MozBoxDirection", js.undefined)
     
     @scala.inline
-    def setBorderInlineEndStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineEndStyle", js.Any.fromFunction1(value))
+    def setMozBoxFlex(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBoxFlex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineEndStyle(value: StringOrNumberOrCallback): Self = this.set("borderInlineEndStyle", value.asInstanceOf[js.Any])
+    def setMozBoxFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBoxFlex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineEndStyle: Self = this.set("borderInlineEndStyle", js.undefined)
+    def setMozBoxFlexUndefined: Self = StObject.set(x, "MozBoxFlex", js.undefined)
     
     @scala.inline
-    def setBorderInlineEndWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineEndWidth", js.Any.fromFunction1(value))
+    def setMozBoxOrdinalGroup(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBoxOrdinalGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineEndWidth(value: StringOrNumberOrCallback): Self = this.set("borderInlineEndWidth", value.asInstanceOf[js.Any])
+    def setMozBoxOrdinalGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBoxOrdinalGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineEndWidth: Self = this.set("borderInlineEndWidth", js.undefined)
+    def setMozBoxOrdinalGroupUndefined: Self = StObject.set(x, "MozBoxOrdinalGroup", js.undefined)
     
     @scala.inline
-    def setBorderInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineStart", js.Any.fromFunction1(value))
+    def setMozBoxOrient(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBoxOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineStart(value: StringOrNumberOrCallback): Self = this.set("borderInlineStart", value.asInstanceOf[js.Any])
+    def setMozBoxOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBoxOrient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineStart: Self = this.set("borderInlineStart", js.undefined)
+    def setMozBoxOrientUndefined: Self = StObject.set(x, "MozBoxOrient", js.undefined)
     
     @scala.inline
-    def setBorderInlineStartColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineStartColor", js.Any.fromFunction1(value))
+    def setMozBoxPack(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBoxPack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineStartColor(value: StringOrNumberOrCallback): Self = this.set("borderInlineStartColor", value.asInstanceOf[js.Any])
+    def setMozBoxPackFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBoxPack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineStartColor: Self = this.set("borderInlineStartColor", js.undefined)
+    def setMozBoxPackUndefined: Self = StObject.set(x, "MozBoxPack", js.undefined)
     
     @scala.inline
-    def setBorderInlineStartStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineStartStyle", js.Any.fromFunction1(value))
+    def setMozBoxShadow(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBoxShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineStartStyle(value: StringOrNumberOrCallback): Self = this.set("borderInlineStartStyle", value.asInstanceOf[js.Any])
+    def setMozBoxShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBoxShadow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineStartStyle: Self = this.set("borderInlineStartStyle", js.undefined)
+    def setMozBoxShadowUndefined: Self = StObject.set(x, "MozBoxShadow", js.undefined)
     
     @scala.inline
-    def setBorderInlineStartWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineStartWidth", js.Any.fromFunction1(value))
+    def setMozBoxSizing(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozBoxSizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineStartWidth(value: StringOrNumberOrCallback): Self = this.set("borderInlineStartWidth", value.asInstanceOf[js.Any])
+    def setMozBoxSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozBoxSizing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineStartWidth: Self = this.set("borderInlineStartWidth", js.undefined)
+    def setMozBoxSizingUndefined: Self = StObject.set(x, "MozBoxSizing", js.undefined)
     
     @scala.inline
-    def setBorderInlineStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineStyle", js.Any.fromFunction1(value))
+    def setMozColumnCount(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineStyle(value: StringOrNumberOrCallback): Self = this.set("borderInlineStyle", value.asInstanceOf[js.Any])
+    def setMozColumnCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozColumnCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineStyle: Self = this.set("borderInlineStyle", js.undefined)
+    def setMozColumnCountUndefined: Self = StObject.set(x, "MozColumnCount", js.undefined)
     
     @scala.inline
-    def setBorderInlineWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderInlineWidth", js.Any.fromFunction1(value))
+    def setMozColumnFill(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozColumnFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderInlineWidth(value: StringOrNumberOrCallback): Self = this.set("borderInlineWidth", value.asInstanceOf[js.Any])
+    def setMozColumnFillFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozColumnFill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderInlineWidth: Self = this.set("borderInlineWidth", js.undefined)
+    def setMozColumnFillUndefined: Self = StObject.set(x, "MozColumnFill", js.undefined)
     
     @scala.inline
-    def setBorderLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderLeft", js.Any.fromFunction1(value))
+    def setMozColumnGap(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozColumnGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLeft(value: StringOrNumberOrCallback): Self = this.set("borderLeft", value.asInstanceOf[js.Any])
+    def setMozColumnGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozColumnGap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderLeft: Self = this.set("borderLeft", js.undefined)
+    def setMozColumnGapUndefined: Self = StObject.set(x, "MozColumnGap", js.undefined)
     
     @scala.inline
-    def setBorderLeftColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderLeftColor", js.Any.fromFunction1(value))
+    def setMozColumnRule(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozColumnRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLeftColor(value: StringOrNumberOrCallback): Self = this.set("borderLeftColor", value.asInstanceOf[js.Any])
+    def setMozColumnRuleColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozColumnRuleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderLeftColor: Self = this.set("borderLeftColor", js.undefined)
+    def setMozColumnRuleColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozColumnRuleColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderLeftStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderLeftStyle", js.Any.fromFunction1(value))
+    def setMozColumnRuleColorUndefined: Self = StObject.set(x, "MozColumnRuleColor", js.undefined)
     
     @scala.inline
-    def setBorderLeftStyle(value: StringOrNumberOrCallback): Self = this.set("borderLeftStyle", value.asInstanceOf[js.Any])
+    def setMozColumnRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozColumnRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderLeftStyle: Self = this.set("borderLeftStyle", js.undefined)
+    def setMozColumnRuleStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozColumnRuleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLeftWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderLeftWidth", js.Any.fromFunction1(value))
+    def setMozColumnRuleStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozColumnRuleStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorderLeftWidth(value: StringOrNumberOrCallback): Self = this.set("borderLeftWidth", value.asInstanceOf[js.Any])
+    def setMozColumnRuleStyleUndefined: Self = StObject.set(x, "MozColumnRuleStyle", js.undefined)
     
     @scala.inline
-    def deleteBorderLeftWidth: Self = this.set("borderLeftWidth", js.undefined)
+    def setMozColumnRuleUndefined: Self = StObject.set(x, "MozColumnRule", js.undefined)
     
     @scala.inline
-    def setBorderRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderRadius", js.Any.fromFunction1(value))
+    def setMozColumnRuleWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozColumnRuleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRadius(value: StringOrNumberOrCallback): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    def setMozColumnRuleWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozColumnRuleWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setMozColumnRuleWidthUndefined: Self = StObject.set(x, "MozColumnRuleWidth", js.undefined)
     
     @scala.inline
-    def setBorderRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderRight", js.Any.fromFunction1(value))
+    def setMozColumnWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRight(value: StringOrNumberOrCallback): Self = this.set("borderRight", value.asInstanceOf[js.Any])
+    def setMozColumnWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozColumnWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderRight: Self = this.set("borderRight", js.undefined)
+    def setMozColumnWidthUndefined: Self = StObject.set(x, "MozColumnWidth", js.undefined)
     
     @scala.inline
-    def setBorderRightColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderRightColor", js.Any.fromFunction1(value))
+    def setMozColumns(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRightColor(value: StringOrNumberOrCallback): Self = this.set("borderRightColor", value.asInstanceOf[js.Any])
+    def setMozColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderRightColor: Self = this.set("borderRightColor", js.undefined)
+    def setMozColumnsUndefined: Self = StObject.set(x, "MozColumns", js.undefined)
     
     @scala.inline
-    def setBorderRightStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderRightStyle", js.Any.fromFunction1(value))
+    def setMozContextProperties(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozContextProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRightStyle(value: StringOrNumberOrCallback): Self = this.set("borderRightStyle", value.asInstanceOf[js.Any])
+    def setMozContextPropertiesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozContextProperties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderRightStyle: Self = this.set("borderRightStyle", js.undefined)
+    def setMozContextPropertiesUndefined: Self = StObject.set(x, "MozContextProperties", js.undefined)
     
     @scala.inline
-    def setBorderRightWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderRightWidth", js.Any.fromFunction1(value))
+    def setMozFloatEdge(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozFloatEdge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRightWidth(value: StringOrNumberOrCallback): Self = this.set("borderRightWidth", value.asInstanceOf[js.Any])
+    def setMozFloatEdgeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozFloatEdge", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderRightWidth: Self = this.set("borderRightWidth", js.undefined)
+    def setMozFloatEdgeUndefined: Self = StObject.set(x, "MozFloatEdge", js.undefined)
     
     @scala.inline
-    def setBorderSpacingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderSpacing", js.Any.fromFunction1(value))
+    def setMozFontFeatureSettings(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozFontFeatureSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderSpacing(value: StringOrNumberOrCallback): Self = this.set("borderSpacing", value.asInstanceOf[js.Any])
+    def setMozFontFeatureSettingsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozFontFeatureSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderSpacing: Self = this.set("borderSpacing", js.undefined)
+    def setMozFontFeatureSettingsUndefined: Self = StObject.set(x, "MozFontFeatureSettings", js.undefined)
     
     @scala.inline
-    def setBorderStartEndRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderStartEndRadius", js.Any.fromFunction1(value))
+    def setMozFontLanguageOverride(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozFontLanguageOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderStartEndRadius(value: StringOrNumberOrCallback): Self = this.set("borderStartEndRadius", value.asInstanceOf[js.Any])
+    def setMozFontLanguageOverrideFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozFontLanguageOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderStartEndRadius: Self = this.set("borderStartEndRadius", js.undefined)
+    def setMozFontLanguageOverrideUndefined: Self = StObject.set(x, "MozFontLanguageOverride", js.undefined)
     
     @scala.inline
-    def setBorderStartStartRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderStartStartRadius", js.Any.fromFunction1(value))
+    def setMozForceBrokenImageIcon(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozForceBrokenImageIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderStartStartRadius(value: StringOrNumberOrCallback): Self = this.set("borderStartStartRadius", value.asInstanceOf[js.Any])
+    def setMozForceBrokenImageIconFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozForceBrokenImageIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderStartStartRadius: Self = this.set("borderStartStartRadius", js.undefined)
+    def setMozForceBrokenImageIconUndefined: Self = StObject.set(x, "MozForceBrokenImageIcon", js.undefined)
     
     @scala.inline
-    def setBorderStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderStyle", js.Any.fromFunction1(value))
+    def setMozHyphens(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozHyphens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderStyle(value: StringOrNumberOrCallback): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    def setMozHyphensFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozHyphens", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderStyle: Self = this.set("borderStyle", js.undefined)
+    def setMozHyphensUndefined: Self = StObject.set(x, "MozHyphens", js.undefined)
     
     @scala.inline
-    def setBorderTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderTop", js.Any.fromFunction1(value))
+    def setMozImageRegion(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozImageRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTop(value: StringOrNumberOrCallback): Self = this.set("borderTop", value.asInstanceOf[js.Any])
+    def setMozImageRegionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozImageRegion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderTop: Self = this.set("borderTop", js.undefined)
+    def setMozImageRegionUndefined: Self = StObject.set(x, "MozImageRegion", js.undefined)
     
     @scala.inline
-    def setBorderTopColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderTopColor", js.Any.fromFunction1(value))
+    def setMozMarginEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozMarginEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopColor(value: StringOrNumberOrCallback): Self = this.set("borderTopColor", value.asInstanceOf[js.Any])
+    def setMozMarginEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozMarginEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderTopColor: Self = this.set("borderTopColor", js.undefined)
+    def setMozMarginEndUndefined: Self = StObject.set(x, "MozMarginEnd", js.undefined)
     
     @scala.inline
-    def setBorderTopLeftRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderTopLeftRadius", js.Any.fromFunction1(value))
+    def setMozMarginStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozMarginStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopLeftRadius(value: StringOrNumberOrCallback): Self = this.set("borderTopLeftRadius", value.asInstanceOf[js.Any])
+    def setMozMarginStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozMarginStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderTopLeftRadius: Self = this.set("borderTopLeftRadius", js.undefined)
+    def setMozMarginStartUndefined: Self = StObject.set(x, "MozMarginStart", js.undefined)
     
     @scala.inline
-    def setBorderTopRightRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderTopRightRadius", js.Any.fromFunction1(value))
+    def setMozOpacity(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopRightRadius(value: StringOrNumberOrCallback): Self = this.set("borderTopRightRadius", value.asInstanceOf[js.Any])
+    def setMozOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderTopRightRadius: Self = this.set("borderTopRightRadius", js.undefined)
+    def setMozOpacityUndefined: Self = StObject.set(x, "MozOpacity", js.undefined)
     
     @scala.inline
-    def setBorderTopStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderTopStyle", js.Any.fromFunction1(value))
+    def setMozOrient(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopStyle(value: StringOrNumberOrCallback): Self = this.set("borderTopStyle", value.asInstanceOf[js.Any])
+    def setMozOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOrient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderTopStyle: Self = this.set("borderTopStyle", js.undefined)
+    def setMozOrientUndefined: Self = StObject.set(x, "MozOrient", js.undefined)
     
     @scala.inline
-    def setBorderTopWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderTopWidth", js.Any.fromFunction1(value))
+    def setMozOsxFontSmoothing(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOsxFontSmoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopWidth(value: StringOrNumberOrCallback): Self = this.set("borderTopWidth", value.asInstanceOf[js.Any])
+    def setMozOsxFontSmoothingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOsxFontSmoothing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorderTopWidth: Self = this.set("borderTopWidth", js.undefined)
+    def setMozOsxFontSmoothingUndefined: Self = StObject.set(x, "MozOsxFontSmoothing", js.undefined)
     
     @scala.inline
-    def setBorderWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("borderWidth", js.Any.fromFunction1(value))
+    def setMozOutline(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: StringOrNumberOrCallback): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setMozOutlineColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOutlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setMozOutlineColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOutlineColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("bottom", js.Any.fromFunction1(value))
+    def setMozOutlineColorUndefined: Self = StObject.set(x, "MozOutlineColor", js.undefined)
     
     @scala.inline
-    def setBottom(value: StringOrNumberOrCallback): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setMozOutlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOutline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setMozOutlineRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOutlineRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxAlign", js.Any.fromFunction1(value))
+    def setMozOutlineRadiusBottomleft(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOutlineRadiusBottomleft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxAlign(value: StringOrNumberOrCallback): Self = this.set("boxAlign", value.asInstanceOf[js.Any])
+    def setMozOutlineRadiusBottomleftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOutlineRadiusBottomleft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBoxAlign: Self = this.set("boxAlign", js.undefined)
+    def setMozOutlineRadiusBottomleftUndefined: Self = StObject.set(x, "MozOutlineRadiusBottomleft", js.undefined)
     
     @scala.inline
-    def setBoxDecorationBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxDecorationBreak", js.Any.fromFunction1(value))
+    def setMozOutlineRadiusBottomright(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOutlineRadiusBottomright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxDecorationBreak(value: StringOrNumberOrCallback): Self = this.set("boxDecorationBreak", value.asInstanceOf[js.Any])
+    def setMozOutlineRadiusBottomrightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOutlineRadiusBottomright", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBoxDecorationBreak: Self = this.set("boxDecorationBreak", js.undefined)
+    def setMozOutlineRadiusBottomrightUndefined: Self = StObject.set(x, "MozOutlineRadiusBottomright", js.undefined)
     
     @scala.inline
-    def setBoxDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxDirection", js.Any.fromFunction1(value))
+    def setMozOutlineRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOutlineRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoxDirection(value: StringOrNumberOrCallback): Self = this.set("boxDirection", value.asInstanceOf[js.Any])
+    def setMozOutlineRadiusTopleft(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOutlineRadiusTopleft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxDirection: Self = this.set("boxDirection", js.undefined)
+    def setMozOutlineRadiusTopleftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOutlineRadiusTopleft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoxFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxFlex", js.Any.fromFunction1(value))
+    def setMozOutlineRadiusTopleftUndefined: Self = StObject.set(x, "MozOutlineRadiusTopleft", js.undefined)
     
     @scala.inline
-    def setBoxFlex(value: StringOrNumberOrCallback): Self = this.set("boxFlex", value.asInstanceOf[js.Any])
+    def setMozOutlineRadiusTopright(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOutlineRadiusTopright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxFlex: Self = this.set("boxFlex", js.undefined)
+    def setMozOutlineRadiusToprightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOutlineRadiusTopright", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoxFlexGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxFlexGroup", js.Any.fromFunction1(value))
+    def setMozOutlineRadiusToprightUndefined: Self = StObject.set(x, "MozOutlineRadiusTopright", js.undefined)
     
     @scala.inline
-    def setBoxFlexGroup(value: StringOrNumberOrCallback): Self = this.set("boxFlexGroup", value.asInstanceOf[js.Any])
+    def setMozOutlineRadiusUndefined: Self = StObject.set(x, "MozOutlineRadius", js.undefined)
     
     @scala.inline
-    def deleteBoxFlexGroup: Self = this.set("boxFlexGroup", js.undefined)
+    def setMozOutlineStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOutlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxLines", js.Any.fromFunction1(value))
+    def setMozOutlineStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOutlineStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoxLines(value: StringOrNumberOrCallback): Self = this.set("boxLines", value.asInstanceOf[js.Any])
+    def setMozOutlineStyleUndefined: Self = StObject.set(x, "MozOutlineStyle", js.undefined)
     
     @scala.inline
-    def deleteBoxLines: Self = this.set("boxLines", js.undefined)
+    def setMozOutlineUndefined: Self = StObject.set(x, "MozOutline", js.undefined)
     
     @scala.inline
-    def setBoxOrdinalGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxOrdinalGroup", js.Any.fromFunction1(value))
+    def setMozOutlineWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozOutlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxOrdinalGroup(value: StringOrNumberOrCallback): Self = this.set("boxOrdinalGroup", value.asInstanceOf[js.Any])
+    def setMozOutlineWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozOutlineWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBoxOrdinalGroup: Self = this.set("boxOrdinalGroup", js.undefined)
+    def setMozOutlineWidthUndefined: Self = StObject.set(x, "MozOutlineWidth", js.undefined)
     
     @scala.inline
-    def setBoxOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxOrient", js.Any.fromFunction1(value))
+    def setMozPaddingEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozPaddingEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxOrient(value: StringOrNumberOrCallback): Self = this.set("boxOrient", value.asInstanceOf[js.Any])
+    def setMozPaddingEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozPaddingEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBoxOrient: Self = this.set("boxOrient", js.undefined)
+    def setMozPaddingEndUndefined: Self = StObject.set(x, "MozPaddingEnd", js.undefined)
     
     @scala.inline
-    def setBoxPackFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxPack", js.Any.fromFunction1(value))
+    def setMozPaddingStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozPaddingStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxPack(value: StringOrNumberOrCallback): Self = this.set("boxPack", value.asInstanceOf[js.Any])
+    def setMozPaddingStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozPaddingStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBoxPack: Self = this.set("boxPack", js.undefined)
+    def setMozPaddingStartUndefined: Self = StObject.set(x, "MozPaddingStart", js.undefined)
     
     @scala.inline
-    def setBoxShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxShadow", js.Any.fromFunction1(value))
+    def setMozPerspective(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozPerspective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxShadow(value: StringOrNumberOrCallback): Self = this.set("boxShadow", value.asInstanceOf[js.Any])
+    def setMozPerspectiveFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozPerspective", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBoxShadow: Self = this.set("boxShadow", js.undefined)
+    def setMozPerspectiveOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozPerspectiveOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("boxSizing", js.Any.fromFunction1(value))
+    def setMozPerspectiveOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozPerspectiveOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoxSizing(value: StringOrNumberOrCallback): Self = this.set("boxSizing", value.asInstanceOf[js.Any])
+    def setMozPerspectiveOriginUndefined: Self = StObject.set(x, "MozPerspectiveOrigin", js.undefined)
     
     @scala.inline
-    def deleteBoxSizing: Self = this.set("boxSizing", js.undefined)
+    def setMozPerspectiveUndefined: Self = StObject.set(x, "MozPerspective", js.undefined)
     
     @scala.inline
-    def setBreakAfterFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("breakAfter", js.Any.fromFunction1(value))
+    def setMozStackSizing(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozStackSizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakAfter(value: StringOrNumberOrCallback): Self = this.set("breakAfter", value.asInstanceOf[js.Any])
+    def setMozStackSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozStackSizing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBreakAfter: Self = this.set("breakAfter", js.undefined)
+    def setMozStackSizingUndefined: Self = StObject.set(x, "MozStackSizing", js.undefined)
     
     @scala.inline
-    def setBreakBeforeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("breakBefore", js.Any.fromFunction1(value))
+    def setMozTabSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakBefore(value: StringOrNumberOrCallback): Self = this.set("breakBefore", value.asInstanceOf[js.Any])
+    def setMozTabSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTabSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBreakBefore: Self = this.set("breakBefore", js.undefined)
+    def setMozTabSizeUndefined: Self = StObject.set(x, "MozTabSize", js.undefined)
     
     @scala.inline
-    def setBreakInsideFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("breakInside", js.Any.fromFunction1(value))
+    def setMozTextAlignLast(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTextAlignLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakInside(value: StringOrNumberOrCallback): Self = this.set("breakInside", value.asInstanceOf[js.Any])
+    def setMozTextAlignLastFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTextAlignLast", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBreakInside: Self = this.set("breakInside", js.undefined)
+    def setMozTextAlignLastUndefined: Self = StObject.set(x, "MozTextAlignLast", js.undefined)
     
     @scala.inline
-    def setCaptionSideFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("captionSide", js.Any.fromFunction1(value))
+    def setMozTextBlink(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTextBlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptionSide(value: StringOrNumberOrCallback): Self = this.set("captionSide", value.asInstanceOf[js.Any])
+    def setMozTextBlinkFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTextBlink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCaptionSide: Self = this.set("captionSide", js.undefined)
+    def setMozTextBlinkUndefined: Self = StObject.set(x, "MozTextBlink", js.undefined)
     
     @scala.inline
-    def setCaretColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("caretColor", js.Any.fromFunction1(value))
+    def setMozTextDecorationColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTextDecorationColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaretColor(value: StringOrNumberOrCallback): Self = this.set("caretColor", value.asInstanceOf[js.Any])
+    def setMozTextDecorationColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTextDecorationColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCaretColor: Self = this.set("caretColor", js.undefined)
+    def setMozTextDecorationColorUndefined: Self = StObject.set(x, "MozTextDecorationColor", js.undefined)
     
     @scala.inline
-    def setClearFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("clear", js.Any.fromFunction1(value))
+    def setMozTextDecorationLine(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTextDecorationLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: StringOrNumberOrCallback): Self = this.set("clear", value.asInstanceOf[js.Any])
+    def setMozTextDecorationLineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTextDecorationLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setMozTextDecorationLineUndefined: Self = StObject.set(x, "MozTextDecorationLine", js.undefined)
     
     @scala.inline
-    def setClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("clip", js.Any.fromFunction1(value))
+    def setMozTextDecorationStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTextDecorationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClip(value: StringOrNumberOrCallback): Self = this.set("clip", value.asInstanceOf[js.Any])
+    def setMozTextDecorationStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTextDecorationStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClip: Self = this.set("clip", js.undefined)
+    def setMozTextDecorationStyleUndefined: Self = StObject.set(x, "MozTextDecorationStyle", js.undefined)
     
     @scala.inline
-    def setClipPathFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("clipPath", js.Any.fromFunction1(value))
+    def setMozTextSizeAdjust(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTextSizeAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipPath(value: StringOrNumberOrCallback): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    def setMozTextSizeAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTextSizeAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClipPath: Self = this.set("clipPath", js.undefined)
+    def setMozTextSizeAdjustUndefined: Self = StObject.set(x, "MozTextSizeAdjust", js.undefined)
     
     @scala.inline
-    def setClipRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("clipRule", js.Any.fromFunction1(value))
+    def setMozTransformOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTransformOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipRule(value: StringOrNumberOrCallback): Self = this.set("clipRule", value.asInstanceOf[js.Any])
+    def setMozTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTransformOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClipRule: Self = this.set("clipRule", js.undefined)
+    def setMozTransformOriginUndefined: Self = StObject.set(x, "MozTransformOrigin", js.undefined)
     
     @scala.inline
-    def setColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("color", js.Any.fromFunction1(value))
+    def setMozTransformStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTransformStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: StringOrNumberOrCallback): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setMozTransformStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTransformStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setMozTransformStyleUndefined: Self = StObject.set(x, "MozTransformStyle", js.undefined)
     
     @scala.inline
-    def setColorAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("colorAdjust", js.Any.fromFunction1(value))
+    def setMozTransition(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorAdjust(value: StringOrNumberOrCallback): Self = this.set("colorAdjust", value.asInstanceOf[js.Any])
+    def setMozTransitionDelay(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTransitionDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorAdjust: Self = this.set("colorAdjust", js.undefined)
+    def setMozTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTransitionDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColorInterpolationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("colorInterpolation", js.Any.fromFunction1(value))
+    def setMozTransitionDelayUndefined: Self = StObject.set(x, "MozTransitionDelay", js.undefined)
     
     @scala.inline
-    def setColorInterpolation(value: StringOrNumberOrCallback): Self = this.set("colorInterpolation", value.asInstanceOf[js.Any])
+    def setMozTransitionDuration(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTransitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorInterpolation: Self = this.set("colorInterpolation", js.undefined)
+    def setMozTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTransitionDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColorRenderingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("colorRendering", js.Any.fromFunction1(value))
+    def setMozTransitionDurationUndefined: Self = StObject.set(x, "MozTransitionDuration", js.undefined)
     
     @scala.inline
-    def setColorRendering(value: StringOrNumberOrCallback): Self = this.set("colorRendering", value.asInstanceOf[js.Any])
+    def setMozTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTransition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColorRendering: Self = this.set("colorRendering", js.undefined)
+    def setMozTransitionProperty(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTransitionProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columnCount", js.Any.fromFunction1(value))
+    def setMozTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTransitionProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnCount(value: StringOrNumberOrCallback): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    def setMozTransitionPropertyUndefined: Self = StObject.set(x, "MozTransitionProperty", js.undefined)
     
     @scala.inline
-    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    def setMozTransitionTimingFunction(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozTransitionTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnFillFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columnFill", js.Any.fromFunction1(value))
+    def setMozTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozTransitionTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnFill(value: StringOrNumberOrCallback): Self = this.set("columnFill", value.asInstanceOf[js.Any])
+    def setMozTransitionTimingFunctionUndefined: Self = StObject.set(x, "MozTransitionTimingFunction", js.undefined)
     
     @scala.inline
-    def deleteColumnFill: Self = this.set("columnFill", js.undefined)
+    def setMozTransitionUndefined: Self = StObject.set(x, "MozTransition", js.undefined)
     
     @scala.inline
-    def setColumnGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columnGap", js.Any.fromFunction1(value))
+    def setMozUserFocus(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozUserFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnGap(value: StringOrNumberOrCallback): Self = this.set("columnGap", value.asInstanceOf[js.Any])
+    def setMozUserFocusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozUserFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnGap: Self = this.set("columnGap", js.undefined)
+    def setMozUserFocusUndefined: Self = StObject.set(x, "MozUserFocus", js.undefined)
     
     @scala.inline
-    def setColumnRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columnRule", js.Any.fromFunction1(value))
+    def setMozUserInput(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozUserInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnRule(value: StringOrNumberOrCallback): Self = this.set("columnRule", value.asInstanceOf[js.Any])
+    def setMozUserInputFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozUserInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnRule: Self = this.set("columnRule", js.undefined)
+    def setMozUserInputUndefined: Self = StObject.set(x, "MozUserInput", js.undefined)
     
     @scala.inline
-    def setColumnRuleColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columnRuleColor", js.Any.fromFunction1(value))
+    def setMozUserModify(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozUserModify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnRuleColor(value: StringOrNumberOrCallback): Self = this.set("columnRuleColor", value.asInstanceOf[js.Any])
+    def setMozUserModifyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozUserModify", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnRuleColor: Self = this.set("columnRuleColor", js.undefined)
+    def setMozUserModifyUndefined: Self = StObject.set(x, "MozUserModify", js.undefined)
     
     @scala.inline
-    def setColumnRuleStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columnRuleStyle", js.Any.fromFunction1(value))
+    def setMozUserSelect(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozUserSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnRuleStyle(value: StringOrNumberOrCallback): Self = this.set("columnRuleStyle", value.asInstanceOf[js.Any])
+    def setMozUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozUserSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnRuleStyle: Self = this.set("columnRuleStyle", js.undefined)
+    def setMozUserSelectUndefined: Self = StObject.set(x, "MozUserSelect", js.undefined)
     
     @scala.inline
-    def setColumnRuleWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columnRuleWidth", js.Any.fromFunction1(value))
+    def setMozWindowDragging(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozWindowDragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnRuleWidth(value: StringOrNumberOrCallback): Self = this.set("columnRuleWidth", value.asInstanceOf[js.Any])
+    def setMozWindowDraggingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozWindowDragging", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnRuleWidth: Self = this.set("columnRuleWidth", js.undefined)
+    def setMozWindowDraggingUndefined: Self = StObject.set(x, "MozWindowDragging", js.undefined)
     
     @scala.inline
-    def setColumnSpanFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columnSpan", js.Any.fromFunction1(value))
+    def setMozWindowShadow(value: StringOrNumberOrCallback): Self = StObject.set(x, "MozWindowShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSpan(value: StringOrNumberOrCallback): Self = this.set("columnSpan", value.asInstanceOf[js.Any])
+    def setMozWindowShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "MozWindowShadow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnSpan: Self = this.set("columnSpan", js.undefined)
+    def setMozWindowShadowUndefined: Self = StObject.set(x, "MozWindowShadow", js.undefined)
     
     @scala.inline
-    def setColumnWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columnWidth", js.Any.fromFunction1(value))
+    def setMsAccelerator(value: StringOrNumberOrCallback): Self = StObject.set(x, "msAccelerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidth(value: StringOrNumberOrCallback): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    def setMsAcceleratorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msAccelerator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    def setMsAcceleratorUndefined: Self = StObject.set(x, "msAccelerator", js.undefined)
     
     @scala.inline
-    def setColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("columns", js.Any.fromFunction1(value))
+    def setMsAlignSelf(value: StringOrNumberOrCallback): Self = StObject.set(x, "msAlignSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: StringOrNumberOrCallback): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setMsAlignSelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msAlignSelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setMsAlignSelfUndefined: Self = StObject.set(x, "msAlignSelf", js.undefined)
     
     @scala.inline
-    def setContainFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("contain", js.Any.fromFunction1(value))
+    def setMsBlockProgression(value: StringOrNumberOrCallback): Self = StObject.set(x, "msBlockProgression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContain(value: StringOrNumberOrCallback): Self = this.set("contain", value.asInstanceOf[js.Any])
+    def setMsBlockProgressionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msBlockProgression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteContain: Self = this.set("contain", js.undefined)
+    def setMsBlockProgressionUndefined: Self = StObject.set(x, "msBlockProgression", js.undefined)
     
     @scala.inline
-    def setContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("content", js.Any.fromFunction1(value))
+    def setMsContentZoomChaining(value: StringOrNumberOrCallback): Self = StObject.set(x, "msContentZoomChaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: StringOrNumberOrCallback): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setMsContentZoomChainingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msContentZoomChaining", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setMsContentZoomChainingUndefined: Self = StObject.set(x, "msContentZoomChaining", js.undefined)
     
     @scala.inline
-    def setCounterIncrementFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("counterIncrement", js.Any.fromFunction1(value))
+    def setMsContentZoomLimit(value: StringOrNumberOrCallback): Self = StObject.set(x, "msContentZoomLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounterIncrement(value: StringOrNumberOrCallback): Self = this.set("counterIncrement", value.asInstanceOf[js.Any])
+    def setMsContentZoomLimitFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msContentZoomLimit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCounterIncrement: Self = this.set("counterIncrement", js.undefined)
+    def setMsContentZoomLimitMax(value: StringOrNumberOrCallback): Self = StObject.set(x, "msContentZoomLimitMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounterResetFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("counterReset", js.Any.fromFunction1(value))
+    def setMsContentZoomLimitMaxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msContentZoomLimitMax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCounterReset(value: StringOrNumberOrCallback): Self = this.set("counterReset", value.asInstanceOf[js.Any])
+    def setMsContentZoomLimitMaxUndefined: Self = StObject.set(x, "msContentZoomLimitMax", js.undefined)
     
     @scala.inline
-    def deleteCounterReset: Self = this.set("counterReset", js.undefined)
+    def setMsContentZoomLimitMin(value: StringOrNumberOrCallback): Self = StObject.set(x, "msContentZoomLimitMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounterSetFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("counterSet", js.Any.fromFunction1(value))
+    def setMsContentZoomLimitMinFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msContentZoomLimitMin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCounterSet(value: StringOrNumberOrCallback): Self = this.set("counterSet", value.asInstanceOf[js.Any])
+    def setMsContentZoomLimitMinUndefined: Self = StObject.set(x, "msContentZoomLimitMin", js.undefined)
     
     @scala.inline
-    def deleteCounterSet: Self = this.set("counterSet", js.undefined)
+    def setMsContentZoomLimitUndefined: Self = StObject.set(x, "msContentZoomLimit", js.undefined)
     
     @scala.inline
-    def setCursorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("cursor", js.Any.fromFunction1(value))
+    def setMsContentZoomSnap(value: StringOrNumberOrCallback): Self = StObject.set(x, "msContentZoomSnap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: StringOrNumberOrCallback): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setMsContentZoomSnapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msContentZoomSnap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setMsContentZoomSnapPoints(value: StringOrNumberOrCallback): Self = StObject.set(x, "msContentZoomSnapPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("direction", js.Any.fromFunction1(value))
+    def setMsContentZoomSnapPointsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msContentZoomSnapPoints", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirection(value: StringOrNumberOrCallback): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setMsContentZoomSnapPointsUndefined: Self = StObject.set(x, "msContentZoomSnapPoints", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setMsContentZoomSnapType(value: StringOrNumberOrCallback): Self = StObject.set(x, "msContentZoomSnapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("display", js.Any.fromFunction1(value))
+    def setMsContentZoomSnapTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msContentZoomSnapType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisplay(value: StringOrNumberOrCallback): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setMsContentZoomSnapTypeUndefined: Self = StObject.set(x, "msContentZoomSnapType", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setMsContentZoomSnapUndefined: Self = StObject.set(x, "msContentZoomSnap", js.undefined)
     
     @scala.inline
-    def setDominantBaselineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("dominantBaseline", js.Any.fromFunction1(value))
+    def setMsContentZooming(value: StringOrNumberOrCallback): Self = StObject.set(x, "msContentZooming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDominantBaseline(value: StringOrNumberOrCallback): Self = this.set("dominantBaseline", value.asInstanceOf[js.Any])
+    def setMsContentZoomingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msContentZooming", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDominantBaseline: Self = this.set("dominantBaseline", js.undefined)
+    def setMsContentZoomingUndefined: Self = StObject.set(x, "msContentZooming", js.undefined)
     
     @scala.inline
-    def setEmptyCellsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("emptyCells", js.Any.fromFunction1(value))
+    def setMsFilter(value: StringOrNumberOrCallback): Self = StObject.set(x, "msFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyCells(value: StringOrNumberOrCallback): Self = this.set("emptyCells", value.asInstanceOf[js.Any])
+    def setMsFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEmptyCells: Self = this.set("emptyCells", js.undefined)
+    def setMsFilterUndefined: Self = StObject.set(x, "msFilter", js.undefined)
     
     @scala.inline
-    def setFillFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fill", js.Any.fromFunction1(value))
+    def setMsFlex(value: StringOrNumberOrCallback): Self = StObject.set(x, "msFlex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: StringOrNumberOrCallback): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setMsFlexDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "msFlexDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setMsFlexDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msFlexDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFillOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fillOpacity", js.Any.fromFunction1(value))
+    def setMsFlexDirectionUndefined: Self = StObject.set(x, "msFlexDirection", js.undefined)
     
     @scala.inline
-    def setFillOpacity(value: StringOrNumberOrCallback): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setMsFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msFlex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setMsFlexPositive(value: StringOrNumberOrCallback): Self = StObject.set(x, "msFlexPositive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fillRule", js.Any.fromFunction1(value))
+    def setMsFlexPositiveFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msFlexPositive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFillRule(value: StringOrNumberOrCallback): Self = this.set("fillRule", value.asInstanceOf[js.Any])
+    def setMsFlexPositiveUndefined: Self = StObject.set(x, "msFlexPositive", js.undefined)
     
     @scala.inline
-    def deleteFillRule: Self = this.set("fillRule", js.undefined)
+    def setMsFlexUndefined: Self = StObject.set(x, "msFlex", js.undefined)
     
     @scala.inline
-    def setFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("filter", js.Any.fromFunction1(value))
+    def setMsFlowFrom(value: StringOrNumberOrCallback): Self = StObject.set(x, "msFlowFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: StringOrNumberOrCallback): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setMsFlowFromFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msFlowFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setMsFlowFromUndefined: Self = StObject.set(x, "msFlowFrom", js.undefined)
     
     @scala.inline
-    def setFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("flex", js.Any.fromFunction1(value))
+    def setMsFlowInto(value: StringOrNumberOrCallback): Self = StObject.set(x, "msFlowInto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlex(value: StringOrNumberOrCallback): Self = this.set("flex", value.asInstanceOf[js.Any])
+    def setMsFlowIntoFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msFlowInto", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFlex: Self = this.set("flex", js.undefined)
+    def setMsFlowIntoUndefined: Self = StObject.set(x, "msFlowInto", js.undefined)
     
     @scala.inline
-    def setFlexBasisFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("flexBasis", js.Any.fromFunction1(value))
+    def setMsGridColumns(value: StringOrNumberOrCallback): Self = StObject.set(x, "msGridColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexBasis(value: StringOrNumberOrCallback): Self = this.set("flexBasis", value.asInstanceOf[js.Any])
+    def setMsGridColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msGridColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFlexBasis: Self = this.set("flexBasis", js.undefined)
+    def setMsGridColumnsUndefined: Self = StObject.set(x, "msGridColumns", js.undefined)
     
     @scala.inline
-    def setFlexDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("flexDirection", js.Any.fromFunction1(value))
+    def setMsGridRows(value: StringOrNumberOrCallback): Self = StObject.set(x, "msGridRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexDirection(value: StringOrNumberOrCallback): Self = this.set("flexDirection", value.asInstanceOf[js.Any])
+    def setMsGridRowsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msGridRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFlexDirection: Self = this.set("flexDirection", js.undefined)
+    def setMsGridRowsUndefined: Self = StObject.set(x, "msGridRows", js.undefined)
     
     @scala.inline
-    def setFlexFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("flexFlow", js.Any.fromFunction1(value))
+    def setMsHighContrastAdjust(value: StringOrNumberOrCallback): Self = StObject.set(x, "msHighContrastAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexFlow(value: StringOrNumberOrCallback): Self = this.set("flexFlow", value.asInstanceOf[js.Any])
+    def setMsHighContrastAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msHighContrastAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFlexFlow: Self = this.set("flexFlow", js.undefined)
+    def setMsHighContrastAdjustUndefined: Self = StObject.set(x, "msHighContrastAdjust", js.undefined)
     
     @scala.inline
-    def setFlexGrowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("flexGrow", js.Any.fromFunction1(value))
+    def setMsHyphenateLimitChars(value: StringOrNumberOrCallback): Self = StObject.set(x, "msHyphenateLimitChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexGrow(value: StringOrNumberOrCallback): Self = this.set("flexGrow", value.asInstanceOf[js.Any])
+    def setMsHyphenateLimitCharsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msHyphenateLimitChars", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFlexGrow: Self = this.set("flexGrow", js.undefined)
+    def setMsHyphenateLimitCharsUndefined: Self = StObject.set(x, "msHyphenateLimitChars", js.undefined)
     
     @scala.inline
-    def setFlexShrinkFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("flexShrink", js.Any.fromFunction1(value))
+    def setMsHyphenateLimitLines(value: StringOrNumberOrCallback): Self = StObject.set(x, "msHyphenateLimitLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexShrink(value: StringOrNumberOrCallback): Self = this.set("flexShrink", value.asInstanceOf[js.Any])
+    def setMsHyphenateLimitLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msHyphenateLimitLines", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFlexShrink: Self = this.set("flexShrink", js.undefined)
+    def setMsHyphenateLimitLinesUndefined: Self = StObject.set(x, "msHyphenateLimitLines", js.undefined)
     
     @scala.inline
-    def setFlexWrapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("flexWrap", js.Any.fromFunction1(value))
+    def setMsHyphenateLimitZone(value: StringOrNumberOrCallback): Self = StObject.set(x, "msHyphenateLimitZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexWrap(value: StringOrNumberOrCallback): Self = this.set("flexWrap", value.asInstanceOf[js.Any])
+    def setMsHyphenateLimitZoneFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msHyphenateLimitZone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFlexWrap: Self = this.set("flexWrap", js.undefined)
+    def setMsHyphenateLimitZoneUndefined: Self = StObject.set(x, "msHyphenateLimitZone", js.undefined)
     
     @scala.inline
-    def setFloatFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("float", js.Any.fromFunction1(value))
+    def setMsHyphens(value: StringOrNumberOrCallback): Self = StObject.set(x, "msHyphens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloat(value: StringOrNumberOrCallback): Self = this.set("float", value.asInstanceOf[js.Any])
+    def setMsHyphensFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msHyphens", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFloat: Self = this.set("float", js.undefined)
+    def setMsHyphensUndefined: Self = StObject.set(x, "msHyphens", js.undefined)
     
     @scala.inline
-    def setFloodColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("floodColor", js.Any.fromFunction1(value))
+    def setMsImeAlign(value: StringOrNumberOrCallback): Self = StObject.set(x, "msImeAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodColor(value: StringOrNumberOrCallback): Self = this.set("floodColor", value.asInstanceOf[js.Any])
+    def setMsImeAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msImeAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFloodColor: Self = this.set("floodColor", js.undefined)
+    def setMsImeAlignUndefined: Self = StObject.set(x, "msImeAlign", js.undefined)
     
     @scala.inline
-    def setFloodOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("floodOpacity", js.Any.fromFunction1(value))
+    def setMsImeMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "msImeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodOpacity(value: StringOrNumberOrCallback): Self = this.set("floodOpacity", value.asInstanceOf[js.Any])
+    def setMsImeModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msImeMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFloodOpacity: Self = this.set("floodOpacity", js.undefined)
+    def setMsImeModeUndefined: Self = StObject.set(x, "msImeMode", js.undefined)
     
     @scala.inline
-    def setFontFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("font", js.Any.fromFunction1(value))
+    def setMsJustifySelf(value: StringOrNumberOrCallback): Self = StObject.set(x, "msJustifySelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: StringOrNumberOrCallback): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setMsJustifySelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msJustifySelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setMsJustifySelfUndefined: Self = StObject.set(x, "msJustifySelf", js.undefined)
     
     @scala.inline
-    def setFontFamilyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontFamily", js.Any.fromFunction1(value))
+    def setMsLineBreak(value: StringOrNumberOrCallback): Self = StObject.set(x, "msLineBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: StringOrNumberOrCallback): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setMsLineBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msLineBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setMsLineBreakUndefined: Self = StObject.set(x, "msLineBreak", js.undefined)
     
     @scala.inline
-    def setFontFeatureSettingsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontFeatureSettings", js.Any.fromFunction1(value))
+    def setMsOrder(value: StringOrNumberOrCallback): Self = StObject.set(x, "msOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFeatureSettings(value: StringOrNumberOrCallback): Self = this.set("fontFeatureSettings", value.asInstanceOf[js.Any])
+    def setMsOrderFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msOrder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontFeatureSettings: Self = this.set("fontFeatureSettings", js.undefined)
+    def setMsOrderUndefined: Self = StObject.set(x, "msOrder", js.undefined)
     
     @scala.inline
-    def setFontKerningFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontKerning", js.Any.fromFunction1(value))
+    def setMsOverflowStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "msOverflowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontKerning(value: StringOrNumberOrCallback): Self = this.set("fontKerning", value.asInstanceOf[js.Any])
+    def setMsOverflowStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msOverflowStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontKerning: Self = this.set("fontKerning", js.undefined)
+    def setMsOverflowStyleUndefined: Self = StObject.set(x, "msOverflowStyle", js.undefined)
     
     @scala.inline
-    def setFontLanguageOverrideFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontLanguageOverride", js.Any.fromFunction1(value))
+    def setMsOverflowX(value: StringOrNumberOrCallback): Self = StObject.set(x, "msOverflowX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontLanguageOverride(value: StringOrNumberOrCallback): Self = this.set("fontLanguageOverride", value.asInstanceOf[js.Any])
+    def setMsOverflowXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msOverflowX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontLanguageOverride: Self = this.set("fontLanguageOverride", js.undefined)
+    def setMsOverflowXUndefined: Self = StObject.set(x, "msOverflowX", js.undefined)
     
     @scala.inline
-    def setFontOpticalSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontOpticalSizing", js.Any.fromFunction1(value))
+    def setMsOverflowY(value: StringOrNumberOrCallback): Self = StObject.set(x, "msOverflowY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontOpticalSizing(value: StringOrNumberOrCallback): Self = this.set("fontOpticalSizing", value.asInstanceOf[js.Any])
+    def setMsOverflowYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msOverflowY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontOpticalSizing: Self = this.set("fontOpticalSizing", js.undefined)
+    def setMsOverflowYUndefined: Self = StObject.set(x, "msOverflowY", js.undefined)
     
     @scala.inline
-    def setFontSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontSize", js.Any.fromFunction1(value))
+    def setMsScrollChaining(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollChaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: StringOrNumberOrCallback): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setMsScrollChainingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollChaining", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setMsScrollChainingUndefined: Self = StObject.set(x, "msScrollChaining", js.undefined)
     
     @scala.inline
-    def setFontSizeAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontSizeAdjust", js.Any.fromFunction1(value))
+    def setMsScrollLimit(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSizeAdjust(value: StringOrNumberOrCallback): Self = this.set("fontSizeAdjust", value.asInstanceOf[js.Any])
+    def setMsScrollLimitFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollLimit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontSizeAdjust: Self = this.set("fontSizeAdjust", js.undefined)
+    def setMsScrollLimitUndefined: Self = StObject.set(x, "msScrollLimit", js.undefined)
     
     @scala.inline
-    def setFontSmoothFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontSmooth", js.Any.fromFunction1(value))
+    def setMsScrollLimitXMax(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollLimitXMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSmooth(value: StringOrNumberOrCallback): Self = this.set("fontSmooth", value.asInstanceOf[js.Any])
+    def setMsScrollLimitXMaxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollLimitXMax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontSmooth: Self = this.set("fontSmooth", js.undefined)
+    def setMsScrollLimitXMaxUndefined: Self = StObject.set(x, "msScrollLimitXMax", js.undefined)
     
     @scala.inline
-    def setFontStretchFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontStretch", js.Any.fromFunction1(value))
+    def setMsScrollLimitXMin(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollLimitXMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStretch(value: StringOrNumberOrCallback): Self = this.set("fontStretch", value.asInstanceOf[js.Any])
+    def setMsScrollLimitXMinFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollLimitXMin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontStretch: Self = this.set("fontStretch", js.undefined)
+    def setMsScrollLimitXMinUndefined: Self = StObject.set(x, "msScrollLimitXMin", js.undefined)
     
     @scala.inline
-    def setFontStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontStyle", js.Any.fromFunction1(value))
+    def setMsScrollLimitYMax(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollLimitYMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: StringOrNumberOrCallback): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setMsScrollLimitYMaxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollLimitYMax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setMsScrollLimitYMaxUndefined: Self = StObject.set(x, "msScrollLimitYMax", js.undefined)
     
     @scala.inline
-    def setFontSynthesisFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontSynthesis", js.Any.fromFunction1(value))
+    def setMsScrollLimitYMin(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollLimitYMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSynthesis(value: StringOrNumberOrCallback): Self = this.set("fontSynthesis", value.asInstanceOf[js.Any])
+    def setMsScrollLimitYMinFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollLimitYMin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontSynthesis: Self = this.set("fontSynthesis", js.undefined)
+    def setMsScrollLimitYMinUndefined: Self = StObject.set(x, "msScrollLimitYMin", js.undefined)
     
     @scala.inline
-    def setFontVariantFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontVariant", js.Any.fromFunction1(value))
+    def setMsScrollRails(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollRails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariant(value: StringOrNumberOrCallback): Self = this.set("fontVariant", value.asInstanceOf[js.Any])
+    def setMsScrollRailsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollRails", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontVariant: Self = this.set("fontVariant", js.undefined)
+    def setMsScrollRailsUndefined: Self = StObject.set(x, "msScrollRails", js.undefined)
     
     @scala.inline
-    def setFontVariantAlternatesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontVariantAlternates", js.Any.fromFunction1(value))
+    def setMsScrollSnapPointsX(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollSnapPointsX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariantAlternates(value: StringOrNumberOrCallback): Self = this.set("fontVariantAlternates", value.asInstanceOf[js.Any])
+    def setMsScrollSnapPointsXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollSnapPointsX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontVariantAlternates: Self = this.set("fontVariantAlternates", js.undefined)
+    def setMsScrollSnapPointsXUndefined: Self = StObject.set(x, "msScrollSnapPointsX", js.undefined)
     
     @scala.inline
-    def setFontVariantCapsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontVariantCaps", js.Any.fromFunction1(value))
+    def setMsScrollSnapPointsY(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollSnapPointsY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariantCaps(value: StringOrNumberOrCallback): Self = this.set("fontVariantCaps", value.asInstanceOf[js.Any])
+    def setMsScrollSnapPointsYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollSnapPointsY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontVariantCaps: Self = this.set("fontVariantCaps", js.undefined)
+    def setMsScrollSnapPointsYUndefined: Self = StObject.set(x, "msScrollSnapPointsY", js.undefined)
     
     @scala.inline
-    def setFontVariantEastAsianFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontVariantEastAsian", js.Any.fromFunction1(value))
+    def setMsScrollSnapType(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollSnapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariantEastAsian(value: StringOrNumberOrCallback): Self = this.set("fontVariantEastAsian", value.asInstanceOf[js.Any])
+    def setMsScrollSnapTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollSnapType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontVariantEastAsian: Self = this.set("fontVariantEastAsian", js.undefined)
+    def setMsScrollSnapTypeUndefined: Self = StObject.set(x, "msScrollSnapType", js.undefined)
     
     @scala.inline
-    def setFontVariantLigaturesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontVariantLigatures", js.Any.fromFunction1(value))
+    def setMsScrollSnapX(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollSnapX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariantLigatures(value: StringOrNumberOrCallback): Self = this.set("fontVariantLigatures", value.asInstanceOf[js.Any])
+    def setMsScrollSnapXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollSnapX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontVariantLigatures: Self = this.set("fontVariantLigatures", js.undefined)
+    def setMsScrollSnapXUndefined: Self = StObject.set(x, "msScrollSnapX", js.undefined)
     
     @scala.inline
-    def setFontVariantNumericFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontVariantNumeric", js.Any.fromFunction1(value))
+    def setMsScrollSnapY(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollSnapY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariantNumeric(value: StringOrNumberOrCallback): Self = this.set("fontVariantNumeric", value.asInstanceOf[js.Any])
+    def setMsScrollSnapYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollSnapY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontVariantNumeric: Self = this.set("fontVariantNumeric", js.undefined)
+    def setMsScrollSnapYUndefined: Self = StObject.set(x, "msScrollSnapY", js.undefined)
     
     @scala.inline
-    def setFontVariantPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontVariantPosition", js.Any.fromFunction1(value))
+    def setMsScrollTranslation(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariantPosition(value: StringOrNumberOrCallback): Self = this.set("fontVariantPosition", value.asInstanceOf[js.Any])
+    def setMsScrollTranslationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollTranslation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontVariantPosition: Self = this.set("fontVariantPosition", js.undefined)
+    def setMsScrollTranslationUndefined: Self = StObject.set(x, "msScrollTranslation", js.undefined)
     
     @scala.inline
-    def setFontVariationSettingsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontVariationSettings", js.Any.fromFunction1(value))
+    def setMsScrollbar3dlightColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollbar3dlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariationSettings(value: StringOrNumberOrCallback): Self = this.set("fontVariationSettings", value.asInstanceOf[js.Any])
+    def setMsScrollbar3dlightColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollbar3dlightColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontVariationSettings: Self = this.set("fontVariationSettings", js.undefined)
+    def setMsScrollbar3dlightColorUndefined: Self = StObject.set(x, "msScrollbar3dlightColor", js.undefined)
     
     @scala.inline
-    def setFontWeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("fontWeight", js.Any.fromFunction1(value))
+    def setMsScrollbarArrowColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollbarArrowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: StringOrNumberOrCallback): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setMsScrollbarArrowColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollbarArrowColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setMsScrollbarArrowColorUndefined: Self = StObject.set(x, "msScrollbarArrowColor", js.undefined)
     
     @scala.inline
-    def setGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gap", js.Any.fromFunction1(value))
+    def setMsScrollbarBaseColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollbarBaseColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGap(value: StringOrNumberOrCallback): Self = this.set("gap", value.asInstanceOf[js.Any])
+    def setMsScrollbarBaseColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollbarBaseColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGap: Self = this.set("gap", js.undefined)
+    def setMsScrollbarBaseColorUndefined: Self = StObject.set(x, "msScrollbarBaseColor", js.undefined)
     
     @scala.inline
-    def setGlyphOrientationVerticalFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("glyphOrientationVertical", js.Any.fromFunction1(value))
+    def setMsScrollbarDarkshadowColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollbarDarkshadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphOrientationVertical(value: StringOrNumberOrCallback): Self = this.set("glyphOrientationVertical", value.asInstanceOf[js.Any])
+    def setMsScrollbarDarkshadowColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollbarDarkshadowColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGlyphOrientationVertical: Self = this.set("glyphOrientationVertical", js.undefined)
+    def setMsScrollbarDarkshadowColorUndefined: Self = StObject.set(x, "msScrollbarDarkshadowColor", js.undefined)
     
     @scala.inline
-    def setGridFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("grid", js.Any.fromFunction1(value))
+    def setMsScrollbarFaceColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollbarFaceColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: StringOrNumberOrCallback): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setMsScrollbarFaceColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollbarFaceColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setMsScrollbarFaceColorUndefined: Self = StObject.set(x, "msScrollbarFaceColor", js.undefined)
     
     @scala.inline
-    def setGridAreaFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridArea", js.Any.fromFunction1(value))
+    def setMsScrollbarHighlightColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollbarHighlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridArea(value: StringOrNumberOrCallback): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    def setMsScrollbarHighlightColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollbarHighlightColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    def setMsScrollbarHighlightColorUndefined: Self = StObject.set(x, "msScrollbarHighlightColor", js.undefined)
     
     @scala.inline
-    def setGridAutoColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridAutoColumns", js.Any.fromFunction1(value))
+    def setMsScrollbarShadowColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollbarShadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridAutoColumns(value: StringOrNumberOrCallback): Self = this.set("gridAutoColumns", value.asInstanceOf[js.Any])
+    def setMsScrollbarShadowColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollbarShadowColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridAutoColumns: Self = this.set("gridAutoColumns", js.undefined)
+    def setMsScrollbarShadowColorUndefined: Self = StObject.set(x, "msScrollbarShadowColor", js.undefined)
     
     @scala.inline
-    def setGridAutoFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridAutoFlow", js.Any.fromFunction1(value))
+    def setMsScrollbarTrackColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "msScrollbarTrackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridAutoFlow(value: StringOrNumberOrCallback): Self = this.set("gridAutoFlow", value.asInstanceOf[js.Any])
+    def setMsScrollbarTrackColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msScrollbarTrackColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridAutoFlow: Self = this.set("gridAutoFlow", js.undefined)
+    def setMsScrollbarTrackColorUndefined: Self = StObject.set(x, "msScrollbarTrackColor", js.undefined)
     
     @scala.inline
-    def setGridAutoRowsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridAutoRows", js.Any.fromFunction1(value))
+    def setMsTextAutospace(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTextAutospace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridAutoRows(value: StringOrNumberOrCallback): Self = this.set("gridAutoRows", value.asInstanceOf[js.Any])
+    def setMsTextAutospaceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTextAutospace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridAutoRows: Self = this.set("gridAutoRows", js.undefined)
+    def setMsTextAutospaceUndefined: Self = StObject.set(x, "msTextAutospace", js.undefined)
     
     @scala.inline
-    def setGridColumnFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridColumn", js.Any.fromFunction1(value))
+    def setMsTextCombineHorizontal(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTextCombineHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridColumn(value: StringOrNumberOrCallback): Self = this.set("gridColumn", value.asInstanceOf[js.Any])
+    def setMsTextCombineHorizontalFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTextCombineHorizontal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridColumn: Self = this.set("gridColumn", js.undefined)
+    def setMsTextCombineHorizontalUndefined: Self = StObject.set(x, "msTextCombineHorizontal", js.undefined)
     
     @scala.inline
-    def setGridColumnEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridColumnEnd", js.Any.fromFunction1(value))
+    def setMsTextOverflow(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTextOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridColumnEnd(value: StringOrNumberOrCallback): Self = this.set("gridColumnEnd", value.asInstanceOf[js.Any])
+    def setMsTextOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTextOverflow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridColumnEnd: Self = this.set("gridColumnEnd", js.undefined)
+    def setMsTextOverflowUndefined: Self = StObject.set(x, "msTextOverflow", js.undefined)
     
     @scala.inline
-    def setGridColumnGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridColumnGap", js.Any.fromFunction1(value))
+    def setMsTouchAction(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTouchAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridColumnGap(value: StringOrNumberOrCallback): Self = this.set("gridColumnGap", value.asInstanceOf[js.Any])
+    def setMsTouchActionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTouchAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridColumnGap: Self = this.set("gridColumnGap", js.undefined)
+    def setMsTouchActionUndefined: Self = StObject.set(x, "msTouchAction", js.undefined)
     
     @scala.inline
-    def setGridColumnStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridColumnStart", js.Any.fromFunction1(value))
+    def setMsTouchSelect(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTouchSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridColumnStart(value: StringOrNumberOrCallback): Self = this.set("gridColumnStart", value.asInstanceOf[js.Any])
+    def setMsTouchSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTouchSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridColumnStart: Self = this.set("gridColumnStart", js.undefined)
+    def setMsTouchSelectUndefined: Self = StObject.set(x, "msTouchSelect", js.undefined)
     
     @scala.inline
-    def setGridGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridGap", js.Any.fromFunction1(value))
+    def setMsTransform(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridGap(value: StringOrNumberOrCallback): Self = this.set("gridGap", value.asInstanceOf[js.Any])
+    def setMsTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTransform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridGap: Self = this.set("gridGap", js.undefined)
+    def setMsTransformOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTransformOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridRowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridRow", js.Any.fromFunction1(value))
+    def setMsTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTransformOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridRow(value: StringOrNumberOrCallback): Self = this.set("gridRow", value.asInstanceOf[js.Any])
+    def setMsTransformOriginUndefined: Self = StObject.set(x, "msTransformOrigin", js.undefined)
     
     @scala.inline
-    def deleteGridRow: Self = this.set("gridRow", js.undefined)
+    def setMsTransformUndefined: Self = StObject.set(x, "msTransform", js.undefined)
     
     @scala.inline
-    def setGridRowEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridRowEnd", js.Any.fromFunction1(value))
+    def setMsTransition(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridRowEnd(value: StringOrNumberOrCallback): Self = this.set("gridRowEnd", value.asInstanceOf[js.Any])
+    def setMsTransitionDelay(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTransitionDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridRowEnd: Self = this.set("gridRowEnd", js.undefined)
+    def setMsTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTransitionDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridRowGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridRowGap", js.Any.fromFunction1(value))
+    def setMsTransitionDelayUndefined: Self = StObject.set(x, "msTransitionDelay", js.undefined)
     
     @scala.inline
-    def setGridRowGap(value: StringOrNumberOrCallback): Self = this.set("gridRowGap", value.asInstanceOf[js.Any])
+    def setMsTransitionDuration(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTransitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridRowGap: Self = this.set("gridRowGap", js.undefined)
+    def setMsTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTransitionDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridRowStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridRowStart", js.Any.fromFunction1(value))
+    def setMsTransitionDurationUndefined: Self = StObject.set(x, "msTransitionDuration", js.undefined)
     
     @scala.inline
-    def setGridRowStart(value: StringOrNumberOrCallback): Self = this.set("gridRowStart", value.asInstanceOf[js.Any])
+    def setMsTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTransition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridRowStart: Self = this.set("gridRowStart", js.undefined)
+    def setMsTransitionProperty(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTransitionProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridTemplateFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridTemplate", js.Any.fromFunction1(value))
+    def setMsTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTransitionProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridTemplate(value: StringOrNumberOrCallback): Self = this.set("gridTemplate", value.asInstanceOf[js.Any])
+    def setMsTransitionPropertyUndefined: Self = StObject.set(x, "msTransitionProperty", js.undefined)
     
     @scala.inline
-    def deleteGridTemplate: Self = this.set("gridTemplate", js.undefined)
+    def setMsTransitionTimingFunction(value: StringOrNumberOrCallback): Self = StObject.set(x, "msTransitionTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridTemplateAreasFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridTemplateAreas", js.Any.fromFunction1(value))
+    def setMsTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msTransitionTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridTemplateAreas(value: StringOrNumberOrCallback): Self = this.set("gridTemplateAreas", value.asInstanceOf[js.Any])
+    def setMsTransitionTimingFunctionUndefined: Self = StObject.set(x, "msTransitionTimingFunction", js.undefined)
     
     @scala.inline
-    def deleteGridTemplateAreas: Self = this.set("gridTemplateAreas", js.undefined)
+    def setMsTransitionUndefined: Self = StObject.set(x, "msTransition", js.undefined)
     
     @scala.inline
-    def setGridTemplateColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridTemplateColumns", js.Any.fromFunction1(value))
+    def setMsUserSelect(value: StringOrNumberOrCallback): Self = StObject.set(x, "msUserSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridTemplateColumns(value: StringOrNumberOrCallback): Self = this.set("gridTemplateColumns", value.asInstanceOf[js.Any])
+    def setMsUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msUserSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridTemplateColumns: Self = this.set("gridTemplateColumns", js.undefined)
+    def setMsUserSelectUndefined: Self = StObject.set(x, "msUserSelect", js.undefined)
     
     @scala.inline
-    def setGridTemplateRowsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("gridTemplateRows", js.Any.fromFunction1(value))
+    def setMsWordBreak(value: StringOrNumberOrCallback): Self = StObject.set(x, "msWordBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridTemplateRows(value: StringOrNumberOrCallback): Self = this.set("gridTemplateRows", value.asInstanceOf[js.Any])
+    def setMsWordBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msWordBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGridTemplateRows: Self = this.set("gridTemplateRows", js.undefined)
+    def setMsWordBreakUndefined: Self = StObject.set(x, "msWordBreak", js.undefined)
     
     @scala.inline
-    def setHangingPunctuationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("hangingPunctuation", js.Any.fromFunction1(value))
+    def setMsWrapFlow(value: StringOrNumberOrCallback): Self = StObject.set(x, "msWrapFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHangingPunctuation(value: StringOrNumberOrCallback): Self = this.set("hangingPunctuation", value.asInstanceOf[js.Any])
+    def setMsWrapFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msWrapFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHangingPunctuation: Self = this.set("hangingPunctuation", js.undefined)
+    def setMsWrapFlowUndefined: Self = StObject.set(x, "msWrapFlow", js.undefined)
     
     @scala.inline
-    def setHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("height", js.Any.fromFunction1(value))
+    def setMsWrapMargin(value: StringOrNumberOrCallback): Self = StObject.set(x, "msWrapMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: StringOrNumberOrCallback): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMsWrapMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msWrapMargin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMsWrapMarginUndefined: Self = StObject.set(x, "msWrapMargin", js.undefined)
     
     @scala.inline
-    def setHyphensFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("hyphens", js.Any.fromFunction1(value))
+    def setMsWrapThrough(value: StringOrNumberOrCallback): Self = StObject.set(x, "msWrapThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyphens(value: StringOrNumberOrCallback): Self = this.set("hyphens", value.asInstanceOf[js.Any])
+    def setMsWrapThroughFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msWrapThrough", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHyphens: Self = this.set("hyphens", js.undefined)
+    def setMsWrapThroughUndefined: Self = StObject.set(x, "msWrapThrough", js.undefined)
     
     @scala.inline
-    def setImageOrientationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("imageOrientation", js.Any.fromFunction1(value))
+    def setMsWritingMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "msWritingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageOrientation(value: StringOrNumberOrCallback): Self = this.set("imageOrientation", value.asInstanceOf[js.Any])
+    def setMsWritingModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "msWritingMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteImageOrientation: Self = this.set("imageOrientation", js.undefined)
+    def setMsWritingModeUndefined: Self = StObject.set(x, "msWritingMode", js.undefined)
     
     @scala.inline
-    def setImageRenderingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("imageRendering", js.Any.fromFunction1(value))
+    def setOAnimation(value: StringOrNumberOrCallback): Self = StObject.set(x, "OAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageRendering(value: StringOrNumberOrCallback): Self = this.set("imageRendering", value.asInstanceOf[js.Any])
+    def setOAnimationDelay(value: StringOrNumberOrCallback): Self = StObject.set(x, "OAnimationDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageRendering: Self = this.set("imageRendering", js.undefined)
+    def setOAnimationDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OAnimationDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImageResolutionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("imageResolution", js.Any.fromFunction1(value))
+    def setOAnimationDelayUndefined: Self = StObject.set(x, "OAnimationDelay", js.undefined)
     
     @scala.inline
-    def setImageResolution(value: StringOrNumberOrCallback): Self = this.set("imageResolution", value.asInstanceOf[js.Any])
+    def setOAnimationDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "OAnimationDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageResolution: Self = this.set("imageResolution", js.undefined)
+    def setOAnimationDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OAnimationDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImeModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("imeMode", js.Any.fromFunction1(value))
+    def setOAnimationDirectionUndefined: Self = StObject.set(x, "OAnimationDirection", js.undefined)
     
     @scala.inline
-    def setImeMode(value: StringOrNumberOrCallback): Self = this.set("imeMode", value.asInstanceOf[js.Any])
+    def setOAnimationDuration(value: StringOrNumberOrCallback): Self = StObject.set(x, "OAnimationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImeMode: Self = this.set("imeMode", js.undefined)
+    def setOAnimationDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OAnimationDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitialLetterFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("initialLetter", js.Any.fromFunction1(value))
+    def setOAnimationDurationUndefined: Self = StObject.set(x, "OAnimationDuration", js.undefined)
     
     @scala.inline
-    def setInitialLetter(value: StringOrNumberOrCallback): Self = this.set("initialLetter", value.asInstanceOf[js.Any])
+    def setOAnimationFillMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "OAnimationFillMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialLetter: Self = this.set("initialLetter", js.undefined)
+    def setOAnimationFillModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OAnimationFillMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInlineSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("inlineSize", js.Any.fromFunction1(value))
+    def setOAnimationFillModeUndefined: Self = StObject.set(x, "OAnimationFillMode", js.undefined)
     
     @scala.inline
-    def setInlineSize(value: StringOrNumberOrCallback): Self = this.set("inlineSize", value.asInstanceOf[js.Any])
+    def setOAnimationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInlineSize: Self = this.set("inlineSize", js.undefined)
+    def setOAnimationIterationCount(value: StringOrNumberOrCallback): Self = StObject.set(x, "OAnimationIterationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("inset", js.Any.fromFunction1(value))
+    def setOAnimationIterationCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OAnimationIterationCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInset(value: StringOrNumberOrCallback): Self = this.set("inset", value.asInstanceOf[js.Any])
+    def setOAnimationIterationCountUndefined: Self = StObject.set(x, "OAnimationIterationCount", js.undefined)
     
     @scala.inline
-    def deleteInset: Self = this.set("inset", js.undefined)
+    def setOAnimationName(value: StringOrNumberOrCallback): Self = StObject.set(x, "OAnimationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("insetBlock", js.Any.fromFunction1(value))
+    def setOAnimationNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OAnimationName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsetBlock(value: StringOrNumberOrCallback): Self = this.set("insetBlock", value.asInstanceOf[js.Any])
+    def setOAnimationNameUndefined: Self = StObject.set(x, "OAnimationName", js.undefined)
     
     @scala.inline
-    def deleteInsetBlock: Self = this.set("insetBlock", js.undefined)
+    def setOAnimationPlayState(value: StringOrNumberOrCallback): Self = StObject.set(x, "OAnimationPlayState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("insetBlockEnd", js.Any.fromFunction1(value))
+    def setOAnimationPlayStateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OAnimationPlayState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsetBlockEnd(value: StringOrNumberOrCallback): Self = this.set("insetBlockEnd", value.asInstanceOf[js.Any])
+    def setOAnimationPlayStateUndefined: Self = StObject.set(x, "OAnimationPlayState", js.undefined)
     
     @scala.inline
-    def deleteInsetBlockEnd: Self = this.set("insetBlockEnd", js.undefined)
+    def setOAnimationTimingFunction(value: StringOrNumberOrCallback): Self = StObject.set(x, "OAnimationTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("insetBlockStart", js.Any.fromFunction1(value))
+    def setOAnimationTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OAnimationTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsetBlockStart(value: StringOrNumberOrCallback): Self = this.set("insetBlockStart", value.asInstanceOf[js.Any])
+    def setOAnimationTimingFunctionUndefined: Self = StObject.set(x, "OAnimationTimingFunction", js.undefined)
     
     @scala.inline
-    def deleteInsetBlockStart: Self = this.set("insetBlockStart", js.undefined)
+    def setOAnimationUndefined: Self = StObject.set(x, "OAnimation", js.undefined)
     
     @scala.inline
-    def setInsetInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("insetInline", js.Any.fromFunction1(value))
+    def setOBackgroundSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "OBackgroundSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetInline(value: StringOrNumberOrCallback): Self = this.set("insetInline", value.asInstanceOf[js.Any])
+    def setOBackgroundSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OBackgroundSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInsetInline: Self = this.set("insetInline", js.undefined)
+    def setOBackgroundSizeUndefined: Self = StObject.set(x, "OBackgroundSize", js.undefined)
     
     @scala.inline
-    def setInsetInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("insetInlineEnd", js.Any.fromFunction1(value))
+    def setOBorderImage(value: StringOrNumberOrCallback): Self = StObject.set(x, "OBorderImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetInlineEnd(value: StringOrNumberOrCallback): Self = this.set("insetInlineEnd", value.asInstanceOf[js.Any])
+    def setOBorderImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OBorderImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInsetInlineEnd: Self = this.set("insetInlineEnd", js.undefined)
+    def setOBorderImageUndefined: Self = StObject.set(x, "OBorderImage", js.undefined)
     
     @scala.inline
-    def setInsetInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("insetInlineStart", js.Any.fromFunction1(value))
+    def setOObjectFit(value: StringOrNumberOrCallback): Self = StObject.set(x, "OObjectFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetInlineStart(value: StringOrNumberOrCallback): Self = this.set("insetInlineStart", value.asInstanceOf[js.Any])
+    def setOObjectFitFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OObjectFit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInsetInlineStart: Self = this.set("insetInlineStart", js.undefined)
+    def setOObjectFitUndefined: Self = StObject.set(x, "OObjectFit", js.undefined)
     
     @scala.inline
-    def setIsolationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("isolation", js.Any.fromFunction1(value))
+    def setOObjectPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "OObjectPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsolation(value: StringOrNumberOrCallback): Self = this.set("isolation", value.asInstanceOf[js.Any])
+    def setOObjectPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OObjectPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsolation: Self = this.set("isolation", js.undefined)
+    def setOObjectPositionUndefined: Self = StObject.set(x, "OObjectPosition", js.undefined)
     
     @scala.inline
-    def setJustifyContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("justifyContent", js.Any.fromFunction1(value))
+    def setOTabSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "OTabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJustifyContent(value: StringOrNumberOrCallback): Self = this.set("justifyContent", value.asInstanceOf[js.Any])
+    def setOTabSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OTabSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteJustifyContent: Self = this.set("justifyContent", js.undefined)
+    def setOTabSizeUndefined: Self = StObject.set(x, "OTabSize", js.undefined)
     
     @scala.inline
-    def setJustifyItemsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("justifyItems", js.Any.fromFunction1(value))
+    def setOTextOverflow(value: StringOrNumberOrCallback): Self = StObject.set(x, "OTextOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJustifyItems(value: StringOrNumberOrCallback): Self = this.set("justifyItems", value.asInstanceOf[js.Any])
+    def setOTextOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OTextOverflow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteJustifyItems: Self = this.set("justifyItems", js.undefined)
+    def setOTextOverflowUndefined: Self = StObject.set(x, "OTextOverflow", js.undefined)
     
     @scala.inline
-    def setJustifySelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("justifySelf", js.Any.fromFunction1(value))
+    def setOTransform(value: StringOrNumberOrCallback): Self = StObject.set(x, "OTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJustifySelf(value: StringOrNumberOrCallback): Self = this.set("justifySelf", value.asInstanceOf[js.Any])
+    def setOTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OTransform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteJustifySelf: Self = this.set("justifySelf", js.undefined)
+    def setOTransformOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "OTransformOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJustifyTracksFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("justifyTracks", js.Any.fromFunction1(value))
+    def setOTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OTransformOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJustifyTracks(value: StringOrNumberOrCallback): Self = this.set("justifyTracks", value.asInstanceOf[js.Any])
+    def setOTransformOriginUndefined: Self = StObject.set(x, "OTransformOrigin", js.undefined)
     
     @scala.inline
-    def deleteJustifyTracks: Self = this.set("justifyTracks", js.undefined)
+    def setOTransformUndefined: Self = StObject.set(x, "OTransform", js.undefined)
     
     @scala.inline
-    def setLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("left", js.Any.fromFunction1(value))
+    def setOTransition(value: StringOrNumberOrCallback): Self = StObject.set(x, "OTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: StringOrNumberOrCallback): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setOTransitionDelay(value: StringOrNumberOrCallback): Self = StObject.set(x, "OTransitionDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setOTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OTransitionDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLetterSpacingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("letterSpacing", js.Any.fromFunction1(value))
+    def setOTransitionDelayUndefined: Self = StObject.set(x, "OTransitionDelay", js.undefined)
     
     @scala.inline
-    def setLetterSpacing(value: StringOrNumberOrCallback): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setOTransitionDuration(value: StringOrNumberOrCallback): Self = StObject.set(x, "OTransitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    def setOTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OTransitionDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLightingColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("lightingColor", js.Any.fromFunction1(value))
+    def setOTransitionDurationUndefined: Self = StObject.set(x, "OTransitionDuration", js.undefined)
     
     @scala.inline
-    def setLightingColor(value: StringOrNumberOrCallback): Self = this.set("lightingColor", value.asInstanceOf[js.Any])
+    def setOTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OTransition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLightingColor: Self = this.set("lightingColor", js.undefined)
+    def setOTransitionProperty(value: StringOrNumberOrCallback): Self = StObject.set(x, "OTransitionProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("lineBreak", js.Any.fromFunction1(value))
+    def setOTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OTransitionProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLineBreak(value: StringOrNumberOrCallback): Self = this.set("lineBreak", value.asInstanceOf[js.Any])
+    def setOTransitionPropertyUndefined: Self = StObject.set(x, "OTransitionProperty", js.undefined)
     
     @scala.inline
-    def deleteLineBreak: Self = this.set("lineBreak", js.undefined)
+    def setOTransitionTimingFunction(value: StringOrNumberOrCallback): Self = StObject.set(x, "OTransitionTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineClampFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("lineClamp", js.Any.fromFunction1(value))
+    def setOTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "OTransitionTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLineClamp(value: StringOrNumberOrCallback): Self = this.set("lineClamp", value.asInstanceOf[js.Any])
+    def setOTransitionTimingFunctionUndefined: Self = StObject.set(x, "OTransitionTimingFunction", js.undefined)
     
     @scala.inline
-    def deleteLineClamp: Self = this.set("lineClamp", js.undefined)
+    def setOTransitionUndefined: Self = StObject.set(x, "OTransition", js.undefined)
     
     @scala.inline
-    def setLineHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("lineHeight", js.Any.fromFunction1(value))
+    def setObjectFit(value: StringOrNumberOrCallback): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: StringOrNumberOrCallback): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setObjectFitFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "objectFit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
     @scala.inline
-    def setLineHeightStepFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("lineHeightStep", js.Any.fromFunction1(value))
+    def setObjectPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "objectPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeightStep(value: StringOrNumberOrCallback): Self = this.set("lineHeightStep", value.asInstanceOf[js.Any])
+    def setObjectPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "objectPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLineHeightStep: Self = this.set("lineHeightStep", js.undefined)
+    def setObjectPositionUndefined: Self = StObject.set(x, "objectPosition", js.undefined)
     
     @scala.inline
-    def setListStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("listStyle", js.Any.fromFunction1(value))
+    def setOffset(value: StringOrNumberOrCallback): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListStyle(value: StringOrNumberOrCallback): Self = this.set("listStyle", value.asInstanceOf[js.Any])
+    def setOffsetAnchor(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListStyle: Self = this.set("listStyle", js.undefined)
+    def setOffsetAnchorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setListStyleImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("listStyleImage", js.Any.fromFunction1(value))
+    def setOffsetAnchorUndefined: Self = StObject.set(x, "offsetAnchor", js.undefined)
     
     @scala.inline
-    def setListStyleImage(value: StringOrNumberOrCallback): Self = this.set("listStyleImage", value.asInstanceOf[js.Any])
+    def setOffsetBlock(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListStyleImage: Self = this.set("listStyleImage", js.undefined)
+    def setOffsetBlockEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListStylePositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("listStylePosition", js.Any.fromFunction1(value))
+    def setOffsetBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setListStylePosition(value: StringOrNumberOrCallback): Self = this.set("listStylePosition", value.asInstanceOf[js.Any])
+    def setOffsetBlockEndUndefined: Self = StObject.set(x, "offsetBlockEnd", js.undefined)
     
     @scala.inline
-    def deleteListStylePosition: Self = this.set("listStylePosition", js.undefined)
+    def setOffsetBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setListStyleTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("listStyleType", js.Any.fromFunction1(value))
+    def setOffsetBlockStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListStyleType(value: StringOrNumberOrCallback): Self = this.set("listStyleType", value.asInstanceOf[js.Any])
+    def setOffsetBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteListStyleType: Self = this.set("listStyleType", js.undefined)
+    def setOffsetBlockStartUndefined: Self = StObject.set(x, "offsetBlockStart", js.undefined)
     
     @scala.inline
-    def setMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("margin", js.Any.fromFunction1(value))
+    def setOffsetBlockUndefined: Self = StObject.set(x, "offsetBlock", js.undefined)
     
     @scala.inline
-    def setMargin(value: StringOrNumberOrCallback): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setOffsetDistance(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setOffsetDistanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetDistance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginBlock", js.Any.fromFunction1(value))
+    def setOffsetDistanceUndefined: Self = StObject.set(x, "offsetDistance", js.undefined)
     
     @scala.inline
-    def setMarginBlock(value: StringOrNumberOrCallback): Self = this.set("marginBlock", value.asInstanceOf[js.Any])
+    def setOffsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMarginBlock: Self = this.set("marginBlock", js.undefined)
+    def setOffsetInline(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginBlockEnd", js.Any.fromFunction1(value))
+    def setOffsetInlineEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBlockEnd(value: StringOrNumberOrCallback): Self = this.set("marginBlockEnd", value.asInstanceOf[js.Any])
+    def setOffsetInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMarginBlockEnd: Self = this.set("marginBlockEnd", js.undefined)
+    def setOffsetInlineEndUndefined: Self = StObject.set(x, "offsetInlineEnd", js.undefined)
     
     @scala.inline
-    def setMarginBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginBlockStart", js.Any.fromFunction1(value))
+    def setOffsetInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginBlockStart(value: StringOrNumberOrCallback): Self = this.set("marginBlockStart", value.asInstanceOf[js.Any])
+    def setOffsetInlineStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginBlockStart: Self = this.set("marginBlockStart", js.undefined)
+    def setOffsetInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginBottom", js.Any.fromFunction1(value))
+    def setOffsetInlineStartUndefined: Self = StObject.set(x, "offsetInlineStart", js.undefined)
     
     @scala.inline
-    def setMarginBottom(value: StringOrNumberOrCallback): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    def setOffsetInlineUndefined: Self = StObject.set(x, "offsetInline", js.undefined)
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setOffsetPath(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginInline", js.Any.fromFunction1(value))
+    def setOffsetPathFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginInline(value: StringOrNumberOrCallback): Self = this.set("marginInline", value.asInstanceOf[js.Any])
+    def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
     
     @scala.inline
-    def deleteMarginInline: Self = this.set("marginInline", js.undefined)
+    def setOffsetRotate(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginInlineEnd", js.Any.fromFunction1(value))
+    def setOffsetRotateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetRotate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginInlineEnd(value: StringOrNumberOrCallback): Self = this.set("marginInlineEnd", value.asInstanceOf[js.Any])
+    def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
     
     @scala.inline
-    def deleteMarginInlineEnd: Self = this.set("marginInlineEnd", js.undefined)
+    def setOffsetRotation(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginInlineStart", js.Any.fromFunction1(value))
+    def setOffsetRotationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginInlineStart(value: StringOrNumberOrCallback): Self = this.set("marginInlineStart", value.asInstanceOf[js.Any])
+    def setOffsetRotationUndefined: Self = StObject.set(x, "offsetRotation", js.undefined)
     
     @scala.inline
-    def deleteMarginInlineStart: Self = this.set("marginInlineStart", js.undefined)
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def setMarginLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginLeft", js.Any.fromFunction1(value))
+    def setOpacity(value: StringOrNumberOrCallback): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: StringOrNumberOrCallback): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setMarginRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginRight", js.Any.fromFunction1(value))
+    def setOrder(value: StringOrNumberOrCallback): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginRight(value: StringOrNumberOrCallback): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    def setOrderFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setMarginTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marginTop", js.Any.fromFunction1(value))
+    def setOrphans(value: StringOrNumberOrCallback): Self = StObject.set(x, "orphans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: StringOrNumberOrCallback): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setOrphansFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "orphans", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setOrphansUndefined: Self = StObject.set(x, "orphans", js.undefined)
     
     @scala.inline
-    def setMarkerFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("marker", js.Any.fromFunction1(value))
+    def setOutline(value: StringOrNumberOrCallback): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: StringOrNumberOrCallback): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setOutlineColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setOutlineColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "outlineColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkerEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("markerEnd", js.Any.fromFunction1(value))
+    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
     @scala.inline
-    def setMarkerEnd(value: StringOrNumberOrCallback): Self = this.set("markerEnd", value.asInstanceOf[js.Any])
+    def setOutlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "outline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMarkerEnd: Self = this.set("markerEnd", js.undefined)
+    def setOutlineOffset(value: StringOrNumberOrCallback): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerMidFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("markerMid", js.Any.fromFunction1(value))
+    def setOutlineOffsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "outlineOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkerMid(value: StringOrNumberOrCallback): Self = this.set("markerMid", value.asInstanceOf[js.Any])
+    def setOutlineOffsetUndefined: Self = StObject.set(x, "outlineOffset", js.undefined)
     
     @scala.inline
-    def deleteMarkerMid: Self = this.set("markerMid", js.undefined)
+    def setOutlineStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "outlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("markerStart", js.Any.fromFunction1(value))
+    def setOutlineStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "outlineStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarkerStart(value: StringOrNumberOrCallback): Self = this.set("markerStart", value.asInstanceOf[js.Any])
+    def setOutlineStyleUndefined: Self = StObject.set(x, "outlineStyle", js.undefined)
     
     @scala.inline
-    def deleteMarkerStart: Self = this.set("markerStart", js.undefined)
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def setMaskFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("mask", js.Any.fromFunction1(value))
+    def setOutlineWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: StringOrNumberOrCallback): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setOutlineWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "outlineWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
     
     @scala.inline
-    def setMaskBorderFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskBorder", js.Any.fromFunction1(value))
+    def setOverflow(value: StringOrNumberOrCallback): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskBorder(value: StringOrNumberOrCallback): Self = this.set("maskBorder", value.asInstanceOf[js.Any])
+    def setOverflowAnchor(value: StringOrNumberOrCallback): Self = StObject.set(x, "overflowAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorder: Self = this.set("maskBorder", js.undefined)
+    def setOverflowAnchorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overflowAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskBorderMode", js.Any.fromFunction1(value))
+    def setOverflowAnchorUndefined: Self = StObject.set(x, "overflowAnchor", js.undefined)
     
     @scala.inline
-    def setMaskBorderMode(value: StringOrNumberOrCallback): Self = this.set("maskBorderMode", value.asInstanceOf[js.Any])
+    def setOverflowBlock(value: StringOrNumberOrCallback): Self = StObject.set(x, "overflowBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorderMode: Self = this.set("maskBorderMode", js.undefined)
+    def setOverflowBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overflowBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderOutsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskBorderOutset", js.Any.fromFunction1(value))
+    def setOverflowBlockUndefined: Self = StObject.set(x, "overflowBlock", js.undefined)
     
     @scala.inline
-    def setMaskBorderOutset(value: StringOrNumberOrCallback): Self = this.set("maskBorderOutset", value.asInstanceOf[js.Any])
+    def setOverflowClipBox(value: StringOrNumberOrCallback): Self = StObject.set(x, "overflowClipBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskBorderOutset: Self = this.set("maskBorderOutset", js.undefined)
+    def setOverflowClipBoxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overflowClipBox", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskBorderRepeat", js.Any.fromFunction1(value))
+    def setOverflowClipBoxUndefined: Self = StObject.set(x, "overflowClipBox", js.undefined)
     
     @scala.inline
-    def setMaskBorderRepeat(value: StringOrNumberOrCallback): Self = this.set("maskBorderRepeat", value.asInstanceOf[js.Any])
+    def setOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overflow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMaskBorderRepeat: Self = this.set("maskBorderRepeat", js.undefined)
+    def setOverflowInline(value: StringOrNumberOrCallback): Self = StObject.set(x, "overflowInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskBorderSliceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskBorderSlice", js.Any.fromFunction1(value))
+    def setOverflowInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overflowInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskBorderSlice(value: StringOrNumberOrCallback): Self = this.set("maskBorderSlice", value.asInstanceOf[js.Any])
+    def setOverflowInlineUndefined: Self = StObject.set(x, "overflowInline", js.undefined)
     
     @scala.inline
-    def deleteMaskBorderSlice: Self = this.set("maskBorderSlice", js.undefined)
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def setMaskBorderSourceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskBorderSource", js.Any.fromFunction1(value))
+    def setOverflowWrap(value: StringOrNumberOrCallback): Self = StObject.set(x, "overflowWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskBorderSource(value: StringOrNumberOrCallback): Self = this.set("maskBorderSource", value.asInstanceOf[js.Any])
+    def setOverflowWrapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overflowWrap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMaskBorderSource: Self = this.set("maskBorderSource", js.undefined)
+    def setOverflowWrapUndefined: Self = StObject.set(x, "overflowWrap", js.undefined)
     
     @scala.inline
-    def setMaskBorderWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskBorderWidth", js.Any.fromFunction1(value))
+    def setOverflowX(value: StringOrNumberOrCallback): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskBorderWidth(value: StringOrNumberOrCallback): Self = this.set("maskBorderWidth", value.asInstanceOf[js.Any])
+    def setOverflowXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overflowX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMaskBorderWidth: Self = this.set("maskBorderWidth", js.undefined)
+    def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
     
     @scala.inline
-    def setMaskClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskClip", js.Any.fromFunction1(value))
+    def setOverflowY(value: StringOrNumberOrCallback): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskClip(value: StringOrNumberOrCallback): Self = this.set("maskClip", value.asInstanceOf[js.Any])
+    def setOverflowYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overflowY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMaskClip: Self = this.set("maskClip", js.undefined)
+    def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
     @scala.inline
-    def setMaskCompositeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskComposite", js.Any.fromFunction1(value))
+    def setOverscrollBehavior(value: StringOrNumberOrCallback): Self = StObject.set(x, "overscrollBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskComposite(value: StringOrNumberOrCallback): Self = this.set("maskComposite", value.asInstanceOf[js.Any])
+    def setOverscrollBehaviorBlock(value: StringOrNumberOrCallback): Self = StObject.set(x, "overscrollBehaviorBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskComposite: Self = this.set("maskComposite", js.undefined)
+    def setOverscrollBehaviorBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overscrollBehaviorBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskImage", js.Any.fromFunction1(value))
+    def setOverscrollBehaviorBlockUndefined: Self = StObject.set(x, "overscrollBehaviorBlock", js.undefined)
     
     @scala.inline
-    def setMaskImage(value: StringOrNumberOrCallback): Self = this.set("maskImage", value.asInstanceOf[js.Any])
+    def setOverscrollBehaviorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overscrollBehavior", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMaskImage: Self = this.set("maskImage", js.undefined)
+    def setOverscrollBehaviorInline(value: StringOrNumberOrCallback): Self = StObject.set(x, "overscrollBehaviorInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskMode", js.Any.fromFunction1(value))
+    def setOverscrollBehaviorInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overscrollBehaviorInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskMode(value: StringOrNumberOrCallback): Self = this.set("maskMode", value.asInstanceOf[js.Any])
+    def setOverscrollBehaviorInlineUndefined: Self = StObject.set(x, "overscrollBehaviorInline", js.undefined)
     
     @scala.inline
-    def deleteMaskMode: Self = this.set("maskMode", js.undefined)
+    def setOverscrollBehaviorUndefined: Self = StObject.set(x, "overscrollBehavior", js.undefined)
     
     @scala.inline
-    def setMaskOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskOrigin", js.Any.fromFunction1(value))
+    def setOverscrollBehaviorX(value: StringOrNumberOrCallback): Self = StObject.set(x, "overscrollBehaviorX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskOrigin(value: StringOrNumberOrCallback): Self = this.set("maskOrigin", value.asInstanceOf[js.Any])
+    def setOverscrollBehaviorXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overscrollBehaviorX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMaskOrigin: Self = this.set("maskOrigin", js.undefined)
+    def setOverscrollBehaviorXUndefined: Self = StObject.set(x, "overscrollBehaviorX", js.undefined)
     
     @scala.inline
-    def setMaskPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskPosition", js.Any.fromFunction1(value))
+    def setOverscrollBehaviorY(value: StringOrNumberOrCallback): Self = StObject.set(x, "overscrollBehaviorY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskPosition(value: StringOrNumberOrCallback): Self = this.set("maskPosition", value.asInstanceOf[js.Any])
+    def setOverscrollBehaviorYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "overscrollBehaviorY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMaskPosition: Self = this.set("maskPosition", js.undefined)
+    def setOverscrollBehaviorYUndefined: Self = StObject.set(x, "overscrollBehaviorY", js.undefined)
     
     @scala.inline
-    def setMaskRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskRepeat", js.Any.fromFunction1(value))
+    def setPadding(value: StringOrNumberOrCallback): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskRepeat(value: StringOrNumberOrCallback): Self = this.set("maskRepeat", value.asInstanceOf[js.Any])
+    def setPaddingBlock(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskRepeat: Self = this.set("maskRepeat", js.undefined)
+    def setPaddingBlockEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskSize", js.Any.fromFunction1(value))
+    def setPaddingBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskSize(value: StringOrNumberOrCallback): Self = this.set("maskSize", value.asInstanceOf[js.Any])
+    def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
     
     @scala.inline
-    def deleteMaskSize: Self = this.set("maskSize", js.undefined)
+    def setPaddingBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maskType", js.Any.fromFunction1(value))
+    def setPaddingBlockStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskType(value: StringOrNumberOrCallback): Self = this.set("maskType", value.asInstanceOf[js.Any])
+    def setPaddingBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMaskType: Self = this.set("maskType", js.undefined)
+    def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
     
     @scala.inline
-    def setMasonryAutoFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("masonryAutoFlow", js.Any.fromFunction1(value))
+    def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
     
     @scala.inline
-    def setMasonryAutoFlow(value: StringOrNumberOrCallback): Self = this.set("masonryAutoFlow", value.asInstanceOf[js.Any])
+    def setPaddingBottom(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMasonryAutoFlow: Self = this.set("masonryAutoFlow", js.undefined)
+    def setPaddingBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMathStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("mathStyle", js.Any.fromFunction1(value))
+    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
     @scala.inline
-    def setMathStyle(value: StringOrNumberOrCallback): Self = this.set("mathStyle", value.asInstanceOf[js.Any])
+    def setPaddingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "padding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMathStyle: Self = this.set("mathStyle", js.undefined)
+    def setPaddingInline(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBlockSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maxBlockSize", js.Any.fromFunction1(value))
+    def setPaddingInlineEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBlockSize(value: StringOrNumberOrCallback): Self = this.set("maxBlockSize", value.asInstanceOf[js.Any])
+    def setPaddingInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMaxBlockSize: Self = this.set("maxBlockSize", js.undefined)
+    def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
     
     @scala.inline
-    def setMaxHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maxHeight", js.Any.fromFunction1(value))
+    def setPaddingInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxHeight(value: StringOrNumberOrCallback): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setPaddingInlineStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setPaddingInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxInlineSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maxInlineSize", js.Any.fromFunction1(value))
+    def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
     
     @scala.inline
-    def setMaxInlineSize(value: StringOrNumberOrCallback): Self = this.set("maxInlineSize", value.asInstanceOf[js.Any])
+    def setPaddingInlineUndefined: Self = StObject.set(x, "paddingInline", js.undefined)
     
     @scala.inline
-    def deleteMaxInlineSize: Self = this.set("maxInlineSize", js.undefined)
+    def setPaddingLeft(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maxLines", js.Any.fromFunction1(value))
+    def setPaddingLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxLines(value: StringOrNumberOrCallback): Self = this.set("maxLines", value.asInstanceOf[js.Any])
+    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
     @scala.inline
-    def deleteMaxLines: Self = this.set("maxLines", js.undefined)
+    def setPaddingRight(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("maxWidth", js.Any.fromFunction1(value))
+    def setPaddingRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxWidth(value: StringOrNumberOrCallback): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setPaddingTop(value: StringOrNumberOrCallback): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBlockSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("minBlockSize", js.Any.fromFunction1(value))
+    def setPaddingTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paddingTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinBlockSize(value: StringOrNumberOrCallback): Self = this.set("minBlockSize", value.asInstanceOf[js.Any])
+    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
     @scala.inline
-    def deleteMinBlockSize: Self = this.set("minBlockSize", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def setMinHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("minHeight", js.Any.fromFunction1(value))
+    def setPageBreakAfter(value: StringOrNumberOrCallback): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHeight(value: StringOrNumberOrCallback): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setPageBreakAfterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "pageBreakAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
     
     @scala.inline
-    def setMinInlineSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("minInlineSize", js.Any.fromFunction1(value))
+    def setPageBreakBefore(value: StringOrNumberOrCallback): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinInlineSize(value: StringOrNumberOrCallback): Self = this.set("minInlineSize", value.asInstanceOf[js.Any])
+    def setPageBreakBeforeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "pageBreakBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMinInlineSize: Self = this.set("minInlineSize", js.undefined)
+    def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
     
     @scala.inline
-    def setMinWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("minWidth", js.Any.fromFunction1(value))
+    def setPageBreakInside(value: StringOrNumberOrCallback): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: StringOrNumberOrCallback): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setPageBreakInsideFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "pageBreakInside", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
     
     @scala.inline
-    def setMixBlendModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("mixBlendMode", js.Any.fromFunction1(value))
+    def setPaintOrder(value: StringOrNumberOrCallback): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixBlendMode(value: StringOrNumberOrCallback): Self = this.set("mixBlendMode", value.asInstanceOf[js.Any])
+    def setPaintOrderFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "paintOrder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMixBlendMode: Self = this.set("mixBlendMode", js.undefined)
+    def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
     
     @scala.inline
-    def setMotionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("motion", js.Any.fromFunction1(value))
+    def setPerspective(value: StringOrNumberOrCallback): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotion(value: StringOrNumberOrCallback): Self = this.set("motion", value.asInstanceOf[js.Any])
+    def setPerspectiveFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "perspective", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMotion: Self = this.set("motion", js.undefined)
+    def setPerspectiveOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "perspectiveOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotionDistanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("motionDistance", js.Any.fromFunction1(value))
+    def setPerspectiveOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "perspectiveOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMotionDistance(value: StringOrNumberOrCallback): Self = this.set("motionDistance", value.asInstanceOf[js.Any])
+    def setPerspectiveOriginUndefined: Self = StObject.set(x, "perspectiveOrigin", js.undefined)
     
     @scala.inline
-    def deleteMotionDistance: Self = this.set("motionDistance", js.undefined)
+    def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
     
     @scala.inline
-    def setMotionPathFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("motionPath", js.Any.fromFunction1(value))
+    def setPlaceContent(value: StringOrNumberOrCallback): Self = StObject.set(x, "placeContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotionPath(value: StringOrNumberOrCallback): Self = this.set("motionPath", value.asInstanceOf[js.Any])
+    def setPlaceContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "placeContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMotionPath: Self = this.set("motionPath", js.undefined)
+    def setPlaceContentUndefined: Self = StObject.set(x, "placeContent", js.undefined)
     
     @scala.inline
-    def setMotionRotationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("motionRotation", js.Any.fromFunction1(value))
+    def setPlaceItems(value: StringOrNumberOrCallback): Self = StObject.set(x, "placeItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotionRotation(value: StringOrNumberOrCallback): Self = this.set("motionRotation", value.asInstanceOf[js.Any])
+    def setPlaceItemsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "placeItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMotionRotation: Self = this.set("motionRotation", js.undefined)
+    def setPlaceItemsUndefined: Self = StObject.set(x, "placeItems", js.undefined)
     
     @scala.inline
-    def setMsAcceleratorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msAccelerator", js.Any.fromFunction1(value))
+    def setPlaceSelf(value: StringOrNumberOrCallback): Self = StObject.set(x, "placeSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsAccelerator(value: StringOrNumberOrCallback): Self = this.set("msAccelerator", value.asInstanceOf[js.Any])
+    def setPlaceSelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "placeSelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsAccelerator: Self = this.set("msAccelerator", js.undefined)
+    def setPlaceSelfUndefined: Self = StObject.set(x, "placeSelf", js.undefined)
     
     @scala.inline
-    def setMsAlignSelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msAlignSelf", js.Any.fromFunction1(value))
+    def setPointerEvents(value: StringOrNumberOrCallback): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsAlignSelf(value: StringOrNumberOrCallback): Self = this.set("msAlignSelf", value.asInstanceOf[js.Any])
+    def setPointerEventsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "pointerEvents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsAlignSelf: Self = this.set("msAlignSelf", js.undefined)
+    def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
     @scala.inline
-    def setMsBlockProgressionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msBlockProgression", js.Any.fromFunction1(value))
+    def setPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsBlockProgression(value: StringOrNumberOrCallback): Self = this.set("msBlockProgression", value.asInstanceOf[js.Any])
+    def setPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsBlockProgression: Self = this.set("msBlockProgression", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setMsContentZoomChainingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msContentZoomChaining", js.Any.fromFunction1(value))
+    def setQuotes(value: StringOrNumberOrCallback): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsContentZoomChaining(value: StringOrNumberOrCallback): Self = this.set("msContentZoomChaining", value.asInstanceOf[js.Any])
+    def setQuotesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "quotes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsContentZoomChaining: Self = this.set("msContentZoomChaining", js.undefined)
+    def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
     
     @scala.inline
-    def setMsContentZoomLimitFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msContentZoomLimit", js.Any.fromFunction1(value))
+    def setResize(value: StringOrNumberOrCallback): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsContentZoomLimit(value: StringOrNumberOrCallback): Self = this.set("msContentZoomLimit", value.asInstanceOf[js.Any])
+    def setResizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsContentZoomLimit: Self = this.set("msContentZoomLimit", js.undefined)
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def setMsContentZoomLimitMaxFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msContentZoomLimitMax", js.Any.fromFunction1(value))
+    def setRight(value: StringOrNumberOrCallback): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsContentZoomLimitMax(value: StringOrNumberOrCallback): Self = this.set("msContentZoomLimitMax", value.asInstanceOf[js.Any])
+    def setRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsContentZoomLimitMax: Self = this.set("msContentZoomLimitMax", js.undefined)
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def setMsContentZoomLimitMinFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msContentZoomLimitMin", js.Any.fromFunction1(value))
+    def setRotate(value: StringOrNumberOrCallback): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsContentZoomLimitMin(value: StringOrNumberOrCallback): Self = this.set("msContentZoomLimitMin", value.asInstanceOf[js.Any])
+    def setRotateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsContentZoomLimitMin: Self = this.set("msContentZoomLimitMin", js.undefined)
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def setMsContentZoomSnapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msContentZoomSnap", js.Any.fromFunction1(value))
+    def setRowGap(value: StringOrNumberOrCallback): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsContentZoomSnap(value: StringOrNumberOrCallback): Self = this.set("msContentZoomSnap", value.asInstanceOf[js.Any])
+    def setRowGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "rowGap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsContentZoomSnap: Self = this.set("msContentZoomSnap", js.undefined)
+    def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
     
     @scala.inline
-    def setMsContentZoomSnapPointsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msContentZoomSnapPoints", js.Any.fromFunction1(value))
+    def setRubyAlign(value: StringOrNumberOrCallback): Self = StObject.set(x, "rubyAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsContentZoomSnapPoints(value: StringOrNumberOrCallback): Self = this.set("msContentZoomSnapPoints", value.asInstanceOf[js.Any])
+    def setRubyAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "rubyAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsContentZoomSnapPoints: Self = this.set("msContentZoomSnapPoints", js.undefined)
+    def setRubyAlignUndefined: Self = StObject.set(x, "rubyAlign", js.undefined)
     
     @scala.inline
-    def setMsContentZoomSnapTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msContentZoomSnapType", js.Any.fromFunction1(value))
+    def setRubyMerge(value: StringOrNumberOrCallback): Self = StObject.set(x, "rubyMerge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsContentZoomSnapType(value: StringOrNumberOrCallback): Self = this.set("msContentZoomSnapType", value.asInstanceOf[js.Any])
+    def setRubyMergeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "rubyMerge", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsContentZoomSnapType: Self = this.set("msContentZoomSnapType", js.undefined)
+    def setRubyMergeUndefined: Self = StObject.set(x, "rubyMerge", js.undefined)
     
     @scala.inline
-    def setMsContentZoomingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msContentZooming", js.Any.fromFunction1(value))
+    def setRubyPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "rubyPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsContentZooming(value: StringOrNumberOrCallback): Self = this.set("msContentZooming", value.asInstanceOf[js.Any])
+    def setRubyPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "rubyPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsContentZooming: Self = this.set("msContentZooming", js.undefined)
+    def setRubyPositionUndefined: Self = StObject.set(x, "rubyPosition", js.undefined)
     
     @scala.inline
-    def setMsFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msFilter", js.Any.fromFunction1(value))
+    def setScale(value: StringOrNumberOrCallback): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsFilter(value: StringOrNumberOrCallback): Self = this.set("msFilter", value.asInstanceOf[js.Any])
+    def setScaleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsFilter: Self = this.set("msFilter", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setMsFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msFlex", js.Any.fromFunction1(value))
+    def setScrollBehavior(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsFlex(value: StringOrNumberOrCallback): Self = this.set("msFlex", value.asInstanceOf[js.Any])
+    def setScrollBehaviorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollBehavior", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsFlex: Self = this.set("msFlex", js.undefined)
+    def setScrollBehaviorUndefined: Self = StObject.set(x, "scrollBehavior", js.undefined)
     
     @scala.inline
-    def setMsFlexDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msFlexDirection", js.Any.fromFunction1(value))
+    def setScrollMargin(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsFlexDirection(value: StringOrNumberOrCallback): Self = this.set("msFlexDirection", value.asInstanceOf[js.Any])
+    def setScrollMarginBlock(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsFlexDirection: Self = this.set("msFlexDirection", js.undefined)
+    def setScrollMarginBlockEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsFlexPositiveFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msFlexPositive", js.Any.fromFunction1(value))
+    def setScrollMarginBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsFlexPositive(value: StringOrNumberOrCallback): Self = this.set("msFlexPositive", value.asInstanceOf[js.Any])
+    def setScrollMarginBlockEndUndefined: Self = StObject.set(x, "scrollMarginBlockEnd", js.undefined)
     
     @scala.inline
-    def deleteMsFlexPositive: Self = this.set("msFlexPositive", js.undefined)
+    def setScrollMarginBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsFlowFromFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msFlowFrom", js.Any.fromFunction1(value))
+    def setScrollMarginBlockStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsFlowFrom(value: StringOrNumberOrCallback): Self = this.set("msFlowFrom", value.asInstanceOf[js.Any])
+    def setScrollMarginBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsFlowFrom: Self = this.set("msFlowFrom", js.undefined)
+    def setScrollMarginBlockStartUndefined: Self = StObject.set(x, "scrollMarginBlockStart", js.undefined)
     
     @scala.inline
-    def setMsFlowIntoFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msFlowInto", js.Any.fromFunction1(value))
+    def setScrollMarginBlockUndefined: Self = StObject.set(x, "scrollMarginBlock", js.undefined)
     
     @scala.inline
-    def setMsFlowInto(value: StringOrNumberOrCallback): Self = this.set("msFlowInto", value.asInstanceOf[js.Any])
+    def setScrollMarginBottom(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsFlowInto: Self = this.set("msFlowInto", js.undefined)
+    def setScrollMarginBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsGridColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msGridColumns", js.Any.fromFunction1(value))
+    def setScrollMarginBottomUndefined: Self = StObject.set(x, "scrollMarginBottom", js.undefined)
     
     @scala.inline
-    def setMsGridColumns(value: StringOrNumberOrCallback): Self = this.set("msGridColumns", value.asInstanceOf[js.Any])
+    def setScrollMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMargin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsGridColumns: Self = this.set("msGridColumns", js.undefined)
+    def setScrollMarginInline(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsGridRowsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msGridRows", js.Any.fromFunction1(value))
+    def setScrollMarginInlineEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsGridRows(value: StringOrNumberOrCallback): Self = this.set("msGridRows", value.asInstanceOf[js.Any])
+    def setScrollMarginInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsGridRows: Self = this.set("msGridRows", js.undefined)
+    def setScrollMarginInlineEndUndefined: Self = StObject.set(x, "scrollMarginInlineEnd", js.undefined)
     
     @scala.inline
-    def setMsHighContrastAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msHighContrastAdjust", js.Any.fromFunction1(value))
+    def setScrollMarginInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsHighContrastAdjust(value: StringOrNumberOrCallback): Self = this.set("msHighContrastAdjust", value.asInstanceOf[js.Any])
+    def setScrollMarginInlineStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsHighContrastAdjust: Self = this.set("msHighContrastAdjust", js.undefined)
+    def setScrollMarginInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsHyphenateLimitCharsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msHyphenateLimitChars", js.Any.fromFunction1(value))
+    def setScrollMarginInlineStartUndefined: Self = StObject.set(x, "scrollMarginInlineStart", js.undefined)
     
     @scala.inline
-    def setMsHyphenateLimitChars(value: StringOrNumberOrCallback): Self = this.set("msHyphenateLimitChars", value.asInstanceOf[js.Any])
+    def setScrollMarginInlineUndefined: Self = StObject.set(x, "scrollMarginInline", js.undefined)
     
     @scala.inline
-    def deleteMsHyphenateLimitChars: Self = this.set("msHyphenateLimitChars", js.undefined)
+    def setScrollMarginLeft(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsHyphenateLimitLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msHyphenateLimitLines", js.Any.fromFunction1(value))
+    def setScrollMarginLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsHyphenateLimitLines(value: StringOrNumberOrCallback): Self = this.set("msHyphenateLimitLines", value.asInstanceOf[js.Any])
+    def setScrollMarginLeftUndefined: Self = StObject.set(x, "scrollMarginLeft", js.undefined)
     
     @scala.inline
-    def deleteMsHyphenateLimitLines: Self = this.set("msHyphenateLimitLines", js.undefined)
+    def setScrollMarginRight(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsHyphenateLimitZoneFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msHyphenateLimitZone", js.Any.fromFunction1(value))
+    def setScrollMarginRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsHyphenateLimitZone(value: StringOrNumberOrCallback): Self = this.set("msHyphenateLimitZone", value.asInstanceOf[js.Any])
+    def setScrollMarginRightUndefined: Self = StObject.set(x, "scrollMarginRight", js.undefined)
     
     @scala.inline
-    def deleteMsHyphenateLimitZone: Self = this.set("msHyphenateLimitZone", js.undefined)
+    def setScrollMarginTop(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollMarginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsHyphensFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msHyphens", js.Any.fromFunction1(value))
+    def setScrollMarginTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollMarginTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsHyphens(value: StringOrNumberOrCallback): Self = this.set("msHyphens", value.asInstanceOf[js.Any])
+    def setScrollMarginTopUndefined: Self = StObject.set(x, "scrollMarginTop", js.undefined)
     
     @scala.inline
-    def deleteMsHyphens: Self = this.set("msHyphens", js.undefined)
+    def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
     
     @scala.inline
-    def setMsImeAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msImeAlign", js.Any.fromFunction1(value))
+    def setScrollPadding(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsImeAlign(value: StringOrNumberOrCallback): Self = this.set("msImeAlign", value.asInstanceOf[js.Any])
+    def setScrollPaddingBlock(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsImeAlign: Self = this.set("msImeAlign", js.undefined)
+    def setScrollPaddingBlockEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingBlockEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsImeModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msImeMode", js.Any.fromFunction1(value))
+    def setScrollPaddingBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingBlockEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsImeMode(value: StringOrNumberOrCallback): Self = this.set("msImeMode", value.asInstanceOf[js.Any])
+    def setScrollPaddingBlockEndUndefined: Self = StObject.set(x, "scrollPaddingBlockEnd", js.undefined)
     
     @scala.inline
-    def deleteMsImeMode: Self = this.set("msImeMode", js.undefined)
+    def setScrollPaddingBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsJustifySelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msJustifySelf", js.Any.fromFunction1(value))
+    def setScrollPaddingBlockStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingBlockStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsJustifySelf(value: StringOrNumberOrCallback): Self = this.set("msJustifySelf", value.asInstanceOf[js.Any])
+    def setScrollPaddingBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingBlockStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsJustifySelf: Self = this.set("msJustifySelf", js.undefined)
+    def setScrollPaddingBlockStartUndefined: Self = StObject.set(x, "scrollPaddingBlockStart", js.undefined)
     
     @scala.inline
-    def setMsLineBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msLineBreak", js.Any.fromFunction1(value))
+    def setScrollPaddingBlockUndefined: Self = StObject.set(x, "scrollPaddingBlock", js.undefined)
     
     @scala.inline
-    def setMsLineBreak(value: StringOrNumberOrCallback): Self = this.set("msLineBreak", value.asInstanceOf[js.Any])
+    def setScrollPaddingBottom(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsLineBreak: Self = this.set("msLineBreak", js.undefined)
+    def setScrollPaddingBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsOrderFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msOrder", js.Any.fromFunction1(value))
+    def setScrollPaddingBottomUndefined: Self = StObject.set(x, "scrollPaddingBottom", js.undefined)
     
     @scala.inline
-    def setMsOrder(value: StringOrNumberOrCallback): Self = this.set("msOrder", value.asInstanceOf[js.Any])
+    def setScrollPaddingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPadding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsOrder: Self = this.set("msOrder", js.undefined)
+    def setScrollPaddingInline(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsOverflowStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msOverflowStyle", js.Any.fromFunction1(value))
+    def setScrollPaddingInlineEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingInlineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsOverflowStyle(value: StringOrNumberOrCallback): Self = this.set("msOverflowStyle", value.asInstanceOf[js.Any])
+    def setScrollPaddingInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingInlineEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsOverflowStyle: Self = this.set("msOverflowStyle", js.undefined)
+    def setScrollPaddingInlineEndUndefined: Self = StObject.set(x, "scrollPaddingInlineEnd", js.undefined)
     
     @scala.inline
-    def setMsOverflowXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msOverflowX", js.Any.fromFunction1(value))
+    def setScrollPaddingInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingInline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsOverflowX(value: StringOrNumberOrCallback): Self = this.set("msOverflowX", value.asInstanceOf[js.Any])
+    def setScrollPaddingInlineStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingInlineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsOverflowX: Self = this.set("msOverflowX", js.undefined)
+    def setScrollPaddingInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingInlineStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsOverflowYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msOverflowY", js.Any.fromFunction1(value))
+    def setScrollPaddingInlineStartUndefined: Self = StObject.set(x, "scrollPaddingInlineStart", js.undefined)
     
     @scala.inline
-    def setMsOverflowY(value: StringOrNumberOrCallback): Self = this.set("msOverflowY", value.asInstanceOf[js.Any])
+    def setScrollPaddingInlineUndefined: Self = StObject.set(x, "scrollPaddingInline", js.undefined)
     
     @scala.inline
-    def deleteMsOverflowY: Self = this.set("msOverflowY", js.undefined)
+    def setScrollPaddingLeft(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollChainingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollChaining", js.Any.fromFunction1(value))
+    def setScrollPaddingLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsScrollChaining(value: StringOrNumberOrCallback): Self = this.set("msScrollChaining", value.asInstanceOf[js.Any])
+    def setScrollPaddingLeftUndefined: Self = StObject.set(x, "scrollPaddingLeft", js.undefined)
     
     @scala.inline
-    def deleteMsScrollChaining: Self = this.set("msScrollChaining", js.undefined)
+    def setScrollPaddingRight(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollLimitFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollLimit", js.Any.fromFunction1(value))
+    def setScrollPaddingRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsScrollLimit(value: StringOrNumberOrCallback): Self = this.set("msScrollLimit", value.asInstanceOf[js.Any])
+    def setScrollPaddingRightUndefined: Self = StObject.set(x, "scrollPaddingRight", js.undefined)
     
     @scala.inline
-    def deleteMsScrollLimit: Self = this.set("msScrollLimit", js.undefined)
+    def setScrollPaddingTop(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollPaddingTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollLimitXMaxFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollLimitXMax", js.Any.fromFunction1(value))
+    def setScrollPaddingTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollPaddingTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsScrollLimitXMax(value: StringOrNumberOrCallback): Self = this.set("msScrollLimitXMax", value.asInstanceOf[js.Any])
+    def setScrollPaddingTopUndefined: Self = StObject.set(x, "scrollPaddingTop", js.undefined)
     
     @scala.inline
-    def deleteMsScrollLimitXMax: Self = this.set("msScrollLimitXMax", js.undefined)
+    def setScrollPaddingUndefined: Self = StObject.set(x, "scrollPadding", js.undefined)
     
     @scala.inline
-    def setMsScrollLimitXMinFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollLimitXMin", js.Any.fromFunction1(value))
+    def setScrollSnapAlign(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollLimitXMin(value: StringOrNumberOrCallback): Self = this.set("msScrollLimitXMin", value.asInstanceOf[js.Any])
+    def setScrollSnapAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollLimitXMin: Self = this.set("msScrollLimitXMin", js.undefined)
+    def setScrollSnapAlignUndefined: Self = StObject.set(x, "scrollSnapAlign", js.undefined)
     
     @scala.inline
-    def setMsScrollLimitYMaxFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollLimitYMax", js.Any.fromFunction1(value))
+    def setScrollSnapCoordinate(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapCoordinate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollLimitYMax(value: StringOrNumberOrCallback): Self = this.set("msScrollLimitYMax", value.asInstanceOf[js.Any])
+    def setScrollSnapCoordinateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapCoordinate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollLimitYMax: Self = this.set("msScrollLimitYMax", js.undefined)
+    def setScrollSnapCoordinateUndefined: Self = StObject.set(x, "scrollSnapCoordinate", js.undefined)
     
     @scala.inline
-    def setMsScrollLimitYMinFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollLimitYMin", js.Any.fromFunction1(value))
+    def setScrollSnapDestination(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollLimitYMin(value: StringOrNumberOrCallback): Self = this.set("msScrollLimitYMin", value.asInstanceOf[js.Any])
+    def setScrollSnapDestinationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapDestination", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollLimitYMin: Self = this.set("msScrollLimitYMin", js.undefined)
+    def setScrollSnapDestinationUndefined: Self = StObject.set(x, "scrollSnapDestination", js.undefined)
     
     @scala.inline
-    def setMsScrollRailsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollRails", js.Any.fromFunction1(value))
+    def setScrollSnapMargin(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollRails(value: StringOrNumberOrCallback): Self = this.set("msScrollRails", value.asInstanceOf[js.Any])
+    def setScrollSnapMarginBottom(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapMarginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsScrollRails: Self = this.set("msScrollRails", js.undefined)
+    def setScrollSnapMarginBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapMarginBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsScrollSnapPointsXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollSnapPointsX", js.Any.fromFunction1(value))
+    def setScrollSnapMarginBottomUndefined: Self = StObject.set(x, "scrollSnapMarginBottom", js.undefined)
     
     @scala.inline
-    def setMsScrollSnapPointsX(value: StringOrNumberOrCallback): Self = this.set("msScrollSnapPointsX", value.asInstanceOf[js.Any])
+    def setScrollSnapMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapMargin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollSnapPointsX: Self = this.set("msScrollSnapPointsX", js.undefined)
+    def setScrollSnapMarginLeft(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapMarginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollSnapPointsYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollSnapPointsY", js.Any.fromFunction1(value))
+    def setScrollSnapMarginLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapMarginLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsScrollSnapPointsY(value: StringOrNumberOrCallback): Self = this.set("msScrollSnapPointsY", value.asInstanceOf[js.Any])
+    def setScrollSnapMarginLeftUndefined: Self = StObject.set(x, "scrollSnapMarginLeft", js.undefined)
     
     @scala.inline
-    def deleteMsScrollSnapPointsY: Self = this.set("msScrollSnapPointsY", js.undefined)
+    def setScrollSnapMarginRight(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapMarginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollSnapTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollSnapType", js.Any.fromFunction1(value))
+    def setScrollSnapMarginRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapMarginRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsScrollSnapType(value: StringOrNumberOrCallback): Self = this.set("msScrollSnapType", value.asInstanceOf[js.Any])
+    def setScrollSnapMarginRightUndefined: Self = StObject.set(x, "scrollSnapMarginRight", js.undefined)
     
     @scala.inline
-    def deleteMsScrollSnapType: Self = this.set("msScrollSnapType", js.undefined)
+    def setScrollSnapMarginTop(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapMarginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollSnapXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollSnapX", js.Any.fromFunction1(value))
+    def setScrollSnapMarginTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapMarginTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsScrollSnapX(value: StringOrNumberOrCallback): Self = this.set("msScrollSnapX", value.asInstanceOf[js.Any])
+    def setScrollSnapMarginTopUndefined: Self = StObject.set(x, "scrollSnapMarginTop", js.undefined)
     
     @scala.inline
-    def deleteMsScrollSnapX: Self = this.set("msScrollSnapX", js.undefined)
+    def setScrollSnapMarginUndefined: Self = StObject.set(x, "scrollSnapMargin", js.undefined)
     
     @scala.inline
-    def setMsScrollSnapYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollSnapY", js.Any.fromFunction1(value))
+    def setScrollSnapPointsX(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapPointsX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollSnapY(value: StringOrNumberOrCallback): Self = this.set("msScrollSnapY", value.asInstanceOf[js.Any])
+    def setScrollSnapPointsXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapPointsX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollSnapY: Self = this.set("msScrollSnapY", js.undefined)
+    def setScrollSnapPointsXUndefined: Self = StObject.set(x, "scrollSnapPointsX", js.undefined)
     
     @scala.inline
-    def setMsScrollTranslationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollTranslation", js.Any.fromFunction1(value))
+    def setScrollSnapPointsY(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapPointsY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollTranslation(value: StringOrNumberOrCallback): Self = this.set("msScrollTranslation", value.asInstanceOf[js.Any])
+    def setScrollSnapPointsYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapPointsY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollTranslation: Self = this.set("msScrollTranslation", js.undefined)
+    def setScrollSnapPointsYUndefined: Self = StObject.set(x, "scrollSnapPointsY", js.undefined)
     
     @scala.inline
-    def setMsScrollbar3dlightColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollbar3dlightColor", js.Any.fromFunction1(value))
+    def setScrollSnapStop(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollbar3dlightColor(value: StringOrNumberOrCallback): Self = this.set("msScrollbar3dlightColor", value.asInstanceOf[js.Any])
+    def setScrollSnapStopFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapStop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollbar3dlightColor: Self = this.set("msScrollbar3dlightColor", js.undefined)
+    def setScrollSnapStopUndefined: Self = StObject.set(x, "scrollSnapStop", js.undefined)
     
     @scala.inline
-    def setMsScrollbarArrowColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollbarArrowColor", js.Any.fromFunction1(value))
+    def setScrollSnapType(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollbarArrowColor(value: StringOrNumberOrCallback): Self = this.set("msScrollbarArrowColor", value.asInstanceOf[js.Any])
+    def setScrollSnapTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollbarArrowColor: Self = this.set("msScrollbarArrowColor", js.undefined)
+    def setScrollSnapTypeUndefined: Self = StObject.set(x, "scrollSnapType", js.undefined)
     
     @scala.inline
-    def setMsScrollbarBaseColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollbarBaseColor", js.Any.fromFunction1(value))
+    def setScrollSnapTypeX(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapTypeX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollbarBaseColor(value: StringOrNumberOrCallback): Self = this.set("msScrollbarBaseColor", value.asInstanceOf[js.Any])
+    def setScrollSnapTypeXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapTypeX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollbarBaseColor: Self = this.set("msScrollbarBaseColor", js.undefined)
+    def setScrollSnapTypeXUndefined: Self = StObject.set(x, "scrollSnapTypeX", js.undefined)
     
     @scala.inline
-    def setMsScrollbarDarkshadowColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollbarDarkshadowColor", js.Any.fromFunction1(value))
+    def setScrollSnapTypeY(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollSnapTypeY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollbarDarkshadowColor(value: StringOrNumberOrCallback): Self = this.set("msScrollbarDarkshadowColor", value.asInstanceOf[js.Any])
+    def setScrollSnapTypeYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapTypeY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollbarDarkshadowColor: Self = this.set("msScrollbarDarkshadowColor", js.undefined)
+    def setScrollSnapTypeYUndefined: Self = StObject.set(x, "scrollSnapTypeY", js.undefined)
     
     @scala.inline
-    def setMsScrollbarFaceColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollbarFaceColor", js.Any.fromFunction1(value))
+    def setScrollbarColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollbarFaceColor(value: StringOrNumberOrCallback): Self = this.set("msScrollbarFaceColor", value.asInstanceOf[js.Any])
+    def setScrollbarColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollbarColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollbarFaceColor: Self = this.set("msScrollbarFaceColor", js.undefined)
+    def setScrollbarColorUndefined: Self = StObject.set(x, "scrollbarColor", js.undefined)
     
     @scala.inline
-    def setMsScrollbarHighlightColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollbarHighlightColor", js.Any.fromFunction1(value))
+    def setScrollbarGutter(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollbarGutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollbarHighlightColor(value: StringOrNumberOrCallback): Self = this.set("msScrollbarHighlightColor", value.asInstanceOf[js.Any])
+    def setScrollbarGutterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollbarGutter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollbarHighlightColor: Self = this.set("msScrollbarHighlightColor", js.undefined)
+    def setScrollbarGutterUndefined: Self = StObject.set(x, "scrollbarGutter", js.undefined)
     
     @scala.inline
-    def setMsScrollbarShadowColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollbarShadowColor", js.Any.fromFunction1(value))
+    def setScrollbarTrackColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollbarTrackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollbarShadowColor(value: StringOrNumberOrCallback): Self = this.set("msScrollbarShadowColor", value.asInstanceOf[js.Any])
+    def setScrollbarTrackColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollbarTrackColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollbarShadowColor: Self = this.set("msScrollbarShadowColor", js.undefined)
+    def setScrollbarTrackColorUndefined: Self = StObject.set(x, "scrollbarTrackColor", js.undefined)
     
     @scala.inline
-    def setMsScrollbarTrackColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msScrollbarTrackColor", js.Any.fromFunction1(value))
+    def setScrollbarWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsScrollbarTrackColor(value: StringOrNumberOrCallback): Self = this.set("msScrollbarTrackColor", value.asInstanceOf[js.Any])
+    def setScrollbarWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollbarWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsScrollbarTrackColor: Self = this.set("msScrollbarTrackColor", js.undefined)
+    def setScrollbarWidthUndefined: Self = StObject.set(x, "scrollbarWidth", js.undefined)
     
     @scala.inline
-    def setMsTextAutospaceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTextAutospace", js.Any.fromFunction1(value))
+    def setShapeImageThreshold(value: StringOrNumberOrCallback): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTextAutospace(value: StringOrNumberOrCallback): Self = this.set("msTextAutospace", value.asInstanceOf[js.Any])
+    def setShapeImageThresholdFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "shapeImageThreshold", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsTextAutospace: Self = this.set("msTextAutospace", js.undefined)
+    def setShapeImageThresholdUndefined: Self = StObject.set(x, "shapeImageThreshold", js.undefined)
     
     @scala.inline
-    def setMsTextCombineHorizontalFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTextCombineHorizontal", js.Any.fromFunction1(value))
+    def setShapeMargin(value: StringOrNumberOrCallback): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTextCombineHorizontal(value: StringOrNumberOrCallback): Self = this.set("msTextCombineHorizontal", value.asInstanceOf[js.Any])
+    def setShapeMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "shapeMargin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsTextCombineHorizontal: Self = this.set("msTextCombineHorizontal", js.undefined)
+    def setShapeMarginUndefined: Self = StObject.set(x, "shapeMargin", js.undefined)
     
     @scala.inline
-    def setMsTextOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTextOverflow", js.Any.fromFunction1(value))
+    def setShapeOutside(value: StringOrNumberOrCallback): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTextOverflow(value: StringOrNumberOrCallback): Self = this.set("msTextOverflow", value.asInstanceOf[js.Any])
+    def setShapeOutsideFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "shapeOutside", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsTextOverflow: Self = this.set("msTextOverflow", js.undefined)
+    def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
     
     @scala.inline
-    def setMsTouchActionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTouchAction", js.Any.fromFunction1(value))
+    def setShapeRendering(value: StringOrNumberOrCallback): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTouchAction(value: StringOrNumberOrCallback): Self = this.set("msTouchAction", value.asInstanceOf[js.Any])
+    def setShapeRenderingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "shapeRendering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsTouchAction: Self = this.set("msTouchAction", js.undefined)
+    def setShapeRenderingUndefined: Self = StObject.set(x, "shapeRendering", js.undefined)
     
     @scala.inline
-    def setMsTouchSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTouchSelect", js.Any.fromFunction1(value))
+    def setStopColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTouchSelect(value: StringOrNumberOrCallback): Self = this.set("msTouchSelect", value.asInstanceOf[js.Any])
+    def setStopColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "stopColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsTouchSelect: Self = this.set("msTouchSelect", js.undefined)
+    def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
     
     @scala.inline
-    def setMsTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTransform", js.Any.fromFunction1(value))
+    def setStopOpacity(value: StringOrNumberOrCallback): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTransform(value: StringOrNumberOrCallback): Self = this.set("msTransform", value.asInstanceOf[js.Any])
+    def setStopOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "stopOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsTransform: Self = this.set("msTransform", js.undefined)
+    def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
     
     @scala.inline
-    def setMsTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTransformOrigin", js.Any.fromFunction1(value))
+    def setStroke(value: StringOrNumberOrCallback): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTransformOrigin(value: StringOrNumberOrCallback): Self = this.set("msTransformOrigin", value.asInstanceOf[js.Any])
+    def setStrokeDasharray(value: StringOrNumberOrCallback): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsTransformOrigin: Self = this.set("msTransformOrigin", js.undefined)
+    def setStrokeDasharrayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "strokeDasharray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTransition", js.Any.fromFunction1(value))
+    def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
     
     @scala.inline
-    def setMsTransition(value: StringOrNumberOrCallback): Self = this.set("msTransition", value.asInstanceOf[js.Any])
+    def setStrokeDashoffset(value: StringOrNumberOrCallback): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsTransition: Self = this.set("msTransition", js.undefined)
+    def setStrokeDashoffsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "strokeDashoffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTransitionDelay", js.Any.fromFunction1(value))
+    def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
     
     @scala.inline
-    def setMsTransitionDelay(value: StringOrNumberOrCallback): Self = this.set("msTransitionDelay", value.asInstanceOf[js.Any])
+    def setStrokeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "stroke", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsTransitionDelay: Self = this.set("msTransitionDelay", js.undefined)
+    def setStrokeLinecap(value: StringOrNumberOrCallback): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTransitionDuration", js.Any.fromFunction1(value))
+    def setStrokeLinecapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "strokeLinecap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsTransitionDuration(value: StringOrNumberOrCallback): Self = this.set("msTransitionDuration", value.asInstanceOf[js.Any])
+    def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
     @scala.inline
-    def deleteMsTransitionDuration: Self = this.set("msTransitionDuration", js.undefined)
+    def setStrokeLinejoin(value: StringOrNumberOrCallback): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTransitionProperty", js.Any.fromFunction1(value))
+    def setStrokeLinejoinFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "strokeLinejoin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsTransitionProperty(value: StringOrNumberOrCallback): Self = this.set("msTransitionProperty", value.asInstanceOf[js.Any])
+    def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
     
     @scala.inline
-    def deleteMsTransitionProperty: Self = this.set("msTransitionProperty", js.undefined)
+    def setStrokeMiterlimit(value: StringOrNumberOrCallback): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msTransitionTimingFunction", js.Any.fromFunction1(value))
+    def setStrokeMiterlimitFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "strokeMiterlimit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsTransitionTimingFunction(value: StringOrNumberOrCallback): Self = this.set("msTransitionTimingFunction", value.asInstanceOf[js.Any])
+    def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
     
     @scala.inline
-    def deleteMsTransitionTimingFunction: Self = this.set("msTransitionTimingFunction", js.undefined)
+    def setStrokeOpacity(value: StringOrNumberOrCallback): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msUserSelect", js.Any.fromFunction1(value))
+    def setStrokeOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "strokeOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsUserSelect(value: StringOrNumberOrCallback): Self = this.set("msUserSelect", value.asInstanceOf[js.Any])
+    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
     @scala.inline
-    def deleteMsUserSelect: Self = this.set("msUserSelect", js.undefined)
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def setMsWordBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msWordBreak", js.Any.fromFunction1(value))
+    def setStrokeWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsWordBreak(value: StringOrNumberOrCallback): Self = this.set("msWordBreak", value.asInstanceOf[js.Any])
+    def setStrokeWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "strokeWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsWordBreak: Self = this.set("msWordBreak", js.undefined)
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     @scala.inline
-    def setMsWrapFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msWrapFlow", js.Any.fromFunction1(value))
+    def setTabSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsWrapFlow(value: StringOrNumberOrCallback): Self = this.set("msWrapFlow", value.asInstanceOf[js.Any])
+    def setTabSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "tabSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsWrapFlow: Self = this.set("msWrapFlow", js.undefined)
+    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     
     @scala.inline
-    def setMsWrapMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msWrapMargin", js.Any.fromFunction1(value))
+    def setTableLayout(value: StringOrNumberOrCallback): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsWrapMargin(value: StringOrNumberOrCallback): Self = this.set("msWrapMargin", value.asInstanceOf[js.Any])
+    def setTableLayoutFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "tableLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsWrapMargin: Self = this.set("msWrapMargin", js.undefined)
+    def setTableLayoutUndefined: Self = StObject.set(x, "tableLayout", js.undefined)
     
     @scala.inline
-    def setMsWrapThroughFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msWrapThrough", js.Any.fromFunction1(value))
+    def setTextAlign(value: StringOrNumberOrCallback): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsWrapThrough(value: StringOrNumberOrCallback): Self = this.set("msWrapThrough", value.asInstanceOf[js.Any])
+    def setTextAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMsWrapThrough: Self = this.set("msWrapThrough", js.undefined)
+    def setTextAlignLast(value: StringOrNumberOrCallback): Self = StObject.set(x, "textAlignLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsWritingModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("msWritingMode", js.Any.fromFunction1(value))
+    def setTextAlignLastFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textAlignLast", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsWritingMode(value: StringOrNumberOrCallback): Self = this.set("msWritingMode", value.asInstanceOf[js.Any])
+    def setTextAlignLastUndefined: Self = StObject.set(x, "textAlignLast", js.undefined)
     
     @scala.inline
-    def deleteMsWritingMode: Self = this.set("msWritingMode", js.undefined)
+    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     @scala.inline
-    def setObjectFitFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("objectFit", js.Any.fromFunction1(value))
+    def setTextAnchor(value: StringOrNumberOrCallback): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectFit(value: StringOrNumberOrCallback): Self = this.set("objectFit", value.asInstanceOf[js.Any])
+    def setTextAnchorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteObjectFit: Self = this.set("objectFit", js.undefined)
+    def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
     
     @scala.inline
-    def setObjectPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("objectPosition", js.Any.fromFunction1(value))
+    def setTextCombineHorizontal(value: StringOrNumberOrCallback): Self = StObject.set(x, "textCombineHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectPosition(value: StringOrNumberOrCallback): Self = this.set("objectPosition", value.asInstanceOf[js.Any])
+    def setTextCombineHorizontalFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textCombineHorizontal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteObjectPosition: Self = this.set("objectPosition", js.undefined)
+    def setTextCombineHorizontalUndefined: Self = StObject.set(x, "textCombineHorizontal", js.undefined)
     
     @scala.inline
-    def setOffsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offset", js.Any.fromFunction1(value))
+    def setTextCombineUpright(value: StringOrNumberOrCallback): Self = StObject.set(x, "textCombineUpright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: StringOrNumberOrCallback): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setTextCombineUprightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textCombineUpright", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setTextCombineUprightUndefined: Self = StObject.set(x, "textCombineUpright", js.undefined)
     
     @scala.inline
-    def setOffsetAnchorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetAnchor", js.Any.fromFunction1(value))
+    def setTextDecoration(value: StringOrNumberOrCallback): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetAnchor(value: StringOrNumberOrCallback): Self = this.set("offsetAnchor", value.asInstanceOf[js.Any])
+    def setTextDecorationColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetAnchor: Self = this.set("offsetAnchor", js.undefined)
+    def setTextDecorationColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textDecorationColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetBlock", js.Any.fromFunction1(value))
+    def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
     
     @scala.inline
-    def setOffsetBlock(value: StringOrNumberOrCallback): Self = this.set("offsetBlock", value.asInstanceOf[js.Any])
+    def setTextDecorationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textDecoration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOffsetBlock: Self = this.set("offsetBlock", js.undefined)
+    def setTextDecorationLine(value: StringOrNumberOrCallback): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetBlockEnd", js.Any.fromFunction1(value))
+    def setTextDecorationLineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textDecorationLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetBlockEnd(value: StringOrNumberOrCallback): Self = this.set("offsetBlockEnd", value.asInstanceOf[js.Any])
+    def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
     
     @scala.inline
-    def deleteOffsetBlockEnd: Self = this.set("offsetBlockEnd", js.undefined)
+    def setTextDecorationSkip(value: StringOrNumberOrCallback): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetBlockStart", js.Any.fromFunction1(value))
+    def setTextDecorationSkipFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textDecorationSkip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetBlockStart(value: StringOrNumberOrCallback): Self = this.set("offsetBlockStart", value.asInstanceOf[js.Any])
+    def setTextDecorationSkipInk(value: StringOrNumberOrCallback): Self = StObject.set(x, "textDecorationSkipInk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetBlockStart: Self = this.set("offsetBlockStart", js.undefined)
+    def setTextDecorationSkipInkFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textDecorationSkipInk", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetDistanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetDistance", js.Any.fromFunction1(value))
+    def setTextDecorationSkipInkUndefined: Self = StObject.set(x, "textDecorationSkipInk", js.undefined)
     
     @scala.inline
-    def setOffsetDistance(value: StringOrNumberOrCallback): Self = this.set("offsetDistance", value.asInstanceOf[js.Any])
+    def setTextDecorationSkipUndefined: Self = StObject.set(x, "textDecorationSkip", js.undefined)
     
     @scala.inline
-    def deleteOffsetDistance: Self = this.set("offsetDistance", js.undefined)
+    def setTextDecorationStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetInline", js.Any.fromFunction1(value))
+    def setTextDecorationStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textDecorationStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetInline(value: StringOrNumberOrCallback): Self = this.set("offsetInline", value.asInstanceOf[js.Any])
+    def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
     
     @scala.inline
-    def deleteOffsetInline: Self = this.set("offsetInline", js.undefined)
+    def setTextDecorationThickness(value: StringOrNumberOrCallback): Self = StObject.set(x, "textDecorationThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetInlineEnd", js.Any.fromFunction1(value))
+    def setTextDecorationThicknessFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textDecorationThickness", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetInlineEnd(value: StringOrNumberOrCallback): Self = this.set("offsetInlineEnd", value.asInstanceOf[js.Any])
+    def setTextDecorationThicknessUndefined: Self = StObject.set(x, "textDecorationThickness", js.undefined)
     
     @scala.inline
-    def deleteOffsetInlineEnd: Self = this.set("offsetInlineEnd", js.undefined)
+    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
     
     @scala.inline
-    def setOffsetInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetInlineStart", js.Any.fromFunction1(value))
+    def setTextDecorationWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "textDecorationWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetInlineStart(value: StringOrNumberOrCallback): Self = this.set("offsetInlineStart", value.asInstanceOf[js.Any])
+    def setTextDecorationWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textDecorationWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOffsetInlineStart: Self = this.set("offsetInlineStart", js.undefined)
+    def setTextDecorationWidthUndefined: Self = StObject.set(x, "textDecorationWidth", js.undefined)
     
     @scala.inline
-    def setOffsetPathFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetPath", js.Any.fromFunction1(value))
+    def setTextEmphasis(value: StringOrNumberOrCallback): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetPath(value: StringOrNumberOrCallback): Self = this.set("offsetPath", value.asInstanceOf[js.Any])
+    def setTextEmphasisColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "textEmphasisColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetPath: Self = this.set("offsetPath", js.undefined)
+    def setTextEmphasisColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textEmphasisColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetRotateFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetRotate", js.Any.fromFunction1(value))
+    def setTextEmphasisColorUndefined: Self = StObject.set(x, "textEmphasisColor", js.undefined)
     
     @scala.inline
-    def setOffsetRotate(value: StringOrNumberOrCallback): Self = this.set("offsetRotate", value.asInstanceOf[js.Any])
+    def setTextEmphasisFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textEmphasis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOffsetRotate: Self = this.set("offsetRotate", js.undefined)
+    def setTextEmphasisPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "textEmphasisPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetRotationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("offsetRotation", js.Any.fromFunction1(value))
+    def setTextEmphasisPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textEmphasisPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffsetRotation(value: StringOrNumberOrCallback): Self = this.set("offsetRotation", value.asInstanceOf[js.Any])
+    def setTextEmphasisPositionUndefined: Self = StObject.set(x, "textEmphasisPosition", js.undefined)
     
     @scala.inline
-    def deleteOffsetRotation: Self = this.set("offsetRotation", js.undefined)
+    def setTextEmphasisStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "textEmphasisStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("opacity", js.Any.fromFunction1(value))
+    def setTextEmphasisStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textEmphasisStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpacity(value: StringOrNumberOrCallback): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setTextEmphasisStyleUndefined: Self = StObject.set(x, "textEmphasisStyle", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setTextEmphasisUndefined: Self = StObject.set(x, "textEmphasis", js.undefined)
     
     @scala.inline
-    def setOrderFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("order", js.Any.fromFunction1(value))
+    def setTextIndent(value: StringOrNumberOrCallback): Self = StObject.set(x, "textIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: StringOrNumberOrCallback): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setTextIndentFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textIndent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setTextIndentUndefined: Self = StObject.set(x, "textIndent", js.undefined)
     
     @scala.inline
-    def setOrphansFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("orphans", js.Any.fromFunction1(value))
+    def setTextJustify(value: StringOrNumberOrCallback): Self = StObject.set(x, "textJustify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrphans(value: StringOrNumberOrCallback): Self = this.set("orphans", value.asInstanceOf[js.Any])
+    def setTextJustifyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textJustify", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOrphans: Self = this.set("orphans", js.undefined)
+    def setTextJustifyUndefined: Self = StObject.set(x, "textJustify", js.undefined)
     
     @scala.inline
-    def setOutlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("outline", js.Any.fromFunction1(value))
+    def setTextOrientation(value: StringOrNumberOrCallback): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: StringOrNumberOrCallback): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setTextOrientationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textOrientation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
+    def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
     
     @scala.inline
-    def setOutlineColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("outlineColor", js.Any.fromFunction1(value))
+    def setTextOverflow(value: StringOrNumberOrCallback): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineColor(value: StringOrNumberOrCallback): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    def setTextOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textOverflow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     
     @scala.inline
-    def setOutlineOffsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("outlineOffset", js.Any.fromFunction1(value))
+    def setTextRendering(value: StringOrNumberOrCallback): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineOffset(value: StringOrNumberOrCallback): Self = this.set("outlineOffset", value.asInstanceOf[js.Any])
+    def setTextRenderingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textRendering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOutlineOffset: Self = this.set("outlineOffset", js.undefined)
+    def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
     
     @scala.inline
-    def setOutlineStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("outlineStyle", js.Any.fromFunction1(value))
+    def setTextShadow(value: StringOrNumberOrCallback): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineStyle(value: StringOrNumberOrCallback): Self = this.set("outlineStyle", value.asInstanceOf[js.Any])
+    def setTextShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textShadow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOutlineStyle: Self = this.set("outlineStyle", js.undefined)
+    def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
     
     @scala.inline
-    def setOutlineWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("outlineWidth", js.Any.fromFunction1(value))
+    def setTextSizeAdjust(value: StringOrNumberOrCallback): Self = StObject.set(x, "textSizeAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineWidth(value: StringOrNumberOrCallback): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
+    def setTextSizeAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textSizeAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    def setTextSizeAdjustUndefined: Self = StObject.set(x, "textSizeAdjust", js.undefined)
     
     @scala.inline
-    def setOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overflow", js.Any.fromFunction1(value))
+    def setTextTransform(value: StringOrNumberOrCallback): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflow(value: StringOrNumberOrCallback): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setTextTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textTransform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     
     @scala.inline
-    def setOverflowAnchorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overflowAnchor", js.Any.fromFunction1(value))
+    def setTextUnderlineOffset(value: StringOrNumberOrCallback): Self = StObject.set(x, "textUnderlineOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowAnchor(value: StringOrNumberOrCallback): Self = this.set("overflowAnchor", value.asInstanceOf[js.Any])
+    def setTextUnderlineOffsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textUnderlineOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOverflowAnchor: Self = this.set("overflowAnchor", js.undefined)
+    def setTextUnderlineOffsetUndefined: Self = StObject.set(x, "textUnderlineOffset", js.undefined)
     
     @scala.inline
-    def setOverflowBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overflowBlock", js.Any.fromFunction1(value))
+    def setTextUnderlinePosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowBlock(value: StringOrNumberOrCallback): Self = this.set("overflowBlock", value.asInstanceOf[js.Any])
+    def setTextUnderlinePositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "textUnderlinePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOverflowBlock: Self = this.set("overflowBlock", js.undefined)
+    def setTextUnderlinePositionUndefined: Self = StObject.set(x, "textUnderlinePosition", js.undefined)
     
     @scala.inline
-    def setOverflowClipBoxFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overflowClipBox", js.Any.fromFunction1(value))
+    def setTop(value: StringOrNumberOrCallback): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowClipBox(value: StringOrNumberOrCallback): Self = this.set("overflowClipBox", value.asInstanceOf[js.Any])
+    def setTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "top", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOverflowClipBox: Self = this.set("overflowClipBox", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def setOverflowInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overflowInline", js.Any.fromFunction1(value))
+    def setTouchAction(value: StringOrNumberOrCallback): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowInline(value: StringOrNumberOrCallback): Self = this.set("overflowInline", value.asInstanceOf[js.Any])
+    def setTouchActionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "touchAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOverflowInline: Self = this.set("overflowInline", js.undefined)
+    def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
     
     @scala.inline
-    def setOverflowWrapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overflowWrap", js.Any.fromFunction1(value))
+    def setTransform(value: StringOrNumberOrCallback): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowWrap(value: StringOrNumberOrCallback): Self = this.set("overflowWrap", value.asInstanceOf[js.Any])
+    def setTransformBox(value: StringOrNumberOrCallback): Self = StObject.set(x, "transformBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowWrap: Self = this.set("overflowWrap", js.undefined)
+    def setTransformBoxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "transformBox", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overflowX", js.Any.fromFunction1(value))
+    def setTransformBoxUndefined: Self = StObject.set(x, "transformBox", js.undefined)
     
     @scala.inline
-    def setOverflowX(value: StringOrNumberOrCallback): Self = this.set("overflowX", value.asInstanceOf[js.Any])
+    def setTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOverflowX: Self = this.set("overflowX", js.undefined)
+    def setTransformOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overflowY", js.Any.fromFunction1(value))
+    def setTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "transformOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowY(value: StringOrNumberOrCallback): Self = this.set("overflowY", value.asInstanceOf[js.Any])
+    def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
     
     @scala.inline
-    def deleteOverflowY: Self = this.set("overflowY", js.undefined)
+    def setTransformStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "transformStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscrollBehaviorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overscrollBehavior", js.Any.fromFunction1(value))
+    def setTransformStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "transformStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverscrollBehavior(value: StringOrNumberOrCallback): Self = this.set("overscrollBehavior", value.asInstanceOf[js.Any])
+    def setTransformStyleUndefined: Self = StObject.set(x, "transformStyle", js.undefined)
     
     @scala.inline
-    def deleteOverscrollBehavior: Self = this.set("overscrollBehavior", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def setOverscrollBehaviorBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overscrollBehaviorBlock", js.Any.fromFunction1(value))
+    def setTransition(value: StringOrNumberOrCallback): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscrollBehaviorBlock(value: StringOrNumberOrCallback): Self = this.set("overscrollBehaviorBlock", value.asInstanceOf[js.Any])
+    def setTransitionDelay(value: StringOrNumberOrCallback): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverscrollBehaviorBlock: Self = this.set("overscrollBehaviorBlock", js.undefined)
+    def setTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "transitionDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverscrollBehaviorInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overscrollBehaviorInline", js.Any.fromFunction1(value))
+    def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
     
     @scala.inline
-    def setOverscrollBehaviorInline(value: StringOrNumberOrCallback): Self = this.set("overscrollBehaviorInline", value.asInstanceOf[js.Any])
+    def setTransitionDuration(value: StringOrNumberOrCallback): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverscrollBehaviorInline: Self = this.set("overscrollBehaviorInline", js.undefined)
+    def setTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "transitionDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverscrollBehaviorXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overscrollBehaviorX", js.Any.fromFunction1(value))
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     @scala.inline
-    def setOverscrollBehaviorX(value: StringOrNumberOrCallback): Self = this.set("overscrollBehaviorX", value.asInstanceOf[js.Any])
+    def setTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "transition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOverscrollBehaviorX: Self = this.set("overscrollBehaviorX", js.undefined)
+    def setTransitionProperty(value: StringOrNumberOrCallback): Self = StObject.set(x, "transitionProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscrollBehaviorYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("overscrollBehaviorY", js.Any.fromFunction1(value))
+    def setTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "transitionProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverscrollBehaviorY(value: StringOrNumberOrCallback): Self = this.set("overscrollBehaviorY", value.asInstanceOf[js.Any])
+    def setTransitionPropertyUndefined: Self = StObject.set(x, "transitionProperty", js.undefined)
     
     @scala.inline
-    def deleteOverscrollBehaviorY: Self = this.set("overscrollBehaviorY", js.undefined)
+    def setTransitionTimingFunction(value: StringOrNumberOrCallback): Self = StObject.set(x, "transitionTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("padding", js.Any.fromFunction1(value))
+    def setTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "transitionTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPadding(value: StringOrNumberOrCallback): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setTransitionTimingFunctionUndefined: Self = StObject.set(x, "transitionTimingFunction", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def setPaddingBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingBlock", js.Any.fromFunction1(value))
+    def setTranslate(value: StringOrNumberOrCallback): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingBlock(value: StringOrNumberOrCallback): Self = this.set("paddingBlock", value.asInstanceOf[js.Any])
+    def setTranslateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaddingBlock: Self = this.set("paddingBlock", js.undefined)
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
     @scala.inline
-    def setPaddingBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingBlockEnd", js.Any.fromFunction1(value))
+    def setUnicodeBidi(value: StringOrNumberOrCallback): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingBlockEnd(value: StringOrNumberOrCallback): Self = this.set("paddingBlockEnd", value.asInstanceOf[js.Any])
+    def setUnicodeBidiFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "unicodeBidi", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaddingBlockEnd: Self = this.set("paddingBlockEnd", js.undefined)
+    def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
     
     @scala.inline
-    def setPaddingBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingBlockStart", js.Any.fromFunction1(value))
+    def setUserSelect(value: StringOrNumberOrCallback): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingBlockStart(value: StringOrNumberOrCallback): Self = this.set("paddingBlockStart", value.asInstanceOf[js.Any])
+    def setUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "userSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaddingBlockStart: Self = this.set("paddingBlockStart", js.undefined)
+    def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     
     @scala.inline
-    def setPaddingBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingBottom", js.Any.fromFunction1(value))
+    def setVectorEffect(value: StringOrNumberOrCallback): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingBottom(value: StringOrNumberOrCallback): Self = this.set("paddingBottom", value.asInstanceOf[js.Any])
+    def setVectorEffectFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "vectorEffect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaddingBottom: Self = this.set("paddingBottom", js.undefined)
+    def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
     
     @scala.inline
-    def setPaddingInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingInline", js.Any.fromFunction1(value))
+    def setVerticalAlign(value: StringOrNumberOrCallback): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingInline(value: StringOrNumberOrCallback): Self = this.set("paddingInline", value.asInstanceOf[js.Any])
+    def setVerticalAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "verticalAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaddingInline: Self = this.set("paddingInline", js.undefined)
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     @scala.inline
-    def setPaddingInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingInlineEnd", js.Any.fromFunction1(value))
+    def setVisibility(value: StringOrNumberOrCallback): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingInlineEnd(value: StringOrNumberOrCallback): Self = this.set("paddingInlineEnd", value.asInstanceOf[js.Any])
+    def setVisibilityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "visibility", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaddingInlineEnd: Self = this.set("paddingInlineEnd", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     @scala.inline
-    def setPaddingInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingInlineStart", js.Any.fromFunction1(value))
+    def setWebkitAlignContent(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAlignContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingInlineStart(value: StringOrNumberOrCallback): Self = this.set("paddingInlineStart", value.asInstanceOf[js.Any])
+    def setWebkitAlignContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAlignContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaddingInlineStart: Self = this.set("paddingInlineStart", js.undefined)
+    def setWebkitAlignContentUndefined: Self = StObject.set(x, "WebkitAlignContent", js.undefined)
     
     @scala.inline
-    def setPaddingLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingLeft", js.Any.fromFunction1(value))
+    def setWebkitAlignItems(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAlignItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingLeft(value: StringOrNumberOrCallback): Self = this.set("paddingLeft", value.asInstanceOf[js.Any])
+    def setWebkitAlignItemsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAlignItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaddingLeft: Self = this.set("paddingLeft", js.undefined)
+    def setWebkitAlignItemsUndefined: Self = StObject.set(x, "WebkitAlignItems", js.undefined)
     
     @scala.inline
-    def setPaddingRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingRight", js.Any.fromFunction1(value))
+    def setWebkitAlignSelf(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAlignSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingRight(value: StringOrNumberOrCallback): Self = this.set("paddingRight", value.asInstanceOf[js.Any])
+    def setWebkitAlignSelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAlignSelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaddingRight: Self = this.set("paddingRight", js.undefined)
+    def setWebkitAlignSelfUndefined: Self = StObject.set(x, "WebkitAlignSelf", js.undefined)
     
     @scala.inline
-    def setPaddingTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paddingTop", js.Any.fromFunction1(value))
+    def setWebkitAnimation(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingTop(value: StringOrNumberOrCallback): Self = this.set("paddingTop", value.asInstanceOf[js.Any])
+    def setWebkitAnimationDelay(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAnimationDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingTop: Self = this.set("paddingTop", js.undefined)
+    def setWebkitAnimationDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAnimationDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageBreakAfterFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("pageBreakAfter", js.Any.fromFunction1(value))
+    def setWebkitAnimationDelayUndefined: Self = StObject.set(x, "WebkitAnimationDelay", js.undefined)
     
     @scala.inline
-    def setPageBreakAfter(value: StringOrNumberOrCallback): Self = this.set("pageBreakAfter", value.asInstanceOf[js.Any])
+    def setWebkitAnimationDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAnimationDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageBreakAfter: Self = this.set("pageBreakAfter", js.undefined)
+    def setWebkitAnimationDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAnimationDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageBreakBeforeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("pageBreakBefore", js.Any.fromFunction1(value))
+    def setWebkitAnimationDirectionUndefined: Self = StObject.set(x, "WebkitAnimationDirection", js.undefined)
     
     @scala.inline
-    def setPageBreakBefore(value: StringOrNumberOrCallback): Self = this.set("pageBreakBefore", value.asInstanceOf[js.Any])
+    def setWebkitAnimationDuration(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAnimationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageBreakBefore: Self = this.set("pageBreakBefore", js.undefined)
+    def setWebkitAnimationDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAnimationDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageBreakInsideFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("pageBreakInside", js.Any.fromFunction1(value))
+    def setWebkitAnimationDurationUndefined: Self = StObject.set(x, "WebkitAnimationDuration", js.undefined)
     
     @scala.inline
-    def setPageBreakInside(value: StringOrNumberOrCallback): Self = this.set("pageBreakInside", value.asInstanceOf[js.Any])
+    def setWebkitAnimationFillMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAnimationFillMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageBreakInside: Self = this.set("pageBreakInside", js.undefined)
+    def setWebkitAnimationFillModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAnimationFillMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPaintOrderFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("paintOrder", js.Any.fromFunction1(value))
+    def setWebkitAnimationFillModeUndefined: Self = StObject.set(x, "WebkitAnimationFillMode", js.undefined)
     
     @scala.inline
-    def setPaintOrder(value: StringOrNumberOrCallback): Self = this.set("paintOrder", value.asInstanceOf[js.Any])
+    def setWebkitAnimationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaintOrder: Self = this.set("paintOrder", js.undefined)
+    def setWebkitAnimationIterationCount(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAnimationIterationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerspectiveFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("perspective", js.Any.fromFunction1(value))
+    def setWebkitAnimationIterationCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAnimationIterationCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPerspective(value: StringOrNumberOrCallback): Self = this.set("perspective", value.asInstanceOf[js.Any])
+    def setWebkitAnimationIterationCountUndefined: Self = StObject.set(x, "WebkitAnimationIterationCount", js.undefined)
     
     @scala.inline
-    def deletePerspective: Self = this.set("perspective", js.undefined)
+    def setWebkitAnimationName(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAnimationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerspectiveOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("perspectiveOrigin", js.Any.fromFunction1(value))
+    def setWebkitAnimationNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAnimationName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPerspectiveOrigin(value: StringOrNumberOrCallback): Self = this.set("perspectiveOrigin", value.asInstanceOf[js.Any])
+    def setWebkitAnimationNameUndefined: Self = StObject.set(x, "WebkitAnimationName", js.undefined)
     
     @scala.inline
-    def deletePerspectiveOrigin: Self = this.set("perspectiveOrigin", js.undefined)
+    def setWebkitAnimationPlayState(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAnimationPlayState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("placeContent", js.Any.fromFunction1(value))
+    def setWebkitAnimationPlayStateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAnimationPlayState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlaceContent(value: StringOrNumberOrCallback): Self = this.set("placeContent", value.asInstanceOf[js.Any])
+    def setWebkitAnimationPlayStateUndefined: Self = StObject.set(x, "WebkitAnimationPlayState", js.undefined)
     
     @scala.inline
-    def deletePlaceContent: Self = this.set("placeContent", js.undefined)
+    def setWebkitAnimationTimingFunction(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAnimationTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceItemsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("placeItems", js.Any.fromFunction1(value))
+    def setWebkitAnimationTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAnimationTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlaceItems(value: StringOrNumberOrCallback): Self = this.set("placeItems", value.asInstanceOf[js.Any])
+    def setWebkitAnimationTimingFunctionUndefined: Self = StObject.set(x, "WebkitAnimationTimingFunction", js.undefined)
     
     @scala.inline
-    def deletePlaceItems: Self = this.set("placeItems", js.undefined)
+    def setWebkitAnimationUndefined: Self = StObject.set(x, "WebkitAnimation", js.undefined)
     
     @scala.inline
-    def setPlaceSelfFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("placeSelf", js.Any.fromFunction1(value))
+    def setWebkitAppearance(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitAppearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceSelf(value: StringOrNumberOrCallback): Self = this.set("placeSelf", value.asInstanceOf[js.Any])
+    def setWebkitAppearanceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitAppearance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePlaceSelf: Self = this.set("placeSelf", js.undefined)
+    def setWebkitAppearanceUndefined: Self = StObject.set(x, "WebkitAppearance", js.undefined)
     
     @scala.inline
-    def setPointerEventsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("pointerEvents", js.Any.fromFunction1(value))
+    def setWebkitBackdropFilter(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBackdropFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointerEvents(value: StringOrNumberOrCallback): Self = this.set("pointerEvents", value.asInstanceOf[js.Any])
+    def setWebkitBackdropFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBackdropFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePointerEvents: Self = this.set("pointerEvents", js.undefined)
+    def setWebkitBackdropFilterUndefined: Self = StObject.set(x, "WebkitBackdropFilter", js.undefined)
     
     @scala.inline
-    def setPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("position", js.Any.fromFunction1(value))
+    def setWebkitBackfaceVisibility(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBackfaceVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: StringOrNumberOrCallback): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setWebkitBackfaceVisibilityFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBackfaceVisibility", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setWebkitBackfaceVisibilityUndefined: Self = StObject.set(x, "WebkitBackfaceVisibility", js.undefined)
     
     @scala.inline
-    def setQuotesFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("quotes", js.Any.fromFunction1(value))
+    def setWebkitBackgroundClip(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBackgroundClip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotes(value: StringOrNumberOrCallback): Self = this.set("quotes", value.asInstanceOf[js.Any])
+    def setWebkitBackgroundClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBackgroundClip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteQuotes: Self = this.set("quotes", js.undefined)
+    def setWebkitBackgroundClipUndefined: Self = StObject.set(x, "WebkitBackgroundClip", js.undefined)
     
     @scala.inline
-    def setResizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("resize", js.Any.fromFunction1(value))
+    def setWebkitBackgroundOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBackgroundOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResize(value: StringOrNumberOrCallback): Self = this.set("resize", value.asInstanceOf[js.Any])
+    def setWebkitBackgroundOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBackgroundOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setWebkitBackgroundOriginUndefined: Self = StObject.set(x, "WebkitBackgroundOrigin", js.undefined)
     
     @scala.inline
-    def setRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("right", js.Any.fromFunction1(value))
+    def setWebkitBackgroundSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBackgroundSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: StringOrNumberOrCallback): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setWebkitBackgroundSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBackgroundSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setWebkitBackgroundSizeUndefined: Self = StObject.set(x, "WebkitBackgroundSize", js.undefined)
     
     @scala.inline
-    def setRotateFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("rotate", js.Any.fromFunction1(value))
+    def setWebkitBorderBefore(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: StringOrNumberOrCallback): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setWebkitBorderBeforeColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderBeforeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setWebkitBorderBeforeColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderBeforeColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRowGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("rowGap", js.Any.fromFunction1(value))
+    def setWebkitBorderBeforeColorUndefined: Self = StObject.set(x, "WebkitBorderBeforeColor", js.undefined)
     
     @scala.inline
-    def setRowGap(value: StringOrNumberOrCallback): Self = this.set("rowGap", value.asInstanceOf[js.Any])
+    def setWebkitBorderBeforeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRowGap: Self = this.set("rowGap", js.undefined)
+    def setWebkitBorderBeforeStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderBeforeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRubyAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("rubyAlign", js.Any.fromFunction1(value))
+    def setWebkitBorderBeforeStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderBeforeStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRubyAlign(value: StringOrNumberOrCallback): Self = this.set("rubyAlign", value.asInstanceOf[js.Any])
+    def setWebkitBorderBeforeStyleUndefined: Self = StObject.set(x, "WebkitBorderBeforeStyle", js.undefined)
     
     @scala.inline
-    def deleteRubyAlign: Self = this.set("rubyAlign", js.undefined)
+    def setWebkitBorderBeforeUndefined: Self = StObject.set(x, "WebkitBorderBefore", js.undefined)
     
     @scala.inline
-    def setRubyMergeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("rubyMerge", js.Any.fromFunction1(value))
+    def setWebkitBorderBeforeWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderBeforeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRubyMerge(value: StringOrNumberOrCallback): Self = this.set("rubyMerge", value.asInstanceOf[js.Any])
+    def setWebkitBorderBeforeWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderBeforeWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRubyMerge: Self = this.set("rubyMerge", js.undefined)
+    def setWebkitBorderBeforeWidthUndefined: Self = StObject.set(x, "WebkitBorderBeforeWidth", js.undefined)
     
     @scala.inline
-    def setRubyPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("rubyPosition", js.Any.fromFunction1(value))
+    def setWebkitBorderBottomLeftRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRubyPosition(value: StringOrNumberOrCallback): Self = this.set("rubyPosition", value.asInstanceOf[js.Any])
+    def setWebkitBorderBottomLeftRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRubyPosition: Self = this.set("rubyPosition", js.undefined)
+    def setWebkitBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.undefined)
     
     @scala.inline
-    def setScaleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scale", js.Any.fromFunction1(value))
+    def setWebkitBorderBottomRightRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderBottomRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: StringOrNumberOrCallback): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setWebkitBorderBottomRightRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setWebkitBorderBottomRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.undefined)
     
     @scala.inline
-    def setScrollBehaviorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollBehavior", js.Any.fromFunction1(value))
+    def setWebkitBorderImage(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollBehavior(value: StringOrNumberOrCallback): Self = this.set("scrollBehavior", value.asInstanceOf[js.Any])
+    def setWebkitBorderImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollBehavior: Self = this.set("scrollBehavior", js.undefined)
+    def setWebkitBorderImageSlice(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderImageSlice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMargin", js.Any.fromFunction1(value))
+    def setWebkitBorderImageSliceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderImageSlice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMargin(value: StringOrNumberOrCallback): Self = this.set("scrollMargin", value.asInstanceOf[js.Any])
+    def setWebkitBorderImageSliceUndefined: Self = StObject.set(x, "WebkitBorderImageSlice", js.undefined)
     
     @scala.inline
-    def deleteScrollMargin: Self = this.set("scrollMargin", js.undefined)
+    def setWebkitBorderImageUndefined: Self = StObject.set(x, "WebkitBorderImage", js.undefined)
     
     @scala.inline
-    def setScrollMarginBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginBlock", js.Any.fromFunction1(value))
+    def setWebkitBorderRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginBlock(value: StringOrNumberOrCallback): Self = this.set("scrollMarginBlock", value.asInstanceOf[js.Any])
+    def setWebkitBorderRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollMarginBlock: Self = this.set("scrollMarginBlock", js.undefined)
+    def setWebkitBorderRadiusUndefined: Self = StObject.set(x, "WebkitBorderRadius", js.undefined)
     
     @scala.inline
-    def setScrollMarginBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginBlockEnd", js.Any.fromFunction1(value))
+    def setWebkitBorderTopLeftRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderTopLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginBlockEnd(value: StringOrNumberOrCallback): Self = this.set("scrollMarginBlockEnd", value.asInstanceOf[js.Any])
+    def setWebkitBorderTopLeftRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollMarginBlockEnd: Self = this.set("scrollMarginBlockEnd", js.undefined)
+    def setWebkitBorderTopLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.undefined)
     
     @scala.inline
-    def setScrollMarginBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginBlockStart", js.Any.fromFunction1(value))
+    def setWebkitBorderTopRightRadius(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBorderTopRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginBlockStart(value: StringOrNumberOrCallback): Self = this.set("scrollMarginBlockStart", value.asInstanceOf[js.Any])
+    def setWebkitBorderTopRightRadiusFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBorderTopRightRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollMarginBlockStart: Self = this.set("scrollMarginBlockStart", js.undefined)
+    def setWebkitBorderTopRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopRightRadius", js.undefined)
     
     @scala.inline
-    def setScrollMarginBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginBottom", js.Any.fromFunction1(value))
+    def setWebkitBoxAlign(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginBottom(value: StringOrNumberOrCallback): Self = this.set("scrollMarginBottom", value.asInstanceOf[js.Any])
+    def setWebkitBoxAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollMarginBottom: Self = this.set("scrollMarginBottom", js.undefined)
+    def setWebkitBoxAlignUndefined: Self = StObject.set(x, "WebkitBoxAlign", js.undefined)
     
     @scala.inline
-    def setScrollMarginInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginInline", js.Any.fromFunction1(value))
+    def setWebkitBoxDecorationBreak(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxDecorationBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginInline(value: StringOrNumberOrCallback): Self = this.set("scrollMarginInline", value.asInstanceOf[js.Any])
+    def setWebkitBoxDecorationBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxDecorationBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollMarginInline: Self = this.set("scrollMarginInline", js.undefined)
+    def setWebkitBoxDecorationBreakUndefined: Self = StObject.set(x, "WebkitBoxDecorationBreak", js.undefined)
     
     @scala.inline
-    def setScrollMarginInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginInlineEnd", js.Any.fromFunction1(value))
+    def setWebkitBoxDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginInlineEnd(value: StringOrNumberOrCallback): Self = this.set("scrollMarginInlineEnd", value.asInstanceOf[js.Any])
+    def setWebkitBoxDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollMarginInlineEnd: Self = this.set("scrollMarginInlineEnd", js.undefined)
+    def setWebkitBoxDirectionUndefined: Self = StObject.set(x, "WebkitBoxDirection", js.undefined)
     
     @scala.inline
-    def setScrollMarginInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginInlineStart", js.Any.fromFunction1(value))
+    def setWebkitBoxFlex(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxFlex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginInlineStart(value: StringOrNumberOrCallback): Self = this.set("scrollMarginInlineStart", value.asInstanceOf[js.Any])
+    def setWebkitBoxFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxFlex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollMarginInlineStart: Self = this.set("scrollMarginInlineStart", js.undefined)
+    def setWebkitBoxFlexGroup(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxFlexGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginLeft", js.Any.fromFunction1(value))
+    def setWebkitBoxFlexGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxFlexGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollMarginLeft(value: StringOrNumberOrCallback): Self = this.set("scrollMarginLeft", value.asInstanceOf[js.Any])
+    def setWebkitBoxFlexGroupUndefined: Self = StObject.set(x, "WebkitBoxFlexGroup", js.undefined)
     
     @scala.inline
-    def deleteScrollMarginLeft: Self = this.set("scrollMarginLeft", js.undefined)
+    def setWebkitBoxFlexUndefined: Self = StObject.set(x, "WebkitBoxFlex", js.undefined)
     
     @scala.inline
-    def setScrollMarginRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginRight", js.Any.fromFunction1(value))
+    def setWebkitBoxLines(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginRight(value: StringOrNumberOrCallback): Self = this.set("scrollMarginRight", value.asInstanceOf[js.Any])
+    def setWebkitBoxLinesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxLines", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollMarginRight: Self = this.set("scrollMarginRight", js.undefined)
+    def setWebkitBoxLinesUndefined: Self = StObject.set(x, "WebkitBoxLines", js.undefined)
     
     @scala.inline
-    def setScrollMarginTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollMarginTop", js.Any.fromFunction1(value))
+    def setWebkitBoxOrdinalGroup(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxOrdinalGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMarginTop(value: StringOrNumberOrCallback): Self = this.set("scrollMarginTop", value.asInstanceOf[js.Any])
+    def setWebkitBoxOrdinalGroupFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxOrdinalGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollMarginTop: Self = this.set("scrollMarginTop", js.undefined)
+    def setWebkitBoxOrdinalGroupUndefined: Self = StObject.set(x, "WebkitBoxOrdinalGroup", js.undefined)
     
     @scala.inline
-    def setScrollPaddingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPadding", js.Any.fromFunction1(value))
+    def setWebkitBoxOrient(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPadding(value: StringOrNumberOrCallback): Self = this.set("scrollPadding", value.asInstanceOf[js.Any])
+    def setWebkitBoxOrientFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxOrient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPadding: Self = this.set("scrollPadding", js.undefined)
+    def setWebkitBoxOrientUndefined: Self = StObject.set(x, "WebkitBoxOrient", js.undefined)
     
     @scala.inline
-    def setScrollPaddingBlockFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingBlock", js.Any.fromFunction1(value))
+    def setWebkitBoxPack(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxPack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPaddingBlock(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingBlock", value.asInstanceOf[js.Any])
+    def setWebkitBoxPackFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxPack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPaddingBlock: Self = this.set("scrollPaddingBlock", js.undefined)
+    def setWebkitBoxPackUndefined: Self = StObject.set(x, "WebkitBoxPack", js.undefined)
     
     @scala.inline
-    def setScrollPaddingBlockEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingBlockEnd", js.Any.fromFunction1(value))
+    def setWebkitBoxReflect(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxReflect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPaddingBlockEnd(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingBlockEnd", value.asInstanceOf[js.Any])
+    def setWebkitBoxReflectFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxReflect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPaddingBlockEnd: Self = this.set("scrollPaddingBlockEnd", js.undefined)
+    def setWebkitBoxReflectUndefined: Self = StObject.set(x, "WebkitBoxReflect", js.undefined)
     
     @scala.inline
-    def setScrollPaddingBlockStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingBlockStart", js.Any.fromFunction1(value))
+    def setWebkitBoxShadow(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPaddingBlockStart(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingBlockStart", value.asInstanceOf[js.Any])
+    def setWebkitBoxShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxShadow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPaddingBlockStart: Self = this.set("scrollPaddingBlockStart", js.undefined)
+    def setWebkitBoxShadowUndefined: Self = StObject.set(x, "WebkitBoxShadow", js.undefined)
     
     @scala.inline
-    def setScrollPaddingBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingBottom", js.Any.fromFunction1(value))
+    def setWebkitBoxSizing(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitBoxSizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPaddingBottom(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingBottom", value.asInstanceOf[js.Any])
+    def setWebkitBoxSizingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitBoxSizing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPaddingBottom: Self = this.set("scrollPaddingBottom", js.undefined)
+    def setWebkitBoxSizingUndefined: Self = StObject.set(x, "WebkitBoxSizing", js.undefined)
     
     @scala.inline
-    def setScrollPaddingInlineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingInline", js.Any.fromFunction1(value))
+    def setWebkitClipPath(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitClipPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPaddingInline(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingInline", value.asInstanceOf[js.Any])
+    def setWebkitClipPathFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitClipPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPaddingInline: Self = this.set("scrollPaddingInline", js.undefined)
+    def setWebkitClipPathUndefined: Self = StObject.set(x, "WebkitClipPath", js.undefined)
     
     @scala.inline
-    def setScrollPaddingInlineEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingInlineEnd", js.Any.fromFunction1(value))
+    def setWebkitColumnCount(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPaddingInlineEnd(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingInlineEnd", value.asInstanceOf[js.Any])
+    def setWebkitColumnCountFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumnCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPaddingInlineEnd: Self = this.set("scrollPaddingInlineEnd", js.undefined)
+    def setWebkitColumnCountUndefined: Self = StObject.set(x, "WebkitColumnCount", js.undefined)
     
     @scala.inline
-    def setScrollPaddingInlineStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingInlineStart", js.Any.fromFunction1(value))
+    def setWebkitColumnFill(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumnFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPaddingInlineStart(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingInlineStart", value.asInstanceOf[js.Any])
+    def setWebkitColumnFillFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumnFill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPaddingInlineStart: Self = this.set("scrollPaddingInlineStart", js.undefined)
+    def setWebkitColumnFillUndefined: Self = StObject.set(x, "WebkitColumnFill", js.undefined)
     
     @scala.inline
-    def setScrollPaddingLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingLeft", js.Any.fromFunction1(value))
+    def setWebkitColumnGap(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumnGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPaddingLeft(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingLeft", value.asInstanceOf[js.Any])
+    def setWebkitColumnGapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumnGap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPaddingLeft: Self = this.set("scrollPaddingLeft", js.undefined)
+    def setWebkitColumnGapUndefined: Self = StObject.set(x, "WebkitColumnGap", js.undefined)
     
     @scala.inline
-    def setScrollPaddingRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingRight", js.Any.fromFunction1(value))
+    def setWebkitColumnRule(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumnRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPaddingRight(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingRight", value.asInstanceOf[js.Any])
+    def setWebkitColumnRuleColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumnRuleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPaddingRight: Self = this.set("scrollPaddingRight", js.undefined)
+    def setWebkitColumnRuleColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumnRuleColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollPaddingTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollPaddingTop", js.Any.fromFunction1(value))
+    def setWebkitColumnRuleColorUndefined: Self = StObject.set(x, "WebkitColumnRuleColor", js.undefined)
     
     @scala.inline
-    def setScrollPaddingTop(value: StringOrNumberOrCallback): Self = this.set("scrollPaddingTop", value.asInstanceOf[js.Any])
+    def setWebkitColumnRuleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumnRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollPaddingTop: Self = this.set("scrollPaddingTop", js.undefined)
+    def setWebkitColumnRuleStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumnRuleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapAlign", js.Any.fromFunction1(value))
+    def setWebkitColumnRuleStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumnRuleStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapAlign(value: StringOrNumberOrCallback): Self = this.set("scrollSnapAlign", value.asInstanceOf[js.Any])
+    def setWebkitColumnRuleStyleUndefined: Self = StObject.set(x, "WebkitColumnRuleStyle", js.undefined)
     
     @scala.inline
-    def deleteScrollSnapAlign: Self = this.set("scrollSnapAlign", js.undefined)
+    def setWebkitColumnRuleUndefined: Self = StObject.set(x, "WebkitColumnRule", js.undefined)
     
     @scala.inline
-    def setScrollSnapCoordinateFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapCoordinate", js.Any.fromFunction1(value))
+    def setWebkitColumnRuleWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumnRuleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapCoordinate(value: StringOrNumberOrCallback): Self = this.set("scrollSnapCoordinate", value.asInstanceOf[js.Any])
+    def setWebkitColumnRuleWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumnRuleWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollSnapCoordinate: Self = this.set("scrollSnapCoordinate", js.undefined)
+    def setWebkitColumnRuleWidthUndefined: Self = StObject.set(x, "WebkitColumnRuleWidth", js.undefined)
     
     @scala.inline
-    def setScrollSnapDestinationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapDestination", js.Any.fromFunction1(value))
+    def setWebkitColumnSpan(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumnSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapDestination(value: StringOrNumberOrCallback): Self = this.set("scrollSnapDestination", value.asInstanceOf[js.Any])
+    def setWebkitColumnSpanFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumnSpan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollSnapDestination: Self = this.set("scrollSnapDestination", js.undefined)
+    def setWebkitColumnSpanUndefined: Self = StObject.set(x, "WebkitColumnSpan", js.undefined)
     
     @scala.inline
-    def setScrollSnapMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapMargin", js.Any.fromFunction1(value))
+    def setWebkitColumnWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapMargin(value: StringOrNumberOrCallback): Self = this.set("scrollSnapMargin", value.asInstanceOf[js.Any])
+    def setWebkitColumnWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumnWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollSnapMargin: Self = this.set("scrollSnapMargin", js.undefined)
+    def setWebkitColumnWidthUndefined: Self = StObject.set(x, "WebkitColumnWidth", js.undefined)
     
     @scala.inline
-    def setScrollSnapMarginBottomFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapMarginBottom", js.Any.fromFunction1(value))
+    def setWebkitColumns(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapMarginBottom(value: StringOrNumberOrCallback): Self = this.set("scrollSnapMarginBottom", value.asInstanceOf[js.Any])
+    def setWebkitColumnsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollSnapMarginBottom: Self = this.set("scrollSnapMarginBottom", js.undefined)
+    def setWebkitColumnsUndefined: Self = StObject.set(x, "WebkitColumns", js.undefined)
     
     @scala.inline
-    def setScrollSnapMarginLeftFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapMarginLeft", js.Any.fromFunction1(value))
+    def setWebkitFilter(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapMarginLeft(value: StringOrNumberOrCallback): Self = this.set("scrollSnapMarginLeft", value.asInstanceOf[js.Any])
+    def setWebkitFilterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollSnapMarginLeft: Self = this.set("scrollSnapMarginLeft", js.undefined)
+    def setWebkitFilterUndefined: Self = StObject.set(x, "WebkitFilter", js.undefined)
     
     @scala.inline
-    def setScrollSnapMarginRightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapMarginRight", js.Any.fromFunction1(value))
+    def setWebkitFlex(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFlex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapMarginRight(value: StringOrNumberOrCallback): Self = this.set("scrollSnapMarginRight", value.asInstanceOf[js.Any])
+    def setWebkitFlexBasis(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFlexBasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapMarginRight: Self = this.set("scrollSnapMarginRight", js.undefined)
+    def setWebkitFlexBasisFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFlexBasis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapMarginTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapMarginTop", js.Any.fromFunction1(value))
+    def setWebkitFlexBasisUndefined: Self = StObject.set(x, "WebkitFlexBasis", js.undefined)
     
     @scala.inline
-    def setScrollSnapMarginTop(value: StringOrNumberOrCallback): Self = this.set("scrollSnapMarginTop", value.asInstanceOf[js.Any])
+    def setWebkitFlexDirection(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFlexDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapMarginTop: Self = this.set("scrollSnapMarginTop", js.undefined)
+    def setWebkitFlexDirectionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFlexDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapPointsXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapPointsX", js.Any.fromFunction1(value))
+    def setWebkitFlexDirectionUndefined: Self = StObject.set(x, "WebkitFlexDirection", js.undefined)
     
     @scala.inline
-    def setScrollSnapPointsX(value: StringOrNumberOrCallback): Self = this.set("scrollSnapPointsX", value.asInstanceOf[js.Any])
+    def setWebkitFlexFlow(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFlexFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollSnapPointsX: Self = this.set("scrollSnapPointsX", js.undefined)
+    def setWebkitFlexFlowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFlexFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapPointsYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapPointsY", js.Any.fromFunction1(value))
+    def setWebkitFlexFlowUndefined: Self = StObject.set(x, "WebkitFlexFlow", js.undefined)
     
     @scala.inline
-    def setScrollSnapPointsY(value: StringOrNumberOrCallback): Self = this.set("scrollSnapPointsY", value.asInstanceOf[js.Any])
+    def setWebkitFlexFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFlex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollSnapPointsY: Self = this.set("scrollSnapPointsY", js.undefined)
+    def setWebkitFlexGrow(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFlexGrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapStopFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapStop", js.Any.fromFunction1(value))
+    def setWebkitFlexGrowFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFlexGrow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapStop(value: StringOrNumberOrCallback): Self = this.set("scrollSnapStop", value.asInstanceOf[js.Any])
+    def setWebkitFlexGrowUndefined: Self = StObject.set(x, "WebkitFlexGrow", js.undefined)
     
     @scala.inline
-    def deleteScrollSnapStop: Self = this.set("scrollSnapStop", js.undefined)
+    def setWebkitFlexShrink(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFlexShrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapType", js.Any.fromFunction1(value))
+    def setWebkitFlexShrinkFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFlexShrink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollSnapType(value: StringOrNumberOrCallback): Self = this.set("scrollSnapType", value.asInstanceOf[js.Any])
+    def setWebkitFlexShrinkUndefined: Self = StObject.set(x, "WebkitFlexShrink", js.undefined)
     
     @scala.inline
-    def deleteScrollSnapType: Self = this.set("scrollSnapType", js.undefined)
+    def setWebkitFlexUndefined: Self = StObject.set(x, "WebkitFlex", js.undefined)
     
     @scala.inline
-    def setScrollSnapTypeXFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapTypeX", js.Any.fromFunction1(value))
+    def setWebkitFlexWrap(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFlexWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapTypeX(value: StringOrNumberOrCallback): Self = this.set("scrollSnapTypeX", value.asInstanceOf[js.Any])
+    def setWebkitFlexWrapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFlexWrap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollSnapTypeX: Self = this.set("scrollSnapTypeX", js.undefined)
+    def setWebkitFlexWrapUndefined: Self = StObject.set(x, "WebkitFlexWrap", js.undefined)
     
     @scala.inline
-    def setScrollSnapTypeYFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollSnapTypeY", js.Any.fromFunction1(value))
+    def setWebkitFontFeatureSettings(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFontFeatureSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSnapTypeY(value: StringOrNumberOrCallback): Self = this.set("scrollSnapTypeY", value.asInstanceOf[js.Any])
+    def setWebkitFontFeatureSettingsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFontFeatureSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollSnapTypeY: Self = this.set("scrollSnapTypeY", js.undefined)
+    def setWebkitFontFeatureSettingsUndefined: Self = StObject.set(x, "WebkitFontFeatureSettings", js.undefined)
     
     @scala.inline
-    def setScrollbarColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollbarColor", js.Any.fromFunction1(value))
+    def setWebkitFontKerning(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFontKerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarColor(value: StringOrNumberOrCallback): Self = this.set("scrollbarColor", value.asInstanceOf[js.Any])
+    def setWebkitFontKerningFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFontKerning", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollbarColor: Self = this.set("scrollbarColor", js.undefined)
+    def setWebkitFontKerningUndefined: Self = StObject.set(x, "WebkitFontKerning", js.undefined)
     
     @scala.inline
-    def setScrollbarGutterFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollbarGutter", js.Any.fromFunction1(value))
+    def setWebkitFontSmoothing(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFontSmoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarGutter(value: StringOrNumberOrCallback): Self = this.set("scrollbarGutter", value.asInstanceOf[js.Any])
+    def setWebkitFontSmoothingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFontSmoothing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollbarGutter: Self = this.set("scrollbarGutter", js.undefined)
+    def setWebkitFontSmoothingUndefined: Self = StObject.set(x, "WebkitFontSmoothing", js.undefined)
     
     @scala.inline
-    def setScrollbarTrackColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollbarTrackColor", js.Any.fromFunction1(value))
+    def setWebkitFontVariantLigatures(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitFontVariantLigatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarTrackColor(value: StringOrNumberOrCallback): Self = this.set("scrollbarTrackColor", value.asInstanceOf[js.Any])
+    def setWebkitFontVariantLigaturesFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitFontVariantLigatures", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollbarTrackColor: Self = this.set("scrollbarTrackColor", js.undefined)
+    def setWebkitFontVariantLigaturesUndefined: Self = StObject.set(x, "WebkitFontVariantLigatures", js.undefined)
     
     @scala.inline
-    def setScrollbarWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("scrollbarWidth", js.Any.fromFunction1(value))
+    def setWebkitHyphens(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitHyphens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarWidth(value: StringOrNumberOrCallback): Self = this.set("scrollbarWidth", value.asInstanceOf[js.Any])
+    def setWebkitHyphensFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitHyphens", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteScrollbarWidth: Self = this.set("scrollbarWidth", js.undefined)
+    def setWebkitHyphensUndefined: Self = StObject.set(x, "WebkitHyphens", js.undefined)
     
     @scala.inline
-    def setShapeImageThresholdFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("shapeImageThreshold", js.Any.fromFunction1(value))
+    def setWebkitJustifyContent(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitJustifyContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeImageThreshold(value: StringOrNumberOrCallback): Self = this.set("shapeImageThreshold", value.asInstanceOf[js.Any])
+    def setWebkitJustifyContentFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitJustifyContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteShapeImageThreshold: Self = this.set("shapeImageThreshold", js.undefined)
+    def setWebkitJustifyContentUndefined: Self = StObject.set(x, "WebkitJustifyContent", js.undefined)
     
     @scala.inline
-    def setShapeMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("shapeMargin", js.Any.fromFunction1(value))
+    def setWebkitLineBreak(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitLineBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeMargin(value: StringOrNumberOrCallback): Self = this.set("shapeMargin", value.asInstanceOf[js.Any])
+    def setWebkitLineBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitLineBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteShapeMargin: Self = this.set("shapeMargin", js.undefined)
+    def setWebkitLineBreakUndefined: Self = StObject.set(x, "WebkitLineBreak", js.undefined)
     
     @scala.inline
-    def setShapeOutsideFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("shapeOutside", js.Any.fromFunction1(value))
+    def setWebkitLineClamp(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitLineClamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeOutside(value: StringOrNumberOrCallback): Self = this.set("shapeOutside", value.asInstanceOf[js.Any])
+    def setWebkitLineClampFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitLineClamp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteShapeOutside: Self = this.set("shapeOutside", js.undefined)
+    def setWebkitLineClampUndefined: Self = StObject.set(x, "WebkitLineClamp", js.undefined)
     
     @scala.inline
-    def setShapeRenderingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("shapeRendering", js.Any.fromFunction1(value))
+    def setWebkitMarginEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMarginEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeRendering(value: StringOrNumberOrCallback): Self = this.set("shapeRendering", value.asInstanceOf[js.Any])
+    def setWebkitMarginEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMarginEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteShapeRendering: Self = this.set("shapeRendering", js.undefined)
+    def setWebkitMarginEndUndefined: Self = StObject.set(x, "WebkitMarginEnd", js.undefined)
     
     @scala.inline
-    def setStopColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("stopColor", js.Any.fromFunction1(value))
+    def setWebkitMarginStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMarginStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopColor(value: StringOrNumberOrCallback): Self = this.set("stopColor", value.asInstanceOf[js.Any])
+    def setWebkitMarginStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMarginStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStopColor: Self = this.set("stopColor", js.undefined)
+    def setWebkitMarginStartUndefined: Self = StObject.set(x, "WebkitMarginStart", js.undefined)
     
     @scala.inline
-    def setStopOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("stopOpacity", js.Any.fromFunction1(value))
+    def setWebkitMask(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopOpacity(value: StringOrNumberOrCallback): Self = this.set("stopOpacity", value.asInstanceOf[js.Any])
+    def setWebkitMaskAttachment(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStopOpacity: Self = this.set("stopOpacity", js.undefined)
+    def setWebkitMaskAttachmentFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskAttachment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("stroke", js.Any.fromFunction1(value))
+    def setWebkitMaskAttachmentUndefined: Self = StObject.set(x, "WebkitMaskAttachment", js.undefined)
     
     @scala.inline
-    def setStroke(value: StringOrNumberOrCallback): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    def setWebkitMaskClip(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskClip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setWebkitMaskClipFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskClip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeDasharrayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("strokeDasharray", js.Any.fromFunction1(value))
+    def setWebkitMaskClipUndefined: Self = StObject.set(x, "WebkitMaskClip", js.undefined)
     
     @scala.inline
-    def setStrokeDasharray(value: StringOrNumberOrCallback): Self = this.set("strokeDasharray", value.asInstanceOf[js.Any])
+    def setWebkitMaskComposite(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskComposite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeDasharray: Self = this.set("strokeDasharray", js.undefined)
+    def setWebkitMaskCompositeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskComposite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeDashoffsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("strokeDashoffset", js.Any.fromFunction1(value))
+    def setWebkitMaskCompositeUndefined: Self = StObject.set(x, "WebkitMaskComposite", js.undefined)
     
     @scala.inline
-    def setStrokeDashoffset(value: StringOrNumberOrCallback): Self = this.set("strokeDashoffset", value.asInstanceOf[js.Any])
+    def setWebkitMaskFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMask", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStrokeDashoffset: Self = this.set("strokeDashoffset", js.undefined)
+    def setWebkitMaskImage(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeLinecapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("strokeLinecap", js.Any.fromFunction1(value))
+    def setWebkitMaskImageFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeLinecap(value: StringOrNumberOrCallback): Self = this.set("strokeLinecap", value.asInstanceOf[js.Any])
+    def setWebkitMaskImageUndefined: Self = StObject.set(x, "WebkitMaskImage", js.undefined)
     
     @scala.inline
-    def deleteStrokeLinecap: Self = this.set("strokeLinecap", js.undefined)
+    def setWebkitMaskOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeLinejoinFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("strokeLinejoin", js.Any.fromFunction1(value))
+    def setWebkitMaskOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeLinejoin(value: StringOrNumberOrCallback): Self = this.set("strokeLinejoin", value.asInstanceOf[js.Any])
+    def setWebkitMaskOriginUndefined: Self = StObject.set(x, "WebkitMaskOrigin", js.undefined)
     
     @scala.inline
-    def deleteStrokeLinejoin: Self = this.set("strokeLinejoin", js.undefined)
+    def setWebkitMaskPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeMiterlimitFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("strokeMiterlimit", js.Any.fromFunction1(value))
+    def setWebkitMaskPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeMiterlimit(value: StringOrNumberOrCallback): Self = this.set("strokeMiterlimit", value.asInstanceOf[js.Any])
+    def setWebkitMaskPositionUndefined: Self = StObject.set(x, "WebkitMaskPosition", js.undefined)
     
     @scala.inline
-    def deleteStrokeMiterlimit: Self = this.set("strokeMiterlimit", js.undefined)
+    def setWebkitMaskPositionX(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskPositionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeOpacityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("strokeOpacity", js.Any.fromFunction1(value))
+    def setWebkitMaskPositionXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskPositionX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeOpacity(value: StringOrNumberOrCallback): Self = this.set("strokeOpacity", value.asInstanceOf[js.Any])
+    def setWebkitMaskPositionXUndefined: Self = StObject.set(x, "WebkitMaskPositionX", js.undefined)
     
     @scala.inline
-    def deleteStrokeOpacity: Self = this.set("strokeOpacity", js.undefined)
+    def setWebkitMaskPositionY(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskPositionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("strokeWidth", js.Any.fromFunction1(value))
+    def setWebkitMaskPositionYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskPositionY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStrokeWidth(value: StringOrNumberOrCallback): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    def setWebkitMaskPositionYUndefined: Self = StObject.set(x, "WebkitMaskPositionY", js.undefined)
     
     @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setWebkitMaskRepeat(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("tabSize", js.Any.fromFunction1(value))
+    def setWebkitMaskRepeatFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTabSize(value: StringOrNumberOrCallback): Self = this.set("tabSize", value.asInstanceOf[js.Any])
+    def setWebkitMaskRepeatUndefined: Self = StObject.set(x, "WebkitMaskRepeat", js.undefined)
     
     @scala.inline
-    def deleteTabSize: Self = this.set("tabSize", js.undefined)
+    def setWebkitMaskRepeatX(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskRepeatX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableLayoutFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("tableLayout", js.Any.fromFunction1(value))
+    def setWebkitMaskRepeatXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskRepeatX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTableLayout(value: StringOrNumberOrCallback): Self = this.set("tableLayout", value.asInstanceOf[js.Any])
+    def setWebkitMaskRepeatXUndefined: Self = StObject.set(x, "WebkitMaskRepeatX", js.undefined)
     
     @scala.inline
-    def deleteTableLayout: Self = this.set("tableLayout", js.undefined)
+    def setWebkitMaskRepeatY(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskRepeatY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textAlign", js.Any.fromFunction1(value))
+    def setWebkitMaskRepeatYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskRepeatY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextAlign(value: StringOrNumberOrCallback): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    def setWebkitMaskRepeatYUndefined: Self = StObject.set(x, "WebkitMaskRepeatY", js.undefined)
     
     @scala.inline
-    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    def setWebkitMaskSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaskSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAlignLastFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textAlignLast", js.Any.fromFunction1(value))
+    def setWebkitMaskSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaskSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextAlignLast(value: StringOrNumberOrCallback): Self = this.set("textAlignLast", value.asInstanceOf[js.Any])
+    def setWebkitMaskSizeUndefined: Self = StObject.set(x, "WebkitMaskSize", js.undefined)
     
     @scala.inline
-    def deleteTextAlignLast: Self = this.set("textAlignLast", js.undefined)
+    def setWebkitMaskUndefined: Self = StObject.set(x, "WebkitMask", js.undefined)
     
     @scala.inline
-    def setTextAnchorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textAnchor", js.Any.fromFunction1(value))
+    def setWebkitMaxInlineSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitMaxInlineSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAnchor(value: StringOrNumberOrCallback): Self = this.set("textAnchor", value.asInstanceOf[js.Any])
+    def setWebkitMaxInlineSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitMaxInlineSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextAnchor: Self = this.set("textAnchor", js.undefined)
+    def setWebkitMaxInlineSizeUndefined: Self = StObject.set(x, "WebkitMaxInlineSize", js.undefined)
     
     @scala.inline
-    def setTextCombineHorizontalFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textCombineHorizontal", js.Any.fromFunction1(value))
+    def setWebkitOrder(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextCombineHorizontal(value: StringOrNumberOrCallback): Self = this.set("textCombineHorizontal", value.asInstanceOf[js.Any])
+    def setWebkitOrderFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitOrder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextCombineHorizontal: Self = this.set("textCombineHorizontal", js.undefined)
+    def setWebkitOrderUndefined: Self = StObject.set(x, "WebkitOrder", js.undefined)
     
     @scala.inline
-    def setTextCombineUprightFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textCombineUpright", js.Any.fromFunction1(value))
+    def setWebkitOverflowScrolling(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitOverflowScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextCombineUpright(value: StringOrNumberOrCallback): Self = this.set("textCombineUpright", value.asInstanceOf[js.Any])
+    def setWebkitOverflowScrollingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitOverflowScrolling", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextCombineUpright: Self = this.set("textCombineUpright", js.undefined)
+    def setWebkitOverflowScrollingUndefined: Self = StObject.set(x, "WebkitOverflowScrolling", js.undefined)
     
     @scala.inline
-    def setTextDecorationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textDecoration", js.Any.fromFunction1(value))
+    def setWebkitPaddingEnd(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitPaddingEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecoration(value: StringOrNumberOrCallback): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
+    def setWebkitPaddingEndFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitPaddingEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
+    def setWebkitPaddingEndUndefined: Self = StObject.set(x, "WebkitPaddingEnd", js.undefined)
     
     @scala.inline
-    def setTextDecorationColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textDecorationColor", js.Any.fromFunction1(value))
+    def setWebkitPaddingStart(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitPaddingStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationColor(value: StringOrNumberOrCallback): Self = this.set("textDecorationColor", value.asInstanceOf[js.Any])
+    def setWebkitPaddingStartFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitPaddingStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextDecorationColor: Self = this.set("textDecorationColor", js.undefined)
+    def setWebkitPaddingStartUndefined: Self = StObject.set(x, "WebkitPaddingStart", js.undefined)
     
     @scala.inline
-    def setTextDecorationLineFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textDecorationLine", js.Any.fromFunction1(value))
+    def setWebkitPerspective(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitPerspective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationLine(value: StringOrNumberOrCallback): Self = this.set("textDecorationLine", value.asInstanceOf[js.Any])
+    def setWebkitPerspectiveFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitPerspective", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextDecorationLine: Self = this.set("textDecorationLine", js.undefined)
+    def setWebkitPerspectiveOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitPerspectiveOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationSkipFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textDecorationSkip", js.Any.fromFunction1(value))
+    def setWebkitPerspectiveOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitPerspectiveOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextDecorationSkip(value: StringOrNumberOrCallback): Self = this.set("textDecorationSkip", value.asInstanceOf[js.Any])
+    def setWebkitPerspectiveOriginUndefined: Self = StObject.set(x, "WebkitPerspectiveOrigin", js.undefined)
     
     @scala.inline
-    def deleteTextDecorationSkip: Self = this.set("textDecorationSkip", js.undefined)
+    def setWebkitPerspectiveUndefined: Self = StObject.set(x, "WebkitPerspective", js.undefined)
     
     @scala.inline
-    def setTextDecorationSkipInkFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textDecorationSkipInk", js.Any.fromFunction1(value))
+    def setWebkitPrintColorAdjust(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitPrintColorAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationSkipInk(value: StringOrNumberOrCallback): Self = this.set("textDecorationSkipInk", value.asInstanceOf[js.Any])
+    def setWebkitPrintColorAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitPrintColorAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextDecorationSkipInk: Self = this.set("textDecorationSkipInk", js.undefined)
+    def setWebkitPrintColorAdjustUndefined: Self = StObject.set(x, "WebkitPrintColorAdjust", js.undefined)
     
     @scala.inline
-    def setTextDecorationStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textDecorationStyle", js.Any.fromFunction1(value))
+    def setWebkitRubyPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitRubyPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationStyle(value: StringOrNumberOrCallback): Self = this.set("textDecorationStyle", value.asInstanceOf[js.Any])
+    def setWebkitRubyPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitRubyPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextDecorationStyle: Self = this.set("textDecorationStyle", js.undefined)
+    def setWebkitRubyPositionUndefined: Self = StObject.set(x, "WebkitRubyPosition", js.undefined)
     
     @scala.inline
-    def setTextDecorationThicknessFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textDecorationThickness", js.Any.fromFunction1(value))
+    def setWebkitScrollSnapPointsX(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitScrollSnapPointsX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationThickness(value: StringOrNumberOrCallback): Self = this.set("textDecorationThickness", value.asInstanceOf[js.Any])
+    def setWebkitScrollSnapPointsXFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitScrollSnapPointsX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextDecorationThickness: Self = this.set("textDecorationThickness", js.undefined)
+    def setWebkitScrollSnapPointsXUndefined: Self = StObject.set(x, "WebkitScrollSnapPointsX", js.undefined)
     
     @scala.inline
-    def setTextDecorationWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textDecorationWidth", js.Any.fromFunction1(value))
+    def setWebkitScrollSnapPointsY(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitScrollSnapPointsY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationWidth(value: StringOrNumberOrCallback): Self = this.set("textDecorationWidth", value.asInstanceOf[js.Any])
+    def setWebkitScrollSnapPointsYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitScrollSnapPointsY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextDecorationWidth: Self = this.set("textDecorationWidth", js.undefined)
+    def setWebkitScrollSnapPointsYUndefined: Self = StObject.set(x, "WebkitScrollSnapPointsY", js.undefined)
     
     @scala.inline
-    def setTextEmphasisFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textEmphasis", js.Any.fromFunction1(value))
+    def setWebkitScrollSnapType(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitScrollSnapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEmphasis(value: StringOrNumberOrCallback): Self = this.set("textEmphasis", value.asInstanceOf[js.Any])
+    def setWebkitScrollSnapTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitScrollSnapType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextEmphasis: Self = this.set("textEmphasis", js.undefined)
+    def setWebkitScrollSnapTypeUndefined: Self = StObject.set(x, "WebkitScrollSnapType", js.undefined)
     
     @scala.inline
-    def setTextEmphasisColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textEmphasisColor", js.Any.fromFunction1(value))
+    def setWebkitShapeMargin(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitShapeMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEmphasisColor(value: StringOrNumberOrCallback): Self = this.set("textEmphasisColor", value.asInstanceOf[js.Any])
+    def setWebkitShapeMarginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitShapeMargin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextEmphasisColor: Self = this.set("textEmphasisColor", js.undefined)
+    def setWebkitShapeMarginUndefined: Self = StObject.set(x, "WebkitShapeMargin", js.undefined)
     
     @scala.inline
-    def setTextEmphasisPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textEmphasisPosition", js.Any.fromFunction1(value))
+    def setWebkitTapHighlightColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTapHighlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEmphasisPosition(value: StringOrNumberOrCallback): Self = this.set("textEmphasisPosition", value.asInstanceOf[js.Any])
+    def setWebkitTapHighlightColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTapHighlightColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextEmphasisPosition: Self = this.set("textEmphasisPosition", js.undefined)
+    def setWebkitTapHighlightColorUndefined: Self = StObject.set(x, "WebkitTapHighlightColor", js.undefined)
     
     @scala.inline
-    def setTextEmphasisStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textEmphasisStyle", js.Any.fromFunction1(value))
+    def setWebkitTextCombine(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextCombine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEmphasisStyle(value: StringOrNumberOrCallback): Self = this.set("textEmphasisStyle", value.asInstanceOf[js.Any])
+    def setWebkitTextCombineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextCombine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextEmphasisStyle: Self = this.set("textEmphasisStyle", js.undefined)
+    def setWebkitTextCombineUndefined: Self = StObject.set(x, "WebkitTextCombine", js.undefined)
     
     @scala.inline
-    def setTextIndentFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textIndent", js.Any.fromFunction1(value))
+    def setWebkitTextDecorationColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextDecorationColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextIndent(value: StringOrNumberOrCallback): Self = this.set("textIndent", value.asInstanceOf[js.Any])
+    def setWebkitTextDecorationColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextDecorationColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextIndent: Self = this.set("textIndent", js.undefined)
+    def setWebkitTextDecorationColorUndefined: Self = StObject.set(x, "WebkitTextDecorationColor", js.undefined)
     
     @scala.inline
-    def setTextJustifyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textJustify", js.Any.fromFunction1(value))
+    def setWebkitTextDecorationLine(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextDecorationLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextJustify(value: StringOrNumberOrCallback): Self = this.set("textJustify", value.asInstanceOf[js.Any])
+    def setWebkitTextDecorationLineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextDecorationLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextJustify: Self = this.set("textJustify", js.undefined)
+    def setWebkitTextDecorationLineUndefined: Self = StObject.set(x, "WebkitTextDecorationLine", js.undefined)
     
     @scala.inline
-    def setTextOrientationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textOrientation", js.Any.fromFunction1(value))
+    def setWebkitTextDecorationSkip(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextDecorationSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextOrientation(value: StringOrNumberOrCallback): Self = this.set("textOrientation", value.asInstanceOf[js.Any])
+    def setWebkitTextDecorationSkipFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextDecorationSkip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextOrientation: Self = this.set("textOrientation", js.undefined)
+    def setWebkitTextDecorationSkipUndefined: Self = StObject.set(x, "WebkitTextDecorationSkip", js.undefined)
     
     @scala.inline
-    def setTextOverflowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textOverflow", js.Any.fromFunction1(value))
+    def setWebkitTextDecorationStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextDecorationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextOverflow(value: StringOrNumberOrCallback): Self = this.set("textOverflow", value.asInstanceOf[js.Any])
+    def setWebkitTextDecorationStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextDecorationStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextOverflow: Self = this.set("textOverflow", js.undefined)
+    def setWebkitTextDecorationStyleUndefined: Self = StObject.set(x, "WebkitTextDecorationStyle", js.undefined)
     
     @scala.inline
-    def setTextRenderingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textRendering", js.Any.fromFunction1(value))
+    def setWebkitTextEmphasis(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextEmphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextRendering(value: StringOrNumberOrCallback): Self = this.set("textRendering", value.asInstanceOf[js.Any])
+    def setWebkitTextEmphasisColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextEmphasisColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextRendering: Self = this.set("textRendering", js.undefined)
+    def setWebkitTextEmphasisColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextEmphasisColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextShadowFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textShadow", js.Any.fromFunction1(value))
+    def setWebkitTextEmphasisColorUndefined: Self = StObject.set(x, "WebkitTextEmphasisColor", js.undefined)
     
     @scala.inline
-    def setTextShadow(value: StringOrNumberOrCallback): Self = this.set("textShadow", value.asInstanceOf[js.Any])
+    def setWebkitTextEmphasisFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextEmphasis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextShadow: Self = this.set("textShadow", js.undefined)
+    def setWebkitTextEmphasisPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextEmphasisPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextSizeAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textSizeAdjust", js.Any.fromFunction1(value))
+    def setWebkitTextEmphasisPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextEmphasisPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextSizeAdjust(value: StringOrNumberOrCallback): Self = this.set("textSizeAdjust", value.asInstanceOf[js.Any])
+    def setWebkitTextEmphasisPositionUndefined: Self = StObject.set(x, "WebkitTextEmphasisPosition", js.undefined)
     
     @scala.inline
-    def deleteTextSizeAdjust: Self = this.set("textSizeAdjust", js.undefined)
+    def setWebkitTextEmphasisStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextEmphasisStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textTransform", js.Any.fromFunction1(value))
+    def setWebkitTextEmphasisStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextEmphasisStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextTransform(value: StringOrNumberOrCallback): Self = this.set("textTransform", value.asInstanceOf[js.Any])
+    def setWebkitTextEmphasisStyleUndefined: Self = StObject.set(x, "WebkitTextEmphasisStyle", js.undefined)
     
     @scala.inline
-    def deleteTextTransform: Self = this.set("textTransform", js.undefined)
+    def setWebkitTextEmphasisUndefined: Self = StObject.set(x, "WebkitTextEmphasis", js.undefined)
     
     @scala.inline
-    def setTextUnderlineOffsetFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textUnderlineOffset", js.Any.fromFunction1(value))
+    def setWebkitTextFillColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextUnderlineOffset(value: StringOrNumberOrCallback): Self = this.set("textUnderlineOffset", value.asInstanceOf[js.Any])
+    def setWebkitTextFillColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextFillColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextUnderlineOffset: Self = this.set("textUnderlineOffset", js.undefined)
+    def setWebkitTextFillColorUndefined: Self = StObject.set(x, "WebkitTextFillColor", js.undefined)
     
     @scala.inline
-    def setTextUnderlinePositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("textUnderlinePosition", js.Any.fromFunction1(value))
+    def setWebkitTextOrientation(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextUnderlinePosition(value: StringOrNumberOrCallback): Self = this.set("textUnderlinePosition", value.asInstanceOf[js.Any])
+    def setWebkitTextOrientationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextOrientation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTextUnderlinePosition: Self = this.set("textUnderlinePosition", js.undefined)
+    def setWebkitTextOrientationUndefined: Self = StObject.set(x, "WebkitTextOrientation", js.undefined)
     
     @scala.inline
-    def setTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("top", js.Any.fromFunction1(value))
+    def setWebkitTextSizeAdjust(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextSizeAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: StringOrNumberOrCallback): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setWebkitTextSizeAdjustFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextSizeAdjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setWebkitTextSizeAdjustUndefined: Self = StObject.set(x, "WebkitTextSizeAdjust", js.undefined)
     
     @scala.inline
-    def setTouchActionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("touchAction", js.Any.fromFunction1(value))
+    def setWebkitTextStroke(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchAction(value: StringOrNumberOrCallback): Self = this.set("touchAction", value.asInstanceOf[js.Any])
+    def setWebkitTextStrokeColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextStrokeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTouchAction: Self = this.set("touchAction", js.undefined)
+    def setWebkitTextStrokeColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextStrokeColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("transform", js.Any.fromFunction1(value))
+    def setWebkitTextStrokeColorUndefined: Self = StObject.set(x, "WebkitTextStrokeColor", js.undefined)
     
     @scala.inline
-    def setTransform(value: StringOrNumberOrCallback): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def setWebkitTextStrokeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextStroke", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setWebkitTextStrokeUndefined: Self = StObject.set(x, "WebkitTextStroke", js.undefined)
     
     @scala.inline
-    def setTransformBoxFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("transformBox", js.Any.fromFunction1(value))
+    def setWebkitTextStrokeWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextStrokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformBox(value: StringOrNumberOrCallback): Self = this.set("transformBox", value.asInstanceOf[js.Any])
+    def setWebkitTextStrokeWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextStrokeWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransformBox: Self = this.set("transformBox", js.undefined)
+    def setWebkitTextStrokeWidthUndefined: Self = StObject.set(x, "WebkitTextStrokeWidth", js.undefined)
     
     @scala.inline
-    def setTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("transformOrigin", js.Any.fromFunction1(value))
+    def setWebkitTextUnderlinePosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTextUnderlinePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformOrigin(value: StringOrNumberOrCallback): Self = this.set("transformOrigin", value.asInstanceOf[js.Any])
+    def setWebkitTextUnderlinePositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTextUnderlinePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransformOrigin: Self = this.set("transformOrigin", js.undefined)
+    def setWebkitTextUnderlinePositionUndefined: Self = StObject.set(x, "WebkitTextUnderlinePosition", js.undefined)
     
     @scala.inline
-    def setTransformStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("transformStyle", js.Any.fromFunction1(value))
+    def setWebkitTouchCallout(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTouchCallout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformStyle(value: StringOrNumberOrCallback): Self = this.set("transformStyle", value.asInstanceOf[js.Any])
+    def setWebkitTouchCalloutFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTouchCallout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransformStyle: Self = this.set("transformStyle", js.undefined)
+    def setWebkitTouchCalloutUndefined: Self = StObject.set(x, "WebkitTouchCallout", js.undefined)
     
     @scala.inline
-    def setTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("transition", js.Any.fromFunction1(value))
+    def setWebkitTransform(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: StringOrNumberOrCallback): Self = this.set("transition", value.asInstanceOf[js.Any])
+    def setWebkitTransformFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTransform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setWebkitTransformOrigin(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTransformOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("transitionDelay", js.Any.fromFunction1(value))
+    def setWebkitTransformOriginFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTransformOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransitionDelay(value: StringOrNumberOrCallback): Self = this.set("transitionDelay", value.asInstanceOf[js.Any])
+    def setWebkitTransformOriginUndefined: Self = StObject.set(x, "WebkitTransformOrigin", js.undefined)
     
     @scala.inline
-    def deleteTransitionDelay: Self = this.set("transitionDelay", js.undefined)
+    def setWebkitTransformStyle(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTransformStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("transitionDuration", js.Any.fromFunction1(value))
+    def setWebkitTransformStyleFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTransformStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransitionDuration(value: StringOrNumberOrCallback): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    def setWebkitTransformStyleUndefined: Self = StObject.set(x, "WebkitTransformStyle", js.undefined)
     
     @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    def setWebkitTransformUndefined: Self = StObject.set(x, "WebkitTransform", js.undefined)
     
     @scala.inline
-    def setTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("transitionProperty", js.Any.fromFunction1(value))
+    def setWebkitTransition(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionProperty(value: StringOrNumberOrCallback): Self = this.set("transitionProperty", value.asInstanceOf[js.Any])
+    def setWebkitTransitionDelay(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTransitionDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionProperty: Self = this.set("transitionProperty", js.undefined)
+    def setWebkitTransitionDelayFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTransitionDelay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("transitionTimingFunction", js.Any.fromFunction1(value))
+    def setWebkitTransitionDelayUndefined: Self = StObject.set(x, "WebkitTransitionDelay", js.undefined)
     
     @scala.inline
-    def setTransitionTimingFunction(value: StringOrNumberOrCallback): Self = this.set("transitionTimingFunction", value.asInstanceOf[js.Any])
+    def setWebkitTransitionDuration(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTransitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionTimingFunction: Self = this.set("transitionTimingFunction", js.undefined)
+    def setWebkitTransitionDurationFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTransitionDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTranslateFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("translate", js.Any.fromFunction1(value))
+    def setWebkitTransitionDurationUndefined: Self = StObject.set(x, "WebkitTransitionDuration", js.undefined)
     
     @scala.inline
-    def setTranslate(value: StringOrNumberOrCallback): Self = this.set("translate", value.asInstanceOf[js.Any])
+    def setWebkitTransitionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTransition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
+    def setWebkitTransitionProperty(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTransitionProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnicodeBidiFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("unicodeBidi", js.Any.fromFunction1(value))
+    def setWebkitTransitionPropertyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTransitionProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUnicodeBidi(value: StringOrNumberOrCallback): Self = this.set("unicodeBidi", value.asInstanceOf[js.Any])
+    def setWebkitTransitionPropertyUndefined: Self = StObject.set(x, "WebkitTransitionProperty", js.undefined)
     
     @scala.inline
-    def deleteUnicodeBidi: Self = this.set("unicodeBidi", js.undefined)
+    def setWebkitTransitionTimingFunction(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitTransitionTimingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("userSelect", js.Any.fromFunction1(value))
+    def setWebkitTransitionTimingFunctionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitTransitionTimingFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUserSelect(value: StringOrNumberOrCallback): Self = this.set("userSelect", value.asInstanceOf[js.Any])
+    def setWebkitTransitionTimingFunctionUndefined: Self = StObject.set(x, "WebkitTransitionTimingFunction", js.undefined)
     
     @scala.inline
-    def deleteUserSelect: Self = this.set("userSelect", js.undefined)
+    def setWebkitTransitionUndefined: Self = StObject.set(x, "WebkitTransition", js.undefined)
     
     @scala.inline
-    def setVectorEffectFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("vectorEffect", js.Any.fromFunction1(value))
+    def setWebkitUserModify(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitUserModify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVectorEffect(value: StringOrNumberOrCallback): Self = this.set("vectorEffect", value.asInstanceOf[js.Any])
+    def setWebkitUserModifyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitUserModify", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteVectorEffect: Self = this.set("vectorEffect", js.undefined)
+    def setWebkitUserModifyUndefined: Self = StObject.set(x, "WebkitUserModify", js.undefined)
     
     @scala.inline
-    def setVerticalAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("verticalAlign", js.Any.fromFunction1(value))
+    def setWebkitUserSelect(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitUserSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlign(value: StringOrNumberOrCallback): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    def setWebkitUserSelectFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitUserSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setWebkitUserSelectUndefined: Self = StObject.set(x, "WebkitUserSelect", js.undefined)
     
     @scala.inline
-    def setVisibilityFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("visibility", js.Any.fromFunction1(value))
+    def setWebkitWritingMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "WebkitWritingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibility(value: StringOrNumberOrCallback): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    def setWebkitWritingModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "WebkitWritingMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setWebkitWritingModeUndefined: Self = StObject.set(x, "WebkitWritingMode", js.undefined)
     
     @scala.inline
-    def setWhiteSpaceFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("whiteSpace", js.Any.fromFunction1(value))
+    def setWhiteSpace(value: StringOrNumberOrCallback): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhiteSpace(value: StringOrNumberOrCallback): Self = this.set("whiteSpace", value.asInstanceOf[js.Any])
+    def setWhiteSpaceFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "whiteSpace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWhiteSpace: Self = this.set("whiteSpace", js.undefined)
+    def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
     
     @scala.inline
-    def setWidowsFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("widows", js.Any.fromFunction1(value))
+    def setWidows(value: StringOrNumberOrCallback): Self = StObject.set(x, "widows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidows(value: StringOrNumberOrCallback): Self = this.set("widows", value.asInstanceOf[js.Any])
+    def setWidowsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "widows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWidows: Self = this.set("widows", js.undefined)
+    def setWidowsUndefined: Self = StObject.set(x, "widows", js.undefined)
     
     @scala.inline
-    def setWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("width", js.Any.fromFunction1(value))
+    def setWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: StringOrNumberOrCallback): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def setWillChangeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("willChange", js.Any.fromFunction1(value))
+    def setWillChange(value: StringOrNumberOrCallback): Self = StObject.set(x, "willChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWillChange(value: StringOrNumberOrCallback): Self = this.set("willChange", value.asInstanceOf[js.Any])
+    def setWillChangeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "willChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWillChange: Self = this.set("willChange", js.undefined)
+    def setWillChangeUndefined: Self = StObject.set(x, "willChange", js.undefined)
     
     @scala.inline
-    def setWordBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("wordBreak", js.Any.fromFunction1(value))
+    def setWordBreak(value: StringOrNumberOrCallback): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordBreak(value: StringOrNumberOrCallback): Self = this.set("wordBreak", value.asInstanceOf[js.Any])
+    def setWordBreakFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "wordBreak", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWordBreak: Self = this.set("wordBreak", js.undefined)
+    def setWordBreakUndefined: Self = StObject.set(x, "wordBreak", js.undefined)
     
     @scala.inline
-    def setWordSpacingFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("wordSpacing", js.Any.fromFunction1(value))
+    def setWordSpacing(value: StringOrNumberOrCallback): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordSpacing(value: StringOrNumberOrCallback): Self = this.set("wordSpacing", value.asInstanceOf[js.Any])
+    def setWordSpacingFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "wordSpacing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWordSpacing: Self = this.set("wordSpacing", js.undefined)
+    def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
     
     @scala.inline
-    def setWordWrapFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("wordWrap", js.Any.fromFunction1(value))
+    def setWordWrap(value: StringOrNumberOrCallback): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordWrap(value: StringOrNumberOrCallback): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
+    def setWordWrapFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "wordWrap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWordWrap: Self = this.set("wordWrap", js.undefined)
+    def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
     
     @scala.inline
-    def setWritingModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("writingMode", js.Any.fromFunction1(value))
+    def setWritingMode(value: StringOrNumberOrCallback): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWritingMode(value: StringOrNumberOrCallback): Self = this.set("writingMode", value.asInstanceOf[js.Any])
+    def setWritingModeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "writingMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWritingMode: Self = this.set("writingMode", js.undefined)
+    def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
     
     @scala.inline
-    def setZIndexFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("zIndex", js.Any.fromFunction1(value))
+    def setZIndex(value: StringOrNumberOrCallback): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZIndex(value: StringOrNumberOrCallback): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    def setZIndexFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "zIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
     @scala.inline
-    def setZoomFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("zoom", js.Any.fromFunction1(value))
+    def setZoom(value: StringOrNumberOrCallback): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoom(value: StringOrNumberOrCallback): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoomFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

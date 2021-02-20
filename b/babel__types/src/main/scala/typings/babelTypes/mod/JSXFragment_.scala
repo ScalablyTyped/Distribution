@@ -1,6 +1,7 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.JSXFragment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,37 +42,25 @@ object JSXFragment_ {
   }
   
   @scala.inline
-  implicit class JSXFragment_Ops[Self <: JSXFragment_] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChildrenVarargs(value: (JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_)*): Self = this.set("children", js.Array(value :_*))
+  implicit class JSXFragment_MutableBuilder[Self <: JSXFragment_] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setChildren(
       value: js.Array[
           JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
         ]
-    ): Self = this.set("children", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosingFragment(value: JSXClosingFragment_): Self = this.set("closingFragment", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: (JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setOpeningFragment(value: JSXOpeningFragment_): Self = this.set("openingFragment", value.asInstanceOf[js.Any])
+    def setClosingFragment(value: JSXClosingFragment_): Self = StObject.set(x, "closingFragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: JSXFragment): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setOpeningFragment(value: JSXOpeningFragment_): Self = StObject.set(x, "openingFragment", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: JSXFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

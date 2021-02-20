@@ -1,11 +1,12 @@
 package typings.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsonBodyParserOptions extends js.Object {
+trait JsonBodyParserOptions extends StObject {
   
   var bodyReader: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object JsonBodyParserOptions {
   }
   
   @scala.inline
-  implicit class JsonBodyParserOptionsOps[Self <: JsonBodyParserOptions] (val x: Self) extends AnyVal {
+  implicit class JsonBodyParserOptionsMutableBuilder[Self <: JsonBodyParserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyReader(value: Boolean): Self = StObject.set(x, "bodyReader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyReaderUndefined: Self = StObject.set(x, "bodyReader", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyReader(value: Boolean): Self = this.set("bodyReader", value.asInstanceOf[js.Any])
+    def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
     
     @scala.inline
-    def deleteBodyReader: Self = this.set("bodyReader", js.undefined)
+    def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapParams(value: Boolean): Self = this.set("mapParams", value.asInstanceOf[js.Any])
+    def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
     
     @scala.inline
-    def deleteMapParams: Self = this.set("mapParams", js.undefined)
+    def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => _): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOverrideParams(value: Boolean): Self = this.set("overrideParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideParams: Self = this.set("overrideParams", js.undefined)
-    
-    @scala.inline
-    def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => _): Self = this.set("reviver", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteReviver: Self = this.set("reviver", js.undefined)
+    def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
   }
 }

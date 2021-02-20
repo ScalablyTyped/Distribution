@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to information about a decoder or encoder. */
 @js.native
-trait BitmapCodecInformation extends js.Object {
+trait BitmapCodecInformation extends StObject {
   
   /** The unique identifier of the decoder or encoder. Methods like BitmapDecoder::CreateAsync and BitmapEncoder::CreateAsync use the codec identifier to determine which codec to create. */
   var codecId: String = js.native
@@ -35,30 +36,18 @@ object BitmapCodecInformation {
   }
   
   @scala.inline
-  implicit class BitmapCodecInformationOps[Self <: BitmapCodecInformation] (val x: Self) extends AnyVal {
+  implicit class BitmapCodecInformationMutableBuilder[Self <: BitmapCodecInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodecId(value: String): Self = StObject.set(x, "codecId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileExtensions(value: IVectorView[String]): Self = StObject.set(x, "fileExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecId(value: String): Self = this.set("codecId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileExtensions(value: IVectorView[String]): Self = this.set("fileExtensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMimeTypes(value: IVectorView[String]): Self = this.set("mimeTypes", value.asInstanceOf[js.Any])
+    def setMimeTypes(value: IVectorView[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
   }
 }

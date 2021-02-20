@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgColorPickerSplitButtonMethods extends js.Object {
+trait IgColorPickerSplitButtonMethods extends StObject {
   
   /**
     * Collapse the widget.
@@ -66,39 +67,27 @@ object IgColorPickerSplitButtonMethods {
   }
   
   @scala.inline
-  implicit class IgColorPickerSplitButtonMethodsOps[Self <: IgColorPickerSplitButtonMethods] (val x: Self) extends AnyVal {
+  implicit class IgColorPickerSplitButtonMethodsMutableBuilder[Self <: IgColorPickerSplitButtonMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapse(value: js.Object => js.Object): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => js.Object): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpand(value: js.Object => js.Object): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCollapse(value: js.Object => js.Object): Self = this.set("collapse", js.Any.fromFunction1(value))
+    def setSetColor(value: String => js.Object): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestroy(value: () => js.Object): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setSwitchToButton(value: js.Object => Unit): Self = StObject.set(x, "switchToButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpand(value: js.Object => js.Object): Self = this.set("expand", js.Any.fromFunction1(value))
+    def setToggle(value: js.Object => js.Object): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetColor(value: String => js.Object): Self = this.set("setColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSwitchToButton(value: js.Object => Unit): Self = this.set("switchToButton", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggle(value: js.Object => js.Object): Self = this.set("toggle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWidget(value: () => Unit): Self = this.set("widget", js.Any.fromFunction0(value))
+    def setWidget(value: () => Unit): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
   }
 }

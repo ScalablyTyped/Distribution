@@ -1,12 +1,13 @@
 package typings.vueTemplateCompiler.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SFCBlock extends js.Object {
+trait SFCBlock extends StObject {
   
   var attrs: Record[String, String] = js.native
   
@@ -36,63 +37,51 @@ object SFCBlock {
   }
   
   @scala.inline
-  implicit class SFCBlockOps[Self <: SFCBlock] (val x: Self) extends AnyVal {
+  implicit class SFCBlockMutableBuilder[Self <: SFCBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttrs(value: Record[String, String]): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setModule(value: String | Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
     
     @scala.inline
-    def setModule(value: String | Boolean): Self = this.set("module", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModule: Self = this.set("module", js.undefined)
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def setScoped(value: Boolean): Self = this.set("scoped", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScoped: Self = this.set("scoped", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

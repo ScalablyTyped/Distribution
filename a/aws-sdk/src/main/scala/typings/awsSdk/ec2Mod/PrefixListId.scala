@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrefixListId extends js.Object {
+trait PrefixListId extends StObject {
   
   /**
     * A description for the security group rule that references this prefix list ID. Constraints: Up to 255 characters in length. Allowed characters are a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=;{}!$*
@@ -26,30 +27,18 @@ object PrefixListId {
   }
   
   @scala.inline
-  implicit class PrefixListIdOps[Self <: PrefixListId] (val x: Self) extends AnyVal {
+  implicit class PrefixListIdMutableBuilder[Self <: PrefixListId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefixListId(value: String): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
-    
-    @scala.inline
-    def setPrefixListId(value: String): Self = this.set("PrefixListId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixListId: Self = this.set("PrefixListId", js.undefined)
+    def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
   }
 }

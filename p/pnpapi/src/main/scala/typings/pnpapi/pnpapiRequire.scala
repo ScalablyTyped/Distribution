@@ -1,5 +1,6 @@
 package typings.pnpapi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("pnpapi", JSImport.Namespace)
 @js.native
-object pnpapiRequire extends js.Object
+object pnpapiRequire extends StObject

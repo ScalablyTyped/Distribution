@@ -5,17 +5,20 @@ import typings.stripe.mod.IDataOptions
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.bitcoinReceivers.IBitcoinReceiver
 import typings.stripe.mod.bitcoinReceivers.IBitcoinReceiverCreationOptions
 import typings.stripe.mod.bitcoinReceivers.IBitcoinReceiverListOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.BitcoinReceivers")
 @js.native
-class BitcoinReceivers () extends StripeResource {
+class BitcoinReceivers protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def create(data: IBitcoinReceiverCreationOptions): js.Promise[IBitcoinReceiver] = js.native
   /**
@@ -30,7 +33,7 @@ class BitcoinReceivers () extends StripeResource {
   ): js.Promise[IBitcoinReceiver] = js.native
   def create(data: IBitcoinReceiverCreationOptions, response: IResponseFn[IBitcoinReceiver]): js.Promise[IBitcoinReceiver] = js.native
   
-   // TODO: Implement placeholder method
+  // TODO: Implement placeholder method
   def getMetadata(): Unit = js.native
   
   def list(data: IBitcoinReceiverListOptions): IListPromise[IBitcoinReceiver] = js.native

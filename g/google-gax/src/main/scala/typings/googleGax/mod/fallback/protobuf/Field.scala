@@ -25,9 +25,10 @@ import typings.protobufjs.mod.FieldDecorator
 import typings.protobufjs.mod.IField
 import typings.protobufjs.mod.Long
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "fallback.protobuf.Field")
 @js.native
@@ -45,6 +46,14 @@ class Field protected ()
   def this(name: String, id: Double, `type`: String) = this()
   def this(name: String, id: Double, `type`: String, rule: String) = this()
   def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.Any]) = this()
+  def this(name: String, id: Double, `type`: String, rule: js.UndefOr[scala.Nothing], extend: String) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: js.UndefOr[scala.Nothing],
+    extend: StringDictionary[js.Any]
+  ) = this()
   def this(name: String, id: Double, `type`: String, rule: String, extend: String) = this()
   def this(name: String, id: Double, `type`: String, rule: String, extend: StringDictionary[js.Any]) = this()
   def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.Any], extend: String) = this()
@@ -59,6 +68,38 @@ class Field protected ()
     name: String,
     id: Double,
     `type`: String,
+    rule: js.UndefOr[scala.Nothing],
+    extend: js.UndefOr[scala.Nothing],
+    options: StringDictionary[js.Any]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: js.UndefOr[scala.Nothing],
+    extend: String,
+    options: StringDictionary[js.Any]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: js.UndefOr[scala.Nothing],
+    extend: StringDictionary[js.Any],
+    options: StringDictionary[js.Any]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: String,
+    extend: js.UndefOr[scala.Nothing],
+    options: StringDictionary[js.Any]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
     rule: String,
     extend: String,
     options: StringDictionary[js.Any]
@@ -69,6 +110,14 @@ class Field protected ()
     `type`: String,
     rule: String,
     extend: StringDictionary[js.Any],
+    options: StringDictionary[js.Any]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: StringDictionary[js.Any],
+    extend: js.UndefOr[scala.Nothing],
     options: StringDictionary[js.Any]
   ) = this()
   def this(
@@ -88,11 +137,9 @@ class Field protected ()
     options: StringDictionary[js.Any]
   ) = this()
 }
-
 /* static members */
-@JSImport("google-gax", "fallback.protobuf.Field")
-@js.native
-object Field extends js.Object {
+object Field {
+  
   /**
     * Field decorator (TypeScript).
     * @param fieldId Field id
@@ -101,133 +148,16 @@ object Field extends js.Object {
     * @param [defaultValue] Default value
     * @returns Decorator function
     */
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object
-  ): FieldDecorator = js.native
-  def d(
+  @JSImport("google-gax", "fallback.protobuf.Field.d")
+  @js.native
+  def d[T /* <: Double | (js.Array[Boolean | Buffer | Double | Long | String | Uint8Array]) | Long | String | Boolean | Uint8Array | Buffer */](
     fieldId: Double,
     fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional
+    fieldRule: js.UndefOr[optional | required | repeated],
+    defaultValue: js.UndefOr[T]
   ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: String
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: optional,
-    defaultValue: js.Array[Boolean | Buffer | Double | Long | String | Uint8Array]
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: Boolean
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: Double
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: Long
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: Uint8Array
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: String
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: repeated,
-    defaultValue: js.Array[Boolean | Buffer | Double | Long | String | Uint8Array]
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: Boolean
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: Double
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: Long
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: Uint8Array
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: String
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: required,
-    defaultValue: js.Array[Boolean | Buffer | Double | Long | String | Uint8Array]
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: Boolean
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: Double
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: Long
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: Uint8Array
-  ): FieldDecorator = js.native
+  @JSImport("google-gax", "fallback.protobuf.Field.d")
+  @js.native
   def d[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String): FieldDecorator = js.native
   /**
     * Field decorator (TypeScript).
@@ -236,19 +166,28 @@ object Field extends js.Object {
     * @param [fieldRule="optional"] Field rule
     * @returns Decorator function
     */
+  @JSImport("google-gax", "fallback.protobuf.Field.d")
+  @js.native
   def d[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T]): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("google-gax", "fallback.protobuf.Field.d")
+  @js.native
   def d_optional[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: optional): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("google-gax", "fallback.protobuf.Field.d")
+  @js.native
   def d_optional[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: optional): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("google-gax", "fallback.protobuf.Field.d")
+  @js.native
   def d_repeated[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: repeated): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("google-gax", "fallback.protobuf.Field.d")
+  @js.native
   def d_repeated[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: repeated): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("google-gax", "fallback.protobuf.Field.d")
+  @js.native
   def d_required[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: required): FieldDecorator = js.native
-  @JSName("d")
+  @JSImport("google-gax", "fallback.protobuf.Field.d")
+  @js.native
   def d_required[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: required): FieldDecorator = js.native
+  
   /**
     * Constructs a field from a field descriptor.
     * @param name Field name
@@ -256,6 +195,7 @@ object Field extends js.Object {
     * @returns Created field
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("google-gax", "fallback.protobuf.Field.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IField): typings.protobufjs.mod.Field = js.native
 }
-

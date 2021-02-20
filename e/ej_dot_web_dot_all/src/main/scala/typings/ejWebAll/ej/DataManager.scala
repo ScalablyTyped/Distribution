@@ -2,12 +2,13 @@ package typings.ejWebAll.ej
 
 import typings.ejWebAll.JQueryDeferred
 import typings.ejWebAll.JQueryPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataManager extends js.Object {
+trait DataManager extends StObject {
   
   def executeLocal(): DataManager = js.native
   def executeLocal(query: Query): DataManager = js.native

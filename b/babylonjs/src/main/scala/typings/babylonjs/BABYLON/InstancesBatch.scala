@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesBatch extends js.Object {
+trait InstancesBatch extends StObject {
   
   var hardwareInstancedRendering: js.Array[Boolean] = js.native
   
@@ -29,39 +30,27 @@ object InstancesBatch {
   }
   
   @scala.inline
-  implicit class InstancesBatchOps[Self <: InstancesBatch] (val x: Self) extends AnyVal {
+  implicit class InstancesBatchMutableBuilder[Self <: InstancesBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHardwareInstancedRendering(value: js.Array[Boolean]): Self = StObject.set(x, "hardwareInstancedRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHardwareInstancedRenderingVarargs(value: Boolean*): Self = StObject.set(x, "hardwareInstancedRendering", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMustReturn(value: Boolean): Self = StObject.set(x, "mustReturn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardwareInstancedRenderingVarargs(value: Boolean*): Self = this.set("hardwareInstancedRendering", js.Array(value :_*))
+    def setRenderSelf(value: js.Array[Boolean]): Self = StObject.set(x, "renderSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardwareInstancedRendering(value: js.Array[Boolean]): Self = this.set("hardwareInstancedRendering", value.asInstanceOf[js.Any])
+    def setRenderSelfVarargs(value: Boolean*): Self = StObject.set(x, "renderSelf", js.Array(value :_*))
     
     @scala.inline
-    def setMustReturn(value: Boolean): Self = this.set("mustReturn", value.asInstanceOf[js.Any])
+    def setVisibleInstances(value: js.Array[Nullable[js.Array[InstancedMesh]]]): Self = StObject.set(x, "visibleInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderSelfVarargs(value: Boolean*): Self = this.set("renderSelf", js.Array(value :_*))
-    
-    @scala.inline
-    def setRenderSelf(value: js.Array[Boolean]): Self = this.set("renderSelf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleInstancesVarargs(value: Nullable[js.Array[InstancedMesh]]*): Self = this.set("visibleInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setVisibleInstances(value: js.Array[Nullable[js.Array[InstancedMesh]]]): Self = this.set("visibleInstances", value.asInstanceOf[js.Any])
+    def setVisibleInstancesVarargs(value: Nullable[js.Array[InstancedMesh]]*): Self = StObject.set(x, "visibleInstances", js.Array(value :_*))
   }
 }

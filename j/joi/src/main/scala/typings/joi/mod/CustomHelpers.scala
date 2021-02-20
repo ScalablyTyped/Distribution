@@ -1,11 +1,12 @@
 package typings.joi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomHelpers[V] extends js.Object {
+trait CustomHelpers[V] extends StObject {
   
   def error(code: String): ErrorReport = js.native
   def error(code: String, local: Context): ErrorReport = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAuthorizationTokenRequest extends js.Object {
+trait GetAuthorizationTokenRequest extends StObject {
   
   /**
     *  The name of the domain that is in scope for the generated authorization token. 
@@ -31,33 +32,21 @@ object GetAuthorizationTokenRequest {
   }
   
   @scala.inline
-  implicit class GetAuthorizationTokenRequestOps[Self <: GetAuthorizationTokenRequest] (val x: Self) extends AnyVal {
+  implicit class GetAuthorizationTokenRequestMutableBuilder[Self <: GetAuthorizationTokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
     @scala.inline
-    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setDurationSeconds(value: AuthorizationTokenDurationSeconds): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
-    
-    @scala.inline
-    def setDurationSeconds(value: AuthorizationTokenDurationSeconds): Self = this.set("durationSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
+    def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
   }
 }

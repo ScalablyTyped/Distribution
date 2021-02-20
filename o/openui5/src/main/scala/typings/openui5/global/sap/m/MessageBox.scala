@@ -1,12 +1,160 @@
 package typings.openui5.global.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.m.MessageBox")
-@js.native
-object MessageBox extends js.Object {
+object MessageBox {
+  
+  object Action {
+    
+    @JSGlobal("sap.m.MessageBox.Action")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Adds an "Abort" button to the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Action.ABORT")
+    @js.native
+    def ABORT: js.Any = js.native
+    @scala.inline
+    def ABORT_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABORT")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Adds a "Cancel" button to the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Action.CANCEL")
+    @js.native
+    def CANCEL: js.Any = js.native
+    @scala.inline
+    def CANCEL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCEL")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Adds a "Close" button to the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Action.CLOSE")
+    @js.native
+    def CLOSE: js.Any = js.native
+    @scala.inline
+    def CLOSE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Adds a "Delete" button to the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Action.DELETE")
+    @js.native
+    def DELETE: js.Any = js.native
+    @scala.inline
+    def DELETE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Adds an "Ignore" button to the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Action.IGNORE")
+    @js.native
+    def IGNORE: js.Any = js.native
+    @scala.inline
+    def IGNORE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Adds a "No" button to the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Action.NO")
+    @js.native
+    def NO: js.Any = js.native
+    @scala.inline
+    def NO_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Adds an "OK" button to the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Action.OK")
+    @js.native
+    def OK: js.Any = js.native
+    @scala.inline
+    def OK_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OK")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Adds a "Retry" button to the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Action.RETRY")
+    @js.native
+    def RETRY: js.Any = js.native
+    @scala.inline
+    def RETRY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RETRY")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Adds a "Yes" button to the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Action.YES")
+    @js.native
+    def YES: js.Any = js.native
+    @scala.inline
+    def YES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YES")(x.asInstanceOf[js.Any])
+  }
+  
+  object Icon {
+    
+    @JSGlobal("sap.m.MessageBox.Icon")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Shows the error icon in the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Icon.ERROR")
+    @js.native
+    def ERROR: js.Any = js.native
+    @scala.inline
+    def ERROR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Shows the information icon in the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Icon.INFORMATION")
+    @js.native
+    def INFORMATION: js.Any = js.native
+    @scala.inline
+    def INFORMATION_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFORMATION")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Shows no icon in the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Icon.NONE")
+    @js.native
+    def NONE: js.Any = js.native
+    @scala.inline
+    def NONE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Shows the question icon in the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Icon.QUESTION")
+    @js.native
+    def QUESTION: js.Any = js.native
+    @scala.inline
+    def QUESTION_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUESTION")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Shows the success icon in the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Icon.SUCCESS")
+    @js.native
+    def SUCCESS: js.Any = js.native
+    @scala.inline
+    def SUCCESS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Shows the warning icon in the message box.
+      */
+    @JSGlobal("sap.m.MessageBox.Icon.WARNING")
+    @js.native
+    def WARNING: js.Any = js.native
+    @scala.inline
+    def WARNING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
+  }
   
   /**
     * Displays an alert dialog with the given message and an OK button (no
@@ -25,7 +173,11 @@ object MessageBox extends js.Object {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
+  @JSGlobal("sap.m.MessageBox.alert")
+  @js.native
   def alert(vMessage: String): Unit = js.native
+  @JSGlobal("sap.m.MessageBox.alert")
+  @js.native
   def alert(vMessage: String, mOptions: js.Any): Unit = js.native
   
   /**
@@ -46,7 +198,11 @@ object MessageBox extends js.Object {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
+  @JSGlobal("sap.m.MessageBox.confirm")
+  @js.native
   def confirm(vMessage: String): Unit = js.native
+  @JSGlobal("sap.m.MessageBox.confirm")
+  @js.native
   def confirm(vMessage: String, mOptions: js.Any): Unit = js.native
   
   /**
@@ -65,7 +221,11 @@ object MessageBox extends js.Object {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
+  @JSGlobal("sap.m.MessageBox.error")
+  @js.native
   def error(vMessage: String): Unit = js.native
+  @JSGlobal("sap.m.MessageBox.error")
+  @js.native
   def error(vMessage: String, mOptions: js.Any): Unit = js.native
   
   /**
@@ -84,7 +244,11 @@ object MessageBox extends js.Object {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
+  @JSGlobal("sap.m.MessageBox.information")
+  @js.native
   def information(vMessage: String): Unit = js.native
+  @JSGlobal("sap.m.MessageBox.information")
+  @js.native
   def information(vMessage: String, mOptions: js.Any): Unit = js.native
   
   /**
@@ -108,7 +272,11 @@ object MessageBox extends js.Object {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
+  @JSGlobal("sap.m.MessageBox.show")
+  @js.native
   def show(vMessage: String): Unit = js.native
+  @JSGlobal("sap.m.MessageBox.show")
+  @js.native
   def show(vMessage: String, mOptions: js.Any): Unit = js.native
   
   /**
@@ -127,7 +295,11 @@ object MessageBox extends js.Object {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
+  @JSGlobal("sap.m.MessageBox.success")
+  @js.native
   def success(vMessage: String): Unit = js.native
+  @JSGlobal("sap.m.MessageBox.success")
+  @js.native
   def success(vMessage: String, mOptions: js.Any): Unit = js.native
   
   /**
@@ -146,89 +318,10 @@ object MessageBox extends js.Object {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
+  @JSGlobal("sap.m.MessageBox.warning")
+  @js.native
   def warning(vMessage: String): Unit = js.native
+  @JSGlobal("sap.m.MessageBox.warning")
+  @js.native
   def warning(vMessage: String, mOptions: js.Any): Unit = js.native
-  
-  @js.native
-  object Action extends js.Object {
-    
-    /**
-      * Adds an "Abort" button to the message box.
-      */
-    var ABORT: js.Any = js.native
-    
-    /**
-      * Adds a "Cancel" button to the message box.
-      */
-    var CANCEL: js.Any = js.native
-    
-    /**
-      * Adds a "Close" button to the message box.
-      */
-    var CLOSE: js.Any = js.native
-    
-    /**
-      * Adds a "Delete" button to the message box.
-      */
-    var DELETE: js.Any = js.native
-    
-    /**
-      * Adds an "Ignore" button to the message box.
-      */
-    var IGNORE: js.Any = js.native
-    
-    /**
-      * Adds a "No" button to the message box.
-      */
-    var NO: js.Any = js.native
-    
-    /**
-      * Adds an "OK" button to the message box.
-      */
-    var OK: js.Any = js.native
-    
-    /**
-      * Adds a "Retry" button to the message box.
-      */
-    var RETRY: js.Any = js.native
-    
-    /**
-      * Adds a "Yes" button to the message box.
-      */
-    var YES: js.Any = js.native
-  }
-  
-  @js.native
-  object Icon extends js.Object {
-    
-    /**
-      * Shows the error icon in the message box.
-      */
-    var ERROR: js.Any = js.native
-    
-    /**
-      * Shows the information icon in the message box.
-      */
-    var INFORMATION: js.Any = js.native
-    
-    /**
-      * Shows no icon in the message box.
-      */
-    var NONE: js.Any = js.native
-    
-    /**
-      * Shows the question icon in the message box.
-      */
-    var QUESTION: js.Any = js.native
-    
-    /**
-      * Shows the success icon in the message box.
-      */
-    var SUCCESS: js.Any = js.native
-    
-    /**
-      * Shows the warning icon in the message box.
-      */
-    var WARNING: js.Any = js.native
-  }
 }

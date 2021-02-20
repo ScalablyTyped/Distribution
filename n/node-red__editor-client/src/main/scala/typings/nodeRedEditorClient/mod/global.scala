@@ -19,16 +19,15 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.validate
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.value
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.width
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   @js.native
-  trait JQuery[TElement] extends js.Object {
+  trait JQuery[TElement] extends StObject {
     
     /**
       * Inits EditableList
@@ -39,7 +38,7 @@ object global extends js.Object {
     def editableList[T](opts: WidgetEditableListOptions[T]): this.type = js.native
     @JSName("editableList")
     var editableList_Original: WidgetEditableList = js.native
-     // tslint:disable-line:no-unnecessary-generics
+    // tslint:disable-line:no-unnecessary-generics
     /**
       * Adds an item to the end of the list.         *
       * @param value - An object that will be associated with the item in the list.
@@ -66,7 +65,7 @@ object global extends js.Object {
     def editableList_filter(action: filter): Double = js.native
     @JSName("editableList")
     def editableList_filter(action: filter, value: js.Function1[/* data */ js.Object, Boolean]): Double = js.native
-     // tslint:disable-line:unified-signatures
+    // tslint:disable-line:unified-signatures
     /**
       * Get item at index. Returns item dat or undefined.
       * @param value - Item index: 0..length-1
@@ -86,7 +85,7 @@ object global extends js.Object {
       */
     @JSName("editableList")
     def editableList_indexOf(action: indexOf, value: js.Object): Double = js.native
-     // tslint:disable-line:unified-signatures
+    // tslint:disable-line:unified-signatures
     /**
       * Gets an Array of all list items. Each item is the jQuery DOM element for the item.
       * Each element stores the original data for the item under property called data.
@@ -121,7 +120,7 @@ object global extends js.Object {
       */
     @JSName("editableList")
     def editableList_sort(action: sort, value: js.Function2[/* itemDataA */ js.Object, /* itemDataB */ js.Object, Double]): Unit = js.native
-     // tslint:disable-line:unified-signatures
+    // tslint:disable-line:unified-signatures
     /**
       * Sets the width of the editableList. This must be used in place of the standard jQuery.width() function as it ensures the component resizes properly.
       */
@@ -143,7 +142,7 @@ object global extends js.Object {
     def typedInput_hide(action: hide): Unit = js.native
     @JSName("typedInput")
     def typedInput_show(action: show): Unit = js.native
-     // tslint:disable-line:unified-signatures
+    // tslint:disable-line:unified-signatures
     /**
       * Gets the selected type of the typedInput.
       */

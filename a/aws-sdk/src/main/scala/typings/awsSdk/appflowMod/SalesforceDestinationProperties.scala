@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SalesforceDestinationProperties extends js.Object {
+trait SalesforceDestinationProperties extends StObject {
   
   /**
     *  The settings that determine how Amazon AppFlow handles an error when placing data in the Salesforce destination. For example, this setting would determine if the flow should fail after one insertion error, or continue and attempt to insert every record regardless of the initial failure. ErrorHandlingConfig is a part of the destination connector details. 
@@ -37,42 +38,30 @@ object SalesforceDestinationProperties {
   }
   
   @scala.inline
-  implicit class SalesforceDestinationPropertiesOps[Self <: SalesforceDestinationProperties] (val x: Self) extends AnyVal {
+  implicit class SalesforceDestinationPropertiesMutableBuilder[Self <: SalesforceDestinationProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorHandlingConfigUndefined: Self = StObject.set(x, "errorHandlingConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdFieldNames(value: IdFieldNameList): Self = StObject.set(x, "idFieldNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: Object): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setIdFieldNamesUndefined: Self = StObject.set(x, "idFieldNames", js.undefined)
     
     @scala.inline
-    def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = this.set("errorHandlingConfig", value.asInstanceOf[js.Any])
+    def setIdFieldNamesVarargs(value: Name*): Self = StObject.set(x, "idFieldNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteErrorHandlingConfig: Self = this.set("errorHandlingConfig", js.undefined)
+    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdFieldNamesVarargs(value: Name*): Self = this.set("idFieldNames", js.Array(value :_*))
+    def setWriteOperationType(value: WriteOperationType): Self = StObject.set(x, "writeOperationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdFieldNames(value: IdFieldNameList): Self = this.set("idFieldNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdFieldNames: Self = this.set("idFieldNames", js.undefined)
-    
-    @scala.inline
-    def setWriteOperationType(value: WriteOperationType): Self = this.set("writeOperationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteOperationType: Self = this.set("writeOperationType", js.undefined)
+    def setWriteOperationTypeUndefined: Self = StObject.set(x, "writeOperationType", js.undefined)
   }
 }

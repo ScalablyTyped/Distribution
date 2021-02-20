@@ -3,6 +3,7 @@ package typings.babylonjs.postProcessesIndexMod
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,14 +37,20 @@ class StandardRenderingPipeline protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/PostProcesses/index", "StandardRenderingPipeline")
-@js.native
-object StandardRenderingPipeline extends js.Object {
+object StandardRenderingPipeline {
+  
+  @JSImport("babylonjs/PostProcesses/index", "StandardRenderingPipeline")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Luminance steps
     */
-  var LuminanceSteps: Double = js.native
+  @JSImport("babylonjs/PostProcesses/index", "StandardRenderingPipeline.LuminanceSteps")
+  @js.native
+  def LuminanceSteps: Double = js.native
+  @scala.inline
+  def LuminanceSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LuminanceSteps")(x.asInstanceOf[js.Any])
   
   /**
     * Parse the serialized pipeline
@@ -52,5 +59,7 @@ object StandardRenderingPipeline extends js.Object {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
+  @JSImport("babylonjs/PostProcesses/index", "StandardRenderingPipeline.Parse")
+  @js.native
   def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.standardRenderingPipelineMod.StandardRenderingPipeline = js.native
 }

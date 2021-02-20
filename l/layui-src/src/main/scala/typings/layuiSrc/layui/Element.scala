@@ -5,12 +5,13 @@ import typings.layuiSrc.layuiSrcStrings.collapse
 import typings.layuiSrc.layuiSrcStrings.nav
 import typings.layuiSrc.layuiSrcStrings.progress
 import typings.layuiSrc.layuiSrcStrings.tab
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Element extends js.Object {
+trait Element extends StObject {
   
   def init(): Unit = js.native
   def init(`type`: js.UndefOr[scala.Nothing], filter: String): Unit = js.native

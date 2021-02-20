@@ -1,14 +1,14 @@
 package typings.twoJs.mod
 
-import typings.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("two.js", "Utils")
-@js.native
-object Utils extends js.Object {
+object Utils {
   
+  @JSImport("two.js", "Utils.Collection")
   @js.native
-  class Collection[T] () extends Array[T]
+  class Collection[T] ()
+    extends typings.std.Array[T]
 }

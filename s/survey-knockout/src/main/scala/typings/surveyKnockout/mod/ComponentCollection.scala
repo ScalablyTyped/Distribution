@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "ComponentCollection")
 @js.native
-class ComponentCollection () extends js.Object {
+class ComponentCollection () extends StObject {
   
   def add(json: js.Any): Unit = js.native
   
@@ -29,9 +30,15 @@ class ComponentCollection () extends js.Object {
   def onCreateCustom(name: String, questionJSON: ComponentQuestionJSON): QuestionCustomModel = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "ComponentCollection")
-@js.native
-object ComponentCollection extends js.Object {
+object ComponentCollection {
   
-  var Instance: ComponentCollection = js.native
+  @JSImport("survey-knockout", "ComponentCollection")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "ComponentCollection.Instance")
+  @js.native
+  def Instance: ComponentCollection = js.native
+  @scala.inline
+  def Instance_=(x: ComponentCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
 }

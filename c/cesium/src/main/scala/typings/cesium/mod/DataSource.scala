@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "DataSource")
 @js.native
-abstract class DataSource () extends js.Object {
+abstract class DataSource () extends StObject {
   
   var changedEvent: Event[js.Array[_]] = js.native
   

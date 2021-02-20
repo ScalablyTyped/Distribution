@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISceneLoaderPluginBase extends js.Object {
+trait ISceneLoaderPluginBase extends StObject {
   
   /**
     * The callback that returns true if the data can be directly loaded.
@@ -94,58 +95,46 @@ object ISceneLoaderPluginBase {
   }
   
   @scala.inline
-  implicit class ISceneLoaderPluginBaseOps[Self <: ISceneLoaderPluginBase] (val x: Self) extends AnyVal {
+  implicit class ISceneLoaderPluginBaseMutableBuilder[Self <: ISceneLoaderPluginBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanDirectLoad(value: /* data */ String => Boolean): Self = StObject.set(x, "canDirectLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanDirectLoadUndefined: Self = StObject.set(x, "canDirectLoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectLoad(value: (/* scene */ Scene, /* data */ String) => _): Self = StObject.set(x, "directLoad", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setExtensions(value: String | ISceneLoaderPluginExtensions): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setDirectLoadUndefined: Self = StObject.set(x, "directLoad", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setExtensions(value: String | ISceneLoaderPluginExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanDirectLoad(value: /* data */ String => Boolean): Self = this.set("canDirectLoad", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteCanDirectLoad: Self = this.set("canDirectLoad", js.undefined)
-    
-    @scala.inline
-    def setDirectLoad(value: (/* scene */ Scene, /* data */ String) => _): Self = this.set("directLoad", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteDirectLoad: Self = this.set("directLoad", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReadFile(
       value: (/* scene */ Scene, /* file */ File, /* onSuccess */ js.Function1[/* data */ js.Any, Unit], /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, _]], /* useArrayBuffer */ js.UndefOr[Boolean], /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]]) => IFileRequest
-    ): Self = this.set("readFile", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "readFile", js.Any.fromFunction6(value))
     
     @scala.inline
-    def deleteReadFile: Self = this.set("readFile", js.undefined)
+    def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
     
     @scala.inline
     def setRequestFile(
       value: (/* scene */ Scene, /* url */ String, /* onSuccess */ js.Function2[/* data */ js.Any, /* request */ js.UndefOr[WebRequest], Unit], /* onProgress */ js.UndefOr[js.Function1[/* ev */ ISceneLoaderProgressEvent, Unit]], /* useArrayBuffer */ js.UndefOr[Boolean], /* onError */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]]) => IFileRequest
-    ): Self = this.set("requestFile", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "requestFile", js.Any.fromFunction6(value))
     
     @scala.inline
-    def deleteRequestFile: Self = this.set("requestFile", js.undefined)
+    def setRequestFileUndefined: Self = StObject.set(x, "requestFile", js.undefined)
     
     @scala.inline
-    def setRewriteRootURL(value: (/* rootUrl */ String, /* responseURL */ js.UndefOr[String]) => String): Self = this.set("rewriteRootURL", js.Any.fromFunction2(value))
+    def setRewriteRootURL(value: (/* rootUrl */ String, /* responseURL */ js.UndefOr[String]) => String): Self = StObject.set(x, "rewriteRootURL", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRewriteRootURL: Self = this.set("rewriteRootURL", js.undefined)
+    def setRewriteRootURLUndefined: Self = StObject.set(x, "rewriteRootURL", js.undefined)
   }
 }

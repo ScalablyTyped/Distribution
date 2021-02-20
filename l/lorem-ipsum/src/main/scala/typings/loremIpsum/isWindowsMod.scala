@@ -1,12 +1,13 @@
 package typings.loremIpsum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lorem-ipsum/types/src/util/isWindows", JSImport.Namespace)
-@js.native
-object isWindowsMod extends js.Object {
+object isWindowsMod {
   
+  @JSImport("lorem-ipsum/types/src/util/isWindows", JSImport.Default)
+  @js.native
   def default(): Boolean = js.native
 }

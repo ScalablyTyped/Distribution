@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CostTypes extends js.Object {
+trait CostTypes extends StObject {
   
   /**
     * Specifies whether a budget includes credits. The default value is true.
@@ -71,84 +72,72 @@ object CostTypes {
   }
   
   @scala.inline
-  implicit class CostTypesOps[Self <: CostTypes] (val x: Self) extends AnyVal {
+  implicit class CostTypesMutableBuilder[Self <: CostTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeCredit(value: NullableBoolean): Self = StObject.set(x, "IncludeCredit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeCreditUndefined: Self = StObject.set(x, "IncludeCredit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeDiscount(value: NullableBoolean): Self = StObject.set(x, "IncludeDiscount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCredit(value: NullableBoolean): Self = this.set("IncludeCredit", value.asInstanceOf[js.Any])
+    def setIncludeDiscountUndefined: Self = StObject.set(x, "IncludeDiscount", js.undefined)
     
     @scala.inline
-    def deleteIncludeCredit: Self = this.set("IncludeCredit", js.undefined)
+    def setIncludeOtherSubscription(value: NullableBoolean): Self = StObject.set(x, "IncludeOtherSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDiscount(value: NullableBoolean): Self = this.set("IncludeDiscount", value.asInstanceOf[js.Any])
+    def setIncludeOtherSubscriptionUndefined: Self = StObject.set(x, "IncludeOtherSubscription", js.undefined)
     
     @scala.inline
-    def deleteIncludeDiscount: Self = this.set("IncludeDiscount", js.undefined)
+    def setIncludeRecurring(value: NullableBoolean): Self = StObject.set(x, "IncludeRecurring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOtherSubscription(value: NullableBoolean): Self = this.set("IncludeOtherSubscription", value.asInstanceOf[js.Any])
+    def setIncludeRecurringUndefined: Self = StObject.set(x, "IncludeRecurring", js.undefined)
     
     @scala.inline
-    def deleteIncludeOtherSubscription: Self = this.set("IncludeOtherSubscription", js.undefined)
+    def setIncludeRefund(value: NullableBoolean): Self = StObject.set(x, "IncludeRefund", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeRecurring(value: NullableBoolean): Self = this.set("IncludeRecurring", value.asInstanceOf[js.Any])
+    def setIncludeRefundUndefined: Self = StObject.set(x, "IncludeRefund", js.undefined)
     
     @scala.inline
-    def deleteIncludeRecurring: Self = this.set("IncludeRecurring", js.undefined)
+    def setIncludeSubscription(value: NullableBoolean): Self = StObject.set(x, "IncludeSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeRefund(value: NullableBoolean): Self = this.set("IncludeRefund", value.asInstanceOf[js.Any])
+    def setIncludeSubscriptionUndefined: Self = StObject.set(x, "IncludeSubscription", js.undefined)
     
     @scala.inline
-    def deleteIncludeRefund: Self = this.set("IncludeRefund", js.undefined)
+    def setIncludeSupport(value: NullableBoolean): Self = StObject.set(x, "IncludeSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSubscription(value: NullableBoolean): Self = this.set("IncludeSubscription", value.asInstanceOf[js.Any])
+    def setIncludeSupportUndefined: Self = StObject.set(x, "IncludeSupport", js.undefined)
     
     @scala.inline
-    def deleteIncludeSubscription: Self = this.set("IncludeSubscription", js.undefined)
+    def setIncludeTax(value: NullableBoolean): Self = StObject.set(x, "IncludeTax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSupport(value: NullableBoolean): Self = this.set("IncludeSupport", value.asInstanceOf[js.Any])
+    def setIncludeTaxUndefined: Self = StObject.set(x, "IncludeTax", js.undefined)
     
     @scala.inline
-    def deleteIncludeSupport: Self = this.set("IncludeSupport", js.undefined)
+    def setIncludeUpfront(value: NullableBoolean): Self = StObject.set(x, "IncludeUpfront", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTax(value: NullableBoolean): Self = this.set("IncludeTax", value.asInstanceOf[js.Any])
+    def setIncludeUpfrontUndefined: Self = StObject.set(x, "IncludeUpfront", js.undefined)
     
     @scala.inline
-    def deleteIncludeTax: Self = this.set("IncludeTax", js.undefined)
+    def setUseAmortized(value: NullableBoolean): Self = StObject.set(x, "UseAmortized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeUpfront(value: NullableBoolean): Self = this.set("IncludeUpfront", value.asInstanceOf[js.Any])
+    def setUseAmortizedUndefined: Self = StObject.set(x, "UseAmortized", js.undefined)
     
     @scala.inline
-    def deleteIncludeUpfront: Self = this.set("IncludeUpfront", js.undefined)
+    def setUseBlended(value: NullableBoolean): Self = StObject.set(x, "UseBlended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseAmortized(value: NullableBoolean): Self = this.set("UseAmortized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAmortized: Self = this.set("UseAmortized", js.undefined)
-    
-    @scala.inline
-    def setUseBlended(value: NullableBoolean): Self = this.set("UseBlended", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBlended: Self = this.set("UseBlended", js.undefined)
+    def setUseBlendedUndefined: Self = StObject.set(x, "UseBlended", js.undefined)
   }
 }

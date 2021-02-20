@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResourceConfigHistoryRequest extends js.Object {
+trait GetResourceConfigHistoryRequest extends StObject {
   
   /**
     * The chronological order for configuration items listed. By default, the results are listed in reverse chronological order.
@@ -51,54 +52,42 @@ object GetResourceConfigHistoryRequest {
   }
   
   @scala.inline
-  implicit class GetResourceConfigHistoryRequestOps[Self <: GetResourceConfigHistoryRequest] (val x: Self) extends AnyVal {
+  implicit class GetResourceConfigHistoryRequestMutableBuilder[Self <: GetResourceConfigHistoryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChronologicalOrder(value: ChronologicalOrder): Self = StObject.set(x, "chronologicalOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChronologicalOrderUndefined: Self = StObject.set(x, "chronologicalOrder", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEarlierTime(value: EarlierTime): Self = StObject.set(x, "earlierTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ResourceId): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setEarlierTimeUndefined: Self = StObject.set(x, "earlierTime", js.undefined)
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setLaterTime(value: LaterTime): Self = StObject.set(x, "laterTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChronologicalOrder(value: ChronologicalOrder): Self = this.set("chronologicalOrder", value.asInstanceOf[js.Any])
+    def setLaterTimeUndefined: Self = StObject.set(x, "laterTime", js.undefined)
     
     @scala.inline
-    def deleteChronologicalOrder: Self = this.set("chronologicalOrder", js.undefined)
+    def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEarlierTime(value: EarlierTime): Self = this.set("earlierTime", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteEarlierTime: Self = this.set("earlierTime", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaterTime(value: LaterTime): Self = this.set("laterTime", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteLaterTime: Self = this.set("laterTime", js.undefined)
+    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Limit): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

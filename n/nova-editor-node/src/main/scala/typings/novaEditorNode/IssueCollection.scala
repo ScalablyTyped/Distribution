@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/issue-collection/
 @js.native
-trait IssueCollection extends js.Object {
+trait IssueCollection extends StObject {
   
   def append(uri: String, issues: js.Array[Issue]): Unit = js.native
   
@@ -42,42 +43,30 @@ object IssueCollection {
   }
   
   @scala.inline
-  implicit class IssueCollectionOps[Self <: IssueCollection] (val x: Self) extends AnyVal {
+  implicit class IssueCollectionMutableBuilder[Self <: IssueCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: (String, js.Array[Issue]) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAppend(value: (String, js.Array[Issue]) => Unit): Self = this.set("append", js.Any.fromFunction2(value))
+    def setGet(value: String => js.Array[Issue]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: String => js.Array[Issue]): Self = this.set("get", js.Any.fromFunction1(value))
+    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHas(value: String => Boolean): Self = this.set("has", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemove(value: String => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet(value: (String, js.Array[Issue]) => Unit): Self = this.set("set", js.Any.fromFunction2(value))
+    def setSet(value: (String, js.Array[Issue]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

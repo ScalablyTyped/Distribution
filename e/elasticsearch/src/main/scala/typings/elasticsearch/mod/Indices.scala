@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticsearch", "Indices")
 @js.native
-class Indices () extends js.Object {
+class Indices () extends StObject {
   
   def analyze(params: IndicesAnalyzeParams): js.Promise[_] = js.native
   def analyze(

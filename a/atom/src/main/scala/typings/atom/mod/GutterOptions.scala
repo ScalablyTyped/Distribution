@@ -2,12 +2,13 @@ package typings.atom.mod
 
 import typings.atom.atomStrings.`line-number`
 import typings.atom.atomStrings.decorated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GutterOptions extends js.Object {
+trait GutterOptions extends StObject {
   
   /** String added to the CSS classnames of the gutter's root DOM element. */
   var `class`: js.UndefOr[String] = js.native
@@ -64,63 +65,51 @@ object GutterOptions {
   }
   
   @scala.inline
-  implicit class GutterOptionsOps[Self <: GutterOptions] (val x: Self) extends AnyVal {
+  implicit class GutterOptionsMutableBuilder[Self <: GutterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelFn(value: /* lineData */ LineDataExtended => String): Self = StObject.set(x, "labelFn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLabelFnUndefined: Self = StObject.set(x, "labelFn", js.undefined)
     
     @scala.inline
-    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setOnMouseDown(value: /* lineData */ LineData => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabelFn(value: /* lineData */ LineDataExtended => String): Self = this.set("labelFn", js.Any.fromFunction1(value))
+    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def deleteLabelFn: Self = this.set("labelFn", js.undefined)
+    def setOnMouseMove(value: /* lineData */ LineData => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseDown(value: /* lineData */ LineData => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     @scala.inline
-    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseMove(value: /* lineData */ LineData => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    def setType(value: decorated | `line-number`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: decorated | `line-number`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

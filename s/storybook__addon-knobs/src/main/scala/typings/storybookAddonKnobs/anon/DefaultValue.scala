@@ -2,12 +2,13 @@ package typings.storybookAddonKnobs.anon
 
 import typings.storybookAddonKnobs.buttonMod.ButtonTypeOnClickProp
 import typings.storybookAddonKnobs.storybookAddonKnobsBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultValue extends js.Object {
+trait DefaultValue extends StObject {
   
   var callback: ButtonTypeOnClickProp with js.UndefOr[js.Function0[_]] = js.native
   
@@ -47,63 +48,51 @@ object DefaultValue {
   }
   
   @scala.inline
-  implicit class DefaultValueOps[Self <: DefaultValue] (val x: Self) extends AnyVal {
+  implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: ButtonTypeOnClickProp with js.UndefOr[js.Function0[_]]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setCallback(value: ButtonTypeOnClickProp with js.UndefOr[js.Function0[_]]): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setDisableDebounce(value: Boolean): Self = StObject.set(x, "disableDebounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideLabel(value: `true` with js.UndefOr[Boolean]): Self = this.set("hideLabel", value.asInstanceOf[js.Any])
+    def setDisableDebounceUndefined: Self = StObject.set(x, "disableDebounce", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setDisableForceUpdate(value: Boolean): Self = StObject.set(x, "disableForceUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDisableForceUpdateUndefined: Self = StObject.set(x, "disableForceUpdate", js.undefined)
     
     @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setHideLabel(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDebounce(value: Boolean): Self = this.set("disableDebounce", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableDebounce: Self = this.set("disableDebounce", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableForceUpdate(value: Boolean): Self = this.set("disableForceUpdate", value.asInstanceOf[js.Any])
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableForceUpdate: Self = this.set("disableForceUpdate", js.undefined)
+    def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupId: Self = this.set("groupId", js.undefined)
-    
-    @scala.inline
-    def setUsed(value: Boolean): Self = this.set("used", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsed: Self = this.set("used", js.undefined)
+    def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
   }
 }

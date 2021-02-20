@@ -1,5 +1,6 @@
 package typings.officeJs.global.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Office.Index")
 @js.native
-object Index extends js.Object {
+object Index extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeJs.Office.Index with Double] = js.native

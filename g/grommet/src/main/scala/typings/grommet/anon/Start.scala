@@ -2,6 +2,7 @@ package typings.grommet.anon
 
 import typings.grommet.utilsMod.EdgeSizeType
 import typings.grommet.utilsMod._EdgeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,66 +35,54 @@ object Start {
   }
   
   @scala.inline
-  implicit class StartOps[Self <: Start] (val x: Self) extends AnyVal {
+  implicit class StartMutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottom(value: EdgeSizeType | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: EdgeSizeType | String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: EdgeSizeType | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setHorizontal(value: EdgeSizeType | String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: EdgeSizeType | String): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setLeft(value: EdgeSizeType | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontal(value: EdgeSizeType | String): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setRight(value: EdgeSizeType | String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: EdgeSizeType | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setStart(value: EdgeSizeType | String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: EdgeSizeType | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setTop(value: EdgeSizeType | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: EdgeSizeType | String): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setVertical(value: EdgeSizeType | String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: EdgeSizeType | String): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: EdgeSizeType | String): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

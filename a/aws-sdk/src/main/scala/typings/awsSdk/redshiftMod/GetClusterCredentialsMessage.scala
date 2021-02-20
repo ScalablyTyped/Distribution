@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetClusterCredentialsMessage extends js.Object {
+trait GetClusterCredentialsMessage extends StObject {
   
   /**
     * Create a database user with the name specified for the user named in DbUser if one does not exist.
@@ -46,51 +47,39 @@ object GetClusterCredentialsMessage {
   }
   
   @scala.inline
-  implicit class GetClusterCredentialsMessageOps[Self <: GetClusterCredentialsMessage] (val x: Self) extends AnyVal {
+  implicit class GetClusterCredentialsMessageMutableBuilder[Self <: GetClusterCredentialsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCreate(value: BooleanOptional): Self = StObject.set(x, "AutoCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCreateUndefined: Self = StObject.set(x, "AutoCreate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setDbGroups(value: DbGroupList): Self = StObject.set(x, "DbGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbUser(value: String): Self = this.set("DbUser", value.asInstanceOf[js.Any])
+    def setDbGroupsUndefined: Self = StObject.set(x, "DbGroups", js.undefined)
     
     @scala.inline
-    def setAutoCreate(value: BooleanOptional): Self = this.set("AutoCreate", value.asInstanceOf[js.Any])
+    def setDbGroupsVarargs(value: String*): Self = StObject.set(x, "DbGroups", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoCreate: Self = this.set("AutoCreate", js.undefined)
+    def setDbName(value: String): Self = StObject.set(x, "DbName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbGroupsVarargs(value: String*): Self = this.set("DbGroups", js.Array(value :_*))
+    def setDbNameUndefined: Self = StObject.set(x, "DbName", js.undefined)
     
     @scala.inline
-    def setDbGroups(value: DbGroupList): Self = this.set("DbGroups", value.asInstanceOf[js.Any])
+    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDbGroups: Self = this.set("DbGroups", js.undefined)
+    def setDurationSeconds(value: IntegerOptional): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbName(value: String): Self = this.set("DbName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDbName: Self = this.set("DbName", js.undefined)
-    
-    @scala.inline
-    def setDurationSeconds(value: IntegerOptional): Self = this.set("DurationSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDurationSeconds: Self = this.set("DurationSeconds", js.undefined)
+    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
   }
 }

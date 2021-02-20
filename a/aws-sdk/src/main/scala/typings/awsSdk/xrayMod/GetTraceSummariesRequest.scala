@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTraceSummariesRequest extends js.Object {
+trait GetTraceSummariesRequest extends StObject {
   
   /**
     * The end of the time frame for which to retrieve traces.
@@ -51,54 +52,42 @@ object GetTraceSummariesRequest {
   }
   
   @scala.inline
-  implicit class GetTraceSummariesRequestOps[Self <: GetTraceSummariesRequest] (val x: Self) extends AnyVal {
+  implicit class GetTraceSummariesRequestMutableBuilder[Self <: GetTraceSummariesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterExpression(value: FilterExpression): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setFilterExpression(value: FilterExpression): Self = this.set("FilterExpression", value.asInstanceOf[js.Any])
+    def setSampling(value: NullableBoolean): Self = StObject.set(x, "Sampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterExpression: Self = this.set("FilterExpression", js.undefined)
+    def setSamplingStrategy(value: SamplingStrategy): Self = StObject.set(x, "SamplingStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSamplingStrategyUndefined: Self = StObject.set(x, "SamplingStrategy", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSamplingUndefined: Self = StObject.set(x, "Sampling", js.undefined)
     
     @scala.inline
-    def setSampling(value: NullableBoolean): Self = this.set("Sampling", value.asInstanceOf[js.Any])
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSampling: Self = this.set("Sampling", js.undefined)
+    def setTimeRangeType(value: TimeRangeType): Self = StObject.set(x, "TimeRangeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplingStrategy(value: SamplingStrategy): Self = this.set("SamplingStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSamplingStrategy: Self = this.set("SamplingStrategy", js.undefined)
-    
-    @scala.inline
-    def setTimeRangeType(value: TimeRangeType): Self = this.set("TimeRangeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeRangeType: Self = this.set("TimeRangeType", js.undefined)
+    def setTimeRangeTypeUndefined: Self = StObject.set(x, "TimeRangeType", js.undefined)
   }
 }

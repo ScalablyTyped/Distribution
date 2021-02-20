@@ -3,6 +3,7 @@ package typings.ndnJs.mod
 import typings.ndnJs.nameMod.Name.Component
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +17,9 @@ class Name ()
   def this(name: typings.ndnJs.nameMod.Name) = this()
 }
 /* static members */
-@JSImport("ndn-js", "Name")
-@js.native
-object Name extends js.Object {
+object Name {
   
-  def fromEscapedString(uri: String): typings.ndnJs.nameMod.Name = js.native
-  
+  @JSImport("ndn-js", "Name.Component")
   @js.native
   class Component ()
     extends typings.ndnJs.nameMod.Name.Component {
@@ -58,29 +56,64 @@ object Name extends js.Object {
     def this(value: Uint8Array, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: Uint8Array, `type`: typings.ndnJs.nameMod.ComponentType, otherTypeCode: Double) = this()
   }
-  /* static members */
-  @js.native
-  object Component extends js.Object {
+  object Component {
     
+    /* static member */
+    @JSImport("ndn-js", "Name.Component.fromImplicitSha256Digest")
+    @js.native
     def fromImplicitSha256Digest(digest: typings.ndnJs.blobMod.Blob): typings.ndnJs.nameMod.Name.Component = js.native
     
+    /* static member */
+    @JSImport("ndn-js", "Name.Component.fromNumber")
+    @js.native
     def fromNumber(number: Double): typings.ndnJs.nameMod.Name.Component = js.native
+    @JSImport("ndn-js", "Name.Component.fromNumber")
+    @js.native
     def fromNumber(number: Double, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): typings.ndnJs.nameMod.Name.Component = js.native
+    @JSImport("ndn-js", "Name.Component.fromNumber")
+    @js.native
     def fromNumber(number: Double, `type`: typings.ndnJs.nameMod.ComponentType): typings.ndnJs.nameMod.Name.Component = js.native
+    @JSImport("ndn-js", "Name.Component.fromNumber")
+    @js.native
     def fromNumber(number: Double, `type`: typings.ndnJs.nameMod.ComponentType, otherTypeCode: Double): typings.ndnJs.nameMod.Name.Component = js.native
     
+    /* static member */
+    @JSImport("ndn-js", "Name.Component.fromNumberWithMarker")
+    @js.native
     def fromNumberWithMarker(number: Double, marker: Double): typings.ndnJs.nameMod.Name.Component = js.native
     
+    /* static member */
+    @JSImport("ndn-js", "Name.Component.fromParametersSha256Digest")
+    @js.native
     def fromParametersSha256Digest(digest: typings.ndnJs.blobMod.Blob): typings.ndnJs.nameMod.Name.Component = js.native
     
+    /* static member */
+    @JSImport("ndn-js", "Name.Component.fromSegment")
+    @js.native
     def fromSegment(segment: Double): typings.ndnJs.nameMod.Name.Component = js.native
     
+    /* static member */
+    @JSImport("ndn-js", "Name.Component.fromSegmentOffset")
+    @js.native
     def fromSegmentOffset(segmentOffset: Double): typings.ndnJs.nameMod.Name.Component = js.native
     
+    /* static member */
+    @JSImport("ndn-js", "Name.Component.fromSequenceNumber")
+    @js.native
     def fromSequenceNumber(sequenceNumber: Double): typings.ndnJs.nameMod.Name.Component = js.native
     
+    /* static member */
+    @JSImport("ndn-js", "Name.Component.fromTimestamp")
+    @js.native
     def fromTimestamp(timestamp: Double): typings.ndnJs.nameMod.Name.Component = js.native
     
+    /* static member */
+    @JSImport("ndn-js", "Name.Component.fromVersion")
+    @js.native
     def fromVersion(version: Double): typings.ndnJs.nameMod.Name.Component = js.native
   }
+  
+  @JSImport("ndn-js", "Name.fromEscapedString")
+  @js.native
+  def fromEscapedString(uri: String): typings.ndnJs.nameMod.Name = js.native
 }

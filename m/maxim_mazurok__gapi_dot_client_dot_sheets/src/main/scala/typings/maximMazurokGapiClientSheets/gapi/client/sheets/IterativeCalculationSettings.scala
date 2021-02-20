@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IterativeCalculationSettings extends js.Object {
+trait IterativeCalculationSettings extends StObject {
   
   /** When iterative calculation is enabled and successive results differ by less than this threshold value, the calculation rounds stop. */
   var convergenceThreshold: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object IterativeCalculationSettings {
   }
   
   @scala.inline
-  implicit class IterativeCalculationSettingsOps[Self <: IterativeCalculationSettings] (val x: Self) extends AnyVal {
+  implicit class IterativeCalculationSettingsMutableBuilder[Self <: IterativeCalculationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvergenceThreshold(value: Double): Self = StObject.set(x, "convergenceThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvergenceThresholdUndefined: Self = StObject.set(x, "convergenceThreshold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvergenceThreshold(value: Double): Self = this.set("convergenceThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConvergenceThreshold: Self = this.set("convergenceThreshold", js.undefined)
-    
-    @scala.inline
-    def setMaxIterations(value: Double): Self = this.set("maxIterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxIterations: Self = this.set("maxIterations", js.undefined)
+    def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
   }
 }

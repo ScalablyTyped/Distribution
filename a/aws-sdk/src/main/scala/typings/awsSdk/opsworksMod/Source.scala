@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Source extends js.Object {
+trait Source extends StObject {
   
   /**
     * When included in a request, the parameter depends on the repository type.   For Amazon S3 bundles, set Password to the appropriate IAM secret access key.   For HTTP bundles and Subversion repositories, set Password to the password.   For more information on how to safely handle IAM credentials, see https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html. In responses, AWS OpsWorks Stacks returns *****FILTERED***** instead of the actual value.
@@ -46,54 +47,42 @@ object Source {
   }
   
   @scala.inline
-  implicit class SourceOps[Self <: Source] (val x: Self) extends AnyVal {
+  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevision(value: String): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setRevisionUndefined: Self = StObject.set(x, "Revision", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
+    def setSshKey(value: String): Self = StObject.set(x, "SshKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: String): Self = this.set("Revision", value.asInstanceOf[js.Any])
+    def setSshKeyUndefined: Self = StObject.set(x, "SshKey", js.undefined)
     
     @scala.inline
-    def deleteRevision: Self = this.set("Revision", js.undefined)
+    def setType(value: SourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshKey(value: String): Self = this.set("SshKey", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteSshKey: Self = this.set("SshKey", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: SourceType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCompute.anon.FieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegion
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.RegionSslCertificate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionSslCertificatesResource extends js.Object {
+trait RegionSslCertificatesResource extends StObject {
   
   /** Deletes the specified SslCertificate resource in the region. */
   def delete(): Request[Operation] = js.native

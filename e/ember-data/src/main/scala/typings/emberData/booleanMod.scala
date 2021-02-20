@@ -1,13 +1,12 @@
 package typings.emberData
 
-import typings.emberData.mod.DS.Transform
+import typings.emberData.mod.default.BooleanTransform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember-data/transforms/boolean", JSImport.Namespace)
-@js.native
-object booleanMod extends js.Object {
+object booleanMod {
   
   /**
     * The `DS.BooleanTransform` class is used to serialize and deserialize
@@ -15,6 +14,7 @@ object booleanMod extends js.Object {
     * used when `boolean` is passed as the type parameter to the
     * [DS.attr](../../data#method_attr) function.
     */
+  @JSImport("ember-data/transforms/boolean", JSImport.Default)
   @js.native
-  class default () extends Transform
+  class default () extends BooleanTransform
 }

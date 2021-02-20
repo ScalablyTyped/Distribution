@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecisionTask extends js.Object {
+trait DecisionTask extends StObject {
   
   /**
     * A paginated list of history events of the workflow execution. The decider uses this during the processing of the decision task.
@@ -57,48 +58,36 @@ object DecisionTask {
   }
   
   @scala.inline
-  implicit class DecisionTaskOps[Self <: DecisionTask] (val x: Self) extends AnyVal {
+  implicit class DecisionTaskMutableBuilder[Self <: DecisionTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: HistoryEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventsVarargs(value: HistoryEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsVarargs(value: HistoryEvent*): Self = this.set("events", js.Array(value :_*))
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def setEvents(value: HistoryEventList): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setPreviousStartedEventId(value: EventId): Self = StObject.set(x, "previousStartedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
+    def setPreviousStartedEventIdUndefined: Self = StObject.set(x, "previousStartedEventId", js.undefined)
     
     @scala.inline
-    def setTaskToken(value: TaskToken): Self = this.set("taskToken", value.asInstanceOf[js.Any])
+    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkflowExecution(value: WorkflowExecution): Self = this.set("workflowExecution", value.asInstanceOf[js.Any])
+    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = this.set("workflowType", value.asInstanceOf[js.Any])
+    def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setPreviousStartedEventId(value: EventId): Self = this.set("previousStartedEventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousStartedEventId: Self = this.set("previousStartedEventId", js.undefined)
+    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

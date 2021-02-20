@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -190,33 +191,21 @@ object BarDiagram {
   }
   
   @scala.inline
-  implicit class BarDiagramOps[Self <: BarDiagram] (val x: Self) extends AnyVal {
+  implicit class BarDiagramMutableBuilder[Self <: BarDiagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeep(value: Boolean): Self = StObject.set(x, "Deep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupBarsPerAxis(value: Boolean): Self = StObject.set(x, "GroupBarsPerAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfLines(value: Double): Self = StObject.set(x, "NumberOfLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeep(value: Boolean): Self = this.set("Deep", value.asInstanceOf[js.Any])
+    def setStackedBarsConnected(value: Boolean): Self = StObject.set(x, "StackedBarsConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBarsPerAxis(value: Boolean): Self = this.set("GroupBarsPerAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfLines(value: Double): Self = this.set("NumberOfLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStackedBarsConnected(value: Boolean): Self = this.set("StackedBarsConnected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertical(value: Boolean): Self = this.set("Vertical", value.asInstanceOf[js.Any])
+    def setVertical(value: Boolean): Self = StObject.set(x, "Vertical", value.asInstanceOf[js.Any])
   }
 }

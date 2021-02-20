@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bounds extends js.Object {
+trait Bounds extends StObject {
   
   def containsBounds(bounds: Bounds): Boolean = js.native
   
@@ -41,7 +42,7 @@ object Bounds {
   def apply(
     containsBounds: Bounds => Boolean,
     containsPoint: Point => Boolean,
-    equals: Bounds => Boolean,
+    equals_ : Bounds => Boolean,
     extend: Point => Unit,
     getCenter: () => Point,
     getNorthEast: () => Point,
@@ -54,65 +55,54 @@ object Bounds {
     minY: Double,
     toSpan: () => Point
   ): Bounds = {
-    val __obj = js.Dynamic.literal(containsBounds = js.Any.fromFunction1(containsBounds), containsPoint = js.Any.fromFunction1(containsPoint), equals = js.Any.fromFunction1(equals), extend = js.Any.fromFunction1(extend), getCenter = js.Any.fromFunction0(getCenter), getNorthEast = js.Any.fromFunction0(getNorthEast), getSouthWest = js.Any.fromFunction0(getSouthWest), intersects = js.Any.fromFunction1(intersects), isEmpty = js.Any.fromFunction0(isEmpty), maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any], toSpan = js.Any.fromFunction0(toSpan))
+    val __obj = js.Dynamic.literal(containsBounds = js.Any.fromFunction1(containsBounds), containsPoint = js.Any.fromFunction1(containsPoint), extend = js.Any.fromFunction1(extend), getCenter = js.Any.fromFunction0(getCenter), getNorthEast = js.Any.fromFunction0(getNorthEast), getSouthWest = js.Any.fromFunction0(getSouthWest), intersects = js.Any.fromFunction1(intersects), isEmpty = js.Any.fromFunction0(isEmpty), maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any], toSpan = js.Any.fromFunction0(toSpan))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Bounds]
   }
   
   @scala.inline
-  implicit class BoundsOps[Self <: Bounds] (val x: Self) extends AnyVal {
+  implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsBounds(value: Bounds => Boolean): Self = StObject.set(x, "containsBounds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsPoint(value: Point => Boolean): Self = StObject.set(x, "containsPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEquals_(value: Bounds => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainsBounds(value: Bounds => Boolean): Self = this.set("containsBounds", js.Any.fromFunction1(value))
+    def setExtend(value: Point => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainsPoint(value: Point => Boolean): Self = this.set("containsPoint", js.Any.fromFunction1(value))
+    def setGetCenter(value: () => Point): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEquals(value: Bounds => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setGetNorthEast(value: () => Point): Self = StObject.set(x, "getNorthEast", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExtend(value: Point => Unit): Self = this.set("extend", js.Any.fromFunction1(value))
+    def setGetSouthWest(value: () => Point): Self = StObject.set(x, "getSouthWest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCenter(value: () => Point): Self = this.set("getCenter", js.Any.fromFunction0(value))
+    def setIntersects(value: Bounds => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNorthEast(value: () => Point): Self = this.set("getNorthEast", js.Any.fromFunction0(value))
+    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSouthWest(value: () => Point): Self = this.set("getSouthWest", js.Any.fromFunction0(value))
+    def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersects(value: Bounds => Boolean): Self = this.set("intersects", js.Any.fromFunction1(value))
+    def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
+    def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxX(value: Double): Self = this.set("maxX", value.asInstanceOf[js.Any])
+    def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxY(value: Double): Self = this.set("maxY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinX(value: Double): Self = this.set("minX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinY(value: Double): Self = this.set("minY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToSpan(value: () => Point): Self = this.set("toSpan", js.Any.fromFunction0(value))
+    def setToSpan(value: () => Point): Self = StObject.set(x, "toSpan", js.Any.fromFunction0(value))
   }
 }

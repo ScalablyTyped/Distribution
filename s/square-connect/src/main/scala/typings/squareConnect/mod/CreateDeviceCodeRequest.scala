@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateDeviceCodeRequest")
 @js.native
-class CreateDeviceCodeRequest () extends js.Object {
+class CreateDeviceCodeRequest () extends StObject {
   
   /**
     * The device code to create.

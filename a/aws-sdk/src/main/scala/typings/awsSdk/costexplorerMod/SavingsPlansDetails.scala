@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavingsPlansDetails extends js.Object {
+trait SavingsPlansDetails extends StObject {
   
   /**
     * A group of instance types that Savings Plans applies to.
@@ -31,36 +32,24 @@ object SavingsPlansDetails {
   }
   
   @scala.inline
-  implicit class SavingsPlansDetailsOps[Self <: SavingsPlansDetails] (val x: Self) extends AnyVal {
+  implicit class SavingsPlansDetailsMutableBuilder[Self <: SavingsPlansDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceFamily(value: GenericString): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOfferingId(value: GenericString): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceFamily(value: GenericString): Self = this.set("InstanceFamily", value.asInstanceOf[js.Any])
+    def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
     
     @scala.inline
-    def deleteInstanceFamily: Self = this.set("InstanceFamily", js.undefined)
+    def setRegion(value: GenericString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingId(value: GenericString): Self = this.set("OfferingId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfferingId: Self = this.set("OfferingId", js.undefined)
-    
-    @scala.inline
-    def setRegion(value: GenericString): Self = this.set("Region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.jqueryAjaxfile.anon.AddDisposeCallback
 import typings.jqueryAjaxfile.anon.Clear
 import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutUtils extends js.Object {
+trait KnockoutUtils extends StObject {
   
   def arrayFilter[T](array: js.Array[T], predicate: js.Function1[/* item */ T, Boolean]): js.Array[T] = js.native
   

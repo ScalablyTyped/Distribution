@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceFolderContents extends js.Object {
+trait WorkspaceFolderContents extends StObject {
   
   /**
     * The last index position in the result set.
@@ -63,86 +64,74 @@ object WorkspaceFolderContents {
   }
   
   @scala.inline
-  implicit class WorkspaceFolderContentsOps[Self <: WorkspaceFolderContents] (val x: Self) extends AnyVal {
+  implicit class WorkspaceFolderContentsMutableBuilder[Self <: WorkspaceFolderContents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndPosition(value: String): Self = this.set("endPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     @scala.inline
     def setFolder(
       value: /* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem
-    ): Self = this.set("folder", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFolder: Self = this.set("folder", js.undefined)
-    
-    @scala.inline
-    def setItemsVarargs(
-      value: (/* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem)*
-    ): Self = this.set("items", js.Array(value :_*))
+    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     @scala.inline
     def setItems(
       value: js.Array[
           /* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem
         ]
-    ): Self = this.set("items", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def setParentFoldersVarargs(
+    def setItemsVarargs(
       value: (/* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem)*
-    ): Self = this.set("parentFolders", js.Array(value :_*))
+    ): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
     def setParentFolders(
       value: js.Array[
           /* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem
         ]
-    ): Self = this.set("parentFolders", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "parentFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentFolders: Self = this.set("parentFolders", js.undefined)
+    def setParentFoldersUndefined: Self = StObject.set(x, "parentFolders", js.undefined)
     
     @scala.inline
-    def setResultSetSize(value: String): Self = this.set("resultSetSize", value.asInstanceOf[js.Any])
+    def setParentFoldersVarargs(
+      value: (/* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem)*
+    ): Self = StObject.set(x, "parentFolders", js.Array(value :_*))
     
     @scala.inline
-    def deleteResultSetSize: Self = this.set("resultSetSize", js.undefined)
+    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPosition(value: String): Self = this.set("startPosition", value.asInstanceOf[js.Any])
+    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
     @scala.inline
-    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
+    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalSetSize(value: String): Self = this.set("totalSetSize", value.asInstanceOf[js.Any])
+    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
     @scala.inline
-    def deleteTotalSetSize: Self = this.set("totalSetSize", js.undefined)
+    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspaceId(value: String): Self = this.set("workspaceId", value.asInstanceOf[js.Any])
+    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
     
     @scala.inline
-    def deleteWorkspaceId: Self = this.set("workspaceId", js.undefined)
+    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
   }
 }

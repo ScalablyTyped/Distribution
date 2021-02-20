@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShaderMaterialOptions extends js.Object {
+trait IShaderMaterialOptions extends StObject {
   
   /**
     * The list of attribute names used in the shader
@@ -59,54 +60,42 @@ object IShaderMaterialOptions {
   }
   
   @scala.inline
-  implicit class IShaderMaterialOptionsOps[Self <: IShaderMaterialOptions] (val x: Self) extends AnyVal {
+  implicit class IShaderMaterialOptionsMutableBuilder[Self <: IShaderMaterialOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: String*): Self = this.set("attributes", js.Array(value :_*))
+    def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
     
     @scala.inline
-    def setAttributes(value: js.Array[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setNeedAlphaBlending(value: Boolean): Self = StObject.set(x, "needAlphaBlending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinesVarargs(value: String*): Self = this.set("defines", js.Array(value :_*))
+    def setNeedAlphaTesting(value: Boolean): Self = StObject.set(x, "needAlphaTesting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefines(value: js.Array[String]): Self = this.set("defines", value.asInstanceOf[js.Any])
+    def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedAlphaBlending(value: Boolean): Self = this.set("needAlphaBlending", value.asInstanceOf[js.Any])
+    def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
     
     @scala.inline
-    def setNeedAlphaTesting(value: Boolean): Self = this.set("needAlphaTesting", value.asInstanceOf[js.Any])
+    def setUniformBuffers(value: js.Array[String]): Self = StObject.set(x, "uniformBuffers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplersVarargs(value: String*): Self = this.set("samplers", js.Array(value :_*))
+    def setUniformBuffersVarargs(value: String*): Self = StObject.set(x, "uniformBuffers", js.Array(value :_*))
     
     @scala.inline
-    def setSamplers(value: js.Array[String]): Self = this.set("samplers", value.asInstanceOf[js.Any])
+    def setUniforms(value: js.Array[String]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniformBuffersVarargs(value: String*): Self = this.set("uniformBuffers", js.Array(value :_*))
-    
-    @scala.inline
-    def setUniformBuffers(value: js.Array[String]): Self = this.set("uniformBuffers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniformsVarargs(value: String*): Self = this.set("uniforms", js.Array(value :_*))
-    
-    @scala.inline
-    def setUniforms(value: js.Array[String]): Self = this.set("uniforms", value.asInstanceOf[js.Any])
+    def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
   }
 }

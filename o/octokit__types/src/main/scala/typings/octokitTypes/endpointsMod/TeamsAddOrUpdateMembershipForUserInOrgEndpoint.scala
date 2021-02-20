@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.octokitTypesStrings.maintainer
 import typings.octokitTypes.octokitTypesStrings.member
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamsAddOrUpdateMembershipForUserInOrgEndpoint extends js.Object {
+trait TeamsAddOrUpdateMembershipForUserInOrgEndpoint extends StObject {
   
   @JSName("org")
   var org_ : String = js.native
@@ -33,33 +34,21 @@ object TeamsAddOrUpdateMembershipForUserInOrgEndpoint {
   }
   
   @scala.inline
-  implicit class TeamsAddOrUpdateMembershipForUserInOrgEndpointOps[Self <: TeamsAddOrUpdateMembershipForUserInOrgEndpoint] (val x: Self) extends AnyVal {
+  implicit class TeamsAddOrUpdateMembershipForUserInOrgEndpointMutableBuilder[Self <: TeamsAddOrUpdateMembershipForUserInOrgEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRole(value: member | maintainer): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def setOrg_(value: String): Self = this.set("org", value.asInstanceOf[js.Any])
+    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeam_slug(value: String): Self = this.set("team_slug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRole(value: member | maintainer): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

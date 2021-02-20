@@ -1,11 +1,12 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindOneAndDeleteOption[T] extends js.Object {
+trait FindOneAndDeleteOption[T] extends StObject {
   
   var collation: js.UndefOr[CollationDocument] = js.native
   
@@ -26,48 +27,36 @@ object FindOneAndDeleteOption {
   }
   
   @scala.inline
-  implicit class FindOneAndDeleteOptionOps[Self <: FindOneAndDeleteOption[_], T] (val x: Self with FindOneAndDeleteOption[T]) extends AnyVal {
+  implicit class FindOneAndDeleteOptionMutableBuilder[Self <: FindOneAndDeleteOption[_], T] (val x: Self with FindOneAndDeleteOption[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollation(value: CollationDocument): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollation(value: CollationDocument): Self = this.set("collation", value.asInstanceOf[js.Any])
+    def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     
     @scala.inline
-    def deleteCollation: Self = this.set("collation", js.undefined)
+    def setProjection(value: SchemaMember[T, ProjectionOperators | scala.Double | Boolean | _]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTimeMS(value: scala.Double): Self = this.set("maxTimeMS", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deleteMaxTimeMS: Self = this.set("maxTimeMS", js.undefined)
+    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: SchemaMember[T, ProjectionOperators | scala.Double | Boolean | _]): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setSort(value: SortOptionObject[T]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: ClientSession): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
-    
-    @scala.inline
-    def setSort(value: SortOptionObject[T]): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

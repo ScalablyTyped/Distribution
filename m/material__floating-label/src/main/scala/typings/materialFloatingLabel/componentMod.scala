@@ -3,16 +3,18 @@ package typings.materialFloatingLabel
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialFloatingLabel.foundationMod.MDCFloatingLabelFoundation
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/floating-label/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/floating-label/component", "MDCFloatingLabel")
   @js.native
-  class MDCFloatingLabel () extends MDCComponent[MDCFloatingLabelFoundation] {
+  class MDCFloatingLabel protected () extends MDCComponent[MDCFloatingLabelFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCFloatingLabelFoundation, args: js.Any*) = this()
     
     /**
       * Styles the label to float/dock.
@@ -35,9 +37,10 @@ object componentMod extends js.Object {
     def shake(shouldShake: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCFloatingLabel extends js.Object {
+  object MDCFloatingLabel {
     
+    @JSImport("@material/floating-label/component", "MDCFloatingLabel.attachTo")
+    @js.native
     def attachTo(root: Element): MDCFloatingLabel = js.native
   }
   

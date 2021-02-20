@@ -23,6 +23,7 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.Event
 import typings.std.HTMLCanvasElement
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -938,14 +939,20 @@ class Object ()
   def willDrawShadow(): Boolean = js.native
 }
 /* static members */
-@JSImport("fabric/fabric-impl", "Object")
-@js.native
-object Object extends js.Object {
+object Object {
+  
+  @JSImport("fabric/fabric-impl", "Object")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Defines the number of fraction digits to use when serializing object values.
     */
-  var NUM_FRACTION_DIGITS: js.UndefOr[Double] = js.native
+  @JSImport("fabric/fabric-impl", "Object.NUM_FRACTION_DIGITS")
+  @js.native
+  def NUM_FRACTION_DIGITS: js.UndefOr[Double] = js.native
+  @scala.inline
+  def NUM_FRACTION_DIGITS_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUM_FRACTION_DIGITS")(x.asInstanceOf[js.Any])
   
   /**
     * Creates fabric Object instance
@@ -956,8 +963,16 @@ object Object extends js.Object {
     * @private
     * @return {fabric.Object}
     */
+  @JSImport("fabric/fabric-impl", "Object._fromObject")
+  @js.native
   def _fromObject(className: String, `object`: Object): Object = js.native
+  @JSImport("fabric/fabric-impl", "Object._fromObject")
+  @js.native
   def _fromObject(className: String, `object`: Object, callback: js.UndefOr[scala.Nothing], extraParam: js.Any): Object = js.native
+  @JSImport("fabric/fabric-impl", "Object._fromObject")
+  @js.native
   def _fromObject(className: String, `object`: Object, callback: js.Function): Object = js.native
+  @JSImport("fabric/fabric-impl", "Object._fromObject")
+  @js.native
   def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: js.Any): Object = js.native
 }

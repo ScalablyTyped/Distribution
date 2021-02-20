@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggingStatus extends js.Object {
+trait LoggingStatus extends StObject {
   
   /**
     * The name of the S3 bucket where the log files are stored.
@@ -46,54 +47,42 @@ object LoggingStatus {
   }
   
   @scala.inline
-  implicit class LoggingStatusOps[Self <: LoggingStatus] (val x: Self) extends AnyVal {
+  implicit class LoggingStatusMutableBuilder[Self <: LoggingStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketNameUndefined: Self = StObject.set(x, "BucketName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastFailureMessage(value: String): Self = StObject.set(x, "LastFailureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: String): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    def setLastFailureMessageUndefined: Self = StObject.set(x, "LastFailureMessage", js.undefined)
     
     @scala.inline
-    def deleteBucketName: Self = this.set("BucketName", js.undefined)
+    def setLastFailureTime(value: TStamp): Self = StObject.set(x, "LastFailureTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastFailureMessage(value: String): Self = this.set("LastFailureMessage", value.asInstanceOf[js.Any])
+    def setLastFailureTimeUndefined: Self = StObject.set(x, "LastFailureTime", js.undefined)
     
     @scala.inline
-    def deleteLastFailureMessage: Self = this.set("LastFailureMessage", js.undefined)
+    def setLastSuccessfulDeliveryTime(value: TStamp): Self = StObject.set(x, "LastSuccessfulDeliveryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastFailureTime(value: TStamp): Self = this.set("LastFailureTime", value.asInstanceOf[js.Any])
+    def setLastSuccessfulDeliveryTimeUndefined: Self = StObject.set(x, "LastSuccessfulDeliveryTime", js.undefined)
     
     @scala.inline
-    def deleteLastFailureTime: Self = this.set("LastFailureTime", js.undefined)
+    def setLoggingEnabled(value: Boolean): Self = StObject.set(x, "LoggingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSuccessfulDeliveryTime(value: TStamp): Self = this.set("LastSuccessfulDeliveryTime", value.asInstanceOf[js.Any])
+    def setLoggingEnabledUndefined: Self = StObject.set(x, "LoggingEnabled", js.undefined)
     
     @scala.inline
-    def deleteLastSuccessfulDeliveryTime: Self = this.set("LastSuccessfulDeliveryTime", js.undefined)
+    def setS3KeyPrefix(value: String): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingEnabled(value: Boolean): Self = this.set("LoggingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggingEnabled: Self = this.set("LoggingEnabled", js.undefined)
-    
-    @scala.inline
-    def setS3KeyPrefix(value: String): Self = this.set("S3KeyPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3KeyPrefix: Self = this.set("S3KeyPrefix", js.undefined)
+    def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
   }
 }

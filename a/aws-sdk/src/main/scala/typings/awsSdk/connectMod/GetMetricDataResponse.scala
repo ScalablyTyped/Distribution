@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMetricDataResponse extends js.Object {
+trait GetMetricDataResponse extends StObject {
   
   /**
     * Information about the historical metrics. If no grouping is specified, a summary of metric data is returned.
@@ -26,33 +27,21 @@ object GetMetricDataResponse {
   }
   
   @scala.inline
-  implicit class GetMetricDataResponseOps[Self <: GetMetricDataResponse] (val x: Self) extends AnyVal {
+  implicit class GetMetricDataResponseMutableBuilder[Self <: GetMetricDataResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricResults(value: HistoricalMetricResults): Self = StObject.set(x, "MetricResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricResultsUndefined: Self = StObject.set(x, "MetricResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricResultsVarargs(value: HistoricalMetricResult*): Self = StObject.set(x, "MetricResults", js.Array(value :_*))
     
     @scala.inline
-    def setMetricResultsVarargs(value: HistoricalMetricResult*): Self = this.set("MetricResults", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricResults(value: HistoricalMetricResults): Self = this.set("MetricResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricResults: Self = this.set("MetricResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

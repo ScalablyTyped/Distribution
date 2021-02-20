@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains settings to define individual bulleted or numbered list levels.
   */
 @js.native
-trait ListLevelSettings extends js.Object {
+trait ListLevelSettings extends StObject {
   
   /**
     * Gets or sets the paragraph text alignment within numbered list levels.
@@ -98,57 +99,45 @@ object ListLevelSettings {
   }
   
   @scala.inline
-  implicit class ListLevelSettingsOps[Self <: ListLevelSettings] (val x: Self) extends AnyVal {
+  implicit class ListLevelSettingsMutableBuilder[Self <: ListLevelSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: ListLevelNumberAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayFormatString(value: String): Self = StObject.set(x, "displayFormatString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstLineIndent(value: Double): Self = StObject.set(x, "firstLineIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: ListLevelNumberAlignment): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setFirstLineIndentType(value: ParagraphFirstLineIndent): Self = StObject.set(x, "firstLineIndentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFormatString(value: String): Self = this.set("displayFormatString", value.asInstanceOf[js.Any])
+    def setFontBold(value: Boolean): Self = StObject.set(x, "fontBold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLineIndent(value: Double): Self = this.set("firstLineIndent", value.asInstanceOf[js.Any])
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLineIndentType(value: ParagraphFirstLineIndent): Self = this.set("firstLineIndentType", value.asInstanceOf[js.Any])
+    def setFontItalic(value: Boolean): Self = StObject.set(x, "fontItalic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontBold(value: Boolean): Self = this.set("fontBold", value.asInstanceOf[js.Any])
+    def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontItalic(value: Boolean): Self = this.set("fontItalic", value.asInstanceOf[js.Any])
+    def setFormat(value: ListLevelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontName(value: String): Self = this.set("fontName", value.asInstanceOf[js.Any])
+    def setLeftIndent(value: Double): Self = StObject.set(x, "leftIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ListLevelFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeftIndent(value: Double): Self = this.set("leftIndent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

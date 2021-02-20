@@ -5,6 +5,7 @@ import typings.babelTypes.babelTypesStrings.ForInStatement
 import typings.babelTypes.babelTypesStrings.ForOfStatement
 import typings.babelTypes.babelTypesStrings.ForStatement
 import typings.babelTypes.babelTypesStrings.WhileStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,21 +17,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.ts36Mod.WhileStatement_
   - typings.babelTypes.ts36Mod.ForOfStatement_
 */
-trait Loop extends js.Object
+trait Loop extends StObject
 object Loop {
   
   @scala.inline
-  def WhileStatement_(
+  def DoWhileStatement_(
     body: Statement,
     end: Double,
     loc: SourceLocation,
     start: Double,
     test: Expression,
-    `type`: WhileStatement
-  ): Loop = {
+    `type`: DoWhileStatement
+  ): typings.babelTypes.ts36Mod.DoWhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Loop]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.DoWhileStatement_]
+  }
+  
+  @scala.inline
+  def ForInStatement_(
+    body: Statement,
+    end: Double,
+    left: VariableDeclaration_ | LVal,
+    loc: SourceLocation,
+    right: Expression,
+    start: Double,
+    `type`: ForInStatement
+  ): typings.babelTypes.ts36Mod.ForInStatement_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForInStatement_]
+  }
+  
+  @scala.inline
+  def ForOfStatement_(
+    body: Statement,
+    end: Double,
+    left: VariableDeclaration_ | LVal,
+    loc: SourceLocation,
+    right: Expression,
+    start: Double,
+    `type`: ForOfStatement
+  ): typings.babelTypes.ts36Mod.ForOfStatement_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForOfStatement_]
   }
   
   @scala.inline
@@ -43,53 +74,23 @@ object Loop {
     test: Expression,
     `type`: ForStatement,
     update: Expression
-  ): Loop = {
+  ): typings.babelTypes.ts36Mod.ForStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Loop]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForStatement_]
   }
   
   @scala.inline
-  def ForInStatement_(
-    body: Statement,
-    end: Double,
-    left: VariableDeclaration_ | LVal,
-    loc: SourceLocation,
-    right: Expression,
-    start: Double,
-    `type`: ForInStatement
-  ): Loop = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Loop]
-  }
-  
-  @scala.inline
-  def DoWhileStatement_(
+  def WhileStatement_(
     body: Statement,
     end: Double,
     loc: SourceLocation,
     start: Double,
     test: Expression,
-    `type`: DoWhileStatement
-  ): Loop = {
+    `type`: WhileStatement
+  ): typings.babelTypes.ts36Mod.WhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Loop]
-  }
-  
-  @scala.inline
-  def ForOfStatement_(
-    body: Statement,
-    end: Double,
-    left: VariableDeclaration_ | LVal,
-    loc: SourceLocation,
-    right: Expression,
-    start: Double,
-    `type`: ForOfStatement
-  ): Loop = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Loop]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.WhileStatement_]
   }
 }

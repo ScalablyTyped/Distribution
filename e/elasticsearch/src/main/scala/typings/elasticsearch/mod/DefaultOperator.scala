@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.elasticsearch.elasticsearchStrings.AND
   - typings.elasticsearch.elasticsearchStrings.OR
 */
-trait DefaultOperator extends js.Object
+trait DefaultOperator extends StObject
 object DefaultOperator {
   
   @scala.inline

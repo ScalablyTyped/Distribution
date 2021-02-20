@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSnapshotAttributeResult extends js.Object {
+trait DescribeSnapshotAttributeResult extends StObject {
   
   /**
     * The users and groups that have the permissions for creating volumes from the snapshot.
@@ -31,42 +32,30 @@ object DescribeSnapshotAttributeResult {
   }
   
   @scala.inline
-  implicit class DescribeSnapshotAttributeResultOps[Self <: DescribeSnapshotAttributeResult] (val x: Self) extends AnyVal {
+  implicit class DescribeSnapshotAttributeResultMutableBuilder[Self <: DescribeSnapshotAttributeResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateVolumePermissions(value: CreateVolumePermissionList): Self = StObject.set(x, "CreateVolumePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateVolumePermissionsUndefined: Self = StObject.set(x, "CreateVolumePermissions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateVolumePermissionsVarargs(value: CreateVolumePermission*): Self = StObject.set(x, "CreateVolumePermissions", js.Array(value :_*))
     
     @scala.inline
-    def setCreateVolumePermissionsVarargs(value: CreateVolumePermission*): Self = this.set("CreateVolumePermissions", js.Array(value :_*))
+    def setProductCodes(value: ProductCodeList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateVolumePermissions(value: CreateVolumePermissionList): Self = this.set("CreateVolumePermissions", value.asInstanceOf[js.Any])
+    def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
     @scala.inline
-    def deleteCreateVolumePermissions: Self = this.set("CreateVolumePermissions", js.undefined)
+    def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
     
     @scala.inline
-    def setProductCodesVarargs(value: ProductCode*): Self = this.set("ProductCodes", js.Array(value :_*))
+    def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCodes(value: ProductCodeList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
-    
-    @scala.inline
-    def setSnapshotId(value: String): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
   }
 }

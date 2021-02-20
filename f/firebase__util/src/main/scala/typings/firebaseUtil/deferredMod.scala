@@ -1,15 +1,15 @@
 package typings.firebaseUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/util/dist/src/deferred", JSImport.Namespace)
-@js.native
-object deferredMod extends js.Object {
+object deferredMod {
   
+  @JSImport("@firebase/util/dist/src/deferred", "Deferred")
   @js.native
-  class Deferred[R] () extends js.Object {
+  class Deferred[R] () extends StObject {
     
     var promise: js.Promise[R] = js.native
     

@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.runtime.WebViewPartition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Partitions extends js.Object {
+trait Partitions extends StObject {
   
   /** Webview partition list */
   var partitions: js.Array[WebViewPartition] = js.native
@@ -20,24 +21,12 @@ object Partitions {
   }
   
   @scala.inline
-  implicit class PartitionsOps[Self <: Partitions] (val x: Self) extends AnyVal {
+  implicit class PartitionsMutableBuilder[Self <: Partitions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPartitions(value: js.Array[WebViewPartition]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPartitionsVarargs(value: WebViewPartition*): Self = this.set("partitions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPartitions(value: js.Array[WebViewPartition]): Self = this.set("partitions", value.asInstanceOf[js.Any])
+    def setPartitionsVarargs(value: WebViewPartition*): Self = StObject.set(x, "partitions", js.Array(value :_*))
   }
 }

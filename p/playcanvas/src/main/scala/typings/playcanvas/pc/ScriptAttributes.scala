@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.playcanvas.anon.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scriptType - Script Type that attributes relate to.
   */
 @js.native
-trait ScriptAttributes extends js.Object {
+trait ScriptAttributes extends StObject {
   
   /**
     * Add Attribute.
@@ -126,30 +127,18 @@ object ScriptAttributes {
   }
   
   @scala.inline
-  implicit class ScriptAttributesOps[Self <: ScriptAttributes] (val x: Self) extends AnyVal {
+  implicit class ScriptAttributesMutableBuilder[Self <: ScriptAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (String, Array) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: (String, Array) => Unit): Self = this.set("add", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGet(value: String => js.Any): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHas(value: String => Boolean): Self = this.set("has", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: String => Boolean): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setRemove(value: String => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

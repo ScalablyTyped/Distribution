@@ -5,26 +5,16 @@ import typings.vscodeJsonrpc.mod.NotificationHandler
 import typings.vscodeJsonrpc.mod.ProgressToken
 import typings.vscodeLanguageserverProtocol.mod.NotificationType
 import typings.vscodeLanguageserverProtocol.mod.ProgressType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient/lib/progressPart", JSImport.Namespace)
-@js.native
-object progressPartMod extends js.Object {
+object progressPartMod {
   
+  @JSImport("vscode-languageclient/lib/progressPart", "ProgressPart")
   @js.native
-  trait ProgressContext extends js.Object {
-    
-    def onProgress[P](`type`: ProgressType[P], token: String, handler: NotificationHandler[P]): Disposable = js.native
-    def onProgress[P](`type`: ProgressType[P], token: Double, handler: NotificationHandler[P]): Disposable = js.native
-    
-    def sendNotification[P, RO](`type`: NotificationType[P, RO]): Unit = js.native
-    def sendNotification[P, RO](`type`: NotificationType[P, RO], params: P): Unit = js.native
-  }
-  
-  @js.native
-  class ProgressPart protected () extends js.Object {
+  class ProgressPart protected () extends StObject {
     def this(_client: ProgressContext, _token: ProgressToken) = this()
     
     var _cancellationToken: js.Any = js.native
@@ -52,5 +42,15 @@ object progressPartMod extends js.Object {
     def done(): Unit = js.native
     
     var report: js.Any = js.native
+  }
+  
+  @js.native
+  trait ProgressContext extends StObject {
+    
+    def onProgress[P](`type`: ProgressType[P], token: String, handler: NotificationHandler[P]): Disposable = js.native
+    def onProgress[P](`type`: ProgressType[P], token: Double, handler: NotificationHandler[P]): Disposable = js.native
+    
+    def sendNotification[P, RO](`type`: NotificationType[P, RO]): Unit = js.native
+    def sendNotification[P, RO](`type`: NotificationType[P, RO], params: P): Unit = js.native
   }
 }

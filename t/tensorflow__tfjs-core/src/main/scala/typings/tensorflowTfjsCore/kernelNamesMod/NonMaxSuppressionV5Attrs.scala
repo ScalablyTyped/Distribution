@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NonMaxSuppressionV5Attrs extends js.Object {
+trait NonMaxSuppressionV5Attrs extends StObject {
   
   var iouThreshold: Double = js.native
   
@@ -24,30 +25,18 @@ object NonMaxSuppressionV5Attrs {
   }
   
   @scala.inline
-  implicit class NonMaxSuppressionV5AttrsOps[Self <: NonMaxSuppressionV5Attrs] (val x: Self) extends AnyVal {
+  implicit class NonMaxSuppressionV5AttrsMutableBuilder[Self <: NonMaxSuppressionV5Attrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxOutputSize(value: Double): Self = StObject.set(x, "maxOutputSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScoreThreshold(value: Double): Self = StObject.set(x, "scoreThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIouThreshold(value: Double): Self = this.set("iouThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxOutputSize(value: Double): Self = this.set("maxOutputSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScoreThreshold(value: Double): Self = this.set("scoreThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoftNmsSigma(value: Double): Self = this.set("softNmsSigma", value.asInstanceOf[js.Any])
+    def setSoftNmsSigma(value: Double): Self = StObject.set(x, "softNmsSigma", value.asInstanceOf[js.Any])
   }
 }

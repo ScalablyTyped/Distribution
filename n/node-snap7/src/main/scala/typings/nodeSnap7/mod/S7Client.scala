@@ -1,14 +1,14 @@
 package typings.nodeSnap7.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S7Client extends js.Object {
+trait S7Client extends StObject {
   
   /**
     * This is a lean function of ReadArea() to read PLC process outputs.
@@ -632,6 +632,3 @@ trait S7Client extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* data */ js.Array[MultiVarsWriteResult], Unit]
   ): js.Array[MultiVarsWriteResult] | Boolean = js.native
 }
-@JSImport("node-snap7", "S7Client")
-@js.native
-object S7Client extends TopLevel[S7ClientStatic]

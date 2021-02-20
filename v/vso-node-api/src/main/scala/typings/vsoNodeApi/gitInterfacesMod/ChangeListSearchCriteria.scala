@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeListSearchCriteria extends js.Object {
+trait ChangeListSearchCriteria extends StObject {
   
   /**
     * If provided, a version descriptor to compare against base
@@ -95,60 +96,48 @@ object ChangeListSearchCriteria {
   }
   
   @scala.inline
-  implicit class ChangeListSearchCriteriaOps[Self <: ChangeListSearchCriteria] (val x: Self) extends AnyVal {
+  implicit class ChangeListSearchCriteriaMutableBuilder[Self <: ChangeListSearchCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompareVersion(value: String): Self = StObject.set(x, "compareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeDeletes(value: Boolean): Self = StObject.set(x, "excludeDeletes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowRenames(value: Boolean): Self = StObject.set(x, "followRenames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompareVersion(value: String): Self = this.set("compareVersion", value.asInstanceOf[js.Any])
+    def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeDeletes(value: Boolean): Self = this.set("excludeDeletes", value.asInstanceOf[js.Any])
+    def setFromVersion(value: String): Self = StObject.set(x, "fromVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowRenames(value: Boolean): Self = this.set("followRenames", value.asInstanceOf[js.Any])
+    def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDate(value: String): Self = this.set("fromDate", value.asInstanceOf[js.Any])
+    def setItemPaths(value: js.Array[String]): Self = StObject.set(x, "itemPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromVersion(value: String): Self = this.set("fromVersion", value.asInstanceOf[js.Any])
+    def setItemPathsVarargs(value: String*): Self = StObject.set(x, "itemPaths", js.Array(value :_*))
     
     @scala.inline
-    def setItemPath(value: String): Self = this.set("itemPath", value.asInstanceOf[js.Any])
+    def setItemVersion(value: String): Self = StObject.set(x, "itemVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemPathsVarargs(value: String*): Self = this.set("itemPaths", js.Array(value :_*))
+    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemPaths(value: js.Array[String]): Self = this.set("itemPaths", value.asInstanceOf[js.Any])
+    def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemVersion(value: String): Self = this.set("itemVersion", value.asInstanceOf[js.Any])
+    def setToVersion(value: String): Self = StObject.set(x, "toVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip(value: Double): Self = this.set("skip", value.asInstanceOf[js.Any])
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToDate(value: String): Self = this.set("toDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToVersion(value: String): Self = this.set("toVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

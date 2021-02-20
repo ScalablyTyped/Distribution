@@ -1,12 +1,13 @@
 package typings.awsSdkClientKmsBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/model/DeleteImportedKeyMaterial", JSImport.Namespace)
-@js.native
-object deleteImportedKeyMaterialMod extends js.Object {
+object deleteImportedKeyMaterialMod {
   
+  @JSImport("@aws-sdk/client-kms-browser/model/DeleteImportedKeyMaterial", "DeleteImportedKeyMaterial")
+  @js.native
   val DeleteImportedKeyMaterial: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

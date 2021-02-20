@@ -1,6 +1,7 @@
 package typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for the `GetBinding()` method.
   */
 @js.native
-trait SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse extends js.Object {
+trait SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse extends StObject {
   
   /**
     * Credentials to use the binding.
@@ -48,51 +49,39 @@ object SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponseOps[Self <: SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponseMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1alpha1GetBindingResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentials(value: StringDictionary[js.Any]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: StringDictionary[js.Any]): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setRoute_service_url(value: String): Self = StObject.set(x, "route_service_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setRoute_service_urlUndefined: Self = StObject.set(x, "route_service_url", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setSyslog_drain_url(value: String): Self = StObject.set(x, "syslog_drain_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoute_service_url(value: String): Self = this.set("route_service_url", value.asInstanceOf[js.Any])
+    def setSyslog_drain_urlUndefined: Self = StObject.set(x, "syslog_drain_url", js.undefined)
     
     @scala.inline
-    def deleteRoute_service_url: Self = this.set("route_service_url", js.undefined)
+    def setVolume_mounts(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "volume_mounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyslog_drain_url(value: String): Self = this.set("syslog_drain_url", value.asInstanceOf[js.Any])
+    def setVolume_mountsUndefined: Self = StObject.set(x, "volume_mounts", js.undefined)
     
     @scala.inline
-    def deleteSyslog_drain_url: Self = this.set("syslog_drain_url", js.undefined)
-    
-    @scala.inline
-    def setVolume_mountsVarargs(value: StringDictionary[js.Any]*): Self = this.set("volume_mounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolume_mounts(value: js.Array[StringDictionary[_]]): Self = this.set("volume_mounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume_mounts: Self = this.set("volume_mounts", js.undefined)
+    def setVolume_mountsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "volume_mounts", js.Array(value :_*))
   }
 }

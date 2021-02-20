@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceCountLimits extends js.Object {
+trait InstanceCountLimits extends StObject {
   
   var MaximumInstanceCount: js.UndefOr[typings.awsSdk.esMod.MaximumInstanceCount] = js.native
   
@@ -20,30 +21,18 @@ object InstanceCountLimits {
   }
   
   @scala.inline
-  implicit class InstanceCountLimitsOps[Self <: InstanceCountLimits] (val x: Self) extends AnyVal {
+  implicit class InstanceCountLimitsMutableBuilder[Self <: InstanceCountLimits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumInstanceCount(value: MaximumInstanceCount): Self = StObject.set(x, "MaximumInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumInstanceCountUndefined: Self = StObject.set(x, "MaximumInstanceCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumInstanceCount(value: MinimumInstanceCount): Self = StObject.set(x, "MinimumInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumInstanceCount(value: MaximumInstanceCount): Self = this.set("MaximumInstanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumInstanceCount: Self = this.set("MaximumInstanceCount", js.undefined)
-    
-    @scala.inline
-    def setMinimumInstanceCount(value: MinimumInstanceCount): Self = this.set("MinimumInstanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumInstanceCount: Self = this.set("MinimumInstanceCount", js.undefined)
+    def setMinimumInstanceCountUndefined: Self = StObject.set(x, "MinimumInstanceCount", js.undefined)
   }
 }

@@ -1,13 +1,13 @@
 package typings.ngTable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ng-table/src/core/data", JSImport.Namespace)
-@js.native
-object dataMod extends js.Object {
+object dataMod {
   
+  @JSImport("ng-table/src/core/data", "NgTableDefaultGetDataProvider")
   @js.native
   class NgTableDefaultGetDataProvider ()
     extends typings.ngTable.ngTableDefaultGetDataMod.NgTableDefaultGetDataProvider

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDedicatedIpsResponse extends js.Object {
+trait GetDedicatedIpsResponse extends StObject {
   
   /**
     * A list of dedicated IP addresses that are reserved for use by your Amazon Pinpoint account.
@@ -26,33 +27,21 @@ object GetDedicatedIpsResponse {
   }
   
   @scala.inline
-  implicit class GetDedicatedIpsResponseOps[Self <: GetDedicatedIpsResponse] (val x: Self) extends AnyVal {
+  implicit class GetDedicatedIpsResponseMutableBuilder[Self <: GetDedicatedIpsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDedicatedIps(value: DedicatedIpList): Self = StObject.set(x, "DedicatedIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDedicatedIpsUndefined: Self = StObject.set(x, "DedicatedIps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDedicatedIpsVarargs(value: DedicatedIp*): Self = StObject.set(x, "DedicatedIps", js.Array(value :_*))
     
     @scala.inline
-    def setDedicatedIpsVarargs(value: DedicatedIp*): Self = this.set("DedicatedIps", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDedicatedIps(value: DedicatedIpList): Self = this.set("DedicatedIps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDedicatedIps: Self = this.set("DedicatedIps", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

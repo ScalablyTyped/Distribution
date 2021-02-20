@@ -1,12 +1,13 @@
 package typings.officeJs.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TableCellCollection object, for use in `tableCellCollection.set({ ... })`. */
 @js.native
-trait TableCellCollectionUpdateData extends js.Object {
+trait TableCellCollectionUpdateData extends StObject {
   
   var items: js.UndefOr[js.Array[TableCellData]] = js.native
 }
@@ -19,27 +20,15 @@ object TableCellCollectionUpdateData {
   }
   
   @scala.inline
-  implicit class TableCellCollectionUpdateDataOps[Self <: TableCellCollectionUpdateData] (val x: Self) extends AnyVal {
+  implicit class TableCellCollectionUpdateDataMutableBuilder[Self <: TableCellCollectionUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[TableCellData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemsVarargs(value: TableCellData*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[TableCellData]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: TableCellData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

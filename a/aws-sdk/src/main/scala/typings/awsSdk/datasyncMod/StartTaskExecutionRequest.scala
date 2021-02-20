@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartTaskExecutionRequest extends js.Object {
+trait StartTaskExecutionRequest extends StObject {
   
   /**
     * A list of filter rules that determines which files to include when running a task. The pattern should contain a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe). For example: "/folder1|/folder2"   
@@ -28,36 +29,24 @@ object StartTaskExecutionRequest {
   }
   
   @scala.inline
-  implicit class StartTaskExecutionRequestOps[Self <: StartTaskExecutionRequest] (val x: Self) extends AnyVal {
+  implicit class StartTaskExecutionRequestMutableBuilder[Self <: StartTaskExecutionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludes(value: FilterList): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value :_*))
     
     @scala.inline
-    def setTaskArn(value: TaskArn): Self = this.set("TaskArn", value.asInstanceOf[js.Any])
+    def setOverrideOptions(value: Options): Self = StObject.set(x, "OverrideOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludesVarargs(value: FilterRule*): Self = this.set("Includes", js.Array(value :_*))
+    def setOverrideOptionsUndefined: Self = StObject.set(x, "OverrideOptions", js.undefined)
     
     @scala.inline
-    def setIncludes(value: FilterList): Self = this.set("Includes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludes: Self = this.set("Includes", js.undefined)
-    
-    @scala.inline
-    def setOverrideOptions(value: Options): Self = this.set("OverrideOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideOptions: Self = this.set("OverrideOptions", js.undefined)
+    def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
   }
 }

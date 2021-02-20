@@ -2,13 +2,14 @@ package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "SVGElement")
 @js.native
-class SVGElement () extends js.Object {
+class SVGElement () extends StObject {
   
   /**
     * Add the element to the DOM. All elements must be added this way.

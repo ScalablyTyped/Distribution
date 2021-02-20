@@ -1,12 +1,13 @@
 package typings.rsocketTypes.reactiveSocketTypesMod
 
 import typings.rsocketFlowable.mod.Flowable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DuplexConnection extends js.Object {
+trait DuplexConnection extends StObject {
   
   /**
     * Close the underlying connection, emitting `onComplete` on the receive()
@@ -72,36 +73,24 @@ object DuplexConnection {
   }
   
   @scala.inline
-  implicit class DuplexConnectionOps[Self <: DuplexConnection] (val x: Self) extends AnyVal {
+  implicit class DuplexConnectionMutableBuilder[Self <: DuplexConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionStatus(value: () => Flowable[ConnectionStatus]): Self = StObject.set(x, "connectionStatus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setReceive(value: () => Flowable[Frame]): Self = StObject.set(x, "receive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnect(value: () => Unit): Self = this.set("connect", js.Any.fromFunction0(value))
+    def setSend(value: Flowable[Frame] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnectionStatus(value: () => Flowable[ConnectionStatus]): Self = this.set("connectionStatus", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReceive(value: () => Flowable[Frame]): Self = this.set("receive", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSend(value: Flowable[Frame] => Unit): Self = this.set("send", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSendOne(value: Frame => Unit): Self = this.set("sendOne", js.Any.fromFunction1(value))
+    def setSendOne(value: Frame => Unit): Self = StObject.set(x, "sendOne", js.Any.fromFunction1(value))
   }
 }

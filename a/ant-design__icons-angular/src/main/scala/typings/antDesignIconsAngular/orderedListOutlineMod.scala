@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/OrderedListOutline", JSImport.Namespace)
-@js.native
-object orderedListOutlineMod extends js.Object {
+object orderedListOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/OrderedListOutline", "OrderedListOutline")
+  @js.native
   val OrderedListOutline: IconDefinition = js.native
 }

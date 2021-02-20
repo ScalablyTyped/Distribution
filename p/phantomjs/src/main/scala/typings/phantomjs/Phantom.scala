@@ -1,12 +1,13 @@
 package typings.phantomjs
 
 import typings.phantomjs.anon.Major
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Phantom extends js.Object {
+trait Phantom extends StObject {
   
   // Functions
   def addCookie(cookie: Cookie): Boolean = js.native
@@ -16,7 +17,7 @@ trait Phantom extends js.Object {
   
   def clearCookies(): Unit = js.native
   
-    // DEPRECATED
+  // DEPRECATED
   var cookies: js.Array[Cookie] = js.native
   
   var cookiesEnabled: Boolean = js.native
@@ -35,6 +36,6 @@ trait Phantom extends js.Object {
   
   var scriptName: String = js.native
   
-    // DEPRECATED
+  // DEPRECATED
   var version: Major = js.native
 }

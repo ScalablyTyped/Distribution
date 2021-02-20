@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * when the operation finishes.
   */
 @js.native
-trait SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse extends js.Object {
+trait SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse extends StObject {
   
   /**
     * The name of the FHIR store where resources have been exported, in the
@@ -33,30 +34,18 @@ object SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponseOps[Self <: SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponseMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFhirStore(value: String): Self = StObject.set(x, "fhirStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFhirStoreUndefined: Self = StObject.set(x, "fhirStore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceCount(value: String): Self = StObject.set(x, "resourceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFhirStore(value: String): Self = this.set("fhirStore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFhirStore: Self = this.set("fhirStore", js.undefined)
-    
-    @scala.inline
-    def setResourceCount(value: String): Self = this.set("resourceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceCount: Self = this.set("resourceCount", js.undefined)
+    def setResourceCountUndefined: Self = StObject.set(x, "resourceCount", js.undefined)
   }
 }

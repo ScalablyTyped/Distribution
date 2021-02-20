@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * true.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2RecordSuppression extends js.Object {
+trait SchemaGooglePrivacyDlpV2RecordSuppression extends StObject {
   
   /**
     * A condition that when it evaluates to true will result in the record
@@ -26,24 +27,12 @@ object SchemaGooglePrivacyDlpV2RecordSuppression {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2RecordSuppressionOps[Self <: SchemaGooglePrivacyDlpV2RecordSuppression] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2RecordSuppressionMutableBuilder[Self <: SchemaGooglePrivacyDlpV2RecordSuppression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: SchemaGooglePrivacyDlpV2RecordCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCondition(value: SchemaGooglePrivacyDlpV2RecordCondition): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.libp2pGossipsub.anon
 
 import typings.libp2pGossipsub.peerStatsMod.TopicStats
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-stats.PeerStats> */
 @js.native
-trait PartialPeerStats extends js.Object {
+trait PartialPeerStats extends StObject {
   
   var behaviourPenalty: js.UndefOr[Double] = js.native
   
@@ -29,51 +30,39 @@ object PartialPeerStats {
   }
   
   @scala.inline
-  implicit class PartialPeerStatsOps[Self <: PartialPeerStats] (val x: Self) extends AnyVal {
+  implicit class PartialPeerStatsMutableBuilder[Self <: PartialPeerStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehaviourPenalty(value: Double): Self = StObject.set(x, "behaviourPenalty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviourPenaltyUndefined: Self = StObject.set(x, "behaviourPenalty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviourPenalty(value: Double): Self = this.set("behaviourPenalty", value.asInstanceOf[js.Any])
+    def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
     
     @scala.inline
-    def deleteBehaviourPenalty: Self = this.set("behaviourPenalty", js.undefined)
+    def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnected(value: Boolean): Self = this.set("connected", value.asInstanceOf[js.Any])
+    def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
     
     @scala.inline
-    def deleteConnected: Self = this.set("connected", js.undefined)
+    def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpire(value: Double): Self = this.set("expire", value.asInstanceOf[js.Any])
+    def setIpsUndefined: Self = StObject.set(x, "ips", js.undefined)
     
     @scala.inline
-    def deleteExpire: Self = this.set("expire", js.undefined)
+    def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
     
     @scala.inline
-    def setIpsVarargs(value: String*): Self = this.set("ips", js.Array(value :_*))
+    def setTopics(value: Record[String, TopicStats]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIps(value: js.Array[String]): Self = this.set("ips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIps: Self = this.set("ips", js.undefined)
-    
-    @scala.inline
-    def setTopics(value: Record[String, TopicStats]): Self = this.set("topics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopics: Self = this.set("topics", js.undefined)
+    def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
   }
 }

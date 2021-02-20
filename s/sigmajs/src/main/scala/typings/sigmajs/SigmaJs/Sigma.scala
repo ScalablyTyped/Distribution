@@ -1,12 +1,13 @@
 package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sigma extends js.Object {
+trait Sigma extends StObject {
   
   def addRenderer(): Renderer = js.native
   def addRenderer(configs: RendererConfigs): Renderer = js.native

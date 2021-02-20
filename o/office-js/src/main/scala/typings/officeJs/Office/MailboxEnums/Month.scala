@@ -1,11 +1,12 @@
 package typings.officeJs.Office.MailboxEnums
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Month extends js.Object
+sealed trait Month extends StObject
 /**
   * Specifies the month.
   * 
@@ -17,7 +18,7 @@ sealed trait Month extends js.Object
   */
 @JSGlobal("Office.MailboxEnums.Month")
 @js.native
-object Month extends js.Object {
+object Month extends StObject {
   
   /**
     * April

@@ -2,12 +2,13 @@ package typings.vegaTypings.encodeMod
 
 import typings.vegaTypings.vegaTypingsStrings.linear
 import typings.vegaTypings.vegaTypingsStrings.radial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseGradient extends js.Object {
+trait BaseGradient extends StObject {
   
   /**
     * The type of gradient.
@@ -23,21 +24,9 @@ object BaseGradient {
   }
   
   @scala.inline
-  implicit class BaseGradientOps[Self <: BaseGradient] (val x: Self) extends AnyVal {
+  implicit class BaseGradientMutableBuilder[Self <: BaseGradient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGradient(value: linear | radial): Self = this.set("gradient", value.asInstanceOf[js.Any])
+    def setGradient(value: linear | radial): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
   }
 }

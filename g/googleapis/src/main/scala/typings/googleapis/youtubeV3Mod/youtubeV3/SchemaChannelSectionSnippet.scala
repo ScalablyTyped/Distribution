@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Basic details about a channel section, including title, style and position.
   */
 @js.native
-trait SchemaChannelSectionSnippet extends js.Object {
+trait SchemaChannelSectionSnippet extends StObject {
   
   /**
     * The ID that YouTube uses to uniquely identify the channel that published
@@ -56,60 +57,48 @@ object SchemaChannelSectionSnippet {
   }
   
   @scala.inline
-  implicit class SchemaChannelSectionSnippetOps[Self <: SchemaChannelSectionSnippet] (val x: Self) extends AnyVal {
+  implicit class SchemaChannelSectionSnippetMutableBuilder[Self <: SchemaChannelSectionSnippet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setLocalized(value: SchemaChannelSectionLocalization): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLanguage(value: String): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
+    def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
     
     @scala.inline
-    def deleteDefaultLanguage: Self = this.set("defaultLanguage", js.undefined)
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalized(value: SchemaChannelSectionLocalization): Self = this.set("localized", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteLocalized: Self = this.set("localized", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

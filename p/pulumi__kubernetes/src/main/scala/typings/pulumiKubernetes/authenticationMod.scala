@@ -5,17 +5,16 @@ import typings.pulumiKubernetes.v1TokenReviewMod.TokenReviewArgs
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/authentication", JSImport.Namespace)
-@js.native
-object authenticationMod extends js.Object {
+object authenticationMod {
   
-  @js.native
-  object v1 extends js.Object {
+  object v1 {
     
+    @JSImport("@pulumi/kubernetes/authentication", "v1.TokenRequest")
     @js.native
     class TokenRequest protected ()
       extends typings.pulumiKubernetes.authenticationV1Mod.TokenRequest {
@@ -32,8 +31,7 @@ object authenticationMod extends js.Object {
       def this(name: String, args: TokenRequestArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object TokenRequest extends js.Object {
+    object TokenRequest {
       
       /**
         * Get an existing TokenRequest resource's state with the given name, ID, and optional extra
@@ -43,16 +41,23 @@ object authenticationMod extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes/authentication", "v1.TokenRequest.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.tokenRequestMod.TokenRequest = js.native
+      @JSImport("@pulumi/kubernetes/authentication", "v1.TokenRequest.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.tokenRequestMod.TokenRequest = js.native
       
       /**
         * Returns true if the given object is an instance of TokenRequest.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes/authentication", "v1.TokenRequest.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authentication/v1/tokenRequest.TokenRequest */ Boolean = js.native
     }
     
+    @JSImport("@pulumi/kubernetes/authentication", "v1.TokenReview")
     @js.native
     class TokenReview protected ()
       extends typings.pulumiKubernetes.authenticationV1Mod.TokenReview {
@@ -69,8 +74,7 @@ object authenticationMod extends js.Object {
       def this(name: String, args: TokenReviewArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object TokenReview extends js.Object {
+    object TokenReview {
       
       /**
         * Get an existing TokenReview resource's state with the given name, ID, and optional extra
@@ -80,20 +84,26 @@ object authenticationMod extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes/authentication", "v1.TokenReview.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1TokenReviewMod.TokenReview = js.native
+      @JSImport("@pulumi/kubernetes/authentication", "v1.TokenReview.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1TokenReviewMod.TokenReview = js.native
       
       /**
         * Returns true if the given object is an instance of TokenReview.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes/authentication", "v1.TokenReview.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authentication/v1/tokenReview.TokenReview */ Boolean = js.native
     }
   }
   
-  @js.native
-  object v1beta1 extends js.Object {
+  object v1beta1 {
     
+    @JSImport("@pulumi/kubernetes/authentication", "v1beta1.TokenReview")
     @js.native
     class TokenReview protected ()
       extends typings.pulumiKubernetes.authenticationV1beta1Mod.TokenReview {
@@ -114,8 +124,7 @@ object authenticationMod extends js.Object {
       ) = this()
     }
     /* static members */
-    @js.native
-    object TokenReview extends js.Object {
+    object TokenReview {
       
       /**
         * Get an existing TokenReview resource's state with the given name, ID, and optional extra
@@ -125,13 +134,19 @@ object authenticationMod extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes/authentication", "v1beta1.TokenReview.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.tokenReviewMod.TokenReview = js.native
+      @JSImport("@pulumi/kubernetes/authentication", "v1beta1.TokenReview.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.tokenReviewMod.TokenReview = js.native
       
       /**
         * Returns true if the given object is an instance of TokenReview.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes/authentication", "v1beta1.TokenReview.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authentication/v1beta1/tokenReview.TokenReview */ Boolean = js.native
     }
   }

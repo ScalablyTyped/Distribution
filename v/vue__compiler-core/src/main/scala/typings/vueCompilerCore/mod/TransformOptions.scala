@@ -2,12 +2,13 @@ package typings.vueCompilerCore.mod
 
 import typings.babelParser.mod.ParserPlugin
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformOptions extends js.Object {
+trait TransformOptions extends StObject {
   
   /**
     * Optional binding metadata analyzed from script - used to optimize
@@ -111,116 +112,104 @@ object TransformOptions {
   }
   
   @scala.inline
-  implicit class TransformOptionsOps[Self <: TransformOptions] (val x: Self) extends AnyVal {
+  implicit class TransformOptionsMutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingMetadataUndefined: Self = StObject.set(x, "bindingMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheHandlers(value: Boolean): Self = StObject.set(x, "cacheHandlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingMetadata(value: BindingMetadata): Self = this.set("bindingMetadata", value.asInstanceOf[js.Any])
+    def setCacheHandlersUndefined: Self = StObject.set(x, "cacheHandlers", js.undefined)
     
     @scala.inline
-    def deleteBindingMetadata: Self = this.set("bindingMetadata", js.undefined)
+    def setDirectiveTransforms(value: Record[String, js.UndefOr[DirectiveTransform]]): Self = StObject.set(x, "directiveTransforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheHandlers(value: Boolean): Self = this.set("cacheHandlers", value.asInstanceOf[js.Any])
+    def setDirectiveTransformsUndefined: Self = StObject.set(x, "directiveTransforms", js.undefined)
     
     @scala.inline
-    def deleteCacheHandlers: Self = this.set("cacheHandlers", js.undefined)
+    def setExpressionPlugins(value: js.Array[ParserPlugin]): Self = StObject.set(x, "expressionPlugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectiveTransforms(value: Record[String, js.UndefOr[DirectiveTransform]]): Self = this.set("directiveTransforms", value.asInstanceOf[js.Any])
+    def setExpressionPluginsUndefined: Self = StObject.set(x, "expressionPlugins", js.undefined)
     
     @scala.inline
-    def deleteDirectiveTransforms: Self = this.set("directiveTransforms", js.undefined)
+    def setExpressionPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "expressionPlugins", js.Array(value :_*))
     
     @scala.inline
-    def setExpressionPluginsVarargs(value: ParserPlugin*): Self = this.set("expressionPlugins", js.Array(value :_*))
+    def setHoistStatic(value: Boolean): Self = StObject.set(x, "hoistStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionPlugins(value: js.Array[ParserPlugin]): Self = this.set("expressionPlugins", value.asInstanceOf[js.Any])
+    def setHoistStaticUndefined: Self = StObject.set(x, "hoistStatic", js.undefined)
     
     @scala.inline
-    def deleteExpressionPlugins: Self = this.set("expressionPlugins", js.undefined)
+    def setIsBuiltInComponent(value: /* tag */ String => js.Symbol | Unit): Self = StObject.set(x, "isBuiltInComponent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHoistStatic(value: Boolean): Self = this.set("hoistStatic", value.asInstanceOf[js.Any])
+    def setIsBuiltInComponentUndefined: Self = StObject.set(x, "isBuiltInComponent", js.undefined)
     
     @scala.inline
-    def deleteHoistStatic: Self = this.set("hoistStatic", js.undefined)
+    def setIsCustomElement(value: /* tag */ String => Boolean | Unit): Self = StObject.set(x, "isCustomElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsBuiltInComponent(value: /* tag */ String => js.Symbol | Unit): Self = this.set("isBuiltInComponent", js.Any.fromFunction1(value))
+    def setIsCustomElementUndefined: Self = StObject.set(x, "isCustomElement", js.undefined)
     
     @scala.inline
-    def deleteIsBuiltInComponent: Self = this.set("isBuiltInComponent", js.undefined)
+    def setNodeTransforms(value: js.Array[NodeTransform]): Self = StObject.set(x, "nodeTransforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCustomElement(value: /* tag */ String => Boolean | Unit): Self = this.set("isCustomElement", js.Any.fromFunction1(value))
+    def setNodeTransformsUndefined: Self = StObject.set(x, "nodeTransforms", js.undefined)
     
     @scala.inline
-    def deleteIsCustomElement: Self = this.set("isCustomElement", js.undefined)
+    def setNodeTransformsVarargs(value: NodeTransform*): Self = StObject.set(x, "nodeTransforms", js.Array(value :_*))
     
     @scala.inline
-    def setNodeTransformsVarargs(value: NodeTransform*): Self = this.set("nodeTransforms", js.Array(value :_*))
+    def setOnError(value: /* error */ CompilerError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNodeTransforms(value: js.Array[NodeTransform]): Self = this.set("nodeTransforms", value.asInstanceOf[js.Any])
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteNodeTransforms: Self = this.set("nodeTransforms", js.undefined)
+    def setPrefixIdentifiers(value: Boolean): Self = StObject.set(x, "prefixIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnError(value: /* error */ CompilerError => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setPrefixIdentifiersUndefined: Self = StObject.set(x, "prefixIdentifiers", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixIdentifiers(value: Boolean): Self = this.set("prefixIdentifiers", value.asInstanceOf[js.Any])
+    def setScopeIdNull: Self = StObject.set(x, "scopeId", null)
     
     @scala.inline
-    def deletePrefixIdentifiers: Self = this.set("prefixIdentifiers", js.undefined)
+    def setScopeIdUndefined: Self = StObject.set(x, "scopeId", js.undefined)
     
     @scala.inline
-    def setScopeId(value: String): Self = this.set("scopeId", value.asInstanceOf[js.Any])
+    def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScopeId: Self = this.set("scopeId", js.undefined)
+    def setSsrCssVars(value: String): Self = StObject.set(x, "ssrCssVars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeIdNull: Self = this.set("scopeId", null)
+    def setSsrCssVarsUndefined: Self = StObject.set(x, "ssrCssVars", js.undefined)
     
     @scala.inline
-    def setSsr(value: Boolean): Self = this.set("ssr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsr: Self = this.set("ssr", js.undefined)
-    
-    @scala.inline
-    def setSsrCssVars(value: String): Self = this.set("ssrCssVars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsrCssVars: Self = this.set("ssrCssVars", js.undefined)
+    def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
     
     @scala.inline
     def setTransformHoist(
       value: (/* children */ js.Array[TemplateChildNode], /* context */ TransformContext, /* parent */ ParentNode2) => Unit
-    ): Self = this.set("transformHoist", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "transformHoist", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteTransformHoist: Self = this.set("transformHoist", js.undefined)
+    def setTransformHoistNull: Self = StObject.set(x, "transformHoist", null)
     
     @scala.inline
-    def setTransformHoistNull: Self = this.set("transformHoist", null)
+    def setTransformHoistUndefined: Self = StObject.set(x, "transformHoist", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DriveList extends js.Object {
+trait DriveList extends StObject {
   
   /** The list of shared drives. If nextPageToken is populated, then this list may be incomplete and an additional page of results should be fetched. */
   var drives: js.UndefOr[js.Array[Drive]] = js.native
@@ -28,39 +29,27 @@ object DriveList {
   }
   
   @scala.inline
-  implicit class DriveListOps[Self <: DriveList] (val x: Self) extends AnyVal {
+  implicit class DriveListMutableBuilder[Self <: DriveList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrives(value: js.Array[Drive]): Self = StObject.set(x, "drives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrivesUndefined: Self = StObject.set(x, "drives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrivesVarargs(value: Drive*): Self = StObject.set(x, "drives", js.Array(value :_*))
     
     @scala.inline
-    def setDrivesVarargs(value: Drive*): Self = this.set("drives", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrives(value: js.Array[Drive]): Self = this.set("drives", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDrives: Self = this.set("drives", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMetadataCardValue extends js.Object {
+trait IMetadataCardValue extends StObject {
   
   val HasIcon: Boolean = js.native
   
@@ -47,48 +48,36 @@ object IMetadataCardValue {
   }
   
   @scala.inline
-  implicit class IMetadataCardValueOps[Self <: IMetadataCardValue] (val x: Self) extends AnyVal {
+  implicit class IMetadataCardValueMutableBuilder[Self <: IMetadataCardValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasIcon(value: Boolean): Self = StObject.set(x, "HasIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconURL(value: String): Self = StObject.set(x, "IconURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasIcon(value: Boolean): Self = this.set("HasIcon", value.asInstanceOf[js.Any])
+    def setIsDeleted(value: () => Boolean): Self = StObject.set(x, "IsDeleted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setIsHidden(value: () => Boolean): Self = StObject.set(x, "IsHidden", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIconURL(value: String): Self = this.set("IconURL", value.asInstanceOf[js.Any])
+    def setIsMultiValue(value: Boolean): Self = StObject.set(x, "IsMultiValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeleted(value: () => Boolean): Self = this.set("IsDeleted", js.Any.fromFunction0(value))
+    def setItem(value: Double): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHidden(value: () => Boolean): Self = this.set("IsHidden", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMultiValue(value: Boolean): Self = this.set("IsMultiValue", value.asInstanceOf[js.Any])
+    def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: Double): Self = this.set("Item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: js.Any): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

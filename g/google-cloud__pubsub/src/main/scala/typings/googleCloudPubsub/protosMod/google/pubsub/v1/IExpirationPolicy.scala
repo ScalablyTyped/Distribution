@@ -1,22 +1,36 @@
 package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import typings.googleCloudPubsub.protosMod.google.protobuf.IDuration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an ExpirationPolicy. */
-trait IExpirationPolicy extends js.Object {
+@js.native
+trait IExpirationPolicy extends StObject {
+  
   /** ExpirationPolicy ttl */
-  var ttl: js.UndefOr[IDuration | Null] = js.undefined
+  var ttl: js.UndefOr[IDuration | Null] = js.native
 }
-
 object IExpirationPolicy {
+  
   @scala.inline
-  def apply(ttl: js.UndefOr[Null | IDuration] = js.undefined): IExpirationPolicy = {
+  def apply(): IExpirationPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpirationPolicy]
   }
+  
+  @scala.inline
+  implicit class IExpirationPolicyMutableBuilder[Self <: IExpirationPolicy] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setTtl(value: IDuration): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTtlNull: Self = StObject.set(x, "ttl", null)
+    
+    @scala.inline
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+  }
 }
-

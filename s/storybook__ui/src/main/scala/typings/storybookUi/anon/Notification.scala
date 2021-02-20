@@ -1,11 +1,12 @@
 package typings.storybookUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notification extends js.Object {
+trait Notification extends StObject {
   
   var notification: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['notifications'][0] */ js.Any = js.native
   
@@ -23,26 +24,14 @@ object Notification {
   }
   
   @scala.inline
-  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setNotification(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['notifications'][0] */ js.Any
-    ): Self = this.set("notification", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDismissNotification(value: String => Unit): Self = this.set("onDismissNotification", js.Any.fromFunction1(value))
+    def setOnDismissNotification(value: String => Unit): Self = StObject.set(x, "onDismissNotification", js.Any.fromFunction1(value))
   }
 }

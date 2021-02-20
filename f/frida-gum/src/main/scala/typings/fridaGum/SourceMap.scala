@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JavaScript stack-traces.
   */
 @js.native
-trait SourceMap extends js.Object {
+trait SourceMap extends StObject {
   
   /**
     * Attempts to map a generated source position back to the original.
@@ -27,21 +28,9 @@ object SourceMap {
   }
   
   @scala.inline
-  implicit class SourceMapOps[Self <: SourceMap] (val x: Self) extends AnyVal {
+  implicit class SourceMapMutableBuilder[Self <: SourceMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResolve(value: GeneratedSourcePosition => OriginalSourcePosition | Null): Self = this.set("resolve", js.Any.fromFunction1(value))
+    def setResolve(value: GeneratedSourcePosition => OriginalSourcePosition | Null): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
   }
 }

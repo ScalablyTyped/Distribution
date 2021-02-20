@@ -1,6 +1,7 @@
 package typings.makerJs.MakerJs
 
 import typings.makerJs.MakerJs.measure.Atlas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,42 +41,30 @@ object ICombineOptions {
   }
   
   @scala.inline
-  implicit class ICombineOptionsOps[Self <: ICombineOptions] (val x: Self) extends AnyVal {
+  implicit class ICombineOptionsMutableBuilder[Self <: ICombineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFarPoint(value: IPoint): Self = StObject.set(x, "farPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFarPointUndefined: Self = StObject.set(x, "farPoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeasureA(value: Atlas): Self = StObject.set(x, "measureA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFarPoint(value: IPoint): Self = this.set("farPoint", value.asInstanceOf[js.Any])
+    def setMeasureAUndefined: Self = StObject.set(x, "measureA", js.undefined)
     
     @scala.inline
-    def deleteFarPoint: Self = this.set("farPoint", js.undefined)
+    def setMeasureB(value: Atlas): Self = StObject.set(x, "measureB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasureA(value: Atlas): Self = this.set("measureA", value.asInstanceOf[js.Any])
+    def setMeasureBUndefined: Self = StObject.set(x, "measureB", js.undefined)
     
     @scala.inline
-    def deleteMeasureA: Self = this.set("measureA", js.undefined)
+    def setTrimDeadEnds(value: Boolean): Self = StObject.set(x, "trimDeadEnds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasureB(value: Atlas): Self = this.set("measureB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeasureB: Self = this.set("measureB", js.undefined)
-    
-    @scala.inline
-    def setTrimDeadEnds(value: Boolean): Self = this.set("trimDeadEnds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrimDeadEnds: Self = this.set("trimDeadEnds", js.undefined)
+    def setTrimDeadEndsUndefined: Self = StObject.set(x, "trimDeadEnds", js.undefined)
   }
 }

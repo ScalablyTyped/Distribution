@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +79,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisJsApi.arcgisJsApiStrings.VI
   - typings.arcgisJsApi.arcgisJsApiStrings.ZA
 */
-trait SupportedRegion extends js.Object
+trait SupportedRegion extends StObject
 object SupportedRegion {
   
   @scala.inline

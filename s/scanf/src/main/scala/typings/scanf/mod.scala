@@ -6,13 +6,12 @@ import typings.scanf.scanfStrings.Percentsignf
 import typings.scanf.scanfStrings.Percentsigno
 import typings.scanf.scanfStrings.Percentsigns
 import typings.scanf.scanfStrings.Percentsignx
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("scanf", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	 * <p> Reads formatted data from stdin. </p>
@@ -22,6 +21,8 @@ object mod extends js.Object {
   	 * @param format The format contains a sequence of characters that control how characters extracted from the stream are tread.
   	 * @return An array containing data constructed from stdin with the <i>format</i>.
   	 */
+  @JSImport("scanf", JSImport.Namespace)
+  @js.native
   def apply(format: String): js.Array[Double | String] = js.native
   /**
   	 * <p> Reads formatted data from stdin. </p>
@@ -33,6 +34,8 @@ object mod extends js.Object {
   	 * 
   	 * @return A JSON object containing data constructed from stdin with the <i>format</i> and following <i>names</i>.
   	 */
+  @JSImport("scanf", JSImport.Namespace)
+  @js.native
   def apply(format: String, names: String*): js.Object = js.native
   /**
   	 * <p> Read formatted line from stdin. </p>
@@ -42,6 +45,8 @@ object mod extends js.Object {
   	 * @param format The format represents a word.
   	 * @return A word.
   	 */
+  @JSImport("scanf", JSImport.Namespace)
+  @js.native
   def apply(format: PercentsignS): String = js.native
   /**
   	 * <p> Read formatted integer from stdin. </p>
@@ -51,6 +56,8 @@ object mod extends js.Object {
   	 * @param format The format represents an integer value.
   	 * @return An integer.
   	 */
+  @JSImport("scanf", JSImport.Namespace)
+  @js.native
   def apply(format: Percentsignd): Double = js.native
   /**
   	 * <p> Read formatted float from stdin. </p>
@@ -60,6 +67,8 @@ object mod extends js.Object {
   	 * @param format The format represents an float value.
   	 * @return A float.
   	 */
+  @JSImport("scanf", JSImport.Namespace)
+  @js.native
   def apply(format: Percentsignf): Double = js.native
   /**
   	 * <p> Read formatted octal from stdin. </p>
@@ -69,6 +78,8 @@ object mod extends js.Object {
   	 * @param format The format represents an octal value.
   	 * @return An octal.
   	 */
+  @JSImport("scanf", JSImport.Namespace)
+  @js.native
   def apply(format: Percentsigno): Double = js.native
   /* ------------------------------------------------------------
   		SCANF - FROM STDIN
@@ -81,6 +92,8 @@ object mod extends js.Object {
   	 * @param format The format represents a word.
   	 * @return A word.
   	 */
+  @JSImport("scanf", JSImport.Namespace)
+  @js.native
   def apply(format: Percentsigns): String = js.native
   /**
   	 * <p> Read formatted hex from stdin. </p>
@@ -90,6 +103,8 @@ object mod extends js.Object {
   	 * @param format The format represents a hex value.
   	 * @return A hex.
   	 */
+  @JSImport("scanf", JSImport.Namespace)
+  @js.native
   def apply(format: Percentsignx): Double = js.native
   
   /**
@@ -102,6 +117,8 @@ object mod extends js.Object {
   		 * 
   		 * @return An array containing data constructed from string with the <i>format</i>.
   		 */
+  @JSImport("scanf", "sscanf")
+  @js.native
   def sscanf(source: String, format: String): js.Array[Double | String] = js.native
   /**
   		 * <p> Reads formatted data from string. </p>
@@ -114,6 +131,8 @@ object mod extends js.Object {
   		 * 
   		 * @return A JSON object containing data constructed from string with the <i>format</i> and following <i>names</i>.
   		 */
+  @JSImport("scanf", "sscanf")
+  @js.native
   def sscanf(source: String, format: String, names: String*): js.Object = js.native
   /**
   		 * <p> Read formatted line from string. </p>
@@ -125,7 +144,8 @@ object mod extends js.Object {
   		 * 
   		 * @return A word.
   		 */
-  @JSName("sscanf")
+  @JSImport("scanf", "sscanf")
+  @js.native
   def sscanf_S(source: String, format: PercentsignS): String = js.native
   /**
   		 * <p> Read formatted integer from string. </p>
@@ -137,7 +157,8 @@ object mod extends js.Object {
   		 * 
   		 * @return An integer.
   		 */
-  @JSName("sscanf")
+  @JSImport("scanf", "sscanf")
+  @js.native
   def sscanf_d(source: String, format: Percentsignd): Double = js.native
   /**
   		 * <p> Read formatted float from string. </p>
@@ -149,7 +170,8 @@ object mod extends js.Object {
   		 * 
   		 * @return A float.
   		 */
-  @JSName("sscanf")
+  @JSImport("scanf", "sscanf")
+  @js.native
   def sscanf_f(source: String, format: Percentsignf): Double = js.native
   /**
   		 * <p> Read formatted octal from string. </p>
@@ -161,7 +183,8 @@ object mod extends js.Object {
   		 * 
   		 * @return An octal.
   		 */
-  @JSName("sscanf")
+  @JSImport("scanf", "sscanf")
+  @js.native
   def sscanf_o(source: String, format: Percentsigno): Double = js.native
   /**
   		 * <p> Read formatted word from string. </p>
@@ -173,7 +196,8 @@ object mod extends js.Object {
   		 * 
   		 * @return A word.
   		 */
-  @JSName("sscanf")
+  @JSImport("scanf", "sscanf")
+  @js.native
   def sscanf_s(source: String, format: Percentsigns): String = js.native
   /**
   		 * <p> Read formatted hex from string. </p>
@@ -185,6 +209,7 @@ object mod extends js.Object {
   		 * 
   		 * @return A hex.
   		 */
-  @JSName("sscanf")
+  @JSImport("scanf", "sscanf")
+  @js.native
   def sscanf_x(source: String, format: Percentsignx): Double = js.native
 }

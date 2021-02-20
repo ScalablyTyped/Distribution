@@ -4,6 +4,7 @@ import typings.sharp.sharpNumbers.`1`
 import typings.sharp.sharpNumbers.`2`
 import typings.sharp.sharpNumbers.`4`
 import typings.sharp.sharpNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,72 +48,60 @@ object TiffOptions {
   }
   
   @scala.inline
-  implicit class TiffOptionsOps[Self <: TiffOptions] (val x: Self) extends AnyVal {
+  implicit class TiffOptionsMutableBuilder[Self <: TiffOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitdepth(value: `1` | `2` | `4` | `8`): Self = StObject.set(x, "bitdepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitdepthUndefined: Self = StObject.set(x, "bitdepth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitdepth(value: `1` | `2` | `4` | `8`): Self = this.set("bitdepth", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def deleteBitdepth: Self = this.set("bitdepth", js.undefined)
+    def setPredictor(value: String): Self = StObject.set(x, "predictor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setPredictorUndefined: Self = StObject.set(x, "predictor", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setPyramid(value: Boolean): Self = StObject.set(x, "pyramid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredictor(value: String): Self = this.set("predictor", value.asInstanceOf[js.Any])
+    def setPyramidUndefined: Self = StObject.set(x, "pyramid", js.undefined)
     
     @scala.inline
-    def deletePredictor: Self = this.set("predictor", js.undefined)
+    def setTile(value: Boolean): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPyramid(value: Boolean): Self = this.set("pyramid", value.asInstanceOf[js.Any])
+    def setTileHeight(value: Boolean): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePyramid: Self = this.set("pyramid", js.undefined)
+    def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
     
     @scala.inline
-    def setTile(value: Boolean): Self = this.set("tile", value.asInstanceOf[js.Any])
+    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
     
     @scala.inline
-    def deleteTile: Self = this.set("tile", js.undefined)
+    def setTileWidth(value: Boolean): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileHeight(value: Boolean): Self = this.set("tileHeight", value.asInstanceOf[js.Any])
+    def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
     
     @scala.inline
-    def deleteTileHeight: Self = this.set("tileHeight", js.undefined)
+    def setXres(value: Double): Self = StObject.set(x, "xres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileWidth(value: Boolean): Self = this.set("tileWidth", value.asInstanceOf[js.Any])
+    def setXresUndefined: Self = StObject.set(x, "xres", js.undefined)
     
     @scala.inline
-    def deleteTileWidth: Self = this.set("tileWidth", js.undefined)
+    def setYres(value: Double): Self = StObject.set(x, "yres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXres(value: Double): Self = this.set("xres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXres: Self = this.set("xres", js.undefined)
-    
-    @scala.inline
-    def setYres(value: Double): Self = this.set("yres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYres: Self = this.set("yres", js.undefined)
+    def setYresUndefined: Self = StObject.set(x, "yres", js.undefined)
   }
 }

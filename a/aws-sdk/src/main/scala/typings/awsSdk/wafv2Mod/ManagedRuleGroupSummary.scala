@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedRuleGroupSummary extends js.Object {
+trait ManagedRuleGroupSummary extends StObject {
   
   /**
     * The description of the managed rule group, provided by AWS Managed Rules or the AWS Marketplace seller who manages it.
@@ -31,36 +32,24 @@ object ManagedRuleGroupSummary {
   }
   
   @scala.inline
-  implicit class ManagedRuleGroupSummaryOps[Self <: ManagedRuleGroupSummary] (val x: Self) extends AnyVal {
+  implicit class ManagedRuleGroupSummaryMutableBuilder[Self <: ManagedRuleGroupSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: EntityDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setVendorName(value: VendorName): Self = StObject.set(x, "VendorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setVendorName(value: VendorName): Self = this.set("VendorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendorName: Self = this.set("VendorName", js.undefined)
+    def setVendorNameUndefined: Self = StObject.set(x, "VendorName", js.undefined)
   }
 }

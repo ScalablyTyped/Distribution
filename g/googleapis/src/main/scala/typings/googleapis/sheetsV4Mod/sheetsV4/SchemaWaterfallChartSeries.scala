@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single series of data for a waterfall chart.
   */
 @js.native
-trait SchemaWaterfallChartSeries extends js.Object {
+trait SchemaWaterfallChartSeries extends StObject {
   
   /**
     * Custom subtotal columns appearing in this series. The order in which
@@ -53,57 +54,45 @@ object SchemaWaterfallChartSeries {
   }
   
   @scala.inline
-  implicit class SchemaWaterfallChartSeriesOps[Self <: SchemaWaterfallChartSeries] (val x: Self) extends AnyVal {
+  implicit class SchemaWaterfallChartSeriesMutableBuilder[Self <: SchemaWaterfallChartSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomSubtotals(value: js.Array[SchemaWaterfallChartCustomSubtotal]): Self = StObject.set(x, "customSubtotals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomSubtotalsUndefined: Self = StObject.set(x, "customSubtotals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomSubtotalsVarargs(value: SchemaWaterfallChartCustomSubtotal*): Self = StObject.set(x, "customSubtotals", js.Array(value :_*))
     
     @scala.inline
-    def setCustomSubtotalsVarargs(value: SchemaWaterfallChartCustomSubtotal*): Self = this.set("customSubtotals", js.Array(value :_*))
+    def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSubtotals(value: js.Array[SchemaWaterfallChartCustomSubtotal]): Self = this.set("customSubtotals", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCustomSubtotals: Self = this.set("customSubtotals", js.undefined)
+    def setHideTrailingSubtotal(value: Boolean): Self = StObject.set(x, "hideTrailingSubtotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: SchemaChartData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setHideTrailingSubtotalUndefined: Self = StObject.set(x, "hideTrailingSubtotal", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setNegativeColumnsStyle(value: SchemaWaterfallChartColumnStyle): Self = StObject.set(x, "negativeColumnsStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideTrailingSubtotal(value: Boolean): Self = this.set("hideTrailingSubtotal", value.asInstanceOf[js.Any])
+    def setNegativeColumnsStyleUndefined: Self = StObject.set(x, "negativeColumnsStyle", js.undefined)
     
     @scala.inline
-    def deleteHideTrailingSubtotal: Self = this.set("hideTrailingSubtotal", js.undefined)
+    def setPositiveColumnsStyle(value: SchemaWaterfallChartColumnStyle): Self = StObject.set(x, "positiveColumnsStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeColumnsStyle(value: SchemaWaterfallChartColumnStyle): Self = this.set("negativeColumnsStyle", value.asInstanceOf[js.Any])
+    def setPositiveColumnsStyleUndefined: Self = StObject.set(x, "positiveColumnsStyle", js.undefined)
     
     @scala.inline
-    def deleteNegativeColumnsStyle: Self = this.set("negativeColumnsStyle", js.undefined)
+    def setSubtotalColumnsStyle(value: SchemaWaterfallChartColumnStyle): Self = StObject.set(x, "subtotalColumnsStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositiveColumnsStyle(value: SchemaWaterfallChartColumnStyle): Self = this.set("positiveColumnsStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositiveColumnsStyle: Self = this.set("positiveColumnsStyle", js.undefined)
-    
-    @scala.inline
-    def setSubtotalColumnsStyle(value: SchemaWaterfallChartColumnStyle): Self = this.set("subtotalColumnsStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtotalColumnsStyle: Self = this.set("subtotalColumnsStyle", js.undefined)
+    def setSubtotalColumnsStyleUndefined: Self = StObject.set(x, "subtotalColumnsStyle", js.undefined)
   }
 }

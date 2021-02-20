@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelRemoteExecutionV2ExecutedActionMetadata extends js.Object {
+trait BuildBazelRemoteExecutionV2ExecutedActionMetadata extends StObject {
   
   /** When the worker completed executing the action command. */
   var executionCompletedTimestamp: js.UndefOr[String] = js.native
@@ -46,78 +47,66 @@ object BuildBazelRemoteExecutionV2ExecutedActionMetadata {
   }
   
   @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ExecutedActionMetadataOps[Self <: BuildBazelRemoteExecutionV2ExecutedActionMetadata] (val x: Self) extends AnyVal {
+  implicit class BuildBazelRemoteExecutionV2ExecutedActionMetadataMutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecutedActionMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionCompletedTimestamp(value: String): Self = StObject.set(x, "executionCompletedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionCompletedTimestampUndefined: Self = StObject.set(x, "executionCompletedTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionStartTimestamp(value: String): Self = StObject.set(x, "executionStartTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionCompletedTimestamp(value: String): Self = this.set("executionCompletedTimestamp", value.asInstanceOf[js.Any])
+    def setExecutionStartTimestampUndefined: Self = StObject.set(x, "executionStartTimestamp", js.undefined)
     
     @scala.inline
-    def deleteExecutionCompletedTimestamp: Self = this.set("executionCompletedTimestamp", js.undefined)
+    def setInputFetchCompletedTimestamp(value: String): Self = StObject.set(x, "inputFetchCompletedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionStartTimestamp(value: String): Self = this.set("executionStartTimestamp", value.asInstanceOf[js.Any])
+    def setInputFetchCompletedTimestampUndefined: Self = StObject.set(x, "inputFetchCompletedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteExecutionStartTimestamp: Self = this.set("executionStartTimestamp", js.undefined)
+    def setInputFetchStartTimestamp(value: String): Self = StObject.set(x, "inputFetchStartTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFetchCompletedTimestamp(value: String): Self = this.set("inputFetchCompletedTimestamp", value.asInstanceOf[js.Any])
+    def setInputFetchStartTimestampUndefined: Self = StObject.set(x, "inputFetchStartTimestamp", js.undefined)
     
     @scala.inline
-    def deleteInputFetchCompletedTimestamp: Self = this.set("inputFetchCompletedTimestamp", js.undefined)
+    def setOutputUploadCompletedTimestamp(value: String): Self = StObject.set(x, "outputUploadCompletedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFetchStartTimestamp(value: String): Self = this.set("inputFetchStartTimestamp", value.asInstanceOf[js.Any])
+    def setOutputUploadCompletedTimestampUndefined: Self = StObject.set(x, "outputUploadCompletedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteInputFetchStartTimestamp: Self = this.set("inputFetchStartTimestamp", js.undefined)
+    def setOutputUploadStartTimestamp(value: String): Self = StObject.set(x, "outputUploadStartTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputUploadCompletedTimestamp(value: String): Self = this.set("outputUploadCompletedTimestamp", value.asInstanceOf[js.Any])
+    def setOutputUploadStartTimestampUndefined: Self = StObject.set(x, "outputUploadStartTimestamp", js.undefined)
     
     @scala.inline
-    def deleteOutputUploadCompletedTimestamp: Self = this.set("outputUploadCompletedTimestamp", js.undefined)
+    def setQueuedTimestamp(value: String): Self = StObject.set(x, "queuedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputUploadStartTimestamp(value: String): Self = this.set("outputUploadStartTimestamp", value.asInstanceOf[js.Any])
+    def setQueuedTimestampUndefined: Self = StObject.set(x, "queuedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteOutputUploadStartTimestamp: Self = this.set("outputUploadStartTimestamp", js.undefined)
+    def setWorker(value: String): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueuedTimestamp(value: String): Self = this.set("queuedTimestamp", value.asInstanceOf[js.Any])
+    def setWorkerCompletedTimestamp(value: String): Self = StObject.set(x, "workerCompletedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueuedTimestamp: Self = this.set("queuedTimestamp", js.undefined)
+    def setWorkerCompletedTimestampUndefined: Self = StObject.set(x, "workerCompletedTimestamp", js.undefined)
     
     @scala.inline
-    def setWorker(value: String): Self = this.set("worker", value.asInstanceOf[js.Any])
+    def setWorkerStartTimestamp(value: String): Self = StObject.set(x, "workerStartTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWorker: Self = this.set("worker", js.undefined)
+    def setWorkerStartTimestampUndefined: Self = StObject.set(x, "workerStartTimestamp", js.undefined)
     
     @scala.inline
-    def setWorkerCompletedTimestamp(value: String): Self = this.set("workerCompletedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerCompletedTimestamp: Self = this.set("workerCompletedTimestamp", js.undefined)
-    
-    @scala.inline
-    def setWorkerStartTimestamp(value: String): Self = this.set("workerStartTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerStartTimestamp: Self = this.set("workerStartTimestamp", js.undefined)
+    def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
   }
 }

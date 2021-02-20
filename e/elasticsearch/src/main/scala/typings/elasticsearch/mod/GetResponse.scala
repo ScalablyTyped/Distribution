@@ -1,11 +1,12 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResponse[T] extends js.Object {
+trait GetResponse[T] extends StObject {
   
   var _id: String = js.native
   
@@ -30,42 +31,30 @@ object GetResponse {
   }
   
   @scala.inline
-  implicit class GetResponseOps[Self <: GetResponse[_], T] (val x: Self with GetResponse[T]) extends AnyVal {
+  implicit class GetResponseMutableBuilder[Self <: GetResponse[_], T] (val x: Self with GetResponse[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_index(value: String): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_id(value: String): Self = this.set("_id", value.asInstanceOf[js.Any])
+    def set_routing(value: String): Self = StObject.set(x, "_routing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_index(value: String): Self = this.set("_index", value.asInstanceOf[js.Any])
+    def set_routingUndefined: Self = StObject.set(x, "_routing", js.undefined)
     
     @scala.inline
-    def set_source(value: T): Self = this.set("_source", value.asInstanceOf[js.Any])
+    def set_source(value: T): Self = StObject.set(x, "_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: String): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_version(value: Double): Self = this.set("_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFound(value: Boolean): Self = this.set("found", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_routing(value: String): Self = this.set("_routing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_routing: Self = this.set("_routing", js.undefined)
+    def set_version(value: Double): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
   }
 }

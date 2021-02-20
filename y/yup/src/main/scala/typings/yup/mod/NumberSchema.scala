@@ -13,6 +13,7 @@ import typings.yup.yupStrings.ceil
 import typings.yup.yupStrings.floor
 import typings.yup.yupStrings.round
 import typings.yup.yupStrings.trunc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

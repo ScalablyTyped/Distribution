@@ -1,13 +1,18 @@
 package typings.ol
 
 import typings.ol.pixelMod.Pixel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/render/Box", JSImport.Namespace)
-@js.native
-object boxMod extends js.Object {
+object boxMod {
+  
+  @JSImport("ol/render/Box", JSImport.Default)
+  @js.native
+  class default protected () extends RenderBox {
+    def this(className: String) = this()
+  }
   
   @js.native
   trait RenderBox
@@ -23,10 +28,5 @@ object boxMod extends js.Object {
     def setMap(map: typings.ol.pluggableMapMod.default): Unit = js.native
     
     def setPixels(startPixel: Pixel, endPixel: Pixel): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends RenderBox {
-    def this(className: String) = this()
   }
 }

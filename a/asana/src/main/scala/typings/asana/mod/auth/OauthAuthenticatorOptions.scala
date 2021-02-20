@@ -1,11 +1,12 @@
 package typings.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OauthAuthenticatorOptions extends js.Object {
+trait OauthAuthenticatorOptions extends StObject {
   
   var credentials: js.UndefOr[Credentials | String] = js.native
   
@@ -20,30 +21,18 @@ object OauthAuthenticatorOptions {
   }
   
   @scala.inline
-  implicit class OauthAuthenticatorOptionsOps[Self <: OauthAuthenticatorOptions] (val x: Self) extends AnyVal {
+  implicit class OauthAuthenticatorOptionsMutableBuilder[Self <: OauthAuthenticatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentials(value: Credentials | String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowType(value: FlowType): Self = StObject.set(x, "flowType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: Credentials | String): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
-    
-    @scala.inline
-    def setFlowType(value: FlowType): Self = this.set("flowType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlowType: Self = this.set("flowType", js.undefined)
+    def setFlowTypeUndefined: Self = StObject.set(x, "flowType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SplitterOptions extends js.Object {
+trait SplitterOptions extends StObject {
   
   var collapse: js.UndefOr[js.Function1[/* e */ SplitterCollapseEvent, Unit]] = js.native
   
@@ -34,75 +35,63 @@ object SplitterOptions {
   }
   
   @scala.inline
-  implicit class SplitterOptionsOps[Self <: SplitterOptions] (val x: Self) extends AnyVal {
+  implicit class SplitterOptionsMutableBuilder[Self <: SplitterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapse(value: /* e */ SplitterCollapseEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentLoad(value: /* e */ SplitterContentLoadEvent => Unit): Self = StObject.set(x, "contentLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCollapse(value: /* e */ SplitterCollapseEvent => Unit): Self = this.set("collapse", js.Any.fromFunction1(value))
+    def setContentLoadUndefined: Self = StObject.set(x, "contentLoad", js.undefined)
     
     @scala.inline
-    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    def setError(value: /* e */ SplitterErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContentLoad(value: /* e */ SplitterContentLoadEvent => Unit): Self = this.set("contentLoad", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteContentLoad: Self = this.set("contentLoad", js.undefined)
+    def setExpand(value: /* e */ SplitterExpandEvent => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: /* e */ SplitterErrorEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setLayoutChange(value: /* e */ SplitterEvent => Unit): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpand(value: /* e */ SplitterExpandEvent => Unit): Self = this.set("expand", js.Any.fromFunction1(value))
+    def setLayoutChangeUndefined: Self = StObject.set(x, "layoutChange", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutChange(value: /* e */ SplitterEvent => Unit): Self = this.set("layoutChange", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLayoutChange: Self = this.set("layoutChange", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPanes(value: js.Array[SplitterPane]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setPanesUndefined: Self = StObject.set(x, "panes", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setPanesVarargs(value: SplitterPane*): Self = StObject.set(x, "panes", js.Array(value :_*))
     
     @scala.inline
-    def setPanesVarargs(value: SplitterPane*): Self = this.set("panes", js.Array(value :_*))
+    def setResize(value: /* e */ SplitterEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPanes(value: js.Array[SplitterPane]): Self = this.set("panes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePanes: Self = this.set("panes", js.undefined)
-    
-    @scala.inline
-    def setResize(value: /* e */ SplitterEvent => Unit): Self = this.set("resize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
   }
 }

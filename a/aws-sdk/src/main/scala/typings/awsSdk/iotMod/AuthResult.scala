@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthResult extends js.Object {
+trait AuthResult extends StObject {
   
   /**
     * The policies and statements that allowed the specified action.
@@ -41,51 +42,39 @@ object AuthResult {
   }
   
   @scala.inline
-  implicit class AuthResultOps[Self <: AuthResult] (val x: Self) extends AnyVal {
+  implicit class AuthResultMutableBuilder[Self <: AuthResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowed(value: Allowed): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthDecision(value: AuthDecision): Self = StObject.set(x, "authDecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowed(value: Allowed): Self = this.set("allowed", value.asInstanceOf[js.Any])
+    def setAuthDecisionUndefined: Self = StObject.set(x, "authDecision", js.undefined)
     
     @scala.inline
-    def deleteAllowed: Self = this.set("allowed", js.undefined)
+    def setAuthInfo(value: AuthInfo): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthDecision(value: AuthDecision): Self = this.set("authDecision", value.asInstanceOf[js.Any])
+    def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
     
     @scala.inline
-    def deleteAuthDecision: Self = this.set("authDecision", js.undefined)
+    def setDenied(value: Denied): Self = StObject.set(x, "denied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthInfo(value: AuthInfo): Self = this.set("authInfo", value.asInstanceOf[js.Any])
+    def setDeniedUndefined: Self = StObject.set(x, "denied", js.undefined)
     
     @scala.inline
-    def deleteAuthInfo: Self = this.set("authInfo", js.undefined)
+    def setMissingContextValues(value: MissingContextValues): Self = StObject.set(x, "missingContextValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDenied(value: Denied): Self = this.set("denied", value.asInstanceOf[js.Any])
+    def setMissingContextValuesUndefined: Self = StObject.set(x, "missingContextValues", js.undefined)
     
     @scala.inline
-    def deleteDenied: Self = this.set("denied", js.undefined)
-    
-    @scala.inline
-    def setMissingContextValuesVarargs(value: MissingContextValue*): Self = this.set("missingContextValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setMissingContextValues(value: MissingContextValues): Self = this.set("missingContextValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMissingContextValues: Self = this.set("missingContextValues", js.undefined)
+    def setMissingContextValuesVarargs(value: MissingContextValue*): Self = StObject.set(x, "missingContextValues", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplacementEmailContent extends js.Object {
+trait ReplacementEmailContent extends StObject {
   
   /**
     * The ReplacementTemplate associated with ReplacementEmailContent.
@@ -21,24 +22,12 @@ object ReplacementEmailContent {
   }
   
   @scala.inline
-  implicit class ReplacementEmailContentOps[Self <: ReplacementEmailContent] (val x: Self) extends AnyVal {
+  implicit class ReplacementEmailContentMutableBuilder[Self <: ReplacementEmailContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplacementTemplate(value: ReplacementTemplate): Self = StObject.set(x, "ReplacementTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplacementTemplate(value: ReplacementTemplate): Self = this.set("ReplacementTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplacementTemplate: Self = this.set("ReplacementTemplate", js.undefined)
+    def setReplacementTemplateUndefined: Self = StObject.set(x, "ReplacementTemplate", js.undefined)
   }
 }

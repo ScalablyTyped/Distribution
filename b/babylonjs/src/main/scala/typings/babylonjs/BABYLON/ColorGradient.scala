@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object ColorGradient {
   }
   
   @scala.inline
-  implicit class ColorGradientOps[Self <: ColorGradient] (val x: Self) extends AnyVal {
+  implicit class ColorGradientMutableBuilder[Self <: ColorGradient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor1(value: Color4): Self = StObject.set(x, "color1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor2(value: Color4): Self = StObject.set(x, "color2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor2Undefined: Self = StObject.set(x, "color2", js.undefined)
     
     @scala.inline
-    def setColor1(value: Color4): Self = this.set("color1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetColorToRef(value: Color4 => Unit): Self = this.set("getColorToRef", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setColor2(value: Color4): Self = this.set("color2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor2: Self = this.set("color2", js.undefined)
+    def setGetColorToRef(value: Color4 => Unit): Self = StObject.set(x, "getColorToRef", js.Any.fromFunction1(value))
   }
 }

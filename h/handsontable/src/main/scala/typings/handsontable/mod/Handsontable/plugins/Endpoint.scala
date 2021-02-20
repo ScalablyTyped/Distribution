@@ -6,12 +6,13 @@ import typings.handsontable.handsontableStrings.custom
 import typings.handsontable.handsontableStrings.max
 import typings.handsontable.handsontableStrings.min
 import typings.handsontable.handsontableStrings.sum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Endpoint extends js.Object {
+trait Endpoint extends StObject {
   
   var customFunction: (js.ThisFunction1[/* this */ ColumnSummary, /* endpoint */ this.type, Double]) | Null = js.native
   
@@ -59,60 +60,48 @@ object Endpoint {
   }
   
   @scala.inline
-  implicit class EndpointOps[Self <: Endpoint] (val x: Self) extends AnyVal {
+  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomFunction(value: js.ThisFunction1[/* this */ ColumnSummary, Endpoint, Double]): Self = StObject.set(x, "customFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomFunctionNull: Self = StObject.set(x, "customFunction", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationColumn(value: Double): Self = StObject.set(x, "destinationColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationColumn(value: Double): Self = this.set("destinationColumn", value.asInstanceOf[js.Any])
+    def setDestinationRow(value: Double): Self = StObject.set(x, "destinationRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationRow(value: Double): Self = this.set("destinationRow", value.asInstanceOf[js.Any])
+    def setForceNumeric(value: Boolean): Self = StObject.set(x, "forceNumeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceNumeric(value: Boolean): Self = this.set("forceNumeric", value.asInstanceOf[js.Any])
+    def setRanges(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangesVarargs(value: js.Array[Double]*): Self = this.set("ranges", js.Array(value :_*))
+    def setRangesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "ranges", js.Array(value :_*))
     
     @scala.inline
-    def setRanges(value: js.Array[js.Array[Double]]): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setResult(value: Double): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: Double): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setReversedRowCoords(value: Boolean): Self = StObject.set(x, "reversedRowCoords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReversedRowCoords(value: Boolean): Self = this.set("reversedRowCoords", value.asInstanceOf[js.Any])
+    def setRoundFloat(value: Boolean): Self = StObject.set(x, "roundFloat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundFloat(value: Boolean): Self = this.set("roundFloat", value.asInstanceOf[js.Any])
+    def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceColumn(value: Double): Self = this.set("sourceColumn", value.asInstanceOf[js.Any])
+    def setSuppressDataTypeErrors(value: Boolean): Self = StObject.set(x, "suppressDataTypeErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressDataTypeErrors(value: Boolean): Self = this.set("suppressDataTypeErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: sum | min | max | count | average | custom): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomFunction(value: js.ThisFunction1[/* this */ ColumnSummary, Endpoint, Double]): Self = this.set("customFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomFunctionNull: Self = this.set("customFunction", null)
+    def setType(value: sum | min | max | count | average | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

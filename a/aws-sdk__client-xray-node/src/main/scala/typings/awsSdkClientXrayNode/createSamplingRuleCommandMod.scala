@@ -7,14 +7,14 @@ import typings.awsSdkClientXrayNode.typesCreateSamplingRuleOutputMod.CreateSampl
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/commands/CreateSamplingRuleCommand", JSImport.Namespace)
-@js.native
-object createSamplingRuleCommandMod extends js.Object {
+object createSamplingRuleCommandMod {
   
+  @JSImport("@aws-sdk/client-xray-node/commands/CreateSamplingRuleCommand", "CreateSamplingRuleCommand")
   @js.native
   class CreateSamplingRuleCommand protected () extends Command[
           InputTypesUnion, 

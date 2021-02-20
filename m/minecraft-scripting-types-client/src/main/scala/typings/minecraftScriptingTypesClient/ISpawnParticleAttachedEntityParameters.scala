@@ -3,6 +3,7 @@ package typings.minecraftScriptingTypesClient
 import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.ParticleEffect
 import typings.minecraftScriptingTypesShared.VectorArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is used to create a particle effect that will follow an entity around. This particle effect is only visible to the specific player that is running the client script where you fired the event. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. MoLang variables defined in the JSON of the effect can then be used to control that effect by changing them in the entity to which it is attached.
   */
 @js.native
-trait ISpawnParticleAttachedEntityParameters extends js.Object {
+trait ISpawnParticleAttachedEntityParameters extends StObject {
   
   /**
     * The identifier of the particle effect you want to attach to the entity. This is the same name you gave the effect in its JSON file
@@ -38,27 +39,15 @@ object ISpawnParticleAttachedEntityParameters {
   }
   
   @scala.inline
-  implicit class ISpawnParticleAttachedEntityParametersOps[Self <: ISpawnParticleAttachedEntityParameters] (val x: Self) extends AnyVal {
+  implicit class ISpawnParticleAttachedEntityParametersMutableBuilder[Self <: ISpawnParticleAttachedEntityParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffect(value: ParticleEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEffect(value: ParticleEffect): Self = this.set("effect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntity(value: IEntity): Self = this.set("entity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffset(value: VectorArray): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffset(value: VectorArray): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

@@ -1,8 +1,7 @@
 package typings.vueI18n.mod
 
 import typings.vue.pluginMod.PluginFunction
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +11,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class default () extends VueI18n {
   def this(options: typings.vueI18n.mod.VueI18n.I18nOptions) = this()
 }
-/* static members */
-@JSImport("vue-i18n", JSImport.Default)
-@js.native
-object default extends js.Object {
+object default {
   
-  var availabilities: typings.vueI18n.mod.VueI18n.IntlAvailability = js.native
+  @JSImport("vue-i18n", JSImport.Default)
+  @js.native
+  val ^ : js.Any = js.native
   
-  def install(Vue: VueConstructor[Vue]): Unit = js.native
-  def install(Vue: VueConstructor[Vue], options: scala.Nothing): Unit = js.native
-  @JSName("install")
-  var install_Original: PluginFunction[scala.Nothing] = js.native
+  /* static member */
+  @JSImport("vue-i18n", "default.availabilities")
+  @js.native
+  def availabilities: typings.vueI18n.mod.VueI18n.IntlAvailability = js.native
+  @scala.inline
+  def availabilities_=(x: typings.vueI18n.mod.VueI18n.IntlAvailability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availabilities")(x.asInstanceOf[js.Any])
   
-  var version: String = js.native
+  /* static member */
+  @JSImport("vue-i18n", "default.install")
+  @js.native
+  def install: PluginFunction[scala.Nothing] = js.native
+  @scala.inline
+  def install_=(x: PluginFunction[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("vue-i18n", "default.version")
+  @js.native
+  def version: String = js.native
+  @scala.inline
+  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.chance.Chance
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreditCardExpiration extends js.Object {
+trait CreditCardExpiration extends StObject {
   
   var month: String = js.native
   
@@ -20,24 +21,12 @@ object CreditCardExpiration {
   }
   
   @scala.inline
-  implicit class CreditCardExpirationOps[Self <: CreditCardExpiration] (val x: Self) extends AnyVal {
+  implicit class CreditCardExpirationMutableBuilder[Self <: CreditCardExpiration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMonth(value: String): Self = this.set("month", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYear(value: String): Self = this.set("year", value.asInstanceOf[js.Any])
+    def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

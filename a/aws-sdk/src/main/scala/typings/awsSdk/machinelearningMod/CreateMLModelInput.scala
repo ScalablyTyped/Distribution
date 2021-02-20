@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateMLModelInput extends js.Object {
+trait CreateMLModelInput extends StObject {
   
   /**
     * A user-supplied ID that uniquely identifies the MLModel.
@@ -51,51 +52,39 @@ object CreateMLModelInput {
   }
   
   @scala.inline
-  implicit class CreateMLModelInputOps[Self <: CreateMLModelInput] (val x: Self) extends AnyVal {
+  implicit class CreateMLModelInputMutableBuilder[Self <: CreateMLModelInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMLModelName(value: EntityName): Self = StObject.set(x, "MLModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMLModelNameUndefined: Self = StObject.set(x, "MLModelName", js.undefined)
     
     @scala.inline
-    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
+    def setMLModelType(value: MLModelType): Self = StObject.set(x, "MLModelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMLModelType(value: MLModelType): Self = this.set("MLModelType", value.asInstanceOf[js.Any])
+    def setParameters(value: TrainingParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingDataSourceId(value: EntityId): Self = this.set("TrainingDataSourceId", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def setMLModelName(value: EntityName): Self = this.set("MLModelName", value.asInstanceOf[js.Any])
+    def setRecipe(value: Recipe): Self = StObject.set(x, "Recipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMLModelName: Self = this.set("MLModelName", js.undefined)
+    def setRecipeUndefined: Self = StObject.set(x, "Recipe", js.undefined)
     
     @scala.inline
-    def setParameters(value: TrainingParameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setRecipeUri(value: S3Url): Self = StObject.set(x, "RecipeUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setRecipeUriUndefined: Self = StObject.set(x, "RecipeUri", js.undefined)
     
     @scala.inline
-    def setRecipe(value: Recipe): Self = this.set("Recipe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipe: Self = this.set("Recipe", js.undefined)
-    
-    @scala.inline
-    def setRecipeUri(value: S3Url): Self = this.set("RecipeUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipeUri: Self = this.set("RecipeUri", js.undefined)
+    def setTrainingDataSourceId(value: EntityId): Self = StObject.set(x, "TrainingDataSourceId", value.asInstanceOf[js.Any])
   }
 }

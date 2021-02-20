@@ -1,16 +1,16 @@
 package typings.guacamoleClient
 
 import typings.guacamoleClient.inputStreamMod.InputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/StringReader", JSImport.Namespace)
-@js.native
-object stringReaderMod extends js.Object {
+object stringReaderMod {
   
+  @JSImport("guacamole-client/lib/StringReader", "StringReader")
   @js.native
-  class StringReader protected () extends js.Object {
+  class StringReader protected () extends StObject {
     /**
       * @param stream The stream that data will be read from.
       */

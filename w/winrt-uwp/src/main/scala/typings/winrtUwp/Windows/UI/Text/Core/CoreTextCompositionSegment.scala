@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.UI.Text.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a segment in a composition string. See Remarks for an illustration. */
 @js.native
-trait CoreTextCompositionSegment extends js.Object {
+trait CoreTextCompositionSegment extends StObject {
   
   /** Gets a string that represents the state of the user input after IME-processing but before final conversion. */
   var preconversionString: String = js.native
@@ -23,24 +24,12 @@ object CoreTextCompositionSegment {
   }
   
   @scala.inline
-  implicit class CoreTextCompositionSegmentOps[Self <: CoreTextCompositionSegment] (val x: Self) extends AnyVal {
+  implicit class CoreTextCompositionSegmentMutableBuilder[Self <: CoreTextCompositionSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreconversionString(value: String): Self = StObject.set(x, "preconversionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPreconversionString(value: String): Self = this.set("preconversionString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: CoreTextRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

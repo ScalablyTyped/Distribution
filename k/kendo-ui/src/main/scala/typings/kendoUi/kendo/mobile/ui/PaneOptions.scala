@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaneOptions extends js.Object {
+trait PaneOptions extends StObject {
   
   var collapsible: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object PaneOptions {
   }
   
   @scala.inline
-  implicit class PaneOptionsOps[Self <: PaneOptions] (val x: Self) extends AnyVal {
+  implicit class PaneOptionsMutableBuilder[Self <: PaneOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsible(value: Boolean): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
     @scala.inline
-    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitial(value: String): Self = this.set("initial", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteInitial: Self = this.set("initial", js.undefined)
+    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: String): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setNavigate(value: /* e */ PaneNavigateEvent => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPortraitWidth(value: Double): Self = StObject.set(x, "portraitWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigate(value: /* e */ PaneNavigateEvent => Unit): Self = this.set("navigate", js.Any.fromFunction1(value))
+    def setPortraitWidthUndefined: Self = StObject.set(x, "portraitWidth", js.undefined)
     
     @scala.inline
-    def deleteNavigate: Self = this.set("navigate", js.undefined)
+    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortraitWidth(value: Double): Self = this.set("portraitWidth", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deletePortraitWidth: Self = this.set("portraitWidth", js.undefined)
+    def setViewShow(value: /* e */ PaneViewShowEvent => Unit): Self = StObject.set(x, "viewShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
-    
-    @scala.inline
-    def setViewShow(value: /* e */ PaneViewShowEvent => Unit): Self = this.set("viewShow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteViewShow: Self = this.set("viewShow", js.undefined)
+    def setViewShowUndefined: Self = StObject.set(x, "viewShow", js.undefined)
   }
 }

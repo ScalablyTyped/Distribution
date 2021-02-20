@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointsmsvoiceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteConfigurationSetEventDestinationRequest extends js.Object {
+trait DeleteConfigurationSetEventDestinationRequest extends StObject {
   
   /**
     * ConfigurationSetName
@@ -26,24 +27,12 @@ object DeleteConfigurationSetEventDestinationRequest {
   }
   
   @scala.inline
-  implicit class DeleteConfigurationSetEventDestinationRequestOps[Self <: DeleteConfigurationSetEventDestinationRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteConfigurationSetEventDestinationRequestMutableBuilder[Self <: DeleteConfigurationSetEventDestinationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSetName(value: _String): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationSetName(value: _String): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventDestinationName(value: _String): Self = this.set("EventDestinationName", value.asInstanceOf[js.Any])
+    def setEventDestinationName(value: _String): Self = StObject.set(x, "EventDestinationName", value.asInstanceOf[js.Any])
   }
 }

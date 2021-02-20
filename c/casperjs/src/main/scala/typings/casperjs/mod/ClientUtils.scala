@@ -1,12 +1,13 @@
 package typings.casperjs.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientUtils extends js.Object {
+trait ClientUtils extends StObject {
   
   def echo(message: String): Unit = js.native
   

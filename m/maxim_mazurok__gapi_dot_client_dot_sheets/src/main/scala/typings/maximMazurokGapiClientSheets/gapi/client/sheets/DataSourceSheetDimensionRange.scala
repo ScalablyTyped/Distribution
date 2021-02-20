@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceSheetDimensionRange extends js.Object {
+trait DataSourceSheetDimensionRange extends StObject {
   
   /** The columns on the data source sheet. */
   var columnReferences: js.UndefOr[js.Array[DataSourceColumnReference]] = js.native
@@ -22,33 +23,21 @@ object DataSourceSheetDimensionRange {
   }
   
   @scala.inline
-  implicit class DataSourceSheetDimensionRangeOps[Self <: DataSourceSheetDimensionRange] (val x: Self) extends AnyVal {
+  implicit class DataSourceSheetDimensionRangeMutableBuilder[Self <: DataSourceSheetDimensionRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnReferences(value: js.Array[DataSourceColumnReference]): Self = StObject.set(x, "columnReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnReferencesUndefined: Self = StObject.set(x, "columnReferences", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnReferencesVarargs(value: DataSourceColumnReference*): Self = StObject.set(x, "columnReferences", js.Array(value :_*))
     
     @scala.inline
-    def setColumnReferencesVarargs(value: DataSourceColumnReference*): Self = this.set("columnReferences", js.Array(value :_*))
+    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnReferences(value: js.Array[DataSourceColumnReference]): Self = this.set("columnReferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnReferences: Self = this.set("columnReferences", js.undefined)
-    
-    @scala.inline
-    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

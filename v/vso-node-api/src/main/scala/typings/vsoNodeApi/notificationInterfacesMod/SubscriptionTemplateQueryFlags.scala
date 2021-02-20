@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SubscriptionTemplateQueryFlags extends js.Object
+sealed trait SubscriptionTemplateQueryFlags extends StObject
 @JSImport("vso-node-api/interfaces/NotificationInterfaces", "SubscriptionTemplateQueryFlags")
 @js.native
-object SubscriptionTemplateQueryFlags extends js.Object {
+object SubscriptionTemplateQueryFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SubscriptionTemplateQueryFlags with Double] = js.native
@@ -19,35 +19,30 @@ object SubscriptionTemplateQueryFlags extends js.Object {
     */
   @js.native
   sealed trait IncludeEventTypeInformation extends SubscriptionTemplateQueryFlags
-  /* 22 */ @js.native
-  object IncludeEventTypeInformation extends TopLevel[IncludeEventTypeInformation with Double]
+  /* 22 */ val IncludeEventTypeInformation: typings.vsoNodeApi.notificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeEventTypeInformation with Double = js.native
   
   /**
     * Include group templates
     */
   @js.native
   sealed trait IncludeGroup extends SubscriptionTemplateQueryFlags
-  /* 2 */ @js.native
-  object IncludeGroup extends TopLevel[IncludeGroup with Double]
+  /* 2 */ val IncludeGroup: typings.vsoNodeApi.notificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeGroup with Double = js.native
   
   /**
     * Include user templates
     */
   @js.native
   sealed trait IncludeUser extends SubscriptionTemplateQueryFlags
-  /* 1 */ @js.native
-  object IncludeUser extends TopLevel[IncludeUser with Double]
+  /* 1 */ val IncludeUser: typings.vsoNodeApi.notificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeUser with Double = js.native
   
   /**
     * Include user and group templates
     */
   @js.native
   sealed trait IncludeUserAndGroup extends SubscriptionTemplateQueryFlags
-  /* 4 */ @js.native
-  object IncludeUserAndGroup extends TopLevel[IncludeUserAndGroup with Double]
+  /* 4 */ val IncludeUserAndGroup: typings.vsoNodeApi.notificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeUserAndGroup with Double = js.native
   
   @js.native
   sealed trait None extends SubscriptionTemplateQueryFlags
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.vsoNodeApi.notificationInterfacesMod.SubscriptionTemplateQueryFlags.None with Double = js.native
 }

@@ -3,17 +3,16 @@ package typings.emberRouting
 import typings.emberRouting.routeInfoMod.RouteInfo
 import typings.emberRouting.routeInfoWithAttributesMod.RouteInfoWithAttributes
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/routing/-private/transition", JSImport.Namespace)
-@js.native
-object transitionMod extends js.Object {
+object transitionMod {
   
   /* Inlined parent std.Partial<std.Promise<T>> */
   @js.native
-  trait Transition[T] extends js.Object {
+  trait Transition[T] extends StObject {
     
     /**
       * Aborts the Transition. Note you can also implicitly abort a transition

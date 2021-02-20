@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShimmerType extends js.Object {
+trait ShimmerType extends StObject {
   
   def getMaxTime(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit = js.native
   
@@ -56,69 +57,57 @@ object ShimmerType {
   }
   
   @scala.inline
-  implicit class ShimmerTypeOps[Self <: ShimmerType] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ShimmerTypeMutableBuilder[Self <: ShimmerType] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setGetMaxTime(
       value: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object] => Unit
-    ): Self = this.set("getMaxTime", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "getMaxTime", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetMinTime(
       value: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object] => Unit
-    ): Self = this.set("getMinTime", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "getMinTime", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInitFunc(
       value: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object] => Unit
-    ): Self = this.set("initFunc", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "initFunc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxTime(value: Double): Self = this.set("maxTime", value.asInstanceOf[js.Any])
+    def setMaxTime(value: Double): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTime(value: Double): Self = this.set("minTime", value.asInstanceOf[js.Any])
+    def setMinTime(value: Double): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMissFunc(
       value: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object] => Unit
-    ): Self = this.set("missFunc", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "missFunc", js.Any.fromFunction1(value))
     
     @scala.inline
     def setPopFunc(
       value: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object] => Unit
-    ): Self = this.set("popFunc", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "popFunc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSpawnConditions(value: () => Boolean): Self = this.set("spawnConditions", js.Any.fromFunction0(value))
+    def setSpawnConditions(value: () => Boolean): Self = StObject.set(x, "spawnConditions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSpawned(value: Boolean | PseudoBoolean): Self = this.set("spawned", value.asInstanceOf[js.Any])
+    def setSpawned(value: Boolean | PseudoBoolean): Self = StObject.set(x, "spawned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpawnsOnTimer(value: Boolean): Self = this.set("spawnsOnTimer", value.asInstanceOf[js.Any])
+    def setSpawnsOnTimer(value: Boolean): Self = StObject.set(x, "spawnsOnTimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUpdateFunc(
       value: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object] => Unit
-    ): Self = this.set("updateFunc", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "updateFunc", js.Any.fromFunction1(value))
   }
 }

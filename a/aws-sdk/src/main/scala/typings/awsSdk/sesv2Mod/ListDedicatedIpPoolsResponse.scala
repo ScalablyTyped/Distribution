@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDedicatedIpPoolsResponse extends js.Object {
+trait ListDedicatedIpPoolsResponse extends StObject {
   
   /**
     * A list of all of the dedicated IP pools that are associated with your AWS account in the current Region.
@@ -26,33 +27,21 @@ object ListDedicatedIpPoolsResponse {
   }
   
   @scala.inline
-  implicit class ListDedicatedIpPoolsResponseOps[Self <: ListDedicatedIpPoolsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDedicatedIpPoolsResponseMutableBuilder[Self <: ListDedicatedIpPoolsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDedicatedIpPools(value: ListOfDedicatedIpPools): Self = StObject.set(x, "DedicatedIpPools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDedicatedIpPoolsUndefined: Self = StObject.set(x, "DedicatedIpPools", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDedicatedIpPoolsVarargs(value: PoolName*): Self = StObject.set(x, "DedicatedIpPools", js.Array(value :_*))
     
     @scala.inline
-    def setDedicatedIpPoolsVarargs(value: PoolName*): Self = this.set("DedicatedIpPools", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDedicatedIpPools(value: ListOfDedicatedIpPools): Self = this.set("DedicatedIpPools", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDedicatedIpPools: Self = this.set("DedicatedIpPools", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

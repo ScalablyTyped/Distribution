@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OneHotAttrs extends js.Object {
+trait OneHotAttrs extends StObject {
   
   var depth: Double = js.native
   
@@ -22,27 +23,15 @@ object OneHotAttrs {
   }
   
   @scala.inline
-  implicit class OneHotAttrsOps[Self <: OneHotAttrs] (val x: Self) extends AnyVal {
+  implicit class OneHotAttrsMutableBuilder[Self <: OneHotAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffValue(value: Double): Self = StObject.set(x, "offValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffValue(value: Double): Self = this.set("offValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnValue(value: Double): Self = this.set("onValue", value.asInstanceOf[js.Any])
+    def setOnValue(value: Double): Self = StObject.set(x, "onValue", value.asInstanceOf[js.Any])
   }
 }

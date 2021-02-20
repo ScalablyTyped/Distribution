@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebSocketFrame extends js.Object {
+trait WebSocketFrame extends StObject {
   
   /**
     * WebSocket message mask.
@@ -33,27 +34,15 @@ object WebSocketFrame {
   }
   
   @scala.inline
-  implicit class WebSocketFrameOps[Self <: WebSocketFrame] (val x: Self) extends AnyVal {
+  implicit class WebSocketFrameMutableBuilder[Self <: WebSocketFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpcode(value: Double): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMask(value: Boolean): Self = this.set("mask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpcode(value: Double): Self = this.set("opcode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPayloadData(value: String): Self = this.set("payloadData", value.asInstanceOf[js.Any])
+    def setPayloadData(value: String): Self = StObject.set(x, "payloadData", value.asInstanceOf[js.Any])
   }
 }

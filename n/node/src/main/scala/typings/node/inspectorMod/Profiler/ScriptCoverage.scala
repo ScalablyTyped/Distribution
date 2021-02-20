@@ -1,6 +1,7 @@
 package typings.node.inspectorMod.Profiler
 
 import typings.node.inspectorMod.Runtime.ScriptId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Coverage data for a JavaScript script.
   */
 @js.native
-trait ScriptCoverage extends js.Object {
+trait ScriptCoverage extends StObject {
   
   /**
     * Functions contained in the script that has coverage data.
@@ -35,30 +36,18 @@ object ScriptCoverage {
   }
   
   @scala.inline
-  implicit class ScriptCoverageOps[Self <: ScriptCoverage] (val x: Self) extends AnyVal {
+  implicit class ScriptCoverageMutableBuilder[Self <: ScriptCoverage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctions(value: js.Array[FunctionCoverage]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctionsVarargs(value: FunctionCoverage*): Self = StObject.set(x, "functions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionsVarargs(value: FunctionCoverage*): Self = this.set("functions", js.Array(value :_*))
-    
-    @scala.inline
-    def setFunctions(value: js.Array[FunctionCoverage]): Self = this.set("functions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("scriptId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

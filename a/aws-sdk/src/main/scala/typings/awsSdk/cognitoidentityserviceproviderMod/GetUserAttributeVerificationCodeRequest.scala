@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUserAttributeVerificationCodeRequest extends js.Object {
+trait GetUserAttributeVerificationCodeRequest extends StObject {
   
   /**
     * The access token returned by the server response to get the user attribute verification code.
@@ -31,30 +32,18 @@ object GetUserAttributeVerificationCodeRequest {
   }
   
   @scala.inline
-  implicit class GetUserAttributeVerificationCodeRequestOps[Self <: GetUserAttributeVerificationCodeRequest] (val x: Self) extends AnyVal {
+  implicit class GetUserAttributeVerificationCodeRequestMutableBuilder[Self <: GetUserAttributeVerificationCodeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributeName(value: AttributeNameType): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
+    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.ui
 
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since LibreOffice 4.1
   */
 @js.native
-trait XStatusbarItem extends js.Object {
+trait XStatusbarItem extends StObject {
   
   /** the accessible name of the status bar item */
   var AccessibleName: String = js.native
@@ -86,54 +87,42 @@ object XStatusbarItem {
   }
   
   @scala.inline
-  implicit class XStatusbarItemOps[Self <: XStatusbarItem] (val x: Self) extends AnyVal {
+  implicit class XStatusbarItemMutableBuilder[Self <: XStatusbarItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleName(value: String): Self = StObject.set(x, "AccessibleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleName(value: String): Self = this.set("AccessibleName", value.asInstanceOf[js.Any])
+    def setItemId(value: Double): Self = StObject.set(x, "ItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setItemRect(value: Rectangle): Self = StObject.set(x, "ItemRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemId(value: Double): Self = this.set("ItemId", value.asInstanceOf[js.Any])
+    def setQuickHelpText(value: String): Self = StObject.set(x, "QuickHelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemRect(value: Rectangle): Self = this.set("ItemRect", value.asInstanceOf[js.Any])
+    def setRepaint(value: () => Unit): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("Offset", value.asInstanceOf[js.Any])
+    def setStyle(value: Double): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuickHelpText(value: String): Self = this.set("QuickHelpText", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: Double): Self = this.set("Style", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepaint(value: () => Unit): Self = this.set("repaint", js.Any.fromFunction0(value))
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

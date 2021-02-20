@@ -1,11 +1,12 @@
 package typings.natsHemera.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrioConfig extends js.Object {
+trait ErrioConfig extends StObject {
   
   var exclude: js.UndefOr[js.Any] = js.native
   
@@ -28,54 +29,42 @@ object ErrioConfig {
   }
   
   @scala.inline
-  implicit class ErrioConfigOps[Self <: ErrioConfig] (val x: Self) extends AnyVal {
+  implicit class ErrioConfigMutableBuilder[Self <: ErrioConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclude(value: js.Any): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInclude(value: js.Any): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: js.Any): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: js.Any): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setInheritedUndefined: Self = StObject.set(x, "inherited", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInherited(value: Boolean): Self = this.set("inherited", value.asInstanceOf[js.Any])
+    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
     @scala.inline
-    def deleteInherited: Self = this.set("inherited", js.undefined)
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     @scala.inline
-    def deletePrivate: Self = this.set("private", js.undefined)
+    def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
-    
-    @scala.inline
-    def setStack(value: Boolean): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

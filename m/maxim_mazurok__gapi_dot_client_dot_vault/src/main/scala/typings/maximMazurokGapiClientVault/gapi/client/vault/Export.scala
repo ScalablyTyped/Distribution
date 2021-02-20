@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVault.gapi.client.vault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Export extends js.Object {
+trait Export extends StObject {
   
   /** Output only. Export sink for cloud storage files. */
   var cloudStorageSink: js.UndefOr[CloudStorageSink] = js.native
@@ -46,78 +47,66 @@ object Export {
   }
   
   @scala.inline
-  implicit class ExportOps[Self <: Export] (val x: Self) extends AnyVal {
+  implicit class ExportMutableBuilder[Self <: Export] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudStorageSink(value: CloudStorageSink): Self = StObject.set(x, "cloudStorageSink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudStorageSinkUndefined: Self = StObject.set(x, "cloudStorageSink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudStorageSink(value: CloudStorageSink): Self = this.set("cloudStorageSink", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCloudStorageSink: Self = this.set("cloudStorageSink", js.undefined)
+    def setExportOptions(value: ExportOptions): Self = StObject.set(x, "exportOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setExportOptionsUndefined: Self = StObject.set(x, "exportOptions", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportOptions(value: ExportOptions): Self = this.set("exportOptions", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteExportOptions: Self = this.set("exportOptions", js.undefined)
+    def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatterId(value: String): Self = this.set("matterId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMatterId: Self = this.set("matterId", js.undefined)
+    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRequester(value: UserInfo): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setRequesterUndefined: Self = StObject.set(x, "requester", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setStats(value: ExportStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequester(value: UserInfo): Self = this.set("requester", value.asInstanceOf[js.Any])
+    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
     @scala.inline
-    def deleteRequester: Self = this.set("requester", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStats(value: ExportStats): Self = this.set("stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStats: Self = this.set("stats", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

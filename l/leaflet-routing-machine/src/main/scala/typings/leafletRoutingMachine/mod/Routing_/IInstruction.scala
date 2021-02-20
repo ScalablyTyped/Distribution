@@ -14,13 +14,14 @@ import typings.leafletRoutingMachine.leafletRoutingMachineStrings.StartAt
 import typings.leafletRoutingMachine.leafletRoutingMachineStrings.Straight
 import typings.leafletRoutingMachine.leafletRoutingMachineStrings.TurnAround
 import typings.leafletRoutingMachine.leafletRoutingMachineStrings.WaypointReached
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
 @js.native
-trait IInstruction extends js.Object {
+trait IInstruction extends StObject {
   
   var direction: js.UndefOr[String] = js.native
   
@@ -47,56 +48,44 @@ object IInstruction {
   }
   
   @scala.inline
-  implicit class IInstructionOps[Self <: IInstruction] (val x: Self) extends AnyVal {
+  implicit class IInstructionMutableBuilder[Self <: IInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setExit(value: Double): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setRoadUndefined: Self = StObject.set(x, "road", js.undefined)
     
     @scala.inline
-    def setExit(value: Double): Self = this.set("exit", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExit: Self = this.set("exit", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setRoad(value: String): Self = this.set("road", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoad: Self = this.set("road", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setType(
       value: Straight | SlightRight | Right | SharpRight | TurnAround | SharpLeft | Left | SlightLeft | WaypointReached | Roundabout | StartAt | DestinationReached | EnterAgainstAllowedDirection | LeaveAgainstAllowedDirection
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

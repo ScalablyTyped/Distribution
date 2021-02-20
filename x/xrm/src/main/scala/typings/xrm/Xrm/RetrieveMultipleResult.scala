@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for the WebAPI RetrieveMultiple request response
   */
 @js.native
-trait RetrieveMultipleResult extends js.Object {
+trait RetrieveMultipleResult extends StObject {
   
   /**
     * An array of JSON objects, where each object represents the retrieved entity record containing attributes and their values as key: value pairs. The Id of the entity record is retrieved by default.
@@ -29,27 +30,15 @@ object RetrieveMultipleResult {
   }
   
   @scala.inline
-  implicit class RetrieveMultipleResultOps[Self <: RetrieveMultipleResult] (val x: Self) extends AnyVal {
+  implicit class RetrieveMultipleResultMutableBuilder[Self <: RetrieveMultipleResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: js.Array[_]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntitiesVarargs(value: js.Any*): Self = this.set("entities", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntities(value: js.Array[_]): Self = this.set("entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextLink(value: String): Self = this.set("nextLink", value.asInstanceOf[js.Any])
+    def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
   }
 }

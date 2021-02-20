@@ -1,11 +1,12 @@
 package typings.egg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEggPluginItem extends js.Object {
+trait IEggPluginItem extends StObject {
   
   @JSName("package")
   var _package: js.UndefOr[String] = js.native
@@ -25,45 +26,33 @@ object IEggPluginItem {
   }
   
   @scala.inline
-  implicit class IEggPluginItemOps[Self <: IEggPluginItem] (val x: Self) extends AnyVal {
+  implicit class IEggPluginItemMutableBuilder[Self <: IEggPluginItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnv(value: js.Array[EggEnvType]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_package(value: String): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setEnvVarargs(value: EggEnvType*): Self = StObject.set(x, "env", js.Array(value :_*))
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setEnvVarargs(value: EggEnvType*): Self = this.set("env", js.Array(value :_*))
+    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: js.Array[EggEnvType]): Self = this.set("env", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

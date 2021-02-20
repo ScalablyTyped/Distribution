@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplyListener extends js.Object {
+trait ReplyListener extends StObject {
   
   def callback(msg: Message): Unit = js.native
   
@@ -24,30 +25,18 @@ object ReplyListener {
   }
   
   @scala.inline
-  implicit class ReplyListenerOps[Self <: ReplyListener] (val x: Self) extends AnyVal {
+  implicit class ReplyListenerMutableBuilder[Self <: ReplyListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: Message => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChatId(value: Double | String): Self = StObject.set(x, "chatId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: Message => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setChatId(value: Double | String): Self = this.set("chatId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageId(value: Double | String): Self = this.set("messageId", value.asInstanceOf[js.Any])
+    def setMessageId(value: Double | String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
   }
 }

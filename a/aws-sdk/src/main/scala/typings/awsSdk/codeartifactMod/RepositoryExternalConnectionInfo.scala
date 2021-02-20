@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepositoryExternalConnectionInfo extends js.Object {
+trait RepositoryExternalConnectionInfo extends StObject {
   
   /**
     *  The name of the external connection associated with a repository. 
@@ -31,36 +32,24 @@ object RepositoryExternalConnectionInfo {
   }
   
   @scala.inline
-  implicit class RepositoryExternalConnectionInfoOps[Self <: RepositoryExternalConnectionInfo] (val x: Self) extends AnyVal {
+  implicit class RepositoryExternalConnectionInfoMutableBuilder[Self <: RepositoryExternalConnectionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalConnectionName(value: ExternalConnectionName): Self = StObject.set(x, "externalConnectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalConnectionNameUndefined: Self = StObject.set(x, "externalConnectionName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageFormat(value: PackageFormat): Self = StObject.set(x, "packageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalConnectionName(value: ExternalConnectionName): Self = this.set("externalConnectionName", value.asInstanceOf[js.Any])
+    def setPackageFormatUndefined: Self = StObject.set(x, "packageFormat", js.undefined)
     
     @scala.inline
-    def deleteExternalConnectionName: Self = this.set("externalConnectionName", js.undefined)
+    def setStatus(value: ExternalConnectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageFormat(value: PackageFormat): Self = this.set("packageFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageFormat: Self = this.set("packageFormat", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ExternalConnectionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

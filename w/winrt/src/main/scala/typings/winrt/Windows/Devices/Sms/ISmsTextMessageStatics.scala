@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Devices.Sms
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISmsTextMessageStatics extends js.Object {
+trait ISmsTextMessageStatics extends StObject {
   
   def fromBinaryData(format: SmsDataFormat, value: Uint8Array): SmsTextMessage = js.native
   
@@ -24,24 +25,12 @@ object ISmsTextMessageStatics {
   }
   
   @scala.inline
-  implicit class ISmsTextMessageStaticsOps[Self <: ISmsTextMessageStatics] (val x: Self) extends AnyVal {
+  implicit class ISmsTextMessageStaticsMutableBuilder[Self <: ISmsTextMessageStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromBinaryData(value: (SmsDataFormat, Uint8Array) => SmsTextMessage): Self = StObject.set(x, "fromBinaryData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFromBinaryData(value: (SmsDataFormat, Uint8Array) => SmsTextMessage): Self = this.set("fromBinaryData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setFromBinaryMessage(value: SmsBinaryMessage => SmsTextMessage): Self = this.set("fromBinaryMessage", js.Any.fromFunction1(value))
+    def setFromBinaryMessage(value: SmsBinaryMessage => SmsTextMessage): Self = StObject.set(x, "fromBinaryMessage", js.Any.fromFunction1(value))
   }
 }

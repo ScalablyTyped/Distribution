@@ -1,21 +1,20 @@
 package typings.pgPromise.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.pgMinify.mod.SQLParsingError
 import typings.pgPromise.pgSubsetMod.IResult
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Errors namespace
 // API: http://vitaly-t.github.io/pg-promise/errors.html
-@JSImport("pg-promise", "errors")
-@js.native
-object errors extends js.Object {
+object errors {
   
   // ParameterizedQueryError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.ParameterizedQueryError.html
+  @JSImport("pg-promise", "errors.ParameterizedQueryError")
   @js.native
   class ParameterizedQueryError () extends Error {
     
@@ -30,6 +29,7 @@ object errors extends js.Object {
   
   // PreparedStatementError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.PreparedStatementError.html
+  @JSImport("pg-promise", "errors.PreparedStatementError")
   @js.native
   class PreparedStatementError () extends Error {
     
@@ -44,6 +44,7 @@ object errors extends js.Object {
   
   // QueryFileError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.QueryFileError.html
+  @JSImport("pg-promise", "errors.QueryFileError")
   @js.native
   class QueryFileError () extends Error {
     
@@ -62,6 +63,7 @@ object errors extends js.Object {
   
   // QueryResultError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.QueryResultError.html
+  @JSImport("pg-promise", "errors.QueryResultError")
   @js.native
   class QueryResultError () extends Error {
     
@@ -81,28 +83,26 @@ object errors extends js.Object {
   }
   
   @js.native
-  sealed trait queryResultErrorCode extends js.Object
+  sealed trait queryResultErrorCode extends StObject
   // Query Result Error Code;
   // API: http://vitaly-t.github.io/pg-promise/errors.html#.queryResultErrorCode
+  @JSImport("pg-promise", "errors.queryResultErrorCode")
   @js.native
-  object queryResultErrorCode extends js.Object {
+  object queryResultErrorCode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[queryResultErrorCode with Double] = js.native
     
     @js.native
     sealed trait multiple extends queryResultErrorCode
-    /* 2 */ @js.native
-    object multiple extends TopLevel[multiple with Double]
+    /* 2 */ val multiple: typings.pgPromise.mod.errors.queryResultErrorCode.multiple with Double = js.native
     
     @js.native
     sealed trait noData extends queryResultErrorCode
-    /* 0 */ @js.native
-    object noData extends TopLevel[noData with Double]
+    /* 0 */ val noData: typings.pgPromise.mod.errors.queryResultErrorCode.noData with Double = js.native
     
     @js.native
     sealed trait notEmpty extends queryResultErrorCode
-    /* 1 */ @js.native
-    object notEmpty extends TopLevel[notEmpty with Double]
+    /* 1 */ val notEmpty: typings.pgPromise.mod.errors.queryResultErrorCode.notEmpty with Double = js.native
   }
 }

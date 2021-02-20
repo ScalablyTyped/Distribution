@@ -1,5 +1,6 @@
 package typings.openfin.mod.fin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.openfin.openfinStrings.`window-show-requested`
   - typings.openfin.openfinStrings.`window-start-load`
 */
-trait OpenFinApplicationEventType extends js.Object
+trait OpenFinApplicationEventType extends StObject
 object OpenFinApplicationEventType {
   
   @scala.inline

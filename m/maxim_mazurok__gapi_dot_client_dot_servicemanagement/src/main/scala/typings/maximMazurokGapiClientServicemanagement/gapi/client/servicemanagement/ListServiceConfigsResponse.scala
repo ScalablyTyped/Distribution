@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListServiceConfigsResponse extends js.Object {
+trait ListServiceConfigsResponse extends StObject {
   
   /** The token of the next page of results. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object ListServiceConfigsResponse {
   }
   
   @scala.inline
-  implicit class ListServiceConfigsResponseOps[Self <: ListServiceConfigsResponse] (val x: Self) extends AnyVal {
+  implicit class ListServiceConfigsResponseMutableBuilder[Self <: ListServiceConfigsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceConfigs(value: js.Array[Service]): Self = StObject.set(x, "serviceConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setServiceConfigsUndefined: Self = StObject.set(x, "serviceConfigs", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setServiceConfigsVarargs(value: Service*): Self = this.set("serviceConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceConfigs(value: js.Array[Service]): Self = this.set("serviceConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceConfigs: Self = this.set("serviceConfigs", js.undefined)
+    def setServiceConfigsVarargs(value: Service*): Self = StObject.set(x, "serviceConfigs", js.Array(value :_*))
   }
 }

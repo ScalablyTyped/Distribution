@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.App
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,39 +69,27 @@ object iOSSessioncompletedEvent {
   }
   
   @scala.inline
-  implicit class iOSSessioncompletedEventOps[Self <: iOSSessioncompletedEvent] (val x: Self) extends AnyVal {
+  implicit class iOSSessioncompletedEventMutableBuilder[Self <: iOSSessioncompletedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: Double): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setSessionIdentifier(value: String): Self = StObject.set(x, "sessionIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseText(value: String): Self = this.set("responseText", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionIdentifier(value: String): Self = this.set("sessionIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskIdentifier(value: Double): Self = this.set("taskIdentifier", value.asInstanceOf[js.Any])
+    def setTaskIdentifier(value: Double): Self = StObject.set(x, "taskIdentifier", value.asInstanceOf[js.Any])
   }
 }

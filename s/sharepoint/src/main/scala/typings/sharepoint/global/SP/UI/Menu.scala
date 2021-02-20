@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Menu ()
   extends typings.sharepoint.SP.UI.Menu
-/* static members */
-@JSGlobal("SP.UI.Menu")
-@js.native
-object Menu extends js.Object {
+object Menu {
   
+  /* static member */
+  @JSGlobal("SP.UI.Menu.create")
+  @js.native
   def create(id: String): typings.sharepoint.SP.UI.Menu = js.native
 }

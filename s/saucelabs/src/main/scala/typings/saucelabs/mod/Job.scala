@@ -9,6 +9,7 @@ import typings.saucelabs.saucelabsStrings.passed
 import typings.saucelabs.saucelabsStrings.public
 import typings.saucelabs.saucelabsStrings.share
 import typings.saucelabs.saucelabsStrings.team
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,228 +97,216 @@ object Job {
   }
   
   @scala.inline
-  implicit class JobOps[Self <: Job] (val x: Self) extends AnyVal {
+  implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssigned_tunnel_id(value: String): Self = StObject.set(x, "assigned_tunnel_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssigned_tunnel_idUndefined: Self = StObject.set(x, "assigned_tunnel_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomation_backend(value: String): Self = StObject.set(x, "automation_backend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setAutomation_backendUndefined: Self = StObject.set(x, "automation_backend", js.undefined)
     
     @scala.inline
-    def setAssigned_tunnel_id(value: String): Self = this.set("assigned_tunnel_id", value.asInstanceOf[js.Any])
+    def setBase_config(value: BaseConfig): Self = StObject.set(x, "base_config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssigned_tunnel_id: Self = this.set("assigned_tunnel_id", js.undefined)
+    def setBase_configUndefined: Self = StObject.set(x, "base_config", js.undefined)
     
     @scala.inline
-    def setAutomation_backend(value: String): Self = this.set("automation_backend", value.asInstanceOf[js.Any])
+    def setBreakpointed(value: String): Self = StObject.set(x, "breakpointed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutomation_backend: Self = this.set("automation_backend", js.undefined)
+    def setBreakpointedUndefined: Self = StObject.set(x, "breakpointed", js.undefined)
     
     @scala.inline
-    def setBase_config(value: BaseConfig): Self = this.set("base_config", value.asInstanceOf[js.Any])
+    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBase_config: Self = this.set("base_config", js.undefined)
+    def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
     
     @scala.inline
-    def setBreakpointed(value: String): Self = this.set("breakpointed", value.asInstanceOf[js.Any])
+    def setBrowser_short_version(value: String): Self = StObject.set(x, "browser_short_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBreakpointed: Self = this.set("breakpointed", js.undefined)
+    def setBrowser_short_versionUndefined: Self = StObject.set(x, "browser_short_version", js.undefined)
     
     @scala.inline
-    def setBrowser(value: String): Self = this.set("browser", value.asInstanceOf[js.Any])
+    def setBrowser_version(value: String): Self = StObject.set(x, "browser_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrowser: Self = this.set("browser", js.undefined)
+    def setBrowser_versionUndefined: Self = StObject.set(x, "browser_version", js.undefined)
     
     @scala.inline
-    def setBrowser_short_version(value: String): Self = this.set("browser_short_version", value.asInstanceOf[js.Any])
+    def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrowser_short_version: Self = this.set("browser_short_version", js.undefined)
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def setBrowser_version(value: String): Self = this.set("browser_version", value.asInstanceOf[js.Any])
+    def setCollects_automator_log(value: Boolean): Self = StObject.set(x, "collects_automator_log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrowser_version: Self = this.set("browser_version", js.undefined)
+    def setCollects_automator_logUndefined: Self = StObject.set(x, "collects_automator_log", js.undefined)
     
     @scala.inline
-    def setBuild(value: String): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setCommand_counts(value: CommandCountStats): Self = StObject.set(x, "command_counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setCommand_countsUndefined: Self = StObject.set(x, "command_counts", js.undefined)
     
     @scala.inline
-    def setCollects_automator_log(value: Boolean): Self = this.set("collects_automator_log", value.asInstanceOf[js.Any])
+    def setCommands_not_successful(value: Double): Self = StObject.set(x, "commands_not_successful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollects_automator_log: Self = this.set("collects_automator_log", js.undefined)
+    def setCommands_not_successfulUndefined: Self = StObject.set(x, "commands_not_successful", js.undefined)
     
     @scala.inline
-    def setCommand_counts(value: CommandCountStats): Self = this.set("command_counts", value.asInstanceOf[js.Any])
+    def setConsolidated_status(value: error_ | passed | failed | complete): Self = StObject.set(x, "consolidated_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommand_counts: Self = this.set("command_counts", js.undefined)
+    def setConsolidated_statusUndefined: Self = StObject.set(x, "consolidated_status", js.undefined)
     
     @scala.inline
-    def setCommands_not_successful(value: Double): Self = this.set("commands_not_successful", value.asInstanceOf[js.Any])
+    def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommands_not_successful: Self = this.set("commands_not_successful", js.undefined)
+    def setCreation_timeUndefined: Self = StObject.set(x, "creation_time", js.undefined)
     
     @scala.inline
-    def setConsolidated_status(value: error_ | passed | failed | complete): Self = this.set("consolidated_status", value.asInstanceOf[js.Any])
+    def `setCustom-data`(value: String): Self = StObject.set(x, "custom-data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConsolidated_status: Self = this.set("consolidated_status", js.undefined)
+    def `setCustom-dataUndefined`: Self = StObject.set(x, "custom-data", js.undefined)
     
     @scala.inline
-    def setCreation_time(value: String): Self = this.set("creation_time", value.asInstanceOf[js.Any])
+    def setDeletion_time(value: String): Self = StObject.set(x, "deletion_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreation_time: Self = this.set("creation_time", js.undefined)
+    def setDeletion_timeUndefined: Self = StObject.set(x, "deletion_time", js.undefined)
     
     @scala.inline
-    def `setCustom-data`(value: String): Self = this.set("custom-data", value.asInstanceOf[js.Any])
+    def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCustom-data`: Self = this.set("custom-data", js.undefined)
+    def setEnd_timeUndefined: Self = StObject.set(x, "end_time", js.undefined)
     
     @scala.inline
-    def setDeletion_time(value: String): Self = this.set("deletion_time", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeletion_time: Self = this.set("deletion_time", js.undefined)
+    def setLog_url(value: String): Self = StObject.set(x, "log_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_time(value: String): Self = this.set("end_time", value.asInstanceOf[js.Any])
+    def setLog_urlUndefined: Self = StObject.set(x, "log_url", js.undefined)
     
     @scala.inline
-    def deleteEnd_time: Self = this.set("end_time", js.undefined)
+    def setManual(value: Boolean): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog_url(value: String): Self = this.set("log_url", value.asInstanceOf[js.Any])
+    def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
     
     @scala.inline
-    def deleteLog_url: Self = this.set("log_url", js.undefined)
+    def setModification_time(value: String): Self = StObject.set(x, "modification_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManual(value: Boolean): Self = this.set("manual", value.asInstanceOf[js.Any])
+    def setModification_timeUndefined: Self = StObject.set(x, "modification_time", js.undefined)
     
     @scala.inline
-    def deleteManual: Self = this.set("manual", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModification_time(value: String): Self = this.set("modification_time", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteModification_time: Self = this.set("modification_time", js.undefined)
+    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: String): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteOs: Self = this.set("os", js.undefined)
+    def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPassedUndefined: Self = StObject.set(x, "passed", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setProxied(value: Boolean): Self = StObject.set(x, "proxied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassed(value: Boolean): Self = this.set("passed", value.asInstanceOf[js.Any])
+    def setProxiedUndefined: Self = StObject.set(x, "proxied", js.undefined)
     
     @scala.inline
-    def deletePassed: Self = this.set("passed", js.undefined)
+    def setProxy_host(value: Boolean): Self = StObject.set(x, "proxy_host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxied(value: Boolean): Self = this.set("proxied", value.asInstanceOf[js.Any])
+    def setProxy_hostUndefined: Self = StObject.set(x, "proxy_host", js.undefined)
     
     @scala.inline
-    def deleteProxied: Self = this.set("proxied", js.undefined)
+    def setPublic(value: public | (`public restricted`) | share | team): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxy_host(value: Boolean): Self = this.set("proxy_host", value.asInstanceOf[js.Any])
+    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     
     @scala.inline
-    def deleteProxy_host: Self = this.set("proxy_host", js.undefined)
+    def setRecord_screenshots(value: Boolean): Self = StObject.set(x, "record_screenshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublic(value: public | (`public restricted`) | share | team): Self = this.set("public", value.asInstanceOf[js.Any])
+    def setRecord_screenshotsUndefined: Self = StObject.set(x, "record_screenshots", js.undefined)
     
     @scala.inline
-    def deletePublic: Self = this.set("public", js.undefined)
+    def setRecord_video(value: Boolean): Self = StObject.set(x, "record_video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecord_screenshots(value: Boolean): Self = this.set("record_screenshots", value.asInstanceOf[js.Any])
+    def setRecord_videoUndefined: Self = StObject.set(x, "record_video", js.undefined)
     
     @scala.inline
-    def deleteRecord_screenshots: Self = this.set("record_screenshots", js.undefined)
+    def setSelenium_version(value: String): Self = StObject.set(x, "selenium_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecord_video(value: Boolean): Self = this.set("record_video", value.asInstanceOf[js.Any])
+    def setSelenium_versionUndefined: Self = StObject.set(x, "selenium_version", js.undefined)
     
     @scala.inline
-    def deleteRecord_video: Self = this.set("record_video", js.undefined)
+    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelenium_version(value: String): Self = this.set("selenium_version", value.asInstanceOf[js.Any])
+    def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
     
     @scala.inline
-    def deleteSelenium_version: Self = this.set("selenium_version", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_time(value: String): Self = this.set("start_time", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStart_time: Self = this.set("start_time", js.undefined)
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setVideo_secret(value: String): Self = StObject.set(x, "video_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setVideo_secretUndefined: Self = StObject.set(x, "video_secret", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setVideo_url(value: String): Self = StObject.set(x, "video_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_secret(value: String): Self = this.set("video_secret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo_secret: Self = this.set("video_secret", js.undefined)
-    
-    @scala.inline
-    def setVideo_url(value: String): Self = this.set("video_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo_url: Self = this.set("video_url", js.undefined)
+    def setVideo_urlUndefined: Self = StObject.set(x, "video_url", js.undefined)
   }
 }

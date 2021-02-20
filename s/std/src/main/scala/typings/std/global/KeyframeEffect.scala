@@ -1,16 +1,14 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import typings.std.Keyframe
 import typings.std.KeyframeEffectOptions
 import typings.std.PropertyIndexedKeyframes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("KeyframeEffect")
 @js.native
 class KeyframeEffect ()
@@ -34,22 +32,3 @@ class KeyframeEffect ()
   def this(target: typings.std.Element, keyframes: PropertyIndexedKeyframes, options: Double) = this()
   def this(target: typings.std.Element, keyframes: PropertyIndexedKeyframes, options: KeyframeEffectOptions) = this()
 }
-@JSGlobal("KeyframeEffect")
-@js.native
-object KeyframeEffect
-  extends Instantiable0[typings.std.KeyframeEffect]
-     with Instantiable1[
-      (/* target */ typings.std.Element) | (/* source */ typings.std.KeyframeEffect), 
-      typings.std.KeyframeEffect
-    ]
-     with Instantiable2[
-      (/* target */ typings.std.Element) | (/* target */ Null), 
-      (/* keyframes */ js.Array[Keyframe]) | (/* keyframes */ PropertyIndexedKeyframes), 
-      typings.std.KeyframeEffect
-    ]
-     with Instantiable3[
-      (/* target */ typings.std.Element) | (/* target */ Null), 
-      (/* keyframes */ js.Array[Keyframe]) | (/* keyframes */ Null) | (/* keyframes */ PropertyIndexedKeyframes), 
-      (/* options */ Double) | (/* options */ KeyframeEffectOptions), 
-      typings.std.KeyframeEffect
-    ]

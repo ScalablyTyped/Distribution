@@ -1,11 +1,12 @@
 package typings.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThrottleOptions extends js.Object {
+trait ThrottleOptions extends StObject {
   
   var burst: js.UndefOr[Double] = js.native
   
@@ -34,72 +35,60 @@ object ThrottleOptions {
   }
   
   @scala.inline
-  implicit class ThrottleOptionsOps[Self <: ThrottleOptions] (val x: Self) extends AnyVal {
+  implicit class ThrottleOptionsMutableBuilder[Self <: ThrottleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBurst(value: Double): Self = StObject.set(x, "burst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBurstUndefined: Self = StObject.set(x, "burst", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIp(value: Boolean): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBurst(value: Double): Self = this.set("burst", value.asInstanceOf[js.Any])
+    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
     
     @scala.inline
-    def deleteBurst: Self = this.set("burst", js.undefined)
+    def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: Boolean): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
     
     @scala.inline
-    def deleteIp: Self = this.set("ip", js.undefined)
+    def setOverrides(value: js.Any): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxKeys(value: Double): Self = this.set("maxKeys", value.asInstanceOf[js.Any])
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def deleteMaxKeys: Self = this.set("maxKeys", js.undefined)
+    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrides(value: js.Any): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
     @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setSetHeaders(value: Boolean): Self = StObject.set(x, "setHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
     
     @scala.inline
-    def deleteRate: Self = this.set("rate", js.undefined)
+    def setTokensTable(value: js.Any): Self = StObject.set(x, "tokensTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetHeaders(value: Boolean): Self = this.set("setHeaders", value.asInstanceOf[js.Any])
+    def setTokensTableUndefined: Self = StObject.set(x, "tokensTable", js.undefined)
     
     @scala.inline
-    def deleteSetHeaders: Self = this.set("setHeaders", js.undefined)
+    def setUsername(value: Boolean): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokensTable(value: js.Any): Self = this.set("tokensTable", value.asInstanceOf[js.Any])
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def deleteTokensTable: Self = this.set("tokensTable", js.undefined)
+    def setXff(value: Boolean): Self = StObject.set(x, "xff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: Boolean): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
-    
-    @scala.inline
-    def setXff(value: Boolean): Self = this.set("xff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXff: Self = this.set("xff", js.undefined)
+    def setXffUndefined: Self = StObject.set(x, "xff", js.undefined)
   }
 }

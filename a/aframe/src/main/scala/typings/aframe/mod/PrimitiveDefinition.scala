@@ -1,20 +1,21 @@
 package typings.aframe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrimitiveDefinition extends js.Object {
+trait PrimitiveDefinition extends StObject {
   
   var defaultComponents: js.UndefOr[js.Any] = js.native
   
-   // TODO cleanup type
+  // TODO cleanup type
   var deprecated: js.UndefOr[Boolean] = js.native
   
   var mappings: js.UndefOr[js.Any] = js.native
   
-   // TODO cleanup type
+  // TODO cleanup type
   var transforms: js.UndefOr[js.Any] = js.native
 }
 object PrimitiveDefinition {
@@ -26,42 +27,30 @@ object PrimitiveDefinition {
   }
   
   @scala.inline
-  implicit class PrimitiveDefinitionOps[Self <: PrimitiveDefinition] (val x: Self) extends AnyVal {
+  implicit class PrimitiveDefinitionMutableBuilder[Self <: PrimitiveDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultComponents(value: js.Any): Self = StObject.set(x, "defaultComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultComponentsUndefined: Self = StObject.set(x, "defaultComponents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultComponents(value: js.Any): Self = this.set("defaultComponents", value.asInstanceOf[js.Any])
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
     @scala.inline
-    def deleteDefaultComponents: Self = this.set("defaultComponents", js.undefined)
+    def setMappings(value: js.Any): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecated(value: Boolean): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    def setMappingsUndefined: Self = StObject.set(x, "mappings", js.undefined)
     
     @scala.inline
-    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    def setTransforms(value: js.Any): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMappings(value: js.Any): Self = this.set("mappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMappings: Self = this.set("mappings", js.undefined)
-    
-    @scala.inline
-    def setTransforms(value: js.Any): Self = this.set("transforms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransforms: Self = this.set("transforms", js.undefined)
+    def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
   }
 }

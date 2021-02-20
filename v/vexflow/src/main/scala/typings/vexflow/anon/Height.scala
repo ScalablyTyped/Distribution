@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Height extends js.Object {
+trait Height extends StObject {
   
   var height: Double = js.native
   
@@ -24,30 +25,18 @@ object Height {
   }
   
   @scala.inline
-  implicit class HeightOps[Self <: Height] (val x: Self) extends AnyVal {
+  implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeft_shift_ticks(value: Double): Self = StObject.set(x, "left_shift_ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRight_shift_ticks(value: Double): Self = StObject.set(x, "right_shift_ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeft_shift_ticks(value: Double): Self = this.set("left_shift_ticks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRight_shift_ticks(value: Double): Self = this.set("right_shift_ticks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY_shift(value: Double): Self = this.set("y_shift", value.asInstanceOf[js.Any])
+    def setY_shift(value: Double): Self = StObject.set(x, "y_shift", value.asInstanceOf[js.Any])
   }
 }

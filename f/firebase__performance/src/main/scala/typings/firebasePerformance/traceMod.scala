@@ -5,14 +5,14 @@ import typings.firebasePerformance.anon.Attributes
 import typings.firebasePerformanceTypes.mod.PerformanceTrace
 import typings.std.PerformanceEntry
 import typings.std.PerformanceNavigationTiming
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/performance/dist/src/resources/trace", JSImport.Namespace)
-@js.native
-object traceMod extends js.Object {
+object traceMod {
   
+  @JSImport("@firebase/performance/dist/src/resources/trace", "Trace")
   @js.native
   class Trace protected () extends PerformanceTrace {
     /**
@@ -64,8 +64,7 @@ object traceMod extends js.Object {
     var traceStopMark: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Trace extends js.Object {
+  object Trace {
     
     /**
       * @param navigationTimings A single element array which contains the navigationTIming object of
@@ -73,13 +72,19 @@ object traceMod extends js.Object {
       * @param paintTimings A array which contains paintTiming object of the page load
       * @param firstInputDelay First input delay in millisec
       */
+    @JSImport("@firebase/performance/dist/src/resources/trace", "Trace.createOobTrace")
+    @js.native
     def createOobTrace(navigationTimings: js.Array[PerformanceNavigationTiming], paintTimings: js.Array[PerformanceEntry]): Unit = js.native
+    @JSImport("@firebase/performance/dist/src/resources/trace", "Trace.createOobTrace")
+    @js.native
     def createOobTrace(
       navigationTimings: js.Array[PerformanceNavigationTiming],
       paintTimings: js.Array[PerformanceEntry],
       firstInputDelay: Double
     ): Unit = js.native
     
+    @JSImport("@firebase/performance/dist/src/resources/trace", "Trace.createUserTimingTrace")
+    @js.native
     def createUserTimingTrace(measureName: String): Unit = js.native
   }
 }

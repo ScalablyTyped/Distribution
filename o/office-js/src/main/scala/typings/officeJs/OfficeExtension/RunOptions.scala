@@ -1,11 +1,12 @@
 package typings.officeJs.OfficeExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunOptions[T] extends js.Object {
+trait RunOptions[T] extends StObject {
   
   /**
     *  A previously-created context, or API object, or array of objects. 
@@ -28,33 +29,21 @@ object RunOptions {
   }
   
   @scala.inline
-  implicit class RunOptionsOps[Self <: RunOptions[_], T] (val x: Self with RunOptions[T]) extends AnyVal {
+  implicit class RunOptionsMutableBuilder[Self <: RunOptions[_], T] (val x: Self with RunOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreviousObjects(value: ClientObject | js.Array[ClientObject] | ClientRequestContext): Self = StObject.set(x, "previousObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreviousObjectsUndefined: Self = StObject.set(x, "previousObjects", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousObjectsVarargs(value: ClientObject*): Self = StObject.set(x, "previousObjects", js.Array(value :_*))
     
     @scala.inline
-    def setPreviousObjectsVarargs(value: ClientObject*): Self = this.set("previousObjects", js.Array(value :_*))
+    def setSession(value: RequestUrlAndHeaderInfo | T): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousObjects(value: ClientObject | js.Array[ClientObject] | ClientRequestContext): Self = this.set("previousObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousObjects: Self = this.set("previousObjects", js.undefined)
-    
-    @scala.inline
-    def setSession(value: RequestUrlAndHeaderInfo | T): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

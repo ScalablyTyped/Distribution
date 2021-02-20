@@ -1,11 +1,12 @@
 package typings.ssh2Streams.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SFTPStreamConfig extends js.Object {
+trait SFTPStreamConfig extends StObject {
   
   /**
     * Set this to a function that receives a single string argument to get detailed (local) debug information.
@@ -31,36 +32,24 @@ object SFTPStreamConfig {
   }
   
   @scala.inline
-  implicit class SFTPStreamConfigOps[Self <: SFTPStreamConfig] (val x: Self) extends AnyVal {
+  implicit class SFTPStreamConfigMutableBuilder[Self <: SFTPStreamConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: /* information */ String => _): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: /* information */ String => _): Self = this.set("debug", js.Any.fromFunction1(value))
+    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setServer(value: Boolean): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighWaterMark: Self = this.set("highWaterMark", js.undefined)
-    
-    @scala.inline
-    def setServer(value: Boolean): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

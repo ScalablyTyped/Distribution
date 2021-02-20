@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SensitiveDataItem extends js.Object {
+trait SensitiveDataItem extends StObject {
   
   /**
     * The category of sensitive data that was detected. For example: CREDENTIALS, for credentials data such as private keys or AWS secret keys; FINANCIAL_INFORMATION, for financial data such as credit card numbers; or, PERSONAL_INFORMATION, for personal health information, such as health insurance identification numbers, or personally identifiable information, such as driver's license identification numbers.
@@ -31,39 +32,27 @@ object SensitiveDataItem {
   }
   
   @scala.inline
-  implicit class SensitiveDataItemOps[Self <: SensitiveDataItem] (val x: Self) extends AnyVal {
+  implicit class SensitiveDataItemMutableBuilder[Self <: SensitiveDataItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: SensitiveDataItemCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetections(value: DefaultDetections): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: SensitiveDataItemCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setDetectionsVarargs(value: DefaultDetection*): Self = StObject.set(x, "detections", js.Array(value :_*))
     
     @scala.inline
-    def setDetectionsVarargs(value: DefaultDetection*): Self = this.set("detections", js.Array(value :_*))
+    def setTotalCount(value: long): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetections(value: DefaultDetections): Self = this.set("detections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetections: Self = this.set("detections", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: long): Self = this.set("totalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

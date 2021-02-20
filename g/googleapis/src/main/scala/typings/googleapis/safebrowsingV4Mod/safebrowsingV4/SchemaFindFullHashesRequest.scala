@@ -1,5 +1,6 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to return full hashes matched by the provided hash prefixes.
   */
 @js.native
-trait SchemaFindFullHashesRequest extends js.Object {
+trait SchemaFindFullHashesRequest extends StObject {
   
   /**
     * Client metadata associated with callers of higher-level APIs built on top
@@ -41,45 +42,33 @@ object SchemaFindFullHashesRequest {
   }
   
   @scala.inline
-  implicit class SchemaFindFullHashesRequestOps[Self <: SchemaFindFullHashesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaFindFullHashesRequestMutableBuilder[Self <: SchemaFindFullHashesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiClient(value: SchemaClientInfo): Self = StObject.set(x, "apiClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiClientUndefined: Self = StObject.set(x, "apiClient", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClient(value: SchemaClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiClient(value: SchemaClientInfo): Self = this.set("apiClient", value.asInstanceOf[js.Any])
+    def setClientStates(value: js.Array[String]): Self = StObject.set(x, "clientStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApiClient: Self = this.set("apiClient", js.undefined)
+    def setClientStatesUndefined: Self = StObject.set(x, "clientStates", js.undefined)
     
     @scala.inline
-    def setClient(value: SchemaClientInfo): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setClientStatesVarargs(value: String*): Self = StObject.set(x, "clientStates", js.Array(value :_*))
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def setClientStatesVarargs(value: String*): Self = this.set("clientStates", js.Array(value :_*))
+    def setThreatInfo(value: SchemaThreatInfo): Self = StObject.set(x, "threatInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientStates(value: js.Array[String]): Self = this.set("clientStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientStates: Self = this.set("clientStates", js.undefined)
-    
-    @scala.inline
-    def setThreatInfo(value: SchemaThreatInfo): Self = this.set("threatInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatInfo: Self = this.set("threatInfo", js.undefined)
+    def setThreatInfoUndefined: Self = StObject.set(x, "threatInfo", js.undefined)
   }
 }

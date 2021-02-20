@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArimaModelInfo extends js.Object {
+trait ArimaModelInfo extends StObject {
   
   /** Arima coefficients. */
   var arimaCoefficients: js.UndefOr[ArimaCoefficients] = js.native
@@ -34,57 +35,45 @@ object ArimaModelInfo {
   }
   
   @scala.inline
-  implicit class ArimaModelInfoOps[Self <: ArimaModelInfo] (val x: Self) extends AnyVal {
+  implicit class ArimaModelInfoMutableBuilder[Self <: ArimaModelInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArimaCoefficients(value: ArimaCoefficients): Self = StObject.set(x, "arimaCoefficients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArimaCoefficientsUndefined: Self = StObject.set(x, "arimaCoefficients", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArimaFittingMetrics(value: ArimaFittingMetrics): Self = StObject.set(x, "arimaFittingMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArimaCoefficients(value: ArimaCoefficients): Self = this.set("arimaCoefficients", value.asInstanceOf[js.Any])
+    def setArimaFittingMetricsUndefined: Self = StObject.set(x, "arimaFittingMetrics", js.undefined)
     
     @scala.inline
-    def deleteArimaCoefficients: Self = this.set("arimaCoefficients", js.undefined)
+    def setHasDrift(value: Boolean): Self = StObject.set(x, "hasDrift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArimaFittingMetrics(value: ArimaFittingMetrics): Self = this.set("arimaFittingMetrics", value.asInstanceOf[js.Any])
+    def setHasDriftUndefined: Self = StObject.set(x, "hasDrift", js.undefined)
     
     @scala.inline
-    def deleteArimaFittingMetrics: Self = this.set("arimaFittingMetrics", js.undefined)
+    def setNonSeasonalOrder(value: ArimaOrder): Self = StObject.set(x, "nonSeasonalOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDrift(value: Boolean): Self = this.set("hasDrift", value.asInstanceOf[js.Any])
+    def setNonSeasonalOrderUndefined: Self = StObject.set(x, "nonSeasonalOrder", js.undefined)
     
     @scala.inline
-    def deleteHasDrift: Self = this.set("hasDrift", js.undefined)
+    def setSeasonalPeriods(value: js.Array[String]): Self = StObject.set(x, "seasonalPeriods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonSeasonalOrder(value: ArimaOrder): Self = this.set("nonSeasonalOrder", value.asInstanceOf[js.Any])
+    def setSeasonalPeriodsUndefined: Self = StObject.set(x, "seasonalPeriods", js.undefined)
     
     @scala.inline
-    def deleteNonSeasonalOrder: Self = this.set("nonSeasonalOrder", js.undefined)
+    def setSeasonalPeriodsVarargs(value: String*): Self = StObject.set(x, "seasonalPeriods", js.Array(value :_*))
     
     @scala.inline
-    def setSeasonalPeriodsVarargs(value: String*): Self = this.set("seasonalPeriods", js.Array(value :_*))
+    def setTimeSeriesId(value: String): Self = StObject.set(x, "timeSeriesId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeasonalPeriods(value: js.Array[String]): Self = this.set("seasonalPeriods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeasonalPeriods: Self = this.set("seasonalPeriods", js.undefined)
-    
-    @scala.inline
-    def setTimeSeriesId(value: String): Self = this.set("timeSeriesId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSeriesId: Self = this.set("timeSeriesId", js.undefined)
+    def setTimeSeriesIdUndefined: Self = StObject.set(x, "timeSeriesId", js.undefined)
   }
 }

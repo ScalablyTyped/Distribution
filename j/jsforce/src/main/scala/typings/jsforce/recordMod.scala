@@ -7,16 +7,16 @@ import typings.jsforce.salesforceIdMod.SalesforceId
 import typings.node.streamMod.Stream
 import typings.std.Error
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsforce/record", JSImport.Namespace)
-@js.native
-object recordMod extends js.Object {
+object recordMod {
   
+  @JSImport("jsforce/record", "RecordReference")
   @js.native
-  class RecordReference[T] protected () extends js.Object {
+  class RecordReference[T] protected () extends StObject {
     def this(conn: Connection, `type`: String, id: SalesforceId) = this()
     
     def blob(fieldName: String): Stream = js.native

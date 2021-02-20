@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumericBucketingResult extends js.Object {
+trait NumericBucketingResult extends StObject {
   
   /** Count within each bucket. Its size is the length of NumericBucketingOption.bucket_bounds plus 1. */
   var counts: js.UndefOr[js.Array[BucketizedCount]] = js.native
@@ -25,39 +26,27 @@ object NumericBucketingResult {
   }
   
   @scala.inline
-  implicit class NumericBucketingResultOps[Self <: NumericBucketingResult] (val x: Self) extends AnyVal {
+  implicit class NumericBucketingResultMutableBuilder[Self <: NumericBucketingResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCounts(value: js.Array[BucketizedCount]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountsVarargs(value: BucketizedCount*): Self = StObject.set(x, "counts", js.Array(value :_*))
     
     @scala.inline
-    def setCountsVarargs(value: BucketizedCount*): Self = this.set("counts", js.Array(value :_*))
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounts(value: js.Array[BucketizedCount]): Self = this.set("counts", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteCounts: Self = this.set("counts", js.undefined)
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
-    
-    @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

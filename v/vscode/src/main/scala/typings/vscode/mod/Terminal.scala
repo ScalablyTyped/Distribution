@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Terminal extends js.Object {
+trait Terminal extends StObject {
   
   /**
     * The object used to initialize the terminal, this is useful for example to detecting the

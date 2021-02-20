@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintTaskCompletion extends js.Object
+sealed trait PrintTaskCompletion extends StObject
 /** Specifies the completion status of a print task. */
 @JSGlobal("Windows.Graphics.Printing.PrintTaskCompletion")
 @js.native
-object PrintTaskCompletion extends js.Object {
+object PrintTaskCompletion extends StObject {
   
   /** An abandoned print task. */
   @js.native

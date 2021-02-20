@@ -1,12 +1,13 @@
 package typings.angularCore.anon
 
 import typings.angularCore.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Declarations extends js.Object {
+trait Declarations extends StObject {
   
   /** List of components, directives, and pipes declared by this module. */
   var declarations: js.UndefOr[js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]] = js.native
@@ -29,54 +30,42 @@ object Declarations {
   }
   
   @scala.inline
-  implicit class DeclarationsOps[Self <: Declarations] (val x: Self) extends AnyVal {
+  implicit class DeclarationsMutableBuilder[Self <: Declarations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeclarations(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeclarationsFunction0(value: () => js.Array[Type[_]]): Self = StObject.set(x, "declarations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
     @scala.inline
-    def setDeclarationsVarargs(value: Type[js.Any]*): Self = this.set("declarations", js.Array(value :_*))
+    def setDeclarationsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "declarations", js.Array(value :_*))
     
     @scala.inline
-    def setDeclarationsFunction0(value: () => js.Array[Type[_]]): Self = this.set("declarations", js.Any.fromFunction0(value))
+    def setExports(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclarations(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = this.set("declarations", value.asInstanceOf[js.Any])
+    def setExportsFunction0(value: () => js.Array[Type[_]]): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDeclarations: Self = this.set("declarations", js.undefined)
+    def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
     @scala.inline
-    def setExportsVarargs(value: Type[js.Any]*): Self = this.set("exports", js.Array(value :_*))
+    def setExportsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "exports", js.Array(value :_*))
     
     @scala.inline
-    def setExportsFunction0(value: () => js.Array[Type[_]]): Self = this.set("exports", js.Any.fromFunction0(value))
+    def setImports(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExports(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = this.set("exports", value.asInstanceOf[js.Any])
+    def setImportsFunction0(value: () => js.Array[Type[_]]): Self = StObject.set(x, "imports", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteExports: Self = this.set("exports", js.undefined)
+    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
     @scala.inline
-    def setImportsVarargs(value: Type[js.Any]*): Self = this.set("imports", js.Array(value :_*))
-    
-    @scala.inline
-    def setImportsFunction0(value: () => js.Array[Type[_]]): Self = this.set("imports", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setImports(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = this.set("imports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImports: Self = this.set("imports", js.undefined)
+    def setImportsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "imports", js.Array(value :_*))
   }
 }

@@ -5,12 +5,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.touchEnd
 import typings.devtoolsProtocol.devtoolsProtocolStrings.touchMove
 import typings.devtoolsProtocol.devtoolsProtocolStrings.touchStart
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DispatchTouchEventRequest extends js.Object {
+trait DispatchTouchEventRequest extends StObject {
   
   /**
     * Bit field representing pressed modifier keys. Alt=1, Ctrl=2, Meta/Command=4, Shift=8
@@ -46,39 +47,27 @@ object DispatchTouchEventRequest {
   }
   
   @scala.inline
-  implicit class DispatchTouchEventRequestOps[Self <: DispatchTouchEventRequest] (val x: Self) extends AnyVal {
+  implicit class DispatchTouchEventRequestMutableBuilder[Self <: DispatchTouchEventRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModifiers(value: integer): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchPointsVarargs(value: TouchPoint*): Self = this.set("touchPoints", js.Array(value :_*))
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def setTouchPoints(value: js.Array[TouchPoint]): Self = this.set("touchPoints", value.asInstanceOf[js.Any])
+    def setTouchPoints(value: js.Array[TouchPoint]): Self = StObject.set(x, "touchPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: touchStart | touchEnd | touchMove | touchCancel): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTouchPointsVarargs(value: TouchPoint*): Self = StObject.set(x, "touchPoints", js.Array(value :_*))
     
     @scala.inline
-    def setModifiers(value: integer): Self = this.set("modifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: TimeSinceEpoch): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setType(value: touchStart | touchEnd | touchMove | touchCancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

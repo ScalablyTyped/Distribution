@@ -1,11 +1,12 @@
 package typings.screeps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GH extends js.Object {
+trait GH extends StObject {
   
   var GH: UpgradeController = js.native
   
@@ -53,54 +54,42 @@ object GH {
   }
   
   @scala.inline
-  implicit class GHOps[Self <: GH] (val x: Self) extends AnyVal {
+  implicit class GHMutableBuilder[Self <: GH] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGH(value: UpgradeController): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGH2O(value: `4`): Self = StObject.set(x, "GH2O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLH(value: Build): Self = StObject.set(x, "LH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGH(value: UpgradeController): Self = this.set("GH", value.asInstanceOf[js.Any])
+    def setLH2O(value: Repair): Self = StObject.set(x, "LH2O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGH2O(value: `4`): Self = this.set("GH2O", value.asInstanceOf[js.Any])
+    def setUHO2(value: `0`): Self = StObject.set(x, "UHO2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLH(value: Build): Self = this.set("LH", value.asInstanceOf[js.Any])
+    def setUO(value: Harvest): Self = StObject.set(x, "UO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLH2O(value: Repair): Self = this.set("LH2O", value.asInstanceOf[js.Any])
+    def setXGH2O(value: `5`): Self = StObject.set(x, "XGH2O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUHO2(value: `0`): Self = this.set("UHO2", value.asInstanceOf[js.Any])
+    def setXLH2O(value: BuildRepair): Self = StObject.set(x, "XLH2O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUO(value: Harvest): Self = this.set("UO", value.asInstanceOf[js.Any])
+    def setXUHO2(value: `1`): Self = StObject.set(x, "XUHO2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXGH2O(value: `5`): Self = this.set("XGH2O", value.asInstanceOf[js.Any])
+    def setXZH2O(value: `3`): Self = StObject.set(x, "XZH2O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXLH2O(value: BuildRepair): Self = this.set("XLH2O", value.asInstanceOf[js.Any])
+    def setZH(value: Dismantle): Self = StObject.set(x, "ZH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXUHO2(value: `1`): Self = this.set("XUHO2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXZH2O(value: `3`): Self = this.set("XZH2O", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZH(value: Dismantle): Self = this.set("ZH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZH2O(value: `2`): Self = this.set("ZH2O", value.asInstanceOf[js.Any])
+    def setZH2O(value: `2`): Self = StObject.set(x, "ZH2O", value.asInstanceOf[js.Any])
   }
 }

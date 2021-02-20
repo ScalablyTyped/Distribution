@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,84 +35,72 @@ object ContactFolder {
   }
   
   @scala.inline
-  implicit class ContactFolderOps[Self <: ContactFolder] (val x: Self) extends AnyVal {
+  implicit class ContactFolderMutableBuilder[Self <: ContactFolder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildFolders(value: NullableOption[js.Array[ContactFolder]]): Self = StObject.set(x, "childFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildFoldersNull: Self = StObject.set(x, "childFolders", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildFoldersUndefined: Self = StObject.set(x, "childFolders", js.undefined)
     
     @scala.inline
-    def setChildFoldersVarargs(value: ContactFolder*): Self = this.set("childFolders", js.Array(value :_*))
+    def setChildFoldersVarargs(value: ContactFolder*): Self = StObject.set(x, "childFolders", js.Array(value :_*))
     
     @scala.inline
-    def setChildFolders(value: NullableOption[js.Array[ContactFolder]]): Self = this.set("childFolders", value.asInstanceOf[js.Any])
+    def setContacts(value: NullableOption[js.Array[Contact]]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildFolders: Self = this.set("childFolders", js.undefined)
+    def setContactsNull: Self = StObject.set(x, "contacts", null)
     
     @scala.inline
-    def setChildFoldersNull: Self = this.set("childFolders", null)
+    def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
     
     @scala.inline
-    def setContactsVarargs(value: Contact*): Self = this.set("contacts", js.Array(value :_*))
+    def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
     
     @scala.inline
-    def setContacts(value: NullableOption[js.Array[Contact]]): Self = this.set("contacts", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContacts: Self = this.set("contacts", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setContactsNull: Self = this.set("contacts", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setMultiValueExtendedPropertiesNull: Self = StObject.set(x, "multiValueExtendedProperties", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = this.set("multiValueExtendedProperties", js.Array(value :_*))
+    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = this.set("multiValueExtendedProperties", value.asInstanceOf[js.Any])
+    def setParentFolderId(value: NullableOption[String]): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiValueExtendedProperties: Self = this.set("multiValueExtendedProperties", js.undefined)
+    def setParentFolderIdNull: Self = StObject.set(x, "parentFolderId", null)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesNull: Self = this.set("multiValueExtendedProperties", null)
+    def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
     
     @scala.inline
-    def setParentFolderId(value: NullableOption[String]): Self = this.set("parentFolderId", value.asInstanceOf[js.Any])
+    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = StObject.set(x, "singleValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentFolderId: Self = this.set("parentFolderId", js.undefined)
+    def setSingleValueExtendedPropertiesNull: Self = StObject.set(x, "singleValueExtendedProperties", null)
     
     @scala.inline
-    def setParentFolderIdNull: Self = this.set("parentFolderId", null)
+    def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = this.set("singleValueExtendedProperties", js.Array(value :_*))
-    
-    @scala.inline
-    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = this.set("singleValueExtendedProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleValueExtendedProperties: Self = this.set("singleValueExtendedProperties", js.undefined)
-    
-    @scala.inline
-    def setSingleValueExtendedPropertiesNull: Self = this.set("singleValueExtendedProperties", null)
+    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
   }
 }

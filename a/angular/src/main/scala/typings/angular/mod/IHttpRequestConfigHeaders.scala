@@ -1,6 +1,7 @@
 package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,48 +32,36 @@ object IHttpRequestConfigHeaders {
   }
   
   @scala.inline
-  implicit class IHttpRequestConfigHeadersOps[Self <: IHttpRequestConfigHeaders] (val x: Self) extends AnyVal {
+  implicit class IHttpRequestConfigHeadersMutableBuilder[Self <: IHttpRequestConfigHeaders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommon(value: js.Any): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet(value: js.Any): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommon(value: js.Any): Self = this.set("common", value.asInstanceOf[js.Any])
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteCommon: Self = this.set("common", js.undefined)
+    def setPatch(value: js.Any): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: js.Any): Self = this.set("get", value.asInstanceOf[js.Any])
+    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setPost(value: js.Any): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatch(value: js.Any): Self = this.set("patch", value.asInstanceOf[js.Any])
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
     @scala.inline
-    def deletePatch: Self = this.set("patch", js.undefined)
+    def setPut(value: js.Any): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPost(value: js.Any): Self = this.set("post", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePost: Self = this.set("post", js.undefined)
-    
-    @scala.inline
-    def setPut(value: js.Any): Self = this.set("put", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePut: Self = this.set("put", js.undefined)
+    def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1838,603 +1839,591 @@ object XDatabaseMetaData {
   }
   
   @scala.inline
-  implicit class XDatabaseMetaDataOps[Self <: XDatabaseMetaData] (val x: Self) extends AnyVal {
+  implicit class XDatabaseMetaDataMutableBuilder[Self <: XDatabaseMetaData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllProceduresAreCallable(value: () => Boolean): Self = StObject.set(x, "allProceduresAreCallable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllTablesAreSelectable(value: () => Boolean): Self = StObject.set(x, "allTablesAreSelectable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCatalogSeparator(value: String): Self = StObject.set(x, "CatalogSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogSeparator(value: String): Self = this.set("CatalogSeparator", value.asInstanceOf[js.Any])
+    def setCatalogTerm(value: String): Self = StObject.set(x, "CatalogTerm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogTerm(value: String): Self = this.set("CatalogTerm", value.asInstanceOf[js.Any])
+    def setCatalogs(value: XResultSet): Self = StObject.set(x, "Catalogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogs(value: XResultSet): Self = this.set("Catalogs", value.asInstanceOf[js.Any])
+    def setConnection(value: XConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: XConnection): Self = this.set("Connection", value.asInstanceOf[js.Any])
+    def setDataDefinitionCausesTransactionCommit(value: () => Boolean): Self = StObject.set(x, "dataDefinitionCausesTransactionCommit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDatabaseProductName(value: String): Self = this.set("DatabaseProductName", value.asInstanceOf[js.Any])
+    def setDataDefinitionIgnoredInTransactions(value: () => Boolean): Self = StObject.set(x, "dataDefinitionIgnoredInTransactions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDatabaseProductVersion(value: String): Self = this.set("DatabaseProductVersion", value.asInstanceOf[js.Any])
+    def setDatabaseProductName(value: String): Self = StObject.set(x, "DatabaseProductName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTransactionIsolation(value: Double): Self = this.set("DefaultTransactionIsolation", value.asInstanceOf[js.Any])
+    def setDatabaseProductVersion(value: String): Self = StObject.set(x, "DatabaseProductVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriverMajorVersion(value: Double): Self = this.set("DriverMajorVersion", value.asInstanceOf[js.Any])
+    def setDefaultTransactionIsolation(value: Double): Self = StObject.set(x, "DefaultTransactionIsolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriverMinorVersion(value: Double): Self = this.set("DriverMinorVersion", value.asInstanceOf[js.Any])
+    def setDeletesAreDetected(value: Double => Boolean): Self = StObject.set(x, "deletesAreDetected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDriverName(value: String): Self = this.set("DriverName", value.asInstanceOf[js.Any])
+    def setDoesMaxRowSizeIncludeBlobs(value: () => Boolean): Self = StObject.set(x, "doesMaxRowSizeIncludeBlobs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDriverVersion(value: String): Self = this.set("DriverVersion", value.asInstanceOf[js.Any])
+    def setDriverMajorVersion(value: Double): Self = StObject.set(x, "DriverMajorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraNameCharacters(value: String): Self = this.set("ExtraNameCharacters", value.asInstanceOf[js.Any])
+    def setDriverMinorVersion(value: Double): Self = StObject.set(x, "DriverMinorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierQuoteString(value: String): Self = this.set("IdentifierQuoteString", value.asInstanceOf[js.Any])
+    def setDriverName(value: String): Self = StObject.set(x, "DriverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBinaryLiteralLength(value: Double): Self = this.set("MaxBinaryLiteralLength", value.asInstanceOf[js.Any])
+    def setDriverVersion(value: String): Self = StObject.set(x, "DriverVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCatalogNameLength(value: Double): Self = this.set("MaxCatalogNameLength", value.asInstanceOf[js.Any])
+    def setExtraNameCharacters(value: String): Self = StObject.set(x, "ExtraNameCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCharLiteralLength(value: Double): Self = this.set("MaxCharLiteralLength", value.asInstanceOf[js.Any])
+    def setGetBestRowIdentifier(value: (js.Any, String, String, Double, Boolean) => XResultSet): Self = StObject.set(x, "getBestRowIdentifier", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setMaxColumnNameLength(value: Double): Self = this.set("MaxColumnNameLength", value.asInstanceOf[js.Any])
+    def setGetCatalogSeparator(value: () => String): Self = StObject.set(x, "getCatalogSeparator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxColumnsInGroupBy(value: Double): Self = this.set("MaxColumnsInGroupBy", value.asInstanceOf[js.Any])
+    def setGetCatalogTerm(value: () => String): Self = StObject.set(x, "getCatalogTerm", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxColumnsInIndex(value: Double): Self = this.set("MaxColumnsInIndex", value.asInstanceOf[js.Any])
+    def setGetCatalogs(value: () => XResultSet): Self = StObject.set(x, "getCatalogs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxColumnsInOrderBy(value: Double): Self = this.set("MaxColumnsInOrderBy", value.asInstanceOf[js.Any])
+    def setGetColumnPrivileges(value: (js.Any, String, String, String) => XResultSet): Self = StObject.set(x, "getColumnPrivileges", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setMaxColumnsInSelect(value: Double): Self = this.set("MaxColumnsInSelect", value.asInstanceOf[js.Any])
+    def setGetColumns(value: (js.Any, String, String, String) => XResultSet): Self = StObject.set(x, "getColumns", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setMaxColumnsInTable(value: Double): Self = this.set("MaxColumnsInTable", value.asInstanceOf[js.Any])
+    def setGetConnection(value: () => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxConnections(value: Double): Self = this.set("MaxConnections", value.asInstanceOf[js.Any])
+    def setGetCrossReference(value: (js.Any, String, String, js.Any, String, String) => XResultSet): Self = StObject.set(x, "getCrossReference", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setMaxCursorNameLength(value: Double): Self = this.set("MaxCursorNameLength", value.asInstanceOf[js.Any])
+    def setGetDatabaseProductName(value: () => String): Self = StObject.set(x, "getDatabaseProductName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxIndexLength(value: Double): Self = this.set("MaxIndexLength", value.asInstanceOf[js.Any])
+    def setGetDatabaseProductVersion(value: () => String): Self = StObject.set(x, "getDatabaseProductVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxProcedureNameLength(value: Double): Self = this.set("MaxProcedureNameLength", value.asInstanceOf[js.Any])
+    def setGetDefaultTransactionIsolation(value: () => Double): Self = StObject.set(x, "getDefaultTransactionIsolation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxRowSize(value: Double): Self = this.set("MaxRowSize", value.asInstanceOf[js.Any])
+    def setGetDriverMajorVersion(value: () => Double): Self = StObject.set(x, "getDriverMajorVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxSchemaNameLength(value: Double): Self = this.set("MaxSchemaNameLength", value.asInstanceOf[js.Any])
+    def setGetDriverMinorVersion(value: () => Double): Self = StObject.set(x, "getDriverMinorVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxStatementLength(value: Double): Self = this.set("MaxStatementLength", value.asInstanceOf[js.Any])
+    def setGetDriverName(value: () => String): Self = StObject.set(x, "getDriverName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxStatements(value: Double): Self = this.set("MaxStatements", value.asInstanceOf[js.Any])
+    def setGetDriverVersion(value: () => String): Self = StObject.set(x, "getDriverVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxTableNameLength(value: Double): Self = this.set("MaxTableNameLength", value.asInstanceOf[js.Any])
+    def setGetExportedKeys(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getExportedKeys", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMaxTablesInSelect(value: Double): Self = this.set("MaxTablesInSelect", value.asInstanceOf[js.Any])
+    def setGetExtraNameCharacters(value: () => String): Self = StObject.set(x, "getExtraNameCharacters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxUserNameLength(value: Double): Self = this.set("MaxUserNameLength", value.asInstanceOf[js.Any])
+    def setGetIdentifierQuoteString(value: () => String): Self = StObject.set(x, "getIdentifierQuoteString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNumericFunctions(value: String): Self = this.set("NumericFunctions", value.asInstanceOf[js.Any])
+    def setGetImportedKeys(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getImportedKeys", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setProcedureTerm(value: String): Self = this.set("ProcedureTerm", value.asInstanceOf[js.Any])
+    def setGetIndexInfo(value: (js.Any, String, String, Boolean, Boolean) => XResultSet): Self = StObject.set(x, "getIndexInfo", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setSQLKeywords(value: String): Self = this.set("SQLKeywords", value.asInstanceOf[js.Any])
+    def setGetMaxBinaryLiteralLength(value: () => Double): Self = StObject.set(x, "getMaxBinaryLiteralLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSchemaTerm(value: String): Self = this.set("SchemaTerm", value.asInstanceOf[js.Any])
+    def setGetMaxCatalogNameLength(value: () => Double): Self = StObject.set(x, "getMaxCatalogNameLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSchemas(value: XResultSet): Self = this.set("Schemas", value.asInstanceOf[js.Any])
+    def setGetMaxCharLiteralLength(value: () => Double): Self = StObject.set(x, "getMaxCharLiteralLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSearchStringEscape(value: String): Self = this.set("SearchStringEscape", value.asInstanceOf[js.Any])
+    def setGetMaxColumnNameLength(value: () => Double): Self = StObject.set(x, "getMaxColumnNameLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStringFunctions(value: String): Self = this.set("StringFunctions", value.asInstanceOf[js.Any])
+    def setGetMaxColumnsInGroupBy(value: () => Double): Self = StObject.set(x, "getMaxColumnsInGroupBy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSystemFunctions(value: String): Self = this.set("SystemFunctions", value.asInstanceOf[js.Any])
+    def setGetMaxColumnsInIndex(value: () => Double): Self = StObject.set(x, "getMaxColumnsInIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTableTypes(value: XResultSet): Self = this.set("TableTypes", value.asInstanceOf[js.Any])
+    def setGetMaxColumnsInOrderBy(value: () => Double): Self = StObject.set(x, "getMaxColumnsInOrderBy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTimeDateFunctions(value: String): Self = this.set("TimeDateFunctions", value.asInstanceOf[js.Any])
+    def setGetMaxColumnsInSelect(value: () => Double): Self = StObject.set(x, "getMaxColumnsInSelect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTypeInfo(value: XResultSet): Self = this.set("TypeInfo", value.asInstanceOf[js.Any])
+    def setGetMaxColumnsInTable(value: () => Double): Self = StObject.set(x, "getMaxColumnsInTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
+    def setGetMaxConnections(value: () => Double): Self = StObject.set(x, "getMaxConnections", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUserName(value: String): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setGetMaxCursorNameLength(value: () => Double): Self = StObject.set(x, "getMaxCursorNameLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAllProceduresAreCallable(value: () => Boolean): Self = this.set("allProceduresAreCallable", js.Any.fromFunction0(value))
+    def setGetMaxIndexLength(value: () => Double): Self = StObject.set(x, "getMaxIndexLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAllTablesAreSelectable(value: () => Boolean): Self = this.set("allTablesAreSelectable", js.Any.fromFunction0(value))
+    def setGetMaxProcedureNameLength(value: () => Double): Self = StObject.set(x, "getMaxProcedureNameLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataDefinitionCausesTransactionCommit(value: () => Boolean): Self = this.set("dataDefinitionCausesTransactionCommit", js.Any.fromFunction0(value))
+    def setGetMaxRowSize(value: () => Double): Self = StObject.set(x, "getMaxRowSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataDefinitionIgnoredInTransactions(value: () => Boolean): Self = this.set("dataDefinitionIgnoredInTransactions", js.Any.fromFunction0(value))
+    def setGetMaxSchemaNameLength(value: () => Double): Self = StObject.set(x, "getMaxSchemaNameLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeletesAreDetected(value: Double => Boolean): Self = this.set("deletesAreDetected", js.Any.fromFunction1(value))
+    def setGetMaxStatementLength(value: () => Double): Self = StObject.set(x, "getMaxStatementLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoesMaxRowSizeIncludeBlobs(value: () => Boolean): Self = this.set("doesMaxRowSizeIncludeBlobs", js.Any.fromFunction0(value))
+    def setGetMaxStatements(value: () => Double): Self = StObject.set(x, "getMaxStatements", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBestRowIdentifier(value: (js.Any, String, String, Double, Boolean) => XResultSet): Self = this.set("getBestRowIdentifier", js.Any.fromFunction5(value))
+    def setGetMaxTableNameLength(value: () => Double): Self = StObject.set(x, "getMaxTableNameLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCatalogSeparator(value: () => String): Self = this.set("getCatalogSeparator", js.Any.fromFunction0(value))
+    def setGetMaxTablesInSelect(value: () => Double): Self = StObject.set(x, "getMaxTablesInSelect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCatalogTerm(value: () => String): Self = this.set("getCatalogTerm", js.Any.fromFunction0(value))
+    def setGetMaxUserNameLength(value: () => Double): Self = StObject.set(x, "getMaxUserNameLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCatalogs(value: () => XResultSet): Self = this.set("getCatalogs", js.Any.fromFunction0(value))
+    def setGetNumericFunctions(value: () => String): Self = StObject.set(x, "getNumericFunctions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColumnPrivileges(value: (js.Any, String, String, String) => XResultSet): Self = this.set("getColumnPrivileges", js.Any.fromFunction4(value))
+    def setGetPrimaryKeys(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getPrimaryKeys", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetColumns(value: (js.Any, String, String, String) => XResultSet): Self = this.set("getColumns", js.Any.fromFunction4(value))
+    def setGetProcedureColumns(value: (js.Any, String, String, String) => XResultSet): Self = StObject.set(x, "getProcedureColumns", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetConnection(value: () => XConnection): Self = this.set("getConnection", js.Any.fromFunction0(value))
+    def setGetProcedureTerm(value: () => String): Self = StObject.set(x, "getProcedureTerm", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCrossReference(value: (js.Any, String, String, js.Any, String, String) => XResultSet): Self = this.set("getCrossReference", js.Any.fromFunction6(value))
+    def setGetProcedures(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getProcedures", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetDatabaseProductName(value: () => String): Self = this.set("getDatabaseProductName", js.Any.fromFunction0(value))
+    def setGetSQLKeywords(value: () => String): Self = StObject.set(x, "getSQLKeywords", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDatabaseProductVersion(value: () => String): Self = this.set("getDatabaseProductVersion", js.Any.fromFunction0(value))
+    def setGetSchemaTerm(value: () => String): Self = StObject.set(x, "getSchemaTerm", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultTransactionIsolation(value: () => Double): Self = this.set("getDefaultTransactionIsolation", js.Any.fromFunction0(value))
+    def setGetSchemas(value: () => XResultSet): Self = StObject.set(x, "getSchemas", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDriverMajorVersion(value: () => Double): Self = this.set("getDriverMajorVersion", js.Any.fromFunction0(value))
+    def setGetSearchStringEscape(value: () => String): Self = StObject.set(x, "getSearchStringEscape", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDriverMinorVersion(value: () => Double): Self = this.set("getDriverMinorVersion", js.Any.fromFunction0(value))
+    def setGetStringFunctions(value: () => String): Self = StObject.set(x, "getStringFunctions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDriverName(value: () => String): Self = this.set("getDriverName", js.Any.fromFunction0(value))
+    def setGetSystemFunctions(value: () => String): Self = StObject.set(x, "getSystemFunctions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDriverVersion(value: () => String): Self = this.set("getDriverVersion", js.Any.fromFunction0(value))
+    def setGetTablePrivileges(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getTablePrivileges", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetExportedKeys(value: (js.Any, String, String) => XResultSet): Self = this.set("getExportedKeys", js.Any.fromFunction3(value))
+    def setGetTableTypes(value: () => XResultSet): Self = StObject.set(x, "getTableTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExtraNameCharacters(value: () => String): Self = this.set("getExtraNameCharacters", js.Any.fromFunction0(value))
+    def setGetTables(value: (js.Any, String, String, SeqEquiv[String]) => XResultSet): Self = StObject.set(x, "getTables", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetIdentifierQuoteString(value: () => String): Self = this.set("getIdentifierQuoteString", js.Any.fromFunction0(value))
+    def setGetTimeDateFunctions(value: () => String): Self = StObject.set(x, "getTimeDateFunctions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetImportedKeys(value: (js.Any, String, String) => XResultSet): Self = this.set("getImportedKeys", js.Any.fromFunction3(value))
+    def setGetTypeInfo(value: () => XResultSet): Self = StObject.set(x, "getTypeInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndexInfo(value: (js.Any, String, String, Boolean, Boolean) => XResultSet): Self = this.set("getIndexInfo", js.Any.fromFunction5(value))
+    def setGetUDTs(value: (js.Any, String, String, SeqEquiv[Double]) => XResultSet): Self = StObject.set(x, "getUDTs", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetMaxBinaryLiteralLength(value: () => Double): Self = this.set("getMaxBinaryLiteralLength", js.Any.fromFunction0(value))
+    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxCatalogNameLength(value: () => Double): Self = this.set("getMaxCatalogNameLength", js.Any.fromFunction0(value))
+    def setGetUserName(value: () => String): Self = StObject.set(x, "getUserName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxCharLiteralLength(value: () => Double): Self = this.set("getMaxCharLiteralLength", js.Any.fromFunction0(value))
+    def setGetVersionColumns(value: (js.Any, String, String) => XResultSet): Self = StObject.set(x, "getVersionColumns", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetMaxColumnNameLength(value: () => Double): Self = this.set("getMaxColumnNameLength", js.Any.fromFunction0(value))
+    def setIdentifierQuoteString(value: String): Self = StObject.set(x, "IdentifierQuoteString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxColumnsInGroupBy(value: () => Double): Self = this.set("getMaxColumnsInGroupBy", js.Any.fromFunction0(value))
+    def setInsertsAreDetected(value: Double => Boolean): Self = StObject.set(x, "insertsAreDetected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMaxColumnsInIndex(value: () => Double): Self = this.set("getMaxColumnsInIndex", js.Any.fromFunction0(value))
+    def setIsCatalogAtStart(value: () => Boolean): Self = StObject.set(x, "isCatalogAtStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxColumnsInOrderBy(value: () => Double): Self = this.set("getMaxColumnsInOrderBy", js.Any.fromFunction0(value))
+    def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxColumnsInSelect(value: () => Double): Self = this.set("getMaxColumnsInSelect", js.Any.fromFunction0(value))
+    def setMaxBinaryLiteralLength(value: Double): Self = StObject.set(x, "MaxBinaryLiteralLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxColumnsInTable(value: () => Double): Self = this.set("getMaxColumnsInTable", js.Any.fromFunction0(value))
+    def setMaxCatalogNameLength(value: Double): Self = StObject.set(x, "MaxCatalogNameLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxConnections(value: () => Double): Self = this.set("getMaxConnections", js.Any.fromFunction0(value))
+    def setMaxCharLiteralLength(value: Double): Self = StObject.set(x, "MaxCharLiteralLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxCursorNameLength(value: () => Double): Self = this.set("getMaxCursorNameLength", js.Any.fromFunction0(value))
+    def setMaxColumnNameLength(value: Double): Self = StObject.set(x, "MaxColumnNameLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxIndexLength(value: () => Double): Self = this.set("getMaxIndexLength", js.Any.fromFunction0(value))
+    def setMaxColumnsInGroupBy(value: Double): Self = StObject.set(x, "MaxColumnsInGroupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxProcedureNameLength(value: () => Double): Self = this.set("getMaxProcedureNameLength", js.Any.fromFunction0(value))
+    def setMaxColumnsInIndex(value: Double): Self = StObject.set(x, "MaxColumnsInIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxRowSize(value: () => Double): Self = this.set("getMaxRowSize", js.Any.fromFunction0(value))
+    def setMaxColumnsInOrderBy(value: Double): Self = StObject.set(x, "MaxColumnsInOrderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxSchemaNameLength(value: () => Double): Self = this.set("getMaxSchemaNameLength", js.Any.fromFunction0(value))
+    def setMaxColumnsInSelect(value: Double): Self = StObject.set(x, "MaxColumnsInSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxStatementLength(value: () => Double): Self = this.set("getMaxStatementLength", js.Any.fromFunction0(value))
+    def setMaxColumnsInTable(value: Double): Self = StObject.set(x, "MaxColumnsInTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxStatements(value: () => Double): Self = this.set("getMaxStatements", js.Any.fromFunction0(value))
+    def setMaxConnections(value: Double): Self = StObject.set(x, "MaxConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxTableNameLength(value: () => Double): Self = this.set("getMaxTableNameLength", js.Any.fromFunction0(value))
+    def setMaxCursorNameLength(value: Double): Self = StObject.set(x, "MaxCursorNameLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxTablesInSelect(value: () => Double): Self = this.set("getMaxTablesInSelect", js.Any.fromFunction0(value))
+    def setMaxIndexLength(value: Double): Self = StObject.set(x, "MaxIndexLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxUserNameLength(value: () => Double): Self = this.set("getMaxUserNameLength", js.Any.fromFunction0(value))
+    def setMaxProcedureNameLength(value: Double): Self = StObject.set(x, "MaxProcedureNameLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNumericFunctions(value: () => String): Self = this.set("getNumericFunctions", js.Any.fromFunction0(value))
+    def setMaxRowSize(value: Double): Self = StObject.set(x, "MaxRowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPrimaryKeys(value: (js.Any, String, String) => XResultSet): Self = this.set("getPrimaryKeys", js.Any.fromFunction3(value))
+    def setMaxSchemaNameLength(value: Double): Self = StObject.set(x, "MaxSchemaNameLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetProcedureColumns(value: (js.Any, String, String, String) => XResultSet): Self = this.set("getProcedureColumns", js.Any.fromFunction4(value))
+    def setMaxStatementLength(value: Double): Self = StObject.set(x, "MaxStatementLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetProcedureTerm(value: () => String): Self = this.set("getProcedureTerm", js.Any.fromFunction0(value))
+    def setMaxStatements(value: Double): Self = StObject.set(x, "MaxStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetProcedures(value: (js.Any, String, String) => XResultSet): Self = this.set("getProcedures", js.Any.fromFunction3(value))
+    def setMaxTableNameLength(value: Double): Self = StObject.set(x, "MaxTableNameLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSQLKeywords(value: () => String): Self = this.set("getSQLKeywords", js.Any.fromFunction0(value))
+    def setMaxTablesInSelect(value: Double): Self = StObject.set(x, "MaxTablesInSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSchemaTerm(value: () => String): Self = this.set("getSchemaTerm", js.Any.fromFunction0(value))
+    def setMaxUserNameLength(value: Double): Self = StObject.set(x, "MaxUserNameLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSchemas(value: () => XResultSet): Self = this.set("getSchemas", js.Any.fromFunction0(value))
+    def setNullPlusNonNullIsNull(value: () => Boolean): Self = StObject.set(x, "nullPlusNonNullIsNull", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSearchStringEscape(value: () => String): Self = this.set("getSearchStringEscape", js.Any.fromFunction0(value))
+    def setNullsAreSortedAtEnd(value: () => Boolean): Self = StObject.set(x, "nullsAreSortedAtEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStringFunctions(value: () => String): Self = this.set("getStringFunctions", js.Any.fromFunction0(value))
+    def setNullsAreSortedAtStart(value: () => Boolean): Self = StObject.set(x, "nullsAreSortedAtStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSystemFunctions(value: () => String): Self = this.set("getSystemFunctions", js.Any.fromFunction0(value))
+    def setNullsAreSortedHigh(value: () => Boolean): Self = StObject.set(x, "nullsAreSortedHigh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTablePrivileges(value: (js.Any, String, String) => XResultSet): Self = this.set("getTablePrivileges", js.Any.fromFunction3(value))
+    def setNullsAreSortedLow(value: () => Boolean): Self = StObject.set(x, "nullsAreSortedLow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTableTypes(value: () => XResultSet): Self = this.set("getTableTypes", js.Any.fromFunction0(value))
+    def setNumericFunctions(value: String): Self = StObject.set(x, "NumericFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTables(value: (js.Any, String, String, SeqEquiv[String]) => XResultSet): Self = this.set("getTables", js.Any.fromFunction4(value))
+    def setOthersDeletesAreVisible(value: Double => Boolean): Self = StObject.set(x, "othersDeletesAreVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTimeDateFunctions(value: () => String): Self = this.set("getTimeDateFunctions", js.Any.fromFunction0(value))
+    def setOthersInsertsAreVisible(value: Double => Boolean): Self = StObject.set(x, "othersInsertsAreVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTypeInfo(value: () => XResultSet): Self = this.set("getTypeInfo", js.Any.fromFunction0(value))
+    def setOthersUpdatesAreVisible(value: Double => Boolean): Self = StObject.set(x, "othersUpdatesAreVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUDTs(value: (js.Any, String, String, SeqEquiv[Double]) => XResultSet): Self = this.set("getUDTs", js.Any.fromFunction4(value))
+    def setOwnDeletesAreVisible(value: Double => Boolean): Self = StObject.set(x, "ownDeletesAreVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetURL(value: () => String): Self = this.set("getURL", js.Any.fromFunction0(value))
+    def setOwnInsertsAreVisible(value: Double => Boolean): Self = StObject.set(x, "ownInsertsAreVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUserName(value: () => String): Self = this.set("getUserName", js.Any.fromFunction0(value))
+    def setOwnUpdatesAreVisible(value: Double => Boolean): Self = StObject.set(x, "ownUpdatesAreVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetVersionColumns(value: (js.Any, String, String) => XResultSet): Self = this.set("getVersionColumns", js.Any.fromFunction3(value))
+    def setProcedureTerm(value: String): Self = StObject.set(x, "ProcedureTerm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertsAreDetected(value: Double => Boolean): Self = this.set("insertsAreDetected", js.Any.fromFunction1(value))
+    def setSQLKeywords(value: String): Self = StObject.set(x, "SQLKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCatalogAtStart(value: () => Boolean): Self = this.set("isCatalogAtStart", js.Any.fromFunction0(value))
+    def setSchemaTerm(value: String): Self = StObject.set(x, "SchemaTerm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: () => Boolean): Self = this.set("isReadOnly", js.Any.fromFunction0(value))
+    def setSchemas(value: XResultSet): Self = StObject.set(x, "Schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullPlusNonNullIsNull(value: () => Boolean): Self = this.set("nullPlusNonNullIsNull", js.Any.fromFunction0(value))
+    def setSearchStringEscape(value: String): Self = StObject.set(x, "SearchStringEscape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullsAreSortedAtEnd(value: () => Boolean): Self = this.set("nullsAreSortedAtEnd", js.Any.fromFunction0(value))
+    def setStoresLowerCaseIdentifiers(value: () => Boolean): Self = StObject.set(x, "storesLowerCaseIdentifiers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNullsAreSortedAtStart(value: () => Boolean): Self = this.set("nullsAreSortedAtStart", js.Any.fromFunction0(value))
+    def setStoresLowerCaseQuotedIdentifiers(value: () => Boolean): Self = StObject.set(x, "storesLowerCaseQuotedIdentifiers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNullsAreSortedHigh(value: () => Boolean): Self = this.set("nullsAreSortedHigh", js.Any.fromFunction0(value))
+    def setStoresMixedCaseIdentifiers(value: () => Boolean): Self = StObject.set(x, "storesMixedCaseIdentifiers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNullsAreSortedLow(value: () => Boolean): Self = this.set("nullsAreSortedLow", js.Any.fromFunction0(value))
+    def setStoresMixedCaseQuotedIdentifiers(value: () => Boolean): Self = StObject.set(x, "storesMixedCaseQuotedIdentifiers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOthersDeletesAreVisible(value: Double => Boolean): Self = this.set("othersDeletesAreVisible", js.Any.fromFunction1(value))
+    def setStoresUpperCaseIdentifiers(value: () => Boolean): Self = StObject.set(x, "storesUpperCaseIdentifiers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOthersInsertsAreVisible(value: Double => Boolean): Self = this.set("othersInsertsAreVisible", js.Any.fromFunction1(value))
+    def setStoresUpperCaseQuotedIdentifiers(value: () => Boolean): Self = StObject.set(x, "storesUpperCaseQuotedIdentifiers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOthersUpdatesAreVisible(value: Double => Boolean): Self = this.set("othersUpdatesAreVisible", js.Any.fromFunction1(value))
+    def setStringFunctions(value: String): Self = StObject.set(x, "StringFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnDeletesAreVisible(value: Double => Boolean): Self = this.set("ownDeletesAreVisible", js.Any.fromFunction1(value))
+    def setSupportsANSI92EntryLevelSQL(value: () => Boolean): Self = StObject.set(x, "supportsANSI92EntryLevelSQL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOwnInsertsAreVisible(value: Double => Boolean): Self = this.set("ownInsertsAreVisible", js.Any.fromFunction1(value))
+    def setSupportsANSI92FullSQL(value: () => Boolean): Self = StObject.set(x, "supportsANSI92FullSQL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOwnUpdatesAreVisible(value: Double => Boolean): Self = this.set("ownUpdatesAreVisible", js.Any.fromFunction1(value))
+    def setSupportsANSI92IntermediateSQL(value: () => Boolean): Self = StObject.set(x, "supportsANSI92IntermediateSQL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStoresLowerCaseIdentifiers(value: () => Boolean): Self = this.set("storesLowerCaseIdentifiers", js.Any.fromFunction0(value))
+    def setSupportsAlterTableWithAddColumn(value: () => Boolean): Self = StObject.set(x, "supportsAlterTableWithAddColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStoresLowerCaseQuotedIdentifiers(value: () => Boolean): Self = this.set("storesLowerCaseQuotedIdentifiers", js.Any.fromFunction0(value))
+    def setSupportsAlterTableWithDropColumn(value: () => Boolean): Self = StObject.set(x, "supportsAlterTableWithDropColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStoresMixedCaseIdentifiers(value: () => Boolean): Self = this.set("storesMixedCaseIdentifiers", js.Any.fromFunction0(value))
+    def setSupportsBatchUpdates(value: () => Boolean): Self = StObject.set(x, "supportsBatchUpdates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStoresMixedCaseQuotedIdentifiers(value: () => Boolean): Self = this.set("storesMixedCaseQuotedIdentifiers", js.Any.fromFunction0(value))
+    def setSupportsCatalogsInDataManipulation(value: () => Boolean): Self = StObject.set(x, "supportsCatalogsInDataManipulation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStoresUpperCaseIdentifiers(value: () => Boolean): Self = this.set("storesUpperCaseIdentifiers", js.Any.fromFunction0(value))
+    def setSupportsCatalogsInIndexDefinitions(value: () => Boolean): Self = StObject.set(x, "supportsCatalogsInIndexDefinitions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStoresUpperCaseQuotedIdentifiers(value: () => Boolean): Self = this.set("storesUpperCaseQuotedIdentifiers", js.Any.fromFunction0(value))
+    def setSupportsCatalogsInPrivilegeDefinitions(value: () => Boolean): Self = StObject.set(x, "supportsCatalogsInPrivilegeDefinitions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsANSI92EntryLevelSQL(value: () => Boolean): Self = this.set("supportsANSI92EntryLevelSQL", js.Any.fromFunction0(value))
+    def setSupportsCatalogsInProcedureCalls(value: () => Boolean): Self = StObject.set(x, "supportsCatalogsInProcedureCalls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsANSI92FullSQL(value: () => Boolean): Self = this.set("supportsANSI92FullSQL", js.Any.fromFunction0(value))
+    def setSupportsCatalogsInTableDefinitions(value: () => Boolean): Self = StObject.set(x, "supportsCatalogsInTableDefinitions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsANSI92IntermediateSQL(value: () => Boolean): Self = this.set("supportsANSI92IntermediateSQL", js.Any.fromFunction0(value))
+    def setSupportsColumnAliasing(value: () => Boolean): Self = StObject.set(x, "supportsColumnAliasing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsAlterTableWithAddColumn(value: () => Boolean): Self = this.set("supportsAlterTableWithAddColumn", js.Any.fromFunction0(value))
+    def setSupportsConvert(value: (Double, Double) => Boolean): Self = StObject.set(x, "supportsConvert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSupportsAlterTableWithDropColumn(value: () => Boolean): Self = this.set("supportsAlterTableWithDropColumn", js.Any.fromFunction0(value))
+    def setSupportsCoreSQLGrammar(value: () => Boolean): Self = StObject.set(x, "supportsCoreSQLGrammar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsBatchUpdates(value: () => Boolean): Self = this.set("supportsBatchUpdates", js.Any.fromFunction0(value))
+    def setSupportsCorrelatedSubqueries(value: () => Boolean): Self = StObject.set(x, "supportsCorrelatedSubqueries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsCatalogsInDataManipulation(value: () => Boolean): Self = this.set("supportsCatalogsInDataManipulation", js.Any.fromFunction0(value))
+    def setSupportsDataDefinitionAndDataManipulationTransactions(value: () => Boolean): Self = StObject.set(x, "supportsDataDefinitionAndDataManipulationTransactions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsCatalogsInIndexDefinitions(value: () => Boolean): Self = this.set("supportsCatalogsInIndexDefinitions", js.Any.fromFunction0(value))
+    def setSupportsDataManipulationTransactionsOnly(value: () => Boolean): Self = StObject.set(x, "supportsDataManipulationTransactionsOnly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsCatalogsInPrivilegeDefinitions(value: () => Boolean): Self = this.set("supportsCatalogsInPrivilegeDefinitions", js.Any.fromFunction0(value))
+    def setSupportsDifferentTableCorrelationNames(value: () => Boolean): Self = StObject.set(x, "supportsDifferentTableCorrelationNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsCatalogsInProcedureCalls(value: () => Boolean): Self = this.set("supportsCatalogsInProcedureCalls", js.Any.fromFunction0(value))
+    def setSupportsExpressionsInOrderBy(value: () => Boolean): Self = StObject.set(x, "supportsExpressionsInOrderBy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsCatalogsInTableDefinitions(value: () => Boolean): Self = this.set("supportsCatalogsInTableDefinitions", js.Any.fromFunction0(value))
+    def setSupportsExtendedSQLGrammar(value: () => Boolean): Self = StObject.set(x, "supportsExtendedSQLGrammar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsColumnAliasing(value: () => Boolean): Self = this.set("supportsColumnAliasing", js.Any.fromFunction0(value))
+    def setSupportsFullOuterJoins(value: () => Boolean): Self = StObject.set(x, "supportsFullOuterJoins", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsConvert(value: (Double, Double) => Boolean): Self = this.set("supportsConvert", js.Any.fromFunction2(value))
+    def setSupportsGroupBy(value: () => Boolean): Self = StObject.set(x, "supportsGroupBy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsCoreSQLGrammar(value: () => Boolean): Self = this.set("supportsCoreSQLGrammar", js.Any.fromFunction0(value))
+    def setSupportsGroupByBeyondSelect(value: () => Boolean): Self = StObject.set(x, "supportsGroupByBeyondSelect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsCorrelatedSubqueries(value: () => Boolean): Self = this.set("supportsCorrelatedSubqueries", js.Any.fromFunction0(value))
+    def setSupportsGroupByUnrelated(value: () => Boolean): Self = StObject.set(x, "supportsGroupByUnrelated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsDataDefinitionAndDataManipulationTransactions(value: () => Boolean): Self = this.set("supportsDataDefinitionAndDataManipulationTransactions", js.Any.fromFunction0(value))
+    def setSupportsIntegrityEnhancementFacility(value: () => Boolean): Self = StObject.set(x, "supportsIntegrityEnhancementFacility", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsDataManipulationTransactionsOnly(value: () => Boolean): Self = this.set("supportsDataManipulationTransactionsOnly", js.Any.fromFunction0(value))
+    def setSupportsLikeEscapeClause(value: () => Boolean): Self = StObject.set(x, "supportsLikeEscapeClause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsDifferentTableCorrelationNames(value: () => Boolean): Self = this.set("supportsDifferentTableCorrelationNames", js.Any.fromFunction0(value))
+    def setSupportsLimitedOuterJoins(value: () => Boolean): Self = StObject.set(x, "supportsLimitedOuterJoins", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsExpressionsInOrderBy(value: () => Boolean): Self = this.set("supportsExpressionsInOrderBy", js.Any.fromFunction0(value))
+    def setSupportsMinimumSQLGrammar(value: () => Boolean): Self = StObject.set(x, "supportsMinimumSQLGrammar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsExtendedSQLGrammar(value: () => Boolean): Self = this.set("supportsExtendedSQLGrammar", js.Any.fromFunction0(value))
+    def setSupportsMixedCaseIdentifiers(value: () => Boolean): Self = StObject.set(x, "supportsMixedCaseIdentifiers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsFullOuterJoins(value: () => Boolean): Self = this.set("supportsFullOuterJoins", js.Any.fromFunction0(value))
+    def setSupportsMixedCaseQuotedIdentifiers(value: () => Boolean): Self = StObject.set(x, "supportsMixedCaseQuotedIdentifiers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsGroupBy(value: () => Boolean): Self = this.set("supportsGroupBy", js.Any.fromFunction0(value))
+    def setSupportsMultipleResultSets(value: () => Boolean): Self = StObject.set(x, "supportsMultipleResultSets", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsGroupByBeyondSelect(value: () => Boolean): Self = this.set("supportsGroupByBeyondSelect", js.Any.fromFunction0(value))
+    def setSupportsMultipleTransactions(value: () => Boolean): Self = StObject.set(x, "supportsMultipleTransactions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsGroupByUnrelated(value: () => Boolean): Self = this.set("supportsGroupByUnrelated", js.Any.fromFunction0(value))
+    def setSupportsNonNullableColumns(value: () => Boolean): Self = StObject.set(x, "supportsNonNullableColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsIntegrityEnhancementFacility(value: () => Boolean): Self = this.set("supportsIntegrityEnhancementFacility", js.Any.fromFunction0(value))
+    def setSupportsOpenCursorsAcrossCommit(value: () => Boolean): Self = StObject.set(x, "supportsOpenCursorsAcrossCommit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsLikeEscapeClause(value: () => Boolean): Self = this.set("supportsLikeEscapeClause", js.Any.fromFunction0(value))
+    def setSupportsOpenCursorsAcrossRollback(value: () => Boolean): Self = StObject.set(x, "supportsOpenCursorsAcrossRollback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsLimitedOuterJoins(value: () => Boolean): Self = this.set("supportsLimitedOuterJoins", js.Any.fromFunction0(value))
+    def setSupportsOpenStatementsAcrossCommit(value: () => Boolean): Self = StObject.set(x, "supportsOpenStatementsAcrossCommit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsMinimumSQLGrammar(value: () => Boolean): Self = this.set("supportsMinimumSQLGrammar", js.Any.fromFunction0(value))
+    def setSupportsOpenStatementsAcrossRollback(value: () => Boolean): Self = StObject.set(x, "supportsOpenStatementsAcrossRollback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsMixedCaseIdentifiers(value: () => Boolean): Self = this.set("supportsMixedCaseIdentifiers", js.Any.fromFunction0(value))
+    def setSupportsOrderByUnrelated(value: () => Boolean): Self = StObject.set(x, "supportsOrderByUnrelated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsMixedCaseQuotedIdentifiers(value: () => Boolean): Self = this.set("supportsMixedCaseQuotedIdentifiers", js.Any.fromFunction0(value))
+    def setSupportsOuterJoins(value: () => Boolean): Self = StObject.set(x, "supportsOuterJoins", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsMultipleResultSets(value: () => Boolean): Self = this.set("supportsMultipleResultSets", js.Any.fromFunction0(value))
+    def setSupportsPositionedDelete(value: () => Boolean): Self = StObject.set(x, "supportsPositionedDelete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsMultipleTransactions(value: () => Boolean): Self = this.set("supportsMultipleTransactions", js.Any.fromFunction0(value))
+    def setSupportsPositionedUpdate(value: () => Boolean): Self = StObject.set(x, "supportsPositionedUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsNonNullableColumns(value: () => Boolean): Self = this.set("supportsNonNullableColumns", js.Any.fromFunction0(value))
+    def setSupportsResultSetConcurrency(value: (Double, Double) => Boolean): Self = StObject.set(x, "supportsResultSetConcurrency", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSupportsOpenCursorsAcrossCommit(value: () => Boolean): Self = this.set("supportsOpenCursorsAcrossCommit", js.Any.fromFunction0(value))
+    def setSupportsResultSetType(value: Double => Boolean): Self = StObject.set(x, "supportsResultSetType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSupportsOpenCursorsAcrossRollback(value: () => Boolean): Self = this.set("supportsOpenCursorsAcrossRollback", js.Any.fromFunction0(value))
+    def setSupportsSchemasInDataManipulation(value: () => Boolean): Self = StObject.set(x, "supportsSchemasInDataManipulation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsOpenStatementsAcrossCommit(value: () => Boolean): Self = this.set("supportsOpenStatementsAcrossCommit", js.Any.fromFunction0(value))
+    def setSupportsSchemasInIndexDefinitions(value: () => Boolean): Self = StObject.set(x, "supportsSchemasInIndexDefinitions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsOpenStatementsAcrossRollback(value: () => Boolean): Self = this.set("supportsOpenStatementsAcrossRollback", js.Any.fromFunction0(value))
+    def setSupportsSchemasInPrivilegeDefinitions(value: () => Boolean): Self = StObject.set(x, "supportsSchemasInPrivilegeDefinitions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsOrderByUnrelated(value: () => Boolean): Self = this.set("supportsOrderByUnrelated", js.Any.fromFunction0(value))
+    def setSupportsSchemasInProcedureCalls(value: () => Boolean): Self = StObject.set(x, "supportsSchemasInProcedureCalls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsOuterJoins(value: () => Boolean): Self = this.set("supportsOuterJoins", js.Any.fromFunction0(value))
+    def setSupportsSchemasInTableDefinitions(value: () => Boolean): Self = StObject.set(x, "supportsSchemasInTableDefinitions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsPositionedDelete(value: () => Boolean): Self = this.set("supportsPositionedDelete", js.Any.fromFunction0(value))
+    def setSupportsSelectForUpdate(value: () => Boolean): Self = StObject.set(x, "supportsSelectForUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsPositionedUpdate(value: () => Boolean): Self = this.set("supportsPositionedUpdate", js.Any.fromFunction0(value))
+    def setSupportsStoredProcedures(value: () => Boolean): Self = StObject.set(x, "supportsStoredProcedures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsResultSetConcurrency(value: (Double, Double) => Boolean): Self = this.set("supportsResultSetConcurrency", js.Any.fromFunction2(value))
+    def setSupportsSubqueriesInComparisons(value: () => Boolean): Self = StObject.set(x, "supportsSubqueriesInComparisons", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsResultSetType(value: Double => Boolean): Self = this.set("supportsResultSetType", js.Any.fromFunction1(value))
+    def setSupportsSubqueriesInExists(value: () => Boolean): Self = StObject.set(x, "supportsSubqueriesInExists", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsSchemasInDataManipulation(value: () => Boolean): Self = this.set("supportsSchemasInDataManipulation", js.Any.fromFunction0(value))
+    def setSupportsSubqueriesInIns(value: () => Boolean): Self = StObject.set(x, "supportsSubqueriesInIns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsSchemasInIndexDefinitions(value: () => Boolean): Self = this.set("supportsSchemasInIndexDefinitions", js.Any.fromFunction0(value))
+    def setSupportsSubqueriesInQuantifieds(value: () => Boolean): Self = StObject.set(x, "supportsSubqueriesInQuantifieds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsSchemasInPrivilegeDefinitions(value: () => Boolean): Self = this.set("supportsSchemasInPrivilegeDefinitions", js.Any.fromFunction0(value))
+    def setSupportsTableCorrelationNames(value: () => Boolean): Self = StObject.set(x, "supportsTableCorrelationNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsSchemasInProcedureCalls(value: () => Boolean): Self = this.set("supportsSchemasInProcedureCalls", js.Any.fromFunction0(value))
+    def setSupportsTransactionIsolationLevel(value: Double => Boolean): Self = StObject.set(x, "supportsTransactionIsolationLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSupportsSchemasInTableDefinitions(value: () => Boolean): Self = this.set("supportsSchemasInTableDefinitions", js.Any.fromFunction0(value))
+    def setSupportsTransactions(value: () => Boolean): Self = StObject.set(x, "supportsTransactions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsSelectForUpdate(value: () => Boolean): Self = this.set("supportsSelectForUpdate", js.Any.fromFunction0(value))
+    def setSupportsTypeConversion(value: () => Boolean): Self = StObject.set(x, "supportsTypeConversion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsStoredProcedures(value: () => Boolean): Self = this.set("supportsStoredProcedures", js.Any.fromFunction0(value))
+    def setSupportsUnion(value: () => Boolean): Self = StObject.set(x, "supportsUnion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsSubqueriesInComparisons(value: () => Boolean): Self = this.set("supportsSubqueriesInComparisons", js.Any.fromFunction0(value))
+    def setSupportsUnionAll(value: () => Boolean): Self = StObject.set(x, "supportsUnionAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsSubqueriesInExists(value: () => Boolean): Self = this.set("supportsSubqueriesInExists", js.Any.fromFunction0(value))
+    def setSystemFunctions(value: String): Self = StObject.set(x, "SystemFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsSubqueriesInIns(value: () => Boolean): Self = this.set("supportsSubqueriesInIns", js.Any.fromFunction0(value))
+    def setTableTypes(value: XResultSet): Self = StObject.set(x, "TableTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsSubqueriesInQuantifieds(value: () => Boolean): Self = this.set("supportsSubqueriesInQuantifieds", js.Any.fromFunction0(value))
+    def setTimeDateFunctions(value: String): Self = StObject.set(x, "TimeDateFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsTableCorrelationNames(value: () => Boolean): Self = this.set("supportsTableCorrelationNames", js.Any.fromFunction0(value))
+    def setTypeInfo(value: XResultSet): Self = StObject.set(x, "TypeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsTransactionIsolationLevel(value: Double => Boolean): Self = this.set("supportsTransactionIsolationLevel", js.Any.fromFunction1(value))
+    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsTransactions(value: () => Boolean): Self = this.set("supportsTransactions", js.Any.fromFunction0(value))
+    def setUpdatesAreDetected(value: Double => Boolean): Self = StObject.set(x, "updatesAreDetected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSupportsTypeConversion(value: () => Boolean): Self = this.set("supportsTypeConversion", js.Any.fromFunction0(value))
+    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsUnion(value: () => Boolean): Self = this.set("supportsUnion", js.Any.fromFunction0(value))
+    def setUsesLocalFilePerTable(value: () => Boolean): Self = StObject.set(x, "usesLocalFilePerTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportsUnionAll(value: () => Boolean): Self = this.set("supportsUnionAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdatesAreDetected(value: Double => Boolean): Self = this.set("updatesAreDetected", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUsesLocalFilePerTable(value: () => Boolean): Self = this.set("usesLocalFilePerTable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUsesLocalFiles(value: () => Boolean): Self = this.set("usesLocalFiles", js.Any.fromFunction0(value))
+    def setUsesLocalFiles(value: () => Boolean): Self = StObject.set(x, "usesLocalFiles", js.Any.fromFunction0(value))
   }
 }

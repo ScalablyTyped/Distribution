@@ -1,26 +1,28 @@
 package typings.pulumiPulumi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi/asset/asset", JSImport.Namespace)
-@js.native
-object assetAssetMod extends js.Object {
+object assetAssetMod {
   
+  @JSImport("@pulumi/pulumi/asset/asset", "Asset")
   @js.native
-  abstract class Asset () extends js.Object
+  abstract class Asset () extends StObject
   /* static members */
-  @js.native
-  object Asset extends js.Object {
+  object Asset {
     
     /**
       * Returns true if the given object is an instance of an Asset.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/pulumi/asset/asset", "Asset.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/pulumi/asset/asset", "FileAsset")
   @js.native
   class FileAsset protected () extends Asset {
     def this(path: String) = this()
@@ -32,6 +34,7 @@ object assetAssetMod extends js.Object {
     val path: js.Promise[String] = js.native
   }
   
+  @JSImport("@pulumi/pulumi/asset/asset", "RemoteAsset")
   @js.native
   class RemoteAsset protected () extends Asset {
     def this(uri: String) = this()
@@ -43,6 +46,7 @@ object assetAssetMod extends js.Object {
     val uri: js.Promise[String] = js.native
   }
   
+  @JSImport("@pulumi/pulumi/asset/asset", "StringAsset")
   @js.native
   class StringAsset protected () extends Asset {
     def this(text: String) = this()

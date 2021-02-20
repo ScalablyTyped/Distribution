@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A command to invoke the Save As dialog that prompts for a file name and saves the current document in a file with the specified path.
   */
 @js.native
-trait FileSaveAsCommand extends js.Object {
+trait FileSaveAsCommand extends StObject {
   
   /**
     * Executes the FileSaveAsCommand command with the specified parameter. true, if the command has been successfully executed; false if the command execution has failed.

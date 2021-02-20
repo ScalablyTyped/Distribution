@@ -25,93 +25,14 @@ import typings.sentryTypes.transactionMod.CustomSamplingContext
 import typings.sentryTypes.transactionMod.Transaction
 import typings.sentryTypes.transactionMod.TransactionContext
 import typings.sentryTypes.userMod.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/browser/dist/exports", JSImport.Namespace)
-@js.native
-object exportsMod extends js.Object {
+object exportsMod {
   
-  val SDK_NAME: /* "sentry.javascript.browser" */ String = js.native
-  
-  val SDK_VERSION: /* "5.27.4" */ String = js.native
-  
-  def addBreadcrumb(breadcrumb: Breadcrumb): Unit = js.native
-  
-  def addGlobalEventProcessor(callback: EventProcessor): Unit = js.native
-  
-  def captureEvent(event: Event): String = js.native
-  
-  def captureException(exception: js.Any): String = js.native
-  def captureException(exception: js.Any, captureContext: CaptureContext): String = js.native
-  
-  def captureMessage(message: String): String = js.native
-  def captureMessage(message: String, captureContext: CaptureContext): String = js.native
-  def captureMessage(message: String, captureContext: Severity): String = js.native
-  
-  def close(): js.Thenable[Boolean] = js.native
-  def close(timeout: Double): js.Thenable[Boolean] = js.native
-  
-  def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = js.native
-  
-  val defaultIntegrations: js.Array[
-    FunctionToString | InboundFilters | GlobalHandlers | TryCatch | Breadcrumbs | LinkedErrors | UserAgent
-  ] = js.native
-  
-  def eventFromException(options: Options, exception: js.Any): js.Thenable[Event] = js.native
-  def eventFromException(options: Options, exception: js.Any, hint: EventHint): js.Thenable[Event] = js.native
-  
-  def eventFromMessage(options: Options, message: String): js.Thenable[Event] = js.native
-  def eventFromMessage(options: Options, message: String, level: js.UndefOr[scala.Nothing], hint: EventHint): js.Thenable[Event] = js.native
-  def eventFromMessage(options: Options, message: String, level: Severity): js.Thenable[Event] = js.native
-  def eventFromMessage(options: Options, message: String, level: Severity, hint: EventHint): js.Thenable[Event] = js.native
-  
-  def flush(): js.Thenable[Boolean] = js.native
-  def flush(timeout: Double): js.Thenable[Boolean] = js.native
-  
-  def forceLoad(): Unit = js.native
-  
-  def getCurrentHub(): typings.sentryHub.hubMod.Hub = js.native
-  
-  def getHubFromCarrier(carrier: Carrier): typings.sentryHub.hubMod.Hub = js.native
-  
-  def init(): Unit = js.native
-  def init(options: BrowserOptions): Unit = js.native
-  
-  def injectReportDialog(): Unit = js.native
-  def injectReportDialog(options: ReportDialogOptions): Unit = js.native
-  
-  def lastEventId(): js.UndefOr[String] = js.native
-  
-  def makeMain(hub: typings.sentryHub.hubMod.Hub): typings.sentryHub.hubMod.Hub = js.native
-  
-  def onLoad(callback: js.Function0[Unit]): Unit = js.native
-  
-  def setContext(name: String): Unit = js.native
-  def setContext(name: String, context: StringDictionary[js.Any]): Unit = js.native
-  
-  def setExtra(key: String, extra: Extra): Unit = js.native
-  
-  def setExtras(extras: Extras): Unit = js.native
-  
-  def setTag(key: String, value: String): Unit = js.native
-  
-  def setTags(tags: StringDictionary[String]): Unit = js.native
-  
-  def setUser(): Unit = js.native
-  def setUser(user: User): Unit = js.native
-  
-  def showReportDialog(): Unit = js.native
-  def showReportDialog(options: ReportDialogOptions): Unit = js.native
-  
-  def startTransaction(context: TransactionContext): Transaction = js.native
-  def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): Transaction = js.native
-  
-  def withScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = js.native
-  
-  def wrap(fn: js.Function1[/* args */ js.Any, _]): js.Any = js.native
-  
+  @JSImport("@sentry/browser/dist/exports", "BrowserClient")
   @js.native
   /**
     * Creates a new Browser SDK instance.
@@ -123,6 +44,7 @@ object exportsMod extends js.Object {
     def this(options: BrowserOptions) = this()
   }
   
+  @JSImport("@sentry/browser/dist/exports", "Hub")
   @js.native
   /**
     * Creates a new instance of the hub, will push one {@link Layer} into the
@@ -143,18 +65,29 @@ object exportsMod extends js.Object {
     def this(client: Client[Options], scope: typings.sentryHub.scopeMod.Scope, _version: Double) = this()
   }
   
+  @JSImport("@sentry/browser/dist/exports", "SDK_NAME")
+  @js.native
+  val SDK_NAME: /* "sentry.javascript.browser" */ String = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "SDK_VERSION")
+  @js.native
+  val SDK_VERSION: /* "5.27.4" */ String = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "Scope")
   @js.native
   class Scope ()
     extends typings.sentryCore.mod.Scope
   /* static members */
-  @js.native
-  object Scope extends js.Object {
+  object Scope {
     
+    @JSImport("@sentry/browser/dist/exports", "Scope.clone")
+    @js.native
     def clone(scope: typings.sentryHub.scopeMod.Scope): typings.sentryHub.scopeMod.Scope = js.native
   }
   
+  @JSImport("@sentry/browser/dist/exports", "Severity")
   @js.native
-  object Severity extends js.Object {
+  object Severity extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.sentryTypes.severityMod.Severity with String] = js.native
@@ -182,8 +115,9 @@ object exportsMod extends js.Object {
     def fromString(level: String): typings.sentryTypes.severityMod.Severity = js.native
   }
   
+  @JSImport("@sentry/browser/dist/exports", "Status")
   @js.native
-  object Status extends js.Object {
+  object Status extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.sentryTypes.statusMod.Status with String] = js.native
@@ -208,4 +142,167 @@ object exportsMod extends js.Object {
       */
     def fromHttpCode(code: Double): typings.sentryTypes.statusMod.Status = js.native
   }
+  
+  @JSImport("@sentry/browser/dist/exports", "addBreadcrumb")
+  @js.native
+  def addBreadcrumb(breadcrumb: Breadcrumb): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "addGlobalEventProcessor")
+  @js.native
+  def addGlobalEventProcessor(callback: EventProcessor): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "captureEvent")
+  @js.native
+  def captureEvent(event: Event): String = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "captureException")
+  @js.native
+  def captureException(exception: js.Any): String = js.native
+  @JSImport("@sentry/browser/dist/exports", "captureException")
+  @js.native
+  def captureException(exception: js.Any, captureContext: CaptureContext): String = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "captureMessage")
+  @js.native
+  def captureMessage(message: String): String = js.native
+  @JSImport("@sentry/browser/dist/exports", "captureMessage")
+  @js.native
+  def captureMessage(message: String, captureContext: CaptureContext): String = js.native
+  @JSImport("@sentry/browser/dist/exports", "captureMessage")
+  @js.native
+  def captureMessage(message: String, captureContext: Severity): String = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "close")
+  @js.native
+  def close(): js.Thenable[Boolean] = js.native
+  @JSImport("@sentry/browser/dist/exports", "close")
+  @js.native
+  def close(timeout: Double): js.Thenable[Boolean] = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "configureScope")
+  @js.native
+  def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "defaultIntegrations")
+  @js.native
+  val defaultIntegrations: js.Array[
+    FunctionToString | InboundFilters | GlobalHandlers | TryCatch | Breadcrumbs | LinkedErrors | UserAgent
+  ] = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "eventFromException")
+  @js.native
+  def eventFromException(options: Options, exception: js.Any): js.Thenable[Event] = js.native
+  @JSImport("@sentry/browser/dist/exports", "eventFromException")
+  @js.native
+  def eventFromException(options: Options, exception: js.Any, hint: EventHint): js.Thenable[Event] = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "eventFromMessage")
+  @js.native
+  def eventFromMessage(options: Options, message: String): js.Thenable[Event] = js.native
+  @JSImport("@sentry/browser/dist/exports", "eventFromMessage")
+  @js.native
+  def eventFromMessage(options: Options, message: String, level: js.UndefOr[scala.Nothing], hint: EventHint): js.Thenable[Event] = js.native
+  @JSImport("@sentry/browser/dist/exports", "eventFromMessage")
+  @js.native
+  def eventFromMessage(options: Options, message: String, level: Severity): js.Thenable[Event] = js.native
+  @JSImport("@sentry/browser/dist/exports", "eventFromMessage")
+  @js.native
+  def eventFromMessage(options: Options, message: String, level: Severity, hint: EventHint): js.Thenable[Event] = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "flush")
+  @js.native
+  def flush(): js.Thenable[Boolean] = js.native
+  @JSImport("@sentry/browser/dist/exports", "flush")
+  @js.native
+  def flush(timeout: Double): js.Thenable[Boolean] = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "forceLoad")
+  @js.native
+  def forceLoad(): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "getCurrentHub")
+  @js.native
+  def getCurrentHub(): typings.sentryHub.hubMod.Hub = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "getHubFromCarrier")
+  @js.native
+  def getHubFromCarrier(carrier: Carrier): typings.sentryHub.hubMod.Hub = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "init")
+  @js.native
+  def init(): Unit = js.native
+  @JSImport("@sentry/browser/dist/exports", "init")
+  @js.native
+  def init(options: BrowserOptions): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "injectReportDialog")
+  @js.native
+  def injectReportDialog(): Unit = js.native
+  @JSImport("@sentry/browser/dist/exports", "injectReportDialog")
+  @js.native
+  def injectReportDialog(options: ReportDialogOptions): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "lastEventId")
+  @js.native
+  def lastEventId(): js.UndefOr[String] = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "makeMain")
+  @js.native
+  def makeMain(hub: typings.sentryHub.hubMod.Hub): typings.sentryHub.hubMod.Hub = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "onLoad")
+  @js.native
+  def onLoad(callback: js.Function0[Unit]): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "setContext")
+  @js.native
+  def setContext(name: String): Unit = js.native
+  @JSImport("@sentry/browser/dist/exports", "setContext")
+  @js.native
+  def setContext(name: String, context: StringDictionary[js.Any]): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "setExtra")
+  @js.native
+  def setExtra(key: String, extra: Extra): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "setExtras")
+  @js.native
+  def setExtras(extras: Extras): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "setTag")
+  @js.native
+  def setTag(key: String, value: String): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "setTags")
+  @js.native
+  def setTags(tags: StringDictionary[String]): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "setUser")
+  @js.native
+  def setUser(): Unit = js.native
+  @JSImport("@sentry/browser/dist/exports", "setUser")
+  @js.native
+  def setUser(user: User): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "showReportDialog")
+  @js.native
+  def showReportDialog(): Unit = js.native
+  @JSImport("@sentry/browser/dist/exports", "showReportDialog")
+  @js.native
+  def showReportDialog(options: ReportDialogOptions): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "startTransaction")
+  @js.native
+  def startTransaction(context: TransactionContext): Transaction = js.native
+  @JSImport("@sentry/browser/dist/exports", "startTransaction")
+  @js.native
+  def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): Transaction = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "withScope")
+  @js.native
+  def withScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = js.native
+  
+  @JSImport("@sentry/browser/dist/exports", "wrap")
+  @js.native
+  def wrap(fn: js.Function1[/* args */ js.Any, _]): js.Any = js.native
 }

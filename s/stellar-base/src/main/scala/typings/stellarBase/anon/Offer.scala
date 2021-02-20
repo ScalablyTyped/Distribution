@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.ClaimOfferAtom
 import typings.stellarBase.xdrMod.xdr.ManageOfferSuccessResultOffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Offer extends js.Object {
+trait Offer extends StObject {
   
   var offer: ManageOfferSuccessResultOffer = js.native
   
@@ -22,27 +23,15 @@ object Offer {
   }
   
   @scala.inline
-  implicit class OfferOps[Self <: Offer] (val x: Self) extends AnyVal {
+  implicit class OfferMutableBuilder[Self <: Offer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOffer(value: ManageOfferSuccessResultOffer): Self = StObject.set(x, "offer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffersClaimed(value: js.Array[ClaimOfferAtom]): Self = StObject.set(x, "offersClaimed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOffer(value: ManageOfferSuccessResultOffer): Self = this.set("offer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffersClaimedVarargs(value: ClaimOfferAtom*): Self = this.set("offersClaimed", js.Array(value :_*))
-    
-    @scala.inline
-    def setOffersClaimed(value: js.Array[ClaimOfferAtom]): Self = this.set("offersClaimed", value.asInstanceOf[js.Any])
+    def setOffersClaimedVarargs(value: ClaimOfferAtom*): Self = StObject.set(x, "offersClaimed", js.Array(value :_*))
   }
 }

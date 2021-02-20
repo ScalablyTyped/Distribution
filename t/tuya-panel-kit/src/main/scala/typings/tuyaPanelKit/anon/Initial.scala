@@ -3,12 +3,13 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.routersTypesMod.NavigationState
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.routersTypesMod.PartialState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Initial[State /* <: NavigationState[ParamListBase] */] extends js.Object {
+trait Initial[State /* <: NavigationState[ParamListBase] */] extends StObject {
   
   var initial: js.UndefOr[scala.Nothing] = js.native
   
@@ -27,24 +28,12 @@ object Initial {
   }
   
   @scala.inline
-  implicit class InitialOps[Self <: Initial[_], State /* <: NavigationState[ParamListBase] */] (val x: Self with Initial[State]) extends AnyVal {
+  implicit class InitialMutableBuilder[Self <: Initial[_], State /* <: NavigationState[ParamListBase] */] (val x: Self with Initial[State]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setState(value: PartialState[State] | State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setState(value: PartialState[State] | State): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

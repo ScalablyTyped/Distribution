@@ -1,12 +1,13 @@
 package typings.storybookUi.anon
 
 import typings.storybookUi.sidebarTypesMod.StoryRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLastViewed extends js.Object {
+trait GetLastViewed extends StObject {
   
   def clearLastViewed(): Unit = js.native
   
@@ -21,24 +22,12 @@ object GetLastViewed {
   }
   
   @scala.inline
-  implicit class GetLastViewedOps[Self <: GetLastViewed] (val x: Self) extends AnyVal {
+  implicit class GetLastViewedMutableBuilder[Self <: GetLastViewed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearLastViewed(value: () => Unit): Self = StObject.set(x, "clearLastViewed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClearLastViewed(value: () => Unit): Self = this.set("clearLastViewed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLastViewed(value: () => js.Array[StoryRef]): Self = this.set("getLastViewed", js.Any.fromFunction0(value))
+    def setGetLastViewed(value: () => js.Array[StoryRef]): Self = StObject.set(x, "getLastViewed", js.Any.fromFunction0(value))
   }
 }

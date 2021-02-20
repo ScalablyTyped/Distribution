@@ -1,48 +1,41 @@
 package typings.plottable
 
-import org.scalablytyped.runtime.TopLevel
 import typings.plottable.interfacesMod.Bounds
 import typings.plottable.interfacesMod.IEntityBounds
 import typings.plottable.interfacesMod.Point
 import typings.plottable.rTreeSplitStrategiesMod.IRTreeSplitStrategy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/utils/rTree", JSImport.Namespace)
-@js.native
-object rTreeMod extends js.Object {
-  
-  def createMinimizingNodePredicate[T](point: Point, nearFn: IDistanceFunction, farFn: IDistanceFunction): js.Function1[/* node */ RTreeNode[T], QueryPredicateResult] = js.native
-  
-  def createNodeSort[T](point: Point, distanceFn: IDistanceFunction): js.Function2[/* a */ RTreeNode[T], /* b */ RTreeNode[T], Double] = js.native
+object rTreeMod {
   
   @js.native
-  sealed trait QueryPredicateResult extends js.Object
+  sealed trait QueryPredicateResult extends StObject
+  @JSImport("plottable/build/src/utils/rTree", "QueryPredicateResult")
   @js.native
-  object QueryPredicateResult extends js.Object {
+  object QueryPredicateResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[QueryPredicateResult with Double] = js.native
     
     @js.native
     sealed trait FAIL extends QueryPredicateResult
-    /* 1 */ @js.native
-    object FAIL extends TopLevel[FAIL with Double]
+    /* 1 */ val FAIL: typings.plottable.rTreeMod.QueryPredicateResult.FAIL with Double = js.native
     
     @js.native
     sealed trait PASS extends QueryPredicateResult
-    /* 0 */ @js.native
-    object PASS extends TopLevel[PASS with Double]
+    /* 0 */ val PASS: typings.plottable.rTreeMod.QueryPredicateResult.PASS with Double = js.native
     
     @js.native
     sealed trait PASS_AND_OVERWRITE extends QueryPredicateResult
-    /* 2 */ @js.native
-    object PASS_AND_OVERWRITE extends TopLevel[PASS_AND_OVERWRITE with Double]
+    /* 2 */ val PASS_AND_OVERWRITE: typings.plottable.rTreeMod.QueryPredicateResult.PASS_AND_OVERWRITE with Double = js.native
   }
   
+  @JSImport("plottable/build/src/utils/rTree", "RTree")
   @js.native
-  class RTree[T] () extends js.Object {
+  class RTree[T] () extends StObject {
     def this(maxNodeChildren: Double) = this()
     def this(maxNodeChildren: js.UndefOr[scala.Nothing], splitStrategy: IRTreeSplitStrategy) = this()
     def this(maxNodeChildren: Double, splitStrategy: IRTreeSplitStrategy) = this()
@@ -105,8 +98,9 @@ object rTreeMod extends js.Object {
     var splitStrategy: js.Any = js.native
   }
   
+  @JSImport("plottable/build/src/utils/rTree", "RTreeBounds")
   @js.native
-  class RTreeBounds protected () extends js.Object {
+  class RTreeBounds protected () extends StObject {
     def this(xl: Double, yl: Double, xh: Double, yh: Double) = this()
     
     def area(): Double = js.native
@@ -128,8 +122,7 @@ object rTreeMod extends js.Object {
     var yl: Double = js.native
   }
   /* static members */
-  @js.native
-  object RTreeBounds extends js.Object {
+  object RTreeBounds {
     
     /**
       * Returns the orthogonal absolute distance in the x-dimension from point
@@ -137,6 +130,8 @@ object rTreeMod extends js.Object {
       *
       * If `p.x` is inside the bounds returns `0`.
       */
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.absoluteDistanceToFarEdgeX")
+    @js.native
     def absoluteDistanceToFarEdgeX(bounds: RTreeBounds, p: Point): Double = js.native
     
     /**
@@ -145,6 +140,8 @@ object rTreeMod extends js.Object {
       *
       * If `p.y` is inside the bounds returns `0`.
       */
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.absoluteDistanceToFarEdgeY")
+    @js.native
     def absoluteDistanceToFarEdgeY(bounds: RTreeBounds, p: Point): Double = js.native
     
     /**
@@ -153,6 +150,8 @@ object rTreeMod extends js.Object {
       *
       * If `p.x` is inside the bounds returns `0`.
       */
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.absoluteDistanceToNearEdgeX")
+    @js.native
     def absoluteDistanceToNearEdgeX(bounds: RTreeBounds, p: Point): Double = js.native
     
     /**
@@ -161,10 +160,16 @@ object rTreeMod extends js.Object {
       *
       * If `p.y` is inside the bounds returns `0`.
       */
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.absoluteDistanceToNearEdgeY")
+    @js.native
     def absoluteDistanceToNearEdgeY(bounds: RTreeBounds, p: Point): Double = js.native
     
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.bounds")
+    @js.native
     def bounds(bounds: Bounds): RTreeBounds = js.native
     
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.distanceSquaredToFarEdge")
+    @js.native
     def distanceSquaredToFarEdge(bounds: RTreeBounds, p: Point): Double = js.native
     
     /**
@@ -173,8 +178,12 @@ object rTreeMod extends js.Object {
       *
       * https://gamedev.stackexchange.com/questions/44483/how-do-i-calculate-distance-between-a-point-and-an-axis-aligned-rectangle
       */
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.distanceSquaredToNearEdge")
+    @js.native
     def distanceSquaredToNearEdge(bounds: RTreeBounds, p: Point): Double = js.native
     
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.entityBounds")
+    @js.native
     def entityBounds(bounds: IEntityBounds): RTreeBounds = js.native
     
     /**
@@ -182,6 +191,8 @@ object rTreeMod extends js.Object {
       *
       * Touching counts as overlap.
       */
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.isBoundsOverlapBounds")
+    @js.native
     def isBoundsOverlapBounds(a: RTreeBounds, b: RTreeBounds): Boolean = js.native
     
     /**
@@ -189,6 +200,8 @@ object rTreeMod extends js.Object {
       *
       * Touching counts as overlap.
       */
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.isBoundsOverlapX")
+    @js.native
     def isBoundsOverlapX(a: RTreeBounds, b: RTreeBounds): Boolean = js.native
     
     /**
@@ -196,21 +209,34 @@ object rTreeMod extends js.Object {
       *
       * Touching counts as overlap.
       */
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.isBoundsOverlapY")
+    @js.native
     def isBoundsOverlapY(a: RTreeBounds, b: RTreeBounds): Boolean = js.native
     
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.pointPair")
+    @js.native
     def pointPair(p0: Point, p1: Point): RTreeBounds = js.native
     
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.points")
+    @js.native
     def points(points: js.Array[Point]): RTreeBounds = js.native
     
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.union")
+    @js.native
     def union(b0: RTreeBounds, b1: RTreeBounds): RTreeBounds = js.native
     
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.unionAll")
+    @js.native
     def unionAll(bounds: js.Array[RTreeBounds]): RTreeBounds = js.native
     
+    @JSImport("plottable/build/src/utils/rTree", "RTreeBounds.xywh")
+    @js.native
     def xywh(x: Double, y: Double, w: Double, h: Double): RTreeBounds = js.native
   }
   
+  @JSImport("plottable/build/src/utils/rTree", "RTreeNode")
   @js.native
-  class RTreeNode[T] protected () extends js.Object {
+  class RTreeNode[T] protected () extends StObject {
     def this(leaf: Boolean) = this()
     
     var bounds: RTreeBounds = js.native
@@ -270,11 +296,20 @@ object rTreeMod extends js.Object {
     var value: T = js.native
   }
   /* static members */
-  @js.native
-  object RTreeNode extends js.Object {
+  object RTreeNode {
     
+    @JSImport("plottable/build/src/utils/rTree", "RTreeNode.valueNode")
+    @js.native
     def valueNode[T](bounds: RTreeBounds, value: T): RTreeNode[T] = js.native
   }
+  
+  @JSImport("plottable/build/src/utils/rTree", "createMinimizingNodePredicate")
+  @js.native
+  def createMinimizingNodePredicate[T](point: Point, nearFn: IDistanceFunction, farFn: IDistanceFunction): js.Function1[/* node */ RTreeNode[T], QueryPredicateResult] = js.native
+  
+  @JSImport("plottable/build/src/utils/rTree", "createNodeSort")
+  @js.native
+  def createNodeSort[T](point: Point, distanceFn: IDistanceFunction): js.Function2[/* a */ RTreeNode[T], /* b */ RTreeNode[T], Double] = js.native
   
   type IDistanceFunction = js.Function2[/* bounds */ RTreeBounds, /* p */ Point, Double]
 }

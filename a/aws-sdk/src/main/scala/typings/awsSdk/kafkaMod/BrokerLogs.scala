@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrokerLogs extends js.Object {
+trait BrokerLogs extends StObject {
   
   var CloudWatchLogs: js.UndefOr[typings.awsSdk.kafkaMod.CloudWatchLogs] = js.native
   
@@ -22,36 +23,24 @@ object BrokerLogs {
   }
   
   @scala.inline
-  implicit class BrokerLogsOps[Self <: BrokerLogs] (val x: Self) extends AnyVal {
+  implicit class BrokerLogsMutableBuilder[Self <: BrokerLogs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLogs(value: CloudWatchLogs): Self = StObject.set(x, "CloudWatchLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchLogsUndefined: Self = StObject.set(x, "CloudWatchLogs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirehose(value: Firehose): Self = StObject.set(x, "Firehose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLogs(value: CloudWatchLogs): Self = this.set("CloudWatchLogs", value.asInstanceOf[js.Any])
+    def setFirehoseUndefined: Self = StObject.set(x, "Firehose", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLogs: Self = this.set("CloudWatchLogs", js.undefined)
+    def setS3(value: S3): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirehose(value: Firehose): Self = this.set("Firehose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirehose: Self = this.set("Firehose", js.undefined)
-    
-    @scala.inline
-    def setS3(value: S3): Self = this.set("S3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3: Self = this.set("S3", js.undefined)
+    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
   }
 }

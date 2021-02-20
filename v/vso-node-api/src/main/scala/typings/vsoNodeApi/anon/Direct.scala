@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Direct extends js.Object {
+trait Direct extends StObject {
   
   var direct: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object Direct {
   }
   
   @scala.inline
-  implicit class DirectOps[Self <: Direct] (val x: Self) extends AnyVal {
+  implicit class DirectMutableBuilder[Self <: Direct] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirect(value: scala.Double): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpanded(value: scala.Double): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandedDown(value: scala.Double): Self = StObject.set(x, "expandedDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirect(value: scala.Double): Self = this.set("direct", value.asInstanceOf[js.Any])
+    def setExpandedUp(value: scala.Double): Self = StObject.set(x, "expandedUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpanded(value: scala.Double): Self = this.set("expanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpandedDown(value: scala.Double): Self = this.set("expandedDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpandedUp(value: scala.Double): Self = this.set("expandedUp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

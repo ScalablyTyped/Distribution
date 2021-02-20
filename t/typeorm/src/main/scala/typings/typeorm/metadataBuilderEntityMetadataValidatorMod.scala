@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.driverDriverMod.Driver
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/metadata-builder/EntityMetadataValidator", JSImport.Namespace)
-@js.native
-object metadataBuilderEntityMetadataValidatorMod extends js.Object {
+object metadataBuilderEntityMetadataValidatorMod {
   
+  @JSImport("typeorm/metadata-builder/EntityMetadataValidator", "EntityMetadataValidator")
   @js.native
-  class EntityMetadataValidator () extends js.Object {
+  class EntityMetadataValidator () extends StObject {
     
     /**
       * Validates given entity metadata.

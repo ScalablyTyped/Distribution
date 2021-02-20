@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.form
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,24 +49,12 @@ object XDatabaseParameterBroadcaster2 {
   }
   
   @scala.inline
-  implicit class XDatabaseParameterBroadcaster2Ops[Self <: XDatabaseParameterBroadcaster2] (val x: Self) extends AnyVal {
+  implicit class XDatabaseParameterBroadcaster2MutableBuilder[Self <: XDatabaseParameterBroadcaster2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDatabaseParameterListener(value: XDatabaseParameterListener => Unit): Self = StObject.set(x, "addDatabaseParameterListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddDatabaseParameterListener(value: XDatabaseParameterListener => Unit): Self = this.set("addDatabaseParameterListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveDatabaseParameterListener(value: XDatabaseParameterListener => Unit): Self = this.set("removeDatabaseParameterListener", js.Any.fromFunction1(value))
+    def setRemoveDatabaseParameterListener(value: XDatabaseParameterListener => Unit): Self = StObject.set(x, "removeDatabaseParameterListener", js.Any.fromFunction1(value))
   }
 }

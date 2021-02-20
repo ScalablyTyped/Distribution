@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options to interpret user query.
   */
 @js.native
-trait SchemaQueryInterpretationOptions extends js.Object {
+trait SchemaQueryInterpretationOptions extends StObject {
   
   /**
     * Flag to disable natural language (NL) interpretation of queries. Default
@@ -26,24 +27,12 @@ object SchemaQueryInterpretationOptions {
   }
   
   @scala.inline
-  implicit class SchemaQueryInterpretationOptionsOps[Self <: SchemaQueryInterpretationOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryInterpretationOptionsMutableBuilder[Self <: SchemaQueryInterpretationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableNlInterpretation(value: Boolean): Self = StObject.set(x, "disableNlInterpretation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisableNlInterpretation(value: Boolean): Self = this.set("disableNlInterpretation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableNlInterpretation: Self = this.set("disableNlInterpretation", js.undefined)
+    def setDisableNlInterpretationUndefined: Self = StObject.set(x, "disableNlInterpretation", js.undefined)
   }
 }

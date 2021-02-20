@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.tuyaPanelKit.mod.AnyFunction
 import typings.tuyaPanelKit.mod.I18NLanMap
 import typings.tuyaPanelKit.mod.MobileInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -250,246 +251,234 @@ object Dictkey {
   }
   
   @scala.inline
-  implicit class DictkeyOps[Self <: Dictkey] (val x: Self) extends AnyVal {
+  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveSubDeviceWithGwId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "activeSubDeviceWithGwId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddDeviceToRoom(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "addDeviceToRoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddListener(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActiveSubDeviceWithGwId(value: /* repeated */ js.Any => Unit): Self = this.set("activeSubDeviceWithGwId", js.Any.fromFunction1(value))
+    def setAes128DecryptedStringWithPassword(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "aes128DecryptedStringWithPassword", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddDeviceToRoom(value: /* repeated */ js.Any => Unit): Self = this.set("addDeviceToRoom", js.Any.fromFunction1(value))
+    def setAes128EncryptedStringWithPassword(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "aes128EncryptedStringWithPassword", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddListener(value: /* repeated */ js.Any => Unit): Self = this.set("addListener", js.Any.fromFunction1(value))
+    def setApiRNRequest(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "apiRNRequest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAes128DecryptedStringWithPassword(value: /* repeated */ js.Any => Unit): Self = this.set("aes128DecryptedStringWithPassword", js.Any.fromFunction1(value))
+    def setApiRequest(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "apiRequest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAes128EncryptedStringWithPassword(value: /* repeated */ js.Any => Unit): Self = this.set("aes128EncryptedStringWithPassword", js.Any.fromFunction1(value))
+    def setBack(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "back", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApiRNRequest(value: /* repeated */ js.Any => Unit): Self = this.set("apiRNRequest", js.Any.fromFunction1(value))
+    def setBattery(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "battery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApiRequest(value: /* repeated */ js.Any => Unit): Self = this.set("apiRequest", js.Any.fromFunction1(value))
+    def setBottomListDialog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "bottomListDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBack(value: /* repeated */ js.Any => Unit): Self = this.set("back", js.Any.fromFunction1(value))
+    def setCalculateWhiteModeColor(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "calculateWhiteModeColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBattery(value: /* repeated */ js.Any => Unit): Self = this.set("battery", js.Any.fromFunction1(value))
+    def setCalculationDistance(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "calculationDistance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBottomListDialog(value: /* repeated */ js.Any => Unit): Self = this.set("bottomListDialog", js.Any.fromFunction1(value))
+    def setCheckUpdate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "checkUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalculateWhiteModeColor(value: /* repeated */ js.Any => Unit): Self = this.set("calculateWhiteModeColor", js.Any.fromFunction1(value))
+    def setDeleteDeviceInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "deleteDeviceInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalculationDistance(value: /* repeated */ js.Any => Unit): Self = this.set("calculationDistance", js.Any.fromFunction1(value))
+    def setDeviceIsCharging(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "deviceIsCharging", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckUpdate(value: /* repeated */ js.Any => Unit): Self = this.set("checkUpdate", js.Any.fromFunction1(value))
+    def setDisablePopGesture(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "disablePopGesture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteDeviceInfo(value: /* repeated */ js.Any => Unit): Self = this.set("deleteDeviceInfo", js.Any.fromFunction1(value))
+    def setEnablePopGesture(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "enablePopGesture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeviceIsCharging(value: /* repeated */ js.Any => Unit): Self = this.set("deviceIsCharging", js.Any.fromFunction1(value))
+    def setEvilTransform(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "evilTransform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisablePopGesture(value: /* repeated */ js.Any => Unit): Self = this.set("disablePopGesture", js.Any.fromFunction1(value))
+    def setGcj02ToWgs84Location(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "gcj02ToWgs84Location", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnablePopGesture(value: /* repeated */ js.Any => Unit): Self = this.set("enablePopGesture", js.Any.fromFunction1(value))
+    def setGetBleManagerState(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getBleManagerState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEvilTransform(value: /* repeated */ js.Any => Unit): Self = this.set("evilTransform", js.Any.fromFunction1(value))
+    def setGetBleRssi(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getBleRssi", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGcj02ToWgs84Location(value: /* repeated */ js.Any => Unit): Self = this.set("gcj02ToWgs84Location", js.Any.fromFunction1(value))
+    def setGetCurrentscreenBrightness(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getCurrentscreenBrightness", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBleManagerState(value: /* repeated */ js.Any => Unit): Self = this.set("getBleManagerState", js.Any.fromFunction1(value))
+    def setGetDevInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDevInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBleRssi(value: /* repeated */ js.Any => Unit): Self = this.set("getBleRssi", js.Any.fromFunction1(value))
+    def setGetDevProperty(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDevProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentscreenBrightness(value: /* repeated */ js.Any => Unit): Self = this.set("getCurrentscreenBrightness", js.Any.fromFunction1(value))
+    def setGetDeviceList(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDeviceList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDevInfo(value: /* repeated */ js.Any => Unit): Self = this.set("getDevInfo", js.Any.fromFunction1(value))
+    def setGetDpDataFromClient(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDpDataFromClient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDevProperty(value: /* repeated */ js.Any => Unit): Self = this.set("getDevProperty", js.Any.fromFunction1(value))
+    def setGetDpDataFromDevice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDpDataFromDevice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDeviceList(value: /* repeated */ js.Any => Unit): Self = this.set("getDeviceList", js.Any.fromFunction1(value))
+    def setGetDpDataFromMeshDevice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDpDataFromMeshDevice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDpDataFromClient(value: /* repeated */ js.Any => Unit): Self = this.set("getDpDataFromClient", js.Any.fromFunction1(value))
+    def setGetDpsWithDevId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getDpsWithDevId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDpDataFromDevice(value: /* repeated */ js.Any => Unit): Self = this.set("getDpDataFromDevice", js.Any.fromFunction1(value))
+    def setGetMeshDeviceInfoByNodeId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getMeshDeviceInfoByNodeId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDpDataFromMeshDevice(value: /* repeated */ js.Any => Unit): Self = this.set("getDpDataFromMeshDevice", js.Any.fromFunction1(value))
+    def setGetMobileInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getMobileInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDpsWithDevId(value: /* repeated */ js.Any => Unit): Self = this.set("getDpsWithDevId", js.Any.fromFunction1(value))
+    def setGetNetType(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getNetType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMeshDeviceInfoByNodeId(value: /* repeated */ js.Any => Unit): Self = this.set("getMeshDeviceInfoByNodeId", js.Any.fromFunction1(value))
+    def setGetNetworkType(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getNetworkType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMobileInfo(value: /* repeated */ js.Any => Unit): Self = this.set("getMobileInfo", js.Any.fromFunction1(value))
+    def setGetPanelInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getPanelInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNetType(value: /* repeated */ js.Any => Unit): Self = this.set("getNetType", js.Any.fromFunction1(value))
+    def setGetPlayStatus(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getPlayStatus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNetworkType(value: /* repeated */ js.Any => Unit): Self = this.set("getNetworkType", js.Any.fromFunction1(value))
+    def setGetRoomsInCurrentHome(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getRoomsInCurrentHome", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPanelInfo(value: /* repeated */ js.Any => Unit): Self = this.set("getPanelInfo", js.Any.fromFunction1(value))
+    def setGetSubDeviceList(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getSubDeviceList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPlayStatus(value: /* repeated */ js.Any => Unit): Self = this.set("getPlayStatus", js.Any.fromFunction1(value))
+    def setGetWiFiSsid(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getWiFiSsid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRoomsInCurrentHome(value: /* repeated */ js.Any => Unit): Self = this.set("getRoomsInCurrentHome", js.Any.fromFunction1(value))
+    def setGoToAlarmListActivity(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "goToAlarmListActivity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSubDeviceList(value: /* repeated */ js.Any => Unit): Self = this.set("getSubDeviceList", js.Any.fromFunction1(value))
+    def setGotoBlePermissions(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "gotoBlePermissions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetWiFiSsid(value: /* repeated */ js.Any => Unit): Self = this.set("getWiFiSsid", js.Any.fromFunction1(value))
+    def setGotoDeviceWifiNetworkMonitor(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "gotoDeviceWifiNetworkMonitor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoToAlarmListActivity(value: /* repeated */ js.Any => Unit): Self = this.set("goToAlarmListActivity", js.Any.fromFunction1(value))
+    def setGotoDpAlarm(value: Category => Unit): Self = StObject.set(x, "gotoDpAlarm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoBlePermissions(value: /* repeated */ js.Any => Unit): Self = this.set("gotoBlePermissions", js.Any.fromFunction1(value))
+    def setHideLoading(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "hideLoading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoDeviceWifiNetworkMonitor(value: /* repeated */ js.Any => Unit): Self = this.set("gotoDeviceWifiNetworkMonitor", js.Any.fromFunction1(value))
+    def setIs24Hour(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "is24Hour", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoDpAlarm(value: Category => Unit): Self = this.set("gotoDpAlarm", js.Any.fromFunction1(value))
+    def setJumpTo(value: String => js.Any): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideLoading(value: /* repeated */ js.Any => Unit): Self = this.set("hideLoading", js.Any.fromFunction1(value))
+    def setLang(value: I18NLanMap): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs24Hour(value: /* repeated */ js.Any => Unit): Self = this.set("is24Hour", js.Any.fromFunction1(value))
+    def setMobileInfo(value: MobileInfo): Self = StObject.set(x, "mobileInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJumpTo(value: String => js.Any): Self = this.set("jumpTo", js.Any.fromFunction1(value))
+    def setPanelInfo(value: IsVDevice): Self = StObject.set(x, "panelInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: I18NLanMap): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setPostBleChannelCommand(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "postBleChannelCommand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMobileInfo(value: MobileInfo): Self = this.set("mobileInfo", value.asInstanceOf[js.Any])
+    def setPushToNextPageWithDeviceId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "pushToNextPageWithDeviceId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPanelInfo(value: IsVDevice): Self = this.set("panelInfo", value.asInstanceOf[js.Any])
+    def setPutDpData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "putDpData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPostBleChannelCommand(value: /* repeated */ js.Any => Unit): Self = this.set("postBleChannelCommand", js.Any.fromFunction1(value))
+    def setPutLocalDpData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "putLocalDpData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPushToNextPageWithDeviceId(value: /* repeated */ js.Any => Unit): Self = this.set("pushToNextPageWithDeviceId", js.Any.fromFunction1(value))
+    def setPutMqttDpData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "putMqttDpData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPutDpData(value: /* repeated */ js.Any => Unit): Self = this.set("putDpData", js.Any.fromFunction1(value))
+    def setReceiverMqttData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "receiverMqttData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPutLocalDpData(value: /* repeated */ js.Any => Unit): Self = this.set("putLocalDpData", js.Any.fromFunction1(value))
+    def setRemoveDevice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeDevice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPutMqttDpData(value: /* repeated */ js.Any => Unit): Self = this.set("putMqttDpData", js.Any.fromFunction1(value))
+    def setRemoveGW(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeGW", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReceiverMqttData(value: /* repeated */ js.Any => Unit): Self = this.set("receiverMqttData", js.Any.fromFunction1(value))
+    def setRemoveListeners(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveDevice(value: /* repeated */ js.Any => Unit): Self = this.set("removeDevice", js.Any.fromFunction1(value))
+    def setRemoveSubDevice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeSubDevice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveGW(value: /* repeated */ js.Any => Unit): Self = this.set("removeGW", js.Any.fromFunction1(value))
+    def setRenameSubDeviceName(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "renameSubDeviceName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveListeners(value: /* repeated */ js.Any => Unit): Self = this.set("removeListeners", js.Any.fromFunction1(value))
+    def setRenameTitle(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "renameTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveSubDevice(value: /* repeated */ js.Any => Unit): Self = this.set("removeSubDevice", js.Any.fromFunction1(value))
+    def setScreenAlwaysOn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "screenAlwaysOn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenameSubDeviceName(value: /* repeated */ js.Any => Unit): Self = this.set("renameSubDeviceName", js.Any.fromFunction1(value))
+    def setScreenBrightness(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "screenBrightness", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenameTitle(value: /* repeated */ js.Any => Unit): Self = this.set("renameTitle", js.Any.fromFunction1(value))
+    def setSendMqttData(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "sendMqttData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScreenAlwaysOn(value: /* repeated */ js.Any => Unit): Self = this.set("screenAlwaysOn", js.Any.fromFunction1(value))
+    def setSetDevProperty(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "setDevProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScreenBrightness(value: /* repeated */ js.Any => Unit): Self = this.set("screenBrightness", js.Any.fromFunction1(value))
+    def setShareMsg(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "shareMsg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSendMqttData(value: /* repeated */ js.Any => Unit): Self = this.set("sendMqttData", js.Any.fromFunction1(value))
+    def setShareToSystem(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "shareToSystem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDevProperty(value: /* repeated */ js.Any => Unit): Self = this.set("setDevProperty", js.Any.fromFunction1(value))
+    def setShowDeviceMenu(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "showDeviceMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShareMsg(value: /* repeated */ js.Any => Unit): Self = this.set("shareMsg", js.Any.fromFunction1(value))
+    def setShowEditDialog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "showEditDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShareToSystem(value: /* repeated */ js.Any => Unit): Self = this.set("shareToSystem", js.Any.fromFunction1(value))
+    def setShowLoading(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "showLoading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowDeviceMenu(value: /* repeated */ js.Any => Unit): Self = this.set("showDeviceMenu", js.Any.fromFunction1(value))
+    def setSimpleConfirmDialog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "simpleConfirmDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowEditDialog(value: /* repeated */ js.Any => Unit): Self = this.set("showEditDialog", js.Any.fromFunction1(value))
+    def setSimpleTipDialog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "simpleTipDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowLoading(value: /* repeated */ js.Any => Unit): Self = this.set("showLoading", js.Any.fromFunction1(value))
+    def setStartBLEListening(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "startBLEListening", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSimpleConfirmDialog(value: /* repeated */ js.Any => Unit): Self = this.set("simpleConfirmDialog", js.Any.fromFunction1(value))
+    def setStartListening(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "startListening", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSimpleTipDialog(value: /* repeated */ js.Any => Unit): Self = this.set("simpleTipDialog", js.Any.fromFunction1(value))
+    def setStopActiveSubDeviceWithGwId(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "stopActiveSubDeviceWithGwId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStartBLEListening(value: /* repeated */ js.Any => Unit): Self = this.set("startBLEListening", js.Any.fromFunction1(value))
+    def setStopListening(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "stopListening", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStartListening(value: /* repeated */ js.Any => Unit): Self = this.set("startListening", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopActiveSubDeviceWithGwId(value: /* repeated */ js.Any => Unit): Self = this.set("stopActiveSubDeviceWithGwId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopListening(value: /* repeated */ js.Any => Unit): Self = this.set("stopListening", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateLocation(value: /* repeated */ js.Any => Unit): Self = this.set("updateLocation", js.Any.fromFunction1(value))
+    def setUpdateLocation(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "updateLocation", js.Any.fromFunction1(value))
   }
 }

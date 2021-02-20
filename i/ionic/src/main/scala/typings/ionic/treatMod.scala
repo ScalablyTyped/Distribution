@@ -1,17 +1,19 @@
 package typings.ionic
 
+import typings.ionic.definitionsMod.INamespace
 import typings.ionic.definitionsMod.TreatableAilment
 import typings.ionic.doctorBaseMod.DoctorCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/doctor/treat", JSImport.Namespace)
-@js.native
-object treatMod extends js.Object {
+object treatMod {
   
+  @JSImport("ionic/commands/doctor/treat", "DoctorTreatCommand")
   @js.native
-  class DoctorTreatCommand () extends DoctorCommand {
+  class DoctorTreatCommand protected () extends DoctorCommand {
+    def this(namespace: INamespace) = this()
     
     def handleError(e: js.Any): Unit = js.native
     

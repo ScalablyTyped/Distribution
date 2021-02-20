@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyGroup extends js.Object {
+trait PolicyGroup extends StObject {
   
   /**
     * The stable and unique string identifying the group. For more information about IDs, see IAM Identifiers in the IAM User Guide.
@@ -26,30 +27,18 @@ object PolicyGroup {
   }
   
   @scala.inline
-  implicit class PolicyGroupOps[Self <: PolicyGroup] (val x: Self) extends AnyVal {
+  implicit class PolicyGroupMutableBuilder[Self <: PolicyGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupId(value: idType): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: idType): Self = this.set("GroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupId: Self = this.set("GroupId", js.undefined)
-    
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = this.set("GroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

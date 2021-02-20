@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Certificate extends js.Object {
+trait Certificate extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/certificate
   /**
@@ -78,48 +79,36 @@ object Certificate {
   }
   
   @scala.inline
-  implicit class CertificateOps[Self <: Certificate] (val x: Self) extends AnyVal {
+  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuer(value: CertificatePrincipal): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setIssuerCert(value: Certificate): Self = StObject.set(x, "issuerCert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setIssuerName(value: String): Self = StObject.set(x, "issuerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: CertificatePrincipal): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuerCert(value: Certificate): Self = this.set("issuerCert", value.asInstanceOf[js.Any])
+    def setSubject(value: CertificatePrincipal): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuerName(value: String): Self = this.set("issuerName", value.asInstanceOf[js.Any])
+    def setSubjectName(value: String): Self = StObject.set(x, "subjectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    def setValidExpiry(value: Double): Self = StObject.set(x, "validExpiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: CertificatePrincipal): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubjectName(value: String): Self = this.set("subjectName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidExpiry(value: Double): Self = this.set("validExpiry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidStart(value: Double): Self = this.set("validStart", value.asInstanceOf[js.Any])
+    def setValidStart(value: Double): Self = StObject.set(x, "validStart", value.asInstanceOf[js.Any])
   }
 }

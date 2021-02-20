@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#eles.dijkstra
   */
 @js.native
-trait SearchDijkstraResult extends js.Object {
+trait SearchDijkstraResult extends StObject {
   
   /**
     * Returns the distance from the source node to node.
@@ -31,24 +32,12 @@ object SearchDijkstraResult {
   }
   
   @scala.inline
-  implicit class SearchDijkstraResultOps[Self <: SearchDijkstraResult] (val x: Self) extends AnyVal {
+  implicit class SearchDijkstraResultMutableBuilder[Self <: SearchDijkstraResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistanceTo(value: NodeSingular => Double): Self = StObject.set(x, "distanceTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDistanceTo(value: NodeSingular => Double): Self = this.set("distanceTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPathTo(value: NodeSingular => CollectionReturnValue): Self = this.set("pathTo", js.Any.fromFunction1(value))
+    def setPathTo(value: NodeSingular => CollectionReturnValue): Self = StObject.set(x, "pathTo", js.Any.fromFunction1(value))
   }
 }

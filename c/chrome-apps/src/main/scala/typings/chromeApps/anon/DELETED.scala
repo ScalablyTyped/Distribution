@@ -1,11 +1,12 @@
 package typings.chromeApps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DELETED extends js.Object {
+trait DELETED extends StObject {
   
   var CHANGED: typings.chromeApps.chromeAppsStrings.CHANGED = js.native
   
@@ -23,24 +24,12 @@ object DELETED {
   }
   
   @scala.inline
-  implicit class DELETEDOps[Self <: DELETED] (val x: Self) extends AnyVal {
+  implicit class DELETEDMutableBuilder[Self <: DELETED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCHANGED(value: typings.chromeApps.chromeAppsStrings.CHANGED): Self = StObject.set(x, "CHANGED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCHANGED(value: typings.chromeApps.chromeAppsStrings.CHANGED): Self = this.set("CHANGED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDELETED(value: typings.chromeApps.chromeAppsStrings.DELETED): Self = this.set("DELETED", value.asInstanceOf[js.Any])
+    def setDELETED(value: typings.chromeApps.chromeAppsStrings.DELETED): Self = StObject.set(x, "DELETED", value.asInstanceOf[js.Any])
   }
 }

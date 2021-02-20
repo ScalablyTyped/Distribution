@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Occurrence extends js.Object {
+trait Occurrence extends StObject {
   
   /** Describes an attestation of an artifact. */
   var attestation: js.UndefOr[Details] = js.native
@@ -61,108 +62,96 @@ object Occurrence {
   }
   
   @scala.inline
-  implicit class OccurrenceOps[Self <: Occurrence] (val x: Self) extends AnyVal {
+  implicit class OccurrenceMutableBuilder[Self <: Occurrence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttestation(value: Details): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuild(value: GrafeasV1beta1BuildDetails): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttestation(value: Details): Self = this.set("attestation", value.asInstanceOf[js.Any])
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def deleteAttestation: Self = this.set("attestation", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: GrafeasV1beta1BuildDetails): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setDeployment(value: GrafeasV1beta1DeploymentDetails): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDerivedImage(value: GrafeasV1beta1ImageDetails): Self = StObject.set(x, "derivedImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployment(value: GrafeasV1beta1DeploymentDetails): Self = this.set("deployment", value.asInstanceOf[js.Any])
+    def setDerivedImageUndefined: Self = StObject.set(x, "derivedImage", js.undefined)
     
     @scala.inline
-    def deleteDeployment: Self = this.set("deployment", js.undefined)
+    def setDiscovered(value: GrafeasV1beta1DiscoveryDetails): Self = StObject.set(x, "discovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDerivedImage(value: GrafeasV1beta1ImageDetails): Self = this.set("derivedImage", value.asInstanceOf[js.Any])
+    def setDiscoveredUndefined: Self = StObject.set(x, "discovered", js.undefined)
     
     @scala.inline
-    def deleteDerivedImage: Self = this.set("derivedImage", js.undefined)
+    def setInstallation(value: GrafeasV1beta1PackageDetails): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscovered(value: GrafeasV1beta1DiscoveryDetails): Self = this.set("discovered", value.asInstanceOf[js.Any])
+    def setInstallationUndefined: Self = StObject.set(x, "installation", js.undefined)
     
     @scala.inline
-    def deleteDiscovered: Self = this.set("discovered", js.undefined)
+    def setIntoto(value: GrafeasV1beta1IntotoDetails): Self = StObject.set(x, "intoto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallation(value: GrafeasV1beta1PackageDetails): Self = this.set("installation", value.asInstanceOf[js.Any])
+    def setIntotoUndefined: Self = StObject.set(x, "intoto", js.undefined)
     
     @scala.inline
-    def deleteInstallation: Self = this.set("installation", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntoto(value: GrafeasV1beta1IntotoDetails): Self = this.set("intoto", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIntoto: Self = this.set("intoto", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNoteName(value: String): Self = StObject.set(x, "noteName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNoteNameUndefined: Self = StObject.set(x, "noteName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRemediation(value: String): Self = StObject.set(x, "remediation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteName(value: String): Self = this.set("noteName", value.asInstanceOf[js.Any])
+    def setRemediationUndefined: Self = StObject.set(x, "remediation", js.undefined)
     
     @scala.inline
-    def deleteNoteName: Self = this.set("noteName", js.undefined)
+    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemediation(value: String): Self = this.set("remediation", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deleteRemediation: Self = this.set("remediation", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Resource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setVulnerability(value: GrafeasV1beta1VulnerabilityDetails): Self = StObject.set(x, "vulnerability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
-    
-    @scala.inline
-    def setVulnerability(value: GrafeasV1beta1VulnerabilityDetails): Self = this.set("vulnerability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVulnerability: Self = this.set("vulnerability", js.undefined)
+    def setVulnerabilityUndefined: Self = StObject.set(x, "vulnerability", js.undefined)
   }
 }

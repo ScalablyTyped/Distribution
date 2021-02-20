@@ -7,12 +7,13 @@ import typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerQueryParamete
 import typings.sharepoint.SP.Utilities.PrincipalSource
 import typings.sharepoint.SP.Utilities.PrincipalType
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SPClientPeoplePicker extends js.Object {
+trait SPClientPeoplePicker extends StObject {
   
   def AddLoadingSuggestionMenuOption(): Unit = js.native
   
@@ -33,25 +34,25 @@ trait SPClientPeoplePicker extends js.Object {
   
   def AddUserKeys(userKeys: String, bSearch: Boolean): Unit = js.native
   
-   // null,
+  // null,
   var AllUrlZones: Boolean = js.native
   
-   // 0,
+  // 0,
   var AllowEmailAddresses: Boolean = js.native
   
-   // '',
+  // '',
   var AllowEmpty: Boolean = js.native
   
-   // true,
+  // true,
   var AllowMultipleUsers: Boolean = js.native
   
-   // false,
+  // false,
   var AutoFillControl: SPClientAutoFill = js.native
   
-   // '',
+  // '',
   var AutoFillElementId: String = js.native
   
-   // false,
+  // false,
   var AutoFillEnabled: Boolean = js.native
   
   def BatchAddUserKeysOperation(allKeys: js.Array[String], numProcessed: Double): Unit = js.native
@@ -66,17 +67,17 @@ trait SPClientPeoplePicker extends js.Object {
   
   var CurrentLocalSuggestionsDict: ISPClientPeoplePickerEntity = js.native
   
-   // true,
+  // true,
   var CurrentQueryStr: String = js.native
   
   def DeleteProcessedUser(elmToRemove: HTMLElement): Unit = js.native
   
   def DisplayLocalSuggestions(): Unit = js.native
   
-   // '',
+  // '',
   var EditorElementId: String = js.native
   
-   // 30,
+  // 30,
   var EditorWidthSet: Boolean = js.native
   
   var EnabledClaimProviders: String = js.native
@@ -94,10 +95,10 @@ trait SPClientPeoplePicker extends js.Object {
   
   def FocusAutoFill(): Unit = js.native
   
-   // true,
+  // true,
   var ForceClaims: Boolean = js.native
   
-   // '{00000000-0000-0000-0000-000000000000}',
+  // '{00000000-0000-0000-0000-000000000000}',
   def GetAllUserInfo(): js.Array[ISPClientPeoplePickerEntity] = js.native
   
   def GetAllUserKeys(): String = js.native
@@ -116,16 +117,16 @@ trait SPClientPeoplePicker extends js.Object {
   
   def HasResolvedUsers(): Boolean = js.native
   
-   // false,
+  // false,
   var HasServerError: Boolean = js.native
   
-   // '',
+  // '',
   var HiddenInputId: String = js.native
   
-   // '',
+  // '',
   var InitialHelpTextElementId: String = js.native
   
-   // '',
+  // '',
   var InitialSuggestions: js.Array[ISPClientPeoplePickerEntity] = js.native
   
   def IsAutoFillOpen(): Boolean = js.native
@@ -134,10 +135,10 @@ trait SPClientPeoplePicker extends js.Object {
   
   def IterateEachProcessedUser(fnCallback: js.Function2[/* index */ Double, /* user */ SPClientPeoplePickerProcessedUser, Unit]): Unit = js.native
   
-   // '',
+  // '',
   var LatestSearchQueryStr: String = js.native
   
-   // null,
+  // null,
   var MaximumEntitySuggestions: Double = js.native
   
   def OnControlResolvedUserChanged(): Unit = js.native
@@ -150,36 +151,36 @@ trait SPClientPeoplePicker extends js.Object {
   
   def OnUserResolvedClientScript(pickerElementId: String, users: js.Array[ISPClientPeoplePickerEntity]): Unit = js.native
   
-   // false,
+  // false,
   def OnValueChangedClientScript(pickerElementId: String, users: js.Array[ISPClientPeoplePickerEntity]): Unit = js.native
   
-   // false,
+  // false,
   var PPMRU: SPClientPeoplePickerMRU = js.native
   
   def PlanningGlobalSearch(): Boolean = js.native
   
-   // 5,
+  // 5,
   var PrincipalAccountType: String = js.native
   
-   // '',
+  // '',
   var PrincipalAccountTypeEnum: PrincipalType = js.native
   
   var ProcessedUserList: StringDictionary[SPClientPeoplePickerProcessedUser] = js.native
   
-   // false,
+  // false,
   var QueryScriptInit: Boolean = js.native
   
   def ResolveAllUsers(fnContinuation: js.Function0[Unit]): Unit = js.native
   
-   // null,
+  // null,
   var ResolvePrincipalSource: PrincipalSource = js.native
   
-   // '',
+  // '',
   var ResolvedListElementId: String = js.native
   
   def SaveAllUserKeysToHiddenInput(): Unit = js.native
   
-   // '',
+  // '',
   var SearchPrincipalSource: PrincipalSource = js.native
   
   def SetEnabledState(bEnabled: Boolean): Unit = js.native
@@ -191,7 +192,7 @@ trait SPClientPeoplePicker extends js.Object {
   
   def SetServerError(): Unit = js.native
   
-   // false,
+  // false,
   var SharePointGroupID: Double = js.native
   
   def ShouldUsePPMRU(): Boolean = js.native
@@ -200,12 +201,12 @@ trait SPClientPeoplePicker extends js.Object {
   
   def ShowErrorMessage(msg: String): Unit = js.native
   
-   // false,
+  // false,
   var ShowUserPresence: Boolean = js.native
   
   def ShowingLocalSuggestions(): Boolean = js.native
   
-   // true,
+  // true,
   var TerminatingCharacter: String = js.native
   
   def ToggleWaitImageDisplay(): Unit = js.native
@@ -213,13 +214,13 @@ trait SPClientPeoplePicker extends js.Object {
   
   var TopLevelElementId: String = js.native
   
-   // null,
+  // null,
   var TotalUserCount: Double = js.native
   
-   // 0,
+  // 0,
   var UnresolvedUserCount: Double = js.native
   
-   // ';',
+  // ';',
   var UnresolvedUserElmIdToReplace: String = js.native
   
   def UpdateUnresolvedUser(results: StringResult, user: ISPClientPeoplePickerEntity): Unit = js.native
@@ -228,7 +229,7 @@ trait SPClientPeoplePicker extends js.Object {
   
   var UseLocalSuggestionCache: Boolean = js.native
   
-   // 0,
+  // 0,
   var UserQueryDict: StringDictionary[StringResult] = js.native
   
   def Validate(): Unit = js.native
@@ -237,9 +238,9 @@ trait SPClientPeoplePicker extends js.Object {
   
   var VisibleSuggestions: Double = js.native
   
-   // '',
+  // '',
   var WaitImageId: String = js.native
   
-   // '',
+  // '',
   var WebApplicationID: Guid = js.native
 }

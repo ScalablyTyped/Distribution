@@ -1,5 +1,6 @@
 package typings.webgme
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,20 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Source: https://raw.githubusercontent.com/phreed/typed-npm-webgme/master/webgme.d.ts
 // Documentation: https://editor.webgme.org/docs/source/index.html
 // https://github.com/webgme/webgme/tree/master/config
-@JSImport("webgme", JSImport.Namespace)
-@js.native
-object webgmeMod extends js.Object {
+object webgmeMod {
   
-  def addToRequireJsPaths(config: js.Any): Unit = js.native
-  
-  def standaloneServer(config: js.Any): Unit = js.native
-  
+  @JSImport("webgme", "Standalone")
   @js.native
-  class Standalone protected () extends js.Object {
+  class Standalone protected () extends StObject {
     def this(config: js.Any) = this()
     
     def start(fn: js.Any): Unit = js.native
     
     def stop(): Unit = js.native
   }
+  
+  @JSImport("webgme", "addToRequireJsPaths")
+  @js.native
+  def addToRequireJsPaths(config: js.Any): Unit = js.native
+  
+  @JSImport("webgme", "standaloneServer")
+  @js.native
+  def standaloneServer(config: js.Any): Unit = js.native
 }

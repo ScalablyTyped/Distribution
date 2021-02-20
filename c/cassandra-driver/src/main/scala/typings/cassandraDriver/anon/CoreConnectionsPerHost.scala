@@ -1,12 +1,13 @@
 package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoreConnectionsPerHost extends js.Object {
+trait CoreConnectionsPerHost extends StObject {
   
   var coreConnectionsPerHost: js.UndefOr[NumberDictionary[Double]] = js.native
   
@@ -25,42 +26,30 @@ object CoreConnectionsPerHost {
   }
   
   @scala.inline
-  implicit class CoreConnectionsPerHostOps[Self <: CoreConnectionsPerHost] (val x: Self) extends AnyVal {
+  implicit class CoreConnectionsPerHostMutableBuilder[Self <: CoreConnectionsPerHost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoreConnectionsPerHost(value: NumberDictionary[Double]): Self = StObject.set(x, "coreConnectionsPerHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoreConnectionsPerHostUndefined: Self = StObject.set(x, "coreConnectionsPerHost", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeartBeatInterval(value: Double): Self = StObject.set(x, "heartBeatInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreConnectionsPerHost(value: NumberDictionary[Double]): Self = this.set("coreConnectionsPerHost", value.asInstanceOf[js.Any])
+    def setHeartBeatIntervalUndefined: Self = StObject.set(x, "heartBeatInterval", js.undefined)
     
     @scala.inline
-    def deleteCoreConnectionsPerHost: Self = this.set("coreConnectionsPerHost", js.undefined)
+    def setMaxRequestsPerConnection(value: Double): Self = StObject.set(x, "maxRequestsPerConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartBeatInterval(value: Double): Self = this.set("heartBeatInterval", value.asInstanceOf[js.Any])
+    def setMaxRequestsPerConnectionUndefined: Self = StObject.set(x, "maxRequestsPerConnection", js.undefined)
     
     @scala.inline
-    def deleteHeartBeatInterval: Self = this.set("heartBeatInterval", js.undefined)
+    def setWarmup(value: Boolean): Self = StObject.set(x, "warmup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRequestsPerConnection(value: Double): Self = this.set("maxRequestsPerConnection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRequestsPerConnection: Self = this.set("maxRequestsPerConnection", js.undefined)
-    
-    @scala.inline
-    def setWarmup(value: Boolean): Self = this.set("warmup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarmup: Self = this.set("warmup", js.undefined)
+    def setWarmupUndefined: Self = StObject.set(x, "warmup", js.undefined)
   }
 }

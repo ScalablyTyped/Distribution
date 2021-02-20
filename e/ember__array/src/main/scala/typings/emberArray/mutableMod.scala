@@ -1,15 +1,17 @@
 package typings.emberArray
 
+import org.scalablytyped.runtime.Shortcut
 import typings.emberArray.enumerableMod.Enumerable
 import typings.emberArray.mod.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/array/mutable", JSImport.Namespace)
-@js.native
-object mutableMod extends js.Object {
+object mutableMod extends Shortcut {
   
+  @JSImport("@ember/array/mutable", JSImport.Default)
+  @js.native
   val default: typings.emberObject.mixinMod.default[MutableArray[js.Any], typings.emberObject.mod.default] = js.native
   
   /**
@@ -115,4 +117,9 @@ object mutableMod extends js.Object {
       */
     def unshiftObjects(objects: Enumerable[T]): this.type = js.native
   }
+  
+  type _To = typings.emberObject.mixinMod.default[MutableArray[js.Any], typings.emberObject.mod.default]
+  
+  /* This means you don't have to write `default`, but can instead just say `mutableMod.foo` */
+  override def _to: typings.emberObject.mixinMod.default[MutableArray[js.Any], typings.emberObject.mod.default] = default
 }

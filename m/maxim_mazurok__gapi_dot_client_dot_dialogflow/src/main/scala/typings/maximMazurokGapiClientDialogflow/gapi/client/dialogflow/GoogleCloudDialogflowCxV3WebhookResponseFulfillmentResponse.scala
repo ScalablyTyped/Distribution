@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse extends js.Object {
+trait GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse extends StObject {
   
   /** Merge behavior for `messages`. */
   var mergeBehavior: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponseOps[Self <: GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponseMutableBuilder[Self <: GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMergeBehavior(value: String): Self = StObject.set(x, "mergeBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMergeBehaviorUndefined: Self = StObject.set(x, "mergeBehavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessages(value: js.Array[GoogleCloudDialogflowCxV3ResponseMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeBehavior(value: String): Self = this.set("mergeBehavior", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteMergeBehavior: Self = this.set("mergeBehavior", js.undefined)
-    
-    @scala.inline
-    def setMessagesVarargs(value: GoogleCloudDialogflowCxV3ResponseMessage*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: js.Array[GoogleCloudDialogflowCxV3ResponseMessage]): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setMessagesVarargs(value: GoogleCloudDialogflowCxV3ResponseMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

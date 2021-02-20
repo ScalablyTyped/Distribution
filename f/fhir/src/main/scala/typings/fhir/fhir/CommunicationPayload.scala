@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,42 +40,30 @@ object CommunicationPayload {
   }
   
   @scala.inline
-  implicit class CommunicationPayloadOps[Self <: CommunicationPayload] (val x: Self) extends AnyVal {
+  implicit class CommunicationPayloadMutableBuilder[Self <: CommunicationPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentAttachment(value: Attachment): Self = StObject.set(x, "contentAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentAttachmentUndefined: Self = StObject.set(x, "contentAttachment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentReference(value: Reference): Self = StObject.set(x, "contentReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_contentString(value: Element): Self = this.set("_contentString", value.asInstanceOf[js.Any])
+    def setContentReferenceUndefined: Self = StObject.set(x, "contentReference", js.undefined)
     
     @scala.inline
-    def delete_contentString: Self = this.set("_contentString", js.undefined)
+    def setContentString(value: String): Self = StObject.set(x, "contentString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentAttachment(value: Attachment): Self = this.set("contentAttachment", value.asInstanceOf[js.Any])
+    def setContentStringUndefined: Self = StObject.set(x, "contentString", js.undefined)
     
     @scala.inline
-    def deleteContentAttachment: Self = this.set("contentAttachment", js.undefined)
+    def set_contentString(value: Element): Self = StObject.set(x, "_contentString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentReference(value: Reference): Self = this.set("contentReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentReference: Self = this.set("contentReference", js.undefined)
-    
-    @scala.inline
-    def setContentString(value: String): Self = this.set("contentString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentString: Self = this.set("contentString", js.undefined)
+    def set_contentStringUndefined: Self = StObject.set(x, "_contentString", js.undefined)
   }
 }

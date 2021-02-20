@@ -1,12 +1,13 @@
 package typings.angularFormly.AngularFormly
 
 import typings.angular.mod.IFormController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITemplateScopeOptions extends js.Object {
+trait ITemplateScopeOptions extends StObject {
   
   var formControl: IFormController | js.Array[IFormController] = js.native
   
@@ -27,30 +28,18 @@ object ITemplateScopeOptions {
   }
   
   @scala.inline
-  implicit class ITemplateScopeOptionsOps[Self <: ITemplateScopeOptions] (val x: Self) extends AnyVal {
+  implicit class ITemplateScopeOptionsMutableBuilder[Self <: ITemplateScopeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormControl(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "formControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplateOptions(value: ITemplateOptions): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormControlVarargs(value: IFormController*): Self = this.set("formControl", js.Array(value :_*))
-    
-    @scala.inline
-    def setFormControl(value: IFormController | js.Array[IFormController]): Self = this.set("formControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplateOptions(value: ITemplateOptions): Self = this.set("templateOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidation(value: js.Object): Self = this.set("validation", value.asInstanceOf[js.Any])
+    def setValidation(value: js.Object): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
   }
 }

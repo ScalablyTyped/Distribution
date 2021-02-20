@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,123 +133,111 @@ object IgGridResponsive {
   }
   
   @scala.inline
-  implicit class IgGridResponsiveOps[Self <: IgGridResponsive] (val x: Self) extends AnyVal {
+  implicit class IgGridResponsiveMutableBuilder[Self <: IgGridResponsive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedColumnWidthPerType(value: IgGridResponsiveAllowedColumnWidthPerType): Self = StObject.set(x, "allowedColumnWidthPerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedColumnWidthPerTypeUndefined: Self = StObject.set(x, "allowedColumnWidthPerType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnSettings(value: js.Array[IgGridResponsiveColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedColumnWidthPerType(value: IgGridResponsiveAllowedColumnWidthPerType): Self = this.set("allowedColumnWidthPerType", value.asInstanceOf[js.Any])
+    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
     @scala.inline
-    def deleteAllowedColumnWidthPerType: Self = this.set("allowedColumnWidthPerType", js.undefined)
+    def setColumnSettingsVarargs(value: IgGridResponsiveColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
     
     @scala.inline
-    def setColumnSettingsVarargs(value: IgGridResponsiveColumnSetting*): Self = this.set("columnSettings", js.Array(value :_*))
+    def setEnableVerticalRendering(value: Boolean): Self = StObject.set(x, "enableVerticalRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSettings(value: js.Array[IgGridResponsiveColumnSetting]): Self = this.set("columnSettings", value.asInstanceOf[js.Any])
+    def setEnableVerticalRenderingUndefined: Self = StObject.set(x, "enableVerticalRendering", js.undefined)
     
     @scala.inline
-    def deleteColumnSettings: Self = this.set("columnSettings", js.undefined)
+    def setForceResponsiveGridWidth(value: Boolean): Self = StObject.set(x, "forceResponsiveGridWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableVerticalRendering(value: Boolean): Self = this.set("enableVerticalRendering", value.asInstanceOf[js.Any])
+    def setForceResponsiveGridWidthUndefined: Self = StObject.set(x, "forceResponsiveGridWidth", js.undefined)
     
     @scala.inline
-    def deleteEnableVerticalRendering: Self = this.set("enableVerticalRendering", js.undefined)
+    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceResponsiveGridWidth(value: Boolean): Self = this.set("forceResponsiveGridWidth", value.asInstanceOf[js.Any])
+    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
     @scala.inline
-    def deleteForceResponsiveGridWidth: Self = this.set("forceResponsiveGridWidth", js.undefined)
+    def setPropertiesColumnWidth(value: String | Double): Self = StObject.set(x, "propertiesColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
+    def setPropertiesColumnWidthUndefined: Self = StObject.set(x, "propertiesColumnWidth", js.undefined)
     
     @scala.inline
-    def deleteInherit: Self = this.set("inherit", js.undefined)
+    def setReactOnContainerWidthChanges(value: Boolean): Self = StObject.set(x, "reactOnContainerWidthChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertiesColumnWidth(value: String | Double): Self = this.set("propertiesColumnWidth", value.asInstanceOf[js.Any])
+    def setReactOnContainerWidthChangesUndefined: Self = StObject.set(x, "reactOnContainerWidthChanges", js.undefined)
     
     @scala.inline
-    def deletePropertiesColumnWidth: Self = this.set("propertiesColumnWidth", js.undefined)
+    def setResponsiveColumnHidden(value: (/* event */ Event, /* ui */ ResponsiveColumnHiddenEventUIParam) => Unit): Self = StObject.set(x, "responsiveColumnHidden", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReactOnContainerWidthChanges(value: Boolean): Self = this.set("reactOnContainerWidthChanges", value.asInstanceOf[js.Any])
+    def setResponsiveColumnHiddenUndefined: Self = StObject.set(x, "responsiveColumnHidden", js.undefined)
     
     @scala.inline
-    def deleteReactOnContainerWidthChanges: Self = this.set("reactOnContainerWidthChanges", js.undefined)
+    def setResponsiveColumnHiding(value: (/* event */ Event, /* ui */ ResponsiveColumnHidingEventUIParam) => Unit): Self = StObject.set(x, "responsiveColumnHiding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setResponsiveColumnHidden(value: (/* event */ Event, /* ui */ ResponsiveColumnHiddenEventUIParam) => Unit): Self = this.set("responsiveColumnHidden", js.Any.fromFunction2(value))
+    def setResponsiveColumnHidingUndefined: Self = StObject.set(x, "responsiveColumnHiding", js.undefined)
     
     @scala.inline
-    def deleteResponsiveColumnHidden: Self = this.set("responsiveColumnHidden", js.undefined)
+    def setResponsiveColumnShowing(value: (/* event */ Event, /* ui */ ResponsiveColumnShowingEventUIParam) => Unit): Self = StObject.set(x, "responsiveColumnShowing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setResponsiveColumnHiding(value: (/* event */ Event, /* ui */ ResponsiveColumnHidingEventUIParam) => Unit): Self = this.set("responsiveColumnHiding", js.Any.fromFunction2(value))
+    def setResponsiveColumnShowingUndefined: Self = StObject.set(x, "responsiveColumnShowing", js.undefined)
     
     @scala.inline
-    def deleteResponsiveColumnHiding: Self = this.set("responsiveColumnHiding", js.undefined)
+    def setResponsiveColumnShown(value: (/* event */ Event, /* ui */ ResponsiveColumnShownEventUIParam) => Unit): Self = StObject.set(x, "responsiveColumnShown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setResponsiveColumnShowing(value: (/* event */ Event, /* ui */ ResponsiveColumnShowingEventUIParam) => Unit): Self = this.set("responsiveColumnShowing", js.Any.fromFunction2(value))
+    def setResponsiveColumnShownUndefined: Self = StObject.set(x, "responsiveColumnShown", js.undefined)
     
     @scala.inline
-    def deleteResponsiveColumnShowing: Self = this.set("responsiveColumnShowing", js.undefined)
+    def setResponsiveModeChanged(value: (/* event */ Event, /* ui */ ResponsiveModeChangedEventUIParam) => Unit): Self = StObject.set(x, "responsiveModeChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setResponsiveColumnShown(value: (/* event */ Event, /* ui */ ResponsiveColumnShownEventUIParam) => Unit): Self = this.set("responsiveColumnShown", js.Any.fromFunction2(value))
+    def setResponsiveModeChangedUndefined: Self = StObject.set(x, "responsiveModeChanged", js.undefined)
     
     @scala.inline
-    def deleteResponsiveColumnShown: Self = this.set("responsiveColumnShown", js.undefined)
+    def setResponsiveModes(value: js.Any): Self = StObject.set(x, "responsiveModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsiveModeChanged(value: (/* event */ Event, /* ui */ ResponsiveModeChangedEventUIParam) => Unit): Self = this.set("responsiveModeChanged", js.Any.fromFunction2(value))
+    def setResponsiveModesUndefined: Self = StObject.set(x, "responsiveModes", js.undefined)
     
     @scala.inline
-    def deleteResponsiveModeChanged: Self = this.set("responsiveModeChanged", js.undefined)
+    def setResponsiveSensitivity(value: Double): Self = StObject.set(x, "responsiveSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsiveModes(value: js.Any): Self = this.set("responsiveModes", value.asInstanceOf[js.Any])
+    def setResponsiveSensitivityUndefined: Self = StObject.set(x, "responsiveSensitivity", js.undefined)
     
     @scala.inline
-    def deleteResponsiveModes: Self = this.set("responsiveModes", js.undefined)
+    def setSingleColumnTemplate(value: js.Any): Self = StObject.set(x, "singleColumnTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsiveSensitivity(value: Double): Self = this.set("responsiveSensitivity", value.asInstanceOf[js.Any])
+    def setSingleColumnTemplateUndefined: Self = StObject.set(x, "singleColumnTemplate", js.undefined)
     
     @scala.inline
-    def deleteResponsiveSensitivity: Self = this.set("responsiveSensitivity", js.undefined)
+    def setValuesColumnWidth(value: String | Double): Self = StObject.set(x, "valuesColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleColumnTemplate(value: js.Any): Self = this.set("singleColumnTemplate", value.asInstanceOf[js.Any])
+    def setValuesColumnWidthUndefined: Self = StObject.set(x, "valuesColumnWidth", js.undefined)
     
     @scala.inline
-    def deleteSingleColumnTemplate: Self = this.set("singleColumnTemplate", js.undefined)
+    def setWindowWidthToRenderVertically(value: String | Double): Self = StObject.set(x, "windowWidthToRenderVertically", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuesColumnWidth(value: String | Double): Self = this.set("valuesColumnWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValuesColumnWidth: Self = this.set("valuesColumnWidth", js.undefined)
-    
-    @scala.inline
-    def setWindowWidthToRenderVertically(value: String | Double): Self = this.set("windowWidthToRenderVertically", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowWidthToRenderVertically: Self = this.set("windowWidthToRenderVertically", js.undefined)
+    def setWindowWidthToRenderVerticallyUndefined: Self = StObject.set(x, "windowWidthToRenderVertically", js.undefined)
   }
 }

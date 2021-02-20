@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceDiscovery extends js.Object {
+trait ServiceDiscovery extends StObject {
   
   /**
     * Specifies any AWS Cloud Map information for the virtual node.
@@ -26,30 +27,18 @@ object ServiceDiscovery {
   }
   
   @scala.inline
-  implicit class ServiceDiscoveryOps[Self <: ServiceDiscovery] (val x: Self) extends AnyVal {
+  implicit class ServiceDiscoveryMutableBuilder[Self <: ServiceDiscovery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsCloudMap(value: AwsCloudMapServiceDiscovery): Self = StObject.set(x, "awsCloudMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsCloudMapUndefined: Self = StObject.set(x, "awsCloudMap", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDns(value: DnsServiceDiscovery): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsCloudMap(value: AwsCloudMapServiceDiscovery): Self = this.set("awsCloudMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAwsCloudMap: Self = this.set("awsCloudMap", js.undefined)
-    
-    @scala.inline
-    def setDns(value: DnsServiceDiscovery): Self = this.set("dns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDns: Self = this.set("dns", js.undefined)
+    def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
   }
 }

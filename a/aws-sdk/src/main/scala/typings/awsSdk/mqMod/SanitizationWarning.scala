@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SanitizationWarning extends js.Object {
+trait SanitizationWarning extends StObject {
   
   /**
     * The name of the XML attribute that has been sanitized.
@@ -31,36 +32,24 @@ object SanitizationWarning {
   }
   
   @scala.inline
-  implicit class SanitizationWarningOps[Self <: SanitizationWarning] (val x: Self) extends AnyVal {
+  implicit class SanitizationWarningMutableBuilder[Self <: SanitizationWarning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: string): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementName(value: string): Self = StObject.set(x, "ElementName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: string): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    def setElementNameUndefined: Self = StObject.set(x, "ElementName", js.undefined)
     
     @scala.inline
-    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
+    def setReason(value: SanitizationWarningReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementName(value: string): Self = this.set("ElementName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElementName: Self = this.set("ElementName", js.undefined)
-    
-    @scala.inline
-    def setReason(value: SanitizationWarningReason): Self = this.set("Reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("Reason", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
   }
 }

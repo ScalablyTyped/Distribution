@@ -4,12 +4,13 @@ import typings.nyaapi.nyaapiStrings.b
 import typings.nyaapi.nyaapiStrings.g
 import typings.nyaapi.nyaapiStrings.k
 import typings.nyaapi.nyaapiStrings.m
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchOptions extends js.Object {
+trait SearchOptions extends StObject {
   
   var c: js.UndefOr[Category] = js.native
   
@@ -54,123 +55,111 @@ object SearchOptions {
   }
   
   @scala.inline
-  implicit class SearchOptionsOps[Self <: SearchOptions] (val x: Self) extends AnyVal {
+  implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setC(value: Category): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateType(value: String): Self = StObject.set(x, "dateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC(value: Category): Self = this.set("c", value.asInstanceOf[js.Any])
+    def setDateTypeUndefined: Self = StObject.set(x, "dateType", js.undefined)
     
     @scala.inline
-    def deleteC: Self = this.set("c", js.undefined)
+    def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateType(value: String): Self = this.set("dateType", value.asInstanceOf[js.Any])
+    def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
     
     @scala.inline
-    def deleteDateType: Self = this.set("dateType", js.undefined)
+    def setFromID(value: String): Self = StObject.set(x, "fromID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDate(value: String): Self = this.set("fromDate", value.asInstanceOf[js.Any])
+    def setFromIDUndefined: Self = StObject.set(x, "fromID", js.undefined)
     
     @scala.inline
-    def deleteFromDate: Self = this.set("fromDate", js.undefined)
+    def setLang(value: js.Array[String]): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromID(value: String): Self = this.set("fromID", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteFromID: Self = this.set("fromID", js.undefined)
+    def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value :_*))
     
     @scala.inline
-    def setLangVarargs(value: String*): Self = this.set("lang", js.Array(value :_*))
+    def setMaxSize(value: String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: js.Array[String]): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setMaxage(value: String): Self = StObject.set(x, "maxage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: String): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setMaxageUndefined: Self = StObject.set(x, "maxage", js.undefined)
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    def setMinSize(value: String): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxage(value: String): Self = this.set("maxage", value.asInstanceOf[js.Any])
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
     @scala.inline
-    def deleteMaxage: Self = this.set("maxage", js.undefined)
+    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: String): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
     @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setOrder(value: Boolean): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: Double): Self = this.set("n", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteN: Self = this.set("n", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: Boolean): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setSizeType(value: b | k | m | g): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS(value: String): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
     @scala.inline
-    def deleteS: Self = this.set("s", js.undefined)
+    def setSort(value: SortType): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeType(value: b | k | m | g): Self = this.set("sizeType", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteSizeType: Self = this.set("sizeType", js.undefined)
+    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: SortType): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerm(value: String): Self = this.set("term", value.asInstanceOf[js.Any])
+    def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
     
     @scala.inline
-    def deleteTerm: Self = this.set("term", js.undefined)
+    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToDate(value: String): Self = this.set("toDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToDate: Self = this.set("toDate", js.undefined)
-    
-    @scala.inline
-    def setUserID(value: String): Self = this.set("userID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserID: Self = this.set("userID", js.undefined)
+    def setUserIDUndefined: Self = StObject.set(x, "userID", js.undefined)
   }
 }

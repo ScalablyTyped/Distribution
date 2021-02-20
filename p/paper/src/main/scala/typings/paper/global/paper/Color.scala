@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,10 +100,7 @@ class Color protected ()
   ) = this()
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
 }
-/* static members */
-@JSGlobal("paper.Color")
-@js.native
-object Color extends js.Object {
+object Color {
   
   /** 
     * Returns a color object with random {@link #red}, {@link #green}
@@ -110,5 +108,8 @@ object Color extends js.Object {
     * 
     * @return the newly created color object
     */
+  /* static member */
+  @JSGlobal("paper.Color.random")
+  @js.native
   def random(): typings.paper.paper.Color = js.native
 }

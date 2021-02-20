@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicaGlobalSecondaryIndexAutoScalingDescription extends js.Object {
+trait ReplicaGlobalSecondaryIndexAutoScalingDescription extends StObject {
   
   /**
     * The name of the global secondary index.
@@ -30,42 +31,30 @@ object ReplicaGlobalSecondaryIndexAutoScalingDescription {
   }
   
   @scala.inline
-  implicit class ReplicaGlobalSecondaryIndexAutoScalingDescriptionOps[Self <: ReplicaGlobalSecondaryIndexAutoScalingDescription] (val x: Self) extends AnyVal {
+  implicit class ReplicaGlobalSecondaryIndexAutoScalingDescriptionMutableBuilder[Self <: ReplicaGlobalSecondaryIndexAutoScalingDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
     
     @scala.inline
-    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    def setProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexStatus(value: IndexStatus): Self = this.set("IndexStatus", value.asInstanceOf[js.Any])
+    def setProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", js.undefined)
     
     @scala.inline
-    def deleteIndexStatus: Self = this.set("IndexStatus", js.undefined)
+    def setProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = this.set("ProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedReadCapacityAutoScalingSettings: Self = this.set("ProvisionedReadCapacityAutoScalingSettings", js.undefined)
-    
-    @scala.inline
-    def setProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = this.set("ProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedWriteCapacityAutoScalingSettings: Self = this.set("ProvisionedWriteCapacityAutoScalingSettings", js.undefined)
+    def setProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", js.undefined)
   }
 }

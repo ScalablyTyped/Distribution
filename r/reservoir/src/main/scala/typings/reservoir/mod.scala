@@ -1,13 +1,12 @@
 package typings.reservoir
 
 import typings.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reservoir", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Create a new reservoir sampler.
@@ -17,9 +16,17 @@ object mod extends js.Object {
     * @param randomNumberGenerator is an optional random number generating function to use in
     *   place of the default Math.random.
     */
+  @JSImport("reservoir", JSImport.Namespace)
+  @js.native
   def apply[T](): ReservoirArray[T] = js.native
+  @JSImport("reservoir", JSImport.Namespace)
+  @js.native
   def apply[T](reservoirSize: js.UndefOr[scala.Nothing], randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = js.native
+  @JSImport("reservoir", JSImport.Namespace)
+  @js.native
   def apply[T](reservoirSize: Double): ReservoirArray[T] = js.native
+  @JSImport("reservoir", JSImport.Namespace)
+  @js.native
   def apply[T](reservoirSize: Double, randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = js.native
   
   @js.native

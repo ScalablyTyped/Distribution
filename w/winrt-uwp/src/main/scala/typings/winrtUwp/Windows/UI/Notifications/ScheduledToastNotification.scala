@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the XML that defines the toast notification that will display at the scheduled time. */
 @js.native
-trait ScheduledToastNotification extends js.Object {
+trait ScheduledToastNotification extends StObject {
   
   /** Gets the XML that defines this scheduled toast notification. */
   var content: XmlDocument = js.native
@@ -52,42 +53,30 @@ object ScheduledToastNotification {
   }
   
   @scala.inline
-  implicit class ScheduledToastNotificationOps[Self <: ScheduledToastNotification] (val x: Self) extends AnyVal {
+  implicit class ScheduledToastNotificationMutableBuilder[Self <: ScheduledToastNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryTime(value: Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: XmlDocument): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryTime(value: Date): Self = this.set("deliveryTime", value.asInstanceOf[js.Any])
+    def setMaximumSnoozeCount(value: Double): Self = StObject.set(x, "maximumSnoozeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setSnoozeInterval(value: Double): Self = StObject.set(x, "snoozeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSuppressPopup(value: Boolean): Self = StObject.set(x, "suppressPopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumSnoozeCount(value: Double): Self = this.set("maximumSnoozeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnoozeInterval(value: Double): Self = this.set("snoozeInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuppressPopup(value: Boolean): Self = this.set("suppressPopup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

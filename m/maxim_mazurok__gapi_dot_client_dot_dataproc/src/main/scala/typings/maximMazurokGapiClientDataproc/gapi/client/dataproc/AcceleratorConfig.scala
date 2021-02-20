@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcceleratorConfig extends js.Object {
+trait AcceleratorConfig extends StObject {
   
   /** The number of the accelerator cards of this type exposed to this instance. */
   var acceleratorCount: js.UndefOr[Double] = js.native
@@ -29,30 +30,18 @@ object AcceleratorConfig {
   }
   
   @scala.inline
-  implicit class AcceleratorConfigOps[Self <: AcceleratorConfig] (val x: Self) extends AnyVal {
+  implicit class AcceleratorConfigMutableBuilder[Self <: AcceleratorConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorCount(value: Double): Self = StObject.set(x, "acceleratorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorCountUndefined: Self = StObject.set(x, "acceleratorCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceleratorTypeUri(value: String): Self = StObject.set(x, "acceleratorTypeUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorCount(value: Double): Self = this.set("acceleratorCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceleratorCount: Self = this.set("acceleratorCount", js.undefined)
-    
-    @scala.inline
-    def setAcceleratorTypeUri(value: String): Self = this.set("acceleratorTypeUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceleratorTypeUri: Self = this.set("acceleratorTypeUri", js.undefined)
+    def setAcceleratorTypeUriUndefined: Self = StObject.set(x, "acceleratorTypeUri", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitoringScheduleConfig extends js.Object {
+trait MonitoringScheduleConfig extends StObject {
   
   /**
     * Defines the monitoring job.
@@ -26,27 +27,15 @@ object MonitoringScheduleConfig {
   }
   
   @scala.inline
-  implicit class MonitoringScheduleConfigOps[Self <: MonitoringScheduleConfig] (val x: Self) extends AnyVal {
+  implicit class MonitoringScheduleConfigMutableBuilder[Self <: MonitoringScheduleConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonitoringJobDefinition(value: MonitoringJobDefinition): Self = StObject.set(x, "MonitoringJobDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScheduleConfig(value: ScheduleConfig): Self = StObject.set(x, "ScheduleConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMonitoringJobDefinition(value: MonitoringJobDefinition): Self = this.set("MonitoringJobDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheduleConfig(value: ScheduleConfig): Self = this.set("ScheduleConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleConfig: Self = this.set("ScheduleConfig", js.undefined)
+    def setScheduleConfigUndefined: Self = StObject.set(x, "ScheduleConfig", js.undefined)
   }
 }

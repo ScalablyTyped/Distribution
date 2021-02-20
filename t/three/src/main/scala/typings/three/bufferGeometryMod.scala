@@ -15,14 +15,14 @@ import typings.three.sphereMod.Sphere
 import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/core/BufferGeometry", JSImport.Namespace)
-@js.native
-object bufferGeometryMod extends js.Object {
+object bufferGeometryMod {
   
+  @JSImport("three/src/core/BufferGeometry", "BufferGeometry")
   @js.native
   /**
   	 * This creates a new BufferGeometry. It also sets several properties to an default value.
@@ -216,9 +216,16 @@ object bufferGeometryMod extends js.Object {
     var uuid: String = js.native
   }
   /* static members */
-  @js.native
-  object BufferGeometry extends js.Object {
+  object BufferGeometry {
     
-    var MaxIndex: Double = js.native
+    @JSImport("three/src/core/BufferGeometry", "BufferGeometry")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("three/src/core/BufferGeometry", "BufferGeometry.MaxIndex")
+    @js.native
+    def MaxIndex: Double = js.native
+    @scala.inline
+    def MaxIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxIndex")(x.asInstanceOf[js.Any])
   }
 }

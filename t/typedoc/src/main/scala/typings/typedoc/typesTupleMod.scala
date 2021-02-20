@@ -1,14 +1,14 @@
 package typings.typedoc
 
 import typings.typedoc.typesAbstractMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/types/tuple", JSImport.Namespace)
-@js.native
-object typesTupleMod extends js.Object {
+object typesTupleMod {
   
+  @JSImport("typedoc/dist/lib/models/types/tuple", "NamedTupleMember")
   @js.native
   class NamedTupleMember protected () extends Type {
     def this(name: String, isOptional: Boolean, element: Type) = this()
@@ -20,6 +20,7 @@ object typesTupleMod extends js.Object {
     var name: String = js.native
   }
   
+  @JSImport("typedoc/dist/lib/models/types/tuple", "TupleType")
   @js.native
   class TupleType protected () extends Type {
     def this(elements: js.Array[Type]) = this()

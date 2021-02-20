@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait fpsDropLevelCappingData extends js.Object {
+trait fpsDropLevelCappingData extends StObject {
   
   var droppedLevel: Level = js.native
   
@@ -20,24 +21,12 @@ object fpsDropLevelCappingData {
   }
   
   @scala.inline
-  implicit class fpsDropLevelCappingDataOps[Self <: fpsDropLevelCappingData] (val x: Self) extends AnyVal {
+  implicit class fpsDropLevelCappingDataMutableBuilder[Self <: fpsDropLevelCappingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDroppedLevel(value: Level): Self = StObject.set(x, "droppedLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDroppedLevel(value: Level): Self = this.set("droppedLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevel(value: Level): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

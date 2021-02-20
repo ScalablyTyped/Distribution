@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents data about how to display a mini contact card. */
 @js.native
-trait ContactCardOptions extends js.Object {
+trait ContactCardOptions extends StObject {
   
   /** Gets or sets a value that specifies the type of header to display on the contact card. */
   var headerKind: ContactCardHeaderKind = js.native
@@ -31,27 +32,15 @@ object ContactCardOptions {
   }
   
   @scala.inline
-  implicit class ContactCardOptionsOps[Self <: ContactCardOptions] (val x: Self) extends AnyVal {
+  implicit class ContactCardOptionsMutableBuilder[Self <: ContactCardOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderKind(value: ContactCardHeaderKind): Self = StObject.set(x, "headerKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialTabKind(value: ContactCardTabKind): Self = StObject.set(x, "initialTabKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeaderKind(value: ContactCardHeaderKind): Self = this.set("headerKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialTabKind(value: ContactCardTabKind): Self = this.set("initialTabKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerSearchContactListIds(value: IVector[String]): Self = this.set("serverSearchContactListIds", value.asInstanceOf[js.Any])
+    def setServerSearchContactListIds(value: IVector[String]): Self = StObject.set(x, "serverSearchContactListIds", value.asInstanceOf[js.Any])
   }
 }

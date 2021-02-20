@@ -1,5 +1,6 @@
 package typings.ionicUtilsSubprocess
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@ionic/utils-subprocess", JSImport.Namespace)
 @js.native
-object ionicUtilsSubprocessRequire extends js.Object
+object ionicUtilsSubprocessRequire extends StObject

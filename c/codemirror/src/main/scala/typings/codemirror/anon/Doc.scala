@@ -1,11 +1,12 @@
 package typings.codemirror.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Doc extends js.Object {
+trait Doc extends StObject {
   
   var changed: To | Null = js.native
   
@@ -22,30 +23,18 @@ object Doc {
   }
   
   @scala.inline
-  implicit class DocOps[Self <: Doc] (val x: Self) extends AnyVal {
+  implicit class DocMutableBuilder[Self <: Doc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanged(value: To): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedNull: Self = StObject.set(x, "changed", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoc(value: typings.codemirror.mod.Doc): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc(value: typings.codemirror.mod.Doc): Self = this.set("doc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChanged(value: To): Self = this.set("changed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChangedNull: Self = this.set("changed", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

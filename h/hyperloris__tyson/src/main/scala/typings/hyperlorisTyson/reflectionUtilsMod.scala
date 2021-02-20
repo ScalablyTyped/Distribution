@@ -1,19 +1,18 @@
 package typings.hyperlorisTyson
 
 import typings.hyperlorisTyson.jsonPropertyMetadataMod.JsonPropertyMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", JSImport.Namespace)
-@js.native
-object reflectionUtilsMod extends js.Object {
+object reflectionUtilsMod {
   
+  @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils")
   @js.native
-  class ReflectionUtils () extends js.Object
+  class ReflectionUtils () extends StObject
   /* static members */
-  @js.native
-  object ReflectionUtils extends js.Object {
+  object ReflectionUtils {
     
     /**
       * Returns the {@link JsonProperty} metadata of the specified property, or undefined if they are not present.
@@ -24,6 +23,8 @@ object reflectionUtilsMod extends js.Object {
       * @returns the metadata value for the metadata key if found; otherwise, undefined.
       * @memberof ReflectionUtils
       */
+    @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils.getJsonPropertyMetadata")
+    @js.native
     def getJsonPropertyMetadata(target: js.Any, propertyKey: String): js.UndefOr[JsonPropertyMetadata] = js.native
     
     /**
@@ -35,6 +36,8 @@ object reflectionUtilsMod extends js.Object {
       * @returns the injected type
       * @memberof ReflectionUtils
       */
+    @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils.getType")
+    @js.native
     def getType(target: js.Any, propertyKey: String): js.Any = js.native
     
     /**
@@ -53,6 +56,8 @@ object reflectionUtilsMod extends js.Object {
       * @returns the generated hash of the target
       * @memberof ReflectionUtils
       */
+    @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils.getTypeHash")
+    @js.native
     def getTypeHash(target: js.Any): String = js.native
     
     /**
@@ -64,6 +69,8 @@ object reflectionUtilsMod extends js.Object {
       * @returns the type name
       * @memberof ReflectionUtils
       */
+    @JSImport("@hyperloris/tyson/dist/types/reflect/reflectionUtils", "ReflectionUtils.getTypeName")
+    @js.native
     def getTypeName(target: js.Any): String = js.native
   }
 }

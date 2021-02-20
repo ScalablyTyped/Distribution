@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVpcEndpointServiceConfigurationsResult extends js.Object {
+trait DescribeVpcEndpointServiceConfigurationsResult extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
@@ -26,33 +27,21 @@ object DescribeVpcEndpointServiceConfigurationsResult {
   }
   
   @scala.inline
-  implicit class DescribeVpcEndpointServiceConfigurationsResultOps[Self <: DescribeVpcEndpointServiceConfigurationsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeVpcEndpointServiceConfigurationsResultMutableBuilder[Self <: DescribeVpcEndpointServiceConfigurationsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceConfigurations(value: ServiceConfigurationSet): Self = StObject.set(x, "ServiceConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setServiceConfigurationsUndefined: Self = StObject.set(x, "ServiceConfigurations", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setServiceConfigurationsVarargs(value: ServiceConfiguration*): Self = this.set("ServiceConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceConfigurations(value: ServiceConfigurationSet): Self = this.set("ServiceConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceConfigurations: Self = this.set("ServiceConfigurations", js.undefined)
+    def setServiceConfigurationsVarargs(value: ServiceConfiguration*): Self = StObject.set(x, "ServiceConfigurations", js.Array(value :_*))
   }
 }

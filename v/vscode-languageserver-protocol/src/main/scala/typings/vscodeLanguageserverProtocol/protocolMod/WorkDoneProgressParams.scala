@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
 import typings.vscodeJsonrpc.mod.ProgressToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkDoneProgressParams extends js.Object {
+trait WorkDoneProgressParams extends StObject {
   
   /**
     * An optional token that a server can use to report work done progress.
@@ -22,24 +23,12 @@ object WorkDoneProgressParams {
   }
   
   @scala.inline
-  implicit class WorkDoneProgressParamsOps[Self <: WorkDoneProgressParams] (val x: Self) extends AnyVal {
+  implicit class WorkDoneProgressParamsMutableBuilder[Self <: WorkDoneProgressParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkDoneToken(value: ProgressToken): Self = StObject.set(x, "workDoneToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkDoneToken(value: ProgressToken): Self = this.set("workDoneToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkDoneToken: Self = this.set("workDoneToken", js.undefined)
+    def setWorkDoneTokenUndefined: Self = StObject.set(x, "workDoneToken", js.undefined)
   }
 }

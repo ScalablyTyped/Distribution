@@ -6,14 +6,14 @@ import typings.opentelemetryApi.spanKindMod.SpanKind
 import typings.opentelemetryApi.timeMod.TimeInput
 import typings.opentelemetryTracing.readableSpanMod.ReadableSpan
 import typings.opentelemetryTracing.tracerMod.Tracer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/tracing/build/src/Span", JSImport.Namespace)
-@js.native
-object spanMod extends js.Object {
+object spanMod {
   
+  @JSImport("@opentelemetry/tracing/build/src/Span", "Span")
   @js.native
   class Span protected ()
     extends typings.opentelemetryApi.spanMod.Span

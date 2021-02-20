@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogAction extends js.Object {
+trait DialogAction extends StObject {
   
   /**
     * The fulfillment state of the intent. The possible values are:    Failed - The Lambda function associated with the intent failed to fulfill the intent.    Fulfilled - The intent has fulfilled by the Lambda function associated with the intent.     ReadyForFulfillment - All of the information necessary for the intent is present and the intent ready to be fulfilled by the client application.  
@@ -52,57 +53,45 @@ object DialogAction {
   }
   
   @scala.inline
-  implicit class DialogActionOps[Self <: DialogAction] (val x: Self) extends AnyVal {
+  implicit class DialogActionMutableBuilder[Self <: DialogAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFulfillmentState(value: FulfillmentState): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFulfillmentStateUndefined: Self = StObject.set(x, "fulfillmentState", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: DialogActionType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
     
     @scala.inline
-    def setFulfillmentState(value: FulfillmentState): Self = this.set("fulfillmentState", value.asInstanceOf[js.Any])
+    def setMessage(value: Text): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFulfillmentState: Self = this.set("fulfillmentState", js.undefined)
+    def setMessageFormat(value: MessageFormatType): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentName(value: IntentName): Self = this.set("intentName", value.asInstanceOf[js.Any])
+    def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
     
     @scala.inline
-    def deleteIntentName: Self = this.set("intentName", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setMessage(value: Text): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
     
     @scala.inline
-    def setMessageFormat(value: MessageFormatType): Self = this.set("messageFormat", value.asInstanceOf[js.Any])
+    def setSlots(value: StringMap): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageFormat: Self = this.set("messageFormat", js.undefined)
+    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
     @scala.inline
-    def setSlotToElicit(value: String): Self = this.set("slotToElicit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlotToElicit: Self = this.set("slotToElicit", js.undefined)
-    
-    @scala.inline
-    def setSlots(value: StringMap): Self = this.set("slots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlots: Self = this.set("slots", js.undefined)
+    def setType(value: DialogActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

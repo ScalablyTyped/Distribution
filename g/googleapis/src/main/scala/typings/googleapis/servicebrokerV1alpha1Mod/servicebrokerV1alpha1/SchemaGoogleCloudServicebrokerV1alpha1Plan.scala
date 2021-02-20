@@ -1,6 +1,7 @@
 package typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Plan message describes a Service Plan.
   */
 @js.native
-trait SchemaGoogleCloudServicebrokerV1alpha1Plan extends js.Object {
+trait SchemaGoogleCloudServicebrokerV1alpha1Plan extends StObject {
   
   /**
     * Specifies whether instances of the service can be bound to applications.
@@ -60,60 +61,48 @@ object SchemaGoogleCloudServicebrokerV1alpha1Plan {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1alpha1PlanOps[Self <: SchemaGoogleCloudServicebrokerV1alpha1Plan] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudServicebrokerV1alpha1PlanMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1alpha1Plan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindable(value: Boolean): Self = StObject.set(x, "bindable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindableUndefined: Self = StObject.set(x, "bindable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindable(value: Boolean): Self = this.set("bindable", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBindable: Self = this.set("bindable", js.undefined)
+    def setFree(value: Boolean): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFreeUndefined: Self = StObject.set(x, "free", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFree(value: Boolean): Self = this.set("free", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFree: Self = this.set("free", js.undefined)
+    def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: StringDictionary[js.Any]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setSchemas(value: StringDictionary[js.Any]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSchemas(value: StringDictionary[js.Any]): Self = this.set("schemas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemas: Self = this.set("schemas", js.undefined)
+    def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
   }
 }

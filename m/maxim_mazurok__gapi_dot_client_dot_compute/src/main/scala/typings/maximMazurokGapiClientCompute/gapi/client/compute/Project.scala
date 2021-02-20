@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Project extends js.Object {
+trait Project extends StObject {
   
   /** Metadata key/value pairs available to all instances contained in this project. See Custom metadata for more information. */
   var commonInstanceMetadata: js.UndefOr[Metadata] = js.native
@@ -61,102 +62,90 @@ object Project {
   }
   
   @scala.inline
-  implicit class ProjectOps[Self <: Project] (val x: Self) extends AnyVal {
+  implicit class ProjectMutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommonInstanceMetadata(value: Metadata): Self = StObject.set(x, "commonInstanceMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonInstanceMetadataUndefined: Self = StObject.set(x, "commonInstanceMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonInstanceMetadata(value: Metadata): Self = this.set("commonInstanceMetadata", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCommonInstanceMetadata: Self = this.set("commonInstanceMetadata", js.undefined)
+    def setDefaultNetworkTier(value: String): Self = StObject.set(x, "defaultNetworkTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setDefaultNetworkTierUndefined: Self = StObject.set(x, "defaultNetworkTier", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setDefaultServiceAccount(value: String): Self = StObject.set(x, "defaultServiceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNetworkTier(value: String): Self = this.set("defaultNetworkTier", value.asInstanceOf[js.Any])
+    def setDefaultServiceAccountUndefined: Self = StObject.set(x, "defaultServiceAccount", js.undefined)
     
     @scala.inline
-    def deleteDefaultNetworkTier: Self = this.set("defaultNetworkTier", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultServiceAccount(value: String): Self = this.set("defaultServiceAccount", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultServiceAccount: Self = this.set("defaultServiceAccount", js.undefined)
+    def setEnabledFeatures(value: js.Array[String]): Self = StObject.set(x, "enabledFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnabledFeaturesUndefined: Self = StObject.set(x, "enabledFeatures", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnabledFeaturesVarargs(value: String*): Self = StObject.set(x, "enabledFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setEnabledFeaturesVarargs(value: String*): Self = this.set("enabledFeatures", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledFeatures(value: js.Array[String]): Self = this.set("enabledFeatures", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEnabledFeatures: Self = this.set("enabledFeatures", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setQuotas(value: js.Array[Quota]): Self = StObject.set(x, "quotas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setQuotasUndefined: Self = StObject.set(x, "quotas", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setQuotasVarargs(value: Quota*): Self = StObject.set(x, "quotas", js.Array(value :_*))
     
     @scala.inline
-    def setQuotasVarargs(value: Quota*): Self = this.set("quotas", js.Array(value :_*))
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotas(value: js.Array[Quota]): Self = this.set("quotas", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteQuotas: Self = this.set("quotas", js.undefined)
+    def setUsageExportLocation(value: UsageExportLocation): Self = StObject.set(x, "usageExportLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setUsageExportLocationUndefined: Self = StObject.set(x, "usageExportLocation", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setXpnProjectStatus(value: String): Self = StObject.set(x, "xpnProjectStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsageExportLocation(value: UsageExportLocation): Self = this.set("usageExportLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageExportLocation: Self = this.set("usageExportLocation", js.undefined)
-    
-    @scala.inline
-    def setXpnProjectStatus(value: String): Self = this.set("xpnProjectStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXpnProjectStatus: Self = this.set("xpnProjectStatus", js.undefined)
+    def setXpnProjectStatusUndefined: Self = StObject.set(x, "xpnProjectStatus", js.undefined)
   }
 }

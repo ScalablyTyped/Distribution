@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.device__
 import typings.chromeApps.chromeAppsStrings.endpoint_
 import typings.chromeApps.chromeAppsStrings.interface_
 import typings.chromeApps.chromeAppsStrings.other_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DEVICE extends js.Object {
+trait DEVICE extends StObject {
   
   var DEVICE: device__ = js.native
   
@@ -28,30 +29,18 @@ object DEVICE {
   }
   
   @scala.inline
-  implicit class DEVICEOps[Self <: DEVICE] (val x: Self) extends AnyVal {
+  implicit class DEVICEMutableBuilder[Self <: DEVICE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDEVICE(value: device__): Self = StObject.set(x, "DEVICE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setENDPOINT(value: endpoint_): Self = StObject.set(x, "ENDPOINT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setINTERFACE(value: interface_): Self = StObject.set(x, "INTERFACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDEVICE(value: device__): Self = this.set("DEVICE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setENDPOINT(value: endpoint_): Self = this.set("ENDPOINT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setINTERFACE(value: interface_): Self = this.set("INTERFACE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOTHER(value: other_): Self = this.set("OTHER", value.asInstanceOf[js.Any])
+    def setOTHER(value: other_): Self = StObject.set(x, "OTHER", value.asInstanceOf[js.Any])
   }
 }

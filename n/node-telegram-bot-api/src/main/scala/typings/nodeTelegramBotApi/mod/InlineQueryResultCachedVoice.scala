@@ -1,6 +1,7 @@
 package typings.nodeTelegramBotApi.mod
 
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.voice
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,39 +31,27 @@ object InlineQueryResultCachedVoice {
   }
   
   @scala.inline
-  implicit class InlineQueryResultCachedVoiceOps[Self <: InlineQueryResultCachedVoice] (val x: Self) extends AnyVal {
+  implicit class InlineQueryResultCachedVoiceMutableBuilder[Self <: InlineQueryResultCachedVoice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
     
     @scala.inline
-    def setType(value: voice): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoice_file_id(value: String): Self = this.set("voice_file_id", value.asInstanceOf[js.Any])
+    def setType(value: voice): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
-    
-    @scala.inline
-    def setInput_message_content(value: InputMessageContent): Self = this.set("input_message_content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput_message_content: Self = this.set("input_message_content", js.undefined)
+    def setVoice_file_id(value: String): Self = StObject.set(x, "voice_file_id", value.asInstanceOf[js.Any])
   }
 }

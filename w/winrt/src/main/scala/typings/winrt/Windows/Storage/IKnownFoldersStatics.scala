@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IKnownFoldersStatics extends js.Object {
+trait IKnownFoldersStatics extends StObject {
   
   var documentsLibrary: StorageFolder = js.native
   
@@ -38,39 +39,27 @@ object IKnownFoldersStatics {
   }
   
   @scala.inline
-  implicit class IKnownFoldersStaticsOps[Self <: IKnownFoldersStatics] (val x: Self) extends AnyVal {
+  implicit class IKnownFoldersStaticsMutableBuilder[Self <: IKnownFoldersStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentsLibrary(value: StorageFolder): Self = StObject.set(x, "documentsLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHomeGroup(value: StorageFolder): Self = StObject.set(x, "homeGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaServerDevices(value: StorageFolder): Self = StObject.set(x, "mediaServerDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentsLibrary(value: StorageFolder): Self = this.set("documentsLibrary", value.asInstanceOf[js.Any])
+    def setMusicLibrary(value: StorageFolder): Self = StObject.set(x, "musicLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeGroup(value: StorageFolder): Self = this.set("homeGroup", value.asInstanceOf[js.Any])
+    def setPicturesLibrary(value: StorageFolder): Self = StObject.set(x, "picturesLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaServerDevices(value: StorageFolder): Self = this.set("mediaServerDevices", value.asInstanceOf[js.Any])
+    def setRemovableDevices(value: StorageFolder): Self = StObject.set(x, "removableDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMusicLibrary(value: StorageFolder): Self = this.set("musicLibrary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPicturesLibrary(value: StorageFolder): Self = this.set("picturesLibrary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemovableDevices(value: StorageFolder): Self = this.set("removableDevices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideosLibrary(value: StorageFolder): Self = this.set("videosLibrary", value.asInstanceOf[js.Any])
+    def setVideosLibrary(value: StorageFolder): Self = StObject.set(x, "videosLibrary", value.asInstanceOf[js.Any])
   }
 }

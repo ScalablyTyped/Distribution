@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides options to use when opening a file. */
 @JSGlobal("Windows.Storage.StorageOpenOptions")
 @js.native
-object StorageOpenOptions extends js.Object {
+object StorageOpenOptions extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.StorageOpenOptions with Double] = js.native

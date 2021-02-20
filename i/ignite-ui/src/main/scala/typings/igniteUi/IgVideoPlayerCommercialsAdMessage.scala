@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,42 +46,30 @@ object IgVideoPlayerCommercialsAdMessage {
   }
   
   @scala.inline
-  implicit class IgVideoPlayerCommercialsAdMessageOps[Self <: IgVideoPlayerCommercialsAdMessage] (val x: Self) extends AnyVal {
+  implicit class IgVideoPlayerCommercialsAdMessageMutableBuilder[Self <: IgVideoPlayerCommercialsAdMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
-    
-    @scala.inline
-    def setHideDelay(value: Double): Self = this.set("hideDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideDelay: Self = this.set("hideDelay", js.undefined)
+    def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
   }
 }

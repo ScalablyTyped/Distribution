@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ListBullet extends js.Object
+sealed trait ListBullet extends StObject
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.ListBullet")
 @js.native
-object ListBullet extends js.Object {
+object ListBullet extends StObject {
   
   @js.native
   sealed trait arrow extends ListBullet

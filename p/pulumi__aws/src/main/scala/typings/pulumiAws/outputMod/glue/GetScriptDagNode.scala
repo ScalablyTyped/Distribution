@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetScriptDagNode extends js.Object {
+trait GetScriptDagNode extends StObject {
   
   /**
     * Nested configuration an argument or property of a node. Defined below.
@@ -36,36 +37,24 @@ object GetScriptDagNode {
   }
   
   @scala.inline
-  implicit class GetScriptDagNodeOps[Self <: GetScriptDagNode] (val x: Self) extends AnyVal {
+  implicit class GetScriptDagNodeMutableBuilder[Self <: GetScriptDagNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[GetScriptDagNodeArg]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: GetScriptDagNodeArg*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: GetScriptDagNodeArg*): Self = this.set("args", js.Array(value :_*))
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[GetScriptDagNodeArg]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeType(value: String): Self = this.set("nodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
+    def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
   }
 }

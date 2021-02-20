@@ -1,11 +1,20 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.anon.HTMLAttributesidclassNameFixedContent
+import typings.reactOnsenui.anon.FixedContent
+import typings.reactOnsenui.anon.HTMLAttributesidclassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "PullHook")
 @js.native
-class PullHook ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNameFixedContent, js.Any, js.Any]
+class PullHook protected ()
+  extends Component[FixedContent, js.Any] {
+  def this(props: HTMLAttributesidclassName with FixedContent) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName with FixedContent, context: js.Any) = this()
+}

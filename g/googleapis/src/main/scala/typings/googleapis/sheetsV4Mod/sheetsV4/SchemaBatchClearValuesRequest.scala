@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for clearing more than one range of values in a spreadsheet.
   */
 @js.native
-trait SchemaBatchClearValuesRequest extends js.Object {
+trait SchemaBatchClearValuesRequest extends StObject {
   
   /**
     * The ranges to clear, in A1 notation.
@@ -24,27 +25,15 @@ object SchemaBatchClearValuesRequest {
   }
   
   @scala.inline
-  implicit class SchemaBatchClearValuesRequestOps[Self <: SchemaBatchClearValuesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchClearValuesRequestMutableBuilder[Self <: SchemaBatchClearValuesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRanges(value: js.Array[String]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRangesVarargs(value: String*): Self = this.set("ranges", js.Array(value :_*))
-    
-    @scala.inline
-    def setRanges(value: js.Array[String]): Self = this.set("ranges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
+    def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

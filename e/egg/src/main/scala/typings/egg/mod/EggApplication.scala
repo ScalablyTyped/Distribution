@@ -3,7 +3,6 @@ package typings.egg.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
 import typings.egg.anon.FnCall
-import typings.eggCookies.mod.^
 import typings.eggCore.mod.EggCoreBase
 import typings.eggCore.mod.EggCoreOptions
 import typings.eggLogger.mod.EggContextLogger
@@ -14,6 +13,7 @@ import typings.node.urlMod.URL_
 import typings.urllib.mod.Callback
 import typings.urllib.mod.HttpClientResponse
 import typings.urllib.mod.RequestOptions2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ class EggApplication () extends EggCoreBase[EggAppConfig] {
   /**
     * export context base classes, let framework can impl sub class and over context extend easily.
     */
-  var ContextCookies: Instantiable0[^] = js.native
+  var ContextCookies: Instantiable0[typings.eggCookies.mod.^] = js.native
   
   var ContextHttpClient: EggContextHttpClientConstructor = js.native
   

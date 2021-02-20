@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.KeyStroke
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,27 +61,15 @@ object XAccessibleKeyBinding {
   }
   
   @scala.inline
-  implicit class XAccessibleKeyBindingOps[Self <: XAccessibleKeyBinding] (val x: Self) extends AnyVal {
+  implicit class XAccessibleKeyBindingMutableBuilder[Self <: XAccessibleKeyBinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleKeyBindingCount(value: Double): Self = StObject.set(x, "AccessibleKeyBindingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAccessibleKeyBinding(value: Double => SafeArray[KeyStroke]): Self = StObject.set(x, "getAccessibleKeyBinding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessibleKeyBindingCount(value: Double): Self = this.set("AccessibleKeyBindingCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAccessibleKeyBinding(value: Double => SafeArray[KeyStroke]): Self = this.set("getAccessibleKeyBinding", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetAccessibleKeyBindingCount(value: () => Double): Self = this.set("getAccessibleKeyBindingCount", js.Any.fromFunction0(value))
+    def setGetAccessibleKeyBindingCount(value: () => Double): Self = StObject.set(x, "getAccessibleKeyBindingCount", js.Any.fromFunction0(value))
   }
 }

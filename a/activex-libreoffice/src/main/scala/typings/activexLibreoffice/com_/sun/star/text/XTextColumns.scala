@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,42 +78,30 @@ object XTextColumns {
   }
   
   @scala.inline
-  implicit class XTextColumnsOps[Self <: XTextColumns] (val x: Self) extends AnyVal {
+  implicit class XTextColumnsMutableBuilder[Self <: XTextColumns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumns(value: SafeArray[TextColumn]): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetColumnCount(value: () => Double): Self = StObject.set(x, "getColumnCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("ColumnCount", value.asInstanceOf[js.Any])
+    def setGetColumns(value: () => SafeArray[TextColumn]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumns(value: SafeArray[TextColumn]): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    def setGetReferenceValue(value: () => Double): Self = StObject.set(x, "getReferenceValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReferenceValue(value: Double): Self = this.set("ReferenceValue", value.asInstanceOf[js.Any])
+    def setReferenceValue(value: Double): Self = StObject.set(x, "ReferenceValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetColumnCount(value: () => Double): Self = this.set("getColumnCount", js.Any.fromFunction0(value))
+    def setSetColumnCount(value: Double => Unit): Self = StObject.set(x, "setColumnCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColumns(value: () => SafeArray[TextColumn]): Self = this.set("getColumns", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetReferenceValue(value: () => Double): Self = this.set("getReferenceValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetColumnCount(value: Double => Unit): Self = this.set("setColumnCount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetColumns(value: SeqEquiv[TextColumn] => Unit): Self = this.set("setColumns", js.Any.fromFunction1(value))
+    def setSetColumns(value: SeqEquiv[TextColumn] => Unit): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
   }
 }

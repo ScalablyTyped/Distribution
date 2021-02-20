@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,39 +57,27 @@ object ASPxClientRichEditFloatingObjectMovedEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientRichEditFloatingObjectMovedEventArgsOps[Self <: ASPxClientRichEditFloatingObjectMovedEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientRichEditFloatingObjectMovedEventArgsMutableBuilder[Self <: ASPxClientRichEditFloatingObjectMovedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewPosition(value: Double): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectX(value: Double): Self = StObject.set(x, "objectX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectY(value: Double): Self = StObject.set(x, "objectY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPosition(value: Double): Self = this.set("newPosition", value.asInstanceOf[js.Any])
+    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectX(value: Double): Self = this.set("objectX", value.asInstanceOf[js.Any])
+    def setPageIntervals(value: js.Array[Interval]): Self = StObject.set(x, "pageIntervals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectY(value: Double): Self = this.set("objectY", value.asInstanceOf[js.Any])
+    def setPageIntervalsVarargs(value: Interval*): Self = StObject.set(x, "pageIntervals", js.Array(value :_*))
     
     @scala.inline
-    def setPageIndex(value: Double): Self = this.set("pageIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageIntervalsVarargs(value: Interval*): Self = this.set("pageIntervals", js.Array(value :_*))
-    
-    @scala.inline
-    def setPageIntervals(value: js.Array[Interval]): Self = this.set("pageIntervals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubDocumentId(value: Double): Self = this.set("subDocumentId", value.asInstanceOf[js.Any])
+    def setSubDocumentId(value: Double): Self = StObject.set(x, "subDocumentId", value.asInstanceOf[js.Any])
   }
 }

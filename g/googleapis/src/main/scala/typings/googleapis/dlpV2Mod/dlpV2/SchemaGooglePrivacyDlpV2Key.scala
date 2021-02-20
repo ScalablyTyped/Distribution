@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * documented contexts.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2Key extends js.Object {
+trait SchemaGooglePrivacyDlpV2Key extends StObject {
   
   /**
     * Entities are partitioned into subsets, currently identified by a project
@@ -39,33 +40,21 @@ object SchemaGooglePrivacyDlpV2Key {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2KeyOps[Self <: SchemaGooglePrivacyDlpV2Key] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2KeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Key] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPartitionId(value: SchemaGooglePrivacyDlpV2PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: js.Array[SchemaGooglePrivacyDlpV2PathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionId(value: SchemaGooglePrivacyDlpV2PartitionId): Self = this.set("partitionId", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deletePartitionId: Self = this.set("partitionId", js.undefined)
-    
-    @scala.inline
-    def setPathVarargs(value: SchemaGooglePrivacyDlpV2PathElement*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[SchemaGooglePrivacyDlpV2PathElement]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathVarargs(value: SchemaGooglePrivacyDlpV2PathElement*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

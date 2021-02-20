@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserStackAssociationError extends js.Object {
+trait UserStackAssociationError extends StObject {
   
   /**
     * The error code for the error that is returned when a user can’t be associated with or disassociated from a stack.
@@ -31,36 +32,24 @@ object UserStackAssociationError {
   }
   
   @scala.inline
-  implicit class UserStackAssociationErrorOps[Self <: UserStackAssociationError] (val x: Self) extends AnyVal {
+  implicit class UserStackAssociationErrorMutableBuilder[Self <: UserStackAssociationError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: UserStackAssociationErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: UserStackAssociationErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setUserStackAssociation(value: UserStackAssociation): Self = StObject.set(x, "UserStackAssociation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
-    
-    @scala.inline
-    def setUserStackAssociation(value: UserStackAssociation): Self = this.set("UserStackAssociation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserStackAssociation: Self = this.set("UserStackAssociation", js.undefined)
+    def setUserStackAssociationUndefined: Self = StObject.set(x, "UserStackAssociation", js.undefined)
   }
 }

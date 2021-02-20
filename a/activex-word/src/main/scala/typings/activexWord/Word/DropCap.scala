@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropCap extends js.Object {
+trait DropCap extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -49,48 +50,36 @@ object DropCap {
   }
   
   @scala.inline
-  implicit class DropCapOps[Self <: DropCap] (val x: Self) extends AnyVal {
+  implicit class DropCapMutableBuilder[Self <: DropCap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDistanceFromText(value: Double): Self = StObject.set(x, "DistanceFromText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("Clear", js.Any.fromFunction0(value))
+    def setEnable(value: () => Unit): Self = StObject.set(x, "Enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceFromText(value: Double): Self = this.set("DistanceFromText", value.asInstanceOf[js.Any])
+    def setLinesToDrop(value: Double): Self = StObject.set(x, "LinesToDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("Enable", js.Any.fromFunction0(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontName(value: String): Self = this.set("FontName", value.asInstanceOf[js.Any])
+    def setPosition(value: WdDropPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesToDrop(value: Double): Self = this.set("LinesToDrop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: WdDropPosition): Self = this.set("Position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotDropCap_typekey(value: DropCap): Self = this.set("Word.DropCap_typekey", value.asInstanceOf[js.Any])
+    def setWordDotDropCap_typekey(value: DropCap): Self = StObject.set(x, "Word.DropCap_typekey", value.asInstanceOf[js.Any])
   }
 }

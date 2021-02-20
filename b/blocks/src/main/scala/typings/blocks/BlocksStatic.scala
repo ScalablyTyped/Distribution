@@ -3,12 +3,13 @@ package typings.blocks
 import typings.blocks.anon.Express
 import typings.blocks.anon.History
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlocksStatic extends js.Object {
+trait BlocksStatic extends StObject {
   
   def apply(obj: js.Any): js.Any = js.native
   

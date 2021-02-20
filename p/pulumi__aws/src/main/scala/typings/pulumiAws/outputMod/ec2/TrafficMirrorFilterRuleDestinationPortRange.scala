@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrafficMirrorFilterRuleDestinationPortRange extends js.Object {
+trait TrafficMirrorFilterRuleDestinationPortRange extends StObject {
   
   /**
     * Starting port of the range
@@ -26,30 +27,18 @@ object TrafficMirrorFilterRuleDestinationPortRange {
   }
   
   @scala.inline
-  implicit class TrafficMirrorFilterRuleDestinationPortRangeOps[Self <: TrafficMirrorFilterRuleDestinationPortRange] (val x: Self) extends AnyVal {
+  implicit class TrafficMirrorFilterRuleDestinationPortRangeMutableBuilder[Self <: TrafficMirrorFilterRuleDestinationPortRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromPort(value: Double): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromPortUndefined: Self = StObject.set(x, "fromPort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToPort(value: Double): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPort(value: Double): Self = this.set("fromPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromPort: Self = this.set("fromPort", js.undefined)
-    
-    @scala.inline
-    def setToPort(value: Double): Self = this.set("toPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToPort: Self = this.set("toPort", js.undefined)
+    def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
   }
 }

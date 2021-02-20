@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayName extends js.Object {
+trait DisplayName extends StObject {
   
   var displayName: js.UndefOr[String] = js.native
   
@@ -26,51 +27,39 @@ object DisplayName {
   }
   
   @scala.inline
-  implicit class DisplayNameOps[Self <: DisplayName] (val x: Self) extends AnyVal {
+  implicit class DisplayNameMutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setPermission(value: js.Array[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
     @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
+    def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionVarargs(value: String*): Self = this.set("permission", js.Array(value :_*))
+    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermission(value: js.Array[String]): Self = this.set("permission", value.asInstanceOf[js.Any])
+    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
     @scala.inline
-    def deletePermission: Self = this.set("permission", js.undefined)
+    def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionCode(value: Double): Self = this.set("versionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
-    
-    @scala.inline
-    def setVersionName(value: String): Self = this.set("versionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionName: Self = this.set("versionName", js.undefined)
+    def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
   }
 }

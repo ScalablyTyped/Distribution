@@ -2,6 +2,7 @@ package typings.twilioVideo.mod
 
 import typings.twilioVideo.twilioVideoNumbers.`53116`
 import typings.twilioVideo.twilioVideoStrings.`There are no media servers available in the MediaRegion`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

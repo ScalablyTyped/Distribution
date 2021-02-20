@@ -1,5 +1,6 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * datafeed computed asynchronously when the feed processing is finished.
   */
 @js.native
-trait SchemaDatafeedStatus extends js.Object {
+trait SchemaDatafeedStatus extends StObject {
   
   /**
     * The country for which the status is reported, represented as a  CLDR
@@ -72,84 +73,72 @@ object SchemaDatafeedStatus {
   }
   
   @scala.inline
-  implicit class SchemaDatafeedStatusOps[Self <: SchemaDatafeedStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaDatafeedStatusMutableBuilder[Self <: SchemaDatafeedStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatafeedId(value: String): Self = StObject.set(x, "datafeedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setDatafeedIdUndefined: Self = StObject.set(x, "datafeedId", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setErrors(value: js.Array[SchemaDatafeedStatusError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatafeedId(value: String): Self = this.set("datafeedId", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteDatafeedId: Self = this.set("datafeedId", js.undefined)
+    def setErrorsVarargs(value: SchemaDatafeedStatusError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: SchemaDatafeedStatusError*): Self = this.set("errors", js.Array(value :_*))
+    def setItemsTotal(value: String): Self = StObject.set(x, "itemsTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[SchemaDatafeedStatusError]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setItemsTotalUndefined: Self = StObject.set(x, "itemsTotal", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setItemsValid(value: String): Self = StObject.set(x, "itemsValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsTotal(value: String): Self = this.set("itemsTotal", value.asInstanceOf[js.Any])
+    def setItemsValidUndefined: Self = StObject.set(x, "itemsValid", js.undefined)
     
     @scala.inline
-    def deleteItemsTotal: Self = this.set("itemsTotal", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsValid(value: String): Self = this.set("itemsValid", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteItemsValid: Self = this.set("itemsValid", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLastUploadDate(value: String): Self = StObject.set(x, "lastUploadDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLastUploadDateUndefined: Self = StObject.set(x, "lastUploadDate", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setProcessingStatus(value: String): Self = StObject.set(x, "processingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUploadDate(value: String): Self = this.set("lastUploadDate", value.asInstanceOf[js.Any])
+    def setProcessingStatusUndefined: Self = StObject.set(x, "processingStatus", js.undefined)
     
     @scala.inline
-    def deleteLastUploadDate: Self = this.set("lastUploadDate", js.undefined)
+    def setWarnings(value: js.Array[SchemaDatafeedStatusError]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingStatus(value: String): Self = this.set("processingStatus", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
     @scala.inline
-    def deleteProcessingStatus: Self = this.set("processingStatus", js.undefined)
-    
-    @scala.inline
-    def setWarningsVarargs(value: SchemaDatafeedStatusError*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: js.Array[SchemaDatafeedStatusError]): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsVarargs(value: SchemaDatafeedStatusError*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

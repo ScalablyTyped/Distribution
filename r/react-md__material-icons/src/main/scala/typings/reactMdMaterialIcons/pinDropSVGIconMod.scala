@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/PinDropSVGIcon", JSImport.Namespace)
-@js.native
-object pinDropSVGIconMod extends js.Object {
+object pinDropSVGIconMod {
   
+  @JSImport("@react-md/material-icons/types/PinDropSVGIcon", "PinDropSVGIcon")
+  @js.native
   val PinDropSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
 }

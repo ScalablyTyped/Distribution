@@ -1,5 +1,6 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleVisualization.googleVisualizationStrings.center
   - typings.googleVisualization.googleVisualizationStrings.end
 */
-trait ChartLegendAlignment extends js.Object
+trait ChartLegendAlignment extends StObject
 object ChartLegendAlignment {
   
   @scala.inline

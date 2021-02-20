@@ -1,11 +1,12 @@
 package typings.wicgFileSystemAccess.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChooseFileSystemEntriesFileOptions extends js.Object {
+trait ChooseFileSystemEntriesFileOptions extends StObject {
   
   var accepts: js.UndefOr[js.Array[ChooseFileSystemEntriesOptionsAccepts]] = js.native
   
@@ -20,33 +21,21 @@ object ChooseFileSystemEntriesFileOptions {
   }
   
   @scala.inline
-  implicit class ChooseFileSystemEntriesFileOptionsOps[Self <: ChooseFileSystemEntriesFileOptions] (val x: Self) extends AnyVal {
+  implicit class ChooseFileSystemEntriesFileOptionsMutableBuilder[Self <: ChooseFileSystemEntriesFileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccepts(value: js.Array[ChooseFileSystemEntriesOptionsAccepts]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptsVarargs(value: ChooseFileSystemEntriesOptionsAccepts*): Self = StObject.set(x, "accepts", js.Array(value :_*))
     
     @scala.inline
-    def setAcceptsVarargs(value: ChooseFileSystemEntriesOptionsAccepts*): Self = this.set("accepts", js.Array(value :_*))
+    def setExcludeAcceptAllOption(value: Boolean): Self = StObject.set(x, "excludeAcceptAllOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccepts(value: js.Array[ChooseFileSystemEntriesOptionsAccepts]): Self = this.set("accepts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccepts: Self = this.set("accepts", js.undefined)
-    
-    @scala.inline
-    def setExcludeAcceptAllOption(value: Boolean): Self = this.set("excludeAcceptAllOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludeAcceptAllOption: Self = this.set("excludeAcceptAllOption", js.undefined)
+    def setExcludeAcceptAllOptionUndefined: Self = StObject.set(x, "excludeAcceptAllOption", js.undefined)
   }
 }

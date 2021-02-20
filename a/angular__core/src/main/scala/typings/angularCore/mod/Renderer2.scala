@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.angularCoreStrings.body
 import typings.angularCore.angularCoreStrings.document
 import typings.angularCore.angularCoreStrings.window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "Renderer2")
 @js.native
-abstract class Renderer2 () extends js.Object {
+abstract class Renderer2 () extends StObject {
   
   /**
     * Implement this callback to add a class to an element in the DOM.

@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConfigurableMapModule extends js.Object {
+trait IConfigurableMapModule extends StObject {
   
   /** Name of the module to load. Supported values: "Microsoft.Maps.GeoXml", "Microsoft.Maps.GeoJson". */
   var moduleName: String = js.native
@@ -22,27 +23,15 @@ object IConfigurableMapModule {
   }
   
   @scala.inline
-  implicit class IConfigurableMapModuleOps[Self <: IConfigurableMapModule] (val x: Self) extends AnyVal {
+  implicit class IConfigurableMapModuleMutableBuilder[Self <: IConfigurableMapModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModuleOptions(value: PostModuleAction | js.Array[PostModuleAction]): Self = StObject.set(x, "moduleOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModuleName(value: String): Self = this.set("moduleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModuleOptionsVarargs(value: PostModuleAction*): Self = this.set("moduleOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setModuleOptions(value: PostModuleAction | js.Array[PostModuleAction]): Self = this.set("moduleOptions", value.asInstanceOf[js.Any])
+    def setModuleOptionsVarargs(value: PostModuleAction*): Self = StObject.set(x, "moduleOptions", js.Array(value :_*))
   }
 }

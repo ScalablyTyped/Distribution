@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditorContribution extends js.Object {
+trait IEditorContribution extends StObject {
   
   /**
     * Dispose this contribution.
@@ -31,33 +32,21 @@ object IEditorContribution {
   }
   
   @scala.inline
-  implicit class IEditorContributionOps[Self <: IEditorContribution] (val x: Self) extends AnyVal {
+  implicit class IEditorContributionMutableBuilder[Self <: IEditorContribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRestoreViewState(value: /* state */ js.Any => Unit): Self = StObject.set(x, "restoreViewState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRestoreViewStateUndefined: Self = StObject.set(x, "restoreViewState", js.undefined)
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setSaveViewState(value: () => _): Self = StObject.set(x, "saveViewState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRestoreViewState(value: /* state */ js.Any => Unit): Self = this.set("restoreViewState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRestoreViewState: Self = this.set("restoreViewState", js.undefined)
-    
-    @scala.inline
-    def setSaveViewState(value: () => _): Self = this.set("saveViewState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSaveViewState: Self = this.set("saveViewState", js.undefined)
+    def setSaveViewStateUndefined: Self = StObject.set(x, "saveViewState", js.undefined)
   }
 }

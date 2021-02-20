@@ -1,13 +1,13 @@
 package typings.awsSdkClientKinesisBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/model/_EnhancedMonitoringList", JSImport.Namespace)
-@js.native
-object enhancedMonitoringListMod extends js.Object {
+object enhancedMonitoringListMod {
   
-  @JSName("_EnhancedMonitoringList")
+  @JSImport("@aws-sdk/client-kinesis-browser/model/_EnhancedMonitoringList", "_EnhancedMonitoringList")
+  @js.native
   val EnhancedMonitoringList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClusterLayerOptions extends js.Object {
+trait IClusterLayerOptions extends StObject {
   
   /**
     * A callback function that is fired after the clustering for a map view has completed. This is useful if you want to generate a list of locations based on what is in the current view.
@@ -58,66 +59,54 @@ object IClusterLayerOptions {
   }
   
   @scala.inline
-  implicit class IClusterLayerOptionsOps[Self <: IClusterLayerOptions] (val x: Self) extends AnyVal {
+  implicit class IClusterLayerOptionsMutableBuilder[Self <: IClusterLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterPlacementType(value: ClusterPlacementType): Self = StObject.set(x, "clusterPlacementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: () => Unit): Self = this.set("callback", js.Any.fromFunction0(value))
+    def setClusterPlacementTypeUndefined: Self = StObject.set(x, "clusterPlacementType", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setClusteredPinCallback(value: /* pin */ ClusterPushpin => Unit): Self = StObject.set(x, "clusteredPinCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClusterPlacementType(value: ClusterPlacementType): Self = this.set("clusterPlacementType", value.asInstanceOf[js.Any])
+    def setClusteredPinCallbackUndefined: Self = StObject.set(x, "clusteredPinCallback", js.undefined)
     
     @scala.inline
-    def deleteClusterPlacementType: Self = this.set("clusterPlacementType", js.undefined)
+    def setClusteringEnabled(value: Boolean): Self = StObject.set(x, "clusteringEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusteredPinCallback(value: /* pin */ ClusterPushpin => Unit): Self = this.set("clusteredPinCallback", js.Any.fromFunction1(value))
+    def setClusteringEnabledUndefined: Self = StObject.set(x, "clusteringEnabled", js.undefined)
     
     @scala.inline
-    def deleteClusteredPinCallback: Self = this.set("clusteredPinCallback", js.undefined)
+    def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusteringEnabled(value: Boolean): Self = this.set("clusteringEnabled", value.asInstanceOf[js.Any])
+    def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
     
     @scala.inline
-    def deleteClusteringEnabled: Self = this.set("clusteringEnabled", js.undefined)
+    def setLayerOffset(value: Point): Self = StObject.set(x, "layerOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridSize(value: Double): Self = this.set("gridSize", value.asInstanceOf[js.Any])
+    def setLayerOffsetUndefined: Self = StObject.set(x, "layerOffset", js.undefined)
     
     @scala.inline
-    def deleteGridSize: Self = this.set("gridSize", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerOffset(value: Point): Self = this.set("layerOffset", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteLayerOffset: Self = this.set("layerOffset", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

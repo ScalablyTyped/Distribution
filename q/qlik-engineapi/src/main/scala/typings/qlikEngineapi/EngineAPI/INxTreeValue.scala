@@ -1,11 +1,12 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INxTreeValue extends js.Object {
+trait INxTreeValue extends StObject {
   
   /**
     * Attribute dimension values.
@@ -37,36 +38,24 @@ object INxTreeValue {
   }
   
   @scala.inline
-  implicit class INxTreeValueOps[Self <: INxTreeValue] (val x: Self) extends AnyVal {
+  implicit class INxTreeValueMutableBuilder[Self <: INxTreeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAttrDimsUndefined: Self = StObject.set(x, "qAttrDims", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQText(value: String): Self = this.set("qText", value.asInstanceOf[js.Any])
+    def setQAttrExpsUndefined: Self = StObject.set(x, "qAttrExps", js.undefined)
     
     @scala.inline
-    def setQValue(value: Double): Self = this.set("qValue", value.asInstanceOf[js.Any])
+    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttrDims(value: INxAttributeDimValues): Self = this.set("qAttrDims", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQAttrDims: Self = this.set("qAttrDims", js.undefined)
-    
-    @scala.inline
-    def setQAttrExps(value: INxAttributeExpressionValues): Self = this.set("qAttrExps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQAttrExps: Self = this.set("qAttrExps", js.undefined)
+    def setQValue(value: Double): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

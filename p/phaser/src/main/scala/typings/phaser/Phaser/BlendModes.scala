@@ -1,17 +1,18 @@
 package typings.phaser.Phaser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BlendModes extends js.Object
+sealed trait BlendModes extends StObject
 /**
   * Phaser Blend Modes.
   */
 @JSGlobal("Phaser.BlendModes")
 @js.native
-object BlendModes extends js.Object {
+object BlendModes extends StObject {
   
   /**
     * Add blend mode. For Canvas and WebGL.

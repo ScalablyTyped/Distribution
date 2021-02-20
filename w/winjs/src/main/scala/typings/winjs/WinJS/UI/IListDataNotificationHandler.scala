@@ -1,6 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.winjs.WinJS.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Notifies clients when an IListDataAdapter object's data changes.
   **/
 @js.native
-trait IListDataNotificationHandler[T] extends js.Object {
+trait IListDataNotificationHandler[T] extends StObject {
   
   //#region Methods
   /**

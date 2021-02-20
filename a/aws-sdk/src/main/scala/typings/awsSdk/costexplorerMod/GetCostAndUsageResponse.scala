@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCostAndUsageResponse extends js.Object {
+trait GetCostAndUsageResponse extends StObject {
   
   /**
     * The groups that are specified by the Filter or GroupBy parameters in the request.
@@ -31,42 +32,30 @@ object GetCostAndUsageResponse {
   }
   
   @scala.inline
-  implicit class GetCostAndUsageResponseOps[Self <: GetCostAndUsageResponse] (val x: Self) extends AnyVal {
+  implicit class GetCostAndUsageResponseMutableBuilder[Self <: GetCostAndUsageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupDefinitions(value: GroupDefinitions): Self = StObject.set(x, "GroupDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupDefinitionsUndefined: Self = StObject.set(x, "GroupDefinitions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupDefinitionsVarargs(value: GroupDefinition*): Self = StObject.set(x, "GroupDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setGroupDefinitionsVarargs(value: GroupDefinition*): Self = this.set("GroupDefinitions", js.Array(value :_*))
+    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupDefinitions(value: GroupDefinitions): Self = this.set("GroupDefinitions", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def deleteGroupDefinitions: Self = this.set("GroupDefinitions", js.undefined)
+    def setResultsByTime(value: ResultsByTime): Self = StObject.set(x, "ResultsByTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    def setResultsByTimeUndefined: Self = StObject.set(x, "ResultsByTime", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
-    
-    @scala.inline
-    def setResultsByTimeVarargs(value: ResultByTime*): Self = this.set("ResultsByTime", js.Array(value :_*))
-    
-    @scala.inline
-    def setResultsByTime(value: ResultsByTime): Self = this.set("ResultsByTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultsByTime: Self = this.set("ResultsByTime", js.undefined)
+    def setResultsByTimeVarargs(value: ResultByTime*): Self = StObject.set(x, "ResultsByTime", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetWifiList extends js.Object {
+trait SetWifiList extends StObject {
   
   /** Wi-Fi 设备bssid */
   var BSSID: String = js.native
@@ -25,27 +26,15 @@ object SetWifiList {
   }
   
   @scala.inline
-  implicit class SetWifiListOps[Self <: SetWifiList] (val x: Self) extends AnyVal {
+  implicit class SetWifiListMutableBuilder[Self <: SetWifiList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBSSID(value: String): Self = this.set("BSSID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSSID(value: String): Self = this.set("SSID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
   }
 }

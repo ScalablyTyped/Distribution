@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,24 +69,12 @@ object TextField_ {
   }
   
   @scala.inline
-  implicit class TextField_Ops[Self <: TextField_] (val x: Self) extends AnyVal {
+  implicit class TextField_MutableBuilder[Self <: TextField_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsFieldDisplayed(value: Boolean): Self = StObject.set(x, "IsFieldDisplayed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsFieldDisplayed(value: Boolean): Self = this.set("IsFieldDisplayed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFieldUsed(value: Boolean): Self = this.set("IsFieldUsed", value.asInstanceOf[js.Any])
+    def setIsFieldUsed(value: Boolean): Self = StObject.set(x, "IsFieldUsed", value.asInstanceOf[js.Any])
   }
 }

@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientServicenetworking.anon.Key
 import typings.maximMazurokGapiClientServicenetworking.anon.Oauthtoken
 import typings.maximMazurokGapiClientServicenetworking.anon.Parent
 import typings.maximMazurokGapiClientServicenetworking.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DnsRecordSetsResource extends js.Object {
+trait DnsRecordSetsResource extends StObject {
   
   def add(request: Key, body: AddDnsRecordSetRequest): Request[Operation] = js.native
   /** Service producers can use this method to add DNS record sets to private DNS zones in the shared producer host project. */

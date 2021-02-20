@@ -7,12 +7,13 @@ import typings.mapboxGl.mapboxGlStrings.image_
 import typings.mapboxGl.mapboxGlStrings.raster
 import typings.mapboxGl.mapboxGlStrings.vector
 import typings.mapboxGl.mapboxGlStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Source extends js.Object {
+trait Source extends StObject {
   
   var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas = js.native
 }
@@ -26,21 +27,9 @@ object Source {
   }
   
   @scala.inline
-  implicit class SourceOps[Self <: Source] (val x: Self) extends AnyVal {
+  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: vector | raster | `raster-dem` | geojson | image_ | video | canvas): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: vector | raster | `raster-dem` | geojson | image_ | video | canvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

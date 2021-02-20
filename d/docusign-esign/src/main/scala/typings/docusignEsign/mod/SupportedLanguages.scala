@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SupportedLanguages extends js.Object {
+trait SupportedLanguages extends StObject {
   
   /**
     * A list of languages that you can use for a recipient's language setting. These are the languages that you can set for the standard email format
@@ -51,33 +52,21 @@ object SupportedLanguages {
   }
   
   @scala.inline
-  implicit class SupportedLanguagesOps[Self <: SupportedLanguages] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLanguagesVarargs(
-      value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = this.set("languages", js.Array(value :_*))
+  implicit class SupportedLanguagesMutableBuilder[Self <: SupportedLanguages] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setLanguages(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
-    ): Self = this.set("languages", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguages: Self = this.set("languages", js.undefined)
+    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    
+    @scala.inline
+    def setLanguagesVarargs(
+      value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
+    ): Self = StObject.set(x, "languages", js.Array(value :_*))
   }
 }

@@ -3,20 +3,18 @@ package typings.angularHttpAuth
 import typings.angular.mod.IRequestConfig
 import typings.angular.mod.global.Function
 import typings.angularHttpAuth.anon.Reject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("angular", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object httpAuth extends js.Object {
+  object httpAuth {
     
     @js.native
-    trait IAuthService extends js.Object {
+    trait IAuthService extends StObject {
       
       def loginCancelled(): Unit = js.native
       def loginCancelled(data: js.UndefOr[scala.Nothing], reason: js.Any): Unit = js.native
@@ -30,7 +28,7 @@ object mod extends js.Object {
     }
     
     @js.native
-    trait IHttpBuffer extends js.Object {
+    trait IHttpBuffer extends StObject {
       
       def append(config: IRequestConfig, deferred: Reject): Unit = js.native
       

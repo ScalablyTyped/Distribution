@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiStep extends js.Object {
+trait MultiStep extends StObject {
   
   /** Unique int given to each step. Ranges from 0(inclusive) to total number of steps(exclusive). The primary step is 0. */
   var multistepNumber: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object MultiStep {
   }
   
   @scala.inline
-  implicit class MultiStepOps[Self <: MultiStep] (val x: Self) extends AnyVal {
+  implicit class MultiStepMutableBuilder[Self <: MultiStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultistepNumber(value: Double): Self = StObject.set(x, "multistepNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultistepNumberUndefined: Self = StObject.set(x, "multistepNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimaryStep(value: PrimaryStep): Self = StObject.set(x, "primaryStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultistepNumber(value: Double): Self = this.set("multistepNumber", value.asInstanceOf[js.Any])
+    def setPrimaryStepId(value: String): Self = StObject.set(x, "primaryStepId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultistepNumber: Self = this.set("multistepNumber", js.undefined)
+    def setPrimaryStepIdUndefined: Self = StObject.set(x, "primaryStepId", js.undefined)
     
     @scala.inline
-    def setPrimaryStep(value: PrimaryStep): Self = this.set("primaryStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryStep: Self = this.set("primaryStep", js.undefined)
-    
-    @scala.inline
-    def setPrimaryStepId(value: String): Self = this.set("primaryStepId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryStepId: Self = this.set("primaryStepId", js.undefined)
+    def setPrimaryStepUndefined: Self = StObject.set(x, "primaryStep", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/data
   */
 @js.native
-trait EdgeSingularData extends js.Object {
+trait EdgeSingularData extends StObject {
   
   /**
     * Get whether the edge is a loop (i.e. source same as target).
@@ -31,24 +32,12 @@ object EdgeSingularData {
   }
   
   @scala.inline
-  implicit class EdgeSingularDataOps[Self <: EdgeSingularData] (val x: Self) extends AnyVal {
+  implicit class EdgeSingularDataMutableBuilder[Self <: EdgeSingularData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsLoop(value: () => Boolean): Self = StObject.set(x, "isLoop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsLoop(value: () => Boolean): Self = this.set("isLoop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsSimple(value: () => Boolean): Self = this.set("isSimple", js.Any.fromFunction0(value))
+    def setIsSimple(value: () => Boolean): Self = StObject.set(x, "isSimple", js.Any.fromFunction0(value))
   }
 }

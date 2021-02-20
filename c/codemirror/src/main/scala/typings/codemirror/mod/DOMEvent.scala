@@ -1,5 +1,6 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.codemirror.codemirrorStrings.dragleave
   - typings.codemirror.codemirrorStrings.drop
 */
-trait DOMEvent extends js.Object
+trait DOMEvent extends StObject
 object DOMEvent {
   
   @scala.inline

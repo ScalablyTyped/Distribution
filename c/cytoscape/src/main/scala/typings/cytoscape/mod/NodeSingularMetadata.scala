@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/metadata
   */
 @js.native
-trait NodeSingularMetadata extends js.Object {
+trait NodeSingularMetadata extends StObject {
   
   /**
     * Get the degree of a node.
@@ -37,27 +38,15 @@ object NodeSingularMetadata {
   }
   
   @scala.inline
-  implicit class NodeSingularMetadataOps[Self <: NodeSingularMetadata] (val x: Self) extends AnyVal {
+  implicit class NodeSingularMetadataMutableBuilder[Self <: NodeSingularMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDegree(value: Boolean => Double): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndegree(value: Boolean => Double): Self = StObject.set(x, "indegree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDegree(value: Boolean => Double): Self = this.set("degree", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIndegree(value: Boolean => Double): Self = this.set("indegree", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOutdegree(value: Boolean => Double): Self = this.set("outdegree", js.Any.fromFunction1(value))
+    def setOutdegree(value: Boolean => Double): Self = StObject.set(x, "outdegree", js.Any.fromFunction1(value))
   }
 }

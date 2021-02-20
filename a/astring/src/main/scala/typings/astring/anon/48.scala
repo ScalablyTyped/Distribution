@@ -1,12 +1,13 @@
 package typings.astring.anon
 
 import typings.astring.astringStrings.Literal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `48` extends js.Object {
+trait `48` extends StObject {
   
   var `type`: Literal = js.native
 }
@@ -20,21 +21,9 @@ object `48` {
   }
   
   @scala.inline
-  implicit class `48Ops`[Self <: `48`] (val x: Self) extends AnyVal {
+  implicit class `48MutableBuilder`[Self <: `48`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: Literal): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Literal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

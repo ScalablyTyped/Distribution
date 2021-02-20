@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stack extends js.Object {
+trait Stack extends StObject {
   
   /**
     * The list of virtual private cloud (VPC) interface endpoint objects. Users of the stack can connect to AppStream 2.0 only through the specified endpoints. 
@@ -81,108 +82,96 @@ object Stack {
   }
   
   @scala.inline
-  implicit class StackOps[Self <: Stack] (val x: Self) extends AnyVal {
+  implicit class StackMutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessEndpoints(value: AccessEndpointList): Self = StObject.set(x, "AccessEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessEndpointsUndefined: Self = StObject.set(x, "AccessEndpoints", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setApplicationSettings(value: ApplicationSettingsResponse): Self = StObject.set(x, "ApplicationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = this.set("AccessEndpoints", js.Array(value :_*))
+    def setApplicationSettingsUndefined: Self = StObject.set(x, "ApplicationSettings", js.undefined)
     
     @scala.inline
-    def setAccessEndpoints(value: AccessEndpointList): Self = this.set("AccessEndpoints", value.asInstanceOf[js.Any])
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessEndpoints: Self = this.set("AccessEndpoints", js.undefined)
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def setApplicationSettings(value: ApplicationSettingsResponse): Self = this.set("ApplicationSettings", value.asInstanceOf[js.Any])
+    def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationSettings: Self = this.set("ApplicationSettings", js.undefined)
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCreatedTime(value: Timestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEmbedHostDomains(value: EmbedHostDomains): Self = StObject.set(x, "EmbedHostDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEmbedHostDomainsUndefined: Self = StObject.set(x, "EmbedHostDomains", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = StObject.set(x, "EmbedHostDomains", js.Array(value :_*))
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setFeedbackURL(value: FeedbackURL): Self = StObject.set(x, "FeedbackURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedHostDomainsVarargs(value: EmbedHostDomain*): Self = this.set("EmbedHostDomains", js.Array(value :_*))
+    def setFeedbackURLUndefined: Self = StObject.set(x, "FeedbackURL", js.undefined)
     
     @scala.inline
-    def setEmbedHostDomains(value: EmbedHostDomains): Self = this.set("EmbedHostDomains", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmbedHostDomains: Self = this.set("EmbedHostDomains", js.undefined)
+    def setRedirectURL(value: RedirectURL): Self = StObject.set(x, "RedirectURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedbackURL(value: FeedbackURL): Self = this.set("FeedbackURL", value.asInstanceOf[js.Any])
+    def setRedirectURLUndefined: Self = StObject.set(x, "RedirectURL", js.undefined)
     
     @scala.inline
-    def deleteFeedbackURL: Self = this.set("FeedbackURL", js.undefined)
+    def setStackErrors(value: StackErrors): Self = StObject.set(x, "StackErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectURL(value: RedirectURL): Self = this.set("RedirectURL", value.asInstanceOf[js.Any])
+    def setStackErrorsUndefined: Self = StObject.set(x, "StackErrors", js.undefined)
     
     @scala.inline
-    def deleteRedirectURL: Self = this.set("RedirectURL", js.undefined)
+    def setStackErrorsVarargs(value: StackError*): Self = StObject.set(x, "StackErrors", js.Array(value :_*))
     
     @scala.inline
-    def setStackErrorsVarargs(value: StackError*): Self = this.set("StackErrors", js.Array(value :_*))
+    def setStorageConnectors(value: StorageConnectorList): Self = StObject.set(x, "StorageConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackErrors(value: StackErrors): Self = this.set("StackErrors", value.asInstanceOf[js.Any])
+    def setStorageConnectorsUndefined: Self = StObject.set(x, "StorageConnectors", js.undefined)
     
     @scala.inline
-    def deleteStackErrors: Self = this.set("StackErrors", js.undefined)
+    def setStorageConnectorsVarargs(value: StorageConnector*): Self = StObject.set(x, "StorageConnectors", js.Array(value :_*))
     
     @scala.inline
-    def setStorageConnectorsVarargs(value: StorageConnector*): Self = this.set("StorageConnectors", js.Array(value :_*))
+    def setUserSettings(value: UserSettingList): Self = StObject.set(x, "UserSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageConnectors(value: StorageConnectorList): Self = this.set("StorageConnectors", value.asInstanceOf[js.Any])
+    def setUserSettingsUndefined: Self = StObject.set(x, "UserSettings", js.undefined)
     
     @scala.inline
-    def deleteStorageConnectors: Self = this.set("StorageConnectors", js.undefined)
-    
-    @scala.inline
-    def setUserSettingsVarargs(value: UserSetting*): Self = this.set("UserSettings", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserSettings(value: UserSettingList): Self = this.set("UserSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSettings: Self = this.set("UserSettings", js.undefined)
+    def setUserSettingsVarargs(value: UserSetting*): Self = StObject.set(x, "UserSettings", js.Array(value :_*))
   }
 }

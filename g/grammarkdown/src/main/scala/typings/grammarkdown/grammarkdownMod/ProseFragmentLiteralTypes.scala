@@ -4,13 +4,14 @@ import typings.grammarkdown.grammarkdownNumbers.`49`
 import typings.grammarkdown.grammarkdownNumbers.`50`
 import typings.grammarkdown.grammarkdownNumbers.`51`
 import typings.grammarkdown.grammarkdownNumbers.`52`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ P in grammarkdown.grammarkdown/dist/grammarkdown.ProseFragmentLiteralKind ]: grammarkdown.grammarkdown/dist/grammarkdown.ProseFragmentLiteral<P>} */
 @js.native
-trait ProseFragmentLiteralTypes extends js.Object {
+trait ProseFragmentLiteralTypes extends StObject {
   
   var `49`: ProseFragmentLiteral[typings.grammarkdown.grammarkdownNumbers.`49`] = js.native
   
@@ -38,30 +39,18 @@ object ProseFragmentLiteralTypes {
   }
   
   @scala.inline
-  implicit class ProseFragmentLiteralTypesOps[Self <: ProseFragmentLiteralTypes] (val x: Self) extends AnyVal {
+  implicit class ProseFragmentLiteralTypesMutableBuilder[Self <: ProseFragmentLiteralTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set49(value: ProseFragmentLiteral[`49`]): Self = StObject.set(x, "49", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set50(value: ProseFragmentLiteral[`50`]): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set51(value: ProseFragmentLiteral[`51`]): Self = StObject.set(x, "51", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set49(value: ProseFragmentLiteral[`49`]): Self = this.set("49", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set50(value: ProseFragmentLiteral[`50`]): Self = this.set("50", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set51(value: ProseFragmentLiteral[`51`]): Self = this.set("51", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set52(value: ProseFragmentLiteral[`52`]): Self = this.set("52", value.asInstanceOf[js.Any])
+    def set52(value: ProseFragmentLiteral[`52`]): Self = StObject.set(x, "52", value.asInstanceOf[js.Any])
   }
 }

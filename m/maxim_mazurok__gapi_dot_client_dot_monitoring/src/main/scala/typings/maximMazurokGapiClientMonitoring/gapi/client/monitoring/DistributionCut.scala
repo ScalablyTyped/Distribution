@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionCut extends js.Object {
+trait DistributionCut extends StObject {
   
   /**
     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters) specifying a TimeSeries aggregating values. Must have ValueType = DISTRIBUTION and MetricKind = DELTA or
@@ -25,30 +26,18 @@ object DistributionCut {
   }
   
   @scala.inline
-  implicit class DistributionCutOps[Self <: DistributionCut] (val x: Self) extends AnyVal {
+  implicit class DistributionCutMutableBuilder[Self <: DistributionCut] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistributionFilter(value: String): Self = StObject.set(x, "distributionFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistributionFilterUndefined: Self = StObject.set(x, "distributionFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: GoogleMonitoringV3Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionFilter(value: String): Self = this.set("distributionFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistributionFilter: Self = this.set("distributionFilter", js.undefined)
-    
-    @scala.inline
-    def setRange(value: GoogleMonitoringV3Range): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

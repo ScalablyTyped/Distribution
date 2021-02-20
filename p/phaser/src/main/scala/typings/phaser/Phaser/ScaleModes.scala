@@ -1,17 +1,18 @@
 package typings.phaser.Phaser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ScaleModes extends js.Object
+sealed trait ScaleModes extends StObject
 /**
   * Phaser Scale Modes.
   */
 @JSGlobal("Phaser.ScaleModes")
 @js.native
-object ScaleModes extends js.Object {
+object ScaleModes extends StObject {
   
   /**
     * Default Scale Mode (Linear).

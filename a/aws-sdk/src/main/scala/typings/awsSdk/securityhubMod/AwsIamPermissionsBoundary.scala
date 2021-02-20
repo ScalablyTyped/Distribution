@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsIamPermissionsBoundary extends js.Object {
+trait AwsIamPermissionsBoundary extends StObject {
   
   /**
     * The ARN of the policy used to set the permissions boundary.
@@ -26,30 +27,18 @@ object AwsIamPermissionsBoundary {
   }
   
   @scala.inline
-  implicit class AwsIamPermissionsBoundaryOps[Self <: AwsIamPermissionsBoundary] (val x: Self) extends AnyVal {
+  implicit class AwsIamPermissionsBoundaryMutableBuilder[Self <: AwsIamPermissionsBoundary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermissionsBoundaryArn(value: NonEmptyString): Self = StObject.set(x, "PermissionsBoundaryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissionsBoundaryArnUndefined: Self = StObject.set(x, "PermissionsBoundaryArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermissionsBoundaryType(value: NonEmptyString): Self = StObject.set(x, "PermissionsBoundaryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionsBoundaryArn(value: NonEmptyString): Self = this.set("PermissionsBoundaryArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissionsBoundaryArn: Self = this.set("PermissionsBoundaryArn", js.undefined)
-    
-    @scala.inline
-    def setPermissionsBoundaryType(value: NonEmptyString): Self = this.set("PermissionsBoundaryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissionsBoundaryType: Self = this.set("PermissionsBoundaryType", js.undefined)
+    def setPermissionsBoundaryTypeUndefined: Self = StObject.set(x, "PermissionsBoundaryType", js.undefined)
   }
 }

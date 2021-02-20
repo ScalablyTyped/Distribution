@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptionOptions extends js.Object {
+trait EncryptionOptions extends StObject {
   
   var encryptionOptions: js.UndefOr[CertPath] = js.native
 }
@@ -18,24 +19,12 @@ object EncryptionOptions {
   }
   
   @scala.inline
-  implicit class EncryptionOptionsOps[Self <: EncryptionOptions] (val x: Self) extends AnyVal {
+  implicit class EncryptionOptionsMutableBuilder[Self <: EncryptionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionOptions(value: CertPath): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEncryptionOptions(value: CertPath): Self = this.set("encryptionOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionOptions: Self = this.set("encryptionOptions", js.undefined)
+    def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
   }
 }

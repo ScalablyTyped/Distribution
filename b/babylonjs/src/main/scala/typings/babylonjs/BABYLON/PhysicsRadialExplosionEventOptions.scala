@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.DiameterSegments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhysicsRadialExplosionEventOptions extends js.Object {
+trait PhysicsRadialExplosionEventOptions extends StObject {
   
   /**
     * Sphere options for the radial explosion.
@@ -48,33 +49,21 @@ object PhysicsRadialExplosionEventOptions {
   }
   
   @scala.inline
-  implicit class PhysicsRadialExplosionEventOptionsOps[Self <: PhysicsRadialExplosionEventOptions] (val x: Self) extends AnyVal {
+  implicit class PhysicsRadialExplosionEventOptionsMutableBuilder[Self <: PhysicsRadialExplosionEventOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffectedImpostorsCallback(value: js.Array[PhysicsAffectedImpostorWithData] => Unit): Self = StObject.set(x, "affectedImpostorsCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFalloff(value: PhysicsRadialImpulseFalloff): Self = StObject.set(x, "falloff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffectedImpostorsCallback(value: js.Array[PhysicsAffectedImpostorWithData] => Unit): Self = this.set("affectedImpostorsCallback", js.Any.fromFunction1(value))
+    def setSphere(value: DiameterSegments): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFalloff(value: PhysicsRadialImpulseFalloff): Self = this.set("falloff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSphere(value: DiameterSegments): Self = this.set("sphere", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrength(value: Double): Self = this.set("strength", value.asInstanceOf[js.Any])
+    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
   }
 }

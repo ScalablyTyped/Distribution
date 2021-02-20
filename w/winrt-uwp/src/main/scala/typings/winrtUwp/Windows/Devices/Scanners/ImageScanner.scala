@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import typings.winrtUwp.Windows.Storage.StorageFolder
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the properties of images to scan. */
 @js.native
-trait ImageScanner extends js.Object {
+trait ImageScanner extends StObject {
   
   /** Gets and sets the scan settings of the auto-configured scan unit, like the file format, including compression to deliver the scanned data in. This property is ignored if the scanner is not capable of auto-configuration. */
   var autoConfiguration: ImageScannerAutoConfiguration = js.native
@@ -76,49 +77,37 @@ object ImageScanner {
   }
   
   @scala.inline
-  implicit class ImageScannerOps[Self <: ImageScanner] (val x: Self) extends AnyVal {
+  implicit class ImageScannerMutableBuilder[Self <: ImageScanner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoConfiguration(value: ImageScannerAutoConfiguration): Self = StObject.set(x, "autoConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultScanSource(value: ImageScannerScanSource): Self = StObject.set(x, "defaultScanSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoConfiguration(value: ImageScannerAutoConfiguration): Self = this.set("autoConfiguration", value.asInstanceOf[js.Any])
+    def setFeederConfiguration(value: ImageScannerFeederConfiguration): Self = StObject.set(x, "feederConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultScanSource(value: ImageScannerScanSource): Self = this.set("defaultScanSource", value.asInstanceOf[js.Any])
+    def setFlatbedConfiguration(value: ImageScannerFlatbedConfiguration): Self = StObject.set(x, "flatbedConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setIsPreviewSupported(value: ImageScannerScanSource => Boolean): Self = StObject.set(x, "isPreviewSupported", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFeederConfiguration(value: ImageScannerFeederConfiguration): Self = this.set("feederConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlatbedConfiguration(value: ImageScannerFlatbedConfiguration): Self = this.set("flatbedConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPreviewSupported(value: ImageScannerScanSource => Boolean): Self = this.set("isPreviewSupported", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsScanSourceSupported(value: ImageScannerScanSource => Boolean): Self = this.set("isScanSourceSupported", js.Any.fromFunction1(value))
+    def setIsScanSourceSupported(value: ImageScannerScanSource => Boolean): Self = StObject.set(x, "isScanSourceSupported", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScanFilesToFolderAsync(
       value: (ImageScannerScanSource, StorageFolder) => IPromiseWithIAsyncOperationWithProgress[ImageScannerScanResult, Double]
-    ): Self = this.set("scanFilesToFolderAsync", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "scanFilesToFolderAsync", js.Any.fromFunction2(value))
     
     @scala.inline
     def setScanPreviewToStreamAsync(
       value: (ImageScannerScanSource, IRandomAccessStream) => IPromiseWithIAsyncOperation[ImageScannerPreviewResult]
-    ): Self = this.set("scanPreviewToStreamAsync", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "scanPreviewToStreamAsync", js.Any.fromFunction2(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionFactory")
 @js.native
-class QuestionFactory () extends js.Object {
+class QuestionFactory () extends StObject {
   
   def clear(): Unit = js.native
   
@@ -19,15 +20,27 @@ class QuestionFactory () extends js.Object {
   def unregisterElement(elementType: String): Unit = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "QuestionFactory")
-@js.native
-object QuestionFactory extends js.Object {
+object QuestionFactory {
   
+  @JSImport("survey-knockout", "QuestionFactory")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "QuestionFactory.DefaultChoices")
+  @js.native
   val DefaultChoices: js.Array[String] = js.native
   
+  @JSImport("survey-knockout", "QuestionFactory.DefaultColums")
+  @js.native
   val DefaultColums: js.Array[String] = js.native
   
+  @JSImport("survey-knockout", "QuestionFactory.DefaultRows")
+  @js.native
   val DefaultRows: js.Array[String] = js.native
   
-  var Instance: QuestionFactory = js.native
+  @JSImport("survey-knockout", "QuestionFactory.Instance")
+  @js.native
+  def Instance: QuestionFactory = js.native
+  @scala.inline
+  def Instance_=(x: QuestionFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
 }

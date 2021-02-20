@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Change extends js.Object {
+trait Change extends StObject {
   
   /**
     * A ResourceChange structure that describes the resource and action that AWS CloudFormation will perform.
@@ -26,30 +27,18 @@ object Change {
   }
   
   @scala.inline
-  implicit class ChangeOps[Self <: Change] (val x: Self) extends AnyVal {
+  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceChange(value: ResourceChange): Self = StObject.set(x, "ResourceChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceChangeUndefined: Self = StObject.set(x, "ResourceChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: ChangeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceChange(value: ResourceChange): Self = this.set("ResourceChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceChange: Self = this.set("ResourceChange", js.undefined)
-    
-    @scala.inline
-    def setType(value: ChangeType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

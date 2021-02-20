@@ -1,11 +1,12 @@
 package typings.mapsjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregateFunction extends js.Object {
+trait AggregateFunction extends StObject {
   
   var aggregateFunction: js.UndefOr[
     js.Function3[/* srcRow */ js.Any, /* cmpRow */ js.Any, /* aggRow */ js.Any, Unit]
@@ -37,51 +38,39 @@ object AggregateFunction {
   }
   
   @scala.inline
-  implicit class AggregateFunctionOps[Self <: AggregateFunction] (val x: Self) extends AnyVal {
+  implicit class AggregateFunctionMutableBuilder[Self <: AggregateFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateFunction(value: (/* srcRow */ js.Any, /* cmpRow */ js.Any, /* aggRow */ js.Any) => Unit): Self = StObject.set(x, "aggregateFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateFunctionUndefined: Self = StObject.set(x, "aggregateFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: js.Object*): Self = this.set("data", js.Array(value :_*))
+    def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[js.Object]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMapUnitsPerPixel(value: Double): Self = StObject.set(x, "mapUnitsPerPixel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapUnitsPerPixel(value: Double): Self = this.set("mapUnitsPerPixel", value.asInstanceOf[js.Any])
+    def setMarginPixels(value: Double): Self = StObject.set(x, "marginPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointKey(value: String): Self = this.set("pointKey", value.asInstanceOf[js.Any])
+    def setMarginPixelsUndefined: Self = StObject.set(x, "marginPixels", js.undefined)
     
     @scala.inline
-    def setRadiusFunction(value: js.Any => Double): Self = this.set("radiusFunction", js.Any.fromFunction1(value))
+    def setPointKey(value: String): Self = StObject.set(x, "pointKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateFunction(value: (/* srcRow */ js.Any, /* cmpRow */ js.Any, /* aggRow */ js.Any) => Unit): Self = this.set("aggregateFunction", js.Any.fromFunction3(value))
+    def setRadiusFunction(value: js.Any => Double): Self = StObject.set(x, "radiusFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAggregateFunction: Self = this.set("aggregateFunction", js.undefined)
+    def setValueFunction(value: /* row */ js.Any => Double): Self = StObject.set(x, "valueFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarginPixels(value: Double): Self = this.set("marginPixels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarginPixels: Self = this.set("marginPixels", js.undefined)
-    
-    @scala.inline
-    def setValueFunction(value: /* row */ js.Any => Double): Self = this.set("valueFunction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteValueFunction: Self = this.set("valueFunction", js.undefined)
+    def setValueFunctionUndefined: Self = StObject.set(x, "valueFunction", js.undefined)
   }
 }

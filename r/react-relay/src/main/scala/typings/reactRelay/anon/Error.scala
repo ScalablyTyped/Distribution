@@ -1,12 +1,13 @@
 package typings.reactRelay.anon
 
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Error[TOperation /* <: OperationType */] extends js.Object {
+trait Error[TOperation /* <: OperationType */] extends StObject {
   
   var error: typings.std.Error | Null = js.native
   
@@ -23,38 +24,26 @@ object Error {
   }
   
   @scala.inline
-  implicit class ErrorOps[Self <: Error[_], TOperation /* <: OperationType */] (val x: Self with Error[TOperation]) extends AnyVal {
+  implicit class ErrorMutableBuilder[Self <: Error[_], TOperation /* <: OperationType */] (val x: Self with Error[TOperation]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: typings.std.Error): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
     def setProps(
       value: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
-    ): Self = this.set("props", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropsNull: Self = this.set("props", null)
+    def setPropsNull: Self = StObject.set(x, "props", null)
     
     @scala.inline
-    def setRetry(value: () => Unit): Self = this.set("retry", js.Any.fromFunction0(value))
+    def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRetryNull: Self = this.set("retry", null)
+    def setRetryNull: Self = StObject.set(x, "retry", null)
   }
 }

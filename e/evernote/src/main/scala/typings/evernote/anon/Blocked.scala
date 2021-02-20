@@ -3,12 +3,13 @@ package typings.evernote.anon
 import typings.evernote.mod.Types.Contact
 import typings.evernote.mod.Types.MessageEventID
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Blocked extends js.Object {
+trait Blocked extends StObject {
   
   var blocked: js.UndefOr[Boolean] = js.native
   
@@ -35,66 +36,54 @@ object Blocked {
   }
   
   @scala.inline
-  implicit class BlockedOps[Self <: Blocked] (val x: Self) extends AnyVal {
+  implicit class BlockedMutableBuilder[Self <: Blocked] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocked(value: Boolean): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocked(value: Boolean): Self = this.set("blocked", value.asInstanceOf[js.Any])
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def deleteBlocked: Self = this.set("blocked", js.undefined)
+    def setDeactivated(value: Boolean): Self = StObject.set(x, "deactivated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContact(value: Contact): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setDeactivatedUndefined: Self = StObject.set(x, "deactivated", js.undefined)
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setEventId(value: MessageEventID): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeactivated(value: Boolean): Self = this.set("deactivated", value.asInstanceOf[js.Any])
+    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
     @scala.inline
-    def deleteDeactivated: Self = this.set("deactivated", js.undefined)
+    def setId(value: typings.evernote.mod.Types.IdentityID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventId(value: MessageEventID): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEventId: Self = this.set("eventId", js.undefined)
+    def setSameBusiness(value: Boolean): Self = StObject.set(x, "sameBusiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: typings.evernote.mod.Types.IdentityID): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSameBusinessUndefined: Self = StObject.set(x, "sameBusiness", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setUserConnected(value: Boolean): Self = StObject.set(x, "userConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSameBusiness(value: Boolean): Self = this.set("sameBusiness", value.asInstanceOf[js.Any])
+    def setUserConnectedUndefined: Self = StObject.set(x, "userConnected", js.undefined)
     
     @scala.inline
-    def deleteSameBusiness: Self = this.set("sameBusiness", js.undefined)
+    def setUserId(value: UserID): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserConnected(value: Boolean): Self = this.set("userConnected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserConnected: Self = this.set("userConnected", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: UserID): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

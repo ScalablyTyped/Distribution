@@ -1,12 +1,13 @@
 package typings.downshift.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseComboboxDispatchAction[Item] extends js.Object {
+trait UseComboboxDispatchAction[Item] extends StObject {
   
   var getItemNodeFromIndex: js.UndefOr[js.Function1[/* index */ Double, HTMLElement]] = js.native
   
@@ -34,66 +35,54 @@ object UseComboboxDispatchAction {
   }
   
   @scala.inline
-  implicit class UseComboboxDispatchActionOps[Self <: UseComboboxDispatchAction[_], Item] (val x: Self with UseComboboxDispatchAction[Item]) extends AnyVal {
+  implicit class UseComboboxDispatchActionMutableBuilder[Self <: UseComboboxDispatchAction[_], Item] (val x: Self with UseComboboxDispatchAction[Item]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetItemNodeFromIndex(value: /* index */ Double => HTMLElement): Self = StObject.set(x, "getItemNodeFromIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetItemNodeFromIndexUndefined: Self = StObject.set(x, "getItemNodeFromIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: UseComboboxStateChangeTypes): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setHighlightedIndexUndefined: Self = StObject.set(x, "highlightedIndex", js.undefined)
     
     @scala.inline
-    def setGetItemNodeFromIndex(value: /* index */ Double => HTMLElement): Self = this.set("getItemNodeFromIndex", js.Any.fromFunction1(value))
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetItemNodeFromIndex: Self = this.set("getItemNodeFromIndex", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setHighlightedIndex(value: Double): Self = this.set("highlightedIndex", value.asInstanceOf[js.Any])
+    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighlightedIndex: Self = this.set("highlightedIndex", js.undefined)
+    def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setSelectItem(value: Boolean): Self = StObject.set(x, "selectItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setSelectItemUndefined: Self = StObject.set(x, "selectItem", js.undefined)
     
     @scala.inline
-    def setInputValue(value: String): Self = this.set("inputValue", value.asInstanceOf[js.Any])
+    def setSelectedItem(value: Item): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputValue: Self = this.set("inputValue", js.undefined)
+    def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
     
     @scala.inline
-    def setSelectItem(value: Boolean): Self = this.set("selectItem", value.asInstanceOf[js.Any])
+    def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
     
     @scala.inline
-    def deleteSelectItem: Self = this.set("selectItem", js.undefined)
+    def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItem(value: Item): Self = this.set("selectedItem", value.asInstanceOf[js.Any])
+    def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
     
     @scala.inline
-    def deleteSelectedItem: Self = this.set("selectedItem", js.undefined)
-    
-    @scala.inline
-    def setSelectedItemNull: Self = this.set("selectedItem", null)
-    
-    @scala.inline
-    def setShiftKey(value: Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShiftKey: Self = this.set("shiftKey", js.undefined)
+    def setType(value: UseComboboxStateChangeTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

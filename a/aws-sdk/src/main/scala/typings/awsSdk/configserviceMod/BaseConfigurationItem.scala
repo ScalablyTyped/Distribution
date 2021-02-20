@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseConfigurationItem extends js.Object {
+trait BaseConfigurationItem extends StObject {
   
   /**
     * The 12-digit AWS account ID associated with the resource.
@@ -86,102 +87,90 @@ object BaseConfigurationItem {
   }
   
   @scala.inline
-  implicit class BaseConfigurationItemOps[Self <: BaseConfigurationItem] (val x: Self) extends AnyVal {
+  implicit class BaseConfigurationItemMutableBuilder[Self <: BaseConfigurationItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: ARN): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: AvailabilityZone): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRegion(value: AwsRegion): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    def setConfigurationItemCaptureTime(value: ConfigurationItemCaptureTime): Self = StObject.set(x, "configurationItemCaptureTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAwsRegion: Self = this.set("awsRegion", js.undefined)
+    def setConfigurationItemCaptureTimeUndefined: Self = StObject.set(x, "configurationItemCaptureTime", js.undefined)
     
     @scala.inline
-    def setConfiguration(value: Configuration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setConfigurationItemStatus(value: ConfigurationItemStatus): Self = StObject.set(x, "configurationItemStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setConfigurationItemStatusUndefined: Self = StObject.set(x, "configurationItemStatus", js.undefined)
     
     @scala.inline
-    def setConfigurationItemCaptureTime(value: ConfigurationItemCaptureTime): Self = this.set("configurationItemCaptureTime", value.asInstanceOf[js.Any])
+    def setConfigurationStateId(value: ConfigurationStateId): Self = StObject.set(x, "configurationStateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigurationItemCaptureTime: Self = this.set("configurationItemCaptureTime", js.undefined)
+    def setConfigurationStateIdUndefined: Self = StObject.set(x, "configurationStateId", js.undefined)
     
     @scala.inline
-    def setConfigurationItemStatus(value: ConfigurationItemStatus): Self = this.set("configurationItemStatus", value.asInstanceOf[js.Any])
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def deleteConfigurationItemStatus: Self = this.set("configurationItemStatus", js.undefined)
+    def setResourceCreationTime(value: ResourceCreationTime): Self = StObject.set(x, "resourceCreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationStateId(value: ConfigurationStateId): Self = this.set("configurationStateId", value.asInstanceOf[js.Any])
+    def setResourceCreationTimeUndefined: Self = StObject.set(x, "resourceCreationTime", js.undefined)
     
     @scala.inline
-    def deleteConfigurationStateId: Self = this.set("configurationStateId", js.undefined)
+    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceCreationTime(value: ResourceCreationTime): Self = this.set("resourceCreationTime", value.asInstanceOf[js.Any])
+    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
     @scala.inline
-    def deleteResourceCreationTime: Self = this.set("resourceCreationTime", js.undefined)
+    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ResourceId): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: ResourceName): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setSupplementaryConfiguration(value: SupplementaryConfiguration): Self = StObject.set(x, "supplementaryConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setSupplementaryConfigurationUndefined: Self = StObject.set(x, "supplementaryConfiguration", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupplementaryConfiguration(value: SupplementaryConfiguration): Self = this.set("supplementaryConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupplementaryConfiguration: Self = this.set("supplementaryConfiguration", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

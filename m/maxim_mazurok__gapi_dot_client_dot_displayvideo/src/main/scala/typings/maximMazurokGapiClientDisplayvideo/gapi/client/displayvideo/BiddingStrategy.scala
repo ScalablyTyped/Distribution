@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BiddingStrategy extends js.Object {
+trait BiddingStrategy extends StObject {
   
   /** A strategy that uses a fixed bid price. */
   var fixedBid: js.UndefOr[FixedBidStrategy] = js.native
@@ -31,36 +32,24 @@ object BiddingStrategy {
   }
   
   @scala.inline
-  implicit class BiddingStrategyOps[Self <: BiddingStrategy] (val x: Self) extends AnyVal {
+  implicit class BiddingStrategyMutableBuilder[Self <: BiddingStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixedBid(value: FixedBidStrategy): Self = StObject.set(x, "fixedBid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixedBidUndefined: Self = StObject.set(x, "fixedBid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximizeSpendAutoBid(value: MaximizeSpendBidStrategy): Self = StObject.set(x, "maximizeSpendAutoBid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedBid(value: FixedBidStrategy): Self = this.set("fixedBid", value.asInstanceOf[js.Any])
+    def setMaximizeSpendAutoBidUndefined: Self = StObject.set(x, "maximizeSpendAutoBid", js.undefined)
     
     @scala.inline
-    def deleteFixedBid: Self = this.set("fixedBid", js.undefined)
+    def setPerformanceGoalAutoBid(value: PerformanceGoalBidStrategy): Self = StObject.set(x, "performanceGoalAutoBid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximizeSpendAutoBid(value: MaximizeSpendBidStrategy): Self = this.set("maximizeSpendAutoBid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximizeSpendAutoBid: Self = this.set("maximizeSpendAutoBid", js.undefined)
-    
-    @scala.inline
-    def setPerformanceGoalAutoBid(value: PerformanceGoalBidStrategy): Self = this.set("performanceGoalAutoBid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformanceGoalAutoBid: Self = this.set("performanceGoalAutoBid", js.undefined)
+    def setPerformanceGoalAutoBidUndefined: Self = StObject.set(x, "performanceGoalAutoBid", js.undefined)
   }
 }

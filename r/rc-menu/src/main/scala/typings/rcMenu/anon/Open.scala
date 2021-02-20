@@ -1,12 +1,13 @@
 package typings.rcMenu.anon
 
 import typings.react.mod.ReactInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Open extends js.Object {
+trait Open extends StObject {
   
   var item: ReactInstance = js.native
   
@@ -25,30 +26,18 @@ object Open {
   }
   
   @scala.inline
-  implicit class OpenOps[Self <: Open] (val x: Self) extends AnyVal {
+  implicit class OpenMutableBuilder[Self <: Open] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: ReactInstance): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: ReactInstance): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
   }
 }

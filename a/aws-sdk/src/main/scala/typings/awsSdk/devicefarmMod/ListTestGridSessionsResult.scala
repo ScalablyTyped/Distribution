@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTestGridSessionsResult extends js.Object {
+trait ListTestGridSessionsResult extends StObject {
   
   /**
     * Pagination token.
@@ -26,33 +27,21 @@ object ListTestGridSessionsResult {
   }
   
   @scala.inline
-  implicit class ListTestGridSessionsResultOps[Self <: ListTestGridSessionsResult] (val x: Self) extends AnyVal {
+  implicit class ListTestGridSessionsResultMutableBuilder[Self <: ListTestGridSessionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTestGridSessions(value: TestGridSessions): Self = StObject.set(x, "testGridSessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setTestGridSessionsUndefined: Self = StObject.set(x, "testGridSessions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setTestGridSessionsVarargs(value: TestGridSession*): Self = this.set("testGridSessions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestGridSessions(value: TestGridSessions): Self = this.set("testGridSessions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestGridSessions: Self = this.set("testGridSessions", js.undefined)
+    def setTestGridSessionsVarargs(value: TestGridSession*): Self = StObject.set(x, "testGridSessions", js.Array(value :_*))
   }
 }

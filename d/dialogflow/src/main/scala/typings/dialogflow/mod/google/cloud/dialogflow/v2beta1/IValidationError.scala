@@ -1,36 +1,67 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ValidationError. */
-trait IValidationError extends js.Object {
+@js.native
+trait IValidationError extends StObject {
+  
   /** ValidationError entries */
-  var entries: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var entries: js.UndefOr[js.Array[String] | Null] = js.native
+  
   /** ValidationError errorMessage */
-  var errorMessage: js.UndefOr[String | Null] = js.undefined
+  var errorMessage: js.UndefOr[String | Null] = js.native
+  
   /** ValidationError severity */
   var severity: js.UndefOr[
     Severity | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.ValidationError.Severity * / any */ String) | Null
-  ] = js.undefined
+  ] = js.native
 }
-
 object IValidationError {
+  
   @scala.inline
-  def apply(
-    entries: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    errorMessage: js.UndefOr[Null | String] = js.undefined,
-    severity: js.UndefOr[
-      Null | Severity | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.ValidationError.Severity * / any */ String)
-    ] = js.undefined
-  ): IValidationError = {
+  def apply(): IValidationError = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(entries)) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorMessage)) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(severity)) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidationError]
   }
+  
+  @scala.inline
+  implicit class IValidationErrorMutableBuilder[Self <: IValidationError] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEntriesNull: Self = StObject.set(x, "entries", null)
+    
+    @scala.inline
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    
+    @scala.inline
+    def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    
+    @scala.inline
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setErrorMessageNull: Self = StObject.set(x, "errorMessage", null)
+    
+    @scala.inline
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    
+    @scala.inline
+    def setSeverity(
+      value: Severity | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.ValidationError.Severity * / any */ String)
+    ): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSeverityNull: Self = StObject.set(x, "severity", null)
+    
+    @scala.inline
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+  }
 }
-

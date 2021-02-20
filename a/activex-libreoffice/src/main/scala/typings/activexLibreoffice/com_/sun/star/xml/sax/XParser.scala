@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.sax
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,36 +66,24 @@ object XParser {
   }
   
   @scala.inline
-  implicit class XParserOps[Self <: XParser] (val x: Self) extends AnyVal {
+  implicit class XParserMutableBuilder[Self <: XParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParseStream(value: InputSource => Unit): Self = StObject.set(x, "parseStream", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetDTDHandler(value: XDTDHandler => Unit): Self = StObject.set(x, "setDTDHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetDocumentHandler(value: XDocumentHandler => Unit): Self = StObject.set(x, "setDocumentHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseStream(value: InputSource => Unit): Self = this.set("parseStream", js.Any.fromFunction1(value))
+    def setSetEntityResolver(value: XEntityResolver => Unit): Self = StObject.set(x, "setEntityResolver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDTDHandler(value: XDTDHandler => Unit): Self = this.set("setDTDHandler", js.Any.fromFunction1(value))
+    def setSetErrorHandler(value: XErrorHandler => Unit): Self = StObject.set(x, "setErrorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDocumentHandler(value: XDocumentHandler => Unit): Self = this.set("setDocumentHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetEntityResolver(value: XEntityResolver => Unit): Self = this.set("setEntityResolver", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetErrorHandler(value: XErrorHandler => Unit): Self = this.set("setErrorHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLocale(value: Locale => Unit): Self = this.set("setLocale", js.Any.fromFunction1(value))
+    def setSetLocale(value: Locale => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
   }
 }

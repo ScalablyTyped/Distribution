@@ -4,12 +4,13 @@ import typings.relayRuntime.relayModernStoreMod.InvalidationState
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Disposable
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Store extends js.Object {
+trait Store extends StObject {
   
   /**
     * Determine if the operation can be resolved with data in the store (i.e. no

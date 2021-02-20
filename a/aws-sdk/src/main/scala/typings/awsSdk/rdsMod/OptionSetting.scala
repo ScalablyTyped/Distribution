@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionSetting extends js.Object {
+trait OptionSetting extends StObject {
   
   /**
     * The allowed values of the option setting.
@@ -61,72 +62,60 @@ object OptionSetting {
   }
   
   @scala.inline
-  implicit class OptionSettingOps[Self <: OptionSetting] (val x: Self) extends AnyVal {
+  implicit class OptionSettingMutableBuilder[Self <: OptionSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedValues(value: String): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyType(value: String): Self = StObject.set(x, "ApplyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedValues(value: String): Self = this.set("AllowedValues", value.asInstanceOf[js.Any])
+    def setApplyTypeUndefined: Self = StObject.set(x, "ApplyType", js.undefined)
     
     @scala.inline
-    def deleteAllowedValues: Self = this.set("AllowedValues", js.undefined)
+    def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyType(value: String): Self = this.set("ApplyType", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "DataType", js.undefined)
     
     @scala.inline
-    def deleteApplyType: Self = this.set("ApplyType", js.undefined)
+    def setDefaultValue(value: String): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("DataType", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    def setIsCollection(value: Boolean): Self = StObject.set(x, "IsCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIsCollectionUndefined: Self = StObject.set(x, "IsCollection", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setIsModifiable(value: Boolean): Self = StObject.set(x, "IsModifiable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCollection(value: Boolean): Self = this.set("IsCollection", value.asInstanceOf[js.Any])
+    def setIsModifiableUndefined: Self = StObject.set(x, "IsModifiable", js.undefined)
     
     @scala.inline
-    def deleteIsCollection: Self = this.set("IsCollection", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsModifiable(value: Boolean): Self = this.set("IsModifiable", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteIsModifiable: Self = this.set("IsModifiable", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

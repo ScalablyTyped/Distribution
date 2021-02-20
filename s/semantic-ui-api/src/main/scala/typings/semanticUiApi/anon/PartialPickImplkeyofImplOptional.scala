@@ -1,13 +1,14 @@
 package typings.semanticUiApi.anon
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-api.SemanticUI.Api.RegExpSettings._Impl, keyof semantic-ui-api.SemanticUI.Api.RegExpSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplOptional extends js.Object {
+trait PartialPickImplkeyofImplOptional extends StObject {
   
   var optional: js.UndefOr[RegExp] = js.native
   
@@ -22,30 +23,18 @@ object PartialPickImplkeyofImplOptional {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplOptionalOps[Self <: PartialPickImplkeyofImplOptional] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplOptionalMutableBuilder[Self <: PartialPickImplkeyofImplOptional] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptional(value: RegExp): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequired(value: RegExp): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptional(value: RegExp): Self = this.set("optional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptional: Self = this.set("optional", js.undefined)
-    
-    @scala.inline
-    def setRequired(value: RegExp): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

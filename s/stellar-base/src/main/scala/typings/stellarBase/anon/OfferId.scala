@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.Int64
 import typings.stellarBase.xdrMod.xdr.OfferEntryExt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OfferId extends js.Object {
+trait OfferId extends StObject {
   
   var amount: Int64 = js.native
   
@@ -43,42 +44,30 @@ object OfferId {
   }
   
   @scala.inline
-  implicit class OfferIdOps[Self <: OfferId] (val x: Self) extends AnyVal {
+  implicit class OfferIdMutableBuilder[Self <: OfferId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Int64): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuying(value: typings.stellarBase.xdrMod.xdr.Asset): Self = StObject.set(x, "buying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExt(value: OfferEntryExt): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Int64): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuying(value: typings.stellarBase.xdrMod.xdr.Asset): Self = this.set("buying", value.asInstanceOf[js.Any])
+    def setOfferId(value: Int64): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: OfferEntryExt): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setPrice(value: typings.stellarBase.xdrMod.xdr.Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: Double): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setSellerId(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = StObject.set(x, "sellerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferId(value: Int64): Self = this.set("offerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrice(value: typings.stellarBase.xdrMod.xdr.Price): Self = this.set("price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSellerId(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = this.set("sellerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelling(value: typings.stellarBase.xdrMod.xdr.Asset): Self = this.set("selling", value.asInstanceOf[js.Any])
+    def setSelling(value: typings.stellarBase.xdrMod.xdr.Asset): Self = StObject.set(x, "selling", value.asInstanceOf[js.Any])
   }
 }

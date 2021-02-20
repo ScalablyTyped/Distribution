@@ -1,11 +1,12 @@
 package typings.azureArmResource.resourceModelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugSetting extends js.Object {
+trait DebugSetting extends StObject {
   
   /**
     * Specifies the type of information to log for debugging. The permitted values are none,
@@ -26,24 +27,12 @@ object DebugSetting {
   }
   
   @scala.inline
-  implicit class DebugSettingOps[Self <: DebugSetting] (val x: Self) extends AnyVal {
+  implicit class DebugSettingMutableBuilder[Self <: DebugSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetailLevel(value: String): Self = StObject.set(x, "detailLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDetailLevel(value: String): Self = this.set("detailLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetailLevel: Self = this.set("detailLevel", js.undefined)
+    def setDetailLevelUndefined: Self = StObject.set(x, "detailLevel", js.undefined)
   }
 }

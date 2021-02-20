@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -126,168 +127,156 @@ object IProgressIndicator {
   }
   
   @scala.inline
-  implicit class IProgressIndicatorOps[Self <: IProgressIndicator] (val x: Self) extends AnyVal {
+  implicit class IProgressIndicatorMutableBuilder[Self <: IProgressIndicator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFallbackText(value: js.Any): Self = StObject.set(x, "fallbackText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamic(value: Boolean): Self = this.set("dynamic", value.asInstanceOf[js.Any])
+    def setFallbackTextUndefined: Self = StObject.set(x, "fallbackText", js.undefined)
     
     @scala.inline
-    def deleteDynamic: Self = this.set("dynamic", js.undefined)
+    def setGetDynamic(value: () => Boolean): Self = StObject.set(x, "getDynamic", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFallbackText(value: js.Any): Self = this.set("fallbackText", value.asInstanceOf[js.Any])
+    def setGetDynamicUndefined: Self = StObject.set(x, "getDynamic", js.undefined)
     
     @scala.inline
-    def deleteFallbackText: Self = this.set("fallbackText", js.undefined)
+    def setGetMaxProgressInput(value: () => Double): Self = StObject.set(x, "getMaxProgressInput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDynamic(value: () => Boolean): Self = this.set("getDynamic", js.Any.fromFunction0(value))
+    def setGetMaxProgressInputUndefined: Self = StObject.set(x, "getMaxProgressInput", js.undefined)
     
     @scala.inline
-    def deleteGetDynamic: Self = this.set("getDynamic", js.undefined)
+    def setGetMaxProgressOutput(value: () => Double): Self = StObject.set(x, "getMaxProgressOutput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxProgressInput(value: () => Double): Self = this.set("getMaxProgressInput", js.Any.fromFunction0(value))
+    def setGetMaxProgressOutputUndefined: Self = StObject.set(x, "getMaxProgressOutput", js.undefined)
     
     @scala.inline
-    def deleteGetMaxProgressInput: Self = this.set("getMaxProgressInput", js.undefined)
+    def setGetMinProgressInput(value: () => Double): Self = StObject.set(x, "getMinProgressInput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxProgressOutput(value: () => Double): Self = this.set("getMaxProgressOutput", js.Any.fromFunction0(value))
+    def setGetMinProgressInputUndefined: Self = StObject.set(x, "getMinProgressInput", js.undefined)
     
     @scala.inline
-    def deleteGetMaxProgressOutput: Self = this.set("getMaxProgressOutput", js.undefined)
+    def setGetMinProgressOutput(value: () => Double): Self = StObject.set(x, "getMinProgressOutput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMinProgressInput(value: () => Double): Self = this.set("getMinProgressInput", js.Any.fromFunction0(value))
+    def setGetMinProgressOutputUndefined: Self = StObject.set(x, "getMinProgressOutput", js.undefined)
     
     @scala.inline
-    def deleteGetMinProgressInput: Self = this.set("getMinProgressInput", js.undefined)
+    def setGetMonitoredStates(value: () => _): Self = StObject.set(x, "getMonitoredStates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMinProgressOutput(value: () => Double): Self = this.set("getMinProgressOutput", js.Any.fromFunction0(value))
+    def setGetMonitoredStatesUndefined: Self = StObject.set(x, "getMonitoredStates", js.undefined)
     
     @scala.inline
-    def deleteGetMinProgressOutput: Self = this.set("getMinProgressOutput", js.undefined)
+    def setGetState(value: () => java.lang.String): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMonitoredStates(value: () => _): Self = this.set("getMonitoredStates", js.Any.fromFunction0(value))
+    def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
     
     @scala.inline
-    def deleteGetMonitoredStates: Self = this.set("getMonitoredStates", js.undefined)
+    def setLoadingText(value: js.Any): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetState(value: () => java.lang.String): Self = this.set("getState", js.Any.fromFunction0(value))
+    def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
     
     @scala.inline
-    def deleteGetState: Self = this.set("getState", js.undefined)
+    def setMaxProgressInput(value: Double): Self = StObject.set(x, "maxProgressInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingText(value: js.Any): Self = this.set("loadingText", value.asInstanceOf[js.Any])
+    def setMaxProgressInputUndefined: Self = StObject.set(x, "maxProgressInput", js.undefined)
     
     @scala.inline
-    def deleteLoadingText: Self = this.set("loadingText", js.undefined)
+    def setMaxProgressOutput(value: Double): Self = StObject.set(x, "maxProgressOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxProgressInput(value: Double): Self = this.set("maxProgressInput", value.asInstanceOf[js.Any])
+    def setMaxProgressOutputUndefined: Self = StObject.set(x, "maxProgressOutput", js.undefined)
     
     @scala.inline
-    def deleteMaxProgressInput: Self = this.set("maxProgressInput", js.undefined)
+    def setMinProgressInput(value: Double): Self = StObject.set(x, "minProgressInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxProgressOutput(value: Double): Self = this.set("maxProgressOutput", value.asInstanceOf[js.Any])
+    def setMinProgressInputUndefined: Self = StObject.set(x, "minProgressInput", js.undefined)
     
     @scala.inline
-    def deleteMaxProgressOutput: Self = this.set("maxProgressOutput", js.undefined)
+    def setMinProgressOutput(value: Double): Self = StObject.set(x, "minProgressOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinProgressInput(value: Double): Self = this.set("minProgressInput", value.asInstanceOf[js.Any])
+    def setMinProgressOutputUndefined: Self = StObject.set(x, "minProgressOutput", js.undefined)
     
     @scala.inline
-    def deleteMinProgressInput: Self = this.set("minProgressInput", js.undefined)
+    def setMonitoredStates(value: js.Any): Self = StObject.set(x, "monitoredStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinProgressOutput(value: Double): Self = this.set("minProgressOutput", value.asInstanceOf[js.Any])
+    def setMonitoredStatesUndefined: Self = StObject.set(x, "monitoredStates", js.undefined)
     
     @scala.inline
-    def deleteMinProgressOutput: Self = this.set("minProgressOutput", js.undefined)
+    def setSetDynamic(value: js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDynamic", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMonitoredStates(value: js.Any): Self = this.set("monitoredStates", value.asInstanceOf[js.Any])
+    def setSetDynamicUndefined: Self = StObject.set(x, "setDynamic", js.undefined)
     
     @scala.inline
-    def deleteMonitoredStates: Self = this.set("monitoredStates", js.undefined)
+    def setSetFallbackText(value: /* fallbackText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFallbackText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDynamic(value: js.UndefOr[Boolean] => Unit): Self = this.set("setDynamic", js.Any.fromFunction1(value))
+    def setSetFallbackTextUndefined: Self = StObject.set(x, "setFallbackText", js.undefined)
     
     @scala.inline
-    def deleteSetDynamic: Self = this.set("setDynamic", js.undefined)
+    def setSetLoadingText(value: /* loadingText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLoadingText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFallbackText(value: /* fallbackText */ js.UndefOr[js.Any] => Unit): Self = this.set("setFallbackText", js.Any.fromFunction1(value))
+    def setSetLoadingTextUndefined: Self = StObject.set(x, "setLoadingText", js.undefined)
     
     @scala.inline
-    def deleteSetFallbackText: Self = this.set("setFallbackText", js.undefined)
+    def setSetMaxProgressInput(value: js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxProgressInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLoadingText(value: /* loadingText */ js.UndefOr[js.Any] => Unit): Self = this.set("setLoadingText", js.Any.fromFunction1(value))
+    def setSetMaxProgressInputUndefined: Self = StObject.set(x, "setMaxProgressInput", js.undefined)
     
     @scala.inline
-    def deleteSetLoadingText: Self = this.set("setLoadingText", js.undefined)
+    def setSetMaxProgressOutput(value: /* maxProgressOutput */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxProgressOutput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxProgressInput(value: js.UndefOr[Double] => Unit): Self = this.set("setMaxProgressInput", js.Any.fromFunction1(value))
+    def setSetMaxProgressOutputUndefined: Self = StObject.set(x, "setMaxProgressOutput", js.undefined)
     
     @scala.inline
-    def deleteSetMaxProgressInput: Self = this.set("setMaxProgressInput", js.undefined)
+    def setSetMinProgressInput(value: js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinProgressInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxProgressOutput(value: /* maxProgressOutput */ js.UndefOr[Double] => Unit): Self = this.set("setMaxProgressOutput", js.Any.fromFunction1(value))
+    def setSetMinProgressInputUndefined: Self = StObject.set(x, "setMinProgressInput", js.undefined)
     
     @scala.inline
-    def deleteSetMaxProgressOutput: Self = this.set("setMaxProgressOutput", js.undefined)
+    def setSetMinProgressOutput(value: /* minProgressOutput */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinProgressOutput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMinProgressInput(value: js.UndefOr[Double] => Unit): Self = this.set("setMinProgressInput", js.Any.fromFunction1(value))
+    def setSetMinProgressOutputUndefined: Self = StObject.set(x, "setMinProgressOutput", js.undefined)
     
     @scala.inline
-    def deleteSetMinProgressInput: Self = this.set("setMinProgressInput", js.undefined)
+    def setSetMonitoredStates(value: /* monitoredStates */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMonitoredStates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMinProgressOutput(value: /* minProgressOutput */ js.UndefOr[Double] => Unit): Self = this.set("setMinProgressOutput", js.Any.fromFunction1(value))
+    def setSetMonitoredStatesUndefined: Self = StObject.set(x, "setMonitoredStates", js.undefined)
     
     @scala.inline
-    def deleteSetMinProgressOutput: Self = this.set("setMinProgressOutput", js.undefined)
+    def setSetState(value: /* state */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMonitoredStates(value: /* monitoredStates */ js.UndefOr[js.Any] => Unit): Self = this.set("setMonitoredStates", js.Any.fromFunction1(value))
+    def setSetStateUndefined: Self = StObject.set(x, "setState", js.undefined)
     
     @scala.inline
-    def deleteSetMonitoredStates: Self = this.set("setMonitoredStates", js.undefined)
+    def setState(value: java.lang.String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetState(value: /* state */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetState: Self = this.set("setState", js.undefined)
-    
-    @scala.inline
-    def setState(value: java.lang.String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

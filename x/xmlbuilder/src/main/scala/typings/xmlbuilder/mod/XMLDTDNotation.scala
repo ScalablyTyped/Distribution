@@ -1,5 +1,6 @@
 package typings.xmlbuilder.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("xmlbuilder", "XMLDTDNotation")
 @js.native
-class XMLDTDNotation () extends js.Object {
+class XMLDTDNotation () extends StObject {
   
   /**
     * The name of the notation

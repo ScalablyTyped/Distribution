@@ -1,12 +1,13 @@
 package typings.braintree.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidatedResponse[T] extends js.Object {
+trait ValidatedResponse[T] extends StObject {
   
   var address: Address = js.native
   
@@ -66,66 +67,54 @@ object ValidatedResponse {
   }
   
   @scala.inline
-  implicit class ValidatedResponseOps[Self <: ValidatedResponse[_], T] (val x: Self with ValidatedResponse[T]) extends AnyVal {
+  implicit class ValidatedResponseMutableBuilder[Self <: ValidatedResponse[_], T] (val x: Self with ValidatedResponse[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentials(value: OAuthToken): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: Address): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setCreditCard(value: CreditCard): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setCustomer(value: Customer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: OAuthToken): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setDispute(value: Dispute): Self = StObject.set(x, "dispute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditCard(value: CreditCard): Self = this.set("creditCard", value.asInstanceOf[js.Any])
+    def setErrors(value: ValidationErrorsCollection): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomer(value: Customer): Self = this.set("customer", value.asInstanceOf[js.Any])
+    def setMerchantAccount(value: MerchantAccount): Self = StObject.set(x, "merchantAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispute(value: Dispute): Self = this.set("dispute", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: ValidationErrorsCollection): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setParams(value: Record[String, _]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantAccount(value: MerchantAccount): Self = this.set("merchantAccount", value.asInstanceOf[js.Any])
+    def setPaymentMethod(value: PaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPaymentMethodNonce(value: PaymentMethodNonce): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: Record[String, _]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setSettlementBatchSumary(value: SettlementBatchSummary): Self = StObject.set(x, "settlementBatchSumary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethod(value: PaymentMethod): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
+    def setSubscription(value: Subscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethodNonce(value: PaymentMethodNonce): Self = this.set("paymentMethodNonce", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettlementBatchSumary(value: SettlementBatchSummary): Self = this.set("settlementBatchSumary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscription(value: Subscription): Self = this.set("subscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransaction(value: Transaction): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
   }
 }

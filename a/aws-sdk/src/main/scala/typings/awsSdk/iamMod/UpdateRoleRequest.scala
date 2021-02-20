@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRoleRequest extends js.Object {
+trait UpdateRoleRequest extends StObject {
   
   /**
     * The new description that you want to apply to the specified role.
@@ -31,33 +32,21 @@ object UpdateRoleRequest {
   }
   
   @scala.inline
-  implicit class UpdateRoleRequestOps[Self <: UpdateRoleRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRoleRequestMutableBuilder[Self <: UpdateRoleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: roleDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxSessionDuration(value: roleMaxSessionDurationType): Self = StObject.set(x, "MaxSessionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleName(value: roleNameType): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    def setMaxSessionDurationUndefined: Self = StObject.set(x, "MaxSessionDuration", js.undefined)
     
     @scala.inline
-    def setDescription(value: roleDescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
-    
-    @scala.inline
-    def setMaxSessionDuration(value: roleMaxSessionDurationType): Self = this.set("MaxSessionDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSessionDuration: Self = this.set("MaxSessionDuration", js.undefined)
+    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
   }
 }

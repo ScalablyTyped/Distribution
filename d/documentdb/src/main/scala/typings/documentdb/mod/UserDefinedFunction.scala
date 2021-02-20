@@ -1,5 +1,6 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +20,12 @@ object UserDefinedFunction {
   }
   
   @scala.inline
-  implicit class UserDefinedFunctionOps[Self <: UserDefinedFunction] (val x: Self) extends AnyVal {
+  implicit class UserDefinedFunctionMutableBuilder[Self <: UserDefinedFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUserDefinedFunctionType(value: UserDefinedFunctionType): Self = StObject.set(x, "userDefinedFunctionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUserDefinedFunctionType(value: UserDefinedFunctionType): Self = this.set("userDefinedFunctionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDefinedFunctionType: Self = this.set("userDefinedFunctionType", js.undefined)
+    def setUserDefinedFunctionTypeUndefined: Self = StObject.set(x, "userDefinedFunctionType", js.undefined)
   }
 }

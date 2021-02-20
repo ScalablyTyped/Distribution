@@ -1,17 +1,16 @@
 package typings.amapJsApiDriving
 
 import typings.amapJsApiDriving.AMap.Driving.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object AMap extends js.Object {
+  object AMap {
     
+    @JSGlobal("AMap.Driving")
     @js.native
     /**
       * 驾车路线规划服务
@@ -22,8 +21,9 @@ object global extends js.Object {
       def this(options: Options) = this()
     }
     
+    @JSGlobal("AMap.DrivingPolicy")
     @js.native
-    object DrivingPolicy extends js.Object {
+    object DrivingPolicy extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.amapJsApiDriving.AMap.DrivingPolicy with Double] = js.native

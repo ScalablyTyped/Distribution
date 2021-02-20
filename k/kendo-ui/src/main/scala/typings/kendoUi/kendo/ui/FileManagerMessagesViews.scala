@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileManagerMessagesViews extends js.Object {
+trait FileManagerMessagesViews extends StObject {
   
   var dateCreatedField: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object FileManagerMessagesViews {
   }
   
   @scala.inline
-  implicit class FileManagerMessagesViewsOps[Self <: FileManagerMessagesViews] (val x: Self) extends AnyVal {
+  implicit class FileManagerMessagesViewsMutableBuilder[Self <: FileManagerMessagesViews] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateCreatedField(value: String): Self = StObject.set(x, "dateCreatedField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateCreatedFieldUndefined: Self = StObject.set(x, "dateCreatedField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateModifiedField(value: String): Self = StObject.set(x, "dateModifiedField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCreatedField(value: String): Self = this.set("dateCreatedField", value.asInstanceOf[js.Any])
+    def setDateModifiedFieldUndefined: Self = StObject.set(x, "dateModifiedField", js.undefined)
     
     @scala.inline
-    def deleteDateCreatedField: Self = this.set("dateCreatedField", js.undefined)
+    def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateModifiedField(value: String): Self = this.set("dateModifiedField", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteDateModifiedField: Self = this.set("dateModifiedField", js.undefined)
+    def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: String): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setSizeField(value: String): Self = StObject.set(x, "sizeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameField(value: String): Self = this.set("nameField", value.asInstanceOf[js.Any])
+    def setSizeFieldUndefined: Self = StObject.set(x, "sizeField", js.undefined)
     
     @scala.inline
-    def deleteNameField: Self = this.set("nameField", js.undefined)
+    def setTypeField(value: String): Self = StObject.set(x, "typeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeField(value: String): Self = this.set("sizeField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeField: Self = this.set("sizeField", js.undefined)
-    
-    @scala.inline
-    def setTypeField(value: String): Self = this.set("typeField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeField: Self = this.set("typeField", js.undefined)
+    def setTypeFieldUndefined: Self = StObject.set(x, "typeField", js.undefined)
   }
 }

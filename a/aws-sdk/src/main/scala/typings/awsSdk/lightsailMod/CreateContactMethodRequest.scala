@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateContactMethodRequest extends js.Object {
+trait CreateContactMethodRequest extends StObject {
   
   /**
     * The destination of the contact method, such as an email address or a mobile phone number. Use the E.164 format when specifying a mobile phone number. E.164 is a standard for the phone number structure used for international telecommunication. Phone numbers that follow this format can have a maximum of 15 digits, and they are prefixed with the plus character (+) and the country code. For example, a U.S. phone number in E.164 format would be specified as +1XXX5550100. For more information, see E.164 on Wikipedia.
@@ -26,24 +27,12 @@ object CreateContactMethodRequest {
   }
   
   @scala.inline
-  implicit class CreateContactMethodRequestOps[Self <: CreateContactMethodRequest] (val x: Self) extends AnyVal {
+  implicit class CreateContactMethodRequestMutableBuilder[Self <: CreateContactMethodRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactEndpoint(value: StringMax256): Self = StObject.set(x, "contactEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContactEndpoint(value: StringMax256): Self = this.set("contactEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: ContactProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setProtocol(value: ContactProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

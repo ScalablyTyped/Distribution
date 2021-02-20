@@ -1,5 +1,6 @@
 package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovisioningV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for customer to assign a configuration to device.
   */
 @js.native
-trait SchemaCustomerApplyConfigurationRequest extends js.Object {
+trait SchemaCustomerApplyConfigurationRequest extends StObject {
   
   /**
     * Required. The configuration applied to the device in the format
@@ -30,30 +31,18 @@ object SchemaCustomerApplyConfigurationRequest {
   }
   
   @scala.inline
-  implicit class SchemaCustomerApplyConfigurationRequestOps[Self <: SchemaCustomerApplyConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCustomerApplyConfigurationRequestMutableBuilder[Self <: SchemaCustomerApplyConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: SchemaDeviceReference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: String): Self = this.set("configuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
-    
-    @scala.inline
-    def setDevice(value: SchemaDeviceReference): Self = this.set("device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
   }
 }

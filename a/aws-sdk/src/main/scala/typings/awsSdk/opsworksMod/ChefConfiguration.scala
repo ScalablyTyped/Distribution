@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChefConfiguration extends js.Object {
+trait ChefConfiguration extends StObject {
   
   /**
     * The Berkshelf version.
@@ -26,30 +27,18 @@ object ChefConfiguration {
   }
   
   @scala.inline
-  implicit class ChefConfigurationOps[Self <: ChefConfiguration] (val x: Self) extends AnyVal {
+  implicit class ChefConfigurationMutableBuilder[Self <: ChefConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBerkshelfVersion(value: String): Self = StObject.set(x, "BerkshelfVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBerkshelfVersionUndefined: Self = StObject.set(x, "BerkshelfVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManageBerkshelf(value: Boolean): Self = StObject.set(x, "ManageBerkshelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBerkshelfVersion(value: String): Self = this.set("BerkshelfVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBerkshelfVersion: Self = this.set("BerkshelfVersion", js.undefined)
-    
-    @scala.inline
-    def setManageBerkshelf(value: Boolean): Self = this.set("ManageBerkshelf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManageBerkshelf: Self = this.set("ManageBerkshelf", js.undefined)
+    def setManageBerkshelfUndefined: Self = StObject.set(x, "ManageBerkshelf", js.undefined)
   }
 }

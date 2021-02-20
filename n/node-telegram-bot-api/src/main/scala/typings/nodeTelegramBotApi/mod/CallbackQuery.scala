@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallbackQuery extends js.Object {
+trait CallbackQuery extends StObject {
   
   var chat_instance: String = js.native
   
@@ -30,51 +31,39 @@ object CallbackQuery {
   }
   
   @scala.inline
-  implicit class CallbackQueryOps[Self <: CallbackQuery] (val x: Self) extends AnyVal {
+  implicit class CallbackQueryMutableBuilder[Self <: CallbackQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChat_instance(value: String): Self = StObject.set(x, "chat_instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setChat_instance(value: String): Self = this.set("chat_instance", value.asInstanceOf[js.Any])
+    def setFrom(value: User): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: User): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setGame_short_name(value: String): Self = StObject.set(x, "game_short_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setGame_short_nameUndefined: Self = StObject.set(x, "game_short_name", js.undefined)
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setInline_message_id(value: String): Self = StObject.set(x, "inline_message_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGame_short_name(value: String): Self = this.set("game_short_name", value.asInstanceOf[js.Any])
+    def setInline_message_idUndefined: Self = StObject.set(x, "inline_message_id", js.undefined)
     
     @scala.inline
-    def deleteGame_short_name: Self = this.set("game_short_name", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline_message_id(value: String): Self = this.set("inline_message_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInline_message_id: Self = this.set("inline_message_id", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.layuiSrc.layui
 
 import typings.layuiSrc.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditOption extends js.Object {
+trait EditOption extends StObject {
   
   var height: js.UndefOr[Double | String] = js.native
   
@@ -25,48 +26,36 @@ object EditOption {
   }
   
   @scala.inline
-  implicit class EditOptionOps[Self <: EditOption] (val x: Self) extends AnyVal {
+  implicit class EditOptionMutableBuilder[Self <: EditOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideTool(value: js.Array[String]): Self = StObject.set(x, "hideTool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHideToolUndefined: Self = StObject.set(x, "hideTool", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHideToolVarargs(value: String*): Self = StObject.set(x, "hideTool", js.Array(value :_*))
     
     @scala.inline
-    def setHideToolVarargs(value: String*): Self = this.set("hideTool", js.Array(value :_*))
+    def setTool(value: js.Array[String]): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideTool(value: js.Array[String]): Self = this.set("hideTool", value.asInstanceOf[js.Any])
+    def setToolUndefined: Self = StObject.set(x, "tool", js.undefined)
     
     @scala.inline
-    def deleteHideTool: Self = this.set("hideTool", js.undefined)
+    def setToolVarargs(value: String*): Self = StObject.set(x, "tool", js.Array(value :_*))
     
     @scala.inline
-    def setToolVarargs(value: String*): Self = this.set("tool", js.Array(value :_*))
+    def setUploadImage(value: Type): Self = StObject.set(x, "uploadImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTool(value: js.Array[String]): Self = this.set("tool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTool: Self = this.set("tool", js.undefined)
-    
-    @scala.inline
-    def setUploadImage(value: Type): Self = this.set("uploadImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadImage: Self = this.set("uploadImage", js.undefined)
+    def setUploadImageUndefined: Self = StObject.set(x, "uploadImage", js.undefined)
   }
 }

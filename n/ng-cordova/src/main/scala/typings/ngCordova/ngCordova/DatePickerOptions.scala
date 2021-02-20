@@ -1,12 +1,13 @@
 package typings.ngCordova.ngCordova
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatePickerOptions extends js.Object {
+trait DatePickerOptions extends StObject {
   
   var allowFutureDates: js.UndefOr[Boolean] = js.native
   
@@ -61,150 +62,138 @@ object DatePickerOptions {
   }
   
   @scala.inline
-  implicit class DatePickerOptionsOps[Self <: DatePickerOptions] (val x: Self) extends AnyVal {
+  implicit class DatePickerOptionsMutableBuilder[Self <: DatePickerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFutureDates(value: Boolean): Self = StObject.set(x, "allowFutureDates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowFutureDatesUndefined: Self = StObject.set(x, "allowFutureDates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowOldDates(value: Boolean): Self = StObject.set(x, "allowOldDates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFutureDates(value: Boolean): Self = this.set("allowFutureDates", value.asInstanceOf[js.Any])
+    def setAllowOldDatesUndefined: Self = StObject.set(x, "allowOldDates", js.undefined)
     
     @scala.inline
-    def deleteAllowFutureDates: Self = this.set("allowFutureDates", js.undefined)
+    def setAndroidTheme(value: AndroidTheme): Self = StObject.set(x, "androidTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOldDates(value: Boolean): Self = this.set("allowOldDates", value.asInstanceOf[js.Any])
+    def setAndroidThemeUndefined: Self = StObject.set(x, "androidTheme", js.undefined)
     
     @scala.inline
-    def deleteAllowOldDates: Self = this.set("allowOldDates", js.undefined)
+    def setCancelButtonColor(value: String): Self = StObject.set(x, "cancelButtonColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidTheme(value: AndroidTheme): Self = this.set("androidTheme", value.asInstanceOf[js.Any])
+    def setCancelButtonColorUndefined: Self = StObject.set(x, "cancelButtonColor", js.undefined)
     
     @scala.inline
-    def deleteAndroidTheme: Self = this.set("androidTheme", js.undefined)
+    def setCancelButtonLabel(value: String): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelButtonColor(value: String): Self = this.set("cancelButtonColor", value.asInstanceOf[js.Any])
+    def setCancelButtonLabelUndefined: Self = StObject.set(x, "cancelButtonLabel", js.undefined)
     
     @scala.inline
-    def deleteCancelButtonColor: Self = this.set("cancelButtonColor", js.undefined)
+    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelButtonLabel(value: String): Self = this.set("cancelButtonLabel", value.asInstanceOf[js.Any])
+    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
     @scala.inline
-    def deleteCancelButtonLabel: Self = this.set("cancelButtonLabel", js.undefined)
+    def setDate(value: Date | String | Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelText(value: String): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteCancelText: Self = this.set("cancelText", js.undefined)
+    def setDoneButtonColor(value: String): Self = StObject.set(x, "doneButtonColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date | String | Double): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDoneButtonColorUndefined: Self = StObject.set(x, "doneButtonColor", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setDoneButtonLabel(value: String): Self = StObject.set(x, "doneButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoneButtonColor(value: String): Self = this.set("doneButtonColor", value.asInstanceOf[js.Any])
+    def setDoneButtonLabelUndefined: Self = StObject.set(x, "doneButtonLabel", js.undefined)
     
     @scala.inline
-    def deleteDoneButtonColor: Self = this.set("doneButtonColor", js.undefined)
+    def setIs24Hour(value: Boolean): Self = StObject.set(x, "is24Hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoneButtonLabel(value: String): Self = this.set("doneButtonLabel", value.asInstanceOf[js.Any])
+    def setIs24HourUndefined: Self = StObject.set(x, "is24Hour", js.undefined)
     
     @scala.inline
-    def deleteDoneButtonLabel: Self = this.set("doneButtonLabel", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs24Hour(value: Boolean): Self = this.set("is24Hour", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteIs24Hour: Self = this.set("is24Hour", js.undefined)
+    def setMaxDate(value: Date | String | Double): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setMinDate(value: Date | String | Double): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDate(value: Date | String | Double): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
     @scala.inline
-    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    def setMinuteInterval(value: Double): Self = StObject.set(x, "minuteInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDate(value: Date | String | Double): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    def setMinuteIntervalUndefined: Self = StObject.set(x, "minuteInterval", js.undefined)
     
     @scala.inline
-    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinuteInterval(value: Double): Self = this.set("minuteInterval", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteMinuteInterval: Self = this.set("minuteInterval", js.undefined)
+    def setNowText(value: String): Self = StObject.set(x, "nowText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setNowTextUndefined: Self = StObject.set(x, "nowText", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNowText(value: String): Self = this.set("nowText", value.asInstanceOf[js.Any])
+    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
     
     @scala.inline
-    def deleteNowText: Self = this.set("nowText", js.undefined)
+    def setPopoverArrowDirection(value: String): Self = StObject.set(x, "popoverArrowDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOkText(value: String): Self = this.set("okText", value.asInstanceOf[js.Any])
+    def setPopoverArrowDirectionUndefined: Self = StObject.set(x, "popoverArrowDirection", js.undefined)
     
     @scala.inline
-    def deleteOkText: Self = this.set("okText", js.undefined)
+    def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopoverArrowDirection(value: String): Self = this.set("popoverArrowDirection", value.asInstanceOf[js.Any])
+    def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
     
     @scala.inline
-    def deletePopoverArrowDirection: Self = this.set("popoverArrowDirection", js.undefined)
+    def setTodayText(value: String): Self = StObject.set(x, "todayText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleText(value: String): Self = this.set("titleText", value.asInstanceOf[js.Any])
+    def setTodayTextUndefined: Self = StObject.set(x, "todayText", js.undefined)
     
     @scala.inline
-    def deleteTitleText: Self = this.set("titleText", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTodayText(value: String): Self = this.set("todayText", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteTodayText: Self = this.set("todayText", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

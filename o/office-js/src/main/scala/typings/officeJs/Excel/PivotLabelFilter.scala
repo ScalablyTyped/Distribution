@@ -10,6 +10,7 @@ import typings.officeJs.officeJsStrings.GreaterThanOrEqualTo
 import typings.officeJs.officeJsStrings.LessThan
 import typings.officeJs.officeJsStrings.LessThanOrEqualTo
 import typings.officeJs.officeJsStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.12]
   */
 @js.native
-trait PivotLabelFilter extends js.Object {
+trait PivotLabelFilter extends StObject {
   
   /**
     *
@@ -86,53 +87,41 @@ object PivotLabelFilter {
   }
   
   @scala.inline
-  implicit class PivotLabelFilterOps[Self <: PivotLabelFilter] (val x: Self) extends AnyVal {
+  implicit class PivotLabelFilterMutableBuilder[Self <: PivotLabelFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparator(value: String): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
     @scala.inline
     def setCondition(
       value: LabelFilterCondition | Unknown_ | Equals | BeginsWith | EndsWith | Contains | GreaterThan | GreaterThanOrEqualTo | LessThan | LessThanOrEqualTo | Between
-    ): Self = this.set("condition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparator(value: String): Self = this.set("comparator", value.asInstanceOf[js.Any])
+    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComparator: Self = this.set("comparator", js.undefined)
+    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
     @scala.inline
-    def setExclusive(value: Boolean): Self = this.set("exclusive", value.asInstanceOf[js.Any])
+    def setLowerBound(value: String): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExclusive: Self = this.set("exclusive", js.undefined)
+    def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
     
     @scala.inline
-    def setLowerBound(value: String): Self = this.set("lowerBound", value.asInstanceOf[js.Any])
+    def setSubstring(value: String): Self = StObject.set(x, "substring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLowerBound: Self = this.set("lowerBound", js.undefined)
+    def setSubstringUndefined: Self = StObject.set(x, "substring", js.undefined)
     
     @scala.inline
-    def setSubstring(value: String): Self = this.set("substring", value.asInstanceOf[js.Any])
+    def setUpperBound(value: String): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubstring: Self = this.set("substring", js.undefined)
-    
-    @scala.inline
-    def setUpperBound(value: String): Self = this.set("upperBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpperBound: Self = this.set("upperBound", js.undefined)
+    def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FullScreen extends js.Object {
+trait FullScreen extends StObject {
   
   var closeMenu: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object FullScreen {
   }
   
   @scala.inline
-  implicit class FullScreenOps[Self <: FullScreen] (val x: Self) extends AnyVal {
+  implicit class FullScreenMutableBuilder[Self <: FullScreen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseMenu(value: String): Self = StObject.set(x, "closeMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseMenuUndefined: Self = StObject.set(x, "closeMenu", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseMenu(value: String): Self = this.set("closeMenu", value.asInstanceOf[js.Any])
+    def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
     @scala.inline
-    def deleteCloseMenu: Self = this.set("closeMenu", js.undefined)
+    def setOpenMenu(value: String): Self = StObject.set(x, "openMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullScreen(value: String): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    def setOpenMenuUndefined: Self = StObject.set(x, "openMenu", js.undefined)
     
     @scala.inline
-    def deleteFullScreen: Self = this.set("fullScreen", js.undefined)
+    def setPauseButton(value: String): Self = StObject.set(x, "pauseButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenMenu(value: String): Self = this.set("openMenu", value.asInstanceOf[js.Any])
+    def setPauseButtonUndefined: Self = StObject.set(x, "pauseButton", js.undefined)
     
     @scala.inline
-    def deleteOpenMenu: Self = this.set("openMenu", js.undefined)
+    def setPlayButton(value: String): Self = StObject.set(x, "playButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPauseButton(value: String): Self = this.set("pauseButton", value.asInstanceOf[js.Any])
+    def setPlayButtonUndefined: Self = StObject.set(x, "playButton", js.undefined)
     
     @scala.inline
-    def deletePauseButton: Self = this.set("pauseButton", js.undefined)
+    def setProgressMeter(value: String): Self = StObject.set(x, "progressMeter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayButton(value: String): Self = this.set("playButton", value.asInstanceOf[js.Any])
+    def setProgressMeterUndefined: Self = StObject.set(x, "progressMeter", js.undefined)
     
     @scala.inline
-    def deletePlayButton: Self = this.set("playButton", js.undefined)
+    def setScrubber(value: String): Self = StObject.set(x, "scrubber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressMeter(value: String): Self = this.set("progressMeter", value.asInstanceOf[js.Any])
+    def setScrubberUndefined: Self = StObject.set(x, "scrubber", js.undefined)
     
     @scala.inline
-    def deleteProgressMeter: Self = this.set("progressMeter", js.undefined)
+    def setVolueDown(value: String): Self = StObject.set(x, "volueDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrubber(value: String): Self = this.set("scrubber", value.asInstanceOf[js.Any])
+    def setVolueDownUndefined: Self = StObject.set(x, "volueDown", js.undefined)
     
     @scala.inline
-    def deleteScrubber: Self = this.set("scrubber", js.undefined)
+    def setVolumeUp(value: String): Self = StObject.set(x, "volumeUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolueDown(value: String): Self = this.set("volueDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolueDown: Self = this.set("volueDown", js.undefined)
-    
-    @scala.inline
-    def setVolumeUp(value: String): Self = this.set("volumeUp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeUp: Self = this.set("volumeUp", js.undefined)
+    def setVolumeUpUndefined: Self = StObject.set(x, "volumeUp", js.undefined)
   }
 }

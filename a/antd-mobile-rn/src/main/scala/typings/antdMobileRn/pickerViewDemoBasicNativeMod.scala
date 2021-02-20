@@ -2,13 +2,16 @@ package typings.antdMobileRn
 
 import typings.antdMobileRn.anon.Value
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/picker-view/demo/basic.native", JSImport.Namespace)
-@js.native
-object pickerViewDemoBasicNativeMod extends js.Object {
+object pickerViewDemoBasicNativeMod {
+  
+  @JSImport("antd-mobile-rn/lib/picker-view/demo/basic.native", JSImport.Default)
+  @js.native
+  class default () extends PickerViewExample
   
   @js.native
   trait PickerViewExample
@@ -19,7 +22,4 @@ object pickerViewDemoBasicNativeMod extends js.Object {
     @JSName("state")
     var state_PickerViewExample: Value = js.native
   }
-  
-  @js.native
-  class default () extends PickerViewExample
 }

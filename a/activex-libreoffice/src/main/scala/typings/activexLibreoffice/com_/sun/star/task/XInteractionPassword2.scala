@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.task
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,36 +54,24 @@ object XInteractionPassword2 {
   }
   
   @scala.inline
-  implicit class XInteractionPassword2Ops[Self <: XInteractionPassword2] (val x: Self) extends AnyVal {
+  implicit class XInteractionPassword2MutableBuilder[Self <: XInteractionPassword2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPasswordToModify(value: () => String): Self = StObject.set(x, "getPasswordToModify", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRecommendReadOnly(value: () => Boolean): Self = StObject.set(x, "getRecommendReadOnly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPasswordToModify(value: String): Self = StObject.set(x, "PasswordToModify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordToModify(value: String): Self = this.set("PasswordToModify", value.asInstanceOf[js.Any])
+    def setRecommendReadOnly(value: Boolean): Self = StObject.set(x, "RecommendReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendReadOnly(value: Boolean): Self = this.set("RecommendReadOnly", value.asInstanceOf[js.Any])
+    def setSetPasswordToModify(value: String => Unit): Self = StObject.set(x, "setPasswordToModify", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPasswordToModify(value: () => String): Self = this.set("getPasswordToModify", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRecommendReadOnly(value: () => Boolean): Self = this.set("getRecommendReadOnly", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetPasswordToModify(value: String => Unit): Self = this.set("setPasswordToModify", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRecommendReadOnly(value: Boolean => Unit): Self = this.set("setRecommendReadOnly", js.Any.fromFunction1(value))
+    def setSetRecommendReadOnly(value: Boolean => Unit): Self = StObject.set(x, "setRecommendReadOnly", js.Any.fromFunction1(value))
   }
 }

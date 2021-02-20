@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsCreateRegistrationTokenForOrgResponseData extends js.Object {
+trait ActionsCreateRegistrationTokenForOrgResponseData extends StObject {
   
   var expires_at: String = js.native
   
@@ -20,24 +21,12 @@ object ActionsCreateRegistrationTokenForOrgResponseData {
   }
   
   @scala.inline
-  implicit class ActionsCreateRegistrationTokenForOrgResponseDataOps[Self <: ActionsCreateRegistrationTokenForOrgResponseData] (val x: Self) extends AnyVal {
+  implicit class ActionsCreateRegistrationTokenForOrgResponseDataMutableBuilder[Self <: ActionsCreateRegistrationTokenForOrgResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpires_at(value: String): Self = this.set("expires_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

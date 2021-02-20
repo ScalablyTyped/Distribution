@@ -1,12 +1,13 @@
 package typings.materialUiLab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/SpeedDialIcon/SpeedDialIcon.SpeedDialIconClassKey>> */
 @js.native
-trait PartialClassNameMapSpeedDIcon extends js.Object {
+trait PartialClassNameMapSpeedDIcon extends StObject {
   
   var icon: js.UndefOr[String] = js.native
   
@@ -29,54 +30,42 @@ object PartialClassNameMapSpeedDIcon {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapSpeedDIconOps[Self <: PartialClassNameMapSpeedDIcon] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapSpeedDIconMutableBuilder[Self <: PartialClassNameMapSpeedDIcon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconOpen(value: String): Self = StObject.set(x, "iconOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconOpenUndefined: Self = StObject.set(x, "iconOpen", js.undefined)
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIconWithOpenIconOpen(value: String): Self = StObject.set(x, "iconWithOpenIconOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconOpen(value: String): Self = this.set("iconOpen", value.asInstanceOf[js.Any])
+    def setIconWithOpenIconOpenUndefined: Self = StObject.set(x, "iconWithOpenIconOpen", js.undefined)
     
     @scala.inline
-    def deleteIconOpen: Self = this.set("iconOpen", js.undefined)
+    def setOpenIcon(value: String): Self = StObject.set(x, "openIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconWithOpenIconOpen(value: String): Self = this.set("iconWithOpenIconOpen", value.asInstanceOf[js.Any])
+    def setOpenIconOpen(value: String): Self = StObject.set(x, "openIconOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconWithOpenIconOpen: Self = this.set("iconWithOpenIconOpen", js.undefined)
+    def setOpenIconOpenUndefined: Self = StObject.set(x, "openIconOpen", js.undefined)
     
     @scala.inline
-    def setOpenIcon(value: String): Self = this.set("openIcon", value.asInstanceOf[js.Any])
+    def setOpenIconUndefined: Self = StObject.set(x, "openIcon", js.undefined)
     
     @scala.inline
-    def deleteOpenIcon: Self = this.set("openIcon", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenIconOpen(value: String): Self = this.set("openIconOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenIconOpen: Self = this.set("openIconOpen", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

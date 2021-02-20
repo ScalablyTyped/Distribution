@@ -4,12 +4,13 @@ import typings.ckeditor.CKEDITOR.dom.element
 import typings.ckeditor.CKEDITOR.dom.elementPath
 import typings.ckeditor.CKEDITOR.dom.selection
 import typings.ckeditor.anon.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait menu extends js.Object {
+trait menu extends StObject {
   
   def add(item: js.Any): Unit = js.native
   

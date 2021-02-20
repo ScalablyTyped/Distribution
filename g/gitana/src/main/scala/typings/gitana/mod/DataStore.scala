@@ -1,5 +1,6 @@
 package typings.gitana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,16 +30,30 @@ class DataStore protected () extends Repository {
   
   def readTeam(teamKey: js.Any): js.Any = js.native
 }
-/* static members */
-@JSImport("gitana", "DataStore")
-@js.native
-object DataStore extends js.Object {
+object DataStore {
   
+  /* static member */
+  @JSImport("gitana", "DataStore.extend")
+  @js.native
   def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
   
+  /* static member */
+  @JSImport("gitana", "DataStore.forEach")
+  @js.native
   def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
   
+  /* static member */
+  @JSImport("gitana", "DataStore.implement")
+  @js.native
   def implement(args: js.Any*): js.Any = js.native
   
-  def valueOf(`type`: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("gitana", "DataStore.toString")
+  @js.native
+  def toString_(): js.Any = js.native
+  
+  /* static member */
+  @JSImport("gitana", "DataStore.valueOf")
+  @js.native
+  def valueOf_(`type`: js.Any): js.Any = js.native
 }

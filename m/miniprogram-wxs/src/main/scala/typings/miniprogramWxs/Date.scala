@@ -1,13 +1,14 @@
 package typings.miniprogramWxs
 
 import typings.miniprogramWxs.Intl.DateTimeFormatOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables basic storage and retrieval of dates and times. */
 @js.native
-trait Date extends js.Object {
+trait Date extends StObject {
   
   /** Gets the day-of-the-month, using local time. */
   def getDate(): Double = js.native

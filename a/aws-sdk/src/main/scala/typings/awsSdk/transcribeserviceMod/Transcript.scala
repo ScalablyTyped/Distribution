@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transcript extends js.Object {
+trait Transcript extends StObject {
   
   /**
     * The S3 object location of the redacted transcript. Use this URI to access the redacted transcript. If you specified an S3 bucket in the OutputBucketName field when you created the job, this is the URI of that bucket. If you chose to store the transcript in Amazon Transcribe, this is a shareable URL that provides secure access to that location.
@@ -26,30 +27,18 @@ object Transcript {
   }
   
   @scala.inline
-  implicit class TranscriptOps[Self <: Transcript] (val x: Self) extends AnyVal {
+  implicit class TranscriptMutableBuilder[Self <: Transcript] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRedactedTranscriptFileUri(value: Uri): Self = StObject.set(x, "RedactedTranscriptFileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRedactedTranscriptFileUriUndefined: Self = StObject.set(x, "RedactedTranscriptFileUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTranscriptFileUri(value: Uri): Self = StObject.set(x, "TranscriptFileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedactedTranscriptFileUri(value: Uri): Self = this.set("RedactedTranscriptFileUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedactedTranscriptFileUri: Self = this.set("RedactedTranscriptFileUri", js.undefined)
-    
-    @scala.inline
-    def setTranscriptFileUri(value: Uri): Self = this.set("TranscriptFileUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranscriptFileUri: Self = this.set("TranscriptFileUri", js.undefined)
+    def setTranscriptFileUriUndefined: Self = StObject.set(x, "TranscriptFileUri", js.undefined)
   }
 }

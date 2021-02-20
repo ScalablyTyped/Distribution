@@ -2,12 +2,13 @@ package typings.reactRelay.anon
 
 import typings.reactRelay.entryPointTypesMod.PreloadedQueries
 import typings.relayRuntime.relayRuntimeTypesMod.DisposeFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dispose[TEntryPointComponent] extends js.Object {
+trait Dispose[TEntryPointComponent] extends StObject {
   
   var dispose: DisposeFn = js.native
   
@@ -40,39 +41,27 @@ object Dispose {
   }
   
   @scala.inline
-  implicit class DisposeOps[Self <: Dispose[_], TEntryPointComponent] (val x: Self with Dispose[TEntryPointComponent]) extends AnyVal {
+  implicit class DisposeMutableBuilder[Self <: Dispose[_], TEntryPointComponent] (val x: Self with Dispose[TEntryPointComponent]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntryPoints(value: js.Any): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraProps(value: js.Any): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setGetComponent(value: () => TEntryPointComponent): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEntryPoints(value: js.Any): Self = this.set("entryPoints", value.asInstanceOf[js.Any])
+    def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraProps(value: js.Any): Self = this.set("extraProps", value.asInstanceOf[js.Any])
+    def setQueries(value: PreloadedQueries[_]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetComponent(value: () => TEntryPointComponent): Self = this.set("getComponent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsDisposed(value: Boolean): Self = this.set("isDisposed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueries(value: PreloadedQueries[_]): Self = this.set("queries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRootModuleID(value: String): Self = this.set("rootModuleID", value.asInstanceOf[js.Any])
+    def setRootModuleID(value: String): Self = StObject.set(x, "rootModuleID", value.asInstanceOf[js.Any])
   }
 }

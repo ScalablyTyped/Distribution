@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientEventsGetRequest extends js.Object {
+trait IClientEventsGetRequest extends StObject {
   
   /** ClientEventsGetRequest blockIds */
   var blockIds: js.UndefOr[js.Array[String] | Null] = js.native
@@ -22,42 +23,30 @@ object IClientEventsGetRequest {
   }
   
   @scala.inline
-  implicit class IClientEventsGetRequestOps[Self <: IClientEventsGetRequest] (val x: Self) extends AnyVal {
+  implicit class IClientEventsGetRequestMutableBuilder[Self <: IClientEventsGetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockIds(value: js.Array[String]): Self = StObject.set(x, "blockIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockIdsNull: Self = StObject.set(x, "blockIds", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockIdsUndefined: Self = StObject.set(x, "blockIds", js.undefined)
     
     @scala.inline
-    def setBlockIdsVarargs(value: String*): Self = this.set("blockIds", js.Array(value :_*))
+    def setBlockIdsVarargs(value: String*): Self = StObject.set(x, "blockIds", js.Array(value :_*))
     
     @scala.inline
-    def setBlockIds(value: js.Array[String]): Self = this.set("blockIds", value.asInstanceOf[js.Any])
+    def setSubscriptions(value: js.Array[IEventSubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockIds: Self = this.set("blockIds", js.undefined)
+    def setSubscriptionsNull: Self = StObject.set(x, "subscriptions", null)
     
     @scala.inline
-    def setBlockIdsNull: Self = this.set("blockIds", null)
+    def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
     
     @scala.inline
-    def setSubscriptionsVarargs(value: IEventSubscription*): Self = this.set("subscriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscriptions(value: js.Array[IEventSubscription]): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptions: Self = this.set("subscriptions", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionsNull: Self = this.set("subscriptions", null)
+    def setSubscriptionsVarargs(value: IEventSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
   }
 }

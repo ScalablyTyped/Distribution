@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSource extends js.Object {
+trait DataSource extends StObject {
   
   var binary: js.UndefOr[Boolean] = js.native
   
@@ -69,180 +70,168 @@ object DataSource {
   }
   
   @scala.inline
-  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrowseForFile(value: Boolean): Self = StObject.set(x, "browseForFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setBrowseForFileUndefined: Self = StObject.set(x, "browseForFile", js.undefined)
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowseForFile(value: Boolean): Self = this.set("browseForFile", value.asInstanceOf[js.Any])
+    def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
     
     @scala.inline
-    def deleteBrowseForFile: Self = this.set("browseForFile", js.undefined)
+    def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalog(value: String): Self = this.set("catalog", value.asInstanceOf[js.Any])
+    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
     
     @scala.inline
-    def deleteCatalog: Self = this.set("catalog", js.undefined)
+    def setCustomData(value: String): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCube(value: String): Self = this.set("cube", value.asInstanceOf[js.Any])
+    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
     @scala.inline
-    def deleteCube: Self = this.set("cube", js.undefined)
+    def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomData(value: String): Self = this.set("customData", value.asInstanceOf[js.Any])
+    def setDataSourceInfo(value: String): Self = StObject.set(x, "dataSourceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomData: Self = this.set("customData", js.undefined)
+    def setDataSourceInfoUndefined: Self = StObject.set(x, "dataSourceInfo", js.undefined)
     
     @scala.inline
-    def setDataVarargs(value: js.Object*): Self = this.set("data", js.Array(value :_*))
+    def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[js.Object]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setDataSourceInfo(value: String): Self = this.set("dataSourceInfo", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def deleteDataSourceInfo: Self = this.set("dataSourceInfo", js.undefined)
+    def setEffectiveUserName(value: String): Self = StObject.set(x, "effectiveUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    def setEffectiveUserNameUndefined: Self = StObject.set(x, "effectiveUserName", js.undefined)
     
     @scala.inline
-    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    def setFieldSeparator(value: String): Self = StObject.set(x, "fieldSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveUserName(value: String): Self = this.set("effectiveUserName", value.asInstanceOf[js.Any])
+    def setFieldSeparatorUndefined: Self = StObject.set(x, "fieldSeparator", js.undefined)
     
     @scala.inline
-    def deleteEffectiveUserName: Self = this.set("effectiveUserName", js.undefined)
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldSeparator(value: String): Self = this.set("fieldSeparator", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteFieldSeparator: Self = this.set("fieldSeparator", js.undefined)
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setHost(value: String | js.Array[String] | js.Object): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setHostVarargs(value: String*): Self = StObject.set(x, "host", js.Array(value :_*))
     
     @scala.inline
-    def setHostVarargs(value: String*): Self = this.set("host", js.Array(value :_*))
+    def setIgnoreQuotedLineBreaks(value: Boolean): Self = StObject.set(x, "ignoreQuotedLineBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String | js.Array[String] | js.Object): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setIgnoreQuotedLineBreaksUndefined: Self = StObject.set(x, "ignoreQuotedLineBreaks", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreQuotedLineBreaks(value: Boolean): Self = this.set("ignoreQuotedLineBreaks", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteIgnoreQuotedLineBreaks: Self = this.set("ignoreQuotedLineBreaks", js.undefined)
+    def setLocaleIdentifier(value: String): Self = StObject.set(x, "localeIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLocaleIdentifierUndefined: Self = StObject.set(x, "localeIdentifier", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setMapping(value: js.Object): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleIdentifier(value: String): Self = this.set("localeIdentifier", value.asInstanceOf[js.Any])
+    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
     @scala.inline
-    def deleteLocaleIdentifier: Self = this.set("localeIdentifier", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapping(value: js.Object): Self = this.set("mapping", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteMapping: Self = this.set("mapping", js.undefined)
+    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setRecordsetDelimiter(value: String): Self = StObject.set(x, "recordsetDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyUrl(value: String): Self = this.set("proxyUrl", value.asInstanceOf[js.Any])
+    def setRecordsetDelimiterUndefined: Self = StObject.set(x, "recordsetDelimiter", js.undefined)
     
     @scala.inline
-    def deleteProxyUrl: Self = this.set("proxyUrl", js.undefined)
+    def setRequestHeaders(value: js.Object): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordsetDelimiter(value: String): Self = this.set("recordsetDelimiter", value.asInstanceOf[js.Any])
+    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
     @scala.inline
-    def deleteRecordsetDelimiter: Self = this.set("recordsetDelimiter", js.undefined)
+    def setRoles(value: String): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeaders(value: js.Object): Self = this.set("requestHeaders", value.asInstanceOf[js.Any])
+    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
     @scala.inline
-    def deleteRequestHeaders: Self = this.set("requestHeaders", js.undefined)
+    def setSubquery(value: String | js.Object): Self = StObject.set(x, "subquery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoles(value: String): Self = this.set("roles", value.asInstanceOf[js.Any])
+    def setSubqueryUndefined: Self = StObject.set(x, "subquery", js.undefined)
     
     @scala.inline
-    def deleteRoles: Self = this.set("roles", js.undefined)
+    def setThousandSeparator(value: String): Self = StObject.set(x, "thousandSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubquery(value: String | js.Object): Self = this.set("subquery", value.asInstanceOf[js.Any])
+    def setThousandSeparatorUndefined: Self = StObject.set(x, "thousandSeparator", js.undefined)
     
     @scala.inline
-    def deleteSubquery: Self = this.set("subquery", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThousandSeparator(value: String): Self = this.set("thousandSeparator", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteThousandSeparator: Self = this.set("thousandSeparator", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

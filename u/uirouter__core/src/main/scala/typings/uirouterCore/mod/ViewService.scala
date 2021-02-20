@@ -5,6 +5,7 @@ import typings.uirouterCore.commonCommonMod.TypedMap
 import typings.uirouterCore.viewInterfaceMod.ActiveUIView
 import typings.uirouterCore.viewInterfaceMod.ViewConfig
 import typings.uirouterCore.viewInterfaceMod.ViewContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,7 @@ class ViewService protected ()
   def this(/** @internal */ router: typings.uirouterCore.routerMod.UIRouter) = this()
 }
 /* static members */
-@JSImport("@uirouter/core", "ViewService")
-@js.native
-object ViewService extends js.Object {
+object ViewService {
   
   /**
     * Given a ui-view and a ViewConfig, determines if they "match".
@@ -78,6 +77,8 @@ object ViewService extends js.Object {
     *
     * @internal
     */
+  @JSImport("@uirouter/core", "ViewService.matches")
+  @js.native
   def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = js.native
   
   /**
@@ -91,6 +92,10 @@ object ViewService extends js.Object {
     *
     * @returns the normalized uiViewName and uiViewContextAnchor that the view targets
     */
+  @JSImport("@uirouter/core", "ViewService.normalizeUIViewTarget")
+  @js.native
   def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = js.native
+  @JSImport("@uirouter/core", "ViewService.normalizeUIViewTarget")
+  @js.native
   def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = js.native
 }

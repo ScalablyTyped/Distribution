@@ -1,11 +1,12 @@
 package typings.awsSdk.iot1clickprojectsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceTemplate extends js.Object {
+trait DeviceTemplate extends StObject {
   
   /**
     * An optional Lambda function to invoke instead of the default Lambda function provided by the placement template.
@@ -26,30 +27,18 @@ object DeviceTemplate {
   }
   
   @scala.inline
-  implicit class DeviceTemplateOps[Self <: DeviceTemplate] (val x: Self) extends AnyVal {
+  implicit class DeviceTemplateMutableBuilder[Self <: DeviceTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbackOverrides(value: DeviceCallbackOverrideMap): Self = StObject.set(x, "callbackOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackOverridesUndefined: Self = StObject.set(x, "callbackOverrides", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceType(value: DeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackOverrides(value: DeviceCallbackOverrideMap): Self = this.set("callbackOverrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCallbackOverrides: Self = this.set("callbackOverrides", js.undefined)
-    
-    @scala.inline
-    def setDeviceType(value: DeviceType): Self = this.set("deviceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
   }
 }

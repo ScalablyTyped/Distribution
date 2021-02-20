@@ -3,12 +3,13 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.yandexMapsStrings.always
 import typings.yandexMaps.yandexMapsStrings.ifNull
 import typings.yandexMaps.yandexMapsStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMapOptions extends js.Object {
+trait IMapOptions extends StObject {
   
   var autoFitToViewport: js.UndefOr[none | ifNull | always] = js.native
   
@@ -55,126 +56,114 @@ object IMapOptions {
   }
   
   @scala.inline
-  implicit class IMapOptionsOps[Self <: IMapOptions] (val x: Self) extends AnyVal {
+  implicit class IMapOptionsMutableBuilder[Self <: IMapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFitToViewport(value: none | ifNull | always): Self = StObject.set(x, "autoFitToViewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFitToViewportUndefined: Self = StObject.set(x, "autoFitToViewport", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvoidFractionalZoom(value: Boolean): Self = StObject.set(x, "avoidFractionalZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFitToViewport(value: none | ifNull | always): Self = this.set("autoFitToViewport", value.asInstanceOf[js.Any])
+    def setAvoidFractionalZoomUndefined: Self = StObject.set(x, "avoidFractionalZoom", js.undefined)
     
     @scala.inline
-    def deleteAutoFitToViewport: Self = this.set("autoFitToViewport", js.undefined)
+    def setCopyrightLogoVisible(value: Boolean): Self = StObject.set(x, "copyrightLogoVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidFractionalZoom(value: Boolean): Self = this.set("avoidFractionalZoom", value.asInstanceOf[js.Any])
+    def setCopyrightLogoVisibleUndefined: Self = StObject.set(x, "copyrightLogoVisible", js.undefined)
     
     @scala.inline
-    def deleteAvoidFractionalZoom: Self = this.set("avoidFractionalZoom", js.undefined)
+    def setCopyrightProvidersVisible(value: Boolean): Self = StObject.set(x, "copyrightProvidersVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyrightLogoVisible(value: Boolean): Self = this.set("copyrightLogoVisible", value.asInstanceOf[js.Any])
+    def setCopyrightProvidersVisibleUndefined: Self = StObject.set(x, "copyrightProvidersVisible", js.undefined)
     
     @scala.inline
-    def deleteCopyrightLogoVisible: Self = this.set("copyrightLogoVisible", js.undefined)
+    def setCopyrightUaVisible(value: Boolean): Self = StObject.set(x, "copyrightUaVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyrightProvidersVisible(value: Boolean): Self = this.set("copyrightProvidersVisible", value.asInstanceOf[js.Any])
+    def setCopyrightUaVisibleUndefined: Self = StObject.set(x, "copyrightUaVisible", js.undefined)
     
     @scala.inline
-    def deleteCopyrightProvidersVisible: Self = this.set("copyrightProvidersVisible", js.undefined)
+    def setExitFullscreenByEsc(value: Boolean): Self = StObject.set(x, "exitFullscreenByEsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyrightUaVisible(value: Boolean): Self = this.set("copyrightUaVisible", value.asInstanceOf[js.Any])
+    def setExitFullscreenByEscUndefined: Self = StObject.set(x, "exitFullscreenByEsc", js.undefined)
     
     @scala.inline
-    def deleteCopyrightUaVisible: Self = this.set("copyrightUaVisible", js.undefined)
+    def setFullscreenZIndex(value: Double): Self = StObject.set(x, "fullscreenZIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitFullscreenByEsc(value: Boolean): Self = this.set("exitFullscreenByEsc", value.asInstanceOf[js.Any])
+    def setFullscreenZIndexUndefined: Self = StObject.set(x, "fullscreenZIndex", js.undefined)
     
     @scala.inline
-    def deleteExitFullscreenByEsc: Self = this.set("exitFullscreenByEsc", js.undefined)
+    def setMapAutoFocus(value: Boolean): Self = StObject.set(x, "mapAutoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreenZIndex(value: Double): Self = this.set("fullscreenZIndex", value.asInstanceOf[js.Any])
+    def setMapAutoFocusUndefined: Self = StObject.set(x, "mapAutoFocus", js.undefined)
     
     @scala.inline
-    def deleteFullscreenZIndex: Self = this.set("fullscreenZIndex", js.undefined)
+    def setMaxAnimationZoomDifference(value: Double): Self = StObject.set(x, "maxAnimationZoomDifference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapAutoFocus(value: Boolean): Self = this.set("mapAutoFocus", value.asInstanceOf[js.Any])
+    def setMaxAnimationZoomDifferenceUndefined: Self = StObject.set(x, "maxAnimationZoomDifference", js.undefined)
     
     @scala.inline
-    def deleteMapAutoFocus: Self = this.set("mapAutoFocus", js.undefined)
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAnimationZoomDifference(value: Double): Self = this.set("maxAnimationZoomDifference", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxAnimationZoomDifference: Self = this.set("maxAnimationZoomDifference", js.undefined)
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setNativeFullscreen(value: Boolean): Self = StObject.set(x, "nativeFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setNativeFullscreenUndefined: Self = StObject.set(x, "nativeFullscreen", js.undefined)
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeFullscreen(value: Boolean): Self = this.set("nativeFullscreen", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deleteNativeFullscreen: Self = this.set("nativeFullscreen", js.undefined)
+    def setRestrictMapArea(value: Boolean): Self = StObject.set(x, "restrictMapArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: IProjection): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setRestrictMapAreaUndefined: Self = StObject.set(x, "restrictMapArea", js.undefined)
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setSuppressMapOpenBlock(value: Boolean): Self = StObject.set(x, "suppressMapOpenBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictMapArea(value: Boolean): Self = this.set("restrictMapArea", value.asInstanceOf[js.Any])
+    def setSuppressMapOpenBlockUndefined: Self = StObject.set(x, "suppressMapOpenBlock", js.undefined)
     
     @scala.inline
-    def deleteRestrictMapArea: Self = this.set("restrictMapArea", js.undefined)
+    def setSuppressObsoleteBrowserNotifier(value: Boolean): Self = StObject.set(x, "suppressObsoleteBrowserNotifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressMapOpenBlock(value: Boolean): Self = this.set("suppressMapOpenBlock", value.asInstanceOf[js.Any])
+    def setSuppressObsoleteBrowserNotifierUndefined: Self = StObject.set(x, "suppressObsoleteBrowserNotifier", js.undefined)
     
     @scala.inline
-    def deleteSuppressMapOpenBlock: Self = this.set("suppressMapOpenBlock", js.undefined)
+    def setYandexMapAutoSwitch(value: Boolean): Self = StObject.set(x, "yandexMapAutoSwitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressObsoleteBrowserNotifier(value: Boolean): Self = this.set("suppressObsoleteBrowserNotifier", value.asInstanceOf[js.Any])
+    def setYandexMapAutoSwitchUndefined: Self = StObject.set(x, "yandexMapAutoSwitch", js.undefined)
     
     @scala.inline
-    def deleteSuppressObsoleteBrowserNotifier: Self = this.set("suppressObsoleteBrowserNotifier", js.undefined)
+    def setYandexMapDisablePoiInteractivity(value: Boolean): Self = StObject.set(x, "yandexMapDisablePoiInteractivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYandexMapAutoSwitch(value: Boolean): Self = this.set("yandexMapAutoSwitch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYandexMapAutoSwitch: Self = this.set("yandexMapAutoSwitch", js.undefined)
-    
-    @scala.inline
-    def setYandexMapDisablePoiInteractivity(value: Boolean): Self = this.set("yandexMapDisablePoiInteractivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYandexMapDisablePoiInteractivity: Self = this.set("yandexMapDisablePoiInteractivity", js.undefined)
+    def setYandexMapDisablePoiInteractivityUndefined: Self = StObject.set(x, "yandexMapDisablePoiInteractivity", js.undefined)
   }
 }

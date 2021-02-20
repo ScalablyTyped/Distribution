@@ -3,6 +3,7 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesServer.anon.Particleoffsettowardsinteractor
 import typings.minecraftScriptingTypesServer.anon.Table
 import typings.minecraftScriptingTypesShared.MinecraftTrigger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines the ways the player can interact with the entity to which this component is applied.
   */
 @js.native
-trait IInteractComponent extends js.Object {
+trait IInteractComponent extends StObject {
   
   /**
     * Loot table with items to add to the player's inventory upon successful interaction
@@ -98,63 +99,51 @@ object IInteractComponent {
   }
   
   @scala.inline
-  implicit class IInteractComponentOps[Self <: IInteractComponent] (val x: Self) extends AnyVal {
+  implicit class IInteractComponentMutableBuilder[Self <: IInteractComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd_items(value: Table): Self = StObject.set(x, "add_items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHurt_item(value: Double): Self = StObject.set(x, "hurt_item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd_items(value: Table): Self = this.set("add_items", value.asInstanceOf[js.Any])
+    def setInteract_text(value: String): Self = StObject.set(x, "interact_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCooldown(value: Double): Self = this.set("cooldown", value.asInstanceOf[js.Any])
+    def setOn_interact(value: MinecraftTrigger | String): Self = StObject.set(x, "on_interact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHurt_item(value: Double): Self = this.set("hurt_item", value.asInstanceOf[js.Any])
+    def setParticle_on_start(value: Particleoffsettowardsinteractor): Self = StObject.set(x, "particle_on_start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteract_text(value: String): Self = this.set("interact_text", value.asInstanceOf[js.Any])
+    def setPlay_sounds(value: js.Array[String]): Self = StObject.set(x, "play_sounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn_interact(value: MinecraftTrigger | String): Self = this.set("on_interact", value.asInstanceOf[js.Any])
+    def setPlay_soundsVarargs(value: String*): Self = StObject.set(x, "play_sounds", js.Array(value :_*))
     
     @scala.inline
-    def setParticle_on_start(value: Particleoffsettowardsinteractor): Self = this.set("particle_on_start", value.asInstanceOf[js.Any])
+    def setSpawn_entities(value: js.Array[String]): Self = StObject.set(x, "spawn_entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlay_soundsVarargs(value: String*): Self = this.set("play_sounds", js.Array(value :_*))
+    def setSpawn_entitiesVarargs(value: String*): Self = StObject.set(x, "spawn_entities", js.Array(value :_*))
     
     @scala.inline
-    def setPlay_sounds(value: js.Array[String]): Self = this.set("play_sounds", value.asInstanceOf[js.Any])
+    def setSpawn_items(value: Table): Self = StObject.set(x, "spawn_items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpawn_entitiesVarargs(value: String*): Self = this.set("spawn_entities", js.Array(value :_*))
+    def setSwing(value: Boolean): Self = StObject.set(x, "swing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpawn_entities(value: js.Array[String]): Self = this.set("spawn_entities", value.asInstanceOf[js.Any])
+    def setTransform_to_item(value: String): Self = StObject.set(x, "transform_to_item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpawn_items(value: Table): Self = this.set("spawn_items", value.asInstanceOf[js.Any])
+    def setTransform_to_itemUndefined: Self = StObject.set(x, "transform_to_item", js.undefined)
     
     @scala.inline
-    def setSwing(value: Boolean): Self = this.set("swing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUse_item(value: Boolean): Self = this.set("use_item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransform_to_item(value: String): Self = this.set("transform_to_item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransform_to_item: Self = this.set("transform_to_item", js.undefined)
+    def setUse_item(value: Boolean): Self = StObject.set(x, "use_item", value.asInstanceOf[js.Any])
   }
 }

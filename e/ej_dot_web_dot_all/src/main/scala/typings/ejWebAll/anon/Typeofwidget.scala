@@ -1,12 +1,13 @@
 package typings.ejWebAll.anon
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofwidget extends js.Object {
+trait Typeofwidget extends StObject {
   
   val autoInit: Boolean = js.native
   
@@ -39,45 +40,33 @@ object Typeofwidget {
   }
   
   @scala.inline
-  implicit class TypeofwidgetOps[Self <: Typeofwidget] (val x: Self) extends AnyVal {
+  implicit class TypeofwidgetMutableBuilder[Self <: Typeofwidget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoInit(value: Boolean): Self = StObject.set(x, "autoInit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroyAll(value: Element => Unit): Self = StObject.set(x, "destroyAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInit(value: Element => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoInit(value: Boolean): Self = this.set("autoInit", value.asInstanceOf[js.Any])
+    def setRegister(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDestroyAll(value: Element => Unit): Self = this.set("destroyAll", js.Any.fromFunction1(value))
+    def setRegisterInstance(value: (Element, String, String, js.Any) => Unit): Self = StObject.set(x, "registerInstance", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setInit(value: Element => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setRegisteredInstances(value: js.Array[_]): Self = StObject.set(x, "registeredInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegister(value: (String, String, js.Any) => Unit): Self = this.set("register", js.Any.fromFunction3(value))
+    def setRegisteredInstancesVarargs(value: js.Any*): Self = StObject.set(x, "registeredInstances", js.Array(value :_*))
     
     @scala.inline
-    def setRegisterInstance(value: (Element, String, String, js.Any) => Unit): Self = this.set("registerInstance", js.Any.fromFunction4(value))
+    def setRegisteredWidgets(value: js.Array[_]): Self = StObject.set(x, "registeredWidgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredInstancesVarargs(value: js.Any*): Self = this.set("registeredInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegisteredInstances(value: js.Array[_]): Self = this.set("registeredInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegisteredWidgetsVarargs(value: js.Any*): Self = this.set("registeredWidgets", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegisteredWidgets(value: js.Array[_]): Self = this.set("registeredWidgets", value.asInstanceOf[js.Any])
+    def setRegisteredWidgetsVarargs(value: js.Any*): Self = StObject.set(x, "registeredWidgets", js.Array(value :_*))
   }
 }

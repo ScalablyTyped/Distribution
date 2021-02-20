@@ -46,12 +46,13 @@ import typings.electron.electronStrings.windowMenu
 import typings.electron.electronStrings.zoom
 import typings.electron.electronStrings.zoomIn
 import typings.electron.electronStrings.zoomOut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MenuItemConstructorOptions extends js.Object {
+trait MenuItemConstructorOptions extends StObject {
   
   var accelerator: js.UndefOr[Accelerator] = js.native
   
@@ -182,151 +183,139 @@ object MenuItemConstructorOptions {
   }
   
   @scala.inline
-  implicit class MenuItemConstructorOptionsOps[Self <: MenuItemConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class MenuItemConstructorOptionsMutableBuilder[Self <: MenuItemConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerator(value: Accelerator): Self = StObject.set(x, "accelerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorUndefined: Self = StObject.set(x, "accelerator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceleratorWorksWhenHidden(value: Boolean): Self = StObject.set(x, "acceleratorWorksWhenHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerator(value: Accelerator): Self = this.set("accelerator", value.asInstanceOf[js.Any])
+    def setAcceleratorWorksWhenHiddenUndefined: Self = StObject.set(x, "acceleratorWorksWhenHidden", js.undefined)
     
     @scala.inline
-    def deleteAccelerator: Self = this.set("accelerator", js.undefined)
+    def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorWorksWhenHidden(value: Boolean): Self = this.set("acceleratorWorksWhenHidden", value.asInstanceOf[js.Any])
+    def setAfterGroupContaining(value: js.Array[String]): Self = StObject.set(x, "afterGroupContaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAcceleratorWorksWhenHidden: Self = this.set("acceleratorWorksWhenHidden", js.undefined)
+    def setAfterGroupContainingUndefined: Self = StObject.set(x, "afterGroupContaining", js.undefined)
     
     @scala.inline
-    def setAfterVarargs(value: String*): Self = this.set("after", js.Array(value :_*))
+    def setAfterGroupContainingVarargs(value: String*): Self = StObject.set(x, "afterGroupContaining", js.Array(value :_*))
     
     @scala.inline
-    def setAfter(value: js.Array[String]): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
     @scala.inline
-    def setAfterGroupContainingVarargs(value: String*): Self = this.set("afterGroupContaining", js.Array(value :_*))
+    def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterGroupContaining(value: js.Array[String]): Self = this.set("afterGroupContaining", value.asInstanceOf[js.Any])
+    def setBeforeGroupContaining(value: js.Array[String]): Self = StObject.set(x, "beforeGroupContaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterGroupContaining: Self = this.set("afterGroupContaining", js.undefined)
+    def setBeforeGroupContainingUndefined: Self = StObject.set(x, "beforeGroupContaining", js.undefined)
     
     @scala.inline
-    def setBeforeVarargs(value: String*): Self = this.set("before", js.Array(value :_*))
+    def setBeforeGroupContainingVarargs(value: String*): Self = StObject.set(x, "beforeGroupContaining", js.Array(value :_*))
     
     @scala.inline
-    def setBefore(value: js.Array[String]): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
     
     @scala.inline
-    def setBeforeGroupContainingVarargs(value: String*): Self = this.set("beforeGroupContaining", js.Array(value :_*))
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeGroupContaining(value: js.Array[String]): Self = this.set("beforeGroupContaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeforeGroupContaining: Self = this.set("beforeGroupContaining", js.undefined)
-    
-    @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
     def setClick(
       value: (/* menuItem */ MenuItem, /* browserWindow */ js.UndefOr[BrowserWindow], /* event */ KeyboardEvent) => Unit
-    ): Self = this.set("click", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "click", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setIcon(value: NativeImage_ | String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setRegisterAccelerator(value: Boolean): Self = this.set("registerAccelerator", value.asInstanceOf[js.Any])
+    def setRegisterAccelerator(value: Boolean): Self = StObject.set(x, "registerAccelerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegisterAccelerator: Self = this.set("registerAccelerator", js.undefined)
+    def setRegisterAcceleratorUndefined: Self = StObject.set(x, "registerAccelerator", js.undefined)
     
     @scala.inline
     def setRole(
       value: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
-    ): Self = this.set("role", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def setSublabel(value: String): Self = this.set("sublabel", value.asInstanceOf[js.Any])
+    def setSublabel(value: String): Self = StObject.set(x, "sublabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSublabel: Self = this.set("sublabel", js.undefined)
+    def setSublabelUndefined: Self = StObject.set(x, "sublabel", js.undefined)
     
     @scala.inline
-    def setSubmenuVarargs(value: MenuItemConstructorOptions*): Self = this.set("submenu", js.Array(value :_*))
+    def setSubmenu(value: js.Array[MenuItemConstructorOptions] | Menu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmenu(value: js.Array[MenuItemConstructorOptions] | Menu): Self = this.set("submenu", value.asInstanceOf[js.Any])
+    def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
     
     @scala.inline
-    def deleteSubmenu: Self = this.set("submenu", js.undefined)
+    def setSubmenuVarargs(value: MenuItemConstructorOptions*): Self = StObject.set(x, "submenu", js.Array(value :_*))
     
     @scala.inline
-    def setToolTip(value: String): Self = this.set("toolTip", value.asInstanceOf[js.Any])
+    def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToolTip: Self = this.set("toolTip", js.undefined)
+    def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
     
     @scala.inline
-    def setType(value: normal | separator | submenu | checkbox | radio): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: normal | separator | submenu | checkbox | radio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

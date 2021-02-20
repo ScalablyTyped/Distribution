@@ -1,5 +1,6 @@
 package typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * detection.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotation extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotation extends StObject {
   
   /**
     * All video segments where OCR detected text appears.
@@ -31,33 +32,21 @@ object SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotation {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotationOps[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotation] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotationMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSegments(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1TextSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def setSegmentsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1TextSegment*): Self = this.set("segments", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1TextSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegments: Self = this.set("segments", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

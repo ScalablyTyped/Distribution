@@ -1,11 +1,12 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorksheetProtection extends js.Object {
+trait WorksheetProtection extends StObject {
   
   var autoFilter: Boolean = js.native
   
@@ -62,63 +63,51 @@ object WorksheetProtection {
   }
   
   @scala.inline
-  implicit class WorksheetProtectionOps[Self <: WorksheetProtection] (val x: Self) extends AnyVal {
+  implicit class WorksheetProtectionMutableBuilder[Self <: WorksheetProtection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFilter(value: Boolean): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteColumns(value: Boolean): Self = StObject.set(x, "deleteColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteRows(value: Boolean): Self = StObject.set(x, "deleteRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFilter(value: Boolean): Self = this.set("autoFilter", value.asInstanceOf[js.Any])
+    def setFormatCells(value: Boolean): Self = StObject.set(x, "formatCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteColumns(value: Boolean): Self = this.set("deleteColumns", value.asInstanceOf[js.Any])
+    def setFormatColumns(value: Boolean): Self = StObject.set(x, "formatColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteRows(value: Boolean): Self = this.set("deleteRows", value.asInstanceOf[js.Any])
+    def setFormatRows(value: Boolean): Self = StObject.set(x, "formatRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatCells(value: Boolean): Self = this.set("formatCells", value.asInstanceOf[js.Any])
+    def setInsertColumns(value: Boolean): Self = StObject.set(x, "insertColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatColumns(value: Boolean): Self = this.set("formatColumns", value.asInstanceOf[js.Any])
+    def setInsertHyperlinks(value: Boolean): Self = StObject.set(x, "insertHyperlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatRows(value: Boolean): Self = this.set("formatRows", value.asInstanceOf[js.Any])
+    def setInsertRows(value: Boolean): Self = StObject.set(x, "insertRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertColumns(value: Boolean): Self = this.set("insertColumns", value.asInstanceOf[js.Any])
+    def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertHyperlinks(value: Boolean): Self = this.set("insertHyperlinks", value.asInstanceOf[js.Any])
+    def setPivotTables(value: Boolean): Self = StObject.set(x, "pivotTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertRows(value: Boolean): Self = this.set("insertRows", value.asInstanceOf[js.Any])
+    def setScenarios(value: Boolean): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjects(value: Boolean): Self = this.set("objects", value.asInstanceOf[js.Any])
+    def setSelectLockedCells(value: Boolean): Self = StObject.set(x, "selectLockedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotTables(value: Boolean): Self = this.set("pivotTables", value.asInstanceOf[js.Any])
+    def setSelectUnlockedCells(value: Boolean): Self = StObject.set(x, "selectUnlockedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScenarios(value: Boolean): Self = this.set("scenarios", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectLockedCells(value: Boolean): Self = this.set("selectLockedCells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectUnlockedCells(value: Boolean): Self = this.set("selectUnlockedCells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSort(value: Boolean): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
   }
 }

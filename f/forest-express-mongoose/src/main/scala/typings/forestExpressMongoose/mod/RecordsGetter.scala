@@ -3,13 +3,15 @@ package typings.forestExpressMongoose.mod
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forest-express-mongoose", "RecordsGetter")
 @js.native
-class RecordsGetter () extends AbstractRecordTool {
+class RecordsGetter protected () extends AbstractRecordTool {
+  def this(model: js.Object) = this()
   
   def getAll(params: Params): js.Promise[js.Array[js.Object]] = js.native
   

@@ -2,12 +2,13 @@ package typings.jwplayer.jwplayer
 
 import typings.jwplayer.jwplayerNumbers.`0`
 import typings.jwplayer.jwplayerNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirstFrameParam extends js.Object {
+trait FirstFrameParam extends StObject {
   
   var loadTime: Double = js.native
   
@@ -22,24 +23,12 @@ object FirstFrameParam {
   }
   
   @scala.inline
-  implicit class FirstFrameParamOps[Self <: FirstFrameParam] (val x: Self) extends AnyVal {
+  implicit class FirstFrameParamMutableBuilder[Self <: FirstFrameParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadTime(value: Double): Self = StObject.set(x, "loadTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoadTime(value: Double): Self = this.set("loadTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewable(value: `0` | `1`): Self = this.set("viewable", value.asInstanceOf[js.Any])
+    def setViewable(value: `0` | `1`): Self = StObject.set(x, "viewable", value.asInstanceOf[js.Any])
   }
 }

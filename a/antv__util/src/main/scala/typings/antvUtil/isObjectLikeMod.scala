@@ -1,12 +1,13 @@
 package typings.antvUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/util/lib/is-object-like", JSImport.Namespace)
-@js.native
-object isObjectLikeMod extends js.Object {
+object isObjectLikeMod {
   
+  @JSImport("@antv/util/lib/is-object-like", JSImport.Default)
+  @js.native
   def default(value: js.Any): /* is object */ Boolean = js.native
 }

@@ -3,14 +3,14 @@ package typings.three
 import typings.three.colorMod.Color
 import typings.three.object3DMod.Object3D
 import typings.three.pointLightMod.PointLight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/helpers/PointLightHelper", JSImport.Namespace)
-@js.native
-object pointLightHelperMod extends js.Object {
+object pointLightHelperMod {
   
+  @JSImport("three/src/helpers/PointLightHelper", "PointLightHelper")
   @js.native
   class PointLightHelper protected () extends Object3D {
     def this(light: PointLight) = this()

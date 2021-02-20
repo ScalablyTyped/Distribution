@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadMultipartPartOutput extends js.Object {
+trait UploadMultipartPartOutput extends StObject {
   
   /**
     * The SHA256 tree hash that Amazon S3 Glacier computed for the uploaded part.
@@ -21,24 +22,12 @@ object UploadMultipartPartOutput {
   }
   
   @scala.inline
-  implicit class UploadMultipartPartOutputOps[Self <: UploadMultipartPartOutput] (val x: Self) extends AnyVal {
+  implicit class UploadMultipartPartOutputMutableBuilder[Self <: UploadMultipartPartOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
   }
 }

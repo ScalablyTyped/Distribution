@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.beans
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,33 +67,21 @@ object XPropertyWithState {
   }
   
   @scala.inline
-  implicit class XPropertyWithStateOps[Self <: XPropertyWithState] (val x: Self) extends AnyVal {
+  implicit class XPropertyWithStateMutableBuilder[Self <: XPropertyWithState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultAsProperty(value: XInterface): Self = StObject.set(x, "DefaultAsProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDefaultAsProperty(value: () => XInterface): Self = StObject.set(x, "getDefaultAsProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStateAsProperty(value: () => PropertyState): Self = StObject.set(x, "getStateAsProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultAsProperty(value: XInterface): Self = this.set("DefaultAsProperty", value.asInstanceOf[js.Any])
+    def setSetToDefaultAsProperty(value: () => Unit): Self = StObject.set(x, "setToDefaultAsProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStateAsProperty(value: PropertyState): Self = this.set("StateAsProperty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDefaultAsProperty(value: () => XInterface): Self = this.set("getDefaultAsProperty", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStateAsProperty(value: () => PropertyState): Self = this.set("getStateAsProperty", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetToDefaultAsProperty(value: () => Unit): Self = this.set("setToDefaultAsProperty", js.Any.fromFunction0(value))
+    def setStateAsProperty(value: PropertyState): Self = StObject.set(x, "StateAsProperty", value.asInstanceOf[js.Any])
   }
 }

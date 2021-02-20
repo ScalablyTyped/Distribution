@@ -4,12 +4,13 @@ import typings.vexflow.Vex.Flow.StaveConnector.`type`
 import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Shiftx
 import typings.vexflow.anon.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaveConnector extends js.Object {
+trait StaveConnector extends StObject {
   
   var bottom_stave: Stave = js.native
   
@@ -26,7 +27,7 @@ trait StaveConnector extends js.Object {
   
   def setType(`type`: `type`): StaveConnector = js.native
   
-   //inconsistent type: void -> StaveConnector
+  //inconsistent type: void -> StaveConnector
   def setXShift(x_shift: Double): StaveConnector = js.native
   
   var thickness: Double = js.native
@@ -35,14 +36,13 @@ trait StaveConnector extends js.Object {
   
   var x_shift: Double = js.native
 }
-@JSGlobal("Vex.Flow.StaveConnector")
-@js.native
-object StaveConnector extends js.Object {
+object StaveConnector {
   
   @js.native
-  sealed trait `type` extends js.Object
+  sealed trait `type` extends StObject
+  @JSGlobal("Vex.Flow.StaveConnector.type")
   @js.native
-  object `type` extends js.Object {
+  object `type` extends StObject {
     
     @js.native
     sealed trait BOLD_DOUBLE_LEFT extends `type`

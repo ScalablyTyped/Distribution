@@ -1,13 +1,13 @@
 package typings.awsSdkClientLambdaNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/model/_EnvironmentError", JSImport.Namespace)
-@js.native
-object environmentErrorMod extends js.Object {
+object environmentErrorMod {
   
-  @JSName("_EnvironmentError")
+  @JSImport("@aws-sdk/client-lambda-node/model/_EnvironmentError", "_EnvironmentError")
+  @js.native
   val EnvironmentError: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

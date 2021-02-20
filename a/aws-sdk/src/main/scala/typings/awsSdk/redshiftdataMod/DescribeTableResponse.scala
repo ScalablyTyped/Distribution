@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftdataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTableResponse extends js.Object {
+trait DescribeTableResponse extends StObject {
   
   /**
     * A list of columns in the table. 
@@ -31,39 +32,27 @@ object DescribeTableResponse {
   }
   
   @scala.inline
-  implicit class DescribeTableResponseOps[Self <: DescribeTableResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeTableResponseMutableBuilder[Self <: DescribeTableResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnList(value: ColumnList): Self = StObject.set(x, "ColumnList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnListUndefined: Self = StObject.set(x, "ColumnList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnListVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnList", js.Array(value :_*))
     
     @scala.inline
-    def setColumnListVarargs(value: ColumnMetadata*): Self = this.set("ColumnList", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnList(value: ColumnList): Self = this.set("ColumnList", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteColumnList: Self = this.set("ColumnList", js.undefined)
+    def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTableName(value: String): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

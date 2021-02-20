@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.autoscaling.v2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * HorizontalPodAutoscalerSpec describes the desired functionality of the HorizontalPodAutoscaler.
   */
 @js.native
-trait HorizontalPodAutoscalerSpec extends js.Object {
+trait HorizontalPodAutoscalerSpec extends StObject {
   
   /**
     * maxReplicas is the upper limit for the number of replicas to which the autoscaler can scale up. It cannot be less that minReplicas.
@@ -44,33 +45,21 @@ object HorizontalPodAutoscalerSpec {
   }
   
   @scala.inline
-  implicit class HorizontalPodAutoscalerSpecOps[Self <: HorizontalPodAutoscalerSpec] (val x: Self) extends AnyVal {
+  implicit class HorizontalPodAutoscalerSpecMutableBuilder[Self <: HorizontalPodAutoscalerSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxReplicas(value: Double): Self = StObject.set(x, "maxReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetrics(value: js.Array[MetricSpec]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricsVarargs(value: MetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMaxReplicas(value: Double): Self = this.set("maxReplicas", value.asInstanceOf[js.Any])
+    def setMinReplicas(value: Double): Self = StObject.set(x, "minReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricsVarargs(value: MetricSpec*): Self = this.set("metrics", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetrics(value: js.Array[MetricSpec]): Self = this.set("metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinReplicas(value: Double): Self = this.set("minReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleTargetRef(value: CrossVersionObjectReference): Self = this.set("scaleTargetRef", value.asInstanceOf[js.Any])
+    def setScaleTargetRef(value: CrossVersionObjectReference): Self = StObject.set(x, "scaleTargetRef", value.asInstanceOf[js.Any])
   }
 }

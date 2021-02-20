@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.xml.dom
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,33 +81,21 @@ object XProcessingInstruction {
   }
   
   @scala.inline
-  implicit class XProcessingInstructionOps[Self <: XProcessingInstruction] (val x: Self) extends AnyVal {
+  implicit class XProcessingInstructionMutableBuilder[Self <: XProcessingInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTarget(value: () => String): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: String): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("Target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetData(value: () => String): Self = this.set("getData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTarget(value: () => String): Self = this.set("getTarget", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetData(value: String => Unit): Self = this.set("setData", js.Any.fromFunction1(value))
+    def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.onfleetNodeOnfleet.anon
 
 import typings.onfleetNodeOnfleet.workersMod.OnfleetWorker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Workers extends js.Object {
+trait Workers extends StObject {
   
   var workers: js.Array[OnfleetWorker] = js.native
 }
@@ -19,24 +20,12 @@ object Workers {
   }
   
   @scala.inline
-  implicit class WorkersOps[Self <: Workers] (val x: Self) extends AnyVal {
+  implicit class WorkersMutableBuilder[Self <: Workers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkers(value: js.Array[OnfleetWorker]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkersVarargs(value: OnfleetWorker*): Self = this.set("workers", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkers(value: js.Array[OnfleetWorker]): Self = this.set("workers", value.asInstanceOf[js.Any])
+    def setWorkersVarargs(value: OnfleetWorker*): Self = StObject.set(x, "workers", js.Array(value :_*))
   }
 }

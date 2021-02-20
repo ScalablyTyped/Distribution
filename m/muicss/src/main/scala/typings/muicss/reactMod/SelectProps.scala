@@ -3,6 +3,7 @@ package typings.muicss.reactMod
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,36 +26,24 @@ object SelectProps {
   }
   
   @scala.inline
-  implicit class SelectPropsOps[Self <: SelectProps] (val x: Self) extends AnyVal {
+  implicit class SelectPropsMutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: ReactNode): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
-    
-    @scala.inline
-    def setUseDefault(value: Boolean): Self = this.set("useDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseDefault: Self = this.set("useDefault", js.undefined)
+    def setUseDefaultUndefined: Self = StObject.set(x, "useDefault", js.undefined)
   }
 }

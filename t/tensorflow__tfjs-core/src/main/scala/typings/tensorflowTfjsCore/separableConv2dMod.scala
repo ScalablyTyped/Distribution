@@ -7,25 +7,22 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NHWC
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/separable_conv2d", JSImport.Namespace)
-@js.native
-object separableConv2dMod extends js.Object {
+object separableConv2dMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/separable_conv2d", "separableConv2d")
   @js.native
-  object separableConv2d extends js.Object {
-    
-    def apply[T /* <: Tensor3D | Tensor4D */](
-      x: T | TensorLike,
-      depthwiseFilter: Tensor4D | TensorLike,
-      pointwiseFilter: Tensor4D | TensorLike,
-      strides: (js.Tuple2[Double, Double]) | Double,
-      pad: valid_ | same_,
-      dilation: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
-      dataFormat: js.UndefOr[NHWC | NCHW]
-    ): T = js.native
-  }
+  def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    depthwiseFilter: Tensor4D | TensorLike,
+    pointwiseFilter: Tensor4D | TensorLike,
+    strides: (js.Tuple2[Double, Double]) | Double,
+    pad: valid_ | same_,
+    dilation: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+    dataFormat: js.UndefOr[NHWC | NCHW]
+  ): T = js.native
 }

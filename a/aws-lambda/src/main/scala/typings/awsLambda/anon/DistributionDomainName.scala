@@ -4,12 +4,13 @@ import typings.awsLambda.awsLambdaStrings.`origin-request`
 import typings.awsLambda.awsLambdaStrings.`origin-response`
 import typings.awsLambda.awsLambdaStrings.`viewer-request`
 import typings.awsLambda.awsLambdaStrings.`viewer-response`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionDomainName extends js.Object {
+trait DistributionDomainName extends StObject {
   
   val distributionDomainName: String = js.native
   
@@ -33,30 +34,18 @@ object DistributionDomainName {
   }
   
   @scala.inline
-  implicit class DistributionDomainNameOps[Self <: DistributionDomainName] (val x: Self) extends AnyVal {
+  implicit class DistributionDomainNameMutableBuilder[Self <: DistributionDomainName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistributionDomainName(value: String): Self = StObject.set(x, "distributionDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistributionId(value: String): Self = StObject.set(x, "distributionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventType(value: `origin-request` | `origin-response` | `viewer-request` | `viewer-response`): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionDomainName(value: String): Self = this.set("distributionDomainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDistributionId(value: String): Self = this.set("distributionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventType(value: `origin-request` | `origin-response` | `viewer-request` | `viewer-response`): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

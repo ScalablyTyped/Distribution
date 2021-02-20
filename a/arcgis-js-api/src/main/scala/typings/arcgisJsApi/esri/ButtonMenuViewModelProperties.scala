@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonMenuViewModelProperties extends js.Object {
+trait ButtonMenuViewModelProperties extends StObject {
   
   /**
     * An array of individual [menu items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html).
@@ -30,33 +31,21 @@ object ButtonMenuViewModelProperties {
   }
   
   @scala.inline
-  implicit class ButtonMenuViewModelPropertiesOps[Self <: ButtonMenuViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class ButtonMenuViewModelPropertiesMutableBuilder[Self <: ButtonMenuViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[ButtonMenuItemProperties]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: ButtonMenuItemProperties*): Self = this.set("items", js.Array(value :_*))
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[ButtonMenuItemProperties]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
-    
-    @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

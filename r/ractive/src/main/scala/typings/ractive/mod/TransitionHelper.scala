@@ -3,12 +3,13 @@ package typings.ractive.mod
 import typings.ractive.ractiveStrings.fast
 import typings.ractive.ractiveStrings.slow
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitionHelper extends js.Object {
+trait TransitionHelper extends StObject {
   
   /**
   	 * Animate the given map of properties.

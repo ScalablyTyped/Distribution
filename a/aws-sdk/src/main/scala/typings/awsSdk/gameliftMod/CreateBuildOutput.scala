@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBuildOutput extends js.Object {
+trait CreateBuildOutput extends StObject {
   
   /**
     * The newly created build resource, including a unique build IDs and status. 
@@ -31,36 +32,24 @@ object CreateBuildOutput {
   }
   
   @scala.inline
-  implicit class CreateBuildOutputOps[Self <: CreateBuildOutput] (val x: Self) extends AnyVal {
+  implicit class CreateBuildOutputMutableBuilder[Self <: CreateBuildOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: Build): Self = StObject.set(x, "Build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildUndefined: Self = StObject.set(x, "Build", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorageLocation(value: S3Location): Self = StObject.set(x, "StorageLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: Build): Self = this.set("Build", value.asInstanceOf[js.Any])
+    def setStorageLocationUndefined: Self = StObject.set(x, "StorageLocation", js.undefined)
     
     @scala.inline
-    def deleteBuild: Self = this.set("Build", js.undefined)
+    def setUploadCredentials(value: AwsCredentials): Self = StObject.set(x, "UploadCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageLocation(value: S3Location): Self = this.set("StorageLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageLocation: Self = this.set("StorageLocation", js.undefined)
-    
-    @scala.inline
-    def setUploadCredentials(value: AwsCredentials): Self = this.set("UploadCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadCredentials: Self = this.set("UploadCredentials", js.undefined)
+    def setUploadCredentialsUndefined: Self = StObject.set(x, "UploadCredentials", js.undefined)
   }
 }

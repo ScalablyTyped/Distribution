@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRecipeRequest extends js.Object {
+trait CreateRecipeRequest extends StObject {
   
   /**
     * A description for the recipe.
@@ -36,39 +37,27 @@ object CreateRecipeRequest {
   }
   
   @scala.inline
-  implicit class CreateRecipeRequestOps[Self <: CreateRecipeRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRecipeRequestMutableBuilder[Self <: CreateRecipeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: RecipeDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: RecipeName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSteps(value: RecipeStepList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepsVarargs(value: RecipeStep*): Self = this.set("Steps", js.Array(value :_*))
+    def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value :_*))
     
     @scala.inline
-    def setSteps(value: RecipeStepList): Self = this.set("Steps", value.asInstanceOf[js.Any])
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: RecipeDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

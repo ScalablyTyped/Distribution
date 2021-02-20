@@ -7,141 +7,27 @@ import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
 import typings.phaser.Phaser.Types.Tweens.TweenConfigDefaults
 import typings.phaser.Phaser.Types.Tweens.TweenDataConfig
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("phaser", "Tweens")
-@js.native
-object Tweens extends js.Object {
+object Tweens {
   
-  /**
-    * Tween state.
-    */
-  var ACTIVE: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var COMPLETE: integer = js.native
-  
-  /**
-    * Tween state.
-    */
-  var COMPLETE_DELAY: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var CREATED: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var DELAY: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var HOLD_DELAY: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var INIT: integer = js.native
-  
-  /**
-    * Tween state.
-    */
-  var LOOP_DELAY: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var OFFSET_DELAY: integer = js.native
-  
-  /**
-    * Tween state.
-    */
-  var PAUSED: integer = js.native
-  
-  /**
-    * Tween state.
-    */
-  var PENDING_ADD: integer = js.native
-  
-  /**
-    * Tween state.
-    */
-  var PENDING_REMOVE: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var PENDING_RENDER: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var PLAYING_BACKWARD: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var PLAYING_FORWARD: integer = js.native
-  
-  /**
-    * Tween state.
-    */
-  var REMOVED: integer = js.native
-  
-  /**
-    * TweenData state.
-    */
-  var REPEAT_DELAY: integer = js.native
-  
-  /**
-    * Returns a TweenDataConfig object that describes the tween data for a unique property of a unique target.
-    * A single Tween consists of multiple TweenDatas, depending on how many properties are being changed by the Tween.
-    * 
-    * This is an internal function used by the TweenBuilder and should not be accessed directly, instead,
-    * Tweens should be created using the GameObjectFactory or GameObjectCreator.
-    * @param target The target to tween.
-    * @param index The target index within the Tween targets array.
-    * @param key The property of the target to tween.
-    * @param getEnd What the property will be at the END of the Tween.
-    * @param getStart What the property will be at the START of the Tween.
-    * @param getActive If not null, is invoked _immediately_ as soon as the TweenData is running, and is set on the target property.
-    * @param ease The ease function this tween uses.
-    * @param delay Time in ms/frames before tween will start.
-    * @param duration Duration of the tween in ms/frames.
-    * @param yoyo Determines whether the tween should return back to its start value after hold has expired.
-    * @param hold Time in ms/frames the tween will pause before repeating or returning to its starting value if yoyo is set to true.
-    * @param repeat Number of times to repeat the tween. The tween will always run once regardless, so a repeat value of '1' will play the tween twice.
-    * @param repeatDelay Time in ms/frames before the repeat will start.
-    * @param flipX Should toggleFlipX be called when yoyo or repeat happens?
-    * @param flipY Should toggleFlipY be called when yoyo or repeat happens?
-    */
-  def TweenData(
-    target: js.Any,
-    index: integer,
-    key: String,
-    getEnd: js.Function,
-    getStart: js.Function,
-    getActive: js.Function,
-    ease: js.Function,
-    delay: Double,
-    duration: Double,
-    yoyo: Boolean,
-    hold: Double,
-    repeat: Double,
-    repeatDelay: Double,
-    flipX: Boolean,
-    flipY: Boolean
-  ): TweenDataConfig = js.native
-  
+  @JSImport("phaser", "Tweens")
   @js.native
-  object Builders extends js.Object {
+  val ^ : js.Any = js.native
+  
+  /**
+    * Tween state.
+    */
+  @JSImport("phaser", "Tweens.ACTIVE")
+  @js.native
+  def ACTIVE: integer = js.native
+  @scala.inline
+  def ACTIVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+  
+  object Builders {
     
     /**
       * Retrieves the value of the given key from an object.
@@ -149,6 +35,8 @@ object Tweens extends js.Object {
       * @param key The key to look for in the `source` object.
       * @param defaultValue The default value to return if the `key` doesn't exist or if no `source` object is provided.
       */
+    @JSImport("phaser", "Tweens.Builders.GetBoolean")
+    @js.native
     def GetBoolean(source: js.Object, key: String, defaultValue: js.Any): js.Any = js.native
     
     /**
@@ -158,9 +46,17 @@ object Tweens extends js.Object {
       * @param ease The ease to find. This can be either a string from the EaseMap, or a custom function.
       * @param easeParams An optional array of ease parameters to go with the ease.
       */
+    @JSImport("phaser", "Tweens.Builders.GetEaseFunction")
+    @js.native
     def GetEaseFunction(ease: String): js.Function = js.native
+    @JSImport("phaser", "Tweens.Builders.GetEaseFunction")
+    @js.native
     def GetEaseFunction(ease: String, easeParams: js.Array[Double]): js.Function = js.native
+    @JSImport("phaser", "Tweens.Builders.GetEaseFunction")
+    @js.native
     def GetEaseFunction(ease: js.Function): js.Function = js.native
+    @JSImport("phaser", "Tweens.Builders.GetEaseFunction")
+    @js.native
     def GetEaseFunction(ease: js.Function, easeParams: js.Array[Double]): js.Function = js.native
     
     /**
@@ -170,6 +66,8 @@ object Tweens extends js.Object {
       * @param key The property to get from the source.
       * @param defaultValue A default value to return should the source not have the property set.
       */
+    @JSImport("phaser", "Tweens.Builders.GetNewValue")
+    @js.native
     def GetNewValue(source: js.Any, key: String, defaultValue: js.Any): js.Function = js.native
     
     /**
@@ -179,6 +77,8 @@ object Tweens extends js.Object {
       * none of the direct properties are on the Reserved list.
       * @param config The configuration object of the Tween to get the properties from.
       */
+    @JSImport("phaser", "Tweens.Builders.GetProps")
+    @js.native
     def GetProps(config: TweenBuilderConfig): js.Array[String] = js.native
     
     /**
@@ -187,6 +87,8 @@ object Tweens extends js.Object {
       * The targets will be looked for in a `targets` property. If it's a function, its return value will be used as the result.
       * @param config The configuration object to use.
       */
+    @JSImport("phaser", "Tweens.Builders.GetTargets")
+    @js.native
     def GetTargets(config: js.Object): js.Array[_] = js.native
     
     /**
@@ -195,6 +97,8 @@ object Tweens extends js.Object {
       * It returns an array of all tweens in the given timeline config.
       * @param config The configuration object for the Timeline.
       */
+    @JSImport("phaser", "Tweens.Builders.GetTweens")
+    @js.native
     def GetTweens(config: TimelineBuilderConfig): js.Array[typings.phaser.Phaser.Tweens.Tween] = js.native
     
     /**
@@ -219,8 +123,12 @@ object Tweens extends js.Object {
       * @param key The name of the property to modify.
       * @param propertyValue The ending value of the property, as described above.
       */
+    @JSImport("phaser", "Tweens.Builders.GetValueOp")
+    @js.native
     def GetValueOp(key: String, propertyValue: js.Any): js.Function = js.native
     
+    @JSImport("phaser", "Tweens.Builders.NumberTweenBuilder")
+    @js.native
     def NumberTweenBuilder(
       parent: typings.phaser.Phaser.Tweens.Timeline,
       config: NumberTweenBuilderConfig,
@@ -232,13 +140,19 @@ object Tweens extends js.Object {
       * @param config Configuration for the new Tween.
       * @param defaults Tween configuration defaults.
       */
+    @JSImport("phaser", "Tweens.Builders.NumberTweenBuilder")
+    @js.native
     def NumberTweenBuilder(
       parent: typings.phaser.Phaser.Tweens.TweenManager,
       config: NumberTweenBuilderConfig,
       defaults: TweenConfigDefaults
     ): typings.phaser.Phaser.Tweens.Tween = js.native
     
+    @JSImport("phaser", "Tweens.Builders.StaggerBuilder")
+    @js.native
     def StaggerBuilder(value: js.Array[Double]): js.Function = js.native
+    @JSImport("phaser", "Tweens.Builders.StaggerBuilder")
+    @js.native
     def StaggerBuilder(value: js.Array[Double], config: StaggerConfig): js.Function = js.native
     /**
       * Creates a Stagger function to be used by a Tween property.
@@ -275,7 +189,11 @@ object Tweens extends js.Object {
       * @param value The amount to stagger by, or an array containing two elements representing the min and max values to stagger between.
       * @param config A Stagger Configuration object.
       */
+    @JSImport("phaser", "Tweens.Builders.StaggerBuilder")
+    @js.native
     def StaggerBuilder(value: Double): js.Function = js.native
+    @JSImport("phaser", "Tweens.Builders.StaggerBuilder")
+    @js.native
     def StaggerBuilder(value: Double, config: StaggerConfig): js.Function = js.native
     
     /**
@@ -283,14 +201,22 @@ object Tweens extends js.Object {
       * @param manager The Tween Manager to which the Timeline will belong.
       * @param config The configuration object for the Timeline.
       */
+    @JSImport("phaser", "Tweens.Builders.TimelineBuilder")
+    @js.native
     def TimelineBuilder(manager: typings.phaser.Phaser.Tweens.TweenManager, config: TimelineBuilderConfig): typings.phaser.Phaser.Tweens.Timeline = js.native
     
+    @JSImport("phaser", "Tweens.Builders.TweenBuilder")
+    @js.native
     def TweenBuilder(parent: typings.phaser.Phaser.Tweens.Timeline, config: js.Object, defaults: TweenConfigDefaults): typings.phaser.Phaser.Tweens.Tween = js.native
+    @JSImport("phaser", "Tweens.Builders.TweenBuilder")
+    @js.native
     def TweenBuilder(
       parent: typings.phaser.Phaser.Tweens.Timeline,
       config: TweenBuilderConfig,
       defaults: TweenConfigDefaults
     ): typings.phaser.Phaser.Tweens.Tween = js.native
+    @JSImport("phaser", "Tweens.Builders.TweenBuilder")
+    @js.native
     def TweenBuilder(
       parent: typings.phaser.Phaser.Tweens.TweenManager,
       config: js.Object,
@@ -302,6 +228,8 @@ object Tweens extends js.Object {
       * @param config Configuration for the new Tween.
       * @param defaults Tween configuration defaults.
       */
+    @JSImport("phaser", "Tweens.Builders.TweenBuilder")
+    @js.native
     def TweenBuilder(
       parent: typings.phaser.Phaser.Tweens.TweenManager,
       config: TweenBuilderConfig,
@@ -309,8 +237,43 @@ object Tweens extends js.Object {
     ): typings.phaser.Phaser.Tweens.Tween = js.native
   }
   
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.COMPLETE")
   @js.native
-  object Events extends js.Object {
+  def COMPLETE: integer = js.native
+  @scala.inline
+  def COMPLETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPLETE")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Tween state.
+    */
+  @JSImport("phaser", "Tweens.COMPLETE_DELAY")
+  @js.native
+  def COMPLETE_DELAY: integer = js.native
+  @scala.inline
+  def COMPLETE_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPLETE_DELAY")(x.asInstanceOf[js.Any])
+  
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.CREATED")
+  @js.native
+  def CREATED: integer = js.native
+  @scala.inline
+  def CREATED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATED")(x.asInstanceOf[js.Any])
+  
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.DELAY")
+  @js.native
+  def DELAY: integer = js.native
+  @scala.inline
+  def DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELAY")(x.asInstanceOf[js.Any])
+  
+  object Events {
     
     /**
       * The Timeline Complete Event.
@@ -330,6 +293,8 @@ object Tweens extends js.Object {
       * timeline.play();
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TIMELINE_COMPLETE")
+    @js.native
     val TIMELINE_COMPLETE: js.Any = js.native
     
     /**
@@ -351,6 +316,8 @@ object Tweens extends js.Object {
       * timeline.play();
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TIMELINE_LOOP")
+    @js.native
     val TIMELINE_LOOP: js.Any = js.native
     
     /**
@@ -372,6 +339,8 @@ object Tweens extends js.Object {
       * timeline.pause();
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TIMELINE_PAUSE")
+    @js.native
     val TIMELINE_PAUSE: js.Any = js.native
     
     /**
@@ -393,6 +362,8 @@ object Tweens extends js.Object {
       * timeline.resume();
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TIMELINE_RESUME")
+    @js.native
     val TIMELINE_RESUME: js.Any = js.native
     
     /**
@@ -413,6 +384,8 @@ object Tweens extends js.Object {
       * timeline.play();
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TIMELINE_START")
+    @js.native
     val TIMELINE_START: js.Any = js.native
     
     /**
@@ -434,6 +407,8 @@ object Tweens extends js.Object {
       * timeline.play();
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TIMELINE_UPDATE")
+    @js.native
     val TIMELINE_UPDATE: js.Any = js.native
     
     /**
@@ -457,6 +432,8 @@ object Tweens extends js.Object {
       * tween.on('active', listener);
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TWEEN_ACTIVE")
+    @js.native
     val TWEEN_ACTIVE: js.Any = js.native
     
     /**
@@ -481,6 +458,8 @@ object Tweens extends js.Object {
       * tween.on('complete', listener);
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TWEEN_COMPLETE")
+    @js.native
     val TWEEN_COMPLETE: js.Any = js.native
     
     /**
@@ -508,6 +487,8 @@ object Tweens extends js.Object {
       * tween.on('loop', listener);
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TWEEN_LOOP")
+    @js.native
     val TWEEN_LOOP: js.Any = js.native
     
     /**
@@ -535,6 +516,8 @@ object Tweens extends js.Object {
       * tween.on('repeat', listener);
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TWEEN_REPEAT")
+    @js.native
     val TWEEN_REPEAT: js.Any = js.native
     
     /**
@@ -558,6 +541,8 @@ object Tweens extends js.Object {
       * tween.on('start', listener);
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TWEEN_START")
+    @js.native
     val TWEEN_START: js.Any = js.native
     
     /**
@@ -577,6 +562,8 @@ object Tweens extends js.Object {
       * tween.on('stop', listener);
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TWEEN_STOP")
+    @js.native
     val TWEEN_STOP: js.Any = js.native
     
     /**
@@ -600,6 +587,8 @@ object Tweens extends js.Object {
       * tween.on('update', listener);
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TWEEN_UPDATE")
+    @js.native
     val TWEEN_UPDATE: js.Any = js.native
     
     /**
@@ -628,8 +617,118 @@ object Tweens extends js.Object {
       * tween.on('yoyo', listener);
       * ```
       */
+    @JSImport("phaser", "Tweens.Events.TWEEN_YOYO")
+    @js.native
     val TWEEN_YOYO: js.Any = js.native
   }
+  
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.HOLD_DELAY")
+  @js.native
+  def HOLD_DELAY: integer = js.native
+  @scala.inline
+  def HOLD_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOLD_DELAY")(x.asInstanceOf[js.Any])
+  
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.INIT")
+  @js.native
+  def INIT: integer = js.native
+  @scala.inline
+  def INIT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INIT")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Tween state.
+    */
+  @JSImport("phaser", "Tweens.LOOP_DELAY")
+  @js.native
+  def LOOP_DELAY: integer = js.native
+  @scala.inline
+  def LOOP_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOOP_DELAY")(x.asInstanceOf[js.Any])
+  
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.OFFSET_DELAY")
+  @js.native
+  def OFFSET_DELAY: integer = js.native
+  @scala.inline
+  def OFFSET_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFSET_DELAY")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Tween state.
+    */
+  @JSImport("phaser", "Tweens.PAUSED")
+  @js.native
+  def PAUSED: integer = js.native
+  @scala.inline
+  def PAUSED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Tween state.
+    */
+  @JSImport("phaser", "Tweens.PENDING_ADD")
+  @js.native
+  def PENDING_ADD: integer = js.native
+  @scala.inline
+  def PENDING_ADD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_ADD")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Tween state.
+    */
+  @JSImport("phaser", "Tweens.PENDING_REMOVE")
+  @js.native
+  def PENDING_REMOVE: integer = js.native
+  @scala.inline
+  def PENDING_REMOVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_REMOVE")(x.asInstanceOf[js.Any])
+  
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.PENDING_RENDER")
+  @js.native
+  def PENDING_RENDER: integer = js.native
+  @scala.inline
+  def PENDING_RENDER_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING_RENDER")(x.asInstanceOf[js.Any])
+  
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.PLAYING_BACKWARD")
+  @js.native
+  def PLAYING_BACKWARD: integer = js.native
+  @scala.inline
+  def PLAYING_BACKWARD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAYING_BACKWARD")(x.asInstanceOf[js.Any])
+  
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.PLAYING_FORWARD")
+  @js.native
+  def PLAYING_FORWARD: integer = js.native
+  @scala.inline
+  def PLAYING_FORWARD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAYING_FORWARD")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Tween state.
+    */
+  @JSImport("phaser", "Tweens.REMOVED")
+  @js.native
+  def REMOVED: integer = js.native
+  @scala.inline
+  def REMOVED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVED")(x.asInstanceOf[js.Any])
+  
+  /**
+    * TweenData state.
+    */
+  @JSImport("phaser", "Tweens.REPEAT_DELAY")
+  @js.native
+  def REPEAT_DELAY: integer = js.native
+  @scala.inline
+  def REPEAT_DELAY_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REPEAT_DELAY")(x.asInstanceOf[js.Any])
   
   /**
     * A Timeline combines multiple Tweens into one. Its overall behavior is otherwise similar to a single Tween.
@@ -637,6 +736,7 @@ object Tweens extends js.Object {
     * The Timeline updates all of its Tweens simultaneously. Its methods allow you to easily build a sequence
     * of Tweens (each one starting after the previous one) or run multiple Tweens at once during given parts of the Timeline.
     */
+  @JSImport("phaser", "Tweens.Timeline")
   @js.native
   class Timeline protected ()
     extends typings.phaser.Phaser.Tweens.Timeline {
@@ -652,6 +752,7 @@ object Tweens extends js.Object {
     * on a duration and type of ease. They are rarely instantiated directly and instead should be
     * created via the TweenManager.
     */
+  @JSImport("phaser", "Tweens.Tween")
   @js.native
   class Tween protected ()
     extends typings.phaser.Phaser.Tweens.Tween {
@@ -674,8 +775,51 @@ object Tweens extends js.Object {
   }
   
   /**
+    * Returns a TweenDataConfig object that describes the tween data for a unique property of a unique target.
+    * A single Tween consists of multiple TweenDatas, depending on how many properties are being changed by the Tween.
+    * 
+    * This is an internal function used by the TweenBuilder and should not be accessed directly, instead,
+    * Tweens should be created using the GameObjectFactory or GameObjectCreator.
+    * @param target The target to tween.
+    * @param index The target index within the Tween targets array.
+    * @param key The property of the target to tween.
+    * @param getEnd What the property will be at the END of the Tween.
+    * @param getStart What the property will be at the START of the Tween.
+    * @param getActive If not null, is invoked _immediately_ as soon as the TweenData is running, and is set on the target property.
+    * @param ease The ease function this tween uses.
+    * @param delay Time in ms/frames before tween will start.
+    * @param duration Duration of the tween in ms/frames.
+    * @param yoyo Determines whether the tween should return back to its start value after hold has expired.
+    * @param hold Time in ms/frames the tween will pause before repeating or returning to its starting value if yoyo is set to true.
+    * @param repeat Number of times to repeat the tween. The tween will always run once regardless, so a repeat value of '1' will play the tween twice.
+    * @param repeatDelay Time in ms/frames before the repeat will start.
+    * @param flipX Should toggleFlipX be called when yoyo or repeat happens?
+    * @param flipY Should toggleFlipY be called when yoyo or repeat happens?
+    */
+  @JSImport("phaser", "Tweens.TweenData")
+  @js.native
+  def TweenData(
+    target: js.Any,
+    index: integer,
+    key: String,
+    getEnd: js.Function,
+    getStart: js.Function,
+    getActive: js.Function,
+    ease: js.Function,
+    delay: Double,
+    duration: Double,
+    yoyo: Boolean,
+    hold: Double,
+    repeat: Double,
+    repeatDelay: Double,
+    flipX: Boolean,
+    flipY: Boolean
+  ): TweenDataConfig = js.native
+  
+  /**
     * The Tween Manager is a default Scene Plugin which controls and updates Tweens and Timelines.
     */
+  @JSImport("phaser", "Tweens.TweenManager")
   @js.native
   class TweenManager protected ()
     extends typings.phaser.Phaser.Tweens.TweenManager {

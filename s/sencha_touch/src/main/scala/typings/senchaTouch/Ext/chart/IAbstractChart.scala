@@ -4,6 +4,7 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.data.IStore
 import typings.senchaTouch.Ext.draw.IComponent
 import typings.senchaTouch.Ext.draw.ISurface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -222,288 +223,276 @@ object IAbstractChart {
   }
   
   @scala.inline
-  implicit class IAbstractChartOps[Self <: IAbstractChart] (val x: Self) extends AnyVal {
+  implicit class IAbstractChartMutableBuilder[Self <: IAbstractChart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: js.Any): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxes(value: js.Any): Self = this.set("axes", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteAxes: Self = this.set("axes", js.undefined)
+    def setBindStore(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackground(value: js.Any): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setCancelLayout(value: () => Unit): Self = StObject.set(x, "cancelLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBindStore(value: /* store */ js.UndefOr[IStore] => Unit): Self = this.set("bindStore", js.Any.fromFunction1(value))
+    def setCancelLayoutUndefined: Self = StObject.set(x, "cancelLayout", js.undefined)
     
     @scala.inline
-    def deleteBindStore: Self = this.set("bindStore", js.undefined)
+    def setColors(value: js.Any): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelLayout(value: () => Unit): Self = this.set("cancelLayout", js.Any.fromFunction0(value))
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteCancelLayout: Self = this.set("cancelLayout", js.undefined)
+    def setFlatten(value: (/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[String]) => _): Self = StObject.set(x, "flatten", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setColors(value: js.Any): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setGetAxes(value: () => _): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFlatten(value: (/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[String]) => _): Self = this.set("flatten", js.Any.fromFunction2(value))
+    def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
     
     @scala.inline
-    def deleteFlatten: Self = this.set("flatten", js.undefined)
+    def setGetColors(value: () => _): Self = StObject.set(x, "getColors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAxes(value: () => _): Self = this.set("getAxes", js.Any.fromFunction0(value))
+    def setGetColorsUndefined: Self = StObject.set(x, "getColors", js.undefined)
     
     @scala.inline
-    def deleteGetAxes: Self = this.set("getAxes", js.undefined)
+    def setGetHighlightItem(value: () => _): Self = StObject.set(x, "getHighlightItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColors(value: () => _): Self = this.set("getColors", js.Any.fromFunction0(value))
+    def setGetHighlightItemUndefined: Self = StObject.set(x, "getHighlightItem", js.undefined)
     
     @scala.inline
-    def deleteGetColors: Self = this.set("getColors", js.undefined)
+    def setGetInnerPadding(value: () => _): Self = StObject.set(x, "getInnerPadding", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHighlightItem(value: () => _): Self = this.set("getHighlightItem", js.Any.fromFunction0(value))
+    def setGetInnerPaddingUndefined: Self = StObject.set(x, "getInnerPadding", js.undefined)
     
     @scala.inline
-    def deleteGetHighlightItem: Self = this.set("getHighlightItem", js.undefined)
+    def setGetInsetPadding(value: () => _): Self = StObject.set(x, "getInsetPadding", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInnerPadding(value: () => _): Self = this.set("getInnerPadding", js.Any.fromFunction0(value))
+    def setGetInsetPaddingUndefined: Self = StObject.set(x, "getInsetPadding", js.undefined)
     
     @scala.inline
-    def deleteGetInnerPadding: Self = this.set("getInnerPadding", js.undefined)
+    def setGetInteractions(value: () => Array): Self = StObject.set(x, "getInteractions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInsetPadding(value: () => _): Self = this.set("getInsetPadding", js.Any.fromFunction0(value))
+    def setGetInteractionsUndefined: Self = StObject.set(x, "getInteractions", js.undefined)
     
     @scala.inline
-    def deleteGetInsetPadding: Self = this.set("getInsetPadding", js.undefined)
+    def setGetItemForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => _): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetInteractions(value: () => Array): Self = this.set("getInteractions", js.Any.fromFunction0(value))
+    def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
     
     @scala.inline
-    def deleteGetInteractions: Self = this.set("getInteractions", js.undefined)
+    def setGetItemsForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Array): Self = StObject.set(x, "getItemsForPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetItemForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => _): Self = this.set("getItemForPoint", js.Any.fromFunction2(value))
+    def setGetItemsForPointUndefined: Self = StObject.set(x, "getItemsForPoint", js.undefined)
     
     @scala.inline
-    def deleteGetItemForPoint: Self = this.set("getItemForPoint", js.undefined)
+    def setGetLegend(value: () => _): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemsForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Array): Self = this.set("getItemsForPoint", js.Any.fromFunction2(value))
+    def setGetLegendStore(value: () => IStore): Self = StObject.set(x, "getLegendStore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetItemsForPoint: Self = this.set("getItemsForPoint", js.undefined)
+    def setGetLegendStoreUndefined: Self = StObject.set(x, "getLegendStore", js.undefined)
     
     @scala.inline
-    def setGetLegend(value: () => _): Self = this.set("getLegend", js.Any.fromFunction0(value))
+    def setGetLegendUndefined: Self = StObject.set(x, "getLegend", js.undefined)
     
     @scala.inline
-    def deleteGetLegend: Self = this.set("getLegend", js.undefined)
+    def setGetSeries(value: () => _): Self = StObject.set(x, "getSeries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLegendStore(value: () => IStore): Self = this.set("getLegendStore", js.Any.fromFunction0(value))
+    def setGetSeriesUndefined: Self = StObject.set(x, "getSeries", js.undefined)
     
     @scala.inline
-    def deleteGetLegendStore: Self = this.set("getLegendStore", js.undefined)
+    def setGetShadow(value: () => _): Self = StObject.set(x, "getShadow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSeries(value: () => _): Self = this.set("getSeries", js.Any.fromFunction0(value))
+    def setGetShadowUndefined: Self = StObject.set(x, "getShadow", js.undefined)
     
     @scala.inline
-    def deleteGetSeries: Self = this.set("getSeries", js.undefined)
+    def setGetStore(value: () => IStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetShadow(value: () => _): Self = this.set("getShadow", js.Any.fromFunction0(value))
+    def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
     @scala.inline
-    def deleteGetShadow: Self = this.set("getShadow", js.undefined)
+    def setGetSurface(value: (/* name */ js.UndefOr[js.Any], /* type */ js.UndefOr[js.Any]) => ISurface): Self = StObject.set(x, "getSurface", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetStore(value: () => IStore): Self = this.set("getStore", js.Any.fromFunction0(value))
+    def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)
     
     @scala.inline
-    def deleteGetStore: Self = this.set("getStore", js.undefined)
+    def setHighlightItem(value: js.Any): Self = StObject.set(x, "highlightItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSurface(value: (/* name */ js.UndefOr[js.Any], /* type */ js.UndefOr[js.Any]) => ISurface): Self = this.set("getSurface", js.Any.fromFunction2(value))
+    def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     
     @scala.inline
-    def deleteGetSurface: Self = this.set("getSurface", js.undefined)
+    def setInnerPadding(value: js.Any): Self = StObject.set(x, "innerPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightItem(value: js.Any): Self = this.set("highlightItem", value.asInstanceOf[js.Any])
+    def setInnerPaddingUndefined: Self = StObject.set(x, "innerPadding", js.undefined)
     
     @scala.inline
-    def deleteHighlightItem: Self = this.set("highlightItem", js.undefined)
+    def setInsetPadding(value: js.Any): Self = StObject.set(x, "insetPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerPadding(value: js.Any): Self = this.set("innerPadding", value.asInstanceOf[js.Any])
+    def setInsetPaddingUndefined: Self = StObject.set(x, "insetPadding", js.undefined)
     
     @scala.inline
-    def deleteInnerPadding: Self = this.set("innerPadding", js.undefined)
+    def setInteractions(value: Array): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetPadding(value: js.Any): Self = this.set("insetPadding", value.asInstanceOf[js.Any])
+    def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
     
     @scala.inline
-    def deleteInsetPadding: Self = this.set("insetPadding", js.undefined)
+    def setLegend(value: js.Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractions(value: Array): Self = this.set("interactions", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteInteractions: Self = this.set("interactions", js.undefined)
+    def setRedraw(value: () => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLegend(value: js.Any): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setResumeThicknessChanged(value: () => Unit): Self = StObject.set(x, "resumeThicknessChanged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRedraw(value: () => Unit): Self = this.set("redraw", js.Any.fromFunction0(value))
+    def setResumeThicknessChangedUndefined: Self = StObject.set(x, "resumeThicknessChanged", js.undefined)
     
     @scala.inline
-    def deleteRedraw: Self = this.set("redraw", js.undefined)
+    def setScheduleLayout(value: () => Unit): Self = StObject.set(x, "scheduleLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResumeThicknessChanged(value: () => Unit): Self = this.set("resumeThicknessChanged", js.Any.fromFunction0(value))
+    def setScheduleLayoutUndefined: Self = StObject.set(x, "scheduleLayout", js.undefined)
     
     @scala.inline
-    def deleteResumeThicknessChanged: Self = this.set("resumeThicknessChanged", js.undefined)
+    def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleLayout(value: () => Unit): Self = this.set("scheduleLayout", js.Any.fromFunction0(value))
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteScheduleLayout: Self = this.set("scheduleLayout", js.undefined)
+    def setSetAnimate(value: /* animate */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAnimate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSeries(value: js.Any): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSetAnimateUndefined: Self = StObject.set(x, "setAnimate", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAnimate(value: /* animate */ js.UndefOr[js.Any] => Unit): Self = this.set("setAnimate", js.Any.fromFunction1(value))
+    def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
     
     @scala.inline
-    def deleteSetAnimate: Self = this.set("setAnimate", js.undefined)
+    def setSetColors(value: /* colors */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setColors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = this.set("setAxes", js.Any.fromFunction1(value))
+    def setSetColorsUndefined: Self = StObject.set(x, "setColors", js.undefined)
     
     @scala.inline
-    def deleteSetAxes: Self = this.set("setAxes", js.undefined)
+    def setSetHighlightItem(value: /* highlightItem */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHighlightItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetColors(value: /* colors */ js.UndefOr[js.Any] => Unit): Self = this.set("setColors", js.Any.fromFunction1(value))
+    def setSetHighlightItemUndefined: Self = StObject.set(x, "setHighlightItem", js.undefined)
     
     @scala.inline
-    def deleteSetColors: Self = this.set("setColors", js.undefined)
+    def setSetInnerPadding(value: /* innerPadding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInnerPadding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHighlightItem(value: /* highlightItem */ js.UndefOr[js.Any] => Unit): Self = this.set("setHighlightItem", js.Any.fromFunction1(value))
+    def setSetInnerPaddingUndefined: Self = StObject.set(x, "setInnerPadding", js.undefined)
     
     @scala.inline
-    def deleteSetHighlightItem: Self = this.set("setHighlightItem", js.undefined)
+    def setSetInsetPadding(value: /* insetPadding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInsetPadding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInnerPadding(value: /* innerPadding */ js.UndefOr[js.Any] => Unit): Self = this.set("setInnerPadding", js.Any.fromFunction1(value))
+    def setSetInsetPaddingUndefined: Self = StObject.set(x, "setInsetPadding", js.undefined)
     
     @scala.inline
-    def deleteSetInnerPadding: Self = this.set("setInnerPadding", js.undefined)
+    def setSetInteractions(value: /* interactions */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setInteractions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInsetPadding(value: /* insetPadding */ js.UndefOr[js.Any] => Unit): Self = this.set("setInsetPadding", js.Any.fromFunction1(value))
+    def setSetInteractionsUndefined: Self = StObject.set(x, "setInteractions", js.undefined)
     
     @scala.inline
-    def deleteSetInsetPadding: Self = this.set("setInsetPadding", js.undefined)
+    def setSetLegend(value: /* legend */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLegend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInteractions(value: /* interactions */ js.UndefOr[Array] => Unit): Self = this.set("setInteractions", js.Any.fromFunction1(value))
+    def setSetLegendUndefined: Self = StObject.set(x, "setLegend", js.undefined)
     
     @scala.inline
-    def deleteSetInteractions: Self = this.set("setInteractions", js.undefined)
+    def setSetSeries(value: /* series */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSeries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLegend(value: /* legend */ js.UndefOr[js.Any] => Unit): Self = this.set("setLegend", js.Any.fromFunction1(value))
+    def setSetSeriesUndefined: Self = StObject.set(x, "setSeries", js.undefined)
     
     @scala.inline
-    def deleteSetLegend: Self = this.set("setLegend", js.undefined)
+    def setSetShadow(value: /* shadow */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setShadow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSeries(value: /* series */ js.UndefOr[js.Any] => Unit): Self = this.set("setSeries", js.Any.fromFunction1(value))
+    def setSetShadowUndefined: Self = StObject.set(x, "setShadow", js.undefined)
     
     @scala.inline
-    def deleteSetSeries: Self = this.set("setSeries", js.undefined)
+    def setSetStore(value: /* store */ js.UndefOr[IStore] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetShadow(value: /* shadow */ js.UndefOr[js.Any] => Unit): Self = this.set("setShadow", js.Any.fromFunction1(value))
+    def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
     
     @scala.inline
-    def deleteSetShadow: Self = this.set("setShadow", js.undefined)
+    def setShadow(value: js.Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetStore(value: /* store */ js.UndefOr[IStore] => Unit): Self = this.set("setStore", js.Any.fromFunction1(value))
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteSetStore: Self = this.set("setStore", js.undefined)
+    def setStore(value: IStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: js.Any): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setSuspendThicknessChanged(value: () => Unit): Self = StObject.set(x, "suspendThicknessChanged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStore(value: IStore): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setSuspendThicknessChangedUndefined: Self = StObject.set(x, "suspendThicknessChanged", js.undefined)
     
     @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspendThicknessChanged(value: () => Unit): Self = this.set("suspendThicknessChanged", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSuspendThicknessChanged: Self = this.set("suspendThicknessChanged", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

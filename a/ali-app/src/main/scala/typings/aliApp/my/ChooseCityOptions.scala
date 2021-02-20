@@ -1,6 +1,7 @@
 package typings.aliApp.my
 
 import typings.aliApp.anon.AdCode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,18 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChooseCityOptions
   extends BaseOptions[js.Any, js.Any] {
   
-          //     是否显示热门城市，默认 true
+  //     是否显示热门城市，默认 true
   var cities: js.Array[City] = js.native
   
-                  // 自定义城市列表，列表内对象字段见下表
+  // 自定义城市列表，列表内对象字段见下表
   var hotCities: js.Array[City] = js.native
   
-      //     是否显示当前定位城市，默认 false
+  //     是否显示当前定位城市，默认 false
   var showHotCities: Boolean = js.native
   
   var showLocatedCity: Boolean = js.native
   
-              // 自定义热门城市列表，列表内对象字段见下表
+  // 自定义热门城市列表，列表内对象字段见下表
   @JSName("success")
   def success_MChooseCityOptions(result: AdCode): Unit = js.native
 }
@@ -39,39 +40,27 @@ object ChooseCityOptions {
   }
   
   @scala.inline
-  implicit class ChooseCityOptionsOps[Self <: ChooseCityOptions] (val x: Self) extends AnyVal {
+  implicit class ChooseCityOptionsMutableBuilder[Self <: ChooseCityOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCities(value: js.Array[City]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHotCities(value: js.Array[City]): Self = StObject.set(x, "hotCities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCitiesVarargs(value: City*): Self = this.set("cities", js.Array(value :_*))
+    def setHotCitiesVarargs(value: City*): Self = StObject.set(x, "hotCities", js.Array(value :_*))
     
     @scala.inline
-    def setCities(value: js.Array[City]): Self = this.set("cities", value.asInstanceOf[js.Any])
+    def setShowHotCities(value: Boolean): Self = StObject.set(x, "showHotCities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotCitiesVarargs(value: City*): Self = this.set("hotCities", js.Array(value :_*))
+    def setShowLocatedCity(value: Boolean): Self = StObject.set(x, "showLocatedCity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotCities(value: js.Array[City]): Self = this.set("hotCities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowHotCities(value: Boolean): Self = this.set("showHotCities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowLocatedCity(value: Boolean): Self = this.set("showLocatedCity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: AdCode => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setSuccess(value: AdCode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.fridaGumStrings.be
   - typings.fridaGum.fridaGumStrings.le
 */
-trait Endian extends js.Object
+trait Endian extends StObject
 object Endian {
   
   @scala.inline

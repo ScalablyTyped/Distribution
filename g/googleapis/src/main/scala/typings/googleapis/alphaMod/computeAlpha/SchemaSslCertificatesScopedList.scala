@@ -1,12 +1,13 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import typings.googleapis.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSslCertificatesScopedList extends js.Object {
+trait SchemaSslCertificatesScopedList extends StObject {
   
   /**
     * List of SslCertificates contained in this scope.
@@ -28,33 +29,21 @@ object SchemaSslCertificatesScopedList {
   }
   
   @scala.inline
-  implicit class SchemaSslCertificatesScopedListOps[Self <: SchemaSslCertificatesScopedList] (val x: Self) extends AnyVal {
+  implicit class SchemaSslCertificatesScopedListMutableBuilder[Self <: SchemaSslCertificatesScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSslCertificates(value: js.Array[SchemaSslCertificate]): Self = StObject.set(x, "sslCertificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSslCertificatesUndefined: Self = StObject.set(x, "sslCertificates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSslCertificatesVarargs(value: SchemaSslCertificate*): Self = StObject.set(x, "sslCertificates", js.Array(value :_*))
     
     @scala.inline
-    def setSslCertificatesVarargs(value: SchemaSslCertificate*): Self = this.set("sslCertificates", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslCertificates(value: js.Array[SchemaSslCertificate]): Self = this.set("sslCertificates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslCertificates: Self = this.set("sslCertificates", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

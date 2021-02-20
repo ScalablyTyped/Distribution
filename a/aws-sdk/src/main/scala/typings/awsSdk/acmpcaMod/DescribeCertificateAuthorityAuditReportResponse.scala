@@ -1,11 +1,12 @@
 package typings.awsSdk.acmpcaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCertificateAuthorityAuditReportResponse extends js.Object {
+trait DescribeCertificateAuthorityAuditReportResponse extends StObject {
   
   /**
     * Specifies whether report creation is in progress, has succeeded, or has failed.
@@ -36,42 +37,30 @@ object DescribeCertificateAuthorityAuditReportResponse {
   }
   
   @scala.inline
-  implicit class DescribeCertificateAuthorityAuditReportResponseOps[Self <: DescribeCertificateAuthorityAuditReportResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeCertificateAuthorityAuditReportResponseMutableBuilder[Self <: DescribeCertificateAuthorityAuditReportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditReportStatus(value: AuditReportStatus): Self = StObject.set(x, "AuditReportStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuditReportStatusUndefined: Self = StObject.set(x, "AuditReportStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: TStamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditReportStatus(value: AuditReportStatus): Self = this.set("AuditReportStatus", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteAuditReportStatus: Self = this.set("AuditReportStatus", js.undefined)
+    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: TStamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
-    
-    @scala.inline
-    def setS3Key(value: S3Key): Self = this.set("S3Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
   }
 }

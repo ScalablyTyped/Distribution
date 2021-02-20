@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTopicsDetectionJobsResponse extends js.Object {
+trait ListTopicsDetectionJobsResponse extends StObject {
   
   /**
     * Identifies the next page of results to return.
@@ -26,33 +27,21 @@ object ListTopicsDetectionJobsResponse {
   }
   
   @scala.inline
-  implicit class ListTopicsDetectionJobsResponseOps[Self <: ListTopicsDetectionJobsResponse] (val x: Self) extends AnyVal {
+  implicit class ListTopicsDetectionJobsResponseMutableBuilder[Self <: ListTopicsDetectionJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTopicsDetectionJobPropertiesList(value: TopicsDetectionJobPropertiesList): Self = StObject.set(x, "TopicsDetectionJobPropertiesList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTopicsDetectionJobPropertiesListUndefined: Self = StObject.set(x, "TopicsDetectionJobPropertiesList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTopicsDetectionJobPropertiesListVarargs(value: TopicsDetectionJobProperties*): Self = this.set("TopicsDetectionJobPropertiesList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopicsDetectionJobPropertiesList(value: TopicsDetectionJobPropertiesList): Self = this.set("TopicsDetectionJobPropertiesList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicsDetectionJobPropertiesList: Self = this.set("TopicsDetectionJobPropertiesList", js.undefined)
+    def setTopicsDetectionJobPropertiesListVarargs(value: TopicsDetectionJobProperties*): Self = StObject.set(x, "TopicsDetectionJobPropertiesList", js.Array(value :_*))
   }
 }

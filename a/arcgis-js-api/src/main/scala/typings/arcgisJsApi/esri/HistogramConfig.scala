@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,68 +72,56 @@ object HistogramConfig {
   }
   
   @scala.inline
-  implicit class HistogramConfigOps[Self <: HistogramConfig] (val x: Self) extends AnyVal {
+  implicit class HistogramConfigMutableBuilder[Self <: HistogramConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarCreatedFunction(value: (/* index */ Double, /* element */ js.Any) => Unit): Self = StObject.set(x, "barCreatedFunction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAverage(value: Double): Self = this.set("average", value.asInstanceOf[js.Any])
+    def setBarCreatedFunctionUndefined: Self = StObject.set(x, "barCreatedFunction", js.undefined)
     
     @scala.inline
-    def deleteAverage: Self = this.set("average", js.undefined)
+    def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarCreatedFunction(value: (/* index */ Double, /* element */ js.Any) => Unit): Self = this.set("barCreatedFunction", js.Any.fromFunction2(value))
+    def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
     @scala.inline
-    def deleteBarCreatedFunction: Self = this.set("barCreatedFunction", js.undefined)
-    
-    @scala.inline
-    def setBinsVarargs(value: Bin*): Self = this.set("bins", js.Array(value :_*))
-    
-    @scala.inline
-    def setBins(value: js.Array[Bin]): Self = this.set("bins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBins: Self = this.set("bins", js.undefined)
+    def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
     @scala.inline
     def setDataLineCreatedFunction(
       value: (/* lineElement */ js.Any, /* labelElement */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("dataLineCreatedFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "dataLineCreatedFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteDataLineCreatedFunction: Self = this.set("dataLineCreatedFunction", js.undefined)
+    def setDataLineCreatedFunctionUndefined: Self = StObject.set(x, "dataLineCreatedFunction", js.undefined)
     
     @scala.inline
-    def setDataLinesVarargs(value: HistogramConfigDataLines*): Self = this.set("dataLines", js.Array(value :_*))
+    def setDataLines(value: js.Array[HistogramConfigDataLines]): Self = StObject.set(x, "dataLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLines(value: js.Array[HistogramConfigDataLines]): Self = this.set("dataLines", value.asInstanceOf[js.Any])
+    def setDataLinesUndefined: Self = StObject.set(x, "dataLines", js.undefined)
     
     @scala.inline
-    def deleteDataLines: Self = this.set("dataLines", js.undefined)
+    def setDataLinesVarargs(value: HistogramConfigDataLines*): Self = StObject.set(x, "dataLines", js.Array(value :_*))
     
     @scala.inline
-    def setStandardDeviation(value: Double): Self = this.set("standardDeviation", value.asInstanceOf[js.Any])
+    def setStandardDeviation(value: Double): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStandardDeviation: Self = this.set("standardDeviation", js.undefined)
+    def setStandardDeviationCount(value: Double): Self = StObject.set(x, "standardDeviationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardDeviationCount(value: Double): Self = this.set("standardDeviationCount", value.asInstanceOf[js.Any])
+    def setStandardDeviationCountUndefined: Self = StObject.set(x, "standardDeviationCount", js.undefined)
     
     @scala.inline
-    def deleteStandardDeviationCount: Self = this.set("standardDeviationCount", js.undefined)
+    def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
   }
 }

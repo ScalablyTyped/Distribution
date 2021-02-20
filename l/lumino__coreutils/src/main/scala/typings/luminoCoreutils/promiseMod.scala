@@ -1,18 +1,18 @@
 package typings.luminoCoreutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/coreutils/types/promise", JSImport.Namespace)
-@js.native
-object promiseMod extends js.Object {
+object promiseMod {
   
+  @JSImport("@lumino/coreutils/types/promise", "PromiseDelegate")
   @js.native
   /**
     * Construct a new promise delegate.
     */
-  class PromiseDelegate[T] () extends js.Object {
+  class PromiseDelegate[T] () extends StObject {
     
     var _reject: js.Any = js.native
     

@@ -1,5 +1,6 @@
 package typings.web3Core.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object PastLogsOptions {
   }
   
   @scala.inline
-  implicit class PastLogsOptionsOps[Self <: PastLogsOptions] (val x: Self) extends AnyVal {
+  implicit class PastLogsOptionsMutableBuilder[Self <: PastLogsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToBlock(value: BlockNumber): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setToBlock(value: BlockNumber): Self = this.set("toBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToBlock: Self = this.set("toBlock", js.undefined)
+    def setToBlockUndefined: Self = StObject.set(x, "toBlock", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetReportsOutput extends js.Object {
+trait BatchGetReportsOutput extends StObject {
   
   /**
     *  The array of Report objects returned by BatchGetReports. 
@@ -26,36 +27,24 @@ object BatchGetReportsOutput {
   }
   
   @scala.inline
-  implicit class BatchGetReportsOutputOps[Self <: BatchGetReportsOutput] (val x: Self) extends AnyVal {
+  implicit class BatchGetReportsOutputMutableBuilder[Self <: BatchGetReportsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReports(value: Reports): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportsNotFound(value: ReportArns): Self = StObject.set(x, "reportsNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportsNotFoundUndefined: Self = StObject.set(x, "reportsNotFound", js.undefined)
     
     @scala.inline
-    def setReportsVarargs(value: Report*): Self = this.set("reports", js.Array(value :_*))
+    def setReportsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportsNotFound", js.Array(value :_*))
     
     @scala.inline
-    def setReports(value: Reports): Self = this.set("reports", value.asInstanceOf[js.Any])
+    def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
     @scala.inline
-    def deleteReports: Self = this.set("reports", js.undefined)
-    
-    @scala.inline
-    def setReportsNotFoundVarargs(value: NonEmptyString*): Self = this.set("reportsNotFound", js.Array(value :_*))
-    
-    @scala.inline
-    def setReportsNotFound(value: ReportArns): Self = this.set("reportsNotFound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportsNotFound: Self = this.set("reportsNotFound", js.undefined)
+    def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value :_*))
   }
 }

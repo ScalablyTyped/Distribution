@@ -1,5 +1,6 @@
 package typings.lodash.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a cache object to store key/value pairs.
   */
 @js.native
-trait MapCache extends js.Object {
+trait MapCache extends StObject {
   
   /**
     * Removes all key-value entries from the map.
@@ -58,36 +59,24 @@ object MapCache {
   }
   
   @scala.inline
-  implicit class MapCacheOps[Self <: MapCache] (val x: Self) extends AnyVal {
+  implicit class MapCacheMutableBuilder[Self <: MapCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: js.Any => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelete(value: js.Any => Boolean): Self = this.set("delete", js.Any.fromFunction1(value))
+    def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: js.Any => js.Any): Self = this.set("get", js.Any.fromFunction1(value))
+    def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHas(value: js.Any => Boolean): Self = this.set("has", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet(value: (js.Any, js.Any) => MapCache): Self = this.set("set", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setSet(value: (js.Any, js.Any) => MapCache): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

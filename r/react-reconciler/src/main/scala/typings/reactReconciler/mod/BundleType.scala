@@ -1,5 +1,6 @@
 package typings.reactReconciler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactReconciler.reactReconcilerNumbers.`0`
   - typings.reactReconciler.reactReconcilerNumbers.`1`
 */
-trait BundleType extends js.Object
+trait BundleType extends StObject
 object BundleType {
   
   @scala.inline

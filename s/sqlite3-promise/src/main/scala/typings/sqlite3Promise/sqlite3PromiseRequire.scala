@@ -1,5 +1,6 @@
 package typings.sqlite3Promise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("sqlite3-promise", JSImport.Namespace)
 @js.native
-object sqlite3PromiseRequire extends js.Object
+object sqlite3PromiseRequire extends StObject

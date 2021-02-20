@@ -1,13 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.embed
 
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface represents main storage functionality. */
 @js.native
-trait XStorageRawAccess extends js.Object {
+trait XStorageRawAccess extends StObject {
   
   /**
     * allows to get a plain raw stream representing a package stream.
@@ -76,27 +77,15 @@ object XStorageRawAccess {
   }
   
   @scala.inline
-  implicit class XStorageRawAccessOps[Self <: XStorageRawAccess] (val x: Self) extends AnyVal {
+  implicit class XStorageRawAccessMutableBuilder[Self <: XStorageRawAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPlainRawStreamElement(value: String => XInputStream): Self = StObject.set(x, "getPlainRawStreamElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRawEncrStreamElement(value: String => XInputStream): Self = StObject.set(x, "getRawEncrStreamElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetPlainRawStreamElement(value: String => XInputStream): Self = this.set("getPlainRawStreamElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRawEncrStreamElement(value: String => XInputStream): Self = this.set("getRawEncrStreamElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsertRawEncrStreamElement(value: (String, XInputStream) => Unit): Self = this.set("insertRawEncrStreamElement", js.Any.fromFunction2(value))
+    def setInsertRawEncrStreamElement(value: (String, XInputStream) => Unit): Self = StObject.set(x, "insertRawEncrStreamElement", js.Any.fromFunction2(value))
   }
 }

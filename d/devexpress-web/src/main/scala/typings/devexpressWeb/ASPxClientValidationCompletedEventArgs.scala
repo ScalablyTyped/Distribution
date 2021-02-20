@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,36 +57,24 @@ object ASPxClientValidationCompletedEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientValidationCompletedEventArgsOps[Self <: ASPxClientValidationCompletedEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientValidationCompletedEventArgsMutableBuilder[Self <: ASPxClientValidationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstInvalidControl(value: ASPxClientControl): Self = StObject.set(x, "firstInvalidControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstVisibleInvalidControl(value: ASPxClientControl): Self = StObject.set(x, "firstVisibleInvalidControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setInvisibleControlsValidated(value: Boolean): Self = StObject.set(x, "invisibleControlsValidated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstInvalidControl(value: ASPxClientControl): Self = this.set("firstInvalidControl", value.asInstanceOf[js.Any])
+    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstVisibleInvalidControl(value: ASPxClientControl): Self = this.set("firstVisibleInvalidControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInvisibleControlsValidated(value: Boolean): Self = this.set("invisibleControlsValidated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsValid(value: Boolean): Self = this.set("isValid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationGroup(value: String): Self = this.set("validationGroup", value.asInstanceOf[js.Any])
+    def setValidationGroup(value: String): Self = StObject.set(x, "validationGroup", value.asInstanceOf[js.Any])
   }
 }

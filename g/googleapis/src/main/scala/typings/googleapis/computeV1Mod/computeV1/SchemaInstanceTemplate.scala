@@ -1,5 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (== resource_for v1.instanceTemplates ==)
   */
 @js.native
-trait SchemaInstanceTemplate extends js.Object {
+trait SchemaInstanceTemplate extends StObject {
   
   /**
     * [Output Only] The creation timestamp for this instance template in
@@ -80,72 +81,60 @@ object SchemaInstanceTemplate {
   }
   
   @scala.inline
-  implicit class SchemaInstanceTemplateOps[Self <: SchemaInstanceTemplate] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceTemplateMutableBuilder[Self <: SchemaInstanceTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setProperties(value: SchemaInstanceProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: SchemaInstanceProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setSourceInstance(value: String): Self = StObject.set(x, "sourceInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSourceInstanceParams(value: SchemaSourceInstanceParams): Self = StObject.set(x, "sourceInstanceParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSourceInstanceParamsUndefined: Self = StObject.set(x, "sourceInstanceParams", js.undefined)
     
     @scala.inline
-    def setSourceInstance(value: String): Self = this.set("sourceInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceInstance: Self = this.set("sourceInstance", js.undefined)
-    
-    @scala.inline
-    def setSourceInstanceParams(value: SchemaSourceInstanceParams): Self = this.set("sourceInstanceParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceInstanceParams: Self = this.set("sourceInstanceParams", js.undefined)
+    def setSourceInstanceUndefined: Self = StObject.set(x, "sourceInstance", js.undefined)
   }
 }

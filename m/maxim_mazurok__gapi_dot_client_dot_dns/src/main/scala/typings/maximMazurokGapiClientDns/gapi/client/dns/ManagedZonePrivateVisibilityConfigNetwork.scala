@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDns.gapi.client.dns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedZonePrivateVisibilityConfigNetwork extends js.Object {
+trait ManagedZonePrivateVisibilityConfigNetwork extends StObject {
   
   var kind: js.UndefOr[String] = js.native
   
@@ -21,30 +22,18 @@ object ManagedZonePrivateVisibilityConfigNetwork {
   }
   
   @scala.inline
-  implicit class ManagedZonePrivateVisibilityConfigNetworkOps[Self <: ManagedZonePrivateVisibilityConfigNetwork] (val x: Self) extends AnyVal {
+  implicit class ManagedZonePrivateVisibilityConfigNetworkMutableBuilder[Self <: ManagedZonePrivateVisibilityConfigNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkUrl(value: String): Self = StObject.set(x, "networkUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setNetworkUrl(value: String): Self = this.set("networkUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkUrl: Self = this.set("networkUrl", js.undefined)
+    def setNetworkUrlUndefined: Self = StObject.set(x, "networkUrl", js.undefined)
   }
 }

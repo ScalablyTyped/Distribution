@@ -112,6 +112,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`97`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`98`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`99`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -231,7 +232,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`92`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`93`
 */
-trait AnimationEffect extends js.Object
+trait AnimationEffect extends StObject
 object AnimationEffect {
   
   /** use the animation effect "Appear". */

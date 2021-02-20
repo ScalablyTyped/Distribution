@@ -1,11 +1,12 @@
 package typings.nodePgMigrate.distTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunnerOptionConfig extends js.Object {
+trait RunnerOptionConfig extends StObject {
   
   var checkOrder: js.UndefOr[Boolean] = js.native
   
@@ -56,129 +57,117 @@ object RunnerOptionConfig {
   }
   
   @scala.inline
-  implicit class RunnerOptionConfigOps[Self <: RunnerOptionConfig] (val x: Self) extends AnyVal {
+  implicit class RunnerOptionConfigMutableBuilder[Self <: RunnerOptionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckOrder(value: Boolean): Self = StObject.set(x, "checkOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckOrderUndefined: Self = StObject.set(x, "checkOrder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setCreateMigrationsSchema(value: Boolean): Self = StObject.set(x, "createMigrationsSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setCreateMigrationsSchemaUndefined: Self = StObject.set(x, "createMigrationsSchema", js.undefined)
     
     @scala.inline
-    def setDirection(value: MigrationDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setCreateSchema(value: Boolean): Self = StObject.set(x, "createSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrationsTable(value: String): Self = this.set("migrationsTable", value.asInstanceOf[js.Any])
+    def setCreateSchemaUndefined: Self = StObject.set(x, "createSchema", js.undefined)
     
     @scala.inline
-    def setCheckOrder(value: Boolean): Self = this.set("checkOrder", value.asInstanceOf[js.Any])
+    def setDecamelize(value: Boolean): Self = StObject.set(x, "decamelize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheckOrder: Self = this.set("checkOrder", js.undefined)
+    def setDecamelizeUndefined: Self = StObject.set(x, "decamelize", js.undefined)
     
     @scala.inline
-    def setCreateMigrationsSchema(value: Boolean): Self = this.set("createMigrationsSchema", value.asInstanceOf[js.Any])
+    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateMigrationsSchema: Self = this.set("createMigrationsSchema", js.undefined)
+    def setDirection(value: MigrationDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSchema(value: Boolean): Self = this.set("createSchema", value.asInstanceOf[js.Any])
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateSchema: Self = this.set("createSchema", js.undefined)
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def setDecamelize(value: Boolean): Self = this.set("decamelize", value.asInstanceOf[js.Any])
+    def setFake(value: Boolean): Self = StObject.set(x, "fake", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecamelize: Self = this.set("decamelize", js.undefined)
+    def setFakeUndefined: Self = StObject.set(x, "fake", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def setFake(value: Boolean): Self = this.set("fake", value.asInstanceOf[js.Any])
+    def setIgnorePattern(value: String): Self = StObject.set(x, "ignorePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFake: Self = this.set("fake", js.undefined)
+    def setIgnorePatternUndefined: Self = StObject.set(x, "ignorePattern", js.undefined)
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setLog(value: /* msg */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def setIgnorePattern(value: String): Self = this.set("ignorePattern", value.asInstanceOf[js.Any])
+    def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnorePattern: Self = this.set("ignorePattern", js.undefined)
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def setLog(value: /* msg */ String => Unit): Self = this.set("log", js.Any.fromFunction1(value))
+    def setMigrationsSchema(value: String): Self = StObject.set(x, "migrationsSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setMigrationsSchemaUndefined: Self = StObject.set(x, "migrationsSchema", js.undefined)
     
     @scala.inline
-    def setLogger(value: Logger): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setMigrationsTable(value: String): Self = StObject.set(x, "migrationsTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setNoLock(value: Boolean): Self = StObject.set(x, "noLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrationsSchema(value: String): Self = this.set("migrationsSchema", value.asInstanceOf[js.Any])
+    def setNoLockUndefined: Self = StObject.set(x, "noLock", js.undefined)
     
     @scala.inline
-    def deleteMigrationsSchema: Self = this.set("migrationsSchema", js.undefined)
+    def setSchema(value: String | js.Array[String]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoLock(value: Boolean): Self = this.set("noLock", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteNoLock: Self = this.set("noLock", js.undefined)
+    def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value :_*))
     
     @scala.inline
-    def setSchemaVarargs(value: String*): Self = this.set("schema", js.Array(value :_*))
+    def setSingleTransaction(value: Boolean): Self = StObject.set(x, "singleTransaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: String | js.Array[String]): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSingleTransactionUndefined: Self = StObject.set(x, "singleTransaction", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setTimestamp(value: Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleTransaction(value: Boolean): Self = this.set("singleTransaction", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteSingleTransaction: Self = this.set("singleTransaction", js.undefined)
+    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Boolean): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerbose: Self = this.set("verbose", js.undefined)
+    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

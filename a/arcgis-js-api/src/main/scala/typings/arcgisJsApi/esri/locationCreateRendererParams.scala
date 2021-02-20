@@ -9,6 +9,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,75 +101,63 @@ object locationCreateRendererParams {
   }
   
   @scala.inline
-  implicit class locationCreateRendererParamsOps[Self <: locationCreateRendererParams] (val x: Self) extends AnyVal {
+  implicit class locationCreateRendererParamsMutableBuilder[Self <: locationCreateRendererParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
     
     @scala.inline
-    def setBasemap(value: String | Basemap): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    def setEdgesType(value: solid | none): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
     
     @scala.inline
-    def setColorMixMode(value: String): Self = this.set("colorMixMode", value.asInstanceOf[js.Any])
+    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorMixMode: Self = this.set("colorMixMode", js.undefined)
+    def setLocationScheme(value: LocationScheme): Self = StObject.set(x, "locationScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgesType(value: solid | none): Self = this.set("edgesType", value.asInstanceOf[js.Any])
+    def setLocationSchemeUndefined: Self = StObject.set(x, "locationScheme", js.undefined)
     
     @scala.inline
-    def deleteEdgesType: Self = this.set("edgesType", js.undefined)
+    def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationScheme(value: LocationScheme): Self = this.set("locationScheme", value.asInstanceOf[js.Any])
+    def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def deleteLocationScheme: Self = this.set("locationScheme", js.undefined)
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineOptimizationEnabled(value: Boolean): Self = this.set("outlineOptimizationEnabled", value.asInstanceOf[js.Any])
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def deleteOutlineOptimizationEnabled: Self = this.set("outlineOptimizationEnabled", js.undefined)
+    def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeOptimizationEnabled(value: Boolean): Self = this.set("sizeOptimizationEnabled", value.asInstanceOf[js.Any])
+    def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
     
     @scala.inline
-    def deleteSizeOptimizationEnabled: Self = this.set("sizeOptimizationEnabled", js.undefined)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = this.set("symbolType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbolType: Self = this.set("symbolType", js.undefined)
-    
-    @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

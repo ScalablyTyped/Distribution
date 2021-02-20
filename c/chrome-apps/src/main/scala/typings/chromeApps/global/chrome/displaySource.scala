@@ -3,11 +3,14 @@ package typings.chromeApps.global.chrome
 import typings.chromeApps.chromeAppsStrings.Connected_
 import typings.chromeApps.chromeAppsStrings.Connecting_
 import typings.chromeApps.chromeAppsStrings.Disconnected_
+import typings.chromeApps.chromeAppsStrings.PBC
+import typings.chromeApps.chromeAppsStrings.PIN
 import typings.chromeApps.chromeAppsStrings.capabilities_negotiation_error_
 import typings.chromeApps.chromeAppsStrings.connection_error_
 import typings.chromeApps.chromeAppsStrings.media_pipeline_error_
 import typings.chromeApps.chromeAppsStrings.timeout_error_
 import typings.chromeApps.chromeAppsStrings.unknown_error_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,23 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The *chrome.displaySource* API creates a Display session using WebMediaStreamTrack as sources.
   * @todo TODO Finish documentation and typings
   */
-@JSGlobal("chrome.displaySource")
-@js.native
-object displaySource extends js.Object {
-  
-  val getAvailableSinks: js.Function = js.native
-  
-  val onSessionErrorOccured: typings.chromeApps.chrome.events.Event[js.Any] = js.native
-  
-  val onSessionTerminated: typings.chromeApps.chrome.events.Event[js.Any] = js.native
-  
-  val onSinksUpdated: typings.chromeApps.chrome.events.Event[js.Any] = js.native
-  
-  val requestAuthentication: js.Function = js.native
-  
-  val startSession: js.Function = js.native
-  
-  val terminateSession: js.Function = js.native
+object displaySource {
   
   /**
     * @enum
@@ -51,12 +38,23 @@ object displaySource extends js.Object {
     * **'PIN'**
     * PIN authentication method.
     */
-  @js.native
-  object AuthenticationMethod extends js.Object {
+  object AuthenticationMethod {
     
-    var PBC: typings.chromeApps.chromeAppsStrings.PBC = js.native
+    @JSGlobal("chrome.displaySource.AuthenticationMethod")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var PIN: typings.chromeApps.chromeAppsStrings.PIN = js.native
+    @JSGlobal("chrome.displaySource.AuthenticationMethod.PBC")
+    @js.native
+    def PBC: typings.chromeApps.chromeAppsStrings.PBC = js.native
+    @scala.inline
+    def PBC_=(x: PBC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PBC")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.displaySource.AuthenticationMethod.PIN")
+    @js.native
+    def PIN: typings.chromeApps.chromeAppsStrings.PIN = js.native
+    @scala.inline
+    def PIN_=(x: PIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PIN")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -80,18 +78,41 @@ object displaySource extends js.Object {
     * **'unknown_error'**
     * Unspecified error.
     */
-  @js.native
-  object ErrorType extends js.Object {
+  object ErrorType {
     
-    var CAPABILITIES_NEGOTIATION_ERROR: capabilities_negotiation_error_ = js.native
+    @JSGlobal("chrome.displaySource.ErrorType")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var CONNECTION_ERROR: connection_error_ = js.native
+    @JSGlobal("chrome.displaySource.ErrorType.CAPABILITIES_NEGOTIATION_ERROR")
+    @js.native
+    def CAPABILITIES_NEGOTIATION_ERROR: capabilities_negotiation_error_ = js.native
+    @scala.inline
+    def CAPABILITIES_NEGOTIATION_ERROR_=(x: capabilities_negotiation_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPABILITIES_NEGOTIATION_ERROR")(x.asInstanceOf[js.Any])
     
-    var MEDIA_PIPELINE_ERROR: media_pipeline_error_ = js.native
+    @JSGlobal("chrome.displaySource.ErrorType.CONNECTION_ERROR")
+    @js.native
+    def CONNECTION_ERROR: connection_error_ = js.native
+    @scala.inline
+    def CONNECTION_ERROR_=(x: connection_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_ERROR")(x.asInstanceOf[js.Any])
     
-    var TIMEOUT_ERROR: timeout_error_ = js.native
+    @JSGlobal("chrome.displaySource.ErrorType.MEDIA_PIPELINE_ERROR")
+    @js.native
+    def MEDIA_PIPELINE_ERROR: media_pipeline_error_ = js.native
+    @scala.inline
+    def MEDIA_PIPELINE_ERROR_=(x: media_pipeline_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_PIPELINE_ERROR")(x.asInstanceOf[js.Any])
     
-    var UNKNOWN_ERROR: unknown_error_ = js.native
+    @JSGlobal("chrome.displaySource.ErrorType.TIMEOUT_ERROR")
+    @js.native
+    def TIMEOUT_ERROR: timeout_error_ = js.native
+    @scala.inline
+    def TIMEOUT_ERROR_=(x: timeout_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_ERROR")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.displaySource.ErrorType.UNKNOWN_ERROR")
+    @js.native
+    def UNKNOWN_ERROR: unknown_error_ = js.native
+    @scala.inline
+    def UNKNOWN_ERROR_=(x: unknown_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -106,13 +127,56 @@ object displaySource extends js.Object {
     * **'disconnected'**
     * Disconnected from this Display Source
     */
-  @js.native
-  object SinkState extends js.Object {
+  object SinkState {
     
-    var CONNECTED: Connected_ = js.native
+    @JSGlobal("chrome.displaySource.SinkState")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var CONNECTING: Connecting_ = js.native
+    @JSGlobal("chrome.displaySource.SinkState.CONNECTED")
+    @js.native
+    def CONNECTED: Connected_ = js.native
+    @scala.inline
+    def CONNECTED_=(x: Connected_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTED")(x.asInstanceOf[js.Any])
     
-    var DISCONNECTED: Disconnected_ = js.native
+    @JSGlobal("chrome.displaySource.SinkState.CONNECTING")
+    @js.native
+    def CONNECTING: Connecting_ = js.native
+    @scala.inline
+    def CONNECTING_=(x: Connecting_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("chrome.displaySource.SinkState.DISCONNECTED")
+    @js.native
+    def DISCONNECTED: Disconnected_ = js.native
+    @scala.inline
+    def DISCONNECTED_=(x: Disconnected_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCONNECTED")(x.asInstanceOf[js.Any])
   }
+  
+  @JSGlobal("chrome.displaySource.getAvailableSinks")
+  @js.native
+  val getAvailableSinks: js.Function = js.native
+  
+  @JSGlobal("chrome.displaySource.onSessionErrorOccured")
+  @js.native
+  val onSessionErrorOccured: typings.chromeApps.chrome.events.Event[js.Any] = js.native
+  
+  @JSGlobal("chrome.displaySource.onSessionTerminated")
+  @js.native
+  val onSessionTerminated: typings.chromeApps.chrome.events.Event[js.Any] = js.native
+  
+  @JSGlobal("chrome.displaySource.onSinksUpdated")
+  @js.native
+  val onSinksUpdated: typings.chromeApps.chrome.events.Event[js.Any] = js.native
+  
+  @JSGlobal("chrome.displaySource.requestAuthentication")
+  @js.native
+  val requestAuthentication: js.Function = js.native
+  
+  @JSGlobal("chrome.displaySource.startSession")
+  @js.native
+  val startSession: js.Function = js.native
+  
+  @JSGlobal("chrome.displaySource.terminateSession")
+  @js.native
+  val terminateSession: js.Function = js.native
 }

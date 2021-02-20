@@ -2,12 +2,13 @@ package typings.dom4
 
 import typings.std.HTMLCollection
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParentNode extends js.Object {
+trait ParentNode extends StObject {
   
   /**
     * Inserts `nodes` after the last child of this node, while replacing strings with equivalent `Text` nodes.
@@ -37,27 +38,15 @@ object ParentNode {
   }
   
   @scala.inline
-  implicit class ParentNodeOps[Self <: ParentNode] (val x: Self) extends AnyVal {
+  implicit class ParentNodeMutableBuilder[Self <: ParentNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: HTMLCollection): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppend(value: /* repeated */ Node | String => Unit): Self = this.set("append", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setChildren(value: HTMLCollection): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrepend(value: /* repeated */ Node | String => Unit): Self = this.set("prepend", js.Any.fromFunction1(value))
+    def setPrepend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction1(value))
   }
 }

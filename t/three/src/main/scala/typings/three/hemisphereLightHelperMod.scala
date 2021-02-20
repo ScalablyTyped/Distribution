@@ -4,14 +4,14 @@ import typings.three.colorMod.Color
 import typings.three.hemisphereLightMod.HemisphereLight
 import typings.three.meshBasicMaterialMod.MeshBasicMaterial
 import typings.three.object3DMod.Object3D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/helpers/HemisphereLightHelper", JSImport.Namespace)
-@js.native
-object hemisphereLightHelperMod extends js.Object {
+object hemisphereLightHelperMod {
   
+  @JSImport("three/src/helpers/HemisphereLightHelper", "HemisphereLightHelper")
   @js.native
   class HemisphereLightHelper protected () extends Object3D {
     def this(light: HemisphereLight, size: Double) = this()

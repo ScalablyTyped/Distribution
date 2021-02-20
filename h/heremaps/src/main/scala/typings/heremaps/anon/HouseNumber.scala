@@ -1,11 +1,12 @@
 package typings.heremaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HouseNumber extends js.Object {
+trait HouseNumber extends StObject {
   
   var City: Double = js.native
   
@@ -22,30 +23,18 @@ object HouseNumber {
   }
   
   @scala.inline
-  implicit class HouseNumberOps[Self <: HouseNumber] (val x: Self) extends AnyVal {
+  implicit class HouseNumberMutableBuilder[Self <: HouseNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: Double): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHouseNumber(value: Double): Self = StObject.set(x, "HouseNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreet(value: js.Array[Double]): Self = StObject.set(x, "Street", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: Double): Self = this.set("City", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHouseNumber(value: Double): Self = this.set("HouseNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreetVarargs(value: Double*): Self = this.set("Street", js.Array(value :_*))
-    
-    @scala.inline
-    def setStreet(value: js.Array[Double]): Self = this.set("Street", value.asInstanceOf[js.Any])
+    def setStreetVarargs(value: Double*): Self = StObject.set(x, "Street", js.Array(value :_*))
   }
 }

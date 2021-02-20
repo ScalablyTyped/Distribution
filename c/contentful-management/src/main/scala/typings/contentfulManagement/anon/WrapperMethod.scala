@@ -3,12 +3,13 @@ package typings.contentfulManagement.anon
 import typings.axios.mod.AxiosInstance
 import typings.axios.mod.AxiosPromise
 import typings.axios.mod.AxiosRequestConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WrapperMethod[T] extends js.Object {
+trait WrapperMethod[T] extends StObject {
   
   var entityPath: String = js.native
   

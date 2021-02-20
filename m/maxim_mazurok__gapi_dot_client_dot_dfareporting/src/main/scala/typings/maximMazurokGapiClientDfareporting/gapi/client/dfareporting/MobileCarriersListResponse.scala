@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MobileCarriersListResponse extends js.Object {
+trait MobileCarriersListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#mobileCarriersListResponse". */
   var kind: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object MobileCarriersListResponse {
   }
   
   @scala.inline
-  implicit class MobileCarriersListResponseOps[Self <: MobileCarriersListResponse] (val x: Self) extends AnyVal {
+  implicit class MobileCarriersListResponseMutableBuilder[Self <: MobileCarriersListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMobileCarriers(value: js.Array[MobileCarrier]): Self = StObject.set(x, "mobileCarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMobileCarriersUndefined: Self = StObject.set(x, "mobileCarriers", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setMobileCarriersVarargs(value: MobileCarrier*): Self = this.set("mobileCarriers", js.Array(value :_*))
-    
-    @scala.inline
-    def setMobileCarriers(value: js.Array[MobileCarrier]): Self = this.set("mobileCarriers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMobileCarriers: Self = this.set("mobileCarriers", js.undefined)
+    def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value :_*))
   }
 }

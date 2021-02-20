@@ -9,6 +9,7 @@ import typings.jsrsasign.jsrsasignStrings.ia5
 import typings.jsrsasign.jsrsasignStrings.prn
 import typings.jsrsasign.jsrsasignStrings.tel
 import typings.jsrsasign.jsrsasignStrings.utf8
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

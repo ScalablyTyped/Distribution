@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScriptReferenceHost extends js.Object {
+trait ScriptReferenceHost extends StObject {
   
   def getCompilerOptions(): CompilerOptions = js.native
   
@@ -29,30 +30,18 @@ object ScriptReferenceHost {
   }
   
   @scala.inline
-  implicit class ScriptReferenceHostOps[Self <: ScriptReferenceHost] (val x: Self) extends AnyVal {
+  implicit class ScriptReferenceHostMutableBuilder[Self <: ScriptReferenceHost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCompilerOptions(value: () => CompilerOptions): Self = StObject.set(x, "getCompilerOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSourceFile(value: java.lang.String => js.UndefOr[SourceFile]): Self = StObject.set(x, "getSourceFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCompilerOptions(value: () => CompilerOptions): Self = this.set("getCompilerOptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCurrentDirectory(value: () => java.lang.String): Self = this.set("getCurrentDirectory", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSourceFile(value: java.lang.String => js.UndefOr[SourceFile]): Self = this.set("getSourceFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSourceFileByPath(value: Path => js.UndefOr[SourceFile]): Self = this.set("getSourceFileByPath", js.Any.fromFunction1(value))
+    def setGetSourceFileByPath(value: Path => js.UndefOr[SourceFile]): Self = StObject.set(x, "getSourceFileByPath", js.Any.fromFunction1(value))
   }
 }

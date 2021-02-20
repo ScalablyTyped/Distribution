@@ -1,11 +1,12 @@
 package typings.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationOrientationInjectedProps extends js.Object {
+trait NavigationOrientationInjectedProps extends StObject {
   
   var isLandscape: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object NavigationOrientationInjectedProps {
   }
   
   @scala.inline
-  implicit class NavigationOrientationInjectedPropsOps[Self <: NavigationOrientationInjectedProps] (val x: Self) extends AnyVal {
+  implicit class NavigationOrientationInjectedPropsMutableBuilder[Self <: NavigationOrientationInjectedProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsLandscape(value: Boolean): Self = this.set("isLandscape", value.asInstanceOf[js.Any])
+    def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
   }
 }

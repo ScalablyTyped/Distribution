@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +54,7 @@ object KmlObject {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getId: () => String,
     getOwnerDocument: () => KmlDocument,
     getParentNode: () => KmlObject,
@@ -66,44 +67,33 @@ object KmlObject {
     mouseup: KmlMouseEvent => Unit,
     release: () => Unit
   ): KmlObject = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlObject]
   }
   
   @scala.inline
-  implicit class KmlObjectOps[Self <: KmlObject] (val x: Self) extends AnyVal {
+  implicit class KmlObjectMutableBuilder[Self <: KmlObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEquals_(value: KmlObject => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOwnerDocument(value: () => KmlDocument): Self = StObject.set(x, "getOwnerDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEquals(value: KmlObject => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setGetParentNode(value: () => KmlObject): Self = StObject.set(x, "getParentNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOwnerDocument(value: () => KmlDocument): Self = this.set("getOwnerDocument", js.Any.fromFunction0(value))
+    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParentNode(value: () => KmlObject): Self = this.set("getParentNode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetType(value: () => String): Self = this.set("getType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUrl(value: () => String): Self = this.set("getUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRelease(value: () => Unit): Self = this.set("release", js.Any.fromFunction0(value))
+    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
   }
 }

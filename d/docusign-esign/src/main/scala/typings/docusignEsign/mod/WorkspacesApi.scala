@@ -1,12 +1,13 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "WorkspacesApi")
 @js.native
-class WorkspacesApi protected () extends js.Object {
+class WorkspacesApi protected () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   def createWorkspace(accountId: String): js.Promise[Workspace] = js.native

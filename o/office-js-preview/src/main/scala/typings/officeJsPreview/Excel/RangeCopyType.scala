@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RangeCopyType extends js.Object
+sealed trait RangeCopyType extends StObject
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.RangeCopyType")
 @js.native
-object RangeCopyType extends js.Object {
+object RangeCopyType extends StObject {
   
   @js.native
   sealed trait all extends RangeCopyType

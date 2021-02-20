@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientRedis.gapi.client.redis
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientRedis.anon.Callback
 import typings.maximMazurokGapiClientRedis.anon.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationsResource extends js.Object {
+trait OperationsResource extends StObject {
   
   /**
     * Starts asynchronous cancellation on a long-running operation. The server makes a best effort to cancel the operation, but success is not guaranteed. If the server doesn't support

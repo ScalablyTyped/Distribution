@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateWorkflowRequest extends js.Object {
+trait CreateWorkflowRequest extends StObject {
   
   /**
     * A collection of properties to be used as part of each execution of the workflow.
@@ -41,45 +42,33 @@ object CreateWorkflowRequest {
   }
   
   @scala.inline
-  implicit class CreateWorkflowRequestOps[Self <: CreateWorkflowRequest] (val x: Self) extends AnyVal {
+  implicit class CreateWorkflowRequestMutableBuilder[Self <: CreateWorkflowRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "DefaultRunProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "DefaultRunProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: GenericString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setDefaultRunProperties(value: WorkflowRunProperties): Self = this.set("DefaultRunProperties", value.asInstanceOf[js.Any])
+    def setMaxConcurrentRuns(value: NullableInteger): Self = StObject.set(x, "MaxConcurrentRuns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultRunProperties: Self = this.set("DefaultRunProperties", js.undefined)
+    def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "MaxConcurrentRuns", js.undefined)
     
     @scala.inline
-    def setDescription(value: GenericString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrentRuns(value: NullableInteger): Self = this.set("MaxConcurrentRuns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxConcurrentRuns: Self = this.set("MaxConcurrentRuns", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagsMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

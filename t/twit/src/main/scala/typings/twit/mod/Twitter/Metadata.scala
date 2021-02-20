@@ -1,11 +1,12 @@
 package typings.twit.mod.Twitter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Metadata extends js.Object {
+trait Metadata extends StObject {
   
   var completed_in: js.UndefOr[Double] = js.native
   
@@ -34,72 +35,60 @@ object Metadata {
   }
   
   @scala.inline
-  implicit class MetadataOps[Self <: Metadata] (val x: Self) extends AnyVal {
+  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleted_in(value: Double): Self = StObject.set(x, "completed_in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleted_inUndefined: Self = StObject.set(x, "completed_in", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted_in(value: Double): Self = this.set("completed_in", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteCompleted_in: Self = this.set("completed_in", js.undefined)
+    def setMax_id(value: Double): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setMax_idUndefined: Self = StObject.set(x, "max_id", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setMax_id_str(value: String): Self = StObject.set(x, "max_id_str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_id(value: Double): Self = this.set("max_id", value.asInstanceOf[js.Any])
+    def setMax_id_strUndefined: Self = StObject.set(x, "max_id_str", js.undefined)
     
     @scala.inline
-    def deleteMax_id: Self = this.set("max_id", js.undefined)
+    def setNext_results(value: String): Self = StObject.set(x, "next_results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_id_str(value: String): Self = this.set("max_id_str", value.asInstanceOf[js.Any])
+    def setNext_resultsUndefined: Self = StObject.set(x, "next_results", js.undefined)
     
     @scala.inline
-    def deleteMax_id_str: Self = this.set("max_id_str", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_results(value: String): Self = this.set("next_results", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteNext_results: Self = this.set("next_results", js.undefined)
+    def setRefresh_url(value: String): Self = StObject.set(x, "refresh_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setRefresh_urlUndefined: Self = StObject.set(x, "refresh_url", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setSince_id(value: Double): Self = StObject.set(x, "since_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh_url(value: String): Self = this.set("refresh_url", value.asInstanceOf[js.Any])
+    def setSince_idUndefined: Self = StObject.set(x, "since_id", js.undefined)
     
     @scala.inline
-    def deleteRefresh_url: Self = this.set("refresh_url", js.undefined)
+    def setSince_id_str(value: String): Self = StObject.set(x, "since_id_str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince_id(value: Double): Self = this.set("since_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSince_id: Self = this.set("since_id", js.undefined)
-    
-    @scala.inline
-    def setSince_id_str(value: String): Self = this.set("since_id_str", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSince_id_str: Self = this.set("since_id_str", js.undefined)
+    def setSince_id_strUndefined: Self = StObject.set(x, "since_id_str", js.undefined)
   }
 }

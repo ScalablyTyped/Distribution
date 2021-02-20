@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAvailableManagementCidrRangesResult extends js.Object {
+trait ListAvailableManagementCidrRangesResult extends StObject {
   
   /**
     * The list of available IP address ranges, specified as IPv4 CIDR blocks.
@@ -26,33 +27,21 @@ object ListAvailableManagementCidrRangesResult {
   }
   
   @scala.inline
-  implicit class ListAvailableManagementCidrRangesResultOps[Self <: ListAvailableManagementCidrRangesResult] (val x: Self) extends AnyVal {
+  implicit class ListAvailableManagementCidrRangesResultMutableBuilder[Self <: ListAvailableManagementCidrRangesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManagementCidrRanges(value: DedicatedTenancyCidrRangeList): Self = StObject.set(x, "ManagementCidrRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagementCidrRangesUndefined: Self = StObject.set(x, "ManagementCidrRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagementCidrRangesVarargs(value: DedicatedTenancyManagementCidrRange*): Self = StObject.set(x, "ManagementCidrRanges", js.Array(value :_*))
     
     @scala.inline
-    def setManagementCidrRangesVarargs(value: DedicatedTenancyManagementCidrRange*): Self = this.set("ManagementCidrRanges", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagementCidrRanges(value: DedicatedTenancyCidrRangeList): Self = this.set("ManagementCidrRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagementCidrRanges: Self = this.set("ManagementCidrRanges", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

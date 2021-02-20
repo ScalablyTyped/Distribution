@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  ]
   */
 @js.native
-trait Endpoints extends js.Object {
+trait Endpoints extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
@@ -52,45 +53,33 @@ object Endpoints {
   }
   
   @scala.inline
-  implicit class EndpointsOps[Self <: Endpoints] (val x: Self) extends AnyVal {
+  implicit class EndpointsMutableBuilder[Self <: Endpoints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Endpoints]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1]): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Endpoints]): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSubsets(value: Input[js.Array[Input[EndpointSubset]]]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: Input[ObjectMeta]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setSubsetsUndefined: Self = StObject.set(x, "subsets", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setSubsetsVarargs(value: Input[EndpointSubset]*): Self = this.set("subsets", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubsets(value: Input[js.Array[Input[EndpointSubset]]]): Self = this.set("subsets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubsets: Self = this.set("subsets", js.undefined)
+    def setSubsetsVarargs(value: Input[EndpointSubset]*): Self = StObject.set(x, "subsets", js.Array(value :_*))
   }
 }

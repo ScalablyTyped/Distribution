@@ -1,5 +1,6 @@
 package typings.babylonjs.xRIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +16,13 @@ class WebXRFeaturePointSystem protected ()
   def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
 }
 /* static members */
-@JSImport("babylonjs/XR/index", "WebXRFeaturePointSystem")
-@js.native
-object WebXRFeaturePointSystem extends js.Object {
+object WebXRFeaturePointSystem {
   
   /**
     * The module's name
     */
+  @JSImport("babylonjs/XR/index", "WebXRFeaturePointSystem.Name")
+  @js.native
   val Name: String = js.native
   
   /**
@@ -29,5 +30,7 @@ object WebXRFeaturePointSystem extends js.Object {
     * This is an integer representing the implementation version.
     * This number does not correspond to the WebXR specs version
     */
+  @JSImport("babylonjs/XR/index", "WebXRFeaturePointSystem.Version")
+  @js.native
   val Version: Double = js.native
 }

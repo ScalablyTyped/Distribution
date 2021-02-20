@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwipeableListViewProps extends js.Object {
+trait SwipeableListViewProps extends StObject {
   
   /**
     * To alert the user that swiping is possible, the first row can bounce

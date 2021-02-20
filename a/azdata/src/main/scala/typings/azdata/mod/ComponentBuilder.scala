@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentBuilder[T /* <: Component */] extends js.Object {
+trait ComponentBuilder[T /* <: Component */] extends StObject {
   
   def component(): T = js.native
   
@@ -26,27 +27,15 @@ object ComponentBuilder {
   }
   
   @scala.inline
-  implicit class ComponentBuilderOps[Self <: ComponentBuilder[_], T /* <: Component */] (val x: Self with ComponentBuilder[T]) extends AnyVal {
+  implicit class ComponentBuilderMutableBuilder[Self <: ComponentBuilder[_], T /* <: Component */] (val x: Self with ComponentBuilder[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: () => T): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithProperties(value: js.Any => ComponentBuilder[T]): Self = StObject.set(x, "withProperties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponent(value: () => T): Self = this.set("component", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWithProperties(value: js.Any => ComponentBuilder[T]): Self = this.set("withProperties", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithValidation(value: js.Function1[/* component */ T, Boolean] => ComponentBuilder[T]): Self = this.set("withValidation", js.Any.fromFunction1(value))
+    def setWithValidation(value: js.Function1[/* component */ T, Boolean] => ComponentBuilder[T]): Self = StObject.set(x, "withValidation", js.Any.fromFunction1(value))
   }
 }

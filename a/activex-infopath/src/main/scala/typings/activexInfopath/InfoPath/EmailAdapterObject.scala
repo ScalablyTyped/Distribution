@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailAdapterObject extends js.Object {
+trait EmailAdapterObject extends StObject {
   
   var AttachmentFileName: String = js.native
   
@@ -62,60 +63,48 @@ object EmailAdapterObject {
   }
   
   @scala.inline
-  implicit class EmailAdapterObjectOps[Self <: EmailAdapterObject] (val x: Self) extends AnyVal {
+  implicit class EmailAdapterObjectMutableBuilder[Self <: EmailAdapterObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentFileName(value: String): Self = StObject.set(x, "AttachmentFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentType(value: XdAttachmentType): Self = StObject.set(x, "AttachmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentFileName(value: String): Self = this.set("AttachmentFileName", value.asInstanceOf[js.Any])
+    def setCC(value: String): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentType(value: XdAttachmentType): Self = this.set("AttachmentType", value.asInstanceOf[js.Any])
+    def setInfoPathDotEmailAdapterObject_typekey(value: EmailAdapterObject): Self = StObject.set(x, "InfoPath.EmailAdapterObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBCC(value: String): Self = this.set("BCC", value.asInstanceOf[js.Any])
+    def setIntro(value: String): Self = StObject.set(x, "Intro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCC(value: String): Self = this.set("CC", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotEmailAdapterObject_typekey(value: EmailAdapterObject): Self = this.set("InfoPath.EmailAdapterObject_typekey", value.asInstanceOf[js.Any])
+    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIntro(value: String): Self = this.set("Intro", value.asInstanceOf[js.Any])
+    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: () => Unit): Self = this.set("Query", js.Any.fromFunction0(value))
+    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQueryAllowed(value: Boolean): Self = this.set("QueryAllowed", value.asInstanceOf[js.Any])
+    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    def setSubmitData(value: IXMLDOMNode => Unit): Self = StObject.set(x, "SubmitData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSubmit(value: () => Unit): Self = this.set("Submit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = this.set("SubmitAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmitData(value: IXMLDOMNode => Unit): Self = this.set("SubmitData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("To", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

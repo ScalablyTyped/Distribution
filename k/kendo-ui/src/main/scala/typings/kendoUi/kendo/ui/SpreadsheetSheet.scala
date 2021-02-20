@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpreadsheetSheet extends js.Object {
+trait SpreadsheetSheet extends StObject {
   
   var activeCell: js.UndefOr[String] = js.native
   
@@ -41,96 +42,84 @@ object SpreadsheetSheet {
   }
   
   @scala.inline
-  implicit class SpreadsheetSheetOps[Self <: SpreadsheetSheet] (val x: Self) extends AnyVal {
+  implicit class SpreadsheetSheetMutableBuilder[Self <: SpreadsheetSheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveCellUndefined: Self = StObject.set(x, "activeCell", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[SpreadsheetSheetColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveCell(value: String): Self = this.set("activeCell", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteActiveCell: Self = this.set("activeCell", js.undefined)
+    def setColumnsVarargs(value: SpreadsheetSheetColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: SpreadsheetSheetColumn*): Self = this.set("columns", js.Array(value :_*))
+    def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[SpreadsheetSheetColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setFilter(value: SpreadsheetSheetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setFrozenColumns(value: Double): Self = StObject.set(x, "frozenColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: SpreadsheetSheetFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFrozenColumnsUndefined: Self = StObject.set(x, "frozenColumns", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFrozenRows(value: Double): Self = StObject.set(x, "frozenRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrozenColumns(value: Double): Self = this.set("frozenColumns", value.asInstanceOf[js.Any])
+    def setFrozenRowsUndefined: Self = StObject.set(x, "frozenRows", js.undefined)
     
     @scala.inline
-    def deleteFrozenColumns: Self = this.set("frozenColumns", js.undefined)
+    def setMergedCells(value: js.Any): Self = StObject.set(x, "mergedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrozenRows(value: Double): Self = this.set("frozenRows", value.asInstanceOf[js.Any])
+    def setMergedCellsUndefined: Self = StObject.set(x, "mergedCells", js.undefined)
     
     @scala.inline
-    def deleteFrozenRows: Self = this.set("frozenRows", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergedCells(value: js.Any): Self = this.set("mergedCells", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMergedCells: Self = this.set("mergedCells", js.undefined)
+    def setRows(value: js.Array[SpreadsheetSheetRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRowsVarargs(value: SpreadsheetSheetRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: SpreadsheetSheetRow*): Self = this.set("rows", js.Array(value :_*))
+    def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[SpreadsheetSheetRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelection(value: String): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setShowGridLinesUndefined: Self = StObject.set(x, "showGridLines", js.undefined)
     
     @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
+    def setSort(value: SpreadsheetSheetSort): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGridLines(value: Boolean): Self = this.set("showGridLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowGridLines: Self = this.set("showGridLines", js.undefined)
-    
-    @scala.inline
-    def setSort(value: SpreadsheetSheetSort): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

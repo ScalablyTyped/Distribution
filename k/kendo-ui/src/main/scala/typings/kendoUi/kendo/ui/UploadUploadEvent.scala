@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,45 +25,33 @@ object UploadUploadEvent {
   }
   
   @scala.inline
-  implicit class UploadUploadEventOps[Self <: UploadUploadEvent] (val x: Self) extends AnyVal {
+  implicit class UploadUploadEventMutableBuilder[Self <: UploadUploadEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiles(value: js.Array[_]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXMLHttpRequest(value: js.Any): Self = this.set("XMLHttpRequest", value.asInstanceOf[js.Any])
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def deleteXMLHttpRequest: Self = this.set("XMLHttpRequest", js.undefined)
+    def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
     @scala.inline
-    def setFilesVarargs(value: js.Any*): Self = this.set("files", js.Array(value :_*))
+    def setXMLHttpRequest(value: js.Any): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[_]): Self = this.set("files", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
-    
-    @scala.inline
-    def setFormData(value: js.Any): Self = this.set("formData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormData: Self = this.set("formData", js.undefined)
+    def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
   }
 }

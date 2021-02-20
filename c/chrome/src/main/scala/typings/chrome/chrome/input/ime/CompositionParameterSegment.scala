@@ -1,11 +1,12 @@
 package typings.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompositionParameterSegment extends js.Object {
+trait CompositionParameterSegment extends StObject {
   
   /** Index of the character to end this segment after. */
   var end: Double = js.native
@@ -25,27 +26,15 @@ object CompositionParameterSegment {
   }
   
   @scala.inline
-  implicit class CompositionParameterSegmentOps[Self <: CompositionParameterSegment] (val x: Self) extends AnyVal {
+  implicit class CompositionParameterSegmentMutableBuilder[Self <: CompositionParameterSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

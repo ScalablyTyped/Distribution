@@ -2,6 +2,7 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The requested start and end points for a route, as well as the planned mode of transportation.
   */
 @js.native
-trait DirectionsRequest extends js.Object {
+trait DirectionsRequest extends StObject {
   
   /**
     * The arrival date for the trip.
@@ -52,48 +53,36 @@ object DirectionsRequest {
   }
   
   @scala.inline
-  implicit class DirectionsRequestOps[Self <: DirectionsRequest] (val x: Self) extends AnyVal {
+  implicit class DirectionsRequestMutableBuilder[Self <: DirectionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrivalDate(value: Date): Self = StObject.set(x, "arrivalDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrivalDateUndefined: Self = StObject.set(x, "arrivalDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepartureDate(value: Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: String | Coordinate | Place): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setDepartureDateUndefined: Self = StObject.set(x, "departureDate", js.undefined)
     
     @scala.inline
-    def setOrigin(value: String | Coordinate | Place): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setDestination(value: String | Coordinate | Place): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrivalDate(value: Date): Self = this.set("arrivalDate", value.asInstanceOf[js.Any])
+    def setOrigin(value: String | Coordinate | Place): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArrivalDate: Self = this.set("arrivalDate", js.undefined)
+    def setRequestsAlternateRoutes(value: Boolean): Self = StObject.set(x, "requestsAlternateRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartureDate(value: Date): Self = this.set("departureDate", value.asInstanceOf[js.Any])
+    def setRequestsAlternateRoutesUndefined: Self = StObject.set(x, "requestsAlternateRoutes", js.undefined)
     
     @scala.inline
-    def deleteDepartureDate: Self = this.set("departureDate", js.undefined)
+    def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestsAlternateRoutes(value: Boolean): Self = this.set("requestsAlternateRoutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestsAlternateRoutes: Self = this.set("requestsAlternateRoutes", js.undefined)
-    
-    @scala.inline
-    def setTransportType(value: Transport): Self = this.set("transportType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransportType: Self = this.set("transportType", js.undefined)
+    def setTransportTypeUndefined: Self = StObject.set(x, "transportType", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.minecraftScriptingTypesShared
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.`the end`
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.nether
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.overworld
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.nether
   - typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.`the end`
 */
-trait MinecraftDimension extends js.Object
+trait MinecraftDimension extends StObject
 object MinecraftDimension {
   
   @scala.inline

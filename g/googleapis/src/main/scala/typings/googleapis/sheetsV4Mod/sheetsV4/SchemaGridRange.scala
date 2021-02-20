@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * typically not meaningful and are usually rendered in the UI as `#REF!`.
   */
 @js.native
-trait SchemaGridRange extends js.Object {
+trait SchemaGridRange extends StObject {
   
   /**
     * The end column (exclusive) of the range, or not set if unbounded.
@@ -57,48 +58,36 @@ object SchemaGridRange {
   }
   
   @scala.inline
-  implicit class SchemaGridRangeOps[Self <: SchemaGridRange] (val x: Self) extends AnyVal {
+  implicit class SchemaGridRangeMutableBuilder[Self <: SchemaGridRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndColumnIndex(value: Double): Self = StObject.set(x, "endColumnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndColumnIndexUndefined: Self = StObject.set(x, "endColumnIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndRowIndex(value: Double): Self = StObject.set(x, "endRowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumnIndex(value: Double): Self = this.set("endColumnIndex", value.asInstanceOf[js.Any])
+    def setEndRowIndexUndefined: Self = StObject.set(x, "endRowIndex", js.undefined)
     
     @scala.inline
-    def deleteEndColumnIndex: Self = this.set("endColumnIndex", js.undefined)
+    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndRowIndex(value: Double): Self = this.set("endRowIndex", value.asInstanceOf[js.Any])
+    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
     
     @scala.inline
-    def deleteEndRowIndex: Self = this.set("endRowIndex", js.undefined)
+    def setStartColumnIndex(value: Double): Self = StObject.set(x, "startColumnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
+    def setStartColumnIndexUndefined: Self = StObject.set(x, "startColumnIndex", js.undefined)
     
     @scala.inline
-    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+    def setStartRowIndex(value: Double): Self = StObject.set(x, "startRowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColumnIndex(value: Double): Self = this.set("startColumnIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartColumnIndex: Self = this.set("startColumnIndex", js.undefined)
-    
-    @scala.inline
-    def setStartRowIndex(value: Double): Self = this.set("startRowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRowIndex: Self = this.set("startRowIndex", js.undefined)
+    def setStartRowIndexUndefined: Self = StObject.set(x, "startRowIndex", js.undefined)
   }
 }

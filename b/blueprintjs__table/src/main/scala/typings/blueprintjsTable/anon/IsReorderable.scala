@@ -1,11 +1,12 @@
 package typings.blueprintjsTable.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsReorderable extends js.Object {
+trait IsReorderable extends StObject {
   
   var isReorderable: Boolean = js.native
   
@@ -22,27 +23,15 @@ object IsReorderable {
   }
   
   @scala.inline
-  implicit class IsReorderableOps[Self <: IsReorderable] (val x: Self) extends AnyVal {
+  implicit class IsReorderableMutableBuilder[Self <: IsReorderable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsReorderable(value: Boolean): Self = StObject.set(x, "isReorderable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsResizable(value: Boolean): Self = StObject.set(x, "isResizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsReorderable(value: Boolean): Self = this.set("isReorderable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsResizable(value: Boolean): Self = this.set("isResizable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoading(value: Boolean): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
   }
 }

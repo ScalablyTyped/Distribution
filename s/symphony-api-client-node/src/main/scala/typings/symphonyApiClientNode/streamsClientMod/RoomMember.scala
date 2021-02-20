@@ -1,11 +1,12 @@
 package typings.symphonyApiClientNode.streamsClientMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoomMember extends js.Object {
+trait RoomMember extends StObject {
   
   var id: Double = js.native
   
@@ -22,33 +23,21 @@ object RoomMember {
   }
   
   @scala.inline
-  implicit class RoomMemberOps[Self <: RoomMember] (val x: Self) extends AnyVal {
+  implicit class RoomMemberMutableBuilder[Self <: RoomMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJoinDate(value: Double): Self = StObject.set(x, "joinDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJoinDateUndefined: Self = StObject.set(x, "joinDate", js.undefined)
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoinDate(value: Double): Self = this.set("joinDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJoinDate: Self = this.set("joinDate", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: Boolean): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

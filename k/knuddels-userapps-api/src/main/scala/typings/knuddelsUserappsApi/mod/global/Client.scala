@@ -2,6 +2,7 @@ package typings.knuddelsUserappsApi.mod.global
 
 import typings.knuddelsUserappsApi.anon.Data
 import typings.knuddelsUserappsApi.mod.KnuddelsEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("Client")
 @js.native
-class Client () extends js.Object
-/* static members */
+class Client () extends StObject
 /**
 	 * @see https://developer.knuddels.de/docs/classes/Client.Color.html
 	 */
@@ -22,108 +22,15 @@ class Client () extends js.Object
 /**
 	 * @see https://developer.knuddels.de/docs/classes/Client.HostFrame.html
 	 */
-@JSGlobal("Client")
-@js.native
-object Client extends js.Object {
+object Client {
   
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_addConnectionTypeChangeListener
-  		 */
-  def addConnectionTypeChangeListener(callback: js.Function1[/* type */ java.lang.String, Unit]): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_addEventListener
-  		 */
-  def addEventListener(`type`: java.lang.String, callback: js.Function1[/* event */ Data, Unit]): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_close
-  		 */
-  def close(): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_dispatchEvent
-  		 */
-  def dispatchEvent(event: Event): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_executeSlashCommand
-  		 */
-  def executeSlashCommand(command: java.lang.String): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_freeSound
-  		 */
-  def freeSound(fileName: java.lang.String): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getCacheInvalidationId
-  		 */
-  def getCacheInvalidationId(): java.lang.String = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getClientType
-  		 */
-  def getClientType(): ClientType = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getDirectConnection
-  		 */
-  def getDirectConnection(): js.Promise[Unit] = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getHostFrame
-  		 */
-  def getHostFrame(): HostFrame = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getNick
-  		 */
-  def getNick(): java.lang.String = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_includeCSS
-  		 */
-  def includeCSS(files: java.lang.String*): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_includeJS
-  		 */
-  def includeJS(files: java.lang.String*): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#property_pageData
-  		 */
-  var pageData: Json = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_playSound
-  		 */
-  def playSound(fileName: java.lang.String): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_prefetchSound
-  		 */
-  def prefetchSound(fileName: java.lang.String): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_removeConnectionTypeChangeListener
-  		 */
-  def removeConnectionTypeChangeListener(callback: js.Function1[/* type */ java.lang.String, Unit]): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_removeEventListener
-  		 */
-  def removeEventListener(`type`: java.lang.String): Unit = js.native
-  def removeEventListener(`type`: java.lang.String, callback: js.Function1[/* event */ Data, Unit]): Unit = js.native
-  
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_sendEvent
-  		 */
-  def sendEvent(`type`: java.lang.String, data: KnuddelsEvent): Unit = js.native
-  
+  @JSGlobal("Client")
   @js.native
-  class Color () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("Client.Color")
+  @js.native
+  class Color () extends StObject {
     
     /**
     			 * @see https://developer.knuddels.de/docs/classes/Client.Color.html#method_asHexString
@@ -145,31 +52,37 @@ object Client extends js.Object {
     			 */
     def getRed(): Double = js.native
   }
-  /* static members */
-  @js.native
-  object Color extends js.Object {
+  object Color {
     
     /**
     			 * @see https://developer.knuddels.de/docs/classes/Client.Color.html#method_fromHexString
     			 */
+    /* static member */
+    @JSGlobal("Client.Color.fromHexString")
+    @js.native
     def fromHexString(colorString: java.lang.String): typings.knuddelsUserappsApi.mod.global.Client.Color = js.native
     
     /**
     			 * @see https://developer.knuddels.de/docs/classes/Client.Color.html#method_fromRGB
     			 */
+    /* static member */
+    @JSGlobal("Client.Color.fromRGB")
+    @js.native
     def fromRGB(red: Double, green: Double, blue: Double): typings.knuddelsUserappsApi.mod.global.Client.Color = js.native
   }
   
+  @JSGlobal("Client.Event")
   @js.native
-  class Event protected () extends js.Object {
+  class Event protected () extends StObject {
     /**
     			 * @see https://developer.knuddels.de/docs/classes/Client.Event.html#method_Event
     			 */
     def this(`type`: java.lang.String, data: KnuddelsEvent) = this()
   }
   
+  @JSGlobal("Client.HostFrame")
   @js.native
-  class HostFrame () extends js.Object {
+  class HostFrame () extends StObject {
     
     /**
     			 * @see https://developer.knuddels.de/docs/classes/Client.HostFrame.html#method_focus
@@ -217,4 +130,161 @@ object Client extends js.Object {
     			 */
     def setTitle(newTitle: java.lang.String): Unit = js.native
   }
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_addConnectionTypeChangeListener
+  		 */
+  /* static member */
+  @JSGlobal("Client.addConnectionTypeChangeListener")
+  @js.native
+  def addConnectionTypeChangeListener(callback: js.Function1[/* type */ java.lang.String, Unit]): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_addEventListener
+  		 */
+  /* static member */
+  @JSGlobal("Client.addEventListener")
+  @js.native
+  def addEventListener(`type`: java.lang.String, callback: js.Function1[/* event */ Data, Unit]): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_close
+  		 */
+  /* static member */
+  @JSGlobal("Client.close")
+  @js.native
+  def close(): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_dispatchEvent
+  		 */
+  /* static member */
+  @JSGlobal("Client.dispatchEvent")
+  @js.native
+  def dispatchEvent(event: typings.std.Event): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_executeSlashCommand
+  		 */
+  /* static member */
+  @JSGlobal("Client.executeSlashCommand")
+  @js.native
+  def executeSlashCommand(command: java.lang.String): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_freeSound
+  		 */
+  /* static member */
+  @JSGlobal("Client.freeSound")
+  @js.native
+  def freeSound(fileName: java.lang.String): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getCacheInvalidationId
+  		 */
+  /* static member */
+  @JSGlobal("Client.getCacheInvalidationId")
+  @js.native
+  def getCacheInvalidationId(): java.lang.String = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getClientType
+  		 */
+  /* static member */
+  @JSGlobal("Client.getClientType")
+  @js.native
+  def getClientType(): ClientType = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getDirectConnection
+  		 */
+  /* static member */
+  @JSGlobal("Client.getDirectConnection")
+  @js.native
+  def getDirectConnection(): js.Promise[Unit] = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getHostFrame
+  		 */
+  /* static member */
+  @JSGlobal("Client.getHostFrame")
+  @js.native
+  def getHostFrame(): HostFrame = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getNick
+  		 */
+  /* static member */
+  @JSGlobal("Client.getNick")
+  @js.native
+  def getNick(): java.lang.String = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_includeCSS
+  		 */
+  /* static member */
+  @JSGlobal("Client.includeCSS")
+  @js.native
+  def includeCSS(files: java.lang.String*): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_includeJS
+  		 */
+  /* static member */
+  @JSGlobal("Client.includeJS")
+  @js.native
+  def includeJS(files: java.lang.String*): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#property_pageData
+  		 */
+  /* static member */
+  @JSGlobal("Client.pageData")
+  @js.native
+  def pageData: Json = js.native
+  @scala.inline
+  def pageData_=(x: Json): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageData")(x.asInstanceOf[js.Any])
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_playSound
+  		 */
+  /* static member */
+  @JSGlobal("Client.playSound")
+  @js.native
+  def playSound(fileName: java.lang.String): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_prefetchSound
+  		 */
+  /* static member */
+  @JSGlobal("Client.prefetchSound")
+  @js.native
+  def prefetchSound(fileName: java.lang.String): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_removeConnectionTypeChangeListener
+  		 */
+  /* static member */
+  @JSGlobal("Client.removeConnectionTypeChangeListener")
+  @js.native
+  def removeConnectionTypeChangeListener(callback: js.Function1[/* type */ java.lang.String, Unit]): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_removeEventListener
+  		 */
+  /* static member */
+  @JSGlobal("Client.removeEventListener")
+  @js.native
+  def removeEventListener(`type`: java.lang.String): Unit = js.native
+  @JSGlobal("Client.removeEventListener")
+  @js.native
+  def removeEventListener(`type`: java.lang.String, callback: js.Function1[/* event */ Data, Unit]): Unit = js.native
+  
+  /**
+  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_sendEvent
+  		 */
+  /* static member */
+  @JSGlobal("Client.sendEvent")
+  @js.native
+  def sendEvent(`type`: java.lang.String, data: KnuddelsEvent): Unit = js.native
 }

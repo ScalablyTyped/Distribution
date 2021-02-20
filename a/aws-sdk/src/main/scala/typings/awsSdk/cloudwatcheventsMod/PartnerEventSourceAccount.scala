@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartnerEventSourceAccount extends js.Object {
+trait PartnerEventSourceAccount extends StObject {
   
   /**
     * The AWS account ID that the partner event source was offered to.
@@ -36,42 +37,30 @@ object PartnerEventSourceAccount {
   }
   
   @scala.inline
-  implicit class PartnerEventSourceAccountOps[Self <: PartnerEventSourceAccount] (val x: Self) extends AnyVal {
+  implicit class PartnerEventSourceAccountMutableBuilder[Self <: PartnerEventSourceAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount(value: AccountId): Self = this.set("Account", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAccount: Self = this.set("Account", js.undefined)
+    def setExpirationTime(value: Timestamp): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setState(value: EventSourceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: Timestamp): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationTime: Self = this.set("ExpirationTime", js.undefined)
-    
-    @scala.inline
-    def setState(value: EventSourceState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -7,6 +7,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`raster-stretch`
 import typings.arcgisJsApi.arcgisJsApiStrings.`standard-deviation`
 import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.sigmoid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,6 +2,7 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.baidumapWebSdk.anon.Target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,84 +86,72 @@ object Label {
   }
   
   @scala.inline
-  implicit class LabelOps[Self <: Label] (val x: Self) extends AnyVal {
+  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableMassClear(value: () => Unit): Self = StObject.set(x, "disableMassClear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableMassClear(value: () => Unit): Self = StObject.set(x, "enableMassClear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddEventListener(value: (String, Callback) => Unit): Self = this.set("addEventListener", js.Any.fromFunction2(value))
+    def setGetMap(value: () => Map): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisableMassClear(value: () => Unit): Self = this.set("disableMassClear", js.Any.fromFunction0(value))
+    def setGetOffset(value: () => Size): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnableMassClear(value: () => Unit): Self = this.set("enableMassClear", js.Any.fromFunction0(value))
+    def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMap(value: () => Map): Self = this.set("getMap", js.Any.fromFunction0(value))
+    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOffset(value: () => Size): Self = this.set("getOffset", js.Any.fromFunction0(value))
+    def setOnclick(value: Target => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPosition(value: () => Point): Self = this.set("getPosition", js.Any.fromFunction0(value))
+    def setOndblclick(value: Target => Unit): Self = StObject.set(x, "ondblclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setOnmousedown(value: Target => Unit): Self = StObject.set(x, "onmousedown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnclick(value: Target => Unit): Self = this.set("onclick", js.Any.fromFunction1(value))
+    def setOnmouseout(value: Target => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOndblclick(value: Target => Unit): Self = this.set("ondblclick", js.Any.fromFunction1(value))
+    def setOnmouseover(value: Target => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmousedown(value: Target => Unit): Self = this.set("onmousedown", js.Any.fromFunction1(value))
+    def setOnmouseup(value: Target => Unit): Self = StObject.set(x, "onmouseup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmouseout(value: Target => Unit): Self = this.set("onmouseout", js.Any.fromFunction1(value))
+    def setOnremove(value: Target => Unit): Self = StObject.set(x, "onremove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmouseover(value: Target => Unit): Self = this.set("onmouseover", js.Any.fromFunction1(value))
+    def setOnrightclick(value: Target => Unit): Self = StObject.set(x, "onrightclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmouseup(value: Target => Unit): Self = this.set("onmouseup", js.Any.fromFunction1(value))
+    def setRemoveEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnremove(value: Target => Unit): Self = this.set("onremove", js.Any.fromFunction1(value))
+    def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnrightclick(value: Target => Unit): Self = this.set("onrightclick", js.Any.fromFunction1(value))
+    def setSetOffset(value: Size => Unit): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveEventListener(value: (String, Callback) => Unit): Self = this.set("removeEventListener", js.Any.fromFunction2(value))
+    def setSetPosition(value: Point => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetContent(value: String => Unit): Self = this.set("setContent", js.Any.fromFunction1(value))
+    def setSetStyle(value: StringDictionary[String | Double] => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOffset(value: Size => Unit): Self = this.set("setOffset", js.Any.fromFunction1(value))
+    def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPosition(value: Point => Unit): Self = this.set("setPosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStyle(value: StringDictionary[String | Double] => Unit): Self = this.set("setStyle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitle(value: String => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetZIndex(value: Double => Unit): Self = this.set("setZIndex", js.Any.fromFunction1(value))
+    def setSetZIndex(value: Double => Unit): Self = StObject.set(x, "setZIndex", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.jose.mod
 
 import typings.jose.joseStrings.EC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,36 +31,24 @@ object JWKECKey {
   }
   
   @scala.inline
-  implicit class JWKECKeyOps[Self <: JWKECKey] (val x: Self) extends AnyVal {
+  implicit class JWKECKeyMutableBuilder[Self <: JWKECKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrv(value: ECCurve): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def setCrv(value: ECCurve): Self = this.set("crv", value.asInstanceOf[js.Any])
+    def setKty(value: EC): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKty(value: EC): Self = this.set("kty", value.asInstanceOf[js.Any])
+    def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: String): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: String): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

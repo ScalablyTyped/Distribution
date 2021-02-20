@@ -1,11 +1,12 @@
 package typings.awsSdk.workmailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FolderConfiguration extends js.Object {
+trait FolderConfiguration extends StObject {
   
   /**
     * The action to take on the folder contents at the end of the folder configuration period.
@@ -31,30 +32,18 @@ object FolderConfiguration {
   }
   
   @scala.inline
-  implicit class FolderConfigurationOps[Self <: FolderConfiguration] (val x: Self) extends AnyVal {
+  implicit class FolderConfigurationMutableBuilder[Self <: FolderConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: RetentionAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: FolderName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriod(value: RetentionPeriod): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: RetentionAction): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: FolderName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPeriod(value: RetentionPeriod): Self = this.set("Period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("Period", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
   }
 }

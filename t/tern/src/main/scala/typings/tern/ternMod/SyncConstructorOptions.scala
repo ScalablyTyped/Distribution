@@ -1,12 +1,13 @@
 package typings.tern.ternMod
 
 import typings.tern.ternBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SyncConstructorOptions extends js.Object {
+trait SyncConstructorOptions extends StObject {
   
   /** Indicates whether `getFile` is asynchronous. Default is `false`. */
   var async: js.UndefOr[`false`] = js.native
@@ -28,30 +29,18 @@ object SyncConstructorOptions {
   }
   
   @scala.inline
-  implicit class SyncConstructorOptionsOps[Self <: SyncConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class SyncConstructorOptionsMutableBuilder[Self <: SyncConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFile(value: /* filename */ String => String): Self = StObject.set(x, "getFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAsync(value: `false`): Self = this.set("async", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
-    
-    @scala.inline
-    def setGetFile(value: /* filename */ String => String): Self = this.set("getFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetFile: Self = this.set("getFile", js.undefined)
+    def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)
   }
 }

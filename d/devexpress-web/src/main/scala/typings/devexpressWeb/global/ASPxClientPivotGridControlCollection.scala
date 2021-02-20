@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientPivotGridControlCollection ()
   extends typings.devexpressWeb.ASPxClientControlCollection
-/* static members */
-@JSGlobal("ASPxClientPivotGridControlCollection")
-@js.native
-object ASPxClientPivotGridControlCollection extends js.Object {
+object ASPxClientPivotGridControlCollection {
   
+  /* static member */
+  @JSGlobal("ASPxClientPivotGridControlCollection.GetPivotGridControlCollection")
+  @js.native
   def GetPivotGridControlCollection(): typings.devexpressWeb.ASPxClientPivotGridControlCollection = js.native
 }

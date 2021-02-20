@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiveBroadcastStatistics extends js.Object {
+trait LiveBroadcastStatistics extends StObject {
   
   /**
     * The total number of live chat messages currently on the broadcast. The property and its value will be present if the broadcast is public, has the live chat feature enabled, and has
@@ -23,24 +24,12 @@ object LiveBroadcastStatistics {
   }
   
   @scala.inline
-  implicit class LiveBroadcastStatisticsOps[Self <: LiveBroadcastStatistics] (val x: Self) extends AnyVal {
+  implicit class LiveBroadcastStatisticsMutableBuilder[Self <: LiveBroadcastStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTotalChatCount(value: String): Self = StObject.set(x, "totalChatCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTotalChatCount(value: String): Self = this.set("totalChatCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalChatCount: Self = this.set("totalChatCount", js.undefined)
+    def setTotalChatCountUndefined: Self = StObject.set(x, "totalChatCount", js.undefined)
   }
 }

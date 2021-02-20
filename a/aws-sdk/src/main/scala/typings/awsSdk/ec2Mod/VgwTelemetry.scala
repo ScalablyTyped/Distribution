@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VgwTelemetry extends js.Object {
+trait VgwTelemetry extends StObject {
   
   /**
     * The number of accepted routes.
@@ -46,54 +47,42 @@ object VgwTelemetry {
   }
   
   @scala.inline
-  implicit class VgwTelemetryOps[Self <: VgwTelemetry] (val x: Self) extends AnyVal {
+  implicit class VgwTelemetryMutableBuilder[Self <: VgwTelemetry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptedRouteCount(value: Integer): Self = StObject.set(x, "AcceptedRouteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptedRouteCountUndefined: Self = StObject.set(x, "AcceptedRouteCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateArn(value: String): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptedRouteCount(value: Integer): Self = this.set("AcceptedRouteCount", value.asInstanceOf[js.Any])
+    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
     @scala.inline
-    def deleteAcceptedRouteCount: Self = this.set("AcceptedRouteCount", js.undefined)
+    def setLastStatusChange(value: DateTime): Self = StObject.set(x, "LastStatusChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: String): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    def setLastStatusChangeUndefined: Self = StObject.set(x, "LastStatusChange", js.undefined)
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    def setOutsideIpAddress(value: String): Self = StObject.set(x, "OutsideIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatusChange(value: DateTime): Self = this.set("LastStatusChange", value.asInstanceOf[js.Any])
+    def setOutsideIpAddressUndefined: Self = StObject.set(x, "OutsideIpAddress", js.undefined)
     
     @scala.inline
-    def deleteLastStatusChange: Self = this.set("LastStatusChange", js.undefined)
+    def setStatus(value: TelemetryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutsideIpAddress(value: String): Self = this.set("OutsideIpAddress", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutsideIpAddress: Self = this.set("OutsideIpAddress", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: TelemetryStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

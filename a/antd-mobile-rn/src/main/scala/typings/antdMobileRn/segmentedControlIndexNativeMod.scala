@@ -1,22 +1,32 @@
 package typings.antdMobileRn
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.antdMobileRn.anon.SelectedIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/segmented-control/index.native", JSImport.Namespace)
-@js.native
-object segmentedControlIndexNativeMod extends js.Object {
+object segmentedControlIndexNativeMod {
   
+  /* was `typeof SegmentedIOS` */
+  @JSImport("antd-mobile-rn/lib/segmented-control/index.native", JSImport.Default)
   @js.native
   class default ()
     extends typings.antdMobileRn.segmentedIosMod.default
-  @js.native
-  object default
-    extends Instantiable0[typings.antdMobileRn.segmentedIosMod.default] {
+  /* static members */
+  object default {
     
-    var defaultProps: SelectedIndex = js.native
+    @JSImport("antd-mobile-rn/lib/segmented-control/index.native", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("antd-mobile-rn/lib/segmented-control/index.native", "default.defaultProps")
+    @js.native
+    def defaultProps: SelectedIndex = js.native
+    @scala.inline
+    def defaultProps_=(x: SelectedIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
+  
+  /* was `typeof SegmentedIOS` */
+  type _default = typings.antdMobileRn.segmentedIosMod.default
 }

@@ -1,11 +1,12 @@
 package typings.paypalPayoutsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBatchPayoutResponse extends js.Object {
+trait GetBatchPayoutResponse extends StObject {
   
   var batch_header: js.UndefOr[PayoutBatchHeader] = js.native
   
@@ -28,60 +29,48 @@ object GetBatchPayoutResponse {
   }
   
   @scala.inline
-  implicit class GetBatchPayoutResponseOps[Self <: GetBatchPayoutResponse] (val x: Self) extends AnyVal {
+  implicit class GetBatchPayoutResponseMutableBuilder[Self <: GetBatchPayoutResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatch_header(value: PayoutBatchHeader): Self = StObject.set(x, "batch_header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatch_headerUndefined: Self = StObject.set(x, "batch_header", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatch_header(value: PayoutBatchHeader): Self = this.set("batch_header", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteBatch_header: Self = this.set("batch_header", js.undefined)
+    def setItems(value: js.Array[PayoutBatchItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Any): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setItemsVarargs(value: PayoutBatchItems*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: PayoutBatchItems*): Self = this.set("items", js.Array(value :_*))
+    def setLinks(value: js.Array[LinkDescription]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[PayoutBatchItems]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def setLinksVarargs(value: LinkDescription*): Self = this.set("links", js.Array(value :_*))
+    def setTotal_items(value: Double): Self = StObject.set(x, "total_items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: js.Array[LinkDescription]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setTotal_itemsUndefined: Self = StObject.set(x, "total_items", js.undefined)
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setTotal_pages(value: Double): Self = StObject.set(x, "total_pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_items(value: Double): Self = this.set("total_items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal_items: Self = this.set("total_items", js.undefined)
-    
-    @scala.inline
-    def setTotal_pages(value: Double): Self = this.set("total_pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal_pages: Self = this.set("total_pages", js.undefined)
+    def setTotal_pagesUndefined: Self = StObject.set(x, "total_pages", js.undefined)
   }
 }

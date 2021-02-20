@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -274,84 +275,72 @@ object XFrame {
   }
   
   @scala.inline
-  implicit class XFrameOps[Self <: XFrame] (val x: Self) extends AnyVal {
+  implicit class XFrameMutableBuilder[Self <: XFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddFrameActionListener(value: XFrameActionListener => Unit): Self = StObject.set(x, "addFrameActionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentWindow(value: XWindow): Self = StObject.set(x, "ComponentWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentWindow(value: XWindow): Self = this.set("ComponentWindow", value.asInstanceOf[js.Any])
+    def setContainerWindow(value: XWindow): Self = StObject.set(x, "ContainerWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerWindow(value: XWindow): Self = this.set("ContainerWindow", value.asInstanceOf[js.Any])
+    def setContextChanged(value: () => Unit): Self = StObject.set(x, "contextChanged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setController(value: XController): Self = this.set("Controller", value.asInstanceOf[js.Any])
+    def setController(value: XController): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XFramesSupplier): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setCreator(value: XFramesSupplier): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDeactivate(value: () => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActivate(value: () => Unit): Self = this.set("activate", js.Any.fromFunction0(value))
+    def setFindFrame(value: (String, Double) => XFrame): Self = StObject.set(x, "findFrame", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddFrameActionListener(value: XFrameActionListener => Unit): Self = this.set("addFrameActionListener", js.Any.fromFunction1(value))
+    def setGetComponentWindow(value: () => XWindow): Self = StObject.set(x, "getComponentWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContextChanged(value: () => Unit): Self = this.set("contextChanged", js.Any.fromFunction0(value))
+    def setGetContainerWindow(value: () => XWindow): Self = StObject.set(x, "getContainerWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeactivate(value: () => Unit): Self = this.set("deactivate", js.Any.fromFunction0(value))
+    def setGetController(value: () => XController): Self = StObject.set(x, "getController", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindFrame(value: (String, Double) => XFrame): Self = this.set("findFrame", js.Any.fromFunction2(value))
+    def setGetCreator(value: () => XFramesSupplier): Self = StObject.set(x, "getCreator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetComponentWindow(value: () => XWindow): Self = this.set("getComponentWindow", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContainerWindow(value: () => XWindow): Self = this.set("getContainerWindow", js.Any.fromFunction0(value))
+    def setInitialize(value: XWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetController(value: () => XController): Self = this.set("getController", js.Any.fromFunction0(value))
+    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCreator(value: () => XFramesSupplier): Self = this.set("getCreator", js.Any.fromFunction0(value))
+    def setIsTop(value: () => Boolean): Self = StObject.set(x, "isTop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialize(value: XWindow => Unit): Self = this.set("initialize", js.Any.fromFunction1(value))
+    def setRemoveFrameActionListener(value: XFrameActionListener => Unit): Self = StObject.set(x, "removeFrameActionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsActive(value: () => Boolean): Self = this.set("isActive", js.Any.fromFunction0(value))
+    def setSetComponent(value: (XWindow, XController) => Boolean): Self = StObject.set(x, "setComponent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsTop(value: () => Boolean): Self = this.set("isTop", js.Any.fromFunction0(value))
+    def setSetCreator(value: XFramesSupplier => Unit): Self = StObject.set(x, "setCreator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveFrameActionListener(value: XFrameActionListener => Unit): Self = this.set("removeFrameActionListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetComponent(value: (XWindow, XController) => Boolean): Self = this.set("setComponent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetCreator(value: XFramesSupplier => Unit): Self = this.set("setCreator", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetName(value: String => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

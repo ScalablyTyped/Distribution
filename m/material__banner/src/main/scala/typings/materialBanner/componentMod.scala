@@ -5,16 +5,18 @@ import typings.materialBanner.foundationMod.MDCBannerFoundation
 import typings.materialBase.componentMod.MDCComponent
 import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/banner/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/banner/component", "MDCBanner")
   @js.native
-  class MDCBanner () extends MDCComponent[MDCBannerFoundation] {
+  class MDCBanner protected () extends MDCComponent[MDCBannerFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCBannerFoundation, args: js.Any*) = this()
     
     /**
       * Closes the banner and fires events.CLOSING to indicate the beginning of its
@@ -56,9 +58,10 @@ object componentMod extends js.Object {
     def setText(text: String): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCBanner extends js.Object {
+  object MDCBanner {
     
+    @JSImport("@material/banner/component", "MDCBanner.attachTo")
+    @js.native
     def attachTo(root: Element): MDCBanner = js.native
   }
 }

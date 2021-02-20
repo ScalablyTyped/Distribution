@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShaderProcessor extends js.Object {
+trait IShaderProcessor extends StObject {
   
   var attributeProcessor: js.UndefOr[js.Function1[/* attribute */ String, String]] = js.native
   
@@ -42,68 +43,56 @@ object IShaderProcessor {
   }
   
   @scala.inline
-  implicit class IShaderProcessorOps[Self <: IShaderProcessor] (val x: Self) extends AnyVal {
+  implicit class IShaderProcessorMutableBuilder[Self <: IShaderProcessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeProcessor(value: /* attribute */ String => String): Self = StObject.set(x, "attributeProcessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeProcessorUndefined: Self = StObject.set(x, "attributeProcessor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndOfUniformBufferProcessor(value: (/* closingBracketLine */ String, /* isFragment */ Boolean) => String): Self = StObject.set(x, "endOfUniformBufferProcessor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAttributeProcessor(value: /* attribute */ String => String): Self = this.set("attributeProcessor", js.Any.fromFunction1(value))
+    def setEndOfUniformBufferProcessorUndefined: Self = StObject.set(x, "endOfUniformBufferProcessor", js.undefined)
     
     @scala.inline
-    def deleteAttributeProcessor: Self = this.set("attributeProcessor", js.undefined)
+    def setLineProcessor(value: (/* line */ String, /* isFragment */ Boolean) => String): Self = StObject.set(x, "lineProcessor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEndOfUniformBufferProcessor(value: (/* closingBracketLine */ String, /* isFragment */ Boolean) => String): Self = this.set("endOfUniformBufferProcessor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteEndOfUniformBufferProcessor: Self = this.set("endOfUniformBufferProcessor", js.undefined)
-    
-    @scala.inline
-    def setLineProcessor(value: (/* line */ String, /* isFragment */ Boolean) => String): Self = this.set("lineProcessor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteLineProcessor: Self = this.set("lineProcessor", js.undefined)
+    def setLineProcessorUndefined: Self = StObject.set(x, "lineProcessor", js.undefined)
     
     @scala.inline
     def setPostProcessor(
       value: (/* code */ String, /* defines */ js.Array[String], /* isFragment */ Boolean, /* engine */ ThinEngine) => String
-    ): Self = this.set("postProcessor", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "postProcessor", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deletePostProcessor: Self = this.set("postProcessor", js.undefined)
+    def setPostProcessorUndefined: Self = StObject.set(x, "postProcessor", js.undefined)
     
     @scala.inline
-    def setPreProcessor(value: (/* code */ String, /* defines */ js.Array[String], /* isFragment */ Boolean) => String): Self = this.set("preProcessor", js.Any.fromFunction3(value))
+    def setPreProcessor(value: (/* code */ String, /* defines */ js.Array[String], /* isFragment */ Boolean) => String): Self = StObject.set(x, "preProcessor", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deletePreProcessor: Self = this.set("preProcessor", js.undefined)
+    def setPreProcessorUndefined: Self = StObject.set(x, "preProcessor", js.undefined)
     
     @scala.inline
-    def setUniformBufferProcessor(value: (/* uniformBuffer */ String, /* isFragment */ Boolean) => String): Self = this.set("uniformBufferProcessor", js.Any.fromFunction2(value))
+    def setUniformBufferProcessor(value: (/* uniformBuffer */ String, /* isFragment */ Boolean) => String): Self = StObject.set(x, "uniformBufferProcessor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteUniformBufferProcessor: Self = this.set("uniformBufferProcessor", js.undefined)
+    def setUniformBufferProcessorUndefined: Self = StObject.set(x, "uniformBufferProcessor", js.undefined)
     
     @scala.inline
-    def setUniformProcessor(value: (/* uniform */ String, /* isFragment */ Boolean) => String): Self = this.set("uniformProcessor", js.Any.fromFunction2(value))
+    def setUniformProcessor(value: (/* uniform */ String, /* isFragment */ Boolean) => String): Self = StObject.set(x, "uniformProcessor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteUniformProcessor: Self = this.set("uniformProcessor", js.undefined)
+    def setUniformProcessorUndefined: Self = StObject.set(x, "uniformProcessor", js.undefined)
     
     @scala.inline
-    def setVaryingProcessor(value: (/* varying */ String, /* isFragment */ Boolean) => String): Self = this.set("varyingProcessor", js.Any.fromFunction2(value))
+    def setVaryingProcessor(value: (/* varying */ String, /* isFragment */ Boolean) => String): Self = StObject.set(x, "varyingProcessor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteVaryingProcessor: Self = this.set("varyingProcessor", js.undefined)
+    def setVaryingProcessorUndefined: Self = StObject.set(x, "varyingProcessor", js.undefined)
   }
 }

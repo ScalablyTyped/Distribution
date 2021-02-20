@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a custom property on a wallet item. Apps can show data in the details view or back of card view of the item. */
 @js.native
-trait WalletItemCustomProperty extends js.Object {
+trait WalletItemCustomProperty extends StObject {
   
   /** Gets or sets whether this WalletItemCustomProperty is entity-extracted and actionable upon display. */
   var autoDetectLinks: Boolean = js.native
@@ -38,33 +39,21 @@ object WalletItemCustomProperty {
   }
   
   @scala.inline
-  implicit class WalletItemCustomPropertyOps[Self <: WalletItemCustomProperty] (val x: Self) extends AnyVal {
+  implicit class WalletItemCustomPropertyMutableBuilder[Self <: WalletItemCustomProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDetectLinks(value: Boolean): Self = StObject.set(x, "autoDetectLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailViewPosition(value: WalletDetailViewPosition): Self = StObject.set(x, "detailViewPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDetectLinks(value: Boolean): Self = this.set("autoDetectLinks", value.asInstanceOf[js.Any])
+    def setSummaryViewPosition(value: WalletSummaryViewPosition): Self = StObject.set(x, "summaryViewPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailViewPosition(value: WalletDetailViewPosition): Self = this.set("detailViewPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummaryViewPosition(value: WalletSummaryViewPosition): Self = this.set("summaryViewPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

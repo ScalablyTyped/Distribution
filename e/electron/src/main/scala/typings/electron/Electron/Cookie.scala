@@ -4,12 +4,13 @@ import typings.electron.electronStrings.lax
 import typings.electron.electronStrings.no_restriction
 import typings.electron.electronStrings.strict
 import typings.electron.electronStrings.unspecified
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cookie extends js.Object {
+trait Cookie extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/cookie
   /**
@@ -76,69 +77,57 @@ object Cookie {
   }
   
   @scala.inline
-  implicit class CookieOps[Self <: Cookie] (val x: Self) extends AnyVal {
+  implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationDate(value: Double): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
     @scala.inline
-    def setSameSite(value: unspecified | no_restriction | lax | strict): Self = this.set("sameSite", value.asInstanceOf[js.Any])
+    def setHostOnly(value: Boolean): Self = StObject.set(x, "hostOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setHostOnlyUndefined: Self = StObject.set(x, "hostOnly", js.undefined)
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
     
     @scala.inline
-    def setExpirationDate(value: Double): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostOnly(value: Boolean): Self = this.set("hostOnly", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteHostOnly: Self = this.set("hostOnly", js.undefined)
+    def setSameSite(value: unspecified | no_restriction | lax | strict): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpOnly(value: Boolean): Self = this.set("httpOnly", value.asInstanceOf[js.Any])
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpOnly: Self = this.set("httpOnly", js.undefined)
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
     @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
-    
-    @scala.inline
-    def setSession(value: Boolean): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

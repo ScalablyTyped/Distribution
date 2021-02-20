@@ -3,12 +3,13 @@ package typings.handsontable.mod.Handsontable.plugins
 import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.WeakSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FocusableWrapper extends js.Object {
+trait FocusableWrapper extends StObject {
   
   var eventManager: EventManager = js.native
   
@@ -44,42 +45,30 @@ object FocusableWrapper {
   }
   
   @scala.inline
-  implicit class FocusableWrapperOps[Self <: FocusableWrapper] (val x: Self) extends AnyVal {
+  implicit class FocusableWrapperMutableBuilder[Self <: FocusableWrapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFocusableElement(value: () => HTMLElement): Self = StObject.set(x, "getFocusableElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
+    def setListenersCount(value: WeakSet[HTMLElement]): Self = StObject.set(x, "listenersCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: () => Unit): Self = this.set("focus", js.Any.fromFunction0(value))
+    def setMainElement(value: HTMLElement): Self = StObject.set(x, "mainElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFocusableElement(value: () => HTMLElement): Self = this.set("getFocusableElement", js.Any.fromFunction0(value))
+    def setRootDocument(value: Document): Self = StObject.set(x, "rootDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListenersCount(value: WeakSet[HTMLElement]): Self = this.set("listenersCount", value.asInstanceOf[js.Any])
+    def setSetFocusableElement(value: HTMLElement => Unit): Self = StObject.set(x, "setFocusableElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMainElement(value: HTMLElement): Self = this.set("mainElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRootDocument(value: Document): Self = this.set("rootDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetFocusableElement(value: HTMLElement => Unit): Self = this.set("setFocusableElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUseSecondaryElement(value: () => Unit): Self = this.set("useSecondaryElement", js.Any.fromFunction0(value))
+    def setUseSecondaryElement(value: () => Unit): Self = StObject.set(x, "useSecondaryElement", js.Any.fromFunction0(value))
   }
 }

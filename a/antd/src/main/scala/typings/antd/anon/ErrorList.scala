@@ -1,12 +1,13 @@
 package typings.antd.anon
 
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorList extends js.Object {
+trait ErrorList extends StObject {
   
   var errorList: Element = js.native
   
@@ -23,30 +24,18 @@ object ErrorList {
   }
   
   @scala.inline
-  implicit class ErrorListOps[Self <: ErrorList] (val x: Self) extends AnyVal {
+  implicit class ErrorListMutableBuilder[Self <: ErrorList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorList(value: Element): Self = StObject.set(x, "errorList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtra(value: Element): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraNull: Self = StObject.set(x, "extra", null)
     
     @scala.inline
-    def setErrorList(value: Element): Self = this.set("errorList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInput(value: Element): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtra(value: Element): Self = this.set("extra", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtraNull: Self = this.set("extra", null)
+    def setInput(value: Element): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }
 }

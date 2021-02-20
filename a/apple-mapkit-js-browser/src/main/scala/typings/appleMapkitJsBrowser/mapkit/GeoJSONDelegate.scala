@@ -1,6 +1,7 @@
 package typings.appleMapkitJsBrowser.mapkit
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * default behavior and provide custom style.
   */
 @js.native
-trait GeoJSONDelegate extends js.Object {
+trait GeoJSONDelegate extends StObject {
   
   /**
     * Completes the GeoJSON import.
@@ -162,98 +163,86 @@ object GeoJSONDelegate {
   }
   
   @scala.inline
-  implicit class GeoJSONDelegateOps[Self <: GeoJSONDelegate] (val x: Self) extends AnyVal {
+  implicit class GeoJSONDelegateMutableBuilder[Self <: GeoJSONDelegate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeoJSONDidComplete(value: (/* result */ ItemCollection, /* geoJSON */ js.Object) => Unit): Self = StObject.set(x, "geoJSONDidComplete", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeoJSONDidCompleteUndefined: Self = StObject.set(x, "geoJSONDidComplete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeoJSONDidError(value: (/* error */ Error, /* geoJSON */ js.Object) => Unit): Self = StObject.set(x, "geoJSONDidError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGeoJSONDidComplete(value: (/* result */ ItemCollection, /* geoJSON */ js.Object) => Unit): Self = this.set("geoJSONDidComplete", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteGeoJSONDidComplete: Self = this.set("geoJSONDidComplete", js.undefined)
-    
-    @scala.inline
-    def setGeoJSONDidError(value: (/* error */ Error, /* geoJSON */ js.Object) => Unit): Self = this.set("geoJSONDidError", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteGeoJSONDidError: Self = this.set("geoJSONDidError", js.undefined)
+    def setGeoJSONDidErrorUndefined: Self = StObject.set(x, "geoJSONDidError", js.undefined)
     
     @scala.inline
     def setItemForFeature(
       value: (/* item */ Annotation | Overlay | ItemCollection | Null, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
-    ): Self = this.set("itemForFeature", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteItemForFeature: Self = this.set("itemForFeature", js.undefined)
+    ): Self = StObject.set(x, "itemForFeature", js.Any.fromFunction2(value))
     
     @scala.inline
     def setItemForFeatureCollection(
       value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
-    ): Self = this.set("itemForFeatureCollection", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "itemForFeatureCollection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteItemForFeatureCollection: Self = this.set("itemForFeatureCollection", js.undefined)
+    def setItemForFeatureCollectionUndefined: Self = StObject.set(x, "itemForFeatureCollection", js.undefined)
+    
+    @scala.inline
+    def setItemForFeatureUndefined: Self = StObject.set(x, "itemForFeature", js.undefined)
     
     @scala.inline
     def setItemForLineString(
       value: (/* overlay */ PolylineOverlay, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
-    ): Self = this.set("itemForLineString", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "itemForLineString", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteItemForLineString: Self = this.set("itemForLineString", js.undefined)
+    def setItemForLineStringUndefined: Self = StObject.set(x, "itemForLineString", js.undefined)
     
     @scala.inline
     def setItemForMultiLineString(
       value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
-    ): Self = this.set("itemForMultiLineString", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "itemForMultiLineString", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteItemForMultiLineString: Self = this.set("itemForMultiLineString", js.undefined)
+    def setItemForMultiLineStringUndefined: Self = StObject.set(x, "itemForMultiLineString", js.undefined)
     
     @scala.inline
     def setItemForMultiPoint(
       value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
-    ): Self = this.set("itemForMultiPoint", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "itemForMultiPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteItemForMultiPoint: Self = this.set("itemForMultiPoint", js.undefined)
+    def setItemForMultiPointUndefined: Self = StObject.set(x, "itemForMultiPoint", js.undefined)
     
     @scala.inline
     def setItemForMultiPolygon(
       value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
-    ): Self = this.set("itemForMultiPolygon", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "itemForMultiPolygon", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteItemForMultiPolygon: Self = this.set("itemForMultiPolygon", js.undefined)
+    def setItemForMultiPolygonUndefined: Self = StObject.set(x, "itemForMultiPolygon", js.undefined)
     
     @scala.inline
-    def setItemForPoint(value: (/* coordinate */ Coordinate, /* geoJSON */ js.Object) => js.Array[Annotation | Overlay]): Self = this.set("itemForPoint", js.Any.fromFunction2(value))
+    def setItemForPoint(value: (/* coordinate */ Coordinate, /* geoJSON */ js.Object) => js.Array[Annotation | Overlay]): Self = StObject.set(x, "itemForPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteItemForPoint: Self = this.set("itemForPoint", js.undefined)
+    def setItemForPointUndefined: Self = StObject.set(x, "itemForPoint", js.undefined)
     
     @scala.inline
     def setItemForPolygon(
       value: (/* overlay */ PolygonOverlay, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
-    ): Self = this.set("itemForPolygon", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "itemForPolygon", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteItemForPolygon: Self = this.set("itemForPolygon", js.undefined)
+    def setItemForPolygonUndefined: Self = StObject.set(x, "itemForPolygon", js.undefined)
     
     @scala.inline
-    def setStyleForOverlay(value: (/* overlay */ Overlay, /* geoJSON */ js.Object) => Style): Self = this.set("styleForOverlay", js.Any.fromFunction2(value))
+    def setStyleForOverlay(value: (/* overlay */ Overlay, /* geoJSON */ js.Object) => Style): Self = StObject.set(x, "styleForOverlay", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteStyleForOverlay: Self = this.set("styleForOverlay", js.undefined)
+    def setStyleForOverlayUndefined: Self = StObject.set(x, "styleForOverlay", js.undefined)
   }
 }

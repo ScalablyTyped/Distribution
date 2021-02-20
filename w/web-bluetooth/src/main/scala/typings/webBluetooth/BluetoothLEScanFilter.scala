@@ -1,11 +1,12 @@
 package typings.webBluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BluetoothLEScanFilter extends js.Object {
+trait BluetoothLEScanFilter extends StObject {
   
   val manufacturerData: js.UndefOr[BluetoothManufacturerDataFilter] = js.native
   
@@ -26,51 +27,39 @@ object BluetoothLEScanFilter {
   }
   
   @scala.inline
-  implicit class BluetoothLEScanFilterOps[Self <: BluetoothLEScanFilter] (val x: Self) extends AnyVal {
+  implicit class BluetoothLEScanFilterMutableBuilder[Self <: BluetoothLEScanFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManufacturerData(value: BluetoothManufacturerDataFilter): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManufacturerDataUndefined: Self = StObject.set(x, "manufacturerData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturerData(value: BluetoothManufacturerDataFilter): Self = this.set("manufacturerData", value.asInstanceOf[js.Any])
+    def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManufacturerData: Self = this.set("manufacturerData", js.undefined)
+    def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setServiceData(value: BluetoothServiceDataFilter): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePrefix(value: String): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
     
     @scala.inline
-    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    def setServices(value: js.Array[BluetoothServiceUUID]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceData(value: BluetoothServiceDataFilter): Self = this.set("serviceData", value.asInstanceOf[js.Any])
+    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
     @scala.inline
-    def deleteServiceData: Self = this.set("serviceData", js.undefined)
-    
-    @scala.inline
-    def setServicesVarargs(value: BluetoothServiceUUID*): Self = this.set("services", js.Array(value :_*))
-    
-    @scala.inline
-    def setServices(value: js.Array[BluetoothServiceUUID]): Self = this.set("services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServices: Self = this.set("services", js.undefined)
+    def setServicesVarargs(value: BluetoothServiceUUID*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

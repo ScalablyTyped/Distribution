@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentThreadSnippet extends js.Object {
+trait CommentThreadSnippet extends StObject {
   
   /** Whether the current viewer of the thread can reply to it. This is viewer specific - other viewers may see a different value for this field. */
   var canReply: js.UndefOr[Boolean] = js.native
@@ -34,54 +35,42 @@ object CommentThreadSnippet {
   }
   
   @scala.inline
-  implicit class CommentThreadSnippetOps[Self <: CommentThreadSnippet] (val x: Self) extends AnyVal {
+  implicit class CommentThreadSnippetMutableBuilder[Self <: CommentThreadSnippet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanReply(value: Boolean): Self = StObject.set(x, "canReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanReplyUndefined: Self = StObject.set(x, "canReply", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanReply(value: Boolean): Self = this.set("canReply", value.asInstanceOf[js.Any])
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def deleteCanReply: Self = this.set("canReply", js.undefined)
+    def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setIsPublicUndefined: Self = StObject.set(x, "isPublic", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setTopLevelComment(value: Comment): Self = StObject.set(x, "topLevelComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPublic(value: Boolean): Self = this.set("isPublic", value.asInstanceOf[js.Any])
+    def setTopLevelCommentUndefined: Self = StObject.set(x, "topLevelComment", js.undefined)
     
     @scala.inline
-    def deleteIsPublic: Self = this.set("isPublic", js.undefined)
+    def setTotalReplyCount(value: Double): Self = StObject.set(x, "totalReplyCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopLevelComment(value: Comment): Self = this.set("topLevelComment", value.asInstanceOf[js.Any])
+    def setTotalReplyCountUndefined: Self = StObject.set(x, "totalReplyCount", js.undefined)
     
     @scala.inline
-    def deleteTopLevelComment: Self = this.set("topLevelComment", js.undefined)
+    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalReplyCount(value: Double): Self = this.set("totalReplyCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalReplyCount: Self = this.set("totalReplyCount", js.undefined)
-    
-    @scala.inline
-    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoId: Self = this.set("videoId", js.undefined)
+    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

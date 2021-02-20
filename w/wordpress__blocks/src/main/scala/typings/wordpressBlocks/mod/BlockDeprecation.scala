@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<@wordpress/blocks.@wordpress/blocks.Block<T>, 'attributes' | 'save' | 'supports'> */
 @js.native
-trait BlockDeprecation[T /* <: Record[String, _] */] extends js.Object {
+trait BlockDeprecation[T /* <: Record[String, _] */] extends StObject {
   
   var attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
@@ -69,26 +70,22 @@ object BlockDeprecation {
   }
   
   @scala.inline
-  implicit class BlockDeprecationOps[Self <: BlockDeprecation[_], T /* <: Record[String, _] */] (val x: Self with BlockDeprecation[T]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class BlockDeprecationMutableBuilder[Self <: BlockDeprecation[_], T /* <: Record[String, _] */] (val x: Self with BlockDeprecation[T]) extends AnyVal {
     
     @scala.inline
     def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
       */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation with TopLevel[js.Any]
-    ): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsEligible(
+      value: (/* attributes */ Record[String, _], /* innerBlocks */ js.Array[BlockInstance[StringDictionary[_]]]) => Boolean
+    ): Self = StObject.set(x, "isEligible", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setIsEligibleUndefined: Self = StObject.set(x, "isEligible", js.undefined)
     
     @scala.inline
     def setMigrate(
@@ -99,23 +96,15 @@ object BlockDeprecation {
             js.Tuple2[T, js.Array[BlockInstance[StringDictionary[_]]]]
           ]
         ])
-    ): Self = this.set("migrate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "migrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: ComponentType[BlockSaveProps[T]]): Self = this.set("save", value.asInstanceOf[js.Any])
+    def setSave(value: ComponentType[BlockSaveProps[T]]): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEligible(
-      value: (/* attributes */ Record[String, _], /* innerBlocks */ js.Array[BlockInstance[StringDictionary[_]]]) => Boolean
-    ): Self = this.set("isEligible", js.Any.fromFunction2(value))
+    def setSupports(value: BlockSupports): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsEligible: Self = this.set("isEligible", js.undefined)
-    
-    @scala.inline
-    def setSupports(value: BlockSupports): Self = this.set("supports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupports: Self = this.set("supports", js.undefined)
+    def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
   }
 }

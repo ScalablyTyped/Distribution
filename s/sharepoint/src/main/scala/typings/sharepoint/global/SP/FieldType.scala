@@ -1,12 +1,13 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.FieldType")
 @js.native
-object FieldType extends js.Object {
+object FieldType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.SP.FieldType with Double] = js.native

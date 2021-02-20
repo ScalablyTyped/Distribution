@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRoutingProfileRequest extends js.Object {
+trait CreateRoutingProfileRequest extends StObject {
   
   /**
     * The default outbound queue for the routing profile.
@@ -57,51 +58,39 @@ object CreateRoutingProfileRequest {
   }
   
   @scala.inline
-  implicit class CreateRoutingProfileRequestOps[Self <: CreateRoutingProfileRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRoutingProfileRequestMutableBuilder[Self <: CreateRoutingProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultOutboundQueueId(value: QueueId): Self = StObject.set(x, "DefaultOutboundQueueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: RoutingProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOutboundQueueId(value: QueueId): Self = this.set("DefaultOutboundQueueId", value.asInstanceOf[js.Any])
+    def setMediaConcurrencies(value: MediaConcurrencies): Self = StObject.set(x, "MediaConcurrencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: RoutingProfileDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setName(value: RoutingProfileName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = this.set("MediaConcurrencies", js.Array(value :_*))
+    def setQueueConfigs(value: RoutingProfileQueueConfigList): Self = StObject.set(x, "QueueConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaConcurrencies(value: MediaConcurrencies): Self = this.set("MediaConcurrencies", value.asInstanceOf[js.Any])
+    def setQueueConfigsUndefined: Self = StObject.set(x, "QueueConfigs", js.undefined)
     
     @scala.inline
-    def setName(value: RoutingProfileName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = StObject.set(x, "QueueConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = this.set("QueueConfigs", js.Array(value :_*))
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueConfigs(value: RoutingProfileQueueConfigList): Self = this.set("QueueConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueueConfigs: Self = this.set("QueueConfigs", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

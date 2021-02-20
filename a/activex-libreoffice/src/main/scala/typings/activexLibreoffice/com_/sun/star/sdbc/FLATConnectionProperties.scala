@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.sdbc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,36 +55,24 @@ object FLATConnectionProperties {
   }
   
   @scala.inline
-  implicit class FLATConnectionPropertiesOps[Self <: FLATConnectionProperties] (val x: Self) extends AnyVal {
+  implicit class FLATConnectionPropertiesMutableBuilder[Self <: FLATConnectionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimalDelimiter(value: String): Self = StObject.set(x, "DecimalDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldDelimiter(value: String): Self = StObject.set(x, "FieldDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalDelimiter(value: String): Self = this.set("DecimalDelimiter", value.asInstanceOf[js.Any])
+    def setHeaderLine(value: Boolean): Self = StObject.set(x, "HeaderLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("Extension", value.asInstanceOf[js.Any])
+    def setStringDelimiter(value: String): Self = StObject.set(x, "StringDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldDelimiter(value: String): Self = this.set("FieldDelimiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderLine(value: Boolean): Self = this.set("HeaderLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStringDelimiter(value: String): Self = this.set("StringDelimiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThousandDelimiter(value: String): Self = this.set("ThousandDelimiter", value.asInstanceOf[js.Any])
+    def setThousandDelimiter(value: String): Self = StObject.set(x, "ThousandDelimiter", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationBindingsOptionsObject extends js.Object {
+trait NavigationBindingsOptionsObject extends StObject {
   
   /**
     * ClassName of the element for a binding.
@@ -42,51 +43,39 @@ object NavigationBindingsOptionsObject {
   }
   
   @scala.inline
-  implicit class NavigationBindingsOptionsObjectOps[Self <: NavigationBindingsOptionsObject] (val x: Self) extends AnyVal {
+  implicit class NavigationBindingsOptionsObjectMutableBuilder[Self <: NavigationBindingsOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: js.Function): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: js.Function): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setStart(value: js.Function): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: js.Function): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setSteps(value: js.Array[js.Function]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: js.Function): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setStepsVarargs(value: js.Function*): Self = this.set("steps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSteps(value: js.Array[js.Function]): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setStepsVarargs(value: js.Function*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for an achievement update response.
   */
 @js.native
-trait SchemaAchievementUpdateResponse extends js.Object {
+trait SchemaAchievementUpdateResponse extends StObject {
   
   /**
     * The achievement this update is was applied to.
@@ -54,54 +55,42 @@ object SchemaAchievementUpdateResponse {
   }
   
   @scala.inline
-  implicit class SchemaAchievementUpdateResponseOps[Self <: SchemaAchievementUpdateResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAchievementUpdateResponseMutableBuilder[Self <: SchemaAchievementUpdateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAchievementId(value: String): Self = this.set("achievementId", value.asInstanceOf[js.Any])
+    def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
     
     @scala.inline
-    def deleteAchievementId: Self = this.set("achievementId", js.undefined)
+    def setCurrentSteps(value: Double): Self = StObject.set(x, "currentSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentState(value: String): Self = this.set("currentState", value.asInstanceOf[js.Any])
+    def setCurrentStepsUndefined: Self = StObject.set(x, "currentSteps", js.undefined)
     
     @scala.inline
-    def deleteCurrentState: Self = this.set("currentState", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSteps(value: Double): Self = this.set("currentSteps", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteCurrentSteps: Self = this.set("currentSteps", js.undefined)
+    def setNewlyUnlocked(value: Boolean): Self = StObject.set(x, "newlyUnlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNewlyUnlockedUndefined: Self = StObject.set(x, "newlyUnlocked", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setUpdateOccurred(value: Boolean): Self = StObject.set(x, "updateOccurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewlyUnlocked(value: Boolean): Self = this.set("newlyUnlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewlyUnlocked: Self = this.set("newlyUnlocked", js.undefined)
-    
-    @scala.inline
-    def setUpdateOccurred(value: Boolean): Self = this.set("updateOccurred", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateOccurred: Self = this.set("updateOccurred", js.undefined)
+    def setUpdateOccurredUndefined: Self = StObject.set(x, "updateOccurred", js.undefined)
   }
 }

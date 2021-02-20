@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeCheckstateChangedEventUIParam extends js.Object {
+trait NodeCheckstateChangedEventUIParam extends StObject {
   
   /**
     * Gets the collection of all checked nodes.
@@ -41,54 +42,42 @@ object NodeCheckstateChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class NodeCheckstateChangedEventUIParamOps[Self <: NodeCheckstateChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class NodeCheckstateChangedEventUIParamMutableBuilder[Self <: NodeCheckstateChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewCheckedNodes(value: js.Array[_]): Self = StObject.set(x, "newCheckedNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewCheckedNodesUndefined: Self = StObject.set(x, "newCheckedNodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewCheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "newCheckedNodes", js.Array(value :_*))
     
     @scala.inline
-    def setNewCheckedNodesVarargs(value: js.Any*): Self = this.set("newCheckedNodes", js.Array(value :_*))
+    def setNewPartiallyCheckedNodes(value: js.Array[_]): Self = StObject.set(x, "newPartiallyCheckedNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewCheckedNodes(value: js.Array[_]): Self = this.set("newCheckedNodes", value.asInstanceOf[js.Any])
+    def setNewPartiallyCheckedNodesUndefined: Self = StObject.set(x, "newPartiallyCheckedNodes", js.undefined)
     
     @scala.inline
-    def deleteNewCheckedNodes: Self = this.set("newCheckedNodes", js.undefined)
+    def setNewPartiallyCheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "newPartiallyCheckedNodes", js.Array(value :_*))
     
     @scala.inline
-    def setNewPartiallyCheckedNodesVarargs(value: js.Any*): Self = this.set("newPartiallyCheckedNodes", js.Array(value :_*))
+    def setNewState(value: String): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPartiallyCheckedNodes(value: js.Array[_]): Self = this.set("newPartiallyCheckedNodes", value.asInstanceOf[js.Any])
+    def setNewStateUndefined: Self = StObject.set(x, "newState", js.undefined)
     
     @scala.inline
-    def deleteNewPartiallyCheckedNodes: Self = this.set("newPartiallyCheckedNodes", js.undefined)
+    def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewState(value: String): Self = this.set("newState", value.asInstanceOf[js.Any])
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def deleteNewState: Self = this.set("newState", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: js.Any): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

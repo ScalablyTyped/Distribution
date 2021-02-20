@@ -3,12 +3,13 @@ package typings.tensorflowTfjsCore.anon
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float16
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.uint16
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.uint8
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dtype extends js.Object {
+trait Dtype extends StObject {
   
   var dtype: uint16 | uint8 | float16 = js.native
   
@@ -25,33 +26,21 @@ object Dtype {
   }
   
   @scala.inline
-  implicit class DtypeOps[Self <: Dtype] (val x: Self) extends AnyVal {
+  implicit class DtypeMutableBuilder[Self <: Dtype] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDtype(value: uint16 | uint8 | float16): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setDtype(value: uint16 | uint8 | float16): Self = this.set("dtype", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

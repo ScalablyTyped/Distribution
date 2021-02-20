@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,54 +49,42 @@ object ProgressBarOptions {
   }
   
   @scala.inline
-  implicit class ProgressBarOptionsOps[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
+  implicit class ProgressBarOptionsMutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilled(value: Double): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilled(value: Double): Self = this.set("filled", value.asInstanceOf[js.Any])
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def deleteFilled: Self = this.set("filled", js.undefined)
+    def setMouse(value: Boolean): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: Boolean): Self = this.set("keys", value.asInstanceOf[js.Any])
+    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
     
     @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouse(value: Boolean): Self = this.set("mouse", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMouse: Self = this.set("mouse", js.undefined)
+    def setPch(value: String): Self = StObject.set(x, "pch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setPchUndefined: Self = StObject.set(x, "pch", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPch(value: String): Self = this.set("pch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePch: Self = this.set("pch", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

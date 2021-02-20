@@ -1,5 +1,6 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Testing timing break down to know phases.
   */
 @js.native
-trait SchemaTestTiming extends js.Object {
+trait SchemaTestTiming extends StObject {
   
   /**
     * How long it took to run the test process.  - In response: present if
@@ -25,24 +26,12 @@ object SchemaTestTiming {
   }
   
   @scala.inline
-  implicit class SchemaTestTimingOps[Self <: SchemaTestTiming] (val x: Self) extends AnyVal {
+  implicit class SchemaTestTimingMutableBuilder[Self <: SchemaTestTiming] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTestProcessDuration(value: SchemaDuration): Self = StObject.set(x, "testProcessDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTestProcessDuration(value: SchemaDuration): Self = this.set("testProcessDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestProcessDuration: Self = this.set("testProcessDuration", js.undefined)
+    def setTestProcessDurationUndefined: Self = StObject.set(x, "testProcessDuration", js.undefined)
   }
 }

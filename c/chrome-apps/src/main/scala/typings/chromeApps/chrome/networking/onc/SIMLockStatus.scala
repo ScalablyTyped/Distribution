@@ -4,12 +4,13 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chromeAppsStrings._empty
 import typings.chromeApps.chromeAppsStrings.`sim-pin`
 import typings.chromeApps.chromeAppsStrings.`sim-puk`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SIMLockStatus extends js.Object {
+trait SIMLockStatus extends StObject {
   
   /** Whether SIM lock is enabled. */
   var LockEnabled: Boolean = js.native
@@ -29,30 +30,18 @@ object SIMLockStatus {
   }
   
   @scala.inline
-  implicit class SIMLockStatusOps[Self <: SIMLockStatus] (val x: Self) extends AnyVal {
+  implicit class SIMLockStatusMutableBuilder[Self <: SIMLockStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLockEnabled(value: Boolean): Self = StObject.set(x, "LockEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLockType(value: `sim-pin` | `sim-puk` | _empty): Self = StObject.set(x, "LockType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetriesLeft(value: integer): Self = StObject.set(x, "RetriesLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockEnabled(value: Boolean): Self = this.set("LockEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLockType(value: `sim-pin` | `sim-puk` | _empty): Self = this.set("LockType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetriesLeft(value: integer): Self = this.set("RetriesLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetriesLeft: Self = this.set("RetriesLeft", js.undefined)
+    def setRetriesLeftUndefined: Self = StObject.set(x, "RetriesLeft", js.undefined)
   }
 }

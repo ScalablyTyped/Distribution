@@ -2,13 +2,14 @@ package typings.antd.anon
 
 import typings.antd.confirmMod.ModalFunc
 import typings.antd.modalModalMod.ModalFuncProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<antd.antd/lib/modal/confirm.ModalStaticFunctions, 'warn'> */
 @js.native
-trait OmitModalStaticFunctionsw extends js.Object {
+trait OmitModalStaticFunctionsw extends StObject {
   
   var confirm: ModalFunc = js.native
   
@@ -35,33 +36,21 @@ object OmitModalStaticFunctionsw {
   }
   
   @scala.inline
-  implicit class OmitModalStaticFunctionswOps[Self <: OmitModalStaticFunctionsw] (val x: Self) extends AnyVal {
+  implicit class OmitModalStaticFunctionswMutableBuilder[Self <: OmitModalStaticFunctionsw] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirm(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfo(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConfirm(value: /* props */ ModalFuncProps => Destroy): Self = this.set("confirm", js.Any.fromFunction1(value))
+    def setSuccess(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: /* props */ ModalFuncProps => Destroy): Self = this.set("error", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInfo(value: /* props */ ModalFuncProps => Destroy): Self = this.set("info", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSuccess(value: /* props */ ModalFuncProps => Destroy): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWarning(value: /* props */ ModalFuncProps => Destroy): Self = this.set("warning", js.Any.fromFunction1(value))
+    def setWarning(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
   }
 }

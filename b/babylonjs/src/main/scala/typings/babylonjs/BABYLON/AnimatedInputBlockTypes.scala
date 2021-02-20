@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AnimatedInputBlockTypes extends js.Object
+sealed trait AnimatedInputBlockTypes extends StObject
 @JSGlobal("BABYLON.AnimatedInputBlockTypes")
 @js.native
-object AnimatedInputBlockTypes extends js.Object {
+object AnimatedInputBlockTypes extends StObject {
   
   /** No animation */
   @js.native

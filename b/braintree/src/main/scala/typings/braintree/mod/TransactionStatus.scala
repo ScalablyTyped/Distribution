@@ -1,5 +1,6 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.braintree.braintreeStrings.submitted_for_settlement
   - typings.braintree.braintreeStrings.voided
 */
-trait TransactionStatus extends js.Object
+trait TransactionStatus extends StObject
 object TransactionStatus {
   
   @scala.inline

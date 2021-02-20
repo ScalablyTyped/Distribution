@@ -1,12 +1,13 @@
 package typings.storybookApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/api/dist/lib/store-setup", JSImport.Namespace)
-@js.native
-object storeSetupMod extends js.Object {
+object storeSetupMod {
   
+  @JSImport("@storybook/api/dist/lib/store-setup", JSImport.Default)
+  @js.native
   def default(_underscore: js.Any): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndUtcSec extends js.Object {
+trait EndUtcSec extends StObject {
   
   var endUtcSec: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object EndUtcSec {
   }
   
   @scala.inline
-  implicit class EndUtcSecOps[Self <: EndUtcSec] (val x: Self) extends AnyVal {
+  implicit class EndUtcSecMutableBuilder[Self <: EndUtcSec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndUtcSec(value: String): Self = StObject.set(x, "endUtcSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUtcSecUndefined: Self = StObject.set(x, "endUtcSec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartUtcSec(value: String): Self = StObject.set(x, "startUtcSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndUtcSec(value: String): Self = this.set("endUtcSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndUtcSec: Self = this.set("endUtcSec", js.undefined)
-    
-    @scala.inline
-    def setStartUtcSec(value: String): Self = this.set("startUtcSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartUtcSec: Self = this.set("startUtcSec", js.undefined)
+    def setStartUtcSecUndefined: Self = StObject.set(x, "startUtcSec", js.undefined)
   }
 }

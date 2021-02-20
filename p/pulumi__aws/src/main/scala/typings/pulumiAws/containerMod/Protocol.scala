@@ -1,5 +1,6 @@
 package typings.pulumiAws.containerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pulumiAws.pulumiAwsStrings.tcp
   - typings.pulumiAws.pulumiAwsStrings.udp
 */
-trait Protocol extends js.Object
+trait Protocol extends StObject
 object Protocol {
   
   @scala.inline

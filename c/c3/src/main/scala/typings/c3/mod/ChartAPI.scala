@@ -12,12 +12,13 @@ import typings.c3.anon.Hide
 import typings.c3.anon.IsShown
 import typings.c3.anon.Labels
 import typings.c3.anon.Names
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartAPI extends js.Object {
+trait ChartAPI extends StObject {
   
   def axis(): Unit = js.native
   @JSName("axis")

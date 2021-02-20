@@ -1,11 +1,12 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkbookProperties extends js.Object {
+trait WorkbookProperties extends StObject {
   
   /** Name of Document Module in associated VBA Project */
   var CodeName: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object WorkbookProperties {
   }
   
   @scala.inline
-  implicit class WorkbookPropertiesOps[Self <: WorkbookProperties] (val x: Self) extends AnyVal {
+  implicit class WorkbookPropertiesMutableBuilder[Self <: WorkbookProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeName(value: String): Self = StObject.set(x, "CodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeNameUndefined: Self = StObject.set(x, "CodeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeName(value: String): Self = this.set("CodeName", value.asInstanceOf[js.Any])
+    def setDate1904Undefined: Self = StObject.set(x, "date1904", js.undefined)
     
     @scala.inline
-    def deleteCodeName: Self = this.set("CodeName", js.undefined)
+    def setFilterPrivacy(value: Boolean): Self = StObject.set(x, "filterPrivacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate1904(value: Boolean): Self = this.set("date1904", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDate1904: Self = this.set("date1904", js.undefined)
-    
-    @scala.inline
-    def setFilterPrivacy(value: Boolean): Self = this.set("filterPrivacy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterPrivacy: Self = this.set("filterPrivacy", js.undefined)
+    def setFilterPrivacyUndefined: Self = StObject.set(x, "filterPrivacy", js.undefined)
   }
 }

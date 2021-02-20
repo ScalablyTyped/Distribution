@@ -1,51 +1,44 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumImagePreprocessingMode extends js.Object
+sealed trait EnumImagePreprocessingMode extends StObject
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumImagePreprocessingMode")
 @js.native
-object EnumImagePreprocessingMode extends js.Object {
+object EnumImagePreprocessingMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumImagePreprocessingMode with Double] = js.native
   
   @js.native
   sealed trait IPM_AUTO extends EnumImagePreprocessingMode
-  /* 1 */ @js.native
-  object IPM_AUTO extends TopLevel[IPM_AUTO with Double]
+  /* 1 */ val IPM_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumImagePreprocessingMode.IPM_AUTO with Double = js.native
   
   @js.native
   sealed trait IPM_GENERAL extends EnumImagePreprocessingMode
-  /* 2 */ @js.native
-  object IPM_GENERAL extends TopLevel[IPM_GENERAL with Double]
+  /* 2 */ val IPM_GENERAL: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumImagePreprocessingMode.IPM_GENERAL with Double = js.native
   
   @js.native
   sealed trait IPM_GRAY_EQUALIZE extends EnumImagePreprocessingMode
-  /* 4 */ @js.native
-  object IPM_GRAY_EQUALIZE extends TopLevel[IPM_GRAY_EQUALIZE with Double]
+  /* 4 */ val IPM_GRAY_EQUALIZE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumImagePreprocessingMode.IPM_GRAY_EQUALIZE with Double = js.native
   
   @js.native
   sealed trait IPM_GRAY_SMOOTH extends EnumImagePreprocessingMode
-  /* 8 */ @js.native
-  object IPM_GRAY_SMOOTH extends TopLevel[IPM_GRAY_SMOOTH with Double]
+  /* 8 */ val IPM_GRAY_SMOOTH: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumImagePreprocessingMode.IPM_GRAY_SMOOTH with Double = js.native
   
   @js.native
   sealed trait IPM_MORPHOLOGY extends EnumImagePreprocessingMode
-  /* 32 */ @js.native
-  object IPM_MORPHOLOGY extends TopLevel[IPM_MORPHOLOGY with Double]
+  /* 32 */ val IPM_MORPHOLOGY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumImagePreprocessingMode.IPM_MORPHOLOGY with Double = js.native
   
   @js.native
   sealed trait IPM_SHARPEN_SMOOTH extends EnumImagePreprocessingMode
-  /* 16 */ @js.native
-  object IPM_SHARPEN_SMOOTH extends TopLevel[IPM_SHARPEN_SMOOTH with Double]
+  /* 16 */ val IPM_SHARPEN_SMOOTH: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumImagePreprocessingMode.IPM_SHARPEN_SMOOTH with Double = js.native
   
   @js.native
   sealed trait IPM_SKIP extends EnumImagePreprocessingMode
-  /* 0 */ @js.native
-  object IPM_SKIP extends TopLevel[IPM_SKIP with Double]
+  /* 0 */ val IPM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumImagePreprocessingMode.IPM_SKIP with Double = js.native
 }

@@ -2,12 +2,13 @@ package typings.algoliaClientSearch.mod
 
 import typings.algoliaClientSearch.anon.Distance
 import typings.algoliaClientSearch.anon.FiltersScore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RankingInfo extends js.Object {
+trait RankingInfo extends StObject {
   
   val filters: Double = js.native
   
@@ -51,66 +52,54 @@ object RankingInfo {
   }
   
   @scala.inline
-  implicit class RankingInfoOps[Self <: RankingInfo] (val x: Self) extends AnyVal {
+  implicit class RankingInfoMutableBuilder[Self <: RankingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstMatchedWord(value: Double): Self = StObject.set(x, "firstMatchedWord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeoDistance(value: Double): Self = StObject.set(x, "geoDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: Double): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setGeoPrecision(value: Double): Self = StObject.set(x, "geoPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMatchedWord(value: Double): Self = this.set("firstMatchedWord", value.asInstanceOf[js.Any])
+    def setGeoPrecisionUndefined: Self = StObject.set(x, "geoPrecision", js.undefined)
     
     @scala.inline
-    def setGeoDistance(value: Double): Self = this.set("geoDistance", value.asInstanceOf[js.Any])
+    def setMatchedGeoLocation(value: Distance): Self = StObject.set(x, "matchedGeoLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNbExactWords(value: Double): Self = this.set("nbExactWords", value.asInstanceOf[js.Any])
+    def setMatchedGeoLocationUndefined: Self = StObject.set(x, "matchedGeoLocation", js.undefined)
     
     @scala.inline
-    def setNbTypos(value: Double): Self = this.set("nbTypos", value.asInstanceOf[js.Any])
+    def setNbExactWords(value: Double): Self = StObject.set(x, "nbExactWords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromoted(value: Boolean): Self = this.set("promoted", value.asInstanceOf[js.Any])
+    def setNbTypos(value: Double): Self = StObject.set(x, "nbTypos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserScore(value: Double): Self = this.set("userScore", value.asInstanceOf[js.Any])
+    def setPersonalization(value: FiltersScore): Self = StObject.set(x, "personalization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWords(value: Double): Self = this.set("words", value.asInstanceOf[js.Any])
+    def setPersonalizationUndefined: Self = StObject.set(x, "personalization", js.undefined)
     
     @scala.inline
-    def setGeoPrecision(value: Double): Self = this.set("geoPrecision", value.asInstanceOf[js.Any])
+    def setPromoted(value: Boolean): Self = StObject.set(x, "promoted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeoPrecision: Self = this.set("geoPrecision", js.undefined)
+    def setProximityDistance(value: Double): Self = StObject.set(x, "proximityDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedGeoLocation(value: Distance): Self = this.set("matchedGeoLocation", value.asInstanceOf[js.Any])
+    def setProximityDistanceUndefined: Self = StObject.set(x, "proximityDistance", js.undefined)
     
     @scala.inline
-    def deleteMatchedGeoLocation: Self = this.set("matchedGeoLocation", js.undefined)
+    def setUserScore(value: Double): Self = StObject.set(x, "userScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonalization(value: FiltersScore): Self = this.set("personalization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersonalization: Self = this.set("personalization", js.undefined)
-    
-    @scala.inline
-    def setProximityDistance(value: Double): Self = this.set("proximityDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProximityDistance: Self = this.set("proximityDistance", js.undefined)
+    def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
   }
 }

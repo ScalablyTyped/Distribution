@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.Media.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `success` callback function.
   */
 @js.native
-trait MusicLibraryResponseType extends js.Object {
+trait MusicLibraryResponseType extends StObject {
   
   /**
     * A list of all the items chosen by the user.
@@ -37,39 +38,27 @@ object MusicLibraryResponseType {
   }
   
   @scala.inline
-  implicit class MusicLibraryResponseTypeOps[Self <: MusicLibraryResponseType] (val x: Self) extends AnyVal {
+  implicit class MusicLibraryResponseTypeMutableBuilder[Self <: MusicLibraryResponseType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
+    def setRepresentative(value: Item): Self = StObject.set(x, "representative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setRepresentativeUndefined: Self = StObject.set(x, "representative", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setTypes(value: Double): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepresentative(value: Item): Self = this.set("representative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepresentative: Self = this.set("representative", js.undefined)
-    
-    @scala.inline
-    def setTypes(value: Double): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
   }
 }

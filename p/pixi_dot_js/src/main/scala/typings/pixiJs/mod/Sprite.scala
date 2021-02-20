@@ -2,6 +2,7 @@ package typings.pixiJs.mod
 
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,10 +39,7 @@ class Sprite ()
   extends typings.pixiJs.PIXI.Sprite {
   def this(texture: typings.pixiJs.PIXI.Texture) = this()
 }
-/* static members */
-@JSImport("pixi.js", "Sprite")
-@js.native
-object Sprite extends js.Object {
+object Sprite {
   
   /**
     * Helper function that creates a new sprite based on the source you provide.
@@ -52,12 +50,29 @@ object Sprite extends js.Object {
     * @param {object} [options] - See {@link PIXI.BaseTexture}'s constructor for options.
     * @return {PIXI.Sprite} The newly created sprite
     */
+  /* static member */
+  @JSImport("pixi.js", "Sprite.from")
+  @js.native
   def from(source: String): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "Sprite.from")
+  @js.native
   def from(source: String, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "Sprite.from")
+  @js.native
   def from(source: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "Sprite.from")
+  @js.native
   def from(source: typings.pixiJs.PIXI.Texture, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "Sprite.from")
+  @js.native
   def from(source: HTMLCanvasElement): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "Sprite.from")
+  @js.native
   def from(source: HTMLCanvasElement, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "Sprite.from")
+  @js.native
   def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "Sprite.from")
+  @js.native
   def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
 }

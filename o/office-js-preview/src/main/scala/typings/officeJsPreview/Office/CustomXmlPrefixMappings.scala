@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **Hosts**: Word
   */
 @js.native
-trait CustomXmlPrefixMappings extends js.Object {
+trait CustomXmlPrefixMappings extends StObject {
   
   /**
     * Asynchronously adds a prefix to namespace mapping to use when querying an item.

@@ -1,6 +1,7 @@
 package typings.appleMusicApi.AppleMusicApi
 
 import typings.appleMusicApi.appleMusicApiStrings.stations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,51 +37,39 @@ object Station {
   }
   
   @scala.inline
-  implicit class StationOps[Self <: Station] (val x: Self) extends AnyVal {
+  implicit class StationMutableBuilder[Self <: Station] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtwork(value: Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationInMillis(value: Double): Self = StObject.set(x, "durationInMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationInMillisUndefined: Self = StObject.set(x, "durationInMillis", js.undefined)
     
     @scala.inline
-    def setArtwork(value: Artwork): Self = this.set("artwork", value.asInstanceOf[js.Any])
+    def setEditorialNotes(value: EditorialNotes): Self = StObject.set(x, "editorialNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLive(value: Boolean): Self = this.set("isLive", value.asInstanceOf[js.Any])
+    def setEditorialNotesUndefined: Self = StObject.set(x, "editorialNotes", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEpisodeNumber(value: Double): Self = StObject.set(x, "episodeNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: stations): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEpisodeNumberUndefined: Self = StObject.set(x, "episodeNumber", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setIsLive(value: Boolean): Self = StObject.set(x, "isLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationInMillis(value: Double): Self = this.set("durationInMillis", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDurationInMillis: Self = this.set("durationInMillis", js.undefined)
+    def setType(value: stations): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorialNotes(value: EditorialNotes): Self = this.set("editorialNotes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEditorialNotes: Self = this.set("editorialNotes", js.undefined)
-    
-    @scala.inline
-    def setEpisodeNumber(value: Double): Self = this.set("episodeNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEpisodeNumber: Self = this.set("episodeNumber", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

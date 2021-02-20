@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,33 +81,21 @@ object XStatement {
   }
   
   @scala.inline
-  implicit class XStatementOps[Self <: XStatement] (val x: Self) extends AnyVal {
+  implicit class XStatementMutableBuilder[Self <: XStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: XConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecuteQuery(value: String => XResultSet): Self = StObject.set(x, "executeQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnection(value: XConnection): Self = this.set("Connection", value.asInstanceOf[js.Any])
+    def setExecuteUpdate(value: String => Double): Self = StObject.set(x, "executeUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExecute(value: String => Boolean): Self = this.set("execute", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setExecuteQuery(value: String => XResultSet): Self = this.set("executeQuery", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setExecuteUpdate(value: String => Double): Self = this.set("executeUpdate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetConnection(value: () => XConnection): Self = this.set("getConnection", js.Any.fromFunction0(value))
+    def setGetConnection(value: () => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction0(value))
   }
 }

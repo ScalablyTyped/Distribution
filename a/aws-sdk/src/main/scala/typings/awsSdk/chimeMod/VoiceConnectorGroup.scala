@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoiceConnectorGroup extends js.Object {
+trait VoiceConnectorGroup extends StObject {
   
   /**
     * The Amazon Chime Voice Connector group creation timestamp, in ISO 8601 format.
@@ -41,51 +42,39 @@ object VoiceConnectorGroup {
   }
   
   @scala.inline
-  implicit class VoiceConnectorGroupOps[Self <: VoiceConnectorGroup] (val x: Self) extends AnyVal {
+  implicit class VoiceConnectorGroupMutableBuilder[Self <: VoiceConnectorGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: VoiceConnectorGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: VoiceConnectorGroupName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setVoiceConnectorGroupId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
+    def setVoiceConnectorGroupIdUndefined: Self = StObject.set(x, "VoiceConnectorGroupId", js.undefined)
     
     @scala.inline
-    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+    def setVoiceConnectorItems(value: VoiceConnectorItemList): Self = StObject.set(x, "VoiceConnectorItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoiceConnectorGroupId(value: NonEmptyString): Self = this.set("VoiceConnectorGroupId", value.asInstanceOf[js.Any])
+    def setVoiceConnectorItemsUndefined: Self = StObject.set(x, "VoiceConnectorItems", js.undefined)
     
     @scala.inline
-    def deleteVoiceConnectorGroupId: Self = this.set("VoiceConnectorGroupId", js.undefined)
-    
-    @scala.inline
-    def setVoiceConnectorItemsVarargs(value: VoiceConnectorItem*): Self = this.set("VoiceConnectorItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setVoiceConnectorItems(value: VoiceConnectorItemList): Self = this.set("VoiceConnectorItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceConnectorItems: Self = this.set("VoiceConnectorItems", js.undefined)
+    def setVoiceConnectorItemsVarargs(value: VoiceConnectorItem*): Self = StObject.set(x, "VoiceConnectorItems", js.Array(value :_*))
   }
 }

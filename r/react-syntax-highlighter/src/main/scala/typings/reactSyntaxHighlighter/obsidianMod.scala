@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/styles/hljs/obsidian", JSImport.Namespace)
-@js.native
-object obsidianMod extends js.Object {
+object obsidianMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/styles/hljs/obsidian", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object SearchParameterComponent {
   }
   
   @scala.inline
-  implicit class SearchParameterComponentOps[Self <: SearchParameterComponent] (val x: Self) extends AnyVal {
+  implicit class SearchParameterComponentMutableBuilder[Self <: SearchParameterComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: Reference): Self = this.set("definition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_expression(value: Element): Self = this.set("_expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_expression: Self = this.set("_expression", js.undefined)
+    def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
   }
 }

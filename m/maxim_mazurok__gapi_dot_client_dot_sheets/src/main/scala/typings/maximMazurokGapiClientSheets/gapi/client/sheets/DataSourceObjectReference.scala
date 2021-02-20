@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceObjectReference extends js.Object {
+trait DataSourceObjectReference extends StObject {
   
   /** References to a data source chart. */
   var chartId: js.UndefOr[Double] = js.native
@@ -31,48 +32,36 @@ object DataSourceObjectReference {
   }
   
   @scala.inline
-  implicit class DataSourceObjectReferenceOps[Self <: DataSourceObjectReference] (val x: Self) extends AnyVal {
+  implicit class DataSourceObjectReferenceMutableBuilder[Self <: DataSourceObjectReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceFormulaCell(value: GridCoordinate): Self = StObject.set(x, "dataSourceFormulaCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartId(value: Double): Self = this.set("chartId", value.asInstanceOf[js.Any])
+    def setDataSourceFormulaCellUndefined: Self = StObject.set(x, "dataSourceFormulaCell", js.undefined)
     
     @scala.inline
-    def deleteChartId: Self = this.set("chartId", js.undefined)
+    def setDataSourcePivotTableAnchorCell(value: GridCoordinate): Self = StObject.set(x, "dataSourcePivotTableAnchorCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceFormulaCell(value: GridCoordinate): Self = this.set("dataSourceFormulaCell", value.asInstanceOf[js.Any])
+    def setDataSourcePivotTableAnchorCellUndefined: Self = StObject.set(x, "dataSourcePivotTableAnchorCell", js.undefined)
     
     @scala.inline
-    def deleteDataSourceFormulaCell: Self = this.set("dataSourceFormulaCell", js.undefined)
+    def setDataSourceTableAnchorCell(value: GridCoordinate): Self = StObject.set(x, "dataSourceTableAnchorCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourcePivotTableAnchorCell(value: GridCoordinate): Self = this.set("dataSourcePivotTableAnchorCell", value.asInstanceOf[js.Any])
+    def setDataSourceTableAnchorCellUndefined: Self = StObject.set(x, "dataSourceTableAnchorCell", js.undefined)
     
     @scala.inline
-    def deleteDataSourcePivotTableAnchorCell: Self = this.set("dataSourcePivotTableAnchorCell", js.undefined)
+    def setSheetId(value: String): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceTableAnchorCell(value: GridCoordinate): Self = this.set("dataSourceTableAnchorCell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSourceTableAnchorCell: Self = this.set("dataSourceTableAnchorCell", js.undefined)
-    
-    @scala.inline
-    def setSheetId(value: String): Self = this.set("sheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

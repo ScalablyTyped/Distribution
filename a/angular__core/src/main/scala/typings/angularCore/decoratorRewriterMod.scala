@@ -7,16 +7,16 @@ import typings.typescript.mod.Decorator
 import typings.typescript.mod.ObjectLiteralElementLike
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TypeChecker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/decorator_rewrite/decorator_rewriter", JSImport.Namespace)
-@js.native
-object decoratorRewriterMod extends js.Object {
+object decoratorRewriterMod {
   
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/decorator_rewrite/decorator_rewriter", "DecoratorRewriter")
   @js.native
-  class DecoratorRewriter protected () extends js.Object {
+  class DecoratorRewriter protected () extends StObject {
     def this(
       importManager: ImportManager,
       typeChecker: TypeChecker,

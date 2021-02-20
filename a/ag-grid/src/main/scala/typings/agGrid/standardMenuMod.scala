@@ -3,14 +3,14 @@ package typings.agGrid
 import typings.agGrid.columnMod.Column
 import typings.agGrid.iMenuFactoryMod.IMenuFactory
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/headerRendering/standardMenu", JSImport.Namespace)
-@js.native
-object standardMenuMod extends js.Object {
+object standardMenuMod {
   
+  @JSImport("ag-grid/dist/lib/headerRendering/standardMenu", "StandardMenuFactory")
   @js.native
   class StandardMenuFactory () extends IMenuFactory {
     

@@ -1,12 +1,13 @@
 package typings.intercomClient.anon
 
 import typings.intercomClient.intercomClientStrings.errorDotlist
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Errors extends js.Object {
+trait Errors extends StObject {
   
   var errors: js.Array[Code] = js.native
   
@@ -24,30 +25,18 @@ object Errors {
   }
   
   @scala.inline
-  implicit class ErrorsOps[Self <: Errors] (val x: Self) extends AnyVal {
+  implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: js.Array[Code]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorsVarargs(value: Code*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: Code*): Self = this.set("errors", js.Array(value :_*))
-    
-    @scala.inline
-    def setErrors(value: js.Array[Code]): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest_id(value: String): Self = this.set("request_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: errorDotlist): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: errorDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

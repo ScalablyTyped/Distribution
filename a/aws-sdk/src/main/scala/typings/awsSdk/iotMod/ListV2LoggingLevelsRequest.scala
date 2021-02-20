@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListV2LoggingLevelsRequest extends js.Object {
+trait ListV2LoggingLevelsRequest extends StObject {
   
   /**
     * The maximum number of results to return at one time.
@@ -31,36 +32,24 @@ object ListV2LoggingLevelsRequest {
   }
   
   @scala.inline
-  implicit class ListV2LoggingLevelsRequestOps[Self <: ListV2LoggingLevelsRequest] (val x: Self) extends AnyVal {
+  implicit class ListV2LoggingLevelsRequestMutableBuilder[Self <: ListV2LoggingLevelsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: SkyfallMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: SkyfallMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setTargetType(value: LogTargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setTargetType(value: LogTargetType): Self = this.set("targetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetType: Self = this.set("targetType", js.undefined)
+    def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
   }
 }

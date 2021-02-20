@@ -1,11 +1,12 @@
 package typings.pgPromise.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IColumnConfig[S] extends js.Object {
+trait IColumnConfig[S] extends StObject {
   
   var cast: js.UndefOr[String] = js.native
   
@@ -32,63 +33,51 @@ object IColumnConfig {
   }
   
   @scala.inline
-  implicit class IColumnConfigOps[Self <: IColumnConfig[_], S] (val x: Self with IColumnConfig[S]) extends AnyVal {
+  implicit class IColumnConfigMutableBuilder[Self <: IColumnConfig[_], S] (val x: Self with IColumnConfig[S]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCast(value: String): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCnd(value: Boolean): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
     
     @scala.inline
-    def setCast(value: String): Self = this.set("cast", value.asInstanceOf[js.Any])
+    def setDef(value: js.Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCast: Self = this.set("cast", js.undefined)
+    def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
     
     @scala.inline
-    def setCnd(value: Boolean): Self = this.set("cnd", value.asInstanceOf[js.Any])
+    def setInit(value: /* col */ IColumnDescriptor[S] => _): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCnd: Self = this.set("cnd", js.undefined)
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def setDef(value: js.Any): Self = this.set("def", value.asInstanceOf[js.Any])
+    def setMod(value: FormattingFilter): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDef: Self = this.set("def", js.undefined)
+    def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
     
     @scala.inline
-    def setInit(value: /* col */ IColumnDescriptor[S] => _): Self = this.set("init", js.Any.fromFunction1(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMod(value: FormattingFilter): Self = this.set("mod", value.asInstanceOf[js.Any])
+    def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
     
     @scala.inline
-    def deleteMod: Self = this.set("mod", js.undefined)
+    def setSkip(value: /* col */ IColumnDescriptor[S] => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProp(value: String): Self = this.set("prop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProp: Self = this.set("prop", js.undefined)
-    
-    @scala.inline
-    def setSkip(value: /* col */ IColumnDescriptor[S] => Boolean): Self = this.set("skip", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
   }
 }

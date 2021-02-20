@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,153 +137,141 @@ object DocumentReference {
   }
   
   @scala.inline
-  implicit class DocumentReferenceOps[Self <: DocumentReference] (val x: Self) extends AnyVal {
+  implicit class DocumentReferenceMutableBuilder[Self <: DocumentReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticator(value: Reference): Self = StObject.set(x, "authenticator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticatorUndefined: Self = StObject.set(x, "authenticator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor(value: js.Array[Reference]): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentVarargs(value: DocumentReferenceContent*): Self = this.set("content", js.Array(value :_*))
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def setContent(value: js.Array[DocumentReferenceContent]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setAuthorVarargs(value: Reference*): Self = StObject.set(x, "author", js.Array(value :_*))
     
     @scala.inline
-    def setIndexed(value: instant): Self = this.set("indexed", value.asInstanceOf[js.Any])
+    def setClass(value: CodeableConcept): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setContent(value: js.Array[DocumentReferenceContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_created(value: Element): Self = this.set("_created", value.asInstanceOf[js.Any])
+    def setContentVarargs(value: DocumentReferenceContent*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
-    def delete_created: Self = this.set("_created", js.undefined)
+    def setContext(value: DocumentReferenceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setCreated(value: dateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_docStatus(value: Element): Self = this.set("_docStatus", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def delete_docStatus: Self = this.set("_docStatus", js.undefined)
+    def setCustodian(value: Reference): Self = StObject.set(x, "custodian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_indexed(value: Element): Self = this.set("_indexed", value.asInstanceOf[js.Any])
+    def setCustodianUndefined: Self = StObject.set(x, "custodian", js.undefined)
     
     @scala.inline
-    def delete_indexed: Self = this.set("_indexed", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setDocStatus(value: code): Self = StObject.set(x, "docStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticator(value: Reference): Self = this.set("authenticator", value.asInstanceOf[js.Any])
+    def setDocStatusUndefined: Self = StObject.set(x, "docStatus", js.undefined)
     
     @scala.inline
-    def deleteAuthenticator: Self = this.set("authenticator", js.undefined)
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorVarargs(value: Reference*): Self = this.set("author", js.Array(value :_*))
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setAuthor(value: js.Array[Reference]): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setIndexed(value: instant): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: CodeableConcept): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setMasterIdentifier(value: Identifier): Self = StObject.set(x, "masterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setMasterIdentifierUndefined: Self = StObject.set(x, "masterIdentifier", js.undefined)
     
     @scala.inline
-    def setContext(value: DocumentReferenceContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setRelatesTo(value: js.Array[DocumentReferenceRelatesTo]): Self = StObject.set(x, "relatesTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setRelatesToUndefined: Self = StObject.set(x, "relatesTo", js.undefined)
     
     @scala.inline
-    def setCreated(value: dateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setRelatesToVarargs(value: DocumentReferenceRelatesTo*): Self = StObject.set(x, "relatesTo", js.Array(value :_*))
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setSecurityLabel(value: js.Array[CodeableConcept]): Self = StObject.set(x, "securityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustodian(value: Reference): Self = this.set("custodian", value.asInstanceOf[js.Any])
+    def setSecurityLabelUndefined: Self = StObject.set(x, "securityLabel", js.undefined)
     
     @scala.inline
-    def deleteCustodian: Self = this.set("custodian", js.undefined)
+    def setSecurityLabelVarargs(value: CodeableConcept*): Self = StObject.set(x, "securityLabel", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocStatus(value: code): Self = this.set("docStatus", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteDocStatus: Self = this.set("docStatus", js.undefined)
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def set_created(value: Element): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def set_createdUndefined: Self = StObject.set(x, "_created", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterIdentifier(value: Identifier): Self = this.set("masterIdentifier", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def deleteMasterIdentifier: Self = this.set("masterIdentifier", js.undefined)
+    def set_docStatus(value: Element): Self = StObject.set(x, "_docStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatesToVarargs(value: DocumentReferenceRelatesTo*): Self = this.set("relatesTo", js.Array(value :_*))
+    def set_docStatusUndefined: Self = StObject.set(x, "_docStatus", js.undefined)
     
     @scala.inline
-    def setRelatesTo(value: js.Array[DocumentReferenceRelatesTo]): Self = this.set("relatesTo", value.asInstanceOf[js.Any])
+    def set_indexed(value: Element): Self = StObject.set(x, "_indexed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelatesTo: Self = this.set("relatesTo", js.undefined)
+    def set_indexedUndefined: Self = StObject.set(x, "_indexed", js.undefined)
     
     @scala.inline
-    def setSecurityLabelVarargs(value: CodeableConcept*): Self = this.set("securityLabel", js.Array(value :_*))
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityLabel(value: js.Array[CodeableConcept]): Self = this.set("securityLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityLabel: Self = this.set("securityLabel", js.undefined)
-    
-    @scala.inline
-    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

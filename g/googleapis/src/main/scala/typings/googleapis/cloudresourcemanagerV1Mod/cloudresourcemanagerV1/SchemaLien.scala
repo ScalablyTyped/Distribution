@@ -1,5 +1,6 @@
 package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource.
   */
 @js.native
-trait SchemaLien extends js.Object {
+trait SchemaLien extends StObject {
   
   /**
     * The creation time of this Lien.
@@ -61,57 +62,45 @@ object SchemaLien {
   }
   
   @scala.inline
-  implicit class SchemaLienOps[Self <: SchemaLien] (val x: Self) extends AnyVal {
+  implicit class SchemaLienMutableBuilder[Self <: SchemaLien] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setRestrictions(value: js.Array[String]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
-    
-    @scala.inline
-    def setRestrictionsVarargs(value: String*): Self = this.set("restrictions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRestrictions(value: js.Array[String]): Self = this.set("restrictions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrictions: Self = this.set("restrictions", js.undefined)
+    def setRestrictionsVarargs(value: String*): Self = StObject.set(x, "restrictions", js.Array(value :_*))
   }
 }

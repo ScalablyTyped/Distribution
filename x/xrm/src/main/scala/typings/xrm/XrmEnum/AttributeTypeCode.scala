@@ -21,6 +21,7 @@ import typings.xrm.xrmNumbers.`6`
 import typings.xrm.xrmNumbers.`7`
 import typings.xrm.xrmNumbers.`8`
 import typings.xrm.xrmNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmNumbers.`19`
   - typings.xrm.xrmNumbers.`20`
 */
-trait AttributeTypeCode extends js.Object
+trait AttributeTypeCode extends StObject
 object AttributeTypeCode {
   
   @scala.inline

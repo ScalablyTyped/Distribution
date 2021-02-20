@@ -1,11 +1,12 @@
 package typings.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CounterOptions extends js.Object {
+trait CounterOptions extends StObject {
   
   /**
     * Set the initial expiration time for the document. A value of 0 represents never expiring.
@@ -36,42 +37,30 @@ object CounterOptions {
   }
   
   @scala.inline
-  implicit class CounterOptionsOps[Self <: CounterOptions] (val x: Self) extends AnyVal {
+  implicit class CounterOptionsMutableBuilder[Self <: CounterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiry(value: Double): Self = this.set("expiry", value.asInstanceOf[js.Any])
+    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
     @scala.inline
-    def deleteExpiry: Self = this.set("expiry", js.undefined)
+    def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitial(value: Double): Self = this.set("initial", value.asInstanceOf[js.Any])
+    def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
     
     @scala.inline
-    def deleteInitial: Self = this.set("initial", js.undefined)
+    def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersist_to(value: Double): Self = this.set("persist_to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersist_to: Self = this.set("persist_to", js.undefined)
-    
-    @scala.inline
-    def setReplicate_to(value: Double): Self = this.set("replicate_to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicate_to: Self = this.set("replicate_to", js.undefined)
+    def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetGroupCertificateConfigurationResponse extends js.Object {
+trait GetGroupCertificateConfigurationResponse extends StObject {
   
   /**
     * The amount of time remaining before the certificate authority expires, in milliseconds.
@@ -31,36 +32,24 @@ object GetGroupCertificateConfigurationResponse {
   }
   
   @scala.inline
-  implicit class GetGroupCertificateConfigurationResponseOps[Self <: GetGroupCertificateConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class GetGroupCertificateConfigurationResponseMutableBuilder[Self <: GetGroupCertificateConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateAuthorityExpiryInMilliseconds(value: string): Self = StObject.set(x, "CertificateAuthorityExpiryInMilliseconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateAuthorityExpiryInMillisecondsUndefined: Self = StObject.set(x, "CertificateAuthorityExpiryInMilliseconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateExpiryInMilliseconds(value: string): Self = StObject.set(x, "CertificateExpiryInMilliseconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateAuthorityExpiryInMilliseconds(value: string): Self = this.set("CertificateAuthorityExpiryInMilliseconds", value.asInstanceOf[js.Any])
+    def setCertificateExpiryInMillisecondsUndefined: Self = StObject.set(x, "CertificateExpiryInMilliseconds", js.undefined)
     
     @scala.inline
-    def deleteCertificateAuthorityExpiryInMilliseconds: Self = this.set("CertificateAuthorityExpiryInMilliseconds", js.undefined)
+    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateExpiryInMilliseconds(value: string): Self = this.set("CertificateExpiryInMilliseconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateExpiryInMilliseconds: Self = this.set("CertificateExpiryInMilliseconds", js.undefined)
-    
-    @scala.inline
-    def setGroupId(value: string): Self = this.set("GroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
   }
 }

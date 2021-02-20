@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QRow extends js.Object {
+trait QRow extends StObject {
   
   var cells: js.Array[QDimensionCell | QMeasureCell] = js.native
   
@@ -26,36 +27,24 @@ object QRow {
   }
   
   @scala.inline
-  implicit class QRowOps[Self <: QRow] (val x: Self) extends AnyVal {
+  implicit class QRowMutableBuilder[Self <: QRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCells(value: js.Array[QDimensionCell | QMeasureCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellsVarargs(value: (QDimensionCell | QMeasureCell)*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensions(value: js.Array[QDimensionCell]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellsVarargs(value: (QDimensionCell | QMeasureCell)*): Self = this.set("cells", js.Array(value :_*))
+    def setDimensionsVarargs(value: QDimensionCell*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setCells(value: js.Array[QDimensionCell | QMeasureCell]): Self = this.set("cells", value.asInstanceOf[js.Any])
+    def setMeasures(value: js.Array[QMeasureCell]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionsVarargs(value: QDimensionCell*): Self = this.set("dimensions", js.Array(value :_*))
-    
-    @scala.inline
-    def setDimensions(value: js.Array[QDimensionCell]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeasuresVarargs(value: QMeasureCell*): Self = this.set("measures", js.Array(value :_*))
-    
-    @scala.inline
-    def setMeasures(value: js.Array[QMeasureCell]): Self = this.set("measures", value.asInstanceOf[js.Any])
+    def setMeasuresVarargs(value: QMeasureCell*): Self = StObject.set(x, "measures", js.Array(value :_*))
   }
 }

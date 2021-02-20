@@ -1,13 +1,14 @@
 package typings.ssimJs
 
 import typings.ssimJs.typesMod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ssim.js/dist/defaults", JSImport.Namespace)
-@js.native
-object defaultsMod extends js.Object {
+object defaultsMod {
   
+  @JSImport("ssim.js/dist/defaults", "defaults")
+  @js.native
   val defaults: Options = js.native
 }

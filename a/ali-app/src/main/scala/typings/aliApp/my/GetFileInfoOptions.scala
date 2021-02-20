@@ -2,6 +2,7 @@ package typings.aliApp.my
 
 import typings.aliApp.aliAppStrings.md5
 import typings.aliApp.aliAppStrings.sha1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,33 +29,21 @@ object GetFileInfoOptions {
   }
   
   @scala.inline
-  implicit class GetFileInfoOptionsOps[Self <: GetFileInfoOptions] (val x: Self) extends AnyVal {
+  implicit class GetFileInfoOptionsMutableBuilder[Self <: GetFileInfoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigestAlgorithm(value: md5 | sha1): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
     
     @scala.inline
-    def setApFilePath(value: String): Self = this.set("apFilePath", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* options */ GetFileInfoSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDigestAlgorithm(value: md5 | sha1): Self = this.set("digestAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDigestAlgorithm: Self = this.set("digestAlgorithm", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* options */ GetFileInfoSuccess => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

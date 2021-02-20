@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration of all preserved resources.
   */
 @js.native
-trait SchemaStatefulPolicyPreservedResources extends js.Object {
+trait SchemaStatefulPolicyPreservedResources extends StObject {
   
   /**
     * Disks created on the instances that will be preserved on instance delete,
@@ -25,27 +26,15 @@ object SchemaStatefulPolicyPreservedResources {
   }
   
   @scala.inline
-  implicit class SchemaStatefulPolicyPreservedResourcesOps[Self <: SchemaStatefulPolicyPreservedResources] (val x: Self) extends AnyVal {
+  implicit class SchemaStatefulPolicyPreservedResourcesMutableBuilder[Self <: SchemaStatefulPolicyPreservedResources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisks(value: js.Array[SchemaStatefulPolicyPreservedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisksVarargs(value: SchemaStatefulPolicyPreservedDisk*): Self = this.set("disks", js.Array(value :_*))
-    
-    @scala.inline
-    def setDisks(value: js.Array[SchemaStatefulPolicyPreservedDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisks: Self = this.set("disks", js.undefined)
+    def setDisksVarargs(value: SchemaStatefulPolicyPreservedDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
   }
 }

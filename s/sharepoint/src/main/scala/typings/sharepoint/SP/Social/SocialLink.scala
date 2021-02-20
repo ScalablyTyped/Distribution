@@ -3,6 +3,7 @@ package typings.sharepoint.SP.Social
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,30 +40,18 @@ object SocialLink {
   }
   
   @scala.inline
-  implicit class SocialLinkOps[Self <: SocialLink] (val x: Self) extends AnyVal {
+  implicit class SocialLinkMutableBuilder[Self <: SocialLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_text(value: () => String): Self = StObject.set(x, "get_text", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_uri(value: () => String): Self = StObject.set(x, "get_uri", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSet_text(value: String => String): Self = StObject.set(x, "set_text", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_text(value: () => String): Self = this.set("get_text", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_uri(value: () => String): Self = this.set("get_uri", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_text(value: String => String): Self = this.set("set_text", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_uri(value: String => String): Self = this.set("set_uri", js.Any.fromFunction1(value))
+    def setSet_uri(value: String => String): Self = StObject.set(x, "set_uri", js.Any.fromFunction1(value))
   }
 }

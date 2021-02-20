@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object ChartSelectStartEvent {
   }
   
   @scala.inline
-  implicit class ChartSelectStartEventOps[Self <: ChartSelectStartEvent] (val x: Self) extends AnyVal {
+  implicit class ChartSelectStartEventMutableBuilder[Self <: ChartSelectStartEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: js.Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: js.Any): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: js.Any): Self = this.set("from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
-    
-    @scala.inline
-    def setTo(value: js.Any): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Fetch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContinueRequestRequest extends js.Object {
+trait ContinueRequestRequest extends StObject {
   
   /**
     * If set, overrides the request headers.
@@ -41,48 +42,36 @@ object ContinueRequestRequest {
   }
   
   @scala.inline
-  implicit class ContinueRequestRequestOps[Self <: ContinueRequestRequest] (val x: Self) extends AnyVal {
+  implicit class ContinueRequestRequestMutableBuilder[Self <: ContinueRequestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Array[HeaderEntry]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersVarargs(value: HeaderEntry*): Self = this.set("headers", js.Array(value :_*))
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Array[HeaderEntry]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostData(value: String): Self = this.set("postData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostData: Self = this.set("postData", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

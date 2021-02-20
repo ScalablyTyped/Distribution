@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.identitiesInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupMembership extends js.Object {
+trait GroupMembership extends StObject {
   
   var active: Boolean = js.native
   
@@ -24,30 +25,18 @@ object GroupMembership {
   }
   
   @scala.inline
-  implicit class GroupMembershipOps[Self <: GroupMembership] (val x: Self) extends AnyVal {
+  implicit class GroupMembershipMutableBuilder[Self <: GroupMembership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptor(value: IdentityDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescriptor(value: IdentityDescriptor): Self = this.set("descriptor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueriedId(value: String): Self = this.set("queriedId", value.asInstanceOf[js.Any])
+    def setQueriedId(value: String): Self = StObject.set(x, "queriedId", value.asInstanceOf[js.Any])
   }
 }

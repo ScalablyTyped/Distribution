@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttResources extends js.Object {
+trait GanttResources extends StObject {
   
   var dataColorField: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object GanttResources {
   }
   
   @scala.inline
-  implicit class GanttResourcesOps[Self <: GanttResources] (val x: Self) extends AnyVal {
+  implicit class GanttResourcesMutableBuilder[Self <: GanttResources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataColorField(value: String): Self = StObject.set(x, "dataColorField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataColorFieldUndefined: Self = StObject.set(x, "dataColorField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataFormatField(value: String): Self = StObject.set(x, "dataFormatField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataColorField(value: String): Self = this.set("dataColorField", value.asInstanceOf[js.Any])
+    def setDataFormatFieldUndefined: Self = StObject.set(x, "dataFormatField", js.undefined)
     
     @scala.inline
-    def deleteDataColorField: Self = this.set("dataColorField", js.undefined)
+    def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFormatField(value: String): Self = this.set("dataFormatField", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataFormatField: Self = this.set("dataFormatField", js.undefined)
+    def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTextField(value: String): Self = this.set("dataTextField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataTextField: Self = this.set("dataTextField", js.undefined)
-    
-    @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

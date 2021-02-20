@@ -2,14 +2,14 @@ package typings.googlemaps.global.google.maps
 
 import typings.googlemaps.google.maps.visualization.HeatmapLayerOptions
 import typings.googlemaps.google.maps.visualization.MapsEngineLayerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google.maps.visualization")
-@js.native
-object visualization extends js.Object {
+object visualization {
   
+  @JSGlobal("google.maps.visualization.HeatmapLayer")
   @js.native
   class HeatmapLayer ()
     extends typings.googlemaps.google.maps.visualization.HeatmapLayer {
@@ -17,6 +17,7 @@ object visualization extends js.Object {
   }
   
   // TODO find source documentation
+  @JSGlobal("google.maps.visualization.MapsEngineLayer")
   @js.native
   class MapsEngineLayer protected ()
     extends typings.googlemaps.google.maps.visualization.MapsEngineLayer {
@@ -24,8 +25,9 @@ object visualization extends js.Object {
   }
   
   // TODO find source documentation
+  @JSGlobal("google.maps.visualization.MapsEngineStatus")
   @js.native
-  object MapsEngineStatus extends js.Object {
+  object MapsEngineStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.googlemaps.google.maps.visualization.MapsEngineStatus with String] = js.native
@@ -38,11 +40,13 @@ object visualization extends js.Object {
   }
   
   // TODO find source documentation
+  @JSGlobal("google.maps.visualization.MapsEventListener")
   @js.native
   class MapsEventListener ()
     extends typings.googlemaps.google.maps.visualization.MapsEventListener
   
   // TODO find source documentation
+  @JSGlobal("google.maps.visualization.MouseEvent")
   @js.native
   class MouseEvent ()
     extends typings.googlemaps.google.maps.visualization.MouseEvent

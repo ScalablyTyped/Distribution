@@ -2,14 +2,14 @@ package typings.twilioNotifications
 
 import typings.std.Transport
 import typings.twilioNotifications.configurationMod.Configuration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-notifications/lib/registrar.connector", JSImport.Namespace)
-@js.native
-object registrarConnectorMod extends js.Object {
+object registrarConnectorMod {
   
+  @JSImport("twilio-notifications/lib/registrar.connector", "Connector")
   @js.native
   abstract class Connector protected ()
     extends typings.twilioNotifications.connectorMod.Connector {
@@ -20,6 +20,7 @@ object registrarConnectorMod extends js.Object {
     * Manages the registrations on ERS service.
     * Deduplicates registrations and manages them automatically
     */
+  @JSImport("twilio-notifications/lib/registrar.connector", "RegistrarConnector")
   @js.native
   class RegistrarConnector protected ()
     extends typings.twilioNotifications.connectorMod.Connector {

@@ -1,5 +1,6 @@
 package typings.reduxAsyncQueue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("redux-async-queue", JSImport.Namespace)
 @js.native
-object reduxAsyncQueueRequire extends js.Object
+object reduxAsyncQueueRequire extends StObject

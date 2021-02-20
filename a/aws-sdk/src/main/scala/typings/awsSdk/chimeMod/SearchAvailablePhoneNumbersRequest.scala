@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchAvailablePhoneNumbersRequest extends js.Object {
+trait SearchAvailablePhoneNumbersRequest extends StObject {
   
   /**
     * The area code used to filter results.
@@ -51,60 +52,48 @@ object SearchAvailablePhoneNumbersRequest {
   }
   
   @scala.inline
-  implicit class SearchAvailablePhoneNumbersRequestOps[Self <: SearchAvailablePhoneNumbersRequest] (val x: Self) extends AnyVal {
+  implicit class SearchAvailablePhoneNumbersRequestMutableBuilder[Self <: SearchAvailablePhoneNumbersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreaCode(value: String): Self = StObject.set(x, "AreaCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaCodeUndefined: Self = StObject.set(x, "AreaCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaCode(value: String): Self = this.set("AreaCode", value.asInstanceOf[js.Any])
+    def setCityUndefined: Self = StObject.set(x, "City", js.undefined)
     
     @scala.inline
-    def deleteAreaCode: Self = this.set("AreaCode", js.undefined)
+    def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("City", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
     
     @scala.inline
-    def deleteCity: Self = this.set("City", js.undefined)
+    def setMaxResults(value: PhoneNumberMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("Country", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("Country", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: PhoneNumberMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setTollFreePrefix(value: TollFreePrefix): Self = StObject.set(x, "TollFreePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
-    
-    @scala.inline
-    def setTollFreePrefix(value: TollFreePrefix): Self = this.set("TollFreePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTollFreePrefix: Self = this.set("TollFreePrefix", js.undefined)
+    def setTollFreePrefixUndefined: Self = StObject.set(x, "TollFreePrefix", js.undefined)
   }
 }

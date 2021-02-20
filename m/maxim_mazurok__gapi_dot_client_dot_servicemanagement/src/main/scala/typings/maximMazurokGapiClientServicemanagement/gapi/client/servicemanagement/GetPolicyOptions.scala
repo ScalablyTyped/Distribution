@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPolicyOptions extends js.Object {
+trait GetPolicyOptions extends StObject {
   
   /**
     * Optional. The policy format version to be returned. Valid values are 0, 1, and 3. Requests specifying an invalid value will be rejected. Requests for policies with any conditional
@@ -23,24 +24,12 @@ object GetPolicyOptions {
   }
   
   @scala.inline
-  implicit class GetPolicyOptionsOps[Self <: GetPolicyOptions] (val x: Self) extends AnyVal {
+  implicit class GetPolicyOptionsMutableBuilder[Self <: GetPolicyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestedPolicyVersion(value: Double): Self = StObject.set(x, "requestedPolicyVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequestedPolicyVersion(value: Double): Self = this.set("requestedPolicyVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedPolicyVersion: Self = this.set("requestedPolicyVersion", js.undefined)
+    def setRequestedPolicyVersionUndefined: Self = StObject.set(x, "requestedPolicyVersion", js.undefined)
   }
 }

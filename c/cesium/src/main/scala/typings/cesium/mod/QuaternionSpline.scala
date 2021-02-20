@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.FirstInnerQuadrangle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "QuaternionSpline")
 @js.native
-class QuaternionSpline protected () extends js.Object {
+class QuaternionSpline protected () extends StObject {
   def this(options: FirstInnerQuadrangle) = this()
   
   def evaluate(time: Double): Quaternion = js.native

@@ -1,14 +1,15 @@
 package typings.dataUriToBuffer
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("data-uri-to-buffer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("data-uri-to-buffer", JSImport.Namespace)
+  @js.native
   def apply(uri: String): MimeBuffer = js.native
   
   @js.native

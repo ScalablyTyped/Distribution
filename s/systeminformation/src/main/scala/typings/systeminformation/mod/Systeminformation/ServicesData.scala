@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServicesData extends js.Object {
+trait ServicesData extends StObject {
   
   var name: String = js.native
   
@@ -35,39 +36,27 @@ object ServicesData {
   }
   
   @scala.inline
-  implicit class ServicesDataOps[Self <: ServicesData] (val x: Self) extends AnyVal {
+  implicit class ServicesDataMutableBuilder[Self <: ServicesData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPcpu(value: Double): Self = StObject.set(x, "pcpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPids(value: js.Array[Double]): Self = StObject.set(x, "pids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPidsVarargs(value: Double*): Self = StObject.set(x, "pids", js.Array(value :_*))
     
     @scala.inline
-    def setPcpu(value: Double): Self = this.set("pcpu", value.asInstanceOf[js.Any])
+    def setPmem(value: Double): Self = StObject.set(x, "pmem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPidsVarargs(value: Double*): Self = this.set("pids", js.Array(value :_*))
+    def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPids(value: js.Array[Double]): Self = this.set("pids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPmem(value: Double): Self = this.set("pmem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunning(value: Boolean): Self = this.set("running", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartmode(value: String): Self = this.set("startmode", value.asInstanceOf[js.Any])
+    def setStartmode(value: String): Self = StObject.set(x, "startmode", value.asInstanceOf[js.Any])
   }
 }

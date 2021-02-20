@@ -1,13 +1,14 @@
 package typings.framesync
 
 import typings.framesync.typesMod.Step
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("framesync/lib/create-render-step", JSImport.Namespace)
-@js.native
-object createRenderStepMod extends js.Object {
+object createRenderStepMod {
   
+  @JSImport("framesync/lib/create-render-step", JSImport.Default)
+  @js.native
   def default(setRunNextFrame: js.Function1[/* fillRun */ Boolean, Unit]): Step = js.native
 }

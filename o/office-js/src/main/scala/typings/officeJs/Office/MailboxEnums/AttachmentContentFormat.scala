@@ -1,11 +1,12 @@
 package typings.officeJs.Office.MailboxEnums
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AttachmentContentFormat extends js.Object
+sealed trait AttachmentContentFormat extends StObject
 /**
   * Specifies the formatting that applies to an attachment's content.
   * 
@@ -17,7 +18,7 @@ sealed trait AttachmentContentFormat extends js.Object
   */
 @JSGlobal("Office.MailboxEnums.AttachmentContentFormat")
 @js.native
-object AttachmentContentFormat extends js.Object {
+object AttachmentContentFormat extends StObject {
   
   /**
     * The content of the attachment is returned as a base64-encoded string.

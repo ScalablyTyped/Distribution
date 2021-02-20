@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchGlobals extends js.Object {
+trait NightwatchGlobals extends StObject {
   
   /**
     * this controls whether to abort the test execution when an assertion failed and skip the rest
@@ -51,48 +52,36 @@ object NightwatchGlobals {
   }
   
   @scala.inline
-  implicit class NightwatchGlobalsOps[Self <: NightwatchGlobals] (val x: Self) extends AnyVal {
+  implicit class NightwatchGlobalsMutableBuilder[Self <: NightwatchGlobals] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortOnAssertionFailure(value: Boolean): Self = StObject.set(x, "abortOnAssertionFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortOnAssertionFailureUndefined: Self = StObject.set(x, "abortOnAssertionFailure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsyncHookTimeout(value: Double): Self = StObject.set(x, "asyncHookTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortOnAssertionFailure(value: Boolean): Self = this.set("abortOnAssertionFailure", value.asInstanceOf[js.Any])
+    def setAsyncHookTimeoutUndefined: Self = StObject.set(x, "asyncHookTimeout", js.undefined)
     
     @scala.inline
-    def deleteAbortOnAssertionFailure: Self = this.set("abortOnAssertionFailure", js.undefined)
+    def setThrowOnMultipleElementsReturned(value: Boolean): Self = StObject.set(x, "throwOnMultipleElementsReturned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncHookTimeout(value: Double): Self = this.set("asyncHookTimeout", value.asInstanceOf[js.Any])
+    def setThrowOnMultipleElementsReturnedUndefined: Self = StObject.set(x, "throwOnMultipleElementsReturned", js.undefined)
     
     @scala.inline
-    def deleteAsyncHookTimeout: Self = this.set("asyncHookTimeout", js.undefined)
+    def setWaitForConditionPollInterval(value: Double): Self = StObject.set(x, "waitForConditionPollInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrowOnMultipleElementsReturned(value: Boolean): Self = this.set("throwOnMultipleElementsReturned", value.asInstanceOf[js.Any])
+    def setWaitForConditionPollIntervalUndefined: Self = StObject.set(x, "waitForConditionPollInterval", js.undefined)
     
     @scala.inline
-    def deleteThrowOnMultipleElementsReturned: Self = this.set("throwOnMultipleElementsReturned", js.undefined)
+    def setWaitForConditionTimeout(value: Double): Self = StObject.set(x, "waitForConditionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForConditionPollInterval(value: Double): Self = this.set("waitForConditionPollInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForConditionPollInterval: Self = this.set("waitForConditionPollInterval", js.undefined)
-    
-    @scala.inline
-    def setWaitForConditionTimeout(value: Double): Self = this.set("waitForConditionTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForConditionTimeout: Self = this.set("waitForConditionTimeout", js.undefined)
+    def setWaitForConditionTimeoutUndefined: Self = StObject.set(x, "waitForConditionTimeout", js.undefined)
   }
 }

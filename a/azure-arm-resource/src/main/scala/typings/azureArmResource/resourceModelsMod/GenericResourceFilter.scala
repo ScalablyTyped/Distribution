@@ -1,11 +1,12 @@
 package typings.azureArmResource.resourceModelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenericResourceFilter extends js.Object {
+trait GenericResourceFilter extends StObject {
   
   /**
     * The resource type.
@@ -31,36 +32,24 @@ object GenericResourceFilter {
   }
   
   @scala.inline
-  implicit class GenericResourceFilterOps[Self <: GenericResourceFilter] (val x: Self) extends AnyVal {
+  implicit class GenericResourceFilterMutableBuilder[Self <: GenericResourceFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagname(value: String): Self = StObject.set(x, "tagname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setTagnameUndefined: Self = StObject.set(x, "tagname", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setTagvalue(value: String): Self = StObject.set(x, "tagvalue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagname(value: String): Self = this.set("tagname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagname: Self = this.set("tagname", js.undefined)
-    
-    @scala.inline
-    def setTagvalue(value: String): Self = this.set("tagvalue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagvalue: Self = this.set("tagvalue", js.undefined)
+    def setTagvalueUndefined: Self = StObject.set(x, "tagvalue", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource extends js.Object {
+trait GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource extends StObject {
   
   /**
     * Type of the resource. This can be either a GCP resource or a custom one (e.g. another cloud provider's VM). For GCP compute resources use singular form of the names listed in GCP
@@ -26,30 +27,18 @@ object GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource {
   }
   
   @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResourceOps[Self <: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResourceMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
-    
-    @scala.inline
-    def setResourceUrl(value: String): Self = this.set("resourceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceUrl: Self = this.set("resourceUrl", js.undefined)
+    def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
   }
 }

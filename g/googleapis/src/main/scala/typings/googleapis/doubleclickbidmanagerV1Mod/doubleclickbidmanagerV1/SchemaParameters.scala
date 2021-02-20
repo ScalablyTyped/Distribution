@@ -1,5 +1,6 @@
 package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Parameters of a query or report.
   */
 @js.native
-trait SchemaParameters extends js.Object {
+trait SchemaParameters extends StObject {
   
   /**
     * Filters used to match traffic data in your report.
@@ -44,57 +45,45 @@ object SchemaParameters {
   }
   
   @scala.inline
-  implicit class SchemaParametersOps[Self <: SchemaParameters] (val x: Self) extends AnyVal {
+  implicit class SchemaParametersMutableBuilder[Self <: SchemaParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: js.Array[SchemaFilterPair]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: SchemaFilterPair*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: SchemaFilterPair*): Self = this.set("filters", js.Array(value :_*))
+    def setGroupBys(value: js.Array[String]): Self = StObject.set(x, "groupBys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[SchemaFilterPair]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setGroupBysUndefined: Self = StObject.set(x, "groupBys", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setGroupBysVarargs(value: String*): Self = StObject.set(x, "groupBys", js.Array(value :_*))
     
     @scala.inline
-    def setGroupBysVarargs(value: String*): Self = this.set("groupBys", js.Array(value :_*))
+    def setIncludeInviteData(value: Boolean): Self = StObject.set(x, "includeInviteData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBys(value: js.Array[String]): Self = this.set("groupBys", value.asInstanceOf[js.Any])
+    def setIncludeInviteDataUndefined: Self = StObject.set(x, "includeInviteData", js.undefined)
     
     @scala.inline
-    def deleteGroupBys: Self = this.set("groupBys", js.undefined)
+    def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeInviteData(value: Boolean): Self = this.set("includeInviteData", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteIncludeInviteData: Self = this.set("includeInviteData", js.undefined)
+    def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsVarargs(value: String*): Self = this.set("metrics", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Array[String]): Self = this.set("metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

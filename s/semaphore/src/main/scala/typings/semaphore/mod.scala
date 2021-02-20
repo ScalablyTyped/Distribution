@@ -1,18 +1,21 @@
 package typings.semaphore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("semaphore", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("semaphore", JSImport.Namespace)
+  @js.native
   def apply(): Semaphore = js.native
+  @JSImport("semaphore", JSImport.Namespace)
+  @js.native
   def apply(capacity: Double): Semaphore = js.native
   
   @js.native
-  trait Semaphore extends js.Object {
+  trait Semaphore extends StObject {
     
     def available(n: Double): Boolean = js.native
     

@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.IOStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object ReadCallbackArgs {
   }
   
   @scala.inline
-  implicit class ReadCallbackArgsOps[Self <: ReadCallbackArgs] (val x: Self) extends AnyVal {
+  implicit class ReadCallbackArgsMutableBuilder[Self <: ReadCallbackArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesProcessed(value: Double): Self = StObject.set(x, "bytesProcessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesProcessedUndefined: Self = StObject.set(x, "bytesProcessed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: IOStream): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesProcessed(value: Double): Self = this.set("bytesProcessed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBytesProcessed: Self = this.set("bytesProcessed", js.undefined)
-    
-    @scala.inline
-    def setSource(value: IOStream): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

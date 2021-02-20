@@ -1,14 +1,14 @@
 package typings.xstate
 
 import typings.xstate.interpreterMod.Clock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xstate/lib/SimulatedClock", JSImport.Namespace)
-@js.native
-object simulatedClockMod extends js.Object {
+object simulatedClockMod {
   
+  @JSImport("xstate/lib/SimulatedClock", "SimulatedClock")
   @js.native
   class SimulatedClock () extends Clock {
     

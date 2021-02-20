@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XComponentContext
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,24 +46,12 @@ object XSingleComponentFactory {
   }
   
   @scala.inline
-  implicit class XSingleComponentFactoryOps[Self <: XSingleComponentFactory] (val x: Self) extends AnyVal {
+  implicit class XSingleComponentFactoryMutableBuilder[Self <: XSingleComponentFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateInstanceWithArgumentsAndContext(value: (SeqEquiv[_], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateInstanceWithArgumentsAndContext(value: (SeqEquiv[_], XComponentContext) => XInterface): Self = this.set("createInstanceWithArgumentsAndContext", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCreateInstanceWithContext(value: XComponentContext => XInterface): Self = this.set("createInstanceWithContext", js.Any.fromFunction1(value))
+    def setCreateInstanceWithContext(value: XComponentContext => XInterface): Self = StObject.set(x, "createInstanceWithContext", js.Any.fromFunction1(value))
   }
 }

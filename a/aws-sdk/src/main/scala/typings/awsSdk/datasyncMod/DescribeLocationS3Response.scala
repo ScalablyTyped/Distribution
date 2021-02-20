@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLocationS3Response extends js.Object {
+trait DescribeLocationS3Response extends StObject {
   
   /**
     * If you are using DataSync on an AWS Outpost, the Amazon Resource Name (ARNs) of the EC2 agents deployed on your Outpost. For more information about launching a DataSync agent on an AWS Outpost, see outposts-agent.
@@ -43,57 +44,45 @@ object DescribeLocationS3Response {
   }
   
   @scala.inline
-  implicit class DescribeLocationS3ResponseOps[Self <: DescribeLocationS3Response] (val x: Self) extends AnyVal {
+  implicit class DescribeLocationS3ResponseMutableBuilder[Self <: DescribeLocationS3Response] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
     @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = this.set("AgentArns", js.Array(value :_*))
+    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentArns(value: AgentArnList): Self = this.set("AgentArns", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAgentArns: Self = this.set("AgentArns", js.undefined)
+    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationArn(value: LocationArn): Self = this.set("LocationArn", value.asInstanceOf[js.Any])
+    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
     @scala.inline
-    def deleteLocationArn: Self = this.set("LocationArn", js.undefined)
+    def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationUri(value: LocationUri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    def setS3ConfigUndefined: Self = StObject.set(x, "S3Config", js.undefined)
     
     @scala.inline
-    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    def setS3StorageClass(value: S3StorageClass): Self = StObject.set(x, "S3StorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Config(value: S3Config): Self = this.set("S3Config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Config: Self = this.set("S3Config", js.undefined)
-    
-    @scala.inline
-    def setS3StorageClass(value: S3StorageClass): Self = this.set("S3StorageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3StorageClass: Self = this.set("S3StorageClass", js.undefined)
+    def setS3StorageClassUndefined: Self = StObject.set(x, "S3StorageClass", js.undefined)
   }
 }

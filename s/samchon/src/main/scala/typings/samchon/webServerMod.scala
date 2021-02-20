@@ -2,14 +2,14 @@ package typings.samchon
 
 import typings.samchon.iserverMod.IServer
 import typings.samchon.webClientDriverMod.WebClientDriver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/protocol/server/WebServer", JSImport.Namespace)
-@js.native
-object webServerMod extends js.Object {
+object webServerMod {
   
+  @JSImport("samchon/protocol/server/WebServer", "WebServer")
   @js.native
   /**
     * Default Constructor.

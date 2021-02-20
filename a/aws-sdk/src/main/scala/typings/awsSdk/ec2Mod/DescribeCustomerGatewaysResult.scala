@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCustomerGatewaysResult extends js.Object {
+trait DescribeCustomerGatewaysResult extends StObject {
   
   /**
     * Information about one or more customer gateways.
@@ -21,27 +22,15 @@ object DescribeCustomerGatewaysResult {
   }
   
   @scala.inline
-  implicit class DescribeCustomerGatewaysResultOps[Self <: DescribeCustomerGatewaysResult] (val x: Self) extends AnyVal {
+  implicit class DescribeCustomerGatewaysResultMutableBuilder[Self <: DescribeCustomerGatewaysResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerGateways(value: CustomerGatewayList): Self = StObject.set(x, "CustomerGateways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerGatewaysUndefined: Self = StObject.set(x, "CustomerGateways", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomerGatewaysVarargs(value: CustomerGateway*): Self = this.set("CustomerGateways", js.Array(value :_*))
-    
-    @scala.inline
-    def setCustomerGateways(value: CustomerGatewayList): Self = this.set("CustomerGateways", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerGateways: Self = this.set("CustomerGateways", js.undefined)
+    def setCustomerGatewaysVarargs(value: CustomerGateway*): Self = StObject.set(x, "CustomerGateways", js.Array(value :_*))
   }
 }

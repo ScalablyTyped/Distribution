@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3CopyObjectOperation extends js.Object {
+trait S3CopyObjectOperation extends StObject {
   
   /**
     * 
@@ -96,120 +97,108 @@ object S3CopyObjectOperation {
   }
   
   @scala.inline
-  implicit class S3CopyObjectOperationOps[Self <: S3CopyObjectOperation] (val x: Self) extends AnyVal {
+  implicit class S3CopyObjectOperationMutableBuilder[Self <: S3CopyObjectOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlGrants(value: S3GrantList): Self = StObject.set(x, "AccessControlGrants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlGrantsUndefined: Self = StObject.set(x, "AccessControlGrants", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessControlGrantsVarargs(value: S3Grant*): Self = StObject.set(x, "AccessControlGrants", js.Array(value :_*))
     
     @scala.inline
-    def setAccessControlGrantsVarargs(value: S3Grant*): Self = this.set("AccessControlGrants", js.Array(value :_*))
+    def setCannedAccessControlList(value: S3CannedAccessControlList): Self = StObject.set(x, "CannedAccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlGrants(value: S3GrantList): Self = this.set("AccessControlGrants", value.asInstanceOf[js.Any])
+    def setCannedAccessControlListUndefined: Self = StObject.set(x, "CannedAccessControlList", js.undefined)
     
     @scala.inline
-    def deleteAccessControlGrants: Self = this.set("AccessControlGrants", js.undefined)
+    def setMetadataDirective(value: S3MetadataDirective): Self = StObject.set(x, "MetadataDirective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCannedAccessControlList(value: S3CannedAccessControlList): Self = this.set("CannedAccessControlList", value.asInstanceOf[js.Any])
+    def setMetadataDirectiveUndefined: Self = StObject.set(x, "MetadataDirective", js.undefined)
     
     @scala.inline
-    def deleteCannedAccessControlList: Self = this.set("CannedAccessControlList", js.undefined)
+    def setModifiedSinceConstraint(value: TimeStamp): Self = StObject.set(x, "ModifiedSinceConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataDirective(value: S3MetadataDirective): Self = this.set("MetadataDirective", value.asInstanceOf[js.Any])
+    def setModifiedSinceConstraintUndefined: Self = StObject.set(x, "ModifiedSinceConstraint", js.undefined)
     
     @scala.inline
-    def deleteMetadataDirective: Self = this.set("MetadataDirective", js.undefined)
+    def setNewObjectMetadata(value: S3ObjectMetadata): Self = StObject.set(x, "NewObjectMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedSinceConstraint(value: TimeStamp): Self = this.set("ModifiedSinceConstraint", value.asInstanceOf[js.Any])
+    def setNewObjectMetadataUndefined: Self = StObject.set(x, "NewObjectMetadata", js.undefined)
     
     @scala.inline
-    def deleteModifiedSinceConstraint: Self = this.set("ModifiedSinceConstraint", js.undefined)
+    def setNewObjectTagging(value: S3TagSet): Self = StObject.set(x, "NewObjectTagging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewObjectMetadata(value: S3ObjectMetadata): Self = this.set("NewObjectMetadata", value.asInstanceOf[js.Any])
+    def setNewObjectTaggingUndefined: Self = StObject.set(x, "NewObjectTagging", js.undefined)
     
     @scala.inline
-    def deleteNewObjectMetadata: Self = this.set("NewObjectMetadata", js.undefined)
+    def setNewObjectTaggingVarargs(value: S3Tag*): Self = StObject.set(x, "NewObjectTagging", js.Array(value :_*))
     
     @scala.inline
-    def setNewObjectTaggingVarargs(value: S3Tag*): Self = this.set("NewObjectTagging", js.Array(value :_*))
+    def setObjectLockLegalHoldStatus(value: S3ObjectLockLegalHoldStatus): Self = StObject.set(x, "ObjectLockLegalHoldStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewObjectTagging(value: S3TagSet): Self = this.set("NewObjectTagging", value.asInstanceOf[js.Any])
+    def setObjectLockLegalHoldStatusUndefined: Self = StObject.set(x, "ObjectLockLegalHoldStatus", js.undefined)
     
     @scala.inline
-    def deleteNewObjectTagging: Self = this.set("NewObjectTagging", js.undefined)
+    def setObjectLockMode(value: S3ObjectLockMode): Self = StObject.set(x, "ObjectLockMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectLockLegalHoldStatus(value: S3ObjectLockLegalHoldStatus): Self = this.set("ObjectLockLegalHoldStatus", value.asInstanceOf[js.Any])
+    def setObjectLockModeUndefined: Self = StObject.set(x, "ObjectLockMode", js.undefined)
     
     @scala.inline
-    def deleteObjectLockLegalHoldStatus: Self = this.set("ObjectLockLegalHoldStatus", js.undefined)
+    def setObjectLockRetainUntilDate(value: TimeStamp): Self = StObject.set(x, "ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectLockMode(value: S3ObjectLockMode): Self = this.set("ObjectLockMode", value.asInstanceOf[js.Any])
+    def setObjectLockRetainUntilDateUndefined: Self = StObject.set(x, "ObjectLockRetainUntilDate", js.undefined)
     
     @scala.inline
-    def deleteObjectLockMode: Self = this.set("ObjectLockMode", js.undefined)
+    def setRedirectLocation(value: NonEmptyMaxLength2048String): Self = StObject.set(x, "RedirectLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectLockRetainUntilDate(value: TimeStamp): Self = this.set("ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
+    def setRedirectLocationUndefined: Self = StObject.set(x, "RedirectLocation", js.undefined)
     
     @scala.inline
-    def deleteObjectLockRetainUntilDate: Self = this.set("ObjectLockRetainUntilDate", js.undefined)
+    def setRequesterPays(value: Boolean): Self = StObject.set(x, "RequesterPays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectLocation(value: NonEmptyMaxLength2048String): Self = this.set("RedirectLocation", value.asInstanceOf[js.Any])
+    def setRequesterPaysUndefined: Self = StObject.set(x, "RequesterPays", js.undefined)
     
     @scala.inline
-    def deleteRedirectLocation: Self = this.set("RedirectLocation", js.undefined)
+    def setSSEAwsKmsKeyId(value: KmsKeyArnString): Self = StObject.set(x, "SSEAwsKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequesterPays(value: Boolean): Self = this.set("RequesterPays", value.asInstanceOf[js.Any])
+    def setSSEAwsKmsKeyIdUndefined: Self = StObject.set(x, "SSEAwsKmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteRequesterPays: Self = this.set("RequesterPays", js.undefined)
+    def setStorageClass(value: S3StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSEAwsKmsKeyId(value: KmsKeyArnString): Self = this.set("SSEAwsKmsKeyId", value.asInstanceOf[js.Any])
+    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     
     @scala.inline
-    def deleteSSEAwsKmsKeyId: Self = this.set("SSEAwsKmsKeyId", js.undefined)
+    def setTargetKeyPrefix(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "TargetKeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageClass(value: S3StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    def setTargetKeyPrefixUndefined: Self = StObject.set(x, "TargetKeyPrefix", js.undefined)
     
     @scala.inline
-    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    def setTargetResource(value: S3BucketArnString): Self = StObject.set(x, "TargetResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetKeyPrefix(value: NonEmptyMaxLength1024String): Self = this.set("TargetKeyPrefix", value.asInstanceOf[js.Any])
+    def setTargetResourceUndefined: Self = StObject.set(x, "TargetResource", js.undefined)
     
     @scala.inline
-    def deleteTargetKeyPrefix: Self = this.set("TargetKeyPrefix", js.undefined)
+    def setUnModifiedSinceConstraint(value: TimeStamp): Self = StObject.set(x, "UnModifiedSinceConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetResource(value: S3BucketArnString): Self = this.set("TargetResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetResource: Self = this.set("TargetResource", js.undefined)
-    
-    @scala.inline
-    def setUnModifiedSinceConstraint(value: TimeStamp): Self = this.set("UnModifiedSinceConstraint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnModifiedSinceConstraint: Self = this.set("UnModifiedSinceConstraint", js.undefined)
+    def setUnModifiedSinceConstraintUndefined: Self = StObject.set(x, "UnModifiedSinceConstraint", js.undefined)
   }
 }

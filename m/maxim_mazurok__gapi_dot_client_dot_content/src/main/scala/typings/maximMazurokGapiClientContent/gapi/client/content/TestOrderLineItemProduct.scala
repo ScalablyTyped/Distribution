@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestOrderLineItemProduct extends js.Object {
+trait TestOrderLineItemProduct extends StObject {
   
   /** Required. Brand of the item. */
   var brand: js.UndefOr[String] = js.native
@@ -58,102 +59,90 @@ object TestOrderLineItemProduct {
   }
   
   @scala.inline
-  implicit class TestOrderLineItemProductOps[Self <: TestOrderLineItemProduct] (val x: Self) extends AnyVal {
+  implicit class TestOrderLineItemProductMutableBuilder[Self <: TestOrderLineItemProduct] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def deleteBrand: Self = this.set("brand", js.undefined)
+    def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setFees(value: js.Array[OrderLineItemProductFee]): Self = StObject.set(x, "fees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    def setFeesUndefined: Self = StObject.set(x, "fees", js.undefined)
     
     @scala.inline
-    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
+    def setFeesVarargs(value: OrderLineItemProductFee*): Self = StObject.set(x, "fees", js.Array(value :_*))
     
     @scala.inline
-    def setFeesVarargs(value: OrderLineItemProductFee*): Self = this.set("fees", js.Array(value :_*))
+    def setGtin(value: String): Self = StObject.set(x, "gtin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFees(value: js.Array[OrderLineItemProductFee]): Self = this.set("fees", value.asInstanceOf[js.Any])
+    def setGtinUndefined: Self = StObject.set(x, "gtin", js.undefined)
     
     @scala.inline
-    def deleteFees: Self = this.set("fees", js.undefined)
+    def setImageLink(value: String): Self = StObject.set(x, "imageLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGtin(value: String): Self = this.set("gtin", value.asInstanceOf[js.Any])
+    def setImageLinkUndefined: Self = StObject.set(x, "imageLink", js.undefined)
     
     @scala.inline
-    def deleteGtin: Self = this.set("gtin", js.undefined)
+    def setItemGroupId(value: String): Self = StObject.set(x, "itemGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageLink(value: String): Self = this.set("imageLink", value.asInstanceOf[js.Any])
+    def setItemGroupIdUndefined: Self = StObject.set(x, "itemGroupId", js.undefined)
     
     @scala.inline
-    def deleteImageLink: Self = this.set("imageLink", js.undefined)
+    def setMpn(value: String): Self = StObject.set(x, "mpn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemGroupId(value: String): Self = this.set("itemGroupId", value.asInstanceOf[js.Any])
+    def setMpnUndefined: Self = StObject.set(x, "mpn", js.undefined)
     
     @scala.inline
-    def deleteItemGroupId: Self = this.set("itemGroupId", js.undefined)
+    def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpn(value: String): Self = this.set("mpn", value.asInstanceOf[js.Any])
+    def setOfferIdUndefined: Self = StObject.set(x, "offerId", js.undefined)
     
     @scala.inline
-    def deleteMpn: Self = this.set("mpn", js.undefined)
+    def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferId(value: String): Self = this.set("offerId", value.asInstanceOf[js.Any])
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
     @scala.inline
-    def deleteOfferId: Self = this.set("offerId", js.undefined)
+    def setTargetCountry(value: String): Self = StObject.set(x, "targetCountry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: Price): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setTargetCountryUndefined: Self = StObject.set(x, "targetCountry", js.undefined)
     
     @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetCountry(value: String): Self = this.set("targetCountry", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTargetCountry: Self = this.set("targetCountry", js.undefined)
+    def setVariantAttributes(value: js.Array[OrderLineItemProductVariantAttribute]): Self = StObject.set(x, "variantAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setVariantAttributesUndefined: Self = StObject.set(x, "variantAttributes", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVariantAttributesVarargs(value: OrderLineItemProductVariantAttribute*): Self = this.set("variantAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariantAttributes(value: js.Array[OrderLineItemProductVariantAttribute]): Self = this.set("variantAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariantAttributes: Self = this.set("variantAttributes", js.undefined)
+    def setVariantAttributesVarargs(value: OrderLineItemProductVariantAttribute*): Self = StObject.set(x, "variantAttributes", js.Array(value :_*))
   }
 }

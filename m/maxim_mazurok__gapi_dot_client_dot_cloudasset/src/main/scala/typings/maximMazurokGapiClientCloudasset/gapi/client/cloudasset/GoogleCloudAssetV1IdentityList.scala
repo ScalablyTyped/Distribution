@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudAssetV1IdentityList extends js.Object {
+trait GoogleCloudAssetV1IdentityList extends StObject {
   
   /**
     * Group identity edges of the graph starting from the binding's group members to any node of the identities. The Edge.source_node contains a group, such as `group:parent@google.com`.
@@ -29,36 +30,24 @@ object GoogleCloudAssetV1IdentityList {
   }
   
   @scala.inline
-  implicit class GoogleCloudAssetV1IdentityListOps[Self <: GoogleCloudAssetV1IdentityList] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudAssetV1IdentityListMutableBuilder[Self <: GoogleCloudAssetV1IdentityList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = StObject.set(x, "groupEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupEdgesUndefined: Self = StObject.set(x, "groupEdges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "groupEdges", js.Array(value :_*))
     
     @scala.inline
-    def setGroupEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = this.set("groupEdges", js.Array(value :_*))
+    def setIdentities(value: js.Array[GoogleCloudAssetV1Identity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = this.set("groupEdges", value.asInstanceOf[js.Any])
+    def setIdentitiesUndefined: Self = StObject.set(x, "identities", js.undefined)
     
     @scala.inline
-    def deleteGroupEdges: Self = this.set("groupEdges", js.undefined)
-    
-    @scala.inline
-    def setIdentitiesVarargs(value: GoogleCloudAssetV1Identity*): Self = this.set("identities", js.Array(value :_*))
-    
-    @scala.inline
-    def setIdentities(value: js.Array[GoogleCloudAssetV1Identity]): Self = this.set("identities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentities: Self = this.set("identities", js.undefined)
+    def setIdentitiesVarargs(value: GoogleCloudAssetV1Identity*): Self = StObject.set(x, "identities", js.Array(value :_*))
   }
 }

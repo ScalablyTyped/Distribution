@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait NamedItemLoadOptions extends js.Object {
+trait NamedItemLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -108,84 +109,72 @@ object NamedItemLoadOptions {
   }
   
   @scala.inline
-  implicit class NamedItemLoadOptionsOps[Self <: NamedItemLoadOptions] (val x: Self) extends AnyVal {
+  implicit class NamedItemLoadOptionsMutableBuilder[Self <: NamedItemLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayValues(value: NamedItemArrayValuesLoadOptions): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayValues(value: NamedItemArrayValuesLoadOptions): Self = this.set("arrayValues", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteArrayValues: Self = this.set("arrayValues", js.undefined)
+    def setFormula(value: Boolean): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: Boolean): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: Boolean): Self = this.set("formula", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
+    def setScope(value: Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: Boolean): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Boolean): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: Boolean): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setWorksheet(value: WorksheetLoadOptions): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setWorksheetOrNullObject(value: WorksheetLoadOptions): Self = StObject.set(x, "worksheetOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setWorksheetOrNullObjectUndefined: Self = StObject.set(x, "worksheetOrNullObject", js.undefined)
     
     @scala.inline
-    def setWorksheet(value: WorksheetLoadOptions): Self = this.set("worksheet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorksheet: Self = this.set("worksheet", js.undefined)
-    
-    @scala.inline
-    def setWorksheetOrNullObject(value: WorksheetLoadOptions): Self = this.set("worksheetOrNullObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorksheetOrNullObject: Self = this.set("worksheetOrNullObject", js.undefined)
+    def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
   }
 }

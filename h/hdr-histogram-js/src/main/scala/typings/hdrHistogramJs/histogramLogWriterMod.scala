@@ -1,16 +1,21 @@
 package typings.hdrHistogramJs
 
 import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hdr-histogram-js/HistogramLogWriter", JSImport.Namespace)
-@js.native
-object histogramLogWriterMod extends js.Object {
+object histogramLogWriterMod {
+  
+  @JSImport("hdr-histogram-js/HistogramLogWriter", JSImport.Default)
+  @js.native
+  class default protected () extends HistogramLogWriter {
+    def this(log: Writable) = this()
+  }
   
   @js.native
-  trait HistogramLogWriter extends js.Object {
+  trait HistogramLogWriter extends StObject {
     
     /**
       * Base time to subtract from supplied histogram start/end timestamps when
@@ -88,11 +93,6 @@ object histogramLogWriterMod extends js.Object {
       * @param startTimeMsec time (in milliseconds) since the absolute start time (the epoch)
       */
     def outputStartTime(startTimeMsec: Double): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends HistogramLogWriter {
-    def this(log: Writable) = this()
   }
   
   type Writable = js.Function1[/* c */ String, Unit]

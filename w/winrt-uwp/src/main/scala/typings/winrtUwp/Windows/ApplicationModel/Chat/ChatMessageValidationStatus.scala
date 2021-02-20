@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatMessageValidationStatus extends js.Object
+sealed trait ChatMessageValidationStatus extends StObject
 /** Specifies the validation state of a chat message such as valid, no recipients, or too many attachments. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageValidationStatus")
 @js.native
-object ChatMessageValidationStatus extends js.Object {
+object ChatMessageValidationStatus extends StObject {
   
   /** Invalid body */
   @js.native

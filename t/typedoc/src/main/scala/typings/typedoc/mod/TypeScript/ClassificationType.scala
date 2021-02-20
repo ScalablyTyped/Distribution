@@ -1,12 +1,13 @@
 package typings.typedoc.mod.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.ClassificationType")
 @js.native
-object ClassificationType extends js.Object {
+object ClassificationType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescript.mod.ClassificationType with Double] = js.native

@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.universalCameraMod.UniversalCamera
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/Stereoscopic/anaglyphUniversalCamera", JSImport.Namespace)
-@js.native
-object anaglyphUniversalCameraMod extends js.Object {
+object anaglyphUniversalCameraMod {
   
+  @JSImport("babylonjs/Cameras/Stereoscopic/anaglyphUniversalCamera", "AnaglyphUniversalCamera")
   @js.native
   class AnaglyphUniversalCamera protected () extends UniversalCamera {
     /**

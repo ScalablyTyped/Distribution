@@ -2,12 +2,13 @@ package typings.sammy
 
 import typings.sammy.Sammy.Application
 import typings.sammy.Sammy.SammyFunc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
   
   var log: js.Function = js.native
   

@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryRequest extends js.Object {
+trait QueryRequest extends StObject {
   
   var defaultDataset: js.UndefOr[DatasetReference] = js.native
   
@@ -40,93 +41,81 @@ object QueryRequest {
   }
   
   @scala.inline
-  implicit class QueryRequestOps[Self <: QueryRequest] (val x: Self) extends AnyVal {
+  implicit class QueryRequestMutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultDataset(value: DatasetReference): Self = StObject.set(x, "defaultDataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultDatasetUndefined: Self = StObject.set(x, "defaultDataset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDataset(value: DatasetReference): Self = this.set("defaultDataset", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def deleteDefaultDataset: Self = this.set("defaultDataset", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setParameterMode(value: String): Self = StObject.set(x, "parameterMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setParameterModeUndefined: Self = StObject.set(x, "parameterMode", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setPreserveNulls(value: Boolean): Self = StObject.set(x, "preserveNulls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterMode(value: String): Self = this.set("parameterMode", value.asInstanceOf[js.Any])
+    def setPreserveNullsUndefined: Self = StObject.set(x, "preserveNulls", js.undefined)
     
     @scala.inline
-    def deleteParameterMode: Self = this.set("parameterMode", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveNulls(value: Boolean): Self = this.set("preserveNulls", value.asInstanceOf[js.Any])
+    def setQueryParameters(value: js.Array[QueryParameter]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreserveNulls: Self = this.set("preserveNulls", js.undefined)
+    def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "queryParameters", js.Array(value :_*))
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def setQueryParametersVarargs(value: QueryParameter*): Self = this.set("queryParameters", js.Array(value :_*))
+    def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParameters(value: js.Array[QueryParameter]): Self = this.set("queryParameters", value.asInstanceOf[js.Any])
+    def setTimeoutMsUndefined: Self = StObject.set(x, "timeoutMs", js.undefined)
     
     @scala.inline
-    def deleteQueryParameters: Self = this.set("queryParameters", js.undefined)
+    def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutMs(value: Double): Self = this.set("timeoutMs", value.asInstanceOf[js.Any])
+    def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
     
     @scala.inline
-    def deleteTimeoutMs: Self = this.set("timeoutMs", js.undefined)
+    def setUseQueryCache(value: Boolean): Self = StObject.set(x, "useQueryCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseLegacySql(value: Boolean): Self = this.set("useLegacySql", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLegacySql: Self = this.set("useLegacySql", js.undefined)
-    
-    @scala.inline
-    def setUseQueryCache(value: Boolean): Self = this.set("useQueryCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseQueryCache: Self = this.set("useQueryCache", js.undefined)
+    def setUseQueryCacheUndefined: Self = StObject.set(x, "useQueryCache", js.undefined)
   }
 }

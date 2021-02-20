@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.Match
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Timeline extends js.Object {
+trait Timeline extends StObject {
   
   var frameInverval: Double = js.native
   
@@ -20,27 +21,15 @@ object Timeline {
   }
   
   @scala.inline
-  implicit class TimelineOps[Self <: Timeline] (val x: Self) extends AnyVal {
+  implicit class TimelineMutableBuilder[Self <: Timeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameInverval(value: Double): Self = StObject.set(x, "frameInverval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrameInverval(value: Double): Self = this.set("frameInverval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFramesVarargs(value: Frame*): Self = this.set("frames", js.Array(value :_*))
-    
-    @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
   }
 }

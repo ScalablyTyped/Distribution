@@ -2,6 +2,7 @@ package typings.angularCompiler.compilerMod
 
 import typings.angularCompiler.templateAstMod.QueryMatch
 import typings.angularCompiler.templateAstMod.TemplateAst
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

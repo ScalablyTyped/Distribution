@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mp2Settings extends js.Object {
+trait Mp2Settings extends StObject {
   
   /**
     * Specify the average bitrate in bits per second.
@@ -31,36 +32,24 @@ object Mp2Settings {
   }
   
   @scala.inline
-  implicit class Mp2SettingsOps[Self <: Mp2Settings] (val x: Self) extends AnyVal {
+  implicit class Mp2SettingsMutableBuilder[Self <: Mp2Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrate(value: integerMin32000Max384000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannels(value: integerMin1Max2): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrate(value: integerMin32000Max384000): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
     @scala.inline
-    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    def setSampleRate(value: integerMin32000Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: integerMin1Max2): Self = this.set("Channels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannels: Self = this.set("Channels", js.undefined)
-    
-    @scala.inline
-    def setSampleRate(value: integerMin32000Max48000): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

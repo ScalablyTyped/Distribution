@@ -1,16 +1,16 @@
 package typings.imageQ
 
 import typings.imageQ.pointContainerMod.PointContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/palette/rgbquant/colorHistogram", JSImport.Namespace)
-@js.native
-object colorHistogramMod extends js.Object {
+object colorHistogramMod {
   
+  @JSImport("image-q/dist/palette/rgbquant/colorHistogram", "ColorHistogram")
   @js.native
-  class ColorHistogram protected () extends js.Object {
+  class ColorHistogram protected () extends StObject {
     def this(method: Double, colors: Double) = this()
     
     /* private */ def _colorStats1D(pointBuffer: js.Any): js.Any = js.native
@@ -40,13 +40,28 @@ object colorHistogramMod extends js.Object {
     def sample(pointBuffer: PointContainer): Unit = js.native
   }
   /* static members */
-  @js.native
-  object ColorHistogram extends js.Object {
+  object ColorHistogram {
     
-    var _boxPixels: js.Any = js.native
+    @JSImport("image-q/dist/palette/rgbquant/colorHistogram", "ColorHistogram")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _boxSize: js.Any = js.native
+    @JSImport("image-q/dist/palette/rgbquant/colorHistogram", "ColorHistogram._boxPixels")
+    @js.native
+    def _boxPixels: js.Any = js.native
+    @scala.inline
+    def _boxPixels_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_boxPixels")(x.asInstanceOf[js.Any])
     
-    var _hueGroups: js.Any = js.native
+    @JSImport("image-q/dist/palette/rgbquant/colorHistogram", "ColorHistogram._boxSize")
+    @js.native
+    def _boxSize: js.Any = js.native
+    @scala.inline
+    def _boxSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_boxSize")(x.asInstanceOf[js.Any])
+    
+    @JSImport("image-q/dist/palette/rgbquant/colorHistogram", "ColorHistogram._hueGroups")
+    @js.native
+    def _hueGroups: js.Any = js.native
+    @scala.inline
+    def _hueGroups_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_hueGroups")(x.asInstanceOf[js.Any])
   }
 }

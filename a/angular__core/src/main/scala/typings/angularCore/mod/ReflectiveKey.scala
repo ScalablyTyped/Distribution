@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ReflectiveKey")
 @js.native
-class ReflectiveKey protected () extends js.Object {
+class ReflectiveKey protected () extends StObject {
   /**
     * Private
     */
@@ -19,17 +20,12 @@ class ReflectiveKey protected () extends js.Object {
   var token: js.Object = js.native
 }
 /* static members */
-@JSImport("@angular/core", "ReflectiveKey")
-@js.native
-object ReflectiveKey extends js.Object {
+object ReflectiveKey {
   
   /**
     * Retrieves a `Key` for a token.
     */
+  @JSImport("@angular/core", "ReflectiveKey.get")
+  @js.native
   def get(token: js.Object): ReflectiveKey = js.native
-  
-  /**
-    * @returns the number of keys registered in the system.
-    */
-  def numberOfKeys: Double = js.native
 }

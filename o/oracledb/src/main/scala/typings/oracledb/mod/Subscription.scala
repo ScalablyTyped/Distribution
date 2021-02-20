@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since 4.0
   */
 @js.native
-trait Subscription extends js.Object {
+trait Subscription extends StObject {
   
   /**
     * Value of REGID in the database view USER_CHANGE_NOTIFICATION_REGS or the value of REG_ID in USER_SUBSCR_REGISTRATIONS.
@@ -29,24 +30,12 @@ object Subscription {
   }
   
   @scala.inline
-  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegId(value: String): Self = StObject.set(x, "regId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRegId(value: String): Self = this.set("regId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegId: Self = this.set("regId", js.undefined)
+    def setRegIdUndefined: Self = StObject.set(x, "regId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProductInput extends js.Object {
+trait CreateProductInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -82,78 +83,66 @@ object CreateProductInput {
   }
   
   @scala.inline
-  implicit class CreateProductInputOps[Self <: CreateProductInput] (val x: Self) extends AnyVal {
+  implicit class CreateProductInputMutableBuilder[Self <: CreateProductInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: ProductViewShortDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setName(value: ProductViewName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDistributor(value: ProductViewOwner): Self = StObject.set(x, "Distributor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: ProductViewOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setDistributorUndefined: Self = StObject.set(x, "Distributor", js.undefined)
     
     @scala.inline
-    def setProductType(value: ProductType): Self = this.set("ProductType", value.asInstanceOf[js.Any])
+    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningArtifactParameters(value: ProvisioningArtifactProperties): Self = this.set("ProvisioningArtifactParameters", value.asInstanceOf[js.Any])
+    def setName(value: ProductViewName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    def setOwner(value: ProductViewOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    def setProductType(value: ProductType): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: ProductViewShortDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setProvisioningArtifactParameters(value: ProvisioningArtifactProperties): Self = StObject.set(x, "ProvisioningArtifactParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setSupportDescription(value: SupportDescription): Self = StObject.set(x, "SupportDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributor(value: ProductViewOwner): Self = this.set("Distributor", value.asInstanceOf[js.Any])
+    def setSupportDescriptionUndefined: Self = StObject.set(x, "SupportDescription", js.undefined)
     
     @scala.inline
-    def deleteDistributor: Self = this.set("Distributor", js.undefined)
+    def setSupportEmail(value: SupportEmail): Self = StObject.set(x, "SupportEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportDescription(value: SupportDescription): Self = this.set("SupportDescription", value.asInstanceOf[js.Any])
+    def setSupportEmailUndefined: Self = StObject.set(x, "SupportEmail", js.undefined)
     
     @scala.inline
-    def deleteSupportDescription: Self = this.set("SupportDescription", js.undefined)
+    def setSupportUrl(value: SupportUrl): Self = StObject.set(x, "SupportUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportEmail(value: SupportEmail): Self = this.set("SupportEmail", value.asInstanceOf[js.Any])
+    def setSupportUrlUndefined: Self = StObject.set(x, "SupportUrl", js.undefined)
     
     @scala.inline
-    def deleteSupportEmail: Self = this.set("SupportEmail", js.undefined)
+    def setTags(value: AddTags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportUrl(value: SupportUrl): Self = this.set("SupportUrl", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSupportUrl: Self = this.set("SupportUrl", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: AddTags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

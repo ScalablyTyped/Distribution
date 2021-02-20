@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes HTTPSTrigger, could be used to connect web hooks to function.
   */
 @js.native
-trait SchemaHTTPSTrigger extends js.Object {
+trait SchemaHTTPSTrigger extends StObject {
   
   /**
     * Output only. The deployed url for the function.
@@ -24,24 +25,12 @@ object SchemaHTTPSTrigger {
   }
   
   @scala.inline
-  implicit class SchemaHTTPSTriggerOps[Self <: SchemaHTTPSTrigger] (val x: Self) extends AnyVal {
+  implicit class SchemaHTTPSTriggerMutableBuilder[Self <: SchemaHTTPSTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

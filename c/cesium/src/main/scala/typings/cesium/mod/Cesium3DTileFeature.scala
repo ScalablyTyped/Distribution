@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Cesium3DTileFeature")
 @js.native
-class Cesium3DTileFeature () extends js.Object {
+class Cesium3DTileFeature () extends StObject {
   
   var color: Color = js.native
   

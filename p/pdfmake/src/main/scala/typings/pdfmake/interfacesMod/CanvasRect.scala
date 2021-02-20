@@ -1,6 +1,7 @@
 package typings.pdfmake.interfacesMod
 
 import typings.pdfmake.pdfmakeStrings.rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,39 +34,27 @@ object CanvasRect {
   }
   
   @scala.inline
-  implicit class CanvasRectOps[Self <: CanvasRect] (val x: Self) extends AnyVal {
+  implicit class CanvasRectMutableBuilder[Self <: CanvasRect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     @scala.inline
-    def setH(value: Double): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setType(value: rect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: rect): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: Double): Self = this.set("w", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

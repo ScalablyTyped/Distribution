@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemediationParameterValue extends js.Object {
+trait RemediationParameterValue extends StObject {
   
   /**
     * The value is dynamic and changes at run-time.
@@ -26,30 +27,18 @@ object RemediationParameterValue {
   }
   
   @scala.inline
-  implicit class RemediationParameterValueOps[Self <: RemediationParameterValue] (val x: Self) extends AnyVal {
+  implicit class RemediationParameterValueMutableBuilder[Self <: RemediationParameterValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceValue(value: ResourceValue): Self = StObject.set(x, "ResourceValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceValueUndefined: Self = StObject.set(x, "ResourceValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStaticValue(value: StaticValue): Self = StObject.set(x, "StaticValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceValue(value: ResourceValue): Self = this.set("ResourceValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceValue: Self = this.set("ResourceValue", js.undefined)
-    
-    @scala.inline
-    def setStaticValue(value: StaticValue): Self = this.set("StaticValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticValue: Self = this.set("StaticValue", js.undefined)
+    def setStaticValueUndefined: Self = StObject.set(x, "StaticValue", js.undefined)
   }
 }

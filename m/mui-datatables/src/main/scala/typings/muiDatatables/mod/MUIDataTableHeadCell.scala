@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableHeadCell extends js.Object {
+trait MUIDataTableHeadCell extends StObject {
   
   var children: js.UndefOr[js.Any] = js.native
   
@@ -32,48 +33,36 @@ object MUIDataTableHeadCell {
   }
   
   @scala.inline
-  implicit class MUIDataTableHeadCellOps[Self <: MUIDataTableHeadCell] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableHeadCellMutableBuilder[Self <: MUIDataTableHeadCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: String): Self = this.set("hint", value.asInstanceOf[js.Any])
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: Boolean): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleSort(value: js.Any => js.Any): Self = this.set("toggleSort", js.Any.fromFunction1(value))
+    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Any): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setSortOrder(value: MUISortOptions): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
     @scala.inline
-    def setClasses(value: js.Object): Self = this.set("classes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: MUISortOptions): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    def setToggleSort(value: js.Any => js.Any): Self = StObject.set(x, "toggleSort", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListClosedWorkflowExecutionsInput extends js.Object {
+trait ListClosedWorkflowExecutionsInput extends StObject {
   
   /**
     * If specified, only workflow executions that match this close status are listed. For example, if TERMINATED is specified, then only TERMINATED workflow executions are listed.   closeStatusFilter, executionFilter, typeFilter and tagFilter are mutually exclusive. You can specify at most one of these in a request. 
@@ -66,75 +67,63 @@ object ListClosedWorkflowExecutionsInput {
   }
   
   @scala.inline
-  implicit class ListClosedWorkflowExecutionsInputOps[Self <: ListClosedWorkflowExecutionsInput] (val x: Self) extends AnyVal {
+  implicit class ListClosedWorkflowExecutionsInputMutableBuilder[Self <: ListClosedWorkflowExecutionsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseStatusFilter(value: CloseStatusFilter): Self = StObject.set(x, "closeStatusFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseStatusFilterUndefined: Self = StObject.set(x, "closeStatusFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseTimeFilter(value: ExecutionTimeFilter): Self = StObject.set(x, "closeTimeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setCloseTimeFilterUndefined: Self = StObject.set(x, "closeTimeFilter", js.undefined)
     
     @scala.inline
-    def setCloseStatusFilter(value: CloseStatusFilter): Self = this.set("closeStatusFilter", value.asInstanceOf[js.Any])
+    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseStatusFilter: Self = this.set("closeStatusFilter", js.undefined)
+    def setExecutionFilter(value: WorkflowExecutionFilter): Self = StObject.set(x, "executionFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseTimeFilter(value: ExecutionTimeFilter): Self = this.set("closeTimeFilter", value.asInstanceOf[js.Any])
+    def setExecutionFilterUndefined: Self = StObject.set(x, "executionFilter", js.undefined)
     
     @scala.inline
-    def deleteCloseTimeFilter: Self = this.set("closeTimeFilter", js.undefined)
+    def setMaximumPageSize(value: PageSize): Self = StObject.set(x, "maximumPageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionFilter(value: WorkflowExecutionFilter): Self = this.set("executionFilter", value.asInstanceOf[js.Any])
+    def setMaximumPageSizeUndefined: Self = StObject.set(x, "maximumPageSize", js.undefined)
     
     @scala.inline
-    def deleteExecutionFilter: Self = this.set("executionFilter", js.undefined)
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumPageSize(value: PageSize): Self = this.set("maximumPageSize", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteMaximumPageSize: Self = this.set("maximumPageSize", js.undefined)
+    def setReverseOrder(value: ReverseOrder): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setStartTimeFilter(value: ExecutionTimeFilter): Self = StObject.set(x, "startTimeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverseOrder(value: ReverseOrder): Self = this.set("reverseOrder", value.asInstanceOf[js.Any])
+    def setStartTimeFilterUndefined: Self = StObject.set(x, "startTimeFilter", js.undefined)
     
     @scala.inline
-    def deleteReverseOrder: Self = this.set("reverseOrder", js.undefined)
+    def setTagFilter(value: TagFilter): Self = StObject.set(x, "tagFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimeFilter(value: ExecutionTimeFilter): Self = this.set("startTimeFilter", value.asInstanceOf[js.Any])
+    def setTagFilterUndefined: Self = StObject.set(x, "tagFilter", js.undefined)
     
     @scala.inline
-    def deleteStartTimeFilter: Self = this.set("startTimeFilter", js.undefined)
+    def setTypeFilter(value: WorkflowTypeFilter): Self = StObject.set(x, "typeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagFilter(value: TagFilter): Self = this.set("tagFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagFilter: Self = this.set("tagFilter", js.undefined)
-    
-    @scala.inline
-    def setTypeFilter(value: WorkflowTypeFilter): Self = this.set("typeFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeFilter: Self = this.set("typeFilter", js.undefined)
+    def setTypeFilterUndefined: Self = StObject.set(x, "typeFilter", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IName extends js.Object {
+trait IName extends StObject {
   
   /** The culture of the region. */
   var Culture: String = js.native
@@ -25,27 +26,15 @@ object IName {
   }
   
   @scala.inline
-  implicit class INameOps[Self <: IName] (val x: Self) extends AnyVal {
+  implicit class INameMutableBuilder[Self <: IName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCulture(value: String): Self = StObject.set(x, "Culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityName(value: String): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCulture(value: String): Self = this.set("Culture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntityName(value: String): Self = this.set("EntityName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceID(value: String): Self = this.set("SourceID", value.asInstanceOf[js.Any])
+    def setSourceID(value: String): Self = StObject.set(x, "SourceID", value.asInstanceOf[js.Any])
   }
 }

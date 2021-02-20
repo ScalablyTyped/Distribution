@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitPullRequestSearchCriteria extends js.Object {
+trait GitPullRequestSearchCriteria extends StObject {
   
   /**
     * If set, search for pull requests that were created by this identity.
@@ -65,42 +66,30 @@ object GitPullRequestSearchCriteria {
   }
   
   @scala.inline
-  implicit class GitPullRequestSearchCriteriaOps[Self <: GitPullRequestSearchCriteria] (val x: Self) extends AnyVal {
+  implicit class GitPullRequestSearchCriteriaMutableBuilder[Self <: GitPullRequestSearchCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatorId(value: String): Self = StObject.set(x, "creatorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorId(value: String): Self = this.set("creatorId", value.asInstanceOf[js.Any])
+    def setReviewerId(value: String): Self = StObject.set(x, "reviewerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLinks(value: Boolean): Self = this.set("includeLinks", value.asInstanceOf[js.Any])
+    def setSourceRefName(value: String): Self = StObject.set(x, "sourceRefName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryId(value: String): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
+    def setSourceRepositoryId(value: String): Self = StObject.set(x, "sourceRepositoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewerId(value: String): Self = this.set("reviewerId", value.asInstanceOf[js.Any])
+    def setStatus(value: PullRequestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceRefName(value: String): Self = this.set("sourceRefName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceRepositoryId(value: String): Self = this.set("sourceRepositoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: PullRequestStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetRefName(value: String): Self = this.set("targetRefName", value.asInstanceOf[js.Any])
+    def setTargetRefName(value: String): Self = StObject.set(x, "targetRefName", value.asInstanceOf[js.Any])
   }
 }

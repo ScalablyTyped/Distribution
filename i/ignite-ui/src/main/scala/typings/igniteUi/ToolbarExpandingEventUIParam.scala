@@ -1,8 +1,9 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToolbarExpandingEventUIParam extends js.Object
+trait ToolbarExpandingEventUIParam extends StObject

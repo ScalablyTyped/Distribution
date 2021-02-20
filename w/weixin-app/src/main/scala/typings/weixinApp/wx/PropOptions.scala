@@ -1,11 +1,12 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropOptions[T] extends js.Object {
+trait PropOptions[T] extends StObject {
   
   // bug : 对于 type 为 Object 或 Array 的属性，如果通过该组件自身的 this.setData
   // 来改变属性值的一个子字段，则依旧会触发属性 observer ，且 observer 接收到的 newVal 是变化的那个子字段的值，
@@ -25,48 +26,36 @@ object PropOptions {
   }
   
   @scala.inline
-  implicit class PropOptionsOps[Self <: PropOptions[_], T] (val x: Self with PropOptions[T]) extends AnyVal {
+  implicit class PropOptionsMutableBuilder[Self <: PropOptions[_], T] (val x: Self with PropOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObserver(value: (/* value */ T, /* old */ T, /* changedPath */ String) => Unit): Self = StObject.set(x, "observer", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: Prop[T] | js.Array[Prop[T]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserver(value: (/* value */ T, /* old */ T, /* changedPath */ String) => Unit): Self = this.set("observer", js.Any.fromFunction3(value))
+    def setTypeFunction0(value: () => T): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteObserver: Self = this.set("observer", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setTypeVarargs(value: Prop[T]*): Self = this.set("type", js.Array(value :_*))
+    def setTypeVarargs(value: Prop[T]*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def setTypeFunction0(value: () => T): Self = this.set("type", js.Any.fromFunction0(value))
+    def setValue(value: T | js.Function0[js.Object]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Prop[T] | js.Array[Prop[T]]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValueFunction0(value: () => js.Object): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def setValueFunction0(value: () => js.Object): Self = this.set("value", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValue(value: T | js.Function0[js.Object]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

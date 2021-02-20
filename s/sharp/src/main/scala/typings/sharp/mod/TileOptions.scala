@@ -1,11 +1,12 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileOptions extends js.Object {
+trait TileOptions extends StObject {
   
   /** Tile angle of rotation, must be a multiple of 90. (optional, default 0) */
   var angle: js.UndefOr[Double] = js.native
@@ -40,66 +41,54 @@ object TileOptions {
   }
   
   @scala.inline
-  implicit class TileOptionsOps[Self <: TileOptions] (val x: Self) extends AnyVal {
+  implicit class TileOptionsMutableBuilder[Self <: TileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackground(value: String | RGBA): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String | RGBA): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setLayout(value: TileLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: String): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setOverlap(value: Double): Self = StObject.set(x, "overlap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: TileLayout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setOverlapUndefined: Self = StObject.set(x, "overlap", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlap(value: Double): Self = this.set("overlap", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteOverlap: Self = this.set("overlap", js.undefined)
+    def setSkipBlanks(value: Double): Self = StObject.set(x, "skipBlanks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setSkipBlanks(value: Double): Self = this.set("skipBlanks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipBlanks: Self = this.set("skipBlanks", js.undefined)
+    def setSkipBlanksUndefined: Self = StObject.set(x, "skipBlanks", js.undefined)
   }
 }

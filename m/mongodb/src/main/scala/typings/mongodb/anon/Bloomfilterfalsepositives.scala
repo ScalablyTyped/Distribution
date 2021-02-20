@@ -1,11 +1,12 @@
 package typings.mongodb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bloomfilterfalsepositives extends js.Object {
+trait Bloomfilterfalsepositives extends StObject {
   
   var `bloom filter false positives`: Double = js.native
   
@@ -65,54 +66,42 @@ object Bloomfilterfalsepositives {
   }
   
   @scala.inline
-  implicit class BloomfilterfalsepositivesOps[Self <: Bloomfilterfalsepositives] (val x: Self) extends AnyVal {
+  implicit class BloomfilterfalsepositivesMutableBuilder[Self <: Bloomfilterfalsepositives] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setBloom filter false positives`(value: Double): Self = StObject.set(x, "bloom filter false positives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setBloom filter hits`(value: Double): Self = StObject.set(x, "bloom filter hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setBloom filter misses`(value: Double): Self = StObject.set(x, "bloom filter misses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBloom filter false positives`(value: Double): Self = this.set("bloom filter false positives", value.asInstanceOf[js.Any])
+    def `setBloom filter pages evicted from cache`(value: Double): Self = StObject.set(x, "bloom filter pages evicted from cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBloom filter hits`(value: Double): Self = this.set("bloom filter hits", value.asInstanceOf[js.Any])
+    def `setBloom filter pages read into cache`(value: Double): Self = StObject.set(x, "bloom filter pages read into cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBloom filter misses`(value: Double): Self = this.set("bloom filter misses", value.asInstanceOf[js.Any])
+    def `setBloom filters in the LSM tree`(value: Double): Self = StObject.set(x, "bloom filters in the LSM tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBloom filter pages evicted from cache`(value: Double): Self = this.set("bloom filter pages evicted from cache", value.asInstanceOf[js.Any])
+    def `setChunks in the LSM tree`(value: Double): Self = StObject.set(x, "chunks in the LSM tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBloom filter pages read into cache`(value: Double): Self = this.set("bloom filter pages read into cache", value.asInstanceOf[js.Any])
+    def `setHighest merge generation in the LSM tree`(value: Double): Self = StObject.set(x, "highest merge generation in the LSM tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBloom filters in the LSM tree`(value: Double): Self = this.set("bloom filters in the LSM tree", value.asInstanceOf[js.Any])
+    def `setQueries that could have benefited from a Bloom filter that did not exist`(value: Double): Self = StObject.set(x, "queries that could have benefited from a Bloom filter that did not exist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setChunks in the LSM tree`(value: Double): Self = this.set("chunks in the LSM tree", value.asInstanceOf[js.Any])
+    def `setSleep for LSM checkpoint throttle`(value: Double): Self = StObject.set(x, "sleep for LSM checkpoint throttle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setHighest merge generation in the LSM tree`(value: Double): Self = this.set("highest merge generation in the LSM tree", value.asInstanceOf[js.Any])
+    def `setSleep for LSM merge throttle`(value: Double): Self = StObject.set(x, "sleep for LSM merge throttle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setQueries that could have benefited from a Bloom filter that did not exist`(value: Double): Self = this.set("queries that could have benefited from a Bloom filter that did not exist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setSleep for LSM checkpoint throttle`(value: Double): Self = this.set("sleep for LSM checkpoint throttle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setSleep for LSM merge throttle`(value: Double): Self = this.set("sleep for LSM merge throttle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setTotal size of bloom filters`(value: Double): Self = this.set("total size of bloom filters", value.asInstanceOf[js.Any])
+    def `setTotal size of bloom filters`(value: Double): Self = StObject.set(x, "total size of bloom filters", value.asInstanceOf[js.Any])
   }
 }

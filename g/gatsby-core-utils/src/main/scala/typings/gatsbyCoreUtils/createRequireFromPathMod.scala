@@ -1,12 +1,18 @@
 package typings.gatsbyCoreUtils
 
+import typings.node.NodeRequire
+import typings.node.urlMod.URL_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gatsby-core-utils/dist/create-require-from-path", JSImport.Namespace)
-@js.native
-object createRequireFromPathMod extends js.Object {
+object createRequireFromPathMod {
   
-  val createRequireFromPath: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Module.createRequire */ js.Any = js.native
+  @JSImport("gatsby-core-utils/dist/create-require-from-path", "createRequireFromPath")
+  @js.native
+  def createRequireFromPath(path: String): NodeRequire = js.native
+  @JSImport("gatsby-core-utils/dist/create-require-from-path", "createRequireFromPath")
+  @js.native
+  def createRequireFromPath(path: URL_): NodeRequire = js.native
 }

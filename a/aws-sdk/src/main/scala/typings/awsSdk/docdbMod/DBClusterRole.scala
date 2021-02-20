@@ -1,11 +1,12 @@
 package typings.awsSdk.docdbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBClusterRole extends js.Object {
+trait DBClusterRole extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that is associated with the DB cluster.
@@ -26,30 +27,18 @@ object DBClusterRole {
   }
   
   @scala.inline
-  implicit class DBClusterRoleOps[Self <: DBClusterRole] (val x: Self) extends AnyVal {
+  implicit class DBClusterRoleMutableBuilder[Self <: DBClusterRole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: String): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.octokitTypes.octokitTypesStrings.maintain
 import typings.octokitTypes.octokitTypesStrings.pull
 import typings.octokitTypes.octokitTypesStrings.push
 import typings.octokitTypes.octokitTypesStrings.triage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamsAddOrUpdateRepoPermissionsInOrgEndpoint extends js.Object {
+trait TeamsAddOrUpdateRepoPermissionsInOrgEndpoint extends StObject {
   
   @JSName("org")
   var org_ : String = js.native
@@ -43,36 +44,24 @@ object TeamsAddOrUpdateRepoPermissionsInOrgEndpoint {
   }
   
   @scala.inline
-  implicit class TeamsAddOrUpdateRepoPermissionsInOrgEndpointOps[Self <: TeamsAddOrUpdateRepoPermissionsInOrgEndpoint] (val x: Self) extends AnyVal {
+  implicit class TeamsAddOrUpdateRepoPermissionsInOrgEndpointMutableBuilder[Self <: TeamsAddOrUpdateRepoPermissionsInOrgEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermission(value: pull | push | admin | maintain | triage): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrg_(value: String): Self = this.set("org", value.asInstanceOf[js.Any])
+    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeam_slug(value: String): Self = this.set("team_slug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermission(value: pull | push | admin | maintain | triage): Self = this.set("permission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermission: Self = this.set("permission", js.undefined)
+    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

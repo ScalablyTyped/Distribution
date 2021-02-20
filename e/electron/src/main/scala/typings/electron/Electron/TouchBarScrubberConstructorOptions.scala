@@ -5,12 +5,13 @@ import typings.electron.electronStrings.fixed
 import typings.electron.electronStrings.free
 import typings.electron.electronStrings.none
 import typings.electron.electronStrings.outline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TouchBarScrubberConstructorOptions extends js.Object {
+trait TouchBarScrubberConstructorOptions extends StObject {
   
   /**
     * Defaults to `true`.
@@ -63,66 +64,54 @@ object TouchBarScrubberConstructorOptions {
   }
   
   @scala.inline
-  implicit class TouchBarScrubberConstructorOptionsOps[Self <: TouchBarScrubberConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class TouchBarScrubberConstructorOptionsMutableBuilder[Self <: TouchBarScrubberConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlight(value: /* highlightedIndex */ Double => Unit): Self = StObject.set(x, "highlight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemsVarargs(value: ScrubberItem*): Self = this.set("items", js.Array(value :_*))
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[ScrubberItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[ScrubberItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuous(value: Boolean): Self = this.set("continuous", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: ScrubberItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def deleteContinuous: Self = this.set("continuous", js.undefined)
+    def setMode(value: fixed | free): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight(value: /* highlightedIndex */ Double => Unit): Self = this.set("highlight", js.Any.fromFunction1(value))
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    def setOverlayStyle(value: background | outline | none): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: fixed | free): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSelect(value: /* selectedIndex */ Double => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverlayStyle(value: background | outline | none): Self = this.set("overlayStyle", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteOverlayStyle: Self = this.set("overlayStyle", js.undefined)
+    def setSelectedStyle(value: background | outline | none): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: /* selectedIndex */ Double => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setShowArrowButtons(value: Boolean): Self = StObject.set(x, "showArrowButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedStyle(value: background | outline | none): Self = this.set("selectedStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedStyle: Self = this.set("selectedStyle", js.undefined)
-    
-    @scala.inline
-    def setShowArrowButtons(value: Boolean): Self = this.set("showArrowButtons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowArrowButtons: Self = this.set("showArrowButtons", js.undefined)
+    def setShowArrowButtonsUndefined: Self = StObject.set(x, "showArrowButtons", js.undefined)
   }
 }

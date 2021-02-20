@@ -1,11 +1,12 @@
 package typings.plugapi.mod.Event
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChatDelete extends js.Object {
+trait ChatDelete extends StObject {
   
   var chatID: String = js.native
   
@@ -20,24 +21,12 @@ object ChatDelete {
   }
   
   @scala.inline
-  implicit class ChatDeleteOps[Self <: ChatDelete] (val x: Self) extends AnyVal {
+  implicit class ChatDeleteMutableBuilder[Self <: ChatDelete] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChatID(value: String): Self = StObject.set(x, "chatID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChatID(value: String): Self = this.set("chatID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMi(value: Double): Self = this.set("mi", value.asInstanceOf[js.Any])
+    def setMi(value: Double): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
   }
 }

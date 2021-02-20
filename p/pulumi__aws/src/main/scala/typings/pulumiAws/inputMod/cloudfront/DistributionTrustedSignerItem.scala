@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cloudfront
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionTrustedSignerItem extends js.Object {
+trait DistributionTrustedSignerItem extends StObject {
   
   /**
     * AWS account ID or `self`
@@ -27,33 +28,21 @@ object DistributionTrustedSignerItem {
   }
   
   @scala.inline
-  implicit class DistributionTrustedSignerItemOps[Self <: DistributionTrustedSignerItem] (val x: Self) extends AnyVal {
+  implicit class DistributionTrustedSignerItemMutableBuilder[Self <: DistributionTrustedSignerItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountNumber(value: Input[String]): Self = StObject.set(x, "awsAccountNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsAccountNumberUndefined: Self = StObject.set(x, "awsAccountNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPairIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "keyPairIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountNumber(value: Input[String]): Self = this.set("awsAccountNumber", value.asInstanceOf[js.Any])
+    def setKeyPairIdsUndefined: Self = StObject.set(x, "keyPairIds", js.undefined)
     
     @scala.inline
-    def deleteAwsAccountNumber: Self = this.set("awsAccountNumber", js.undefined)
-    
-    @scala.inline
-    def setKeyPairIdsVarargs(value: Input[String]*): Self = this.set("keyPairIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeyPairIds(value: Input[js.Array[Input[String]]]): Self = this.set("keyPairIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPairIds: Self = this.set("keyPairIds", js.undefined)
+    def setKeyPairIdsVarargs(value: Input[String]*): Self = StObject.set(x, "keyPairIds", js.Array(value :_*))
   }
 }

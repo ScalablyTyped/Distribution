@@ -1,12 +1,13 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.PullElementFlags")
 @js.native
-object PullElementFlags extends js.Object {
+object PullElementFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.PullElementFlags with Double] = js.native

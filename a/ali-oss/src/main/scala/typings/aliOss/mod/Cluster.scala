@@ -1,13 +1,14 @@
 package typings.aliOss.mod
 
 import typings.aliOss.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ali-oss", "Cluster")
 @js.native
-class Cluster protected () extends js.Object {
+class Cluster protected () extends StObject {
   def this(options: ClusterOptions) = this()
   
   def copy(name: String, sourceName: String): js.Promise[CopyAndPutMetaResult] = js.native

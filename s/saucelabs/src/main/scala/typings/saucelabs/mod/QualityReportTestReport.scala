@@ -18,6 +18,7 @@ import typings.saucelabs.saucelabsStrings.UMTS
 import typings.saucelabs.saucelabsStrings.UNDEFINED
 import typings.saucelabs.saucelabsStrings.UNKNOWN
 import typings.saucelabs.saucelabsStrings.WARNING
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,195 +94,183 @@ object QualityReportTestReport {
   }
   
   @scala.inline
-  implicit class QualityReportTestReportOps[Self <: QualityReportTestReport] (val x: Self) extends AnyVal {
+  implicit class QualityReportTestReportMutableBuilder[Self <: QualityReportTestReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppVersionId(value: Double): Self = StObject.set(x, "appVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppVersionIdUndefined: Self = StObject.set(x, "appVersionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppVersionName(value: String): Self = StObject.set(x, "appVersionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersionId(value: Double): Self = this.set("appVersionId", value.asInstanceOf[js.Any])
+    def setAppVersionNameUndefined: Self = StObject.set(x, "appVersionName", js.undefined)
     
     @scala.inline
-    def deleteAppVersionId: Self = this.set("appVersionId", js.undefined)
+    def setAutomationBackend(value: String): Self = StObject.set(x, "automationBackend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersionName(value: String): Self = this.set("appVersionName", value.asInstanceOf[js.Any])
+    def setAutomationBackendUndefined: Self = StObject.set(x, "automationBackend", js.undefined)
     
     @scala.inline
-    def deleteAppVersionName: Self = this.set("appVersionName", js.undefined)
+    def setBatchId(value: Id): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomationBackend(value: String): Self = this.set("automationBackend", value.asInstanceOf[js.Any])
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def deleteAutomationBackend: Self = this.set("automationBackend", js.undefined)
+    def setBatchName(value: String): Self = StObject.set(x, "batchName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: Id): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setBatchNameUndefined: Self = StObject.set(x, "batchName", js.undefined)
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setDataCenterId(value: Id): Self = StObject.set(x, "dataCenterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchName(value: String): Self = this.set("batchName", value.asInstanceOf[js.Any])
+    def setDataCenterIdUndefined: Self = StObject.set(x, "dataCenterId", js.undefined)
     
     @scala.inline
-    def deleteBatchName: Self = this.set("batchName", js.undefined)
+    def setDeviceDescriptor(value: DeviceDescriptor): Self = StObject.set(x, "deviceDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataCenterId(value: Id): Self = this.set("dataCenterId", value.asInstanceOf[js.Any])
+    def setDeviceDescriptorUndefined: Self = StObject.set(x, "deviceDescriptor", js.undefined)
     
     @scala.inline
-    def deleteDataCenterId: Self = this.set("dataCenterId", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceDescriptor(value: DeviceDescriptor): Self = this.set("deviceDescriptor", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDeviceDescriptor: Self = this.set("deviceDescriptor", js.undefined)
+    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setNetworkSpeed(value: FULL | GSM | HDCSD | GPRS | EDGE | UMTS | HSDPA): Self = StObject.set(x, "networkSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNetworkSpeedUndefined: Self = StObject.set(x, "networkSpeed", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkSpeed(value: FULL | GSM | HDCSD | GPRS | EDGE | UMTS | HSDPA): Self = this.set("networkSpeed", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def deleteNetworkSpeed: Self = this.set("networkSpeed", js.undefined)
+    def setProjectPath(value: Path): Self = StObject.set(x, "projectPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: PhoneNumber): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    def setProjectPathUndefined: Self = StObject.set(x, "projectPath", js.undefined)
     
     @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    def setRemoteAppFileUrl(value: String): Self = StObject.set(x, "remoteAppFileUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectPath(value: Path): Self = this.set("projectPath", value.asInstanceOf[js.Any])
+    def setRemoteAppFileUrlUndefined: Self = StObject.set(x, "remoteAppFileUrl", js.undefined)
     
     @scala.inline
-    def deleteProjectPath: Self = this.set("projectPath", js.undefined)
+    def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteAppFileUrl(value: String): Self = this.set("remoteAppFileUrl", value.asInstanceOf[js.Any])
+    def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
     
     @scala.inline
-    def deleteRemoteAppFileUrl: Self = this.set("remoteAppFileUrl", js.undefined)
+    def setSharedLinkCode(value: String): Self = StObject.set(x, "sharedLinkCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunning(value: Boolean): Self = this.set("running", value.asInstanceOf[js.Any])
+    def setSharedLinkCodeUndefined: Self = StObject.set(x, "sharedLinkCode", js.undefined)
     
     @scala.inline
-    def deleteRunning: Self = this.set("running", js.undefined)
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedLinkCode(value: String): Self = this.set("sharedLinkCode", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSharedLinkCode: Self = this.set("sharedLinkCode", js.undefined)
+    def setStatus(value: UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
     @scala.inline
-    def setStepsVarargs(value: Step*): Self = this.set("steps", js.Array(value :_*))
+    def setSystemError(value: String): Self = StObject.set(x, "systemError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteps(value: js.Array[Step]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    def setSystemErrorType(value: String): Self = StObject.set(x, "systemErrorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setSystemErrorTypeUndefined: Self = StObject.set(x, "systemErrorType", js.undefined)
     
     @scala.inline
-    def setSystemError(value: String): Self = this.set("systemError", value.asInstanceOf[js.Any])
+    def setSystemErrorUndefined: Self = StObject.set(x, "systemError", js.undefined)
     
     @scala.inline
-    def deleteSystemError: Self = this.set("systemError", js.undefined)
+    def setTestId(value: Id): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemErrorType(value: String): Self = this.set("systemErrorType", value.asInstanceOf[js.Any])
+    def setTestIdUndefined: Self = StObject.set(x, "testId", js.undefined)
     
     @scala.inline
-    def deleteSystemErrorType: Self = this.set("systemErrorType", js.undefined)
+    def setTestName(value: String): Self = StObject.set(x, "testName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestId(value: Id): Self = this.set("testId", value.asInstanceOf[js.Any])
+    def setTestNameUndefined: Self = StObject.set(x, "testName", js.undefined)
     
     @scala.inline
-    def deleteTestId: Self = this.set("testId", js.undefined)
+    def setTestResultStatus(value: UNDEFINED | WARNING | OK | ERROR | FAILURE | SKIPPED | ABORTED | CANCELED): Self = StObject.set(x, "testResultStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestName(value: String): Self = this.set("testName", value.asInstanceOf[js.Any])
+    def setTestResultStatusUndefined: Self = StObject.set(x, "testResultStatus", js.undefined)
     
     @scala.inline
-    def deleteTestName: Self = this.set("testName", js.undefined)
+    def setTunnelId(value: String): Self = StObject.set(x, "tunnelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestResultStatus(value: UNDEFINED | WARNING | OK | ERROR | FAILURE | SKIPPED | ABORTED | CANCELED): Self = this.set("testResultStatus", value.asInstanceOf[js.Any])
+    def setTunnelIdUndefined: Self = StObject.set(x, "tunnelId", js.undefined)
     
     @scala.inline
-    def deleteTestResultStatus: Self = this.set("testResultStatus", js.undefined)
+    def setTunnelIdentifier(value: String): Self = StObject.set(x, "tunnelIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTunnelId(value: String): Self = this.set("tunnelId", value.asInstanceOf[js.Any])
+    def setTunnelIdentifierUndefined: Self = StObject.set(x, "tunnelIdentifier", js.undefined)
     
     @scala.inline
-    def deleteTunnelId: Self = this.set("tunnelId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTunnelIdentifier(value: String): Self = this.set("tunnelIdentifier", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTunnelIdentifier: Self = this.set("tunnelIdentifier", js.undefined)
+    def setUuid(value: Uuid): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVideoId(value: Id): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUuid(value: Uuid): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
     
     @scala.inline
-    def deleteUuid: Self = this.set("uuid", js.undefined)
+    def setWithSystemError(value: Boolean): Self = StObject.set(x, "withSystemError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoId(value: Id): Self = this.set("videoId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoId: Self = this.set("videoId", js.undefined)
-    
-    @scala.inline
-    def setWithSystemError(value: Boolean): Self = this.set("withSystemError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithSystemError: Self = this.set("withSystemError", js.undefined)
+    def setWithSystemErrorUndefined: Self = StObject.set(x, "withSystemError", js.undefined)
   }
 }

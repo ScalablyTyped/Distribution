@@ -1,5 +1,6 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The options used to create a renderer.
   */
 @js.native
-trait IRendererOptions extends js.Object {
+trait IRendererOptions extends StObject {
   
   /**
     * The LaTeX typesetter.
@@ -44,42 +45,30 @@ object IRendererOptions {
   }
   
   @scala.inline
-  implicit class IRendererOptionsOps[Self <: IRendererOptions] (val x: Self) extends AnyVal {
+  implicit class IRendererOptionsMutableBuilder[Self <: IRendererOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatexTypesetter(value: ILatexTypesetter): Self = StObject.set(x, "latexTypesetter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatexTypesetterNull: Self = StObject.set(x, "latexTypesetter", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkHandler(value: ILinkHandler): Self = StObject.set(x, "linkHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setLinkHandlerNull: Self = StObject.set(x, "linkHandler", null)
     
     @scala.inline
-    def setSanitizer(value: ISanitizer): Self = this.set("sanitizer", value.asInstanceOf[js.Any])
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatexTypesetter(value: ILatexTypesetter): Self = this.set("latexTypesetter", value.asInstanceOf[js.Any])
+    def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatexTypesetterNull: Self = this.set("latexTypesetter", null)
+    def setResolverNull: Self = StObject.set(x, "resolver", null)
     
     @scala.inline
-    def setLinkHandler(value: ILinkHandler): Self = this.set("linkHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinkHandlerNull: Self = this.set("linkHandler", null)
-    
-    @scala.inline
-    def setResolver(value: IResolver): Self = this.set("resolver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolverNull: Self = this.set("resolver", null)
+    def setSanitizer(value: ISanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
   }
 }

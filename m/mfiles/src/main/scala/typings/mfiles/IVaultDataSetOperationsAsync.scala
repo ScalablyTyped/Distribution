@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultDataSetOperationsAsync extends js.Object {
+trait IVaultDataSetOperationsAsync extends StObject {
   
   def GetDataSetExportingStatus(ID: Double): Unit = js.native
   def GetDataSetExportingStatus(

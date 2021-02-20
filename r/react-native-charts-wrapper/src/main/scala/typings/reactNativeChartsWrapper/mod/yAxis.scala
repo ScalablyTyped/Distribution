@@ -3,6 +3,7 @@ package typings.reactNativeChartsWrapper.mod
 import typings.reactNativeChartsWrapper.anon.Enabled
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_CHART
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.OUTSIDE_CHART
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,60 +34,48 @@ object yAxis {
   }
   
   @scala.inline
-  implicit class yAxisOps[Self <: yAxis] (val x: Self) extends AnyVal {
+  implicit class yAxisMutableBuilder[Self <: yAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteInverted: Self = this.set("inverted", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setPosition(value: OUTSIDE_CHART | INSIDE_CHART): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setSpaceBottom(value: Double): Self = StObject.set(x, "spaceBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: OUTSIDE_CHART | INSIDE_CHART): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setSpaceBottomUndefined: Self = StObject.set(x, "spaceBottom", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSpaceTop(value: Double): Self = StObject.set(x, "spaceTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBottom(value: Double): Self = this.set("spaceBottom", value.asInstanceOf[js.Any])
+    def setSpaceTopUndefined: Self = StObject.set(x, "spaceTop", js.undefined)
     
     @scala.inline
-    def deleteSpaceBottom: Self = this.set("spaceBottom", js.undefined)
+    def setZeroLine(value: Enabled): Self = StObject.set(x, "zeroLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceTop(value: Double): Self = this.set("spaceTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpaceTop: Self = this.set("spaceTop", js.undefined)
-    
-    @scala.inline
-    def setZeroLine(value: Enabled): Self = this.set("zeroLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZeroLine: Self = this.set("zeroLine", js.undefined)
+    def setZeroLineUndefined: Self = StObject.set(x, "zeroLine", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnEnterLifecycle extends js.Object {
+trait OnEnterLifecycle extends StObject {
   
   /**
     * Specifies the actions that are performed when the state is entered and the condition is TRUE.
@@ -21,27 +22,15 @@ object OnEnterLifecycle {
   }
   
   @scala.inline
-  implicit class OnEnterLifecycleOps[Self <: OnEnterLifecycle] (val x: Self) extends AnyVal {
+  implicit class OnEnterLifecycleMutableBuilder[Self <: OnEnterLifecycle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: Events): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventsVarargs(value: Event*): Self = this.set("events", js.Array(value :_*))
-    
-    @scala.inline
-    def setEvents(value: Events): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
   }
 }

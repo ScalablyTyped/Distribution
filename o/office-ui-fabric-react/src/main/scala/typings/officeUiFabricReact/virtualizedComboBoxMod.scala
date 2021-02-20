@@ -4,14 +4,14 @@ import typings.officeUiFabricReact.comboBoxTypesMod.IComboBox
 import typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxProps
 import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/ComboBox/VirtualizedComboBox", JSImport.Namespace)
-@js.native
-object virtualizedComboBoxMod extends js.Object {
+object virtualizedComboBoxMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/ComboBox/VirtualizedComboBox", "VirtualizedComboBox")
   @js.native
   class VirtualizedComboBox protected ()
     extends Component[IComboBoxProps, js.Object, js.Any]

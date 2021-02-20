@@ -1,6 +1,7 @@
 package typings.sharepoint.SP
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,48 +54,36 @@ object UpgradeInfo {
   }
   
   @scala.inline
-  implicit class UpgradeInfoOps[Self <: UpgradeInfo] (val x: Self) extends AnyVal {
+  implicit class UpgradeInfoMutableBuilder[Self <: UpgradeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_errorFile(value: () => String): Self = StObject.set(x, "get_errorFile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_errors(value: () => Double): Self = StObject.set(x, "get_errors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_lastUpdated(value: () => Date): Self = StObject.set(x, "get_lastUpdated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_errorFile(value: () => String): Self = this.set("get_errorFile", js.Any.fromFunction0(value))
+    def setGet_logFile(value: () => String): Self = StObject.set(x, "get_logFile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_errors(value: () => Double): Self = this.set("get_errors", js.Any.fromFunction0(value))
+    def setGet_requestDate(value: () => Date): Self = StObject.set(x, "get_requestDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_lastUpdated(value: () => Date): Self = this.set("get_lastUpdated", js.Any.fromFunction0(value))
+    def setGet_retryCount(value: () => Double): Self = StObject.set(x, "get_retryCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_logFile(value: () => String): Self = this.set("get_logFile", js.Any.fromFunction0(value))
+    def setGet_startTime(value: () => Date): Self = StObject.set(x, "get_startTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_requestDate(value: () => Date): Self = this.set("get_requestDate", js.Any.fromFunction0(value))
+    def setGet_status(value: () => UpgradeStatus): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_retryCount(value: () => Double): Self = this.set("get_retryCount", js.Any.fromFunction0(value))
+    def setGet_upgradeType(value: () => UpgradeType): Self = StObject.set(x, "get_upgradeType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_startTime(value: () => Date): Self = this.set("get_startTime", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_status(value: () => UpgradeStatus): Self = this.set("get_status", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_upgradeType(value: () => UpgradeType): Self = this.set("get_upgradeType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_warnings(value: () => Double): Self = this.set("get_warnings", js.Any.fromFunction0(value))
+    def setGet_warnings(value: () => Double): Self = StObject.set(x, "get_warnings", js.Any.fromFunction0(value))
   }
 }

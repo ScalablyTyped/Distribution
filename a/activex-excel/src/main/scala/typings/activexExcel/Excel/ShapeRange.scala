@@ -16,12 +16,13 @@ import typings.activexOffice.Office.MsoZOrderCmd
 import typings.activexOffice.Office.ReflectionFormat
 import typings.activexOffice.Office.SoftEdgeFormat
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapeRange extends js.Object {
+trait ShapeRange extends StObject {
   
   def apply(Index: String): Shape = js.native
   def apply(Index: Double): Shape = js.native

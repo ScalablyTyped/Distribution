@@ -1,12 +1,13 @@
 package typings.giphyApi.mod
 
 import typings.giphyApi.anon.Avatarurl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GIFObject extends js.Object {
+trait GIFObject extends StObject {
   
   var bitly_url: String = js.native
   
@@ -75,78 +76,66 @@ object GIFObject {
   }
   
   @scala.inline
-  implicit class GIFObjectOps[Self <: GIFObject] (val x: Self) extends AnyVal {
+  implicit class GIFObjectMutableBuilder[Self <: GIFObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitly_url(value: String): Self = StObject.set(x, "bitly_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent_url(value: String): Self = StObject.set(x, "content_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreate_datetime(value: String): Self = StObject.set(x, "create_datetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitly_url(value: String): Self = this.set("bitly_url", value.asInstanceOf[js.Any])
+    def setEmbed_url(value: String): Self = StObject.set(x, "embed_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_url(value: String): Self = this.set("content_url", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate_datetime(value: String): Self = this.set("create_datetime", value.asInstanceOf[js.Any])
+    def setImages(value: Images): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbed_url(value: String): Self = this.set("embed_url", value.asInstanceOf[js.Any])
+    def setImport_datetime(value: String): Self = StObject.set(x, "import_datetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRating(value: Rating): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: Images): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImport_datetime(value: String): Self = this.set("import_datetime", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRating(value: Rating): Self = this.set("rating", value.asInstanceOf[js.Any])
+    def setSource_post_url(value: String): Self = StObject.set(x, "source_post_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlug(value: String): Self = this.set("slug", value.asInstanceOf[js.Any])
+    def setSource_tld(value: String): Self = StObject.set(x, "source_tld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_post_url(value: String): Self = this.set("source_post_url", value.asInstanceOf[js.Any])
+    def setTrending_datetime(value: String): Self = StObject.set(x, "trending_datetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_tld(value: String): Self = this.set("source_tld", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUpdate_datetime(value: String): Self = StObject.set(x, "update_datetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrending_datetime(value: String): Self = this.set("trending_datetime", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate_datetime(value: String): Self = this.set("update_datetime", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: Avatarurl): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

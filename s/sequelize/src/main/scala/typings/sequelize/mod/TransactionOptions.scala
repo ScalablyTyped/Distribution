@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see sequelize.transaction()
   */
 @js.native
-trait TransactionOptions extends js.Object {
+trait TransactionOptions extends StObject {
   
   var autocommit: js.UndefOr[Boolean] = js.native
   
@@ -50,56 +51,44 @@ object TransactionOptions {
   }
   
   @scala.inline
-  implicit class TransactionOptionsOps[Self <: TransactionOptions] (val x: Self) extends AnyVal {
+  implicit class TransactionOptionsMutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutocommit(value: Boolean): Self = StObject.set(x, "autocommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutocommit(value: Boolean): Self = this.set("autocommit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutocommit: Self = this.set("autocommit", js.undefined)
+    def setAutocommitUndefined: Self = StObject.set(x, "autocommit", js.undefined)
     
     @scala.inline
     def setDeferrable(
       value: DeferrableSetImmediate | DeferrableInitiallyDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableSetDeferred
-    ): Self = this.set("deferrable", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeferrable: Self = this.set("deferrable", js.undefined)
+    def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
     
     @scala.inline
-    def setIsolationLevel(value: TransactionIsolationLevel): Self = this.set("isolationLevel", value.asInstanceOf[js.Any])
+    def setIsolationLevel(value: TransactionIsolationLevel): Self = StObject.set(x, "isolationLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsolationLevel: Self = this.set("isolationLevel", js.undefined)
+    def setIsolationLevelUndefined: Self = StObject.set(x, "isolationLevel", js.undefined)
     
     @scala.inline
-    def setLogging(value: js.Function): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setLogging(value: js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def setTransaction(value: Transaction): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     
     @scala.inline
-    def setType(value: TransactionType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: TransactionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableOfContents extends js.Object {
+trait TableOfContents extends StObject {
   
   /** The content of the table of contents. */
   var content: js.UndefOr[js.Array[StructuralElement]] = js.native
@@ -25,45 +26,33 @@ object TableOfContents {
   }
   
   @scala.inline
-  implicit class TableOfContentsOps[Self <: TableOfContents] (val x: Self) extends AnyVal {
+  implicit class TableOfContentsMutableBuilder[Self <: TableOfContents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
-    def setContentVarargs(value: StructuralElement*): Self = this.set("content", js.Array(value :_*))
+    def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: js.Array[StructuralElement]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
     
     @scala.inline
-    def setSuggestedDeletionIdsVarargs(value: String*): Self = this.set("suggestedDeletionIds", js.Array(value :_*))
+    def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedDeletionIds(value: js.Array[String]): Self = this.set("suggestedDeletionIds", value.asInstanceOf[js.Any])
+    def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
     
     @scala.inline
-    def deleteSuggestedDeletionIds: Self = this.set("suggestedDeletionIds", js.undefined)
-    
-    @scala.inline
-    def setSuggestedInsertionIdsVarargs(value: String*): Self = this.set("suggestedInsertionIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuggestedInsertionIds(value: js.Array[String]): Self = this.set("suggestedInsertionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedInsertionIds: Self = this.set("suggestedInsertionIds", js.undefined)
+    def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
   }
 }

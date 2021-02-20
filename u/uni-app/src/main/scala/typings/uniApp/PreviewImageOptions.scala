@@ -3,12 +3,13 @@ package typings.uniApp
 import typings.uniApp.uniAppStrings.default
 import typings.uniApp.uniAppStrings.none
 import typings.uniApp.uniAppStrings.number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreviewImageOptions extends js.Object {
+trait PreviewImageOptions extends StObject {
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
@@ -67,75 +68,63 @@ object PreviewImageOptions {
   }
   
   @scala.inline
-  implicit class PreviewImageOptionsOps[Self <: PreviewImageOptions] (val x: Self) extends AnyVal {
+  implicit class PreviewImageOptionsMutableBuilder[Self <: PreviewImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrent(value: String): Self = this.set("current", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteCurrent: Self = this.set("current", js.undefined)
+    def setIndicator(value: default | number | none): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setLongPressActions(value: LongPressActionsOptions): Self = StObject.set(x, "longPressActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicator(value: default | number | none): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    def setLongPressActionsUndefined: Self = StObject.set(x, "longPressActions", js.undefined)
     
     @scala.inline
-    def deleteIndicator: Self = this.set("indicator", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongPressActions(value: LongPressActionsOptions): Self = this.set("longPressActions", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteLongPressActions: Self = this.set("longPressActions", js.undefined)
+    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setUrls(value: String | js.Array[_]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setUrlsVarargs(value: js.Any*): Self = this.set("urls", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrls(value: String | js.Array[_]): Self = this.set("urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
+    def setUrlsVarargs(value: js.Any*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

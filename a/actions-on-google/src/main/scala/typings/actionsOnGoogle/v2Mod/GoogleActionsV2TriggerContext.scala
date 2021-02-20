@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2TriggerContext extends js.Object {
+trait GoogleActionsV2TriggerContext extends StObject {
   
   /**
     * The time context for which the update can be triggered.
@@ -21,24 +22,12 @@ object GoogleActionsV2TriggerContext {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2TriggerContextOps[Self <: GoogleActionsV2TriggerContext] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2TriggerContextMutableBuilder[Self <: GoogleActionsV2TriggerContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimeContext(value: GoogleActionsV2TriggerContextTimeContext): Self = StObject.set(x, "timeContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTimeContext(value: GoogleActionsV2TriggerContextTimeContext): Self = this.set("timeContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeContext: Self = this.set("timeContext", js.undefined)
+    def setTimeContextUndefined: Self = StObject.set(x, "timeContext", js.undefined)
   }
 }

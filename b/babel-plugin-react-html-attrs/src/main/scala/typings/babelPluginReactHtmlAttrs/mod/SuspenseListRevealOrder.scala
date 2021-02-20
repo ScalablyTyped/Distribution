@@ -1,5 +1,6 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.backwards
   - typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.together
 */
-trait SuspenseListRevealOrder extends js.Object
+trait SuspenseListRevealOrder extends StObject
 object SuspenseListRevealOrder {
   
   @scala.inline

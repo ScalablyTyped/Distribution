@@ -1,11 +1,12 @@
 package typings.jsoneditoronline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONEditorShowDropDownListParams extends js.Object {
+trait JSONEditorShowDropDownListParams extends StObject {
   
   def callback(value: js.Any): Unit = js.native
   
@@ -41,45 +42,33 @@ object JSONEditorShowDropDownListParams {
   }
   
   @scala.inline
-  implicit class JSONEditorShowDropDownListParamsOps[Self <: JSONEditorShowDropDownListParams] (val x: Self) extends AnyVal {
+  implicit class JSONEditorShowDropDownListParamsMutableBuilder[Self <: JSONEditorShowDropDownListParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNode(value: JSONEditorNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionClassName(value: String): Self = StObject.set(x, "optionClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: js.Any => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setOptionSelectedClassName(value: String): Self = StObject.set(x, "optionSelectedClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: JSONEditorNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionClassName(value: String): Self = this.set("optionClassName", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Object]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionSelectedClassName(value: String): Self = this.set("optionSelectedClassName", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: js.Object*): Self = StObject.set(x, "values", js.Array(value :_*))
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuesVarargs(value: js.Object*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[js.Object]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

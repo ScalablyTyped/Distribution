@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMapsPlayablelocationsV3SampleAreaFilter extends js.Object {
+trait GoogleMapsPlayablelocationsV3SampleAreaFilter extends StObject {
   
   /**
     * Required. The S2 cell ID of the area you want. This must be between cell level 11 and 14 (inclusive). S2 cells are 64-bit integers that identify areas on the Earth. They are
@@ -23,24 +24,12 @@ object GoogleMapsPlayablelocationsV3SampleAreaFilter {
   }
   
   @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SampleAreaFilterOps[Self <: GoogleMapsPlayablelocationsV3SampleAreaFilter] (val x: Self) extends AnyVal {
+  implicit class GoogleMapsPlayablelocationsV3SampleAreaFilterMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleAreaFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS2CellId(value: String): Self = StObject.set(x, "s2CellId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setS2CellId(value: String): Self = this.set("s2CellId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS2CellId: Self = this.set("s2CellId", js.undefined)
+    def setS2CellIdUndefined: Self = StObject.set(x, "s2CellId", js.undefined)
   }
 }

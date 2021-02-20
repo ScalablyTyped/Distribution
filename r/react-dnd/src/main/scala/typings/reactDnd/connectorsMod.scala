@@ -5,13 +5,12 @@ import typings.react.mod.RefObject
 import typings.reactDnd.optionsMod.DragPreviewOptions
 import typings.reactDnd.optionsMod.DragSourceOptions
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd/lib/interfaces/connectors", JSImport.Namespace)
-@js.native
-object connectorsMod extends js.Object {
+object connectorsMod {
   
   type ConnectDragPreview = DragElementWrapper[DragPreviewOptions]
   

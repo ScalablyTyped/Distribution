@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientBinaryauthorization.anon.Callback
 import typings.maximMazurokGapiClientBinaryauthorization.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   var attestors: AttestorsResource = js.native
   

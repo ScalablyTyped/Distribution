@@ -1,11 +1,12 @@
 package typings.storybookClientApi.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetStorybookKind extends js.Object {
+trait GetStorybookKind extends StObject {
   
   var fileName: String = js.native
   
@@ -22,30 +23,18 @@ object GetStorybookKind {
   }
   
   @scala.inline
-  implicit class GetStorybookKindOps[Self <: GetStorybookKind] (val x: Self) extends AnyVal {
+  implicit class GetStorybookKindMutableBuilder[Self <: GetStorybookKind] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStories(value: js.Array[GetStorybookStory]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStoriesVarargs(value: GetStorybookStory*): Self = this.set("stories", js.Array(value :_*))
-    
-    @scala.inline
-    def setStories(value: js.Array[GetStorybookStory]): Self = this.set("stories", value.asInstanceOf[js.Any])
+    def setStoriesVarargs(value: GetStorybookStory*): Self = StObject.set(x, "stories", js.Array(value :_*))
   }
 }

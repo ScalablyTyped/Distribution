@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * InteractDef
   */
 @js.native
-trait IInteractDef extends js.Object {
+trait IInteractDef extends StObject {
   
   /**
     * Buttons displayed in the message box dialog.
@@ -88,81 +89,69 @@ object IInteractDef {
   }
   
   @scala.inline
-  implicit class IInteractDefOps[Self <: IInteractDef] (val x: Self) extends AnyVal {
+  implicit class IInteractDefMutableBuilder[Self <: IInteractDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQButtons(value: Double): Self = StObject.set(x, "qButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQButtonsUndefined: Self = StObject.set(x, "qButtons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQHidden(value: Boolean): Self = StObject.set(x, "qHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQResult(value: Double): Self = this.set("qResult", value.asInstanceOf[js.Any])
+    def setQHiddenUndefined: Self = StObject.set(x, "qHidden", js.undefined)
     
     @scala.inline
-    def setQButtons(value: Double): Self = this.set("qButtons", value.asInstanceOf[js.Any])
+    def setQInput(value: String): Self = StObject.set(x, "qInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQButtons: Self = this.set("qButtons", js.undefined)
+    def setQInputUndefined: Self = StObject.set(x, "qInput", js.undefined)
     
     @scala.inline
-    def setQHidden(value: Boolean): Self = this.set("qHidden", value.asInstanceOf[js.Any])
+    def setQLine(value: String): Self = StObject.set(x, "qLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQHidden: Self = this.set("qHidden", js.undefined)
+    def setQLineUndefined: Self = StObject.set(x, "qLine", js.undefined)
     
     @scala.inline
-    def setQInput(value: String): Self = this.set("qInput", value.asInstanceOf[js.Any])
+    def setQMsg(value: String): Self = StObject.set(x, "qMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQInput: Self = this.set("qInput", js.undefined)
+    def setQMsgUndefined: Self = StObject.set(x, "qMsg", js.undefined)
     
     @scala.inline
-    def setQLine(value: String): Self = this.set("qLine", value.asInstanceOf[js.Any])
+    def setQNewLineNr(value: Double): Self = StObject.set(x, "qNewLineNr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQLine: Self = this.set("qLine", js.undefined)
+    def setQNewLineNrUndefined: Self = StObject.set(x, "qNewLineNr", js.undefined)
     
     @scala.inline
-    def setQMsg(value: String): Self = this.set("qMsg", value.asInstanceOf[js.Any])
+    def setQOldLineNr(value: Double): Self = StObject.set(x, "qOldLineNr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQMsg: Self = this.set("qMsg", js.undefined)
+    def setQOldLineNrUndefined: Self = StObject.set(x, "qOldLineNr", js.undefined)
     
     @scala.inline
-    def setQNewLineNr(value: Double): Self = this.set("qNewLineNr", value.asInstanceOf[js.Any])
+    def setQPath(value: String): Self = StObject.set(x, "qPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQNewLineNr: Self = this.set("qNewLineNr", js.undefined)
+    def setQPathUndefined: Self = StObject.set(x, "qPath", js.undefined)
     
     @scala.inline
-    def setQOldLineNr(value: Double): Self = this.set("qOldLineNr", value.asInstanceOf[js.Any])
+    def setQResult(value: Double): Self = StObject.set(x, "qResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQOldLineNr: Self = this.set("qOldLineNr", js.undefined)
+    def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQPath(value: String): Self = this.set("qPath", value.asInstanceOf[js.Any])
+    def setQTitleUndefined: Self = StObject.set(x, "qTitle", js.undefined)
     
     @scala.inline
-    def deleteQPath: Self = this.set("qPath", js.undefined)
+    def setQType(value: InteractionType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQTitle(value: String): Self = this.set("qTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQTitle: Self = this.set("qTitle", js.undefined)
-    
-    @scala.inline
-    def setQType(value: InteractionType): Self = this.set("qType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQType: Self = this.set("qType", js.undefined)
+    def setQTypeUndefined: Self = StObject.set(x, "qType", js.undefined)
   }
 }

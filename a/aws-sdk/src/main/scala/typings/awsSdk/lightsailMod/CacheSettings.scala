@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheSettings extends js.Object {
+trait CacheSettings extends StObject {
   
   /**
     * The HTTP methods that are processed and forwarded to the distribution's origin. You can specify the following options:    GET,HEAD - The distribution forwards the GET and HEAD methods.    GET,HEAD,OPTIONS - The distribution forwards the GET, HEAD, and OPTIONS methods.    GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE - The distribution forwards the GET, HEAD, OPTIONS, PUT, PATCH, POST, and DELETE methods.   If you specify the third option, you might need to restrict access to your distribution's origin so users can't perform operations that you don't want them to. For example, you might not want users to have permission to delete objects from your origin.
@@ -56,66 +57,54 @@ object CacheSettings {
   }
   
   @scala.inline
-  implicit class CacheSettingsOps[Self <: CacheSettings] (val x: Self) extends AnyVal {
+  implicit class CacheSettingsMutableBuilder[Self <: CacheSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedHTTPMethods(value: NonEmptyString): Self = StObject.set(x, "allowedHTTPMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedHTTPMethodsUndefined: Self = StObject.set(x, "allowedHTTPMethods", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCachedHTTPMethods(value: NonEmptyString): Self = StObject.set(x, "cachedHTTPMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedHTTPMethods(value: NonEmptyString): Self = this.set("allowedHTTPMethods", value.asInstanceOf[js.Any])
+    def setCachedHTTPMethodsUndefined: Self = StObject.set(x, "cachedHTTPMethods", js.undefined)
     
     @scala.inline
-    def deleteAllowedHTTPMethods: Self = this.set("allowedHTTPMethods", js.undefined)
+    def setDefaultTTL(value: long): Self = StObject.set(x, "defaultTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachedHTTPMethods(value: NonEmptyString): Self = this.set("cachedHTTPMethods", value.asInstanceOf[js.Any])
+    def setDefaultTTLUndefined: Self = StObject.set(x, "defaultTTL", js.undefined)
     
     @scala.inline
-    def deleteCachedHTTPMethods: Self = this.set("cachedHTTPMethods", js.undefined)
+    def setForwardedCookies(value: CookieObject): Self = StObject.set(x, "forwardedCookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTTL(value: long): Self = this.set("defaultTTL", value.asInstanceOf[js.Any])
+    def setForwardedCookiesUndefined: Self = StObject.set(x, "forwardedCookies", js.undefined)
     
     @scala.inline
-    def deleteDefaultTTL: Self = this.set("defaultTTL", js.undefined)
+    def setForwardedHeaders(value: HeaderObject): Self = StObject.set(x, "forwardedHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardedCookies(value: CookieObject): Self = this.set("forwardedCookies", value.asInstanceOf[js.Any])
+    def setForwardedHeadersUndefined: Self = StObject.set(x, "forwardedHeaders", js.undefined)
     
     @scala.inline
-    def deleteForwardedCookies: Self = this.set("forwardedCookies", js.undefined)
+    def setForwardedQueryStrings(value: QueryStringObject): Self = StObject.set(x, "forwardedQueryStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardedHeaders(value: HeaderObject): Self = this.set("forwardedHeaders", value.asInstanceOf[js.Any])
+    def setForwardedQueryStringsUndefined: Self = StObject.set(x, "forwardedQueryStrings", js.undefined)
     
     @scala.inline
-    def deleteForwardedHeaders: Self = this.set("forwardedHeaders", js.undefined)
+    def setMaximumTTL(value: long): Self = StObject.set(x, "maximumTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardedQueryStrings(value: QueryStringObject): Self = this.set("forwardedQueryStrings", value.asInstanceOf[js.Any])
+    def setMaximumTTLUndefined: Self = StObject.set(x, "maximumTTL", js.undefined)
     
     @scala.inline
-    def deleteForwardedQueryStrings: Self = this.set("forwardedQueryStrings", js.undefined)
+    def setMinimumTTL(value: long): Self = StObject.set(x, "minimumTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumTTL(value: long): Self = this.set("maximumTTL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumTTL: Self = this.set("maximumTTL", js.undefined)
-    
-    @scala.inline
-    def setMinimumTTL(value: long): Self = this.set("minimumTTL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumTTL: Self = this.set("minimumTTL", js.undefined)
+    def setMinimumTTLUndefined: Self = StObject.set(x, "minimumTTL", js.undefined)
   }
 }

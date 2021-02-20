@@ -1,11 +1,12 @@
 package typings.shopifyBuy.ShopifyBuy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query extends js.Object {
+trait Query extends StObject {
   
   var after: js.UndefOr[String] = js.native
   
@@ -35,54 +36,42 @@ object Query {
   }
   
   @scala.inline
-  implicit class QueryOps[Self <: Query] (val x: Self) extends AnyVal {
+  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def setSortBy(value: String): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfter(value: String): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setLast(value: Double): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: String): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: Double): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirst: Self = this.set("first", js.undefined)
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def setLast(value: Double): Self = this.set("last", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLast: Self = this.set("last", js.undefined)
-    
-    @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
+    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
   }
 }

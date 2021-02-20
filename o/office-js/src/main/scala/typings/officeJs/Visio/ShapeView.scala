@@ -16,6 +16,7 @@ import typings.officeJs.officeJsStrings.Middle
 import typings.officeJs.officeJsStrings.Right
 import typings.officeJs.officeJsStrings.Text
 import typings.officeJs.officeJsStrings.Top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -3,6 +3,7 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.sceneLoaderMod.ISceneLoaderProgressEvent
 import typings.babylonjs.typesMod.Nullable
 import typings.std.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,14 +44,4 @@ class FilesInput protected ()
         ]
       ]
   ) = this()
-}
-/* static members */
-@JSImport("babylonjs/index", "FilesInput")
-@js.native
-object FilesInput extends js.Object {
-  
-  /**
-    * List of files ready to be loaded
-    */
-  def FilesToLoad: org.scalablytyped.runtime.StringDictionary[File] = js.native
 }

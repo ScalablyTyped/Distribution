@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMetricDataOutput extends js.Object {
+trait GetMetricDataOutput extends StObject {
   
   /**
     * Contains a message about this GetMetricData operation, if the operation results in such a message. An example of a message that might be returned is Maximum number of allowed metrics exceeded. If there is a message, as much of the operation as possible is still executed. A message appears here only if it is related to the global GetMetricData operation. Any message about a specific metric returned by the operation appears in the MetricDataResult object returned for that metric.
@@ -31,42 +32,30 @@ object GetMetricDataOutput {
   }
   
   @scala.inline
-  implicit class GetMetricDataOutputOps[Self <: GetMetricDataOutput] (val x: Self) extends AnyVal {
+  implicit class GetMetricDataOutputMutableBuilder[Self <: GetMetricDataOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: MetricDataResultMessages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessagesVarargs(value: MessageData*): Self = StObject.set(x, "Messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesVarargs(value: MessageData*): Self = this.set("Messages", js.Array(value :_*))
+    def setMetricDataResults(value: MetricDataResults): Self = StObject.set(x, "MetricDataResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: MetricDataResultMessages): Self = this.set("Messages", value.asInstanceOf[js.Any])
+    def setMetricDataResultsUndefined: Self = StObject.set(x, "MetricDataResults", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("Messages", js.undefined)
+    def setMetricDataResultsVarargs(value: MetricDataResult*): Self = StObject.set(x, "MetricDataResults", js.Array(value :_*))
     
     @scala.inline
-    def setMetricDataResultsVarargs(value: MetricDataResult*): Self = this.set("MetricDataResults", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricDataResults(value: MetricDataResults): Self = this.set("MetricDataResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricDataResults: Self = this.set("MetricDataResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

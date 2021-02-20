@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.extensions.v1beta1
 
 import typings.pulumiKubernetes.inputMod.core.v1.SELinuxOptions
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SELinuxStrategyOptions defines the strategy type and any options used to create the strategy. Deprecated: use SELinuxStrategyOptions from policy API Group instead.
   */
 @js.native
-trait SELinuxStrategyOptions extends js.Object {
+trait SELinuxStrategyOptions extends StObject {
   
   /**
     * rule is the strategy that will dictate the allowable labels that may be set.
@@ -31,27 +32,15 @@ object SELinuxStrategyOptions {
   }
   
   @scala.inline
-  implicit class SELinuxStrategyOptionsOps[Self <: SELinuxStrategyOptions] (val x: Self) extends AnyVal {
+  implicit class SELinuxStrategyOptionsMutableBuilder[Self <: SELinuxStrategyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRule(value: Input[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSeLinuxOptions(value: Input[SELinuxOptions]): Self = StObject.set(x, "seLinuxOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRule(value: Input[String]): Self = this.set("rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeLinuxOptions(value: Input[SELinuxOptions]): Self = this.set("seLinuxOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeLinuxOptions: Self = this.set("seLinuxOptions", js.undefined)
+    def setSeLinuxOptionsUndefined: Self = StObject.set(x, "seLinuxOptions", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.easeljs.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TickerEvent extends js.Object {
+trait TickerEvent extends StObject {
   
   var delta: Double = js.native
   
@@ -30,36 +31,24 @@ object TickerEvent {
   }
   
   @scala.inline
-  implicit class TickerEventOps[Self <: TickerEvent] (val x: Self) extends AnyVal {
+  implicit class TickerEventMutableBuilder[Self <: TickerEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRunTime(value: Double): Self = StObject.set(x, "runTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunTime(value: Double): Self = this.set("runTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: js.Object): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

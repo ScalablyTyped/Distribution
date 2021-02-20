@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DashIsoEncryptionSettings extends js.Object {
+trait DashIsoEncryptionSettings extends StObject {
   
   /**
     * This setting can improve the compatibility of your output with video players on obsolete devices. It applies only to DASH H.264 outputs with DRM encryption. Choose Unencrypted SEI (UNENCRYPTED_SEI) only to correct problems with playback on older devices. Otherwise, keep the default setting CENC v1 (CENC_V1). If you choose Unencrypted SEI, for that output, the service will exclude the access unit delimiter and will leave the SEI NAL units unencrypted.
@@ -26,30 +27,18 @@ object DashIsoEncryptionSettings {
   }
   
   @scala.inline
-  implicit class DashIsoEncryptionSettingsOps[Self <: DashIsoEncryptionSettings] (val x: Self) extends AnyVal {
+  implicit class DashIsoEncryptionSettingsMutableBuilder[Self <: DashIsoEncryptionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlaybackDeviceCompatibility(value: DashIsoPlaybackDeviceCompatibility): Self = StObject.set(x, "PlaybackDeviceCompatibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlaybackDeviceCompatibilityUndefined: Self = StObject.set(x, "PlaybackDeviceCompatibility", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackDeviceCompatibility(value: DashIsoPlaybackDeviceCompatibility): Self = this.set("PlaybackDeviceCompatibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaybackDeviceCompatibility: Self = this.set("PlaybackDeviceCompatibility", js.undefined)
-    
-    @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = this.set("SpekeKeyProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpekeKeyProvider: Self = this.set("SpekeKeyProvider", js.undefined)
+    def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
   }
 }

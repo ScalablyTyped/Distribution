@@ -18,12 +18,13 @@ import typings.chrome.chrome.fileSystemProvider.OptionlessRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.RequestedEvent
 import typings.chrome.chrome.fileSystemProvider.SourceTargetPathRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.UnmountOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeoffileSystemProvider extends js.Object {
+trait TypeoffileSystemProvider extends StObject {
   
   def get(fileSystemId: String, callback: js.Function1[/* fileSystem */ FileSystemInfo, Unit]): Unit = js.native
   

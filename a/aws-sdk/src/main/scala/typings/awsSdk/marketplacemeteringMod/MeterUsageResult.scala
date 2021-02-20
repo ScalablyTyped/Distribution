@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacemeteringMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeterUsageResult extends js.Object {
+trait MeterUsageResult extends StObject {
   
   /**
     * Metering record id.
@@ -21,24 +22,12 @@ object MeterUsageResult {
   }
   
   @scala.inline
-  implicit class MeterUsageResultOps[Self <: MeterUsageResult] (val x: Self) extends AnyVal {
+  implicit class MeterUsageResultMutableBuilder[Self <: MeterUsageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeteringRecordId(value: String): Self = StObject.set(x, "MeteringRecordId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMeteringRecordId(value: String): Self = this.set("MeteringRecordId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeteringRecordId: Self = this.set("MeteringRecordId", js.undefined)
+    def setMeteringRecordIdUndefined: Self = StObject.set(x, "MeteringRecordId", js.undefined)
   }
 }

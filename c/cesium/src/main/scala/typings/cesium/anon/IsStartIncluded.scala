@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsStartIncluded extends js.Object {
+trait IsStartIncluded extends StObject {
   
   var data: js.UndefOr[js.Any] = js.native
   
@@ -24,39 +25,27 @@ object IsStartIncluded {
   }
   
   @scala.inline
-  implicit class IsStartIncludedOps[Self <: IsStartIncluded] (val x: Self) extends AnyVal {
+  implicit class IsStartIncludedMutableBuilder[Self <: IsStartIncluded] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsStartIncluded(value: Boolean): Self = StObject.set(x, "isStartIncluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIso8601(value: String): Self = this.set("iso8601", value.asInstanceOf[js.Any])
+    def setIsStartIncludedUndefined: Self = StObject.set(x, "isStartIncluded", js.undefined)
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setIsStopIncluded(value: Boolean): Self = StObject.set(x, "isStopIncluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setIsStopIncludedUndefined: Self = StObject.set(x, "isStopIncluded", js.undefined)
     
     @scala.inline
-    def setIsStartIncluded(value: Boolean): Self = this.set("isStartIncluded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsStartIncluded: Self = this.set("isStartIncluded", js.undefined)
-    
-    @scala.inline
-    def setIsStopIncluded(value: Boolean): Self = this.set("isStopIncluded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsStopIncluded: Self = this.set("isStopIncluded", js.undefined)
+    def setIso8601(value: String): Self = StObject.set(x, "iso8601", value.asInstanceOf[js.Any])
   }
 }

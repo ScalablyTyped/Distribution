@@ -1,11 +1,12 @@
 package typings.firmata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SerialPinTypes extends js.Object {
+trait SerialPinTypes extends StObject {
   
   var RES_RX0: SERIAL_PIN_TYPE = js.native
   
@@ -41,42 +42,30 @@ object SerialPinTypes {
   }
   
   @scala.inline
-  implicit class SerialPinTypesOps[Self <: SerialPinTypes] (val x: Self) extends AnyVal {
+  implicit class SerialPinTypesMutableBuilder[Self <: SerialPinTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRES_RX0(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRES_RX1(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRES_RX2(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRES_RX0(value: SERIAL_PIN_TYPE): Self = this.set("RES_RX0", value.asInstanceOf[js.Any])
+    def setRES_RX3(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRES_RX1(value: SERIAL_PIN_TYPE): Self = this.set("RES_RX1", value.asInstanceOf[js.Any])
+    def setRES_TX0(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRES_RX2(value: SERIAL_PIN_TYPE): Self = this.set("RES_RX2", value.asInstanceOf[js.Any])
+    def setRES_TX1(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRES_RX3(value: SERIAL_PIN_TYPE): Self = this.set("RES_RX3", value.asInstanceOf[js.Any])
+    def setRES_TX2(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRES_TX0(value: SERIAL_PIN_TYPE): Self = this.set("RES_TX0", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRES_TX1(value: SERIAL_PIN_TYPE): Self = this.set("RES_TX1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRES_TX2(value: SERIAL_PIN_TYPE): Self = this.set("RES_TX2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRES_TX3(value: SERIAL_PIN_TYPE): Self = this.set("RES_TX3", value.asInstanceOf[js.Any])
+    def setRES_TX3(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_TX3", value.asInstanceOf[js.Any])
   }
 }

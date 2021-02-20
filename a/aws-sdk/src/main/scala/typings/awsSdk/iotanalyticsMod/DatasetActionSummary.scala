@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetActionSummary extends js.Object {
+trait DatasetActionSummary extends StObject {
   
   /**
     * The name of the action that automatically creates the dataset's contents.
@@ -26,30 +27,18 @@ object DatasetActionSummary {
   }
   
   @scala.inline
-  implicit class DatasetActionSummaryOps[Self <: DatasetActionSummary] (val x: Self) extends AnyVal {
+  implicit class DatasetActionSummaryMutableBuilder[Self <: DatasetActionSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionName(value: DatasetActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionType(value: DatasetActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: DatasetActionName): Self = this.set("actionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionName: Self = this.set("actionName", js.undefined)
-    
-    @scala.inline
-    def setActionType(value: DatasetActionType): Self = this.set("actionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionType: Self = this.set("actionType", js.undefined)
+    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
   }
 }

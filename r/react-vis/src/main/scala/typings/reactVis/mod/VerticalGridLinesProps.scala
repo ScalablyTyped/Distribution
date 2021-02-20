@@ -2,16 +2,17 @@ package typings.reactVis.mod
 
 import typings.react.mod.CSSProperties
 import typings.reactVis.reactVisStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VerticalGridLinesProps extends js.Object {
+trait VerticalGridLinesProps extends StObject {
   
   var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
   
-   // default: 'vertical'
+  // default: 'vertical'
   var attr: js.UndefOr[String] = js.native
   
   var direction: js.UndefOr[vertical] = js.native
@@ -40,7 +41,7 @@ trait VerticalGridLinesProps extends js.Object {
   
   var top: js.UndefOr[Double] = js.native
   
-   // default: 'x'
+  // default: 'x'
   var width: js.UndefOr[Double] = js.native
 }
 object VerticalGridLinesProps {
@@ -52,117 +53,105 @@ object VerticalGridLinesProps {
   }
   
   @scala.inline
-  implicit class VerticalGridLinesPropsOps[Self <: VerticalGridLinesProps] (val x: Self) extends AnyVal {
+  implicit class VerticalGridLinesPropsMutableBuilder[Self <: VerticalGridLinesProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: String | AnimationParam | Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setDirection(value: vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttr(value: String): Self = this.set("attr", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteAttr: Self = this.set("attr", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: vertical): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setInnerHeight(value: Double): Self = StObject.set(x, "innerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setInnerHeightUndefined: Self = StObject.set(x, "innerHeight", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setInnerWidth(value: Double): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerHeight(value: Double): Self = this.set("innerHeight", value.asInstanceOf[js.Any])
+    def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
     
     @scala.inline
-    def deleteInnerHeight: Self = this.set("innerHeight", js.undefined)
+    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerWidth(value: Double): Self = this.set("innerWidth", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteInnerWidth: Self = this.set("innerWidth", js.undefined)
+    def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBottom(value: Double): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginRight(value: Double): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setTickTotal(value: Double): Self = StObject.set(x, "tickTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTickTotalUndefined: Self = StObject.set(x, "tickTotal", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTickValues(value: js.Array[_]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickTotal(value: Double): Self = this.set("tickTotal", value.asInstanceOf[js.Any])
+    def setTickValuesUndefined: Self = StObject.set(x, "tickValues", js.undefined)
     
     @scala.inline
-    def deleteTickTotal: Self = this.set("tickTotal", js.undefined)
+    def setTickValuesVarargs(value: js.Any*): Self = StObject.set(x, "tickValues", js.Array(value :_*))
     
     @scala.inline
-    def setTickValuesVarargs(value: js.Any*): Self = this.set("tickValues", js.Array(value :_*))
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickValues(value: js.Array[_]): Self = this.set("tickValues", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteTickValues: Self = this.set("tickValues", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

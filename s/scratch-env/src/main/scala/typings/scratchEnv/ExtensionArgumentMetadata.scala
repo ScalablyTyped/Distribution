@@ -1,13 +1,14 @@
 package typings.scratchEnv
 
 import typings.scratchEnv.Scratch.ArgumentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** All the metadata needed to register an argument for an extension block. */
 @js.native
-trait ExtensionArgumentMetadata extends js.Object {
+trait ExtensionArgumentMetadata extends StObject {
   
   /** The default value of this argument. */
   var defaultValue: js.UndefOr[js.Any] = js.native
@@ -28,33 +29,21 @@ object ExtensionArgumentMetadata {
   }
   
   @scala.inline
-  implicit class ExtensionArgumentMetadataOps[Self <: ExtensionArgumentMetadata] (val x: Self) extends AnyVal {
+  implicit class ExtensionArgumentMetadataMutableBuilder[Self <: ExtensionArgumentMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ValueOf[ArgumentType]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
-    
-    @scala.inline
-    def setMenu(value: String): Self = this.set("menu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
+    def setType(value: ValueOf[ArgumentType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,16 +1,16 @@
 package typings.dotObject
 
-import org.scalablytyped.runtime.TopLevel
 import typings.dotObject.DotObject.Dot
 import typings.dotObject.DotObject.DotConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("dot")
   @js.native
   class dot protected () extends Dot {
     def this(separator: String) = this()
@@ -27,6 +27,9 @@ object global extends js.Object {
     def this(separator: String, `override`: Boolean, useArray: js.UndefOr[scala.Nothing], useBrackets: Boolean) = this()
     def this(separator: String, `override`: Boolean, useArray: Boolean, useBrackets: Boolean) = this()
   }
+  @JSGlobal("dot")
   @js.native
-  object dot extends TopLevel[DotConstructor]
+  def dot: DotConstructor = js.native
+  @scala.inline
+  def dot_=(x: DotConstructor): Unit = js.Dynamic.global.updateDynamic("dot")(x.asInstanceOf[js.Any])
 }

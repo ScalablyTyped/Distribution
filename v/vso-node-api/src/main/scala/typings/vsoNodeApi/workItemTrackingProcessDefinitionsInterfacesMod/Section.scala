@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Section extends js.Object {
+trait Section extends StObject {
   
   var groups: js.Array[Group] = js.native
   
@@ -28,30 +29,18 @@ object Section {
   }
   
   @scala.inline
-  implicit class SectionOps[Self <: Section] (val x: Self) extends AnyVal {
+  implicit class SectionMutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroups(value: js.Array[Group]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupsVarargs(value: Group*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: Group*): Self = this.set("groups", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroups(value: js.Array[Group]): Self = this.set("groups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverridden(value: Boolean): Self = this.set("overridden", value.asInstanceOf[js.Any])
+    def setOverridden(value: Boolean): Self = StObject.set(x, "overridden", value.asInstanceOf[js.Any])
   }
 }

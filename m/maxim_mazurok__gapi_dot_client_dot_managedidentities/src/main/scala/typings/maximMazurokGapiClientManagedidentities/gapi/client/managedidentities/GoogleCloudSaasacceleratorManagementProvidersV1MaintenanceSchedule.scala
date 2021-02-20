@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule extends js.Object {
+trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule extends StObject {
   
   /** Can this scheduled update be rescheduled? By default, it's true and API needs to do explicitly check whether it's set, if it's set as false explicitly, it's false */
   var canReschedule: js.UndefOr[Boolean] = js.native
@@ -28,42 +29,30 @@ object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule {
   }
   
   @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceScheduleOps[Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceScheduleMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanReschedule(value: Boolean): Self = StObject.set(x, "canReschedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanRescheduleUndefined: Self = StObject.set(x, "canReschedule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanReschedule(value: Boolean): Self = this.set("canReschedule", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteCanReschedule: Self = this.set("canReschedule", js.undefined)
+    def setRolloutManagementPolicy(value: String): Self = StObject.set(x, "rolloutManagementPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setRolloutManagementPolicyUndefined: Self = StObject.set(x, "rolloutManagementPolicy", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRolloutManagementPolicy(value: String): Self = this.set("rolloutManagementPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRolloutManagementPolicy: Self = this.set("rolloutManagementPolicy", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

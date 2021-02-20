@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PickerItemProps extends js.Object {
+trait PickerItemProps extends StObject {
   
   var color: js.UndefOr[ColorValue] = js.native
   
@@ -24,39 +25,27 @@ object PickerItemProps {
   }
   
   @scala.inline
-  implicit class PickerItemPropsOps[Self <: PickerItemProps] (val x: Self) extends AnyVal {
+  implicit class PickerItemPropsMutableBuilder[Self <: PickerItemProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorValue): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestID: Self = this.set("testID", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

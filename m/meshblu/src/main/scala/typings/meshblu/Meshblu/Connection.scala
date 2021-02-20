@@ -1,12 +1,13 @@
 package typings.meshblu.Meshblu
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Connection extends js.Object {
+trait Connection extends StObject {
   
   def authenticate(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
   
@@ -247,135 +248,123 @@ object Connection {
   }
   
   @scala.inline
-  implicit class ConnectionOps[Self <: Connection] (val x: Self) extends AnyVal {
+  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticate(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferedSocketEmit(value: () => Unit): Self = StObject.set(x, "bufferedSocketEmit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClaimdevice(value: (Device, js.Function1[/* result */ Device, Unit]) => Connection): Self = StObject.set(x, "claimdevice", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAuthenticate(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("authenticate", js.Any.fromFunction2(value))
+    def setClose(value: js.Function1[/* result */ js.Any, Unit] => Connection): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBufferedSocketEmit(value: () => Unit): Self = this.set("bufferedSocketEmit", js.Any.fromFunction0(value))
+    def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClaimdevice(value: (Device, js.Function1[/* result */ Device, Unit]) => Connection): Self = this.set("claimdevice", js.Any.fromFunction2(value))
+    def setData(value: (DataInput, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClose(value: js.Function1[/* result */ js.Any, Unit] => Connection): Self = this.set("close", js.Any.fromFunction1(value))
+    def setDevice(value: (Device, js.Function1[/* result */ DeviceResponse, Unit]) => Connection): Self = StObject.set(x, "device", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setConnect(value: () => Unit): Self = this.set("connect", js.Any.fromFunction0(value))
+    def setDevices(value: (Color, js.Function1[/* result */ js.Array[DeviceResponse], Unit]) => Connection): Self = StObject.set(x, "devices", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setData(value: (DataInput, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("data", js.Any.fromFunction2(value))
+    def setDirectText(value: js.Any => Connection): Self = StObject.set(x, "directText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDevice(value: (Device, js.Function1[/* result */ DeviceResponse, Unit]) => Connection): Self = this.set("device", js.Any.fromFunction2(value))
+    def setEncryptMessage(value: (String, js.Any, ConnectionOptions, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "encryptMessage", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDevices(value: (Color, js.Function1[/* result */ js.Array[DeviceResponse], Unit]) => Connection): Self = this.set("devices", js.Any.fromFunction2(value))
+    def setEvents(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "events", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDirectText(value: js.Any => Connection): Self = this.set("directText", js.Any.fromFunction1(value))
+    def setGenerateAndStoreToken(value: (Device, js.Function1[/* result */ ConnectionOptions, Unit]) => Unit): Self = StObject.set(x, "generateAndStoreToken", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEncryptMessage(value: (String, js.Any, ConnectionOptions, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("encryptMessage", js.Any.fromFunction4(value))
+    def setGenerateKeyPair(value: () => KeyPair): Self = StObject.set(x, "generateKeyPair", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEvents(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("events", js.Any.fromFunction2(value))
+    def setGetPublicKey(value: (String, js.Function2[/* err */ Error, /* publicKey */ js.Any, Unit]) => Unit): Self = StObject.set(x, "getPublicKey", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGenerateAndStoreToken(value: (Device, js.Function1[/* result */ ConnectionOptions, Unit]) => Unit): Self = this.set("generateAndStoreToken", js.Any.fromFunction2(value))
+    def setGetdata(value: (GetDataInput, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "getdata", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGenerateKeyPair(value: () => KeyPair): Self = this.set("generateKeyPair", js.Any.fromFunction0(value))
+    def setIdentify(value: () => Connection): Self = StObject.set(x, "identify", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPublicKey(value: (String, js.Function2[/* err */ Error, /* publicKey */ js.Any, Unit]) => Unit): Self = this.set("getPublicKey", js.Any.fromFunction2(value))
+    def setLocaldevices(value: js.Function1[/* result */ js.Any, Unit] => Connection): Self = StObject.set(x, "localdevices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetdata(value: (GetDataInput, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("getdata", js.Any.fromFunction2(value))
+    def setMessage(value: (MessagePayload, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIdentify(value: () => Connection): Self = this.set("identify", js.Any.fromFunction0(value))
+    def setMydevices(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "mydevices", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLocaldevices(value: js.Function1[/* result */ js.Any, Unit] => Connection): Self = this.set("localdevices", js.Any.fromFunction1(value))
+    def setParseUrl(value: (String, String) => String): Self = StObject.set(x, "parseUrl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMessage(value: (MessagePayload, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("message", js.Any.fromFunction2(value))
+    def setReconnect(value: () => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMydevices(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("mydevices", js.Any.fromFunction2(value))
+    def setRegister(value: (RegisterData, js.Function1[/* result */ RegisterResponse, Unit]) => Connection): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setParseUrl(value: (String, String) => String): Self = this.set("parseUrl", js.Any.fromFunction2(value))
+    def setResetToken(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Unit): Self = StObject.set(x, "resetToken", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReconnect(value: () => Unit): Self = this.set("reconnect", js.Any.fromFunction0(value))
+    def setRevokeToken(value: (ConnectionOptions, js.Function1[/* result */ Device, Unit]) => Unit): Self = StObject.set(x, "revokeToken", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegister(value: (RegisterData, js.Function1[/* result */ RegisterResponse, Unit]) => Connection): Self = this.set("register", js.Any.fromFunction2(value))
+    def setSend(value: String => Connection): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResetToken(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Unit): Self = this.set("resetToken", js.Any.fromFunction2(value))
+    def setSetPrivateKey(value: String => Unit): Self = StObject.set(x, "setPrivateKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRevokeToken(value: (ConnectionOptions, js.Function1[/* result */ Device, Unit]) => Unit): Self = this.set("revokeToken", js.Any.fromFunction2(value))
+    def setSetup(value: () => Connection): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSend(value: String => Connection): Self = this.set("send", js.Any.fromFunction1(value))
+    def setSign(value: js.Any => String): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPrivateKey(value: String => Unit): Self = this.set("setPrivateKey", js.Any.fromFunction1(value))
+    def setStatus(value: js.Any => Connection): Self = StObject.set(x, "status", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetup(value: () => Connection): Self = this.set("setup", js.Any.fromFunction0(value))
+    def setSubscribe(value: (SubscribeData, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSign(value: js.Any => String): Self = this.set("sign", js.Any.fromFunction1(value))
+    def setSubscribeText(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "subscribeText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStatus(value: js.Any => Connection): Self = this.set("status", js.Any.fromFunction1(value))
+    def setTextBroadcast(value: js.Any => Connection): Self = StObject.set(x, "textBroadcast", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSubscribe(value: (SubscribeData, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("subscribe", js.Any.fromFunction2(value))
+    def setUnclaimeddevices(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "unclaimeddevices", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSubscribeText(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("subscribeText", js.Any.fromFunction2(value))
+    def setUnregister(value: (Device, js.Function1[/* result */ Device, Unit]) => Connection): Self = StObject.set(x, "unregister", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTextBroadcast(value: js.Any => Connection): Self = this.set("textBroadcast", js.Any.fromFunction1(value))
+    def setUnsubscribe(value: (UnsubscribeData, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUnclaimeddevices(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("unclaimeddevices", js.Any.fromFunction2(value))
+    def setUnsubscribeText(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = StObject.set(x, "unsubscribeText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUnregister(value: (Device, js.Function1[/* result */ Device, Unit]) => Connection): Self = this.set("unregister", js.Any.fromFunction2(value))
+    def setUpdate(value: (UpdateData, js.Function1[/* result */ UpdateSuccess, Unit]) => Connection): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUnsubscribe(value: (UnsubscribeData, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("unsubscribe", js.Any.fromFunction2(value))
+    def setVerify(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUnsubscribeText(value: (js.Any, js.Function1[/* result */ js.Any, Unit]) => Connection): Self = this.set("unsubscribeText", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdate(value: (UpdateData, js.Function1[/* result */ UpdateSuccess, Unit]) => Connection): Self = this.set("update", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVerify(value: (js.Any, js.Any) => js.Any): Self = this.set("verify", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWhoami(value: (js.Any, js.Function1[/* result */ DeviceResponse, Unit]) => Connection): Self = this.set("whoami", js.Any.fromFunction2(value))
+    def setWhoami(value: (js.Any, js.Function1[/* result */ DeviceResponse, Unit]) => Connection): Self = StObject.set(x, "whoami", js.Any.fromFunction2(value))
   }
 }

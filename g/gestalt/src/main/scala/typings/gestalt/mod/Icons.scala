@@ -1,5 +1,6 @@
 package typings.gestalt.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -176,7 +177,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gestalt.gestaltStrings.`workflow-status-unstarted`
   - typings.gestalt.gestaltStrings.`workflow-status-warning`
 */
-trait Icons extends js.Object
+trait Icons extends StObject
 object Icons {
   
   @scala.inline

@@ -1,16 +1,16 @@
 package typings.antlr4
 
 import typings.antlr4.tokenMod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4/IntervalSet", JSImport.Namespace)
-@js.native
-object intervalSetMod extends js.Object {
+object intervalSetMod {
   
+  @JSImport("antlr4/IntervalSet", "Interval")
   @js.native
-  class Interval protected () extends js.Object {
+  class Interval protected () extends StObject {
     def this(start: Double, stop: Double) = this()
     
     def contains(item: Double): Boolean = js.native
@@ -22,8 +22,9 @@ object intervalSetMod extends js.Object {
     val stop: Double = js.native
   }
   
+  @JSImport("antlr4/IntervalSet", "IntervalSet")
   @js.native
-  class IntervalSet () extends js.Object {
+  class IntervalSet () extends StObject {
     
     def addInterval(interval: Interval): Unit = js.native
     

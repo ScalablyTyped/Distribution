@@ -1,11 +1,12 @@
 package typings.antDesignReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoHeight extends js.Object {
+trait AutoHeight extends StObject {
   
   var autoHeight: Boolean = js.native
   
@@ -53,54 +54,42 @@ object AutoHeight {
   }
   
   @scala.inline
-  implicit class AutoHeightOps[Self <: AutoHeight] (val x: Self) extends AnyVal {
+  implicit class AutoHeightMutableBuilder[Self <: AutoHeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHeight(value: Boolean): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: Boolean): Self = this.set("clear", value.asInstanceOf[js.Any])
+    def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setKeyboardType(value: String): Self = StObject.set(x, "keyboardType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKeyboardType(value: String): Self = this.set("keyboardType", value.asInstanceOf[js.Any])
+    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLast(value: Boolean): Self = this.set("last", value.asInstanceOf[js.Any])
+    def setOnErrorClick(value: () => Unit): Self = StObject.set(x, "onErrorClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnBlur(value: () => Unit): Self = this.set("onBlur", js.Any.fromFunction0(value))
+    def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnChange(value: () => Unit): Self = this.set("onChange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnErrorClick(value: () => Unit): Self = this.set("onErrorClick", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnFocus(value: () => Unit): Self = this.set("onFocus", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
   }
 }

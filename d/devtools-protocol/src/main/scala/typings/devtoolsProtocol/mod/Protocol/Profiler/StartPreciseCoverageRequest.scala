@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Profiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartPreciseCoverageRequest extends js.Object {
+trait StartPreciseCoverageRequest extends StObject {
   
   /**
     * Allow the backend to send updates on its own initiative
@@ -31,36 +32,24 @@ object StartPreciseCoverageRequest {
   }
   
   @scala.inline
-  implicit class StartPreciseCoverageRequestOps[Self <: StartPreciseCoverageRequest] (val x: Self) extends AnyVal {
+  implicit class StartPreciseCoverageRequestMutableBuilder[Self <: StartPreciseCoverageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowTriggeredUpdates(value: Boolean): Self = StObject.set(x, "allowTriggeredUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowTriggeredUpdatesUndefined: Self = StObject.set(x, "allowTriggeredUpdates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallCount(value: Boolean): Self = StObject.set(x, "callCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTriggeredUpdates(value: Boolean): Self = this.set("allowTriggeredUpdates", value.asInstanceOf[js.Any])
+    def setCallCountUndefined: Self = StObject.set(x, "callCount", js.undefined)
     
     @scala.inline
-    def deleteAllowTriggeredUpdates: Self = this.set("allowTriggeredUpdates", js.undefined)
+    def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallCount(value: Boolean): Self = this.set("callCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCallCount: Self = this.set("callCount", js.undefined)
-    
-    @scala.inline
-    def setDetailed(value: Boolean): Self = this.set("detailed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetailed: Self = this.set("detailed", js.undefined)
+    def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
   }
 }

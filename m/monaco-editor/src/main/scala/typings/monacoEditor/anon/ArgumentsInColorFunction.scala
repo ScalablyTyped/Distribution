@@ -3,12 +3,13 @@ package typings.monacoEditor.anon
 import typings.monacoEditor.monacoEditorStrings.error
 import typings.monacoEditor.monacoEditorStrings.ignore
 import typings.monacoEditor.monacoEditorStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArgumentsInColorFunction extends js.Object {
+trait ArgumentsInColorFunction extends StObject {
   
   val argumentsInColorFunction: js.UndefOr[ignore | warning | error] = js.native
   
@@ -55,126 +56,114 @@ object ArgumentsInColorFunction {
   }
   
   @scala.inline
-  implicit class ArgumentsInColorFunctionOps[Self <: ArgumentsInColorFunction] (val x: Self) extends AnyVal {
+  implicit class ArgumentsInColorFunctionMutableBuilder[Self <: ArgumentsInColorFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgumentsInColorFunction(value: ignore | warning | error): Self = StObject.set(x, "argumentsInColorFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsInColorFunctionUndefined: Self = StObject.set(x, "argumentsInColorFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoxModel(value: ignore | warning | error): Self = StObject.set(x, "boxModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentsInColorFunction(value: ignore | warning | error): Self = this.set("argumentsInColorFunction", value.asInstanceOf[js.Any])
+    def setBoxModelUndefined: Self = StObject.set(x, "boxModel", js.undefined)
     
     @scala.inline
-    def deleteArgumentsInColorFunction: Self = this.set("argumentsInColorFunction", js.undefined)
+    def setCompatibleVendorPrefixes(value: ignore | warning | error): Self = StObject.set(x, "compatibleVendorPrefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxModel(value: ignore | warning | error): Self = this.set("boxModel", value.asInstanceOf[js.Any])
+    def setCompatibleVendorPrefixesUndefined: Self = StObject.set(x, "compatibleVendorPrefixes", js.undefined)
     
     @scala.inline
-    def deleteBoxModel: Self = this.set("boxModel", js.undefined)
+    def setDuplicateProperties(value: ignore | warning | error): Self = StObject.set(x, "duplicateProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatibleVendorPrefixes(value: ignore | warning | error): Self = this.set("compatibleVendorPrefixes", value.asInstanceOf[js.Any])
+    def setDuplicatePropertiesUndefined: Self = StObject.set(x, "duplicateProperties", js.undefined)
     
     @scala.inline
-    def deleteCompatibleVendorPrefixes: Self = this.set("compatibleVendorPrefixes", js.undefined)
+    def setEmptyRules(value: ignore | warning | error): Self = StObject.set(x, "emptyRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicateProperties(value: ignore | warning | error): Self = this.set("duplicateProperties", value.asInstanceOf[js.Any])
+    def setEmptyRulesUndefined: Self = StObject.set(x, "emptyRules", js.undefined)
     
     @scala.inline
-    def deleteDuplicateProperties: Self = this.set("duplicateProperties", js.undefined)
+    def setFloat(value: ignore | warning | error): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyRules(value: ignore | warning | error): Self = this.set("emptyRules", value.asInstanceOf[js.Any])
+    def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
     
     @scala.inline
-    def deleteEmptyRules: Self = this.set("emptyRules", js.undefined)
+    def setFontFaceProperties(value: ignore | warning | error): Self = StObject.set(x, "fontFaceProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloat(value: ignore | warning | error): Self = this.set("float", value.asInstanceOf[js.Any])
+    def setFontFacePropertiesUndefined: Self = StObject.set(x, "fontFaceProperties", js.undefined)
     
     @scala.inline
-    def deleteFloat: Self = this.set("float", js.undefined)
+    def setHexColorLength(value: ignore | warning | error): Self = StObject.set(x, "hexColorLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFaceProperties(value: ignore | warning | error): Self = this.set("fontFaceProperties", value.asInstanceOf[js.Any])
+    def setHexColorLengthUndefined: Self = StObject.set(x, "hexColorLength", js.undefined)
     
     @scala.inline
-    def deleteFontFaceProperties: Self = this.set("fontFaceProperties", js.undefined)
+    def setIdSelector(value: ignore | warning | error): Self = StObject.set(x, "idSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHexColorLength(value: ignore | warning | error): Self = this.set("hexColorLength", value.asInstanceOf[js.Any])
+    def setIdSelectorUndefined: Self = StObject.set(x, "idSelector", js.undefined)
     
     @scala.inline
-    def deleteHexColorLength: Self = this.set("hexColorLength", js.undefined)
+    def setIeHack(value: ignore | warning | error): Self = StObject.set(x, "ieHack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdSelector(value: ignore | warning | error): Self = this.set("idSelector", value.asInstanceOf[js.Any])
+    def setIeHackUndefined: Self = StObject.set(x, "ieHack", js.undefined)
     
     @scala.inline
-    def deleteIdSelector: Self = this.set("idSelector", js.undefined)
+    def setImportStatement(value: ignore | warning | error): Self = StObject.set(x, "importStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIeHack(value: ignore | warning | error): Self = this.set("ieHack", value.asInstanceOf[js.Any])
+    def setImportStatementUndefined: Self = StObject.set(x, "importStatement", js.undefined)
     
     @scala.inline
-    def deleteIeHack: Self = this.set("ieHack", js.undefined)
+    def setImportant(value: ignore | warning | error): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportStatement(value: ignore | warning | error): Self = this.set("importStatement", value.asInstanceOf[js.Any])
+    def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
     
     @scala.inline
-    def deleteImportStatement: Self = this.set("importStatement", js.undefined)
+    def setPropertyIgnoredDueToDisplay(value: ignore | warning | error): Self = StObject.set(x, "propertyIgnoredDueToDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportant(value: ignore | warning | error): Self = this.set("important", value.asInstanceOf[js.Any])
+    def setPropertyIgnoredDueToDisplayUndefined: Self = StObject.set(x, "propertyIgnoredDueToDisplay", js.undefined)
     
     @scala.inline
-    def deleteImportant: Self = this.set("important", js.undefined)
+    def setUniversalSelector(value: ignore | warning | error): Self = StObject.set(x, "universalSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyIgnoredDueToDisplay(value: ignore | warning | error): Self = this.set("propertyIgnoredDueToDisplay", value.asInstanceOf[js.Any])
+    def setUniversalSelectorUndefined: Self = StObject.set(x, "universalSelector", js.undefined)
     
     @scala.inline
-    def deletePropertyIgnoredDueToDisplay: Self = this.set("propertyIgnoredDueToDisplay", js.undefined)
+    def setUnknownProperties(value: ignore | warning | error): Self = StObject.set(x, "unknownProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniversalSelector(value: ignore | warning | error): Self = this.set("universalSelector", value.asInstanceOf[js.Any])
+    def setUnknownPropertiesUndefined: Self = StObject.set(x, "unknownProperties", js.undefined)
     
     @scala.inline
-    def deleteUniversalSelector: Self = this.set("universalSelector", js.undefined)
+    def setUnknownVendorSpecificProperties(value: ignore | warning | error): Self = StObject.set(x, "unknownVendorSpecificProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnknownProperties(value: ignore | warning | error): Self = this.set("unknownProperties", value.asInstanceOf[js.Any])
+    def setUnknownVendorSpecificPropertiesUndefined: Self = StObject.set(x, "unknownVendorSpecificProperties", js.undefined)
     
     @scala.inline
-    def deleteUnknownProperties: Self = this.set("unknownProperties", js.undefined)
+    def setVendorPrefix(value: ignore | warning | error): Self = StObject.set(x, "vendorPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnknownVendorSpecificProperties(value: ignore | warning | error): Self = this.set("unknownVendorSpecificProperties", value.asInstanceOf[js.Any])
+    def setVendorPrefixUndefined: Self = StObject.set(x, "vendorPrefix", js.undefined)
     
     @scala.inline
-    def deleteUnknownVendorSpecificProperties: Self = this.set("unknownVendorSpecificProperties", js.undefined)
+    def setZeroUnits(value: ignore | warning | error): Self = StObject.set(x, "zeroUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVendorPrefix(value: ignore | warning | error): Self = this.set("vendorPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendorPrefix: Self = this.set("vendorPrefix", js.undefined)
-    
-    @scala.inline
-    def setZeroUnits(value: ignore | warning | error): Self = this.set("zeroUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZeroUnits: Self = this.set("zeroUnits", js.undefined)
+    def setZeroUnitsUndefined: Self = StObject.set(x, "zeroUnits", js.undefined)
   }
 }

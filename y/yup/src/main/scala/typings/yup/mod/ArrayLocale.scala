@@ -3,12 +3,13 @@ package typings.yup.mod
 import typings.yup.anon.Max
 import typings.yup.anon.Min
 import typings.yup.anon.PartialTestMessageParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayLocale extends js.Object {
+trait ArrayLocale extends StObject {
   
   var max: js.UndefOr[TestOptionsMessage[Max, _]] = js.native
   
@@ -23,36 +24,24 @@ object ArrayLocale {
   }
   
   @scala.inline
-  implicit class ArrayLocaleOps[Self <: ArrayLocale] (val x: Self) extends AnyVal {
+  implicit class ArrayLocaleMutableBuilder[Self <: ArrayLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: TestOptionsMessage[Max, _]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxFunction1(value: /* params */ Max with PartialTestMessageParams => _): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMaxFunction1(value: /* params */ Max with PartialTestMessageParams => _): Self = this.set("max", js.Any.fromFunction1(value))
+    def setMin(value: TestOptionsMessage[Min, _]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: TestOptionsMessage[Max, _]): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinFunction1(value: /* params */ Min with PartialTestMessageParams => _): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
-    
-    @scala.inline
-    def setMinFunction1(value: /* params */ Min with PartialTestMessageParams => _): Self = this.set("min", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMin(value: TestOptionsMessage[Min, _]): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the client platforms with which a PlayReady-ND certificate can be associated. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDCertificatePlatformID")
 @js.native
-object NDCertificatePlatformID extends js.Object {
+object NDCertificatePlatformID extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

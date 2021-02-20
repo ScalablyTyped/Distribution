@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrgChartSpec extends js.Object {
+trait OrgChartSpec extends StObject {
   
   /** The data containing the labels for all the nodes in the chart. Labels must be unique. */
   var labels: js.UndefOr[ChartData] = js.native
@@ -40,66 +41,54 @@ object OrgChartSpec {
   }
   
   @scala.inline
-  implicit class OrgChartSpecOps[Self <: OrgChartSpec] (val x: Self) extends AnyVal {
+  implicit class OrgChartSpecMutableBuilder[Self <: OrgChartSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: ChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeColor(value: Color): Self = StObject.set(x, "nodeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: ChartData): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNodeColorStyle(value: ColorStyle): Self = StObject.set(x, "nodeColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setNodeColorStyleUndefined: Self = StObject.set(x, "nodeColorStyle", js.undefined)
     
     @scala.inline
-    def setNodeColor(value: Color): Self = this.set("nodeColor", value.asInstanceOf[js.Any])
+    def setNodeColorUndefined: Self = StObject.set(x, "nodeColor", js.undefined)
     
     @scala.inline
-    def deleteNodeColor: Self = this.set("nodeColor", js.undefined)
+    def setNodeSize(value: String): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeColorStyle(value: ColorStyle): Self = this.set("nodeColorStyle", value.asInstanceOf[js.Any])
+    def setNodeSizeUndefined: Self = StObject.set(x, "nodeSize", js.undefined)
     
     @scala.inline
-    def deleteNodeColorStyle: Self = this.set("nodeColorStyle", js.undefined)
+    def setParentLabels(value: ChartData): Self = StObject.set(x, "parentLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeSize(value: String): Self = this.set("nodeSize", value.asInstanceOf[js.Any])
+    def setParentLabelsUndefined: Self = StObject.set(x, "parentLabels", js.undefined)
     
     @scala.inline
-    def deleteNodeSize: Self = this.set("nodeSize", js.undefined)
+    def setSelectedNodeColor(value: Color): Self = StObject.set(x, "selectedNodeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentLabels(value: ChartData): Self = this.set("parentLabels", value.asInstanceOf[js.Any])
+    def setSelectedNodeColorStyle(value: ColorStyle): Self = StObject.set(x, "selectedNodeColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentLabels: Self = this.set("parentLabels", js.undefined)
+    def setSelectedNodeColorStyleUndefined: Self = StObject.set(x, "selectedNodeColorStyle", js.undefined)
     
     @scala.inline
-    def setSelectedNodeColor(value: Color): Self = this.set("selectedNodeColor", value.asInstanceOf[js.Any])
+    def setSelectedNodeColorUndefined: Self = StObject.set(x, "selectedNodeColor", js.undefined)
     
     @scala.inline
-    def deleteSelectedNodeColor: Self = this.set("selectedNodeColor", js.undefined)
+    def setTooltips(value: ChartData): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedNodeColorStyle(value: ColorStyle): Self = this.set("selectedNodeColorStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedNodeColorStyle: Self = this.set("selectedNodeColorStyle", js.undefined)
-    
-    @scala.inline
-    def setTooltips(value: ChartData): Self = this.set("tooltips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltips: Self = this.set("tooltips", js.undefined)
+    def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
   }
 }

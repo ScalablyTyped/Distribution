@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkerMessageResponse extends js.Object {
+trait WorkerMessageResponse extends StObject {
   
   /** The service's response to a worker's health report. */
   var workerHealthReportResponse: js.UndefOr[WorkerHealthReportResponse] = js.native
@@ -25,36 +26,24 @@ object WorkerMessageResponse {
   }
   
   @scala.inline
-  implicit class WorkerMessageResponseOps[Self <: WorkerMessageResponse] (val x: Self) extends AnyVal {
+  implicit class WorkerMessageResponseMutableBuilder[Self <: WorkerMessageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkerHealthReportResponse(value: WorkerHealthReportResponse): Self = StObject.set(x, "workerHealthReportResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWorkerHealthReportResponseUndefined: Self = StObject.set(x, "workerHealthReportResponse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkerMetricsResponse(value: js.Any): Self = StObject.set(x, "workerMetricsResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerHealthReportResponse(value: WorkerHealthReportResponse): Self = this.set("workerHealthReportResponse", value.asInstanceOf[js.Any])
+    def setWorkerMetricsResponseUndefined: Self = StObject.set(x, "workerMetricsResponse", js.undefined)
     
     @scala.inline
-    def deleteWorkerHealthReportResponse: Self = this.set("workerHealthReportResponse", js.undefined)
+    def setWorkerShutdownNoticeResponse(value: js.Any): Self = StObject.set(x, "workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerMetricsResponse(value: js.Any): Self = this.set("workerMetricsResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerMetricsResponse: Self = this.set("workerMetricsResponse", js.undefined)
-    
-    @scala.inline
-    def setWorkerShutdownNoticeResponse(value: js.Any): Self = this.set("workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerShutdownNoticeResponse: Self = this.set("workerShutdownNoticeResponse", js.undefined)
+    def setWorkerShutdownNoticeResponseUndefined: Self = StObject.set(x, "workerShutdownNoticeResponse", js.undefined)
   }
 }

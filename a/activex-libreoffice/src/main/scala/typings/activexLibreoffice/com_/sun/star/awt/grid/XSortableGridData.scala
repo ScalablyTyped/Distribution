@@ -1,13 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.awt.grid
 
 import typings.activexLibreoffice.com_.sun.star.beans.Pair
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to sort the data represented by a {@link XGridDataModel} */
 @js.native
-trait XSortableGridData extends js.Object {
+trait XSortableGridData extends StObject {
   
   /**
     * returns the current sort order.
@@ -46,30 +47,18 @@ object XSortableGridData {
   }
   
   @scala.inline
-  implicit class XSortableGridDataOps[Self <: XSortableGridData] (val x: Self) extends AnyVal {
+  implicit class XSortableGridDataMutableBuilder[Self <: XSortableGridData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentSortOrder(value: Pair[Double, Boolean]): Self = StObject.set(x, "CurrentSortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentSortOrder(value: () => Pair[Double, Boolean]): Self = StObject.set(x, "getCurrentSortOrder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveColumnSort(value: () => Unit): Self = StObject.set(x, "removeColumnSort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentSortOrder(value: Pair[Double, Boolean]): Self = this.set("CurrentSortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetCurrentSortOrder(value: () => Pair[Double, Boolean]): Self = this.set("getCurrentSortOrder", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveColumnSort(value: () => Unit): Self = this.set("removeColumnSort", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSortByColumn(value: (Double, Boolean) => Unit): Self = this.set("sortByColumn", js.Any.fromFunction2(value))
+    def setSortByColumn(value: (Double, Boolean) => Unit): Self = StObject.set(x, "sortByColumn", js.Any.fromFunction2(value))
   }
 }

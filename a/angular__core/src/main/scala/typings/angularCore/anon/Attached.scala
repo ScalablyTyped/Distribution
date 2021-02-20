@@ -1,11 +1,12 @@
 package typings.angularCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attached extends js.Object {
+trait Attached extends StObject {
   
   var attached: Boolean = js.native
   
@@ -44,45 +45,33 @@ object Attached {
   }
   
   @scala.inline
-  implicit class AttachedOps[Self <: Attached] (val x: Self) extends AnyVal {
+  implicit class AttachedMutableBuilder[Self <: Attached] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckAlways(value: Boolean): Self = StObject.set(x, "checkAlways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationMode(value: Boolean): Self = StObject.set(x, "creationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttached(value: Boolean): Self = this.set("attached", value.asInstanceOf[js.Any])
+    def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckAlways(value: Boolean): Self = this.set("checkAlways", value.asInstanceOf[js.Any])
+    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationMode(value: Boolean): Self = this.set("creationMode", value.asInstanceOf[js.Any])
+    def setFirstViewPass(value: Boolean): Self = StObject.set(x, "firstViewPass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroyed(value: Boolean): Self = this.set("destroyed", value.asInstanceOf[js.Any])
+    def setIndexWithinInitPhase(value: Double): Self = StObject.set(x, "indexWithinInitPhase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirty(value: Boolean): Self = this.set("dirty", value.asInstanceOf[js.Any])
+    def setInitPhaseState(value: Double): Self = StObject.set(x, "initPhaseState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstViewPass(value: Boolean): Self = this.set("firstViewPass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndexWithinInitPhase(value: Double): Self = this.set("indexWithinInitPhase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitPhaseState(value: Double): Self = this.set("initPhaseState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsRoot(value: Boolean): Self = this.set("isRoot", value.asInstanceOf[js.Any])
+    def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
   }
 }

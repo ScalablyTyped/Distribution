@@ -8,13 +8,14 @@ import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.schemaMod.ReflectionFlags
 import typings.typedoc.schemaMod._ModelToObject
 import typings.typedoc.serializersMod.DecoratorWrapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<typedoc.typedoc/dist/lib/serialization/schema.Reflection> */
 @js.native
-trait PartialReflection extends js.Object {
+trait PartialReflection extends StObject {
   
   var children: js.UndefOr[js.Array[ModelToObject[Reflection]]] = js.native
   
@@ -57,156 +58,144 @@ object PartialReflection {
   }
   
   @scala.inline
-  implicit class PartialReflectionOps[Self <: PartialReflection] (val x: Self) extends AnyVal {
+  implicit class PartialReflectionMutableBuilder[Self <: PartialReflection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[ModelToObject[Reflection]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: ModelToObject[Reflection]*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: ModelToObject[Reflection]*): Self = this.set("children", js.Array(value :_*))
+    def setComment(value: ModelToObject[js.UndefOr[Comment]] | Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[ModelToObject[Reflection]]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setCommentVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "comment", js.Array(value :_*))
     
     @scala.inline
-    def setCommentVarargs(value: _ModelToObject[js.Any]*): Self = this.set("comment", js.Array(value :_*))
+    def setDecorates(value: ModelToObject[js.UndefOr[js.Array[Type]]] | js.Array[Type]): Self = StObject.set(x, "decorates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: ModelToObject[js.UndefOr[Comment]] | Comment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDecoratesUndefined: Self = StObject.set(x, "decorates", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setDecoratesVarargs(value: (Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "decorates", js.Array(value :_*))
     
     @scala.inline
-    def setDecoratesVarargs(value: (Type | _ModelToObject[js.Any])*): Self = this.set("decorates", js.Array(value :_*))
+    def setDecorators(value: ModelToObject[js.Array[DecoratorWrapper]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorates(value: ModelToObject[js.UndefOr[js.Array[Type]]] | js.Array[Type]): Self = this.set("decorates", value.asInstanceOf[js.Any])
+    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
     @scala.inline
-    def deleteDecorates: Self = this.set("decorates", js.undefined)
+    def setDecoratorsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
     @scala.inline
-    def setDecoratorsVarargs(value: _ModelToObject[js.Any]*): Self = this.set("decorators", js.Array(value :_*))
+    def setFlags(value: ReflectionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorators(value: ModelToObject[js.Array[DecoratorWrapper]]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    def setGetSignature(value: js.Array[ModelToObject[Reflection]]): Self = StObject.set(x, "getSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: ReflectionFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setGetSignatureUndefined: Self = StObject.set(x, "getSignature", js.undefined)
     
     @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
+    def setGetSignatureVarargs(value: ModelToObject[Reflection]*): Self = StObject.set(x, "getSignature", js.Array(value :_*))
     
     @scala.inline
-    def setGetSignatureVarargs(value: ModelToObject[Reflection]*): Self = this.set("getSignature", js.Array(value :_*))
+    def setId(value: ModelToObject[Double] | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSignature(value: js.Array[ModelToObject[Reflection]]): Self = this.set("getSignature", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGetSignature: Self = this.set("getSignature", js.undefined)
+    def setIdVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "id", js.Array(value :_*))
     
     @scala.inline
-    def setIdVarargs(value: _ModelToObject[js.Any]*): Self = this.set("id", js.Array(value :_*))
+    def setIndexSignature(value: js.Array[ModelToObject[Reflection]]): Self = StObject.set(x, "indexSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ModelToObject[Double] | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIndexSignatureUndefined: Self = StObject.set(x, "indexSignature", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIndexSignatureVarargs(value: ModelToObject[Reflection]*): Self = StObject.set(x, "indexSignature", js.Array(value :_*))
     
     @scala.inline
-    def setIndexSignatureVarargs(value: ModelToObject[Reflection]*): Self = this.set("indexSignature", js.Array(value :_*))
+    def setKind(value: ModelToObject[ReflectionKind] | ReflectionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexSignature(value: js.Array[ModelToObject[Reflection]]): Self = this.set("indexSignature", value.asInstanceOf[js.Any])
+    def setKindString(value: ModelToObject[js.UndefOr[String]] | String): Self = StObject.set(x, "kindString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexSignature: Self = this.set("indexSignature", js.undefined)
+    def setKindStringUndefined: Self = StObject.set(x, "kindString", js.undefined)
     
     @scala.inline
-    def setKindVarargs(value: _ModelToObject[js.Any]*): Self = this.set("kind", js.Array(value :_*))
+    def setKindStringVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "kindString", js.Array(value :_*))
     
     @scala.inline
-    def setKind(value: ModelToObject[ReflectionKind] | ReflectionKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "kind", js.Array(value :_*))
     
     @scala.inline
-    def setKindStringVarargs(value: _ModelToObject[js.Any]*): Self = this.set("kindString", js.Array(value :_*))
+    def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKindString(value: ModelToObject[js.UndefOr[String]] | String): Self = this.set("kindString", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKindString: Self = this.set("kindString", js.undefined)
+    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
     
     @scala.inline
-    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = this.set("name", js.Array(value :_*))
+    def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ModelToObject[String] | String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParameters(value: js.Array[ModelToObject[Reflection]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalName(value: String): Self = this.set("originalName", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteOriginalName: Self = this.set("originalName", js.undefined)
+    def setParametersVarargs(value: ModelToObject[Reflection]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParametersVarargs(value: ModelToObject[Reflection]*): Self = this.set("parameters", js.Array(value :_*))
+    def setSetSignature(value: js.Array[ModelToObject[Reflection]]): Self = StObject.set(x, "setSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Array[ModelToObject[Reflection]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setSetSignatureUndefined: Self = StObject.set(x, "setSignature", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setSetSignatureVarargs(value: ModelToObject[Reflection]*): Self = StObject.set(x, "setSignature", js.Array(value :_*))
     
     @scala.inline
-    def setSetSignatureVarargs(value: ModelToObject[Reflection]*): Self = this.set("setSignature", js.Array(value :_*))
+    def setSignatures(value: js.Array[ModelToObject[Reflection]]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSignature(value: js.Array[ModelToObject[Reflection]]): Self = this.set("setSignature", value.asInstanceOf[js.Any])
+    def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
     @scala.inline
-    def deleteSetSignature: Self = this.set("setSignature", js.undefined)
+    def setSignaturesVarargs(value: ModelToObject[Reflection]*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
     @scala.inline
-    def setSignaturesVarargs(value: ModelToObject[Reflection]*): Self = this.set("signatures", js.Array(value :_*))
+    def setTypeParameter(value: js.Array[ModelToObject[Reflection]]): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatures(value: js.Array[ModelToObject[Reflection]]): Self = this.set("signatures", value.asInstanceOf[js.Any])
+    def setTypeParameterUndefined: Self = StObject.set(x, "typeParameter", js.undefined)
     
     @scala.inline
-    def deleteSignatures: Self = this.set("signatures", js.undefined)
-    
-    @scala.inline
-    def setTypeParameterVarargs(value: ModelToObject[Reflection]*): Self = this.set("typeParameter", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypeParameter(value: js.Array[ModelToObject[Reflection]]): Self = this.set("typeParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeParameter: Self = this.set("typeParameter", js.undefined)
+    def setTypeParameterVarargs(value: ModelToObject[Reflection]*): Self = StObject.set(x, "typeParameter", js.Array(value :_*))
   }
 }

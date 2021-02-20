@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointCloudRendererProperties extends js.Object {
+trait PointCloudRendererProperties extends StObject {
   
   /**
     * Reduces the brightness of the point's color, based on the value of another field, usually `intensity`.
@@ -37,36 +38,24 @@ object PointCloudRendererProperties {
   }
   
   @scala.inline
-  implicit class PointCloudRendererPropertiesOps[Self <: PointCloudRendererProperties] (val x: Self) extends AnyVal {
+  implicit class PointCloudRendererPropertiesMutableBuilder[Self <: PointCloudRendererProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorModulation(value: PointCloudRendererColorModulation): Self = StObject.set(x, "colorModulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorModulationUndefined: Self = StObject.set(x, "colorModulation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPointSizeAlgorithm(value: PointCloudRendererPointSizeAlgorithm): Self = StObject.set(x, "pointSizeAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorModulation(value: PointCloudRendererColorModulation): Self = this.set("colorModulation", value.asInstanceOf[js.Any])
+    def setPointSizeAlgorithmUndefined: Self = StObject.set(x, "pointSizeAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteColorModulation: Self = this.set("colorModulation", js.undefined)
+    def setPointsPerInch(value: Double): Self = StObject.set(x, "pointsPerInch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointSizeAlgorithm(value: PointCloudRendererPointSizeAlgorithm): Self = this.set("pointSizeAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointSizeAlgorithm: Self = this.set("pointSizeAlgorithm", js.undefined)
-    
-    @scala.inline
-    def setPointsPerInch(value: Double): Self = this.set("pointsPerInch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointsPerInch: Self = this.set("pointsPerInch", js.undefined)
+    def setPointsPerInchUndefined: Self = StObject.set(x, "pointsPerInch", js.undefined)
   }
 }

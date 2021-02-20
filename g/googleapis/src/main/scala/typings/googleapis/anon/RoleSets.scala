@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoleSets extends js.Object {
+trait RoleSets extends StObject {
   
   var roleSets: js.UndefOr[js.Array[AdditionalRoles]] = js.native
   
@@ -20,33 +21,21 @@ object RoleSets {
   }
   
   @scala.inline
-  implicit class RoleSetsOps[Self <: RoleSets] (val x: Self) extends AnyVal {
+  implicit class RoleSetsMutableBuilder[Self <: RoleSets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoleSets(value: js.Array[AdditionalRoles]): Self = StObject.set(x, "roleSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleSetsUndefined: Self = StObject.set(x, "roleSets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleSetsVarargs(value: AdditionalRoles*): Self = StObject.set(x, "roleSets", js.Array(value :_*))
     
     @scala.inline
-    def setRoleSetsVarargs(value: AdditionalRoles*): Self = this.set("roleSets", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleSets(value: js.Array[AdditionalRoles]): Self = this.set("roleSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleSets: Self = this.set("roleSets", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

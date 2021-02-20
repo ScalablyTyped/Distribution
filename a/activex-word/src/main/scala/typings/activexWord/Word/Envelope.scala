@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Envelope extends js.Object {
+trait Envelope extends StObject {
   
   val Address: Range = js.native
   
@@ -221,124 +222,112 @@ object Envelope {
   }
   
   @scala.inline
-  implicit class EnvelopeOps[Self <: Envelope] (val x: Self) extends AnyVal {
+  implicit class EnvelopeMutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: Range): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressFromLeft(value: Double): Self = StObject.set(x, "AddressFromLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressFromTop(value: Double): Self = StObject.set(x, "AddressFromTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: Range): Self = this.set("Address", value.asInstanceOf[js.Any])
+    def setAddressStyle(value: Style): Self = StObject.set(x, "AddressStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressFromLeft(value: Double): Self = this.set("AddressFromLeft", value.asInstanceOf[js.Any])
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressFromTop(value: Double): Self = this.set("AddressFromTop", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressStyle(value: Style): Self = this.set("AddressStyle", value.asInstanceOf[js.Any])
+    def setDefaultFaceUp(value: Boolean): Self = StObject.set(x, "DefaultFaceUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDefaultHeight(value: Double): Self = StObject.set(x, "DefaultHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setDefaultOmitReturnAddress(value: Boolean): Self = StObject.set(x, "DefaultOmitReturnAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFaceUp(value: Boolean): Self = this.set("DefaultFaceUp", value.asInstanceOf[js.Any])
+    def setDefaultOrientation(value: WdEnvelopeOrientation): Self = StObject.set(x, "DefaultOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHeight(value: Double): Self = this.set("DefaultHeight", value.asInstanceOf[js.Any])
+    def setDefaultPrintBarCode(value: Boolean): Self = StObject.set(x, "DefaultPrintBarCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOmitReturnAddress(value: Boolean): Self = this.set("DefaultOmitReturnAddress", value.asInstanceOf[js.Any])
+    def setDefaultPrintFIMA(value: Boolean): Self = StObject.set(x, "DefaultPrintFIMA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOrientation(value: WdEnvelopeOrientation): Self = this.set("DefaultOrientation", value.asInstanceOf[js.Any])
+    def setDefaultSize(value: String): Self = StObject.set(x, "DefaultSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPrintBarCode(value: Boolean): Self = this.set("DefaultPrintBarCode", value.asInstanceOf[js.Any])
+    def setDefaultWidth(value: Double): Self = StObject.set(x, "DefaultWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPrintFIMA(value: Boolean): Self = this.set("DefaultPrintFIMA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultSize(value: String): Self = this.set("DefaultSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultWidth(value: Double): Self = this.set("DefaultWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFeedSource(value: WdPaperTray): Self = this.set("FeedSource", value.asInstanceOf[js.Any])
+    def setFeedSource(value: WdPaperTray): Self = StObject.set(x, "FeedSource", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInsert2000(
       value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("Insert2000", js.Any.fromFunction18(value))
+    ): Self = StObject.set(x, "Insert2000", js.Any.fromFunction18(value))
     
     @scala.inline
-    def setOptions(value: () => Unit): Self = this.set("Options", js.Any.fromFunction0(value))
+    def setOptions(value: () => Unit): Self = StObject.set(x, "Options", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPrintOut2000(
       value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("PrintOut2000", js.Any.fromFunction18(value))
+    ): Self = StObject.set(x, "PrintOut2000", js.Any.fromFunction18(value))
     
     @scala.inline
-    def setRecipientNamefromLeft(value: Double): Self = this.set("RecipientNamefromLeft", value.asInstanceOf[js.Any])
+    def setRecipientNamefromLeft(value: Double): Self = StObject.set(x, "RecipientNamefromLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientNamefromTop(value: Double): Self = this.set("RecipientNamefromTop", value.asInstanceOf[js.Any])
+    def setRecipientNamefromTop(value: Double): Self = StObject.set(x, "RecipientNamefromTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientPostalfromLeft(value: Double): Self = this.set("RecipientPostalfromLeft", value.asInstanceOf[js.Any])
+    def setRecipientPostalfromLeft(value: Double): Self = StObject.set(x, "RecipientPostalfromLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientPostalfromTop(value: Double): Self = this.set("RecipientPostalfromTop", value.asInstanceOf[js.Any])
+    def setRecipientPostalfromTop(value: Double): Self = StObject.set(x, "RecipientPostalfromTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnAddress(value: Range): Self = this.set("ReturnAddress", value.asInstanceOf[js.Any])
+    def setReturnAddress(value: Range): Self = StObject.set(x, "ReturnAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnAddressFromLeft(value: Double): Self = this.set("ReturnAddressFromLeft", value.asInstanceOf[js.Any])
+    def setReturnAddressFromLeft(value: Double): Self = StObject.set(x, "ReturnAddressFromLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnAddressFromTop(value: Double): Self = this.set("ReturnAddressFromTop", value.asInstanceOf[js.Any])
+    def setReturnAddressFromTop(value: Double): Self = StObject.set(x, "ReturnAddressFromTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnAddressStyle(value: Style): Self = this.set("ReturnAddressStyle", value.asInstanceOf[js.Any])
+    def setReturnAddressStyle(value: Style): Self = StObject.set(x, "ReturnAddressStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderNamefromLeft(value: Double): Self = this.set("SenderNamefromLeft", value.asInstanceOf[js.Any])
+    def setSenderNamefromLeft(value: Double): Self = StObject.set(x, "SenderNamefromLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderNamefromTop(value: Double): Self = this.set("SenderNamefromTop", value.asInstanceOf[js.Any])
+    def setSenderNamefromTop(value: Double): Self = StObject.set(x, "SenderNamefromTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderPostalfromLeft(value: Double): Self = this.set("SenderPostalfromLeft", value.asInstanceOf[js.Any])
+    def setSenderPostalfromLeft(value: Double): Self = StObject.set(x, "SenderPostalfromLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderPostalfromTop(value: Double): Self = this.set("SenderPostalfromTop", value.asInstanceOf[js.Any])
+    def setSenderPostalfromTop(value: Double): Self = StObject.set(x, "SenderPostalfromTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateDocument(value: () => Unit): Self = this.set("UpdateDocument", js.Any.fromFunction0(value))
+    def setUpdateDocument(value: () => Unit): Self = StObject.set(x, "UpdateDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setVertical(value: Boolean): Self = this.set("Vertical", value.asInstanceOf[js.Any])
+    def setVertical(value: Boolean): Self = StObject.set(x, "Vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordDotEnvelope_typekey(value: Envelope): Self = this.set("Word.Envelope_typekey", value.asInstanceOf[js.Any])
+    def setWordDotEnvelope_typekey(value: Envelope): Self = StObject.set(x, "Word.Envelope_typekey", value.asInstanceOf[js.Any])
   }
 }

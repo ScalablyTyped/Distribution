@@ -1,22 +1,24 @@
 package typings.emberRouting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/routing/location", JSImport.Namespace)
-@js.native
-object locationMod extends js.Object {
+object locationMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
     /**
       * This is deprecated in favor of using the container to lookup the location
       * implementation as desired.
       * @deprecated Use the container to lookup the location implementation that you need.
       */
+    @JSImport("@ember/routing/location", "default.create")
+    @js.native
     def create(): js.Any = js.native
+    @JSImport("@ember/routing/location", "default.create")
+    @js.native
     def create(options: js.Object): js.Any = js.native
   }
 }

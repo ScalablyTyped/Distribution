@@ -1,12 +1,13 @@
 package typings.reactCalendarTimeline.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomHeaderProps[Data] extends js.Object {
+trait CustomHeaderProps[Data] extends StObject {
   
   def children(): ReactNode = js.native
   def children(props: CustomHeaderPropsChildrenFnProps[Data]): ReactNode = js.native

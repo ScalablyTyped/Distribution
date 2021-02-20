@@ -1,16 +1,14 @@
 package typings.paypalCordovaPlugin
 
 import typings.paypalCordovaPlugin.PayPalCordovaPlugin.PayPalMobileStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var PayPalMobile: PayPalMobileStatic = js.native
-  
+  @JSGlobal("PayPalConfiguration")
   @js.native
   /**
     * @param options A set of options to use. Any options not specified will assume default values.
@@ -20,11 +18,7 @@ object global extends js.Object {
     def this(options: PayPalConfigurationOptions) = this()
   }
   
-  //#endregion
-  //#region cdv-plugin-paypal-mobile-sdk.js
-  @js.native
-  object PayPalCordovaPlugin extends js.Object
-  
+  @JSGlobal("PayPalItem")
   @js.native
   class PayPalItem protected ()
     extends typings.paypalCordovaPlugin.PayPalItem {
@@ -40,9 +34,16 @@ object global extends js.Object {
     def this(name: String, quantity: Double, price: String, currency: String, sku: String) = this()
   }
   
+  @JSGlobal("PayPalMobile")
+  @js.native
+  def PayPalMobile: PayPalMobileStatic = js.native
+  @scala.inline
+  def PayPalMobile_=(x: PayPalMobileStatic): Unit = js.Dynamic.global.updateDynamic("PayPalMobile")(x.asInstanceOf[js.Any])
+  
   /**
     * Convenience constructor. Returns a PayPalPayment with the specified amount, currency code, and short description.
     */
+  @JSGlobal("PayPalPayment")
   @js.native
   class PayPalPayment protected ()
     extends typings.paypalCordovaPlugin.PayPalPayment {
@@ -70,6 +71,7 @@ object global extends js.Object {
     *
     * @see https://developer.paypal.com/webapps/developer/docs/api/#details-object for more details.
     */
+  @JSGlobal("PayPalPaymentDetails")
   @js.native
   class PayPalPaymentDetails protected ()
     extends typings.paypalCordovaPlugin.PayPalPaymentDetails {
@@ -81,6 +83,7 @@ object global extends js.Object {
     def this(subtotal: String, shipping: String, tax: String) = this()
   }
   
+  @JSGlobal("PayPalShippingAddress")
   @js.native
   class PayPalShippingAddress protected ()
     extends typings.paypalCordovaPlugin.PayPalShippingAddress {
@@ -103,4 +106,8 @@ object global extends js.Object {
       countryCode: String
     ) = this()
   }
+  
+  //#endregion
+  //#region cdv-plugin-paypal-mobile-sdk.js
+  object PayPalCordovaPlugin
 }

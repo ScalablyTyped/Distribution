@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReedSolomonDecoder extends js.Object {
+trait ReedSolomonDecoder extends StObject {
   
   def decode(received: GF256, twoS: js.Array[Double]): Unit = js.native
   
@@ -32,33 +33,21 @@ object ReedSolomonDecoder {
   }
   
   @scala.inline
-  implicit class ReedSolomonDecoderOps[Self <: ReedSolomonDecoder] (val x: Self) extends AnyVal {
+  implicit class ReedSolomonDecoderMutableBuilder[Self <: ReedSolomonDecoder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecode(value: (GF256, js.Array[Double]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setField(value: GF256): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindErrorLocations(value: GF256Poly => js.Array[Double]): Self = StObject.set(x, "findErrorLocations", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDecode(value: (GF256, js.Array[Double]) => Unit): Self = this.set("decode", js.Any.fromFunction2(value))
+    def setFindErrorMagnitudes(value: (GF256Poly, js.Array[Double], Boolean) => js.Array[Double]): Self = StObject.set(x, "findErrorMagnitudes", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setField(value: GF256): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFindErrorLocations(value: GF256Poly => js.Array[Double]): Self = this.set("findErrorLocations", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFindErrorMagnitudes(value: (GF256Poly, js.Array[Double], Boolean) => js.Array[Double]): Self = this.set("findErrorMagnitudes", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRunEuclideanAlgorithm(value: (GF256Poly, GF256Poly, Double) => js.Tuple2[GF256Poly, GF256Poly]): Self = this.set("runEuclideanAlgorithm", js.Any.fromFunction3(value))
+    def setRunEuclideanAlgorithm(value: (GF256Poly, GF256Poly, Double) => js.Tuple2[GF256Poly, GF256Poly]): Self = StObject.set(x, "runEuclideanAlgorithm", js.Any.fromFunction3(value))
   }
 }

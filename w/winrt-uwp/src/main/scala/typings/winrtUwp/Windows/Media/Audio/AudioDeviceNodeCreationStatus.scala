@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Audio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AudioDeviceNodeCreationStatus extends js.Object
+sealed trait AudioDeviceNodeCreationStatus extends StObject
 /** Defines status values for audio device node creation. */
 @JSGlobal("Windows.Media.Audio.AudioDeviceNodeCreationStatus")
 @js.native
-object AudioDeviceNodeCreationStatus extends js.Object {
+object AudioDeviceNodeCreationStatus extends StObject {
   
   /** Access to the audio device was denied. */
   @js.native

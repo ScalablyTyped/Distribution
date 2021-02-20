@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,33 +75,21 @@ object XAccessibleStateSet {
   }
   
   @scala.inline
-  implicit class XAccessibleStateSetOps[Self <: XAccessibleStateSet] (val x: Self) extends AnyVal {
+  implicit class XAccessibleStateSetMutableBuilder[Self <: XAccessibleStateSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: Double => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsAll(value: SeqEquiv[Double] => Boolean): Self = StObject.set(x, "containsAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStates(value: () => SafeArray[Double]): Self = StObject.set(x, "getStates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStates(value: SafeArray[Double]): Self = this.set("States", value.asInstanceOf[js.Any])
+    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContains(value: Double => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setContainsAll(value: SeqEquiv[Double] => Boolean): Self = this.set("containsAll", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetStates(value: () => SafeArray[Double]): Self = this.set("getStates", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
+    def setStates(value: SafeArray[Double]): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
   }
 }

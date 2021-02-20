@@ -1,12 +1,13 @@
 package typings.uiGrid.mod
 
 import typings.uiGrid.anon.AVG_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISharedTreeConstants extends js.Object {
+trait ISharedTreeConstants extends StObject {
   
   var COLLAPSED: String = js.native
   
@@ -25,30 +26,18 @@ object ISharedTreeConstants {
   }
   
   @scala.inline
-  implicit class ISharedTreeConstantsOps[Self <: ISharedTreeConstants] (val x: Self) extends AnyVal {
+  implicit class ISharedTreeConstantsMutableBuilder[Self <: ISharedTreeConstants] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregation(value: AVG_): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCOLLAPSED(value: String): Self = StObject.set(x, "COLLAPSED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEXPANDED(value: String): Self = StObject.set(x, "EXPANDED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOLLAPSED(value: String): Self = this.set("COLLAPSED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEXPANDED(value: String): Self = this.set("EXPANDED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAggregation(value: AVG_): Self = this.set("aggregation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowHeaderColName(value: String): Self = this.set("rowHeaderColName", value.asInstanceOf[js.Any])
+    def setRowHeaderColName(value: String): Self = StObject.set(x, "rowHeaderColName", value.asInstanceOf[js.Any])
   }
 }

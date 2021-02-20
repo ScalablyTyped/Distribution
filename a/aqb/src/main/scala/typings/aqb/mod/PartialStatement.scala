@@ -1,5 +1,6 @@
 package typings.aqb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * // => FOR doc IN my_collection RETURN doc._key
   */
 @js.native
-trait PartialStatement extends js.Object {
+trait PartialStatement extends StObject {
   
   /**
     * COLLECT

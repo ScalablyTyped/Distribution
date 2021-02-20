@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Media.AudioFrame
 import typings.winrtUwp.Windows.Media.Effects.IAudioEffectDefinition
 import typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio frame output node. */
 @js.native
-trait AudioFrameOutputNode extends js.Object {
+trait AudioFrameOutputNode extends StObject {
   
   /** Closes the audio frame output node. */
   def close(): Unit = js.native
@@ -75,51 +76,39 @@ object AudioFrameOutputNode {
   }
   
   @scala.inline
-  implicit class AudioFrameOutputNodeOps[Self <: AudioFrameOutputNode] (val x: Self) extends AnyVal {
+  implicit class AudioFrameOutputNodeMutableBuilder[Self <: AudioFrameOutputNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumeInput(value: Boolean): Self = StObject.set(x, "consumeInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableEffectsByDefinition(value: IAudioEffectDefinition => Unit): Self = StObject.set(x, "disableEffectsByDefinition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = StObject.set(x, "effectDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumeInput(value: Boolean): Self = this.set("consumeInput", value.asInstanceOf[js.Any])
+    def setEnableEffectsByDefinition(value: IAudioEffectDefinition => Unit): Self = StObject.set(x, "enableEffectsByDefinition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisableEffectsByDefinition(value: IAudioEffectDefinition => Unit): Self = this.set("disableEffectsByDefinition", js.Any.fromFunction1(value))
+    def setEncodingProperties(value: AudioEncodingProperties): Self = StObject.set(x, "encodingProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = this.set("effectDefinitions", value.asInstanceOf[js.Any])
+    def setGetFrame(value: () => AudioFrame): Self = StObject.set(x, "getFrame", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnableEffectsByDefinition(value: IAudioEffectDefinition => Unit): Self = this.set("enableEffectsByDefinition", js.Any.fromFunction1(value))
+    def setOutgoingGain(value: Double): Self = StObject.set(x, "outgoingGain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingProperties(value: AudioEncodingProperties): Self = this.set("encodingProperties", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFrame(value: () => AudioFrame): Self = this.set("getFrame", js.Any.fromFunction0(value))
+    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOutgoingGain(value: Double): Self = this.set("outgoingGain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: () => Unit): Self = this.set("start", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

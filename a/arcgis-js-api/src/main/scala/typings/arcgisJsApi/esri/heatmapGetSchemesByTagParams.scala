@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.dark
 import typings.arcgisJsApi.arcgisJsApiStrings.light
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,48 +53,36 @@ object heatmapGetSchemesByTagParams {
   }
   
   @scala.inline
-  implicit class heatmapGetSchemesByTagParamsOps[Self <: heatmapGetSchemesByTagParams] (val x: Self) extends AnyVal {
+  implicit class heatmapGetSchemesByTagParamsMutableBuilder[Self <: heatmapGetSchemesByTagParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
     
     @scala.inline
-    def setBasemap(value: String | Basemap): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    def setExcludedTags(value: js.Array[String]): Self = StObject.set(x, "excludedTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapTheme(value: light | dark): Self = this.set("basemapTheme", value.asInstanceOf[js.Any])
+    def setExcludedTagsUndefined: Self = StObject.set(x, "excludedTags", js.undefined)
     
     @scala.inline
-    def deleteBasemapTheme: Self = this.set("basemapTheme", js.undefined)
+    def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedTagsVarargs(value: String*): Self = this.set("excludedTags", js.Array(value :_*))
+    def setIncludedTags(value: js.Array[String]): Self = StObject.set(x, "includedTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedTags(value: js.Array[String]): Self = this.set("excludedTags", value.asInstanceOf[js.Any])
+    def setIncludedTagsUndefined: Self = StObject.set(x, "includedTags", js.undefined)
     
     @scala.inline
-    def deleteExcludedTags: Self = this.set("excludedTags", js.undefined)
-    
-    @scala.inline
-    def setIncludedTagsVarargs(value: String*): Self = this.set("includedTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncludedTags(value: js.Array[String]): Self = this.set("includedTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludedTags: Self = this.set("includedTags", js.undefined)
+    def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value :_*))
   }
 }

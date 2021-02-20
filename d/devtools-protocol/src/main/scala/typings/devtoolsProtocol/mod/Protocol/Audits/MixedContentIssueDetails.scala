@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Audits
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MixedContentIssueDetails extends js.Object {
+trait MixedContentIssueDetails extends StObject {
   
   /**
     * Optional because not every mixed content issue is necessarily linked to a frame.
@@ -50,45 +51,33 @@ object MixedContentIssueDetails {
   }
   
   @scala.inline
-  implicit class MixedContentIssueDetailsOps[Self <: MixedContentIssueDetails] (val x: Self) extends AnyVal {
+  implicit class MixedContentIssueDetailsMutableBuilder[Self <: MixedContentIssueDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrame(value: AffectedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsecureURL(value: String): Self = StObject.set(x, "insecureURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsecureURL(value: String): Self = this.set("insecureURL", value.asInstanceOf[js.Any])
+    def setMainResourceURL(value: String): Self = StObject.set(x, "mainResourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainResourceURL(value: String): Self = this.set("mainResourceURL", value.asInstanceOf[js.Any])
+    def setRequest(value: AffectedRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionStatus(value: MixedContentResolutionStatus): Self = this.set("resolutionStatus", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def setFrame(value: AffectedFrame): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setResolutionStatus(value: MixedContentResolutionStatus): Self = StObject.set(x, "resolutionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrame: Self = this.set("frame", js.undefined)
+    def setResourceType(value: MixedContentResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: AffectedRequest): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: MixedContentResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.sharepoint.Srch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CSRFilter extends js.Object {
+trait CSRFilter extends StObject {
   
   var IsSelected: Boolean = js.native
   
@@ -24,30 +25,18 @@ object CSRFilter {
   }
   
   @scala.inline
-  implicit class CSRFilterOps[Self <: CSRFilter] (val x: Self) extends AnyVal {
+  implicit class CSRFilterMutableBuilder[Self <: CSRFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsSelected(value: Boolean): Self = StObject.set(x, "IsSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRefinementCount(value: Double): Self = StObject.set(x, "RefinementCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefinementName(value: String): Self = StObject.set(x, "RefinementName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSelected(value: Boolean): Self = this.set("IsSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefinementCount(value: Double): Self = this.set("RefinementCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefinementName(value: String): Self = this.set("RefinementName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefinementToken(value: String): Self = this.set("RefinementToken", value.asInstanceOf[js.Any])
+    def setRefinementToken(value: String): Self = StObject.set(x, "RefinementToken", value.asInstanceOf[js.Any])
   }
 }

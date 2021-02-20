@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,39 +38,27 @@ object CIMMarkerPlacementAtMeasuredUnits {
   }
   
   @scala.inline
-  implicit class CIMMarkerPlacementAtMeasuredUnitsOps[Self <: CIMMarkerPlacementAtMeasuredUnits] (val x: Self) extends AnyVal {
+  implicit class CIMMarkerPlacementAtMeasuredUnitsMutableBuilder[Self <: CIMMarkerPlacementAtMeasuredUnits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlaceAtExtremities(value: Boolean): Self = StObject.set(x, "placeAtExtremities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtMeasuredUnits): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPlaceAtExtremitiesUndefined: Self = StObject.set(x, "placeAtExtremities", js.undefined)
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setSkipMarkerRate(value: Double): Self = StObject.set(x, "skipMarkerRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setSkipMarkerRateUndefined: Self = StObject.set(x, "skipMarkerRate", js.undefined)
     
     @scala.inline
-    def setPlaceAtExtremities(value: Boolean): Self = this.set("placeAtExtremities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceAtExtremities: Self = this.set("placeAtExtremities", js.undefined)
-    
-    @scala.inline
-    def setSkipMarkerRate(value: Double): Self = this.set("skipMarkerRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipMarkerRate: Self = this.set("skipMarkerRate", js.undefined)
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtMeasuredUnits): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

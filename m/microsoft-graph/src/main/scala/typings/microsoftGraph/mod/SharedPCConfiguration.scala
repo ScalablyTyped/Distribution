@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,105 +62,93 @@ object SharedPCConfiguration {
   }
   
   @scala.inline
-  implicit class SharedPCConfigurationOps[Self <: SharedPCConfiguration] (val x: Self) extends AnyVal {
+  implicit class SharedPCConfigurationMutableBuilder[Self <: SharedPCConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountManagerPolicy(value: NullableOption[SharedPCAccountManagerPolicy]): Self = StObject.set(x, "accountManagerPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountManagerPolicyNull: Self = StObject.set(x, "accountManagerPolicy", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountManagerPolicyUndefined: Self = StObject.set(x, "accountManagerPolicy", js.undefined)
     
     @scala.inline
-    def setAccountManagerPolicy(value: NullableOption[SharedPCAccountManagerPolicy]): Self = this.set("accountManagerPolicy", value.asInstanceOf[js.Any])
+    def setAllowLocalStorage(value: Boolean): Self = StObject.set(x, "allowLocalStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountManagerPolicy: Self = this.set("accountManagerPolicy", js.undefined)
+    def setAllowLocalStorageUndefined: Self = StObject.set(x, "allowLocalStorage", js.undefined)
     
     @scala.inline
-    def setAccountManagerPolicyNull: Self = this.set("accountManagerPolicy", null)
+    def setAllowedAccounts(value: SharedPCAllowedAccountType): Self = StObject.set(x, "allowedAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowLocalStorage(value: Boolean): Self = this.set("allowLocalStorage", value.asInstanceOf[js.Any])
+    def setAllowedAccountsUndefined: Self = StObject.set(x, "allowedAccounts", js.undefined)
     
     @scala.inline
-    def deleteAllowLocalStorage: Self = this.set("allowLocalStorage", js.undefined)
+    def setDisableAccountManager(value: Boolean): Self = StObject.set(x, "disableAccountManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedAccounts(value: SharedPCAllowedAccountType): Self = this.set("allowedAccounts", value.asInstanceOf[js.Any])
+    def setDisableAccountManagerUndefined: Self = StObject.set(x, "disableAccountManager", js.undefined)
     
     @scala.inline
-    def deleteAllowedAccounts: Self = this.set("allowedAccounts", js.undefined)
+    def setDisableEduPolicies(value: Boolean): Self = StObject.set(x, "disableEduPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAccountManager(value: Boolean): Self = this.set("disableAccountManager", value.asInstanceOf[js.Any])
+    def setDisableEduPoliciesUndefined: Self = StObject.set(x, "disableEduPolicies", js.undefined)
     
     @scala.inline
-    def deleteDisableAccountManager: Self = this.set("disableAccountManager", js.undefined)
+    def setDisablePowerPolicies(value: Boolean): Self = StObject.set(x, "disablePowerPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableEduPolicies(value: Boolean): Self = this.set("disableEduPolicies", value.asInstanceOf[js.Any])
+    def setDisablePowerPoliciesUndefined: Self = StObject.set(x, "disablePowerPolicies", js.undefined)
     
     @scala.inline
-    def deleteDisableEduPolicies: Self = this.set("disableEduPolicies", js.undefined)
+    def setDisableSignInOnResume(value: Boolean): Self = StObject.set(x, "disableSignInOnResume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePowerPolicies(value: Boolean): Self = this.set("disablePowerPolicies", value.asInstanceOf[js.Any])
+    def setDisableSignInOnResumeUndefined: Self = StObject.set(x, "disableSignInOnResume", js.undefined)
     
     @scala.inline
-    def deleteDisablePowerPolicies: Self = this.set("disablePowerPolicies", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSignInOnResume(value: Boolean): Self = this.set("disableSignInOnResume", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDisableSignInOnResume: Self = this.set("disableSignInOnResume", js.undefined)
+    def setIdleTimeBeforeSleepInSeconds(value: NullableOption[Double]): Self = StObject.set(x, "idleTimeBeforeSleepInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setIdleTimeBeforeSleepInSecondsNull: Self = StObject.set(x, "idleTimeBeforeSleepInSeconds", null)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setIdleTimeBeforeSleepInSecondsUndefined: Self = StObject.set(x, "idleTimeBeforeSleepInSeconds", js.undefined)
     
     @scala.inline
-    def setIdleTimeBeforeSleepInSeconds(value: NullableOption[Double]): Self = this.set("idleTimeBeforeSleepInSeconds", value.asInstanceOf[js.Any])
+    def setKioskAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "kioskAppDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdleTimeBeforeSleepInSeconds: Self = this.set("idleTimeBeforeSleepInSeconds", js.undefined)
+    def setKioskAppDisplayNameNull: Self = StObject.set(x, "kioskAppDisplayName", null)
     
     @scala.inline
-    def setIdleTimeBeforeSleepInSecondsNull: Self = this.set("idleTimeBeforeSleepInSeconds", null)
+    def setKioskAppDisplayNameUndefined: Self = StObject.set(x, "kioskAppDisplayName", js.undefined)
     
     @scala.inline
-    def setKioskAppDisplayName(value: NullableOption[String]): Self = this.set("kioskAppDisplayName", value.asInstanceOf[js.Any])
+    def setKioskAppUserModelId(value: NullableOption[String]): Self = StObject.set(x, "kioskAppUserModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKioskAppDisplayName: Self = this.set("kioskAppDisplayName", js.undefined)
+    def setKioskAppUserModelIdNull: Self = StObject.set(x, "kioskAppUserModelId", null)
     
     @scala.inline
-    def setKioskAppDisplayNameNull: Self = this.set("kioskAppDisplayName", null)
+    def setKioskAppUserModelIdUndefined: Self = StObject.set(x, "kioskAppUserModelId", js.undefined)
     
     @scala.inline
-    def setKioskAppUserModelId(value: NullableOption[String]): Self = this.set("kioskAppUserModelId", value.asInstanceOf[js.Any])
+    def setMaintenanceStartTime(value: NullableOption[String]): Self = StObject.set(x, "maintenanceStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKioskAppUserModelId: Self = this.set("kioskAppUserModelId", js.undefined)
+    def setMaintenanceStartTimeNull: Self = StObject.set(x, "maintenanceStartTime", null)
     
     @scala.inline
-    def setKioskAppUserModelIdNull: Self = this.set("kioskAppUserModelId", null)
-    
-    @scala.inline
-    def setMaintenanceStartTime(value: NullableOption[String]): Self = this.set("maintenanceStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaintenanceStartTime: Self = this.set("maintenanceStartTime", js.undefined)
-    
-    @scala.inline
-    def setMaintenanceStartTimeNull: Self = this.set("maintenanceStartTime", null)
+    def setMaintenanceStartTimeUndefined: Self = StObject.set(x, "maintenanceStartTime", js.undefined)
   }
 }

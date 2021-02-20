@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IServerManagementOperations extends js.Object {
+trait IServerManagementOperations extends StObject {
   
   def BackupMasterDB(
     BackupFile: String,
@@ -46,42 +47,30 @@ object IServerManagementOperations {
   }
   
   @scala.inline
-  implicit class IServerManagementOperationsOps[Self <: IServerManagementOperations] (val x: Self) extends AnyVal {
+  implicit class IServerManagementOperationsMutableBuilder[Self <: IServerManagementOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupMasterDB(value: (String, Boolean, Double, IImpersonation) => Unit): Self = StObject.set(x, "BackupMasterDB", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigureWebAccessToDefaultWebSite(value: () => Unit): Self = StObject.set(x, "ConfigureWebAccessToDefaultWebSite", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigureWebAccessToExistingWebSite(value: String => Unit): Self = StObject.set(x, "ConfigureWebAccessToExistingWebSite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackupMasterDB(value: (String, Boolean, Double, IImpersonation) => Unit): Self = this.set("BackupMasterDB", js.Any.fromFunction4(value))
+    def setConfigureWebAccessToNewVirtualDirectory(value: (String, String) => Unit): Self = StObject.set(x, "ConfigureWebAccessToNewVirtualDirectory", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setConfigureWebAccessToDefaultWebSite(value: () => Unit): Self = this.set("ConfigureWebAccessToDefaultWebSite", js.Any.fromFunction0(value))
+    def setConfigureWebAccessToNewWebSite(value: (String, String) => Unit): Self = StObject.set(x, "ConfigureWebAccessToNewWebSite", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setConfigureWebAccessToExistingWebSite(value: String => Unit): Self = this.set("ConfigureWebAccessToExistingWebSite", js.Any.fromFunction1(value))
+    def setGetEventHandlers(value: () => IEventHandlers): Self = StObject.set(x, "GetEventHandlers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfigureWebAccessToNewVirtualDirectory(value: (String, String) => Unit): Self = this.set("ConfigureWebAccessToNewVirtualDirectory", js.Any.fromFunction2(value))
+    def setRestoreMasterDB(value: (String, IImpersonation) => Unit): Self = StObject.set(x, "RestoreMasterDB", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setConfigureWebAccessToNewWebSite(value: (String, String) => Unit): Self = this.set("ConfigureWebAccessToNewWebSite", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetEventHandlers(value: () => IEventHandlers): Self = this.set("GetEventHandlers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRestoreMasterDB(value: (String, IImpersonation) => Unit): Self = this.set("RestoreMasterDB", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetEventHandlers(value: IEventHandlers => Unit): Self = this.set("SetEventHandlers", js.Any.fromFunction1(value))
+    def setSetEventHandlers(value: IEventHandlers => Unit): Self = StObject.set(x, "SetEventHandlers", js.Any.fromFunction1(value))
   }
 }

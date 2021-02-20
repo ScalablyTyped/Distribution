@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alert extends js.Object {
+trait Alert extends StObject {
   
   /** Output only. The unique identifier for the alert. */
   var alertId: js.UndefOr[String] = js.native
@@ -74,100 +75,88 @@ object Alert {
   }
   
   @scala.inline
-  implicit class AlertOps[Self <: Alert] (val x: Self) extends AnyVal {
+  implicit class AlertMutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertId(value: String): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertId(value: String): Self = this.set("alertId", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteAlertId: Self = this.set("alertId", js.undefined)
+    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
-    
-    @scala.inline
-    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
     @scala.inline
     def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.Alert with TopLevel[js.Any]
-    ): Self = this.set("data", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def setMetadata(value: AlertMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetadata(value: AlertMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setSecurityInvestigationToolLink(value: String): Self = this.set("securityInvestigationToolLink", value.asInstanceOf[js.Any])
+    def setSecurityInvestigationToolLink(value: String): Self = StObject.set(x, "securityInvestigationToolLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecurityInvestigationToolLink: Self = this.set("securityInvestigationToolLink", js.undefined)
+    def setSecurityInvestigationToolLinkUndefined: Self = StObject.set(x, "securityInvestigationToolLink", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

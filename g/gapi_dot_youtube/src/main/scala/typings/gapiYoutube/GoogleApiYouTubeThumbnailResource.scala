@@ -1,11 +1,12 @@
 package typings.gapiYoutube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiYouTubeThumbnailResource extends js.Object {
+trait GoogleApiYouTubeThumbnailResource extends StObject {
   
   /**
     * The default thumbnail image. The default thumbnail for a video – or a resource that refers to a video, such as a playlist item or search result – is 120px wide and 90px tall. The default thumbnail for a channel is 88px wide and 88px tall.
@@ -45,39 +46,27 @@ object GoogleApiYouTubeThumbnailResource {
   }
   
   @scala.inline
-  implicit class GoogleApiYouTubeThumbnailResourceOps[Self <: GoogleApiYouTubeThumbnailResource] (val x: Self) extends AnyVal {
+  implicit class GoogleApiYouTubeThumbnailResourceMutableBuilder[Self <: GoogleApiYouTubeThumbnailResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHigh(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxres(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "maxres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: GoogleApiYouTubeThumbnailItemResource): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setMaxresUndefined: Self = StObject.set(x, "maxres", js.undefined)
     
     @scala.inline
-    def setHigh(value: GoogleApiYouTubeThumbnailItemResource): Self = this.set("high", value.asInstanceOf[js.Any])
+    def setMedium(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: GoogleApiYouTubeThumbnailItemResource): Self = this.set("medium", value.asInstanceOf[js.Any])
+    def setStandard(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxres(value: GoogleApiYouTubeThumbnailItemResource): Self = this.set("maxres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxres: Self = this.set("maxres", js.undefined)
-    
-    @scala.inline
-    def setStandard(value: GoogleApiYouTubeThumbnailItemResource): Self = this.set("standard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandard: Self = this.set("standard", js.undefined)
+    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

@@ -1,14 +1,17 @@
 package typings.reactMdUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/utils/types/useInterval", JSImport.Namespace)
-@js.native
-object useIntervalMod extends js.Object {
+object useIntervalMod {
   
+  @JSImport("@react-md/utils/types/useInterval", "useInterval")
+  @js.native
   def useInterval(callback: js.Function1[/* stop */ js.Function0[Unit], Unit], delay: Double): ReturnValue = js.native
+  @JSImport("@react-md/utils/types/useInterval", "useInterval")
+  @js.native
   def useInterval(
     callback: js.Function1[/* stop */ js.Function0[Unit], Unit],
     delay: Double,

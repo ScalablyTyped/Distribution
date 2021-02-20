@@ -1,13 +1,18 @@
 package typings.antdMobileRn
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/modal/demo/basic.native", JSImport.Namespace)
-@js.native
-object modalDemoBasicNativeMod extends js.Object {
+object modalDemoBasicNativeMod {
+  
+  @JSImport("antd-mobile-rn/lib/modal/demo/basic.native", JSImport.Default)
+  @js.native
+  class default protected () extends BasicModalExample {
+    def this(props: js.Any) = this()
+  }
   
   @js.native
   trait BasicModalExample
@@ -28,10 +33,5 @@ object modalDemoBasicNativeMod extends js.Object {
     def onClose1(): Unit = js.native
     
     def onClose2(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends BasicModalExample {
-    def this(props: js.Any) = this()
   }
 }

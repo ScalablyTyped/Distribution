@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LifecyclePolicyPreviewResult extends js.Object {
+trait LifecyclePolicyPreviewResult extends StObject {
   
   /**
     * The type of action to be taken.
@@ -41,51 +42,39 @@ object LifecyclePolicyPreviewResult {
   }
   
   @scala.inline
-  implicit class LifecyclePolicyPreviewResultOps[Self <: LifecyclePolicyPreviewResult] (val x: Self) extends AnyVal {
+  implicit class LifecyclePolicyPreviewResultMutableBuilder[Self <: LifecyclePolicyPreviewResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: LifecyclePolicyRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppliedRulePriority(value: LifecyclePolicyRulePriority): Self = StObject.set(x, "appliedRulePriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: LifecyclePolicyRuleAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setAppliedRulePriorityUndefined: Self = StObject.set(x, "appliedRulePriority", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliedRulePriority(value: LifecyclePolicyRulePriority): Self = this.set("appliedRulePriority", value.asInstanceOf[js.Any])
+    def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
     @scala.inline
-    def deleteAppliedRulePriority: Self = this.set("appliedRulePriority", js.undefined)
+    def setImagePushedAt(value: PushTimestamp): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageDigest(value: ImageDigest): Self = this.set("imageDigest", value.asInstanceOf[js.Any])
+    def setImagePushedAtUndefined: Self = StObject.set(x, "imagePushedAt", js.undefined)
     
     @scala.inline
-    def deleteImageDigest: Self = this.set("imageDigest", js.undefined)
+    def setImageTags(value: ImageTagList): Self = StObject.set(x, "imageTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePushedAt(value: PushTimestamp): Self = this.set("imagePushedAt", value.asInstanceOf[js.Any])
+    def setImageTagsUndefined: Self = StObject.set(x, "imageTags", js.undefined)
     
     @scala.inline
-    def deleteImagePushedAt: Self = this.set("imagePushedAt", js.undefined)
-    
-    @scala.inline
-    def setImageTagsVarargs(value: ImageTag*): Self = this.set("imageTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setImageTags(value: ImageTagList): Self = this.set("imageTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageTags: Self = this.set("imageTags", js.undefined)
+    def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
   }
 }

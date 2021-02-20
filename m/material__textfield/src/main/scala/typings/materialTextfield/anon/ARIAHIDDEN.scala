@@ -1,11 +1,12 @@
 package typings.materialTextfield.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ARIAHIDDEN extends js.Object {
+trait ARIAHIDDEN extends StObject {
   
   var ARIA_HIDDEN: String = js.native
   
@@ -22,27 +23,15 @@ object ARIAHIDDEN {
   }
   
   @scala.inline
-  implicit class ARIAHIDDENOps[Self <: ARIAHIDDEN] (val x: Self) extends AnyVal {
+  implicit class ARIAHIDDENMutableBuilder[Self <: ARIAHIDDEN] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARIA_HIDDEN(value: String): Self = StObject.set(x, "ARIA_HIDDEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setROLE(value: String): Self = StObject.set(x, "ROLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setARIA_HIDDEN(value: String): Self = this.set("ARIA_HIDDEN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setROLE(value: String): Self = this.set("ROLE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setROOT_SELECTOR(value: String): Self = this.set("ROOT_SELECTOR", value.asInstanceOf[js.Any])
+    def setROOT_SELECTOR(value: String): Self = StObject.set(x, "ROOT_SELECTOR", value.asInstanceOf[js.Any])
   }
 }

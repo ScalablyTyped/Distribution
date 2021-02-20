@@ -1,12 +1,13 @@
 package typings.msRest.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiKeyCredentialOptions extends js.Object {
+trait ApiKeyCredentialOptions extends StObject {
   
   /**
     * @property {object} [inHeader]  A key value pair of the header parameters that need to be applied to the request.
@@ -27,30 +28,18 @@ object ApiKeyCredentialOptions {
   }
   
   @scala.inline
-  implicit class ApiKeyCredentialOptionsOps[Self <: ApiKeyCredentialOptions] (val x: Self) extends AnyVal {
+  implicit class ApiKeyCredentialOptionsMutableBuilder[Self <: ApiKeyCredentialOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInHeader(value: StringDictionary[js.Any]): Self = StObject.set(x, "inHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInHeaderUndefined: Self = StObject.set(x, "inHeader", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInQuery(value: StringDictionary[js.Any]): Self = StObject.set(x, "inQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInHeader(value: StringDictionary[js.Any]): Self = this.set("inHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInHeader: Self = this.set("inHeader", js.undefined)
-    
-    @scala.inline
-    def setInQuery(value: StringDictionary[js.Any]): Self = this.set("inQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInQuery: Self = this.set("inQuery", js.undefined)
+    def setInQueryUndefined: Self = StObject.set(x, "inQuery", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetSMBGuestPasswordInput extends js.Object {
+trait SetSMBGuestPasswordInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the file gateway the SMB file share is associated with.
@@ -26,24 +27,12 @@ object SetSMBGuestPasswordInput {
   }
   
   @scala.inline
-  implicit class SetSMBGuestPasswordInputOps[Self <: SetSMBGuestPasswordInput] (val x: Self) extends AnyVal {
+  implicit class SetSMBGuestPasswordInputMutableBuilder[Self <: SetSMBGuestPasswordInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPassword(value: SMBGuestPassword): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setPassword(value: SMBGuestPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }
 }

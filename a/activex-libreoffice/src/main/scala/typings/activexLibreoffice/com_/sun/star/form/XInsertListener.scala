@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.form
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,24 +40,12 @@ object XInsertListener {
   }
   
   @scala.inline
-  implicit class XInsertListenerOps[Self <: XInsertListener] (val x: Self) extends AnyVal {
+  implicit class XInsertListenerMutableBuilder[Self <: XInsertListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInserted(value: EventObject => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInserted(value: EventObject => Unit): Self = this.set("inserted", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInserting(value: EventObject => Unit): Self = this.set("inserting", js.Any.fromFunction1(value))
+    def setInserting(value: EventObject => Unit): Self = StObject.set(x, "inserting", js.Any.fromFunction1(value))
   }
 }

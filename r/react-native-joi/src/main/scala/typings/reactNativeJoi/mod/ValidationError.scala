@@ -1,6 +1,7 @@
 package typings.reactNativeJoi.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object ValidationError {
   }
   
   @scala.inline
-  implicit class ValidationErrorOps[Self <: ValidationError] (val x: Self) extends AnyVal {
+  implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotate(value: () => String): Self = StObject.set(x, "annotate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetails(value: js.Array[ValidationErrorItem]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailsVarargs(value: ValidationErrorItem*): Self = StObject.set(x, "details", js.Array(value :_*))
     
     @scala.inline
-    def set_object(value: js.Any): Self = this.set("_object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnnotate(value: () => String): Self = this.set("annotate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDetailsVarargs(value: ValidationErrorItem*): Self = this.set("details", js.Array(value :_*))
-    
-    @scala.inline
-    def setDetails(value: js.Array[ValidationErrorItem]): Self = this.set("details", value.asInstanceOf[js.Any])
+    def set_object(value: js.Any): Self = StObject.set(x, "_object", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTableInput extends js.Object {
+trait UpdateTableInput extends StObject {
   
   /**
     * An array of attributes that describe the key schema for the table and indexes. If you are adding a new global secondary index to the table, AttributeDefinitions must include the key element(s) of the new index.
@@ -56,72 +57,60 @@ object UpdateTableInput {
   }
   
   @scala.inline
-  implicit class UpdateTableInputOps[Self <: UpdateTableInput] (val x: Self) extends AnyVal {
+  implicit class UpdateTableInputMutableBuilder[Self <: UpdateTableInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = this.set("AttributeDefinitions", js.Array(value :_*))
+    def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
     
     @scala.inline
-    def setAttributeDefinitions(value: AttributeDefinitions): Self = this.set("AttributeDefinitions", value.asInstanceOf[js.Any])
+    def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexUpdateList): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributeDefinitions: Self = this.set("AttributeDefinitions", js.undefined)
+    def setGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.undefined)
     
     @scala.inline
-    def setBillingMode(value: BillingMode): Self = this.set("BillingMode", value.asInstanceOf[js.Any])
+    def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value :_*))
     
     @scala.inline
-    def deleteBillingMode: Self = this.set("BillingMode", js.undefined)
+    def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexUpdate*): Self = this.set("GlobalSecondaryIndexUpdates", js.Array(value :_*))
+    def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
     
     @scala.inline
-    def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexUpdateList): Self = this.set("GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
+    def setReplicaUpdates(value: ReplicationGroupUpdateList): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobalSecondaryIndexUpdates: Self = this.set("GlobalSecondaryIndexUpdates", js.undefined)
+    def setReplicaUpdatesUndefined: Self = StObject.set(x, "ReplicaUpdates", js.undefined)
     
     @scala.inline
-    def setProvisionedThroughput(value: ProvisionedThroughput): Self = this.set("ProvisionedThroughput", value.asInstanceOf[js.Any])
+    def setReplicaUpdatesVarargs(value: ReplicationGroupUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
     
     @scala.inline
-    def deleteProvisionedThroughput: Self = this.set("ProvisionedThroughput", js.undefined)
+    def setSSESpecification(value: SSESpecification): Self = StObject.set(x, "SSESpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaUpdatesVarargs(value: ReplicationGroupUpdate*): Self = this.set("ReplicaUpdates", js.Array(value :_*))
+    def setSSESpecificationUndefined: Self = StObject.set(x, "SSESpecification", js.undefined)
     
     @scala.inline
-    def setReplicaUpdates(value: ReplicationGroupUpdateList): Self = this.set("ReplicaUpdates", value.asInstanceOf[js.Any])
+    def setStreamSpecification(value: StreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReplicaUpdates: Self = this.set("ReplicaUpdates", js.undefined)
+    def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
     
     @scala.inline
-    def setSSESpecification(value: SSESpecification): Self = this.set("SSESpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSESpecification: Self = this.set("SSESpecification", js.undefined)
-    
-    @scala.inline
-    def setStreamSpecification(value: StreamSpecification): Self = this.set("StreamSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamSpecification: Self = this.set("StreamSpecification", js.undefined)
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

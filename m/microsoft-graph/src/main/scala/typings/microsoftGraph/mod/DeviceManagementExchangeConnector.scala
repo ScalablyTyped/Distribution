@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,90 +44,78 @@ object DeviceManagementExchangeConnector {
   }
   
   @scala.inline
-  implicit class DeviceManagementExchangeConnectorOps[Self <: DeviceManagementExchangeConnector] (val x: Self) extends AnyVal {
+  implicit class DeviceManagementExchangeConnectorMutableBuilder[Self <: DeviceManagementExchangeConnector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorServerName(value: NullableOption[String]): Self = StObject.set(x, "connectorServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorServerNameNull: Self = StObject.set(x, "connectorServerName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectorServerNameUndefined: Self = StObject.set(x, "connectorServerName", js.undefined)
     
     @scala.inline
-    def setConnectorServerName(value: NullableOption[String]): Self = this.set("connectorServerName", value.asInstanceOf[js.Any])
+    def setExchangeAlias(value: NullableOption[String]): Self = StObject.set(x, "exchangeAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectorServerName: Self = this.set("connectorServerName", js.undefined)
+    def setExchangeAliasNull: Self = StObject.set(x, "exchangeAlias", null)
     
     @scala.inline
-    def setConnectorServerNameNull: Self = this.set("connectorServerName", null)
+    def setExchangeAliasUndefined: Self = StObject.set(x, "exchangeAlias", js.undefined)
     
     @scala.inline
-    def setExchangeAlias(value: NullableOption[String]): Self = this.set("exchangeAlias", value.asInstanceOf[js.Any])
+    def setExchangeConnectorType(value: DeviceManagementExchangeConnectorType): Self = StObject.set(x, "exchangeConnectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExchangeAlias: Self = this.set("exchangeAlias", js.undefined)
+    def setExchangeConnectorTypeUndefined: Self = StObject.set(x, "exchangeConnectorType", js.undefined)
     
     @scala.inline
-    def setExchangeAliasNull: Self = this.set("exchangeAlias", null)
+    def setExchangeOrganization(value: NullableOption[String]): Self = StObject.set(x, "exchangeOrganization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExchangeConnectorType(value: DeviceManagementExchangeConnectorType): Self = this.set("exchangeConnectorType", value.asInstanceOf[js.Any])
+    def setExchangeOrganizationNull: Self = StObject.set(x, "exchangeOrganization", null)
     
     @scala.inline
-    def deleteExchangeConnectorType: Self = this.set("exchangeConnectorType", js.undefined)
+    def setExchangeOrganizationUndefined: Self = StObject.set(x, "exchangeOrganization", js.undefined)
     
     @scala.inline
-    def setExchangeOrganization(value: NullableOption[String]): Self = this.set("exchangeOrganization", value.asInstanceOf[js.Any])
+    def setLastSyncDateTime(value: String): Self = StObject.set(x, "lastSyncDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExchangeOrganization: Self = this.set("exchangeOrganization", js.undefined)
+    def setLastSyncDateTimeUndefined: Self = StObject.set(x, "lastSyncDateTime", js.undefined)
     
     @scala.inline
-    def setExchangeOrganizationNull: Self = this.set("exchangeOrganization", null)
+    def setPrimarySmtpAddress(value: NullableOption[String]): Self = StObject.set(x, "primarySmtpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSyncDateTime(value: String): Self = this.set("lastSyncDateTime", value.asInstanceOf[js.Any])
+    def setPrimarySmtpAddressNull: Self = StObject.set(x, "primarySmtpAddress", null)
     
     @scala.inline
-    def deleteLastSyncDateTime: Self = this.set("lastSyncDateTime", js.undefined)
+    def setPrimarySmtpAddressUndefined: Self = StObject.set(x, "primarySmtpAddress", js.undefined)
     
     @scala.inline
-    def setPrimarySmtpAddress(value: NullableOption[String]): Self = this.set("primarySmtpAddress", value.asInstanceOf[js.Any])
+    def setServerName(value: NullableOption[String]): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimarySmtpAddress: Self = this.set("primarySmtpAddress", js.undefined)
+    def setServerNameNull: Self = StObject.set(x, "serverName", null)
     
     @scala.inline
-    def setPrimarySmtpAddressNull: Self = this.set("primarySmtpAddress", null)
+    def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
     
     @scala.inline
-    def setServerName(value: NullableOption[String]): Self = this.set("serverName", value.asInstanceOf[js.Any])
+    def setStatus(value: DeviceManagementExchangeConnectorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServerName: Self = this.set("serverName", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setServerNameNull: Self = this.set("serverName", null)
+    def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DeviceManagementExchangeConnectorStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setVersionNull: Self = StObject.set(x, "version", null)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: NullableOption[String]): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionNull: Self = this.set("version", null)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -1,2917 +1,2337 @@
 package typings.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebGLConstants extends js.Object
+sealed trait WebGLConstants extends StObject
 @JSImport("cesium", "WebGLConstants")
 @js.native
-object WebGLConstants extends js.Object {
+object WebGLConstants extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WebGLConstants with Double] = js.native
   
   @js.native
   sealed trait ACTIVE_ATTRIBUTES extends WebGLConstants
-  /* 147 */ @js.native
-  object ACTIVE_ATTRIBUTES extends TopLevel[ACTIVE_ATTRIBUTES with Double]
+  /* 147 */ val ACTIVE_ATTRIBUTES: typings.cesium.mod.WebGLConstants.ACTIVE_ATTRIBUTES with Double = js.native
   
   @js.native
   sealed trait ACTIVE_TEXTURE extends WebGLConstants
-  /* 221 */ @js.native
-  object ACTIVE_TEXTURE extends TopLevel[ACTIVE_TEXTURE with Double]
+  /* 221 */ val ACTIVE_TEXTURE: typings.cesium.mod.WebGLConstants.ACTIVE_TEXTURE with Double = js.native
   
   @js.native
   sealed trait ACTIVE_UNIFORMS extends WebGLConstants
-  /* 146 */ @js.native
-  object ACTIVE_UNIFORMS extends TopLevel[ACTIVE_UNIFORMS with Double]
+  /* 146 */ val ACTIVE_UNIFORMS: typings.cesium.mod.WebGLConstants.ACTIVE_UNIFORMS with Double = js.native
   
   @js.native
   sealed trait ACTIVE_UNIFORM_BLOCKS extends WebGLConstants
-  /* 525 */ @js.native
-  object ACTIVE_UNIFORM_BLOCKS extends TopLevel[ACTIVE_UNIFORM_BLOCKS with Double]
+  /* 525 */ val ACTIVE_UNIFORM_BLOCKS: typings.cesium.mod.WebGLConstants.ACTIVE_UNIFORM_BLOCKS with Double = js.native
   
   @js.native
   sealed trait ALIASED_LINE_WIDTH_RANGE extends WebGLConstants
-  /* 67 */ @js.native
-  object ALIASED_LINE_WIDTH_RANGE extends TopLevel[ALIASED_LINE_WIDTH_RANGE with Double]
+  /* 67 */ val ALIASED_LINE_WIDTH_RANGE: typings.cesium.mod.WebGLConstants.ALIASED_LINE_WIDTH_RANGE with Double = js.native
   
   @js.native
   sealed trait ALIASED_POINT_SIZE_RANGE extends WebGLConstants
-  /* 66 */ @js.native
-  object ALIASED_POINT_SIZE_RANGE extends TopLevel[ALIASED_POINT_SIZE_RANGE with Double]
+  /* 66 */ val ALIASED_POINT_SIZE_RANGE: typings.cesium.mod.WebGLConstants.ALIASED_POINT_SIZE_RANGE with Double = js.native
   
   @js.native
   sealed trait ALPHA extends WebGLConstants
-  /* 124 */ @js.native
-  object ALPHA extends TopLevel[ALPHA with Double]
+  /* 124 */ val ALPHA: typings.cesium.mod.WebGLConstants.ALPHA with Double = js.native
   
   @js.native
   sealed trait ALPHA_BITS extends WebGLConstants
-  /* 101 */ @js.native
-  object ALPHA_BITS extends TopLevel[ALPHA_BITS with Double]
+  /* 101 */ val ALPHA_BITS: typings.cesium.mod.WebGLConstants.ALPHA_BITS with Double = js.native
   
   @js.native
   sealed trait ALREADY_SIGNALED extends WebGLConstants
-  /* 551 */ @js.native
-  object ALREADY_SIGNALED extends TopLevel[ALREADY_SIGNALED with Double]
+  /* 551 */ val ALREADY_SIGNALED: typings.cesium.mod.WebGLConstants.ALREADY_SIGNALED with Double = js.native
   
   @js.native
   sealed trait ALWAYS extends WebGLConstants
-  /* 157 */ @js.native
-  object ALWAYS extends TopLevel[ALWAYS with Double]
+  /* 157 */ val ALWAYS: typings.cesium.mod.WebGLConstants.ALWAYS with Double = js.native
   
   @js.native
   sealed trait ANY_SAMPLES_PASSED extends WebGLConstants
-  /* 557 */ @js.native
-  object ANY_SAMPLES_PASSED extends TopLevel[ANY_SAMPLES_PASSED with Double]
+  /* 557 */ val ANY_SAMPLES_PASSED: typings.cesium.mod.WebGLConstants.ANY_SAMPLES_PASSED with Double = js.native
   
   @js.native
   sealed trait ANY_SAMPLES_PASSED_CONSERVATIVE extends WebGLConstants
-  /* 558 */ @js.native
-  object ANY_SAMPLES_PASSED_CONSERVATIVE extends TopLevel[ANY_SAMPLES_PASSED_CONSERVATIVE with Double]
+  /* 558 */ val ANY_SAMPLES_PASSED_CONSERVATIVE: typings.cesium.mod.WebGLConstants.ANY_SAMPLES_PASSED_CONSERVATIVE with Double = js.native
   
   @js.native
   sealed trait ARRAY_BUFFER extends WebGLConstants
-  /* 36 */ @js.native
-  object ARRAY_BUFFER extends TopLevel[ARRAY_BUFFER with Double]
+  /* 36 */ val ARRAY_BUFFER: typings.cesium.mod.WebGLConstants.ARRAY_BUFFER with Double = js.native
   
   @js.native
   sealed trait ARRAY_BUFFER_BINDING extends WebGLConstants
-  /* 38 */ @js.native
-  object ARRAY_BUFFER_BINDING extends TopLevel[ARRAY_BUFFER_BINDING with Double]
+  /* 38 */ val ARRAY_BUFFER_BINDING: typings.cesium.mod.WebGLConstants.ARRAY_BUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait ATTACHED_SHADERS extends WebGLConstants
-  /* 145 */ @js.native
-  object ATTACHED_SHADERS extends TopLevel[ATTACHED_SHADERS with Double]
+  /* 145 */ val ATTACHED_SHADERS: typings.cesium.mod.WebGLConstants.ATTACHED_SHADERS with Double = js.native
   
   @js.native
   sealed trait BACK extends WebGLConstants
-  /* 47 */ @js.native
-  object BACK extends TopLevel[BACK with Double]
+  /* 47 */ val BACK: typings.cesium.mod.WebGLConstants.BACK with Double = js.native
   
   @js.native
   sealed trait BLEND extends WebGLConstants
-  /* 50 */ @js.native
-  object BLEND extends TopLevel[BLEND with Double]
+  /* 50 */ val BLEND: typings.cesium.mod.WebGLConstants.BLEND with Double = js.native
   
   @js.native
   sealed trait BLEND_COLOR extends WebGLConstants
-  /* 35 */ @js.native
-  object BLEND_COLOR extends TopLevel[BLEND_COLOR with Double]
+  /* 35 */ val BLEND_COLOR: typings.cesium.mod.WebGLConstants.BLEND_COLOR with Double = js.native
   
   @js.native
   sealed trait BLEND_DST_ALPHA extends WebGLConstants
-  /* 29 */ @js.native
-  object BLEND_DST_ALPHA extends TopLevel[BLEND_DST_ALPHA with Double]
+  /* 29 */ val BLEND_DST_ALPHA: typings.cesium.mod.WebGLConstants.BLEND_DST_ALPHA with Double = js.native
   
   @js.native
   sealed trait BLEND_DST_RGB extends WebGLConstants
-  /* 27 */ @js.native
-  object BLEND_DST_RGB extends TopLevel[BLEND_DST_RGB with Double]
+  /* 27 */ val BLEND_DST_RGB: typings.cesium.mod.WebGLConstants.BLEND_DST_RGB with Double = js.native
   
   @js.native
   sealed trait BLEND_EQUATION extends WebGLConstants
-  /* 22 */ @js.native
-  object BLEND_EQUATION extends TopLevel[BLEND_EQUATION with Double]
+  /* 22 */ val BLEND_EQUATION: typings.cesium.mod.WebGLConstants.BLEND_EQUATION with Double = js.native
   
+  // same as BLEND_EQUATION
   @js.native
   sealed trait BLEND_EQUATION_ALPHA extends WebGLConstants
-  /* 24 */ @js.native
-  object BLEND_EQUATION_ALPHA extends TopLevel[BLEND_EQUATION_ALPHA with Double]
+  /* 24 */ val BLEND_EQUATION_ALPHA: typings.cesium.mod.WebGLConstants.BLEND_EQUATION_ALPHA with Double = js.native
   
-   // same as BLEND_EQUATION
   @js.native
   sealed trait BLEND_EQUATION_RGB extends WebGLConstants
-  /* 23 */ @js.native
-  object BLEND_EQUATION_RGB extends TopLevel[BLEND_EQUATION_RGB with Double]
+  /* 23 */ val BLEND_EQUATION_RGB: typings.cesium.mod.WebGLConstants.BLEND_EQUATION_RGB with Double = js.native
   
   @js.native
   sealed trait BLEND_SRC_ALPHA extends WebGLConstants
-  /* 30 */ @js.native
-  object BLEND_SRC_ALPHA extends TopLevel[BLEND_SRC_ALPHA with Double]
+  /* 30 */ val BLEND_SRC_ALPHA: typings.cesium.mod.WebGLConstants.BLEND_SRC_ALPHA with Double = js.native
   
   @js.native
   sealed trait BLEND_SRC_RGB extends WebGLConstants
-  /* 28 */ @js.native
-  object BLEND_SRC_RGB extends TopLevel[BLEND_SRC_RGB with Double]
+  /* 28 */ val BLEND_SRC_RGB: typings.cesium.mod.WebGLConstants.BLEND_SRC_RGB with Double = js.native
   
   @js.native
   sealed trait BLUE_BITS extends WebGLConstants
-  /* 100 */ @js.native
-  object BLUE_BITS extends TopLevel[BLUE_BITS with Double]
+  /* 100 */ val BLUE_BITS: typings.cesium.mod.WebGLConstants.BLUE_BITS with Double = js.native
   
   @js.native
   sealed trait BOOL extends WebGLConstants
-  /* 231 */ @js.native
-  object BOOL extends TopLevel[BOOL with Double]
+  /* 231 */ val BOOL: typings.cesium.mod.WebGLConstants.BOOL with Double = js.native
   
   @js.native
   sealed trait BOOL_VEC2 extends WebGLConstants
-  /* 232 */ @js.native
-  object BOOL_VEC2 extends TopLevel[BOOL_VEC2 with Double]
+  /* 232 */ val BOOL_VEC2: typings.cesium.mod.WebGLConstants.BOOL_VEC2 with Double = js.native
   
   @js.native
   sealed trait BOOL_VEC3 extends WebGLConstants
-  /* 233 */ @js.native
-  object BOOL_VEC3 extends TopLevel[BOOL_VEC3 with Double]
+  /* 233 */ val BOOL_VEC3: typings.cesium.mod.WebGLConstants.BOOL_VEC3 with Double = js.native
   
   @js.native
   sealed trait BOOL_VEC4 extends WebGLConstants
-  /* 234 */ @js.native
-  object BOOL_VEC4 extends TopLevel[BOOL_VEC4 with Double]
+  /* 234 */ val BOOL_VEC4: typings.cesium.mod.WebGLConstants.BOOL_VEC4 with Double = js.native
   
   @js.native
   sealed trait BROWSER_DEFAULT_WEBGL extends WebGLConstants
-  /* 296 */ @js.native
-  object BROWSER_DEFAULT_WEBGL extends TopLevel[BROWSER_DEFAULT_WEBGL with Double]
+  /* 296 */ val BROWSER_DEFAULT_WEBGL: typings.cesium.mod.WebGLConstants.BROWSER_DEFAULT_WEBGL with Double = js.native
   
   @js.native
   sealed trait BUFFER_SIZE extends WebGLConstants
-  /* 43 */ @js.native
-  object BUFFER_SIZE extends TopLevel[BUFFER_SIZE with Double]
+  /* 43 */ val BUFFER_SIZE: typings.cesium.mod.WebGLConstants.BUFFER_SIZE with Double = js.native
   
   @js.native
   sealed trait BUFFER_USAGE extends WebGLConstants
-  /* 44 */ @js.native
-  object BUFFER_USAGE extends TopLevel[BUFFER_USAGE with Double]
+  /* 44 */ val BUFFER_USAGE: typings.cesium.mod.WebGLConstants.BUFFER_USAGE with Double = js.native
   
   @js.native
   sealed trait BYTE extends WebGLConstants
-  /* 116 */ @js.native
-  object BYTE extends TopLevel[BYTE with Double]
+  /* 116 */ val BYTE: typings.cesium.mod.WebGLConstants.BYTE with Double = js.native
   
   @js.native
   sealed trait CCW extends WebGLConstants
-  /* 64 */ @js.native
-  object CCW extends TopLevel[CCW with Double]
+  /* 64 */ val CCW: typings.cesium.mod.WebGLConstants.CCW with Double = js.native
   
   @js.native
   sealed trait CLAMP_TO_EDGE extends WebGLConstants
-  /* 223 */ @js.native
-  object CLAMP_TO_EDGE extends TopLevel[CLAMP_TO_EDGE with Double]
+  /* 223 */ val CLAMP_TO_EDGE: typings.cesium.mod.WebGLConstants.CLAMP_TO_EDGE with Double = js.native
   
   @js.native
   sealed trait COLOR extends WebGLConstants
-  /* 315 */ @js.native
-  object COLOR extends TopLevel[COLOR with Double]
+  /* 315 */ val COLOR: typings.cesium.mod.WebGLConstants.COLOR with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT0 extends WebGLConstants
-  /* 278 */ @js.native
-  object COLOR_ATTACHMENT0 extends TopLevel[COLOR_ATTACHMENT0 with Double]
+  /* 278 */ val COLOR_ATTACHMENT0: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT0 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT1 extends WebGLConstants
-  /* 465 */ @js.native
-  object COLOR_ATTACHMENT1 extends TopLevel[COLOR_ATTACHMENT1 with Double]
+  /* 465 */ val COLOR_ATTACHMENT1: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT1 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT10 extends WebGLConstants
-  /* 474 */ @js.native
-  object COLOR_ATTACHMENT10 extends TopLevel[COLOR_ATTACHMENT10 with Double]
+  /* 474 */ val COLOR_ATTACHMENT10: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT10 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT11 extends WebGLConstants
-  /* 475 */ @js.native
-  object COLOR_ATTACHMENT11 extends TopLevel[COLOR_ATTACHMENT11 with Double]
+  /* 475 */ val COLOR_ATTACHMENT11: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT11 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT12 extends WebGLConstants
-  /* 476 */ @js.native
-  object COLOR_ATTACHMENT12 extends TopLevel[COLOR_ATTACHMENT12 with Double]
+  /* 476 */ val COLOR_ATTACHMENT12: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT12 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT13 extends WebGLConstants
-  /* 477 */ @js.native
-  object COLOR_ATTACHMENT13 extends TopLevel[COLOR_ATTACHMENT13 with Double]
+  /* 477 */ val COLOR_ATTACHMENT13: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT13 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT14 extends WebGLConstants
-  /* 478 */ @js.native
-  object COLOR_ATTACHMENT14 extends TopLevel[COLOR_ATTACHMENT14 with Double]
+  /* 478 */ val COLOR_ATTACHMENT14: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT14 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT15 extends WebGLConstants
-  /* 479 */ @js.native
-  object COLOR_ATTACHMENT15 extends TopLevel[COLOR_ATTACHMENT15 with Double]
+  /* 479 */ val COLOR_ATTACHMENT15: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT15 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT2 extends WebGLConstants
-  /* 466 */ @js.native
-  object COLOR_ATTACHMENT2 extends TopLevel[COLOR_ATTACHMENT2 with Double]
+  /* 466 */ val COLOR_ATTACHMENT2: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT2 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT3 extends WebGLConstants
-  /* 467 */ @js.native
-  object COLOR_ATTACHMENT3 extends TopLevel[COLOR_ATTACHMENT3 with Double]
+  /* 467 */ val COLOR_ATTACHMENT3: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT3 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT4 extends WebGLConstants
-  /* 468 */ @js.native
-  object COLOR_ATTACHMENT4 extends TopLevel[COLOR_ATTACHMENT4 with Double]
+  /* 468 */ val COLOR_ATTACHMENT4: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT4 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT5 extends WebGLConstants
-  /* 469 */ @js.native
-  object COLOR_ATTACHMENT5 extends TopLevel[COLOR_ATTACHMENT5 with Double]
+  /* 469 */ val COLOR_ATTACHMENT5: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT5 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT6 extends WebGLConstants
-  /* 470 */ @js.native
-  object COLOR_ATTACHMENT6 extends TopLevel[COLOR_ATTACHMENT6 with Double]
+  /* 470 */ val COLOR_ATTACHMENT6: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT6 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT7 extends WebGLConstants
-  /* 471 */ @js.native
-  object COLOR_ATTACHMENT7 extends TopLevel[COLOR_ATTACHMENT7 with Double]
+  /* 471 */ val COLOR_ATTACHMENT7: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT7 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT8 extends WebGLConstants
-  /* 472 */ @js.native
-  object COLOR_ATTACHMENT8 extends TopLevel[COLOR_ATTACHMENT8 with Double]
+  /* 472 */ val COLOR_ATTACHMENT8: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT8 with Double = js.native
   
   @js.native
   sealed trait COLOR_ATTACHMENT9 extends WebGLConstants
-  /* 473 */ @js.native
-  object COLOR_ATTACHMENT9 extends TopLevel[COLOR_ATTACHMENT9 with Double]
+  /* 473 */ val COLOR_ATTACHMENT9: typings.cesium.mod.WebGLConstants.COLOR_ATTACHMENT9 with Double = js.native
   
   @js.native
   sealed trait COLOR_BUFFER_BIT extends WebGLConstants
-  /* 2 */ @js.native
-  object COLOR_BUFFER_BIT extends TopLevel[COLOR_BUFFER_BIT with Double]
+  /* 2 */ val COLOR_BUFFER_BIT: typings.cesium.mod.WebGLConstants.COLOR_BUFFER_BIT with Double = js.native
   
   @js.native
   sealed trait COLOR_CLEAR_VALUE extends WebGLConstants
-  /* 91 */ @js.native
-  object COLOR_CLEAR_VALUE extends TopLevel[COLOR_CLEAR_VALUE with Double]
+  /* 91 */ val COLOR_CLEAR_VALUE: typings.cesium.mod.WebGLConstants.COLOR_CLEAR_VALUE with Double = js.native
   
   @js.native
   sealed trait COLOR_WRITEMASK extends WebGLConstants
-  /* 92 */ @js.native
-  object COLOR_WRITEMASK extends TopLevel[COLOR_WRITEMASK with Double]
+  /* 92 */ val COLOR_WRITEMASK: typings.cesium.mod.WebGLConstants.COLOR_WRITEMASK with Double = js.native
   
   @js.native
   sealed trait COMPARE_REF_TO_TEXTURE extends WebGLConstants
-  /* 385 */ @js.native
-  object COMPARE_REF_TO_TEXTURE extends TopLevel[COMPARE_REF_TO_TEXTURE with Double]
+  /* 385 */ val COMPARE_REF_TO_TEXTURE: typings.cesium.mod.WebGLConstants.COMPARE_REF_TO_TEXTURE with Double = js.native
   
   @js.native
   sealed trait COMPILE_STATUS extends WebGLConstants
-  /* 249 */ @js.native
-  object COMPILE_STATUS extends TopLevel[COMPILE_STATUS with Double]
+  /* 249 */ val COMPILE_STATUS: typings.cesium.mod.WebGLConstants.COMPILE_STATUS with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_R11_EAC extends WebGLConstants
-  /* 566 */ @js.native
-  object COMPRESSED_R11_EAC extends TopLevel[COMPRESSED_R11_EAC with Double]
+  /* 566 */ val COMPRESSED_R11_EAC: typings.cesium.mod.WebGLConstants.COMPRESSED_R11_EAC with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RG11_EAC extends WebGLConstants
-  /* 568 */ @js.native
-  object COMPRESSED_RG11_EAC extends TopLevel[COMPRESSED_RG11_EAC with Double]
+  /* 568 */ val COMPRESSED_RG11_EAC: typings.cesium.mod.WebGLConstants.COMPRESSED_RG11_EAC with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGB8_ETC2 extends WebGLConstants
-  /* 570 */ @js.native
-  object COMPRESSED_RGB8_ETC2 extends TopLevel[COMPRESSED_RGB8_ETC2 with Double]
+  /* 570 */ val COMPRESSED_RGB8_ETC2: typings.cesium.mod.WebGLConstants.COMPRESSED_RGB8_ETC2 with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 extends WebGLConstants
-  /* 572 */ @js.native
-  object COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 extends TopLevel[COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 with Double]
+  /* 572 */ val COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2: typings.cesium.mod.WebGLConstants.COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGBA8_ETC2_EAC extends WebGLConstants
-  /* 574 */ @js.native
-  object COMPRESSED_RGBA8_ETC2_EAC extends TopLevel[COMPRESSED_RGBA8_ETC2_EAC with Double]
+  /* 574 */ val COMPRESSED_RGBA8_ETC2_EAC: typings.cesium.mod.WebGLConstants.COMPRESSED_RGBA8_ETC2_EAC with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGBA_PVRTC_2BPPV1_IMG extends WebGLConstants
-  /* 304 */ @js.native
-  object COMPRESSED_RGBA_PVRTC_2BPPV1_IMG extends TopLevel[COMPRESSED_RGBA_PVRTC_2BPPV1_IMG with Double]
+  /* 304 */ val COMPRESSED_RGBA_PVRTC_2BPPV1_IMG: typings.cesium.mod.WebGLConstants.COMPRESSED_RGBA_PVRTC_2BPPV1_IMG with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGBA_PVRTC_4BPPV1_IMG extends WebGLConstants
-  /* 303 */ @js.native
-  object COMPRESSED_RGBA_PVRTC_4BPPV1_IMG extends TopLevel[COMPRESSED_RGBA_PVRTC_4BPPV1_IMG with Double]
+  /* 303 */ val COMPRESSED_RGBA_PVRTC_4BPPV1_IMG: typings.cesium.mod.WebGLConstants.COMPRESSED_RGBA_PVRTC_4BPPV1_IMG with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGBA_S3TC_DXT1_EXT extends WebGLConstants
-  /* 298 */ @js.native
-  object COMPRESSED_RGBA_S3TC_DXT1_EXT extends TopLevel[COMPRESSED_RGBA_S3TC_DXT1_EXT with Double]
+  /* 298 */ val COMPRESSED_RGBA_S3TC_DXT1_EXT: typings.cesium.mod.WebGLConstants.COMPRESSED_RGBA_S3TC_DXT1_EXT with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGBA_S3TC_DXT3_EXT extends WebGLConstants
-  /* 299 */ @js.native
-  object COMPRESSED_RGBA_S3TC_DXT3_EXT extends TopLevel[COMPRESSED_RGBA_S3TC_DXT3_EXT with Double]
+  /* 299 */ val COMPRESSED_RGBA_S3TC_DXT3_EXT: typings.cesium.mod.WebGLConstants.COMPRESSED_RGBA_S3TC_DXT3_EXT with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGBA_S3TC_DXT5_EXT extends WebGLConstants
-  /* 300 */ @js.native
-  object COMPRESSED_RGBA_S3TC_DXT5_EXT extends TopLevel[COMPRESSED_RGBA_S3TC_DXT5_EXT with Double]
+  /* 300 */ val COMPRESSED_RGBA_S3TC_DXT5_EXT: typings.cesium.mod.WebGLConstants.COMPRESSED_RGBA_S3TC_DXT5_EXT with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGB_ETC1_WEBGL extends WebGLConstants
-  /* 305 */ @js.native
-  object COMPRESSED_RGB_ETC1_WEBGL extends TopLevel[COMPRESSED_RGB_ETC1_WEBGL with Double]
+  /* 305 */ val COMPRESSED_RGB_ETC1_WEBGL: typings.cesium.mod.WebGLConstants.COMPRESSED_RGB_ETC1_WEBGL with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGB_PVRTC_2BPPV1_IMG extends WebGLConstants
-  /* 302 */ @js.native
-  object COMPRESSED_RGB_PVRTC_2BPPV1_IMG extends TopLevel[COMPRESSED_RGB_PVRTC_2BPPV1_IMG with Double]
+  /* 302 */ val COMPRESSED_RGB_PVRTC_2BPPV1_IMG: typings.cesium.mod.WebGLConstants.COMPRESSED_RGB_PVRTC_2BPPV1_IMG with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGB_PVRTC_4BPPV1_IMG extends WebGLConstants
-  /* 301 */ @js.native
-  object COMPRESSED_RGB_PVRTC_4BPPV1_IMG extends TopLevel[COMPRESSED_RGB_PVRTC_4BPPV1_IMG with Double]
+  /* 301 */ val COMPRESSED_RGB_PVRTC_4BPPV1_IMG: typings.cesium.mod.WebGLConstants.COMPRESSED_RGB_PVRTC_4BPPV1_IMG with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_RGB_S3TC_DXT1_EXT extends WebGLConstants
-  /* 297 */ @js.native
-  object COMPRESSED_RGB_S3TC_DXT1_EXT extends TopLevel[COMPRESSED_RGB_S3TC_DXT1_EXT with Double]
+  /* 297 */ val COMPRESSED_RGB_S3TC_DXT1_EXT: typings.cesium.mod.WebGLConstants.COMPRESSED_RGB_S3TC_DXT1_EXT with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_SIGNED_R11_EAC extends WebGLConstants
-  /* 567 */ @js.native
-  object COMPRESSED_SIGNED_R11_EAC extends TopLevel[COMPRESSED_SIGNED_R11_EAC with Double]
+  /* 567 */ val COMPRESSED_SIGNED_R11_EAC: typings.cesium.mod.WebGLConstants.COMPRESSED_SIGNED_R11_EAC with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_SIGNED_RG11_EAC extends WebGLConstants
-  /* 569 */ @js.native
-  object COMPRESSED_SIGNED_RG11_EAC extends TopLevel[COMPRESSED_SIGNED_RG11_EAC with Double]
+  /* 569 */ val COMPRESSED_SIGNED_RG11_EAC: typings.cesium.mod.WebGLConstants.COMPRESSED_SIGNED_RG11_EAC with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_SRGB8_ALPHA8_ETC2_EAC extends WebGLConstants
-  /* 575 */ @js.native
-  object COMPRESSED_SRGB8_ALPHA8_ETC2_EAC extends TopLevel[COMPRESSED_SRGB8_ALPHA8_ETC2_EAC with Double]
+  /* 575 */ val COMPRESSED_SRGB8_ALPHA8_ETC2_EAC: typings.cesium.mod.WebGLConstants.COMPRESSED_SRGB8_ALPHA8_ETC2_EAC with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_SRGB8_ETC2 extends WebGLConstants
-  /* 571 */ @js.native
-  object COMPRESSED_SRGB8_ETC2 extends TopLevel[COMPRESSED_SRGB8_ETC2 with Double]
+  /* 571 */ val COMPRESSED_SRGB8_ETC2: typings.cesium.mod.WebGLConstants.COMPRESSED_SRGB8_ETC2 with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 extends WebGLConstants
-  /* 573 */ @js.native
-  object COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 extends TopLevel[COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 with Double]
+  /* 573 */ val COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2: typings.cesium.mod.WebGLConstants.COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 with Double = js.native
   
   @js.native
   sealed trait COMPRESSED_TEXTURE_FORMATS extends WebGLConstants
-  /* 111 */ @js.native
-  object COMPRESSED_TEXTURE_FORMATS extends TopLevel[COMPRESSED_TEXTURE_FORMATS with Double]
+  /* 111 */ val COMPRESSED_TEXTURE_FORMATS: typings.cesium.mod.WebGLConstants.COMPRESSED_TEXTURE_FORMATS with Double = js.native
   
   @js.native
   sealed trait CONDITION_SATISFIED extends WebGLConstants
-  /* 553 */ @js.native
-  object CONDITION_SATISFIED extends TopLevel[CONDITION_SATISFIED with Double]
+  /* 553 */ val CONDITION_SATISFIED: typings.cesium.mod.WebGLConstants.CONDITION_SATISFIED with Double = js.native
   
   @js.native
   sealed trait CONSTANT_ALPHA extends WebGLConstants
-  /* 33 */ @js.native
-  object CONSTANT_ALPHA extends TopLevel[CONSTANT_ALPHA with Double]
+  /* 33 */ val CONSTANT_ALPHA: typings.cesium.mod.WebGLConstants.CONSTANT_ALPHA with Double = js.native
   
   @js.native
   sealed trait CONSTANT_COLOR extends WebGLConstants
-  /* 31 */ @js.native
-  object CONSTANT_COLOR extends TopLevel[CONSTANT_COLOR with Double]
+  /* 31 */ val CONSTANT_COLOR: typings.cesium.mod.WebGLConstants.CONSTANT_COLOR with Double = js.native
   
   @js.native
   sealed trait CONTEXT_LOST_WEBGL extends WebGLConstants
-  /* 294 */ @js.native
-  object CONTEXT_LOST_WEBGL extends TopLevel[CONTEXT_LOST_WEBGL with Double]
+  /* 294 */ val CONTEXT_LOST_WEBGL: typings.cesium.mod.WebGLConstants.CONTEXT_LOST_WEBGL with Double = js.native
   
   @js.native
   sealed trait COPY_READ_BUFFER extends WebGLConstants
-  /* 509 */ @js.native
-  object COPY_READ_BUFFER extends TopLevel[COPY_READ_BUFFER with Double]
+  /* 509 */ val COPY_READ_BUFFER: typings.cesium.mod.WebGLConstants.COPY_READ_BUFFER with Double = js.native
   
   @js.native
   sealed trait COPY_READ_BUFFER_BINDING extends WebGLConstants
-  /* 511 */ @js.native
-  object COPY_READ_BUFFER_BINDING extends TopLevel[COPY_READ_BUFFER_BINDING with Double]
+  /* 511 */ val COPY_READ_BUFFER_BINDING: typings.cesium.mod.WebGLConstants.COPY_READ_BUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait COPY_WRITE_BUFFER extends WebGLConstants
-  /* 510 */ @js.native
-  object COPY_WRITE_BUFFER extends TopLevel[COPY_WRITE_BUFFER with Double]
+  /* 510 */ val COPY_WRITE_BUFFER: typings.cesium.mod.WebGLConstants.COPY_WRITE_BUFFER with Double = js.native
   
   @js.native
   sealed trait COPY_WRITE_BUFFER_BINDING extends WebGLConstants
-  /* 512 */ @js.native
-  object COPY_WRITE_BUFFER_BINDING extends TopLevel[COPY_WRITE_BUFFER_BINDING with Double]
+  /* 512 */ val COPY_WRITE_BUFFER_BINDING: typings.cesium.mod.WebGLConstants.COPY_WRITE_BUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait CULL_FACE extends WebGLConstants
-  /* 49 */ @js.native
-  object CULL_FACE extends TopLevel[CULL_FACE with Double]
+  /* 49 */ val CULL_FACE: typings.cesium.mod.WebGLConstants.CULL_FACE with Double = js.native
   
   @js.native
   sealed trait CULL_FACE_MODE extends WebGLConstants
-  /* 68 */ @js.native
-  object CULL_FACE_MODE extends TopLevel[CULL_FACE_MODE with Double]
+  /* 68 */ val CULL_FACE_MODE: typings.cesium.mod.WebGLConstants.CULL_FACE_MODE with Double = js.native
   
   @js.native
   sealed trait CURRENT_PROGRAM extends WebGLConstants
-  /* 149 */ @js.native
-  object CURRENT_PROGRAM extends TopLevel[CURRENT_PROGRAM with Double]
+  /* 149 */ val CURRENT_PROGRAM: typings.cesium.mod.WebGLConstants.CURRENT_PROGRAM with Double = js.native
   
   @js.native
   sealed trait CURRENT_QUERY extends WebGLConstants
-  /* 341 */ @js.native
-  object CURRENT_QUERY extends TopLevel[CURRENT_QUERY with Double]
+  /* 341 */ val CURRENT_QUERY: typings.cesium.mod.WebGLConstants.CURRENT_QUERY with Double = js.native
   
   @js.native
   sealed trait CURRENT_VERTEX_ATTRIB extends WebGLConstants
-  /* 45 */ @js.native
-  object CURRENT_VERTEX_ATTRIB extends TopLevel[CURRENT_VERTEX_ATTRIB with Double]
+  /* 45 */ val CURRENT_VERTEX_ATTRIB: typings.cesium.mod.WebGLConstants.CURRENT_VERTEX_ATTRIB with Double = js.native
   
   @js.native
   sealed trait CW extends WebGLConstants
-  /* 63 */ @js.native
-  object CW extends TopLevel[CW with Double]
+  /* 63 */ val CW: typings.cesium.mod.WebGLConstants.CW with Double = js.native
   
   @js.native
   sealed trait DECR extends WebGLConstants
-  /* 161 */ @js.native
-  object DECR extends TopLevel[DECR with Double]
+  /* 161 */ val DECR: typings.cesium.mod.WebGLConstants.DECR with Double = js.native
   
   @js.native
   sealed trait DECR_WRAP extends WebGLConstants
-  /* 164 */ @js.native
-  object DECR_WRAP extends TopLevel[DECR_WRAP with Double]
+  /* 164 */ val DECR_WRAP: typings.cesium.mod.WebGLConstants.DECR_WRAP with Double = js.native
   
   @js.native
   sealed trait DELETE_STATUS extends WebGLConstants
-  /* 142 */ @js.native
-  object DELETE_STATUS extends TopLevel[DELETE_STATUS with Double]
+  /* 142 */ val DELETE_STATUS: typings.cesium.mod.WebGLConstants.DELETE_STATUS with Double = js.native
   
   @js.native
   sealed trait DEPTH extends WebGLConstants
-  /* 316 */ @js.native
-  object DEPTH extends TopLevel[DEPTH with Double]
+  /* 316 */ val DEPTH: typings.cesium.mod.WebGLConstants.DEPTH with Double = js.native
   
   @js.native
   sealed trait DEPTH24_STENCIL8 extends WebGLConstants
-  /* 456 */ @js.native
-  object DEPTH24_STENCIL8 extends TopLevel[DEPTH24_STENCIL8 with Double]
+  /* 456 */ val DEPTH24_STENCIL8: typings.cesium.mod.WebGLConstants.DEPTH24_STENCIL8 with Double = js.native
   
   @js.native
   sealed trait DEPTH32F_STENCIL8 extends WebGLConstants
-  /* 444 */ @js.native
-  object DEPTH32F_STENCIL8 extends TopLevel[DEPTH32F_STENCIL8 with Double]
+  /* 444 */ val DEPTH32F_STENCIL8: typings.cesium.mod.WebGLConstants.DEPTH32F_STENCIL8 with Double = js.native
   
   @js.native
   sealed trait DEPTH_ATTACHMENT extends WebGLConstants
-  /* 279 */ @js.native
-  object DEPTH_ATTACHMENT extends TopLevel[DEPTH_ATTACHMENT with Double]
+  /* 279 */ val DEPTH_ATTACHMENT: typings.cesium.mod.WebGLConstants.DEPTH_ATTACHMENT with Double = js.native
   
   @js.native
   sealed trait DEPTH_BITS extends WebGLConstants
-  /* 102 */ @js.native
-  object DEPTH_BITS extends TopLevel[DEPTH_BITS with Double]
+  /* 102 */ val DEPTH_BITS: typings.cesium.mod.WebGLConstants.DEPTH_BITS with Double = js.native
   
   @js.native
   sealed trait DEPTH_BUFFER_BIT extends WebGLConstants
-  /* 0 */ @js.native
-  object DEPTH_BUFFER_BIT extends TopLevel[DEPTH_BUFFER_BIT with Double]
+  /* 0 */ val DEPTH_BUFFER_BIT: typings.cesium.mod.WebGLConstants.DEPTH_BUFFER_BIT with Double = js.native
   
   @js.native
   sealed trait DEPTH_CLEAR_VALUE extends WebGLConstants
-  /* 72 */ @js.native
-  object DEPTH_CLEAR_VALUE extends TopLevel[DEPTH_CLEAR_VALUE with Double]
+  /* 72 */ val DEPTH_CLEAR_VALUE: typings.cesium.mod.WebGLConstants.DEPTH_CLEAR_VALUE with Double = js.native
   
   @js.native
   sealed trait DEPTH_COMPONENT extends WebGLConstants
-  /* 123 */ @js.native
-  object DEPTH_COMPONENT extends TopLevel[DEPTH_COMPONENT with Double]
+  /* 123 */ val DEPTH_COMPONENT: typings.cesium.mod.WebGLConstants.DEPTH_COMPONENT with Double = js.native
   
   @js.native
   sealed trait DEPTH_COMPONENT16 extends WebGLConstants
-  /* 261 */ @js.native
-  object DEPTH_COMPONENT16 extends TopLevel[DEPTH_COMPONENT16 with Double]
+  /* 261 */ val DEPTH_COMPONENT16: typings.cesium.mod.WebGLConstants.DEPTH_COMPONENT16 with Double = js.native
   
   @js.native
   sealed trait DEPTH_COMPONENT24 extends WebGLConstants
-  /* 337 */ @js.native
-  object DEPTH_COMPONENT24 extends TopLevel[DEPTH_COMPONENT24 with Double]
+  /* 337 */ val DEPTH_COMPONENT24: typings.cesium.mod.WebGLConstants.DEPTH_COMPONENT24 with Double = js.native
   
   @js.native
   sealed trait DEPTH_COMPONENT32F extends WebGLConstants
-  /* 443 */ @js.native
-  object DEPTH_COMPONENT32F extends TopLevel[DEPTH_COMPONENT32F with Double]
+  /* 443 */ val DEPTH_COMPONENT32F: typings.cesium.mod.WebGLConstants.DEPTH_COMPONENT32F with Double = js.native
   
   @js.native
   sealed trait DEPTH_FUNC extends WebGLConstants
-  /* 73 */ @js.native
-  object DEPTH_FUNC extends TopLevel[DEPTH_FUNC with Double]
+  /* 73 */ val DEPTH_FUNC: typings.cesium.mod.WebGLConstants.DEPTH_FUNC with Double = js.native
   
   @js.native
   sealed trait DEPTH_RANGE extends WebGLConstants
-  /* 70 */ @js.native
-  object DEPTH_RANGE extends TopLevel[DEPTH_RANGE with Double]
+  /* 70 */ val DEPTH_RANGE: typings.cesium.mod.WebGLConstants.DEPTH_RANGE with Double = js.native
   
   @js.native
   sealed trait DEPTH_STENCIL extends WebGLConstants
-  /* 264 */ @js.native
-  object DEPTH_STENCIL extends TopLevel[DEPTH_STENCIL with Double]
+  /* 264 */ val DEPTH_STENCIL: typings.cesium.mod.WebGLConstants.DEPTH_STENCIL with Double = js.native
   
   @js.native
   sealed trait DEPTH_STENCIL_ATTACHMENT extends WebGLConstants
-  /* 281 */ @js.native
-  object DEPTH_STENCIL_ATTACHMENT extends TopLevel[DEPTH_STENCIL_ATTACHMENT with Double]
+  /* 281 */ val DEPTH_STENCIL_ATTACHMENT: typings.cesium.mod.WebGLConstants.DEPTH_STENCIL_ATTACHMENT with Double = js.native
   
   @js.native
   sealed trait DEPTH_TEST extends WebGLConstants
-  /* 53 */ @js.native
-  object DEPTH_TEST extends TopLevel[DEPTH_TEST with Double]
+  /* 53 */ val DEPTH_TEST: typings.cesium.mod.WebGLConstants.DEPTH_TEST with Double = js.native
   
   @js.native
   sealed trait DEPTH_WRITEMASK extends WebGLConstants
-  /* 71 */ @js.native
-  object DEPTH_WRITEMASK extends TopLevel[DEPTH_WRITEMASK with Double]
+  /* 71 */ val DEPTH_WRITEMASK: typings.cesium.mod.WebGLConstants.DEPTH_WRITEMASK with Double = js.native
   
   @js.native
   sealed trait DITHER extends WebGLConstants
-  /* 51 */ @js.native
-  object DITHER extends TopLevel[DITHER with Double]
+  /* 51 */ val DITHER: typings.cesium.mod.WebGLConstants.DITHER with Double = js.native
   
   @js.native
   sealed trait DONT_CARE extends WebGLConstants
-  /* 112 */ @js.native
-  object DONT_CARE extends TopLevel[DONT_CARE with Double]
+  /* 112 */ val DONT_CARE: typings.cesium.mod.WebGLConstants.DONT_CARE with Double = js.native
   
   @js.native
   sealed trait DOUBLE extends WebGLConstants
-  /* 307 */ @js.native
-  object DOUBLE extends TopLevel[DOUBLE with Double]
+  /* 307 */ val DOUBLE: typings.cesium.mod.WebGLConstants.DOUBLE with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER0 extends WebGLConstants
-  /* 351 */ @js.native
-  object DRAW_BUFFER0 extends TopLevel[DRAW_BUFFER0 with Double]
+  /* 351 */ val DRAW_BUFFER0: typings.cesium.mod.WebGLConstants.DRAW_BUFFER0 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER1 extends WebGLConstants
-  /* 352 */ @js.native
-  object DRAW_BUFFER1 extends TopLevel[DRAW_BUFFER1 with Double]
+  /* 352 */ val DRAW_BUFFER1: typings.cesium.mod.WebGLConstants.DRAW_BUFFER1 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER10 extends WebGLConstants
-  /* 361 */ @js.native
-  object DRAW_BUFFER10 extends TopLevel[DRAW_BUFFER10 with Double]
+  /* 361 */ val DRAW_BUFFER10: typings.cesium.mod.WebGLConstants.DRAW_BUFFER10 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER11 extends WebGLConstants
-  /* 362 */ @js.native
-  object DRAW_BUFFER11 extends TopLevel[DRAW_BUFFER11 with Double]
+  /* 362 */ val DRAW_BUFFER11: typings.cesium.mod.WebGLConstants.DRAW_BUFFER11 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER12 extends WebGLConstants
-  /* 363 */ @js.native
-  object DRAW_BUFFER12 extends TopLevel[DRAW_BUFFER12 with Double]
+  /* 363 */ val DRAW_BUFFER12: typings.cesium.mod.WebGLConstants.DRAW_BUFFER12 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER13 extends WebGLConstants
-  /* 364 */ @js.native
-  object DRAW_BUFFER13 extends TopLevel[DRAW_BUFFER13 with Double]
+  /* 364 */ val DRAW_BUFFER13: typings.cesium.mod.WebGLConstants.DRAW_BUFFER13 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER14 extends WebGLConstants
-  /* 365 */ @js.native
-  object DRAW_BUFFER14 extends TopLevel[DRAW_BUFFER14 with Double]
+  /* 365 */ val DRAW_BUFFER14: typings.cesium.mod.WebGLConstants.DRAW_BUFFER14 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER15 extends WebGLConstants
-  /* 366 */ @js.native
-  object DRAW_BUFFER15 extends TopLevel[DRAW_BUFFER15 with Double]
+  /* 366 */ val DRAW_BUFFER15: typings.cesium.mod.WebGLConstants.DRAW_BUFFER15 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER2 extends WebGLConstants
-  /* 353 */ @js.native
-  object DRAW_BUFFER2 extends TopLevel[DRAW_BUFFER2 with Double]
+  /* 353 */ val DRAW_BUFFER2: typings.cesium.mod.WebGLConstants.DRAW_BUFFER2 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER3 extends WebGLConstants
-  /* 354 */ @js.native
-  object DRAW_BUFFER3 extends TopLevel[DRAW_BUFFER3 with Double]
+  /* 354 */ val DRAW_BUFFER3: typings.cesium.mod.WebGLConstants.DRAW_BUFFER3 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER4 extends WebGLConstants
-  /* 355 */ @js.native
-  object DRAW_BUFFER4 extends TopLevel[DRAW_BUFFER4 with Double]
+  /* 355 */ val DRAW_BUFFER4: typings.cesium.mod.WebGLConstants.DRAW_BUFFER4 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER5 extends WebGLConstants
-  /* 356 */ @js.native
-  object DRAW_BUFFER5 extends TopLevel[DRAW_BUFFER5 with Double]
+  /* 356 */ val DRAW_BUFFER5: typings.cesium.mod.WebGLConstants.DRAW_BUFFER5 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER6 extends WebGLConstants
-  /* 357 */ @js.native
-  object DRAW_BUFFER6 extends TopLevel[DRAW_BUFFER6 with Double]
+  /* 357 */ val DRAW_BUFFER6: typings.cesium.mod.WebGLConstants.DRAW_BUFFER6 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER7 extends WebGLConstants
-  /* 358 */ @js.native
-  object DRAW_BUFFER7 extends TopLevel[DRAW_BUFFER7 with Double]
+  /* 358 */ val DRAW_BUFFER7: typings.cesium.mod.WebGLConstants.DRAW_BUFFER7 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER8 extends WebGLConstants
-  /* 359 */ @js.native
-  object DRAW_BUFFER8 extends TopLevel[DRAW_BUFFER8 with Double]
+  /* 359 */ val DRAW_BUFFER8: typings.cesium.mod.WebGLConstants.DRAW_BUFFER8 with Double = js.native
   
   @js.native
   sealed trait DRAW_BUFFER9 extends WebGLConstants
-  /* 360 */ @js.native
-  object DRAW_BUFFER9 extends TopLevel[DRAW_BUFFER9 with Double]
+  /* 360 */ val DRAW_BUFFER9: typings.cesium.mod.WebGLConstants.DRAW_BUFFER9 with Double = js.native
   
   @js.native
   sealed trait DRAW_FRAMEBUFFER extends WebGLConstants
-  /* 460 */ @js.native
-  object DRAW_FRAMEBUFFER extends TopLevel[DRAW_FRAMEBUFFER with Double]
+  /* 460 */ val DRAW_FRAMEBUFFER: typings.cesium.mod.WebGLConstants.DRAW_FRAMEBUFFER with Double = js.native
   
   @js.native
   sealed trait DRAW_FRAMEBUFFER_BINDING extends WebGLConstants
-  /* 458 */ @js.native
-  object DRAW_FRAMEBUFFER_BINDING extends TopLevel[DRAW_FRAMEBUFFER_BINDING with Double]
+  /* 458 */ val DRAW_FRAMEBUFFER_BINDING: typings.cesium.mod.WebGLConstants.DRAW_FRAMEBUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait DST_ALPHA extends WebGLConstants
-  /* 16 */ @js.native
-  object DST_ALPHA extends TopLevel[DST_ALPHA with Double]
+  /* 16 */ val DST_ALPHA: typings.cesium.mod.WebGLConstants.DST_ALPHA with Double = js.native
   
   @js.native
   sealed trait DST_COLOR extends WebGLConstants
-  /* 18 */ @js.native
-  object DST_COLOR extends TopLevel[DST_COLOR with Double]
+  /* 18 */ val DST_COLOR: typings.cesium.mod.WebGLConstants.DST_COLOR with Double = js.native
   
   @js.native
   sealed trait DYNAMIC_COPY extends WebGLConstants
-  /* 349 */ @js.native
-  object DYNAMIC_COPY extends TopLevel[DYNAMIC_COPY with Double]
+  /* 349 */ val DYNAMIC_COPY: typings.cesium.mod.WebGLConstants.DYNAMIC_COPY with Double = js.native
   
   @js.native
   sealed trait DYNAMIC_DRAW extends WebGLConstants
-  /* 42 */ @js.native
-  object DYNAMIC_DRAW extends TopLevel[DYNAMIC_DRAW with Double]
+  /* 42 */ val DYNAMIC_DRAW: typings.cesium.mod.WebGLConstants.DYNAMIC_DRAW with Double = js.native
   
   @js.native
   sealed trait DYNAMIC_READ extends WebGLConstants
-  /* 348 */ @js.native
-  object DYNAMIC_READ extends TopLevel[DYNAMIC_READ with Double]
+  /* 348 */ val DYNAMIC_READ: typings.cesium.mod.WebGLConstants.DYNAMIC_READ with Double = js.native
   
   @js.native
   sealed trait ELEMENT_ARRAY_BUFFER extends WebGLConstants
-  /* 37 */ @js.native
-  object ELEMENT_ARRAY_BUFFER extends TopLevel[ELEMENT_ARRAY_BUFFER with Double]
+  /* 37 */ val ELEMENT_ARRAY_BUFFER: typings.cesium.mod.WebGLConstants.ELEMENT_ARRAY_BUFFER with Double = js.native
   
   @js.native
   sealed trait ELEMENT_ARRAY_BUFFER_BINDING extends WebGLConstants
-  /* 39 */ @js.native
-  object ELEMENT_ARRAY_BUFFER_BINDING extends TopLevel[ELEMENT_ARRAY_BUFFER_BINDING with Double]
+  /* 39 */ val ELEMENT_ARRAY_BUFFER_BINDING: typings.cesium.mod.WebGLConstants.ELEMENT_ARRAY_BUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait EQUAL extends WebGLConstants
-  /* 152 */ @js.native
-  object EQUAL extends TopLevel[EQUAL with Double]
+  /* 152 */ val EQUAL: typings.cesium.mod.WebGLConstants.EQUAL with Double = js.native
   
   @js.native
   sealed trait FASTEST extends WebGLConstants
-  /* 113 */ @js.native
-  object FASTEST extends TopLevel[FASTEST with Double]
+  /* 113 */ val FASTEST: typings.cesium.mod.WebGLConstants.FASTEST with Double = js.native
   
   @js.native
   sealed trait FLOAT extends WebGLConstants
-  /* 122 */ @js.native
-  object FLOAT extends TopLevel[FLOAT with Double]
+  /* 122 */ val FLOAT: typings.cesium.mod.WebGLConstants.FLOAT with Double = js.native
   
   @js.native
   sealed trait FLOAT_32_UNSIGNED_INT_24_8_REV extends WebGLConstants
-  /* 445 */ @js.native
-  object FLOAT_32_UNSIGNED_INT_24_8_REV extends TopLevel[FLOAT_32_UNSIGNED_INT_24_8_REV with Double]
+  /* 445 */ val FLOAT_32_UNSIGNED_INT_24_8_REV: typings.cesium.mod.WebGLConstants.FLOAT_32_UNSIGNED_INT_24_8_REV with Double = js.native
   
   @js.native
   sealed trait FLOAT_MAT2 extends WebGLConstants
-  /* 235 */ @js.native
-  object FLOAT_MAT2 extends TopLevel[FLOAT_MAT2 with Double]
+  /* 235 */ val FLOAT_MAT2: typings.cesium.mod.WebGLConstants.FLOAT_MAT2 with Double = js.native
   
   @js.native
   sealed trait FLOAT_MAT2x3 extends WebGLConstants
-  /* 376 */ @js.native
-  object FLOAT_MAT2x3 extends TopLevel[FLOAT_MAT2x3 with Double]
+  /* 376 */ val FLOAT_MAT2x3: typings.cesium.mod.WebGLConstants.FLOAT_MAT2x3 with Double = js.native
   
   @js.native
   sealed trait FLOAT_MAT2x4 extends WebGLConstants
-  /* 377 */ @js.native
-  object FLOAT_MAT2x4 extends TopLevel[FLOAT_MAT2x4 with Double]
+  /* 377 */ val FLOAT_MAT2x4: typings.cesium.mod.WebGLConstants.FLOAT_MAT2x4 with Double = js.native
   
   @js.native
   sealed trait FLOAT_MAT3 extends WebGLConstants
-  /* 236 */ @js.native
-  object FLOAT_MAT3 extends TopLevel[FLOAT_MAT3 with Double]
+  /* 236 */ val FLOAT_MAT3: typings.cesium.mod.WebGLConstants.FLOAT_MAT3 with Double = js.native
   
   @js.native
   sealed trait FLOAT_MAT3x2 extends WebGLConstants
-  /* 378 */ @js.native
-  object FLOAT_MAT3x2 extends TopLevel[FLOAT_MAT3x2 with Double]
+  /* 378 */ val FLOAT_MAT3x2: typings.cesium.mod.WebGLConstants.FLOAT_MAT3x2 with Double = js.native
   
   @js.native
   sealed trait FLOAT_MAT3x4 extends WebGLConstants
-  /* 379 */ @js.native
-  object FLOAT_MAT3x4 extends TopLevel[FLOAT_MAT3x4 with Double]
+  /* 379 */ val FLOAT_MAT3x4: typings.cesium.mod.WebGLConstants.FLOAT_MAT3x4 with Double = js.native
   
   @js.native
   sealed trait FLOAT_MAT4 extends WebGLConstants
-  /* 237 */ @js.native
-  object FLOAT_MAT4 extends TopLevel[FLOAT_MAT4 with Double]
+  /* 237 */ val FLOAT_MAT4: typings.cesium.mod.WebGLConstants.FLOAT_MAT4 with Double = js.native
   
   @js.native
   sealed trait FLOAT_MAT4x2 extends WebGLConstants
-  /* 380 */ @js.native
-  object FLOAT_MAT4x2 extends TopLevel[FLOAT_MAT4x2 with Double]
+  /* 380 */ val FLOAT_MAT4x2: typings.cesium.mod.WebGLConstants.FLOAT_MAT4x2 with Double = js.native
   
   @js.native
   sealed trait FLOAT_MAT4x3 extends WebGLConstants
-  /* 381 */ @js.native
-  object FLOAT_MAT4x3 extends TopLevel[FLOAT_MAT4x3 with Double]
+  /* 381 */ val FLOAT_MAT4x3: typings.cesium.mod.WebGLConstants.FLOAT_MAT4x3 with Double = js.native
   
   @js.native
   sealed trait FLOAT_VEC2 extends WebGLConstants
-  /* 225 */ @js.native
-  object FLOAT_VEC2 extends TopLevel[FLOAT_VEC2 with Double]
+  /* 225 */ val FLOAT_VEC2: typings.cesium.mod.WebGLConstants.FLOAT_VEC2 with Double = js.native
   
   @js.native
   sealed trait FLOAT_VEC3 extends WebGLConstants
-  /* 226 */ @js.native
-  object FLOAT_VEC3 extends TopLevel[FLOAT_VEC3 with Double]
+  /* 226 */ val FLOAT_VEC3: typings.cesium.mod.WebGLConstants.FLOAT_VEC3 with Double = js.native
   
   @js.native
   sealed trait FLOAT_VEC4 extends WebGLConstants
-  /* 227 */ @js.native
-  object FLOAT_VEC4 extends TopLevel[FLOAT_VEC4 with Double]
+  /* 227 */ val FLOAT_VEC4: typings.cesium.mod.WebGLConstants.FLOAT_VEC4 with Double = js.native
   
   @js.native
   sealed trait FRAGMENT_SHADER extends WebGLConstants
-  /* 132 */ @js.native
-  object FRAGMENT_SHADER extends TopLevel[FRAGMENT_SHADER with Double]
+  /* 132 */ val FRAGMENT_SHADER: typings.cesium.mod.WebGLConstants.FRAGMENT_SHADER with Double = js.native
   
   @js.native
   sealed trait FRAGMENT_SHADER_DERIVATIVE_HINT extends WebGLConstants
-  /* 371 */ @js.native
-  object FRAGMENT_SHADER_DERIVATIVE_HINT extends TopLevel[FRAGMENT_SHADER_DERIVATIVE_HINT with Double]
+  /* 371 */ val FRAGMENT_SHADER_DERIVATIVE_HINT: typings.cesium.mod.WebGLConstants.FRAGMENT_SHADER_DERIVATIVE_HINT with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER extends WebGLConstants
-  /* 256 */ @js.native
-  object FRAMEBUFFER extends TopLevel[FRAMEBUFFER with Double]
+  /* 256 */ val FRAMEBUFFER: typings.cesium.mod.WebGLConstants.FRAMEBUFFER with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE extends WebGLConstants
-  /* 451 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE with Double]
+  /* 451 */ val FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_BLUE_SIZE extends WebGLConstants
-  /* 450 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_BLUE_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_BLUE_SIZE with Double]
+  /* 450 */ val FRAMEBUFFER_ATTACHMENT_BLUE_SIZE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_BLUE_SIZE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING extends WebGLConstants
-  /* 446 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING extends TopLevel[FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING with Double]
+  /* 446 */ val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE extends WebGLConstants
-  /* 447 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE extends TopLevel[FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE with Double]
+  /* 447 */ val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE extends WebGLConstants
-  /* 452 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE with Double]
+  /* 452 */ val FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_GREEN_SIZE extends WebGLConstants
-  /* 449 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_GREEN_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_GREEN_SIZE with Double]
+  /* 449 */ val FRAMEBUFFER_ATTACHMENT_GREEN_SIZE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_GREEN_SIZE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_OBJECT_NAME extends WebGLConstants
-  /* 275 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_OBJECT_NAME extends TopLevel[FRAMEBUFFER_ATTACHMENT_OBJECT_NAME with Double]
+  /* 275 */ val FRAMEBUFFER_ATTACHMENT_OBJECT_NAME: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_OBJECT_NAME with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE extends WebGLConstants
-  /* 274 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE extends TopLevel[FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE with Double]
+  /* 274 */ val FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_RED_SIZE extends WebGLConstants
-  /* 448 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_RED_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_RED_SIZE with Double]
+  /* 448 */ val FRAMEBUFFER_ATTACHMENT_RED_SIZE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_RED_SIZE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE extends WebGLConstants
-  /* 453 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE with Double]
+  /* 453 */ val FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE extends WebGLConstants
-  /* 277 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE extends TopLevel[FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE with Double]
+  /* 277 */ val FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER extends WebGLConstants
-  /* 463 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER extends TopLevel[FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER with Double]
+  /* 463 */ val FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL extends WebGLConstants
-  /* 276 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL extends TopLevel[FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL with Double]
+  /* 276 */ val FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_BINDING extends WebGLConstants
-  /* 288 */ @js.native
-  object FRAMEBUFFER_BINDING extends TopLevel[FRAMEBUFFER_BINDING with Double]
+  /* 288 */ val FRAMEBUFFER_BINDING: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_COMPLETE extends WebGLConstants
-  /* 283 */ @js.native
-  object FRAMEBUFFER_COMPLETE extends TopLevel[FRAMEBUFFER_COMPLETE with Double]
+  /* 283 */ val FRAMEBUFFER_COMPLETE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_COMPLETE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_DEFAULT extends WebGLConstants
-  /* 454 */ @js.native
-  object FRAMEBUFFER_DEFAULT extends TopLevel[FRAMEBUFFER_DEFAULT with Double]
+  /* 454 */ val FRAMEBUFFER_DEFAULT: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_DEFAULT with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_INCOMPLETE_ATTACHMENT extends WebGLConstants
-  /* 284 */ @js.native
-  object FRAMEBUFFER_INCOMPLETE_ATTACHMENT extends TopLevel[FRAMEBUFFER_INCOMPLETE_ATTACHMENT with Double]
+  /* 284 */ val FRAMEBUFFER_INCOMPLETE_ATTACHMENT: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_INCOMPLETE_ATTACHMENT with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_INCOMPLETE_DIMENSIONS extends WebGLConstants
-  /* 286 */ @js.native
-  object FRAMEBUFFER_INCOMPLETE_DIMENSIONS extends TopLevel[FRAMEBUFFER_INCOMPLETE_DIMENSIONS with Double]
+  /* 286 */ val FRAMEBUFFER_INCOMPLETE_DIMENSIONS: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_INCOMPLETE_DIMENSIONS with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT extends WebGLConstants
-  /* 285 */ @js.native
-  object FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT extends TopLevel[FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT with Double]
+  /* 285 */ val FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_INCOMPLETE_MULTISAMPLE extends WebGLConstants
-  /* 480 */ @js.native
-  object FRAMEBUFFER_INCOMPLETE_MULTISAMPLE extends TopLevel[FRAMEBUFFER_INCOMPLETE_MULTISAMPLE with Double]
+  /* 480 */ val FRAMEBUFFER_INCOMPLETE_MULTISAMPLE: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_INCOMPLETE_MULTISAMPLE with Double = js.native
   
   @js.native
   sealed trait FRAMEBUFFER_UNSUPPORTED extends WebGLConstants
-  /* 287 */ @js.native
-  object FRAMEBUFFER_UNSUPPORTED extends TopLevel[FRAMEBUFFER_UNSUPPORTED with Double]
+  /* 287 */ val FRAMEBUFFER_UNSUPPORTED: typings.cesium.mod.WebGLConstants.FRAMEBUFFER_UNSUPPORTED with Double = js.native
   
   @js.native
   sealed trait FRONT extends WebGLConstants
-  /* 46 */ @js.native
-  object FRONT extends TopLevel[FRONT with Double]
+  /* 46 */ val FRONT: typings.cesium.mod.WebGLConstants.FRONT with Double = js.native
   
   @js.native
   sealed trait FRONT_AND_BACK extends WebGLConstants
-  /* 48 */ @js.native
-  object FRONT_AND_BACK extends TopLevel[FRONT_AND_BACK with Double]
+  /* 48 */ val FRONT_AND_BACK: typings.cesium.mod.WebGLConstants.FRONT_AND_BACK with Double = js.native
   
   @js.native
   sealed trait FRONT_FACE extends WebGLConstants
-  /* 69 */ @js.native
-  object FRONT_FACE extends TopLevel[FRONT_FACE with Double]
+  /* 69 */ val FRONT_FACE: typings.cesium.mod.WebGLConstants.FRONT_FACE with Double = js.native
   
   @js.native
   sealed trait FUNC_ADD extends WebGLConstants
-  /* 21 */ @js.native
-  object FUNC_ADD extends TopLevel[FUNC_ADD with Double]
+  /* 21 */ val FUNC_ADD: typings.cesium.mod.WebGLConstants.FUNC_ADD with Double = js.native
   
   @js.native
   sealed trait FUNC_REVERSE_SUBTRACT extends WebGLConstants
-  /* 26 */ @js.native
-  object FUNC_REVERSE_SUBTRACT extends TopLevel[FUNC_REVERSE_SUBTRACT with Double]
+  /* 26 */ val FUNC_REVERSE_SUBTRACT: typings.cesium.mod.WebGLConstants.FUNC_REVERSE_SUBTRACT with Double = js.native
   
   @js.native
   sealed trait FUNC_SUBTRACT extends WebGLConstants
-  /* 25 */ @js.native
-  object FUNC_SUBTRACT extends TopLevel[FUNC_SUBTRACT with Double]
+  /* 25 */ val FUNC_SUBTRACT: typings.cesium.mod.WebGLConstants.FUNC_SUBTRACT with Double = js.native
   
   @js.native
   sealed trait GENERATE_MIPMAP_HINT extends WebGLConstants
-  /* 115 */ @js.native
-  object GENERATE_MIPMAP_HINT extends TopLevel[GENERATE_MIPMAP_HINT with Double]
+  /* 115 */ val GENERATE_MIPMAP_HINT: typings.cesium.mod.WebGLConstants.GENERATE_MIPMAP_HINT with Double = js.native
   
   @js.native
   sealed trait GEQUAL extends WebGLConstants
-  /* 156 */ @js.native
-  object GEQUAL extends TopLevel[GEQUAL with Double]
+  /* 156 */ val GEQUAL: typings.cesium.mod.WebGLConstants.GEQUAL with Double = js.native
   
   @js.native
   sealed trait GREATER extends WebGLConstants
-  /* 154 */ @js.native
-  object GREATER extends TopLevel[GREATER with Double]
+  /* 154 */ val GREATER: typings.cesium.mod.WebGLConstants.GREATER with Double = js.native
   
   @js.native
   sealed trait GREEN_BITS extends WebGLConstants
-  /* 99 */ @js.native
-  object GREEN_BITS extends TopLevel[GREEN_BITS with Double]
+  /* 99 */ val GREEN_BITS: typings.cesium.mod.WebGLConstants.GREEN_BITS with Double = js.native
   
   @js.native
   sealed trait HALF_FLOAT extends WebGLConstants
-  /* 482 */ @js.native
-  object HALF_FLOAT extends TopLevel[HALF_FLOAT with Double]
+  /* 482 */ val HALF_FLOAT: typings.cesium.mod.WebGLConstants.HALF_FLOAT with Double = js.native
   
   @js.native
   sealed trait HALF_FLOAT_OES extends WebGLConstants
-  /* 306 */ @js.native
-  object HALF_FLOAT_OES extends TopLevel[HALF_FLOAT_OES with Double]
+  /* 306 */ val HALF_FLOAT_OES: typings.cesium.mod.WebGLConstants.HALF_FLOAT_OES with Double = js.native
   
   @js.native
   sealed trait HIGH_FLOAT extends WebGLConstants
-  /* 252 */ @js.native
-  object HIGH_FLOAT extends TopLevel[HIGH_FLOAT with Double]
+  /* 252 */ val HIGH_FLOAT: typings.cesium.mod.WebGLConstants.HIGH_FLOAT with Double = js.native
   
   @js.native
   sealed trait HIGH_INT extends WebGLConstants
-  /* 255 */ @js.native
-  object HIGH_INT extends TopLevel[HIGH_INT with Double]
+  /* 255 */ val HIGH_INT: typings.cesium.mod.WebGLConstants.HIGH_INT with Double = js.native
   
   @js.native
   sealed trait IMPLEMENTATION_COLOR_READ_FORMAT extends WebGLConstants
-  /* 248 */ @js.native
-  object IMPLEMENTATION_COLOR_READ_FORMAT extends TopLevel[IMPLEMENTATION_COLOR_READ_FORMAT with Double]
+  /* 248 */ val IMPLEMENTATION_COLOR_READ_FORMAT: typings.cesium.mod.WebGLConstants.IMPLEMENTATION_COLOR_READ_FORMAT with Double = js.native
   
   @js.native
   sealed trait IMPLEMENTATION_COLOR_READ_TYPE extends WebGLConstants
-  /* 247 */ @js.native
-  object IMPLEMENTATION_COLOR_READ_TYPE extends TopLevel[IMPLEMENTATION_COLOR_READ_TYPE with Double]
+  /* 247 */ val IMPLEMENTATION_COLOR_READ_TYPE: typings.cesium.mod.WebGLConstants.IMPLEMENTATION_COLOR_READ_TYPE with Double = js.native
   
   @js.native
   sealed trait INCR extends WebGLConstants
-  /* 160 */ @js.native
-  object INCR extends TopLevel[INCR with Double]
+  /* 160 */ val INCR: typings.cesium.mod.WebGLConstants.INCR with Double = js.native
   
   @js.native
   sealed trait INCR_WRAP extends WebGLConstants
-  /* 163 */ @js.native
-  object INCR_WRAP extends TopLevel[INCR_WRAP with Double]
+  /* 163 */ val INCR_WRAP: typings.cesium.mod.WebGLConstants.INCR_WRAP with Double = js.native
   
   @js.native
   sealed trait INT extends WebGLConstants
-  /* 120 */ @js.native
-  object INT extends TopLevel[INT with Double]
+  /* 120 */ val INT: typings.cesium.mod.WebGLConstants.INT with Double = js.native
   
   @js.native
   sealed trait INTERLEAVED_ATTRIBS extends WebGLConstants
-  /* 410 */ @js.native
-  object INTERLEAVED_ATTRIBS extends TopLevel[INTERLEAVED_ATTRIBS with Double]
+  /* 410 */ val INTERLEAVED_ATTRIBS: typings.cesium.mod.WebGLConstants.INTERLEAVED_ATTRIBS with Double = js.native
   
   @js.native
   sealed trait INT_2_10_10_10_REV extends WebGLConstants
-  /* 561 */ @js.native
-  object INT_2_10_10_10_REV extends TopLevel[INT_2_10_10_10_REV with Double]
+  /* 561 */ val INT_2_10_10_10_REV: typings.cesium.mod.WebGLConstants.INT_2_10_10_10_REV with Double = js.native
   
   @js.native
   sealed trait INT_SAMPLER_2D extends WebGLConstants
-  /* 435 */ @js.native
-  object INT_SAMPLER_2D extends TopLevel[INT_SAMPLER_2D with Double]
+  /* 435 */ val INT_SAMPLER_2D: typings.cesium.mod.WebGLConstants.INT_SAMPLER_2D with Double = js.native
   
   @js.native
   sealed trait INT_SAMPLER_2D_ARRAY extends WebGLConstants
-  /* 438 */ @js.native
-  object INT_SAMPLER_2D_ARRAY extends TopLevel[INT_SAMPLER_2D_ARRAY with Double]
+  /* 438 */ val INT_SAMPLER_2D_ARRAY: typings.cesium.mod.WebGLConstants.INT_SAMPLER_2D_ARRAY with Double = js.native
   
   @js.native
   sealed trait INT_SAMPLER_3D extends WebGLConstants
-  /* 436 */ @js.native
-  object INT_SAMPLER_3D extends TopLevel[INT_SAMPLER_3D with Double]
+  /* 436 */ val INT_SAMPLER_3D: typings.cesium.mod.WebGLConstants.INT_SAMPLER_3D with Double = js.native
   
   @js.native
   sealed trait INT_SAMPLER_CUBE extends WebGLConstants
-  /* 437 */ @js.native
-  object INT_SAMPLER_CUBE extends TopLevel[INT_SAMPLER_CUBE with Double]
+  /* 437 */ val INT_SAMPLER_CUBE: typings.cesium.mod.WebGLConstants.INT_SAMPLER_CUBE with Double = js.native
   
   @js.native
   sealed trait INT_VEC2 extends WebGLConstants
-  /* 228 */ @js.native
-  object INT_VEC2 extends TopLevel[INT_VEC2 with Double]
+  /* 228 */ val INT_VEC2: typings.cesium.mod.WebGLConstants.INT_VEC2 with Double = js.native
   
   @js.native
   sealed trait INT_VEC3 extends WebGLConstants
-  /* 229 */ @js.native
-  object INT_VEC3 extends TopLevel[INT_VEC3 with Double]
+  /* 229 */ val INT_VEC3: typings.cesium.mod.WebGLConstants.INT_VEC3 with Double = js.native
   
   @js.native
   sealed trait INT_VEC4 extends WebGLConstants
-  /* 230 */ @js.native
-  object INT_VEC4 extends TopLevel[INT_VEC4 with Double]
+  /* 230 */ val INT_VEC4: typings.cesium.mod.WebGLConstants.INT_VEC4 with Double = js.native
   
   @js.native
   sealed trait INVALID_ENUM extends WebGLConstants
-  /* 59 */ @js.native
-  object INVALID_ENUM extends TopLevel[INVALID_ENUM with Double]
+  /* 59 */ val INVALID_ENUM: typings.cesium.mod.WebGLConstants.INVALID_ENUM with Double = js.native
   
   @js.native
   sealed trait INVALID_FRAMEBUFFER_OPERATION extends WebGLConstants
-  /* 291 */ @js.native
-  object INVALID_FRAMEBUFFER_OPERATION extends TopLevel[INVALID_FRAMEBUFFER_OPERATION with Double]
+  /* 291 */ val INVALID_FRAMEBUFFER_OPERATION: typings.cesium.mod.WebGLConstants.INVALID_FRAMEBUFFER_OPERATION with Double = js.native
   
   @js.native
   sealed trait INVALID_INDEX extends WebGLConstants
-  /* 539 */ @js.native
-  object INVALID_INDEX extends TopLevel[INVALID_INDEX with Double]
+  /* 539 */ val INVALID_INDEX: typings.cesium.mod.WebGLConstants.INVALID_INDEX with Double = js.native
   
   @js.native
   sealed trait INVALID_OPERATION extends WebGLConstants
-  /* 61 */ @js.native
-  object INVALID_OPERATION extends TopLevel[INVALID_OPERATION with Double]
+  /* 61 */ val INVALID_OPERATION: typings.cesium.mod.WebGLConstants.INVALID_OPERATION with Double = js.native
   
   @js.native
   sealed trait INVALID_VALUE extends WebGLConstants
-  /* 60 */ @js.native
-  object INVALID_VALUE extends TopLevel[INVALID_VALUE with Double]
+  /* 60 */ val INVALID_VALUE: typings.cesium.mod.WebGLConstants.INVALID_VALUE with Double = js.native
   
   @js.native
   sealed trait INVERT extends WebGLConstants
-  /* 162 */ @js.native
-  object INVERT extends TopLevel[INVERT with Double]
+  /* 162 */ val INVERT: typings.cesium.mod.WebGLConstants.INVERT with Double = js.native
   
   @js.native
   sealed trait KEEP extends WebGLConstants
-  /* 158 */ @js.native
-  object KEEP extends TopLevel[KEEP with Double]
+  /* 158 */ val KEEP: typings.cesium.mod.WebGLConstants.KEEP with Double = js.native
   
   @js.native
   sealed trait LEQUAL extends WebGLConstants
-  /* 153 */ @js.native
-  object LEQUAL extends TopLevel[LEQUAL with Double]
+  /* 153 */ val LEQUAL: typings.cesium.mod.WebGLConstants.LEQUAL with Double = js.native
   
   @js.native
   sealed trait LESS extends WebGLConstants
-  /* 151 */ @js.native
-  object LESS extends TopLevel[LESS with Double]
+  /* 151 */ val LESS: typings.cesium.mod.WebGLConstants.LESS with Double = js.native
   
   @js.native
   sealed trait LINEAR extends WebGLConstants
-  /* 169 */ @js.native
-  object LINEAR extends TopLevel[LINEAR with Double]
+  /* 169 */ val LINEAR: typings.cesium.mod.WebGLConstants.LINEAR with Double = js.native
   
   @js.native
   sealed trait LINEAR_MIPMAP_LINEAR extends WebGLConstants
-  /* 173 */ @js.native
-  object LINEAR_MIPMAP_LINEAR extends TopLevel[LINEAR_MIPMAP_LINEAR with Double]
+  /* 173 */ val LINEAR_MIPMAP_LINEAR: typings.cesium.mod.WebGLConstants.LINEAR_MIPMAP_LINEAR with Double = js.native
   
   @js.native
   sealed trait LINEAR_MIPMAP_NEAREST extends WebGLConstants
-  /* 171 */ @js.native
-  object LINEAR_MIPMAP_NEAREST extends TopLevel[LINEAR_MIPMAP_NEAREST with Double]
+  /* 171 */ val LINEAR_MIPMAP_NEAREST: typings.cesium.mod.WebGLConstants.LINEAR_MIPMAP_NEAREST with Double = js.native
   
   @js.native
   sealed trait LINES extends WebGLConstants
-  /* 4 */ @js.native
-  object LINES extends TopLevel[LINES with Double]
+  /* 4 */ val LINES: typings.cesium.mod.WebGLConstants.LINES with Double = js.native
   
   @js.native
   sealed trait LINE_LOOP extends WebGLConstants
-  /* 5 */ @js.native
-  object LINE_LOOP extends TopLevel[LINE_LOOP with Double]
+  /* 5 */ val LINE_LOOP: typings.cesium.mod.WebGLConstants.LINE_LOOP with Double = js.native
   
   @js.native
   sealed trait LINE_STRIP extends WebGLConstants
-  /* 6 */ @js.native
-  object LINE_STRIP extends TopLevel[LINE_STRIP with Double]
+  /* 6 */ val LINE_STRIP: typings.cesium.mod.WebGLConstants.LINE_STRIP with Double = js.native
   
   @js.native
   sealed trait LINE_WIDTH extends WebGLConstants
-  /* 65 */ @js.native
-  object LINE_WIDTH extends TopLevel[LINE_WIDTH with Double]
+  /* 65 */ val LINE_WIDTH: typings.cesium.mod.WebGLConstants.LINE_WIDTH with Double = js.native
   
   @js.native
   sealed trait LINK_STATUS extends WebGLConstants
-  /* 143 */ @js.native
-  object LINK_STATUS extends TopLevel[LINK_STATUS with Double]
+  /* 143 */ val LINK_STATUS: typings.cesium.mod.WebGLConstants.LINK_STATUS with Double = js.native
   
   @js.native
   sealed trait LOW_FLOAT extends WebGLConstants
-  /* 250 */ @js.native
-  object LOW_FLOAT extends TopLevel[LOW_FLOAT with Double]
+  /* 250 */ val LOW_FLOAT: typings.cesium.mod.WebGLConstants.LOW_FLOAT with Double = js.native
   
   @js.native
   sealed trait LOW_INT extends WebGLConstants
-  /* 253 */ @js.native
-  object LOW_INT extends TopLevel[LOW_INT with Double]
+  /* 253 */ val LOW_INT: typings.cesium.mod.WebGLConstants.LOW_INT with Double = js.native
   
   @js.native
   sealed trait LUMINANCE extends WebGLConstants
-  /* 127 */ @js.native
-  object LUMINANCE extends TopLevel[LUMINANCE with Double]
+  /* 127 */ val LUMINANCE: typings.cesium.mod.WebGLConstants.LUMINANCE with Double = js.native
   
   @js.native
   sealed trait LUMINANCE_ALPHA extends WebGLConstants
-  /* 128 */ @js.native
-  object LUMINANCE_ALPHA extends TopLevel[LUMINANCE_ALPHA with Double]
+  /* 128 */ val LUMINANCE_ALPHA: typings.cesium.mod.WebGLConstants.LUMINANCE_ALPHA with Double = js.native
   
   @js.native
   sealed trait MAX extends WebGLConstants
-  /* 336 */ @js.native
-  object MAX extends TopLevel[MAX with Double]
+  /* 336 */ val MAX: typings.cesium.mod.WebGLConstants.MAX with Double = js.native
   
   @js.native
   sealed trait MAX_3D_TEXTURE_SIZE extends WebGLConstants
-  /* 327 */ @js.native
-  object MAX_3D_TEXTURE_SIZE extends TopLevel[MAX_3D_TEXTURE_SIZE with Double]
+  /* 327 */ val MAX_3D_TEXTURE_SIZE: typings.cesium.mod.WebGLConstants.MAX_3D_TEXTURE_SIZE with Double = js.native
   
   @js.native
   sealed trait MAX_ARRAY_TEXTURE_LAYERS extends WebGLConstants
-  /* 391 */ @js.native
-  object MAX_ARRAY_TEXTURE_LAYERS extends TopLevel[MAX_ARRAY_TEXTURE_LAYERS with Double]
+  /* 391 */ val MAX_ARRAY_TEXTURE_LAYERS: typings.cesium.mod.WebGLConstants.MAX_ARRAY_TEXTURE_LAYERS with Double = js.native
   
   @js.native
   sealed trait MAX_COLOR_ATTACHMENTS extends WebGLConstants
-  /* 464 */ @js.native
-  object MAX_COLOR_ATTACHMENTS extends TopLevel[MAX_COLOR_ATTACHMENTS with Double]
+  /* 464 */ val MAX_COLOR_ATTACHMENTS: typings.cesium.mod.WebGLConstants.MAX_COLOR_ATTACHMENTS with Double = js.native
   
   @js.native
   sealed trait MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS extends WebGLConstants
-  /* 523 */ @js.native
-  object MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS extends TopLevel[MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS with Double]
+  /* 523 */ val MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS: typings.cesium.mod.WebGLConstants.MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS with Double = js.native
   
   @js.native
   sealed trait MAX_COMBINED_TEXTURE_IMAGE_UNITS extends WebGLConstants
-  /* 137 */ @js.native
-  object MAX_COMBINED_TEXTURE_IMAGE_UNITS extends TopLevel[MAX_COMBINED_TEXTURE_IMAGE_UNITS with Double]
+  /* 137 */ val MAX_COMBINED_TEXTURE_IMAGE_UNITS: typings.cesium.mod.WebGLConstants.MAX_COMBINED_TEXTURE_IMAGE_UNITS with Double = js.native
   
   @js.native
   sealed trait MAX_COMBINED_UNIFORM_BLOCKS extends WebGLConstants
-  /* 519 */ @js.native
-  object MAX_COMBINED_UNIFORM_BLOCKS extends TopLevel[MAX_COMBINED_UNIFORM_BLOCKS with Double]
+  /* 519 */ val MAX_COMBINED_UNIFORM_BLOCKS: typings.cesium.mod.WebGLConstants.MAX_COMBINED_UNIFORM_BLOCKS with Double = js.native
   
   @js.native
   sealed trait MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS extends WebGLConstants
-  /* 522 */ @js.native
-  object MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS extends TopLevel[MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS with Double]
+  /* 522 */ val MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS: typings.cesium.mod.WebGLConstants.MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS with Double = js.native
   
   @js.native
   sealed trait MAX_CUBE_MAP_TEXTURE_SIZE extends WebGLConstants
-  /* 188 */ @js.native
-  object MAX_CUBE_MAP_TEXTURE_SIZE extends TopLevel[MAX_CUBE_MAP_TEXTURE_SIZE with Double]
+  /* 188 */ val MAX_CUBE_MAP_TEXTURE_SIZE: typings.cesium.mod.WebGLConstants.MAX_CUBE_MAP_TEXTURE_SIZE with Double = js.native
   
   @js.native
   sealed trait MAX_DRAW_BUFFERS extends WebGLConstants
-  /* 350 */ @js.native
-  object MAX_DRAW_BUFFERS extends TopLevel[MAX_DRAW_BUFFERS with Double]
+  /* 350 */ val MAX_DRAW_BUFFERS: typings.cesium.mod.WebGLConstants.MAX_DRAW_BUFFERS with Double = js.native
   
   @js.native
   sealed trait MAX_ELEMENTS_INDICES extends WebGLConstants
-  /* 330 */ @js.native
-  object MAX_ELEMENTS_INDICES extends TopLevel[MAX_ELEMENTS_INDICES with Double]
+  /* 330 */ val MAX_ELEMENTS_INDICES: typings.cesium.mod.WebGLConstants.MAX_ELEMENTS_INDICES with Double = js.native
   
   @js.native
   sealed trait MAX_ELEMENTS_VERTICES extends WebGLConstants
-  /* 329 */ @js.native
-  object MAX_ELEMENTS_VERTICES extends TopLevel[MAX_ELEMENTS_VERTICES with Double]
+  /* 329 */ val MAX_ELEMENTS_VERTICES: typings.cesium.mod.WebGLConstants.MAX_ELEMENTS_VERTICES with Double = js.native
   
   @js.native
   sealed trait MAX_ELEMENT_INDEX extends WebGLConstants
-  /* 577 */ @js.native
-  object MAX_ELEMENT_INDEX extends TopLevel[MAX_ELEMENT_INDEX with Double]
+  /* 577 */ val MAX_ELEMENT_INDEX: typings.cesium.mod.WebGLConstants.MAX_ELEMENT_INDEX with Double = js.native
   
   @js.native
   sealed trait MAX_FRAGMENT_INPUT_COMPONENTS extends WebGLConstants
-  /* 541 */ @js.native
-  object MAX_FRAGMENT_INPUT_COMPONENTS extends TopLevel[MAX_FRAGMENT_INPUT_COMPONENTS with Double]
+  /* 541 */ val MAX_FRAGMENT_INPUT_COMPONENTS: typings.cesium.mod.WebGLConstants.MAX_FRAGMENT_INPUT_COMPONENTS with Double = js.native
   
   @js.native
   sealed trait MAX_FRAGMENT_UNIFORM_BLOCKS extends WebGLConstants
-  /* 518 */ @js.native
-  object MAX_FRAGMENT_UNIFORM_BLOCKS extends TopLevel[MAX_FRAGMENT_UNIFORM_BLOCKS with Double]
+  /* 518 */ val MAX_FRAGMENT_UNIFORM_BLOCKS: typings.cesium.mod.WebGLConstants.MAX_FRAGMENT_UNIFORM_BLOCKS with Double = js.native
   
   @js.native
   sealed trait MAX_FRAGMENT_UNIFORM_COMPONENTS extends WebGLConstants
-  /* 367 */ @js.native
-  object MAX_FRAGMENT_UNIFORM_COMPONENTS extends TopLevel[MAX_FRAGMENT_UNIFORM_COMPONENTS with Double]
+  /* 367 */ val MAX_FRAGMENT_UNIFORM_COMPONENTS: typings.cesium.mod.WebGLConstants.MAX_FRAGMENT_UNIFORM_COMPONENTS with Double = js.native
   
   @js.native
   sealed trait MAX_FRAGMENT_UNIFORM_VECTORS extends WebGLConstants
-  /* 140 */ @js.native
-  object MAX_FRAGMENT_UNIFORM_VECTORS extends TopLevel[MAX_FRAGMENT_UNIFORM_VECTORS with Double]
+  /* 140 */ val MAX_FRAGMENT_UNIFORM_VECTORS: typings.cesium.mod.WebGLConstants.MAX_FRAGMENT_UNIFORM_VECTORS with Double = js.native
   
   @js.native
   sealed trait MAX_PROGRAM_TEXEL_OFFSET extends WebGLConstants
-  /* 393 */ @js.native
-  object MAX_PROGRAM_TEXEL_OFFSET extends TopLevel[MAX_PROGRAM_TEXEL_OFFSET with Double]
+  /* 393 */ val MAX_PROGRAM_TEXEL_OFFSET: typings.cesium.mod.WebGLConstants.MAX_PROGRAM_TEXEL_OFFSET with Double = js.native
   
   @js.native
   sealed trait MAX_RENDERBUFFER_SIZE extends WebGLConstants
-  /* 290 */ @js.native
-  object MAX_RENDERBUFFER_SIZE extends TopLevel[MAX_RENDERBUFFER_SIZE with Double]
+  /* 290 */ val MAX_RENDERBUFFER_SIZE: typings.cesium.mod.WebGLConstants.MAX_RENDERBUFFER_SIZE with Double = js.native
   
   @js.native
   sealed trait MAX_SAMPLES extends WebGLConstants
-  /* 481 */ @js.native
-  object MAX_SAMPLES extends TopLevel[MAX_SAMPLES with Double]
+  /* 481 */ val MAX_SAMPLES: typings.cesium.mod.WebGLConstants.MAX_SAMPLES with Double = js.native
   
   @js.native
   sealed trait MAX_SERVER_WAIT_TIMEOUT extends WebGLConstants
-  /* 542 */ @js.native
-  object MAX_SERVER_WAIT_TIMEOUT extends TopLevel[MAX_SERVER_WAIT_TIMEOUT with Double]
+  /* 542 */ val MAX_SERVER_WAIT_TIMEOUT: typings.cesium.mod.WebGLConstants.MAX_SERVER_WAIT_TIMEOUT with Double = js.native
   
   @js.native
   sealed trait MAX_TEXTURE_IMAGE_UNITS extends WebGLConstants
-  /* 139 */ @js.native
-  object MAX_TEXTURE_IMAGE_UNITS extends TopLevel[MAX_TEXTURE_IMAGE_UNITS with Double]
+  /* 139 */ val MAX_TEXTURE_IMAGE_UNITS: typings.cesium.mod.WebGLConstants.MAX_TEXTURE_IMAGE_UNITS with Double = js.native
   
   @js.native
   sealed trait MAX_TEXTURE_LOD_BIAS extends WebGLConstants
-  /* 338 */ @js.native
-  object MAX_TEXTURE_LOD_BIAS extends TopLevel[MAX_TEXTURE_LOD_BIAS with Double]
+  /* 338 */ val MAX_TEXTURE_LOD_BIAS: typings.cesium.mod.WebGLConstants.MAX_TEXTURE_LOD_BIAS with Double = js.native
   
   @js.native
   sealed trait MAX_TEXTURE_MAX_ANISOTROPY_EXT extends WebGLConstants
-  /* 579 */ @js.native
-  object MAX_TEXTURE_MAX_ANISOTROPY_EXT extends TopLevel[MAX_TEXTURE_MAX_ANISOTROPY_EXT with Double]
+  /* 579 */ val MAX_TEXTURE_MAX_ANISOTROPY_EXT: typings.cesium.mod.WebGLConstants.MAX_TEXTURE_MAX_ANISOTROPY_EXT with Double = js.native
   
   @js.native
   sealed trait MAX_TEXTURE_SIZE extends WebGLConstants
-  /* 95 */ @js.native
-  object MAX_TEXTURE_SIZE extends TopLevel[MAX_TEXTURE_SIZE with Double]
+  /* 95 */ val MAX_TEXTURE_SIZE: typings.cesium.mod.WebGLConstants.MAX_TEXTURE_SIZE with Double = js.native
   
   @js.native
   sealed trait MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS extends WebGLConstants
-  /* 408 */ @js.native
-  object MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS extends TopLevel[MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS with Double]
+  /* 408 */ val MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS: typings.cesium.mod.WebGLConstants.MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS with Double = js.native
   
   @js.native
   sealed trait MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS extends WebGLConstants
-  /* 409 */ @js.native
-  object MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS extends TopLevel[MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS with Double]
+  /* 409 */ val MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS: typings.cesium.mod.WebGLConstants.MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS with Double = js.native
   
   @js.native
   sealed trait MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS extends WebGLConstants
-  /* 402 */ @js.native
-  object MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS extends TopLevel[MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS with Double]
+  /* 402 */ val MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS: typings.cesium.mod.WebGLConstants.MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS with Double = js.native
   
   @js.native
   sealed trait MAX_UNIFORM_BLOCK_SIZE extends WebGLConstants
-  /* 521 */ @js.native
-  object MAX_UNIFORM_BLOCK_SIZE extends TopLevel[MAX_UNIFORM_BLOCK_SIZE with Double]
+  /* 521 */ val MAX_UNIFORM_BLOCK_SIZE: typings.cesium.mod.WebGLConstants.MAX_UNIFORM_BLOCK_SIZE with Double = js.native
   
   @js.native
   sealed trait MAX_UNIFORM_BUFFER_BINDINGS extends WebGLConstants
-  /* 520 */ @js.native
-  object MAX_UNIFORM_BUFFER_BINDINGS extends TopLevel[MAX_UNIFORM_BUFFER_BINDINGS with Double]
+  /* 520 */ val MAX_UNIFORM_BUFFER_BINDINGS: typings.cesium.mod.WebGLConstants.MAX_UNIFORM_BUFFER_BINDINGS with Double = js.native
   
   @js.native
   sealed trait MAX_VARYING_COMPONENTS extends WebGLConstants
-  /* 394 */ @js.native
-  object MAX_VARYING_COMPONENTS extends TopLevel[MAX_VARYING_COMPONENTS with Double]
+  /* 394 */ val MAX_VARYING_COMPONENTS: typings.cesium.mod.WebGLConstants.MAX_VARYING_COMPONENTS with Double = js.native
   
   @js.native
   sealed trait MAX_VARYING_VECTORS extends WebGLConstants
-  /* 136 */ @js.native
-  object MAX_VARYING_VECTORS extends TopLevel[MAX_VARYING_VECTORS with Double]
+  /* 136 */ val MAX_VARYING_VECTORS: typings.cesium.mod.WebGLConstants.MAX_VARYING_VECTORS with Double = js.native
   
   @js.native
   sealed trait MAX_VERTEX_ATTRIBS extends WebGLConstants
-  /* 134 */ @js.native
-  object MAX_VERTEX_ATTRIBS extends TopLevel[MAX_VERTEX_ATTRIBS with Double]
+  /* 134 */ val MAX_VERTEX_ATTRIBS: typings.cesium.mod.WebGLConstants.MAX_VERTEX_ATTRIBS with Double = js.native
   
   @js.native
   sealed trait MAX_VERTEX_OUTPUT_COMPONENTS extends WebGLConstants
-  /* 540 */ @js.native
-  object MAX_VERTEX_OUTPUT_COMPONENTS extends TopLevel[MAX_VERTEX_OUTPUT_COMPONENTS with Double]
+  /* 540 */ val MAX_VERTEX_OUTPUT_COMPONENTS: typings.cesium.mod.WebGLConstants.MAX_VERTEX_OUTPUT_COMPONENTS with Double = js.native
   
   @js.native
   sealed trait MAX_VERTEX_TEXTURE_IMAGE_UNITS extends WebGLConstants
-  /* 138 */ @js.native
-  object MAX_VERTEX_TEXTURE_IMAGE_UNITS extends TopLevel[MAX_VERTEX_TEXTURE_IMAGE_UNITS with Double]
+  /* 138 */ val MAX_VERTEX_TEXTURE_IMAGE_UNITS: typings.cesium.mod.WebGLConstants.MAX_VERTEX_TEXTURE_IMAGE_UNITS with Double = js.native
   
   @js.native
   sealed trait MAX_VERTEX_UNIFORM_BLOCKS extends WebGLConstants
-  /* 517 */ @js.native
-  object MAX_VERTEX_UNIFORM_BLOCKS extends TopLevel[MAX_VERTEX_UNIFORM_BLOCKS with Double]
+  /* 517 */ val MAX_VERTEX_UNIFORM_BLOCKS: typings.cesium.mod.WebGLConstants.MAX_VERTEX_UNIFORM_BLOCKS with Double = js.native
   
   @js.native
   sealed trait MAX_VERTEX_UNIFORM_COMPONENTS extends WebGLConstants
-  /* 368 */ @js.native
-  object MAX_VERTEX_UNIFORM_COMPONENTS extends TopLevel[MAX_VERTEX_UNIFORM_COMPONENTS with Double]
+  /* 368 */ val MAX_VERTEX_UNIFORM_COMPONENTS: typings.cesium.mod.WebGLConstants.MAX_VERTEX_UNIFORM_COMPONENTS with Double = js.native
   
   @js.native
   sealed trait MAX_VERTEX_UNIFORM_VECTORS extends WebGLConstants
-  /* 135 */ @js.native
-  object MAX_VERTEX_UNIFORM_VECTORS extends TopLevel[MAX_VERTEX_UNIFORM_VECTORS with Double]
+  /* 135 */ val MAX_VERTEX_UNIFORM_VECTORS: typings.cesium.mod.WebGLConstants.MAX_VERTEX_UNIFORM_VECTORS with Double = js.native
   
   @js.native
   sealed trait MAX_VIEWPORT_DIMS extends WebGLConstants
-  /* 96 */ @js.native
-  object MAX_VIEWPORT_DIMS extends TopLevel[MAX_VIEWPORT_DIMS with Double]
+  /* 96 */ val MAX_VIEWPORT_DIMS: typings.cesium.mod.WebGLConstants.MAX_VIEWPORT_DIMS with Double = js.native
   
   @js.native
   sealed trait MEDIUM_FLOAT extends WebGLConstants
-  /* 251 */ @js.native
-  object MEDIUM_FLOAT extends TopLevel[MEDIUM_FLOAT with Double]
+  /* 251 */ val MEDIUM_FLOAT: typings.cesium.mod.WebGLConstants.MEDIUM_FLOAT with Double = js.native
   
   @js.native
   sealed trait MEDIUM_INT extends WebGLConstants
-  /* 254 */ @js.native
-  object MEDIUM_INT extends TopLevel[MEDIUM_INT with Double]
+  /* 254 */ val MEDIUM_INT: typings.cesium.mod.WebGLConstants.MEDIUM_INT with Double = js.native
   
   @js.native
   sealed trait MIN extends WebGLConstants
-  /* 335 */ @js.native
-  object MIN extends TopLevel[MIN with Double]
+  /* 335 */ val MIN: typings.cesium.mod.WebGLConstants.MIN with Double = js.native
   
   @js.native
   sealed trait MIN_PROGRAM_TEXEL_OFFSET extends WebGLConstants
-  /* 392 */ @js.native
-  object MIN_PROGRAM_TEXEL_OFFSET extends TopLevel[MIN_PROGRAM_TEXEL_OFFSET with Double]
+  /* 392 */ val MIN_PROGRAM_TEXEL_OFFSET: typings.cesium.mod.WebGLConstants.MIN_PROGRAM_TEXEL_OFFSET with Double = js.native
   
   @js.native
   sealed trait MIRRORED_REPEAT extends WebGLConstants
-  /* 224 */ @js.native
-  object MIRRORED_REPEAT extends TopLevel[MIRRORED_REPEAT with Double]
+  /* 224 */ val MIRRORED_REPEAT: typings.cesium.mod.WebGLConstants.MIRRORED_REPEAT with Double = js.native
   
   @js.native
   sealed trait NEAREST extends WebGLConstants
-  /* 168 */ @js.native
-  object NEAREST extends TopLevel[NEAREST with Double]
+  /* 168 */ val NEAREST: typings.cesium.mod.WebGLConstants.NEAREST with Double = js.native
   
   @js.native
   sealed trait NEAREST_MIPMAP_LINEAR extends WebGLConstants
-  /* 172 */ @js.native
-  object NEAREST_MIPMAP_LINEAR extends TopLevel[NEAREST_MIPMAP_LINEAR with Double]
+  /* 172 */ val NEAREST_MIPMAP_LINEAR: typings.cesium.mod.WebGLConstants.NEAREST_MIPMAP_LINEAR with Double = js.native
   
   @js.native
   sealed trait NEAREST_MIPMAP_NEAREST extends WebGLConstants
-  /* 170 */ @js.native
-  object NEAREST_MIPMAP_NEAREST extends TopLevel[NEAREST_MIPMAP_NEAREST with Double]
+  /* 170 */ val NEAREST_MIPMAP_NEAREST: typings.cesium.mod.WebGLConstants.NEAREST_MIPMAP_NEAREST with Double = js.native
   
   @js.native
   sealed trait NEVER extends WebGLConstants
-  /* 150 */ @js.native
-  object NEVER extends TopLevel[NEVER with Double]
+  /* 150 */ val NEVER: typings.cesium.mod.WebGLConstants.NEVER with Double = js.native
   
   @js.native
   sealed trait NICEST extends WebGLConstants
-  /* 114 */ @js.native
-  object NICEST extends TopLevel[NICEST with Double]
+  /* 114 */ val NICEST: typings.cesium.mod.WebGLConstants.NICEST with Double = js.native
   
   @js.native
   sealed trait NONE extends WebGLConstants
-  /* 282 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
+  /* 282 */ val NONE: typings.cesium.mod.WebGLConstants.NONE with Double = js.native
   
   @js.native
   sealed trait NOTEQUAL extends WebGLConstants
-  /* 155 */ @js.native
-  object NOTEQUAL extends TopLevel[NOTEQUAL with Double]
+  /* 155 */ val NOTEQUAL: typings.cesium.mod.WebGLConstants.NOTEQUAL with Double = js.native
   
   @js.native
   sealed trait NO_ERROR extends WebGLConstants
-  /* 58 */ @js.native
-  object NO_ERROR extends TopLevel[NO_ERROR with Double]
+  /* 58 */ val NO_ERROR: typings.cesium.mod.WebGLConstants.NO_ERROR with Double = js.native
   
   @js.native
   sealed trait OBJECT_TYPE extends WebGLConstants
-  /* 543 */ @js.native
-  object OBJECT_TYPE extends TopLevel[OBJECT_TYPE with Double]
+  /* 543 */ val OBJECT_TYPE: typings.cesium.mod.WebGLConstants.OBJECT_TYPE with Double = js.native
   
   @js.native
   sealed trait ONE extends WebGLConstants
-  /* 11 */ @js.native
-  object ONE extends TopLevel[ONE with Double]
+  /* 11 */ val ONE: typings.cesium.mod.WebGLConstants.ONE with Double = js.native
   
   @js.native
   sealed trait ONE_MINUS_CONSTANT_ALPHA extends WebGLConstants
-  /* 34 */ @js.native
-  object ONE_MINUS_CONSTANT_ALPHA extends TopLevel[ONE_MINUS_CONSTANT_ALPHA with Double]
+  /* 34 */ val ONE_MINUS_CONSTANT_ALPHA: typings.cesium.mod.WebGLConstants.ONE_MINUS_CONSTANT_ALPHA with Double = js.native
   
   @js.native
   sealed trait ONE_MINUS_CONSTANT_COLOR extends WebGLConstants
-  /* 32 */ @js.native
-  object ONE_MINUS_CONSTANT_COLOR extends TopLevel[ONE_MINUS_CONSTANT_COLOR with Double]
+  /* 32 */ val ONE_MINUS_CONSTANT_COLOR: typings.cesium.mod.WebGLConstants.ONE_MINUS_CONSTANT_COLOR with Double = js.native
   
   @js.native
   sealed trait ONE_MINUS_DST_ALPHA extends WebGLConstants
-  /* 17 */ @js.native
-  object ONE_MINUS_DST_ALPHA extends TopLevel[ONE_MINUS_DST_ALPHA with Double]
+  /* 17 */ val ONE_MINUS_DST_ALPHA: typings.cesium.mod.WebGLConstants.ONE_MINUS_DST_ALPHA with Double = js.native
   
   @js.native
   sealed trait ONE_MINUS_DST_COLOR extends WebGLConstants
-  /* 19 */ @js.native
-  object ONE_MINUS_DST_COLOR extends TopLevel[ONE_MINUS_DST_COLOR with Double]
+  /* 19 */ val ONE_MINUS_DST_COLOR: typings.cesium.mod.WebGLConstants.ONE_MINUS_DST_COLOR with Double = js.native
   
   @js.native
   sealed trait ONE_MINUS_SRC_ALPHA extends WebGLConstants
-  /* 15 */ @js.native
-  object ONE_MINUS_SRC_ALPHA extends TopLevel[ONE_MINUS_SRC_ALPHA with Double]
+  /* 15 */ val ONE_MINUS_SRC_ALPHA: typings.cesium.mod.WebGLConstants.ONE_MINUS_SRC_ALPHA with Double = js.native
   
   @js.native
   sealed trait ONE_MINUS_SRC_COLOR extends WebGLConstants
-  /* 13 */ @js.native
-  object ONE_MINUS_SRC_COLOR extends TopLevel[ONE_MINUS_SRC_COLOR with Double]
+  /* 13 */ val ONE_MINUS_SRC_COLOR: typings.cesium.mod.WebGLConstants.ONE_MINUS_SRC_COLOR with Double = js.native
   
   @js.native
   sealed trait OUT_OF_MEMORY extends WebGLConstants
-  /* 62 */ @js.native
-  object OUT_OF_MEMORY extends TopLevel[OUT_OF_MEMORY with Double]
+  /* 62 */ val OUT_OF_MEMORY: typings.cesium.mod.WebGLConstants.OUT_OF_MEMORY with Double = js.native
   
   @js.native
   sealed trait PACK_ALIGNMENT extends WebGLConstants
-  /* 94 */ @js.native
-  object PACK_ALIGNMENT extends TopLevel[PACK_ALIGNMENT with Double]
+  /* 94 */ val PACK_ALIGNMENT: typings.cesium.mod.WebGLConstants.PACK_ALIGNMENT with Double = js.native
   
   @js.native
   sealed trait PACK_ROW_LENGTH extends WebGLConstants
-  /* 312 */ @js.native
-  object PACK_ROW_LENGTH extends TopLevel[PACK_ROW_LENGTH with Double]
+  /* 312 */ val PACK_ROW_LENGTH: typings.cesium.mod.WebGLConstants.PACK_ROW_LENGTH with Double = js.native
   
   @js.native
   sealed trait PACK_SKIP_PIXELS extends WebGLConstants
-  /* 314 */ @js.native
-  object PACK_SKIP_PIXELS extends TopLevel[PACK_SKIP_PIXELS with Double]
+  /* 314 */ val PACK_SKIP_PIXELS: typings.cesium.mod.WebGLConstants.PACK_SKIP_PIXELS with Double = js.native
   
   @js.native
   sealed trait PACK_SKIP_ROWS extends WebGLConstants
-  /* 313 */ @js.native
-  object PACK_SKIP_ROWS extends TopLevel[PACK_SKIP_ROWS with Double]
+  /* 313 */ val PACK_SKIP_ROWS: typings.cesium.mod.WebGLConstants.PACK_SKIP_ROWS with Double = js.native
   
   @js.native
   sealed trait PIXEL_PACK_BUFFER extends WebGLConstants
-  /* 372 */ @js.native
-  object PIXEL_PACK_BUFFER extends TopLevel[PIXEL_PACK_BUFFER with Double]
+  /* 372 */ val PIXEL_PACK_BUFFER: typings.cesium.mod.WebGLConstants.PIXEL_PACK_BUFFER with Double = js.native
   
   @js.native
   sealed trait PIXEL_PACK_BUFFER_BINDING extends WebGLConstants
-  /* 374 */ @js.native
-  object PIXEL_PACK_BUFFER_BINDING extends TopLevel[PIXEL_PACK_BUFFER_BINDING with Double]
+  /* 374 */ val PIXEL_PACK_BUFFER_BINDING: typings.cesium.mod.WebGLConstants.PIXEL_PACK_BUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait PIXEL_UNPACK_BUFFER extends WebGLConstants
-  /* 373 */ @js.native
-  object PIXEL_UNPACK_BUFFER extends TopLevel[PIXEL_UNPACK_BUFFER with Double]
+  /* 373 */ val PIXEL_UNPACK_BUFFER: typings.cesium.mod.WebGLConstants.PIXEL_UNPACK_BUFFER with Double = js.native
   
   @js.native
   sealed trait PIXEL_UNPACK_BUFFER_BINDING extends WebGLConstants
-  /* 375 */ @js.native
-  object PIXEL_UNPACK_BUFFER_BINDING extends TopLevel[PIXEL_UNPACK_BUFFER_BINDING with Double]
+  /* 375 */ val PIXEL_UNPACK_BUFFER_BINDING: typings.cesium.mod.WebGLConstants.PIXEL_UNPACK_BUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait POINTS extends WebGLConstants
-  /* 3 */ @js.native
-  object POINTS extends TopLevel[POINTS with Double]
+  /* 3 */ val POINTS: typings.cesium.mod.WebGLConstants.POINTS with Double = js.native
   
   @js.native
   sealed trait POLYGON_OFFSET_FACTOR extends WebGLConstants
-  /* 105 */ @js.native
-  object POLYGON_OFFSET_FACTOR extends TopLevel[POLYGON_OFFSET_FACTOR with Double]
+  /* 105 */ val POLYGON_OFFSET_FACTOR: typings.cesium.mod.WebGLConstants.POLYGON_OFFSET_FACTOR with Double = js.native
   
   @js.native
   sealed trait POLYGON_OFFSET_FILL extends WebGLConstants
-  /* 55 */ @js.native
-  object POLYGON_OFFSET_FILL extends TopLevel[POLYGON_OFFSET_FILL with Double]
+  /* 55 */ val POLYGON_OFFSET_FILL: typings.cesium.mod.WebGLConstants.POLYGON_OFFSET_FILL with Double = js.native
   
   @js.native
   sealed trait POLYGON_OFFSET_UNITS extends WebGLConstants
-  /* 104 */ @js.native
-  object POLYGON_OFFSET_UNITS extends TopLevel[POLYGON_OFFSET_UNITS with Double]
+  /* 104 */ val POLYGON_OFFSET_UNITS: typings.cesium.mod.WebGLConstants.POLYGON_OFFSET_UNITS with Double = js.native
   
   @js.native
   sealed trait QUERY_RESULT extends WebGLConstants
-  /* 342 */ @js.native
-  object QUERY_RESULT extends TopLevel[QUERY_RESULT with Double]
+  /* 342 */ val QUERY_RESULT: typings.cesium.mod.WebGLConstants.QUERY_RESULT with Double = js.native
   
   @js.native
   sealed trait QUERY_RESULT_AVAILABLE extends WebGLConstants
-  /* 343 */ @js.native
-  object QUERY_RESULT_AVAILABLE extends TopLevel[QUERY_RESULT_AVAILABLE with Double]
+  /* 343 */ val QUERY_RESULT_AVAILABLE: typings.cesium.mod.WebGLConstants.QUERY_RESULT_AVAILABLE with Double = js.native
   
   @js.native
   sealed trait R11F_G11F_B10F extends WebGLConstants
-  /* 397 */ @js.native
-  object R11F_G11F_B10F extends TopLevel[R11F_G11F_B10F with Double]
+  /* 397 */ val R11F_G11F_B10F: typings.cesium.mod.WebGLConstants.R11F_G11F_B10F with Double = js.native
   
   @js.native
   sealed trait R16F extends WebGLConstants
-  /* 487 */ @js.native
-  object R16F extends TopLevel[R16F with Double]
+  /* 487 */ val R16F: typings.cesium.mod.WebGLConstants.R16F with Double = js.native
   
   @js.native
   sealed trait R16I extends WebGLConstants
-  /* 493 */ @js.native
-  object R16I extends TopLevel[R16I with Double]
+  /* 493 */ val R16I: typings.cesium.mod.WebGLConstants.R16I with Double = js.native
   
   @js.native
   sealed trait R16UI extends WebGLConstants
-  /* 494 */ @js.native
-  object R16UI extends TopLevel[R16UI with Double]
+  /* 494 */ val R16UI: typings.cesium.mod.WebGLConstants.R16UI with Double = js.native
   
   @js.native
   sealed trait R32F extends WebGLConstants
-  /* 488 */ @js.native
-  object R32F extends TopLevel[R32F with Double]
+  /* 488 */ val R32F: typings.cesium.mod.WebGLConstants.R32F with Double = js.native
   
   @js.native
   sealed trait R32I extends WebGLConstants
-  /* 495 */ @js.native
-  object R32I extends TopLevel[R32I with Double]
+  /* 495 */ val R32I: typings.cesium.mod.WebGLConstants.R32I with Double = js.native
   
   @js.native
   sealed trait R32UI extends WebGLConstants
-  /* 496 */ @js.native
-  object R32UI extends TopLevel[R32UI with Double]
+  /* 496 */ val R32UI: typings.cesium.mod.WebGLConstants.R32UI with Double = js.native
   
   @js.native
   sealed trait R8 extends WebGLConstants
-  /* 485 */ @js.native
-  object R8 extends TopLevel[R8 with Double]
+  /* 485 */ val R8: typings.cesium.mod.WebGLConstants.R8 with Double = js.native
   
   @js.native
   sealed trait R8I extends WebGLConstants
-  /* 491 */ @js.native
-  object R8I extends TopLevel[R8I with Double]
+  /* 491 */ val R8I: typings.cesium.mod.WebGLConstants.R8I with Double = js.native
   
   @js.native
   sealed trait R8UI extends WebGLConstants
-  /* 492 */ @js.native
-  object R8UI extends TopLevel[R8UI with Double]
+  /* 492 */ val R8UI: typings.cesium.mod.WebGLConstants.R8UI with Double = js.native
   
   @js.native
   sealed trait R8_SNORM extends WebGLConstants
-  /* 504 */ @js.native
-  object R8_SNORM extends TopLevel[R8_SNORM with Double]
+  /* 504 */ val R8_SNORM: typings.cesium.mod.WebGLConstants.R8_SNORM with Double = js.native
   
   @js.native
   sealed trait RASTERIZER_DISCARD extends WebGLConstants
-  /* 407 */ @js.native
-  object RASTERIZER_DISCARD extends TopLevel[RASTERIZER_DISCARD with Double]
+  /* 407 */ val RASTERIZER_DISCARD: typings.cesium.mod.WebGLConstants.RASTERIZER_DISCARD with Double = js.native
   
   @js.native
   sealed trait READ_BUFFER extends WebGLConstants
-  /* 308 */ @js.native
-  object READ_BUFFER extends TopLevel[READ_BUFFER with Double]
+  /* 308 */ val READ_BUFFER: typings.cesium.mod.WebGLConstants.READ_BUFFER with Double = js.native
   
   @js.native
   sealed trait READ_FRAMEBUFFER extends WebGLConstants
-  /* 459 */ @js.native
-  object READ_FRAMEBUFFER extends TopLevel[READ_FRAMEBUFFER with Double]
+  /* 459 */ val READ_FRAMEBUFFER: typings.cesium.mod.WebGLConstants.READ_FRAMEBUFFER with Double = js.native
   
   @js.native
   sealed trait READ_FRAMEBUFFER_BINDING extends WebGLConstants
-  /* 461 */ @js.native
-  object READ_FRAMEBUFFER_BINDING extends TopLevel[READ_FRAMEBUFFER_BINDING with Double]
+  /* 461 */ val READ_FRAMEBUFFER_BINDING: typings.cesium.mod.WebGLConstants.READ_FRAMEBUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait RED extends WebGLConstants
-  /* 318 */ @js.native
-  object RED extends TopLevel[RED with Double]
+  /* 318 */ val RED: typings.cesium.mod.WebGLConstants.RED with Double = js.native
   
   @js.native
   sealed trait RED_BITS extends WebGLConstants
-  /* 98 */ @js.native
-  object RED_BITS extends TopLevel[RED_BITS with Double]
+  /* 98 */ val RED_BITS: typings.cesium.mod.WebGLConstants.RED_BITS with Double = js.native
   
   @js.native
   sealed trait RED_INTEGER extends WebGLConstants
-  /* 426 */ @js.native
-  object RED_INTEGER extends TopLevel[RED_INTEGER with Double]
+  /* 426 */ val RED_INTEGER: typings.cesium.mod.WebGLConstants.RED_INTEGER with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER extends WebGLConstants
-  /* 257 */ @js.native
-  object RENDERBUFFER extends TopLevel[RENDERBUFFER with Double]
+  /* 257 */ val RENDERBUFFER: typings.cesium.mod.WebGLConstants.RENDERBUFFER with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_ALPHA_SIZE extends WebGLConstants
-  /* 271 */ @js.native
-  object RENDERBUFFER_ALPHA_SIZE extends TopLevel[RENDERBUFFER_ALPHA_SIZE with Double]
+  /* 271 */ val RENDERBUFFER_ALPHA_SIZE: typings.cesium.mod.WebGLConstants.RENDERBUFFER_ALPHA_SIZE with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_BINDING extends WebGLConstants
-  /* 289 */ @js.native
-  object RENDERBUFFER_BINDING extends TopLevel[RENDERBUFFER_BINDING with Double]
+  /* 289 */ val RENDERBUFFER_BINDING: typings.cesium.mod.WebGLConstants.RENDERBUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_BLUE_SIZE extends WebGLConstants
-  /* 270 */ @js.native
-  object RENDERBUFFER_BLUE_SIZE extends TopLevel[RENDERBUFFER_BLUE_SIZE with Double]
+  /* 270 */ val RENDERBUFFER_BLUE_SIZE: typings.cesium.mod.WebGLConstants.RENDERBUFFER_BLUE_SIZE with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_DEPTH_SIZE extends WebGLConstants
-  /* 272 */ @js.native
-  object RENDERBUFFER_DEPTH_SIZE extends TopLevel[RENDERBUFFER_DEPTH_SIZE with Double]
+  /* 272 */ val RENDERBUFFER_DEPTH_SIZE: typings.cesium.mod.WebGLConstants.RENDERBUFFER_DEPTH_SIZE with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_GREEN_SIZE extends WebGLConstants
-  /* 269 */ @js.native
-  object RENDERBUFFER_GREEN_SIZE extends TopLevel[RENDERBUFFER_GREEN_SIZE with Double]
+  /* 269 */ val RENDERBUFFER_GREEN_SIZE: typings.cesium.mod.WebGLConstants.RENDERBUFFER_GREEN_SIZE with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_HEIGHT extends WebGLConstants
-  /* 266 */ @js.native
-  object RENDERBUFFER_HEIGHT extends TopLevel[RENDERBUFFER_HEIGHT with Double]
+  /* 266 */ val RENDERBUFFER_HEIGHT: typings.cesium.mod.WebGLConstants.RENDERBUFFER_HEIGHT with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_INTERNAL_FORMAT extends WebGLConstants
-  /* 267 */ @js.native
-  object RENDERBUFFER_INTERNAL_FORMAT extends TopLevel[RENDERBUFFER_INTERNAL_FORMAT with Double]
+  /* 267 */ val RENDERBUFFER_INTERNAL_FORMAT: typings.cesium.mod.WebGLConstants.RENDERBUFFER_INTERNAL_FORMAT with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_RED_SIZE extends WebGLConstants
-  /* 268 */ @js.native
-  object RENDERBUFFER_RED_SIZE extends TopLevel[RENDERBUFFER_RED_SIZE with Double]
+  /* 268 */ val RENDERBUFFER_RED_SIZE: typings.cesium.mod.WebGLConstants.RENDERBUFFER_RED_SIZE with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_SAMPLES extends WebGLConstants
-  /* 462 */ @js.native
-  object RENDERBUFFER_SAMPLES extends TopLevel[RENDERBUFFER_SAMPLES with Double]
+  /* 462 */ val RENDERBUFFER_SAMPLES: typings.cesium.mod.WebGLConstants.RENDERBUFFER_SAMPLES with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_STENCIL_SIZE extends WebGLConstants
-  /* 273 */ @js.native
-  object RENDERBUFFER_STENCIL_SIZE extends TopLevel[RENDERBUFFER_STENCIL_SIZE with Double]
+  /* 273 */ val RENDERBUFFER_STENCIL_SIZE: typings.cesium.mod.WebGLConstants.RENDERBUFFER_STENCIL_SIZE with Double = js.native
   
   @js.native
   sealed trait RENDERBUFFER_WIDTH extends WebGLConstants
-  /* 265 */ @js.native
-  object RENDERBUFFER_WIDTH extends TopLevel[RENDERBUFFER_WIDTH with Double]
+  /* 265 */ val RENDERBUFFER_WIDTH: typings.cesium.mod.WebGLConstants.RENDERBUFFER_WIDTH with Double = js.native
   
   @js.native
   sealed trait RENDERER extends WebGLConstants
-  /* 166 */ @js.native
-  object RENDERER extends TopLevel[RENDERER with Double]
+  /* 166 */ val RENDERER: typings.cesium.mod.WebGLConstants.RENDERER with Double = js.native
   
   @js.native
   sealed trait REPEAT extends WebGLConstants
-  /* 222 */ @js.native
-  object REPEAT extends TopLevel[REPEAT with Double]
+  /* 222 */ val REPEAT: typings.cesium.mod.WebGLConstants.REPEAT with Double = js.native
   
   @js.native
   sealed trait REPLACE extends WebGLConstants
-  /* 159 */ @js.native
-  object REPLACE extends TopLevel[REPLACE with Double]
+  /* 159 */ val REPLACE: typings.cesium.mod.WebGLConstants.REPLACE with Double = js.native
   
   @js.native
   sealed trait RG extends WebGLConstants
-  /* 483 */ @js.native
-  object RG extends TopLevel[RG with Double]
+  /* 483 */ val RG: typings.cesium.mod.WebGLConstants.RG with Double = js.native
   
   @js.native
   sealed trait RG16F extends WebGLConstants
-  /* 489 */ @js.native
-  object RG16F extends TopLevel[RG16F with Double]
+  /* 489 */ val RG16F: typings.cesium.mod.WebGLConstants.RG16F with Double = js.native
   
   @js.native
   sealed trait RG16I extends WebGLConstants
-  /* 499 */ @js.native
-  object RG16I extends TopLevel[RG16I with Double]
+  /* 499 */ val RG16I: typings.cesium.mod.WebGLConstants.RG16I with Double = js.native
   
   @js.native
   sealed trait RG16UI extends WebGLConstants
-  /* 500 */ @js.native
-  object RG16UI extends TopLevel[RG16UI with Double]
+  /* 500 */ val RG16UI: typings.cesium.mod.WebGLConstants.RG16UI with Double = js.native
   
   @js.native
   sealed trait RG32F extends WebGLConstants
-  /* 490 */ @js.native
-  object RG32F extends TopLevel[RG32F with Double]
+  /* 490 */ val RG32F: typings.cesium.mod.WebGLConstants.RG32F with Double = js.native
   
   @js.native
   sealed trait RG32I extends WebGLConstants
-  /* 501 */ @js.native
-  object RG32I extends TopLevel[RG32I with Double]
+  /* 501 */ val RG32I: typings.cesium.mod.WebGLConstants.RG32I with Double = js.native
   
   @js.native
   sealed trait RG32UI extends WebGLConstants
-  /* 502 */ @js.native
-  object RG32UI extends TopLevel[RG32UI with Double]
+  /* 502 */ val RG32UI: typings.cesium.mod.WebGLConstants.RG32UI with Double = js.native
   
   @js.native
   sealed trait RG8 extends WebGLConstants
-  /* 486 */ @js.native
-  object RG8 extends TopLevel[RG8 with Double]
+  /* 486 */ val RG8: typings.cesium.mod.WebGLConstants.RG8 with Double = js.native
   
   @js.native
   sealed trait RG8I extends WebGLConstants
-  /* 497 */ @js.native
-  object RG8I extends TopLevel[RG8I with Double]
+  /* 497 */ val RG8I: typings.cesium.mod.WebGLConstants.RG8I with Double = js.native
   
   @js.native
   sealed trait RG8UI extends WebGLConstants
-  /* 498 */ @js.native
-  object RG8UI extends TopLevel[RG8UI with Double]
+  /* 498 */ val RG8UI: typings.cesium.mod.WebGLConstants.RG8UI with Double = js.native
   
   @js.native
   sealed trait RG8_SNORM extends WebGLConstants
-  /* 505 */ @js.native
-  object RG8_SNORM extends TopLevel[RG8_SNORM with Double]
+  /* 505 */ val RG8_SNORM: typings.cesium.mod.WebGLConstants.RG8_SNORM with Double = js.native
   
   @js.native
   sealed trait RGB extends WebGLConstants
-  /* 125 */ @js.native
-  object RGB extends TopLevel[RGB with Double]
+  /* 125 */ val RGB: typings.cesium.mod.WebGLConstants.RGB with Double = js.native
   
   @js.native
   sealed trait RGB10_A2 extends WebGLConstants
-  /* 321 */ @js.native
-  object RGB10_A2 extends TopLevel[RGB10_A2 with Double]
+  /* 321 */ val RGB10_A2: typings.cesium.mod.WebGLConstants.RGB10_A2 with Double = js.native
   
   @js.native
   sealed trait RGB10_A2UI extends WebGLConstants
-  /* 560 */ @js.native
-  object RGB10_A2UI extends TopLevel[RGB10_A2UI with Double]
+  /* 560 */ val RGB10_A2UI: typings.cesium.mod.WebGLConstants.RGB10_A2UI with Double = js.native
   
   @js.native
   sealed trait RGB16F extends WebGLConstants
-  /* 389 */ @js.native
-  object RGB16F extends TopLevel[RGB16F with Double]
+  /* 389 */ val RGB16F: typings.cesium.mod.WebGLConstants.RGB16F with Double = js.native
   
   @js.native
   sealed trait RGB16I extends WebGLConstants
-  /* 423 */ @js.native
-  object RGB16I extends TopLevel[RGB16I with Double]
+  /* 423 */ val RGB16I: typings.cesium.mod.WebGLConstants.RGB16I with Double = js.native
   
   @js.native
   sealed trait RGB16UI extends WebGLConstants
-  /* 417 */ @js.native
-  object RGB16UI extends TopLevel[RGB16UI with Double]
+  /* 417 */ val RGB16UI: typings.cesium.mod.WebGLConstants.RGB16UI with Double = js.native
   
   @js.native
   sealed trait RGB32F extends WebGLConstants
-  /* 387 */ @js.native
-  object RGB32F extends TopLevel[RGB32F with Double]
+  /* 387 */ val RGB32F: typings.cesium.mod.WebGLConstants.RGB32F with Double = js.native
   
   @js.native
   sealed trait RGB32I extends WebGLConstants
-  /* 421 */ @js.native
-  object RGB32I extends TopLevel[RGB32I with Double]
+  /* 421 */ val RGB32I: typings.cesium.mod.WebGLConstants.RGB32I with Double = js.native
   
   @js.native
   sealed trait RGB32UI extends WebGLConstants
-  /* 415 */ @js.native
-  object RGB32UI extends TopLevel[RGB32UI with Double]
+  /* 415 */ val RGB32UI: typings.cesium.mod.WebGLConstants.RGB32UI with Double = js.native
   
   @js.native
   sealed trait RGB565 extends WebGLConstants
-  /* 260 */ @js.native
-  object RGB565 extends TopLevel[RGB565 with Double]
+  /* 260 */ val RGB565: typings.cesium.mod.WebGLConstants.RGB565 with Double = js.native
   
   @js.native
   sealed trait RGB5_A1 extends WebGLConstants
-  /* 259 */ @js.native
-  object RGB5_A1 extends TopLevel[RGB5_A1 with Double]
+  /* 259 */ val RGB5_A1: typings.cesium.mod.WebGLConstants.RGB5_A1 with Double = js.native
   
   @js.native
   sealed trait RGB8 extends WebGLConstants
-  /* 319 */ @js.native
-  object RGB8 extends TopLevel[RGB8 with Double]
+  /* 319 */ val RGB8: typings.cesium.mod.WebGLConstants.RGB8 with Double = js.native
   
   @js.native
   sealed trait RGB8I extends WebGLConstants
-  /* 425 */ @js.native
-  object RGB8I extends TopLevel[RGB8I with Double]
+  /* 425 */ val RGB8I: typings.cesium.mod.WebGLConstants.RGB8I with Double = js.native
   
   @js.native
   sealed trait RGB8UI extends WebGLConstants
-  /* 419 */ @js.native
-  object RGB8UI extends TopLevel[RGB8UI with Double]
+  /* 419 */ val RGB8UI: typings.cesium.mod.WebGLConstants.RGB8UI with Double = js.native
   
   @js.native
   sealed trait RGB8_SNORM extends WebGLConstants
-  /* 506 */ @js.native
-  object RGB8_SNORM extends TopLevel[RGB8_SNORM with Double]
+  /* 506 */ val RGB8_SNORM: typings.cesium.mod.WebGLConstants.RGB8_SNORM with Double = js.native
   
   @js.native
   sealed trait RGB9_E5 extends WebGLConstants
-  /* 399 */ @js.native
-  object RGB9_E5 extends TopLevel[RGB9_E5 with Double]
+  /* 399 */ val RGB9_E5: typings.cesium.mod.WebGLConstants.RGB9_E5 with Double = js.native
   
   @js.native
   sealed trait RGBA extends WebGLConstants
-  /* 126 */ @js.native
-  object RGBA extends TopLevel[RGBA with Double]
+  /* 126 */ val RGBA: typings.cesium.mod.WebGLConstants.RGBA with Double = js.native
   
   @js.native
   sealed trait RGBA16F extends WebGLConstants
-  /* 388 */ @js.native
-  object RGBA16F extends TopLevel[RGBA16F with Double]
+  /* 388 */ val RGBA16F: typings.cesium.mod.WebGLConstants.RGBA16F with Double = js.native
   
   @js.native
   sealed trait RGBA16I extends WebGLConstants
-  /* 422 */ @js.native
-  object RGBA16I extends TopLevel[RGBA16I with Double]
+  /* 422 */ val RGBA16I: typings.cesium.mod.WebGLConstants.RGBA16I with Double = js.native
   
   @js.native
   sealed trait RGBA16UI extends WebGLConstants
-  /* 416 */ @js.native
-  object RGBA16UI extends TopLevel[RGBA16UI with Double]
+  /* 416 */ val RGBA16UI: typings.cesium.mod.WebGLConstants.RGBA16UI with Double = js.native
   
   @js.native
   sealed trait RGBA32F extends WebGLConstants
-  /* 386 */ @js.native
-  object RGBA32F extends TopLevel[RGBA32F with Double]
+  /* 386 */ val RGBA32F: typings.cesium.mod.WebGLConstants.RGBA32F with Double = js.native
   
   @js.native
   sealed trait RGBA32I extends WebGLConstants
-  /* 420 */ @js.native
-  object RGBA32I extends TopLevel[RGBA32I with Double]
+  /* 420 */ val RGBA32I: typings.cesium.mod.WebGLConstants.RGBA32I with Double = js.native
   
   @js.native
   sealed trait RGBA32UI extends WebGLConstants
-  /* 414 */ @js.native
-  object RGBA32UI extends TopLevel[RGBA32UI with Double]
+  /* 414 */ val RGBA32UI: typings.cesium.mod.WebGLConstants.RGBA32UI with Double = js.native
   
   @js.native
   sealed trait RGBA4 extends WebGLConstants
-  /* 258 */ @js.native
-  object RGBA4 extends TopLevel[RGBA4 with Double]
+  /* 258 */ val RGBA4: typings.cesium.mod.WebGLConstants.RGBA4 with Double = js.native
   
   @js.native
   sealed trait RGBA8 extends WebGLConstants
-  /* 320 */ @js.native
-  object RGBA8 extends TopLevel[RGBA8 with Double]
+  /* 320 */ val RGBA8: typings.cesium.mod.WebGLConstants.RGBA8 with Double = js.native
   
   @js.native
   sealed trait RGBA8I extends WebGLConstants
-  /* 424 */ @js.native
-  object RGBA8I extends TopLevel[RGBA8I with Double]
+  /* 424 */ val RGBA8I: typings.cesium.mod.WebGLConstants.RGBA8I with Double = js.native
   
   @js.native
   sealed trait RGBA8UI extends WebGLConstants
-  /* 418 */ @js.native
-  object RGBA8UI extends TopLevel[RGBA8UI with Double]
+  /* 418 */ val RGBA8UI: typings.cesium.mod.WebGLConstants.RGBA8UI with Double = js.native
   
   @js.native
   sealed trait RGBA8_SNORM extends WebGLConstants
-  /* 507 */ @js.native
-  object RGBA8_SNORM extends TopLevel[RGBA8_SNORM with Double]
+  /* 507 */ val RGBA8_SNORM: typings.cesium.mod.WebGLConstants.RGBA8_SNORM with Double = js.native
   
   @js.native
   sealed trait RGBA_INTEGER extends WebGLConstants
-  /* 428 */ @js.native
-  object RGBA_INTEGER extends TopLevel[RGBA_INTEGER with Double]
+  /* 428 */ val RGBA_INTEGER: typings.cesium.mod.WebGLConstants.RGBA_INTEGER with Double = js.native
   
   @js.native
   sealed trait RGB_INTEGER extends WebGLConstants
-  /* 427 */ @js.native
-  object RGB_INTEGER extends TopLevel[RGB_INTEGER with Double]
+  /* 427 */ val RGB_INTEGER: typings.cesium.mod.WebGLConstants.RGB_INTEGER with Double = js.native
   
   @js.native
   sealed trait RG_INTEGER extends WebGLConstants
-  /* 484 */ @js.native
-  object RG_INTEGER extends TopLevel[RG_INTEGER with Double]
+  /* 484 */ val RG_INTEGER: typings.cesium.mod.WebGLConstants.RG_INTEGER with Double = js.native
   
   @js.native
   sealed trait SAMPLER_2D extends WebGLConstants
-  /* 238 */ @js.native
-  object SAMPLER_2D extends TopLevel[SAMPLER_2D with Double]
+  /* 238 */ val SAMPLER_2D: typings.cesium.mod.WebGLConstants.SAMPLER_2D with Double = js.native
   
   @js.native
   sealed trait SAMPLER_2D_ARRAY extends WebGLConstants
-  /* 429 */ @js.native
-  object SAMPLER_2D_ARRAY extends TopLevel[SAMPLER_2D_ARRAY with Double]
+  /* 429 */ val SAMPLER_2D_ARRAY: typings.cesium.mod.WebGLConstants.SAMPLER_2D_ARRAY with Double = js.native
   
   @js.native
   sealed trait SAMPLER_2D_ARRAY_SHADOW extends WebGLConstants
-  /* 430 */ @js.native
-  object SAMPLER_2D_ARRAY_SHADOW extends TopLevel[SAMPLER_2D_ARRAY_SHADOW with Double]
+  /* 430 */ val SAMPLER_2D_ARRAY_SHADOW: typings.cesium.mod.WebGLConstants.SAMPLER_2D_ARRAY_SHADOW with Double = js.native
   
   @js.native
   sealed trait SAMPLER_2D_SHADOW extends WebGLConstants
-  /* 370 */ @js.native
-  object SAMPLER_2D_SHADOW extends TopLevel[SAMPLER_2D_SHADOW with Double]
+  /* 370 */ val SAMPLER_2D_SHADOW: typings.cesium.mod.WebGLConstants.SAMPLER_2D_SHADOW with Double = js.native
   
   @js.native
   sealed trait SAMPLER_3D extends WebGLConstants
-  /* 369 */ @js.native
-  object SAMPLER_3D extends TopLevel[SAMPLER_3D with Double]
+  /* 369 */ val SAMPLER_3D: typings.cesium.mod.WebGLConstants.SAMPLER_3D with Double = js.native
   
   @js.native
   sealed trait SAMPLER_BINDING extends WebGLConstants
-  /* 559 */ @js.native
-  object SAMPLER_BINDING extends TopLevel[SAMPLER_BINDING with Double]
+  /* 559 */ val SAMPLER_BINDING: typings.cesium.mod.WebGLConstants.SAMPLER_BINDING with Double = js.native
   
   @js.native
   sealed trait SAMPLER_CUBE extends WebGLConstants
-  /* 239 */ @js.native
-  object SAMPLER_CUBE extends TopLevel[SAMPLER_CUBE with Double]
+  /* 239 */ val SAMPLER_CUBE: typings.cesium.mod.WebGLConstants.SAMPLER_CUBE with Double = js.native
   
   @js.native
   sealed trait SAMPLER_CUBE_SHADOW extends WebGLConstants
-  /* 431 */ @js.native
-  object SAMPLER_CUBE_SHADOW extends TopLevel[SAMPLER_CUBE_SHADOW with Double]
+  /* 431 */ val SAMPLER_CUBE_SHADOW: typings.cesium.mod.WebGLConstants.SAMPLER_CUBE_SHADOW with Double = js.native
   
   @js.native
   sealed trait SAMPLES extends WebGLConstants
-  /* 108 */ @js.native
-  object SAMPLES extends TopLevel[SAMPLES with Double]
+  /* 108 */ val SAMPLES: typings.cesium.mod.WebGLConstants.SAMPLES with Double = js.native
   
   @js.native
   sealed trait SAMPLE_ALPHA_TO_COVERAGE extends WebGLConstants
-  /* 56 */ @js.native
-  object SAMPLE_ALPHA_TO_COVERAGE extends TopLevel[SAMPLE_ALPHA_TO_COVERAGE with Double]
+  /* 56 */ val SAMPLE_ALPHA_TO_COVERAGE: typings.cesium.mod.WebGLConstants.SAMPLE_ALPHA_TO_COVERAGE with Double = js.native
   
   @js.native
   sealed trait SAMPLE_BUFFERS extends WebGLConstants
-  /* 107 */ @js.native
-  object SAMPLE_BUFFERS extends TopLevel[SAMPLE_BUFFERS with Double]
+  /* 107 */ val SAMPLE_BUFFERS: typings.cesium.mod.WebGLConstants.SAMPLE_BUFFERS with Double = js.native
   
   @js.native
   sealed trait SAMPLE_COVERAGE extends WebGLConstants
-  /* 57 */ @js.native
-  object SAMPLE_COVERAGE extends TopLevel[SAMPLE_COVERAGE with Double]
+  /* 57 */ val SAMPLE_COVERAGE: typings.cesium.mod.WebGLConstants.SAMPLE_COVERAGE with Double = js.native
   
   @js.native
   sealed trait SAMPLE_COVERAGE_INVERT extends WebGLConstants
-  /* 110 */ @js.native
-  object SAMPLE_COVERAGE_INVERT extends TopLevel[SAMPLE_COVERAGE_INVERT with Double]
+  /* 110 */ val SAMPLE_COVERAGE_INVERT: typings.cesium.mod.WebGLConstants.SAMPLE_COVERAGE_INVERT with Double = js.native
   
   @js.native
   sealed trait SAMPLE_COVERAGE_VALUE extends WebGLConstants
-  /* 109 */ @js.native
-  object SAMPLE_COVERAGE_VALUE extends TopLevel[SAMPLE_COVERAGE_VALUE with Double]
+  /* 109 */ val SAMPLE_COVERAGE_VALUE: typings.cesium.mod.WebGLConstants.SAMPLE_COVERAGE_VALUE with Double = js.native
   
   @js.native
   sealed trait SCISSOR_BOX extends WebGLConstants
-  /* 90 */ @js.native
-  object SCISSOR_BOX extends TopLevel[SCISSOR_BOX with Double]
+  /* 90 */ val SCISSOR_BOX: typings.cesium.mod.WebGLConstants.SCISSOR_BOX with Double = js.native
   
   @js.native
   sealed trait SCISSOR_TEST extends WebGLConstants
-  /* 54 */ @js.native
-  object SCISSOR_TEST extends TopLevel[SCISSOR_TEST with Double]
+  /* 54 */ val SCISSOR_TEST: typings.cesium.mod.WebGLConstants.SCISSOR_TEST with Double = js.native
   
   @js.native
   sealed trait SEPARATE_ATTRIBS extends WebGLConstants
-  /* 411 */ @js.native
-  object SEPARATE_ATTRIBS extends TopLevel[SEPARATE_ATTRIBS with Double]
+  /* 411 */ val SEPARATE_ATTRIBS: typings.cesium.mod.WebGLConstants.SEPARATE_ATTRIBS with Double = js.native
   
   @js.native
   sealed trait SHADER_TYPE extends WebGLConstants
-  /* 141 */ @js.native
-  object SHADER_TYPE extends TopLevel[SHADER_TYPE with Double]
+  /* 141 */ val SHADER_TYPE: typings.cesium.mod.WebGLConstants.SHADER_TYPE with Double = js.native
   
   @js.native
   sealed trait SHADING_LANGUAGE_VERSION extends WebGLConstants
-  /* 148 */ @js.native
-  object SHADING_LANGUAGE_VERSION extends TopLevel[SHADING_LANGUAGE_VERSION with Double]
+  /* 148 */ val SHADING_LANGUAGE_VERSION: typings.cesium.mod.WebGLConstants.SHADING_LANGUAGE_VERSION with Double = js.native
   
   @js.native
   sealed trait SHORT extends WebGLConstants
-  /* 118 */ @js.native
-  object SHORT extends TopLevel[SHORT with Double]
+  /* 118 */ val SHORT: typings.cesium.mod.WebGLConstants.SHORT with Double = js.native
   
   @js.native
   sealed trait SIGNALED extends WebGLConstants
-  /* 550 */ @js.native
-  object SIGNALED extends TopLevel[SIGNALED with Double]
+  /* 550 */ val SIGNALED: typings.cesium.mod.WebGLConstants.SIGNALED with Double = js.native
   
   @js.native
   sealed trait SIGNED_NORMALIZED extends WebGLConstants
-  /* 508 */ @js.native
-  object SIGNED_NORMALIZED extends TopLevel[SIGNED_NORMALIZED with Double]
+  /* 508 */ val SIGNED_NORMALIZED: typings.cesium.mod.WebGLConstants.SIGNED_NORMALIZED with Double = js.native
   
   @js.native
   sealed trait SRC_ALPHA extends WebGLConstants
-  /* 14 */ @js.native
-  object SRC_ALPHA extends TopLevel[SRC_ALPHA with Double]
+  /* 14 */ val SRC_ALPHA: typings.cesium.mod.WebGLConstants.SRC_ALPHA with Double = js.native
   
   @js.native
   sealed trait SRC_ALPHA_SATURATE extends WebGLConstants
-  /* 20 */ @js.native
-  object SRC_ALPHA_SATURATE extends TopLevel[SRC_ALPHA_SATURATE with Double]
+  /* 20 */ val SRC_ALPHA_SATURATE: typings.cesium.mod.WebGLConstants.SRC_ALPHA_SATURATE with Double = js.native
   
   @js.native
   sealed trait SRC_COLOR extends WebGLConstants
-  /* 12 */ @js.native
-  object SRC_COLOR extends TopLevel[SRC_COLOR with Double]
+  /* 12 */ val SRC_COLOR: typings.cesium.mod.WebGLConstants.SRC_COLOR with Double = js.native
   
   @js.native
   sealed trait SRGB extends WebGLConstants
-  /* 382 */ @js.native
-  object SRGB extends TopLevel[SRGB with Double]
+  /* 382 */ val SRGB: typings.cesium.mod.WebGLConstants.SRGB with Double = js.native
   
   @js.native
   sealed trait SRGB8 extends WebGLConstants
-  /* 383 */ @js.native
-  object SRGB8 extends TopLevel[SRGB8 with Double]
+  /* 383 */ val SRGB8: typings.cesium.mod.WebGLConstants.SRGB8 with Double = js.native
   
   @js.native
   sealed trait SRGB8_ALPHA8 extends WebGLConstants
-  /* 384 */ @js.native
-  object SRGB8_ALPHA8 extends TopLevel[SRGB8_ALPHA8 with Double]
+  /* 384 */ val SRGB8_ALPHA8: typings.cesium.mod.WebGLConstants.SRGB8_ALPHA8 with Double = js.native
   
   @js.native
   sealed trait STATIC_COPY extends WebGLConstants
-  /* 347 */ @js.native
-  object STATIC_COPY extends TopLevel[STATIC_COPY with Double]
+  /* 347 */ val STATIC_COPY: typings.cesium.mod.WebGLConstants.STATIC_COPY with Double = js.native
   
   @js.native
   sealed trait STATIC_DRAW extends WebGLConstants
-  /* 41 */ @js.native
-  object STATIC_DRAW extends TopLevel[STATIC_DRAW with Double]
+  /* 41 */ val STATIC_DRAW: typings.cesium.mod.WebGLConstants.STATIC_DRAW with Double = js.native
   
   @js.native
   sealed trait STATIC_READ extends WebGLConstants
-  /* 346 */ @js.native
-  object STATIC_READ extends TopLevel[STATIC_READ with Double]
+  /* 346 */ val STATIC_READ: typings.cesium.mod.WebGLConstants.STATIC_READ with Double = js.native
   
   @js.native
   sealed trait STENCIL extends WebGLConstants
-  /* 317 */ @js.native
-  object STENCIL extends TopLevel[STENCIL with Double]
+  /* 317 */ val STENCIL: typings.cesium.mod.WebGLConstants.STENCIL with Double = js.native
   
   @js.native
   sealed trait STENCIL_ATTACHMENT extends WebGLConstants
-  /* 280 */ @js.native
-  object STENCIL_ATTACHMENT extends TopLevel[STENCIL_ATTACHMENT with Double]
+  /* 280 */ val STENCIL_ATTACHMENT: typings.cesium.mod.WebGLConstants.STENCIL_ATTACHMENT with Double = js.native
   
   @js.native
   sealed trait STENCIL_BACK_FAIL extends WebGLConstants
-  /* 83 */ @js.native
-  object STENCIL_BACK_FAIL extends TopLevel[STENCIL_BACK_FAIL with Double]
+  /* 83 */ val STENCIL_BACK_FAIL: typings.cesium.mod.WebGLConstants.STENCIL_BACK_FAIL with Double = js.native
   
   @js.native
   sealed trait STENCIL_BACK_FUNC extends WebGLConstants
-  /* 82 */ @js.native
-  object STENCIL_BACK_FUNC extends TopLevel[STENCIL_BACK_FUNC with Double]
+  /* 82 */ val STENCIL_BACK_FUNC: typings.cesium.mod.WebGLConstants.STENCIL_BACK_FUNC with Double = js.native
   
   @js.native
   sealed trait STENCIL_BACK_PASS_DEPTH_FAIL extends WebGLConstants
-  /* 84 */ @js.native
-  object STENCIL_BACK_PASS_DEPTH_FAIL extends TopLevel[STENCIL_BACK_PASS_DEPTH_FAIL with Double]
+  /* 84 */ val STENCIL_BACK_PASS_DEPTH_FAIL: typings.cesium.mod.WebGLConstants.STENCIL_BACK_PASS_DEPTH_FAIL with Double = js.native
   
   @js.native
   sealed trait STENCIL_BACK_PASS_DEPTH_PASS extends WebGLConstants
-  /* 85 */ @js.native
-  object STENCIL_BACK_PASS_DEPTH_PASS extends TopLevel[STENCIL_BACK_PASS_DEPTH_PASS with Double]
+  /* 85 */ val STENCIL_BACK_PASS_DEPTH_PASS: typings.cesium.mod.WebGLConstants.STENCIL_BACK_PASS_DEPTH_PASS with Double = js.native
   
   @js.native
   sealed trait STENCIL_BACK_REF extends WebGLConstants
-  /* 86 */ @js.native
-  object STENCIL_BACK_REF extends TopLevel[STENCIL_BACK_REF with Double]
+  /* 86 */ val STENCIL_BACK_REF: typings.cesium.mod.WebGLConstants.STENCIL_BACK_REF with Double = js.native
   
   @js.native
   sealed trait STENCIL_BACK_VALUE_MASK extends WebGLConstants
-  /* 87 */ @js.native
-  object STENCIL_BACK_VALUE_MASK extends TopLevel[STENCIL_BACK_VALUE_MASK with Double]
+  /* 87 */ val STENCIL_BACK_VALUE_MASK: typings.cesium.mod.WebGLConstants.STENCIL_BACK_VALUE_MASK with Double = js.native
   
   @js.native
   sealed trait STENCIL_BACK_WRITEMASK extends WebGLConstants
-  /* 88 */ @js.native
-  object STENCIL_BACK_WRITEMASK extends TopLevel[STENCIL_BACK_WRITEMASK with Double]
+  /* 88 */ val STENCIL_BACK_WRITEMASK: typings.cesium.mod.WebGLConstants.STENCIL_BACK_WRITEMASK with Double = js.native
   
   @js.native
   sealed trait STENCIL_BITS extends WebGLConstants
-  /* 103 */ @js.native
-  object STENCIL_BITS extends TopLevel[STENCIL_BITS with Double]
+  /* 103 */ val STENCIL_BITS: typings.cesium.mod.WebGLConstants.STENCIL_BITS with Double = js.native
   
   @js.native
   sealed trait STENCIL_BUFFER_BIT extends WebGLConstants
-  /* 1 */ @js.native
-  object STENCIL_BUFFER_BIT extends TopLevel[STENCIL_BUFFER_BIT with Double]
+  /* 1 */ val STENCIL_BUFFER_BIT: typings.cesium.mod.WebGLConstants.STENCIL_BUFFER_BIT with Double = js.native
   
   @js.native
   sealed trait STENCIL_CLEAR_VALUE extends WebGLConstants
-  /* 74 */ @js.native
-  object STENCIL_CLEAR_VALUE extends TopLevel[STENCIL_CLEAR_VALUE with Double]
+  /* 74 */ val STENCIL_CLEAR_VALUE: typings.cesium.mod.WebGLConstants.STENCIL_CLEAR_VALUE with Double = js.native
   
   @js.native
   sealed trait STENCIL_FAIL extends WebGLConstants
-  /* 76 */ @js.native
-  object STENCIL_FAIL extends TopLevel[STENCIL_FAIL with Double]
+  /* 76 */ val STENCIL_FAIL: typings.cesium.mod.WebGLConstants.STENCIL_FAIL with Double = js.native
   
   @js.native
   sealed trait STENCIL_FUNC extends WebGLConstants
-  /* 75 */ @js.native
-  object STENCIL_FUNC extends TopLevel[STENCIL_FUNC with Double]
+  /* 75 */ val STENCIL_FUNC: typings.cesium.mod.WebGLConstants.STENCIL_FUNC with Double = js.native
   
   @js.native
   sealed trait STENCIL_INDEX extends WebGLConstants
-  /* 262 */ @js.native
-  object STENCIL_INDEX extends TopLevel[STENCIL_INDEX with Double]
+  /* 262 */ val STENCIL_INDEX: typings.cesium.mod.WebGLConstants.STENCIL_INDEX with Double = js.native
   
   @js.native
   sealed trait STENCIL_INDEX8 extends WebGLConstants
-  /* 263 */ @js.native
-  object STENCIL_INDEX8 extends TopLevel[STENCIL_INDEX8 with Double]
+  /* 263 */ val STENCIL_INDEX8: typings.cesium.mod.WebGLConstants.STENCIL_INDEX8 with Double = js.native
   
   @js.native
   sealed trait STENCIL_PASS_DEPTH_FAIL extends WebGLConstants
-  /* 77 */ @js.native
-  object STENCIL_PASS_DEPTH_FAIL extends TopLevel[STENCIL_PASS_DEPTH_FAIL with Double]
+  /* 77 */ val STENCIL_PASS_DEPTH_FAIL: typings.cesium.mod.WebGLConstants.STENCIL_PASS_DEPTH_FAIL with Double = js.native
   
   @js.native
   sealed trait STENCIL_PASS_DEPTH_PASS extends WebGLConstants
-  /* 78 */ @js.native
-  object STENCIL_PASS_DEPTH_PASS extends TopLevel[STENCIL_PASS_DEPTH_PASS with Double]
+  /* 78 */ val STENCIL_PASS_DEPTH_PASS: typings.cesium.mod.WebGLConstants.STENCIL_PASS_DEPTH_PASS with Double = js.native
   
   @js.native
   sealed trait STENCIL_REF extends WebGLConstants
-  /* 79 */ @js.native
-  object STENCIL_REF extends TopLevel[STENCIL_REF with Double]
+  /* 79 */ val STENCIL_REF: typings.cesium.mod.WebGLConstants.STENCIL_REF with Double = js.native
   
   @js.native
   sealed trait STENCIL_TEST extends WebGLConstants
-  /* 52 */ @js.native
-  object STENCIL_TEST extends TopLevel[STENCIL_TEST with Double]
+  /* 52 */ val STENCIL_TEST: typings.cesium.mod.WebGLConstants.STENCIL_TEST with Double = js.native
   
   @js.native
   sealed trait STENCIL_VALUE_MASK extends WebGLConstants
-  /* 80 */ @js.native
-  object STENCIL_VALUE_MASK extends TopLevel[STENCIL_VALUE_MASK with Double]
+  /* 80 */ val STENCIL_VALUE_MASK: typings.cesium.mod.WebGLConstants.STENCIL_VALUE_MASK with Double = js.native
   
   @js.native
   sealed trait STENCIL_WRITEMASK extends WebGLConstants
-  /* 81 */ @js.native
-  object STENCIL_WRITEMASK extends TopLevel[STENCIL_WRITEMASK with Double]
+  /* 81 */ val STENCIL_WRITEMASK: typings.cesium.mod.WebGLConstants.STENCIL_WRITEMASK with Double = js.native
   
   @js.native
   sealed trait STREAM_COPY extends WebGLConstants
-  /* 345 */ @js.native
-  object STREAM_COPY extends TopLevel[STREAM_COPY with Double]
+  /* 345 */ val STREAM_COPY: typings.cesium.mod.WebGLConstants.STREAM_COPY with Double = js.native
   
   @js.native
   sealed trait STREAM_DRAW extends WebGLConstants
-  /* 40 */ @js.native
-  object STREAM_DRAW extends TopLevel[STREAM_DRAW with Double]
+  /* 40 */ val STREAM_DRAW: typings.cesium.mod.WebGLConstants.STREAM_DRAW with Double = js.native
   
   @js.native
   sealed trait STREAM_READ extends WebGLConstants
-  /* 344 */ @js.native
-  object STREAM_READ extends TopLevel[STREAM_READ with Double]
+  /* 344 */ val STREAM_READ: typings.cesium.mod.WebGLConstants.STREAM_READ with Double = js.native
   
   @js.native
   sealed trait SUBPIXEL_BITS extends WebGLConstants
-  /* 97 */ @js.native
-  object SUBPIXEL_BITS extends TopLevel[SUBPIXEL_BITS with Double]
+  /* 97 */ val SUBPIXEL_BITS: typings.cesium.mod.WebGLConstants.SUBPIXEL_BITS with Double = js.native
   
   @js.native
   sealed trait SYNC_CONDITION extends WebGLConstants
-  /* 544 */ @js.native
-  object SYNC_CONDITION extends TopLevel[SYNC_CONDITION with Double]
+  /* 544 */ val SYNC_CONDITION: typings.cesium.mod.WebGLConstants.SYNC_CONDITION with Double = js.native
   
   @js.native
   sealed trait SYNC_FENCE extends WebGLConstants
-  /* 547 */ @js.native
-  object SYNC_FENCE extends TopLevel[SYNC_FENCE with Double]
+  /* 547 */ val SYNC_FENCE: typings.cesium.mod.WebGLConstants.SYNC_FENCE with Double = js.native
   
   @js.native
   sealed trait SYNC_FLAGS extends WebGLConstants
-  /* 546 */ @js.native
-  object SYNC_FLAGS extends TopLevel[SYNC_FLAGS with Double]
+  /* 546 */ val SYNC_FLAGS: typings.cesium.mod.WebGLConstants.SYNC_FLAGS with Double = js.native
   
   @js.native
   sealed trait SYNC_FLUSH_COMMANDS_BIT extends WebGLConstants
-  /* 555 */ @js.native
-  object SYNC_FLUSH_COMMANDS_BIT extends TopLevel[SYNC_FLUSH_COMMANDS_BIT with Double]
+  /* 555 */ val SYNC_FLUSH_COMMANDS_BIT: typings.cesium.mod.WebGLConstants.SYNC_FLUSH_COMMANDS_BIT with Double = js.native
   
   @js.native
   sealed trait SYNC_GPU_COMMANDS_COMPLETE extends WebGLConstants
-  /* 548 */ @js.native
-  object SYNC_GPU_COMMANDS_COMPLETE extends TopLevel[SYNC_GPU_COMMANDS_COMPLETE with Double]
+  /* 548 */ val SYNC_GPU_COMMANDS_COMPLETE: typings.cesium.mod.WebGLConstants.SYNC_GPU_COMMANDS_COMPLETE with Double = js.native
   
   @js.native
   sealed trait SYNC_STATUS extends WebGLConstants
-  /* 545 */ @js.native
-  object SYNC_STATUS extends TopLevel[SYNC_STATUS with Double]
+  /* 545 */ val SYNC_STATUS: typings.cesium.mod.WebGLConstants.SYNC_STATUS with Double = js.native
   
   @js.native
   sealed trait TEXTURE extends WebGLConstants
-  /* 179 */ @js.native
-  object TEXTURE extends TopLevel[TEXTURE with Double]
+  /* 179 */ val TEXTURE: typings.cesium.mod.WebGLConstants.TEXTURE with Double = js.native
   
   @js.native
   sealed trait TEXTURE0 extends WebGLConstants
-  /* 189 */ @js.native
-  object TEXTURE0 extends TopLevel[TEXTURE0 with Double]
+  /* 189 */ val TEXTURE0: typings.cesium.mod.WebGLConstants.TEXTURE0 with Double = js.native
   
   @js.native
   sealed trait TEXTURE1 extends WebGLConstants
-  /* 190 */ @js.native
-  object TEXTURE1 extends TopLevel[TEXTURE1 with Double]
+  /* 190 */ val TEXTURE1: typings.cesium.mod.WebGLConstants.TEXTURE1 with Double = js.native
   
   @js.native
   sealed trait TEXTURE10 extends WebGLConstants
-  /* 199 */ @js.native
-  object TEXTURE10 extends TopLevel[TEXTURE10 with Double]
+  /* 199 */ val TEXTURE10: typings.cesium.mod.WebGLConstants.TEXTURE10 with Double = js.native
   
   @js.native
   sealed trait TEXTURE11 extends WebGLConstants
-  /* 200 */ @js.native
-  object TEXTURE11 extends TopLevel[TEXTURE11 with Double]
+  /* 200 */ val TEXTURE11: typings.cesium.mod.WebGLConstants.TEXTURE11 with Double = js.native
   
   @js.native
   sealed trait TEXTURE12 extends WebGLConstants
-  /* 201 */ @js.native
-  object TEXTURE12 extends TopLevel[TEXTURE12 with Double]
+  /* 201 */ val TEXTURE12: typings.cesium.mod.WebGLConstants.TEXTURE12 with Double = js.native
   
   @js.native
   sealed trait TEXTURE13 extends WebGLConstants
-  /* 202 */ @js.native
-  object TEXTURE13 extends TopLevel[TEXTURE13 with Double]
+  /* 202 */ val TEXTURE13: typings.cesium.mod.WebGLConstants.TEXTURE13 with Double = js.native
   
   @js.native
   sealed trait TEXTURE14 extends WebGLConstants
-  /* 203 */ @js.native
-  object TEXTURE14 extends TopLevel[TEXTURE14 with Double]
+  /* 203 */ val TEXTURE14: typings.cesium.mod.WebGLConstants.TEXTURE14 with Double = js.native
   
   @js.native
   sealed trait TEXTURE15 extends WebGLConstants
-  /* 204 */ @js.native
-  object TEXTURE15 extends TopLevel[TEXTURE15 with Double]
+  /* 204 */ val TEXTURE15: typings.cesium.mod.WebGLConstants.TEXTURE15 with Double = js.native
   
   @js.native
   sealed trait TEXTURE16 extends WebGLConstants
-  /* 205 */ @js.native
-  object TEXTURE16 extends TopLevel[TEXTURE16 with Double]
+  /* 205 */ val TEXTURE16: typings.cesium.mod.WebGLConstants.TEXTURE16 with Double = js.native
   
   @js.native
   sealed trait TEXTURE17 extends WebGLConstants
-  /* 206 */ @js.native
-  object TEXTURE17 extends TopLevel[TEXTURE17 with Double]
+  /* 206 */ val TEXTURE17: typings.cesium.mod.WebGLConstants.TEXTURE17 with Double = js.native
   
   @js.native
   sealed trait TEXTURE18 extends WebGLConstants
-  /* 207 */ @js.native
-  object TEXTURE18 extends TopLevel[TEXTURE18 with Double]
+  /* 207 */ val TEXTURE18: typings.cesium.mod.WebGLConstants.TEXTURE18 with Double = js.native
   
   @js.native
   sealed trait TEXTURE19 extends WebGLConstants
-  /* 208 */ @js.native
-  object TEXTURE19 extends TopLevel[TEXTURE19 with Double]
+  /* 208 */ val TEXTURE19: typings.cesium.mod.WebGLConstants.TEXTURE19 with Double = js.native
   
   @js.native
   sealed trait TEXTURE2 extends WebGLConstants
-  /* 191 */ @js.native
-  object TEXTURE2 extends TopLevel[TEXTURE2 with Double]
+  /* 191 */ val TEXTURE2: typings.cesium.mod.WebGLConstants.TEXTURE2 with Double = js.native
   
   @js.native
   sealed trait TEXTURE20 extends WebGLConstants
-  /* 209 */ @js.native
-  object TEXTURE20 extends TopLevel[TEXTURE20 with Double]
+  /* 209 */ val TEXTURE20: typings.cesium.mod.WebGLConstants.TEXTURE20 with Double = js.native
   
   @js.native
   sealed trait TEXTURE21 extends WebGLConstants
-  /* 210 */ @js.native
-  object TEXTURE21 extends TopLevel[TEXTURE21 with Double]
+  /* 210 */ val TEXTURE21: typings.cesium.mod.WebGLConstants.TEXTURE21 with Double = js.native
   
   @js.native
   sealed trait TEXTURE22 extends WebGLConstants
-  /* 211 */ @js.native
-  object TEXTURE22 extends TopLevel[TEXTURE22 with Double]
+  /* 211 */ val TEXTURE22: typings.cesium.mod.WebGLConstants.TEXTURE22 with Double = js.native
   
   @js.native
   sealed trait TEXTURE23 extends WebGLConstants
-  /* 212 */ @js.native
-  object TEXTURE23 extends TopLevel[TEXTURE23 with Double]
+  /* 212 */ val TEXTURE23: typings.cesium.mod.WebGLConstants.TEXTURE23 with Double = js.native
   
   @js.native
   sealed trait TEXTURE24 extends WebGLConstants
-  /* 213 */ @js.native
-  object TEXTURE24 extends TopLevel[TEXTURE24 with Double]
+  /* 213 */ val TEXTURE24: typings.cesium.mod.WebGLConstants.TEXTURE24 with Double = js.native
   
   @js.native
   sealed trait TEXTURE25 extends WebGLConstants
-  /* 214 */ @js.native
-  object TEXTURE25 extends TopLevel[TEXTURE25 with Double]
+  /* 214 */ val TEXTURE25: typings.cesium.mod.WebGLConstants.TEXTURE25 with Double = js.native
   
   @js.native
   sealed trait TEXTURE26 extends WebGLConstants
-  /* 215 */ @js.native
-  object TEXTURE26 extends TopLevel[TEXTURE26 with Double]
+  /* 215 */ val TEXTURE26: typings.cesium.mod.WebGLConstants.TEXTURE26 with Double = js.native
   
   @js.native
   sealed trait TEXTURE27 extends WebGLConstants
-  /* 216 */ @js.native
-  object TEXTURE27 extends TopLevel[TEXTURE27 with Double]
+  /* 216 */ val TEXTURE27: typings.cesium.mod.WebGLConstants.TEXTURE27 with Double = js.native
   
   @js.native
   sealed trait TEXTURE28 extends WebGLConstants
-  /* 217 */ @js.native
-  object TEXTURE28 extends TopLevel[TEXTURE28 with Double]
+  /* 217 */ val TEXTURE28: typings.cesium.mod.WebGLConstants.TEXTURE28 with Double = js.native
   
   @js.native
   sealed trait TEXTURE29 extends WebGLConstants
-  /* 218 */ @js.native
-  object TEXTURE29 extends TopLevel[TEXTURE29 with Double]
+  /* 218 */ val TEXTURE29: typings.cesium.mod.WebGLConstants.TEXTURE29 with Double = js.native
   
   @js.native
   sealed trait TEXTURE3 extends WebGLConstants
-  /* 192 */ @js.native
-  object TEXTURE3 extends TopLevel[TEXTURE3 with Double]
+  /* 192 */ val TEXTURE3: typings.cesium.mod.WebGLConstants.TEXTURE3 with Double = js.native
   
   @js.native
   sealed trait TEXTURE30 extends WebGLConstants
-  /* 219 */ @js.native
-  object TEXTURE30 extends TopLevel[TEXTURE30 with Double]
+  /* 219 */ val TEXTURE30: typings.cesium.mod.WebGLConstants.TEXTURE30 with Double = js.native
   
   @js.native
   sealed trait TEXTURE31 extends WebGLConstants
-  /* 220 */ @js.native
-  object TEXTURE31 extends TopLevel[TEXTURE31 with Double]
+  /* 220 */ val TEXTURE31: typings.cesium.mod.WebGLConstants.TEXTURE31 with Double = js.native
   
   @js.native
   sealed trait TEXTURE4 extends WebGLConstants
-  /* 193 */ @js.native
-  object TEXTURE4 extends TopLevel[TEXTURE4 with Double]
+  /* 193 */ val TEXTURE4: typings.cesium.mod.WebGLConstants.TEXTURE4 with Double = js.native
   
   @js.native
   sealed trait TEXTURE5 extends WebGLConstants
-  /* 194 */ @js.native
-  object TEXTURE5 extends TopLevel[TEXTURE5 with Double]
+  /* 194 */ val TEXTURE5: typings.cesium.mod.WebGLConstants.TEXTURE5 with Double = js.native
   
   @js.native
   sealed trait TEXTURE6 extends WebGLConstants
-  /* 195 */ @js.native
-  object TEXTURE6 extends TopLevel[TEXTURE6 with Double]
+  /* 195 */ val TEXTURE6: typings.cesium.mod.WebGLConstants.TEXTURE6 with Double = js.native
   
   @js.native
   sealed trait TEXTURE7 extends WebGLConstants
-  /* 196 */ @js.native
-  object TEXTURE7 extends TopLevel[TEXTURE7 with Double]
+  /* 196 */ val TEXTURE7: typings.cesium.mod.WebGLConstants.TEXTURE7 with Double = js.native
   
   @js.native
   sealed trait TEXTURE8 extends WebGLConstants
-  /* 197 */ @js.native
-  object TEXTURE8 extends TopLevel[TEXTURE8 with Double]
+  /* 197 */ val TEXTURE8: typings.cesium.mod.WebGLConstants.TEXTURE8 with Double = js.native
   
   @js.native
   sealed trait TEXTURE9 extends WebGLConstants
-  /* 198 */ @js.native
-  object TEXTURE9 extends TopLevel[TEXTURE9 with Double]
+  /* 198 */ val TEXTURE9: typings.cesium.mod.WebGLConstants.TEXTURE9 with Double = js.native
   
   @js.native
   sealed trait TEXTURE_2D extends WebGLConstants
-  /* 178 */ @js.native
-  object TEXTURE_2D extends TopLevel[TEXTURE_2D with Double]
+  /* 178 */ val TEXTURE_2D: typings.cesium.mod.WebGLConstants.TEXTURE_2D with Double = js.native
   
   @js.native
   sealed trait TEXTURE_2D_ARRAY extends WebGLConstants
-  /* 395 */ @js.native
-  object TEXTURE_2D_ARRAY extends TopLevel[TEXTURE_2D_ARRAY with Double]
+  /* 395 */ val TEXTURE_2D_ARRAY: typings.cesium.mod.WebGLConstants.TEXTURE_2D_ARRAY with Double = js.native
   
   @js.native
   sealed trait TEXTURE_3D extends WebGLConstants
-  /* 325 */ @js.native
-  object TEXTURE_3D extends TopLevel[TEXTURE_3D with Double]
+  /* 325 */ val TEXTURE_3D: typings.cesium.mod.WebGLConstants.TEXTURE_3D with Double = js.native
   
   @js.native
   sealed trait TEXTURE_BASE_LEVEL extends WebGLConstants
-  /* 333 */ @js.native
-  object TEXTURE_BASE_LEVEL extends TopLevel[TEXTURE_BASE_LEVEL with Double]
+  /* 333 */ val TEXTURE_BASE_LEVEL: typings.cesium.mod.WebGLConstants.TEXTURE_BASE_LEVEL with Double = js.native
   
   @js.native
   sealed trait TEXTURE_BINDING_2D extends WebGLConstants
-  /* 106 */ @js.native
-  object TEXTURE_BINDING_2D extends TopLevel[TEXTURE_BINDING_2D with Double]
+  /* 106 */ val TEXTURE_BINDING_2D: typings.cesium.mod.WebGLConstants.TEXTURE_BINDING_2D with Double = js.native
   
   @js.native
   sealed trait TEXTURE_BINDING_2D_ARRAY extends WebGLConstants
-  /* 396 */ @js.native
-  object TEXTURE_BINDING_2D_ARRAY extends TopLevel[TEXTURE_BINDING_2D_ARRAY with Double]
+  /* 396 */ val TEXTURE_BINDING_2D_ARRAY: typings.cesium.mod.WebGLConstants.TEXTURE_BINDING_2D_ARRAY with Double = js.native
   
   @js.native
   sealed trait TEXTURE_BINDING_3D extends WebGLConstants
-  /* 322 */ @js.native
-  object TEXTURE_BINDING_3D extends TopLevel[TEXTURE_BINDING_3D with Double]
+  /* 322 */ val TEXTURE_BINDING_3D: typings.cesium.mod.WebGLConstants.TEXTURE_BINDING_3D with Double = js.native
   
   @js.native
   sealed trait TEXTURE_BINDING_CUBE_MAP extends WebGLConstants
-  /* 181 */ @js.native
-  object TEXTURE_BINDING_CUBE_MAP extends TopLevel[TEXTURE_BINDING_CUBE_MAP with Double]
+  /* 181 */ val TEXTURE_BINDING_CUBE_MAP: typings.cesium.mod.WebGLConstants.TEXTURE_BINDING_CUBE_MAP with Double = js.native
   
   @js.native
   sealed trait TEXTURE_COMPARE_FUNC extends WebGLConstants
-  /* 340 */ @js.native
-  object TEXTURE_COMPARE_FUNC extends TopLevel[TEXTURE_COMPARE_FUNC with Double]
+  /* 340 */ val TEXTURE_COMPARE_FUNC: typings.cesium.mod.WebGLConstants.TEXTURE_COMPARE_FUNC with Double = js.native
   
   @js.native
   sealed trait TEXTURE_COMPARE_MODE extends WebGLConstants
-  /* 339 */ @js.native
-  object TEXTURE_COMPARE_MODE extends TopLevel[TEXTURE_COMPARE_MODE with Double]
+  /* 339 */ val TEXTURE_COMPARE_MODE: typings.cesium.mod.WebGLConstants.TEXTURE_COMPARE_MODE with Double = js.native
   
   @js.native
   sealed trait TEXTURE_CUBE_MAP extends WebGLConstants
-  /* 180 */ @js.native
-  object TEXTURE_CUBE_MAP extends TopLevel[TEXTURE_CUBE_MAP with Double]
+  /* 180 */ val TEXTURE_CUBE_MAP: typings.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP with Double = js.native
   
   @js.native
   sealed trait TEXTURE_CUBE_MAP_NEGATIVE_X extends WebGLConstants
-  /* 183 */ @js.native
-  object TEXTURE_CUBE_MAP_NEGATIVE_X extends TopLevel[TEXTURE_CUBE_MAP_NEGATIVE_X with Double]
+  /* 183 */ val TEXTURE_CUBE_MAP_NEGATIVE_X: typings.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_NEGATIVE_X with Double = js.native
   
   @js.native
   sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Y extends WebGLConstants
-  /* 185 */ @js.native
-  object TEXTURE_CUBE_MAP_NEGATIVE_Y extends TopLevel[TEXTURE_CUBE_MAP_NEGATIVE_Y with Double]
+  /* 185 */ val TEXTURE_CUBE_MAP_NEGATIVE_Y: typings.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_NEGATIVE_Y with Double = js.native
   
   @js.native
   sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Z extends WebGLConstants
-  /* 187 */ @js.native
-  object TEXTURE_CUBE_MAP_NEGATIVE_Z extends TopLevel[TEXTURE_CUBE_MAP_NEGATIVE_Z with Double]
+  /* 187 */ val TEXTURE_CUBE_MAP_NEGATIVE_Z: typings.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_NEGATIVE_Z with Double = js.native
   
   @js.native
   sealed trait TEXTURE_CUBE_MAP_POSITIVE_X extends WebGLConstants
-  /* 182 */ @js.native
-  object TEXTURE_CUBE_MAP_POSITIVE_X extends TopLevel[TEXTURE_CUBE_MAP_POSITIVE_X with Double]
+  /* 182 */ val TEXTURE_CUBE_MAP_POSITIVE_X: typings.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_POSITIVE_X with Double = js.native
   
   @js.native
   sealed trait TEXTURE_CUBE_MAP_POSITIVE_Y extends WebGLConstants
-  /* 184 */ @js.native
-  object TEXTURE_CUBE_MAP_POSITIVE_Y extends TopLevel[TEXTURE_CUBE_MAP_POSITIVE_Y with Double]
+  /* 184 */ val TEXTURE_CUBE_MAP_POSITIVE_Y: typings.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_POSITIVE_Y with Double = js.native
   
   @js.native
   sealed trait TEXTURE_CUBE_MAP_POSITIVE_Z extends WebGLConstants
-  /* 186 */ @js.native
-  object TEXTURE_CUBE_MAP_POSITIVE_Z extends TopLevel[TEXTURE_CUBE_MAP_POSITIVE_Z with Double]
+  /* 186 */ val TEXTURE_CUBE_MAP_POSITIVE_Z: typings.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_POSITIVE_Z with Double = js.native
   
   @js.native
   sealed trait TEXTURE_IMMUTABLE_FORMAT extends WebGLConstants
-  /* 576 */ @js.native
-  object TEXTURE_IMMUTABLE_FORMAT extends TopLevel[TEXTURE_IMMUTABLE_FORMAT with Double]
+  /* 576 */ val TEXTURE_IMMUTABLE_FORMAT: typings.cesium.mod.WebGLConstants.TEXTURE_IMMUTABLE_FORMAT with Double = js.native
   
   @js.native
   sealed trait TEXTURE_IMMUTABLE_LEVELS extends WebGLConstants
-  /* 578 */ @js.native
-  object TEXTURE_IMMUTABLE_LEVELS extends TopLevel[TEXTURE_IMMUTABLE_LEVELS with Double]
+  /* 578 */ val TEXTURE_IMMUTABLE_LEVELS: typings.cesium.mod.WebGLConstants.TEXTURE_IMMUTABLE_LEVELS with Double = js.native
   
   @js.native
   sealed trait TEXTURE_MAG_FILTER extends WebGLConstants
-  /* 174 */ @js.native
-  object TEXTURE_MAG_FILTER extends TopLevel[TEXTURE_MAG_FILTER with Double]
+  /* 174 */ val TEXTURE_MAG_FILTER: typings.cesium.mod.WebGLConstants.TEXTURE_MAG_FILTER with Double = js.native
   
   @js.native
   sealed trait TEXTURE_MAX_LEVEL extends WebGLConstants
-  /* 334 */ @js.native
-  object TEXTURE_MAX_LEVEL extends TopLevel[TEXTURE_MAX_LEVEL with Double]
+  /* 334 */ val TEXTURE_MAX_LEVEL: typings.cesium.mod.WebGLConstants.TEXTURE_MAX_LEVEL with Double = js.native
   
   @js.native
   sealed trait TEXTURE_MAX_LOD extends WebGLConstants
-  /* 332 */ @js.native
-  object TEXTURE_MAX_LOD extends TopLevel[TEXTURE_MAX_LOD with Double]
+  /* 332 */ val TEXTURE_MAX_LOD: typings.cesium.mod.WebGLConstants.TEXTURE_MAX_LOD with Double = js.native
   
   @js.native
   sealed trait TEXTURE_MIN_FILTER extends WebGLConstants
-  /* 175 */ @js.native
-  object TEXTURE_MIN_FILTER extends TopLevel[TEXTURE_MIN_FILTER with Double]
+  /* 175 */ val TEXTURE_MIN_FILTER: typings.cesium.mod.WebGLConstants.TEXTURE_MIN_FILTER with Double = js.native
   
   @js.native
   sealed trait TEXTURE_MIN_LOD extends WebGLConstants
-  /* 331 */ @js.native
-  object TEXTURE_MIN_LOD extends TopLevel[TEXTURE_MIN_LOD with Double]
+  /* 331 */ val TEXTURE_MIN_LOD: typings.cesium.mod.WebGLConstants.TEXTURE_MIN_LOD with Double = js.native
   
   @js.native
   sealed trait TEXTURE_WRAP_R extends WebGLConstants
-  /* 326 */ @js.native
-  object TEXTURE_WRAP_R extends TopLevel[TEXTURE_WRAP_R with Double]
+  /* 326 */ val TEXTURE_WRAP_R: typings.cesium.mod.WebGLConstants.TEXTURE_WRAP_R with Double = js.native
   
   @js.native
   sealed trait TEXTURE_WRAP_S extends WebGLConstants
-  /* 176 */ @js.native
-  object TEXTURE_WRAP_S extends TopLevel[TEXTURE_WRAP_S with Double]
+  /* 176 */ val TEXTURE_WRAP_S: typings.cesium.mod.WebGLConstants.TEXTURE_WRAP_S with Double = js.native
   
   @js.native
   sealed trait TEXTURE_WRAP_T extends WebGLConstants
-  /* 177 */ @js.native
-  object TEXTURE_WRAP_T extends TopLevel[TEXTURE_WRAP_T with Double]
+  /* 177 */ val TEXTURE_WRAP_T: typings.cesium.mod.WebGLConstants.TEXTURE_WRAP_T with Double = js.native
   
   @js.native
   sealed trait TIMEOUT_EXPIRED extends WebGLConstants
-  /* 552 */ @js.native
-  object TIMEOUT_EXPIRED extends TopLevel[TIMEOUT_EXPIRED with Double]
+  /* 552 */ val TIMEOUT_EXPIRED: typings.cesium.mod.WebGLConstants.TIMEOUT_EXPIRED with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK extends WebGLConstants
-  /* 562 */ @js.native
-  object TRANSFORM_FEEDBACK extends TopLevel[TRANSFORM_FEEDBACK with Double]
+  /* 562 */ val TRANSFORM_FEEDBACK: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_ACTIVE extends WebGLConstants
-  /* 564 */ @js.native
-  object TRANSFORM_FEEDBACK_ACTIVE extends TopLevel[TRANSFORM_FEEDBACK_ACTIVE with Double]
+  /* 564 */ val TRANSFORM_FEEDBACK_ACTIVE: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_ACTIVE with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_BINDING extends WebGLConstants
-  /* 565 */ @js.native
-  object TRANSFORM_FEEDBACK_BINDING extends TopLevel[TRANSFORM_FEEDBACK_BINDING with Double]
+  /* 565 */ val TRANSFORM_FEEDBACK_BINDING: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BINDING with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_BUFFER extends WebGLConstants
-  /* 412 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER extends TopLevel[TRANSFORM_FEEDBACK_BUFFER with Double]
+  /* 412 */ val TRANSFORM_FEEDBACK_BUFFER: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_BUFFER_BINDING extends WebGLConstants
-  /* 413 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER_BINDING extends TopLevel[TRANSFORM_FEEDBACK_BUFFER_BINDING with Double]
+  /* 413 */ val TRANSFORM_FEEDBACK_BUFFER_BINDING: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_BUFFER_MODE extends WebGLConstants
-  /* 401 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER_MODE extends TopLevel[TRANSFORM_FEEDBACK_BUFFER_MODE with Double]
+  /* 401 */ val TRANSFORM_FEEDBACK_BUFFER_MODE: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER_MODE with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_BUFFER_SIZE extends WebGLConstants
-  /* 405 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER_SIZE extends TopLevel[TRANSFORM_FEEDBACK_BUFFER_SIZE with Double]
+  /* 405 */ val TRANSFORM_FEEDBACK_BUFFER_SIZE: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER_SIZE with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_BUFFER_START extends WebGLConstants
-  /* 404 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER_START extends TopLevel[TRANSFORM_FEEDBACK_BUFFER_START with Double]
+  /* 404 */ val TRANSFORM_FEEDBACK_BUFFER_START: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER_START with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_PAUSED extends WebGLConstants
-  /* 563 */ @js.native
-  object TRANSFORM_FEEDBACK_PAUSED extends TopLevel[TRANSFORM_FEEDBACK_PAUSED with Double]
+  /* 563 */ val TRANSFORM_FEEDBACK_PAUSED: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_PAUSED with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN extends WebGLConstants
-  /* 406 */ @js.native
-  object TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN extends TopLevel[TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN with Double]
+  /* 406 */ val TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN with Double = js.native
   
   @js.native
   sealed trait TRANSFORM_FEEDBACK_VARYINGS extends WebGLConstants
-  /* 403 */ @js.native
-  object TRANSFORM_FEEDBACK_VARYINGS extends TopLevel[TRANSFORM_FEEDBACK_VARYINGS with Double]
+  /* 403 */ val TRANSFORM_FEEDBACK_VARYINGS: typings.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_VARYINGS with Double = js.native
   
   @js.native
   sealed trait TRIANGLES extends WebGLConstants
-  /* 7 */ @js.native
-  object TRIANGLES extends TopLevel[TRIANGLES with Double]
+  /* 7 */ val TRIANGLES: typings.cesium.mod.WebGLConstants.TRIANGLES with Double = js.native
   
   @js.native
   sealed trait TRIANGLE_FAN extends WebGLConstants
-  /* 9 */ @js.native
-  object TRIANGLE_FAN extends TopLevel[TRIANGLE_FAN with Double]
+  /* 9 */ val TRIANGLE_FAN: typings.cesium.mod.WebGLConstants.TRIANGLE_FAN with Double = js.native
   
   @js.native
   sealed trait TRIANGLE_STRIP extends WebGLConstants
-  /* 8 */ @js.native
-  object TRIANGLE_STRIP extends TopLevel[TRIANGLE_STRIP with Double]
+  /* 8 */ val TRIANGLE_STRIP: typings.cesium.mod.WebGLConstants.TRIANGLE_STRIP with Double = js.native
   
   @js.native
   sealed trait UNIFORM_ARRAY_STRIDE extends WebGLConstants
-  /* 530 */ @js.native
-  object UNIFORM_ARRAY_STRIDE extends TopLevel[UNIFORM_ARRAY_STRIDE with Double]
+  /* 530 */ val UNIFORM_ARRAY_STRIDE: typings.cesium.mod.WebGLConstants.UNIFORM_ARRAY_STRIDE with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BLOCK_ACTIVE_UNIFORMS extends WebGLConstants
-  /* 535 */ @js.native
-  object UNIFORM_BLOCK_ACTIVE_UNIFORMS extends TopLevel[UNIFORM_BLOCK_ACTIVE_UNIFORMS with Double]
+  /* 535 */ val UNIFORM_BLOCK_ACTIVE_UNIFORMS: typings.cesium.mod.WebGLConstants.UNIFORM_BLOCK_ACTIVE_UNIFORMS with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES extends WebGLConstants
-  /* 536 */ @js.native
-  object UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES extends TopLevel[UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES with Double]
+  /* 536 */ val UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES: typings.cesium.mod.WebGLConstants.UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BLOCK_BINDING extends WebGLConstants
-  /* 533 */ @js.native
-  object UNIFORM_BLOCK_BINDING extends TopLevel[UNIFORM_BLOCK_BINDING with Double]
+  /* 533 */ val UNIFORM_BLOCK_BINDING: typings.cesium.mod.WebGLConstants.UNIFORM_BLOCK_BINDING with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BLOCK_DATA_SIZE extends WebGLConstants
-  /* 534 */ @js.native
-  object UNIFORM_BLOCK_DATA_SIZE extends TopLevel[UNIFORM_BLOCK_DATA_SIZE with Double]
+  /* 534 */ val UNIFORM_BLOCK_DATA_SIZE: typings.cesium.mod.WebGLConstants.UNIFORM_BLOCK_DATA_SIZE with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BLOCK_INDEX extends WebGLConstants
-  /* 528 */ @js.native
-  object UNIFORM_BLOCK_INDEX extends TopLevel[UNIFORM_BLOCK_INDEX with Double]
+  /* 528 */ val UNIFORM_BLOCK_INDEX: typings.cesium.mod.WebGLConstants.UNIFORM_BLOCK_INDEX with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER extends WebGLConstants
-  /* 538 */ @js.native
-  object UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER extends TopLevel[UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER with Double]
+  /* 538 */ val UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER: typings.cesium.mod.WebGLConstants.UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER extends WebGLConstants
-  /* 537 */ @js.native
-  object UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER extends TopLevel[UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER with Double]
+  /* 537 */ val UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER: typings.cesium.mod.WebGLConstants.UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BUFFER extends WebGLConstants
-  /* 513 */ @js.native
-  object UNIFORM_BUFFER extends TopLevel[UNIFORM_BUFFER with Double]
+  /* 513 */ val UNIFORM_BUFFER: typings.cesium.mod.WebGLConstants.UNIFORM_BUFFER with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BUFFER_BINDING extends WebGLConstants
-  /* 514 */ @js.native
-  object UNIFORM_BUFFER_BINDING extends TopLevel[UNIFORM_BUFFER_BINDING with Double]
+  /* 514 */ val UNIFORM_BUFFER_BINDING: typings.cesium.mod.WebGLConstants.UNIFORM_BUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BUFFER_OFFSET_ALIGNMENT extends WebGLConstants
-  /* 524 */ @js.native
-  object UNIFORM_BUFFER_OFFSET_ALIGNMENT extends TopLevel[UNIFORM_BUFFER_OFFSET_ALIGNMENT with Double]
+  /* 524 */ val UNIFORM_BUFFER_OFFSET_ALIGNMENT: typings.cesium.mod.WebGLConstants.UNIFORM_BUFFER_OFFSET_ALIGNMENT with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BUFFER_SIZE extends WebGLConstants
-  /* 516 */ @js.native
-  object UNIFORM_BUFFER_SIZE extends TopLevel[UNIFORM_BUFFER_SIZE with Double]
+  /* 516 */ val UNIFORM_BUFFER_SIZE: typings.cesium.mod.WebGLConstants.UNIFORM_BUFFER_SIZE with Double = js.native
   
   @js.native
   sealed trait UNIFORM_BUFFER_START extends WebGLConstants
-  /* 515 */ @js.native
-  object UNIFORM_BUFFER_START extends TopLevel[UNIFORM_BUFFER_START with Double]
+  /* 515 */ val UNIFORM_BUFFER_START: typings.cesium.mod.WebGLConstants.UNIFORM_BUFFER_START with Double = js.native
   
   @js.native
   sealed trait UNIFORM_IS_ROW_MAJOR extends WebGLConstants
-  /* 532 */ @js.native
-  object UNIFORM_IS_ROW_MAJOR extends TopLevel[UNIFORM_IS_ROW_MAJOR with Double]
+  /* 532 */ val UNIFORM_IS_ROW_MAJOR: typings.cesium.mod.WebGLConstants.UNIFORM_IS_ROW_MAJOR with Double = js.native
   
   @js.native
   sealed trait UNIFORM_MATRIX_STRIDE extends WebGLConstants
-  /* 531 */ @js.native
-  object UNIFORM_MATRIX_STRIDE extends TopLevel[UNIFORM_MATRIX_STRIDE with Double]
+  /* 531 */ val UNIFORM_MATRIX_STRIDE: typings.cesium.mod.WebGLConstants.UNIFORM_MATRIX_STRIDE with Double = js.native
   
   @js.native
   sealed trait UNIFORM_OFFSET extends WebGLConstants
-  /* 529 */ @js.native
-  object UNIFORM_OFFSET extends TopLevel[UNIFORM_OFFSET with Double]
+  /* 529 */ val UNIFORM_OFFSET: typings.cesium.mod.WebGLConstants.UNIFORM_OFFSET with Double = js.native
   
   @js.native
   sealed trait UNIFORM_SIZE extends WebGLConstants
-  /* 527 */ @js.native
-  object UNIFORM_SIZE extends TopLevel[UNIFORM_SIZE with Double]
+  /* 527 */ val UNIFORM_SIZE: typings.cesium.mod.WebGLConstants.UNIFORM_SIZE with Double = js.native
   
   @js.native
   sealed trait UNIFORM_TYPE extends WebGLConstants
-  /* 526 */ @js.native
-  object UNIFORM_TYPE extends TopLevel[UNIFORM_TYPE with Double]
+  /* 526 */ val UNIFORM_TYPE: typings.cesium.mod.WebGLConstants.UNIFORM_TYPE with Double = js.native
   
   @js.native
   sealed trait UNPACK_ALIGNMENT extends WebGLConstants
-  /* 93 */ @js.native
-  object UNPACK_ALIGNMENT extends TopLevel[UNPACK_ALIGNMENT with Double]
+  /* 93 */ val UNPACK_ALIGNMENT: typings.cesium.mod.WebGLConstants.UNPACK_ALIGNMENT with Double = js.native
   
   @js.native
   sealed trait UNPACK_COLORSPACE_CONVERSION_WEBGL extends WebGLConstants
-  /* 295 */ @js.native
-  object UNPACK_COLORSPACE_CONVERSION_WEBGL extends TopLevel[UNPACK_COLORSPACE_CONVERSION_WEBGL with Double]
+  /* 295 */ val UNPACK_COLORSPACE_CONVERSION_WEBGL: typings.cesium.mod.WebGLConstants.UNPACK_COLORSPACE_CONVERSION_WEBGL with Double = js.native
   
   @js.native
   sealed trait UNPACK_FLIP_Y_WEBGL extends WebGLConstants
-  /* 292 */ @js.native
-  object UNPACK_FLIP_Y_WEBGL extends TopLevel[UNPACK_FLIP_Y_WEBGL with Double]
+  /* 292 */ val UNPACK_FLIP_Y_WEBGL: typings.cesium.mod.WebGLConstants.UNPACK_FLIP_Y_WEBGL with Double = js.native
   
   @js.native
   sealed trait UNPACK_IMAGE_HEIGHT extends WebGLConstants
-  /* 324 */ @js.native
-  object UNPACK_IMAGE_HEIGHT extends TopLevel[UNPACK_IMAGE_HEIGHT with Double]
+  /* 324 */ val UNPACK_IMAGE_HEIGHT: typings.cesium.mod.WebGLConstants.UNPACK_IMAGE_HEIGHT with Double = js.native
   
   @js.native
   sealed trait UNPACK_PREMULTIPLY_ALPHA_WEBGL extends WebGLConstants
-  /* 293 */ @js.native
-  object UNPACK_PREMULTIPLY_ALPHA_WEBGL extends TopLevel[UNPACK_PREMULTIPLY_ALPHA_WEBGL with Double]
+  /* 293 */ val UNPACK_PREMULTIPLY_ALPHA_WEBGL: typings.cesium.mod.WebGLConstants.UNPACK_PREMULTIPLY_ALPHA_WEBGL with Double = js.native
   
   @js.native
   sealed trait UNPACK_ROW_LENGTH extends WebGLConstants
-  /* 309 */ @js.native
-  object UNPACK_ROW_LENGTH extends TopLevel[UNPACK_ROW_LENGTH with Double]
+  /* 309 */ val UNPACK_ROW_LENGTH: typings.cesium.mod.WebGLConstants.UNPACK_ROW_LENGTH with Double = js.native
   
   @js.native
   sealed trait UNPACK_SKIP_IMAGES extends WebGLConstants
-  /* 323 */ @js.native
-  object UNPACK_SKIP_IMAGES extends TopLevel[UNPACK_SKIP_IMAGES with Double]
+  /* 323 */ val UNPACK_SKIP_IMAGES: typings.cesium.mod.WebGLConstants.UNPACK_SKIP_IMAGES with Double = js.native
   
   @js.native
   sealed trait UNPACK_SKIP_PIXELS extends WebGLConstants
-  /* 311 */ @js.native
-  object UNPACK_SKIP_PIXELS extends TopLevel[UNPACK_SKIP_PIXELS with Double]
+  /* 311 */ val UNPACK_SKIP_PIXELS: typings.cesium.mod.WebGLConstants.UNPACK_SKIP_PIXELS with Double = js.native
   
   @js.native
   sealed trait UNPACK_SKIP_ROWS extends WebGLConstants
-  /* 310 */ @js.native
-  object UNPACK_SKIP_ROWS extends TopLevel[UNPACK_SKIP_ROWS with Double]
+  /* 310 */ val UNPACK_SKIP_ROWS: typings.cesium.mod.WebGLConstants.UNPACK_SKIP_ROWS with Double = js.native
   
   @js.native
   sealed trait UNSIGNALED extends WebGLConstants
-  /* 549 */ @js.native
-  object UNSIGNALED extends TopLevel[UNSIGNALED with Double]
+  /* 549 */ val UNSIGNALED: typings.cesium.mod.WebGLConstants.UNSIGNALED with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_BYTE extends WebGLConstants
-  /* 117 */ @js.native
-  object UNSIGNED_BYTE extends TopLevel[UNSIGNED_BYTE with Double]
+  /* 117 */ val UNSIGNED_BYTE: typings.cesium.mod.WebGLConstants.UNSIGNED_BYTE with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT extends WebGLConstants
-  /* 121 */ @js.native
-  object UNSIGNED_INT extends TopLevel[UNSIGNED_INT with Double]
+  /* 121 */ val UNSIGNED_INT: typings.cesium.mod.WebGLConstants.UNSIGNED_INT with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_10F_11F_11F_REV extends WebGLConstants
-  /* 398 */ @js.native
-  object UNSIGNED_INT_10F_11F_11F_REV extends TopLevel[UNSIGNED_INT_10F_11F_11F_REV with Double]
+  /* 398 */ val UNSIGNED_INT_10F_11F_11F_REV: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_10F_11F_11F_REV with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_24_8 extends WebGLConstants
-  /* 455 */ @js.native
-  object UNSIGNED_INT_24_8 extends TopLevel[UNSIGNED_INT_24_8 with Double]
+  /* 455 */ val UNSIGNED_INT_24_8: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_24_8 with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_2_10_10_10_REV extends WebGLConstants
-  /* 328 */ @js.native
-  object UNSIGNED_INT_2_10_10_10_REV extends TopLevel[UNSIGNED_INT_2_10_10_10_REV with Double]
+  /* 328 */ val UNSIGNED_INT_2_10_10_10_REV: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_2_10_10_10_REV with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_5_9_9_9_REV extends WebGLConstants
-  /* 400 */ @js.native
-  object UNSIGNED_INT_5_9_9_9_REV extends TopLevel[UNSIGNED_INT_5_9_9_9_REV with Double]
+  /* 400 */ val UNSIGNED_INT_5_9_9_9_REV: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_5_9_9_9_REV with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_SAMPLER_2D extends WebGLConstants
-  /* 439 */ @js.native
-  object UNSIGNED_INT_SAMPLER_2D extends TopLevel[UNSIGNED_INT_SAMPLER_2D with Double]
+  /* 439 */ val UNSIGNED_INT_SAMPLER_2D: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_SAMPLER_2D with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_SAMPLER_2D_ARRAY extends WebGLConstants
-  /* 442 */ @js.native
-  object UNSIGNED_INT_SAMPLER_2D_ARRAY extends TopLevel[UNSIGNED_INT_SAMPLER_2D_ARRAY with Double]
+  /* 442 */ val UNSIGNED_INT_SAMPLER_2D_ARRAY: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_SAMPLER_2D_ARRAY with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_SAMPLER_3D extends WebGLConstants
-  /* 440 */ @js.native
-  object UNSIGNED_INT_SAMPLER_3D extends TopLevel[UNSIGNED_INT_SAMPLER_3D with Double]
+  /* 440 */ val UNSIGNED_INT_SAMPLER_3D: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_SAMPLER_3D with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_SAMPLER_CUBE extends WebGLConstants
-  /* 441 */ @js.native
-  object UNSIGNED_INT_SAMPLER_CUBE extends TopLevel[UNSIGNED_INT_SAMPLER_CUBE with Double]
+  /* 441 */ val UNSIGNED_INT_SAMPLER_CUBE: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_SAMPLER_CUBE with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_VEC2 extends WebGLConstants
-  /* 432 */ @js.native
-  object UNSIGNED_INT_VEC2 extends TopLevel[UNSIGNED_INT_VEC2 with Double]
+  /* 432 */ val UNSIGNED_INT_VEC2: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_VEC2 with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_VEC3 extends WebGLConstants
-  /* 433 */ @js.native
-  object UNSIGNED_INT_VEC3 extends TopLevel[UNSIGNED_INT_VEC3 with Double]
+  /* 433 */ val UNSIGNED_INT_VEC3: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_VEC3 with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_INT_VEC4 extends WebGLConstants
-  /* 434 */ @js.native
-  object UNSIGNED_INT_VEC4 extends TopLevel[UNSIGNED_INT_VEC4 with Double]
+  /* 434 */ val UNSIGNED_INT_VEC4: typings.cesium.mod.WebGLConstants.UNSIGNED_INT_VEC4 with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_NORMALIZED extends WebGLConstants
-  /* 457 */ @js.native
-  object UNSIGNED_NORMALIZED extends TopLevel[UNSIGNED_NORMALIZED with Double]
+  /* 457 */ val UNSIGNED_NORMALIZED: typings.cesium.mod.WebGLConstants.UNSIGNED_NORMALIZED with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_SHORT extends WebGLConstants
-  /* 119 */ @js.native
-  object UNSIGNED_SHORT extends TopLevel[UNSIGNED_SHORT with Double]
+  /* 119 */ val UNSIGNED_SHORT: typings.cesium.mod.WebGLConstants.UNSIGNED_SHORT with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_SHORT_4_4_4_4 extends WebGLConstants
-  /* 129 */ @js.native
-  object UNSIGNED_SHORT_4_4_4_4 extends TopLevel[UNSIGNED_SHORT_4_4_4_4 with Double]
+  /* 129 */ val UNSIGNED_SHORT_4_4_4_4: typings.cesium.mod.WebGLConstants.UNSIGNED_SHORT_4_4_4_4 with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_SHORT_5_5_5_1 extends WebGLConstants
-  /* 130 */ @js.native
-  object UNSIGNED_SHORT_5_5_5_1 extends TopLevel[UNSIGNED_SHORT_5_5_5_1 with Double]
+  /* 130 */ val UNSIGNED_SHORT_5_5_5_1: typings.cesium.mod.WebGLConstants.UNSIGNED_SHORT_5_5_5_1 with Double = js.native
   
   @js.native
   sealed trait UNSIGNED_SHORT_5_6_5 extends WebGLConstants
-  /* 131 */ @js.native
-  object UNSIGNED_SHORT_5_6_5 extends TopLevel[UNSIGNED_SHORT_5_6_5 with Double]
+  /* 131 */ val UNSIGNED_SHORT_5_6_5: typings.cesium.mod.WebGLConstants.UNSIGNED_SHORT_5_6_5 with Double = js.native
   
   @js.native
   sealed trait VALIDATE_STATUS extends WebGLConstants
-  /* 144 */ @js.native
-  object VALIDATE_STATUS extends TopLevel[VALIDATE_STATUS with Double]
+  /* 144 */ val VALIDATE_STATUS: typings.cesium.mod.WebGLConstants.VALIDATE_STATUS with Double = js.native
   
   @js.native
   sealed trait VENDOR extends WebGLConstants
-  /* 165 */ @js.native
-  object VENDOR extends TopLevel[VENDOR with Double]
+  /* 165 */ val VENDOR: typings.cesium.mod.WebGLConstants.VENDOR with Double = js.native
   
   @js.native
   sealed trait VERSION extends WebGLConstants
-  /* 167 */ @js.native
-  object VERSION extends TopLevel[VERSION with Double]
+  /* 167 */ val VERSION: typings.cesium.mod.WebGLConstants.VERSION with Double = js.native
   
   @js.native
   sealed trait VERTEX_ARRAY_BINDING extends WebGLConstants
-  /* 503 */ @js.native
-  object VERTEX_ARRAY_BINDING extends TopLevel[VERTEX_ARRAY_BINDING with Double]
+  /* 503 */ val VERTEX_ARRAY_BINDING: typings.cesium.mod.WebGLConstants.VERTEX_ARRAY_BINDING with Double = js.native
   
   @js.native
   sealed trait VERTEX_ATTRIB_ARRAY_BUFFER_BINDING extends WebGLConstants
-  /* 246 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_BUFFER_BINDING extends TopLevel[VERTEX_ATTRIB_ARRAY_BUFFER_BINDING with Double]
+  /* 246 */ val VERTEX_ATTRIB_ARRAY_BUFFER_BINDING: typings.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_BUFFER_BINDING with Double = js.native
   
   @js.native
   sealed trait VERTEX_ATTRIB_ARRAY_DIVISOR extends WebGLConstants
-  /* 556 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_DIVISOR extends TopLevel[VERTEX_ATTRIB_ARRAY_DIVISOR with Double]
+  /* 556 */ val VERTEX_ATTRIB_ARRAY_DIVISOR: typings.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_DIVISOR with Double = js.native
   
   @js.native
   sealed trait VERTEX_ATTRIB_ARRAY_ENABLED extends WebGLConstants
-  /* 240 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_ENABLED extends TopLevel[VERTEX_ATTRIB_ARRAY_ENABLED with Double]
+  /* 240 */ val VERTEX_ATTRIB_ARRAY_ENABLED: typings.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_ENABLED with Double = js.native
   
   @js.native
   sealed trait VERTEX_ATTRIB_ARRAY_INTEGER extends WebGLConstants
-  /* 390 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_INTEGER extends TopLevel[VERTEX_ATTRIB_ARRAY_INTEGER with Double]
+  /* 390 */ val VERTEX_ATTRIB_ARRAY_INTEGER: typings.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_INTEGER with Double = js.native
   
   @js.native
   sealed trait VERTEX_ATTRIB_ARRAY_NORMALIZED extends WebGLConstants
-  /* 244 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_NORMALIZED extends TopLevel[VERTEX_ATTRIB_ARRAY_NORMALIZED with Double]
+  /* 244 */ val VERTEX_ATTRIB_ARRAY_NORMALIZED: typings.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_NORMALIZED with Double = js.native
   
   @js.native
   sealed trait VERTEX_ATTRIB_ARRAY_POINTER extends WebGLConstants
-  /* 245 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_POINTER extends TopLevel[VERTEX_ATTRIB_ARRAY_POINTER with Double]
+  /* 245 */ val VERTEX_ATTRIB_ARRAY_POINTER: typings.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_POINTER with Double = js.native
   
   @js.native
   sealed trait VERTEX_ATTRIB_ARRAY_SIZE extends WebGLConstants
-  /* 241 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_SIZE extends TopLevel[VERTEX_ATTRIB_ARRAY_SIZE with Double]
+  /* 241 */ val VERTEX_ATTRIB_ARRAY_SIZE: typings.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_SIZE with Double = js.native
   
   @js.native
   sealed trait VERTEX_ATTRIB_ARRAY_STRIDE extends WebGLConstants
-  /* 242 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_STRIDE extends TopLevel[VERTEX_ATTRIB_ARRAY_STRIDE with Double]
+  /* 242 */ val VERTEX_ATTRIB_ARRAY_STRIDE: typings.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_STRIDE with Double = js.native
   
   @js.native
   sealed trait VERTEX_ATTRIB_ARRAY_TYPE extends WebGLConstants
-  /* 243 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_TYPE extends TopLevel[VERTEX_ATTRIB_ARRAY_TYPE with Double]
+  /* 243 */ val VERTEX_ATTRIB_ARRAY_TYPE: typings.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_TYPE with Double = js.native
   
   @js.native
   sealed trait VERTEX_SHADER extends WebGLConstants
-  /* 133 */ @js.native
-  object VERTEX_SHADER extends TopLevel[VERTEX_SHADER with Double]
+  /* 133 */ val VERTEX_SHADER: typings.cesium.mod.WebGLConstants.VERTEX_SHADER with Double = js.native
   
   @js.native
   sealed trait VIEWPORT extends WebGLConstants
-  /* 89 */ @js.native
-  object VIEWPORT extends TopLevel[VIEWPORT with Double]
+  /* 89 */ val VIEWPORT: typings.cesium.mod.WebGLConstants.VIEWPORT with Double = js.native
   
   @js.native
   sealed trait WAIT_FAILED extends WebGLConstants
-  /* 554 */ @js.native
-  object WAIT_FAILED extends TopLevel[WAIT_FAILED with Double]
+  /* 554 */ val WAIT_FAILED: typings.cesium.mod.WebGLConstants.WAIT_FAILED with Double = js.native
   
   @js.native
   sealed trait ZERO extends WebGLConstants
-  /* 10 */ @js.native
-  object ZERO extends TopLevel[ZERO with Double]
+  /* 10 */ val ZERO: typings.cesium.mod.WebGLConstants.ZERO with Double = js.native
 }

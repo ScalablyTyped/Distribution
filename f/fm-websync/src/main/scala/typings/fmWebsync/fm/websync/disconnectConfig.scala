@@ -1,5 +1,6 @@
 package typings.fmWebsync.fm.websync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,36 +32,24 @@ object disconnectConfig {
   }
   
   @scala.inline
-  implicit class disconnectConfigOps[Self <: disconnectConfig] (val x: Self) extends AnyVal {
+  implicit class disconnectConfigMutableBuilder[Self <: disconnectConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnComplete(value: /* args */ baseResponseArgs => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFailure(value: /* args */ baseFailureArgs => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnComplete(value: /* args */ baseResponseArgs => Unit): Self = this.set("onComplete", js.Any.fromFunction1(value))
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    def setOnSuccess(value: /* args */ baseResponseArgs => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFailure(value: /* args */ baseFailureArgs => Unit): Self = this.set("onFailure", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
-    
-    @scala.inline
-    def setOnSuccess(value: /* args */ baseResponseArgs => Unit): Self = this.set("onSuccess", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

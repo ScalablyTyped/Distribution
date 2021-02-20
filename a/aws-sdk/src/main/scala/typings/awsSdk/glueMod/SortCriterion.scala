@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortCriterion extends js.Object {
+trait SortCriterion extends StObject {
   
   /**
     * The name of the field on which to sort.
@@ -26,30 +27,18 @@ object SortCriterion {
   }
   
   @scala.inline
-  implicit class SortCriterionOps[Self <: SortCriterion] (val x: Self) extends AnyVal {
+  implicit class SortCriterionMutableBuilder[Self <: SortCriterion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldName(value: ValueString): Self = StObject.set(x, "FieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldNameUndefined: Self = StObject.set(x, "FieldName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSort(value: Sort): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: ValueString): Self = this.set("FieldName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldName: Self = this.set("FieldName", js.undefined)
-    
-    @scala.inline
-    def setSort(value: Sort): Self = this.set("Sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("Sort", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "Sort", js.undefined)
   }
 }

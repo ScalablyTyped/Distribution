@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.UI.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [openPhotoGallery](Titanium.Media.openPhotoGallery).
   */
 @js.native
-trait PhotoGalleryOptionsType extends js.Object {
+trait PhotoGalleryOptionsType extends StObject {
   
   /**
     * Specifies if the media should be editable after capture/selection.
@@ -91,93 +92,81 @@ object PhotoGalleryOptionsType {
   }
   
   @scala.inline
-  implicit class PhotoGalleryOptionsTypeOps[Self <: PhotoGalleryOptionsType] (val x: Self) extends AnyVal {
+  implicit class PhotoGalleryOptionsTypeMutableBuilder[Self <: PhotoGalleryOptionsType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEditing(value: Boolean): Self = StObject.set(x, "allowEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowEditingUndefined: Self = StObject.set(x, "allowEditing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowEditing(value: Boolean): Self = this.set("allowEditing", value.asInstanceOf[js.Any])
+    def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
     
     @scala.inline
-    def deleteAllowEditing: Self = this.set("allowEditing", js.undefined)
+    def setAllowTranscoding(value: Boolean): Self = StObject.set(x, "allowTranscoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultiple(value: Boolean): Self = this.set("allowMultiple", value.asInstanceOf[js.Any])
+    def setAllowTranscodingUndefined: Self = StObject.set(x, "allowTranscoding", js.undefined)
     
     @scala.inline
-    def deleteAllowMultiple: Self = this.set("allowMultiple", js.undefined)
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTranscoding(value: Boolean): Self = this.set("allowTranscoding", value.asInstanceOf[js.Any])
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def deleteAllowTranscoding: Self = this.set("allowTranscoding", js.undefined)
+    def setArrowDirection(value: Double): Self = StObject.set(x, "arrowDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setArrowDirectionUndefined: Self = StObject.set(x, "arrowDirection", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowDirection(value: Double): Self = this.set("arrowDirection", value.asInstanceOf[js.Any])
+    def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
     
     @scala.inline
-    def deleteArrowDirection: Self = this.set("arrowDirection", js.undefined)
+    def setCancel(value: /* param0 */ FailureResponse => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutohide(value: Boolean): Self = this.set("autohide", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteAutohide: Self = this.set("autohide", js.undefined)
+    def setError(value: /* param0 */ FailureResponse => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancel(value: /* param0 */ FailureResponse => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setMediaTypes(value: js.Array[String]): Self = StObject.set(x, "mediaTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* param0 */ FailureResponse => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setMediaTypesUndefined: Self = StObject.set(x, "mediaTypes", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setMediaTypesVarargs(value: String*): Self = StObject.set(x, "mediaTypes", js.Array(value :_*))
     
     @scala.inline
-    def setMediaTypesVarargs(value: String*): Self = this.set("mediaTypes", js.Array(value :_*))
+    def setPopoverView(value: View): Self = StObject.set(x, "popoverView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaTypes(value: js.Array[String]): Self = this.set("mediaTypes", value.asInstanceOf[js.Any])
+    def setPopoverViewUndefined: Self = StObject.set(x, "popoverView", js.undefined)
     
     @scala.inline
-    def deleteMediaTypes: Self = this.set("mediaTypes", js.undefined)
+    def setSelectionLimit(value: Boolean): Self = StObject.set(x, "selectionLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopoverView(value: View): Self = this.set("popoverView", value.asInstanceOf[js.Any])
+    def setSelectionLimitUndefined: Self = StObject.set(x, "selectionLimit", js.undefined)
     
     @scala.inline
-    def deletePopoverView: Self = this.set("popoverView", js.undefined)
+    def setSuccess(value: (/* param0 */ CameraMediaItemType) | (/* param0 */ CameraMediaMultipleItemsType) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectionLimit(value: Boolean): Self = this.set("selectionLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionLimit: Self = this.set("selectionLimit", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: (/* param0 */ CameraMediaItemType) | (/* param0 */ CameraMediaMultipleItemsType) => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

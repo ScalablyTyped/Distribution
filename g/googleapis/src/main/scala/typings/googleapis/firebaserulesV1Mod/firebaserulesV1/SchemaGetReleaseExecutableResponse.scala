@@ -1,5 +1,6 @@
 package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response for FirebaseRulesService.GetReleaseExecutable
   */
 @js.native
-trait SchemaGetReleaseExecutableResponse extends js.Object {
+trait SchemaGetReleaseExecutableResponse extends StObject {
   
   /**
     * Executable view of the `Ruleset` referenced by the `Release`.
@@ -51,54 +52,42 @@ object SchemaGetReleaseExecutableResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetReleaseExecutableResponseOps[Self <: SchemaGetReleaseExecutableResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetReleaseExecutableResponseMutableBuilder[Self <: SchemaGetReleaseExecutableResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutable(value: String): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutableUndefined: Self = StObject.set(x, "executable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutableVersion(value: String): Self = StObject.set(x, "executableVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutable(value: String): Self = this.set("executable", value.asInstanceOf[js.Any])
+    def setExecutableVersionUndefined: Self = StObject.set(x, "executableVersion", js.undefined)
     
     @scala.inline
-    def deleteExecutable: Self = this.set("executable", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutableVersion(value: String): Self = this.set("executableVersion", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteExecutableVersion: Self = this.set("executableVersion", js.undefined)
+    def setRulesetName(value: String): Self = StObject.set(x, "rulesetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setRulesetNameUndefined: Self = StObject.set(x, "rulesetName", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setSyncTime(value: String): Self = StObject.set(x, "syncTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesetName(value: String): Self = this.set("rulesetName", value.asInstanceOf[js.Any])
+    def setSyncTimeUndefined: Self = StObject.set(x, "syncTime", js.undefined)
     
     @scala.inline
-    def deleteRulesetName: Self = this.set("rulesetName", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncTime(value: String): Self = this.set("syncTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncTime: Self = this.set("syncTime", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

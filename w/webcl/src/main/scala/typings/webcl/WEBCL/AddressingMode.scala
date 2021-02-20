@@ -4,6 +4,7 @@ import typings.webcl.webclNumbers.`0x1131`
 import typings.webcl.webclNumbers.`0x1132`
 import typings.webcl.webclNumbers.`0x1133`
 import typings.webcl.webclNumbers.`0x1134`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x1133`
   - typings.webcl.webclNumbers.`0x1134`
 */
-trait AddressingMode extends js.Object
+trait AddressingMode extends StObject
 object AddressingMode {
   
   @scala.inline

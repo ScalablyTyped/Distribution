@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Entity whose actions triggered a Gmail phishing alert.
   */
 @js.native
-trait SchemaMaliciousEntity extends js.Object {
+trait SchemaMaliciousEntity extends StObject {
   
   /**
     * The sender email address.
@@ -24,24 +25,12 @@ object SchemaMaliciousEntity {
   }
   
   @scala.inline
-  implicit class SchemaMaliciousEntityOps[Self <: SchemaMaliciousEntity] (val x: Self) extends AnyVal {
+  implicit class SchemaMaliciousEntityMutableBuilder[Self <: SchemaMaliciousEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromHeader(value: String): Self = StObject.set(x, "fromHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFromHeader(value: String): Self = this.set("fromHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromHeader: Self = this.set("fromHeader", js.undefined)
+    def setFromHeaderUndefined: Self = StObject.set(x, "fromHeader", js.undefined)
   }
 }

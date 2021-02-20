@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientContent.anon.RegionId
 import typings.maximMazurokGapiClientContent.anon.RegionIdUpdateMask
 import typings.maximMazurokGapiClientContent.anon.RegionIdUploadType
 import typings.maximMazurokGapiClientContent.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionsResource extends js.Object {
+trait RegionsResource extends StObject {
   
   def create(request: QuotaUserRegionId, body: Region): Request[Region] = js.native
   /** Creates a region definition in your Merchant Center account. */

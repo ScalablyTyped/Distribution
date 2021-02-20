@@ -1,12 +1,13 @@
 package typings.ssUtils.ssutils
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HandleServerEventsOptions extends js.Object {
+trait HandleServerEventsOptions extends StObject {
   
   var handlers: js.UndefOr[StringDictionary[js.Function]] = js.native
   
@@ -39,62 +40,50 @@ object HandleServerEventsOptions {
   }
   
   @scala.inline
-  implicit class HandleServerEventsOptionsOps[Self <: HandleServerEventsOptions] (val x: Self) extends AnyVal {
+  implicit class HandleServerEventsOptionsMutableBuilder[Self <: HandleServerEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandlers(value: StringDictionary[js.Function]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeartbeatIntervalMs(value: Double): Self = StObject.set(x, "heartbeatIntervalMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandlers(value: StringDictionary[js.Function]): Self = this.set("handlers", value.asInstanceOf[js.Any])
+    def setHeartbeatIntervalMsUndefined: Self = StObject.set(x, "heartbeatIntervalMs", js.undefined)
     
     @scala.inline
-    def deleteHandlers: Self = this.set("handlers", js.undefined)
+    def setHeartbeatUrl(value: String): Self = StObject.set(x, "heartbeatUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatIntervalMs(value: Double): Self = this.set("heartbeatIntervalMs", value.asInstanceOf[js.Any])
+    def setHeartbeatUrlUndefined: Self = StObject.set(x, "heartbeatUrl", js.undefined)
     
     @scala.inline
-    def deleteHeartbeatIntervalMs: Self = this.set("heartbeatIntervalMs", js.undefined)
+    def setReceivers(value: StringDictionary[js.Any]): Self = StObject.set(x, "receivers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatUrl(value: String): Self = this.set("heartbeatUrl", value.asInstanceOf[js.Any])
+    def setReceiversUndefined: Self = StObject.set(x, "receivers", js.undefined)
     
     @scala.inline
-    def deleteHeartbeatUrl: Self = this.set("heartbeatUrl", js.undefined)
+    def setSuccess(value: (/* selector */ String, /* msg */ String, /* e */ js.Any) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setReceivers(value: StringDictionary[js.Any]): Self = this.set("receivers", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteReceivers: Self = this.set("receivers", js.undefined)
+    def setUnRegisterUrl(value: String): Self = StObject.set(x, "unRegisterUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: (/* selector */ String, /* msg */ String, /* e */ js.Any) => Unit): Self = this.set("success", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setUnRegisterUrl(value: String): Self = this.set("unRegisterUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnRegisterUrl: Self = this.set("unRegisterUrl", js.undefined)
+    def setUnRegisterUrlUndefined: Self = StObject.set(x, "unRegisterUrl", js.undefined)
     
     @scala.inline
     def setValidate(
       value: (/* op */ js.UndefOr[String], /* target */ js.UndefOr[String], /* msg */ js.UndefOr[String], /* json */ js.UndefOr[String]) => Boolean
-    ): Self = this.set("validate", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

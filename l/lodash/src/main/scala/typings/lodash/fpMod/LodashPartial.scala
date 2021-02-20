@@ -11,12 +11,13 @@ import typings.lodash.mod.Object
 import typings.lodash.mod.Primitive
 import typings.lodash.mod.String
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashPartial extends js.Object {
+trait LodashPartial extends StObject {
   
   def apply[T1](func: __, arg1: js.Array[T1]): LodashPartial18x2[T1] = js.native
   def apply[T2](func: __, plc1: js.Tuple2[__, T2]): LodashPartial1x2[T2] = js.native

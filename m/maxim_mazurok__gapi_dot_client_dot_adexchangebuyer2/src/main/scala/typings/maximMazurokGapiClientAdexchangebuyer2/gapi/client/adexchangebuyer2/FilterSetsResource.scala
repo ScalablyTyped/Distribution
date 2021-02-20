@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAdexchangebuyer2.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.IsTransient
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.Name
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.OwnerName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterSetsResource extends js.Object {
+trait FilterSetsResource extends StObject {
   
   var bidMetrics: BidMetricsResource = js.native
   

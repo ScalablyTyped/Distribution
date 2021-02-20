@@ -1,14 +1,15 @@
 package typings.webdriverManager
 
 import typings.webdriverManager.cliMod.Logger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriver-manager/built/lib/cmds/initialize", JSImport.Namespace)
-@js.native
-object initializeMod extends js.Object {
+object initializeMod {
   
+  @JSImport("webdriver-manager/built/lib/cmds/initialize", "android")
+  @js.native
   def android(
     sdkPath: String,
     apiLevels: js.Array[String],
@@ -21,5 +22,7 @@ object initializeMod extends js.Object {
     verbose: Boolean
   ): Unit = js.native
   
+  @JSImport("webdriver-manager/built/lib/cmds/initialize", "iOS")
+  @js.native
   def iOS(logger: Logger): Unit = js.native
 }

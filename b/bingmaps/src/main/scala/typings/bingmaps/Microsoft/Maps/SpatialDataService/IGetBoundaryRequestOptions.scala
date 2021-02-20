@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGetBoundaryRequestOptions extends js.Object {
+trait IGetBoundaryRequestOptions extends StObject {
   
   /**
     * Specifies the preferred language to use for any metadata text about the entity or polygons. Defaults to the culture used by the map control, which
@@ -54,54 +55,42 @@ object IGetBoundaryRequestOptions {
   }
   
   @scala.inline
-  implicit class IGetBoundaryRequestOptionsOps[Self <: IGetBoundaryRequestOptions] (val x: Self) extends AnyVal {
+  implicit class IGetBoundaryRequestOptionsMutableBuilder[Self <: IGetBoundaryRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
     @scala.inline
-    def deleteCulture: Self = this.set("culture", js.undefined)
+    def setGetAllPolygons(value: Boolean): Self = StObject.set(x, "getAllPolygons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityType(value: String): Self = this.set("entityType", value.asInstanceOf[js.Any])
+    def setGetAllPolygonsUndefined: Self = StObject.set(x, "getAllPolygons", js.undefined)
     
     @scala.inline
-    def deleteEntityType: Self = this.set("entityType", js.undefined)
+    def setGetEntityMetadata(value: Boolean): Self = StObject.set(x, "getEntityMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAllPolygons(value: Boolean): Self = this.set("getAllPolygons", value.asInstanceOf[js.Any])
+    def setGetEntityMetadataUndefined: Self = StObject.set(x, "getEntityMetadata", js.undefined)
     
     @scala.inline
-    def deleteGetAllPolygons: Self = this.set("getAllPolygons", js.undefined)
+    def setLod(value: Double): Self = StObject.set(x, "lod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetEntityMetadata(value: Boolean): Self = this.set("getEntityMetadata", value.asInstanceOf[js.Any])
+    def setLodUndefined: Self = StObject.set(x, "lod", js.undefined)
     
     @scala.inline
-    def deleteGetEntityMetadata: Self = this.set("getEntityMetadata", js.undefined)
+    def setUserRegion(value: String): Self = StObject.set(x, "userRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLod(value: Double): Self = this.set("lod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLod: Self = this.set("lod", js.undefined)
-    
-    @scala.inline
-    def setUserRegion(value: String): Self = this.set("userRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRegion: Self = this.set("userRegion", js.undefined)
+    def setUserRegionUndefined: Self = StObject.set(x, "userRegion", js.undefined)
   }
 }

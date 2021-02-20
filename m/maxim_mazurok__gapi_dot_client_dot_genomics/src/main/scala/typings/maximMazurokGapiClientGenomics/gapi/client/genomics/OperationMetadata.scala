@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationMetadata extends js.Object {
+trait OperationMetadata extends StObject {
   
   /** This field is deprecated. Use `labels` instead. Optionally provided by the caller when submitting the request that creates the operation. */
   var clientId: js.UndefOr[String] = js.native
@@ -59,87 +60,75 @@ object OperationMetadata {
   }
   
   @scala.inline
-  implicit class OperationMetadataOps[Self <: OperationMetadata] (val x: Self) extends AnyVal {
+  implicit class OperationMetadataMutableBuilder[Self <: OperationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setEvents(value: js.Array[OperationEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
-    
-    @scala.inline
-    def setEventsVarargs(value: OperationEvent*): Self = this.set("events", js.Array(value :_*))
-    
-    @scala.inline
-    def setEvents(value: js.Array[OperationEvent]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setEventsVarargs(value: OperationEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
     def setRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata with TopLevel[js.Any]
-    ): Self = this.set("request", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
     def setRuntimeMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata with TopLevel[js.Any]
-    ): Self = this.set("runtimeMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "runtimeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuntimeMetadata: Self = this.set("runtimeMetadata", js.undefined)
+    def setRuntimeMetadataUndefined: Self = StObject.set(x, "runtimeMetadata", js.undefined)
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

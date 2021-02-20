@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitImportTfvcSource extends js.Object {
+trait GitImportTfvcSource extends StObject {
   
   /**
     * Set true to import History, false otherwise
@@ -31,27 +32,15 @@ object GitImportTfvcSource {
   }
   
   @scala.inline
-  implicit class GitImportTfvcSourceOps[Self <: GitImportTfvcSource] (val x: Self) extends AnyVal {
+  implicit class GitImportTfvcSourceMutableBuilder[Self <: GitImportTfvcSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImportHistory(value: Boolean): Self = StObject.set(x, "importHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportHistoryDurationInDays(value: Double): Self = StObject.set(x, "importHistoryDurationInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImportHistory(value: Boolean): Self = this.set("importHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImportHistoryDurationInDays(value: Double): Self = this.set("importHistoryDurationInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

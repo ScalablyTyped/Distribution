@@ -1,12 +1,13 @@
 package typings.swipe
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwipeOptions extends js.Object {
+trait SwipeOptions extends StObject {
   
   var auto: js.UndefOr[Double] = js.native
   
@@ -33,66 +34,54 @@ object SwipeOptions {
   }
   
   @scala.inline
-  implicit class SwipeOptionsOps[Self <: SwipeOptions] (val x: Self) extends AnyVal {
+  implicit class SwipeOptionsMutableBuilder[Self <: SwipeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto(value: Double): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback(value: (/* index */ Double, /* elem */ HTMLElement) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAuto(value: Double): Self = this.set("auto", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteAuto: Self = this.set("auto", js.undefined)
+    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: (/* index */ Double, /* elem */ HTMLElement) => Unit): Self = this.set("callback", js.Any.fromFunction2(value))
+    def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuous(value: Boolean): Self = this.set("continuous", value.asInstanceOf[js.Any])
+    def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
     
     @scala.inline
-    def deleteContinuous: Self = this.set("continuous", js.undefined)
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableScroll(value: Boolean): Self = this.set("disableScroll", value.asInstanceOf[js.Any])
+    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
     @scala.inline
-    def deleteDisableScroll: Self = this.set("disableScroll", js.undefined)
+    def setStartSlide(value: Double): Self = StObject.set(x, "startSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    def setStartSlideUndefined: Self = StObject.set(x, "startSlide", js.undefined)
     
     @scala.inline
-    def deleteSpeed: Self = this.set("speed", js.undefined)
+    def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartSlide(value: Double): Self = this.set("startSlide", value.asInstanceOf[js.Any])
+    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
     
     @scala.inline
-    def deleteStartSlide: Self = this.set("startSlide", js.undefined)
+    def setTransitionEnd(value: (/* index */ Double, /* elem */ HTMLElement) => Unit): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStopPropagation(value: Boolean): Self = this.set("stopPropagation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopPropagation: Self = this.set("stopPropagation", js.undefined)
-    
-    @scala.inline
-    def setTransitionEnd(value: (/* index */ Double, /* elem */ HTMLElement) => Unit): Self = this.set("transitionEnd", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTransitionEnd: Self = this.set("transitionEnd", js.undefined)
+    def setTransitionEndUndefined: Self = StObject.set(x, "transitionEnd", js.undefined)
   }
 }

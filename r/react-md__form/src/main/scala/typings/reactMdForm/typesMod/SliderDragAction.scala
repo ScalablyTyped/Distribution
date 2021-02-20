@@ -7,6 +7,7 @@ import typings.reactMdForm.reactMdFormStrings.mouseup
 import typings.reactMdForm.reactMdFormStrings.touchend
 import typings.reactMdForm.reactMdFormStrings.touchmove
 import typings.reactMdForm.reactMdFormStrings.touchstart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,24 +45,12 @@ object SliderDragAction {
   }
   
   @scala.inline
-  implicit class SliderDragActionOps[Self <: SliderDragAction] (val x: Self) extends AnyVal {
+  implicit class SliderDragActionMutableBuilder[Self <: SliderDragAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventType(value: mousedown | mousemove | mouseup | touchstart | touchmove | touchend): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventType(value: mousedown | mousemove | mouseup | touchstart | touchmove | touchend): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: drag): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

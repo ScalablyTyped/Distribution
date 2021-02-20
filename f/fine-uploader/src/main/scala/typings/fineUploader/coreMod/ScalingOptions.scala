@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScalingOptions extends js.Object {
+trait ScalingOptions extends StObject {
   
   /**
     * Ignored if the current browser does not support image previews.
@@ -82,66 +83,54 @@ object ScalingOptions {
   }
   
   @scala.inline
-  implicit class ScalingOptionsOps[Self <: ScalingOptions] (val x: Self) extends AnyVal {
+  implicit class ScalingOptionsMutableBuilder[Self <: ScalingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = StObject.set(x, "customResizer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomResizerUndefined: Self = StObject.set(x, "customResizer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultQuality(value: Double): Self = StObject.set(x, "defaultQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = this.set("customResizer", js.Any.fromFunction1(value))
+    def setDefaultQualityUndefined: Self = StObject.set(x, "defaultQuality", js.undefined)
     
     @scala.inline
-    def deleteCustomResizer: Self = this.set("customResizer", js.undefined)
+    def setDefaultType(value: String): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultQuality(value: Double): Self = this.set("defaultQuality", value.asInstanceOf[js.Any])
+    def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
     
     @scala.inline
-    def deleteDefaultQuality: Self = this.set("defaultQuality", js.undefined)
+    def setFailureText(value: String): Self = StObject.set(x, "failureText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultType(value: String): Self = this.set("defaultType", value.asInstanceOf[js.Any])
+    def setFailureTextUndefined: Self = StObject.set(x, "failureText", js.undefined)
     
     @scala.inline
-    def deleteDefaultType: Self = this.set("defaultType", js.undefined)
+    def setIncludeExif(value: Boolean): Self = StObject.set(x, "includeExif", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureText(value: String): Self = this.set("failureText", value.asInstanceOf[js.Any])
+    def setIncludeExifUndefined: Self = StObject.set(x, "includeExif", js.undefined)
     
     @scala.inline
-    def deleteFailureText: Self = this.set("failureText", js.undefined)
+    def setOrient(value: Boolean): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeExif(value: Boolean): Self = this.set("includeExif", value.asInstanceOf[js.Any])
+    def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
     @scala.inline
-    def deleteIncludeExif: Self = this.set("includeExif", js.undefined)
+    def setSendOriginal(value: Boolean): Self = StObject.set(x, "sendOriginal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrient(value: Boolean): Self = this.set("orient", value.asInstanceOf[js.Any])
+    def setSendOriginalUndefined: Self = StObject.set(x, "sendOriginal", js.undefined)
     
     @scala.inline
-    def deleteOrient: Self = this.set("orient", js.undefined)
+    def setSizes(value: SizeOptions): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendOriginal(value: Boolean): Self = this.set("sendOriginal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendOriginal: Self = this.set("sendOriginal", js.undefined)
-    
-    @scala.inline
-    def setSizes(value: SizeOptions): Self = this.set("sizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizes: Self = this.set("sizes", js.undefined)
+    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
   }
 }

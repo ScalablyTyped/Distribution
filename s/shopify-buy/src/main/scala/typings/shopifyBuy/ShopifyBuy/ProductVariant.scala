@@ -1,5 +1,6 @@
 package typings.shopifyBuy.ShopifyBuy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,63 +99,51 @@ object ProductVariant {
   }
   
   @scala.inline
-  implicit class ProductVariantOps[Self <: ProductVariant] (val x: Self) extends AnyVal {
+  implicit class ProductVariantMutableBuilder[Self <: ProductVariant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckoutUrl(value: Double => String): Self = StObject.set(x, "checkoutUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompareAtPrice(value: String): Self = StObject.set(x, "compareAtPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: Boolean): Self = this.set("available", value.asInstanceOf[js.Any])
+    def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckoutUrl(value: Double => String): Self = this.set("checkoutUrl", js.Any.fromFunction1(value))
+    def setGrams(value: Double): Self = StObject.set(x, "grams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompareAtPrice(value: String): Self = this.set("compareAtPrice", value.asInstanceOf[js.Any])
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedPrice(value: String): Self = this.set("formattedPrice", value.asInstanceOf[js.Any])
+    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrams(value: Double): Self = this.set("grams", value.asInstanceOf[js.Any])
+    def setImageVariant(value: js.Array[ImageVariant]): Self = StObject.set(x, "imageVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageVariantVarargs(value: ImageVariant*): Self = StObject.set(x, "imageVariant", js.Array(value :_*))
     
     @scala.inline
-    def setImage(value: Image): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setOptionValues(value: js.Array[OptionValue]): Self = StObject.set(x, "optionValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVariantVarargs(value: ImageVariant*): Self = this.set("imageVariant", js.Array(value :_*))
+    def setOptionValuesVarargs(value: OptionValue*): Self = StObject.set(x, "optionValues", js.Array(value :_*))
     
     @scala.inline
-    def setImageVariant(value: js.Array[ImageVariant]): Self = this.set("imageVariant", value.asInstanceOf[js.Any])
+    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionValuesVarargs(value: OptionValue*): Self = this.set("optionValues", js.Array(value :_*))
+    def setProductId(value: String | Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionValues(value: js.Array[OptionValue]): Self = this.set("optionValues", value.asInstanceOf[js.Any])
+    def setProductTitle(value: String): Self = StObject.set(x, "productTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProductId(value: String | Double): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProductTitle(value: String): Self = this.set("productTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

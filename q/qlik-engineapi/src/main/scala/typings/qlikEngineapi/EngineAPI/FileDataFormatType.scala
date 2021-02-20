@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikEngineapi.qlikEngineapiStrings.JSON
   - typings.qlikEngineapi.qlikEngineapiStrings.KML
 */
-trait FileDataFormatType extends js.Object
+trait FileDataFormatType extends StObject
 object FileDataFormatType {
   
   @scala.inline

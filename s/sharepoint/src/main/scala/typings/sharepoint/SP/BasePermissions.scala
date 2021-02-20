@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ object BasePermissions {
     clearAll: () => Unit,
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    equals: BasePermissions => Boolean,
+    equals_ : BasePermissions => Boolean,
     fromJson: js.Any => Unit,
     get_typeId: () => String,
     has: PermissionKind => Boolean,
@@ -35,41 +36,30 @@ object BasePermissions {
     set: PermissionKind => Unit,
     writeToXml: (XmlWriter, SerializationContext) => Unit
   ): BasePermissions = {
-    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), clearAll = js.Any.fromFunction0(clearAll), customFromJson = js.Any.fromFunction1(customFromJson), customWriteToXml = js.Any.fromFunction2(customWriteToXml), equals = js.Any.fromFunction1(equals), fromJson = js.Any.fromFunction1(fromJson), get_typeId = js.Any.fromFunction0(get_typeId), has = js.Any.fromFunction1(has), hasPermissions = js.Any.fromFunction2(hasPermissions), set = js.Any.fromFunction1(set), writeToXml = js.Any.fromFunction2(writeToXml))
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), clearAll = js.Any.fromFunction0(clearAll), customFromJson = js.Any.fromFunction1(customFromJson), customWriteToXml = js.Any.fromFunction2(customWriteToXml), fromJson = js.Any.fromFunction1(fromJson), get_typeId = js.Any.fromFunction0(get_typeId), has = js.Any.fromFunction1(has), hasPermissions = js.Any.fromFunction2(hasPermissions), set = js.Any.fromFunction1(set), writeToXml = js.Any.fromFunction2(writeToXml))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[BasePermissions]
   }
   
   @scala.inline
-  implicit class BasePermissionsOps[Self <: BasePermissions] (val x: Self) extends AnyVal {
+  implicit class BasePermissionsMutableBuilder[Self <: BasePermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: PermissionKind => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEquals_(value: BasePermissions => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: PermissionKind => Unit): Self = this.set("clear", js.Any.fromFunction1(value))
+    def setHas(value: PermissionKind => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearAll(value: () => Unit): Self = this.set("clearAll", js.Any.fromFunction0(value))
+    def setHasPermissions(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasPermissions", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEquals(value: BasePermissions => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHas(value: PermissionKind => Boolean): Self = this.set("has", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHasPermissions(value: (Double, Double) => Boolean): Self = this.set("hasPermissions", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSet(value: PermissionKind => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setSet(value: PermissionKind => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

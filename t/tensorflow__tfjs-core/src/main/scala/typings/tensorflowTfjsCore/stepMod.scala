@@ -3,20 +3,23 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/step", JSImport.Namespace)
-@js.native
-object stepMod extends js.Object {
+object stepMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/step", "step")
   @js.native
-  object step extends js.Object {
-    
-    def apply[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: T, alpha: Double): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike, alpha: Double): T = js.native
-  }
+  def step[T /* <: Tensor[Rank] */](x: T): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/step", "step")
+  @js.native
+  def step[T /* <: Tensor[Rank] */](x: T, alpha: Double): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/step", "step")
+  @js.native
+  def step[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/step", "step")
+  @js.native
+  def step[T /* <: Tensor[Rank] */](x: TensorLike, alpha: Double): T = js.native
 }

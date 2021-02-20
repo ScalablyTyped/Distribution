@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GatewayConfig extends js.Object {
+trait GatewayConfig extends StObject {
   
   /** Indicates how to authorize and/or authenticate devices to access the gateway. */
   var gatewayAuthMethod: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object GatewayConfig {
   }
   
   @scala.inline
-  implicit class GatewayConfigOps[Self <: GatewayConfig] (val x: Self) extends AnyVal {
+  implicit class GatewayConfigMutableBuilder[Self <: GatewayConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatewayAuthMethod(value: String): Self = StObject.set(x, "gatewayAuthMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayAuthMethodUndefined: Self = StObject.set(x, "gatewayAuthMethod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGatewayType(value: String): Self = StObject.set(x, "gatewayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayAuthMethod(value: String): Self = this.set("gatewayAuthMethod", value.asInstanceOf[js.Any])
+    def setGatewayTypeUndefined: Self = StObject.set(x, "gatewayType", js.undefined)
     
     @scala.inline
-    def deleteGatewayAuthMethod: Self = this.set("gatewayAuthMethod", js.undefined)
+    def setLastAccessedGatewayId(value: String): Self = StObject.set(x, "lastAccessedGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayType(value: String): Self = this.set("gatewayType", value.asInstanceOf[js.Any])
+    def setLastAccessedGatewayIdUndefined: Self = StObject.set(x, "lastAccessedGatewayId", js.undefined)
     
     @scala.inline
-    def deleteGatewayType: Self = this.set("gatewayType", js.undefined)
+    def setLastAccessedGatewayTime(value: String): Self = StObject.set(x, "lastAccessedGatewayTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAccessedGatewayId(value: String): Self = this.set("lastAccessedGatewayId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastAccessedGatewayId: Self = this.set("lastAccessedGatewayId", js.undefined)
-    
-    @scala.inline
-    def setLastAccessedGatewayTime(value: String): Self = this.set("lastAccessedGatewayTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastAccessedGatewayTime: Self = this.set("lastAccessedGatewayTime", js.undefined)
+    def setLastAccessedGatewayTimeUndefined: Self = StObject.set(x, "lastAccessedGatewayTime", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.antdMobile.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaskTransitionName extends js.Object {
+trait MaskTransitionName extends StObject {
   
   var WrapComponent: String = js.native
   
@@ -22,27 +23,15 @@ object MaskTransitionName {
   }
   
   @scala.inline
-  implicit class MaskTransitionNameOps[Self <: MaskTransitionName] (val x: Self) extends AnyVal {
+  implicit class MaskTransitionNameMutableBuilder[Self <: MaskTransitionName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaskTransitionName(value: String): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapComponent(value: String): Self = this.set("WrapComponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaskTransitionName(value: String): Self = this.set("maskTransitionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionName(value: String): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    def setWrapComponent(value: String): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`14`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,36 +39,24 @@ object CallExpression {
   }
   
   @scala.inline
-  implicit class CallExpressionOps[Self <: CallExpression] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArgumentsVarargs(
-      value: (String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode])*
-    ): Self = this.set("arguments", js.Array(value :_*))
+  implicit class CallExpressionMutableBuilder[Self <: CallExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setArguments(
       value: js.Array[
           String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
         ]
-    ): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallee(value: String | js.Symbol): Self = this.set("callee", value.asInstanceOf[js.Any])
+    def setArgumentsVarargs(
+      value: (String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode])*
+    ): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: `14`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCallee(value: String | js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: `14`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

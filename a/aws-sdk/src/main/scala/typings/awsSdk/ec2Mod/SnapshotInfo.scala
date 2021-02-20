@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotInfo extends js.Object {
+trait SnapshotInfo extends StObject {
   
   /**
     * Description specified by the CreateSnapshotRequest that has been applied to all snapshots.
@@ -66,81 +67,69 @@ object SnapshotInfo {
   }
   
   @scala.inline
-  implicit class SnapshotInfoOps[Self <: SnapshotInfo] (val x: Self) extends AnyVal {
+  implicit class SnapshotInfoMutableBuilder[Self <: SnapshotInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncrypted(value: Boolean): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    def setProgress(value: String): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: String): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("Progress", js.undefined)
+    def setStartTime(value: MillisecondDateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotId(value: String): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+    def setState(value: SnapshotState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: MillisecondDateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: SnapshotState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setVolumeSize(value: Integer): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
-    
-    @scala.inline
-    def setVolumeSize(value: Integer): Self = this.set("VolumeSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSize: Self = this.set("VolumeSize", js.undefined)
+    def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
   }
 }

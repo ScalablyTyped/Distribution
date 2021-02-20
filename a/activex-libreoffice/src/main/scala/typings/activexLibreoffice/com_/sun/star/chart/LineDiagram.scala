@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -198,39 +199,27 @@ object LineDiagram {
   }
   
   @scala.inline
-  implicit class LineDiagramOps[Self <: LineDiagram] (val x: Self) extends AnyVal {
+  implicit class LineDiagramMutableBuilder[Self <: LineDiagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLines(value: Boolean): Self = StObject.set(x, "Lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSplineOrder(value: Double): Self = StObject.set(x, "SplineOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSplineResolution(value: Double): Self = StObject.set(x, "SplineResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLines(value: Boolean): Self = this.set("Lines", value.asInstanceOf[js.Any])
+    def setSplineType(value: Double): Self = StObject.set(x, "SplineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplineOrder(value: Double): Self = this.set("SplineOrder", value.asInstanceOf[js.Any])
+    def setSymbolBitmapURL(value: String): Self = StObject.set(x, "SymbolBitmapURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplineResolution(value: Double): Self = this.set("SplineResolution", value.asInstanceOf[js.Any])
+    def setSymbolSize(value: Size): Self = StObject.set(x, "SymbolSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplineType(value: Double): Self = this.set("SplineType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbolBitmapURL(value: String): Self = this.set("SymbolBitmapURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbolSize(value: Size): Self = this.set("SymbolSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbolType(value: Double): Self = this.set("SymbolType", value.asInstanceOf[js.Any])
+    def setSymbolType(value: Double): Self = StObject.set(x, "SymbolType", value.asInstanceOf[js.Any])
   }
 }

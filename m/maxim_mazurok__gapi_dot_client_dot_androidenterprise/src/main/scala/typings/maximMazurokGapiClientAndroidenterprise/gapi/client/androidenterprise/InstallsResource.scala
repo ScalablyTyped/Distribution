@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidenterprise.anon.Accesstoken
 import typings.maximMazurokGapiClientAndroidenterprise.anon.InstallId
 import typings.maximMazurokGapiClientAndroidenterprise.anon.UserId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstallsResource extends js.Object {
+trait InstallsResource extends StObject {
   
   /** Requests to remove an app from a device. A call to get or list will still show the app as installed on the device until it is actually removed. */
   def delete(): Request[Unit] = js.native

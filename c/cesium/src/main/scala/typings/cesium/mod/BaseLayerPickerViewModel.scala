@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "BaseLayerPickerViewModel")
 @js.native
-class BaseLayerPickerViewModel protected () extends js.Object {
+class BaseLayerPickerViewModel protected () extends StObject {
   def this(options: typings.cesium.anon.Globe) = this()
   
   var buttonImageUrl: String = js.native

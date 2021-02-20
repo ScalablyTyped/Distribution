@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used to associate an action name to a function.
   */
 @js.native
-trait Actions extends js.Object {
+trait Actions extends StObject {
   
   /**
     * Function to associate a name with the action function.
@@ -24,21 +25,9 @@ object Actions {
   }
   
   @scala.inline
-  implicit class ActionsOps[Self <: Actions] (val x: Self) extends AnyVal {
+  implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssociate(value: (String, js.Function1[/* arg */ js.UndefOr[js.Any], Unit]) => Unit): Self = this.set("associate", js.Any.fromFunction2(value))
+    def setAssociate(value: (String, js.Function1[/* arg */ js.UndefOr[js.Any], Unit]) => Unit): Self = StObject.set(x, "associate", js.Any.fromFunction2(value))
   }
 }

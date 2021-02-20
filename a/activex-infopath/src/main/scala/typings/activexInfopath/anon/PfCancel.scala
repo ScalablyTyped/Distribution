@@ -1,12 +1,13 @@
 package typings.activexInfopath.anon
 
 import typings.activexInfopath.InfoPath._XDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PfCancel extends js.Object {
+trait PfCancel extends StObject {
   
   val pDocument: _XDocument = js.native
   
@@ -21,24 +22,12 @@ object PfCancel {
   }
   
   @scala.inline
-  implicit class PfCancelOps[Self <: PfCancel] (val x: Self) extends AnyVal {
+  implicit class PfCancelMutableBuilder[Self <: PfCancel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPDocument(value: _XDocument): Self = StObject.set(x, "pDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPDocument(value: _XDocument): Self = this.set("pDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPfCancel(value: Boolean): Self = this.set("pfCancel", value.asInstanceOf[js.Any])
+    def setPfCancel(value: Boolean): Self = StObject.set(x, "pfCancel", value.asInstanceOf[js.Any])
   }
 }

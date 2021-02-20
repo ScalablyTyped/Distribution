@@ -4,6 +4,7 @@ import typings.jupyterlabServices.jupyterlabServicesStrings.is_complete_reply
 import typings.jupyterlabServices.jupyterlabServicesStrings.is_complete_request
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
 import typings.luminoCoreutils.jsonMod.JSONObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,24 +35,12 @@ object IIsCompleteReplyMsg {
   }
   
   @scala.inline
-  implicit class IIsCompleteReplyMsgOps[Self <: IIsCompleteReplyMsg] (val x: Self) extends AnyVal {
+  implicit class IIsCompleteReplyMsgMutableBuilder[Self <: IIsCompleteReplyMsg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: ReplyContent[IIsCompleteReplyIncomplete | IIsCompleteReplyOther]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContent(value: ReplyContent[IIsCompleteReplyIncomplete | IIsCompleteReplyOther]): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent_header(value: IHeader[is_complete_request]): Self = this.set("parent_header", value.asInstanceOf[js.Any])
+    def setParent_header(value: IHeader[is_complete_request]): Self = StObject.set(x, "parent_header", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.sharepoint
 import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.UrlZone
 import typings.sharepoint.SP.Utilities.PrincipalSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISPClientPeoplePickerSchema extends js.Object {
+trait ISPClientPeoplePickerSchema extends StObject {
   
   var AllUrlZones: js.UndefOr[Boolean] = js.native
   
@@ -95,207 +96,195 @@ object ISPClientPeoplePickerSchema {
   }
   
   @scala.inline
-  implicit class ISPClientPeoplePickerSchemaOps[Self <: ISPClientPeoplePickerSchema] (val x: Self) extends AnyVal {
+  implicit class ISPClientPeoplePickerSchemaMutableBuilder[Self <: ISPClientPeoplePickerSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllUrlZones(value: Boolean): Self = StObject.set(x, "AllUrlZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUrlZonesUndefined: Self = StObject.set(x, "AllUrlZones", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowEmailAddresses(value: Boolean): Self = StObject.set(x, "AllowEmailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllUrlZones(value: Boolean): Self = this.set("AllUrlZones", value.asInstanceOf[js.Any])
+    def setAllowEmailAddressesUndefined: Self = StObject.set(x, "AllowEmailAddresses", js.undefined)
     
     @scala.inline
-    def deleteAllUrlZones: Self = this.set("AllUrlZones", js.undefined)
+    def setAllowMultipleValues(value: Boolean): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowEmailAddresses(value: Boolean): Self = this.set("AllowEmailAddresses", value.asInstanceOf[js.Any])
+    def setAllowMultipleValuesUndefined: Self = StObject.set(x, "AllowMultipleValues", js.undefined)
     
     @scala.inline
-    def deleteAllowEmailAddresses: Self = this.set("AllowEmailAddresses", js.undefined)
+    def setAutoFillElementId(value: String): Self = StObject.set(x, "AutoFillElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultipleValues(value: Boolean): Self = this.set("AllowMultipleValues", value.asInstanceOf[js.Any])
+    def setAutoFillElementIdUndefined: Self = StObject.set(x, "AutoFillElementId", js.undefined)
     
     @scala.inline
-    def deleteAllowMultipleValues: Self = this.set("AllowMultipleValues", js.undefined)
+    def setAutoFillEnabled(value: Boolean): Self = StObject.set(x, "AutoFillEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFillElementId(value: String): Self = this.set("AutoFillElementId", value.asInstanceOf[js.Any])
+    def setAutoFillEnabledUndefined: Self = StObject.set(x, "AutoFillEnabled", js.undefined)
     
     @scala.inline
-    def deleteAutoFillElementId: Self = this.set("AutoFillElementId", js.undefined)
+    def setEditorElementId(value: String): Self = StObject.set(x, "EditorElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFillEnabled(value: Boolean): Self = this.set("AutoFillEnabled", value.asInstanceOf[js.Any])
+    def setEditorElementIdUndefined: Self = StObject.set(x, "EditorElementId", js.undefined)
     
     @scala.inline
-    def deleteAutoFillEnabled: Self = this.set("AutoFillEnabled", js.undefined)
+    def setEnabledClaimProvider(value: String): Self = StObject.set(x, "EnabledClaimProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorElementId(value: String): Self = this.set("EditorElementId", value.asInstanceOf[js.Any])
+    def setEnabledClaimProviderUndefined: Self = StObject.set(x, "EnabledClaimProvider", js.undefined)
     
     @scala.inline
-    def deleteEditorElementId: Self = this.set("EditorElementId", js.undefined)
+    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledClaimProvider(value: String): Self = this.set("EnabledClaimProvider", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteEnabledClaimProvider: Self = this.set("EnabledClaimProvider", js.undefined)
+    def setForceClaims(value: Boolean): Self = StObject.set(x, "ForceClaims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setForceClaimsUndefined: Self = StObject.set(x, "ForceClaims", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setHiddenInputId(value: String): Self = StObject.set(x, "HiddenInputId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceClaims(value: Boolean): Self = this.set("ForceClaims", value.asInstanceOf[js.Any])
+    def setHiddenInputIdUndefined: Self = StObject.set(x, "HiddenInputId", js.undefined)
     
     @scala.inline
-    def deleteForceClaims: Self = this.set("ForceClaims", js.undefined)
+    def setInitialHelpText(value: String): Self = StObject.set(x, "InitialHelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenInputId(value: String): Self = this.set("HiddenInputId", value.asInstanceOf[js.Any])
+    def setInitialHelpTextElementId(value: String): Self = StObject.set(x, "InitialHelpTextElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHiddenInputId: Self = this.set("HiddenInputId", js.undefined)
+    def setInitialHelpTextElementIdUndefined: Self = StObject.set(x, "InitialHelpTextElementId", js.undefined)
     
     @scala.inline
-    def setInitialHelpText(value: String): Self = this.set("InitialHelpText", value.asInstanceOf[js.Any])
+    def setInitialHelpTextUndefined: Self = StObject.set(x, "InitialHelpText", js.undefined)
     
     @scala.inline
-    def deleteInitialHelpText: Self = this.set("InitialHelpText", js.undefined)
+    def setInitialSuggestions(value: js.Array[ISPClientPeoplePickerEntity]): Self = StObject.set(x, "InitialSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialHelpTextElementId(value: String): Self = this.set("InitialHelpTextElementId", value.asInstanceOf[js.Any])
+    def setInitialSuggestionsUndefined: Self = StObject.set(x, "InitialSuggestions", js.undefined)
     
     @scala.inline
-    def deleteInitialHelpTextElementId: Self = this.set("InitialHelpTextElementId", js.undefined)
+    def setInitialSuggestionsVarargs(value: ISPClientPeoplePickerEntity*): Self = StObject.set(x, "InitialSuggestions", js.Array(value :_*))
     
     @scala.inline
-    def setInitialSuggestionsVarargs(value: ISPClientPeoplePickerEntity*): Self = this.set("InitialSuggestions", js.Array(value :_*))
+    def setMaximumEntitySuggestions(value: Double): Self = StObject.set(x, "MaximumEntitySuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialSuggestions(value: js.Array[ISPClientPeoplePickerEntity]): Self = this.set("InitialSuggestions", value.asInstanceOf[js.Any])
+    def setMaximumEntitySuggestionsUndefined: Self = StObject.set(x, "MaximumEntitySuggestions", js.undefined)
     
     @scala.inline
-    def deleteInitialSuggestions: Self = this.set("InitialSuggestions", js.undefined)
+    def setOnUserResolvedClientScript(value: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Unit): Self = StObject.set(x, "OnUserResolvedClientScript", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMaximumEntitySuggestions(value: Double): Self = this.set("MaximumEntitySuggestions", value.asInstanceOf[js.Any])
+    def setOnUserResolvedClientScriptUndefined: Self = StObject.set(x, "OnUserResolvedClientScript", js.undefined)
     
     @scala.inline
-    def deleteMaximumEntitySuggestions: Self = this.set("MaximumEntitySuggestions", js.undefined)
+    def setOnValueChangedClientScript(value: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Unit): Self = StObject.set(x, "OnValueChangedClientScript", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnUserResolvedClientScript(value: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Unit): Self = this.set("OnUserResolvedClientScript", js.Any.fromFunction2(value))
+    def setOnValueChangedClientScriptUndefined: Self = StObject.set(x, "OnValueChangedClientScript", js.undefined)
     
     @scala.inline
-    def deleteOnUserResolvedClientScript: Self = this.set("OnUserResolvedClientScript", js.undefined)
+    def setPrincipalAccountType(value: String): Self = StObject.set(x, "PrincipalAccountType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChangedClientScript(value: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Unit): Self = this.set("OnValueChangedClientScript", js.Any.fromFunction2(value))
+    def setPrincipalAccountTypeUndefined: Self = StObject.set(x, "PrincipalAccountType", js.undefined)
     
     @scala.inline
-    def deleteOnValueChangedClientScript: Self = this.set("OnValueChangedClientScript", js.undefined)
+    def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalAccountType(value: String): Self = this.set("PrincipalAccountType", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "Required", js.undefined)
     
     @scala.inline
-    def deletePrincipalAccountType: Self = this.set("PrincipalAccountType", js.undefined)
+    def setResolvePrincipalSource(value: PrincipalSource): Self = StObject.set(x, "ResolvePrincipalSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("Required", value.asInstanceOf[js.Any])
+    def setResolvePrincipalSourceUndefined: Self = StObject.set(x, "ResolvePrincipalSource", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("Required", js.undefined)
+    def setResolvedListElementId(value: String): Self = StObject.set(x, "ResolvedListElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvePrincipalSource(value: PrincipalSource): Self = this.set("ResolvePrincipalSource", value.asInstanceOf[js.Any])
+    def setResolvedListElementIdUndefined: Self = StObject.set(x, "ResolvedListElementId", js.undefined)
     
     @scala.inline
-    def deleteResolvePrincipalSource: Self = this.set("ResolvePrincipalSource", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedListElementId(value: String): Self = this.set("ResolvedListElementId", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "Rows", js.undefined)
     
     @scala.inline
-    def deleteResolvedListElementId: Self = this.set("ResolvedListElementId", js.undefined)
+    def setSearchPrincipalSource(value: PrincipalSource): Self = StObject.set(x, "SearchPrincipalSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("Rows", value.asInstanceOf[js.Any])
+    def setSearchPrincipalSourceUndefined: Self = StObject.set(x, "SearchPrincipalSource", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("Rows", js.undefined)
+    def setSharePointGroupID(value: Double): Self = StObject.set(x, "SharePointGroupID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchPrincipalSource(value: PrincipalSource): Self = this.set("SearchPrincipalSource", value.asInstanceOf[js.Any])
+    def setSharePointGroupIDUndefined: Self = StObject.set(x, "SharePointGroupID", js.undefined)
     
     @scala.inline
-    def deleteSearchPrincipalSource: Self = this.set("SearchPrincipalSource", js.undefined)
+    def setTopLevelElementId(value: String): Self = StObject.set(x, "TopLevelElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharePointGroupID(value: Double): Self = this.set("SharePointGroupID", value.asInstanceOf[js.Any])
+    def setTopLevelElementIdUndefined: Self = StObject.set(x, "TopLevelElementId", js.undefined)
     
     @scala.inline
-    def deleteSharePointGroupID: Self = this.set("SharePointGroupID", js.undefined)
+    def setUrlZone(value: UrlZone): Self = StObject.set(x, "UrlZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopLevelElementId(value: String): Self = this.set("TopLevelElementId", value.asInstanceOf[js.Any])
+    def setUrlZoneUndefined: Self = StObject.set(x, "UrlZone", js.undefined)
     
     @scala.inline
-    def deleteTopLevelElementId: Self = this.set("TopLevelElementId", js.undefined)
+    def setUseLocalSuggestionCache(value: Boolean): Self = StObject.set(x, "UseLocalSuggestionCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlZone(value: UrlZone): Self = this.set("UrlZone", value.asInstanceOf[js.Any])
+    def setUseLocalSuggestionCacheUndefined: Self = StObject.set(x, "UseLocalSuggestionCache", js.undefined)
     
     @scala.inline
-    def deleteUrlZone: Self = this.set("UrlZone", js.undefined)
+    def setUserNoQueryPermission(value: Boolean): Self = StObject.set(x, "UserNoQueryPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseLocalSuggestionCache(value: Boolean): Self = this.set("UseLocalSuggestionCache", value.asInstanceOf[js.Any])
+    def setUserNoQueryPermissionUndefined: Self = StObject.set(x, "UserNoQueryPermission", js.undefined)
     
     @scala.inline
-    def deleteUseLocalSuggestionCache: Self = this.set("UseLocalSuggestionCache", js.undefined)
+    def setVisibleSuggestions(value: Double): Self = StObject.set(x, "VisibleSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserNoQueryPermission(value: Boolean): Self = this.set("UserNoQueryPermission", value.asInstanceOf[js.Any])
+    def setVisibleSuggestionsUndefined: Self = StObject.set(x, "VisibleSuggestions", js.undefined)
     
     @scala.inline
-    def deleteUserNoQueryPermission: Self = this.set("UserNoQueryPermission", js.undefined)
+    def setWaitImageId(value: String): Self = StObject.set(x, "WaitImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibleSuggestions(value: Double): Self = this.set("VisibleSuggestions", value.asInstanceOf[js.Any])
+    def setWaitImageIdUndefined: Self = StObject.set(x, "WaitImageId", js.undefined)
     
     @scala.inline
-    def deleteVisibleSuggestions: Self = this.set("VisibleSuggestions", js.undefined)
+    def setWebApplicationID(value: Guid): Self = StObject.set(x, "WebApplicationID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitImageId(value: String): Self = this.set("WaitImageId", value.asInstanceOf[js.Any])
+    def setWebApplicationIDUndefined: Self = StObject.set(x, "WebApplicationID", js.undefined)
     
     @scala.inline
-    def deleteWaitImageId: Self = this.set("WaitImageId", js.undefined)
+    def setWidth(value: js.Any): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebApplicationID(value: Guid): Self = this.set("WebApplicationID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebApplicationID: Self = this.set("WebApplicationID", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: js.Any): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("Width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

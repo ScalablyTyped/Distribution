@@ -2,6 +2,7 @@ package typings.babylonjs.BABYLON
 
 import typings.std.MouseWheelEvent
 import typings.std.PointerEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,30 +40,18 @@ object PointerInfoPre {
   }
   
   @scala.inline
-  implicit class PointerInfoPreOps[Self <: PointerInfoPre] (val x: Self) extends AnyVal {
+  implicit class PointerInfoPreMutableBuilder[Self <: PointerInfoPre] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalPosition(value: Vector2): Self = StObject.set(x, "localPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRay(value: Nullable[Ray]): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRayNull: Self = StObject.set(x, "ray", null)
     
     @scala.inline
-    def setLocalPosition(value: Vector2): Self = this.set("localPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipOnPointerObservable(value: Boolean): Self = this.set("skipOnPointerObservable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRay(value: Nullable[Ray]): Self = this.set("ray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRayNull: Self = this.set("ray", null)
+    def setSkipOnPointerObservable(value: Boolean): Self = StObject.set(x, "skipOnPointerObservable", value.asInstanceOf[js.Any])
   }
 }

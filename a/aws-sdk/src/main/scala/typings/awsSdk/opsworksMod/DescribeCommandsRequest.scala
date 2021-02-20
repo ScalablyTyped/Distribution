@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCommandsRequest extends js.Object {
+trait DescribeCommandsRequest extends StObject {
   
   /**
     * An array of command IDs. If you include this parameter, DescribeCommands returns a description of the specified commands. Otherwise, it returns a description of every command.
@@ -31,39 +32,27 @@ object DescribeCommandsRequest {
   }
   
   @scala.inline
-  implicit class DescribeCommandsRequestOps[Self <: DescribeCommandsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeCommandsRequestMutableBuilder[Self <: DescribeCommandsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommandIds(value: Strings): Self = StObject.set(x, "CommandIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandIdsUndefined: Self = StObject.set(x, "CommandIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommandIdsVarargs(value: String*): Self = StObject.set(x, "CommandIds", js.Array(value :_*))
     
     @scala.inline
-    def setCommandIdsVarargs(value: String*): Self = this.set("CommandIds", js.Array(value :_*))
+    def setDeploymentId(value: String): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandIds(value: Strings): Self = this.set("CommandIds", value.asInstanceOf[js.Any])
+    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
     @scala.inline
-    def deleteCommandIds: Self = this.set("CommandIds", js.undefined)
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: String): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
-    
-    @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatepickerFormatDateOptions extends js.Object {
+trait DatepickerFormatDateOptions extends StObject {
   
   var dayNames: js.UndefOr[js.Array[String]] = js.native
   
@@ -24,54 +25,42 @@ object DatepickerFormatDateOptions {
   }
   
   @scala.inline
-  implicit class DatepickerFormatDateOptionsOps[Self <: DatepickerFormatDateOptions] (val x: Self) extends AnyVal {
+  implicit class DatepickerFormatDateOptionsMutableBuilder[Self <: DatepickerFormatDateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayNamesShort(value: js.Array[String]): Self = StObject.set(x, "dayNamesShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
     
     @scala.inline
-    def setDayNamesVarargs(value: String*): Self = this.set("dayNames", js.Array(value :_*))
+    def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
     
     @scala.inline
-    def setDayNames(value: js.Array[String]): Self = this.set("dayNames", value.asInstanceOf[js.Any])
+    def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
     
     @scala.inline
-    def deleteDayNames: Self = this.set("dayNames", js.undefined)
+    def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
     
     @scala.inline
-    def setDayNamesShortVarargs(value: String*): Self = this.set("dayNamesShort", js.Array(value :_*))
+    def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayNamesShort(value: js.Array[String]): Self = this.set("dayNamesShort", value.asInstanceOf[js.Any])
+    def setMonthNamesShort(value: js.Array[String]): Self = StObject.set(x, "monthNamesShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDayNamesShort: Self = this.set("dayNamesShort", js.undefined)
+    def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
     
     @scala.inline
-    def setMonthNamesVarargs(value: String*): Self = this.set("monthNames", js.Array(value :_*))
+    def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
     
     @scala.inline
-    def setMonthNames(value: js.Array[String]): Self = this.set("monthNames", value.asInstanceOf[js.Any])
+    def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
     
     @scala.inline
-    def deleteMonthNames: Self = this.set("monthNames", js.undefined)
-    
-    @scala.inline
-    def setMonthNamesShortVarargs(value: String*): Self = this.set("monthNamesShort", js.Array(value :_*))
-    
-    @scala.inline
-    def setMonthNamesShort(value: js.Array[String]): Self = this.set("monthNamesShort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonthNamesShort: Self = this.set("monthNamesShort", js.undefined)
+    def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
   }
 }

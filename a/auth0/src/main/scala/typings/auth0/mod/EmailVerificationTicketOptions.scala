@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailVerificationTicketOptions extends js.Object {
+trait EmailVerificationTicketOptions extends StObject {
   
   var result_url: String = js.native
   
@@ -20,24 +21,12 @@ object EmailVerificationTicketOptions {
   }
   
   @scala.inline
-  implicit class EmailVerificationTicketOptionsOps[Self <: EmailVerificationTicketOptions] (val x: Self) extends AnyVal {
+  implicit class EmailVerificationTicketOptionsMutableBuilder[Self <: EmailVerificationTicketOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResult_url(value: String): Self = StObject.set(x, "result_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResult_url(value: String): Self = this.set("result_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

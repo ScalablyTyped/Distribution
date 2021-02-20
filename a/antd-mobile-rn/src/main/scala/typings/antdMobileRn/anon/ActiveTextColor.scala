@@ -1,12 +1,13 @@
 package typings.antdMobileRn.anon
 
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveTextColor extends js.Object {
+trait ActiveTextColor extends StObject {
   
   var activeTextColor: String = js.native
   
@@ -36,36 +37,24 @@ object ActiveTextColor {
   }
   
   @scala.inline
-  implicit class ActiveTextColorOps[Self <: ActiveTextColor] (val x: Self) extends AnyVal {
+  implicit class ActiveTextColorMutableBuilder[Self <: ActiveTextColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTextColor(value: String): Self = StObject.set(x, "activeTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInactiveTextColor(value: String): Self = StObject.set(x, "inactiveTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTab(value: ViewStyle): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTextColor(value: String): Self = this.set("activeTextColor", value.asInstanceOf[js.Any])
+    def setTabs(value: ViewStyle): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactiveTextColor(value: String): Self = this.set("inactiveTextColor", value.asInstanceOf[js.Any])
+    def setTextStyle(value: ViewStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTab(value: ViewStyle): Self = this.set("tab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabs(value: ViewStyle): Self = this.set("tabs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextStyle(value: ViewStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderline(value: ViewStyle): Self = this.set("underline", value.asInstanceOf[js.Any])
+    def setUnderline(value: ViewStyle): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
   }
 }

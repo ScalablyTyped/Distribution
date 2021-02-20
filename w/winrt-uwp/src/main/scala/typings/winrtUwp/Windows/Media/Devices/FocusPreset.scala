@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FocusPreset extends js.Object
+sealed trait FocusPreset extends StObject
 /** Defines the values for the possible focus presets. */
 @JSGlobal("Windows.Media.Devices.FocusPreset")
 @js.native
-object FocusPreset extends js.Object {
+object FocusPreset extends StObject {
   
   /** Indicates that focus is automatically set by the capture. */
   @js.native

@@ -5,12 +5,13 @@ import typings.googlemaps.google.maps.LatLngBounds
 import typings.googlemaps.google.maps.Map
 import typings.googlemaps.google.maps.Marker
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cluster extends js.Object {
+trait Cluster extends StObject {
   
   /**
     * Adds a marker to the cluster.
@@ -128,54 +129,42 @@ object Cluster {
   }
   
   @scala.inline
-  implicit class ClusterOps[Self <: Cluster] (val x: Self) extends AnyVal {
+  implicit class ClusterMutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddMarker(value: Marker => Boolean): Self = StObject.set(x, "addMarker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateBounds_(value: () => Unit): Self = StObject.set(x, "calculateBounds_", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBounds(value: () => LatLngBounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddMarker(value: Marker => Boolean): Self = this.set("addMarker", js.Any.fromFunction1(value))
+    def setGetCenter(value: () => LatLng): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalculateBounds_(value: () => Unit): Self = this.set("calculateBounds_", js.Any.fromFunction0(value))
+    def setGetMap(value: () => Map[Element]): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBounds(value: () => LatLngBounds): Self = this.set("getBounds", js.Any.fromFunction0(value))
+    def setGetMarkerClusterer(value: () => MarkerClusterer): Self = StObject.set(x, "getMarkerClusterer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCenter(value: () => LatLng): Self = this.set("getCenter", js.Any.fromFunction0(value))
+    def setGetMarkers(value: () => js.Array[Marker]): Self = StObject.set(x, "getMarkers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMap(value: () => Map[Element]): Self = this.set("getMap", js.Any.fromFunction0(value))
+    def setGetSize(value: () => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMarkerClusterer(value: () => MarkerClusterer): Self = this.set("getMarkerClusterer", js.Any.fromFunction0(value))
+    def setIsMarkerAlreadyAdded_(value: Marker => Boolean): Self = StObject.set(x, "isMarkerAlreadyAdded_", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMarkers(value: () => js.Array[Marker]): Self = this.set("getMarkers", js.Any.fromFunction0(value))
+    def setIsMarkerInClusterBounds(value: Marker => Boolean): Self = StObject.set(x, "isMarkerInClusterBounds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSize(value: () => Double): Self = this.set("getSize", js.Any.fromFunction0(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsMarkerAlreadyAdded_(value: Marker => Boolean): Self = this.set("isMarkerAlreadyAdded_", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsMarkerInClusterBounds(value: Marker => Boolean): Self = this.set("isMarkerInClusterBounds", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateIcon_(value: () => Unit): Self = this.set("updateIcon_", js.Any.fromFunction0(value))
+    def setUpdateIcon_(value: () => Unit): Self = StObject.set(x, "updateIcon_", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.hammerjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Recognizer extends js.Object {
+trait Recognizer extends StObject {
   
   def canEmit(): Boolean = js.native
   

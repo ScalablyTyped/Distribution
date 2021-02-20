@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.outputMod.apps.v1beta1
 
 import typings.pulumiKubernetes.outputMod.core.v1.PodTemplateSpec
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DeploymentSpec is the specification of the desired behavior of the Deployment.
   */
 @js.native
-trait DeploymentSpec extends js.Object {
+trait DeploymentSpec extends StObject {
   
   /**
     * Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)
@@ -76,45 +77,33 @@ object DeploymentSpec {
   }
   
   @scala.inline
-  implicit class DeploymentSpecOps[Self <: DeploymentSpec] (val x: Self) extends AnyVal {
+  implicit class DeploymentSpecMutableBuilder[Self <: DeploymentSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinReadySeconds(value: Double): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProgressDeadlineSeconds(value: Double): Self = StObject.set(x, "progressDeadlineSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinReadySeconds(value: Double): Self = this.set("minReadySeconds", value.asInstanceOf[js.Any])
+    def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    def setRevisionHistoryLimit(value: Double): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressDeadlineSeconds(value: Double): Self = this.set("progressDeadlineSeconds", value.asInstanceOf[js.Any])
+    def setRollbackTo(value: RollbackConfig): Self = StObject.set(x, "rollbackTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicas(value: Double): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionHistoryLimit(value: Double): Self = this.set("revisionHistoryLimit", value.asInstanceOf[js.Any])
+    def setStrategy(value: DeploymentStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollbackTo(value: RollbackConfig): Self = this.set("rollbackTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrategy(value: DeploymentStrategy): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplate(value: PodTemplateSpec): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplate(value: PodTemplateSpec): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

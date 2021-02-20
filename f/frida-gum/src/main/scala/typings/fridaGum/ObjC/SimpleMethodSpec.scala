@@ -1,5 +1,6 @@
 package typings.fridaGum.ObjC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object SimpleMethodSpec {
   }
   
   @scala.inline
-  implicit class SimpleMethodSpecOps[Self <: SimpleMethodSpec[_], I] (val x: Self with SimpleMethodSpec[I]) extends AnyVal {
+  implicit class SimpleMethodSpecMutableBuilder[Self <: SimpleMethodSpec[_], I] (val x: Self with SimpleMethodSpec[I]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgTypesVarargs(value: String*): Self = StObject.set(x, "argTypes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImplementation(value: I): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgTypesVarargs(value: String*): Self = this.set("argTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setArgTypes(value: js.Array[String]): Self = this.set("argTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImplementation(value: I): Self = this.set("implementation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetType(value: String): Self = this.set("retType", value.asInstanceOf[js.Any])
+    def setRetType(value: String): Self = StObject.set(x, "retType", value.asInstanceOf[js.Any])
   }
 }

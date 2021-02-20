@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,45 +27,33 @@ object BaselineDetails {
   }
   
   @scala.inline
-  implicit class BaselineDetailsOps[Self <: BaselineDetails] (val x: Self) extends AnyVal {
+  implicit class BaselineDetailsMutableBuilder[Self <: BaselineDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLower_boundary(value: Double): Self = StObject.set(x, "lower_boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseline(value: Double): Self = this.set("baseline", value.asInstanceOf[js.Any])
+    def setLower_boundaryUndefined: Self = StObject.set(x, "lower_boundary", js.undefined)
     
     @scala.inline
-    def deleteBaseline: Self = this.set("baseline", js.undefined)
+    def setUpper_boundary(value: Double): Self = StObject.set(x, "upper_boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLower_boundary(value: Double): Self = this.set("lower_boundary", value.asInstanceOf[js.Any])
+    def setUpper_boundaryUndefined: Self = StObject.set(x, "upper_boundary", js.undefined)
     
     @scala.inline
-    def deleteLower_boundary: Self = this.set("lower_boundary", js.undefined)
+    def setValues(value: js.Array[BaselineValues]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpper_boundary(value: Double): Self = this.set("upper_boundary", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteUpper_boundary: Self = this.set("upper_boundary", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: BaselineValues*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[BaselineValues]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: BaselineValues*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

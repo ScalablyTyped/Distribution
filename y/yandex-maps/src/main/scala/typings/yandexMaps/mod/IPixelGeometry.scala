@@ -1,5 +1,6 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ object IPixelGeometry {
   
   @scala.inline
   def apply(
-    equals: IPixelGeometry => Boolean,
+    equals_ : IPixelGeometry => Boolean,
     events: IEventManager[js.Object],
     getBounds: () => js.Array[js.Array[Double]] | Null,
     getMetaData: () => js.Object,
@@ -27,35 +28,24 @@ object IPixelGeometry {
     scale: Double => IPixelGeometry,
     shift: js.Array[Double] => IPixelGeometry
   ): IPixelGeometry = {
-    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), events = events.asInstanceOf[js.Any], getBounds = js.Any.fromFunction0(getBounds), getMetaData = js.Any.fromFunction0(getMetaData), getType = js.Any.fromFunction0(getType), scale = js.Any.fromFunction1(scale), shift = js.Any.fromFunction1(shift))
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], getBounds = js.Any.fromFunction0(getBounds), getMetaData = js.Any.fromFunction0(getMetaData), getType = js.Any.fromFunction0(getType), scale = js.Any.fromFunction1(scale), shift = js.Any.fromFunction1(shift))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[IPixelGeometry]
   }
   
   @scala.inline
-  implicit class IPixelGeometryOps[Self <: IPixelGeometry] (val x: Self) extends AnyVal {
+  implicit class IPixelGeometryMutableBuilder[Self <: IPixelGeometry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEquals_(value: IPixelGeometry => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMetaData(value: () => js.Object): Self = StObject.set(x, "getMetaData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScale(value: Double => IPixelGeometry): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEquals(value: IPixelGeometry => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetMetaData(value: () => js.Object): Self = this.set("getMetaData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setScale(value: Double => IPixelGeometry): Self = this.set("scale", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShift(value: js.Array[Double] => IPixelGeometry): Self = this.set("shift", js.Any.fromFunction1(value))
+    def setShift(value: js.Array[Double] => IPixelGeometry): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
   }
 }

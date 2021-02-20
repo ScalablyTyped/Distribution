@@ -6,17 +6,18 @@ import typings.swiper.mod.SelectableElement
 import typings.swiper.mod.SwiperModule
 import typings.swiper.mod.SwiperOptions
 import typings.swiper.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("swiper/js/swiper.esm", JSImport.Namespace)
-@js.native
-object swiperEsmMod extends js.Object {
+object swiperEsmMod {
   
+  @JSImport("swiper/js/swiper.esm", "A11y")
   @js.native
   class A11y () extends SwiperModule
   
+  @JSImport("swiper/js/swiper.esm", "Autoplay")
   @js.native
   class Autoplay () extends SwiperModule {
     
@@ -38,6 +39,7 @@ object swiperEsmMod extends js.Object {
     def stop(): Boolean = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "Controller")
   @js.native
   class Controller () extends SwiperModule {
     
@@ -48,24 +50,31 @@ object swiperEsmMod extends js.Object {
     var control: js.UndefOr[default | js.Array[default]] = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "EffectCoverflow")
   @js.native
   class EffectCoverflow () extends SwiperModule
   
+  @JSImport("swiper/js/swiper.esm", "EffectCube")
   @js.native
   class EffectCube () extends SwiperModule
   
+  @JSImport("swiper/js/swiper.esm", "EffectFade")
   @js.native
   class EffectFade () extends SwiperModule
   
+  @JSImport("swiper/js/swiper.esm", "EffectFlip")
   @js.native
   class EffectFlip () extends SwiperModule
   
+  @JSImport("swiper/js/swiper.esm", "HashNavigation")
   @js.native
   class HashNavigation () extends SwiperModule
   
+  @JSImport("swiper/js/swiper.esm", "History")
   @js.native
   class History () extends SwiperModule
   
+  @JSImport("swiper/js/swiper.esm", "Keyboard")
   @js.native
   class Keyboard () extends SwiperModule {
     
@@ -86,6 +95,7 @@ object swiperEsmMod extends js.Object {
     var enabled: Boolean = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "Lazy")
   @js.native
   class Lazy () extends SwiperModule {
     
@@ -101,6 +111,7 @@ object swiperEsmMod extends js.Object {
     def loadInSlide(index: Double): Unit = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "Mousewheel")
   @js.native
   class Mousewheel () extends SwiperModule {
     
@@ -121,6 +132,7 @@ object swiperEsmMod extends js.Object {
     var enabled: Boolean = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "Navigation")
   @js.native
   class Navigation () extends SwiperModule {
     
@@ -140,6 +152,7 @@ object swiperEsmMod extends js.Object {
     def update(): Unit = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "Pagination")
   @js.native
   class Pagination () extends SwiperModule {
     
@@ -166,9 +179,11 @@ object swiperEsmMod extends js.Object {
     def update(): Unit = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "Parallax")
   @js.native
   class Parallax () extends SwiperModule
   
+  @JSImport("swiper/js/swiper.esm", "Scrollbar")
   @js.native
   class Scrollbar () extends SwiperModule {
     
@@ -190,6 +205,7 @@ object swiperEsmMod extends js.Object {
     def updateSize(): Unit = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "Swiper")
   @js.native
   class Swiper protected () extends default {
     /**
@@ -202,15 +218,17 @@ object swiperEsmMod extends js.Object {
     def this(container: SelectableElement, options: SwiperOptions) = this()
   }
   /* static members */
-  @js.native
-  object Swiper extends js.Object {
+  object Swiper {
     
     /**
       * Installs modules on Swiper in runtime.
       */
+    @JSImport("swiper/js/swiper.esm", "Swiper.use")
+    @js.native
     def use(modules: js.Array[SwiperModule]): Unit = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "Virtual")
   @js.native
   class Virtual () extends SwiperModule {
     
@@ -271,6 +289,7 @@ object swiperEsmMod extends js.Object {
     def update(): Unit = js.native
   }
   
+  @JSImport("swiper/js/swiper.esm", "Zoom")
   @js.native
   class Zoom () extends SwiperModule {
     

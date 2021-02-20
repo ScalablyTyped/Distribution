@@ -2,6 +2,7 @@ package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.enumMod.Codec
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,81 +85,69 @@ object ChannelEntry {
   }
   
   @scala.inline
-  implicit class ChannelEntryOps[Self <: ChannelEntry] (val x: Self) extends AnyVal {
+  implicit class ChannelEntryMutableBuilder[Self <: ChannelEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelBannerGfxUrl(value: String): Self = StObject.set(x, "channelBannerGfxUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelBannerMode(value: Double): Self = StObject.set(x, "channelBannerMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelCodec(value: Codec): Self = StObject.set(x, "channelCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelBannerGfxUrl(value: String): Self = this.set("channelBannerGfxUrl", value.asInstanceOf[js.Any])
+    def setChannelCodecQuality(value: Double): Self = StObject.set(x, "channelCodecQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelBannerMode(value: Double): Self = this.set("channelBannerMode", value.asInstanceOf[js.Any])
+    def setChannelFlagDefault(value: Boolean): Self = StObject.set(x, "channelFlagDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelCodec(value: Codec): Self = this.set("channelCodec", value.asInstanceOf[js.Any])
+    def setChannelFlagPassword(value: Boolean): Self = StObject.set(x, "channelFlagPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelCodecQuality(value: Double): Self = this.set("channelCodecQuality", value.asInstanceOf[js.Any])
+    def setChannelFlagPermanent(value: Boolean): Self = StObject.set(x, "channelFlagPermanent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelFlagDefault(value: Boolean): Self = this.set("channelFlagDefault", value.asInstanceOf[js.Any])
+    def setChannelFlagSemiPermanent(value: Boolean): Self = StObject.set(x, "channelFlagSemiPermanent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelFlagPassword(value: Boolean): Self = this.set("channelFlagPassword", value.asInstanceOf[js.Any])
+    def setChannelIconId(value: String): Self = StObject.set(x, "channelIconId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelFlagPermanent(value: Boolean): Self = this.set("channelFlagPermanent", value.asInstanceOf[js.Any])
+    def setChannelMaxclients(value: Double): Self = StObject.set(x, "channelMaxclients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelFlagSemiPermanent(value: Boolean): Self = this.set("channelFlagSemiPermanent", value.asInstanceOf[js.Any])
+    def setChannelMaxfamilyclients(value: Double): Self = StObject.set(x, "channelMaxfamilyclients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelIconId(value: String): Self = this.set("channelIconId", value.asInstanceOf[js.Any])
+    def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelMaxclients(value: Double): Self = this.set("channelMaxclients", value.asInstanceOf[js.Any])
+    def setChannelNeededSubscribePower(value: Double): Self = StObject.set(x, "channelNeededSubscribePower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelMaxfamilyclients(value: Double): Self = this.set("channelMaxfamilyclients", value.asInstanceOf[js.Any])
+    def setChannelNeededTalkPower(value: Double): Self = StObject.set(x, "channelNeededTalkPower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelName(value: String): Self = this.set("channelName", value.asInstanceOf[js.Any])
+    def setChannelOrder(value: Double): Self = StObject.set(x, "channelOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelNeededSubscribePower(value: Double): Self = this.set("channelNeededSubscribePower", value.asInstanceOf[js.Any])
+    def setChannelTopic(value: String): Self = StObject.set(x, "channelTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelNeededTalkPower(value: Double): Self = this.set("channelNeededTalkPower", value.asInstanceOf[js.Any])
+    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelOrder(value: Double): Self = this.set("channelOrder", value.asInstanceOf[js.Any])
+    def setPid(value: String): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelTopic(value: String): Self = this.set("channelTopic", value.asInstanceOf[js.Any])
+    def setSecondsEmpty(value: Double): Self = StObject.set(x, "secondsEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCid(value: String): Self = this.set("cid", value.asInstanceOf[js.Any])
+    def setTotalClients(value: Double): Self = StObject.set(x, "totalClients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPid(value: String): Self = this.set("pid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondsEmpty(value: Double): Self = this.set("secondsEmpty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalClients(value: Double): Self = this.set("totalClients", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalClientsFamily(value: Double): Self = this.set("totalClientsFamily", value.asInstanceOf[js.Any])
+    def setTotalClientsFamily(value: Double): Self = StObject.set(x, "totalClientsFamily", value.asInstanceOf[js.Any])
   }
 }

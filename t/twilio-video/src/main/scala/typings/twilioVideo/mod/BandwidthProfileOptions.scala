@@ -1,11 +1,12 @@
 package typings.twilioVideo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BandwidthProfileOptions extends js.Object {
+trait BandwidthProfileOptions extends StObject {
   
   var video: js.UndefOr[VideoBandwidthProfileOptions] = js.native
 }
@@ -18,24 +19,12 @@ object BandwidthProfileOptions {
   }
   
   @scala.inline
-  implicit class BandwidthProfileOptionsOps[Self <: BandwidthProfileOptions] (val x: Self) extends AnyVal {
+  implicit class BandwidthProfileOptionsMutableBuilder[Self <: BandwidthProfileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVideo(value: VideoBandwidthProfileOptions): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVideo(value: VideoBandwidthProfileOptions): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

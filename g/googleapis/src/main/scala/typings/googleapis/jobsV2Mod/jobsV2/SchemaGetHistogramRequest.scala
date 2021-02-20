@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `GetHistogram` method.
   */
 @js.native
-trait SchemaGetHistogramRequest extends js.Object {
+trait SchemaGetHistogramRequest extends StObject {
   
   /**
     * Optional.  Controls whether to broaden the search to avoid too few
@@ -58,51 +59,39 @@ object SchemaGetHistogramRequest {
   }
   
   @scala.inline
-  implicit class SchemaGetHistogramRequestOps[Self <: SchemaGetHistogramRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGetHistogramRequestMutableBuilder[Self <: SchemaGetHistogramRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowBroadening(value: Boolean): Self = StObject.set(x, "allowBroadening", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowBroadeningUndefined: Self = StObject.set(x, "allowBroadening", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: SchemaJobFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowBroadening(value: Boolean): Self = this.set("allowBroadening", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteAllowBroadening: Self = this.set("allowBroadening", js.undefined)
+    def setQuery(value: SchemaJobQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: SchemaJobFilters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setRequestMetadata(value: SchemaRequestMetadata): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: SchemaJobQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setSearchTypes(value: js.Array[String]): Self = StObject.set(x, "searchTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestMetadata(value: SchemaRequestMetadata): Self = this.set("requestMetadata", value.asInstanceOf[js.Any])
+    def setSearchTypesUndefined: Self = StObject.set(x, "searchTypes", js.undefined)
     
     @scala.inline
-    def deleteRequestMetadata: Self = this.set("requestMetadata", js.undefined)
-    
-    @scala.inline
-    def setSearchTypesVarargs(value: String*): Self = this.set("searchTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSearchTypes(value: js.Array[String]): Self = this.set("searchTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchTypes: Self = this.set("searchTypes", js.undefined)
+    def setSearchTypesVarargs(value: String*): Self = StObject.set(x, "searchTypes", js.Array(value :_*))
   }
 }

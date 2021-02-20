@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Instance extends js.Object {
+trait Instance extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the instance.
@@ -66,78 +67,66 @@ object Instance {
   }
   
   @scala.inline
-  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: ARN): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setId(value: InstanceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: Timestamp_): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setIdentityManagementType(value: DirectoryType): Self = StObject.set(x, "IdentityManagementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: InstanceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setIdentityManagementTypeUndefined: Self = StObject.set(x, "IdentityManagementType", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setInboundCallsEnabled(value: InboundCallsEnabled): Self = StObject.set(x, "InboundCallsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityManagementType(value: DirectoryType): Self = this.set("IdentityManagementType", value.asInstanceOf[js.Any])
+    def setInboundCallsEnabledUndefined: Self = StObject.set(x, "InboundCallsEnabled", js.undefined)
     
     @scala.inline
-    def deleteIdentityManagementType: Self = this.set("IdentityManagementType", js.undefined)
+    def setInstanceAlias(value: DirectoryAlias): Self = StObject.set(x, "InstanceAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboundCallsEnabled(value: InboundCallsEnabled): Self = this.set("InboundCallsEnabled", value.asInstanceOf[js.Any])
+    def setInstanceAliasUndefined: Self = StObject.set(x, "InstanceAlias", js.undefined)
     
     @scala.inline
-    def deleteInboundCallsEnabled: Self = this.set("InboundCallsEnabled", js.undefined)
+    def setInstanceStatus(value: InstanceStatus): Self = StObject.set(x, "InstanceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceAlias(value: DirectoryAlias): Self = this.set("InstanceAlias", value.asInstanceOf[js.Any])
+    def setInstanceStatusUndefined: Self = StObject.set(x, "InstanceStatus", js.undefined)
     
     @scala.inline
-    def deleteInstanceAlias: Self = this.set("InstanceAlias", js.undefined)
+    def setOutboundCallsEnabled(value: OutboundCallsEnabled): Self = StObject.set(x, "OutboundCallsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceStatus(value: InstanceStatus): Self = this.set("InstanceStatus", value.asInstanceOf[js.Any])
+    def setOutboundCallsEnabledUndefined: Self = StObject.set(x, "OutboundCallsEnabled", js.undefined)
     
     @scala.inline
-    def deleteInstanceStatus: Self = this.set("InstanceStatus", js.undefined)
+    def setServiceRole(value: ARN): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutboundCallsEnabled(value: OutboundCallsEnabled): Self = this.set("OutboundCallsEnabled", value.asInstanceOf[js.Any])
+    def setServiceRoleUndefined: Self = StObject.set(x, "ServiceRole", js.undefined)
     
     @scala.inline
-    def deleteOutboundCallsEnabled: Self = this.set("OutboundCallsEnabled", js.undefined)
+    def setStatusReason(value: InstanceStatusReason): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRole(value: ARN): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
-    
-    @scala.inline
-    def setStatusReason(value: InstanceStatusReason): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+    def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
   }
 }

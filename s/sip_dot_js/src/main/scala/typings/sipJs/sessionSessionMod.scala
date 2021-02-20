@@ -1,6 +1,5 @@
 package typings.sipJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.sipJs.bodyMod.Body
 import typings.sipJs.inviteMod.OutgoingInviteRequest
 import typings.sipJs.inviteMod.OutgoingInviteRequestDelegate
@@ -14,16 +13,75 @@ import typings.sipJs.outgoingRequestMod.RequestOptions
 import typings.sipJs.prackMod.OutgoingPrackRequest
 import typings.sipJs.referMod.OutgoingReferRequest
 import typings.sipJs.sessionSessionDelegateMod.SessionDelegate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/session/session", JSImport.Namespace)
-@js.native
-object sessionSessionMod extends js.Object {
+object sessionSessionMod {
   
   @js.native
-  trait Session extends js.Object {
+  sealed trait SessionState extends StObject
+  @JSImport("sip.js/lib/core/session/session", "SessionState")
+  @js.native
+  object SessionState extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[SessionState with String] = js.native
+    
+    @js.native
+    sealed trait AckWait extends SessionState
+    /* "AckWait" */ val AckWait: typings.sipJs.sessionSessionMod.SessionState.AckWait with String = js.native
+    
+    @js.native
+    sealed trait Confirmed extends SessionState
+    /* "Confirmed" */ val Confirmed: typings.sipJs.sessionSessionMod.SessionState.Confirmed with String = js.native
+    
+    @js.native
+    sealed trait Early extends SessionState
+    /* "Early" */ val Early: typings.sipJs.sessionSessionMod.SessionState.Early with String = js.native
+    
+    @js.native
+    sealed trait Initial extends SessionState
+    /* "Initial" */ val Initial: typings.sipJs.sessionSessionMod.SessionState.Initial with String = js.native
+    
+    @js.native
+    sealed trait Terminated extends SessionState
+    /* "Terminated" */ val Terminated: typings.sipJs.sessionSessionMod.SessionState.Terminated with String = js.native
+  }
+  
+  @js.native
+  sealed trait SignalingState extends StObject
+  @JSImport("sip.js/lib/core/session/session", "SignalingState")
+  @js.native
+  object SignalingState extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[SignalingState with String] = js.native
+    
+    @js.native
+    sealed trait Closed extends SignalingState
+    /* "Closed" */ val Closed: typings.sipJs.sessionSessionMod.SignalingState.Closed with String = js.native
+    
+    @js.native
+    sealed trait HaveLocalOffer extends SignalingState
+    /* "HaveLocalOffer" */ val HaveLocalOffer: typings.sipJs.sessionSessionMod.SignalingState.HaveLocalOffer with String = js.native
+    
+    @js.native
+    sealed trait HaveRemoteOffer extends SignalingState
+    /* "HaveRemoteOffer" */ val HaveRemoteOffer: typings.sipJs.sessionSessionMod.SignalingState.HaveRemoteOffer with String = js.native
+    
+    @js.native
+    sealed trait Initial extends SignalingState
+    /* "Initial" */ val Initial: typings.sipJs.sessionSessionMod.SignalingState.Initial with String = js.native
+    
+    @js.native
+    sealed trait Stable extends SignalingState
+    /* "Stable" */ val Stable: typings.sipJs.sessionSessionMod.SignalingState.Stable with String = js.native
+  }
+  
+  @js.native
+  trait Session extends StObject {
     
     /** The current answer if signalingState is stable. Otherwise undefined. */
     val answer: js.UndefOr[Body] = js.native
@@ -141,73 +199,5 @@ object sessionSessionMod extends js.Object {
     
     /** Current state of the offer/answer exchange. */
     val signalingState: SignalingState = js.native
-  }
-  
-  @js.native
-  sealed trait SessionState extends js.Object
-  @js.native
-  object SessionState extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[SessionState with String] = js.native
-    
-    @js.native
-    sealed trait AckWait extends SessionState
-    /* "AckWait" */ @js.native
-    object AckWait extends TopLevel[AckWait with String]
-    
-    @js.native
-    sealed trait Confirmed extends SessionState
-    /* "Confirmed" */ @js.native
-    object Confirmed extends TopLevel[Confirmed with String]
-    
-    @js.native
-    sealed trait Early extends SessionState
-    /* "Early" */ @js.native
-    object Early extends TopLevel[Early with String]
-    
-    @js.native
-    sealed trait Initial extends SessionState
-    /* "Initial" */ @js.native
-    object Initial extends TopLevel[Initial with String]
-    
-    @js.native
-    sealed trait Terminated extends SessionState
-    /* "Terminated" */ @js.native
-    object Terminated extends TopLevel[Terminated with String]
-  }
-  
-  @js.native
-  sealed trait SignalingState extends js.Object
-  @js.native
-  object SignalingState extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[SignalingState with String] = js.native
-    
-    @js.native
-    sealed trait Closed extends SignalingState
-    /* "Closed" */ @js.native
-    object Closed extends TopLevel[Closed with String]
-    
-    @js.native
-    sealed trait HaveLocalOffer extends SignalingState
-    /* "HaveLocalOffer" */ @js.native
-    object HaveLocalOffer extends TopLevel[HaveLocalOffer with String]
-    
-    @js.native
-    sealed trait HaveRemoteOffer extends SignalingState
-    /* "HaveRemoteOffer" */ @js.native
-    object HaveRemoteOffer extends TopLevel[HaveRemoteOffer with String]
-    
-    @js.native
-    sealed trait Initial extends SignalingState
-    /* "Initial" */ @js.native
-    object Initial extends TopLevel[Initial with String]
-    
-    @js.native
-    sealed trait Stable extends SignalingState
-    /* "Stable" */ @js.native
-    object Stable extends TopLevel[Stable with String]
   }
 }

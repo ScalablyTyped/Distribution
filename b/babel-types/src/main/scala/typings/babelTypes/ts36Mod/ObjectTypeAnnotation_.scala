@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.ObjectTypeAnnotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,39 +39,27 @@ object ObjectTypeAnnotation_ {
   }
   
   @scala.inline
-  implicit class ObjectTypeAnnotation_Ops[Self <: ObjectTypeAnnotation_] (val x: Self) extends AnyVal {
+  implicit class ObjectTypeAnnotation_MutableBuilder[Self <: ObjectTypeAnnotation_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallProperties(value: js.Array[ObjectTypeCallProperty_]): Self = StObject.set(x, "callProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallPropertiesVarargs(value: ObjectTypeCallProperty_ *): Self = StObject.set(x, "callProperties", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexers(value: js.Array[ObjectTypeIndexer_]): Self = StObject.set(x, "indexers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallPropertiesVarargs(value: ObjectTypeCallProperty_ *): Self = this.set("callProperties", js.Array(value :_*))
+    def setIndexersVarargs(value: ObjectTypeIndexer_ *): Self = StObject.set(x, "indexers", js.Array(value :_*))
     
     @scala.inline
-    def setCallProperties(value: js.Array[ObjectTypeCallProperty_]): Self = this.set("callProperties", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Array[ObjectTypeProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexersVarargs(value: ObjectTypeIndexer_ *): Self = this.set("indexers", js.Array(value :_*))
+    def setPropertiesVarargs(value: ObjectTypeProperty_ *): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setIndexers(value: js.Array[ObjectTypeIndexer_]): Self = this.set("indexers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertiesVarargs(value: ObjectTypeProperty_ *): Self = this.set("properties", js.Array(value :_*))
-    
-    @scala.inline
-    def setProperties(value: js.Array[ObjectTypeProperty_]): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ObjectTypeAnnotation): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ObjectTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

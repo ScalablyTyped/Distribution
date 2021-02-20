@@ -8,12 +8,13 @@ import typings.reactNative.reactNativeStrings.link
 import typings.reactNative.reactNativeStrings.none
 import typings.reactNative.reactNativeStrings.phoneNumber
 import typings.reactNative.reactNativeStrings.simple
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextPropsAndroid extends js.Object {
+trait TextPropsAndroid extends StObject {
   
   /**
     * Determines the types of data converted to clickable URLs in the text element.
@@ -46,45 +47,33 @@ object TextPropsAndroid {
   }
   
   @scala.inline
-  implicit class TextPropsAndroidOps[Self <: TextPropsAndroid] (val x: Self) extends AnyVal {
+  implicit class TextPropsAndroidMutableBuilder[Self <: TextPropsAndroid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataDetectorType(value: phoneNumber | link | email | none | all_): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
     
     @scala.inline
-    def setDataDetectorType(value: phoneNumber | link | email | none | all_): Self = this.set("dataDetectorType", value.asInstanceOf[js.Any])
+    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataDetectorType: Self = this.set("dataDetectorType", js.undefined)
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def setDataDetectorTypeNull: Self = this.set("dataDetectorType", null)
+    def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionColor(value: ColorValue): Self = this.set("selectionColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionColor: Self = this.set("selectionColor", js.undefined)
-    
-    @scala.inline
-    def setTextBreakStrategy(value: simple | highQuality | balanced): Self = this.set("textBreakStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextBreakStrategy: Self = this.set("textBreakStrategy", js.undefined)
+    def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
   }
 }

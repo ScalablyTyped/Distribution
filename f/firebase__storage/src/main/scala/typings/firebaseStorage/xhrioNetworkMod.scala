@@ -1,14 +1,14 @@
 package typings.firebaseStorage
 
 import typings.firebaseStorage.xhrioMod.XhrIo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/src/implementation/xhrio_network", JSImport.Namespace)
-@js.native
-object xhrioNetworkMod extends js.Object {
+object xhrioNetworkMod {
   
+  @JSImport("@firebase/storage/dist/src/implementation/xhrio_network", "NetworkXhrIo")
   @js.native
   class NetworkXhrIo () extends XhrIo {
     

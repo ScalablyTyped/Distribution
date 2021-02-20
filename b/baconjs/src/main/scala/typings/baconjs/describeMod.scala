@@ -1,22 +1,20 @@
 package typings.baconjs
 
 import typings.baconjs.observableMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baconjs/types/describe", JSImport.Namespace)
-@js.native
-object describeMod extends js.Object {
+object describeMod {
   
+  @JSImport("baconjs/types/describe", JSImport.Default)
+  @js.native
   def default(context: js.Any, method: String, args: js.Any*): Desc = js.native
   
-  def describe(context: js.Any, method: String, args: js.Any*): Desc = js.native
-  
-  def findDeps(x: js.Any): js.Array[default[_]] = js.native
-  
+  @JSImport("baconjs/types/describe", "Desc")
   @js.native
-  class Desc protected () extends js.Object {
+  class Desc protected () extends StObject {
     def this(context: js.Any, method: String) = this()
     def this(context: js.Any, method: String, args: js.Array[_]) = this()
     
@@ -34,4 +32,12 @@ object describeMod extends js.Object {
     
     var method: js.UndefOr[String] = js.native
   }
+  
+  @JSImport("baconjs/types/describe", "describe")
+  @js.native
+  def describe(context: js.Any, method: String, args: js.Any*): Desc = js.native
+  
+  @JSImport("baconjs/types/describe", "findDeps")
+  @js.native
+  def findDeps(x: js.Any): js.Array[default[_]] = js.native
 }

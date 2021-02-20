@@ -1,5 +1,6 @@
 package typings.spotifyApi.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<spotify-api.SpotifyApi.TrackSearchResponse> */
 /* Inlined parent std.Partial<spotify-api.SpotifyApi.PlaylistSearchResponse> */
 @js.native
-trait SearchResponse extends js.Object {
+trait SearchResponse extends StObject {
   
   var albums: js.UndefOr[PagingObject[AlbumObjectSimplified]] = js.native
   
@@ -34,42 +35,30 @@ object SearchResponse {
   }
   
   @scala.inline
-  implicit class SearchResponseOps[Self <: SearchResponse] (val x: Self) extends AnyVal {
+  implicit class SearchResponseMutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbums(value: PagingObject[AlbumObjectSimplified]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbumsUndefined: Self = StObject.set(x, "albums", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtists(value: PagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbums(value: PagingObject[AlbumObjectSimplified]): Self = this.set("albums", value.asInstanceOf[js.Any])
+    def setArtistsUndefined: Self = StObject.set(x, "artists", js.undefined)
     
     @scala.inline
-    def deleteAlbums: Self = this.set("albums", js.undefined)
+    def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtists(value: PagingObject[ArtistObjectFull]): Self = this.set("artists", value.asInstanceOf[js.Any])
+    def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
     
     @scala.inline
-    def deleteArtists: Self = this.set("artists", js.undefined)
+    def setTracks(value: PagingObject[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = this.set("playlists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaylists: Self = this.set("playlists", js.undefined)
-    
-    @scala.inline
-    def setTracks(value: PagingObject[TrackObjectFull]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracks: Self = this.set("tracks", js.undefined)
+    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
   }
 }

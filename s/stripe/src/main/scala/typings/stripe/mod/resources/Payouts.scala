@@ -5,17 +5,20 @@ import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.payouts.IPayout
 import typings.stripe.mod.payouts.IPayoutCreationOptions
 import typings.stripe.mod.payouts.IPayoutListOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Payouts")
 @js.native
-class Payouts () extends StripeResource {
+class Payouts protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def cancel(payoutId: String): js.Promise[IPayout] = js.native
   /**

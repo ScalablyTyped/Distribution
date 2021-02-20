@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object GitResolutionMergeContent {
   }
   
   @scala.inline
-  implicit class GitResolutionMergeContentOps[Self <: GitResolutionMergeContent] (val x: Self) extends AnyVal {
+  implicit class GitResolutionMergeContentMutableBuilder[Self <: GitResolutionMergeContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMergeType(value: GitResolutionMergeType): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUserMergedBlob(value: GitBlobRef): Self = StObject.set(x, "userMergedBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserMergedContent(value: js.Array[Double]): Self = StObject.set(x, "userMergedContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeType(value: GitResolutionMergeType): Self = this.set("mergeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserMergedBlob(value: GitBlobRef): Self = this.set("userMergedBlob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserMergedContentVarargs(value: Double*): Self = this.set("userMergedContent", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserMergedContent(value: js.Array[Double]): Self = this.set("userMergedContent", value.asInstanceOf[js.Any])
+    def setUserMergedContentVarargs(value: Double*): Self = StObject.set(x, "userMergedContent", js.Array(value :_*))
   }
 }

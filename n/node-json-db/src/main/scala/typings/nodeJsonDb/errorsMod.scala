@@ -2,20 +2,28 @@ package typings.nodeJsonDb
 
 import typings.std.Error
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-json-db/dist/lib/Errors", JSImport.Namespace)
-@js.native
-object errorsMod extends js.Object {
+object errorsMod {
   
+  @JSImport("node-json-db/dist/lib/Errors", "DataError")
   @js.native
-  class DataError () extends NestedError
+  class DataError protected () extends NestedError {
+    def this(message: String, id: Number) = this()
+    def this(message: String, id: Number, inner: Error) = this()
+  }
   
+  @JSImport("node-json-db/dist/lib/Errors", "DatabaseError")
   @js.native
-  class DatabaseError () extends NestedError
+  class DatabaseError protected () extends NestedError {
+    def this(message: String, id: Number) = this()
+    def this(message: String, id: Number, inner: Error) = this()
+  }
   
+  @JSImport("node-json-db/dist/lib/Errors", "NestedError")
   @js.native
   abstract class NestedError protected () extends Error {
     def this(message: String, id: Number) = this()

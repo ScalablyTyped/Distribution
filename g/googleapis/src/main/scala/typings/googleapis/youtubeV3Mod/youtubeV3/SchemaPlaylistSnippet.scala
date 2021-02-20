@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * thumbnails.
   */
 @js.native
-trait SchemaPlaylistSnippet extends js.Object {
+trait SchemaPlaylistSnippet extends StObject {
   
   /**
     * The ID that YouTube uses to uniquely identify the channel that published
@@ -69,75 +70,63 @@ object SchemaPlaylistSnippet {
   }
   
   @scala.inline
-  implicit class SchemaPlaylistSnippetOps[Self <: SchemaPlaylistSnippet] (val x: Self) extends AnyVal {
+  implicit class SchemaPlaylistSnippetMutableBuilder[Self <: SchemaPlaylistSnippet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelTitle(value: String): Self = StObject.set(x, "channelTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setChannelTitleUndefined: Self = StObject.set(x, "channelTitle", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelTitle(value: String): Self = this.set("channelTitle", value.asInstanceOf[js.Any])
+    def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
     
     @scala.inline
-    def deleteChannelTitle: Self = this.set("channelTitle", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLanguage(value: String): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultLanguage: Self = this.set("defaultLanguage", js.undefined)
+    def setLocalized(value: SchemaPlaylistLocalization): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalized(value: SchemaPlaylistLocalization): Self = this.set("localized", value.asInstanceOf[js.Any])
+    def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
     
     @scala.inline
-    def deleteLocalized: Self = this.set("localized", js.undefined)
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedAt(value: String): Self = this.set("publishedAt", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deletePublishedAt: Self = this.set("publishedAt", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setThumbnails(value: SchemaThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnails(value: SchemaThumbnailDetails): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

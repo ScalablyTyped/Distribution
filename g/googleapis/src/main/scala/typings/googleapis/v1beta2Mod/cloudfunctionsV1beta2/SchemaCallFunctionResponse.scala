@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response of `CallFunction` method.
   */
 @js.native
-trait SchemaCallFunctionResponse extends js.Object {
+trait SchemaCallFunctionResponse extends StObject {
   
   /**
     * Either system or user-function generated error. Set if execution was not
@@ -36,36 +37,24 @@ object SchemaCallFunctionResponse {
   }
   
   @scala.inline
-  implicit class SchemaCallFunctionResponseOps[Self <: SchemaCallFunctionResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaCallFunctionResponseMutableBuilder[Self <: SchemaCallFunctionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionId(value: String): Self = this.set("executionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionId: Self = this.set("executionId", js.undefined)
-    
-    @scala.inline
-    def setResult(value: String): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

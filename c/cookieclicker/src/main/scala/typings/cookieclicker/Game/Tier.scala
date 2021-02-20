@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tier extends js.Object {
+trait Tier extends StObject {
   
   /**
     * The amount of buildings required to unlock the associated achievement
@@ -69,47 +70,34 @@ object Tier {
   }
   
   @scala.inline
-  implicit class TierOps[Self <: Tier] (val x: Self) extends AnyVal {
+  implicit class TierMutableBuilder[Self <: Tier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAchievUnlock(value: Double): Self = StObject.set(x, "achievUnlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconRow(value: Double): Self = StObject.set(x, "iconRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAchievUnlock(value: Double): Self = this.set("achievUnlock", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconRow(value: Double): Self = this.set("iconRow", value.asInstanceOf[js.Any])
+    def setReq(value: String): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
     
     @scala.inline
-    def setPrice(value: Double): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setSpecial(value: PseudoBoolean | Boolean): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecial(value: PseudoBoolean | Boolean): Self = this.set("special", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnlock(value: Double): Self = this.set("unlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpgradesVarargs(
-      value: (TieredUpgradeClass[
-          /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
-        ])*
-    ): Self = this.set("upgrades", js.Array(value :_*))
+    def setUnlock(value: Double): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUpgrades(
@@ -118,12 +106,13 @@ object Tier {
             /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
           ]
         ]
-    ): Self = this.set("upgrades", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "upgrades", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReq(value: String): Self = this.set("req", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReq: Self = this.set("req", js.undefined)
+    def setUpgradesVarargs(
+      value: (TieredUpgradeClass[
+          /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
+        ])*
+    ): Self = StObject.set(x, "upgrades", js.Array(value :_*))
   }
 }

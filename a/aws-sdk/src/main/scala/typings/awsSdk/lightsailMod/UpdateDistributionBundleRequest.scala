@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDistributionBundleRequest extends js.Object {
+trait UpdateDistributionBundleRequest extends StObject {
   
   /**
     * The bundle ID of the new bundle to apply to your distribution. Use the GetDistributionBundles action to get a list of distribution bundle IDs that you can specify.
@@ -26,30 +27,18 @@ object UpdateDistributionBundleRequest {
   }
   
   @scala.inline
-  implicit class UpdateDistributionBundleRequestOps[Self <: UpdateDistributionBundleRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDistributionBundleRequestMutableBuilder[Self <: UpdateDistributionBundleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: String): Self = this.set("bundleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBundleId: Self = this.set("bundleId", js.undefined)
-    
-    @scala.inline
-    def setDistributionName(value: ResourceName): Self = this.set("distributionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistributionName: Self = this.set("distributionName", js.undefined)
+    def setDistributionNameUndefined: Self = StObject.set(x, "distributionName", js.undefined)
   }
 }

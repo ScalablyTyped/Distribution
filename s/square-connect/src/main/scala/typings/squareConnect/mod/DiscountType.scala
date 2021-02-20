@@ -1,5 +1,6 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.squareConnect.squareConnectStrings.VARIABLE_PERCENTAGE
   - typings.squareConnect.squareConnectStrings.UNKNOWN_DISCOUNT
 */
-trait DiscountType extends js.Object
+trait DiscountType extends StObject
 object DiscountType {
   
   @scala.inline

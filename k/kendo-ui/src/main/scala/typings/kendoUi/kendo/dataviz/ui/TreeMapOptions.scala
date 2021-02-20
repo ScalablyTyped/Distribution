@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.dataviz.ui
 
 import typings.kendoUi.kendo.data.HierarchicalDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeMapOptions extends js.Object {
+trait TreeMapOptions extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.native
   
@@ -41,90 +42,78 @@ object TreeMapOptions {
   }
   
   @scala.inline
-  implicit class TreeMapOptionsOps[Self <: TreeMapOptions] (val x: Self) extends AnyVal {
+  implicit class TreeMapOptionsMutableBuilder[Self <: TreeMapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorField(value: String): Self = StObject.set(x, "colorField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setColorFieldUndefined: Self = StObject.set(x, "colorField", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setColors(value: js.Any): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorField(value: String): Self = this.set("colorField", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteColorField: Self = this.set("colorField", js.undefined)
+    def setDataBound(value: /* e */ TreeMapDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColors(value: js.Any): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: /* e */ TreeMapDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setItemCreated(value: /* e */ TreeMapItemCreatedEvent => Unit): Self = StObject.set(x, "itemCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataSource(value: js.Any | HierarchicalDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setItemCreatedUndefined: Self = StObject.set(x, "itemCreated", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCreated(value: /* e */ TreeMapItemCreatedEvent => Unit): Self = this.set("itemCreated", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteItemCreated: Self = this.set("itemCreated", js.undefined)
+    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTextField(value: String): Self = StObject.set(x, "textField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTextFieldUndefined: Self = StObject.set(x, "textField", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextField(value: String): Self = this.set("textField", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteTextField: Self = this.set("textField", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValueField(value: String): Self = this.set("valueField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueField: Self = this.set("valueField", js.undefined)
+    def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
   }
 }

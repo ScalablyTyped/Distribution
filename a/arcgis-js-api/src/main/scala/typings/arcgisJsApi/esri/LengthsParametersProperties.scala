@@ -3,12 +3,13 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`preserve-shape`
 import typings.arcgisJsApi.arcgisJsApiStrings.geodesic
 import typings.arcgisJsApi.arcgisJsApiStrings.planar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LengthsParametersProperties extends js.Object {
+trait LengthsParametersProperties extends StObject {
   
   /**
     * Defines the type of calculation for the geometry.
@@ -47,45 +48,33 @@ object LengthsParametersProperties {
   }
   
   @scala.inline
-  implicit class LengthsParametersPropertiesOps[Self <: LengthsParametersProperties] (val x: Self) extends AnyVal {
+  implicit class LengthsParametersPropertiesMutableBuilder[Self <: LengthsParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculationType(value: planar | geodesic | `preserve-shape`): Self = StObject.set(x, "calculationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculationTypeUndefined: Self = StObject.set(x, "calculationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculationType(value: planar | geodesic | `preserve-shape`): Self = this.set("calculationType", value.asInstanceOf[js.Any])
+    def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
     @scala.inline
-    def deleteCalculationType: Self = this.set("calculationType", js.undefined)
+    def setLengthUnit(value: Double | String): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeodesic(value: Boolean): Self = this.set("geodesic", value.asInstanceOf[js.Any])
+    def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
     
     @scala.inline
-    def deleteGeodesic: Self = this.set("geodesic", js.undefined)
+    def setPolylines(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthUnit(value: Double | String): Self = this.set("lengthUnit", value.asInstanceOf[js.Any])
+    def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
     @scala.inline
-    def deleteLengthUnit: Self = this.set("lengthUnit", js.undefined)
-    
-    @scala.inline
-    def setPolylinesVarargs(value: PolylineProperties*): Self = this.set("polylines", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolylines(value: js.Array[PolylineProperties]): Self = this.set("polylines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolylines: Self = this.set("polylines", js.undefined)
+    def setPolylinesVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylines", js.Array(value :_*))
   }
 }

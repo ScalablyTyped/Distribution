@@ -1,21 +1,26 @@
 package typings.emberArray
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.Shortcut
 import typings.emberArray.mutableMod.MutableArray
 import typings.emberObject.copyableMod.Copyable
 import typings.emberObject.observableMod.Observable
 import typings.std.FlatArray
 import typings.std.IterableIterator
 import typings.std.anon.CopyWithin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/array/-private/native-array", JSImport.Namespace)
-@js.native
-object nativeArrayMod extends js.Object {
+object nativeArrayMod extends Shortcut {
   
+  @JSImport("@ember/array/-private/native-array", JSImport.Default)
+  @js.native
   val default: typings.emberObject.mixinMod.default[NativeArray[js.Any], typings.emberObject.mod.default] = js.native
+  
+  // Get an alias to the global Array type to use in inner scope below.
+  type GlobalArray[T] = js.Array[T]
   
   /**
     * The NativeArray mixin contains the properties needed to make the native
@@ -25,7 +30,7 @@ object nativeArrayMod extends js.Object {
     * at anytime by calling `Ember.NativeArray.apply(Array.prototype)`.
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.std.Array because var conflicts: length. Inlined concat, copyWithin, copyWithin, entries, every_S_T, every_S_T, fill, fill, fill, fill, filter_S_T, filter_S_T, findIndex, findIndex, flat, flat, flatMap, flatMap, iterator, join, join, keys, pop, push, reduceRight, reduceRight, reduceRight_U_U, reduce_U_U, reverse, shift, some, some, sort, sort, splice, splice, splice, unscopables, unshift, values */ @js.native
+  - typings.std.Array because var conflicts: length. Inlined unscopables, iterator, concat, copyWithin, copyWithin, entries, every_S_T, every_S_T, fill, fill, fill, fill, filter_S_T, filter_S_T, findIndex, findIndex, flat, flat, flatMap, flatMap, join, join, keys, pop, push, reduceRight, reduceRight, reduceRight_U_U, reduce_U_U, reverse, shift, some, some, sort, sort, splice, splice, splice, unshift, values */ @js.native
   trait NativeArray[T]
     extends MutableArray[T]
        with Observable
@@ -228,6 +233,8 @@ object nativeArrayMod extends js.Object {
     def values(): IterableIterator[T] = js.native
   }
   
-  // Get an alias to the global Array type to use in inner scope below.
-  type GlobalArray[T] = js.Array[T]
+  type _To = typings.emberObject.mixinMod.default[NativeArray[js.Any], typings.emberObject.mod.default]
+  
+  /* This means you don't have to write `default`, but can instead just say `nativeArrayMod.foo` */
+  override def _to: typings.emberObject.mixinMod.default[NativeArray[js.Any], typings.emberObject.mod.default] = default
 }

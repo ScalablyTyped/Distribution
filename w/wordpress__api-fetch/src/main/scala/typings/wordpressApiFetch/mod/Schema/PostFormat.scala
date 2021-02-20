@@ -1,5 +1,6 @@
 package typings.wordpressApiFetch.mod.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressApiFetch.wordpressApiFetchStrings.status
   - typings.wordpressApiFetch.wordpressApiFetchStrings.video
 */
-trait PostFormat extends js.Object
+trait PostFormat extends StObject
 object PostFormat {
   
   @scala.inline

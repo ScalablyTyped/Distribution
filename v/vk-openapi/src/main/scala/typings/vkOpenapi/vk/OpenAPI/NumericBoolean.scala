@@ -1,5 +1,6 @@
 package typings.vkOpenapi.vk.OpenAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vkOpenapi.vkOpenapiNumbers.`0`
   - typings.vkOpenapi.vkOpenapiNumbers.`1`
 */
-trait NumericBoolean extends js.Object
+trait NumericBoolean extends StObject
 object NumericBoolean {
   
   @scala.inline

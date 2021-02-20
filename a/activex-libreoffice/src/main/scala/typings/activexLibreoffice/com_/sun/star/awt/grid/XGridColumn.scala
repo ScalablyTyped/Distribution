@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.style.HorizontalAlignment
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,57 +133,45 @@ object XGridColumn {
   }
   
   @scala.inline
-  implicit class XGridColumnOps[Self <: XGridColumn] (val x: Self) extends AnyVal {
+  implicit class XGridColumnMutableBuilder[Self <: XGridColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddGridColumnListener(value: XGridColumnListener => Unit): Self = StObject.set(x, "addGridColumnListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnWidth(value: Double): Self = StObject.set(x, "ColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataColumnIndex(value: Double): Self = StObject.set(x, "DataColumnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidth(value: Double): Self = this.set("ColumnWidth", value.asInstanceOf[js.Any])
+    def setFlexibility(value: Double): Self = StObject.set(x, "Flexibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataColumnIndex(value: Double): Self = this.set("DataColumnIndex", value.asInstanceOf[js.Any])
+    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexibility(value: Double): Self = this.set("Flexibility", value.asInstanceOf[js.Any])
+    def setHorizontalAlign(value: HorizontalAlignment): Self = StObject.set(x, "HorizontalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlign(value: HorizontalAlignment): Self = this.set("HorizontalAlign", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Any): Self = this.set("Identifier", value.asInstanceOf[js.Any])
+    def setMaxWidth(value: Double): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setMinWidth(value: Double): Self = StObject.set(x, "MinWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("MaxWidth", value.asInstanceOf[js.Any])
+    def setRemoveGridColumnListener(value: XGridColumnListener => Unit): Self = StObject.set(x, "removeGridColumnListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("MinWidth", value.asInstanceOf[js.Any])
+    def setResizeable(value: Boolean): Self = StObject.set(x, "Resizeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeable(value: Boolean): Self = this.set("Resizeable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAddGridColumnListener(value: XGridColumnListener => Unit): Self = this.set("addGridColumnListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveGridColumnListener(value: XGridColumnListener => Unit): Self = this.set("removeGridColumnListener", js.Any.fromFunction1(value))
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

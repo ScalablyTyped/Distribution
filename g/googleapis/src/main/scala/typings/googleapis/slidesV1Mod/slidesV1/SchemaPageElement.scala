@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A visual element rendered on a page.
   */
 @js.native
-trait SchemaPageElement extends js.Object {
+trait SchemaPageElement extends StObject {
   
   /**
     * The description of the page element. Combined with title to display alt
@@ -95,96 +96,84 @@ object SchemaPageElement {
   }
   
   @scala.inline
-  implicit class SchemaPageElementOps[Self <: SchemaPageElement] (val x: Self) extends AnyVal {
+  implicit class SchemaPageElementMutableBuilder[Self <: SchemaPageElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementGroup(value: SchemaGroup): Self = StObject.set(x, "elementGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setElementGroupUndefined: Self = StObject.set(x, "elementGroup", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementGroup(value: SchemaGroup): Self = this.set("elementGroup", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteElementGroup: Self = this.set("elementGroup", js.undefined)
+    def setLine(value: SchemaLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: SchemaImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: SchemaLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setShape(value: SchemaShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setSheetsChart(value: SchemaSheetsChart): Self = StObject.set(x, "sheetsChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: SchemaShape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setSheetsChartUndefined: Self = StObject.set(x, "sheetsChart", js.undefined)
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setSize(value: SchemaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetsChart(value: SchemaSheetsChart): Self = this.set("sheetsChart", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSheetsChart: Self = this.set("sheetsChart", js.undefined)
+    def setTable(value: SchemaTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: SchemaSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: SchemaTable): Self = this.set("table", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTransform(value: SchemaAffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setVideo(value: SchemaVideo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: SchemaAffineTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setWordArt(value: SchemaWordArt): Self = StObject.set(x, "wordArt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: SchemaVideo): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
-    
-    @scala.inline
-    def setWordArt(value: SchemaWordArt): Self = this.set("wordArt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordArt: Self = this.set("wordArt", js.undefined)
+    def setWordArtUndefined: Self = StObject.set(x, "wordArt", js.undefined)
   }
 }

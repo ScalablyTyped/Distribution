@@ -1,11 +1,12 @@
 package typings.codemirror.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BgClass extends js.Object {
+trait BgClass extends StObject {
   
   var bgClass: String = js.native
   
@@ -43,42 +44,30 @@ object BgClass {
   }
   
   @scala.inline
-  implicit class BgClassOps[Self <: BgClass] (val x: Self) extends AnyVal {
+  implicit class BgClassMutableBuilder[Self <: BgClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgClass(value: String): Self = StObject.set(x, "bgClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGutterMarkers(value: js.Any): Self = StObject.set(x, "gutterMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandle(value: js.Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgClass(value: String): Self = this.set("bgClass", value.asInstanceOf[js.Any])
+    def setLine(value: js.Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutterMarkers(value: js.Any): Self = this.set("gutterMarkers", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: js.Any): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setTextClass(value: String): Self = StObject.set(x, "textClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: js.Any): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setWidgets(value: js.Any): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextClass(value: String): Self = this.set("textClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidgets(value: js.Any): Self = this.set("widgets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapClass(value: String): Self = this.set("wrapClass", value.asInstanceOf[js.Any])
+    def setWrapClass(value: String): Self = StObject.set(x, "wrapClass", value.asInstanceOf[js.Any])
   }
 }

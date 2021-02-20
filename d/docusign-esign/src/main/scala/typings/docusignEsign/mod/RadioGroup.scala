@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadioGroup extends js.Object {
+trait RadioGroup extends StObject {
   
   /**
     * For conditional fields this is the `tabLabel` of the parent tab that controls this tab's visibility.
@@ -158,183 +159,171 @@ object RadioGroup {
   }
   
   @scala.inline
-  implicit class RadioGroupOps[Self <: RadioGroup] (val x: Self) extends AnyVal {
+  implicit class RadioGroupMutableBuilder[Self <: RadioGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditionalParentLabel(value: String): Self = StObject.set(x, "conditionalParentLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionalParentLabelMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "conditionalParentLabelMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionalParentLabelMetadataUndefined: Self = StObject.set(x, "conditionalParentLabelMetadata", js.undefined)
     
     @scala.inline
-    def setConditionalParentLabel(value: String): Self = this.set("conditionalParentLabel", value.asInstanceOf[js.Any])
+    def setConditionalParentLabelUndefined: Self = StObject.set(x, "conditionalParentLabel", js.undefined)
     
     @scala.inline
-    def deleteConditionalParentLabel: Self = this.set("conditionalParentLabel", js.undefined)
+    def setConditionalParentValue(value: String): Self = StObject.set(x, "conditionalParentValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionalParentLabelMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("conditionalParentLabelMetadata", value.asInstanceOf[js.Any])
+    def setConditionalParentValueMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "conditionalParentValueMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditionalParentLabelMetadata: Self = this.set("conditionalParentLabelMetadata", js.undefined)
+    def setConditionalParentValueMetadataUndefined: Self = StObject.set(x, "conditionalParentValueMetadata", js.undefined)
     
     @scala.inline
-    def setConditionalParentValue(value: String): Self = this.set("conditionalParentValue", value.asInstanceOf[js.Any])
+    def setConditionalParentValueUndefined: Self = StObject.set(x, "conditionalParentValue", js.undefined)
     
     @scala.inline
-    def deleteConditionalParentValue: Self = this.set("conditionalParentValue", js.undefined)
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionalParentValueMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("conditionalParentValueMetadata", value.asInstanceOf[js.Any])
+    def setDocumentIdMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "documentIdMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditionalParentValueMetadata: Self = this.set("conditionalParentValueMetadata", js.undefined)
+    def setDocumentIdMetadataUndefined: Self = StObject.set(x, "documentIdMetadata", js.undefined)
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentIdMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("documentIdMetadata", value.asInstanceOf[js.Any])
+    def setGroupNameMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "groupNameMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentIdMetadata: Self = this.set("documentIdMetadata", js.undefined)
+    def setGroupNameMetadataUndefined: Self = StObject.set(x, "groupNameMetadata", js.undefined)
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    def setRadios(value: js.Array[Radio]): Self = StObject.set(x, "radios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupNameMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("groupNameMetadata", value.asInstanceOf[js.Any])
+    def setRadiosUndefined: Self = StObject.set(x, "radios", js.undefined)
     
     @scala.inline
-    def deleteGroupNameMetadata: Self = this.set("groupNameMetadata", js.undefined)
+    def setRadiosVarargs(value: Radio*): Self = StObject.set(x, "radios", js.Array(value :_*))
     
     @scala.inline
-    def setRadiosVarargs(value: Radio*): Self = this.set("radios", js.Array(value :_*))
+    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadios(value: js.Array[Radio]): Self = this.set("radios", value.asInstanceOf[js.Any])
+    def setRecipientIdGuid(value: String): Self = StObject.set(x, "recipientIdGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadios: Self = this.set("radios", js.undefined)
+    def setRecipientIdGuidMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "recipientIdGuidMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientId(value: String): Self = this.set("recipientId", value.asInstanceOf[js.Any])
+    def setRecipientIdGuidMetadataUndefined: Self = StObject.set(x, "recipientIdGuidMetadata", js.undefined)
     
     @scala.inline
-    def deleteRecipientId: Self = this.set("recipientId", js.undefined)
+    def setRecipientIdGuidUndefined: Self = StObject.set(x, "recipientIdGuid", js.undefined)
     
     @scala.inline
-    def setRecipientIdGuid(value: String): Self = this.set("recipientIdGuid", value.asInstanceOf[js.Any])
+    def setRecipientIdMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "recipientIdMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientIdGuid: Self = this.set("recipientIdGuid", js.undefined)
+    def setRecipientIdMetadataUndefined: Self = StObject.set(x, "recipientIdMetadata", js.undefined)
     
     @scala.inline
-    def setRecipientIdGuidMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("recipientIdGuidMetadata", value.asInstanceOf[js.Any])
+    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
     
     @scala.inline
-    def deleteRecipientIdGuidMetadata: Self = this.set("recipientIdGuidMetadata", js.undefined)
+    def setRequireAll(value: String): Self = StObject.set(x, "requireAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientIdMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("recipientIdMetadata", value.asInstanceOf[js.Any])
+    def setRequireAllMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "requireAllMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientIdMetadata: Self = this.set("recipientIdMetadata", js.undefined)
+    def setRequireAllMetadataUndefined: Self = StObject.set(x, "requireAllMetadata", js.undefined)
     
     @scala.inline
-    def setRequireAll(value: String): Self = this.set("requireAll", value.asInstanceOf[js.Any])
+    def setRequireAllUndefined: Self = StObject.set(x, "requireAll", js.undefined)
     
     @scala.inline
-    def deleteRequireAll: Self = this.set("requireAll", js.undefined)
+    def setRequireInitialOnSharedChange(value: String): Self = StObject.set(x, "requireInitialOnSharedChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireAllMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("requireAllMetadata", value.asInstanceOf[js.Any])
+    def setRequireInitialOnSharedChangeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "requireInitialOnSharedChangeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequireAllMetadata: Self = this.set("requireAllMetadata", js.undefined)
+    def setRequireInitialOnSharedChangeMetadataUndefined: Self = StObject.set(x, "requireInitialOnSharedChangeMetadata", js.undefined)
     
     @scala.inline
-    def setRequireInitialOnSharedChange(value: String): Self = this.set("requireInitialOnSharedChange", value.asInstanceOf[js.Any])
+    def setRequireInitialOnSharedChangeUndefined: Self = StObject.set(x, "requireInitialOnSharedChange", js.undefined)
     
     @scala.inline
-    def deleteRequireInitialOnSharedChange: Self = this.set("requireInitialOnSharedChange", js.undefined)
+    def setShared(value: String): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireInitialOnSharedChangeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("requireInitialOnSharedChangeMetadata", value.asInstanceOf[js.Any])
+    def setSharedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "sharedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequireInitialOnSharedChangeMetadata: Self = this.set("requireInitialOnSharedChangeMetadata", js.undefined)
+    def setSharedMetadataUndefined: Self = StObject.set(x, "sharedMetadata", js.undefined)
     
     @scala.inline
-    def setShared(value: String): Self = this.set("shared", value.asInstanceOf[js.Any])
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
     @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setTabType(value: String): Self = StObject.set(x, "tabType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("sharedMetadata", value.asInstanceOf[js.Any])
+    def setTabTypeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "tabTypeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharedMetadata: Self = this.set("sharedMetadata", js.undefined)
+    def setTabTypeMetadataUndefined: Self = StObject.set(x, "tabTypeMetadata", js.undefined)
     
     @scala.inline
-    def setTabType(value: String): Self = this.set("tabType", value.asInstanceOf[js.Any])
+    def setTabTypeUndefined: Self = StObject.set(x, "tabType", js.undefined)
     
     @scala.inline
-    def deleteTabType: Self = this.set("tabType", js.undefined)
+    def setTemplateLocked(value: String): Self = StObject.set(x, "templateLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabTypeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("tabTypeMetadata", value.asInstanceOf[js.Any])
+    def setTemplateLockedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "templateLockedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabTypeMetadata: Self = this.set("tabTypeMetadata", js.undefined)
+    def setTemplateLockedMetadataUndefined: Self = StObject.set(x, "templateLockedMetadata", js.undefined)
     
     @scala.inline
-    def setTemplateLocked(value: String): Self = this.set("templateLocked", value.asInstanceOf[js.Any])
+    def setTemplateLockedUndefined: Self = StObject.set(x, "templateLocked", js.undefined)
     
     @scala.inline
-    def deleteTemplateLocked: Self = this.set("templateLocked", js.undefined)
+    def setTemplateRequired(value: String): Self = StObject.set(x, "templateRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateLockedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("templateLockedMetadata", value.asInstanceOf[js.Any])
+    def setTemplateRequiredMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "templateRequiredMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateLockedMetadata: Self = this.set("templateLockedMetadata", js.undefined)
+    def setTemplateRequiredMetadataUndefined: Self = StObject.set(x, "templateRequiredMetadata", js.undefined)
     
     @scala.inline
-    def setTemplateRequired(value: String): Self = this.set("templateRequired", value.asInstanceOf[js.Any])
+    def setTemplateRequiredUndefined: Self = StObject.set(x, "templateRequired", js.undefined)
     
     @scala.inline
-    def deleteTemplateRequired: Self = this.set("templateRequired", js.undefined)
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateRequiredMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("templateRequiredMetadata", value.asInstanceOf[js.Any])
+    def setTooltipMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "tooltipMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateRequiredMetadata: Self = this.set("templateRequiredMetadata", js.undefined)
+    def setTooltipMetadataUndefined: Self = StObject.set(x, "tooltipMetadata", js.undefined)
     
     @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
-    
-    @scala.inline
-    def setTooltipMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("tooltipMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipMetadata: Self = this.set("tooltipMetadata", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

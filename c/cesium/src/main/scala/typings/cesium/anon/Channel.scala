@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.Resource
 import typings.cesium.mod.TileDiscardPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Channel extends js.Object {
+trait Channel extends StObject {
   
   var channel: Double = js.native
   
@@ -30,48 +31,36 @@ object Channel {
   }
   
   @scala.inline
-  implicit class ChannelOps[Self <: Channel] (val x: Self) extends AnyVal {
+  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def setChannel(value: Double): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setMaximumLevel(value: Double): Self = StObject.set(x, "maximumLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: Resource | String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setMaximumLevelUndefined: Self = StObject.set(x, "maximumLevel", js.undefined)
     
     @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setMaximumLevel(value: Double): Self = this.set("maximumLevel", value.asInstanceOf[js.Any])
+    def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumLevel: Self = this.set("maximumLevel", js.undefined)
+    def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setTileDiscardPolicy(value: TileDiscardPolicy): Self = this.set("tileDiscardPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileDiscardPolicy: Self = this.set("tileDiscardPolicy", js.undefined)
+    def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.ejWebAll.global.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.VirtualScrollMode")
 @js.native
-object VirtualScrollMode extends js.Object {
+object VirtualScrollMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.VirtualScrollMode with Double] = js.native

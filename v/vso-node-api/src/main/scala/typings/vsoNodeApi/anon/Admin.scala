@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Admin extends js.Object {
+trait Admin extends StObject {
   
   var admin: scala.Double = js.native
   
@@ -53,54 +54,42 @@ object Admin {
   }
   
   @scala.inline
-  implicit class AdminOps[Self <: Admin] (val x: Self) extends AnyVal {
+  implicit class AdminMutableBuilder[Self <: Admin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdmin(value: scala.Double): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatePublisher(value: scala.Double): Self = StObject.set(x, "createPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteExtension(value: scala.Double): Self = StObject.set(x, "deleteExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdmin(value: scala.Double): Self = this.set("admin", value.asInstanceOf[js.Any])
+    def setDeletePublisher(value: scala.Double): Self = StObject.set(x, "deletePublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatePublisher(value: scala.Double): Self = this.set("createPublisher", value.asInstanceOf[js.Any])
+    def setEditSettings(value: scala.Double): Self = StObject.set(x, "editSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteExtension(value: scala.Double): Self = this.set("deleteExtension", value.asInstanceOf[js.Any])
+    def setManagePermissions(value: scala.Double): Self = StObject.set(x, "managePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletePublisher(value: scala.Double): Self = this.set("deletePublisher", value.asInstanceOf[js.Any])
+    def setPrivateRead(value: scala.Double): Self = StObject.set(x, "privateRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditSettings(value: scala.Double): Self = this.set("editSettings", value.asInstanceOf[js.Any])
+    def setPublishExtension(value: scala.Double): Self = StObject.set(x, "publishExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagePermissions(value: scala.Double): Self = this.set("managePermissions", value.asInstanceOf[js.Any])
+    def setRead(value: scala.Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateRead(value: scala.Double): Self = this.set("privateRead", value.asInstanceOf[js.Any])
+    def setTrustedPartner(value: scala.Double): Self = StObject.set(x, "trustedPartner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishExtension(value: scala.Double): Self = this.set("publishExtension", value.asInstanceOf[js.Any])
+    def setUpdateExtension(value: scala.Double): Self = StObject.set(x, "updateExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: scala.Double): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrustedPartner(value: scala.Double): Self = this.set("trustedPartner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateExtension(value: scala.Double): Self = this.set("updateExtension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewPermissions(value: scala.Double): Self = this.set("viewPermissions", value.asInstanceOf[js.Any])
+    def setViewPermissions(value: scala.Double): Self = StObject.set(x, "viewPermissions", value.asInstanceOf[js.Any])
   }
 }

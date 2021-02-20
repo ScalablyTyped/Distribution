@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Feedback data for submission. */
 @js.native
-trait FeedbackDataInput extends js.Object {
+trait FeedbackDataInput extends StObject {
   
   /** Brief information about the input document. */
   var document: js.UndefOr[ShortDoc] = js.native
@@ -47,51 +48,39 @@ object FeedbackDataInput {
   }
   
   @scala.inline
-  implicit class FeedbackDataInputOps[Self <: FeedbackDataInput] (val x: Self) extends AnyVal {
+  implicit class FeedbackDataInputMutableBuilder[Self <: FeedbackDataInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: ShortDoc): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeedback_type(value: String): Self = StObject.set(x, "feedback_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedback_type(value: String): Self = this.set("feedback_type", value.asInstanceOf[js.Any])
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_labels(value: OriginalLabelsIn): Self = this.set("original_labels", value.asInstanceOf[js.Any])
+    def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setModel_version(value: String): Self = StObject.set(x, "model_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated_labels(value: UpdatedLabelsIn): Self = this.set("updated_labels", value.asInstanceOf[js.Any])
+    def setModel_versionUndefined: Self = StObject.set(x, "model_version", js.undefined)
     
     @scala.inline
-    def setDocument(value: ShortDoc): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setOriginal_labels(value: OriginalLabelsIn): Self = StObject.set(x, "original_labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_id(value: String): Self = this.set("model_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel_id: Self = this.set("model_id", js.undefined)
-    
-    @scala.inline
-    def setModel_version(value: String): Self = this.set("model_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel_version: Self = this.set("model_version", js.undefined)
+    def setUpdated_labels(value: UpdatedLabelsIn): Self = StObject.set(x, "updated_labels", value.asInstanceOf[js.Any])
   }
 }

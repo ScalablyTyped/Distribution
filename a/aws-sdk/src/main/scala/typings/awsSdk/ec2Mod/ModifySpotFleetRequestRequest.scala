@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifySpotFleetRequestRequest extends js.Object {
+trait ModifySpotFleetRequestRequest extends StObject {
   
   /**
     * Indicates whether running Spot Instances should be terminated if the target capacity of the Spot Fleet request is decreased below the current size of the Spot Fleet.
@@ -41,48 +42,36 @@ object ModifySpotFleetRequestRequest {
   }
   
   @scala.inline
-  implicit class ModifySpotFleetRequestRequestOps[Self <: ModifySpotFleetRequestRequest] (val x: Self) extends AnyVal {
+  implicit class ModifySpotFleetRequestRequestMutableBuilder[Self <: ModifySpotFleetRequestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcessCapacityTerminationPolicy(value: ExcessCapacityTerminationPolicy): Self = StObject.set(x, "ExcessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcessCapacityTerminationPolicyUndefined: Self = StObject.set(x, "ExcessCapacityTerminationPolicy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchTemplateConfigs(value: LaunchTemplateConfigList): Self = StObject.set(x, "LaunchTemplateConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotFleetRequestId(value: SpotFleetRequestId): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
+    def setLaunchTemplateConfigsUndefined: Self = StObject.set(x, "LaunchTemplateConfigs", js.undefined)
     
     @scala.inline
-    def setExcessCapacityTerminationPolicy(value: ExcessCapacityTerminationPolicy): Self = this.set("ExcessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
+    def setLaunchTemplateConfigsVarargs(value: LaunchTemplateConfig*): Self = StObject.set(x, "LaunchTemplateConfigs", js.Array(value :_*))
     
     @scala.inline
-    def deleteExcessCapacityTerminationPolicy: Self = this.set("ExcessCapacityTerminationPolicy", js.undefined)
+    def setOnDemandTargetCapacity(value: Integer): Self = StObject.set(x, "OnDemandTargetCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplateConfigsVarargs(value: LaunchTemplateConfig*): Self = this.set("LaunchTemplateConfigs", js.Array(value :_*))
+    def setOnDemandTargetCapacityUndefined: Self = StObject.set(x, "OnDemandTargetCapacity", js.undefined)
     
     @scala.inline
-    def setLaunchTemplateConfigs(value: LaunchTemplateConfigList): Self = this.set("LaunchTemplateConfigs", value.asInstanceOf[js.Any])
+    def setSpotFleetRequestId(value: SpotFleetRequestId): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLaunchTemplateConfigs: Self = this.set("LaunchTemplateConfigs", js.undefined)
+    def setTargetCapacity(value: Integer): Self = StObject.set(x, "TargetCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDemandTargetCapacity(value: Integer): Self = this.set("OnDemandTargetCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnDemandTargetCapacity: Self = this.set("OnDemandTargetCapacity", js.undefined)
-    
-    @scala.inline
-    def setTargetCapacity(value: Integer): Self = this.set("TargetCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetCapacity: Self = this.set("TargetCapacity", js.undefined)
+    def setTargetCapacityUndefined: Self = StObject.set(x, "TargetCapacity", js.undefined)
   }
 }

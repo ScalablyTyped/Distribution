@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePlacementGroupsRequest extends js.Object {
+trait DescribePlacementGroupsRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -36,51 +37,39 @@ object DescribePlacementGroupsRequest {
   }
   
   @scala.inline
-  implicit class DescribePlacementGroupsRequestOps[Self <: DescribePlacementGroupsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribePlacementGroupsRequestMutableBuilder[Self <: DescribePlacementGroupsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setGroupIds(value: PlacementGroupIdStringList): Self = StObject.set(x, "GroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setGroupIdsUndefined: Self = StObject.set(x, "GroupIds", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setGroupIdsVarargs(value: PlacementGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setGroupIdsVarargs(value: PlacementGroupId*): Self = this.set("GroupIds", js.Array(value :_*))
+    def setGroupNames(value: PlacementGroupStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIds(value: PlacementGroupIdStringList): Self = this.set("GroupIds", value.asInstanceOf[js.Any])
+    def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
     
     @scala.inline
-    def deleteGroupIds: Self = this.set("GroupIds", js.undefined)
-    
-    @scala.inline
-    def setGroupNamesVarargs(value: PlacementGroupName*): Self = this.set("GroupNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroupNames(value: PlacementGroupStringList): Self = this.set("GroupNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupNames: Self = this.set("GroupNames", js.undefined)
+    def setGroupNamesVarargs(value: PlacementGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
   }
 }

@@ -12,12 +12,13 @@ import typings.cesium.mod.SkyAtmosphere
 import typings.cesium.mod.SkyBox
 import typings.cesium.mod.TerrainProvider
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animation extends js.Object {
+trait Animation extends StObject {
   
   var animation: js.UndefOr[Boolean] = js.native
   
@@ -114,282 +115,270 @@ object Animation {
   }
   
   @scala.inline
-  implicit class AnimationOps[Self <: Animation] (val x: Self) extends AnyVal {
+  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomaticallyTrackDataSourceClocks(value: Boolean): Self = StObject.set(x, "automaticallyTrackDataSourceClocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAutomaticallyTrackDataSourceClocksUndefined: Self = StObject.set(x, "automaticallyTrackDataSourceClocks", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setBaseLayerPicker(value: Boolean): Self = StObject.set(x, "baseLayerPicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticallyTrackDataSourceClocks(value: Boolean): Self = this.set("automaticallyTrackDataSourceClocks", value.asInstanceOf[js.Any])
+    def setBaseLayerPickerUndefined: Self = StObject.set(x, "baseLayerPicker", js.undefined)
     
     @scala.inline
-    def deleteAutomaticallyTrackDataSourceClocks: Self = this.set("automaticallyTrackDataSourceClocks", js.undefined)
+    def setClockViewModel(value: ClockViewModel): Self = StObject.set(x, "clockViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseLayerPicker(value: Boolean): Self = this.set("baseLayerPicker", value.asInstanceOf[js.Any])
+    def setClockViewModelUndefined: Self = StObject.set(x, "clockViewModel", js.undefined)
     
     @scala.inline
-    def deleteBaseLayerPicker: Self = this.set("baseLayerPicker", js.undefined)
+    def setContextOptions(value: js.Any): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockViewModel(value: ClockViewModel): Self = this.set("clockViewModel", value.asInstanceOf[js.Any])
+    def setContextOptionsUndefined: Self = StObject.set(x, "contextOptions", js.undefined)
     
     @scala.inline
-    def deleteClockViewModel: Self = this.set("clockViewModel", js.undefined)
+    def setCreditContainer(value: Element | String): Self = StObject.set(x, "creditContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextOptions(value: js.Any): Self = this.set("contextOptions", value.asInstanceOf[js.Any])
+    def setCreditContainerUndefined: Self = StObject.set(x, "creditContainer", js.undefined)
     
     @scala.inline
-    def deleteContextOptions: Self = this.set("contextOptions", js.undefined)
+    def setCreditViewport(value: Element | String): Self = StObject.set(x, "creditViewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditContainer(value: Element | String): Self = this.set("creditContainer", value.asInstanceOf[js.Any])
+    def setCreditViewportUndefined: Self = StObject.set(x, "creditViewport", js.undefined)
     
     @scala.inline
-    def deleteCreditContainer: Self = this.set("creditContainer", js.undefined)
+    def setDataSources(value: typings.cesium.mod.DataSourceCollection): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditViewport(value: Element | String): Self = this.set("creditViewport", value.asInstanceOf[js.Any])
+    def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
     @scala.inline
-    def deleteCreditViewport: Self = this.set("creditViewport", js.undefined)
+    def setFullscreenButton(value: Boolean): Self = StObject.set(x, "fullscreenButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSources(value: typings.cesium.mod.DataSourceCollection): Self = this.set("dataSources", value.asInstanceOf[js.Any])
+    def setFullscreenButtonUndefined: Self = StObject.set(x, "fullscreenButton", js.undefined)
     
     @scala.inline
-    def deleteDataSources: Self = this.set("dataSources", js.undefined)
+    def setFullscreenElement(value: Element | String): Self = StObject.set(x, "fullscreenElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreenButton(value: Boolean): Self = this.set("fullscreenButton", value.asInstanceOf[js.Any])
+    def setFullscreenElementUndefined: Self = StObject.set(x, "fullscreenElement", js.undefined)
     
     @scala.inline
-    def deleteFullscreenButton: Self = this.set("fullscreenButton", js.undefined)
+    def setGeocoder(value: Boolean): Self = StObject.set(x, "geocoder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreenElement(value: Element | String): Self = this.set("fullscreenElement", value.asInstanceOf[js.Any])
+    def setGeocoderUndefined: Self = StObject.set(x, "geocoder", js.undefined)
     
     @scala.inline
-    def deleteFullscreenElement: Self = this.set("fullscreenElement", js.undefined)
+    def setGlobe(value: typings.cesium.mod.Globe | `false`): Self = StObject.set(x, "globe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocoder(value: Boolean): Self = this.set("geocoder", value.asInstanceOf[js.Any])
+    def setGlobeUndefined: Self = StObject.set(x, "globe", js.undefined)
     
     @scala.inline
-    def deleteGeocoder: Self = this.set("geocoder", js.undefined)
+    def setHomeButton(value: Boolean): Self = StObject.set(x, "homeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobe(value: typings.cesium.mod.Globe | `false`): Self = this.set("globe", value.asInstanceOf[js.Any])
+    def setHomeButtonUndefined: Self = StObject.set(x, "homeButton", js.undefined)
     
     @scala.inline
-    def deleteGlobe: Self = this.set("globe", js.undefined)
+    def setImageryProvider(value: ImageryProvider | `false`): Self = StObject.set(x, "imageryProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeButton(value: Boolean): Self = this.set("homeButton", value.asInstanceOf[js.Any])
+    def setImageryProviderUndefined: Self = StObject.set(x, "imageryProvider", js.undefined)
     
     @scala.inline
-    def deleteHomeButton: Self = this.set("homeButton", js.undefined)
+    def setImageryProviderViewModels(value: js.Array[ProviderViewModel]): Self = StObject.set(x, "imageryProviderViewModels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageryProvider(value: ImageryProvider | `false`): Self = this.set("imageryProvider", value.asInstanceOf[js.Any])
+    def setImageryProviderViewModelsUndefined: Self = StObject.set(x, "imageryProviderViewModels", js.undefined)
     
     @scala.inline
-    def deleteImageryProvider: Self = this.set("imageryProvider", js.undefined)
+    def setImageryProviderViewModelsVarargs(value: ProviderViewModel*): Self = StObject.set(x, "imageryProviderViewModels", js.Array(value :_*))
     
     @scala.inline
-    def setImageryProviderViewModelsVarargs(value: ProviderViewModel*): Self = this.set("imageryProviderViewModels", js.Array(value :_*))
+    def setInfoBox(value: Boolean): Self = StObject.set(x, "infoBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageryProviderViewModels(value: js.Array[ProviderViewModel]): Self = this.set("imageryProviderViewModels", value.asInstanceOf[js.Any])
+    def setInfoBoxUndefined: Self = StObject.set(x, "infoBox", js.undefined)
     
     @scala.inline
-    def deleteImageryProviderViewModels: Self = this.set("imageryProviderViewModels", js.undefined)
+    def setMapMode2D(value: MapMode2D): Self = StObject.set(x, "mapMode2D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoBox(value: Boolean): Self = this.set("infoBox", value.asInstanceOf[js.Any])
+    def setMapMode2DUndefined: Self = StObject.set(x, "mapMode2D", js.undefined)
     
     @scala.inline
-    def deleteInfoBox: Self = this.set("infoBox", js.undefined)
+    def setMapProjection(value: MapProjection): Self = StObject.set(x, "mapProjection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapMode2D(value: MapMode2D): Self = this.set("mapMode2D", value.asInstanceOf[js.Any])
+    def setMapProjectionUndefined: Self = StObject.set(x, "mapProjection", js.undefined)
     
     @scala.inline
-    def deleteMapMode2D: Self = this.set("mapMode2D", js.undefined)
+    def setMaximumRenderTimeChange(value: Double): Self = StObject.set(x, "maximumRenderTimeChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapProjection(value: MapProjection): Self = this.set("mapProjection", value.asInstanceOf[js.Any])
+    def setMaximumRenderTimeChangeUndefined: Self = StObject.set(x, "maximumRenderTimeChange", js.undefined)
     
     @scala.inline
-    def deleteMapProjection: Self = this.set("mapProjection", js.undefined)
+    def setNavigationHelpButton(value: Boolean): Self = StObject.set(x, "navigationHelpButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumRenderTimeChange(value: Double): Self = this.set("maximumRenderTimeChange", value.asInstanceOf[js.Any])
+    def setNavigationHelpButtonUndefined: Self = StObject.set(x, "navigationHelpButton", js.undefined)
     
     @scala.inline
-    def deleteMaximumRenderTimeChange: Self = this.set("maximumRenderTimeChange", js.undefined)
+    def setNavigationInstructionsInitiallyVisible(value: Boolean): Self = StObject.set(x, "navigationInstructionsInitiallyVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationHelpButton(value: Boolean): Self = this.set("navigationHelpButton", value.asInstanceOf[js.Any])
+    def setNavigationInstructionsInitiallyVisibleUndefined: Self = StObject.set(x, "navigationInstructionsInitiallyVisible", js.undefined)
     
     @scala.inline
-    def deleteNavigationHelpButton: Self = this.set("navigationHelpButton", js.undefined)
+    def setOrderIndependentTranslucency(value: Boolean): Self = StObject.set(x, "orderIndependentTranslucency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationInstructionsInitiallyVisible(value: Boolean): Self = this.set("navigationInstructionsInitiallyVisible", value.asInstanceOf[js.Any])
+    def setOrderIndependentTranslucencyUndefined: Self = StObject.set(x, "orderIndependentTranslucency", js.undefined)
     
     @scala.inline
-    def deleteNavigationInstructionsInitiallyVisible: Self = this.set("navigationInstructionsInitiallyVisible", js.undefined)
+    def setProjectionPicker(value: Boolean): Self = StObject.set(x, "projectionPicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderIndependentTranslucency(value: Boolean): Self = this.set("orderIndependentTranslucency", value.asInstanceOf[js.Any])
+    def setProjectionPickerUndefined: Self = StObject.set(x, "projectionPicker", js.undefined)
     
     @scala.inline
-    def deleteOrderIndependentTranslucency: Self = this.set("orderIndependentTranslucency", js.undefined)
+    def setRequestRenderMode(value: Boolean): Self = StObject.set(x, "requestRenderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectionPicker(value: Boolean): Self = this.set("projectionPicker", value.asInstanceOf[js.Any])
+    def setRequestRenderModeUndefined: Self = StObject.set(x, "requestRenderMode", js.undefined)
     
     @scala.inline
-    def deleteProjectionPicker: Self = this.set("projectionPicker", js.undefined)
+    def setScene3DOnly(value: Boolean): Self = StObject.set(x, "scene3DOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestRenderMode(value: Boolean): Self = this.set("requestRenderMode", value.asInstanceOf[js.Any])
+    def setScene3DOnlyUndefined: Self = StObject.set(x, "scene3DOnly", js.undefined)
     
     @scala.inline
-    def deleteRequestRenderMode: Self = this.set("requestRenderMode", js.undefined)
+    def setSceneMode(value: SceneMode): Self = StObject.set(x, "sceneMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScene3DOnly(value: Boolean): Self = this.set("scene3DOnly", value.asInstanceOf[js.Any])
+    def setSceneModePicker(value: Boolean): Self = StObject.set(x, "sceneModePicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScene3DOnly: Self = this.set("scene3DOnly", js.undefined)
+    def setSceneModePickerUndefined: Self = StObject.set(x, "sceneModePicker", js.undefined)
     
     @scala.inline
-    def setSceneMode(value: SceneMode): Self = this.set("sceneMode", value.asInstanceOf[js.Any])
+    def setSceneModeUndefined: Self = StObject.set(x, "sceneMode", js.undefined)
     
     @scala.inline
-    def deleteSceneMode: Self = this.set("sceneMode", js.undefined)
+    def setSelectedImageryProviderViewModel(value: ProviderViewModel): Self = StObject.set(x, "selectedImageryProviderViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSceneModePicker(value: Boolean): Self = this.set("sceneModePicker", value.asInstanceOf[js.Any])
+    def setSelectedImageryProviderViewModelUndefined: Self = StObject.set(x, "selectedImageryProviderViewModel", js.undefined)
     
     @scala.inline
-    def deleteSceneModePicker: Self = this.set("sceneModePicker", js.undefined)
+    def setSelectedTerrainProviderViewModel(value: ProviderViewModel): Self = StObject.set(x, "selectedTerrainProviderViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedImageryProviderViewModel(value: ProviderViewModel): Self = this.set("selectedImageryProviderViewModel", value.asInstanceOf[js.Any])
+    def setSelectedTerrainProviderViewModelUndefined: Self = StObject.set(x, "selectedTerrainProviderViewModel", js.undefined)
     
     @scala.inline
-    def deleteSelectedImageryProviderViewModel: Self = this.set("selectedImageryProviderViewModel", js.undefined)
+    def setSelectionIndicator(value: Boolean): Self = StObject.set(x, "selectionIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedTerrainProviderViewModel(value: ProviderViewModel): Self = this.set("selectedTerrainProviderViewModel", value.asInstanceOf[js.Any])
+    def setSelectionIndicatorUndefined: Self = StObject.set(x, "selectionIndicator", js.undefined)
     
     @scala.inline
-    def deleteSelectedTerrainProviderViewModel: Self = this.set("selectedTerrainProviderViewModel", js.undefined)
+    def setShadows(value: Boolean): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionIndicator(value: Boolean): Self = this.set("selectionIndicator", value.asInstanceOf[js.Any])
+    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def deleteSelectionIndicator: Self = this.set("selectionIndicator", js.undefined)
+    def setShouldAnimate(value: Boolean): Self = StObject.set(x, "shouldAnimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadows(value: Boolean): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    def setShouldAnimateUndefined: Self = StObject.set(x, "shouldAnimate", js.undefined)
     
     @scala.inline
-    def deleteShadows: Self = this.set("shadows", js.undefined)
+    def setShowRenderLoopErrors(value: Boolean): Self = StObject.set(x, "showRenderLoopErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldAnimate(value: Boolean): Self = this.set("shouldAnimate", value.asInstanceOf[js.Any])
+    def setShowRenderLoopErrorsUndefined: Self = StObject.set(x, "showRenderLoopErrors", js.undefined)
     
     @scala.inline
-    def deleteShouldAnimate: Self = this.set("shouldAnimate", js.undefined)
+    def setSkyAtmosphere(value: SkyAtmosphere | `false`): Self = StObject.set(x, "skyAtmosphere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRenderLoopErrors(value: Boolean): Self = this.set("showRenderLoopErrors", value.asInstanceOf[js.Any])
+    def setSkyAtmosphereUndefined: Self = StObject.set(x, "skyAtmosphere", js.undefined)
     
     @scala.inline
-    def deleteShowRenderLoopErrors: Self = this.set("showRenderLoopErrors", js.undefined)
+    def setSkyBox(value: SkyBox | `false`): Self = StObject.set(x, "skyBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkyAtmosphere(value: SkyAtmosphere | `false`): Self = this.set("skyAtmosphere", value.asInstanceOf[js.Any])
+    def setSkyBoxUndefined: Self = StObject.set(x, "skyBox", js.undefined)
     
     @scala.inline
-    def deleteSkyAtmosphere: Self = this.set("skyAtmosphere", js.undefined)
+    def setTargetFrameRate(value: Double): Self = StObject.set(x, "targetFrameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkyBox(value: SkyBox | `false`): Self = this.set("skyBox", value.asInstanceOf[js.Any])
+    def setTargetFrameRateUndefined: Self = StObject.set(x, "targetFrameRate", js.undefined)
     
     @scala.inline
-    def deleteSkyBox: Self = this.set("skyBox", js.undefined)
+    def setTerrainExaggeration(value: Double): Self = StObject.set(x, "terrainExaggeration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetFrameRate(value: Double): Self = this.set("targetFrameRate", value.asInstanceOf[js.Any])
+    def setTerrainExaggerationUndefined: Self = StObject.set(x, "terrainExaggeration", js.undefined)
     
     @scala.inline
-    def deleteTargetFrameRate: Self = this.set("targetFrameRate", js.undefined)
+    def setTerrainProvider(value: TerrainProvider): Self = StObject.set(x, "terrainProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerrainExaggeration(value: Double): Self = this.set("terrainExaggeration", value.asInstanceOf[js.Any])
+    def setTerrainProviderUndefined: Self = StObject.set(x, "terrainProvider", js.undefined)
     
     @scala.inline
-    def deleteTerrainExaggeration: Self = this.set("terrainExaggeration", js.undefined)
+    def setTerrainProviderViewModels(value: js.Array[ProviderViewModel]): Self = StObject.set(x, "terrainProviderViewModels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerrainProvider(value: TerrainProvider): Self = this.set("terrainProvider", value.asInstanceOf[js.Any])
+    def setTerrainProviderViewModelsUndefined: Self = StObject.set(x, "terrainProviderViewModels", js.undefined)
     
     @scala.inline
-    def deleteTerrainProvider: Self = this.set("terrainProvider", js.undefined)
+    def setTerrainProviderViewModelsVarargs(value: ProviderViewModel*): Self = StObject.set(x, "terrainProviderViewModels", js.Array(value :_*))
     
     @scala.inline
-    def setTerrainProviderViewModelsVarargs(value: ProviderViewModel*): Self = this.set("terrainProviderViewModels", js.Array(value :_*))
+    def setTerrainShadows(value: ShadowMode): Self = StObject.set(x, "terrainShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerrainProviderViewModels(value: js.Array[ProviderViewModel]): Self = this.set("terrainProviderViewModels", value.asInstanceOf[js.Any])
+    def setTerrainShadowsUndefined: Self = StObject.set(x, "terrainShadows", js.undefined)
     
     @scala.inline
-    def deleteTerrainProviderViewModels: Self = this.set("terrainProviderViewModels", js.undefined)
+    def setTimeline(value: Boolean): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerrainShadows(value: ShadowMode): Self = this.set("terrainShadows", value.asInstanceOf[js.Any])
+    def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
     
     @scala.inline
-    def deleteTerrainShadows: Self = this.set("terrainShadows", js.undefined)
+    def setUseDefaultRenderLoop(value: Boolean): Self = StObject.set(x, "useDefaultRenderLoop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeline(value: Boolean): Self = this.set("timeline", value.asInstanceOf[js.Any])
+    def setUseDefaultRenderLoopUndefined: Self = StObject.set(x, "useDefaultRenderLoop", js.undefined)
     
     @scala.inline
-    def deleteTimeline: Self = this.set("timeline", js.undefined)
+    def setVrButton(value: Boolean): Self = StObject.set(x, "vrButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseDefaultRenderLoop(value: Boolean): Self = this.set("useDefaultRenderLoop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseDefaultRenderLoop: Self = this.set("useDefaultRenderLoop", js.undefined)
-    
-    @scala.inline
-    def setVrButton(value: Boolean): Self = this.set("vrButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVrButton: Self = this.set("vrButton", js.undefined)
+    def setVrButtonUndefined: Self = StObject.set(x, "vrButton", js.undefined)
   }
 }

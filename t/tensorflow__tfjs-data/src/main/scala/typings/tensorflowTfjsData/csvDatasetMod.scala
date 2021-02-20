@@ -5,14 +5,14 @@ import typings.tensorflowTfjsData.datasetMod.Dataset
 import typings.tensorflowTfjsData.datasourceMod.DataSource
 import typings.tensorflowTfjsData.textLineDatasetMod.TextLineDataset
 import typings.tensorflowTfjsData.typesMod.CSVConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-data/dist/datasets/csv_dataset", JSImport.Namespace)
-@js.native
-object csvDatasetMod extends js.Object {
+object csvDatasetMod {
   
+  @JSImport("@tensorflow/tfjs-data/dist/datasets/csv_dataset", "CSVDataset")
   @js.native
   class CSVDataset protected () extends Dataset[TensorContainer] {
     /**

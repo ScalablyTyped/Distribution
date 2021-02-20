@@ -1,5 +1,6 @@
 package typings.vegaTypings.transformMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.local
   - typings.vegaTypings.vegaTypingsStrings.utc
 */
-trait TimeZone extends js.Object
+trait TimeZone extends StObject
 object TimeZone {
   
   @scala.inline

@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InspectableType extends js.Object
+sealed trait InspectableType extends StObject
 @JSGlobal("BABYLON.InspectableType")
 @js.native
-object InspectableType extends js.Object {
+object InspectableType extends StObject {
   
   /**
     * Checkbox for booleans

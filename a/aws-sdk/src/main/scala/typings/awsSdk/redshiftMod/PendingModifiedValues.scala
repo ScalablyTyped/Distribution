@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PendingModifiedValues extends js.Object {
+trait PendingModifiedValues extends StObject {
   
   /**
     * The pending or in-progress change of the automated snapshot retention period.
@@ -71,84 +72,72 @@ object PendingModifiedValues {
   }
   
   @scala.inline
-  implicit class PendingModifiedValuesOps[Self <: PendingModifiedValues] (val x: Self) extends AnyVal {
+  implicit class PendingModifiedValuesMutableBuilder[Self <: PendingModifiedValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomatedSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomatedSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedSnapshotRetentionPeriod(value: IntegerOptional): Self = this.set("AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
     @scala.inline
-    def deleteAutomatedSnapshotRetentionPeriod: Self = this.set("AutomatedSnapshotRetentionPeriod", js.undefined)
+    def setClusterType(value: String): Self = StObject.set(x, "ClusterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setClusterTypeUndefined: Self = StObject.set(x, "ClusterType", js.undefined)
     
     @scala.inline
-    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    def setClusterVersion(value: String): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterType(value: String): Self = this.set("ClusterType", value.asInstanceOf[js.Any])
+    def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
     
     @scala.inline
-    def deleteClusterType: Self = this.set("ClusterType", js.undefined)
+    def setEncryptionType(value: String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterVersion(value: String): Self = this.set("ClusterVersion", value.asInstanceOf[js.Any])
+    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
     @scala.inline
-    def deleteClusterVersion: Self = this.set("ClusterVersion", js.undefined)
+    def setEnhancedVpcRouting(value: BooleanOptional): Self = StObject.set(x, "EnhancedVpcRouting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionType(value: String): Self = this.set("EncryptionType", value.asInstanceOf[js.Any])
+    def setEnhancedVpcRoutingUndefined: Self = StObject.set(x, "EnhancedVpcRouting", js.undefined)
     
     @scala.inline
-    def deleteEncryptionType: Self = this.set("EncryptionType", js.undefined)
+    def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhancedVpcRouting(value: BooleanOptional): Self = this.set("EnhancedVpcRouting", value.asInstanceOf[js.Any])
+    def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
     
     @scala.inline
-    def deleteEnhancedVpcRouting: Self = this.set("EnhancedVpcRouting", js.undefined)
+    def setMasterUserPassword(value: String): Self = StObject.set(x, "MasterUserPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenanceTrackName(value: String): Self = this.set("MaintenanceTrackName", value.asInstanceOf[js.Any])
+    def setMasterUserPasswordUndefined: Self = StObject.set(x, "MasterUserPassword", js.undefined)
     
     @scala.inline
-    def deleteMaintenanceTrackName: Self = this.set("MaintenanceTrackName", js.undefined)
+    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterUserPassword(value: String): Self = this.set("MasterUserPassword", value.asInstanceOf[js.Any])
+    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
     @scala.inline
-    def deleteMasterUserPassword: Self = this.set("MasterUserPassword", js.undefined)
+    def setNumberOfNodes(value: IntegerOptional): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: String): Self = this.set("NodeType", value.asInstanceOf[js.Any])
+    def setNumberOfNodesUndefined: Self = StObject.set(x, "NumberOfNodes", js.undefined)
     
     @scala.inline
-    def deleteNodeType: Self = this.set("NodeType", js.undefined)
+    def setPubliclyAccessible(value: BooleanOptional): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfNodes(value: IntegerOptional): Self = this.set("NumberOfNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfNodes: Self = this.set("NumberOfNodes", js.undefined)
-    
-    @scala.inline
-    def setPubliclyAccessible(value: BooleanOptional): Self = this.set("PubliclyAccessible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubliclyAccessible: Self = this.set("PubliclyAccessible", js.undefined)
+    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "PubliclyAccessible", js.undefined)
   }
 }

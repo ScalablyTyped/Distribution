@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * directory&#39;s full contents rather than a single file.
   */
 @js.native
-trait SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory extends js.Object {
+trait SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory extends StObject {
   
   /**
     * DEPRECATED: This field is deprecated and should no longer be used.
@@ -39,36 +40,24 @@ object SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectoryOps[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectoryMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = this.set("digest", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteDigest: Self = this.set("digest", js.undefined)
+    def setTreeDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "treeDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setTreeDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = this.set("treeDigest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreeDigest: Self = this.set("treeDigest", js.undefined)
+    def setTreeDigestUndefined: Self = StObject.set(x, "treeDigest", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageDetails extends js.Object {
+trait UsageDetails extends StObject {
   
   /**
     * The date and time the resource was last accessed by the user. The timestamp represents date and time information using
@@ -30,36 +31,24 @@ object UsageDetails {
   }
   
   @scala.inline
-  implicit class UsageDetailsOps[Self <: UsageDetails] (val x: Self) extends AnyVal {
+  implicit class UsageDetailsMutableBuilder[Self <: UsageDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastAccessedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastAccessedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastAccessedDateTimeNull: Self = StObject.set(x, "lastAccessedDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastAccessedDateTimeUndefined: Self = StObject.set(x, "lastAccessedDateTime", js.undefined)
     
     @scala.inline
-    def setLastAccessedDateTime(value: NullableOption[String]): Self = this.set("lastAccessedDateTime", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastAccessedDateTime: Self = this.set("lastAccessedDateTime", js.undefined)
+    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
     @scala.inline
-    def setLastAccessedDateTimeNull: Self = this.set("lastAccessedDateTime", null)
-    
-    @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
-    
-    @scala.inline
-    def setLastModifiedDateTimeNull: Self = this.set("lastModifiedDateTime", null)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
   }
 }

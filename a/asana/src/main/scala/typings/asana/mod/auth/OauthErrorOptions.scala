@@ -1,11 +1,12 @@
 package typings.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OauthErrorOptions extends js.Object {
+trait OauthErrorOptions extends StObject {
   
   var error: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object OauthErrorOptions {
   }
   
   @scala.inline
-  implicit class OauthErrorOptionsOps[Self <: OauthErrorOptions] (val x: Self) extends AnyVal {
+  implicit class OauthErrorOptionsMutableBuilder[Self <: OauthErrorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError_descriptionUndefined: Self = StObject.set(x, "error_description", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setError_uri(value: String): Self = StObject.set(x, "error_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_description(value: String): Self = this.set("error_description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError_description: Self = this.set("error_description", js.undefined)
-    
-    @scala.inline
-    def setError_uri(value: String): Self = this.set("error_uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError_uri: Self = this.set("error_uri", js.undefined)
+    def setError_uriUndefined: Self = StObject.set(x, "error_uri", js.undefined)
   }
 }

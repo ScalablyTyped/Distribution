@@ -1,5 +1,6 @@
 package typings.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.revert
   - typings.csstype.csstypeStrings.unset
 */
-trait MsTextAutospaceProperty extends js.Object
+trait MsTextAutospaceProperty extends StObject
 object MsTextAutospaceProperty {
   
   @scala.inline

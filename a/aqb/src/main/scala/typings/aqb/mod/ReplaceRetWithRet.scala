@@ -1,11 +1,12 @@
 package typings.aqb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplaceRetWithRet extends js.Object {
+trait ReplaceRetWithRet extends StObject {
   
   def in(collection: js.Any): ReplaceExpression = js.native
   

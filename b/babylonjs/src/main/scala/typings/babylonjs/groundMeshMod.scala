@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/groundMesh", JSImport.Namespace)
-@js.native
-object groundMeshMod extends js.Object {
+object groundMeshMod {
   
+  @JSImport("babylonjs/Meshes/groundMesh", "GroundMesh")
   @js.native
   class GroundMesh protected () extends Mesh {
     def this(name: String, scene: Scene) = this()
@@ -112,8 +112,7 @@ object groundMeshMod extends js.Object {
     def updateCoordinateHeights(): GroundMesh = js.native
   }
   /* static members */
-  @js.native
-  object GroundMesh extends js.Object {
+  object GroundMesh {
     
     /**
       * Parses a serialized ground mesh
@@ -121,6 +120,8 @@ object groundMeshMod extends js.Object {
       * @param scene the scene to create the ground mesh in
       * @returns the created ground mesh
       */
+    @JSImport("babylonjs/Meshes/groundMesh", "GroundMesh.Parse")
+    @js.native
     def Parse(parsedMesh: js.Any, scene: Scene): GroundMesh = js.native
   }
 }

@@ -1,23 +1,17 @@
 package typings.memfs
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("memfs/lib/internal/errors", JSImport.Namespace)
-@js.native
-object errorsMod extends js.Object {
-  
-  def E(sym: js.Any, `val`: js.Any): Unit = js.native
-  
-  def message(key: js.Any, args: js.Any): js.Any = js.native
+object errorsMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @js.native
-  class AssertionError protected () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("memfs/lib/internal/errors", "AssertionError")
+  @js.native
+  class AssertionError protected () extends StObject {
     def this(options: js.Any) = this()
     
     var actual: js.Any = js.native
@@ -33,18 +27,11 @@ object errorsMod extends js.Object {
     var operator: js.Any = js.native
   }
   
+  @JSImport("memfs/lib/internal/errors", "E")
   @js.native
-  object Error
-    extends /* x */ StringDictionary[js.Any]
-       with Instantiable2[/* key */ js.Any, /* args (repeated) */ js.Any, StringDictionary[js.Any]]
+  def E(sym: js.Any, `val`: js.Any): Unit = js.native
   
+  @JSImport("memfs/lib/internal/errors", "message")
   @js.native
-  object RangeError
-    extends /* x */ StringDictionary[js.Any]
-       with Instantiable2[/* key */ js.Any, /* args (repeated) */ js.Any, StringDictionary[js.Any]]
-  
-  @js.native
-  object TypeError
-    extends /* x */ StringDictionary[js.Any]
-       with Instantiable2[/* key */ js.Any, /* args (repeated) */ js.Any, StringDictionary[js.Any]]
+  def message(key: js.Any, args: js.Any): js.Any = js.native
 }

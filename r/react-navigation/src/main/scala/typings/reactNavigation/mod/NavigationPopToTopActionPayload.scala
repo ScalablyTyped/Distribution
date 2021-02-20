@@ -1,11 +1,12 @@
 package typings.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationPopToTopActionPayload extends js.Object {
+trait NavigationPopToTopActionPayload extends StObject {
   
   var immediate: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object NavigationPopToTopActionPayload {
   }
   
   @scala.inline
-  implicit class NavigationPopToTopActionPayloadOps[Self <: NavigationPopToTopActionPayload] (val x: Self) extends AnyVal {
+  implicit class NavigationPopToTopActionPayloadMutableBuilder[Self <: NavigationPopToTopActionPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImmediate(value: Boolean): Self = this.set("immediate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImmediate: Self = this.set("immediate", js.undefined)
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

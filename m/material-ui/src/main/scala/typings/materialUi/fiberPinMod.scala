@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/av/fiber-pin", JSImport.Namespace)
-@js.native
-object fiberPinMod extends js.Object {
+object fiberPinMod {
   
+  @JSImport("material-ui/svg-icons/av/fiber-pin", JSImport.Default)
+  @js.native
+  class default () extends AvFiberPin
+  
+  @JSImport("material-ui/svg-icons/av/fiber-pin", "AvFiberPin")
   @js.native
   class AvFiberPin ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

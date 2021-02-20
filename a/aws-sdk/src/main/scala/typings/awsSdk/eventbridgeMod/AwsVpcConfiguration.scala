@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsVpcConfiguration extends js.Object {
+trait AwsVpcConfiguration extends StObject {
   
   /**
     * Specifies whether the task's elastic network interface receives a public IP address. You can specify ENABLED only when LaunchType in EcsParameters is set to FARGATE.
@@ -31,39 +32,27 @@ object AwsVpcConfiguration {
   }
   
   @scala.inline
-  implicit class AwsVpcConfigurationOps[Self <: AwsVpcConfiguration] (val x: Self) extends AnyVal {
+  implicit class AwsVpcConfigurationMutableBuilder[Self <: AwsVpcConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignPublicIp(value: AssignPublicIp): Self = StObject.set(x, "AssignPublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignPublicIpUndefined: Self = StObject.set(x, "AssignPublicIp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityGroups(value: StringList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetsVarargs(value: String*): Self = this.set("Subnets", js.Array(value :_*))
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
     @scala.inline
-    def setSubnets(value: StringList): Self = this.set("Subnets", value.asInstanceOf[js.Any])
+    def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setAssignPublicIp(value: AssignPublicIp): Self = this.set("AssignPublicIp", value.asInstanceOf[js.Any])
+    def setSubnets(value: StringList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignPublicIp: Self = this.set("AssignPublicIp", js.undefined)
-    
-    @scala.inline
-    def setSecurityGroupsVarargs(value: String*): Self = this.set("SecurityGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurityGroups(value: StringList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    def setSubnetsVarargs(value: String*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
   }
 }

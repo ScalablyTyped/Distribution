@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Font extends js.Object {
+trait Font extends StObject {
   
   var duration: String = js.native
   
@@ -34,69 +35,57 @@ object Font {
   }
   
   @scala.inline
-  implicit class FontOps[Self <: Font] (val x: Self) extends AnyVal {
+  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFont(value: Family): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: Family): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setIgnore_ticks(value: Boolean): Self = StObject.set(x, "ignore_ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyph(value: String): Self = this.set("glyph", value.asInstanceOf[js.Any])
+    def setIgnore_ticksUndefined: Self = StObject.set(x, "ignore_ticks", js.undefined)
     
     @scala.inline
-    def deleteGlyph: Self = this.set("glyph", js.undefined)
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore_ticks(value: Boolean): Self = this.set("ignore_ticks", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteIgnore_ticks: Self = this.set("ignore_ticks", js.undefined)
+    def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setSubscript(value: Boolean): Self = StObject.set(x, "subscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmooth(value: Boolean): Self = this.set("smooth", value.asInstanceOf[js.Any])
+    def setSubscriptUndefined: Self = StObject.set(x, "subscript", js.undefined)
     
     @scala.inline
-    def deleteSmooth: Self = this.set("smooth", js.undefined)
+    def setSuperscript(value: Boolean): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscript(value: Boolean): Self = this.set("subscript", value.asInstanceOf[js.Any])
+    def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
     
     @scala.inline
-    def deleteSubscript: Self = this.set("subscript", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperscript(value: Boolean): Self = this.set("superscript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuperscript: Self = this.set("superscript", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,54 +95,42 @@ object XSheetCondition {
   }
   
   @scala.inline
-  implicit class XSheetConditionOps[Self <: XSheetCondition] (val x: Self) extends AnyVal {
+  implicit class XSheetConditionMutableBuilder[Self <: XSheetCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormula1(value: String): Self = StObject.set(x, "Formula1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormula2(value: String): Self = StObject.set(x, "Formula2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFormula1(value: () => String): Self = StObject.set(x, "getFormula1", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFormula1(value: String): Self = this.set("Formula1", value.asInstanceOf[js.Any])
+    def setGetFormula2(value: () => String): Self = StObject.set(x, "getFormula2", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFormula2(value: String): Self = this.set("Formula2", value.asInstanceOf[js.Any])
+    def setGetOperator(value: () => ConditionOperator): Self = StObject.set(x, "getOperator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOperator(value: ConditionOperator): Self = this.set("Operator", value.asInstanceOf[js.Any])
+    def setGetSourcePosition(value: () => CellAddress): Self = StObject.set(x, "getSourcePosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSourcePosition(value: CellAddress): Self = this.set("SourcePosition", value.asInstanceOf[js.Any])
+    def setOperator(value: ConditionOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFormula1(value: () => String): Self = this.set("getFormula1", js.Any.fromFunction0(value))
+    def setSetFormula1(value: String => Unit): Self = StObject.set(x, "setFormula1", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFormula2(value: () => String): Self = this.set("getFormula2", js.Any.fromFunction0(value))
+    def setSetFormula2(value: String => Unit): Self = StObject.set(x, "setFormula2", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOperator(value: () => ConditionOperator): Self = this.set("getOperator", js.Any.fromFunction0(value))
+    def setSetOperator(value: ConditionOperator => Unit): Self = StObject.set(x, "setOperator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSourcePosition(value: () => CellAddress): Self = this.set("getSourcePosition", js.Any.fromFunction0(value))
+    def setSetSourcePosition(value: CellAddress => Unit): Self = StObject.set(x, "setSourcePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFormula1(value: String => Unit): Self = this.set("setFormula1", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFormula2(value: String => Unit): Self = this.set("setFormula2", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOperator(value: ConditionOperator => Unit): Self = this.set("setOperator", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSourcePosition(value: CellAddress => Unit): Self = this.set("setSourcePosition", js.Any.fromFunction1(value))
+    def setSourcePosition(value: CellAddress): Self = StObject.set(x, "SourcePosition", value.asInstanceOf[js.Any])
   }
 }

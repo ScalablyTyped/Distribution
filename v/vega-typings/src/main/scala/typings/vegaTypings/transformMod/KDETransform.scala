@@ -3,6 +3,7 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.kde
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,87 +45,75 @@ object KDETransform {
   }
   
   @scala.inline
-  implicit class KDETransformOps[Self <: KDETransform] (val x: Self) extends AnyVal {
+  implicit class KDETransformMutableBuilder[Self <: KDETransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBandwidth(value: Double | SignalRef): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: FieldRef): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
     @scala.inline
-    def setType(value: kde): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCounts(value: Boolean | SignalRef): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setCumulative(value: Boolean | SignalRef): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: Double | SignalRef): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    def setExtent(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounts(value: Boolean | SignalRef): Self = this.set("counts", value.asInstanceOf[js.Any])
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def deleteCounts: Self = this.set("counts", js.undefined)
+    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCumulative(value: Boolean | SignalRef): Self = this.set("cumulative", value.asInstanceOf[js.Any])
+    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCumulative: Self = this.set("cumulative", js.undefined)
+    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
     @scala.inline
-    def setExtent(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setMaxsteps(value: Double | SignalRef): Self = StObject.set(x, "maxsteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupbyVarargs(value: FieldRef*): Self = this.set("groupby", js.Array(value :_*))
+    def setMaxstepsUndefined: Self = StObject.set(x, "maxsteps", js.undefined)
     
     @scala.inline
-    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = this.set("groupby", value.asInstanceOf[js.Any])
+    def setMinsteps(value: Double | SignalRef): Self = StObject.set(x, "minsteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupby: Self = this.set("groupby", js.undefined)
+    def setMinstepsUndefined: Self = StObject.set(x, "minsteps", js.undefined)
     
     @scala.inline
-    def setMaxsteps(value: Double | SignalRef): Self = this.set("maxsteps", value.asInstanceOf[js.Any])
+    def setResolve(value: KDEResolve | SignalRef): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxsteps: Self = this.set("maxsteps", js.undefined)
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def setMinsteps(value: Double | SignalRef): Self = this.set("minsteps", value.asInstanceOf[js.Any])
+    def setSteps(value: Double | SignalRef): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinsteps: Self = this.set("minsteps", js.undefined)
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def setResolve(value: KDEResolve | SignalRef): Self = this.set("resolve", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
-    
-    @scala.inline
-    def setSteps(value: Double | SignalRef): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setType(value: kde): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

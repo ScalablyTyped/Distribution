@@ -1,11 +1,12 @@
 package typings.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INxValidationError extends js.Object {
+trait INxValidationError extends StObject {
   
   /**
     * Context related to the error, from the user app domain.
@@ -38,27 +39,15 @@ object INxValidationError {
   }
   
   @scala.inline
-  implicit class INxValidationErrorOps[Self <: INxValidationError] (val x: Self) extends AnyVal {
+  implicit class INxValidationErrorMutableBuilder[Self <: INxValidationError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQContext(value: String): Self = StObject.set(x, "qContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQErrorCode(value: Double): Self = StObject.set(x, "qErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQContext(value: String): Self = this.set("qContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQErrorCode(value: Double): Self = this.set("qErrorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQExtendedMessage(value: String): Self = this.set("qExtendedMessage", value.asInstanceOf[js.Any])
+    def setQExtendedMessage(value: String): Self = StObject.set(x, "qExtendedMessage", value.asInstanceOf[js.Any])
   }
 }

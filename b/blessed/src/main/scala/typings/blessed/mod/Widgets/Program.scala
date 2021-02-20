@@ -1,12 +1,13 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "Widgets.Program")
 @js.native
-class Program () extends js.Object {
+class Program () extends StObject {
   
   /**
     * Wrap the given text in terminal formatting codes corresponding to the given attribute

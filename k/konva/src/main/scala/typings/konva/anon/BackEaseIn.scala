@@ -1,11 +1,12 @@
 package typings.konva.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackEaseIn extends js.Object {
+trait BackEaseIn extends StObject {
   
   def BackEaseIn(t: js.Any, b: js.Any, c: js.Any, d: js.Any): js.Any = js.native
   
@@ -65,66 +66,54 @@ object BackEaseIn {
   }
   
   @scala.inline
-  implicit class BackEaseInOps[Self <: BackEaseIn] (val x: Self) extends AnyVal {
+  implicit class BackEaseInMutableBuilder[Self <: BackEaseIn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BackEaseIn", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BackEaseInOut", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BackEaseOut", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setBackEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("BackEaseIn", js.Any.fromFunction4(value))
+    def setBounceEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BounceEaseIn", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setBackEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("BackEaseInOut", js.Any.fromFunction4(value))
+    def setBounceEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BounceEaseInOut", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setBackEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("BackEaseOut", js.Any.fromFunction4(value))
+    def setBounceEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "BounceEaseOut", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setBounceEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("BounceEaseIn", js.Any.fromFunction4(value))
+    def setEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "EaseIn", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setBounceEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("BounceEaseInOut", js.Any.fromFunction4(value))
+    def setEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "EaseInOut", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setBounceEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("BounceEaseOut", js.Any.fromFunction4(value))
+    def setEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "EaseOut", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("EaseIn", js.Any.fromFunction4(value))
+    def setElasticEaseIn(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ElasticEaseIn", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("EaseInOut", js.Any.fromFunction4(value))
+    def setElasticEaseInOut(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ElasticEaseInOut", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("EaseOut", js.Any.fromFunction4(value))
+    def setElasticEaseOut(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ElasticEaseOut", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setElasticEaseIn(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("ElasticEaseIn", js.Any.fromFunction6(value))
+    def setLinear(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "Linear", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setElasticEaseInOut(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("ElasticEaseInOut", js.Any.fromFunction6(value))
+    def setStrongEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "StrongEaseIn", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setElasticEaseOut(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("ElasticEaseOut", js.Any.fromFunction6(value))
+    def setStrongEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "StrongEaseInOut", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setLinear(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("Linear", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setStrongEaseIn(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("StrongEaseIn", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setStrongEaseInOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("StrongEaseInOut", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setStrongEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("StrongEaseOut", js.Any.fromFunction4(value))
+    def setStrongEaseOut(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "StrongEaseOut", js.Any.fromFunction4(value))
   }
 }

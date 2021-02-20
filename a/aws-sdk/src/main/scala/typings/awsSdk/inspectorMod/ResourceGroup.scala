@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceGroup extends js.Object {
+trait ResourceGroup extends StObject {
   
   /**
     * The ARN of the resource group.
@@ -31,30 +32,18 @@ object ResourceGroup {
   }
   
   @scala.inline
-  implicit class ResourceGroupOps[Self <: ResourceGroup] (val x: Self) extends AnyVal {
+  implicit class ResourceGroupMutableBuilder[Self <: ResourceGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTags(value: ResourceGroupTags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagsVarargs(value: ResourceGroupTag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: ResourceGroupTags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: ResourceGroupTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

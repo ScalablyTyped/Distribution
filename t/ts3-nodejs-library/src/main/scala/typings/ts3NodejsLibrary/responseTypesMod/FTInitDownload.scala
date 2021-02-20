@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,60 +40,48 @@ object FTInitDownload {
   }
   
   @scala.inline
-  implicit class FTInitDownloadOps[Self <: FTInitDownload] (val x: Self) extends AnyVal {
+  implicit class FTInitDownloadMutableBuilder[Self <: FTInitDownload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFtkey(value: String): Self = StObject.set(x, "ftkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFtkeyUndefined: Self = StObject.set(x, "ftkey", js.undefined)
     
     @scala.inline
-    def setClientftfid(value: Double): Self = this.set("clientftfid", value.asInstanceOf[js.Any])
+    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
     @scala.inline
-    def setFtkey(value: String): Self = this.set("ftkey", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFtkey: Self = this.set("ftkey", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setMsg(value: String): Self = this.set("msg", value.asInstanceOf[js.Any])
+    def setProto(value: Double): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsg: Self = this.set("msg", js.undefined)
+    def setProtoUndefined: Self = StObject.set(x, "proto", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setServerftfid(value: Double): Self = StObject.set(x, "serverftfid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setServerftfidUndefined: Self = StObject.set(x, "serverftfid", js.undefined)
     
     @scala.inline
-    def setProto(value: Double): Self = this.set("proto", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProto: Self = this.set("proto", js.undefined)
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerftfid(value: Double): Self = this.set("serverftfid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerftfid: Self = this.set("serverftfid", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

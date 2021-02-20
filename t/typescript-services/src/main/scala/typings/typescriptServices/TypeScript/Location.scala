@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Location extends js.Object {
+trait Location extends StObject {
   
   var _fileName: js.Any = js.native
   
@@ -47,48 +48,36 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacter(value: () => Double): Self = StObject.set(x, "character", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileName(value: () => String): Self = StObject.set(x, "fileName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_fileName(value: js.Any): Self = this.set("_fileName", value.asInstanceOf[js.Any])
+    def setLine(value: () => Double): Self = StObject.set(x, "line", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_length(value: js.Any): Self = this.set("_length", value.asInstanceOf[js.Any])
+    def setLineMap(value: () => LineMap): Self = StObject.set(x, "lineMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_lineMap(value: js.Any): Self = this.set("_lineMap", value.asInstanceOf[js.Any])
+    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_start(value: js.Any): Self = this.set("_start", value.asInstanceOf[js.Any])
+    def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacter(value: () => Double): Self = this.set("character", js.Any.fromFunction0(value))
+    def set_length(value: js.Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: () => String): Self = this.set("fileName", js.Any.fromFunction0(value))
+    def set_lineMap(value: js.Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: () => Double): Self = this.set("length", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLine(value: () => Double): Self = this.set("line", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLineMap(value: () => LineMap): Self = this.set("lineMap", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: () => Double): Self = this.set("start", js.Any.fromFunction0(value))
+    def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLifecyclePolicyPreviewRequest extends js.Object {
+trait GetLifecyclePolicyPreviewRequest extends StObject {
   
   /**
     * An optional parameter that filters results based on image tag status and all tags, if tagged.
@@ -46,54 +47,42 @@ object GetLifecyclePolicyPreviewRequest {
   }
   
   @scala.inline
-  implicit class GetLifecyclePolicyPreviewRequestOps[Self <: GetLifecyclePolicyPreviewRequest] (val x: Self) extends AnyVal {
+  implicit class GetLifecyclePolicyPreviewRequestMutableBuilder[Self <: GetLifecyclePolicyPreviewRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: LifecyclePolicyPreviewFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageIds(value: ImageIdentifierList): Self = StObject.set(x, "imageIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    def setImageIdsUndefined: Self = StObject.set(x, "imageIds", js.undefined)
     
     @scala.inline
-    def setFilter(value: LifecyclePolicyPreviewFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setMaxResults(value: LifecyclePreviewMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageIdsVarargs(value: ImageIdentifier*): Self = this.set("imageIds", js.Array(value :_*))
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setImageIds(value: ImageIdentifierList): Self = this.set("imageIds", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageIds: Self = this.set("imageIds", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: LifecyclePreviewMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

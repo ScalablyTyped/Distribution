@@ -1,5 +1,6 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleMaps.googleMapsStrings.UNKNOWN_ERROR
   - typings.googleMaps.googleMapsStrings.ZERO_RESULTS
 */
-trait TimeZoneResponseStatus extends js.Object
+trait TimeZoneResponseStatus extends StObject
 object TimeZoneResponseStatus {
   
   @scala.inline

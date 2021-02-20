@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,108 +74,96 @@ object IIndexBar {
   }
   
   @scala.inline
-  implicit class IIndexBarOps[Self <: IIndexBar] (val x: Self) extends AnyVal {
+  implicit class IIndexBarMutableBuilder[Self <: IIndexBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphabet(value: Boolean): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphabetUndefined: Self = StObject.set(x, "alphabet", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: java.lang.String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphabet(value: Boolean): Self = this.set("alphabet", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteAlphabet: Self = this.set("alphabet", js.undefined)
+    def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDirection(value: java.lang.String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setGetLetters(value: () => Array): Self = StObject.set(x, "getLetters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDirection(value: () => java.lang.String): Self = this.set("getDirection", js.Any.fromFunction0(value))
+    def setGetLettersUndefined: Self = StObject.set(x, "getLetters", js.undefined)
     
     @scala.inline
-    def deleteGetDirection: Self = this.set("getDirection", js.undefined)
+    def setGetListPrefix(value: () => java.lang.String): Self = StObject.set(x, "getListPrefix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLetters(value: () => Array): Self = this.set("getLetters", js.Any.fromFunction0(value))
+    def setGetListPrefixUndefined: Self = StObject.set(x, "getListPrefix", js.undefined)
     
     @scala.inline
-    def deleteGetLetters: Self = this.set("getLetters", js.undefined)
+    def setIsHorizontal(value: () => Unit): Self = StObject.set(x, "isHorizontal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetListPrefix(value: () => java.lang.String): Self = this.set("getListPrefix", js.Any.fromFunction0(value))
+    def setIsHorizontalUndefined: Self = StObject.set(x, "isHorizontal", js.undefined)
     
     @scala.inline
-    def deleteGetListPrefix: Self = this.set("getListPrefix", js.undefined)
+    def setIsVertical(value: () => Unit): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsHorizontal(value: () => Unit): Self = this.set("isHorizontal", js.Any.fromFunction0(value))
+    def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
     
     @scala.inline
-    def deleteIsHorizontal: Self = this.set("isHorizontal", js.undefined)
+    def setItemSelector(value: Boolean): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVertical(value: () => Unit): Self = this.set("isVertical", js.Any.fromFunction0(value))
+    def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
     
     @scala.inline
-    def deleteIsVertical: Self = this.set("isVertical", js.undefined)
+    def setLetters(value: Array): Self = StObject.set(x, "letters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemSelector(value: Boolean): Self = this.set("itemSelector", value.asInstanceOf[js.Any])
+    def setLettersUndefined: Self = StObject.set(x, "letters", js.undefined)
     
     @scala.inline
-    def deleteItemSelector: Self = this.set("itemSelector", js.undefined)
+    def setListPrefix(value: java.lang.String): Self = StObject.set(x, "listPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetters(value: Array): Self = this.set("letters", value.asInstanceOf[js.Any])
+    def setListPrefixUndefined: Self = StObject.set(x, "listPrefix", js.undefined)
     
     @scala.inline
-    def deleteLetters: Self = this.set("letters", js.undefined)
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setListPrefix(value: java.lang.String): Self = this.set("listPrefix", value.asInstanceOf[js.Any])
+    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     
     @scala.inline
-    def deleteListPrefix: Self = this.set("listPrefix", js.undefined)
+    def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("refresh", js.Any.fromFunction0(value))
+    def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
     
     @scala.inline
-    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    def setSetLetters(value: /* letters */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setLetters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setDirection", js.Any.fromFunction1(value))
+    def setSetLettersUndefined: Self = StObject.set(x, "setLetters", js.undefined)
     
     @scala.inline
-    def deleteSetDirection: Self = this.set("setDirection", js.undefined)
+    def setSetListPrefix(value: /* listPrefix */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setListPrefix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLetters(value: /* letters */ js.UndefOr[Array] => Unit): Self = this.set("setLetters", js.Any.fromFunction1(value))
+    def setSetListPrefixUndefined: Self = StObject.set(x, "setListPrefix", js.undefined)
     
     @scala.inline
-    def deleteSetLetters: Self = this.set("setLetters", js.undefined)
+    def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetListPrefix(value: /* listPrefix */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setListPrefix", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetListPrefix: Self = this.set("setListPrefix", js.undefined)
-    
-    @scala.inline
-    def setStore(value: Boolean): Self = this.set("store", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
   }
 }

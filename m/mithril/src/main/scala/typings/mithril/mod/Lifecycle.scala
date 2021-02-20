@@ -1,6 +1,7 @@
 package typings.mithril.mod
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object Lifecycle {
   }
   
   @scala.inline
-  implicit class LifecycleOps[Self <: Lifecycle[_, _], Attrs, State] (val x: Self with (Lifecycle[Attrs, State])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class LifecycleMutableBuilder[Self <: Lifecycle[_, _], Attrs, State] (val x: Self with (Lifecycle[Attrs, State])) extends AnyVal {
     
     @scala.inline
     def setOnbeforeremove(
       value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | Unit]
-    ): Self = this.set("onbeforeremove", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onbeforeremove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnbeforeremove: Self = this.set("onbeforeremove", js.undefined)
+    def setOnbeforeremoveUndefined: Self = StObject.set(x, "onbeforeremove", js.undefined)
     
     @scala.inline
     def setOnbeforeupdate(
@@ -76,33 +65,33 @@ object Lifecycle {
           /* old */ VnodeDOM[Attrs, State], 
           Boolean | Unit
         ]
-    ): Self = this.set("onbeforeupdate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onbeforeupdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnbeforeupdate: Self = this.set("onbeforeupdate", js.undefined)
+    def setOnbeforeupdateUndefined: Self = StObject.set(x, "onbeforeupdate", js.undefined)
     
     @scala.inline
-    def setOncreate(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _]): Self = this.set("oncreate", value.asInstanceOf[js.Any])
+    def setOncreate(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _]): Self = StObject.set(x, "oncreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOncreate: Self = this.set("oncreate", js.undefined)
+    def setOncreateUndefined: Self = StObject.set(x, "oncreate", js.undefined)
     
     @scala.inline
-    def setOninit(value: js.ThisFunction1[/* this */ State, /* vnode */ Vnode[Attrs, State], _]): Self = this.set("oninit", value.asInstanceOf[js.Any])
+    def setOninit(value: js.ThisFunction1[/* this */ State, /* vnode */ Vnode[Attrs, State], _]): Self = StObject.set(x, "oninit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOninit: Self = this.set("oninit", js.undefined)
+    def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
     
     @scala.inline
-    def setOnremove(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _]): Self = this.set("onremove", value.asInstanceOf[js.Any])
+    def setOnremove(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _]): Self = StObject.set(x, "onremove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnremove: Self = this.set("onremove", js.undefined)
+    def setOnremoveUndefined: Self = StObject.set(x, "onremove", js.undefined)
     
     @scala.inline
-    def setOnupdate(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _]): Self = this.set("onupdate", value.asInstanceOf[js.Any])
+    def setOnupdate(value: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _]): Self = StObject.set(x, "onupdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnupdate: Self = this.set("onupdate", js.undefined)
+    def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
   }
 }

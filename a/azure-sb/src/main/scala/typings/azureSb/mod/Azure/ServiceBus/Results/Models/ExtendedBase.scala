@@ -3,6 +3,7 @@ package typings.azureSb.mod.Azure.ServiceBus.Results.Models
 import typings.azureSb.anon.Author
 import typings.azureSb.mod.Azure.ServiceBus.DateString
 import typings.azureSb.mod.Azure.ServiceBus.Duration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,60 +66,48 @@ object ExtendedBase {
   }
   
   @scala.inline
-  implicit class ExtendedBaseOps[Self <: ExtendedBase] (val x: Self) extends AnyVal {
+  implicit class ExtendedBaseMutableBuilder[Self <: ExtendedBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationRules(value: String): Self = StObject.set(x, "AuthorizationRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoDeleteOnIdle(value: String): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationRules(value: String): Self = this.set("AuthorizationRules", value.asInstanceOf[js.Any])
+    def setDuplicateDetectionHistoryTimeWindow(value: Duration): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDeleteOnIdle(value: String): Self = this.set("AutoDeleteOnIdle", value.asInstanceOf[js.Any])
+    def setEnableBatchedOperations(value: String): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMessageTimeToLive(value: String): Self = this.set("DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    def setEnableExpress(value: String): Self = StObject.set(x, "EnableExpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicateDetectionHistoryTimeWindow(value: Duration): Self = this.set("DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
+    def setEnablePartitioning(value: String): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableBatchedOperations(value: String): Self = this.set("EnableBatchedOperations", value.asInstanceOf[js.Any])
+    def setEntityAvailabilityStatus(value: String): Self = StObject.set(x, "EntityAvailabilityStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableExpress(value: String): Self = this.set("EnableExpress", value.asInstanceOf[js.Any])
+    def setIsAnonymousAccessible(value: String): Self = StObject.set(x, "IsAnonymousAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePartitioning(value: String): Self = this.set("EnablePartitioning", value.asInstanceOf[js.Any])
+    def setMaxSizeInMegabytes(value: String): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityAvailabilityStatus(value: String): Self = this.set("EntityAvailabilityStatus", value.asInstanceOf[js.Any])
+    def setRequiresDuplicateDetection(value: String): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAnonymousAccessible(value: String): Self = this.set("IsAnonymousAccessible", value.asInstanceOf[js.Any])
+    def setSizeInBytes(value: String): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSizeInMegabytes(value: String): Self = this.set("MaxSizeInMegabytes", value.asInstanceOf[js.Any])
+    def setStatus(value: EntityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiresDuplicateDetection(value: String): Self = this.set("RequiresDuplicateDetection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizeInBytes(value: String): Self = this.set("SizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: EntityStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedAt(value: DateString): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    def setUpdatedAt(value: DateString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

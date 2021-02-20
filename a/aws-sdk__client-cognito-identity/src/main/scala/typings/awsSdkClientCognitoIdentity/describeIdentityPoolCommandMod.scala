@@ -5,19 +5,19 @@ import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceInput
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.models0Mod.DescribeIdentityPoolInput
 import typings.awsSdkClientCognitoIdentity.models0Mod.IdentityPool
-import typings.awsSdkSmithyClient.commandMod.Command
+import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.awsSdkTypes.responseMod.MetadataBearer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity/types/commands/DescribeIdentityPoolCommand", JSImport.Namespace)
-@js.native
-object describeIdentityPoolCommandMod extends js.Object {
+object describeIdentityPoolCommandMod {
   
+  @JSImport("@aws-sdk/client-cognito-identity/types/commands/DescribeIdentityPoolCommand", "DescribeIdentityPoolCommand")
   @js.native
   class DescribeIdentityPoolCommand protected ()
     extends Command[

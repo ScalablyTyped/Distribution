@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransferOptions extends js.Object {
+trait TransferOptions extends StObject {
   
   /** Whether objects should be deleted from the source after they are transferred to the sink. **Note:** This option and delete_objects_unique_in_sink are mutually exclusive. */
   var deleteObjectsFromSourceAfterTransfer: js.UndefOr[Boolean] = js.native
@@ -28,36 +29,24 @@ object TransferOptions {
   }
   
   @scala.inline
-  implicit class TransferOptionsOps[Self <: TransferOptions] (val x: Self) extends AnyVal {
+  implicit class TransferOptionsMutableBuilder[Self <: TransferOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteObjectsFromSourceAfterTransfer(value: Boolean): Self = StObject.set(x, "deleteObjectsFromSourceAfterTransfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteObjectsFromSourceAfterTransferUndefined: Self = StObject.set(x, "deleteObjectsFromSourceAfterTransfer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteObjectsUniqueInSink(value: Boolean): Self = StObject.set(x, "deleteObjectsUniqueInSink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteObjectsFromSourceAfterTransfer(value: Boolean): Self = this.set("deleteObjectsFromSourceAfterTransfer", value.asInstanceOf[js.Any])
+    def setDeleteObjectsUniqueInSinkUndefined: Self = StObject.set(x, "deleteObjectsUniqueInSink", js.undefined)
     
     @scala.inline
-    def deleteDeleteObjectsFromSourceAfterTransfer: Self = this.set("deleteObjectsFromSourceAfterTransfer", js.undefined)
+    def setOverwriteObjectsAlreadyExistingInSink(value: Boolean): Self = StObject.set(x, "overwriteObjectsAlreadyExistingInSink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteObjectsUniqueInSink(value: Boolean): Self = this.set("deleteObjectsUniqueInSink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteObjectsUniqueInSink: Self = this.set("deleteObjectsUniqueInSink", js.undefined)
-    
-    @scala.inline
-    def setOverwriteObjectsAlreadyExistingInSink(value: Boolean): Self = this.set("overwriteObjectsAlreadyExistingInSink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwriteObjectsAlreadyExistingInSink: Self = this.set("overwriteObjectsAlreadyExistingInSink", js.undefined)
+    def setOverwriteObjectsAlreadyExistingInSinkUndefined: Self = StObject.set(x, "overwriteObjectsAlreadyExistingInSink", js.undefined)
   }
 }

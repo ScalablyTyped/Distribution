@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapContextGetRegionResult extends js.Object {
+trait MapContextGetRegionResult extends StObject {
   
   /**
     * 东北角的经纬度
@@ -26,30 +27,18 @@ object MapContextGetRegionResult {
   }
   
   @scala.inline
-  implicit class MapContextGetRegionResultOps[Self <: MapContextGetRegionResult] (val x: Self) extends AnyVal {
+  implicit class MapContextGetRegionResultMutableBuilder[Self <: MapContextGetRegionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNortheast(value: LocationObject): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNortheastUndefined: Self = StObject.set(x, "northeast", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSouthwest(value: LocationObject): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNortheast(value: LocationObject): Self = this.set("northeast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNortheast: Self = this.set("northeast", js.undefined)
-    
-    @scala.inline
-    def setSouthwest(value: LocationObject): Self = this.set("southwest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSouthwest: Self = this.set("southwest", js.undefined)
+    def setSouthwestUndefined: Self = StObject.set(x, "southwest", js.undefined)
   }
 }

@@ -3,16 +3,16 @@ package typings.babylonjs
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Maths/sphericalPolynomial", JSImport.Namespace)
-@js.native
-object sphericalPolynomialMod extends js.Object {
+object sphericalPolynomialMod {
   
+  @JSImport("babylonjs/Maths/sphericalPolynomial", "SphericalHarmonics")
   @js.native
-  class SphericalHarmonics () extends js.Object {
+  class SphericalHarmonics () extends StObject {
     
     /**
       * Adds a light to the spherical harmonics
@@ -112,14 +112,15 @@ object sphericalPolynomialMod extends js.Object {
     def scaleInPlace(scale: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object SphericalHarmonics extends js.Object {
+  object SphericalHarmonics {
     
     /**
       * Constructs a spherical harmonics from an array.
       * @param data defines the 9x3 coefficients (l00, l1-1, l10, l11, l2-2, l2-1, l20, l21, l22)
       * @returns the spherical harmonics
       */
+    @JSImport("babylonjs/Maths/sphericalPolynomial", "SphericalHarmonics.FromArray")
+    @js.native
     def FromArray(data: ArrayLike[ArrayLike[Double]]): SphericalHarmonics = js.native
     
     /**
@@ -127,11 +128,14 @@ object sphericalPolynomialMod extends js.Object {
       * @param polynomial the spherical polynomial
       * @returns the spherical harmonics
       */
+    @JSImport("babylonjs/Maths/sphericalPolynomial", "SphericalHarmonics.FromPolynomial")
+    @js.native
     def FromPolynomial(polynomial: SphericalPolynomial): SphericalHarmonics = js.native
   }
   
+  @JSImport("babylonjs/Maths/sphericalPolynomial", "SphericalPolynomial")
   @js.native
-  class SphericalPolynomial () extends js.Object {
+  class SphericalPolynomial () extends StObject {
     
     var _harmonics: js.Any = js.native
     
@@ -198,14 +202,15 @@ object sphericalPolynomialMod extends js.Object {
     var zz: Vector3 = js.native
   }
   /* static members */
-  @js.native
-  object SphericalPolynomial extends js.Object {
+  object SphericalPolynomial {
     
     /**
       * Constructs a spherical polynomial from an array.
       * @param data defines the 9x3 coefficients (x, y, z, xx, yy, zz, yz, zx, xy)
       * @returns the spherical polynomial
       */
+    @JSImport("babylonjs/Maths/sphericalPolynomial", "SphericalPolynomial.FromArray")
+    @js.native
     def FromArray(data: ArrayLike[ArrayLike[Double]]): SphericalPolynomial = js.native
     
     /**
@@ -213,6 +218,8 @@ object sphericalPolynomialMod extends js.Object {
       * @param harmonics the spherical harmonics
       * @returns the spherical polynomial
       */
+    @JSImport("babylonjs/Maths/sphericalPolynomial", "SphericalPolynomial.FromHarmonics")
+    @js.native
     def FromHarmonics(harmonics: SphericalHarmonics): SphericalPolynomial = js.native
   }
 }

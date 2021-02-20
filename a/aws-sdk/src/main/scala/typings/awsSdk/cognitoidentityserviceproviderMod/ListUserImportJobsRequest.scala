@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUserImportJobsRequest extends js.Object {
+trait ListUserImportJobsRequest extends StObject {
   
   /**
     * The maximum number of import jobs you want the request to return.
@@ -31,30 +32,18 @@ object ListUserImportJobsRequest {
   }
   
   @scala.inline
-  implicit class ListUserImportJobsRequestOps[Self <: ListUserImportJobsRequest] (val x: Self) extends AnyVal {
+  implicit class ListUserImportJobsRequestMutableBuilder[Self <: ListUserImportJobsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: PoolQueryLimitType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaginationToken(value: PaginationKeyType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: PoolQueryLimitType): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaginationToken(value: PaginationKeyType): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

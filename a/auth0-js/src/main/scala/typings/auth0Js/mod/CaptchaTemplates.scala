@@ -1,12 +1,13 @@
 package typings.auth0Js.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptchaTemplates extends js.Object {
+trait CaptchaTemplates extends StObject {
   
   /**
     * Template function receiving the challenge and returning an string
@@ -29,33 +30,21 @@ object CaptchaTemplates {
   }
   
   @scala.inline
-  implicit class CaptchaTemplatesOps[Self <: CaptchaTemplates] (val x: Self) extends AnyVal {
+  implicit class CaptchaTemplatesMutableBuilder[Self <: CaptchaTemplates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth0(value: /* challenge */ Auth0Challenge => String): Self = StObject.set(x, "auth0", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuth0Undefined: Self = StObject.set(x, "auth0", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: Error => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: Error => String): Self = this.set("error", js.Any.fromFunction1(value))
+    def setRecaptcha_v2(value: /* challenge */ Auth0Challenge => String): Self = StObject.set(x, "recaptcha_v2", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAuth0(value: /* challenge */ Auth0Challenge => String): Self = this.set("auth0", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteAuth0: Self = this.set("auth0", js.undefined)
-    
-    @scala.inline
-    def setRecaptcha_v2(value: /* challenge */ Auth0Challenge => String): Self = this.set("recaptcha_v2", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRecaptcha_v2: Self = this.set("recaptcha_v2", js.undefined)
+    def setRecaptcha_v2Undefined: Self = StObject.set(x, "recaptcha_v2", js.undefined)
   }
 }

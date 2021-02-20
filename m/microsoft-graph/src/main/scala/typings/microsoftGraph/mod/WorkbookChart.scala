@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,117 +59,105 @@ object WorkbookChart {
   }
   
   @scala.inline
-  implicit class WorkbookChartOps[Self <: WorkbookChart] (val x: Self) extends AnyVal {
+  implicit class WorkbookChartMutableBuilder[Self <: WorkbookChart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxes(value: NullableOption[WorkbookChartAxes]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxesNull: Self = StObject.set(x, "axes", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
     @scala.inline
-    def setAxes(value: NullableOption[WorkbookChartAxes]): Self = this.set("axes", value.asInstanceOf[js.Any])
+    def setDataLabels(value: NullableOption[WorkbookChartDataLabels]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAxes: Self = this.set("axes", js.undefined)
+    def setDataLabelsNull: Self = StObject.set(x, "dataLabels", null)
     
     @scala.inline
-    def setAxesNull: Self = this.set("axes", null)
+    def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
     @scala.inline
-    def setDataLabels(value: NullableOption[WorkbookChartDataLabels]): Self = this.set("dataLabels", value.asInstanceOf[js.Any])
+    def setFormat(value: NullableOption[WorkbookChartAreaFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataLabels: Self = this.set("dataLabels", js.undefined)
+    def setFormatNull: Self = StObject.set(x, "format", null)
     
     @scala.inline
-    def setDataLabelsNull: Self = this.set("dataLabels", null)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormat(value: NullableOption[WorkbookChartAreaFormat]): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setFormatNull: Self = this.set("format", null)
+    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLegend(value: NullableOption[WorkbookChartLegend]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setLegendNull: Self = StObject.set(x, "legend", null)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def setLegend(value: NullableOption[WorkbookChartLegend]): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setLegendNull: Self = this.set("legend", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSeries(value: NullableOption[js.Array[WorkbookChartSeries]]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSeriesNull: Self = StObject.set(x, "series", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def setSeriesVarargs(value: WorkbookChartSeries*): Self = this.set("series", js.Array(value :_*))
+    def setSeriesVarargs(value: WorkbookChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def setSeries(value: NullableOption[js.Array[WorkbookChartSeries]]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setTitle(value: NullableOption[WorkbookChartTitle]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setTitleNull: Self = StObject.set(x, "title", null)
     
     @scala.inline
-    def setSeriesNull: Self = this.set("series", null)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTitle(value: NullableOption[WorkbookChartTitle]): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def setTitleNull: Self = this.set("title", null)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setWorksheet(value: NullableOption[WorkbookWorksheet]): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWorksheetNull: Self = StObject.set(x, "worksheet", null)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWorksheet(value: NullableOption[WorkbookWorksheet]): Self = this.set("worksheet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorksheet: Self = this.set("worksheet", js.undefined)
-    
-    @scala.inline
-    def setWorksheetNull: Self = this.set("worksheet", null)
+    def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
   }
 }

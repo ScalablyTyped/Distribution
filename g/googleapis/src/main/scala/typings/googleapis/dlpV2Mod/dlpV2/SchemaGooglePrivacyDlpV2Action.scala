@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://cloud.google.com/dlp/docs/concepts-actions to learn more.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2Action extends js.Object {
+trait SchemaGooglePrivacyDlpV2Action extends StObject {
   
   /**
     * Enable email notification to project owners and editors on job&#39;s
@@ -41,42 +42,30 @@ object SchemaGooglePrivacyDlpV2Action {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ActionOps[Self <: SchemaGooglePrivacyDlpV2Action] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2ActionMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobNotificationEmails(value: SchemaGooglePrivacyDlpV2JobNotificationEmails): Self = StObject.set(x, "jobNotificationEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobNotificationEmailsUndefined: Self = StObject.set(x, "jobNotificationEmails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPubSub(value: SchemaGooglePrivacyDlpV2PublishToPubSub): Self = StObject.set(x, "pubSub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobNotificationEmails(value: SchemaGooglePrivacyDlpV2JobNotificationEmails): Self = this.set("jobNotificationEmails", value.asInstanceOf[js.Any])
+    def setPubSubUndefined: Self = StObject.set(x, "pubSub", js.undefined)
     
     @scala.inline
-    def deleteJobNotificationEmails: Self = this.set("jobNotificationEmails", js.undefined)
+    def setPublishSummaryToCscc(value: SchemaGooglePrivacyDlpV2PublishSummaryToCscc): Self = StObject.set(x, "publishSummaryToCscc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubSub(value: SchemaGooglePrivacyDlpV2PublishToPubSub): Self = this.set("pubSub", value.asInstanceOf[js.Any])
+    def setPublishSummaryToCsccUndefined: Self = StObject.set(x, "publishSummaryToCscc", js.undefined)
     
     @scala.inline
-    def deletePubSub: Self = this.set("pubSub", js.undefined)
+    def setSaveFindings(value: SchemaGooglePrivacyDlpV2SaveFindings): Self = StObject.set(x, "saveFindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishSummaryToCscc(value: SchemaGooglePrivacyDlpV2PublishSummaryToCscc): Self = this.set("publishSummaryToCscc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishSummaryToCscc: Self = this.set("publishSummaryToCscc", js.undefined)
-    
-    @scala.inline
-    def setSaveFindings(value: SchemaGooglePrivacyDlpV2SaveFindings): Self = this.set("saveFindings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaveFindings: Self = this.set("saveFindings", js.undefined)
+    def setSaveFindingsUndefined: Self = StObject.set(x, "saveFindings", js.undefined)
   }
 }

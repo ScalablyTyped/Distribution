@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterOperationInfo extends js.Object {
+trait ClusterOperationInfo extends StObject {
   
   /**
     * 
@@ -93,87 +94,75 @@ object ClusterOperationInfo {
   }
   
   @scala.inline
-  implicit class ClusterOperationInfoOps[Self <: ClusterOperationInfo] (val x: Self) extends AnyVal {
+  implicit class ClusterOperationInfoMutableBuilder[Self <: ClusterOperationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestId(value: string): Self = StObject.set(x, "ClientRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestIdUndefined: Self = StObject.set(x, "ClientRequestId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestId(value: string): Self = this.set("ClientRequestId", value.asInstanceOf[js.Any])
+    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
     @scala.inline
-    def deleteClientRequestId: Self = this.set("ClientRequestId", js.undefined)
+    def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
+    def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: timestampIso8601): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "ErrorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: timestampIso8601): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setErrorInfoUndefined: Self = StObject.set(x, "ErrorInfo", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setOperationArn(value: string): Self = StObject.set(x, "OperationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorInfo(value: ErrorInfo): Self = this.set("ErrorInfo", value.asInstanceOf[js.Any])
+    def setOperationArnUndefined: Self = StObject.set(x, "OperationArn", js.undefined)
     
     @scala.inline
-    def deleteErrorInfo: Self = this.set("ErrorInfo", js.undefined)
+    def setOperationState(value: string): Self = StObject.set(x, "OperationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationArn(value: string): Self = this.set("OperationArn", value.asInstanceOf[js.Any])
+    def setOperationStateUndefined: Self = StObject.set(x, "OperationState", js.undefined)
     
     @scala.inline
-    def deleteOperationArn: Self = this.set("OperationArn", js.undefined)
+    def setOperationSteps(value: listOfClusterOperationStep): Self = StObject.set(x, "OperationSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationState(value: string): Self = this.set("OperationState", value.asInstanceOf[js.Any])
+    def setOperationStepsUndefined: Self = StObject.set(x, "OperationSteps", js.undefined)
     
     @scala.inline
-    def deleteOperationState: Self = this.set("OperationState", js.undefined)
+    def setOperationStepsVarargs(value: ClusterOperationStep*): Self = StObject.set(x, "OperationSteps", js.Array(value :_*))
     
     @scala.inline
-    def setOperationStepsVarargs(value: ClusterOperationStep*): Self = this.set("OperationSteps", js.Array(value :_*))
+    def setOperationType(value: string): Self = StObject.set(x, "OperationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationSteps(value: listOfClusterOperationStep): Self = this.set("OperationSteps", value.asInstanceOf[js.Any])
+    def setOperationTypeUndefined: Self = StObject.set(x, "OperationType", js.undefined)
     
     @scala.inline
-    def deleteOperationSteps: Self = this.set("OperationSteps", js.undefined)
+    def setSourceClusterInfo(value: MutableClusterInfo): Self = StObject.set(x, "SourceClusterInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: string): Self = this.set("OperationType", value.asInstanceOf[js.Any])
+    def setSourceClusterInfoUndefined: Self = StObject.set(x, "SourceClusterInfo", js.undefined)
     
     @scala.inline
-    def deleteOperationType: Self = this.set("OperationType", js.undefined)
+    def setTargetClusterInfo(value: MutableClusterInfo): Self = StObject.set(x, "TargetClusterInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceClusterInfo(value: MutableClusterInfo): Self = this.set("SourceClusterInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceClusterInfo: Self = this.set("SourceClusterInfo", js.undefined)
-    
-    @scala.inline
-    def setTargetClusterInfo(value: MutableClusterInfo): Self = this.set("TargetClusterInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetClusterInfo: Self = this.set("TargetClusterInfo", js.undefined)
+    def setTargetClusterInfoUndefined: Self = StObject.set(x, "TargetClusterInfo", js.undefined)
   }
 }

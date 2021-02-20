@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionExpression extends js.Object {
+trait ConditionExpression extends StObject {
   
   /**
     * A specific condition to apply to a recipe action. For more information, see Recipe structure in the AWS Glue DataBrew Developer Guide.
@@ -31,30 +32,18 @@ object ConditionExpression {
   }
   
   @scala.inline
-  implicit class ConditionExpressionOps[Self <: ConditionExpression] (val x: Self) extends AnyVal {
+  implicit class ConditionExpressionMutableBuilder[Self <: ConditionExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetColumn(value: TargetColumn): Self = StObject.set(x, "TargetColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: ConditionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: Condition): Self = this.set("Condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetColumn(value: TargetColumn): Self = this.set("TargetColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: ConditionValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.history.mod.Location
 import typings.history.mod.LocationState
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteProps extends js.Object {
+trait RouteProps extends StObject {
   
   var children: js.UndefOr[
     (js.Function1[/* props */ RouteChildrenProps[_, LocationState], ReactNode]) | ReactNode
@@ -40,72 +41,60 @@ object RouteProps {
   }
   
   @scala.inline
-  implicit class RoutePropsOps[Self <: RouteProps] (val x: Self) extends AnyVal {
+  implicit class RoutePropsMutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: (js.Function1[/* props */ RouteChildrenProps[_, LocationState], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenFunction1(value: /* props */ RouteChildrenProps[_, LocationState] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setChildrenFunction1(value: /* props */ RouteChildrenProps[_, LocationState] => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    def setComponent(value: ComponentType[_ | (RouteComponentProps[_, StaticContext, LocationState])]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: (js.Function1[/* props */ RouteChildrenProps[_, LocationState], ReactNode]) | ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: ComponentType[_ | (RouteComponentProps[_, StaticContext, LocationState])]): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExact(value: Boolean): Self = this.set("exact", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteExact: Self = this.set("exact", js.undefined)
+    def setPath(value: String | js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location[LocationState]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setPathVarargs(value: String*): Self = this.set("path", js.Array(value :_*))
+    def setRender(value: /* props */ RouteComponentProps[_, StaticContext, LocationState] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPath(value: String | js.Array[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: /* props */ RouteComponentProps[_, StaticContext, LocationState] => ReactNode): Self = this.set("render", js.Any.fromFunction1(value))
+    def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSensitive(value: Boolean): Self = this.set("sensitive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensitive: Self = this.set("sensitive", js.undefined)
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintWriter extends js.Object {
+trait PrintWriter extends StObject {
   
   /**
     *   Clears the data already written to the PrintWriter
@@ -42,30 +43,18 @@ object PrintWriter {
   }
   
   @scala.inline
-  implicit class PrintWriterOps[Self <: PrintWriter] (val x: Self) extends AnyVal {
+  implicit class PrintWriterMutableBuilder[Self <: PrintWriter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrint(value: js.Array[_] => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrint(value: js.Array[_] => Unit): Self = this.set("print", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWrite(value: js.Array[_] => Unit): Self = this.set("write", js.Any.fromFunction1(value))
+    def setWrite(value: js.Array[_] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

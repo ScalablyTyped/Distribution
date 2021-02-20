@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserMetadata extends js.Object {
+trait UserMetadata extends StObject {
   
   /**
     * The email address of the user.
@@ -41,48 +42,36 @@ object UserMetadata {
   }
   
   @scala.inline
-  implicit class UserMetadataOps[Self <: UserMetadata] (val x: Self) extends AnyVal {
+  implicit class UserMetadataMutableBuilder[Self <: UserMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailAddress(value: EmailAddressType): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGivenName(value: UserAttributeValueType): Self = StObject.set(x, "GivenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: EmailAddressType): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    def setGivenNameUndefined: Self = StObject.set(x, "GivenName", js.undefined)
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("EmailAddress", js.undefined)
+    def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGivenName(value: UserAttributeValueType): Self = this.set("GivenName", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteGivenName: Self = this.set("GivenName", js.undefined)
+    def setSurname(value: UserAttributeValueType): Self = StObject.set(x, "Surname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: IdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setSurnameUndefined: Self = StObject.set(x, "Surname", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurname(value: UserAttributeValueType): Self = this.set("Surname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSurname: Self = this.set("Surname", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

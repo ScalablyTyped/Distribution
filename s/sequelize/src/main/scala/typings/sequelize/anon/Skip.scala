@@ -1,11 +1,12 @@
 package typings.sequelize.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Skip extends js.Object {
+trait Skip extends StObject {
   
   var skip: js.UndefOr[js.Array[String]] = js.native
 }
@@ -18,27 +19,15 @@ object Skip {
   }
   
   @scala.inline
-  implicit class SkipOps[Self <: Skip] (val x: Self) extends AnyVal {
+  implicit class SkipMutableBuilder[Self <: Skip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSkip(value: js.Array[String]): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSkipVarargs(value: String*): Self = this.set("skip", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkip(value: js.Array[String]): Self = this.set("skip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setSkipVarargs(value: String*): Self = StObject.set(x, "skip", js.Array(value :_*))
   }
 }

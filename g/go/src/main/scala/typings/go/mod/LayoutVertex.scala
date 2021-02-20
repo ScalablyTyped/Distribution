@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs a vertex that does not know about any Node.
   */
-class LayoutVertex () extends js.Object {
+class LayoutVertex () extends StObject {
   
   /**
     * Adds a LayoutEdge to the list of successors (the edge will be going out from this vertex).
@@ -101,16 +102,16 @@ class LayoutVertex () extends js.Object {
   /**Gets or sets the top point of this vertex.*/
   var y: Double = js.native
 }
-/* static members */
-@JSImport("go", "LayoutVertex")
-@js.native
-object LayoutVertex extends js.Object {
+object LayoutVertex {
   
   /**
     * This static function is used to compare the Part.text values of the .nodes of the argument LayoutVertexes.
     * @param {LayoutVertex} m
     * @param {LayoutVertex} n
     */
+  /* static member */
+  @JSImport("go", "LayoutVertex.smartComparer")
+  @js.native
   def smartComparer(m: LayoutVertex, n: LayoutVertex): Double = js.native
   
   /**
@@ -118,5 +119,8 @@ object LayoutVertex extends js.Object {
     * @param {LayoutVertex} m
     * @param {LayoutVertex} n
     */
+  /* static member */
+  @JSImport("go", "LayoutVertex.standardComparer")
+  @js.native
   def standardComparer(m: LayoutVertex, n: LayoutVertex): Double = js.native
 }

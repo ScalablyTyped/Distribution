@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The important people, places, geopolitical entities and other types of entities in your content. */
 @js.native
-trait EntitiesResult extends js.Object {
+trait EntitiesResult extends StObject {
   
   /** How many times the entity was mentioned in the text. */
   var count: js.UndefOr[Double] = js.native
@@ -41,69 +42,57 @@ object EntitiesResult {
   }
   
   @scala.inline
-  implicit class EntitiesResultOps[Self <: EntitiesResult] (val x: Self) extends AnyVal {
+  implicit class EntitiesResultMutableBuilder[Self <: EntitiesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisambiguation(value: DisambiguationResult): Self = StObject.set(x, "disambiguation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setDisambiguationUndefined: Self = StObject.set(x, "disambiguation", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setEmotion(value: EmotionScores): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisambiguation(value: DisambiguationResult): Self = this.set("disambiguation", value.asInstanceOf[js.Any])
+    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
     
     @scala.inline
-    def deleteDisambiguation: Self = this.set("disambiguation", js.undefined)
+    def setMentions(value: js.Array[EntityMention]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmotion(value: EmotionScores): Self = this.set("emotion", value.asInstanceOf[js.Any])
+    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
     @scala.inline
-    def deleteEmotion: Self = this.set("emotion", js.undefined)
+    def setMentionsVarargs(value: EntityMention*): Self = StObject.set(x, "mentions", js.Array(value :_*))
     
     @scala.inline
-    def setMentionsVarargs(value: EntityMention*): Self = this.set("mentions", js.Array(value :_*))
+    def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentions(value: js.Array[EntityMention]): Self = this.set("mentions", value.asInstanceOf[js.Any])
+    def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
     
     @scala.inline
-    def deleteMentions: Self = this.set("mentions", js.undefined)
+    def setSentiment(value: FeatureSentimentResults): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelevance(value: Double): Self = this.set("relevance", value.asInstanceOf[js.Any])
+    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
     
     @scala.inline
-    def deleteRelevance: Self = this.set("relevance", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentiment(value: FeatureSentimentResults): Self = this.set("sentiment", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSentiment: Self = this.set("sentiment", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

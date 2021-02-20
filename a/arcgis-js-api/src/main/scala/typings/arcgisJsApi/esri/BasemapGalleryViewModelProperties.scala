@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasemapGalleryViewModelProperties extends js.Object {
+trait BasemapGalleryViewModelProperties extends StObject {
   
   /**
     * The map's [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).
@@ -44,45 +45,33 @@ object BasemapGalleryViewModelProperties {
   }
   
   @scala.inline
-  implicit class BasemapGalleryViewModelPropertiesOps[Self <: BasemapGalleryViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class BasemapGalleryViewModelPropertiesMutableBuilder[Self <: BasemapGalleryViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveBasemap(value: BasemapProperties): Self = StObject.set(x, "activeBasemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveBasemapUndefined: Self = StObject.set(x, "activeBasemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: CollectionProperties[BasemapGalleryItemProperties]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveBasemap(value: BasemapProperties): Self = this.set("activeBasemap", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteActiveBasemap: Self = this.set("activeBasemap", js.undefined)
+    def setItemsVarargs(value: BasemapGalleryItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: BasemapGalleryItemProperties*): Self = this.set("items", js.Array(value :_*))
+    def setSource(value: LocalBasemapsSourceProperties | PortalBasemapsSourceProperties): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: CollectionProperties[BasemapGalleryItemProperties]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: LocalBasemapsSourceProperties | PortalBasemapsSourceProperties): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

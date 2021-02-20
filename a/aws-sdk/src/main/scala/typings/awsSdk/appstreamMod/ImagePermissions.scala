@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImagePermissions extends js.Object {
+trait ImagePermissions extends StObject {
   
   /**
     * Indicates whether the image can be used for a fleet.
@@ -26,30 +27,18 @@ object ImagePermissions {
   }
   
   @scala.inline
-  implicit class ImagePermissionsOps[Self <: ImagePermissions] (val x: Self) extends AnyVal {
+  implicit class ImagePermissionsMutableBuilder[Self <: ImagePermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFleet(value: BooleanObject): Self = StObject.set(x, "allowFleet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowFleetUndefined: Self = StObject.set(x, "allowFleet", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowImageBuilder(value: BooleanObject): Self = StObject.set(x, "allowImageBuilder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFleet(value: BooleanObject): Self = this.set("allowFleet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowFleet: Self = this.set("allowFleet", js.undefined)
-    
-    @scala.inline
-    def setAllowImageBuilder(value: BooleanObject): Self = this.set("allowImageBuilder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowImageBuilder: Self = this.set("allowImageBuilder", js.undefined)
+    def setAllowImageBuilderUndefined: Self = StObject.set(x, "allowImageBuilder", js.undefined)
   }
 }

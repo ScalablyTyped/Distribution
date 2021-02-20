@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultCategoricalHyperParameterRange extends js.Object {
+trait DefaultCategoricalHyperParameterRange extends StObject {
   
   /**
     * Whether the hyperparameter is tunable.
@@ -31,39 +32,27 @@ object DefaultCategoricalHyperParameterRange {
   }
   
   @scala.inline
-  implicit class DefaultCategoricalHyperParameterRangeOps[Self <: DefaultCategoricalHyperParameterRange] (val x: Self) extends AnyVal {
+  implicit class DefaultCategoricalHyperParameterRangeMutableBuilder[Self <: DefaultCategoricalHyperParameterRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsTunable(value: Tunable): Self = StObject.set(x, "isTunable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsTunableUndefined: Self = StObject.set(x, "isTunable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTunable(value: Tunable): Self = this.set("isTunable", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIsTunable: Self = this.set("isTunable", js.undefined)
+    def setValues(value: CategoricalValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ParameterName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: CategoricalValue*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: CategoricalValues): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: CategoricalValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

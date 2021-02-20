@@ -2,12 +2,13 @@ package typings.gapiCalendar.gapi.client.calendar
 
 import typings.gapiCalendar.anon.Method
 import typings.gapiCalendar.anon.Notifications
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarListInput extends js.Object {
+trait CalendarListInput extends StObject {
   
   // Optional Properties
   var backgroundColor: js.UndefOr[String] = js.native
@@ -38,72 +39,60 @@ object CalendarListInput {
   }
   
   @scala.inline
-  implicit class CalendarListInputOps[Self <: CalendarListInput] (val x: Self) extends AnyVal {
+  implicit class CalendarListInputMutableBuilder[Self <: CalendarListInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorId(value: String): Self = StObject.set(x, "colorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setColorIdUndefined: Self = StObject.set(x, "colorId", js.undefined)
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setDefaultReminders(value: js.Array[Method]): Self = StObject.set(x, "defaultReminders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setDefaultRemindersUndefined: Self = StObject.set(x, "defaultReminders", js.undefined)
     
     @scala.inline
-    def setColorId(value: String): Self = this.set("colorId", value.asInstanceOf[js.Any])
+    def setDefaultRemindersVarargs(value: Method*): Self = StObject.set(x, "defaultReminders", js.Array(value :_*))
     
     @scala.inline
-    def deleteColorId: Self = this.set("colorId", js.undefined)
+    def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRemindersVarargs(value: Method*): Self = this.set("defaultReminders", js.Array(value :_*))
+    def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
     
     @scala.inline
-    def setDefaultReminders(value: js.Array[Method]): Self = this.set("defaultReminders", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultReminders: Self = this.set("defaultReminders", js.undefined)
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def setForegroundColor(value: String): Self = this.set("foregroundColor", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForegroundColor: Self = this.set("foregroundColor", js.undefined)
+    def setNotificationSettings(value: Notifications): Self = StObject.set(x, "notificationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setNotificationSettingsUndefined: Self = StObject.set(x, "notificationSettings", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationSettings(value: Notifications): Self = this.set("notificationSettings", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteNotificationSettings: Self = this.set("notificationSettings", js.undefined)
+    def setSummaryOverride(value: String): Self = StObject.set(x, "summaryOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
-    
-    @scala.inline
-    def setSummaryOverride(value: String): Self = this.set("summaryOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryOverride: Self = this.set("summaryOverride", js.undefined)
+    def setSummaryOverrideUndefined: Self = StObject.set(x, "summaryOverride", js.undefined)
   }
 }

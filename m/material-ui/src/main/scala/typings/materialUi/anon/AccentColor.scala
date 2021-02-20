@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccentColor extends js.Object {
+trait AccentColor extends StObject {
   
   var accentColor: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object AccentColor {
   }
   
   @scala.inline
-  implicit class AccentColorOps[Self <: AccentColor] (val x: Self) extends AnyVal {
+  implicit class AccentColorMutableBuilder[Self <: AccentColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccentColor(value: String): Self = this.set("accentColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccentColor: Self = this.set("accentColor", js.undefined)
+    def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
   }
 }

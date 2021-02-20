@@ -2,24 +2,24 @@ package typings.rewire
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rewire.mod.RewireInterfaces.RewiredModule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rewire", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Returns a rewired version of the module found at filename. Use rewire() exactly like require().
     */
+  @JSImport("rewire", JSImport.Namespace)
+  @js.native
   def apply[T](filename: String): RewiredModule with T = js.native
   
-  @js.native
-  object RewireInterfaces extends js.Object {
+  object RewireInterfaces {
     
     @js.native
-    trait RewiredModule extends js.Object {
+    trait RewiredModule extends StObject {
       
       /**
         * Returns the private variable with the given name.

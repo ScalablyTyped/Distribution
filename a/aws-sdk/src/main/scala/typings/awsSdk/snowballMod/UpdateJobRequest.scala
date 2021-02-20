@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateJobRequest extends js.Object {
+trait UpdateJobRequest extends StObject {
   
   /**
     * The ID of the updated Address object.
@@ -61,69 +62,57 @@ object UpdateJobRequest {
   }
   
   @scala.inline
-  implicit class UpdateJobRequestOps[Self <: UpdateJobRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateJobRequestMutableBuilder[Self <: UpdateJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressId(value: AddressId): Self = StObject.set(x, "AddressId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressIdUndefined: Self = StObject.set(x, "AddressId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setAddressId(value: AddressId): Self = this.set("AddressId", value.asInstanceOf[js.Any])
+    def setForwardingAddressId(value: AddressId): Self = StObject.set(x, "ForwardingAddressId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddressId: Self = this.set("AddressId", js.undefined)
+    def setForwardingAddressIdUndefined: Self = StObject.set(x, "ForwardingAddressId", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardingAddressId(value: AddressId): Self = this.set("ForwardingAddressId", value.asInstanceOf[js.Any])
+    def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
     
     @scala.inline
-    def deleteForwardingAddressId: Self = this.set("ForwardingAddressId", js.undefined)
+    def setResources(value: JobResource): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: Notification): Self = this.set("Notification", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def deleteNotification: Self = this.set("Notification", js.undefined)
+    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: JobResource): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setShippingOption(value: ShippingOption): Self = StObject.set(x, "ShippingOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    def setShippingOptionUndefined: Self = StObject.set(x, "ShippingOption", js.undefined)
     
     @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setSnowballCapacityPreference(value: SnowballCapacity): Self = StObject.set(x, "SnowballCapacityPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingOption(value: ShippingOption): Self = this.set("ShippingOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingOption: Self = this.set("ShippingOption", js.undefined)
-    
-    @scala.inline
-    def setSnowballCapacityPreference(value: SnowballCapacity): Self = this.set("SnowballCapacityPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnowballCapacityPreference: Self = this.set("SnowballCapacityPreference", js.undefined)
+    def setSnowballCapacityPreferenceUndefined: Self = StObject.set(x, "SnowballCapacityPreference", js.undefined)
   }
 }

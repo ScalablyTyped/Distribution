@@ -3,12 +3,13 @@ package typings.cesium.anon
 import typings.cesium.mod.GeometryInstance
 import typings.cesium.mod.Matrix4
 import typings.cesium.mod.ShadowMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Appearance extends js.Object {
+trait Appearance extends StObject {
   
   var allowPicking: js.UndefOr[Boolean] = js.native
   
@@ -45,99 +46,87 @@ object Appearance {
   }
   
   @scala.inline
-  implicit class AppearanceOps[Self <: Appearance] (val x: Self) extends AnyVal {
+  implicit class AppearanceMutableBuilder[Self <: Appearance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPicking(value: Boolean): Self = StObject.set(x, "allowPicking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPickingUndefined: Self = StObject.set(x, "allowPicking", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppearance(value: typings.cesium.mod.Appearance): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPicking(value: Boolean): Self = this.set("allowPicking", value.asInstanceOf[js.Any])
+    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
     @scala.inline
-    def deleteAllowPicking: Self = this.set("allowPicking", js.undefined)
+    def setAsynchronous(value: Boolean): Self = StObject.set(x, "asynchronous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearance(value: typings.cesium.mod.Appearance): Self = this.set("appearance", value.asInstanceOf[js.Any])
+    def setAsynchronousUndefined: Self = StObject.set(x, "asynchronous", js.undefined)
     
     @scala.inline
-    def deleteAppearance: Self = this.set("appearance", js.undefined)
+    def setCompressVertices(value: Boolean): Self = StObject.set(x, "compressVertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsynchronous(value: Boolean): Self = this.set("asynchronous", value.asInstanceOf[js.Any])
+    def setCompressVerticesUndefined: Self = StObject.set(x, "compressVertices", js.undefined)
     
     @scala.inline
-    def deleteAsynchronous: Self = this.set("asynchronous", js.undefined)
+    def setCull(value: Boolean): Self = StObject.set(x, "cull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressVertices(value: Boolean): Self = this.set("compressVertices", value.asInstanceOf[js.Any])
+    def setCullUndefined: Self = StObject.set(x, "cull", js.undefined)
     
     @scala.inline
-    def deleteCompressVertices: Self = this.set("compressVertices", js.undefined)
+    def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCull(value: Boolean): Self = this.set("cull", value.asInstanceOf[js.Any])
+    def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
     
     @scala.inline
-    def deleteCull: Self = this.set("cull", js.undefined)
+    def setGeometryInstances(value: js.Array[GeometryInstance] | GeometryInstance): Self = StObject.set(x, "geometryInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugShowBoundingVolume(value: Boolean): Self = this.set("debugShowBoundingVolume", value.asInstanceOf[js.Any])
+    def setGeometryInstancesUndefined: Self = StObject.set(x, "geometryInstances", js.undefined)
     
     @scala.inline
-    def deleteDebugShowBoundingVolume: Self = this.set("debugShowBoundingVolume", js.undefined)
+    def setGeometryInstancesVarargs(value: GeometryInstance*): Self = StObject.set(x, "geometryInstances", js.Array(value :_*))
     
     @scala.inline
-    def setGeometryInstancesVarargs(value: GeometryInstance*): Self = this.set("geometryInstances", js.Array(value :_*))
+    def setInterleave(value: Boolean): Self = StObject.set(x, "interleave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryInstances(value: js.Array[GeometryInstance] | GeometryInstance): Self = this.set("geometryInstances", value.asInstanceOf[js.Any])
+    def setInterleaveUndefined: Self = StObject.set(x, "interleave", js.undefined)
     
     @scala.inline
-    def deleteGeometryInstances: Self = this.set("geometryInstances", js.undefined)
+    def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterleave(value: Boolean): Self = this.set("interleave", value.asInstanceOf[js.Any])
+    def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
     
     @scala.inline
-    def deleteInterleave: Self = this.set("interleave", js.undefined)
+    def setReleaseGeometryInstances(value: Boolean): Self = StObject.set(x, "releaseGeometryInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelMatrix(value: Matrix4): Self = this.set("modelMatrix", value.asInstanceOf[js.Any])
+    def setReleaseGeometryInstancesUndefined: Self = StObject.set(x, "releaseGeometryInstances", js.undefined)
     
     @scala.inline
-    def deleteModelMatrix: Self = this.set("modelMatrix", js.undefined)
+    def setShadows(value: ShadowMode): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseGeometryInstances(value: Boolean): Self = this.set("releaseGeometryInstances", value.asInstanceOf[js.Any])
+    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def deleteReleaseGeometryInstances: Self = this.set("releaseGeometryInstances", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadows(value: ShadowMode): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteShadows: Self = this.set("shadows", js.undefined)
+    def setVertexCacheOptimize(value: Boolean): Self = StObject.set(x, "vertexCacheOptimize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setVertexCacheOptimize(value: Boolean): Self = this.set("vertexCacheOptimize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertexCacheOptimize: Self = this.set("vertexCacheOptimize", js.undefined)
+    def setVertexCacheOptimizeUndefined: Self = StObject.set(x, "vertexCacheOptimize", js.undefined)
   }
 }

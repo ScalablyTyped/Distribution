@@ -1,11 +1,12 @@
 package typings.awsSdk.dataexchangeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDataSetsRequest extends js.Object {
+trait ListDataSetsRequest extends StObject {
   
   /**
     * The maximum number of results returned by a single call.
@@ -31,36 +32,24 @@ object ListDataSetsRequest {
   }
   
   @scala.inline
-  implicit class ListDataSetsRequestOps[Self <: ListDataSetsRequest] (val x: Self) extends AnyVal {
+  implicit class ListDataSetsRequestMutableBuilder[Self <: ListDataSetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setOrigin(value: string): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setOrigin(value: string): Self = this.set("Origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigin: Self = this.set("Origin", js.undefined)
+    def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
   }
 }

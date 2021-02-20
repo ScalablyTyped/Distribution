@@ -1,6 +1,7 @@
 package typings.stylus.mod.Stylus.Nodes
 
 import typings.stylus.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,24 +38,12 @@ object Import {
   }
   
   @scala.inline
-  implicit class ImportOps[Self <: Import] (val x: Self) extends AnyVal {
+  implicit class ImportMutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnce(value: scala.Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnce(value: scala.Boolean): Self = this.set("once", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: Expression): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: Expression): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

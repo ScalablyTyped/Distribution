@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,123 +45,168 @@ class Menu protected ()
   def showContextMenu(e: js.Any, t: js.Any): js.Any = js.native
 }
 /* static members */
-@JSImport("rc-easyui", "Menu")
-@js.native
-object Menu extends js.Object {
+object Menu {
   
-  var zIndex: Double = js.native
-  
+  @JSImport("rc-easyui", "Menu")
   @js.native
-  object contextTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "Menu.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Menu.contextTypes.locale
+      @JSImport("rc-easyui", "Menu.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "Menu.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Menu.contextTypes.t
+      @JSImport("rc-easyui", "Menu.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "Menu.defaultProps.duration")
+    @js.native
     val duration: Double = js.native
     
-    val `inline`: Boolean = js.native
-    
+    @JSImport("rc-easyui", "Menu.defaultProps.noline")
+    @js.native
     val noline: Boolean = js.native
     
+    @JSImport("rc-easyui", "Menu.defaultProps.onHide")
+    @js.native
     def onHide(): Unit = js.native
     
+    @JSImport("rc-easyui", "Menu.defaultProps.onItemClick")
+    @js.native
     def onItemClick(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Menu.defaultProps.onShow")
+    @js.native
     def onShow(): Unit = js.native
+    
+    @JSImport("rc-easyui", "Menu.defaultProps.inline")
+    @js.native
+    val `inline`: Boolean = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object className extends js.Object {
+    object className {
       
+      @JSImport("rc-easyui", "Menu.propTypes.className")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Menu.propTypes.className
+      @JSImport("rc-easyui", "Menu.propTypes.className.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object duration extends js.Object {
+    object duration {
       
+      @JSImport("rc-easyui", "Menu.propTypes.duration")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Menu.propTypes.duration
+      @JSImport("rc-easyui", "Menu.propTypes.duration.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object `inline` extends js.Object {
+    object menuCls {
       
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
-      
-      // Circular reference from rc_easyui.Menu.propTypes.inline
-      val isRequired: js.Any = js.native
-    }
-    
-    @js.native
-    object menuCls extends js.Object {
-      
+      @JSImport("rc-easyui", "Menu.propTypes.menuCls")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Menu.propTypes.menuCls
+      @JSImport("rc-easyui", "Menu.propTypes.menuCls.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object menuStyle extends js.Object {
+    object menuStyle {
       
+      @JSImport("rc-easyui", "Menu.propTypes.menuStyle")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Menu.propTypes.menuStyle
+      @JSImport("rc-easyui", "Menu.propTypes.menuStyle.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object menuWidth extends js.Object {
+    object menuWidth {
       
+      @JSImport("rc-easyui", "Menu.propTypes.menuWidth")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Menu.propTypes.menuWidth
+      @JSImport("rc-easyui", "Menu.propTypes.menuWidth.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object noline extends js.Object {
+    object noline {
       
+      @JSImport("rc-easyui", "Menu.propTypes.noline")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Menu.propTypes.noline
+      @JSImport("rc-easyui", "Menu.propTypes.noline.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object style extends js.Object {
+    object style {
       
+      @JSImport("rc-easyui", "Menu.propTypes.style")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Menu.propTypes.style
+      @JSImport("rc-easyui", "Menu.propTypes.style.isRequired")
+      @js.native
+      val isRequired: js.Any = js.native
+    }
+    
+    object `inline` {
+      
+      @JSImport("rc-easyui", "Menu.propTypes.inline")
+      @js.native
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      
+      // Circular reference from rc_easyui.Menu.propTypes.inline
+      @JSImport("rc-easyui", "Menu.propTypes.inline.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
+  
+  @JSImport("rc-easyui", "Menu.zIndex")
+  @js.native
+  def zIndex: Double = js.native
+  @scala.inline
+  def zIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zIndex")(x.asInstanceOf[js.Any])
 }

@@ -1,5 +1,6 @@
 package typings.dynogels.mod.AWS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("dynogels", "AWS.Response")
 @js.native
 class Response[D, E] ()
-  extends typings.awsSdk.responseMod.Response[D, E]
+  extends typings.awsSdk.mod.Response[D, E]

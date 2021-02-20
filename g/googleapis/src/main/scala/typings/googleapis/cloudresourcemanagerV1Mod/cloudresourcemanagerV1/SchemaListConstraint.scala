@@ -1,5 +1,6 @@
 package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * configured by an Organization&#39;s policy administrator with a `Policy`.
   */
 @js.native
-trait SchemaListConstraint extends js.Object {
+trait SchemaListConstraint extends StObject {
   
   /**
     * Optional. The Google Cloud Console will try to default to a configuration
@@ -34,30 +35,18 @@ object SchemaListConstraint {
   }
   
   @scala.inline
-  implicit class SchemaListConstraintOps[Self <: SchemaListConstraint] (val x: Self) extends AnyVal {
+  implicit class SchemaListConstraintMutableBuilder[Self <: SchemaListConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuggestedValue(value: String): Self = StObject.set(x, "suggestedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuggestedValueUndefined: Self = StObject.set(x, "suggestedValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsUnder(value: Boolean): Self = StObject.set(x, "supportsUnder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedValue(value: String): Self = this.set("suggestedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedValue: Self = this.set("suggestedValue", js.undefined)
-    
-    @scala.inline
-    def setSupportsUnder(value: Boolean): Self = this.set("supportsUnder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsUnder: Self = this.set("supportsUnder", js.undefined)
+    def setSupportsUnderUndefined: Self = StObject.set(x, "supportsUnder", js.undefined)
   }
 }

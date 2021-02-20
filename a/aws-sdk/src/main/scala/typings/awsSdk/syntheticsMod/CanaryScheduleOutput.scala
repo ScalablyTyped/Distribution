@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanaryScheduleOutput extends js.Object {
+trait CanaryScheduleOutput extends StObject {
   
   /**
     * How long, in seconds, for the canary to continue making regular runs after it was created. The runs are performed according to the schedule in the Expression value.
@@ -26,30 +27,18 @@ object CanaryScheduleOutput {
   }
   
   @scala.inline
-  implicit class CanaryScheduleOutputOps[Self <: CanaryScheduleOutput] (val x: Self) extends AnyVal {
+  implicit class CanaryScheduleOutputMutableBuilder[Self <: CanaryScheduleOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationInSeconds(value: MaxOneYearInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationInSeconds(value: MaxOneYearInSeconds): Self = this.set("DurationInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDurationInSeconds: Self = this.set("DurationInSeconds", js.undefined)
-    
-    @scala.inline
-    def setExpression(value: String): Self = this.set("Expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpression: Self = this.set("Expression", js.undefined)
+    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
   }
 }

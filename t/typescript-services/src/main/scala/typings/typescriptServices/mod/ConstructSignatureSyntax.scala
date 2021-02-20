@@ -1,6 +1,7 @@
 package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,10 @@ class ConstructSignatureSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "ConstructSignatureSyntax")
-@js.native
-object ConstructSignatureSyntax extends js.Object {
+object ConstructSignatureSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "ConstructSignatureSyntax.create1")
+  @js.native
   def create1(): typings.typescriptServices.TypeScript.ConstructSignatureSyntax = js.native
 }

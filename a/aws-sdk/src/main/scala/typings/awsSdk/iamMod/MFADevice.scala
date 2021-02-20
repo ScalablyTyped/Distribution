@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MFADevice extends js.Object {
+trait MFADevice extends StObject {
   
   /**
     * The date when the MFA device was enabled for the user.
@@ -31,27 +32,15 @@ object MFADevice {
   }
   
   @scala.inline
-  implicit class MFADeviceOps[Self <: MFADevice] (val x: Self) extends AnyVal {
+  implicit class MFADeviceMutableBuilder[Self <: MFADevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableDate(value: dateType): Self = StObject.set(x, "EnableDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnableDate(value: dateType): Self = this.set("EnableDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

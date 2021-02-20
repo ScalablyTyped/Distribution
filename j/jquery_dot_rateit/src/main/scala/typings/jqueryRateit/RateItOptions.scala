@@ -1,11 +1,12 @@
 package typings.jqueryRateit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RateItOptions extends js.Object {
+trait RateItOptions extends StObject {
   
   var backingfld: js.UndefOr[String] = js.native
   
@@ -40,90 +41,78 @@ object RateItOptions {
   }
   
   @scala.inline
-  implicit class RateItOptionsOps[Self <: RateItOptions] (val x: Self) extends AnyVal {
+  implicit class RateItOptionsMutableBuilder[Self <: RateItOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackingfld(value: String): Self = StObject.set(x, "backingfld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackingfldUndefined: Self = StObject.set(x, "backingfld", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackingfld(value: String): Self = this.set("backingfld", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteBackingfld: Self = this.set("backingfld", js.undefined)
+    def setIspreset(value: Boolean): Self = StObject.set(x, "ispreset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIspresetUndefined: Self = StObject.set(x, "ispreset", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIspreset(value: Boolean): Self = this.set("ispreset", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteIspreset: Self = this.set("ispreset", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMode(value: RateItMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: RateItMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setResetable(value: Boolean): Self = StObject.set(x, "resetable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    def setResetableUndefined: Self = StObject.set(x, "resetable", js.undefined)
     
     @scala.inline
-    def deleteReadonly: Self = this.set("readonly", js.undefined)
+    def setStarheight(value: Double): Self = StObject.set(x, "starheight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetable(value: Boolean): Self = this.set("resetable", value.asInstanceOf[js.Any])
+    def setStarheightUndefined: Self = StObject.set(x, "starheight", js.undefined)
     
     @scala.inline
-    def deleteResetable: Self = this.set("resetable", js.undefined)
+    def setStarwidth(value: Double): Self = StObject.set(x, "starwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarheight(value: Double): Self = this.set("starheight", value.asInstanceOf[js.Any])
+    def setStarwidthUndefined: Self = StObject.set(x, "starwidth", js.undefined)
     
     @scala.inline
-    def deleteStarheight: Self = this.set("starheight", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarwidth(value: Double): Self = this.set("starwidth", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteStarwidth: Self = this.set("starwidth", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

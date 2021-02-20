@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 
 import typings.maximMazurokGapiClientBooks.anon.Boundary
 import typings.maximMazurokGapiClientBooks.anon.Lang
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geolayerdata extends js.Object {
+trait Geolayerdata extends StObject {
   
   var common: js.UndefOr[Lang] = js.native
   
@@ -24,36 +25,24 @@ object Geolayerdata {
   }
   
   @scala.inline
-  implicit class GeolayerdataOps[Self <: Geolayerdata] (val x: Self) extends AnyVal {
+  implicit class GeolayerdataMutableBuilder[Self <: Geolayerdata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommon(value: Lang): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeo(value: Boundary): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommon(value: Lang): Self = this.set("common", value.asInstanceOf[js.Any])
+    def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
     
     @scala.inline
-    def deleteCommon: Self = this.set("common", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeo(value: Boundary): Self = this.set("geo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeo: Self = this.set("geo", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

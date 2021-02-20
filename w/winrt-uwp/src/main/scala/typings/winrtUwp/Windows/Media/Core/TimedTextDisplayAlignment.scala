@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimedTextDisplayAlignment extends js.Object
+sealed trait TimedTextDisplayAlignment extends StObject
 /** Specifies the alignment of a TimedTextRegion relative to the video frame. */
 @JSGlobal("Windows.Media.Core.TimedTextDisplayAlignment")
 @js.native
-object TimedTextDisplayAlignment extends js.Object {
+object TimedTextDisplayAlignment extends StObject {
   
   /** The text region is aligned in the direction of the end of the text. */
   @js.native

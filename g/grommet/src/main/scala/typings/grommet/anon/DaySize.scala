@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DaySize extends js.Object {
+trait DaySize extends StObject {
   
   var daySize: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object DaySize {
   }
   
   @scala.inline
-  implicit class DaySizeOps[Self <: DaySize] (val x: Self) extends AnyVal {
+  implicit class DaySizeMutableBuilder[Self <: DaySize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaySize(value: String): Self = StObject.set(x, "daySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaySizeUndefined: Self = StObject.set(x, "daySize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaySize(value: String): Self = this.set("daySize", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteDaySize: Self = this.set("daySize", js.undefined)
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setSlideDuration(value: String): Self = StObject.set(x, "slideDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
-    
-    @scala.inline
-    def setSlideDuration(value: String): Self = this.set("slideDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideDuration: Self = this.set("slideDuration", js.undefined)
+    def setSlideDurationUndefined: Self = StObject.set(x, "slideDuration", js.undefined)
   }
 }

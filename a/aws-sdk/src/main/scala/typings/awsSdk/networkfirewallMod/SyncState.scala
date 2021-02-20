@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SyncState extends js.Object {
+trait SyncState extends StObject {
   
   /**
     * The attachment status of the firewall's association with a single VPC subnet. For each configured subnet, Network Firewall creates the attachment by instantiating the firewall endpoint in the subnet so that it's ready to take traffic. This is part of the FirewallStatus.
@@ -26,30 +27,18 @@ object SyncState {
   }
   
   @scala.inline
-  implicit class SyncStateOps[Self <: SyncState] (val x: Self) extends AnyVal {
+  implicit class SyncStateMutableBuilder[Self <: SyncState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: Attachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentUndefined: Self = StObject.set(x, "Attachment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: SyncStateConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: Attachment): Self = this.set("Attachment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachment: Self = this.set("Attachment", js.undefined)
-    
-    @scala.inline
-    def setConfig(value: SyncStateConfig): Self = this.set("Config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfig: Self = this.set("Config", js.undefined)
+    def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
   }
 }

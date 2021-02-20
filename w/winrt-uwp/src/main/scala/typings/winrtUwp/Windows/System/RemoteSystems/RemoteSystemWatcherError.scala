@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.System.RemoteSystems
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RemoteSystemWatcherError extends js.Object
+sealed trait RemoteSystemWatcherError extends StObject
 /** Contains values that describe a watcher error, which may stop discovery. */
 @JSGlobal("Windows.System.RemoteSystems.RemoteSystemWatcherError")
 @js.native
-object RemoteSystemWatcherError extends js.Object {
+object RemoteSystemWatcherError extends StObject {
   
   /** Discovery of cloud remote systems for a web account failed because authentication of that web account failed. */
   @js.native

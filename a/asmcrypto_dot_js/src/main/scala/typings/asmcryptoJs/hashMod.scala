@@ -4,16 +4,16 @@ import typings.asmcryptoJs.sha1AsmMod.sha1result
 import typings.asmcryptoJs.sha256AsmMod.sha256result
 import typings.asmcryptoJs.sha512AsmMod.sha512result
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asmcrypto.js/dist_es8/hash/hash", JSImport.Namespace)
-@js.native
-object hashMod extends js.Object {
+object hashMod {
   
+  @JSImport("asmcrypto.js/dist_es8/hash/hash", "Hash")
   @js.native
-  abstract class Hash[T /* <: sha1result | sha256result | sha512result */] () extends js.Object {
+  abstract class Hash[T /* <: sha1result | sha256result | sha512result */] () extends StObject {
     
     var BLOCK_SIZE: Double = js.native
     

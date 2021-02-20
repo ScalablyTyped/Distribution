@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.node.Buffer
 import typings.stellarBase.xdrMod.xdr.TransactionEnvelope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreviousLedgerHash extends js.Object {
+trait PreviousLedgerHash extends StObject {
   
   var previousLedgerHash: Buffer = js.native
   
@@ -22,27 +23,15 @@ object PreviousLedgerHash {
   }
   
   @scala.inline
-  implicit class PreviousLedgerHashOps[Self <: PreviousLedgerHash] (val x: Self) extends AnyVal {
+  implicit class PreviousLedgerHashMutableBuilder[Self <: PreviousLedgerHash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreviousLedgerHash(value: Buffer): Self = StObject.set(x, "previousLedgerHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTxes(value: js.Array[TransactionEnvelope]): Self = StObject.set(x, "txes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPreviousLedgerHash(value: Buffer): Self = this.set("previousLedgerHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTxesVarargs(value: TransactionEnvelope*): Self = this.set("txes", js.Array(value :_*))
-    
-    @scala.inline
-    def setTxes(value: js.Array[TransactionEnvelope]): Self = this.set("txes", value.asInstanceOf[js.Any])
+    def setTxesVarargs(value: TransactionEnvelope*): Self = StObject.set(x, "txes", js.Array(value :_*))
   }
 }

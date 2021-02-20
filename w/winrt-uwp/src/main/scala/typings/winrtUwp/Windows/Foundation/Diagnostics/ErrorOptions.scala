@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ErrorOptions extends js.Object
+sealed trait ErrorOptions extends StObject
 /** Specifies the type of diagnostic error reporting for a thread. */
 @JSGlobal("Windows.Foundation.Diagnostics.ErrorOptions")
 @js.native
-object ErrorOptions extends js.Object {
+object ErrorOptions extends StObject {
   
   /** Exceptions are reported. */
   @js.native

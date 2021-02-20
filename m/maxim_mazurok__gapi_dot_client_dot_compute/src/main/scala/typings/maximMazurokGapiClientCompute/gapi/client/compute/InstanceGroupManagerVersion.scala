@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupManagerVersion extends js.Object {
+trait InstanceGroupManagerVersion extends StObject {
   
   /**
     * The URL of the instance template that is specified for this managed instance group. The group uses this template to create new instances in the managed instance group until the
@@ -34,36 +35,24 @@ object InstanceGroupManagerVersion {
   }
   
   @scala.inline
-  implicit class InstanceGroupManagerVersionOps[Self <: InstanceGroupManagerVersion] (val x: Self) extends AnyVal {
+  implicit class InstanceGroupManagerVersionMutableBuilder[Self <: InstanceGroupManagerVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceTemplate(value: String): Self = this.set("instanceTemplate", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInstanceTemplate: Self = this.set("instanceTemplate", js.undefined)
+    def setTargetSize(value: FixedOrPercent): Self = StObject.set(x, "targetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTargetSize(value: FixedOrPercent): Self = this.set("targetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetSize: Self = this.set("targetSize", js.undefined)
+    def setTargetSizeUndefined: Self = StObject.set(x, "targetSize", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadAsync extends js.Object {
+trait UploadAsync extends StObject {
   
   var autoRetryAfter: js.UndefOr[Double] = js.native
   
@@ -42,96 +43,84 @@ object UploadAsync {
   }
   
   @scala.inline
-  implicit class UploadAsyncOps[Self <: UploadAsync] (val x: Self) extends AnyVal {
+  implicit class UploadAsyncMutableBuilder[Self <: UploadAsync] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRetryAfter(value: Double): Self = StObject.set(x, "autoRetryAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRetryAfterUndefined: Self = StObject.set(x, "autoRetryAfter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRetryAfter(value: Double): Self = this.set("autoRetryAfter", value.asInstanceOf[js.Any])
+    def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
     
     @scala.inline
-    def deleteAutoRetryAfter: Self = this.set("autoRetryAfter", js.undefined)
+    def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpload(value: Boolean): Self = this.set("autoUpload", value.asInstanceOf[js.Any])
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
-    def deleteAutoUpload: Self = this.set("autoUpload", js.undefined)
+    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatch(value: Boolean): Self = this.set("batch", value.asInstanceOf[js.Any])
+    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
     @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
+    def setConcurrent(value: Boolean): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
     
     @scala.inline
-    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    def setMaxAutoRetries(value: Double): Self = StObject.set(x, "maxAutoRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrent(value: Boolean): Self = this.set("concurrent", value.asInstanceOf[js.Any])
+    def setMaxAutoRetriesUndefined: Self = StObject.set(x, "maxAutoRetries", js.undefined)
     
     @scala.inline
-    def deleteConcurrent: Self = this.set("concurrent", js.undefined)
+    def setRemoveField(value: String): Self = StObject.set(x, "removeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAutoRetries(value: Double): Self = this.set("maxAutoRetries", value.asInstanceOf[js.Any])
+    def setRemoveFieldUndefined: Self = StObject.set(x, "removeField", js.undefined)
     
     @scala.inline
-    def deleteMaxAutoRetries: Self = this.set("maxAutoRetries", js.undefined)
+    def setRemoveUrl(value: String): Self = StObject.set(x, "removeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveField(value: String): Self = this.set("removeField", value.asInstanceOf[js.Any])
+    def setRemoveUrlUndefined: Self = StObject.set(x, "removeUrl", js.undefined)
     
     @scala.inline
-    def deleteRemoveField: Self = this.set("removeField", js.undefined)
+    def setRemoveVerb(value: String): Self = StObject.set(x, "removeVerb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveUrl(value: String): Self = this.set("removeUrl", value.asInstanceOf[js.Any])
+    def setRemoveVerbUndefined: Self = StObject.set(x, "removeVerb", js.undefined)
     
     @scala.inline
-    def deleteRemoveUrl: Self = this.set("removeUrl", js.undefined)
+    def setSaveField(value: String): Self = StObject.set(x, "saveField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveVerb(value: String): Self = this.set("removeVerb", value.asInstanceOf[js.Any])
+    def setSaveFieldUndefined: Self = StObject.set(x, "saveField", js.undefined)
     
     @scala.inline
-    def deleteRemoveVerb: Self = this.set("removeVerb", js.undefined)
+    def setSaveUrl(value: String): Self = StObject.set(x, "saveUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveField(value: String): Self = this.set("saveField", value.asInstanceOf[js.Any])
+    def setSaveUrlUndefined: Self = StObject.set(x, "saveUrl", js.undefined)
     
     @scala.inline
-    def deleteSaveField: Self = this.set("saveField", js.undefined)
+    def setUseArrayBuffer(value: Boolean): Self = StObject.set(x, "useArrayBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveUrl(value: String): Self = this.set("saveUrl", value.asInstanceOf[js.Any])
+    def setUseArrayBufferUndefined: Self = StObject.set(x, "useArrayBuffer", js.undefined)
     
     @scala.inline
-    def deleteSaveUrl: Self = this.set("saveUrl", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseArrayBuffer(value: Boolean): Self = this.set("useArrayBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseArrayBuffer: Self = this.set("useArrayBuffer", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

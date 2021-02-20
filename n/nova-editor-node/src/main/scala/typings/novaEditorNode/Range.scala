@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/range/
 @js.native
-trait Range extends js.Object {
+trait Range extends StObject {
   
   def compare(other: Range): Double = js.native
   
@@ -51,51 +52,39 @@ object Range {
   }
   
   @scala.inline
-  implicit class RangeOps[Self <: Range] (val x: Self) extends AnyVal {
+  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompare(value: Range => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsIndex(value: Double => Boolean): Self = StObject.set(x, "containsIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsRange(value: Range => Boolean): Self = StObject.set(x, "containsRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompare(value: Range => Double): Self = this.set("compare", js.Any.fromFunction1(value))
+    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsIndex(value: Double => Boolean): Self = this.set("containsIndex", js.Any.fromFunction1(value))
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsRange(value: Range => Boolean): Self = this.set("containsRange", js.Any.fromFunction1(value))
+    def setIntersection(value: Range => Range): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEmpty(value: Boolean): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setIntersectsRange(value: Range => Boolean): Self = StObject.set(x, "intersectsRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setIsEqual(value: Range => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIntersection(value: Range => Range): Self = this.set("intersection", js.Any.fromFunction1(value))
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersectsRange(value: Range => Boolean): Self = this.set("intersectsRange", js.Any.fromFunction1(value))
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEqual(value: Range => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnion(value: Range => Range): Self = this.set("union", js.Any.fromFunction1(value))
+    def setUnion(value: Range => Range): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
   }
 }

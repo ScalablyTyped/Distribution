@@ -2,12 +2,13 @@ package typings.elasticApmNode.mod
 
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptureErrorOptions extends js.Object {
+trait CaptureErrorOptions extends StObject {
   
   var custom: js.UndefOr[js.Object] = js.native
   
@@ -36,72 +37,60 @@ object CaptureErrorOptions {
   }
   
   @scala.inline
-  implicit class CaptureErrorOptionsOps[Self <: CaptureErrorOptions] (val x: Self) extends AnyVal {
+  implicit class CaptureErrorOptionsMutableBuilder[Self <: CaptureErrorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: js.Object): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: js.Object): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setHandledUndefined: Self = StObject.set(x, "handled", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setLabels(value: Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandled(value: Boolean): Self = this.set("handled", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteHandled: Self = this.set("handled", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: Labels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setRequest(value: IncomingMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setResponse(value: ServerResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: IncomingMessage): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setTags(value: Labels): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: ServerResponse): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Labels): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setUser(value: UserObject): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setUser(value: UserObject): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

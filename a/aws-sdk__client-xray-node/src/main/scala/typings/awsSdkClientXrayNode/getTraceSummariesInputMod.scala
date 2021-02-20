@@ -1,12 +1,13 @@
 package typings.awsSdkClientXrayNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/model/GetTraceSummariesInput", JSImport.Namespace)
-@js.native
-object getTraceSummariesInputMod extends js.Object {
+object getTraceSummariesInputMod {
   
+  @JSImport("@aws-sdk/client-xray-node/model/GetTraceSummariesInput", "GetTraceSummariesInput")
+  @js.native
   val GetTraceSummariesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -18,13 +18,14 @@ import typings.officeJsPreview.officeJsPreviewStrings.Robinson
 import typings.officeJsPreview.officeJsPreviewStrings.ShowAll
 import typings.officeJsPreview.officeJsPreviewStrings.State
 import typings.officeJsPreview.officeJsPreviewStrings.World
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartMapOptions object, for use in `chartMapOptions.set({ ... })`. */
 @js.native
-trait ChartMapOptionsUpdateData extends js.Object {
+trait ChartMapOptionsUpdateData extends StObject {
   
   /**
     *
@@ -61,38 +62,26 @@ object ChartMapOptionsUpdateData {
   }
   
   @scala.inline
-  implicit class ChartMapOptionsUpdateDataOps[Self <: ChartMapOptionsUpdateData] (val x: Self) extends AnyVal {
+  implicit class ChartMapOptionsUpdateDataMutableBuilder[Self <: ChartMapOptionsUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelStrategy(value: ChartMapLabelStrategy | None | BestFit | ShowAll): Self = StObject.set(x, "labelStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabelStrategy(value: ChartMapLabelStrategy | None | BestFit | ShowAll): Self = this.set("labelStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelStrategy: Self = this.set("labelStrategy", js.undefined)
+    def setLabelStrategyUndefined: Self = StObject.set(x, "labelStrategy", js.undefined)
     
     @scala.inline
     def setLevel(
       value: ChartMapAreaLevel | Automatic | DataOnly | City | County | State | Country | Continent | World
-    ): Self = this.set("level", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def setProjectionType(value: ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers): Self = this.set("projectionType", value.asInstanceOf[js.Any])
+    def setProjectionType(value: ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProjectionType: Self = this.set("projectionType", js.undefined)
+    def setProjectionTypeUndefined: Self = StObject.set(x, "projectionType", js.undefined)
   }
 }

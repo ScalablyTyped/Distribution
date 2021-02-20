@@ -5,12 +5,13 @@ import typings.chromeApps.chromeAppsStrings.disabled__
 import typings.chromeApps.chromeAppsStrings.initializing_
 import typings.chromeApps.chromeAppsStrings.running_
 import typings.chromeApps.chromeAppsStrings.temporary_unavailable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AUTHENTICATIONREQUIRED extends js.Object {
+trait AUTHENTICATIONREQUIRED extends StObject {
   
   var AUTHENTICATION_REQUIRED: authentication_required_ = js.native
   
@@ -37,33 +38,21 @@ object AUTHENTICATIONREQUIRED {
   }
   
   @scala.inline
-  implicit class AUTHENTICATIONREQUIREDOps[Self <: AUTHENTICATIONREQUIRED] (val x: Self) extends AnyVal {
+  implicit class AUTHENTICATIONREQUIREDMutableBuilder[Self <: AUTHENTICATIONREQUIRED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAUTHENTICATION_REQUIRED(value: authentication_required_): Self = StObject.set(x, "AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDISABLED(value: disabled__): Self = StObject.set(x, "DISABLED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setINITIALIZING(value: initializing_): Self = StObject.set(x, "INITIALIZING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAUTHENTICATION_REQUIRED(value: authentication_required_): Self = this.set("AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
+    def setRUNNING(value: running_): Self = StObject.set(x, "RUNNING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDISABLED(value: disabled__): Self = this.set("DISABLED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setINITIALIZING(value: initializing_): Self = this.set("INITIALIZING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRUNNING(value: running_): Self = this.set("RUNNING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTEMPORARY_UNAVAILABLE(value: temporary_unavailable_): Self = this.set("TEMPORARY_UNAVAILABLE", value.asInstanceOf[js.Any])
+    def setTEMPORARY_UNAVAILABLE(value: temporary_unavailable_): Self = StObject.set(x, "TEMPORARY_UNAVAILABLE", value.asInstanceOf[js.Any])
   }
 }

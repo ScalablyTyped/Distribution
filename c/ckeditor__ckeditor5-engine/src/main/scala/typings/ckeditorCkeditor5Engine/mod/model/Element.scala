@@ -2,6 +2,7 @@ package typings.ckeditorCkeditor5Engine.mod.model
 
 import typings.std.Iterable
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,10 +55,10 @@ class Element protected () extends Node {
   
   def offsetToIndex(offset: Double): Double = js.native
 }
-/* static members */
-@JSImport("@ckeditor/ckeditor5-engine", "model.Element")
-@js.native
-object Element extends js.Object {
+object Element {
   
+  /* static member */
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Element.fromJSON")
+  @js.native
   def fromJSON(json: js.Object): Element = js.native
 }

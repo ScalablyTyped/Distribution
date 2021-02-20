@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationsElliottWaveShapeOptions extends js.Object {
+trait AnnotationsElliottWaveShapeOptions extends StObject {
   
   /**
     * (Highstock) Name of the dash style to use for the shape's stroke.
@@ -68,78 +69,66 @@ object AnnotationsElliottWaveShapeOptions {
   }
   
   @scala.inline
-  implicit class AnnotationsElliottWaveShapeOptionsOps[Self <: AnnotationsElliottWaveShapeOptions] (val x: Self) extends AnyVal {
+  implicit class AnnotationsElliottWaveShapeOptionsMutableBuilder[Self <: AnnotationsElliottWaveShapeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashStyle(value: DashStyleValue): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: ColorString | GradientColorObject | PatternObject): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setSnap(value: Double): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
     
     @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnap(value: Double): Self = this.set("snap", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def deleteSnap: Self = this.set("snap", js.undefined)
+    def setStroke(value: ColorString): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
+    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStroke(value: ColorString): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

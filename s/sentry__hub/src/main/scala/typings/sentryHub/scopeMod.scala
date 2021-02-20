@@ -11,16 +11,14 @@ import typings.sentryTypes.extraMod.Extras
 import typings.sentryTypes.severityMod.Severity
 import typings.sentryTypes.spanMod.Span
 import typings.sentryTypes.userMod.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/hub/dist/scope", JSImport.Namespace)
-@js.native
-object scopeMod extends js.Object {
+object scopeMod {
   
-  def addGlobalEventProcessor(callback: EventProcessor): Unit = js.native
-  
+  @JSImport("@sentry/hub/dist/scope", "Scope")
   @js.native
   class Scope ()
     extends typings.sentryTypes.scopeMod.Scope {
@@ -114,9 +112,14 @@ object scopeMod extends js.Object {
     def setTransaction(name: String): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Scope extends js.Object {
+  object Scope {
     
+    @JSImport("@sentry/hub/dist/scope", "Scope.clone")
+    @js.native
     def clone(scope: Scope): Scope = js.native
   }
+  
+  @JSImport("@sentry/hub/dist/scope", "addGlobalEventProcessor")
+  @js.native
+  def addGlobalEventProcessor(callback: EventProcessor): Unit = js.native
 }

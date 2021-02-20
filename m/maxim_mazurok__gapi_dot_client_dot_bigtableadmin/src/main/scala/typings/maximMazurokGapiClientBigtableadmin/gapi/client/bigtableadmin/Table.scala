@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Table extends js.Object {
+trait Table extends StObject {
   
   /**
     * Output only. Map from cluster ID to per-cluster table state. If it could not be determined whether or not the table has data in a particular cluster (for example, if its zone is
@@ -46,56 +47,44 @@ object Table {
   }
   
   @scala.inline
-  implicit class TableOps[Self <: Table] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setClusterStates(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ClusterState}
       */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table with TopLevel[js.Any]
-    ): Self = this.set("clusterStates", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "clusterStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClusterStates: Self = this.set("clusterStates", js.undefined)
+    def setClusterStatesUndefined: Self = StObject.set(x, "clusterStates", js.undefined)
     
     @scala.inline
     def setColumnFamilies(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ColumnFamily}
       */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table with TopLevel[js.Any]
-    ): Self = this.set("columnFamilies", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnFamilies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnFamilies: Self = this.set("columnFamilies", js.undefined)
+    def setColumnFamiliesUndefined: Self = StObject.set(x, "columnFamilies", js.undefined)
     
     @scala.inline
-    def setGranularity(value: String): Self = this.set("granularity", value.asInstanceOf[js.Any])
+    def setGranularity(value: String): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGranularity: Self = this.set("granularity", js.undefined)
+    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setRestoreInfo(value: RestoreInfo): Self = this.set("restoreInfo", value.asInstanceOf[js.Any])
+    def setRestoreInfo(value: RestoreInfo): Self = StObject.set(x, "restoreInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestoreInfo: Self = this.set("restoreInfo", js.undefined)
+    def setRestoreInfoUndefined: Self = StObject.set(x, "restoreInfo", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackSummary extends js.Object {
+trait StackSummary extends StObject {
   
   /**
     * The number of apps.
@@ -46,54 +47,42 @@ object StackSummary {
   }
   
   @scala.inline
-  implicit class StackSummaryOps[Self <: StackSummary] (val x: Self) extends AnyVal {
+  implicit class StackSummaryMutableBuilder[Self <: StackSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppsCount(value: Integer): Self = StObject.set(x, "AppsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppsCountUndefined: Self = StObject.set(x, "AppsCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppsCount(value: Integer): Self = this.set("AppsCount", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def deleteAppsCount: Self = this.set("AppsCount", js.undefined)
+    def setInstancesCount(value: InstancesCount): Self = StObject.set(x, "InstancesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setInstancesCountUndefined: Self = StObject.set(x, "InstancesCount", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setLayersCount(value: Integer): Self = StObject.set(x, "LayersCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesCount(value: InstancesCount): Self = this.set("InstancesCount", value.asInstanceOf[js.Any])
+    def setLayersCountUndefined: Self = StObject.set(x, "LayersCount", js.undefined)
     
     @scala.inline
-    def deleteInstancesCount: Self = this.set("InstancesCount", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayersCount(value: Integer): Self = this.set("LayersCount", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLayersCount: Self = this.set("LayersCount", js.undefined)
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

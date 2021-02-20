@@ -4,13 +4,14 @@ import typings.officeJsPreview.Excel.SheetVisibility
 import typings.officeJsPreview.officeJsPreviewStrings.Hidden
 import typings.officeJsPreview.officeJsPreviewStrings.VeryHidden
 import typings.officeJsPreview.officeJsPreviewStrings.Visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `worksheet.toJSON()`. */
 @js.native
-trait WorksheetData extends js.Object {
+trait WorksheetData extends StObject {
   
   /**
     *
@@ -209,186 +210,174 @@ object WorksheetData {
   }
   
   @scala.inline
-  implicit class WorksheetDataOps[Self <: WorksheetData] (val x: Self) extends AnyVal {
+  implicit class WorksheetDataMutableBuilder[Self <: WorksheetData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFilter(value: AutoFilterData): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFilterUndefined: Self = StObject.set(x, "autoFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharts(value: js.Array[ChartData]): Self = StObject.set(x, "charts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFilter(value: AutoFilterData): Self = this.set("autoFilter", value.asInstanceOf[js.Any])
+    def setChartsUndefined: Self = StObject.set(x, "charts", js.undefined)
     
     @scala.inline
-    def deleteAutoFilter: Self = this.set("autoFilter", js.undefined)
+    def setChartsVarargs(value: ChartData*): Self = StObject.set(x, "charts", js.Array(value :_*))
     
     @scala.inline
-    def setChartsVarargs(value: ChartData*): Self = this.set("charts", js.Array(value :_*))
+    def setComments(value: js.Array[CommentData]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharts(value: js.Array[ChartData]): Self = this.set("charts", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def deleteCharts: Self = this.set("charts", js.undefined)
+    def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: CommentData*): Self = this.set("comments", js.Array(value :_*))
+    def setCustomProperties(value: js.Array[WorksheetCustomPropertyData]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentData]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setCustomPropertiesUndefined: Self = StObject.set(x, "customProperties", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setCustomPropertiesVarargs(value: WorksheetCustomPropertyData*): Self = StObject.set(x, "customProperties", js.Array(value :_*))
     
     @scala.inline
-    def setCustomPropertiesVarargs(value: WorksheetCustomPropertyData*): Self = this.set("customProperties", js.Array(value :_*))
+    def setEnableCalculation(value: Boolean): Self = StObject.set(x, "enableCalculation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomProperties(value: js.Array[WorksheetCustomPropertyData]): Self = this.set("customProperties", value.asInstanceOf[js.Any])
+    def setEnableCalculationUndefined: Self = StObject.set(x, "enableCalculation", js.undefined)
     
     @scala.inline
-    def deleteCustomProperties: Self = this.set("customProperties", js.undefined)
+    def setHorizontalPageBreaks(value: js.Array[PageBreakData]): Self = StObject.set(x, "horizontalPageBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCalculation(value: Boolean): Self = this.set("enableCalculation", value.asInstanceOf[js.Any])
+    def setHorizontalPageBreaksUndefined: Self = StObject.set(x, "horizontalPageBreaks", js.undefined)
     
     @scala.inline
-    def deleteEnableCalculation: Self = this.set("enableCalculation", js.undefined)
+    def setHorizontalPageBreaksVarargs(value: PageBreakData*): Self = StObject.set(x, "horizontalPageBreaks", js.Array(value :_*))
     
     @scala.inline
-    def setHorizontalPageBreaksVarargs(value: PageBreakData*): Self = this.set("horizontalPageBreaks", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalPageBreaks(value: js.Array[PageBreakData]): Self = this.set("horizontalPageBreaks", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHorizontalPageBreaks: Self = this.set("horizontalPageBreaks", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNames(value: js.Array[NamedItemData]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNamesVarargs(value: NamedItemData*): Self = StObject.set(x, "names", js.Array(value :_*))
     
     @scala.inline
-    def setNamesVarargs(value: NamedItemData*): Self = this.set("names", js.Array(value :_*))
+    def setPageLayout(value: PageLayoutData): Self = StObject.set(x, "pageLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: js.Array[NamedItemData]): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setPageLayoutUndefined: Self = StObject.set(x, "pageLayout", js.undefined)
     
     @scala.inline
-    def deleteNames: Self = this.set("names", js.undefined)
+    def setPivotTables(value: js.Array[PivotTableData]): Self = StObject.set(x, "pivotTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageLayout(value: PageLayoutData): Self = this.set("pageLayout", value.asInstanceOf[js.Any])
+    def setPivotTablesUndefined: Self = StObject.set(x, "pivotTables", js.undefined)
     
     @scala.inline
-    def deletePageLayout: Self = this.set("pageLayout", js.undefined)
+    def setPivotTablesVarargs(value: PivotTableData*): Self = StObject.set(x, "pivotTables", js.Array(value :_*))
     
     @scala.inline
-    def setPivotTablesVarargs(value: PivotTableData*): Self = this.set("pivotTables", js.Array(value :_*))
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotTables(value: js.Array[PivotTableData]): Self = this.set("pivotTables", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePivotTables: Self = this.set("pivotTables", js.undefined)
+    def setProtection(value: WorksheetProtectionData): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtection(value: WorksheetProtectionData): Self = this.set("protection", value.asInstanceOf[js.Any])
+    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
     @scala.inline
-    def deleteProtection: Self = this.set("protection", js.undefined)
+    def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
     
     @scala.inline
-    def setShapesVarargs(value: ShapeData*): Self = this.set("shapes", js.Array(value :_*))
+    def setShowGridlines(value: Boolean): Self = StObject.set(x, "showGridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapes(value: js.Array[ShapeData]): Self = this.set("shapes", value.asInstanceOf[js.Any])
+    def setShowGridlinesUndefined: Self = StObject.set(x, "showGridlines", js.undefined)
     
     @scala.inline
-    def deleteShapes: Self = this.set("shapes", js.undefined)
+    def setShowHeadings(value: Boolean): Self = StObject.set(x, "showHeadings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGridlines(value: Boolean): Self = this.set("showGridlines", value.asInstanceOf[js.Any])
+    def setShowHeadingsUndefined: Self = StObject.set(x, "showHeadings", js.undefined)
     
     @scala.inline
-    def deleteShowGridlines: Self = this.set("showGridlines", js.undefined)
+    def setSlicers(value: js.Array[SlicerData]): Self = StObject.set(x, "slicers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHeadings(value: Boolean): Self = this.set("showHeadings", value.asInstanceOf[js.Any])
+    def setSlicersUndefined: Self = StObject.set(x, "slicers", js.undefined)
     
     @scala.inline
-    def deleteShowHeadings: Self = this.set("showHeadings", js.undefined)
+    def setSlicersVarargs(value: SlicerData*): Self = StObject.set(x, "slicers", js.Array(value :_*))
     
     @scala.inline
-    def setSlicersVarargs(value: SlicerData*): Self = this.set("slicers", js.Array(value :_*))
+    def setStandardHeight(value: Double): Self = StObject.set(x, "standardHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlicers(value: js.Array[SlicerData]): Self = this.set("slicers", value.asInstanceOf[js.Any])
+    def setStandardHeightUndefined: Self = StObject.set(x, "standardHeight", js.undefined)
     
     @scala.inline
-    def deleteSlicers: Self = this.set("slicers", js.undefined)
+    def setStandardWidth(value: Double): Self = StObject.set(x, "standardWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardHeight(value: Double): Self = this.set("standardHeight", value.asInstanceOf[js.Any])
+    def setStandardWidthUndefined: Self = StObject.set(x, "standardWidth", js.undefined)
     
     @scala.inline
-    def deleteStandardHeight: Self = this.set("standardHeight", js.undefined)
+    def setTabColor(value: String): Self = StObject.set(x, "tabColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardWidth(value: Double): Self = this.set("standardWidth", value.asInstanceOf[js.Any])
+    def setTabColorUndefined: Self = StObject.set(x, "tabColor", js.undefined)
     
     @scala.inline
-    def deleteStandardWidth: Self = this.set("standardWidth", js.undefined)
+    def setTables(value: js.Array[TableData]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabColor(value: String): Self = this.set("tabColor", value.asInstanceOf[js.Any])
+    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
     @scala.inline
-    def deleteTabColor: Self = this.set("tabColor", js.undefined)
+    def setTablesVarargs(value: TableData*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
     @scala.inline
-    def setTablesVarargs(value: TableData*): Self = this.set("tables", js.Array(value :_*))
+    def setVerticalPageBreaks(value: js.Array[PageBreakData]): Self = StObject.set(x, "verticalPageBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTables(value: js.Array[TableData]): Self = this.set("tables", value.asInstanceOf[js.Any])
+    def setVerticalPageBreaksUndefined: Self = StObject.set(x, "verticalPageBreaks", js.undefined)
     
     @scala.inline
-    def deleteTables: Self = this.set("tables", js.undefined)
+    def setVerticalPageBreaksVarargs(value: PageBreakData*): Self = StObject.set(x, "verticalPageBreaks", js.Array(value :_*))
     
     @scala.inline
-    def setVerticalPageBreaksVarargs(value: PageBreakData*): Self = this.set("verticalPageBreaks", js.Array(value :_*))
+    def setVisibility(value: SheetVisibility | Visible | Hidden | VeryHidden): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalPageBreaks(value: js.Array[PageBreakData]): Self = this.set("verticalPageBreaks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalPageBreaks: Self = this.set("verticalPageBreaks", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: SheetVisibility | Visible | Hidden | VeryHidden): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

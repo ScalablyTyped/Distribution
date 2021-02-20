@@ -4,12 +4,13 @@ import typings.babylonjs.EXTDisjointTimerQuery
 import typings.babylonjs.anon.COMPLETIONSTATUSKHR
 import typings.std.EXTTextureFilterAnisotropic
 import typings.std.WEBGLCompressedTextureS3tc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EngineCapabilities extends js.Object {
+trait EngineCapabilities extends StObject {
   
   /** Defines if astc texture compression is supported */
   var astc: js.Any = js.native
@@ -182,165 +183,153 @@ object EngineCapabilities {
   }
   
   @scala.inline
-  implicit class EngineCapabilitiesOps[Self <: EngineCapabilities] (val x: Self) extends AnyVal {
+  implicit class EngineCapabilitiesMutableBuilder[Self <: EngineCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAstc(value: js.Any): Self = StObject.set(x, "astc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlendMinMax(value: Boolean): Self = StObject.set(x, "blendMinMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBptc(value: js.Any): Self = StObject.set(x, "bptc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAstc(value: js.Any): Self = this.set("astc", value.asInstanceOf[js.Any])
+    def setCanUseTimestampForTimerQuery(value: Boolean): Self = StObject.set(x, "canUseTimestampForTimerQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendMinMax(value: Boolean): Self = this.set("blendMinMax", value.asInstanceOf[js.Any])
+    def setColorBufferFloat(value: Boolean): Self = StObject.set(x, "colorBufferFloat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBptc(value: js.Any): Self = this.set("bptc", value.asInstanceOf[js.Any])
+    def setDepthTextureExtension(value: Boolean): Self = StObject.set(x, "depthTextureExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanUseTimestampForTimerQuery(value: Boolean): Self = this.set("canUseTimestampForTimerQuery", value.asInstanceOf[js.Any])
+    def setDrawBuffersExtension(value: Boolean): Self = StObject.set(x, "drawBuffersExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorBufferFloat(value: Boolean): Self = this.set("colorBufferFloat", value.asInstanceOf[js.Any])
+    def setEtc1(value: js.Any): Self = StObject.set(x, "etc1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepthTextureExtension(value: Boolean): Self = this.set("depthTextureExtension", value.asInstanceOf[js.Any])
+    def setEtc2(value: js.Any): Self = StObject.set(x, "etc2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawBuffersExtension(value: Boolean): Self = this.set("drawBuffersExtension", value.asInstanceOf[js.Any])
+    def setFragmentDepthSupported(value: Boolean): Self = StObject.set(x, "fragmentDepthSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtc1(value: js.Any): Self = this.set("etc1", value.asInstanceOf[js.Any])
+    def setHighPrecisionShaderSupported(value: Boolean): Self = StObject.set(x, "highPrecisionShaderSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtc2(value: js.Any): Self = this.set("etc2", value.asInstanceOf[js.Any])
+    def setInstancedArrays(value: Boolean): Self = StObject.set(x, "instancedArrays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentDepthSupported(value: Boolean): Self = this.set("fragmentDepthSupported", value.asInstanceOf[js.Any])
+    def setMaxAnisotropy(value: Double): Self = StObject.set(x, "maxAnisotropy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighPrecisionShaderSupported(value: Boolean): Self = this.set("highPrecisionShaderSupported", value.asInstanceOf[js.Any])
+    def setMaxCombinedTexturesImageUnits(value: Double): Self = StObject.set(x, "maxCombinedTexturesImageUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancedArrays(value: Boolean): Self = this.set("instancedArrays", value.asInstanceOf[js.Any])
+    def setMaxCubemapTextureSize(value: Double): Self = StObject.set(x, "maxCubemapTextureSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAnisotropy(value: Double): Self = this.set("maxAnisotropy", value.asInstanceOf[js.Any])
+    def setMaxFragmentUniformVectors(value: Double): Self = StObject.set(x, "maxFragmentUniformVectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCombinedTexturesImageUnits(value: Double): Self = this.set("maxCombinedTexturesImageUnits", value.asInstanceOf[js.Any])
+    def setMaxMSAASamples(value: Double): Self = StObject.set(x, "maxMSAASamples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCubemapTextureSize(value: Double): Self = this.set("maxCubemapTextureSize", value.asInstanceOf[js.Any])
+    def setMaxRenderTextureSize(value: Double): Self = StObject.set(x, "maxRenderTextureSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFragmentUniformVectors(value: Double): Self = this.set("maxFragmentUniformVectors", value.asInstanceOf[js.Any])
+    def setMaxSamples(value: Double): Self = StObject.set(x, "maxSamples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMSAASamples(value: Double): Self = this.set("maxMSAASamples", value.asInstanceOf[js.Any])
+    def setMaxSamplesUndefined: Self = StObject.set(x, "maxSamples", js.undefined)
     
     @scala.inline
-    def setMaxRenderTextureSize(value: Double): Self = this.set("maxRenderTextureSize", value.asInstanceOf[js.Any])
+    def setMaxTextureSize(value: Double): Self = StObject.set(x, "maxTextureSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTextureSize(value: Double): Self = this.set("maxTextureSize", value.asInstanceOf[js.Any])
+    def setMaxTexturesImageUnits(value: Double): Self = StObject.set(x, "maxTexturesImageUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTexturesImageUnits(value: Double): Self = this.set("maxTexturesImageUnits", value.asInstanceOf[js.Any])
+    def setMaxVaryingVectors(value: Double): Self = StObject.set(x, "maxVaryingVectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVaryingVectors(value: Double): Self = this.set("maxVaryingVectors", value.asInstanceOf[js.Any])
+    def setMaxVertexAttribs(value: Double): Self = StObject.set(x, "maxVertexAttribs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVertexAttribs(value: Double): Self = this.set("maxVertexAttribs", value.asInstanceOf[js.Any])
+    def setMaxVertexTextureImageUnits(value: Double): Self = StObject.set(x, "maxVertexTextureImageUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVertexTextureImageUnits(value: Double): Self = this.set("maxVertexTextureImageUnits", value.asInstanceOf[js.Any])
+    def setMaxVertexUniformVectors(value: Double): Self = StObject.set(x, "maxVertexUniformVectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVertexUniformVectors(value: Double): Self = this.set("maxVertexUniformVectors", value.asInstanceOf[js.Any])
+    def setMultiview(value: js.Any): Self = StObject.set(x, "multiview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPvrtc(value: js.Any): Self = this.set("pvrtc", value.asInstanceOf[js.Any])
+    def setMultiviewUndefined: Self = StObject.set(x, "multiview", js.undefined)
     
     @scala.inline
-    def setStandardDerivatives(value: Boolean): Self = this.set("standardDerivatives", value.asInstanceOf[js.Any])
+    def setOculusMultiview(value: js.Any): Self = StObject.set(x, "oculusMultiview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureFloat(value: Boolean): Self = this.set("textureFloat", value.asInstanceOf[js.Any])
+    def setOculusMultiviewUndefined: Self = StObject.set(x, "oculusMultiview", js.undefined)
     
     @scala.inline
-    def setTextureFloatLinearFiltering(value: Boolean): Self = this.set("textureFloatLinearFiltering", value.asInstanceOf[js.Any])
+    def setParallelShaderCompile(value: COMPLETIONSTATUSKHR): Self = StObject.set(x, "parallelShaderCompile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureFloatRender(value: Boolean): Self = this.set("textureFloatRender", value.asInstanceOf[js.Any])
+    def setParallelShaderCompileUndefined: Self = StObject.set(x, "parallelShaderCompile", js.undefined)
     
     @scala.inline
-    def setTextureHalfFloat(value: Boolean): Self = this.set("textureHalfFloat", value.asInstanceOf[js.Any])
+    def setPvrtc(value: js.Any): Self = StObject.set(x, "pvrtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureHalfFloatLinearFiltering(value: Boolean): Self = this.set("textureHalfFloatLinearFiltering", value.asInstanceOf[js.Any])
+    def setS3tc(value: WEBGLCompressedTextureS3tc): Self = StObject.set(x, "s3tc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureHalfFloatRender(value: Boolean): Self = this.set("textureHalfFloatRender", value.asInstanceOf[js.Any])
+    def setS3tcUndefined: Self = StObject.set(x, "s3tc", js.undefined)
     
     @scala.inline
-    def setTextureLOD(value: Boolean): Self = this.set("textureLOD", value.asInstanceOf[js.Any])
+    def setStandardDerivatives(value: Boolean): Self = StObject.set(x, "standardDerivatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUintIndices(value: Boolean): Self = this.set("uintIndices", value.asInstanceOf[js.Any])
+    def setTextureAnisotropicFilterExtension(value: EXTTextureFilterAnisotropic): Self = StObject.set(x, "textureAnisotropicFilterExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertexArrayObject(value: Boolean): Self = this.set("vertexArrayObject", value.asInstanceOf[js.Any])
+    def setTextureAnisotropicFilterExtensionUndefined: Self = StObject.set(x, "textureAnisotropicFilterExtension", js.undefined)
     
     @scala.inline
-    def setMaxSamples(value: Double): Self = this.set("maxSamples", value.asInstanceOf[js.Any])
+    def setTextureFloat(value: Boolean): Self = StObject.set(x, "textureFloat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxSamples: Self = this.set("maxSamples", js.undefined)
+    def setTextureFloatLinearFiltering(value: Boolean): Self = StObject.set(x, "textureFloatLinearFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiview(value: js.Any): Self = this.set("multiview", value.asInstanceOf[js.Any])
+    def setTextureFloatRender(value: Boolean): Self = StObject.set(x, "textureFloatRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiview: Self = this.set("multiview", js.undefined)
+    def setTextureHalfFloat(value: Boolean): Self = StObject.set(x, "textureHalfFloat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOculusMultiview(value: js.Any): Self = this.set("oculusMultiview", value.asInstanceOf[js.Any])
+    def setTextureHalfFloatLinearFiltering(value: Boolean): Self = StObject.set(x, "textureHalfFloatLinearFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOculusMultiview: Self = this.set("oculusMultiview", js.undefined)
+    def setTextureHalfFloatRender(value: Boolean): Self = StObject.set(x, "textureHalfFloatRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParallelShaderCompile(value: COMPLETIONSTATUSKHR): Self = this.set("parallelShaderCompile", value.asInstanceOf[js.Any])
+    def setTextureLOD(value: Boolean): Self = StObject.set(x, "textureLOD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParallelShaderCompile: Self = this.set("parallelShaderCompile", js.undefined)
+    def setTimerQuery(value: EXTDisjointTimerQuery): Self = StObject.set(x, "timerQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3tc(value: WEBGLCompressedTextureS3tc): Self = this.set("s3tc", value.asInstanceOf[js.Any])
+    def setTimerQueryUndefined: Self = StObject.set(x, "timerQuery", js.undefined)
     
     @scala.inline
-    def deleteS3tc: Self = this.set("s3tc", js.undefined)
+    def setUintIndices(value: Boolean): Self = StObject.set(x, "uintIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureAnisotropicFilterExtension(value: EXTTextureFilterAnisotropic): Self = this.set("textureAnisotropicFilterExtension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextureAnisotropicFilterExtension: Self = this.set("textureAnisotropicFilterExtension", js.undefined)
-    
-    @scala.inline
-    def setTimerQuery(value: EXTDisjointTimerQuery): Self = this.set("timerQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimerQuery: Self = this.set("timerQuery", js.undefined)
+    def setVertexArrayObject(value: Boolean): Self = StObject.set(x, "vertexArrayObject", value.asInstanceOf[js.Any])
   }
 }

@@ -6,13 +6,14 @@ import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.dialog
 import typings.baseui.baseuiStrings.full
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/modal.SharedStylePropsArg & {  children :react.react.ReactNode} */
 @js.native
-trait SharedStylePropsArgchildrAnimate extends js.Object {
+trait SharedStylePropsArgchildrAnimate extends StObject {
   
   @JSName("$animate")
   var $animate: js.UndefOr[Boolean] = js.native
@@ -46,66 +47,54 @@ object SharedStylePropsArgchildrAnimate {
   }
   
   @scala.inline
-  implicit class SharedStylePropsArgchildrAnimateOps[Self <: SharedStylePropsArgchildrAnimate] (val x: Self) extends AnyVal {
+  implicit class SharedStylePropsArgchildrAnimateMutableBuilder[Self <: SharedStylePropsArgchildrAnimate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$animate(value: Boolean): Self = StObject.set(x, "$animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$animateUndefined: Self = StObject.set(x, "$animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$animate(value: Boolean): Self = this.set("$animate", value.asInstanceOf[js.Any])
+    def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
     
     @scala.inline
-    def delete$animate: Self = this.set("$animate", js.undefined)
+    def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$closeable(value: Boolean): Self = this.set("$closeable", value.asInstanceOf[js.Any])
+    def set$isOpenUndefined: Self = StObject.set(x, "$isOpen", js.undefined)
     
     @scala.inline
-    def delete$closeable: Self = this.set("$closeable", js.undefined)
+    def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isOpen(value: Boolean): Self = this.set("$isOpen", value.asInstanceOf[js.Any])
+    def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
     
     @scala.inline
-    def delete$isOpen: Self = this.set("$isOpen", js.undefined)
+    def set$role(value: dialog | alertdialog): Self = StObject.set(x, "$role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isVisible(value: Boolean): Self = this.set("$isVisible", value.asInstanceOf[js.Any])
+    def set$roleUndefined: Self = StObject.set(x, "$role", js.undefined)
     
     @scala.inline
-    def delete$isVisible: Self = this.set("$isVisible", js.undefined)
+    def set$size(value: default_ | full | auto): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$role(value: dialog | alertdialog): Self = this.set("$role", value.asInstanceOf[js.Any])
+    def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
     
     @scala.inline
-    def delete$role: Self = this.set("$role", js.undefined)
+    def set$unstable_ModalBackdropScroll(value: Boolean): Self = StObject.set(x, "$unstable_ModalBackdropScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$size(value: default_ | full | auto): Self = this.set("$size", value.asInstanceOf[js.Any])
+    def set$unstable_ModalBackdropScrollUndefined: Self = StObject.set(x, "$unstable_ModalBackdropScroll", js.undefined)
     
     @scala.inline
-    def delete$size: Self = this.set("$size", js.undefined)
+    def setChildren(value: js.UndefOr[ReactNode] with ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$unstable_ModalBackdropScroll(value: Boolean): Self = this.set("$unstable_ModalBackdropScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$unstable_ModalBackdropScroll: Self = this.set("$unstable_ModalBackdropScroll", js.undefined)
-    
-    @scala.inline
-    def setChildren(value: js.UndefOr[ReactNode] with ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

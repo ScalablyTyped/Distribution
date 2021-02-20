@@ -1,7 +1,8 @@
 package typings.awsSdk.iotsecuretunnelingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _TunnelStatus extends js.Object
+trait _TunnelStatus extends StObject

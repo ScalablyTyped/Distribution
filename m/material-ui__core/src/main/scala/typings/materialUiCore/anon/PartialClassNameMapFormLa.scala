@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelClassKey>> */
 @js.native
-trait PartialClassNameMapFormLa extends js.Object {
+trait PartialClassNameMapFormLa extends StObject {
   
   var asterisk: js.UndefOr[String] = js.native
   
@@ -31,60 +32,48 @@ object PartialClassNameMapFormLa {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapFormLaOps[Self <: PartialClassNameMapFormLa] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapFormLaMutableBuilder[Self <: PartialClassNameMapFormLa] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsterisk(value: String): Self = StObject.set(x, "asterisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsteriskUndefined: Self = StObject.set(x, "asterisk", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsterisk(value: String): Self = this.set("asterisk", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteAsterisk: Self = this.set("asterisk", js.undefined)
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFilled(value: String): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilled(value: String): Self = this.set("filled", value.asInstanceOf[js.Any])
+    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
     @scala.inline
-    def deleteFilled: Self = this.set("filled", js.undefined)
+    def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: String): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteFocused: Self = this.set("focused", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: String): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -1,7 +1,8 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _RestoreJobStatus extends js.Object
+trait _RestoreJobStatus extends StObject

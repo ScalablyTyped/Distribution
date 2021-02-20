@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -161,180 +162,168 @@ object Immunization {
   }
   
   @scala.inline
-  implicit class ImmunizationOps[Self <: Immunization] (val x: Self) extends AnyVal {
+  implicit class ImmunizationMutableBuilder[Self <: Immunization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoseQuantity(value: Quantity): Self = StObject.set(x, "doseQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotGiven(value: Boolean): Self = this.set("notGiven", value.asInstanceOf[js.Any])
+    def setDoseQuantityUndefined: Self = StObject.set(x, "doseQuantity", js.undefined)
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimarySource(value: Boolean): Self = this.set("primarySource", value.asInstanceOf[js.Any])
+    def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setExpirationDate(value: date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVaccineCode(value: CodeableConcept): Self = this.set("vaccineCode", value.asInstanceOf[js.Any])
+    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setExplanation(value: ImmunizationExplanation): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
     
     @scala.inline
-    def set_expirationDate(value: Element): Self = this.set("_expirationDate", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_expirationDate: Self = this.set("_expirationDate", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def set_lotNumber(value: Element): Self = this.set("_lotNumber", value.asInstanceOf[js.Any])
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def delete_lotNumber: Self = this.set("_lotNumber", js.undefined)
+    def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_notGiven(value: Element): Self = this.set("_notGiven", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def delete_notGiven: Self = this.set("_notGiven", js.undefined)
+    def setLotNumber(value: String): Self = StObject.set(x, "lotNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_primarySource(value: Element): Self = this.set("_primarySource", value.asInstanceOf[js.Any])
+    def setLotNumberUndefined: Self = StObject.set(x, "lotNumber", js.undefined)
     
     @scala.inline
-    def delete_primarySource: Self = this.set("_primarySource", js.undefined)
+    def setManufacturer(value: Reference): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setNotGiven(value: Boolean): Self = StObject.set(x, "notGiven", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def setDoseQuantity(value: Quantity): Self = this.set("doseQuantity", value.asInstanceOf[js.Any])
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def deleteDoseQuantity: Self = this.set("doseQuantity", js.undefined)
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncounter(value: Reference): Self = this.set("encounter", value.asInstanceOf[js.Any])
+    def setPractitioner(value: js.Array[ImmunizationPractitioner]): Self = StObject.set(x, "practitioner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncounter: Self = this.set("encounter", js.undefined)
+    def setPractitionerUndefined: Self = StObject.set(x, "practitioner", js.undefined)
     
     @scala.inline
-    def setExpirationDate(value: date): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setPractitionerVarargs(value: ImmunizationPractitioner*): Self = StObject.set(x, "practitioner", js.Array(value :_*))
     
     @scala.inline
-    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    def setPrimarySource(value: Boolean): Self = StObject.set(x, "primarySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplanation(value: ImmunizationExplanation): Self = this.set("explanation", value.asInstanceOf[js.Any])
+    def setReaction(value: js.Array[ImmunizationReaction]): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExplanation: Self = this.set("explanation", js.undefined)
+    def setReactionUndefined: Self = StObject.set(x, "reaction", js.undefined)
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setReactionVarargs(value: ImmunizationReaction*): Self = StObject.set(x, "reaction", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setReportOrigin(value: CodeableConcept): Self = StObject.set(x, "reportOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setReportOriginUndefined: Self = StObject.set(x, "reportOrigin", js.undefined)
     
     @scala.inline
-    def setLocation(value: Reference): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setRoute(value: CodeableConcept): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
     @scala.inline
-    def setLotNumber(value: String): Self = this.set("lotNumber", value.asInstanceOf[js.Any])
+    def setSite(value: CodeableConcept): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLotNumber: Self = this.set("lotNumber", js.undefined)
+    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     
     @scala.inline
-    def setManufacturer(value: Reference): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    def setVaccinationProtocol(value: js.Array[ImmunizationVaccinationProtocol]): Self = StObject.set(x, "vaccinationProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def setVaccinationProtocolUndefined: Self = StObject.set(x, "vaccinationProtocol", js.undefined)
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setVaccinationProtocolVarargs(value: ImmunizationVaccinationProtocol*): Self = StObject.set(x, "vaccinationProtocol", js.Array(value :_*))
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setVaccineCode(value: CodeableConcept): Self = StObject.set(x, "vaccineCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPractitionerVarargs(value: ImmunizationPractitioner*): Self = this.set("practitioner", js.Array(value :_*))
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPractitioner(value: js.Array[ImmunizationPractitioner]): Self = this.set("practitioner", value.asInstanceOf[js.Any])
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def deletePractitioner: Self = this.set("practitioner", js.undefined)
+    def set_expirationDate(value: Element): Self = StObject.set(x, "_expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReactionVarargs(value: ImmunizationReaction*): Self = this.set("reaction", js.Array(value :_*))
+    def set_expirationDateUndefined: Self = StObject.set(x, "_expirationDate", js.undefined)
     
     @scala.inline
-    def setReaction(value: js.Array[ImmunizationReaction]): Self = this.set("reaction", value.asInstanceOf[js.Any])
+    def set_lotNumber(value: Element): Self = StObject.set(x, "_lotNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReaction: Self = this.set("reaction", js.undefined)
+    def set_lotNumberUndefined: Self = StObject.set(x, "_lotNumber", js.undefined)
     
     @scala.inline
-    def setReportOrigin(value: CodeableConcept): Self = this.set("reportOrigin", value.asInstanceOf[js.Any])
+    def set_notGiven(value: Element): Self = StObject.set(x, "_notGiven", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReportOrigin: Self = this.set("reportOrigin", js.undefined)
+    def set_notGivenUndefined: Self = StObject.set(x, "_notGiven", js.undefined)
     
     @scala.inline
-    def setRoute(value: CodeableConcept): Self = this.set("route", value.asInstanceOf[js.Any])
+    def set_primarySource(value: Element): Self = StObject.set(x, "_primarySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoute: Self = this.set("route", js.undefined)
+    def set_primarySourceUndefined: Self = StObject.set(x, "_primarySource", js.undefined)
     
     @scala.inline
-    def setSite(value: CodeableConcept): Self = this.set("site", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSite: Self = this.set("site", js.undefined)
-    
-    @scala.inline
-    def setVaccinationProtocolVarargs(value: ImmunizationVaccinationProtocol*): Self = this.set("vaccinationProtocol", js.Array(value :_*))
-    
-    @scala.inline
-    def setVaccinationProtocol(value: js.Array[ImmunizationVaccinationProtocol]): Self = this.set("vaccinationProtocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVaccinationProtocol: Self = this.set("vaccinationProtocol", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

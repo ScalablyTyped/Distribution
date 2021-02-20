@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetServiceLastAccessedDetailsResponse extends js.Object {
+trait GetServiceLastAccessedDetailsResponse extends StObject {
   
   /**
     * An object that contains details about the reason the operation failed.
@@ -61,57 +62,45 @@ object GetServiceLastAccessedDetailsResponse {
   }
   
   @scala.inline
-  implicit class GetServiceLastAccessedDetailsResponseOps[Self <: GetServiceLastAccessedDetailsResponse] (val x: Self) extends AnyVal {
+  implicit class GetServiceLastAccessedDetailsResponseMutableBuilder[Self <: GetServiceLastAccessedDetailsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: ErrorDetails): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobCompletionDate(value: dateType): Self = this.set("JobCompletionDate", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def setJobCreationDate(value: dateType): Self = this.set("JobCreationDate", value.asInstanceOf[js.Any])
+    def setJobCompletionDate(value: dateType): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: jobStatusType): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    def setJobCreationDate(value: dateType): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicesLastAccessedVarargs(value: ServiceLastAccessed*): Self = this.set("ServicesLastAccessed", js.Array(value :_*))
+    def setJobStatus(value: jobStatusType): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicesLastAccessed(value: ServicesLastAccessed): Self = this.set("ServicesLastAccessed", value.asInstanceOf[js.Any])
+    def setJobType(value: AccessAdvisorUsageGranularityType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ErrorDetails): Self = this.set("Error", value.asInstanceOf[js.Any])
+    def setJobTypeUndefined: Self = StObject.set(x, "JobType", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
+    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    def setServicesLastAccessed(value: ServicesLastAccessed): Self = StObject.set(x, "ServicesLastAccessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobType(value: AccessAdvisorUsageGranularityType): Self = this.set("JobType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobType: Self = this.set("JobType", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setServicesLastAccessedVarargs(value: ServiceLastAccessed*): Self = StObject.set(x, "ServicesLastAccessed", js.Array(value :_*))
   }
 }

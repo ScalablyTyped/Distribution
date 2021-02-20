@@ -1,12 +1,13 @@
 package typings.jqueryTimeago
 
 import typings.jqueryTimeago.anon.Day
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeagoSetings extends js.Object {
+trait TimeagoSetings extends StObject {
   
   var allowFuture: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object TimeagoSetings {
   }
   
   @scala.inline
-  implicit class TimeagoSetingsOps[Self <: TimeagoSetings] (val x: Self) extends AnyVal {
+  implicit class TimeagoSetingsMutableBuilder[Self <: TimeagoSetings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFuture(value: Boolean): Self = StObject.set(x, "allowFuture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowFutureUndefined: Self = StObject.set(x, "allowFuture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefreshMillis(value: Double): Self = StObject.set(x, "refreshMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFuture(value: Boolean): Self = this.set("allowFuture", value.asInstanceOf[js.Any])
+    def setRefreshMillisUndefined: Self = StObject.set(x, "refreshMillis", js.undefined)
     
     @scala.inline
-    def deleteAllowFuture: Self = this.set("allowFuture", js.undefined)
+    def setStrings(value: Day): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshMillis(value: Double): Self = this.set("refreshMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshMillis: Self = this.set("refreshMillis", js.undefined)
-    
-    @scala.inline
-    def setStrings(value: Day): Self = this.set("strings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrings: Self = this.set("strings", js.undefined)
+    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
   }
 }

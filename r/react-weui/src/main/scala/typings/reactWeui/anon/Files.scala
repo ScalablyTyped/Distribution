@@ -1,11 +1,12 @@
 package typings.reactWeui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Files extends js.Object {
+trait Files extends StObject {
   
   var files: js.Array[_] = js.native
   
@@ -38,42 +39,30 @@ object Files {
   }
   
   @scala.inline
-  implicit class FilesOps[Self <: Files] (val x: Self) extends AnyVal {
+  implicit class FilesMutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiles(value: js.Array[_]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLang(value: MaxError): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesVarargs(value: js.Any*): Self = this.set("files", js.Array(value :_*))
+    def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[_]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: MaxError): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setOnChange(value: js.Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCount(value: Double): Self = this.set("maxCount", value.asInstanceOf[js.Any])
+    def setOnError(value: js.Any): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnChange(value: js.Any): Self = this.set("onChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnError(value: js.Any): Self = this.set("onError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

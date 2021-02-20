@@ -1,15 +1,13 @@
 package typings.ajv.mod
 
 import typings.ajv.ajvBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateFunction extends js.Object {
-  
-  @JSName("$async")
-  var $async: js.UndefOr[`true`] = js.native
+trait ValidateFunction extends StObject {
   
   def apply(
     data: js.Any,
@@ -18,6 +16,9 @@ trait ValidateFunction extends js.Object {
     parentDataProperty: js.UndefOr[String | Double],
     rootData: js.UndefOr[js.Object | js.Array[_]]
   ): Boolean | js.Thenable[_] = js.native
+  
+  @JSName("$async")
+  var $async: js.UndefOr[`true`] = js.native
   
   var errors: js.UndefOr[Null | js.Array[ErrorObject]] = js.native
   

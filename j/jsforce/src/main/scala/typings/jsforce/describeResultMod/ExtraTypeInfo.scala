@@ -1,5 +1,6 @@
 package typings.jsforce.describeResultMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsforce.jsforceStrings.externallookup
   - typings.jsforce.jsforceStrings.indirectlookup
 */
-trait ExtraTypeInfo extends js.Object
+trait ExtraTypeInfo extends StObject
 object ExtraTypeInfo {
   
   @scala.inline

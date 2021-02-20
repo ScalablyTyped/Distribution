@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteAccessPolicyRequest extends js.Object {
+trait DeleteAccessPolicyRequest extends StObject {
   
   /**
     * The ID of the access policy to be deleted.
@@ -26,27 +27,15 @@ object DeleteAccessPolicyRequest {
   }
   
   @scala.inline
-  implicit class DeleteAccessPolicyRequestOps[Self <: DeleteAccessPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteAccessPolicyRequestMutableBuilder[Self <: DeleteAccessPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessPolicyId(value: ID): Self = this.set("accessPolicyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

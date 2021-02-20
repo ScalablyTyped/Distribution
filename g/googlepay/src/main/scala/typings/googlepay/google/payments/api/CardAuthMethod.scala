@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlepay.googlepayStrings.PAN_ONLY
   - typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS
 */
-trait CardAuthMethod extends js.Object
+trait CardAuthMethod extends StObject
 object CardAuthMethod {
   
   @scala.inline

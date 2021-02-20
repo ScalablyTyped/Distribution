@@ -3,6 +3,7 @@ package typings.mqttPacket.mod
 import typings.mqttPacket.anon.CorrelationData
 import typings.mqttPacket.mqttPacketStrings.publish
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,42 +37,30 @@ object IPublishPacket {
   }
   
   @scala.inline
-  implicit class IPublishPacketOps[Self <: IPublishPacket] (val x: Self) extends AnyVal {
+  implicit class IPublishPacketMutableBuilder[Self <: IPublishPacket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmd(value: publish): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDup(value: Boolean): Self = StObject.set(x, "dup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayload(value: String | Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmd(value: publish): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    def setProperties(value: CorrelationData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDup(value: Boolean): Self = this.set("dup", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setPayload(value: String | Buffer): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setQos(value: QoS): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQos(value: QoS): Self = this.set("qos", value.asInstanceOf[js.Any])
+    def setRetain(value: Boolean): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetain(value: Boolean): Self = this.set("retain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: CorrelationData): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

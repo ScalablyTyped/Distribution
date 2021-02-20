@@ -11,21 +11,24 @@ import typings.reactSelect.typesMod.ClassNamesState
 import typings.reactSelect.typesMod.OptionTypeBase
 import typings.reactSelect.typesMod.OptionsType
 import typings.reactSelect.typesMod.ValueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-select/src/animated/MultiValue", JSImport.Namespace)
-@js.native
-object multiValueMod extends js.Object {
+object multiValueMod {
   
-  def AnimatedMultiValue[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = js.native
-  
+  @JSImport("react-select/src/animated/MultiValue", JSImport.Default)
+  @js.native
   def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = js.native
+  
+  @JSImport("react-select/src/animated/MultiValue", "AnimatedMultiValue")
+  @js.native
+  def AnimatedMultiValue[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = js.native
   
   /* Inlined {  in :boolean,   onExited :react-select.react-select/src/animated/transitions.fn} & react-select.react-select/src/components/MultiValue.MultiValueProps<OptionType> */
   @js.native
-  trait AnimatedMultiValueProps[OptionType /* <: OptionTypeBase */] extends js.Object {
+  trait AnimatedMultiValueProps[OptionType /* <: OptionTypeBase */] extends StObject {
     
     var children: ReactNode = js.native
     

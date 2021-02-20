@@ -1,6 +1,7 @@
 package typings.baidumapWebSdk.BMap
 
 import typings.baidumapWebSdk.anon.Target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,54 +55,42 @@ object GroundOverlay {
   }
   
   @scala.inline
-  implicit class GroundOverlayOps[Self <: GroundOverlay] (val x: Self) extends AnyVal {
+  implicit class GroundOverlayMutableBuilder[Self <: GroundOverlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDispalyOnMaxLevel(value: () => Double): Self = StObject.set(x, "getDispalyOnMaxLevel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDisplayOnMinLevel(value: () => Double): Self = StObject.set(x, "getDisplayOnMinLevel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBounds(value: () => Bounds): Self = this.set("getBounds", js.Any.fromFunction0(value))
+    def setGetImageURL(value: () => String): Self = StObject.set(x, "getImageURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDispalyOnMaxLevel(value: () => Double): Self = this.set("getDispalyOnMaxLevel", js.Any.fromFunction0(value))
+    def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayOnMinLevel(value: () => Double): Self = this.set("getDisplayOnMinLevel", js.Any.fromFunction0(value))
+    def setOnclick(value: Target => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetImageURL(value: () => String): Self = this.set("getImageURL", js.Any.fromFunction0(value))
+    def setOndblclick(value: Target => Unit): Self = StObject.set(x, "ondblclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOpacity(value: () => Double): Self = this.set("getOpacity", js.Any.fromFunction0(value))
+    def setSetBounds(value: Bounds => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnclick(value: Target => Unit): Self = this.set("onclick", js.Any.fromFunction1(value))
+    def setSetDispalyOnMaxLevel(value: Double => Unit): Self = StObject.set(x, "setDispalyOnMaxLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOndblclick(value: Target => Unit): Self = this.set("ondblclick", js.Any.fromFunction1(value))
+    def setSetDisplayOnMinLevel(value: Double => Unit): Self = StObject.set(x, "setDisplayOnMinLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBounds(value: Bounds => Unit): Self = this.set("setBounds", js.Any.fromFunction1(value))
+    def setSetImageURL(value: String => Unit): Self = StObject.set(x, "setImageURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDispalyOnMaxLevel(value: Double => Unit): Self = this.set("setDispalyOnMaxLevel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDisplayOnMinLevel(value: Double => Unit): Self = this.set("setDisplayOnMinLevel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetImageURL(value: String => Unit): Self = this.set("setImageURL", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOpacity(value: Double => Unit): Self = this.set("setOpacity", js.Any.fromFunction1(value))
+    def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
   }
 }

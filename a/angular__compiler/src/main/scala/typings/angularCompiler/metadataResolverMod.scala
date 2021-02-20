@@ -28,18 +28,16 @@ import typings.angularCompiler.srcUtilMod.SyncAsync
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import typings.angularCompiler.staticSymbolMod.StaticSymbolCache
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/metadata_resolver", JSImport.Namespace)
-@js.native
-object metadataResolverMod extends js.Object {
+object metadataResolverMod {
   
-  val ERROR_COMPONENT_TYPE: /* "ngComponentType" */ String = js.native
-  
+  @JSImport("@angular/compiler/src/metadata_resolver", "CompileMetadataResolver")
   @js.native
-  class CompileMetadataResolver protected () extends js.Object {
+  class CompileMetadataResolver protected () extends StObject {
     def this(
       _config: CompilerConfig,
       _htmlParser: HtmlParser,
@@ -230,6 +228,10 @@ object metadataResolverMod extends js.Object {
     def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: Boolean): js.Promise[_] = js.native
     def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: Boolean, throwIfNotFound: Boolean): js.Promise[_] = js.native
   }
+  
+  @JSImport("@angular/compiler/src/metadata_resolver", "ERROR_COMPONENT_TYPE")
+  @js.native
+  val ERROR_COMPONENT_TYPE: /* "ngComponentType" */ String = js.native
   
   type ErrorCollector = js.Function2[/* error */ js.Any, /* type */ js.UndefOr[js.Any], Unit]
 }

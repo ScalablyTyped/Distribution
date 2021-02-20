@@ -5,12 +5,13 @@ import typings.handsontable.mod.Handsontable.validators.Base
 import typings.handsontable.mod.Handsontable.validators.Date
 import typings.handsontable.mod.Handsontable.validators.Numeric
 import typings.handsontable.mod.Handsontable.validators.Time
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Validators_ extends js.Object {
+trait Validators_ extends StObject {
   
   def AutocompleteValidator(value: CellValue, callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
   @JSName("AutocompleteValidator")

@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/gradients/Ceil_grad", JSImport.Namespace)
-@js.native
-object ceilGradMod extends js.Object {
+object ceilGradMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/gradients/Ceil_grad", "ceilGradConfig")
+  @js.native
   val ceilGradConfig: GradConfig = js.native
 }

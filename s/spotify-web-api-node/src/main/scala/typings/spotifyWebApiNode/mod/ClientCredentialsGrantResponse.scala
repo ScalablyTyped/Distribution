@@ -1,5 +1,6 @@
 package typings.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://developer.spotify.com/documentation/general/guides/authorization-guide/#example-4
   */
 @js.native
-trait ClientCredentialsGrantResponse extends js.Object {
+trait ClientCredentialsGrantResponse extends StObject {
   
   var access_token: String = js.native
   
@@ -26,27 +27,15 @@ object ClientCredentialsGrantResponse {
   }
   
   @scala.inline
-  implicit class ClientCredentialsGrantResponseOps[Self <: ClientCredentialsGrantResponse] (val x: Self) extends AnyVal {
+  implicit class ClientCredentialsGrantResponseMutableBuilder[Self <: ClientCredentialsGrantResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpires_in(value: Double): Self = this.set("expires_in", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken_type(value: String): Self = this.set("token_type", value.asInstanceOf[js.Any])
+    def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
   }
 }

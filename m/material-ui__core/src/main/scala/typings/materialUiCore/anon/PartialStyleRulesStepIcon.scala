@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/StepIcon.StepIconClasskey>> */
 @js.native
-trait PartialStyleRulesStepIcon extends js.Object {
+trait PartialStyleRulesStepIcon extends StObject {
   
   var active: js.UndefOr[CSSProperties] = js.native
   
@@ -28,48 +29,36 @@ object PartialStyleRulesStepIcon {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesStepIconOps[Self <: PartialStyleRulesStepIcon] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesStepIconMutableBuilder[Self <: PartialStyleRulesStepIcon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: CSSProperties): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompleted(value: CSSProperties): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: CSSProperties): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setError(value: CSSProperties): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: CSSProperties): Self = this.set("completed", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteCompleted: Self = this.set("completed", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: CSSProperties): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setText(value: CSSProperties): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setText(value: CSSProperties): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

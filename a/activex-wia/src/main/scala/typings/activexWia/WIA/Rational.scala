@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * using "WIA.Rational" in a call to CreateObject.
   */
 @js.native
-trait Rational extends js.Object {
+trait Rational extends StObject {
   
   /** Returns/Sets the Rational Value Denominator */
   var Denominator: Double = js.native
@@ -33,30 +34,18 @@ object Rational {
   }
   
   @scala.inline
-  implicit class RationalOps[Self <: Rational] (val x: Self) extends AnyVal {
+  implicit class RationalMutableBuilder[Self <: Rational] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDenominator(value: Double): Self = StObject.set(x, "Denominator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumerator(value: Double): Self = StObject.set(x, "Numerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDenominator(value: Double): Self = this.set("Denominator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumerator(value: Double): Self = this.set("Numerator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIADotRational_typekey(value: Rational): Self = this.set("WIA.Rational_typekey", value.asInstanceOf[js.Any])
+    def setWIADotRational_typekey(value: Rational): Self = StObject.set(x, "WIA.Rational_typekey", value.asInstanceOf[js.Any])
   }
 }

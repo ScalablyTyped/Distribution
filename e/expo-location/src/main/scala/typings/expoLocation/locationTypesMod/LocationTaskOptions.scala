@@ -1,13 +1,14 @@
 package typings.expoLocation.locationTypesMod
 
 import typings.expoLocation.anon.NotificationBody
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined expo-location.expo-location/build/Location.types.LocationOptions & {  showsBackgroundLocationIndicator :boolean | undefined,   deferredUpdatesDistance :number | undefined,   deferredUpdatesTimeout :number | undefined,   deferredUpdatesInterval :number | undefined,   activityType :expo-location.expo-location/build/Location.types.LocationActivityType | undefined,   pausesUpdatesAutomatically :boolean | undefined,   foregroundService :{  notificationTitle :string,   notificationBody :string,   notificationColor :string | undefined} | undefined} */
 @js.native
-trait LocationTaskOptions extends js.Object {
+trait LocationTaskOptions extends StObject {
   
   /**
     * Location manager accuracy. Pass one of `LocationAccuracy` enum values.
@@ -57,84 +58,72 @@ object LocationTaskOptions {
   }
   
   @scala.inline
-  implicit class LocationTaskOptionsOps[Self <: LocationTaskOptions] (val x: Self) extends AnyVal {
+  implicit class LocationTaskOptionsMutableBuilder[Self <: LocationTaskOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: LocationAccuracy): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityType(value: LocationActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: LocationAccuracy): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
     
     @scala.inline
-    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    def setDeferredUpdatesDistance(value: Double): Self = StObject.set(x, "deferredUpdatesDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityType(value: LocationActivityType): Self = this.set("activityType", value.asInstanceOf[js.Any])
+    def setDeferredUpdatesDistanceUndefined: Self = StObject.set(x, "deferredUpdatesDistance", js.undefined)
     
     @scala.inline
-    def deleteActivityType: Self = this.set("activityType", js.undefined)
+    def setDeferredUpdatesInterval(value: Double): Self = StObject.set(x, "deferredUpdatesInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferredUpdatesDistance(value: Double): Self = this.set("deferredUpdatesDistance", value.asInstanceOf[js.Any])
+    def setDeferredUpdatesIntervalUndefined: Self = StObject.set(x, "deferredUpdatesInterval", js.undefined)
     
     @scala.inline
-    def deleteDeferredUpdatesDistance: Self = this.set("deferredUpdatesDistance", js.undefined)
+    def setDeferredUpdatesTimeout(value: Double): Self = StObject.set(x, "deferredUpdatesTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferredUpdatesInterval(value: Double): Self = this.set("deferredUpdatesInterval", value.asInstanceOf[js.Any])
+    def setDeferredUpdatesTimeoutUndefined: Self = StObject.set(x, "deferredUpdatesTimeout", js.undefined)
     
     @scala.inline
-    def deleteDeferredUpdatesInterval: Self = this.set("deferredUpdatesInterval", js.undefined)
+    def setDistanceInterval(value: Double): Self = StObject.set(x, "distanceInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferredUpdatesTimeout(value: Double): Self = this.set("deferredUpdatesTimeout", value.asInstanceOf[js.Any])
+    def setDistanceIntervalUndefined: Self = StObject.set(x, "distanceInterval", js.undefined)
     
     @scala.inline
-    def deleteDeferredUpdatesTimeout: Self = this.set("deferredUpdatesTimeout", js.undefined)
+    def setForegroundService(value: NotificationBody): Self = StObject.set(x, "foregroundService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceInterval(value: Double): Self = this.set("distanceInterval", value.asInstanceOf[js.Any])
+    def setForegroundServiceUndefined: Self = StObject.set(x, "foregroundService", js.undefined)
     
     @scala.inline
-    def deleteDistanceInterval: Self = this.set("distanceInterval", js.undefined)
+    def setMayShowUserSettingsDialog(value: Boolean): Self = StObject.set(x, "mayShowUserSettingsDialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForegroundService(value: NotificationBody): Self = this.set("foregroundService", value.asInstanceOf[js.Any])
+    def setMayShowUserSettingsDialogUndefined: Self = StObject.set(x, "mayShowUserSettingsDialog", js.undefined)
     
     @scala.inline
-    def deleteForegroundService: Self = this.set("foregroundService", js.undefined)
+    def setPausesUpdatesAutomatically(value: Boolean): Self = StObject.set(x, "pausesUpdatesAutomatically", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMayShowUserSettingsDialog(value: Boolean): Self = this.set("mayShowUserSettingsDialog", value.asInstanceOf[js.Any])
+    def setPausesUpdatesAutomaticallyUndefined: Self = StObject.set(x, "pausesUpdatesAutomatically", js.undefined)
     
     @scala.inline
-    def deleteMayShowUserSettingsDialog: Self = this.set("mayShowUserSettingsDialog", js.undefined)
+    def setShowsBackgroundLocationIndicator(value: Boolean): Self = StObject.set(x, "showsBackgroundLocationIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPausesUpdatesAutomatically(value: Boolean): Self = this.set("pausesUpdatesAutomatically", value.asInstanceOf[js.Any])
+    def setShowsBackgroundLocationIndicatorUndefined: Self = StObject.set(x, "showsBackgroundLocationIndicator", js.undefined)
     
     @scala.inline
-    def deletePausesUpdatesAutomatically: Self = this.set("pausesUpdatesAutomatically", js.undefined)
+    def setTimeInterval(value: Double): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowsBackgroundLocationIndicator(value: Boolean): Self = this.set("showsBackgroundLocationIndicator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowsBackgroundLocationIndicator: Self = this.set("showsBackgroundLocationIndicator", js.undefined)
-    
-    @scala.inline
-    def setTimeInterval(value: Double): Self = this.set("timeInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeInterval: Self = this.set("timeInterval", js.undefined)
+    def setTimeIntervalUndefined: Self = StObject.set(x, "timeInterval", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.sharepoint.global.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CUI.GalleryElementDimensions")
 @js.native
-object GalleryElementDimensions extends js.Object {
+object GalleryElementDimensions extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.CUI.GalleryElementDimensions with Double] = js.native

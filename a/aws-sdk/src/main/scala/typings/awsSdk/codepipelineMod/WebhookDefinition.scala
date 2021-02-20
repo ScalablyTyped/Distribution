@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebhookDefinition extends js.Object {
+trait WebhookDefinition extends StObject {
   
   /**
     * Supported options are GITHUB_HMAC, IP, and UNAUTHENTICATED.   For information about the authentication scheme implemented by GITHUB_HMAC, see Securing your webhooks on the GitHub Developer website.    IP rejects webhooks trigger requests unless they originate from an IP address in the IP range whitelisted in the authentication configuration.    UNAUTHENTICATED accepts all webhook trigger requests regardless of origin.  
@@ -53,39 +54,27 @@ object WebhookDefinition {
   }
   
   @scala.inline
-  implicit class WebhookDefinitionOps[Self <: WebhookDefinition] (val x: Self) extends AnyVal {
+  implicit class WebhookDefinitionMutableBuilder[Self <: WebhookDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthentication(value: WebhookAuthenticationType): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationConfiguration(value: WebhookAuthConfiguration): Self = StObject.set(x, "authenticationConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: WebhookFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthentication(value: WebhookAuthenticationType): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    def setFiltersVarargs(value: WebhookFilterRule*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setAuthenticationConfiguration(value: WebhookAuthConfiguration): Self = this.set("authenticationConfiguration", value.asInstanceOf[js.Any])
+    def setName(value: WebhookName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltersVarargs(value: WebhookFilterRule*): Self = this.set("filters", js.Array(value :_*))
+    def setTargetAction(value: ActionName): Self = StObject.set(x, "targetAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: WebhookFilters): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: WebhookName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetAction(value: ActionName): Self = this.set("targetAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetPipeline(value: PipelineName): Self = this.set("targetPipeline", value.asInstanceOf[js.Any])
+    def setTargetPipeline(value: PipelineName): Self = StObject.set(x, "targetPipeline", value.asInstanceOf[js.Any])
   }
 }

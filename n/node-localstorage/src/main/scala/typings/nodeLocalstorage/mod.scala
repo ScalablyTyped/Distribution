@@ -3,14 +3,14 @@ package typings.nodeLocalstorage
 import typings.node.eventsMod.EventEmitter
 import typings.nodeLocalstorage.nodeLocalstorageStrings.storage
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-localstorage", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("node-localstorage", "JSONStorage")
   @js.native
   class JSONStorage protected () extends LocalStorage {
     /**
@@ -29,6 +29,7 @@ object mod extends js.Object {
     def setItem(key: String, value: js.Any): Unit = js.native
   }
   
+  @JSImport("node-localstorage", "LocalStorage")
   @js.native
   class LocalStorage protected () extends EventEmitter {
     /**
@@ -83,6 +84,7 @@ object mod extends js.Object {
     def setItem(key: String, value: String): Unit = js.native
   }
   
+  @JSImport("node-localstorage", "QUOTA_EXCEEDED_ERR")
   @js.native
   class QUOTA_EXCEEDED_ERR protected () extends Error {
     /**
@@ -92,8 +94,9 @@ object mod extends js.Object {
     def this(message: String) = this()
   }
   
+  @JSImport("node-localstorage", "StorageEvent")
   @js.native
-  class StorageEvent protected () extends js.Object {
+  class StorageEvent protected () extends StObject {
     /**
       * Creates an object containing information regarding a `storage` event.
       * @param key Affected `key`.

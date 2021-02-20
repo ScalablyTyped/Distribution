@@ -4,13 +4,16 @@ import typings.fastGlob.anon.FnCall
 import typings.fastGlob.anon.Typeofstat
 import typings.node.streamMod.Readable
 import typings.nodelibFsWalk.settingsMod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fast-glob/out/readers/stream", JSImport.Namespace)
-@js.native
-object readersStreamMod extends js.Object {
+object readersStreamMod {
+  
+  @JSImport("fast-glob/out/readers/stream", JSImport.Default)
+  @js.native
+  class default () extends ReaderStream
   
   @js.native
   trait ReaderStream
@@ -28,7 +31,4 @@ object readersStreamMod extends js.Object {
     @JSName("_walkStream")
     var _walkStream_Original: FnCall = js.native
   }
-  
-  @js.native
-  class default () extends ReaderStream
 }

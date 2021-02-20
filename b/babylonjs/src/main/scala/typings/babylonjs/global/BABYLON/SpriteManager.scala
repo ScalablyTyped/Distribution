@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -200,9 +201,11 @@ class SpriteManager protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.SpriteManager")
-@js.native
-object SpriteManager extends js.Object {
+object SpriteManager {
+  
+  @JSGlobal("BABYLON.SpriteManager")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a sprite manager from a snippet saved by the sprite editor
@@ -211,7 +214,11 @@ object SpriteManager extends js.Object {
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a promise that will resolve to the new sprite manager
     */
+  @JSGlobal("BABYLON.SpriteManager.CreateFromSnippetAsync")
+  @js.native
   def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.BABYLON.Scene): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = js.native
+  @JSGlobal("BABYLON.SpriteManager.CreateFromSnippetAsync")
+  @js.native
   def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = js.native
   
   /**
@@ -221,6 +228,8 @@ object SpriteManager extends js.Object {
     * @param rootUrl The root url to use to load external dependencies like texture
     * @returns the new sprite manager
     */
+  @JSGlobal("BABYLON.SpriteManager.Parse")
+  @js.native
   def Parse(parsedManager: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.SpriteManager = js.native
   
   /**
@@ -231,9 +240,17 @@ object SpriteManager extends js.Object {
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a promise that will resolve to the new sprite manager
     */
+  @JSGlobal("BABYLON.SpriteManager.ParseFromFileAsync")
+  @js.native
   def ParseFromFileAsync(name: Nullable[String], url: String, scene: typings.babylonjs.BABYLON.Scene): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = js.native
+  @JSGlobal("BABYLON.SpriteManager.ParseFromFileAsync")
+  @js.native
   def ParseFromFileAsync(name: Nullable[String], url: String, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = js.native
   
   /** Define the Url to load snippets */
-  var SnippetUrl: String = js.native
+  @JSGlobal("BABYLON.SpriteManager.SnippetUrl")
+  @js.native
+  def SnippetUrl: String = js.native
+  @scala.inline
+  def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
 }

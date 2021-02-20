@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -164,57 +165,45 @@ object XPopupMenu {
   }
   
   @scala.inline
-  implicit class XPopupMenuOps[Self <: XPopupMenu] (val x: Self) extends AnyVal {
+  implicit class XPopupMenuMutableBuilder[Self <: XPopupMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckItem(value: (Double, Boolean) => Unit): Self = StObject.set(x, "checkItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultItem(value: Double): Self = StObject.set(x, "DefaultItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndExecute(value: () => Unit): Self = StObject.set(x, "endExecute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultItem(value: Double): Self = this.set("DefaultItem", value.asInstanceOf[js.Any])
+    def setExecute(value: (XWindowPeer, Rectangle, Double) => Double): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCheckItem(value: (Double, Boolean) => Unit): Self = this.set("checkItem", js.Any.fromFunction2(value))
+    def setGetAcceleratorKeyEvent(value: Double => KeyEvent): Self = StObject.set(x, "getAcceleratorKeyEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndExecute(value: () => Unit): Self = this.set("endExecute", js.Any.fromFunction0(value))
+    def setGetDefaultItem(value: () => Double): Self = StObject.set(x, "getDefaultItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExecute(value: (XWindowPeer, Rectangle, Double) => Double): Self = this.set("execute", js.Any.fromFunction3(value))
+    def setGetItemImage(value: Double => XGraphic): Self = StObject.set(x, "getItemImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAcceleratorKeyEvent(value: Double => KeyEvent): Self = this.set("getAcceleratorKeyEvent", js.Any.fromFunction1(value))
+    def setInsertSeparator(value: Double => Unit): Self = StObject.set(x, "insertSeparator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDefaultItem(value: () => Double): Self = this.set("getDefaultItem", js.Any.fromFunction0(value))
+    def setIsInExecute(value: () => Boolean): Self = StObject.set(x, "isInExecute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemImage(value: Double => XGraphic): Self = this.set("getItemImage", js.Any.fromFunction1(value))
+    def setIsItemChecked(value: Double => Boolean): Self = StObject.set(x, "isItemChecked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertSeparator(value: Double => Unit): Self = this.set("insertSeparator", js.Any.fromFunction1(value))
+    def setSetAcceleratorKeyEvent(value: (Double, KeyEvent) => Unit): Self = StObject.set(x, "setAcceleratorKeyEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsInExecute(value: () => Boolean): Self = this.set("isInExecute", js.Any.fromFunction0(value))
+    def setSetDefaultItem(value: Double => Unit): Self = StObject.set(x, "setDefaultItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsItemChecked(value: Double => Boolean): Self = this.set("isItemChecked", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetAcceleratorKeyEvent(value: (Double, KeyEvent) => Unit): Self = this.set("setAcceleratorKeyEvent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetDefaultItem(value: Double => Unit): Self = this.set("setDefaultItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetItemImage(value: (Double, XGraphic, Boolean) => Unit): Self = this.set("setItemImage", js.Any.fromFunction3(value))
+    def setSetItemImage(value: (Double, XGraphic, Boolean) => Unit): Self = StObject.set(x, "setItemImage", js.Any.fromFunction3(value))
   }
 }

@@ -2,16 +2,16 @@ package typings.devexpressUtils
 
 import typings.devexpressUtils.constMod.ConstInterval
 import typings.devexpressUtils.intervalsMod.SparseIntervals
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/intervals/sparse/iterator", JSImport.Namespace)
-@js.native
-object iteratorMod extends js.Object {
+object iteratorMod {
   
+  @JSImport("@devexpress/utils/lib/intervals/sparse/iterator", "SparseIntervalsIterator")
   @js.native
-  class SparseIntervalsIterator[T /* <: ConstInterval */] protected () extends js.Object {
+  class SparseIntervalsIterator[T /* <: ConstInterval */] protected () extends StObject {
     def this(sparseIntervals: SparseIntervals[T]) = this()
     
     var curr: js.Any = js.native

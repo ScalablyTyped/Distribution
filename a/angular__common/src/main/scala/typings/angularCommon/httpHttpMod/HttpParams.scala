@@ -1,12 +1,13 @@
 package typings.angularCommon.httpHttpMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpParams")
 @js.native
-class HttpParams () extends js.Object {
+class HttpParams () extends StObject {
   def this(options: HttpParamsOptions) = this()
   
   /**

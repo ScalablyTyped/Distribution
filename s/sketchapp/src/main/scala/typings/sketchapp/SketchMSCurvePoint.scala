@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.curvePoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSCurvePoint extends js.Object {
+trait SketchMSCurvePoint extends StObject {
   
   var _class: curvePoint = js.native
   
@@ -42,42 +43,30 @@ object SketchMSCurvePoint {
   }
   
   @scala.inline
-  implicit class SketchMSCurvePointOps[Self <: SketchMSCurvePoint] (val x: Self) extends AnyVal {
+  implicit class SketchMSCurvePointMutableBuilder[Self <: SketchMSCurvePoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurveFrom(value: SketchMSPointString): Self = StObject.set(x, "curveFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurveMode(value: SketchMSCurveMode): Self = StObject.set(x, "curveMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: curvePoint): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setCurveTo(value: SketchMSPointString): Self = StObject.set(x, "curveTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCornerRadius(value: Double): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    def setHasCurveFrom(value: Boolean): Self = StObject.set(x, "hasCurveFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveFrom(value: SketchMSPointString): Self = this.set("curveFrom", value.asInstanceOf[js.Any])
+    def setHasCurveTo(value: Boolean): Self = StObject.set(x, "hasCurveTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveMode(value: SketchMSCurveMode): Self = this.set("curveMode", value.asInstanceOf[js.Any])
+    def setPoint(value: SketchMSPointString): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveTo(value: SketchMSPointString): Self = this.set("curveTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasCurveFrom(value: Boolean): Self = this.set("hasCurveFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasCurveTo(value: Boolean): Self = this.set("hasCurveTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoint(value: SketchMSPointString): Self = this.set("point", value.asInstanceOf[js.Any])
+    def set_class(value: curvePoint): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

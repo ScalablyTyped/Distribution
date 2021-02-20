@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchRunReportsResponse extends js.Object {
+trait BatchRunReportsResponse extends StObject {
   
   /** Individual responses. Each response has a separate report request. */
   var reports: js.UndefOr[js.Array[RunReportResponse]] = js.native
@@ -19,27 +20,15 @@ object BatchRunReportsResponse {
   }
   
   @scala.inline
-  implicit class BatchRunReportsResponseOps[Self <: BatchRunReportsResponse] (val x: Self) extends AnyVal {
+  implicit class BatchRunReportsResponseMutableBuilder[Self <: BatchRunReportsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReports(value: js.Array[RunReportResponse]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReportsVarargs(value: RunReportResponse*): Self = this.set("reports", js.Array(value :_*))
-    
-    @scala.inline
-    def setReports(value: js.Array[RunReportResponse]): Self = this.set("reports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReports: Self = this.set("reports", js.undefined)
+    def setReportsVarargs(value: RunReportResponse*): Self = StObject.set(x, "reports", js.Array(value :_*))
   }
 }

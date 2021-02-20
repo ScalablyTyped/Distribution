@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents the kind of DeviceInformation object. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceInformationKind")
 @js.native
-object DeviceInformationKind extends js.Object {
+object DeviceInformationKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationKind with Double] = js.native

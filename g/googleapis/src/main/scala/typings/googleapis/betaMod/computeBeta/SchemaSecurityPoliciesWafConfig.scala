@@ -1,11 +1,12 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSecurityPoliciesWafConfig extends js.Object {
+trait SchemaSecurityPoliciesWafConfig extends StObject {
   
   var wafRules: js.UndefOr[SchemaPreconfiguredWafSet] = js.native
 }
@@ -18,24 +19,12 @@ object SchemaSecurityPoliciesWafConfig {
   }
   
   @scala.inline
-  implicit class SchemaSecurityPoliciesWafConfigOps[Self <: SchemaSecurityPoliciesWafConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSecurityPoliciesWafConfigMutableBuilder[Self <: SchemaSecurityPoliciesWafConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWafRules(value: SchemaPreconfiguredWafSet): Self = StObject.set(x, "wafRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWafRules(value: SchemaPreconfiguredWafSet): Self = this.set("wafRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWafRules: Self = this.set("wafRules", js.undefined)
+    def setWafRulesUndefined: Self = StObject.set(x, "wafRules", js.undefined)
   }
 }

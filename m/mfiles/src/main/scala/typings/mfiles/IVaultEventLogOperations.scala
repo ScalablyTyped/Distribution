@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultEventLogOperations extends js.Object {
+trait IVaultEventLogOperations extends StObject {
   
   def Clear(): Unit = js.native
   
@@ -44,45 +45,33 @@ object IVaultEventLogOperations {
   }
   
   @scala.inline
-  implicit class IVaultEventLogOperationsOps[Self <: IVaultEventLogOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultEventLogOperationsMutableBuilder[Self <: IVaultEventLogOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearRange(value: (Double, Double) => Unit): Self = StObject.set(x, "ClearRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearRange_32bit(value: (String, String) => Unit): Self = StObject.set(x, "ClearRange_32bit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("Clear", js.Any.fromFunction0(value))
+    def setExportAll(value: () => String): Self = StObject.set(x, "ExportAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearRange(value: (Double, Double) => Unit): Self = this.set("ClearRange", js.Any.fromFunction2(value))
+    def setExportRange(value: (Double, Double, Boolean) => String): Self = StObject.set(x, "ExportRange", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setClearRange_32bit(value: (String, String) => Unit): Self = this.set("ClearRange_32bit", js.Any.fromFunction2(value))
+    def setExportRange_32bit(value: (String, String, Boolean) => String): Self = StObject.set(x, "ExportRange_32bit", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setExportAll(value: () => String): Self = this.set("ExportAll", js.Any.fromFunction0(value))
+    def setGetIDRange(value: () => IIDRange): Self = StObject.set(x, "GetIDRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportRange(value: (Double, Double, Boolean) => String): Self = this.set("ExportRange", js.Any.fromFunction3(value))
+    def setIsLoggingEnabled(value: () => Boolean): Self = StObject.set(x, "IsLoggingEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportRange_32bit(value: (String, String, Boolean) => String): Self = this.set("ExportRange_32bit", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetIDRange(value: () => IIDRange): Self = this.set("GetIDRange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsLoggingEnabled(value: () => Boolean): Self = this.set("IsLoggingEnabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetLoggingEnabled(value: Boolean => Unit): Self = this.set("SetLoggingEnabled", js.Any.fromFunction1(value))
+    def setSetLoggingEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetLoggingEnabled", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchModifyClusterSnapshotsOutputMessage extends js.Object {
+trait BatchModifyClusterSnapshotsOutputMessage extends StObject {
   
   /**
     * A list of any errors returned.
@@ -26,36 +27,24 @@ object BatchModifyClusterSnapshotsOutputMessage {
   }
   
   @scala.inline
-  implicit class BatchModifyClusterSnapshotsOutputMessageOps[Self <: BatchModifyClusterSnapshotsOutputMessage] (val x: Self) extends AnyVal {
+  implicit class BatchModifyClusterSnapshotsOutputMessageMutableBuilder[Self <: BatchModifyClusterSnapshotsOutputMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: BatchSnapshotOperationErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsVarargs(value: SnapshotErrorMessage*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: SnapshotErrorMessage*): Self = this.set("Errors", js.Array(value :_*))
+    def setResources(value: SnapshotIdentifierList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: BatchSnapshotOperationErrors): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("Errors", js.undefined)
-    
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = this.set("Resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setResources(value: SnapshotIdentifierList): Self = this.set("Resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value :_*))
   }
 }

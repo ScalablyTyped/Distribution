@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteRepositoryResult extends js.Object {
+trait DeleteRepositoryResult extends StObject {
   
   /**
     *  Information about the deleted repository after processing the request. 
@@ -21,24 +22,12 @@ object DeleteRepositoryResult {
   }
   
   @scala.inline
-  implicit class DeleteRepositoryResultOps[Self <: DeleteRepositoryResult] (val x: Self) extends AnyVal {
+  implicit class DeleteRepositoryResultMutableBuilder[Self <: DeleteRepositoryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepository(value: RepositoryDescription): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRepository(value: RepositoryDescription): Self = this.set("repository", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepository: Self = this.set("repository", js.undefined)
+    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrt.global.Windows.Networking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,9 @@ class HostName protected ()
   def this(hostName: String) = this()
 }
 /* static members */
-@JSGlobal("Windows.Networking.HostName")
-@js.native
-object HostName extends js.Object {
+object HostName {
   
+  @JSGlobal("Windows.Networking.HostName.compare")
+  @js.native
   def compare(value1: String, value2: String): Double = js.native
 }

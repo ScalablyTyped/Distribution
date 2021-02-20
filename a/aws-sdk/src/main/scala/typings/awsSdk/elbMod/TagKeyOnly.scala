@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagKeyOnly extends js.Object {
+trait TagKeyOnly extends StObject {
   
   /**
     * The name of the key.
@@ -21,24 +22,12 @@ object TagKeyOnly {
   }
   
   @scala.inline
-  implicit class TagKeyOnlyOps[Self <: TagKeyOnly] (val x: Self) extends AnyVal {
+  implicit class TagKeyOnlyMutableBuilder[Self <: TagKeyOnly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: TagKey): Self = this.set("Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
   }
 }

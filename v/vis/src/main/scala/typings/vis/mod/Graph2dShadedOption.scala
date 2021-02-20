@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Graph2dShadedOption extends js.Object {
+trait Graph2dShadedOption extends StObject {
   
   var groupid: js.UndefOr[IdType] = js.native
   
@@ -20,30 +21,18 @@ object Graph2dShadedOption {
   }
   
   @scala.inline
-  implicit class Graph2dShadedOptionOps[Self <: Graph2dShadedOption] (val x: Self) extends AnyVal {
+  implicit class Graph2dShadedOptionMutableBuilder[Self <: Graph2dShadedOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupid(value: IdType): Self = StObject.set(x, "groupid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupidUndefined: Self = StObject.set(x, "groupid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrientation(value: TopBottomEnumType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupid(value: IdType): Self = this.set("groupid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupid: Self = this.set("groupid", js.undefined)
-    
-    @scala.inline
-    def setOrientation(value: TopBottomEnumType): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

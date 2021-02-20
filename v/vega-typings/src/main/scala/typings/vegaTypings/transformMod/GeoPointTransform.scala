@@ -3,6 +3,7 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.geopoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,33 +29,21 @@ object GeoPointTransform {
   }
   
   @scala.inline
-  implicit class GeoPointTransformOps[Self <: GeoPointTransform] (val x: Self) extends AnyVal {
+  implicit class GeoPointTransformMutableBuilder[Self <: GeoPointTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: Vector2[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: Vector2[FieldRef] | SignalRef): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setProjection(value: ProjectionName): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: ProjectionName): Self = this.set("projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: geopoint): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setType(value: geopoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

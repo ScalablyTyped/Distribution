@@ -2,6 +2,7 @@ package typings.senchaTouch.Ext.draw
 
 import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -332,268 +333,256 @@ object IMatrix {
   }
   
   @scala.inline
-  implicit class IMatrixOps[Self <: IMatrix] (val x: Self) extends AnyVal {
+  implicit class IMatrixMutableBuilder[Self <: IMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setA(value: Double): Self = this.set("a", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteA: Self = this.set("a", js.undefined)
+    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
     @scala.inline
     def setAppend(
       value: (/* xx */ js.UndefOr[Double], /* xy */ js.UndefOr[Double], /* yx */ js.UndefOr[Double], /* yy */ js.UndefOr[Double], /* dx */ js.UndefOr[Double], /* dy */ js.UndefOr[Double]) => IMatrix
-    ): Self = this.set("append", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "append", js.Any.fromFunction6(value))
     
     @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
+    def setAppendMatrix(value: /* matrix */ js.UndefOr[IMatrix] => IMatrix): Self = StObject.set(x, "appendMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendMatrix(value: /* matrix */ js.UndefOr[IMatrix] => IMatrix): Self = this.set("appendMatrix", js.Any.fromFunction1(value))
+    def setAppendMatrixUndefined: Self = StObject.set(x, "appendMatrix", js.undefined)
     
     @scala.inline
-    def deleteAppendMatrix: Self = this.set("appendMatrix", js.undefined)
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def setClone(value: () => IMatrix): Self = this.set("clone", js.Any.fromFunction0(value))
+    def setClone_(value: () => IMatrix): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteClone: Self = this.set("clone", js.undefined)
+    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     @scala.inline
-    def setEquals(value: /* matrix */ js.UndefOr[IMatrix] => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setEquals_(value: /* matrix */ js.UndefOr[IMatrix] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def setFlipX(value: () => IMatrix): Self = this.set("flipX", js.Any.fromFunction0(value))
+    def setFlipX(value: () => IMatrix): Self = StObject.set(x, "flipX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFlipX: Self = this.set("flipX", js.undefined)
+    def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
     
     @scala.inline
-    def setFlipY(value: () => IMatrix): Self = this.set("flipY", js.Any.fromFunction0(value))
+    def setFlipY(value: () => IMatrix): Self = StObject.set(x, "flipY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFlipY: Self = this.set("flipY", js.undefined)
+    def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
     
     @scala.inline
-    def setGetDX(value: () => Double): Self = this.set("getDX", js.Any.fromFunction0(value))
+    def setGetDX(value: () => Double): Self = StObject.set(x, "getDX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetDX: Self = this.set("getDX", js.undefined)
+    def setGetDXUndefined: Self = StObject.set(x, "getDX", js.undefined)
     
     @scala.inline
-    def setGetDY(value: () => Double): Self = this.set("getDY", js.Any.fromFunction0(value))
+    def setGetDY(value: () => Double): Self = StObject.set(x, "getDY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetDY: Self = this.set("getDY", js.undefined)
+    def setGetDYUndefined: Self = StObject.set(x, "getDY", js.undefined)
     
     @scala.inline
-    def setGetScaleX(value: () => Double): Self = this.set("getScaleX", js.Any.fromFunction0(value))
+    def setGetScaleX(value: () => Double): Self = StObject.set(x, "getScaleX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetScaleX: Self = this.set("getScaleX", js.undefined)
+    def setGetScaleXUndefined: Self = StObject.set(x, "getScaleX", js.undefined)
     
     @scala.inline
-    def setGetScaleY(value: () => Double): Self = this.set("getScaleY", js.Any.fromFunction0(value))
+    def setGetScaleY(value: () => Double): Self = StObject.set(x, "getScaleY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetScaleY: Self = this.set("getScaleY", js.undefined)
+    def setGetScaleYUndefined: Self = StObject.set(x, "getScaleY", js.undefined)
     
     @scala.inline
-    def setGetXX(value: () => Double): Self = this.set("getXX", js.Any.fromFunction0(value))
+    def setGetXX(value: () => Double): Self = StObject.set(x, "getXX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetXX: Self = this.set("getXX", js.undefined)
+    def setGetXXUndefined: Self = StObject.set(x, "getXX", js.undefined)
     
     @scala.inline
-    def setGetXY(value: () => Double): Self = this.set("getXY", js.Any.fromFunction0(value))
+    def setGetXY(value: () => Double): Self = StObject.set(x, "getXY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetXY: Self = this.set("getXY", js.undefined)
+    def setGetXYUndefined: Self = StObject.set(x, "getXY", js.undefined)
     
     @scala.inline
-    def setGetYX(value: () => Double): Self = this.set("getYX", js.Any.fromFunction0(value))
+    def setGetYX(value: () => Double): Self = StObject.set(x, "getYX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetYX: Self = this.set("getYX", js.undefined)
+    def setGetYXUndefined: Self = StObject.set(x, "getYX", js.undefined)
     
     @scala.inline
-    def setGetYY(value: () => Double): Self = this.set("getYY", js.Any.fromFunction0(value))
+    def setGetYY(value: () => Double): Self = StObject.set(x, "getYY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetYY: Self = this.set("getYY", js.undefined)
+    def setGetYYUndefined: Self = StObject.set(x, "getYY", js.undefined)
     
     @scala.inline
-    def setInverse(value: /* target */ js.UndefOr[IMatrix] => IMatrix): Self = this.set("inverse", js.Any.fromFunction1(value))
+    def setInverse(value: /* target */ js.UndefOr[IMatrix] => IMatrix): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInverse: Self = this.set("inverse", js.undefined)
+    def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
     
     @scala.inline
-    def setIsIdentity(value: () => Boolean): Self = this.set("isIdentity", js.Any.fromFunction0(value))
+    def setIsIdentity(value: () => Boolean): Self = StObject.set(x, "isIdentity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsIdentity: Self = this.set("isIdentity", js.undefined)
+    def setIsIdentityUndefined: Self = StObject.set(x, "isIdentity", js.undefined)
     
     @scala.inline
-    def setMultiply(value: /* matrix */ js.UndefOr[IMatrix] => IMatrix): Self = this.set("multiply", js.Any.fromFunction1(value))
+    def setMultiply(value: /* matrix */ js.UndefOr[IMatrix] => IMatrix): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMultiply: Self = this.set("multiply", js.undefined)
+    def setMultiplyUndefined: Self = StObject.set(x, "multiply", js.undefined)
     
     @scala.inline
     def setPrepend(
       value: (/* xx */ js.UndefOr[Double], /* xy */ js.UndefOr[Double], /* yx */ js.UndefOr[Double], /* yy */ js.UndefOr[Double], /* dx */ js.UndefOr[Double], /* dy */ js.UndefOr[Double]) => IMatrix
-    ): Self = this.set("prepend", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "prepend", js.Any.fromFunction6(value))
     
     @scala.inline
-    def deletePrepend: Self = this.set("prepend", js.undefined)
+    def setPrependMatrix(value: /* matrix */ js.UndefOr[IMatrix] => IMatrix): Self = StObject.set(x, "prependMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrependMatrix(value: /* matrix */ js.UndefOr[IMatrix] => IMatrix): Self = this.set("prependMatrix", js.Any.fromFunction1(value))
+    def setPrependMatrixUndefined: Self = StObject.set(x, "prependMatrix", js.undefined)
     
     @scala.inline
-    def deletePrependMatrix: Self = this.set("prependMatrix", js.undefined)
+    def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
     
     @scala.inline
-    def setReset(value: () => IMatrix): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setReset(value: () => IMatrix): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
     def setRotate(
       value: (/* angle */ js.UndefOr[Double], /* rcx */ js.UndefOr[js.Any], /* rcy */ js.UndefOr[js.Any], /* prepend */ js.UndefOr[Boolean]) => IMatrix
-    ): Self = this.set("rotate", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    ): Self = StObject.set(x, "rotate", js.Any.fromFunction4(value))
     
     @scala.inline
     def setRotateFromVector(
       value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* prepend */ js.UndefOr[Boolean]) => IMatrix
-    ): Self = this.set("rotateFromVector", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "rotateFromVector", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRotateFromVector: Self = this.set("rotateFromVector", js.undefined)
+    def setRotateFromVectorUndefined: Self = StObject.set(x, "rotateFromVector", js.undefined)
+    
+    @scala.inline
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
     def setScale(
       value: (/* sx */ js.UndefOr[Double], /* sy */ js.UndefOr[Double], /* scx */ js.UndefOr[Double], /* scy */ js.UndefOr[Double], /* prepend */ js.UndefOr[Boolean]) => IMatrix
-    ): Self = this.set("scale", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "scale", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
     def setSet(
       value: (/* xx */ js.UndefOr[Double], /* xy */ js.UndefOr[Double], /* yx */ js.UndefOr[Double], /* yy */ js.UndefOr[Double], /* dx */ js.UndefOr[Double], /* dy */ js.UndefOr[Double]) => IMatrix
-    ): Self = this.set("set", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "set", js.Any.fromFunction6(value))
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def setSkewX(value: /* angle */ js.UndefOr[Double] => IMatrix): Self = this.set("skewX", js.Any.fromFunction1(value))
+    def setSkewX(value: /* angle */ js.UndefOr[Double] => IMatrix): Self = StObject.set(x, "skewX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSkewX: Self = this.set("skewX", js.undefined)
+    def setSkewXUndefined: Self = StObject.set(x, "skewX", js.undefined)
     
     @scala.inline
-    def setSkewY(value: /* angle */ js.UndefOr[Double] => IMatrix): Self = this.set("skewY", js.Any.fromFunction1(value))
+    def setSkewY(value: /* angle */ js.UndefOr[Double] => IMatrix): Self = StObject.set(x, "skewY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSkewY: Self = this.set("skewY", js.undefined)
+    def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
     
     @scala.inline
-    def setSplit(value: () => _): Self = this.set("split", js.Any.fromFunction0(value))
+    def setSplit(value: () => _): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteSplit: Self = this.set("split", js.undefined)
+    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     
     @scala.inline
-    def setToArray(value: () => Array): Self = this.set("toArray", js.Any.fromFunction0(value))
+    def setToArray(value: () => Array): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteToArray: Self = this.set("toArray", js.undefined)
+    def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
     
     @scala.inline
-    def setToContext(value: /* ctx */ js.UndefOr[js.Any] => IMatrix): Self = this.set("toContext", js.Any.fromFunction1(value))
+    def setToContext(value: /* ctx */ js.UndefOr[js.Any] => IMatrix): Self = StObject.set(x, "toContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteToContext: Self = this.set("toContext", js.undefined)
+    def setToContextUndefined: Self = StObject.set(x, "toContext", js.undefined)
     
     @scala.inline
-    def setToString(value: () => Array): Self = this.set("toString", js.Any.fromFunction0(value))
+    def setToString_(value: () => Array): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteToString: Self = this.set("toString", js.undefined)
+    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     
     @scala.inline
-    def setToSvg(value: () => String): Self = this.set("toSvg", js.Any.fromFunction0(value))
+    def setToSvg(value: () => String): Self = StObject.set(x, "toSvg", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteToSvg: Self = this.set("toSvg", js.undefined)
+    def setToSvgUndefined: Self = StObject.set(x, "toSvg", js.undefined)
     
     @scala.inline
-    def setToVerticalArray(value: () => _): Self = this.set("toVerticalArray", js.Any.fromFunction0(value))
+    def setToVerticalArray(value: () => _): Self = StObject.set(x, "toVerticalArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteToVerticalArray: Self = this.set("toVerticalArray", js.undefined)
+    def setToVerticalArrayUndefined: Self = StObject.set(x, "toVerticalArray", js.undefined)
     
     @scala.inline
     def setTransformBBox(
       value: (/* bbox */ js.UndefOr[js.Any], /* radius */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => _
-    ): Self = this.set("transformBBox", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "transformBBox", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteTransformBBox: Self = this.set("transformBBox", js.undefined)
+    def setTransformBBoxUndefined: Self = StObject.set(x, "transformBBox", js.undefined)
     
     @scala.inline
-    def setTransformList(value: /* list */ js.UndefOr[Array] => Array): Self = this.set("transformList", js.Any.fromFunction1(value))
+    def setTransformList(value: /* list */ js.UndefOr[Array] => Array): Self = StObject.set(x, "transformList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransformList: Self = this.set("transformList", js.undefined)
+    def setTransformListUndefined: Self = StObject.set(x, "transformList", js.undefined)
     
     @scala.inline
-    def setTransformPoint(value: /* point */ js.UndefOr[Array] => Array): Self = this.set("transformPoint", js.Any.fromFunction1(value))
+    def setTransformPoint(value: /* point */ js.UndefOr[Array] => Array): Self = StObject.set(x, "transformPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransformPoint: Self = this.set("transformPoint", js.undefined)
+    def setTransformPointUndefined: Self = StObject.set(x, "transformPoint", js.undefined)
     
     @scala.inline
     def setTranslate(
       value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* prepend */ js.UndefOr[Boolean]) => IMatrix
-    ): Self = this.set("translate", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "translate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
     @scala.inline
-    def setX(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Double): Self = this.set("x", js.Any.fromFunction2(value))
+    def setX(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "x", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def setY(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Double): Self = this.set("y", js.Any.fromFunction2(value))
+    def setY(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "y", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

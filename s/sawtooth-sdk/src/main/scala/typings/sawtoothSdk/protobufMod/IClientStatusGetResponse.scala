@@ -2,12 +2,13 @@ package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.IPeer
 import typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientStatusGetResponse extends js.Object {
+trait IClientStatusGetResponse extends StObject {
   
   /** ClientStatusGetResponse endpoint */
   var endpoint: js.UndefOr[String | Null] = js.native
@@ -27,48 +28,36 @@ object IClientStatusGetResponse {
   }
   
   @scala.inline
-  implicit class IClientStatusGetResponseOps[Self <: IClientStatusGetResponse] (val x: Self) extends AnyVal {
+  implicit class IClientStatusGetResponseMutableBuilder[Self <: IClientStatusGetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointNull: Self = StObject.set(x, "endpoint", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setPeers(value: js.Array[IPeer]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setPeersNull: Self = StObject.set(x, "peers", null)
     
     @scala.inline
-    def setEndpointNull: Self = this.set("endpoint", null)
+    def setPeersUndefined: Self = StObject.set(x, "peers", js.undefined)
     
     @scala.inline
-    def setPeersVarargs(value: IPeer*): Self = this.set("peers", js.Array(value :_*))
+    def setPeersVarargs(value: IPeer*): Self = StObject.set(x, "peers", js.Array(value :_*))
     
     @scala.inline
-    def setPeers(value: js.Array[IPeer]): Self = this.set("peers", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePeers: Self = this.set("peers", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setPeersNull: Self = this.set("peers", null)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

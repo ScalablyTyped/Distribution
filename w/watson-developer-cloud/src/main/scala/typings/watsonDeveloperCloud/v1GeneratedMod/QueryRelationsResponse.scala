@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryRelationsResponse. */
 @js.native
-trait QueryRelationsResponse extends js.Object {
+trait QueryRelationsResponse extends StObject {
   
   /** Array of relationships for the relations query. */
   var relations: js.UndefOr[js.Array[QueryRelationsRelationship]] = js.native
@@ -20,27 +21,15 @@ object QueryRelationsResponse {
   }
   
   @scala.inline
-  implicit class QueryRelationsResponseOps[Self <: QueryRelationsResponse] (val x: Self) extends AnyVal {
+  implicit class QueryRelationsResponseMutableBuilder[Self <: QueryRelationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelations(value: js.Array[QueryRelationsRelationship]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelationsVarargs(value: QueryRelationsRelationship*): Self = this.set("relations", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelations(value: js.Array[QueryRelationsRelationship]): Self = this.set("relations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelations: Self = this.set("relations", js.undefined)
+    def setRelationsVarargs(value: QueryRelationsRelationship*): Self = StObject.set(x, "relations", js.Array(value :_*))
   }
 }

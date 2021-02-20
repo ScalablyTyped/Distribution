@@ -1,5 +1,6 @@
 package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A call stack appearing in a trace.
   */
 @js.native
-trait SchemaStackTrace extends js.Object {
+trait SchemaStackTrace extends StObject {
   
   /**
     * Stack frames in this stack trace. A maximum of 128 frames are allowed.
@@ -34,30 +35,18 @@ object SchemaStackTrace {
   }
   
   @scala.inline
-  implicit class SchemaStackTraceOps[Self <: SchemaStackTrace] (val x: Self) extends AnyVal {
+  implicit class SchemaStackTraceMutableBuilder[Self <: SchemaStackTrace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStackFrames(value: SchemaStackFrames): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStackFramesUndefined: Self = StObject.set(x, "stackFrames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStackTraceHashId(value: String): Self = StObject.set(x, "stackTraceHashId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackFrames(value: SchemaStackFrames): Self = this.set("stackFrames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackFrames: Self = this.set("stackFrames", js.undefined)
-    
-    @scala.inline
-    def setStackTraceHashId(value: String): Self = this.set("stackTraceHashId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackTraceHashId: Self = this.set("stackTraceHashId", js.undefined)
+    def setStackTraceHashIdUndefined: Self = StObject.set(x, "stackTraceHashId", js.undefined)
   }
 }

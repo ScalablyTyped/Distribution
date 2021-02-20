@@ -1,11 +1,12 @@
 package typings.awsSdk.textractMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectDocumentTextResponse extends js.Object {
+trait DetectDocumentTextResponse extends StObject {
   
   /**
     * An array of Block objects that contain the text that's detected in the document.
@@ -31,39 +32,27 @@ object DetectDocumentTextResponse {
   }
   
   @scala.inline
-  implicit class DetectDocumentTextResponseOps[Self <: DetectDocumentTextResponse] (val x: Self) extends AnyVal {
+  implicit class DetectDocumentTextResponseMutableBuilder[Self <: DetectDocumentTextResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocks(value: BlockList): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
     
     @scala.inline
-    def setBlocksVarargs(value: Block*): Self = this.set("Blocks", js.Array(value :_*))
+    def setDetectDocumentTextModelVersion(value: String): Self = StObject.set(x, "DetectDocumentTextModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocks(value: BlockList): Self = this.set("Blocks", value.asInstanceOf[js.Any])
+    def setDetectDocumentTextModelVersionUndefined: Self = StObject.set(x, "DetectDocumentTextModelVersion", js.undefined)
     
     @scala.inline
-    def deleteBlocks: Self = this.set("Blocks", js.undefined)
+    def setDocumentMetadata(value: DocumentMetadata): Self = StObject.set(x, "DocumentMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectDocumentTextModelVersion(value: String): Self = this.set("DetectDocumentTextModelVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetectDocumentTextModelVersion: Self = this.set("DetectDocumentTextModelVersion", js.undefined)
-    
-    @scala.inline
-    def setDocumentMetadata(value: DocumentMetadata): Self = this.set("DocumentMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentMetadata: Self = this.set("DocumentMetadata", js.undefined)
+    def setDocumentMetadataUndefined: Self = StObject.set(x, "DocumentMetadata", js.undefined)
   }
 }

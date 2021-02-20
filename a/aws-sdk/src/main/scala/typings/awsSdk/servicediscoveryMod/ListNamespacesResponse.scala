@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListNamespacesResponse extends js.Object {
+trait ListNamespacesResponse extends StObject {
   
   /**
     * An array that contains one NamespaceSummary object for each namespace that matches the specified filter criteria.
@@ -26,33 +27,21 @@ object ListNamespacesResponse {
   }
   
   @scala.inline
-  implicit class ListNamespacesResponseOps[Self <: ListNamespacesResponse] (val x: Self) extends AnyVal {
+  implicit class ListNamespacesResponseMutableBuilder[Self <: ListNamespacesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamespaces(value: NamespaceSummariesList): Self = StObject.set(x, "Namespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamespacesUndefined: Self = StObject.set(x, "Namespaces", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespacesVarargs(value: NamespaceSummary*): Self = StObject.set(x, "Namespaces", js.Array(value :_*))
     
     @scala.inline
-    def setNamespacesVarargs(value: NamespaceSummary*): Self = this.set("Namespaces", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaces(value: NamespaceSummariesList): Self = this.set("Namespaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaces: Self = this.set("Namespaces", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

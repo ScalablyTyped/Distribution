@@ -1,12 +1,13 @@
 package typings.reactNativeWebrtc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-webrtc", "MediaStream")
 @js.native
-class MediaStream protected () extends js.Object {
+class MediaStream protected () extends StObject {
   def this(arg: js.Any) = this()
   
   var _reactTag: String = js.native

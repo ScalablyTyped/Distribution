@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentProperty[TApplication] extends js.Object {
+trait DocumentProperty[TApplication] extends StObject {
   
   var Application: TApplication = js.native
   
@@ -49,48 +50,36 @@ object DocumentProperty {
   }
   
   @scala.inline
-  implicit class DocumentPropertyOps[Self <: DocumentProperty[_], TApplication] (val x: Self with DocumentProperty[TApplication]) extends AnyVal {
+  implicit class DocumentPropertyMutableBuilder[Self <: DocumentProperty[_], TApplication] (val x: Self with DocumentProperty[TApplication]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: TApplication): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: TApplication): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setLinkSource(value: String): Self = StObject.set(x, "LinkSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setLinkToContent(value: Boolean): Self = StObject.set(x, "LinkToContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkSource(value: String): Self = this.set("LinkSource", value.asInstanceOf[js.Any])
+    def setOfficeDotDocumentProperty_typekey(value: DocumentProperty[TApplication]): Self = StObject.set(x, "Office.DocumentProperty_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkToContent(value: Boolean): Self = this.set("LinkToContent", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setType(value: MsoDocProperties): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficeDotDocumentProperty_typekey(value: DocumentProperty[TApplication]): Self = this.set("Office.DocumentProperty_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MsoDocProperties): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeGameSessionsInput extends js.Object {
+trait DescribeGameSessionsInput extends StObject {
   
   /**
     * A unique identifier for an alias associated with the fleet to retrieve all game sessions for. You can use either the alias ID or ARN value.
@@ -46,54 +47,42 @@ object DescribeGameSessionsInput {
   }
   
   @scala.inline
-  implicit class DescribeGameSessionsInputOps[Self <: DescribeGameSessionsInput] (val x: Self) extends AnyVal {
+  implicit class DescribeGameSessionsInputMutableBuilder[Self <: DescribeGameSessionsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasId(value: AliasIdOrArn): Self = this.set("AliasId", value.asInstanceOf[js.Any])
+    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
     @scala.inline
-    def deleteAliasId: Self = this.set("AliasId", js.undefined)
+    def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    def setGameSessionIdUndefined: Self = StObject.set(x, "GameSessionId", js.undefined)
     
     @scala.inline
-    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionId(value: ArnStringModel): Self = this.set("GameSessionId", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteGameSessionId: Self = this.set("GameSessionId", js.undefined)
+    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: PositiveInteger): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setStatusFilter(value: NonZeroAndMaxString): Self = StObject.set(x, "StatusFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStatusFilter(value: NonZeroAndMaxString): Self = this.set("StatusFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusFilter: Self = this.set("StatusFilter", js.undefined)
+    def setStatusFilterUndefined: Self = StObject.set(x, "StatusFilter", js.undefined)
   }
 }

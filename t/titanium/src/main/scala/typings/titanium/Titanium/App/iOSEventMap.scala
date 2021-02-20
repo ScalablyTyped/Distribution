@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.App
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,72 +73,60 @@ object iOSEventMap {
   }
   
   @scala.inline
-  implicit class iOSEventMapOps[Self <: iOSEventMap] (val x: Self) extends AnyVal {
+  implicit class iOSEventMapMutableBuilder[Self <: iOSEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundfetch(value: iOSBackgroundfetchEvent): Self = StObject.set(x, "backgroundfetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundtransfer(value: iOSBackgroundtransferEvent): Self = StObject.set(x, "backgroundtransfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinueactivity(value: iOSContinueactivityEvent): Self = StObject.set(x, "continueactivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundfetch(value: iOSBackgroundfetchEvent): Self = this.set("backgroundfetch", value.asInstanceOf[js.Any])
+    def setDownloadcompleted(value: iOSDownloadcompletedEvent): Self = StObject.set(x, "downloadcompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundtransfer(value: iOSBackgroundtransferEvent): Self = this.set("backgroundtransfer", value.asInstanceOf[js.Any])
+    def setDownloadprogress(value: iOSDownloadprogressEvent): Self = StObject.set(x, "downloadprogress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueactivity(value: iOSContinueactivityEvent): Self = this.set("continueactivity", value.asInstanceOf[js.Any])
+    def setHandleurl(value: iOSHandleurlEvent): Self = StObject.set(x, "handleurl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadcompleted(value: iOSDownloadcompletedEvent): Self = this.set("downloadcompleted", value.asInstanceOf[js.Any])
+    def setLocalnotificationaction(value: iOSLocalnotificationactionEvent): Self = StObject.set(x, "localnotificationaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadprogress(value: iOSDownloadprogressEvent): Self = this.set("downloadprogress", value.asInstanceOf[js.Any])
+    def setNotification(value: iOSNotificationEvent): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleurl(value: iOSHandleurlEvent): Self = this.set("handleurl", value.asInstanceOf[js.Any])
+    def setRemotenotificationaction(value: iOSRemotenotificationactionEvent): Self = StObject.set(x, "remotenotificationaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalnotificationaction(value: iOSLocalnotificationactionEvent): Self = this.set("localnotificationaction", value.asInstanceOf[js.Any])
+    def setScreenshotcaptured(value: iOSScreenshotcapturedEvent): Self = StObject.set(x, "screenshotcaptured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: iOSNotificationEvent): Self = this.set("notification", value.asInstanceOf[js.Any])
+    def setSessioncompleted(value: iOSSessioncompletedEvent): Self = StObject.set(x, "sessioncompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemotenotificationaction(value: iOSRemotenotificationactionEvent): Self = this.set("remotenotificationaction", value.asInstanceOf[js.Any])
+    def setSessioneventscompleted(value: iOSSessioneventscompletedEvent): Self = StObject.set(x, "sessioneventscompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenshotcaptured(value: iOSScreenshotcapturedEvent): Self = this.set("screenshotcaptured", value.asInstanceOf[js.Any])
+    def setShortcutitemclick(value: iOSShortcutitemclickEvent): Self = StObject.set(x, "shortcutitemclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessioncompleted(value: iOSSessioncompletedEvent): Self = this.set("sessioncompleted", value.asInstanceOf[js.Any])
+    def setSilentpush(value: iOSSilentpushEvent): Self = StObject.set(x, "silentpush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessioneventscompleted(value: iOSSessioneventscompletedEvent): Self = this.set("sessioneventscompleted", value.asInstanceOf[js.Any])
+    def setTraitcollectionchange(value: iOSTraitcollectionchangeEvent): Self = StObject.set(x, "traitcollectionchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortcutitemclick(value: iOSShortcutitemclickEvent): Self = this.set("shortcutitemclick", value.asInstanceOf[js.Any])
+    def setUploadprogress(value: iOSUploadprogressEvent): Self = StObject.set(x, "uploadprogress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilentpush(value: iOSSilentpushEvent): Self = this.set("silentpush", value.asInstanceOf[js.Any])
+    def setUsernotificationsettings(value: iOSUsernotificationsettingsEvent): Self = StObject.set(x, "usernotificationsettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraitcollectionchange(value: iOSTraitcollectionchangeEvent): Self = this.set("traitcollectionchange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadprogress(value: iOSUploadprogressEvent): Self = this.set("uploadprogress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsernotificationsettings(value: iOSUsernotificationsettingsEvent): Self = this.set("usernotificationsettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWatchkitextensionrequest(value: iOSWatchkitextensionrequestEvent): Self = this.set("watchkitextensionrequest", value.asInstanceOf[js.Any])
+    def setWatchkitextensionrequest(value: iOSWatchkitextensionrequestEvent): Self = StObject.set(x, "watchkitextensionrequest", value.asInstanceOf[js.Any])
   }
 }

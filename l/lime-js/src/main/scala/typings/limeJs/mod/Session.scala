@@ -1,5 +1,6 @@
 package typings.limeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,69 +33,57 @@ object Session {
   }
   
   @scala.inline
-  implicit class SessionOps[Self <: Session] (val x: Self) extends AnyVal {
+  implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthentication(value: js.Any): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setCompressionOptions(value: js.Array[String]): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthentication(value: js.Any): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
     
     @scala.inline
-    def deleteAuthentication: Self = this.set("authentication", js.undefined)
+    def setCompressionOptionsVarargs(value: String*): Self = StObject.set(x, "compressionOptions", js.Array(value :_*))
     
     @scala.inline
-    def setCompression(value: String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionOptionsVarargs(value: String*): Self = this.set("compressionOptions", js.Array(value :_*))
+    def setEncryptionOptions(value: js.Array[String]): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionOptions(value: js.Array[String]): Self = this.set("compressionOptions", value.asInstanceOf[js.Any])
+    def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
     
     @scala.inline
-    def deleteCompressionOptions: Self = this.set("compressionOptions", js.undefined)
+    def setEncryptionOptionsVarargs(value: String*): Self = StObject.set(x, "encryptionOptions", js.Array(value :_*))
     
     @scala.inline
-    def setEncryption(value: String): Self = this.set("encryption", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("encryption", js.undefined)
+    def setReason(value: Reason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionOptionsVarargs(value: String*): Self = this.set("encryptionOptions", js.Array(value :_*))
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def setEncryptionOptions(value: js.Array[String]): Self = this.set("encryptionOptions", value.asInstanceOf[js.Any])
+    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionOptions: Self = this.set("encryptionOptions", js.undefined)
+    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
     @scala.inline
-    def setReason(value: Reason): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
-    
-    @scala.inline
-    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheme: Self = this.set("scheme", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.wicgFileSystemAccess.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.file
   - typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.directory
 */
-trait FileSystemHandleKind extends js.Object
+trait FileSystemHandleKind extends StObject
 object FileSystemHandleKind {
   
   @scala.inline

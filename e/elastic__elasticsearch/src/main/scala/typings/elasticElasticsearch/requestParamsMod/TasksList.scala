@@ -3,6 +3,7 @@ package typings.elasticElasticsearch.requestParamsMod
 import typings.elasticElasticsearch.elasticElasticsearchStrings.nodes
 import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.parents
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,66 +34,54 @@ object TasksList {
   }
   
   @scala.inline
-  implicit class TasksListOps[Self <: TasksList] (val x: Self) extends AnyVal {
+  implicit class TasksListMutableBuilder[Self <: TasksList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: String | js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: String | js.Array[String]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setGroup_by(value: nodes | parents | none): Self = StObject.set(x, "group_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailed(value: Boolean): Self = this.set("detailed", value.asInstanceOf[js.Any])
+    def setGroup_byUndefined: Self = StObject.set(x, "group_by", js.undefined)
     
     @scala.inline
-    def deleteDetailed: Self = this.set("detailed", js.undefined)
+    def setNodes(value: String | js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup_by(value: nodes | parents | none): Self = this.set("group_by", value.asInstanceOf[js.Any])
+    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
     @scala.inline
-    def deleteGroup_by: Self = this.set("group_by", js.undefined)
+    def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setNodesVarargs(value: String*): Self = this.set("nodes", js.Array(value :_*))
+    def setParent_task_id(value: String): Self = StObject.set(x, "parent_task_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: String | js.Array[String]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setParent_task_idUndefined: Self = StObject.set(x, "parent_task_id", js.undefined)
     
     @scala.inline
-    def deleteNodes: Self = this.set("nodes", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent_task_id(value: String): Self = this.set("parent_task_id", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteParent_task_id: Self = this.set("parent_task_id", js.undefined)
+    def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setWait_for_completion(value: Boolean): Self = this.set("wait_for_completion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait_for_completion: Self = this.set("wait_for_completion", js.undefined)
+    def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
   }
 }

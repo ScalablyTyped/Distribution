@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaMarketplaceDealParty extends js.Object {
+trait SchemaMarketplaceDealParty extends StObject {
   
   /**
     * The buyer/seller associated with the deal. One of buyer/seller is
@@ -28,30 +29,18 @@ object SchemaMarketplaceDealParty {
   }
   
   @scala.inline
-  implicit class SchemaMarketplaceDealPartyOps[Self <: SchemaMarketplaceDealParty] (val x: Self) extends AnyVal {
+  implicit class SchemaMarketplaceDealPartyMutableBuilder[Self <: SchemaMarketplaceDealParty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuyer(value: SchemaBuyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuyerUndefined: Self = StObject.set(x, "buyer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeller(value: SchemaSeller): Self = StObject.set(x, "seller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyer(value: SchemaBuyer): Self = this.set("buyer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuyer: Self = this.set("buyer", js.undefined)
-    
-    @scala.inline
-    def setSeller(value: SchemaSeller): Self = this.set("seller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeller: Self = this.set("seller", js.undefined)
+    def setSellerUndefined: Self = StObject.set(x, "seller", js.undefined)
   }
 }

@@ -6,6 +6,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
 import typings.node.streamMod.ReadableOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,31 +41,19 @@ object ServerSessionOptions {
   }
   
   @scala.inline
-  implicit class ServerSessionOptionsOps[Self <: ServerSessionOptions] (val x: Self) extends AnyVal {
+  implicit class ServerSessionOptionsMutableBuilder[Self <: ServerSessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttp1IncomingMessage(value: Instantiable1[/* socket */ Socket, IncomingMessage]): Self = StObject.set(x, "Http1IncomingMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttp1IncomingMessageUndefined: Self = StObject.set(x, "Http1IncomingMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttp1ServerResponse(value: Instantiable1[/* req */ IncomingMessage, ServerResponse]): Self = StObject.set(x, "Http1ServerResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp1IncomingMessage(value: Instantiable1[/* socket */ Socket, IncomingMessage]): Self = this.set("Http1IncomingMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttp1IncomingMessage: Self = this.set("Http1IncomingMessage", js.undefined)
-    
-    @scala.inline
-    def setHttp1ServerResponse(value: Instantiable1[/* req */ IncomingMessage, ServerResponse]): Self = this.set("Http1ServerResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttp1ServerResponse: Self = this.set("Http1ServerResponse", js.undefined)
+    def setHttp1ServerResponseUndefined: Self = StObject.set(x, "Http1ServerResponse", js.undefined)
     
     @scala.inline
     def setHttp2ServerRequest(
@@ -75,15 +64,15 @@ object ServerSessionOptions {
           /* rawHeaders */ js.Array[String], 
           Http2ServerRequest
         ]
-    ): Self = this.set("Http2ServerRequest", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Http2ServerRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttp2ServerRequest: Self = this.set("Http2ServerRequest", js.undefined)
+    def setHttp2ServerRequestUndefined: Self = StObject.set(x, "Http2ServerRequest", js.undefined)
     
     @scala.inline
-    def setHttp2ServerResponse(value: Instantiable1[/* stream */ ServerHttp2Stream, Http2ServerResponse]): Self = this.set("Http2ServerResponse", value.asInstanceOf[js.Any])
+    def setHttp2ServerResponse(value: Instantiable1[/* stream */ ServerHttp2Stream, Http2ServerResponse]): Self = StObject.set(x, "Http2ServerResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttp2ServerResponse: Self = this.set("Http2ServerResponse", js.undefined)
+    def setHttp2ServerResponseUndefined: Self = StObject.set(x, "Http2ServerResponse", js.undefined)
   }
 }

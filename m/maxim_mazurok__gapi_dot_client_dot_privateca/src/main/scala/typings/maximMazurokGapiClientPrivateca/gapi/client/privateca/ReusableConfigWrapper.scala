@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReusableConfigWrapper extends js.Object {
+trait ReusableConfigWrapper extends StObject {
   
   /** Required. A resource path to a ReusableConfig in the format `projects/∗/locations/∗/reusableConfigs/ *`. */
   var reusableConfig: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ReusableConfigWrapper {
   }
   
   @scala.inline
-  implicit class ReusableConfigWrapperOps[Self <: ReusableConfigWrapper] (val x: Self) extends AnyVal {
+  implicit class ReusableConfigWrapperMutableBuilder[Self <: ReusableConfigWrapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReusableConfig(value: String): Self = StObject.set(x, "reusableConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReusableConfigUndefined: Self = StObject.set(x, "reusableConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReusableConfigValues(value: ReusableConfigValues): Self = StObject.set(x, "reusableConfigValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReusableConfig(value: String): Self = this.set("reusableConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReusableConfig: Self = this.set("reusableConfig", js.undefined)
-    
-    @scala.inline
-    def setReusableConfigValues(value: ReusableConfigValues): Self = this.set("reusableConfigValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReusableConfigValues: Self = this.set("reusableConfigValues", js.undefined)
+    def setReusableConfigValuesUndefined: Self = StObject.set(x, "reusableConfigValues", js.undefined)
   }
 }

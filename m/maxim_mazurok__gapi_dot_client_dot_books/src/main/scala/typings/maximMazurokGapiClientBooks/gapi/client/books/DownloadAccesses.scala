@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.gapi.client.books
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadAccesses extends js.Object {
+trait DownloadAccesses extends StObject {
   
   /** A list of download access responses. */
   var downloadAccessList: js.UndefOr[js.Array[DownloadAccessRestriction]] = js.native
@@ -22,33 +23,21 @@ object DownloadAccesses {
   }
   
   @scala.inline
-  implicit class DownloadAccessesOps[Self <: DownloadAccesses] (val x: Self) extends AnyVal {
+  implicit class DownloadAccessesMutableBuilder[Self <: DownloadAccesses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadAccessList(value: js.Array[DownloadAccessRestriction]): Self = StObject.set(x, "downloadAccessList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadAccessListUndefined: Self = StObject.set(x, "downloadAccessList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDownloadAccessListVarargs(value: DownloadAccessRestriction*): Self = StObject.set(x, "downloadAccessList", js.Array(value :_*))
     
     @scala.inline
-    def setDownloadAccessListVarargs(value: DownloadAccessRestriction*): Self = this.set("downloadAccessList", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadAccessList(value: js.Array[DownloadAccessRestriction]): Self = this.set("downloadAccessList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDownloadAccessList: Self = this.set("downloadAccessList", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

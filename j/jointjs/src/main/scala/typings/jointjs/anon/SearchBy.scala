@@ -10,12 +10,13 @@ import typings.jointjs.jointjsStrings.origin
 import typings.jointjs.jointjsStrings.rightMiddle
 import typings.jointjs.jointjsStrings.topMiddle
 import typings.jointjs.jointjsStrings.topRight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchBy extends js.Object {
+trait SearchBy extends StObject {
   
   var searchBy: js.UndefOr[
     bottomLeft | bottomMiddle | center | corner | leftMiddle | origin | rightMiddle | topMiddle | topRight | bbox
@@ -30,26 +31,14 @@ object SearchBy {
   }
   
   @scala.inline
-  implicit class SearchByOps[Self <: SearchBy] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class SearchByMutableBuilder[Self <: SearchBy] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setSearchBy(
       value: bottomLeft | bottomMiddle | center | corner | leftMiddle | origin | rightMiddle | topMiddle | topRight | bbox
-    ): Self = this.set("searchBy", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "searchBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchBy: Self = this.set("searchBy", js.undefined)
+    def setSearchByUndefined: Self = StObject.set(x, "searchBy", js.undefined)
   }
 }

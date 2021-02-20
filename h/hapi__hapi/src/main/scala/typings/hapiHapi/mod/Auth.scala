@@ -2,12 +2,13 @@ package typings.hapiHapi.mod
 
 import typings.hapiHapi.hapiHapiBooleans.`true`
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth extends js.Object {
+trait Auth extends StObject {
   
   val data: js.UndefOr[AuthenticationData] = js.native
   
@@ -24,36 +25,24 @@ object Auth {
   }
   
   @scala.inline
-  implicit class AuthOps[Self <: Auth] (val x: Self) extends AnyVal {
+  implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: AuthenticationData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAuth(value: `true`): Self = this.set("isAuth", value.asInstanceOf[js.Any])
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def setData(value: AuthenticationData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
-    
-    @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setIsAuth(value: `true`): Self = StObject.set(x, "isAuth", value.asInstanceOf[js.Any])
   }
 }

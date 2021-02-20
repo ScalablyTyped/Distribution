@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/PBR/anisotropyBlock", JSImport.Namespace)
-@js.native
-object anisotropyBlockMod extends js.Object {
+object anisotropyBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/anisotropyBlock", "AnisotropyBlock")
   @js.native
   class AnisotropyBlock protected () extends NodeMaterialBlock {
     /**

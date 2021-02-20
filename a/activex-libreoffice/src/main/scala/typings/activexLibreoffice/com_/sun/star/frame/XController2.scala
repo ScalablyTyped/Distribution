@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.ui.XSidebarProvider
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,33 +85,21 @@ object XController2 {
   }
   
   @scala.inline
-  implicit class XController2Ops[Self <: XController2] (val x: Self) extends AnyVal {
+  implicit class XController2MutableBuilder[Self <: XController2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentWindow(value: XWindow): Self = StObject.set(x, "ComponentWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationArguments(value: SafeArray[PropertyValue]): Self = StObject.set(x, "CreationArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSidebar(value: () => XSidebarProvider): Self = StObject.set(x, "getSidebar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComponentWindow(value: XWindow): Self = this.set("ComponentWindow", value.asInstanceOf[js.Any])
+    def setSidebar(value: XSidebarProvider): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationArguments(value: SafeArray[PropertyValue]): Self = this.set("CreationArguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSidebar(value: XSidebarProvider): Self = this.set("Sidebar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewControllerName(value: String): Self = this.set("ViewControllerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetSidebar(value: () => XSidebarProvider): Self = this.set("getSidebar", js.Any.fromFunction0(value))
+    def setViewControllerName(value: String): Self = StObject.set(x, "ViewControllerName", value.asInstanceOf[js.Any])
   }
 }

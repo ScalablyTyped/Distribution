@@ -1,5 +1,6 @@
 package typings.reactBigCalendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,6 +57,20 @@ package object mod {
   ]
   
   type ViewsProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] = js.Array[typings.reactBigCalendar.mod.View] | typings.reactBigCalendar.anon.Agenda
+  
+  @scala.inline
+  def dateFnsLocalizer(config: js.Object): typings.reactBigCalendar.mod.DateLocalizer = typings.reactBigCalendar.mod.^.asInstanceOf[js.Dynamic].applyDynamic("dateFnsLocalizer")(config.asInstanceOf[js.Any]).asInstanceOf[typings.reactBigCalendar.mod.DateLocalizer]
+  
+  @scala.inline
+  def globalizeLocalizer(globalizeInstance: js.Object): typings.reactBigCalendar.mod.DateLocalizer = typings.reactBigCalendar.mod.^.asInstanceOf[js.Dynamic].applyDynamic("globalizeLocalizer")(globalizeInstance.asInstanceOf[js.Any]).asInstanceOf[typings.reactBigCalendar.mod.DateLocalizer]
+  
+  @scala.inline
+  def momentLocalizer(momentInstance: js.Object): typings.reactBigCalendar.mod.DateLocalizer = typings.reactBigCalendar.mod.^.asInstanceOf[js.Dynamic].applyDynamic("momentLocalizer")(momentInstance.asInstanceOf[js.Any]).asInstanceOf[typings.reactBigCalendar.mod.DateLocalizer]
+  
+  @scala.inline
+  def move(View: typings.reactBigCalendar.mod.ViewKey, options: typings.reactBigCalendar.mod.MoveOptions): typings.std.Date = (typings.reactBigCalendar.mod.^.asInstanceOf[js.Dynamic].applyDynamic("move")(View.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.std.Date]
+  @scala.inline
+  def move(View: typings.reactBigCalendar.mod.ViewStatic, options: typings.reactBigCalendar.mod.MoveOptions): typings.std.Date = (typings.reactBigCalendar.mod.^.asInstanceOf[js.Dynamic].applyDynamic("move")(View.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.std.Date]
   
   type stringOrDate = java.lang.String | typings.std.Date
 }

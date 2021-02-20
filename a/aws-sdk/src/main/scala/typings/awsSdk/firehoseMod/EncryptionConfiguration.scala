@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptionConfiguration extends js.Object {
+trait EncryptionConfiguration extends StObject {
   
   /**
     * The encryption key.
@@ -26,30 +27,18 @@ object EncryptionConfiguration {
   }
   
   @scala.inline
-  implicit class EncryptionConfigurationOps[Self <: EncryptionConfiguration] (val x: Self) extends AnyVal {
+  implicit class EncryptionConfigurationMutableBuilder[Self <: EncryptionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKMSEncryptionConfig(value: KMSEncryptionConfig): Self = StObject.set(x, "KMSEncryptionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKMSEncryptionConfigUndefined: Self = StObject.set(x, "KMSEncryptionConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoEncryptionConfig(value: NoEncryptionConfig): Self = StObject.set(x, "NoEncryptionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSEncryptionConfig(value: KMSEncryptionConfig): Self = this.set("KMSEncryptionConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKMSEncryptionConfig: Self = this.set("KMSEncryptionConfig", js.undefined)
-    
-    @scala.inline
-    def setNoEncryptionConfig(value: NoEncryptionConfig): Self = this.set("NoEncryptionConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoEncryptionConfig: Self = this.set("NoEncryptionConfig", js.undefined)
+    def setNoEncryptionConfigUndefined: Self = StObject.set(x, "NoEncryptionConfig", js.undefined)
   }
 }

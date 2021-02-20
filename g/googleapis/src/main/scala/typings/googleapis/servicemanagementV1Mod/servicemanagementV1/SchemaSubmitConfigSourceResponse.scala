@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for SubmitConfigSource method.
   */
 @js.native
-trait SchemaSubmitConfigSourceResponse extends js.Object {
+trait SchemaSubmitConfigSourceResponse extends StObject {
   
   /**
     * The generated service configuration.
@@ -24,24 +25,12 @@ object SchemaSubmitConfigSourceResponse {
   }
   
   @scala.inline
-  implicit class SchemaSubmitConfigSourceResponseOps[Self <: SchemaSubmitConfigSourceResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSubmitConfigSourceResponseMutableBuilder[Self <: SchemaSubmitConfigSourceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServiceConfig(value: SchemaService): Self = StObject.set(x, "serviceConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServiceConfig(value: SchemaService): Self = this.set("serviceConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceConfig: Self = this.set("serviceConfig", js.undefined)
+    def setServiceConfigUndefined: Self = StObject.set(x, "serviceConfig", js.undefined)
   }
 }

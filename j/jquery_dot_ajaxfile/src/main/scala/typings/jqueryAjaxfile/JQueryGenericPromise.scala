@@ -1,5 +1,6 @@
 package typings.jqueryAjaxfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Allows jQuery Promises to interop with non-jQuery promises
   */
 @js.native
-trait JQueryGenericPromise[T] extends js.Object {
+trait JQueryGenericPromise[T] extends StObject {
   
   /**
     * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.

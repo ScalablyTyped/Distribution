@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationGroupPendingModifiedValues extends js.Object {
+trait ReplicationGroupPendingModifiedValues extends StObject {
   
   /**
     * The auth token status
@@ -41,48 +42,36 @@ object ReplicationGroupPendingModifiedValues {
   }
   
   @scala.inline
-  implicit class ReplicationGroupPendingModifiedValuesOps[Self <: ReplicationGroupPendingModifiedValues] (val x: Self) extends AnyVal {
+  implicit class ReplicationGroupPendingModifiedValuesMutableBuilder[Self <: ReplicationGroupPendingModifiedValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthTokenStatus(value: AuthTokenUpdateStatus): Self = StObject.set(x, "AuthTokenStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthTokenStatusUndefined: Self = StObject.set(x, "AuthTokenStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomaticFailoverStatus(value: PendingAutomaticFailoverStatus): Self = StObject.set(x, "AutomaticFailoverStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthTokenStatus(value: AuthTokenUpdateStatus): Self = this.set("AuthTokenStatus", value.asInstanceOf[js.Any])
+    def setAutomaticFailoverStatusUndefined: Self = StObject.set(x, "AutomaticFailoverStatus", js.undefined)
     
     @scala.inline
-    def deleteAuthTokenStatus: Self = this.set("AuthTokenStatus", js.undefined)
+    def setPrimaryClusterId(value: String): Self = StObject.set(x, "PrimaryClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticFailoverStatus(value: PendingAutomaticFailoverStatus): Self = this.set("AutomaticFailoverStatus", value.asInstanceOf[js.Any])
+    def setPrimaryClusterIdUndefined: Self = StObject.set(x, "PrimaryClusterId", js.undefined)
     
     @scala.inline
-    def deleteAutomaticFailoverStatus: Self = this.set("AutomaticFailoverStatus", js.undefined)
+    def setResharding(value: ReshardingStatus): Self = StObject.set(x, "Resharding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryClusterId(value: String): Self = this.set("PrimaryClusterId", value.asInstanceOf[js.Any])
+    def setReshardingUndefined: Self = StObject.set(x, "Resharding", js.undefined)
     
     @scala.inline
-    def deletePrimaryClusterId: Self = this.set("PrimaryClusterId", js.undefined)
+    def setUserGroups(value: UserGroupsUpdateStatus): Self = StObject.set(x, "UserGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResharding(value: ReshardingStatus): Self = this.set("Resharding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResharding: Self = this.set("Resharding", js.undefined)
-    
-    @scala.inline
-    def setUserGroups(value: UserGroupsUpdateStatus): Self = this.set("UserGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserGroups: Self = this.set("UserGroups", js.undefined)
+    def setUserGroupsUndefined: Self = StObject.set(x, "UserGroups", js.undefined)
   }
 }

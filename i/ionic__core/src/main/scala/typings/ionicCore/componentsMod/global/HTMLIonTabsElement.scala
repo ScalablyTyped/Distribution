@@ -1,11 +1,11 @@
 package typings.ionicCore.componentsMod.global
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.ionicCore.componentsMod.Components.IonTabs
 import typings.ionicCore.stencilPublicRuntimeMod.HTMLStencilElement
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +29,3 @@ trait HTMLIonTabsElement
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
 }
-@JSGlobal("HTMLIonTabsElement")
-@js.native
-object HTMLIonTabsElement extends Instantiable0[HTMLIonTabsElement]

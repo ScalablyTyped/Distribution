@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies arguments for a PlayReady-ND ClosedCaptionDataReceived event. */
 @js.native
-trait INDClosedCaptionDataReceivedEventArgs extends js.Object {
+trait INDClosedCaptionDataReceivedEventArgs extends StObject {
   
   /** Gets the closed caption data. */
   var closedCaptionData: Double = js.native
@@ -30,27 +31,15 @@ object INDClosedCaptionDataReceivedEventArgs {
   }
   
   @scala.inline
-  implicit class INDClosedCaptionDataReceivedEventArgsOps[Self <: INDClosedCaptionDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  implicit class INDClosedCaptionDataReceivedEventArgsMutableBuilder[Self <: INDClosedCaptionDataReceivedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClosedCaptionData(value: Double): Self = StObject.set(x, "closedCaptionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClosedCaptionDataFormat(value: NDClosedCaptionFormat): Self = StObject.set(x, "closedCaptionDataFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClosedCaptionData(value: Double): Self = this.set("closedCaptionData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClosedCaptionDataFormat(value: NDClosedCaptionFormat): Self = this.set("closedCaptionDataFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPresentationTimestamp(value: Double): Self = this.set("presentationTimestamp", value.asInstanceOf[js.Any])
+    def setPresentationTimestamp(value: Double): Self = StObject.set(x, "presentationTimestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.surveyKnockout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemDecorator extends js.Object {
+trait ItemDecorator extends StObject {
   
   var column: String = js.native
   
@@ -59,60 +60,48 @@ object ItemDecorator {
   }
   
   @scala.inline
-  implicit class ItemDecoratorOps[Self <: ItemDecorator] (val x: Self) extends AnyVal {
+  implicit class ItemDecoratorMutableBuilder[Self <: ItemDecorator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlLabel(value: String): Self = StObject.set(x, "controlLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: String): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlLabel(value: String): Self = this.set("controlLabel", value.asInstanceOf[js.Any])
+    def setItemControl(value: String): Self = StObject.set(x, "itemControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setItemDecorator(value: String): Self = StObject.set(x, "itemDecorator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemChecked(value: String): Self = this.set("itemChecked", value.asInstanceOf[js.Any])
+    def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemControl(value: String): Self = this.set("itemControl", value.asInstanceOf[js.Any])
+    def setItemNone(value: String): Self = StObject.set(x, "itemNone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemDecorator(value: String): Self = this.set("itemDecorator", value.asInstanceOf[js.Any])
+    def setItemSelectAll(value: String): Self = StObject.set(x, "itemSelectAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemInline(value: String): Self = this.set("itemInline", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemNone(value: String): Self = this.set("itemNone", value.asInstanceOf[js.Any])
+    def setLabelChecked(value: String): Self = StObject.set(x, "labelChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemSelectAll(value: String): Self = this.set("itemSelectAll", value.asInstanceOf[js.Any])
+    def setMaterialDecorator(value: String): Self = StObject.set(x, "materialDecorator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelChecked(value: String): Self = this.set("labelChecked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaterialDecorator(value: String): Self = this.set("materialDecorator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOther(value: String): Self = this.set("other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAppConfig extends js.Object {
+trait GetAppConfig extends StObject {
   
   var host: js.UndefOr[String] = js.native
   
@@ -28,51 +29,39 @@ object GetAppConfig {
   }
   
   @scala.inline
-  implicit class GetAppConfigOps[Self <: GetAppConfig] (val x: Self) extends AnyVal {
+  implicit class GetAppConfigMutableBuilder[Self <: GetAppConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: String | Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
     
     @scala.inline
-    def setIdentity(value: String): Self = this.set("identity", value.asInstanceOf[js.Any])
+    def setOpenWithoutData(value: Boolean): Self = StObject.set(x, "openWithoutData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentity: Self = this.set("identity", js.undefined)
+    def setOpenWithoutDataUndefined: Self = StObject.set(x, "openWithoutData", js.undefined)
     
     @scala.inline
-    def setIsSecure(value: Boolean): Self = this.set("isSecure", value.asInstanceOf[js.Any])
+    def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsSecure: Self = this.set("isSecure", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenWithoutData(value: Boolean): Self = this.set("openWithoutData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenWithoutData: Self = this.set("openWithoutData", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpotOptions extends js.Object {
+trait SpotOptions extends StObject {
   
   /**
     * Indicates how to allocate the target Spot Instance capacity across the Spot Instance pools specified by the EC2 Fleet. If the allocation strategy is lowest-price, EC2 Fleet launches instances from the Spot Instance pools with the lowest price. This is the default allocation strategy. If the allocation strategy is diversified, EC2 Fleet launches instances from all of the Spot Instance pools that you specify. If the allocation strategy is capacity-optimized, EC2 Fleet launches instances from Spot Instance pools with optimal capacity for the number of instances that are launching.
@@ -56,66 +57,54 @@ object SpotOptions {
   }
   
   @scala.inline
-  implicit class SpotOptionsOps[Self <: SpotOptions] (val x: Self) extends AnyVal {
+  implicit class SpotOptionsMutableBuilder[Self <: SpotOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationStrategy(value: SpotAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationStrategyUndefined: Self = StObject.set(x, "AllocationStrategy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceInterruptionBehavior(value: SpotInstanceInterruptionBehavior): Self = StObject.set(x, "InstanceInterruptionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationStrategy(value: SpotAllocationStrategy): Self = this.set("AllocationStrategy", value.asInstanceOf[js.Any])
+    def setInstanceInterruptionBehaviorUndefined: Self = StObject.set(x, "InstanceInterruptionBehavior", js.undefined)
     
     @scala.inline
-    def deleteAllocationStrategy: Self = this.set("AllocationStrategy", js.undefined)
+    def setInstancePoolsToUseCount(value: Integer): Self = StObject.set(x, "InstancePoolsToUseCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceInterruptionBehavior(value: SpotInstanceInterruptionBehavior): Self = this.set("InstanceInterruptionBehavior", value.asInstanceOf[js.Any])
+    def setInstancePoolsToUseCountUndefined: Self = StObject.set(x, "InstancePoolsToUseCount", js.undefined)
     
     @scala.inline
-    def deleteInstanceInterruptionBehavior: Self = this.set("InstanceInterruptionBehavior", js.undefined)
+    def setMaintenanceStrategies(value: FleetSpotMaintenanceStrategies): Self = StObject.set(x, "MaintenanceStrategies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancePoolsToUseCount(value: Integer): Self = this.set("InstancePoolsToUseCount", value.asInstanceOf[js.Any])
+    def setMaintenanceStrategiesUndefined: Self = StObject.set(x, "MaintenanceStrategies", js.undefined)
     
     @scala.inline
-    def deleteInstancePoolsToUseCount: Self = this.set("InstancePoolsToUseCount", js.undefined)
+    def setMaxTotalPrice(value: String): Self = StObject.set(x, "MaxTotalPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenanceStrategies(value: FleetSpotMaintenanceStrategies): Self = this.set("MaintenanceStrategies", value.asInstanceOf[js.Any])
+    def setMaxTotalPriceUndefined: Self = StObject.set(x, "MaxTotalPrice", js.undefined)
     
     @scala.inline
-    def deleteMaintenanceStrategies: Self = this.set("MaintenanceStrategies", js.undefined)
+    def setMinTargetCapacity(value: Integer): Self = StObject.set(x, "MinTargetCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTotalPrice(value: String): Self = this.set("MaxTotalPrice", value.asInstanceOf[js.Any])
+    def setMinTargetCapacityUndefined: Self = StObject.set(x, "MinTargetCapacity", js.undefined)
     
     @scala.inline
-    def deleteMaxTotalPrice: Self = this.set("MaxTotalPrice", js.undefined)
+    def setSingleAvailabilityZone(value: Boolean): Self = StObject.set(x, "SingleAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTargetCapacity(value: Integer): Self = this.set("MinTargetCapacity", value.asInstanceOf[js.Any])
+    def setSingleAvailabilityZoneUndefined: Self = StObject.set(x, "SingleAvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteMinTargetCapacity: Self = this.set("MinTargetCapacity", js.undefined)
+    def setSingleInstanceType(value: Boolean): Self = StObject.set(x, "SingleInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleAvailabilityZone(value: Boolean): Self = this.set("SingleAvailabilityZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleAvailabilityZone: Self = this.set("SingleAvailabilityZone", js.undefined)
-    
-    @scala.inline
-    def setSingleInstanceType(value: Boolean): Self = this.set("SingleInstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleInstanceType: Self = this.set("SingleInstanceType", js.undefined)
+    def setSingleInstanceTypeUndefined: Self = StObject.set(x, "SingleInstanceType", js.undefined)
   }
 }

@@ -11,12 +11,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.square
 import typings.oracleOraclejet.oracleOraclejetStrings.star
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Shape extends js.Object {
+trait Shape extends StObject {
   
   var shape: js.UndefOr[
     inherit | circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
@@ -35,38 +36,26 @@ object Shape {
   }
   
   @scala.inline
-  implicit class ShapeOps[Self <: Shape] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setShape(
       value: inherit | circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
-    ): Self = this.set("shape", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
+    def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
     
     @scala.inline
-    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
+    def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
   }
 }

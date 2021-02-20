@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Firstx extends js.Object {
+trait Firstx extends StObject {
   
   var first_x: Double = js.native
   
@@ -26,33 +27,21 @@ object Firstx {
   }
   
   @scala.inline
-  implicit class FirstxOps[Self <: Firstx] (val x: Self) extends AnyVal {
+  implicit class FirstxMutableBuilder[Self <: Firstx] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirst_x(value: Double): Self = StObject.set(x, "first_x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst_y(value: Double): Self = StObject.set(x, "first_y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLast_x(value: Double): Self = StObject.set(x, "last_x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_x(value: Double): Self = this.set("first_x", value.asInstanceOf[js.Any])
+    def setLast_y(value: Double): Self = StObject.set(x, "last_y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_y(value: Double): Self = this.set("first_y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLast_x(value: Double): Self = this.set("last_x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLast_y(value: Double): Self = this.set("last_y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStaff_height(value: Double): Self = this.set("staff_height", value.asInstanceOf[js.Any])
+    def setStaff_height(value: Double): Self = StObject.set(x, "staff_height", value.asInstanceOf[js.Any])
   }
 }

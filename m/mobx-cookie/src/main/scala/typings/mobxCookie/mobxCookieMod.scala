@@ -3,16 +3,21 @@ package typings.mobxCookie
 import typings.jsCookie.mod.CookieAttributes
 import typings.node.NodeJS.Timeout
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-cookie/dist-types/mobx-cookie", JSImport.Namespace)
-@js.native
-object mobxCookieMod extends js.Object {
+object mobxCookieMod {
+  
+  @JSImport("mobx-cookie/dist-types/mobx-cookie", JSImport.Default)
+  @js.native
+  class default protected () extends MobxCookie {
+    def this(name: String) = this()
+  }
   
   @js.native
-  trait MobxCookie extends js.Object {
+  trait MobxCookie extends StObject {
     
     /**
       * Clear Timeout
@@ -73,10 +78,5 @@ object mobxCookieMod extends js.Object {
     def set(value: String, options: CookieAttributes): Unit = js.native
     
     var value: js.UndefOr[String] = js.native
-  }
-  
-  @js.native
-  class default protected () extends MobxCookie {
-    def this(name: String) = this()
   }
 }

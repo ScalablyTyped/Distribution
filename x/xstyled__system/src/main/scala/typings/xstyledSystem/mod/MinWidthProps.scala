@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MinWidthProps[TLength] extends js.Object {
+trait MinWidthProps[TLength] extends StObject {
   
   val minWidth: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object MinWidthProps {
   }
   
   @scala.inline
-  implicit class MinWidthPropsOps[Self <: MinWidthProps[_], TLength] (val x: Self with MinWidthProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMinWidthVarargs(value: js.Any*): Self = this.set("minWidth", js.Array(value :_*))
+  implicit class MinWidthPropsMutableBuilder[Self <: MinWidthProps[_], TLength] (val x: Self with MinWidthProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setMinWidth(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ _
         ]
-    ): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    @scala.inline
+    def setMinWidthVarargs(value: js.Any*): Self = StObject.set(x, "minWidth", js.Array(value :_*))
   }
 }

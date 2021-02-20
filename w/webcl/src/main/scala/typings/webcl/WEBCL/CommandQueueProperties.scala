@@ -2,6 +2,7 @@ package typings.webcl.WEBCL
 
 import typings.webcl.webclNumbers.`0x1`
 import typings.webcl.webclNumbers.`0x2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x1`
   - typings.webcl.webclNumbers.`0x2`
 */
-trait CommandQueueProperties extends js.Object
+trait CommandQueueProperties extends StObject
 object CommandQueueProperties {
   
   @scala.inline

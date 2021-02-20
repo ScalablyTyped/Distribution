@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PermissionScope extends js.Object {
+trait PermissionScope extends StObject {
   
   /**
     * A description of the delegated permissions, intended to be read by an administrator granting the permission on behalf
@@ -67,93 +68,81 @@ object PermissionScope {
   }
   
   @scala.inline
-  implicit class PermissionScopeOps[Self <: PermissionScope] (val x: Self) extends AnyVal {
+  implicit class PermissionScopeMutableBuilder[Self <: PermissionScope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminConsentDescription(value: NullableOption[String]): Self = StObject.set(x, "adminConsentDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminConsentDescriptionNull: Self = StObject.set(x, "adminConsentDescription", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdminConsentDescriptionUndefined: Self = StObject.set(x, "adminConsentDescription", js.undefined)
     
     @scala.inline
-    def setAdminConsentDescription(value: NullableOption[String]): Self = this.set("adminConsentDescription", value.asInstanceOf[js.Any])
+    def setAdminConsentDisplayName(value: NullableOption[String]): Self = StObject.set(x, "adminConsentDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdminConsentDescription: Self = this.set("adminConsentDescription", js.undefined)
+    def setAdminConsentDisplayNameNull: Self = StObject.set(x, "adminConsentDisplayName", null)
     
     @scala.inline
-    def setAdminConsentDescriptionNull: Self = this.set("adminConsentDescription", null)
+    def setAdminConsentDisplayNameUndefined: Self = StObject.set(x, "adminConsentDisplayName", js.undefined)
     
     @scala.inline
-    def setAdminConsentDisplayName(value: NullableOption[String]): Self = this.set("adminConsentDisplayName", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdminConsentDisplayName: Self = this.set("adminConsentDisplayName", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setAdminConsentDisplayNameNull: Self = this.set("adminConsentDisplayName", null)
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOrigin(value: NullableOption[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setOriginNull: Self = StObject.set(x, "origin", null)
     
     @scala.inline
-    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def setOrigin(value: NullableOption[String]): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setOriginNull: Self = this.set("origin", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setType(value: NullableOption[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUserConsentDescription(value: NullableOption[String]): Self = StObject.set(x, "userConsentDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUserConsentDescriptionNull: Self = StObject.set(x, "userConsentDescription", null)
     
     @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setUserConsentDescriptionUndefined: Self = StObject.set(x, "userConsentDescription", js.undefined)
     
     @scala.inline
-    def setUserConsentDescription(value: NullableOption[String]): Self = this.set("userConsentDescription", value.asInstanceOf[js.Any])
+    def setUserConsentDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userConsentDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserConsentDescription: Self = this.set("userConsentDescription", js.undefined)
+    def setUserConsentDisplayNameNull: Self = StObject.set(x, "userConsentDisplayName", null)
     
     @scala.inline
-    def setUserConsentDescriptionNull: Self = this.set("userConsentDescription", null)
+    def setUserConsentDisplayNameUndefined: Self = StObject.set(x, "userConsentDisplayName", js.undefined)
     
     @scala.inline
-    def setUserConsentDisplayName(value: NullableOption[String]): Self = this.set("userConsentDisplayName", value.asInstanceOf[js.Any])
+    def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserConsentDisplayName: Self = this.set("userConsentDisplayName", js.undefined)
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def setUserConsentDisplayNameNull: Self = this.set("userConsentDisplayName", null)
-    
-    @scala.inline
-    def setValue(value: NullableOption[String]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

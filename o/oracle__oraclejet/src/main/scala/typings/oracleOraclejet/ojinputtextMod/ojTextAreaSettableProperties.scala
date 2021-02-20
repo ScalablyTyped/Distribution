@@ -14,6 +14,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.off
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.pending
 import typings.oracleOraclejet.oracleOraclejetStrings.valid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,27 +54,15 @@ object ojTextAreaSettableProperties {
   }
   
   @scala.inline
-  implicit class ojTextAreaSettablePropertiesOps[Self <: ojTextAreaSettableProperties] (val x: Self) extends AnyVal {
+  implicit class ojTextAreaSettablePropertiesMutableBuilder[Self <: ojTextAreaSettableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConverter(value: Converter[_] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConverterNull: Self = StObject.set(x, "converter", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConverter(value: Converter[_] | RegisteredConverter): Self = this.set("converter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConverterNull: Self = this.set("converter", null)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
   }
 }

@@ -5,13 +5,14 @@ import typings.octokitTypes.octokitTypesStrings.`author-date`
 import typings.octokitTypes.octokitTypesStrings.`committer-date`
 import typings.octokitTypes.octokitTypesStrings.asc
 import typings.octokitTypes.octokitTypesStrings.desc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  q :string,   sort :'author-date' | 'committer-date' | undefined,   order :'desc' | 'asc' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'cloak'> */
 @js.native
-trait SearchCommitsEndpoint extends js.Object {
+trait SearchCommitsEndpoint extends StObject {
   
   var mediaType: `18` = js.native
   
@@ -49,48 +50,36 @@ object SearchCommitsEndpoint {
   }
   
   @scala.inline
-  implicit class SearchCommitsEndpointOps[Self <: SearchCommitsEndpoint] (val x: Self) extends AnyVal {
+  implicit class SearchCommitsEndpointMutableBuilder[Self <: SearchCommitsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaType(value: `18`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrder(value: desc | asc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setMediaType(value: `18`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def setOrder(value: desc | asc): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setSort(value: `author-date` | `committer-date`): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePer_page: Self = this.set("per_page", js.undefined)
-    
-    @scala.inline
-    def setSort(value: `author-date` | `committer-date`): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

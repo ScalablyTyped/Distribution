@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PermissionInfo extends js.Object {
+trait PermissionInfo extends StObject {
   
   /**
     * The role of the user.
@@ -26,30 +27,18 @@ object PermissionInfo {
   }
   
   @scala.inline
-  implicit class PermissionInfoOps[Self <: PermissionInfo] (val x: Self) extends AnyVal {
+  implicit class PermissionInfoMutableBuilder[Self <: PermissionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRole(value: RoleType): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: RolePermissionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: RoleType): Self = this.set("Role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
-    
-    @scala.inline
-    def setType(value: RolePermissionType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

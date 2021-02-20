@@ -1,5 +1,6 @@
 package typings.wechatMiniprogram.DB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,27 +21,15 @@ object GeoMultiPoint {
   }
   
   @scala.inline
-  implicit class GeoMultiPointOps[Self <: GeoMultiPoint] (val x: Self) extends AnyVal {
+  implicit class GeoMultiPointMutableBuilder[Self <: GeoMultiPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPoints(value: js.Array[GeoPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPointsVarargs(value: GeoPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPointsVarargs(value: GeoPoint*): Self = this.set("points", js.Array(value :_*))
-    
-    @scala.inline
-    def setPoints(value: js.Array[GeoPoint]): Self = this.set("points", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToJSON(value: () => IGeoJSONMultiPoint): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => IGeoJSONMultiPoint): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

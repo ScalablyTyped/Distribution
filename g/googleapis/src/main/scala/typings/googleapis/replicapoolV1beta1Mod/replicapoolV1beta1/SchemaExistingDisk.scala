@@ -1,5 +1,6 @@
 package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the Pool in READ_ONLY mode.
   */
 @js.native
-trait SchemaExistingDisk extends js.Object {
+trait SchemaExistingDisk extends StObject {
   
   /**
     * How the disk will be attached to the Replica.
@@ -31,30 +32,18 @@ object SchemaExistingDisk {
   }
   
   @scala.inline
-  implicit class SchemaExistingDiskOps[Self <: SchemaExistingDisk] (val x: Self) extends AnyVal {
+  implicit class SchemaExistingDiskMutableBuilder[Self <: SchemaExistingDisk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: SchemaDiskAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: SchemaDiskAttachment): Self = this.set("attachment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachment: Self = this.set("attachment", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

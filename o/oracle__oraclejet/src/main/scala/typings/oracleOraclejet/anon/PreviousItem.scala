@@ -1,6 +1,7 @@
 package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object PreviousItem {
   }
   
   @scala.inline
-  implicit class PreviousItemOps[Self <: PreviousItem[_], K] (val x: Self with PreviousItem[K]) extends AnyVal {
+  implicit class PreviousItemMutableBuilder[Self <: PreviousItem[_], K] (val x: Self with PreviousItem[K]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: typings.std.Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousItem(value: typings.std.Element): Self = StObject.set(x, "previousItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: typings.std.Element): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: K): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousItem(value: typings.std.Element): Self = this.set("previousItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousKey(value: K): Self = this.set("previousKey", value.asInstanceOf[js.Any])
+    def setPreviousKey(value: K): Self = StObject.set(x, "previousKey", value.asInstanceOf[js.Any])
   }
 }

@@ -5,13 +5,14 @@ import typings.blueprintjsCore.breadcrumbMod.IBreadcrumbProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactChild
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/overflow-list/overflowList.IOverflowListProps<@blueprintjs/core.@blueprintjs/core/lib/esm/components/breadcrumbs/breadcrumb.IBreadcrumbProps>> */
 @js.native
-trait PartialIOverflowListProps extends js.Object {
+trait PartialIOverflowListProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -44,81 +45,69 @@ object PartialIOverflowListProps {
   }
   
   @scala.inline
-  implicit class PartialIOverflowListPropsOps[Self <: PartialIOverflowListProps] (val x: Self) extends AnyVal {
+  implicit class PartialIOverflowListPropsMutableBuilder[Self <: PartialIOverflowListProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapseFrom(value: Boundary): Self = StObject.set(x, "collapseFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCollapseFromUndefined: Self = StObject.set(x, "collapseFrom", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setItems(value: js.Array[IBreadcrumbProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseFrom(value: Boundary): Self = this.set("collapseFrom", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteCollapseFrom: Self = this.set("collapseFrom", js.undefined)
+    def setItemsVarargs(value: IBreadcrumbProps*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: IBreadcrumbProps*): Self = this.set("items", js.Array(value :_*))
+    def setMinVisibleItems(value: Double): Self = StObject.set(x, "minVisibleItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[IBreadcrumbProps]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setMinVisibleItemsUndefined: Self = StObject.set(x, "minVisibleItems", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setObserveParents(value: Boolean): Self = StObject.set(x, "observeParents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinVisibleItems(value: Double): Self = this.set("minVisibleItems", value.asInstanceOf[js.Any])
+    def setObserveParentsUndefined: Self = StObject.set(x, "observeParents", js.undefined)
     
     @scala.inline
-    def deleteMinVisibleItems: Self = this.set("minVisibleItems", js.undefined)
+    def setOnOverflow(value: /* overflowItems */ js.Array[IBreadcrumbProps] => Unit): Self = StObject.set(x, "onOverflow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObserveParents(value: Boolean): Self = this.set("observeParents", value.asInstanceOf[js.Any])
+    def setOnOverflowUndefined: Self = StObject.set(x, "onOverflow", js.undefined)
     
     @scala.inline
-    def deleteObserveParents: Self = this.set("observeParents", js.undefined)
+    def setOverflowRenderer(value: /* overflowItems */ js.Array[IBreadcrumbProps] => ReactNode): Self = StObject.set(x, "overflowRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnOverflow(value: /* overflowItems */ js.Array[IBreadcrumbProps] => Unit): Self = this.set("onOverflow", js.Any.fromFunction1(value))
+    def setOverflowRendererUndefined: Self = StObject.set(x, "overflowRenderer", js.undefined)
     
     @scala.inline
-    def deleteOnOverflow: Self = this.set("onOverflow", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowRenderer(value: /* overflowItems */ js.Array[IBreadcrumbProps] => ReactNode): Self = this.set("overflowRenderer", js.Any.fromFunction1(value))
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteOverflowRenderer: Self = this.set("overflowRenderer", js.undefined)
+    def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setVisibleItemRenderer(value: (/* item */ IBreadcrumbProps, /* index */ Double) => ReactChild): Self = StObject.set(x, "visibleItemRenderer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = this.set("tagName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagName: Self = this.set("tagName", js.undefined)
-    
-    @scala.inline
-    def setVisibleItemRenderer(value: (/* item */ IBreadcrumbProps, /* index */ Double) => ReactChild): Self = this.set("visibleItemRenderer", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteVisibleItemRenderer: Self = this.set("visibleItemRenderer", js.undefined)
+    def setVisibleItemRendererUndefined: Self = StObject.set(x, "visibleItemRenderer", js.undefined)
   }
 }

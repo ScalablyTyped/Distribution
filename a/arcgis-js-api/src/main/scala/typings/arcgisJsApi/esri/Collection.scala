@@ -8,6 +8,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`before-add`
 import typings.arcgisJsApi.arcgisJsApiStrings.`before-changes`
 import typings.arcgisJsApi.arcgisJsApiStrings.`before-remove`
 import typings.arcgisJsApi.arcgisJsApiStrings.change
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

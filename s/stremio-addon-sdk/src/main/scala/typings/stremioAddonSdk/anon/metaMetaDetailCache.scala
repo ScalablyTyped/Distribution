@@ -1,13 +1,14 @@
 package typings.stremioAddonSdk.anon
 
 import typings.stremioAddonSdk.mod.MetaDetail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  meta :stremio-addon-sdk.stremio-addon-sdk.MetaDetail} & stremio-addon-sdk.stremio-addon-sdk.Cache */
 @js.native
-trait metaMetaDetailCache extends js.Object {
+trait metaMetaDetailCache extends StObject {
   
   /**
     * (in seconds) sets the Cache-Control header to max-age=$cacheMaxAge
@@ -36,39 +37,27 @@ object metaMetaDetailCache {
   }
   
   @scala.inline
-  implicit class metaMetaDetailCacheOps[Self <: metaMetaDetailCache] (val x: Self) extends AnyVal {
+  implicit class metaMetaDetailCacheMutableBuilder[Self <: metaMetaDetailCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeta(value: MetaDetail): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: MetaDetail): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheMaxAge(value: Double): Self = this.set("cacheMaxAge", value.asInstanceOf[js.Any])
+    def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
     
     @scala.inline
-    def deleteCacheMaxAge: Self = this.set("cacheMaxAge", js.undefined)
+    def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaleError(value: Double): Self = this.set("staleError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaleError: Self = this.set("staleError", js.undefined)
-    
-    @scala.inline
-    def setStaleRevalidate(value: Double): Self = this.set("staleRevalidate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaleRevalidate: Self = this.set("staleRevalidate", js.undefined)
+    def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
   }
 }

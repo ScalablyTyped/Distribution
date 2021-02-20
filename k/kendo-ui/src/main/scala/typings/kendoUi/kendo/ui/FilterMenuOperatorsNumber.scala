@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterMenuOperatorsNumber extends js.Object {
+trait FilterMenuOperatorsNumber extends StObject {
   
   @JSName("eq")
   var eq_FFilterMenuOperatorsNumber: js.UndefOr[String] = js.native
@@ -33,66 +34,54 @@ object FilterMenuOperatorsNumber {
   }
   
   @scala.inline
-  implicit class FilterMenuOperatorsNumberOps[Self <: FilterMenuOperatorsNumber] (val x: Self) extends AnyVal {
+  implicit class FilterMenuOperatorsNumberMutableBuilder[Self <: FilterMenuOperatorsNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGt(value: String): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEq(value: String): Self = this.set("eq", value.asInstanceOf[js.Any])
+    def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
     
     @scala.inline
-    def deleteEq: Self = this.set("eq", js.undefined)
+    def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGt(value: String): Self = this.set("gt", value.asInstanceOf[js.Any])
+    def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
     
     @scala.inline
-    def deleteGt: Self = this.set("gt", js.undefined)
+    def setIsnotnull(value: String): Self = StObject.set(x, "isnotnull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGte(value: String): Self = this.set("gte", value.asInstanceOf[js.Any])
+    def setIsnotnullUndefined: Self = StObject.set(x, "isnotnull", js.undefined)
     
     @scala.inline
-    def deleteGte: Self = this.set("gte", js.undefined)
+    def setIsnull(value: String): Self = StObject.set(x, "isnull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsnotnull(value: String): Self = this.set("isnotnull", value.asInstanceOf[js.Any])
+    def setIsnullUndefined: Self = StObject.set(x, "isnull", js.undefined)
     
     @scala.inline
-    def deleteIsnotnull: Self = this.set("isnotnull", js.undefined)
+    def setLt(value: String): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsnull(value: String): Self = this.set("isnull", value.asInstanceOf[js.Any])
+    def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
     
     @scala.inline
-    def deleteIsnull: Self = this.set("isnull", js.undefined)
+    def setLte(value: String): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLt(value: String): Self = this.set("lt", value.asInstanceOf[js.Any])
+    def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
     
     @scala.inline
-    def deleteLt: Self = this.set("lt", js.undefined)
+    def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLte(value: String): Self = this.set("lte", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLte: Self = this.set("lte", js.undefined)
-    
-    @scala.inline
-    def setNeq(value: String): Self = this.set("neq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNeq: Self = this.set("neq", js.undefined)
+    def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
   }
 }

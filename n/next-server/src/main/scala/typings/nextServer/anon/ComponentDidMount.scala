@@ -3,12 +3,13 @@ package typings.nextServer.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactInstance
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentDidMount extends js.Object {
+trait ComponentDidMount extends StObject {
   
   def componentDidMount(): Unit = js.native
   

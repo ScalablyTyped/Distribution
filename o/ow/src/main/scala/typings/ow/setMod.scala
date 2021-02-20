@@ -3,14 +3,14 @@ package typings.ow
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ow/dist/source/predicates/set", JSImport.Namespace)
-@js.native
-object setMod extends js.Object {
+object setMod {
   
+  @JSImport("ow/dist/source/predicates/set", "SetPredicate")
   @js.native
   /**
     @hidden

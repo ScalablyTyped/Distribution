@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParseConfigHost extends js.Object {
+trait ParseConfigHost extends StObject {
   
   /**
     * Gets a value indicating whether the specified path exists and is a file.

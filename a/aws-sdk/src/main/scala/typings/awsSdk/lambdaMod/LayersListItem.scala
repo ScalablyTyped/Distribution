@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayersListItem extends js.Object {
+trait LayersListItem extends StObject {
   
   /**
     * The newest version of the layer.
@@ -31,36 +32,24 @@ object LayersListItem {
   }
   
   @scala.inline
-  implicit class LayersListItemOps[Self <: LayersListItem] (val x: Self) extends AnyVal {
+  implicit class LayersListItemMutableBuilder[Self <: LayersListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatestMatchingVersion(value: LayerVersionsListItem): Self = StObject.set(x, "LatestMatchingVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatestMatchingVersionUndefined: Self = StObject.set(x, "LatestMatchingVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayerArn(value: LayerArn): Self = StObject.set(x, "LayerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestMatchingVersion(value: LayerVersionsListItem): Self = this.set("LatestMatchingVersion", value.asInstanceOf[js.Any])
+    def setLayerArnUndefined: Self = StObject.set(x, "LayerArn", js.undefined)
     
     @scala.inline
-    def deleteLatestMatchingVersion: Self = this.set("LatestMatchingVersion", js.undefined)
+    def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerArn(value: LayerArn): Self = this.set("LayerArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayerArn: Self = this.set("LayerArn", js.undefined)
-    
-    @scala.inline
-    def setLayerName(value: LayerName): Self = this.set("LayerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayerName: Self = this.set("LayerName", js.undefined)
+    def setLayerNameUndefined: Self = StObject.set(x, "LayerName", js.undefined)
   }
 }

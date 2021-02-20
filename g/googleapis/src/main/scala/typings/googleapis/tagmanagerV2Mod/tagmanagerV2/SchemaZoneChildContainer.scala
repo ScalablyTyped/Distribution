@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a child container of a Zone.
   */
 @js.native
-trait SchemaZoneChildContainer extends js.Object {
+trait SchemaZoneChildContainer extends StObject {
   
   /**
     * The zone&#39;s nickname for the child container.
@@ -29,30 +30,18 @@ object SchemaZoneChildContainer {
   }
   
   @scala.inline
-  implicit class SchemaZoneChildContainerOps[Self <: SchemaZoneChildContainer] (val x: Self) extends AnyVal {
+  implicit class SchemaZoneChildContainerMutableBuilder[Self <: SchemaZoneChildContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNickname: Self = this.set("nickname", js.undefined)
-    
-    @scala.inline
-    def setPublicId(value: String): Self = this.set("publicId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicId: Self = this.set("publicId", js.undefined)
+    def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
   }
 }

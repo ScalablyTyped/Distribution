@@ -1,6 +1,7 @@
 package typings.jqueryCleditor
 
 import typings.std.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * which in turn hold multiple buttons.
   */
 @js.native
-trait CLEditor extends js.Object {
+trait CLEditor extends StObject {
   
   @JSName("$area")
   var $area: JQuery = js.native

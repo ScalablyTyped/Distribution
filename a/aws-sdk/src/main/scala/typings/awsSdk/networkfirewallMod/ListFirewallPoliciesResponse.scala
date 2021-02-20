@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFirewallPoliciesResponse extends js.Object {
+trait ListFirewallPoliciesResponse extends StObject {
   
   /**
     * The metadata for the firewall policies. Depending on your setting for max results and the number of firewall policies that you have, this might not be the full list. 
@@ -26,33 +27,21 @@ object ListFirewallPoliciesResponse {
   }
   
   @scala.inline
-  implicit class ListFirewallPoliciesResponseOps[Self <: ListFirewallPoliciesResponse] (val x: Self) extends AnyVal {
+  implicit class ListFirewallPoliciesResponseMutableBuilder[Self <: ListFirewallPoliciesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirewallPolicies(value: FirewallPolicies): Self = StObject.set(x, "FirewallPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirewallPoliciesUndefined: Self = StObject.set(x, "FirewallPolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirewallPoliciesVarargs(value: FirewallPolicyMetadata*): Self = StObject.set(x, "FirewallPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setFirewallPoliciesVarargs(value: FirewallPolicyMetadata*): Self = this.set("FirewallPolicies", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallPolicies(value: FirewallPolicies): Self = this.set("FirewallPolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirewallPolicies: Self = this.set("FirewallPolicies", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

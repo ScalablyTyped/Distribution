@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworkscmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeServersResponse extends js.Object {
+trait DescribeServersResponse extends StObject {
   
   /**
     * This is not currently implemented for DescribeServers requests. 
@@ -26,33 +27,21 @@ object DescribeServersResponse {
   }
   
   @scala.inline
-  implicit class DescribeServersResponseOps[Self <: DescribeServersResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeServersResponseMutableBuilder[Self <: DescribeServersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServers(value: Servers): Self = StObject.set(x, "Servers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setServersUndefined: Self = StObject.set(x, "Servers", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setServersVarargs(value: Server*): Self = this.set("Servers", js.Array(value :_*))
-    
-    @scala.inline
-    def setServers(value: Servers): Self = this.set("Servers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServers: Self = this.set("Servers", js.undefined)
+    def setServersVarargs(value: Server*): Self = StObject.set(x, "Servers", js.Array(value :_*))
   }
 }

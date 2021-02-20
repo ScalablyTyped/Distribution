@@ -1,5 +1,6 @@
 package typings.gitana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,16 +20,30 @@ class Definition protected () extends Node {
   
   def removeFormAssociation(formKey: js.Any): js.Any = js.native
 }
-/* static members */
-@JSImport("gitana", "Definition")
-@js.native
-object Definition extends js.Object {
+object Definition {
   
+  /* static member */
+  @JSImport("gitana", "Definition.extend")
+  @js.native
   def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
   
+  /* static member */
+  @JSImport("gitana", "Definition.forEach")
+  @js.native
   def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
   
+  /* static member */
+  @JSImport("gitana", "Definition.implement")
+  @js.native
   def implement(args: js.Any*): js.Any = js.native
   
-  def valueOf(`type`: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("gitana", "Definition.toString")
+  @js.native
+  def toString_(): js.Any = js.native
+  
+  /* static member */
+  @JSImport("gitana", "Definition.valueOf")
+  @js.native
+  def valueOf_(`type`: js.Any): js.Any = js.native
 }

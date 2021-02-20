@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Description extends js.Object {
+trait Description extends StObject {
   
   var description: ToString | js.Function0[String] | String = js.native
 }
@@ -18,24 +19,12 @@ object Description {
   }
   
   @scala.inline
-  implicit class DescriptionOps[Self <: Description] (val x: Self) extends AnyVal {
+  implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: ToString | js.Function0[String] | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDescriptionFunction0(value: () => String): Self = this.set("description", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDescription(value: ToString | js.Function0[String] | String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescriptionFunction0(value: () => String): Self = StObject.set(x, "description", js.Any.fromFunction0(value))
   }
 }

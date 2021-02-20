@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the capabilities of journal station of a point-of-service printer. */
 @js.native
-trait JournalPrinterCapabilities extends js.Object {
+trait JournalPrinterCapabilities extends StObject {
   
   /** Gets information about the sensors that the journal printer station has available to report the status of the printer cartridge. */
   var cartridgeSensors: PosPrinterCartridgeSensors = js.native
@@ -71,57 +72,45 @@ object JournalPrinterCapabilities {
   }
   
   @scala.inline
-  implicit class JournalPrinterCapabilitiesOps[Self <: JournalPrinterCapabilities] (val x: Self) extends AnyVal {
+  implicit class JournalPrinterCapabilitiesMutableBuilder[Self <: JournalPrinterCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCartridgeSensors(value: PosPrinterCartridgeSensors): Self = StObject.set(x, "cartridgeSensors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorCartridgeCapabilities(value: PosPrinterColorCapabilities): Self = StObject.set(x, "colorCartridgeCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsBoldSupported(value: Boolean): Self = StObject.set(x, "isBoldSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCartridgeSensors(value: PosPrinterCartridgeSensors): Self = this.set("cartridgeSensors", value.asInstanceOf[js.Any])
+    def setIsDoubleHighDoubleWidePrintSupported(value: Boolean): Self = StObject.set(x, "isDoubleHighDoubleWidePrintSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorCartridgeCapabilities(value: PosPrinterColorCapabilities): Self = this.set("colorCartridgeCapabilities", value.asInstanceOf[js.Any])
+    def setIsDoubleHighPrintSupported(value: Boolean): Self = StObject.set(x, "isDoubleHighPrintSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBoldSupported(value: Boolean): Self = this.set("isBoldSupported", value.asInstanceOf[js.Any])
+    def setIsDoubleWidePrintSupported(value: Boolean): Self = StObject.set(x, "isDoubleWidePrintSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDoubleHighDoubleWidePrintSupported(value: Boolean): Self = this.set("isDoubleHighDoubleWidePrintSupported", value.asInstanceOf[js.Any])
+    def setIsDualColorSupported(value: Boolean): Self = StObject.set(x, "isDualColorSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDoubleHighPrintSupported(value: Boolean): Self = this.set("isDoubleHighPrintSupported", value.asInstanceOf[js.Any])
+    def setIsItalicSupported(value: Boolean): Self = StObject.set(x, "isItalicSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDoubleWidePrintSupported(value: Boolean): Self = this.set("isDoubleWidePrintSupported", value.asInstanceOf[js.Any])
+    def setIsPaperEmptySensorSupported(value: Boolean): Self = StObject.set(x, "isPaperEmptySensorSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDualColorSupported(value: Boolean): Self = this.set("isDualColorSupported", value.asInstanceOf[js.Any])
+    def setIsPaperNearEndSensorSupported(value: Boolean): Self = StObject.set(x, "isPaperNearEndSensorSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsItalicSupported(value: Boolean): Self = this.set("isItalicSupported", value.asInstanceOf[js.Any])
+    def setIsPrinterPresent(value: Boolean): Self = StObject.set(x, "isPrinterPresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPaperEmptySensorSupported(value: Boolean): Self = this.set("isPaperEmptySensorSupported", value.asInstanceOf[js.Any])
+    def setIsUnderlineSupported(value: Boolean): Self = StObject.set(x, "isUnderlineSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPaperNearEndSensorSupported(value: Boolean): Self = this.set("isPaperNearEndSensorSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPrinterPresent(value: Boolean): Self = this.set("isPrinterPresent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsUnderlineSupported(value: Boolean): Self = this.set("isUnderlineSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedCharactersPerLine(value: IVectorView[Double]): Self = this.set("supportedCharactersPerLine", value.asInstanceOf[js.Any])
+    def setSupportedCharactersPerLine(value: IVectorView[Double]): Self = StObject.set(x, "supportedCharactersPerLine", value.asInstanceOf[js.Any])
   }
 }

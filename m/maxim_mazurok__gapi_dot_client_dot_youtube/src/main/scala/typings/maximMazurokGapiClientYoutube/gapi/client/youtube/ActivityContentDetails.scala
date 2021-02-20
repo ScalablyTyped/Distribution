@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityContentDetails extends js.Object {
+trait ActivityContentDetails extends StObject {
   
   /** The bulletin object contains details about a channel bulletin post. This object is only present if the snippet.type is bulletin. */
   var bulletin: js.UndefOr[ActivityContentDetailsBulletin] = js.native
@@ -49,84 +50,72 @@ object ActivityContentDetails {
   }
   
   @scala.inline
-  implicit class ActivityContentDetailsOps[Self <: ActivityContentDetails] (val x: Self) extends AnyVal {
+  implicit class ActivityContentDetailsMutableBuilder[Self <: ActivityContentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulletin(value: ActivityContentDetailsBulletin): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulletinUndefined: Self = StObject.set(x, "bulletin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelItem(value: ActivityContentDetailsChannelItem): Self = StObject.set(x, "channelItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulletin(value: ActivityContentDetailsBulletin): Self = this.set("bulletin", value.asInstanceOf[js.Any])
+    def setChannelItemUndefined: Self = StObject.set(x, "channelItem", js.undefined)
     
     @scala.inline
-    def deleteBulletin: Self = this.set("bulletin", js.undefined)
+    def setComment(value: ActivityContentDetailsComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelItem(value: ActivityContentDetailsChannelItem): Self = this.set("channelItem", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteChannelItem: Self = this.set("channelItem", js.undefined)
+    def setFavorite(value: ActivityContentDetailsFavorite): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: ActivityContentDetailsComment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setFavoriteUndefined: Self = StObject.set(x, "favorite", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setLike(value: ActivityContentDetailsLike): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFavorite(value: ActivityContentDetailsFavorite): Self = this.set("favorite", value.asInstanceOf[js.Any])
+    def setLikeUndefined: Self = StObject.set(x, "like", js.undefined)
     
     @scala.inline
-    def deleteFavorite: Self = this.set("favorite", js.undefined)
+    def setPlaylistItem(value: ActivityContentDetailsPlaylistItem): Self = StObject.set(x, "playlistItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLike(value: ActivityContentDetailsLike): Self = this.set("like", value.asInstanceOf[js.Any])
+    def setPlaylistItemUndefined: Self = StObject.set(x, "playlistItem", js.undefined)
     
     @scala.inline
-    def deleteLike: Self = this.set("like", js.undefined)
+    def setPromotedItem(value: ActivityContentDetailsPromotedItem): Self = StObject.set(x, "promotedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylistItem(value: ActivityContentDetailsPlaylistItem): Self = this.set("playlistItem", value.asInstanceOf[js.Any])
+    def setPromotedItemUndefined: Self = StObject.set(x, "promotedItem", js.undefined)
     
     @scala.inline
-    def deletePlaylistItem: Self = this.set("playlistItem", js.undefined)
+    def setRecommendation(value: ActivityContentDetailsRecommendation): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotedItem(value: ActivityContentDetailsPromotedItem): Self = this.set("promotedItem", value.asInstanceOf[js.Any])
+    def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
     
     @scala.inline
-    def deletePromotedItem: Self = this.set("promotedItem", js.undefined)
+    def setSocial(value: ActivityContentDetailsSocial): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendation(value: ActivityContentDetailsRecommendation): Self = this.set("recommendation", value.asInstanceOf[js.Any])
+    def setSocialUndefined: Self = StObject.set(x, "social", js.undefined)
     
     @scala.inline
-    def deleteRecommendation: Self = this.set("recommendation", js.undefined)
+    def setSubscription(value: ActivityContentDetailsSubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocial(value: ActivityContentDetailsSocial): Self = this.set("social", value.asInstanceOf[js.Any])
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
     @scala.inline
-    def deleteSocial: Self = this.set("social", js.undefined)
+    def setUpload(value: ActivityContentDetailsUpload): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription(value: ActivityContentDetailsSubscription): Self = this.set("subscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscription: Self = this.set("subscription", js.undefined)
-    
-    @scala.inline
-    def setUpload(value: ActivityContentDetailsUpload): Self = this.set("upload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpload: Self = this.set("upload", js.undefined)
+    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

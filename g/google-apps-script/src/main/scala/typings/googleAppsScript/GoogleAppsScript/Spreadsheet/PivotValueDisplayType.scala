@@ -1,17 +1,18 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PivotValueDisplayType extends js.Object
+sealed trait PivotValueDisplayType extends StObject
 /**
   * An enumeration of ways to display a pivot value as a function of another value.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.PivotValueDisplayType")
 @js.native
-object PivotValueDisplayType extends js.Object {
+object PivotValueDisplayType extends StObject {
   
   @js.native
   sealed trait DEFAULT extends PivotValueDisplayType

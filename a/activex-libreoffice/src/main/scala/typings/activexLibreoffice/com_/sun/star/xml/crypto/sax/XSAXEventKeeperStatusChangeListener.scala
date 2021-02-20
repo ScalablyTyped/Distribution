@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.crypto.sax
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,27 +49,15 @@ object XSAXEventKeeperStatusChangeListener {
   }
   
   @scala.inline
-  implicit class XSAXEventKeeperStatusChangeListenerOps[Self <: XSAXEventKeeperStatusChangeListener] (val x: Self) extends AnyVal {
+  implicit class XSAXEventKeeperStatusChangeListenerMutableBuilder[Self <: XSAXEventKeeperStatusChangeListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockingStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "blockingStatusChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "bufferStatusChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlockingStatusChanged(value: Boolean => Unit): Self = this.set("blockingStatusChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setBufferStatusChanged(value: Boolean => Unit): Self = this.set("bufferStatusChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCollectionStatusChanged(value: Boolean => Unit): Self = this.set("collectionStatusChanged", js.Any.fromFunction1(value))
+    def setCollectionStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "collectionStatusChanged", js.Any.fromFunction1(value))
   }
 }

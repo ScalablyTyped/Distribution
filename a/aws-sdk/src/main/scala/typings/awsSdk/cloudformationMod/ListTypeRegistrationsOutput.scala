@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTypeRegistrationsOutput extends js.Object {
+trait ListTypeRegistrationsOutput extends StObject {
   
   /**
     * If the request doesn't return all of the remaining results, NextToken is set to a token. To retrieve the next set of results, call this action again and assign that token to the request object's NextToken parameter. If the request returns all results, NextToken is set to null.
@@ -26,33 +27,21 @@ object ListTypeRegistrationsOutput {
   }
   
   @scala.inline
-  implicit class ListTypeRegistrationsOutputOps[Self <: ListTypeRegistrationsOutput] (val x: Self) extends AnyVal {
+  implicit class ListTypeRegistrationsOutputMutableBuilder[Self <: ListTypeRegistrationsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegistrationTokenList(value: RegistrationTokenList): Self = StObject.set(x, "RegistrationTokenList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRegistrationTokenListUndefined: Self = StObject.set(x, "RegistrationTokenList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRegistrationTokenListVarargs(value: RegistrationToken*): Self = this.set("RegistrationTokenList", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegistrationTokenList(value: RegistrationTokenList): Self = this.set("RegistrationTokenList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistrationTokenList: Self = this.set("RegistrationTokenList", js.undefined)
+    def setRegistrationTokenListVarargs(value: RegistrationToken*): Self = StObject.set(x, "RegistrationTokenList", js.Array(value :_*))
   }
 }

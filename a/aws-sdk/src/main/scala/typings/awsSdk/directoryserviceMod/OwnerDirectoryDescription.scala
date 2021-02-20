@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OwnerDirectoryDescription extends js.Object {
+trait OwnerDirectoryDescription extends StObject {
   
   /**
     * Identifier of the directory owner account.
@@ -46,57 +47,45 @@ object OwnerDirectoryDescription {
   }
   
   @scala.inline
-  implicit class OwnerDirectoryDescriptionOps[Self <: OwnerDirectoryDescription] (val x: Self) extends AnyVal {
+  implicit class OwnerDirectoryDescriptionMutableBuilder[Self <: OwnerDirectoryDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: CustomerId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: CustomerId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setDnsIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "DnsIpAddrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setDnsIpAddrsUndefined: Self = StObject.set(x, "DnsIpAddrs", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
     
     @scala.inline
-    def setDnsIpAddrsVarargs(value: IpAddr*): Self = this.set("DnsIpAddrs", js.Array(value :_*))
+    def setRadiusSettings(value: RadiusSettings): Self = StObject.set(x, "RadiusSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsIpAddrs(value: DnsIpAddrs): Self = this.set("DnsIpAddrs", value.asInstanceOf[js.Any])
+    def setRadiusSettingsUndefined: Self = StObject.set(x, "RadiusSettings", js.undefined)
     
     @scala.inline
-    def deleteDnsIpAddrs: Self = this.set("DnsIpAddrs", js.undefined)
+    def setRadiusStatus(value: RadiusStatus): Self = StObject.set(x, "RadiusStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusSettings(value: RadiusSettings): Self = this.set("RadiusSettings", value.asInstanceOf[js.Any])
+    def setRadiusStatusUndefined: Self = StObject.set(x, "RadiusStatus", js.undefined)
     
     @scala.inline
-    def deleteRadiusSettings: Self = this.set("RadiusSettings", js.undefined)
+    def setVpcSettings(value: DirectoryVpcSettingsDescription): Self = StObject.set(x, "VpcSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusStatus(value: RadiusStatus): Self = this.set("RadiusStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadiusStatus: Self = this.set("RadiusStatus", js.undefined)
-    
-    @scala.inline
-    def setVpcSettings(value: DirectoryVpcSettingsDescription): Self = this.set("VpcSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcSettings: Self = this.set("VpcSettings", js.undefined)
+    def setVpcSettingsUndefined: Self = StObject.set(x, "VpcSettings", js.undefined)
   }
 }

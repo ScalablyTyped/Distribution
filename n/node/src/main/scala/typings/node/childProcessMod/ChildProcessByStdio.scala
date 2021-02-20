@@ -2,6 +2,7 @@ package typings.node.childProcessMod
 
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,14 @@ trait ChildProcessByStdio[I /* <: Null | Writable */, O /* <: Null | Readable */
   var stdin_ChildProcessByStdio: I = js.native
   
   @JSName("stdio")
-  val stdio_ChildProcessByStdio: js.Tuple5[I, O, E, js.UndefOr[Readable | Writable | Null], js.UndefOr[Readable | Writable | Null]] = js.native
+  val stdio_ChildProcessByStdio: js.Tuple5[
+    I, 
+    O, 
+    E, 
+    js.UndefOr[Readable | Writable | Null], 
+    js.UndefOr[(// extra, no modification
+  Readable) | Writable | Null]
+  ] = js.native
   
   @JSName("stdout")
   var stdout_ChildProcessByStdio: O = js.native

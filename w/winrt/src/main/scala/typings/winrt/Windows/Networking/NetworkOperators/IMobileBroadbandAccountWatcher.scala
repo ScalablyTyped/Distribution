@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMobileBroadbandAccountWatcher extends js.Object {
+trait IMobileBroadbandAccountWatcher extends StObject {
   
   var onaccountadded: js.Any = js.native
   
@@ -41,42 +42,30 @@ object IMobileBroadbandAccountWatcher {
   }
   
   @scala.inline
-  implicit class IMobileBroadbandAccountWatcherOps[Self <: IMobileBroadbandAccountWatcher] (val x: Self) extends AnyVal {
+  implicit class IMobileBroadbandAccountWatcherMutableBuilder[Self <: IMobileBroadbandAccountWatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnaccountadded(value: js.Any): Self = StObject.set(x, "onaccountadded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnaccountremoved(value: js.Any): Self = StObject.set(x, "onaccountremoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnaccountupdated(value: js.Any): Self = StObject.set(x, "onaccountupdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnaccountadded(value: js.Any): Self = this.set("onaccountadded", value.asInstanceOf[js.Any])
+    def setOnenumerationcompleted(value: js.Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnaccountremoved(value: js.Any): Self = this.set("onaccountremoved", value.asInstanceOf[js.Any])
+    def setOnstopped(value: js.Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnaccountupdated(value: js.Any): Self = this.set("onaccountupdated", value.asInstanceOf[js.Any])
+    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnenumerationcompleted(value: js.Any): Self = this.set("onenumerationcompleted", value.asInstanceOf[js.Any])
+    def setStatus(value: MobileBroadbandAccountWatcherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnstopped(value: js.Any): Self = this.set("onstopped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: () => Unit): Self = this.set("start", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStatus(value: MobileBroadbandAccountWatcherStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

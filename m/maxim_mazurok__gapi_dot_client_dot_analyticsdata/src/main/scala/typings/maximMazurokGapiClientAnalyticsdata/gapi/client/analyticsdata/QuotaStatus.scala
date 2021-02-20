@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuotaStatus extends js.Object {
+trait QuotaStatus extends StObject {
   
   /** Quota consumed by this request. */
   var consumed: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object QuotaStatus {
   }
   
   @scala.inline
-  implicit class QuotaStatusOps[Self <: QuotaStatus] (val x: Self) extends AnyVal {
+  implicit class QuotaStatusMutableBuilder[Self <: QuotaStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumed(value: Double): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumedUndefined: Self = StObject.set(x, "consumed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumed(value: Double): Self = this.set("consumed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConsumed: Self = this.set("consumed", js.undefined)
-    
-    @scala.inline
-    def setRemaining(value: Double): Self = this.set("remaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemaining: Self = this.set("remaining", js.undefined)
+    def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaStatefulPolicyPreservedStateDiskDevice extends js.Object {
+trait SchemaStatefulPolicyPreservedStateDiskDevice extends StObject {
   
   /**
     * These stateful disks will never be deleted during autohealing, update or
@@ -25,24 +26,12 @@ object SchemaStatefulPolicyPreservedStateDiskDevice {
   }
   
   @scala.inline
-  implicit class SchemaStatefulPolicyPreservedStateDiskDeviceOps[Self <: SchemaStatefulPolicyPreservedStateDiskDevice] (val x: Self) extends AnyVal {
+  implicit class SchemaStatefulPolicyPreservedStateDiskDeviceMutableBuilder[Self <: SchemaStatefulPolicyPreservedStateDiskDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDelete(value: String): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoDelete(value: String): Self = this.set("autoDelete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoDelete: Self = this.set("autoDelete", js.undefined)
+    def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
   }
 }

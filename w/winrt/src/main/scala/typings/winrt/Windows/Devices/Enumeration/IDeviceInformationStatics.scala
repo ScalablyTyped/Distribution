@@ -2,12 +2,13 @@ package typings.winrt.Windows.Devices.Enumeration
 
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDeviceInformationStatics extends js.Object {
+trait IDeviceInformationStatics extends StObject {
   
   def createFromIdAsync(id: String): IAsyncOperation[DeviceInformation] = js.native
   def createFromIdAsync(id: String, additionalProperties: IIterable[String]): IAsyncOperation[DeviceInformation] = js.native

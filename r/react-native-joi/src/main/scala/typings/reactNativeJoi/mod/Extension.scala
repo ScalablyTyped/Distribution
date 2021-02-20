@@ -1,11 +1,12 @@
 package typings.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Extension extends js.Object {
+trait Extension extends StObject {
   
   var base: js.UndefOr[Schema] = js.native
   
@@ -48,28 +49,13 @@ object Extension {
   }
   
   @scala.inline
-  implicit class ExtensionOps[Self <: Extension] (val x: Self) extends AnyVal {
+  implicit class ExtensionMutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: Schema): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBase(value: Schema): Self = this.set("base", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
     def setCoerce(
@@ -80,25 +66,28 @@ object Extension {
           /* options */ ValidationOptions, 
           _
         ]
-    ): Self = this.set("coerce", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCoerce: Self = this.set("coerce", js.undefined)
+    def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
     
     @scala.inline
-    def setDescribe(value: js.ThisFunction1[/* this */ Schema, /* description */ Description_, Description_]): Self = this.set("describe", value.asInstanceOf[js.Any])
+    def setDescribe(value: js.ThisFunction1[/* this */ Schema, /* description */ Description_, Description_]): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescribe: Self = this.set("describe", js.undefined)
+    def setDescribeUndefined: Self = StObject.set(x, "describe", js.undefined)
     
     @scala.inline
-    def setLanguage(value: LanguageOptions): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLanguage(value: LanguageOptions): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLanguageNull: Self = StObject.set(x, "language", null)
     
     @scala.inline
-    def setLanguageNull: Self = this.set("language", null)
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPre(
@@ -109,18 +98,18 @@ object Extension {
           /* options */ ValidationOptions, 
           _
         ]
-    ): Self = this.set("pre", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePre: Self = this.set("pre", js.undefined)
+    def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
     @scala.inline
-    def setRulesVarargs(value: Rules[js.Any]*): Self = this.set("rules", js.Array(value :_*))
+    def setRules(value: js.Array[Rules[_]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: js.Array[Rules[_]]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setRulesVarargs(value: Rules[js.Any]*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

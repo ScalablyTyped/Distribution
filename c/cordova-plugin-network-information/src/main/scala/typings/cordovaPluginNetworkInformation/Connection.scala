@@ -1,6 +1,7 @@
 package typings.cordovaPluginNetworkInformation
 
 import typings.std.EventListenerOrEventListenerObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * about the device's cellular and wifi connection.
   */
 @js.native
-trait Connection extends js.Object {
+trait Connection extends StObject {
   
   def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, useCapture: Boolean): Unit = js.native

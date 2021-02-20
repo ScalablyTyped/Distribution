@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sheet extends js.Object {
+trait Sheet extends StObject {
   
   /**
     * The name of a sheet. This name is displayed on the sheet's tab in the QuickSight console.
@@ -26,30 +27,18 @@ object Sheet {
   }
   
   @scala.inline
-  implicit class SheetOps[Self <: Sheet] (val x: Self) extends AnyVal {
+  implicit class SheetMutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSheetId(value: RestrictiveResourceId): Self = StObject.set(x, "SheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setSheetId(value: RestrictiveResourceId): Self = this.set("SheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetId: Self = this.set("SheetId", js.undefined)
+    def setSheetIdUndefined: Self = StObject.set(x, "SheetId", js.undefined)
   }
 }

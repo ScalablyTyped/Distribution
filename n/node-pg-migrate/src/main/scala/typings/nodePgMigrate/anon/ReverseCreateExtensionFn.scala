@@ -4,12 +4,13 @@ import typings.nodePgMigrate.extensionsTypesMod.CreateExtensionFn
 import typings.nodePgMigrate.extensionsTypesMod.CreateExtensionOptions
 import typings.nodePgMigrate.extensionsTypesMod.StringExtension
 import typings.nodePgMigrate.generalTypesMod.DropOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseCreateExtensionFn extends js.Object {
+trait ReverseCreateExtensionFn extends StObject {
   
   def reverse(extension: js.Array[StringExtension]): String | js.Array[String] = js.native
   def reverse(extension: js.Array[StringExtension], options: CreateExtensionOptions with DropOptions): String | js.Array[String] = js.native

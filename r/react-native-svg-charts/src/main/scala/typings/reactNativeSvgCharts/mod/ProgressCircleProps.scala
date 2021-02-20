@@ -2,12 +2,13 @@ package typings.reactNativeSvgCharts.mod
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressCircleProps extends js.Object {
+trait ProgressCircleProps extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.native
   
@@ -36,72 +37,60 @@ object ProgressCircleProps {
   }
   
   @scala.inline
-  implicit class ProgressCirclePropsOps[Self <: ProgressCircleProps] (val x: Self) extends AnyVal {
+  implicit class ProgressCirclePropsMutableBuilder[Self <: ProgressCircleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateDuration(value: Double): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimateDurationUndefined: Self = StObject.set(x, "animateDuration", js.undefined)
     
     @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def setAnimateDuration(value: Double): Self = this.set("animateDuration", value.asInstanceOf[js.Any])
+    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimateDuration: Self = this.set("animateDuration", js.undefined)
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressColor(value: String): Self = this.set("progressColor", value.asInstanceOf[js.Any])
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def deleteProgressColor: Self = this.set("progressColor", js.undefined)
+    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

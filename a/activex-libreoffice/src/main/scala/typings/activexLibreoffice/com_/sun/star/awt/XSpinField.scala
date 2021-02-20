@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,39 +52,27 @@ object XSpinField {
   }
   
   @scala.inline
-  implicit class XSpinFieldOps[Self <: XSpinField] (val x: Self) extends AnyVal {
+  implicit class XSpinFieldMutableBuilder[Self <: XSpinField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSpinListener(value: XSpinListener => Unit): Self = StObject.set(x, "addSpinListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDown(value: () => Unit): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableRepeat(value: Boolean => Unit): Self = StObject.set(x, "enableRepeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddSpinListener(value: XSpinListener => Unit): Self = this.set("addSpinListener", js.Any.fromFunction1(value))
+    def setFirst(value: () => Unit): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDown(value: () => Unit): Self = this.set("down", js.Any.fromFunction0(value))
+    def setLast(value: () => Unit): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnableRepeat(value: Boolean => Unit): Self = this.set("enableRepeat", js.Any.fromFunction1(value))
+    def setRemoveSpinListener(value: XSpinListener => Unit): Self = StObject.set(x, "removeSpinListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirst(value: () => Unit): Self = this.set("first", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLast(value: () => Unit): Self = this.set("last", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveSpinListener(value: XSpinListener => Unit): Self = this.set("removeSpinListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUp(value: () => Unit): Self = this.set("up", js.Any.fromFunction0(value))
+    def setUp(value: () => Unit): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
   }
 }

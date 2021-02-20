@@ -1,11 +1,12 @@
 package typings.twineSugarcube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IeVersion extends js.Object {
+trait IeVersion extends StObject {
   
   val ieVersion: Double | Null = js.native
   
@@ -39,48 +40,36 @@ object IeVersion {
   }
   
   @scala.inline
-  implicit class IeVersionOps[Self <: IeVersion] (val x: Self) extends AnyVal {
+  implicit class IeVersionMutableBuilder[Self <: IeVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIeVersion(value: Double): Self = StObject.set(x, "ieVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIeVersionNull: Self = StObject.set(x, "ieVersion", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsGecko(value: Boolean): Self = StObject.set(x, "isGecko", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGecko(value: Boolean): Self = this.set("isGecko", value.asInstanceOf[js.Any])
+    def setIsIE(value: Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIE(value: Boolean): Self = this.set("isIE", value.asInstanceOf[js.Any])
+    def setIsMobile(value: Android): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMobile(value: Android): Self = this.set("isMobile", value.asInstanceOf[js.Any])
+    def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpera(value: Boolean): Self = this.set("isOpera", value.asInstanceOf[js.Any])
+    def setIsVivaldi(value: Boolean): Self = StObject.set(x, "isVivaldi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVivaldi(value: Boolean): Self = this.set("isVivaldi", value.asInstanceOf[js.Any])
+    def setOperaVersion(value: Double): Self = StObject.set(x, "operaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    def setOperaVersionNull: Self = StObject.set(x, "operaVersion", null)
     
     @scala.inline
-    def setIeVersion(value: Double): Self = this.set("ieVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIeVersionNull: Self = this.set("ieVersion", null)
-    
-    @scala.inline
-    def setOperaVersion(value: Double): Self = this.set("operaVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperaVersionNull: Self = this.set("operaVersion", null)
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
   }
 }

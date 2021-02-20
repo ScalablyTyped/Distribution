@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exemplar extends js.Object {
+trait Exemplar extends StObject {
   
   /**
     * Contextual information about the example value. Examples are:Trace: type.googleapis.com/google.monitoring.v3.SpanContextLiteral string:
@@ -36,26 +37,7 @@ object Exemplar {
   }
   
   @scala.inline
-  implicit class ExemplarOps[Self <: Exemplar] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttachmentsVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar with TopLevel[js.Any])*
-    ): Self = this.set("attachments", js.Array(value :_*))
+  implicit class ExemplarMutableBuilder[Self <: Exemplar] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAttachments(
@@ -64,21 +46,28 @@ object Exemplar {
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar with TopLevel[js.Any]
         ]
-    ): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setAttachmentsVarargs(
+      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: any}
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar with TopLevel[js.Any])*
+    ): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -5,19 +5,19 @@ import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceInput
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.models0Mod.GetIdInput
 import typings.awsSdkClientCognitoIdentity.models0Mod.GetIdResponse
-import typings.awsSdkSmithyClient.commandMod.Command
+import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.awsSdkTypes.responseMod.MetadataBearer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity/types/commands/GetIdCommand", JSImport.Namespace)
-@js.native
-object getIdCommandMod extends js.Object {
+object getIdCommandMod {
   
+  @JSImport("@aws-sdk/client-cognito-identity/types/commands/GetIdCommand", "GetIdCommand")
   @js.native
   class GetIdCommand protected ()
     extends Command[

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Microsoft internal use only. */
 @JSGlobal("Windows.Foundation.Metadata.GCPressureAmount")
 @js.native
-object GCPressureAmount extends js.Object {
+object GCPressureAmount extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Foundation.Metadata.GCPressureAmount with Double] = js.native

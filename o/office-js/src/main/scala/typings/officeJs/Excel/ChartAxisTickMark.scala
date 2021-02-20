@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartAxisTickMark extends js.Object
+sealed trait ChartAxisTickMark extends StObject
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisTickMark")
 @js.native
-object ChartAxisTickMark extends js.Object {
+object ChartAxisTickMark extends StObject {
   
   @js.native
   sealed trait cross extends ChartAxisTickMark

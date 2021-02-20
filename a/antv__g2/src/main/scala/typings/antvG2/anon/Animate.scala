@@ -2,12 +2,13 @@ package typings.antvG2.anon
 
 import typings.antvG2.antvG2Strings.multiple
 import typings.antvG2.antvG2Strings.single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animate extends js.Object {
+trait Animate extends StObject {
   
   /**
     * 选中是否执行动画，默认执行动画
@@ -33,27 +34,15 @@ object Animate {
   }
   
   @scala.inline
-  implicit class AnimateOps[Self <: Animate] (val x: Self) extends AnyVal {
+  implicit class AnimateMutableBuilder[Self <: Animate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCancelable(value: Boolean): Self = this.set("cancelable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: single | multiple): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMode(value: single | multiple): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

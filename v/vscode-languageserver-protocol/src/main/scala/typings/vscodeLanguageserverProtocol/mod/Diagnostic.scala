@@ -1,17 +1,20 @@
 package typings.vscodeLanguageserverProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "Diagnostic")
-@js.native
-object Diagnostic extends js.Object {
+object Diagnostic {
   
   /**
     * Creates a new Diagnostic literal.
     */
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(range: typings.vscodeLanguageserverTypes.mod.Range, message: String): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -20,6 +23,8 @@ object Diagnostic extends js.Object {
     source: js.UndefOr[scala.Nothing],
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -27,6 +32,8 @@ object Diagnostic extends js.Object {
     code: js.UndefOr[scala.Nothing],
     source: String
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -35,12 +42,16 @@ object Diagnostic extends js.Object {
     source: String,
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
     severity: js.UndefOr[scala.Nothing],
     code: String
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -49,6 +60,8 @@ object Diagnostic extends js.Object {
     source: js.UndefOr[scala.Nothing],
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -56,6 +69,8 @@ object Diagnostic extends js.Object {
     code: String,
     source: String
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -64,12 +79,16 @@ object Diagnostic extends js.Object {
     source: String,
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
     severity: js.UndefOr[scala.Nothing],
     code: Double
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -78,6 +97,8 @@ object Diagnostic extends js.Object {
     source: js.UndefOr[scala.Nothing],
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -85,6 +106,8 @@ object Diagnostic extends js.Object {
     code: Double,
     source: String
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -93,11 +116,15 @@ object Diagnostic extends js.Object {
     source: String,
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
     severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -106,6 +133,8 @@ object Diagnostic extends js.Object {
     source: js.UndefOr[scala.Nothing],
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -113,6 +142,8 @@ object Diagnostic extends js.Object {
     code: js.UndefOr[scala.Nothing],
     source: String
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -121,12 +152,16 @@ object Diagnostic extends js.Object {
     source: String,
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
     severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity,
     code: String
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -135,6 +170,8 @@ object Diagnostic extends js.Object {
     source: js.UndefOr[scala.Nothing],
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -142,6 +179,8 @@ object Diagnostic extends js.Object {
     code: String,
     source: String
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -150,12 +189,16 @@ object Diagnostic extends js.Object {
     source: String,
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
     severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity,
     code: Double
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -164,6 +207,8 @@ object Diagnostic extends js.Object {
     source: js.UndefOr[scala.Nothing],
     relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -171,6 +216,8 @@ object Diagnostic extends js.Object {
     code: Double,
     source: String
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.create")
+  @js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
@@ -183,5 +230,7 @@ object Diagnostic extends js.Object {
   /**
     * Checks whether the given literal conforms to the [Diagnostic](#Diagnostic) interface.
     */
+  @JSImport("vscode-languageserver-protocol", "Diagnostic.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = js.native
 }

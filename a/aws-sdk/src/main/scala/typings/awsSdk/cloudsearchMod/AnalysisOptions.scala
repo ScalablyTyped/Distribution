@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalysisOptions extends js.Object {
+trait AnalysisOptions extends StObject {
   
   /**
     * The level of algorithmic stemming to perform: none, minimal, light, or full. The available levels vary depending on the language. For more information, see Language Specific Text Processing Settings in the Amazon CloudSearch Developer Guide 
@@ -41,48 +42,36 @@ object AnalysisOptions {
   }
   
   @scala.inline
-  implicit class AnalysisOptionsOps[Self <: AnalysisOptions] (val x: Self) extends AnyVal {
+  implicit class AnalysisOptionsMutableBuilder[Self <: AnalysisOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmicStemming(value: AlgorithmicStemming): Self = StObject.set(x, "AlgorithmicStemming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmicStemmingUndefined: Self = StObject.set(x, "AlgorithmicStemming", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJapaneseTokenizationDictionary(value: String): Self = StObject.set(x, "JapaneseTokenizationDictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmicStemming(value: AlgorithmicStemming): Self = this.set("AlgorithmicStemming", value.asInstanceOf[js.Any])
+    def setJapaneseTokenizationDictionaryUndefined: Self = StObject.set(x, "JapaneseTokenizationDictionary", js.undefined)
     
     @scala.inline
-    def deleteAlgorithmicStemming: Self = this.set("AlgorithmicStemming", js.undefined)
+    def setStemmingDictionary(value: String): Self = StObject.set(x, "StemmingDictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJapaneseTokenizationDictionary(value: String): Self = this.set("JapaneseTokenizationDictionary", value.asInstanceOf[js.Any])
+    def setStemmingDictionaryUndefined: Self = StObject.set(x, "StemmingDictionary", js.undefined)
     
     @scala.inline
-    def deleteJapaneseTokenizationDictionary: Self = this.set("JapaneseTokenizationDictionary", js.undefined)
+    def setStopwords(value: String): Self = StObject.set(x, "Stopwords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStemmingDictionary(value: String): Self = this.set("StemmingDictionary", value.asInstanceOf[js.Any])
+    def setStopwordsUndefined: Self = StObject.set(x, "Stopwords", js.undefined)
     
     @scala.inline
-    def deleteStemmingDictionary: Self = this.set("StemmingDictionary", js.undefined)
+    def setSynonyms(value: String): Self = StObject.set(x, "Synonyms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopwords(value: String): Self = this.set("Stopwords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopwords: Self = this.set("Stopwords", js.undefined)
-    
-    @scala.inline
-    def setSynonyms(value: String): Self = this.set("Synonyms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSynonyms: Self = this.set("Synonyms", js.undefined)
+    def setSynonymsUndefined: Self = StObject.set(x, "Synonyms", js.undefined)
   }
 }

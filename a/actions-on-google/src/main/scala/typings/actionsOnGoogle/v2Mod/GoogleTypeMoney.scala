@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleTypeMoney extends js.Object {
+trait GoogleTypeMoney extends StObject {
   
   /**
     * The 3-letter currency code defined in ISO 4217.
@@ -37,36 +38,24 @@ object GoogleTypeMoney {
   }
   
   @scala.inline
-  implicit class GoogleTypeMoneyOps[Self <: GoogleTypeMoney] (val x: Self) extends AnyVal {
+  implicit class GoogleTypeMoneyMutableBuilder[Self <: GoogleTypeMoney] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNanos(value: Double): Self = this.set("nanos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNanos: Self = this.set("nanos", js.undefined)
-    
-    @scala.inline
-    def setUnits(value: String): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoteSizeMax extends js.Object {
+trait NoteSizeMax extends StObject {
   
   var noteResourceCountMax: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object NoteSizeMax {
   }
   
   @scala.inline
-  implicit class NoteSizeMaxOps[Self <: NoteSizeMax] (val x: Self) extends AnyVal {
+  implicit class NoteSizeMaxMutableBuilder[Self <: NoteSizeMax] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoteResourceCountMax(value: Double): Self = StObject.set(x, "noteResourceCountMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoteResourceCountMaxUndefined: Self = StObject.set(x, "noteResourceCountMax", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoteSizeMax(value: Double): Self = StObject.set(x, "noteSizeMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteResourceCountMax(value: Double): Self = this.set("noteResourceCountMax", value.asInstanceOf[js.Any])
+    def setNoteSizeMaxUndefined: Self = StObject.set(x, "noteSizeMax", js.undefined)
     
     @scala.inline
-    def deleteNoteResourceCountMax: Self = this.set("noteResourceCountMax", js.undefined)
+    def setResourceSizeMax(value: Double): Self = StObject.set(x, "resourceSizeMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteSizeMax(value: Double): Self = this.set("noteSizeMax", value.asInstanceOf[js.Any])
+    def setResourceSizeMaxUndefined: Self = StObject.set(x, "resourceSizeMax", js.undefined)
     
     @scala.inline
-    def deleteNoteSizeMax: Self = this.set("noteSizeMax", js.undefined)
+    def setUploadLimit(value: Double): Self = StObject.set(x, "uploadLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceSizeMax(value: Double): Self = this.set("resourceSizeMax", value.asInstanceOf[js.Any])
+    def setUploadLimitUndefined: Self = StObject.set(x, "uploadLimit", js.undefined)
     
     @scala.inline
-    def deleteResourceSizeMax: Self = this.set("resourceSizeMax", js.undefined)
+    def setUploaded(value: Double): Self = StObject.set(x, "uploaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadLimit(value: Double): Self = this.set("uploadLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadLimit: Self = this.set("uploadLimit", js.undefined)
-    
-    @scala.inline
-    def setUploaded(value: Double): Self = this.set("uploaded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploaded: Self = this.set("uploaded", js.undefined)
+    def setUploadedUndefined: Self = StObject.set(x, "uploaded", js.undefined)
   }
 }

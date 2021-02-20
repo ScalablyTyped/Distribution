@@ -5,12 +5,13 @@ import typings.wegameApi.wegameApiStrings.go
 import typings.wegameApi.wegameApiStrings.next
 import typings.wegameApi.wegameApiStrings.search
 import typings.wegameApi.wegameApiStrings.send
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmHold extends js.Object {
+trait ConfirmHold extends StObject {
   
   /**
     * 当点击完成时键盘是否收起
@@ -46,45 +47,33 @@ object ConfirmHold {
   }
   
   @scala.inline
-  implicit class ConfirmHoldOps[Self <: ConfirmHold] (val x: Self) extends AnyVal {
+  implicit class ConfirmHoldMutableBuilder[Self <: ConfirmHold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmHold(value: Boolean): Self = StObject.set(x, "confirmHold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirmHoldUndefined: Self = StObject.set(x, "confirmHold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfirmType(value: done | next | search | go | send): Self = StObject.set(x, "confirmType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setConfirmTypeUndefined: Self = StObject.set(x, "confirmType", js.undefined)
     
     @scala.inline
-    def setConfirmHold(value: Boolean): Self = this.set("confirmHold", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfirmHold: Self = this.set("confirmHold", js.undefined)
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmType(value: done | next | search | go | send): Self = this.set("confirmType", value.asInstanceOf[js.Any])
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def deleteConfirmType: Self = this.set("confirmType", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
-    
-    @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.raphael.mod
 
 import typings.raphael.raphaelStrings.SVG
 import typings.raphael.raphaelStrings.VML
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

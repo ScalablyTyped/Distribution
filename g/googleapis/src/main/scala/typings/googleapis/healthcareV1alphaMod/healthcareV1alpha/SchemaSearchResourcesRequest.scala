@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to search the resources in the specified FHIR store.
   */
 @js.native
-trait SchemaSearchResourcesRequest extends js.Object {
+trait SchemaSearchResourcesRequest extends StObject {
   
   /**
     * The type of the resource to search.
@@ -24,24 +25,12 @@ object SchemaSearchResourcesRequest {
   }
   
   @scala.inline
-  implicit class SchemaSearchResourcesRequestOps[Self <: SchemaSearchResourcesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSearchResourcesRequestMutableBuilder[Self <: SchemaSearchResourcesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

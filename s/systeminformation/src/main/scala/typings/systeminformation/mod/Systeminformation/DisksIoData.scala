@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisksIoData extends js.Object {
+trait DisksIoData extends StObject {
   
   var ms: Double = js.native
   
@@ -38,39 +39,27 @@ object DisksIoData {
   }
   
   @scala.inline
-  implicit class DisksIoDataOps[Self <: DisksIoData] (val x: Self) extends AnyVal {
+  implicit class DisksIoDataMutableBuilder[Self <: DisksIoData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRIO(value: Double): Self = StObject.set(x, "rIO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRIO_sec(value: Double): Self = StObject.set(x, "rIO_sec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMs(value: Double): Self = this.set("ms", value.asInstanceOf[js.Any])
+    def setTIO(value: Double): Self = StObject.set(x, "tIO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRIO(value: Double): Self = this.set("rIO", value.asInstanceOf[js.Any])
+    def setTIO_sec(value: Double): Self = StObject.set(x, "tIO_sec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRIO_sec(value: Double): Self = this.set("rIO_sec", value.asInstanceOf[js.Any])
+    def setWIO(value: Double): Self = StObject.set(x, "wIO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTIO(value: Double): Self = this.set("tIO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTIO_sec(value: Double): Self = this.set("tIO_sec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIO(value: Double): Self = this.set("wIO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIO_sec(value: Double): Self = this.set("wIO_sec", value.asInstanceOf[js.Any])
+    def setWIO_sec(value: Double): Self = StObject.set(x, "wIO_sec", value.asInstanceOf[js.Any])
   }
 }

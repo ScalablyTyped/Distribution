@@ -1,13 +1,14 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createCollection` operation. */
 @js.native
-trait CreateCollectionParams extends js.Object {
+trait CreateCollectionParams extends StObject {
   
   /** The ID of the configuration in which the collection is to be created. */
   var configuration_id: js.UndefOr[String] = js.native
@@ -37,54 +38,42 @@ object CreateCollectionParams {
   }
   
   @scala.inline
-  implicit class CreateCollectionParamsOps[Self <: CreateCollectionParams] (val x: Self) extends AnyVal {
+  implicit class CreateCollectionParamsMutableBuilder[Self <: CreateCollectionParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfiguration_idUndefined: Self = StObject.set(x, "configuration_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment_id(value: String): Self = this.set("environment_id", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration_id(value: String): Self = this.set("configuration_id", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfiguration_id: Self = this.set("configuration_id", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLanguage(value: Language | String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: Language | String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

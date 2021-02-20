@@ -10,84 +10,44 @@ import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Display")
-@js.native
-object Display extends js.Object {
+object Display {
   
-  @js.native
-  object Align extends js.Object {
+  object Align {
     
     /**
       * A constant representing a bottom-center alignment or position.
       */
+    @JSGlobal("Phaser.Display.Align.BOTTOM_CENTER")
+    @js.native
     val BOTTOM_CENTER: integer = js.native
     
     /**
       * A constant representing a bottom-left alignment or position.
       */
+    @JSGlobal("Phaser.Display.Align.BOTTOM_LEFT")
+    @js.native
     val BOTTOM_LEFT: integer = js.native
     
     /**
       * A constant representing a bottom-right alignment or position.
       */
+    @JSGlobal("Phaser.Display.Align.BOTTOM_RIGHT")
+    @js.native
     val BOTTOM_RIGHT: integer = js.native
     
     /**
       * A constant representing a center alignment or position.
       */
+    @JSGlobal("Phaser.Display.Align.CENTER")
+    @js.native
     val CENTER: integer = js.native
     
-    /**
-      * A constant representing a left-bottom alignment or position.
-      */
-    val LEFT_BOTTOM: integer = js.native
-    
-    /**
-      * A constant representing a left-center alignment or position.
-      */
-    val LEFT_CENTER: integer = js.native
-    
-    /**
-      * A constant representing a left-top alignment or position.
-      */
-    val LEFT_TOP: integer = js.native
-    
-    /**
-      * A constant representing a right-bottom alignment or position.
-      */
-    val RIGHT_BOTTOM: integer = js.native
-    
-    /**
-      * A constant representing a right-center alignment or position.
-      */
-    val RIGHT_CENTER: integer = js.native
-    
-    /**
-      * A constant representing a right-top alignment or position.
-      */
-    val RIGHT_TOP: integer = js.native
-    
-    /**
-      * A constant representing a top-center alignment or position.
-      */
-    val TOP_CENTER: integer = js.native
-    
-    /**
-      * A constant representing a top-left alignment or position.
-      */
-    val TOP_LEFT: integer = js.native
-    
-    /**
-      * A constant representing a top-right alignment or position.
-      */
-    val TOP_RIGHT: integer = js.native
-    
-    @js.native
-    object In extends js.Object {
+    object In {
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the bottom center of the other.
@@ -96,9 +56,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.BottomCenter")
+      @js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.BottomCenter")
+      @js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.BottomCenter")
+      @js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.BottomCenter")
+      @js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -108,9 +76,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.BottomLeft")
+      @js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.BottomLeft")
+      @js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.BottomLeft")
+      @js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.BottomLeft")
+      @js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -120,9 +96,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.BottomRight")
+      @js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.BottomRight")
+      @js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.BottomRight")
+      @js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.BottomRight")
+      @js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -132,9 +116,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.Center")
+      @js.native
       def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.Center")
+      @js.native
       def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.Center")
+      @js.native
       def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.Center")
+      @js.native
       def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -144,9 +136,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.LeftCenter")
+      @js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.LeftCenter")
+      @js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.LeftCenter")
+      @js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.LeftCenter")
+      @js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -158,7 +158,11 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.QuickSet")
+      @js.native
       def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.QuickSet")
+      @js.native
       def QuickSet[G /* <: GameObject */](
         child: G,
         alignIn: GameObject,
@@ -166,7 +170,11 @@ object Display extends js.Object {
         offsetX: js.UndefOr[scala.Nothing],
         offsetY: Double
       ): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.QuickSet")
+      @js.native
       def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.QuickSet")
+      @js.native
       def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -176,9 +184,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.RightCenter")
+      @js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.RightCenter")
+      @js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.RightCenter")
+      @js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.RightCenter")
+      @js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -188,9 +204,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.TopCenter")
+      @js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.TopCenter")
+      @js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.TopCenter")
+      @js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.TopCenter")
+      @js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -200,9 +224,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.TopLeft")
+      @js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.TopLeft")
+      @js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.TopLeft")
+      @js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.TopLeft")
+      @js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -212,14 +244,84 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.In.TopRight")
+      @js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.TopRight")
+      @js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.TopRight")
+      @js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.In.TopRight")
+      @js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
     }
     
+    /**
+      * A constant representing a left-bottom alignment or position.
+      */
+    @JSGlobal("Phaser.Display.Align.LEFT_BOTTOM")
     @js.native
-    object To extends js.Object {
+    val LEFT_BOTTOM: integer = js.native
+    
+    /**
+      * A constant representing a left-center alignment or position.
+      */
+    @JSGlobal("Phaser.Display.Align.LEFT_CENTER")
+    @js.native
+    val LEFT_CENTER: integer = js.native
+    
+    /**
+      * A constant representing a left-top alignment or position.
+      */
+    @JSGlobal("Phaser.Display.Align.LEFT_TOP")
+    @js.native
+    val LEFT_TOP: integer = js.native
+    
+    /**
+      * A constant representing a right-bottom alignment or position.
+      */
+    @JSGlobal("Phaser.Display.Align.RIGHT_BOTTOM")
+    @js.native
+    val RIGHT_BOTTOM: integer = js.native
+    
+    /**
+      * A constant representing a right-center alignment or position.
+      */
+    @JSGlobal("Phaser.Display.Align.RIGHT_CENTER")
+    @js.native
+    val RIGHT_CENTER: integer = js.native
+    
+    /**
+      * A constant representing a right-top alignment or position.
+      */
+    @JSGlobal("Phaser.Display.Align.RIGHT_TOP")
+    @js.native
+    val RIGHT_TOP: integer = js.native
+    
+    /**
+      * A constant representing a top-center alignment or position.
+      */
+    @JSGlobal("Phaser.Display.Align.TOP_CENTER")
+    @js.native
+    val TOP_CENTER: integer = js.native
+    
+    /**
+      * A constant representing a top-left alignment or position.
+      */
+    @JSGlobal("Phaser.Display.Align.TOP_LEFT")
+    @js.native
+    val TOP_LEFT: integer = js.native
+    
+    /**
+      * A constant representing a top-right alignment or position.
+      */
+    @JSGlobal("Phaser.Display.Align.TOP_RIGHT")
+    @js.native
+    val TOP_RIGHT: integer = js.native
+    
+    object To {
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the bottom center position of the other.
@@ -228,9 +330,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.BottomCenter")
+      @js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.BottomCenter")
+      @js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.BottomCenter")
+      @js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.BottomCenter")
+      @js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -240,9 +350,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.BottomLeft")
+      @js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.BottomLeft")
+      @js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.BottomLeft")
+      @js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.BottomLeft")
+      @js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -252,9 +370,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.BottomRight")
+      @js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.BottomRight")
+      @js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.BottomRight")
+      @js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.BottomRight")
+      @js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -264,9 +390,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.LeftBottom")
+      @js.native
       def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.LeftBottom")
+      @js.native
       def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.LeftBottom")
+      @js.native
       def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.LeftBottom")
+      @js.native
       def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -276,9 +410,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.LeftCenter")
+      @js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.LeftCenter")
+      @js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.LeftCenter")
+      @js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.LeftCenter")
+      @js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -288,9 +430,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.LeftTop")
+      @js.native
       def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.LeftTop")
+      @js.native
       def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.LeftTop")
+      @js.native
       def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.LeftTop")
+      @js.native
       def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -302,7 +452,11 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.QuickSet")
+      @js.native
       def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.QuickSet")
+      @js.native
       def QuickSet[G /* <: GameObject */](
         child: G,
         alignTo: GameObject,
@@ -310,7 +464,11 @@ object Display extends js.Object {
         offsetX: js.UndefOr[scala.Nothing],
         offsetY: Double
       ): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.QuickSet")
+      @js.native
       def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.QuickSet")
+      @js.native
       def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -320,9 +478,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.RightBottom")
+      @js.native
       def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.RightBottom")
+      @js.native
       def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.RightBottom")
+      @js.native
       def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.RightBottom")
+      @js.native
       def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -332,9 +498,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.RightCenter")
+      @js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.RightCenter")
+      @js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.RightCenter")
+      @js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.RightCenter")
+      @js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -344,9 +518,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.RightTop")
+      @js.native
       def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.RightTop")
+      @js.native
       def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.RightTop")
+      @js.native
       def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.RightTop")
+      @js.native
       def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -356,9 +538,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.TopCenter")
+      @js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.TopCenter")
+      @js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.TopCenter")
+      @js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.TopCenter")
+      @js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -368,9 +558,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.TopLeft")
+      @js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.TopLeft")
+      @js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.TopLeft")
+      @js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.TopLeft")
+      @js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       
       /**
@@ -380,9 +578,17 @@ object Display extends js.Object {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
+      @JSGlobal("Phaser.Display.Align.To.TopRight")
+      @js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.TopRight")
+      @js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.TopRight")
+      @js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
+      @JSGlobal("Phaser.Display.Align.To.TopRight")
+      @js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
     }
   }
@@ -402,6 +608,7 @@ object Display extends js.Object {
     * Default fragment and vertex source is used if not provided in the constructor, setting-up a basic shader,
     * suitable for debug rendering.
     */
+  @JSGlobal("Phaser.Display.BaseShader")
   @js.native
   class BaseShader protected ()
     extends typings.phaser.Phaser.Display.BaseShader {
@@ -427,8 +634,7 @@ object Display extends js.Object {
     def this(key: String, fragmentSrc: String, vertexSrc: String, uniforms: js.Any) = this()
   }
   
-  @js.native
-  object Bounds extends js.Object {
+  object Bounds {
     
     /**
       * Positions the Game Object so that it is centered on the given coordinates.
@@ -436,12 +642,16 @@ object Display extends js.Object {
       * @param x The horizontal coordinate to position the Game Object on.
       * @param y The vertical coordinate to position the Game Object on.
       */
+    @JSGlobal("Phaser.Display.Bounds.CenterOn")
+    @js.native
     def CenterOn[G /* <: GameObject */](gameObject: G, x: Double, y: Double): G = js.native
     
     /**
       * Returns the bottom coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
+    @JSGlobal("Phaser.Display.Bounds.GetBottom")
+    @js.native
     def GetBottom(gameObject: GameObject): Double = js.native
     
     /**
@@ -449,26 +659,38 @@ object Display extends js.Object {
       * @param gameObject The Game Object to get the bounds value from.
       * @param output An object to store the values in.
       */
+    @JSGlobal("Phaser.Display.Bounds.GetBounds")
+    @js.native
     def GetBounds(gameObject: GameObject): Rectangle | js.Object = js.native
+    @JSGlobal("Phaser.Display.Bounds.GetBounds")
+    @js.native
     def GetBounds(gameObject: GameObject, output: js.Object): Rectangle | js.Object = js.native
+    @JSGlobal("Phaser.Display.Bounds.GetBounds")
+    @js.native
     def GetBounds(gameObject: GameObject, output: Rectangle): Rectangle | js.Object = js.native
     
     /**
       * Returns the center x coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
+    @JSGlobal("Phaser.Display.Bounds.GetCenterX")
+    @js.native
     def GetCenterX(gameObject: GameObject): Double = js.native
     
     /**
       * Returns the center y coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
+    @JSGlobal("Phaser.Display.Bounds.GetCenterY")
+    @js.native
     def GetCenterY(gameObject: GameObject): Double = js.native
     
     /**
       * Returns the left coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
+    @JSGlobal("Phaser.Display.Bounds.GetLeft")
+    @js.native
     def GetLeft(gameObject: GameObject): Double = js.native
     
     /**
@@ -477,6 +699,8 @@ object Display extends js.Object {
       * This value will only be > 0 if `origin.x` is not equal to zero.
       * @param gameObject The Game Object to get the bounds value from.
       */
+    @JSGlobal("Phaser.Display.Bounds.GetOffsetX")
+    @js.native
     def GetOffsetX(gameObject: GameObject): Double = js.native
     
     /**
@@ -485,18 +709,24 @@ object Display extends js.Object {
       * This value will only be > 0 if `origin.y` is not equal to zero.
       * @param gameObject The Game Object to get the bounds value from.
       */
+    @JSGlobal("Phaser.Display.Bounds.GetOffsetY")
+    @js.native
     def GetOffsetY(gameObject: GameObject): Double = js.native
     
     /**
       * Returns the right coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
+    @JSGlobal("Phaser.Display.Bounds.GetRight")
+    @js.native
     def GetRight(gameObject: GameObject): Double = js.native
     
     /**
       * Returns the top coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
       */
+    @JSGlobal("Phaser.Display.Bounds.GetTop")
+    @js.native
     def GetTop(gameObject: GameObject): Double = js.native
     
     /**
@@ -504,6 +734,8 @@ object Display extends js.Object {
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
+    @JSGlobal("Phaser.Display.Bounds.SetBottom")
+    @js.native
     def SetBottom[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
     
     /**
@@ -511,6 +743,8 @@ object Display extends js.Object {
       * @param gameObject The Game Object that will be re-positioned.
       * @param x The coordinate to position the Game Object bounds on.
       */
+    @JSGlobal("Phaser.Display.Bounds.SetCenterX")
+    @js.native
     def SetCenterX[G /* <: GameObject */](gameObject: G, x: Double): G = js.native
     
     /**
@@ -518,6 +752,8 @@ object Display extends js.Object {
       * @param gameObject The Game Object that will be re-positioned.
       * @param y The coordinate to position the Game Object bounds on.
       */
+    @JSGlobal("Phaser.Display.Bounds.SetCenterY")
+    @js.native
     def SetCenterY[G /* <: GameObject */](gameObject: G, y: Double): G = js.native
     
     /**
@@ -525,6 +761,8 @@ object Display extends js.Object {
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
+    @JSGlobal("Phaser.Display.Bounds.SetLeft")
+    @js.native
     def SetLeft[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
     
     /**
@@ -532,6 +770,8 @@ object Display extends js.Object {
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
+    @JSGlobal("Phaser.Display.Bounds.SetRight")
+    @js.native
     def SetRight[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
     
     /**
@@ -539,41 +779,29 @@ object Display extends js.Object {
       * @param gameObject The Game Object that will be re-positioned.
       * @param value The coordinate to position the Game Object bounds on.
       */
+    @JSGlobal("Phaser.Display.Bounds.SetTop")
+    @js.native
     def SetTop[G /* <: GameObject */](gameObject: G, value: Double): G = js.native
   }
   
-  @js.native
-  object Canvas extends js.Object {
+  object Canvas {
     
-    /**
-      * Sets the touch-action property on the canvas style. Can be used to disable default browser touch actions.
-      * @param canvas The canvas element to have the style applied to.
-      * @param value The touch action value to set on the canvas. Set to `none` to disable touch actions. Default 'none'.
-      */
-    def TouchAction(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
-    def TouchAction(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = js.native
-    
-    /**
-      * Sets the user-select property on the canvas style. Can be used to disable default browser selection actions.
-      * @param canvas The canvas element to have the style applied to.
-      * @param value The touch callout value to set on the canvas. Set to `none` to disable touch callouts. Default 'none'.
-      */
-    def UserSelect(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
-    def UserSelect(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = js.native
-    
-    @js.native
-    object CanvasInterpolation extends js.Object {
+    object CanvasInterpolation {
       
       /**
         * Sets the CSS image-rendering property on the given canvas to be 'bicubic' (aka 'auto').
         * @param canvas The canvas object to have the style set on.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasInterpolation.setBicubic")
+      @js.native
       def setBicubic(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
       
       /**
         * Sets the CSS image-rendering property on the given canvas to be 'crisp' (aka 'optimize contrast' on webkit).
         * @param canvas The canvas object to have the style set on.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasInterpolation.setCrisp")
+      @js.native
       def setCrisp(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
     }
     
@@ -585,8 +813,7 @@ object Display extends js.Object {
       * This singleton is instantiated as soon as Phaser loads, before a Phaser.Game instance has even been created.
       * Which means all instances of Phaser Games on the same page can share the one single pool.
       */
-    @js.native
-    object CanvasPool extends js.Object {
+    object CanvasPool {
       
       /**
         * Creates a new Canvas DOM element, or pulls one from the pool if free.
@@ -596,7 +823,11 @@ object Display extends js.Object {
         * @param canvasType The type of the Canvas. Either `Phaser.CANVAS` or `Phaser.WEBGL`. Default Phaser.CANVAS.
         * @param selfParent Use the generated Canvas element as the parent? Default false.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(parent: js.Any): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(
         parent: js.Any,
         width: js.UndefOr[scala.Nothing],
@@ -604,12 +835,16 @@ object Display extends js.Object {
         canvasType: js.UndefOr[scala.Nothing],
         selfParent: Boolean
       ): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(
         parent: js.Any,
         width: js.UndefOr[scala.Nothing],
         height: js.UndefOr[scala.Nothing],
         canvasType: integer
       ): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(
         parent: js.Any,
         width: js.UndefOr[scala.Nothing],
@@ -617,7 +852,11 @@ object Display extends js.Object {
         canvasType: integer,
         selfParent: Boolean
       ): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(
         parent: js.Any,
         width: js.UndefOr[scala.Nothing],
@@ -625,7 +864,11 @@ object Display extends js.Object {
         canvasType: js.UndefOr[scala.Nothing],
         selfParent: Boolean
       ): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer, canvasType: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(
         parent: js.Any,
         width: js.UndefOr[scala.Nothing],
@@ -633,7 +876,11 @@ object Display extends js.Object {
         canvasType: integer,
         selfParent: Boolean
       ): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(parent: js.Any, width: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(
         parent: js.Any,
         width: integer,
@@ -641,7 +888,11 @@ object Display extends js.Object {
         canvasType: js.UndefOr[scala.Nothing],
         selfParent: Boolean
       ): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(parent: js.Any, width: integer, height: js.UndefOr[scala.Nothing], canvasType: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(
         parent: js.Any,
         width: integer,
@@ -649,7 +900,11 @@ object Display extends js.Object {
         canvasType: integer,
         selfParent: Boolean
       ): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(
         parent: js.Any,
         width: integer,
@@ -657,7 +912,11 @@ object Display extends js.Object {
         canvasType: js.UndefOr[scala.Nothing],
         selfParent: Boolean
       ): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(parent: js.Any, width: integer, height: integer, canvasType: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create")
+      @js.native
       def create(parent: js.Any, width: integer, height: integer, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = js.native
       
       /**
@@ -666,9 +925,17 @@ object Display extends js.Object {
         * @param width The width of the Canvas. Default 1.
         * @param height The height of the Canvas. Default 1.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create2D")
+      @js.native
       def create2D(parent: js.Any): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create2D")
+      @js.native
       def create2D(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create2D")
+      @js.native
       def create2D(parent: js.Any, width: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.create2D")
+      @js.native
       def create2D(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
       
       /**
@@ -677,31 +944,49 @@ object Display extends js.Object {
         * @param width The width of the Canvas. Default 1.
         * @param height The height of the Canvas. Default 1.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.createWebGL")
+      @js.native
       def createWebGL(parent: js.Any): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.createWebGL")
+      @js.native
       def createWebGL(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.createWebGL")
+      @js.native
       def createWebGL(parent: js.Any, width: integer): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.createWebGL")
+      @js.native
       def createWebGL(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
       
       /**
         * Disable context smoothing on any new Canvas element created.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.disableSmoothing")
+      @js.native
       def disableSmoothing(): Unit = js.native
       
       /**
         * Enable context smoothing on any new Canvas element created.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.enableSmoothing")
+      @js.native
       def enableSmoothing(): Unit = js.native
       
       /**
         * Gets the first free canvas index from the pool.
         * @param canvasType The type of the Canvas. Either `Phaser.CANVAS` or `Phaser.WEBGL`. Default Phaser.CANVAS.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.first")
+      @js.native
       def first(): HTMLCanvasElement = js.native
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.first")
+      @js.native
       def first(canvasType: integer): HTMLCanvasElement = js.native
       
       /**
         * Gets the total number of free canvas elements in the pool.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.free")
+      @js.native
       def free(): integer = js.native
       
       /**
@@ -709,16 +994,19 @@ object Display extends js.Object {
         * The canvas has its width and height set to 1, and its parent attribute nulled.
         * @param parent The canvas or the parent of the canvas to free.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.remove")
+      @js.native
       def remove(parent: js.Any): Unit = js.native
       
       /**
         * Gets the total number of used canvas elements in the pool.
         */
+      @JSGlobal("Phaser.Display.Canvas.CanvasPool.total")
+      @js.native
       def total(): integer = js.native
     }
     
-    @js.native
-    object Smoothing extends js.Object {
+    object Smoothing {
       
       /**
         * Sets the Image Smoothing property on the given context. Set to false to disable image smoothing.
@@ -728,7 +1016,11 @@ object Display extends js.Object {
         * patchy on earlier browsers, especially on mobile.
         * @param context The context on which to disable smoothing.
         */
+      @JSGlobal("Phaser.Display.Canvas.Smoothing.disable")
+      @js.native
       def disable(context: CanvasRenderingContext2D): CanvasRenderingContext2D | WebGLRenderingContext = js.native
+      @JSGlobal("Phaser.Display.Canvas.Smoothing.disable")
+      @js.native
       def disable(context: WebGLRenderingContext): CanvasRenderingContext2D | WebGLRenderingContext = js.native
       
       /**
@@ -739,14 +1031,22 @@ object Display extends js.Object {
         * patchy on earlier browsers, especially on mobile.
         * @param context The context on which to enable smoothing.
         */
+      @JSGlobal("Phaser.Display.Canvas.Smoothing.enable")
+      @js.native
       def enable(context: CanvasRenderingContext2D): CanvasRenderingContext2D | WebGLRenderingContext = js.native
+      @JSGlobal("Phaser.Display.Canvas.Smoothing.enable")
+      @js.native
       def enable(context: WebGLRenderingContext): CanvasRenderingContext2D | WebGLRenderingContext = js.native
       
       /**
         * Gets the Smoothing Enabled vendor prefix being used on the given context, or null if not set.
         * @param context The canvas context to check.
         */
+      @JSGlobal("Phaser.Display.Canvas.Smoothing.getPrefix")
+      @js.native
       def getPrefix(context: CanvasRenderingContext2D): String = js.native
+      @JSGlobal("Phaser.Display.Canvas.Smoothing.getPrefix")
+      @js.native
       def getPrefix(context: WebGLRenderingContext): String = js.native
       
       /**
@@ -754,14 +1054,43 @@ object Display extends js.Object {
         * Returns null if no smoothing prefix is available.
         * @param context The context to check.
         */
+      @JSGlobal("Phaser.Display.Canvas.Smoothing.isEnabled")
+      @js.native
       def isEnabled(context: CanvasRenderingContext2D): Boolean = js.native
+      @JSGlobal("Phaser.Display.Canvas.Smoothing.isEnabled")
+      @js.native
       def isEnabled(context: WebGLRenderingContext): Boolean = js.native
     }
+    
+    /**
+      * Sets the touch-action property on the canvas style. Can be used to disable default browser touch actions.
+      * @param canvas The canvas element to have the style applied to.
+      * @param value The touch action value to set on the canvas. Set to `none` to disable touch actions. Default 'none'.
+      */
+    @JSGlobal("Phaser.Display.Canvas.TouchAction")
+    @js.native
+    def TouchAction(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
+    @JSGlobal("Phaser.Display.Canvas.TouchAction")
+    @js.native
+    def TouchAction(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = js.native
+    
+    /**
+      * Sets the user-select property on the canvas style. Can be used to disable default browser selection actions.
+      * @param canvas The canvas element to have the style applied to.
+      * @param value The touch callout value to set on the canvas. Set to `none` to disable touch callouts. Default 'none'.
+      */
+    @JSGlobal("Phaser.Display.Canvas.UserSelect")
+    @js.native
+    def UserSelect(canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
+    @JSGlobal("Phaser.Display.Canvas.UserSelect")
+    @js.native
+    def UserSelect(canvas: HTMLCanvasElement, value: String): HTMLCanvasElement = js.native
   }
   
   /**
     * The Color class holds a single color value and allows for easy modification and reading of it.
     */
+  @JSGlobal("Phaser.Display.Color")
   @js.native
   /**
     * 
@@ -793,20 +1122,24 @@ object Display extends js.Object {
     def this(red: integer, green: integer, blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
     def this(red: integer, green: integer, blue: integer, alpha: integer) = this()
   }
-  /* static members */
-  @js.native
-  object Color extends js.Object {
+  object Color {
     
     /**
       * Converts the given color value into an Object containing r,g,b and a properties.
       * @param color A color value, optionally including the alpha value.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.ColorToRGBA")
+    @js.native
     def ColorToRGBA(color: Double): ColorObject = js.native
     
     /**
       * Returns a string containing a hex representation of the given color component.
       * @param color The color channel to get the hex value for, must be a value between 0 and 255.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.ComponentToHex")
+    @js.native
     def ComponentToHex(color: integer): String = js.native
     
     /**
@@ -815,6 +1148,9 @@ object Display extends js.Object {
       * @param green The green color value. A number between 0 and 255.
       * @param blue The blue color value. A number between 0 and 255.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.GetColor")
+    @js.native
     def GetColor(red: integer, green: integer, blue: integer): Double = js.native
     
     /**
@@ -824,6 +1160,9 @@ object Display extends js.Object {
       * @param blue The blue color value. A number between 0 and 255.
       * @param alpha The alpha color value. A number between 0 and 255.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.GetColor32")
+    @js.native
     def GetColor32(red: integer, green: integer, blue: integer, alpha: integer): Double = js.native
     
     /**
@@ -832,6 +1171,9 @@ object Display extends js.Object {
       * @param s The saturation value in the range 0 to 1.
       * @param l The lightness value in the range 0 to 1.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.HSLToColor")
+    @js.native
     def HSLToColor(h: Double, s: Double, l: Double): typings.phaser.Phaser.Display.Color = js.native
     
     /**
@@ -839,9 +1181,18 @@ object Display extends js.Object {
       * @param s The saturation, in the range 0 - 1. Default 1.
       * @param v The value, in the range 0 - 1. Default 1.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.HSVColorWheel")
+    @js.native
     def HSVColorWheel(): js.Array[ColorObject] = js.native
+    @JSGlobal("Phaser.Display.Color.HSVColorWheel")
+    @js.native
     def HSVColorWheel(s: js.UndefOr[scala.Nothing], v: Double): js.Array[ColorObject] = js.native
+    @JSGlobal("Phaser.Display.Color.HSVColorWheel")
+    @js.native
     def HSVColorWheel(s: Double): js.Array[ColorObject] = js.native
+    @JSGlobal("Phaser.Display.Color.HSVColorWheel")
+    @js.native
     def HSVColorWheel(s: Double, v: Double): js.Array[ColorObject] = js.native
     
     /**
@@ -854,8 +1205,15 @@ object Display extends js.Object {
       * @param v The value, in the range 0 - 1. This controls how dark the color is. Where 1 is as bright as possible and 0 is black.
       * @param out A Color object to store the results in. If not given a new ColorObject will be created.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.HSVToRGB")
+    @js.native
     def HSVToRGB(h: Double, s: Double, v: Double): ColorObject | typings.phaser.Phaser.Display.Color = js.native
+    @JSGlobal("Phaser.Display.Color.HSVToRGB")
+    @js.native
     def HSVToRGB(h: Double, s: Double, v: Double, out: typings.phaser.Phaser.Display.Color): ColorObject | typings.phaser.Phaser.Display.Color = js.native
+    @JSGlobal("Phaser.Display.Color.HSVToRGB")
+    @js.native
     def HSVToRGB(h: Double, s: Double, v: Double, out: ColorObject): ColorObject | typings.phaser.Phaser.Display.Color = js.native
     
     /**
@@ -866,18 +1224,27 @@ object Display extends js.Object {
       * An alpha channel is _not_ supported.
       * @param hex The hex color value to convert, such as `#0033ff` or the short-hand format: `#03f`.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.HexStringToColor")
+    @js.native
     def HexStringToColor(hex: String): typings.phaser.Phaser.Display.Color = js.native
     
     /**
       * Converts a hue to an RGB color.
       * Based on code by Michael Jackson (https://github.com/mjijackson)
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.HueToComponent")
+    @js.native
     def HueToComponent(p: Double, q: Double, t: Double): Double = js.native
     
     /**
       * Converts the given color value into an instance of a Color object.
       * @param input The color value to convert into a Color object.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.IntegerToColor")
+    @js.native
     def IntegerToColor(input: integer): typings.phaser.Phaser.Display.Color = js.native
     
     /**
@@ -886,71 +1253,12 @@ object Display extends js.Object {
       * Alpha will only be set if it exists in the given color (0xAARRGGBB)
       * @param input The color value to convert into a Color object.
       */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.IntegerToRGB")
+    @js.native
     def IntegerToRGB(input: integer): ColorObject = js.native
     
-    /**
-      * Converts an object containing `r`, `g`, `b` and `a` properties into a Color class instance.
-      * @param input An object containing `r`, `g`, `b` and `a` properties in the range 0 to 255.
-      */
-    def ObjectToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = js.native
-    
-    /**
-      * Converts a CSS 'web' string into a Phaser Color object.
-      * 
-      * The web string can be in the format `'rgb(r,g,b)'` or `'rgba(r,g,b,a)'` where r/g/b are in the range [0..255] and a is in the range [0..1].
-      * @param rgb The CSS format color string, using the `rgb` or `rgba` format.
-      */
-    def RGBStringToColor(rgb: String): typings.phaser.Phaser.Display.Color = js.native
-    
-    /**
-      * Converts an RGB color value to HSV (hue, saturation and value).
-      * Conversion formula from http://en.wikipedia.org/wiki/HSL_color_space.
-      * Assumes RGB values are contained in the set [0, 255] and returns h, s and v in the set [0, 1].
-      * Based on code by Michael Jackson (https://github.com/mjijackson)
-      * @param r The red color value. A number between 0 and 255.
-      * @param g The green color value. A number between 0 and 255.
-      * @param b The blue color value. A number between 0 and 255.
-      * @param out An object to store the color values in. If not given an HSV Color Object will be created.
-      */
-    def RGBToHSV(r: integer, g: integer, b: integer): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
-    def RGBToHSV(r: integer, g: integer, b: integer, out: typings.phaser.Phaser.Display.Color): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
-    def RGBToHSV(r: integer, g: integer, b: integer, out: HSVColorObject): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
-    
-    /**
-      * Converts the color values into an HTML compatible color string, prefixed with either `#` or `0x`.
-      * @param r The red color value. A number between 0 and 255.
-      * @param g The green color value. A number between 0 and 255.
-      * @param b The blue color value. A number between 0 and 255.
-      * @param a The alpha value. A number between 0 and 255. Default 255.
-      * @param prefix The prefix of the string. Either `#` or `0x`. Default #.
-      */
-    def RGBToString(r: integer, g: integer, b: integer): String = js.native
-    def RGBToString(r: integer, g: integer, b: integer, a: js.UndefOr[scala.Nothing], prefix: String): String = js.native
-    def RGBToString(r: integer, g: integer, b: integer, a: integer): String = js.native
-    def RGBToString(r: integer, g: integer, b: integer, a: integer, prefix: String): String = js.native
-    
-    /**
-      * Creates a new Color object where the r, g, and b values have been set to random values
-      * based on the given min max values.
-      * @param min The minimum value to set the random range from (between 0 and 255) Default 0.
-      * @param max The maximum value to set the random range from (between 0 and 255) Default 255.
-      */
-    def RandomRGB(): typings.phaser.Phaser.Display.Color = js.native
-    def RandomRGB(min: js.UndefOr[scala.Nothing], max: integer): typings.phaser.Phaser.Display.Color = js.native
-    def RandomRGB(min: integer): typings.phaser.Phaser.Display.Color = js.native
-    def RandomRGB(min: integer, max: integer): typings.phaser.Phaser.Display.Color = js.native
-    
-    /**
-      * Converts the given source color value into an instance of a Color class.
-      * The value can be either a string, prefixed with `rgb` or a hex string, a number or an Object.
-      * @param input The source color value to convert.
-      */
-    def ValueToColor(input: String): typings.phaser.Phaser.Display.Color = js.native
-    def ValueToColor(input: Double): typings.phaser.Phaser.Display.Color = js.native
-    def ValueToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = js.native
-    
-    @js.native
-    object Interpolate extends js.Object {
+    object Interpolate {
       
       /**
         * Interpolates between the two given color objects over the length supplied.
@@ -959,18 +1267,26 @@ object Display extends js.Object {
         * @param length Distance to interpolate over. Default 100.
         * @param index Index to start from. Default 0.
         */
+      @JSGlobal("Phaser.Display.Color.Interpolate.ColorWithColor")
+      @js.native
       def ColorWithColor(color1: typings.phaser.Phaser.Display.Color, color2: typings.phaser.Phaser.Display.Color): ColorObject = js.native
+      @JSGlobal("Phaser.Display.Color.Interpolate.ColorWithColor")
+      @js.native
       def ColorWithColor(
         color1: typings.phaser.Phaser.Display.Color,
         color2: typings.phaser.Phaser.Display.Color,
         length: js.UndefOr[scala.Nothing],
         index: Double
       ): ColorObject = js.native
+      @JSGlobal("Phaser.Display.Color.Interpolate.ColorWithColor")
+      @js.native
       def ColorWithColor(
         color1: typings.phaser.Phaser.Display.Color,
         color2: typings.phaser.Phaser.Display.Color,
         length: Double
       ): ColorObject = js.native
+      @JSGlobal("Phaser.Display.Color.Interpolate.ColorWithColor")
+      @js.native
       def ColorWithColor(
         color1: typings.phaser.Phaser.Display.Color,
         color2: typings.phaser.Phaser.Display.Color,
@@ -987,7 +1303,11 @@ object Display extends js.Object {
         * @param length Distance to interpolate over. Default 100.
         * @param index Index to start from. Default 0.
         */
+      @JSGlobal("Phaser.Display.Color.Interpolate.ColorWithRGB")
+      @js.native
       def ColorWithRGB(color1: typings.phaser.Phaser.Display.Color, r: Double, g: Double, b: Double): ColorObject = js.native
+      @JSGlobal("Phaser.Display.Color.Interpolate.ColorWithRGB")
+      @js.native
       def ColorWithRGB(
         color1: typings.phaser.Phaser.Display.Color,
         r: Double,
@@ -996,7 +1316,11 @@ object Display extends js.Object {
         length: js.UndefOr[scala.Nothing],
         index: Double
       ): ColorObject = js.native
+      @JSGlobal("Phaser.Display.Color.Interpolate.ColorWithRGB")
+      @js.native
       def ColorWithRGB(color1: typings.phaser.Phaser.Display.Color, r: Double, g: Double, b: Double, length: Double): ColorObject = js.native
+      @JSGlobal("Phaser.Display.Color.Interpolate.ColorWithRGB")
+      @js.native
       def ColorWithRGB(
         color1: typings.phaser.Phaser.Display.Color,
         r: Double,
@@ -1017,7 +1341,11 @@ object Display extends js.Object {
         * @param length Distance to interpolate over. Default 100.
         * @param index Index to start from. Default 0.
         */
+      @JSGlobal("Phaser.Display.Color.Interpolate.RGBWithRGB")
+      @js.native
       def RGBWithRGB(r1: Double, g1: Double, b1: Double, r2: Double, g2: Double, b2: Double): ColorObject = js.native
+      @JSGlobal("Phaser.Display.Color.Interpolate.RGBWithRGB")
+      @js.native
       def RGBWithRGB(
         r1: Double,
         g1: Double,
@@ -1028,7 +1356,11 @@ object Display extends js.Object {
         length: js.UndefOr[scala.Nothing],
         index: Double
       ): ColorObject = js.native
+      @JSGlobal("Phaser.Display.Color.Interpolate.RGBWithRGB")
+      @js.native
       def RGBWithRGB(r1: Double, g1: Double, b1: Double, r2: Double, g2: Double, b2: Double, length: Double): ColorObject = js.native
+      @JSGlobal("Phaser.Display.Color.Interpolate.RGBWithRGB")
+      @js.native
       def RGBWithRGB(
         r1: Double,
         g1: Double,
@@ -1040,10 +1372,108 @@ object Display extends js.Object {
         index: Double
       ): ColorObject = js.native
     }
+    
+    /**
+      * Converts an object containing `r`, `g`, `b` and `a` properties into a Color class instance.
+      * @param input An object containing `r`, `g`, `b` and `a` properties in the range 0 to 255.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.ObjectToColor")
+    @js.native
+    def ObjectToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = js.native
+    
+    /**
+      * Converts a CSS 'web' string into a Phaser Color object.
+      * 
+      * The web string can be in the format `'rgb(r,g,b)'` or `'rgba(r,g,b,a)'` where r/g/b are in the range [0..255] and a is in the range [0..1].
+      * @param rgb The CSS format color string, using the `rgb` or `rgba` format.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.RGBStringToColor")
+    @js.native
+    def RGBStringToColor(rgb: String): typings.phaser.Phaser.Display.Color = js.native
+    
+    /**
+      * Converts an RGB color value to HSV (hue, saturation and value).
+      * Conversion formula from http://en.wikipedia.org/wiki/HSL_color_space.
+      * Assumes RGB values are contained in the set [0, 255] and returns h, s and v in the set [0, 1].
+      * Based on code by Michael Jackson (https://github.com/mjijackson)
+      * @param r The red color value. A number between 0 and 255.
+      * @param g The green color value. A number between 0 and 255.
+      * @param b The blue color value. A number between 0 and 255.
+      * @param out An object to store the color values in. If not given an HSV Color Object will be created.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.RGBToHSV")
+    @js.native
+    def RGBToHSV(r: integer, g: integer, b: integer): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
+    @JSGlobal("Phaser.Display.Color.RGBToHSV")
+    @js.native
+    def RGBToHSV(r: integer, g: integer, b: integer, out: typings.phaser.Phaser.Display.Color): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
+    @JSGlobal("Phaser.Display.Color.RGBToHSV")
+    @js.native
+    def RGBToHSV(r: integer, g: integer, b: integer, out: HSVColorObject): HSVColorObject | typings.phaser.Phaser.Display.Color = js.native
+    
+    /**
+      * Converts the color values into an HTML compatible color string, prefixed with either `#` or `0x`.
+      * @param r The red color value. A number between 0 and 255.
+      * @param g The green color value. A number between 0 and 255.
+      * @param b The blue color value. A number between 0 and 255.
+      * @param a The alpha value. A number between 0 and 255. Default 255.
+      * @param prefix The prefix of the string. Either `#` or `0x`. Default #.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.RGBToString")
+    @js.native
+    def RGBToString(r: integer, g: integer, b: integer): String = js.native
+    @JSGlobal("Phaser.Display.Color.RGBToString")
+    @js.native
+    def RGBToString(r: integer, g: integer, b: integer, a: js.UndefOr[scala.Nothing], prefix: String): String = js.native
+    @JSGlobal("Phaser.Display.Color.RGBToString")
+    @js.native
+    def RGBToString(r: integer, g: integer, b: integer, a: integer): String = js.native
+    @JSGlobal("Phaser.Display.Color.RGBToString")
+    @js.native
+    def RGBToString(r: integer, g: integer, b: integer, a: integer, prefix: String): String = js.native
+    
+    /**
+      * Creates a new Color object where the r, g, and b values have been set to random values
+      * based on the given min max values.
+      * @param min The minimum value to set the random range from (between 0 and 255) Default 0.
+      * @param max The maximum value to set the random range from (between 0 and 255) Default 255.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.RandomRGB")
+    @js.native
+    def RandomRGB(): typings.phaser.Phaser.Display.Color = js.native
+    @JSGlobal("Phaser.Display.Color.RandomRGB")
+    @js.native
+    def RandomRGB(min: js.UndefOr[scala.Nothing], max: integer): typings.phaser.Phaser.Display.Color = js.native
+    @JSGlobal("Phaser.Display.Color.RandomRGB")
+    @js.native
+    def RandomRGB(min: integer): typings.phaser.Phaser.Display.Color = js.native
+    @JSGlobal("Phaser.Display.Color.RandomRGB")
+    @js.native
+    def RandomRGB(min: integer, max: integer): typings.phaser.Phaser.Display.Color = js.native
+    
+    /**
+      * Converts the given source color value into an instance of a Color class.
+      * The value can be either a string, prefixed with `rgb` or a hex string, a number or an Object.
+      * @param input The source color value to convert.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.Color.ValueToColor")
+    @js.native
+    def ValueToColor(input: String): typings.phaser.Phaser.Display.Color = js.native
+    @JSGlobal("Phaser.Display.Color.ValueToColor")
+    @js.native
+    def ValueToColor(input: Double): typings.phaser.Phaser.Display.Color = js.native
+    @JSGlobal("Phaser.Display.Color.ValueToColor")
+    @js.native
+    def ValueToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = js.native
   }
   
-  @js.native
-  object Masks extends js.Object {
+  object Masks {
     
     /**
       * A Bitmap Mask combines the alpha (opacity) of a masked pixel with the alpha of another pixel.
@@ -1071,6 +1501,7 @@ object Display extends js.Object {
       * visible. Adding the underlying Game Object to a Scene will not cause any problems - it will
       * render as a normal Game Object and will also serve as a mask.
       */
+    @JSGlobal("Phaser.Display.Masks.BitmapMask")
     @js.native
     class BitmapMask protected ()
       extends typings.phaser.Phaser.Display.Masks.BitmapMask {
@@ -1099,6 +1530,7 @@ object Display extends js.Object {
       * in front of all masked objects which has its own visual properties and, naturally, respects the camera's
       * visual properties, but isn't affected by and doesn't follow the masked objects by itself.
       */
+    @JSGlobal("Phaser.Display.Masks.GeometryMask")
     @js.native
     class GeometryMask protected ()
       extends typings.phaser.Phaser.Display.Masks.GeometryMask {

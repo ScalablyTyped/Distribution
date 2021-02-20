@@ -3,12 +3,13 @@ package typings.nodeHueApi.anon
 import typings.nodeHueApi.mod.ColorMode
 import typings.nodeHueApi.mod.LightAlert
 import typings.nodeHueApi.mod.LightEffect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alert extends js.Object {
+trait Alert extends StObject {
   
   var alert: LightAlert = js.native
   
@@ -41,75 +42,63 @@ object Alert {
   }
   
   @scala.inline
-  implicit class AlertOps[Self <: Alert] (val x: Self) extends AnyVal {
+  implicit class AlertMutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlert(value: LightAlert): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBri(value: Double): Self = StObject.set(x, "bri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColormode(value: ColorMode): Self = StObject.set(x, "colormode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlert(value: LightAlert): Self = this.set("alert", value.asInstanceOf[js.Any])
+    def setColormodeUndefined: Self = StObject.set(x, "colormode", js.undefined)
     
     @scala.inline
-    def setBri(value: Double): Self = this.set("bri", value.asInstanceOf[js.Any])
+    def setCt(value: Double): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn(value: Boolean): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setCtUndefined: Self = StObject.set(x, "ct", js.undefined)
     
     @scala.inline
-    def setReachable(value: Boolean): Self = this.set("reachable", value.asInstanceOf[js.Any])
+    def setEffect(value: LightEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColormode(value: ColorMode): Self = this.set("colormode", value.asInstanceOf[js.Any])
+    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
     @scala.inline
-    def deleteColormode: Self = this.set("colormode", js.undefined)
+    def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCt(value: Double): Self = this.set("ct", value.asInstanceOf[js.Any])
+    def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
     
     @scala.inline
-    def deleteCt: Self = this.set("ct", js.undefined)
+    def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: LightEffect): Self = this.set("effect", value.asInstanceOf[js.Any])
+    def setReachable(value: Boolean): Self = StObject.set(x, "reachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEffect: Self = this.set("effect", js.undefined)
+    def setRgb(value: js.Array[Double]): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: Double): Self = this.set("hue", value.asInstanceOf[js.Any])
+    def setRgbUndefined: Self = StObject.set(x, "rgb", js.undefined)
     
     @scala.inline
-    def deleteHue: Self = this.set("hue", js.undefined)
+    def setRgbVarargs(value: Double*): Self = StObject.set(x, "rgb", js.Array(value :_*))
     
     @scala.inline
-    def setRgbVarargs(value: Double*): Self = this.set("rgb", js.Array(value :_*))
+    def setSat(value: Double): Self = StObject.set(x, "sat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRgb(value: js.Array[Double]): Self = this.set("rgb", value.asInstanceOf[js.Any])
+    def setSatUndefined: Self = StObject.set(x, "sat", js.undefined)
     
     @scala.inline
-    def deleteRgb: Self = this.set("rgb", js.undefined)
+    def setXy(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSat(value: Double): Self = this.set("sat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSat: Self = this.set("sat", js.undefined)
-    
-    @scala.inline
-    def setXy(value: js.Tuple2[Double, Double]): Self = this.set("xy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXy: Self = this.set("xy", js.undefined)
+    def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
   }
 }

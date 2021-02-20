@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.networking.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NetworkPolicyIngressRule describes a particular set of traffic that is allowed to the pods matched by a NetworkPolicySpec's podSelector. The traffic must match both ports and from.
   */
 @js.native
-trait NetworkPolicyIngressRule extends js.Object {
+trait NetworkPolicyIngressRule extends StObject {
   
   /**
     * List of sources which should be able to access the pods selected for this rule. Items in this list are combined using a logical OR operation. If this field is empty or missing, this rule matches all sources (traffic not restricted by source). If this field is present and contains at least one item, this rule allows traffic only if the traffic matches at least one item in the from list.
@@ -29,30 +30,18 @@ object NetworkPolicyIngressRule {
   }
   
   @scala.inline
-  implicit class NetworkPolicyIngressRuleOps[Self <: NetworkPolicyIngressRule] (val x: Self) extends AnyVal {
+  implicit class NetworkPolicyIngressRuleMutableBuilder[Self <: NetworkPolicyIngressRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: js.Array[NetworkPolicyPeer]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromVarargs(value: NetworkPolicyPeer*): Self = StObject.set(x, "from", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPorts(value: js.Array[NetworkPolicyPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromVarargs(value: NetworkPolicyPeer*): Self = this.set("from", js.Array(value :_*))
-    
-    @scala.inline
-    def setFrom(value: js.Array[NetworkPolicyPeer]): Self = this.set("from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortsVarargs(value: NetworkPolicyPort*): Self = this.set("ports", js.Array(value :_*))
-    
-    @scala.inline
-    def setPorts(value: js.Array[NetworkPolicyPort]): Self = this.set("ports", value.asInstanceOf[js.Any])
+    def setPortsVarargs(value: NetworkPolicyPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

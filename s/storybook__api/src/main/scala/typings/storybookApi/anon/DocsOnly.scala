@@ -1,11 +1,12 @@
 package typings.storybookApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocsOnly extends js.Object {
+trait DocsOnly extends StObject {
   
   var docsOnly: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object DocsOnly {
   }
   
   @scala.inline
-  implicit class DocsOnlyOps[Self <: DocsOnly] (val x: Self) extends AnyVal {
+  implicit class DocsOnlyMutableBuilder[Self <: DocsOnly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setViewMode(value: typings.storybookApi.addonsMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocsOnly(value: Boolean): Self = this.set("docsOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocsOnly: Self = this.set("docsOnly", js.undefined)
-    
-    @scala.inline
-    def setViewMode(value: typings.storybookApi.addonsMod.ViewMode): Self = this.set("viewMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewMode: Self = this.set("viewMode", js.undefined)
+    def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.beans
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * There are three types of properties: bound propertiesconstrained propertiesfree properties
   */
 @js.native
-trait Property extends js.Object {
+trait Property extends StObject {
   
   /** This field may contain zero or more constants of the {@link PropertyAttribute} constants group. */
   var Attributes: Double = js.native
@@ -46,30 +47,18 @@ object Property {
   }
   
   @scala.inline
-  implicit class PropertyOps[Self <: Property] (val x: Self) extends AnyVal {
+  implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Double): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Double): Self = this.set("Attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandle(value: Double): Self = this.set("Handle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `type`): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: `type`): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

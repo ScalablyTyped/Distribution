@@ -1,14 +1,14 @@
 package typings.three
 
 import typings.three.interpolantMod.Interpolant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/interpolants/QuaternionLinearInterpolant", JSImport.Namespace)
-@js.native
-object quaternionLinearInterpolantMod extends js.Object {
+object quaternionLinearInterpolantMod {
   
+  @JSImport("three/src/math/interpolants/QuaternionLinearInterpolant", "QuaternionLinearInterpolant")
   @js.native
   class QuaternionLinearInterpolant protected () extends Interpolant {
     def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double) = this()

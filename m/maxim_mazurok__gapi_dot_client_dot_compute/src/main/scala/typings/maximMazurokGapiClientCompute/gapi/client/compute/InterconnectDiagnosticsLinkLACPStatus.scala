@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InterconnectDiagnosticsLinkLACPStatus extends js.Object {
+trait InterconnectDiagnosticsLinkLACPStatus extends StObject {
   
   /** System ID of the port on Google's side of the LACP exchange. */
   var googleSystemId: js.UndefOr[String] = js.native
@@ -29,36 +30,24 @@ object InterconnectDiagnosticsLinkLACPStatus {
   }
   
   @scala.inline
-  implicit class InterconnectDiagnosticsLinkLACPStatusOps[Self <: InterconnectDiagnosticsLinkLACPStatus] (val x: Self) extends AnyVal {
+  implicit class InterconnectDiagnosticsLinkLACPStatusMutableBuilder[Self <: InterconnectDiagnosticsLinkLACPStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoogleSystemId(value: String): Self = StObject.set(x, "googleSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoogleSystemIdUndefined: Self = StObject.set(x, "googleSystemId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNeighborSystemId(value: String): Self = StObject.set(x, "neighborSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleSystemId(value: String): Self = this.set("googleSystemId", value.asInstanceOf[js.Any])
+    def setNeighborSystemIdUndefined: Self = StObject.set(x, "neighborSystemId", js.undefined)
     
     @scala.inline
-    def deleteGoogleSystemId: Self = this.set("googleSystemId", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeighborSystemId(value: String): Self = this.set("neighborSystemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNeighborSystemId: Self = this.set("neighborSystemId", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

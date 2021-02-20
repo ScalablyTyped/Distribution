@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Environments extends js.Object {
+trait Environments extends StObject {
   
   var details: scala.Double = js.native
   
@@ -35,36 +36,24 @@ object Environments {
   }
   
   @scala.inline
-  implicit class EnvironmentsOps[Self <: Environments] (val x: Self) extends AnyVal {
+  implicit class EnvironmentsMutableBuilder[Self <: Environments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: scala.Double): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironments(value: scala.Double): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssues(value: scala.Double): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: scala.Double): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setReleaseInfo(value: scala.Double): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironments(value: scala.Double): Self = this.set("environments", value.asInstanceOf[js.Any])
+    def setTestResults(value: scala.Double): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssues(value: scala.Double): Self = this.set("issues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleaseInfo(value: scala.Double): Self = this.set("releaseInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestResults(value: scala.Double): Self = this.set("testResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItems(value: scala.Double): Self = this.set("workItems", value.asInstanceOf[js.Any])
+    def setWorkItems(value: scala.Double): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
   }
 }

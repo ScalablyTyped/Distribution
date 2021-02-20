@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitosyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushSync extends js.Object {
+trait PushSync extends StObject {
   
   /**
     * List of SNS platform application ARNs that could be used by clients.
@@ -26,33 +27,21 @@ object PushSync {
   }
   
   @scala.inline
-  implicit class PushSyncOps[Self <: PushSync] (val x: Self) extends AnyVal {
+  implicit class PushSyncMutableBuilder[Self <: PushSync] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationArns(value: ApplicationArnList): Self = StObject.set(x, "ApplicationArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationArnsUndefined: Self = StObject.set(x, "ApplicationArns", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationArnsVarargs(value: ApplicationArn*): Self = StObject.set(x, "ApplicationArns", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationArnsVarargs(value: ApplicationArn*): Self = this.set("ApplicationArns", js.Array(value :_*))
+    def setRoleArn(value: AssumeRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationArns(value: ApplicationArnList): Self = this.set("ApplicationArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationArns: Self = this.set("ApplicationArns", js.undefined)
-    
-    @scala.inline
-    def setRoleArn(value: AssumeRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

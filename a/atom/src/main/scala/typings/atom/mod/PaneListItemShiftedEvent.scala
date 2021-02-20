@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaneListItemShiftedEvent extends js.Object {
+trait PaneListItemShiftedEvent extends StObject {
   
   /** A number indicating where the item is located. */
   var index: Double = js.native
@@ -22,24 +23,12 @@ object PaneListItemShiftedEvent {
   }
   
   @scala.inline
-  implicit class PaneListItemShiftedEventOps[Self <: PaneListItemShiftedEvent] (val x: Self) extends AnyVal {
+  implicit class PaneListItemShiftedEventMutableBuilder[Self <: PaneListItemShiftedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: js.Object): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

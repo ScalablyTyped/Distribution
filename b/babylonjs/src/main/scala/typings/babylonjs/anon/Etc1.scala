@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Etc1 extends js.Object {
+trait Etc1 extends StObject {
   
   /**
     * etc1 compression format
@@ -36,42 +37,30 @@ object Etc1 {
   }
   
   @scala.inline
-  implicit class Etc1Ops[Self <: Etc1] (val x: Self) extends AnyVal {
+  implicit class Etc1MutableBuilder[Self <: Etc1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtc1(value: Boolean): Self = StObject.set(x, "etc1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtc1Undefined: Self = StObject.set(x, "etc1", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEtc2(value: Boolean): Self = StObject.set(x, "etc2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtc1(value: Boolean): Self = this.set("etc1", value.asInstanceOf[js.Any])
+    def setEtc2Undefined: Self = StObject.set(x, "etc2", js.undefined)
     
     @scala.inline
-    def deleteEtc1: Self = this.set("etc1", js.undefined)
+    def setPvrtc(value: Boolean): Self = StObject.set(x, "pvrtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtc2(value: Boolean): Self = this.set("etc2", value.asInstanceOf[js.Any])
+    def setPvrtcUndefined: Self = StObject.set(x, "pvrtc", js.undefined)
     
     @scala.inline
-    def deleteEtc2: Self = this.set("etc2", js.undefined)
+    def setS3tc(value: Boolean): Self = StObject.set(x, "s3tc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPvrtc(value: Boolean): Self = this.set("pvrtc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePvrtc: Self = this.set("pvrtc", js.undefined)
-    
-    @scala.inline
-    def setS3tc(value: Boolean): Self = this.set("s3tc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3tc: Self = this.set("s3tc", js.undefined)
+    def setS3tcUndefined: Self = StObject.set(x, "s3tc", js.undefined)
   }
 }

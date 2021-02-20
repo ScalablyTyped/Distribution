@@ -1,5 +1,6 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.luxon.luxonStrings.basic
   - typings.luxon.luxonStrings.extended
 */
-trait ToISOFormat extends js.Object
+trait ToISOFormat extends StObject
 object ToISOFormat {
   
   @scala.inline

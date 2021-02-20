@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,66 +69,54 @@ object ParamsResourceSpreadsheetsValuesUpdate {
   }
   
   @scala.inline
-  implicit class ParamsResourceSpreadsheetsValuesUpdateOps[Self <: ParamsResourceSpreadsheetsValuesUpdate] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceSpreadsheetsValuesUpdateMutableBuilder[Self <: ParamsResourceSpreadsheetsValuesUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeValuesInResponse(value: Boolean): Self = StObject.set(x, "includeValuesInResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setIncludeValuesInResponseUndefined: Self = StObject.set(x, "includeValuesInResponse", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeValuesInResponse(value: Boolean): Self = this.set("includeValuesInResponse", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteIncludeValuesInResponse: Self = this.set("includeValuesInResponse", js.undefined)
+    def setRequestBody(value: SchemaValueRange): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: String): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setResponseDateTimeRenderOption(value: String): Self = StObject.set(x, "responseDateTimeRenderOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaValueRange): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    def setResponseDateTimeRenderOptionUndefined: Self = StObject.set(x, "responseDateTimeRenderOption", js.undefined)
     
     @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    def setResponseValueRenderOption(value: String): Self = StObject.set(x, "responseValueRenderOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDateTimeRenderOption(value: String): Self = this.set("responseDateTimeRenderOption", value.asInstanceOf[js.Any])
+    def setResponseValueRenderOptionUndefined: Self = StObject.set(x, "responseValueRenderOption", js.undefined)
     
     @scala.inline
-    def deleteResponseDateTimeRenderOption: Self = this.set("responseDateTimeRenderOption", js.undefined)
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseValueRenderOption(value: String): Self = this.set("responseValueRenderOption", value.asInstanceOf[js.Any])
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
     @scala.inline
-    def deleteResponseValueRenderOption: Self = this.set("responseValueRenderOption", js.undefined)
+    def setValueInputOption(value: String): Self = StObject.set(x, "valueInputOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
-    
-    @scala.inline
-    def setValueInputOption(value: String): Self = this.set("valueInputOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueInputOption: Self = this.set("valueInputOption", js.undefined)
+    def setValueInputOptionUndefined: Self = StObject.set(x, "valueInputOption", js.undefined)
   }
 }

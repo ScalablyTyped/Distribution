@@ -2,13 +2,14 @@ package typings.web3CoreHelpers.mod
 
 import typings.node.netMod.Server
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core-helpers", "IpcProviderBase")
 @js.native
-class IpcProviderBase protected () extends js.Object {
+class IpcProviderBase protected () extends StObject {
   def this(path: String, net: Server) = this()
   
   def addDefaultEvents(): Unit = js.native

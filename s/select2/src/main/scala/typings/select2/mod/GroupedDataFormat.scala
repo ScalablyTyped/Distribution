@@ -1,11 +1,12 @@
 package typings.select2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupedDataFormat extends js.Object {
+trait GroupedDataFormat extends StObject {
   
   var children: js.UndefOr[js.Array[DataFormat]] = js.native
   
@@ -22,30 +23,18 @@ object GroupedDataFormat {
   }
   
   @scala.inline
-  implicit class GroupedDataFormatOps[Self <: GroupedDataFormat] (val x: Self) extends AnyVal {
+  implicit class GroupedDataFormatMutableBuilder[Self <: GroupedDataFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[DataFormat]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: DataFormat*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChildrenVarargs(value: DataFormat*): Self = this.set("children", js.Array(value :_*))
-    
-    @scala.inline
-    def setChildren(value: js.Array[DataFormat]): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

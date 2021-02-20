@@ -1,12 +1,13 @@
 package typings.thrift.mod
 
 import typings.thrift.mod.Thrift.MessageType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TMessage extends js.Object {
+trait TMessage extends StObject {
   
   var fname: String = js.native
   
@@ -23,27 +24,15 @@ object TMessage {
   }
   
   @scala.inline
-  implicit class TMessageOps[Self <: TMessage] (val x: Self) extends AnyVal {
+  implicit class TMessageMutableBuilder[Self <: TMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMtype(value: MessageType): Self = StObject.set(x, "mtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFname(value: String): Self = this.set("fname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMtype(value: MessageType): Self = this.set("mtype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRseqid(value: Double): Self = this.set("rseqid", value.asInstanceOf[js.Any])
+    def setRseqid(value: Double): Self = StObject.set(x, "rseqid", value.asInstanceOf[js.Any])
   }
 }

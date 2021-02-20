@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpreadsheetToolbar extends js.Object {
+trait SpreadsheetToolbar extends StObject {
   
   var data: js.UndefOr[Boolean | js.Any] = js.native
   
@@ -22,36 +23,24 @@ object SpreadsheetToolbar {
   }
   
   @scala.inline
-  implicit class SpreadsheetToolbarOps[Self <: SpreadsheetToolbar] (val x: Self) extends AnyVal {
+  implicit class SpreadsheetToolbarMutableBuilder[Self <: SpreadsheetToolbar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Boolean | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHome(value: Boolean | js.Any): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Boolean | js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setInsert(value: Boolean | js.Any): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHome(value: Boolean | js.Any): Self = this.set("home", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHome: Self = this.set("home", js.undefined)
-    
-    @scala.inline
-    def setInsert(value: Boolean | js.Any): Self = this.set("insert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsert: Self = this.set("insert", js.undefined)
+    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
   }
 }

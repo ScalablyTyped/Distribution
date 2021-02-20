@@ -2,6 +2,7 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.sparqljsStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object Update {
   }
   
   @scala.inline
-  implicit class UpdateOps[Self <: Update] (val x: Self) extends AnyVal {
+  implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdates(value: js.Array[UpdateOperation]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixes(value: StringDictionary[String]): Self = this.set("prefixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: update): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatesVarargs(value: UpdateOperation*): Self = this.set("updates", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdates(value: js.Array[UpdateOperation]): Self = this.set("updates", value.asInstanceOf[js.Any])
+    def setUpdatesVarargs(value: UpdateOperation*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

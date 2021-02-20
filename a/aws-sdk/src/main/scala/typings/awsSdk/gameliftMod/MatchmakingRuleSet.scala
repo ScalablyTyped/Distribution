@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchmakingRuleSet extends js.Object {
+trait MatchmakingRuleSet extends StObject {
   
   /**
     * The time stamp indicating when this data object was created. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
@@ -36,39 +37,27 @@ object MatchmakingRuleSet {
   }
   
   @scala.inline
-  implicit class MatchmakingRuleSetOps[Self <: MatchmakingRuleSet] (val x: Self) extends AnyVal {
+  implicit class MatchmakingRuleSetMutableBuilder[Self <: MatchmakingRuleSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleSetArn(value: MatchmakingRuleSetArn): Self = StObject.set(x, "RuleSetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleSetBody(value: RuleSetBody): Self = this.set("RuleSetBody", value.asInstanceOf[js.Any])
+    def setRuleSetArnUndefined: Self = StObject.set(x, "RuleSetArn", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setRuleSetBody(value: RuleSetBody): Self = StObject.set(x, "RuleSetBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setRuleSetName(value: MatchmakingIdStringModel): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleSetArn(value: MatchmakingRuleSetArn): Self = this.set("RuleSetArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleSetArn: Self = this.set("RuleSetArn", js.undefined)
-    
-    @scala.inline
-    def setRuleSetName(value: MatchmakingIdStringModel): Self = this.set("RuleSetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleSetName: Self = this.set("RuleSetName", js.undefined)
+    def setRuleSetNameUndefined: Self = StObject.set(x, "RuleSetName", js.undefined)
   }
 }

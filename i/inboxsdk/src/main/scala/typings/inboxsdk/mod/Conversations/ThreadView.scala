@@ -3,12 +3,13 @@ package typings.inboxsdk.mod.Conversations
 import typings.inboxsdk.inboxsdkStrings.contactHover
 import typings.inboxsdk.inboxsdkStrings.destroy
 import typings.inboxsdk.mod.Common.SimpleElementView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreadView extends js.Object {
+trait ThreadView extends StObject {
   
   def addLabel(): SimpleElementView = js.native
   

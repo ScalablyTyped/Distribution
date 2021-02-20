@@ -1,5 +1,6 @@
 package typings.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,81 +59,69 @@ object FancyBoxSlide {
   }
   
   @scala.inline
-  implicit class FancyBoxSlideOps[Self <: FancyBoxSlide] (val x: Self) extends AnyVal {
+  implicit class FancyBoxSlideMutableBuilder[Self <: FancyBoxSlide] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$content(value: JQuery): Self = StObject.set(x, "$content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$contentUndefined: Self = StObject.set(x, "$content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$iframe(value: JQuery): Self = StObject.set(x, "$iframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def set$iframeUndefined: Self = StObject.set(x, "$iframe", js.undefined)
     
     @scala.inline
-    def setIsComplete(value: Boolean): Self = this.set("isComplete", value.asInstanceOf[js.Any])
+    def set$image(value: JQuery): Self = StObject.set(x, "$image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLoaded(value: Boolean): Self = this.set("isLoaded", value.asInstanceOf[js.Any])
+    def set$imageUndefined: Self = StObject.set(x, "$image", js.undefined)
     
     @scala.inline
-    def setIsLoading(value: Boolean): Self = this.set("isLoading", value.asInstanceOf[js.Any])
+    def set$slide(value: JQuery): Self = StObject.set(x, "$slide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRevealed(value: Boolean): Self = this.set("isRevealed", value.asInstanceOf[js.Any])
+    def set$slideUndefined: Self = StObject.set(x, "$slide", js.undefined)
     
     @scala.inline
-    def setPos(value: Double): Self = this.set("pos", value.asInstanceOf[js.Any])
+    def set$spinner(value: JQuery): Self = StObject.set(x, "$spinner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def set$spinnerUndefined: Self = StObject.set(x, "$spinner", js.undefined)
     
     @scala.inline
-    def set$content(value: JQuery): Self = this.set("$content", value.asInstanceOf[js.Any])
+    def setContentSource(value: String): Self = StObject.set(x, "contentSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$content: Self = this.set("$content", js.undefined)
+    def setContentSourceUndefined: Self = StObject.set(x, "contentSource", js.undefined)
     
     @scala.inline
-    def set$iframe(value: JQuery): Self = this.set("$iframe", value.asInstanceOf[js.Any])
+    def setForcedDuration(value: Double): Self = StObject.set(x, "forcedDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$iframe: Self = this.set("$iframe", js.undefined)
+    def setForcedDurationUndefined: Self = StObject.set(x, "forcedDuration", js.undefined)
     
     @scala.inline
-    def set$image(value: JQuery): Self = this.set("$image", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$image: Self = this.set("$image", js.undefined)
+    def setIsComplete(value: Boolean): Self = StObject.set(x, "isComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$slide(value: JQuery): Self = this.set("$slide", value.asInstanceOf[js.Any])
+    def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$slide: Self = this.set("$slide", js.undefined)
+    def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$spinner(value: JQuery): Self = this.set("$spinner", value.asInstanceOf[js.Any])
+    def setIsRevealed(value: Boolean): Self = StObject.set(x, "isRevealed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$spinner: Self = this.set("$spinner", js.undefined)
+    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSource(value: String): Self = this.set("contentSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentSource: Self = this.set("contentSource", js.undefined)
-    
-    @scala.inline
-    def setForcedDuration(value: Double): Self = this.set("forcedDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForcedDuration: Self = this.set("forcedDuration", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

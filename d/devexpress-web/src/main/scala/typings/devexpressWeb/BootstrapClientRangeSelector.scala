@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,31 +74,19 @@ object BootstrapClientRangeSelector {
   }
   
   @scala.inline
-  implicit class BootstrapClientRangeSelectorOps[Self <: BootstrapClientRangeSelector] (val x: Self) extends AnyVal {
+  implicit class BootstrapClientRangeSelectorMutableBuilder[Self <: BootstrapClientRangeSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetValue(value: () => js.Array[_]): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetValue(value: () => js.Array[_]): Self = this.set("GetValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetValue(value: js.Array[_] => Unit): Self = this.set("SetValue", js.Any.fromFunction1(value))
+    def setSetValue(value: js.Array[_] => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setValueChanged(
       value: ASPxClientEvent[
           BootstrapClientRangeSelectorValueChangedEventHandler[BootstrapClientRangeSelector]
         ]
-    ): Self = this.set("ValueChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ValueChanged", value.asInstanceOf[js.Any])
   }
 }

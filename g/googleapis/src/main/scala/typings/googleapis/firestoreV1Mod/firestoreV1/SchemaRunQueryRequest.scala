@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for Firestore.RunQuery.
   */
 @js.native
-trait SchemaRunQueryRequest extends js.Object {
+trait SchemaRunQueryRequest extends StObject {
   
   /**
     * Starts a new transaction and reads the documents. Defaults to a read-only
@@ -42,42 +43,30 @@ object SchemaRunQueryRequest {
   }
   
   @scala.inline
-  implicit class SchemaRunQueryRequestOps[Self <: SchemaRunQueryRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaRunQueryRequestMutableBuilder[Self <: SchemaRunQueryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewTransaction(value: SchemaTransactionOptions): Self = StObject.set(x, "newTransaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewTransactionUndefined: Self = StObject.set(x, "newTransaction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewTransaction(value: SchemaTransactionOptions): Self = this.set("newTransaction", value.asInstanceOf[js.Any])
+    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
     @scala.inline
-    def deleteNewTransaction: Self = this.set("newTransaction", js.undefined)
+    def setStructuredQuery(value: SchemaStructuredQuery): Self = StObject.set(x, "structuredQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    def setStructuredQueryUndefined: Self = StObject.set(x, "structuredQuery", js.undefined)
     
     @scala.inline
-    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStructuredQuery(value: SchemaStructuredQuery): Self = this.set("structuredQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructuredQuery: Self = this.set("structuredQuery", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: String): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

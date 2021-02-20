@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminRespondToAuthChallengeResponse extends js.Object {
+trait AdminRespondToAuthChallengeResponse extends StObject {
   
   /**
     * The result returned by the server in response to the authentication request.
@@ -36,42 +37,30 @@ object AdminRespondToAuthChallengeResponse {
   }
   
   @scala.inline
-  implicit class AdminRespondToAuthChallengeResponseOps[Self <: AdminRespondToAuthChallengeResponse] (val x: Self) extends AnyVal {
+  implicit class AdminRespondToAuthChallengeResponseMutableBuilder[Self <: AdminRespondToAuthChallengeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationResult(value: AuthenticationResultType): Self = StObject.set(x, "AuthenticationResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationResultUndefined: Self = StObject.set(x, "AuthenticationResult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChallengeName(value: ChallengeNameType): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationResult(value: AuthenticationResultType): Self = this.set("AuthenticationResult", value.asInstanceOf[js.Any])
+    def setChallengeNameUndefined: Self = StObject.set(x, "ChallengeName", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationResult: Self = this.set("AuthenticationResult", js.undefined)
+    def setChallengeParameters(value: ChallengeParametersType): Self = StObject.set(x, "ChallengeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallengeName(value: ChallengeNameType): Self = this.set("ChallengeName", value.asInstanceOf[js.Any])
+    def setChallengeParametersUndefined: Self = StObject.set(x, "ChallengeParameters", js.undefined)
     
     @scala.inline
-    def deleteChallengeName: Self = this.set("ChallengeName", js.undefined)
+    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallengeParameters(value: ChallengeParametersType): Self = this.set("ChallengeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChallengeParameters: Self = this.set("ChallengeParameters", js.undefined)
-    
-    @scala.inline
-    def setSession(value: SessionType): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("Session", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
   }
 }

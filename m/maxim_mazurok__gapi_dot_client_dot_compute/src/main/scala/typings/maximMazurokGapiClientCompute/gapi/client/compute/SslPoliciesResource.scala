@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrintProjec
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserSslPolicy
 import typings.maximMazurokGapiClientCompute.anon.ResourceSslPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SslPoliciesResource extends js.Object {
+trait SslPoliciesResource extends StObject {
   
   /** Deletes the specified SSL policy. The SSL policy resource can be deleted only if it is not in use by any TargetHttpsProxy or TargetSslProxy resources. */
   def delete(): Request[Operation] = js.native

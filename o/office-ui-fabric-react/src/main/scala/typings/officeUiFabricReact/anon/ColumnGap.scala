@@ -1,11 +1,12 @@
 package typings.officeUiFabricReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnGap extends js.Object {
+trait ColumnGap extends StObject {
   
   var columnGap: Unit = js.native
   
@@ -20,24 +21,12 @@ object ColumnGap {
   }
   
   @scala.inline
-  implicit class ColumnGapOps[Self <: ColumnGap] (val x: Self) extends AnyVal {
+  implicit class ColumnGapMutableBuilder[Self <: ColumnGap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnGap(value: Unit): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumnGap(value: Unit): Self = this.set("columnGap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowGap(value: Unit): Self = this.set("rowGap", value.asInstanceOf[js.Any])
+    def setRowGap(value: Unit): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
   }
 }

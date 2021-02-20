@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Automated extends js.Object {
+trait Automated extends StObject {
   
   var automated: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object Automated {
   }
   
   @scala.inline
-  implicit class AutomatedOps[Self <: Automated] (val x: Self) extends AnyVal {
+  implicit class AutomatedMutableBuilder[Self <: Automated] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomated(value: scala.Double): Self = StObject.set(x, "automated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManual(value: scala.Double): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomated(value: scala.Double): Self = this.set("automated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManual(value: scala.Double): Self = this.set("manual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheduled(value: scala.Double): Self = this.set("scheduled", value.asInstanceOf[js.Any])
+    def setScheduled(value: scala.Double): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
   }
 }

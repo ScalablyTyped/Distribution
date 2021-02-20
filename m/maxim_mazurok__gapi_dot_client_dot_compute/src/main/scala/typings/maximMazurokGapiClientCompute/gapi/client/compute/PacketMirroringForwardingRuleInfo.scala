@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PacketMirroringForwardingRuleInfo extends js.Object {
+trait PacketMirroringForwardingRuleInfo extends StObject {
   
   /** [Output Only] Unique identifier for the forwarding rule; defined by the server. */
   var canonicalUrl: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object PacketMirroringForwardingRuleInfo {
   }
   
   @scala.inline
-  implicit class PacketMirroringForwardingRuleInfoOps[Self <: PacketMirroringForwardingRuleInfo] (val x: Self) extends AnyVal {
+  implicit class PacketMirroringForwardingRuleInfoMutableBuilder[Self <: PacketMirroringForwardingRuleInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanonicalUrl(value: String): Self = StObject.set(x, "canonicalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanonicalUrlUndefined: Self = StObject.set(x, "canonicalUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanonicalUrl(value: String): Self = this.set("canonicalUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanonicalUrl: Self = this.set("canonicalUrl", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

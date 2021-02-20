@@ -3,16 +3,16 @@ package typings.plottable
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/dispatchers/dispatcher", JSImport.Namespace)
-@js.native
-object dispatcherMod extends js.Object {
+object dispatcherMod {
   
+  @JSImport("plottable/build/src/dispatchers/dispatcher", "Dispatcher")
   @js.native
-  class Dispatcher () extends js.Object {
+  class Dispatcher () extends StObject {
     
     /* protected */ def _addCallbackForEvent(eventName: String, callback: js.Function): Unit = js.native
     

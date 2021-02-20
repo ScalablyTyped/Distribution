@@ -1,12 +1,13 @@
 package typings.opentypeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("opentype.js", "GlyphSet")
 @js.native
-class GlyphSet protected () extends js.Object {
+class GlyphSet protected () extends StObject {
   def this(font: Font, glyphs: js.Array[js.Function0[Glyph] | Glyph]) = this()
   
   var font: js.Any = js.native

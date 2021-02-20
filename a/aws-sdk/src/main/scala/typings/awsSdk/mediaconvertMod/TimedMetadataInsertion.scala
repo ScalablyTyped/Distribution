@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimedMetadataInsertion extends js.Object {
+trait TimedMetadataInsertion extends StObject {
   
   /**
     * Id3Insertions contains the array of Id3Insertion instances.
@@ -21,27 +22,15 @@ object TimedMetadataInsertion {
   }
   
   @scala.inline
-  implicit class TimedMetadataInsertionOps[Self <: TimedMetadataInsertion] (val x: Self) extends AnyVal {
+  implicit class TimedMetadataInsertionMutableBuilder[Self <: TimedMetadataInsertion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId3Insertions(value: listOfId3Insertion): Self = StObject.set(x, "Id3Insertions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId3InsertionsUndefined: Self = StObject.set(x, "Id3Insertions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId3InsertionsVarargs(value: Id3Insertion*): Self = this.set("Id3Insertions", js.Array(value :_*))
-    
-    @scala.inline
-    def setId3Insertions(value: listOfId3Insertion): Self = this.set("Id3Insertions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId3Insertions: Self = this.set("Id3Insertions", js.undefined)
+    def setId3InsertionsVarargs(value: Id3Insertion*): Self = StObject.set(x, "Id3Insertions", js.Array(value :_*))
   }
 }

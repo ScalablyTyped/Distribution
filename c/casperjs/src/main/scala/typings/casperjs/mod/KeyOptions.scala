@@ -1,11 +1,12 @@
 package typings.casperjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyOptions extends js.Object {
+trait KeyOptions extends StObject {
   
   var keepFocus: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object KeyOptions {
   }
   
   @scala.inline
-  implicit class KeyOptionsOps[Self <: KeyOptions] (val x: Self) extends AnyVal {
+  implicit class KeyOptionsMutableBuilder[Self <: KeyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeepFocus(value: Boolean): Self = StObject.set(x, "keepFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeepFocusUndefined: Self = StObject.set(x, "keepFocus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifiers(value: String): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepFocus(value: Boolean): Self = this.set("keepFocus", value.asInstanceOf[js.Any])
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def deleteKeepFocus: Self = this.set("keepFocus", js.undefined)
+    def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiers(value: String): Self = this.set("modifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
-    
-    @scala.inline
-    def setReset(value: Boolean): Self = this.set("reset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
   }
 }

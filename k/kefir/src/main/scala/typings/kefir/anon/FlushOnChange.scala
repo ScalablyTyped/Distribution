@@ -1,11 +1,12 @@
 package typings.kefir.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlushOnChange extends js.Object {
+trait FlushOnChange extends StObject {
   
   var flushOnChange: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object FlushOnChange {
   }
   
   @scala.inline
-  implicit class FlushOnChangeOps[Self <: FlushOnChange] (val x: Self) extends AnyVal {
+  implicit class FlushOnChangeMutableBuilder[Self <: FlushOnChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlushOnChange(value: Boolean): Self = StObject.set(x, "flushOnChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlushOnChangeUndefined: Self = StObject.set(x, "flushOnChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlushOnEnd(value: Boolean): Self = StObject.set(x, "flushOnEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlushOnChange(value: Boolean): Self = this.set("flushOnChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlushOnChange: Self = this.set("flushOnChange", js.undefined)
-    
-    @scala.inline
-    def setFlushOnEnd(value: Boolean): Self = this.set("flushOnEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlushOnEnd: Self = this.set("flushOnEnd", js.undefined)
+    def setFlushOnEndUndefined: Self = StObject.set(x, "flushOnEnd", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.outputMod.emr
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterStepHadoopJarStep extends js.Object {
+trait ClusterStepHadoopJarStep extends StObject {
   
   /**
     * List of command line arguments passed to the JAR file's main function when executed.
@@ -37,42 +38,30 @@ object ClusterStepHadoopJarStep {
   }
   
   @scala.inline
-  implicit class ClusterStepHadoopJarStepOps[Self <: ClusterStepHadoopJarStep] (val x: Self) extends AnyVal {
+  implicit class ClusterStepHadoopJarStepMutableBuilder[Self <: ClusterStepHadoopJarStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setJar(value: String): Self = this.set("jar", value.asInstanceOf[js.Any])
+    def setJar(value: String): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setMainClass(value: String): Self = StObject.set(x, "mainClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setMainClassUndefined: Self = StObject.set(x, "mainClass", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainClass(value: String): Self = this.set("mainClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMainClass: Self = this.set("mainClass", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

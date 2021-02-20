@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetLayers extends js.Object {
+trait DatasetLayers extends StObject {
   
   def copy(src_lyr_name: String, dst_lyr_name: String): Layer = js.native
   def copy(src_lyr_name: String, dst_lyr_name: String, options: js.Array[String]): Layer = js.native

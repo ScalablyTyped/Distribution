@@ -1,12 +1,13 @@
 package typings.fundamentalReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Tile/Tile.TileHeaderProps> */
 @js.native
-trait PartialTileHeaderProps extends js.Object {
+trait PartialTileHeaderProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -21,30 +22,18 @@ object PartialTileHeaderProps {
   }
   
   @scala.inline
-  implicit class PartialTileHeaderPropsOps[Self <: PartialTileHeaderProps] (val x: Self) extends AnyVal {
+  implicit class PartialTileHeaderPropsMutableBuilder[Self <: PartialTileHeaderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
-    
-    @scala.inline
-    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
   }
 }

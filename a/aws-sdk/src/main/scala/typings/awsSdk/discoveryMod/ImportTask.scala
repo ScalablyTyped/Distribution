@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportTask extends js.Object {
+trait ImportTask extends StObject {
   
   /**
     * The total number of application records in the import file that failed to be imported.
@@ -81,96 +82,84 @@ object ImportTask {
   }
   
   @scala.inline
-  implicit class ImportTaskOps[Self <: ImportTask] (val x: Self) extends AnyVal {
+  implicit class ImportTaskMutableBuilder[Self <: ImportTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationImportFailure(value: Integer): Self = StObject.set(x, "applicationImportFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationImportFailureUndefined: Self = StObject.set(x, "applicationImportFailure", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationImportSuccess(value: Integer): Self = StObject.set(x, "applicationImportSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationImportFailure(value: Integer): Self = this.set("applicationImportFailure", value.asInstanceOf[js.Any])
+    def setApplicationImportSuccessUndefined: Self = StObject.set(x, "applicationImportSuccess", js.undefined)
     
     @scala.inline
-    def deleteApplicationImportFailure: Self = this.set("applicationImportFailure", js.undefined)
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationImportSuccess(value: Integer): Self = this.set("applicationImportSuccess", value.asInstanceOf[js.Any])
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def deleteApplicationImportSuccess: Self = this.set("applicationImportSuccess", js.undefined)
+    def setErrorsAndFailedEntriesZip(value: S3PresignedUrl): Self = StObject.set(x, "errorsAndFailedEntriesZip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    def setErrorsAndFailedEntriesZipUndefined: Self = StObject.set(x, "errorsAndFailedEntriesZip", js.undefined)
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    def setImportCompletionTime(value: TimeStamp): Self = StObject.set(x, "importCompletionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsAndFailedEntriesZip(value: S3PresignedUrl): Self = this.set("errorsAndFailedEntriesZip", value.asInstanceOf[js.Any])
+    def setImportCompletionTimeUndefined: Self = StObject.set(x, "importCompletionTime", js.undefined)
     
     @scala.inline
-    def deleteErrorsAndFailedEntriesZip: Self = this.set("errorsAndFailedEntriesZip", js.undefined)
+    def setImportDeletedTime(value: TimeStamp): Self = StObject.set(x, "importDeletedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportCompletionTime(value: TimeStamp): Self = this.set("importCompletionTime", value.asInstanceOf[js.Any])
+    def setImportDeletedTimeUndefined: Self = StObject.set(x, "importDeletedTime", js.undefined)
     
     @scala.inline
-    def deleteImportCompletionTime: Self = this.set("importCompletionTime", js.undefined)
+    def setImportRequestTime(value: TimeStamp): Self = StObject.set(x, "importRequestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportDeletedTime(value: TimeStamp): Self = this.set("importDeletedTime", value.asInstanceOf[js.Any])
+    def setImportRequestTimeUndefined: Self = StObject.set(x, "importRequestTime", js.undefined)
     
     @scala.inline
-    def deleteImportDeletedTime: Self = this.set("importDeletedTime", js.undefined)
+    def setImportTaskId(value: ImportTaskIdentifier): Self = StObject.set(x, "importTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportRequestTime(value: TimeStamp): Self = this.set("importRequestTime", value.asInstanceOf[js.Any])
+    def setImportTaskIdUndefined: Self = StObject.set(x, "importTaskId", js.undefined)
     
     @scala.inline
-    def deleteImportRequestTime: Self = this.set("importRequestTime", js.undefined)
+    def setImportUrl(value: ImportURL): Self = StObject.set(x, "importUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportTaskId(value: ImportTaskIdentifier): Self = this.set("importTaskId", value.asInstanceOf[js.Any])
+    def setImportUrlUndefined: Self = StObject.set(x, "importUrl", js.undefined)
     
     @scala.inline
-    def deleteImportTaskId: Self = this.set("importTaskId", js.undefined)
+    def setName(value: ImportTaskName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportUrl(value: ImportURL): Self = this.set("importUrl", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteImportUrl: Self = this.set("importUrl", js.undefined)
+    def setServerImportFailure(value: Integer): Self = StObject.set(x, "serverImportFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ImportTaskName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setServerImportFailureUndefined: Self = StObject.set(x, "serverImportFailure", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setServerImportSuccess(value: Integer): Self = StObject.set(x, "serverImportSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerImportFailure(value: Integer): Self = this.set("serverImportFailure", value.asInstanceOf[js.Any])
+    def setServerImportSuccessUndefined: Self = StObject.set(x, "serverImportSuccess", js.undefined)
     
     @scala.inline
-    def deleteServerImportFailure: Self = this.set("serverImportFailure", js.undefined)
+    def setStatus(value: ImportStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerImportSuccess(value: Integer): Self = this.set("serverImportSuccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerImportSuccess: Self = this.set("serverImportSuccess", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ImportStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

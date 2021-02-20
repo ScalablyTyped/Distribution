@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An abstract datatype for specifying an Paragraph style attribute.
   */
 @js.native
-trait ParagraphAttribute extends js.Object {
+trait ParagraphAttribute extends StObject {
   
   /**
     * The text alignment of the receiver.
@@ -85,96 +86,84 @@ object ParagraphAttribute {
   }
   
   @scala.inline
-  implicit class ParagraphAttributeOps[Self <: ParagraphAttribute] (val x: Self) extends AnyVal {
+  implicit class ParagraphAttributeMutableBuilder[Self <: ParagraphAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: Double): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowsDefaultTighteningForTruncation(value: Boolean): Self = StObject.set(x, "allowsDefaultTighteningForTruncation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: Double): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setAllowsDefaultTighteningForTruncationUndefined: Self = StObject.set(x, "allowsDefaultTighteningForTruncation", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setFirstLineHeadIndent(value: Double | String): Self = StObject.set(x, "firstLineHeadIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowsDefaultTighteningForTruncation(value: Boolean): Self = this.set("allowsDefaultTighteningForTruncation", value.asInstanceOf[js.Any])
+    def setFirstLineHeadIndentUndefined: Self = StObject.set(x, "firstLineHeadIndent", js.undefined)
     
     @scala.inline
-    def deleteAllowsDefaultTighteningForTruncation: Self = this.set("allowsDefaultTighteningForTruncation", js.undefined)
+    def setHeadIndent(value: Double | String): Self = StObject.set(x, "headIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLineHeadIndent(value: Double | String): Self = this.set("firstLineHeadIndent", value.asInstanceOf[js.Any])
+    def setHeadIndentUndefined: Self = StObject.set(x, "headIndent", js.undefined)
     
     @scala.inline
-    def deleteFirstLineHeadIndent: Self = this.set("firstLineHeadIndent", js.undefined)
+    def setHyphenationFactor(value: Double): Self = StObject.set(x, "hyphenationFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadIndent(value: Double | String): Self = this.set("headIndent", value.asInstanceOf[js.Any])
+    def setHyphenationFactorUndefined: Self = StObject.set(x, "hyphenationFactor", js.undefined)
     
     @scala.inline
-    def deleteHeadIndent: Self = this.set("headIndent", js.undefined)
+    def setLineBreakMode(value: Double): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyphenationFactor(value: Double): Self = this.set("hyphenationFactor", value.asInstanceOf[js.Any])
+    def setLineBreakModeUndefined: Self = StObject.set(x, "lineBreakMode", js.undefined)
     
     @scala.inline
-    def deleteHyphenationFactor: Self = this.set("hyphenationFactor", js.undefined)
+    def setLineHeightMultiple(value: Double): Self = StObject.set(x, "lineHeightMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineBreakMode(value: Double): Self = this.set("lineBreakMode", value.asInstanceOf[js.Any])
+    def setLineHeightMultipleUndefined: Self = StObject.set(x, "lineHeightMultiple", js.undefined)
     
     @scala.inline
-    def deleteLineBreakMode: Self = this.set("lineBreakMode", js.undefined)
+    def setLineSpacing(value: Double | String): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeightMultiple(value: Double): Self = this.set("lineHeightMultiple", value.asInstanceOf[js.Any])
+    def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
     
     @scala.inline
-    def deleteLineHeightMultiple: Self = this.set("lineHeightMultiple", js.undefined)
+    def setMaximumLineHeight(value: Double | String): Self = StObject.set(x, "maximumLineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacing(value: Double | String): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
+    def setMaximumLineHeightUndefined: Self = StObject.set(x, "maximumLineHeight", js.undefined)
     
     @scala.inline
-    def deleteLineSpacing: Self = this.set("lineSpacing", js.undefined)
+    def setMinimumLineHeight(value: Double | String): Self = StObject.set(x, "minimumLineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumLineHeight(value: Double | String): Self = this.set("maximumLineHeight", value.asInstanceOf[js.Any])
+    def setMinimumLineHeightUndefined: Self = StObject.set(x, "minimumLineHeight", js.undefined)
     
     @scala.inline
-    def deleteMaximumLineHeight: Self = this.set("maximumLineHeight", js.undefined)
+    def setParagraphSpacingAfter(value: Double | String): Self = StObject.set(x, "paragraphSpacingAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumLineHeight(value: Double | String): Self = this.set("minimumLineHeight", value.asInstanceOf[js.Any])
+    def setParagraphSpacingAfterUndefined: Self = StObject.set(x, "paragraphSpacingAfter", js.undefined)
     
     @scala.inline
-    def deleteMinimumLineHeight: Self = this.set("minimumLineHeight", js.undefined)
+    def setParagraphSpacingBefore(value: Double | String): Self = StObject.set(x, "paragraphSpacingBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraphSpacingAfter(value: Double | String): Self = this.set("paragraphSpacingAfter", value.asInstanceOf[js.Any])
+    def setParagraphSpacingBeforeUndefined: Self = StObject.set(x, "paragraphSpacingBefore", js.undefined)
     
     @scala.inline
-    def deleteParagraphSpacingAfter: Self = this.set("paragraphSpacingAfter", js.undefined)
+    def setTailIndent(value: Double | String): Self = StObject.set(x, "tailIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraphSpacingBefore(value: Double | String): Self = this.set("paragraphSpacingBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParagraphSpacingBefore: Self = this.set("paragraphSpacingBefore", js.undefined)
-    
-    @scala.inline
-    def setTailIndent(value: Double | String): Self = this.set("tailIndent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTailIndent: Self = this.set("tailIndent", js.undefined)
+    def setTailIndentUndefined: Self = StObject.set(x, "tailIndent", js.undefined)
   }
 }

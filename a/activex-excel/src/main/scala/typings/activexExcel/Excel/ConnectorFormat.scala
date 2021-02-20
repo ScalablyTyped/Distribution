@@ -2,12 +2,13 @@ package typings.activexExcel.Excel
 
 import typings.activexOffice.Office.MsoConnectorType
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorFormat extends js.Object {
+trait ConnectorFormat extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -66,63 +67,51 @@ object ConnectorFormat {
   }
   
   @scala.inline
-  implicit class ConnectorFormatOps[Self <: ConnectorFormat] (val x: Self) extends AnyVal {
+  implicit class ConnectorFormatMutableBuilder[Self <: ConnectorFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginConnect(value: (Shape, Double) => Unit): Self = StObject.set(x, "BeginConnect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginConnected(value: MsoTriState): Self = StObject.set(x, "BeginConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setBeginConnectedShape(value: Shape): Self = StObject.set(x, "BeginConnectedShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginConnect(value: (Shape, Double) => Unit): Self = this.set("BeginConnect", js.Any.fromFunction2(value))
+    def setBeginConnectionSite(value: Double): Self = StObject.set(x, "BeginConnectionSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginConnected(value: MsoTriState): Self = this.set("BeginConnected", value.asInstanceOf[js.Any])
+    def setBeginDisconnect(value: () => Unit): Self = StObject.set(x, "BeginDisconnect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeginConnectedShape(value: Shape): Self = this.set("BeginConnectedShape", value.asInstanceOf[js.Any])
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginConnectionSite(value: Double): Self = this.set("BeginConnectionSite", value.asInstanceOf[js.Any])
+    def setEndConnect(value: (Shape, Double) => Unit): Self = StObject.set(x, "EndConnect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeginDisconnect(value: () => Unit): Self = this.set("BeginDisconnect", js.Any.fromFunction0(value))
+    def setEndConnected(value: MsoTriState): Self = StObject.set(x, "EndConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setEndConnectedShape(value: Shape): Self = StObject.set(x, "EndConnectedShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndConnect(value: (Shape, Double) => Unit): Self = this.set("EndConnect", js.Any.fromFunction2(value))
+    def setEndConnectionSite(value: Double): Self = StObject.set(x, "EndConnectionSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndConnected(value: MsoTriState): Self = this.set("EndConnected", value.asInstanceOf[js.Any])
+    def setEndDisconnect(value: () => Unit): Self = StObject.set(x, "EndDisconnect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndConnectedShape(value: Shape): Self = this.set("EndConnectedShape", value.asInstanceOf[js.Any])
+    def setExcelDotConnectorFormat_typekey(value: ConnectorFormat): Self = StObject.set(x, "Excel.ConnectorFormat_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndConnectionSite(value: Double): Self = this.set("EndConnectionSite", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDisconnect(value: () => Unit): Self = this.set("EndDisconnect", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExcelDotConnectorFormat_typekey(value: ConnectorFormat): Self = this.set("Excel.ConnectorFormat_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MsoConnectorType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: MsoConnectorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

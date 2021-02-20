@@ -1,5 +1,6 @@
 package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An error event which is returned by the Error Reporting system.
   */
 @js.native
-trait SchemaErrorEvent extends js.Object {
+trait SchemaErrorEvent extends StObject {
   
   /**
     * Data about the context in which the error occurred.
@@ -41,42 +42,30 @@ object SchemaErrorEvent {
   }
   
   @scala.inline
-  implicit class SchemaErrorEventOps[Self <: SchemaErrorEvent] (val x: Self) extends AnyVal {
+  implicit class SchemaErrorEventMutableBuilder[Self <: SchemaErrorEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: SchemaErrorContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: SchemaErrorContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTime(value: String): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteEventTime: Self = this.set("eventTime", js.undefined)
+    def setServiceContext(value: SchemaServiceContext): Self = StObject.set(x, "serviceContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
-    
-    @scala.inline
-    def setServiceContext(value: SchemaServiceContext): Self = this.set("serviceContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceContext: Self = this.set("serviceContext", js.undefined)
+    def setServiceContextUndefined: Self = StObject.set(x, "serviceContext", js.undefined)
   }
 }

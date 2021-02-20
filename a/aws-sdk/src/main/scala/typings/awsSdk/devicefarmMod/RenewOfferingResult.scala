@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenewOfferingResult extends js.Object {
+trait RenewOfferingResult extends StObject {
   
   /**
     * Represents the status of the offering transaction for the renewal.
@@ -21,24 +22,12 @@ object RenewOfferingResult {
   }
   
   @scala.inline
-  implicit class RenewOfferingResultOps[Self <: RenewOfferingResult] (val x: Self) extends AnyVal {
+  implicit class RenewOfferingResultMutableBuilder[Self <: RenewOfferingResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOfferingTransaction(value: OfferingTransaction): Self = StObject.set(x, "offeringTransaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOfferingTransaction(value: OfferingTransaction): Self = this.set("offeringTransaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfferingTransaction: Self = this.set("offeringTransaction", js.undefined)
+    def setOfferingTransactionUndefined: Self = StObject.set(x, "offeringTransaction", js.undefined)
   }
 }

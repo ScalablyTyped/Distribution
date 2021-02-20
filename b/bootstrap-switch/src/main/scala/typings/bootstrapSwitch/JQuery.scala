@@ -18,12 +18,13 @@ import typings.bootstrapSwitch.bootstrapSwitchStrings.size
 import typings.bootstrapSwitch.bootstrapSwitchStrings.state
 import typings.bootstrapSwitch.bootstrapSwitchStrings.switchChangeDotbootstrapSwitch
 import typings.bootstrapSwitch.bootstrapSwitchStrings.wrapperClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def bootstrapSwitch(): JQuery = js.native
   def bootstrapSwitch(method: String): JQuery = js.native

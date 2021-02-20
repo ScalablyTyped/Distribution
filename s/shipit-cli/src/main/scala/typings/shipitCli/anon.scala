@@ -5,16 +5,15 @@ import typings.shipitCli.mod.EmptyCallback
 import typings.shipitCli.mod.ShipitLocal
 import typings.shipitCli.mod.Tasks_
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Typeofshipit extends js.Object {
+  trait Typeofshipit extends StObject {
     
     def blTask(name: String, depsOrFn: js.Array[String]): js.Any = js.native
     def blTask(name: String, depsOrFn: js.Array[String], fn: js.Function0[Unit]): js.Any = js.native

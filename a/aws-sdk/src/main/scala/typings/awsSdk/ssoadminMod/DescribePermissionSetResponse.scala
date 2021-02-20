@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePermissionSetResponse extends js.Object {
+trait DescribePermissionSetResponse extends StObject {
   
   /**
     * Describes the level of access on an AWS account.
@@ -21,24 +22,12 @@ object DescribePermissionSetResponse {
   }
   
   @scala.inline
-  implicit class DescribePermissionSetResponseOps[Self <: DescribePermissionSetResponse] (val x: Self) extends AnyVal {
+  implicit class DescribePermissionSetResponseMutableBuilder[Self <: DescribePermissionSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermissionSet(value: PermissionSet): Self = StObject.set(x, "PermissionSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPermissionSet(value: PermissionSet): Self = this.set("PermissionSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissionSet: Self = this.set("PermissionSet", js.undefined)
+    def setPermissionSetUndefined: Self = StObject.set(x, "PermissionSet", js.undefined)
   }
 }

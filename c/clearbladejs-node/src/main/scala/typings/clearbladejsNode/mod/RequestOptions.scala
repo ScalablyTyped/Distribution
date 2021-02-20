@@ -1,11 +1,12 @@
 package typings.clearbladejsNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestOptions extends js.Object {
+trait RequestOptions extends StObject {
   
   var URI: js.UndefOr[String] = js.native
   
@@ -36,72 +37,60 @@ object RequestOptions {
   }
   
   @scala.inline
-  implicit class RequestOptionsOps[Self <: RequestOptions] (val x: Self) extends AnyVal {
+  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setSystemSecret(value: String): Self = this.set("systemSecret", value.asInstanceOf[js.Any])
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setURI(value: String): Self = this.set("URI", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def deleteURI: Self = this.set("URI", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthToken(value: String): Self = this.set("authToken", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteAuthToken: Self = this.set("authToken", js.undefined)
+    def setQs(value: String): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setUseUser(value: Boolean): Self = StObject.set(x, "useUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQs(value: String): Self = this.set("qs", value.asInstanceOf[js.Any])
+    def setUseUserUndefined: Self = StObject.set(x, "useUser", js.undefined)
     
     @scala.inline
-    def deleteQs: Self = this.set("qs", js.undefined)
+    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseUser(value: Boolean): Self = this.set("useUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseUser: Self = this.set("useUser", js.undefined)
-    
-    @scala.inline
-    def setUser(value: APIUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

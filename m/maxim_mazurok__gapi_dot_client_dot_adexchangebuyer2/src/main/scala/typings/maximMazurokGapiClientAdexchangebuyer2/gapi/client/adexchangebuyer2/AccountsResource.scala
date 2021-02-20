@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountsResource extends js.Object {
+trait AccountsResource extends StObject {
   
   var clients: ClientsResource = js.native
   
@@ -38,39 +39,27 @@ object AccountsResource {
   }
   
   @scala.inline
-  implicit class AccountsResourceOps[Self <: AccountsResource] (val x: Self) extends AnyVal {
+  implicit class AccountsResourceMutableBuilder[Self <: AccountsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClients(value: ClientsResource): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatives(value: CreativesResource): Self = StObject.set(x, "creatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterSets(value: FilterSetsResource): Self = StObject.set(x, "filterSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClients(value: ClientsResource): Self = this.set("clients", value.asInstanceOf[js.Any])
+    def setFinalizedProposals(value: FinalizedProposalsResource): Self = StObject.set(x, "finalizedProposals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatives(value: CreativesResource): Self = this.set("creatives", value.asInstanceOf[js.Any])
+    def setProducts(value: ProductsResource): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSets(value: FilterSetsResource): Self = this.set("filterSets", value.asInstanceOf[js.Any])
+    def setProposals(value: ProposalsResource): Self = StObject.set(x, "proposals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalizedProposals(value: FinalizedProposalsResource): Self = this.set("finalizedProposals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProducts(value: ProductsResource): Self = this.set("products", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProposals(value: ProposalsResource): Self = this.set("proposals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherProfiles(value: PublisherProfilesResource): Self = this.set("publisherProfiles", value.asInstanceOf[js.Any])
+    def setPublisherProfiles(value: PublisherProfilesResource): Self = StObject.set(x, "publisherProfiles", value.asInstanceOf[js.Any])
   }
 }

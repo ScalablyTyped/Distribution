@@ -1,13 +1,15 @@
 package typings.videoJs.videoCoreNovttMod.default
 
+import typings.videoJs.mod.videojs.VolumePanel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js/dist/alt/video.core.novtt", "VolumePanel")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js/dist/alt/video.core.novtt", "default.VolumePanel")
 @js.native
-class VolumePanelCls protected ()
-  extends typings.videoJs.mod.videojs.VolumePanel {
+class VolumePanelCls protected () extends VolumePanel {
   /**
     * Creates an instance of this class.
     *
@@ -18,5 +20,5 @@ class VolumePanelCls protected ()
     *        The key/value store of player options.
     */
   def this(player: typings.videoJs.mod.videojs.Player) = this()
-  def this(player: typings.videoJs.mod.videojs.Player, options: typings.videoJs.mod.videojs.VolumePanel) = this()
+  def this(player: typings.videoJs.mod.videojs.Player, options: VolumePanel) = this()
 }

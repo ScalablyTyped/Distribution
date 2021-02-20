@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI.iOS
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,72 +73,60 @@ object SplitWindowEventMap {
   }
   
   @scala.inline
-  implicit class SplitWindowEventMapOps[Self <: SplitWindowEventMap] (val x: Self) extends AnyVal {
+  implicit class SplitWindowEventMapMutableBuilder[Self <: SplitWindowEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlur(value: SplitWindowBlurEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick(value: SplitWindowClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: SplitWindowCloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: SplitWindowBlurEvent): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def setDblclick(value: SplitWindowDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: SplitWindowClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDoubletap(value: SplitWindowDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: SplitWindowCloseEvent): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setFocus(value: SplitWindowFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: SplitWindowDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: SplitWindowKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: SplitWindowDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongpress(value: SplitWindowLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: SplitWindowFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setOpen(value: SplitWindowOpenEvent): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: SplitWindowKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setPinch(value: SplitWindowPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: SplitWindowLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setPostlayout(value: SplitWindowPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: SplitWindowOpenEvent): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setSingletap(value: SplitWindowSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: SplitWindowPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSwipe(value: SplitWindowSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: SplitWindowPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: SplitWindowTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: SplitWindowSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: SplitWindowTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: SplitWindowSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: SplitWindowTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: SplitWindowTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: SplitWindowTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: SplitWindowTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: SplitWindowTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: SplitWindowTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: SplitWindowTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: SplitWindowTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

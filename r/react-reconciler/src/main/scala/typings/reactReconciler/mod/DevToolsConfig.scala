@@ -1,11 +1,12 @@
 package typings.reactReconciler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevToolsConfig[Instance, TextInstance] extends js.Object {
+trait DevToolsConfig[Instance, TextInstance] extends StObject {
   
   var bundleType: BundleType = js.native
   
@@ -31,39 +32,27 @@ object DevToolsConfig {
   }
   
   @scala.inline
-  implicit class DevToolsConfigOps[Self <: DevToolsConfig[_, _], Instance, TextInstance] (val x: Self with (DevToolsConfig[Instance, TextInstance])) extends AnyVal {
+  implicit class DevToolsConfigMutableBuilder[Self <: DevToolsConfig[_, _], Instance, TextInstance] (val x: Self with (DevToolsConfig[Instance, TextInstance])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleType(value: BundleType): Self = StObject.set(x, "bundleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindFiberByHostInstance(value: /* instance */ Instance | TextInstance => Fiber): Self = StObject.set(x, "findFiberByHostInstance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindFiberByHostInstanceUndefined: Self = StObject.set(x, "findFiberByHostInstance", js.undefined)
     
     @scala.inline
-    def setBundleType(value: BundleType): Self = this.set("bundleType", value.asInstanceOf[js.Any])
+    def setGetInspectorDataForViewTag(value: /* tag */ Double => js.Object): Self = StObject.set(x, "getInspectorDataForViewTag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRendererPackageName(value: String): Self = this.set("rendererPackageName", value.asInstanceOf[js.Any])
+    def setGetInspectorDataForViewTagUndefined: Self = StObject.set(x, "getInspectorDataForViewTag", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setRendererPackageName(value: String): Self = StObject.set(x, "rendererPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindFiberByHostInstance(value: /* instance */ Instance | TextInstance => Fiber): Self = this.set("findFiberByHostInstance", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFindFiberByHostInstance: Self = this.set("findFiberByHostInstance", js.undefined)
-    
-    @scala.inline
-    def setGetInspectorDataForViewTag(value: /* tag */ Double => js.Object): Self = this.set("getInspectorDataForViewTag", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetInspectorDataForViewTag: Self = this.set("getInspectorDataForViewTag", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

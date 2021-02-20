@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatusDetails extends js.Object {
+trait StatusDetails extends StObject {
   
   /** The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes. +optional */
   var causes: js.UndefOr[js.Array[StatusCause]] = js.native
@@ -40,57 +41,45 @@ object StatusDetails {
   }
   
   @scala.inline
-  implicit class StatusDetailsOps[Self <: StatusDetails] (val x: Self) extends AnyVal {
+  implicit class StatusDetailsMutableBuilder[Self <: StatusDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCauses(value: js.Array[StatusCause]): Self = StObject.set(x, "causes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCausesUndefined: Self = StObject.set(x, "causes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCausesVarargs(value: StatusCause*): Self = StObject.set(x, "causes", js.Array(value :_*))
     
     @scala.inline
-    def setCausesVarargs(value: StatusCause*): Self = this.set("causes", js.Array(value :_*))
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCauses(value: js.Array[StatusCause]): Self = this.set("causes", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteCauses: Self = this.set("causes", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRetryAfterSeconds(value: Double): Self = StObject.set(x, "retryAfterSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRetryAfterSecondsUndefined: Self = StObject.set(x, "retryAfterSeconds", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryAfterSeconds(value: Double): Self = this.set("retryAfterSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryAfterSeconds: Self = this.set("retryAfterSeconds", js.undefined)
-    
-    @scala.inline
-    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUid: Self = this.set("uid", js.undefined)
+    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
   }
 }

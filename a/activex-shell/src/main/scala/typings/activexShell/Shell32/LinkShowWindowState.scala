@@ -3,6 +3,7 @@ package typings.activexShell.Shell32
 import typings.activexShell.activexShellNumbers.`1`
 import typings.activexShell.activexShellNumbers.`2`
 import typings.activexShell.activexShellNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellNumbers.`2`
   - typings.activexShell.activexShellNumbers.`3`
 */
-trait LinkShowWindowState extends js.Object
+trait LinkShowWindowState extends StObject
 object LinkShowWindowState {
   
   /** Activates the window and displays it as a maximized window. */

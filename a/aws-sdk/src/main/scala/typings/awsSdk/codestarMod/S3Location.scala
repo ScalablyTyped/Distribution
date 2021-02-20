@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Location extends js.Object {
+trait S3Location extends StObject {
   
   /**
     * The Amazon S3 object key where the source code files provided with the project request are stored.
@@ -26,30 +27,18 @@ object S3Location {
   }
   
   @scala.inline
-  implicit class S3LocationOps[Self <: S3Location] (val x: Self) extends AnyVal {
+  implicit class S3LocationMutableBuilder[Self <: S3Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketKey(value: BucketKey): Self = StObject.set(x, "bucketKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketKeyUndefined: Self = StObject.set(x, "bucketKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketKey(value: BucketKey): Self = this.set("bucketKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketKey: Self = this.set("bucketKey", js.undefined)
-    
-    @scala.inline
-    def setBucketName(value: BucketName): Self = this.set("bucketName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
   }
 }

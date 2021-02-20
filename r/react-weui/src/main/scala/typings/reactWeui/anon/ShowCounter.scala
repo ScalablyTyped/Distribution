@@ -1,11 +1,12 @@
 package typings.reactWeui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShowCounter extends js.Object {
+trait ShowCounter extends StObject {
   
   var defaultValue: js.Any = js.native
   
@@ -20,24 +21,12 @@ object ShowCounter {
   }
   
   @scala.inline
-  implicit class ShowCounterOps[Self <: ShowCounter] (val x: Self) extends AnyVal {
+  implicit class ShowCounterMutableBuilder[Self <: ShowCounter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowCounter(value: Boolean): Self = this.set("showCounter", value.asInstanceOf[js.Any])
+    def setShowCounter(value: Boolean): Self = StObject.set(x, "showCounter", value.asInstanceOf[js.Any])
   }
 }

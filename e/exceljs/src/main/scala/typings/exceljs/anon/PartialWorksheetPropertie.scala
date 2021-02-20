@@ -1,12 +1,13 @@
 package typings.exceljs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.WorksheetProperties> */
 @js.native
-trait PartialWorksheetPropertie extends js.Object {
+trait PartialWorksheetPropertie extends StObject {
   
   var defaultColWidth: js.UndefOr[Double] = js.native
   
@@ -31,60 +32,48 @@ object PartialWorksheetPropertie {
   }
   
   @scala.inline
-  implicit class PartialWorksheetPropertieOps[Self <: PartialWorksheetPropertie] (val x: Self) extends AnyVal {
+  implicit class PartialWorksheetPropertieMutableBuilder[Self <: PartialWorksheetPropertie] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultColWidth(value: Double): Self = StObject.set(x, "defaultColWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultColWidthUndefined: Self = StObject.set(x, "defaultColWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultRowHeight(value: Double): Self = StObject.set(x, "defaultRowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultColWidth(value: Double): Self = this.set("defaultColWidth", value.asInstanceOf[js.Any])
+    def setDefaultRowHeightUndefined: Self = StObject.set(x, "defaultRowHeight", js.undefined)
     
     @scala.inline
-    def deleteDefaultColWidth: Self = this.set("defaultColWidth", js.undefined)
+    def setDyDescent(value: Double): Self = StObject.set(x, "dyDescent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRowHeight(value: Double): Self = this.set("defaultRowHeight", value.asInstanceOf[js.Any])
+    def setDyDescentUndefined: Self = StObject.set(x, "dyDescent", js.undefined)
     
     @scala.inline
-    def deleteDefaultRowHeight: Self = this.set("defaultRowHeight", js.undefined)
+    def setOutlineLevelCol(value: Double): Self = StObject.set(x, "outlineLevelCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDyDescent(value: Double): Self = this.set("dyDescent", value.asInstanceOf[js.Any])
+    def setOutlineLevelColUndefined: Self = StObject.set(x, "outlineLevelCol", js.undefined)
     
     @scala.inline
-    def deleteDyDescent: Self = this.set("dyDescent", js.undefined)
+    def setOutlineLevelRow(value: Double): Self = StObject.set(x, "outlineLevelRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineLevelCol(value: Double): Self = this.set("outlineLevelCol", value.asInstanceOf[js.Any])
+    def setOutlineLevelRowUndefined: Self = StObject.set(x, "outlineLevelRow", js.undefined)
     
     @scala.inline
-    def deleteOutlineLevelCol: Self = this.set("outlineLevelCol", js.undefined)
+    def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineLevelRow(value: Double): Self = this.set("outlineLevelRow", value.asInstanceOf[js.Any])
+    def setShowGridLinesUndefined: Self = StObject.set(x, "showGridLines", js.undefined)
     
     @scala.inline
-    def deleteOutlineLevelRow: Self = this.set("outlineLevelRow", js.undefined)
+    def setTabColor(value: PartialColor): Self = StObject.set(x, "tabColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGridLines(value: Boolean): Self = this.set("showGridLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowGridLines: Self = this.set("showGridLines", js.undefined)
-    
-    @scala.inline
-    def setTabColor(value: PartialColor): Self = this.set("tabColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabColor: Self = this.set("tabColor", js.undefined)
+    def setTabColorUndefined: Self = StObject.set(x, "tabColor", js.undefined)
   }
 }

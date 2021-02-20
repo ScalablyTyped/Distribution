@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildProvenance extends js.Object {
+trait BuildProvenance extends StObject {
   
   /** Special options applied to this build. This is a catch-all field where build providers can enter any desired additional details. */
   var buildOptions: js.UndefOr[
@@ -63,106 +64,94 @@ object BuildProvenance {
   }
   
   @scala.inline
-  implicit class BuildProvenanceOps[Self <: BuildProvenance] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class BuildProvenanceMutableBuilder[Self <: BuildProvenance] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBuildOptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance with TopLevel[js.Any]
-    ): Self = this.set("buildOptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "buildOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildOptions: Self = this.set("buildOptions", js.undefined)
+    def setBuildOptionsUndefined: Self = StObject.set(x, "buildOptions", js.undefined)
     
     @scala.inline
-    def setBuilderVersion(value: String): Self = this.set("builderVersion", value.asInstanceOf[js.Any])
+    def setBuilderVersion(value: String): Self = StObject.set(x, "builderVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuilderVersion: Self = this.set("builderVersion", js.undefined)
+    def setBuilderVersionUndefined: Self = StObject.set(x, "builderVersion", js.undefined)
     
     @scala.inline
-    def setBuiltArtifactsVarargs(value: Artifact*): Self = this.set("builtArtifacts", js.Array(value :_*))
+    def setBuiltArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "builtArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltArtifacts(value: js.Array[Artifact]): Self = this.set("builtArtifacts", value.asInstanceOf[js.Any])
+    def setBuiltArtifactsUndefined: Self = StObject.set(x, "builtArtifacts", js.undefined)
     
     @scala.inline
-    def deleteBuiltArtifacts: Self = this.set("builtArtifacts", js.undefined)
+    def setBuiltArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "builtArtifacts", js.Array(value :_*))
     
     @scala.inline
-    def setCommandsVarargs(value: Command*): Self = this.set("commands", js.Array(value :_*))
+    def setCommands(value: js.Array[Command]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommands(value: js.Array[Command]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
     @scala.inline
-    def deleteCommands: Self = this.set("commands", js.undefined)
+    def setCommandsVarargs(value: Command*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def setCreator(value: String): Self = this.set("creator", value.asInstanceOf[js.Any])
+    def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreator: Self = this.set("creator", js.undefined)
+    def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setLogsUri(value: String): Self = this.set("logsUri", value.asInstanceOf[js.Any])
+    def setLogsUri(value: String): Self = StObject.set(x, "logsUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogsUri: Self = this.set("logsUri", js.undefined)
+    def setLogsUriUndefined: Self = StObject.set(x, "logsUri", js.undefined)
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def setSourceProvenance(value: Source): Self = this.set("sourceProvenance", value.asInstanceOf[js.Any])
+    def setSourceProvenance(value: Source): Self = StObject.set(x, "sourceProvenance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceProvenance: Self = this.set("sourceProvenance", js.undefined)
+    def setSourceProvenanceUndefined: Self = StObject.set(x, "sourceProvenance", js.undefined)
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def setTriggerId(value: String): Self = this.set("triggerId", value.asInstanceOf[js.Any])
+    def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTriggerId: Self = this.set("triggerId", js.undefined)
+    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
   }
 }

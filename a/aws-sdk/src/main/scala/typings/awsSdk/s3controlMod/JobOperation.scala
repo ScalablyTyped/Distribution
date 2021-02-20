@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobOperation extends js.Object {
+trait JobOperation extends StObject {
   
   /**
     * Directs the specified job to invoke an AWS Lambda function on each object in the manifest.
@@ -45,60 +46,48 @@ object JobOperation {
   }
   
   @scala.inline
-  implicit class JobOperationOps[Self <: JobOperation] (val x: Self) extends AnyVal {
+  implicit class JobOperationMutableBuilder[Self <: JobOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLambdaInvoke(value: LambdaInvokeOperation): Self = StObject.set(x, "LambdaInvoke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLambdaInvokeUndefined: Self = StObject.set(x, "LambdaInvoke", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3InitiateRestoreObject(value: S3InitiateRestoreObjectOperation): Self = StObject.set(x, "S3InitiateRestoreObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaInvoke(value: LambdaInvokeOperation): Self = this.set("LambdaInvoke", value.asInstanceOf[js.Any])
+    def setS3InitiateRestoreObjectUndefined: Self = StObject.set(x, "S3InitiateRestoreObject", js.undefined)
     
     @scala.inline
-    def deleteLambdaInvoke: Self = this.set("LambdaInvoke", js.undefined)
+    def setS3PutObjectAcl(value: S3SetObjectAclOperation): Self = StObject.set(x, "S3PutObjectAcl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3InitiateRestoreObject(value: S3InitiateRestoreObjectOperation): Self = this.set("S3InitiateRestoreObject", value.asInstanceOf[js.Any])
+    def setS3PutObjectAclUndefined: Self = StObject.set(x, "S3PutObjectAcl", js.undefined)
     
     @scala.inline
-    def deleteS3InitiateRestoreObject: Self = this.set("S3InitiateRestoreObject", js.undefined)
+    def setS3PutObjectCopy(value: S3CopyObjectOperation): Self = StObject.set(x, "S3PutObjectCopy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3PutObjectAcl(value: S3SetObjectAclOperation): Self = this.set("S3PutObjectAcl", value.asInstanceOf[js.Any])
+    def setS3PutObjectCopyUndefined: Self = StObject.set(x, "S3PutObjectCopy", js.undefined)
     
     @scala.inline
-    def deleteS3PutObjectAcl: Self = this.set("S3PutObjectAcl", js.undefined)
+    def setS3PutObjectLegalHold(value: S3SetObjectLegalHoldOperation): Self = StObject.set(x, "S3PutObjectLegalHold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3PutObjectCopy(value: S3CopyObjectOperation): Self = this.set("S3PutObjectCopy", value.asInstanceOf[js.Any])
+    def setS3PutObjectLegalHoldUndefined: Self = StObject.set(x, "S3PutObjectLegalHold", js.undefined)
     
     @scala.inline
-    def deleteS3PutObjectCopy: Self = this.set("S3PutObjectCopy", js.undefined)
+    def setS3PutObjectRetention(value: S3SetObjectRetentionOperation): Self = StObject.set(x, "S3PutObjectRetention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3PutObjectLegalHold(value: S3SetObjectLegalHoldOperation): Self = this.set("S3PutObjectLegalHold", value.asInstanceOf[js.Any])
+    def setS3PutObjectRetentionUndefined: Self = StObject.set(x, "S3PutObjectRetention", js.undefined)
     
     @scala.inline
-    def deleteS3PutObjectLegalHold: Self = this.set("S3PutObjectLegalHold", js.undefined)
+    def setS3PutObjectTagging(value: S3SetObjectTaggingOperation): Self = StObject.set(x, "S3PutObjectTagging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3PutObjectRetention(value: S3SetObjectRetentionOperation): Self = this.set("S3PutObjectRetention", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3PutObjectRetention: Self = this.set("S3PutObjectRetention", js.undefined)
-    
-    @scala.inline
-    def setS3PutObjectTagging(value: S3SetObjectTaggingOperation): Self = this.set("S3PutObjectTagging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3PutObjectTagging: Self = this.set("S3PutObjectTagging", js.undefined)
+    def setS3PutObjectTaggingUndefined: Self = StObject.set(x, "S3PutObjectTagging", js.undefined)
   }
 }

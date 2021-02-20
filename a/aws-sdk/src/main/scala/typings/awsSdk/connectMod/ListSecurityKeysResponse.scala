@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSecurityKeysResponse extends js.Object {
+trait ListSecurityKeysResponse extends StObject {
   
   /**
     * If there are additional results, this is the token for the next set of results.
@@ -26,33 +27,21 @@ object ListSecurityKeysResponse {
   }
   
   @scala.inline
-  implicit class ListSecurityKeysResponseOps[Self <: ListSecurityKeysResponse] (val x: Self) extends AnyVal {
+  implicit class ListSecurityKeysResponseMutableBuilder[Self <: ListSecurityKeysResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityKeys(value: SecurityKeysList): Self = StObject.set(x, "SecurityKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSecurityKeysUndefined: Self = StObject.set(x, "SecurityKeys", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSecurityKeysVarargs(value: SecurityKey*): Self = this.set("SecurityKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurityKeys(value: SecurityKeysList): Self = this.set("SecurityKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityKeys: Self = this.set("SecurityKeys", js.undefined)
+    def setSecurityKeysVarargs(value: SecurityKey*): Self = StObject.set(x, "SecurityKeys", js.Array(value :_*))
   }
 }

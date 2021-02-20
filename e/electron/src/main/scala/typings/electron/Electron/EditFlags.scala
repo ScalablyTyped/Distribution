@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditFlags extends js.Object {
+trait EditFlags extends StObject {
   
   /**
     * Whether the renderer believes it can copy
@@ -59,39 +60,27 @@ object EditFlags {
   }
   
   @scala.inline
-  implicit class EditFlagsOps[Self <: EditFlags] (val x: Self) extends AnyVal {
+  implicit class EditFlagsMutableBuilder[Self <: EditFlags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanCopy(value: Boolean): Self = StObject.set(x, "canCopy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanCut(value: Boolean): Self = StObject.set(x, "canCut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCopy(value: Boolean): Self = this.set("canCopy", value.asInstanceOf[js.Any])
+    def setCanPaste(value: Boolean): Self = StObject.set(x, "canPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCut(value: Boolean): Self = this.set("canCut", value.asInstanceOf[js.Any])
+    def setCanRedo(value: Boolean): Self = StObject.set(x, "canRedo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanDelete(value: Boolean): Self = this.set("canDelete", value.asInstanceOf[js.Any])
+    def setCanSelectAll(value: Boolean): Self = StObject.set(x, "canSelectAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPaste(value: Boolean): Self = this.set("canPaste", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanRedo(value: Boolean): Self = this.set("canRedo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanSelectAll(value: Boolean): Self = this.set("canSelectAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanUndo(value: Boolean): Self = this.set("canUndo", value.asInstanceOf[js.Any])
+    def setCanUndo(value: Boolean): Self = StObject.set(x, "canUndo", value.asInstanceOf[js.Any])
   }
 }

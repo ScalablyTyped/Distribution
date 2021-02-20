@@ -1,10 +1,14 @@
 package typings.reactNativeMauron85BackgroundGeolocation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
+  @scala.inline
+  def default: typings.reactNativeMauron85BackgroundGeolocation.mod.BackgroundGeolocationPlugin = typings.reactNativeMauron85BackgroundGeolocation.mod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.reactNativeMauron85BackgroundGeolocation.mod.BackgroundGeolocationPlugin]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationNumbers.`0`

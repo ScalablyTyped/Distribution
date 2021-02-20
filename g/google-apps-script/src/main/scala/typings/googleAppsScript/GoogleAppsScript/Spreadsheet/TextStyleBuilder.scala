@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A builder for text styles.
   */
 @js.native
-trait TextStyleBuilder extends js.Object {
+trait TextStyleBuilder extends StObject {
   
   def build(): TextStyle = js.native
   
@@ -45,42 +46,30 @@ object TextStyleBuilder {
   }
   
   @scala.inline
-  implicit class TextStyleBuilderOps[Self <: TextStyleBuilder] (val x: Self) extends AnyVal {
+  implicit class TextStyleBuilderMutableBuilder[Self <: TextStyleBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: () => TextStyle): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetBold(value: Boolean => TextStyleBuilder): Self = StObject.set(x, "setBold", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetFontFamily(value: String => TextStyleBuilder): Self = StObject.set(x, "setFontFamily", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuild(value: () => TextStyle): Self = this.set("build", js.Any.fromFunction0(value))
+    def setSetFontSize(value: Integer => TextStyleBuilder): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBold(value: Boolean => TextStyleBuilder): Self = this.set("setBold", js.Any.fromFunction1(value))
+    def setSetForegroundColor(value: String => TextStyleBuilder): Self = StObject.set(x, "setForegroundColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFontFamily(value: String => TextStyleBuilder): Self = this.set("setFontFamily", js.Any.fromFunction1(value))
+    def setSetItalic(value: Boolean => TextStyleBuilder): Self = StObject.set(x, "setItalic", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFontSize(value: Integer => TextStyleBuilder): Self = this.set("setFontSize", js.Any.fromFunction1(value))
+    def setSetStrikethrough(value: Boolean => TextStyleBuilder): Self = StObject.set(x, "setStrikethrough", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetForegroundColor(value: String => TextStyleBuilder): Self = this.set("setForegroundColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetItalic(value: Boolean => TextStyleBuilder): Self = this.set("setItalic", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStrikethrough(value: Boolean => TextStyleBuilder): Self = this.set("setStrikethrough", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUnderline(value: Boolean => TextStyleBuilder): Self = this.set("setUnderline", js.Any.fromFunction1(value))
+    def setSetUnderline(value: Boolean => TextStyleBuilder): Self = StObject.set(x, "setUnderline", js.Any.fromFunction1(value))
   }
 }

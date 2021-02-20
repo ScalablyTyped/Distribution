@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EvaluationResultQualifier extends js.Object {
+trait EvaluationResultQualifier extends StObject {
   
   /**
     * The name of the AWS Config rule that was used in the evaluation.
@@ -31,36 +32,24 @@ object EvaluationResultQualifier {
   }
   
   @scala.inline
-  implicit class EvaluationResultQualifierOps[Self <: EvaluationResultQualifier] (val x: Self) extends AnyVal {
+  implicit class EvaluationResultQualifierMutableBuilder[Self <: EvaluationResultQualifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceId(value: BaseResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
+    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
     @scala.inline
-    def deleteConfigRuleName: Self = this.set("ConfigRuleName", js.undefined)
+    def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: BaseResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: StringWithCharLimit256): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

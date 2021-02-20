@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoutingProfileQueueConfig extends js.Object {
+trait RoutingProfileQueueConfig extends StObject {
   
   /**
     * The delay, in seconds, a contact should be in the queue before they are routed to an available agent. For more information, see Queues: priority and delay in the Amazon Connect Administrator Guide.
@@ -31,27 +32,15 @@ object RoutingProfileQueueConfig {
   }
   
   @scala.inline
-  implicit class RoutingProfileQueueConfigOps[Self <: RoutingProfileQueueConfig] (val x: Self) extends AnyVal {
+  implicit class RoutingProfileQueueConfigMutableBuilder[Self <: RoutingProfileQueueConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Delay): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDelay(value: Delay): Self = this.set("Delay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPriority(value: Priority): Self = this.set("Priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueReference(value: RoutingProfileQueueReference): Self = this.set("QueueReference", value.asInstanceOf[js.Any])
+    def setQueueReference(value: RoutingProfileQueueReference): Self = StObject.set(x, "QueueReference", value.asInstanceOf[js.Any])
   }
 }

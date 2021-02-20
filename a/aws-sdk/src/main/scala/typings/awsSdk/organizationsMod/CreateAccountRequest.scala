@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAccountRequest extends js.Object {
+trait CreateAccountRequest extends StObject {
   
   /**
     * The friendly name of the member account.
@@ -41,45 +42,33 @@ object CreateAccountRequest {
   }
   
   @scala.inline
-  implicit class CreateAccountRequestOps[Self <: CreateAccountRequest] (val x: Self) extends AnyVal {
+  implicit class CreateAccountRequestMutableBuilder[Self <: CreateAccountRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIamUserAccessToBilling(value: IAMUserAccessToBilling): Self = StObject.set(x, "IamUserAccessToBilling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountName(value: AccountName): Self = this.set("AccountName", value.asInstanceOf[js.Any])
+    def setIamUserAccessToBillingUndefined: Self = StObject.set(x, "IamUserAccessToBilling", js.undefined)
     
     @scala.inline
-    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setRoleName(value: RoleName): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamUserAccessToBilling(value: IAMUserAccessToBilling): Self = this.set("IamUserAccessToBilling", value.asInstanceOf[js.Any])
+    def setRoleNameUndefined: Self = StObject.set(x, "RoleName", js.undefined)
     
     @scala.inline
-    def deleteIamUserAccessToBilling: Self = this.set("IamUserAccessToBilling", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleName(value: RoleName): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRoleName: Self = this.set("RoleName", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

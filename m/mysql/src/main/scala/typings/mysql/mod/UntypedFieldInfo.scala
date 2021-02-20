@@ -1,11 +1,14 @@
 package typings.mysql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UntypedFieldInfo extends js.Object {
+trait UntypedFieldInfo extends StObject {
+  
+  var default: js.UndefOr[String] = js.native
   
   var catalog: String = js.native
   
@@ -14,8 +17,6 @@ trait UntypedFieldInfo extends js.Object {
   var db: String = js.native
   
   var decimals: Double = js.native
-  
-  var default: js.UndefOr[String] = js.native
   
   var flags: Double = js.native
   
@@ -55,60 +56,48 @@ object UntypedFieldInfo {
   }
   
   @scala.inline
-  implicit class UntypedFieldInfoOps[Self <: UntypedFieldInfo] (val x: Self) extends AnyVal {
+  implicit class UntypedFieldInfoMutableBuilder[Self <: UntypedFieldInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharsetNr(value: Double): Self = StObject.set(x, "charsetNr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalog(value: String): Self = this.set("catalog", value.asInstanceOf[js.Any])
+    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharsetNr(value: Double): Self = this.set("charsetNr", value.asInstanceOf[js.Any])
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDb(value: String): Self = this.set("db", value.asInstanceOf[js.Any])
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setDecimals(value: Double): Self = this.set("decimals", value.asInstanceOf[js.Any])
+    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: Double): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrgName(value: String): Self = StObject.set(x, "orgName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgName(value: String): Self = this.set("orgName", value.asInstanceOf[js.Any])
+    def setOrgTable(value: String): Self = StObject.set(x, "orgTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgTable(value: String): Self = this.set("orgTable", value.asInstanceOf[js.Any])
+    def setProtocol41(value: Boolean): Self = StObject.set(x, "protocol41", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol41(value: Boolean): Self = this.set("protocol41", value.asInstanceOf[js.Any])
+    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZeroFill(value: Boolean): Self = this.set("zeroFill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setZeroFill(value: Boolean): Self = StObject.set(x, "zeroFill", value.asInstanceOf[js.Any])
   }
 }

@@ -1,16 +1,35 @@
 package typings.browserfs
 
+import org.scalablytyped.runtime.Shortcut
 import typings.browserfs.fSMod.FSModule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("browserfs/dist/node/core/node_fs", JSImport.Namespace)
-@js.native
-object nodeFsMod extends js.Object {
+object nodeFsMod {
   
   /**
     * @hidden
     */
-  val default: FSModule = js.native
+  object default extends Shortcut {
+    
+    @JSImport("browserfs/dist/node/core/node_fs", JSImport.Default)
+    @js.native
+    val ^ : FSModule = js.native
+    
+    /**
+      * The FS constructor.
+      */
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("browserfs/dist/node/core/node_fs", "default.FS")
+    @js.native
+    class FS ()
+      extends typings.browserfs.fSMod.FS
+    
+    type _To = FSModule
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: FSModule = ^
+  }
 }

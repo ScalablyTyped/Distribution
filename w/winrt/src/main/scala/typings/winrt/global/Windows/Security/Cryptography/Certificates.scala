@@ -5,23 +5,26 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Security.Cryptography.Certificates.ExportOption
 import typings.winrt.Windows.Security.Cryptography.Certificates.InstallOptions
 import typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Security.Cryptography.Certificates")
-@js.native
-object Certificates extends js.Object {
+object Certificates {
   
+  @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager")
   @js.native
   class CertificateEnrollmentManager ()
     extends typings.winrt.Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager
   /* static members */
-  @js.native
-  object CertificateEnrollmentManager extends js.Object {
+  object CertificateEnrollmentManager {
     
+    @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager.createRequestAsync")
+    @js.native
     def createRequestAsync(request: typings.winrt.Windows.Security.Cryptography.Certificates.CertificateRequestProperties): IAsyncOperation[String] = js.native
     
+    @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager.importPfxDataAsync")
+    @js.native
     def importPfxDataAsync(
       pfxData: String,
       password: String,
@@ -31,15 +34,19 @@ object Certificates extends js.Object {
       friendlyName: String
     ): IAsyncAction = js.native
     
+    @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager.installCertificateAsync")
+    @js.native
     def installCertificateAsync(certificate: String, installOption: InstallOptions): IAsyncAction = js.native
   }
   
+  @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateRequestProperties")
   @js.native
   class CertificateRequestProperties ()
     extends typings.winrt.Windows.Security.Cryptography.Certificates.CertificateRequestProperties
   
+  @JSGlobal("Windows.Security.Cryptography.Certificates.EnrollKeyUsages")
   @js.native
-  object EnrollKeyUsages extends js.Object {
+  object EnrollKeyUsages extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -57,8 +64,9 @@ object Certificates extends js.Object {
     /* 2 */ val signing: typings.winrt.Windows.Security.Cryptography.Certificates.EnrollKeyUsages.signing with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.Cryptography.Certificates.ExportOption")
   @js.native
-  object ExportOption extends js.Object {
+  object ExportOption extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -70,8 +78,9 @@ object Certificates extends js.Object {
     /* 0 */ val notExportable: typings.winrt.Windows.Security.Cryptography.Certificates.ExportOption.notExportable with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.Cryptography.Certificates.InstallOptions")
   @js.native
-  object InstallOptions extends js.Object {
+  object InstallOptions extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -83,32 +92,69 @@ object Certificates extends js.Object {
     /* 0 */ val none: typings.winrt.Windows.Security.Cryptography.Certificates.InstallOptions.none with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames")
   @js.native
   class KeyAlgorithmNames ()
     extends typings.winrt.Windows.Security.Cryptography.Certificates.KeyAlgorithmNames
   /* static members */
-  @js.native
-  object KeyAlgorithmNames extends js.Object {
+  object KeyAlgorithmNames {
     
-    var dsa: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ecdh256: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.dsa")
+    @js.native
+    def dsa: String = js.native
+    @scala.inline
+    def dsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dsa")(x.asInstanceOf[js.Any])
     
-    var ecdh384: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdh256")
+    @js.native
+    def ecdh256: String = js.native
+    @scala.inline
+    def ecdh256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh256")(x.asInstanceOf[js.Any])
     
-    var ecdh521: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdh384")
+    @js.native
+    def ecdh384: String = js.native
+    @scala.inline
+    def ecdh384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh384")(x.asInstanceOf[js.Any])
     
-    var ecdsa256: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdh521")
+    @js.native
+    def ecdh521: String = js.native
+    @scala.inline
+    def ecdh521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh521")(x.asInstanceOf[js.Any])
     
-    var ecdsa384: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdsa256")
+    @js.native
+    def ecdsa256: String = js.native
+    @scala.inline
+    def ecdsa256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa256")(x.asInstanceOf[js.Any])
     
-    var ecdsa521: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdsa384")
+    @js.native
+    def ecdsa384: String = js.native
+    @scala.inline
+    def ecdsa384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa384")(x.asInstanceOf[js.Any])
     
-    var rsa: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdsa521")
+    @js.native
+    def ecdsa521: String = js.native
+    @scala.inline
+    def ecdsa521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa521")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.rsa")
+    @js.native
+    def rsa: String = js.native
+    @scala.inline
+    def rsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsa")(x.asInstanceOf[js.Any])
   }
   
+  @JSGlobal("Windows.Security.Cryptography.Certificates.KeyProtectionLevel")
   @js.native
-  object KeyProtectionLevel extends js.Object {
+  object KeyProtectionLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -122,8 +168,9 @@ object Certificates extends js.Object {
     /* 0 */ val noConsent: typings.winrt.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.noConsent with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.Cryptography.Certificates.KeySize")
   @js.native
-  object KeySize extends js.Object {
+  object KeySize extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Security.Cryptography.Certificates.KeySize with Double] = js.native
@@ -135,17 +182,33 @@ object Certificates extends js.Object {
     /* 2 */ val rsa4096: typings.winrt.Windows.Security.Cryptography.Certificates.KeySize.rsa4096 with Double = js.native
   }
   
+  @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames")
   @js.native
   class KeyStorageProviderNames ()
     extends typings.winrt.Windows.Security.Cryptography.Certificates.KeyStorageProviderNames
   /* static members */
-  @js.native
-  object KeyStorageProviderNames extends js.Object {
+  object KeyStorageProviderNames {
     
-    var platformKeyStorageProvider: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var smartcardKeyStorageProvider: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.platformKeyStorageProvider")
+    @js.native
+    def platformKeyStorageProvider: String = js.native
+    @scala.inline
+    def platformKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("platformKeyStorageProvider")(x.asInstanceOf[js.Any])
     
-    var softwareKeyStorageProvider: String = js.native
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.smartcardKeyStorageProvider")
+    @js.native
+    def smartcardKeyStorageProvider: String = js.native
+    @scala.inline
+    def smartcardKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartcardKeyStorageProvider")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.softwareKeyStorageProvider")
+    @js.native
+    def softwareKeyStorageProvider: String = js.native
+    @scala.inline
+    def softwareKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("softwareKeyStorageProvider")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestRunFinished. */
 @js.native
-trait ITestRunFinished extends js.Object {
+trait ITestRunFinished extends StObject {
   
   /** TestRunFinished success */
   var success: js.UndefOr[Boolean | Null] = js.native
@@ -23,36 +24,24 @@ object ITestRunFinished {
   }
   
   @scala.inline
-  implicit class ITestRunFinishedOps[Self <: ITestRunFinished] (val x: Self) extends AnyVal {
+  implicit class ITestRunFinishedMutableBuilder[Self <: ITestRunFinished] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuccessNull: Self = StObject.set(x, "success", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
     @scala.inline
-    def setSuccessNull: Self = this.set("success", null)
-    
-    @scala.inline
-    def setTimestamp(value: ITimestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setTimestampNull: Self = this.set("timestamp", null)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

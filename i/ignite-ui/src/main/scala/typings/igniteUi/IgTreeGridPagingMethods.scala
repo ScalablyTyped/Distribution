@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgTreeGridPagingMethods extends js.Object {
+trait IgTreeGridPagingMethods extends StObject {
   
   def changeGlobalLanguage(): Unit = js.native
   

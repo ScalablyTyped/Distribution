@@ -2,12 +2,13 @@ package typings.nodeHueApi.anon
 
 import typings.nodeHueApi.mod.ColorMode
 import typings.nodeHueApi.mod.LightEffect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bri extends js.Object {
+trait Bri extends StObject {
   
   var bri: Double = js.native
   
@@ -43,42 +44,30 @@ object Bri {
   }
   
   @scala.inline
-  implicit class BriOps[Self <: Bri] (val x: Self) extends AnyVal {
+  implicit class BriMutableBuilder[Self <: Bri] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBri(value: Double): Self = StObject.set(x, "bri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColormode(value: ColorMode): Self = StObject.set(x, "colormode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCt(value: Double): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBri(value: Double): Self = this.set("bri", value.asInstanceOf[js.Any])
+    def setEffect(value: LightEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColormode(value: ColorMode): Self = this.set("colormode", value.asInstanceOf[js.Any])
+    def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCt(value: Double): Self = this.set("ct", value.asInstanceOf[js.Any])
+    def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: LightEffect): Self = this.set("effect", value.asInstanceOf[js.Any])
+    def setSat(value: Double): Self = StObject.set(x, "sat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: Double): Self = this.set("hue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOn(value: Boolean): Self = this.set("on", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSat(value: Double): Self = this.set("sat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXy(value: js.Tuple2[Double, Double]): Self = this.set("xy", value.asInstanceOf[js.Any])
+    def setXy(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
   }
 }

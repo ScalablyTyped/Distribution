@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KernelMemoryScanMatch extends js.Object {
+trait KernelMemoryScanMatch extends StObject {
   
   /**
     * Memory address where a match was found.
@@ -26,24 +27,12 @@ object KernelMemoryScanMatch {
   }
   
   @scala.inline
-  implicit class KernelMemoryScanMatchOps[Self <: KernelMemoryScanMatch] (val x: Self) extends AnyVal {
+  implicit class KernelMemoryScanMatchMutableBuilder[Self <: KernelMemoryScanMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: UInt64): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddress(value: UInt64): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationConfiguration extends js.Object {
+trait NotificationConfiguration extends StObject {
   
   /**
     * The name of the Auto Scaling group.
@@ -31,36 +32,24 @@ object NotificationConfiguration {
   }
   
   @scala.inline
-  implicit class NotificationConfigurationOps[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
+  implicit class NotificationConfigurationMutableBuilder[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotificationType(value: XmlStringMaxLen255): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setNotificationTypeUndefined: Self = StObject.set(x, "NotificationType", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingGroupName: Self = this.set("AutoScalingGroupName", js.undefined)
+    def setTopicARN(value: ResourceName): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationType(value: XmlStringMaxLen255): Self = this.set("NotificationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationType: Self = this.set("NotificationType", js.undefined)
-    
-    @scala.inline
-    def setTopicARN(value: ResourceName): Self = this.set("TopicARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicARN: Self = this.set("TopicARN", js.undefined)
+    def setTopicARNUndefined: Self = StObject.set(x, "TopicARN", js.undefined)
   }
 }

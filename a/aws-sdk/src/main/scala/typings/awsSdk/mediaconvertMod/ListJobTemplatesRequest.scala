@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJobTemplatesRequest extends js.Object {
+trait ListJobTemplatesRequest extends StObject {
   
   /**
     * Optionally, specify a job template category to limit responses to only job templates from that category.
@@ -41,48 +42,36 @@ object ListJobTemplatesRequest {
   }
   
   @scala.inline
-  implicit class ListJobTemplatesRequestOps[Self <: ListJobTemplatesRequest] (val x: Self) extends AnyVal {
+  implicit class ListJobTemplatesRequestMutableBuilder[Self <: ListJobTemplatesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: string): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListBy(value: JobTemplateListBy): Self = StObject.set(x, "ListBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: string): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setListByUndefined: Self = StObject.set(x, "ListBy", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("Category", js.undefined)
+    def setMaxResults(value: integerMin1Max20): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListBy(value: JobTemplateListBy): Self = this.set("ListBy", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteListBy: Self = this.set("ListBy", js.undefined)
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: integerMin1Max20): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setOrder(value: Order): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setOrder(value: Order): Self = this.set("Order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrder: Self = this.set("Order", js.undefined)
+    def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
   }
 }

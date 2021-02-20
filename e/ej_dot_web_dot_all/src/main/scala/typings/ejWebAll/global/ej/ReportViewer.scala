@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,18 @@ class ReportViewer protected ()
   extends typings.ejWebAll.ej.ReportViewer {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.ReportViewer.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.ReportViewer.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.ReportViewer")
-@js.native
-object ReportViewer extends js.Object {
+object ReportViewer {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.ReportViewer = js.native
-  
+  @JSGlobal("ej.ReportViewer")
   @js.native
-  object ExcelFormats extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.ReportViewer.ExcelFormats")
+  @js.native
+  object ExcelFormats extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.ExcelFormats with Double] = js.native
@@ -39,8 +38,9 @@ object ReportViewer extends js.Object {
     /* 0 */ val Excel97to2003: typings.ejWebAll.ej.ReportViewer.ExcelFormats.Excel97to2003 with Double = js.native
   }
   
+  @JSGlobal("ej.ReportViewer.ExportOptions")
   @js.native
-  object ExportOptions extends js.Object {
+  object ExportOptions extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.ExportOptions with Double] = js.native
@@ -62,8 +62,16 @@ object ReportViewer extends js.Object {
     /* 2 */ val Word: typings.ejWebAll.ej.ReportViewer.ExportOptions.Word with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.ReportViewer.Locale")
   @js.native
-  object Orientation extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.ReportViewer.Orientation")
+  @js.native
+  object Orientation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.Orientation with Double] = js.native
@@ -73,8 +81,9 @@ object ReportViewer extends js.Object {
     /* 1 */ val Portrait: typings.ejWebAll.ej.ReportViewer.Orientation.Portrait with Double = js.native
   }
   
+  @JSGlobal("ej.ReportViewer.PPTFormats")
   @js.native
-  object PPTFormats extends js.Object {
+  object PPTFormats extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.PPTFormats with Double] = js.native
@@ -88,8 +97,9 @@ object ReportViewer extends js.Object {
     /* 0 */ val PowerPoint97to2003: typings.ejWebAll.ej.ReportViewer.PPTFormats.PowerPoint97to2003 with Double = js.native
   }
   
+  @JSGlobal("ej.ReportViewer.PaperSize")
   @js.native
-  object PaperSize extends js.Object {
+  object PaperSize extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.PaperSize with Double] = js.native
@@ -117,8 +127,9 @@ object ReportViewer extends js.Object {
     /* 9 */ val Tabloid: typings.ejWebAll.ej.ReportViewer.PaperSize.Tabloid with Double = js.native
   }
   
+  @JSGlobal("ej.ReportViewer.PrintOptions")
   @js.native
-  object PrintOptions extends js.Object {
+  object PrintOptions extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.PrintOptions with Double] = js.native
@@ -130,8 +141,9 @@ object ReportViewer extends js.Object {
     /* 2 */ val None: typings.ejWebAll.ej.ReportViewer.PrintOptions.None with Double = js.native
   }
   
+  @JSGlobal("ej.ReportViewer.ProcessingMode")
   @js.native
-  object ProcessingMode extends js.Object {
+  object ProcessingMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.ProcessingMode with Double] = js.native
@@ -141,8 +153,9 @@ object ReportViewer extends js.Object {
     /* 0 */ val Remote: typings.ejWebAll.ej.ReportViewer.ProcessingMode.Remote with Double = js.native
   }
   
+  @JSGlobal("ej.ReportViewer.RenderMode")
   @js.native
-  object RenderMode extends js.Object {
+  object RenderMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.RenderMode with Double] = js.native
@@ -154,8 +167,9 @@ object ReportViewer extends js.Object {
     /* 1 */ val Mobile: typings.ejWebAll.ej.ReportViewer.RenderMode.Mobile with Double = js.native
   }
   
+  @JSGlobal("ej.ReportViewer.ToolbarItems")
   @js.native
-  object ToolbarItems extends js.Object {
+  object ToolbarItems extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.ToolbarItems with Double] = js.native
@@ -179,8 +193,9 @@ object ReportViewer extends js.Object {
     /* 2 */ val Zoom: typings.ejWebAll.ej.ReportViewer.ToolbarItems.Zoom with Double = js.native
   }
   
+  @JSGlobal("ej.ReportViewer.WordFormats")
   @js.native
-  object WordFormats extends js.Object {
+  object WordFormats extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ReportViewer.WordFormats with Double] = js.native
@@ -227,4 +242,11 @@ object ReportViewer extends js.Object {
     
     /* 19 */ val XML: typings.ejWebAll.ej.ReportViewer.WordFormats.XML with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.ReportViewer.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.ReportViewer = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.ReportViewer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

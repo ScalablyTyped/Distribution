@@ -1,12 +1,13 @@
 package typings.rxLite.Rx
 
 import typings.rxCore.Rx.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObservable[T] extends js.Object {
+trait IObservable[T] extends StObject {
   
   def subscribe(): IDisposable = js.native
   def subscribe(observer: Observer[T]): IDisposable = js.native

@@ -1,6 +1,7 @@
 package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,33 +34,21 @@ object FiveQuartersSet {
   }
   
   @scala.inline
-  implicit class FiveQuartersSetOps[Self <: FiveQuartersSet] (val x: Self) extends AnyVal {
+  implicit class FiveQuartersSetMutableBuilder[Self <: FiveQuartersSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlackCircle(value: Icon): Self = StObject.set(x, "blackCircle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCircleWithOneWhiteQuarter(value: Icon): Self = StObject.set(x, "circleWithOneWhiteQuarter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCircleWithThreeWhiteQuarters(value: Icon): Self = StObject.set(x, "circleWithThreeWhiteQuarters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackCircle(value: Icon): Self = this.set("blackCircle", value.asInstanceOf[js.Any])
+    def setCircleWithTwoWhiteQuarters(value: Icon): Self = StObject.set(x, "circleWithTwoWhiteQuarters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircleWithOneWhiteQuarter(value: Icon): Self = this.set("circleWithOneWhiteQuarter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCircleWithThreeWhiteQuarters(value: Icon): Self = this.set("circleWithThreeWhiteQuarters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCircleWithTwoWhiteQuarters(value: Icon): Self = this.set("circleWithTwoWhiteQuarters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhiteCircleAllWhiteQuarters(value: Icon): Self = this.set("whiteCircleAllWhiteQuarters", value.asInstanceOf[js.Any])
+    def setWhiteCircleAllWhiteQuarters(value: Icon): Self = StObject.set(x, "whiteCircleAllWhiteQuarters", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.cookieclicker.anon.Cost
 import typings.cookieclicker.cookieclickerStrings.Grimoire
 import typings.std.HTMLDivElement
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

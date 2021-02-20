@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeekRequest extends js.Object {
+trait SeekRequest extends StObject {
   
   var currentTime: Double = js.native
   
@@ -22,27 +23,15 @@ object SeekRequest {
   }
   
   @scala.inline
-  implicit class SeekRequestOps[Self <: SeekRequest] (val x: Self) extends AnyVal {
+  implicit class SeekRequestMutableBuilder[Self <: SeekRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomData(value: js.Object): Self = this.set("customData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResumeState(value: ResumeState): Self = this.set("resumeState", value.asInstanceOf[js.Any])
+    def setResumeState(value: ResumeState): Self = StObject.set(x, "resumeState", value.asInstanceOf[js.Any])
   }
 }

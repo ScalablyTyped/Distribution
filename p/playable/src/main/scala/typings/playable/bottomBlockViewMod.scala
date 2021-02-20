@@ -5,17 +5,22 @@ import typings.playable.bottomBlockTypesMod.IBottomBlockViewStyles
 import typings.playable.playableStrings.left
 import typings.playable.playableStrings.right
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/bottom-block/bottom-block.view", JSImport.Namespace)
-@js.native
-object bottomBlockViewMod extends js.Object {
+object bottomBlockViewMod {
+  
+  @JSImport("playable/dist/src/modules/ui/bottom-block/bottom-block.view", JSImport.Default)
+  @js.native
+  class default protected () extends BottomBlockView {
+    def this(config: IBottomBlockViewConfig) = this()
+  }
   
   @js.native
   trait BottomBlockView
-    extends typings.playable.stylableMod.default[IBottomBlockViewStyles] {
+    extends typings.playable.viewMod.default[IBottomBlockViewStyles] {
     
     @JSName("_$leftControllsContainer")
     var _$leftControllsContainer: js.Any = js.native
@@ -87,10 +92,5 @@ object bottomBlockViewMod extends js.Object {
     def showTimeControl(): Unit = js.native
     
     def showVolumeControl(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends BottomBlockView {
-    def this(config: IBottomBlockViewConfig) = this()
   }
 }

@@ -1,15 +1,15 @@
 package typings.uifabricUtilities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/utilities/lib/Rectangle", JSImport.Namespace)
-@js.native
-object rectangleMod extends js.Object {
+object rectangleMod {
   
+  @JSImport("@uifabric/utilities/lib/Rectangle", "Rectangle")
   @js.native
-  class Rectangle () extends js.Object {
+  class Rectangle () extends StObject {
     def this(left: Double) = this()
     def this(left: js.UndefOr[scala.Nothing], right: Double) = this()
     def this(left: Double, right: Double) = this()

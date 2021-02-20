@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Definition extends js.Object {
+trait Definition extends StObject {
   
   /**
     *  The AWS Identity and Access Management (IAM) action definition details. 
@@ -31,36 +32,24 @@ object Definition {
   }
   
   @scala.inline
-  implicit class DefinitionOps[Self <: Definition] (val x: Self) extends AnyVal {
+  implicit class DefinitionMutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIamActionDefinition(value: IamActionDefinition): Self = StObject.set(x, "IamActionDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIamActionDefinitionUndefined: Self = StObject.set(x, "IamActionDefinition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScpActionDefinition(value: ScpActionDefinition): Self = StObject.set(x, "ScpActionDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamActionDefinition(value: IamActionDefinition): Self = this.set("IamActionDefinition", value.asInstanceOf[js.Any])
+    def setScpActionDefinitionUndefined: Self = StObject.set(x, "ScpActionDefinition", js.undefined)
     
     @scala.inline
-    def deleteIamActionDefinition: Self = this.set("IamActionDefinition", js.undefined)
+    def setSsmActionDefinition(value: SsmActionDefinition): Self = StObject.set(x, "SsmActionDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScpActionDefinition(value: ScpActionDefinition): Self = this.set("ScpActionDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScpActionDefinition: Self = this.set("ScpActionDefinition", js.undefined)
-    
-    @scala.inline
-    def setSsmActionDefinition(value: SsmActionDefinition): Self = this.set("SsmActionDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsmActionDefinition: Self = this.set("SsmActionDefinition", js.undefined)
+    def setSsmActionDefinitionUndefined: Self = StObject.set(x, "SsmActionDefinition", js.undefined)
   }
 }

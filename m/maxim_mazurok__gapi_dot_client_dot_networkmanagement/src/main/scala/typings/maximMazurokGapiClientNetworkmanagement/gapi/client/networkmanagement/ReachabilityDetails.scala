@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReachabilityDetails extends js.Object {
+trait ReachabilityDetails extends StObject {
   
   /** The details of a failure or a cancellation of reachability analysis. */
   var error: js.UndefOr[Status] = js.native
@@ -28,45 +29,33 @@ object ReachabilityDetails {
   }
   
   @scala.inline
-  implicit class ReachabilityDetailsOps[Self <: ReachabilityDetails] (val x: Self) extends AnyVal {
+  implicit class ReachabilityDetailsMutableBuilder[Self <: ReachabilityDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Status): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setTraces(value: js.Array[Trace]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: String): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
     
     @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setTracesVarargs(value: Trace*): Self = StObject.set(x, "traces", js.Array(value :_*))
     
     @scala.inline
-    def setTracesVarargs(value: Trace*): Self = this.set("traces", js.Array(value :_*))
+    def setVerifyTime(value: String): Self = StObject.set(x, "verifyTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraces(value: js.Array[Trace]): Self = this.set("traces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraces: Self = this.set("traces", js.undefined)
-    
-    @scala.inline
-    def setVerifyTime(value: String): Self = this.set("verifyTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyTime: Self = this.set("verifyTime", js.undefined)
+    def setVerifyTimeUndefined: Self = StObject.set(x, "verifyTime", js.undefined)
   }
 }

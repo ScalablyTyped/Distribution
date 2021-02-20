@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "NgModuleRef")
 @js.native
-abstract class NgModuleRef[T] () extends js.Object {
+abstract class NgModuleRef[T] () extends StObject {
   
   /**
     * The resolver that can retrieve the component factories

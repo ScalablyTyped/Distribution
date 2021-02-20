@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.node.Buffer
 import typings.stellarBase.xdrMod.xdr.Signer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearFlags extends js.Object {
+trait ClearFlags extends StObject {
   
   var clearFlags: Null | Double = js.native
   
@@ -36,72 +37,60 @@ object ClearFlags {
   }
   
   @scala.inline
-  implicit class ClearFlagsOps[Self <: ClearFlags] (val x: Self) extends AnyVal {
+  implicit class ClearFlagsMutableBuilder[Self <: ClearFlags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearFlags(value: Double): Self = StObject.set(x, "clearFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearFlagsNull: Self = StObject.set(x, "clearFlags", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighThreshold(value: Double): Self = StObject.set(x, "highThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearFlags(value: Double): Self = this.set("clearFlags", value.asInstanceOf[js.Any])
+    def setHighThresholdNull: Self = StObject.set(x, "highThreshold", null)
     
     @scala.inline
-    def setClearFlagsNull: Self = this.set("clearFlags", null)
+    def setHomeDomain(value: String | Buffer): Self = StObject.set(x, "homeDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighThreshold(value: Double): Self = this.set("highThreshold", value.asInstanceOf[js.Any])
+    def setHomeDomainNull: Self = StObject.set(x, "homeDomain", null)
     
     @scala.inline
-    def setHighThresholdNull: Self = this.set("highThreshold", null)
+    def setInflationDest(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = StObject.set(x, "inflationDest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeDomain(value: String | Buffer): Self = this.set("homeDomain", value.asInstanceOf[js.Any])
+    def setInflationDestNull: Self = StObject.set(x, "inflationDest", null)
     
     @scala.inline
-    def setHomeDomainNull: Self = this.set("homeDomain", null)
+    def setLowThreshold(value: Double): Self = StObject.set(x, "lowThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInflationDest(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = this.set("inflationDest", value.asInstanceOf[js.Any])
+    def setLowThresholdNull: Self = StObject.set(x, "lowThreshold", null)
     
     @scala.inline
-    def setInflationDestNull: Self = this.set("inflationDest", null)
+    def setMasterWeight(value: Double): Self = StObject.set(x, "masterWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowThreshold(value: Double): Self = this.set("lowThreshold", value.asInstanceOf[js.Any])
+    def setMasterWeightNull: Self = StObject.set(x, "masterWeight", null)
     
     @scala.inline
-    def setLowThresholdNull: Self = this.set("lowThreshold", null)
+    def setMedThreshold(value: Double): Self = StObject.set(x, "medThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterWeight(value: Double): Self = this.set("masterWeight", value.asInstanceOf[js.Any])
+    def setMedThresholdNull: Self = StObject.set(x, "medThreshold", null)
     
     @scala.inline
-    def setMasterWeightNull: Self = this.set("masterWeight", null)
+    def setSetFlags(value: Double): Self = StObject.set(x, "setFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedThreshold(value: Double): Self = this.set("medThreshold", value.asInstanceOf[js.Any])
+    def setSetFlagsNull: Self = StObject.set(x, "setFlags", null)
     
     @scala.inline
-    def setMedThresholdNull: Self = this.set("medThreshold", null)
+    def setSigner(value: Signer): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetFlags(value: Double): Self = this.set("setFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetFlagsNull: Self = this.set("setFlags", null)
-    
-    @scala.inline
-    def setSigner(value: Signer): Self = this.set("signer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignerNull: Self = this.set("signer", null)
+    def setSignerNull: Self = StObject.set(x, "signer", null)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.networkmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLinksRequest extends js.Object {
+trait GetLinksRequest extends StObject {
   
   /**
     * The ID of the global network.
@@ -51,60 +52,48 @@ object GetLinksRequest {
   }
   
   @scala.inline
-  implicit class GetLinksRequestOps[Self <: GetLinksRequest] (val x: Self) extends AnyVal {
+  implicit class GetLinksRequestMutableBuilder[Self <: GetLinksRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkIds(value: StringList): Self = StObject.set(x, "LinkIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkIdsUndefined: Self = StObject.set(x, "LinkIds", js.undefined)
     
     @scala.inline
-    def setGlobalNetworkId(value: String): Self = this.set("GlobalNetworkId", value.asInstanceOf[js.Any])
+    def setLinkIdsVarargs(value: String*): Self = StObject.set(x, "LinkIds", js.Array(value :_*))
     
     @scala.inline
-    def setLinkIdsVarargs(value: String*): Self = this.set("LinkIds", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkIds(value: StringList): Self = this.set("LinkIds", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteLinkIds: Self = this.set("LinkIds", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setProvider(value: String): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "Provider", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSiteId(value: String): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: String): Self = this.set("Provider", value.asInstanceOf[js.Any])
+    def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("Provider", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteId(value: String): Self = this.set("SiteId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiteId: Self = this.set("SiteId", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

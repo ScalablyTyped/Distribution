@@ -16,6 +16,7 @@ import typings.activexOffice.activexOfficeNumbers.`-7`
 import typings.activexOffice.activexOfficeNumbers.`-8`
 import typings.activexOffice.activexOfficeNumbers.`-9`
 import typings.activexOffice.activexOfficeNumbers.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`-3`
   - typings.activexOffice.activexOfficeNumbers.`-15`
 */
-trait MsoBalloonButtonType extends js.Object
+trait MsoBalloonButtonType extends StObject
 object MsoBalloonButtonType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaExternalDataConfiguration extends js.Object {
+trait SchemaExternalDataConfiguration extends StObject {
   
   /**
     * Try to detect schema and format options automatically. Any option
@@ -108,87 +109,75 @@ object SchemaExternalDataConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaExternalDataConfigurationOps[Self <: SchemaExternalDataConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaExternalDataConfigurationMutableBuilder[Self <: SchemaExternalDataConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutodetect(value: Boolean): Self = StObject.set(x, "autodetect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutodetectUndefined: Self = StObject.set(x, "autodetect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBigtableOptions(value: SchemaBigtableOptions): Self = StObject.set(x, "bigtableOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutodetect(value: Boolean): Self = this.set("autodetect", value.asInstanceOf[js.Any])
+    def setBigtableOptionsUndefined: Self = StObject.set(x, "bigtableOptions", js.undefined)
     
     @scala.inline
-    def deleteAutodetect: Self = this.set("autodetect", js.undefined)
+    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigtableOptions(value: SchemaBigtableOptions): Self = this.set("bigtableOptions", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def deleteBigtableOptions: Self = this.set("bigtableOptions", js.undefined)
+    def setCsvOptions(value: SchemaCsvOptions): Self = StObject.set(x, "csvOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setCsvOptionsUndefined: Self = StObject.set(x, "csvOptions", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setGoogleSheetsOptions(value: SchemaGoogleSheetsOptions): Self = StObject.set(x, "googleSheetsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsvOptions(value: SchemaCsvOptions): Self = this.set("csvOptions", value.asInstanceOf[js.Any])
+    def setGoogleSheetsOptionsUndefined: Self = StObject.set(x, "googleSheetsOptions", js.undefined)
     
     @scala.inline
-    def deleteCsvOptions: Self = this.set("csvOptions", js.undefined)
+    def setHivePartitioningMode(value: String): Self = StObject.set(x, "hivePartitioningMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleSheetsOptions(value: SchemaGoogleSheetsOptions): Self = this.set("googleSheetsOptions", value.asInstanceOf[js.Any])
+    def setHivePartitioningModeUndefined: Self = StObject.set(x, "hivePartitioningMode", js.undefined)
     
     @scala.inline
-    def deleteGoogleSheetsOptions: Self = this.set("googleSheetsOptions", js.undefined)
+    def setIgnoreUnknownValues(value: Boolean): Self = StObject.set(x, "ignoreUnknownValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHivePartitioningMode(value: String): Self = this.set("hivePartitioningMode", value.asInstanceOf[js.Any])
+    def setIgnoreUnknownValuesUndefined: Self = StObject.set(x, "ignoreUnknownValues", js.undefined)
     
     @scala.inline
-    def deleteHivePartitioningMode: Self = this.set("hivePartitioningMode", js.undefined)
+    def setMaxBadRecords(value: Double): Self = StObject.set(x, "maxBadRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreUnknownValues(value: Boolean): Self = this.set("ignoreUnknownValues", value.asInstanceOf[js.Any])
+    def setMaxBadRecordsUndefined: Self = StObject.set(x, "maxBadRecords", js.undefined)
     
     @scala.inline
-    def deleteIgnoreUnknownValues: Self = this.set("ignoreUnknownValues", js.undefined)
+    def setSchema(value: SchemaTableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBadRecords(value: Double): Self = this.set("maxBadRecords", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteMaxBadRecords: Self = this.set("maxBadRecords", js.undefined)
+    def setSourceFormat(value: String): Self = StObject.set(x, "sourceFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: SchemaTableSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSourceFormatUndefined: Self = StObject.set(x, "sourceFormat", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSourceUris(value: js.Array[String]): Self = StObject.set(x, "sourceUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFormat(value: String): Self = this.set("sourceFormat", value.asInstanceOf[js.Any])
+    def setSourceUrisUndefined: Self = StObject.set(x, "sourceUris", js.undefined)
     
     @scala.inline
-    def deleteSourceFormat: Self = this.set("sourceFormat", js.undefined)
-    
-    @scala.inline
-    def setSourceUrisVarargs(value: String*): Self = this.set("sourceUris", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceUris(value: js.Array[String]): Self = this.set("sourceUris", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceUris: Self = this.set("sourceUris", js.undefined)
+    def setSourceUrisVarargs(value: String*): Self = StObject.set(x, "sourceUris", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait WidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     *   The width utility parses a component's `width` prop and converts it into a CSS width declaration.
@@ -26,30 +27,18 @@ object WidthProps {
   }
   
   @scala.inline
-  implicit class WidthPropsOps[Self <: WidthProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (WidthProps[ThemeType, TVal])) extends AnyVal {
+  implicit class WidthPropsMutableBuilder[Self <: WidthProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (WidthProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWidthNull: Self = StObject.set(x, "width", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def setWidthVarargs(value: (TVal | Null)*): Self = this.set("width", js.Array(value :_*))
-    
-    @scala.inline
-    def setWidth(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWidthNull: Self = this.set("width", null)
+    def setWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "width", js.Array(value :_*))
   }
 }

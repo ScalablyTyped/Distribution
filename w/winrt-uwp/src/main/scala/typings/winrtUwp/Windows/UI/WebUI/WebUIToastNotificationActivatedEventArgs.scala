@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an event that occurs when the app is activated because a user tapped on the body of a toast notification or performed an action inside a toast notification. */
 @js.native
-trait WebUIToastNotificationActivatedEventArgs extends js.Object {
+trait WebUIToastNotificationActivatedEventArgs extends StObject {
   
   /** Gets the app activation operation. */
   var activatedOperation: ActivatedOperation = js.native
@@ -46,36 +47,24 @@ object WebUIToastNotificationActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class WebUIToastNotificationActivatedEventArgsOps[Self <: WebUIToastNotificationActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WebUIToastNotificationActivatedEventArgsMutableBuilder[Self <: WebUIToastNotificationActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgument(value: String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatedOperation(value: ActivatedOperation): Self = this.set("activatedOperation", value.asInstanceOf[js.Any])
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgument(value: String): Self = this.set("argument", value.asInstanceOf[js.Any])
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserInput(value: ValueSet): Self = this.set("userInput", value.asInstanceOf[js.Any])
+    def setUserInput(value: ValueSet): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IActionConvertToPDF extends js.Object {
+trait IActionConvertToPDF extends StObject {
   
   def Clone(): IActionConvertToPDF = js.native
   
@@ -32,33 +33,21 @@ object IActionConvertToPDF {
   }
   
   @scala.inline
-  implicit class IActionConvertToPDFOps[Self <: IActionConvertToPDF] (val x: Self) extends AnyVal {
+  implicit class IActionConvertToPDFMutableBuilder[Self <: IActionConvertToPDF] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IActionConvertToPDF): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailOnUnsupportedSourceFiles(value: Boolean): Self = StObject.set(x, "FailOnUnsupportedSourceFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverwriteExistingFile(value: Boolean): Self = StObject.set(x, "OverwriteExistingFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IActionConvertToPDF): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setPDFA1b(value: Boolean): Self = StObject.set(x, "PDFA1b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailOnUnsupportedSourceFiles(value: Boolean): Self = this.set("FailOnUnsupportedSourceFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverwriteExistingFile(value: Boolean): Self = this.set("OverwriteExistingFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPDFA1b(value: Boolean): Self = this.set("PDFA1b", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStoreAsSeparateFile(value: Boolean): Self = this.set("StoreAsSeparateFile", value.asInstanceOf[js.Any])
+    def setStoreAsSeparateFile(value: Boolean): Self = StObject.set(x, "StoreAsSeparateFile", value.asInstanceOf[js.Any])
   }
 }

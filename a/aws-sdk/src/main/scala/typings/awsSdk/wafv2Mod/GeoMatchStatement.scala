@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoMatchStatement extends js.Object {
+trait GeoMatchStatement extends StObject {
   
   /**
     * An array of two-character country codes, for example, [ "US", "CN" ], from the alpha-2 country ISO codes of the ISO 3166 international standard. 
@@ -26,33 +27,21 @@ object GeoMatchStatement {
   }
   
   @scala.inline
-  implicit class GeoMatchStatementOps[Self <: GeoMatchStatement] (val x: Self) extends AnyVal {
+  implicit class GeoMatchStatementMutableBuilder[Self <: GeoMatchStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCodes(value: CountryCodes): Self = StObject.set(x, "CountryCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCodesUndefined: Self = StObject.set(x, "CountryCodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryCodesVarargs(value: CountryCode*): Self = StObject.set(x, "CountryCodes", js.Array(value :_*))
     
     @scala.inline
-    def setCountryCodesVarargs(value: CountryCode*): Self = this.set("CountryCodes", js.Array(value :_*))
+    def setForwardedIPConfig(value: ForwardedIPConfig): Self = StObject.set(x, "ForwardedIPConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCodes(value: CountryCodes): Self = this.set("CountryCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCountryCodes: Self = this.set("CountryCodes", js.undefined)
-    
-    @scala.inline
-    def setForwardedIPConfig(value: ForwardedIPConfig): Self = this.set("ForwardedIPConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForwardedIPConfig: Self = this.set("ForwardedIPConfig", js.undefined)
+    def setForwardedIPConfigUndefined: Self = StObject.set(x, "ForwardedIPConfig", js.undefined)
   }
 }

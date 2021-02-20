@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.commitFileFailed
   - typings.microsoftGraph.microsoftGraphStrings.commitFileTimedOut
 */
-trait MobileAppContentFileUploadState extends js.Object
+trait MobileAppContentFileUploadState extends StObject
 object MobileAppContentFileUploadState {
   
   @scala.inline

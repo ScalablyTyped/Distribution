@@ -5,12 +5,13 @@ import typings.std.HTMLIFrameElement
 import typings.std.Range
 import typings.std.Selection
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangyStatic extends js.Object {
+trait RangyStatic extends StObject {
   
   def addInitListener(listener: js.Function1[/* rangy */ this.type, Unit]): js.Any = js.native
   

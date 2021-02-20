@@ -1,14 +1,14 @@
 package typings.samchon
 
 import typings.urlVariables.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/library/URLVariables", JSImport.Namespace)
-@js.native
-object urlvariablesMod extends js.Object {
+object urlvariablesMod {
   
+  @JSImport("samchon/library/URLVariables", "URLVariables")
   @js.native
   /**
     * Default Constructor.
@@ -23,12 +23,17 @@ object urlvariablesMod extends js.Object {
       */
     def this(str: String) = this()
   }
-  @js.native
-  object URLVariables extends js.Object {
+  object URLVariables {
     
+    @JSImport("samchon/library/URLVariables", "URLVariables.parse")
+    @js.native
     def parse[T](str: String): T = js.native
+    @JSImport("samchon/library/URLVariables", "URLVariables.parse")
+    @js.native
     def parse[T](str: String, autoCase: Boolean): T = js.native
     
+    @JSImport("samchon/library/URLVariables", "URLVariables.stringify")
+    @js.native
     def stringify[T](obj: T): String = js.native
   }
 }

@@ -9,6 +9,7 @@ import typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate
 import typings.mendixmodelsdk.pagesMod.pages.IPage
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,16 +73,20 @@ class UserTask protected () extends WorkflowTask {
   def userSource: UserSource = js.native
   def userSource_=(newValue: UserSource): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.UserTask")
-@js.native
-object UserTask extends js.Object {
+object UserTask {
+  
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.UserTask")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new UserTask instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.UserTask.create")
+  @js.native
   def create(model: IModel): UserTask = js.native
   
   /**
@@ -92,9 +97,22 @@ object UserTask extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.UserTask.createIn")
+  @js.native
   def createIn(container: Flow): UserTask = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.UserTask.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.UserTask.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

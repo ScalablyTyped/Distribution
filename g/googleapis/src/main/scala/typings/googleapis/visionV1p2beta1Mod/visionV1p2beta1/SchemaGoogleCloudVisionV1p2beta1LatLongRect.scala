@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Rectangle determined by min and max `LatLng` pairs.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p2beta1LatLongRect extends js.Object {
+trait SchemaGoogleCloudVisionV1p2beta1LatLongRect extends StObject {
   
   /**
     * Max lat/long pair.
@@ -29,30 +30,18 @@ object SchemaGoogleCloudVisionV1p2beta1LatLongRect {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1LatLongRectOps[Self <: SchemaGoogleCloudVisionV1p2beta1LatLongRect] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p2beta1LatLongRectMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1LatLongRect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxLatLng(value: SchemaLatLng): Self = StObject.set(x, "maxLatLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxLatLngUndefined: Self = StObject.set(x, "maxLatLng", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinLatLng(value: SchemaLatLng): Self = StObject.set(x, "minLatLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLatLng(value: SchemaLatLng): Self = this.set("maxLatLng", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxLatLng: Self = this.set("maxLatLng", js.undefined)
-    
-    @scala.inline
-    def setMinLatLng(value: SchemaLatLng): Self = this.set("minLatLng", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinLatLng: Self = this.set("minLatLng", js.undefined)
+    def setMinLatLngUndefined: Self = StObject.set(x, "minLatLng", js.undefined)
   }
 }

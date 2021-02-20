@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomaticScaling extends js.Object {
+trait AutomaticScaling extends StObject {
   
   /**
     * The time period that the Autoscaler (https://cloud.google.com/compute/docs/autoscaler/) should wait before it starts collecting information from a new instance. This prevents the
@@ -59,96 +60,84 @@ object AutomaticScaling {
   }
   
   @scala.inline
-  implicit class AutomaticScalingOps[Self <: AutomaticScaling] (val x: Self) extends AnyVal {
+  implicit class AutomaticScalingMutableBuilder[Self <: AutomaticScaling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoolDownPeriod(value: String): Self = StObject.set(x, "coolDownPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoolDownPeriodUndefined: Self = StObject.set(x, "coolDownPeriod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpuUtilization(value: CpuUtilization): Self = StObject.set(x, "cpuUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoolDownPeriod(value: String): Self = this.set("coolDownPeriod", value.asInstanceOf[js.Any])
+    def setCpuUtilizationUndefined: Self = StObject.set(x, "cpuUtilization", js.undefined)
     
     @scala.inline
-    def deleteCoolDownPeriod: Self = this.set("coolDownPeriod", js.undefined)
+    def setDiskUtilization(value: DiskUtilization): Self = StObject.set(x, "diskUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuUtilization(value: CpuUtilization): Self = this.set("cpuUtilization", value.asInstanceOf[js.Any])
+    def setDiskUtilizationUndefined: Self = StObject.set(x, "diskUtilization", js.undefined)
     
     @scala.inline
-    def deleteCpuUtilization: Self = this.set("cpuUtilization", js.undefined)
+    def setMaxConcurrentRequests(value: Double): Self = StObject.set(x, "maxConcurrentRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskUtilization(value: DiskUtilization): Self = this.set("diskUtilization", value.asInstanceOf[js.Any])
+    def setMaxConcurrentRequestsUndefined: Self = StObject.set(x, "maxConcurrentRequests", js.undefined)
     
     @scala.inline
-    def deleteDiskUtilization: Self = this.set("diskUtilization", js.undefined)
+    def setMaxIdleInstances(value: Double): Self = StObject.set(x, "maxIdleInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrentRequests(value: Double): Self = this.set("maxConcurrentRequests", value.asInstanceOf[js.Any])
+    def setMaxIdleInstancesUndefined: Self = StObject.set(x, "maxIdleInstances", js.undefined)
     
     @scala.inline
-    def deleteMaxConcurrentRequests: Self = this.set("maxConcurrentRequests", js.undefined)
+    def setMaxPendingLatency(value: String): Self = StObject.set(x, "maxPendingLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxIdleInstances(value: Double): Self = this.set("maxIdleInstances", value.asInstanceOf[js.Any])
+    def setMaxPendingLatencyUndefined: Self = StObject.set(x, "maxPendingLatency", js.undefined)
     
     @scala.inline
-    def deleteMaxIdleInstances: Self = this.set("maxIdleInstances", js.undefined)
+    def setMaxTotalInstances(value: Double): Self = StObject.set(x, "maxTotalInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPendingLatency(value: String): Self = this.set("maxPendingLatency", value.asInstanceOf[js.Any])
+    def setMaxTotalInstancesUndefined: Self = StObject.set(x, "maxTotalInstances", js.undefined)
     
     @scala.inline
-    def deleteMaxPendingLatency: Self = this.set("maxPendingLatency", js.undefined)
+    def setMinIdleInstances(value: Double): Self = StObject.set(x, "minIdleInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTotalInstances(value: Double): Self = this.set("maxTotalInstances", value.asInstanceOf[js.Any])
+    def setMinIdleInstancesUndefined: Self = StObject.set(x, "minIdleInstances", js.undefined)
     
     @scala.inline
-    def deleteMaxTotalInstances: Self = this.set("maxTotalInstances", js.undefined)
+    def setMinPendingLatency(value: String): Self = StObject.set(x, "minPendingLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinIdleInstances(value: Double): Self = this.set("minIdleInstances", value.asInstanceOf[js.Any])
+    def setMinPendingLatencyUndefined: Self = StObject.set(x, "minPendingLatency", js.undefined)
     
     @scala.inline
-    def deleteMinIdleInstances: Self = this.set("minIdleInstances", js.undefined)
+    def setMinTotalInstances(value: Double): Self = StObject.set(x, "minTotalInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPendingLatency(value: String): Self = this.set("minPendingLatency", value.asInstanceOf[js.Any])
+    def setMinTotalInstancesUndefined: Self = StObject.set(x, "minTotalInstances", js.undefined)
     
     @scala.inline
-    def deleteMinPendingLatency: Self = this.set("minPendingLatency", js.undefined)
+    def setNetworkUtilization(value: NetworkUtilization): Self = StObject.set(x, "networkUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTotalInstances(value: Double): Self = this.set("minTotalInstances", value.asInstanceOf[js.Any])
+    def setNetworkUtilizationUndefined: Self = StObject.set(x, "networkUtilization", js.undefined)
     
     @scala.inline
-    def deleteMinTotalInstances: Self = this.set("minTotalInstances", js.undefined)
+    def setRequestUtilization(value: RequestUtilization): Self = StObject.set(x, "requestUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkUtilization(value: NetworkUtilization): Self = this.set("networkUtilization", value.asInstanceOf[js.Any])
+    def setRequestUtilizationUndefined: Self = StObject.set(x, "requestUtilization", js.undefined)
     
     @scala.inline
-    def deleteNetworkUtilization: Self = this.set("networkUtilization", js.undefined)
+    def setStandardSchedulerSettings(value: StandardSchedulerSettings): Self = StObject.set(x, "standardSchedulerSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestUtilization(value: RequestUtilization): Self = this.set("requestUtilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestUtilization: Self = this.set("requestUtilization", js.undefined)
-    
-    @scala.inline
-    def setStandardSchedulerSettings(value: StandardSchedulerSettings): Self = this.set("standardSchedulerSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandardSchedulerSettings: Self = this.set("standardSchedulerSettings", js.undefined)
+    def setStandardSchedulerSettingsUndefined: Self = StObject.set(x, "standardSchedulerSettings", js.undefined)
   }
 }

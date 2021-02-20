@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import typings.winrtUwp.Windows.Networking.DomainNameType
 import typings.winrtUwp.Windows.Networking.HostName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The RoutePolicy class is used to represent the traffic routing policy for a special PDP Context/APN. */
 @js.native
-trait RoutePolicy extends js.Object {
+trait RoutePolicy extends StObject {
   
   /** Retrieves the connection profile for an access point connection. */
   var connectionProfile: ConnectionProfile = js.native
@@ -28,27 +29,15 @@ object RoutePolicy {
   }
   
   @scala.inline
-  implicit class RoutePolicyOps[Self <: RoutePolicy] (val x: Self) extends AnyVal {
+  implicit class RoutePolicyMutableBuilder[Self <: RoutePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionProfile(value: ConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostName(value: HostName): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectionProfile(value: ConnectionProfile): Self = this.set("connectionProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostName(value: HostName): Self = this.set("hostName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostNameType(value: DomainNameType): Self = this.set("hostNameType", value.asInstanceOf[js.Any])
+    def setHostNameType(value: DomainNameType): Self = StObject.set(x, "hostNameType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineOrientationOption extends js.Object {
+trait TimelineOrientationOption extends StObject {
   
   var axis: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object TimelineOrientationOption {
   }
   
   @scala.inline
-  implicit class TimelineOrientationOptionOps[Self <: TimelineOrientationOption] (val x: Self) extends AnyVal {
+  implicit class TimelineOrientationOptionMutableBuilder[Self <: TimelineOrientationOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
-    
-    @scala.inline
-    def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

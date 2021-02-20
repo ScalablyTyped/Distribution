@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComputeMessageStatsRequest extends js.Object {
+trait ComputeMessageStatsRequest extends StObject {
   
   /**
     * The exclusive end of the range. The range is empty if end_cursor <= start_cursor. Specifying a start_cursor before the first message and an end_cursor after the last message will
@@ -28,36 +29,24 @@ object ComputeMessageStatsRequest {
   }
   
   @scala.inline
-  implicit class ComputeMessageStatsRequestOps[Self <: ComputeMessageStatsRequest] (val x: Self) extends AnyVal {
+  implicit class ComputeMessageStatsRequestMutableBuilder[Self <: ComputeMessageStatsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndCursor(value: Cursor): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCursor(value: Cursor): Self = this.set("endCursor", value.asInstanceOf[js.Any])
+    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
     @scala.inline
-    def deleteEndCursor: Self = this.set("endCursor", js.undefined)
+    def setStartCursor(value: Cursor): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartition(value: String): Self = this.set("partition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartition: Self = this.set("partition", js.undefined)
-    
-    @scala.inline
-    def setStartCursor(value: Cursor): Self = this.set("startCursor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartCursor: Self = this.set("startCursor", js.undefined)
+    def setStartCursorUndefined: Self = StObject.set(x, "startCursor", js.undefined)
   }
 }

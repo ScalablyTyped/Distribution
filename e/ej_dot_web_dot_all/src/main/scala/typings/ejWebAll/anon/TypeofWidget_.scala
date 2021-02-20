@@ -1,16 +1,35 @@
 package typings.ejWebAll.anon
 
-import org.scalablytyped.runtime.Instantiable3
 import typings.ejWebAll.ej.Widget_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofWidget_
-  extends Instantiable3[/* pluginName */ String, /* className */ String, /* proto */ js.Any, Widget_] {
+trait TypeofWidget_ extends StObject {
   
+  /* static member */
   def extend(widget: Widget_): js.Any = js.native
   
+  /* static member */
   var fn: Widget_ = js.native
+}
+object TypeofWidget_ {
+  
+  @scala.inline
+  def apply(extend: Widget_ => js.Any, fn: Widget_): TypeofWidget_ = {
+    val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofWidget_]
+  }
+  
+  @scala.inline
+  implicit class TypeofWidget_MutableBuilder[Self <: TypeofWidget_] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setExtend(value: Widget_ => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setFn(value: Widget_): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+  }
 }

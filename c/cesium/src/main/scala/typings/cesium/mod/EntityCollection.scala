@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EntityCollection")
 @js.native
-class EntityCollection protected () extends js.Object {
+class EntityCollection protected () extends StObject {
   def this(owner: CompositeEntityCollection) = this()
   def this(owner: DataSource) = this()
   
@@ -40,11 +41,11 @@ class EntityCollection protected () extends js.Object {
   
   val values: js.Array[Entity] = js.native
 }
-/* static members */
-@JSImport("cesium", "EntityCollection")
-@js.native
-object EntityCollection extends js.Object {
+object EntityCollection {
   
+  /* static member */
+  @JSImport("cesium", "EntityCollection.collectionChangedEventCallback")
+  @js.native
   def collectionChangedEventCallback(
     collection: EntityCollection,
     added: js.Array[Entity],

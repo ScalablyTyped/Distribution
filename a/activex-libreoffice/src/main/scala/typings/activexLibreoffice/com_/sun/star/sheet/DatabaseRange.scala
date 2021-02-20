@@ -12,6 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.table.XCellRange
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -149,54 +150,42 @@ object DatabaseRange {
   }
   
   @scala.inline
-  implicit class DatabaseRangeOps[Self <: DatabaseRange] (val x: Self) extends AnyVal {
+  implicit class DatabaseRangeMutableBuilder[Self <: DatabaseRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFilter(value: Boolean): Self = StObject.set(x, "AutoFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterCriteriaSource(value: CellRangeAddress): Self = StObject.set(x, "FilterCriteriaSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFilter(value: Boolean): Self = this.set("AutoFilter", value.asInstanceOf[js.Any])
+    def setFromSelection(value: Boolean): Self = StObject.set(x, "FromSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsHeader(value: Boolean): Self = this.set("ContainsHeader", value.asInstanceOf[js.Any])
+    def setKeepFormats(value: Boolean): Self = StObject.set(x, "KeepFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterCriteriaSource(value: CellRangeAddress): Self = this.set("FilterCriteriaSource", value.asInstanceOf[js.Any])
+    def setMoveCells(value: Boolean): Self = StObject.set(x, "MoveCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromSelection(value: Boolean): Self = this.set("FromSelection", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKeepFormats(value: Boolean): Self = this.set("KeepFormats", value.asInstanceOf[js.Any])
+    def setRefreshPeriod(value: Double): Self = StObject.set(x, "RefreshPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveCells(value: Boolean): Self = this.set("MoveCells", value.asInstanceOf[js.Any])
+    def setStripData(value: Boolean): Self = StObject.set(x, "StripData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshPeriod(value: Double): Self = this.set("RefreshPeriod", value.asInstanceOf[js.Any])
+    def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStripData(value: Boolean): Self = this.set("StripData", value.asInstanceOf[js.Any])
+    def setTotalsRow(value: Boolean): Self = StObject.set(x, "TotalsRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenIndex(value: Double): Self = this.set("TokenIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalsRow(value: Boolean): Self = this.set("TotalsRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseFilterCriteriaSource(value: Boolean): Self = this.set("UseFilterCriteriaSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("refresh", js.Any.fromFunction0(value))
+    def setUseFilterCriteriaSource(value: Boolean): Self = StObject.set(x, "UseFilterCriteriaSource", value.asInstanceOf[js.Any])
   }
 }

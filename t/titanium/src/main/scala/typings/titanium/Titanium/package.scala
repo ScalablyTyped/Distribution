@@ -1,10 +1,32 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Titanium {
+  
+  /**
+    * The top-level Android module.
+    */
+  type Android = typings.titanium.Titanium.Module
+  
+  /**
+    * The top-level App module is mainly used for accessing information about the
+    * application at runtime, and for sending or listening for system events.
+    */
+  type App = typings.titanium.Titanium.Module
+  
+  /**
+    * The top-level Media module.
+    */
+  type Media = typings.titanium.Titanium.Module
+  
+  /**
+    * The main <Titanium.UI> module.
+    */
+  type UI = typings.titanium.Titanium.Module
   
   /**
     * The top-level API module, containing methods to output messages to the system log.
@@ -20,17 +42,6 @@ package object Titanium {
     * Used for transmitting developer-defined Analytics events to the Appcelerator Analytics product.
     */
   type Analytics = typings.titanium.Titanium.Module
-  
-  /**
-    * The top-level Android module.
-    */
-  type Android = typings.titanium.Titanium.Module
-  
-  /**
-    * The top-level App module is mainly used for accessing information about the
-    * application at runtime, and for sending or listening for system events.
-    */
-  type App = typings.titanium.Titanium.Module
   
   /**
     * Fired by the system when the application is about to be terminated.
@@ -150,11 +161,6 @@ package object Titanium {
   type LocaleChangeEvent = typings.titanium.Titanium.LocaleBaseEvent
   
   /**
-    * The top-level Media module.
-    */
-  type Media = typings.titanium.Titanium.Module
-  
-  /**
     * Fires when the camera overlay is ready to take pictures.
     */
   type MediaCamerareadyEvent = typings.titanium.Titanium.MediaBaseEvent
@@ -179,11 +185,6 @@ package object Titanium {
     * Stream module containing stream utility methods.
     */
   type Stream = typings.titanium.Titanium.Module
-  
-  /**
-    * The main <Titanium.UI> module.
-    */
-  type UI = typings.titanium.Titanium.Module
   
   /**
     * The top-level Utils module, containing a set of JavaScript methods that are often useful when

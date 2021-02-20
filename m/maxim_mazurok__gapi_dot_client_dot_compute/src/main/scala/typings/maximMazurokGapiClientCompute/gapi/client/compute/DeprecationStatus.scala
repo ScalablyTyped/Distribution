@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeprecationStatus extends js.Object {
+trait DeprecationStatus extends StObject {
   
   /**
     * An optional RFC3339 timestamp on or after which the state of this resource is intended to change to DELETED. This is only informational and the status will not change unless the
@@ -44,48 +45,36 @@ object DeprecationStatus {
   }
   
   @scala.inline
-  implicit class DeprecationStatusOps[Self <: DeprecationStatus] (val x: Self) extends AnyVal {
+  implicit class DeprecationStatusMutableBuilder[Self <: DeprecationStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: String): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setObsolete(value: String): Self = StObject.set(x, "obsolete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecated(value: String): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    def setObsoleteUndefined: Self = StObject.set(x, "obsolete", js.undefined)
     
     @scala.inline
-    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObsolete(value: String): Self = this.set("obsolete", value.asInstanceOf[js.Any])
+    def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
     
     @scala.inline
-    def deleteObsolete: Self = this.set("obsolete", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplacement(value: String): Self = this.set("replacement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplacement: Self = this.set("replacement", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

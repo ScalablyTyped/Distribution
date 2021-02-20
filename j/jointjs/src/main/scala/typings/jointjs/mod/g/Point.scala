@@ -1,5 +1,6 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,14 +100,21 @@ class Point () extends PlainPoint {
   
   def vectorAngle(p: PlainPoint): Double = js.native
 }
-/* static members */
-@JSImport("jointjs", "g.Point")
-@js.native
-object Point extends js.Object {
+object Point {
   
+  /* static member */
+  @JSImport("jointjs", "g.Point.fromPolar")
+  @js.native
   def fromPolar(distance: Double, angle: Double): Point = js.native
+  @JSImport("jointjs", "g.Point.fromPolar")
+  @js.native
   def fromPolar(distance: Double, angle: Double, origin: String): Point = js.native
+  @JSImport("jointjs", "g.Point.fromPolar")
+  @js.native
   def fromPolar(distance: Double, angle: Double, origin: PlainPoint): Point = js.native
   
+  /* static member */
+  @JSImport("jointjs", "g.Point.random")
+  @js.native
   def random(x1: Double, x2: Double, y1: Double, y2: Double): Point = js.native
 }

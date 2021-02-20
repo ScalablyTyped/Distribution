@@ -1,12 +1,13 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "ext internal"
 @js.native
-trait ExtTypeSettings extends js.Object {
+trait ExtTypeSettings extends StObject {
   
   /**
     * Type detection functions for plug-in development.
@@ -43,30 +44,18 @@ object ExtTypeSettings {
   }
   
   @scala.inline
-  implicit class ExtTypeSettingsOps[Self <: ExtTypeSettings] (val x: Self) extends AnyVal {
+  implicit class ExtTypeSettingsMutableBuilder[Self <: ExtTypeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetect(value: js.Array[FunctionExtTypeSettingsDetect]): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectVarargs(value: FunctionExtTypeSettingsDetect*): Self = StObject.set(x, "detect", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrder(value: js.Object): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectVarargs(value: FunctionExtTypeSettingsDetect*): Self = this.set("detect", js.Array(value :_*))
-    
-    @scala.inline
-    def setDetect(value: js.Array[FunctionExtTypeSettingsDetect]): Self = this.set("detect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder(value: js.Object): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearch(value: js.Object): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setSearch(value: js.Object): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the interactions that are supported by an application. */
 @JSGlobal("Windows.UI.Input.GestureSettings")
 @js.native
-object GestureSettings extends js.Object {
+object GestureSettings extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Input.GestureSettings with Double] = js.native

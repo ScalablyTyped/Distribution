@@ -2,6 +2,7 @@ package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.queuesMod.Script
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

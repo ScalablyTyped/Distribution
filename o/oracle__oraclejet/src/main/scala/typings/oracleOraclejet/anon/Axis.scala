@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Axis extends js.Object {
+trait Axis extends StObject {
   
   var axis: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object Axis {
   }
   
   @scala.inline
-  implicit class AxisOps[Self <: Axis] (val x: Self) extends AnyVal {
+  implicit class AxisMutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackfaceVisibility(value: String): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackfaceVisibility(value: String): Self = this.set("backfaceVisibility", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteBackfaceVisibility: Self = this.set("backfaceVisibility", js.undefined)
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: String): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setEndAngle(value: String): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setFlipTarget(value: String): Self = StObject.set(x, "flipTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAngle(value: String): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setFlipTargetUndefined: Self = StObject.set(x, "flipTarget", js.undefined)
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    def setPersist(value: String): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlipTarget(value: String): Self = this.set("flipTarget", value.asInstanceOf[js.Any])
+    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
     @scala.inline
-    def deleteFlipTarget: Self = this.set("flipTarget", js.undefined)
+    def setPerspective(value: String): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersist(value: String): Self = this.set("persist", value.asInstanceOf[js.Any])
+    def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
     
     @scala.inline
-    def deletePersist: Self = this.set("persist", js.undefined)
+    def setStartAngle(value: String): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerspective(value: String): Self = this.set("perspective", value.asInstanceOf[js.Any])
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def deletePerspective: Self = this.set("perspective", js.undefined)
+    def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAngle(value: String): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
     
     @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingFunction(value: String): Self = this.set("timingFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingFunction: Self = this.set("timingFunction", js.undefined)
-    
-    @scala.inline
-    def setTransformOrigin(value: String): Self = this.set("transformOrigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformOrigin: Self = this.set("transformOrigin", js.undefined)
+    def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
   }
 }

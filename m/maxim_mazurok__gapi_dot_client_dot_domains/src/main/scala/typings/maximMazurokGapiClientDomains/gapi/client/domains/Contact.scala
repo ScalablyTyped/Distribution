@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Contact extends js.Object {
+trait Contact extends StObject {
   
   /** Required. Email address of the contact. */
   var email: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object Contact {
   }
   
   @scala.inline
-  implicit class ContactOps[Self <: Contact] (val x: Self) extends AnyVal {
+  implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaxNumber(value: String): Self = StObject.set(x, "faxNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFaxNumberUndefined: Self = StObject.set(x, "faxNumber", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaxNumber(value: String): Self = this.set("faxNumber", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def deleteFaxNumber: Self = this.set("faxNumber", js.undefined)
+    def setPostalAddress(value: PostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
-    
-    @scala.inline
-    def setPostalAddress(value: PostalAddress): Self = this.set("postalAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostalAddress: Self = this.set("postalAddress", js.undefined)
+    def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
   }
 }

@@ -3,20 +3,14 @@ package typings.tensorflowTfjsCore
 import typings.std.RequestInit
 import typings.std.Response
 import typings.tensorflowTfjsCore.platformMod.Platform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", JSImport.Namespace)
-@js.native
-object platformNodeMod extends js.Object {
+object platformNodeMod {
   
-  def getSystemFetch(): FetchFn = js.native
-  
-  def resetSystemFetch(): Unit = js.native
-  
-  def setSystemFetch(fetchFn: FetchFn): Unit = js.native
-  
+  @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "PlatformNode")
   @js.native
   class PlatformNode () extends Platform {
     
@@ -25,11 +19,24 @@ object platformNodeMod extends js.Object {
     var util: js.Any = js.native
   }
   
-  @js.native
-  object getNodeFetch extends js.Object {
+  object getNodeFetch {
     
+    @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "getNodeFetch.importFetch")
+    @js.native
     def importFetch(): js.Any = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "getSystemFetch")
+  @js.native
+  def getSystemFetch(): FetchFn = js.native
+  
+  @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "resetSystemFetch")
+  @js.native
+  def resetSystemFetch(): Unit = js.native
+  
+  @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "setSystemFetch")
+  @js.native
+  def setSystemFetch(fetchFn: FetchFn): Unit = js.native
   
   type FetchFn = js.Function2[/* url */ String, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]
 }

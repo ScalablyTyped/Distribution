@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPanoramaGraph extends js.Object {
+trait IPanoramaGraph extends StObject {
   
   def getEdges(): js.Array[IPanoramaGraphEdge] = js.native
   
@@ -26,27 +27,15 @@ object IPanoramaGraph {
   }
   
   @scala.inline
-  implicit class IPanoramaGraphOps[Self <: IPanoramaGraph] (val x: Self) extends AnyVal {
+  implicit class IPanoramaGraphMutableBuilder[Self <: IPanoramaGraph] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEdges(value: () => js.Array[IPanoramaGraphEdge]): Self = StObject.set(x, "getEdges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNodes(value: () => js.Array[IPanoramaGraphEdge]): Self = StObject.set(x, "getNodes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetEdges(value: () => js.Array[IPanoramaGraphEdge]): Self = this.set("getEdges", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNodes(value: () => js.Array[IPanoramaGraphEdge]): Self = this.set("getNodes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPanorama(value: () => IPanorama): Self = this.set("getPanorama", js.Any.fromFunction0(value))
+    def setGetPanorama(value: () => IPanorama): Self = StObject.set(x, "getPanorama", js.Any.fromFunction0(value))
   }
 }

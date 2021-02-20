@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about an end user.
   */
 @js.native
-trait SchemaUser extends js.Object {
+trait SchemaUser extends StObject {
   
   /**
     * A user whose account has since been deleted.
@@ -34,36 +35,24 @@ object SchemaUser {
   }
   
   @scala.inline
-  implicit class SchemaUserOps[Self <: SchemaUser] (val x: Self) extends AnyVal {
+  implicit class SchemaUserMutableBuilder[Self <: SchemaUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletedUser(value: SchemaDeletedUser): Self = StObject.set(x, "deletedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedUserUndefined: Self = StObject.set(x, "deletedUser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKnownUser(value: SchemaKnownUser): Self = StObject.set(x, "knownUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedUser(value: SchemaDeletedUser): Self = this.set("deletedUser", value.asInstanceOf[js.Any])
+    def setKnownUserUndefined: Self = StObject.set(x, "knownUser", js.undefined)
     
     @scala.inline
-    def deleteDeletedUser: Self = this.set("deletedUser", js.undefined)
+    def setUnknownUser(value: SchemaUnknownUser): Self = StObject.set(x, "unknownUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKnownUser(value: SchemaKnownUser): Self = this.set("knownUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKnownUser: Self = this.set("knownUser", js.undefined)
-    
-    @scala.inline
-    def setUnknownUser(value: SchemaUnknownUser): Self = this.set("unknownUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownUser: Self = this.set("unknownUser", js.undefined)
+    def setUnknownUserUndefined: Self = StObject.set(x, "unknownUser", js.undefined)
   }
 }

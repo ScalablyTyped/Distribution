@@ -1,6 +1,7 @@
 package typings.pixiJs.global.PIXI
 
 import typings.pixiJs.PIXI.AnimatedSprite.FrameObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,10 +46,7 @@ class AnimatedSprite protected ()
   def this(textures: js.Array[FrameObject | typings.pixiJs.PIXI.Texture]) = this()
   def this(textures: js.Array[FrameObject | typings.pixiJs.PIXI.Texture], autoUpdate: Boolean) = this()
 }
-/* static members */
-@JSGlobal("PIXI.AnimatedSprite")
-@js.native
-object AnimatedSprite extends js.Object {
+object AnimatedSprite {
   
   /**
     * A short hand way of creating an AnimatedSprite from an array of frame ids.
@@ -57,6 +55,9 @@ object AnimatedSprite extends js.Object {
     * @param {string[]} frames - The array of frames ids the AnimatedSprite will use as its texture frames.
     * @return {PIXI.AnimatedSprite} The new animated sprite with the specified frames.
     */
+  /* static member */
+  @JSGlobal("PIXI.AnimatedSprite.fromFrames")
+  @js.native
   def fromFrames(frames: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = js.native
   
   /**
@@ -66,5 +67,8 @@ object AnimatedSprite extends js.Object {
     * @param {string[]} images - The array of image urls the AnimatedSprite will use as its texture frames.
     * @return {PIXI.AnimatedSprite} The new animate sprite with the specified images as frames.
     */
+  /* static member */
+  @JSGlobal("PIXI.AnimatedSprite.fromImages")
+  @js.native
   def fromImages(images: js.Array[String]): typings.pixiJs.PIXI.AnimatedSprite = js.native
 }

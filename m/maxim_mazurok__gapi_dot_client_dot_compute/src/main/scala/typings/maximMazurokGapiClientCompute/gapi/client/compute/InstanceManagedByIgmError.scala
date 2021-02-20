@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceManagedByIgmError extends js.Object {
+trait InstanceManagedByIgmError extends StObject {
   
   /** [Output Only] Contents of the error. */
   var error: js.UndefOr[InstanceManagedByIgmErrorManagedInstanceError] = js.native
@@ -25,36 +26,24 @@ object InstanceManagedByIgmError {
   }
   
   @scala.inline
-  implicit class InstanceManagedByIgmErrorOps[Self <: InstanceManagedByIgmError] (val x: Self) extends AnyVal {
+  implicit class InstanceManagedByIgmErrorMutableBuilder[Self <: InstanceManagedByIgmError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: InstanceManagedByIgmErrorManagedInstanceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceActionDetails(value: InstanceManagedByIgmErrorInstanceActionDetails): Self = StObject.set(x, "instanceActionDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: InstanceManagedByIgmErrorManagedInstanceError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setInstanceActionDetailsUndefined: Self = StObject.set(x, "instanceActionDetails", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceActionDetails(value: InstanceManagedByIgmErrorInstanceActionDetails): Self = this.set("instanceActionDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceActionDetails: Self = this.set("instanceActionDetails", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

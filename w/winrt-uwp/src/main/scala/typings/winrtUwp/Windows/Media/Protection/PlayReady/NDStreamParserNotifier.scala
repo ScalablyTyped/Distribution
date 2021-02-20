@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Media.Core.AudioStreamDescriptor
 import typings.winrtUwp.Windows.Media.Core.IMediaStreamDescriptor
 import typings.winrtUwp.Windows.Media.Core.MediaStreamSample
 import typings.winrtUwp.Windows.Media.Core.VideoStreamDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains methods that a stream parser plug-in uses to send notifications to a PlayReady-ND client. */
 @js.native
-trait NDStreamParserNotifier extends js.Object {
+trait NDStreamParserNotifier extends StObject {
   
   /**
     * Called by the stream parser when it requests a setup decryptor.
@@ -69,32 +70,20 @@ object NDStreamParserNotifier {
   }
   
   @scala.inline
-  implicit class NDStreamParserNotifierOps[Self <: NDStreamParserNotifier] (val x: Self) extends AnyVal {
+  implicit class NDStreamParserNotifierMutableBuilder[Self <: NDStreamParserNotifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnBeginSetupDecryptor(value: (IMediaStreamDescriptor, String, js.Array[Double]) => Unit): Self = StObject.set(x, "onBeginSetupDecryptor", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnContentIDReceived(value: INDLicenseFetchDescriptor => Unit): Self = StObject.set(x, "onContentIDReceived", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnBeginSetupDecryptor(value: (IMediaStreamDescriptor, String, js.Array[Double]) => Unit): Self = this.set("onBeginSetupDecryptor", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setOnContentIDReceived(value: INDLicenseFetchDescriptor => Unit): Self = this.set("onContentIDReceived", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnMediaStreamDescriptorCreated(value: (IVector[AudioStreamDescriptor], IVector[VideoStreamDescriptor]) => Unit): Self = this.set("onMediaStreamDescriptorCreated", js.Any.fromFunction2(value))
+    def setOnMediaStreamDescriptorCreated(value: (IVector[AudioStreamDescriptor], IVector[VideoStreamDescriptor]) => Unit): Self = StObject.set(x, "onMediaStreamDescriptorCreated", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnSampleParsed(
       value: (Double, NDMediaStreamType, MediaStreamSample, Double, NDClosedCaptionFormat, js.Array[Double]) => Unit
-    ): Self = this.set("onSampleParsed", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "onSampleParsed", js.Any.fromFunction6(value))
   }
 }

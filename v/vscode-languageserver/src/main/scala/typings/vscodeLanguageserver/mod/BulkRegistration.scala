@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkRegistration extends js.Object {
+trait BulkRegistration extends StObject {
   
   /**
     * Adds a single registration.
@@ -22,13 +23,13 @@ trait BulkRegistration extends js.Object {
   def add[R, E, RO](`type`: typings.vscodeLanguageserverProtocol.mod.RequestType0[R, E, RO], registerParams: RO): Unit = js.native
   def add[P, R, E, RO](`type`: typings.vscodeLanguageserverProtocol.mod.RequestType[P, R, E, RO], registerParams: RO): Unit = js.native
 }
-@JSImport("vscode-languageserver", "BulkRegistration")
-@js.native
-object BulkRegistration extends js.Object {
+object BulkRegistration {
   
   /**
     * Creates a new bulk registration.
     * @return an empty bulk registration.
     */
+  @JSImport("vscode-languageserver", "BulkRegistration.create")
+  @js.native
   def create(): BulkRegistration = js.native
 }

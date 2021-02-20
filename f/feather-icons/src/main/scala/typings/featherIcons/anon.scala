@@ -1,16 +1,15 @@
 package typings.featherIcons
 
 import typings.featherIcons.mod.FeatherAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Attrs extends js.Object {
+  trait Attrs extends StObject {
     
     var attrs: FeatherAttributes = js.native
     

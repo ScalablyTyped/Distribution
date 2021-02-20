@@ -1,11 +1,12 @@
 package typings.awsSdk.appconfigMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentSummary extends js.Object {
+trait DeploymentSummary extends StObject {
   
   /**
     * Time the deployment completed.
@@ -71,84 +72,72 @@ object DeploymentSummary {
   }
   
   @scala.inline
-  implicit class DeploymentSummaryOps[Self <: DeploymentSummary] (val x: Self) extends AnyVal {
+  implicit class DeploymentSummaryMutableBuilder[Self <: DeploymentSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletedAt(value: Iso8601DateTime): Self = StObject.set(x, "CompletedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedAtUndefined: Self = StObject.set(x, "CompletedAt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationName(value: Name): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedAt(value: Iso8601DateTime): Self = this.set("CompletedAt", value.asInstanceOf[js.Any])
+    def setConfigurationNameUndefined: Self = StObject.set(x, "ConfigurationName", js.undefined)
     
     @scala.inline
-    def deleteCompletedAt: Self = this.set("CompletedAt", js.undefined)
+    def setConfigurationVersion(value: Version): Self = StObject.set(x, "ConfigurationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationName(value: Name): Self = this.set("ConfigurationName", value.asInstanceOf[js.Any])
+    def setConfigurationVersionUndefined: Self = StObject.set(x, "ConfigurationVersion", js.undefined)
     
     @scala.inline
-    def deleteConfigurationName: Self = this.set("ConfigurationName", js.undefined)
+    def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationVersion(value: Version): Self = this.set("ConfigurationVersion", value.asInstanceOf[js.Any])
+    def setDeploymentDurationInMinutesUndefined: Self = StObject.set(x, "DeploymentDurationInMinutes", js.undefined)
     
     @scala.inline
-    def deleteConfigurationVersion: Self = this.set("ConfigurationVersion", js.undefined)
+    def setDeploymentNumber(value: Integer): Self = StObject.set(x, "DeploymentNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = this.set("DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
+    def setDeploymentNumberUndefined: Self = StObject.set(x, "DeploymentNumber", js.undefined)
     
     @scala.inline
-    def deleteDeploymentDurationInMinutes: Self = this.set("DeploymentDurationInMinutes", js.undefined)
+    def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentNumber(value: Integer): Self = this.set("DeploymentNumber", value.asInstanceOf[js.Any])
+    def setFinalBakeTimeInMinutesUndefined: Self = StObject.set(x, "FinalBakeTimeInMinutes", js.undefined)
     
     @scala.inline
-    def deleteDeploymentNumber: Self = this.set("DeploymentNumber", js.undefined)
+    def setGrowthFactor(value: Percentage): Self = StObject.set(x, "GrowthFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = this.set("FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
+    def setGrowthFactorUndefined: Self = StObject.set(x, "GrowthFactor", js.undefined)
     
     @scala.inline
-    def deleteFinalBakeTimeInMinutes: Self = this.set("FinalBakeTimeInMinutes", js.undefined)
+    def setGrowthType(value: GrowthType): Self = StObject.set(x, "GrowthType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrowthFactor(value: Percentage): Self = this.set("GrowthFactor", value.asInstanceOf[js.Any])
+    def setGrowthTypeUndefined: Self = StObject.set(x, "GrowthType", js.undefined)
     
     @scala.inline
-    def deleteGrowthFactor: Self = this.set("GrowthFactor", js.undefined)
+    def setPercentageComplete(value: Percentage): Self = StObject.set(x, "PercentageComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrowthType(value: GrowthType): Self = this.set("GrowthType", value.asInstanceOf[js.Any])
+    def setPercentageCompleteUndefined: Self = StObject.set(x, "PercentageComplete", js.undefined)
     
     @scala.inline
-    def deleteGrowthType: Self = this.set("GrowthType", js.undefined)
+    def setStartedAt(value: Iso8601DateTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentageComplete(value: Percentage): Self = this.set("PercentageComplete", value.asInstanceOf[js.Any])
+    def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     
     @scala.inline
-    def deletePercentageComplete: Self = this.set("PercentageComplete", js.undefined)
+    def setState(value: DeploymentState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedAt(value: Iso8601DateTime): Self = this.set("StartedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartedAt: Self = this.set("StartedAt", js.undefined)
-    
-    @scala.inline
-    def setState(value: DeploymentState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -6,6 +6,7 @@ import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.IConsensusNotifyPeerDisconnected
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,16 +22,18 @@ class ConsensusNotifyPeerDisconnected ()
   def this(properties: IConsensusNotifyPeerDisconnected) = this()
 }
 /* static members */
-@JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected")
-@js.native
-object ConsensusNotifyPeerDisconnected extends js.Object {
+object ConsensusNotifyPeerDisconnected {
   
   /**
     * Creates a new ConsensusNotifyPeerDisconnected instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ConsensusNotifyPeerDisconnected instance
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.create")
+  @js.native
   def create(): typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.create")
+  @js.native
   def create(properties: IConsensusNotifyPeerDisconnected): typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected = js.native
   
   /**
@@ -41,9 +44,17 @@ object ConsensusNotifyPeerDisconnected extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.decode")
+  @js.native
   def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.decode")
+  @js.native
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.decode")
+  @js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected = js.native
   
   /**
@@ -53,7 +64,11 @@ object ConsensusNotifyPeerDisconnected extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected = js.native
   
   /**
@@ -62,7 +77,11 @@ object ConsensusNotifyPeerDisconnected extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.encode")
+  @js.native
   def encode(message: IConsensusNotifyPeerDisconnected): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.encode")
+  @js.native
   def encode(message: IConsensusNotifyPeerDisconnected, writer: Writer): Writer = js.native
   
   /**
@@ -71,7 +90,11 @@ object ConsensusNotifyPeerDisconnected extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusNotifyPeerDisconnected): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusNotifyPeerDisconnected, writer: Writer): Writer = js.native
   
   /**
@@ -79,6 +102,8 @@ object ConsensusNotifyPeerDisconnected extends js.Object {
     * @param object Plain object
     * @returns ConsensusNotifyPeerDisconnected
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected = js.native
   
   /**
@@ -87,7 +112,11 @@ object ConsensusNotifyPeerDisconnected extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.toObject")
+  @js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.toObject")
+  @js.native
   def toObject(
     message: typings.sawtoothSdk.protobufMod.ConsensusNotifyPeerDisconnected,
     options: IConversionOptions
@@ -98,5 +127,7 @@ object ConsensusNotifyPeerDisconnected extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyPeerDisconnected.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

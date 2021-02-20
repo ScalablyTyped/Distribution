@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.XboxLive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait XboxLiveQualityOfServiceMeasurementStatus extends js.Object
+sealed trait XboxLiveQualityOfServiceMeasurementStatus extends StObject
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
 @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus")
 @js.native
-object XboxLiveQualityOfServiceMeasurementStatus extends js.Object {
+object XboxLiveQualityOfServiceMeasurementStatus extends StObject {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native

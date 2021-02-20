@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientMenuBase ()
   extends typings.devexpressWeb.ASPxClientMenuBase
-/* static members */
-@JSGlobal("ASPxClientMenuBase")
-@js.native
-object ASPxClientMenuBase extends js.Object {
+object ASPxClientMenuBase {
   
   /**
     * Returns a collection of client menu objects.
     */
+  /* static member */
+  @JSGlobal("ASPxClientMenuBase.GetMenuCollection")
+  @js.native
   def GetMenuCollection(): typings.devexpressWeb.ASPxClientMenuCollection = js.native
 }

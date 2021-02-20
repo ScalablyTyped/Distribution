@@ -3,16 +3,16 @@ package typings.devexpressUtils
 import typings.devexpressUtils.interfacesMod.IPoint
 import typings.devexpressUtils.interfacesMod.IRectangle
 import typings.devexpressUtils.pointMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/geometry/segment", JSImport.Namespace)
-@js.native
-object segmentMod extends js.Object {
+object segmentMod {
   
+  @JSImport("@devexpress/utils/lib/geometry/segment", "Segment")
   @js.native
-  class Segment[T /* <: Point */] protected () extends js.Object {
+  class Segment[T /* <: Point */] protected () extends StObject {
     def this(startPoint: T, endPoint: T) = this()
     
     val center: Point = js.native

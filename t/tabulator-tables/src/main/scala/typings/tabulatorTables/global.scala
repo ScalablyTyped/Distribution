@@ -2,15 +2,15 @@ package typings.tabulatorTables
 
 import typings.std.HTMLElement
 import typings.tabulatorTables.Tabulator.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   // Tabulator.prototype.(?!registerModule|helpers|_)\w+
+  @JSGlobal("Tabulator")
   @js.native
   class Tabulator protected ()
     extends typings.tabulatorTables.Tabulator {

@@ -1,12 +1,13 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "TemplatesApi")
 @js.native
-class TemplatesApi protected () extends js.Object {
+class TemplatesApi protected () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   def createCustomFields(accountId: String, templateId: String): js.Promise[CustomFields] = js.native

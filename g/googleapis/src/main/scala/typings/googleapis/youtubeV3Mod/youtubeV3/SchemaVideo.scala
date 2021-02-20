@@ -1,6 +1,7 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A video resource represents a YouTube video.
   */
 @js.native
-trait SchemaVideo extends js.Object {
+trait SchemaVideo extends StObject {
   
   /**
     * Age restriction details related to a video. This data can only be
@@ -135,126 +136,114 @@ object SchemaVideo {
   }
   
   @scala.inline
-  implicit class SchemaVideoOps[Self <: SchemaVideo] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoMutableBuilder[Self <: SchemaVideo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgeGating(value: SchemaVideoAgeGating): Self = StObject.set(x, "ageGating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeGatingUndefined: Self = StObject.set(x, "ageGating", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentDetails(value: SchemaVideoContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgeGating(value: SchemaVideoAgeGating): Self = this.set("ageGating", value.asInstanceOf[js.Any])
+    def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
     
     @scala.inline
-    def deleteAgeGating: Self = this.set("ageGating", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDetails(value: SchemaVideoContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    def setFileDetails(value: SchemaVideoFileDetails): Self = StObject.set(x, "fileDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setFileDetailsUndefined: Self = StObject.set(x, "fileDetails", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDetails(value: SchemaVideoFileDetails): Self = this.set("fileDetails", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFileDetails: Self = this.set("fileDetails", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLiveStreamingDetails(value: SchemaVideoLiveStreamingDetails): Self = StObject.set(x, "liveStreamingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLiveStreamingDetailsUndefined: Self = StObject.set(x, "liveStreamingDetails", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLocalizations(value: StringDictionary[SchemaVideoLocalization]): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveStreamingDetails(value: SchemaVideoLiveStreamingDetails): Self = this.set("liveStreamingDetails", value.asInstanceOf[js.Any])
+    def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
     
     @scala.inline
-    def deleteLiveStreamingDetails: Self = this.set("liveStreamingDetails", js.undefined)
+    def setMonetizationDetails(value: SchemaVideoMonetizationDetails): Self = StObject.set(x, "monetizationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizations(value: StringDictionary[SchemaVideoLocalization]): Self = this.set("localizations", value.asInstanceOf[js.Any])
+    def setMonetizationDetailsUndefined: Self = StObject.set(x, "monetizationDetails", js.undefined)
     
     @scala.inline
-    def deleteLocalizations: Self = this.set("localizations", js.undefined)
+    def setPlayer(value: SchemaVideoPlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonetizationDetails(value: SchemaVideoMonetizationDetails): Self = this.set("monetizationDetails", value.asInstanceOf[js.Any])
+    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
     
     @scala.inline
-    def deleteMonetizationDetails: Self = this.set("monetizationDetails", js.undefined)
+    def setProcessingDetails(value: SchemaVideoProcessingDetails): Self = StObject.set(x, "processingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayer(value: SchemaVideoPlayer): Self = this.set("player", value.asInstanceOf[js.Any])
+    def setProcessingDetailsUndefined: Self = StObject.set(x, "processingDetails", js.undefined)
     
     @scala.inline
-    def deletePlayer: Self = this.set("player", js.undefined)
+    def setProjectDetails(value: SchemaVideoProjectDetails): Self = StObject.set(x, "projectDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingDetails(value: SchemaVideoProcessingDetails): Self = this.set("processingDetails", value.asInstanceOf[js.Any])
+    def setProjectDetailsUndefined: Self = StObject.set(x, "projectDetails", js.undefined)
     
     @scala.inline
-    def deleteProcessingDetails: Self = this.set("processingDetails", js.undefined)
+    def setRecordingDetails(value: SchemaVideoRecordingDetails): Self = StObject.set(x, "recordingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectDetails(value: SchemaVideoProjectDetails): Self = this.set("projectDetails", value.asInstanceOf[js.Any])
+    def setRecordingDetailsUndefined: Self = StObject.set(x, "recordingDetails", js.undefined)
     
     @scala.inline
-    def deleteProjectDetails: Self = this.set("projectDetails", js.undefined)
+    def setSnippet(value: SchemaVideoSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordingDetails(value: SchemaVideoRecordingDetails): Self = this.set("recordingDetails", value.asInstanceOf[js.Any])
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     @scala.inline
-    def deleteRecordingDetails: Self = this.set("recordingDetails", js.undefined)
+    def setStatistics(value: SchemaVideoStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippet(value: SchemaVideoSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    def setStatus(value: SchemaVideoStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistics(value: SchemaVideoStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setSuggestions(value: SchemaVideoSuggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: SchemaVideoStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTopicDetails(value: SchemaVideoTopicDetails): Self = StObject.set(x, "topicDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestions(value: SchemaVideoSuggestions): Self = this.set("suggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
-    
-    @scala.inline
-    def setTopicDetails(value: SchemaVideoTopicDetails): Self = this.set("topicDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicDetails: Self = this.set("topicDetails", js.undefined)
+    def setTopicDetailsUndefined: Self = StObject.set(x, "topicDetails", js.undefined)
   }
 }

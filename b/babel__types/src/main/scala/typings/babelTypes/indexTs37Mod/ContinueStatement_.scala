@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.ContinueStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,27 +29,15 @@ object ContinueStatement_ {
   }
   
   @scala.inline
-  implicit class ContinueStatement_Ops[Self <: ContinueStatement_] (val x: Self) extends AnyVal {
+  implicit class ContinueStatement_MutableBuilder[Self <: ContinueStatement_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelNull: Self = StObject.set(x, "label", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: ContinueStatement): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: Identifier_): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabelNull: Self = this.set("label", null)
+    def setType(value: ContinueStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

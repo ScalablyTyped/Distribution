@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SizeConstraintSetUpdate extends js.Object {
+trait SizeConstraintSetUpdate extends StObject {
   
   /**
     * Specify INSERT to add a SizeConstraintSetUpdate to a SizeConstraintSet. Use DELETE to remove a SizeConstraintSetUpdate from a SizeConstraintSet.
@@ -26,24 +27,12 @@ object SizeConstraintSetUpdate {
   }
   
   @scala.inline
-  implicit class SizeConstraintSetUpdateOps[Self <: SizeConstraintSetUpdate] (val x: Self) extends AnyVal {
+  implicit class SizeConstraintSetUpdateMutableBuilder[Self <: SizeConstraintSetUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: ChangeAction): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizeConstraint(value: SizeConstraint): Self = this.set("SizeConstraint", value.asInstanceOf[js.Any])
+    def setSizeConstraint(value: SizeConstraint): Self = StObject.set(x, "SizeConstraint", value.asInstanceOf[js.Any])
   }
 }

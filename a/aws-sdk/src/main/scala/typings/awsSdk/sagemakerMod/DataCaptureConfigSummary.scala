@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataCaptureConfigSummary extends js.Object {
+trait DataCaptureConfigSummary extends StObject {
   
   /**
     * 
@@ -47,33 +48,21 @@ object DataCaptureConfigSummary {
   }
   
   @scala.inline
-  implicit class DataCaptureConfigSummaryOps[Self <: DataCaptureConfigSummary] (val x: Self) extends AnyVal {
+  implicit class DataCaptureConfigSummaryMutableBuilder[Self <: DataCaptureConfigSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureStatus(value: CaptureStatus): Self = StObject.set(x, "CaptureStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentSamplingPercentage(value: SamplingPercentage): Self = StObject.set(x, "CurrentSamplingPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationS3Uri(value: DestinationS3Uri): Self = StObject.set(x, "DestinationS3Uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureStatus(value: CaptureStatus): Self = this.set("CaptureStatus", value.asInstanceOf[js.Any])
+    def setEnableCapture(value: EnableCapture): Self = StObject.set(x, "EnableCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSamplingPercentage(value: SamplingPercentage): Self = this.set("CurrentSamplingPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestinationS3Uri(value: DestinationS3Uri): Self = this.set("DestinationS3Uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnableCapture(value: EnableCapture): Self = this.set("EnableCapture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
   }
 }

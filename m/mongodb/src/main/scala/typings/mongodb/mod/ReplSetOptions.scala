@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,48 +38,36 @@ object ReplSetOptions {
   }
   
   @scala.inline
-  implicit class ReplSetOptionsOps[Self <: ReplSetOptions] (val x: Self) extends AnyVal {
+  implicit class ReplSetOptionsMutableBuilder[Self <: ReplSetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectWithNoPrimary(value: Boolean): Self = StObject.set(x, "connectWithNoPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectWithNoPrimaryUndefined: Self = StObject.set(x, "connectWithNoPrimary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxStalenessSeconds(value: scala.Double): Self = StObject.set(x, "maxStalenessSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectWithNoPrimary(value: Boolean): Self = this.set("connectWithNoPrimary", value.asInstanceOf[js.Any])
+    def setMaxStalenessSecondsUndefined: Self = StObject.set(x, "maxStalenessSeconds", js.undefined)
     
     @scala.inline
-    def deleteConnectWithNoPrimary: Self = this.set("connectWithNoPrimary", js.undefined)
+    def setReplicaSet(value: String): Self = StObject.set(x, "replicaSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxStalenessSeconds(value: scala.Double): Self = this.set("maxStalenessSeconds", value.asInstanceOf[js.Any])
+    def setReplicaSetUndefined: Self = StObject.set(x, "replicaSet", js.undefined)
     
     @scala.inline
-    def deleteMaxStalenessSeconds: Self = this.set("maxStalenessSeconds", js.undefined)
+    def setSecondaryAcceptableLatencyMS(value: scala.Double): Self = StObject.set(x, "secondaryAcceptableLatencyMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaSet(value: String): Self = this.set("replicaSet", value.asInstanceOf[js.Any])
+    def setSecondaryAcceptableLatencyMSUndefined: Self = StObject.set(x, "secondaryAcceptableLatencyMS", js.undefined)
     
     @scala.inline
-    def deleteReplicaSet: Self = this.set("replicaSet", js.undefined)
+    def setSocketOptions(value: SocketOptions): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryAcceptableLatencyMS(value: scala.Double): Self = this.set("secondaryAcceptableLatencyMS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryAcceptableLatencyMS: Self = this.set("secondaryAcceptableLatencyMS", js.undefined)
-    
-    @scala.inline
-    def setSocketOptions(value: SocketOptions): Self = this.set("socketOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocketOptions: Self = this.set("socketOptions", js.undefined)
+    def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
   }
 }

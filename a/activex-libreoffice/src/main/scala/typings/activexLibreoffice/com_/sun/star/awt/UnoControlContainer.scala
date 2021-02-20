@@ -2,13 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessible
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleContext
 import typings.activexLibreoffice.com_.sun.star.container.XContainer
 import typings.activexLibreoffice.com_.sun.star.container.XContainerListener
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** specifies an abstract control which contains other controls. */
 @js.native
 trait UnoControlContainer
-  extends XControl
-     with XWindow
-     with XView
-     with XAccessible
+  extends UnoControl
      with XUnoControlContainer
      with XControlContainer
      with XContainer

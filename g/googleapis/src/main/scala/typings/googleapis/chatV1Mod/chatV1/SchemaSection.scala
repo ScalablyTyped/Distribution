@@ -1,5 +1,6 @@
 package typings.googleapis.chatV1Mod.chatV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (e.g. float).
   */
 @js.native
-trait SchemaSection extends js.Object {
+trait SchemaSection extends StObject {
   
   /**
     * The header of the section, text formatted supported.
@@ -32,33 +33,21 @@ object SchemaSection {
   }
   
   @scala.inline
-  implicit class SchemaSectionOps[Self <: SchemaSection] (val x: Self) extends AnyVal {
+  implicit class SchemaSectionMutableBuilder[Self <: SchemaSection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidgets(value: js.Array[SchemaWidgetMarkup]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
-    
-    @scala.inline
-    def setWidgetsVarargs(value: SchemaWidgetMarkup*): Self = this.set("widgets", js.Array(value :_*))
-    
-    @scala.inline
-    def setWidgets(value: js.Array[SchemaWidgetMarkup]): Self = this.set("widgets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidgets: Self = this.set("widgets", js.undefined)
+    def setWidgetsVarargs(value: SchemaWidgetMarkup*): Self = StObject.set(x, "widgets", js.Array(value :_*))
   }
 }

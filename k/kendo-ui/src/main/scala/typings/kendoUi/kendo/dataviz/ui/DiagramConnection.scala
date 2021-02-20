@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagramConnection extends js.Object {
+trait DiagramConnection extends StObject {
   
   var content: js.UndefOr[DiagramConnectionContent] = js.native
   
@@ -42,99 +43,87 @@ object DiagramConnection {
   }
   
   @scala.inline
-  implicit class DiagramConnectionOps[Self <: DiagramConnection] (val x: Self) extends AnyVal {
+  implicit class DiagramConnectionMutableBuilder[Self <: DiagramConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: DiagramConnectionContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditable(value: Boolean | DiagramConnectionEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: DiagramConnectionContent): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setEndCap(value: String | DiagramConnectionEndCap): Self = StObject.set(x, "endCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean | DiagramConnectionEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setEndCapUndefined: Self = StObject.set(x, "endCap", js.undefined)
     
     @scala.inline
-    def deleteEditable: Self = this.set("editable", js.undefined)
+    def setFrom(value: String | DiagramConnectionFrom): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCap(value: String | DiagramConnectionEndCap): Self = this.set("endCap", value.asInstanceOf[js.Any])
+    def setFromConnector(value: String): Self = StObject.set(x, "fromConnector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndCap: Self = this.set("endCap", js.undefined)
+    def setFromConnectorUndefined: Self = StObject.set(x, "fromConnector", js.undefined)
     
     @scala.inline
-    def setFrom(value: String | DiagramConnectionFrom): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setHover(value: DiagramConnectionHover): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromConnector(value: String): Self = this.set("fromConnector", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteFromConnector: Self = this.set("fromConnector", js.undefined)
+    def setPoints(value: js.Array[DiagramConnectionPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: DiagramConnectionHover): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setPointsVarargs(value: DiagramConnectionPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: DiagramConnectionPoint*): Self = this.set("points", js.Array(value :_*))
+    def setSelection(value: DiagramConnectionSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[DiagramConnectionPoint]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setStartCap(value: String | DiagramConnectionStartCap): Self = StObject.set(x, "startCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelection(value: DiagramConnectionSelection): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setStartCapUndefined: Self = StObject.set(x, "startCap", js.undefined)
     
     @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
+    def setStroke(value: DiagramConnectionStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartCap(value: String | DiagramConnectionStartCap): Self = this.set("startCap", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteStartCap: Self = this.set("startCap", js.undefined)
+    def setTo(value: String | DiagramConnectionTo): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStroke(value: DiagramConnectionStroke): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    def setToConnector(value: String): Self = StObject.set(x, "toConnector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setToConnectorUndefined: Self = StObject.set(x, "toConnector", js.undefined)
     
     @scala.inline
-    def setTo(value: String | DiagramConnectionTo): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToConnector(value: String): Self = this.set("toConnector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToConnector: Self = this.set("toConnector", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

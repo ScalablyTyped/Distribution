@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * metadata.
   */
 @js.native
-trait SchemaValue extends js.Object {
+trait SchemaValue extends StObject {
   
   /**
     * An array value. Cannot contain another array value. A `Value` instance
@@ -94,96 +95,84 @@ object SchemaValue {
   }
   
   @scala.inline
-  implicit class SchemaValueOps[Self <: SchemaValue] (val x: Self) extends AnyVal {
+  implicit class SchemaValueMutableBuilder[Self <: SchemaValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayValue(value: SchemaArrayValue): Self = StObject.set(x, "arrayValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayValueUndefined: Self = StObject.set(x, "arrayValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlobValue(value: String): Self = StObject.set(x, "blobValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayValue(value: SchemaArrayValue): Self = this.set("arrayValue", value.asInstanceOf[js.Any])
+    def setBlobValueUndefined: Self = StObject.set(x, "blobValue", js.undefined)
     
     @scala.inline
-    def deleteArrayValue: Self = this.set("arrayValue", js.undefined)
+    def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlobValue(value: String): Self = this.set("blobValue", value.asInstanceOf[js.Any])
+    def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
     @scala.inline
-    def deleteBlobValue: Self = this.set("blobValue", js.undefined)
+    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooleanValue(value: Boolean): Self = this.set("booleanValue", value.asInstanceOf[js.Any])
+    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
     @scala.inline
-    def deleteBooleanValue: Self = this.set("booleanValue", js.undefined)
+    def setEntityValue(value: SchemaEntity): Self = StObject.set(x, "entityValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleValue(value: Double): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    def setEntityValueUndefined: Self = StObject.set(x, "entityValue", js.undefined)
     
     @scala.inline
-    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    def setExcludeFromIndexes(value: Boolean): Self = StObject.set(x, "excludeFromIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityValue(value: SchemaEntity): Self = this.set("entityValue", value.asInstanceOf[js.Any])
+    def setExcludeFromIndexesUndefined: Self = StObject.set(x, "excludeFromIndexes", js.undefined)
     
     @scala.inline
-    def deleteEntityValue: Self = this.set("entityValue", js.undefined)
+    def setGeoPointValue(value: SchemaLatLng): Self = StObject.set(x, "geoPointValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeFromIndexes(value: Boolean): Self = this.set("excludeFromIndexes", value.asInstanceOf[js.Any])
+    def setGeoPointValueUndefined: Self = StObject.set(x, "geoPointValue", js.undefined)
     
     @scala.inline
-    def deleteExcludeFromIndexes: Self = this.set("excludeFromIndexes", js.undefined)
+    def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoPointValue(value: SchemaLatLng): Self = this.set("geoPointValue", value.asInstanceOf[js.Any])
+    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
     @scala.inline
-    def deleteGeoPointValue: Self = this.set("geoPointValue", js.undefined)
+    def setKeyValue(value: SchemaKey): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegerValue(value: String): Self = this.set("integerValue", value.asInstanceOf[js.Any])
+    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
     
     @scala.inline
-    def deleteIntegerValue: Self = this.set("integerValue", js.undefined)
+    def setMeaning(value: Double): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyValue(value: SchemaKey): Self = this.set("keyValue", value.asInstanceOf[js.Any])
+    def setMeaningUndefined: Self = StObject.set(x, "meaning", js.undefined)
     
     @scala.inline
-    def deleteKeyValue: Self = this.set("keyValue", js.undefined)
+    def setNullValue(value: String): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeaning(value: Double): Self = this.set("meaning", value.asInstanceOf[js.Any])
+    def setNullValueUndefined: Self = StObject.set(x, "nullValue", js.undefined)
     
     @scala.inline
-    def deleteMeaning: Self = this.set("meaning", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullValue(value: String): Self = this.set("nullValue", value.asInstanceOf[js.Any])
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
     @scala.inline
-    def deleteNullValue: Self = this.set("nullValue", js.undefined)
+    def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
-    
-    @scala.inline
-    def setTimestampValue(value: String): Self = this.set("timestampValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampValue: Self = this.set("timestampValue", js.undefined)
+    def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
   }
 }

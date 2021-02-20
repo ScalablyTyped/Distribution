@@ -4,6 +4,7 @@ import typings.std.Intl.DateTimeFormatOptions
 import typings.std.stdStrings.default
 import typings.std.stdStrings.number
 import typings.std.stdStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

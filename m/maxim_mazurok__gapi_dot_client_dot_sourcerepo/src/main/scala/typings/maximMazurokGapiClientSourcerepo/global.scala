@@ -3,27 +3,29 @@ package typings.maximMazurokGapiClientSourcerepo
 import typings.maximMazurokGapiClientSourcerepo.gapi.client.sourcerepo.ProjectsResource
 import typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.sourcerepo
 import typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Cloud Source Repositories API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: sourcerepo, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: sourcerepo, version: v1, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object sourcerepo extends js.Object {
+      object sourcerepo {
         
+        @JSGlobal("gapi.client.sourcerepo.projects")
+        @js.native
         val projects: ProjectsResource = js.native
       }
     }

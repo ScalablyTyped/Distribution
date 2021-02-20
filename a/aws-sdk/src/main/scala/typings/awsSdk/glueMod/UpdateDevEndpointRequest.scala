@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDevEndpointRequest extends js.Object {
+trait UpdateDevEndpointRequest extends StObject {
   
   /**
     * The map of arguments to add the map of arguments used to configure the DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""     "GLUE_PYTHON_VERSION": "3"     "GLUE_PYTHON_VERSION": "2"    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
@@ -56,72 +57,60 @@ object UpdateDevEndpointRequest {
   }
   
   @scala.inline
-  implicit class UpdateDevEndpointRequestOps[Self <: UpdateDevEndpointRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDevEndpointRequestMutableBuilder[Self <: UpdateDevEndpointRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddArguments(value: MapValue): Self = StObject.set(x, "AddArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddArgumentsUndefined: Self = StObject.set(x, "AddArguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddPublicKeys(value: PublicKeysList): Self = StObject.set(x, "AddPublicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointName(value: GenericString): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    def setAddPublicKeysUndefined: Self = StObject.set(x, "AddPublicKeys", js.undefined)
     
     @scala.inline
-    def setAddArguments(value: MapValue): Self = this.set("AddArguments", value.asInstanceOf[js.Any])
+    def setAddPublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "AddPublicKeys", js.Array(value :_*))
     
     @scala.inline
-    def deleteAddArguments: Self = this.set("AddArguments", js.undefined)
+    def setCustomLibraries(value: DevEndpointCustomLibraries): Self = StObject.set(x, "CustomLibraries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddPublicKeysVarargs(value: GenericString*): Self = this.set("AddPublicKeys", js.Array(value :_*))
+    def setCustomLibrariesUndefined: Self = StObject.set(x, "CustomLibraries", js.undefined)
     
     @scala.inline
-    def setAddPublicKeys(value: PublicKeysList): Self = this.set("AddPublicKeys", value.asInstanceOf[js.Any])
+    def setDeleteArguments(value: StringList): Self = StObject.set(x, "DeleteArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddPublicKeys: Self = this.set("AddPublicKeys", js.undefined)
+    def setDeleteArgumentsUndefined: Self = StObject.set(x, "DeleteArguments", js.undefined)
     
     @scala.inline
-    def setCustomLibraries(value: DevEndpointCustomLibraries): Self = this.set("CustomLibraries", value.asInstanceOf[js.Any])
+    def setDeleteArgumentsVarargs(value: GenericString*): Self = StObject.set(x, "DeleteArguments", js.Array(value :_*))
     
     @scala.inline
-    def deleteCustomLibraries: Self = this.set("CustomLibraries", js.undefined)
+    def setDeletePublicKeys(value: PublicKeysList): Self = StObject.set(x, "DeletePublicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteArgumentsVarargs(value: GenericString*): Self = this.set("DeleteArguments", js.Array(value :_*))
+    def setDeletePublicKeysUndefined: Self = StObject.set(x, "DeletePublicKeys", js.undefined)
     
     @scala.inline
-    def setDeleteArguments(value: StringList): Self = this.set("DeleteArguments", value.asInstanceOf[js.Any])
+    def setDeletePublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "DeletePublicKeys", js.Array(value :_*))
     
     @scala.inline
-    def deleteDeleteArguments: Self = this.set("DeleteArguments", js.undefined)
+    def setEndpointName(value: GenericString): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletePublicKeysVarargs(value: GenericString*): Self = this.set("DeletePublicKeys", js.Array(value :_*))
+    def setPublicKey(value: GenericString): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletePublicKeys(value: PublicKeysList): Self = this.set("DeletePublicKeys", value.asInstanceOf[js.Any])
+    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
     
     @scala.inline
-    def deleteDeletePublicKeys: Self = this.set("DeletePublicKeys", js.undefined)
+    def setUpdateEtlLibraries(value: BooleanValue): Self = StObject.set(x, "UpdateEtlLibraries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKey(value: GenericString): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
-    
-    @scala.inline
-    def setUpdateEtlLibraries(value: BooleanValue): Self = this.set("UpdateEtlLibraries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateEtlLibraries: Self = this.set("UpdateEtlLibraries", js.undefined)
+    def setUpdateEtlLibrariesUndefined: Self = StObject.set(x, "UpdateEtlLibraries", js.undefined)
   }
 }

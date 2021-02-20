@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MagneticStripeReaderTrackErrorType extends js.Object
+sealed trait MagneticStripeReaderTrackErrorType extends StObject
 /** Defines the constants that indicates the track error type. */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType")
 @js.native
-object MagneticStripeReaderTrackErrorType extends js.Object {
+object MagneticStripeReaderTrackErrorType extends StObject {
   
   /** An end sentinel error. */
   @js.native

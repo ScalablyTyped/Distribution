@@ -3,6 +3,7 @@ package typings.nodemailer.smtpConnectionMod
 import typings.nodemailer.nodemailerStrings.LOGIN
 import typings.nodemailer.nodemailerStrings.Login_
 import typings.nodemailer.nodemailerStrings.login__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,24 +25,12 @@ object AuthenticationTypeLogin {
   }
   
   @scala.inline
-  implicit class AuthenticationTypeLoginOps[Self <: AuthenticationTypeLogin] (val x: Self) extends AnyVal {
+  implicit class AuthenticationTypeLoginMutableBuilder[Self <: AuthenticationTypeLogin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setType(value: login__ | Login_ | LOGIN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: login__ | Login_ | LOGIN): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

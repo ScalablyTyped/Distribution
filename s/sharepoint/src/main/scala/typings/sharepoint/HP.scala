@@ -1,11 +1,12 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HP extends js.Object {
+trait HP extends StObject {
   
   def Close(): Unit = js.native
   
@@ -105,99 +106,87 @@ object HP {
   }
   
   @scala.inline
-  implicit class HPOps[Self <: HP] (val x: Self) extends AnyVal {
+  implicit class HPMutableBuilder[Self <: HP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonActions(value: String): Self = StObject.set(x, "CommonActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommonBody(value: String): Self = StObject.set(x, "CommonBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("Close", js.Any.fromFunction0(value))
+    def setCommonHeader(value: String): Self = StObject.set(x, "CommonHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonActions(value: String): Self = this.set("CommonActions", value.asInstanceOf[js.Any])
+    def setFollow(value: () => Unit): Self = StObject.set(x, "Follow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCommonBody(value: String): Self = this.set("CommonBody", value.asInstanceOf[js.Any])
+    def setGetAuthorsHtml(value: () => String): Self = StObject.set(x, "GetAuthorsHtml", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCommonHeader(value: String): Self = this.set("CommonHeader", value.asInstanceOf[js.Any])
+    def setGetBodySectionContent(value: () => String): Self = StObject.set(x, "GetBodySectionContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFollow(value: () => Unit): Self = this.set("Follow", js.Any.fromFunction0(value))
+    def setGetBodySectionHeading(value: () => String): Self = StObject.set(x, "GetBodySectionHeading", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAuthorsHtml(value: () => String): Self = this.set("GetAuthorsHtml", js.Any.fromFunction0(value))
+    def setGetDateString(value: () => String): Self = StObject.set(x, "getDateString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBodySectionContent(value: () => String): Self = this.set("GetBodySectionContent", js.Any.fromFunction0(value))
+    def setGetEmailLink(value: (String, String, String, String) => String): Self = StObject.set(x, "GetEmailLink", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetBodySectionHeading(value: () => String): Self = this.set("GetBodySectionHeading", js.Any.fromFunction0(value))
+    def setGetFriendlyNameForFileType(value: js.Any => String): Self = StObject.set(x, "GetFriendlyNameForFileType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEmailLink(value: (String, String, String, String) => String): Self = this.set("GetEmailLink", js.Any.fromFunction4(value))
+    def setGetNowDateTimeDifference(value: () => String): Self = StObject.set(x, "GetNowDateTimeDifference", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFriendlyNameForFileType(value: js.Any => String): Self = this.set("GetFriendlyNameForFileType", js.Any.fromFunction1(value))
+    def setGetPeopleFollowingControl(value: () => String): Self = StObject.set(x, "GetPeopleFollowingControl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNowDateTimeDifference(value: () => String): Self = this.set("GetNowDateTimeDifference", js.Any.fromFunction0(value))
+    def setGetStringFromDate(value: () => String): Self = StObject.set(x, "getStringFromDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPeopleFollowingControl(value: () => String): Self = this.set("GetPeopleFollowingControl", js.Any.fromFunction0(value))
+    def setHide(value: () => Unit): Self = StObject.set(x, "Hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("Hide", js.Any.fromFunction0(value))
+    def setIds(value: HPIds): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("Init", js.Any.fromFunction0(value))
+    def setInit(value: () => Unit): Self = StObject.set(x, "Init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitPostLoad(value: () => Unit): Self = this.set("InitPostLoad", js.Any.fromFunction0(value))
+    def setInitPostLoad(value: () => Unit): Self = StObject.set(x, "InitPostLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsNumeric(value: () => Boolean): Self = this.set("IsNumeric", js.Any.fromFunction0(value))
+    def setIsNumeric(value: () => Boolean): Self = StObject.set(x, "IsNumeric", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResize(value: () => Unit): Self = this.set("Resize", js.Any.fromFunction0(value))
+    def setLoadSiteViewer(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "loadSiteViewer", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setSetPreviewOnHideCallback(value: () => Unit): Self = this.set("SetPreviewOnHideCallback", js.Any.fromFunction0(value))
+    def setLoadViewer(value: (String, String, String, String, String, String) => Unit): Self = StObject.set(x, "loadViewer", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setSetWidth(value: Double => Unit): Self = this.set("SetWidth", js.Any.fromFunction1(value))
+    def setPostActionEventName(value: String): Self = StObject.set(x, "postActionEventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: () => Unit): Self = this.set("Show", js.Any.fromFunction0(value))
+    def setResize(value: () => Unit): Self = StObject.set(x, "Resize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setViewDuplicates(value: () => Boolean): Self = this.set("ViewDuplicates", js.Any.fromFunction0(value))
+    def setSetPreviewOnHideCallback(value: () => Unit): Self = StObject.set(x, "SetPreviewOnHideCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDateString(value: () => String): Self = this.set("getDateString", js.Any.fromFunction0(value))
+    def setSetWidth(value: Double => Unit): Self = StObject.set(x, "SetWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStringFromDate(value: () => String): Self = this.set("getStringFromDate", js.Any.fromFunction0(value))
+    def setShow(value: () => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIds(value: HPIds): Self = this.set("ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadSiteViewer(value: (String, String, String, String, String) => Unit): Self = this.set("loadSiteViewer", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setLoadViewer(value: (String, String, String, String, String, String) => Unit): Self = this.set("loadViewer", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setPostActionEventName(value: String): Self = this.set("postActionEventName", value.asInstanceOf[js.Any])
+    def setViewDuplicates(value: () => Boolean): Self = StObject.set(x, "ViewDuplicates", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeightRpx extends js.Object {
+trait HeightRpx extends StObject {
   
   /** 输入框高度(px) */
   var height: Double = js.native
@@ -28,30 +29,18 @@ object HeightRpx {
   }
   
   @scala.inline
-  implicit class HeightRpxOps[Self <: HeightRpx] (val x: Self) extends AnyVal {
+  implicit class HeightRpxMutableBuilder[Self <: HeightRpx] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightRpx(value: Double): Self = StObject.set(x, "heightRpx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeightRpx(value: Double): Self = this.set("heightRpx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineCount(value: Double): Self = this.set("lineCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicequotasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestedServiceQuotaChange extends js.Object {
+trait RequestedServiceQuotaChange extends StObject {
   
   /**
     * The case Id for the service quota increase request.
@@ -86,102 +87,90 @@ object RequestedServiceQuotaChange {
   }
   
   @scala.inline
-  implicit class RequestedServiceQuotaChangeOps[Self <: RequestedServiceQuotaChange] (val x: Self) extends AnyVal {
+  implicit class RequestedServiceQuotaChangeMutableBuilder[Self <: RequestedServiceQuotaChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseId(value: CustomerServiceEngagementId): Self = StObject.set(x, "CaseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseIdUndefined: Self = StObject.set(x, "CaseId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated(value: DateTime): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseId(value: CustomerServiceEngagementId): Self = this.set("CaseId", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
     @scala.inline
-    def deleteCaseId: Self = this.set("CaseId", js.undefined)
+    def setDesiredValue(value: QuotaValue): Self = StObject.set(x, "DesiredValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: DateTime): Self = this.set("Created", value.asInstanceOf[js.Any])
+    def setDesiredValueUndefined: Self = StObject.set(x, "DesiredValue", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("Created", js.undefined)
+    def setGlobalQuota(value: GlobalQuota): Self = StObject.set(x, "GlobalQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredValue(value: QuotaValue): Self = this.set("DesiredValue", value.asInstanceOf[js.Any])
+    def setGlobalQuotaUndefined: Self = StObject.set(x, "GlobalQuota", js.undefined)
     
     @scala.inline
-    def deleteDesiredValue: Self = this.set("DesiredValue", js.undefined)
+    def setId(value: RequestId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalQuota(value: GlobalQuota): Self = this.set("GlobalQuota", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteGlobalQuota: Self = this.set("GlobalQuota", js.undefined)
+    def setLastUpdated(value: DateTime): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: RequestId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setQuotaArn(value: QuotaArn): Self = StObject.set(x, "QuotaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: DateTime): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    def setQuotaArnUndefined: Self = StObject.set(x, "QuotaArn", js.undefined)
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    def setQuotaCode(value: QuotaCode): Self = StObject.set(x, "QuotaCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaArn(value: QuotaArn): Self = this.set("QuotaArn", value.asInstanceOf[js.Any])
+    def setQuotaCodeUndefined: Self = StObject.set(x, "QuotaCode", js.undefined)
     
     @scala.inline
-    def deleteQuotaArn: Self = this.set("QuotaArn", js.undefined)
+    def setQuotaName(value: QuotaName): Self = StObject.set(x, "QuotaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaCode(value: QuotaCode): Self = this.set("QuotaCode", value.asInstanceOf[js.Any])
+    def setQuotaNameUndefined: Self = StObject.set(x, "QuotaName", js.undefined)
     
     @scala.inline
-    def deleteQuotaCode: Self = this.set("QuotaCode", js.undefined)
+    def setRequester(value: Requester): Self = StObject.set(x, "Requester", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaName(value: QuotaName): Self = this.set("QuotaName", value.asInstanceOf[js.Any])
+    def setRequesterUndefined: Self = StObject.set(x, "Requester", js.undefined)
     
     @scala.inline
-    def deleteQuotaName: Self = this.set("QuotaName", js.undefined)
+    def setServiceCode(value: ServiceCode): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequester(value: Requester): Self = this.set("Requester", value.asInstanceOf[js.Any])
+    def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
     
     @scala.inline
-    def deleteRequester: Self = this.set("Requester", js.undefined)
+    def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceCode(value: ServiceCode): Self = this.set("ServiceCode", value.asInstanceOf[js.Any])
+    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
     
     @scala.inline
-    def deleteServiceCode: Self = this.set("ServiceCode", js.undefined)
+    def setStatus(value: RequestStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: ServiceName): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+    def setUnit(value: QuotaUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: RequestStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: QuotaUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaNodeGroupAutoscalingPolicy extends js.Object {
+trait SchemaNodeGroupAutoscalingPolicy extends StObject {
   
   var maxSize: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object SchemaNodeGroupAutoscalingPolicy {
   }
   
   @scala.inline
-  implicit class SchemaNodeGroupAutoscalingPolicyOps[Self <: SchemaNodeGroupAutoscalingPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaNodeGroupAutoscalingPolicyMutableBuilder[Self <: SchemaNodeGroupAutoscalingPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
-    
-    @scala.inline
-    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
   }
 }

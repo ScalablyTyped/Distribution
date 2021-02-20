@@ -1,5 +1,6 @@
 package typings.googleapis.securitycenterV1Mod.securitycenterV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Result containing the Finding and its StateChange.
   */
 @js.native
-trait SchemaListFindingsResult extends js.Object {
+trait SchemaListFindingsResult extends StObject {
   
   /**
     * Finding matching the search request.
@@ -29,30 +30,18 @@ object SchemaListFindingsResult {
   }
   
   @scala.inline
-  implicit class SchemaListFindingsResultOps[Self <: SchemaListFindingsResult] (val x: Self) extends AnyVal {
+  implicit class SchemaListFindingsResultMutableBuilder[Self <: SchemaListFindingsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinding(value: SchemaFinding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinding(value: SchemaFinding): Self = this.set("finding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinding: Self = this.set("finding", js.undefined)
-    
-    @scala.inline
-    def setStateChange(value: String): Self = this.set("stateChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateChange: Self = this.set("stateChange", js.undefined)
+    def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
   }
 }

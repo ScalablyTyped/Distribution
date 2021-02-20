@@ -1,11 +1,12 @@
 package typings.nodeZendesk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaginablePayload extends js.Object {
+trait PaginablePayload extends StObject {
   
   var count: Double = js.native
   
@@ -22,33 +23,21 @@ object PaginablePayload {
   }
   
   @scala.inline
-  implicit class PaginablePayloadOps[Self <: PaginablePayload] (val x: Self) extends AnyVal {
+  implicit class PaginablePayloadMutableBuilder[Self <: PaginablePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNext_page(value: Double): Self = StObject.set(x, "next_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNext_pageNull: Self = StObject.set(x, "next_page", null)
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setPrevious_page(value: Double): Self = StObject.set(x, "previous_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_page(value: Double): Self = this.set("next_page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext_pageNull: Self = this.set("next_page", null)
-    
-    @scala.inline
-    def setPrevious_page(value: Double): Self = this.set("previous_page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevious_pageNull: Self = this.set("previous_page", null)
+    def setPrevious_pageNull: Self = StObject.set(x, "previous_page", null)
   }
 }

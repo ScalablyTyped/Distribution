@@ -1,12 +1,13 @@
 package typings.pixiSpine.global.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.BlendMode")
 @js.native
-object BlendMode extends js.Object {
+object BlendMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiSpine.PIXI.spine.core.BlendMode with Double] = js.native

@@ -3,6 +3,7 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.PartialLifetimes
 import typings.baiduApp.anon.PartialPageLifetimes
 import typings.baiduApp.anon.PartialaddGlobalClassbool
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* Inlined parent std.Partial<baidu-app.swan.Lifetimes> */
 @js.native
-trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, Props] extends js.Object {
+trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, Props] extends StObject {
   
   var attached: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -93,35 +94,13 @@ object ComponentOptions {
   }
   
   @scala.inline
-  implicit class ComponentOptionsOps[Self <: ComponentOptions[_, _, _, _], Instance /* <: Component[Data, Props] */, Data, Methods, Props] (val x: Self with (ComponentOptions[Instance, Data, Methods, Props])) extends AnyVal {
+  implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[_, _, _, _], Instance /* <: Component[Data, Props] */, Data, Methods, Props] (val x: Self with (ComponentOptions[Instance, Data, Methods, Props])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttached(value: () => Unit): Self = this.set("attached", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteAttached: Self = this.set("attached", js.undefined)
-    
-    @scala.inline
-    def setBehaviorsVarargs(
-      value: ((ComponentOptions[
-          Component[js.Object, js.Object], 
-          DefaultData[Component[js.Object, js.Object]], 
-          DefaultMethods[Component[js.Object, js.Object]], 
-          PropsDefinition[DefaultProps]
-        ]) | String)*
-    ): Self = this.set("behaviors", js.Array(value :_*))
+    def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
     
     @scala.inline
     def setBehaviors(
@@ -133,78 +112,88 @@ object ComponentOptions {
             PropsDefinition[DefaultProps]
           ]) | String
         ]
-    ): Self = this.set("behaviors", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBehaviors: Self = this.set("behaviors", js.undefined)
+    def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
     
     @scala.inline
-    def setCreated(value: () => Unit): Self = this.set("created", js.Any.fromFunction0(value))
+    def setBehaviorsVarargs(
+      value: ((ComponentOptions[
+          Component[js.Object, js.Object], 
+          DefaultData[Component[js.Object, js.Object]], 
+          DefaultMethods[Component[js.Object, js.Object]], 
+          PropsDefinition[DefaultProps]
+        ]) | String)*
+    ): Self = StObject.set(x, "behaviors", js.Array(value :_*))
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: Data): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetached(value: () => Unit): Self = this.set("detached", js.Any.fromFunction0(value))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteDetached: Self = this.set("detached", js.undefined)
+    def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExternalClassesVarargs(value: String*): Self = this.set("externalClasses", js.Array(value :_*))
+    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
     @scala.inline
-    def setExternalClasses(value: js.Array[String]): Self = this.set("externalClasses", value.asInstanceOf[js.Any])
+    def setExternalClasses(value: js.Array[String]): Self = StObject.set(x, "externalClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalClasses: Self = this.set("externalClasses", js.undefined)
+    def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
     
     @scala.inline
-    def setLifetimes(value: PartialLifetimes): Self = this.set("lifetimes", value.asInstanceOf[js.Any])
+    def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
     
     @scala.inline
-    def deleteLifetimes: Self = this.set("lifetimes", js.undefined)
+    def setLifetimes(value: PartialLifetimes): Self = StObject.set(x, "lifetimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethods(value: Methods): Self = this.set("methods", value.asInstanceOf[js.Any])
+    def setLifetimesUndefined: Self = StObject.set(x, "lifetimes", js.undefined)
     
     @scala.inline
-    def deleteMethods: Self = this.set("methods", js.undefined)
+    def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoved(value: () => Unit): Self = this.set("moved", js.Any.fromFunction0(value))
+    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
     @scala.inline
-    def deleteMoved: Self = this.set("moved", js.undefined)
+    def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOptions(value: PartialaddGlobalClassbool): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptions(value: PartialaddGlobalClassbool): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageLifetimes(value: PartialPageLifetimes): Self = this.set("pageLifetimes", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deletePageLifetimes: Self = this.set("pageLifetimes", js.undefined)
+    def setPageLifetimes(value: PartialPageLifetimes): Self = StObject.set(x, "pageLifetimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: Props): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setPageLifetimesUndefined: Self = StObject.set(x, "pageLifetimes", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setProperties(value: Props): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReady(value: () => Unit): Self = this.set("ready", js.Any.fromFunction0(value))
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
   }
 }

@@ -1,13 +1,16 @@
 package typings.ionicReact
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/react/dist/types/utils/generateId", JSImport.Namespace)
-@js.native
-object generateIdMod extends js.Object {
+object generateIdMod {
   
+  @JSImport("@ionic/react/dist/types/utils/generateId", "generateId")
+  @js.native
   def generateId(): String = js.native
+  @JSImport("@ionic/react/dist/types/utils/generateId", "generateId")
+  @js.native
   def generateId(`type`: String): String = js.native
 }

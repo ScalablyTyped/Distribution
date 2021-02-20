@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 // tslint:disable-next-line: no-empty-interface
 @js.native
-trait DataTable extends js.Object
+trait DataTable extends StObject

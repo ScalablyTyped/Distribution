@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetProfileRequest extends js.Object {
+trait GetProfileRequest extends StObject {
   
   /**
     *  The format of the returned profiling data. The format maps to the Accept and Content-Type headers of the HTTP request. You can specify one of the following: or the default .   &lt;ul&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;application/json&lt;/code&gt; — standard JSON format &lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;application/x-amzn-ion&lt;/code&gt; — the Amazon Ion data format. For more information, see &lt;a href=&quot;http://amzn.github.io/ion-docs/&quot;&gt;Amazon Ion&lt;/a&gt;. &lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; 
@@ -46,51 +47,39 @@ object GetProfileRequest {
   }
   
   @scala.inline
-  implicit class GetProfileRequestOps[Self <: GetProfileRequest] (val x: Self) extends AnyVal {
+  implicit class GetProfileRequestMutableBuilder[Self <: GetProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def setAccept(value: String): Self = this.set("accept", value.asInstanceOf[js.Any])
+    def setMaxDepth(value: MaxDepth): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccept: Self = this.set("accept", js.undefined)
+    def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def setMaxDepth(value: MaxDepth): Self = this.set("maxDepth", value.asInstanceOf[js.Any])
+    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxDepth: Self = this.set("maxDepth", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

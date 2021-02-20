@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object SupportingWidgetDefaults {
   }
   
   @scala.inline
-  implicit class SupportingWidgetDefaultsOps[Self <: SupportingWidgetDefaults] (val x: Self) extends AnyVal {
+  implicit class SupportingWidgetDefaultsMutableBuilder[Self <: SupportingWidgetDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatureForm(value: SupportingWidgetDefaultsFeatureForm): Self = StObject.set(x, "featureForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeatureFormUndefined: Self = StObject.set(x, "featureForm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureTemplates(value: SupportingWidgetDefaultsFeatureTemplates): Self = StObject.set(x, "featureTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureForm(value: SupportingWidgetDefaultsFeatureForm): Self = this.set("featureForm", value.asInstanceOf[js.Any])
+    def setFeatureTemplatesUndefined: Self = StObject.set(x, "featureTemplates", js.undefined)
     
     @scala.inline
-    def deleteFeatureForm: Self = this.set("featureForm", js.undefined)
+    def setSketch(value: SupportingWidgetDefaultsSketch): Self = StObject.set(x, "sketch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureTemplates(value: SupportingWidgetDefaultsFeatureTemplates): Self = this.set("featureTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatureTemplates: Self = this.set("featureTemplates", js.undefined)
-    
-    @scala.inline
-    def setSketch(value: SupportingWidgetDefaultsSketch): Self = this.set("sketch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSketch: Self = this.set("sketch", js.undefined)
+    def setSketchUndefined: Self = StObject.set(x, "sketch", js.undefined)
   }
 }

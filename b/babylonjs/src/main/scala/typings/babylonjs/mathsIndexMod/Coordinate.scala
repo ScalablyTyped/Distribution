@@ -1,12 +1,13 @@
 package typings.babylonjs.mathsIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/index", "Coordinate")
 @js.native
-object Coordinate extends js.Object {
+object Coordinate extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.mathAxisMod.Coordinate with Double] = js.native

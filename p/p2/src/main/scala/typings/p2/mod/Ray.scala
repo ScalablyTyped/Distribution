@@ -1,12 +1,13 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Ray")
 @js.native
-class Ray () extends js.Object {
+class Ray () extends StObject {
   def this(options: RayOptions) = this()
   
   def callback(result: RaycastResult): Unit = js.native
@@ -36,13 +37,27 @@ class Ray () extends js.Object {
   def update(): Unit = js.native
 }
 /* static members */
-@JSImport("p2", "Ray")
-@js.native
-object Ray extends js.Object {
+object Ray {
   
-  var ALL: Double = js.native
+  @JSImport("p2", "Ray")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var ANY: Double = js.native
+  @JSImport("p2", "Ray.ALL")
+  @js.native
+  def ALL: Double = js.native
+  @scala.inline
+  def ALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
   
-  var CLOSEST: Double = js.native
+  @JSImport("p2", "Ray.ANY")
+  @js.native
+  def ANY: Double = js.native
+  @scala.inline
+  def ANY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("p2", "Ray.CLOSEST")
+  @js.native
+  def CLOSEST: Double = js.native
+  @scala.inline
+  def CLOSEST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSEST")(x.asInstanceOf[js.Any])
 }

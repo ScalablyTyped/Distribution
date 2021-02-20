@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("leaflet", "FeatureGroup")
 @js.native
 class FeatureGroup_[P] () extends LayerGroup_[P] {
+  def this(layers: js.Array[Layer]) = this()
+  def this(layers: js.UndefOr[scala.Nothing], options: LayerOptions) = this()
+  def this(layers: js.Array[Layer], options: LayerOptions) = this()
   
   /**
     * Brings the layer group to the top [sic] of all other layers

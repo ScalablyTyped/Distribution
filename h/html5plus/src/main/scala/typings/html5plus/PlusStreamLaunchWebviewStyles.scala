@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
   */
 @js.native
-trait PlusStreamLaunchWebviewStyles extends js.Object {
+trait PlusStreamLaunchWebviewStyles extends StObject {
   
   /**
     * 流应用首页是否阻塞网络图片的加载
@@ -57,42 +58,30 @@ object PlusStreamLaunchWebviewStyles {
   }
   
   @scala.inline
-  implicit class PlusStreamLaunchWebviewStylesOps[Self <: PlusStreamLaunchWebviewStyles] (val x: Self) extends AnyVal {
+  implicit class PlusStreamLaunchWebviewStylesMutableBuilder[Self <: PlusStreamLaunchWebviewStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockNetworkImage(value: Boolean): Self = StObject.set(x, "blockNetworkImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockNetworkImageUndefined: Self = StObject.set(x, "blockNetworkImage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockNetworkImage(value: Boolean): Self = this.set("blockNetworkImage", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteBlockNetworkImage: Self = this.set("blockNetworkImage", js.undefined)
+    def setLaunch_path(value: String): Self = StObject.set(x, "launch_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLaunch_pathUndefined: Self = StObject.set(x, "launch_path", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunch_path(value: String): Self = this.set("launch_path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunch_path: Self = this.set("launch_path", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

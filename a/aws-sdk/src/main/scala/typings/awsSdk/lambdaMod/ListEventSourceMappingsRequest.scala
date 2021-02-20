@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListEventSourceMappingsRequest extends js.Object {
+trait ListEventSourceMappingsRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the event source.    Amazon Kinesis - The ARN of the data stream or a stream consumer.    Amazon DynamoDB Streams - The ARN of the stream.    Amazon Simple Queue Service - The ARN of the queue.    Amazon Managed Streaming for Apache Kafka - The ARN of the cluster.  
@@ -36,42 +37,30 @@ object ListEventSourceMappingsRequest {
   }
   
   @scala.inline
-  implicit class ListEventSourceMappingsRequestOps[Self <: ListEventSourceMappingsRequest] (val x: Self) extends AnyVal {
+  implicit class ListEventSourceMappingsRequestMutableBuilder[Self <: ListEventSourceMappingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSourceArn(value: Arn): Self = this.set("EventSourceArn", value.asInstanceOf[js.Any])
+    def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
     
     @scala.inline
-    def deleteEventSourceArn: Self = this.set("EventSourceArn", js.undefined)
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: FunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteFunctionName: Self = this.set("FunctionName", js.undefined)
+    def setMaxItems(value: MaxListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setMaxItems(value: MaxListItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

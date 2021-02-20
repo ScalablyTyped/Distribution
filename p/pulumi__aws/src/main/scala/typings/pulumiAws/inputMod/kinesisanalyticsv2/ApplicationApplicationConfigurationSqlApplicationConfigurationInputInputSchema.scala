@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesisanalyticsv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema extends js.Object {
+trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema extends StObject {
   
   /**
     * Describes the mapping of each data element in the streaming source to the corresponding column in the in-application stream.
@@ -51,26 +52,7 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputS
   }
   
   @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaOps[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecordColumnsVarargs(
-      value: (Input[
-          ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn
-        ])*
-    ): Self = this.set("recordColumns", js.Array(value :_*))
+  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setRecordColumns(
@@ -81,19 +63,26 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputS
             ]
           ]
         ]
-    ): Self = this.set("recordColumns", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "recordColumns", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRecordColumnsVarargs(
+      value: (Input[
+          ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn
+        ])*
+    ): Self = StObject.set(x, "recordColumns", js.Array(value :_*))
+    
+    @scala.inline
+    def setRecordEncoding(value: Input[String]): Self = StObject.set(x, "recordEncoding", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRecordEncodingUndefined: Self = StObject.set(x, "recordEncoding", js.undefined)
     
     @scala.inline
     def setRecordFormat(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat
         ]
-    ): Self = this.set("recordFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordEncoding(value: Input[String]): Self = this.set("recordEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordEncoding: Self = this.set("recordEncoding", js.undefined)
+    ): Self = StObject.set(x, "recordFormat", value.asInstanceOf[js.Any])
   }
 }

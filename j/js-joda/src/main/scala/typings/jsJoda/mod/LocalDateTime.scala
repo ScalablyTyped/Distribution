@@ -1,5 +1,6 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,22 +124,49 @@ class LocalDateTime protected () extends ChronoLocalDateTime {
   
   def year(): Double = js.native
 }
-/* static members */
-@JSImport("js-joda", "LocalDateTime")
-@js.native
-object LocalDateTime extends js.Object {
+object LocalDateTime {
   
-  var MAX: LocalDateTime = js.native
+  @JSImport("js-joda", "LocalDateTime")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var MIN: LocalDateTime = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.MAX")
+  @js.native
+  def MAX: LocalDateTime = js.native
+  @scala.inline
+  def MAX_=(x: LocalDateTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.MIN")
+  @js.native
+  def MIN: LocalDateTime = js.native
+  @scala.inline
+  def MIN_=(x: LocalDateTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.from")
+  @js.native
   def from(temporal: TemporalAccessor): LocalDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.now")
+  @js.native
   def now(): LocalDateTime = js.native
+  @JSImport("js-joda", "LocalDateTime.now")
+  @js.native
   def now(clockOrZone: Clock): LocalDateTime = js.native
+  @JSImport("js-joda", "LocalDateTime.now")
+  @js.native
   def now(clockOrZone: ZoneId): LocalDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.of")
+  @js.native
   def of(date: LocalDate, time: LocalTime): LocalDateTime = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.of")
+  @js.native
   def of(
     year: js.UndefOr[Double],
     month: js.UndefOr[Month | Double],
@@ -149,12 +177,28 @@ object LocalDateTime extends js.Object {
     nanoSecond: js.UndefOr[Double]
   ): LocalDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.ofEpochSecond")
+  @js.native
   def ofEpochSecond(epochSecond: Double, nanoOfSecond: Double, offset: ZoneOffset): LocalDateTime = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.ofEpochSecond")
+  @js.native
   def ofEpochSecond(epochSecond: Double, offset: ZoneOffset): LocalDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.ofInstant")
+  @js.native
   def ofInstant(instant: Instant): LocalDateTime = js.native
+  @JSImport("js-joda", "LocalDateTime.ofInstant")
+  @js.native
   def ofInstant(instant: Instant, zoneId: ZoneId): LocalDateTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalDateTime.parse")
+  @js.native
   def parse(text: String): LocalDateTime = js.native
+  @JSImport("js-joda", "LocalDateTime.parse")
+  @js.native
   def parse(text: String, formatter: DateTimeFormatter): LocalDateTime = js.native
 }

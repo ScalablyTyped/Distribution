@@ -1,12 +1,13 @@
 package typings.materializeCss.M
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<ChipsOptions> * / any */ @js.native
-trait Chips extends js.Object {
+trait Chips extends StObject {
   
   /**
     * Add chip to input

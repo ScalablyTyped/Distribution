@@ -1,11 +1,12 @@
 package typings.miniprogram.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Header extends js.Object {
+trait Header extends StObject {
   
   var data: String = js.native
   
@@ -22,27 +23,15 @@ object Header {
   }
   
   @scala.inline
-  implicit class HeaderOps[Self <: Header] (val x: Self) extends AnyVal {
+  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeader(value: js.Any): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: String): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

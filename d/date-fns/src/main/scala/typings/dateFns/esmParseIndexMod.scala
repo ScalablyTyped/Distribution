@@ -2,25 +2,31 @@ package typings.dateFns
 
 import typings.dateFns.anon.UseAdditionalWeekYearTokensWeekStartsOn
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/parse/index", JSImport.Namespace)
-@js.native
-object esmParseIndexMod extends js.Object {
+object esmParseIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/esm/parse/index", JSImport.Default)
+    @js.native
     def apply(dateString: String, formatString: String, referenceDate: Double): Date = js.native
+    @JSImport("date-fns/esm/parse/index", JSImport.Default)
+    @js.native
     def apply(
       dateString: String,
       formatString: String,
       referenceDate: Double,
       options: UseAdditionalWeekYearTokensWeekStartsOn
     ): Date = js.native
+    @JSImport("date-fns/esm/parse/index", JSImport.Default)
+    @js.native
     def apply(dateString: String, formatString: String, referenceDate: Date): Date = js.native
+    @JSImport("date-fns/esm/parse/index", JSImport.Default)
+    @js.native
     def apply(
       dateString: String,
       formatString: String,

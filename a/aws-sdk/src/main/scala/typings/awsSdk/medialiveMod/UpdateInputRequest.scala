@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateInputRequest extends js.Object {
+trait UpdateInputRequest extends StObject {
   
   /**
     * Destination settings for PUSH type inputs.
@@ -60,78 +61,66 @@ object UpdateInputRequest {
   }
   
   @scala.inline
-  implicit class UpdateInputRequestOps[Self <: UpdateInputRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateInputRequestMutableBuilder[Self <: UpdateInputRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinations(value: listOfInputDestinationRequest): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationsVarargs(value: InputDestinationRequest*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
     @scala.inline
-    def setInputId(value: string): Self = this.set("InputId", value.asInstanceOf[js.Any])
+    def setInputDevices(value: listOfInputDeviceRequest): Self = StObject.set(x, "InputDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationsVarargs(value: InputDestinationRequest*): Self = this.set("Destinations", js.Array(value :_*))
+    def setInputDevicesUndefined: Self = StObject.set(x, "InputDevices", js.undefined)
     
     @scala.inline
-    def setDestinations(value: listOfInputDestinationRequest): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    def setInputDevicesVarargs(value: InputDeviceRequest*): Self = StObject.set(x, "InputDevices", js.Array(value :_*))
     
     @scala.inline
-    def deleteDestinations: Self = this.set("Destinations", js.undefined)
+    def setInputId(value: string): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDevicesVarargs(value: InputDeviceRequest*): Self = this.set("InputDevices", js.Array(value :_*))
+    def setInputSecurityGroups(value: listOfString): Self = StObject.set(x, "InputSecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDevices(value: listOfInputDeviceRequest): Self = this.set("InputDevices", value.asInstanceOf[js.Any])
+    def setInputSecurityGroupsUndefined: Self = StObject.set(x, "InputSecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteInputDevices: Self = this.set("InputDevices", js.undefined)
+    def setInputSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "InputSecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setInputSecurityGroupsVarargs(value: string*): Self = this.set("InputSecurityGroups", js.Array(value :_*))
+    def setMediaConnectFlows(value: listOfMediaConnectFlowRequest): Self = StObject.set(x, "MediaConnectFlows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSecurityGroups(value: listOfString): Self = this.set("InputSecurityGroups", value.asInstanceOf[js.Any])
+    def setMediaConnectFlowsUndefined: Self = StObject.set(x, "MediaConnectFlows", js.undefined)
     
     @scala.inline
-    def deleteInputSecurityGroups: Self = this.set("InputSecurityGroups", js.undefined)
+    def setMediaConnectFlowsVarargs(value: MediaConnectFlowRequest*): Self = StObject.set(x, "MediaConnectFlows", js.Array(value :_*))
     
     @scala.inline
-    def setMediaConnectFlowsVarargs(value: MediaConnectFlowRequest*): Self = this.set("MediaConnectFlows", js.Array(value :_*))
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaConnectFlows(value: listOfMediaConnectFlowRequest): Self = this.set("MediaConnectFlows", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMediaConnectFlows: Self = this.set("MediaConnectFlows", js.undefined)
+    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSources(value: listOfInputSourceRequest): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
-    
-    @scala.inline
-    def setSourcesVarargs(value: InputSourceRequest*): Self = this.set("Sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: listOfInputSourceRequest): Self = this.set("Sources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSources: Self = this.set("Sources", js.undefined)
+    def setSourcesVarargs(value: InputSourceRequest*): Self = StObject.set(x, "Sources", js.Array(value :_*))
   }
 }

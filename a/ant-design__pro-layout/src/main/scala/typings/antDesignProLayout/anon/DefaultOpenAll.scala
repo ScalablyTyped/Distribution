@@ -1,11 +1,12 @@
 package typings.antDesignProLayout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultOpenAll extends js.Object {
+trait DefaultOpenAll extends StObject {
   
   var defaultOpenAll: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object DefaultOpenAll {
   }
   
   @scala.inline
-  implicit class DefaultOpenAllOps[Self <: DefaultOpenAll] (val x: Self) extends AnyVal {
+  implicit class DefaultOpenAllMutableBuilder[Self <: DefaultOpenAll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultOpenAll(value: Boolean): Self = StObject.set(x, "defaultOpenAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultOpenAllUndefined: Self = StObject.set(x, "defaultOpenAll", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOpenAll(value: Boolean): Self = this.set("defaultOpenAll", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteDefaultOpenAll: Self = this.set("defaultOpenAll", js.undefined)
+    def setLocale(value: Boolean): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: Boolean): Self = this.set("loading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
-    
-    @scala.inline
-    def setLocale(value: Boolean): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAttachedGroupPoliciesRequest extends js.Object {
+trait ListAttachedGroupPoliciesRequest extends StObject {
   
   /**
     * The name (friendly name, not ARN) of the group to list attached policies for. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
@@ -36,39 +37,27 @@ object ListAttachedGroupPoliciesRequest {
   }
   
   @scala.inline
-  implicit class ListAttachedGroupPoliciesRequestOps[Self <: ListAttachedGroupPoliciesRequest] (val x: Self) extends AnyVal {
+  implicit class ListAttachedGroupPoliciesRequestMutableBuilder[Self <: ListAttachedGroupPoliciesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def setGroupName(value: groupNameType): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setPathPrefix(value: policyPathType): Self = StObject.set(x, "PathPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: maxItemsType): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
-    
-    @scala.inline
-    def setPathPrefix(value: policyPathType): Self = this.set("PathPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathPrefix: Self = this.set("PathPrefix", js.undefined)
+    def setPathPrefixUndefined: Self = StObject.set(x, "PathPrefix", js.undefined)
   }
 }

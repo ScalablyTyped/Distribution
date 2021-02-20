@@ -5,6 +5,7 @@ import typings.reactNativeMaps.anon.Animated
 import typings.reactNativeMaps.anon.Duration
 import typings.reactNativeMaps.anon.NorthEast
 import typings.reactNativeMaps.anon.PartialCamera
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

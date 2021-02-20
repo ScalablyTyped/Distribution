@@ -1,11 +1,12 @@
 package typings.officeJs.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContentControlType extends js.Object
+sealed trait ContentControlType extends StObject
 /**
   *
   * Specifies supported content control types and subtypes.
@@ -14,7 +15,7 @@ sealed trait ContentControlType extends js.Object
   */
 @JSGlobal("Word.ContentControlType")
 @js.native
-object ContentControlType extends js.Object {
+object ContentControlType extends StObject {
   
   @js.native
   sealed trait buildingBlockGallery extends ContentControlType

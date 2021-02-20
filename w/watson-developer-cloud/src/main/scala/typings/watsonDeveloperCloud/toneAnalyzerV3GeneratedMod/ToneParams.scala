@@ -4,6 +4,7 @@ import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Acc
 import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentLanguage
 import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentType
 import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** Parameters for the `tone` operation. */
 @js.native
-trait ToneParams extends js.Object {
+trait ToneParams extends StObject {
   
   /** The desired language of the response. For two-character arguments, regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. You can use different languages for **Content-Language** and **Accept-Language**. */
   var accept_language: js.UndefOr[AcceptLanguage | String] = js.native
@@ -46,66 +47,54 @@ object ToneParams {
   }
   
   @scala.inline
-  implicit class ToneParamsOps[Self <: ToneParams] (val x: Self) extends AnyVal {
+  implicit class ToneParamsMutableBuilder[Self <: ToneParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent_language(value: ContentLanguage | String): Self = StObject.set(x, "content_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTone_input(value: ToneInput | String): Self = this.set("tone_input", value.asInstanceOf[js.Any])
+    def setContent_languageUndefined: Self = StObject.set(x, "content_language", js.undefined)
     
     @scala.inline
-    def setAccept_language(value: AcceptLanguage | String): Self = this.set("accept_language", value.asInstanceOf[js.Any])
+    def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccept_language: Self = this.set("accept_language", js.undefined)
+    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
     @scala.inline
-    def setContent_language(value: ContentLanguage | String): Self = this.set("content_language", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent_language: Self = this.set("content_language", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setContent_type(value: ContentType | String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent_type: Self = this.set("content_type", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setSentences(value: Boolean): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
     @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
+    def setTone_input(value: ToneInput | String): Self = StObject.set(x, "tone_input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setTones(value: js.Array[String | Tones]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentences(value: Boolean): Self = this.set("sentences", value.asInstanceOf[js.Any])
+    def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
     
     @scala.inline
-    def deleteSentences: Self = this.set("sentences", js.undefined)
-    
-    @scala.inline
-    def setTonesVarargs(value: (String | Tones)*): Self = this.set("tones", js.Array(value :_*))
-    
-    @scala.inline
-    def setTones(value: js.Array[String | Tones]): Self = this.set("tones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTones: Self = this.set("tones", js.undefined)
+    def setTonesVarargs(value: (String | Tones)*): Self = StObject.set(x, "tones", js.Array(value :_*))
   }
 }

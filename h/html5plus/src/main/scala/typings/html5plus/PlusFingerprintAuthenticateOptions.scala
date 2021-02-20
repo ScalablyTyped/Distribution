@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
   */
 @js.native
-trait PlusFingerprintAuthenticateOptions extends js.Object {
+trait PlusFingerprintAuthenticateOptions extends StObject {
   
   /**
     * 在指纹识别过程中显示在界面上的提示信息
@@ -30,24 +31,12 @@ object PlusFingerprintAuthenticateOptions {
   }
   
   @scala.inline
-  implicit class PlusFingerprintAuthenticateOptionsOps[Self <: PlusFingerprintAuthenticateOptions] (val x: Self) extends AnyVal {
+  implicit class PlusFingerprintAuthenticateOptionsMutableBuilder[Self <: PlusFingerprintAuthenticateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

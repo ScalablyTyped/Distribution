@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeadersSortedEventUIParam extends js.Object {
+trait HeadersSortedEventUIParam extends StObject {
   
   /**
     * Gets an array of the level names and sort directions that were actually applied to the table view.
@@ -31,42 +32,30 @@ object HeadersSortedEventUIParam {
   }
   
   @scala.inline
-  implicit class HeadersSortedEventUIParamOps[Self <: HeadersSortedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class HeadersSortedEventUIParamMutableBuilder[Self <: HeadersSortedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppliedLevelSortDirections(value: js.Array[_]): Self = StObject.set(x, "appliedLevelSortDirections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppliedLevelSortDirectionsUndefined: Self = StObject.set(x, "appliedLevelSortDirections", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppliedLevelSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "appliedLevelSortDirections", js.Array(value :_*))
     
     @scala.inline
-    def setAppliedLevelSortDirectionsVarargs(value: js.Any*): Self = this.set("appliedLevelSortDirections", js.Array(value :_*))
+    def setLevelSortDirections(value: js.Array[_]): Self = StObject.set(x, "levelSortDirections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliedLevelSortDirections(value: js.Array[_]): Self = this.set("appliedLevelSortDirections", value.asInstanceOf[js.Any])
+    def setLevelSortDirectionsUndefined: Self = StObject.set(x, "levelSortDirections", js.undefined)
     
     @scala.inline
-    def deleteAppliedLevelSortDirections: Self = this.set("appliedLevelSortDirections", js.undefined)
+    def setLevelSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "levelSortDirections", js.Array(value :_*))
     
     @scala.inline
-    def setLevelSortDirectionsVarargs(value: js.Any*): Self = this.set("levelSortDirections", js.Array(value :_*))
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelSortDirections(value: js.Array[_]): Self = this.set("levelSortDirections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevelSortDirections: Self = this.set("levelSortDirections", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

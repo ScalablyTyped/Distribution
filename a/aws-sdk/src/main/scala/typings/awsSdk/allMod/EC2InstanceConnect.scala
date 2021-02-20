@@ -2,6 +2,7 @@ package typings.awsSdk.allMod
 
 import typings.awsSdk.ec2instanceconnectMod.ClientConfiguration
 import typings.awsSdk.ec2instanceconnectMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,17 +1,18 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fork-ts-checker-webpack-plugin/lib/profile/Performance", JSImport.Namespace)
-@js.native
-object performanceMod extends js.Object {
+object performanceMod {
   
+  @JSImport("fork-ts-checker-webpack-plugin/lib/profile/Performance", "createPerformance")
+  @js.native
   def createPerformance(): Performance = js.native
   
   @js.native
-  trait Performance extends js.Object {
+  trait Performance extends StObject {
     
     def disable(): Unit = js.native
     

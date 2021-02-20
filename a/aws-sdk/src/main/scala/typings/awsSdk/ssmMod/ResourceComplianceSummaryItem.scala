@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceComplianceSummaryItem extends js.Object {
+trait ResourceComplianceSummaryItem extends StObject {
   
   /**
     * The compliance type.
@@ -56,66 +57,54 @@ object ResourceComplianceSummaryItem {
   }
   
   @scala.inline
-  implicit class ResourceComplianceSummaryItemOps[Self <: ResourceComplianceSummaryItem] (val x: Self) extends AnyVal {
+  implicit class ResourceComplianceSummaryItemMutableBuilder[Self <: ResourceComplianceSummaryItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceType(value: ComplianceTypeName): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompliantSummary(value: CompliantSummary): Self = StObject.set(x, "CompliantSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceType(value: ComplianceTypeName): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    def setCompliantSummaryUndefined: Self = StObject.set(x, "CompliantSummary", js.undefined)
     
     @scala.inline
-    def deleteComplianceType: Self = this.set("ComplianceType", js.undefined)
+    def setExecutionSummary(value: ComplianceExecutionSummary): Self = StObject.set(x, "ExecutionSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliantSummary(value: CompliantSummary): Self = this.set("CompliantSummary", value.asInstanceOf[js.Any])
+    def setExecutionSummaryUndefined: Self = StObject.set(x, "ExecutionSummary", js.undefined)
     
     @scala.inline
-    def deleteCompliantSummary: Self = this.set("CompliantSummary", js.undefined)
+    def setNonCompliantSummary(value: NonCompliantSummary): Self = StObject.set(x, "NonCompliantSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionSummary(value: ComplianceExecutionSummary): Self = this.set("ExecutionSummary", value.asInstanceOf[js.Any])
+    def setNonCompliantSummaryUndefined: Self = StObject.set(x, "NonCompliantSummary", js.undefined)
     
     @scala.inline
-    def deleteExecutionSummary: Self = this.set("ExecutionSummary", js.undefined)
+    def setOverallSeverity(value: ComplianceSeverity): Self = StObject.set(x, "OverallSeverity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonCompliantSummary(value: NonCompliantSummary): Self = this.set("NonCompliantSummary", value.asInstanceOf[js.Any])
+    def setOverallSeverityUndefined: Self = StObject.set(x, "OverallSeverity", js.undefined)
     
     @scala.inline
-    def deleteNonCompliantSummary: Self = this.set("NonCompliantSummary", js.undefined)
+    def setResourceId(value: ComplianceResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverallSeverity(value: ComplianceSeverity): Self = this.set("OverallSeverity", value.asInstanceOf[js.Any])
+    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
     @scala.inline
-    def deleteOverallSeverity: Self = this.set("OverallSeverity", js.undefined)
+    def setResourceType(value: ComplianceResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ComplianceResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
     @scala.inline
-    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    def setStatus(value: ComplianceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ComplianceResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ComplianceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

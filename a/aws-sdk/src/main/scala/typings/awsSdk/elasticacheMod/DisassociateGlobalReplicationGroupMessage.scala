@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateGlobalReplicationGroupMessage extends js.Object {
+trait DisassociateGlobalReplicationGroupMessage extends StObject {
   
   /**
     * The name of the Global Datastore
@@ -31,27 +32,15 @@ object DisassociateGlobalReplicationGroupMessage {
   }
   
   @scala.inline
-  implicit class DisassociateGlobalReplicationGroupMessageOps[Self <: DisassociateGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  implicit class DisassociateGlobalReplicationGroupMessageMutableBuilder[Self <: DisassociateGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplicationGroupRegion(value: String): Self = this.set("ReplicationGroupRegion", value.asInstanceOf[js.Any])
+    def setReplicationGroupRegion(value: String): Self = StObject.set(x, "ReplicationGroupRegion", value.asInstanceOf[js.Any])
   }
 }

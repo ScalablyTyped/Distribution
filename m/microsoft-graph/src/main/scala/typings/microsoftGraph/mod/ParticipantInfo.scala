@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParticipantInfo extends js.Object {
+trait ParticipantInfo extends StObject {
   
   /**
     * The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
@@ -40,60 +41,48 @@ object ParticipantInfo {
   }
   
   @scala.inline
-  implicit class ParticipantInfoOps[Self <: ParticipantInfo] (val x: Self) extends AnyVal {
+  implicit class ParticipantInfoMutableBuilder[Self <: ParticipantInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCode(value: NullableOption[String]): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCodeNull: Self = StObject.set(x, "countryCode", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def setCountryCode(value: NullableOption[String]): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setEndpointType(value: NullableOption[EndpointType]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setEndpointTypeNull: Self = StObject.set(x, "endpointType", null)
     
     @scala.inline
-    def setCountryCodeNull: Self = this.set("countryCode", null)
+    def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
     
     @scala.inline
-    def setEndpointType(value: NullableOption[EndpointType]): Self = this.set("endpointType", value.asInstanceOf[js.Any])
+    def setIdentity(value: IdentitySet): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndpointType: Self = this.set("endpointType", js.undefined)
+    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
     @scala.inline
-    def setEndpointTypeNull: Self = this.set("endpointType", null)
+    def setLanguageId(value: NullableOption[String]): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentity(value: IdentitySet): Self = this.set("identity", value.asInstanceOf[js.Any])
+    def setLanguageIdNull: Self = StObject.set(x, "languageId", null)
     
     @scala.inline
-    def deleteIdentity: Self = this.set("identity", js.undefined)
+    def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
     
     @scala.inline
-    def setLanguageId(value: NullableOption[String]): Self = this.set("languageId", value.asInstanceOf[js.Any])
+    def setRegion(value: NullableOption[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguageId: Self = this.set("languageId", js.undefined)
+    def setRegionNull: Self = StObject.set(x, "region", null)
     
     @scala.inline
-    def setLanguageIdNull: Self = this.set("languageId", null)
-    
-    @scala.inline
-    def setRegion(value: NullableOption[String]): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
-    
-    @scala.inline
-    def setRegionNull: Self = this.set("region", null)
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

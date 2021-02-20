@@ -7,13 +7,14 @@ import typings.semanticUiSidebar.SemanticUI.Sidebar.ErrorSettings
 import typings.semanticUiSidebar.SemanticUI.Sidebar.RegExpSettings
 import typings.semanticUiSidebar.SemanticUI.Sidebar.SelectorSettings
 import typings.semanticUiSidebar.semanticUiSidebarStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl, keyof semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImpl extends js.Object {
+trait PartialPickImplkeyofImpl extends StObject {
   
   var className: js.UndefOr[ClassNameSettings] = js.native
   
@@ -80,186 +81,174 @@ object PartialPickImplkeyofImpl {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplOps[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplMutableBuilder[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: ClassNameSettings): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setContext(value: String | JQuery): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteClosable: Self = this.set("closable", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String | JQuery): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setDefaultTransition(value: DefaultTransitionSettings): Self = StObject.set(x, "defaultTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDefaultTransitionUndefined: Self = StObject.set(x, "defaultTransition", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setDelaySetup(value: Boolean): Self = StObject.set(x, "delaySetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTransition(value: DefaultTransitionSettings): Self = this.set("defaultTransition", value.asInstanceOf[js.Any])
+    def setDelaySetupUndefined: Self = StObject.set(x, "delaySetup", js.undefined)
     
     @scala.inline
-    def deleteDefaultTransition: Self = this.set("defaultTransition", js.undefined)
+    def setDimPage(value: Boolean): Self = StObject.set(x, "dimPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelaySetup(value: Boolean): Self = this.set("delaySetup", value.asInstanceOf[js.Any])
+    def setDimPageUndefined: Self = StObject.set(x, "dimPage", js.undefined)
     
     @scala.inline
-    def deleteDelaySetup: Self = this.set("delaySetup", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimPage(value: Boolean): Self = this.set("dimPage", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDimPage: Self = this.set("dimPage", js.undefined)
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ErrorSettings): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setMobileTransition(value: String): Self = StObject.set(x, "mobileTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusive(value: Boolean): Self = this.set("exclusive", value.asInstanceOf[js.Any])
+    def setMobileTransitionUndefined: Self = StObject.set(x, "mobileTransition", js.undefined)
     
     @scala.inline
-    def deleteExclusive: Self = this.set("exclusive", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileTransition(value: String): Self = this.set("mobileTransition", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMobileTransition: Self = this.set("mobileTransition", js.undefined)
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOnChange(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setOnHidden(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onChange", value.asInstanceOf[js.Any])
+    def setOnHiddenUndefined: Self = StObject.set(x, "onHidden", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnHide(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHidden(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onHidden", value.asInstanceOf[js.Any])
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteOnHidden: Self = this.set("onHidden", js.undefined)
+    def setOnShow(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHide(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onHide", value.asInstanceOf[js.Any])
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setOnVisible(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShow(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onShow", value.asInstanceOf[js.Any])
+    def setOnVisibleUndefined: Self = StObject.set(x, "onVisible", js.undefined)
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnVisible(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onVisible", value.asInstanceOf[js.Any])
+    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
     @scala.inline
-    def deleteOnVisible: Self = this.set("onVisible", js.undefined)
+    def setRegExp(value: RegExpSettings): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformance(value: Boolean): Self = this.set("performance", value.asInstanceOf[js.Any])
+    def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
     @scala.inline
-    def deletePerformance: Self = this.set("performance", js.undefined)
+    def setReturnScroll(value: Boolean): Self = StObject.set(x, "returnScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegExp(value: RegExpSettings): Self = this.set("regExp", value.asInstanceOf[js.Any])
+    def setReturnScrollUndefined: Self = StObject.set(x, "returnScroll", js.undefined)
     
     @scala.inline
-    def deleteRegExp: Self = this.set("regExp", js.undefined)
+    def setScrollLock(value: Boolean): Self = StObject.set(x, "scrollLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnScroll(value: Boolean): Self = this.set("returnScroll", value.asInstanceOf[js.Any])
+    def setScrollLockUndefined: Self = StObject.set(x, "scrollLock", js.undefined)
     
     @scala.inline
-    def deleteReturnScroll: Self = this.set("returnScroll", js.undefined)
+    def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollLock(value: Boolean): Self = this.set("scrollLock", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteScrollLock: Self = this.set("scrollLock", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: SelectorSettings): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setUseLegacy(value: auto | Boolean): Self = StObject.set(x, "useLegacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
+    def setUseLegacyUndefined: Self = StObject.set(x, "useLegacy", js.undefined)
     
     @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseLegacy(value: auto | Boolean): Self = this.set("useLegacy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLegacy: Self = this.set("useLegacy", js.undefined)
-    
-    @scala.inline
-    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerbose: Self = this.set("verbose", js.undefined)
+    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

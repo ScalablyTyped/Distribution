@@ -1,11 +1,12 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpMessagingGrantOptions extends js.Object {
+trait IpMessagingGrantOptions extends StObject {
   
   var deploymentRoleSid: String = js.native
   
@@ -24,30 +25,18 @@ object IpMessagingGrantOptions {
   }
   
   @scala.inline
-  implicit class IpMessagingGrantOptionsOps[Self <: IpMessagingGrantOptions] (val x: Self) extends AnyVal {
+  implicit class IpMessagingGrantOptionsMutableBuilder[Self <: IpMessagingGrantOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentRoleSid(value: String): Self = StObject.set(x, "deploymentRoleSid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointId(value: String): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPushCredentialSid(value: String): Self = StObject.set(x, "pushCredentialSid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentRoleSid(value: String): Self = this.set("deploymentRoleSid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndpointId(value: String): Self = this.set("endpointId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPushCredentialSid(value: String): Self = this.set("pushCredentialSid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceSid(value: String): Self = this.set("serviceSid", value.asInstanceOf[js.Any])
+    def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectFileAndVersion extends js.Object {
+trait IObjectFileAndVersion extends StObject {
   
   val ObjectFile: IObjectFile = js.native
   
@@ -20,24 +21,12 @@ object IObjectFileAndVersion {
   }
   
   @scala.inline
-  implicit class IObjectFileAndVersionOps[Self <: IObjectFileAndVersion] (val x: Self) extends AnyVal {
+  implicit class IObjectFileAndVersionMutableBuilder[Self <: IObjectFileAndVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectFile(value: IObjectFile): Self = StObject.set(x, "ObjectFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObjectFile(value: IObjectFile): Self = this.set("ObjectFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectVersion(value: IObjectVersionAndProperties): Self = this.set("ObjectVersion", value.asInstanceOf[js.Any])
+    def setObjectVersion(value: IObjectVersionAndProperties): Self = StObject.set(x, "ObjectVersion", value.asInstanceOf[js.Any])
   }
 }

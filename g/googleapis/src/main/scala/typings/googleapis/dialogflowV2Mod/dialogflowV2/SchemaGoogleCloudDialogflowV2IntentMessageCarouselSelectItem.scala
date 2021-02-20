@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An item in the carousel.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelectItem extends js.Object {
+trait SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelectItem extends StObject {
   
   /**
     * Optional. The body text of the card.
@@ -39,42 +40,30 @@ object SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelectItem {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelectItemOps[Self <: SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelectItem] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelectItemMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelectItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: SchemaGoogleCloudDialogflowV2IntentMessageImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setInfo(value: SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: SchemaGoogleCloudDialogflowV2IntentMessageImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

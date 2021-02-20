@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAllCookiesResponse extends js.Object {
+trait GetAllCookiesResponse extends StObject {
   
   /**
     * Array of cookie objects.
@@ -21,24 +22,12 @@ object GetAllCookiesResponse {
   }
   
   @scala.inline
-  implicit class GetAllCookiesResponseOps[Self <: GetAllCookiesResponse] (val x: Self) extends AnyVal {
+  implicit class GetAllCookiesResponseMutableBuilder[Self <: GetAllCookiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCookiesVarargs(value: Cookie*): Self = this.set("cookies", js.Array(value :_*))
-    
-    @scala.inline
-    def setCookies(value: js.Array[Cookie]): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
   }
 }

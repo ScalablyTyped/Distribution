@@ -14,6 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.sdbc.XConnection
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,33 +90,21 @@ object ColumnDescriptorControlModel {
   }
   
   @scala.inline
-  implicit class ColumnDescriptorControlModelOps[Self <: ColumnDescriptorControlModel] (val x: Self) extends AnyVal {
+  implicit class ColumnDescriptorControlModelMutableBuilder[Self <: ColumnDescriptorControlModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumn(value: XPropertySet): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveConnection(value: XConnection): Self = this.set("ActiveConnection", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: Double): Self = this.set("Border", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumn(value: XPropertySet): Self = this.set("Column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabstop(value: Boolean): Self = this.set("Tabstop", value.asInstanceOf[js.Any])
+    def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
   }
 }

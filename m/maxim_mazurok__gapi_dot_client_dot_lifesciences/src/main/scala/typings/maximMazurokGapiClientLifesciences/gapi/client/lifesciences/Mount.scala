@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mount extends js.Object {
+trait Mount extends StObject {
   
   /** The name of the disk to mount, as specified in the resources section. */
   var disk: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object Mount {
   }
   
   @scala.inline
-  implicit class MountOps[Self <: Mount] (val x: Self) extends AnyVal {
+  implicit class MountMutableBuilder[Self <: Mount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisk(value: String): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisk(value: String): Self = this.set("disk", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteDisk: Self = this.set("disk", js.undefined)
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

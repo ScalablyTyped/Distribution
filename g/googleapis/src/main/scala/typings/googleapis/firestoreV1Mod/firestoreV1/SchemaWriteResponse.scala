@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response for Firestore.Write.
   */
 @js.native
-trait SchemaWriteResponse extends js.Object {
+trait SchemaWriteResponse extends StObject {
   
   /**
     * The time at which the commit occurred.
@@ -43,45 +44,33 @@ object SchemaWriteResponse {
   }
   
   @scala.inline
-  implicit class SchemaWriteResponseOps[Self <: SchemaWriteResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaWriteResponseMutableBuilder[Self <: SchemaWriteResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitTime(value: String): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitTime(value: String): Self = this.set("commitTime", value.asInstanceOf[js.Any])
+    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
     
     @scala.inline
-    def deleteCommitTime: Self = this.set("commitTime", js.undefined)
+    def setStreamToken(value: String): Self = StObject.set(x, "streamToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamId(value: String): Self = this.set("streamId", value.asInstanceOf[js.Any])
+    def setStreamTokenUndefined: Self = StObject.set(x, "streamToken", js.undefined)
     
     @scala.inline
-    def deleteStreamId: Self = this.set("streamId", js.undefined)
+    def setWriteResults(value: js.Array[SchemaWriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamToken(value: String): Self = this.set("streamToken", value.asInstanceOf[js.Any])
+    def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
     
     @scala.inline
-    def deleteStreamToken: Self = this.set("streamToken", js.undefined)
-    
-    @scala.inline
-    def setWriteResultsVarargs(value: SchemaWriteResult*): Self = this.set("writeResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setWriteResults(value: js.Array[SchemaWriteResult]): Self = this.set("writeResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteResults: Self = this.set("writeResults", js.undefined)
+    def setWriteResultsVarargs(value: SchemaWriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
   }
 }

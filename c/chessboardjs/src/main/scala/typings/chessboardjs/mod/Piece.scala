@@ -1,76 +1,64 @@
 package typings.chessboardjs.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Piece extends js.Object
+sealed trait Piece extends StObject
 @JSImport("chessboardjs", "Piece")
 @js.native
-object Piece extends js.Object {
+object Piece extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Piece with String] = js.native
   
   @js.native
   sealed trait bB extends Piece
-  /* "bB" */ @js.native
-  object bB extends TopLevel[bB with String]
+  /* "bB" */ val bB: typings.chessboardjs.mod.Piece.bB with String = js.native
   
   @js.native
   sealed trait bK extends Piece
-  /* "bK" */ @js.native
-  object bK extends TopLevel[bK with String]
+  /* "bK" */ val bK: typings.chessboardjs.mod.Piece.bK with String = js.native
   
   @js.native
   sealed trait bN extends Piece
-  /* "bN" */ @js.native
-  object bN extends TopLevel[bN with String]
+  /* "bN" */ val bN: typings.chessboardjs.mod.Piece.bN with String = js.native
   
   @js.native
   sealed trait bP extends Piece
-  /* "bP" */ @js.native
-  object bP extends TopLevel[bP with String]
+  /* "bP" */ val bP: typings.chessboardjs.mod.Piece.bP with String = js.native
   
   @js.native
   sealed trait bQ extends Piece
-  /* "bQ" */ @js.native
-  object bQ extends TopLevel[bQ with String]
+  /* "bQ" */ val bQ: typings.chessboardjs.mod.Piece.bQ with String = js.native
   
   @js.native
   sealed trait bR extends Piece
-  /* "bR" */ @js.native
-  object bR extends TopLevel[bR with String]
+  /* "bR" */ val bR: typings.chessboardjs.mod.Piece.bR with String = js.native
   
   @js.native
   sealed trait wB extends Piece
-  /* "wB" */ @js.native
-  object wB extends TopLevel[wB with String]
+  /* "wB" */ val wB: typings.chessboardjs.mod.Piece.wB with String = js.native
   
   @js.native
   sealed trait wK extends Piece
-  /* "wK" */ @js.native
-  object wK extends TopLevel[wK with String]
+  /* "wK" */ val wK: typings.chessboardjs.mod.Piece.wK with String = js.native
   
   @js.native
   sealed trait wN extends Piece
-  /* "wN" */ @js.native
-  object wN extends TopLevel[wN with String]
+  /* "wN" */ val wN: typings.chessboardjs.mod.Piece.wN with String = js.native
   
   @js.native
   sealed trait wP extends Piece
-  /* "wP" */ @js.native
-  object wP extends TopLevel[wP with String]
+  /* "wP" */ val wP: typings.chessboardjs.mod.Piece.wP with String = js.native
   
   @js.native
   sealed trait wQ extends Piece
-  /* "wQ" */ @js.native
-  object wQ extends TopLevel[wQ with String]
+  /* "wQ" */ val wQ: typings.chessboardjs.mod.Piece.wQ with String = js.native
   
   @js.native
   sealed trait wR extends Piece
-  /* "wR" */ @js.native
-  object wR extends TopLevel[wR with String]
+  /* "wR" */ val wR: typings.chessboardjs.mod.Piece.wR with String = js.native
 }

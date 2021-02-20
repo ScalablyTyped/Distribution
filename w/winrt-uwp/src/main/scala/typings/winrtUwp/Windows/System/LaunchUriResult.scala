@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.System
 
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the results of a Uri launch. */
 @js.native
-trait LaunchUriResult extends js.Object {
+trait LaunchUriResult extends StObject {
   
   /** Gets the result of the Uri launch. */
   var result: ValueSet = js.native
@@ -24,24 +25,12 @@ object LaunchUriResult {
   }
   
   @scala.inline
-  implicit class LaunchUriResultOps[Self <: LaunchUriResult] (val x: Self) extends AnyVal {
+  implicit class LaunchUriResultMutableBuilder[Self <: LaunchUriResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResult(value: ValueSet): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResult(value: ValueSet): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: LaunchUriStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: LaunchUriStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

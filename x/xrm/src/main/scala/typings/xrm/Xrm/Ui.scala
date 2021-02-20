@@ -7,6 +7,7 @@ import typings.xrm.Xrm.Controls.ProcessControl
 import typings.xrm.Xrm.Controls.QuickFormControl
 import typings.xrm.Xrm.Controls.Tab
 import typings.xrm.XrmEnum.FormType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
   */
 @js.native
-trait Ui extends js.Object {
+trait Ui extends StObject {
   
   /**
     * Clears the form notification described by uniqueId.

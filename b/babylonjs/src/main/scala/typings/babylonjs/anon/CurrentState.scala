@@ -3,12 +3,13 @@ package typings.babylonjs.anon
 import typings.babylonjs.deviceEnumsMod.DeviceType
 import typings.babylonjs.deviceTypesMod.DeviceInput
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentState[T /* <: DeviceType */] extends js.Object {
+trait CurrentState[T /* <: DeviceType */] extends StObject {
   
   var currentState: Nullable[Double] = js.native
   
@@ -25,33 +26,21 @@ object CurrentState {
   }
   
   @scala.inline
-  implicit class CurrentStateOps[Self <: CurrentState[_], T /* <: DeviceType */] (val x: Self with CurrentState[T]) extends AnyVal {
+  implicit class CurrentStateMutableBuilder[Self <: CurrentState[_], T /* <: DeviceType */] (val x: Self with CurrentState[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentState(value: Nullable[Double]): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentStateNull: Self = StObject.set(x, "currentState", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputIndex(value: DeviceInput[T]): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputIndex(value: DeviceInput[T]): Self = this.set("inputIndex", value.asInstanceOf[js.Any])
+    def setPreviousState(value: Nullable[Double]): Self = StObject.set(x, "previousState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentState(value: Nullable[Double]): Self = this.set("currentState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentStateNull: Self = this.set("currentState", null)
-    
-    @scala.inline
-    def setPreviousState(value: Nullable[Double]): Self = this.set("previousState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousStateNull: Self = this.set("previousState", null)
+    def setPreviousStateNull: Self = StObject.set(x, "previousState", null)
   }
 }

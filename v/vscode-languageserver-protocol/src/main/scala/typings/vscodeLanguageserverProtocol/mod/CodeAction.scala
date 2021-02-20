@@ -1,12 +1,11 @@
 package typings.vscodeLanguageserverProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "CodeAction")
-@js.native
-object CodeAction extends js.Object {
+object CodeAction {
   
   /**
     * Creates a new code action.
@@ -15,7 +14,11 @@ object CodeAction extends js.Object {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
+  @JSImport("vscode-languageserver-protocol", "CodeAction.create")
+  @js.native
   def create(title: String, command: typings.vscodeLanguageserverTypes.mod.Command): typings.vscodeLanguageserverTypes.mod.CodeAction = js.native
+  @JSImport("vscode-languageserver-protocol", "CodeAction.create")
+  @js.native
   def create(
     title: String,
     command: typings.vscodeLanguageserverTypes.mod.Command,
@@ -28,12 +31,18 @@ object CodeAction extends js.Object {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
+  @JSImport("vscode-languageserver-protocol", "CodeAction.create")
+  @js.native
   def create(title: String, edit: typings.vscodeLanguageserverTypes.mod.WorkspaceEdit): typings.vscodeLanguageserverTypes.mod.CodeAction = js.native
+  @JSImport("vscode-languageserver-protocol", "CodeAction.create")
+  @js.native
   def create(
     title: String,
     edit: typings.vscodeLanguageserverTypes.mod.WorkspaceEdit,
     kind: typings.vscodeLanguageserverTypes.mod.CodeActionKind
   ): typings.vscodeLanguageserverTypes.mod.CodeAction = js.native
   
+  @JSImport("vscode-languageserver-protocol", "CodeAction.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = js.native
 }

@@ -1,11 +1,12 @@
 package typings.reactNativeGoby.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Package extends js.Object {
+trait Package extends StObject {
   
   /**
     * The app binary version that this update is dependent on. This is the value that was
@@ -79,48 +80,36 @@ object Package {
   }
   
   @scala.inline
-  implicit class PackageOps[Self <: Package] (val x: Self) extends AnyVal {
+  implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentKey(value: String): Self = StObject.set(x, "deploymentKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersion(value: String): Self = this.set("appVersion", value.asInstanceOf[js.Any])
+    def setFailedInstall(value: Boolean): Self = StObject.set(x, "failedInstall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentKey(value: String): Self = this.set("deploymentKey", value.asInstanceOf[js.Any])
+    def setIsFirstRun(value: Boolean): Self = StObject.set(x, "isFirstRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIsMandatory(value: Boolean): Self = StObject.set(x, "isMandatory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedInstall(value: Boolean): Self = this.set("failedInstall", value.asInstanceOf[js.Any])
+    def setIsPending(value: Boolean): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFirstRun(value: Boolean): Self = this.set("isFirstRun", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMandatory(value: Boolean): Self = this.set("isMandatory", value.asInstanceOf[js.Any])
+    def setPackageHash(value: String): Self = StObject.set(x, "packageHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPending(value: Boolean): Self = this.set("isPending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackageHash(value: String): Self = this.set("packageHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackageSize(value: Double): Self = this.set("packageSize", value.asInstanceOf[js.Any])
+    def setPackageSize(value: Double): Self = StObject.set(x, "packageSize", value.asInstanceOf[js.Any])
   }
 }

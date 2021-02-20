@@ -11,13 +11,14 @@ import typings.pixiSpine.PIXI.spine.core.Slot
 import typings.std.ArrayLike
 import typings.std.Float32Array
 import typings.std.Uint16Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container * / any */ @js.native
-trait Spine extends js.Object {
+trait Spine extends StObject {
   
   var _autoUpdate: js.Any = js.native
   

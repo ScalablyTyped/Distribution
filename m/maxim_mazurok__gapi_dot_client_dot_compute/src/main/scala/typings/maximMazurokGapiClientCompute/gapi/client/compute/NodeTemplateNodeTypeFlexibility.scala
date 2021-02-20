@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeTemplateNodeTypeFlexibility extends js.Object {
+trait NodeTemplateNodeTypeFlexibility extends StObject {
   
   var cpus: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object NodeTemplateNodeTypeFlexibility {
   }
   
   @scala.inline
-  implicit class NodeTemplateNodeTypeFlexibilityOps[Self <: NodeTemplateNodeTypeFlexibility] (val x: Self) extends AnyVal {
+  implicit class NodeTemplateNodeTypeFlexibilityMutableBuilder[Self <: NodeTemplateNodeTypeFlexibility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpus(value: String): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpusUndefined: Self = StObject.set(x, "cpus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalSsd(value: String): Self = StObject.set(x, "localSsd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpus(value: String): Self = this.set("cpus", value.asInstanceOf[js.Any])
+    def setLocalSsdUndefined: Self = StObject.set(x, "localSsd", js.undefined)
     
     @scala.inline
-    def deleteCpus: Self = this.set("cpus", js.undefined)
+    def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalSsd(value: String): Self = this.set("localSsd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalSsd: Self = this.set("localSsd", js.undefined)
-    
-    @scala.inline
-    def setMemory(value: String): Self = this.set("memory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemory: Self = this.set("memory", js.undefined)
+    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
   }
 }

@@ -6,16 +6,16 @@ import typings.firebaseComponent.typesMod.Dictionary
 import typings.firebaseComponent.typesMod.InstanceFactory
 import typings.firebaseComponent.typesMod.InstantiationMode
 import typings.firebaseComponent.typesMod.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/component/dist/src/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@firebase/component/dist/src/component", "Component")
   @js.native
-  class Component[T /* <: Name */] protected () extends js.Object {
+  class Component[T /* <: Name */] protected () extends StObject {
     /**
       *
       * @param name The public service name, e.g. app, auth, firestore, database

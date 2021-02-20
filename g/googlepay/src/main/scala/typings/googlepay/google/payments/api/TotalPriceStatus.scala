@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlepay.googlepayStrings.ESTIMATED
   - typings.googlepay.googlepayStrings.FINAL
 */
-trait TotalPriceStatus extends js.Object
+trait TotalPriceStatus extends StObject
 object TotalPriceStatus {
   
   @scala.inline

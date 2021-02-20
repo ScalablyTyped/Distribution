@@ -1,11 +1,12 @@
 package typings.angularCore.r3SymbolsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InjectFlags extends js.Object
+sealed trait InjectFlags extends StObject
 /**
   * Injection flags for DI.
   *
@@ -13,7 +14,7 @@ sealed trait InjectFlags extends js.Object
   */
 @JSImport("@angular/core/src/r3_symbols", "InjectFlags")
 @js.native
-object InjectFlags extends js.Object {
+object InjectFlags extends StObject {
   
   /** Check self and check parent injector if needed */
   @js.native

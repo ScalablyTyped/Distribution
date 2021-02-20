@@ -1,17 +1,20 @@
 package typings.amcharts
 
-import typings.amcharts.amRectangularChartMod.AmRectangularChart
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/AmSerialChart", JSImport.Namespace)
-@js.native
-object amSerialChartMod extends js.Object {
+object amSerialChartMod {
+  
+  @JSImport("amcharts/AmSerialChart", JSImport.Default)
+  @js.native
+  class default () extends AmSerialChart
   
   @js.native
-  trait AmSerialChart extends AmRectangularChart {
+  trait AmSerialChart
+    extends typings.amcharts.amRectangularChartMod.default {
     
     /**
       * Date format of the graph balloon (if chart parses dates and you don't use chartCursor).
@@ -137,7 +140,4 @@ object amSerialChartMod extends js.Object {
       */
     def zoomToIndexes(start: Date, end: Date): Unit = js.native
   }
-  
-  @js.native
-  class default () extends AmSerialChart
 }

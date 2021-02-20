@@ -1,11 +1,12 @@
 package typings.awsSdk.transferMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HomeDirectoryMapEntry extends js.Object {
+trait HomeDirectoryMapEntry extends StObject {
   
   /**
     * Represents an entry and a target for HomeDirectoryMappings.
@@ -26,24 +27,12 @@ object HomeDirectoryMapEntry {
   }
   
   @scala.inline
-  implicit class HomeDirectoryMapEntryOps[Self <: HomeDirectoryMapEntry] (val x: Self) extends AnyVal {
+  implicit class HomeDirectoryMapEntryMutableBuilder[Self <: HomeDirectoryMapEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntry(value: MapEntry): Self = StObject.set(x, "Entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntry(value: MapEntry): Self = this.set("Entry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: MapTarget): Self = this.set("Target", value.asInstanceOf[js.Any])
+    def setTarget(value: MapTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

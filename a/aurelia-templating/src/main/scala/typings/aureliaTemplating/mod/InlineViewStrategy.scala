@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "InlineViewStrategy")
 @js.native
-class InlineViewStrategy protected () extends js.Object {
+class InlineViewStrategy protected () extends StObject {
   /**
     * Creates an instance of InlineViewStrategy.
     * @param markup The markup for the view. Be sure to include the wrapping template tag.

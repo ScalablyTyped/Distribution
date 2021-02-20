@@ -9,14 +9,14 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.shadowGeneratorMod.IShadowGenerator
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.uniformBufferMod.UniformBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Lights/light", JSImport.Namespace)
-@js.native
-object lightMod extends js.Object {
+object lightMod {
   
+  @JSImport("babylonjs/Lights/light", "Light")
   @js.native
   abstract class Light protected () extends Node {
     /**
@@ -329,8 +329,7 @@ object lightMod extends js.Object {
     def transferToNodeMaterialEffect(effect: Effect, lightDataUniformName: String): Light = js.native
   }
   /* static members */
-  @js.native
-  object Light extends js.Object {
+  object Light {
     
     /**
       * Sort function to order lights for rendering.
@@ -338,29 +337,39 @@ object lightMod extends js.Object {
       * @param b Second Light object to compare first.
       * @return -1 to reduce's a's index relative to be, 0 for no change, 1 to increase a's index relative to b.
       */
+    @JSImport("babylonjs/Lights/light", "Light.CompareLightsPriority")
+    @js.native
     def CompareLightsPriority(a: Light, b: Light): Double = js.native
     
     /**
       * Falloff Default: light is falling off following the material specification:
       * standard material is using standard falloff whereas pbr material can request special falloff per materials.
       */
+    @JSImport("babylonjs/Lights/light", "Light.FALLOFF_DEFAULT")
+    @js.native
     val FALLOFF_DEFAULT: Double = js.native
     
     /**
       * Falloff gltf: light is falling off as described in the gltf moving to PBR document
       * to enhance interoperability with other engines.
       */
+    @JSImport("babylonjs/Lights/light", "Light.FALLOFF_GLTF")
+    @js.native
     val FALLOFF_GLTF: Double = js.native
     
     /**
       * Falloff Physical: light is falling off following the inverse squared distance law.
       */
+    @JSImport("babylonjs/Lights/light", "Light.FALLOFF_PHYSICAL")
+    @js.native
     val FALLOFF_PHYSICAL: Double = js.native
     
     /**
       * Falloff Standard: light is falling off like in the standard material
       * to enhance interoperability with other materials.
       */
+    @JSImport("babylonjs/Lights/light", "Light.FALLOFF_STANDARD")
+    @js.native
     val FALLOFF_STANDARD: Double = js.native
     
     /**
@@ -371,6 +380,8 @@ object lightMod extends js.Object {
       * @param scene The scene the new light will belong to
       * @returns the constructor function
       */
+    @JSImport("babylonjs/Lights/light", "Light.GetConstructorFromName")
+    @js.native
     def GetConstructorFromName(`type`: Double, name: String, scene: Scene): Nullable[js.Function0[this.type]] = js.native
     
     /**
@@ -378,26 +389,36 @@ object lightMod extends js.Object {
       *      point/spot lights use luminous intensity
       *      directional lights use illuminance
       */
+    @JSImport("babylonjs/Lights/light", "Light.INTENSITYMODE_AUTOMATIC")
+    @js.native
     val INTENSITYMODE_AUTOMATIC: Double = js.native
     
     /**
       * lux (lm/m^2)
       */
+    @JSImport("babylonjs/Lights/light", "Light.INTENSITYMODE_ILLUMINANCE")
+    @js.native
     val INTENSITYMODE_ILLUMINANCE: Double = js.native
     
     /**
       * nit (cd/m^2)
       */
+    @JSImport("babylonjs/Lights/light", "Light.INTENSITYMODE_LUMINANCE")
+    @js.native
     val INTENSITYMODE_LUMINANCE: Double = js.native
     
     /**
       * candela (lm/sr)
       */
+    @JSImport("babylonjs/Lights/light", "Light.INTENSITYMODE_LUMINOUSINTENSITY")
+    @js.native
     val INTENSITYMODE_LUMINOUSINTENSITY: Double = js.native
     
     /**
       * lumen (lm)
       */
+    @JSImport("babylonjs/Lights/light", "Light.INTENSITYMODE_LUMINOUSPOWER")
+    @js.native
     val INTENSITYMODE_LUMINOUSPOWER: Double = js.native
     
     /**
@@ -406,6 +427,8 @@ object lightMod extends js.Object {
       * (depends on material.useLightmapAsShadowmap)
       * after every other light calculations.
       */
+    @JSImport("babylonjs/Lights/light", "Light.LIGHTMAP_DEFAULT")
+    @js.native
     val LIGHTMAP_DEFAULT: Double = js.native
     
     /**
@@ -413,6 +436,8 @@ object lightMod extends js.Object {
       * no light calculation from this light
       * only adds dynamic shadows from this light
       */
+    @JSImport("babylonjs/Lights/light", "Light.LIGHTMAP_SHADOWSONLY")
+    @js.native
     val LIGHTMAP_SHADOWSONLY: Double = js.native
     
     /**
@@ -420,26 +445,36 @@ object lightMod extends js.Object {
       * adds only specular lighting from this light
       * adds dynamic shadows
       */
+    @JSImport("babylonjs/Lights/light", "Light.LIGHTMAP_SPECULAR")
+    @js.native
     val LIGHTMAP_SPECULAR: Double = js.native
     
     /**
       * Light type const id of the directional light.
       */
+    @JSImport("babylonjs/Lights/light", "Light.LIGHTTYPEID_DIRECTIONALLIGHT")
+    @js.native
     val LIGHTTYPEID_DIRECTIONALLIGHT: Double = js.native
     
     /**
       * Light type const id of the hemispheric light.
       */
+    @JSImport("babylonjs/Lights/light", "Light.LIGHTTYPEID_HEMISPHERICLIGHT")
+    @js.native
     val LIGHTTYPEID_HEMISPHERICLIGHT: Double = js.native
     
     /**
       * Light type const id of the point light.
       */
+    @JSImport("babylonjs/Lights/light", "Light.LIGHTTYPEID_POINTLIGHT")
+    @js.native
     val LIGHTTYPEID_POINTLIGHT: Double = js.native
     
     /**
       * Light type const id of the spot light.
       */
+    @JSImport("babylonjs/Lights/light", "Light.LIGHTTYPEID_SPOTLIGHT")
+    @js.native
     val LIGHTTYPEID_SPOTLIGHT: Double = js.native
     
     /**
@@ -448,6 +483,8 @@ object lightMod extends js.Object {
       * @param scene The scene to create the parsed light in
       * @returns the created light after parsing
       */
+    @JSImport("babylonjs/Lights/light", "Light.Parse")
+    @js.native
     def Parse(parsedLight: js.Any, scene: Scene): Nullable[Light] = js.native
   }
 }

@@ -1,22 +1,22 @@
 package typings.activexDiskquota
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object DiskQuotaTypeLibrary extends js.Object {
+  object DiskQuotaTypeLibrary {
     
     /** Automation interface for DiskQuotaUser */
+    @JSGlobal("DiskQuotaTypeLibrary.DIDiskQuotaUser")
     @js.native
     class DIDiskQuotaUser protected ()
       extends typings.activexDiskquota.DiskQuotaTypeLibrary.DIDiskQuotaUser
     
     /** Microsoft Disk Quota */
+    @JSGlobal("DiskQuotaTypeLibrary.DiskQuotaControl")
     @js.native
     class DiskQuotaControl protected ()
       extends typings.activexDiskquota.DiskQuotaTypeLibrary.DiskQuotaControl

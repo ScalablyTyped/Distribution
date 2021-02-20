@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseImportUsersOptions extends js.Object {
+trait BaseImportUsersOptions extends StObject {
   
   var connection_id: String = js.native
   
@@ -24,39 +25,27 @@ object BaseImportUsersOptions {
   }
   
   @scala.inline
-  implicit class BaseImportUsersOptionsOps[Self <: BaseImportUsersOptions] (val x: Self) extends AnyVal {
+  implicit class BaseImportUsersOptionsMutableBuilder[Self <: BaseImportUsersOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
     
     @scala.inline
-    def setConnection_id(value: String): Self = this.set("connection_id", value.asInstanceOf[js.Any])
+    def setSend_completion_email(value: Boolean): Self = StObject.set(x, "send_completion_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_id(value: String): Self = this.set("external_id", value.asInstanceOf[js.Any])
+    def setSend_completion_emailUndefined: Self = StObject.set(x, "send_completion_email", js.undefined)
     
     @scala.inline
-    def deleteExternal_id: Self = this.set("external_id", js.undefined)
+    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSend_completion_email(value: Boolean): Self = this.set("send_completion_email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSend_completion_email: Self = this.set("send_completion_email", js.undefined)
-    
-    @scala.inline
-    def setUpsert(value: Boolean): Self = this.set("upsert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpsert: Self = this.set("upsert", js.undefined)
+    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

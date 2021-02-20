@@ -3,6 +3,7 @@ package typings.xstate.typesMod
 import typings.xstate.anon.ContextTContext
 import typings.xstate.stateNodeMod.StateNode
 import typings.xstate.xstateStrings.Asterisk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,24 +28,12 @@ object DelayedTransitionDefinition {
   }
   
   @scala.inline
-  implicit class DelayedTransitionDefinitionOps[Self <: DelayedTransitionDefinition[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (DelayedTransitionDefinition[TContext, TEvent])) extends AnyVal {
+  implicit class DelayedTransitionDefinitionMutableBuilder[Self <: DelayedTransitionDefinition[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (DelayedTransitionDefinition[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDelayFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => Double): Self = this.set("delay", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDelayFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationAction extends js.Object {
+trait NotificationAction extends StObject {
   
   var action: java.lang.String = js.native
   
@@ -22,30 +23,18 @@ object NotificationAction {
   }
   
   @scala.inline
-  implicit class NotificationActionOps[Self <: NotificationAction] (val x: Self) extends AnyVal {
+  implicit class NotificationActionMutableBuilder[Self <: NotificationAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: java.lang.String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIcon(value: java.lang.String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setAction(value: java.lang.String): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: java.lang.String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIcon(value: java.lang.String): Self = this.set("icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

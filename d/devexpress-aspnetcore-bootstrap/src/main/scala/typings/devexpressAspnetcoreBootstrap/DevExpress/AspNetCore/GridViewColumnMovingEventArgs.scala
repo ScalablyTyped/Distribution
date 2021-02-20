@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,33 +34,21 @@ object GridViewColumnMovingEventArgs {
   }
   
   @scala.inline
-  implicit class GridViewColumnMovingEventArgsOps[Self <: GridViewColumnMovingEventArgs] (val x: Self) extends AnyVal {
+  implicit class GridViewColumnMovingEventArgsMutableBuilder[Self <: GridViewColumnMovingEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "destinationColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDropBefore(value: Boolean): Self = StObject.set(x, "isDropBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow(value: Boolean): Self = this.set("allow", value.asInstanceOf[js.Any])
+    def setIsGroupPanel(value: Boolean): Self = StObject.set(x, "isGroupPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationColumn(value: BootstrapGridViewColumn): Self = this.set("destinationColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDropBefore(value: Boolean): Self = this.set("isDropBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsGroupPanel(value: Boolean): Self = this.set("isGroupPanel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceColumn(value: BootstrapGridViewColumn): Self = this.set("sourceColumn", value.asInstanceOf[js.Any])
+    def setSourceColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
   }
 }

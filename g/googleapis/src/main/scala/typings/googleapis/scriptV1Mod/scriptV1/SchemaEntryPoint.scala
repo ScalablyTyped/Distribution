@@ -1,5 +1,6 @@
 package typings.googleapis.scriptV1Mod.scriptV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A configuration that defines how a deployment is accessed externally.
   */
 @js.native
-trait SchemaEntryPoint extends js.Object {
+trait SchemaEntryPoint extends StObject {
   
   /**
     * Add-on properties.
@@ -39,42 +40,30 @@ object SchemaEntryPoint {
   }
   
   @scala.inline
-  implicit class SchemaEntryPointOps[Self <: SchemaEntryPoint] (val x: Self) extends AnyVal {
+  implicit class SchemaEntryPointMutableBuilder[Self <: SchemaEntryPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOn(value: SchemaGoogleAppsScriptTypeAddOnEntryPoint): Self = StObject.set(x, "addOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOnUndefined: Self = StObject.set(x, "addOn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryPointType(value: String): Self = StObject.set(x, "entryPointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOn(value: SchemaGoogleAppsScriptTypeAddOnEntryPoint): Self = this.set("addOn", value.asInstanceOf[js.Any])
+    def setEntryPointTypeUndefined: Self = StObject.set(x, "entryPointType", js.undefined)
     
     @scala.inline
-    def deleteAddOn: Self = this.set("addOn", js.undefined)
+    def setExecutionApi(value: SchemaGoogleAppsScriptTypeExecutionApiEntryPoint): Self = StObject.set(x, "executionApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryPointType(value: String): Self = this.set("entryPointType", value.asInstanceOf[js.Any])
+    def setExecutionApiUndefined: Self = StObject.set(x, "executionApi", js.undefined)
     
     @scala.inline
-    def deleteEntryPointType: Self = this.set("entryPointType", js.undefined)
+    def setWebApp(value: SchemaGoogleAppsScriptTypeWebAppEntryPoint): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionApi(value: SchemaGoogleAppsScriptTypeExecutionApiEntryPoint): Self = this.set("executionApi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionApi: Self = this.set("executionApi", js.undefined)
-    
-    @scala.inline
-    def setWebApp(value: SchemaGoogleAppsScriptTypeWebAppEntryPoint): Self = this.set("webApp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebApp: Self = this.set("webApp", js.undefined)
+    def setWebAppUndefined: Self = StObject.set(x, "webApp", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrence
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the information associated with a meeting. */
 @js.native
-trait EmailMeetingInfo extends js.Object {
+trait EmailMeetingInfo extends StObject {
   
   /** Gets or sets a Boolean value indicating whether the proposal of a new time is allowed. */
   var allowNewTimeProposal: Boolean = js.native
@@ -76,60 +77,48 @@ object EmailMeetingInfo {
   }
   
   @scala.inline
-  implicit class EmailMeetingInfoOps[Self <: EmailMeetingInfo] (val x: Self) extends AnyVal {
+  implicit class EmailMeetingInfoMutableBuilder[Self <: EmailMeetingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNewTimeProposal(value: Boolean): Self = StObject.set(x, "allowNewTimeProposal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppointmentOriginalStartTime(value: Date): Self = StObject.set(x, "appointmentOriginalStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppointmentRoamingId(value: String): Self = StObject.set(x, "appointmentRoamingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowNewTimeProposal(value: Boolean): Self = this.set("allowNewTimeProposal", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppointmentOriginalStartTime(value: Date): Self = this.set("appointmentOriginalStartTime", value.asInstanceOf[js.Any])
+    def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppointmentRoamingId(value: String): Self = this.set("appointmentRoamingId", value.asInstanceOf[js.Any])
+    def setIsReportedOutOfDateByServer(value: Boolean): Self = StObject.set(x, "isReportedOutOfDateByServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setIsResponseRequested(value: Boolean): Self = StObject.set(x, "isResponseRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAllDay(value: Boolean): Self = this.set("isAllDay", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReportedOutOfDateByServer(value: Boolean): Self = this.set("isReportedOutOfDateByServer", value.asInstanceOf[js.Any])
+    def setProposedDuration(value: Double): Self = StObject.set(x, "proposedDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsResponseRequested(value: Boolean): Self = this.set("isResponseRequested", value.asInstanceOf[js.Any])
+    def setProposedStartTime(value: Date): Self = StObject.set(x, "proposedStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setRecurrence(value: AppointmentRecurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposedDuration(value: Double): Self = this.set("proposedDuration", value.asInstanceOf[js.Any])
+    def setRecurrenceStartTime(value: Date): Self = StObject.set(x, "recurrenceStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposedStartTime(value: Date): Self = this.set("proposedStartTime", value.asInstanceOf[js.Any])
+    def setRemoteChangeNumber(value: Double): Self = StObject.set(x, "remoteChangeNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrence(value: AppointmentRecurrence): Self = this.set("recurrence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecurrenceStartTime(value: Date): Self = this.set("recurrenceStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteChangeNumber(value: Double): Self = this.set("remoteChangeNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

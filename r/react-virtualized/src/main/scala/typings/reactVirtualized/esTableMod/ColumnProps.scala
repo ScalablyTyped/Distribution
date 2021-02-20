@@ -2,12 +2,13 @@ package typings.reactVirtualized.esTableMod
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnProps extends js.Object {
+trait ColumnProps extends StObject {
   
   /** Optional aria-label value to set on the column header */
   var `aria-label`: js.UndefOr[String] = js.native
@@ -84,126 +85,114 @@ object ColumnProps {
   }
   
   @scala.inline
-  implicit class ColumnPropsOps[Self <: ColumnProps] (val x: Self) extends AnyVal {
+  implicit class ColumnPropsMutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellDataGetter(value: /* params */ TableCellDataGetterParams => js.Any): Self = StObject.set(x, "cellDataGetter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataKey(value: js.Any): Self = this.set("dataKey", value.asInstanceOf[js.Any])
+    def setCellDataGetterUndefined: Self = StObject.set(x, "cellDataGetter", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setCellRenderer(value: /* props */ TableCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setAria-label`(value: String): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    def setCellRendererUndefined: Self = StObject.set(x, "cellRenderer", js.undefined)
     
     @scala.inline
-    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellDataGetter(value: /* params */ TableCellDataGetterParams => js.Any): Self = this.set("cellDataGetter", js.Any.fromFunction1(value))
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteCellDataGetter: Self = this.set("cellDataGetter", js.undefined)
+    def setColumnData(value: js.Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellRenderer(value: /* props */ TableCellProps => ReactNode): Self = this.set("cellRenderer", js.Any.fromFunction1(value))
+    def setColumnDataUndefined: Self = StObject.set(x, "columnData", js.undefined)
     
     @scala.inline
-    def deleteCellRenderer: Self = this.set("cellRenderer", js.undefined)
+    def setDataKey(value: js.Any): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDefaultSortDirection(value: SortDirectionType): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDefaultSortDirectionUndefined: Self = StObject.set(x, "defaultSortDirection", js.undefined)
     
     @scala.inline
-    def setColumnData(value: js.Any): Self = this.set("columnData", value.asInstanceOf[js.Any])
+    def setDisableSort(value: Boolean): Self = StObject.set(x, "disableSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnData: Self = this.set("columnData", js.undefined)
+    def setDisableSortUndefined: Self = StObject.set(x, "disableSort", js.undefined)
     
     @scala.inline
-    def setDefaultSortDirection(value: SortDirectionType): Self = this.set("defaultSortDirection", value.asInstanceOf[js.Any])
+    def setFlexGrow(value: Double): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultSortDirection: Self = this.set("defaultSortDirection", js.undefined)
+    def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
     
     @scala.inline
-    def setDisableSort(value: Boolean): Self = this.set("disableSort", value.asInstanceOf[js.Any])
+    def setFlexShrink(value: Double): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableSort: Self = this.set("disableSort", js.undefined)
+    def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
     
     @scala.inline
-    def setFlexGrow(value: Double): Self = this.set("flexGrow", value.asInstanceOf[js.Any])
+    def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlexGrow: Self = this.set("flexGrow", js.undefined)
+    def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
     
     @scala.inline
-    def setFlexShrink(value: Double): Self = this.set("flexShrink", value.asInstanceOf[js.Any])
+    def setHeaderRenderer(value: /* props */ TableHeaderProps => ReactNode): Self = StObject.set(x, "headerRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFlexShrink: Self = this.set("flexShrink", js.undefined)
+    def setHeaderRendererUndefined: Self = StObject.set(x, "headerRenderer", js.undefined)
     
     @scala.inline
-    def setHeaderClassName(value: String): Self = this.set("headerClassName", value.asInstanceOf[js.Any])
+    def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderClassName: Self = this.set("headerClassName", js.undefined)
+    def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
     @scala.inline
-    def setHeaderRenderer(value: /* props */ TableHeaderProps => ReactNode): Self = this.set("headerRenderer", js.Any.fromFunction1(value))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderRenderer: Self = this.set("headerRenderer", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setHeaderStyle(value: CSSProperties): Self = this.set("headerStyle", value.asInstanceOf[js.Any])
+    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderStyle: Self = this.set("headerStyle", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def setLabel(value: ReactNode): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

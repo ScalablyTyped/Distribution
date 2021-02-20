@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NamedStyles extends js.Object {
+trait NamedStyles extends StObject {
   
   /** The named styles. There is an entry for each of the possible named style types. */
   var styles: js.UndefOr[js.Array[NamedStyle]] = js.native
@@ -19,27 +20,15 @@ object NamedStyles {
   }
   
   @scala.inline
-  implicit class NamedStylesOps[Self <: NamedStyles] (val x: Self) extends AnyVal {
+  implicit class NamedStylesMutableBuilder[Self <: NamedStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStyles(value: js.Array[NamedStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStylesVarargs(value: NamedStyle*): Self = this.set("styles", js.Array(value :_*))
-    
-    @scala.inline
-    def setStyles(value: js.Array[NamedStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStylesVarargs(value: NamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

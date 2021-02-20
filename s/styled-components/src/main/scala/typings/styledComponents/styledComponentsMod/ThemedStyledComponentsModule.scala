@@ -4,12 +4,15 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Consumer
 import typings.react.mod.Context
 import typings.std.TemplateStringsArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] extends js.Object {
+trait ThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] extends StObject {
+  
+  var default: ThemedStyledInterface[T] = js.native
   
   var ServerStyleSheet: Instantiable0[typings.styledComponents.styledComponentsMod.ServerStyleSheet] = js.native
   
@@ -29,8 +32,6 @@ trait ThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] e
   ): GlobalStyleComponent[P, T] = js.native
   
   var css: ThemedCssFunction[T] = js.native
-  
-  var default: ThemedStyledInterface[T] = js.native
   
   // This could be made to assert `target is StyledComponent<any, T>` instead, but that feels not type safe
   var isStyledComponent: js.Function1[

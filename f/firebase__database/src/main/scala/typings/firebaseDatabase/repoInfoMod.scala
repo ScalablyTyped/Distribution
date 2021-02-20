@@ -1,16 +1,16 @@
 package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/RepoInfo", JSImport.Namespace)
-@js.native
-object repoInfoMod extends js.Object {
+object repoInfoMod {
   
+  @JSImport("@firebase/database/dist/src/core/RepoInfo", "RepoInfo")
   @js.native
-  class RepoInfo protected () extends js.Object {
+  class RepoInfo protected () extends StObject {
     /**
       * @param host Hostname portion of the url for the repo
       * @param secure Whether or not this repo is accessed over ssl

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportToS3Task extends js.Object {
+trait ExportToS3Task extends StObject {
   
   /**
     * The container format used to combine disk images with metadata (such as OVF). If absent, only the disk image is exported.
@@ -36,42 +37,30 @@ object ExportToS3Task {
   }
   
   @scala.inline
-  implicit class ExportToS3TaskOps[Self <: ExportToS3Task] (val x: Self) extends AnyVal {
+  implicit class ExportToS3TaskMutableBuilder[Self <: ExportToS3Task] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerFormat(value: ContainerFormat): Self = StObject.set(x, "ContainerFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerFormatUndefined: Self = StObject.set(x, "ContainerFormat", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskImageFormat(value: DiskImageFormat): Self = StObject.set(x, "DiskImageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerFormat(value: ContainerFormat): Self = this.set("ContainerFormat", value.asInstanceOf[js.Any])
+    def setDiskImageFormatUndefined: Self = StObject.set(x, "DiskImageFormat", js.undefined)
     
     @scala.inline
-    def deleteContainerFormat: Self = this.set("ContainerFormat", js.undefined)
+    def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskImageFormat(value: DiskImageFormat): Self = this.set("DiskImageFormat", value.asInstanceOf[js.Any])
+    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
     @scala.inline
-    def deleteDiskImageFormat: Self = this.set("DiskImageFormat", js.undefined)
+    def setS3Key(value: String): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Bucket(value: String): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
-    
-    @scala.inline
-    def setS3Key(value: String): Self = this.set("S3Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
   }
 }

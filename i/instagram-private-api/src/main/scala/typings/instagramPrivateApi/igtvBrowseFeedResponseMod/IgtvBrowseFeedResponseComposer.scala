@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgtvBrowseFeedResponseComposer extends js.Object {
+trait IgtvBrowseFeedResponseComposer extends StObject {
   
   var aspect_ratio_finished: Boolean = js.native
   
@@ -20,24 +21,12 @@ object IgtvBrowseFeedResponseComposer {
   }
   
   @scala.inline
-  implicit class IgtvBrowseFeedResponseComposerOps[Self <: IgtvBrowseFeedResponseComposer] (val x: Self) extends AnyVal {
+  implicit class IgtvBrowseFeedResponseComposerMutableBuilder[Self <: IgtvBrowseFeedResponseComposer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspect_ratio_finished(value: Boolean): Self = StObject.set(x, "aspect_ratio_finished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAspect_ratio_finished(value: Boolean): Self = this.set("aspect_ratio_finished", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNux_finished(value: Boolean): Self = this.set("nux_finished", value.asInstanceOf[js.Any])
+    def setNux_finished(value: Boolean): Self = StObject.set(x, "nux_finished", value.asInstanceOf[js.Any])
   }
 }

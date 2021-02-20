@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimulationApplicationConfig extends js.Object {
+trait SimulationApplicationConfig extends StObject {
   
   /**
     * The application information for the simulation application.
@@ -36,39 +37,27 @@ object SimulationApplicationConfig {
   }
   
   @scala.inline
-  implicit class SimulationApplicationConfigOps[Self <: SimulationApplicationConfig] (val x: Self) extends AnyVal {
+  implicit class SimulationApplicationConfigMutableBuilder[Self <: SimulationApplicationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationVersion(value: Version): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
     @scala.inline
-    def setApplication(value: Arn): Self = this.set("application", value.asInstanceOf[js.Any])
+    def setLaunchConfig(value: LaunchConfig): Self = StObject.set(x, "launchConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchConfig(value: LaunchConfig): Self = this.set("launchConfig", value.asInstanceOf[js.Any])
+    def setWorldConfigs(value: WorldConfigs): Self = StObject.set(x, "worldConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationVersion(value: Version): Self = this.set("applicationVersion", value.asInstanceOf[js.Any])
+    def setWorldConfigsUndefined: Self = StObject.set(x, "worldConfigs", js.undefined)
     
     @scala.inline
-    def deleteApplicationVersion: Self = this.set("applicationVersion", js.undefined)
-    
-    @scala.inline
-    def setWorldConfigsVarargs(value: WorldConfig*): Self = this.set("worldConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorldConfigs(value: WorldConfigs): Self = this.set("worldConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldConfigs: Self = this.set("worldConfigs", js.undefined)
+    def setWorldConfigsVarargs(value: WorldConfig*): Self = StObject.set(x, "worldConfigs", js.Array(value :_*))
   }
 }

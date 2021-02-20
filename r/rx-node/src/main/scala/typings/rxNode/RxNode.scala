@@ -1,13 +1,12 @@
 package typings.rxNode
 
 import typings.node.eventsMod.global.NodeJS.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("RxNode")
-@js.native
-object RxNode extends js.Object {
+object RxNode {
   
   @js.native
   trait PublishableEventEmitter extends EventEmitter {

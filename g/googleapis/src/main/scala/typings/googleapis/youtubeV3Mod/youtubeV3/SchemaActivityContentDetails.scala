@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * channel that was subscribed to, etc.
   */
 @js.native
-trait SchemaActivityContentDetails extends js.Object {
+trait SchemaActivityContentDetails extends StObject {
   
   /**
     * The bulletin object contains details about a channel bulletin post. This
@@ -92,84 +93,72 @@ object SchemaActivityContentDetails {
   }
   
   @scala.inline
-  implicit class SchemaActivityContentDetailsOps[Self <: SchemaActivityContentDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaActivityContentDetailsMutableBuilder[Self <: SchemaActivityContentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulletin(value: SchemaActivityContentDetailsBulletin): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulletinUndefined: Self = StObject.set(x, "bulletin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelItem(value: SchemaActivityContentDetailsChannelItem): Self = StObject.set(x, "channelItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulletin(value: SchemaActivityContentDetailsBulletin): Self = this.set("bulletin", value.asInstanceOf[js.Any])
+    def setChannelItemUndefined: Self = StObject.set(x, "channelItem", js.undefined)
     
     @scala.inline
-    def deleteBulletin: Self = this.set("bulletin", js.undefined)
+    def setComment(value: SchemaActivityContentDetailsComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelItem(value: SchemaActivityContentDetailsChannelItem): Self = this.set("channelItem", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteChannelItem: Self = this.set("channelItem", js.undefined)
+    def setFavorite(value: SchemaActivityContentDetailsFavorite): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: SchemaActivityContentDetailsComment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setFavoriteUndefined: Self = StObject.set(x, "favorite", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setLike(value: SchemaActivityContentDetailsLike): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFavorite(value: SchemaActivityContentDetailsFavorite): Self = this.set("favorite", value.asInstanceOf[js.Any])
+    def setLikeUndefined: Self = StObject.set(x, "like", js.undefined)
     
     @scala.inline
-    def deleteFavorite: Self = this.set("favorite", js.undefined)
+    def setPlaylistItem(value: SchemaActivityContentDetailsPlaylistItem): Self = StObject.set(x, "playlistItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLike(value: SchemaActivityContentDetailsLike): Self = this.set("like", value.asInstanceOf[js.Any])
+    def setPlaylistItemUndefined: Self = StObject.set(x, "playlistItem", js.undefined)
     
     @scala.inline
-    def deleteLike: Self = this.set("like", js.undefined)
+    def setPromotedItem(value: SchemaActivityContentDetailsPromotedItem): Self = StObject.set(x, "promotedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylistItem(value: SchemaActivityContentDetailsPlaylistItem): Self = this.set("playlistItem", value.asInstanceOf[js.Any])
+    def setPromotedItemUndefined: Self = StObject.set(x, "promotedItem", js.undefined)
     
     @scala.inline
-    def deletePlaylistItem: Self = this.set("playlistItem", js.undefined)
+    def setRecommendation(value: SchemaActivityContentDetailsRecommendation): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotedItem(value: SchemaActivityContentDetailsPromotedItem): Self = this.set("promotedItem", value.asInstanceOf[js.Any])
+    def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
     
     @scala.inline
-    def deletePromotedItem: Self = this.set("promotedItem", js.undefined)
+    def setSocial(value: SchemaActivityContentDetailsSocial): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendation(value: SchemaActivityContentDetailsRecommendation): Self = this.set("recommendation", value.asInstanceOf[js.Any])
+    def setSocialUndefined: Self = StObject.set(x, "social", js.undefined)
     
     @scala.inline
-    def deleteRecommendation: Self = this.set("recommendation", js.undefined)
+    def setSubscription(value: SchemaActivityContentDetailsSubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocial(value: SchemaActivityContentDetailsSocial): Self = this.set("social", value.asInstanceOf[js.Any])
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
     @scala.inline
-    def deleteSocial: Self = this.set("social", js.undefined)
+    def setUpload(value: SchemaActivityContentDetailsUpload): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription(value: SchemaActivityContentDetailsSubscription): Self = this.set("subscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscription: Self = this.set("subscription", js.undefined)
-    
-    @scala.inline
-    def setUpload(value: SchemaActivityContentDetailsUpload): Self = this.set("upload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpload: Self = this.set("upload", js.undefined)
+    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.container
 
 import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,27 +39,15 @@ object XImplicitIDAccess {
   }
   
   @scala.inline
-  implicit class XImplicitIDAccessOps[Self <: XImplicitIDAccess] (val x: Self) extends AnyVal {
+  implicit class XImplicitIDAccessMutableBuilder[Self <: XImplicitIDAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetByImplicitID(value: String => js.Any): Self = StObject.set(x, "getByImplicitID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetImplicitIDs(value: () => SafeArray[String]): Self = StObject.set(x, "getImplicitIDs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImplicitIDs(value: SafeArray[String]): Self = this.set("ImplicitIDs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetByImplicitID(value: String => js.Any): Self = this.set("getByImplicitID", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetImplicitIDs(value: () => SafeArray[String]): Self = this.set("getImplicitIDs", js.Any.fromFunction0(value))
+    def setImplicitIDs(value: SafeArray[String]): Self = StObject.set(x, "ImplicitIDs", value.asInstanceOf[js.Any])
   }
 }

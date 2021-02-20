@@ -1,11 +1,12 @@
 package typings.openseadragon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TControlOptions extends js.Object {
+trait TControlOptions extends StObject {
   
   var anchor: js.UndefOr[ControlAnchor] = js.native
   
@@ -22,36 +23,24 @@ object TControlOptions {
   }
   
   @scala.inline
-  implicit class TControlOptionsOps[Self <: TControlOptions] (val x: Self) extends AnyVal {
+  implicit class TControlOptionsMutableBuilder[Self <: TControlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachToViewer(value: Boolean): Self = StObject.set(x, "attachToViewer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: ControlAnchor): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setAttachToViewerUndefined: Self = StObject.set(x, "attachToViewer", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setAutoFade(value: Boolean): Self = StObject.set(x, "autoFade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachToViewer(value: Boolean): Self = this.set("attachToViewer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachToViewer: Self = this.set("attachToViewer", js.undefined)
-    
-    @scala.inline
-    def setAutoFade(value: Boolean): Self = this.set("autoFade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoFade: Self = this.set("autoFade", js.undefined)
+    def setAutoFadeUndefined: Self = StObject.set(x, "autoFade", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.chromeApps.WebView
 
 import typings.chromeApps.chrome.webViewRequest.OnMessageEvent
 import typings.chromeApps.chrome.webViewRequest.OnRequestEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @example const rule = { conditions: [ new chrome.webViewRequest.RequestMatcher({ url: { hostSuffix: 'example.com' } }) ], actions: [ new chrome.webViewRequest.CancelRequest() ] }; myWebview.request.onRequest.addRules([rule]);
   **/
 @js.native
-trait WebRequestEventInterface extends js.Object {
+trait WebRequestEventInterface extends StObject {
   
   /**
     * Fired when an authentication failure is received.
@@ -109,51 +110,39 @@ object WebRequestEventInterface {
   }
   
   @scala.inline
-  implicit class WebRequestEventInterfaceOps[Self <: WebRequestEventInterface] (val x: Self) extends AnyVal {
+  implicit class WebRequestEventInterfaceMutableBuilder[Self <: WebRequestEventInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnAuthRequired(value: WebAuthenticationChallengeEvent): Self = StObject.set(x, "onAuthRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnBeforeRedirect(value: WebRedirectionResponseEvent): Self = StObject.set(x, "onBeforeRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnBeforeRequest(value: WebRequestBodyEvent): Self = StObject.set(x, "onBeforeRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAuthRequired(value: WebAuthenticationChallengeEvent): Self = this.set("onAuthRequired", value.asInstanceOf[js.Any])
+    def setOnBeforeSendHeaders(value: WebRequestHeadersEvent): Self = StObject.set(x, "onBeforeSendHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBeforeRedirect(value: WebRedirectionResponseEvent): Self = this.set("onBeforeRedirect", value.asInstanceOf[js.Any])
+    def setOnCompleted(value: WebResponseCacheEvent): Self = StObject.set(x, "onCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBeforeRequest(value: WebRequestBodyEvent): Self = this.set("onBeforeRequest", value.asInstanceOf[js.Any])
+    def setOnErrorOccured(value: WebResponseErrorEvent): Self = StObject.set(x, "onErrorOccured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBeforeSendHeaders(value: WebRequestHeadersEvent): Self = this.set("onBeforeSendHeaders", value.asInstanceOf[js.Any])
+    def setOnHeadersReceived(value: WebResponseHeadersEvent): Self = StObject.set(x, "onHeadersReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCompleted(value: WebResponseCacheEvent): Self = this.set("onCompleted", value.asInstanceOf[js.Any])
+    def setOnMessage(value: OnMessageEvent): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnErrorOccured(value: WebResponseErrorEvent): Self = this.set("onErrorOccured", value.asInstanceOf[js.Any])
+    def setOnRequest(value: OnRequestEvent): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHeadersReceived(value: WebResponseHeadersEvent): Self = this.set("onHeadersReceived", value.asInstanceOf[js.Any])
+    def setOnResponseStarted(value: WebResponseCacheEvent): Self = StObject.set(x, "onResponseStarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMessage(value: OnMessageEvent): Self = this.set("onMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnRequest(value: OnRequestEvent): Self = this.set("onRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnResponseStarted(value: WebResponseCacheEvent): Self = this.set("onResponseStarted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnSendHeaders(value: WebRequestHeadersEvent): Self = this.set("onSendHeaders", value.asInstanceOf[js.Any])
+    def setOnSendHeaders(value: WebRequestHeadersEvent): Self = StObject.set(x, "onSendHeaders", value.asInstanceOf[js.Any])
   }
 }

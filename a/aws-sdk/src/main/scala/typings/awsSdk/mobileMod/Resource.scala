@@ -1,11 +1,12 @@
 package typings.awsSdk.mobileMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Resource extends js.Object {
+trait Resource extends StObject {
   
   var arn: js.UndefOr[ResourceArn] = js.native
   
@@ -26,48 +27,36 @@ object Resource {
   }
   
   @scala.inline
-  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: ResourceArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: ResourceArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeature(value: Feature): Self = this.set("feature", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFeature: Self = this.set("feature", js.undefined)
+    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setType(value: ResourceType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

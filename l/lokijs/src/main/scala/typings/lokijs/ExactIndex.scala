@@ -1,12 +1,13 @@
 package typings.lokijs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExactIndex[E /* <: js.Object */] extends js.Object {
+trait ExactIndex[E /* <: js.Object */] extends StObject {
   
   // clear will zap the index
   def clear(): Unit = js.native

@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * EnvVarSource represents a source for the value of an EnvVar.
   */
 @js.native
-trait EnvVarSource extends js.Object {
+trait EnvVarSource extends StObject {
   
   /**
     * Selects a key of a ConfigMap.
@@ -44,30 +45,18 @@ object EnvVarSource {
   }
   
   @scala.inline
-  implicit class EnvVarSourceOps[Self <: EnvVarSource] (val x: Self) extends AnyVal {
+  implicit class EnvVarSourceMutableBuilder[Self <: EnvVarSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigMapKeyRef(value: ConfigMapKeySelector): Self = StObject.set(x, "configMapKeyRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldRef(value: ObjectFieldSelector): Self = StObject.set(x, "fieldRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceFieldRef(value: ResourceFieldSelector): Self = StObject.set(x, "resourceFieldRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigMapKeyRef(value: ConfigMapKeySelector): Self = this.set("configMapKeyRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldRef(value: ObjectFieldSelector): Self = this.set("fieldRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceFieldRef(value: ResourceFieldSelector): Self = this.set("resourceFieldRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretKeyRef(value: SecretKeySelector): Self = this.set("secretKeyRef", value.asInstanceOf[js.Any])
+    def setSecretKeyRef(value: SecretKeySelector): Self = StObject.set(x, "secretKeyRef", value.asInstanceOf[js.Any])
   }
 }

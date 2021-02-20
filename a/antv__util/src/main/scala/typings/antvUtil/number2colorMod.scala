@@ -1,12 +1,13 @@
 package typings.antvUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/util/lib/number2color", JSImport.Namespace)
-@js.native
-object number2colorMod extends js.Object {
+object number2colorMod {
   
+  @JSImport("@antv/util/lib/number2color", JSImport.Default)
+  @js.native
   def default(num: Double): String = js.native
 }

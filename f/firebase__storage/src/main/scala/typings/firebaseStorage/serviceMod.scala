@@ -4,14 +4,14 @@ import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseStorage.anon.Delete
 import typings.firebaseStorage.srcServiceMod.StorageService
 import typings.firebaseStorageTypes.mod.FirebaseStorage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/compat/service", JSImport.Namespace)
-@js.native
-object serviceMod extends js.Object {
+object serviceMod {
   
+  @JSImport("@firebase/storage/dist/compat/service", "StorageServiceCompat")
   @js.native
   class StorageServiceCompat protected () extends FirebaseStorage {
     def this(app: FirebaseApp, _delegate: StorageService) = this()

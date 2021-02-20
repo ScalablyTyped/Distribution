@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebXRState extends js.Object
+sealed trait WebXRState extends StObject
 @JSGlobal("BABYLON.WebXRState")
 @js.native
-object WebXRState extends js.Object {
+object WebXRState extends StObject {
   
   /**
     * Transitioning to being in XR mode

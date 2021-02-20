@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,57 +38,45 @@ object Endpoint {
   }
   
   @scala.inline
-  implicit class EndpointOps[Self <: Endpoint] (val x: Self) extends AnyVal {
+  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapability(value: String): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilityUndefined: Self = StObject.set(x, "capability", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviderId(value: NullableOption[String]): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapability(value: String): Self = this.set("capability", value.asInstanceOf[js.Any])
+    def setProviderIdNull: Self = StObject.set(x, "providerId", null)
     
     @scala.inline
-    def deleteCapability: Self = this.set("capability", js.undefined)
+    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
     
     @scala.inline
-    def setProviderId(value: NullableOption[String]): Self = this.set("providerId", value.asInstanceOf[js.Any])
+    def setProviderName(value: NullableOption[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProviderId: Self = this.set("providerId", js.undefined)
+    def setProviderNameNull: Self = StObject.set(x, "providerName", null)
     
     @scala.inline
-    def setProviderIdNull: Self = this.set("providerId", null)
+    def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
     
     @scala.inline
-    def setProviderName(value: NullableOption[String]): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    def setProviderResourceId(value: NullableOption[String]): Self = StObject.set(x, "providerResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProviderName: Self = this.set("providerName", js.undefined)
+    def setProviderResourceIdNull: Self = StObject.set(x, "providerResourceId", null)
     
     @scala.inline
-    def setProviderNameNull: Self = this.set("providerName", null)
+    def setProviderResourceIdUndefined: Self = StObject.set(x, "providerResourceId", js.undefined)
     
     @scala.inline
-    def setProviderResourceId(value: NullableOption[String]): Self = this.set("providerResourceId", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProviderResourceId: Self = this.set("providerResourceId", js.undefined)
-    
-    @scala.inline
-    def setProviderResourceIdNull: Self = this.set("providerResourceId", null)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

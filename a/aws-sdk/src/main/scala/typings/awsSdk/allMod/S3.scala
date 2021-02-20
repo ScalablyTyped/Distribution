@@ -3,6 +3,7 @@ package typings.awsSdk.allMod
 import typings.awsSdk.managedUploadMod.ManagedUpload.ManagedUploadOptions
 import typings.awsSdk.s3Mod.ClientConfiguration
 import typings.awsSdk.s3Mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class S3 () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-@JSImport("aws-sdk/clients/all", "S3")
-@js.native
-object S3 extends js.Object {
+object S3 {
   
+  @JSImport("aws-sdk/clients/all", "S3.ManagedUpload")
   @js.native
   class ManagedUpload protected ()
     extends typings.awsSdk.s3Mod.ManagedUpload {
@@ -28,23 +28,35 @@ object S3 extends js.Object {
     def this(options: ManagedUploadOptions) = this()
   }
   /* static members */
-  @js.native
-  object ManagedUpload extends js.Object {
+  object ManagedUpload {
+    
+    @JSImport("aws-sdk/clients/all", "S3.ManagedUpload")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Default value: 10000
       */
-    var maxTotalParts: Double = js.native
+    @JSImport("aws-sdk/clients/all", "S3.ManagedUpload.maxTotalParts")
+    @js.native
+    def maxTotalParts: Double = js.native
+    @scala.inline
+    def maxTotalParts_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxTotalParts")(x.asInstanceOf[js.Any])
     
     /**
       * Returns the minimum number of bytes for an individual part upload.
       * Note: Minimum allowed size is 5 MB.
       * 1024 * 5
       */
-    var minPartSize: Double = js.native
+    @JSImport("aws-sdk/clients/all", "S3.ManagedUpload.minPartSize")
+    @js.native
+    def minPartSize: Double = js.native
+    @scala.inline
+    def minPartSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPartSize")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("aws-sdk/clients/all", "S3.PresignedPost")
   @js.native
   class PresignedPost ()
-    extends typings.awsSdk.presignedPostMod.PresignedPost
+    extends typings.awsSdk.s3Mod.PresignedPost
 }

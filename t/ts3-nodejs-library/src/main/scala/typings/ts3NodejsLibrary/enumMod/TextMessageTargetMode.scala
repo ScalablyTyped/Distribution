@@ -1,15 +1,15 @@
 package typings.ts3NodejsLibrary.enumMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextMessageTargetMode extends js.Object
+sealed trait TextMessageTargetMode extends StObject
 @JSImport("ts3-nodejs-library/lib/types/enum", "TextMessageTargetMode")
 @js.native
-object TextMessageTargetMode extends js.Object {
+object TextMessageTargetMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextMessageTargetMode with Double] = js.native
@@ -17,18 +17,15 @@ object TextMessageTargetMode extends js.Object {
   /** target is a channel */
   @js.native
   sealed trait CHANNEL extends TextMessageTargetMode
-  /* 2 */ @js.native
-  object CHANNEL extends TopLevel[CHANNEL with Double]
+  /* 2 */ val CHANNEL: typings.ts3NodejsLibrary.enumMod.TextMessageTargetMode.CHANNEL with Double = js.native
   
   /** target is a client */
   @js.native
   sealed trait CLIENT extends TextMessageTargetMode
-  /* 1 */ @js.native
-  object CLIENT extends TopLevel[CLIENT with Double]
+  /* 1 */ val CLIENT: typings.ts3NodejsLibrary.enumMod.TextMessageTargetMode.CLIENT with Double = js.native
   
   /** target is a virtual server */
   @js.native
   sealed trait SERVER extends TextMessageTargetMode
-  /* 3 */ @js.native
-  object SERVER extends TopLevel[SERVER with Double]
+  /* 3 */ val SERVER: typings.ts3NodejsLibrary.enumMod.TextMessageTargetMode.SERVER with Double = js.native
 }

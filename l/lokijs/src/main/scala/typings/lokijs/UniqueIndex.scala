@@ -2,12 +2,13 @@ package typings.lokijs
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UniqueIndex[E /* <: js.Object */] extends js.Object {
+trait UniqueIndex[E /* <: js.Object */] extends StObject {
   
   def byId(id: Double): js.UndefOr[E] = js.native
   

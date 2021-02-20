@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,33 +54,21 @@ object XItemListListener {
   }
   
   @scala.inline
-  implicit class XItemListListenerOps[Self <: XItemListListener] (val x: Self) extends AnyVal {
+  implicit class XItemListListenerMutableBuilder[Self <: XItemListListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllItemsRemoved(value: EventObject => Unit): Self = StObject.set(x, "allItemsRemoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemListChanged(value: EventObject => Unit): Self = StObject.set(x, "itemListChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListItemInserted(value: ItemListEvent => Unit): Self = StObject.set(x, "listItemInserted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllItemsRemoved(value: EventObject => Unit): Self = this.set("allItemsRemoved", js.Any.fromFunction1(value))
+    def setListItemModified(value: ItemListEvent => Unit): Self = StObject.set(x, "listItemModified", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemListChanged(value: EventObject => Unit): Self = this.set("itemListChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setListItemInserted(value: ItemListEvent => Unit): Self = this.set("listItemInserted", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setListItemModified(value: ItemListEvent => Unit): Self = this.set("listItemModified", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setListItemRemoved(value: ItemListEvent => Unit): Self = this.set("listItemRemoved", js.Any.fromFunction1(value))
+    def setListItemRemoved(value: ItemListEvent => Unit): Self = StObject.set(x, "listItemRemoved", js.Any.fromFunction1(value))
   }
 }

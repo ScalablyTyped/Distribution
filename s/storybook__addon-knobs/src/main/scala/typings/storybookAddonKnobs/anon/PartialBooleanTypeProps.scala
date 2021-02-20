@@ -2,13 +2,14 @@ package typings.storybookAddonKnobs.anon
 
 import typings.storybookAddonKnobs.booleanMod.BooleanTypeKnob
 import typings.storybookAddonKnobs.booleanMod.BooleanTypeKnobValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Boolean.BooleanTypeProps> */
 @js.native
-trait PartialBooleanTypeProps extends js.Object {
+trait PartialBooleanTypeProps extends StObject {
   
   var knob: js.UndefOr[BooleanTypeKnob] = js.native
   
@@ -23,30 +24,18 @@ object PartialBooleanTypeProps {
   }
   
   @scala.inline
-  implicit class PartialBooleanTypePropsOps[Self <: PartialBooleanTypeProps] (val x: Self) extends AnyVal {
+  implicit class PartialBooleanTypePropsMutableBuilder[Self <: PartialBooleanTypeProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKnob(value: BooleanTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnChange(value: /* value */ BooleanTypeKnobValue => BooleanTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKnob(value: BooleanTypeKnob): Self = this.set("knob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKnob: Self = this.set("knob", js.undefined)
-    
-    @scala.inline
-    def setOnChange(value: /* value */ BooleanTypeKnobValue => BooleanTypeKnobValue): Self = this.set("onChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

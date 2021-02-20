@@ -2,14 +2,14 @@ package typings.plottable
 
 import typings.plottable.dispatcherMod.Dispatcher
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/dispatchers/keyDispatcher", JSImport.Namespace)
-@js.native
-object keyDispatcherMod extends js.Object {
+object keyDispatcherMod {
   
+  @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key")
   @js.native
   /**
     * This constructor should not be invoked directly.
@@ -54,14 +54,29 @@ object keyDispatcherMod extends js.Object {
     def onKeyUp(callback: KeyCallback): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Key extends js.Object {
+  object Key {
     
-    var _DISPATCHER_KEY: js.Any = js.native
+    @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _KEYDOWN_EVENT_NAME: js.Any = js.native
+    @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key._DISPATCHER_KEY")
+    @js.native
+    def _DISPATCHER_KEY: js.Any = js.native
+    @scala.inline
+    def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
     
-    var _KEYUP_EVENT_NAME: js.Any = js.native
+    @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key._KEYDOWN_EVENT_NAME")
+    @js.native
+    def _KEYDOWN_EVENT_NAME: js.Any = js.native
+    @scala.inline
+    def _KEYDOWN_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key._KEYUP_EVENT_NAME")
+    @js.native
+    def _KEYUP_EVENT_NAME: js.Any = js.native
+    @scala.inline
+    def _KEYUP_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYUP_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a Key Dispatcher. If one already exists it will be returned;
@@ -69,6 +84,8 @@ object keyDispatcherMod extends js.Object {
       *
       * @return {Dispatchers.Key}
       */
+    @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key.getDispatcher")
+    @js.native
     def getDispatcher(): typings.plottable.dispatchersMod.Key = js.native
   }
   

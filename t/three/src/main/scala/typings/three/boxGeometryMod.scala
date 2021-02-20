@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.anon.Depth
 import typings.three.geometryMod.Geometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/BoxGeometry", JSImport.Namespace)
-@js.native
-object boxGeometryMod extends js.Object {
+object boxGeometryMod {
   
+  @JSImport("three/src/geometries/BoxGeometry", "BoxGeometry")
   @js.native
   class BoxGeometry protected () extends Geometry {
     /**

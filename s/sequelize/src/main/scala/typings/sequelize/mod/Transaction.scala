@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * To run a query under a transaction, you should pass the transaction in the options object.
   */
 @js.native
-trait Transaction extends js.Object {
+trait Transaction extends StObject {
   
   /**
     * Possible options for row locking. Used in conjuction with `find` calls:
@@ -49,27 +50,15 @@ object Transaction {
   }
   
   @scala.inline
-  implicit class TransactionOps[Self <: Transaction] (val x: Self) extends AnyVal {
+  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommit(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLOCK(value: TransactionLock): Self = StObject.set(x, "LOCK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLOCK(value: TransactionLock): Self = this.set("LOCK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommit(value: () => typings.bluebird.mod.^[Unit]): Self = this.set("commit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRollback(value: () => typings.bluebird.mod.^[Unit]): Self = this.set("rollback", js.Any.fromFunction0(value))
+    def setRollback(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
   }
 }

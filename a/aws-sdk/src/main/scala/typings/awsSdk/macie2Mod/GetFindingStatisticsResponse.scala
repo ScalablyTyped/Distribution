@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetFindingStatisticsResponse extends js.Object {
+trait GetFindingStatisticsResponse extends StObject {
   
   /**
     * An array of objects, one for each group of findings that meet the filter criteria specified in the request.
@@ -21,27 +22,15 @@ object GetFindingStatisticsResponse {
   }
   
   @scala.inline
-  implicit class GetFindingStatisticsResponseOps[Self <: GetFindingStatisticsResponse] (val x: Self) extends AnyVal {
+  implicit class GetFindingStatisticsResponseMutableBuilder[Self <: GetFindingStatisticsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountsByGroup(value: listOfGroupCount): Self = StObject.set(x, "countsByGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountsByGroupUndefined: Self = StObject.set(x, "countsByGroup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountsByGroupVarargs(value: GroupCount*): Self = this.set("countsByGroup", js.Array(value :_*))
-    
-    @scala.inline
-    def setCountsByGroup(value: listOfGroupCount): Self = this.set("countsByGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCountsByGroup: Self = this.set("countsByGroup", js.undefined)
+    def setCountsByGroupVarargs(value: GroupCount*): Self = StObject.set(x, "countsByGroup", js.Array(value :_*))
   }
 }

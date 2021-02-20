@@ -5,6 +5,7 @@ import typings.std.EventTarget
 import typings.webBluetooth.webBluetoothStrings.serviceadded
 import typings.webBluetooth.webBluetoothStrings.servicechanged
 import typings.webBluetooth.webBluetoothStrings.serviceremoved
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

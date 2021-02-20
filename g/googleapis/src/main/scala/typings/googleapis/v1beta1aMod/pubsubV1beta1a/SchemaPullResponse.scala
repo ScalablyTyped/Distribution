@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of these two must be populated.
   */
 @js.native
-trait SchemaPullResponse extends js.Object {
+trait SchemaPullResponse extends StObject {
   
   /**
     * This ID must be used to acknowledge the received event or message.
@@ -30,30 +31,18 @@ object SchemaPullResponse {
   }
   
   @scala.inline
-  implicit class SchemaPullResponseOps[Self <: SchemaPullResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaPullResponseMutableBuilder[Self <: SchemaPullResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPubsubEvent(value: SchemaPubsubEvent): Self = StObject.set(x, "pubsubEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAckId(value: String): Self = this.set("ackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAckId: Self = this.set("ackId", js.undefined)
-    
-    @scala.inline
-    def setPubsubEvent(value: SchemaPubsubEvent): Self = this.set("pubsubEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubsubEvent: Self = this.set("pubsubEvent", js.undefined)
+    def setPubsubEventUndefined: Self = StObject.set(x, "pubsubEvent", js.undefined)
   }
 }

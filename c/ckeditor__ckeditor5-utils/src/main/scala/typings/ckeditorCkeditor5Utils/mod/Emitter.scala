@@ -2,12 +2,13 @@ package typings.ckeditorCkeditor5Utils.mod
 
 import typings.ckeditorCkeditor5Utils.anon.Priority
 import typings.ckeditorCkeditor5Utils.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Emitter extends js.Object {
+trait Emitter extends StObject {
   
   def delegate(events: String*): EmitterMixinDelegateChain = js.native
   

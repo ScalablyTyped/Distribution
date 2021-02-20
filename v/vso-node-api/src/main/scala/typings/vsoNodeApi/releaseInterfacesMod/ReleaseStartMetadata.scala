@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseStartMetadata extends js.Object {
+trait ReleaseStartMetadata extends StObject {
   
   /**
     * Sets list of artifact to create a release.
@@ -56,45 +57,33 @@ object ReleaseStartMetadata {
   }
   
   @scala.inline
-  implicit class ReleaseStartMetadataOps[Self <: ReleaseStartMetadata] (val x: Self) extends AnyVal {
+  implicit class ReleaseStartMetadataMutableBuilder[Self <: ReleaseStartMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts(value: js.Array[ArtifactMetadata]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactsVarargs(value: ArtifactMetadata*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactsVarargs(value: ArtifactMetadata*): Self = this.set("artifacts", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifacts(value: js.Array[ArtifactMetadata]): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    def setIsDraft(value: Boolean): Self = StObject.set(x, "isDraft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionId(value: Double): Self = this.set("definitionId", value.asInstanceOf[js.Any])
+    def setManualEnvironments(value: js.Array[String]): Self = StObject.set(x, "manualEnvironments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setManualEnvironmentsVarargs(value: String*): Self = StObject.set(x, "manualEnvironments", js.Array(value :_*))
     
     @scala.inline
-    def setIsDraft(value: Boolean): Self = this.set("isDraft", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualEnvironmentsVarargs(value: String*): Self = this.set("manualEnvironments", js.Array(value :_*))
-    
-    @scala.inline
-    def setManualEnvironments(value: js.Array[String]): Self = this.set("manualEnvironments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: ReleaseReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReason(value: ReleaseReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

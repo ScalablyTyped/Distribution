@@ -1,13 +1,14 @@
 package typings.typescript.mod
 
 import typings.typescript.mod.SyntaxKind.Parameter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typescript.typescript.ParameterDeclaration & {  parent :typescript.typescript.ConstructorDeclaration,   name :typescript.typescript.Identifier} */
 @js.native
-trait ParameterPropertyDeclaration extends js.Object {
+trait ParameterPropertyDeclaration extends StObject {
   
   var _declarationBrand: js.Any = js.native
   

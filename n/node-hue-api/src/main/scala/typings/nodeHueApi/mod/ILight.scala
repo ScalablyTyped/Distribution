@@ -2,12 +2,13 @@ package typings.nodeHueApi.mod
 
 import typings.nodeHueApi.anon.Alert
 import typings.nodeHueApi.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILight extends js.Object {
+trait ILight extends StObject {
   
   var id: js.UndefOr[String] = js.native
   
@@ -45,51 +46,39 @@ object ILight {
   }
   
   @scala.inline
-  implicit class ILightOps[Self <: ILight] (val x: Self) extends AnyVal {
+  implicit class ILightMutableBuilder[Self <: ILight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManufacturername(value: String): Self = StObject.set(x, "manufacturername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturername(value: String): Self = this.set("manufacturername", value.asInstanceOf[js.Any])
+    def setModelid(value: String): Self = StObject.set(x, "modelid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelid(value: String): Self = this.set("modelid", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPointsymbol(value: `1`): Self = StObject.set(x, "pointsymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: Alert): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setPointsymbolUndefined: Self = StObject.set(x, "pointsymbol", js.undefined)
     
     @scala.inline
-    def setSwversion(value: String): Self = this.set("swversion", value.asInstanceOf[js.Any])
+    def setState(value: Alert): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSwversion(value: String): Self = StObject.set(x, "swversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniqueid(value: String): Self = this.set("uniqueid", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setPointsymbol(value: `1`): Self = this.set("pointsymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointsymbol: Self = this.set("pointsymbol", js.undefined)
+    def setUniqueid(value: String): Self = StObject.set(x, "uniqueid", value.asInstanceOf[js.Any])
   }
 }

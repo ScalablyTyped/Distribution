@@ -1,11 +1,12 @@
 package typings.hystrixjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricsProperties extends js.Object {
+trait MetricsProperties extends StObject {
   
   var commandGroup: String = js.native
   
@@ -28,48 +29,36 @@ object MetricsProperties {
   }
   
   @scala.inline
-  implicit class MetricsPropertiesOps[Self <: MetricsProperties] (val x: Self) extends AnyVal {
+  implicit class MetricsPropertiesMutableBuilder[Self <: MetricsProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommandGroup(value: String): Self = StObject.set(x, "commandGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandKey(value: String): Self = StObject.set(x, "commandKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPercentileWindowNumberOfBuckets(value: Double): Self = StObject.set(x, "percentileWindowNumberOfBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandGroup(value: String): Self = this.set("commandGroup", value.asInstanceOf[js.Any])
+    def setPercentileWindowNumberOfBucketsUndefined: Self = StObject.set(x, "percentileWindowNumberOfBuckets", js.undefined)
     
     @scala.inline
-    def setCommandKey(value: String): Self = this.set("commandKey", value.asInstanceOf[js.Any])
+    def setPercentileWindowTimeInMilliSeconds(value: Double): Self = StObject.set(x, "percentileWindowTimeInMilliSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentileWindowNumberOfBuckets(value: Double): Self = this.set("percentileWindowNumberOfBuckets", value.asInstanceOf[js.Any])
+    def setPercentileWindowTimeInMilliSecondsUndefined: Self = StObject.set(x, "percentileWindowTimeInMilliSeconds", js.undefined)
     
     @scala.inline
-    def deletePercentileWindowNumberOfBuckets: Self = this.set("percentileWindowNumberOfBuckets", js.undefined)
+    def setStatisticalWindowNumberOfBuckets(value: Double): Self = StObject.set(x, "statisticalWindowNumberOfBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentileWindowTimeInMilliSeconds(value: Double): Self = this.set("percentileWindowTimeInMilliSeconds", value.asInstanceOf[js.Any])
+    def setStatisticalWindowNumberOfBucketsUndefined: Self = StObject.set(x, "statisticalWindowNumberOfBuckets", js.undefined)
     
     @scala.inline
-    def deletePercentileWindowTimeInMilliSeconds: Self = this.set("percentileWindowTimeInMilliSeconds", js.undefined)
+    def setStatisticalWindowTimeInMilliSeconds(value: Double): Self = StObject.set(x, "statisticalWindowTimeInMilliSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatisticalWindowNumberOfBuckets(value: Double): Self = this.set("statisticalWindowNumberOfBuckets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatisticalWindowNumberOfBuckets: Self = this.set("statisticalWindowNumberOfBuckets", js.undefined)
-    
-    @scala.inline
-    def setStatisticalWindowTimeInMilliSeconds(value: Double): Self = this.set("statisticalWindowTimeInMilliSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatisticalWindowTimeInMilliSeconds: Self = this.set("statisticalWindowTimeInMilliSeconds", js.undefined)
+    def setStatisticalWindowTimeInMilliSecondsUndefined: Self = StObject.set(x, "statisticalWindowTimeInMilliSeconds", js.undefined)
   }
 }

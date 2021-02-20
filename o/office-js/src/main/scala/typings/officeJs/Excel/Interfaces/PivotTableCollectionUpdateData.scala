@@ -1,12 +1,13 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PivotTableCollection object, for use in `pivotTableCollection.set({ ... })`. */
 @js.native
-trait PivotTableCollectionUpdateData extends js.Object {
+trait PivotTableCollectionUpdateData extends StObject {
   
   var items: js.UndefOr[js.Array[PivotTableData]] = js.native
 }
@@ -19,27 +20,15 @@ object PivotTableCollectionUpdateData {
   }
   
   @scala.inline
-  implicit class PivotTableCollectionUpdateDataOps[Self <: PivotTableCollectionUpdateData] (val x: Self) extends AnyVal {
+  implicit class PivotTableCollectionUpdateDataMutableBuilder[Self <: PivotTableCollectionUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[PivotTableData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemsVarargs(value: PivotTableData*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[PivotTableData]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: PivotTableData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

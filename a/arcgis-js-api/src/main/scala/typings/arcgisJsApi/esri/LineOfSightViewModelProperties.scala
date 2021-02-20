@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineOfSightViewModelProperties extends js.Object {
+trait LineOfSightViewModelProperties extends StObject {
   
   /**
     * The observer's viewpoint from which lines of sight will be drawn towards the targets.
@@ -37,39 +38,27 @@ object LineOfSightViewModelProperties {
   }
   
   @scala.inline
-  implicit class LineOfSightViewModelPropertiesOps[Self <: LineOfSightViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class LineOfSightViewModelPropertiesMutableBuilder[Self <: LineOfSightViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObserver(value: PointProperties): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargets(value: CollectionProperties[LineOfSightTargetProperties]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserver(value: PointProperties): Self = this.set("observer", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
     @scala.inline
-    def deleteObserver: Self = this.set("observer", js.undefined)
+    def setTargetsVarargs(value: LineOfSightTargetProperties*): Self = StObject.set(x, "targets", js.Array(value :_*))
     
     @scala.inline
-    def setTargetsVarargs(value: LineOfSightTargetProperties*): Self = this.set("targets", js.Array(value :_*))
+    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargets(value: CollectionProperties[LineOfSightTargetProperties]): Self = this.set("targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargets: Self = this.set("targets", js.undefined)
-    
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

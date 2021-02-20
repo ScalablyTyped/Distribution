@@ -1,13 +1,14 @@
 package typings.fundamentalReact.anon
 
 import typings.react.mod.Validator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/StepInput/StepInput.StepInputProps> */
 @js.native
-trait WeakValidationMapStepInpu extends js.Object {
+trait WeakValidationMapStepInpu extends StObject {
   
   var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
   
@@ -34,66 +35,54 @@ object WeakValidationMapStepInpu {
   }
   
   @scala.inline
-  implicit class WeakValidationMapStepInpuOps[Self <: WeakValidationMapStepInpu] (val x: Self) extends AnyVal {
+  implicit class WeakValidationMapStepInpuMutableBuilder[Self <: WeakValidationMapStepInpu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    def setLocalizedText(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setPlaceholder(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizedText(value: Validator[js.UndefOr[_ | Null]]): Self = this.set("localizedText", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteLocalizedText: Self = this.set("localizedText", js.undefined)
+    def setReadOnly(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: Validator[js.UndefOr[Null | String]]): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setValidationState(value: Validator[js.UndefOr[Null | State]]): Self = StObject.set(x, "validationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setValidationStateUndefined: Self = StObject.set(x, "validationState", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setValue(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationState(value: Validator[js.UndefOr[Null | State]]): Self = this.set("validationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationState: Self = this.set("validationState", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

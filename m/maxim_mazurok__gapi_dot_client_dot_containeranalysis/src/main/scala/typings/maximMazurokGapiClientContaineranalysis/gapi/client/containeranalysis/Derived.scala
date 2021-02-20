@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Derived extends js.Object {
+trait Derived extends StObject {
   
   /** Output only. This contains the base image URL for the derived image occurrence. */
   var baseResourceUrl: js.UndefOr[String] = js.native
@@ -31,45 +32,33 @@ object Derived {
   }
   
   @scala.inline
-  implicit class DerivedOps[Self <: Derived] (val x: Self) extends AnyVal {
+  implicit class DerivedMutableBuilder[Self <: Derived] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseResourceUrl(value: String): Self = StObject.set(x, "baseResourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseResourceUrlUndefined: Self = StObject.set(x, "baseResourceUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseResourceUrl(value: String): Self = this.set("baseResourceUrl", value.asInstanceOf[js.Any])
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def deleteBaseResourceUrl: Self = this.set("baseResourceUrl", js.undefined)
+    def setFingerprint(value: Fingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setLayerInfo(value: js.Array[Layer]): Self = StObject.set(x, "layerInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: Fingerprint): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setLayerInfoUndefined: Self = StObject.set(x, "layerInfo", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
-    
-    @scala.inline
-    def setLayerInfoVarargs(value: Layer*): Self = this.set("layerInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayerInfo(value: js.Array[Layer]): Self = this.set("layerInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayerInfo: Self = this.set("layerInfo", js.undefined)
+    def setLayerInfoVarargs(value: Layer*): Self = StObject.set(x, "layerInfo", js.Array(value :_*))
   }
 }

@@ -1,16 +1,29 @@
 package typings.requirejs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("module", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("module", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("module", "config")
+  @js.native
   def config(): js.Any = js.native
   
-  var id: String = js.native
+  @JSImport("module", "id")
+  @js.native
+  def id: String = js.native
+  @scala.inline
+  def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   
-  var uri: String = js.native
+  @JSImport("module", "uri")
+  @js.native
+  def uri: String = js.native
+  @scala.inline
+  def uri_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uri")(x.asInstanceOf[js.Any])
 }

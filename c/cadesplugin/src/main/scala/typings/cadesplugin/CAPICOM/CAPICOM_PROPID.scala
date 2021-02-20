@@ -37,6 +37,7 @@ import typings.cadesplugin.cadespluginNumbers.`6`
 import typings.cadesplugin.cadespluginNumbers.`7`
 import typings.cadesplugin.cadespluginNumbers.`8`
 import typings.cadesplugin.cadespluginNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -169,132 +170,120 @@ object CAPICOM_PROPID {
   }
   
   @scala.inline
-  implicit class CAPICOM_PROPIDOps[Self <: CAPICOM_PROPID] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_PROPIDMutableBuilder[Self <: CAPICOM_PROPID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_PROPID_ACCESS_STATE(value: `14`): Self = StObject.set(x, "CAPICOM_PROPID_ACCESS_STATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_PROPID_ARCHIVED(value: `19`): Self = StObject.set(x, "CAPICOM_PROPID_ARCHIVED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCAPICOM_PROPID_ARCHIVED_KEY_HASH(value: `65`): Self = StObject.set(x, "CAPICOM_PROPID_ARCHIVED_KEY_HASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_ACCESS_STATE(value: `14`): Self = this.set("CAPICOM_PROPID_ACCESS_STATE", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_AUTO_ENROLL(value: `21`): Self = StObject.set(x, "CAPICOM_PROPID_AUTO_ENROLL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_ARCHIVED(value: `19`): Self = this.set("CAPICOM_PROPID_ARCHIVED", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_CROSS_CERT_DIST_POINTS(value: `23`): Self = StObject.set(x, "CAPICOM_PROPID_CROSS_CERT_DIST_POINTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_ARCHIVED_KEY_HASH(value: `65`): Self = this.set("CAPICOM_PROPID_ARCHIVED_KEY_HASH", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_CTL_USAGE(value: `9`): Self = StObject.set(x, "CAPICOM_PROPID_CTL_USAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_AUTO_ENROLL(value: `21`): Self = this.set("CAPICOM_PROPID_AUTO_ENROLL", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_DATE_STAMP(value: `27`): Self = StObject.set(x, "CAPICOM_PROPID_DATE_STAMP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_CROSS_CERT_DIST_POINTS(value: `23`): Self = this.set("CAPICOM_PROPID_CROSS_CERT_DIST_POINTS", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_DESCRIPTION(value: `13`): Self = StObject.set(x, "CAPICOM_PROPID_DESCRIPTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_CTL_USAGE(value: `9`): Self = this.set("CAPICOM_PROPID_CTL_USAGE", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_EFS(value: `17`): Self = StObject.set(x, "CAPICOM_PROPID_EFS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_DATE_STAMP(value: `27`): Self = this.set("CAPICOM_PROPID_DATE_STAMP", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_ENROLLMENT(value: `26`): Self = StObject.set(x, "CAPICOM_PROPID_ENROLLMENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_DESCRIPTION(value: `13`): Self = this.set("CAPICOM_PROPID_DESCRIPTION", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_EXTENDED_ERROR_INFO(value: `30`): Self = StObject.set(x, "CAPICOM_PROPID_EXTENDED_ERROR_INFO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_EFS(value: `17`): Self = this.set("CAPICOM_PROPID_EFS", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_FIRST_RESERVED(value: `66`): Self = StObject.set(x, "CAPICOM_PROPID_FIRST_RESERVED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_ENROLLMENT(value: `26`): Self = this.set("CAPICOM_PROPID_ENROLLMENT", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_FIRST_USER(value: `32768`): Self = StObject.set(x, "CAPICOM_PROPID_FIRST_USER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_EXTENDED_ERROR_INFO(value: `30`): Self = this.set("CAPICOM_PROPID_EXTENDED_ERROR_INFO", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_FORTEZZA_DATA(value: `18`): Self = StObject.set(x, "CAPICOM_PROPID_FORTEZZA_DATA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_FIRST_RESERVED(value: `66`): Self = this.set("CAPICOM_PROPID_FIRST_RESERVED", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_FRIENDLY_NAME(value: `11`): Self = StObject.set(x, "CAPICOM_PROPID_FRIENDLY_NAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_FIRST_USER(value: `32768`): Self = this.set("CAPICOM_PROPID_FIRST_USER", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_HASH_PROP(value: `3`): Self = StObject.set(x, "CAPICOM_PROPID_HASH_PROP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_FORTEZZA_DATA(value: `18`): Self = this.set("CAPICOM_PROPID_FORTEZZA_DATA", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_IE30_RESERVED(value: `7`): Self = StObject.set(x, "CAPICOM_PROPID_IE30_RESERVED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_FRIENDLY_NAME(value: `11`): Self = this.set("CAPICOM_PROPID_FRIENDLY_NAME", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_ISSUER_PUBLIC_KEY_MD5_HASH(value: `24`): Self = StObject.set(x, "CAPICOM_PROPID_ISSUER_PUBLIC_KEY_MD5_HASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_HASH_PROP(value: `3`): Self = this.set("CAPICOM_PROPID_HASH_PROP", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_ISSUER_SERIAL_NUMBER_MD5_HASH(value: `28`): Self = StObject.set(x, "CAPICOM_PROPID_ISSUER_SERIAL_NUMBER_MD5_HASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_IE30_RESERVED(value: `7`): Self = this.set("CAPICOM_PROPID_IE30_RESERVED", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_KEY_CONTEXT(value: `5`): Self = StObject.set(x, "CAPICOM_PROPID_KEY_CONTEXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_ISSUER_PUBLIC_KEY_MD5_HASH(value: `24`): Self = this.set("CAPICOM_PROPID_ISSUER_PUBLIC_KEY_MD5_HASH", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_KEY_IDENTIFIER(value: `20`): Self = StObject.set(x, "CAPICOM_PROPID_KEY_IDENTIFIER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_ISSUER_SERIAL_NUMBER_MD5_HASH(value: `28`): Self = this.set("CAPICOM_PROPID_ISSUER_SERIAL_NUMBER_MD5_HASH", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_KEY_PROV_HANDLE(value: `1`): Self = StObject.set(x, "CAPICOM_PROPID_KEY_PROV_HANDLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_KEY_CONTEXT(value: `5`): Self = this.set("CAPICOM_PROPID_KEY_CONTEXT", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_KEY_PROV_INFO(value: `2`): Self = StObject.set(x, "CAPICOM_PROPID_KEY_PROV_INFO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_KEY_IDENTIFIER(value: `20`): Self = this.set("CAPICOM_PROPID_KEY_IDENTIFIER", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_KEY_SPEC(value: `6`): Self = StObject.set(x, "CAPICOM_PROPID_KEY_SPEC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_KEY_PROV_HANDLE(value: `1`): Self = this.set("CAPICOM_PROPID_KEY_PROV_HANDLE", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_LAST_RESERVED(value: `32767`): Self = StObject.set(x, "CAPICOM_PROPID_LAST_RESERVED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_KEY_PROV_INFO(value: `2`): Self = this.set("CAPICOM_PROPID_KEY_PROV_INFO", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_LAST_USER(value: `65535`): Self = StObject.set(x, "CAPICOM_PROPID_LAST_USER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_KEY_SPEC(value: `6`): Self = this.set("CAPICOM_PROPID_KEY_SPEC", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_MD5_HASH(value: `4`): Self = StObject.set(x, "CAPICOM_PROPID_MD5_HASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_LAST_RESERVED(value: `32767`): Self = this.set("CAPICOM_PROPID_LAST_RESERVED", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_NEXT_UPDATE_LOCATION(value: `10`): Self = StObject.set(x, "CAPICOM_PROPID_NEXT_UPDATE_LOCATION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_LAST_USER(value: `65535`): Self = this.set("CAPICOM_PROPID_LAST_USER", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_PUBKEY_ALG_PARA(value: `22`): Self = StObject.set(x, "CAPICOM_PROPID_PUBKEY_ALG_PARA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_MD5_HASH(value: `4`): Self = this.set("CAPICOM_PROPID_MD5_HASH", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_PUBKEY_HASH_RESERVED(value: `8`): Self = StObject.set(x, "CAPICOM_PROPID_PUBKEY_HASH_RESERVED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_NEXT_UPDATE_LOCATION(value: `10`): Self = this.set("CAPICOM_PROPID_NEXT_UPDATE_LOCATION", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_PVK_FILE(value: `12`): Self = StObject.set(x, "CAPICOM_PROPID_PVK_FILE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_PUBKEY_ALG_PARA(value: `22`): Self = this.set("CAPICOM_PROPID_PUBKEY_ALG_PARA", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_RENEWAL(value: `64`): Self = StObject.set(x, "CAPICOM_PROPID_RENEWAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_PUBKEY_HASH_RESERVED(value: `8`): Self = this.set("CAPICOM_PROPID_PUBKEY_HASH_RESERVED", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_SHA1_HASH(value: `3`): Self = StObject.set(x, "CAPICOM_PROPID_SHA1_HASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_PVK_FILE(value: `12`): Self = this.set("CAPICOM_PROPID_PVK_FILE", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_SIGNATURE_HASH(value: `15`): Self = StObject.set(x, "CAPICOM_PROPID_SIGNATURE_HASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_RENEWAL(value: `64`): Self = this.set("CAPICOM_PROPID_RENEWAL", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_SMART_CARD_DATA(value: `16`): Self = StObject.set(x, "CAPICOM_PROPID_SMART_CARD_DATA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_SHA1_HASH(value: `3`): Self = this.set("CAPICOM_PROPID_SHA1_HASH", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_SUBJECT_NAME_MD5_HASH(value: `29`): Self = StObject.set(x, "CAPICOM_PROPID_SUBJECT_NAME_MD5_HASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_SIGNATURE_HASH(value: `15`): Self = this.set("CAPICOM_PROPID_SIGNATURE_HASH", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_SUBJECT_PUBLIC_KEY_MD5_HASH(value: `25`): Self = StObject.set(x, "CAPICOM_PROPID_SUBJECT_PUBLIC_KEY_MD5_HASH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_PROPID_SMART_CARD_DATA(value: `16`): Self = this.set("CAPICOM_PROPID_SMART_CARD_DATA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_PROPID_SUBJECT_NAME_MD5_HASH(value: `29`): Self = this.set("CAPICOM_PROPID_SUBJECT_NAME_MD5_HASH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_PROPID_SUBJECT_PUBLIC_KEY_MD5_HASH(value: `25`): Self = this.set("CAPICOM_PROPID_SUBJECT_PUBLIC_KEY_MD5_HASH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_PROPID_UNKNOWN(value: `0`): Self = this.set("CAPICOM_PROPID_UNKNOWN", value.asInstanceOf[js.Any])
+    def setCAPICOM_PROPID_UNKNOWN(value: `0`): Self = StObject.set(x, "CAPICOM_PROPID_UNKNOWN", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * from a particular end user application.
   */
 @js.native
-trait SchemaAppProfile extends js.Object {
+trait SchemaAppProfile extends StObject {
   
   /**
     * Optional long form description of the use case for this AppProfile.
@@ -52,48 +53,36 @@ object SchemaAppProfile {
   }
   
   @scala.inline
-  implicit class SchemaAppProfileOps[Self <: SchemaAppProfile] (val x: Self) extends AnyVal {
+  implicit class SchemaAppProfileMutableBuilder[Self <: SchemaAppProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setMultiClusterRoutingUseAny(value: SchemaMultiClusterRoutingUseAny): Self = StObject.set(x, "multiClusterRoutingUseAny", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setMultiClusterRoutingUseAnyUndefined: Self = StObject.set(x, "multiClusterRoutingUseAny", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiClusterRoutingUseAny(value: SchemaMultiClusterRoutingUseAny): Self = this.set("multiClusterRoutingUseAny", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMultiClusterRoutingUseAny: Self = this.set("multiClusterRoutingUseAny", js.undefined)
+    def setSingleClusterRouting(value: SchemaSingleClusterRouting): Self = StObject.set(x, "singleClusterRouting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSingleClusterRouting(value: SchemaSingleClusterRouting): Self = this.set("singleClusterRouting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleClusterRouting: Self = this.set("singleClusterRouting", js.undefined)
+    def setSingleClusterRoutingUndefined: Self = StObject.set(x, "singleClusterRouting", js.undefined)
   }
 }

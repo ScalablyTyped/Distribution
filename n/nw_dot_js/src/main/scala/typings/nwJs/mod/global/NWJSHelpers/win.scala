@@ -22,6 +22,7 @@ import typings.nwJs.nwJsStrings.restore
 import typings.nwJs.nwJsStrings.zoom
 import typings.std.HTMLIFrameElement
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

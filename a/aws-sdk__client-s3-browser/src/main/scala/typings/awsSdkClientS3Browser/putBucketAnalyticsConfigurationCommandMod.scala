@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesPutBucketAnalyticsConfigurationInputMo
 import typings.awsSdkClientS3Browser.typesPutBucketAnalyticsConfigurationOutputMod.PutBucketAnalyticsConfigurationOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/PutBucketAnalyticsConfigurationCommand", JSImport.Namespace)
-@js.native
-object putBucketAnalyticsConfigurationCommandMod extends js.Object {
+object putBucketAnalyticsConfigurationCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/PutBucketAnalyticsConfigurationCommand", "PutBucketAnalyticsConfigurationCommand")
   @js.native
   class PutBucketAnalyticsConfigurationCommand protected () extends Command[
           InputTypesUnion, 

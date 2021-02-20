@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google Cloud Storage location.
   */
 @js.native
-trait SchemaGcsDataLocation extends js.Object {
+trait SchemaGcsDataLocation extends StObject {
   
   /**
     * The gcs_uri must be in the format &quot;gs://bucket/path/to/object&quot;.
@@ -30,24 +31,12 @@ object SchemaGcsDataLocation {
   }
   
   @scala.inline
-  implicit class SchemaGcsDataLocationOps[Self <: SchemaGcsDataLocation] (val x: Self) extends AnyVal {
+  implicit class SchemaGcsDataLocationMutableBuilder[Self <: SchemaGcsDataLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGcsUri(value: String): Self = StObject.set(x, "gcsUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGcsUri(value: String): Self = this.set("gcsUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsUri: Self = this.set("gcsUri", js.undefined)
+    def setGcsUriUndefined: Self = StObject.set(x, "gcsUri", js.undefined)
   }
 }

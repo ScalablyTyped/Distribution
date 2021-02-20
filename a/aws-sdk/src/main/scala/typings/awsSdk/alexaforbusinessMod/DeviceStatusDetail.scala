@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceStatusDetail extends js.Object {
+trait DeviceStatusDetail extends StObject {
   
   /**
     * The device status detail code.
@@ -26,30 +27,18 @@ object DeviceStatusDetail {
   }
   
   @scala.inline
-  implicit class DeviceStatusDetailOps[Self <: DeviceStatusDetail] (val x: Self) extends AnyVal {
+  implicit class DeviceStatusDetailMutableBuilder[Self <: DeviceStatusDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: DeviceStatusDetailCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeature(value: Feature): Self = StObject.set(x, "Feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: DeviceStatusDetailCode): Self = this.set("Code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("Code", js.undefined)
-    
-    @scala.inline
-    def setFeature(value: Feature): Self = this.set("Feature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeature: Self = this.set("Feature", js.undefined)
+    def setFeatureUndefined: Self = StObject.set(x, "Feature", js.undefined)
   }
 }

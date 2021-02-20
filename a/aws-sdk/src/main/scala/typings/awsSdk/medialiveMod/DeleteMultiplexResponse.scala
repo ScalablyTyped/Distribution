@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteMultiplexResponse extends js.Object {
+trait DeleteMultiplexResponse extends StObject {
   
   /**
     * The unique arn of the multiplex.
@@ -66,84 +67,72 @@ object DeleteMultiplexResponse {
   }
   
   @scala.inline
-  implicit class DeleteMultiplexResponseOps[Self <: DeleteMultiplexResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteMultiplexResponseMutableBuilder[Self <: DeleteMultiplexResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZones(value: listOfString): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setAvailabilityZonesVarargs(value: string*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: string*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    def setDestinations(value: listOfMultiplexOutputDestination): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZones(value: listOfString): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    def setDestinationsVarargs(value: MultiplexOutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationsVarargs(value: MultiplexOutputDestination*): Self = this.set("Destinations", js.Array(value :_*))
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinations(value: listOfMultiplexOutputDestination): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteDestinations: Self = this.set("Destinations", js.undefined)
+    def setMultiplexSettings(value: MultiplexSettings): Self = StObject.set(x, "MultiplexSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setMultiplexSettingsUndefined: Self = StObject.set(x, "MultiplexSettings", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplexSettings(value: MultiplexSettings): Self = this.set("MultiplexSettings", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMultiplexSettings: Self = this.set("MultiplexSettings", js.undefined)
+    def setPipelinesRunningCount(value: integer): Self = StObject.set(x, "PipelinesRunningCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPipelinesRunningCountUndefined: Self = StObject.set(x, "PipelinesRunningCount", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setProgramCount(value: integer): Self = StObject.set(x, "ProgramCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelinesRunningCount(value: integer): Self = this.set("PipelinesRunningCount", value.asInstanceOf[js.Any])
+    def setProgramCountUndefined: Self = StObject.set(x, "ProgramCount", js.undefined)
     
     @scala.inline
-    def deletePipelinesRunningCount: Self = this.set("PipelinesRunningCount", js.undefined)
+    def setState(value: MultiplexState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgramCount(value: integer): Self = this.set("ProgramCount", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteProgramCount: Self = this.set("ProgramCount", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: MultiplexState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

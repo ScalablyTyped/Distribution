@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDistributionsByWebACLIdResult extends js.Object {
+trait ListDistributionsByWebACLIdResult extends StObject {
   
   /**
     * The DistributionList type. 
@@ -21,24 +22,12 @@ object ListDistributionsByWebACLIdResult {
   }
   
   @scala.inline
-  implicit class ListDistributionsByWebACLIdResultOps[Self <: ListDistributionsByWebACLIdResult] (val x: Self) extends AnyVal {
+  implicit class ListDistributionsByWebACLIdResultMutableBuilder[Self <: ListDistributionsByWebACLIdResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistributionList(value: DistributionList): Self = StObject.set(x, "DistributionList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDistributionList(value: DistributionList): Self = this.set("DistributionList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistributionList: Self = this.set("DistributionList", js.undefined)
+    def setDistributionListUndefined: Self = StObject.set(x, "DistributionList", js.undefined)
   }
 }

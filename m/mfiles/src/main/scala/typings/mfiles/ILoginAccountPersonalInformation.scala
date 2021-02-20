@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILoginAccountPersonalInformation extends js.Object {
+trait ILoginAccountPersonalInformation extends StObject {
   
   val AccountName: String = js.native
   
@@ -22,27 +23,15 @@ object ILoginAccountPersonalInformation {
   }
   
   @scala.inline
-  implicit class ILoginAccountPersonalInformationOps[Self <: ILoginAccountPersonalInformation] (val x: Self) extends AnyVal {
+  implicit class ILoginAccountPersonalInformationMutableBuilder[Self <: ILoginAccountPersonalInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountName(value: String): Self = this.set("AccountName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("Email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFullName(value: String): Self = this.set("FullName", value.asInstanceOf[js.Any])
+    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
   }
 }

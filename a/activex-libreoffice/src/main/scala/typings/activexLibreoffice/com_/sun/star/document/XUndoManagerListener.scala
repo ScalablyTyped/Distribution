@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.document
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -125,51 +126,39 @@ object XUndoManagerListener {
   }
   
   @scala.inline
-  implicit class XUndoManagerListenerOps[Self <: XUndoManagerListener] (val x: Self) extends AnyVal {
+  implicit class XUndoManagerListenerMutableBuilder[Self <: XUndoManagerListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionRedone(value: UndoManagerEvent => Unit): Self = StObject.set(x, "actionRedone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndone(value: UndoManagerEvent => Unit): Self = StObject.set(x, "actionUndone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllActionsCleared(value: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit): Self = StObject.set(x, "allActionsCleared", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActionRedone(value: UndoManagerEvent => Unit): Self = this.set("actionRedone", js.Any.fromFunction1(value))
+    def setCancelledContext(value: UndoManagerEvent => Unit): Self = StObject.set(x, "cancelledContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActionUndone(value: UndoManagerEvent => Unit): Self = this.set("actionUndone", js.Any.fromFunction1(value))
+    def setEnteredContext(value: UndoManagerEvent => Unit): Self = StObject.set(x, "enteredContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllActionsCleared(value: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit): Self = this.set("allActionsCleared", js.Any.fromFunction1(value))
+    def setEnteredHiddenContext(value: UndoManagerEvent => Unit): Self = StObject.set(x, "enteredHiddenContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancelledContext(value: UndoManagerEvent => Unit): Self = this.set("cancelledContext", js.Any.fromFunction1(value))
+    def setLeftContext(value: UndoManagerEvent => Unit): Self = StObject.set(x, "leftContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnteredContext(value: UndoManagerEvent => Unit): Self = this.set("enteredContext", js.Any.fromFunction1(value))
+    def setLeftHiddenContext(value: UndoManagerEvent => Unit): Self = StObject.set(x, "leftHiddenContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnteredHiddenContext(value: UndoManagerEvent => Unit): Self = this.set("enteredHiddenContext", js.Any.fromFunction1(value))
+    def setRedoActionsCleared(value: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit): Self = StObject.set(x, "redoActionsCleared", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLeftContext(value: UndoManagerEvent => Unit): Self = this.set("leftContext", js.Any.fromFunction1(value))
+    def setResetAll(value: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLeftHiddenContext(value: UndoManagerEvent => Unit): Self = this.set("leftHiddenContext", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRedoActionsCleared(value: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit): Self = this.set("redoActionsCleared", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResetAll(value: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit): Self = this.set("resetAll", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUndoActionAdded(value: UndoManagerEvent => Unit): Self = this.set("undoActionAdded", js.Any.fromFunction1(value))
+    def setUndoActionAdded(value: UndoManagerEvent => Unit): Self = StObject.set(x, "undoActionAdded", js.Any.fromFunction1(value))
   }
 }

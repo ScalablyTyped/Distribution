@@ -1,11 +1,12 @@
 package typings.vastClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VastRequestOptions extends js.Object {
+trait VastRequestOptions extends StObject {
   
   /**
     * Allows you to parse all the ads contained in the VAST or to parse them ad by ad or adPod by adPod (default true)
@@ -41,48 +42,36 @@ object VastRequestOptions {
   }
   
   @scala.inline
-  implicit class VastRequestOptionsOps[Self <: VastRequestOptions] (val x: Self) extends AnyVal {
+  implicit class VastRequestOptionsMutableBuilder[Self <: VastRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResolveAll(value: Boolean): Self = StObject.set(x, "resolveAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResolveAllUndefined: Self = StObject.set(x, "resolveAll", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolveAll(value: Boolean): Self = this.set("resolveAll", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteResolveAll: Self = this.set("resolveAll", js.undefined)
+    def setUrlHandler(value: VASTClientUrlHandler): Self = StObject.set(x, "urlHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setUrlHandlerUndefined: Self = StObject.set(x, "urlHandler", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlHandler(value: VASTClientUrlHandler): Self = this.set("urlHandler", value.asInstanceOf[js.Any])
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     
     @scala.inline
-    def deleteUrlHandler: Self = this.set("urlHandler", js.undefined)
+    def setWrapperLimit(value: Double): Self = StObject.set(x, "wrapperLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
-    
-    @scala.inline
-    def setWrapperLimit(value: Double): Self = this.set("wrapperLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperLimit: Self = this.set("wrapperLimit", js.undefined)
+    def setWrapperLimitUndefined: Self = StObject.set(x, "wrapperLimit", js.undefined)
   }
 }

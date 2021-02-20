@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Media options
   */
 @js.native
-trait IMediaOptions extends js.Object {
+trait IMediaOptions extends StObject {
   
   var imageOnly: Boolean = js.native
   
@@ -23,24 +24,12 @@ object IMediaOptions {
   }
   
   @scala.inline
-  implicit class IMediaOptionsOps[Self <: IMediaOptions] (val x: Self) extends AnyVal {
+  implicit class IMediaOptionsMutableBuilder[Self <: IMediaOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageOnly(value: Boolean): Self = StObject.set(x, "imageOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImageOnly(value: Boolean): Self = this.set("imageOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaModel(value: IMediaModel): Self = this.set("mediaModel", value.asInstanceOf[js.Any])
+    def setMediaModel(value: IMediaModel): Self = StObject.set(x, "mediaModel", value.asInstanceOf[js.Any])
   }
 }

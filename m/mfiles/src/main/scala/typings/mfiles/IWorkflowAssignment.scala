@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWorkflowAssignment extends js.Object {
+trait IWorkflowAssignment extends StObject {
   
   var AssignedTo_DEPRECATED: IPropertyValue = js.native
   
@@ -35,36 +36,24 @@ object IWorkflowAssignment {
   }
   
   @scala.inline
-  implicit class IWorkflowAssignmentOps[Self <: IWorkflowAssignment] (val x: Self) extends AnyVal {
+  implicit class IWorkflowAssignmentMutableBuilder[Self <: IWorkflowAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignedTo_DEPRECATED(value: IPropertyValue): Self = StObject.set(x, "AssignedTo_DEPRECATED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone_DEPRECATED(value: () => IWorkflowAssignment): Self = StObject.set(x, "Clone_DEPRECATED", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedBy_DEPRECATED(value: IPropertyValue): Self = StObject.set(x, "CompletedBy_DEPRECATED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignedTo_DEPRECATED(value: IPropertyValue): Self = this.set("AssignedTo_DEPRECATED", value.asInstanceOf[js.Any])
+    def setDeadline_DEPRECATED(value: IPropertyValue): Self = StObject.set(x, "Deadline_DEPRECATED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone_DEPRECATED(value: () => IWorkflowAssignment): Self = this.set("Clone_DEPRECATED", js.Any.fromFunction0(value))
+    def setDescription_DEPRECATED(value: IPropertyValue): Self = StObject.set(x, "Description_DEPRECATED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedBy_DEPRECATED(value: IPropertyValue): Self = this.set("CompletedBy_DEPRECATED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeadline_DEPRECATED(value: IPropertyValue): Self = this.set("Deadline_DEPRECATED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription_DEPRECATED(value: IPropertyValue): Self = this.set("Description_DEPRECATED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonitoredBy_DEPRECATED(value: IPropertyValue): Self = this.set("MonitoredBy_DEPRECATED", value.asInstanceOf[js.Any])
+    def setMonitoredBy_DEPRECATED(value: IPropertyValue): Self = StObject.set(x, "MonitoredBy_DEPRECATED", value.asInstanceOf[js.Any])
   }
 }

@@ -4,12 +4,13 @@ import typings.rcTree.interfaceMod.EventDataNode
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventNode extends js.Object {
+trait EventNode extends StObject {
   
   var event: MouseEvent[Element, NativeMouseEvent] = js.native
   
@@ -24,24 +25,12 @@ object EventNode {
   }
   
   @scala.inline
-  implicit class EventNodeOps[Self <: EventNode] (val x: Self) extends AnyVal {
+  implicit class EventNodeMutableBuilder[Self <: EventNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: MouseEvent[Element, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvent(value: MouseEvent[Element, NativeMouseEvent]): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: EventDataNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

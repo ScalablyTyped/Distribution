@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,30 +64,18 @@ object ASPxClientReportParametersPanel {
   }
   
   @scala.inline
-  implicit class ASPxClientReportParametersPanelOps[Self <: ASPxClientReportParametersPanel] (val x: Self) extends AnyVal {
+  implicit class ASPxClientReportParametersPanelMutableBuilder[Self <: ASPxClientReportParametersPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignParameter(value: (String, js.Any) => Unit): Self = StObject.set(x, "AssignParameter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignParameters(value: js.Array[ASPxClientReportParameterInfo] => Unit): Self = StObject.set(x, "AssignParameters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEditorByParameterName(value: String => ASPxClientControl): Self = StObject.set(x, "GetEditorByParameterName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAssignParameter(value: (String, js.Any) => Unit): Self = this.set("AssignParameter", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setAssignParameters(value: js.Array[ASPxClientReportParameterInfo] => Unit): Self = this.set("AssignParameters", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetEditorByParameterName(value: String => ASPxClientControl): Self = this.set("GetEditorByParameterName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetParameterNames(value: () => js.Array[String]): Self = this.set("GetParameterNames", js.Any.fromFunction0(value))
+    def setGetParameterNames(value: () => js.Array[String]): Self = StObject.set(x, "GetParameterNames", js.Any.fromFunction0(value))
   }
 }

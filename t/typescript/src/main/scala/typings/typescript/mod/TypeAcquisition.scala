@@ -1,6 +1,7 @@
 package typings.typescript.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,54 +33,42 @@ object TypeAcquisition {
   }
   
   @scala.inline
-  implicit class TypeAcquisitionOps[Self <: TypeAcquisition] (val x: Self) extends AnyVal {
+  implicit class TypeAcquisitionMutableBuilder[Self <: TypeAcquisition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableFilenameBasedTypeAcquisition(value: Boolean): Self = StObject.set(x, "disableFilenameBasedTypeAcquisition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableFilenameBasedTypeAcquisitionUndefined: Self = StObject.set(x, "disableFilenameBasedTypeAcquisition", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFilenameBasedTypeAcquisition(value: Boolean): Self = this.set("disableFilenameBasedTypeAcquisition", value.asInstanceOf[js.Any])
+    def setEnableAutoDiscovery(value: Boolean): Self = StObject.set(x, "enableAutoDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableFilenameBasedTypeAcquisition: Self = this.set("disableFilenameBasedTypeAcquisition", js.undefined)
+    def setEnableAutoDiscoveryUndefined: Self = StObject.set(x, "enableAutoDiscovery", js.undefined)
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setExclude(value: js.Array[java.lang.String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoDiscovery(value: Boolean): Self = this.set("enableAutoDiscovery", value.asInstanceOf[js.Any])
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def deleteEnableAutoDiscovery: Self = this.set("enableAutoDiscovery", js.undefined)
+    def setExcludeVarargs(value: java.lang.String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeVarargs(value: java.lang.String*): Self = this.set("exclude", js.Array(value :_*))
+    def setInclude(value: js.Array[java.lang.String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: js.Array[java.lang.String]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
-    
-    @scala.inline
-    def setIncludeVarargs(value: java.lang.String*): Self = this.set("include", js.Array(value :_*))
-    
-    @scala.inline
-    def setInclude(value: js.Array[java.lang.String]): Self = this.set("include", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setIncludeVarargs(value: java.lang.String*): Self = StObject.set(x, "include", js.Array(value :_*))
   }
 }

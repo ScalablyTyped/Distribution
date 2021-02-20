@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Impersonation extends js.Object {
+trait Impersonation extends StObject {
   
   /** The impersonated user. */
   var impersonatedUser: js.UndefOr[User] = js.native
@@ -19,24 +20,12 @@ object Impersonation {
   }
   
   @scala.inline
-  implicit class ImpersonationOps[Self <: Impersonation] (val x: Self) extends AnyVal {
+  implicit class ImpersonationMutableBuilder[Self <: Impersonation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImpersonatedUser(value: User): Self = StObject.set(x, "impersonatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImpersonatedUser(value: User): Self = this.set("impersonatedUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImpersonatedUser: Self = this.set("impersonatedUser", js.undefined)
+    def setImpersonatedUserUndefined: Self = StObject.set(x, "impersonatedUser", js.undefined)
   }
 }

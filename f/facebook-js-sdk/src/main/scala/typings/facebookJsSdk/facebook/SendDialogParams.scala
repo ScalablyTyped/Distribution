@@ -1,6 +1,7 @@
 package typings.facebookJsSdk.facebook
 
 import typings.facebookJsSdk.facebookJsSdkStrings.send
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +24,18 @@ object SendDialogParams {
   }
   
   @scala.inline
-  implicit class SendDialogParamsOps[Self <: SendDialogParams] (val x: Self) extends AnyVal {
+  implicit class SendDialogParamsMutableBuilder[Self <: SendDialogParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethod(value: send): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMethod(value: send): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

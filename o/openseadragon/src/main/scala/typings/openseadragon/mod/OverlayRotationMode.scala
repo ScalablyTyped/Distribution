@@ -1,31 +1,28 @@
 package typings.openseadragon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OverlayRotationMode extends js.Object
+sealed trait OverlayRotationMode extends StObject
 @JSImport("openseadragon", "OverlayRotationMode")
 @js.native
-object OverlayRotationMode extends js.Object {
+object OverlayRotationMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OverlayRotationMode with Double] = js.native
   
   @js.native
   sealed trait BOUNDING_BOX extends OverlayRotationMode
-  /* 2 */ @js.native
-  object BOUNDING_BOX extends TopLevel[BOUNDING_BOX with Double]
+  /* 2 */ val BOUNDING_BOX: typings.openseadragon.mod.OverlayRotationMode.BOUNDING_BOX with Double = js.native
   
   @js.native
   sealed trait EXACT extends OverlayRotationMode
-  /* 1 */ @js.native
-  object EXACT extends TopLevel[EXACT with Double]
+  /* 1 */ val EXACT: typings.openseadragon.mod.OverlayRotationMode.EXACT with Double = js.native
   
   @js.native
   sealed trait NO_ROTATION extends OverlayRotationMode
-  /* 0 */ @js.native
-  object NO_ROTATION extends TopLevel[NO_ROTATION with Double]
+  /* 0 */ val NO_ROTATION: typings.openseadragon.mod.OverlayRotationMode.NO_ROTATION with Double = js.native
 }

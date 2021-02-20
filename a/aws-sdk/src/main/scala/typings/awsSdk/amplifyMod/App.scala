@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends js.Object {
+trait App extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the Amplify app. 
@@ -144,126 +145,114 @@ object App {
   }
   
   @scala.inline
-  implicit class AppOps[Self <: App] (val x: Self) extends AnyVal {
+  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppArn(value: AppArn): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoBranchCreationConfig(value: AutoBranchCreationConfig): Self = StObject.set(x, "autoBranchCreationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppArn(value: AppArn): Self = this.set("appArn", value.asInstanceOf[js.Any])
+    def setAutoBranchCreationConfigUndefined: Self = StObject.set(x, "autoBranchCreationConfig", js.undefined)
     
     @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAutoBranchCreationPatterns(value: AutoBranchCreationPatterns): Self = StObject.set(x, "autoBranchCreationPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: CreateTime): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setAutoBranchCreationPatternsUndefined: Self = StObject.set(x, "autoBranchCreationPatterns", js.undefined)
     
     @scala.inline
-    def setDefaultDomain(value: DefaultDomain): Self = this.set("defaultDomain", value.asInstanceOf[js.Any])
+    def setAutoBranchCreationPatternsVarargs(value: AutoBranchCreationPattern*): Self = StObject.set(x, "autoBranchCreationPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableBasicAuth(value: EnableBasicAuth): Self = this.set("enableBasicAuth", value.asInstanceOf[js.Any])
+    def setBasicAuthCredentialsUndefined: Self = StObject.set(x, "basicAuthCredentials", js.undefined)
     
     @scala.inline
-    def setEnableBranchAutoBuild(value: EnableBranchAutoBuild): Self = this.set("enableBranchAutoBuild", value.asInstanceOf[js.Any])
+    def setBuildSpec(value: BuildSpec): Self = StObject.set(x, "buildSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentVariables(value: EnvironmentVariables): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    def setBuildSpecUndefined: Self = StObject.set(x, "buildSpec", js.undefined)
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setCustomHeaders(value: CustomHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: Repository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: UpdateTime): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setCustomRules(value: CustomRules): Self = StObject.set(x, "customRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBranchCreationConfig(value: AutoBranchCreationConfig): Self = this.set("autoBranchCreationConfig", value.asInstanceOf[js.Any])
+    def setCustomRulesUndefined: Self = StObject.set(x, "customRules", js.undefined)
     
     @scala.inline
-    def deleteAutoBranchCreationConfig: Self = this.set("autoBranchCreationConfig", js.undefined)
+    def setCustomRulesVarargs(value: CustomRule*): Self = StObject.set(x, "customRules", js.Array(value :_*))
     
     @scala.inline
-    def setAutoBranchCreationPatternsVarargs(value: AutoBranchCreationPattern*): Self = this.set("autoBranchCreationPatterns", js.Array(value :_*))
+    def setDefaultDomain(value: DefaultDomain): Self = StObject.set(x, "defaultDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBranchCreationPatterns(value: AutoBranchCreationPatterns): Self = this.set("autoBranchCreationPatterns", value.asInstanceOf[js.Any])
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoBranchCreationPatterns: Self = this.set("autoBranchCreationPatterns", js.undefined)
+    def setEnableAutoBranchCreation(value: EnableAutoBranchCreation): Self = StObject.set(x, "enableAutoBranchCreation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicAuthCredentials(value: BasicAuthCredentials): Self = this.set("basicAuthCredentials", value.asInstanceOf[js.Any])
+    def setEnableAutoBranchCreationUndefined: Self = StObject.set(x, "enableAutoBranchCreation", js.undefined)
     
     @scala.inline
-    def deleteBasicAuthCredentials: Self = this.set("basicAuthCredentials", js.undefined)
+    def setEnableBasicAuth(value: EnableBasicAuth): Self = StObject.set(x, "enableBasicAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildSpec(value: BuildSpec): Self = this.set("buildSpec", value.asInstanceOf[js.Any])
+    def setEnableBranchAutoBuild(value: EnableBranchAutoBuild): Self = StObject.set(x, "enableBranchAutoBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildSpec: Self = this.set("buildSpec", js.undefined)
+    def setEnableBranchAutoDeletion(value: EnableBranchAutoDeletion): Self = StObject.set(x, "enableBranchAutoDeletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomHeaders(value: CustomHeaders): Self = this.set("customHeaders", value.asInstanceOf[js.Any])
+    def setEnableBranchAutoDeletionUndefined: Self = StObject.set(x, "enableBranchAutoDeletion", js.undefined)
     
     @scala.inline
-    def deleteCustomHeaders: Self = this.set("customHeaders", js.undefined)
+    def setEnvironmentVariables(value: EnvironmentVariables): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomRulesVarargs(value: CustomRule*): Self = this.set("customRules", js.Array(value :_*))
+    def setIamServiceRoleArn(value: ServiceRoleArn): Self = StObject.set(x, "iamServiceRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomRules(value: CustomRules): Self = this.set("customRules", value.asInstanceOf[js.Any])
+    def setIamServiceRoleArnUndefined: Self = StObject.set(x, "iamServiceRoleArn", js.undefined)
     
     @scala.inline
-    def deleteCustomRules: Self = this.set("customRules", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoBranchCreation(value: EnableAutoBranchCreation): Self = this.set("enableAutoBranchCreation", value.asInstanceOf[js.Any])
+    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableAutoBranchCreation: Self = this.set("enableAutoBranchCreation", js.undefined)
+    def setProductionBranch(value: ProductionBranch): Self = StObject.set(x, "productionBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableBranchAutoDeletion(value: EnableBranchAutoDeletion): Self = this.set("enableBranchAutoDeletion", value.asInstanceOf[js.Any])
+    def setProductionBranchUndefined: Self = StObject.set(x, "productionBranch", js.undefined)
     
     @scala.inline
-    def deleteEnableBranchAutoDeletion: Self = this.set("enableBranchAutoDeletion", js.undefined)
+    def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamServiceRoleArn(value: ServiceRoleArn): Self = this.set("iamServiceRoleArn", value.asInstanceOf[js.Any])
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIamServiceRoleArn: Self = this.set("iamServiceRoleArn", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setProductionBranch(value: ProductionBranch): Self = this.set("productionBranch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductionBranch: Self = this.set("productionBranch", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
   }
 }

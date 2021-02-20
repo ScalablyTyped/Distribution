@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateMemberDetectorsRequest extends js.Object {
+trait UpdateMemberDetectorsRequest extends StObject {
   
   /**
     * A list of member account IDs to be updated.
@@ -31,33 +32,21 @@ object UpdateMemberDetectorsRequest {
   }
   
   @scala.inline
-  implicit class UpdateMemberDetectorsRequestOps[Self <: UpdateMemberDetectorsRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateMemberDetectorsRequestMutableBuilder[Self <: UpdateMemberDetectorsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSources(value: DataSourceConfigurations): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = this.set("AccountIds", js.Array(value :_*))
+    def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
     @scala.inline
-    def setAccountIds(value: AccountIds): Self = this.set("AccountIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataSources(value: DataSourceConfigurations): Self = this.set("DataSources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSources: Self = this.set("DataSources", js.undefined)
+    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,18 @@
 package typings.rc
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(name: String): StringDictionary[js.Any] = js.native
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(
     name: String,
     defaults: js.UndefOr[scala.Nothing],
@@ -25,6 +28,8 @@ object mod extends js.Object {
     */
   parse: js.Function1[/* content */ String, StringDictionary[_]]
   ): StringDictionary[js.Any] = js.native
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(
     name: String,
     defaults: js.UndefOr[scala.Nothing],
@@ -34,6 +39,8 @@ object mod extends js.Object {
     */
   argv: StringDictionary[js.Any]
   ): StringDictionary[js.Any] = js.native
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(
     name: String,
     defaults: js.UndefOr[scala.Nothing],
@@ -49,6 +56,8 @@ object mod extends js.Object {
     */
   parse: js.Function1[/* content */ String, StringDictionary[_]]
   ): StringDictionary[js.Any] = js.native
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(
     name: String,
     defaults: js.UndefOr[scala.Nothing],
@@ -64,7 +73,11 @@ object mod extends js.Object {
     */
   parse: js.Function1[/* content */ String, StringDictionary[_]]
   ): StringDictionary[js.Any] = js.native
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(name: String, defaults: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(
     name: String,
     defaults: StringDictionary[js.Any],
@@ -80,6 +93,8 @@ object mod extends js.Object {
     */
   parse: js.Function1[/* content */ String, StringDictionary[_]]
   ): StringDictionary[js.Any] = js.native
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(
     name: String,
     defaults: StringDictionary[js.Any],
@@ -89,6 +104,8 @@ object mod extends js.Object {
     */
   argv: StringDictionary[js.Any]
   ): StringDictionary[js.Any] = js.native
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(
     name: String,
     defaults: StringDictionary[js.Any],
@@ -104,6 +121,8 @@ object mod extends js.Object {
     */
   parse: js.Function1[/* content */ String, StringDictionary[_]]
   ): StringDictionary[js.Any] = js.native
+  @JSImport("rc", JSImport.Namespace)
+  @js.native
   def apply(
     name: String,
     defaults: StringDictionary[js.Any],

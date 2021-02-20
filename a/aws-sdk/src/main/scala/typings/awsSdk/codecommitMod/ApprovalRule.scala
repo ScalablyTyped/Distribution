@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApprovalRule extends js.Object {
+trait ApprovalRule extends StObject {
   
   /**
     * The content of the approval rule.
@@ -56,66 +57,54 @@ object ApprovalRule {
   }
   
   @scala.inline
-  implicit class ApprovalRuleOps[Self <: ApprovalRule] (val x: Self) extends AnyVal {
+  implicit class ApprovalRuleMutableBuilder[Self <: ApprovalRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalRuleContent(value: ApprovalRuleContent): Self = StObject.set(x, "approvalRuleContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalRuleContentUndefined: Self = StObject.set(x, "approvalRuleContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApprovalRuleId(value: ApprovalRuleId): Self = StObject.set(x, "approvalRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalRuleContent(value: ApprovalRuleContent): Self = this.set("approvalRuleContent", value.asInstanceOf[js.Any])
+    def setApprovalRuleIdUndefined: Self = StObject.set(x, "approvalRuleId", js.undefined)
     
     @scala.inline
-    def deleteApprovalRuleContent: Self = this.set("approvalRuleContent", js.undefined)
+    def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalRuleId(value: ApprovalRuleId): Self = this.set("approvalRuleId", value.asInstanceOf[js.Any])
+    def setApprovalRuleNameUndefined: Self = StObject.set(x, "approvalRuleName", js.undefined)
     
     @scala.inline
-    def deleteApprovalRuleId: Self = this.set("approvalRuleId", js.undefined)
+    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalRuleName(value: ApprovalRuleName): Self = this.set("approvalRuleName", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteApprovalRuleName: Self = this.set("approvalRuleName", js.undefined)
+    def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setLastModifiedUser(value: Arn): Self = StObject.set(x, "lastModifiedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: LastModifiedDate): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    def setLastModifiedUserUndefined: Self = StObject.set(x, "lastModifiedUser", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    def setOriginApprovalRuleTemplate(value: OriginApprovalRuleTemplate): Self = StObject.set(x, "originApprovalRuleTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedUser(value: Arn): Self = this.set("lastModifiedUser", value.asInstanceOf[js.Any])
+    def setOriginApprovalRuleTemplateUndefined: Self = StObject.set(x, "originApprovalRuleTemplate", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedUser: Self = this.set("lastModifiedUser", js.undefined)
+    def setRuleContentSha256(value: RuleContentSha256): Self = StObject.set(x, "ruleContentSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginApprovalRuleTemplate(value: OriginApprovalRuleTemplate): Self = this.set("originApprovalRuleTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginApprovalRuleTemplate: Self = this.set("originApprovalRuleTemplate", js.undefined)
-    
-    @scala.inline
-    def setRuleContentSha256(value: RuleContentSha256): Self = this.set("ruleContentSha256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleContentSha256: Self = this.set("ruleContentSha256", js.undefined)
+    def setRuleContentSha256Undefined: Self = StObject.set(x, "ruleContentSha256", js.undefined)
   }
 }

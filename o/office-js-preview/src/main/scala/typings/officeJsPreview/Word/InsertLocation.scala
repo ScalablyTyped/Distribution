@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InsertLocation extends js.Object
+sealed trait InsertLocation extends StObject
 /**
   *
   * The insertion location types.
@@ -14,7 +15,7 @@ sealed trait InsertLocation extends js.Object
   */
 @JSGlobal("Word.InsertLocation")
 @js.native
-object InsertLocation extends js.Object {
+object InsertLocation extends StObject {
   
   /**
     * Add content after the contents of the calling object.

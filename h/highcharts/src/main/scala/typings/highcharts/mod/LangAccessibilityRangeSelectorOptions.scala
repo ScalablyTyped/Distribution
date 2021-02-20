@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilityRangeSelectorOptions extends js.Object {
+trait LangAccessibilityRangeSelectorOptions extends StObject {
   
   var buttonText: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object LangAccessibilityRangeSelectorOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilityRangeSelectorOptionsOps[Self <: LangAccessibilityRangeSelectorOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilityRangeSelectorOptionsMutableBuilder[Self <: LangAccessibilityRangeSelectorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxInputLabel(value: String): Self = StObject.set(x, "maxInputLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonText(value: String): Self = this.set("buttonText", value.asInstanceOf[js.Any])
+    def setMaxInputLabelUndefined: Self = StObject.set(x, "maxInputLabel", js.undefined)
     
     @scala.inline
-    def deleteButtonText: Self = this.set("buttonText", js.undefined)
+    def setMinInputLabel(value: String): Self = StObject.set(x, "minInputLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxInputLabel(value: String): Self = this.set("maxInputLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxInputLabel: Self = this.set("maxInputLabel", js.undefined)
-    
-    @scala.inline
-    def setMinInputLabel(value: String): Self = this.set("minInputLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinInputLabel: Self = this.set("minInputLabel", js.undefined)
+    def setMinInputLabelUndefined: Self = StObject.set(x, "minInputLabel", js.undefined)
   }
 }

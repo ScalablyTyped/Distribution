@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddonsConfig extends js.Object {
+trait AddonsConfig extends StObject {
   
   /** Configuration for the Cloud Run addon, which allows the user to use a managed Knative service. */
   var cloudRunConfig: js.UndefOr[CloudRunConfig] = js.native
@@ -43,60 +44,48 @@ object AddonsConfig {
   }
   
   @scala.inline
-  implicit class AddonsConfigOps[Self <: AddonsConfig] (val x: Self) extends AnyVal {
+  implicit class AddonsConfigMutableBuilder[Self <: AddonsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudRunConfig(value: CloudRunConfig): Self = StObject.set(x, "cloudRunConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudRunConfigUndefined: Self = StObject.set(x, "cloudRunConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigConnectorConfig(value: ConfigConnectorConfig): Self = StObject.set(x, "configConnectorConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudRunConfig(value: CloudRunConfig): Self = this.set("cloudRunConfig", value.asInstanceOf[js.Any])
+    def setConfigConnectorConfigUndefined: Self = StObject.set(x, "configConnectorConfig", js.undefined)
     
     @scala.inline
-    def deleteCloudRunConfig: Self = this.set("cloudRunConfig", js.undefined)
+    def setDnsCacheConfig(value: DnsCacheConfig): Self = StObject.set(x, "dnsCacheConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigConnectorConfig(value: ConfigConnectorConfig): Self = this.set("configConnectorConfig", value.asInstanceOf[js.Any])
+    def setDnsCacheConfigUndefined: Self = StObject.set(x, "dnsCacheConfig", js.undefined)
     
     @scala.inline
-    def deleteConfigConnectorConfig: Self = this.set("configConnectorConfig", js.undefined)
+    def setHorizontalPodAutoscaling(value: HorizontalPodAutoscaling): Self = StObject.set(x, "horizontalPodAutoscaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsCacheConfig(value: DnsCacheConfig): Self = this.set("dnsCacheConfig", value.asInstanceOf[js.Any])
+    def setHorizontalPodAutoscalingUndefined: Self = StObject.set(x, "horizontalPodAutoscaling", js.undefined)
     
     @scala.inline
-    def deleteDnsCacheConfig: Self = this.set("dnsCacheConfig", js.undefined)
+    def setHttpLoadBalancing(value: HttpLoadBalancing): Self = StObject.set(x, "httpLoadBalancing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalPodAutoscaling(value: HorizontalPodAutoscaling): Self = this.set("horizontalPodAutoscaling", value.asInstanceOf[js.Any])
+    def setHttpLoadBalancingUndefined: Self = StObject.set(x, "httpLoadBalancing", js.undefined)
     
     @scala.inline
-    def deleteHorizontalPodAutoscaling: Self = this.set("horizontalPodAutoscaling", js.undefined)
+    def setKubernetesDashboard(value: KubernetesDashboard): Self = StObject.set(x, "kubernetesDashboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpLoadBalancing(value: HttpLoadBalancing): Self = this.set("httpLoadBalancing", value.asInstanceOf[js.Any])
+    def setKubernetesDashboardUndefined: Self = StObject.set(x, "kubernetesDashboard", js.undefined)
     
     @scala.inline
-    def deleteHttpLoadBalancing: Self = this.set("httpLoadBalancing", js.undefined)
+    def setNetworkPolicyConfig(value: NetworkPolicyConfig): Self = StObject.set(x, "networkPolicyConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKubernetesDashboard(value: KubernetesDashboard): Self = this.set("kubernetesDashboard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKubernetesDashboard: Self = this.set("kubernetesDashboard", js.undefined)
-    
-    @scala.inline
-    def setNetworkPolicyConfig(value: NetworkPolicyConfig): Self = this.set("networkPolicyConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkPolicyConfig: Self = this.set("networkPolicyConfig", js.undefined)
+    def setNetworkPolicyConfigUndefined: Self = StObject.set(x, "networkPolicyConfig", js.undefined)
   }
 }

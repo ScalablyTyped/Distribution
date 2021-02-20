@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the certificate properties of the request if it is a secure request. */
 @js.native
-trait CertificateInfo extends js.Object {
+trait CertificateInfo extends StObject {
   
   var fingerprint: CertificateInfoFingerprint = js.native
   
@@ -42,48 +43,36 @@ object CertificateInfo {
   }
   
   @scala.inline
-  implicit class CertificateInfoOps[Self <: CertificateInfo] (val x: Self) extends AnyVal {
+  implicit class CertificateInfoMutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFingerprint(value: CertificateInfoFingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsBuiltInRoot(value: Boolean): Self = StObject.set(x, "isBuiltInRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: CertificateInfoFingerprint): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setRawDER(value: js.Array[Double]): Self = StObject.set(x, "rawDER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBuiltInRoot(value: Boolean): Self = this.set("isBuiltInRoot", value.asInstanceOf[js.Any])
+    def setRawDERUndefined: Self = StObject.set(x, "rawDER", js.undefined)
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setRawDERVarargs(value: Double*): Self = StObject.set(x, "rawDER", js.Array(value :_*))
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectPublicKeyInfoDigest(value: CertificateInfoSubjectPublicKeyInfoDigest): Self = this.set("subjectPublicKeyInfoDigest", value.asInstanceOf[js.Any])
+    def setSubjectPublicKeyInfoDigest(value: CertificateInfoSubjectPublicKeyInfoDigest): Self = StObject.set(x, "subjectPublicKeyInfoDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidity(value: CertificateInfoValidity): Self = this.set("validity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawDERVarargs(value: Double*): Self = this.set("rawDER", js.Array(value :_*))
-    
-    @scala.inline
-    def setRawDER(value: js.Array[Double]): Self = this.set("rawDER", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRawDER: Self = this.set("rawDER", js.undefined)
+    def setValidity(value: CertificateInfoValidity): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
   }
 }

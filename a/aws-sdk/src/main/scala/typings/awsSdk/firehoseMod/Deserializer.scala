@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Deserializer extends js.Object {
+trait Deserializer extends StObject {
   
   /**
     * The native Hive / HCatalog JsonSerDe. Used by Kinesis Data Firehose for deserializing data, which means converting it from the JSON format in preparation for serializing it to the Parquet or ORC format. This is one of two deserializers you can choose, depending on which one offers the functionality you need. The other option is the OpenX SerDe.
@@ -26,30 +27,18 @@ object Deserializer {
   }
   
   @scala.inline
-  implicit class DeserializerOps[Self <: Deserializer] (val x: Self) extends AnyVal {
+  implicit class DeserializerMutableBuilder[Self <: Deserializer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHiveJsonSerDe(value: HiveJsonSerDe): Self = StObject.set(x, "HiveJsonSerDe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHiveJsonSerDeUndefined: Self = StObject.set(x, "HiveJsonSerDe", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenXJsonSerDe(value: OpenXJsonSerDe): Self = StObject.set(x, "OpenXJsonSerDe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiveJsonSerDe(value: HiveJsonSerDe): Self = this.set("HiveJsonSerDe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHiveJsonSerDe: Self = this.set("HiveJsonSerDe", js.undefined)
-    
-    @scala.inline
-    def setOpenXJsonSerDe(value: OpenXJsonSerDe): Self = this.set("OpenXJsonSerDe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenXJsonSerDe: Self = this.set("OpenXJsonSerDe", js.undefined)
+    def setOpenXJsonSerDeUndefined: Self = StObject.set(x, "OpenXJsonSerDe", js.undefined)
   }
 }

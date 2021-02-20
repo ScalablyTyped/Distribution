@@ -1,5 +1,6 @@
 package typings.officeJs.global.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Excel.ChartMapProjectionType")
 @js.native
-object ChartMapProjectionType extends js.Object {
+object ChartMapProjectionType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJs.Excel.ChartMapProjectionType with String] = js.native

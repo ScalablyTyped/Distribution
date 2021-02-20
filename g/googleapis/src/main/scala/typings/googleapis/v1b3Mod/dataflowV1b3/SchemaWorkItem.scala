@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the cloud.
   */
 @js.native
-trait SchemaWorkItem extends js.Object {
+trait SchemaWorkItem extends StObject {
   
   /**
     * Work item-specific configuration as an opaque blob.
@@ -96,111 +97,99 @@ object SchemaWorkItem {
   }
   
   @scala.inline
-  implicit class SchemaWorkItemOps[Self <: SchemaWorkItem] (val x: Self) extends AnyVal {
+  implicit class SchemaWorkItemMutableBuilder[Self <: SchemaWorkItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: String): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setInitialReportIndex(value: String): Self = StObject.set(x, "initialReportIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInitialReportIndexUndefined: Self = StObject.set(x, "initialReportIndex", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialReportIndex(value: String): Self = this.set("initialReportIndex", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def deleteInitialReportIndex: Self = this.set("initialReportIndex", js.undefined)
+    def setLeaseExpireTime(value: String): Self = StObject.set(x, "leaseExpireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setLeaseExpireTimeUndefined: Self = StObject.set(x, "leaseExpireTime", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setMapTask(value: SchemaMapTask): Self = StObject.set(x, "mapTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaseExpireTime(value: String): Self = this.set("leaseExpireTime", value.asInstanceOf[js.Any])
+    def setMapTaskUndefined: Self = StObject.set(x, "mapTask", js.undefined)
     
     @scala.inline
-    def deleteLeaseExpireTime: Self = this.set("leaseExpireTime", js.undefined)
+    def setPackages(value: js.Array[SchemaPackage]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapTask(value: SchemaMapTask): Self = this.set("mapTask", value.asInstanceOf[js.Any])
+    def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
     @scala.inline
-    def deleteMapTask: Self = this.set("mapTask", js.undefined)
+    def setPackagesVarargs(value: SchemaPackage*): Self = StObject.set(x, "packages", js.Array(value :_*))
     
     @scala.inline
-    def setPackagesVarargs(value: SchemaPackage*): Self = this.set("packages", js.Array(value :_*))
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackages(value: js.Array[SchemaPackage]): Self = this.set("packages", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deletePackages: Self = this.set("packages", js.undefined)
+    def setReportStatusInterval(value: String): Self = StObject.set(x, "reportStatusInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setReportStatusIntervalUndefined: Self = StObject.set(x, "reportStatusInterval", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setSeqMapTask(value: SchemaSeqMapTask): Self = StObject.set(x, "seqMapTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportStatusInterval(value: String): Self = this.set("reportStatusInterval", value.asInstanceOf[js.Any])
+    def setSeqMapTaskUndefined: Self = StObject.set(x, "seqMapTask", js.undefined)
     
     @scala.inline
-    def deleteReportStatusInterval: Self = this.set("reportStatusInterval", js.undefined)
+    def setShellTask(value: SchemaShellTask): Self = StObject.set(x, "shellTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeqMapTask(value: SchemaSeqMapTask): Self = this.set("seqMapTask", value.asInstanceOf[js.Any])
+    def setShellTaskUndefined: Self = StObject.set(x, "shellTask", js.undefined)
     
     @scala.inline
-    def deleteSeqMapTask: Self = this.set("seqMapTask", js.undefined)
+    def setSourceOperationTask(value: SchemaSourceOperationRequest): Self = StObject.set(x, "sourceOperationTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShellTask(value: SchemaShellTask): Self = this.set("shellTask", value.asInstanceOf[js.Any])
+    def setSourceOperationTaskUndefined: Self = StObject.set(x, "sourceOperationTask", js.undefined)
     
     @scala.inline
-    def deleteShellTask: Self = this.set("shellTask", js.undefined)
+    def setStreamingComputationTask(value: SchemaStreamingComputationTask): Self = StObject.set(x, "streamingComputationTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceOperationTask(value: SchemaSourceOperationRequest): Self = this.set("sourceOperationTask", value.asInstanceOf[js.Any])
+    def setStreamingComputationTaskUndefined: Self = StObject.set(x, "streamingComputationTask", js.undefined)
     
     @scala.inline
-    def deleteSourceOperationTask: Self = this.set("sourceOperationTask", js.undefined)
+    def setStreamingConfigTask(value: SchemaStreamingConfigTask): Self = StObject.set(x, "streamingConfigTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamingComputationTask(value: SchemaStreamingComputationTask): Self = this.set("streamingComputationTask", value.asInstanceOf[js.Any])
+    def setStreamingConfigTaskUndefined: Self = StObject.set(x, "streamingConfigTask", js.undefined)
     
     @scala.inline
-    def deleteStreamingComputationTask: Self = this.set("streamingComputationTask", js.undefined)
+    def setStreamingSetupTask(value: SchemaStreamingSetupTask): Self = StObject.set(x, "streamingSetupTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamingConfigTask(value: SchemaStreamingConfigTask): Self = this.set("streamingConfigTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamingConfigTask: Self = this.set("streamingConfigTask", js.undefined)
-    
-    @scala.inline
-    def setStreamingSetupTask(value: SchemaStreamingSetupTask): Self = this.set("streamingSetupTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamingSetupTask: Self = this.set("streamingSetupTask", js.undefined)
+    def setStreamingSetupTaskUndefined: Self = StObject.set(x, "streamingSetupTask", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDiskMoveRequest extends js.Object {
+trait SchemaDiskMoveRequest extends StObject {
   
   /**
     * The URL of the destination zone to move the disk. This can be a full or
@@ -32,30 +33,18 @@ object SchemaDiskMoveRequest {
   }
   
   @scala.inline
-  implicit class SchemaDiskMoveRequestOps[Self <: SchemaDiskMoveRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaDiskMoveRequestMutableBuilder[Self <: SchemaDiskMoveRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationZone(value: String): Self = StObject.set(x, "destinationZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationZoneUndefined: Self = StObject.set(x, "destinationZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetDisk(value: String): Self = StObject.set(x, "targetDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationZone(value: String): Self = this.set("destinationZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationZone: Self = this.set("destinationZone", js.undefined)
-    
-    @scala.inline
-    def setTargetDisk(value: String): Self = this.set("targetDisk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetDisk: Self = this.set("targetDisk", js.undefined)
+    def setTargetDiskUndefined: Self = StObject.set(x, "targetDisk", js.undefined)
   }
 }

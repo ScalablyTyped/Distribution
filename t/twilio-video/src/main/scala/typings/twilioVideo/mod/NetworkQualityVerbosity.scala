@@ -1,5 +1,6 @@
 package typings.twilioVideo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twilioVideo.twilioVideoNumbers.`2`
   - typings.twilioVideo.twilioVideoNumbers.`3`
 */
-trait NetworkQualityVerbosity extends js.Object
+trait NetworkQualityVerbosity extends StObject
 object NetworkQualityVerbosity {
   
   @scala.inline

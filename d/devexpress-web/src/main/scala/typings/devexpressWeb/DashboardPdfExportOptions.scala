@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains options related to exporting a dashboard/dashboard item to the PDF format.
   */
 @js.native
-trait DashboardPdfExportOptions extends js.Object {
+trait DashboardPdfExportOptions extends StObject {
   
   /**
     * Gets or sets the number of horizontal/vertical pages spanning the total width/height of a dashboard/dashboard item.
@@ -189,102 +190,90 @@ object DashboardPdfExportOptions {
   }
   
   @scala.inline
-  implicit class DashboardPdfExportOptionsOps[Self <: DashboardPdfExportOptions] (val x: Self) extends AnyVal {
+  implicit class DashboardPdfExportOptionsMutableBuilder[Self <: DashboardPdfExportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFitPageCount(value: Double): Self = StObject.set(x, "AutoFitPageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardAutoArrangeContent(value: Boolean): Self = StObject.set(x, "CardAutoArrangeContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChartAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "ChartAutomaticPageLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFitPageCount(value: Double): Self = this.set("AutoFitPageCount", value.asInstanceOf[js.Any])
+    def setChartSizeMode(value: String): Self = StObject.set(x, "ChartSizeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardAutoArrangeContent(value: Boolean): Self = this.set("CardAutoArrangeContent", value.asInstanceOf[js.Any])
+    def setDashboardAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "DashboardAutomaticPageLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartAutomaticPageLayout(value: Boolean): Self = this.set("ChartAutomaticPageLayout", value.asInstanceOf[js.Any])
+    def setDashboardStatePosition(value: String): Self = StObject.set(x, "DashboardStatePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartSizeMode(value: String): Self = this.set("ChartSizeMode", value.asInstanceOf[js.Any])
+    def setDocumentScaleMode(value: String): Self = StObject.set(x, "DocumentScaleMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardAutomaticPageLayout(value: Boolean): Self = this.set("DashboardAutomaticPageLayout", value.asInstanceOf[js.Any])
+    def setExportFilters(value: Boolean): Self = StObject.set(x, "ExportFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardStatePosition(value: String): Self = this.set("DashboardStatePosition", value.asInstanceOf[js.Any])
+    def setExportParameters(value: Boolean): Self = StObject.set(x, "ExportParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentScaleMode(value: String): Self = this.set("DocumentScaleMode", value.asInstanceOf[js.Any])
+    def setFontInfo(value: ExportFontInfo): Self = StObject.set(x, "FontInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportFilters(value: Boolean): Self = this.set("ExportFilters", value.asInstanceOf[js.Any])
+    def setGaugeAutoArrangeContent(value: Boolean): Self = StObject.set(x, "GaugeAutoArrangeContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportParameters(value: Boolean): Self = this.set("ExportParameters", value.asInstanceOf[js.Any])
+    def setGridFitToPageWidth(value: Boolean): Self = StObject.set(x, "GridFitToPageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontInfo(value: ExportFontInfo): Self = this.set("FontInfo", value.asInstanceOf[js.Any])
+    def setGridPrintHeadersOnEveryPage(value: Boolean): Self = StObject.set(x, "GridPrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGaugeAutoArrangeContent(value: Boolean): Self = this.set("GaugeAutoArrangeContent", value.asInstanceOf[js.Any])
+    def setIncludeHiddenParameters(value: Boolean): Self = StObject.set(x, "IncludeHiddenParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridFitToPageWidth(value: Boolean): Self = this.set("GridFitToPageWidth", value.asInstanceOf[js.Any])
+    def setMapAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "MapAutomaticPageLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridPrintHeadersOnEveryPage(value: Boolean): Self = this.set("GridPrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
+    def setMapSizeMode(value: String): Self = StObject.set(x, "MapSizeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeHiddenParameters(value: Boolean): Self = this.set("IncludeHiddenParameters", value.asInstanceOf[js.Any])
+    def setPageLayout(value: String): Self = StObject.set(x, "PageLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapAutomaticPageLayout(value: Boolean): Self = this.set("MapAutomaticPageLayout", value.asInstanceOf[js.Any])
+    def setPaperKind(value: String): Self = StObject.set(x, "PaperKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapSizeMode(value: String): Self = this.set("MapSizeMode", value.asInstanceOf[js.Any])
+    def setPieAutoArrangeContent(value: Boolean): Self = StObject.set(x, "PieAutoArrangeContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageLayout(value: String): Self = this.set("PageLayout", value.asInstanceOf[js.Any])
+    def setPivotPrintHeadersOnEveryPage(value: Boolean): Self = StObject.set(x, "PivotPrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperKind(value: String): Self = this.set("PaperKind", value.asInstanceOf[js.Any])
+    def setRangeFilterAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "RangeFilterAutomaticPageLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieAutoArrangeContent(value: Boolean): Self = this.set("PieAutoArrangeContent", value.asInstanceOf[js.Any])
+    def setRangeFilterSizeMode(value: String): Self = StObject.set(x, "RangeFilterSizeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotPrintHeadersOnEveryPage(value: Boolean): Self = this.set("PivotPrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
+    def setScaleFactor(value: Double): Self = StObject.set(x, "ScaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeFilterAutomaticPageLayout(value: Boolean): Self = this.set("RangeFilterAutomaticPageLayout", value.asInstanceOf[js.Any])
+    def setScaleMode(value: String): Self = StObject.set(x, "ScaleMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeFilterSizeMode(value: String): Self = this.set("RangeFilterSizeMode", value.asInstanceOf[js.Any])
+    def setShowTitle(value: Boolean): Self = StObject.set(x, "ShowTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleFactor(value: Double): Self = this.set("ScaleFactor", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleMode(value: String): Self = this.set("ScaleMode", value.asInstanceOf[js.Any])
+    def setTreemapAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "TreemapAutomaticPageLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTitle(value: Boolean): Self = this.set("ShowTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreemapAutomaticPageLayout(value: Boolean): Self = this.set("TreemapAutomaticPageLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreemapSizeMode(value: String): Self = this.set("TreemapSizeMode", value.asInstanceOf[js.Any])
+    def setTreemapSizeMode(value: String): Self = StObject.set(x, "TreemapSizeMode", value.asInstanceOf[js.Any])
   }
 }

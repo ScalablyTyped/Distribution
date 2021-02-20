@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attachment extends js.Object {
+trait Attachment extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -73,72 +74,60 @@ object Attachment {
   }
   
   @scala.inline
-  implicit class AttachmentOps[Self <: Attachment] (val x: Self) extends AnyVal {
+  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockLevel(value: OlAttachmentBlockLevel): Self = StObject.set(x, "BlockLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBlockLevel(value: OlAttachmentBlockLevel): Self = this.set("BlockLevel", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setGetTemporaryFilePath(value: () => String): Self = StObject.set(x, "GetTemporaryFilePath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("FileName", value.asInstanceOf[js.Any])
+    def setMAPIOBJECT(value: js.Any): Self = StObject.set(x, "MAPIOBJECT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTemporaryFilePath(value: () => String): Self = this.set("GetTemporaryFilePath", js.Any.fromFunction0(value))
+    def setOutlookDotAttachment_typekey(value: Attachment): Self = StObject.set(x, "Outlook.Attachment_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAPIOBJECT(value: js.Any): Self = this.set("MAPIOBJECT", value.asInstanceOf[js.Any])
+    def setPathName(value: String): Self = StObject.set(x, "PathName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotAttachment_typekey(value: Attachment): Self = this.set("Outlook.Attachment_typekey", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setPropertyAccessor(value: PropertyAccessor): Self = StObject.set(x, "PropertyAccessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathName(value: String): Self = this.set("PathName", value.asInstanceOf[js.Any])
+    def setSaveAsFile(value: String => Unit): Self = StObject.set(x, "SaveAsFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("Position", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyAccessor(value: PropertyAccessor): Self = this.set("PropertyAccessor", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveAsFile(value: String => Unit): Self = this.set("SaveAsFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: OlAttachmentType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: OlAttachmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

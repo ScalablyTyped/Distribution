@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultSetMetadata extends js.Object {
+trait ResultSetMetadata extends StObject {
   
   /**
     * Information about the columns returned in a query result metadata.
@@ -21,27 +22,15 @@ object ResultSetMetadata {
   }
   
   @scala.inline
-  implicit class ResultSetMetadataOps[Self <: ResultSetMetadata] (val x: Self) extends AnyVal {
+  implicit class ResultSetMetadataMutableBuilder[Self <: ResultSetMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "ColumnInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnInfoUndefined: Self = StObject.set(x, "ColumnInfo", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumnInfoVarargs(value: ColumnInfo*): Self = this.set("ColumnInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumnInfo(value: ColumnInfoList): Self = this.set("ColumnInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnInfo: Self = this.set("ColumnInfo", js.undefined)
+    def setColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "ColumnInfo", js.Array(value :_*))
   }
 }

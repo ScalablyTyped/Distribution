@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDeviceConfigVersionsResponse extends js.Object {
+trait ListDeviceConfigVersionsResponse extends StObject {
   
   /** The device configuration for the last few versions. Versions are listed in decreasing order, starting from the most recent one. */
   var deviceConfigs: js.UndefOr[js.Array[DeviceConfig]] = js.native
@@ -19,27 +20,15 @@ object ListDeviceConfigVersionsResponse {
   }
   
   @scala.inline
-  implicit class ListDeviceConfigVersionsResponseOps[Self <: ListDeviceConfigVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDeviceConfigVersionsResponseMutableBuilder[Self <: ListDeviceConfigVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceConfigs(value: js.Array[DeviceConfig]): Self = StObject.set(x, "deviceConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceConfigsUndefined: Self = StObject.set(x, "deviceConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceConfigsVarargs(value: DeviceConfig*): Self = this.set("deviceConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeviceConfigs(value: js.Array[DeviceConfig]): Self = this.set("deviceConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceConfigs: Self = this.set("deviceConfigs", js.undefined)
+    def setDeviceConfigsVarargs(value: DeviceConfig*): Self = StObject.set(x, "deviceConfigs", js.Array(value :_*))
   }
 }

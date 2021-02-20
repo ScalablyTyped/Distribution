@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorldCount extends js.Object {
+trait WorldCount extends StObject {
   
   /**
     * The number of unique floorplans.
@@ -26,30 +27,18 @@ object WorldCount {
   }
   
   @scala.inline
-  implicit class WorldCountOps[Self <: WorldCount] (val x: Self) extends AnyVal {
+  implicit class WorldCountMutableBuilder[Self <: WorldCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloorplanCount(value: FloorplanCount): Self = StObject.set(x, "floorplanCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloorplanCountUndefined: Self = StObject.set(x, "floorplanCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInteriorCountPerFloorplan(value: InteriorCountPerFloorplan): Self = StObject.set(x, "interiorCountPerFloorplan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloorplanCount(value: FloorplanCount): Self = this.set("floorplanCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloorplanCount: Self = this.set("floorplanCount", js.undefined)
-    
-    @scala.inline
-    def setInteriorCountPerFloorplan(value: InteriorCountPerFloorplan): Self = this.set("interiorCountPerFloorplan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInteriorCountPerFloorplan: Self = this.set("interiorCountPerFloorplan", js.undefined)
+    def setInteriorCountPerFloorplanUndefined: Self = StObject.set(x, "interiorCountPerFloorplan", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.sdp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sdp.sdpStrings.sendrecv
   - typings.sdp.sdpStrings.inactive
 */
-trait SDPDirection extends js.Object
+trait SDPDirection extends StObject
 object SDPDirection {
   
   @scala.inline

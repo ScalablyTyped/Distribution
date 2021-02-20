@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** XML Schema Item */
 @js.native
-trait ISchemaItem extends js.Object {
+trait ISchemaItem extends StObject {
   
   @JSName("MSXML2.ISchemaItem_typekey")
   var MSXML2DotISchemaItem_typekey: ISchemaItem = js.native
@@ -44,42 +45,30 @@ object ISchemaItem {
   }
   
   @scala.inline
-  implicit class ISchemaItemOps[Self <: ISchemaItem] (val x: Self) extends AnyVal {
+  implicit class ISchemaItemMutableBuilder[Self <: ISchemaItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemType(value: SOMITEMTYPE): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSXML2DotISchemaItem_typekey(value: ISchemaItem): Self = StObject.set(x, "MSXML2.ISchemaItem_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSXML2DotISchemaItem_typekey(value: ISchemaItem): Self = this.set("MSXML2.ISchemaItem_typekey", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemType(value: SOMITEMTYPE): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    def setSchema(value: ISchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUnhandledAttributes(value: IVBSAXAttributes): Self = StObject.set(x, "unhandledAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceURI(value: String): Self = this.set("namespaceURI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema(value: ISchema): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnhandledAttributes(value: IVBSAXAttributes): Self = this.set("unhandledAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWriteAnnotation(value: js.Any => Boolean): Self = this.set("writeAnnotation", js.Any.fromFunction1(value))
+    def setWriteAnnotation(value: js.Any => Boolean): Self = StObject.set(x, "writeAnnotation", js.Any.fromFunction1(value))
   }
 }

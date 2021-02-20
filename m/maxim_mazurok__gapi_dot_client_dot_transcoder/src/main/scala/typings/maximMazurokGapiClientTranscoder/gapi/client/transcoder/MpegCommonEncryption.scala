@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MpegCommonEncryption extends js.Object {
+trait MpegCommonEncryption extends StObject {
   
   /** Required. 128 bit Key ID represented as lowercase hexadecimal digits for use with common encryption. */
   var keyId: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object MpegCommonEncryption {
   }
   
   @scala.inline
-  implicit class MpegCommonEncryptionOps[Self <: MpegCommonEncryption] (val x: Self) extends AnyVal {
+  implicit class MpegCommonEncryptionMutableBuilder[Self <: MpegCommonEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: String): Self = this.set("keyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyId: Self = this.set("keyId", js.undefined)
-    
-    @scala.inline
-    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheme: Self = this.set("scheme", js.undefined)
+    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
   }
 }

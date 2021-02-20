@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateBasePathMappingRequest extends js.Object {
+trait UpdateBasePathMappingRequest extends StObject {
   
   /**
     * [Required] The base path of the BasePathMapping resource to change. To specify an empty base path, set this parameter to '(none)'.
@@ -31,33 +32,21 @@ object UpdateBasePathMappingRequest {
   }
   
   @scala.inline
-  implicit class UpdateBasePathMappingRequestOps[Self <: UpdateBasePathMappingRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateBasePathMappingRequestMutableBuilder[Self <: UpdateBasePathMappingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasePath(value: String): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = this.set("patchOperations", js.Array(value :_*))
-    
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = this.set("patchOperations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatchOperations: Self = this.set("patchOperations", js.undefined)
+    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
   }
 }

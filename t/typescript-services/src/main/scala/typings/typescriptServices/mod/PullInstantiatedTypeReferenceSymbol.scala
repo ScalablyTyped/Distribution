@@ -1,6 +1,7 @@
 package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.TypeArgumentMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +16,11 @@ class PullInstantiatedTypeReferenceSymbol protected ()
     isInstanceReferenceType: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "PullInstantiatedTypeReferenceSymbol")
-@js.native
-object PullInstantiatedTypeReferenceSymbol extends js.Object {
+object PullInstantiatedTypeReferenceSymbol {
   
+  /* static member */
+  @JSImport("typescript-services", "PullInstantiatedTypeReferenceSymbol.create")
+  @js.native
   def create(
     resolver: typings.typescriptServices.TypeScript.PullTypeResolver,
     `type`: typings.typescriptServices.TypeScript.PullTypeSymbol,

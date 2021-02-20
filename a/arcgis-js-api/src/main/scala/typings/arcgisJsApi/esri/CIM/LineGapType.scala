@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LineGapType extends js.Object
+sealed trait LineGapType extends StObject
 @JSGlobal("__esri.CIM.LineGapType")
 @js.native
-object LineGapType extends js.Object {
+object LineGapType extends StObject {
   
   /**
     * Exact - Sets a fixed line spacing

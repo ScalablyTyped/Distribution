@@ -1,18 +1,28 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Shaders/gpuRenderParticles.vertex", JSImport.Namespace)
-@js.native
-object gpuRenderParticlesVertexMod extends js.Object {
+object gpuRenderParticlesVertexMod {
   
-  @js.native
-  object gpuRenderParticlesVertexShader extends js.Object {
+  object gpuRenderParticlesVertexShader {
     
-    var name: String = js.native
+    @JSImport("babylonjs/Shaders/gpuRenderParticles.vertex", "gpuRenderParticlesVertexShader")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var shader: String = js.native
+    @JSImport("babylonjs/Shaders/gpuRenderParticles.vertex", "gpuRenderParticlesVertexShader.name")
+    @js.native
+    def name: String = js.native
+    @scala.inline
+    def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Shaders/gpuRenderParticles.vertex", "gpuRenderParticlesVertexShader.shader")
+    @js.native
+    def shader: String = js.native
+    @scala.inline
+    def shader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shader")(x.asInstanceOf[js.Any])
   }
 }

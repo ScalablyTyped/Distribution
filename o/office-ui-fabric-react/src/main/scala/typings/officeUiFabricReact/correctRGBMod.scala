@@ -1,13 +1,14 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.interfacesMod.IRGB
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/utilities/color/correctRGB", JSImport.Namespace)
-@js.native
-object correctRGBMod extends js.Object {
+object correctRGBMod {
   
+  @JSImport("office-ui-fabric-react/lib/utilities/color/correctRGB", "correctRGB")
+  @js.native
   def correctRGB(color: IRGB): IRGB = js.native
 }

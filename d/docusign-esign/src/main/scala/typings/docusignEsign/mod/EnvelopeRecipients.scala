@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeRecipients extends js.Object {
+trait EnvelopeRecipients extends StObject {
   
   /**
     * A list of agent recipients assigned to the documents.
@@ -114,25 +115,7 @@ object EnvelopeRecipients {
   }
   
   @scala.inline
-  implicit class EnvelopeRecipientsOps[Self <: EnvelopeRecipients] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAgentsVarargs(
-      value: (/* Contains information about an agent recipient. An agent is a recipient who can add name and email information for recipients that appear after
-      the agent in routing order. */ Agent)*
-    ): Self = this.set("agents", js.Array(value :_*))
+  implicit class EnvelopeRecipientsMutableBuilder[Self <: EnvelopeRecipients] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAgents(
@@ -140,16 +123,16 @@ object EnvelopeRecipients {
           /* Contains information about an agent recipient. An agent is a recipient who can add name and email information for recipients that appear after
       the agent in routing order. */ Agent
         ]
-    ): Self = this.set("agents", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAgents: Self = this.set("agents", js.undefined)
+    def setAgentsUndefined: Self = StObject.set(x, "agents", js.undefined)
     
     @scala.inline
-    def setCarbonCopiesVarargs(
-      value: (/* Contains information about a carbon copy recipient. Carbon copy recipients get a copy of the envelope but don't need to sign, initial,
-      date or add information to any of the documents.  */ CarbonCopy)*
-    ): Self = this.set("carbonCopies", js.Array(value :_*))
+    def setAgentsVarargs(
+      value: (/* Contains information about an agent recipient. An agent is a recipient who can add name and email information for recipients that appear after
+      the agent in routing order. */ Agent)*
+    ): Self = StObject.set(x, "agents", js.Array(value :_*))
     
     @scala.inline
     def setCarbonCopies(
@@ -157,16 +140,16 @@ object EnvelopeRecipients {
           /* Contains information about a carbon copy recipient. Carbon copy recipients get a copy of the envelope but don't need to sign, initial,
       date or add information to any of the documents.  */ CarbonCopy
         ]
-    ): Self = this.set("carbonCopies", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "carbonCopies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCarbonCopies: Self = this.set("carbonCopies", js.undefined)
+    def setCarbonCopiesUndefined: Self = StObject.set(x, "carbonCopies", js.undefined)
     
     @scala.inline
-    def setCertifiedDeliveriesVarargs(
-      value: (/* Contains information about a certified delivery recipient. Certified delivery recipients must receive the completed documents
-      for the envelope to be completed. However, they don't need to sign, initial, date or add information to any of the documents. */ CertifiedDelivery)*
-    ): Self = this.set("certifiedDeliveries", js.Array(value :_*))
+    def setCarbonCopiesVarargs(
+      value: (/* Contains information about a carbon copy recipient. Carbon copy recipients get a copy of the envelope but don't need to sign, initial,
+      date or add information to any of the documents.  */ CarbonCopy)*
+    ): Self = StObject.set(x, "carbonCopies", js.Array(value :_*))
     
     @scala.inline
     def setCertifiedDeliveries(
@@ -174,24 +157,22 @@ object EnvelopeRecipients {
           /* Contains information about a certified delivery recipient. Certified delivery recipients must receive the completed documents
       for the envelope to be completed. However, they don't need to sign, initial, date or add information to any of the documents. */ CertifiedDelivery
         ]
-    ): Self = this.set("certifiedDeliveries", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "certifiedDeliveries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertifiedDeliveries: Self = this.set("certifiedDeliveries", js.undefined)
+    def setCertifiedDeliveriesUndefined: Self = StObject.set(x, "certifiedDeliveries", js.undefined)
     
     @scala.inline
-    def setCurrentRoutingOrder(value: String): Self = this.set("currentRoutingOrder", value.asInstanceOf[js.Any])
+    def setCertifiedDeliveriesVarargs(
+      value: (/* Contains information about a certified delivery recipient. Certified delivery recipients must receive the completed documents
+      for the envelope to be completed. However, they don't need to sign, initial, date or add information to any of the documents. */ CertifiedDelivery)*
+    ): Self = StObject.set(x, "certifiedDeliveries", js.Array(value :_*))
     
     @scala.inline
-    def deleteCurrentRoutingOrder: Self = this.set("currentRoutingOrder", js.undefined)
+    def setCurrentRoutingOrder(value: String): Self = StObject.set(x, "currentRoutingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorsVarargs(
-      value: (/* A complex type defining the management and access rights of a recipient assigned as an editor on the envelope. Editors have the same management
-      and access rights for the envelope as the sender. They can make changes to the envelope as if they were using the Correct feature. This recipient can add name
-      and email information, add or change the routing order and set authentication options for the remaining recipients. Additionally, this recipient can edit
-      signature/initial tabs and text tabs for the remaining recipients. */ Editor)*
-    ): Self = this.set("editors", js.Array(value :_*))
+    def setCurrentRoutingOrderUndefined: Self = StObject.set(x, "currentRoutingOrder", js.undefined)
     
     @scala.inline
     def setEditors(
@@ -201,33 +182,35 @@ object EnvelopeRecipients {
       and email information, add or change the routing order and set authentication options for the remaining recipients. Additionally, this recipient can edit
       signature/initial tabs and text tabs for the remaining recipients. */ Editor
         ]
-    ): Self = this.set("editors", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "editors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEditors: Self = this.set("editors", js.undefined)
+    def setEditorsUndefined: Self = StObject.set(x, "editors", js.undefined)
+    
+    @scala.inline
+    def setEditorsVarargs(
+      value: (/* A complex type defining the management and access rights of a recipient assigned as an editor on the envelope. Editors have the same management
+      and access rights for the envelope as the sender. They can make changes to the envelope as if they were using the Correct feature. This recipient can add name
+      and email information, add or change the routing order and set authentication options for the remaining recipients. Additionally, this recipient can edit
+      signature/initial tabs and text tabs for the remaining recipients. */ Editor)*
+    ): Self = StObject.set(x, "editors", js.Array(value :_*))
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setInPersonSignersVarargs(value: InPersonSigner*): Self = this.set("inPersonSigners", js.Array(value :_*))
+    def setInPersonSigners(value: js.Array[InPersonSigner]): Self = StObject.set(x, "inPersonSigners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInPersonSigners(value: js.Array[InPersonSigner]): Self = this.set("inPersonSigners", value.asInstanceOf[js.Any])
+    def setInPersonSignersUndefined: Self = StObject.set(x, "inPersonSigners", js.undefined)
     
     @scala.inline
-    def deleteInPersonSigners: Self = this.set("inPersonSigners", js.undefined)
-    
-    @scala.inline
-    def setIntermediariesVarargs(
-      value: (/* Contains information about an intermediary recipient. An intermediary is a recipient who can, but is not required to, add name and email information for
-      recipients at the same or subsequent level in the routing order, unless subsequent agents, editors or intermediaries are added. */ Intermediary)*
-    ): Self = this.set("intermediaries", js.Array(value :_*))
+    def setInPersonSignersVarargs(value: InPersonSigner*): Self = StObject.set(x, "inPersonSigners", js.Array(value :_*))
     
     @scala.inline
     def setIntermediaries(
@@ -235,40 +218,40 @@ object EnvelopeRecipients {
           /* Contains information about an intermediary recipient. An intermediary is a recipient who can, but is not required to, add name and email information for
       recipients at the same or subsequent level in the routing order, unless subsequent agents, editors or intermediaries are added. */ Intermediary
         ]
-    ): Self = this.set("intermediaries", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "intermediaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntermediaries: Self = this.set("intermediaries", js.undefined)
+    def setIntermediariesUndefined: Self = StObject.set(x, "intermediaries", js.undefined)
     
     @scala.inline
-    def setRecipientCount(value: String): Self = this.set("recipientCount", value.asInstanceOf[js.Any])
+    def setIntermediariesVarargs(
+      value: (/* Contains information about an intermediary recipient. An intermediary is a recipient who can, but is not required to, add name and email information for
+      recipients at the same or subsequent level in the routing order, unless subsequent agents, editors or intermediaries are added. */ Intermediary)*
+    ): Self = StObject.set(x, "intermediaries", js.Array(value :_*))
     
     @scala.inline
-    def deleteRecipientCount: Self = this.set("recipientCount", js.undefined)
+    def setRecipientCount(value: String): Self = StObject.set(x, "recipientCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSealsVarargs(value: SealSign*): Self = this.set("seals", js.Array(value :_*))
+    def setRecipientCountUndefined: Self = StObject.set(x, "recipientCount", js.undefined)
     
     @scala.inline
-    def setSeals(value: js.Array[SealSign]): Self = this.set("seals", value.asInstanceOf[js.Any])
+    def setSeals(value: js.Array[SealSign]): Self = StObject.set(x, "seals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeals: Self = this.set("seals", js.undefined)
+    def setSealsUndefined: Self = StObject.set(x, "seals", js.undefined)
     
     @scala.inline
-    def setSignersVarargs(value: Signer*): Self = this.set("signers", js.Array(value :_*))
+    def setSealsVarargs(value: SealSign*): Self = StObject.set(x, "seals", js.Array(value :_*))
     
     @scala.inline
-    def setSigners(value: js.Array[Signer]): Self = this.set("signers", value.asInstanceOf[js.Any])
+    def setSigners(value: js.Array[Signer]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSigners: Self = this.set("signers", js.undefined)
+    def setSignersUndefined: Self = StObject.set(x, "signers", js.undefined)
     
     @scala.inline
-    def setWitnessesVarargs(
-      value: (/* A complex type containing information about a witness recipient. Witnesses are recipients whose signatures affirm that the identified signers have signed the
-      documents in the envelope. */ Witness)*
-    ): Self = this.set("witnesses", js.Array(value :_*))
+    def setSignersVarargs(value: Signer*): Self = StObject.set(x, "signers", js.Array(value :_*))
     
     @scala.inline
     def setWitnesses(
@@ -276,9 +259,15 @@ object EnvelopeRecipients {
           /* A complex type containing information about a witness recipient. Witnesses are recipients whose signatures affirm that the identified signers have signed the
       documents in the envelope. */ Witness
         ]
-    ): Self = this.set("witnesses", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "witnesses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWitnesses: Self = this.set("witnesses", js.undefined)
+    def setWitnessesUndefined: Self = StObject.set(x, "witnesses", js.undefined)
+    
+    @scala.inline
+    def setWitnessesVarargs(
+      value: (/* A complex type containing information about a witness recipient. Witnesses are recipients whose signatures affirm that the identified signers have signed the
+      documents in the envelope. */ Witness)*
+    ): Self = StObject.set(x, "witnesses", js.Array(value :_*))
   }
 }

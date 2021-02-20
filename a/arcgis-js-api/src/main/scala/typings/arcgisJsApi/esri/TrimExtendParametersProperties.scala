@@ -6,12 +6,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`no-end-attributes`
 import typings.arcgisJsApi.arcgisJsApiStrings.`no-extend-at-from`
 import typings.arcgisJsApi.arcgisJsApiStrings.`no-extend-at-to`
 import typings.arcgisJsApi.arcgisJsApiStrings.`relocate-ends`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrimExtendParametersProperties extends js.Object {
+trait TrimExtendParametersProperties extends StObject {
   
   /**
     * A flag used with the `trimExtend` operation.
@@ -45,41 +46,29 @@ object TrimExtendParametersProperties {
   }
   
   @scala.inline
-  implicit class TrimExtendParametersPropertiesOps[Self <: TrimExtendParametersProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TrimExtendParametersPropertiesMutableBuilder[Self <: TrimExtendParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setExtendHow(
       value: `default-curve-extension` | `relocate-ends` | `keep-end-attributes` | `no-end-attributes` | `no-extend-at-from` | `no-extend-at-to`
-    ): Self = this.set("extendHow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "extendHow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtendHow: Self = this.set("extendHow", js.undefined)
+    def setExtendHowUndefined: Self = StObject.set(x, "extendHow", js.undefined)
     
     @scala.inline
-    def setPolylinesVarargs(value: PolylineProperties*): Self = this.set("polylines", js.Array(value :_*))
+    def setPolylines(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylines(value: js.Array[PolylineProperties]): Self = this.set("polylines", value.asInstanceOf[js.Any])
+    def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
     @scala.inline
-    def deletePolylines: Self = this.set("polylines", js.undefined)
+    def setPolylinesVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylines", js.Array(value :_*))
     
     @scala.inline
-    def setTrimExtendTo(value: PolylineProperties): Self = this.set("trimExtendTo", value.asInstanceOf[js.Any])
+    def setTrimExtendTo(value: PolylineProperties): Self = StObject.set(x, "trimExtendTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrimExtendTo: Self = this.set("trimExtendTo", js.undefined)
+    def setTrimExtendToUndefined: Self = StObject.set(x, "trimExtendTo", js.undefined)
   }
 }

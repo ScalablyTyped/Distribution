@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridColumnMenuMessages extends js.Object {
+trait GridColumnMenuMessages extends StObject {
   
   var columns: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object GridColumnMenuMessages {
   }
   
   @scala.inline
-  implicit class GridColumnMenuMessagesOps[Self <: GridColumnMenuMessages] (val x: Self) extends AnyVal {
+  implicit class GridColumnMenuMessagesMutableBuilder[Self <: GridColumnMenuMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: String): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDone(value: String): Self = this.set("done", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
+    def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setSetColumnPosition(value: String): Self = StObject.set(x, "setColumnPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLock(value: String): Self = this.set("lock", value.asInstanceOf[js.Any])
+    def setSetColumnPositionUndefined: Self = StObject.set(x, "setColumnPosition", js.undefined)
     
     @scala.inline
-    def deleteLock: Self = this.set("lock", js.undefined)
+    def setSettings(value: String): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetColumnPosition(value: String): Self = this.set("setColumnPosition", value.asInstanceOf[js.Any])
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def deleteSetColumnPosition: Self = this.set("setColumnPosition", js.undefined)
+    def setSortAscending(value: String): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettings(value: String): Self = this.set("settings", value.asInstanceOf[js.Any])
+    def setSortAscendingUndefined: Self = StObject.set(x, "sortAscending", js.undefined)
     
     @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setSortDescending(value: String): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortAscending(value: String): Self = this.set("sortAscending", value.asInstanceOf[js.Any])
+    def setSortDescendingUndefined: Self = StObject.set(x, "sortDescending", js.undefined)
     
     @scala.inline
-    def deleteSortAscending: Self = this.set("sortAscending", js.undefined)
+    def setStick(value: String): Self = StObject.set(x, "stick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortDescending(value: String): Self = this.set("sortDescending", value.asInstanceOf[js.Any])
+    def setStickUndefined: Self = StObject.set(x, "stick", js.undefined)
     
     @scala.inline
-    def deleteSortDescending: Self = this.set("sortDescending", js.undefined)
+    def setUnlock(value: String): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStick(value: String): Self = this.set("stick", value.asInstanceOf[js.Any])
+    def setUnlockUndefined: Self = StObject.set(x, "unlock", js.undefined)
     
     @scala.inline
-    def deleteStick: Self = this.set("stick", js.undefined)
+    def setUnstick(value: String): Self = StObject.set(x, "unstick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlock(value: String): Self = this.set("unlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnlock: Self = this.set("unlock", js.undefined)
-    
-    @scala.inline
-    def setUnstick(value: String): Self = this.set("unstick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnstick: Self = this.set("unstick", js.undefined)
+    def setUnstickUndefined: Self = StObject.set(x, "unstick", js.undefined)
   }
 }

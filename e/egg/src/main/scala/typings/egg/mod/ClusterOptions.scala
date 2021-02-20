@@ -1,6 +1,7 @@
 package typings.egg.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,69 +43,57 @@ object ClusterOptions {
   }
   
   @scala.inline
-  implicit class ClusterOptionsOps[Self <: ClusterOptions] (val x: Self) extends AnyVal {
+  implicit class ClusterOptionsMutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseDir(value: String): Self = this.set("baseDir", value.asInstanceOf[js.Any])
+    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
     @scala.inline
-    def deleteBaseDir: Self = this.set("baseDir", js.undefined)
+    def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCert(value: String): Self = this.set("cert", value.asInstanceOf[js.Any])
+    def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
     
     @scala.inline
-    def deleteCert: Self = this.set("cert", js.undefined)
+    def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramework(value: String): Self = this.set("framework", value.asInstanceOf[js.Any])
+    def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     
     @scala.inline
-    def deleteFramework: Self = this.set("framework", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttps(value: Boolean): Self = this.set("https", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteHttps: Self = this.set("https", js.undefined)
+    def setPlugins(value: js.Object): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setPluginsNull: Self = StObject.set(x, "plugins", null)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def setPlugins(value: js.Object): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setPluginsNull: Self = this.set("plugins", null)
+    def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setWorkers(value: Double): Self = this.set("workers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkers: Self = this.set("workers", js.undefined)
+    def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
   }
 }

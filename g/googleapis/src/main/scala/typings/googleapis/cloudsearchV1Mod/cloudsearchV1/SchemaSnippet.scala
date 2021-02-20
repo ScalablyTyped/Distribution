@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * page.
   */
 @js.native
-trait SchemaSnippet extends js.Object {
+trait SchemaSnippet extends StObject {
   
   /**
     * The matched ranges in the snippet.
@@ -31,33 +32,21 @@ object SchemaSnippet {
   }
   
   @scala.inline
-  implicit class SchemaSnippetOps[Self <: SchemaSnippet] (val x: Self) extends AnyVal {
+  implicit class SchemaSnippetMutableBuilder[Self <: SchemaSnippet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchRanges(value: js.Array[SchemaMatchRange]): Self = StObject.set(x, "matchRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchRangesUndefined: Self = StObject.set(x, "matchRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchRangesVarargs(value: SchemaMatchRange*): Self = StObject.set(x, "matchRanges", js.Array(value :_*))
     
     @scala.inline
-    def setMatchRangesVarargs(value: SchemaMatchRange*): Self = this.set("matchRanges", js.Array(value :_*))
+    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchRanges(value: js.Array[SchemaMatchRange]): Self = this.set("matchRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchRanges: Self = this.set("matchRanges", js.undefined)
-    
-    @scala.inline
-    def setSnippet(value: String): Self = this.set("snippet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }
 }

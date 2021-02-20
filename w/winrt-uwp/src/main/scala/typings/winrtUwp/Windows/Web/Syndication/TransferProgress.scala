@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Web.Syndication
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains progress information for a data transfer operation. */
 @js.native
-trait TransferProgress extends js.Object {
+trait TransferProgress extends StObject {
   
   /** The number of bytes received. */
   var bytesRetrieved: Double = js.native
@@ -29,30 +30,18 @@ object TransferProgress {
   }
   
   @scala.inline
-  implicit class TransferProgressOps[Self <: TransferProgress] (val x: Self) extends AnyVal {
+  implicit class TransferProgressMutableBuilder[Self <: TransferProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesRetrieved(value: Double): Self = StObject.set(x, "bytesRetrieved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalBytesToRetrieve(value: Double): Self = StObject.set(x, "totalBytesToRetrieve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesRetrieved(value: Double): Self = this.set("bytesRetrieved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBytesSent(value: Double): Self = this.set("bytesSent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytesToRetrieve(value: Double): Self = this.set("totalBytesToRetrieve", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytesToSend(value: Double): Self = this.set("totalBytesToSend", value.asInstanceOf[js.Any])
+    def setTotalBytesToSend(value: Double): Self = StObject.set(x, "totalBytesToSend", value.asInstanceOf[js.Any])
   }
 }

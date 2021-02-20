@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefinitionSource extends js.Object {
+trait DefinitionSource extends StObject {
   
   var definition: js.UndefOr[String | Null] = js.native
   
@@ -20,36 +21,24 @@ object DefinitionSource {
   }
   
   @scala.inline
-  implicit class DefinitionSourceOps[Self <: DefinitionSource] (val x: Self) extends AnyVal {
+  implicit class DefinitionSourceMutableBuilder[Self <: DefinitionSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionNull: Self = StObject.set(x, "definition", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def setDefinition(value: String): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setSourceNull: Self = StObject.set(x, "source", null)
     
     @scala.inline
-    def setDefinitionNull: Self = this.set("definition", null)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setSourceNull: Self = this.set("source", null)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

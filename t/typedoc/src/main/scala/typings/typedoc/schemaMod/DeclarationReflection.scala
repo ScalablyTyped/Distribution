@@ -3,6 +3,7 @@ package typings.typedoc.schemaMod
 import typings.typedoc.abstractMod.ReflectionKind
 import typings.typedoc.serializersMod.DecoratorWrapper
 import typings.typedoc.serializersMod.SourceReferenceWrapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,276 +108,264 @@ object DeclarationReflection {
   }
   
   @scala.inline
-  implicit class DeclarationReflectionOps[Self <: DeclarationReflection] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFlags(value: ReflectionFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdVarargs(value: _ModelToObject[js.Any]*): Self = this.set("id", js.Array(value :_*))
-    
-    @scala.inline
-    def setId(value: ModelToObject[Double] | Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKindVarargs(value: _ModelToObject[js.Any]*): Self = this.set("kind", js.Array(value :_*))
-    
-    @scala.inline
-    def setKind(value: ModelToObject[ReflectionKind] | ReflectionKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = this.set("name", js.Array(value :_*))
-    
-    @scala.inline
-    def setName(value: ModelToObject[String] | String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCategoriesVarargs(value: (typings.typedoc.reflectionCategoryMod.ReflectionCategory | _ModelToObject[js.Any])*): Self = this.set("categories", js.Array(value :_*))
+  implicit class DeclarationReflectionMutableBuilder[Self <: DeclarationReflection] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCategories(
       value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]]] | js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]
-    ): Self = this.set("categories", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def setChildrenVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("children", js.Array(value :_*))
+    def setCategoriesVarargs(value: (typings.typedoc.reflectionCategoryMod.ReflectionCategory | _ModelToObject[js.Any])*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setChildren(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setChildren(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setCommentVarargs(value: _ModelToObject[js.Any]*): Self = this.set("comment", js.Array(value :_*))
+    def setChildrenVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
     def setComment(
       value: ModelToObject[js.UndefOr[typings.typedoc.commentsCommentMod.Comment]] | typings.typedoc.commentsCommentMod.Comment
-    ): Self = this.set("comment", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def setDecoratesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = this.set("decorates", js.Array(value :_*))
+    def setCommentVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "comment", js.Array(value :_*))
     
     @scala.inline
     def setDecorates(
       value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = this.set("decorates", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "decorates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecorates: Self = this.set("decorates", js.undefined)
+    def setDecoratesUndefined: Self = StObject.set(x, "decorates", js.undefined)
     
     @scala.inline
-    def setDecoratorsVarargs(value: _ModelToObject[js.Any]*): Self = this.set("decorators", js.Array(value :_*))
+    def setDecoratesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "decorates", js.Array(value :_*))
     
     @scala.inline
-    def setDecorators(value: ModelToObject[js.Array[DecoratorWrapper]]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setDecorators(value: ModelToObject[js.Array[DecoratorWrapper]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
     @scala.inline
-    def setDefaultValueVarargs(value: _ModelToObject[js.Any]*): Self = this.set("defaultValue", js.Array(value :_*))
+    def setDecoratorsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultValue(value: ModelToObject[js.UndefOr[String]] | String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: ModelToObject[js.UndefOr[String]] | String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setExtendedByVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = this.set("extendedBy", js.Array(value :_*))
+    def setDefaultValueVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
     
     @scala.inline
     def setExtendedBy(
       value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = this.set("extendedBy", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "extendedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtendedBy: Self = this.set("extendedBy", js.undefined)
+    def setExtendedByUndefined: Self = StObject.set(x, "extendedBy", js.undefined)
     
     @scala.inline
-    def setExtendedTypesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = this.set("extendedTypes", js.Array(value :_*))
+    def setExtendedByVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "extendedBy", js.Array(value :_*))
     
     @scala.inline
     def setExtendedTypes(
       value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = this.set("extendedTypes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "extendedTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtendedTypes: Self = this.set("extendedTypes", js.undefined)
+    def setExtendedTypesUndefined: Self = StObject.set(x, "extendedTypes", js.undefined)
     
     @scala.inline
-    def setGetSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("getSignature", js.Array(value :_*))
+    def setExtendedTypesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "extendedTypes", js.Array(value :_*))
     
     @scala.inline
-    def setGetSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("getSignature", value.asInstanceOf[js.Any])
+    def setFlags(value: ReflectionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetSignature: Self = this.set("getSignature", js.undefined)
+    def setGetSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "getSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: (typings.typedoc.reflectionGroupMod.ReflectionGroup | _ModelToObject[js.Any])*): Self = this.set("groups", js.Array(value :_*))
+    def setGetSignatureUndefined: Self = StObject.set(x, "getSignature", js.undefined)
+    
+    @scala.inline
+    def setGetSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "getSignature", js.Array(value :_*))
     
     @scala.inline
     def setGroups(
       value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]]] | js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]
-    ): Self = this.set("groups", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def setImplementationOfVarargs(value: _ModelToObject[js.Any]*): Self = this.set("implementationOf", js.Array(value :_*))
+    def setGroupsVarargs(value: (typings.typedoc.reflectionGroupMod.ReflectionGroup | _ModelToObject[js.Any])*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    
+    @scala.inline
+    def setId(value: ModelToObject[Double] | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "id", js.Array(value :_*))
     
     @scala.inline
     def setImplementationOf(
       value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-    ): Self = this.set("implementationOf", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "implementationOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImplementationOf: Self = this.set("implementationOf", js.undefined)
+    def setImplementationOfUndefined: Self = StObject.set(x, "implementationOf", js.undefined)
     
     @scala.inline
-    def setImplementedByVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = this.set("implementedBy", js.Array(value :_*))
+    def setImplementationOfVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "implementationOf", js.Array(value :_*))
     
     @scala.inline
     def setImplementedBy(
       value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = this.set("implementedBy", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "implementedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImplementedBy: Self = this.set("implementedBy", js.undefined)
+    def setImplementedByUndefined: Self = StObject.set(x, "implementedBy", js.undefined)
     
     @scala.inline
-    def setImplementedTypesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = this.set("implementedTypes", js.Array(value :_*))
+    def setImplementedByVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "implementedBy", js.Array(value :_*))
     
     @scala.inline
     def setImplementedTypes(
       value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = this.set("implementedTypes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "implementedTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImplementedTypes: Self = this.set("implementedTypes", js.undefined)
+    def setImplementedTypesUndefined: Self = StObject.set(x, "implementedTypes", js.undefined)
     
     @scala.inline
-    def setIndexSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("indexSignature", js.Array(value :_*))
+    def setImplementedTypesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "implementedTypes", js.Array(value :_*))
     
     @scala.inline
-    def setIndexSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("indexSignature", value.asInstanceOf[js.Any])
+    def setIndexSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "indexSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndexSignature: Self = this.set("indexSignature", js.undefined)
+    def setIndexSignatureUndefined: Self = StObject.set(x, "indexSignature", js.undefined)
     
     @scala.inline
-    def setInheritedFromVarargs(value: _ModelToObject[js.Any]*): Self = this.set("inheritedFrom", js.Array(value :_*))
+    def setIndexSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "indexSignature", js.Array(value :_*))
     
     @scala.inline
     def setInheritedFrom(
       value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-    ): Self = this.set("inheritedFrom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInheritedFrom: Self = this.set("inheritedFrom", js.undefined)
+    def setInheritedFromUndefined: Self = StObject.set(x, "inheritedFrom", js.undefined)
     
     @scala.inline
-    def setKindStringVarargs(value: _ModelToObject[js.Any]*): Self = this.set("kindString", js.Array(value :_*))
+    def setInheritedFromVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "inheritedFrom", js.Array(value :_*))
     
     @scala.inline
-    def setKindString(value: ModelToObject[js.UndefOr[String]] | String): Self = this.set("kindString", value.asInstanceOf[js.Any])
+    def setKind(value: ModelToObject[ReflectionKind] | ReflectionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKindString: Self = this.set("kindString", js.undefined)
+    def setKindString(value: ModelToObject[js.UndefOr[String]] | String): Self = StObject.set(x, "kindString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalName(value: String): Self = this.set("originalName", value.asInstanceOf[js.Any])
+    def setKindStringUndefined: Self = StObject.set(x, "kindString", js.undefined)
     
     @scala.inline
-    def deleteOriginalName: Self = this.set("originalName", js.undefined)
+    def setKindStringVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "kindString", js.Array(value :_*))
     
     @scala.inline
-    def setOverwritesVarargs(value: _ModelToObject[js.Any]*): Self = this.set("overwrites", js.Array(value :_*))
+    def setKindVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "kind", js.Array(value :_*))
+    
+    @scala.inline
+    def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
+    
+    @scala.inline
+    def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
     @scala.inline
     def setOverwrites(
       value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-    ): Self = this.set("overwrites", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overwrites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverwrites: Self = this.set("overwrites", js.undefined)
+    def setOverwritesUndefined: Self = StObject.set(x, "overwrites", js.undefined)
     
     @scala.inline
-    def setParametersVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("parameters", js.Array(value :_*))
+    def setOverwritesVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "overwrites", js.Array(value :_*))
     
     @scala.inline
-    def setParameters(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def setSetSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("setSignature", js.Array(value :_*))
+    def setParametersVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setSetSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("setSignature", value.asInstanceOf[js.Any])
+    def setSetSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "setSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetSignature: Self = this.set("setSignature", js.undefined)
+    def setSetSignatureUndefined: Self = StObject.set(x, "setSignature", js.undefined)
     
     @scala.inline
-    def setSignaturesVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("signatures", js.Array(value :_*))
+    def setSetSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "setSignature", js.Array(value :_*))
     
     @scala.inline
-    def setSignatures(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("signatures", value.asInstanceOf[js.Any])
+    def setSignatures(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignatures: Self = this.set("signatures", js.undefined)
+    def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
     @scala.inline
-    def setSourcesVarargs(value: _ModelToObject[js.Any]*): Self = this.set("sources", js.Array(value :_*))
+    def setSignaturesVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
     @scala.inline
-    def setSources(value: ModelToObject[js.Array[SourceReferenceWrapper]]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setSources(value: ModelToObject[js.Array[SourceReferenceWrapper]]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = this.set("type", js.Array(value :_*))
+    def setSourcesVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
     @scala.inline
     def setType(
       value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeParameter(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeParameterVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("typeParameter", js.Array(value :_*))
+    def setTypeParameterUndefined: Self = StObject.set(x, "typeParameter", js.undefined)
     
     @scala.inline
-    def setTypeParameter(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("typeParameter", value.asInstanceOf[js.Any])
+    def setTypeParameterVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "typeParameter", js.Array(value :_*))
     
     @scala.inline
-    def deleteTypeParameter: Self = this.set("typeParameter", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    @scala.inline
+    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

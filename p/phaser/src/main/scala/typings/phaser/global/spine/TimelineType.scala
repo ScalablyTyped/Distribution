@@ -1,12 +1,13 @@
 package typings.phaser.global.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.TimelineType")
 @js.native
-object TimelineType extends js.Object {
+object TimelineType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.phaser.spine.TimelineType with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeographicTransformation extends js.Object {
+trait GeographicTransformation extends StObject {
   
   /**
     * Returns the inverse of the geographic transformation calling this method or `null` if the transformation is not invertible.
@@ -30,27 +31,15 @@ object GeographicTransformation {
   }
   
   @scala.inline
-  implicit class GeographicTransformationOps[Self <: GeographicTransformation] (val x: Self) extends AnyVal {
+  implicit class GeographicTransformationMutableBuilder[Self <: GeographicTransformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInverse(value: () => GeographicTransformation): Self = StObject.set(x, "getInverse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSteps(value: js.Array[GeographicTransformationStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetInverse(value: () => GeographicTransformation): Self = this.set("getInverse", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStepsVarargs(value: GeographicTransformationStep*): Self = this.set("steps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSteps(value: js.Array[GeographicTransformationStep]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    def setStepsVarargs(value: GeographicTransformationStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbstreamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Shard extends js.Object {
+trait Shard extends StObject {
   
   /**
     * The shard ID of the current shard's parent.
@@ -31,36 +32,24 @@ object Shard {
   }
   
   @scala.inline
-  implicit class ShardOps[Self <: Shard] (val x: Self) extends AnyVal {
+  implicit class ShardMutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParentShardId(value: ShardId): Self = StObject.set(x, "ParentShardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentShardIdUndefined: Self = StObject.set(x, "ParentShardId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSequenceNumberRange(value: SequenceNumberRange): Self = StObject.set(x, "SequenceNumberRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentShardId(value: ShardId): Self = this.set("ParentShardId", value.asInstanceOf[js.Any])
+    def setSequenceNumberRangeUndefined: Self = StObject.set(x, "SequenceNumberRange", js.undefined)
     
     @scala.inline
-    def deleteParentShardId: Self = this.set("ParentShardId", js.undefined)
+    def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceNumberRange(value: SequenceNumberRange): Self = this.set("SequenceNumberRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequenceNumberRange: Self = this.set("SequenceNumberRange", js.undefined)
-    
-    @scala.inline
-    def setShardId(value: ShardId): Self = this.set("ShardId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShardId: Self = this.set("ShardId", js.undefined)
+    def setShardIdUndefined: Self = StObject.set(x, "ShardId", js.undefined)
   }
 }

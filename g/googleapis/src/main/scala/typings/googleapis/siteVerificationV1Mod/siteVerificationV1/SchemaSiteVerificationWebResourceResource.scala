@@ -1,12 +1,13 @@
 package typings.googleapis.siteVerificationV1Mod.siteVerificationV1
 
 import typings.googleapis.anon.Identifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSiteVerificationWebResourceResource extends js.Object {
+trait SchemaSiteVerificationWebResourceResource extends StObject {
   
   /**
     * The string used to identify this site. This value should be used in the
@@ -34,39 +35,27 @@ object SchemaSiteVerificationWebResourceResource {
   }
   
   @scala.inline
-  implicit class SchemaSiteVerificationWebResourceResourceOps[Self <: SchemaSiteVerificationWebResourceResource] (val x: Self) extends AnyVal {
+  implicit class SchemaSiteVerificationWebResourceResourceMutableBuilder[Self <: SchemaSiteVerificationWebResourceResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
     @scala.inline
-    def setOwnersVarargs(value: String*): Self = this.set("owners", js.Array(value :_*))
+    def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwners(value: js.Array[String]): Self = this.set("owners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwners: Self = this.set("owners", js.undefined)
-    
-    @scala.inline
-    def setSite(value: Identifier): Self = this.set("site", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSite: Self = this.set("site", js.undefined)
+    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
   }
 }

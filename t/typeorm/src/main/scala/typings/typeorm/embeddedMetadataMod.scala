@@ -10,16 +10,16 @@ import typings.typeorm.relationCountMetadataMod.RelationCountMetadata
 import typings.typeorm.relationIdMetadataMod.RelationIdMetadata
 import typings.typeorm.relationMetadataMod.RelationMetadata
 import typings.typeorm.uniqueMetadataMod.UniqueMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/metadata/EmbeddedMetadata", JSImport.Namespace)
-@js.native
-object embeddedMetadataMod extends js.Object {
+object embeddedMetadataMod {
   
+  @JSImport("typeorm/browser/metadata/EmbeddedMetadata", "EmbeddedMetadata")
   @js.native
-  class EmbeddedMetadata protected () extends js.Object {
+  class EmbeddedMetadata protected () extends StObject {
     def this(options: ArgsEntityMetadata) = this()
     
     def build(connection: Connection): this.type = js.native

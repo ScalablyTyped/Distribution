@@ -1,5 +1,6 @@
 package typings.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hapiHapi.hapiHapiStrings.Lax
   - typings.hapiHapi.hapiHapiStrings.Strict
 */
-trait SameSitePolicy extends js.Object
+trait SameSitePolicy extends StObject
 object SameSitePolicy {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Harsh extends js.Object {
+trait Harsh extends StObject {
   
   var harsh: Boolean = js.native
   
@@ -24,30 +25,18 @@ object Harsh {
   }
   
   @scala.inline
-  implicit class HarshOps[Self <: Harsh] (val x: Self) extends AnyVal {
+  implicit class HarshMutableBuilder[Self <: Harsh] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHarsh(value: Boolean): Self = StObject.set(x, "harsh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWave_girth(value: Double): Self = StObject.set(x, "wave_girth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWave_height(value: Double): Self = StObject.set(x, "wave_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHarsh(value: Boolean): Self = this.set("harsh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWave_girth(value: Double): Self = this.set("wave_girth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWave_height(value: Double): Self = this.set("wave_height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWave_width(value: Double): Self = this.set("wave_width", value.asInstanceOf[js.Any])
+    def setWave_width(value: Double): Self = StObject.set(x, "wave_width", value.asInstanceOf[js.Any])
   }
 }

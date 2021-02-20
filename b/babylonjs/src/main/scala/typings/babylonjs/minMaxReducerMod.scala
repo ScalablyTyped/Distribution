@@ -8,16 +8,16 @@ import typings.babylonjs.postProcessManagerMod.PostProcessManager
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/minMaxReducer", JSImport.Namespace)
-@js.native
-object minMaxReducerMod extends js.Object {
+object minMaxReducerMod {
   
+  @JSImport("babylonjs/Misc/minMaxReducer", "MinMaxReducer")
   @js.native
-  class MinMaxReducer protected () extends js.Object {
+  class MinMaxReducer protected () extends StObject {
     /**
       * Creates a min/max reducer
       * @param camera The camera to use for the post processes

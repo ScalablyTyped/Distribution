@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps.places
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceSearchPagination extends js.Object {
+trait PlaceSearchPagination extends StObject {
   
   var hasNextPage: Boolean = js.native
   
@@ -20,24 +21,12 @@ object PlaceSearchPagination {
   }
   
   @scala.inline
-  implicit class PlaceSearchPaginationOps[Self <: PlaceSearchPagination] (val x: Self) extends AnyVal {
+  implicit class PlaceSearchPaginationMutableBuilder[Self <: PlaceSearchPagination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasNextPage(value: Boolean): Self = this.set("hasNextPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextPage(value: () => Unit): Self = this.set("nextPage", js.Any.fromFunction0(value))
+    def setNextPage(value: () => Unit): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
   }
 }

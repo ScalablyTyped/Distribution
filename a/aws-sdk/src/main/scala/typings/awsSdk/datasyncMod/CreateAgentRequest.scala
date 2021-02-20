@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAgentRequest extends js.Object {
+trait CreateAgentRequest extends StObject {
   
   /**
     * Your agent activation key. You can get the activation key either by sending an HTTP GET request with redirects that enable you to get the agent IP address (port 80). Alternatively, you can get it from the AWS DataSync console. The redirect URL returned in the response provides you the activation key for your agent in the query string parameter activationKey. It might also include other activation-related parameters; however, these are merely defaults. The arguments you pass to this API call determine the actual configuration of your agent. For more information, see Activating an Agent in the AWS DataSync User Guide. 
@@ -46,60 +47,48 @@ object CreateAgentRequest {
   }
   
   @scala.inline
-  implicit class CreateAgentRequestOps[Self <: CreateAgentRequest] (val x: Self) extends AnyVal {
+  implicit class CreateAgentRequestMutableBuilder[Self <: CreateAgentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationKey(value: ActivationKey): Self = StObject.set(x, "ActivationKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentName(value: TagValue): Self = StObject.set(x, "AgentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentNameUndefined: Self = StObject.set(x, "AgentName", js.undefined)
     
     @scala.inline
-    def setActivationKey(value: ActivationKey): Self = this.set("ActivationKey", value.asInstanceOf[js.Any])
+    def setSecurityGroupArns(value: PLSecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentName(value: TagValue): Self = this.set("AgentName", value.asInstanceOf[js.Any])
+    def setSecurityGroupArnsUndefined: Self = StObject.set(x, "SecurityGroupArns", js.undefined)
     
     @scala.inline
-    def deleteAgentName: Self = this.set("AgentName", js.undefined)
+    def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = this.set("SecurityGroupArns", js.Array(value :_*))
+    def setSubnetArns(value: PLSubnetArnList): Self = StObject.set(x, "SubnetArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupArns(value: PLSecurityGroupArnList): Self = this.set("SecurityGroupArns", value.asInstanceOf[js.Any])
+    def setSubnetArnsUndefined: Self = StObject.set(x, "SubnetArns", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroupArns: Self = this.set("SecurityGroupArns", js.undefined)
+    def setSubnetArnsVarargs(value: Ec2SubnetArn*): Self = StObject.set(x, "SubnetArns", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetArnsVarargs(value: Ec2SubnetArn*): Self = this.set("SubnetArns", js.Array(value :_*))
+    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetArns(value: PLSubnetArnList): Self = this.set("SubnetArns", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSubnetArns: Self = this.set("SubnetArns", js.undefined)
+    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = this.set("Tags", js.Array(value :_*))
+    def setVpcEndpointId(value: VpcEndpointId): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: InputTagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVpcEndpointId(value: VpcEndpointId): Self = this.set("VpcEndpointId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcEndpointId: Self = this.set("VpcEndpointId", js.undefined)
+    def setVpcEndpointIdUndefined: Self = StObject.set(x, "VpcEndpointId", js.undefined)
   }
 }

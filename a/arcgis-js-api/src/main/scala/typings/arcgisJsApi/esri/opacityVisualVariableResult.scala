@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,30 +55,18 @@ object opacityVisualVariableResult {
   }
   
   @scala.inline
-  implicit class opacityVisualVariableResultOps[Self <: opacityVisualVariableResult] (val x: Self) extends AnyVal {
+  implicit class opacityVisualVariableResultMutableBuilder[Self <: opacityVisualVariableResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthoringInfo(value: AuthoringInfo): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValuesUsed(value: Boolean): Self = StObject.set(x, "defaultValuesUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthoringInfo(value: AuthoringInfo): Self = this.set("authoringInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultValuesUsed(value: Boolean): Self = this.set("defaultValuesUsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisualVariable(value: OpacityVariable): Self = this.set("visualVariable", value.asInstanceOf[js.Any])
+    def setVisualVariable(value: OpacityVariable): Self = StObject.set(x, "visualVariable", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDocumentVersionsRequest extends js.Object {
+trait DescribeDocumentVersionsRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
@@ -46,51 +47,39 @@ object DescribeDocumentVersionsRequest {
   }
   
   @scala.inline
-  implicit class DescribeDocumentVersionsRequestOps[Self <: DescribeDocumentVersionsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeDocumentVersionsRequestMutableBuilder[Self <: DescribeDocumentVersionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: ResourceIdType): Self = this.set("DocumentId", value.asInstanceOf[js.Any])
+    def setFields(value: FieldNamesType): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+    def setInclude(value: FieldNamesType): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: FieldNamesType): Self = this.set("Fields", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "Include", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("Fields", js.undefined)
+    def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: FieldNamesType): Self = this.set("Include", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("Include", js.undefined)
+    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: LimitType): Self = this.set("Limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

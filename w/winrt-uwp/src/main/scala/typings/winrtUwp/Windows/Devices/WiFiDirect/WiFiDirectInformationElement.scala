@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents information elements in a Wi-Fi Direct packet. */
 @js.native
-trait WiFiDirectInformationElement extends js.Object {
+trait WiFiDirectInformationElement extends StObject {
   
   /** A three-byte organization identifier used to indicate the organization which defined a vendor extension information element (IE). */
   var oui: IBuffer = js.native
@@ -27,27 +28,15 @@ object WiFiDirectInformationElement {
   }
   
   @scala.inline
-  implicit class WiFiDirectInformationElementOps[Self <: WiFiDirectInformationElement] (val x: Self) extends AnyVal {
+  implicit class WiFiDirectInformationElementMutableBuilder[Self <: WiFiDirectInformationElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOui(value: IBuffer): Self = StObject.set(x, "oui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOuiType(value: Double): Self = StObject.set(x, "ouiType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOui(value: IBuffer): Self = this.set("oui", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOuiType(value: Double): Self = this.set("ouiType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: IBuffer): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

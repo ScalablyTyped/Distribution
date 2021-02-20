@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Policy extends js.Object {
+trait Policy extends StObject {
   
   /** Account types that can't be managed by the user. */
   var accountTypesWithManagementDisabled: js.UndefOr[js.Array[String]] = js.native
@@ -301,547 +302,535 @@ object Policy {
   }
   
   @scala.inline
-  implicit class PolicyOps[Self <: Policy] (val x: Self) extends AnyVal {
+  implicit class PolicyMutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountTypesWithManagementDisabled(value: js.Array[String]): Self = StObject.set(x, "accountTypesWithManagementDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountTypesWithManagementDisabledUndefined: Self = StObject.set(x, "accountTypesWithManagementDisabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = StObject.set(x, "accountTypesWithManagementDisabled", js.Array(value :_*))
     
     @scala.inline
-    def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = this.set("accountTypesWithManagementDisabled", js.Array(value :_*))
+    def setAddUserDisabled(value: Boolean): Self = StObject.set(x, "addUserDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountTypesWithManagementDisabled(value: js.Array[String]): Self = this.set("accountTypesWithManagementDisabled", value.asInstanceOf[js.Any])
+    def setAddUserDisabledUndefined: Self = StObject.set(x, "addUserDisabled", js.undefined)
     
     @scala.inline
-    def deleteAccountTypesWithManagementDisabled: Self = this.set("accountTypesWithManagementDisabled", js.undefined)
+    def setAdjustVolumeDisabled(value: Boolean): Self = StObject.set(x, "adjustVolumeDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddUserDisabled(value: Boolean): Self = this.set("addUserDisabled", value.asInstanceOf[js.Any])
+    def setAdjustVolumeDisabledUndefined: Self = StObject.set(x, "adjustVolumeDisabled", js.undefined)
     
     @scala.inline
-    def deleteAddUserDisabled: Self = this.set("addUserDisabled", js.undefined)
+    def setAdvancedSecurityOverrides(value: AdvancedSecurityOverrides): Self = StObject.set(x, "advancedSecurityOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustVolumeDisabled(value: Boolean): Self = this.set("adjustVolumeDisabled", value.asInstanceOf[js.Any])
+    def setAdvancedSecurityOverridesUndefined: Self = StObject.set(x, "advancedSecurityOverrides", js.undefined)
     
     @scala.inline
-    def deleteAdjustVolumeDisabled: Self = this.set("adjustVolumeDisabled", js.undefined)
+    def setAlwaysOnVpnPackage(value: AlwaysOnVpnPackage): Self = StObject.set(x, "alwaysOnVpnPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvancedSecurityOverrides(value: AdvancedSecurityOverrides): Self = this.set("advancedSecurityOverrides", value.asInstanceOf[js.Any])
+    def setAlwaysOnVpnPackageUndefined: Self = StObject.set(x, "alwaysOnVpnPackage", js.undefined)
     
     @scala.inline
-    def deleteAdvancedSecurityOverrides: Self = this.set("advancedSecurityOverrides", js.undefined)
+    def setAndroidDevicePolicyTracks(value: js.Array[String]): Self = StObject.set(x, "androidDevicePolicyTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysOnVpnPackage(value: AlwaysOnVpnPackage): Self = this.set("alwaysOnVpnPackage", value.asInstanceOf[js.Any])
+    def setAndroidDevicePolicyTracksUndefined: Self = StObject.set(x, "androidDevicePolicyTracks", js.undefined)
     
     @scala.inline
-    def deleteAlwaysOnVpnPackage: Self = this.set("alwaysOnVpnPackage", js.undefined)
+    def setAndroidDevicePolicyTracksVarargs(value: String*): Self = StObject.set(x, "androidDevicePolicyTracks", js.Array(value :_*))
     
     @scala.inline
-    def setAndroidDevicePolicyTracksVarargs(value: String*): Self = this.set("androidDevicePolicyTracks", js.Array(value :_*))
+    def setAppAutoUpdatePolicy(value: String): Self = StObject.set(x, "appAutoUpdatePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidDevicePolicyTracks(value: js.Array[String]): Self = this.set("androidDevicePolicyTracks", value.asInstanceOf[js.Any])
+    def setAppAutoUpdatePolicyUndefined: Self = StObject.set(x, "appAutoUpdatePolicy", js.undefined)
     
     @scala.inline
-    def deleteAndroidDevicePolicyTracks: Self = this.set("androidDevicePolicyTracks", js.undefined)
+    def setApplications(value: js.Array[ApplicationPolicy]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppAutoUpdatePolicy(value: String): Self = this.set("appAutoUpdatePolicy", value.asInstanceOf[js.Any])
+    def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
     @scala.inline
-    def deleteAppAutoUpdatePolicy: Self = this.set("appAutoUpdatePolicy", js.undefined)
+    def setApplicationsVarargs(value: ApplicationPolicy*): Self = StObject.set(x, "applications", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationsVarargs(value: ApplicationPolicy*): Self = this.set("applications", js.Array(value :_*))
+    def setAutoTimeRequired(value: Boolean): Self = StObject.set(x, "autoTimeRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplications(value: js.Array[ApplicationPolicy]): Self = this.set("applications", value.asInstanceOf[js.Any])
+    def setAutoTimeRequiredUndefined: Self = StObject.set(x, "autoTimeRequired", js.undefined)
     
     @scala.inline
-    def deleteApplications: Self = this.set("applications", js.undefined)
+    def setBlockApplicationsEnabled(value: Boolean): Self = StObject.set(x, "blockApplicationsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoTimeRequired(value: Boolean): Self = this.set("autoTimeRequired", value.asInstanceOf[js.Any])
+    def setBlockApplicationsEnabledUndefined: Self = StObject.set(x, "blockApplicationsEnabled", js.undefined)
     
     @scala.inline
-    def deleteAutoTimeRequired: Self = this.set("autoTimeRequired", js.undefined)
+    def setBluetoothConfigDisabled(value: Boolean): Self = StObject.set(x, "bluetoothConfigDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockApplicationsEnabled(value: Boolean): Self = this.set("blockApplicationsEnabled", value.asInstanceOf[js.Any])
+    def setBluetoothConfigDisabledUndefined: Self = StObject.set(x, "bluetoothConfigDisabled", js.undefined)
     
     @scala.inline
-    def deleteBlockApplicationsEnabled: Self = this.set("blockApplicationsEnabled", js.undefined)
+    def setBluetoothContactSharingDisabled(value: Boolean): Self = StObject.set(x, "bluetoothContactSharingDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBluetoothConfigDisabled(value: Boolean): Self = this.set("bluetoothConfigDisabled", value.asInstanceOf[js.Any])
+    def setBluetoothContactSharingDisabledUndefined: Self = StObject.set(x, "bluetoothContactSharingDisabled", js.undefined)
     
     @scala.inline
-    def deleteBluetoothConfigDisabled: Self = this.set("bluetoothConfigDisabled", js.undefined)
+    def setBluetoothDisabled(value: Boolean): Self = StObject.set(x, "bluetoothDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBluetoothContactSharingDisabled(value: Boolean): Self = this.set("bluetoothContactSharingDisabled", value.asInstanceOf[js.Any])
+    def setBluetoothDisabledUndefined: Self = StObject.set(x, "bluetoothDisabled", js.undefined)
     
     @scala.inline
-    def deleteBluetoothContactSharingDisabled: Self = this.set("bluetoothContactSharingDisabled", js.undefined)
+    def setCameraDisabled(value: Boolean): Self = StObject.set(x, "cameraDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBluetoothDisabled(value: Boolean): Self = this.set("bluetoothDisabled", value.asInstanceOf[js.Any])
+    def setCameraDisabledUndefined: Self = StObject.set(x, "cameraDisabled", js.undefined)
     
     @scala.inline
-    def deleteBluetoothDisabled: Self = this.set("bluetoothDisabled", js.undefined)
+    def setCellBroadcastsConfigDisabled(value: Boolean): Self = StObject.set(x, "cellBroadcastsConfigDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraDisabled(value: Boolean): Self = this.set("cameraDisabled", value.asInstanceOf[js.Any])
+    def setCellBroadcastsConfigDisabledUndefined: Self = StObject.set(x, "cellBroadcastsConfigDisabled", js.undefined)
     
     @scala.inline
-    def deleteCameraDisabled: Self = this.set("cameraDisabled", js.undefined)
+    def setChoosePrivateKeyRules(value: js.Array[ChoosePrivateKeyRule]): Self = StObject.set(x, "choosePrivateKeyRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellBroadcastsConfigDisabled(value: Boolean): Self = this.set("cellBroadcastsConfigDisabled", value.asInstanceOf[js.Any])
+    def setChoosePrivateKeyRulesUndefined: Self = StObject.set(x, "choosePrivateKeyRules", js.undefined)
     
     @scala.inline
-    def deleteCellBroadcastsConfigDisabled: Self = this.set("cellBroadcastsConfigDisabled", js.undefined)
+    def setChoosePrivateKeyRulesVarargs(value: ChoosePrivateKeyRule*): Self = StObject.set(x, "choosePrivateKeyRules", js.Array(value :_*))
     
     @scala.inline
-    def setChoosePrivateKeyRulesVarargs(value: ChoosePrivateKeyRule*): Self = this.set("choosePrivateKeyRules", js.Array(value :_*))
+    def setComplianceRules(value: js.Array[ComplianceRule]): Self = StObject.set(x, "complianceRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChoosePrivateKeyRules(value: js.Array[ChoosePrivateKeyRule]): Self = this.set("choosePrivateKeyRules", value.asInstanceOf[js.Any])
+    def setComplianceRulesUndefined: Self = StObject.set(x, "complianceRules", js.undefined)
     
     @scala.inline
-    def deleteChoosePrivateKeyRules: Self = this.set("choosePrivateKeyRules", js.undefined)
+    def setComplianceRulesVarargs(value: ComplianceRule*): Self = StObject.set(x, "complianceRules", js.Array(value :_*))
     
     @scala.inline
-    def setComplianceRulesVarargs(value: ComplianceRule*): Self = this.set("complianceRules", js.Array(value :_*))
+    def setCreateWindowsDisabled(value: Boolean): Self = StObject.set(x, "createWindowsDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceRules(value: js.Array[ComplianceRule]): Self = this.set("complianceRules", value.asInstanceOf[js.Any])
+    def setCreateWindowsDisabledUndefined: Self = StObject.set(x, "createWindowsDisabled", js.undefined)
     
     @scala.inline
-    def deleteComplianceRules: Self = this.set("complianceRules", js.undefined)
+    def setCredentialsConfigDisabled(value: Boolean): Self = StObject.set(x, "credentialsConfigDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateWindowsDisabled(value: Boolean): Self = this.set("createWindowsDisabled", value.asInstanceOf[js.Any])
+    def setCredentialsConfigDisabledUndefined: Self = StObject.set(x, "credentialsConfigDisabled", js.undefined)
     
     @scala.inline
-    def deleteCreateWindowsDisabled: Self = this.set("createWindowsDisabled", js.undefined)
+    def setDataRoamingDisabled(value: Boolean): Self = StObject.set(x, "dataRoamingDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialsConfigDisabled(value: Boolean): Self = this.set("credentialsConfigDisabled", value.asInstanceOf[js.Any])
+    def setDataRoamingDisabledUndefined: Self = StObject.set(x, "dataRoamingDisabled", js.undefined)
     
     @scala.inline
-    def deleteCredentialsConfigDisabled: Self = this.set("credentialsConfigDisabled", js.undefined)
+    def setDebuggingFeaturesAllowed(value: Boolean): Self = StObject.set(x, "debuggingFeaturesAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataRoamingDisabled(value: Boolean): Self = this.set("dataRoamingDisabled", value.asInstanceOf[js.Any])
+    def setDebuggingFeaturesAllowedUndefined: Self = StObject.set(x, "debuggingFeaturesAllowed", js.undefined)
     
     @scala.inline
-    def deleteDataRoamingDisabled: Self = this.set("dataRoamingDisabled", js.undefined)
+    def setDefaultPermissionPolicy(value: String): Self = StObject.set(x, "defaultPermissionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebuggingFeaturesAllowed(value: Boolean): Self = this.set("debuggingFeaturesAllowed", value.asInstanceOf[js.Any])
+    def setDefaultPermissionPolicyUndefined: Self = StObject.set(x, "defaultPermissionPolicy", js.undefined)
     
     @scala.inline
-    def deleteDebuggingFeaturesAllowed: Self = this.set("debuggingFeaturesAllowed", js.undefined)
+    def setDeviceOwnerLockScreenInfo(value: UserFacingMessage): Self = StObject.set(x, "deviceOwnerLockScreenInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPermissionPolicy(value: String): Self = this.set("defaultPermissionPolicy", value.asInstanceOf[js.Any])
+    def setDeviceOwnerLockScreenInfoUndefined: Self = StObject.set(x, "deviceOwnerLockScreenInfo", js.undefined)
     
     @scala.inline
-    def deleteDefaultPermissionPolicy: Self = this.set("defaultPermissionPolicy", js.undefined)
+    def setEncryptionPolicy(value: String): Self = StObject.set(x, "encryptionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceOwnerLockScreenInfo(value: UserFacingMessage): Self = this.set("deviceOwnerLockScreenInfo", value.asInstanceOf[js.Any])
+    def setEncryptionPolicyUndefined: Self = StObject.set(x, "encryptionPolicy", js.undefined)
     
     @scala.inline
-    def deleteDeviceOwnerLockScreenInfo: Self = this.set("deviceOwnerLockScreenInfo", js.undefined)
+    def setEnsureVerifyAppsEnabled(value: Boolean): Self = StObject.set(x, "ensureVerifyAppsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionPolicy(value: String): Self = this.set("encryptionPolicy", value.asInstanceOf[js.Any])
+    def setEnsureVerifyAppsEnabledUndefined: Self = StObject.set(x, "ensureVerifyAppsEnabled", js.undefined)
     
     @scala.inline
-    def deleteEncryptionPolicy: Self = this.set("encryptionPolicy", js.undefined)
+    def setFactoryResetDisabled(value: Boolean): Self = StObject.set(x, "factoryResetDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnsureVerifyAppsEnabled(value: Boolean): Self = this.set("ensureVerifyAppsEnabled", value.asInstanceOf[js.Any])
+    def setFactoryResetDisabledUndefined: Self = StObject.set(x, "factoryResetDisabled", js.undefined)
     
     @scala.inline
-    def deleteEnsureVerifyAppsEnabled: Self = this.set("ensureVerifyAppsEnabled", js.undefined)
+    def setFrpAdminEmails(value: js.Array[String]): Self = StObject.set(x, "frpAdminEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactoryResetDisabled(value: Boolean): Self = this.set("factoryResetDisabled", value.asInstanceOf[js.Any])
+    def setFrpAdminEmailsUndefined: Self = StObject.set(x, "frpAdminEmails", js.undefined)
     
     @scala.inline
-    def deleteFactoryResetDisabled: Self = this.set("factoryResetDisabled", js.undefined)
+    def setFrpAdminEmailsVarargs(value: String*): Self = StObject.set(x, "frpAdminEmails", js.Array(value :_*))
     
     @scala.inline
-    def setFrpAdminEmailsVarargs(value: String*): Self = this.set("frpAdminEmails", js.Array(value :_*))
+    def setFunDisabled(value: Boolean): Self = StObject.set(x, "funDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrpAdminEmails(value: js.Array[String]): Self = this.set("frpAdminEmails", value.asInstanceOf[js.Any])
+    def setFunDisabledUndefined: Self = StObject.set(x, "funDisabled", js.undefined)
     
     @scala.inline
-    def deleteFrpAdminEmails: Self = this.set("frpAdminEmails", js.undefined)
+    def setInstallAppsDisabled(value: Boolean): Self = StObject.set(x, "installAppsDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunDisabled(value: Boolean): Self = this.set("funDisabled", value.asInstanceOf[js.Any])
+    def setInstallAppsDisabledUndefined: Self = StObject.set(x, "installAppsDisabled", js.undefined)
     
     @scala.inline
-    def deleteFunDisabled: Self = this.set("funDisabled", js.undefined)
+    def setInstallUnknownSourcesAllowed(value: Boolean): Self = StObject.set(x, "installUnknownSourcesAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallAppsDisabled(value: Boolean): Self = this.set("installAppsDisabled", value.asInstanceOf[js.Any])
+    def setInstallUnknownSourcesAllowedUndefined: Self = StObject.set(x, "installUnknownSourcesAllowed", js.undefined)
     
     @scala.inline
-    def deleteInstallAppsDisabled: Self = this.set("installAppsDisabled", js.undefined)
+    def setKeyguardDisabled(value: Boolean): Self = StObject.set(x, "keyguardDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallUnknownSourcesAllowed(value: Boolean): Self = this.set("installUnknownSourcesAllowed", value.asInstanceOf[js.Any])
+    def setKeyguardDisabledFeatures(value: js.Array[String]): Self = StObject.set(x, "keyguardDisabledFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstallUnknownSourcesAllowed: Self = this.set("installUnknownSourcesAllowed", js.undefined)
+    def setKeyguardDisabledFeaturesUndefined: Self = StObject.set(x, "keyguardDisabledFeatures", js.undefined)
     
     @scala.inline
-    def setKeyguardDisabled(value: Boolean): Self = this.set("keyguardDisabled", value.asInstanceOf[js.Any])
+    def setKeyguardDisabledFeaturesVarargs(value: String*): Self = StObject.set(x, "keyguardDisabledFeatures", js.Array(value :_*))
     
     @scala.inline
-    def deleteKeyguardDisabled: Self = this.set("keyguardDisabled", js.undefined)
+    def setKeyguardDisabledUndefined: Self = StObject.set(x, "keyguardDisabled", js.undefined)
     
     @scala.inline
-    def setKeyguardDisabledFeaturesVarargs(value: String*): Self = this.set("keyguardDisabledFeatures", js.Array(value :_*))
+    def setKioskCustomLauncherEnabled(value: Boolean): Self = StObject.set(x, "kioskCustomLauncherEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyguardDisabledFeatures(value: js.Array[String]): Self = this.set("keyguardDisabledFeatures", value.asInstanceOf[js.Any])
+    def setKioskCustomLauncherEnabledUndefined: Self = StObject.set(x, "kioskCustomLauncherEnabled", js.undefined)
     
     @scala.inline
-    def deleteKeyguardDisabledFeatures: Self = this.set("keyguardDisabledFeatures", js.undefined)
+    def setKioskCustomization(value: KioskCustomization): Self = StObject.set(x, "kioskCustomization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKioskCustomLauncherEnabled(value: Boolean): Self = this.set("kioskCustomLauncherEnabled", value.asInstanceOf[js.Any])
+    def setKioskCustomizationUndefined: Self = StObject.set(x, "kioskCustomization", js.undefined)
     
     @scala.inline
-    def deleteKioskCustomLauncherEnabled: Self = this.set("kioskCustomLauncherEnabled", js.undefined)
+    def setLocationMode(value: String): Self = StObject.set(x, "locationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKioskCustomization(value: KioskCustomization): Self = this.set("kioskCustomization", value.asInstanceOf[js.Any])
+    def setLocationModeUndefined: Self = StObject.set(x, "locationMode", js.undefined)
     
     @scala.inline
-    def deleteKioskCustomization: Self = this.set("kioskCustomization", js.undefined)
+    def setLongSupportMessage(value: UserFacingMessage): Self = StObject.set(x, "longSupportMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationMode(value: String): Self = this.set("locationMode", value.asInstanceOf[js.Any])
+    def setLongSupportMessageUndefined: Self = StObject.set(x, "longSupportMessage", js.undefined)
     
     @scala.inline
-    def deleteLocationMode: Self = this.set("locationMode", js.undefined)
+    def setMaximumTimeToLock(value: String): Self = StObject.set(x, "maximumTimeToLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongSupportMessage(value: UserFacingMessage): Self = this.set("longSupportMessage", value.asInstanceOf[js.Any])
+    def setMaximumTimeToLockUndefined: Self = StObject.set(x, "maximumTimeToLock", js.undefined)
     
     @scala.inline
-    def deleteLongSupportMessage: Self = this.set("longSupportMessage", js.undefined)
+    def setMinimumApiLevel(value: Double): Self = StObject.set(x, "minimumApiLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumTimeToLock(value: String): Self = this.set("maximumTimeToLock", value.asInstanceOf[js.Any])
+    def setMinimumApiLevelUndefined: Self = StObject.set(x, "minimumApiLevel", js.undefined)
     
     @scala.inline
-    def deleteMaximumTimeToLock: Self = this.set("maximumTimeToLock", js.undefined)
+    def setMobileNetworksConfigDisabled(value: Boolean): Self = StObject.set(x, "mobileNetworksConfigDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumApiLevel(value: Double): Self = this.set("minimumApiLevel", value.asInstanceOf[js.Any])
+    def setMobileNetworksConfigDisabledUndefined: Self = StObject.set(x, "mobileNetworksConfigDisabled", js.undefined)
     
     @scala.inline
-    def deleteMinimumApiLevel: Self = this.set("minimumApiLevel", js.undefined)
+    def setModifyAccountsDisabled(value: Boolean): Self = StObject.set(x, "modifyAccountsDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileNetworksConfigDisabled(value: Boolean): Self = this.set("mobileNetworksConfigDisabled", value.asInstanceOf[js.Any])
+    def setModifyAccountsDisabledUndefined: Self = StObject.set(x, "modifyAccountsDisabled", js.undefined)
     
     @scala.inline
-    def deleteMobileNetworksConfigDisabled: Self = this.set("mobileNetworksConfigDisabled", js.undefined)
+    def setMountPhysicalMediaDisabled(value: Boolean): Self = StObject.set(x, "mountPhysicalMediaDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifyAccountsDisabled(value: Boolean): Self = this.set("modifyAccountsDisabled", value.asInstanceOf[js.Any])
+    def setMountPhysicalMediaDisabledUndefined: Self = StObject.set(x, "mountPhysicalMediaDisabled", js.undefined)
     
     @scala.inline
-    def deleteModifyAccountsDisabled: Self = this.set("modifyAccountsDisabled", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountPhysicalMediaDisabled(value: Boolean): Self = this.set("mountPhysicalMediaDisabled", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMountPhysicalMediaDisabled: Self = this.set("mountPhysicalMediaDisabled", js.undefined)
+    def setNetworkEscapeHatchEnabled(value: Boolean): Self = StObject.set(x, "networkEscapeHatchEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworkEscapeHatchEnabledUndefined: Self = StObject.set(x, "networkEscapeHatchEnabled", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNetworkResetDisabled(value: Boolean): Self = StObject.set(x, "networkResetDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkEscapeHatchEnabled(value: Boolean): Self = this.set("networkEscapeHatchEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkEscapeHatchEnabled: Self = this.set("networkEscapeHatchEnabled", js.undefined)
-    
-    @scala.inline
-    def setNetworkResetDisabled(value: Boolean): Self = this.set("networkResetDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkResetDisabled: Self = this.set("networkResetDisabled", js.undefined)
+    def setNetworkResetDisabledUndefined: Self = StObject.set(x, "networkResetDisabled", js.undefined)
     
     @scala.inline
     def setOpenNetworkConfiguration(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy with TopLevel[js.Any]
-    ): Self = this.set("openNetworkConfiguration", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "openNetworkConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpenNetworkConfiguration: Self = this.set("openNetworkConfiguration", js.undefined)
+    def setOpenNetworkConfigurationUndefined: Self = StObject.set(x, "openNetworkConfiguration", js.undefined)
     
     @scala.inline
-    def setOutgoingBeamDisabled(value: Boolean): Self = this.set("outgoingBeamDisabled", value.asInstanceOf[js.Any])
+    def setOutgoingBeamDisabled(value: Boolean): Self = StObject.set(x, "outgoingBeamDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutgoingBeamDisabled: Self = this.set("outgoingBeamDisabled", js.undefined)
+    def setOutgoingBeamDisabledUndefined: Self = StObject.set(x, "outgoingBeamDisabled", js.undefined)
     
     @scala.inline
-    def setOutgoingCallsDisabled(value: Boolean): Self = this.set("outgoingCallsDisabled", value.asInstanceOf[js.Any])
+    def setOutgoingCallsDisabled(value: Boolean): Self = StObject.set(x, "outgoingCallsDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutgoingCallsDisabled: Self = this.set("outgoingCallsDisabled", js.undefined)
+    def setOutgoingCallsDisabledUndefined: Self = StObject.set(x, "outgoingCallsDisabled", js.undefined)
     
     @scala.inline
-    def setPasswordPoliciesVarargs(value: PasswordRequirements*): Self = this.set("passwordPolicies", js.Array(value :_*))
+    def setPasswordPolicies(value: js.Array[PasswordRequirements]): Self = StObject.set(x, "passwordPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordPolicies(value: js.Array[PasswordRequirements]): Self = this.set("passwordPolicies", value.asInstanceOf[js.Any])
+    def setPasswordPoliciesUndefined: Self = StObject.set(x, "passwordPolicies", js.undefined)
     
     @scala.inline
-    def deletePasswordPolicies: Self = this.set("passwordPolicies", js.undefined)
+    def setPasswordPoliciesVarargs(value: PasswordRequirements*): Self = StObject.set(x, "passwordPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setPasswordRequirements(value: PasswordRequirements): Self = this.set("passwordRequirements", value.asInstanceOf[js.Any])
+    def setPasswordRequirements(value: PasswordRequirements): Self = StObject.set(x, "passwordRequirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePasswordRequirements: Self = this.set("passwordRequirements", js.undefined)
+    def setPasswordRequirementsUndefined: Self = StObject.set(x, "passwordRequirements", js.undefined)
     
     @scala.inline
-    def setPermissionGrantsVarargs(value: PermissionGrant*): Self = this.set("permissionGrants", js.Array(value :_*))
+    def setPermissionGrants(value: js.Array[PermissionGrant]): Self = StObject.set(x, "permissionGrants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionGrants(value: js.Array[PermissionGrant]): Self = this.set("permissionGrants", value.asInstanceOf[js.Any])
+    def setPermissionGrantsUndefined: Self = StObject.set(x, "permissionGrants", js.undefined)
     
     @scala.inline
-    def deletePermissionGrants: Self = this.set("permissionGrants", js.undefined)
+    def setPermissionGrantsVarargs(value: PermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value :_*))
     
     @scala.inline
-    def setPermittedAccessibilityServices(value: PackageNameList): Self = this.set("permittedAccessibilityServices", value.asInstanceOf[js.Any])
+    def setPermittedAccessibilityServices(value: PackageNameList): Self = StObject.set(x, "permittedAccessibilityServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermittedAccessibilityServices: Self = this.set("permittedAccessibilityServices", js.undefined)
+    def setPermittedAccessibilityServicesUndefined: Self = StObject.set(x, "permittedAccessibilityServices", js.undefined)
     
     @scala.inline
-    def setPermittedInputMethods(value: PackageNameList): Self = this.set("permittedInputMethods", value.asInstanceOf[js.Any])
+    def setPermittedInputMethods(value: PackageNameList): Self = StObject.set(x, "permittedInputMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermittedInputMethods: Self = this.set("permittedInputMethods", js.undefined)
+    def setPermittedInputMethodsUndefined: Self = StObject.set(x, "permittedInputMethods", js.undefined)
     
     @scala.inline
-    def setPersistentPreferredActivitiesVarargs(value: PersistentPreferredActivity*): Self = this.set("persistentPreferredActivities", js.Array(value :_*))
+    def setPersistentPreferredActivities(value: js.Array[PersistentPreferredActivity]): Self = StObject.set(x, "persistentPreferredActivities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentPreferredActivities(value: js.Array[PersistentPreferredActivity]): Self = this.set("persistentPreferredActivities", value.asInstanceOf[js.Any])
+    def setPersistentPreferredActivitiesUndefined: Self = StObject.set(x, "persistentPreferredActivities", js.undefined)
     
     @scala.inline
-    def deletePersistentPreferredActivities: Self = this.set("persistentPreferredActivities", js.undefined)
+    def setPersistentPreferredActivitiesVarargs(value: PersistentPreferredActivity*): Self = StObject.set(x, "persistentPreferredActivities", js.Array(value :_*))
     
     @scala.inline
-    def setPersonalUsagePolicies(value: PersonalUsagePolicies): Self = this.set("personalUsagePolicies", value.asInstanceOf[js.Any])
+    def setPersonalUsagePolicies(value: PersonalUsagePolicies): Self = StObject.set(x, "personalUsagePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersonalUsagePolicies: Self = this.set("personalUsagePolicies", js.undefined)
+    def setPersonalUsagePoliciesUndefined: Self = StObject.set(x, "personalUsagePolicies", js.undefined)
     
     @scala.inline
-    def setPlayStoreMode(value: String): Self = this.set("playStoreMode", value.asInstanceOf[js.Any])
+    def setPlayStoreMode(value: String): Self = StObject.set(x, "playStoreMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlayStoreMode: Self = this.set("playStoreMode", js.undefined)
+    def setPlayStoreModeUndefined: Self = StObject.set(x, "playStoreMode", js.undefined)
     
     @scala.inline
-    def setPolicyEnforcementRulesVarargs(value: PolicyEnforcementRule*): Self = this.set("policyEnforcementRules", js.Array(value :_*))
+    def setPolicyEnforcementRules(value: js.Array[PolicyEnforcementRule]): Self = StObject.set(x, "policyEnforcementRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyEnforcementRules(value: js.Array[PolicyEnforcementRule]): Self = this.set("policyEnforcementRules", value.asInstanceOf[js.Any])
+    def setPolicyEnforcementRulesUndefined: Self = StObject.set(x, "policyEnforcementRules", js.undefined)
     
     @scala.inline
-    def deletePolicyEnforcementRules: Self = this.set("policyEnforcementRules", js.undefined)
+    def setPolicyEnforcementRulesVarargs(value: PolicyEnforcementRule*): Self = StObject.set(x, "policyEnforcementRules", js.Array(value :_*))
     
     @scala.inline
-    def setPrivateKeySelectionEnabled(value: Boolean): Self = this.set("privateKeySelectionEnabled", value.asInstanceOf[js.Any])
+    def setPrivateKeySelectionEnabled(value: Boolean): Self = StObject.set(x, "privateKeySelectionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivateKeySelectionEnabled: Self = this.set("privateKeySelectionEnabled", js.undefined)
+    def setPrivateKeySelectionEnabledUndefined: Self = StObject.set(x, "privateKeySelectionEnabled", js.undefined)
     
     @scala.inline
-    def setRecommendedGlobalProxy(value: ProxyInfo): Self = this.set("recommendedGlobalProxy", value.asInstanceOf[js.Any])
+    def setRecommendedGlobalProxy(value: ProxyInfo): Self = StObject.set(x, "recommendedGlobalProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecommendedGlobalProxy: Self = this.set("recommendedGlobalProxy", js.undefined)
+    def setRecommendedGlobalProxyUndefined: Self = StObject.set(x, "recommendedGlobalProxy", js.undefined)
     
     @scala.inline
-    def setRemoveUserDisabled(value: Boolean): Self = this.set("removeUserDisabled", value.asInstanceOf[js.Any])
+    def setRemoveUserDisabled(value: Boolean): Self = StObject.set(x, "removeUserDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemoveUserDisabled: Self = this.set("removeUserDisabled", js.undefined)
+    def setRemoveUserDisabledUndefined: Self = StObject.set(x, "removeUserDisabled", js.undefined)
     
     @scala.inline
-    def setSafeBootDisabled(value: Boolean): Self = this.set("safeBootDisabled", value.asInstanceOf[js.Any])
+    def setSafeBootDisabled(value: Boolean): Self = StObject.set(x, "safeBootDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSafeBootDisabled: Self = this.set("safeBootDisabled", js.undefined)
+    def setSafeBootDisabledUndefined: Self = StObject.set(x, "safeBootDisabled", js.undefined)
     
     @scala.inline
-    def setScreenCaptureDisabled(value: Boolean): Self = this.set("screenCaptureDisabled", value.asInstanceOf[js.Any])
+    def setScreenCaptureDisabled(value: Boolean): Self = StObject.set(x, "screenCaptureDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScreenCaptureDisabled: Self = this.set("screenCaptureDisabled", js.undefined)
+    def setScreenCaptureDisabledUndefined: Self = StObject.set(x, "screenCaptureDisabled", js.undefined)
     
     @scala.inline
-    def setSetUserIconDisabled(value: Boolean): Self = this.set("setUserIconDisabled", value.asInstanceOf[js.Any])
+    def setSetUserIconDisabled(value: Boolean): Self = StObject.set(x, "setUserIconDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetUserIconDisabled: Self = this.set("setUserIconDisabled", js.undefined)
+    def setSetUserIconDisabledUndefined: Self = StObject.set(x, "setUserIconDisabled", js.undefined)
     
     @scala.inline
-    def setSetWallpaperDisabled(value: Boolean): Self = this.set("setWallpaperDisabled", value.asInstanceOf[js.Any])
+    def setSetWallpaperDisabled(value: Boolean): Self = StObject.set(x, "setWallpaperDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetWallpaperDisabled: Self = this.set("setWallpaperDisabled", js.undefined)
+    def setSetWallpaperDisabledUndefined: Self = StObject.set(x, "setWallpaperDisabled", js.undefined)
     
     @scala.inline
-    def setSetupActionsVarargs(value: SetupAction*): Self = this.set("setupActions", js.Array(value :_*))
+    def setSetupActions(value: js.Array[SetupAction]): Self = StObject.set(x, "setupActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetupActions(value: js.Array[SetupAction]): Self = this.set("setupActions", value.asInstanceOf[js.Any])
+    def setSetupActionsUndefined: Self = StObject.set(x, "setupActions", js.undefined)
     
     @scala.inline
-    def deleteSetupActions: Self = this.set("setupActions", js.undefined)
+    def setSetupActionsVarargs(value: SetupAction*): Self = StObject.set(x, "setupActions", js.Array(value :_*))
     
     @scala.inline
-    def setShareLocationDisabled(value: Boolean): Self = this.set("shareLocationDisabled", value.asInstanceOf[js.Any])
+    def setShareLocationDisabled(value: Boolean): Self = StObject.set(x, "shareLocationDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShareLocationDisabled: Self = this.set("shareLocationDisabled", js.undefined)
+    def setShareLocationDisabledUndefined: Self = StObject.set(x, "shareLocationDisabled", js.undefined)
     
     @scala.inline
-    def setShortSupportMessage(value: UserFacingMessage): Self = this.set("shortSupportMessage", value.asInstanceOf[js.Any])
+    def setShortSupportMessage(value: UserFacingMessage): Self = StObject.set(x, "shortSupportMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShortSupportMessage: Self = this.set("shortSupportMessage", js.undefined)
+    def setShortSupportMessageUndefined: Self = StObject.set(x, "shortSupportMessage", js.undefined)
     
     @scala.inline
-    def setSkipFirstUseHintsEnabled(value: Boolean): Self = this.set("skipFirstUseHintsEnabled", value.asInstanceOf[js.Any])
+    def setSkipFirstUseHintsEnabled(value: Boolean): Self = StObject.set(x, "skipFirstUseHintsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkipFirstUseHintsEnabled: Self = this.set("skipFirstUseHintsEnabled", js.undefined)
+    def setSkipFirstUseHintsEnabledUndefined: Self = StObject.set(x, "skipFirstUseHintsEnabled", js.undefined)
     
     @scala.inline
-    def setSmsDisabled(value: Boolean): Self = this.set("smsDisabled", value.asInstanceOf[js.Any])
+    def setSmsDisabled(value: Boolean): Self = StObject.set(x, "smsDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmsDisabled: Self = this.set("smsDisabled", js.undefined)
+    def setSmsDisabledUndefined: Self = StObject.set(x, "smsDisabled", js.undefined)
     
     @scala.inline
-    def setStatusBarDisabled(value: Boolean): Self = this.set("statusBarDisabled", value.asInstanceOf[js.Any])
+    def setStatusBarDisabled(value: Boolean): Self = StObject.set(x, "statusBarDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatusBarDisabled: Self = this.set("statusBarDisabled", js.undefined)
+    def setStatusBarDisabledUndefined: Self = StObject.set(x, "statusBarDisabled", js.undefined)
     
     @scala.inline
-    def setStatusReportingSettings(value: StatusReportingSettings): Self = this.set("statusReportingSettings", value.asInstanceOf[js.Any])
+    def setStatusReportingSettings(value: StatusReportingSettings): Self = StObject.set(x, "statusReportingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatusReportingSettings: Self = this.set("statusReportingSettings", js.undefined)
+    def setStatusReportingSettingsUndefined: Self = StObject.set(x, "statusReportingSettings", js.undefined)
     
     @scala.inline
-    def setStayOnPluggedModesVarargs(value: String*): Self = this.set("stayOnPluggedModes", js.Array(value :_*))
+    def setStayOnPluggedModes(value: js.Array[String]): Self = StObject.set(x, "stayOnPluggedModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStayOnPluggedModes(value: js.Array[String]): Self = this.set("stayOnPluggedModes", value.asInstanceOf[js.Any])
+    def setStayOnPluggedModesUndefined: Self = StObject.set(x, "stayOnPluggedModes", js.undefined)
     
     @scala.inline
-    def deleteStayOnPluggedModes: Self = this.set("stayOnPluggedModes", js.undefined)
+    def setStayOnPluggedModesVarargs(value: String*): Self = StObject.set(x, "stayOnPluggedModes", js.Array(value :_*))
     
     @scala.inline
-    def setSystemUpdate(value: SystemUpdate): Self = this.set("systemUpdate", value.asInstanceOf[js.Any])
+    def setSystemUpdate(value: SystemUpdate): Self = StObject.set(x, "systemUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSystemUpdate: Self = this.set("systemUpdate", js.undefined)
+    def setSystemUpdateUndefined: Self = StObject.set(x, "systemUpdate", js.undefined)
     
     @scala.inline
-    def setTetheringConfigDisabled(value: Boolean): Self = this.set("tetheringConfigDisabled", value.asInstanceOf[js.Any])
+    def setTetheringConfigDisabled(value: Boolean): Self = StObject.set(x, "tetheringConfigDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTetheringConfigDisabled: Self = this.set("tetheringConfigDisabled", js.undefined)
+    def setTetheringConfigDisabledUndefined: Self = StObject.set(x, "tetheringConfigDisabled", js.undefined)
     
     @scala.inline
-    def setUninstallAppsDisabled(value: Boolean): Self = this.set("uninstallAppsDisabled", value.asInstanceOf[js.Any])
+    def setUninstallAppsDisabled(value: Boolean): Self = StObject.set(x, "uninstallAppsDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUninstallAppsDisabled: Self = this.set("uninstallAppsDisabled", js.undefined)
+    def setUninstallAppsDisabledUndefined: Self = StObject.set(x, "uninstallAppsDisabled", js.undefined)
     
     @scala.inline
-    def setUnmuteMicrophoneDisabled(value: Boolean): Self = this.set("unmuteMicrophoneDisabled", value.asInstanceOf[js.Any])
+    def setUnmuteMicrophoneDisabled(value: Boolean): Self = StObject.set(x, "unmuteMicrophoneDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnmuteMicrophoneDisabled: Self = this.set("unmuteMicrophoneDisabled", js.undefined)
+    def setUnmuteMicrophoneDisabledUndefined: Self = StObject.set(x, "unmuteMicrophoneDisabled", js.undefined)
     
     @scala.inline
-    def setUsbFileTransferDisabled(value: Boolean): Self = this.set("usbFileTransferDisabled", value.asInstanceOf[js.Any])
+    def setUsbFileTransferDisabled(value: Boolean): Self = StObject.set(x, "usbFileTransferDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUsbFileTransferDisabled: Self = this.set("usbFileTransferDisabled", js.undefined)
+    def setUsbFileTransferDisabledUndefined: Self = StObject.set(x, "usbFileTransferDisabled", js.undefined)
     
     @scala.inline
-    def setUsbMassStorageEnabled(value: Boolean): Self = this.set("usbMassStorageEnabled", value.asInstanceOf[js.Any])
+    def setUsbMassStorageEnabled(value: Boolean): Self = StObject.set(x, "usbMassStorageEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUsbMassStorageEnabled: Self = this.set("usbMassStorageEnabled", js.undefined)
+    def setUsbMassStorageEnabledUndefined: Self = StObject.set(x, "usbMassStorageEnabled", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def setVpnConfigDisabled(value: Boolean): Self = this.set("vpnConfigDisabled", value.asInstanceOf[js.Any])
+    def setVpnConfigDisabled(value: Boolean): Self = StObject.set(x, "vpnConfigDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVpnConfigDisabled: Self = this.set("vpnConfigDisabled", js.undefined)
+    def setVpnConfigDisabledUndefined: Self = StObject.set(x, "vpnConfigDisabled", js.undefined)
     
     @scala.inline
-    def setWifiConfigDisabled(value: Boolean): Self = this.set("wifiConfigDisabled", value.asInstanceOf[js.Any])
+    def setWifiConfigDisabled(value: Boolean): Self = StObject.set(x, "wifiConfigDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWifiConfigDisabled: Self = this.set("wifiConfigDisabled", js.undefined)
+    def setWifiConfigDisabledUndefined: Self = StObject.set(x, "wifiConfigDisabled", js.undefined)
     
     @scala.inline
-    def setWifiConfigsLockdownEnabled(value: Boolean): Self = this.set("wifiConfigsLockdownEnabled", value.asInstanceOf[js.Any])
+    def setWifiConfigsLockdownEnabled(value: Boolean): Self = StObject.set(x, "wifiConfigsLockdownEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWifiConfigsLockdownEnabled: Self = this.set("wifiConfigsLockdownEnabled", js.undefined)
+    def setWifiConfigsLockdownEnabledUndefined: Self = StObject.set(x, "wifiConfigsLockdownEnabled", js.undefined)
   }
 }

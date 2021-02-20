@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdFilter extends js.Object {
+trait IdFilter extends StObject {
   
   /** YouTube Ads to download by ID. All IDs must belong to the same Advertiser or Partner specified in CreateSdfDownloadTaskRequest. */
   var adGroupAdIds: js.UndefOr[js.Array[String]] = js.native
@@ -34,72 +35,60 @@ object IdFilter {
   }
   
   @scala.inline
-  implicit class IdFilterOps[Self <: IdFilter] (val x: Self) extends AnyVal {
+  implicit class IdFilterMutableBuilder[Self <: IdFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdGroupAdIds(value: js.Array[String]): Self = StObject.set(x, "adGroupAdIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdGroupAdIdsUndefined: Self = StObject.set(x, "adGroupAdIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdGroupAdIdsVarargs(value: String*): Self = StObject.set(x, "adGroupAdIds", js.Array(value :_*))
     
     @scala.inline
-    def setAdGroupAdIdsVarargs(value: String*): Self = this.set("adGroupAdIds", js.Array(value :_*))
+    def setAdGroupIds(value: js.Array[String]): Self = StObject.set(x, "adGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdGroupAdIds(value: js.Array[String]): Self = this.set("adGroupAdIds", value.asInstanceOf[js.Any])
+    def setAdGroupIdsUndefined: Self = StObject.set(x, "adGroupIds", js.undefined)
     
     @scala.inline
-    def deleteAdGroupAdIds: Self = this.set("adGroupAdIds", js.undefined)
+    def setAdGroupIdsVarargs(value: String*): Self = StObject.set(x, "adGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setAdGroupIdsVarargs(value: String*): Self = this.set("adGroupIds", js.Array(value :_*))
+    def setCampaignIds(value: js.Array[String]): Self = StObject.set(x, "campaignIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdGroupIds(value: js.Array[String]): Self = this.set("adGroupIds", value.asInstanceOf[js.Any])
+    def setCampaignIdsUndefined: Self = StObject.set(x, "campaignIds", js.undefined)
     
     @scala.inline
-    def deleteAdGroupIds: Self = this.set("adGroupIds", js.undefined)
+    def setCampaignIdsVarargs(value: String*): Self = StObject.set(x, "campaignIds", js.Array(value :_*))
     
     @scala.inline
-    def setCampaignIdsVarargs(value: String*): Self = this.set("campaignIds", js.Array(value :_*))
+    def setInsertionOrderIds(value: js.Array[String]): Self = StObject.set(x, "insertionOrderIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignIds(value: js.Array[String]): Self = this.set("campaignIds", value.asInstanceOf[js.Any])
+    def setInsertionOrderIdsUndefined: Self = StObject.set(x, "insertionOrderIds", js.undefined)
     
     @scala.inline
-    def deleteCampaignIds: Self = this.set("campaignIds", js.undefined)
+    def setInsertionOrderIdsVarargs(value: String*): Self = StObject.set(x, "insertionOrderIds", js.Array(value :_*))
     
     @scala.inline
-    def setInsertionOrderIdsVarargs(value: String*): Self = this.set("insertionOrderIds", js.Array(value :_*))
+    def setLineItemIds(value: js.Array[String]): Self = StObject.set(x, "lineItemIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertionOrderIds(value: js.Array[String]): Self = this.set("insertionOrderIds", value.asInstanceOf[js.Any])
+    def setLineItemIdsUndefined: Self = StObject.set(x, "lineItemIds", js.undefined)
     
     @scala.inline
-    def deleteInsertionOrderIds: Self = this.set("insertionOrderIds", js.undefined)
+    def setLineItemIdsVarargs(value: String*): Self = StObject.set(x, "lineItemIds", js.Array(value :_*))
     
     @scala.inline
-    def setLineItemIdsVarargs(value: String*): Self = this.set("lineItemIds", js.Array(value :_*))
+    def setMediaProductIds(value: js.Array[String]): Self = StObject.set(x, "mediaProductIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineItemIds(value: js.Array[String]): Self = this.set("lineItemIds", value.asInstanceOf[js.Any])
+    def setMediaProductIdsUndefined: Self = StObject.set(x, "mediaProductIds", js.undefined)
     
     @scala.inline
-    def deleteLineItemIds: Self = this.set("lineItemIds", js.undefined)
-    
-    @scala.inline
-    def setMediaProductIdsVarargs(value: String*): Self = this.set("mediaProductIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setMediaProductIds(value: js.Array[String]): Self = this.set("mediaProductIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaProductIds: Self = this.set("mediaProductIds", js.undefined)
+    def setMediaProductIdsVarargs(value: String*): Self = StObject.set(x, "mediaProductIds", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Crop extends js.Object {
+trait Crop extends StObject {
   
   /** The number of pixels to crop from the bottom. The default is 0. */
   var bottomPixels: js.UndefOr[Double] = js.native
@@ -28,42 +29,30 @@ object Crop {
   }
   
   @scala.inline
-  implicit class CropOps[Self <: Crop] (val x: Self) extends AnyVal {
+  implicit class CropMutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomPixels(value: Double): Self = StObject.set(x, "bottomPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomPixelsUndefined: Self = StObject.set(x, "bottomPixels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftPixels(value: Double): Self = StObject.set(x, "leftPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomPixels(value: Double): Self = this.set("bottomPixels", value.asInstanceOf[js.Any])
+    def setLeftPixelsUndefined: Self = StObject.set(x, "leftPixels", js.undefined)
     
     @scala.inline
-    def deleteBottomPixels: Self = this.set("bottomPixels", js.undefined)
+    def setRightPixels(value: Double): Self = StObject.set(x, "rightPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftPixels(value: Double): Self = this.set("leftPixels", value.asInstanceOf[js.Any])
+    def setRightPixelsUndefined: Self = StObject.set(x, "rightPixels", js.undefined)
     
     @scala.inline
-    def deleteLeftPixels: Self = this.set("leftPixels", js.undefined)
+    def setTopPixels(value: Double): Self = StObject.set(x, "topPixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightPixels(value: Double): Self = this.set("rightPixels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightPixels: Self = this.set("rightPixels", js.undefined)
-    
-    @scala.inline
-    def setTopPixels(value: Double): Self = this.set("topPixels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopPixels: Self = this.set("topPixels", js.undefined)
+    def setTopPixelsUndefined: Self = StObject.set(x, "topPixels", js.undefined)
   }
 }

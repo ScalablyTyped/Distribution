@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Shared request options for all RPC methods.
   */
 @js.native
-trait SchemaRequestOptions extends js.Object {
+trait SchemaRequestOptions extends StObject {
   
   /**
     * Debug options of the request
@@ -46,42 +47,30 @@ object SchemaRequestOptions {
   }
   
   @scala.inline
-  implicit class SchemaRequestOptionsOps[Self <: SchemaRequestOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaRequestOptionsMutableBuilder[Self <: SchemaRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugOptions(value: SchemaDebugOptions): Self = this.set("debugOptions", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteDebugOptions: Self = this.set("debugOptions", js.undefined)
+    def setSearchApplicationId(value: String): Self = StObject.set(x, "searchApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setSearchApplicationIdUndefined: Self = StObject.set(x, "searchApplicationId", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchApplicationId(value: String): Self = this.set("searchApplicationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchApplicationId: Self = this.set("searchApplicationId", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

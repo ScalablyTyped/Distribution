@@ -1,15 +1,20 @@
 package typings.tsMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-map", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("ts-map", JSImport.Default)
+  @js.native
+  class default[K, V] () extends TsMap[K, V] {
+    def this(intrator: js.Array[js.Tuple2[K, V]]) = this()
+  }
   
   @js.native
-  trait TsMap[K, V] extends js.Object {
+  trait TsMap[K, V] extends StObject {
     
     def clear(): Unit = js.native
     
@@ -53,7 +58,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait TsMapInter[K, V] extends js.Object {
+  trait TsMapInter[K, V] extends StObject {
     
     def clear(): Unit = js.native
     
@@ -80,10 +85,5 @@ object mod extends js.Object {
     var size: Double = js.native
     
     def values(): js.Array[V] = js.native
-  }
-  
-  @js.native
-  class default[K, V] () extends TsMap[K, V] {
-    def this(intrator: js.Array[js.Tuple2[K, V]]) = this()
   }
 }

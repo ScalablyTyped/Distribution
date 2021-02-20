@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StockToolsGuiDefinitionsFlagsOptions extends js.Object {
+trait StockToolsGuiDefinitionsFlagsOptions extends StObject {
   
   var flagCirclepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagCirclepinOptions] = js.native
   
@@ -30,51 +31,39 @@ object StockToolsGuiDefinitionsFlagsOptions {
   }
   
   @scala.inline
-  implicit class StockToolsGuiDefinitionsFlagsOptionsOps[Self <: StockToolsGuiDefinitionsFlagsOptions] (val x: Self) extends AnyVal {
+  implicit class StockToolsGuiDefinitionsFlagsOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsFlagsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlagCirclepin(value: StockToolsGuiDefinitionsFlagsFlagCirclepinOptions): Self = StObject.set(x, "flagCirclepin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlagCirclepinUndefined: Self = StObject.set(x, "flagCirclepin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlagDiamondpin(value: StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions): Self = StObject.set(x, "flagDiamondpin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagCirclepin(value: StockToolsGuiDefinitionsFlagsFlagCirclepinOptions): Self = this.set("flagCirclepin", value.asInstanceOf[js.Any])
+    def setFlagDiamondpinUndefined: Self = StObject.set(x, "flagDiamondpin", js.undefined)
     
     @scala.inline
-    def deleteFlagCirclepin: Self = this.set("flagCirclepin", js.undefined)
+    def setFlagSimplepin(value: StockToolsGuiDefinitionsFlagsFlagSimplepinOptions): Self = StObject.set(x, "flagSimplepin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagDiamondpin(value: StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions): Self = this.set("flagDiamondpin", value.asInstanceOf[js.Any])
+    def setFlagSimplepinUndefined: Self = StObject.set(x, "flagSimplepin", js.undefined)
     
     @scala.inline
-    def deleteFlagDiamondpin: Self = this.set("flagDiamondpin", js.undefined)
+    def setFlagSquarepin(value: StockToolsGuiDefinitionsFlagsFlagSquarepinOptions): Self = StObject.set(x, "flagSquarepin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagSimplepin(value: StockToolsGuiDefinitionsFlagsFlagSimplepinOptions): Self = this.set("flagSimplepin", value.asInstanceOf[js.Any])
+    def setFlagSquarepinUndefined: Self = StObject.set(x, "flagSquarepin", js.undefined)
     
     @scala.inline
-    def deleteFlagSimplepin: Self = this.set("flagSimplepin", js.undefined)
+    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagSquarepin(value: StockToolsGuiDefinitionsFlagsFlagSquarepinOptions): Self = this.set("flagSquarepin", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteFlagSquarepin: Self = this.set("flagSquarepin", js.undefined)
-    
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.autocompleteAutoCompleteMod.AutoCompleteProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/autocomplete", JSImport.Namespace)
-@js.native
-object autocompleteMod extends js.Object {
+object autocompleteMod {
   
+  @JSImport("primereact/autocomplete", "AutoComplete")
   @js.native
-  class AutoComplete ()
-    extends Component[AutoCompleteProps, js.Any, js.Any]
+  class AutoComplete protected ()
+    extends typings.primereact.autocompleteAutoCompleteMod.AutoComplete {
+    def this(props: AutoCompleteProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: AutoCompleteProps, context: js.Any) = this()
+  }
 }

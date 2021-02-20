@@ -1,11 +1,12 @@
 package typings.awsSdk.dataexchangeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAssetResponse extends js.Object {
+trait GetAssetResponse extends StObject {
   
   /**
     * The ARN for the asset.
@@ -66,78 +67,66 @@ object GetAssetResponse {
   }
   
   @scala.inline
-  implicit class GetAssetResponseOps[Self <: GetAssetResponse] (val x: Self) extends AnyVal {
+  implicit class GetAssetResponseMutableBuilder[Self <: GetAssetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetDetails(value: AssetDetails): Self = StObject.set(x, "AssetDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setAssetDetailsUndefined: Self = StObject.set(x, "AssetDetails", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setAssetType(value: AssetType): Self = StObject.set(x, "AssetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetDetails(value: AssetDetails): Self = this.set("AssetDetails", value.asInstanceOf[js.Any])
+    def setAssetTypeUndefined: Self = StObject.set(x, "AssetType", js.undefined)
     
     @scala.inline
-    def deleteAssetDetails: Self = this.set("AssetDetails", js.undefined)
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetType(value: AssetType): Self = this.set("AssetType", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteAssetType: Self = this.set("AssetType", js.undefined)
+    def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setDataSetIdUndefined: Self = StObject.set(x, "DataSetId", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSetId(value: Id): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteDataSetId: Self = this.set("DataSetId", js.undefined)
+    def setName(value: AssetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AssetName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSourceId(value: Id): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: Id): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
     @scala.inline
-    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceId(value: Id): Self = this.set("SourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceId: Self = this.set("SourceId", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

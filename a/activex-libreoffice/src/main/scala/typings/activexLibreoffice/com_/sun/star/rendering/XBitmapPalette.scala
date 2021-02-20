@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,36 +78,24 @@ object XBitmapPalette {
   }
   
   @scala.inline
-  implicit class XBitmapPaletteOps[Self <: XBitmapPalette] (val x: Self) extends AnyVal {
+  implicit class XBitmapPaletteMutableBuilder[Self <: XBitmapPalette] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorSpace(value: XColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetColorSpace(value: () => XColorSpace): Self = StObject.set(x, "getColorSpace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIndex(value: (js.Array[SeqEquiv[ColorComponent]], Double) => Boolean): Self = StObject.set(x, "getIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setColorSpace(value: XColorSpace): Self = this.set("ColorSpace", value.asInstanceOf[js.Any])
+    def setGetNumberOfEntries(value: () => Double): Self = StObject.set(x, "getNumberOfEntries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNumberOfEntries(value: Double): Self = this.set("NumberOfEntries", value.asInstanceOf[js.Any])
+    def setNumberOfEntries(value: Double): Self = StObject.set(x, "NumberOfEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetColorSpace(value: () => XColorSpace): Self = this.set("getColorSpace", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIndex(value: (js.Array[SeqEquiv[ColorComponent]], Double) => Boolean): Self = this.set("getIndex", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetNumberOfEntries(value: () => Double): Self = this.set("getNumberOfEntries", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetIndex(value: (SeqEquiv[ColorComponent], Boolean, Double) => Boolean): Self = this.set("setIndex", js.Any.fromFunction3(value))
+    def setSetIndex(value: (SeqEquiv[ColorComponent], Boolean, Double) => Boolean): Self = StObject.set(x, "setIndex", js.Any.fromFunction3(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.messenger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Messenger extends js.Object {
+trait Messenger extends StObject {
   
   /**
     * Hides all messages.
@@ -26,24 +27,12 @@ object Messenger {
   }
   
   @scala.inline
-  implicit class MessengerOps[Self <: Messenger] (val x: Self) extends AnyVal {
+  implicit class MessengerMutableBuilder[Self <: Messenger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHideAll(value: () => Unit): Self = this.set("hideAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPost(value: MessageOptions => Message): Self = this.set("post", js.Any.fromFunction1(value))
+    def setPost(value: MessageOptions => Message): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
   }
 }

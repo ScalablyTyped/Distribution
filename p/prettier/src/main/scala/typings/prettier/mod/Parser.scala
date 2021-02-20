@@ -1,12 +1,13 @@
 package typings.prettier.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Parser[T] extends js.Object {
+trait Parser[T] extends StObject {
   
   var astFormat: String = js.native
   
@@ -34,42 +35,30 @@ object Parser {
   }
   
   @scala.inline
-  implicit class ParserOps[Self <: Parser[_], T] (val x: Self with Parser[T]) extends AnyVal {
+  implicit class ParserMutableBuilder[Self <: Parser[_], T] (val x: Self with Parser[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAstFormat(value: String): Self = StObject.set(x, "astFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasPragma(value: /* text */ String => Boolean): Self = StObject.set(x, "hasPragma", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasPragmaUndefined: Self = StObject.set(x, "hasPragma", js.undefined)
     
     @scala.inline
-    def setAstFormat(value: String): Self = this.set("astFormat", value.asInstanceOf[js.Any])
+    def setLocEnd(value: T => Double): Self = StObject.set(x, "locEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocEnd(value: T => Double): Self = this.set("locEnd", js.Any.fromFunction1(value))
+    def setLocStart(value: T => Double): Self = StObject.set(x, "locStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocStart(value: T => Double): Self = this.set("locStart", js.Any.fromFunction1(value))
+    def setParse(value: (String, StringDictionary[Parser[_]], ParserOptions[T]) => T): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setParse(value: (String, StringDictionary[Parser[_]], ParserOptions[T]) => T): Self = this.set("parse", js.Any.fromFunction3(value))
+    def setPreprocess(value: (/* text */ String, /* options */ ParserOptions[T]) => String): Self = StObject.set(x, "preprocess", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasPragma(value: /* text */ String => Boolean): Self = this.set("hasPragma", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteHasPragma: Self = this.set("hasPragma", js.undefined)
-    
-    @scala.inline
-    def setPreprocess(value: (/* text */ String, /* options */ ParserOptions[T]) => String): Self = this.set("preprocess", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deletePreprocess: Self = this.set("preprocess", js.undefined)
+    def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
   }
 }

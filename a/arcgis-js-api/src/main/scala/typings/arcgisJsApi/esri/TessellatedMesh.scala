@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,30 +39,18 @@ object TessellatedMesh {
   }
   
   @scala.inline
-  implicit class TessellatedMeshOps[Self <: TessellatedMesh] (val x: Self) extends AnyVal {
+  implicit class TessellatedMeshMutableBuilder[Self <: TessellatedMesh] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVertices(value: js.Array[MeshVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicesVarargs(value: Double*): Self = this.set("indices", js.Array(value :_*))
-    
-    @scala.inline
-    def setIndices(value: js.Array[Double]): Self = this.set("indices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticesVarargs(value: MeshVertex*): Self = this.set("vertices", js.Array(value :_*))
-    
-    @scala.inline
-    def setVertices(value: js.Array[MeshVertex]): Self = this.set("vertices", value.asInstanceOf[js.Any])
+    def setVerticesVarargs(value: MeshVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

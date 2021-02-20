@@ -3,12 +3,13 @@ package typings.pixiJs.anon
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Antialias extends js.Object {
+trait Antialias extends StObject {
   
   var antialias: js.UndefOr[Boolean] = js.native
   
@@ -51,114 +52,102 @@ object Antialias {
   }
   
   @scala.inline
-  implicit class AntialiasOps[Self <: Antialias] (val x: Self) extends AnyVal {
+  implicit class AntialiasMutableBuilder[Self <: Antialias] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoDensity(value: Boolean): Self = StObject.set(x, "autoDensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntialias(value: Boolean): Self = this.set("antialias", value.asInstanceOf[js.Any])
+    def setAutoDensityUndefined: Self = StObject.set(x, "autoDensity", js.undefined)
     
     @scala.inline
-    def deleteAntialias: Self = this.set("antialias", js.undefined)
+    def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDensity(value: Boolean): Self = this.set("autoDensity", value.asInstanceOf[js.Any])
+    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
     @scala.inline
-    def deleteAutoDensity: Self = this.set("autoDensity", js.undefined)
+    def setBackgroundColor(value: Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoStart(value: Boolean): Self = this.set("autoStart", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAutoStart: Self = this.set("autoStart", js.undefined)
+    def setClearBeforeRender(value: Boolean): Self = StObject.set(x, "clearBeforeRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Double): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setClearBeforeRenderUndefined: Self = StObject.set(x, "clearBeforeRender", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setForceCanvas(value: Boolean): Self = StObject.set(x, "forceCanvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearBeforeRender(value: Boolean): Self = this.set("clearBeforeRender", value.asInstanceOf[js.Any])
+    def setForceCanvasUndefined: Self = StObject.set(x, "forceCanvas", js.undefined)
     
     @scala.inline
-    def deleteClearBeforeRender: Self = this.set("clearBeforeRender", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceCanvas(value: Boolean): Self = this.set("forceCanvas", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteForceCanvas: Self = this.set("forceCanvas", js.undefined)
+    def setPowerPreference(value: String): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPowerPreferenceUndefined: Self = StObject.set(x, "powerPreference", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPreference(value: String): Self = this.set("powerPreference", value.asInstanceOf[js.Any])
+    def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
     
     @scala.inline
-    def deletePowerPreference: Self = this.set("powerPreference", js.undefined)
+    def setResizeTo(value: Window | HTMLElement): Self = StObject.set(x, "resizeTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveDrawingBuffer(value: Boolean): Self = this.set("preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    def setResizeToUndefined: Self = StObject.set(x, "resizeTo", js.undefined)
     
     @scala.inline
-    def deletePreserveDrawingBuffer: Self = this.set("preserveDrawingBuffer", js.undefined)
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeTo(value: Window | HTMLElement): Self = this.set("resizeTo", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deleteResizeTo: Self = this.set("resizeTo", js.undefined)
+    def setSharedLoader(value: Boolean): Self = StObject.set(x, "sharedLoader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setSharedLoaderUndefined: Self = StObject.set(x, "sharedLoader", js.undefined)
     
     @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setSharedTicker(value: Boolean): Self = StObject.set(x, "sharedTicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedLoader(value: Boolean): Self = this.set("sharedLoader", value.asInstanceOf[js.Any])
+    def setSharedTickerUndefined: Self = StObject.set(x, "sharedTicker", js.undefined)
     
     @scala.inline
-    def deleteSharedLoader: Self = this.set("sharedLoader", js.undefined)
+    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedTicker(value: Boolean): Self = this.set("sharedTicker", value.asInstanceOf[js.Any])
+    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
     
     @scala.inline
-    def deleteSharedTicker: Self = this.set("sharedTicker", js.undefined)
+    def setView(value: HTMLCanvasElement): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: HTMLCanvasElement): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

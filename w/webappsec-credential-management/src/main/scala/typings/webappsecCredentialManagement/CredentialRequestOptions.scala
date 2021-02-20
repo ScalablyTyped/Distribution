@@ -4,6 +4,7 @@ import typings.std.AbortSignal
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.optional
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.required
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.silent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://www.w3.org/TR/credential-management-1/#dictdef-credentialrequestoptions}
   */
 @js.native
-trait CredentialRequestOptions extends js.Object {
+trait CredentialRequestOptions extends StObject {
   
   /**
     * If set, the user agent will request {@link FederatedCredential} objects
@@ -59,54 +60,42 @@ object CredentialRequestOptions {
   }
   
   @scala.inline
-  implicit class CredentialRequestOptionsOps[Self <: CredentialRequestOptions] (val x: Self) extends AnyVal {
+  implicit class CredentialRequestOptionsMutableBuilder[Self <: CredentialRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFederated(value: FederatedCredentialRequestOptions): Self = StObject.set(x, "federated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFederatedUndefined: Self = StObject.set(x, "federated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediation(value: silent | optional | required): Self = StObject.set(x, "mediation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFederated(value: FederatedCredentialRequestOptions): Self = this.set("federated", value.asInstanceOf[js.Any])
+    def setMediationUndefined: Self = StObject.set(x, "mediation", js.undefined)
     
     @scala.inline
-    def deleteFederated: Self = this.set("federated", js.undefined)
+    def setPassword(value: Boolean): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediation(value: silent | optional | required): Self = this.set("mediation", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteMediation: Self = this.set("mediation", js.undefined)
+    def setPublicKey(value: PublicKeyCredentialRequestOptions): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: Boolean): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKey(value: PublicKeyCredentialRequestOptions): Self = this.set("publicKey", value.asInstanceOf[js.Any])
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+    def setUnmediated(value: Boolean): Self = StObject.set(x, "unmediated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
-    
-    @scala.inline
-    def setUnmediated(value: Boolean): Self = this.set("unmediated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnmediated: Self = this.set("unmediated", js.undefined)
+    def setUnmediatedUndefined: Self = StObject.set(x, "unmediated", js.undefined)
   }
 }

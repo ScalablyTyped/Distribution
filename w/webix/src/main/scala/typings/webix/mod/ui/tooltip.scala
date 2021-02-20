@@ -3,12 +3,13 @@ package typings.webix.mod.ui
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait tooltip extends js.Object {
+trait tooltip extends StObject {
   
   @JSName("$getSize")
   def $getSize(): js.Array[_] = js.native

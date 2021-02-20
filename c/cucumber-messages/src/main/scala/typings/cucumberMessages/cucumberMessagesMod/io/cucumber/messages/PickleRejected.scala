@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,17 +30,19 @@ class PickleRejected () extends IPickleRejected {
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-/* static members */
-@JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected")
-@js.native
-object PickleRejected extends js.Object {
+object PickleRejected {
   
   /**
     * Creates a new PickleRejected instance using the specified properties.
     * @param [properties] Properties to set
     * @returns PickleRejected instance
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.create")
+  @js.native
   def create(): PickleRejected = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.create")
+  @js.native
   def create(properties: IPickleRejected): PickleRejected = js.native
   
   /**
@@ -50,9 +53,18 @@ object PickleRejected extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.decode")
+  @js.native
   def decode(reader: Reader): PickleRejected = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.decode")
+  @js.native
   def decode(reader: Reader, length: Double): PickleRejected = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.decode")
+  @js.native
   def decode(reader: Uint8Array): PickleRejected = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): PickleRejected = js.native
   
   /**
@@ -62,7 +74,12 @@ object PickleRejected extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): PickleRejected = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): PickleRejected = js.native
   
   /**
@@ -71,7 +88,12 @@ object PickleRejected extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.encode")
+  @js.native
   def encode(message: IPickleRejected): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.encode")
+  @js.native
   def encode(message: IPickleRejected, writer: Writer): Writer = js.native
   
   /**
@@ -80,7 +102,12 @@ object PickleRejected extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IPickleRejected): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IPickleRejected, writer: Writer): Writer = js.native
   
   /**
@@ -88,6 +115,9 @@ object PickleRejected extends js.Object {
     * @param object Plain object
     * @returns PickleRejected
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): PickleRejected = js.native
   
   /**
@@ -96,7 +126,12 @@ object PickleRejected extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.toObject")
+  @js.native
   def toObject(message: PickleRejected): StringDictionary[js.Any] = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.toObject")
+  @js.native
   def toObject(message: PickleRejected, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -104,5 +139,8 @@ object PickleRejected extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.PickleRejected.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

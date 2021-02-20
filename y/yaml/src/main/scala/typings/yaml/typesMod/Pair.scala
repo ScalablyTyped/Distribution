@@ -1,11 +1,11 @@
 package typings.yaml.typesMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Map
 import typings.yaml.typesMod.AST.NodeToJsonContext
 import typings.yaml.typesMod.Pair.Type.MERGE_PAIR
 import typings.yaml.typesMod.Pair.Type.PAIR
 import typings.yaml.typesMod.Schema.StringifyContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,26 +43,23 @@ class Pair protected () extends Node {
   /** Always Node or null when parsed, but can be set to anything. */
   var value: js.Any = js.native
 }
-@JSImport("yaml/types", "Pair")
-@js.native
-object Pair extends js.Object {
+object Pair {
   
   @js.native
-  sealed trait Type extends js.Object
+  sealed trait Type extends StObject
+  @JSImport("yaml/types", "Pair.Type")
   @js.native
-  object Type extends js.Object {
+  object Type extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Type with String] = js.native
     
     @js.native
     sealed trait MERGE_PAIR extends Type
-    /* "MERGE_PAIR" */ @js.native
-    object MERGE_PAIR extends TopLevel[MERGE_PAIR with String]
+    /* "MERGE_PAIR" */ val MERGE_PAIR: typings.yaml.typesMod.Pair.Type.MERGE_PAIR with String = js.native
     
     @js.native
     sealed trait PAIR extends Type
-    /* "PAIR" */ @js.native
-    object PAIR extends TopLevel[PAIR with String]
+    /* "PAIR" */ val PAIR: typings.yaml.typesMod.Pair.Type.PAIR with String = js.native
   }
 }

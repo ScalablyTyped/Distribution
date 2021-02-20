@@ -1,11 +1,12 @@
 package typings.notifyjsBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationOptions extends js.Object {
+trait NotificationOptions extends StObject {
   
   // show the arrow pointing at the element
   var arrowShow: Boolean = js.native
@@ -76,63 +77,51 @@ object NotificationOptions {
   }
   
   @scala.inline
-  implicit class NotificationOptionsOps[Self <: NotificationOptions] (val x: Self) extends AnyVal {
+  implicit class NotificationOptionsMutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrowShow(value: Boolean): Self = StObject.set(x, "arrowShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowSize(value: Double): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowShow(value: Boolean): Self = this.set("arrowShow", value.asInstanceOf[js.Any])
+    def setAutoHideDelay(value: Double): Self = StObject.set(x, "autoHideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowSize(value: Double): Self = this.set("arrowSize", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    def setClickToHide(value: Boolean): Self = StObject.set(x, "clickToHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHideDelay(value: Double): Self = this.set("autoHideDelay", value.asInstanceOf[js.Any])
+    def setElementPosition(value: String): Self = StObject.set(x, "elementPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickToHide(value: Boolean): Self = this.set("clickToHide", value.asInstanceOf[js.Any])
+    def setGlobalPosition(value: String): Self = StObject.set(x, "globalPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementPosition(value: String): Self = this.set("elementPosition", value.asInstanceOf[js.Any])
+    def setHideAnimation(value: String): Self = StObject.set(x, "hideAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGap(value: Double): Self = this.set("gap", value.asInstanceOf[js.Any])
+    def setHideDuration(value: Double): Self = StObject.set(x, "hideDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalPosition(value: String): Self = this.set("globalPosition", value.asInstanceOf[js.Any])
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideAnimation(value: String): Self = this.set("hideAnimation", value.asInstanceOf[js.Any])
+    def setShowAnimation(value: String): Self = StObject.set(x, "showAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDuration(value: Double): Self = this.set("hideDuration", value.asInstanceOf[js.Any])
+    def setShowDuration(value: Double): Self = StObject.set(x, "showDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowAnimation(value: String): Self = this.set("showAnimation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowDuration(value: Double): Self = this.set("showDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

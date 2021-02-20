@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateStreamInput extends js.Object {
+trait CreateStreamInput extends StObject {
   
   /**
     * The number of hours that you want to retain the data in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is 0, indicating that the stream does not persist data. When the DataRetentionInHours value is 0, consumers can still consume the fragments that remain in the service host buffer, which has a retention time limit of 5 minutes and a retention memory limit of 200 MB. Fragments are removed from the buffer when either limit is reached.
@@ -46,51 +47,39 @@ object CreateStreamInput {
   }
   
   @scala.inline
-  implicit class CreateStreamInputOps[Self <: CreateStreamInput] (val x: Self) extends AnyVal {
+  implicit class CreateStreamInputMutableBuilder[Self <: CreateStreamInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataRetentionInHours(value: DataRetentionInHours): Self = StObject.set(x, "DataRetentionInHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataRetentionInHoursUndefined: Self = StObject.set(x, "DataRetentionInHours", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceName(value: DeviceName): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
     
     @scala.inline
-    def setDataRetentionInHours(value: DataRetentionInHours): Self = this.set("DataRetentionInHours", value.asInstanceOf[js.Any])
+    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataRetentionInHours: Self = this.set("DataRetentionInHours", js.undefined)
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def setDeviceName(value: DeviceName): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    def setMediaType(value: MediaType): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+    def setMediaTypeUndefined: Self = StObject.set(x, "MediaType", js.undefined)
     
     @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setTags(value: ResourceTags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: MediaType): Self = this.set("MediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaType: Self = this.set("MediaType", js.undefined)
-    
-    @scala.inline
-    def setTags(value: ResourceTags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

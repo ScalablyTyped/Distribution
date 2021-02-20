@@ -6,6 +6,7 @@ import typings.activexOffice.activexOfficeNumbers.`2`
 import typings.activexOffice.activexOfficeNumbers.`3`
 import typings.activexOffice.activexOfficeNumbers.`4`
 import typings.activexOffice.activexOfficeNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`0`
   - typings.activexOffice.activexOfficeNumbers.`4`
 */
-trait MsoPickerField extends js.Object
+trait MsoPickerField extends StObject
 object MsoPickerField {
   
   @scala.inline

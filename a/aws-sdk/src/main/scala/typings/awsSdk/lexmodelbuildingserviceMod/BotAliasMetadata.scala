@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BotAliasMetadata extends js.Object {
+trait BotAliasMetadata extends StObject {
   
   /**
     * The name of the bot to which the alias points.
@@ -56,66 +57,54 @@ object BotAliasMetadata {
   }
   
   @scala.inline
-  implicit class BotAliasMetadataOps[Self <: BotAliasMetadata] (val x: Self) extends AnyVal {
+  implicit class BotAliasMetadataMutableBuilder[Self <: BotAliasMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBotVersion(value: Version): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    def setBotVersionUndefined: Self = StObject.set(x, "botVersion", js.undefined)
     
     @scala.inline
-    def deleteBotName: Self = this.set("botName", js.undefined)
+    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotVersion(value: Version): Self = this.set("botVersion", value.asInstanceOf[js.Any])
+    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
     @scala.inline
-    def deleteBotVersion: Self = this.set("botVersion", js.undefined)
+    def setConversationLogs(value: ConversationLogsResponse): Self = StObject.set(x, "conversationLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    def setConversationLogsUndefined: Self = StObject.set(x, "conversationLogs", js.undefined)
     
     @scala.inline
-    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversationLogs(value: ConversationLogsResponse): Self = this.set("conversationLogs", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def deleteConversationLogs: Self = this.set("conversationLogs", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: AliasName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDate(value: Timestamp): Self = this.set("lastUpdatedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdatedDate: Self = this.set("lastUpdatedDate", js.undefined)
-    
-    @scala.inline
-    def setName(value: AliasName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

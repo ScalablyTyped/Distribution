@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PricePerBuyer extends js.Object {
+trait PricePerBuyer extends StObject {
   
   /** Optional access type for this buyer. */
   var auctionTier: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object PricePerBuyer {
   }
   
   @scala.inline
-  implicit class PricePerBuyerOps[Self <: PricePerBuyer] (val x: Self) extends AnyVal {
+  implicit class PricePerBuyerMutableBuilder[Self <: PricePerBuyer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuctionTier(value: String): Self = StObject.set(x, "auctionTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuctionTierUndefined: Self = StObject.set(x, "auctionTier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBilledBuyer(value: Buyer): Self = StObject.set(x, "billedBuyer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuctionTier(value: String): Self = this.set("auctionTier", value.asInstanceOf[js.Any])
+    def setBilledBuyerUndefined: Self = StObject.set(x, "billedBuyer", js.undefined)
     
     @scala.inline
-    def deleteAuctionTier: Self = this.set("auctionTier", js.undefined)
+    def setBuyer(value: Buyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilledBuyer(value: Buyer): Self = this.set("billedBuyer", value.asInstanceOf[js.Any])
+    def setBuyerUndefined: Self = StObject.set(x, "buyer", js.undefined)
     
     @scala.inline
-    def deleteBilledBuyer: Self = this.set("billedBuyer", js.undefined)
+    def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyer(value: Buyer): Self = this.set("buyer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuyer: Self = this.set("buyer", js.undefined)
-    
-    @scala.inline
-    def setPrice(value: Price): Self = this.set("price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
   }
 }

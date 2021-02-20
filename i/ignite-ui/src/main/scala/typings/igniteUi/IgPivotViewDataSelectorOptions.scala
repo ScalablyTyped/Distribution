@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,36 +41,24 @@ object IgPivotViewDataSelectorOptions {
   }
   
   @scala.inline
-  implicit class IgPivotViewDataSelectorOptionsOps[Self <: IgPivotViewDataSelectorOptions] (val x: Self) extends AnyVal {
+  implicit class IgPivotViewDataSelectorOptionsMutableBuilder[Self <: IgPivotViewDataSelectorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomMoveValidation(value: js.Function): Self = StObject.set(x, "customMoveValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomMoveValidationUndefined: Self = StObject.set(x, "customMoveValidation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragAndDropSettings(value: IgPivotViewDataSelectorOptionsDragAndDropSettings): Self = StObject.set(x, "dragAndDropSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMoveValidation(value: js.Function): Self = this.set("customMoveValidation", value.asInstanceOf[js.Any])
+    def setDragAndDropSettingsUndefined: Self = StObject.set(x, "dragAndDropSettings", js.undefined)
     
     @scala.inline
-    def deleteCustomMoveValidation: Self = this.set("customMoveValidation", js.undefined)
+    def setDropDownParent(value: js.Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragAndDropSettings(value: IgPivotViewDataSelectorOptionsDragAndDropSettings): Self = this.set("dragAndDropSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDragAndDropSettings: Self = this.set("dragAndDropSettings", js.undefined)
-    
-    @scala.inline
-    def setDropDownParent(value: js.Any): Self = this.set("dropDownParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDropDownParent: Self = this.set("dropDownParent", js.undefined)
+    def setDropDownParentUndefined: Self = StObject.set(x, "dropDownParent", js.undefined)
   }
 }

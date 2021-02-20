@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTimeSeriesResponse extends js.Object {
+trait ListTimeSeriesResponse extends StObject {
   
   /** Query execution errors that may have caused the time series data returned to be incomplete. */
   var executionErrors: js.UndefOr[js.Array[Status]] = js.native
@@ -34,48 +35,36 @@ object ListTimeSeriesResponse {
   }
   
   @scala.inline
-  implicit class ListTimeSeriesResponseOps[Self <: ListTimeSeriesResponse] (val x: Self) extends AnyVal {
+  implicit class ListTimeSeriesResponseMutableBuilder[Self <: ListTimeSeriesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionErrors(value: js.Array[Status]): Self = StObject.set(x, "executionErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionErrorsUndefined: Self = StObject.set(x, "executionErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionErrorsVarargs(value: Status*): Self = StObject.set(x, "executionErrors", js.Array(value :_*))
     
     @scala.inline
-    def setExecutionErrorsVarargs(value: Status*): Self = this.set("executionErrors", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionErrors(value: js.Array[Status]): Self = this.set("executionErrors", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteExecutionErrors: Self = this.set("executionErrors", js.undefined)
+    def setTimeSeries(value: js.Array[TimeSeries]): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setTimeSeriesUndefined: Self = StObject.set(x, "timeSeries", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setTimeSeriesVarargs(value: TimeSeries*): Self = StObject.set(x, "timeSeries", js.Array(value :_*))
     
     @scala.inline
-    def setTimeSeriesVarargs(value: TimeSeries*): Self = this.set("timeSeries", js.Array(value :_*))
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeSeries(value: js.Array[TimeSeries]): Self = this.set("timeSeries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSeries: Self = this.set("timeSeries", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

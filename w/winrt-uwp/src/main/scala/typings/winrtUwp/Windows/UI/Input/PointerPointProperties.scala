@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.UI.Input
 
 import typings.winrtUwp.Windows.Foundation.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides extended properties for a PointerPoint object. */
 @js.native
-trait PointerPointProperties extends js.Object {
+trait PointerPointProperties extends StObject {
   
   /** Gets the bounding rectangle of the contact area (typically from touch input). */
   var contactRect: Rect = js.native
@@ -128,93 +129,81 @@ object PointerPointProperties {
   }
   
   @scala.inline
-  implicit class PointerPointPropertiesOps[Self <: PointerPointProperties] (val x: Self) extends AnyVal {
+  implicit class PointerPointPropertiesMutableBuilder[Self <: PointerPointProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactRect(value: Rect): Self = StObject.set(x, "contactRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactRectRaw(value: Rect): Self = StObject.set(x, "contactRectRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetUsageValue(value: (Double, Double) => Double): Self = StObject.set(x, "getUsageValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setContactRect(value: Rect): Self = this.set("contactRect", value.asInstanceOf[js.Any])
+    def setHasUsage(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasUsage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setContactRectRaw(value: Rect): Self = this.set("contactRectRaw", value.asInstanceOf[js.Any])
+    def setIsBarrelButtonPressed(value: Boolean): Self = StObject.set(x, "isBarrelButtonPressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetUsageValue(value: (Double, Double) => Double): Self = this.set("getUsageValue", js.Any.fromFunction2(value))
+    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasUsage(value: (Double, Double) => Boolean): Self = this.set("hasUsage", js.Any.fromFunction2(value))
+    def setIsEraser(value: Boolean): Self = StObject.set(x, "isEraser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBarrelButtonPressed(value: Boolean): Self = this.set("isBarrelButtonPressed", value.asInstanceOf[js.Any])
+    def setIsHorizontalMouseWheel(value: Boolean): Self = StObject.set(x, "isHorizontalMouseWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCanceled(value: Boolean): Self = this.set("isCanceled", value.asInstanceOf[js.Any])
+    def setIsInRange(value: Boolean): Self = StObject.set(x, "isInRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEraser(value: Boolean): Self = this.set("isEraser", value.asInstanceOf[js.Any])
+    def setIsInverted(value: Boolean): Self = StObject.set(x, "isInverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHorizontalMouseWheel(value: Boolean): Self = this.set("isHorizontalMouseWheel", value.asInstanceOf[js.Any])
+    def setIsLeftButtonPressed(value: Boolean): Self = StObject.set(x, "isLeftButtonPressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInRange(value: Boolean): Self = this.set("isInRange", value.asInstanceOf[js.Any])
+    def setIsMiddleButtonPressed(value: Boolean): Self = StObject.set(x, "isMiddleButtonPressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInverted(value: Boolean): Self = this.set("isInverted", value.asInstanceOf[js.Any])
+    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLeftButtonPressed(value: Boolean): Self = this.set("isLeftButtonPressed", value.asInstanceOf[js.Any])
+    def setIsRightButtonPressed(value: Boolean): Self = StObject.set(x, "isRightButtonPressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMiddleButtonPressed(value: Boolean): Self = this.set("isMiddleButtonPressed", value.asInstanceOf[js.Any])
+    def setIsXButton1Pressed(value: Boolean): Self = StObject.set(x, "isXButton1Pressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrimary(value: Boolean): Self = this.set("isPrimary", value.asInstanceOf[js.Any])
+    def setIsXButton2Pressed(value: Boolean): Self = StObject.set(x, "isXButton2Pressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRightButtonPressed(value: Boolean): Self = this.set("isRightButtonPressed", value.asInstanceOf[js.Any])
+    def setMouseWheelDelta(value: Double): Self = StObject.set(x, "mouseWheelDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsXButton1Pressed(value: Boolean): Self = this.set("isXButton1Pressed", value.asInstanceOf[js.Any])
+    def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsXButton2Pressed(value: Boolean): Self = this.set("isXButton2Pressed", value.asInstanceOf[js.Any])
+    def setPointerUpdateKind(value: PointerUpdateKind): Self = StObject.set(x, "pointerUpdateKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseWheelDelta(value: Double): Self = this.set("mouseWheelDelta", value.asInstanceOf[js.Any])
+    def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Double): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setTouchConfidence(value: Boolean): Self = StObject.set(x, "touchConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointerUpdateKind(value: PointerUpdateKind): Self = this.set("pointerUpdateKind", value.asInstanceOf[js.Any])
+    def setTwist(value: Double): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressure(value: Double): Self = this.set("pressure", value.asInstanceOf[js.Any])
+    def setXtilt(value: Double): Self = StObject.set(x, "xtilt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchConfidence(value: Boolean): Self = this.set("touchConfidence", value.asInstanceOf[js.Any])
+    def setYtilt(value: Double): Self = StObject.set(x, "ytilt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwist(value: Double): Self = this.set("twist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXtilt(value: Double): Self = this.set("xtilt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYtilt(value: Double): Self = this.set("ytilt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZdistance(value: js.Any): Self = this.set("zdistance", value.asInstanceOf[js.Any])
+    def setZdistance(value: js.Any): Self = StObject.set(x, "zdistance", value.asInstanceOf[js.Any])
   }
 }

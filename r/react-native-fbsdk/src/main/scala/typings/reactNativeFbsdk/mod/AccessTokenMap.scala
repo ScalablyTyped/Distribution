@@ -1,11 +1,12 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessTokenMap extends js.Object {
+trait AccessTokenMap extends StObject {
   
   var accessToken: String = js.native
   
@@ -46,60 +47,48 @@ object AccessTokenMap {
   }
   
   @scala.inline
-  implicit class AccessTokenMapOps[Self <: AccessTokenMap] (val x: Self) extends AnyVal {
+  implicit class AccessTokenMapMutableBuilder[Self <: AccessTokenMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenSource(value: String): Self = StObject.set(x, "accessTokenSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessTokenSourceUndefined: Self = StObject.set(x, "accessTokenSource", js.undefined)
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setApplicationID(value: String): Self = StObject.set(x, "applicationID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationID(value: String): Self = this.set("applicationID", value.asInstanceOf[js.Any])
+    def setDataAccessExpirationTime(value: Double): Self = StObject.set(x, "dataAccessExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataAccessExpirationTime(value: Double): Self = this.set("dataAccessExpirationTime", value.asInstanceOf[js.Any])
+    def setDeclinedPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "declinedPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclinedPermissionsVarargs(value: Permissions*): Self = this.set("declinedPermissions", js.Array(value :_*))
+    def setDeclinedPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "declinedPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setDeclinedPermissions(value: js.Array[Permissions]): Self = this.set("declinedPermissions", value.asInstanceOf[js.Any])
+    def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: Double): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    def setExpiredPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "expiredPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiredPermissionsVarargs(value: Permissions*): Self = this.set("expiredPermissions", js.Array(value :_*))
+    def setExpiredPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "expiredPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setExpiredPermissions(value: js.Array[Permissions]): Self = this.set("expiredPermissions", value.asInstanceOf[js.Any])
+    def setLastRefreshTime(value: Double): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRefreshTime(value: Double): Self = this.set("lastRefreshTime", value.asInstanceOf[js.Any])
+    def setPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionsVarargs(value: Permissions*): Self = this.set("permissions", js.Array(value :_*))
+    def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
     @scala.inline
-    def setPermissions(value: js.Array[Permissions]): Self = this.set("permissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserID(value: String): Self = this.set("userID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccessTokenSource(value: String): Self = this.set("accessTokenSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessTokenSource: Self = this.set("accessTokenSource", js.undefined)
+    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
   }
 }

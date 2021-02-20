@@ -1,11 +1,12 @@
 package typings.wegameApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Style extends js.Object {
+trait Style extends StObject {
   
   /**
     * 推荐单元 id
@@ -26,24 +27,12 @@ object Style {
   }
   
   @scala.inline
-  implicit class StyleOps[Self <: Style] (val x: Self) extends AnyVal {
+  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdUnitId(value: String): Self = this.set("adUnitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: Left): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: Left): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

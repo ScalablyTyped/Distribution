@@ -5,12 +5,13 @@ import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethods
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddRepoToInstallation extends js.Object {
+trait AddRepoToInstallation extends StObject {
   
   /**
     * Add a single repository to an installation. The authenticated user must have admin access to the repository.

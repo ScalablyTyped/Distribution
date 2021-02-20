@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContourGenerateOptions extends js.Object {
+trait ContourGenerateOptions extends StObject {
   
   var dst: Layer = js.native
   
@@ -32,63 +33,51 @@ object ContourGenerateOptions {
   }
   
   @scala.inline
-  implicit class ContourGenerateOptionsOps[Self <: ContourGenerateOptions] (val x: Self) extends AnyVal {
+  implicit class ContourGenerateOptionsMutableBuilder[Self <: ContourGenerateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDst(value: Layer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElevField(value: Double): Self = StObject.set(x, "elevField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElevFieldUndefined: Self = StObject.set(x, "elevField", js.undefined)
     
     @scala.inline
-    def setDst(value: Layer): Self = this.set("dst", value.asInstanceOf[js.Any])
+    def setFixedLevels(value: js.Array[Double]): Self = StObject.set(x, "fixedLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: RasterBand): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setFixedLevelsUndefined: Self = StObject.set(x, "fixedLevels", js.undefined)
     
     @scala.inline
-    def setElevField(value: Double): Self = this.set("elevField", value.asInstanceOf[js.Any])
+    def setFixedLevelsVarargs(value: Double*): Self = StObject.set(x, "fixedLevels", js.Array(value :_*))
     
     @scala.inline
-    def deleteElevField: Self = this.set("elevField", js.undefined)
+    def setIdField(value: Double): Self = StObject.set(x, "idField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedLevelsVarargs(value: Double*): Self = this.set("fixedLevels", js.Array(value :_*))
+    def setIdFieldUndefined: Self = StObject.set(x, "idField", js.undefined)
     
     @scala.inline
-    def setFixedLevels(value: js.Array[Double]): Self = this.set("fixedLevels", value.asInstanceOf[js.Any])
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFixedLevels: Self = this.set("fixedLevels", js.undefined)
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def setIdField(value: Double): Self = this.set("idField", value.asInstanceOf[js.Any])
+    def setNodata(value: Double): Self = StObject.set(x, "nodata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdField: Self = this.set("idField", js.undefined)
+    def setNodataUndefined: Self = StObject.set(x, "nodata", js.undefined)
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def setNodata(value: Double): Self = this.set("nodata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodata: Self = this.set("nodata", js.undefined)
-    
-    @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setSrc(value: RasterBand): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

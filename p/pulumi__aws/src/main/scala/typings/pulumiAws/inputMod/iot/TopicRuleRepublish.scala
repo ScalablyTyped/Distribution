@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.iot
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRuleRepublish extends js.Object {
+trait TopicRuleRepublish extends StObject {
   
   /**
     * The Quality of Service (QoS) level to use when republishing messages. Valid values are 0 or 1. The default value is 0.
@@ -32,30 +33,18 @@ object TopicRuleRepublish {
   }
   
   @scala.inline
-  implicit class TopicRuleRepublishOps[Self <: TopicRuleRepublish] (val x: Self) extends AnyVal {
+  implicit class TopicRuleRepublishMutableBuilder[Self <: TopicRuleRepublish] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQos(value: Input[Double]): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopic(value: Input[String]): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQos(value: Input[Double]): Self = this.set("qos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQos: Self = this.set("qos", js.undefined)
+    def setTopic(value: Input[String]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

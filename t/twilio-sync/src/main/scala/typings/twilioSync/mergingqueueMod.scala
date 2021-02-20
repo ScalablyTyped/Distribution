@@ -1,15 +1,15 @@
 package typings.twilioSync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-sync/lib/mergingqueue", JSImport.Namespace)
-@js.native
-object mergingqueueMod extends js.Object {
+object mergingqueueMod {
   
+  @JSImport("twilio-sync/lib/mergingqueue", "MergingQueue")
   @js.native
-  class MergingQueue[InputType, ReturnType] protected () extends js.Object {
+  class MergingQueue[InputType, ReturnType] protected () extends StObject {
     def this(inputMergingFunction: InputReducer[InputType]) = this()
     
     def add(input: InputType, requestFunction: RequestFunction[InputType, ReturnType]): js.Promise[ReturnType] = js.native
@@ -27,8 +27,9 @@ object mergingqueueMod extends js.Object {
     var wakeupQueue: js.Any = js.native
   }
   
+  @JSImport("twilio-sync/lib/mergingqueue", "NamespacedMergingQueue")
   @js.native
-  class NamespacedMergingQueue[K, InputType, ReturnType] protected () extends js.Object {
+  class NamespacedMergingQueue[K, InputType, ReturnType] protected () extends StObject {
     def this(inputReducer: InputReducer[InputType]) = this()
     
     def add(namespaceKey: K, input: InputType, requestFunction: RequestFunction[InputType, ReturnType]): js.Promise[ReturnType] = js.native
@@ -45,8 +46,10 @@ object mergingqueueMod extends js.Object {
     def squashAndAdd(namespaceKey: K, input: InputType, requestFunction: RequestFunction[InputType, ReturnType]): js.Promise[ReturnType] = js.native
   }
   
+  type InputReducer[InputType] = js.Function2[/* acc */ InputType, /* input */ InputType, InputType]
+  
   @js.native
-  trait QueuedRequest[InputType, ReturnType] extends js.Object {
+  trait QueuedRequest[InputType, ReturnType] extends StObject {
     
     var input: InputType = js.native
     
@@ -58,8 +61,6 @@ object mergingqueueMod extends js.Object {
     
     def resolve(result: ReturnType): js.Any = js.native
   }
-  
-  type InputReducer[InputType] = js.Function2[/* acc */ InputType, /* input */ InputType, InputType]
   
   type RequestFunction[InputType, ReturnType] = js.Function1[/* input */ InputType, js.Promise[ReturnType]]
 }

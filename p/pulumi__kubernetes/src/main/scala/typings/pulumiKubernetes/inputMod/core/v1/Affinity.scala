@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Affinity is a group of affinity scheduling rules.
   */
 @js.native
-trait Affinity extends js.Object {
+trait Affinity extends StObject {
   
   /**
     * Describes node affinity scheduling rules for the pod.
@@ -35,36 +36,24 @@ object Affinity {
   }
   
   @scala.inline
-  implicit class AffinityOps[Self <: Affinity] (val x: Self) extends AnyVal {
+  implicit class AffinityMutableBuilder[Self <: Affinity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeAffinity(value: Input[NodeAffinity]): Self = StObject.set(x, "nodeAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeAffinityUndefined: Self = StObject.set(x, "nodeAffinity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPodAffinity(value: Input[PodAffinity]): Self = StObject.set(x, "podAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeAffinity(value: Input[NodeAffinity]): Self = this.set("nodeAffinity", value.asInstanceOf[js.Any])
+    def setPodAffinityUndefined: Self = StObject.set(x, "podAffinity", js.undefined)
     
     @scala.inline
-    def deleteNodeAffinity: Self = this.set("nodeAffinity", js.undefined)
+    def setPodAntiAffinity(value: Input[PodAntiAffinity]): Self = StObject.set(x, "podAntiAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPodAffinity(value: Input[PodAffinity]): Self = this.set("podAffinity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePodAffinity: Self = this.set("podAffinity", js.undefined)
-    
-    @scala.inline
-    def setPodAntiAffinity(value: Input[PodAntiAffinity]): Self = this.set("podAntiAffinity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePodAntiAffinity: Self = this.set("podAntiAffinity", js.undefined)
+    def setPodAntiAffinityUndefined: Self = StObject.set(x, "podAntiAffinity", js.undefined)
   }
 }

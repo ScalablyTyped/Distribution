@@ -1,6 +1,7 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Source describes the location of the source used for the build.
   */
 @js.native
-trait SchemaSource extends js.Object {
+trait SchemaSource extends StObject {
   
   /**
     * If provided, some of the source code used for the build may be found in
@@ -49,45 +50,33 @@ object SchemaSource {
   }
   
   @scala.inline
-  implicit class SchemaSourceOps[Self <: SchemaSource] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceMutableBuilder[Self <: SchemaSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalContexts(value: js.Array[SchemaSourceContext]): Self = StObject.set(x, "additionalContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalContextsUndefined: Self = StObject.set(x, "additionalContexts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalContextsVarargs(value: SchemaSourceContext*): Self = StObject.set(x, "additionalContexts", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalContextsVarargs(value: SchemaSourceContext*): Self = this.set("additionalContexts", js.Array(value :_*))
+    def setArtifactStorageSourceUri(value: String): Self = StObject.set(x, "artifactStorageSourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalContexts(value: js.Array[SchemaSourceContext]): Self = this.set("additionalContexts", value.asInstanceOf[js.Any])
+    def setArtifactStorageSourceUriUndefined: Self = StObject.set(x, "artifactStorageSourceUri", js.undefined)
     
     @scala.inline
-    def deleteAdditionalContexts: Self = this.set("additionalContexts", js.undefined)
+    def setContext(value: SchemaSourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactStorageSourceUri(value: String): Self = this.set("artifactStorageSourceUri", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteArtifactStorageSourceUri: Self = this.set("artifactStorageSourceUri", js.undefined)
+    def setFileHashes(value: StringDictionary[SchemaFileHashes]): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: SchemaSourceContext): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
-    
-    @scala.inline
-    def setFileHashes(value: StringDictionary[SchemaFileHashes]): Self = this.set("fileHashes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileHashes: Self = this.set("fileHashes", js.undefined)
+    def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
   }
 }

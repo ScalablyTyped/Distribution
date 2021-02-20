@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single response from an update.
   */
 @js.native
-trait SchemaResponse extends js.Object {
+trait SchemaResponse extends StObject {
   
   /**
     * The result of creating a named range.
@@ -39,42 +40,30 @@ object SchemaResponse {
   }
   
   @scala.inline
-  implicit class SchemaResponseOps[Self <: SchemaResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaResponseMutableBuilder[Self <: SchemaResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateNamedRange(value: SchemaCreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertInlineImage(value: SchemaInsertInlineImageResponse): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateNamedRange(value: SchemaCreateNamedRangeResponse): Self = this.set("createNamedRange", value.asInstanceOf[js.Any])
+    def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
     
     @scala.inline
-    def deleteCreateNamedRange: Self = this.set("createNamedRange", js.undefined)
+    def setInsertInlineSheetsChart(value: SchemaInsertInlineSheetsChartResponse): Self = StObject.set(x, "insertInlineSheetsChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertInlineImage(value: SchemaInsertInlineImageResponse): Self = this.set("insertInlineImage", value.asInstanceOf[js.Any])
+    def setInsertInlineSheetsChartUndefined: Self = StObject.set(x, "insertInlineSheetsChart", js.undefined)
     
     @scala.inline
-    def deleteInsertInlineImage: Self = this.set("insertInlineImage", js.undefined)
+    def setReplaceAllText(value: SchemaReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertInlineSheetsChart(value: SchemaInsertInlineSheetsChartResponse): Self = this.set("insertInlineSheetsChart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsertInlineSheetsChart: Self = this.set("insertInlineSheetsChart", js.undefined)
-    
-    @scala.inline
-    def setReplaceAllText(value: SchemaReplaceAllTextResponse): Self = this.set("replaceAllText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceAllText: Self = this.set("replaceAllText", js.undefined)
+    def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
   }
 }

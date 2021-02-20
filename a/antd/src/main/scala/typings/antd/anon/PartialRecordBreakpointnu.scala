@@ -1,12 +1,13 @@
 package typings.antd.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, number>> */
 @js.native
-trait PartialRecordBreakpointnu extends js.Object {
+trait PartialRecordBreakpointnu extends StObject {
   
   var lg: js.UndefOr[Double] = js.native
   
@@ -29,54 +30,42 @@ object PartialRecordBreakpointnu {
   }
   
   @scala.inline
-  implicit class PartialRecordBreakpointnuOps[Self <: PartialRecordBreakpointnu] (val x: Self) extends AnyVal {
+  implicit class PartialRecordBreakpointnuMutableBuilder[Self <: PartialRecordBreakpointnu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLg(value: Double): Self = this.set("lg", value.asInstanceOf[js.Any])
+    def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
     
     @scala.inline
-    def deleteLg: Self = this.set("lg", js.undefined)
+    def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd(value: Double): Self = this.set("md", value.asInstanceOf[js.Any])
+    def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
     
     @scala.inline
-    def deleteMd: Self = this.set("md", js.undefined)
+    def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSm(value: Double): Self = this.set("sm", value.asInstanceOf[js.Any])
+    def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
     
     @scala.inline
-    def deleteSm: Self = this.set("sm", js.undefined)
+    def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXl(value: Double): Self = this.set("xl", value.asInstanceOf[js.Any])
+    def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
     
     @scala.inline
-    def deleteXl: Self = this.set("xl", js.undefined)
+    def setXxl(value: Double): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXs(value: Double): Self = this.set("xs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXs: Self = this.set("xs", js.undefined)
-    
-    @scala.inline
-    def setXxl(value: Double): Self = this.set("xxl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXxl: Self = this.set("xxl", js.undefined)
+    def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
   }
 }

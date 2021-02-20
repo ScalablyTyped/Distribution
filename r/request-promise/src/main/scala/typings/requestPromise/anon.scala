@@ -4,16 +4,15 @@ import typings.bluebird.mod.Bluebird
 import typings.bluebird.mod.CatchFilter
 import typings.bluebird.mod.Constructor
 import typings.bluebird.mod.Resolvable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall[T] extends js.Object {
+  trait FnCall[T] extends StObject {
     
     def apply[U](): Bluebird[U] = js.native
     def apply[U](onFulfill: js.UndefOr[scala.Nothing], onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
@@ -26,7 +25,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallFilter1Filter2Filter3Filter4Filter5OnReject[T] extends js.Object {
+  trait FnCallFilter1Filter2Filter3Filter4Filter5OnReject[T] extends StObject {
     
     def apply[U](): Bluebird[U | T] = js.native
     def apply[U](onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U | T] = js.native

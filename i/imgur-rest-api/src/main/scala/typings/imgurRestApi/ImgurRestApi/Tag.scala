@@ -1,11 +1,12 @@
 package typings.imgurRestApi.ImgurRestApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tag extends js.Object {
+trait Tag extends StObject {
   
   var followers: Double = js.native
   
@@ -26,39 +27,27 @@ object Tag {
   }
   
   @scala.inline
-  implicit class TagOps[Self <: Tag] (val x: Self) extends AnyVal {
+  implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowingUndefined: Self = StObject.set(x, "following", js.undefined)
     
     @scala.inline
-    def setFollowers(value: Double): Self = this.set("followers", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[GalleryItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: GalleryItem*): Self = this.set("items", js.Array(value :_*))
+    def setItemsVarargs(value: GalleryItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItems(value: js.Array[GalleryItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_items(value: Double): Self = this.set("total_items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFollowing(value: Boolean): Self = this.set("following", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFollowing: Self = this.set("following", js.undefined)
+    def setTotal_items(value: Double): Self = StObject.set(x, "total_items", value.asInstanceOf[js.Any])
   }
 }

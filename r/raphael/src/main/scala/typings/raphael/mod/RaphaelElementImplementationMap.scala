@@ -6,12 +6,13 @@ import typings.std.SVGImageElement
 import typings.std.SVGPathElement
 import typings.std.SVGRectElement
 import typings.std.SVGTextElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelElementImplementationMap extends js.Object {
+trait RaphaelElementImplementationMap extends StObject {
   
   /** The elements that implement the {@link RaphaelPaper.circle} shape. */
   var circle: RaphaelElementByTechnologyMap[SVGCircleElement, VMLCircleElement] = js.native
@@ -47,36 +48,24 @@ object RaphaelElementImplementationMap {
   }
   
   @scala.inline
-  implicit class RaphaelElementImplementationMapOps[Self <: RaphaelElementImplementationMap] (val x: Self) extends AnyVal {
+  implicit class RaphaelElementImplementationMapMutableBuilder[Self <: RaphaelElementImplementationMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCircle(value: RaphaelElementByTechnologyMap[SVGCircleElement, VMLCircleElement]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEllipse(value: RaphaelElementByTechnologyMap[SVGEllipseElement, VMLEllipseElement]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: RaphaelElementByTechnologyMap[SVGImageElement, VMLImageElement]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircle(value: RaphaelElementByTechnologyMap[SVGCircleElement, VMLCircleElement]): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setPath(value: RaphaelElementByTechnologyMap[SVGPathElement, VMLPathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipse(value: RaphaelElementByTechnologyMap[SVGEllipseElement, VMLEllipseElement]): Self = this.set("ellipse", value.asInstanceOf[js.Any])
+    def setRect(value: RaphaelElementByTechnologyMap[SVGRectElement, VMLRectElement]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: RaphaelElementByTechnologyMap[SVGImageElement, VMLImageElement]): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: RaphaelElementByTechnologyMap[SVGPathElement, VMLPathElement]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRect(value: RaphaelElementByTechnologyMap[SVGRectElement, VMLRectElement]): Self = this.set("rect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: RaphaelElementByTechnologyMap[SVGTextElement, VMLTextElement]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: RaphaelElementByTechnologyMap[SVGTextElement, VMLTextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

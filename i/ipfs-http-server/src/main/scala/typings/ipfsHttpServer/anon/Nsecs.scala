@@ -1,11 +1,12 @@
 package typings.ipfsHttpServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Nsecs extends js.Object {
+trait Nsecs extends StObject {
   
   var nsecs: js.Any = js.native
   
@@ -20,24 +21,12 @@ object Nsecs {
   }
   
   @scala.inline
-  implicit class NsecsOps[Self <: Nsecs] (val x: Self) extends AnyVal {
+  implicit class NsecsMutableBuilder[Self <: Nsecs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNsecs(value: js.Any): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNsecs(value: js.Any): Self = this.set("nsecs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecs(value: js.Any): Self = this.set("secs", value.asInstanceOf[js.Any])
+    def setSecs(value: js.Any): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupConfigurationItem extends js.Object {
+trait GroupConfigurationItem extends StObject {
   
   /**
     * A collection of parameters for this group configuration item.
@@ -26,30 +27,18 @@ object GroupConfigurationItem {
   }
   
   @scala.inline
-  implicit class GroupConfigurationItemOps[Self <: GroupConfigurationItem] (val x: Self) extends AnyVal {
+  implicit class GroupConfigurationItemMutableBuilder[Self <: GroupConfigurationItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: GroupParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParametersVarargs(value: GroupConfigurationParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: GroupConfigurationType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParametersVarargs(value: GroupConfigurationParameter*): Self = this.set("Parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: GroupParameterList): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setType(value: GroupConfigurationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

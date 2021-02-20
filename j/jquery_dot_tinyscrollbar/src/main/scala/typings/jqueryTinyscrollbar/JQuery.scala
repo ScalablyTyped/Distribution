@@ -1,12 +1,13 @@
 package typings.jqueryTinyscrollbar
 
 import typings.jqueryTinyscrollbar.JQueryTinyScrollbar.JQueryTinyScrollbarOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * Creates a new tinyscrollbar with the specified, or default, options.

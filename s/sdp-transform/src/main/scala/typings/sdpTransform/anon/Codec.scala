@@ -1,11 +1,12 @@
 package typings.sdpTransform.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Codec extends js.Object {
+trait Codec extends StObject {
   
   var codec: String = js.native
   
@@ -24,36 +25,24 @@ object Codec {
   }
   
   @scala.inline
-  implicit class CodecOps[Self <: Codec] (val x: Self) extends AnyVal {
+  implicit class CodecMutableBuilder[Self <: Codec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setCodec(value: String): Self = this.set("codec", value.asInstanceOf[js.Any])
+    def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: Double): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: Double): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
-    
-    @scala.inline
-    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRate: Self = this.set("rate", js.undefined)
+    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
   }
 }

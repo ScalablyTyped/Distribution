@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactAnnotationOperations extends js.Object
+sealed trait ContactAnnotationOperations extends StObject
 /** Specifies the types of operations you can perform with a Contact . */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactAnnotationOperations")
 @js.native
-object ContactAnnotationOperations extends js.Object {
+object ContactAnnotationOperations extends StObject {
   
   /** Make and audio call. */
   @js.native

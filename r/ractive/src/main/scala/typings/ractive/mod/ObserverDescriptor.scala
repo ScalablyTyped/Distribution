@@ -1,5 +1,6 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ractive.mod.ObserverBaseDescriptor[T]
   - typings.ractive.mod.ObserverArrayDescriptor[T]
 */
-trait ObserverDescriptor[T /* <: Ractive[T] */] extends js.Object
+trait ObserverDescriptor[T /* <: Ractive[T] */] extends StObject

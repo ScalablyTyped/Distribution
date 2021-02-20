@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainPackageDetails extends js.Object {
+trait DomainPackageDetails extends StObject {
   
   /**
     * Name of the domain you've associated a package with.
@@ -58,72 +59,60 @@ object DomainPackageDetails {
   }
   
   @scala.inline
-  implicit class DomainPackageDetailsOps[Self <: DomainPackageDetails] (val x: Self) extends AnyVal {
+  implicit class DomainPackageDetailsMutableBuilder[Self <: DomainPackageDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainPackageStatus(value: DomainPackageStatus): Self = StObject.set(x, "DomainPackageStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setDomainPackageStatusUndefined: Self = StObject.set(x, "DomainPackageStatus", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainPackageStatus(value: DomainPackageStatus): Self = this.set("DomainPackageStatus", value.asInstanceOf[js.Any])
+    def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
     
     @scala.inline
-    def deleteDomainPackageStatus: Self = this.set("DomainPackageStatus", js.undefined)
+    def setLastUpdated(value: LastUpdated): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: ErrorDetails): Self = this.set("ErrorDetails", value.asInstanceOf[js.Any])
+    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("ErrorDetails", js.undefined)
+    def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: LastUpdated): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    def setPackageIDUndefined: Self = StObject.set(x, "PackageID", js.undefined)
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    def setPackageName(value: PackageName): Self = StObject.set(x, "PackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageID(value: PackageID): Self = this.set("PackageID", value.asInstanceOf[js.Any])
+    def setPackageNameUndefined: Self = StObject.set(x, "PackageName", js.undefined)
     
     @scala.inline
-    def deletePackageID: Self = this.set("PackageID", js.undefined)
+    def setPackageType(value: PackageType): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: PackageName): Self = this.set("PackageName", value.asInstanceOf[js.Any])
+    def setPackageTypeUndefined: Self = StObject.set(x, "PackageType", js.undefined)
     
     @scala.inline
-    def deletePackageName: Self = this.set("PackageName", js.undefined)
+    def setPackageVersion(value: PackageVersion): Self = StObject.set(x, "PackageVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageType(value: PackageType): Self = this.set("PackageType", value.asInstanceOf[js.Any])
+    def setPackageVersionUndefined: Self = StObject.set(x, "PackageVersion", js.undefined)
     
     @scala.inline
-    def deletePackageType: Self = this.set("PackageType", js.undefined)
+    def setReferencePath(value: ReferencePath): Self = StObject.set(x, "ReferencePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageVersion(value: PackageVersion): Self = this.set("PackageVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageVersion: Self = this.set("PackageVersion", js.undefined)
-    
-    @scala.inline
-    def setReferencePath(value: ReferencePath): Self = this.set("ReferencePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferencePath: Self = this.set("ReferencePath", js.undefined)
+    def setReferencePathUndefined: Self = StObject.set(x, "ReferencePath", js.undefined)
   }
 }

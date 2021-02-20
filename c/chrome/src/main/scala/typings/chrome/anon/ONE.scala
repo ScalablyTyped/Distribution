@@ -2,12 +2,13 @@ package typings.chrome.anon
 
 import typings.chrome.chromeStrings.one
 import typings.chrome.chromeStrings.two
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ONE extends js.Object {
+trait ONE extends StObject {
   
   var ONE: one = js.native
   
@@ -22,24 +23,12 @@ object ONE {
   }
   
   @scala.inline
-  implicit class ONEOps[Self <: ONE] (val x: Self) extends AnyVal {
+  implicit class ONEMutableBuilder[Self <: ONE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setONE(value: one): Self = StObject.set(x, "ONE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setONE(value: one): Self = this.set("ONE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTWO(value: two): Self = this.set("TWO", value.asInstanceOf[js.Any])
+    def setTWO(value: two): Self = StObject.set(x, "TWO", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AntennaUplinkConfig extends js.Object {
+trait AntennaUplinkConfig extends StObject {
   
   /**
     * Information about the uplink spectral Config.
@@ -31,30 +32,18 @@ object AntennaUplinkConfig {
   }
   
   @scala.inline
-  implicit class AntennaUplinkConfigOps[Self <: AntennaUplinkConfig] (val x: Self) extends AnyVal {
+  implicit class AntennaUplinkConfigMutableBuilder[Self <: AntennaUplinkConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpectrumConfig(value: UplinkSpectrumConfig): Self = StObject.set(x, "spectrumConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetEirp(value: Eirp): Self = StObject.set(x, "targetEirp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransmitDisabled(value: Boolean): Self = StObject.set(x, "transmitDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpectrumConfig(value: UplinkSpectrumConfig): Self = this.set("spectrumConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetEirp(value: Eirp): Self = this.set("targetEirp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmitDisabled(value: Boolean): Self = this.set("transmitDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransmitDisabled: Self = this.set("transmitDisabled", js.undefined)
+    def setTransmitDisabledUndefined: Self = StObject.set(x, "transmitDisabled", js.undefined)
   }
 }

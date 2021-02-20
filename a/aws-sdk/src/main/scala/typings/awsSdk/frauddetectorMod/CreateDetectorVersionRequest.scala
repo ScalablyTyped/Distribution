@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDetectorVersionRequest extends js.Object {
+trait CreateDetectorVersionRequest extends StObject {
   
   /**
     * The description of the detector version.
@@ -51,66 +52,54 @@ object CreateDetectorVersionRequest {
   }
   
   @scala.inline
-  implicit class CreateDetectorVersionRequestOps[Self <: CreateDetectorVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDetectorVersionRequestMutableBuilder[Self <: CreateDetectorVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorId(value: identifier): Self = this.set("detectorId", value.asInstanceOf[js.Any])
+    def setExternalModelEndpoints(value: ListOfStrings): Self = StObject.set(x, "externalModelEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesVarargs(value: Rule*): Self = this.set("rules", js.Array(value :_*))
+    def setExternalModelEndpointsUndefined: Self = StObject.set(x, "externalModelEndpoints", js.undefined)
     
     @scala.inline
-    def setRules(value: RuleList): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setExternalModelEndpointsVarargs(value: String*): Self = StObject.set(x, "externalModelEndpoints", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setModelVersions(value: ListOfModelVersions): Self = StObject.set(x, "modelVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setModelVersionsUndefined: Self = StObject.set(x, "modelVersions", js.undefined)
     
     @scala.inline
-    def setExternalModelEndpointsVarargs(value: String*): Self = this.set("externalModelEndpoints", js.Array(value :_*))
+    def setModelVersionsVarargs(value: ModelVersion*): Self = StObject.set(x, "modelVersions", js.Array(value :_*))
     
     @scala.inline
-    def setExternalModelEndpoints(value: ListOfStrings): Self = this.set("externalModelEndpoints", value.asInstanceOf[js.Any])
+    def setRuleExecutionMode(value: RuleExecutionMode): Self = StObject.set(x, "ruleExecutionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalModelEndpoints: Self = this.set("externalModelEndpoints", js.undefined)
+    def setRuleExecutionModeUndefined: Self = StObject.set(x, "ruleExecutionMode", js.undefined)
     
     @scala.inline
-    def setModelVersionsVarargs(value: ModelVersion*): Self = this.set("modelVersions", js.Array(value :_*))
+    def setRules(value: RuleList): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelVersions(value: ListOfModelVersions): Self = this.set("modelVersions", value.asInstanceOf[js.Any])
+    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
     @scala.inline
-    def deleteModelVersions: Self = this.set("modelVersions", js.undefined)
+    def setTags(value: tagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleExecutionMode(value: RuleExecutionMode): Self = this.set("ruleExecutionMode", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteRuleExecutionMode: Self = this.set("ruleExecutionMode", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: tagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

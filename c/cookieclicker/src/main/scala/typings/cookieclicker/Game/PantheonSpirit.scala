@@ -4,12 +4,13 @@ import typings.cookieclicker.cookieclickerNumbers.`-1`
 import typings.cookieclicker.cookieclickerNumbers.`0`
 import typings.cookieclicker.cookieclickerNumbers.`1`
 import typings.cookieclicker.cookieclickerNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PantheonSpirit extends js.Object {
+trait PantheonSpirit extends StObject {
   
   /**
     * Additional description which is only shown if the spirit is slotted
@@ -66,69 +67,57 @@ object PantheonSpirit {
   }
   
   @scala.inline
-  implicit class PantheonSpiritOps[Self <: PantheonSpirit] (val x: Self) extends AnyVal {
+  implicit class PantheonSpiritMutableBuilder[Self <: PantheonSpirit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDescFunc(value: () => String): Self = StObject.set(x, "activeDescFunc", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDescFuncUndefined: Self = StObject.set(x, "activeDescFunc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesc1(value: String): Self = StObject.set(x, "desc1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: Icon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setDesc1Undefined: Self = StObject.set(x, "desc1", js.undefined)
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDesc2(value: String): Self = StObject.set(x, "desc2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDesc2Undefined: Self = StObject.set(x, "desc2", js.undefined)
     
     @scala.inline
-    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    def setDesc3(value: String): Self = StObject.set(x, "desc3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlot(value: `-1` | `0` | `1` | `2`): Self = this.set("slot", value.asInstanceOf[js.Any])
+    def setDesc3Undefined: Self = StObject.set(x, "desc3", js.undefined)
     
     @scala.inline
-    def setActiveDescFunc(value: () => String): Self = this.set("activeDescFunc", js.Any.fromFunction0(value))
+    def setDescAfter(value: String): Self = StObject.set(x, "descAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveDescFunc: Self = this.set("activeDescFunc", js.undefined)
+    def setDescAfterUndefined: Self = StObject.set(x, "descAfter", js.undefined)
     
     @scala.inline
-    def setDesc1(value: String): Self = this.set("desc1", value.asInstanceOf[js.Any])
+    def setDescBefore(value: String): Self = StObject.set(x, "descBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDesc1: Self = this.set("desc1", js.undefined)
+    def setDescBeforeUndefined: Self = StObject.set(x, "descBefore", js.undefined)
     
     @scala.inline
-    def setDesc2(value: String): Self = this.set("desc2", value.asInstanceOf[js.Any])
+    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDesc2: Self = this.set("desc2", js.undefined)
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc3(value: String): Self = this.set("desc3", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDesc3: Self = this.set("desc3", js.undefined)
+    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescAfter(value: String): Self = this.set("descAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescAfter: Self = this.set("descAfter", js.undefined)
-    
-    @scala.inline
-    def setDescBefore(value: String): Self = this.set("descBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescBefore: Self = this.set("descBefore", js.undefined)
+    def setSlot(value: `-1` | `0` | `1` | `2`): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
   }
 }

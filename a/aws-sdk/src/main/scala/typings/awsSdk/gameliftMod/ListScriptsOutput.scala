@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListScriptsOutput extends js.Object {
+trait ListScriptsOutput extends StObject {
   
   /**
     * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
@@ -26,33 +27,21 @@ object ListScriptsOutput {
   }
   
   @scala.inline
-  implicit class ListScriptsOutputOps[Self <: ListScriptsOutput] (val x: Self) extends AnyVal {
+  implicit class ListScriptsOutputMutableBuilder[Self <: ListScriptsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScripts(value: ScriptList): Self = StObject.set(x, "Scripts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NonEmptyString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setScriptsUndefined: Self = StObject.set(x, "Scripts", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setScriptsVarargs(value: Script*): Self = this.set("Scripts", js.Array(value :_*))
-    
-    @scala.inline
-    def setScripts(value: ScriptList): Self = this.set("Scripts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScripts: Self = this.set("Scripts", js.undefined)
+    def setScriptsVarargs(value: Script*): Self = StObject.set(x, "Scripts", js.Array(value :_*))
   }
 }

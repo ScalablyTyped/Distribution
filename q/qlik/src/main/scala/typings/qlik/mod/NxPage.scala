@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NxPage extends js.Object {
+trait NxPage extends StObject {
   
   var qHeight: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object NxPage {
   }
   
   @scala.inline
-  implicit class NxPageOps[Self <: NxPage] (val x: Self) extends AnyVal {
+  implicit class NxPageMutableBuilder[Self <: NxPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQHeightUndefined: Self = StObject.set(x, "qHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQLeft(value: Double): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHeight(value: Double): Self = this.set("qHeight", value.asInstanceOf[js.Any])
+    def setQLeftUndefined: Self = StObject.set(x, "qLeft", js.undefined)
     
     @scala.inline
-    def deleteQHeight: Self = this.set("qHeight", js.undefined)
+    def setQTop(value: Double): Self = StObject.set(x, "qTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLeft(value: Double): Self = this.set("qLeft", value.asInstanceOf[js.Any])
+    def setQTopUndefined: Self = StObject.set(x, "qTop", js.undefined)
     
     @scala.inline
-    def deleteQLeft: Self = this.set("qLeft", js.undefined)
+    def setQWidth(value: Double): Self = StObject.set(x, "qWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQTop(value: Double): Self = this.set("qTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQTop: Self = this.set("qTop", js.undefined)
-    
-    @scala.inline
-    def setQWidth(value: Double): Self = this.set("qWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQWidth: Self = this.set("qWidth", js.undefined)
+    def setQWidthUndefined: Self = StObject.set(x, "qWidth", js.undefined)
   }
 }

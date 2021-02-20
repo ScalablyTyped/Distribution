@@ -2,6 +2,7 @@ package typings.slickgrid.Slick
 
 import typings.slickgrid.Slick.Editors.Editor
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,36 +39,24 @@ object OnValidationErrorEventArgs {
   }
   
   @scala.inline
-  implicit class OnValidationErrorEventArgsOps[Self <: OnValidationErrorEventArgs[_], T /* <: SlickData */] (val x: Self with OnValidationErrorEventArgs[T]) extends AnyVal {
+  implicit class OnValidationErrorEventArgsMutableBuilder[Self <: OnValidationErrorEventArgs[_], T /* <: SlickData */] (val x: Self with OnValidationErrorEventArgs[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellNode(value: HTMLElement): Self = StObject.set(x, "cellNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell(value: Double): Self = this.set("cell", value.asInstanceOf[js.Any])
+    def setEditor(value: Editor[T]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellNode(value: HTMLElement): Self = this.set("cellNode", value.asInstanceOf[js.Any])
+    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Column[T]): Self = this.set("column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditor(value: Editor[T]): Self = this.set("editor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationResults(value: ValidateResults): Self = this.set("validationResults", value.asInstanceOf[js.Any])
+    def setValidationResults(value: ValidateResults): Self = StObject.set(x, "validationResults", value.asInstanceOf[js.Any])
   }
 }

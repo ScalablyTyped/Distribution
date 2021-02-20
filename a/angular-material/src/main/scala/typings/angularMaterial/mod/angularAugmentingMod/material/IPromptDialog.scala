@@ -1,5 +1,6 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait IPromptDialog extends IPresetDialog[IPromptDialog] {
   
   def initialValue(initialValue: String): IPromptDialog = js.native
   
-   // default: false
+  // default: false
   def placeholder(placeholder: String): IPromptDialog = js.native
   
   def required(required: Boolean): IPromptDialog = js.native

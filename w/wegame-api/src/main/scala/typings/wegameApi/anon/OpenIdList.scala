@@ -1,11 +1,12 @@
 package typings.wegameApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenIdList extends js.Object {
+trait OpenIdList extends StObject {
   
   /**
     * 错误码
@@ -31,30 +32,18 @@ object OpenIdList {
   }
   
   @scala.inline
-  implicit class OpenIdListOps[Self <: OpenIdList] (val x: Self) extends AnyVal {
+  implicit class OpenIdListMutableBuilder[Self <: OpenIdList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenIdList(value: js.Array[String]): Self = StObject.set(x, "openIdList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrCode(value: Double): Self = this.set("errCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpenIdListVarargs(value: String*): Self = this.set("openIdList", js.Array(value :_*))
-    
-    @scala.inline
-    def setOpenIdList(value: js.Array[String]): Self = this.set("openIdList", value.asInstanceOf[js.Any])
+    def setOpenIdListVarargs(value: String*): Self = StObject.set(x, "openIdList", js.Array(value :_*))
   }
 }

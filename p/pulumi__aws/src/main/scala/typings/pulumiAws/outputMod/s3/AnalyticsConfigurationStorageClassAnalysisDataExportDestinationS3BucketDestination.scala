@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.s3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination extends js.Object {
+trait AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination extends StObject {
   
   /**
     * The account ID that owns the destination bucket.
@@ -36,39 +37,27 @@ object AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDe
   }
   
   @scala.inline
-  implicit class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOps[Self <: AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination] (val x: Self) extends AnyVal {
+  implicit class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationMutableBuilder[Self <: AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketAccountId(value: String): Self = StObject.set(x, "bucketAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketAccountIdUndefined: Self = StObject.set(x, "bucketAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketArn(value: String): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketArn(value: String): Self = this.set("bucketArn", value.asInstanceOf[js.Any])
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketAccountId(value: String): Self = this.set("bucketAccountId", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteBucketAccountId: Self = this.set("bucketAccountId", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

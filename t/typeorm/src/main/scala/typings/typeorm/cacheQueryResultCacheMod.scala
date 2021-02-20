@@ -2,16 +2,15 @@ package typings.typeorm
 
 import typings.typeorm.cacheQueryResultCacheOptionsMod.QueryResultCacheOptions
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/cache/QueryResultCache", JSImport.Namespace)
-@js.native
-object cacheQueryResultCacheMod extends js.Object {
+object cacheQueryResultCacheMod {
   
   @js.native
-  trait QueryResultCache extends js.Object {
+  trait QueryResultCache extends StObject {
     
     /**
       * Clears everything stored in the cache.

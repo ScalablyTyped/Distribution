@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.linguistic2
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,75 +85,63 @@ object XDictionary1 {
   }
   
   @scala.inline
-  implicit class XDictionary1Ops[Self <: XDictionary1] (val x: Self) extends AnyVal {
+  implicit class XDictionary1MutableBuilder[Self <: XDictionary1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (String, Boolean, String) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddDictionaryEventListener(value: XDictionaryEventListener => Boolean): Self = StObject.set(x, "addDictionaryEventListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddEntry(value: XDictionaryEntry => Boolean): Self = StObject.set(x, "addEntry", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDictionaryType(value: DictionaryType): Self = this.set("DictionaryType", value.asInstanceOf[js.Any])
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: SafeArray[XDictionaryEntry]): Self = this.set("Entries", value.asInstanceOf[js.Any])
+    def setDictionaryType(value: DictionaryType): Self = StObject.set(x, "DictionaryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: Double): Self = this.set("Language", value.asInstanceOf[js.Any])
+    def setEntries(value: SafeArray[XDictionaryEntry]): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: (String, Boolean, String) => Boolean): Self = this.set("add", js.Any.fromFunction3(value))
+    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddDictionaryEventListener(value: XDictionaryEventListener => Boolean): Self = this.set("addDictionaryEventListener", js.Any.fromFunction1(value))
+    def setGetDictionaryType(value: () => DictionaryType): Self = StObject.set(x, "getDictionaryType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddEntry(value: XDictionaryEntry => Boolean): Self = this.set("addEntry", js.Any.fromFunction1(value))
+    def setGetEntries(value: () => SafeArray[XDictionaryEntry]): Self = StObject.set(x, "getEntries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGetEntry(value: String => XDictionaryEntry): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCount(value: () => Double): Self = this.set("getCount", js.Any.fromFunction0(value))
+    def setGetLanguage(value: () => Double): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDictionaryType(value: () => DictionaryType): Self = this.set("getDictionaryType", js.Any.fromFunction0(value))
+    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEntries(value: () => SafeArray[XDictionaryEntry]): Self = this.set("getEntries", js.Any.fromFunction0(value))
+    def setIsFull(value: () => Boolean): Self = StObject.set(x, "isFull", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEntry(value: String => XDictionaryEntry): Self = this.set("getEntry", js.Any.fromFunction1(value))
+    def setLanguage(value: Double): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLanguage(value: () => Double): Self = this.set("getLanguage", js.Any.fromFunction0(value))
+    def setRemove(value: String => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsActive(value: () => Boolean): Self = this.set("isActive", js.Any.fromFunction0(value))
+    def setRemoveDictionaryEventListener(value: XDictionaryEventListener => Boolean): Self = StObject.set(x, "removeDictionaryEventListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsFull(value: () => Boolean): Self = this.set("isFull", js.Any.fromFunction0(value))
+    def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: String => Boolean): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveDictionaryEventListener(value: XDictionaryEventListener => Boolean): Self = this.set("removeDictionaryEventListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetActive(value: Boolean => Unit): Self = this.set("setActive", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLanguage(value: Double => Unit): Self = this.set("setLanguage", js.Any.fromFunction1(value))
+    def setSetLanguage(value: Double => Unit): Self = StObject.set(x, "setLanguage", js.Any.fromFunction1(value))
   }
 }

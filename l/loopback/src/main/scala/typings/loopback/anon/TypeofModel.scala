@@ -1,18 +1,16 @@
 package typings.loopback.anon
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.loopback.mod.AccessToken
 import typings.loopback.mod.Application
-import typings.loopback.mod.Model
 import typings.loopback.mod.RemoteMethodOptions
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofModel
-  extends Instantiable1[/* data */ js.Any, Model] {
+trait TypeofModel extends StObject {
   
   /**
     * Check if the given access token can invoke the specified method
@@ -24,6 +22,7 @@ trait TypeofModel
     * @param {string|Error} err The error object.
     * @param {boolean} allowed True if the request is allowed; false otherwise
     */
+  /* static member */
   def checkAccess(
     token: AccessToken,
     modelId: js.Any,
@@ -33,6 +32,7 @@ trait TypeofModel
   ): Unit = js.native
   
   /** Data source to which the model is connected, if any. */
+  /* static member */
   var dataSource: js.Any = js.native
   
   /**
@@ -42,6 +42,7 @@ trait TypeofModel
     * `false` if the method defined on the prototype (eg.
     * `MyModel.prototype.myMethod`)
     */
+  /* static member */
   def disableRemoteMethod(name: String, isStatic: Boolean): Unit = js.native
   
   /**
@@ -49,6 +50,7 @@ trait TypeofModel
     * @param {string} name The name of the method.
     * The name of the method (include "prototype." if the method is defined on the prototype).
     */
+  /* static member */
   def disableRemoteMethodByName(name: String): Unit = js.native
   
   /**
@@ -58,9 +60,11 @@ trait TypeofModel
     * @param {Application} app Attached application object.
     * @end
     */
+  /* static member */
   def getApp(callback: js.Function2[/* err */ Error, /* app */ Application, Unit]): Unit = js.native
   
   /** The name of the model. */
+  /* static member */
   var modelName: String = js.native
   
   /**
@@ -76,6 +80,7 @@ trait TypeofModel
     * @param {any} SharedMethod object. See [here](apidocs.strongloop.com/strong-remoting/#sharedmethod).
     * @param {any} RelationDefinition object which includes relation `type`, `ModelConstructor` of `modelFrom`, `modelTo`, `keyFrom`, `keyTo` and more relation definitions
     */
+  /* static member */
   def nestRemoting(
     relationName: String,
     pathName: String,
@@ -126,6 +131,7 @@ trait TypeofModel
     * @param {RemoteMethodOptions} options The remoting options.
     * See [Remote methods - Options](docs.strongloop.com/display/LB/Remote+methods#Remotemethods-Options)
     */
+  /* static member */
   def remoteMethod(name: String, options: RemoteMethodOptions): Unit = js.native
   
   /**
@@ -133,8 +139,10 @@ trait TypeofModel
     * Add any setup or configuration code you want executed when the model is created.
     * See  [Setting up a custom model](docs.strongloop.com/display/LB/Extending+built-in+models#Extendingbuilt-inmodels-Settingupacustommodel)
     */
+  /* static member */
   def setup(): Unit = js.native
   
   /** The `strong-remoting` */
+  /* static member */
   var sharedMethod: js.Any = js.native
 }

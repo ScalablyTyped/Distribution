@@ -1,19 +1,17 @@
 package typings.googleFeeds
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object google extends js.Object {
+  object google {
     
-    @js.native
-    object feeds extends js.Object {
+    object feeds {
       
+      @JSGlobal("google.feeds.Feed")
       @js.native
       class Feed ()
         extends typings.googleFeeds.google.feeds.Feed {

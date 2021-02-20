@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputSettings extends js.Object {
+trait InputSettings extends StObject {
   
   /**
     * Used to select the audio stream to decode for inputs that have multiple available.
@@ -71,84 +72,72 @@ object InputSettings {
   }
   
   @scala.inline
-  implicit class InputSettingsOps[Self <: InputSettings] (val x: Self) extends AnyVal {
+  implicit class InputSettingsMutableBuilder[Self <: InputSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioSelectors(value: listOfAudioSelector): Self = StObject.set(x, "AudioSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioSelectorsUndefined: Self = StObject.set(x, "AudioSelectors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioSelectorsVarargs(value: AudioSelector*): Self = StObject.set(x, "AudioSelectors", js.Array(value :_*))
     
     @scala.inline
-    def setAudioSelectorsVarargs(value: AudioSelector*): Self = this.set("AudioSelectors", js.Array(value :_*))
+    def setCaptionSelectors(value: listOfCaptionSelector): Self = StObject.set(x, "CaptionSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioSelectors(value: listOfAudioSelector): Self = this.set("AudioSelectors", value.asInstanceOf[js.Any])
+    def setCaptionSelectorsUndefined: Self = StObject.set(x, "CaptionSelectors", js.undefined)
     
     @scala.inline
-    def deleteAudioSelectors: Self = this.set("AudioSelectors", js.undefined)
+    def setCaptionSelectorsVarargs(value: CaptionSelector*): Self = StObject.set(x, "CaptionSelectors", js.Array(value :_*))
     
     @scala.inline
-    def setCaptionSelectorsVarargs(value: CaptionSelector*): Self = this.set("CaptionSelectors", js.Array(value :_*))
+    def setDeblockFilter(value: InputDeblockFilter): Self = StObject.set(x, "DeblockFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptionSelectors(value: listOfCaptionSelector): Self = this.set("CaptionSelectors", value.asInstanceOf[js.Any])
+    def setDeblockFilterUndefined: Self = StObject.set(x, "DeblockFilter", js.undefined)
     
     @scala.inline
-    def deleteCaptionSelectors: Self = this.set("CaptionSelectors", js.undefined)
+    def setDenoiseFilter(value: InputDenoiseFilter): Self = StObject.set(x, "DenoiseFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeblockFilter(value: InputDeblockFilter): Self = this.set("DeblockFilter", value.asInstanceOf[js.Any])
+    def setDenoiseFilterUndefined: Self = StObject.set(x, "DenoiseFilter", js.undefined)
     
     @scala.inline
-    def deleteDeblockFilter: Self = this.set("DeblockFilter", js.undefined)
+    def setFilterStrength(value: integerMin1Max5): Self = StObject.set(x, "FilterStrength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDenoiseFilter(value: InputDenoiseFilter): Self = this.set("DenoiseFilter", value.asInstanceOf[js.Any])
+    def setFilterStrengthUndefined: Self = StObject.set(x, "FilterStrength", js.undefined)
     
     @scala.inline
-    def deleteDenoiseFilter: Self = this.set("DenoiseFilter", js.undefined)
+    def setInputFilter(value: InputFilter): Self = StObject.set(x, "InputFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterStrength(value: integerMin1Max5): Self = this.set("FilterStrength", value.asInstanceOf[js.Any])
+    def setInputFilterUndefined: Self = StObject.set(x, "InputFilter", js.undefined)
     
     @scala.inline
-    def deleteFilterStrength: Self = this.set("FilterStrength", js.undefined)
+    def setNetworkInputSettings(value: NetworkInputSettings): Self = StObject.set(x, "NetworkInputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFilter(value: InputFilter): Self = this.set("InputFilter", value.asInstanceOf[js.Any])
+    def setNetworkInputSettingsUndefined: Self = StObject.set(x, "NetworkInputSettings", js.undefined)
     
     @scala.inline
-    def deleteInputFilter: Self = this.set("InputFilter", js.undefined)
+    def setSmpte2038DataPreference(value: Smpte2038DataPreference): Self = StObject.set(x, "Smpte2038DataPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInputSettings(value: NetworkInputSettings): Self = this.set("NetworkInputSettings", value.asInstanceOf[js.Any])
+    def setSmpte2038DataPreferenceUndefined: Self = StObject.set(x, "Smpte2038DataPreference", js.undefined)
     
     @scala.inline
-    def deleteNetworkInputSettings: Self = this.set("NetworkInputSettings", js.undefined)
+    def setSourceEndBehavior(value: InputSourceEndBehavior): Self = StObject.set(x, "SourceEndBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmpte2038DataPreference(value: Smpte2038DataPreference): Self = this.set("Smpte2038DataPreference", value.asInstanceOf[js.Any])
+    def setSourceEndBehaviorUndefined: Self = StObject.set(x, "SourceEndBehavior", js.undefined)
     
     @scala.inline
-    def deleteSmpte2038DataPreference: Self = this.set("Smpte2038DataPreference", js.undefined)
+    def setVideoSelector(value: VideoSelector): Self = StObject.set(x, "VideoSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceEndBehavior(value: InputSourceEndBehavior): Self = this.set("SourceEndBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceEndBehavior: Self = this.set("SourceEndBehavior", js.undefined)
-    
-    @scala.inline
-    def setVideoSelector(value: VideoSelector): Self = this.set("VideoSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoSelector: Self = this.set("VideoSelector", js.undefined)
+    def setVideoSelectorUndefined: Self = StObject.set(x, "VideoSelector", js.undefined)
   }
 }

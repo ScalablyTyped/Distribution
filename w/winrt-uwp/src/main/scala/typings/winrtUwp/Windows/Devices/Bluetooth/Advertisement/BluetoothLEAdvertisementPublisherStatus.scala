@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BluetoothLEAdvertisementPublisherStatus extends js.Object
+sealed trait BluetoothLEAdvertisementPublisherStatus extends StObject
 /** Represents the possible states of the BluetoothLEAdvertisementPublisher . */
 @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus")
 @js.native
-object BluetoothLEAdvertisementPublisherStatus extends js.Object {
+object BluetoothLEAdvertisementPublisherStatus extends StObject {
   
   /** The publisher is aborted due to an error. */
   @js.native

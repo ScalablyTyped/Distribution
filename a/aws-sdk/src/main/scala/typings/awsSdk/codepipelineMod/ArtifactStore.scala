@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArtifactStore extends js.Object {
+trait ArtifactStore extends StObject {
   
   /**
     * The encryption key used to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If this is undefined, the default key for Amazon S3 is used.
@@ -32,30 +33,18 @@ object ArtifactStore {
   }
   
   @scala.inline
-  implicit class ArtifactStoreOps[Self <: ArtifactStore] (val x: Self) extends AnyVal {
+  implicit class ArtifactStoreMutableBuilder[Self <: ArtifactStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: ArtifactStoreLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ArtifactStoreLocation): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ArtifactStoreType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncryptionKey(value: EncryptionKey): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    def setType(value: ArtifactStoreType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iot1clickdevicesserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceDescription extends js.Object {
+trait DeviceDescription extends StObject {
   
   /**
     * The ARN of the device.
@@ -53,60 +54,48 @@ object DeviceDescription {
   }
   
   @scala.inline
-  implicit class DeviceDescriptionOps[Self <: DeviceDescription] (val x: Self) extends AnyVal {
+  implicit class DeviceDescriptionMutableBuilder[Self <: DeviceDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributes(value: DeviceAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: DeviceAttributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: string): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("DeviceId", js.undefined)
+    def setRemainingLife(value: doubleMin0Max100): Self = StObject.set(x, "RemainingLife", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setRemainingLifeUndefined: Self = StObject.set(x, "RemainingLife", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemainingLife(value: doubleMin0Max100): Self = this.set("RemainingLife", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRemainingLife: Self = this.set("RemainingLife", js.undefined)
+    def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setType(value: string): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

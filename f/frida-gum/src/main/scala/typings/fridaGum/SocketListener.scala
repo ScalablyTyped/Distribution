@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.TcpListener
   - typings.fridaGum.UnixListener
 */
-trait SocketListener extends js.Object
+trait SocketListener extends StObject
 object SocketListener {
   
   @scala.inline
-  def TcpListener(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], port: Double): SocketListener = {
+  def TcpListener(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], port: Double): typings.fridaGum.TcpListener = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept), close = js.Any.fromFunction0(close), port = port.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SocketListener]
+    __obj.asInstanceOf[typings.fridaGum.TcpListener]
   }
   
   @scala.inline
-  def UnixListener(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], path: String): SocketListener = {
+  def UnixListener(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], path: String): typings.fridaGum.UnixListener = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept), close = js.Any.fromFunction0(close), path = path.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SocketListener]
+    __obj.asInstanceOf[typings.fridaGum.UnixListener]
   }
 }

@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,60 +82,48 @@ object colorCreatePCContinuousRendererParams {
   }
   
   @scala.inline
-  implicit class colorCreatePCContinuousRendererParamsOps[Self <: colorCreatePCContinuousRendererParams] (val x: Self) extends AnyVal {
+  implicit class colorCreatePCContinuousRendererParamsMutableBuilder[Self <: colorCreatePCContinuousRendererParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
     @scala.inline
-    def setLayer(value: PointCloudLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemap(value: String | Basemap): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
     @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScheme(value: ColorScheme): Self = this.set("colorScheme", value.asInstanceOf[js.Any])
+    def setLayer(value: PointCloudLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorScheme: Self = this.set("colorScheme", js.undefined)
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDensity(value: Double): Self = this.set("density", value.asInstanceOf[js.Any])
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def deleteDensity: Self = this.set("density", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
   }
 }

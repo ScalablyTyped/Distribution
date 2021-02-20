@@ -1,11 +1,12 @@
 package typings.openseadragon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GestureSettings extends js.Object {
+trait GestureSettings extends StObject {
   
   var clickToZoom: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object GestureSettings {
   }
   
   @scala.inline
-  implicit class GestureSettingsOps[Self <: GestureSettings] (val x: Self) extends AnyVal {
+  implicit class GestureSettingsMutableBuilder[Self <: GestureSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickToZoom(value: Boolean): Self = StObject.set(x, "clickToZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickToZoomUndefined: Self = StObject.set(x, "clickToZoom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDblClickToZoom(value: Boolean): Self = StObject.set(x, "dblClickToZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickToZoom(value: Boolean): Self = this.set("clickToZoom", value.asInstanceOf[js.Any])
+    def setDblClickToZoomUndefined: Self = StObject.set(x, "dblClickToZoom", js.undefined)
     
     @scala.inline
-    def deleteClickToZoom: Self = this.set("clickToZoom", js.undefined)
+    def setFlickEnabled(value: Boolean): Self = StObject.set(x, "flickEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblClickToZoom(value: Boolean): Self = this.set("dblClickToZoom", value.asInstanceOf[js.Any])
+    def setFlickEnabledUndefined: Self = StObject.set(x, "flickEnabled", js.undefined)
     
     @scala.inline
-    def deleteDblClickToZoom: Self = this.set("dblClickToZoom", js.undefined)
+    def setFlickMinSpeed(value: Double): Self = StObject.set(x, "flickMinSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlickEnabled(value: Boolean): Self = this.set("flickEnabled", value.asInstanceOf[js.Any])
+    def setFlickMinSpeedUndefined: Self = StObject.set(x, "flickMinSpeed", js.undefined)
     
     @scala.inline
-    def deleteFlickEnabled: Self = this.set("flickEnabled", js.undefined)
+    def setFlickMomentum(value: Double): Self = StObject.set(x, "flickMomentum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlickMinSpeed(value: Double): Self = this.set("flickMinSpeed", value.asInstanceOf[js.Any])
+    def setFlickMomentumUndefined: Self = StObject.set(x, "flickMomentum", js.undefined)
     
     @scala.inline
-    def deleteFlickMinSpeed: Self = this.set("flickMinSpeed", js.undefined)
+    def setPinchToZoom(value: Boolean): Self = StObject.set(x, "pinchToZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlickMomentum(value: Double): Self = this.set("flickMomentum", value.asInstanceOf[js.Any])
+    def setPinchToZoomUndefined: Self = StObject.set(x, "pinchToZoom", js.undefined)
     
     @scala.inline
-    def deleteFlickMomentum: Self = this.set("flickMomentum", js.undefined)
+    def setScrollToZoom(value: Boolean): Self = StObject.set(x, "scrollToZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinchToZoom(value: Boolean): Self = this.set("pinchToZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePinchToZoom: Self = this.set("pinchToZoom", js.undefined)
-    
-    @scala.inline
-    def setScrollToZoom(value: Boolean): Self = this.set("scrollToZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollToZoom: Self = this.set("scrollToZoom", js.undefined)
+    def setScrollToZoomUndefined: Self = StObject.set(x, "scrollToZoom", js.undefined)
   }
 }

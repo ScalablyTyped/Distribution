@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the valid units of measure for point-of-service printers. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterMapMode")
 @js.native
-object PosPrinterMapMode extends js.Object {
+object PosPrinterMapMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.PointOfService.PosPrinterMapMode with Double] = js.native

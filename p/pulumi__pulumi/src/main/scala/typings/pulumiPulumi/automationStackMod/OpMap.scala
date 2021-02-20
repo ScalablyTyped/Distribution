@@ -1,12 +1,13 @@
 package typings.pulumiPulumi.automationStackMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in @pulumi/pulumi.@pulumi/pulumi/x/automation/stack.OpType ]: number} */
 @js.native
-trait OpMap extends js.Object {
+trait OpMap extends StObject {
   
   var create: Double = js.native
   
@@ -41,39 +42,27 @@ object OpMap {
   }
   
   @scala.inline
-  implicit class OpMapOps[Self <: OpMap] (val x: Self) extends AnyVal {
+  implicit class OpMapMutableBuilder[Self <: OpMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setCreate-replacement`(value: Double): Self = StObject.set(x, "create-replacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: Double): Self = this.set("create", value.asInstanceOf[js.Any])
+    def `setDelete-replaced`(value: Double): Self = StObject.set(x, "delete-replaced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCreate-replacement`(value: Double): Self = this.set("create-replacement", value.asInstanceOf[js.Any])
+    def setReplace(value: Double): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: Double): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setSame(value: Double): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDelete-replaced`(value: Double): Self = this.set("delete-replaced", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplace(value: Double): Self = this.set("replace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSame(value: Double): Self = this.set("same", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: Double): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setUpdate(value: Double): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

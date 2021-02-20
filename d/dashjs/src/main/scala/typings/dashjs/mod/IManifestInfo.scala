@@ -1,12 +1,13 @@
 package typings.dashjs.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IManifestInfo extends js.Object {
+trait IManifestInfo extends StObject {
   
   var DVRWindowSize: Double = js.native
   
@@ -39,39 +40,27 @@ object IManifestInfo {
   }
   
   @scala.inline
-  implicit class IManifestInfoOps[Self <: IManifestInfo] (val x: Self) extends AnyVal {
+  implicit class IManifestInfoMutableBuilder[Self <: IManifestInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableFrom(value: Date): Self = StObject.set(x, "availableFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDVRWindowSize(value: Double): Self = StObject.set(x, "DVRWindowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDVRWindowSize(value: Double): Self = this.set("DVRWindowSize", value.asInstanceOf[js.Any])
+    def setIsDynamic(value: Boolean): Self = StObject.set(x, "isDynamic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableFrom(value: Date): Self = this.set("availableFrom", value.asInstanceOf[js.Any])
+    def setLoadedTime(value: Date): Self = StObject.set(x, "loadedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setMaxFragmentDuration(value: Double): Self = StObject.set(x, "maxFragmentDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDynamic(value: Boolean): Self = this.set("isDynamic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadedTime(value: Date): Self = this.set("loadedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxFragmentDuration(value: Double): Self = this.set("maxFragmentDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinBufferTime(value: Double): Self = this.set("minBufferTime", value.asInstanceOf[js.Any])
+    def setMinBufferTime(value: Double): Self = StObject.set(x, "minBufferTime", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reschedule extends js.Object {
+trait Reschedule extends StObject {
   
   /** Required. The type of the reschedule. */
   var rescheduleType: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object Reschedule {
   }
   
   @scala.inline
-  implicit class RescheduleOps[Self <: Reschedule] (val x: Self) extends AnyVal {
+  implicit class RescheduleMutableBuilder[Self <: Reschedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRescheduleType(value: String): Self = StObject.set(x, "rescheduleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRescheduleTypeUndefined: Self = StObject.set(x, "rescheduleType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRescheduleType(value: String): Self = this.set("rescheduleType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRescheduleType: Self = this.set("rescheduleType", js.undefined)
-    
-    @scala.inline
-    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
   }
 }

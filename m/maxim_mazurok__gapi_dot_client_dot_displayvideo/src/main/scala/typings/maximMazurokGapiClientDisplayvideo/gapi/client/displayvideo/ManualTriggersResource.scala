@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.ResourceTriggerId
 import typings.maximMazurokGapiClientDisplayvideo.anon.TriggerId
 import typings.maximMazurokGapiClientDisplayvideo.anon.TriggerIdUpdateMask
 import typings.maximMazurokGapiClientDisplayvideo.anon.UploadprotocolXgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManualTriggersResource extends js.Object {
+trait ManualTriggersResource extends StObject {
   
   def activate(request: QuotaUserTriggerId, body: ActivateManualTriggerRequest): Request[ManualTrigger] = js.native
   /** Activates a manual trigger. Each activation of the manual trigger must be at least 5 minutes apart, otherwise an error will be returned. */

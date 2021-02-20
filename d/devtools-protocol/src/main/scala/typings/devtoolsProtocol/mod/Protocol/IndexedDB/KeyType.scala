@@ -4,6 +4,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.array
 import typings.devtoolsProtocol.devtoolsProtocolStrings.date
 import typings.devtoolsProtocol.devtoolsProtocolStrings.number
 import typings.devtoolsProtocol.devtoolsProtocolStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.date
   - typings.devtoolsProtocol.devtoolsProtocolStrings.array
 */
-trait KeyType extends js.Object
+trait KeyType extends StObject
 object KeyType {
   
   @scala.inline

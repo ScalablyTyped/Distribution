@@ -1,12 +1,13 @@
 package typings.ariClient.anon
 
 import typings.ariClient.mod.Containers
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Extension extends js.Object {
+trait Extension extends StObject {
   
   var app: js.UndefOr[String] = js.native
   
@@ -43,93 +44,81 @@ object Extension {
   }
   
   @scala.inline
-  implicit class ExtensionOps[Self <: Extension] (val x: Self) extends AnyVal {
+  implicit class ExtensionMutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
     @scala.inline
-    def setApp(value: String): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setCallerId(value: String): Self = StObject.set(x, "callerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApp: Self = this.set("app", js.undefined)
+    def setCallerIdUndefined: Self = StObject.set(x, "callerId", js.undefined)
     
     @scala.inline
-    def setAppArgs(value: String): Self = this.set("appArgs", value.asInstanceOf[js.Any])
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppArgs: Self = this.set("appArgs", js.undefined)
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setCallerId(value: String): Self = this.set("callerId", value.asInstanceOf[js.Any])
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallerId: Self = this.set("callerId", js.undefined)
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setFormats(value: String): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormats(value: String): Self = this.set("formats", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteFormats: Self = this.set("formats", js.undefined)
+    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOriginatorUndefined: Self = StObject.set(x, "originator", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setOtherChannelId(value: String): Self = StObject.set(x, "otherChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginator(value: String): Self = this.set("originator", value.asInstanceOf[js.Any])
+    def setOtherChannelIdUndefined: Self = StObject.set(x, "otherChannelId", js.undefined)
     
     @scala.inline
-    def deleteOriginator: Self = this.set("originator", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherChannelId(value: String): Self = this.set("otherChannelId", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteOtherChannelId: Self = this.set("otherChannelId", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setVariables(value: Containers): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setVariables(value: Containers): Self = this.set("variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariables: Self = this.set("variables", js.undefined)
+    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
   }
 }

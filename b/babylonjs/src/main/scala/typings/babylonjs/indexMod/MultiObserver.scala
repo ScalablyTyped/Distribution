@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class MultiObserver[T] ()
   extends typings.babylonjs.miscIndexMod.MultiObserver[T]
 /* static members */
-@JSImport("babylonjs/index", "MultiObserver")
-@js.native
-object MultiObserver extends js.Object {
+object MultiObserver {
   
   /**
     * Raise a callback when one of the observable will notify
@@ -21,21 +20,29 @@ object MultiObserver extends js.Object {
     * @param scope defines the current scope used to restore the JS context
     * @returns the new MultiObserver
     */
+  @JSImport("babylonjs/index", "MultiObserver.Watch")
+  @js.native
   def Watch[T](
     observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit]
   ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
+  @JSImport("babylonjs/index", "MultiObserver.Watch")
+  @js.native
   def Watch[T](
     observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
     mask: js.UndefOr[scala.Nothing],
     scope: js.Any
   ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
+  @JSImport("babylonjs/index", "MultiObserver.Watch")
+  @js.native
   def Watch[T](
     observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],
     mask: Double
   ): typings.babylonjs.observableMod.MultiObserver[T] = js.native
+  @JSImport("babylonjs/index", "MultiObserver.Watch")
+  @js.native
   def Watch[T](
     observables: js.Array[typings.babylonjs.observableMod.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.observableMod.EventState, Unit],

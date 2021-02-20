@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosModel extends js.Object {
+trait IosModel extends StObject {
   
   /**
     * Device capabilities. Copied from
@@ -46,81 +47,69 @@ object IosModel {
   }
   
   @scala.inline
-  implicit class IosModelOps[Self <: IosModel] (val x: Self) extends AnyVal {
+  implicit class IosModelMutableBuilder[Self <: IosModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceCapabilities(value: js.Array[String]): Self = StObject.set(x, "deviceCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceCapabilitiesUndefined: Self = StObject.set(x, "deviceCapabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceCapabilitiesVarargs(value: String*): Self = StObject.set(x, "deviceCapabilities", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceCapabilitiesVarargs(value: String*): Self = this.set("deviceCapabilities", js.Array(value :_*))
+    def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceCapabilities(value: js.Array[String]): Self = this.set("deviceCapabilities", value.asInstanceOf[js.Any])
+    def setFormFactorUndefined: Self = StObject.set(x, "formFactor", js.undefined)
     
     @scala.inline
-    def deleteDeviceCapabilities: Self = this.set("deviceCapabilities", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormFactor(value: String): Self = this.set("formFactor", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFormFactor: Self = this.set("formFactor", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setScreenDensity(value: Double): Self = StObject.set(x, "screenDensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScreenDensityUndefined: Self = StObject.set(x, "screenDensity", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenDensity(value: Double): Self = this.set("screenDensity", value.asInstanceOf[js.Any])
+    def setScreenXUndefined: Self = StObject.set(x, "screenX", js.undefined)
     
     @scala.inline
-    def deleteScreenDensity: Self = this.set("screenDensity", js.undefined)
+    def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenX(value: Double): Self = this.set("screenX", value.asInstanceOf[js.Any])
+    def setScreenYUndefined: Self = StObject.set(x, "screenY", js.undefined)
     
     @scala.inline
-    def deleteScreenX: Self = this.set("screenX", js.undefined)
+    def setSupportedVersionIds(value: js.Array[String]): Self = StObject.set(x, "supportedVersionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenY(value: Double): Self = this.set("screenY", value.asInstanceOf[js.Any])
+    def setSupportedVersionIdsUndefined: Self = StObject.set(x, "supportedVersionIds", js.undefined)
     
     @scala.inline
-    def deleteScreenY: Self = this.set("screenY", js.undefined)
+    def setSupportedVersionIdsVarargs(value: String*): Self = StObject.set(x, "supportedVersionIds", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedVersionIdsVarargs(value: String*): Self = this.set("supportedVersionIds", js.Array(value :_*))
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedVersionIds(value: js.Array[String]): Self = this.set("supportedVersionIds", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSupportedVersionIds: Self = this.set("supportedVersionIds", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

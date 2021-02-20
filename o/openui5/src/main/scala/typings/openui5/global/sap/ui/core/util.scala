@@ -2,14 +2,14 @@ package typings.openui5.global.sap.ui.core
 
 import typings.openui5.sap.ui.core.mvc.HTMLView
 import typings.openui5.sap.ui.core.mvc.XMLView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.util")
-@js.native
-object util extends js.Object {
+object util {
   
+  @JSGlobal("sap.ui.core.util.Export")
   @js.native
   class Export protected ()
     extends typings.openui5.sap.ui.core.util.Export {
@@ -25,6 +25,7 @@ object util extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.util.ExportCell")
   @js.native
   class ExportCell protected ()
     extends typings.openui5.sap.ui.core.util.ExportCell {
@@ -40,6 +41,7 @@ object util extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.util.ExportColumn")
   @js.native
   class ExportColumn protected ()
     extends typings.openui5.sap.ui.core.util.ExportColumn {
@@ -55,6 +57,7 @@ object util extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.util.ExportRow")
   @js.native
   class ExportRow protected ()
     extends typings.openui5.sap.ui.core.util.ExportRow {
@@ -70,6 +73,7 @@ object util extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.util.ExportType")
   @js.native
   class ExportType protected ()
     extends typings.openui5.sap.ui.core.util.ExportType {
@@ -85,6 +89,7 @@ object util extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.util.ExportTypeCSV")
   @js.native
   class ExportTypeCSV protected ()
     extends typings.openui5.sap.ui.core.util.ExportTypeCSV {
@@ -100,8 +105,7 @@ object util extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
-  @js.native
-  object File extends js.Object {
+  object File {
     
     /**
       * <p>Triggers a download / save action of the given file.</p><p>There are limitations for this feature
@@ -118,9 +122,12 @@ object util extends js.Object {
       * @param sMimeType file mime-type
       * @param sCharset file charset
       */
+    @JSGlobal("sap.ui.core.util.File.save")
+    @js.native
     def save(sData: String, sFileName: String, sFileExtension: String, sMimeType: String, sCharset: String): Unit = js.native
   }
   
+  @JSGlobal("sap.ui.core.util.MockServer")
   @js.native
   abstract class MockServer protected ()
     extends typings.openui5.sap.ui.core.util.MockServer {
@@ -143,9 +150,9 @@ object util extends js.Object {
     def this(sId: String, mSettings: js.Any, oScope: js.Any) = this()
   }
   
-  @js.native
-  object serializer extends js.Object {
+  object serializer {
     
+    @JSGlobal("sap.ui.core.util.serializer.HTMLViewSerializer")
     @js.native
     class HTMLViewSerializer protected ()
       extends typings.openui5.sap.ui.core.util.serializer.HTMLViewSerializer {
@@ -160,6 +167,7 @@ object util extends js.Object {
       def this(oView: HTMLView, oWindow: js.Any, fnGetControlId: js.Any, fnGetEventHandlerName: js.Any) = this()
     }
     
+    @JSGlobal("sap.ui.core.util.serializer.Serializer")
     @js.native
     class Serializer protected ()
       extends typings.openui5.sap.ui.core.util.serializer.Serializer {
@@ -187,6 +195,7 @@ object util extends js.Object {
       ) = this()
     }
     
+    @JSGlobal("sap.ui.core.util.serializer.ViewSerializer")
     @js.native
     class ViewSerializer protected ()
       extends typings.openui5.sap.ui.core.util.serializer.ViewSerializer {
@@ -216,6 +225,7 @@ object util extends js.Object {
       def this(oRootControl: typings.openui5.sap.ui.core.UIArea, oWindow: js.Any, sDefaultXmlNamespace: String) = this()
     }
     
+    @JSGlobal("sap.ui.core.util.serializer.XMLViewSerializer")
     @js.native
     class XMLViewSerializer protected ()
       extends typings.openui5.sap.ui.core.util.serializer.XMLViewSerializer {
@@ -237,9 +247,9 @@ object util extends js.Object {
       ) = this()
     }
     
-    @js.native
-    object delegate extends js.Object {
+    object delegate {
       
+      @JSGlobal("sap.ui.core.util.serializer.delegate.Delegate")
       @js.native
       /**
         * Abstract serializer delegate class. All delegates must extend from this class and implement the
@@ -248,6 +258,7 @@ object util extends js.Object {
       abstract class Delegate ()
         extends typings.openui5.sap.ui.core.util.serializer.delegate.Delegate
       
+      @JSGlobal("sap.ui.core.util.serializer.delegate.HTML")
       @js.native
       class HTML protected ()
         extends typings.openui5.sap.ui.core.util.serializer.delegate.HTML {
@@ -260,6 +271,7 @@ object util extends js.Object {
         def this(fnGetControlId: js.Any, fnGetEventHandlerName: js.Any) = this()
       }
       
+      @JSGlobal("sap.ui.core.util.serializer.delegate.XML")
       @js.native
       class XML protected ()
         extends typings.openui5.sap.ui.core.util.serializer.delegate.XML {

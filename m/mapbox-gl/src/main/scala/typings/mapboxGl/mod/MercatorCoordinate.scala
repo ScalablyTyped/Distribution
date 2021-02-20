@@ -1,12 +1,13 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "MercatorCoordinate")
 @js.native
-class MercatorCoordinate protected () extends js.Object {
+class MercatorCoordinate protected () extends StObject {
   def this(x: Double, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
   
@@ -38,11 +39,13 @@ class MercatorCoordinate protected () extends js.Object {
   var z: js.UndefOr[Double] = js.native
 }
 /* static members */
-@JSImport("mapbox-gl", "MercatorCoordinate")
-@js.native
-object MercatorCoordinate extends js.Object {
+object MercatorCoordinate {
   
   /** Project a LngLat to a MercatorCoordinate. */
+  @JSImport("mapbox-gl", "MercatorCoordinate.fromLngLat")
+  @js.native
   def fromLngLat(lngLatLike: LngLatLike): MercatorCoordinate = js.native
+  @JSImport("mapbox-gl", "MercatorCoordinate.fromLngLat")
+  @js.native
   def fromLngLat(lngLatLike: LngLatLike, altitude: Double): MercatorCoordinate = js.native
 }

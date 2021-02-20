@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "ColorAxis")
 @js.native
-class ColorAxis protected () extends js.Object {
+class ColorAxis protected () extends StObject {
   /**
     * The ColorAxis object for inclusion in gradient legends.
     *

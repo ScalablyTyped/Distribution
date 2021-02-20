@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchingJob extends js.Object {
+trait MatchingJob extends StObject {
   
   /** Commute information which is generated based on specified CommuteFilter. */
   var commuteInfo: js.UndefOr[CommuteInfo] = js.native
@@ -34,48 +35,36 @@ object MatchingJob {
   }
   
   @scala.inline
-  implicit class MatchingJobOps[Self <: MatchingJob] (val x: Self) extends AnyVal {
+  implicit class MatchingJobMutableBuilder[Self <: MatchingJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommuteInfo(value: CommuteInfo): Self = StObject.set(x, "commuteInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommuteInfoUndefined: Self = StObject.set(x, "commuteInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommuteInfo(value: CommuteInfo): Self = this.set("commuteInfo", value.asInstanceOf[js.Any])
+    def setJobSummary(value: String): Self = StObject.set(x, "jobSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommuteInfo: Self = this.set("commuteInfo", js.undefined)
+    def setJobSummaryUndefined: Self = StObject.set(x, "jobSummary", js.undefined)
     
     @scala.inline
-    def setJob(value: Job): Self = this.set("job", value.asInstanceOf[js.Any])
+    def setJobTitleSnippet(value: String): Self = StObject.set(x, "jobTitleSnippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJob: Self = this.set("job", js.undefined)
+    def setJobTitleSnippetUndefined: Self = StObject.set(x, "jobTitleSnippet", js.undefined)
     
     @scala.inline
-    def setJobSummary(value: String): Self = this.set("jobSummary", value.asInstanceOf[js.Any])
+    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
     @scala.inline
-    def deleteJobSummary: Self = this.set("jobSummary", js.undefined)
+    def setSearchTextSnippet(value: String): Self = StObject.set(x, "searchTextSnippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTitleSnippet(value: String): Self = this.set("jobTitleSnippet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobTitleSnippet: Self = this.set("jobTitleSnippet", js.undefined)
-    
-    @scala.inline
-    def setSearchTextSnippet(value: String): Self = this.set("searchTextSnippet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchTextSnippet: Self = this.set("searchTextSnippet", js.undefined)
+    def setSearchTextSnippetUndefined: Self = StObject.set(x, "searchTextSnippet", js.undefined)
   }
 }

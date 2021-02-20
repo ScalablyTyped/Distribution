@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateRouteTableRequest extends js.Object {
+trait AssociateRouteTableRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -36,39 +37,27 @@ object AssociateRouteTableRequest {
   }
   
   @scala.inline
-  implicit class AssociateRouteTableRequestOps[Self <: AssociateRouteTableRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateRouteTableRequestMutableBuilder[Self <: AssociateRouteTableRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGatewayId(value: RouteGatewayId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteTableId(value: RouteTableId): Self = this.set("RouteTableId", value.asInstanceOf[js.Any])
+    def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setRouteTableId(value: RouteTableId): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayId(value: RouteGatewayId): Self = this.set("GatewayId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGatewayId: Self = this.set("GatewayId", js.undefined)
-    
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.cassanknex.mod
 
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryBuilderRoot extends js.Object {
+trait QueryBuilderRoot extends StObject {
   
   def alterColumnFamily[T](columnFamily: String): AlterColumnFamilyQueryBuilder[T] = js.native
   

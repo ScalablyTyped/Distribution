@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateContainerServiceRegistryLoginResult extends js.Object {
+trait CreateContainerServiceRegistryLoginResult extends StObject {
   
   /**
     * An object that describes the log in information for the container service registry of your Lightsail account.
@@ -21,24 +22,12 @@ object CreateContainerServiceRegistryLoginResult {
   }
   
   @scala.inline
-  implicit class CreateContainerServiceRegistryLoginResultOps[Self <: CreateContainerServiceRegistryLoginResult] (val x: Self) extends AnyVal {
+  implicit class CreateContainerServiceRegistryLoginResultMutableBuilder[Self <: CreateContainerServiceRegistryLoginResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegistryLogin(value: ContainerServiceRegistryLogin): Self = StObject.set(x, "registryLogin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRegistryLogin(value: ContainerServiceRegistryLogin): Self = this.set("registryLogin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryLogin: Self = this.set("registryLogin", js.undefined)
+    def setRegistryLoginUndefined: Self = StObject.set(x, "registryLogin", js.undefined)
   }
 }

@@ -2,20 +2,25 @@ package typings.classValidator
 
 import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/decorator/typechecker/IsInt", JSImport.Namespace)
-@js.native
-object isIntMod extends js.Object {
+object isIntMod {
   
+  @JSImport("class-validator/types/decorator/typechecker/IsInt", "IS_INT")
+  @js.native
   val IS_INT: /* "isInt" */ String = js.native
   
-  @JSName("IsInt")
+  @JSImport("class-validator/types/decorator/typechecker/IsInt", "IsInt")
+  @js.native
   def IsInt_(): PropertyDecorator = js.native
-  @JSName("IsInt")
+  @JSImport("class-validator/types/decorator/typechecker/IsInt", "IsInt")
+  @js.native
   def IsInt_(validationOptions: ValidationOptions): PropertyDecorator = js.native
   
+  @JSImport("class-validator/types/decorator/typechecker/IsInt", "isInt")
+  @js.native
   def isInt(`val`: js.Any): Boolean = js.native
 }

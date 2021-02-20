@@ -1,13 +1,14 @@
 package typings.aureliaTemplating.mod
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewSlot")
 @js.native
-class ViewSlot protected () extends js.Object {
+class ViewSlot protected () extends StObject {
   /**
     * Creates an instance of ViewSlot.
     * @param anchor The DOM node which will server as the anchor or container for insertion.

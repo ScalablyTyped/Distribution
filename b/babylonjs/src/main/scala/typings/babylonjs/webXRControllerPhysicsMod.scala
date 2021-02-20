@@ -9,16 +9,16 @@ import typings.babylonjs.webXRAbstractFeatureMod.WebXRAbstractFeature
 import typings.babylonjs.webXRInputMod.WebXRInput
 import typings.babylonjs.webXRInputSourceMod.WebXRInputSource
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/features/WebXRControllerPhysics", JSImport.Namespace)
-@js.native
-object webXRControllerPhysicsMod extends js.Object {
+object webXRControllerPhysicsMod {
   
+  @JSImport("babylonjs/XR/features/WebXRControllerPhysics", "IWebXRControllerPhysicsOptions")
   @js.native
-  class IWebXRControllerPhysicsOptions () extends js.Object {
+  class IWebXRControllerPhysicsOptions () extends StObject {
     
     /**
       * Should the headset get its own impostor
@@ -41,6 +41,7 @@ object webXRControllerPhysicsMod extends js.Object {
     var xrInput: WebXRInput = js.native
   }
   
+  @JSImport("babylonjs/XR/features/WebXRControllerPhysics", "WebXRControllerPhysics")
   @js.native
   class WebXRControllerPhysics protected () extends WebXRAbstractFeature {
     /**
@@ -108,12 +109,13 @@ object webXRControllerPhysicsMod extends js.Object {
     def setPhysicsProperties(newProperties: ImpostorType): Unit = js.native
   }
   /* static members */
-  @js.native
-  object WebXRControllerPhysics extends js.Object {
+  object WebXRControllerPhysics {
     
     /**
       * The module's name
       */
+    @JSImport("babylonjs/XR/features/WebXRControllerPhysics", "WebXRControllerPhysics.Name")
+    @js.native
     val Name: String = js.native
     
     /**
@@ -121,6 +123,8 @@ object webXRControllerPhysicsMod extends js.Object {
       * This is an integer representing the implementation version.
       * This number does not correspond to the webxr specs version
       */
+    @JSImport("babylonjs/XR/features/WebXRControllerPhysics", "WebXRControllerPhysics.Version")
+    @js.native
     val Version: Double = js.native
   }
 }

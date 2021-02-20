@@ -1,12 +1,13 @@
 package typings.wepy.anon
 
 import typings.wepy.wxEnhancedMod.LagLng
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Padding extends js.Object {
+trait Padding extends StObject {
   
   var padding: js.Array[Double] = js.native
   
@@ -21,30 +22,18 @@ object Padding {
   }
   
   @scala.inline
-  implicit class PaddingOps[Self <: Padding] (val x: Self) extends AnyVal {
+  implicit class PaddingMutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoints(value: js.Array[LagLng]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingVarargs(value: Double*): Self = this.set("padding", js.Array(value :_*))
-    
-    @scala.inline
-    def setPadding(value: js.Array[Double]): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointsVarargs(value: LagLng*): Self = this.set("points", js.Array(value :_*))
-    
-    @scala.inline
-    def setPoints(value: js.Array[LagLng]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setPointsVarargs(value: LagLng*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

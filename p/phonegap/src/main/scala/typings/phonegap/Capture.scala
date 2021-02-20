@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Capture extends js.Object {
+trait Capture extends StObject {
   
   def captureAudio(
     captureSuccess: js.Function1[/* mediaFiles */ js.Array[MediaFile], Unit],

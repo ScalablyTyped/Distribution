@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObbFile extends js.Object {
+trait ObbFile extends StObject {
   
   /** Required. Opaque Binary Blob (OBB) file(s) to install on the device. */
   var obb: js.UndefOr[FileReference] = js.native
@@ -25,30 +26,18 @@ object ObbFile {
   }
   
   @scala.inline
-  implicit class ObbFileOps[Self <: ObbFile] (val x: Self) extends AnyVal {
+  implicit class ObbFileMutableBuilder[Self <: ObbFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObb(value: FileReference): Self = StObject.set(x, "obb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObbFileName(value: String): Self = StObject.set(x, "obbFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObbFileNameUndefined: Self = StObject.set(x, "obbFileName", js.undefined)
     
     @scala.inline
-    def setObb(value: FileReference): Self = this.set("obb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObb: Self = this.set("obb", js.undefined)
-    
-    @scala.inline
-    def setObbFileName(value: String): Self = this.set("obbFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObbFileName: Self = this.set("obbFileName", js.undefined)
+    def setObbUndefined: Self = StObject.set(x, "obb", js.undefined)
   }
 }

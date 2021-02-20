@@ -1,14 +1,15 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextTrackReadyState extends js.Object
+sealed trait TextTrackReadyState extends StObject
 @JSGlobal("PlayerFramework.TextTrackReadyState")
 @js.native
-object TextTrackReadyState extends js.Object {
+object TextTrackReadyState extends StObject {
   
   /**
     * The track failed to load.

@@ -1,16 +1,16 @@
 package typings.vec3
 
 import typings.vec3.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vec3", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("vec3", "Vec3")
   @js.native
-  class Vec3 protected () extends js.Object {
+  class Vec3 protected () extends StObject {
     def this(locationStr: String) = this()
     def this(location: js.Array[Double]) = this()
     def this(location: X) = this()

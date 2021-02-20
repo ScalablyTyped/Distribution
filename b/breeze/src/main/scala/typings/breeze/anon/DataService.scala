@@ -1,12 +1,13 @@
 package typings.breeze.anon
 
 import typings.breeze.breeze.EntityQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataService extends js.Object {
+trait DataService extends StObject {
   
   var dataService: typings.breeze.breeze.DataService = js.native
   
@@ -23,27 +24,15 @@ object DataService {
   }
   
   @scala.inline
-  implicit class DataServiceOps[Self <: DataService] (val x: Self) extends AnyVal {
+  implicit class DataServiceMutableBuilder[Self <: DataService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataService(value: typings.breeze.breeze.DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataService(value: typings.breeze.breeze.DataService): Self = this.set("dataService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetUrl(value: () => String): Self = this.set("getUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQuery(value: EntityQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQuery(value: EntityQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

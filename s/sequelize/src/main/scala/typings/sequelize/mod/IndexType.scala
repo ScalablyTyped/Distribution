@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sequelize.sequelizeStrings.FULLTEXT
   - typings.sequelize.sequelizeStrings.SPATIAL
 */
-trait IndexType extends js.Object
+trait IndexType extends StObject
 object IndexType {
   
   @scala.inline

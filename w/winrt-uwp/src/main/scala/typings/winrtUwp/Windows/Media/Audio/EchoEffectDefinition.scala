@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Audio
 
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an echo effect definition supported by the audio graph. */
 @js.native
-trait EchoEffectDefinition extends js.Object {
+trait EchoEffectDefinition extends StObject {
   
   /** Gets the activatable class ID for the echo effect definition object. */
   var activatableClassId: String = js.native
@@ -39,33 +40,21 @@ object EchoEffectDefinition {
   }
   
   @scala.inline
-  implicit class EchoEffectDefinitionOps[Self <: EchoEffectDefinition] (val x: Self) extends AnyVal {
+  implicit class EchoEffectDefinitionMutableBuilder[Self <: EchoEffectDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeedback(value: Double): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatableClassId(value: String): Self = this.set("activatableClassId", value.asInstanceOf[js.Any])
+    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFeedback(value: Double): Self = this.set("feedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWetDryMix(value: Double): Self = this.set("wetDryMix", value.asInstanceOf[js.Any])
+    def setWetDryMix(value: Double): Self = StObject.set(x, "wetDryMix", value.asInstanceOf[js.Any])
   }
 }

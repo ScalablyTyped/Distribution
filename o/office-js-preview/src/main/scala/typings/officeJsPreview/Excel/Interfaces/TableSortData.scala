@@ -4,13 +4,14 @@ import typings.officeJsPreview.Excel.SortField
 import typings.officeJsPreview.Excel.SortMethod
 import typings.officeJsPreview.officeJsPreviewStrings.PinYin
 import typings.officeJsPreview.officeJsPreviewStrings.StrokeCount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `tableSort.toJSON()`. */
 @js.native
-trait TableSortData extends js.Object {
+trait TableSortData extends StObject {
   
   /**
     *
@@ -45,39 +46,27 @@ object TableSortData {
   }
   
   @scala.inline
-  implicit class TableSortDataOps[Self <: TableSortData] (val x: Self) extends AnyVal {
+  implicit class TableSortDataMutableBuilder[Self <: TableSortData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: js.Array[SortField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: SortField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: SortField*): Self = this.set("fields", js.Array(value :_*))
+    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[SortField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setMethod(value: SortMethod | PinYin | StrokeCount): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchCase(value: Boolean): Self = this.set("matchCase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchCase: Self = this.set("matchCase", js.undefined)
-    
-    @scala.inline
-    def setMethod(value: SortMethod | PinYin | StrokeCount): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeoXmlWriteOptions extends js.Object {
+trait IGeoXmlWriteOptions extends StObject {
   
   /** The characters to use to create an indent in the XML data. Default: \t */
   var indentChars: js.UndefOr[String] = js.native
@@ -37,54 +38,42 @@ object IGeoXmlWriteOptions {
   }
   
   @scala.inline
-  implicit class IGeoXmlWriteOptionsOps[Self <: IGeoXmlWriteOptions] (val x: Self) extends AnyVal {
+  implicit class IGeoXmlWriteOptionsMutableBuilder[Self <: IGeoXmlWriteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndentChars(value: String): Self = StObject.set(x, "indentChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndentCharsUndefined: Self = StObject.set(x, "indentChars", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewLineChars(value: String): Self = StObject.set(x, "newLineChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentChars(value: String): Self = this.set("indentChars", value.asInstanceOf[js.Any])
+    def setNewLineCharsUndefined: Self = StObject.set(x, "newLineChars", js.undefined)
     
     @scala.inline
-    def deleteIndentChars: Self = this.set("indentChars", js.undefined)
+    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLineChars(value: String): Self = this.set("newLineChars", value.asInstanceOf[js.Any])
+    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     @scala.inline
-    def deleteNewLineChars: Self = this.set("newLineChars", js.undefined)
+    def setRoundLocations(value: Boolean): Self = StObject.set(x, "roundLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    def setRoundLocationsUndefined: Self = StObject.set(x, "roundLocations", js.undefined)
     
     @scala.inline
-    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundLocations(value: Boolean): Self = this.set("roundLocations", value.asInstanceOf[js.Any])
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
     @scala.inline
-    def deleteRoundLocations: Self = this.set("roundLocations", js.undefined)
+    def setXmlFormat(value: GeoXmlFormat): Self = StObject.set(x, "xmlFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidate(value: Boolean): Self = this.set("validate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
-    
-    @scala.inline
-    def setXmlFormat(value: GeoXmlFormat): Self = this.set("xmlFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlFormat: Self = this.set("xmlFormat", js.undefined)
+    def setXmlFormatUndefined: Self = StObject.set(x, "xmlFormat", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Instance failover request.
   */
 @js.native
-trait SchemaInstancesFailoverRequest extends js.Object {
+trait SchemaInstancesFailoverRequest extends StObject {
   
   /**
     * Failover Context.
@@ -24,24 +25,12 @@ object SchemaInstancesFailoverRequest {
   }
   
   @scala.inline
-  implicit class SchemaInstancesFailoverRequestOps[Self <: SchemaInstancesFailoverRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaInstancesFailoverRequestMutableBuilder[Self <: SchemaInstancesFailoverRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailoverContext(value: SchemaFailoverContext): Self = StObject.set(x, "failoverContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailoverContext(value: SchemaFailoverContext): Self = this.set("failoverContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailoverContext: Self = this.set("failoverContext", js.undefined)
+    def setFailoverContextUndefined: Self = StObject.set(x, "failoverContext", js.undefined)
   }
 }

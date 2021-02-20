@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCachediSCSIVolumeInput extends js.Object {
+trait CreateCachediSCSIVolumeInput extends StObject {
   
   /**
     * A unique identifier that you use to retry a request. If you retry a request, use the same ClientToken you specified in the initial request.
@@ -69,66 +70,54 @@ object CreateCachediSCSIVolumeInput {
   }
   
   @scala.inline
-  implicit class CreateCachediSCSIVolumeInputOps[Self <: CreateCachediSCSIVolumeInput] (val x: Self) extends AnyVal {
+  implicit class CreateCachediSCSIVolumeInputMutableBuilder[Self <: CreateCachediSCSIVolumeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKMSEncrypted(value: Boolean): Self = StObject.set(x, "KMSEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setKMSEncryptedUndefined: Self = StObject.set(x, "KMSEncrypted", js.undefined)
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
     
     @scala.inline
-    def setTargetName(value: TargetName): Self = this.set("TargetName", value.asInstanceOf[js.Any])
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeSizeInBytes(value: long): Self = this.set("VolumeSizeInBytes", value.asInstanceOf[js.Any])
+    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSEncrypted(value: Boolean): Self = this.set("KMSEncrypted", value.asInstanceOf[js.Any])
+    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
     @scala.inline
-    def deleteKMSEncrypted: Self = this.set("KMSEncrypted", js.undefined)
+    def setSourceVolumeARN(value: VolumeARN): Self = StObject.set(x, "SourceVolumeARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    def setSourceVolumeARNUndefined: Self = StObject.set(x, "SourceVolumeARN", js.undefined)
     
     @scala.inline
-    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setSourceVolumeARN(value: VolumeARN): Self = this.set("SourceVolumeARN", value.asInstanceOf[js.Any])
+    def setTargetName(value: TargetName): Self = StObject.set(x, "TargetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceVolumeARN: Self = this.set("SourceVolumeARN", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChatMessageReaction extends js.Object {
+trait ChatMessageReaction extends StObject {
   
   var createdDateTime: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ChatMessageReaction {
   }
   
   @scala.inline
-  implicit class ChatMessageReactionOps[Self <: ChatMessageReaction] (val x: Self) extends AnyVal {
+  implicit class ChatMessageReactionMutableBuilder[Self <: ChatMessageReaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReactionType(value: String): Self = StObject.set(x, "reactionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setReactionTypeUndefined: Self = StObject.set(x, "reactionType", js.undefined)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setUser(value: IdentitySet): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReactionType(value: String): Self = this.set("reactionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReactionType: Self = this.set("reactionType", js.undefined)
-    
-    @scala.inline
-    def setUser(value: IdentitySet): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAutoScalingGroupRecommendationsRequest extends js.Object {
+trait GetAutoScalingGroupRecommendationsRequest extends StObject {
   
   /**
     * The IDs of the AWS accounts for which to return Auto Scaling group recommendations. If your account is the master account of an organization, use this parameter to specify the member accounts for which you want to return Auto Scaling group recommendations. Only one account ID can be specified per request.
@@ -41,57 +42,45 @@ object GetAutoScalingGroupRecommendationsRequest {
   }
   
   @scala.inline
-  implicit class GetAutoScalingGroupRecommendationsRequestOps[Self <: GetAutoScalingGroupRecommendationsRequest] (val x: Self) extends AnyVal {
+  implicit class GetAutoScalingGroupRecommendationsRequestMutableBuilder[Self <: GetAutoScalingGroupRecommendationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountIds(value: AccountIds): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
     
     @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = this.set("accountIds", js.Array(value :_*))
+    def setAutoScalingGroupArns(value: AutoScalingGroupArns): Self = StObject.set(x, "autoScalingGroupArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIds(value: AccountIds): Self = this.set("accountIds", value.asInstanceOf[js.Any])
+    def setAutoScalingGroupArnsUndefined: Self = StObject.set(x, "autoScalingGroupArns", js.undefined)
     
     @scala.inline
-    def deleteAccountIds: Self = this.set("accountIds", js.undefined)
+    def setAutoScalingGroupArnsVarargs(value: AutoScalingGroupArn*): Self = StObject.set(x, "autoScalingGroupArns", js.Array(value :_*))
     
     @scala.inline
-    def setAutoScalingGroupArnsVarargs(value: AutoScalingGroupArn*): Self = this.set("autoScalingGroupArns", js.Array(value :_*))
+    def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupArns(value: AutoScalingGroupArns): Self = this.set("autoScalingGroupArns", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingGroupArns: Self = this.set("autoScalingGroupArns", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("filters", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: Filters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

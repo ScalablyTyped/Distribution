@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.MuxedAccount
 import typings.stellarBase.xdrMod.xdr.SequenceNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpNum extends js.Object {
+trait OpNum extends StObject {
   
   var opNum: Double = js.native
   
@@ -24,27 +25,15 @@ object OpNum {
   }
   
   @scala.inline
-  implicit class OpNumOps[Self <: OpNum] (val x: Self) extends AnyVal {
+  implicit class OpNumMutableBuilder[Self <: OpNum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpNum(value: Double): Self = StObject.set(x, "opNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSeqNum(value: SequenceNumber): Self = StObject.set(x, "seqNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpNum(value: Double): Self = this.set("opNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeqNum(value: SequenceNumber): Self = this.set("seqNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceAccount(value: MuxedAccount): Self = this.set("sourceAccount", value.asInstanceOf[js.Any])
+    def setSourceAccount(value: MuxedAccount): Self = StObject.set(x, "sourceAccount", value.asInstanceOf[js.Any])
   }
 }

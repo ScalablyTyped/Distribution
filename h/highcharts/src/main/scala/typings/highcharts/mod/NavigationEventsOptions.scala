@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationEventsOptions extends js.Object {
+trait NavigationEventsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock) A `closePopup` event. Fired when Popup should be
@@ -39,42 +40,30 @@ object NavigationEventsOptions {
   }
   
   @scala.inline
-  implicit class NavigationEventsOptionsOps[Self <: NavigationEventsOptions] (val x: Self) extends AnyVal {
+  implicit class NavigationEventsOptionsMutableBuilder[Self <: NavigationEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClosePopup(value: js.Function): Self = StObject.set(x, "closePopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClosePopupUndefined: Self = StObject.set(x, "closePopup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeselectButton(value: js.Function): Self = StObject.set(x, "deselectButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosePopup(value: js.Function): Self = this.set("closePopup", value.asInstanceOf[js.Any])
+    def setDeselectButtonUndefined: Self = StObject.set(x, "deselectButton", js.undefined)
     
     @scala.inline
-    def deleteClosePopup: Self = this.set("closePopup", js.undefined)
+    def setSelectButton(value: js.Function): Self = StObject.set(x, "selectButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeselectButton(value: js.Function): Self = this.set("deselectButton", value.asInstanceOf[js.Any])
+    def setSelectButtonUndefined: Self = StObject.set(x, "selectButton", js.undefined)
     
     @scala.inline
-    def deleteDeselectButton: Self = this.set("deselectButton", js.undefined)
+    def setShowPopup(value: js.Function): Self = StObject.set(x, "showPopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectButton(value: js.Function): Self = this.set("selectButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectButton: Self = this.set("selectButton", js.undefined)
-    
-    @scala.inline
-    def setShowPopup(value: js.Function): Self = this.set("showPopup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowPopup: Self = this.set("showPopup", js.undefined)
+    def setShowPopupUndefined: Self = StObject.set(x, "showPopup", js.undefined)
   }
 }

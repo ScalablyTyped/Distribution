@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDomainMappingsResponse extends js.Object {
+trait ListDomainMappingsResponse extends StObject {
   
   /** The domain mappings for the application. */
   var domainMappings: js.UndefOr[js.Array[DomainMapping]] = js.native
@@ -22,33 +23,21 @@ object ListDomainMappingsResponse {
   }
   
   @scala.inline
-  implicit class ListDomainMappingsResponseOps[Self <: ListDomainMappingsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDomainMappingsResponseMutableBuilder[Self <: ListDomainMappingsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainMappings(value: js.Array[DomainMapping]): Self = StObject.set(x, "domainMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainMappingsUndefined: Self = StObject.set(x, "domainMappings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainMappingsVarargs(value: DomainMapping*): Self = StObject.set(x, "domainMappings", js.Array(value :_*))
     
     @scala.inline
-    def setDomainMappingsVarargs(value: DomainMapping*): Self = this.set("domainMappings", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainMappings(value: js.Array[DomainMapping]): Self = this.set("domainMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainMappings: Self = this.set("domainMappings", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

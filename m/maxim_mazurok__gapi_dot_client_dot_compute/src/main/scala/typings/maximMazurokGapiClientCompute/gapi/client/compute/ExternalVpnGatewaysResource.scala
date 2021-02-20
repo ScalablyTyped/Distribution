@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.FieldsKeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExternalVpnGatewaysResource extends js.Object {
+trait ExternalVpnGatewaysResource extends StObject {
   
   /** Deletes the specified externalVpnGateway. */
   def delete(): Request[Operation] = js.native

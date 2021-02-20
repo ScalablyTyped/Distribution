@@ -5,12 +5,13 @@ import typings.evernote.mod.Types.RelatedContentAccess
 import typings.evernote.mod.Types.RelatedContentImage
 import typings.evernote.mod.Types.RelatedContentType
 import typings.evernote.mod.Types.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessType extends js.Object {
+trait AccessType extends StObject {
   
   var accessType: js.UndefOr[RelatedContentAccess] = js.native
   
@@ -53,120 +54,108 @@ object AccessType {
   }
   
   @scala.inline
-  implicit class AccessTypeOps[Self <: AccessType] (val x: Self) extends AnyVal {
+  implicit class AccessTypeMutableBuilder[Self <: AccessType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessType(value: RelatedContentAccess): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTypeUndefined: Self = StObject.set(x, "accessType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthors(value: js.Array[String]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessType(value: RelatedContentAccess): Self = this.set("accessType", value.asInstanceOf[js.Any])
+    def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
     @scala.inline
-    def deleteAccessType: Self = this.set("accessType", js.undefined)
+    def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorsVarargs(value: String*): Self = this.set("authors", js.Array(value :_*))
+    def setClipUrl(value: String): Self = StObject.set(x, "clipUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthors(value: js.Array[String]): Self = this.set("authors", value.asInstanceOf[js.Any])
+    def setClipUrlUndefined: Self = StObject.set(x, "clipUrl", js.undefined)
     
     @scala.inline
-    def deleteAuthors: Self = this.set("authors", js.undefined)
+    def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipUrl(value: String): Self = this.set("clipUrl", value.asInstanceOf[js.Any])
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def deleteClipUrl: Self = this.set("clipUrl", js.undefined)
+    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContact(value: Contact): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setContentType(value: RelatedContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentId(value: String): Self = this.set("contentId", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteContentId: Self = this.set("contentId", js.undefined)
+    def setDate(value: Timestamp): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: RelatedContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setSourceFaviconUrl(value: String): Self = StObject.set(x, "sourceFaviconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Timestamp): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setSourceFaviconUrlUndefined: Self = StObject.set(x, "sourceFaviconUrl", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFaviconUrl(value: String): Self = this.set("sourceFaviconUrl", value.asInstanceOf[js.Any])
+    def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
     
     @scala.inline
-    def deleteSourceFaviconUrl: Self = this.set("sourceFaviconUrl", js.undefined)
+    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceId(value: String): Self = this.set("sourceId", value.asInstanceOf[js.Any])
+    def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
     
     @scala.inline
-    def deleteSourceId: Self = this.set("sourceId", js.undefined)
+    def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceName(value: String): Self = this.set("sourceName", value.asInstanceOf[js.Any])
+    def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
     
     @scala.inline
-    def deleteSourceName: Self = this.set("sourceName", js.undefined)
+    def setTeaser(value: String): Self = StObject.set(x, "teaser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceUrl(value: String): Self = this.set("sourceUrl", value.asInstanceOf[js.Any])
+    def setTeaserUndefined: Self = StObject.set(x, "teaser", js.undefined)
     
     @scala.inline
-    def deleteSourceUrl: Self = this.set("sourceUrl", js.undefined)
+    def setThumbnails(value: js.Array[RelatedContentImage]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeaser(value: String): Self = this.set("teaser", value.asInstanceOf[js.Any])
+    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
     @scala.inline
-    def deleteTeaser: Self = this.set("teaser", js.undefined)
+    def setThumbnailsVarargs(value: RelatedContentImage*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
     
     @scala.inline
-    def setThumbnailsVarargs(value: RelatedContentImage*): Self = this.set("thumbnails", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnails(value: js.Array[RelatedContentImage]): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setVisibleUrl(value: String): Self = StObject.set(x, "visibleUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setVisibleUrl(value: String): Self = this.set("visibleUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleUrl: Self = this.set("visibleUrl", js.undefined)
+    def setVisibleUrlUndefined: Self = StObject.set(x, "visibleUrl", js.undefined)
   }
 }

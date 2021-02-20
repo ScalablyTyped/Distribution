@@ -3,16 +3,16 @@ package typings.sipJs
 import typings.sipJs.coreMod.IncomingRequestMessage
 import typings.sipJs.notifyMod.IncomingNotifyRequest
 import typings.sipJs.outgoingResponseMod.ResponseOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/notification", JSImport.Namespace)
-@js.native
-object notificationMod extends js.Object {
+object notificationMod {
   
+  @JSImport("sip.js/lib/api/notification", "Notification")
   @js.native
-  class Notification protected () extends js.Object {
+  class Notification protected () extends StObject {
     /** @internal */
     def this(incomingNotifyRequest: IncomingNotifyRequest) = this()
     

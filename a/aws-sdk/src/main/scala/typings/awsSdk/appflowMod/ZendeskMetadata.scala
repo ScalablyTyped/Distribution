@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZendeskMetadata extends js.Object {
+trait ZendeskMetadata extends StObject {
   
   /**
     *  The desired authorization scope for the Zendesk account. 
@@ -21,27 +22,15 @@ object ZendeskMetadata {
   }
   
   @scala.inline
-  implicit class ZendeskMetadataOps[Self <: ZendeskMetadata] (val x: Self) extends AnyVal {
+  implicit class ZendeskMetadataMutableBuilder[Self <: ZendeskMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOAuthScopes(value: OAuthScopeList): Self = StObject.set(x, "oAuthScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOAuthScopesUndefined: Self = StObject.set(x, "oAuthScopes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOAuthScopesVarargs(value: OAuthScope*): Self = this.set("oAuthScopes", js.Array(value :_*))
-    
-    @scala.inline
-    def setOAuthScopes(value: OAuthScopeList): Self = this.set("oAuthScopes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOAuthScopes: Self = this.set("oAuthScopes", js.undefined)
+    def setOAuthScopesVarargs(value: OAuthScope*): Self = StObject.set(x, "oAuthScopes", js.Array(value :_*))
   }
 }

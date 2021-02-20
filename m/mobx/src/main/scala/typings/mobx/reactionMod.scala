@@ -3,40 +3,14 @@ package typings.mobx
 import typings.mobx.coreObservableMod.IObservable
 import typings.mobx.derivationMod.IDerivation
 import typings.mobx.utilsMod.Lambda
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx/lib/core/reaction", JSImport.Namespace)
-@js.native
-object reactionMod extends js.Object {
+object reactionMod {
   
-  def isReaction(x: js.Any): /* is mobx.mobx/lib/core/reaction.Reaction */ Boolean = js.native
-  
-  def onReactionError(handler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit]): Lambda = js.native
-  
-  def runReactions(): Unit = js.native
-  
-  def setReactionScheduler(fn: js.Function1[/* f */ js.Function0[Unit], Unit]): Unit = js.native
-  
-  @js.native
-  trait IReactionDisposer extends js.Object {
-    
-    @JSName("$mobx")
-    var $mobx: Reaction = js.native
-    
-    def apply(): Unit = js.native
-  }
-  
-  @js.native
-  trait IReactionPublic extends js.Object {
-    
-    def dispose(): Unit = js.native
-    
-    def trace(): Unit = js.native
-    def trace(enterBreakPoint: Boolean): Unit = js.native
-  }
-  
+  @JSImport("mobx/lib/core/reaction", "Reaction")
   @js.native
   class Reaction protected ()
     extends IDerivation
@@ -94,5 +68,39 @@ object reactionMod extends js.Object {
     def schedule(): Unit = js.native
     
     def track(fn: js.Function0[Unit]): Unit = js.native
+  }
+  
+  @JSImport("mobx/lib/core/reaction", "isReaction")
+  @js.native
+  def isReaction(x: js.Any): /* is mobx.mobx/lib/core/reaction.Reaction */ Boolean = js.native
+  
+  @JSImport("mobx/lib/core/reaction", "onReactionError")
+  @js.native
+  def onReactionError(handler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit]): Lambda = js.native
+  
+  @JSImport("mobx/lib/core/reaction", "runReactions")
+  @js.native
+  def runReactions(): Unit = js.native
+  
+  @JSImport("mobx/lib/core/reaction", "setReactionScheduler")
+  @js.native
+  def setReactionScheduler(fn: js.Function1[/* f */ js.Function0[Unit], Unit]): Unit = js.native
+  
+  @js.native
+  trait IReactionDisposer extends StObject {
+    
+    def apply(): Unit = js.native
+    
+    @JSName("$mobx")
+    var $mobx: Reaction = js.native
+  }
+  
+  @js.native
+  trait IReactionPublic extends StObject {
+    
+    def dispose(): Unit = js.native
+    
+    def trace(): Unit = js.native
+    def trace(enterBreakPoint: Boolean): Unit = js.native
   }
 }

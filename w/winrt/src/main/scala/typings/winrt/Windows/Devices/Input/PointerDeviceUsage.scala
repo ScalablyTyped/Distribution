@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Devices.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointerDeviceUsage extends js.Object {
+trait PointerDeviceUsage extends StObject {
   
   var maxLogical: Double = js.native
   
@@ -41,42 +42,30 @@ object PointerDeviceUsage {
   }
   
   @scala.inline
-  implicit class PointerDeviceUsageOps[Self <: PointerDeviceUsage] (val x: Self) extends AnyVal {
+  implicit class PointerDeviceUsageMutableBuilder[Self <: PointerDeviceUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxLogical(value: Double): Self = StObject.set(x, "maxLogical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxPhysical(value: Double): Self = StObject.set(x, "maxPhysical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinLogical(value: Double): Self = StObject.set(x, "minLogical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLogical(value: Double): Self = this.set("maxLogical", value.asInstanceOf[js.Any])
+    def setMinPhysical(value: Double): Self = StObject.set(x, "minPhysical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPhysical(value: Double): Self = this.set("maxPhysical", value.asInstanceOf[js.Any])
+    def setPhysicalMultiplier(value: Double): Self = StObject.set(x, "physicalMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinLogical(value: Double): Self = this.set("minLogical", value.asInstanceOf[js.Any])
+    def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPhysical(value: Double): Self = this.set("minPhysical", value.asInstanceOf[js.Any])
+    def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalMultiplier(value: Double): Self = this.set("physicalMultiplier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit(value: Double): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsage(value: Double): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsagePage(value: Double): Self = this.set("usagePage", value.asInstanceOf[js.Any])
+    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
   }
 }

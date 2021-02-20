@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,45 +32,33 @@ object GroupLifecyclePolicy {
   }
   
   @scala.inline
-  implicit class GroupLifecyclePolicyOps[Self <: GroupLifecyclePolicy] (val x: Self) extends AnyVal {
+  implicit class GroupLifecyclePolicyMutableBuilder[Self <: GroupLifecyclePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternateNotificationEmails(value: NullableOption[String]): Self = StObject.set(x, "alternateNotificationEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateNotificationEmailsNull: Self = StObject.set(x, "alternateNotificationEmails", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternateNotificationEmailsUndefined: Self = StObject.set(x, "alternateNotificationEmails", js.undefined)
     
     @scala.inline
-    def setAlternateNotificationEmails(value: NullableOption[String]): Self = this.set("alternateNotificationEmails", value.asInstanceOf[js.Any])
+    def setGroupLifetimeInDays(value: NullableOption[Double]): Self = StObject.set(x, "groupLifetimeInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlternateNotificationEmails: Self = this.set("alternateNotificationEmails", js.undefined)
+    def setGroupLifetimeInDaysNull: Self = StObject.set(x, "groupLifetimeInDays", null)
     
     @scala.inline
-    def setAlternateNotificationEmailsNull: Self = this.set("alternateNotificationEmails", null)
+    def setGroupLifetimeInDaysUndefined: Self = StObject.set(x, "groupLifetimeInDays", js.undefined)
     
     @scala.inline
-    def setGroupLifetimeInDays(value: NullableOption[Double]): Self = this.set("groupLifetimeInDays", value.asInstanceOf[js.Any])
+    def setManagedGroupTypes(value: NullableOption[String]): Self = StObject.set(x, "managedGroupTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupLifetimeInDays: Self = this.set("groupLifetimeInDays", js.undefined)
+    def setManagedGroupTypesNull: Self = StObject.set(x, "managedGroupTypes", null)
     
     @scala.inline
-    def setGroupLifetimeInDaysNull: Self = this.set("groupLifetimeInDays", null)
-    
-    @scala.inline
-    def setManagedGroupTypes(value: NullableOption[String]): Self = this.set("managedGroupTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedGroupTypes: Self = this.set("managedGroupTypes", js.undefined)
-    
-    @scala.inline
-    def setManagedGroupTypesNull: Self = this.set("managedGroupTypes", null)
+    def setManagedGroupTypesUndefined: Self = StObject.set(x, "managedGroupTypes", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.strongholdPayJs.mod.global.Stronghold
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,27 +21,15 @@ object UpdatePaymentSourceOptions {
   }
   
   @scala.inline
-  implicit class UpdatePaymentSourceOptionsOps[Self <: UpdatePaymentSourceOptions] (val x: Self) extends AnyVal {
+  implicit class UpdatePaymentSourceOptionsMutableBuilder[Self <: UpdatePaymentSourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnSuccess(value: /* paymentSource */ PaymentSource => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPaymentSourceId(value: String): Self = this.set("paymentSourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnSuccess(value: /* paymentSource */ PaymentSource => Unit): Self = this.set("onSuccess", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    def setPaymentSourceId(value: String): Self = StObject.set(x, "paymentSourceId", value.asInstanceOf[js.Any])
   }
 }

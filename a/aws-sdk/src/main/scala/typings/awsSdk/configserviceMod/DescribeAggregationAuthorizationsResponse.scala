@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAggregationAuthorizationsResponse extends js.Object {
+trait DescribeAggregationAuthorizationsResponse extends StObject {
   
   /**
     * Returns a list of authorizations granted to various aggregator accounts and regions.
@@ -26,33 +27,21 @@ object DescribeAggregationAuthorizationsResponse {
   }
   
   @scala.inline
-  implicit class DescribeAggregationAuthorizationsResponseOps[Self <: DescribeAggregationAuthorizationsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAggregationAuthorizationsResponseMutableBuilder[Self <: DescribeAggregationAuthorizationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationAuthorizations(value: AggregationAuthorizationList): Self = StObject.set(x, "AggregationAuthorizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationAuthorizationsUndefined: Self = StObject.set(x, "AggregationAuthorizations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregationAuthorizationsVarargs(value: AggregationAuthorization*): Self = StObject.set(x, "AggregationAuthorizations", js.Array(value :_*))
     
     @scala.inline
-    def setAggregationAuthorizationsVarargs(value: AggregationAuthorization*): Self = this.set("AggregationAuthorizations", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationAuthorizations(value: AggregationAuthorizationList): Self = this.set("AggregationAuthorizations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregationAuthorizations: Self = this.set("AggregationAuthorizations", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

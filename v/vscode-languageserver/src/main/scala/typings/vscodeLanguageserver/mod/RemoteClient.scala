@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoteClient extends js.Object {
+trait RemoteClient extends StObject {
   
   /**
     * The connection this remote is attached to.

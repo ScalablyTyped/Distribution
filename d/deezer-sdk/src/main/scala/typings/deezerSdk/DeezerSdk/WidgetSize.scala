@@ -1,5 +1,6 @@
 package typings.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.deezerSdk.deezerSdkStrings.medium
   - typings.deezerSdk.deezerSdkStrings.big
 */
-trait WidgetSize extends js.Object
+trait WidgetSize extends StObject
 object WidgetSize {
   
   @scala.inline

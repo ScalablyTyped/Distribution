@@ -13,6 +13,7 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,16 +65,20 @@ class ClientTemplate protected () extends Element[IModel] {
   def template: Text = js.native
   def template_=(newValue: Text): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate")
-@js.native
-object ClientTemplate extends js.Object {
+object ClientTemplate {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.create")
+  @js.native
   def create(model: IModel): ClientTemplate = js.native
   
   /**
@@ -81,6 +86,9 @@ object ClientTemplate extends js.Object {
     * The new ClientTemplate will be automatically stored in the 'caption' property
     * of the parent Button element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInButtonUnderCaption")
+  @js.native
   def createInButtonUnderCaption(container: Button): ClientTemplate = js.native
   
   /**
@@ -88,6 +96,9 @@ object ClientTemplate extends js.Object {
     * The new ClientTemplate will be automatically stored in the 'caption' property
     * of the parent ControlBarButton element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInControlBarButtonUnderCaption")
+  @js.native
   def createInControlBarButtonUnderCaption(container: ControlBarButton): ClientTemplate = js.native
   
   /**
@@ -98,6 +109,9 @@ object ClientTemplate extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.1.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInCustomWidgetUnderLabelTemplate")
+  @js.native
   def createInCustomWidgetUnderLabelTemplate(container: CustomWidget): ClientTemplate = js.native
   
   /**
@@ -108,6 +122,9 @@ object ClientTemplate extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInDataGridUnderCaption")
+  @js.native
   def createInDataGridUnderCaption(container: DataGrid): ClientTemplate = js.native
   
   /**
@@ -118,6 +135,9 @@ object ClientTemplate extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.6.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInDynamicImageViewerUnderAlternativeText")
+  @js.native
   def createInDynamicImageViewerUnderAlternativeText(container: DynamicImageViewer): ClientTemplate = js.native
   
   /**
@@ -125,6 +145,9 @@ object ClientTemplate extends js.Object {
     * The new ClientTemplate will be automatically stored in the 'content' property
     * of the parent DynamicText element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInDynamicTextUnderContent")
+  @js.native
   def createInDynamicTextUnderContent(container: DynamicText): ClientTemplate = js.native
   
   /**
@@ -132,6 +155,9 @@ object ClientTemplate extends js.Object {
     * The new ClientTemplate will be automatically stored in the 'caption' property
     * of the parent GroupBox element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInGroupBoxUnderCaption")
+  @js.native
   def createInGroupBoxUnderCaption(container: GroupBox): ClientTemplate = js.native
   
   /**
@@ -142,6 +168,9 @@ object ClientTemplate extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.18.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInInputWidgetUnderLabelTemplate")
+  @js.native
   def createInInputWidgetUnderLabelTemplate(container: InputWidget): ClientTemplate = js.native
   
   /**
@@ -152,6 +181,9 @@ object ClientTemplate extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.12.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInInputWidgetUnderScreenReaderLabel")
+  @js.native
   def createInInputWidgetUnderScreenReaderLabel(container: InputWidget): ClientTemplate = js.native
   
   /**
@@ -162,6 +194,9 @@ object ClientTemplate extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.6.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInStaticImageViewerUnderAlternativeText")
+  @js.native
   def createInStaticImageViewerUnderAlternativeText(container: StaticImageViewer): ClientTemplate = js.native
   
   /**
@@ -172,6 +207,9 @@ object ClientTemplate extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInTabPageUnderBadge")
+  @js.native
   def createInTabPageUnderBadge(container: TabPage): ClientTemplate = js.native
   
   /**
@@ -182,6 +220,9 @@ object ClientTemplate extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 to 8.0.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInWidgetObjectUnderLabelTemplate")
+  @js.native
   def createInWidgetObjectUnderLabelTemplate(container: WidgetObject): ClientTemplate = js.native
   
   /**
@@ -192,9 +233,22 @@ object ClientTemplate extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInWidgetValueUnderTextTemplate")
+  @js.native
   def createInWidgetValueUnderTextTemplate(container: WidgetValue): ClientTemplate = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

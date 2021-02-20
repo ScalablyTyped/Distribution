@@ -1,11 +1,12 @@
 package typings.sugar.sugarjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Range extends js.Object {
+trait Range extends StObject {
   
   def clamp[T](el: T): T = js.native
   

@@ -1,12 +1,13 @@
 package typings.materializeCss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.ScrollSpyOptions> */
 @js.native
-trait PartialScrollSpyOptions extends js.Object {
+trait PartialScrollSpyOptions extends StObject {
   
   var activeClass: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object PartialScrollSpyOptions {
   }
   
   @scala.inline
-  implicit class PartialScrollSpyOptionsOps[Self <: PartialScrollSpyOptions] (val x: Self) extends AnyVal {
+  implicit class PartialScrollSpyOptionsMutableBuilder[Self <: PartialScrollSpyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetActiveElement(value: /* id */ String => String): Self = StObject.set(x, "getActiveElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
+    def setGetActiveElementUndefined: Self = StObject.set(x, "getActiveElement", js.undefined)
     
     @scala.inline
-    def deleteActiveClass: Self = this.set("activeClass", js.undefined)
+    def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetActiveElement(value: /* id */ String => String): Self = this.set("getActiveElement", js.Any.fromFunction1(value))
+    def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
     
     @scala.inline
-    def deleteGetActiveElement: Self = this.set("getActiveElement", js.undefined)
+    def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollOffset(value: Double): Self = this.set("scrollOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollOffset: Self = this.set("scrollOffset", js.undefined)
-    
-    @scala.inline
-    def setThrottle(value: Double): Self = this.set("throttle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottle: Self = this.set("throttle", js.undefined)
+    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
   }
 }

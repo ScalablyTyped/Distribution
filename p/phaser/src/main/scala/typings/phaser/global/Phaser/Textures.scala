@@ -6,23 +6,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import typings.std.WebGLTexture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Textures")
-@js.native
-object Textures extends js.Object {
-  
-  /**
-    * Linear filter type.
-    */
-  val LINEAR: integer = js.native
-  
-  /**
-    * Nearest Neighbor filter type.
-    */
-  val NEAREST: integer = js.native
+object Textures {
   
   /**
     * A Canvas Texture is a special kind of Texture that is backed by an HTML Canvas Element as its source.
@@ -43,6 +32,7 @@ object Textures extends js.Object {
     * texture data as well. Forgetting to do this (i.e. by changing the canvas size directly from your code) could cause
     * graphical errors.
     */
+  @JSGlobal("Phaser.Textures.CanvasTexture")
   @js.native
   class CanvasTexture protected ()
     extends typings.phaser.Phaser.Textures.CanvasTexture {
@@ -63,8 +53,7 @@ object Textures extends js.Object {
     ) = this()
   }
   
-  @js.native
-  object Events extends js.Object {
+  object Events {
     
     /**
       * The Texture Add Event.
@@ -73,6 +62,8 @@ object Textures extends js.Object {
       * 
       * Listen to this event from within a Scene using: `this.textures.on('addtexture', listener)`.
       */
+    @JSGlobal("Phaser.Textures.Events.ADD")
+    @js.native
     val ADD: js.Any = js.native
     
     /**
@@ -83,6 +74,8 @@ object Textures extends js.Object {
       * 
       * Listen to this event from within a Scene using: `this.textures.on('onerror', listener)`.
       */
+    @JSGlobal("Phaser.Textures.Events.ERROR")
+    @js.native
     val ERROR: js.Any = js.native
     
     /**
@@ -95,6 +88,8 @@ object Textures extends js.Object {
       * 
       * This event is dispatched after the [ADD]{@linkcode Phaser.Textures.Events#event:ADD} event.
       */
+    @JSGlobal("Phaser.Textures.Events.LOAD")
+    @js.native
     val LOAD: js.Any = js.native
     
     /**
@@ -104,6 +99,8 @@ object Textures extends js.Object {
       * async events before it's fully ready to carry on. When those complete the Texture Manager emits this event via the Game
       * instance, which tells the Game to carry on booting.
       */
+    @JSGlobal("Phaser.Textures.Events.READY")
+    @js.native
     val READY: js.Any = js.native
     
     /**
@@ -116,14 +113,17 @@ object Textures extends js.Object {
       * If you have any Game Objects still using the removed texture, they will start throwing
       * errors the next time they try to render. Be sure to clear all use of the texture in this event handler.
       */
+    @JSGlobal("Phaser.Textures.Events.REMOVE")
+    @js.native
     val REMOVE: js.Any = js.native
   }
   
   /**
     * Filter Types.
     */
+  @JSGlobal("Phaser.Textures.FilterMode")
   @js.native
-  object FilterMode extends js.Object {
+  object FilterMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Textures.FilterMode with Double] = js.native
@@ -136,6 +136,7 @@ object Textures extends js.Object {
   /**
     * A Frame is a section of a Texture.
     */
+  @JSGlobal("Phaser.Textures.Frame")
   @js.native
   class Frame protected ()
     extends typings.phaser.Phaser.Textures.Frame {
@@ -170,6 +171,20 @@ object Textures extends js.Object {
   }
   
   /**
+    * Linear filter type.
+    */
+  @JSGlobal("Phaser.Textures.LINEAR")
+  @js.native
+  val LINEAR: integer = js.native
+  
+  /**
+    * Nearest Neighbor filter type.
+    */
+  @JSGlobal("Phaser.Textures.NEAREST")
+  @js.native
+  val NEAREST: integer = js.native
+  
+  /**
     * A Texture consists of a source, usually an Image from the Cache, and a collection of Frames.
     * The Frames represent the different areas of the Texture. For example a texture atlas
     * may have many Frames, one for each element within the atlas. Where-as a single image would have
@@ -183,6 +198,7 @@ object Textures extends js.Object {
     * 
     * Sprites and other Game Objects get the texture data they need from the TextureManager.
     */
+  @JSGlobal("Phaser.Textures.Texture")
   @js.native
   class Texture protected ()
     extends typings.phaser.Phaser.Textures.Texture {
@@ -271,6 +287,7 @@ object Textures extends js.Object {
     * 
     * Access it via `scene.textures`.
     */
+  @JSGlobal("Phaser.Textures.TextureManager")
   @js.native
   class TextureManager protected ()
     extends typings.phaser.Phaser.Textures.TextureManager {
@@ -288,6 +305,7 @@ object Textures extends js.Object {
     * 
     * A Texture can contain multiple Texture Sources, which only happens when a multi-atlas is loaded.
     */
+  @JSGlobal("Phaser.Textures.TextureSource")
   @js.native
   class TextureSource protected ()
     extends typings.phaser.Phaser.Textures.TextureSource {

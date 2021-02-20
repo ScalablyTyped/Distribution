@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopDeploymentInput extends js.Object {
+trait StopDeploymentInput extends StObject {
   
   /**
     *  Indicates, when a deployment is stopped, whether instances that have been updated should be rolled back to the previous version of the application revision. 
@@ -26,27 +27,15 @@ object StopDeploymentInput {
   }
   
   @scala.inline
-  implicit class StopDeploymentInputOps[Self <: StopDeploymentInput] (val x: Self) extends AnyVal {
+  implicit class StopDeploymentInputMutableBuilder[Self <: StopDeploymentInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRollbackEnabled(value: NullableBoolean): Self = StObject.set(x, "autoRollbackEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRollbackEnabledUndefined: Self = StObject.set(x, "autoRollbackEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAutoRollbackEnabled(value: NullableBoolean): Self = this.set("autoRollbackEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoRollbackEnabled: Self = this.set("autoRollbackEnabled", js.undefined)
+    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
   }
 }

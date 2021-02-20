@@ -2,14 +2,14 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.dialogTypesMod.IDialogProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Dialog/Dialog.base", JSImport.Namespace)
-@js.native
-object dialogBaseMod extends js.Object {
+object dialogBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Dialog/Dialog.base", "DialogBase")
   @js.native
   class DialogBase protected ()
     extends Component[IDialogProps, js.Object, js.Any] {
@@ -26,9 +26,16 @@ object dialogBaseMod extends js.Object {
     var _id: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object DialogBase extends js.Object {
+  object DialogBase {
     
-    var defaultProps: IDialogProps = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Dialog/Dialog.base", "DialogBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/Dialog/Dialog.base", "DialogBase.defaultProps")
+    @js.native
+    def defaultProps: IDialogProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IDialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

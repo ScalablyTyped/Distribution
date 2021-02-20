@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkColorFilterFactory extends js.Object {
+trait SkColorFilterFactory extends StObject {
   
   /**
     * Makes a color filter with the given color and blend mode.
@@ -61,36 +62,24 @@ object SkColorFilterFactory {
   }
   
   @scala.inline
-  implicit class SkColorFilterFactoryOps[Self <: SkColorFilterFactory] (val x: Self) extends AnyVal {
+  implicit class SkColorFilterFactoryMutableBuilder[Self <: SkColorFilterFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMakeBlend(value: (InputColor, BlendMode) => SkColorFilter): Self = StObject.set(x, "MakeBlend", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMakeCompose(value: (SkColorFilter, SkColorFilter) => SkColorFilter): Self = StObject.set(x, "MakeCompose", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMakeLerp(value: (Double, SkColorFilter, SkColorFilter) => SkColorFilter): Self = StObject.set(x, "MakeLerp", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMakeBlend(value: (InputColor, BlendMode) => SkColorFilter): Self = this.set("MakeBlend", js.Any.fromFunction2(value))
+    def setMakeLinearToSRGBGamma(value: () => SkColorFilter): Self = StObject.set(x, "MakeLinearToSRGBGamma", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMakeCompose(value: (SkColorFilter, SkColorFilter) => SkColorFilter): Self = this.set("MakeCompose", js.Any.fromFunction2(value))
+    def setMakeMatrix(value: InputColorMatrix => SkColorFilter): Self = StObject.set(x, "MakeMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMakeLerp(value: (Double, SkColorFilter, SkColorFilter) => SkColorFilter): Self = this.set("MakeLerp", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setMakeLinearToSRGBGamma(value: () => SkColorFilter): Self = this.set("MakeLinearToSRGBGamma", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMakeMatrix(value: InputColorMatrix => SkColorFilter): Self = this.set("MakeMatrix", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMakeSRGBToLinearGamma(value: () => SkColorFilter): Self = this.set("MakeSRGBToLinearGamma", js.Any.fromFunction0(value))
+    def setMakeSRGBToLinearGamma(value: () => SkColorFilter): Self = StObject.set(x, "MakeSRGBToLinearGamma", js.Any.fromFunction0(value))
   }
 }

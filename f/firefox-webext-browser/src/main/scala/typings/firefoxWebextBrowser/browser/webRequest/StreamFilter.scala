@@ -3,13 +3,14 @@ package typings.firefoxWebextBrowser.browser.webRequest
 import typings.std.ArrayBuffer
 import typings.std.Event
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object you can use to monitor and modify HTTP responses. */
 @js.native
-trait StreamFilter extends js.Object {
+trait StreamFilter extends StObject {
   
   /** Closes the request. */
   def close(): Unit = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRepositoryPermissionsPolicyRequest extends js.Object {
+trait GetRepositoryPermissionsPolicyRequest extends StObject {
   
   /**
     *  The name of the domain containing the repository whose associated resource policy is to be retrieved. 
@@ -31,30 +32,18 @@ object GetRepositoryPermissionsPolicyRequest {
   }
   
   @scala.inline
-  implicit class GetRepositoryPermissionsPolicyRequestOps[Self <: GetRepositoryPermissionsPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class GetRepositoryPermissionsPolicyRequestMutableBuilder[Self <: GetRepositoryPermissionsPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
     @scala.inline
-    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepository(value: RepositoryName): Self = this.set("repository", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
+    def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animation extends js.Object {
+trait Animation extends StObject {
   
   /** End previous animation. */
   var animationEnd: js.UndefOr[AnimationEnd] = js.native
@@ -25,36 +26,24 @@ object Animation {
   }
   
   @scala.inline
-  implicit class AnimationOps[Self <: Animation] (val x: Self) extends AnyVal {
+  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationEnd(value: AnimationEnd): Self = StObject.set(x, "animationEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationEndUndefined: Self = StObject.set(x, "animationEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationFade(value: AnimationFade): Self = StObject.set(x, "animationFade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationEnd(value: AnimationEnd): Self = this.set("animationEnd", value.asInstanceOf[js.Any])
+    def setAnimationFadeUndefined: Self = StObject.set(x, "animationFade", js.undefined)
     
     @scala.inline
-    def deleteAnimationEnd: Self = this.set("animationEnd", js.undefined)
+    def setAnimationStatic(value: AnimationStatic): Self = StObject.set(x, "animationStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationFade(value: AnimationFade): Self = this.set("animationFade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimationFade: Self = this.set("animationFade", js.undefined)
-    
-    @scala.inline
-    def setAnimationStatic(value: AnimationStatic): Self = this.set("animationStatic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimationStatic: Self = this.set("animationStatic", js.undefined)
+    def setAnimationStaticUndefined: Self = StObject.set(x, "animationStatic", js.undefined)
   }
 }

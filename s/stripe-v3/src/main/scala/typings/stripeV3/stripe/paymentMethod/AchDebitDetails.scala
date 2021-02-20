@@ -2,12 +2,13 @@ package typings.stripeV3.stripe.paymentMethod
 
 import typings.stripeV3.stripeV3Strings.company
 import typings.stripeV3.stripeV3Strings.individual
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AchDebitDetails extends js.Object {
+trait AchDebitDetails extends StObject {
   
   var account_holder_type: individual | company = js.native
   
@@ -37,36 +38,24 @@ object AchDebitDetails {
   }
   
   @scala.inline
-  implicit class AchDebitDetailsOps[Self <: AchDebitDetails] (val x: Self) extends AnyVal {
+  implicit class AchDebitDetailsMutableBuilder[Self <: AchDebitDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_holder_type(value: individual | company): Self = this.set("account_holder_type", value.asInstanceOf[js.Any])
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBank_name(value: String): Self = this.set("bank_name", value.asInstanceOf[js.Any])
+    def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLast4(value: String): Self = this.set("last4", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRouting_number(value: String): Self = this.set("routing_number", value.asInstanceOf[js.Any])
+    def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
   }
 }

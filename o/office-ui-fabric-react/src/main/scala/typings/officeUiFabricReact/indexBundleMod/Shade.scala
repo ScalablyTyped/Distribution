@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.indexBundleMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "Shade")
 @js.native
-object Shade extends js.Object {
+object Shade extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.shadesMod.Shade with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VariableData extends js.Object {
+trait VariableData extends StObject {
   
   // 值类型 string number boolean
   var valueType: String = js.native
@@ -26,27 +27,15 @@ object VariableData {
   }
   
   @scala.inline
-  implicit class VariableDataOps[Self <: VariableData] (val x: Self) extends AnyVal {
+  implicit class VariableDataMutableBuilder[Self <: VariableData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVariableField(value: String): Self = StObject.set(x, "variableField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValueType(value: String): Self = this.set("valueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariableField(value: String): Self = this.set("variableField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariableType(value: String): Self = this.set("variableType", value.asInstanceOf[js.Any])
+    def setVariableType(value: String): Self = StObject.set(x, "variableType", value.asInstanceOf[js.Any])
   }
 }

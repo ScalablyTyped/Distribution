@@ -1,11 +1,12 @@
 package typings.reactInstantsearchCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightResult[TDoc] extends js.Object {
+trait HighlightResult[TDoc] extends StObject {
   
   /**
     * Contains the searchable attributes within the document and shows which part of the
@@ -26,24 +27,12 @@ object HighlightResult {
   }
   
   @scala.inline
-  implicit class HighlightResultOps[Self <: HighlightResult[_], TDoc] (val x: Self with HighlightResult[TDoc]) extends AnyVal {
+  implicit class HighlightResultMutableBuilder[Self <: HighlightResult[_], TDoc] (val x: Self with HighlightResult[TDoc]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_highlightResult(value: typings.reactInstantsearchCore.mod.HighlightResult[TDoc]): Self = this.set("_highlightResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectID(value: String): Self = this.set("objectID", value.asInstanceOf[js.Any])
+    def set_highlightResult(value: typings.reactInstantsearchCore.mod.HighlightResult[TDoc]): Self = StObject.set(x, "_highlightResult", value.asInstanceOf[js.Any])
   }
 }

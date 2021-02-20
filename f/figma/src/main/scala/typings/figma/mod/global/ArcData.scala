@@ -1,11 +1,12 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcData extends js.Object {
+trait ArcData extends StObject {
   
   val endingAngle: Double = js.native
   
@@ -22,27 +23,15 @@ object ArcData {
   }
   
   @scala.inline
-  implicit class ArcDataOps[Self <: ArcData] (val x: Self) extends AnyVal {
+  implicit class ArcDataMutableBuilder[Self <: ArcData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndingAngle(value: Double): Self = StObject.set(x, "endingAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndingAngle(value: Double): Self = this.set("endingAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInnerRadius(value: Double): Self = this.set("innerRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartingAngle(value: Double): Self = this.set("startingAngle", value.asInstanceOf[js.Any])
+    def setStartingAngle(value: Double): Self = StObject.set(x, "startingAngle", value.asInstanceOf[js.Any])
   }
 }

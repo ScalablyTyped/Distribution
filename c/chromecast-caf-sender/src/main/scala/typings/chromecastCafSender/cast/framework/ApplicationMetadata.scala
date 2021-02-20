@@ -1,12 +1,13 @@
 package typings.chromecastCafSender.cast.framework
 
 import typings.chrome.chrome.cast.Image
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationMetadata extends js.Object {
+trait ApplicationMetadata extends StObject {
   
   var applicationId: String = js.native
   
@@ -25,36 +26,24 @@ object ApplicationMetadata {
   }
   
   @scala.inline
-  implicit class ApplicationMetadataOps[Self <: ApplicationMetadata] (val x: Self) extends AnyVal {
+  implicit class ApplicationMetadataMutableBuilder[Self <: ApplicationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationId(value: String): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: Image*): Self = this.set("images", js.Array(value :_*))
+    def setNamespaces(value: js.Array[String]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[Image]): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamespacesVarargs(value: String*): Self = this.set("namespaces", js.Array(value :_*))
-    
-    @scala.inline
-    def setNamespaces(value: js.Array[String]): Self = this.set("namespaces", value.asInstanceOf[js.Any])
+    def setNamespacesVarargs(value: String*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGridData extends js.Object {
+trait IGridData extends StObject {
   
   var AdditionalParams: js.UndefOr[js.Any] = js.native
   
@@ -69,168 +70,156 @@ object IGridData {
   }
   
   @scala.inline
-  implicit class IGridDataOps[Self <: IGridData] (val x: Self) extends AnyVal {
+  implicit class IGridDataMutableBuilder[Self <: IGridData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalParams(value: js.Any): Self = StObject.set(x, "AdditionalParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalParamsUndefined: Self = StObject.set(x, "AdditionalParams", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoFilterEntries(value: js.Any): Self = StObject.set(x, "AutoFilterEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: IColumnInfo*): Self = this.set("Columns", js.Array(value :_*))
+    def setAutoFilterEntriesUndefined: Self = StObject.set(x, "AutoFilterEntries", js.undefined)
     
     @scala.inline
-    def setColumns(value: js.Array[IColumnInfo]): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    def setAutoFilterState(value: js.Any): Self = StObject.set(x, "AutoFilterState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: IFieldInfo*): Self = this.set("Fields", js.Array(value :_*))
+    def setAutoFilterStateUndefined: Self = StObject.set(x, "AutoFilterState", js.undefined)
     
     @scala.inline
-    def setFields(value: js.Array[IFieldInfo]): Self = this.set("Fields", value.asInstanceOf[js.Any])
+    def setAutoFilterableColumns(value: Boolean): Self = StObject.set(x, "AutoFilterableColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizedTableVarargs(value: js.Any*): Self = this.set("LocalizedTable", js.Array(value :_*))
+    def setAutoFilterableColumnsUndefined: Self = StObject.set(x, "AutoFilterableColumns", js.undefined)
     
     @scala.inline
-    def setLocalizedTable(value: js.Array[_]): Self = this.set("LocalizedTable", value.asInstanceOf[js.Any])
+    def setCellStyles(value: js.Any): Self = StObject.set(x, "CellStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaData(value: IGridMetadata): Self = this.set("MetaData", value.asInstanceOf[js.Any])
+    def setCellStylesUndefined: Self = StObject.set(x, "CellStyles", js.undefined)
     
     @scala.inline
-    def setUnlocalizedTableVarargs(value: js.Any*): Self = this.set("UnlocalizedTable", js.Array(value :_*))
+    def setColumns(value: js.Array[IColumnInfo]): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlocalizedTable(value: js.Array[_]): Self = this.set("UnlocalizedTable", value.asInstanceOf[js.Any])
+    def setColumnsVarargs(value: IColumnInfo*): Self = StObject.set(x, "Columns", js.Array(value :_*))
     
     @scala.inline
-    def setViewInfoVarargs(value: js.Any*): Self = this.set("ViewInfo", js.Array(value :_*))
+    def setFields(value: js.Array[IFieldInfo]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewInfo(value: js.Array[_]): Self = this.set("ViewInfo", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: IFieldInfo*): Self = StObject.set(x, "Fields", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalParams(value: js.Any): Self = this.set("AdditionalParams", value.asInstanceOf[js.Any])
+    def setGanttInfo(value: js.Any): Self = StObject.set(x, "GanttInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdditionalParams: Self = this.set("AdditionalParams", js.undefined)
+    def setGanttInfoUndefined: Self = StObject.set(x, "GanttInfo", js.undefined)
     
     @scala.inline
-    def setAutoFilterEntries(value: js.Any): Self = this.set("AutoFilterEntries", value.asInstanceOf[js.Any])
+    def setGroupingGridRowStyleIds(value: js.Array[_]): Self = StObject.set(x, "GroupingGridRowStyleIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoFilterEntries: Self = this.set("AutoFilterEntries", js.undefined)
+    def setGroupingGridRowStyleIdsUndefined: Self = StObject.set(x, "GroupingGridRowStyleIds", js.undefined)
     
     @scala.inline
-    def setAutoFilterState(value: js.Any): Self = this.set("AutoFilterState", value.asInstanceOf[js.Any])
+    def setGroupingGridRowStyleIdsVarargs(value: js.Any*): Self = StObject.set(x, "GroupingGridRowStyleIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoFilterState: Self = this.set("AutoFilterState", js.undefined)
+    def setHierarchyState(value: js.Any): Self = StObject.set(x, "HierarchyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFilterableColumns(value: Boolean): Self = this.set("AutoFilterableColumns", value.asInstanceOf[js.Any])
+    def setHierarchyStateUndefined: Self = StObject.set(x, "HierarchyState", js.undefined)
     
     @scala.inline
-    def deleteAutoFilterableColumns: Self = this.set("AutoFilterableColumns", js.undefined)
+    def setLocalizedTable(value: js.Array[_]): Self = StObject.set(x, "LocalizedTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellStyles(value: js.Any): Self = this.set("CellStyles", value.asInstanceOf[js.Any])
+    def setLocalizedTableVarargs(value: js.Any*): Self = StObject.set(x, "LocalizedTable", js.Array(value :_*))
     
     @scala.inline
-    def deleteCellStyles: Self = this.set("CellStyles", js.undefined)
+    def setLookupTableInfo(value: js.Array[ILookupTableInfo]): Self = StObject.set(x, "LookupTableInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGanttInfo(value: js.Any): Self = this.set("GanttInfo", value.asInstanceOf[js.Any])
+    def setLookupTableInfoUndefined: Self = StObject.set(x, "LookupTableInfo", js.undefined)
     
     @scala.inline
-    def deleteGanttInfo: Self = this.set("GanttInfo", js.undefined)
+    def setLookupTableInfoVarargs(value: ILookupTableInfo*): Self = StObject.set(x, "LookupTableInfo", js.Array(value :_*))
     
     @scala.inline
-    def setGroupingGridRowStyleIdsVarargs(value: js.Any*): Self = this.set("GroupingGridRowStyleIds", js.Array(value :_*))
+    def setMetaData(value: IGridMetadata): Self = StObject.set(x, "MetaData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupingGridRowStyleIds(value: js.Array[_]): Self = this.set("GroupingGridRowStyleIds", value.asInstanceOf[js.Any])
+    def setMultiValueSeparator(value: String): Self = StObject.set(x, "MultiValueSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupingGridRowStyleIds: Self = this.set("GroupingGridRowStyleIds", js.undefined)
+    def setMultiValueSeparatorUndefined: Self = StObject.set(x, "MultiValueSeparator", js.undefined)
     
     @scala.inline
-    def setHierarchyState(value: js.Any): Self = this.set("HierarchyState", value.asInstanceOf[js.Any])
+    def setPaneLayout(value: PaneLayout): Self = StObject.set(x, "PaneLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHierarchyState: Self = this.set("HierarchyState", js.undefined)
+    def setPaneLayoutUndefined: Self = StObject.set(x, "PaneLayout", js.undefined)
     
     @scala.inline
-    def setLookupTableInfoVarargs(value: ILookupTableInfo*): Self = this.set("LookupTableInfo", js.Array(value :_*))
+    def setPivotedColumns(value: js.Array[ColumnInfo]): Self = StObject.set(x, "PivotedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookupTableInfo(value: js.Array[ILookupTableInfo]): Self = this.set("LookupTableInfo", value.asInstanceOf[js.Any])
+    def setPivotedColumnsUndefined: Self = StObject.set(x, "PivotedColumns", js.undefined)
     
     @scala.inline
-    def deleteLookupTableInfo: Self = this.set("LookupTableInfo", js.undefined)
+    def setPivotedColumnsVarargs(value: ColumnInfo*): Self = StObject.set(x, "PivotedColumns", js.Array(value :_*))
     
     @scala.inline
-    def setMultiValueSeparator(value: String): Self = this.set("MultiValueSeparator", value.asInstanceOf[js.Any])
+    def setRecordCount(value: Double): Self = StObject.set(x, "RecordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiValueSeparator: Self = this.set("MultiValueSeparator", js.undefined)
+    def setRecordCountUndefined: Self = StObject.set(x, "RecordCount", js.undefined)
     
     @scala.inline
-    def setPaneLayout(value: PaneLayout): Self = this.set("PaneLayout", value.asInstanceOf[js.Any])
+    def setSortState(value: js.Array[_]): Self = StObject.set(x, "SortState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaneLayout: Self = this.set("PaneLayout", js.undefined)
+    def setSortStateUndefined: Self = StObject.set(x, "SortState", js.undefined)
     
     @scala.inline
-    def setPivotedColumnsVarargs(value: ColumnInfo*): Self = this.set("PivotedColumns", js.Array(value :_*))
+    def setSortStateVarargs(value: js.Any*): Self = StObject.set(x, "SortState", js.Array(value :_*))
     
     @scala.inline
-    def setPivotedColumns(value: js.Array[ColumnInfo]): Self = this.set("PivotedColumns", value.asInstanceOf[js.Any])
+    def setTopRecord(value: Double): Self = StObject.set(x, "TopRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePivotedColumns: Self = this.set("PivotedColumns", js.undefined)
+    def setTopRecordUndefined: Self = StObject.set(x, "TopRecord", js.undefined)
     
     @scala.inline
-    def setRecordCount(value: Double): Self = this.set("RecordCount", value.asInstanceOf[js.Any])
+    def setUnfilteredHierarchy(value: js.Any): Self = StObject.set(x, "UnfilteredHierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecordCount: Self = this.set("RecordCount", js.undefined)
+    def setUnfilteredHierarchyUndefined: Self = StObject.set(x, "UnfilteredHierarchy", js.undefined)
     
     @scala.inline
-    def setSortStateVarargs(value: js.Any*): Self = this.set("SortState", js.Array(value :_*))
+    def setUnlocalizedTable(value: js.Array[_]): Self = StObject.set(x, "UnlocalizedTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortState(value: js.Array[_]): Self = this.set("SortState", value.asInstanceOf[js.Any])
+    def setUnlocalizedTableVarargs(value: js.Any*): Self = StObject.set(x, "UnlocalizedTable", js.Array(value :_*))
     
     @scala.inline
-    def deleteSortState: Self = this.set("SortState", js.undefined)
+    def setViewDepKeys(value: js.Array[_]): Self = StObject.set(x, "ViewDepKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopRecord(value: Double): Self = this.set("TopRecord", value.asInstanceOf[js.Any])
+    def setViewDepKeysUndefined: Self = StObject.set(x, "ViewDepKeys", js.undefined)
     
     @scala.inline
-    def deleteTopRecord: Self = this.set("TopRecord", js.undefined)
+    def setViewDepKeysVarargs(value: js.Any*): Self = StObject.set(x, "ViewDepKeys", js.Array(value :_*))
     
     @scala.inline
-    def setUnfilteredHierarchy(value: js.Any): Self = this.set("UnfilteredHierarchy", value.asInstanceOf[js.Any])
+    def setViewInfo(value: js.Array[_]): Self = StObject.set(x, "ViewInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnfilteredHierarchy: Self = this.set("UnfilteredHierarchy", js.undefined)
-    
-    @scala.inline
-    def setViewDepKeysVarargs(value: js.Any*): Self = this.set("ViewDepKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setViewDepKeys(value: js.Array[_]): Self = this.set("ViewDepKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewDepKeys: Self = this.set("ViewDepKeys", js.undefined)
+    def setViewInfoVarargs(value: js.Any*): Self = StObject.set(x, "ViewInfo", js.Array(value :_*))
   }
 }

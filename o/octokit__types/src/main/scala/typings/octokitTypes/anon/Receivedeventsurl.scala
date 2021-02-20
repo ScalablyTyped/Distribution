@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Receivedeventsurl extends js.Object {
+trait Receivedeventsurl extends StObject {
   
   var avatar_url: String = js.native
   
@@ -42,42 +43,30 @@ object Receivedeventsurl {
   }
   
   @scala.inline
-  implicit class ReceivedeventsurlOps[Self <: Receivedeventsurl] (val x: Self) extends AnyVal {
+  implicit class ReceivedeventsurlMutableBuilder[Self <: Receivedeventsurl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGravatar_id(value: String): Self = StObject.set(x, "gravatar_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatar_url(value: String): Self = this.set("avatar_url", value.asInstanceOf[js.Any])
+    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravatar_id(value: String): Self = this.set("gravatar_id", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setReceived_events_url(value: String): Self = StObject.set(x, "received_events_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceived_events_url(value: String): Self = this.set("received_events_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

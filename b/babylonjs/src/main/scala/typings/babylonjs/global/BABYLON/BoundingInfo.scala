@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.DeepImmutable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,9 @@ class BoundingInfo protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.BoundingInfo")
-@js.native
-object BoundingInfo extends js.Object {
+object BoundingInfo {
   
+  @JSGlobal("BABYLON.BoundingInfo.TmpVector3")
+  @js.native
   val TmpVector3: js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.activexShdocvw.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Frame extends js.Object {
+trait Frame extends StObject {
   
   val Frame: js.Any = js.native
   
@@ -26,33 +27,21 @@ object Frame {
   }
   
   @scala.inline
-  implicit class FrameOps[Self <: Frame] (val x: Self) extends AnyVal {
+  implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrame(value: js.Any): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedirectURL(value: js.Any): Self = StObject.set(x, "RedirectURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame(value: js.Any): Self = this.set("Frame", value.asInstanceOf[js.Any])
+    def setStartURL(value: js.Any): Self = StObject.set(x, "StartURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectURL(value: js.Any): Self = this.set("RedirectURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartURL(value: js.Any): Self = this.set("StartURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: js.Any): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPDisp(value: js.Any): Self = this.set("pDisp", value.asInstanceOf[js.Any])
+    def setStatusCode(value: js.Any): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
   }
 }

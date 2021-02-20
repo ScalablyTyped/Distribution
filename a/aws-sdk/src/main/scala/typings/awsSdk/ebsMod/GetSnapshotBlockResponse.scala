@@ -1,11 +1,12 @@
 package typings.awsSdk.ebsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSnapshotBlockResponse extends js.Object {
+trait GetSnapshotBlockResponse extends StObject {
   
   /**
     * The data content of the block.
@@ -36,42 +37,30 @@ object GetSnapshotBlockResponse {
   }
   
   @scala.inline
-  implicit class GetSnapshotBlockResponseOps[Self <: GetSnapshotBlockResponse] (val x: Self) extends AnyVal {
+  implicit class GetSnapshotBlockResponseMutableBuilder[Self <: GetSnapshotBlockResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockData(value: BlockData): Self = StObject.set(x, "BlockData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockDataUndefined: Self = StObject.set(x, "BlockData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockData(value: BlockData): Self = this.set("BlockData", value.asInstanceOf[js.Any])
+    def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockData: Self = this.set("BlockData", js.undefined)
+    def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
     
     @scala.inline
-    def setChecksum(value: Checksum): Self = this.set("Checksum", value.asInstanceOf[js.Any])
+    def setChecksumUndefined: Self = StObject.set(x, "Checksum", js.undefined)
     
     @scala.inline
-    def deleteChecksum: Self = this.set("Checksum", js.undefined)
+    def setDataLength(value: DataLength): Self = StObject.set(x, "DataLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = this.set("ChecksumAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChecksumAlgorithm: Self = this.set("ChecksumAlgorithm", js.undefined)
-    
-    @scala.inline
-    def setDataLength(value: DataLength): Self = this.set("DataLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataLength: Self = this.set("DataLength", js.undefined)
+    def setDataLengthUndefined: Self = StObject.set(x, "DataLength", js.undefined)
   }
 }

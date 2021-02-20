@@ -1,12 +1,13 @@
 package typings.ionicAngular
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/util/util", JSImport.Namespace)
-@js.native
-object utilMod extends js.Object {
+object utilMod {
   
+  @JSImport("@ionic/angular/util/util", "raf")
+  @js.native
   def raf(h: js.Any): js.Any = js.native
 }

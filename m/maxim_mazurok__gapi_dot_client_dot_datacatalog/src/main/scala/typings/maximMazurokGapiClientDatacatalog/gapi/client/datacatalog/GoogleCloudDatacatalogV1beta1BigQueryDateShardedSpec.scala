@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec extends js.Object {
+trait GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec extends StObject {
   
   /**
     * Output only. The Data Catalog resource name of the dataset entry the current table belongs to, for example,
@@ -28,36 +29,24 @@ object GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpecOps[Self <: GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpecMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShardCount(value: String): Self = StObject.set(x, "shardCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: String): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setShardCountUndefined: Self = StObject.set(x, "shardCount", js.undefined)
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setTablePrefix(value: String): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShardCount(value: String): Self = this.set("shardCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShardCount: Self = this.set("shardCount", js.undefined)
-    
-    @scala.inline
-    def setTablePrefix(value: String): Self = this.set("tablePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTablePrefix: Self = this.set("tablePrefix", js.undefined)
+    def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
   }
 }

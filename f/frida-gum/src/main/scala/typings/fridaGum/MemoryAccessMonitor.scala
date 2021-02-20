@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * platforms too, so if you find this useful and would like to help out, please
   * get in touch.
   */
-@JSGlobal("MemoryAccessMonitor")
-@js.native
-object MemoryAccessMonitor extends js.Object
+object MemoryAccessMonitor

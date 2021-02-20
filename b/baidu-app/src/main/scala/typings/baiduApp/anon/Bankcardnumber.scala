@@ -1,19 +1,20 @@
 package typings.baiduApp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bankcardnumber extends js.Object {
+trait Bankcardnumber extends StObject {
   
   // 返回结果
   var bank_card_number: String = js.native
   
-   // 银行名，不能识别时为空 。
+  // 银行名，不能识别时为空 。
   var bank_card_type: String = js.native
   
-   // 银行卡卡号
+  // 银行卡卡号
   var bank_name: String = js.native
 }
 object Bankcardnumber {
@@ -25,27 +26,15 @@ object Bankcardnumber {
   }
   
   @scala.inline
-  implicit class BankcardnumberOps[Self <: Bankcardnumber] (val x: Self) extends AnyVal {
+  implicit class BankcardnumberMutableBuilder[Self <: Bankcardnumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBank_card_number(value: String): Self = StObject.set(x, "bank_card_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBank_card_type(value: String): Self = StObject.set(x, "bank_card_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBank_card_number(value: String): Self = this.set("bank_card_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBank_card_type(value: String): Self = this.set("bank_card_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBank_name(value: String): Self = this.set("bank_name", value.asInstanceOf[js.Any])
+    def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
   }
 }

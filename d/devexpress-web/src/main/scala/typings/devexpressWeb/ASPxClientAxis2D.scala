@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,33 +43,21 @@ object ASPxClientAxis2D {
   }
   
   @scala.inline
-  implicit class ASPxClientAxis2DOps[Self <: ASPxClientAxis2D] (val x: Self) extends AnyVal {
+  implicit class ASPxClientAxis2DMutableBuilder[Self <: ASPxClientAxis2D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisTitle(value: ASPxClientAxisTitle): Self = StObject.set(x, "axisTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstantLines(value: js.Array[ASPxClientConstantLine]): Self = StObject.set(x, "constantLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstantLinesVarargs(value: ASPxClientConstantLine*): Self = StObject.set(x, "constantLines", js.Array(value :_*))
     
     @scala.inline
-    def setAxisTitle(value: ASPxClientAxisTitle): Self = this.set("axisTitle", value.asInstanceOf[js.Any])
+    def setStrips(value: js.Array[ASPxClientStrip]): Self = StObject.set(x, "strips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstantLinesVarargs(value: ASPxClientConstantLine*): Self = this.set("constantLines", js.Array(value :_*))
-    
-    @scala.inline
-    def setConstantLines(value: js.Array[ASPxClientConstantLine]): Self = this.set("constantLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStripsVarargs(value: ASPxClientStrip*): Self = this.set("strips", js.Array(value :_*))
-    
-    @scala.inline
-    def setStrips(value: js.Array[ASPxClientStrip]): Self = this.set("strips", value.asInstanceOf[js.Any])
+    def setStripsVarargs(value: ASPxClientStrip*): Self = StObject.set(x, "strips", js.Array(value :_*))
   }
 }

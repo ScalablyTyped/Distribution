@@ -1,11 +1,12 @@
 package typings.aqb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThenRet extends js.Object {
+trait ThenRet extends StObject {
   
   def `else`(y: js.Any): TernaryOperation = js.native
   
@@ -27,27 +28,15 @@ object ThenRet {
   }
   
   @scala.inline
-  implicit class ThenRetOps[Self <: ThenRet] (val x: Self) extends AnyVal {
+  implicit class ThenRetMutableBuilder[Self <: ThenRet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElse(value: js.Any => TernaryOperation): Self = StObject.set(x, "else", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElse_(value: TernaryOperation): Self = StObject.set(x, "else_", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElse(value: js.Any => TernaryOperation): Self = this.set("else", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setElse_(value: TernaryOperation): Self = this.set("else_", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOtherwise(value: js.Any => TernaryOperation): Self = this.set("otherwise", js.Any.fromFunction1(value))
+    def setOtherwise(value: js.Any => TernaryOperation): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
   }
 }

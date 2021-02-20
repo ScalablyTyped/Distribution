@@ -11,6 +11,7 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgumen
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,16 +62,20 @@ class ScrollContainer protected () extends Widget {
   
   def width_=(newValue: Double): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer")
-@js.native
-object ScrollContainer extends js.Object {
+object ScrollContainer {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new ScrollContainer instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.create")
+  @js.native
   def create(model: IModel): ScrollContainer = js.native
   
   /**
@@ -81,6 +86,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInBuildingBlockUnderWidget")
+  @js.native
   def createInBuildingBlockUnderWidget(container: BuildingBlock): ScrollContainer = js.native
   
   /**
@@ -91,6 +99,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInBuildingBlockUnderWidgets")
+  @js.native
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): ScrollContainer = js.native
   
   /**
@@ -101,6 +112,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): ScrollContainer = js.native
   
   /**
@@ -111,6 +125,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDataViewUnderFooterWidgets")
+  @js.native
   def createInDataViewUnderFooterWidgets(container: DataView): ScrollContainer = js.native
   
   /**
@@ -121,6 +138,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): ScrollContainer = js.native
   
   /**
@@ -131,6 +151,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDataViewUnderWidgets")
+  @js.native
   def createInDataViewUnderWidgets(container: DataView): ScrollContainer = js.native
   
   /**
@@ -141,6 +164,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): ScrollContainer = js.native
   
   /**
@@ -151,6 +177,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInDivContainerUnderWidgets")
+  @js.native
   def createInDivContainerUnderWidgets(container: DivContainer): ScrollContainer = js.native
   
   /**
@@ -161,6 +190,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): ScrollContainer = js.native
   
   /**
@@ -171,6 +203,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInGroupBoxUnderWidgets")
+  @js.native
   def createInGroupBoxUnderWidgets(container: GroupBox): ScrollContainer = js.native
   
   /**
@@ -181,6 +216,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): ScrollContainer = js.native
   
   /**
@@ -191,6 +229,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInHeaderUnderLeftWidgets")
+  @js.native
   def createInHeaderUnderLeftWidgets(container: Header): ScrollContainer = js.native
   
   /**
@@ -201,6 +242,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): ScrollContainer = js.native
   
   /**
@@ -211,6 +255,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInHeaderUnderRightWidgets")
+  @js.native
   def createInHeaderUnderRightWidgets(container: Header): ScrollContainer = js.native
   
   /**
@@ -221,6 +268,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ScrollContainer = js.native
   
   /**
@@ -231,6 +281,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ScrollContainer = js.native
   
   /**
@@ -241,6 +294,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ScrollContainer = js.native
   
   /**
@@ -251,6 +307,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutGridColumnUnderWidgets")
+  @js.native
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ScrollContainer = js.native
   
   /**
@@ -261,6 +320,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): ScrollContainer = js.native
   
   /**
@@ -271,6 +333,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInLayoutUnderWidgets")
+  @js.native
   def createInLayoutUnderWidgets(container: Layout): ScrollContainer = js.native
   
   /**
@@ -281,6 +346,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): ScrollContainer = js.native
   
   /**
@@ -291,6 +359,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInListViewTemplateUnderWidgets")
+  @js.native
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ScrollContainer = js.native
   
   /**
@@ -301,6 +372,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): ScrollContainer = js.native
   
   /**
@@ -311,6 +385,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInListViewUnderWidgets")
+  @js.native
   def createInListViewUnderWidgets(container: ListView): ScrollContainer = js.native
   
   /**
@@ -321,6 +398,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.1.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInMasterDetailRegionUnderWidget")
+  @js.native
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ScrollContainer = js.native
   
   /**
@@ -331,6 +411,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ScrollContainer = js.native
   
   /**
@@ -341,6 +424,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutContentUnderSidebarWidgets")
+  @js.native
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ScrollContainer = js.native
   
   /**
@@ -351,6 +437,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutContentUnderWidgets")
+  @js.native
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ScrollContainer = js.native
   
   /**
@@ -361,6 +450,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.22.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutUnderHeaderWidget")
+  @js.native
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ScrollContainer = js.native
   
   /**
@@ -371,6 +463,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNativeLayoutUnderWidgets")
+  @js.native
   def createInNativeLayoutUnderWidgets(container: NativeLayout): ScrollContainer = js.native
   
   /**
@@ -381,6 +476,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): ScrollContainer = js.native
   
   /**
@@ -391,6 +489,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInNavigationListItemUnderWidgets")
+  @js.native
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): ScrollContainer = js.native
   
   /**
@@ -401,6 +502,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInReportPaneUnderParameterWidget")
+  @js.native
   def createInReportPaneUnderParameterWidget(container: ReportPane): ScrollContainer = js.native
   
   /**
@@ -411,6 +515,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInReportPaneUnderReportWidget")
+  @js.native
   def createInReportPaneUnderReportWidget(container: ReportPane): ScrollContainer = js.native
   
   /**
@@ -421,6 +528,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ScrollContainer = js.native
   
   /**
@@ -431,6 +541,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInScrollContainerRegionUnderWidgets")
+  @js.native
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ScrollContainer = js.native
   
   /**
@@ -441,6 +554,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): ScrollContainer = js.native
   
   /**
@@ -451,6 +567,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSnippetUnderWidgets")
+  @js.native
   def createInSnippetUnderWidgets(container: Snippet): ScrollContainer = js.native
   
   /**
@@ -461,6 +580,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): ScrollContainer = js.native
   
   /**
@@ -471,6 +593,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSplitPaneUnderFirstWidgets")
+  @js.native
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): ScrollContainer = js.native
   
   /**
@@ -481,6 +606,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): ScrollContainer = js.native
   
   /**
@@ -491,6 +619,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInSplitPaneUnderSecondWidgets")
+  @js.native
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): ScrollContainer = js.native
   
   /**
@@ -501,6 +632,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): ScrollContainer = js.native
   
   /**
@@ -511,6 +645,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTabPageUnderWidgets")
+  @js.native
   def createInTabPageUnderWidgets(container: TabPage): ScrollContainer = js.native
   
   /**
@@ -521,6 +658,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): ScrollContainer = js.native
   
   /**
@@ -531,6 +671,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTableCellUnderWidgets")
+  @js.native
   def createInTableCellUnderWidgets(container: TableCell): ScrollContainer = js.native
   
   /**
@@ -541,6 +684,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ScrollContainer = js.native
   
   /**
@@ -551,6 +697,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInTemplateGridContentsUnderWidgets")
+  @js.native
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ScrollContainer = js.native
   
   /**
@@ -561,6 +710,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): ScrollContainer = js.native
   
   /**
@@ -571,6 +723,9 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInWebLayoutContentUnderWidgets")
+  @js.native
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ScrollContainer = js.native
   
   /**
@@ -581,9 +736,22 @@ object ScrollContainer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.2.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.createInWidgetValueUnderWidgets")
+  @js.native
   def createInWidgetValueUnderWidgets(container: WidgetValue): ScrollContainer = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains parameters used to obtain the underlying data for the dashboard item.
   */
 @js.native
-trait ASPxClientDashboardItemRequestUnderlyingDataParameters extends js.Object {
+trait ASPxClientDashboardItemRequestUnderlyingDataParameters extends StObject {
   
   /**
     * Gets or sets axis points used to obtain the underlying data.
@@ -44,36 +45,24 @@ object ASPxClientDashboardItemRequestUnderlyingDataParameters {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardItemRequestUnderlyingDataParametersOps[Self <: ASPxClientDashboardItemRequestUnderlyingDataParameters] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardItemRequestUnderlyingDataParametersMutableBuilder[Self <: ASPxClientDashboardItemRequestUnderlyingDataParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisPoints(value: js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "AxisPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisPointsVarargs(value: ASPxClientDashboardItemDataAxisPoint*): Self = StObject.set(x, "AxisPoints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataMembers(value: js.Array[String]): Self = StObject.set(x, "DataMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisPointsVarargs(value: ASPxClientDashboardItemDataAxisPoint*): Self = this.set("AxisPoints", js.Array(value :_*))
+    def setDataMembersVarargs(value: String*): Self = StObject.set(x, "DataMembers", js.Array(value :_*))
     
     @scala.inline
-    def setAxisPoints(value: js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = this.set("AxisPoints", value.asInstanceOf[js.Any])
+    def setUniqueValuesByAxisName(value: js.Any): Self = StObject.set(x, "UniqueValuesByAxisName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataMembersVarargs(value: String*): Self = this.set("DataMembers", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataMembers(value: js.Array[String]): Self = this.set("DataMembers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueValuesByAxisName(value: js.Any): Self = this.set("UniqueValuesByAxisName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesByAxisName(value: js.Any): Self = this.set("ValuesByAxisName", value.asInstanceOf[js.Any])
+    def setValuesByAxisName(value: js.Any): Self = StObject.set(x, "ValuesByAxisName", value.asInstanceOf[js.Any])
   }
 }

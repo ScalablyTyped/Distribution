@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueueInsertItemsRequest extends js.Object {
+trait QueueInsertItemsRequest extends StObject {
   
   var customData: js.Object = js.native
   
@@ -22,30 +23,18 @@ object QueueInsertItemsRequest {
   }
   
   @scala.inline
-  implicit class QueueInsertItemsRequestOps[Self <: QueueInsertItemsRequest] (val x: Self) extends AnyVal {
+  implicit class QueueInsertItemsRequestMutableBuilder[Self <: QueueInsertItemsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertBefore(value: Double): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[QueueItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomData(value: js.Object): Self = this.set("customData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsertBefore(value: Double): Self = this.set("insertBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: QueueItem*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[QueueItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: QueueItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

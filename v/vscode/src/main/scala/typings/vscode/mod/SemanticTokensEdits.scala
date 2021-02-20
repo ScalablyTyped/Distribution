@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "SemanticTokensEdits")
 @js.native
-class SemanticTokensEdits protected () extends js.Object {
+class SemanticTokensEdits protected () extends StObject {
   def this(edits: js.Array[SemanticTokensEdit]) = this()
   def this(edits: js.Array[SemanticTokensEdit], resultId: String) = this()
   

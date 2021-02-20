@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Results extends js.Object {
+trait Results extends StObject {
   
   /** Path to the artifact manifest. Only populated when artifacts are uploaded. */
   var artifactManifest: js.UndefOr[String] = js.native
@@ -37,63 +38,51 @@ object Results {
   }
   
   @scala.inline
-  implicit class ResultsOps[Self <: Results] (val x: Self) extends AnyVal {
+  implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactManifest(value: String): Self = StObject.set(x, "artifactManifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactManifestUndefined: Self = StObject.set(x, "artifactManifest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtifactTiming(value: TimeSpan): Self = StObject.set(x, "artifactTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactManifest(value: String): Self = this.set("artifactManifest", value.asInstanceOf[js.Any])
+    def setArtifactTimingUndefined: Self = StObject.set(x, "artifactTiming", js.undefined)
     
     @scala.inline
-    def deleteArtifactManifest: Self = this.set("artifactManifest", js.undefined)
+    def setBuildStepImages(value: js.Array[String]): Self = StObject.set(x, "buildStepImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactTiming(value: TimeSpan): Self = this.set("artifactTiming", value.asInstanceOf[js.Any])
+    def setBuildStepImagesUndefined: Self = StObject.set(x, "buildStepImages", js.undefined)
     
     @scala.inline
-    def deleteArtifactTiming: Self = this.set("artifactTiming", js.undefined)
+    def setBuildStepImagesVarargs(value: String*): Self = StObject.set(x, "buildStepImages", js.Array(value :_*))
     
     @scala.inline
-    def setBuildStepImagesVarargs(value: String*): Self = this.set("buildStepImages", js.Array(value :_*))
+    def setBuildStepOutputs(value: js.Array[String]): Self = StObject.set(x, "buildStepOutputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildStepImages(value: js.Array[String]): Self = this.set("buildStepImages", value.asInstanceOf[js.Any])
+    def setBuildStepOutputsUndefined: Self = StObject.set(x, "buildStepOutputs", js.undefined)
     
     @scala.inline
-    def deleteBuildStepImages: Self = this.set("buildStepImages", js.undefined)
+    def setBuildStepOutputsVarargs(value: String*): Self = StObject.set(x, "buildStepOutputs", js.Array(value :_*))
     
     @scala.inline
-    def setBuildStepOutputsVarargs(value: String*): Self = this.set("buildStepOutputs", js.Array(value :_*))
+    def setImages(value: js.Array[BuiltImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildStepOutputs(value: js.Array[String]): Self = this.set("buildStepOutputs", value.asInstanceOf[js.Any])
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def deleteBuildStepOutputs: Self = this.set("buildStepOutputs", js.undefined)
+    def setImagesVarargs(value: BuiltImage*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setImagesVarargs(value: BuiltImage*): Self = this.set("images", js.Array(value :_*))
+    def setNumArtifacts(value: String): Self = StObject.set(x, "numArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[BuiltImage]): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
-    
-    @scala.inline
-    def setNumArtifacts(value: String): Self = this.set("numArtifacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumArtifacts: Self = this.set("numArtifacts", js.undefined)
+    def setNumArtifactsUndefined: Self = StObject.set(x, "numArtifacts", js.undefined)
   }
 }

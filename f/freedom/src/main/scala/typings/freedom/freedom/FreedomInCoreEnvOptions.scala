@@ -1,15 +1,16 @@
 package typings.freedom.freedom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreedomInCoreEnvOptions extends js.Object {
+trait FreedomInCoreEnvOptions extends StObject {
   
   var debug: js.UndefOr[String] = js.native
   
-    // debug level
+  // debug level
   var logger: js.UndefOr[String] = js.native
 }
 object FreedomInCoreEnvOptions {
@@ -21,30 +22,18 @@ object FreedomInCoreEnvOptions {
   }
   
   @scala.inline
-  implicit class FreedomInCoreEnvOptionsOps[Self <: FreedomInCoreEnvOptions] (val x: Self) extends AnyVal {
+  implicit class FreedomInCoreEnvOptionsMutableBuilder[Self <: FreedomInCoreEnvOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogger(value: String): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: String): Self = this.set("debug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
-    
-    @scala.inline
-    def setLogger(value: String): Self = this.set("logger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
   }
 }

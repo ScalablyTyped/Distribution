@@ -135,6 +135,7 @@ import typings.activexPowerpoint.activexPowerpointNumbers.`9470064`
 import typings.activexPowerpoint.activexPowerpointNumbers.`9498256`
 import typings.activexPowerpoint.activexPowerpointNumbers.`9639167`
 import typings.activexPowerpoint.activexPowerpointNumbers.`9662683`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -276,7 +277,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexPowerpoint.activexPowerpointNumbers.`65535`
   - typings.activexPowerpoint.activexPowerpointNumbers.`3329434`
 */
-trait XlRgbColor extends js.Object
+trait XlRgbColor extends StObject
 object XlRgbColor {
   
   @scala.inline

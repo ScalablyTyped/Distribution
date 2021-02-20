@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelTime extends js.Object {
+trait CancelTime extends StObject {
   
   var cancelTime: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object CancelTime {
   }
   
   @scala.inline
-  implicit class CancelTimeOps[Self <: CancelTime] (val x: Self) extends AnyVal {
+  implicit class CancelTimeMutableBuilder[Self <: CancelTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelTimeUndefined: Self = StObject.set(x, "cancelTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentReleaseInfo(value: AmountInMicros): Self = StObject.set(x, "currentReleaseInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelTime(value: String): Self = this.set("cancelTime", value.asInstanceOf[js.Any])
+    def setCurrentReleaseInfoUndefined: Self = StObject.set(x, "currentReleaseInfo", js.undefined)
     
     @scala.inline
-    def deleteCancelTime: Self = this.set("cancelTime", js.undefined)
+    def setNextReleaseInfo(value: AmountInMicros): Self = StObject.set(x, "nextReleaseInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentReleaseInfo(value: AmountInMicros): Self = this.set("currentReleaseInfo", value.asInstanceOf[js.Any])
+    def setNextReleaseInfoUndefined: Self = StObject.set(x, "nextReleaseInfo", js.undefined)
     
     @scala.inline
-    def deleteCurrentReleaseInfo: Self = this.set("currentReleaseInfo", js.undefined)
+    def setSeriesSubscriptionType(value: String): Self = StObject.set(x, "seriesSubscriptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextReleaseInfo(value: AmountInMicros): Self = this.set("nextReleaseInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextReleaseInfo: Self = this.set("nextReleaseInfo", js.undefined)
-    
-    @scala.inline
-    def setSeriesSubscriptionType(value: String): Self = this.set("seriesSubscriptionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeriesSubscriptionType: Self = this.set("seriesSubscriptionType", js.undefined)
+    def setSeriesSubscriptionTypeUndefined: Self = StObject.set(x, "seriesSubscriptionType", js.undefined)
   }
 }

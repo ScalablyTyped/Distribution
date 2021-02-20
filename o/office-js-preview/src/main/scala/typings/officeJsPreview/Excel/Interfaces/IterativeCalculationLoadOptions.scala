@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait IterativeCalculationLoadOptions extends js.Object {
+trait IterativeCalculationLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -52,42 +53,30 @@ object IterativeCalculationLoadOptions {
   }
   
   @scala.inline
-  implicit class IterativeCalculationLoadOptionsOps[Self <: IterativeCalculationLoadOptions] (val x: Self) extends AnyVal {
+  implicit class IterativeCalculationLoadOptionsMutableBuilder[Self <: IterativeCalculationLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setMaxChange(value: Boolean): Self = StObject.set(x, "maxChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMaxChangeUndefined: Self = StObject.set(x, "maxChange", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setMaxIteration(value: Boolean): Self = StObject.set(x, "maxIteration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxChange(value: Boolean): Self = this.set("maxChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxChange: Self = this.set("maxChange", js.undefined)
-    
-    @scala.inline
-    def setMaxIteration(value: Boolean): Self = this.set("maxIteration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxIteration: Self = this.set("maxIteration", js.undefined)
+    def setMaxIterationUndefined: Self = StObject.set(x, "maxIteration", js.undefined)
   }
 }

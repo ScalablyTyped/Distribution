@@ -2,6 +2,7 @@ package typings.qlik.mod
 
 import typings.qlik.qlikStrings.buttongroup
 import typings.qlik.qlikStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,42 +31,30 @@ object CustomPropertyButtonGroup {
   }
   
   @scala.inline
-  implicit class CustomPropertyButtonGroupOps[Self <: CustomPropertyButtonGroup] (val x: Self) extends AnyVal {
+  implicit class CustomPropertyButtonGroupMutableBuilder[Self <: CustomPropertyButtonGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: buttongroup): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setComponent(value: buttongroup): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Array[ButtonGroupOption] | js.Function0[js.Array[ButtonGroupOption]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: string): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setOptionsFunction0(value: () => js.Array[ButtonGroupOption]): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setOptionsVarargs(value: ButtonGroupOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: ButtonGroupOption*): Self = this.set("options", js.Array(value :_*))
-    
-    @scala.inline
-    def setOptionsFunction0(value: () => js.Array[ButtonGroupOption]): Self = this.set("options", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOptions(value: js.Array[ButtonGroupOption] | js.Function0[js.Array[ButtonGroupOption]]): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

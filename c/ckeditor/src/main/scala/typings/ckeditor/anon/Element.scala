@@ -1,12 +1,13 @@
 package typings.ckeditor.anon
 
 import typings.ckeditor.CKEDITOR.dom.element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Element extends js.Object {
+trait Element extends StObject {
   
   var element: typings.ckeditor.CKEDITOR.dom.element = js.native
   
@@ -21,24 +22,12 @@ object Element {
   }
   
   @scala.inline
-  implicit class ElementOps[Self <: Element] (val x: Self) extends AnyVal {
+  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElement(value: element): Self = this.set("element", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: js.Any): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.bootbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootboxLocaleValues extends js.Object {
+trait BootboxLocaleValues extends StObject {
   
   var CANCEL: String = js.native
   
@@ -22,27 +23,15 @@ object BootboxLocaleValues {
   }
   
   @scala.inline
-  implicit class BootboxLocaleValuesOps[Self <: BootboxLocaleValues] (val x: Self) extends AnyVal {
+  implicit class BootboxLocaleValuesMutableBuilder[Self <: BootboxLocaleValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCANCEL(value: String): Self = StObject.set(x, "CANCEL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCONFIRM(value: String): Self = StObject.set(x, "CONFIRM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCANCEL(value: String): Self = this.set("CANCEL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCONFIRM(value: String): Self = this.set("CONFIRM", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOK(value: String): Self = this.set("OK", value.asInstanceOf[js.Any])
+    def setOK(value: String): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
   }
 }

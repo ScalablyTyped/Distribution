@@ -1,11 +1,12 @@
 package typings.sinon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonMock extends js.Object {
+trait SinonMock extends StObject {
   
   /**
     * Overrides obj.method with a mock function and returns it.
@@ -33,27 +34,15 @@ object SinonMock {
   }
   
   @scala.inline
-  implicit class SinonMockOps[Self <: SinonMock] (val x: Self) extends AnyVal {
+  implicit class SinonMockMutableBuilder[Self <: SinonMock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpects(value: String => SinonExpectation): Self = StObject.set(x, "expects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpects(value: String => SinonExpectation): Self = this.set("expects", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRestore(value: () => Unit): Self = this.set("restore", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVerify(value: () => Unit): Self = this.set("verify", js.Any.fromFunction0(value))
+    def setVerify(value: () => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.ioredis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddressFromResponse extends js.Object {
+trait AddressFromResponse extends StObject {
   
   var flags: js.UndefOr[String] = js.native
   
@@ -22,30 +23,18 @@ object AddressFromResponse {
   }
   
   @scala.inline
-  implicit class AddressFromResponseOps[Self <: AddressFromResponse] (val x: Self) extends AnyVal {
+  implicit class AddressFromResponseMutableBuilder[Self <: AddressFromResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlags(value: String): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

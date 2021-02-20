@@ -5,14 +5,14 @@ import typings.pulumiAws.queueMod.QueueState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/mediaconvert", JSImport.Namespace)
-@js.native
-object mediaconvertMod extends js.Object {
+object mediaconvertMod {
   
+  @JSImport("@pulumi/aws/mediaconvert", "Queue")
   @js.native
   class Queue protected ()
     extends typings.pulumiAws.queueMod.Queue {
@@ -29,8 +29,7 @@ object mediaconvertMod extends js.Object {
     def this(name: String, args: QueueArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Queue extends js.Object {
+  object Queue {
     
     /**
       * Get an existing Queue resource's state with the given name, ID, and optional extra
@@ -41,15 +40,25 @@ object mediaconvertMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/mediaconvert", "Queue.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.queueMod.Queue = js.native
+    @JSImport("@pulumi/aws/mediaconvert", "Queue.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.queueMod.Queue = js.native
+    @JSImport("@pulumi/aws/mediaconvert", "Queue.get")
+    @js.native
     def get(name: String, id: Input[ID], state: QueueState): typings.pulumiAws.queueMod.Queue = js.native
+    @JSImport("@pulumi/aws/mediaconvert", "Queue.get")
+    @js.native
     def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): typings.pulumiAws.queueMod.Queue = js.native
     
     /**
       * Returns true if the given object is an instance of Queue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/mediaconvert", "Queue.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediaconvert/queue.Queue */ Boolean = js.native
   }
 }

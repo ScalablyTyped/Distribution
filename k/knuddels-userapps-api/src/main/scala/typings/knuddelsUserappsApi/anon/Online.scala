@@ -1,11 +1,12 @@
 package typings.knuddelsUserappsApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Online extends js.Object {
+trait Online extends StObject {
   
   var ascending: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object Online {
   }
   
   @scala.inline
-  implicit class OnlineOps[Self <: Online] (val x: Self) extends AnyVal {
+  implicit class OnlineMutableBuilder[Self <: Online] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumCount(value: Double): Self = StObject.set(x, "maximumCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscending(value: Boolean): Self = this.set("ascending", value.asInstanceOf[js.Any])
+    def setMaximumCountUndefined: Self = StObject.set(x, "maximumCount", js.undefined)
     
     @scala.inline
-    def deleteAscending: Self = this.set("ascending", js.undefined)
+    def setOnEnd(value: (/* totalCount */ Double, /* key */ String) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMaximumCount(value: Double): Self = this.set("maximumCount", value.asInstanceOf[js.Any])
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
     @scala.inline
-    def deleteMaximumCount: Self = this.set("maximumCount", js.undefined)
+    def setOnStart(value: (/* totalCount */ Double, /* key */ String) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnEnd(value: (/* totalCount */ Double, /* key */ String) => Unit): Self = this.set("onEnd", js.Any.fromFunction2(value))
+    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
     @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
+    def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnStart(value: (/* totalCount */ Double, /* key */ String) => Unit): Self = this.set("onStart", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnStart: Self = this.set("onStart", js.undefined)
-    
-    @scala.inline
-    def setOnline(value: Boolean): Self = this.set("online", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnline: Self = this.set("online", js.undefined)
+    def setOnlineUndefined: Self = StObject.set(x, "online", js.undefined)
   }
 }

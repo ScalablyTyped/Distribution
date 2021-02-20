@@ -1,11 +1,12 @@
 package typings.titanium.Titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Global extends js.Object {
+trait Global extends StObject {
   
   def L(key: String): String = js.native
   def L(key: String, hint: String): String = js.native

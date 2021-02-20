@@ -1,12 +1,13 @@
 package typings.typescriptServices.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "SyntaxKind")
 @js.native
-object SyntaxKind extends js.Object {
+object SyntaxKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.SyntaxKind with Double] = js.native

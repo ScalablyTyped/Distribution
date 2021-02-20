@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for the AllocateQuota method.
   */
 @js.native
-trait SchemaAllocateQuotaResponse extends js.Object {
+trait SchemaAllocateQuotaResponse extends StObject {
   
   /**
     * Indicates the decision of the allocate.
@@ -52,54 +53,42 @@ object SchemaAllocateQuotaResponse {
   }
   
   @scala.inline
-  implicit class SchemaAllocateQuotaResponseOps[Self <: SchemaAllocateQuotaResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAllocateQuotaResponseMutableBuilder[Self <: SchemaAllocateQuotaResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocateErrors(value: js.Array[SchemaQuotaError]): Self = StObject.set(x, "allocateErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocateErrorsUndefined: Self = StObject.set(x, "allocateErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllocateErrorsVarargs(value: SchemaQuotaError*): Self = StObject.set(x, "allocateErrors", js.Array(value :_*))
     
     @scala.inline
-    def setAllocateErrorsVarargs(value: SchemaQuotaError*): Self = this.set("allocateErrors", js.Array(value :_*))
+    def setAllocateInfo(value: SchemaAllocateInfo): Self = StObject.set(x, "allocateInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocateErrors(value: js.Array[SchemaQuotaError]): Self = this.set("allocateErrors", value.asInstanceOf[js.Any])
+    def setAllocateInfoUndefined: Self = StObject.set(x, "allocateInfo", js.undefined)
     
     @scala.inline
-    def deleteAllocateErrors: Self = this.set("allocateErrors", js.undefined)
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocateInfo(value: SchemaAllocateInfo): Self = this.set("allocateInfo", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteAllocateInfo: Self = this.set("allocateInfo", js.undefined)
+    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = StObject.set(x, "quotaMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setQuotaMetricsUndefined: Self = StObject.set(x, "quotaMetrics", js.undefined)
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "quotaMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = this.set("quotaMetrics", js.Array(value :_*))
+    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = this.set("quotaMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuotaMetrics: Self = this.set("quotaMetrics", js.undefined)
-    
-    @scala.inline
-    def setServiceConfigId(value: String): Self = this.set("serviceConfigId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceConfigId: Self = this.set("serviceConfigId", js.undefined)
+    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }
 }

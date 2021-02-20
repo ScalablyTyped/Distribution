@@ -4,12 +4,13 @@ import typings.maximMazurokGapiClientAnalytics.anon.ComparisonValue
 import typings.maximMazurokGapiClientAnalytics.anon.EventConditions
 import typings.maximMazurokGapiClientAnalytics.anon.FirstStepRequired
 import typings.maximMazurokGapiClientAnalytics.anon.Href
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Goal extends js.Object {
+trait Goal extends StObject {
   
   /** Account ID to which this goal belongs. */
   var accountId: js.UndefOr[String] = js.native
@@ -74,126 +75,114 @@ object Goal {
   }
   
   @scala.inline
-  implicit class GoalOps[Self <: Goal] (val x: Self) extends AnyVal {
+  implicit class GoalMutableBuilder[Self <: Goal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setEventDetails(value: EventConditions): Self = StObject.set(x, "eventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setEventDetailsUndefined: Self = StObject.set(x, "eventDetails", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventDetails(value: EventConditions): Self = this.set("eventDetails", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEventDetails: Self = this.set("eventDetails", js.undefined)
+    def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalWebPropertyId(value: String): Self = this.set("internalWebPropertyId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInternalWebPropertyId: Self = this.set("internalWebPropertyId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setParentLink(value: Href): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentLink(value: Href): Self = this.set("parentLink", value.asInstanceOf[js.Any])
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     @scala.inline
-    def deleteParentLink: Self = this.set("parentLink", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUrlDestinationDetails(value: FirstStepRequired): Self = StObject.set(x, "urlDestinationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUrlDestinationDetailsUndefined: Self = StObject.set(x, "urlDestinationDetails", js.undefined)
     
     @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlDestinationDetails(value: FirstStepRequired): Self = this.set("urlDestinationDetails", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteUrlDestinationDetails: Self = this.set("urlDestinationDetails", js.undefined)
+    def setVisitNumPagesDetails(value: ComparisonValue): Self = StObject.set(x, "visitNumPagesDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setVisitNumPagesDetailsUndefined: Self = StObject.set(x, "visitNumPagesDetails", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setVisitTimeOnSiteDetails(value: ComparisonValue): Self = StObject.set(x, "visitTimeOnSiteDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisitNumPagesDetails(value: ComparisonValue): Self = this.set("visitNumPagesDetails", value.asInstanceOf[js.Any])
+    def setVisitTimeOnSiteDetailsUndefined: Self = StObject.set(x, "visitTimeOnSiteDetails", js.undefined)
     
     @scala.inline
-    def deleteVisitNumPagesDetails: Self = this.set("visitNumPagesDetails", js.undefined)
+    def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisitTimeOnSiteDetails(value: ComparisonValue): Self = this.set("visitTimeOnSiteDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisitTimeOnSiteDetails: Self = this.set("visitTimeOnSiteDetails", js.undefined)
-    
-    @scala.inline
-    def setWebPropertyId(value: String): Self = this.set("webPropertyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebPropertyId: Self = this.set("webPropertyId", js.undefined)
+    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }
 }

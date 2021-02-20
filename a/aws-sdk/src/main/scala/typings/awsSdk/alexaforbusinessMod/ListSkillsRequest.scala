@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSkillsRequest extends js.Object {
+trait ListSkillsRequest extends StObject {
   
   /**
     * Whether the skill is enabled under the user's account.
@@ -41,48 +42,36 @@ object ListSkillsRequest {
   }
   
   @scala.inline
-  implicit class ListSkillsRequestOps[Self <: ListSkillsRequest] (val x: Self) extends AnyVal {
+  implicit class ListSkillsRequestMutableBuilder[Self <: ListSkillsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnablementType(value: EnablementTypeFilter): Self = StObject.set(x, "EnablementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnablementTypeUndefined: Self = StObject.set(x, "EnablementType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: SkillListMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablementType(value: EnablementTypeFilter): Self = this.set("EnablementType", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteEnablementType: Self = this.set("EnablementType", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: SkillListMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSkillType(value: SkillTypeFilter): Self = StObject.set(x, "SkillType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkillGroupArn(value: Arn): Self = this.set("SkillGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkillGroupArn: Self = this.set("SkillGroupArn", js.undefined)
-    
-    @scala.inline
-    def setSkillType(value: SkillTypeFilter): Self = this.set("SkillType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkillType: Self = this.set("SkillType", js.undefined)
+    def setSkillTypeUndefined: Self = StObject.set(x, "SkillType", js.undefined)
   }
 }

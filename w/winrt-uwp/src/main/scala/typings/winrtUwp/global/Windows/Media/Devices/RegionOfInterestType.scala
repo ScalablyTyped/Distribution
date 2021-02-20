@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the different types of regions of interest that can be detected the capture device. */
 @JSGlobal("Windows.Media.Devices.RegionOfInterestType")
 @js.native
-object RegionOfInterestType extends js.Object {
+object RegionOfInterestType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Devices.RegionOfInterestType with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailSettings extends js.Object {
+trait EmailSettings extends StObject {
   
   /**
     * An array containing the email address that should receive a copy of all email communications related to an envelope for archiving purposes. Maximum Length: 100 characters.
@@ -44,39 +45,27 @@ object EmailSettings {
   }
   
   @scala.inline
-  implicit class EmailSettingsOps[Self <: EmailSettings] (val x: Self) extends AnyVal {
+  implicit class EmailSettingsMutableBuilder[Self <: EmailSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBccEmailAddresses(value: js.Array[/* Contains information about the BCC email address. */ BccEmailAddress]): Self = StObject.set(x, "bccEmailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBccEmailAddressesUndefined: Self = StObject.set(x, "bccEmailAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBccEmailAddressesVarargs(value: (/* Contains information about the BCC email address. */ BccEmailAddress)*): Self = StObject.set(x, "bccEmailAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setBccEmailAddressesVarargs(value: (/* Contains information about the BCC email address. */ BccEmailAddress)*): Self = this.set("bccEmailAddresses", js.Array(value :_*))
+    def setReplyEmailAddressOverride(value: String): Self = StObject.set(x, "replyEmailAddressOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBccEmailAddresses(value: js.Array[/* Contains information about the BCC email address. */ BccEmailAddress]): Self = this.set("bccEmailAddresses", value.asInstanceOf[js.Any])
+    def setReplyEmailAddressOverrideUndefined: Self = StObject.set(x, "replyEmailAddressOverride", js.undefined)
     
     @scala.inline
-    def deleteBccEmailAddresses: Self = this.set("bccEmailAddresses", js.undefined)
+    def setReplyEmailNameOverride(value: String): Self = StObject.set(x, "replyEmailNameOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyEmailAddressOverride(value: String): Self = this.set("replyEmailAddressOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyEmailAddressOverride: Self = this.set("replyEmailAddressOverride", js.undefined)
-    
-    @scala.inline
-    def setReplyEmailNameOverride(value: String): Self = this.set("replyEmailNameOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyEmailNameOverride: Self = this.set("replyEmailNameOverride", js.undefined)
+    def setReplyEmailNameOverrideUndefined: Self = StObject.set(x, "replyEmailNameOverride", js.undefined)
   }
 }

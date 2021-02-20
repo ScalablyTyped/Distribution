@@ -1,11 +1,12 @@
 package typings.reBase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenToOptions extends js.Object {
+trait ListenToOptions extends StObject {
   
   /**
     * Returns the Firebase data at the specified endpoint as an Array
@@ -47,42 +48,30 @@ object ListenToOptions {
   }
   
   @scala.inline
-  implicit class ListenToOptionsOps[Self <: ListenToOptions] (val x: Self) extends AnyVal {
+  implicit class ListenToOptionsMutableBuilder[Self <: ListenToOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsArray(value: Boolean): Self = StObject.set(x, "asArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsArrayUndefined: Self = StObject.set(x, "asArray", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: js.Object): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setOnFailure(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setThen(value: js.Any => Unit): Self = this.set("then", js.Any.fromFunction1(value))
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def setAsArray(value: Boolean): Self = this.set("asArray", value.asInstanceOf[js.Any])
+    def setQueries(value: js.Object): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsArray: Self = this.set("asArray", js.undefined)
+    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
     @scala.inline
-    def setOnFailure(value: /* error */ js.Any => Unit): Self = this.set("onFailure", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
-    
-    @scala.inline
-    def setQueries(value: js.Object): Self = this.set("queries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueries: Self = this.set("queries", js.undefined)
+    def setThen(value: js.Any => Unit): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
   }
 }

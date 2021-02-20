@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Result of a class within a classifier. */
 @js.native
-trait ClassResult extends js.Object {
+trait ClassResult extends StObject {
   
   /** Name of the class. Class names are translated in the language defined by the **Accept-Language** request header for the build-in classifier IDs (`default`, `food`, and `explicit`). Class names of custom classifiers are not translated. The response might not be in the specified language when the requested language is not supported or when there is no translation for the class name. */
   var class_name: String = js.native
@@ -26,30 +27,18 @@ object ClassResult {
   }
   
   @scala.inline
-  implicit class ClassResultOps[Self <: ClassResult] (val x: Self) extends AnyVal {
+  implicit class ClassResultMutableBuilder[Self <: ClassResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClass_name(value: String): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType_hierarchy(value: String): Self = StObject.set(x, "type_hierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass_name(value: String): Self = this.set("class_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType_hierarchy(value: String): Self = this.set("type_hierarchy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType_hierarchy: Self = this.set("type_hierarchy", js.undefined)
+    def setType_hierarchyUndefined: Self = StObject.set(x, "type_hierarchy", js.undefined)
   }
 }

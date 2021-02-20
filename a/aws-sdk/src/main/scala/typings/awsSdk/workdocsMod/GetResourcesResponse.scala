@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResourcesResponse extends js.Object {
+trait GetResourcesResponse extends StObject {
   
   /**
     * The documents in the specified collection.
@@ -31,42 +32,30 @@ object GetResourcesResponse {
   }
   
   @scala.inline
-  implicit class GetResourcesResponseOps[Self <: GetResourcesResponse] (val x: Self) extends AnyVal {
+  implicit class GetResourcesResponseMutableBuilder[Self <: GetResourcesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocuments(value: DocumentMetadataList): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentsVarargs(value: DocumentMetadata*): Self = StObject.set(x, "Documents", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentsVarargs(value: DocumentMetadata*): Self = this.set("Documents", js.Array(value :_*))
+    def setFolders(value: FolderMetadataList): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocuments(value: DocumentMetadataList): Self = this.set("Documents", value.asInstanceOf[js.Any])
+    def setFoldersUndefined: Self = StObject.set(x, "Folders", js.undefined)
     
     @scala.inline
-    def deleteDocuments: Self = this.set("Documents", js.undefined)
+    def setFoldersVarargs(value: FolderMetadata*): Self = StObject.set(x, "Folders", js.Array(value :_*))
     
     @scala.inline
-    def setFoldersVarargs(value: FolderMetadata*): Self = this.set("Folders", js.Array(value :_*))
+    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolders(value: FolderMetadataList): Self = this.set("Folders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFolders: Self = this.set("Folders", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

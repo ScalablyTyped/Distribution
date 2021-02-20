@@ -1,11 +1,12 @@
 package typings.jqueryPnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PNotifyLabel extends js.Object {
+trait PNotifyLabel extends StObject {
   
   var all: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object PNotifyLabel {
   }
   
   @scala.inline
-  implicit class PNotifyLabelOps[Self <: PNotifyLabel] (val x: Self) extends AnyVal {
+  implicit class PNotifyLabelMutableBuilder[Self <: PNotifyLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: String): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setRedisplay(value: String): Self = StObject.set(x, "redisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast(value: String): Self = this.set("last", value.asInstanceOf[js.Any])
+    def setRedisplayUndefined: Self = StObject.set(x, "redisplay", js.undefined)
     
     @scala.inline
-    def deleteLast: Self = this.set("last", js.undefined)
+    def setStick(value: String): Self = StObject.set(x, "stick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedisplay(value: String): Self = this.set("redisplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedisplay: Self = this.set("redisplay", js.undefined)
-    
-    @scala.inline
-    def setStick(value: String): Self = this.set("stick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStick: Self = this.set("stick", js.undefined)
+    def setStickUndefined: Self = StObject.set(x, "stick", js.undefined)
   }
 }

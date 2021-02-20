@@ -1,11 +1,12 @@
 package typings.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSTreeBindOptions extends js.Object {
+trait JSTreeBindOptions extends StObject {
   
   var args: js.UndefOr[js.Any] = js.native
   
@@ -24,42 +25,30 @@ object JSTreeBindOptions {
   }
   
   @scala.inline
-  implicit class JSTreeBindOptionsOps[Self <: JSTreeBindOptions] (val x: Self) extends AnyVal {
+  implicit class JSTreeBindOptionsMutableBuilder[Self <: JSTreeBindOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInst(value: js.Any): Self = StObject.set(x, "inst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Any): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setInstUndefined: Self = StObject.set(x, "inst", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setRlbk(value: js.Any): Self = StObject.set(x, "rlbk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInst(value: js.Any): Self = this.set("inst", value.asInstanceOf[js.Any])
+    def setRlbkUndefined: Self = StObject.set(x, "rlbk", js.undefined)
     
     @scala.inline
-    def deleteInst: Self = this.set("inst", js.undefined)
+    def setRslt(value: js.Any): Self = StObject.set(x, "rslt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRlbk(value: js.Any): Self = this.set("rlbk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRlbk: Self = this.set("rlbk", js.undefined)
-    
-    @scala.inline
-    def setRslt(value: js.Any): Self = this.set("rslt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRslt: Self = this.set("rslt", js.undefined)
+    def setRsltUndefined: Self = StObject.set(x, "rslt", js.undefined)
   }
 }

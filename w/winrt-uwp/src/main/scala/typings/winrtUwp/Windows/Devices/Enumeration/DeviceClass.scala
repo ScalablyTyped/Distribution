@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceClass extends js.Object
+sealed trait DeviceClass extends StObject
 /** Indicates the type of devices that the user wants to enumerate. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceClass")
 @js.native
-object DeviceClass extends js.Object {
+object DeviceClass extends StObject {
   
   /** Indicates that the user wants to enumerate all devices. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTargetingValueDayPartTargetingDayPart extends js.Object {
+trait SchemaTargetingValueDayPartTargetingDayPart extends StObject {
   
   var dayOfWeek: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object SchemaTargetingValueDayPartTargetingDayPart {
   }
   
   @scala.inline
-  implicit class SchemaTargetingValueDayPartTargetingDayPartOps[Self <: SchemaTargetingValueDayPartTargetingDayPart] (val x: Self) extends AnyVal {
+  implicit class SchemaTargetingValueDayPartTargetingDayPartMutableBuilder[Self <: SchemaTargetingValueDayPartTargetingDayPart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDayOfWeek(value: String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndHour(value: Double): Self = StObject.set(x, "endHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayOfWeek(value: String): Self = this.set("dayOfWeek", value.asInstanceOf[js.Any])
+    def setEndHourUndefined: Self = StObject.set(x, "endHour", js.undefined)
     
     @scala.inline
-    def deleteDayOfWeek: Self = this.set("dayOfWeek", js.undefined)
+    def setEndMinute(value: Double): Self = StObject.set(x, "endMinute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndHour(value: Double): Self = this.set("endHour", value.asInstanceOf[js.Any])
+    def setEndMinuteUndefined: Self = StObject.set(x, "endMinute", js.undefined)
     
     @scala.inline
-    def deleteEndHour: Self = this.set("endHour", js.undefined)
+    def setStartHour(value: Double): Self = StObject.set(x, "startHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMinute(value: Double): Self = this.set("endMinute", value.asInstanceOf[js.Any])
+    def setStartHourUndefined: Self = StObject.set(x, "startHour", js.undefined)
     
     @scala.inline
-    def deleteEndMinute: Self = this.set("endMinute", js.undefined)
+    def setStartMinute(value: Double): Self = StObject.set(x, "startMinute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartHour(value: Double): Self = this.set("startHour", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartHour: Self = this.set("startHour", js.undefined)
-    
-    @scala.inline
-    def setStartMinute(value: Double): Self = this.set("startMinute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartMinute: Self = this.set("startMinute", js.undefined)
+    def setStartMinuteUndefined: Self = StObject.set(x, "startMinute", js.undefined)
   }
 }

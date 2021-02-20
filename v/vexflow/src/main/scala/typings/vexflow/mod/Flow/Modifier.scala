@@ -1,5 +1,6 @@
 package typings.vexflow.mod.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,17 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Modifier ()
   extends typings.vexflow.Vex.Flow.Modifier
-/* static members */
-@JSImport("vexflow", "Flow.Modifier")
-@js.native
-object Modifier extends js.Object {
+object Modifier {
   
+  @JSImport("vexflow", "Flow.Modifier")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("vexflow", "Flow.Modifier.CATEGORY")
+  @js.native
   val CATEGORY: String = js.native
   
-  var DEBUG: Boolean = js.native
-  
+  /* static member */
+  @JSImport("vexflow", "Flow.Modifier.DEBUG")
   @js.native
-  object Position extends js.Object {
+  def DEBUG: Boolean = js.native
+  @scala.inline
+  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("vexflow", "Flow.Modifier.Position")
+  @js.native
+  object Position extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.Modifier.Position with Double] = js.native

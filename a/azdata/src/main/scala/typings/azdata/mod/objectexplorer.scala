@@ -2,14 +2,15 @@ package typings.azdata.mod
 
 import typings.vscode.Thenable
 import typings.vscode.mod.TreeItemCollapsibleState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azdata", "objectexplorer")
-@js.native
-object objectexplorer extends js.Object {
+object objectexplorer {
   
+  @JSImport("azdata", "objectexplorer.findNodes")
+  @js.native
   def findNodes(
     connectionId: String,
     `type`: String,
@@ -19,11 +20,19 @@ object objectexplorer extends js.Object {
     parentObjectNames: js.Array[String]
   ): Thenable[js.Array[ObjectExplorerNode]] = js.native
   
+  @JSImport("azdata", "objectexplorer.getActiveConnectionNodes")
+  @js.native
   def getActiveConnectionNodes(): Thenable[js.Array[ObjectExplorerNode]] = js.native
   
+  @JSImport("azdata", "objectexplorer.getNode")
+  @js.native
   def getNode(connectionId: String): Thenable[ObjectExplorerNode] = js.native
+  @JSImport("azdata", "objectexplorer.getNode")
+  @js.native
   def getNode(connectionId: String, nodePath: String): Thenable[ObjectExplorerNode] = js.native
   
+  @JSImport("azdata", "objectexplorer.getSessionConnectionProfile")
+  @js.native
   def getSessionConnectionProfile(sessionId: String): Thenable[IConnectionProfile] = js.native
   
   @js.native

@@ -2,13 +2,38 @@ package typings.playable
 
 import typings.playable.anon.Config
 import typings.playable.fullScreenManagerTypesMod.IFullScreenManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/full-screen-manager/full-screen-manager", JSImport.Namespace)
-@js.native
-object fullScreenManagerMod extends js.Object {
+object fullScreenManagerMod {
+  
+  @JSImport("playable/dist/src/modules/full-screen-manager/full-screen-manager", JSImport.Default)
+  @js.native
+  class default protected () extends FullScreenManager {
+    def this(hasEventEmitterEngineRootContainerConfig: Config) = this()
+  }
+  object default {
+    
+    @JSImport("playable/dist/src/modules/full-screen-manager/full-screen-manager", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("playable/dist/src/modules/full-screen-manager/full-screen-manager", "default.dependencies")
+    @js.native
+    def dependencies: js.Array[String] = js.native
+    @scala.inline
+    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("playable/dist/src/modules/full-screen-manager/full-screen-manager", "default.moduleName")
+    @js.native
+    def moduleName: String = js.native
+    @scala.inline
+    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait FullScreenManager extends IFullScreenManager {
@@ -55,18 +80,5 @@ object fullScreenManagerMod extends js.Object {
       */
     @JSName("isInFullScreen")
     def isInFullScreen_MFullScreenManager: Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends FullScreenManager {
-    def this(hasEventEmitterEngineRootContainerConfig: Config) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var dependencies: js.Array[String] = js.native
-    
-    var moduleName: String = js.native
   }
 }

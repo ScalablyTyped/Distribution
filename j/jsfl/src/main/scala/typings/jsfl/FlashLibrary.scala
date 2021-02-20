@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashLibrary extends js.Object {
+trait FlashLibrary extends StObject {
   
   def addItemToDocument(position: FlashPoint): Boolean = js.native
   def addItemToDocument(position: FlashPoint, namePath: String): Boolean = js.native

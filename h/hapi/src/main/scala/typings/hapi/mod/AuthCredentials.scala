@@ -1,11 +1,12 @@
 package typings.hapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthCredentials extends js.Object {
+trait AuthCredentials extends StObject {
   
   /**
     * If set, will only work with routes that set `access.entity` to `app`.
@@ -32,39 +33,27 @@ object AuthCredentials {
   }
   
   @scala.inline
-  implicit class AuthCredentialsOps[Self <: AuthCredentials] (val x: Self) extends AnyVal {
+  implicit class AuthCredentialsMutableBuilder[Self <: AuthCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: AppCredentials): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: AppCredentials): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteApp: Self = this.set("app", js.undefined)
+    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
     @scala.inline
-    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
+    def setUser(value: UserCredentials): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: js.Array[String]): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setUser(value: UserCredentials): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendmedicalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICD10CMEntity extends js.Object {
+trait ICD10CMEntity extends StObject {
   
   /**
     * The detected attributes that relate to the entity. An extracted segment of the text that is an attribute of an entity, or otherwise related to an entity, such as the nature of a medical condition.
@@ -66,87 +67,75 @@ object ICD10CMEntity {
   }
   
   @scala.inline
-  implicit class ICD10CMEntityOps[Self <: ICD10CMEntity] (val x: Self) extends AnyVal {
+  implicit class ICD10CMEntityMutableBuilder[Self <: ICD10CMEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: ICD10CMAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: ICD10CMAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: ICD10CMAttribute*): Self = this.set("Attributes", js.Array(value :_*))
+    def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: ICD10CMAttributeList): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setCategory(value: ICD10CMEntityCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginOffset(value: Integer): Self = this.set("BeginOffset", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
     @scala.inline
-    def deleteBeginOffset: Self = this.set("BeginOffset", js.undefined)
+    def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: ICD10CMEntityCategory): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("Category", js.undefined)
+    def setICD10CMConcepts(value: ICD10CMConceptList): Self = StObject.set(x, "ICD10CMConcepts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOffset(value: Integer): Self = this.set("EndOffset", value.asInstanceOf[js.Any])
+    def setICD10CMConceptsUndefined: Self = StObject.set(x, "ICD10CMConcepts", js.undefined)
     
     @scala.inline
-    def deleteEndOffset: Self = this.set("EndOffset", js.undefined)
+    def setICD10CMConceptsVarargs(value: ICD10CMConcept*): Self = StObject.set(x, "ICD10CMConcepts", js.Array(value :_*))
     
     @scala.inline
-    def setICD10CMConceptsVarargs(value: ICD10CMConcept*): Self = this.set("ICD10CMConcepts", js.Array(value :_*))
+    def setId(value: Integer): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setICD10CMConcepts(value: ICD10CMConceptList): Self = this.set("ICD10CMConcepts", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteICD10CMConcepts: Self = this.set("ICD10CMConcepts", js.undefined)
+    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Integer): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setText(value: OntologyLinkingBoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Float): Self = this.set("Score", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
     @scala.inline
-    def deleteScore: Self = this.set("Score", js.undefined)
+    def setTraits(value: ICD10CMTraitList): Self = StObject.set(x, "Traits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: OntologyLinkingBoundedLengthString): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("Text", js.undefined)
+    def setTraitsVarargs(value: ICD10CMTrait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
     
     @scala.inline
-    def setTraitsVarargs(value: ICD10CMTrait*): Self = this.set("Traits", js.Array(value :_*))
+    def setType(value: ICD10CMEntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraits(value: ICD10CMTraitList): Self = this.set("Traits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraits: Self = this.set("Traits", js.undefined)
-    
-    @scala.inline
-    def setType(value: ICD10CMEntityType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

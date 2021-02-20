@@ -1,11 +1,12 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoSourceOptions extends js.Object {
+trait VideoSourceOptions extends StObject {
   
   var coordinates: js.UndefOr[js.Array[js.Array[Double]]] = js.native
   
@@ -20,36 +21,24 @@ object VideoSourceOptions {
   }
   
   @scala.inline
-  implicit class VideoSourceOptionsOps[Self <: VideoSourceOptions] (val x: Self) extends AnyVal {
+  implicit class VideoSourceOptionsMutableBuilder[Self <: VideoSourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
     @scala.inline
-    def setCoordinatesVarargs(value: js.Array[Double]*): Self = this.set("coordinates", js.Array(value :_*))
+    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinates(value: js.Array[js.Array[Double]]): Self = this.set("coordinates", value.asInstanceOf[js.Any])
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
     @scala.inline
-    def deleteCoordinates: Self = this.set("coordinates", js.undefined)
-    
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = this.set("urls", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = this.set("urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
+    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

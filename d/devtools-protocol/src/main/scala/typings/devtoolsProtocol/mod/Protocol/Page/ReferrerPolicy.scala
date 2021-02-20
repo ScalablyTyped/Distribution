@@ -1,6 +1,7 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.sameOrigin_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.strictOriginWhenCrossOrigin
   - typings.devtoolsProtocol.devtoolsProtocolStrings.unsafeUrl
 */
-trait ReferrerPolicy extends js.Object
+trait ReferrerPolicy extends StObject
 object ReferrerPolicy {
   
   @scala.inline

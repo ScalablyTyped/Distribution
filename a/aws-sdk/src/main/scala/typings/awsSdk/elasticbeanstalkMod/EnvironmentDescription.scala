@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentDescription extends js.Object {
+trait EnvironmentDescription extends StObject {
   
   /**
     * Indicates if there is an in-progress environment configuration update or application version deployment that you can cancel.  true: There is an update in progress.   false: There are no updates currently in progress. 
@@ -121,147 +122,135 @@ object EnvironmentDescription {
   }
   
   @scala.inline
-  implicit class EnvironmentDescriptionOps[Self <: EnvironmentDescription] (val x: Self) extends AnyVal {
+  implicit class EnvironmentDescriptionMutableBuilder[Self <: EnvironmentDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortableOperationInProgress(value: AbortableOperationInProgress): Self = StObject.set(x, "AbortableOperationInProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortableOperationInProgressUndefined: Self = StObject.set(x, "AbortableOperationInProgress", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortableOperationInProgress(value: AbortableOperationInProgress): Self = this.set("AbortableOperationInProgress", value.asInstanceOf[js.Any])
+    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
     @scala.inline
-    def deleteAbortableOperationInProgress: Self = this.set("AbortableOperationInProgress", js.undefined)
+    def setCNAME(value: DNSCname): Self = StObject.set(x, "CNAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    def setCNAMEUndefined: Self = StObject.set(x, "CNAME", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCNAME(value: DNSCname): Self = this.set("CNAME", value.asInstanceOf[js.Any])
+    def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
     @scala.inline
-    def deleteCNAME: Self = this.set("CNAME", js.undefined)
+    def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCreated(value: CreationDate): Self = this.set("DateCreated", value.asInstanceOf[js.Any])
+    def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     
     @scala.inline
-    def deleteDateCreated: Self = this.set("DateCreated", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateUpdated(value: UpdateDate): Self = this.set("DateUpdated", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDateUpdated: Self = this.set("DateUpdated", js.undefined)
+    def setEndpointURL(value: EndpointURL): Self = StObject.set(x, "EndpointURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEndpointURLUndefined: Self = StObject.set(x, "EndpointURL", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEnvironmentArn(value: EnvironmentArn): Self = StObject.set(x, "EnvironmentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointURL(value: EndpointURL): Self = this.set("EndpointURL", value.asInstanceOf[js.Any])
+    def setEnvironmentArnUndefined: Self = StObject.set(x, "EnvironmentArn", js.undefined)
     
     @scala.inline
-    def deleteEndpointURL: Self = this.set("EndpointURL", js.undefined)
+    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentArn(value: EnvironmentArn): Self = this.set("EnvironmentArn", value.asInstanceOf[js.Any])
+    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentArn: Self = this.set("EnvironmentArn", js.undefined)
+    def setEnvironmentLinks(value: EnvironmentLinks): Self = StObject.set(x, "EnvironmentLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = this.set("EnvironmentId", value.asInstanceOf[js.Any])
+    def setEnvironmentLinksUndefined: Self = StObject.set(x, "EnvironmentLinks", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentId: Self = this.set("EnvironmentId", js.undefined)
+    def setEnvironmentLinksVarargs(value: EnvironmentLink*): Self = StObject.set(x, "EnvironmentLinks", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentLinksVarargs(value: EnvironmentLink*): Self = this.set("EnvironmentLinks", js.Array(value :_*))
+    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentLinks(value: EnvironmentLinks): Self = this.set("EnvironmentLinks", value.asInstanceOf[js.Any])
+    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentLinks: Self = this.set("EnvironmentLinks", js.undefined)
+    def setHealth(value: EnvironmentHealth): Self = StObject.set(x, "Health", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    def setHealthStatus(value: EnvironmentHealthStatus): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
     
     @scala.inline
-    def setHealth(value: EnvironmentHealth): Self = this.set("Health", value.asInstanceOf[js.Any])
+    def setHealthUndefined: Self = StObject.set(x, "Health", js.undefined)
     
     @scala.inline
-    def deleteHealth: Self = this.set("Health", js.undefined)
+    def setOperationsRole(value: OperationsRole): Self = StObject.set(x, "OperationsRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthStatus(value: EnvironmentHealthStatus): Self = this.set("HealthStatus", value.asInstanceOf[js.Any])
+    def setOperationsRoleUndefined: Self = StObject.set(x, "OperationsRole", js.undefined)
     
     @scala.inline
-    def deleteHealthStatus: Self = this.set("HealthStatus", js.undefined)
+    def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationsRole(value: OperationsRole): Self = this.set("OperationsRole", value.asInstanceOf[js.Any])
+    def setPlatformArnUndefined: Self = StObject.set(x, "PlatformArn", js.undefined)
     
     @scala.inline
-    def deleteOperationsRole: Self = this.set("OperationsRole", js.undefined)
+    def setResources(value: EnvironmentResourcesDescription): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformArn(value: PlatformArn): Self = this.set("PlatformArn", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def deletePlatformArn: Self = this.set("PlatformArn", js.undefined)
+    def setSolutionStackName(value: SolutionStackName): Self = StObject.set(x, "SolutionStackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: EnvironmentResourcesDescription): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    def setSolutionStackNameUndefined: Self = StObject.set(x, "SolutionStackName", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setStatus(value: EnvironmentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSolutionStackName(value: SolutionStackName): Self = this.set("SolutionStackName", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSolutionStackName: Self = this.set("SolutionStackName", js.undefined)
+    def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: EnvironmentStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTier(value: EnvironmentTier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: ConfigurationTemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
     
     @scala.inline
-    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
+    def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTier(value: EnvironmentTier): Self = this.set("Tier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTier: Self = this.set("Tier", js.undefined)
-    
-    @scala.inline
-    def setVersionLabel(value: VersionLabel): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionLabel: Self = this.set("VersionLabel", js.undefined)
+    def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains text wrapping settings for floating objects.
   */
 @js.native
-trait FloatingObjectTextWrappingSettings extends js.Object {
+trait FloatingObjectTextWrappingSettings extends StObject {
   
   /**
     * Gets or sets the bottom offset of text wrapping.
@@ -56,36 +57,24 @@ object FloatingObjectTextWrappingSettings {
   }
   
   @scala.inline
-  implicit class FloatingObjectTextWrappingSettingsOps[Self <: FloatingObjectTextWrappingSettings] (val x: Self) extends AnyVal {
+  implicit class FloatingObjectTextWrappingSettingsMutableBuilder[Self <: FloatingObjectTextWrappingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomDistance(value: Double): Self = StObject.set(x, "bottomDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloatingObjectTextWrapSide(value: FloatingObjectTextWrapSide): Self = StObject.set(x, "floatingObjectTextWrapSide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloatingObjectTextWrapType(value: FloatingObjectTextWrapType): Self = StObject.set(x, "floatingObjectTextWrapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomDistance(value: Double): Self = this.set("bottomDistance", value.asInstanceOf[js.Any])
+    def setLeftDistance(value: Double): Self = StObject.set(x, "leftDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingObjectTextWrapSide(value: FloatingObjectTextWrapSide): Self = this.set("floatingObjectTextWrapSide", value.asInstanceOf[js.Any])
+    def setRightDistance(value: Double): Self = StObject.set(x, "rightDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingObjectTextWrapType(value: FloatingObjectTextWrapType): Self = this.set("floatingObjectTextWrapType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeftDistance(value: Double): Self = this.set("leftDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightDistance(value: Double): Self = this.set("rightDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopDistance(value: Double): Self = this.set("topDistance", value.asInstanceOf[js.Any])
+    def setTopDistance(value: Double): Self = StObject.set(x, "topDistance", value.asInstanceOf[js.Any])
   }
 }

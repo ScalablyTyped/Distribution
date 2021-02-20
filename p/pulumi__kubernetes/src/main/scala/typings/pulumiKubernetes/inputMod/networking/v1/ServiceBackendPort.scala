@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.networking.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ServiceBackendPort is the service port being referenced.
   */
 @js.native
-trait ServiceBackendPort extends js.Object {
+trait ServiceBackendPort extends StObject {
   
   /**
     * Name is the name of the port on the Service. This is a mutually exclusive setting with "Number".
@@ -30,30 +31,18 @@ object ServiceBackendPort {
   }
   
   @scala.inline
-  implicit class ServiceBackendPortOps[Self <: ServiceBackendPort] (val x: Self) extends AnyVal {
+  implicit class ServiceBackendPortMutableBuilder[Self <: ServiceBackendPort] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumber(value: Input[Double]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNumber(value: Input[Double]): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

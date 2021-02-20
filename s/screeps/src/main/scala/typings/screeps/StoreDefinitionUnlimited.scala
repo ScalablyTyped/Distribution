@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** A general purpose Store, which has an unlimited capacity */
 /* Inlined screeps.Store<screeps.ResourceConstant, true> */
 @js.native
-trait StoreDefinitionUnlimited extends js.Object {
+trait StoreDefinitionUnlimited extends StObject {
   
   var G: Double = js.native
   

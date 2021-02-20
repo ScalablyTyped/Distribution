@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mutation extends js.Object {
+trait Mutation extends StObject {
   
   /** The version of the entity that this mutation is being applied to. If this does not match the current version on the server, the mutation conflicts. */
   var baseVersion: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object Mutation {
   }
   
   @scala.inline
-  implicit class MutationOps[Self <: Mutation] (val x: Self) extends AnyVal {
+  implicit class MutationMutableBuilder[Self <: Mutation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseVersion(value: String): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseVersionUndefined: Self = StObject.set(x, "baseVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: Key): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseVersion(value: String): Self = this.set("baseVersion", value.asInstanceOf[js.Any])
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def deleteBaseVersion: Self = this.set("baseVersion", js.undefined)
+    def setInsert(value: Entity): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: Key): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setUpdate(value: Entity): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert(value: Entity): Self = this.set("insert", value.asInstanceOf[js.Any])
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteInsert: Self = this.set("insert", js.undefined)
+    def setUpsert(value: Entity): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: Entity): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
-    
-    @scala.inline
-    def setUpsert(value: Entity): Self = this.set("upsert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpsert: Self = this.set("upsert", js.undefined)
+    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

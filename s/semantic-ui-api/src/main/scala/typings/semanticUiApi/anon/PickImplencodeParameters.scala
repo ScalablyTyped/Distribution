@@ -1,12 +1,13 @@
 package typings.semanticUiApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'encodeParameters'> */
 @js.native
-trait PickImplencodeParameters extends js.Object {
+trait PickImplencodeParameters extends StObject {
   
   var encodeParameters: Boolean = js.native
 }
@@ -19,21 +20,9 @@ object PickImplencodeParameters {
   }
   
   @scala.inline
-  implicit class PickImplencodeParametersOps[Self <: PickImplencodeParameters] (val x: Self) extends AnyVal {
+  implicit class PickImplencodeParametersMutableBuilder[Self <: PickImplencodeParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEncodeParameters(value: Boolean): Self = this.set("encodeParameters", value.asInstanceOf[js.Any])
+    def setEncodeParameters(value: Boolean): Self = StObject.set(x, "encodeParameters", value.asInstanceOf[js.Any])
   }
 }

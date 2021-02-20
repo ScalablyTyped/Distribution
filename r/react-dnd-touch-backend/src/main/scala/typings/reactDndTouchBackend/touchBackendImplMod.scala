@@ -15,14 +15,14 @@ import typings.std.Map
 import typings.std.MouseEvent
 import typings.std.TouchEvent
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd-touch-backend/lib/TouchBackendImpl", JSImport.Namespace)
-@js.native
-object touchBackendImplMod extends js.Object {
+object touchBackendImplMod {
   
+  @JSImport("react-dnd-touch-backend/lib/TouchBackendImpl", "TouchBackendImpl")
   @js.native
   class TouchBackendImpl protected () extends Backend {
     def this(manager: DragDropManager, context: TouchBackendContext, options: TouchBackendOptions) = this()
@@ -113,9 +113,16 @@ object touchBackendImplMod extends js.Object {
     def window: js.UndefOr[Window] = js.native
   }
   /* static members */
-  @js.native
-  object TouchBackendImpl extends js.Object {
+  object TouchBackendImpl {
     
-    var isSetUp: js.Any = js.native
+    @JSImport("react-dnd-touch-backend/lib/TouchBackendImpl", "TouchBackendImpl")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-dnd-touch-backend/lib/TouchBackendImpl", "TouchBackendImpl.isSetUp")
+    @js.native
+    def isSetUp: js.Any = js.native
+    @scala.inline
+    def isSetUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSetUp")(x.asInstanceOf[js.Any])
   }
 }

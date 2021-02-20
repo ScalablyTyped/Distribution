@@ -1,11 +1,12 @@
 package typings.awsSdk.licensemanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsumedLicenseSummary extends js.Object {
+trait ConsumedLicenseSummary extends StObject {
   
   /**
     * Number of licenses consumed by the resource.
@@ -26,30 +27,18 @@ object ConsumedLicenseSummary {
   }
   
   @scala.inline
-  implicit class ConsumedLicenseSummaryOps[Self <: ConsumedLicenseSummary] (val x: Self) extends AnyVal {
+  implicit class ConsumedLicenseSummaryMutableBuilder[Self <: ConsumedLicenseSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumedLicenses(value: BoxLong): Self = StObject.set(x, "ConsumedLicenses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumedLicensesUndefined: Self = StObject.set(x, "ConsumedLicenses", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumedLicenses(value: BoxLong): Self = this.set("ConsumedLicenses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConsumedLicenses: Self = this.set("ConsumedLicenses", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

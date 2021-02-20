@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.TcpEndpointAddress
   - typings.fridaGum.UnixEndpointAddress
 */
-trait SocketEndpointAddress extends js.Object
+trait SocketEndpointAddress extends StObject
 object SocketEndpointAddress {
   
   @scala.inline
-  def TcpEndpointAddress(ip: String, port: Double): SocketEndpointAddress = {
+  def TcpEndpointAddress(ip: String, port: Double): typings.fridaGum.TcpEndpointAddress = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SocketEndpointAddress]
+    __obj.asInstanceOf[typings.fridaGum.TcpEndpointAddress]
   }
   
   @scala.inline
-  def UnixEndpointAddress(path: String): SocketEndpointAddress = {
+  def UnixEndpointAddress(path: String): typings.fridaGum.UnixEndpointAddress = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SocketEndpointAddress]
+    __obj.asInstanceOf[typings.fridaGum.UnixEndpointAddress]
   }
 }

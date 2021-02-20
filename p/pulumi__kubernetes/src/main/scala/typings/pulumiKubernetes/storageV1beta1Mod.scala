@@ -11,14 +11,14 @@ import typings.pulumiKubernetes.v1beta1VolumeAttachmentMod.VolumeAttachmentArgs
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/storage/v1beta1", JSImport.Namespace)
-@js.native
-object storageV1beta1Mod extends js.Object {
+object storageV1beta1Mod {
   
+  @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSIDriver")
   @js.native
   class CSIDriver protected ()
     extends typings.pulumiKubernetes.csidriverMod.CSIDriver {
@@ -35,8 +35,7 @@ object storageV1beta1Mod extends js.Object {
     def this(name: String, args: CSIDriverArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object CSIDriver extends js.Object {
+  object CSIDriver {
     
     /**
       * Get an existing CSIDriver resource's state with the given name, ID, and optional extra
@@ -46,16 +45,23 @@ object storageV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSIDriver.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.csidriverMod.CSIDriver = js.native
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSIDriver.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.csidriverMod.CSIDriver = js.native
     
     /**
       * Returns true if the given object is an instance of CSIDriver.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSIDriver.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/csidriver.CSIDriver */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSIDriverList")
   @js.native
   class CSIDriverList protected ()
     extends typings.pulumiKubernetes.csidriverListMod.CSIDriverList {
@@ -72,8 +78,7 @@ object storageV1beta1Mod extends js.Object {
     def this(name: String, args: CSIDriverListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object CSIDriverList extends js.Object {
+  object CSIDriverList {
     
     /**
       * Get an existing CSIDriverList resource's state with the given name, ID, and optional extra
@@ -83,16 +88,23 @@ object storageV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSIDriverList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.csidriverListMod.CSIDriverList = js.native
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSIDriverList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.csidriverListMod.CSIDriverList = js.native
     
     /**
       * Returns true if the given object is an instance of CSIDriverList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSIDriverList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/csidriverList.CSIDriverList */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSINode")
   @js.native
   class CSINode protected ()
     extends typings.pulumiKubernetes.csinodeMod.CSINode {
@@ -110,8 +122,7 @@ object storageV1beta1Mod extends js.Object {
     def this(name: String, args: CSINodeArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object CSINode extends js.Object {
+  object CSINode {
     
     /**
       * Get an existing CSINode resource's state with the given name, ID, and optional extra
@@ -121,16 +132,23 @@ object storageV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSINode.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.csinodeMod.CSINode = js.native
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSINode.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.csinodeMod.CSINode = js.native
     
     /**
       * Returns true if the given object is an instance of CSINode.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSINode.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/csinode.CSINode */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSINodeList")
   @js.native
   class CSINodeList protected ()
     extends typings.pulumiKubernetes.csinodeListMod.CSINodeList {
@@ -147,8 +165,7 @@ object storageV1beta1Mod extends js.Object {
     def this(name: String, args: CSINodeListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object CSINodeList extends js.Object {
+  object CSINodeList {
     
     /**
       * Get an existing CSINodeList resource's state with the given name, ID, and optional extra
@@ -158,16 +175,23 @@ object storageV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSINodeList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.csinodeListMod.CSINodeList = js.native
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSINodeList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.csinodeListMod.CSINodeList = js.native
     
     /**
       * Returns true if the given object is an instance of CSINodeList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "CSINodeList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/csinodeList.CSINodeList */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/storage/v1beta1", "StorageClass")
   @js.native
   class StorageClass protected ()
     extends typings.pulumiKubernetes.storageClassMod.StorageClass {
@@ -184,8 +208,7 @@ object storageV1beta1Mod extends js.Object {
     def this(name: String, args: StorageClassArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object StorageClass extends js.Object {
+  object StorageClass {
     
     /**
       * Get an existing StorageClass resource's state with the given name, ID, and optional extra
@@ -195,16 +218,23 @@ object storageV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "StorageClass.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.storageClassMod.StorageClass = js.native
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "StorageClass.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.storageClassMod.StorageClass = js.native
     
     /**
       * Returns true if the given object is an instance of StorageClass.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "StorageClass.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/storageClass.StorageClass */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/storage/v1beta1", "StorageClassList")
   @js.native
   class StorageClassList protected ()
     extends typings.pulumiKubernetes.storageClassListMod.StorageClassList {
@@ -221,8 +251,7 @@ object storageV1beta1Mod extends js.Object {
     def this(name: String, args: StorageClassListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object StorageClassList extends js.Object {
+  object StorageClassList {
     
     /**
       * Get an existing StorageClassList resource's state with the given name, ID, and optional extra
@@ -232,16 +261,23 @@ object storageV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "StorageClassList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.storageClassListMod.StorageClassList = js.native
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "StorageClassList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.storageClassListMod.StorageClassList = js.native
     
     /**
       * Returns true if the given object is an instance of StorageClassList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "StorageClassList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/storageClassList.StorageClassList */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/storage/v1beta1", "VolumeAttachment")
   @js.native
   class VolumeAttachment protected ()
     extends typings.pulumiKubernetes.v1beta1VolumeAttachmentMod.VolumeAttachment {
@@ -258,8 +294,7 @@ object storageV1beta1Mod extends js.Object {
     def this(name: String, args: VolumeAttachmentArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object VolumeAttachment extends js.Object {
+  object VolumeAttachment {
     
     /**
       * Get an existing VolumeAttachment resource's state with the given name, ID, and optional extra
@@ -269,16 +304,23 @@ object storageV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "VolumeAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1VolumeAttachmentMod.VolumeAttachment = js.native
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "VolumeAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1VolumeAttachmentMod.VolumeAttachment = js.native
     
     /**
       * Returns true if the given object is an instance of VolumeAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "VolumeAttachment.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/volumeAttachment.VolumeAttachment */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/storage/v1beta1", "VolumeAttachmentList")
   @js.native
   class VolumeAttachmentList protected ()
     extends typings.pulumiKubernetes.v1beta1VolumeAttachmentListMod.VolumeAttachmentList {
@@ -295,8 +337,7 @@ object storageV1beta1Mod extends js.Object {
     def this(name: String, args: VolumeAttachmentListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object VolumeAttachmentList extends js.Object {
+  object VolumeAttachmentList {
     
     /**
       * Get an existing VolumeAttachmentList resource's state with the given name, ID, and optional extra
@@ -306,13 +347,19 @@ object storageV1beta1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "VolumeAttachmentList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1VolumeAttachmentListMod.VolumeAttachmentList = js.native
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "VolumeAttachmentList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1VolumeAttachmentListMod.VolumeAttachmentList = js.native
     
     /**
       * Returns true if the given object is an instance of VolumeAttachmentList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/storage/v1beta1", "VolumeAttachmentList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1beta1/volumeAttachmentList.VolumeAttachmentList */ Boolean = js.native
   }
 }

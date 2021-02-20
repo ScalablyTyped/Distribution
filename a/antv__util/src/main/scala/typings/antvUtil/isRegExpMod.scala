@@ -1,12 +1,13 @@
 package typings.antvUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/util/lib/is-reg-exp", JSImport.Namespace)
-@js.native
-object isRegExpMod extends js.Object {
+object isRegExpMod {
   
+  @JSImport("@antv/util/lib/is-reg-exp", JSImport.Default)
+  @js.native
   def default(str: js.Any): /* is std.RegExp */ Boolean = js.native
 }

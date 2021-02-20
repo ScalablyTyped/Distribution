@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,60 +68,48 @@ object ParamsResourceCommentsList {
   }
   
   @scala.inline
-  implicit class ParamsResourceCommentsListOps[Self <: ParamsResourceCommentsList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceCommentsListMutableBuilder[Self <: ParamsResourceCommentsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
     @scala.inline
-    def deleteParentId: Self = this.set("parentId", js.undefined)
+    def setTextFormat(value: String): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPart(value: String): Self = this.set("part", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePart: Self = this.set("part", js.undefined)
-    
-    @scala.inline
-    def setTextFormat(value: String): Self = this.set("textFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

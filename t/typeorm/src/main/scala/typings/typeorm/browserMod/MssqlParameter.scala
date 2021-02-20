@@ -33,6 +33,7 @@ import typings.typeorm.typeormStrings.varbinary
 import typings.typeorm.typeormStrings.varchar
 import typings.typeorm.typeormStrings.variant
 import typings.typeorm.typeormStrings.xml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

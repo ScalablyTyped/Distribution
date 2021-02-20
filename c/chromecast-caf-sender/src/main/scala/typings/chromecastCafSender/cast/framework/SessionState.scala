@@ -1,14 +1,15 @@
 package typings.chromecastCafSender.cast.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SessionState extends js.Object
+sealed trait SessionState extends StObject
 @JSGlobal("cast.framework.SessionState")
 @js.native
-object SessionState extends js.Object {
+object SessionState extends StObject {
   
   @js.native
   sealed trait NO_SESSION extends SessionState

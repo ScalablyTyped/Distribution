@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TileTemplateType extends js.Object
+sealed trait TileTemplateType extends StObject
 @JSGlobal("Windows.UI.Notifications.TileTemplateType")
 @js.native
-object TileTemplateType extends js.Object {
+object TileTemplateType extends StObject {
   
   @js.native
   sealed trait tileSquareBlock extends TileTemplateType

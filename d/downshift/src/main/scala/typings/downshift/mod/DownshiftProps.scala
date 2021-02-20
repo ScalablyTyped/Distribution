@@ -3,12 +3,13 @@ package typings.downshift.mod
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownshiftProps[Item] extends js.Object {
+trait DownshiftProps[Item] extends StObject {
   
   var children: js.UndefOr[ChildrenFunction[Item]] = js.native
   
@@ -111,223 +112,211 @@ object DownshiftProps {
   }
   
   @scala.inline
-  implicit class DownshiftPropsOps[Self <: DownshiftProps[_], Item] (val x: Self with DownshiftProps[Item]) extends AnyVal {
+  implicit class DownshiftPropsMutableBuilder[Self <: DownshiftProps[_], Item] (val x: Self with DownshiftProps[Item]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: /* options */ ControllerStateAndHelpers[Item] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultHighlightedIndex(value: Double): Self = StObject.set(x, "defaultHighlightedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: /* options */ ControllerStateAndHelpers[Item] => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    def setDefaultHighlightedIndexNull: Self = StObject.set(x, "defaultHighlightedIndex", null)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setDefaultHighlightedIndexUndefined: Self = StObject.set(x, "defaultHighlightedIndex", js.undefined)
     
     @scala.inline
-    def setDefaultHighlightedIndex(value: Double): Self = this.set("defaultHighlightedIndex", value.asInstanceOf[js.Any])
+    def setDefaultIsOpen(value: Boolean): Self = StObject.set(x, "defaultIsOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultHighlightedIndex: Self = this.set("defaultHighlightedIndex", js.undefined)
+    def setDefaultIsOpenUndefined: Self = StObject.set(x, "defaultIsOpen", js.undefined)
     
     @scala.inline
-    def setDefaultHighlightedIndexNull: Self = this.set("defaultHighlightedIndex", null)
+    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultIsOpen(value: Boolean): Self = this.set("defaultIsOpen", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def deleteDefaultIsOpen: Self = this.set("defaultIsOpen", js.undefined)
+    def setGetA11yStatusMessage(value: /* options */ A11yStatusMessageOptions[Item] => String): Self = StObject.set(x, "getA11yStatusMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnvironment(value: Environment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setGetA11yStatusMessageUndefined: Self = StObject.set(x, "getA11yStatusMessage", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setGetItemId(value: /* index */ js.UndefOr[Double] => String): Self = StObject.set(x, "getItemId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetA11yStatusMessage(value: /* options */ A11yStatusMessageOptions[Item] => String): Self = this.set("getA11yStatusMessage", js.Any.fromFunction1(value))
+    def setGetItemIdUndefined: Self = StObject.set(x, "getItemId", js.undefined)
     
     @scala.inline
-    def deleteGetA11yStatusMessage: Self = this.set("getA11yStatusMessage", js.undefined)
+    def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItemId(value: /* index */ js.UndefOr[Double] => String): Self = this.set("getItemId", js.Any.fromFunction1(value))
+    def setHighlightedIndexNull: Self = StObject.set(x, "highlightedIndex", null)
     
     @scala.inline
-    def deleteGetItemId: Self = this.set("getItemId", js.undefined)
+    def setHighlightedIndexUndefined: Self = StObject.set(x, "highlightedIndex", js.undefined)
     
     @scala.inline
-    def setHighlightedIndex(value: Double): Self = this.set("highlightedIndex", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighlightedIndex: Self = this.set("highlightedIndex", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setHighlightedIndexNull: Self = this.set("highlightedIndex", null)
+    def setInitialHighlightedIndex(value: Double): Self = StObject.set(x, "initialHighlightedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInitialHighlightedIndexNull: Self = StObject.set(x, "initialHighlightedIndex", null)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInitialHighlightedIndexUndefined: Self = StObject.set(x, "initialHighlightedIndex", js.undefined)
     
     @scala.inline
-    def setInitialHighlightedIndex(value: Double): Self = this.set("initialHighlightedIndex", value.asInstanceOf[js.Any])
+    def setInitialInputValue(value: String): Self = StObject.set(x, "initialInputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialHighlightedIndex: Self = this.set("initialHighlightedIndex", js.undefined)
+    def setInitialInputValueUndefined: Self = StObject.set(x, "initialInputValue", js.undefined)
     
     @scala.inline
-    def setInitialHighlightedIndexNull: Self = this.set("initialHighlightedIndex", null)
+    def setInitialIsOpen(value: Boolean): Self = StObject.set(x, "initialIsOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialInputValue(value: String): Self = this.set("initialInputValue", value.asInstanceOf[js.Any])
+    def setInitialIsOpenUndefined: Self = StObject.set(x, "initialIsOpen", js.undefined)
     
     @scala.inline
-    def deleteInitialInputValue: Self = this.set("initialInputValue", js.undefined)
+    def setInitialSelectedItem(value: Item): Self = StObject.set(x, "initialSelectedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialIsOpen(value: Boolean): Self = this.set("initialIsOpen", value.asInstanceOf[js.Any])
+    def setInitialSelectedItemUndefined: Self = StObject.set(x, "initialSelectedItem", js.undefined)
     
     @scala.inline
-    def deleteInitialIsOpen: Self = this.set("initialIsOpen", js.undefined)
+    def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialSelectedItem(value: Item): Self = this.set("initialSelectedItem", value.asInstanceOf[js.Any])
+    def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
     
     @scala.inline
-    def deleteInitialSelectedItem: Self = this.set("initialSelectedItem", js.undefined)
+    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputId(value: String): Self = this.set("inputId", value.asInstanceOf[js.Any])
+    def setInputValueNull: Self = StObject.set(x, "inputValue", null)
     
     @scala.inline
-    def deleteInputId: Self = this.set("inputId", js.undefined)
+    def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
     
     @scala.inline
-    def setInputValue(value: String): Self = this.set("inputValue", value.asInstanceOf[js.Any])
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputValue: Self = this.set("inputValue", js.undefined)
+    def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
     
     @scala.inline
-    def setInputValueNull: Self = this.set("inputValue", null)
+    def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
     
     @scala.inline
-    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    def setItemToString(value: /* item */ Item | Null => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemCount(value: Double): Self = this.set("itemCount", value.asInstanceOf[js.Any])
+    def setItemToStringUndefined: Self = StObject.set(x, "itemToString", js.undefined)
     
     @scala.inline
-    def deleteItemCount: Self = this.set("itemCount", js.undefined)
+    def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemToString(value: /* item */ Item | Null => String): Self = this.set("itemToString", js.Any.fromFunction1(value))
+    def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
     
     @scala.inline
-    def deleteItemToString: Self = this.set("itemToString", js.undefined)
+    def setMenuId(value: String): Self = StObject.set(x, "menuId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelId(value: String): Self = this.set("labelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelId: Self = this.set("labelId", js.undefined)
-    
-    @scala.inline
-    def setMenuId(value: String): Self = this.set("menuId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMenuId: Self = this.set("menuId", js.undefined)
+    def setMenuIdUndefined: Self = StObject.set(x, "menuId", js.undefined)
     
     @scala.inline
     def setOnChange(
       value: (/* selectedItem */ Item | Null, /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit
-    ): Self = this.set("onChange", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnInputValueChange(value: (/* inputValue */ String, /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit): Self = this.set("onInputValueChange", js.Any.fromFunction2(value))
+    def setOnInputValueChange(value: (/* inputValue */ String, /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit): Self = StObject.set(x, "onInputValueChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnInputValueChange: Self = this.set("onInputValueChange", js.undefined)
+    def setOnInputValueChangeUndefined: Self = StObject.set(x, "onInputValueChange", js.undefined)
     
     @scala.inline
-    def setOnOuterClick(value: /* stateAndHelpers */ ControllerStateAndHelpers[Item] => Unit): Self = this.set("onOuterClick", js.Any.fromFunction1(value))
+    def setOnOuterClick(value: /* stateAndHelpers */ ControllerStateAndHelpers[Item] => Unit): Self = StObject.set(x, "onOuterClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnOuterClick: Self = this.set("onOuterClick", js.undefined)
+    def setOnOuterClickUndefined: Self = StObject.set(x, "onOuterClick", js.undefined)
     
     @scala.inline
     def setOnSelect(
       value: (/* selectedItem */ Item | Null, /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit
-    ): Self = this.set("onSelect", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
     def setOnStateChange(
       value: (/* options */ StateChangeOptions[Item], /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit
-    ): Self = this.set("onStateChange", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onStateChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnStateChange: Self = this.set("onStateChange", js.undefined)
+    def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
     
     @scala.inline
     def setOnUserAction(
       value: (/* options */ StateChangeOptions[Item], /* stateAndHelpers */ ControllerStateAndHelpers[Item]) => Unit
-    ): Self = this.set("onUserAction", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onUserAction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnUserAction: Self = this.set("onUserAction", js.undefined)
+    def setOnUserActionUndefined: Self = StObject.set(x, "onUserAction", js.undefined)
     
     @scala.inline
-    def setScrollIntoView(value: (/* node */ HTMLElement, /* menuNode */ HTMLElement) => Unit): Self = this.set("scrollIntoView", js.Any.fromFunction2(value))
+    def setScrollIntoView(value: (/* node */ HTMLElement, /* menuNode */ HTMLElement) => Unit): Self = StObject.set(x, "scrollIntoView", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteScrollIntoView: Self = this.set("scrollIntoView", js.undefined)
+    def setScrollIntoViewUndefined: Self = StObject.set(x, "scrollIntoView", js.undefined)
     
     @scala.inline
-    def setSelectedItem(value: Item): Self = this.set("selectedItem", value.asInstanceOf[js.Any])
+    def setSelectedItem(value: Item): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectedItem: Self = this.set("selectedItem", js.undefined)
+    def setSelectedItemChanged(value: (/* prevItem */ Item, /* item */ Item) => Boolean): Self = StObject.set(x, "selectedItemChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelectedItemNull: Self = this.set("selectedItem", null)
+    def setSelectedItemChangedUndefined: Self = StObject.set(x, "selectedItemChanged", js.undefined)
     
     @scala.inline
-    def setSelectedItemChanged(value: (/* prevItem */ Item, /* item */ Item) => Boolean): Self = this.set("selectedItemChanged", js.Any.fromFunction2(value))
+    def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
     
     @scala.inline
-    def deleteSelectedItemChanged: Self = this.set("selectedItemChanged", js.undefined)
+    def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
     
     @scala.inline
     def setStateReducer(
       value: (/* state */ DownshiftState[Item], /* changes */ StateChangeOptions[Item]) => Partial[StateChangeOptions[Item]]
-    ): Self = this.set("stateReducer", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "stateReducer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteStateReducer: Self = this.set("stateReducer", js.undefined)
+    def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     
     @scala.inline
-    def setSuppressRefError(value: Boolean): Self = this.set("suppressRefError", value.asInstanceOf[js.Any])
+    def setSuppressRefError(value: Boolean): Self = StObject.set(x, "suppressRefError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuppressRefError: Self = this.set("suppressRefError", js.undefined)
+    def setSuppressRefErrorUndefined: Self = StObject.set(x, "suppressRefError", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesLabelOptionsObject extends js.Object {
+trait SeriesLabelOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) An array of boxes to avoid when laying out
@@ -86,90 +87,78 @@ object SeriesLabelOptionsObject {
   }
   
   @scala.inline
-  implicit class SeriesLabelOptionsObjectOps[Self <: SeriesLabelOptionsObject] (val x: Self) extends AnyVal {
+  implicit class SeriesLabelOptionsObjectMutableBuilder[Self <: SeriesLabelOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoxesToAvoid(value: js.Array[LabelIntersectBoxObject]): Self = StObject.set(x, "boxesToAvoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoxesToAvoidUndefined: Self = StObject.set(x, "boxesToAvoid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoxesToAvoidVarargs(value: LabelIntersectBoxObject*): Self = StObject.set(x, "boxesToAvoid", js.Array(value :_*))
     
     @scala.inline
-    def setBoxesToAvoidVarargs(value: LabelIntersectBoxObject*): Self = this.set("boxesToAvoid", js.Array(value :_*))
+    def setConnectorAllowed(value: Boolean): Self = StObject.set(x, "connectorAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxesToAvoid(value: js.Array[LabelIntersectBoxObject]): Self = this.set("boxesToAvoid", value.asInstanceOf[js.Any])
+    def setConnectorAllowedUndefined: Self = StObject.set(x, "connectorAllowed", js.undefined)
     
     @scala.inline
-    def deleteBoxesToAvoid: Self = this.set("boxesToAvoid", js.undefined)
+    def setConnectorNeighbourDistance(value: Double): Self = StObject.set(x, "connectorNeighbourDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorAllowed(value: Boolean): Self = this.set("connectorAllowed", value.asInstanceOf[js.Any])
+    def setConnectorNeighbourDistanceUndefined: Self = StObject.set(x, "connectorNeighbourDistance", js.undefined)
     
     @scala.inline
-    def deleteConnectorAllowed: Self = this.set("connectorAllowed", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorNeighbourDistance(value: Double): Self = this.set("connectorNeighbourDistance", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteConnectorNeighbourDistance: Self = this.set("connectorNeighbourDistance", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setFormatter(value: FormatterCallbackFunction[Series]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMaxFontSize(value: Double): Self = StObject.set(x, "maxFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatter(value: FormatterCallbackFunction[Series]): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    def setMaxFontSizeNull: Self = StObject.set(x, "maxFontSize", null)
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setMaxFontSizeUndefined: Self = StObject.set(x, "maxFontSize", js.undefined)
     
     @scala.inline
-    def setMaxFontSize(value: Double): Self = this.set("maxFontSize", value.asInstanceOf[js.Any])
+    def setMinFontSize(value: Double): Self = StObject.set(x, "minFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxFontSize: Self = this.set("maxFontSize", js.undefined)
+    def setMinFontSizeNull: Self = StObject.set(x, "minFontSize", null)
     
     @scala.inline
-    def setMaxFontSizeNull: Self = this.set("maxFontSize", null)
+    def setMinFontSizeUndefined: Self = StObject.set(x, "minFontSize", js.undefined)
     
     @scala.inline
-    def setMinFontSize(value: Double): Self = this.set("minFontSize", value.asInstanceOf[js.Any])
+    def setOnArea(value: Boolean): Self = StObject.set(x, "onArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinFontSize: Self = this.set("minFontSize", js.undefined)
+    def setOnAreaNull: Self = StObject.set(x, "onArea", null)
     
     @scala.inline
-    def setMinFontSizeNull: Self = this.set("minFontSize", null)
+    def setOnAreaUndefined: Self = StObject.set(x, "onArea", js.undefined)
     
     @scala.inline
-    def setOnArea(value: Boolean): Self = this.set("onArea", value.asInstanceOf[js.Any])
+    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnArea: Self = this.set("onArea", js.undefined)
-    
-    @scala.inline
-    def setOnAreaNull: Self = this.set("onArea", null)
-    
-    @scala.inline
-    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

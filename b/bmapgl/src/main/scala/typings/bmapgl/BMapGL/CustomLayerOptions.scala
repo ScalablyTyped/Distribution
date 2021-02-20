@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomLayerOptions extends js.Object {
+trait CustomLayerOptions extends StObject {
   
   var databoxId: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object CustomLayerOptions {
   }
   
   @scala.inline
-  implicit class CustomLayerOptionsOps[Self <: CustomLayerOptions] (val x: Self) extends AnyVal {
+  implicit class CustomLayerOptionsMutableBuilder[Self <: CustomLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataboxId(value: String): Self = StObject.set(x, "databoxId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataboxIdUndefined: Self = StObject.set(x, "databoxId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataboxId(value: String): Self = this.set("databoxId", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteDataboxId: Self = this.set("databoxId", js.undefined)
+    def setGeotableId(value: String): Self = StObject.set(x, "geotableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setGeotableIdUndefined: Self = StObject.set(x, "geotableId", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setPointDensityType(value: PointDensityType): Self = StObject.set(x, "pointDensityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeotableId(value: String): Self = this.set("geotableId", value.asInstanceOf[js.Any])
+    def setPointDensityTypeUndefined: Self = StObject.set(x, "pointDensityType", js.undefined)
     
     @scala.inline
-    def deleteGeotableId: Self = this.set("geotableId", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointDensityType(value: PointDensityType): Self = this.set("pointDensityType", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deletePointDensityType: Self = this.set("pointDensityType", js.undefined)
+    def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
-    
-    @scala.inline
-    def setTags(value: String): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

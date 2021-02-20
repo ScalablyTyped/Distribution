@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Write a Data Access (Gin) log
   */
 @js.native
-trait SchemaLogConfigDataAccessOptions extends js.Object {
+trait SchemaLogConfigDataAccessOptions extends StObject {
   
   /**
     * Whether Gin logging should happen in a fail-closed manner at the caller.
@@ -29,24 +30,12 @@ object SchemaLogConfigDataAccessOptions {
   }
   
   @scala.inline
-  implicit class SchemaLogConfigDataAccessOptionsOps[Self <: SchemaLogConfigDataAccessOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaLogConfigDataAccessOptionsMutableBuilder[Self <: SchemaLogConfigDataAccessOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogMode(value: String): Self = StObject.set(x, "logMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogMode(value: String): Self = this.set("logMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogMode: Self = this.set("logMode", js.undefined)
+    def setLogModeUndefined: Self = StObject.set(x, "logMode", js.undefined)
   }
 }

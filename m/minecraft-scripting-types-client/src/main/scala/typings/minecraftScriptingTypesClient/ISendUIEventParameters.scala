@@ -1,5 +1,6 @@
 package typings.minecraftScriptingTypesClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Custom UI is based on HTML 5. Review the scripting demo for an example of a custom UI file.
   */
 @js.native
-trait ISendUIEventParameters extends js.Object {
+trait ISendUIEventParameters extends StObject {
   
   /**
     * The data for the UI event being triggered
@@ -30,24 +31,12 @@ object ISendUIEventParameters {
   }
   
   @scala.inline
-  implicit class ISendUIEventParametersOps[Self <: ISendUIEventParameters] (val x: Self) extends AnyVal {
+  implicit class ISendUIEventParametersMutableBuilder[Self <: ISendUIEventParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventIdentifier(value: String): Self = this.set("eventIdentifier", value.asInstanceOf[js.Any])
+    def setEventIdentifier(value: String): Self = StObject.set(x, "eventIdentifier", value.asInstanceOf[js.Any])
   }
 }

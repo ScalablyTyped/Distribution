@@ -1,6 +1,7 @@
 package typings.voximplantWebsdk.mod.IMEventTypes
 
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,30 +41,18 @@ object ChatRoomInfo {
   }
   
   @scala.inline
-  implicit class ChatRoomInfoOps[Self <: ChatRoomInfo] (val x: Self) extends AnyVal {
+  implicit class ChatRoomInfoMutableBuilder[Self <: ChatRoomInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: Double): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfo(value: ChatRoomInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: Double): Self = this.set("features", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfo(value: ChatRoomInfo): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoom(value: String): Self = this.set("room", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoom_name(value: String): Self = this.set("room_name", value.asInstanceOf[js.Any])
+    def setRoom_name(value: String): Self = StObject.set(x, "room_name", value.asInstanceOf[js.Any])
   }
 }

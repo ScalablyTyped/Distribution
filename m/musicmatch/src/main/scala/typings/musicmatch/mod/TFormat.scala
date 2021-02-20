@@ -1,5 +1,6 @@
 package typings.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.musicmatch.musicmatchStrings.json
   - typings.musicmatch.musicmatchStrings.xml
 */
-trait TFormat extends js.Object
+trait TFormat extends StObject
 object TFormat {
   
   @scala.inline

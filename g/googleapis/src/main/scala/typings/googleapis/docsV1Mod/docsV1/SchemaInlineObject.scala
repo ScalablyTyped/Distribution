@@ -1,6 +1,7 @@
 package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * EmbeddedObject such as an image.
   */
 @js.native
-trait SchemaInlineObject extends js.Object {
+trait SchemaInlineObject extends StObject {
   
   /**
     * The properties of this inline object.
@@ -49,51 +50,39 @@ object SchemaInlineObject {
   }
   
   @scala.inline
-  implicit class SchemaInlineObjectOps[Self <: SchemaInlineObject] (val x: Self) extends AnyVal {
+  implicit class SchemaInlineObjectMutableBuilder[Self <: SchemaInlineObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInlineObjectProperties(value: SchemaInlineObjectProperties): Self = StObject.set(x, "inlineObjectProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInlineObjectPropertiesUndefined: Self = StObject.set(x, "inlineObjectProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineObjectProperties(value: SchemaInlineObjectProperties): Self = this.set("inlineObjectProperties", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteInlineObjectProperties: Self = this.set("inlineObjectProperties", js.undefined)
+    def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
     
     @scala.inline
-    def setSuggestedDeletionIdsVarargs(value: String*): Self = this.set("suggestedDeletionIds", js.Array(value :_*))
+    def setSuggestedInlineObjectPropertiesChanges(value: StringDictionary[SchemaSuggestedInlineObjectProperties]): Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedDeletionIds(value: js.Array[String]): Self = this.set("suggestedDeletionIds", value.asInstanceOf[js.Any])
+    def setSuggestedInlineObjectPropertiesChangesUndefined: Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", js.undefined)
     
     @scala.inline
-    def deleteSuggestedDeletionIds: Self = this.set("suggestedDeletionIds", js.undefined)
+    def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedInlineObjectPropertiesChanges(value: StringDictionary[SchemaSuggestedInlineObjectProperties]): Self = this.set("suggestedInlineObjectPropertiesChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedInlineObjectPropertiesChanges: Self = this.set("suggestedInlineObjectPropertiesChanges", js.undefined)
-    
-    @scala.inline
-    def setSuggestedInsertionId(value: String): Self = this.set("suggestedInsertionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedInsertionId: Self = this.set("suggestedInsertionId", js.undefined)
+    def setSuggestedInsertionIdUndefined: Self = StObject.set(x, "suggestedInsertionId", js.undefined)
   }
 }

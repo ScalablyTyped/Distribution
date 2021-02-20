@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
   */
 @js.native
-trait Probe extends js.Object {
+trait Probe extends StObject {
   
   /**
     * One and only one of the following should be specified. Exec specifies the action to take.
@@ -60,66 +61,54 @@ object Probe {
   }
   
   @scala.inline
-  implicit class ProbeOps[Self <: Probe] (val x: Self) extends AnyVal {
+  implicit class ProbeMutableBuilder[Self <: Probe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExec(value: Input[ExecAction]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureThreshold(value: Input[Double]): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExec(value: Input[ExecAction]): Self = this.set("exec", value.asInstanceOf[js.Any])
+    def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
     
     @scala.inline
-    def deleteExec: Self = this.set("exec", js.undefined)
+    def setHttpGet(value: Input[HTTPGetAction]): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureThreshold(value: Input[Double]): Self = this.set("failureThreshold", value.asInstanceOf[js.Any])
+    def setHttpGetUndefined: Self = StObject.set(x, "httpGet", js.undefined)
     
     @scala.inline
-    def deleteFailureThreshold: Self = this.set("failureThreshold", js.undefined)
+    def setInitialDelaySeconds(value: Input[Double]): Self = StObject.set(x, "initialDelaySeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpGet(value: Input[HTTPGetAction]): Self = this.set("httpGet", value.asInstanceOf[js.Any])
+    def setInitialDelaySecondsUndefined: Self = StObject.set(x, "initialDelaySeconds", js.undefined)
     
     @scala.inline
-    def deleteHttpGet: Self = this.set("httpGet", js.undefined)
+    def setPeriodSeconds(value: Input[Double]): Self = StObject.set(x, "periodSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDelaySeconds(value: Input[Double]): Self = this.set("initialDelaySeconds", value.asInstanceOf[js.Any])
+    def setPeriodSecondsUndefined: Self = StObject.set(x, "periodSeconds", js.undefined)
     
     @scala.inline
-    def deleteInitialDelaySeconds: Self = this.set("initialDelaySeconds", js.undefined)
+    def setSuccessThreshold(value: Input[Double]): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodSeconds(value: Input[Double]): Self = this.set("periodSeconds", value.asInstanceOf[js.Any])
+    def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
     
     @scala.inline
-    def deletePeriodSeconds: Self = this.set("periodSeconds", js.undefined)
+    def setTcpSocket(value: Input[TCPSocketAction]): Self = StObject.set(x, "tcpSocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessThreshold(value: Input[Double]): Self = this.set("successThreshold", value.asInstanceOf[js.Any])
+    def setTcpSocketUndefined: Self = StObject.set(x, "tcpSocket", js.undefined)
     
     @scala.inline
-    def deleteSuccessThreshold: Self = this.set("successThreshold", js.undefined)
+    def setTimeoutSeconds(value: Input[Double]): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTcpSocket(value: Input[TCPSocketAction]): Self = this.set("tcpSocket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcpSocket: Self = this.set("tcpSocket", js.undefined)
-    
-    @scala.inline
-    def setTimeoutSeconds(value: Input[Double]): Self = this.set("timeoutSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutSeconds: Self = this.set("timeoutSeconds", js.undefined)
+    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
   }
 }

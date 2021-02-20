@@ -1,11 +1,12 @@
 package typings.got.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GotTimings extends js.Object {
+trait GotTimings extends StObject {
   
   var connect: Double = js.native
   
@@ -44,45 +45,33 @@ object GotTimings {
   }
   
   @scala.inline
-  implicit class GotTimingsOps[Self <: GotTimings] (val x: Self) extends AnyVal {
+  implicit class GotTimingsMutableBuilder[Self <: GotTimings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect(value: Double): Self = this.set("connect", value.asInstanceOf[js.Any])
+    def setLookup(value: Double): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setPhases(value: GotTimingsPhases): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Double): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookup(value: Double): Self = this.set("lookup", value.asInstanceOf[js.Any])
+    def setSocket(value: Double): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhases(value: GotTimingsPhases): Self = this.set("phases", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: Double): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSocket(value: Double): Self = this.set("socket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpload(value: Double): Self = this.set("upload", value.asInstanceOf[js.Any])
+    def setUpload(value: Double): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
   }
 }

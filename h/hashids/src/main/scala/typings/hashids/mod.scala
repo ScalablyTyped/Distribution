@@ -1,15 +1,23 @@
 package typings.hashids
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hashids", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("hashids", JSImport.Default)
+  @js.native
+  class default protected () extends Hashids {
+    def this(salt: String) = this()
+    def this(salt: String, minHashLength: Double) = this()
+    def this(salt: String, minHashLength: js.UndefOr[scala.Nothing], alphabet: String) = this()
+    def this(salt: String, minHashLength: Double, alphabet: String) = this()
+  }
   
   @js.native
-  trait Hashids extends js.Object {
+  trait Hashids extends StObject {
     
     var alphabet: js.Array[String] = js.native
     
@@ -44,13 +52,5 @@ object mod extends js.Object {
     def unhash(input: js.Array[String], alphabet: String): Double = js.native
     
     var version: String = js.native
-  }
-  
-  @js.native
-  class default protected () extends Hashids {
-    def this(salt: String) = this()
-    def this(salt: String, minHashLength: Double) = this()
-    def this(salt: String, minHashLength: js.UndefOr[scala.Nothing], alphabet: String) = this()
-    def this(salt: String, minHashLength: Double, alphabet: String) = this()
   }
 }

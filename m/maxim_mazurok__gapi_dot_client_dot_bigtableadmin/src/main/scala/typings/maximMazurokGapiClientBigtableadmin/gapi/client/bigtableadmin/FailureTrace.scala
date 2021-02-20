@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailureTrace extends js.Object {
+trait FailureTrace extends StObject {
   
   var frames: js.UndefOr[js.Array[Frame]] = js.native
 }
@@ -18,27 +19,15 @@ object FailureTrace {
   }
   
   @scala.inline
-  implicit class FailureTraceOps[Self <: FailureTrace] (val x: Self) extends AnyVal {
+  implicit class FailureTraceMutableBuilder[Self <: FailureTrace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFramesVarargs(value: Frame*): Self = this.set("frames", js.Array(value :_*))
-    
-    @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = this.set("frames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrames: Self = this.set("frames", js.undefined)
+    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
   }
 }

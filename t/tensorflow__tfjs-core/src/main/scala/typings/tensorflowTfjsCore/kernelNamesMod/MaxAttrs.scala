@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxAttrs extends js.Object {
+trait MaxAttrs extends StObject {
   
   var keepDims: Boolean = js.native
   
@@ -20,27 +21,15 @@ object MaxAttrs {
   }
   
   @scala.inline
-  implicit class MaxAttrsOps[Self <: MaxAttrs] (val x: Self) extends AnyVal {
+  implicit class MaxAttrsMutableBuilder[Self <: MaxAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeepDims(value: Boolean): Self = StObject.set(x, "keepDims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReductionIndices(value: Double | js.Array[Double]): Self = StObject.set(x, "reductionIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeepDims(value: Boolean): Self = this.set("keepDims", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReductionIndicesVarargs(value: Double*): Self = this.set("reductionIndices", js.Array(value :_*))
-    
-    @scala.inline
-    def setReductionIndices(value: Double | js.Array[Double]): Self = this.set("reductionIndices", value.asInstanceOf[js.Any])
+    def setReductionIndicesVarargs(value: Double*): Self = StObject.set(x, "reductionIndices", js.Array(value :_*))
   }
 }

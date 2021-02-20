@@ -1,11 +1,12 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CSSVariableReferenceValue extends js.Object {
+trait CSSVariableReferenceValue extends StObject {
   
   val fallback: js.UndefOr[CSSUnparsedValue] = js.native
   
@@ -20,27 +21,15 @@ object CSSVariableReferenceValue {
   }
   
   @scala.inline
-  implicit class CSSVariableReferenceValueOps[Self <: CSSVariableReferenceValue] (val x: Self) extends AnyVal {
+  implicit class CSSVariableReferenceValueMutableBuilder[Self <: CSSVariableReferenceValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFallback(value: CSSUnparsedValue): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVariable(value: String): Self = this.set("variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFallback(value: CSSUnparsedValue): Self = this.set("fallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFallback: Self = this.set("fallback", js.undefined)
+    def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
   }
 }

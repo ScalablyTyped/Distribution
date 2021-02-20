@@ -3,12 +3,13 @@ package typings.chrome.anon
 import typings.chrome.chrome.permissions.Permissions
 import typings.chrome.chrome.permissions.PermissionsAddedEvent
 import typings.chrome.chrome.permissions.PermissionsRemovedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofpermissions extends js.Object {
+trait Typeofpermissions extends StObject {
   
   def contains(permissions: Permissions, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
   

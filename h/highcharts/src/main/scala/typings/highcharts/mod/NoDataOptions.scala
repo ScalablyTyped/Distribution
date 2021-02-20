@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoDataOptions extends js.Object {
+trait NoDataOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) An object of additional SVG attributes for
@@ -39,42 +40,30 @@ object NoDataOptions {
   }
   
   @scala.inline
-  implicit class NoDataOptionsOps[Self <: NoDataOptions] (val x: Self) extends AnyVal {
+  implicit class NoDataOptionsMutableBuilder[Self <: NoDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttr(value: SVGAttributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: AlignObject | NoDataPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttr(value: SVGAttributes): Self = this.set("attr", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteAttr: Self = this.set("attr", js.undefined)
+    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: AlignObject | NoDataPositionOptions): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setUseHTML(value: Boolean): Self = this.set("useHTML", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseHTML: Self = this.set("useHTML", js.undefined)
+    def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleArgs extends js.Object {
+trait RuleArgs extends StObject {
   
   var assert: js.UndefOr[(js.Function1[/* value */ js.Any, Boolean]) | AnySchema] = js.native
   
@@ -29,48 +30,36 @@ object RuleArgs {
   }
   
   @scala.inline
-  implicit class RuleArgsOps[Self <: RuleArgs] (val x: Self) extends AnyVal {
+  implicit class RuleArgsMutableBuilder[Self <: RuleArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssert(value: (js.Function1[/* value */ js.Any, Boolean]) | AnySchema): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssertFunction1(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssertFunction1(value: /* value */ js.Any => Boolean): Self = this.set("assert", js.Any.fromFunction1(value))
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setAssert(value: (js.Function1[/* value */ js.Any, Boolean]) | AnySchema): Self = this.set("assert", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssert: Self = this.set("assert", js.undefined)
+    def setNormalize(value: /* value */ js.Any => _): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setRef(value: Boolean): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalize(value: /* value */ js.Any => _): Self = this.set("normalize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteNormalize: Self = this.set("normalize", js.undefined)
-    
-    @scala.inline
-    def setRef(value: Boolean): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

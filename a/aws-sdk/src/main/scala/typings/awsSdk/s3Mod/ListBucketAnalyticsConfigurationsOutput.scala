@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBucketAnalyticsConfigurationsOutput extends js.Object {
+trait ListBucketAnalyticsConfigurationsOutput extends StObject {
   
   /**
     * The list of analytics configurations for a bucket.
@@ -36,45 +37,33 @@ object ListBucketAnalyticsConfigurationsOutput {
   }
   
   @scala.inline
-  implicit class ListBucketAnalyticsConfigurationsOutputOps[Self <: ListBucketAnalyticsConfigurationsOutput] (val x: Self) extends AnyVal {
+  implicit class ListBucketAnalyticsConfigurationsOutputMutableBuilder[Self <: ListBucketAnalyticsConfigurationsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyticsConfigurationList(value: AnalyticsConfigurationList): Self = StObject.set(x, "AnalyticsConfigurationList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyticsConfigurationListUndefined: Self = StObject.set(x, "AnalyticsConfigurationList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalyticsConfigurationListVarargs(value: AnalyticsConfiguration*): Self = StObject.set(x, "AnalyticsConfigurationList", js.Array(value :_*))
     
     @scala.inline
-    def setAnalyticsConfigurationListVarargs(value: AnalyticsConfiguration*): Self = this.set("AnalyticsConfigurationList", js.Array(value :_*))
+    def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyticsConfigurationList(value: AnalyticsConfigurationList): Self = this.set("AnalyticsConfigurationList", value.asInstanceOf[js.Any])
+    def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
     
     @scala.inline
-    def deleteAnalyticsConfigurationList: Self = this.set("AnalyticsConfigurationList", js.undefined)
+    def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: Token): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    def setNextContinuationToken(value: NextToken): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
-    
-    @scala.inline
-    def setNextContinuationToken(value: NextToken): Self = this.set("NextContinuationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextContinuationToken: Self = this.set("NextContinuationToken", js.undefined)
+    def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
   }
 }

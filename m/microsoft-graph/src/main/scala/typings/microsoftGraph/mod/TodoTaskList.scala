@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,69 +38,57 @@ object TodoTaskList {
   }
   
   @scala.inline
-  implicit class TodoTaskListOps[Self <: TodoTaskList] (val x: Self) extends AnyVal {
+  implicit class TodoTaskListMutableBuilder[Self <: TodoTaskList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setExtensionsNull: Self = StObject.set(x, "extensions", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = this.set("extensions", js.Array(value :_*))
+    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setIsOwner(value: Boolean): Self = StObject.set(x, "isOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setIsOwnerUndefined: Self = StObject.set(x, "isOwner", js.undefined)
     
     @scala.inline
-    def setExtensionsNull: Self = this.set("extensions", null)
+    def setIsShared(value: Boolean): Self = StObject.set(x, "isShared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOwner(value: Boolean): Self = this.set("isOwner", value.asInstanceOf[js.Any])
+    def setIsSharedUndefined: Self = StObject.set(x, "isShared", js.undefined)
     
     @scala.inline
-    def deleteIsOwner: Self = this.set("isOwner", js.undefined)
+    def setTasks(value: NullableOption[js.Array[TodoTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsShared(value: Boolean): Self = this.set("isShared", value.asInstanceOf[js.Any])
+    def setTasksNull: Self = StObject.set(x, "tasks", null)
     
     @scala.inline
-    def deleteIsShared: Self = this.set("isShared", js.undefined)
+    def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
     @scala.inline
-    def setTasksVarargs(value: TodoTask*): Self = this.set("tasks", js.Array(value :_*))
+    def setTasksVarargs(value: TodoTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
     
     @scala.inline
-    def setTasks(value: NullableOption[js.Array[TodoTask]]): Self = this.set("tasks", value.asInstanceOf[js.Any])
+    def setWellknownListName(value: WellknownListName): Self = StObject.set(x, "wellknownListName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTasks: Self = this.set("tasks", js.undefined)
-    
-    @scala.inline
-    def setTasksNull: Self = this.set("tasks", null)
-    
-    @scala.inline
-    def setWellknownListName(value: WellknownListName): Self = this.set("wellknownListName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWellknownListName: Self = this.set("wellknownListName", js.undefined)
+    def setWellknownListNameUndefined: Self = StObject.set(x, "wellknownListName", js.undefined)
   }
 }

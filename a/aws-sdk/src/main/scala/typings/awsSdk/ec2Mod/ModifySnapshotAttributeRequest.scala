@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifySnapshotAttributeRequest extends js.Object {
+trait ModifySnapshotAttributeRequest extends StObject {
   
   /**
     * The snapshot attribute to modify. Only volume creation permissions can be modified.
@@ -51,63 +52,51 @@ object ModifySnapshotAttributeRequest {
   }
   
   @scala.inline
-  implicit class ModifySnapshotAttributeRequestOps[Self <: ModifySnapshotAttributeRequest] (val x: Self) extends AnyVal {
+  implicit class ModifySnapshotAttributeRequestMutableBuilder[Self <: ModifySnapshotAttributeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: SnapshotAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateVolumePermission(value: CreateVolumePermissionModifications): Self = StObject.set(x, "CreateVolumePermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    def setCreateVolumePermissionUndefined: Self = StObject.set(x, "CreateVolumePermission", js.undefined)
     
     @scala.inline
-    def setAttribute(value: SnapshotAttributeName): Self = this.set("Attribute", value.asInstanceOf[js.Any])
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttribute: Self = this.set("Attribute", js.undefined)
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setCreateVolumePermission(value: CreateVolumePermissionModifications): Self = this.set("CreateVolumePermission", value.asInstanceOf[js.Any])
+    def setGroupNames(value: GroupNameStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateVolumePermission: Self = this.set("CreateVolumePermission", js.undefined)
+    def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setGroupNamesVarargs(value: SecurityGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setOperationType(value: OperationType): Self = StObject.set(x, "OperationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupNamesVarargs(value: SecurityGroupName*): Self = this.set("GroupNames", js.Array(value :_*))
+    def setOperationTypeUndefined: Self = StObject.set(x, "OperationType", js.undefined)
     
     @scala.inline
-    def setGroupNames(value: GroupNameStringList): Self = this.set("GroupNames", value.asInstanceOf[js.Any])
+    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupNames: Self = this.set("GroupNames", js.undefined)
+    def setUserIds(value: UserIdStringList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: OperationType): Self = this.set("OperationType", value.asInstanceOf[js.Any])
+    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
     @scala.inline
-    def deleteOperationType: Self = this.set("OperationType", js.undefined)
-    
-    @scala.inline
-    def setUserIdsVarargs(value: String*): Self = this.set("UserIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserIds(value: UserIdStringList): Self = this.set("UserIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIds: Self = this.set("UserIds", js.undefined)
+    def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
   }
 }

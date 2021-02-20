@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListIdentityPoolsResponse extends js.Object {
+trait ListIdentityPoolsResponse extends StObject {
   
   /**
     * The identity pools returned by the ListIdentityPools action.
@@ -26,33 +27,21 @@ object ListIdentityPoolsResponse {
   }
   
   @scala.inline
-  implicit class ListIdentityPoolsResponseOps[Self <: ListIdentityPoolsResponse] (val x: Self) extends AnyVal {
+  implicit class ListIdentityPoolsResponseMutableBuilder[Self <: ListIdentityPoolsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityPools(value: IdentityPoolsList): Self = StObject.set(x, "IdentityPools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityPoolsUndefined: Self = StObject.set(x, "IdentityPools", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityPoolsVarargs(value: IdentityPoolShortDescription*): Self = StObject.set(x, "IdentityPools", js.Array(value :_*))
     
     @scala.inline
-    def setIdentityPoolsVarargs(value: IdentityPoolShortDescription*): Self = this.set("IdentityPools", js.Array(value :_*))
+    def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityPools(value: IdentityPoolsList): Self = this.set("IdentityPools", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityPools: Self = this.set("IdentityPools", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationKey): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.angularCommon.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MXNMYR extends js.Object {
+trait MXNMYR extends StObject {
   
   var CAD: js.Array[js.UndefOr[String]] = js.native
   
@@ -35,54 +36,42 @@ object MXNMYR {
   }
   
   @scala.inline
-  implicit class MXNMYROps[Self <: MXNMYR] (val x: Self) extends AnyVal {
+  implicit class MXNMYRMutableBuilder[Self <: MXNMYR] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "CAD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCADVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "CAD", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCADVarargs(value: js.UndefOr[String]*): Self = this.set("CAD", js.Array(value :_*))
+    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
     @scala.inline
-    def setCAD(value: js.Array[js.UndefOr[String]]): Self = this.set("CAD", value.asInstanceOf[js.Any])
+    def setMXN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "MXN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJPYVarargs(value: String*): Self = this.set("JPY", js.Array(value :_*))
+    def setMXNVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "MXN", js.Array(value :_*))
     
     @scala.inline
-    def setJPY(value: js.Array[String]): Self = this.set("JPY", value.asInstanceOf[js.Any])
+    def setMYR(value: js.Array[String]): Self = StObject.set(x, "MYR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMXNVarargs(value: js.UndefOr[String]*): Self = this.set("MXN", js.Array(value :_*))
+    def setMYRVarargs(value: String*): Self = StObject.set(x, "MYR", js.Array(value :_*))
     
     @scala.inline
-    def setMXN(value: js.Array[js.UndefOr[String]]): Self = this.set("MXN", value.asInstanceOf[js.Any])
+    def setTWD(value: js.Array[String]): Self = StObject.set(x, "TWD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMYRVarargs(value: String*): Self = this.set("MYR", js.Array(value :_*))
+    def setTWDVarargs(value: String*): Self = StObject.set(x, "TWD", js.Array(value :_*))
     
     @scala.inline
-    def setMYR(value: js.Array[String]): Self = this.set("MYR", value.asInstanceOf[js.Any])
+    def setUSD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTWDVarargs(value: String*): Self = this.set("TWD", js.Array(value :_*))
-    
-    @scala.inline
-    def setTWD(value: js.Array[String]): Self = this.set("TWD", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUSDVarargs(value: js.UndefOr[String]*): Self = this.set("USD", js.Array(value :_*))
-    
-    @scala.inline
-    def setUSD(value: js.Array[js.UndefOr[String]]): Self = this.set("USD", value.asInstanceOf[js.Any])
+    def setUSDVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "USD", js.Array(value :_*))
   }
 }

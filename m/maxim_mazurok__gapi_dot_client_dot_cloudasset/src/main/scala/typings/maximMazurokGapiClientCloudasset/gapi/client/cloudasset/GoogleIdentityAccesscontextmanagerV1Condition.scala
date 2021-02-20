@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleIdentityAccesscontextmanagerV1Condition extends js.Object {
+trait GoogleIdentityAccesscontextmanagerV1Condition extends StObject {
   
   /** Device specific restrictions, all restrictions must hold for the Condition to be true. If not specified, all devices are allowed. */
   var devicePolicy: js.UndefOr[GoogleIdentityAccesscontextmanagerV1DevicePolicy] = js.native
@@ -47,66 +48,54 @@ object GoogleIdentityAccesscontextmanagerV1Condition {
   }
   
   @scala.inline
-  implicit class GoogleIdentityAccesscontextmanagerV1ConditionOps[Self <: GoogleIdentityAccesscontextmanagerV1Condition] (val x: Self) extends AnyVal {
+  implicit class GoogleIdentityAccesscontextmanagerV1ConditionMutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1Condition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevicePolicy(value: GoogleIdentityAccesscontextmanagerV1DevicePolicy): Self = StObject.set(x, "devicePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevicePolicyUndefined: Self = StObject.set(x, "devicePolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpSubnetworks(value: js.Array[String]): Self = StObject.set(x, "ipSubnetworks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicePolicy(value: GoogleIdentityAccesscontextmanagerV1DevicePolicy): Self = this.set("devicePolicy", value.asInstanceOf[js.Any])
+    def setIpSubnetworksUndefined: Self = StObject.set(x, "ipSubnetworks", js.undefined)
     
     @scala.inline
-    def deleteDevicePolicy: Self = this.set("devicePolicy", js.undefined)
+    def setIpSubnetworksVarargs(value: String*): Self = StObject.set(x, "ipSubnetworks", js.Array(value :_*))
     
     @scala.inline
-    def setIpSubnetworksVarargs(value: String*): Self = this.set("ipSubnetworks", js.Array(value :_*))
+    def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpSubnetworks(value: js.Array[String]): Self = this.set("ipSubnetworks", value.asInstanceOf[js.Any])
+    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
     @scala.inline
-    def deleteIpSubnetworks: Self = this.set("ipSubnetworks", js.undefined)
+    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setMembersVarargs(value: String*): Self = this.set("members", js.Array(value :_*))
+    def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers(value: js.Array[String]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setNegateUndefined: Self = StObject.set(x, "negate", js.undefined)
     
     @scala.inline
-    def deleteMembers: Self = this.set("members", js.undefined)
+    def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegate(value: Boolean): Self = this.set("negate", value.asInstanceOf[js.Any])
+    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
     @scala.inline
-    def deleteNegate: Self = this.set("negate", js.undefined)
+    def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
     
     @scala.inline
-    def setRegionsVarargs(value: String*): Self = this.set("regions", js.Array(value :_*))
+    def setRequiredAccessLevels(value: js.Array[String]): Self = StObject.set(x, "requiredAccessLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegions(value: js.Array[String]): Self = this.set("regions", value.asInstanceOf[js.Any])
+    def setRequiredAccessLevelsUndefined: Self = StObject.set(x, "requiredAccessLevels", js.undefined)
     
     @scala.inline
-    def deleteRegions: Self = this.set("regions", js.undefined)
-    
-    @scala.inline
-    def setRequiredAccessLevelsVarargs(value: String*): Self = this.set("requiredAccessLevels", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequiredAccessLevels(value: js.Array[String]): Self = this.set("requiredAccessLevels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredAccessLevels: Self = this.set("requiredAccessLevels", js.undefined)
+    def setRequiredAccessLevelsVarargs(value: String*): Self = StObject.set(x, "requiredAccessLevels", js.Array(value :_*))
   }
 }

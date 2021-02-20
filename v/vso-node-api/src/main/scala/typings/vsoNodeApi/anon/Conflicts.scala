@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Conflicts extends js.Object {
+trait Conflicts extends StObject {
   
   var conflicts: scala.Double = js.native
   
@@ -35,36 +36,24 @@ object Conflicts {
   }
   
   @scala.inline
-  implicit class ConflictsOps[Self <: Conflicts] (val x: Self) extends AnyVal {
+  implicit class ConflictsMutableBuilder[Self <: Conflicts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConflicts(value: scala.Double): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailure(value: scala.Double): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflicts(value: scala.Double): Self = this.set("conflicts", value.asInstanceOf[js.Any])
+    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailure(value: scala.Double): Self = this.set("failure", value.asInstanceOf[js.Any])
+    def setRejectedByPolicy(value: scala.Double): Self = StObject.set(x, "rejectedByPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotSet(value: scala.Double): Self = this.set("notSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueued(value: scala.Double): Self = this.set("queued", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRejectedByPolicy(value: scala.Double): Self = this.set("rejectedByPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = this.set("succeeded", value.asInstanceOf[js.Any])
+    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

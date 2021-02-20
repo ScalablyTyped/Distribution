@@ -4,6 +4,7 @@ import typings.pulumiKubernetes.replicationControllerMod.ReplicationControllerAr
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,9 +26,7 @@ class ReplicationController protected ()
   def this(name: String, args: ReplicationControllerArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/kubernetes/core", "v1.ReplicationController")
-@js.native
-object ReplicationController extends js.Object {
+object ReplicationController {
   
   /**
     * Get an existing ReplicationController resource's state with the given name, ID, and optional extra
@@ -37,12 +36,18 @@ object ReplicationController extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/kubernetes/core", "v1.ReplicationController.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiKubernetes.replicationControllerMod.ReplicationController = js.native
+  @JSImport("@pulumi/kubernetes/core", "v1.ReplicationController.get")
+  @js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.replicationControllerMod.ReplicationController = js.native
   
   /**
     * Returns true if the given object is an instance of ReplicationController.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/kubernetes/core", "v1.ReplicationController.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/replicationController.ReplicationController */ Boolean = js.native
 }

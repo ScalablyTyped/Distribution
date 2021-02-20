@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a string like **3.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2CharacterMaskConfig extends js.Object {
+trait SchemaGooglePrivacyDlpV2CharacterMaskConfig extends StObject {
   
   /**
     * When masking a string, items in this list will be skipped when replacing.
@@ -55,45 +56,33 @@ object SchemaGooglePrivacyDlpV2CharacterMaskConfig {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CharacterMaskConfigOps[Self <: SchemaGooglePrivacyDlpV2CharacterMaskConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2CharacterMaskConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CharacterMaskConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharactersToIgnore(value: js.Array[SchemaGooglePrivacyDlpV2CharsToIgnore]): Self = StObject.set(x, "charactersToIgnore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharactersToIgnoreUndefined: Self = StObject.set(x, "charactersToIgnore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharactersToIgnoreVarargs(value: SchemaGooglePrivacyDlpV2CharsToIgnore*): Self = StObject.set(x, "charactersToIgnore", js.Array(value :_*))
     
     @scala.inline
-    def setCharactersToIgnoreVarargs(value: SchemaGooglePrivacyDlpV2CharsToIgnore*): Self = this.set("charactersToIgnore", js.Array(value :_*))
+    def setMaskingCharacter(value: String): Self = StObject.set(x, "maskingCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharactersToIgnore(value: js.Array[SchemaGooglePrivacyDlpV2CharsToIgnore]): Self = this.set("charactersToIgnore", value.asInstanceOf[js.Any])
+    def setMaskingCharacterUndefined: Self = StObject.set(x, "maskingCharacter", js.undefined)
     
     @scala.inline
-    def deleteCharactersToIgnore: Self = this.set("charactersToIgnore", js.undefined)
+    def setNumberToMask(value: Double): Self = StObject.set(x, "numberToMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskingCharacter(value: String): Self = this.set("maskingCharacter", value.asInstanceOf[js.Any])
+    def setNumberToMaskUndefined: Self = StObject.set(x, "numberToMask", js.undefined)
     
     @scala.inline
-    def deleteMaskingCharacter: Self = this.set("maskingCharacter", js.undefined)
+    def setReverseOrder(value: Boolean): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberToMask(value: Double): Self = this.set("numberToMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberToMask: Self = this.set("numberToMask", js.undefined)
-    
-    @scala.inline
-    def setReverseOrder(value: Boolean): Self = this.set("reverseOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReverseOrder: Self = this.set("reverseOrder", js.undefined)
+    def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
   }
 }

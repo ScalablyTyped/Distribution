@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.iot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRuleErrorActionSqs extends js.Object {
+trait TopicRuleErrorActionSqs extends StObject {
   
   /**
     * The URL of the Amazon SQS queue.
@@ -31,27 +32,15 @@ object TopicRuleErrorActionSqs {
   }
   
   @scala.inline
-  implicit class TopicRuleErrorActionSqsOps[Self <: TopicRuleErrorActionSqs] (val x: Self) extends AnyVal {
+  implicit class TopicRuleErrorActionSqsMutableBuilder[Self <: TopicRuleErrorActionSqs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueueUrl(value: String): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQueueUrl(value: String): Self = this.set("queueUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseBase64(value: Boolean): Self = this.set("useBase64", value.asInstanceOf[js.Any])
+    def setUseBase64(value: Boolean): Self = StObject.set(x, "useBase64", value.asInstanceOf[js.Any])
   }
 }

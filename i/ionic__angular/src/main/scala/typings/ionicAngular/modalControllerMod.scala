@@ -7,14 +7,14 @@ import typings.ionicAngular.overlayMod.OverlayBaseController
 import typings.ionicCore.componentsMod.global.HTMLIonModalElement
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.modalInterfaceMod.ModalOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/providers/modal-controller", JSImport.Namespace)
-@js.native
-object modalControllerMod extends js.Object {
+object modalControllerMod {
   
+  @JSImport("@ionic/angular/providers/modal-controller", "ModalController")
   @js.native
   class ModalController protected () extends OverlayBaseController[ModalOptions[ComponentRef], HTMLIonModalElement] {
     def this(angularDelegate: AngularDelegate, resolver: ComponentFactoryResolver, injector: Injector) = this()

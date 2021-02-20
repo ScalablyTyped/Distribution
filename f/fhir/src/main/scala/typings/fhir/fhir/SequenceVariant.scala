@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,84 +75,72 @@ object SequenceVariant {
   }
   
   @scala.inline
-  implicit class SequenceVariantOps[Self <: SequenceVariant] (val x: Self) extends AnyVal {
+  implicit class SequenceVariantMutableBuilder[Self <: SequenceVariant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCigar(value: String): Self = StObject.set(x, "cigar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCigarUndefined: Self = StObject.set(x, "cigar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: integer): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_cigar(value: Element): Self = this.set("_cigar", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def delete_cigar: Self = this.set("_cigar", js.undefined)
+    def setObservedAllele(value: String): Self = StObject.set(x, "observedAllele", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_end(value: Element): Self = this.set("_end", value.asInstanceOf[js.Any])
+    def setObservedAlleleUndefined: Self = StObject.set(x, "observedAllele", js.undefined)
     
     @scala.inline
-    def delete_end: Self = this.set("_end", js.undefined)
+    def setReferenceAllele(value: String): Self = StObject.set(x, "referenceAllele", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_observedAllele(value: Element): Self = this.set("_observedAllele", value.asInstanceOf[js.Any])
+    def setReferenceAlleleUndefined: Self = StObject.set(x, "referenceAllele", js.undefined)
     
     @scala.inline
-    def delete_observedAllele: Self = this.set("_observedAllele", js.undefined)
+    def setStart(value: integer): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_referenceAllele(value: Element): Self = this.set("_referenceAllele", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def delete_referenceAllele: Self = this.set("_referenceAllele", js.undefined)
+    def setVariantPointer(value: Reference): Self = StObject.set(x, "variantPointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_start(value: Element): Self = this.set("_start", value.asInstanceOf[js.Any])
+    def setVariantPointerUndefined: Self = StObject.set(x, "variantPointer", js.undefined)
     
     @scala.inline
-    def delete_start: Self = this.set("_start", js.undefined)
+    def set_cigar(value: Element): Self = StObject.set(x, "_cigar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCigar(value: String): Self = this.set("cigar", value.asInstanceOf[js.Any])
+    def set_cigarUndefined: Self = StObject.set(x, "_cigar", js.undefined)
     
     @scala.inline
-    def deleteCigar: Self = this.set("cigar", js.undefined)
+    def set_end(value: Element): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: integer): Self = this.set("end", value.asInstanceOf[js.Any])
+    def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def set_observedAllele(value: Element): Self = StObject.set(x, "_observedAllele", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObservedAllele(value: String): Self = this.set("observedAllele", value.asInstanceOf[js.Any])
+    def set_observedAlleleUndefined: Self = StObject.set(x, "_observedAllele", js.undefined)
     
     @scala.inline
-    def deleteObservedAllele: Self = this.set("observedAllele", js.undefined)
+    def set_referenceAllele(value: Element): Self = StObject.set(x, "_referenceAllele", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceAllele(value: String): Self = this.set("referenceAllele", value.asInstanceOf[js.Any])
+    def set_referenceAlleleUndefined: Self = StObject.set(x, "_referenceAllele", js.undefined)
     
     @scala.inline
-    def deleteReferenceAllele: Self = this.set("referenceAllele", js.undefined)
+    def set_start(value: Element): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: integer): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setVariantPointer(value: Reference): Self = this.set("variantPointer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariantPointer: Self = this.set("variantPointer", js.undefined)
+    def set_startUndefined: Self = StObject.set(x, "_start", js.undefined)
   }
 }

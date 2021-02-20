@@ -1,6 +1,7 @@
 package typings.node.dnsMod
 
 import typings.node.nodeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,21 +21,9 @@ object LookupAllOptions {
   }
   
   @scala.inline
-  implicit class LookupAllOptionsOps[Self <: LookupAllOptions] (val x: Self) extends AnyVal {
+  implicit class LookupAllOptionsMutableBuilder[Self <: LookupAllOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAll(value: `true`): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setAll(value: `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
   }
 }

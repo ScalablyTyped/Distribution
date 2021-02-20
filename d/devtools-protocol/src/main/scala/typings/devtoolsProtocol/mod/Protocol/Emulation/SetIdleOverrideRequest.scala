@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Emulation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetIdleOverrideRequest extends js.Object {
+trait SetIdleOverrideRequest extends StObject {
   
   /**
     * Mock isScreenUnlocked
@@ -26,24 +27,12 @@ object SetIdleOverrideRequest {
   }
   
   @scala.inline
-  implicit class SetIdleOverrideRequestOps[Self <: SetIdleOverrideRequest] (val x: Self) extends AnyVal {
+  implicit class SetIdleOverrideRequestMutableBuilder[Self <: SetIdleOverrideRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsScreenUnlocked(value: Boolean): Self = StObject.set(x, "isScreenUnlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsScreenUnlocked(value: Boolean): Self = this.set("isScreenUnlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsUserActive(value: Boolean): Self = this.set("isUserActive", value.asInstanceOf[js.Any])
+    def setIsUserActive(value: Boolean): Self = StObject.set(x, "isUserActive", value.asInstanceOf[js.Any])
   }
 }

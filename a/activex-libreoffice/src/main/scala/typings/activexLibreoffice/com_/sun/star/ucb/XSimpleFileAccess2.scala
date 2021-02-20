@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XStream
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,21 +55,9 @@ object XSimpleFileAccess2 {
   }
   
   @scala.inline
-  implicit class XSimpleFileAccess2Ops[Self <: XSimpleFileAccess2] (val x: Self) extends AnyVal {
+  implicit class XSimpleFileAccess2MutableBuilder[Self <: XSimpleFileAccess2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWriteFile(value: (String, XInputStream) => Unit): Self = this.set("writeFile", js.Any.fromFunction2(value))
+    def setWriteFile(value: (String, XInputStream) => Unit): Self = StObject.set(x, "writeFile", js.Any.fromFunction2(value))
   }
 }

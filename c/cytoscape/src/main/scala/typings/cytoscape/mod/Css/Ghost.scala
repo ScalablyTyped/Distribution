@@ -3,6 +3,7 @@ package typings.cytoscape.mod.Css
 import typings.cytoscape.cytoscapeStrings.no
 import typings.cytoscape.cytoscapeStrings.yes
 import typings.cytoscape.mod.NodeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://js.cytoscape.org/#style/ghost
   */
 @js.native
-trait Ghost extends js.Object {
+trait Ghost extends StObject {
   
   /**
     * Whether to use the ghost effect; may be yes or no.
@@ -51,42 +52,30 @@ object Ghost {
   }
   
   @scala.inline
-  implicit class GhostOps[Self <: Ghost] (val x: Self) extends AnyVal {
+  implicit class GhostMutableBuilder[Self <: Ghost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGhost(value: PropertyValueNode[yes | no]): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setGhost-offset-x`(value: PropertyValueNode[Double]): Self = StObject.set(x, "ghost-offset-x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setGhost-offset-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "ghost-offset-x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGhostFunction1(value: NodeSingular => yes | no): Self = this.set("ghost", js.Any.fromFunction1(value))
+    def `setGhost-offset-y`(value: PropertyValueNode[Double]): Self = StObject.set(x, "ghost-offset-y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhost(value: PropertyValueNode[yes | no]): Self = this.set("ghost", value.asInstanceOf[js.Any])
+    def `setGhost-offset-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "ghost-offset-y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setGhost-offset-xFunction1`(value: NodeSingular => Double): Self = this.set("ghost-offset-x", js.Any.fromFunction1(value))
+    def `setGhost-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "ghost-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setGhost-offset-x`(value: PropertyValueNode[Double]): Self = this.set("ghost-offset-x", value.asInstanceOf[js.Any])
+    def `setGhost-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "ghost-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setGhost-offset-yFunction1`(value: NodeSingular => Double): Self = this.set("ghost-offset-y", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setGhost-offset-y`(value: PropertyValueNode[Double]): Self = this.set("ghost-offset-y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setGhost-opacityFunction1`(value: NodeSingular => Double): Self = this.set("ghost-opacity", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setGhost-opacity`(value: PropertyValueNode[Double]): Self = this.set("ghost-opacity", value.asInstanceOf[js.Any])
+    def setGhostFunction1(value: NodeSingular => yes | no): Self = StObject.set(x, "ghost", js.Any.fromFunction1(value))
   }
 }

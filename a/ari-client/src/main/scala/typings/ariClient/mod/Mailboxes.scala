@@ -3,12 +3,13 @@ package typings.ariClient.mod
 import typings.ariClient.anon.MailboxName
 import typings.ariClient.anon.NewMessages
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mailboxes extends js.Object {
+trait Mailboxes extends StObject {
   
   /**
     * Destroy a mailbox.

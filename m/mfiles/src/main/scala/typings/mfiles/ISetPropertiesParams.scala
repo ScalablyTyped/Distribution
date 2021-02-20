@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFACLEnforcingMode
 import typings.mfiles.MFiles.MFObjectOperationFlags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISetPropertiesParams extends js.Object {
+trait ISetPropertiesParams extends StObject {
   
   var AccessControlListEnforcingMode: MFACLEnforcingMode = js.native
   
@@ -59,50 +60,38 @@ object ISetPropertiesParams {
   }
   
   @scala.inline
-  implicit class ISetPropertiesParamsOps[Self <: ISetPropertiesParams] (val x: Self) extends AnyVal {
+  implicit class ISetPropertiesParamsMutableBuilder[Self <: ISetPropertiesParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlListEnforcingMode(value: MFACLEnforcingMode): Self = StObject.set(x, "AccessControlListEnforcingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlListProvidedForEnforcing(value: IAccessControlList): Self = StObject.set(x, "AccessControlListProvidedForEnforcing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowModifyingCheckedInObject(value: Boolean): Self = StObject.set(x, "AllowModifyingCheckedInObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlListEnforcingMode(value: MFACLEnforcingMode): Self = this.set("AccessControlListEnforcingMode", value.asInstanceOf[js.Any])
+    def setClone(value: () => ISetPropertiesParams): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessControlListProvidedForEnforcing(value: IAccessControlList): Self = this.set("AccessControlListProvidedForEnforcing", value.asInstanceOf[js.Any])
+    def setFailIfNotLatestCheckedInVersion(value: Boolean): Self = StObject.set(x, "FailIfNotLatestCheckedInVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowModifyingCheckedInObject(value: Boolean): Self = this.set("AllowModifyingCheckedInObject", value.asInstanceOf[js.Any])
+    def setFullSet(value: Boolean): Self = StObject.set(x, "FullSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ISetPropertiesParams): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailIfNotLatestCheckedInVersion(value: Boolean): Self = this.set("FailIfNotLatestCheckedInVersion", value.asInstanceOf[js.Any])
+    def setPropertyValuesToRemove(value: IIDs): Self = StObject.set(x, "PropertyValuesToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullSet(value: Boolean): Self = this.set("FullSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjVer(value: IObjVer): Self = this.set("ObjVer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyValuesToRemove(value: IIDs): Self = this.set("PropertyValuesToRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyValuesToSet(value: IPropertyValues): Self = this.set("PropertyValuesToSet", value.asInstanceOf[js.Any])
+    def setPropertyValuesToSet(value: IPropertyValues): Self = StObject.set(x, "PropertyValuesToSet", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSetWithPermissions(
       value: (IObjVer, Boolean, Boolean, IPropertyValues, Boolean, IIDs, MFObjectOperationFlags, MFACLEnforcingMode, IAccessControlList) => Unit
-    ): Self = this.set("SetWithPermissions", js.Any.fromFunction9(value))
+    ): Self = StObject.set(x, "SetWithPermissions", js.Any.fromFunction9(value))
   }
 }

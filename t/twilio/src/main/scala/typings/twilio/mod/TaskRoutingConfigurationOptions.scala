@@ -1,11 +1,12 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskRoutingConfigurationOptions extends js.Object {
+trait TaskRoutingConfigurationOptions extends StObject {
   
   var defaultFilter: js.UndefOr[WorkflowRuleOptions] = js.native
   
@@ -22,36 +23,24 @@ object TaskRoutingConfigurationOptions {
   }
   
   @scala.inline
-  implicit class TaskRoutingConfigurationOptionsOps[Self <: TaskRoutingConfigurationOptions] (val x: Self) extends AnyVal {
+  implicit class TaskRoutingConfigurationOptionsMutableBuilder[Self <: TaskRoutingConfigurationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultFilter(value: WorkflowRuleOptions): Self = StObject.set(x, "defaultFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultFilterUndefined: Self = StObject.set(x, "defaultFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault_filter(value: WorkflowRuleOptions): Self = StObject.set(x, "default_filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltersVarargs(value: WorkflowRuleOptions*): Self = this.set("filters", js.Array(value :_*))
+    def setDefault_filterUndefined: Self = StObject.set(x, "default_filter", js.undefined)
     
     @scala.inline
-    def setFilters(value: js.Array[WorkflowRuleOptions]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setFilters(value: js.Array[WorkflowRuleOptions]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFilter(value: WorkflowRuleOptions): Self = this.set("defaultFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultFilter: Self = this.set("defaultFilter", js.undefined)
-    
-    @scala.inline
-    def setDefault_filter(value: WorkflowRuleOptions): Self = this.set("default_filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault_filter: Self = this.set("default_filter", js.undefined)
+    def setFiltersVarargs(value: WorkflowRuleOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
   }
 }

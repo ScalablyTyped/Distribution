@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFlowExecutionMessagesResponse extends js.Object {
+trait ListFlowExecutionMessagesResponse extends StObject {
   
   /**
     * A list of objects that contain information about events in the specified flow execution.
@@ -26,33 +27,21 @@ object ListFlowExecutionMessagesResponse {
   }
   
   @scala.inline
-  implicit class ListFlowExecutionMessagesResponseOps[Self <: ListFlowExecutionMessagesResponse] (val x: Self) extends AnyVal {
+  implicit class ListFlowExecutionMessagesResponseMutableBuilder[Self <: ListFlowExecutionMessagesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: FlowExecutionMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessagesVarargs(value: FlowExecutionMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesVarargs(value: FlowExecutionMessage*): Self = this.set("messages", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: FlowExecutionMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

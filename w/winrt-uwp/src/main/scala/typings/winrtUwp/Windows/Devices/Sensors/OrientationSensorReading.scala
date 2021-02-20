@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an orientation-sensor reading. */
 @js.native
-trait OrientationSensorReading extends js.Object {
+trait OrientationSensorReading extends StObject {
   
   /** Gets the Quaternion for the current orientation-sensor reading. */
   var quaternion: SensorQuaternion = js.native
@@ -35,30 +36,18 @@ object OrientationSensorReading {
   }
   
   @scala.inline
-  implicit class OrientationSensorReadingOps[Self <: OrientationSensorReading] (val x: Self) extends AnyVal {
+  implicit class OrientationSensorReadingMutableBuilder[Self <: OrientationSensorReading] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuaternion(value: SensorQuaternion): Self = StObject.set(x, "quaternion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRotationMatrix(value: SensorRotationMatrix): Self = StObject.set(x, "rotationMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuaternion(value: SensorQuaternion): Self = this.set("quaternion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotationMatrix(value: SensorRotationMatrix): Self = this.set("rotationMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYawAccuracy(value: MagnetometerAccuracy): Self = this.set("yawAccuracy", value.asInstanceOf[js.Any])
+    def setYawAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "yawAccuracy", value.asInstanceOf[js.Any])
   }
 }

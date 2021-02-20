@@ -1,18 +1,20 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/eachWeekendOfYear/index", JSImport.Namespace)
-@js.native
-object eachWeekendOfYearIndexMod extends js.Object {
+object eachWeekendOfYearIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/eachWeekendOfYear/index", JSImport.Default)
+    @js.native
     def apply(date: Double): js.Array[Date] = js.native
+    @JSImport("date-fns/eachWeekendOfYear/index", JSImport.Default)
+    @js.native
     def apply(date: Date): js.Array[Date] = js.native
   }
 }

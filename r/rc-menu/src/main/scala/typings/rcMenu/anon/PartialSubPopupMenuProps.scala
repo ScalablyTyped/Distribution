@@ -1,5 +1,6 @@
 package typings.rcMenu.anon
 
+import typings.rcMenu.interfaceMod.BuiltinPlacements
 import typings.rcMenu.interfaceMod.DestroyEventHandler
 import typings.rcMenu.interfaceMod.LegacyFunctionRef
 import typings.rcMenu.interfaceMod.MenuClickEventHandler
@@ -17,17 +18,18 @@ import typings.rcMotion.cssmotionMod.CSSMotionProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenuProps> */
 @js.native
-trait PartialSubPopupMenuProps extends js.Object {
+trait PartialSubPopupMenuProps extends StObject {
   
   var activeKey: js.UndefOr[String] = js.native
   
-  var builtinPlacements: js.UndefOr[typings.rcMenu.interfaceMod.BuiltinPlacements] = js.native
+  var builtinPlacements: js.UndefOr[BuiltinPlacements] = js.native
   
   var children: js.UndefOr[ReactNode] = js.native
   
@@ -110,264 +112,252 @@ object PartialSubPopupMenuProps {
   }
   
   @scala.inline
-  implicit class PartialSubPopupMenuPropsOps[Self <: PartialSubPopupMenuProps] (val x: Self) extends AnyVal {
+  implicit class PartialSubPopupMenuPropsMutableBuilder[Self <: PartialSubPopupMenuProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuiltinPlacements(value: BuiltinPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveKey(value: String): Self = this.set("activeKey", value.asInstanceOf[js.Any])
+    def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
     
     @scala.inline
-    def deleteActiveKey: Self = this.set("activeKey", js.undefined)
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltinPlacements(value: typings.rcMenu.interfaceMod.BuiltinPlacements): Self = this.set("builtinPlacements", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteBuiltinPlacements: Self = this.set("builtinPlacements", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setDefaultActiveFirst(value: Boolean): Self = StObject.set(x, "defaultActiveFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDefaultActiveFirstUndefined: Self = StObject.set(x, "defaultActiveFirst", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDefaultOpenKeys(value: js.Array[String]): Self = StObject.set(x, "defaultOpenKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultActiveFirst(value: Boolean): Self = this.set("defaultActiveFirst", value.asInstanceOf[js.Any])
+    def setDefaultOpenKeysUndefined: Self = StObject.set(x, "defaultOpenKeys", js.undefined)
     
     @scala.inline
-    def deleteDefaultActiveFirst: Self = this.set("defaultActiveFirst", js.undefined)
+    def setDefaultOpenKeysVarargs(value: String*): Self = StObject.set(x, "defaultOpenKeys", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultOpenKeysVarargs(value: String*): Self = this.set("defaultOpenKeys", js.Array(value :_*))
+    def setDefaultSelectedKeys(value: js.Array[String]): Self = StObject.set(x, "defaultSelectedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOpenKeys(value: js.Array[String]): Self = this.set("defaultOpenKeys", value.asInstanceOf[js.Any])
+    def setDefaultSelectedKeysUndefined: Self = StObject.set(x, "defaultSelectedKeys", js.undefined)
     
     @scala.inline
-    def deleteDefaultOpenKeys: Self = this.set("defaultOpenKeys", js.undefined)
+    def setDefaultSelectedKeysVarargs(value: String*): Self = StObject.set(x, "defaultSelectedKeys", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultSelectedKeysVarargs(value: String*): Self = this.set("defaultSelectedKeys", js.Array(value :_*))
+    def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSelectedKeys(value: js.Array[String]): Self = this.set("defaultSelectedKeys", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteDefaultSelectedKeys: Self = this.set("defaultSelectedKeys", js.undefined)
+    def setEventKey(value: typings.react.mod.Key): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: ltr | rtl): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setExpandIcon(value: RenderIconType): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventKey(value: typings.react.mod.Key): Self = this.set("eventKey", value.asInstanceOf[js.Any])
+    def setExpandIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEventKey: Self = this.set("eventKey", js.undefined)
+    def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
     
     @scala.inline
-    def setExpandIconFunction1(value: /* props */ js.Any => ReactNode): Self = this.set("expandIcon", js.Any.fromFunction1(value))
+    def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandIcon(value: RenderIconType): Self = this.set("expandIcon", value.asInstanceOf[js.Any])
+    def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
     @scala.inline
-    def deleteExpandIcon: Self = this.set("expandIcon", js.undefined)
+    def setForceSubMenuRender(value: Boolean): Self = StObject.set(x, "forceSubMenuRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    def setForceSubMenuRenderUndefined: Self = StObject.set(x, "forceSubMenuRender", js.undefined)
     
     @scala.inline
-    def deleteFocusable: Self = this.set("focusable", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceSubMenuRender(value: Boolean): Self = this.set("forceSubMenuRender", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteForceSubMenuRender: Self = this.set("forceSubMenuRender", js.undefined)
+    def setInlineIndent(value: Double): Self = StObject.set(x, "inlineIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInlineIndentUndefined: Self = StObject.set(x, "inlineIndent", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setItemIcon(value: RenderIconType): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineIndent(value: Double): Self = this.set("inlineIndent", value.asInstanceOf[js.Any])
+    def setItemIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "itemIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInlineIndent: Self = this.set("inlineIndent", js.undefined)
+    def setItemIconUndefined: Self = StObject.set(x, "itemIcon", js.undefined)
     
     @scala.inline
-    def setItemIconFunction1(value: /* props */ js.Any => ReactNode): Self = this.set("itemIcon", js.Any.fromFunction1(value))
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemIcon(value: RenderIconType): Self = this.set("itemIcon", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteItemIcon: Self = this.set("itemIcon", js.undefined)
+    def setManualRef(value: /* node */ ReactInstance => Unit): Self = StObject.set(x, "manualRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setManualRefUndefined: Self = StObject.set(x, "manualRef", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setMode(value: MenuMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualRef(value: /* node */ ReactInstance => Unit): Self = this.set("manualRef", js.Any.fromFunction1(value))
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteManualRef: Self = this.set("manualRef", js.undefined)
+    def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: MenuMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotion(value: CSSMotionProps): Self = this.set("motion", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteMotion: Self = this.set("motion", js.undefined)
+    def setOnClick(value: /* info */ MenuInfo => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setOnDeselect(value: /* info */ SelectInfo => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClick(value: /* info */ MenuInfo => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnDestroy(value: /* key */ typings.react.mod.Key => Unit): Self = StObject.set(x, "onDestroy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDeselect(value: /* info */ SelectInfo => Unit): Self = this.set("onDeselect", js.Any.fromFunction1(value))
+    def setOnDestroyUndefined: Self = StObject.set(x, "onDestroy", js.undefined)
     
     @scala.inline
-    def deleteOnDeselect: Self = this.set("onDeselect", js.undefined)
+    def setOnOpenChange(value: /* keys */ js.Array[typings.react.mod.Key] | Open => Unit): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDestroy(value: /* key */ typings.react.mod.Key => Unit): Self = this.set("onDestroy", js.Any.fromFunction1(value))
+    def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
     
     @scala.inline
-    def deleteOnDestroy: Self = this.set("onDestroy", js.undefined)
+    def setOnSelect(value: /* info */ SelectInfo => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnOpenChange(value: /* keys */ js.Array[typings.react.mod.Key] | Open => Unit): Self = this.set("onOpenChange", js.Any.fromFunction1(value))
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def deleteOnOpenChange: Self = this.set("onOpenChange", js.undefined)
+    def setOpenKeys(value: js.Array[String]): Self = StObject.set(x, "openKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSelect(value: /* info */ SelectInfo => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    def setOpenKeysUndefined: Self = StObject.set(x, "openKeys", js.undefined)
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setOpenKeysVarargs(value: String*): Self = StObject.set(x, "openKeys", js.Array(value :_*))
     
     @scala.inline
-    def setOpenKeysVarargs(value: String*): Self = this.set("openKeys", js.Array(value :_*))
+    def setOverflowedIndicator(value: ReactNode): Self = StObject.set(x, "overflowedIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenKeys(value: js.Array[String]): Self = this.set("openKeys", value.asInstanceOf[js.Any])
+    def setOverflowedIndicatorUndefined: Self = StObject.set(x, "overflowedIndicator", js.undefined)
     
     @scala.inline
-    def deleteOpenKeys: Self = this.set("openKeys", js.undefined)
+    def setParentMenu(value: ReactInstance): Self = StObject.set(x, "parentMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowedIndicator(value: ReactNode): Self = this.set("overflowedIndicator", value.asInstanceOf[js.Any])
+    def setParentMenuUndefined: Self = StObject.set(x, "parentMenu", js.undefined)
     
     @scala.inline
-    def deleteOverflowedIndicator: Self = this.set("overflowedIndicator", js.undefined)
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentMenu(value: ReactInstance): Self = this.set("parentMenu", value.asInstanceOf[js.Any])
+    def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
     @scala.inline
-    def deleteParentMenu: Self = this.set("parentMenu", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    def setSelectedKeys(value: js.Array[String]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setSelectedKeysUndefined: Self = StObject.set(x, "selectedKeys", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setSelectedKeysVarargs(value: String*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedKeysVarargs(value: String*): Self = this.set("selectedKeys", js.Array(value :_*))
+    def setStore(value: MiniStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedKeys(value: js.Array[String]): Self = this.set("selectedKeys", value.asInstanceOf[js.Any])
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     @scala.inline
-    def deleteSelectedKeys: Self = this.set("selectedKeys", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStore(value: MiniStore): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
+    def setSubMenuCloseDelay(value: Double): Self = StObject.set(x, "subMenuCloseDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSubMenuCloseDelayUndefined: Self = StObject.set(x, "subMenuCloseDelay", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setSubMenuOpenDelay(value: Double): Self = StObject.set(x, "subMenuOpenDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubMenuCloseDelay(value: Double): Self = this.set("subMenuCloseDelay", value.asInstanceOf[js.Any])
+    def setSubMenuOpenDelayUndefined: Self = StObject.set(x, "subMenuOpenDelay", js.undefined)
     
     @scala.inline
-    def deleteSubMenuCloseDelay: Self = this.set("subMenuCloseDelay", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubMenuOpenDelay(value: Double): Self = this.set("subMenuOpenDelay", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteSubMenuOpenDelay: Self = this.set("subMenuOpenDelay", js.undefined)
+    def setTriggerSubMenuAction(value: TriggerSubMenuAction): Self = StObject.set(x, "triggerSubMenuAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTriggerSubMenuActionUndefined: Self = StObject.set(x, "triggerSubMenuAction", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerSubMenuAction(value: TriggerSubMenuAction): Self = this.set("triggerSubMenuAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerSubMenuAction: Self = this.set("triggerSubMenuAction", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

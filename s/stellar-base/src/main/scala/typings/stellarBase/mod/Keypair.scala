@@ -5,13 +5,14 @@ import typings.stellarBase.anon.PublicKey
 import typings.stellarBase.anon.Type
 import typings.stellarBase.xdrMod.default.DecoratedSignature
 import typings.stellarBase.xdrMod.xdr.AccountId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stellar-base", "Keypair")
 @js.native
-class Keypair protected () extends js.Object {
+class Keypair protected () extends StObject {
   def this(keys: PublicKey) = this()
   def this(keys: Type) = this()
   
@@ -38,17 +39,25 @@ class Keypair protected () extends js.Object {
   def xdrAccountId(): AccountId = js.native
 }
 /* static members */
-@JSImport("stellar-base", "Keypair")
-@js.native
-object Keypair extends js.Object {
+object Keypair {
   
+  @JSImport("stellar-base", "Keypair.fromPublicKey")
+  @js.native
   def fromPublicKey(publicKey: String): Keypair = js.native
   
+  @JSImport("stellar-base", "Keypair.fromRawEd25519Seed")
+  @js.native
   def fromRawEd25519Seed(secretSeed: Buffer): Keypair = js.native
   
+  @JSImport("stellar-base", "Keypair.fromSecret")
+  @js.native
   def fromSecret(secretKey: String): Keypair = js.native
   
+  @JSImport("stellar-base", "Keypair.master")
+  @js.native
   def master(networkPassphrase: String): Keypair = js.native
   
+  @JSImport("stellar-base", "Keypair.random")
+  @js.native
   def random(): Keypair = js.native
 }

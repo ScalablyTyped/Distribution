@@ -1,32 +1,29 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `trainLanguageModel` operation. */
-@JSImport("watson-developer-cloud/speech-to-text/v1-generated", "TrainLanguageModelConstants")
-@js.native
-object TrainLanguageModelConstants extends js.Object {
+object TrainLanguageModelConstants {
   
   @js.native
-  sealed trait WordTypeToAdd extends js.Object
+  sealed trait WordTypeToAdd extends StObject
   /** The type of words from the custom language model's words resource on which to train the model: * `all` (the default) trains the model on all new words, regardless of whether they were extracted from corpora or grammars or were added or modified by the user. * `user` trains the model only on new words that were added or modified by the user directly. The model is not trained on new words extracted from corpora or grammars. */
+  @JSImport("watson-developer-cloud/speech-to-text/v1-generated", "TrainLanguageModelConstants.WordTypeToAdd")
   @js.native
-  object WordTypeToAdd extends js.Object {
+  object WordTypeToAdd extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[WordTypeToAdd with String] = js.native
     
     @js.native
     sealed trait ALL extends WordTypeToAdd
-    /* "all" */ @js.native
-    object ALL extends TopLevel[ALL with String]
+    /* "all" */ val ALL: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.TrainLanguageModelConstants.WordTypeToAdd.ALL with String = js.native
     
     @js.native
     sealed trait USER extends WordTypeToAdd
-    /* "user" */ @js.native
-    object USER extends TopLevel[USER with String]
+    /* "user" */ val USER: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.TrainLanguageModelConstants.WordTypeToAdd.USER with String = js.native
   }
 }

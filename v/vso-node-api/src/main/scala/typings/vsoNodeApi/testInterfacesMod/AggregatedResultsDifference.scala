@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregatedResultsDifference extends js.Object {
+trait AggregatedResultsDifference extends StObject {
   
   var increaseInDuration: js.Any = js.native
   
@@ -32,33 +33,21 @@ object AggregatedResultsDifference {
   }
   
   @scala.inline
-  implicit class AggregatedResultsDifferenceOps[Self <: AggregatedResultsDifference] (val x: Self) extends AnyVal {
+  implicit class AggregatedResultsDifferenceMutableBuilder[Self <: AggregatedResultsDifference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncreaseInDuration(value: js.Any): Self = StObject.set(x, "increaseInDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncreaseInFailures(value: Double): Self = StObject.set(x, "increaseInFailures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncreaseInOtherTests(value: Double): Self = StObject.set(x, "increaseInOtherTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncreaseInDuration(value: js.Any): Self = this.set("increaseInDuration", value.asInstanceOf[js.Any])
+    def setIncreaseInPassedTests(value: Double): Self = StObject.set(x, "increaseInPassedTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncreaseInFailures(value: Double): Self = this.set("increaseInFailures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncreaseInOtherTests(value: Double): Self = this.set("increaseInOtherTests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncreaseInPassedTests(value: Double): Self = this.set("increaseInPassedTests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncreaseInTotalTests(value: Double): Self = this.set("increaseInTotalTests", value.asInstanceOf[js.Any])
+    def setIncreaseInTotalTests(value: Double): Self = StObject.set(x, "increaseInTotalTests", value.asInstanceOf[js.Any])
   }
 }

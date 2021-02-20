@@ -1,5 +1,6 @@
 package typings.powerappsComponentFramework.ComponentFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The interface for the context.mode
   */
 @js.native
-trait Mode extends js.Object {
+trait Mode extends StObject {
   
   /**
     * Height in pixels allocated to the control. If it's -1, then there is no limit on height
@@ -70,42 +71,30 @@ object Mode {
   }
   
   @scala.inline
-  implicit class ModeOps[Self <: Mode] (val x: Self) extends AnyVal {
+  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocatedHeight(value: Double): Self = StObject.set(x, "allocatedHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocatedWidth(value: Double): Self = StObject.set(x, "allocatedWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsControlDisabled(value: Boolean): Self = StObject.set(x, "isControlDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocatedHeight(value: Double): Self = this.set("allocatedHeight", value.asInstanceOf[js.Any])
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocatedWidth(value: Double): Self = this.set("allocatedWidth", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsControlDisabled(value: Boolean): Self = this.set("isControlDisabled", value.asInstanceOf[js.Any])
+    def setSetControlState(value: Dictionary => Boolean): Self = StObject.set(x, "setControlState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("isVisible", value.asInstanceOf[js.Any])
+    def setSetFullScreen(value: Boolean => Unit): Self = StObject.set(x, "setFullScreen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetControlState(value: Dictionary => Boolean): Self = this.set("setControlState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFullScreen(value: Boolean => Unit): Self = this.set("setFullScreen", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTrackContainerResize(value: Boolean => Unit): Self = this.set("trackContainerResize", js.Any.fromFunction1(value))
+    def setTrackContainerResize(value: Boolean => Unit): Self = StObject.set(x, "trackContainerResize", js.Any.fromFunction1(value))
   }
 }

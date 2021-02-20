@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceChangeDetail extends js.Object {
+trait ResourceChangeDetail extends StObject {
   
   /**
     * The identity of the entity that triggered this change. This entity is a member of the group that is specified by the ChangeSource field. For example, if you modified the value of the KeyPairName parameter, the CausingEntity is the name of the parameter (KeyPairName). If the ChangeSource value is DirectModification, no value is given for CausingEntity.
@@ -36,42 +37,30 @@ object ResourceChangeDetail {
   }
   
   @scala.inline
-  implicit class ResourceChangeDetailOps[Self <: ResourceChangeDetail] (val x: Self) extends AnyVal {
+  implicit class ResourceChangeDetailMutableBuilder[Self <: ResourceChangeDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCausingEntity(value: CausingEntity): Self = StObject.set(x, "CausingEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCausingEntityUndefined: Self = StObject.set(x, "CausingEntity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeSource(value: ChangeSource): Self = StObject.set(x, "ChangeSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCausingEntity(value: CausingEntity): Self = this.set("CausingEntity", value.asInstanceOf[js.Any])
+    def setChangeSourceUndefined: Self = StObject.set(x, "ChangeSource", js.undefined)
     
     @scala.inline
-    def deleteCausingEntity: Self = this.set("CausingEntity", js.undefined)
+    def setEvaluation(value: EvaluationType): Self = StObject.set(x, "Evaluation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSource(value: ChangeSource): Self = this.set("ChangeSource", value.asInstanceOf[js.Any])
+    def setEvaluationUndefined: Self = StObject.set(x, "Evaluation", js.undefined)
     
     @scala.inline
-    def deleteChangeSource: Self = this.set("ChangeSource", js.undefined)
+    def setTarget(value: ResourceTargetDefinition): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluation(value: EvaluationType): Self = this.set("Evaluation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvaluation: Self = this.set("Evaluation", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: ResourceTargetDefinition): Self = this.set("Target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("Target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Identifies people, cities, organizations, and other entities in the content. See [Entity types and subtypes](https://cloud.ibm.com/docs/services/natural-language-understanding/entity-types.html). Supported languages: English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish, Swedish. Arabic, Chinese, and Dutch are supported only through custom models. */
 @js.native
-trait EntitiesOptions extends js.Object {
+trait EntitiesOptions extends StObject {
   
   /** Set this to `true` to analyze emotion for detected keywords. */
   var emotion: js.UndefOr[Boolean] = js.native
@@ -32,48 +33,36 @@ object EntitiesOptions {
   }
   
   @scala.inline
-  implicit class EntitiesOptionsOps[Self <: EntitiesOptions] (val x: Self) extends AnyVal {
+  implicit class EntitiesOptionsMutableBuilder[Self <: EntitiesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmotion(value: Boolean): Self = this.set("emotion", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteEmotion: Self = this.set("emotion", js.undefined)
+    def setMentions(value: Boolean): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentions(value: Boolean): Self = this.set("mentions", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteMentions: Self = this.set("mentions", js.undefined)
+    def setSentiment(value: Boolean): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
-    
-    @scala.inline
-    def setSentiment(value: Boolean): Self = this.set("sentiment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentiment: Self = this.set("sentiment", js.undefined)
+    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
   }
 }

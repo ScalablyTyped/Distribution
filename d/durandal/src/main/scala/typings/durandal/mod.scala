@@ -1,5 +1,6 @@
 package typings.durandal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +13,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @requires system
   * @requires knockout
   */
-@JSImport("durandal/activator", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("durandal/activator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("durandal/activator", "create")
+  @js.native
   def create[T](): DurandalActivator[T] = js.native
+  @JSImport("durandal/activator", "create")
+  @js.native
   def create[T](initialActiveItem: T): DurandalActivator[T] = js.native
+  @JSImport("durandal/activator", "create")
+  @js.native
   def create[T](initialActiveItem: T, settings: DurandalActivatorSettings): DurandalActivator[T] = js.native
+  @JSImport("durandal/activator", "create")
+  @js.native
   def create[T](initialActiveItem: js.UndefOr[scala.Nothing], settings: DurandalActivatorSettings): DurandalActivator[T] = js.native
   
-  var defaults: DurandalActivatorSettings = js.native
+  @JSImport("durandal/activator", "defaults")
+  @js.native
+  def defaults: DurandalActivatorSettings = js.native
+  @scala.inline
+  def defaults_=(x: DurandalActivatorSettings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
+  @JSImport("durandal/activator", "isActivator")
+  @js.native
   def isActivator(`object`: js.Any): Boolean = js.native
 }

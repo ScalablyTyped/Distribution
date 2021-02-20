@@ -7,19 +7,19 @@ import typings.typedGithubApi.githubRefMod.OptionsOrRef
 import typings.typedGithubApi.userMod.PrivateUser
 import typings.typedGithubApi.userMod.User
 import typings.typedGithubApi.userMod.UserSummary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-github-api/dist/user", JSImport.Namespace)
-@js.native
-object distUserMod extends js.Object {
+object distUserMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.ownerRefMod.OwnerRef because Already inherited
   - typings.typedGithubApi.interfacesUserMod.UserSummary because Already inherited
   - typings.typedGithubApi.interfacesUserMod.User because Already inherited
-  - typings.typedGithubApi.interfacesUserMod.MyUser because var conflicts: avatarUri, blog, company, createdAt, email, followers, following, id, location, login, name, publicGists, publicRepos, updatedAt. Inlined privateReposTotal, privateReposOwned, privateGists, diskUsage, collaborators, plan, twoFactorAuthentication */ @js.native
+  - typings.typedGithubApi.interfacesUserMod.MyUser because var conflicts: avatarUri, blog, company, createdAt, email, followers, following, id, location, login, name, publicGists, publicRepos, updatedAt. Inlined privateReposTotal, privateReposOwned, privateGists, diskUsage, collaborators, plan, twoFactorAuthentication */ @JSImport("typed-github-api/dist/user", "MyUserClass")
+  @js.native
   class MyUserClass protected () extends UserClass {
     def this(data: PrivateUser, options: OptionsOrRef) = this()
     
@@ -41,7 +41,8 @@ object distUserMod extends js.Object {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.ownerRefMod.OwnerRef because Already inherited
   - typings.typedGithubApi.interfacesUserMod.UserSummary because Already inherited
-  - typings.typedGithubApi.interfacesUserMod.User because var conflicts: avatarUri, id, login. Inlined name, company, blog, location, email, publicRepos, publicGists, followers, following, createdAt, updatedAt */ @js.native
+  - typings.typedGithubApi.interfacesUserMod.User because var conflicts: avatarUri, id, login. Inlined name, company, blog, location, email, publicRepos, publicGists, followers, following, createdAt, updatedAt */ @JSImport("typed-github-api/dist/user", "UserClass")
+  @js.native
   class UserClass protected () extends UserSummaryClass {
     def this(data: User, options: OptionsOrRef) = this()
     
@@ -74,7 +75,8 @@ object distUserMod extends js.Object {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.ownerRefMod.OwnerRef because Already inherited
-  - typings.typedGithubApi.interfacesUserMod.UserSummary because var conflicts: login. Inlined id, avatarUri */ @js.native
+  - typings.typedGithubApi.interfacesUserMod.UserSummary because var conflicts: login. Inlined id, avatarUri */ @JSImport("typed-github-api/dist/user", "UserSummaryClass")
+  @js.native
   class UserSummaryClass protected () extends OwnerRefClass {
     def this(data: UserSummary, options: OptionsOrRef) = this()
     

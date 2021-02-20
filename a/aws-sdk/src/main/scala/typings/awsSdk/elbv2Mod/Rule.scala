@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rule extends js.Object {
+trait Rule extends StObject {
   
   /**
     * The actions. Each rule must include exactly one of the following types of actions: forward, redirect, or fixed-response, and it must be the last action to be performed.
@@ -41,54 +42,42 @@ object Rule {
   }
   
   @scala.inline
-  implicit class RuleOps[Self <: Rule] (val x: Self) extends AnyVal {
+  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: Actions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: Action*): Self = this.set("Actions", js.Array(value :_*))
+    def setConditions(value: RuleConditionList): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: Actions): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("Actions", js.undefined)
+    def setConditionsVarargs(value: RuleCondition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: RuleCondition*): Self = this.set("Conditions", js.Array(value :_*))
+    def setIsDefault(value: IsDefault): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: RuleConditionList): Self = this.set("Conditions", value.asInstanceOf[js.Any])
+    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("Conditions", js.undefined)
+    def setPriority(value: String): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: IsDefault): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    def setRuleArn(value: RuleArn): Self = StObject.set(x, "RuleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: String): Self = this.set("Priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("Priority", js.undefined)
-    
-    @scala.inline
-    def setRuleArn(value: RuleArn): Self = this.set("RuleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleArn: Self = this.set("RuleArn", js.undefined)
+    def setRuleArnUndefined: Self = StObject.set(x, "RuleArn", js.undefined)
   }
 }

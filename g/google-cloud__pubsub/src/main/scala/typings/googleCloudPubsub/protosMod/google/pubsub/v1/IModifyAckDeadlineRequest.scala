@@ -1,31 +1,62 @@
 package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ModifyAckDeadlineRequest. */
-trait IModifyAckDeadlineRequest extends js.Object {
+@js.native
+trait IModifyAckDeadlineRequest extends StObject {
+  
   /** ModifyAckDeadlineRequest ackDeadlineSeconds */
-  var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
+  var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.native
+  
   /** ModifyAckDeadlineRequest ackIds */
-  var ackIds: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var ackIds: js.UndefOr[js.Array[String] | Null] = js.native
+  
   /** ModifyAckDeadlineRequest subscription */
-  var subscription: js.UndefOr[String | Null] = js.undefined
+  var subscription: js.UndefOr[String | Null] = js.native
 }
-
 object IModifyAckDeadlineRequest {
+  
   @scala.inline
-  def apply(
-    ackDeadlineSeconds: js.UndefOr[Null | Double] = js.undefined,
-    ackIds: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    subscription: js.UndefOr[Null | String] = js.undefined
-  ): IModifyAckDeadlineRequest = {
+  def apply(): IModifyAckDeadlineRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(ackIds)) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModifyAckDeadlineRequest]
   }
+  
+  @scala.inline
+  implicit class IModifyAckDeadlineRequestMutableBuilder[Self <: IModifyAckDeadlineRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAckDeadlineSecondsNull: Self = StObject.set(x, "ackDeadlineSeconds", null)
+    
+    @scala.inline
+    def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
+    
+    @scala.inline
+    def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAckIdsNull: Self = StObject.set(x, "ackIds", null)
+    
+    @scala.inline
+    def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
+    
+    @scala.inline
+    def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
+    
+    @scala.inline
+    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
+    
+    @scala.inline
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+  }
 }
-

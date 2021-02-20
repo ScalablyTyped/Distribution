@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectModerationLabelsRequest extends js.Object {
+trait DetectModerationLabelsRequest extends StObject {
   
   /**
     * Sets up the configuration for human evaluation, including the FlowDefinition the image will be sent to.
@@ -31,33 +32,21 @@ object DetectModerationLabelsRequest {
   }
   
   @scala.inline
-  implicit class DetectModerationLabelsRequestOps[Self <: DetectModerationLabelsRequest] (val x: Self) extends AnyVal {
+  implicit class DetectModerationLabelsRequestMutableBuilder[Self <: DetectModerationLabelsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHumanLoopConfig(value: HumanLoopConfig): Self = StObject.set(x, "HumanLoopConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHumanLoopConfigUndefined: Self = StObject.set(x, "HumanLoopConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Image): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHumanLoopConfig(value: HumanLoopConfig): Self = this.set("HumanLoopConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHumanLoopConfig: Self = this.set("HumanLoopConfig", js.undefined)
-    
-    @scala.inline
-    def setMinConfidence(value: Percent): Self = this.set("MinConfidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinConfidence: Self = this.set("MinConfidence", js.undefined)
+    def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
   }
 }

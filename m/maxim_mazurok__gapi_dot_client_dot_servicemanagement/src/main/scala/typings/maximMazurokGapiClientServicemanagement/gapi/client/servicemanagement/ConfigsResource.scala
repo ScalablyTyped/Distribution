@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientServicemanagement.anon.ConfigId
 import typings.maximMazurokGapiClientServicemanagement.anon.Fields
 import typings.maximMazurokGapiClientServicemanagement.anon.Key
 import typings.maximMazurokGapiClientServicemanagement.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigsResource extends js.Object {
+trait ConfigsResource extends StObject {
   
   /**
     * Creates a new service configuration (version) for a managed service. This method only stores the service configuration. To roll out the service configuration to backend systems

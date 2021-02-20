@@ -1,5 +1,6 @@
 package typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * status of the asset and valid from and to time of it.
   */
 @js.native
-trait SchemaTemporalAsset extends js.Object {
+trait SchemaTemporalAsset extends StObject {
   
   /**
     * Asset.
@@ -35,36 +36,24 @@ object SchemaTemporalAsset {
   }
   
   @scala.inline
-  implicit class SchemaTemporalAssetOps[Self <: SchemaTemporalAsset] (val x: Self) extends AnyVal {
+  implicit class SchemaTemporalAssetMutableBuilder[Self <: SchemaTemporalAsset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsset(value: SchemaAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset(value: SchemaAsset): Self = this.set("asset", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteAsset: Self = this.set("asset", js.undefined)
+    def setWindow(value: SchemaTimeWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
-    
-    @scala.inline
-    def setWindow(value: SchemaTimeWindow): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

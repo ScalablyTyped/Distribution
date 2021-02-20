@@ -2,12 +2,13 @@ package typings.log4js.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.log4js.anon.Appenders
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Configuration extends js.Object {
+trait Configuration extends StObject {
   
   var appenders: StringDictionary[Appender] = js.native
   
@@ -30,48 +31,36 @@ object Configuration {
   }
   
   @scala.inline
-  implicit class ConfigurationOps[Self <: Configuration] (val x: Self) extends AnyVal {
+  implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppenders(value: StringDictionary[Appender]): Self = StObject.set(x, "appenders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategories(value: StringDictionary[Appenders]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableClustering(value: Boolean): Self = StObject.set(x, "disableClustering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppenders(value: StringDictionary[Appender]): Self = this.set("appenders", value.asInstanceOf[js.Any])
+    def setDisableClusteringUndefined: Self = StObject.set(x, "disableClustering", js.undefined)
     
     @scala.inline
-    def setCategories(value: StringDictionary[Appenders]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setLevels(value: Levels_): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableClustering(value: Boolean): Self = this.set("disableClustering", value.asInstanceOf[js.Any])
+    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
     @scala.inline
-    def deleteDisableClustering: Self = this.set("disableClustering", js.undefined)
+    def setPm2(value: Boolean): Self = StObject.set(x, "pm2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevels(value: Levels_): Self = this.set("levels", value.asInstanceOf[js.Any])
+    def setPm2InstanceVar(value: String): Self = StObject.set(x, "pm2InstanceVar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevels: Self = this.set("levels", js.undefined)
+    def setPm2InstanceVarUndefined: Self = StObject.set(x, "pm2InstanceVar", js.undefined)
     
     @scala.inline
-    def setPm2(value: Boolean): Self = this.set("pm2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePm2: Self = this.set("pm2", js.undefined)
-    
-    @scala.inline
-    def setPm2InstanceVar(value: String): Self = this.set("pm2InstanceVar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePm2InstanceVar: Self = this.set("pm2InstanceVar", js.undefined)
+    def setPm2Undefined: Self = StObject.set(x, "pm2", js.undefined)
   }
 }

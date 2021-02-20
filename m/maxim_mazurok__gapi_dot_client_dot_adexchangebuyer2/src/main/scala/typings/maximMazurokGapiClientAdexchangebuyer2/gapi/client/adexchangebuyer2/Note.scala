@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Note extends js.Object {
+trait Note extends StObject {
   
   /** Output only. The timestamp for when this note was created. */
   var createTime: js.UndefOr[String] = js.native
@@ -34,48 +35,36 @@ object Note {
   }
   
   @scala.inline
-  implicit class NoteOps[Self <: Note] (val x: Self) extends AnyVal {
+  implicit class NoteMutableBuilder[Self <: Note] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatorRole(value: String): Self = StObject.set(x, "creatorRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setCreatorRoleUndefined: Self = StObject.set(x, "creatorRole", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorRole(value: String): Self = this.set("creatorRole", value.asInstanceOf[js.Any])
+    def setNoteId(value: String): Self = StObject.set(x, "noteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatorRole: Self = this.set("creatorRole", js.undefined)
+    def setNoteIdUndefined: Self = StObject.set(x, "noteId", js.undefined)
     
     @scala.inline
-    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setProposalRevision(value: String): Self = StObject.set(x, "proposalRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteId(value: String): Self = this.set("noteId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoteId: Self = this.set("noteId", js.undefined)
-    
-    @scala.inline
-    def setProposalRevision(value: String): Self = this.set("proposalRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProposalRevision: Self = this.set("proposalRevision", js.undefined)
+    def setProposalRevisionUndefined: Self = StObject.set(x, "proposalRevision", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JourneyLimits extends js.Object {
+trait JourneyLimits extends StObject {
   
   /**
     * The maximum number of messages that the journey can send to a single participant during a 24-hour period. The maximum value is 100.
@@ -31,36 +32,24 @@ object JourneyLimits {
   }
   
   @scala.inline
-  implicit class JourneyLimitsOps[Self <: JourneyLimits] (val x: Self) extends AnyVal {
+  implicit class JourneyLimitsMutableBuilder[Self <: JourneyLimits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDailyCap(value: integer): Self = StObject.set(x, "DailyCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDailyCapUndefined: Self = StObject.set(x, "DailyCap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointReentryCap(value: integer): Self = StObject.set(x, "EndpointReentryCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyCap(value: integer): Self = this.set("DailyCap", value.asInstanceOf[js.Any])
+    def setEndpointReentryCapUndefined: Self = StObject.set(x, "EndpointReentryCap", js.undefined)
     
     @scala.inline
-    def deleteDailyCap: Self = this.set("DailyCap", js.undefined)
+    def setMessagesPerSecond(value: integer): Self = StObject.set(x, "MessagesPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointReentryCap(value: integer): Self = this.set("EndpointReentryCap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpointReentryCap: Self = this.set("EndpointReentryCap", js.undefined)
-    
-    @scala.inline
-    def setMessagesPerSecond(value: integer): Self = this.set("MessagesPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessagesPerSecond: Self = this.set("MessagesPerSecond", js.undefined)
+    def setMessagesPerSecondUndefined: Self = StObject.set(x, "MessagesPerSecond", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeleconferenceDeviceQuality extends js.Object {
+trait TeleconferenceDeviceQuality extends StObject {
   
   /**
     * A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in
@@ -58,93 +59,81 @@ object TeleconferenceDeviceQuality {
   }
   
   @scala.inline
-  implicit class TeleconferenceDeviceQualityOps[Self <: TeleconferenceDeviceQuality] (val x: Self) extends AnyVal {
+  implicit class TeleconferenceDeviceQualityMutableBuilder[Self <: TeleconferenceDeviceQuality] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallChainId(value: String): Self = StObject.set(x, "callChainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallChainIdUndefined: Self = StObject.set(x, "callChainId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudServiceDeploymentEnvironment(value: NullableOption[String]): Self = StObject.set(x, "cloudServiceDeploymentEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallChainId(value: String): Self = this.set("callChainId", value.asInstanceOf[js.Any])
+    def setCloudServiceDeploymentEnvironmentNull: Self = StObject.set(x, "cloudServiceDeploymentEnvironment", null)
     
     @scala.inline
-    def deleteCallChainId: Self = this.set("callChainId", js.undefined)
+    def setCloudServiceDeploymentEnvironmentUndefined: Self = StObject.set(x, "cloudServiceDeploymentEnvironment", js.undefined)
     
     @scala.inline
-    def setCloudServiceDeploymentEnvironment(value: NullableOption[String]): Self = this.set("cloudServiceDeploymentEnvironment", value.asInstanceOf[js.Any])
+    def setCloudServiceDeploymentId(value: NullableOption[String]): Self = StObject.set(x, "cloudServiceDeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudServiceDeploymentEnvironment: Self = this.set("cloudServiceDeploymentEnvironment", js.undefined)
+    def setCloudServiceDeploymentIdNull: Self = StObject.set(x, "cloudServiceDeploymentId", null)
     
     @scala.inline
-    def setCloudServiceDeploymentEnvironmentNull: Self = this.set("cloudServiceDeploymentEnvironment", null)
+    def setCloudServiceDeploymentIdUndefined: Self = StObject.set(x, "cloudServiceDeploymentId", js.undefined)
     
     @scala.inline
-    def setCloudServiceDeploymentId(value: NullableOption[String]): Self = this.set("cloudServiceDeploymentId", value.asInstanceOf[js.Any])
+    def setCloudServiceInstanceName(value: NullableOption[String]): Self = StObject.set(x, "cloudServiceInstanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudServiceDeploymentId: Self = this.set("cloudServiceDeploymentId", js.undefined)
+    def setCloudServiceInstanceNameNull: Self = StObject.set(x, "cloudServiceInstanceName", null)
     
     @scala.inline
-    def setCloudServiceDeploymentIdNull: Self = this.set("cloudServiceDeploymentId", null)
+    def setCloudServiceInstanceNameUndefined: Self = StObject.set(x, "cloudServiceInstanceName", js.undefined)
     
     @scala.inline
-    def setCloudServiceInstanceName(value: NullableOption[String]): Self = this.set("cloudServiceInstanceName", value.asInstanceOf[js.Any])
+    def setCloudServiceName(value: NullableOption[String]): Self = StObject.set(x, "cloudServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudServiceInstanceName: Self = this.set("cloudServiceInstanceName", js.undefined)
+    def setCloudServiceNameNull: Self = StObject.set(x, "cloudServiceName", null)
     
     @scala.inline
-    def setCloudServiceInstanceNameNull: Self = this.set("cloudServiceInstanceName", null)
+    def setCloudServiceNameUndefined: Self = StObject.set(x, "cloudServiceName", js.undefined)
     
     @scala.inline
-    def setCloudServiceName(value: NullableOption[String]): Self = this.set("cloudServiceName", value.asInstanceOf[js.Any])
+    def setDeviceDescription(value: String): Self = StObject.set(x, "deviceDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudServiceName: Self = this.set("cloudServiceName", js.undefined)
+    def setDeviceDescriptionUndefined: Self = StObject.set(x, "deviceDescription", js.undefined)
     
     @scala.inline
-    def setCloudServiceNameNull: Self = this.set("cloudServiceName", null)
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceDescription(value: String): Self = this.set("deviceDescription", value.asInstanceOf[js.Any])
+    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
     @scala.inline
-    def deleteDeviceDescription: Self = this.set("deviceDescription", js.undefined)
+    def setMediaLegId(value: String): Self = StObject.set(x, "mediaLegId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    def setMediaLegIdUndefined: Self = StObject.set(x, "mediaLegId", js.undefined)
     
     @scala.inline
-    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    def setMediaQualityList(value: js.Array[TeleconferenceDeviceMediaQuality]): Self = StObject.set(x, "mediaQualityList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaLegId(value: String): Self = this.set("mediaLegId", value.asInstanceOf[js.Any])
+    def setMediaQualityListUndefined: Self = StObject.set(x, "mediaQualityList", js.undefined)
     
     @scala.inline
-    def deleteMediaLegId: Self = this.set("mediaLegId", js.undefined)
+    def setMediaQualityListVarargs(value: TeleconferenceDeviceMediaQuality*): Self = StObject.set(x, "mediaQualityList", js.Array(value :_*))
     
     @scala.inline
-    def setMediaQualityListVarargs(value: TeleconferenceDeviceMediaQuality*): Self = this.set("mediaQualityList", js.Array(value :_*))
+    def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaQualityList(value: js.Array[TeleconferenceDeviceMediaQuality]): Self = this.set("mediaQualityList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaQualityList: Self = this.set("mediaQualityList", js.undefined)
-    
-    @scala.inline
-    def setParticipantId(value: String): Self = this.set("participantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParticipantId: Self = this.set("participantId", js.undefined)
+    def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
   }
 }

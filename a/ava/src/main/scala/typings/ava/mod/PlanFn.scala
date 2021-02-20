@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlanFn extends js.Object {
+trait PlanFn extends StObject {
   
   /**
   	 * Plan how many assertion there are in the test. The test will fail if the actual assertion count doesn't match the

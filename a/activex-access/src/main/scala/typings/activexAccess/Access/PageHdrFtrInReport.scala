@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageHdrFtrInReport extends js.Object {
+trait PageHdrFtrInReport extends StObject {
   
   @JSName("Access._PageHdrFtrInReport_typekey")
   var AccessDot_PageHdrFtrInReport_typekey: PageHdrFtrInReport = js.native

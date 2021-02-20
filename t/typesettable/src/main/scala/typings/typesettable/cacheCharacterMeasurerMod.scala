@@ -4,14 +4,14 @@ import typings.typesettable.abstractMeasurerMod.IDimensions
 import typings.typesettable.abstractMeasurerMod.IRuler
 import typings.typesettable.characterMeasurerMod.CharacterMeasurer
 import typings.typesettable.contextsMod.IRulerFactoryContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typesettable/build/src/measurers/cacheCharacterMeasurer", JSImport.Namespace)
-@js.native
-object cacheCharacterMeasurerMod extends js.Object {
+object cacheCharacterMeasurerMod {
   
+  @JSImport("typesettable/build/src/measurers/cacheCharacterMeasurer", "CacheCharacterMeasurer")
   @js.native
   class CacheCharacterMeasurer protected () extends CharacterMeasurer {
     def this(ruler: IRuler) = this()

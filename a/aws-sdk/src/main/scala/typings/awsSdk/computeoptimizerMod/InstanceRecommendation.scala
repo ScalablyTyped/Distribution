@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceRecommendation extends js.Object {
+trait InstanceRecommendation extends StObject {
   
   /**
     * The AWS account ID of the instance.
@@ -66,87 +67,75 @@ object InstanceRecommendation {
   }
   
   @scala.inline
-  implicit class InstanceRecommendationOps[Self <: InstanceRecommendation] (val x: Self) extends AnyVal {
+  implicit class InstanceRecommendationMutableBuilder[Self <: InstanceRecommendation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentInstanceType(value: CurrentInstanceType): Self = StObject.set(x, "currentInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setCurrentInstanceTypeUndefined: Self = StObject.set(x, "currentInstanceType", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentInstanceType(value: CurrentInstanceType): Self = this.set("currentInstanceType", value.asInstanceOf[js.Any])
+    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
     @scala.inline
-    def deleteCurrentInstanceType: Self = this.set("currentInstanceType", js.undefined)
+    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinding(value: Finding): Self = this.set("finding", value.asInstanceOf[js.Any])
+    def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
     
     @scala.inline
-    def deleteFinding: Self = this.set("finding", js.undefined)
+    def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = this.set("instanceArn", value.asInstanceOf[js.Any])
+    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
     @scala.inline
-    def deleteInstanceArn: Self = this.set("instanceArn", js.undefined)
+    def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = StObject.set(x, "lastRefreshTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceName(value: InstanceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    def setLastRefreshTimestampUndefined: Self = StObject.set(x, "lastRefreshTimestamp", js.undefined)
     
     @scala.inline
-    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = StObject.set(x, "lookBackPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = this.set("lastRefreshTimestamp", value.asInstanceOf[js.Any])
+    def setLookBackPeriodInDaysUndefined: Self = StObject.set(x, "lookBackPeriodInDays", js.undefined)
     
     @scala.inline
-    def deleteLastRefreshTimestamp: Self = this.set("lastRefreshTimestamp", js.undefined)
+    def setRecommendationOptions(value: RecommendationOptions): Self = StObject.set(x, "recommendationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = this.set("lookBackPeriodInDays", value.asInstanceOf[js.Any])
+    def setRecommendationOptionsUndefined: Self = StObject.set(x, "recommendationOptions", js.undefined)
     
     @scala.inline
-    def deleteLookBackPeriodInDays: Self = this.set("lookBackPeriodInDays", js.undefined)
+    def setRecommendationOptionsVarargs(value: InstanceRecommendationOption*): Self = StObject.set(x, "recommendationOptions", js.Array(value :_*))
     
     @scala.inline
-    def setRecommendationOptionsVarargs(value: InstanceRecommendationOption*): Self = this.set("recommendationOptions", js.Array(value :_*))
+    def setRecommendationSources(value: RecommendationSources): Self = StObject.set(x, "recommendationSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendationOptions(value: RecommendationOptions): Self = this.set("recommendationOptions", value.asInstanceOf[js.Any])
+    def setRecommendationSourcesUndefined: Self = StObject.set(x, "recommendationSources", js.undefined)
     
     @scala.inline
-    def deleteRecommendationOptions: Self = this.set("recommendationOptions", js.undefined)
+    def setRecommendationSourcesVarargs(value: RecommendationSource*): Self = StObject.set(x, "recommendationSources", js.Array(value :_*))
     
     @scala.inline
-    def setRecommendationSourcesVarargs(value: RecommendationSource*): Self = this.set("recommendationSources", js.Array(value :_*))
+    def setUtilizationMetrics(value: UtilizationMetrics): Self = StObject.set(x, "utilizationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendationSources(value: RecommendationSources): Self = this.set("recommendationSources", value.asInstanceOf[js.Any])
+    def setUtilizationMetricsUndefined: Self = StObject.set(x, "utilizationMetrics", js.undefined)
     
     @scala.inline
-    def deleteRecommendationSources: Self = this.set("recommendationSources", js.undefined)
-    
-    @scala.inline
-    def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = this.set("utilizationMetrics", js.Array(value :_*))
-    
-    @scala.inline
-    def setUtilizationMetrics(value: UtilizationMetrics): Self = this.set("utilizationMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtilizationMetrics: Self = this.set("utilizationMetrics", js.undefined)
+    def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "utilizationMetrics", js.Array(value :_*))
   }
 }

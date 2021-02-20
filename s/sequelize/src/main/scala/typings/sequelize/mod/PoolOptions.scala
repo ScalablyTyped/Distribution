@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Options
   */
 @js.native
-trait PoolOptions extends js.Object {
+trait PoolOptions extends StObject {
   
   /**
     * The maximum time, in milliseconds, that pool will try to get connection before throwing error
@@ -52,54 +53,42 @@ object PoolOptions {
   }
   
   @scala.inline
-  implicit class PoolOptionsOps[Self <: PoolOptions] (val x: Self) extends AnyVal {
+  implicit class PoolOptionsMutableBuilder[Self <: PoolOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquire(value: Double): Self = StObject.set(x, "acquire", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcquireUndefined: Self = StObject.set(x, "acquire", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvict(value: Double): Self = StObject.set(x, "evict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquire(value: Double): Self = this.set("acquire", value.asInstanceOf[js.Any])
+    def setEvictUndefined: Self = StObject.set(x, "evict", js.undefined)
     
     @scala.inline
-    def deleteAcquire: Self = this.set("acquire", js.undefined)
+    def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvict(value: Double): Self = this.set("evict", value.asInstanceOf[js.Any])
+    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
     
     @scala.inline
-    def deleteEvict: Self = this.set("evict", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdle(value: Double): Self = this.set("idle", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteIdle: Self = this.set("idle", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setValidate(value: /* client */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
-    
-    @scala.inline
-    def setValidate(value: /* client */ js.UndefOr[js.Any] => Boolean): Self = this.set("validate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

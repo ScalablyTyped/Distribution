@@ -4,12 +4,13 @@ import typings.miniprogram.anon.DestHeight
 import typings.miniprogram.anon.dataUint8ClampedArrayxnum
 import typings.miniprogram.anon.xnumberundefinedynumberun
 import typings.miniprogram.anon.xnumberynumberwidthnumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasContext extends js.Object {
+trait CanvasContext extends StObject {
   
   /**
     * Add a circular gradient point.

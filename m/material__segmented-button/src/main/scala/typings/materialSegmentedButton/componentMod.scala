@@ -6,16 +6,18 @@ import typings.materialSegmentedButton.segmentComponentMod.MDCSegmentedButtonSeg
 import typings.materialSegmentedButton.segmentComponentMod.MDCSegmentedButtonSegmentFactory
 import typings.materialSegmentedButton.typesMod.SegmentDetail
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/segmented-button/segmented-button/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/segmented-button/segmented-button/component", "MDCSegmentedButton")
   @js.native
-  class MDCSegmentedButton () extends MDCComponent[MDCSegmentedButtonFoundation] {
+  class MDCSegmentedButton protected () extends MDCComponent[MDCSegmentedButtonFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCSegmentedButtonFoundation, args: js.Any*) = this()
     
     /**
       * @return Returns readonly list of selected child segments as SegmentDetails
@@ -72,9 +74,10 @@ object componentMod extends js.Object {
     def unselectSegment(indexOrSegmentId: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCSegmentedButton extends js.Object {
+  object MDCSegmentedButton {
     
+    @JSImport("@material/segmented-button/segmented-button/component", "MDCSegmentedButton.attachTo")
+    @js.native
     def attachTo(root: Element): MDCSegmentedButton = js.native
   }
 }

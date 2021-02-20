@@ -1,5 +1,6 @@
 package typings.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.orientjs.orientjsStrings.Decimal
   - typings.orientjs.orientjsStrings.LinkBag
 */
-trait PropertyType extends js.Object
+trait PropertyType extends StObject
 object PropertyType {
   
   @scala.inline

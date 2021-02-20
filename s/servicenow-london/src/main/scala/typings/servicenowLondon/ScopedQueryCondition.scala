@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScopedQueryCondition extends js.Object {
+trait ScopedQueryCondition extends StObject {
   
   def addCondition(name: String, oper: QueryOperator, value: String): ScopedQueryCondition = js.native
   /**

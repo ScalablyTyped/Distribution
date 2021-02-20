@@ -2,12 +2,13 @@ package typings.fhirJsClient.FHIR.SMART
 
 import typings.fhirJsClient.anon.Any
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   /**
     * fhir.js FHIR API interface

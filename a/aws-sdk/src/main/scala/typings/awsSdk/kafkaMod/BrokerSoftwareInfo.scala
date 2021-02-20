@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrokerSoftwareInfo extends js.Object {
+trait BrokerSoftwareInfo extends StObject {
   
   /**
     * 
@@ -37,36 +38,24 @@ object BrokerSoftwareInfo {
   }
   
   @scala.inline
-  implicit class BrokerSoftwareInfoOps[Self <: BrokerSoftwareInfo] (val x: Self) extends AnyVal {
+  implicit class BrokerSoftwareInfoMutableBuilder[Self <: BrokerSoftwareInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationArn(value: string): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationArnUndefined: Self = StObject.set(x, "ConfigurationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationRevision(value: long): Self = StObject.set(x, "ConfigurationRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationArn(value: string): Self = this.set("ConfigurationArn", value.asInstanceOf[js.Any])
+    def setConfigurationRevisionUndefined: Self = StObject.set(x, "ConfigurationRevision", js.undefined)
     
     @scala.inline
-    def deleteConfigurationArn: Self = this.set("ConfigurationArn", js.undefined)
+    def setKafkaVersion(value: string): Self = StObject.set(x, "KafkaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationRevision(value: long): Self = this.set("ConfigurationRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurationRevision: Self = this.set("ConfigurationRevision", js.undefined)
-    
-    @scala.inline
-    def setKafkaVersion(value: string): Self = this.set("KafkaVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKafkaVersion: Self = this.set("KafkaVersion", js.undefined)
+    def setKafkaVersionUndefined: Self = StObject.set(x, "KafkaVersion", js.undefined)
   }
 }

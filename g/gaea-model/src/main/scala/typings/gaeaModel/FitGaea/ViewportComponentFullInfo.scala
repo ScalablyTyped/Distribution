@@ -1,12 +1,13 @@
 package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewportComponentFullInfo extends js.Object {
+trait ViewportComponentFullInfo extends StObject {
   
   // 子元素列表 （包括非直接子集）
   var childs: StringDictionary[ViewportComponentInfo] = js.native
@@ -30,27 +31,15 @@ object ViewportComponentFullInfo {
   }
   
   @scala.inline
-  implicit class ViewportComponentFullInfoOps[Self <: ViewportComponentFullInfo] (val x: Self) extends AnyVal {
+  implicit class ViewportComponentFullInfoMutableBuilder[Self <: ViewportComponentFullInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChilds(value: StringDictionary[ViewportComponentInfo]): Self = StObject.set(x, "childs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentInfo(value: ViewportComponentInfo): Self = StObject.set(x, "componentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChilds(value: StringDictionary[ViewportComponentInfo]): Self = this.set("childs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComponentInfo(value: ViewportComponentInfo): Self = this.set("componentInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMapUniqueKey(value: String): Self = this.set("mapUniqueKey", value.asInstanceOf[js.Any])
+    def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
   }
 }

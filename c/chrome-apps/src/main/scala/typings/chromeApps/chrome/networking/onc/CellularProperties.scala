@@ -3,6 +3,7 @@ package typings.chromeApps.chrome.networking.onc
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chromeAppsStrings.CDMA
 import typings.chromeApps.chromeAppsStrings.GSM
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,132 +77,120 @@ object CellularProperties {
   }
   
   @scala.inline
-  implicit class CellularPropertiesOps[Self <: CellularProperties[_], M /* <: ManagedObject */] (val x: Self with CellularProperties[M]) extends AnyVal {
+  implicit class CellularPropertiesMutableBuilder[Self <: CellularProperties[_], M /* <: ManagedObject */] (val x: Self with CellularProperties[M]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationType(value: String): Self = StObject.set(x, "ActivationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationTypeUndefined: Self = StObject.set(x, "ActivationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowRoaming(value: Boolean): Self = StObject.set(x, "AllowRoaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationType(value: String): Self = this.set("ActivationType", value.asInstanceOf[js.Any])
+    def setAllowRoamingUndefined: Self = StObject.set(x, "AllowRoaming", js.undefined)
     
     @scala.inline
-    def deleteActivationType: Self = this.set("ActivationType", js.undefined)
+    def setAutoConnect(value: Boolean | ManagedBoolean): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowRoaming(value: Boolean): Self = this.set("AllowRoaming", value.asInstanceOf[js.Any])
+    def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     
     @scala.inline
-    def deleteAllowRoaming: Self = this.set("AllowRoaming", js.undefined)
+    def setCarrier(value: String | ManagedDOMString): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoConnect(value: Boolean | ManagedBoolean): Self = this.set("AutoConnect", value.asInstanceOf[js.Any])
+    def setCarrierUndefined: Self = StObject.set(x, "Carrier", js.undefined)
     
     @scala.inline
-    def deleteAutoConnect: Self = this.set("AutoConnect", js.undefined)
+    def setFamily(value: CDMA | GSM): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrier(value: String | ManagedDOMString): Self = this.set("Carrier", value.asInstanceOf[js.Any])
+    def setFamilyUndefined: Self = StObject.set(x, "Family", js.undefined)
     
     @scala.inline
-    def deleteCarrier: Self = this.set("Carrier", js.undefined)
+    def setFirmwareRevision(value: String): Self = StObject.set(x, "FirmwareRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: CDMA | GSM): Self = this.set("Family", value.asInstanceOf[js.Any])
+    def setFirmwareRevisionUndefined: Self = StObject.set(x, "FirmwareRevision", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("Family", js.undefined)
+    def setFoundNetworks(value: js.Array[FoundNetworkProperties]): Self = StObject.set(x, "FoundNetworks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirmwareRevision(value: String): Self = this.set("FirmwareRevision", value.asInstanceOf[js.Any])
+    def setFoundNetworksUndefined: Self = StObject.set(x, "FoundNetworks", js.undefined)
     
     @scala.inline
-    def deleteFirmwareRevision: Self = this.set("FirmwareRevision", js.undefined)
+    def setFoundNetworksVarargs(value: FoundNetworkProperties*): Self = StObject.set(x, "FoundNetworks", js.Array(value :_*))
     
     @scala.inline
-    def setFoundNetworksVarargs(value: FoundNetworkProperties*): Self = this.set("FoundNetworks", js.Array(value :_*))
+    def setHardwareRevision(value: String): Self = StObject.set(x, "HardwareRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoundNetworks(value: js.Array[FoundNetworkProperties]): Self = this.set("FoundNetworks", value.asInstanceOf[js.Any])
+    def setHardwareRevisionUndefined: Self = StObject.set(x, "HardwareRevision", js.undefined)
     
     @scala.inline
-    def deleteFoundNetworks: Self = this.set("FoundNetworks", js.undefined)
+    def setHomeProvider(value: CellularProviderProperties): Self = StObject.set(x, "HomeProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardwareRevision(value: String): Self = this.set("HardwareRevision", value.asInstanceOf[js.Any])
+    def setHomeProviderUndefined: Self = StObject.set(x, "HomeProvider", js.undefined)
     
     @scala.inline
-    def deleteHardwareRevision: Self = this.set("HardwareRevision", js.undefined)
+    def setMAnufacturer(value: String): Self = StObject.set(x, "MAnufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeProvider(value: CellularProviderProperties): Self = this.set("HomeProvider", value.asInstanceOf[js.Any])
+    def setMAnufacturerUndefined: Self = StObject.set(x, "MAnufacturer", js.undefined)
     
     @scala.inline
-    def deleteHomeProvider: Self = this.set("HomeProvider", js.undefined)
+    def setModelID(value: String): Self = StObject.set(x, "ModelID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAnufacturer(value: String): Self = this.set("MAnufacturer", value.asInstanceOf[js.Any])
+    def setModelIDUndefined: Self = StObject.set(x, "ModelID", js.undefined)
     
     @scala.inline
-    def deleteMAnufacturer: Self = this.set("MAnufacturer", js.undefined)
+    def setPRLVersion(value: integer): Self = StObject.set(x, "PRLVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelID(value: String): Self = this.set("ModelID", value.asInstanceOf[js.Any])
+    def setPRLVersionUndefined: Self = StObject.set(x, "PRLVersion", js.undefined)
     
     @scala.inline
-    def deleteModelID: Self = this.set("ModelID", js.undefined)
+    def setPaymentPortal(value: PaymentPortal | PaymentPortalPost): Self = StObject.set(x, "PaymentPortal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPRLVersion(value: integer): Self = this.set("PRLVersion", value.asInstanceOf[js.Any])
+    def setPaymentPortalUndefined: Self = StObject.set(x, "PaymentPortal", js.undefined)
     
     @scala.inline
-    def deletePRLVersion: Self = this.set("PRLVersion", js.undefined)
+    def setSIMLockStatus(value: SIMLockStatus): Self = StObject.set(x, "SIMLockStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentPortal(value: PaymentPortal | PaymentPortalPost): Self = this.set("PaymentPortal", value.asInstanceOf[js.Any])
+    def setSIMLockStatusUndefined: Self = StObject.set(x, "SIMLockStatus", js.undefined)
     
     @scala.inline
-    def deletePaymentPortal: Self = this.set("PaymentPortal", js.undefined)
+    def setScanning(value: Boolean): Self = StObject.set(x, "Scanning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSIMLockStatus(value: SIMLockStatus): Self = this.set("SIMLockStatus", value.asInstanceOf[js.Any])
+    def setScanningUndefined: Self = StObject.set(x, "Scanning", js.undefined)
     
     @scala.inline
-    def deleteSIMLockStatus: Self = this.set("SIMLockStatus", js.undefined)
+    def setServingOperator(value: CellularProviderProperties): Self = StObject.set(x, "ServingOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScanning(value: Boolean): Self = this.set("Scanning", value.asInstanceOf[js.Any])
+    def setServingOperatorUndefined: Self = StObject.set(x, "ServingOperator", js.undefined)
     
     @scala.inline
-    def deleteScanning: Self = this.set("Scanning", js.undefined)
+    def setSupportNetworkScan(value: Boolean): Self = StObject.set(x, "SupportNetworkScan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServingOperator(value: CellularProviderProperties): Self = this.set("ServingOperator", value.asInstanceOf[js.Any])
+    def setSupportNetworkScanUndefined: Self = StObject.set(x, "SupportNetworkScan", js.undefined)
     
     @scala.inline
-    def deleteServingOperator: Self = this.set("ServingOperator", js.undefined)
+    def setSupportedCarriers(value: js.Array[String]): Self = StObject.set(x, "SupportedCarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportNetworkScan(value: Boolean): Self = this.set("SupportNetworkScan", value.asInstanceOf[js.Any])
+    def setSupportedCarriersUndefined: Self = StObject.set(x, "SupportedCarriers", js.undefined)
     
     @scala.inline
-    def deleteSupportNetworkScan: Self = this.set("SupportNetworkScan", js.undefined)
-    
-    @scala.inline
-    def setSupportedCarriersVarargs(value: String*): Self = this.set("SupportedCarriers", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedCarriers(value: js.Array[String]): Self = this.set("SupportedCarriers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedCarriers: Self = this.set("SupportedCarriers", js.undefined)
+    def setSupportedCarriersVarargs(value: String*): Self = StObject.set(x, "SupportedCarriers", js.Array(value :_*))
   }
 }

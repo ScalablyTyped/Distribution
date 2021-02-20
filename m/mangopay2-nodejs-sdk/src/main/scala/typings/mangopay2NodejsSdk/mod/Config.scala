@@ -1,11 +1,12 @@
 package typings.mangopay2NodejsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   /**
     * API Version
@@ -70,66 +71,54 @@ object Config {
   }
   
   @scala.inline
-  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientApiKey(value: String): Self = this.set("clientApiKey", value.asInstanceOf[js.Any])
+    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setClientApiKey(value: String): Self = StObject.set(x, "clientApiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionTimeout(value: Double): Self = this.set("connectionTimeout", value.asInstanceOf[js.Any])
+    def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
     
     @scala.inline
-    def deleteConnectionTimeout: Self = this.set("connectionTimeout", js.undefined)
+    def setErrorHandler(value: (/* options */ js.Any, /* err */ js.Any) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDebugMode(value: Boolean): Self = this.set("debugMode", value.asInstanceOf[js.Any])
+    def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
     @scala.inline
-    def deleteDebugMode: Self = this.set("debugMode", js.undefined)
+    def setLogClass(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setErrorHandler(value: (/* options */ js.Any, /* err */ js.Any) => Unit): Self = this.set("errorHandler", js.Any.fromFunction2(value))
+    def setLogClassUndefined: Self = StObject.set(x, "logClass", js.undefined)
     
     @scala.inline
-    def deleteErrorHandler: Self = this.set("errorHandler", js.undefined)
+    def setResponseTimeout(value: Double): Self = StObject.set(x, "responseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogClass(value: /* repeated */ js.Any => Unit): Self = this.set("logClass", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteLogClass: Self = this.set("logClass", js.undefined)
-    
-    @scala.inline
-    def setResponseTimeout(value: Double): Self = this.set("responseTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseTimeout: Self = this.set("responseTimeout", js.undefined)
+    def setResponseTimeoutUndefined: Self = StObject.set(x, "responseTimeout", js.undefined)
   }
 }

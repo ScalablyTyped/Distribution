@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProvisionedProductPlanInput extends js.Object {
+trait CreateProvisionedProductPlanInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -78,75 +79,63 @@ object CreateProvisionedProductPlanInput {
   }
   
   @scala.inline
-  implicit class CreateProvisionedProductPlanInputOps[Self <: CreateProvisionedProductPlanInput] (val x: Self) extends AnyVal {
+  implicit class CreateProvisionedProductPlanInputMutableBuilder[Self <: CreateProvisionedProductPlanInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    def setNotificationArns(value: NotificationArns): Self = StObject.set(x, "NotificationArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanName(value: ProvisionedProductPlanName): Self = this.set("PlanName", value.asInstanceOf[js.Any])
+    def setNotificationArnsUndefined: Self = StObject.set(x, "NotificationArns", js.undefined)
     
     @scala.inline
-    def setPlanType(value: ProvisionedProductPlanType): Self = this.set("PlanType", value.asInstanceOf[js.Any])
+    def setNotificationArnsVarargs(value: NotificationArn*): Self = StObject.set(x, "NotificationArns", js.Array(value :_*))
     
     @scala.inline
-    def setProductId(value: Id): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    def setPathId(value: Id): Self = StObject.set(x, "PathId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductName): Self = this.set("ProvisionedProductName", value.asInstanceOf[js.Any])
+    def setPathIdUndefined: Self = StObject.set(x, "PathId", js.undefined)
     
     @scala.inline
-    def setProvisioningArtifactId(value: Id): Self = this.set("ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    def setPlanName(value: ProvisionedProductPlanName): Self = StObject.set(x, "PlanName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    def setPlanType(value: ProvisionedProductPlanType): Self = StObject.set(x, "PlanType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationArnsVarargs(value: NotificationArn*): Self = this.set("NotificationArns", js.Array(value :_*))
+    def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationArns(value: NotificationArns): Self = this.set("NotificationArns", value.asInstanceOf[js.Any])
+    def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationArns: Self = this.set("NotificationArns", js.undefined)
+    def setProvisioningParameters(value: UpdateProvisioningParameters): Self = StObject.set(x, "ProvisioningParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathId(value: Id): Self = this.set("PathId", value.asInstanceOf[js.Any])
+    def setProvisioningParametersUndefined: Self = StObject.set(x, "ProvisioningParameters", js.undefined)
     
     @scala.inline
-    def deletePathId: Self = this.set("PathId", js.undefined)
+    def setProvisioningParametersVarargs(value: UpdateProvisioningParameter*): Self = StObject.set(x, "ProvisioningParameters", js.Array(value :_*))
     
     @scala.inline
-    def setProvisioningParametersVarargs(value: UpdateProvisioningParameter*): Self = this.set("ProvisioningParameters", js.Array(value :_*))
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningParameters(value: UpdateProvisioningParameters): Self = this.set("ProvisioningParameters", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteProvisioningParameters: Self = this.set("ProvisioningParameters", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

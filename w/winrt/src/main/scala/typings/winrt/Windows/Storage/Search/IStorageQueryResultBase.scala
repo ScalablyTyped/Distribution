@@ -2,12 +2,13 @@ package typings.winrt.Windows.Storage.Search
 
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStorageQueryResultBase extends js.Object {
+trait IStorageQueryResultBase extends StObject {
   
   def applyNewQueryOptions(newQueryOptions: QueryOptions): Unit = js.native
   
@@ -40,39 +41,27 @@ object IStorageQueryResultBase {
   }
   
   @scala.inline
-  implicit class IStorageQueryResultBaseOps[Self <: IStorageQueryResultBase] (val x: Self) extends AnyVal {
+  implicit class IStorageQueryResultBaseMutableBuilder[Self <: IStorageQueryResultBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyNewQueryOptions(value: QueryOptions => Unit): Self = StObject.set(x, "applyNewQueryOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindStartIndexAsync(value: js.Any => IAsyncOperation[Double]): Self = StObject.set(x, "findStartIndexAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFolder(value: StorageFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyNewQueryOptions(value: QueryOptions => Unit): Self = this.set("applyNewQueryOptions", js.Any.fromFunction1(value))
+    def setGetCurrentQueryOptions(value: () => QueryOptions): Self = StObject.set(x, "getCurrentQueryOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindStartIndexAsync(value: js.Any => IAsyncOperation[Double]): Self = this.set("findStartIndexAsync", js.Any.fromFunction1(value))
+    def setGetItemCountAsync(value: () => IAsyncOperation[Double]): Self = StObject.set(x, "getItemCountAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFolder(value: StorageFolder): Self = this.set("folder", value.asInstanceOf[js.Any])
+    def setOncontentschanged(value: js.Any): Self = StObject.set(x, "oncontentschanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentQueryOptions(value: () => QueryOptions): Self = this.set("getCurrentQueryOptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetItemCountAsync(value: () => IAsyncOperation[Double]): Self = this.set("getItemCountAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOncontentschanged(value: js.Any): Self = this.set("oncontentschanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnoptionschanged(value: js.Any): Self = this.set("onoptionschanged", value.asInstanceOf[js.Any])
+    def setOnoptionschanged(value: js.Any): Self = StObject.set(x, "onoptionschanged", value.asInstanceOf[js.Any])
   }
 }

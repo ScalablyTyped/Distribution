@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenMonitoringInfo extends js.Object {
+trait OpenMonitoringInfo extends StObject {
   
   /**
     * 
@@ -23,21 +24,9 @@ object OpenMonitoringInfo {
   }
   
   @scala.inline
-  implicit class OpenMonitoringInfoOps[Self <: OpenMonitoringInfo] (val x: Self) extends AnyVal {
+  implicit class OpenMonitoringInfoMutableBuilder[Self <: OpenMonitoringInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrometheus(value: PrometheusInfo): Self = this.set("Prometheus", value.asInstanceOf[js.Any])
+    def setPrometheus(value: PrometheusInfo): Self = StObject.set(x, "Prometheus", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,108 +90,96 @@ object ValueSetExpansionContains {
   }
   
   @scala.inline
-  implicit class ValueSetExpansionContainsOps[Self <: ValueSetExpansionContains] (val x: Self) extends AnyVal {
+  implicit class ValueSetExpansionContainsMutableBuilder[Self <: ValueSetExpansionContains] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_abstract(value: Element): Self = this.set("_abstract", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def delete_abstract: Self = this.set("_abstract", js.undefined)
+    def setContains(value: js.Array[ValueSetExpansionContains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def delete_code: Self = this.set("_code", js.undefined)
+    def setContainsVarargs(value: ValueSetExpansionContains*): Self = StObject.set(x, "contains", js.Array(value :_*))
     
     @scala.inline
-    def set_display(value: Element): Self = this.set("_display", value.asInstanceOf[js.Any])
+    def setDesignation(value: js.Array[ValueSetComposeIncludeConceptDesignation]): Self = StObject.set(x, "designation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_display: Self = this.set("_display", js.undefined)
+    def setDesignationUndefined: Self = StObject.set(x, "designation", js.undefined)
     
     @scala.inline
-    def set_inactive(value: Element): Self = this.set("_inactive", value.asInstanceOf[js.Any])
+    def setDesignationVarargs(value: ValueSetComposeIncludeConceptDesignation*): Self = StObject.set(x, "designation", js.Array(value :_*))
     
     @scala.inline
-    def delete_inactive: Self = this.set("_inactive", js.undefined)
+    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_system(value: Element): Self = this.set("_system", value.asInstanceOf[js.Any])
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def delete_system: Self = this.set("_system", js.undefined)
+    def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
     
     @scala.inline
-    def delete_version: Self = this.set("_version", js.undefined)
+    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbstract(value: Boolean): Self = this.set("abstract", value.asInstanceOf[js.Any])
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
     @scala.inline
-    def deleteAbstract: Self = this.set("abstract", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def set_abstract(value: Element): Self = StObject.set(x, "_abstract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsVarargs(value: ValueSetExpansionContains*): Self = this.set("contains", js.Array(value :_*))
+    def set_abstractUndefined: Self = StObject.set(x, "_abstract", js.undefined)
     
     @scala.inline
-    def setContains(value: js.Array[ValueSetExpansionContains]): Self = this.set("contains", value.asInstanceOf[js.Any])
+    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
     @scala.inline
-    def setDesignationVarargs(value: ValueSetComposeIncludeConceptDesignation*): Self = this.set("designation", js.Array(value :_*))
+    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesignation(value: js.Array[ValueSetComposeIncludeConceptDesignation]): Self = this.set("designation", value.asInstanceOf[js.Any])
+    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
     
     @scala.inline
-    def deleteDesignation: Self = this.set("designation", js.undefined)
+    def set_inactive(value: Element): Self = StObject.set(x, "_inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    def set_inactiveUndefined: Self = StObject.set(x, "_inactive", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactive(value: Boolean): Self = this.set("inactive", value.asInstanceOf[js.Any])
+    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
     @scala.inline
-    def deleteInactive: Self = this.set("inactive", js.undefined)
+    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: uri): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

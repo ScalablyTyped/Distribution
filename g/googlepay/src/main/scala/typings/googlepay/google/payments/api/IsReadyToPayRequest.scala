@@ -2,6 +2,7 @@ package typings.googlepay.google.payments.api
 
 import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * methods exists for the current user.
   */
 @js.native
-trait IsReadyToPayRequest extends js.Object {
+trait IsReadyToPayRequest extends StObject {
   
   /**
     * List of allowed payment methods.
@@ -87,36 +88,24 @@ object IsReadyToPayRequest {
   }
   
   @scala.inline
-  implicit class IsReadyToPayRequestOps[Self <: IsReadyToPayRequest] (val x: Self) extends AnyVal {
+  implicit class IsReadyToPayRequestMutableBuilder[Self <: IsReadyToPayRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedPaymentMethods(value: js.Array[IsReadyToPayPaymentMethodSpecification]): Self = StObject.set(x, "allowedPaymentMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedPaymentMethodsVarargs(value: IsReadyToPayPaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedPaymentMethodsVarargs(value: IsReadyToPayPaymentMethodSpecification*): Self = this.set("allowedPaymentMethods", js.Array(value :_*))
+    def setApiVersionMinor(value: Double): Self = StObject.set(x, "apiVersionMinor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedPaymentMethods(value: js.Array[IsReadyToPayPaymentMethodSpecification]): Self = this.set("allowedPaymentMethods", value.asInstanceOf[js.Any])
+    def setExistingPaymentMethodRequired(value: `false` | `true`): Self = StObject.set(x, "existingPaymentMethodRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: Double): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApiVersionMinor(value: Double): Self = this.set("apiVersionMinor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExistingPaymentMethodRequired(value: `false` | `true`): Self = this.set("existingPaymentMethodRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExistingPaymentMethodRequired: Self = this.set("existingPaymentMethodRequired", js.undefined)
+    def setExistingPaymentMethodRequiredUndefined: Self = StObject.set(x, "existingPaymentMethodRequired", js.undefined)
   }
 }

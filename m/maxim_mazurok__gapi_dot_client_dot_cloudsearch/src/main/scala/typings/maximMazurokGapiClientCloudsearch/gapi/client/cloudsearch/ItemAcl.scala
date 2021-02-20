@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemAcl extends js.Object {
+trait ItemAcl extends StObject {
   
   /**
     * Sets the type of access rules to apply when an item inherits its ACL from a parent. This should always be set in tandem with the inheritAclFrom field. Also, when the inheritAclFrom
@@ -48,57 +49,45 @@ object ItemAcl {
   }
   
   @scala.inline
-  implicit class ItemAclOps[Self <: ItemAcl] (val x: Self) extends AnyVal {
+  implicit class ItemAclMutableBuilder[Self <: ItemAcl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAclInheritanceType(value: String): Self = StObject.set(x, "aclInheritanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAclInheritanceTypeUndefined: Self = StObject.set(x, "aclInheritanceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeniedReaders(value: js.Array[Principal]): Self = StObject.set(x, "deniedReaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAclInheritanceType(value: String): Self = this.set("aclInheritanceType", value.asInstanceOf[js.Any])
+    def setDeniedReadersUndefined: Self = StObject.set(x, "deniedReaders", js.undefined)
     
     @scala.inline
-    def deleteAclInheritanceType: Self = this.set("aclInheritanceType", js.undefined)
+    def setDeniedReadersVarargs(value: Principal*): Self = StObject.set(x, "deniedReaders", js.Array(value :_*))
     
     @scala.inline
-    def setDeniedReadersVarargs(value: Principal*): Self = this.set("deniedReaders", js.Array(value :_*))
+    def setInheritAclFrom(value: String): Self = StObject.set(x, "inheritAclFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeniedReaders(value: js.Array[Principal]): Self = this.set("deniedReaders", value.asInstanceOf[js.Any])
+    def setInheritAclFromUndefined: Self = StObject.set(x, "inheritAclFrom", js.undefined)
     
     @scala.inline
-    def deleteDeniedReaders: Self = this.set("deniedReaders", js.undefined)
+    def setOwners(value: js.Array[Principal]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInheritAclFrom(value: String): Self = this.set("inheritAclFrom", value.asInstanceOf[js.Any])
+    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
     @scala.inline
-    def deleteInheritAclFrom: Self = this.set("inheritAclFrom", js.undefined)
+    def setOwnersVarargs(value: Principal*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
     @scala.inline
-    def setOwnersVarargs(value: Principal*): Self = this.set("owners", js.Array(value :_*))
+    def setReaders(value: js.Array[Principal]): Self = StObject.set(x, "readers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwners(value: js.Array[Principal]): Self = this.set("owners", value.asInstanceOf[js.Any])
+    def setReadersUndefined: Self = StObject.set(x, "readers", js.undefined)
     
     @scala.inline
-    def deleteOwners: Self = this.set("owners", js.undefined)
-    
-    @scala.inline
-    def setReadersVarargs(value: Principal*): Self = this.set("readers", js.Array(value :_*))
-    
-    @scala.inline
-    def setReaders(value: js.Array[Principal]): Self = this.set("readers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReaders: Self = this.set("readers", js.undefined)
+    def setReadersVarargs(value: Principal*): Self = StObject.set(x, "readers", js.Array(value :_*))
   }
 }

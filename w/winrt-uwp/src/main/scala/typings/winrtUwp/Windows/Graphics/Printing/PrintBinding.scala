@@ -1,15 +1,20 @@
 package typings.winrtUwp.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintBinding extends js.Object
+sealed trait PrintBinding extends StObject
 /** Specifies the print binding option. */
 @JSGlobal("Windows.Graphics.Printing.PrintBinding")
 @js.native
-object PrintBinding extends js.Object {
+object PrintBinding extends StObject {
+  
+  /** The default binding option. */
+  @js.native
+  sealed trait default extends PrintBinding
   
   /** The bale binding option. */
   @js.native
@@ -34,10 +39,6 @@ object PrintBinding extends js.Object {
   /** The option to bind the pages in booklet form. */
   @js.native
   sealed trait booklet extends PrintBinding
-  
-  /** The default binding option. */
-  @js.native
-  sealed trait default extends PrintBinding
   
   /** The option to bind the pages along their bottom edge, with stiches. */
   @js.native

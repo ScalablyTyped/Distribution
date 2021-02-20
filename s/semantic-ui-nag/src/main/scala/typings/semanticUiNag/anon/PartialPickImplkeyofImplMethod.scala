@@ -1,12 +1,13 @@
 package typings.semanticUiNag.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-nag.SemanticUI.Nag.ErrorSettings._Impl, keyof semantic-ui-nag.SemanticUI.Nag.ErrorSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplMethod extends js.Object {
+trait PartialPickImplkeyofImplMethod extends StObject {
   
   var method: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object PartialPickImplkeyofImplMethod {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplMethodOps[Self <: PartialPickImplkeyofImplMethod] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplMethodMutableBuilder[Self <: PartialPickImplkeyofImplMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoCookieStorage(value: String): Self = StObject.set(x, "noCookieStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setNoCookieStorageUndefined: Self = StObject.set(x, "noCookieStorage", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setNoStorage(value: String): Self = StObject.set(x, "noStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCookieStorage(value: String): Self = this.set("noCookieStorage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoCookieStorage: Self = this.set("noCookieStorage", js.undefined)
-    
-    @scala.inline
-    def setNoStorage(value: String): Self = this.set("noStorage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoStorage: Self = this.set("noStorage", js.undefined)
+    def setNoStorageUndefined: Self = StObject.set(x, "noStorage", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavedSelection extends js.Object {
+trait SavedSelection extends StObject {
   
   var end: Point = js.native
   
@@ -22,27 +23,15 @@ object SavedSelection {
   }
   
   @scala.inline
-  implicit class SavedSelectionOps[Self <: SavedSelection] (val x: Self) extends AnyVal {
+  implicit class SavedSelectionMutableBuilder[Self <: SavedSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsBackwards(value: Boolean): Self = StObject.set(x, "isBackwards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnd(value: Point): Self = this.set("end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsBackwards(value: Boolean): Self = this.set("isBackwards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Point): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

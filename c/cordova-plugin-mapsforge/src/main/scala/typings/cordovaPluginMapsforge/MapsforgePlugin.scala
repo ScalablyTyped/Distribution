@@ -1,11 +1,12 @@
 package typings.cordovaPluginMapsforge
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapsforgePlugin extends js.Object {
+trait MapsforgePlugin extends StObject {
   
   var cache: MapsforgeCachePlugin = js.native
   
@@ -20,24 +21,12 @@ object MapsforgePlugin {
   }
   
   @scala.inline
-  implicit class MapsforgePluginOps[Self <: MapsforgePlugin] (val x: Self) extends AnyVal {
+  implicit class MapsforgePluginMutableBuilder[Self <: MapsforgePlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCache(value: MapsforgeCachePlugin): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCache(value: MapsforgeCachePlugin): Self = this.set("cache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmbedded(value: MapsforgeEmbeddedPlugin): Self = this.set("embedded", value.asInstanceOf[js.Any])
+    def setEmbedded(value: MapsforgeEmbeddedPlugin): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
   }
 }

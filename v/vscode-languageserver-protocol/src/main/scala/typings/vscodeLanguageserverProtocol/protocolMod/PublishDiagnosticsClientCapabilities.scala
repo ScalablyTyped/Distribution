@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
 import typings.vscodeLanguageserverProtocol.anon.ValueSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublishDiagnosticsClientCapabilities extends js.Object {
+trait PublishDiagnosticsClientCapabilities extends StObject {
   
   /**
     * Whether the clients accepts diagnostics with related information.
@@ -38,36 +39,24 @@ object PublishDiagnosticsClientCapabilities {
   }
   
   @scala.inline
-  implicit class PublishDiagnosticsClientCapabilitiesOps[Self <: PublishDiagnosticsClientCapabilities] (val x: Self) extends AnyVal {
+  implicit class PublishDiagnosticsClientCapabilitiesMutableBuilder[Self <: PublishDiagnosticsClientCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelatedInformation(value: Boolean): Self = StObject.set(x, "relatedInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagSupport(value: ValueSet): Self = StObject.set(x, "tagSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedInformation(value: Boolean): Self = this.set("relatedInformation", value.asInstanceOf[js.Any])
+    def setTagSupportUndefined: Self = StObject.set(x, "tagSupport", js.undefined)
     
     @scala.inline
-    def deleteRelatedInformation: Self = this.set("relatedInformation", js.undefined)
+    def setVersionSupport(value: Boolean): Self = StObject.set(x, "versionSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagSupport(value: ValueSet): Self = this.set("tagSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagSupport: Self = this.set("tagSupport", js.undefined)
-    
-    @scala.inline
-    def setVersionSupport(value: Boolean): Self = this.set("versionSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionSupport: Self = this.set("versionSupport", js.undefined)
+    def setVersionSupportUndefined: Self = StObject.set(x, "versionSupport", js.undefined)
   }
 }

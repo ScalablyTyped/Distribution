@@ -1,11 +1,12 @@
 package typings.kdbxweb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectMap extends js.Object {
+trait ObjectMap extends StObject {
   
   var deleted: js.Array[KdbxObject] = js.native
   
@@ -22,36 +23,24 @@ object ObjectMap {
   }
   
   @scala.inline
-  implicit class ObjectMapOps[Self <: ObjectMap] (val x: Self) extends AnyVal {
+  implicit class ObjectMapMutableBuilder[Self <: ObjectMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: js.Array[KdbxObject]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedVarargs(value: KdbxObject*): Self = StObject.set(x, "deleted", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjects(value: js.Array[KdbxObject]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedVarargs(value: KdbxObject*): Self = this.set("deleted", js.Array(value :_*))
+    def setObjectsVarargs(value: KdbxObject*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
     @scala.inline
-    def setDeleted(value: js.Array[KdbxObject]): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setRemote(value: js.Array[KdbxObject]): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectsVarargs(value: KdbxObject*): Self = this.set("objects", js.Array(value :_*))
-    
-    @scala.inline
-    def setObjects(value: js.Array[KdbxObject]): Self = this.set("objects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteVarargs(value: KdbxObject*): Self = this.set("remote", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemote(value: js.Array[KdbxObject]): Self = this.set("remote", value.asInstanceOf[js.Any])
+    def setRemoteVarargs(value: KdbxObject*): Self = StObject.set(x, "remote", js.Array(value :_*))
   }
 }

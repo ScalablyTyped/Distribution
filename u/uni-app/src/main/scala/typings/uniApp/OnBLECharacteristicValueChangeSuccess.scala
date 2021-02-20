@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnBLECharacteristicValueChangeSuccess extends js.Object {
+trait OnBLECharacteristicValueChangeSuccess extends StObject {
   
   /**
     * 蓝牙特征值的 uuid
@@ -36,45 +37,33 @@ object OnBLECharacteristicValueChangeSuccess {
   }
   
   @scala.inline
-  implicit class OnBLECharacteristicValueChangeSuccessOps[Self <: OnBLECharacteristicValueChangeSuccess] (val x: Self) extends AnyVal {
+  implicit class OnBLECharacteristicValueChangeSuccessMutableBuilder[Self <: OnBLECharacteristicValueChangeSuccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharacteristicIdUndefined: Self = StObject.set(x, "characteristicId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacteristicId(value: String): Self = this.set("characteristicId", value.asInstanceOf[js.Any])
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def deleteCharacteristicId: Self = this.set("characteristicId", js.undefined)
+    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceId(value: String): Self = this.set("serviceId", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteServiceId: Self = this.set("serviceId", js.undefined)
-    
-    @scala.inline
-    def setValueVarargs(value: js.Any*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: js.Array[_]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

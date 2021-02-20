@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/social/party-mode", JSImport.Namespace)
-@js.native
-object partyModeMod extends js.Object {
+object partyModeMod {
   
+  @JSImport("material-ui/svg-icons/social/party-mode", JSImport.Default)
+  @js.native
+  class default () extends SocialPartyMode
+  
+  @JSImport("material-ui/svg-icons/social/party-mode", "SocialPartyMode")
   @js.native
   class SocialPartyMode ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PositionProps extends js.Object {
+trait PositionProps extends StObject {
   
   val position: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object PositionProps {
   }
   
   @scala.inline
-  implicit class PositionPropsOps[Self <: PositionProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPositionVarargs(value: js.Any*): Self = this.set("position", js.Array(value :_*))
+  implicit class PositionPropsMutableBuilder[Self <: PositionProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setPosition(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ _
         ]
-    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    @scala.inline
+    def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
   }
 }

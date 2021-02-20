@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateAuthority extends js.Object {
+trait CertificateAuthority extends StObject {
   
   /** Output only. URLs for accessing content published by this CA, such as the CA certificate and CRLs. */
   var accessUrls: js.UndefOr[AccessUrls] = js.native
@@ -88,136 +89,124 @@ object CertificateAuthority {
   }
   
   @scala.inline
-  implicit class CertificateAuthorityOps[Self <: CertificateAuthority] (val x: Self) extends AnyVal {
+  implicit class CertificateAuthorityMutableBuilder[Self <: CertificateAuthority] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessUrls(value: AccessUrls): Self = StObject.set(x, "accessUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessUrlsUndefined: Self = StObject.set(x, "accessUrls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaCertificateDescriptions(value: js.Array[CertificateDescription]): Self = StObject.set(x, "caCertificateDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessUrls(value: AccessUrls): Self = this.set("accessUrls", value.asInstanceOf[js.Any])
+    def setCaCertificateDescriptionsUndefined: Self = StObject.set(x, "caCertificateDescriptions", js.undefined)
     
     @scala.inline
-    def deleteAccessUrls: Self = this.set("accessUrls", js.undefined)
+    def setCaCertificateDescriptionsVarargs(value: CertificateDescription*): Self = StObject.set(x, "caCertificateDescriptions", js.Array(value :_*))
     
     @scala.inline
-    def setCaCertificateDescriptionsVarargs(value: CertificateDescription*): Self = this.set("caCertificateDescriptions", js.Array(value :_*))
+    def setCertificatePolicy(value: CertificateAuthorityPolicy): Self = StObject.set(x, "certificatePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaCertificateDescriptions(value: js.Array[CertificateDescription]): Self = this.set("caCertificateDescriptions", value.asInstanceOf[js.Any])
+    def setCertificatePolicyUndefined: Self = StObject.set(x, "certificatePolicy", js.undefined)
     
     @scala.inline
-    def deleteCaCertificateDescriptions: Self = this.set("caCertificateDescriptions", js.undefined)
+    def setConfig(value: CertificateConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificatePolicy(value: CertificateAuthorityPolicy): Self = this.set("certificatePolicy", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteCertificatePolicy: Self = this.set("certificatePolicy", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: CertificateConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setDeleteTime(value: String): Self = StObject.set(x, "deleteTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDeleteTimeUndefined: Self = StObject.set(x, "deleteTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setGcsBucket(value: String): Self = StObject.set(x, "gcsBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTime(value: String): Self = this.set("deleteTime", value.asInstanceOf[js.Any])
+    def setGcsBucketUndefined: Self = StObject.set(x, "gcsBucket", js.undefined)
     
     @scala.inline
-    def deleteDeleteTime: Self = this.set("deleteTime", js.undefined)
+    def setIssuingOptions(value: IssuingOptions): Self = StObject.set(x, "issuingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsBucket(value: String): Self = this.set("gcsBucket", value.asInstanceOf[js.Any])
+    def setIssuingOptionsUndefined: Self = StObject.set(x, "issuingOptions", js.undefined)
     
     @scala.inline
-    def deleteGcsBucket: Self = this.set("gcsBucket", js.undefined)
+    def setKeySpec(value: KeyVersionSpec): Self = StObject.set(x, "keySpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuingOptions(value: IssuingOptions): Self = this.set("issuingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIssuingOptions: Self = this.set("issuingOptions", js.undefined)
-    
-    @scala.inline
-    def setKeySpec(value: KeyVersionSpec): Self = this.set("keySpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeySpec: Self = this.set("keySpec", js.undefined)
+    def setKeySpecUndefined: Self = StObject.set(x, "keySpec", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateAuthority with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setLifetime(value: String): Self = this.set("lifetime", value.asInstanceOf[js.Any])
+    def setLifetime(value: String): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLifetime: Self = this.set("lifetime", js.undefined)
+    def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setPemCaCertificatesVarargs(value: String*): Self = this.set("pemCaCertificates", js.Array(value :_*))
+    def setPemCaCertificates(value: js.Array[String]): Self = StObject.set(x, "pemCaCertificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPemCaCertificates(value: js.Array[String]): Self = this.set("pemCaCertificates", value.asInstanceOf[js.Any])
+    def setPemCaCertificatesUndefined: Self = StObject.set(x, "pemCaCertificates", js.undefined)
     
     @scala.inline
-    def deletePemCaCertificates: Self = this.set("pemCaCertificates", js.undefined)
+    def setPemCaCertificatesVarargs(value: String*): Self = StObject.set(x, "pemCaCertificates", js.Array(value :_*))
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setSubordinateConfig(value: SubordinateConfig): Self = this.set("subordinateConfig", value.asInstanceOf[js.Any])
+    def setSubordinateConfig(value: SubordinateConfig): Self = StObject.set(x, "subordinateConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubordinateConfig: Self = this.set("subordinateConfig", js.undefined)
+    def setSubordinateConfigUndefined: Self = StObject.set(x, "subordinateConfig", js.undefined)
     
     @scala.inline
-    def setTier(value: String): Self = this.set("tier", value.asInstanceOf[js.Any])
+    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTier: Self = this.set("tier", js.undefined)
+    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

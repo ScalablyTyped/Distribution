@@ -1,47 +1,41 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `updateCredentials` operation. */
-@JSImport("watson-developer-cloud/discovery/v1-generated", "UpdateCredentialsConstants")
-@js.native
-object UpdateCredentialsConstants extends js.Object {
+object UpdateCredentialsConstants {
   
   @js.native
-  sealed trait SourceType extends js.Object
+  sealed trait SourceType extends StObject
   /** The source that this credentials object connects to. -  `box` indicates the credentials are used to connect an instance of Enterprise Box. -  `salesforce` indicates the credentials are used to connect to Salesforce. -  `sharepoint` indicates the credentials are used to connect to Microsoft SharePoint Online. -  `web_crawl` indicates the credentials are used to perform a web crawl. =  `cloud_object_storage` indicates the credentials are used to connect to an IBM Cloud Object Store. */
+  @JSImport("watson-developer-cloud/discovery/v1-generated", "UpdateCredentialsConstants.SourceType")
   @js.native
-  object SourceType extends js.Object {
+  object SourceType extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[SourceType with String] = js.native
     
     @js.native
     sealed trait BOX extends SourceType
-    /* "box" */ @js.native
-    object BOX extends TopLevel[BOX with String]
+    /* "box" */ val BOX: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.BOX with String = js.native
     
     @js.native
     sealed trait CLOUD_OBJECT_STORAGE extends SourceType
-    /* "cloud_object_storage" */ @js.native
-    object CLOUD_OBJECT_STORAGE extends TopLevel[CLOUD_OBJECT_STORAGE with String]
+    /* "cloud_object_storage" */ val CLOUD_OBJECT_STORAGE: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.CLOUD_OBJECT_STORAGE with String = js.native
     
     @js.native
     sealed trait SALESFORCE extends SourceType
-    /* "salesforce" */ @js.native
-    object SALESFORCE extends TopLevel[SALESFORCE with String]
+    /* "salesforce" */ val SALESFORCE: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.SALESFORCE with String = js.native
     
     @js.native
     sealed trait SHAREPOINT extends SourceType
-    /* "sharepoint" */ @js.native
-    object SHAREPOINT extends TopLevel[SHAREPOINT with String]
+    /* "sharepoint" */ val SHAREPOINT: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.SHAREPOINT with String = js.native
     
     @js.native
     sealed trait WEB_CRAWL extends SourceType
-    /* "web_crawl" */ @js.native
-    object WEB_CRAWL extends TopLevel[WEB_CRAWL with String]
+    /* "web_crawl" */ val WEB_CRAWL: typings.watsonDeveloperCloud.v1GeneratedMod.UpdateCredentialsConstants.SourceType.WEB_CRAWL with String = js.native
   }
 }

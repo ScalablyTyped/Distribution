@@ -1,11 +1,12 @@
 package typings.awsSdk.efsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LifecycleConfigurationDescription extends js.Object {
+trait LifecycleConfigurationDescription extends StObject {
   
   /**
     * An array of lifecycle management policies. Currently, EFS supports a maximum of one policy per file system.
@@ -21,27 +22,15 @@ object LifecycleConfigurationDescription {
   }
   
   @scala.inline
-  implicit class LifecycleConfigurationDescriptionOps[Self <: LifecycleConfigurationDescription] (val x: Self) extends AnyVal {
+  implicit class LifecycleConfigurationDescriptionMutableBuilder[Self <: LifecycleConfigurationDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLifecyclePolicies(value: LifecyclePolicies): Self = StObject.set(x, "LifecyclePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLifecyclePoliciesUndefined: Self = StObject.set(x, "LifecyclePolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLifecyclePoliciesVarargs(value: LifecyclePolicy*): Self = this.set("LifecyclePolicies", js.Array(value :_*))
-    
-    @scala.inline
-    def setLifecyclePolicies(value: LifecyclePolicies): Self = this.set("LifecyclePolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifecyclePolicies: Self = this.set("LifecyclePolicies", js.undefined)
+    def setLifecyclePoliciesVarargs(value: LifecyclePolicy*): Self = StObject.set(x, "LifecyclePolicies", js.Array(value :_*))
   }
 }

@@ -4,18 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.classValidator.constraintMetadataMod.ConstraintMetadata
 import typings.classValidator.validationMetadataMod.ValidationMetadata
 import typings.classValidator.validationSchemaMod.ValidationSchema
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/metadata/MetadataStorage", JSImport.Namespace)
-@js.native
-object metadataStorageMod extends js.Object {
+object metadataStorageMod {
   
-  def getMetadataStorage(): MetadataStorage = js.native
-  
+  @JSImport("class-validator/types/metadata/MetadataStorage", "MetadataStorage")
   @js.native
-  class MetadataStorage () extends js.Object {
+  class MetadataStorage () extends StObject {
     
     /**
       * Adds a new constraint metadata.
@@ -54,4 +52,8 @@ object metadataStorageMod extends js.Object {
     
     var validationMetadatas: js.Any = js.native
   }
+  
+  @JSImport("class-validator/types/metadata/MetadataStorage", "getMetadataStorage")
+  @js.native
+  def getMetadataStorage(): MetadataStorage = js.native
 }

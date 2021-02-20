@@ -1,5 +1,6 @@
 package typings.relayRuntime.normalizationNodeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NormalizationScalarHandle extends NormalizationHandle {
   
-   // 'ScalarHandle';
+  // 'ScalarHandle';
   val alias: js.UndefOr[String | Null] = js.native
   
   val args: js.UndefOr[js.Array[NormalizationArgument] | Null] = js.native
@@ -31,63 +32,51 @@ object NormalizationScalarHandle {
   }
   
   @scala.inline
-  implicit class NormalizationScalarHandleOps[Self <: NormalizationScalarHandle] (val x: Self) extends AnyVal {
+  implicit class NormalizationScalarHandleMutableBuilder[Self <: NormalizationScalarHandle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasNull: Self = StObject.set(x, "alias", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[NormalizationArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setArgsNull: Self = StObject.set(x, "args", null)
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setFiltersNull: Self = StObject.set(x, "filters", null)
     
     @scala.inline
-    def setAliasNull: Self = this.set("alias", null)
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def setArgsVarargs(value: NormalizationArgument*): Self = this.set("args", js.Array(value :_*))
+    def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setArgs(value: js.Array[NormalizationArgument]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsNull: Self = this.set("args", null)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltersVarargs(value: String*): Self = this.set("filters", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilters(value: js.Array[String]): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
-    
-    @scala.inline
-    def setFiltersNull: Self = this.set("filters", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

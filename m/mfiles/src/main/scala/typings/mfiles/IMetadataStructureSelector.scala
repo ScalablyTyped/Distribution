@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFMetadataStructureItem
 import typings.mfiles.MFiles.MFMetadataStructureSelectorFlags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMetadataStructureSelector extends js.Object {
+trait IMetadataStructureSelector extends StObject {
   
   def Clone(): IMetadataStructureSelector = js.native
   
@@ -43,42 +44,30 @@ object IMetadataStructureSelector {
   }
   
   @scala.inline
-  implicit class IMetadataStructureSelectorOps[Self <: IMetadataStructureSelector] (val x: Self) extends AnyVal {
+  implicit class IMetadataStructureSelectorMutableBuilder[Self <: IMetadataStructureSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IMetadataStructureSelector): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlags(value: MFMetadataStructureSelectorFlags): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IMetadataStructureSelector): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: MFMetadataStructureSelectorFlags): Self = this.set("Flags", value.asInstanceOf[js.Any])
+    def setStructureItemGUID(value: String): Self = StObject.set(x, "StructureItemGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setStructureItemID(value: Double): Self = StObject.set(x, "StructureItemID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setStructureItemSemanticAlias(value: String): Self = StObject.set(x, "StructureItemSemanticAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStructureItemGUID(value: String): Self = this.set("StructureItemGUID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructureItemID(value: Double): Self = this.set("StructureItemID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructureItemSemanticAlias(value: String): Self = this.set("StructureItemSemanticAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructureItemType(value: MFMetadataStructureItem): Self = this.set("StructureItemType", value.asInstanceOf[js.Any])
+    def setStructureItemType(value: MFMetadataStructureItem): Self = StObject.set(x, "StructureItemType", value.asInstanceOf[js.Any])
   }
 }

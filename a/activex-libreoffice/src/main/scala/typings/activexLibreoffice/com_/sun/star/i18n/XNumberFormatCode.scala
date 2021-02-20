@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,30 +58,18 @@ object XNumberFormatCode {
   }
   
   @scala.inline
-  implicit class XNumberFormatCodeOps[Self <: XNumberFormatCode] (val x: Self) extends AnyVal {
+  implicit class XNumberFormatCodeMutableBuilder[Self <: XNumberFormatCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAllFormatCode(value: (Double, Locale) => SafeArray[NumberFormatCode]): Self = StObject.set(x, "getAllFormatCode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllFormatCodes(value: Locale => SafeArray[NumberFormatCode]): Self = StObject.set(x, "getAllFormatCodes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDefault(value: (Double, Double, Locale) => NumberFormatCode): Self = StObject.set(x, "getDefault", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetAllFormatCode(value: (Double, Locale) => SafeArray[NumberFormatCode]): Self = this.set("getAllFormatCode", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetAllFormatCodes(value: Locale => SafeArray[NumberFormatCode]): Self = this.set("getAllFormatCodes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDefault(value: (Double, Double, Locale) => NumberFormatCode): Self = this.set("getDefault", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetFormatCode(value: (Double, Locale) => NumberFormatCode): Self = this.set("getFormatCode", js.Any.fromFunction2(value))
+    def setGetFormatCode(value: (Double, Locale) => NumberFormatCode): Self = StObject.set(x, "getFormatCode", js.Any.fromFunction2(value))
   }
 }

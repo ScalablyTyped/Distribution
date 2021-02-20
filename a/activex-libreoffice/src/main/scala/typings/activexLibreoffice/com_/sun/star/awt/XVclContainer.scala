@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,30 +44,18 @@ object XVclContainer {
   }
   
   @scala.inline
-  implicit class XVclContainerOps[Self <: XVclContainer] (val x: Self) extends AnyVal {
+  implicit class XVclContainerMutableBuilder[Self <: XVclContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddVclContainerListener(value: XVclContainerListener => Unit): Self = StObject.set(x, "addVclContainerListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetWindows(value: () => SafeArray[XWindow]): Self = StObject.set(x, "getWindows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveVclContainerListener(value: XVclContainerListener => Unit): Self = StObject.set(x, "removeVclContainerListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWindows(value: SafeArray[XWindow]): Self = this.set("Windows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAddVclContainerListener(value: XVclContainerListener => Unit): Self = this.set("addVclContainerListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetWindows(value: () => SafeArray[XWindow]): Self = this.set("getWindows", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveVclContainerListener(value: XVclContainerListener => Unit): Self = this.set("removeVclContainerListener", js.Any.fromFunction1(value))
+    def setWindows(value: SafeArray[XWindow]): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
   }
 }

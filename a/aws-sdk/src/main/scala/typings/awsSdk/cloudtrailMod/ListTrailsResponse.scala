@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTrailsResponse extends js.Object {
+trait ListTrailsResponse extends StObject {
   
   /**
     * The token to use to get the next page of results after a previous API call. If the token does not appear, there are no more results to return. The token must be passed in with the same parameters as the previous call. For example, if the original call specified an AttributeKey of 'Username' with a value of 'root', the call with NextToken should include those same parameters.
@@ -26,33 +27,21 @@ object ListTrailsResponse {
   }
   
   @scala.inline
-  implicit class ListTrailsResponseOps[Self <: ListTrailsResponse] (val x: Self) extends AnyVal {
+  implicit class ListTrailsResponseMutableBuilder[Self <: ListTrailsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrails(value: Trails): Self = StObject.set(x, "Trails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTrailsUndefined: Self = StObject.set(x, "Trails", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTrailsVarargs(value: TrailInfo*): Self = this.set("Trails", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrails(value: Trails): Self = this.set("Trails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrails: Self = this.set("Trails", js.undefined)
+    def setTrailsVarargs(value: TrailInfo*): Self = StObject.set(x, "Trails", js.Array(value :_*))
   }
 }

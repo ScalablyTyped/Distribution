@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Asset extends js.Object {
+trait Asset extends StObject {
   
   /** Please also refer to the [access level user guide](https://cloud.google.com/access-context-manager/docs/overview#access-levels). */
   var accessLevel: js.UndefOr[GoogleIdentityAccesscontextmanagerV1AccessLevel] = js.native
@@ -64,90 +65,78 @@ object Asset {
   }
   
   @scala.inline
-  implicit class AssetOps[Self <: Asset] (val x: Self) extends AnyVal {
+  implicit class AssetMutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLevel(value: GoogleIdentityAccesscontextmanagerV1AccessLevel): Self = StObject.set(x, "accessLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessLevelUndefined: Self = StObject.set(x, "accessLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessPolicy(value: GoogleIdentityAccesscontextmanagerV1AccessPolicy): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessLevel(value: GoogleIdentityAccesscontextmanagerV1AccessLevel): Self = this.set("accessLevel", value.asInstanceOf[js.Any])
+    def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
     
     @scala.inline
-    def deleteAccessLevel: Self = this.set("accessLevel", js.undefined)
+    def setAncestors(value: js.Array[String]): Self = StObject.set(x, "ancestors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicy(value: GoogleIdentityAccesscontextmanagerV1AccessPolicy): Self = this.set("accessPolicy", value.asInstanceOf[js.Any])
+    def setAncestorsUndefined: Self = StObject.set(x, "ancestors", js.undefined)
     
     @scala.inline
-    def deleteAccessPolicy: Self = this.set("accessPolicy", js.undefined)
+    def setAncestorsVarargs(value: String*): Self = StObject.set(x, "ancestors", js.Array(value :_*))
     
     @scala.inline
-    def setAncestorsVarargs(value: String*): Self = this.set("ancestors", js.Array(value :_*))
+    def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAncestors(value: js.Array[String]): Self = this.set("ancestors", value.asInstanceOf[js.Any])
+    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
     @scala.inline
-    def deleteAncestors: Self = this.set("ancestors", js.undefined)
+    def setIamPolicy(value: Policy): Self = StObject.set(x, "iamPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetType(value: String): Self = this.set("assetType", value.asInstanceOf[js.Any])
+    def setIamPolicyUndefined: Self = StObject.set(x, "iamPolicy", js.undefined)
     
     @scala.inline
-    def deleteAssetType: Self = this.set("assetType", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamPolicy(value: Policy): Self = this.set("iamPolicy", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIamPolicy: Self = this.set("iamPolicy", js.undefined)
+    def setOrgPolicy(value: js.Array[GoogleCloudOrgpolicyV1Policy]): Self = StObject.set(x, "orgPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrgPolicyUndefined: Self = StObject.set(x, "orgPolicy", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOrgPolicyVarargs(value: GoogleCloudOrgpolicyV1Policy*): Self = StObject.set(x, "orgPolicy", js.Array(value :_*))
     
     @scala.inline
-    def setOrgPolicyVarargs(value: GoogleCloudOrgpolicyV1Policy*): Self = this.set("orgPolicy", js.Array(value :_*))
+    def setOsInventory(value: Inventory): Self = StObject.set(x, "osInventory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgPolicy(value: js.Array[GoogleCloudOrgpolicyV1Policy]): Self = this.set("orgPolicy", value.asInstanceOf[js.Any])
+    def setOsInventoryUndefined: Self = StObject.set(x, "osInventory", js.undefined)
     
     @scala.inline
-    def deleteOrgPolicy: Self = this.set("orgPolicy", js.undefined)
+    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOsInventory(value: Inventory): Self = this.set("osInventory", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deleteOsInventory: Self = this.set("osInventory", js.undefined)
+    def setServicePerimeter(value: GoogleIdentityAccesscontextmanagerV1ServicePerimeter): Self = StObject.set(x, "servicePerimeter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Resource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setServicePerimeterUndefined: Self = StObject.set(x, "servicePerimeter", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicePerimeter(value: GoogleIdentityAccesscontextmanagerV1ServicePerimeter): Self = this.set("servicePerimeter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServicePerimeter: Self = this.set("servicePerimeter", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

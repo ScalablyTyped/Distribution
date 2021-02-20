@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,36 +56,24 @@ object IGenericObjectLayout {
   }
   
   @scala.inline
-  implicit class IGenericObjectLayoutOps[Self <: IGenericObjectLayout] (val x: Self) extends AnyVal {
+  implicit class IGenericObjectLayoutMutableBuilder[Self <: IGenericObjectLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQError(value: INxLayoutErrors): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQErrorUndefined: Self = StObject.set(x, "qError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQExtendsId(value: String): Self = StObject.set(x, "qExtendsId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQExtendsId(value: String): Self = this.set("qExtendsId", value.asInstanceOf[js.Any])
+    def setQHasSoftPatches(value: Boolean): Self = StObject.set(x, "qHasSoftPatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHasSoftPatches(value: Boolean): Self = this.set("qHasSoftPatches", value.asInstanceOf[js.Any])
+    def setQSelectionInfo(value: INxSelectionInfo): Self = StObject.set(x, "qSelectionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSelectionInfo(value: INxSelectionInfo): Self = this.set("qSelectionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQStateName(value: String): Self = this.set("qStateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQError(value: INxLayoutErrors): Self = this.set("qError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQError: Self = this.set("qError", js.undefined)
+    def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
   }
 }

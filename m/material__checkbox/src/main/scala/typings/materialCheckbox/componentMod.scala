@@ -4,17 +4,19 @@ import typings.materialBase.componentMod.MDCComponent
 import typings.materialCheckbox.foundationMod.MDCCheckboxFoundation
 import typings.materialRipple.componentMod.MDCRipple
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/checkbox/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @js.native
-  class MDCCheckbox () extends MDCComponent[MDCCheckboxFoundation] {
+  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/checkbox/component", "MDCCheckbox")
+  @js.native
+  class MDCCheckbox protected () extends MDCComponent[MDCCheckboxFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCCheckboxFoundation, args: js.Any*) = this()
     
     def checked: Boolean = js.native
     def checked_=(checked: Boolean): Unit = js.native
@@ -37,9 +39,10 @@ object componentMod extends js.Object {
     def value_=(value: String): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCCheckbox extends js.Object {
+  object MDCCheckbox {
     
+    @JSImport("@material/checkbox/component", "MDCCheckbox.attachTo")
+    @js.native
     def attachTo(root: Element): MDCCheckbox = js.native
   }
   

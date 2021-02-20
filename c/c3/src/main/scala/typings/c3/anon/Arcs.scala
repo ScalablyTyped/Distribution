@@ -2,12 +2,13 @@ package typings.c3.anon
 
 import typings.c3.mod.ExpandOptions
 import typings.c3.mod.LabelOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Arcs extends js.Object {
+trait Arcs extends StObject {
   
   var arcs: js.UndefOr[MinWidth] = js.native
   
@@ -59,72 +60,60 @@ object Arcs {
   }
   
   @scala.inline
-  implicit class ArcsOps[Self <: Arcs] (val x: Self) extends AnyVal {
+  implicit class ArcsMutableBuilder[Self <: Arcs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArcs(value: MinWidth): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArcsUndefined: Self = StObject.set(x, "arcs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpand(value: ExpandOptions): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArcs(value: MinWidth): Self = this.set("arcs", value.asInstanceOf[js.Any])
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteArcs: Self = this.set("arcs", js.undefined)
+    def setFullCircle(value: Boolean): Self = StObject.set(x, "fullCircle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: ExpandOptions): Self = this.set("expand", value.asInstanceOf[js.Any])
+    def setFullCircleUndefined: Self = StObject.set(x, "fullCircle", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setLabel(value: LabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullCircle(value: Boolean): Self = this.set("fullCircle", value.asInstanceOf[js.Any])
+    def setLabelLine(value: Show): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullCircle: Self = this.set("fullCircle", js.undefined)
+    def setLabelLineUndefined: Self = StObject.set(x, "labelLine", js.undefined)
     
     @scala.inline
-    def setLabel(value: LabelOptions): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelLine(value: Show): Self = this.set("labelLine", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteLabelLine: Self = this.set("labelLine", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnits(value: String): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

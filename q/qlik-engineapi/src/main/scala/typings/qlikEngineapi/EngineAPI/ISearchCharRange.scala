@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchCharRange...
   */
 @js.native
-trait ISearchCharRange extends js.Object {
+trait ISearchCharRange extends StObject {
   
   /**
     * Length of the match in the search result.
@@ -34,27 +35,15 @@ object ISearchCharRange {
   }
   
   @scala.inline
-  implicit class ISearchCharRangeOps[Self <: ISearchCharRange] (val x: Self) extends AnyVal {
+  implicit class ISearchCharRangeMutableBuilder[Self <: ISearchCharRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQCharCount(value: Double): Self = StObject.set(x, "qCharCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQCharPos(value: Double): Self = StObject.set(x, "qCharPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQCharCount(value: Double): Self = this.set("qCharCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQCharPos(value: Double): Self = this.set("qCharPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTerm(value: Double): Self = this.set("qTerm", value.asInstanceOf[js.Any])
+    def setQTerm(value: Double): Self = StObject.set(x, "qTerm", value.asInstanceOf[js.Any])
   }
 }

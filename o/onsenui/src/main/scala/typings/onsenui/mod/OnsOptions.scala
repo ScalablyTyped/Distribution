@@ -1,11 +1,12 @@
 package typings.onsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnsOptions extends js.Object {
+trait OnsOptions extends StObject {
   
   var parentScope: js.UndefOr[js.Object] = js.native
 }
@@ -18,24 +19,12 @@ object OnsOptions {
   }
   
   @scala.inline
-  implicit class OnsOptionsOps[Self <: OnsOptions] (val x: Self) extends AnyVal {
+  implicit class OnsOptionsMutableBuilder[Self <: OnsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParentScope(value: js.Object): Self = StObject.set(x, "parentScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParentScope(value: js.Object): Self = this.set("parentScope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentScope: Self = this.set("parentScope", js.undefined)
+    def setParentScopeUndefined: Self = StObject.set(x, "parentScope", js.undefined)
   }
 }

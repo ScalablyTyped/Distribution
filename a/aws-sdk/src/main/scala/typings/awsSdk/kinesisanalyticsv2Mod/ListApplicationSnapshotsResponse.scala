@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListApplicationSnapshotsResponse extends js.Object {
+trait ListApplicationSnapshotsResponse extends StObject {
   
   /**
     * The token for the next set of results, or null if there are no additional results.
@@ -26,33 +27,21 @@ object ListApplicationSnapshotsResponse {
   }
   
   @scala.inline
-  implicit class ListApplicationSnapshotsResponseOps[Self <: ListApplicationSnapshotsResponse] (val x: Self) extends AnyVal {
+  implicit class ListApplicationSnapshotsResponseMutableBuilder[Self <: ListApplicationSnapshotsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnapshotSummaries(value: SnapshotSummaries): Self = StObject.set(x, "SnapshotSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSnapshotSummariesUndefined: Self = StObject.set(x, "SnapshotSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSnapshotSummariesVarargs(value: SnapshotDetails*): Self = this.set("SnapshotSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setSnapshotSummaries(value: SnapshotSummaries): Self = this.set("SnapshotSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotSummaries: Self = this.set("SnapshotSummaries", js.undefined)
+    def setSnapshotSummariesVarargs(value: SnapshotDetails*): Self = StObject.set(x, "SnapshotSummaries", js.Array(value :_*))
   }
 }

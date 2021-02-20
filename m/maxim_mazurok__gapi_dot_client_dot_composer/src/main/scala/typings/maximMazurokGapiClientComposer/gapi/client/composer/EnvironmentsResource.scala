@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientComposer.anon.Callback
 import typings.maximMazurokGapiClientComposer.anon.Fields
 import typings.maximMazurokGapiClientComposer.anon.Key
 import typings.maximMazurokGapiClientComposer.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentsResource extends js.Object {
+trait EnvironmentsResource extends StObject {
   
   /** Create a new environment. */
   def create(request: Accesstoken): Request[Operation] = js.native

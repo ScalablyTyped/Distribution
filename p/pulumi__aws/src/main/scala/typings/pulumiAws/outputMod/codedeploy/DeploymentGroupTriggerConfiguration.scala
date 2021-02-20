@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.codedeploy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentGroupTriggerConfiguration extends js.Object {
+trait DeploymentGroupTriggerConfiguration extends StObject {
   
   /**
     * The event type or types for which notifications are triggered. Some values that are supported: `DeploymentStart`, `DeploymentSuccess`, `DeploymentFailure`, `DeploymentStop`, `DeploymentRollback`, `InstanceStart`, `InstanceSuccess`, `InstanceFailure`.  See [the CodeDeploy documentation](http://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-sns-event-notifications-create-trigger.html) for all possible values.
@@ -31,30 +32,18 @@ object DeploymentGroupTriggerConfiguration {
   }
   
   @scala.inline
-  implicit class DeploymentGroupTriggerConfigurationOps[Self <: DeploymentGroupTriggerConfiguration] (val x: Self) extends AnyVal {
+  implicit class DeploymentGroupTriggerConfigurationMutableBuilder[Self <: DeploymentGroupTriggerConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTriggerEvents(value: js.Array[String]): Self = StObject.set(x, "triggerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTriggerEventsVarargs(value: String*): Self = StObject.set(x, "triggerEvents", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerEventsVarargs(value: String*): Self = this.set("triggerEvents", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriggerEvents(value: js.Array[String]): Self = this.set("triggerEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerName(value: String): Self = this.set("triggerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerTargetArn(value: String): Self = this.set("triggerTargetArn", value.asInstanceOf[js.Any])
+    def setTriggerTargetArn(value: String): Self = StObject.set(x, "triggerTargetArn", value.asInstanceOf[js.Any])
   }
 }

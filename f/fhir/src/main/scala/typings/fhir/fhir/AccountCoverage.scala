@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,33 +35,21 @@ object AccountCoverage {
   }
   
   @scala.inline
-  implicit class AccountCoverageOps[Self <: AccountCoverage] (val x: Self) extends AnyVal {
+  implicit class AccountCoverageMutableBuilder[Self <: AccountCoverage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriority(value: positiveInt): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setCoverage(value: Reference): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    def set_priority(value: Element): Self = StObject.set(x, "_priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_priority(value: Element): Self = this.set("_priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_priority: Self = this.set("_priority", js.undefined)
-    
-    @scala.inline
-    def setPriority(value: positiveInt): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def set_priorityUndefined: Self = StObject.set(x, "_priority", js.undefined)
   }
 }

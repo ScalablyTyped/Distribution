@@ -1,11 +1,12 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollationDocument extends js.Object {
+trait CollationDocument extends StObject {
   
   var alternate: js.UndefOr[String] = js.native
   
@@ -34,69 +35,57 @@ object CollationDocument {
   }
   
   @scala.inline
-  implicit class CollationDocumentOps[Self <: CollationDocument] (val x: Self) extends AnyVal {
+  implicit class CollationDocumentMutableBuilder[Self <: CollationDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate(value: String): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackwards(value: Boolean): Self = StObject.set(x, "backwards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setBackwardsUndefined: Self = StObject.set(x, "backwards", js.undefined)
     
     @scala.inline
-    def setAlternate(value: String): Self = this.set("alternate", value.asInstanceOf[js.Any])
+    def setCaseFirst(value: String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlternate: Self = this.set("alternate", js.undefined)
+    def setCaseFirstUndefined: Self = StObject.set(x, "caseFirst", js.undefined)
     
     @scala.inline
-    def setBackwards(value: Boolean): Self = this.set("backwards", value.asInstanceOf[js.Any])
+    def setCaseLevel(value: Boolean): Self = StObject.set(x, "caseLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackwards: Self = this.set("backwards", js.undefined)
+    def setCaseLevelUndefined: Self = StObject.set(x, "caseLevel", js.undefined)
     
     @scala.inline
-    def setCaseFirst(value: String): Self = this.set("caseFirst", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaseFirst: Self = this.set("caseFirst", js.undefined)
+    def setMaxVariable(value: String): Self = StObject.set(x, "maxVariable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseLevel(value: Boolean): Self = this.set("caseLevel", value.asInstanceOf[js.Any])
+    def setMaxVariableUndefined: Self = StObject.set(x, "maxVariable", js.undefined)
     
     @scala.inline
-    def deleteCaseLevel: Self = this.set("caseLevel", js.undefined)
+    def setNormalization(value: Boolean): Self = StObject.set(x, "normalization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVariable(value: String): Self = this.set("maxVariable", value.asInstanceOf[js.Any])
+    def setNormalizationUndefined: Self = StObject.set(x, "normalization", js.undefined)
     
     @scala.inline
-    def deleteMaxVariable: Self = this.set("maxVariable", js.undefined)
+    def setNumericOrdering(value: Boolean): Self = StObject.set(x, "numericOrdering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalization(value: Boolean): Self = this.set("normalization", value.asInstanceOf[js.Any])
+    def setNumericOrderingUndefined: Self = StObject.set(x, "numericOrdering", js.undefined)
     
     @scala.inline
-    def deleteNormalization: Self = this.set("normalization", js.undefined)
+    def setStrength(value: scala.Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericOrdering(value: Boolean): Self = this.set("numericOrdering", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumericOrdering: Self = this.set("numericOrdering", js.undefined)
-    
-    @scala.inline
-    def setStrength(value: scala.Double): Self = this.set("strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrength: Self = this.set("strength", js.undefined)
+    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
   }
 }

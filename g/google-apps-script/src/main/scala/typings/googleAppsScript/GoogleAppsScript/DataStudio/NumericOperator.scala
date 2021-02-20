@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN
   - typings.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL
 */
-trait NumericOperator extends js.Object
+trait NumericOperator extends StObject
 object NumericOperator {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.relayRuntime.anon
 
 import typings.relayRuntime.connectionHandlerMod.ConnectionMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionRefetch extends js.Object {
+trait ConnectionRefetch extends StObject {
   
   val connection: js.Array[ConnectionMetadata] = js.native
   
@@ -21,27 +22,15 @@ object ConnectionRefetch {
   }
   
   @scala.inline
-  implicit class ConnectionRefetchOps[Self <: ConnectionRefetch] (val x: Self) extends AnyVal {
+  implicit class ConnectionRefetchMutableBuilder[Self <: ConnectionRefetch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: js.Array[ConnectionMetadata]): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionVarargs(value: ConnectionMetadata*): Self = StObject.set(x, "connection", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectionVarargs(value: ConnectionMetadata*): Self = this.set("connection", js.Array(value :_*))
-    
-    @scala.inline
-    def setConnection(value: js.Array[ConnectionMetadata]): Self = this.set("connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefetch(value: ReaderRefetchMetadataconn): Self = this.set("refetch", value.asInstanceOf[js.Any])
+    def setRefetch(value: ReaderRefetchMetadataconn): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.inactivity
   - typings.ipp.ippStrings.none
 */
-trait TimeoutPredicate extends js.Object
+trait TimeoutPredicate extends StObject
 object TimeoutPredicate {
   
   @scala.inline

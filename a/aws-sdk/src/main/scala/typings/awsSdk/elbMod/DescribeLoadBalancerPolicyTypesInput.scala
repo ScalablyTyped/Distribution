@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLoadBalancerPolicyTypesInput extends js.Object {
+trait DescribeLoadBalancerPolicyTypesInput extends StObject {
   
   /**
     * The names of the policy types. If no names are specified, describes all policy types defined by Elastic Load Balancing.
@@ -21,27 +22,15 @@ object DescribeLoadBalancerPolicyTypesInput {
   }
   
   @scala.inline
-  implicit class DescribeLoadBalancerPolicyTypesInputOps[Self <: DescribeLoadBalancerPolicyTypesInput] (val x: Self) extends AnyVal {
+  implicit class DescribeLoadBalancerPolicyTypesInputMutableBuilder[Self <: DescribeLoadBalancerPolicyTypesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyTypeNames(value: PolicyTypeNames): Self = StObject.set(x, "PolicyTypeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyTypeNamesUndefined: Self = StObject.set(x, "PolicyTypeNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyTypeNamesVarargs(value: PolicyTypeName*): Self = this.set("PolicyTypeNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicyTypeNames(value: PolicyTypeNames): Self = this.set("PolicyTypeNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyTypeNames: Self = this.set("PolicyTypeNames", js.undefined)
+    def setPolicyTypeNamesVarargs(value: PolicyTypeName*): Self = StObject.set(x, "PolicyTypeNames", js.Array(value :_*))
   }
 }

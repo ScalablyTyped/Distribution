@@ -1,5 +1,6 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 返回一个 requestTask 对象，通过 requestTask，可中断请求任务。
   */
 @js.native
-trait RequestTask extends js.Object {
+trait RequestTask extends StObject {
   
   def abort(): Unit = js.native
 }
@@ -21,21 +22,9 @@ object RequestTask {
   }
   
   @scala.inline
-  implicit class RequestTaskOps[Self <: RequestTask] (val x: Self) extends AnyVal {
+  implicit class RequestTaskMutableBuilder[Self <: RequestTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAbort(value: () => Unit): Self = this.set("abort", js.Any.fromFunction0(value))
+    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }
 }

@@ -1,15 +1,15 @@
 package typings.three
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Interpolant", JSImport.Namespace)
-@js.native
-object interpolantMod extends js.Object {
+object interpolantMod {
   
+  @JSImport("three/src/math/Interpolant", "Interpolant")
   @js.native
-  abstract class Interpolant protected () extends js.Object {
+  abstract class Interpolant protected () extends StObject {
     def this(parameterPositions: js.Any, sampleValues: js.Any, sampleSize: Double) = this()
     def this(parameterPositions: js.Any, sampleValues: js.Any, sampleSize: Double, resultBuffer: js.Any) = this()
     

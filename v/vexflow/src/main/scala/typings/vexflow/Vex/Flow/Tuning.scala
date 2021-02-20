@@ -1,11 +1,12 @@
 package typings.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tuning extends js.Object {
+trait Tuning extends StObject {
   
   def getNoteForFret(fretNum: String, stringNum: String): String = js.native
   
@@ -32,33 +33,21 @@ object Tuning {
   }
   
   @scala.inline
-  implicit class TuningOps[Self <: Tuning] (val x: Self) extends AnyVal {
+  implicit class TuningMutableBuilder[Self <: Tuning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNoteForFret(value: (String, String) => String): Self = StObject.set(x, "getNoteForFret", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetValueForFret(value: (String, String) => Double): Self = StObject.set(x, "getValueForFret", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetValueForString(value: String => Double): Self = StObject.set(x, "getValueForString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNoteForFret(value: (String, String) => String): Self = this.set("getNoteForFret", js.Any.fromFunction2(value))
+    def setNoteToInteger(value: String => Double): Self = StObject.set(x, "noteToInteger", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValueForFret(value: (String, String) => Double): Self = this.set("getValueForFret", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetValueForString(value: String => Double): Self = this.set("getValueForString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNoteToInteger(value: String => Double): Self = this.set("noteToInteger", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTuning(value: String => Unit): Self = this.set("setTuning", js.Any.fromFunction1(value))
+    def setSetTuning(value: String => Unit): Self = StObject.set(x, "setTuning", js.Any.fromFunction1(value))
   }
 }

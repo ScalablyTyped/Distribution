@@ -1,17 +1,15 @@
 package typings.cordovaPluginMedia
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable4
 import typings.std.MediaError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("Media")
   @js.native
   class Media protected ()
     extends typings.cordovaPluginMedia.Media {
@@ -30,36 +28,41 @@ object global extends js.Object {
       mediaStatus: js.Function1[/* status */ Double, Unit]
     ) = this()
   }
-  @js.native
-  object Media
-    extends Instantiable2[
-          /* src */ String, 
-          /* mediaSuccess */ js.Function0[Unit], 
-          typings.cordovaPluginMedia.Media
-        ]
-       with Instantiable3[
-          /* src */ String, 
-          /* mediaSuccess */ js.Function0[Unit], 
-          /* mediaError */ js.Function1[/* error */ MediaError, js.Any], 
-          typings.cordovaPluginMedia.Media
-        ]
-       with Instantiable4[
-          /* src */ String, 
-          /* mediaSuccess */ js.Function0[Unit], 
-          js.UndefOr[/* mediaError */ js.Function1[/* error */ MediaError, js.Any]], 
-          /* mediaStatus */ js.Function1[/* status */ Double, Unit], 
-          typings.cordovaPluginMedia.Media
-        ] {
+  object Media {
+    
+    @JSGlobal("Media")
+    @js.native
+    val ^ : js.Any = js.native
     
     //Media statuses
-    var MEDIA_NONE: Double = js.native
+    @JSGlobal("Media.MEDIA_NONE")
+    @js.native
+    def MEDIA_NONE: Double = js.native
+    @scala.inline
+    def MEDIA_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_NONE")(x.asInstanceOf[js.Any])
     
-    var MEDIA_PAUSED: Double = js.native
+    @JSGlobal("Media.MEDIA_PAUSED")
+    @js.native
+    def MEDIA_PAUSED: Double = js.native
+    @scala.inline
+    def MEDIA_PAUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_PAUSED")(x.asInstanceOf[js.Any])
     
-    var MEDIA_RUNNING: Double = js.native
+    @JSGlobal("Media.MEDIA_RUNNING")
+    @js.native
+    def MEDIA_RUNNING: Double = js.native
+    @scala.inline
+    def MEDIA_RUNNING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_RUNNING")(x.asInstanceOf[js.Any])
     
-    var MEDIA_STARTING: Double = js.native
+    @JSGlobal("Media.MEDIA_STARTING")
+    @js.native
+    def MEDIA_STARTING: Double = js.native
+    @scala.inline
+    def MEDIA_STARTING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_STARTING")(x.asInstanceOf[js.Any])
     
-    var MEDIA_STOPPED: Double = js.native
+    @JSGlobal("Media.MEDIA_STOPPED")
+    @js.native
+    def MEDIA_STOPPED: Double = js.native
+    @scala.inline
+    def MEDIA_STOPPED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_STOPPED")(x.asInstanceOf[js.Any])
   }
 }

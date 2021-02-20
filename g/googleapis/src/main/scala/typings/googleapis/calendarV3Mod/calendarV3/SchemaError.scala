@@ -1,11 +1,12 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaError extends js.Object {
+trait SchemaError extends StObject {
   
   /**
     * Domain, or broad category, of the error.
@@ -34,30 +35,18 @@ object SchemaError {
   }
   
   @scala.inline
-  implicit class SchemaErrorOps[Self <: SchemaError] (val x: Self) extends AnyVal {
+  implicit class SchemaErrorMutableBuilder[Self <: SchemaError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

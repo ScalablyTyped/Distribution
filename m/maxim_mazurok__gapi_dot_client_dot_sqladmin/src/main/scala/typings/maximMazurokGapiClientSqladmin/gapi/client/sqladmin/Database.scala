@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Database extends js.Object {
+trait Database extends StObject {
   
   /** The Cloud SQL charset value. */
   var charset: js.UndefOr[String] = js.native
@@ -42,72 +43,60 @@ object Database {
   }
   
   @scala.inline
-  implicit class DatabaseOps[Self <: Database] (val x: Self) extends AnyVal {
+  implicit class DatabaseMutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharset(value: String): Self = this.set("charset", value.asInstanceOf[js.Any])
+    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
     @scala.inline
-    def deleteCharset: Self = this.set("charset", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollation(value: String): Self = this.set("collation", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteCollation: Self = this.set("collation", js.undefined)
+    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
+    def setSqlserverDatabaseDetails(value: SqlServerDatabaseDetails): Self = StObject.set(x, "sqlserverDatabaseDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
-    
-    @scala.inline
-    def setSqlserverDatabaseDetails(value: SqlServerDatabaseDetails): Self = this.set("sqlserverDatabaseDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqlserverDatabaseDetails: Self = this.set("sqlserverDatabaseDetails", js.undefined)
+    def setSqlserverDatabaseDetailsUndefined: Self = StObject.set(x, "sqlserverDatabaseDetails", js.undefined)
   }
 }

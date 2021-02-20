@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BluetoothMajorClass extends js.Object
+sealed trait BluetoothMajorClass extends StObject
 /** Indicates the Major Class code of the device, which is the general family of device with which the device is associated. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothMajorClass")
 @js.native
-object BluetoothMajorClass extends js.Object {
+object BluetoothMajorClass extends StObject {
   
   /** An audio or video device. Example devices are headset, speaker, stereo, video display and VCR. */
   @js.native

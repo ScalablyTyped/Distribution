@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animatable extends js.Object {
+trait Animatable extends StObject {
   
   def animate(): Animation = js.native
   def animate(keyframes: js.Array[Keyframe]): Animation = js.native

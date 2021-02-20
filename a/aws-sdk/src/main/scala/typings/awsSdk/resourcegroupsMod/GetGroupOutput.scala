@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetGroupOutput extends js.Object {
+trait GetGroupOutput extends StObject {
   
   /**
     * A full description of the resource group.
@@ -21,24 +22,12 @@ object GetGroupOutput {
   }
   
   @scala.inline
-  implicit class GetGroupOutputOps[Self <: GetGroupOutput] (val x: Self) extends AnyVal {
+  implicit class GetGroupOutputMutableBuilder[Self <: GetGroupOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroup(value: Group): Self = this.set("Group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroup: Self = this.set("Group", js.undefined)
+    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
   }
 }

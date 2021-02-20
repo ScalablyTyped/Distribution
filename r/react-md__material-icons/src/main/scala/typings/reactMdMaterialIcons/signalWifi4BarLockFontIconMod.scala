@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/SignalWifi4BarLockFontIcon", JSImport.Namespace)
-@js.native
-object signalWifi4BarLockFontIconMod extends js.Object {
+object signalWifi4BarLockFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/SignalWifi4BarLockFontIcon", "SignalWifi4BarLockFontIcon")
+  @js.native
   val SignalWifi4BarLockFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

@@ -3,6 +3,7 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.loess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,48 +33,36 @@ object LoessTransform {
   }
   
   @scala.inline
-  implicit class LoessTransformOps[Self <: LoessTransform] (val x: Self) extends AnyVal {
+  implicit class LoessTransformMutableBuilder[Self <: LoessTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBandwidth(value: Double | SignalRef): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: loess): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
     @scala.inline
-    def setX(value: FieldRef): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: FieldRef): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
     @scala.inline
-    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setType(value: loess): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: Double | SignalRef): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setX(value: FieldRef): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
-    
-    @scala.inline
-    def setGroupbyVarargs(value: FieldRef*): Self = this.set("groupby", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = this.set("groupby", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupby: Self = this.set("groupby", js.undefined)
+    def setY(value: FieldRef): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

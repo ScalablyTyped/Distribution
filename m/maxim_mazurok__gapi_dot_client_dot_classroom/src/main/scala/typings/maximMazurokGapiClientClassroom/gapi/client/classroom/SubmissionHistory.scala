@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubmissionHistory extends js.Object {
+trait SubmissionHistory extends StObject {
   
   /** The grade history information of the submission, if present. */
   var gradeHistory: js.UndefOr[GradeHistory] = js.native
@@ -22,30 +23,18 @@ object SubmissionHistory {
   }
   
   @scala.inline
-  implicit class SubmissionHistoryOps[Self <: SubmissionHistory] (val x: Self) extends AnyVal {
+  implicit class SubmissionHistoryMutableBuilder[Self <: SubmissionHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGradeHistory(value: GradeHistory): Self = StObject.set(x, "gradeHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGradeHistoryUndefined: Self = StObject.set(x, "gradeHistory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateHistory(value: StateHistory): Self = StObject.set(x, "stateHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradeHistory(value: GradeHistory): Self = this.set("gradeHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGradeHistory: Self = this.set("gradeHistory", js.undefined)
-    
-    @scala.inline
-    def setStateHistory(value: StateHistory): Self = this.set("stateHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateHistory: Self = this.set("stateHistory", js.undefined)
+    def setStateHistoryUndefined: Self = StObject.set(x, "stateHistory", js.undefined)
   }
 }

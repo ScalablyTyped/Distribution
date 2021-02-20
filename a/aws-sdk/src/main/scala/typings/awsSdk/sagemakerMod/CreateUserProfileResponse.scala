@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateUserProfileResponse extends js.Object {
+trait CreateUserProfileResponse extends StObject {
   
   /**
     * The user profile Amazon Resource Name (ARN).
@@ -21,24 +22,12 @@ object CreateUserProfileResponse {
   }
   
   @scala.inline
-  implicit class CreateUserProfileResponseOps[Self <: CreateUserProfileResponse] (val x: Self) extends AnyVal {
+  implicit class CreateUserProfileResponseMutableBuilder[Self <: CreateUserProfileResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUserProfileArn(value: UserProfileArn): Self = StObject.set(x, "UserProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUserProfileArn(value: UserProfileArn): Self = this.set("UserProfileArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProfileArn: Self = this.set("UserProfileArn", js.undefined)
+    def setUserProfileArnUndefined: Self = StObject.set(x, "UserProfileArn", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.plotlyJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.plotlyJs.plotlyJsStrings.volume
   - typings.plotlyJs.plotlyJsStrings.waterfall
 */
-trait PlotType extends js.Object
+trait PlotType extends StObject
 object PlotType {
   
   @scala.inline

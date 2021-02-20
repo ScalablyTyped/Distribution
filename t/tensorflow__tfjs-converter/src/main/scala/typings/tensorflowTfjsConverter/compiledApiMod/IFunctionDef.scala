@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFunctionDef extends js.Object {
+trait IFunctionDef extends StObject {
   
   /** FunctionDef attr */
   var attr: js.UndefOr[StringDictionary[IAttrValue] | Null] = js.native
@@ -29,57 +30,45 @@ object IFunctionDef {
   }
   
   @scala.inline
-  implicit class IFunctionDefOps[Self <: IFunctionDef] (val x: Self) extends AnyVal {
+  implicit class IFunctionDefMutableBuilder[Self <: IFunctionDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttr(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrNull: Self = StObject.set(x, "attr", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
     @scala.inline
-    def setAttr(value: StringDictionary[IAttrValue]): Self = this.set("attr", value.asInstanceOf[js.Any])
+    def setNodeDef(value: js.Array[INodeDef]): Self = StObject.set(x, "nodeDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttr: Self = this.set("attr", js.undefined)
+    def setNodeDefNull: Self = StObject.set(x, "nodeDef", null)
     
     @scala.inline
-    def setAttrNull: Self = this.set("attr", null)
+    def setNodeDefUndefined: Self = StObject.set(x, "nodeDef", js.undefined)
     
     @scala.inline
-    def setNodeDefVarargs(value: INodeDef*): Self = this.set("nodeDef", js.Array(value :_*))
+    def setNodeDefVarargs(value: INodeDef*): Self = StObject.set(x, "nodeDef", js.Array(value :_*))
     
     @scala.inline
-    def setNodeDef(value: js.Array[INodeDef]): Self = this.set("nodeDef", value.asInstanceOf[js.Any])
+    def setRet(value: StringDictionary[String]): Self = StObject.set(x, "ret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeDef: Self = this.set("nodeDef", js.undefined)
+    def setRetNull: Self = StObject.set(x, "ret", null)
     
     @scala.inline
-    def setNodeDefNull: Self = this.set("nodeDef", null)
+    def setRetUndefined: Self = StObject.set(x, "ret", js.undefined)
     
     @scala.inline
-    def setRet(value: StringDictionary[String]): Self = this.set("ret", value.asInstanceOf[js.Any])
+    def setSignature(value: IOpDef): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRet: Self = this.set("ret", js.undefined)
+    def setSignatureNull: Self = StObject.set(x, "signature", null)
     
     @scala.inline
-    def setRetNull: Self = this.set("ret", null)
-    
-    @scala.inline
-    def setSignature(value: IOpDef): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
-    
-    @scala.inline
-    def setSignatureNull: Self = this.set("signature", null)
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

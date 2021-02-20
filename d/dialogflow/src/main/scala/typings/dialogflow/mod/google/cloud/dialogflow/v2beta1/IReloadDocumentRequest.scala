@@ -1,27 +1,47 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ReloadDocumentRequest. */
-trait IReloadDocumentRequest extends js.Object {
+@js.native
+trait IReloadDocumentRequest extends StObject {
+  
   /** ReloadDocumentRequest gcsSource */
-  var gcsSource: js.UndefOr[IGcsSource | Null] = js.undefined
+  var gcsSource: js.UndefOr[IGcsSource | Null] = js.native
+  
   /** ReloadDocumentRequest name */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var name: js.UndefOr[String | Null] = js.native
 }
-
 object IReloadDocumentRequest {
+  
   @scala.inline
-  def apply(
-    gcsSource: js.UndefOr[Null | IGcsSource] = js.undefined,
-    name: js.UndefOr[Null | String] = js.undefined
-  ): IReloadDocumentRequest = {
+  def apply(): IReloadDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gcsSource)) __obj.updateDynamic("gcsSource")(gcsSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReloadDocumentRequest]
   }
+  
+  @scala.inline
+  implicit class IReloadDocumentRequestMutableBuilder[Self <: IReloadDocumentRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setGcsSource(value: IGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGcsSourceNull: Self = StObject.set(x, "gcsSource", null)
+    
+    @scala.inline
+    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameNull: Self = StObject.set(x, "name", null)
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

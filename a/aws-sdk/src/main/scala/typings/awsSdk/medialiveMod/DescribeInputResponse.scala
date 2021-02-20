@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeInputResponse extends js.Object {
+trait DescribeInputResponse extends StObject {
   
   /**
     * The Unique ARN of the input (generated, immutable).
@@ -87,126 +88,114 @@ object DescribeInputResponse {
   }
   
   @scala.inline
-  implicit class DescribeInputResponseOps[Self <: DescribeInputResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeInputResponseMutableBuilder[Self <: DescribeInputResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachedChannels(value: listOfString): Self = StObject.set(x, "AttachedChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setAttachedChannelsUndefined: Self = StObject.set(x, "AttachedChannels", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setAttachedChannelsVarargs(value: string*): Self = StObject.set(x, "AttachedChannels", js.Array(value :_*))
     
     @scala.inline
-    def setAttachedChannelsVarargs(value: string*): Self = this.set("AttachedChannels", js.Array(value :_*))
+    def setDestinations(value: listOfInputDestination): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedChannels(value: listOfString): Self = this.set("AttachedChannels", value.asInstanceOf[js.Any])
+    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
     @scala.inline
-    def deleteAttachedChannels: Self = this.set("AttachedChannels", js.undefined)
+    def setDestinationsVarargs(value: InputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationsVarargs(value: InputDestination*): Self = this.set("Destinations", js.Array(value :_*))
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinations(value: listOfInputDestination): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteDestinations: Self = this.set("Destinations", js.undefined)
+    def setInputClass(value: InputClass): Self = StObject.set(x, "InputClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setInputClassUndefined: Self = StObject.set(x, "InputClass", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setInputDevices(value: listOfInputDeviceSettings): Self = StObject.set(x, "InputDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputClass(value: InputClass): Self = this.set("InputClass", value.asInstanceOf[js.Any])
+    def setInputDevicesUndefined: Self = StObject.set(x, "InputDevices", js.undefined)
     
     @scala.inline
-    def deleteInputClass: Self = this.set("InputClass", js.undefined)
+    def setInputDevicesVarargs(value: InputDeviceSettings*): Self = StObject.set(x, "InputDevices", js.Array(value :_*))
     
     @scala.inline
-    def setInputDevicesVarargs(value: InputDeviceSettings*): Self = this.set("InputDevices", js.Array(value :_*))
+    def setInputSourceType(value: InputSourceType): Self = StObject.set(x, "InputSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDevices(value: listOfInputDeviceSettings): Self = this.set("InputDevices", value.asInstanceOf[js.Any])
+    def setInputSourceTypeUndefined: Self = StObject.set(x, "InputSourceType", js.undefined)
     
     @scala.inline
-    def deleteInputDevices: Self = this.set("InputDevices", js.undefined)
+    def setMediaConnectFlows(value: listOfMediaConnectFlow): Self = StObject.set(x, "MediaConnectFlows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSourceType(value: InputSourceType): Self = this.set("InputSourceType", value.asInstanceOf[js.Any])
+    def setMediaConnectFlowsUndefined: Self = StObject.set(x, "MediaConnectFlows", js.undefined)
     
     @scala.inline
-    def deleteInputSourceType: Self = this.set("InputSourceType", js.undefined)
+    def setMediaConnectFlowsVarargs(value: MediaConnectFlow*): Self = StObject.set(x, "MediaConnectFlows", js.Array(value :_*))
     
     @scala.inline
-    def setMediaConnectFlowsVarargs(value: MediaConnectFlow*): Self = this.set("MediaConnectFlows", js.Array(value :_*))
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaConnectFlows(value: listOfMediaConnectFlow): Self = this.set("MediaConnectFlows", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMediaConnectFlows: Self = this.set("MediaConnectFlows", js.undefined)
+    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSecurityGroups(value: listOfString): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupsVarargs(value: string*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    def setSources(value: listOfInputSource): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroups(value: listOfString): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    def setSourcesVarargs(value: InputSource*): Self = StObject.set(x, "Sources", js.Array(value :_*))
     
     @scala.inline
-    def setSourcesVarargs(value: InputSource*): Self = this.set("Sources", js.Array(value :_*))
+    def setState(value: InputState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSources(value: listOfInputSource): Self = this.set("Sources", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteSources: Self = this.set("Sources", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: InputState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setType(value: InputType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setType(value: InputType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowAddShape extends js.Object {
+trait AllowAddShape extends StObject {
   
   var allowAddShape: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object AllowAddShape {
   }
   
   @scala.inline
-  implicit class AllowAddShapeOps[Self <: AllowAddShape] (val x: Self) extends AnyVal {
+  implicit class AllowAddShapeMutableBuilder[Self <: AllowAddShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAddShape(value: Boolean): Self = StObject.set(x, "allowAddShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAddShapeUndefined: Self = StObject.set(x, "allowAddShape", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowChangeConnection(value: Boolean): Self = StObject.set(x, "allowChangeConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAddShape(value: Boolean): Self = this.set("allowAddShape", value.asInstanceOf[js.Any])
+    def setAllowChangeConnectionUndefined: Self = StObject.set(x, "allowChangeConnection", js.undefined)
     
     @scala.inline
-    def deleteAllowAddShape: Self = this.set("allowAddShape", js.undefined)
+    def setAllowChangeConnectorPoints(value: Boolean): Self = StObject.set(x, "allowChangeConnectorPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowChangeConnection(value: Boolean): Self = this.set("allowChangeConnection", value.asInstanceOf[js.Any])
+    def setAllowChangeConnectorPointsUndefined: Self = StObject.set(x, "allowChangeConnectorPoints", js.undefined)
     
     @scala.inline
-    def deleteAllowChangeConnection: Self = this.set("allowChangeConnection", js.undefined)
+    def setAllowChangeConnectorText(value: Boolean): Self = StObject.set(x, "allowChangeConnectorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowChangeConnectorPoints(value: Boolean): Self = this.set("allowChangeConnectorPoints", value.asInstanceOf[js.Any])
+    def setAllowChangeConnectorTextUndefined: Self = StObject.set(x, "allowChangeConnectorText", js.undefined)
     
     @scala.inline
-    def deleteAllowChangeConnectorPoints: Self = this.set("allowChangeConnectorPoints", js.undefined)
+    def setAllowChangeShapeText(value: Boolean): Self = StObject.set(x, "allowChangeShapeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowChangeConnectorText(value: Boolean): Self = this.set("allowChangeConnectorText", value.asInstanceOf[js.Any])
+    def setAllowChangeShapeTextUndefined: Self = StObject.set(x, "allowChangeShapeText", js.undefined)
     
     @scala.inline
-    def deleteAllowChangeConnectorText: Self = this.set("allowChangeConnectorText", js.undefined)
+    def setAllowDeleteConnector(value: Boolean): Self = StObject.set(x, "allowDeleteConnector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowChangeShapeText(value: Boolean): Self = this.set("allowChangeShapeText", value.asInstanceOf[js.Any])
+    def setAllowDeleteConnectorUndefined: Self = StObject.set(x, "allowDeleteConnector", js.undefined)
     
     @scala.inline
-    def deleteAllowChangeShapeText: Self = this.set("allowChangeShapeText", js.undefined)
+    def setAllowDeleteShape(value: Boolean): Self = StObject.set(x, "allowDeleteShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDeleteConnector(value: Boolean): Self = this.set("allowDeleteConnector", value.asInstanceOf[js.Any])
+    def setAllowDeleteShapeUndefined: Self = StObject.set(x, "allowDeleteShape", js.undefined)
     
     @scala.inline
-    def deleteAllowDeleteConnector: Self = this.set("allowDeleteConnector", js.undefined)
+    def setAllowMoveShape(value: Boolean): Self = StObject.set(x, "allowMoveShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDeleteShape(value: Boolean): Self = this.set("allowDeleteShape", value.asInstanceOf[js.Any])
+    def setAllowMoveShapeUndefined: Self = StObject.set(x, "allowMoveShape", js.undefined)
     
     @scala.inline
-    def deleteAllowDeleteShape: Self = this.set("allowDeleteShape", js.undefined)
+    def setAllowResizeShape(value: Boolean): Self = StObject.set(x, "allowResizeShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMoveShape(value: Boolean): Self = this.set("allowMoveShape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowMoveShape: Self = this.set("allowMoveShape", js.undefined)
-    
-    @scala.inline
-    def setAllowResizeShape(value: Boolean): Self = this.set("allowResizeShape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowResizeShape: Self = this.set("allowResizeShape", js.undefined)
+    def setAllowResizeShapeUndefined: Self = StObject.set(x, "allowResizeShape", js.undefined)
   }
 }

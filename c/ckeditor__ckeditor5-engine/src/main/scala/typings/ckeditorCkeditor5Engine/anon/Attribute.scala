@@ -1,11 +1,12 @@
 package typings.ckeditorCkeditor5Engine.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attribute extends js.Object {
+trait Attribute extends StObject {
   
   var attribute: js.UndefOr[js.Array[String]] = js.native
   
@@ -20,30 +21,18 @@ object Attribute {
   }
   
   @scala.inline
-  implicit class AttributeOps[Self <: Attribute] (val x: Self) extends AnyVal {
+  implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: js.Array[String]): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeVarargs(value: String*): Self = StObject.set(x, "attribute", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributeVarargs(value: String*): Self = this.set("attribute", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttribute(value: js.Array[String]): Self = this.set("attribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

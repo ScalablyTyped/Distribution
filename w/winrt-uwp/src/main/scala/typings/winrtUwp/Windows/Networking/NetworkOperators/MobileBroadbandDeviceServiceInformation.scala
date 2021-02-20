@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a mobile broadband device service. */
 @js.native
-trait MobileBroadbandDeviceServiceInformation extends js.Object {
+trait MobileBroadbandDeviceServiceInformation extends StObject {
   
   /** Gets the unique device service identifier for the mobile broadband device. */
   var deviceServiceId: String = js.native
@@ -26,27 +27,15 @@ object MobileBroadbandDeviceServiceInformation {
   }
   
   @scala.inline
-  implicit class MobileBroadbandDeviceServiceInformationOps[Self <: MobileBroadbandDeviceServiceInformation] (val x: Self) extends AnyVal {
+  implicit class MobileBroadbandDeviceServiceInformationMutableBuilder[Self <: MobileBroadbandDeviceServiceInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceServiceId(value: String): Self = StObject.set(x, "deviceServiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDataReadSupported(value: Boolean): Self = StObject.set(x, "isDataReadSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceServiceId(value: String): Self = this.set("deviceServiceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDataReadSupported(value: Boolean): Self = this.set("isDataReadSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDataWriteSupported(value: Boolean): Self = this.set("isDataWriteSupported", value.asInstanceOf[js.Any])
+    def setIsDataWriteSupported(value: Boolean): Self = StObject.set(x, "isDataWriteSupported", value.asInstanceOf[js.Any])
   }
 }

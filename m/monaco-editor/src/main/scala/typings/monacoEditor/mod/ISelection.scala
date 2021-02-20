@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISelection extends js.Object {
+trait ISelection extends StObject {
   
   /**
     * The column on `positionLineNumber` where the selection has ended.
@@ -41,30 +42,18 @@ object ISelection {
   }
   
   @scala.inline
-  implicit class ISelectionOps[Self <: ISelection] (val x: Self) extends AnyVal {
+  implicit class ISelectionMutableBuilder[Self <: ISelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPositionColumn(value: Double): Self = StObject.set(x, "positionColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionLineNumber(value: Double): Self = StObject.set(x, "positionLineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectionStartColumn(value: Double): Self = StObject.set(x, "selectionStartColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionColumn(value: Double): Self = this.set("positionColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionLineNumber(value: Double): Self = this.set("positionLineNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionStartColumn(value: Double): Self = this.set("selectionStartColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionStartLineNumber(value: Double): Self = this.set("selectionStartLineNumber", value.asInstanceOf[js.Any])
+    def setSelectionStartLineNumber(value: Double): Self = StObject.set(x, "selectionStartLineNumber", value.asInstanceOf[js.Any])
   }
 }

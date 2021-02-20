@@ -2,6 +2,7 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.galleryInterfacesMod.ExtensionFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,51 +93,39 @@ object InstalledExtension {
   }
   
   @scala.inline
-  implicit class InstalledExtensionOps[Self <: InstalledExtension] (val x: Self) extends AnyVal {
+  implicit class InstalledExtensionMutableBuilder[Self <: InstalledExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiles(value: js.Array[ExtensionFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionId(value: String): Self = this.set("extensionId", value.asInstanceOf[js.Any])
+    def setFilesVarargs(value: ExtensionFile*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionName(value: String): Self = this.set("extensionName", value.asInstanceOf[js.Any])
+    def setFlags(value: ExtensionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesVarargs(value: ExtensionFile*): Self = this.set("files", js.Array(value :_*))
+    def setInstallState(value: InstalledExtensionState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[ExtensionFile]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setLastPublished(value: Date): Self = StObject.set(x, "lastPublished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: ExtensionFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setPublisherId(value: String): Self = StObject.set(x, "publisherId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallState(value: InstalledExtensionState): Self = this.set("installState", value.asInstanceOf[js.Any])
+    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPublished(value: Date): Self = this.set("lastPublished", value.asInstanceOf[js.Any])
+    def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherId(value: String): Self = this.set("publisherId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherName(value: String): Self = this.set("publisherName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegistrationId(value: String): Self = this.set("registrationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

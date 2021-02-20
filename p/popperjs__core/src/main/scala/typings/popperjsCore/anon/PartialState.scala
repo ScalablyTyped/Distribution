@@ -7,13 +7,14 @@ import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.popperjsCore.typesMod.StateRects
 import typings.std.CSSStyleDeclaration
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/types.State> */
 @js.native
-trait PartialState extends js.Object {
+trait PartialState extends StObject {
   
   var attributes: js.UndefOr[StringDictionary[StringDictionary[String | Boolean]]] = js.native
   
@@ -46,87 +47,75 @@ object PartialState {
   }
   
   @scala.inline
-  implicit class PartialStateOps[Self <: PartialState] (val x: Self) extends AnyVal {
+  implicit class PartialStateMutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: StringDictionary[StringDictionary[String | Boolean]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElements(value: Arrow): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: StringDictionary[StringDictionary[String | Boolean]]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setModifiersData(value: Dictkey): Self = StObject.set(x, "modifiersData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElements(value: Arrow): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setModifiersDataUndefined: Self = StObject.set(x, "modifiersData", js.undefined)
     
     @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setOptions(value: OptionsGeneric[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiersData(value: Dictkey): Self = this.set("modifiersData", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteModifiersData: Self = this.set("modifiersData", js.undefined)
+    def setOrderedModifiers(value: js.Array[Modifier[_, _]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: OptionsGeneric[_]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOrderedModifiersUndefined: Self = StObject.set(x, "orderedModifiers", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOrderedModifiersVarargs(value: (Modifier[js.Any, js.Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value :_*))
     
     @scala.inline
-    def setOrderedModifiersVarargs(value: (Modifier[js.Any, js.Any])*): Self = this.set("orderedModifiers", js.Array(value :_*))
+    def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderedModifiers(value: js.Array[Modifier[_, _]]): Self = this.set("orderedModifiers", value.asInstanceOf[js.Any])
+    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
     @scala.inline
-    def deleteOrderedModifiers: Self = this.set("orderedModifiers", js.undefined)
+    def setRects(value: StateRects): Self = StObject.set(x, "rects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = this.set("placement", value.asInstanceOf[js.Any])
+    def setRectsUndefined: Self = StObject.set(x, "rects", js.undefined)
     
     @scala.inline
-    def deletePlacement: Self = this.set("placement", js.undefined)
+    def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRects(value: StateRects): Self = this.set("rects", value.asInstanceOf[js.Any])
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteRects: Self = this.set("rects", js.undefined)
+    def setScrollParents(value: Popper): Self = StObject.set(x, "scrollParents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: Boolean): Self = this.set("reset", value.asInstanceOf[js.Any])
+    def setScrollParentsUndefined: Self = StObject.set(x, "scrollParents", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollParents(value: Popper): Self = this.set("scrollParents", value.asInstanceOf[js.Any])
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     
     @scala.inline
-    def deleteScrollParents: Self = this.set("scrollParents", js.undefined)
+    def setStyles(value: StringDictionary[Partial[CSSStyleDeclaration]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrategy(value: PositioningStrategy): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
-    
-    @scala.inline
-    def setStyles(value: StringDictionary[Partial[CSSStyleDeclaration]]): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

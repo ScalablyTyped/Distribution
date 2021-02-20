@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthorizerConfig extends js.Object {
+trait AuthorizerConfig extends StObject {
   
   /**
     * A Boolean that specifies whether the domain configuration's authorization service can be overridden.
@@ -26,30 +27,18 @@ object AuthorizerConfig {
   }
   
   @scala.inline
-  implicit class AuthorizerConfigOps[Self <: AuthorizerConfig] (val x: Self) extends AnyVal {
+  implicit class AuthorizerConfigMutableBuilder[Self <: AuthorizerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAuthorizerOverride(value: AllowAuthorizerOverride): Self = StObject.set(x, "allowAuthorizerOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAuthorizerOverrideUndefined: Self = StObject.set(x, "allowAuthorizerOverride", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "defaultAuthorizerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAuthorizerOverride(value: AllowAuthorizerOverride): Self = this.set("allowAuthorizerOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowAuthorizerOverride: Self = this.set("allowAuthorizerOverride", js.undefined)
-    
-    @scala.inline
-    def setDefaultAuthorizerName(value: AuthorizerName): Self = this.set("defaultAuthorizerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultAuthorizerName: Self = this.set("defaultAuthorizerName", js.undefined)
+    def setDefaultAuthorizerNameUndefined: Self = StObject.set(x, "defaultAuthorizerName", js.undefined)
   }
 }

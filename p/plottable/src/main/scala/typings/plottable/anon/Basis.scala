@@ -13,12 +13,13 @@ import typings.plottable.plottableStrings.monotone
 import typings.plottable.plottableStrings.step
 import typings.plottable.plottableStrings.stepAfter
 import typings.plottable.plottableStrings.stepBefore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Basis extends js.Object {
+trait Basis extends StObject {
   
   var basis: typings.plottable.plottableStrings.basis = js.native
   
@@ -69,57 +70,45 @@ object Basis {
   }
   
   @scala.inline
-  implicit class BasisOps[Self <: Basis] (val x: Self) extends AnyVal {
+  implicit class BasisMutableBuilder[Self <: Basis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasis(value: basis): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasisClosed(value: basisClosed): Self = StObject.set(x, "basisClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasisOpen(value: basisOpen): Self = StObject.set(x, "basisOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasis(value: basis): Self = this.set("basis", value.asInstanceOf[js.Any])
+    def setBundle(value: bundle): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasisClosed(value: basisClosed): Self = this.set("basisClosed", value.asInstanceOf[js.Any])
+    def setCardinal(value: cardinal): Self = StObject.set(x, "cardinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasisOpen(value: basisOpen): Self = this.set("basisOpen", value.asInstanceOf[js.Any])
+    def setCardinalClosed(value: cardinalClosed): Self = StObject.set(x, "cardinalClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundle(value: bundle): Self = this.set("bundle", value.asInstanceOf[js.Any])
+    def setCardinalOpen(value: cardinalOpen): Self = StObject.set(x, "cardinalOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardinal(value: cardinal): Self = this.set("cardinal", value.asInstanceOf[js.Any])
+    def setLinear(value: linear): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardinalClosed(value: cardinalClosed): Self = this.set("cardinalClosed", value.asInstanceOf[js.Any])
+    def setLinearClosed(value: linearClosed): Self = StObject.set(x, "linearClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardinalOpen(value: cardinalOpen): Self = this.set("cardinalOpen", value.asInstanceOf[js.Any])
+    def setMonotone(value: monotone): Self = StObject.set(x, "monotone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinear(value: linear): Self = this.set("linear", value.asInstanceOf[js.Any])
+    def setStep(value: step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearClosed(value: linearClosed): Self = this.set("linearClosed", value.asInstanceOf[js.Any])
+    def setStepAfter(value: stepAfter): Self = StObject.set(x, "stepAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonotone(value: monotone): Self = this.set("monotone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStep(value: step): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepAfter(value: stepAfter): Self = this.set("stepAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepBefore(value: stepBefore): Self = this.set("stepBefore", value.asInstanceOf[js.Any])
+    def setStepBefore(value: stepBefore): Self = StObject.set(x, "stepBefore", value.asInstanceOf[js.Any])
   }
 }

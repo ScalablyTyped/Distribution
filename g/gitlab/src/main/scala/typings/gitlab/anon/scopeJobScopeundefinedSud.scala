@@ -1,13 +1,14 @@
 package typings.gitlab.anon
 
 import typings.gitlab.jobsMod.JobScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  scope :gitlab.gitlab/dist/types/core/services/Jobs.JobScope | undefined} & gitlab.gitlab/dist/types/core/infrastructure.Sudo */
 @js.native
-trait scopeJobScopeundefinedSud extends js.Object {
+trait scopeJobScopeundefinedSud extends StObject {
   
   var scope: js.UndefOr[JobScope] = js.native
   
@@ -22,30 +23,18 @@ object scopeJobScopeundefinedSud {
   }
   
   @scala.inline
-  implicit class scopeJobScopeundefinedSudOps[Self <: scopeJobScopeundefinedSud] (val x: Self) extends AnyVal {
+  implicit class scopeJobScopeundefinedSudMutableBuilder[Self <: scopeJobScopeundefinedSud] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScope(value: JobScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: JobScope): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setSudo(value: String | Double): Self = this.set("sudo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSudo: Self = this.set("sudo", js.undefined)
+    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

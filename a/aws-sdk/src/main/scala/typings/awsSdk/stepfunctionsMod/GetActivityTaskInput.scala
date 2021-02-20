@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetActivityTaskInput extends js.Object {
+trait GetActivityTaskInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the activity to retrieve tasks from (assigned when you create the task using CreateActivity.)
@@ -26,27 +27,15 @@ object GetActivityTaskInput {
   }
   
   @scala.inline
-  implicit class GetActivityTaskInputOps[Self <: GetActivityTaskInput] (val x: Self) extends AnyVal {
+  implicit class GetActivityTaskInputMutableBuilder[Self <: GetActivityTaskInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWorkerName(value: Name): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActivityArn(value: Arn): Self = this.set("activityArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerName(value: Name): Self = this.set("workerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerName: Self = this.set("workerName", js.undefined)
+    def setWorkerNameUndefined: Self = StObject.set(x, "workerName", js.undefined)
   }
 }

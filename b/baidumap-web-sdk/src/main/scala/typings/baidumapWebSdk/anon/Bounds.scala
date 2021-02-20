@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bounds extends js.Object {
+trait Bounds extends StObject {
   
   var bounds: js.Array[typings.baidumapWebSdk.BMap.Bounds] = js.native
   
@@ -23,30 +24,18 @@ object Bounds {
   }
   
   @scala.inline
-  implicit class BoundsOps[Self <: Bounds] (val x: Self) extends AnyVal {
+  implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: js.Array[typings.baidumapWebSdk.BMap.Bounds]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsVarargs(value: typings.baidumapWebSdk.BMap.Bounds*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsVarargs(value: typings.baidumapWebSdk.BMap.Bounds*): Self = this.set("bounds", js.Array(value :_*))
-    
-    @scala.inline
-    def setBounds(value: js.Array[typings.baidumapWebSdk.BMap.Bounds]): Self = this.set("bounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

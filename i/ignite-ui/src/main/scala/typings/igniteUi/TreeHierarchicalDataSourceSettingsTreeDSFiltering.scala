@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,42 +42,30 @@ object TreeHierarchicalDataSourceSettingsTreeDSFiltering {
   }
   
   @scala.inline
-  implicit class TreeHierarchicalDataSourceSettingsTreeDSFilteringOps[Self <: TreeHierarchicalDataSourceSettingsTreeDSFiltering] (val x: Self) extends AnyVal {
+  implicit class TreeHierarchicalDataSourceSettingsTreeDSFilteringMutableBuilder[Self <: TreeHierarchicalDataSourceSettingsTreeDSFiltering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayMode(value: js.Any): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromLevel(value: Double): Self = StObject.set(x, "fromLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMode(value: js.Any): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    def setFromLevelUndefined: Self = StObject.set(x, "fromLevel", js.undefined)
     
     @scala.inline
-    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    def setMatchFiltering(value: String): Self = StObject.set(x, "matchFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromLevel(value: Double): Self = this.set("fromLevel", value.asInstanceOf[js.Any])
+    def setMatchFilteringUndefined: Self = StObject.set(x, "matchFiltering", js.undefined)
     
     @scala.inline
-    def deleteFromLevel: Self = this.set("fromLevel", js.undefined)
+    def setToLevel(value: Double): Self = StObject.set(x, "toLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFiltering(value: String): Self = this.set("matchFiltering", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchFiltering: Self = this.set("matchFiltering", js.undefined)
-    
-    @scala.inline
-    def setToLevel(value: Double): Self = this.set("toLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToLevel: Self = this.set("toLevel", js.undefined)
+    def setToLevelUndefined: Self = StObject.set(x, "toLevel", js.undefined)
   }
 }

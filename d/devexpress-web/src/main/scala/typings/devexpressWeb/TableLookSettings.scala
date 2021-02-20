@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the table style settings that modify the table appearance.
   */
 @js.native
-trait TableLookSettings extends js.Object {
+trait TableLookSettings extends StObject {
   
   /**
     * Specifies whether special formatting is applied to the first column of the table.
@@ -56,36 +57,24 @@ object TableLookSettings {
   }
   
   @scala.inline
-  implicit class TableLookSettingsOps[Self <: TableLookSettings] (val x: Self) extends AnyVal {
+  implicit class TableLookSettingsMutableBuilder[Self <: TableLookSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyFirstColumn(value: Boolean): Self = StObject.set(x, "applyFirstColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyFirstRow(value: Boolean): Self = StObject.set(x, "applyFirstRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyLastColumn(value: Boolean): Self = StObject.set(x, "applyLastColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyFirstColumn(value: Boolean): Self = this.set("applyFirstColumn", value.asInstanceOf[js.Any])
+    def setApplyLastRow(value: Boolean): Self = StObject.set(x, "applyLastRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyFirstRow(value: Boolean): Self = this.set("applyFirstRow", value.asInstanceOf[js.Any])
+    def setDoNotApplyColumnBanding(value: Boolean): Self = StObject.set(x, "doNotApplyColumnBanding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyLastColumn(value: Boolean): Self = this.set("applyLastColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApplyLastRow(value: Boolean): Self = this.set("applyLastRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDoNotApplyColumnBanding(value: Boolean): Self = this.set("doNotApplyColumnBanding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDoNotApplyRowBanding(value: Boolean): Self = this.set("doNotApplyRowBanding", value.asInstanceOf[js.Any])
+    def setDoNotApplyRowBanding(value: Boolean): Self = StObject.set(x, "doNotApplyRowBanding", value.asInstanceOf[js.Any])
   }
 }

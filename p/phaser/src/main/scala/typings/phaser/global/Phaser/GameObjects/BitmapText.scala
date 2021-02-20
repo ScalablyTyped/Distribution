@@ -5,6 +5,7 @@ import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.BitmapFontData
 import typings.phaser.integer
 import typings.std.XMLDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,25 +98,41 @@ class BitmapText protected ()
     align: integer
   ) = this()
 }
-/* static members */
-@JSGlobal("Phaser.GameObjects.BitmapText")
-@js.native
-object BitmapText extends js.Object {
+object BitmapText {
+  
+  @JSGlobal("Phaser.GameObjects.BitmapText")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Center align the text characters in a multi-line BitmapText object.
     */
-  var ALIGN_CENTER: integer = js.native
+  /* static member */
+  @JSGlobal("Phaser.GameObjects.BitmapText.ALIGN_CENTER")
+  @js.native
+  def ALIGN_CENTER: integer = js.native
+  @scala.inline
+  def ALIGN_CENTER_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_CENTER")(x.asInstanceOf[js.Any])
   
   /**
     * Left align the text characters in a multi-line BitmapText object.
     */
-  var ALIGN_LEFT: integer = js.native
+  /* static member */
+  @JSGlobal("Phaser.GameObjects.BitmapText.ALIGN_LEFT")
+  @js.native
+  def ALIGN_LEFT: integer = js.native
+  @scala.inline
+  def ALIGN_LEFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_LEFT")(x.asInstanceOf[js.Any])
   
   /**
     * Right align the text characters in a multi-line BitmapText object.
     */
-  var ALIGN_RIGHT: integer = js.native
+  /* static member */
+  @JSGlobal("Phaser.GameObjects.BitmapText.ALIGN_RIGHT")
+  @js.native
+  def ALIGN_RIGHT: integer = js.native
+  @scala.inline
+  def ALIGN_RIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIGN_RIGHT")(x.asInstanceOf[js.Any])
   
   /**
     * Parse an XML Bitmap Font from an Atlas.
@@ -129,7 +146,12 @@ object BitmapText extends js.Object {
     * @param xSpacing The x-axis spacing to add between each letter.
     * @param ySpacing The y-axis spacing to add to the line height.
     */
+  /* static member */
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseFromAtlas")
+  @js.native
   def ParseFromAtlas(scene: Scene, fontName: String, textureKey: String, frameKey: String, xmlKey: String): Boolean = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseFromAtlas")
+  @js.native
   def ParseFromAtlas(
     scene: Scene,
     fontName: String,
@@ -139,6 +161,8 @@ object BitmapText extends js.Object {
     xSpacing: js.UndefOr[scala.Nothing],
     ySpacing: integer
   ): Boolean = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseFromAtlas")
+  @js.native
   def ParseFromAtlas(
     scene: Scene,
     fontName: String,
@@ -147,6 +171,8 @@ object BitmapText extends js.Object {
     xmlKey: String,
     xSpacing: integer
   ): Boolean = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseFromAtlas")
+  @js.native
   def ParseFromAtlas(
     scene: Scene,
     fontName: String,
@@ -164,17 +190,34 @@ object BitmapText extends js.Object {
     * @param ySpacing The y-axis spacing to add to the line height. Default 0.
     * @param frame The texture frame to take into account while parsing.
     */
+  /* static member */
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseXMLBitmapFont")
+  @js.native
   def ParseXMLBitmapFont(xml: XMLDocument): BitmapFontData = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseXMLBitmapFont")
+  @js.native
   def ParseXMLBitmapFont(
     xml: XMLDocument,
     xSpacing: js.UndefOr[scala.Nothing],
     ySpacing: js.UndefOr[scala.Nothing],
     frame: Frame
   ): BitmapFontData = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseXMLBitmapFont")
+  @js.native
   def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: js.UndefOr[scala.Nothing], ySpacing: integer): BitmapFontData = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseXMLBitmapFont")
+  @js.native
   def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: js.UndefOr[scala.Nothing], ySpacing: integer, frame: Frame): BitmapFontData = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseXMLBitmapFont")
+  @js.native
   def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer): BitmapFontData = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseXMLBitmapFont")
+  @js.native
   def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: js.UndefOr[scala.Nothing], frame: Frame): BitmapFontData = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseXMLBitmapFont")
+  @js.native
   def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer): BitmapFontData = js.native
+  @JSGlobal("Phaser.GameObjects.BitmapText.ParseXMLBitmapFont")
+  @js.native
   def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer, frame: Frame): BitmapFontData = js.native
 }

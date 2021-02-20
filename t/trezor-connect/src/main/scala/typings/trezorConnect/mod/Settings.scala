@@ -1,12 +1,13 @@
 package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Settings extends js.Object {
+trait Settings extends StObject {
   
   var configSrc: js.UndefOr[String] = js.native
   
@@ -26,7 +27,7 @@ trait Settings extends js.Object {
   
   var manifest: js.UndefOr[ManifestParams] = js.native
   
-   // constant
+  // constant
   var origin: js.UndefOr[String] = js.native
   
   var pendingTransportEvent: js.UndefOr[Boolean] = js.native
@@ -56,129 +57,117 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigSrc(value: String): Self = StObject.set(x, "configSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigSrcUndefined: Self = StObject.set(x, "configSrc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectSrc(value: String): Self = StObject.set(x, "connectSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean | StringDictionary[Boolean]): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setConnectSrcUndefined: Self = StObject.set(x, "connectSrc", js.undefined)
     
     @scala.inline
-    def setConfigSrc(value: String): Self = this.set("configSrc", value.asInstanceOf[js.Any])
+    def setDebug(value: Boolean | StringDictionary[Boolean]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigSrc: Self = this.set("configSrc", js.undefined)
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectSrc(value: String): Self = this.set("connectSrc", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteConnectSrc: Self = this.set("connectSrc", js.undefined)
+    def setHostIcon(value: String): Self = StObject.set(x, "hostIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setHostIconUndefined: Self = StObject.set(x, "hostIcon", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setHostLabel(value: String): Self = StObject.set(x, "hostLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostIcon(value: String): Self = this.set("hostIcon", value.asInstanceOf[js.Any])
+    def setHostLabelUndefined: Self = StObject.set(x, "hostLabel", js.undefined)
     
     @scala.inline
-    def deleteHostIcon: Self = this.set("hostIcon", js.undefined)
+    def setIframeSrc(value: String): Self = StObject.set(x, "iframeSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostLabel(value: String): Self = this.set("hostLabel", value.asInstanceOf[js.Any])
+    def setIframeSrcUndefined: Self = StObject.set(x, "iframeSrc", js.undefined)
     
     @scala.inline
-    def deleteHostLabel: Self = this.set("hostLabel", js.undefined)
+    def setLazyLoad(value: String): Self = StObject.set(x, "lazyLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframeSrc(value: String): Self = this.set("iframeSrc", value.asInstanceOf[js.Any])
+    def setLazyLoadUndefined: Self = StObject.set(x, "lazyLoad", js.undefined)
     
     @scala.inline
-    def deleteIframeSrc: Self = this.set("iframeSrc", js.undefined)
+    def setManifest(value: ManifestParams): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLazyLoad(value: String): Self = this.set("lazyLoad", value.asInstanceOf[js.Any])
+    def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
     
     @scala.inline
-    def deleteLazyLoad: Self = this.set("lazyLoad", js.undefined)
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifest(value: ManifestParams): Self = this.set("manifest", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteManifest: Self = this.set("manifest", js.undefined)
+    def setPendingTransportEvent(value: Boolean): Self = StObject.set(x, "pendingTransportEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setPendingTransportEventUndefined: Self = StObject.set(x, "pendingTransportEvent", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setPopup(value: Boolean): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingTransportEvent(value: Boolean): Self = this.set("pendingTransportEvent", value.asInstanceOf[js.Any])
+    def setPopupSrc(value: String): Self = StObject.set(x, "popupSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePendingTransportEvent: Self = this.set("pendingTransportEvent", js.undefined)
+    def setPopupSrcUndefined: Self = StObject.set(x, "popupSrc", js.undefined)
     
     @scala.inline
-    def setPopup(value: Boolean): Self = this.set("popup", value.asInstanceOf[js.Any])
+    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
     @scala.inline
-    def deletePopup: Self = this.set("popup", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupSrc(value: String): Self = this.set("popupSrc", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deletePopupSrc: Self = this.set("popupSrc", js.undefined)
+    def setSupportedBrowser(value: Boolean): Self = StObject.set(x, "supportedBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSupportedBrowserUndefined: Self = StObject.set(x, "supportedBrowser", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setTransportReconnect(value: Boolean): Self = StObject.set(x, "transportReconnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedBrowser(value: Boolean): Self = this.set("supportedBrowser", value.asInstanceOf[js.Any])
+    def setTransportReconnectUndefined: Self = StObject.set(x, "transportReconnect", js.undefined)
     
     @scala.inline
-    def deleteSupportedBrowser: Self = this.set("supportedBrowser", js.undefined)
+    def setTrustedHost(value: Boolean): Self = StObject.set(x, "trustedHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportReconnect(value: Boolean): Self = this.set("transportReconnect", value.asInstanceOf[js.Any])
+    def setTrustedHostUndefined: Self = StObject.set(x, "trustedHost", js.undefined)
     
     @scala.inline
-    def deleteTransportReconnect: Self = this.set("transportReconnect", js.undefined)
+    def setWebusb(value: Boolean): Self = StObject.set(x, "webusb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrustedHost(value: Boolean): Self = this.set("trustedHost", value.asInstanceOf[js.Any])
+    def setWebusbSrc(value: String): Self = StObject.set(x, "webusbSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrustedHost: Self = this.set("trustedHost", js.undefined)
+    def setWebusbSrcUndefined: Self = StObject.set(x, "webusbSrc", js.undefined)
     
     @scala.inline
-    def setWebusb(value: Boolean): Self = this.set("webusb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebusb: Self = this.set("webusb", js.undefined)
-    
-    @scala.inline
-    def setWebusbSrc(value: String): Self = this.set("webusbSrc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebusbSrc: Self = this.set("webusbSrc", js.undefined)
+    def setWebusbUndefined: Self = StObject.set(x, "webusb", js.undefined)
   }
 }

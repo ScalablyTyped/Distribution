@@ -3,13 +3,14 @@ package typings.projectOxford.mod
 import typings.bluebird.mod.^
 import typings.projectOxford.anon.PersonId
 import typings.projectOxford.mod.PersonResponses.Face
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("project-oxford", "Person")
 @js.native
-class Person () extends js.Object {
+class Person () extends StObject {
   
   /**
     * Adds a face to a person for identification. The maximum face count for each person is 32.

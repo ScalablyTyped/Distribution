@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import typings.devtoolsProtocol.mod.Protocol.Runtime.CallArgument
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetVariableValueRequest extends js.Object {
+trait SetVariableValueRequest extends StObject {
   
   /**
     * Id of callframe that holds variable.
@@ -39,30 +40,18 @@ object SetVariableValueRequest {
   }
   
   @scala.inline
-  implicit class SetVariableValueRequestOps[Self <: SetVariableValueRequest] (val x: Self) extends AnyVal {
+  implicit class SetVariableValueRequestMutableBuilder[Self <: SetVariableValueRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewValue(value: CallArgument): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScopeNumber(value: integer): Self = StObject.set(x, "scopeNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallFrameId(value: CallFrameId): Self = this.set("callFrameId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewValue(value: CallArgument): Self = this.set("newValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeNumber(value: integer): Self = this.set("scopeNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariableName(value: String): Self = this.set("variableName", value.asInstanceOf[js.Any])
+    def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
   }
 }

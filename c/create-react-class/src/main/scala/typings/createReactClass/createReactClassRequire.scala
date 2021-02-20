@@ -1,5 +1,6 @@
 package typings.createReactClass
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("create-react-class", JSImport.Namespace)
 @js.native
-object createReactClassRequire extends js.Object
+object createReactClassRequire extends StObject

@@ -1,5 +1,6 @@
 package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A ScanRun is a output-only resource representing an actual run of the scan.
   */
 @js.native
-trait SchemaScanRun extends js.Object {
+trait SchemaScanRun extends StObject {
   
   /**
     * Output only. The time at which the ScanRun reached termination state -
@@ -76,72 +77,60 @@ object SchemaScanRun {
   }
   
   @scala.inline
-  implicit class SchemaScanRunOps[Self <: SchemaScanRun] (val x: Self) extends AnyVal {
+  implicit class SchemaScanRunMutableBuilder[Self <: SchemaScanRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionState(value: String): Self = StObject.set(x, "executionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setExecutionStateUndefined: Self = StObject.set(x, "executionState", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setHasVulnerabilities(value: Boolean): Self = StObject.set(x, "hasVulnerabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionState(value: String): Self = this.set("executionState", value.asInstanceOf[js.Any])
+    def setHasVulnerabilitiesUndefined: Self = StObject.set(x, "hasVulnerabilities", js.undefined)
     
     @scala.inline
-    def deleteExecutionState: Self = this.set("executionState", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasVulnerabilities(value: Boolean): Self = this.set("hasVulnerabilities", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHasVulnerabilities: Self = this.set("hasVulnerabilities", js.undefined)
+    def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setResultState(value: String): Self = StObject.set(x, "resultState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressPercent(value: Double): Self = this.set("progressPercent", value.asInstanceOf[js.Any])
+    def setResultStateUndefined: Self = StObject.set(x, "resultState", js.undefined)
     
     @scala.inline
-    def deleteProgressPercent: Self = this.set("progressPercent", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultState(value: String): Self = this.set("resultState", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteResultState: Self = this.set("resultState", js.undefined)
+    def setUrlsCrawledCount(value: String): Self = StObject.set(x, "urlsCrawledCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setUrlsCrawledCountUndefined: Self = StObject.set(x, "urlsCrawledCount", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setUrlsTestedCount(value: String): Self = StObject.set(x, "urlsTestedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlsCrawledCount(value: String): Self = this.set("urlsCrawledCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlsCrawledCount: Self = this.set("urlsCrawledCount", js.undefined)
-    
-    @scala.inline
-    def setUrlsTestedCount(value: String): Self = this.set("urlsTestedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlsTestedCount: Self = this.set("urlsTestedCount", js.undefined)
+    def setUrlsTestedCountUndefined: Self = StObject.set(x, "urlsTestedCount", js.undefined)
   }
 }

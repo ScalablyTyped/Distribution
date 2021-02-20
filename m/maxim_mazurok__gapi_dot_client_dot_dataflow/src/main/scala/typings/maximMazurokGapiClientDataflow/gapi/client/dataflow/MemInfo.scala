@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemInfo extends js.Object {
+trait MemInfo extends StObject {
   
   /** Instantenous memory limit in bytes. */
   var currentLimitBytes: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object MemInfo {
   }
   
   @scala.inline
-  implicit class MemInfoOps[Self <: MemInfo] (val x: Self) extends AnyVal {
+  implicit class MemInfoMutableBuilder[Self <: MemInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentLimitBytes(value: String): Self = StObject.set(x, "currentLimitBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentLimitBytesUndefined: Self = StObject.set(x, "currentLimitBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentRssBytes(value: String): Self = StObject.set(x, "currentRssBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentLimitBytes(value: String): Self = this.set("currentLimitBytes", value.asInstanceOf[js.Any])
+    def setCurrentRssBytesUndefined: Self = StObject.set(x, "currentRssBytes", js.undefined)
     
     @scala.inline
-    def deleteCurrentLimitBytes: Self = this.set("currentLimitBytes", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRssBytes(value: String): Self = this.set("currentRssBytes", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteCurrentRssBytes: Self = this.set("currentRssBytes", js.undefined)
+    def setTotalGbMs(value: String): Self = StObject.set(x, "totalGbMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setTotalGbMs(value: String): Self = this.set("totalGbMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalGbMs: Self = this.set("totalGbMs", js.undefined)
+    def setTotalGbMsUndefined: Self = StObject.set(x, "totalGbMs", js.undefined)
   }
 }

@@ -1,23 +1,28 @@
 package typings.clearbladejsClient
 
 import typings.clearbladejsClient.CbClient.ClearBladeGlobal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var ClearBlade: ClearBladeGlobal = js.native
-  
-  @js.native
-  object CbClient extends js.Object {
+  object CbClient {
     
-    var ClearBlade: ClearBladeGlobal = js.native
-    
+    @JSGlobal("CbClient")
     @js.native
-    object MessagingQOS extends js.Object {
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("CbClient.ClearBlade")
+    @js.native
+    def ClearBlade: ClearBladeGlobal = js.native
+    @scala.inline
+    def ClearBlade_=(x: ClearBladeGlobal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("CbClient.MessagingQOS")
+    @js.native
+    object MessagingQOS extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.clearbladejsClient.CbClient.MessagingQOS with Double] = js.native
@@ -29,8 +34,9 @@ object global extends js.Object {
       /* 2 */ val MESSAGING_QOS_EXACTLY_ONCE: typings.clearbladejsClient.CbClient.MessagingQOS.MESSAGING_QOS_EXACTLY_ONCE with Double = js.native
     }
     
+    @JSGlobal("CbClient.QueryConditions")
     @js.native
-    object QueryConditions extends js.Object {
+    object QueryConditions extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.clearbladejsClient.CbClient.QueryConditions with String] = js.native
@@ -50,8 +56,9 @@ object global extends js.Object {
       /* "NEQ" */ val QUERY_NOTEQUAL: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_NOTEQUAL with String = js.native
     }
     
+    @JSGlobal("CbClient.QuerySortDirections")
     @js.native
-    object QuerySortDirections extends js.Object {
+    object QuerySortDirections extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.clearbladejsClient.CbClient.QuerySortDirections with String] = js.native
@@ -61,4 +68,10 @@ object global extends js.Object {
       /* "DESC" */ val QUERY_SORT_DESCENDING: typings.clearbladejsClient.CbClient.QuerySortDirections.QUERY_SORT_DESCENDING with String = js.native
     }
   }
+  
+  @JSGlobal("ClearBlade")
+  @js.native
+  def ClearBlade: ClearBladeGlobal = js.native
+  @scala.inline
+  def ClearBlade_=(x: ClearBladeGlobal): Unit = js.Dynamic.global.updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
 }

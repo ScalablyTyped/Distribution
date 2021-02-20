@@ -1,13 +1,16 @@
 package typings.dbJs
 
 import typings.dbJs.DbJs.DbJsStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var db: DbJsStatic = js.native
+  @JSGlobal("db")
+  @js.native
+  def db: DbJsStatic = js.native
+  @scala.inline
+  def db_=(x: DbJsStatic): Unit = js.Dynamic.global.updateDynamic("db")(x.asInstanceOf[js.Any])
 }

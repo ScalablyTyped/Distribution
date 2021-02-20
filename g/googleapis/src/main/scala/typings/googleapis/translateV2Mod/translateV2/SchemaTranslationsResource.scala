@@ -1,11 +1,12 @@
 package typings.googleapis.translateV2Mod.translateV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTranslationsResource extends js.Object {
+trait SchemaTranslationsResource extends StObject {
   
   /**
     * The source language of the initial request, detected automatically, if no
@@ -36,36 +37,24 @@ object SchemaTranslationsResource {
   }
   
   @scala.inline
-  implicit class SchemaTranslationsResourceOps[Self <: SchemaTranslationsResource] (val x: Self) extends AnyVal {
+  implicit class SchemaTranslationsResourceMutableBuilder[Self <: SchemaTranslationsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectedSourceLanguage(value: String): Self = StObject.set(x, "detectedSourceLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectedSourceLanguageUndefined: Self = StObject.set(x, "detectedSourceLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectedSourceLanguage(value: String): Self = this.set("detectedSourceLanguage", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteDetectedSourceLanguage: Self = this.set("detectedSourceLanguage", js.undefined)
+    def setTranslatedText(value: String): Self = StObject.set(x, "translatedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
-    
-    @scala.inline
-    def setTranslatedText(value: String): Self = this.set("translatedText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslatedText: Self = this.set("translatedText", js.undefined)
+    def setTranslatedTextUndefined: Self = StObject.set(x, "translatedText", js.undefined)
   }
 }

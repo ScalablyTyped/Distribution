@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NameBrief description
   */
 @js.native
-trait Item extends js.Object {
+trait Item extends StObject {
   
   def asCheckboxGridItem(): CheckboxGridItem = js.native
   
@@ -115,90 +116,78 @@ object Item {
   }
   
   @scala.inline
-  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsCheckboxGridItem(value: () => CheckboxGridItem): Self = StObject.set(x, "asCheckboxGridItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsCheckboxItem(value: () => CheckboxItem): Self = StObject.set(x, "asCheckboxItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsDateItem(value: () => DateItem): Self = StObject.set(x, "asDateItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsCheckboxGridItem(value: () => CheckboxGridItem): Self = this.set("asCheckboxGridItem", js.Any.fromFunction0(value))
+    def setAsDateTimeItem(value: () => DateTimeItem): Self = StObject.set(x, "asDateTimeItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsCheckboxItem(value: () => CheckboxItem): Self = this.set("asCheckboxItem", js.Any.fromFunction0(value))
+    def setAsDurationItem(value: () => DurationItem): Self = StObject.set(x, "asDurationItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsDateItem(value: () => DateItem): Self = this.set("asDateItem", js.Any.fromFunction0(value))
+    def setAsGridItem(value: () => GridItem): Self = StObject.set(x, "asGridItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsDateTimeItem(value: () => DateTimeItem): Self = this.set("asDateTimeItem", js.Any.fromFunction0(value))
+    def setAsImageItem(value: () => ImageItem): Self = StObject.set(x, "asImageItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsDurationItem(value: () => DurationItem): Self = this.set("asDurationItem", js.Any.fromFunction0(value))
+    def setAsListItem(value: () => ListItem): Self = StObject.set(x, "asListItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsGridItem(value: () => GridItem): Self = this.set("asGridItem", js.Any.fromFunction0(value))
+    def setAsMultipleChoiceItem(value: () => MultipleChoiceItem): Self = StObject.set(x, "asMultipleChoiceItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsImageItem(value: () => ImageItem): Self = this.set("asImageItem", js.Any.fromFunction0(value))
+    def setAsPageBreakItem(value: () => PageBreakItem): Self = StObject.set(x, "asPageBreakItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsListItem(value: () => ListItem): Self = this.set("asListItem", js.Any.fromFunction0(value))
+    def setAsParagraphTextItem(value: () => ParagraphTextItem): Self = StObject.set(x, "asParagraphTextItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsMultipleChoiceItem(value: () => MultipleChoiceItem): Self = this.set("asMultipleChoiceItem", js.Any.fromFunction0(value))
+    def setAsScaleItem(value: () => ScaleItem): Self = StObject.set(x, "asScaleItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsPageBreakItem(value: () => PageBreakItem): Self = this.set("asPageBreakItem", js.Any.fromFunction0(value))
+    def setAsSectionHeaderItem(value: () => SectionHeaderItem): Self = StObject.set(x, "asSectionHeaderItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsParagraphTextItem(value: () => ParagraphTextItem): Self = this.set("asParagraphTextItem", js.Any.fromFunction0(value))
+    def setAsTextItem(value: () => TextItem): Self = StObject.set(x, "asTextItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsScaleItem(value: () => ScaleItem): Self = this.set("asScaleItem", js.Any.fromFunction0(value))
+    def setAsTimeItem(value: () => TimeItem): Self = StObject.set(x, "asTimeItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsSectionHeaderItem(value: () => SectionHeaderItem): Self = this.set("asSectionHeaderItem", js.Any.fromFunction0(value))
+    def setAsVideoItem(value: () => VideoItem): Self = StObject.set(x, "asVideoItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsTextItem(value: () => TextItem): Self = this.set("asTextItem", js.Any.fromFunction0(value))
+    def setDuplicate(value: () => Item): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsTimeItem(value: () => TimeItem): Self = this.set("asTimeItem", js.Any.fromFunction0(value))
+    def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAsVideoItem(value: () => VideoItem): Self = this.set("asVideoItem", js.Any.fromFunction0(value))
+    def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDuplicate(value: () => Item): Self = this.set("duplicate", js.Any.fromFunction0(value))
+    def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHelpText(value: () => String): Self = this.set("getHelpText", js.Any.fromFunction0(value))
+    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Integer): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndex(value: () => Integer): Self = this.set("getIndex", js.Any.fromFunction0(value))
+    def setSetHelpText(value: String => Item): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetType(value: () => ItemType): Self = this.set("getType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetHelpText(value: String => Item): Self = this.set("setHelpText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitle(value: String => Item): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    def setSetTitle(value: String => Item): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
   }
 }

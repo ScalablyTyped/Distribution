@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Web.Http
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the step in the progress for an HTTP connection. */
 @JSGlobal("Windows.Web.Http.HttpProgressStage")
 @js.native
-object HttpProgressStage extends js.Object {
+object HttpProgressStage extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Web.Http.HttpProgressStage with Double] = js.native

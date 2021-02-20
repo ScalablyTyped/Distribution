@@ -3,14 +3,14 @@ package typings.sipJs
 import org.scalablytyped.runtime.StringDictionary
 import typings.sipJs.parametersMod.Parameters
 import typings.sipJs.uriMod.URI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/grammar/name-addr-header", JSImport.Namespace)
-@js.native
-object nameAddrHeaderMod extends js.Object {
+object nameAddrHeaderMod {
   
+  @JSImport("sip.js/lib/grammar/name-addr-header", "NameAddrHeader")
   @js.native
   class NameAddrHeader protected () extends Parameters {
     /**

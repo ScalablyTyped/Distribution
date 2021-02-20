@@ -8,6 +8,7 @@ import typings.layuiSrc.layuiSrcStrings.loading
 import typings.layuiSrc.layuiSrcStrings.page
 import typings.layuiSrc.layuiSrcStrings.tips
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://www.layui.com/doc/modules/layer.html#layer.tips
   */
 @js.native
-trait Layer extends js.Object {
+trait Layer extends StObject {
   
   /**
     * 普通信息框

@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutboundCrossClusterSearchConnection extends js.Object {
+trait OutboundCrossClusterSearchConnection extends StObject {
   
   /**
     * Specifies the connection alias for the outbound cross-cluster search connection.
@@ -41,48 +42,36 @@ object OutboundCrossClusterSearchConnection {
   }
   
   @scala.inline
-  implicit class OutboundCrossClusterSearchConnectionOps[Self <: OutboundCrossClusterSearchConnection] (val x: Self) extends AnyVal {
+  implicit class OutboundCrossClusterSearchConnectionMutableBuilder[Self <: OutboundCrossClusterSearchConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionAlias(value: ConnectionAlias): Self = StObject.set(x, "ConnectionAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionAliasUndefined: Self = StObject.set(x, "ConnectionAlias", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionStatus(value: OutboundCrossClusterSearchConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionAlias(value: ConnectionAlias): Self = this.set("ConnectionAlias", value.asInstanceOf[js.Any])
+    def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
     
     @scala.inline
-    def deleteConnectionAlias: Self = this.set("ConnectionAlias", js.undefined)
+    def setCrossClusterSearchConnectionId(value: CrossClusterSearchConnectionId): Self = StObject.set(x, "CrossClusterSearchConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionStatus(value: OutboundCrossClusterSearchConnectionStatus): Self = this.set("ConnectionStatus", value.asInstanceOf[js.Any])
+    def setCrossClusterSearchConnectionIdUndefined: Self = StObject.set(x, "CrossClusterSearchConnectionId", js.undefined)
     
     @scala.inline
-    def deleteConnectionStatus: Self = this.set("ConnectionStatus", js.undefined)
+    def setDestinationDomainInfo(value: DomainInformation): Self = StObject.set(x, "DestinationDomainInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossClusterSearchConnectionId(value: CrossClusterSearchConnectionId): Self = this.set("CrossClusterSearchConnectionId", value.asInstanceOf[js.Any])
+    def setDestinationDomainInfoUndefined: Self = StObject.set(x, "DestinationDomainInfo", js.undefined)
     
     @scala.inline
-    def deleteCrossClusterSearchConnectionId: Self = this.set("CrossClusterSearchConnectionId", js.undefined)
+    def setSourceDomainInfo(value: DomainInformation): Self = StObject.set(x, "SourceDomainInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationDomainInfo(value: DomainInformation): Self = this.set("DestinationDomainInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationDomainInfo: Self = this.set("DestinationDomainInfo", js.undefined)
-    
-    @scala.inline
-    def setSourceDomainInfo(value: DomainInformation): Self = this.set("SourceDomainInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceDomainInfo: Self = this.set("SourceDomainInfo", js.undefined)
+    def setSourceDomainInfoUndefined: Self = StObject.set(x, "SourceDomainInfo", js.undefined)
   }
 }

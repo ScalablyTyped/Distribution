@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object IgTreeGridUpdatingLocale {
   }
   
   @scala.inline
-  implicit class IgTreeGridUpdatingLocaleOps[Self <: IgTreeGridUpdatingLocale] (val x: Self) extends AnyVal {
+  implicit class IgTreeGridUpdatingLocaleMutableBuilder[Self <: IgTreeGridUpdatingLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddChildButtonLabel(value: String): Self = StObject.set(x, "addChildButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddChildButtonLabelUndefined: Self = StObject.set(x, "addChildButtonLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddChildTooltip(value: String): Self = StObject.set(x, "addChildTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddChildButtonLabel(value: String): Self = this.set("addChildButtonLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddChildButtonLabel: Self = this.set("addChildButtonLabel", js.undefined)
-    
-    @scala.inline
-    def setAddChildTooltip(value: String): Self = this.set("addChildTooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddChildTooltip: Self = this.set("addChildTooltip", js.undefined)
+    def setAddChildTooltipUndefined: Self = StObject.set(x, "addChildTooltip", js.undefined)
   }
 }

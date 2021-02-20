@@ -1,11 +1,12 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRestrictionsForRepo extends js.Object {
+trait GetRestrictionsForRepo extends StObject {
   
   var getRestrictionsForOrg: `712` = js.native
   
@@ -35,36 +36,24 @@ object GetRestrictionsForRepo {
   }
   
   @scala.inline
-  implicit class GetRestrictionsForRepoOps[Self <: GetRestrictionsForRepo] (val x: Self) extends AnyVal {
+  implicit class GetRestrictionsForRepoMutableBuilder[Self <: GetRestrictionsForRepo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetRestrictionsForOrg(value: `712`): Self = StObject.set(x, "getRestrictionsForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRestrictionsForRepo(value: `713`): Self = StObject.set(x, "getRestrictionsForRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveRestrictionsForOrg(value: `714`): Self = StObject.set(x, "removeRestrictionsForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRestrictionsForOrg(value: `712`): Self = this.set("getRestrictionsForOrg", value.asInstanceOf[js.Any])
+    def setRemoveRestrictionsForRepo(value: `715`): Self = StObject.set(x, "removeRestrictionsForRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRestrictionsForRepo(value: `713`): Self = this.set("getRestrictionsForRepo", value.asInstanceOf[js.Any])
+    def setSetRestrictionsForOrg(value: `716`): Self = StObject.set(x, "setRestrictionsForOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveRestrictionsForOrg(value: `714`): Self = this.set("removeRestrictionsForOrg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveRestrictionsForRepo(value: `715`): Self = this.set("removeRestrictionsForRepo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetRestrictionsForOrg(value: `716`): Self = this.set("setRestrictionsForOrg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetRestrictionsForRepo(value: `717`): Self = this.set("setRestrictionsForRepo", value.asInstanceOf[js.Any])
+    def setSetRestrictionsForRepo(value: `717`): Self = StObject.set(x, "setRestrictionsForRepo", value.asInstanceOf[js.Any])
   }
 }

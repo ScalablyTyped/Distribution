@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines which fields must exist on a contact in order to match a search operation. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactQueryDesiredFields")
 @js.native
-object ContactQueryDesiredFields extends js.Object {
+object ContactQueryDesiredFields extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

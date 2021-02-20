@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUsageStatisticsRequest extends js.Object {
+trait GetUsageStatisticsRequest extends StObject {
   
   /**
     * An array of objects, one for each condition to use to filter the query results. If the array contains more than one object, Amazon Macie uses an AND operator to join the conditions specified by the objects.
@@ -36,45 +37,33 @@ object GetUsageStatisticsRequest {
   }
   
   @scala.inline
-  implicit class GetUsageStatisticsRequestOps[Self <: GetUsageStatisticsRequest] (val x: Self) extends AnyVal {
+  implicit class GetUsageStatisticsRequestMutableBuilder[Self <: GetUsageStatisticsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterBy(value: listOfUsageStatisticsFilter): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterByVarargs(value: UsageStatisticsFilter*): Self = StObject.set(x, "filterBy", js.Array(value :_*))
     
     @scala.inline
-    def setFilterByVarargs(value: UsageStatisticsFilter*): Self = this.set("filterBy", js.Array(value :_*))
+    def setMaxResults(value: integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterBy(value: listOfUsageStatisticsFilter): Self = this.set("filterBy", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteFilterBy: Self = this.set("filterBy", js.undefined)
+    def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: integer): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setSortBy(value: UsageStatisticsSortBy): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setSortBy(value: UsageStatisticsSortBy): Self = this.set("sortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
   }
 }

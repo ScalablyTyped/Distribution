@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Inspect, Risk
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2PublishToPubSub extends js.Object {
+trait SchemaGooglePrivacyDlpV2PublishToPubSub extends StObject {
   
   /**
     * Cloud Pub/Sub topic to send notifications to. The topic must have given
@@ -28,24 +29,12 @@ object SchemaGooglePrivacyDlpV2PublishToPubSub {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2PublishToPubSubOps[Self <: SchemaGooglePrivacyDlpV2PublishToPubSub] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2PublishToPubSubMutableBuilder[Self <: SchemaGooglePrivacyDlpV2PublishToPubSub] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

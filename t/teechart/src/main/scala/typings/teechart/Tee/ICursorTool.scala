@@ -1,5 +1,6 @@
 package typings.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,48 +54,36 @@ object ICursorTool {
   }
   
   @scala.inline
-  implicit class ICursorToolOps[Self <: ICursorTool] (val x: Self) extends AnyVal {
+  implicit class ICursorToolMutableBuilder[Self <: ICursorTool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragging(value: Double): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowMouse(value: Boolean): Self = StObject.set(x, "followMouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragging(value: Double): Self = this.set("dragging", value.asInstanceOf[js.Any])
+    def setHorizAxis(value: IAxis): Self = StObject.set(x, "horizAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowMouse(value: Boolean): Self = this.set("followMouse", value.asInstanceOf[js.Any])
+    def setOver(value: IPoint => Boolean): Self = StObject.set(x, "over", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormat(value: IFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setRender(value: String): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizAxis(value: IAxis): Self = this.set("horizAxis", value.asInstanceOf[js.Any])
+    def setSetRender(value: String => Unit): Self = StObject.set(x, "setRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOver(value: IPoint => Boolean): Self = this.set("over", js.Any.fromFunction1(value))
+    def setSize(value: IPoint): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: String): Self = this.set("render", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetRender(value: String => Unit): Self = this.set("setRender", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSize(value: IPoint): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertAxis(value: IAxis): Self = this.set("vertAxis", value.asInstanceOf[js.Any])
+    def setVertAxis(value: IAxis): Self = StObject.set(x, "vertAxis", value.asInstanceOf[js.Any])
   }
 }

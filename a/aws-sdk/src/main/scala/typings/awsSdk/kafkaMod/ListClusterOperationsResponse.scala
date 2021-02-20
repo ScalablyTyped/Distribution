@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListClusterOperationsResponse extends js.Object {
+trait ListClusterOperationsResponse extends StObject {
   
   /**
     * 
@@ -30,33 +31,21 @@ object ListClusterOperationsResponse {
   }
   
   @scala.inline
-  implicit class ListClusterOperationsResponseOps[Self <: ListClusterOperationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListClusterOperationsResponseMutableBuilder[Self <: ListClusterOperationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterOperationInfoList(value: listOfClusterOperationInfo): Self = StObject.set(x, "ClusterOperationInfoList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterOperationInfoListUndefined: Self = StObject.set(x, "ClusterOperationInfoList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterOperationInfoListVarargs(value: ClusterOperationInfo*): Self = StObject.set(x, "ClusterOperationInfoList", js.Array(value :_*))
     
     @scala.inline
-    def setClusterOperationInfoListVarargs(value: ClusterOperationInfo*): Self = this.set("ClusterOperationInfoList", js.Array(value :_*))
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterOperationInfoList(value: listOfClusterOperationInfo): Self = this.set("ClusterOperationInfoList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterOperationInfoList: Self = this.set("ClusterOperationInfoList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

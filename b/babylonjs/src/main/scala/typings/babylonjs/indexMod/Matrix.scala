@@ -5,6 +5,7 @@ import typings.babylonjs.mathLikeMod.IPlaneLike
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Matrix ()
   extends typings.babylonjs.mathsIndexMod.Matrix
 /* static members */
-@JSImport("babylonjs/index", "Matrix")
-@js.native
-object Matrix extends js.Object {
+object Matrix {
+  
+  @JSImport("babylonjs/index", "Matrix")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new matrix composed by merging scale (vector3), rotation (quaternion) and translation (vector3)
@@ -28,6 +31,8 @@ object Matrix extends js.Object {
     * @param translation defines the translation vector3
     * @returns a new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.Compose")
+  @js.native
   def Compose(
     scale: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     rotation: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
@@ -41,6 +46,8 @@ object Matrix extends js.Object {
     * @param translation defines the translation vector3
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.ComposeToRef")
+  @js.native
   def ComposeToRef(
     scale: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     rotation: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
@@ -58,6 +65,8 @@ object Matrix extends js.Object {
     * @param gradient defines the gradient between the two matrices
     * @returns the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.DecomposeLerp")
+  @js.native
   def DecomposeLerp(
     startValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
@@ -74,6 +83,8 @@ object Matrix extends js.Object {
     * @param gradient defines the gradient between the two matrices
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.DecomposeLerpToRef")
+  @js.native
   def DecomposeLerpToRef(
     startValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
@@ -87,7 +98,11 @@ object Matrix extends js.Object {
     * @param offset defines an offset in the source array
     * @returns a new Matrix set from the starting index of the given array
     */
+  @JSImport("babylonjs/index", "Matrix.FromArray")
+  @js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathVectorMod.Matrix = js.native
+  @JSImport("babylonjs/index", "Matrix.FromArray")
+  @js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -96,6 +111,8 @@ object Matrix extends js.Object {
     * @param offset defines an offset in the source array
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.FromArrayToRef")
+  @js.native
   def FromArrayToRef(
     array: DeepImmutable[ArrayLike[Double]],
     offset: Double,
@@ -109,6 +126,8 @@ object Matrix extends js.Object {
     * @param scale defines the scaling factor
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.FromFloat32ArrayToRefScaled")
+  @js.native
   def FromFloat32ArrayToRefScaled(
     array: DeepImmutable[Float32Array | js.Array[Double]],
     offset: Double,
@@ -121,6 +140,8 @@ object Matrix extends js.Object {
     * @param quat defines the quaternion to use
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.FromQuaternionToRef")
+  @js.native
   def FromQuaternionToRef(
     quat: DeepImmutable[typings.babylonjs.mathVectorMod.Quaternion],
     result: typings.babylonjs.mathVectorMod.Matrix
@@ -146,6 +167,8 @@ object Matrix extends js.Object {
     * @param initialM44 defines 4th value of 4th row
     * @returns the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.FromValues")
+  @js.native
   def FromValues(
     initialM11: Double,
     initialM12: Double,
@@ -185,6 +208,8 @@ object Matrix extends js.Object {
     * @param initialM44 defines 4th value of 4th row
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.FromValuesToRef")
+  @js.native
   def FromValuesToRef(
     initialM11: Double,
     initialM12: Double,
@@ -212,6 +237,8 @@ object Matrix extends js.Object {
     * @param zaxis defines the value of the 3rd axis
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.FromXYZAxesToRef")
+  @js.native
   def FromXYZAxesToRef(
     xaxis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     yaxis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
@@ -224,6 +251,8 @@ object Matrix extends js.Object {
     * @param matrix defines the matrix to use
     * @returns a new Float32Array array with 4 elements : the 2x2 matrix extracted from the given matrix
     */
+  @JSImport("babylonjs/index", "Matrix.GetAsMatrix2x2")
+  @js.native
   def GetAsMatrix2x2(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): Float32Array | js.Array[Double] = js.native
   
   /**
@@ -231,6 +260,8 @@ object Matrix extends js.Object {
     * @param matrix defines the matrix to use
     * @returns a new Float32Array array with 9 elements : the 3x3 matrix extracted from the given matrix
     */
+  @JSImport("babylonjs/index", "Matrix.GetAsMatrix3x3")
+  @js.native
   def GetAsMatrix3x3(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): Float32Array | js.Array[Double] = js.native
   
   /**
@@ -243,6 +274,8 @@ object Matrix extends js.Object {
     * @param zmax defines the far clip plane
     * @returns the transformation matrix
     */
+  @JSImport("babylonjs/index", "Matrix.GetFinalMatrix")
+  @js.native
   def GetFinalMatrix(
     viewport: DeepImmutable[typings.babylonjs.mathViewportMod.Viewport],
     world: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
@@ -256,17 +289,16 @@ object Matrix extends js.Object {
     * Creates a new identity matrix
     * @returns a new identity matrix
     */
+  @JSImport("babylonjs/index", "Matrix.Identity")
+  @js.native
   def Identity(): typings.babylonjs.mathVectorMod.Matrix = js.native
-  
-  /**
-    * Gets an identity matrix that must not be updated
-    */
-  def IdentityReadOnly: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix] = js.native
   
   /**
     * Creates a new identity matrix and stores the result in a given matrix
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.IdentityToRef")
+  @js.native
   def IdentityToRef(result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
   
   /**
@@ -274,6 +306,8 @@ object Matrix extends js.Object {
     * @param source defines the source matrix
     * @returns the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.Invert")
+  @js.native
   def Invert(source: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -283,6 +317,8 @@ object Matrix extends js.Object {
     * @param gradient defines the gradient factor
     * @returns the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.Lerp")
+  @js.native
   def Lerp(
     startValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
@@ -296,6 +332,8 @@ object Matrix extends js.Object {
     * @param gradient defines the gradient factor
     * @param result defines the Matrix object where to store data
     */
+  @JSImport("babylonjs/index", "Matrix.LerpToRef")
+  @js.native
   def LerpToRef(
     startValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     endValue: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
@@ -311,6 +349,8 @@ object Matrix extends js.Object {
     * @param up defines the up vector for the entity
     * @returns the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.LookAtLH")
+  @js.native
   def LookAtLH(
     eye: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
@@ -325,6 +365,8 @@ object Matrix extends js.Object {
     * @param up defines the up vector for the entity
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.LookAtLHToRef")
+  @js.native
   def LookAtLHToRef(
     eye: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
@@ -340,6 +382,8 @@ object Matrix extends js.Object {
     * @param up defines the up vector for the entity
     * @returns the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.LookAtRH")
+  @js.native
   def LookAtRH(
     eye: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
@@ -354,6 +398,8 @@ object Matrix extends js.Object {
     * @param up defines the up vector for the entity
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.LookAtRHToRef")
+  @js.native
   def LookAtRHToRef(
     eye: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     target: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
@@ -369,6 +415,8 @@ object Matrix extends js.Object {
     * @param zfar defines the far clip plane
     * @returns a new matrix as a left-handed orthographic projection matrix
     */
+  @JSImport("babylonjs/index", "Matrix.OrthoLH")
+  @js.native
   def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -379,6 +427,8 @@ object Matrix extends js.Object {
     * @param zfar defines the far clip plane
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.OrthoLHToRef")
+  @js.native
   def OrthoLHToRef(
     width: Double,
     height: Double,
@@ -397,6 +447,8 @@ object Matrix extends js.Object {
     * @param zfar defines the far clip plane
     * @returns a new matrix as a left-handed orthographic projection matrix
     */
+  @JSImport("babylonjs/index", "Matrix.OrthoOffCenterLH")
+  @js.native
   def OrthoOffCenterLH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -409,6 +461,8 @@ object Matrix extends js.Object {
     * @param zfar defines the far clip plane
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.OrthoOffCenterLHToRef")
+  @js.native
   def OrthoOffCenterLHToRef(
     left: Double,
     right: Double,
@@ -429,6 +483,8 @@ object Matrix extends js.Object {
     * @param zfar defines the far clip plane
     * @returns a new matrix as a right-handed orthographic projection matrix
     */
+  @JSImport("babylonjs/index", "Matrix.OrthoOffCenterRH")
+  @js.native
   def OrthoOffCenterRH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -441,6 +497,8 @@ object Matrix extends js.Object {
     * @param zfar defines the far clip plane
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.OrthoOffCenterRHToRef")
+  @js.native
   def OrthoOffCenterRHToRef(
     left: Double,
     right: Double,
@@ -459,6 +517,8 @@ object Matrix extends js.Object {
     * @param zfar defines the far clip plane
     * @returns a new matrix as a left-handed perspective projection matrix
     */
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovLH")
+  @js.native
   def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -470,6 +530,8 @@ object Matrix extends js.Object {
     * @param result defines the target matrix
     * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
     */
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovLHToRef")
+  @js.native
   def PerspectiveFovLHToRef(
     fov: Double,
     aspect: Double,
@@ -477,6 +539,8 @@ object Matrix extends js.Object {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovLHToRef")
+  @js.native
   def PerspectiveFovLHToRef(
     fov: Double,
     aspect: Double,
@@ -494,6 +558,8 @@ object Matrix extends js.Object {
     * @param zfar defines the far clip plane
     * @returns a new matrix as a right-handed perspective projection matrix
     */
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovRH")
+  @js.native
   def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -505,6 +571,8 @@ object Matrix extends js.Object {
     * @param result defines the target matrix
     * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
     */
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovRHToRef")
+  @js.native
   def PerspectiveFovRHToRef(
     fov: Double,
     aspect: Double,
@@ -512,6 +580,8 @@ object Matrix extends js.Object {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovRHToRef")
+  @js.native
   def PerspectiveFovRHToRef(
     fov: Double,
     aspect: Double,
@@ -530,6 +600,8 @@ object Matrix extends js.Object {
     * @param result defines the target matrix
     * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
     */
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovReverseLHToRef")
+  @js.native
   def PerspectiveFovReverseLHToRef(
     fov: Double,
     aspect: Double,
@@ -537,6 +609,8 @@ object Matrix extends js.Object {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovReverseLHToRef")
+  @js.native
   def PerspectiveFovReverseLHToRef(
     fov: Double,
     aspect: Double,
@@ -555,6 +629,8 @@ object Matrix extends js.Object {
     * @param result defines the target matrix
     * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
     */
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovReverseRHToRef")
+  @js.native
   def PerspectiveFovReverseRHToRef(
     fov: Double,
     aspect: Double,
@@ -562,6 +638,8 @@ object Matrix extends js.Object {
     zfar: Double,
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovReverseRHToRef")
+  @js.native
   def PerspectiveFovReverseRHToRef(
     fov: Double,
     aspect: Double,
@@ -579,7 +657,11 @@ object Matrix extends js.Object {
     * @param result defines the target matrix
     * @param rightHanded defines if the matrix must be in right-handed mode (false by default)
     */
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovWebVRToRef")
+  @js.native
   def PerspectiveFovWebVRToRef(fov: DownDegrees, znear: Double, zfar: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+  @JSImport("babylonjs/index", "Matrix.PerspectiveFovWebVRToRef")
+  @js.native
   def PerspectiveFovWebVRToRef(
     fov: DownDegrees,
     znear: Double,
@@ -596,6 +678,8 @@ object Matrix extends js.Object {
     * @param zfar defines the far clip plane
     * @returns a new matrix as a left-handed perspective projection matrix
     */
+  @JSImport("babylonjs/index", "Matrix.PerspectiveLH")
+  @js.native
   def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -603,6 +687,8 @@ object Matrix extends js.Object {
     * @param plane defines the reflection plane
     * @returns a new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.Reflection")
+  @js.native
   def Reflection(plane: DeepImmutable[IPlaneLike]): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -610,6 +696,8 @@ object Matrix extends js.Object {
     * @param plane defines the reflection plane
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.ReflectionToRef")
+  @js.native
   def ReflectionToRef(plane: DeepImmutable[IPlaneLike], result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
   
   /**
@@ -619,6 +707,8 @@ object Matrix extends js.Object {
     * @param to defines the vector to align to
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationAlignToRef")
+  @js.native
   def RotationAlignToRef(
     from: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     to: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
@@ -631,6 +721,8 @@ object Matrix extends js.Object {
     * @param angle defines the angle (in radians) to use
     * @return the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationAxis")
+  @js.native
   def RotationAxis(axis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3], angle: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -639,6 +731,8 @@ object Matrix extends js.Object {
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationAxisToRef")
+  @js.native
   def RotationAxisToRef(
     axis: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     angle: Double,
@@ -650,6 +744,8 @@ object Matrix extends js.Object {
     * @param angle defines the angle (in radians) to use
     * @return the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationX")
+  @js.native
   def RotationX(angle: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -657,6 +753,8 @@ object Matrix extends js.Object {
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationXToRef")
+  @js.native
   def RotationXToRef(angle: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
   
   /**
@@ -664,6 +762,8 @@ object Matrix extends js.Object {
     * @param angle defines the angle (in radians) to use
     * @return the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationY")
+  @js.native
   def RotationY(angle: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -671,6 +771,8 @@ object Matrix extends js.Object {
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationYToRef")
+  @js.native
   def RotationYToRef(angle: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
   
   /**
@@ -680,6 +782,8 @@ object Matrix extends js.Object {
     * @param roll defines the roll angle in radians (Z axis)
     * @returns the new rotation matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationYawPitchRoll")
+  @js.native
   def RotationYawPitchRoll(yaw: Double, pitch: Double, roll: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -689,6 +793,8 @@ object Matrix extends js.Object {
     * @param roll defines the roll angle in radians (Z axis)
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationYawPitchRollToRef")
+  @js.native
   def RotationYawPitchRollToRef(yaw: Double, pitch: Double, roll: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
   
   /**
@@ -696,6 +802,8 @@ object Matrix extends js.Object {
     * @param angle defines the angle (in radians) to use
     * @return the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationZ")
+  @js.native
   def RotationZ(angle: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -703,6 +811,8 @@ object Matrix extends js.Object {
     * @param angle defines the angle (in radians) to use
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.RotationZToRef")
+  @js.native
   def RotationZToRef(angle: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
   
   /**
@@ -712,6 +822,8 @@ object Matrix extends js.Object {
     * @param z defines the scale factor on Z axis
     * @returns the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.Scaling")
+  @js.native
   def Scaling(x: Double, y: Double, z: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -721,6 +833,8 @@ object Matrix extends js.Object {
     * @param z defines the scale factor on Z axis
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.ScalingToRef")
+  @js.native
   def ScalingToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
   
   /**
@@ -730,6 +844,8 @@ object Matrix extends js.Object {
     * @param z defines the translationon Z axis
     * @returns the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.Translation")
+  @js.native
   def Translation(x: Double, y: Double, z: Double): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -739,6 +855,8 @@ object Matrix extends js.Object {
     * @param z defines the translationon Z axis
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.TranslationToRef")
+  @js.native
   def TranslationToRef(x: Double, y: Double, z: Double, result: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
   
   /**
@@ -746,6 +864,8 @@ object Matrix extends js.Object {
     * @param matrix defines the matrix to transpose
     * @returns the new matrix
     */
+  @JSImport("babylonjs/index", "Matrix.Transpose")
+  @js.native
   def Transpose(matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): typings.babylonjs.mathVectorMod.Matrix = js.native
   
   /**
@@ -753,23 +873,30 @@ object Matrix extends js.Object {
     * @param matrix defines the matrix to transpose
     * @param result defines the target matrix
     */
+  @JSImport("babylonjs/index", "Matrix.TransposeToRef")
+  @js.native
   def TransposeToRef(
     matrix: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     result: typings.babylonjs.mathVectorMod.Matrix
   ): Unit = js.native
   
   /**
-    * Gets the precision of matrix computations
-    */
-  def Use64Bits: Boolean = js.native
-  
-  /**
     * Creates a new zero matrix
     * @returns a new zero matrix
     */
+  @JSImport("babylonjs/index", "Matrix.Zero")
+  @js.native
   def Zero(): typings.babylonjs.mathVectorMod.Matrix = js.native
   
-  var _identityReadOnly: js.Any = js.native
+  @JSImport("babylonjs/index", "Matrix._identityReadOnly")
+  @js.native
+  def _identityReadOnly: js.Any = js.native
+  @scala.inline
+  def _identityReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_identityReadOnly")(x.asInstanceOf[js.Any])
   
-  var _updateFlagSeed: js.Any = js.native
+  @JSImport("babylonjs/index", "Matrix._updateFlagSeed")
+  @js.native
+  def _updateFlagSeed: js.Any = js.native
+  @scala.inline
+  def _updateFlagSeed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_updateFlagSeed")(x.asInstanceOf[js.Any])
 }

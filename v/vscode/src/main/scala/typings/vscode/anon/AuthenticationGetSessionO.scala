@@ -1,13 +1,14 @@
 package typings.vscode.anon
 
 import typings.vscode.vscodeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vscode.vscode.AuthenticationGetSessionOptions & {  createIfNone :true} */
 @js.native
-trait AuthenticationGetSessionO extends js.Object {
+trait AuthenticationGetSessionO extends StObject {
   
   /**
     * Whether the existing user session preference should be cleared.
@@ -40,27 +41,15 @@ object AuthenticationGetSessionO {
   }
   
   @scala.inline
-  implicit class AuthenticationGetSessionOOps[Self <: AuthenticationGetSessionO] (val x: Self) extends AnyVal {
+  implicit class AuthenticationGetSessionOMutableBuilder[Self <: AuthenticationGetSessionO] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearSessionPreference(value: Boolean): Self = StObject.set(x, "clearSessionPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearSessionPreferenceUndefined: Self = StObject.set(x, "clearSessionPreference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateIfNone(value: js.UndefOr[Boolean] with `true`): Self = this.set("createIfNone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClearSessionPreference(value: Boolean): Self = this.set("clearSessionPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClearSessionPreference: Self = this.set("clearSessionPreference", js.undefined)
+    def setCreateIfNone(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "createIfNone", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Progress extends js.Object {
+trait Progress extends StObject {
   
   /** Estimated fractional progress for `analyzing` step. */
   var analyzed: js.UndefOr[Double] = js.native
@@ -28,42 +29,30 @@ object Progress {
   }
   
   @scala.inline
-  implicit class ProgressOps[Self <: Progress] (val x: Self) extends AnyVal {
+  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzed(value: Double): Self = StObject.set(x, "analyzed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyzedUndefined: Self = StObject.set(x, "analyzed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncoded(value: Double): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyzed(value: Double): Self = this.set("analyzed", value.asInstanceOf[js.Any])
+    def setEncodedUndefined: Self = StObject.set(x, "encoded", js.undefined)
     
     @scala.inline
-    def deleteAnalyzed: Self = this.set("analyzed", js.undefined)
+    def setNotified(value: Double): Self = StObject.set(x, "notified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoded(value: Double): Self = this.set("encoded", value.asInstanceOf[js.Any])
+    def setNotifiedUndefined: Self = StObject.set(x, "notified", js.undefined)
     
     @scala.inline
-    def deleteEncoded: Self = this.set("encoded", js.undefined)
+    def setUploaded(value: Double): Self = StObject.set(x, "uploaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotified(value: Double): Self = this.set("notified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotified: Self = this.set("notified", js.undefined)
-    
-    @scala.inline
-    def setUploaded(value: Double): Self = this.set("uploaded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploaded: Self = this.set("uploaded", js.undefined)
+    def setUploadedUndefined: Self = StObject.set(x, "uploaded", js.undefined)
   }
 }

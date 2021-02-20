@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildingBlocks extends js.Object {
+trait BuildingBlocks extends StObject {
   
   /** @param Word.WdDocPartInsertOptions [InsertOptions=0] */
   def Add(Name: String, Range: Range, Description: js.Any): BuildingBlock = js.native

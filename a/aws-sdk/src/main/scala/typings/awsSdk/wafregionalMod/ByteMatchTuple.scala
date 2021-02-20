@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ByteMatchTuple extends js.Object {
+trait ByteMatchTuple extends StObject {
   
   /**
     * The part of a web request that you want AWS WAF to search, such as a specified header or a query string. For more information, see FieldToMatch.
@@ -41,30 +42,18 @@ object ByteMatchTuple {
   }
   
   @scala.inline
-  implicit class ByteMatchTupleOps[Self <: ByteMatchTuple] (val x: Self) extends AnyVal {
+  implicit class ByteMatchTupleMutableBuilder[Self <: ByteMatchTuple] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionalConstraint(value: PositionalConstraint): Self = StObject.set(x, "PositionalConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetString(value: ByteMatchTargetString): Self = StObject.set(x, "TargetString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldToMatch(value: FieldToMatch): Self = this.set("FieldToMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionalConstraint(value: PositionalConstraint): Self = this.set("PositionalConstraint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetString(value: ByteMatchTargetString): Self = this.set("TargetString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextTransformation(value: TextTransformation): Self = this.set("TextTransformation", value.asInstanceOf[js.Any])
+    def setTextTransformation(value: TextTransformation): Self = StObject.set(x, "TextTransformation", value.asInstanceOf[js.Any])
   }
 }

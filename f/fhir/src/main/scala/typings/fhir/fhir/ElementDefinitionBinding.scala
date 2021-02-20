@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,57 +55,45 @@ object ElementDefinitionBinding {
   }
   
   @scala.inline
-  implicit class ElementDefinitionBindingOps[Self <: ElementDefinitionBinding] (val x: Self) extends AnyVal {
+  implicit class ElementDefinitionBindingMutableBuilder[Self <: ElementDefinitionBinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrength(value: code): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrength(value: code): Self = this.set("strength", value.asInstanceOf[js.Any])
+    def setValueSetReference(value: Reference): Self = StObject.set(x, "valueSetReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setValueSetReferenceUndefined: Self = StObject.set(x, "valueSetReference", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setValueSetUri(value: uri): Self = StObject.set(x, "valueSetUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_strength(value: Element): Self = this.set("_strength", value.asInstanceOf[js.Any])
+    def setValueSetUriUndefined: Self = StObject.set(x, "valueSetUri", js.undefined)
     
     @scala.inline
-    def delete_strength: Self = this.set("_strength", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueSetUri(value: Element): Self = this.set("_valueSetUri", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def delete_valueSetUri: Self = this.set("_valueSetUri", js.undefined)
+    def set_strength(value: Element): Self = StObject.set(x, "_strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def set_strengthUndefined: Self = StObject.set(x, "_strength", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def set_valueSetUri(value: Element): Self = StObject.set(x, "_valueSetUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueSetReference(value: Reference): Self = this.set("valueSetReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSetReference: Self = this.set("valueSetReference", js.undefined)
-    
-    @scala.inline
-    def setValueSetUri(value: uri): Self = this.set("valueSetUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSetUri: Self = this.set("valueSetUri", js.undefined)
+    def set_valueSetUriUndefined: Self = StObject.set(x, "_valueSetUri", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Subscription extends js.Object {
+trait Subscription extends StObject {
   
   /**
     * The approximate amount of time (on a best-effort basis) Pub/Sub waits for the subscriber to acknowledge receipt before resending the message. In the interval after the message is
@@ -103,100 +104,88 @@ object Subscription {
   }
   
   @scala.inline
-  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeadLetterPolicy(value: DeadLetterPolicy): Self = StObject.set(x, "deadLetterPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAckDeadlineSeconds(value: Double): Self = this.set("ackDeadlineSeconds", value.asInstanceOf[js.Any])
+    def setDeadLetterPolicyUndefined: Self = StObject.set(x, "deadLetterPolicy", js.undefined)
     
     @scala.inline
-    def deleteAckDeadlineSeconds: Self = this.set("ackDeadlineSeconds", js.undefined)
+    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetterPolicy(value: DeadLetterPolicy): Self = this.set("deadLetterPolicy", value.asInstanceOf[js.Any])
+    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
     @scala.inline
-    def deleteDeadLetterPolicy: Self = this.set("deadLetterPolicy", js.undefined)
+    def setEnableMessageOrdering(value: Boolean): Self = StObject.set(x, "enableMessageOrdering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetached(value: Boolean): Self = this.set("detached", value.asInstanceOf[js.Any])
+    def setEnableMessageOrderingUndefined: Self = StObject.set(x, "enableMessageOrdering", js.undefined)
     
     @scala.inline
-    def deleteDetached: Self = this.set("detached", js.undefined)
+    def setExpirationPolicy(value: ExpirationPolicy): Self = StObject.set(x, "expirationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMessageOrdering(value: Boolean): Self = this.set("enableMessageOrdering", value.asInstanceOf[js.Any])
+    def setExpirationPolicyUndefined: Self = StObject.set(x, "expirationPolicy", js.undefined)
     
     @scala.inline
-    def deleteEnableMessageOrdering: Self = this.set("enableMessageOrdering", js.undefined)
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationPolicy(value: ExpirationPolicy): Self = this.set("expirationPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationPolicy: Self = this.set("expirationPolicy", js.undefined)
-    
-    @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.Subscription with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setMessageRetentionDuration(value: String): Self = this.set("messageRetentionDuration", value.asInstanceOf[js.Any])
+    def setMessageRetentionDuration(value: String): Self = StObject.set(x, "messageRetentionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageRetentionDuration: Self = this.set("messageRetentionDuration", js.undefined)
+    def setMessageRetentionDurationUndefined: Self = StObject.set(x, "messageRetentionDuration", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setPushConfig(value: PushConfig): Self = this.set("pushConfig", value.asInstanceOf[js.Any])
+    def setPushConfig(value: PushConfig): Self = StObject.set(x, "pushConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePushConfig: Self = this.set("pushConfig", js.undefined)
+    def setPushConfigUndefined: Self = StObject.set(x, "pushConfig", js.undefined)
     
     @scala.inline
-    def setRetainAckedMessages(value: Boolean): Self = this.set("retainAckedMessages", value.asInstanceOf[js.Any])
+    def setRetainAckedMessages(value: Boolean): Self = StObject.set(x, "retainAckedMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetainAckedMessages: Self = this.set("retainAckedMessages", js.undefined)
+    def setRetainAckedMessagesUndefined: Self = StObject.set(x, "retainAckedMessages", js.undefined)
     
     @scala.inline
-    def setRetryPolicy(value: RetryPolicy): Self = this.set("retryPolicy", value.asInstanceOf[js.Any])
+    def setRetryPolicy(value: RetryPolicy): Self = StObject.set(x, "retryPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetryPolicy: Self = this.set("retryPolicy", js.undefined)
+    def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

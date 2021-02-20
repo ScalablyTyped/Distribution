@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSoftwareUpdatesResult extends js.Object {
+trait GetSoftwareUpdatesResult extends StObject {
   
   /**
     * The Amazon S3 presigned URL for the update file associated with the specified JobId value. The software update will be available for 2 days after this request is made. To access an update after the 2 days have passed, you'll have to make another call to GetSoftwareUpdates.
@@ -21,24 +22,12 @@ object GetSoftwareUpdatesResult {
   }
   
   @scala.inline
-  implicit class GetSoftwareUpdatesResultOps[Self <: GetSoftwareUpdatesResult] (val x: Self) extends AnyVal {
+  implicit class GetSoftwareUpdatesResultMutableBuilder[Self <: GetSoftwareUpdatesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdatesURI(value: String): Self = StObject.set(x, "UpdatesURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpdatesURI(value: String): Self = this.set("UpdatesURI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatesURI: Self = this.set("UpdatesURI", js.undefined)
+    def setUpdatesURIUndefined: Self = StObject.set(x, "UpdatesURI", js.undefined)
   }
 }

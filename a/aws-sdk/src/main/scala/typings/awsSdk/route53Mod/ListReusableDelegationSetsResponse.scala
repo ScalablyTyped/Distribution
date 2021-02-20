@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReusableDelegationSetsResponse extends js.Object {
+trait ListReusableDelegationSetsResponse extends StObject {
   
   /**
     * A complex type that contains one DelegationSet element for each reusable delegation set that was created by the current AWS account.
@@ -46,39 +47,27 @@ object ListReusableDelegationSetsResponse {
   }
   
   @scala.inline
-  implicit class ListReusableDelegationSetsResponseOps[Self <: ListReusableDelegationSetsResponse] (val x: Self) extends AnyVal {
+  implicit class ListReusableDelegationSetsResponseMutableBuilder[Self <: ListReusableDelegationSetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegationSets(value: DelegationSets): Self = StObject.set(x, "DelegationSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelegationSetsVarargs(value: DelegationSet*): Self = StObject.set(x, "DelegationSets", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegationSetsVarargs(value: DelegationSet*): Self = this.set("DelegationSets", js.Array(value :_*))
+    def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegationSets(value: DelegationSets): Self = this.set("DelegationSets", value.asInstanceOf[js.Any])
+    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setNextMarker(value: PageMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: PageMarker): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextMarker(value: PageMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

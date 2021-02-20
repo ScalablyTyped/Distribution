@@ -3,6 +3,7 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mod.cardRegistration.CardRegistrationData
 import typings.mangopay2NodejsSdk.mod.cardRegistration.CreateCardRegistration
 import typings.mangopay2NodejsSdk.mod.cardRegistration.UpdateCardRegistration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mangopay2-nodejs-sdk", "CardRegistrations")
 @js.native
-class CardRegistrations () extends js.Object {
+class CardRegistrations () extends StObject {
   
   /**
     * Create new card registration

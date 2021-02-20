@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol Maps JavaScript API}
   */
 @js.native
-trait Symbol extends js.Object {
+trait Symbol extends StObject {
   
   /**
     * The position of the symbol relative to the marker or polyline. The
@@ -107,75 +108,63 @@ object Symbol {
   }
   
   @scala.inline
-  implicit class SymbolOps[Self <: Symbol] (val x: Self) extends AnyVal {
+  implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: SymbolPath | String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def setAnchor(value: Point): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def setFillColor(value: String): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setLabelOrigin(value: Point): Self = StObject.set(x, "labelOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    def setLabelOriginUndefined: Self = StObject.set(x, "labelOrigin", js.undefined)
     
     @scala.inline
-    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setPath(value: SymbolPath | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOrigin(value: Point): Self = this.set("labelOrigin", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteLabelOrigin: Self = this.set("labelOrigin", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeColor(value: String): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
     @scala.inline
-    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+    def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeOpacity(value: Double): Self = this.set("strokeOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeOpacity: Self = this.set("strokeOpacity", js.undefined)
-    
-    @scala.inline
-    def setStrokeWeight(value: Double): Self = this.set("strokeWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeWeight: Self = this.set("strokeWeight", js.undefined)
+    def setStrokeWeightUndefined: Self = StObject.set(x, "strokeWeight", js.undefined)
   }
 }

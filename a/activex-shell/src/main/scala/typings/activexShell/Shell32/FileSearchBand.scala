@@ -1,12 +1,13 @@
 package typings.activexShell.Shell32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FileSearchBand Class */
 @js.native
-trait FileSearchBand extends js.Object {
+trait FileSearchBand extends StObject {
   
   /** Retrieve the file from which the search was restored. */
   val QueryFile: js.Any = js.native

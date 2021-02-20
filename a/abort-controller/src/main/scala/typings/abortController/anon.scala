@@ -9,20 +9,19 @@ import typings.eventTargetShim.mod.EventTarget.FunctionListener
 import typings.eventTargetShim.mod.EventTarget.Listener
 import typings.eventTargetShim.mod.EventTarget.PickEvent
 import typings.eventTargetShim.mod.EventTarget.RemoveOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   /* Inlined abort-controller.abort-controller/dist/abort-controller.AbortSignal */
   @js.native
   /**
     * AbortSignal cannot be constructed directly.
     */
-  trait AbortSignal extends js.Object {
+  trait AbortSignal extends StObject {
     
     /**
       * Returns `true` if this `AbortSignal`"s `AbortController` has signaled to abort, and `false` otherwise.

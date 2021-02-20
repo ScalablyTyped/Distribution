@@ -1,15 +1,16 @@
 package typings.scratchEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReporterScope extends js.Object
+sealed trait ReporterScope extends StObject
 /** Indicate the scope for a reporter's value. */
 @JSGlobal("ReporterScope")
 @js.native
-object ReporterScope extends js.Object {
+object ReporterScope extends StObject {
   
   /** This reporter's value is global and does not depend on context. */
   @js.native

@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintComments extends js.Object
+sealed trait PrintComments extends StObject
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PrintComments")
 @js.native
-object PrintComments extends js.Object {
+object PrintComments extends StObject {
   
   /**
     * Comments will be printed as end notes at the end of the worksheet.

@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
   * @namespace PIXI.settings
   */
-@JSGlobal("PIXI.settings")
-@js.native
-object settings extends js.Object
+object settings

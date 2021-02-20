@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the Microsoft.Live.API.Event object.
   */
 @js.native
-trait IEventAPI extends js.Object {
+trait IEventAPI extends StObject {
   
   /**
     * Adds a handler to an event.

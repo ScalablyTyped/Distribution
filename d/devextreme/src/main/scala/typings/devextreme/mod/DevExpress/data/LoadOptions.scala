@@ -1,11 +1,12 @@
 package typings.devextreme.mod.DevExpress.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadOptions extends js.Object {
+trait LoadOptions extends StObject {
   
   /**
     * [descr:LoadOptions.customQueryParams]
@@ -101,126 +102,114 @@ object LoadOptions {
   }
   
   @scala.inline
-  implicit class LoadOptionsOps[Self <: LoadOptions] (val x: Self) extends AnyVal {
+  implicit class LoadOptionsMutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomQueryParams(value: js.Any): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomQueryParamsUndefined: Self = StObject.set(x, "customQueryParams", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpand(value: js.Any): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomQueryParams(value: js.Any): Self = this.set("customQueryParams", value.asInstanceOf[js.Any])
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteCustomQueryParams: Self = this.set("customQueryParams", js.undefined)
+    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: js.Any): Self = this.set("expand", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: js.Any): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setGroupSummary(value: js.Any): Self = StObject.set(x, "groupSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setGroupSummaryUndefined: Self = StObject.set(x, "groupSummary", js.undefined)
     
     @scala.inline
-    def setGroup(value: js.Any): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setParentIds(value: js.Array[_]): Self = StObject.set(x, "parentIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupSummary(value: js.Any): Self = this.set("groupSummary", value.asInstanceOf[js.Any])
+    def setParentIdsUndefined: Self = StObject.set(x, "parentIds", js.undefined)
     
     @scala.inline
-    def deleteGroupSummary: Self = this.set("groupSummary", js.undefined)
+    def setParentIdsVarargs(value: js.Any*): Self = StObject.set(x, "parentIds", js.Array(value :_*))
     
     @scala.inline
-    def setParentIdsVarargs(value: js.Any*): Self = this.set("parentIds", js.Array(value :_*))
+    def setRequireGroupCount(value: Boolean): Self = StObject.set(x, "requireGroupCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentIds(value: js.Array[_]): Self = this.set("parentIds", value.asInstanceOf[js.Any])
+    def setRequireGroupCountUndefined: Self = StObject.set(x, "requireGroupCount", js.undefined)
     
     @scala.inline
-    def deleteParentIds: Self = this.set("parentIds", js.undefined)
+    def setRequireTotalCount(value: Boolean): Self = StObject.set(x, "requireTotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireGroupCount(value: Boolean): Self = this.set("requireGroupCount", value.asInstanceOf[js.Any])
+    def setRequireTotalCountUndefined: Self = StObject.set(x, "requireTotalCount", js.undefined)
     
     @scala.inline
-    def deleteRequireGroupCount: Self = this.set("requireGroupCount", js.undefined)
+    def setSearchExpr(value: String | js.Function | (js.Array[String | js.Function])): Self = StObject.set(x, "searchExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireTotalCount(value: Boolean): Self = this.set("requireTotalCount", value.asInstanceOf[js.Any])
+    def setSearchExprUndefined: Self = StObject.set(x, "searchExpr", js.undefined)
     
     @scala.inline
-    def deleteRequireTotalCount: Self = this.set("requireTotalCount", js.undefined)
+    def setSearchExprVarargs(value: (String | js.Function)*): Self = StObject.set(x, "searchExpr", js.Array(value :_*))
     
     @scala.inline
-    def setSearchExprVarargs(value: (String | js.Function)*): Self = this.set("searchExpr", js.Array(value :_*))
+    def setSearchOperation(value: String): Self = StObject.set(x, "searchOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchExpr(value: String | js.Function | (js.Array[String | js.Function])): Self = this.set("searchExpr", value.asInstanceOf[js.Any])
+    def setSearchOperationUndefined: Self = StObject.set(x, "searchOperation", js.undefined)
     
     @scala.inline
-    def deleteSearchExpr: Self = this.set("searchExpr", js.undefined)
+    def setSearchValue(value: js.Any): Self = StObject.set(x, "searchValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchOperation(value: String): Self = this.set("searchOperation", value.asInstanceOf[js.Any])
+    def setSearchValueUndefined: Self = StObject.set(x, "searchValue", js.undefined)
     
     @scala.inline
-    def deleteSearchOperation: Self = this.set("searchOperation", js.undefined)
+    def setSelect(value: js.Any): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchValue(value: js.Any): Self = this.set("searchValue", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteSearchValue: Self = this.set("searchValue", js.undefined)
+    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: js.Any): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSort(value: js.Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip(value: Double): Self = this.set("skip", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: js.Any): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setTotalSummary(value: js.Any): Self = StObject.set(x, "totalSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTake(value: Double): Self = this.set("take", value.asInstanceOf[js.Any])
+    def setTotalSummaryUndefined: Self = StObject.set(x, "totalSummary", js.undefined)
     
     @scala.inline
-    def deleteTake: Self = this.set("take", js.undefined)
+    def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalSummary(value: js.Any): Self = this.set("totalSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSummary: Self = this.set("totalSummary", js.undefined)
-    
-    @scala.inline
-    def setUserData(value: js.Any): Self = this.set("userData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserData: Self = this.set("userData", js.undefined)
+    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }
 }

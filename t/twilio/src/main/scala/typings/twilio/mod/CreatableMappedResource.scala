@@ -1,21 +1,25 @@
 package typings.twilio.mod
 
 import typings.q.mod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreatableMappedResource[T]
-  extends BaseMappedResource[T]
-     with PostableResource {
-  
-  /* InferMemberOverrides */
-  override def apply(T0: /* resourceSid */ String): T = js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.twilio.mod.Resource because Already inherited
+- typings.twilio.mod.PostableResource because var conflicts: get_Original. Inlined post, post, post, post_Original */ @js.native
+trait CreatableMappedResource[T] extends MappedResource[T] {
   
   def create(args: js.Any): Promise[_] = js.native
   def create(args: js.Any, callback: RequestCallback): Promise[_] = js.native
   def create(callback: RequestCallback): Promise[_] = js.native
   @JSName("create")
   var create_Original: RestMethod = js.native
+  
+  def post(args: js.Any): Promise[_] = js.native
+  def post(args: js.Any, callback: RequestCallback): Promise[_] = js.native
+  def post(callback: RequestCallback): Promise[_] = js.native
+  @JSName("post")
+  var post_Original: RestMethod = js.native
 }

@@ -1,11 +1,12 @@
 package typings.jui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Event extends js.Object {
+trait Event extends StObject {
   
   var event: js.UndefOr[js.Any] = js.native
   
@@ -32,45 +33,33 @@ object Event {
   }
   
   @scala.inline
-  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
+    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
     @scala.inline
-    def deleteTpl: Self = this.set("tpl", js.undefined)
-    
-    @scala.inline
-    def setWordsVarargs(value: String*): Self = this.set("words", js.Array(value :_*))
-    
-    @scala.inline
-    def setWords(value: js.Array[String]): Self = this.set("words", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWords: Self = this.set("words", js.undefined)
+    def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientCognitoIdentityBrowser.typesMergeDeveloperIdentitiesI
 import typings.awsSdkClientCognitoIdentityBrowser.typesMergeDeveloperIdentitiesOutputMod.MergeDeveloperIdentitiesOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity-browser/commands/MergeDeveloperIdentitiesCommand", JSImport.Namespace)
-@js.native
-object mergeDeveloperIdentitiesCommandMod extends js.Object {
+object mergeDeveloperIdentitiesCommandMod {
   
+  @JSImport("@aws-sdk/client-cognito-identity-browser/commands/MergeDeveloperIdentitiesCommand", "MergeDeveloperIdentitiesCommand")
   @js.native
   class MergeDeveloperIdentitiesCommand protected () extends Command[
           InputTypesUnion, 

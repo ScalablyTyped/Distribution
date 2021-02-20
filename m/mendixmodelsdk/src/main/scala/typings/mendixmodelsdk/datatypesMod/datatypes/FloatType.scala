@@ -23,6 +23,7 @@ import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,16 +73,20 @@ class FloatType protected () extends DataType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MFloatType: MicroflowParameterBase = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType")
-@js.native
-object FloatType extends js.Object {
+object FloatType {
+  
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new FloatType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.create")
+  @js.native
   def create(model: IModel): FloatType = js.native
   
   /**
@@ -92,6 +97,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInAppServiceActionParameterUnderParameterType")
+  @js.native
   def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): FloatType = js.native
   
   /**
@@ -102,6 +110,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInAppServiceActionUnderActionReturnType")
+  @js.native
   def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): FloatType = js.native
   
   /**
@@ -112,6 +123,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInConstantUnderType")
+  @js.native
   def createInConstantUnderType(container: Constant): FloatType = js.native
   
   /**
@@ -122,6 +136,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInCreateVariableActionUnderVariableType")
+  @js.native
   def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): FloatType = js.native
   
   /**
@@ -132,6 +149,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInDataSetColumnUnderColumnType")
+  @js.native
   def createInDataSetColumnUnderColumnType(container: DataSetColumn): FloatType = js.native
   
   /**
@@ -142,6 +162,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInDataSetParameterUnderParameterType")
+  @js.native
   def createInDataSetParameterUnderParameterType(container: DataSetParameter): FloatType = js.native
   
   /**
@@ -152,6 +175,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInDocumentTemplateParameterUnderParameterType")
+  @js.native
   def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): FloatType = js.native
   
   /**
@@ -162,6 +188,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.16.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInImportMappingUnderParameterType")
+  @js.native
   def createInImportMappingUnderParameterType(container: ImportMapping): FloatType = js.native
   
   /**
@@ -172,6 +201,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInMicroflowBaseUnderMicroflowReturnType")
+  @js.native
   def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): FloatType = js.native
   
   /**
@@ -182,6 +214,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInMicroflowParameterBaseUnderParameterType")
+  @js.native
   def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): FloatType = js.native
   
   /**
@@ -192,6 +227,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInMicroflowParameterObjectUnderVariableType")
+  @js.native
   def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): FloatType = js.native
   
   /**
@@ -202,6 +240,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInPublishedOperationUnderOperationReturnType")
+  @js.native
   def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): FloatType = js.native
   
   /**
@@ -212,6 +253,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInPublishedParameterUnderParameterType")
+  @js.native
   def createInPublishedParameterUnderParameterType(container: PublishedParameter): FloatType = js.native
   
   /**
@@ -222,6 +266,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.17.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInRestOperationParameterUnderType")
+  @js.native
   def createInRestOperationParameterUnderType(container: RestOperationParameter): FloatType = js.native
   
   /**
@@ -232,6 +279,9 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInResultHandlingUnderVariableType")
+  @js.native
   def createInResultHandlingUnderVariableType(container: ResultHandling): FloatType = js.native
   
   /**
@@ -242,9 +292,22 @@ object FloatType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.createInValueMappingElementUnderType")
+  @js.native
   def createInValueMappingElementUnderType(container: ValueMappingElement): FloatType = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.FloatType.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

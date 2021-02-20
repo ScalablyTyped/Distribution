@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerVersionContentOutput extends js.Object {
+trait LayerVersionContentOutput extends StObject {
   
   /**
     * The SHA-256 hash of the layer archive.
@@ -31,36 +32,24 @@ object LayerVersionContentOutput {
   }
   
   @scala.inline
-  implicit class LayerVersionContentOutputOps[Self <: LayerVersionContentOutput] (val x: Self) extends AnyVal {
+  implicit class LayerVersionContentOutputMutableBuilder[Self <: LayerVersionContentOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeSize(value: Long): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeSha256(value: String): Self = this.set("CodeSha256", value.asInstanceOf[js.Any])
+    def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
     
     @scala.inline
-    def deleteCodeSha256: Self = this.set("CodeSha256", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeSize(value: Long): Self = this.set("CodeSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeSize: Self = this.set("CodeSize", js.undefined)
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("Location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

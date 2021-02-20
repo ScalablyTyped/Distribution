@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A client-side equivalent of the ASPxSchedulerToolTipBase control.
   */
 @js.native
-trait ASPxClientToolTipBase extends js.Object {
+trait ASPxClientToolTipBase extends StObject {
   
   /**
     * Gets the tooltip position. An ASPxClientPoint object representing the tooltip position.
@@ -74,42 +75,30 @@ object ASPxClientToolTipBase {
   }
   
   @scala.inline
-  implicit class ASPxClientToolTipBaseOps[Self <: ASPxClientToolTipBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientToolTipBaseMutableBuilder[Self <: ASPxClientToolTipBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculatePosition(value: js.Any => ASPxClientPoint): Self = StObject.set(x, "CalculatePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanShowToolTip(value: () => Boolean): Self = StObject.set(x, "CanShowToolTip", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalculatePosition(value: js.Any => ASPxClientPoint): Self = this.set("CalculatePosition", js.Any.fromFunction1(value))
+    def setConvertIntervalToString(value: ASPxClientTimeInterval => String): Self = StObject.set(x, "ConvertIntervalToString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCanShowToolTip(value: () => Boolean): Self = this.set("CanShowToolTip", js.Any.fromFunction0(value))
+    def setFinalizeUpdate(value: ASPxClientSchedulerToolTipData => Unit): Self = StObject.set(x, "FinalizeUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("Close", js.Any.fromFunction0(value))
+    def setShowAppointmentMenu(value: js.Any => Unit): Self = StObject.set(x, "ShowAppointmentMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConvertIntervalToString(value: ASPxClientTimeInterval => String): Self = this.set("ConvertIntervalToString", js.Any.fromFunction1(value))
+    def setShowViewMenu(value: js.Any => Unit): Self = StObject.set(x, "ShowViewMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFinalizeUpdate(value: ASPxClientSchedulerToolTipData => Unit): Self = this.set("FinalizeUpdate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowAppointmentMenu(value: js.Any => Unit): Self = this.set("ShowAppointmentMenu", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowViewMenu(value: js.Any => Unit): Self = this.set("ShowViewMenu", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: ASPxClientSchedulerToolTipData => Unit): Self = this.set("Update", js.Any.fromFunction1(value))
+    def setUpdate(value: ASPxClientSchedulerToolTipData => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction1(value))
   }
 }

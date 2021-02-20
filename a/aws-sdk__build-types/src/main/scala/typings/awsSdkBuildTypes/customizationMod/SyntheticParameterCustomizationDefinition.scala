@@ -3,6 +3,7 @@ package typings.awsSdkBuildTypes.customizationMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.SyntheticParameter
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.input
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.output
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,48 +69,36 @@ object SyntheticParameterCustomizationDefinition {
   }
   
   @scala.inline
-  implicit class SyntheticParameterCustomizationDefinitionOps[Self <: SyntheticParameterCustomizationDefinition] (val x: Self) extends AnyVal {
+  implicit class SyntheticParameterCustomizationDefinitionMutableBuilder[Self <: SyntheticParameterCustomizationDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
     @scala.inline
-    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
-    def setLocation(value: input | output): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocation(value: input | output): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: SyntheticParameter): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeExpression(value: String): Self = this.set("typeExpression", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setImportsVarargs(value: Import*): Self = this.set("imports", js.Array(value :_*))
+    def setType(value: SyntheticParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImports(value: js.Array[Import]): Self = this.set("imports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImports: Self = this.set("imports", js.undefined)
-    
-    @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setTypeExpression(value: String): Self = StObject.set(x, "typeExpression", value.asInstanceOf[js.Any])
   }
 }

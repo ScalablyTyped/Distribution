@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,10 +39,7 @@ class Size protected ()
     */
   def this(width: Double, height: Double) = this()
 }
-/* static members */
-@JSGlobal("paper.Size")
-@js.native
-object Size extends js.Object {
+object Size {
   
   /** 
     * Returns a new size object with the largest {@link #width} and
@@ -49,6 +47,9 @@ object Size extends js.Object {
     * 
     * @return the newly created size object
     */
+  /* static member */
+  @JSGlobal("paper.Size.max")
+  @js.native
   def max(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = js.native
   
   /** 
@@ -57,6 +58,9 @@ object Size extends js.Object {
     * 
     * @return the newly created size object
     */
+  /* static member */
+  @JSGlobal("paper.Size.min")
+  @js.native
   def min(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = js.native
   
   /** 
@@ -65,5 +69,8 @@ object Size extends js.Object {
     * 
     * @return the newly created size object
     */
+  /* static member */
+  @JSGlobal("paper.Size.random")
+  @js.native
   def random(): typings.paper.paper.Size = js.native
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontFace extends js.Object {
+trait FontFace extends StObject {
   
   /**
     * The font-family.
@@ -70,51 +71,39 @@ object FontFace {
   }
   
   @scala.inline
-  implicit class FontFaceOps[Self <: FontFace] (val x: Self) extends AnyVal {
+  implicit class FontFaceMutableBuilder[Self <: FontFace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontStretch(value: String): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontVariant(value: String): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStretch(value: String): Self = this.set("fontStretch", value.asInstanceOf[js.Any])
+    def setFontVariationAxes(value: js.Array[FontVariationAxis]): Self = StObject.set(x, "fontVariationAxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontVariationAxesUndefined: Self = StObject.set(x, "fontVariationAxes", js.undefined)
     
     @scala.inline
-    def setFontVariant(value: String): Self = this.set("fontVariant", value.asInstanceOf[js.Any])
+    def setFontVariationAxesVarargs(value: FontVariationAxis*): Self = StObject.set(x, "fontVariationAxes", js.Array(value :_*))
     
     @scala.inline
-    def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformFontFamily(value: String): Self = this.set("platformFontFamily", value.asInstanceOf[js.Any])
+    def setPlatformFontFamily(value: String): Self = StObject.set(x, "platformFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnicodeRange(value: String): Self = this.set("unicodeRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFontVariationAxesVarargs(value: FontVariationAxis*): Self = this.set("fontVariationAxes", js.Array(value :_*))
-    
-    @scala.inline
-    def setFontVariationAxes(value: js.Array[FontVariationAxis]): Self = this.set("fontVariationAxes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontVariationAxes: Self = this.set("fontVariationAxes", js.undefined)
+    def setUnicodeRange(value: String): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
   }
 }

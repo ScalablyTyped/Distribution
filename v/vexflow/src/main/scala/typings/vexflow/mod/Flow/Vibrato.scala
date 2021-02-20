@@ -1,6 +1,7 @@
 package typings.vexflow.mod.Flow
 
 import typings.vexflow.anon.Leftshift
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Vibrato ()
   extends typings.vexflow.Vex.Flow.Vibrato
-/* static members */
-@JSImport("vexflow", "Flow.Vibrato")
-@js.native
-object Vibrato extends js.Object {
+object Vibrato {
   
+  @JSImport("vexflow", "Flow.Vibrato.CATEGORY")
+  @js.native
   val CATEGORY: String = js.native
   
+  /* static member */
+  @JSImport("vexflow", "Flow.Vibrato.format")
+  @js.native
   def format(
     vibratos: js.Array[typings.vexflow.Vex.Flow.Vibrato],
     state: Leftshift,

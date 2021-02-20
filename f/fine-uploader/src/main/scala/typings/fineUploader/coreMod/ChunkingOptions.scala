@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChunkingOptions extends js.Object {
+trait ChunkingOptions extends StObject {
   
   /**
     * concurrent Chunking options
@@ -55,54 +56,42 @@ object ChunkingOptions {
   }
   
   @scala.inline
-  implicit class ChunkingOptionsOps[Self <: ChunkingOptions] (val x: Self) extends AnyVal {
+  implicit class ChunkingOptionsMutableBuilder[Self <: ChunkingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcurrent(value: ConcurrentOptions): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrent(value: ConcurrentOptions): Self = this.set("concurrent", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteConcurrent: Self = this.set("concurrent", js.undefined)
+    def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setParamNames(value: ParamNamesOptions): Self = StObject.set(x, "paramNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMandatory(value: Boolean): Self = this.set("mandatory", value.asInstanceOf[js.Any])
+    def setParamNamesUndefined: Self = StObject.set(x, "paramNames", js.undefined)
     
     @scala.inline
-    def deleteMandatory: Self = this.set("mandatory", js.undefined)
+    def setPartSize(value: Double | js.Function): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamNames(value: ParamNamesOptions): Self = this.set("paramNames", value.asInstanceOf[js.Any])
+    def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
     
     @scala.inline
-    def deleteParamNames: Self = this.set("paramNames", js.undefined)
+    def setSuccess(value: SuccessOptions): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartSize(value: Double | js.Function): Self = this.set("partSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartSize: Self = this.set("partSize", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: SuccessOptions): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

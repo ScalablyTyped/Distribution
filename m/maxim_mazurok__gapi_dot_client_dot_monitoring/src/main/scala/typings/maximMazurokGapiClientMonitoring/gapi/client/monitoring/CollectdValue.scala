@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectdValue extends js.Object {
+trait CollectdValue extends StObject {
   
   /** The data source for the collectd value. For example, there are two data sources for network measurements: "rx" and "tx". */
   var dataSourceName: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object CollectdValue {
   }
   
   @scala.inline
-  implicit class CollectdValueOps[Self <: CollectdValue] (val x: Self) extends AnyVal {
+  implicit class CollectdValueMutableBuilder[Self <: CollectdValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceName(value: String): Self = this.set("dataSourceName", value.asInstanceOf[js.Any])
+    def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     
     @scala.inline
-    def deleteDataSourceName: Self = this.set("dataSourceName", js.undefined)
+    def setValue(value: TypedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
-    
-    @scala.inline
-    def setValue(value: TypedValue): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

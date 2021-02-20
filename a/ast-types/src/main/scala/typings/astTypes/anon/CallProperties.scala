@@ -7,12 +7,13 @@ import typings.astTypes.kindsMod.ObjectTypeInternalSlotKind
 import typings.astTypes.kindsMod.ObjectTypePropertyKind
 import typings.astTypes.kindsMod.ObjectTypeSpreadPropertyKind
 import typings.astTypes.kindsMod.SourceLocationKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallProperties extends js.Object {
+trait CallProperties extends StObject {
   
   var callProperties: js.UndefOr[js.Array[ObjectTypeCallPropertyKind]] = js.native
   
@@ -39,84 +40,72 @@ object CallProperties {
   }
   
   @scala.inline
-  implicit class CallPropertiesOps[Self <: CallProperties] (val x: Self) extends AnyVal {
+  implicit class CallPropertiesMutableBuilder[Self <: CallProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallProperties(value: js.Array[ObjectTypeCallPropertyKind]): Self = StObject.set(x, "callProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallPropertiesUndefined: Self = StObject.set(x, "callProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallPropertiesVarargs(value: ObjectTypeCallPropertyKind*): Self = StObject.set(x, "callProperties", js.Array(value :_*))
     
     @scala.inline
-    def setPropertiesVarargs(value: (ObjectTypePropertyKind | ObjectTypeSpreadPropertyKind)*): Self = this.set("properties", js.Array(value :_*))
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Array[ObjectTypePropertyKind | ObjectTypeSpreadPropertyKind]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def setCallPropertiesVarargs(value: ObjectTypeCallPropertyKind*): Self = this.set("callProperties", js.Array(value :_*))
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setCallProperties(value: js.Array[ObjectTypeCallPropertyKind]): Self = this.set("callProperties", value.asInstanceOf[js.Any])
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def deleteCallProperties: Self = this.set("callProperties", js.undefined)
+    def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setIndexers(value: js.Array[ObjectTypeIndexerKind]): Self = StObject.set(x, "indexers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setIndexersUndefined: Self = StObject.set(x, "indexers", js.undefined)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setIndexersVarargs(value: ObjectTypeIndexerKind*): Self = StObject.set(x, "indexers", js.Array(value :_*))
     
     @scala.inline
-    def setExact(value: Boolean): Self = this.set("exact", value.asInstanceOf[js.Any])
+    def setInexact(value: Boolean): Self = StObject.set(x, "inexact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExact: Self = this.set("exact", js.undefined)
+    def setInexactUndefined: Self = StObject.set(x, "inexact", js.undefined)
     
     @scala.inline
-    def setIndexersVarargs(value: ObjectTypeIndexerKind*): Self = this.set("indexers", js.Array(value :_*))
+    def setInternalSlots(value: js.Array[ObjectTypeInternalSlotKind]): Self = StObject.set(x, "internalSlots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexers(value: js.Array[ObjectTypeIndexerKind]): Self = this.set("indexers", value.asInstanceOf[js.Any])
+    def setInternalSlotsUndefined: Self = StObject.set(x, "internalSlots", js.undefined)
     
     @scala.inline
-    def deleteIndexers: Self = this.set("indexers", js.undefined)
+    def setInternalSlotsVarargs(value: ObjectTypeInternalSlotKind*): Self = StObject.set(x, "internalSlots", js.Array(value :_*))
     
     @scala.inline
-    def setInexact(value: Boolean): Self = this.set("inexact", value.asInstanceOf[js.Any])
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInexact: Self = this.set("inexact", js.undefined)
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def setInternalSlotsVarargs(value: ObjectTypeInternalSlotKind*): Self = this.set("internalSlots", js.Array(value :_*))
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setInternalSlots(value: js.Array[ObjectTypeInternalSlotKind]): Self = this.set("internalSlots", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Array[ObjectTypePropertyKind | ObjectTypeSpreadPropertyKind]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInternalSlots: Self = this.set("internalSlots", js.undefined)
-    
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
-    
-    @scala.inline
-    def setLocNull: Self = this.set("loc", null)
+    def setPropertiesVarargs(value: (ObjectTypePropertyKind | ObjectTypeSpreadPropertyKind)*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

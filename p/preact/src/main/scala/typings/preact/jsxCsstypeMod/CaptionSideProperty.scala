@@ -1,5 +1,6 @@
 package typings.preact.jsxCsstypeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.revert
   - typings.preact.preactStrings.unset
 */
-trait CaptionSideProperty extends js.Object
+trait CaptionSideProperty extends StObject
 object CaptionSideProperty {
   
   @scala.inline

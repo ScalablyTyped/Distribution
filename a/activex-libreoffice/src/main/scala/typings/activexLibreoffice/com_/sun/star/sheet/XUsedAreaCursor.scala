@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,24 +44,12 @@ object XUsedAreaCursor {
   }
   
   @scala.inline
-  implicit class XUsedAreaCursorOps[Self <: XUsedAreaCursor] (val x: Self) extends AnyVal {
+  implicit class XUsedAreaCursorMutableBuilder[Self <: XUsedAreaCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGotoEndOfUsedArea(value: Boolean => Unit): Self = StObject.set(x, "gotoEndOfUsedArea", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGotoEndOfUsedArea(value: Boolean => Unit): Self = this.set("gotoEndOfUsedArea", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGotoStartOfUsedArea(value: Boolean => Unit): Self = this.set("gotoStartOfUsedArea", js.Any.fromFunction1(value))
+    def setGotoStartOfUsedArea(value: Boolean => Unit): Self = StObject.set(x, "gotoStartOfUsedArea", js.Any.fromFunction1(value))
   }
 }

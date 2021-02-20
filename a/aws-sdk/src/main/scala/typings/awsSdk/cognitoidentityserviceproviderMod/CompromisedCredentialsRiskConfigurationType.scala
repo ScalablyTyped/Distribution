@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompromisedCredentialsRiskConfigurationType extends js.Object {
+trait CompromisedCredentialsRiskConfigurationType extends StObject {
   
   /**
     * The compromised credentials risk configuration actions.
@@ -26,30 +27,18 @@ object CompromisedCredentialsRiskConfigurationType {
   }
   
   @scala.inline
-  implicit class CompromisedCredentialsRiskConfigurationTypeOps[Self <: CompromisedCredentialsRiskConfigurationType] (val x: Self) extends AnyVal {
+  implicit class CompromisedCredentialsRiskConfigurationTypeMutableBuilder[Self <: CompromisedCredentialsRiskConfigurationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: CompromisedCredentialsActionsType): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventFilter(value: EventFiltersType): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
     
     @scala.inline
-    def setActions(value: CompromisedCredentialsActionsType): Self = this.set("Actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventFilterVarargs(value: EventFilterType*): Self = this.set("EventFilter", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventFilter(value: EventFiltersType): Self = this.set("EventFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventFilter: Self = this.set("EventFilter", js.undefined)
+    def setEventFilterVarargs(value: EventFilterType*): Self = StObject.set(x, "EventFilter", js.Array(value :_*))
   }
 }

@@ -3,6 +3,7 @@ package typings.chromeApps
 import typings.chromeApps.anon.TypeofAppView
 import typings.chromeApps.anon.TypeofWebView
 import typings.chromeApps.anon.Typeofchrome
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkFirewallMissingExpectedRTViolation extends js.Object {
+trait NetworkFirewallMissingExpectedRTViolation extends StObject {
   
   /**
     * The Availability Zone of a violating subnet. 
@@ -41,48 +42,36 @@ object NetworkFirewallMissingExpectedRTViolation {
   }
   
   @scala.inline
-  implicit class NetworkFirewallMissingExpectedRTViolationOps[Self <: NetworkFirewallMissingExpectedRTViolation] (val x: Self) extends AnyVal {
+  implicit class NetworkFirewallMissingExpectedRTViolationMutableBuilder[Self <: NetworkFirewallMissingExpectedRTViolation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: LengthBoundedString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentRouteTable(value: ResourceId): Self = StObject.set(x, "CurrentRouteTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: LengthBoundedString): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setCurrentRouteTableUndefined: Self = StObject.set(x, "CurrentRouteTable", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setExpectedRouteTable(value: ResourceId): Self = StObject.set(x, "ExpectedRouteTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRouteTable(value: ResourceId): Self = this.set("CurrentRouteTable", value.asInstanceOf[js.Any])
+    def setExpectedRouteTableUndefined: Self = StObject.set(x, "ExpectedRouteTable", js.undefined)
     
     @scala.inline
-    def deleteCurrentRouteTable: Self = this.set("CurrentRouteTable", js.undefined)
+    def setVPC(value: ResourceId): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedRouteTable(value: ResourceId): Self = this.set("ExpectedRouteTable", value.asInstanceOf[js.Any])
+    def setVPCUndefined: Self = StObject.set(x, "VPC", js.undefined)
     
     @scala.inline
-    def deleteExpectedRouteTable: Self = this.set("ExpectedRouteTable", js.undefined)
+    def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVPC(value: ResourceId): Self = this.set("VPC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVPC: Self = this.set("VPC", js.undefined)
-    
-    @scala.inline
-    def setViolationTarget(value: ViolationTarget): Self = this.set("ViolationTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolationTarget: Self = this.set("ViolationTarget", js.undefined)
+    def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
   }
 }

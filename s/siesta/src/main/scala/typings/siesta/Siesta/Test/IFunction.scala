@@ -1,5 +1,6 @@
 package typings.siesta.Siesta.Test
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @mixin
   */
 @js.native
-trait IFunction extends js.Object {
+trait IFunction extends StObject {
   
   def isCalled(fn: String, host: js.Any, desc: String): Unit = js.native
   def isCalled(fn: js.Function, host: js.Any, desc: String): Unit = js.native

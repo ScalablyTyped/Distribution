@@ -1,11 +1,12 @@
 package typings.cordovaPluginMapsforge
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapsforgeEmbeddedPlugin extends js.Object {
+trait MapsforgeEmbeddedPlugin extends StObject {
   
   var COLOR_BLACK: Double | String = js.native
   

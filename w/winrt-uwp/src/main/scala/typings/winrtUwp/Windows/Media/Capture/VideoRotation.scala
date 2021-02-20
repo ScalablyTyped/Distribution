@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VideoRotation extends js.Object
+sealed trait VideoRotation extends StObject
 /** Specifies the rotation of the video stream. */
 @JSGlobal("Windows.Media.Capture.VideoRotation")
 @js.native
-object VideoRotation extends js.Object {
+object VideoRotation extends StObject {
   
   /** The video stream is rotated 180 degrees clockwise. */
   @js.native

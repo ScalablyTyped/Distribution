@@ -1,11 +1,12 @@
 package typings.parameter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterOptions extends js.Object {
+trait ParameterOptions extends StObject {
   
   /**
     * convert primitive params to specific type.
@@ -40,42 +41,30 @@ object ParameterOptions {
   }
   
   @scala.inline
-  implicit class ParameterOptionsOps[Self <: ParameterOptions] (val x: Self) extends AnyVal {
+  implicit class ParameterOptionsMutableBuilder[Self <: ParameterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTranslate(value: ParameterTranslateFunction): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
     @scala.inline
-    def deleteConvert: Self = this.set("convert", js.undefined)
+    def setValidateRoot(value: Boolean): Self = StObject.set(x, "validateRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslate(value: ParameterTranslateFunction): Self = this.set("translate", value.asInstanceOf[js.Any])
+    def setValidateRootUndefined: Self = StObject.set(x, "validateRoot", js.undefined)
     
     @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
+    def setWidelyUndefined(value: Boolean): Self = StObject.set(x, "widelyUndefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateRoot(value: Boolean): Self = this.set("validateRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateRoot: Self = this.set("validateRoot", js.undefined)
-    
-    @scala.inline
-    def setWidelyUndefined(value: Boolean): Self = this.set("widelyUndefined", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidelyUndefined: Self = this.set("widelyUndefined", js.undefined)
+    def setWidelyUndefinedUndefined: Self = StObject.set(x, "widelyUndefined", js.undefined)
   }
 }

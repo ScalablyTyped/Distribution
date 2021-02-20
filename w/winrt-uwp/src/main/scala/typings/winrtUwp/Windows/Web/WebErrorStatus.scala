@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Web
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebErrorStatus extends js.Object
+sealed trait WebErrorStatus extends StObject
 /** Defines errors encountered during operations involving web services, such as authentication, proxy configuration, and destination URIs. */
 @JSGlobal("Windows.Web.WebErrorStatus")
 @js.native
-object WebErrorStatus extends js.Object {
+object WebErrorStatus extends StObject {
   
   /** The server was acting as a gateway or proxy and received an invalid response from the upstream server. */
   @js.native

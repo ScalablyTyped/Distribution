@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A digest of all the documents that match a given target.
   */
 @js.native
-trait SchemaExistenceFilter extends js.Object {
+trait SchemaExistenceFilter extends StObject {
   
   /**
     * The total count of documents that match target_id.  If different from the
@@ -31,30 +32,18 @@ object SchemaExistenceFilter {
   }
   
   @scala.inline
-  implicit class SchemaExistenceFilterOps[Self <: SchemaExistenceFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaExistenceFilterMutableBuilder[Self <: SchemaExistenceFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
-    
-    @scala.inline
-    def setTargetId(value: Double): Self = this.set("targetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetId: Self = this.set("targetId", js.undefined)
+    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

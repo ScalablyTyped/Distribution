@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientCloudsearch.anon.KeyName
 import typings.maximMazurokGapiClientCloudsearch.anon.NameOauthtoken
 import typings.maximMazurokGapiClientCloudsearch.anon.PageSize
 import typings.maximMazurokGapiClientCloudsearch.anon.PrettyPrintQuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchapplicationsResource extends js.Object {
+trait SearchapplicationsResource extends StObject {
   
   def create(request: AltCallback, body: SearchApplication): Request[Operation] = js.native
   /** Creates a search application. **Note:** This API requires an admin account to execute. */

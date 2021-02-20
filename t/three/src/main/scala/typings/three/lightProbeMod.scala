@@ -3,14 +3,14 @@ package typings.three
 import typings.three.lightMod.Light
 import typings.three.sphericalHarmonics3Mod.SphericalHarmonics3
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/lights/LightProbe", JSImport.Namespace)
-@js.native
-object lightProbeMod extends js.Object {
+object lightProbeMod {
   
+  @JSImport("three/src/lights/LightProbe", "LightProbe")
   @js.native
   class LightProbe () extends Light {
     def this(sh: SphericalHarmonics3) = this()

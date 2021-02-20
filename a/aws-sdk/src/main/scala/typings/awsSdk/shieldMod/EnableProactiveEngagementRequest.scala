@@ -1,8 +1,9 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnableProactiveEngagementRequest extends js.Object
+trait EnableProactiveEngagementRequest extends StObject

@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Embeddable extends js.Object {
+trait Embeddable extends StObject {
   
   /**
     * This value indicates whether the video can be embedded on another website.
@@ -59,39 +60,27 @@ object Embeddable {
   }
   
   @scala.inline
-  implicit class EmbeddableOps[Self <: Embeddable] (val x: Self) extends AnyVal {
+  implicit class EmbeddableMutableBuilder[Self <: Embeddable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmbeddable(value: Boolean): Self = StObject.set(x, "embeddable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddable(value: Boolean): Self = this.set("embeddable", value.asInstanceOf[js.Any])
+    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setPublicStatsViewable(value: Boolean): Self = StObject.set(x, "publicStatsViewable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
+    def setRejectionReason(value: String): Self = StObject.set(x, "rejectionReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivacyStatus(value: String): Self = this.set("privacyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicStatsViewable(value: Boolean): Self = this.set("publicStatsViewable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRejectionReason(value: String): Self = this.set("rejectionReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadStatus(value: String): Self = this.set("uploadStatus", value.asInstanceOf[js.Any])
+    def setUploadStatus(value: String): Self = StObject.set(x, "uploadStatus", value.asInstanceOf[js.Any])
   }
 }

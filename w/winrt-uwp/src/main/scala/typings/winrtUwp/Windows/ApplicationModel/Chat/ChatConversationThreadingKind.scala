@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatConversationThreadingKind extends js.Object
+sealed trait ChatConversationThreadingKind extends StObject
 /** Specifies how a conversation is threaded. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatConversationThreadingKind")
 @js.native
-object ChatConversationThreadingKind extends js.Object {
+object ChatConversationThreadingKind extends StObject {
   
   /** By contact ID */
   @js.native

@@ -2,21 +2,21 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/Point", JSImport.Namespace)
-@js.native
-object pointMod extends js.Object {
+object pointMod {
   
-  @js.native
-  trait Point
-    extends typings.ol.simpleGeometryMod.default
-  
+  @JSImport("ol/geom/Point", JSImport.Default)
   @js.native
   class default protected () extends Point {
     def this(coordinates: Coordinate) = this()
     def this(coordinates: Coordinate, opt_layout: GeometryLayout) = this()
   }
+  
+  @js.native
+  trait Point
+    extends typings.ol.simpleGeometryMod.default
 }

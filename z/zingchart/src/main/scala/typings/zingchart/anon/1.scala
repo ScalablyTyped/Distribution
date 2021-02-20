@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `1` extends js.Object {
+trait `1` extends StObject {
   
   var `1`: js.UndefOr[js.Any] = js.native
   
@@ -63,120 +64,108 @@ object `1` {
   }
   
   @scala.inline
-  implicit class `1Ops`[Self <: `1`] (val x: Self) extends AnyVal {
+  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set1(value: js.Any): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set10(value: js.Any): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set10Undefined: Self = StObject.set(x, "10", js.undefined)
     
     @scala.inline
-    def set1(value: js.Any): Self = this.set("1", value.asInstanceOf[js.Any])
+    def set11(value: js.Any): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete1: Self = this.set("1", js.undefined)
+    def set11Undefined: Self = StObject.set(x, "11", js.undefined)
     
     @scala.inline
-    def set10(value: js.Any): Self = this.set("10", value.asInstanceOf[js.Any])
+    def set12(value: js.Any): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete10: Self = this.set("10", js.undefined)
+    def set12Undefined: Self = StObject.set(x, "12", js.undefined)
     
     @scala.inline
-    def set11(value: js.Any): Self = this.set("11", value.asInstanceOf[js.Any])
+    def set13(value: js.Any): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete11: Self = this.set("11", js.undefined)
+    def set13Undefined: Self = StObject.set(x, "13", js.undefined)
     
     @scala.inline
-    def set12(value: js.Any): Self = this.set("12", value.asInstanceOf[js.Any])
+    def set1Undefined: Self = StObject.set(x, "1", js.undefined)
     
     @scala.inline
-    def delete12: Self = this.set("12", js.undefined)
+    def set2(value: js.Any): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set13(value: js.Any): Self = this.set("13", value.asInstanceOf[js.Any])
+    def set2Undefined: Self = StObject.set(x, "2", js.undefined)
     
     @scala.inline
-    def delete13: Self = this.set("13", js.undefined)
+    def set3(value: js.Any): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set2(value: js.Any): Self = this.set("2", value.asInstanceOf[js.Any])
+    def set3Undefined: Self = StObject.set(x, "3", js.undefined)
     
     @scala.inline
-    def delete2: Self = this.set("2", js.undefined)
+    def set4(value: js.Any): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set3(value: js.Any): Self = this.set("3", value.asInstanceOf[js.Any])
+    def set4Undefined: Self = StObject.set(x, "4", js.undefined)
     
     @scala.inline
-    def delete3: Self = this.set("3", js.undefined)
+    def set5(value: js.Any): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set4(value: js.Any): Self = this.set("4", value.asInstanceOf[js.Any])
+    def set5Undefined: Self = StObject.set(x, "5", js.undefined)
     
     @scala.inline
-    def delete4: Self = this.set("4", js.undefined)
+    def set6(value: js.Any): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set5(value: js.Any): Self = this.set("5", value.asInstanceOf[js.Any])
+    def set6Undefined: Self = StObject.set(x, "6", js.undefined)
     
     @scala.inline
-    def delete5: Self = this.set("5", js.undefined)
+    def set7(value: js.Any): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set6(value: js.Any): Self = this.set("6", value.asInstanceOf[js.Any])
+    def set7Undefined: Self = StObject.set(x, "7", js.undefined)
     
     @scala.inline
-    def delete6: Self = this.set("6", js.undefined)
+    def set8(value: js.Any): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set7(value: js.Any): Self = this.set("7", value.asInstanceOf[js.Any])
+    def set8Undefined: Self = StObject.set(x, "8", js.undefined)
     
     @scala.inline
-    def delete7: Self = this.set("7", js.undefined)
+    def set9(value: js.Any): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set8(value: js.Any): Self = this.set("8", value.asInstanceOf[js.Any])
+    def set9Undefined: Self = StObject.set(x, "9", js.undefined)
     
     @scala.inline
-    def delete8: Self = this.set("8", js.undefined)
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set9(value: js.Any): Self = this.set("9", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def delete9: Self = this.set("9", js.undefined)
+    def setEffect(value: Double): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def `setOn-change`(value: Boolean): Self = StObject.set(x, "on-change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: Double): Self = this.set("effect", value.asInstanceOf[js.Any])
+    def `setOn-changeUndefined`: Self = StObject.set(x, "on-change", js.undefined)
     
     @scala.inline
-    def deleteEffect: Self = this.set("effect", js.undefined)
+    def `setOn-legend-toggle`(value: js.Any): Self = StObject.set(x, "on-legend-toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOn-change`(value: Boolean): Self = this.set("on-change", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteOn-change`: Self = this.set("on-change", js.undefined)
-    
-    @scala.inline
-    def `setOn-legend-toggle`(value: js.Any): Self = this.set("on-legend-toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteOn-legend-toggle`: Self = this.set("on-legend-toggle", js.undefined)
+    def `setOn-legend-toggleUndefined`: Self = StObject.set(x, "on-legend-toggle", js.undefined)
   }
 }

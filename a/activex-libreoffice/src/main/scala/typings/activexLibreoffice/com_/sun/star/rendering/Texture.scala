@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.rendering
 
 import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait Texture extends js.Object {
+trait Texture extends StObject {
   
   /**
     * {@link Texture} transformation from texture to primitive space.
@@ -107,45 +108,33 @@ object Texture {
   }
   
   @scala.inline
-  implicit class TextureOps[Self <: Texture] (val x: Self) extends AnyVal {
+  implicit class TextureMutableBuilder[Self <: Texture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlpha(value: Double): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitmap(value: XBitmap): Self = StObject.set(x, "Bitmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffineTransform(value: AffineMatrix2D): Self = this.set("AffineTransform", value.asInstanceOf[js.Any])
+    def setGradient(value: XParametricPolyPolygon2D): Self = StObject.set(x, "Gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("Alpha", value.asInstanceOf[js.Any])
+    def setHatchAttributes(value: StrokeAttributes): Self = StObject.set(x, "HatchAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmap(value: XBitmap): Self = this.set("Bitmap", value.asInstanceOf[js.Any])
+    def setHatching(value: XParametricPolyPolygon2D): Self = StObject.set(x, "Hatching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradient(value: XParametricPolyPolygon2D): Self = this.set("Gradient", value.asInstanceOf[js.Any])
+    def setNumberOfHatchPolygons(value: Double): Self = StObject.set(x, "NumberOfHatchPolygons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHatchAttributes(value: StrokeAttributes): Self = this.set("HatchAttributes", value.asInstanceOf[js.Any])
+    def setRepeatModeX(value: Double): Self = StObject.set(x, "RepeatModeX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHatching(value: XParametricPolyPolygon2D): Self = this.set("Hatching", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfHatchPolygons(value: Double): Self = this.set("NumberOfHatchPolygons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeatModeX(value: Double): Self = this.set("RepeatModeX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeatModeY(value: Double): Self = this.set("RepeatModeY", value.asInstanceOf[js.Any])
+    def setRepeatModeY(value: Double): Self = StObject.set(x, "RepeatModeY", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,14 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragOrder extends js.Object {
+trait DragOrder extends StObject {
   
   @JSName("$drag")
   def $drag(source: HTMLElement, ev: Event): String = js.native
@@ -33,6 +33,3 @@ trait DragOrder extends js.Object {
   @JSName("$drop")
   def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit = js.native
 }
-@JSImport("webix", "DragOrder")
-@js.native
-object DragOrder extends TopLevel[DragOrder]

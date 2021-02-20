@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetServiceLastAccessedDetailsWithEntitiesResponse extends js.Object {
+trait GetServiceLastAccessedDetailsWithEntitiesResponse extends StObject {
   
   /**
     * An EntityDetailsList object that contains details about when an IAM entity (user or role) used group or policy permissions in an attempt to access the specified AWS service.
@@ -56,51 +57,39 @@ object GetServiceLastAccessedDetailsWithEntitiesResponse {
   }
   
   @scala.inline
-  implicit class GetServiceLastAccessedDetailsWithEntitiesResponseOps[Self <: GetServiceLastAccessedDetailsWithEntitiesResponse] (val x: Self) extends AnyVal {
+  implicit class GetServiceLastAccessedDetailsWithEntitiesResponseMutableBuilder[Self <: GetServiceLastAccessedDetailsWithEntitiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityDetailsList(value: entityDetailsListType): Self = StObject.set(x, "EntityDetailsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityDetailsListVarargs(value: EntityDetails*): Self = StObject.set(x, "EntityDetailsList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: ErrorDetails): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityDetailsListVarargs(value: EntityDetails*): Self = this.set("EntityDetailsList", js.Array(value :_*))
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def setEntityDetailsList(value: entityDetailsListType): Self = this.set("EntityDetailsList", value.asInstanceOf[js.Any])
+    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobCompletionDate(value: dateType): Self = this.set("JobCompletionDate", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def setJobCreationDate(value: dateType): Self = this.set("JobCreationDate", value.asInstanceOf[js.Any])
+    def setJobCompletionDate(value: dateType): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: jobStatusType): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    def setJobCreationDate(value: dateType): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ErrorDetails): Self = this.set("Error", value.asInstanceOf[js.Any])
+    def setJobStatus(value: jobStatusType): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
+    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

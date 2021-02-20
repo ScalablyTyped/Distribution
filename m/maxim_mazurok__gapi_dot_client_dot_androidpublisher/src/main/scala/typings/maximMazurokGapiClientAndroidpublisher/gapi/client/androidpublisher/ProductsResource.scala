@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidpublisher.anon.ProductId
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductsResource extends js.Object {
+trait ProductsResource extends StObject {
   
   /** Acknowledges a purchase of an inapp item. */
   def acknowledge(request: ProductId): Request[Unit] = js.native

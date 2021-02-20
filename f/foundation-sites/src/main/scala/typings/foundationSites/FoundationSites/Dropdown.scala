@@ -1,12 +1,13 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/dropdown.html#javascript-reference
 @js.native
-trait Dropdown extends js.Object {
+trait Dropdown extends StObject {
   
   def close(): Unit = js.native
   
@@ -33,33 +34,21 @@ object Dropdown {
   }
   
   @scala.inline
-  implicit class DropdownOps[Self <: Dropdown] (val x: Self) extends AnyVal {
+  implicit class DropdownMutableBuilder[Self <: Dropdown] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPositionClass(value: () => String): Self = StObject.set(x, "getPositionClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPositionClass(value: () => String): Self = this.set("getPositionClass", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpen(value: () => Unit): Self = this.set("open", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
+    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

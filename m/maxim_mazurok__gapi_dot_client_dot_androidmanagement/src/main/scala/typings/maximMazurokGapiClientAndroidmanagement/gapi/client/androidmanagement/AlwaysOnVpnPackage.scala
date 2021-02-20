@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlwaysOnVpnPackage extends js.Object {
+trait AlwaysOnVpnPackage extends StObject {
   
   /** Disallows networking when the VPN is not connected. */
   var lockdownEnabled: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object AlwaysOnVpnPackage {
   }
   
   @scala.inline
-  implicit class AlwaysOnVpnPackageOps[Self <: AlwaysOnVpnPackage] (val x: Self) extends AnyVal {
+  implicit class AlwaysOnVpnPackageMutableBuilder[Self <: AlwaysOnVpnPackage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLockdownEnabled(value: Boolean): Self = StObject.set(x, "lockdownEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLockdownEnabledUndefined: Self = StObject.set(x, "lockdownEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockdownEnabled(value: Boolean): Self = this.set("lockdownEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLockdownEnabled: Self = this.set("lockdownEnabled", js.undefined)
-    
-    @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

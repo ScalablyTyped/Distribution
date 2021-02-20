@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer extends js.Object {
+trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer extends StObject {
   
   /**
     * Nested argument that specifies the native Hive / HCatalog JsonSerDe. More details below.
@@ -30,34 +31,22 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigur
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOps[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setHiveJsonSerDe(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe
-    ): Self = this.set("hiveJsonSerDe", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "hiveJsonSerDe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHiveJsonSerDe: Self = this.set("hiveJsonSerDe", js.undefined)
+    def setHiveJsonSerDeUndefined: Self = StObject.set(x, "hiveJsonSerDe", js.undefined)
     
     @scala.inline
     def setOpenXJsonSerDe(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe
-    ): Self = this.set("openXJsonSerDe", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "openXJsonSerDe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpenXJsonSerDe: Self = this.set("openXJsonSerDe", js.undefined)
+    def setOpenXJsonSerDeUndefined: Self = StObject.set(x, "openXJsonSerDe", js.undefined)
   }
 }

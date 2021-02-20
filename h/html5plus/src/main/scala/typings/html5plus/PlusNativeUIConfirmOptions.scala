@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
 @js.native
-trait PlusNativeUIConfirmOptions extends js.Object {
+trait PlusNativeUIConfirmOptions extends StObject {
   
   /**
     * 确认对话框上显示的按钮
@@ -49,39 +50,27 @@ object PlusNativeUIConfirmOptions {
   }
   
   @scala.inline
-  implicit class PlusNativeUIConfirmOptionsOps[Self <: PlusNativeUIConfirmOptions] (val x: Self) extends AnyVal {
+  implicit class PlusNativeUIConfirmOptionsMutableBuilder[Self <: PlusNativeUIConfirmOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[_]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setButtonsVarargs(value: js.Any*): Self = this.set("buttons", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[_]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVerticalAlign(value: String): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
   }
 }

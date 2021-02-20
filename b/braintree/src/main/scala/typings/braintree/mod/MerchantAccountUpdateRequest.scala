@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MerchantAccountUpdateRequest extends js.Object {
+trait MerchantAccountUpdateRequest extends StObject {
   
   var business: js.UndefOr[MerchantBusinessRequest] = js.native
   
@@ -31,36 +32,24 @@ object MerchantAccountUpdateRequest {
   }
   
   @scala.inline
-  implicit class MerchantAccountUpdateRequestOps[Self <: MerchantAccountUpdateRequest] (val x: Self) extends AnyVal {
+  implicit class MerchantAccountUpdateRequestMutableBuilder[Self <: MerchantAccountUpdateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusiness(value: MerchantBusinessRequest): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBusinessUndefined: Self = StObject.set(x, "business", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunding(value: MerchantFunding): Self = StObject.set(x, "funding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunding(value: MerchantFunding): Self = this.set("funding", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIndividual(value: MerchantIndividualRequest): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndividual(value: MerchantIndividualRequest): Self = this.set("individual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMasterMerchantAccountId(value: String): Self = this.set("masterMerchantAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBusiness(value: MerchantBusinessRequest): Self = this.set("business", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBusiness: Self = this.set("business", js.undefined)
+    def setMasterMerchantAccountId(value: String): Self = StObject.set(x, "masterMerchantAccountId", value.asInstanceOf[js.Any])
   }
 }

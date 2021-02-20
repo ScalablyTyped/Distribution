@@ -1,18 +1,20 @@
 package typings.jupyterlabUiComponents
 
 import typings.jupyterlabUiComponents.styleIconMod.LabIconStyle.IProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/ui-components/lib/style", JSImport.Namespace)
-@js.native
-object styleMod extends js.Object {
+object styleMod {
   
-  @js.native
-  object LabIconStyle extends js.Object {
+  object LabIconStyle {
     
+    @JSImport("@jupyterlab/ui-components/lib/style", "LabIconStyle.styleClass")
+    @js.native
     def styleClass(): String = js.native
+    @JSImport("@jupyterlab/ui-components/lib/style", "LabIconStyle.styleClass")
+    @js.native
     def styleClass(props: IProps): String = js.native
   }
 }

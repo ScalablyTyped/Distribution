@@ -1,12 +1,11 @@
 package typings.phaser.phaserMod.GameObjects
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("phaser", "GameObjects.Events")
-@js.native
-object Events extends js.Object {
+object Events {
   
   /**
     * The Game Object Destroy Event.
@@ -15,6 +14,8 @@ object Events extends js.Object {
     * 
     * Listen for it on a Game Object instance using `GameObject.on('destroy', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.DESTROY")
+  @js.native
   val DESTROY: js.Any = js.native
   
   /**
@@ -31,6 +32,8 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('complete', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_COMPLETE")
+  @js.native
   val VIDEO_COMPLETE: js.Any = js.native
   
   /**
@@ -42,6 +45,8 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('created', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_CREATED")
+  @js.native
   val VIDEO_CREATED: js.Any = js.native
   
   /**
@@ -51,6 +56,8 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('error', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_ERROR")
+  @js.native
   val VIDEO_ERROR: js.Any = js.native
   
   /**
@@ -67,6 +74,8 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('loop', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_LOOP")
+  @js.native
   val VIDEO_LOOP: js.Any = js.native
   
   /**
@@ -79,6 +88,8 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('play', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_PLAY")
+  @js.native
   val VIDEO_PLAY: js.Any = js.native
   
   /**
@@ -88,6 +99,8 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('seeked', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_SEEKED")
+  @js.native
   val VIDEO_SEEKED: js.Any = js.native
   
   /**
@@ -98,6 +111,8 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('seeking', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_SEEKING")
+  @js.native
   val VIDEO_SEEKING: js.Any = js.native
   
   /**
@@ -108,6 +123,8 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('stop', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_STOP")
+  @js.native
   val VIDEO_STOP: js.Any = js.native
   
   /**
@@ -118,6 +135,8 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('timeout', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_TIMEOUT")
+  @js.native
   val VIDEO_TIMEOUT: js.Any = js.native
   
   /**
@@ -128,5 +147,7 @@ object Events extends js.Object {
     * 
     * Listen for it from a Video Game Object instance using `Video.on('unlocked', listener)`.
     */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_UNLOCKED")
+  @js.native
   val VIDEO_UNLOCKED: js.Any = js.native
 }

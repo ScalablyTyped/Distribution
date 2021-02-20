@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BccEmailArchiveList extends js.Object {
+trait BccEmailArchiveList extends StObject {
   
   /**
     * A list of  BCC email archive configurations.
@@ -51,63 +52,51 @@ object BccEmailArchiveList {
   }
   
   @scala.inline
-  implicit class BccEmailArchiveListOps[Self <: BccEmailArchiveList] (val x: Self) extends AnyVal {
+  implicit class BccEmailArchiveListMutableBuilder[Self <: BccEmailArchiveList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBccEmailArchives(value: js.Array[BccEmailArchive]): Self = StObject.set(x, "bccEmailArchives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBccEmailArchivesUndefined: Self = StObject.set(x, "bccEmailArchives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBccEmailArchivesVarargs(value: BccEmailArchive*): Self = StObject.set(x, "bccEmailArchives", js.Array(value :_*))
     
     @scala.inline
-    def setBccEmailArchivesVarargs(value: BccEmailArchive*): Self = this.set("bccEmailArchives", js.Array(value :_*))
+    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBccEmailArchives(value: js.Array[BccEmailArchive]): Self = this.set("bccEmailArchives", value.asInstanceOf[js.Any])
+    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     @scala.inline
-    def deleteBccEmailArchives: Self = this.set("bccEmailArchives", js.undefined)
+    def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPosition(value: String): Self = this.set("endPosition", value.asInstanceOf[js.Any])
+    def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
     
     @scala.inline
-    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextUri(value: String): Self = this.set("nextUri", value.asInstanceOf[js.Any])
+    def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
     
     @scala.inline
-    def deleteNextUri: Self = this.set("nextUri", js.undefined)
+    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousUri(value: String): Self = this.set("previousUri", value.asInstanceOf[js.Any])
+    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
     @scala.inline
-    def deletePreviousUri: Self = this.set("previousUri", js.undefined)
+    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSetSize(value: String): Self = this.set("resultSetSize", value.asInstanceOf[js.Any])
+    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
     @scala.inline
-    def deleteResultSetSize: Self = this.set("resultSetSize", js.undefined)
+    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPosition(value: String): Self = this.set("startPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
-    
-    @scala.inline
-    def setTotalSetSize(value: String): Self = this.set("totalSetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSetSize: Self = this.set("totalSetSize", js.undefined)
+    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
   }
 }

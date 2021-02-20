@@ -1,6 +1,7 @@
 package typings.kendoUi.global.kendo.mobile
 
 import typings.kendoUi.kendo.mobile.ApplicationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

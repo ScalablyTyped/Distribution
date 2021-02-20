@@ -3,14 +3,14 @@ package typings.ionicCore
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/backdrop/backdrop", JSImport.Namespace)
-@js.native
-object backdropMod extends js.Object {
+object backdropMod {
   
+  @JSImport("@ionic/core/dist/types/components/backdrop/backdrop", "Backdrop")
   @js.native
   class Backdrop () extends ComponentInterface {
     

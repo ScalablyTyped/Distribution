@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxSender Class */
 @js.native
-trait FaxSender extends js.Object {
+trait FaxSender extends StObject {
   
   /** Sender's billing code */
   var BillingCode: String = js.native
@@ -95,75 +96,63 @@ object FaxSender {
   }
   
   @scala.inline
-  implicit class FaxSenderOps[Self <: FaxSender] (val x: Self) extends AnyVal {
+  implicit class FaxSenderMutableBuilder[Self <: FaxSender] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingCode(value: String): Self = StObject.set(x, "BillingCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompany(value: String): Self = StObject.set(x, "Company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingCode(value: String): Self = this.set("BillingCode", value.asInstanceOf[js.Any])
+    def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("City", value.asInstanceOf[js.Any])
+    def setDepartment(value: String): Self = StObject.set(x, "Department", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany(value: String): Self = this.set("Company", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("Country", value.asInstanceOf[js.Any])
+    def setFAXCOMEXLibDotFaxSender_typekey(value: FaxSender): Self = StObject.set(x, "FAXCOMEXLib.FaxSender_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartment(value: String): Self = this.set("Department", value.asInstanceOf[js.Any])
+    def setFaxNumber(value: String): Self = StObject.set(x, "FaxNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setHomePhone(value: String): Self = StObject.set(x, "HomePhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxSender_typekey(value: FaxSender): Self = this.set("FAXCOMEXLib.FaxSender_typekey", value.asInstanceOf[js.Any])
+    def setLoadDefaultSender(value: () => Unit): Self = StObject.set(x, "LoadDefaultSender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFaxNumber(value: String): Self = this.set("FaxNumber", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomePhone(value: String): Self = this.set("HomePhone", value.asInstanceOf[js.Any])
+    def setOfficeLocation(value: String): Self = StObject.set(x, "OfficeLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadDefaultSender(value: () => Unit): Self = this.set("LoadDefaultSender", js.Any.fromFunction0(value))
+    def setOfficePhone(value: String): Self = StObject.set(x, "OfficePhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSaveDefaultSender(value: () => Unit): Self = StObject.set(x, "SaveDefaultSender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOfficeLocation(value: String): Self = this.set("OfficeLocation", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficePhone(value: String): Self = this.set("OfficePhone", value.asInstanceOf[js.Any])
+    def setStreetAddress(value: String): Self = StObject.set(x, "StreetAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveDefaultSender(value: () => Unit): Self = this.set("SaveDefaultSender", js.Any.fromFunction0(value))
+    def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreetAddress(value: String): Self = this.set("StreetAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTSID(value: String): Self = this.set("TSID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZipCode(value: String): Self = this.set("ZipCode", value.asInstanceOf[js.Any])
+    def setZipCode(value: String): Self = StObject.set(x, "ZipCode", value.asInstanceOf[js.Any])
   }
 }

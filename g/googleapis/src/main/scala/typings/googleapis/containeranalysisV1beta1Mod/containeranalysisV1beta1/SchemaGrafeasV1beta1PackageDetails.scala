@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details of a package occurrence.
   */
 @js.native
-trait SchemaGrafeasV1beta1PackageDetails extends js.Object {
+trait SchemaGrafeasV1beta1PackageDetails extends StObject {
   
   /**
     * Required. Where the package was installed.
@@ -24,24 +25,12 @@ object SchemaGrafeasV1beta1PackageDetails {
   }
   
   @scala.inline
-  implicit class SchemaGrafeasV1beta1PackageDetailsOps[Self <: SchemaGrafeasV1beta1PackageDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaGrafeasV1beta1PackageDetailsMutableBuilder[Self <: SchemaGrafeasV1beta1PackageDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstallation(value: SchemaInstallation): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstallation(value: SchemaInstallation): Self = this.set("installation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstallation: Self = this.set("installation", js.undefined)
+    def setInstallationUndefined: Self = StObject.set(x, "installation", js.undefined)
   }
 }

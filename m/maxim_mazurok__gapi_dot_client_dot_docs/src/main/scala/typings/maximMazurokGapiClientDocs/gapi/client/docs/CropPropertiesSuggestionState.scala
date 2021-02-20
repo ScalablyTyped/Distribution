@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CropPropertiesSuggestionState extends js.Object {
+trait CropPropertiesSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to angle. */
   var angleSuggested: js.UndefOr[Boolean] = js.native
@@ -31,48 +32,36 @@ object CropPropertiesSuggestionState {
   }
   
   @scala.inline
-  implicit class CropPropertiesSuggestionStateOps[Self <: CropPropertiesSuggestionState] (val x: Self) extends AnyVal {
+  implicit class CropPropertiesSuggestionStateMutableBuilder[Self <: CropPropertiesSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetBottomSuggested(value: Boolean): Self = StObject.set(x, "offsetBottomSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngleSuggested(value: Boolean): Self = this.set("angleSuggested", value.asInstanceOf[js.Any])
+    def setOffsetBottomSuggestedUndefined: Self = StObject.set(x, "offsetBottomSuggested", js.undefined)
     
     @scala.inline
-    def deleteAngleSuggested: Self = this.set("angleSuggested", js.undefined)
+    def setOffsetLeftSuggested(value: Boolean): Self = StObject.set(x, "offsetLeftSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetBottomSuggested(value: Boolean): Self = this.set("offsetBottomSuggested", value.asInstanceOf[js.Any])
+    def setOffsetLeftSuggestedUndefined: Self = StObject.set(x, "offsetLeftSuggested", js.undefined)
     
     @scala.inline
-    def deleteOffsetBottomSuggested: Self = this.set("offsetBottomSuggested", js.undefined)
+    def setOffsetRightSuggested(value: Boolean): Self = StObject.set(x, "offsetRightSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetLeftSuggested(value: Boolean): Self = this.set("offsetLeftSuggested", value.asInstanceOf[js.Any])
+    def setOffsetRightSuggestedUndefined: Self = StObject.set(x, "offsetRightSuggested", js.undefined)
     
     @scala.inline
-    def deleteOffsetLeftSuggested: Self = this.set("offsetLeftSuggested", js.undefined)
+    def setOffsetTopSuggested(value: Boolean): Self = StObject.set(x, "offsetTopSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetRightSuggested(value: Boolean): Self = this.set("offsetRightSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetRightSuggested: Self = this.set("offsetRightSuggested", js.undefined)
-    
-    @scala.inline
-    def setOffsetTopSuggested(value: Boolean): Self = this.set("offsetTopSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetTopSuggested: Self = this.set("offsetTopSuggested", js.undefined)
+    def setOffsetTopSuggestedUndefined: Self = StObject.set(x, "offsetTopSuggested", js.undefined)
   }
 }

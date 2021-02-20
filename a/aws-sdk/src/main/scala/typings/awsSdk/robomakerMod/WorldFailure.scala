@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorldFailure extends js.Object {
+trait WorldFailure extends StObject {
   
   /**
     * The failure code of the world export job if it failed:  InternalServiceError  Internal service error.  LimitExceeded  The requested resource exceeds the maximum number allowed, or the number of concurrent stream requests exceeds the maximum number allowed.   ResourceNotFound  The specified resource could not be found.   RequestThrottled  The request was throttled.  InvalidInput  An input parameter in the request is not valid.  
@@ -31,36 +32,24 @@ object WorldFailure {
   }
   
   @scala.inline
-  implicit class WorldFailureOps[Self <: WorldFailure] (val x: Self) extends AnyVal {
+  implicit class WorldFailureMutableBuilder[Self <: WorldFailure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureCode(value: WorldGenerationJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureCount(value: Integer): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: WorldGenerationJobErrorCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    def setSampleFailureReason(value: GenericString): Self = StObject.set(x, "sampleFailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCount(value: Integer): Self = this.set("failureCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureCount: Self = this.set("failureCount", js.undefined)
-    
-    @scala.inline
-    def setSampleFailureReason(value: GenericString): Self = this.set("sampleFailureReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleFailureReason: Self = this.set("sampleFailureReason", js.undefined)
+    def setSampleFailureReasonUndefined: Self = StObject.set(x, "sampleFailureReason", js.undefined)
   }
 }

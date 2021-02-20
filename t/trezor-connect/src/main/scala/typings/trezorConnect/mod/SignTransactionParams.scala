@@ -1,5 +1,6 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,72 +35,60 @@ object SignTransactionParams {
   }
   
   @scala.inline
-  implicit class SignTransactionParamsOps[Self <: SignTransactionParams] (val x: Self) extends AnyVal {
+  implicit class SignTransactionParamsMutableBuilder[Self <: SignTransactionParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchId(value: Double): Self = StObject.set(x, "branchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchIdUndefined: Self = StObject.set(x, "branchId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoin(value: String): Self = this.set("coin", value.asInstanceOf[js.Any])
+    def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputsVarargs(value: Input*): Self = this.set("inputs", js.Array(value :_*))
+    def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
     
     @scala.inline
-    def setInputs(value: js.Array[Input]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setInputs(value: js.Array[Input]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputsVarargs(value: Output*): Self = this.set("outputs", js.Array(value :_*))
+    def setInputsVarargs(value: Input*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputs(value: js.Array[Output]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setLocktime(value: Double): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchId(value: Double): Self = this.set("branchId", value.asInstanceOf[js.Any])
+    def setLocktimeUndefined: Self = StObject.set(x, "locktime", js.undefined)
     
     @scala.inline
-    def deleteBranchId: Self = this.set("branchId", js.undefined)
+    def setOutputs(value: js.Array[Output]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiry(value: Double): Self = this.set("expiry", value.asInstanceOf[js.Any])
+    def setOutputsVarargs(value: Output*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def deleteExpiry: Self = this.set("expiry", js.undefined)
+    def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocktime(value: Double): Self = this.set("locktime", value.asInstanceOf[js.Any])
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
     @scala.inline
-    def deleteLocktime: Self = this.set("locktime", js.undefined)
+    def setRefTxs(value: js.Array[RefTransaction]): Self = StObject.set(x, "refTxs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPush(value: Boolean): Self = this.set("push", value.asInstanceOf[js.Any])
+    def setRefTxsUndefined: Self = StObject.set(x, "refTxs", js.undefined)
     
     @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setRefTxsVarargs(value: RefTransaction*): Self = StObject.set(x, "refTxs", js.Array(value :_*))
     
     @scala.inline
-    def setRefTxsVarargs(value: RefTransaction*): Self = this.set("refTxs", js.Array(value :_*))
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefTxs(value: js.Array[RefTransaction]): Self = this.set("refTxs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefTxs: Self = this.set("refTxs", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

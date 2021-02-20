@@ -1,12 +1,13 @@
 package typings.materialUi.MaterialUI
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawerProps extends js.Object {
+trait DrawerProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -45,102 +46,90 @@ object DrawerProps {
   }
   
   @scala.inline
-  implicit class DrawerPropsOps[Self <: DrawerProps] (val x: Self) extends AnyVal {
+  implicit class DrawerPropsMutableBuilder[Self <: DrawerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerClassName(value: String): Self = this.set("containerClassName", value.asInstanceOf[js.Any])
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def deleteContainerClassName: Self = this.set("containerClassName", js.undefined)
+    def setDisableSwipeToOpen(value: Boolean): Self = StObject.set(x, "disableSwipeToOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStyle(value: CSSProperties): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setDisableSwipeToOpenUndefined: Self = StObject.set(x, "disableSwipeToOpen", js.undefined)
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setDocked(value: Boolean): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSwipeToOpen(value: Boolean): Self = this.set("disableSwipeToOpen", value.asInstanceOf[js.Any])
+    def setDockedUndefined: Self = StObject.set(x, "docked", js.undefined)
     
     @scala.inline
-    def deleteDisableSwipeToOpen: Self = this.set("disableSwipeToOpen", js.undefined)
+    def setOnRequestChange(value: (/* opening */ Boolean, /* reason */ String) => Unit): Self = StObject.set(x, "onRequestChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDocked(value: Boolean): Self = this.set("docked", value.asInstanceOf[js.Any])
+    def setOnRequestChangeUndefined: Self = StObject.set(x, "onRequestChange", js.undefined)
     
     @scala.inline
-    def deleteDocked: Self = this.set("docked", js.undefined)
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRequestChange(value: (/* opening */ Boolean, /* reason */ String) => Unit): Self = this.set("onRequestChange", js.Any.fromFunction2(value))
+    def setOpenSecondary(value: Boolean): Self = StObject.set(x, "openSecondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnRequestChange: Self = this.set("onRequestChange", js.undefined)
+    def setOpenSecondaryUndefined: Self = StObject.set(x, "openSecondary", js.undefined)
     
     @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenSecondary(value: Boolean): Self = this.set("openSecondary", value.asInstanceOf[js.Any])
+    def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
     
     @scala.inline
-    def deleteOpenSecondary: Self = this.set("openSecondary", js.undefined)
+    def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayClassName(value: String): Self = this.set("overlayClassName", value.asInstanceOf[js.Any])
+    def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
     
     @scala.inline
-    def deleteOverlayClassName: Self = this.set("overlayClassName", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayStyle(value: CSSProperties): Self = this.set("overlayStyle", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteOverlayStyle: Self = this.set("overlayStyle", js.undefined)
+    def setSwipeAreaWidth(value: Double): Self = StObject.set(x, "swipeAreaWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSwipeAreaWidthUndefined: Self = StObject.set(x, "swipeAreaWidth", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeAreaWidth(value: Double): Self = this.set("swipeAreaWidth", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteSwipeAreaWidth: Self = this.set("swipeAreaWidth", js.undefined)
+    def setZDepth(value: Double): Self = StObject.set(x, "zDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setZDepth(value: Double): Self = this.set("zDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZDepth: Self = this.set("zDepth", js.undefined)
+    def setZDepthUndefined: Self = StObject.set(x, "zDepth", js.undefined)
   }
 }

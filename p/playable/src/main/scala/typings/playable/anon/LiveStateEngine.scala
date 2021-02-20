@@ -7,12 +7,13 @@ import typings.playable.previewThumbnailTypesMod.IPreviewThumbnail
 import typings.playable.textMapTypesMod.ITextMap
 import typings.playable.themeTypesMod.IThemeService
 import typings.playable.tooltipTypesMod.ITooltipService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiveStateEngine extends js.Object {
+trait LiveStateEngine extends StObject {
   
   var engine: IPlaybackEngine = js.native
   
@@ -48,42 +49,30 @@ object LiveStateEngine {
   }
   
   @scala.inline
-  implicit class LiveStateEngineOps[Self <: LiveStateEngine] (val x: Self) extends AnyVal {
+  implicit class LiveStateEngineMutableBuilder[Self <: LiveStateEngine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLiveStateEngine(value: js.Any): Self = StObject.set(x, "liveStateEngine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = this.set("engine", value.asInstanceOf[js.Any])
+    def setPreviewFullSize(value: IPreviewFullSize): Self = StObject.set(x, "previewFullSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = this.set("eventEmitter", value.asInstanceOf[js.Any])
+    def setPreviewThumbnail(value: IPreviewThumbnail): Self = StObject.set(x, "previewThumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveStateEngine(value: js.Any): Self = this.set("liveStateEngine", value.asInstanceOf[js.Any])
+    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewFullSize(value: IPreviewFullSize): Self = this.set("previewFullSize", value.asInstanceOf[js.Any])
+    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewThumbnail(value: IPreviewThumbnail): Self = this.set("previewThumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = this.set("textMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTheme(value: IThemeService): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = this.set("tooltipService", value.asInstanceOf[js.Any])
+    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceBlockDeviceMapping extends js.Object {
+trait InstanceBlockDeviceMapping extends StObject {
   
   /**
     * The device name (for example, /dev/sdh or xvdh).
@@ -26,30 +27,18 @@ object InstanceBlockDeviceMapping {
   }
   
   @scala.inline
-  implicit class InstanceBlockDeviceMappingOps[Self <: InstanceBlockDeviceMapping] (val x: Self) extends AnyVal {
+  implicit class InstanceBlockDeviceMappingMutableBuilder[Self <: InstanceBlockDeviceMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEbs(value: EbsInstanceBlockDevice): Self = StObject.set(x, "Ebs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
-    
-    @scala.inline
-    def setEbs(value: EbsInstanceBlockDevice): Self = this.set("Ebs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEbs: Self = this.set("Ebs", js.undefined)
+    def setEbsUndefined: Self = StObject.set(x, "Ebs", js.undefined)
   }
 }

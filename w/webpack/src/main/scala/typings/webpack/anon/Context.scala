@@ -5,6 +5,7 @@ import typings.webpack.dllReferencePluginMod.DllReferencePluginOptionsManifest
 import typings.webpack.dllReferencePluginMod.DllReferencePluginOptionsSourceType
 import typings.webpack.webpackStrings.`object`
 import typings.webpack.webpackStrings.require
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,60 +57,48 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifest(value: DllReferencePluginOptionsManifest | String): Self = this.set("manifest", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setManifest(value: DllReferencePluginOptionsManifest | String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSourceType(value: DllReferencePluginOptionsSourceType): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setType(value: require | `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceType(value: DllReferencePluginOptionsSourceType): Self = this.set("sourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("sourceType", js.undefined)
-    
-    @scala.inline
-    def setType(value: require | `object`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Encapsulates a single SKU in Google Cloud Platform
   */
 @js.native
-trait SchemaSku extends js.Object {
+trait SchemaSku extends StObject {
   
   /**
     * The category hierarchy of this SKU, purely for organizational purpose.
@@ -59,66 +60,54 @@ object SchemaSku {
   }
   
   @scala.inline
-  implicit class SchemaSkuOps[Self <: SchemaSku] (val x: Self) extends AnyVal {
+  implicit class SchemaSkuMutableBuilder[Self <: SchemaSku] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: SchemaCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: SchemaCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPricingInfo(value: js.Array[SchemaPricingInfo]): Self = StObject.set(x, "pricingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPricingInfoUndefined: Self = StObject.set(x, "pricingInfo", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPricingInfoVarargs(value: SchemaPricingInfo*): Self = StObject.set(x, "pricingInfo", js.Array(value :_*))
     
     @scala.inline
-    def setPricingInfoVarargs(value: SchemaPricingInfo*): Self = this.set("pricingInfo", js.Array(value :_*))
+    def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingInfo(value: js.Array[SchemaPricingInfo]): Self = this.set("pricingInfo", value.asInstanceOf[js.Any])
+    def setServiceProviderNameUndefined: Self = StObject.set(x, "serviceProviderName", js.undefined)
     
     @scala.inline
-    def deletePricingInfo: Self = this.set("pricingInfo", js.undefined)
+    def setServiceRegions(value: js.Array[String]): Self = StObject.set(x, "serviceRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceProviderName(value: String): Self = this.set("serviceProviderName", value.asInstanceOf[js.Any])
+    def setServiceRegionsUndefined: Self = StObject.set(x, "serviceRegions", js.undefined)
     
     @scala.inline
-    def deleteServiceProviderName: Self = this.set("serviceProviderName", js.undefined)
+    def setServiceRegionsVarargs(value: String*): Self = StObject.set(x, "serviceRegions", js.Array(value :_*))
     
     @scala.inline
-    def setServiceRegionsVarargs(value: String*): Self = this.set("serviceRegions", js.Array(value :_*))
+    def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRegions(value: js.Array[String]): Self = this.set("serviceRegions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceRegions: Self = this.set("serviceRegions", js.undefined)
-    
-    @scala.inline
-    def setSkuId(value: String): Self = this.set("skuId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkuId: Self = this.set("skuId", js.undefined)
+    def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
   }
 }

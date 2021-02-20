@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
 import typings.vscodeLanguageserverTypes.mod.WorkspaceEdit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplyWorkspaceEditParams extends js.Object {
+trait ApplyWorkspaceEditParams extends StObject {
   
   /**
     * The edits to apply.
@@ -29,27 +30,15 @@ object ApplyWorkspaceEditParams {
   }
   
   @scala.inline
-  implicit class ApplyWorkspaceEditParamsOps[Self <: ApplyWorkspaceEditParams] (val x: Self) extends AnyVal {
+  implicit class ApplyWorkspaceEditParamsMutableBuilder[Self <: ApplyWorkspaceEditParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdit(value: WorkspaceEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEdit(value: WorkspaceEdit): Self = this.set("edit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

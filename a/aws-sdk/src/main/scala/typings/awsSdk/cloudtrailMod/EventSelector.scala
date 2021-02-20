@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventSelector extends js.Object {
+trait EventSelector extends StObject {
   
   /**
     * CloudTrail supports data event logging for Amazon S3 objects and AWS Lambda functions. You can specify up to 250 resources for an individual event selector, but the total number of data resources cannot exceed 250 across all event selectors in a trail. This limit does not apply if you configure resource logging for all data events.  For more information, see Data Events and Limits in AWS CloudTrail in the AWS CloudTrail User Guide.
@@ -36,48 +37,36 @@ object EventSelector {
   }
   
   @scala.inline
-  implicit class EventSelectorOps[Self <: EventSelector] (val x: Self) extends AnyVal {
+  implicit class EventSelectorMutableBuilder[Self <: EventSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataResources(value: DataResources): Self = StObject.set(x, "DataResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataResourcesUndefined: Self = StObject.set(x, "DataResources", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataResourcesVarargs(value: DataResource*): Self = StObject.set(x, "DataResources", js.Array(value :_*))
     
     @scala.inline
-    def setDataResourcesVarargs(value: DataResource*): Self = this.set("DataResources", js.Array(value :_*))
+    def setExcludeManagementEventSources(value: ExcludeManagementEventSources): Self = StObject.set(x, "ExcludeManagementEventSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataResources(value: DataResources): Self = this.set("DataResources", value.asInstanceOf[js.Any])
+    def setExcludeManagementEventSourcesUndefined: Self = StObject.set(x, "ExcludeManagementEventSources", js.undefined)
     
     @scala.inline
-    def deleteDataResources: Self = this.set("DataResources", js.undefined)
+    def setExcludeManagementEventSourcesVarargs(value: String*): Self = StObject.set(x, "ExcludeManagementEventSources", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeManagementEventSourcesVarargs(value: String*): Self = this.set("ExcludeManagementEventSources", js.Array(value :_*))
+    def setIncludeManagementEvents(value: Boolean): Self = StObject.set(x, "IncludeManagementEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeManagementEventSources(value: ExcludeManagementEventSources): Self = this.set("ExcludeManagementEventSources", value.asInstanceOf[js.Any])
+    def setIncludeManagementEventsUndefined: Self = StObject.set(x, "IncludeManagementEvents", js.undefined)
     
     @scala.inline
-    def deleteExcludeManagementEventSources: Self = this.set("ExcludeManagementEventSources", js.undefined)
+    def setReadWriteType(value: ReadWriteType): Self = StObject.set(x, "ReadWriteType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeManagementEvents(value: Boolean): Self = this.set("IncludeManagementEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeManagementEvents: Self = this.set("IncludeManagementEvents", js.undefined)
-    
-    @scala.inline
-    def setReadWriteType(value: ReadWriteType): Self = this.set("ReadWriteType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadWriteType: Self = this.set("ReadWriteType", js.undefined)
+    def setReadWriteTypeUndefined: Self = StObject.set(x, "ReadWriteType", js.undefined)
   }
 }

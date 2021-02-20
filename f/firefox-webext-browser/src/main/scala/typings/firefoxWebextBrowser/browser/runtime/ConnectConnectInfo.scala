@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectConnectInfo extends js.Object {
+trait ConnectConnectInfo extends StObject {
   
   /**
     * Whether the TLS channel ID will be passed into onConnectExternal for processes that are listening for the connection event.
@@ -24,30 +25,18 @@ object ConnectConnectInfo {
   }
   
   @scala.inline
-  implicit class ConnectConnectInfoOps[Self <: ConnectConnectInfo] (val x: Self) extends AnyVal {
+  implicit class ConnectConnectInfoMutableBuilder[Self <: ConnectConnectInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeTlsChannelId(value: Boolean): Self = StObject.set(x, "includeTlsChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeTlsChannelIdUndefined: Self = StObject.set(x, "includeTlsChannelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTlsChannelId(value: Boolean): Self = this.set("includeTlsChannelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeTlsChannelId: Self = this.set("includeTlsChannelId", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

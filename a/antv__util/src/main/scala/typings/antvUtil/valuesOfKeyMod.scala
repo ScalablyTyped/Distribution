@@ -1,12 +1,13 @@
 package typings.antvUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/util/lib/values-of-key", JSImport.Namespace)
-@js.native
-object valuesOfKeyMod extends js.Object {
+object valuesOfKeyMod {
   
+  @JSImport("@antv/util/lib/values-of-key", JSImport.Default)
+  @js.native
   def default(data: js.Array[_], name: String): js.Array[_] = js.native
 }

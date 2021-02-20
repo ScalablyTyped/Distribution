@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,24 +39,12 @@ object EditableItem {
   }
   
   @scala.inline
-  implicit class EditableItemOps[Self <: EditableItem] (val x: Self) extends AnyVal {
+  implicit class EditableItemMutableBuilder[Self <: EditableItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLayer(value: FeatureLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupports(value: String): Self = this.set("supports", value.asInstanceOf[js.Any])
+    def setSupports(value: String): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
   }
 }

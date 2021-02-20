@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Decimals extends js.Object {
+trait Decimals extends StObject {
   
   /**
     * To set the number of decimals that will be displayed. 0 | 1 |2 | ...
@@ -51,60 +52,48 @@ object Decimals {
   }
   
   @scala.inline
-  implicit class DecimalsOps[Self <: Decimals] (val x: Self) extends AnyVal {
+  implicit class DecimalsMutableBuilder[Self <: Decimals] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setFont-color`(value: js.Any): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimals(value: Double): Self = this.set("decimals", value.asInstanceOf[js.Any])
+    def `setFont-colorUndefined`: Self = StObject.set(x, "font-color", js.undefined)
     
     @scala.inline
-    def deleteDecimals: Self = this.set("decimals", js.undefined)
+    def `setFont-family`(value: String): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-color`(value: js.Any): Self = this.set("font-color", value.asInstanceOf[js.Any])
+    def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
     
     @scala.inline
-    def `deleteFont-color`: Self = this.set("font-color", js.undefined)
+    def `setFont-size`(value: Double): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-family`(value: String): Self = this.set("font-family", value.asInstanceOf[js.Any])
+    def `setFont-sizeUndefined`: Self = StObject.set(x, "font-size", js.undefined)
     
     @scala.inline
-    def `deleteFont-family`: Self = this.set("font-family", js.undefined)
+    def `setFont-style`(value: String): Self = StObject.set(x, "font-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-size`(value: Double): Self = this.set("font-size", value.asInstanceOf[js.Any])
+    def `setFont-styleUndefined`: Self = StObject.set(x, "font-style", js.undefined)
     
     @scala.inline
-    def `deleteFont-size`: Self = this.set("font-size", js.undefined)
+    def `setFont-weight`(value: String): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-style`(value: String): Self = this.set("font-style", value.asInstanceOf[js.Any])
+    def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
     
     @scala.inline
-    def `deleteFont-style`: Self = this.set("font-style", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-weight`(value: String): Self = this.set("font-weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteFont-weight`: Self = this.set("font-weight", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoundTripTimeStatistics extends js.Object {
+trait RoundTripTimeStatistics extends StObject {
   
   var max: Double = js.native
   
@@ -24,30 +25,18 @@ object RoundTripTimeStatistics {
   }
   
   @scala.inline
-  implicit class RoundTripTimeStatisticsOps[Self <: RoundTripTimeStatistics] (val x: Self) extends AnyVal {
+  implicit class RoundTripTimeStatisticsMutableBuilder[Self <: RoundTripTimeStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSum(value: Double): Self = this.set("sum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariance(value: Double): Self = this.set("variance", value.asInstanceOf[js.Any])
+    def setVariance(value: Double): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
   }
 }

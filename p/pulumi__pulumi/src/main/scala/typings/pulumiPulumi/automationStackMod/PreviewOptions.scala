@@ -2,12 +2,13 @@ package typings.pulumiPulumi.automationStackMod
 
 import typings.pulumiPulumi.workspaceMod.PulumiFn
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreviewOptions extends js.Object {
+trait PreviewOptions extends StObject {
   
   var expectNoChanges: js.UndefOr[Boolean] = js.native
   
@@ -32,66 +33,54 @@ object PreviewOptions {
   }
   
   @scala.inline
-  implicit class PreviewOptionsOps[Self <: PreviewOptions] (val x: Self) extends AnyVal {
+  implicit class PreviewOptionsMutableBuilder[Self <: PreviewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpectNoChanges(value: Boolean): Self = StObject.set(x, "expectNoChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpectNoChangesUndefined: Self = StObject.set(x, "expectNoChanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectNoChanges(value: Boolean): Self = this.set("expectNoChanges", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteExpectNoChanges: Self = this.set("expectNoChanges", js.undefined)
+    def setParallel(value: Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setProgram(value: () => js.Promise[(Record[String, js.Any]) | Unit]): Self = StObject.set(x, "program", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParallel(value: Double): Self = this.set("parallel", value.asInstanceOf[js.Any])
+    def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
     
     @scala.inline
-    def deleteParallel: Self = this.set("parallel", js.undefined)
+    def setReplace(value: js.Array[String]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgram(value: () => js.Promise[(Record[String, js.Any]) | Unit]): Self = this.set("program", js.Any.fromFunction0(value))
+    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
     @scala.inline
-    def deleteProgram: Self = this.set("program", js.undefined)
+    def setReplaceVarargs(value: String*): Self = StObject.set(x, "replace", js.Array(value :_*))
     
     @scala.inline
-    def setReplaceVarargs(value: String*): Self = this.set("replace", js.Array(value :_*))
+    def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplace(value: js.Array[String]): Self = this.set("replace", value.asInstanceOf[js.Any])
+    def setTargetDependents(value: Boolean): Self = StObject.set(x, "targetDependents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReplace: Self = this.set("replace", js.undefined)
+    def setTargetDependentsUndefined: Self = StObject.set(x, "targetDependents", js.undefined)
     
     @scala.inline
-    def setTargetVarargs(value: String*): Self = this.set("target", js.Array(value :_*))
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def setTarget(value: js.Array[String]): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setTargetDependents(value: Boolean): Self = this.set("targetDependents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetDependents: Self = this.set("targetDependents", js.undefined)
+    def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
   }
 }

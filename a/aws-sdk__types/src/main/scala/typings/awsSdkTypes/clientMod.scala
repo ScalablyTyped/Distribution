@@ -3,16 +3,15 @@ package typings.awsSdkTypes
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.awsSdkTypes.responseMod.MetadataBearer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/types/dist/cjs/client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
+object clientMod {
   
   @js.native
-  trait Client[Input /* <: js.Object */, Output /* <: MetadataBearer */, ResolvedClientConfiguration] extends js.Object {
+  trait Client[Input /* <: js.Object */, Output /* <: MetadataBearer */, ResolvedClientConfiguration] extends StObject {
     
     val config: ResolvedClientConfiguration = js.native
     
@@ -56,7 +55,7 @@ object clientMod extends js.Object {
     * function definition for different overrides of client's 'send' function.
     */
   @js.native
-  trait InvokeFunction[InputTypes /* <: js.Object */, OutputTypes /* <: MetadataBearer */, ResolvedClientConfiguration] extends js.Object {
+  trait InvokeFunction[InputTypes /* <: js.Object */, OutputTypes /* <: MetadataBearer */, ResolvedClientConfiguration] extends StObject {
     
     def apply[InputType /* <: InputTypes */, OutputType /* <: OutputTypes */](command: Command[InputTypes, InputType, OutputTypes, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType] | Unit = js.native
     def apply[InputType /* <: InputTypes */, OutputType /* <: OutputTypes */](

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,45 +79,33 @@ object BuildingFieldStatistics {
   }
   
   @scala.inline
-  implicit class BuildingFieldStatisticsOps[Self <: BuildingFieldStatistics] (val x: Self) extends AnyVal {
+  implicit class BuildingFieldStatisticsMutableBuilder[Self <: BuildingFieldStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMostFrequentValues(value: js.Array[Double | String]): Self = StObject.set(x, "mostFrequentValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMostFrequentValuesVarargs(value: (Double | String)*): Self = StObject.set(x, "mostFrequentValues", js.Array(value :_*))
     
     @scala.inline
-    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
+    def setSubLayerIds(value: js.Array[Double]): Self = StObject.set(x, "subLayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMostFrequentValuesVarargs(value: (Double | String)*): Self = this.set("mostFrequentValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setMostFrequentValues(value: js.Array[Double | String]): Self = this.set("mostFrequentValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubLayerIdsVarargs(value: Double*): Self = this.set("subLayerIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubLayerIds(value: js.Array[Double]): Self = this.set("subLayerIds", value.asInstanceOf[js.Any])
+    def setSubLayerIdsVarargs(value: Double*): Self = StObject.set(x, "subLayerIds", js.Array(value :_*))
   }
 }

@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.table.TableOrientation
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,45 +100,33 @@ object SheetFilterDescriptor {
   }
   
   @scala.inline
-  implicit class SheetFilterDescriptorOps[Self <: SheetFilterDescriptor] (val x: Self) extends AnyVal {
+  implicit class SheetFilterDescriptorMutableBuilder[Self <: SheetFilterDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyOutputData(value: Boolean): Self = StObject.set(x, "CopyOutputData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsHeader(value: Boolean): Self = this.set("ContainsHeader", value.asInstanceOf[js.Any])
+    def setMaxFieldCount(value: Double): Self = StObject.set(x, "MaxFieldCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyOutputData(value: Boolean): Self = this.set("CopyOutputData", value.asInstanceOf[js.Any])
+    def setOrientation(value: TableOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = this.set("IsCaseSensitive", value.asInstanceOf[js.Any])
+    def setOutputPosition(value: CellAddress): Self = StObject.set(x, "OutputPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFieldCount(value: Double): Self = this.set("MaxFieldCount", value.asInstanceOf[js.Any])
+    def setSaveOutputPosition(value: Boolean): Self = StObject.set(x, "SaveOutputPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: TableOrientation): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    def setSkipDuplicates(value: Boolean): Self = StObject.set(x, "SkipDuplicates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputPosition(value: CellAddress): Self = this.set("OutputPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaveOutputPosition(value: Boolean): Self = this.set("SaveOutputPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipDuplicates(value: Boolean): Self = this.set("SkipDuplicates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseRegularExpressions(value: Boolean): Self = this.set("UseRegularExpressions", value.asInstanceOf[js.Any])
+    def setUseRegularExpressions(value: Boolean): Self = StObject.set(x, "UseRegularExpressions", value.asInstanceOf[js.Any])
   }
 }

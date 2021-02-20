@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullAdditionalCallResolutionData extends js.Object {
+trait PullAdditionalCallResolutionData extends StObject {
   
   var actualParametersContextTypeSymbols: js.Array[PullTypeSymbol] = js.native
   
@@ -32,42 +33,30 @@ object PullAdditionalCallResolutionData {
   }
   
   @scala.inline
-  implicit class PullAdditionalCallResolutionDataOps[Self <: PullAdditionalCallResolutionData] (val x: Self) extends AnyVal {
+  implicit class PullAdditionalCallResolutionDataMutableBuilder[Self <: PullAdditionalCallResolutionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualParametersContextTypeSymbols(value: js.Array[PullTypeSymbol]): Self = StObject.set(x, "actualParametersContextTypeSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualParametersContextTypeSymbolsVarargs(value: PullTypeSymbol*): Self = StObject.set(x, "actualParametersContextTypeSymbols", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCandidateSignature(value: PullSignatureSymbol): Self = StObject.set(x, "candidateSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualParametersContextTypeSymbolsVarargs(value: PullTypeSymbol*): Self = this.set("actualParametersContextTypeSymbols", js.Array(value :_*))
+    def setDiagnosticsFromOverloadResolution(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnosticsFromOverloadResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualParametersContextTypeSymbols(value: js.Array[PullTypeSymbol]): Self = this.set("actualParametersContextTypeSymbols", value.asInstanceOf[js.Any])
+    def setDiagnosticsFromOverloadResolutionVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnosticsFromOverloadResolution", js.Array(value :_*))
     
     @scala.inline
-    def setCandidateSignature(value: PullSignatureSymbol): Self = this.set("candidateSignature", value.asInstanceOf[js.Any])
+    def setResolvedSignatures(value: js.Array[PullSignatureSymbol]): Self = StObject.set(x, "resolvedSignatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnosticsFromOverloadResolutionVarargs(value: Diagnostic*): Self = this.set("diagnosticsFromOverloadResolution", js.Array(value :_*))
+    def setResolvedSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "resolvedSignatures", js.Array(value :_*))
     
     @scala.inline
-    def setDiagnosticsFromOverloadResolution(value: js.Array[Diagnostic]): Self = this.set("diagnosticsFromOverloadResolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedSignaturesVarargs(value: PullSignatureSymbol*): Self = this.set("resolvedSignatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setResolvedSignatures(value: js.Array[PullSignatureSymbol]): Self = this.set("resolvedSignatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetSymbol(value: PullSymbol): Self = this.set("targetSymbol", value.asInstanceOf[js.Any])
+    def setTargetSymbol(value: PullSymbol): Self = StObject.set(x, "targetSymbol", value.asInstanceOf[js.Any])
   }
 }

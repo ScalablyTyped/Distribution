@@ -1,7 +1,8 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _ResolverKind extends js.Object
+trait _ResolverKind extends StObject

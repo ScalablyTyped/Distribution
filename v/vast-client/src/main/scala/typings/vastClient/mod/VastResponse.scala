@@ -1,11 +1,12 @@
 package typings.vastClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VastResponse extends js.Object {
+trait VastResponse extends StObject {
   
   var ads: js.Array[VastAd] = js.native
   
@@ -20,30 +21,18 @@ object VastResponse {
   }
   
   @scala.inline
-  implicit class VastResponseOps[Self <: VastResponse] (val x: Self) extends AnyVal {
+  implicit class VastResponseMutableBuilder[Self <: VastResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAds(value: js.Array[VastAd]): Self = StObject.set(x, "ads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdsVarargs(value: VastAd*): Self = StObject.set(x, "ads", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorURLTemplates(value: js.Array[String]): Self = StObject.set(x, "errorURLTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdsVarargs(value: VastAd*): Self = this.set("ads", js.Array(value :_*))
-    
-    @scala.inline
-    def setAds(value: js.Array[VastAd]): Self = this.set("ads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorURLTemplatesVarargs(value: String*): Self = this.set("errorURLTemplates", js.Array(value :_*))
-    
-    @scala.inline
-    def setErrorURLTemplates(value: js.Array[String]): Self = this.set("errorURLTemplates", value.asInstanceOf[js.Any])
+    def setErrorURLTemplatesVarargs(value: String*): Self = StObject.set(x, "errorURLTemplates", js.Array(value :_*))
   }
 }

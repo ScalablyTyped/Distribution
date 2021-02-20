@@ -1,16 +1,15 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Axes")
 @js.native
-class Axes () extends js.Object
+class Axes () extends StObject
 /* static members */
-@JSImport("matter-js", "Axes")
-@js.native
-object Axes extends js.Object {
+object Axes {
   
   /**
     * Creates a new set of axes from the given vertices.
@@ -18,6 +17,8 @@ object Axes extends js.Object {
     * @param {vertices} vertices
     * @return {axes} A new axes from the given vertices
     */
+  @JSImport("matter-js", "Axes.fromVertices")
+  @js.native
   def fromVertices(vertices: js.Array[Vector]): js.Array[Vector] = js.native
   
   /**
@@ -26,5 +27,7 @@ object Axes extends js.Object {
     * @param {axes} axes
     * @param {number} angle
     */
+  @JSImport("matter-js", "Axes.rotate")
+  @js.native
   def rotate(axes: js.Array[Vector], angle: Double): Unit = js.native
 }

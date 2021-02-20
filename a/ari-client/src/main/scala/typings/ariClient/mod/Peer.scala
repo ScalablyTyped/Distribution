@@ -1,11 +1,12 @@
 package typings.ariClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Peer extends js.Object {
+trait Peer extends StObject {
   
   /**
     * The IP address of the peer.
@@ -41,45 +42,33 @@ object Peer {
   }
   
   @scala.inline
-  implicit class PeerOps[Self <: Peer] (val x: Self) extends AnyVal {
+  implicit class PeerMutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeer_status(value: String): Self = this.set("peer_status", value.asInstanceOf[js.Any])
+    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setPeer_status(value: String): Self = StObject.set(x, "peer_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCause(value: String): Self = this.set("cause", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deleteCause: Self = this.set("cause", js.undefined)
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

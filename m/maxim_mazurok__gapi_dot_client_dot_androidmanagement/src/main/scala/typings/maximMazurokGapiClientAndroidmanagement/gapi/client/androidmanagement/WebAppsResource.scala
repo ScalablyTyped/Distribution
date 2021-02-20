@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientAndroidmanagement.anon.PrettyPrint
 import typings.maximMazurokGapiClientAndroidmanagement.anon.QuotaUser
 import typings.maximMazurokGapiClientAndroidmanagement.anon.UpdateMask
 import typings.maximMazurokGapiClientAndroidmanagement.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAppsResource extends js.Object {
+trait WebAppsResource extends StObject {
   
   def create(request: QuotaUser, body: WebApp): Request[WebApp] = js.native
   /** Creates a web app. */

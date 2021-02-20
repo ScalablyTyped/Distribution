@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationSource extends js.Object {
+trait ApplicationSource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of a AWS CloudFormation stack.
@@ -26,33 +27,21 @@ object ApplicationSource {
   }
   
   @scala.inline
-  implicit class ApplicationSourceOps[Self <: ApplicationSource] (val x: Self) extends AnyVal {
+  implicit class ApplicationSourceMutableBuilder[Self <: ApplicationSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudFormationStackARN(value: XmlString): Self = StObject.set(x, "CloudFormationStackARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudFormationStackARNUndefined: Self = StObject.set(x, "CloudFormationStackARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagFilters(value: TagFilters): Self = StObject.set(x, "TagFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudFormationStackARN(value: XmlString): Self = this.set("CloudFormationStackARN", value.asInstanceOf[js.Any])
+    def setTagFiltersUndefined: Self = StObject.set(x, "TagFilters", js.undefined)
     
     @scala.inline
-    def deleteCloudFormationStackARN: Self = this.set("CloudFormationStackARN", js.undefined)
-    
-    @scala.inline
-    def setTagFiltersVarargs(value: TagFilter*): Self = this.set("TagFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagFilters(value: TagFilters): Self = this.set("TagFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagFilters: Self = this.set("TagFilters", js.undefined)
+    def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "TagFilters", js.Array(value :_*))
   }
 }

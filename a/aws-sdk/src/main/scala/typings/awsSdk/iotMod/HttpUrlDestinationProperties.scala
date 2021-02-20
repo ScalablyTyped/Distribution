@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpUrlDestinationProperties extends js.Object {
+trait HttpUrlDestinationProperties extends StObject {
   
   /**
     * The URL used to confirm the HTTP topic rule destination URL.
@@ -21,24 +22,12 @@ object HttpUrlDestinationProperties {
   }
   
   @scala.inline
-  implicit class HttpUrlDestinationPropertiesOps[Self <: HttpUrlDestinationProperties] (val x: Self) extends AnyVal {
+  implicit class HttpUrlDestinationPropertiesMutableBuilder[Self <: HttpUrlDestinationProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmationUrl(value: Url): Self = StObject.set(x, "confirmationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfirmationUrl(value: Url): Self = this.set("confirmationUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfirmationUrl: Self = this.set("confirmationUrl", js.undefined)
+    def setConfirmationUrlUndefined: Self = StObject.set(x, "confirmationUrl", js.undefined)
   }
 }

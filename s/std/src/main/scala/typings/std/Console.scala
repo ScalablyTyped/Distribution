@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Console extends js.Object {
+trait Console extends StObject {
   
   def assert(condition: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
   def assert(condition: scala.Boolean, data: js.Any*): Unit = js.native

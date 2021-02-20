@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationAggregator extends js.Object {
+trait ConfigurationAggregator extends StObject {
   
   /**
     * Provides a list of source accounts and regions to be aggregated.
@@ -51,63 +52,51 @@ object ConfigurationAggregator {
   }
   
   @scala.inline
-  implicit class ConfigurationAggregatorOps[Self <: ConfigurationAggregator] (val x: Self) extends AnyVal {
+  implicit class ConfigurationAggregatorMutableBuilder[Self <: ConfigurationAggregator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountAggregationSources(value: AccountAggregationSourceList): Self = StObject.set(x, "AccountAggregationSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountAggregationSourcesUndefined: Self = StObject.set(x, "AccountAggregationSources", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountAggregationSourcesVarargs(value: AccountAggregationSource*): Self = StObject.set(x, "AccountAggregationSources", js.Array(value :_*))
     
     @scala.inline
-    def setAccountAggregationSourcesVarargs(value: AccountAggregationSource*): Self = this.set("AccountAggregationSources", js.Array(value :_*))
+    def setConfigurationAggregatorArn(value: ConfigurationAggregatorArn): Self = StObject.set(x, "ConfigurationAggregatorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountAggregationSources(value: AccountAggregationSourceList): Self = this.set("AccountAggregationSources", value.asInstanceOf[js.Any])
+    def setConfigurationAggregatorArnUndefined: Self = StObject.set(x, "ConfigurationAggregatorArn", js.undefined)
     
     @scala.inline
-    def deleteAccountAggregationSources: Self = this.set("AccountAggregationSources", js.undefined)
+    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationAggregatorArn(value: ConfigurationAggregatorArn): Self = this.set("ConfigurationAggregatorArn", value.asInstanceOf[js.Any])
+    def setConfigurationAggregatorNameUndefined: Self = StObject.set(x, "ConfigurationAggregatorName", js.undefined)
     
     @scala.inline
-    def deleteConfigurationAggregatorArn: Self = this.set("ConfigurationAggregatorArn", js.undefined)
+    def setCreatedBy(value: StringWithCharLimit256): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = this.set("ConfigurationAggregatorName", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
     @scala.inline
-    def deleteConfigurationAggregatorName: Self = this.set("ConfigurationAggregatorName", js.undefined)
+    def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: StringWithCharLimit256): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    def setLastUpdatedTime(value: Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Date): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setOrganizationAggregationSource(value: OrganizationAggregationSource): Self = StObject.set(x, "OrganizationAggregationSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTime(value: Date): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
-    
-    @scala.inline
-    def setOrganizationAggregationSource(value: OrganizationAggregationSource): Self = this.set("OrganizationAggregationSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationAggregationSource: Self = this.set("OrganizationAggregationSource", js.undefined)
+    def setOrganizationAggregationSourceUndefined: Self = StObject.set(x, "OrganizationAggregationSource", js.undefined)
   }
 }

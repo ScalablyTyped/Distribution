@@ -1,5 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about a single cluster for clustering model.
   */
 @js.native
-trait SchemaClusterInfo extends js.Object {
+trait SchemaClusterInfo extends StObject {
   
   /**
     * Centroid id.
@@ -35,36 +36,24 @@ object SchemaClusterInfo {
   }
   
   @scala.inline
-  implicit class SchemaClusterInfoOps[Self <: SchemaClusterInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaClusterInfoMutableBuilder[Self <: SchemaClusterInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCentroidId(value: String): Self = StObject.set(x, "centroidId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCentroidIdUndefined: Self = StObject.set(x, "centroidId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterRadius(value: Double): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCentroidId(value: String): Self = this.set("centroidId", value.asInstanceOf[js.Any])
+    def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
     
     @scala.inline
-    def deleteCentroidId: Self = this.set("centroidId", js.undefined)
+    def setClusterSize(value: String): Self = StObject.set(x, "clusterSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterRadius(value: Double): Self = this.set("clusterRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterRadius: Self = this.set("clusterRadius", js.undefined)
-    
-    @scala.inline
-    def setClusterSize(value: String): Self = this.set("clusterSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterSize: Self = this.set("clusterSize", js.undefined)
+    def setClusterSizeUndefined: Self = StObject.set(x, "clusterSize", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.antdMobileRn.anon
 
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Container extends js.Object {
+trait Container extends StObject {
   
   var container: ViewStyle = js.native
   
@@ -111,111 +112,99 @@ object Container {
   }
   
   @scala.inline
-  implicit class ContainerOps[Self <: Container] (val x: Self) extends AnyVal {
+  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultDisabledRaw(value: BorderColor): Self = StObject.set(x, "defaultDisabledRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultDisabledRawText(value: ColorString): Self = StObject.set(x, "defaultDisabledRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDefaultHighlight(value: BorderColor): Self = StObject.set(x, "defaultHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDisabledRaw(value: BorderColor): Self = this.set("defaultDisabledRaw", value.asInstanceOf[js.Any])
+    def setDefaultHighlightText(value: ColorString): Self = StObject.set(x, "defaultHighlightText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDisabledRawText(value: ColorString): Self = this.set("defaultDisabledRawText", value.asInstanceOf[js.Any])
+    def setDefaultRaw(value: BorderColor): Self = StObject.set(x, "defaultRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHighlight(value: BorderColor): Self = this.set("defaultHighlight", value.asInstanceOf[js.Any])
+    def setDefaultRawText(value: ColorString): Self = StObject.set(x, "defaultRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHighlightText(value: ColorString): Self = this.set("defaultHighlightText", value.asInstanceOf[js.Any])
+    def setGhostDisabledRaw(value: BorderColorString): Self = StObject.set(x, "ghostDisabledRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRaw(value: BorderColor): Self = this.set("defaultRaw", value.asInstanceOf[js.Any])
+    def setGhostDisabledRawText(value: ColorString): Self = StObject.set(x, "ghostDisabledRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRawText(value: ColorString): Self = this.set("defaultRawText", value.asInstanceOf[js.Any])
+    def setGhostHighlight(value: BorderColor): Self = StObject.set(x, "ghostHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhostDisabledRaw(value: BorderColorString): Self = this.set("ghostDisabledRaw", value.asInstanceOf[js.Any])
+    def setGhostHighlightText(value: ColorString): Self = StObject.set(x, "ghostHighlightText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhostDisabledRawText(value: ColorString): Self = this.set("ghostDisabledRawText", value.asInstanceOf[js.Any])
+    def setGhostRaw(value: BorderColor): Self = StObject.set(x, "ghostRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhostHighlight(value: BorderColor): Self = this.set("ghostHighlight", value.asInstanceOf[js.Any])
+    def setGhostRawText(value: ColorString): Self = StObject.set(x, "ghostRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhostHighlightText(value: ColorString): Self = this.set("ghostHighlightText", value.asInstanceOf[js.Any])
+    def setIndicator(value: MarginRight): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhostRaw(value: BorderColor): Self = this.set("ghostRaw", value.asInstanceOf[js.Any])
+    def setLargeRaw(value: PaddingLeft): Self = StObject.set(x, "largeRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhostRawText(value: ColorString): Self = this.set("ghostRawText", value.asInstanceOf[js.Any])
+    def setLargeRawText(value: FontSizeNumber): Self = StObject.set(x, "largeRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicator(value: MarginRight): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    def setPrimaryDisabledRaw(value: Opacity): Self = StObject.set(x, "primaryDisabledRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargeRaw(value: PaddingLeft): Self = this.set("largeRaw", value.asInstanceOf[js.Any])
+    def setPrimaryDisabledRawText(value: ColorString): Self = StObject.set(x, "primaryDisabledRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargeRawText(value: FontSizeNumber): Self = this.set("largeRawText", value.asInstanceOf[js.Any])
+    def setPrimaryHighlight(value: BorderColor): Self = StObject.set(x, "primaryHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryDisabledRaw(value: Opacity): Self = this.set("primaryDisabledRaw", value.asInstanceOf[js.Any])
+    def setPrimaryHighlightText(value: ColorString): Self = StObject.set(x, "primaryHighlightText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryDisabledRawText(value: ColorString): Self = this.set("primaryDisabledRawText", value.asInstanceOf[js.Any])
+    def setPrimaryRaw(value: BorderColor): Self = StObject.set(x, "primaryRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryHighlight(value: BorderColor): Self = this.set("primaryHighlight", value.asInstanceOf[js.Any])
+    def setPrimaryRawText(value: ColorString): Self = StObject.set(x, "primaryRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryHighlightText(value: ColorString): Self = this.set("primaryHighlightText", value.asInstanceOf[js.Any])
+    def setSmallRaw(value: PaddingLeft): Self = StObject.set(x, "smallRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryRaw(value: BorderColor): Self = this.set("primaryRaw", value.asInstanceOf[js.Any])
+    def setSmallRawText(value: FontSizeNumber): Self = StObject.set(x, "smallRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryRawText(value: ColorString): Self = this.set("primaryRawText", value.asInstanceOf[js.Any])
+    def setWarningDisabledRaw(value: Opacity): Self = StObject.set(x, "warningDisabledRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallRaw(value: PaddingLeft): Self = this.set("smallRaw", value.asInstanceOf[js.Any])
+    def setWarningDisabledRawText(value: ColorString): Self = StObject.set(x, "warningDisabledRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallRawText(value: FontSizeNumber): Self = this.set("smallRawText", value.asInstanceOf[js.Any])
+    def setWarningHighlight(value: BorderColor): Self = StObject.set(x, "warningHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarningDisabledRaw(value: Opacity): Self = this.set("warningDisabledRaw", value.asInstanceOf[js.Any])
+    def setWarningHighlightText(value: ColorString): Self = StObject.set(x, "warningHighlightText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarningDisabledRawText(value: ColorString): Self = this.set("warningDisabledRawText", value.asInstanceOf[js.Any])
+    def setWarningRaw(value: BorderColor): Self = StObject.set(x, "warningRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarningHighlight(value: BorderColor): Self = this.set("warningHighlight", value.asInstanceOf[js.Any])
+    def setWarningRawText(value: ColorString): Self = StObject.set(x, "warningRawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarningHighlightText(value: ColorString): Self = this.set("warningHighlightText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarningRaw(value: BorderColor): Self = this.set("warningRaw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarningRawText(value: ColorString): Self = this.set("warningRawText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapperStyle(value: BorderWidth): Self = this.set("wrapperStyle", value.asInstanceOf[js.Any])
+    def setWrapperStyle(value: BorderWidth): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
   }
 }

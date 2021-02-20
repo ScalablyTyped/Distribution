@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     textItem.setValidation(textValidation);
   */
 @js.native
-trait TextValidationBuilder extends js.Object {
+trait TextValidationBuilder extends StObject {
   
   def requireNumber(): TextValidationBuilder = js.native
   
@@ -82,72 +83,60 @@ object TextValidationBuilder {
   }
   
   @scala.inline
-  implicit class TextValidationBuilderOps[Self <: TextValidationBuilder] (val x: Self) extends AnyVal {
+  implicit class TextValidationBuilderMutableBuilder[Self <: TextValidationBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequireNumber(value: () => TextValidationBuilder): Self = StObject.set(x, "requireNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequireNumberBetween(value: (Double, Double) => TextValidationBuilder): Self = StObject.set(x, "requireNumberBetween", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequireNumberEqualTo(value: Double => TextValidationBuilder): Self = StObject.set(x, "requireNumberEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireNumber(value: () => TextValidationBuilder): Self = this.set("requireNumber", js.Any.fromFunction0(value))
+    def setRequireNumberGreaterThan(value: Double => TextValidationBuilder): Self = StObject.set(x, "requireNumberGreaterThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireNumberBetween(value: (Double, Double) => TextValidationBuilder): Self = this.set("requireNumberBetween", js.Any.fromFunction2(value))
+    def setRequireNumberGreaterThanOrEqualTo(value: Double => TextValidationBuilder): Self = StObject.set(x, "requireNumberGreaterThanOrEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireNumberEqualTo(value: Double => TextValidationBuilder): Self = this.set("requireNumberEqualTo", js.Any.fromFunction1(value))
+    def setRequireNumberLessThan(value: Double => TextValidationBuilder): Self = StObject.set(x, "requireNumberLessThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireNumberGreaterThan(value: Double => TextValidationBuilder): Self = this.set("requireNumberGreaterThan", js.Any.fromFunction1(value))
+    def setRequireNumberLessThanOrEqualTo(value: Double => TextValidationBuilder): Self = StObject.set(x, "requireNumberLessThanOrEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireNumberGreaterThanOrEqualTo(value: Double => TextValidationBuilder): Self = this.set("requireNumberGreaterThanOrEqualTo", js.Any.fromFunction1(value))
+    def setRequireNumberNotBetween(value: (Double, Double) => TextValidationBuilder): Self = StObject.set(x, "requireNumberNotBetween", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRequireNumberLessThan(value: Double => TextValidationBuilder): Self = this.set("requireNumberLessThan", js.Any.fromFunction1(value))
+    def setRequireNumberNotEqualTo(value: Double => TextValidationBuilder): Self = StObject.set(x, "requireNumberNotEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireNumberLessThanOrEqualTo(value: Double => TextValidationBuilder): Self = this.set("requireNumberLessThanOrEqualTo", js.Any.fromFunction1(value))
+    def setRequireTextContainsPattern(value: String => TextValidationBuilder): Self = StObject.set(x, "requireTextContainsPattern", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireNumberNotBetween(value: (Double, Double) => TextValidationBuilder): Self = this.set("requireNumberNotBetween", js.Any.fromFunction2(value))
+    def setRequireTextDoesNotContainPattern(value: String => TextValidationBuilder): Self = StObject.set(x, "requireTextDoesNotContainPattern", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireNumberNotEqualTo(value: Double => TextValidationBuilder): Self = this.set("requireNumberNotEqualTo", js.Any.fromFunction1(value))
+    def setRequireTextDoesNotMatchPattern(value: String => TextValidationBuilder): Self = StObject.set(x, "requireTextDoesNotMatchPattern", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireTextContainsPattern(value: String => TextValidationBuilder): Self = this.set("requireTextContainsPattern", js.Any.fromFunction1(value))
+    def setRequireTextIsEmail(value: () => TextValidationBuilder): Self = StObject.set(x, "requireTextIsEmail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRequireTextDoesNotContainPattern(value: String => TextValidationBuilder): Self = this.set("requireTextDoesNotContainPattern", js.Any.fromFunction1(value))
+    def setRequireTextIsUrl(value: () => TextValidationBuilder): Self = StObject.set(x, "requireTextIsUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRequireTextDoesNotMatchPattern(value: String => TextValidationBuilder): Self = this.set("requireTextDoesNotMatchPattern", js.Any.fromFunction1(value))
+    def setRequireTextLengthGreaterThanOrEqualTo(value: Integer => TextValidationBuilder): Self = StObject.set(x, "requireTextLengthGreaterThanOrEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireTextIsEmail(value: () => TextValidationBuilder): Self = this.set("requireTextIsEmail", js.Any.fromFunction0(value))
+    def setRequireTextLengthLessThanOrEqualTo(value: Integer => TextValidationBuilder): Self = StObject.set(x, "requireTextLengthLessThanOrEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireTextIsUrl(value: () => TextValidationBuilder): Self = this.set("requireTextIsUrl", js.Any.fromFunction0(value))
+    def setRequireTextMatchesPattern(value: String => TextValidationBuilder): Self = StObject.set(x, "requireTextMatchesPattern", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequireTextLengthGreaterThanOrEqualTo(value: Integer => TextValidationBuilder): Self = this.set("requireTextLengthGreaterThanOrEqualTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequireTextLengthLessThanOrEqualTo(value: Integer => TextValidationBuilder): Self = this.set("requireTextLengthLessThanOrEqualTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequireTextMatchesPattern(value: String => TextValidationBuilder): Self = this.set("requireTextMatchesPattern", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequireWholeNumber(value: () => TextValidationBuilder): Self = this.set("requireWholeNumber", js.Any.fromFunction0(value))
+    def setRequireWholeNumber(value: () => TextValidationBuilder): Self = StObject.set(x, "requireWholeNumber", js.Any.fromFunction0(value))
   }
 }

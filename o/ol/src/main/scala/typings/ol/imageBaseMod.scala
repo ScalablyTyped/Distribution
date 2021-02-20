@@ -5,13 +5,19 @@ import typings.ol.imageStateMod.ImageState
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/ImageBase", JSImport.Namespace)
-@js.native
-object imageBaseMod extends js.Object {
+object imageBaseMod {
+  
+  @JSImport("ol/ImageBase", JSImport.Default)
+  @js.native
+  abstract class default protected () extends ImageBase {
+    def this(extent: Extent, resolution: js.UndefOr[scala.Nothing], pixelRatio: Double, state: ImageState) = this()
+    def this(extent: Extent, resolution: Double, pixelRatio: Double, state: ImageState) = this()
+  }
   
   @js.native
   trait ImageBase
@@ -39,11 +45,5 @@ object imageBaseMod extends js.Object {
     var resolution: Double = js.native
     
     var state: ImageState = js.native
-  }
-  
-  @js.native
-  abstract class default protected () extends ImageBase {
-    def this(extent: Extent, resolution: js.UndefOr[scala.Nothing], pixelRatio: Double, state: ImageState) = this()
-    def this(extent: Extent, resolution: Double, pixelRatio: Double, state: ImageState) = this()
   }
 }

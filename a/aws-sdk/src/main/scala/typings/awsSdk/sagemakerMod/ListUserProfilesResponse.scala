@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUserProfilesResponse extends js.Object {
+trait ListUserProfilesResponse extends StObject {
   
   /**
     * If the previous response was truncated, you will receive this token. Use it in your next request to receive the next set of results.
@@ -26,33 +27,21 @@ object ListUserProfilesResponse {
   }
   
   @scala.inline
-  implicit class ListUserProfilesResponseOps[Self <: ListUserProfilesResponse] (val x: Self) extends AnyVal {
+  implicit class ListUserProfilesResponseMutableBuilder[Self <: ListUserProfilesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserProfiles(value: UserProfileList): Self = StObject.set(x, "UserProfiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setUserProfilesUndefined: Self = StObject.set(x, "UserProfiles", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setUserProfilesVarargs(value: UserProfileDetails*): Self = this.set("UserProfiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserProfiles(value: UserProfileList): Self = this.set("UserProfiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProfiles: Self = this.set("UserProfiles", js.undefined)
+    def setUserProfilesVarargs(value: UserProfileDetails*): Self = StObject.set(x, "UserProfiles", js.Array(value :_*))
   }
 }

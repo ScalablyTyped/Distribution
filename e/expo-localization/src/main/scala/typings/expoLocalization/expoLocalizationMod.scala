@@ -1,29 +1,41 @@
 package typings.expoLocalization
 
 import typings.expoLocalization.localizationTypesMod.Localization
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo-localization/build/ExpoLocalization", JSImport.Namespace)
-@js.native
-object expoLocalizationMod extends js.Object {
+object expoLocalizationMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("expo-localization/build/ExpoLocalization", "default.getLocalizationAsync")
+    @js.native
     def getLocalizationAsync(): js.Promise[Localization] = js.native
     
+    @JSImport("expo-localization/build/ExpoLocalization", "default.isRTL")
+    @js.native
     val isRTL: Boolean = js.native
     
+    @JSImport("expo-localization/build/ExpoLocalization", "default.isoCurrencyCodes")
+    @js.native
     val isoCurrencyCodes: js.Array[String] = js.native
     
+    @JSImport("expo-localization/build/ExpoLocalization", "default.locale")
+    @js.native
     val locale: String = js.native
     
+    @JSImport("expo-localization/build/ExpoLocalization", "default.locales")
+    @js.native
     val locales: js.Array[String] = js.native
     
+    @JSImport("expo-localization/build/ExpoLocalization", "default.region")
+    @js.native
     val region: String | Null = js.native
     
+    @JSImport("expo-localization/build/ExpoLocalization", "default.timezone")
+    @js.native
     val timezone: String = js.native
   }
 }

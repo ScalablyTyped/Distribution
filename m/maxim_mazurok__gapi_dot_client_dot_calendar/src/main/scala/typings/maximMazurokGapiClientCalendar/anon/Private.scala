@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCalendar.anon
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Private extends js.Object {
+trait Private extends StObject {
   
   /** Properties that are private to the copy of the event that appears on this calendar. */
   var `private`: js.UndefOr[
@@ -31,38 +32,26 @@ object Private {
   }
   
   @scala.inline
-  implicit class PrivateOps[Self <: Private] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class PrivateMutableBuilder[Self <: Private] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setPrivate(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private with TopLevel[js.Any]
-    ): Self = this.set("private", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivate: Self = this.set("private", js.undefined)
+    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
     @scala.inline
     def setShared(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private with TopLevel[js.Any]
-    ): Self = this.set("shared", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
   }
 }

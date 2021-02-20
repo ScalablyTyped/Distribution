@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,42 +46,30 @@ object ParamsResourceActionresultsGet {
   }
   
   @scala.inline
-  implicit class ParamsResourceActionresultsGetOps[Self <: ParamsResourceActionresultsGet] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceActionresultsGetMutableBuilder[Self <: ParamsResourceActionresultsGet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceName(value: String): Self = this.set("instanceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
-    
-    @scala.inline
-    def setSizeBytes(value: String): Self = this.set("sizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeBytes: Self = this.set("sizeBytes", js.undefined)
+    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

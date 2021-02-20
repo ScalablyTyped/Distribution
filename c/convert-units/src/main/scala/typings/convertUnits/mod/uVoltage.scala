@@ -1,15 +1,17 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Parts-Per
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.V
   - typings.convertUnits.convertUnitsStrings.mV
   - typings.convertUnits.convertUnitsStrings.kV
 */
-trait uVoltage extends js.Object
+trait uVoltage extends StObject
 object uVoltage {
   
   @scala.inline

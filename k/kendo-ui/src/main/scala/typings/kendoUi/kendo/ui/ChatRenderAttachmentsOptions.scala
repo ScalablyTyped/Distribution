@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChatRenderAttachmentsOptions extends js.Object {
+trait ChatRenderAttachmentsOptions extends StObject {
   
   var attachmentLayout: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object ChatRenderAttachmentsOptions {
   }
   
   @scala.inline
-  implicit class ChatRenderAttachmentsOptionsOps[Self <: ChatRenderAttachmentsOptions] (val x: Self) extends AnyVal {
+  implicit class ChatRenderAttachmentsOptionsMutableBuilder[Self <: ChatRenderAttachmentsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentLayout(value: String): Self = StObject.set(x, "attachmentLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentLayoutUndefined: Self = StObject.set(x, "attachmentLayout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachments(value: ChatRenderAttachmentsOptionsAttachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentLayout(value: String): Self = this.set("attachmentLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachmentLayout: Self = this.set("attachmentLayout", js.undefined)
-    
-    @scala.inline
-    def setAttachments(value: ChatRenderAttachmentsOptionsAttachments): Self = this.set("attachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
   }
 }

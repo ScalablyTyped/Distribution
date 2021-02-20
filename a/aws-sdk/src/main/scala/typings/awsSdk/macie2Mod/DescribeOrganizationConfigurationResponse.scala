@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeOrganizationConfigurationResponse extends js.Object {
+trait DescribeOrganizationConfigurationResponse extends StObject {
   
   /**
     * Specifies whether Amazon Macie is enabled automatically for accounts that are added to the AWS organization.
@@ -26,30 +27,18 @@ object DescribeOrganizationConfigurationResponse {
   }
   
   @scala.inline
-  implicit class DescribeOrganizationConfigurationResponseOps[Self <: DescribeOrganizationConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeOrganizationConfigurationResponseMutableBuilder[Self <: DescribeOrganizationConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoEnable(value: boolean): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoEnableUndefined: Self = StObject.set(x, "autoEnable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxAccountLimitReached(value: boolean): Self = StObject.set(x, "maxAccountLimitReached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoEnable(value: boolean): Self = this.set("autoEnable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoEnable: Self = this.set("autoEnable", js.undefined)
-    
-    @scala.inline
-    def setMaxAccountLimitReached(value: boolean): Self = this.set("maxAccountLimitReached", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAccountLimitReached: Self = this.set("maxAccountLimitReached", js.undefined)
+    def setMaxAccountLimitReachedUndefined: Self = StObject.set(x, "maxAccountLimitReached", js.undefined)
   }
 }

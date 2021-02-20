@@ -5,16 +5,16 @@ import typings.awsSdkClientSqsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientSqsNode.sqsconfigurationMod.SQSConfiguration
 import typings.awsSdkClientSqsNode.sqsconfigurationMod.SQSResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/SQSClient", JSImport.Namespace)
-@js.native
-object sqsclientMod extends js.Object {
+object sqsclientMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/SQSClient", "SQSClient")
   @js.native
-  class SQSClient protected () extends js.Object {
+  class SQSClient protected () extends StObject {
     def this(configuration: SQSConfiguration) = this()
     
     val config: SQSResolvedConfiguration = js.native

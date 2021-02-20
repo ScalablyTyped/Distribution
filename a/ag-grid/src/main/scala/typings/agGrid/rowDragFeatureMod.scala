@@ -4,14 +4,14 @@ import typings.agGrid.dragAndDropServiceMod.DraggingEvent
 import typings.agGrid.dragAndDropServiceMod.DropTarget
 import typings.agGrid.gridPanelMod.GridPanel
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/gridPanel/rowDragFeature", JSImport.Namespace)
-@js.native
-object rowDragFeatureMod extends js.Object {
+object rowDragFeatureMod {
   
+  @JSImport("ag-grid/dist/lib/gridPanel/rowDragFeature", "RowDragFeature")
   @js.native
   class RowDragFeature protected () extends DropTarget {
     def this(eContainer: HTMLElement, gridPanel: GridPanel) = this()

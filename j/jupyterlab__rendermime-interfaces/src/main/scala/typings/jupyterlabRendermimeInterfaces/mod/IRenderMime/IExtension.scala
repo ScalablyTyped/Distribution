@@ -2,6 +2,7 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import typings.jupyterlabRendermimeInterfaces.jupyterlabRendermimeInterfacesStrings.json
 import typings.jupyterlabRendermimeInterfaces.jupyterlabRendermimeInterfacesStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An interface for using a RenderMime.IRenderer for output and read-only documents.
   */
 @js.native
-trait IExtension extends js.Object {
+trait IExtension extends StObject {
   
   /**
     * Preferred data type from the model.  Defaults to `string`.
@@ -62,60 +63,48 @@ object IExtension {
   }
   
   @scala.inline
-  implicit class IExtensionOps[Self <: IExtension] (val x: Self) extends AnyVal {
+  implicit class IExtensionMutableBuilder[Self <: IExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataType(value: string | json): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentWidgetFactoryOptions(value: IDocumentWidgetFactoryOptions | js.Array[IDocumentWidgetFactoryOptions]): Self = StObject.set(x, "documentWidgetFactoryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDocumentWidgetFactoryOptionsUndefined: Self = StObject.set(x, "documentWidgetFactoryOptions", js.undefined)
     
     @scala.inline
-    def setRendererFactory(value: IRendererFactory): Self = this.set("rendererFactory", value.asInstanceOf[js.Any])
+    def setDocumentWidgetFactoryOptionsVarargs(value: IDocumentWidgetFactoryOptions*): Self = StObject.set(x, "documentWidgetFactoryOptions", js.Array(value :_*))
     
     @scala.inline
-    def setDataType(value: string | json): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setFileTypes(value: js.Array[IFileType]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
     @scala.inline
-    def setDocumentWidgetFactoryOptionsVarargs(value: IDocumentWidgetFactoryOptions*): Self = this.set("documentWidgetFactoryOptions", js.Array(value :_*))
+    def setFileTypesVarargs(value: IFileType*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentWidgetFactoryOptions(value: IDocumentWidgetFactoryOptions | js.Array[IDocumentWidgetFactoryOptions]): Self = this.set("documentWidgetFactoryOptions", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentWidgetFactoryOptions: Self = this.set("documentWidgetFactoryOptions", js.undefined)
+    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileTypesVarargs(value: IFileType*): Self = this.set("fileTypes", js.Array(value :_*))
+    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
     @scala.inline
-    def setFileTypes(value: js.Array[IFileType]): Self = this.set("fileTypes", value.asInstanceOf[js.Any])
+    def setRenderTimeout(value: Double): Self = StObject.set(x, "renderTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileTypes: Self = this.set("fileTypes", js.undefined)
+    def setRenderTimeoutUndefined: Self = StObject.set(x, "renderTimeout", js.undefined)
     
     @scala.inline
-    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRank: Self = this.set("rank", js.undefined)
-    
-    @scala.inline
-    def setRenderTimeout(value: Double): Self = this.set("renderTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderTimeout: Self = this.set("renderTimeout", js.undefined)
+    def setRendererFactory(value: IRendererFactory): Self = StObject.set(x, "rendererFactory", value.asInstanceOf[js.Any])
   }
 }

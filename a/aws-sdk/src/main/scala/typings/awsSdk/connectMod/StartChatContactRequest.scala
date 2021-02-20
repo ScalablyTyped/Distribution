@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartChatContactRequest extends js.Object {
+trait StartChatContactRequest extends StObject {
   
   /**
     * A custom key-value pair using an attribute map. The attributes are standard Amazon Connect attributes, and can be accessed in contact flows just like any other contact attributes.  There can be up to 32,768 UTF-8 bytes across all key-value pairs per contact. Attribute keys can include only alphanumeric, dash, and underscore characters.
@@ -46,45 +47,33 @@ object StartChatContactRequest {
   }
   
   @scala.inline
-  implicit class StartChatContactRequestOps[Self <: StartChatContactRequest] (val x: Self) extends AnyVal {
+  implicit class StartChatContactRequestMutableBuilder[Self <: StartChatContactRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactFlowId(value: ContactFlowId): Self = this.set("ContactFlowId", value.asInstanceOf[js.Any])
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipantDetails(value: ParticipantDetails): Self = this.set("ParticipantDetails", value.asInstanceOf[js.Any])
+    def setInitialMessage(value: ChatMessage): Self = StObject.set(x, "InitialMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setInitialMessageUndefined: Self = StObject.set(x, "InitialMessage", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
-    
-    @scala.inline
-    def setInitialMessage(value: ChatMessage): Self = this.set("InitialMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialMessage: Self = this.set("InitialMessage", js.undefined)
+    def setParticipantDetails(value: ParticipantDetails): Self = StObject.set(x, "ParticipantDetails", value.asInstanceOf[js.Any])
   }
 }

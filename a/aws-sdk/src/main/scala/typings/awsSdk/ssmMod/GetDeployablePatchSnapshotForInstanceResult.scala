@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDeployablePatchSnapshotForInstanceResult extends js.Object {
+trait GetDeployablePatchSnapshotForInstanceResult extends StObject {
   
   /**
     * The ID of the instance.
@@ -36,42 +37,30 @@ object GetDeployablePatchSnapshotForInstanceResult {
   }
   
   @scala.inline
-  implicit class GetDeployablePatchSnapshotForInstanceResultOps[Self <: GetDeployablePatchSnapshotForInstanceResult] (val x: Self) extends AnyVal {
+  implicit class GetDeployablePatchSnapshotForInstanceResultMutableBuilder[Self <: GetDeployablePatchSnapshotForInstanceResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProduct(value: Product): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setSnapshotDownloadUrl(value: SnapshotDownloadUrl): Self = StObject.set(x, "SnapshotDownloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: Product): Self = this.set("Product", value.asInstanceOf[js.Any])
+    def setSnapshotDownloadUrlUndefined: Self = StObject.set(x, "SnapshotDownloadUrl", js.undefined)
     
     @scala.inline
-    def deleteProduct: Self = this.set("Product", js.undefined)
+    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotDownloadUrl(value: SnapshotDownloadUrl): Self = this.set("SnapshotDownloadUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotDownloadUrl: Self = this.set("SnapshotDownloadUrl", js.undefined)
-    
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
   }
 }

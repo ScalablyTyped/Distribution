@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFunctionCodeRequest extends js.Object {
+trait UpdateFunctionCodeRequest extends StObject {
   
   /**
     * Set to true to validate the request parameters and access permissions without modifying the function code.
@@ -56,63 +57,51 @@ object UpdateFunctionCodeRequest {
   }
   
   @scala.inline
-  implicit class UpdateFunctionCodeRequestOps[Self <: UpdateFunctionCodeRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateFunctionCodeRequestMutableBuilder[Self <: UpdateFunctionCodeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: FunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    def setPublish(value: Boolean): Self = StObject.set(x, "Publish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setPublishUndefined: Self = StObject.set(x, "Publish", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublish(value: Boolean): Self = this.set("Publish", value.asInstanceOf[js.Any])
+    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
     @scala.inline
-    def deletePublish: Self = this.set("Publish", js.undefined)
+    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: String): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
     @scala.inline
-    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
     
     @scala.inline
-    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
+    def setS3ObjectVersion(value: S3ObjectVersion): Self = StObject.set(x, "S3ObjectVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Key(value: S3Key): Self = this.set("S3Key", value.asInstanceOf[js.Any])
+    def setS3ObjectVersionUndefined: Self = StObject.set(x, "S3ObjectVersion", js.undefined)
     
     @scala.inline
-    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+    def setZipFile(value: _Blob): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3ObjectVersion(value: S3ObjectVersion): Self = this.set("S3ObjectVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3ObjectVersion: Self = this.set("S3ObjectVersion", js.undefined)
-    
-    @scala.inline
-    def setZipFile(value: _Blob): Self = this.set("ZipFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZipFile: Self = this.set("ZipFile", js.undefined)
+    def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
   }
 }

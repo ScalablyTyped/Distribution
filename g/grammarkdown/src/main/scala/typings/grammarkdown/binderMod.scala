@@ -10,16 +10,16 @@ import typings.grammarkdown.symbolsMod.SymbolKind
 import typings.grammarkdown.symbolsMod.SymbolTable
 import typings.grammarkdown.tokensMod.SyntaxKind
 import typings.prex.mod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown/dist/binder", JSImport.Namespace)
-@js.native
-object binderMod extends js.Object {
+object binderMod {
   
+  @JSImport("grammarkdown/dist/binder", "Binder")
   @js.native
-  class Binder () extends js.Object {
+  class Binder () extends StObject {
     
     var bind: js.Any = js.native
     
@@ -40,8 +40,9 @@ object binderMod extends js.Object {
     var parentSymbol: js.Any = js.native
   }
   
+  @JSImport("grammarkdown/dist/binder", "BindingTable")
   @js.native
-  class BindingTable () extends js.Object {
+  class BindingTable () extends StObject {
     
     var addReferenceToSymbol: js.Any = js.native
     

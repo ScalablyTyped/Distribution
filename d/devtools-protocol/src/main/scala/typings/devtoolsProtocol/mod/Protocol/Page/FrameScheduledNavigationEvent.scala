@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FrameScheduledNavigationEvent extends js.Object {
+trait FrameScheduledNavigationEvent extends StObject {
   
   /**
     * Delay (in seconds) until the navigation is scheduled to begin. The navigation is not
@@ -37,30 +38,18 @@ object FrameScheduledNavigationEvent {
   }
   
   @scala.inline
-  implicit class FrameScheduledNavigationEventOps[Self <: FrameScheduledNavigationEvent] (val x: Self) extends AnyVal {
+  implicit class FrameScheduledNavigationEventMutableBuilder[Self <: FrameScheduledNavigationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: ClientNavigationReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrameId(value: FrameId): Self = this.set("frameId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: ClientNavigationReason): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

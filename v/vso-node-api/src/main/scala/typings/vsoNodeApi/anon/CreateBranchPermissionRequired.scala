@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBranchPermissionRequired extends js.Object {
+trait CreateBranchPermissionRequired extends StObject {
   
   var createBranchPermissionRequired: scala.Double = js.native
   
@@ -65,66 +66,54 @@ object CreateBranchPermissionRequired {
   }
   
   @scala.inline
-  implicit class CreateBranchPermissionRequiredOps[Self <: CreateBranchPermissionRequired] (val x: Self) extends AnyVal {
+  implicit class CreateBranchPermissionRequiredMutableBuilder[Self <: CreateBranchPermissionRequired] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateBranchPermissionRequired(value: scala.Double): Self = StObject.set(x, "createBranchPermissionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTagPermissionRequired(value: scala.Double): Self = StObject.set(x, "createTagPermissionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForcePushRequired(value: scala.Double): Self = StObject.set(x, "forcePushRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateBranchPermissionRequired(value: scala.Double): Self = this.set("createBranchPermissionRequired", value.asInstanceOf[js.Any])
+    def setInvalidRefName(value: scala.Double): Self = StObject.set(x, "invalidRefName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTagPermissionRequired(value: scala.Double): Self = this.set("createTagPermissionRequired", value.asInstanceOf[js.Any])
+    def setLocked(value: scala.Double): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForcePushRequired(value: scala.Double): Self = this.set("forcePushRequired", value.asInstanceOf[js.Any])
+    def setManageNotePermissionRequired(value: scala.Double): Self = StObject.set(x, "manageNotePermissionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidRefName(value: scala.Double): Self = this.set("invalidRefName", value.asInstanceOf[js.Any])
+    def setRefNameConflict(value: scala.Double): Self = StObject.set(x, "refNameConflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: scala.Double): Self = this.set("locked", value.asInstanceOf[js.Any])
+    def setRejectedByPlugin(value: scala.Double): Self = StObject.set(x, "rejectedByPlugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManageNotePermissionRequired(value: scala.Double): Self = this.set("manageNotePermissionRequired", value.asInstanceOf[js.Any])
+    def setRejectedByPolicy(value: scala.Double): Self = StObject.set(x, "rejectedByPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefNameConflict(value: scala.Double): Self = this.set("refNameConflict", value.asInstanceOf[js.Any])
+    def setStaleOldObjectId(value: scala.Double): Self = StObject.set(x, "staleOldObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectedByPlugin(value: scala.Double): Self = this.set("rejectedByPlugin", value.asInstanceOf[js.Any])
+    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectedByPolicy(value: scala.Double): Self = this.set("rejectedByPolicy", value.asInstanceOf[js.Any])
+    def setSucceededCorruptRef(value: scala.Double): Self = StObject.set(x, "succeededCorruptRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaleOldObjectId(value: scala.Double): Self = this.set("staleOldObjectId", value.asInstanceOf[js.Any])
+    def setSucceededNonExistentRef(value: scala.Double): Self = StObject.set(x, "succeededNonExistentRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSucceeded(value: scala.Double): Self = this.set("succeeded", value.asInstanceOf[js.Any])
+    def setUnprocessed(value: scala.Double): Self = StObject.set(x, "unprocessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSucceededCorruptRef(value: scala.Double): Self = this.set("succeededCorruptRef", value.asInstanceOf[js.Any])
+    def setUnresolvableToCommit(value: scala.Double): Self = StObject.set(x, "unresolvableToCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSucceededNonExistentRef(value: scala.Double): Self = this.set("succeededNonExistentRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnprocessed(value: scala.Double): Self = this.set("unprocessed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnresolvableToCommit(value: scala.Double): Self = this.set("unresolvableToCommit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWritePermissionRequired(value: scala.Double): Self = this.set("writePermissionRequired", value.asInstanceOf[js.Any])
+    def setWritePermissionRequired(value: scala.Double): Self = StObject.set(x, "writePermissionRequired", value.asInstanceOf[js.Any])
   }
 }

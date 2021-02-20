@@ -1,12 +1,13 @@
 package typings.awsSdkClientKmsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/model/DeleteImportedKeyMaterialOutput", JSImport.Namespace)
-@js.native
-object deleteImportedKeyMaterialOutputMod extends js.Object {
+object deleteImportedKeyMaterialOutputMod {
   
+  @JSImport("@aws-sdk/client-kms-node/model/DeleteImportedKeyMaterialOutput", "DeleteImportedKeyMaterialOutput")
+  @js.native
   val DeleteImportedKeyMaterialOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

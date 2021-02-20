@@ -1,18 +1,18 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/States/alphaCullingState", JSImport.Namespace)
-@js.native
-object alphaCullingStateMod extends js.Object {
+object alphaCullingStateMod {
   
+  @JSImport("babylonjs/States/alphaCullingState", "AlphaState")
   @js.native
   /**
     * Initializes the state.
     */
-  class AlphaState () extends js.Object {
+  class AlphaState () extends StObject {
     
     var _alphaBlend: js.Any = js.native
     

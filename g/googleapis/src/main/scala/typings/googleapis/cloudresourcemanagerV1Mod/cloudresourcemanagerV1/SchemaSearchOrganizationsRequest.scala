@@ -1,5 +1,6 @@
 package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request sent to the `SearchOrganizations` method.
   */
 @js.native
-trait SchemaSearchOrganizationsRequest extends js.Object {
+trait SchemaSearchOrganizationsRequest extends StObject {
   
   /**
     * An optional query string used to filter the Organizations to return in
@@ -44,36 +45,24 @@ object SchemaSearchOrganizationsRequest {
   }
   
   @scala.inline
-  implicit class SchemaSearchOrganizationsRequestOps[Self <: SchemaSearchOrganizationsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSearchOrganizationsRequestMutableBuilder[Self <: SchemaSearchOrganizationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
-    
-    @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

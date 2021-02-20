@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "CodeActionKind")
 @js.native
-class CodeActionKind protected () extends js.Object {
+class CodeActionKind protected () extends StObject {
   protected def this(value: String) = this()
   
   /**
@@ -42,13 +43,13 @@ class CodeActionKind protected () extends js.Object {
   val value: String = js.native
 }
 /* static members */
-@JSImport("vscode", "CodeActionKind")
-@js.native
-object CodeActionKind extends js.Object {
+object CodeActionKind {
   
   /**
     * Empty kind.
     */
+  @JSImport("vscode", "CodeActionKind.Empty")
+  @js.native
   val Empty: CodeActionKind = js.native
   
   /**
@@ -56,6 +57,8 @@ object CodeActionKind extends js.Object {
     *
     * Quick fix actions address a problem in the code and are shown in the normal code action context menu.
     */
+  @JSImport("vscode", "CodeActionKind.QuickFix")
+  @js.native
   val QuickFix: CodeActionKind = js.native
   
   /**
@@ -63,6 +66,8 @@ object CodeActionKind extends js.Object {
     *
     * Refactoring actions are shown in the refactoring context menu.
     */
+  @JSImport("vscode", "CodeActionKind.Refactor")
+  @js.native
   val Refactor: CodeActionKind = js.native
   
   /**
@@ -76,6 +81,8 @@ object CodeActionKind extends js.Object {
     * - Extract interface from class
     * - ...
     */
+  @JSImport("vscode", "CodeActionKind.RefactorExtract")
+  @js.native
   val RefactorExtract: CodeActionKind = js.native
   
   /**
@@ -88,6 +95,8 @@ object CodeActionKind extends js.Object {
     * - Inline constant
     * - ...
     */
+  @JSImport("vscode", "CodeActionKind.RefactorInline")
+  @js.native
   val RefactorInline: CodeActionKind = js.native
   
   /**
@@ -102,6 +111,8 @@ object CodeActionKind extends js.Object {
     * - Move method to base class
     * - ...
     */
+  @JSImport("vscode", "CodeActionKind.RefactorRewrite")
+  @js.native
   val RefactorRewrite: CodeActionKind = js.native
   
   /**
@@ -111,6 +122,8 @@ object CodeActionKind extends js.Object {
     * normal [lightbulb](https://code.visualstudio.com/docs/editor/editingevolved#_code-action) menu. Source actions
     * can be run on save using `editor.codeActionsOnSave` and are also shown in the `source` context menu.
     */
+  @JSImport("vscode", "CodeActionKind.Source")
+  @js.native
   val Source: CodeActionKind = js.native
   
   /**
@@ -119,10 +132,14 @@ object CodeActionKind extends js.Object {
     * Fix all actions automatically fix errors that have a clear fix that do not require user input.
     * They should not suppress errors or perform unsafe fixes such as generating new types or classes.
     */
+  @JSImport("vscode", "CodeActionKind.SourceFixAll")
+  @js.native
   val SourceFixAll: CodeActionKind = js.native
   
   /**
     * Base kind for an organize imports source action: `source.organizeImports`.
     */
+  @JSImport("vscode", "CodeActionKind.SourceOrganizeImports")
+  @js.native
   val SourceOrganizeImports: CodeActionKind = js.native
 }

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XrangePointPartialFillOptionsObject extends js.Object {
+trait XrangePointPartialFillOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) The amount of the X-range point to be
@@ -29,30 +30,18 @@ object XrangePointPartialFillOptionsObject {
   }
   
   @scala.inline
-  implicit class XrangePointPartialFillOptionsObjectOps[Self <: XrangePointPartialFillOptionsObject] (val x: Self) extends AnyVal {
+  implicit class XrangePointPartialFillOptionsObjectMutableBuilder[Self <: XrangePointPartialFillOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
-    
-    @scala.inline
-    def setFill(value: ColorString | GradientColorObject | PatternObject): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

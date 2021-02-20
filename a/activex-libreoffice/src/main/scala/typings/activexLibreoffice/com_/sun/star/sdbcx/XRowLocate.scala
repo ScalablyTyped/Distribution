@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbcx
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,39 +102,27 @@ object XRowLocate {
   }
   
   @scala.inline
-  implicit class XRowLocateOps[Self <: XRowLocate] (val x: Self) extends AnyVal {
+  implicit class XRowLocateMutableBuilder[Self <: XRowLocate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmark(value: js.Any): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompareBookmarks(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "compareBookmarks", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBookmark(value: () => js.Any): Self = StObject.set(x, "getBookmark", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBookmark(value: js.Any): Self = this.set("Bookmark", value.asInstanceOf[js.Any])
+    def setHasOrderedBookmarks(value: () => Boolean): Self = StObject.set(x, "hasOrderedBookmarks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCompareBookmarks(value: (js.Any, js.Any) => Double): Self = this.set("compareBookmarks", js.Any.fromFunction2(value))
+    def setHashBookmark(value: js.Any => Double): Self = StObject.set(x, "hashBookmark", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBookmark(value: () => js.Any): Self = this.set("getBookmark", js.Any.fromFunction0(value))
+    def setMoveRelativeToBookmark(value: (js.Any, Double) => Boolean): Self = StObject.set(x, "moveRelativeToBookmark", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasOrderedBookmarks(value: () => Boolean): Self = this.set("hasOrderedBookmarks", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHashBookmark(value: js.Any => Double): Self = this.set("hashBookmark", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMoveRelativeToBookmark(value: (js.Any, Double) => Boolean): Self = this.set("moveRelativeToBookmark", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMoveToBookmark(value: js.Any => Boolean): Self = this.set("moveToBookmark", js.Any.fromFunction1(value))
+    def setMoveToBookmark(value: js.Any => Boolean): Self = StObject.set(x, "moveToBookmark", js.Any.fromFunction1(value))
   }
 }

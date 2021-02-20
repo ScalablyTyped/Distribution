@@ -1,8 +1,9 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAdditionalAssignmentsForHITResponse extends js.Object
+trait CreateAdditionalAssignmentsForHITResponse extends StObject

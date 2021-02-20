@@ -2,12 +2,13 @@ package typings.amapJsSdk.anon
 
 import typings.amapJsSdk.AMap.Pixel
 import typings.amapJsSdk.AMap.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Image extends js.Object {
+trait Image extends StObject {
   
   var image: js.UndefOr[String] = js.native
   
@@ -26,42 +27,30 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageOffset(value: Pixel): Self = StObject.set(x, "imageOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageOffsetUndefined: Self = StObject.set(x, "imageOffset", js.undefined)
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setImageSize(value: Size): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setImageSizeUndefined: Self = StObject.set(x, "imageSize", js.undefined)
     
     @scala.inline
-    def setImageOffset(value: Pixel): Self = this.set("imageOffset", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteImageOffset: Self = this.set("imageOffset", js.undefined)
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSize(value: Size): Self = this.set("imageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageSize: Self = this.set("imageSize", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -5,18 +5,16 @@ import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.subchannelMod.Subchannel
 import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import typings.grpcGrpcJs.uriParserMod.GrpcUri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/subchannel-pool", JSImport.Namespace)
-@js.native
-object subchannelPoolMod extends js.Object {
+object subchannelPoolMod {
   
-  def getSubchannelPool(global: Boolean): SubchannelPool = js.native
-  
+  @JSImport("@grpc/grpc-js/build/src/subchannel-pool", "SubchannelPool")
   @js.native
-  class SubchannelPool protected () extends js.Object {
+  class SubchannelPool protected () extends StObject {
     /**
       * A pool of subchannels use for making connections. Subchannels with the
       * exact same parameters will be reused.
@@ -60,4 +58,8 @@ object subchannelPoolMod extends js.Object {
       */
     def unrefUnusedSubchannels(): Unit = js.native
   }
+  
+  @JSImport("@grpc/grpc-js/build/src/subchannel-pool", "getSubchannelPool")
+  @js.native
+  def getSubchannelPool(global: Boolean): SubchannelPool = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The configuration to access the SDS server.
   */
 @js.native
-trait SchemaSdsConfig extends js.Object {
+trait SchemaSdsConfig extends StObject {
   
   /**
     * The configuration to access the SDS server over GRPC.
@@ -24,24 +25,12 @@ object SchemaSdsConfig {
   }
   
   @scala.inline
-  implicit class SchemaSdsConfigOps[Self <: SchemaSdsConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSdsConfigMutableBuilder[Self <: SchemaSdsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrpcServiceConfig(value: SchemaGrpcServiceConfig): Self = StObject.set(x, "grpcServiceConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGrpcServiceConfig(value: SchemaGrpcServiceConfig): Self = this.set("grpcServiceConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrpcServiceConfig: Self = this.set("grpcServiceConfig", js.undefined)
+    def setGrpcServiceConfigUndefined: Self = StObject.set(x, "grpcServiceConfig", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.plugapi.mod
 
 import typings.plugapi.mod.User.DJ
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LastPlay extends js.Object {
+trait LastPlay extends StObject {
   
   var dj: DJ = js.native
   
@@ -23,27 +24,15 @@ object LastPlay {
   }
   
   @scala.inline
-  implicit class LastPlayOps[Self <: LastPlay] (val x: Self) extends AnyVal {
+  implicit class LastPlayMutableBuilder[Self <: LastPlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDj(value: DJ): Self = StObject.set(x, "dj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDj(value: DJ): Self = this.set("dj", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedia(value: Media): Self = this.set("media", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScore(value: Score): Self = this.set("score", value.asInstanceOf[js.Any])
+    def setScore(value: Score): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
   }
 }

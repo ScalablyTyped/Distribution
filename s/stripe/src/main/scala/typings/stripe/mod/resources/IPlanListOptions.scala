@@ -1,6 +1,7 @@
 package typings.stripe.mod.resources
 
 import typings.stripe.mod.IListOptionsCreated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,30 +28,18 @@ object IPlanListOptions {
   }
   
   @scala.inline
-  implicit class IPlanListOptionsOps[Self <: IPlanListOptions] (val x: Self) extends AnyVal {
+  implicit class IPlanListOptionsMutableBuilder[Self <: IPlanListOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
-    
-    @scala.inline
-    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
   }
 }

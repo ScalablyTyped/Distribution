@@ -47,12 +47,13 @@ import typings.tizenTvWebapis.tizenTvWebapisStrings.widevine_data_type
 import typings.tizenTvWebapis.tizenTvWebapisStrings.widevine_license_data
 import typings.tizenTvWebapis.webapisMod.ErrorCallback
 import typings.tizenTvWebapis.webapisMod.SuccessCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AVPlayManager extends js.Object {
+trait AVPlayManager extends StObject {
   
   /**
     * Destroys the player object.

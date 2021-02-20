@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFlowsResponse extends js.Object {
+trait ListFlowsResponse extends StObject {
   
   /**
     * A list of flow summaries.
@@ -26,33 +27,21 @@ object ListFlowsResponse {
   }
   
   @scala.inline
-  implicit class ListFlowsResponseOps[Self <: ListFlowsResponse] (val x: Self) extends AnyVal {
+  implicit class ListFlowsResponseMutableBuilder[Self <: ListFlowsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlows(value: listOfListedFlow): Self = StObject.set(x, "Flows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlowsUndefined: Self = StObject.set(x, "Flows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowsVarargs(value: ListedFlow*): Self = StObject.set(x, "Flows", js.Array(value :_*))
     
     @scala.inline
-    def setFlowsVarargs(value: ListedFlow*): Self = this.set("Flows", js.Array(value :_*))
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlows(value: listOfListedFlow): Self = this.set("Flows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlows: Self = this.set("Flows", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

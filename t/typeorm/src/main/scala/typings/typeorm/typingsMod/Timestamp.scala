@@ -1,12 +1,13 @@
 package typings.typeorm.typingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp")
 @js.native
-class Timestamp protected () extends js.Object {
+class Timestamp protected () extends StObject {
   /**
     * @param low The low (signed) 32 bits of the Timestamp.
     * @param high The high (signed) 32 bits of the Timestamp.
@@ -203,19 +204,41 @@ class Timestamp protected () extends js.Object {
   def xor(other: Timestamp): Timestamp = js.native
 }
 /* static members */
-@JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp")
-@js.native
-object Timestamp extends js.Object {
+object Timestamp {
   
-  var MAX_VALUE: Timestamp = js.native
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var MIN_VALUE: Timestamp = js.native
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.MAX_VALUE")
+  @js.native
+  def MAX_VALUE: Timestamp = js.native
+  @scala.inline
+  def MAX_VALUE_=(x: Timestamp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VALUE")(x.asInstanceOf[js.Any])
   
-  var NEG_ONE: Timestamp = js.native
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.MIN_VALUE")
+  @js.native
+  def MIN_VALUE: Timestamp = js.native
+  @scala.inline
+  def MIN_VALUE_=(x: Timestamp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VALUE")(x.asInstanceOf[js.Any])
   
-  var ONE: Timestamp = js.native
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.NEG_ONE")
+  @js.native
+  def NEG_ONE: Timestamp = js.native
+  @scala.inline
+  def NEG_ONE_=(x: Timestamp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEG_ONE")(x.asInstanceOf[js.Any])
   
-  var ZERO: Timestamp = js.native
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.ONE")
+  @js.native
+  def ONE: Timestamp = js.native
+  @scala.inline
+  def ONE_=(x: Timestamp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.ZERO")
+  @js.native
+  def ZERO: Timestamp = js.native
+  @scala.inline
+  def ZERO_=(x: Timestamp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a Timestamp representing the 64-bit integer that comes by concatenating the
@@ -224,6 +247,8 @@ object Timestamp extends js.Object {
     * @param lowBits The low 32-bits.
     * @param highBits The high 32-bits.
     */
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromBits")
+  @js.native
   def fromBits(lowBits: scala.Double, highBits: scala.Double): Timestamp = js.native
   
   /**
@@ -231,6 +256,8 @@ object Timestamp extends js.Object {
     *
     * @param value The 32-bit integer in question.
     */
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromInt")
+  @js.native
   def fromInt(value: scala.Double): Timestamp = js.native
   
   /**
@@ -238,6 +265,8 @@ object Timestamp extends js.Object {
     *
     * @param value The number in question.
     */
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromNumber")
+  @js.native
   def fromNumber(value: scala.Double): Timestamp = js.native
   
   /**
@@ -246,6 +275,10 @@ object Timestamp extends js.Object {
     * @param str The textual representation of the Timestamp.
     * @param radix The radix in which the text is written.
     */
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromString")
+  @js.native
   def fromString(str: String): Timestamp = js.native
+  @JSImport("typeorm/browser/driver/mongodb/typings", "Timestamp.fromString")
+  @js.native
   def fromString(str: String, radix: scala.Double): Timestamp = js.native
 }

@@ -1,6 +1,7 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param T Type of the webview's state.
   */
 @js.native
-trait WebviewPanelSerializer[T] extends js.Object {
+trait WebviewPanelSerializer[T] extends StObject {
   
   /**
     * Restore a webview panel from its serialized `state`.
@@ -63,21 +64,9 @@ object WebviewPanelSerializer {
   }
   
   @scala.inline
-  implicit class WebviewPanelSerializerOps[Self <: WebviewPanelSerializer[_], T] (val x: Self with WebviewPanelSerializer[T]) extends AnyVal {
+  implicit class WebviewPanelSerializerMutableBuilder[Self <: WebviewPanelSerializer[_], T] (val x: Self with WebviewPanelSerializer[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeserializeWebviewPanel(value: (WebviewPanel, T) => Thenable[Unit]): Self = this.set("deserializeWebviewPanel", js.Any.fromFunction2(value))
+    def setDeserializeWebviewPanel(value: (WebviewPanel, T) => Thenable[Unit]): Self = StObject.set(x, "deserializeWebviewPanel", js.Any.fromFunction2(value))
   }
 }

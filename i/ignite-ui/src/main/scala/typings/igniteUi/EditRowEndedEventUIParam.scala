@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditRowEndedEventUIParam extends js.Object {
+trait EditRowEndedEventUIParam extends StObject {
   
   /**
     * Gets the old value for the column with the specified key.
@@ -46,54 +47,42 @@ object EditRowEndedEventUIParam {
   }
   
   @scala.inline
-  implicit class EditRowEndedEventUIParamOps[Self <: EditRowEndedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class EditRowEndedEventUIParamMutableBuilder[Self <: EditRowEndedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOldValues(value: js.Any): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOldValuesUndefined: Self = StObject.set(x, "oldValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldValues(value: js.Any): Self = this.set("oldValues", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteOldValues: Self = this.set("oldValues", js.undefined)
+    def setRowAdding(value: Boolean): Self = StObject.set(x, "rowAdding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRowAddingUndefined: Self = StObject.set(x, "rowAdding", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setRowID(value: js.Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowAdding(value: Boolean): Self = this.set("rowAdding", value.asInstanceOf[js.Any])
+    def setRowIDUndefined: Self = StObject.set(x, "rowID", js.undefined)
     
     @scala.inline
-    def deleteRowAdding: Self = this.set("rowAdding", js.undefined)
+    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowID(value: js.Any): Self = this.set("rowID", value.asInstanceOf[js.Any])
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteRowID: Self = this.set("rowID", js.undefined)
+    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
-    
-    @scala.inline
-    def setValues(value: js.Any): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

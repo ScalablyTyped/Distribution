@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCertificateManagerCertificateDomainValidationOption extends js.Object {
+trait AwsCertificateManagerCertificateDomainValidationOption extends StObject {
   
   /**
     * A fully qualified domain name (FQDN) in the certificate.
@@ -46,57 +47,45 @@ object AwsCertificateManagerCertificateDomainValidationOption {
   }
   
   @scala.inline
-  implicit class AwsCertificateManagerCertificateDomainValidationOptionOps[Self <: AwsCertificateManagerCertificateDomainValidationOption] (val x: Self) extends AnyVal {
+  implicit class AwsCertificateManagerCertificateDomainValidationOptionMutableBuilder[Self <: AwsCertificateManagerCertificateDomainValidationOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceRecord(value: AwsCertificateManagerCertificateResourceRecord): Self = StObject.set(x, "ResourceRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: NonEmptyString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setResourceRecordUndefined: Self = StObject.set(x, "ResourceRecord", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    def setValidationDomain(value: NonEmptyString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRecord(value: AwsCertificateManagerCertificateResourceRecord): Self = this.set("ResourceRecord", value.asInstanceOf[js.Any])
+    def setValidationDomainUndefined: Self = StObject.set(x, "ValidationDomain", js.undefined)
     
     @scala.inline
-    def deleteResourceRecord: Self = this.set("ResourceRecord", js.undefined)
+    def setValidationEmails(value: StringList): Self = StObject.set(x, "ValidationEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationDomain(value: NonEmptyString): Self = this.set("ValidationDomain", value.asInstanceOf[js.Any])
+    def setValidationEmailsUndefined: Self = StObject.set(x, "ValidationEmails", js.undefined)
     
     @scala.inline
-    def deleteValidationDomain: Self = this.set("ValidationDomain", js.undefined)
+    def setValidationEmailsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ValidationEmails", js.Array(value :_*))
     
     @scala.inline
-    def setValidationEmailsVarargs(value: NonEmptyString*): Self = this.set("ValidationEmails", js.Array(value :_*))
+    def setValidationMethod(value: NonEmptyString): Self = StObject.set(x, "ValidationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationEmails(value: StringList): Self = this.set("ValidationEmails", value.asInstanceOf[js.Any])
+    def setValidationMethodUndefined: Self = StObject.set(x, "ValidationMethod", js.undefined)
     
     @scala.inline
-    def deleteValidationEmails: Self = this.set("ValidationEmails", js.undefined)
+    def setValidationStatus(value: NonEmptyString): Self = StObject.set(x, "ValidationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationMethod(value: NonEmptyString): Self = this.set("ValidationMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationMethod: Self = this.set("ValidationMethod", js.undefined)
-    
-    @scala.inline
-    def setValidationStatus(value: NonEmptyString): Self = this.set("ValidationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationStatus: Self = this.set("ValidationStatus", js.undefined)
+    def setValidationStatusUndefined: Self = StObject.set(x, "ValidationStatus", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProfileId extends js.Object {
+trait ProfileId extends StObject {
   
   var profileId: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object ProfileId {
   }
   
   @scala.inline
-  implicit class ProfileIdOps[Self <: ProfileId] (val x: Self) extends AnyVal {
+  implicit class ProfileIdMutableBuilder[Self <: ProfileId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
   }
 }

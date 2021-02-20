@@ -1,6 +1,7 @@
 package typings.orientjs.mod
 
 import typings.orientjs.anon.Force
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("orientjs", "OClass")
 @js.native
-class OClass () extends js.Object {
+class OClass () extends StObject {
   
   /**
     * Cache the given class data for fast lookup later.

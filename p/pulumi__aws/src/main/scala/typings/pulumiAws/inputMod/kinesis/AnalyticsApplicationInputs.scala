@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesis
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsApplicationInputs extends js.Object {
+trait AnalyticsApplicationInputs extends StObject {
   
   /**
     * The ARN of the Kinesis Analytics Application.
@@ -60,72 +61,60 @@ object AnalyticsApplicationInputs {
   }
   
   @scala.inline
-  implicit class AnalyticsApplicationInputsOps[Self <: AnalyticsApplicationInputs] (val x: Self) extends AnyVal {
+  implicit class AnalyticsApplicationInputsMutableBuilder[Self <: AnalyticsApplicationInputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKinesisFirehose(value: Input[AnalyticsApplicationInputsKinesisFirehose]): Self = StObject.set(x, "kinesisFirehose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    def setKinesisFirehoseUndefined: Self = StObject.set(x, "kinesisFirehose", js.undefined)
     
     @scala.inline
-    def setSchema(value: Input[AnalyticsApplicationInputsSchema]): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setKinesisStream(value: Input[AnalyticsApplicationInputsKinesisStream]): Self = StObject.set(x, "kinesisStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Input[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKinesisStreamUndefined: Self = StObject.set(x, "kinesisStream", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisFirehose(value: Input[AnalyticsApplicationInputsKinesisFirehose]): Self = this.set("kinesisFirehose", value.asInstanceOf[js.Any])
+    def setParallelism(value: Input[AnalyticsApplicationInputsParallelism]): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKinesisFirehose: Self = this.set("kinesisFirehose", js.undefined)
+    def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
     
     @scala.inline
-    def setKinesisStream(value: Input[AnalyticsApplicationInputsKinesisStream]): Self = this.set("kinesisStream", value.asInstanceOf[js.Any])
+    def setProcessingConfiguration(value: Input[AnalyticsApplicationInputsProcessingConfiguration]): Self = StObject.set(x, "processingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKinesisStream: Self = this.set("kinesisStream", js.undefined)
+    def setProcessingConfigurationUndefined: Self = StObject.set(x, "processingConfiguration", js.undefined)
     
     @scala.inline
-    def setParallelism(value: Input[AnalyticsApplicationInputsParallelism]): Self = this.set("parallelism", value.asInstanceOf[js.Any])
+    def setSchema(value: Input[AnalyticsApplicationInputsSchema]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParallelism: Self = this.set("parallelism", js.undefined)
+    def setStartingPositionConfigurations(value: Input[js.Array[Input[AnalyticsApplicationInputsStartingPositionConfiguration]]]): Self = StObject.set(x, "startingPositionConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingConfiguration(value: Input[AnalyticsApplicationInputsProcessingConfiguration]): Self = this.set("processingConfiguration", value.asInstanceOf[js.Any])
+    def setStartingPositionConfigurationsUndefined: Self = StObject.set(x, "startingPositionConfigurations", js.undefined)
     
     @scala.inline
-    def deleteProcessingConfiguration: Self = this.set("processingConfiguration", js.undefined)
+    def setStartingPositionConfigurationsVarargs(value: Input[AnalyticsApplicationInputsStartingPositionConfiguration]*): Self = StObject.set(x, "startingPositionConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setStartingPositionConfigurationsVarargs(value: Input[AnalyticsApplicationInputsStartingPositionConfiguration]*): Self = this.set("startingPositionConfigurations", js.Array(value :_*))
+    def setStreamNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "streamNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartingPositionConfigurations(value: Input[js.Array[Input[AnalyticsApplicationInputsStartingPositionConfiguration]]]): Self = this.set("startingPositionConfigurations", value.asInstanceOf[js.Any])
+    def setStreamNamesUndefined: Self = StObject.set(x, "streamNames", js.undefined)
     
     @scala.inline
-    def deleteStartingPositionConfigurations: Self = this.set("startingPositionConfigurations", js.undefined)
-    
-    @scala.inline
-    def setStreamNamesVarargs(value: Input[String]*): Self = this.set("streamNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setStreamNames(value: Input[js.Array[Input[String]]]): Self = this.set("streamNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamNames: Self = this.set("streamNames", js.undefined)
+    def setStreamNamesVarargs(value: Input[String]*): Self = StObject.set(x, "streamNames", js.Array(value :_*))
   }
 }

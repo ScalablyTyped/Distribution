@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,24 +25,12 @@ object FindCreateFindOptions {
   }
   
   @scala.inline
-  implicit class FindCreateFindOptionsOps[Self <: FindCreateFindOptions[_], TAttributes] (val x: Self with FindCreateFindOptions[TAttributes]) extends AnyVal {
+  implicit class FindCreateFindOptionsMutableBuilder[Self <: FindCreateFindOptions[_], TAttributes] (val x: Self with FindCreateFindOptions[TAttributes]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaults(value: TAttributes): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaults(value: TAttributes): Self = this.set("defaults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
   }
 }

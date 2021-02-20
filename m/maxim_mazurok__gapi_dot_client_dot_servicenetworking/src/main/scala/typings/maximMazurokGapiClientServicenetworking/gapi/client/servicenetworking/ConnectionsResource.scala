@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientServicenetworking.anon.Force
 import typings.maximMazurokGapiClientServicenetworking.anon.Key
 import typings.maximMazurokGapiClientServicenetworking.anon.Name
 import typings.maximMazurokGapiClientServicenetworking.anon.Network
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionsResource extends js.Object {
+trait ConnectionsResource extends StObject {
   
   /**
     * Creates a private connection that establishes a VPC Network Peering connection to a VPC network in the service producer's organization. The administrator of the service consumer's

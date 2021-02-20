@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatternInput extends js.Object {
+trait PatternInput extends StObject {
   
   var detail: Detail = js.native
   
@@ -23,33 +24,21 @@ object PatternInput {
   }
   
   @scala.inline
-  implicit class PatternInputOps[Self <: PatternInput] (val x: Self) extends AnyVal {
+  implicit class PatternInputMutableBuilder[Self <: PatternInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetail(value: Detail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setDetail-type`(value: js.Array[String]): Self = StObject.set(x, "detail-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setDetail-typeVarargs`(value: String*): Self = StObject.set(x, "detail-type", js.Array(value :_*))
     
     @scala.inline
-    def setDetail(value: Detail): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDetail-typeVarargs`(value: String*): Self = this.set("detail-type", js.Array(value :_*))
-    
-    @scala.inline
-    def `setDetail-type`(value: js.Array[String]): Self = this.set("detail-type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceVarargs(value: String*): Self = this.set("source", js.Array(value :_*))
-    
-    @scala.inline
-    def setSource(value: js.Array[String]): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
   }
 }

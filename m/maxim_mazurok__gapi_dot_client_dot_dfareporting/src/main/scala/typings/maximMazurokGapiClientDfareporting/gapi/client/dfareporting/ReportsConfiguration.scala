@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportsConfiguration extends js.Object {
+trait ReportsConfiguration extends StObject {
   
   /** Whether the exposure to conversion report is enabled. This report shows detailed pathway information on up to 10 of the most recent ad exposures seen by a user before converting. */
   var exposureToConversionEnabled: js.UndefOr[Boolean] = js.native
@@ -32,36 +33,24 @@ object ReportsConfiguration {
   }
   
   @scala.inline
-  implicit class ReportsConfigurationOps[Self <: ReportsConfiguration] (val x: Self) extends AnyVal {
+  implicit class ReportsConfigurationMutableBuilder[Self <: ReportsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExposureToConversionEnabled(value: Boolean): Self = StObject.set(x, "exposureToConversionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExposureToConversionEnabledUndefined: Self = StObject.set(x, "exposureToConversionEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLookbackConfiguration(value: LookbackConfiguration): Self = StObject.set(x, "lookbackConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureToConversionEnabled(value: Boolean): Self = this.set("exposureToConversionEnabled", value.asInstanceOf[js.Any])
+    def setLookbackConfigurationUndefined: Self = StObject.set(x, "lookbackConfiguration", js.undefined)
     
     @scala.inline
-    def deleteExposureToConversionEnabled: Self = this.set("exposureToConversionEnabled", js.undefined)
+    def setReportGenerationTimeZoneId(value: String): Self = StObject.set(x, "reportGenerationTimeZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookbackConfiguration(value: LookbackConfiguration): Self = this.set("lookbackConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLookbackConfiguration: Self = this.set("lookbackConfiguration", js.undefined)
-    
-    @scala.inline
-    def setReportGenerationTimeZoneId(value: String): Self = this.set("reportGenerationTimeZoneId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportGenerationTimeZoneId: Self = this.set("reportGenerationTimeZoneId", js.undefined)
+    def setReportGenerationTimeZoneIdUndefined: Self = StObject.set(x, "reportGenerationTimeZoneId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepperOption extends js.Object {
+trait StepperOption extends StObject {
   
   var direction: js.UndefOr[Double] = js.native
   
@@ -27,39 +28,27 @@ object StepperOption {
   }
   
   @scala.inline
-  implicit class StepperOptionOps[Self <: StepperOption] (val x: Self) extends AnyVal {
+  implicit class StepperOptionMutableBuilder[Self <: StepperOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPins(value: js.Any): Self = this.set("pins", value.asInstanceOf[js.Any])
+    def setRpm(value: Double): Self = StObject.set(x, "rpm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepsPerRev(value: Double): Self = this.set("stepsPerRev", value.asInstanceOf[js.Any])
+    def setRpmUndefined: Self = StObject.set(x, "rpm", js.undefined)
     
     @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setStepsPerRev(value: Double): Self = StObject.set(x, "stepsPerRev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
-    
-    @scala.inline
-    def setRpm(value: Double): Self = this.set("rpm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRpm: Self = this.set("rpm", js.undefined)
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

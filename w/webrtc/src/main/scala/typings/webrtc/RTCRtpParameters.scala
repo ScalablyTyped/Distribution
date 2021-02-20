@@ -1,13 +1,14 @@
 package typings.webrtc
 
 import typings.std.RTCDegradationPreference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpparameters
 @js.native
-trait RTCRtpParameters extends js.Object {
+trait RTCRtpParameters extends StObject {
   
   //encodings: RTCRtpEncodingParameters[];
   //headerExtensions: RTCRtpHeaderExtensionParameters[];
@@ -26,27 +27,15 @@ object RTCRtpParameters {
   }
   
   @scala.inline
-  implicit class RTCRtpParametersOps[Self <: RTCRtpParameters] (val x: Self) extends AnyVal {
+  implicit class RTCRtpParametersMutableBuilder[Self <: RTCRtpParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDegradationPreference(value: RTCDegradationPreference): Self = StObject.set(x, "degradationPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDegradationPreferenceUndefined: Self = StObject.set(x, "degradationPreference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDegradationPreference(value: RTCDegradationPreference): Self = this.set("degradationPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDegradationPreference: Self = this.set("degradationPreference", js.undefined)
+    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
   }
 }

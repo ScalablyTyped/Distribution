@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoryEvent extends js.Object {
+trait HistoryEvent extends StObject {
   
   var activityFailedEventDetails: js.UndefOr[ActivityFailedEventDetails] = js.native
   
@@ -149,225 +150,213 @@ object HistoryEvent {
   }
   
   @scala.inline
-  implicit class HistoryEventOps[Self <: HistoryEvent] (val x: Self) extends AnyVal {
+  implicit class HistoryEventMutableBuilder[Self <: HistoryEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityFailedEventDetails(value: ActivityFailedEventDetails): Self = StObject.set(x, "activityFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityFailedEventDetailsUndefined: Self = StObject.set(x, "activityFailedEventDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityScheduleFailedEventDetails(value: ActivityScheduleFailedEventDetails): Self = StObject.set(x, "activityScheduleFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: EventId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setActivityScheduleFailedEventDetailsUndefined: Self = StObject.set(x, "activityScheduleFailedEventDetails", js.undefined)
     
     @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setActivityScheduledEventDetails(value: ActivityScheduledEventDetails): Self = StObject.set(x, "activityScheduledEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: HistoryEventType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setActivityScheduledEventDetailsUndefined: Self = StObject.set(x, "activityScheduledEventDetails", js.undefined)
     
     @scala.inline
-    def setActivityFailedEventDetails(value: ActivityFailedEventDetails): Self = this.set("activityFailedEventDetails", value.asInstanceOf[js.Any])
+    def setActivityStartedEventDetails(value: ActivityStartedEventDetails): Self = StObject.set(x, "activityStartedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivityFailedEventDetails: Self = this.set("activityFailedEventDetails", js.undefined)
+    def setActivityStartedEventDetailsUndefined: Self = StObject.set(x, "activityStartedEventDetails", js.undefined)
     
     @scala.inline
-    def setActivityScheduleFailedEventDetails(value: ActivityScheduleFailedEventDetails): Self = this.set("activityScheduleFailedEventDetails", value.asInstanceOf[js.Any])
+    def setActivitySucceededEventDetails(value: ActivitySucceededEventDetails): Self = StObject.set(x, "activitySucceededEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivityScheduleFailedEventDetails: Self = this.set("activityScheduleFailedEventDetails", js.undefined)
+    def setActivitySucceededEventDetailsUndefined: Self = StObject.set(x, "activitySucceededEventDetails", js.undefined)
     
     @scala.inline
-    def setActivityScheduledEventDetails(value: ActivityScheduledEventDetails): Self = this.set("activityScheduledEventDetails", value.asInstanceOf[js.Any])
+    def setActivityTimedOutEventDetails(value: ActivityTimedOutEventDetails): Self = StObject.set(x, "activityTimedOutEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivityScheduledEventDetails: Self = this.set("activityScheduledEventDetails", js.undefined)
+    def setActivityTimedOutEventDetailsUndefined: Self = StObject.set(x, "activityTimedOutEventDetails", js.undefined)
     
     @scala.inline
-    def setActivityStartedEventDetails(value: ActivityStartedEventDetails): Self = this.set("activityStartedEventDetails", value.asInstanceOf[js.Any])
+    def setExecutionAbortedEventDetails(value: ExecutionAbortedEventDetails): Self = StObject.set(x, "executionAbortedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivityStartedEventDetails: Self = this.set("activityStartedEventDetails", js.undefined)
+    def setExecutionAbortedEventDetailsUndefined: Self = StObject.set(x, "executionAbortedEventDetails", js.undefined)
     
     @scala.inline
-    def setActivitySucceededEventDetails(value: ActivitySucceededEventDetails): Self = this.set("activitySucceededEventDetails", value.asInstanceOf[js.Any])
+    def setExecutionFailedEventDetails(value: ExecutionFailedEventDetails): Self = StObject.set(x, "executionFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivitySucceededEventDetails: Self = this.set("activitySucceededEventDetails", js.undefined)
+    def setExecutionFailedEventDetailsUndefined: Self = StObject.set(x, "executionFailedEventDetails", js.undefined)
     
     @scala.inline
-    def setActivityTimedOutEventDetails(value: ActivityTimedOutEventDetails): Self = this.set("activityTimedOutEventDetails", value.asInstanceOf[js.Any])
+    def setExecutionStartedEventDetails(value: ExecutionStartedEventDetails): Self = StObject.set(x, "executionStartedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivityTimedOutEventDetails: Self = this.set("activityTimedOutEventDetails", js.undefined)
+    def setExecutionStartedEventDetailsUndefined: Self = StObject.set(x, "executionStartedEventDetails", js.undefined)
     
     @scala.inline
-    def setExecutionAbortedEventDetails(value: ExecutionAbortedEventDetails): Self = this.set("executionAbortedEventDetails", value.asInstanceOf[js.Any])
+    def setExecutionSucceededEventDetails(value: ExecutionSucceededEventDetails): Self = StObject.set(x, "executionSucceededEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionAbortedEventDetails: Self = this.set("executionAbortedEventDetails", js.undefined)
+    def setExecutionSucceededEventDetailsUndefined: Self = StObject.set(x, "executionSucceededEventDetails", js.undefined)
     
     @scala.inline
-    def setExecutionFailedEventDetails(value: ExecutionFailedEventDetails): Self = this.set("executionFailedEventDetails", value.asInstanceOf[js.Any])
+    def setExecutionTimedOutEventDetails(value: ExecutionTimedOutEventDetails): Self = StObject.set(x, "executionTimedOutEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionFailedEventDetails: Self = this.set("executionFailedEventDetails", js.undefined)
+    def setExecutionTimedOutEventDetailsUndefined: Self = StObject.set(x, "executionTimedOutEventDetails", js.undefined)
     
     @scala.inline
-    def setExecutionStartedEventDetails(value: ExecutionStartedEventDetails): Self = this.set("executionStartedEventDetails", value.asInstanceOf[js.Any])
+    def setId(value: EventId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionStartedEventDetails: Self = this.set("executionStartedEventDetails", js.undefined)
+    def setLambdaFunctionFailedEventDetails(value: LambdaFunctionFailedEventDetails): Self = StObject.set(x, "lambdaFunctionFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionSucceededEventDetails(value: ExecutionSucceededEventDetails): Self = this.set("executionSucceededEventDetails", value.asInstanceOf[js.Any])
+    def setLambdaFunctionFailedEventDetailsUndefined: Self = StObject.set(x, "lambdaFunctionFailedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteExecutionSucceededEventDetails: Self = this.set("executionSucceededEventDetails", js.undefined)
+    def setLambdaFunctionScheduleFailedEventDetails(value: LambdaFunctionScheduleFailedEventDetails): Self = StObject.set(x, "lambdaFunctionScheduleFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionTimedOutEventDetails(value: ExecutionTimedOutEventDetails): Self = this.set("executionTimedOutEventDetails", value.asInstanceOf[js.Any])
+    def setLambdaFunctionScheduleFailedEventDetailsUndefined: Self = StObject.set(x, "lambdaFunctionScheduleFailedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteExecutionTimedOutEventDetails: Self = this.set("executionTimedOutEventDetails", js.undefined)
+    def setLambdaFunctionScheduledEventDetails(value: LambdaFunctionScheduledEventDetails): Self = StObject.set(x, "lambdaFunctionScheduledEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionFailedEventDetails(value: LambdaFunctionFailedEventDetails): Self = this.set("lambdaFunctionFailedEventDetails", value.asInstanceOf[js.Any])
+    def setLambdaFunctionScheduledEventDetailsUndefined: Self = StObject.set(x, "lambdaFunctionScheduledEventDetails", js.undefined)
     
     @scala.inline
-    def deleteLambdaFunctionFailedEventDetails: Self = this.set("lambdaFunctionFailedEventDetails", js.undefined)
+    def setLambdaFunctionStartFailedEventDetails(value: LambdaFunctionStartFailedEventDetails): Self = StObject.set(x, "lambdaFunctionStartFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionScheduleFailedEventDetails(value: LambdaFunctionScheduleFailedEventDetails): Self = this.set("lambdaFunctionScheduleFailedEventDetails", value.asInstanceOf[js.Any])
+    def setLambdaFunctionStartFailedEventDetailsUndefined: Self = StObject.set(x, "lambdaFunctionStartFailedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteLambdaFunctionScheduleFailedEventDetails: Self = this.set("lambdaFunctionScheduleFailedEventDetails", js.undefined)
+    def setLambdaFunctionSucceededEventDetails(value: LambdaFunctionSucceededEventDetails): Self = StObject.set(x, "lambdaFunctionSucceededEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionScheduledEventDetails(value: LambdaFunctionScheduledEventDetails): Self = this.set("lambdaFunctionScheduledEventDetails", value.asInstanceOf[js.Any])
+    def setLambdaFunctionSucceededEventDetailsUndefined: Self = StObject.set(x, "lambdaFunctionSucceededEventDetails", js.undefined)
     
     @scala.inline
-    def deleteLambdaFunctionScheduledEventDetails: Self = this.set("lambdaFunctionScheduledEventDetails", js.undefined)
+    def setLambdaFunctionTimedOutEventDetails(value: LambdaFunctionTimedOutEventDetails): Self = StObject.set(x, "lambdaFunctionTimedOutEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionStartFailedEventDetails(value: LambdaFunctionStartFailedEventDetails): Self = this.set("lambdaFunctionStartFailedEventDetails", value.asInstanceOf[js.Any])
+    def setLambdaFunctionTimedOutEventDetailsUndefined: Self = StObject.set(x, "lambdaFunctionTimedOutEventDetails", js.undefined)
     
     @scala.inline
-    def deleteLambdaFunctionStartFailedEventDetails: Self = this.set("lambdaFunctionStartFailedEventDetails", js.undefined)
+    def setMapIterationAbortedEventDetails(value: MapIterationEventDetails): Self = StObject.set(x, "mapIterationAbortedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionSucceededEventDetails(value: LambdaFunctionSucceededEventDetails): Self = this.set("lambdaFunctionSucceededEventDetails", value.asInstanceOf[js.Any])
+    def setMapIterationAbortedEventDetailsUndefined: Self = StObject.set(x, "mapIterationAbortedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteLambdaFunctionSucceededEventDetails: Self = this.set("lambdaFunctionSucceededEventDetails", js.undefined)
+    def setMapIterationFailedEventDetails(value: MapIterationEventDetails): Self = StObject.set(x, "mapIterationFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionTimedOutEventDetails(value: LambdaFunctionTimedOutEventDetails): Self = this.set("lambdaFunctionTimedOutEventDetails", value.asInstanceOf[js.Any])
+    def setMapIterationFailedEventDetailsUndefined: Self = StObject.set(x, "mapIterationFailedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteLambdaFunctionTimedOutEventDetails: Self = this.set("lambdaFunctionTimedOutEventDetails", js.undefined)
+    def setMapIterationStartedEventDetails(value: MapIterationEventDetails): Self = StObject.set(x, "mapIterationStartedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapIterationAbortedEventDetails(value: MapIterationEventDetails): Self = this.set("mapIterationAbortedEventDetails", value.asInstanceOf[js.Any])
+    def setMapIterationStartedEventDetailsUndefined: Self = StObject.set(x, "mapIterationStartedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteMapIterationAbortedEventDetails: Self = this.set("mapIterationAbortedEventDetails", js.undefined)
+    def setMapIterationSucceededEventDetails(value: MapIterationEventDetails): Self = StObject.set(x, "mapIterationSucceededEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapIterationFailedEventDetails(value: MapIterationEventDetails): Self = this.set("mapIterationFailedEventDetails", value.asInstanceOf[js.Any])
+    def setMapIterationSucceededEventDetailsUndefined: Self = StObject.set(x, "mapIterationSucceededEventDetails", js.undefined)
     
     @scala.inline
-    def deleteMapIterationFailedEventDetails: Self = this.set("mapIterationFailedEventDetails", js.undefined)
+    def setMapStateStartedEventDetails(value: MapStateStartedEventDetails): Self = StObject.set(x, "mapStateStartedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapIterationStartedEventDetails(value: MapIterationEventDetails): Self = this.set("mapIterationStartedEventDetails", value.asInstanceOf[js.Any])
+    def setMapStateStartedEventDetailsUndefined: Self = StObject.set(x, "mapStateStartedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteMapIterationStartedEventDetails: Self = this.set("mapIterationStartedEventDetails", js.undefined)
+    def setPreviousEventId(value: EventId): Self = StObject.set(x, "previousEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapIterationSucceededEventDetails(value: MapIterationEventDetails): Self = this.set("mapIterationSucceededEventDetails", value.asInstanceOf[js.Any])
+    def setPreviousEventIdUndefined: Self = StObject.set(x, "previousEventId", js.undefined)
     
     @scala.inline
-    def deleteMapIterationSucceededEventDetails: Self = this.set("mapIterationSucceededEventDetails", js.undefined)
+    def setStateEnteredEventDetails(value: StateEnteredEventDetails): Self = StObject.set(x, "stateEnteredEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapStateStartedEventDetails(value: MapStateStartedEventDetails): Self = this.set("mapStateStartedEventDetails", value.asInstanceOf[js.Any])
+    def setStateEnteredEventDetailsUndefined: Self = StObject.set(x, "stateEnteredEventDetails", js.undefined)
     
     @scala.inline
-    def deleteMapStateStartedEventDetails: Self = this.set("mapStateStartedEventDetails", js.undefined)
+    def setStateExitedEventDetails(value: StateExitedEventDetails): Self = StObject.set(x, "stateExitedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousEventId(value: EventId): Self = this.set("previousEventId", value.asInstanceOf[js.Any])
+    def setStateExitedEventDetailsUndefined: Self = StObject.set(x, "stateExitedEventDetails", js.undefined)
     
     @scala.inline
-    def deletePreviousEventId: Self = this.set("previousEventId", js.undefined)
+    def setTaskFailedEventDetails(value: TaskFailedEventDetails): Self = StObject.set(x, "taskFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateEnteredEventDetails(value: StateEnteredEventDetails): Self = this.set("stateEnteredEventDetails", value.asInstanceOf[js.Any])
+    def setTaskFailedEventDetailsUndefined: Self = StObject.set(x, "taskFailedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteStateEnteredEventDetails: Self = this.set("stateEnteredEventDetails", js.undefined)
+    def setTaskScheduledEventDetails(value: TaskScheduledEventDetails): Self = StObject.set(x, "taskScheduledEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateExitedEventDetails(value: StateExitedEventDetails): Self = this.set("stateExitedEventDetails", value.asInstanceOf[js.Any])
+    def setTaskScheduledEventDetailsUndefined: Self = StObject.set(x, "taskScheduledEventDetails", js.undefined)
     
     @scala.inline
-    def deleteStateExitedEventDetails: Self = this.set("stateExitedEventDetails", js.undefined)
+    def setTaskStartFailedEventDetails(value: TaskStartFailedEventDetails): Self = StObject.set(x, "taskStartFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskFailedEventDetails(value: TaskFailedEventDetails): Self = this.set("taskFailedEventDetails", value.asInstanceOf[js.Any])
+    def setTaskStartFailedEventDetailsUndefined: Self = StObject.set(x, "taskStartFailedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteTaskFailedEventDetails: Self = this.set("taskFailedEventDetails", js.undefined)
+    def setTaskStartedEventDetails(value: TaskStartedEventDetails): Self = StObject.set(x, "taskStartedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskScheduledEventDetails(value: TaskScheduledEventDetails): Self = this.set("taskScheduledEventDetails", value.asInstanceOf[js.Any])
+    def setTaskStartedEventDetailsUndefined: Self = StObject.set(x, "taskStartedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteTaskScheduledEventDetails: Self = this.set("taskScheduledEventDetails", js.undefined)
+    def setTaskSubmitFailedEventDetails(value: TaskSubmitFailedEventDetails): Self = StObject.set(x, "taskSubmitFailedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskStartFailedEventDetails(value: TaskStartFailedEventDetails): Self = this.set("taskStartFailedEventDetails", value.asInstanceOf[js.Any])
+    def setTaskSubmitFailedEventDetailsUndefined: Self = StObject.set(x, "taskSubmitFailedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteTaskStartFailedEventDetails: Self = this.set("taskStartFailedEventDetails", js.undefined)
+    def setTaskSubmittedEventDetails(value: TaskSubmittedEventDetails): Self = StObject.set(x, "taskSubmittedEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskStartedEventDetails(value: TaskStartedEventDetails): Self = this.set("taskStartedEventDetails", value.asInstanceOf[js.Any])
+    def setTaskSubmittedEventDetailsUndefined: Self = StObject.set(x, "taskSubmittedEventDetails", js.undefined)
     
     @scala.inline
-    def deleteTaskStartedEventDetails: Self = this.set("taskStartedEventDetails", js.undefined)
+    def setTaskSucceededEventDetails(value: TaskSucceededEventDetails): Self = StObject.set(x, "taskSucceededEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskSubmitFailedEventDetails(value: TaskSubmitFailedEventDetails): Self = this.set("taskSubmitFailedEventDetails", value.asInstanceOf[js.Any])
+    def setTaskSucceededEventDetailsUndefined: Self = StObject.set(x, "taskSucceededEventDetails", js.undefined)
     
     @scala.inline
-    def deleteTaskSubmitFailedEventDetails: Self = this.set("taskSubmitFailedEventDetails", js.undefined)
+    def setTaskTimedOutEventDetails(value: TaskTimedOutEventDetails): Self = StObject.set(x, "taskTimedOutEventDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskSubmittedEventDetails(value: TaskSubmittedEventDetails): Self = this.set("taskSubmittedEventDetails", value.asInstanceOf[js.Any])
+    def setTaskTimedOutEventDetailsUndefined: Self = StObject.set(x, "taskTimedOutEventDetails", js.undefined)
     
     @scala.inline
-    def deleteTaskSubmittedEventDetails: Self = this.set("taskSubmittedEventDetails", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskSucceededEventDetails(value: TaskSucceededEventDetails): Self = this.set("taskSucceededEventDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskSucceededEventDetails: Self = this.set("taskSucceededEventDetails", js.undefined)
-    
-    @scala.inline
-    def setTaskTimedOutEventDetails(value: TaskTimedOutEventDetails): Self = this.set("taskTimedOutEventDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskTimedOutEventDetails: Self = this.set("taskTimedOutEventDetails", js.undefined)
+    def setType(value: HistoryEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

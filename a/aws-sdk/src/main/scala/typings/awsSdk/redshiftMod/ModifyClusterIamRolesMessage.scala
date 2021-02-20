@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyClusterIamRolesMessage extends js.Object {
+trait ModifyClusterIamRolesMessage extends StObject {
   
   /**
     * Zero or more IAM roles to associate with the cluster. The roles must be in their Amazon Resource Name (ARN) format. You can associate up to 10 IAM roles with a single cluster in a single request.
@@ -31,39 +32,27 @@ object ModifyClusterIamRolesMessage {
   }
   
   @scala.inline
-  implicit class ModifyClusterIamRolesMessageOps[Self <: ModifyClusterIamRolesMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyClusterIamRolesMessageMutableBuilder[Self <: ModifyClusterIamRolesMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddIamRoles(value: IamRoleArnList): Self = StObject.set(x, "AddIamRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddIamRolesUndefined: Self = StObject.set(x, "AddIamRoles", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddIamRolesVarargs(value: String*): Self = StObject.set(x, "AddIamRoles", js.Array(value :_*))
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddIamRolesVarargs(value: String*): Self = this.set("AddIamRoles", js.Array(value :_*))
+    def setRemoveIamRoles(value: IamRoleArnList): Self = StObject.set(x, "RemoveIamRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddIamRoles(value: IamRoleArnList): Self = this.set("AddIamRoles", value.asInstanceOf[js.Any])
+    def setRemoveIamRolesUndefined: Self = StObject.set(x, "RemoveIamRoles", js.undefined)
     
     @scala.inline
-    def deleteAddIamRoles: Self = this.set("AddIamRoles", js.undefined)
-    
-    @scala.inline
-    def setRemoveIamRolesVarargs(value: String*): Self = this.set("RemoveIamRoles", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoveIamRoles(value: IamRoleArnList): Self = this.set("RemoveIamRoles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveIamRoles: Self = this.set("RemoveIamRoles", js.undefined)
+    def setRemoveIamRolesVarargs(value: String*): Self = StObject.set(x, "RemoveIamRoles", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageResult extends js.Object {
+trait MessageResult extends StObject {
   
   /**
     * The delivery status of the message. Possible values are:  DUPLICATE - The endpoint address is a duplicate of another endpoint address. Amazon Pinpoint won't attempt to send the message again.   OPT_OUT - The user who's associated with the endpoint address has opted out of receiving messages from you. Amazon Pinpoint won't attempt to send the message again. PERMANENT_FAILURE - An error occurred when delivering the message to the endpoint address. Amazon Pinpoint won't attempt to send the message again.   SUCCESSFUL - The message was successfully delivered to the endpoint address. TEMPORARY_FAILURE - A temporary error occurred. Amazon Pinpoint won't attempt to send the message again. THROTTLED - Amazon Pinpoint throttled the operation to send the message to the endpoint address. TIMEOUT - The message couldn't be sent within the timeout period. UNKNOWN_FAILURE - An unknown error occurred.
@@ -41,42 +42,30 @@ object MessageResult {
   }
   
   @scala.inline
-  implicit class MessageResultOps[Self <: MessageResult] (val x: Self) extends AnyVal {
+  implicit class MessageResultMutableBuilder[Self <: MessageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryStatus(value: DeliveryStatus): Self = StObject.set(x, "DeliveryStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageId(value: string): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
     
     @scala.inline
-    def setDeliveryStatus(value: DeliveryStatus): Self = this.set("DeliveryStatus", value.asInstanceOf[js.Any])
+    def setStatusCode(value: integer): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: integer): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: string): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: string): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    def setUpdatedToken(value: string): Self = StObject.set(x, "UpdatedToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: string): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
-    
-    @scala.inline
-    def setUpdatedToken(value: string): Self = this.set("UpdatedToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedToken: Self = this.set("UpdatedToken", js.undefined)
+    def setUpdatedTokenUndefined: Self = StObject.set(x, "UpdatedToken", js.undefined)
   }
 }

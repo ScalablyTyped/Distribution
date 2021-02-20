@@ -2,6 +2,7 @@ package typings.microsoftGraph.mod.CallRecords
 
 import typings.microsoftGraph.mod.IdentitySet
 import typings.microsoftGraph.mod.NullableOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object ParticipantEndpoint {
   }
   
   @scala.inline
-  implicit class ParticipantEndpointOps[Self <: ParticipantEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParticipantEndpointMutableBuilder[Self <: ParticipantEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeedback(value: NullableOption[UserFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedbackNull: Self = StObject.set(x, "feedback", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     
     @scala.inline
-    def setFeedback(value: NullableOption[UserFeedback]): Self = this.set("feedback", value.asInstanceOf[js.Any])
+    def setIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeedback: Self = this.set("feedback", js.undefined)
+    def setIdentityNull: Self = StObject.set(x, "identity", null)
     
     @scala.inline
-    def setFeedbackNull: Self = this.set("feedback", null)
-    
-    @scala.inline
-    def setIdentity(value: NullableOption[IdentitySet]): Self = this.set("identity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentity: Self = this.set("identity", js.undefined)
-    
-    @scala.inline
-    def setIdentityNull: Self = this.set("identity", null)
+    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
   }
 }

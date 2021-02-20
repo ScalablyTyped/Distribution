@@ -1,11 +1,12 @@
 package typings.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait USBInterface extends js.Object {
+trait USBInterface extends StObject {
   
   val alternate: USBAlternateInterface = js.native
   
@@ -29,33 +30,21 @@ object USBInterface {
   }
   
   @scala.inline
-  implicit class USBInterfaceOps[Self <: USBInterface] (val x: Self) extends AnyVal {
+  implicit class USBInterfaceMutableBuilder[Self <: USBInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate(value: USBAlternateInterface): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternates(value: js.Array[USBAlternateInterface]): Self = StObject.set(x, "alternates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternatesVarargs(value: USBAlternateInterface*): Self = StObject.set(x, "alternates", js.Array(value :_*))
     
     @scala.inline
-    def setAlternate(value: USBAlternateInterface): Self = this.set("alternate", value.asInstanceOf[js.Any])
+    def setClaimed(value: Boolean): Self = StObject.set(x, "claimed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternatesVarargs(value: USBAlternateInterface*): Self = this.set("alternates", js.Array(value :_*))
-    
-    @scala.inline
-    def setAlternates(value: js.Array[USBAlternateInterface]): Self = this.set("alternates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClaimed(value: Boolean): Self = this.set("claimed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterfaceNumber(value: Double): Self = this.set("interfaceNumber", value.asInstanceOf[js.Any])
+    def setInterfaceNumber(value: Double): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
   }
 }

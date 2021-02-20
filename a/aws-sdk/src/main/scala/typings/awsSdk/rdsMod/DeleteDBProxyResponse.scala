@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteDBProxyResponse extends js.Object {
+trait DeleteDBProxyResponse extends StObject {
   
   /**
     * The data structure representing the details of the DB proxy that you delete.
@@ -21,24 +22,12 @@ object DeleteDBProxyResponse {
   }
   
   @scala.inline
-  implicit class DeleteDBProxyResponseOps[Self <: DeleteDBProxyResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteDBProxyResponseMutableBuilder[Self <: DeleteDBProxyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBProxy(value: DBProxy): Self = StObject.set(x, "DBProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDBProxy(value: DBProxy): Self = this.set("DBProxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBProxy: Self = this.set("DBProxy", js.undefined)
+    def setDBProxyUndefined: Self = StObject.set(x, "DBProxy", js.undefined)
   }
 }

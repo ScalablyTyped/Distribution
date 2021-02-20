@@ -1,11 +1,12 @@
 package typings.anydbSql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnDefinition extends js.Object {
+trait ColumnDefinition extends StObject {
   
   var dataType: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object ColumnDefinition {
   }
   
   @scala.inline
-  implicit class ColumnDefinitionOps[Self <: ColumnDefinition] (val x: Self) extends AnyVal {
+  implicit class ColumnDefinitionMutableBuilder[Self <: ColumnDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotNull(value: Boolean): Self = this.set("notNull", value.asInstanceOf[js.Any])
+    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
     @scala.inline
-    def deleteNotNull: Self = this.set("notNull", js.undefined)
+    def setReferences(value: typings.anydbSql.anon.Column): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryKey(value: Boolean): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
+    def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
     
     @scala.inline
-    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
+    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferences(value: typings.anydbSql.anon.Column): Self = this.set("references", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferences: Self = this.set("references", js.undefined)
-    
-    @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

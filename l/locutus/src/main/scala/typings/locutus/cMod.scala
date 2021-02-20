@@ -1,21 +1,19 @@
 package typings.locutus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("locutus/c", JSImport.Namespace)
-@js.native
-object cMod extends js.Object {
+object cMod {
   
-  @js.native
-  object math extends js.Object {
+  object math {
     
+    @JSImport("locutus/c", "math.abs")
     @js.native
-    object abs extends js.Object {
-      
-      def apply(): js.Any = js.native
-      def apply(mixedNumber: js.Any): js.Any = js.native
-    }
+    def abs(): js.Any = js.native
+    @JSImport("locutus/c", "math.abs")
+    @js.native
+    def abs(mixedNumber: js.Any): js.Any = js.native
   }
 }

@@ -1,12 +1,13 @@
 package typings.reactRelay.anon
 
 import typings.relayRuntime.relayRuntimeTypesMod.FetchQueryFetchPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchPolicy extends js.Object {
+trait FetchPolicy extends StObject {
   
   var fetchPolicy: js.UndefOr[FetchQueryFetchPolicy] = js.native
   
@@ -21,30 +22,18 @@ object FetchPolicy {
   }
   
   @scala.inline
-  implicit class FetchPolicyOps[Self <: FetchPolicy] (val x: Self) extends AnyVal {
+  implicit class FetchPolicyMutableBuilder[Self <: FetchPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFetchPolicy(value: FetchQueryFetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkCacheConfig(value: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchPolicy(value: FetchQueryFetchPolicy): Self = this.set("fetchPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFetchPolicy: Self = this.set("fetchPolicy", js.undefined)
-    
-    @scala.inline
-    def setNetworkCacheConfig(value: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig): Self = this.set("networkCacheConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkCacheConfig: Self = this.set("networkCacheConfig", js.undefined)
+    def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
   }
 }

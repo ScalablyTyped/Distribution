@@ -1,12 +1,13 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuspenseListCommonProps extends js.Object {
+trait SuspenseListCommonProps extends StObject {
   
   /**
     * Note that SuspenseList require more than one child;
@@ -28,23 +29,11 @@ object SuspenseListCommonProps {
   }
   
   @scala.inline
-  implicit class SuspenseListCommonPropsOps[Self <: SuspenseListCommonProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class SuspenseListCommonPropsMutableBuilder[Self <: SuspenseListCommonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setChildren(
       value: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]])
-    ): Self = this.set("children", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

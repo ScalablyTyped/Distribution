@@ -1,5 +1,6 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see https://docs.angularjs.org/api/ng/type/$rootScope.Scope and https://docs.angularjs.org/api/ng/service/$rootScope
   */
 @js.native
-trait IRootScopeService extends js.Object {
+trait IRootScopeService extends StObject {
   
   @JSName("$apply")
   def $apply(): js.Any = js.native

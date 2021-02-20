@@ -1,11 +1,12 @@
 package typings.reactWindow.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOnItemsRenderedProps extends js.Object {
+trait ListOnItemsRenderedProps extends StObject {
   
   var overscanStartIndex: Double = js.native
   
@@ -29,30 +30,18 @@ object ListOnItemsRenderedProps {
   }
   
   @scala.inline
-  implicit class ListOnItemsRenderedPropsOps[Self <: ListOnItemsRenderedProps] (val x: Self) extends AnyVal {
+  implicit class ListOnItemsRenderedPropsMutableBuilder[Self <: ListOnItemsRenderedProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverscanStartIndex(value: Double): Self = StObject.set(x, "overscanStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverscanStopIndex(value: Double): Self = StObject.set(x, "overscanStopIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVisibleStartIndex(value: Double): Self = StObject.set(x, "visibleStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanStartIndex(value: Double): Self = this.set("overscanStartIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverscanStopIndex(value: Double): Self = this.set("overscanStopIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleStartIndex(value: Double): Self = this.set("visibleStartIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleStopIndex(value: Double): Self = this.set("visibleStopIndex", value.asInstanceOf[js.Any])
+    def setVisibleStopIndex(value: Double): Self = StObject.set(x, "visibleStopIndex", value.asInstanceOf[js.Any])
   }
 }

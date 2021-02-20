@@ -1,6 +1,7 @@
 package typings.ionic.definitionsMod
 
 import typings.ionic.ionicStrings.serveColonbefore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object ServeBeforeHookInput {
   }
   
   @scala.inline
-  implicit class ServeBeforeHookInputOps[Self <: ServeBeforeHookInput] (val x: Self) extends AnyVal {
+  implicit class ServeBeforeHookInputMutableBuilder[Self <: ServeBeforeHookInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: serveColonbefore): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: serveColonbefore): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServe(value: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): Self = this.set("serve", value.asInstanceOf[js.Any])
+    def setServe(value: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
   }
 }

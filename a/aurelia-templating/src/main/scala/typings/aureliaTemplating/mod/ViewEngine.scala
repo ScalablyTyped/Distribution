@@ -3,13 +3,14 @@ package typings.aureliaTemplating.mod
 import typings.aureliaDependencyInjection.mod.Container
 import typings.aureliaLoader.mod.Loader
 import typings.aureliaLoader.mod.TemplateRegistryEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewEngine")
 @js.native
-class ViewEngine protected () extends js.Object {
+class ViewEngine protected () extends StObject {
   /**
     * Creates an instance of ViewEngine.
     * @param loader The module loader.
@@ -198,14 +199,22 @@ class ViewEngine protected () extends js.Object {
   ): js.Promise[ViewFactory] = js.native
 }
 /* static members */
-@JSImport("aurelia-templating", "ViewEngine")
-@js.native
-object ViewEngine extends js.Object {
+object ViewEngine {
   
+  @JSImport("aurelia-templating", "ViewEngine")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("aurelia-templating", "ViewEngine.inject")
+  @js.native
   def inject(): js.Any = js.native
   
   /**
     * The metadata key for storing requires declared in a ViewModel.
     */
-  var viewModelRequireMetadataKey: js.Any = js.native
+  @JSImport("aurelia-templating", "ViewEngine.viewModelRequireMetadataKey")
+  @js.native
+  def viewModelRequireMetadataKey: js.Any = js.native
+  @scala.inline
+  def viewModelRequireMetadataKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("viewModelRequireMetadataKey")(x.asInstanceOf[js.Any])
 }

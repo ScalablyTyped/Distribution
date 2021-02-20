@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about a product.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult extends js.Object {
+trait SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult extends StObject {
   
   /**
     * The resource name of the image from the product that is the closest match
@@ -36,36 +37,24 @@ object SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResultOps[Self <: SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResultMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProduct(value: SchemaGoogleCloudVisionV1p2beta1Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: SchemaGoogleCloudVisionV1p2beta1Product): Self = this.set("product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

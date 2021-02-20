@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaProcessingTriggerResult extends js.Object
+sealed trait MediaProcessingTriggerResult extends StObject
 /** Specifies the result of a call to MediaProcessingTrigger::RequestAsync . */
 @JSGlobal("Windows.ApplicationModel.Background.MediaProcessingTriggerResult")
 @js.native
-object MediaProcessingTriggerResult extends js.Object {
+object MediaProcessingTriggerResult extends StObject {
   
   /** The media processing trigger request was successful. */
   @js.native

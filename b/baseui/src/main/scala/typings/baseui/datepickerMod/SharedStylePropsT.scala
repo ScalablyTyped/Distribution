@@ -1,12 +1,13 @@
 package typings.baseui.datepickerMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedStylePropsT extends js.Object {
+trait SharedStylePropsT extends StObject {
   
   @JSName("$date")
   var $date: Date = js.native
@@ -74,60 +75,48 @@ object SharedStylePropsT {
   }
   
   @scala.inline
-  implicit class SharedStylePropsTOps[Self <: SharedStylePropsT] (val x: Self) extends AnyVal {
+  implicit class SharedStylePropsTMutableBuilder[Self <: SharedStylePropsT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$date(value: Date): Self = StObject.set(x, "$date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$hasRangeHighlighted(value: Boolean): Self = StObject.set(x, "$hasRangeHighlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$date(value: Date): Self = this.set("$date", value.asInstanceOf[js.Any])
+    def set$hasRangeOnRight(value: Boolean): Self = StObject.set(x, "$hasRangeOnRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$disabled(value: Boolean): Self = this.set("$disabled", value.asInstanceOf[js.Any])
+    def set$hasRangeSelected(value: Boolean): Self = StObject.set(x, "$hasRangeSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$hasRangeHighlighted(value: Boolean): Self = this.set("$hasRangeHighlighted", value.asInstanceOf[js.Any])
+    def set$isHeader(value: Boolean): Self = StObject.set(x, "$isHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$hasRangeOnRight(value: Boolean): Self = this.set("$hasRangeOnRight", value.asInstanceOf[js.Any])
+    def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$hasRangeSelected(value: Boolean): Self = this.set("$hasRangeSelected", value.asInstanceOf[js.Any])
+    def set$isHovered(value: Boolean): Self = StObject.set(x, "$isHovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isHeader(value: Boolean): Self = this.set("$isHeader", value.asInstanceOf[js.Any])
+    def set$outsideMonth(value: Boolean): Self = StObject.set(x, "$outsideMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isHighlighted(value: Boolean): Self = this.set("$isHighlighted", value.asInstanceOf[js.Any])
+    def set$pseudoHighlighted(value: Boolean): Self = StObject.set(x, "$pseudoHighlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isHovered(value: Boolean): Self = this.set("$isHovered", value.asInstanceOf[js.Any])
+    def set$pseudoSelected(value: Boolean): Self = StObject.set(x, "$pseudoSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$outsideMonth(value: Boolean): Self = this.set("$outsideMonth", value.asInstanceOf[js.Any])
+    def set$range(value: Boolean): Self = StObject.set(x, "$range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$pseudoHighlighted(value: Boolean): Self = this.set("$pseudoHighlighted", value.asInstanceOf[js.Any])
+    def set$selected(value: Boolean): Self = StObject.set(x, "$selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$pseudoSelected(value: Boolean): Self = this.set("$pseudoSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$range(value: Boolean): Self = this.set("$range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$selected(value: Boolean): Self = this.set("$selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$startDate(value: Boolean): Self = this.set("$startDate", value.asInstanceOf[js.Any])
+    def set$startDate(value: Boolean): Self = StObject.set(x, "$startDate", value.asInstanceOf[js.Any])
   }
 }

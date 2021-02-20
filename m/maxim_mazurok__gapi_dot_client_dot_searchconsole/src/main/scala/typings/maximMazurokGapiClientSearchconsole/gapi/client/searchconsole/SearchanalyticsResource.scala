@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSearchconsole.anon.Accesstoken
 import typings.maximMazurokGapiClientSearchconsole.anon.Alt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchanalyticsResource extends js.Object {
+trait SearchanalyticsResource extends StObject {
   
   /**
     * Query your data with filters and parameters that you define. Returns zero or more rows grouped by the row keys that you define. You must define a date range of one or more days.

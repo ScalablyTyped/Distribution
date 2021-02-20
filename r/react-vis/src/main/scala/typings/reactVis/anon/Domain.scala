@@ -1,12 +1,13 @@
 package typings.reactVis.anon
 
 import typings.reactVis.mod.RVTickFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Domain extends js.Object {
+trait Domain extends StObject {
   
   var domain: js.Array[Double] = js.native
   
@@ -23,33 +24,21 @@ object Domain {
   }
   
   @scala.inline
-  implicit class DomainOps[Self <: Domain] (val x: Self) extends AnyVal {
+  implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: js.Array[Double]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainVarargs(value: Double*): Self = StObject.set(x, "domain", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainVarargs(value: Double*): Self = this.set("domain", js.Array(value :_*))
+    def setTickFormat(value: /* tick */ js.Any => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDomain(value: js.Array[Double]): Self = this.set("domain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTickFormat(value: /* tick */ js.Any => String): Self = this.set("tickFormat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTickFormat: Self = this.set("tickFormat", js.undefined)
+    def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
   }
 }

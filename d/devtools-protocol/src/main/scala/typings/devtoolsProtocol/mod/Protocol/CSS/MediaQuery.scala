@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaQuery extends js.Object {
+trait MediaQuery extends StObject {
   
   /**
     * Whether the media query condition is satisfied.
@@ -26,27 +27,15 @@ object MediaQuery {
   }
   
   @scala.inline
-  implicit class MediaQueryOps[Self <: MediaQuery] (val x: Self) extends AnyVal {
+  implicit class MediaQueryMutableBuilder[Self <: MediaQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressions(value: js.Array[MediaQueryExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpressionsVarargs(value: MediaQueryExpression*): Self = this.set("expressions", js.Array(value :_*))
-    
-    @scala.inline
-    def setExpressions(value: js.Array[MediaQueryExpression]): Self = this.set("expressions", value.asInstanceOf[js.Any])
+    def setExpressionsVarargs(value: MediaQueryExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
   }
 }

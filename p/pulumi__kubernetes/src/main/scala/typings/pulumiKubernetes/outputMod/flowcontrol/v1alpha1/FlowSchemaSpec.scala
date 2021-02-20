@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.flowcontrol.v1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * FlowSchemaSpec describes how the FlowSchema's specification looks like.
   */
 @js.native
-trait FlowSchemaSpec extends js.Object {
+trait FlowSchemaSpec extends StObject {
   
   /**
     * `distinguisherMethod` defines how to compute the flow distinguisher for requests that match this schema. `nil` specifies that the distinguisher is disabled and thus will always be the empty string.
@@ -44,33 +45,21 @@ object FlowSchemaSpec {
   }
   
   @scala.inline
-  implicit class FlowSchemaSpecOps[Self <: FlowSchemaSpec] (val x: Self) extends AnyVal {
+  implicit class FlowSchemaSpecMutableBuilder[Self <: FlowSchemaSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistinguisherMethod(value: FlowDistinguisherMethod): Self = StObject.set(x, "distinguisherMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchingPrecedence(value: Double): Self = StObject.set(x, "matchingPrecedence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPriorityLevelConfiguration(value: PriorityLevelConfigurationReference): Self = StObject.set(x, "priorityLevelConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinguisherMethod(value: FlowDistinguisherMethod): Self = this.set("distinguisherMethod", value.asInstanceOf[js.Any])
+    def setRules(value: js.Array[PolicyRulesWithSubjects]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchingPrecedence(value: Double): Self = this.set("matchingPrecedence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPriorityLevelConfiguration(value: PriorityLevelConfigurationReference): Self = this.set("priorityLevelConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRulesVarargs(value: PolicyRulesWithSubjects*): Self = this.set("rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: js.Array[PolicyRulesWithSubjects]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setRulesVarargs(value: PolicyRulesWithSubjects*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

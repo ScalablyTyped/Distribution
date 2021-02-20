@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatusMessage extends js.Object {
+trait StatusMessage extends StObject {
   
   /** Status message text. */
   var description: js.UndefOr[FormatMessage] = js.native
@@ -25,36 +26,24 @@ object StatusMessage {
   }
   
   @scala.inline
-  implicit class StatusMessageOps[Self <: StatusMessage] (val x: Self) extends AnyVal {
+  implicit class StatusMessageMutableBuilder[Self <: StatusMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: FormatMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: FormatMessage): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIsErrorUndefined: Self = StObject.set(x, "isError", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setRefersTo(value: String): Self = StObject.set(x, "refersTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsError(value: Boolean): Self = this.set("isError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsError: Self = this.set("isError", js.undefined)
-    
-    @scala.inline
-    def setRefersTo(value: String): Self = this.set("refersTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefersTo: Self = this.set("refersTo", js.undefined)
+    def setRefersToUndefined: Self = StObject.set(x, "refersTo", js.undefined)
   }
 }

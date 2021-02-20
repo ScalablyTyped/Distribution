@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProxySettings[M, S, SL] extends js.Object {
+trait ProxySettings[M, S, SL] extends StObject {
   
   /** Domains and hosts for which manual proxy settings are excluded. */
   var ExcludeDomains: js.UndefOr[SL] = js.native
@@ -28,39 +29,27 @@ object ProxySettings {
   }
   
   @scala.inline
-  implicit class ProxySettingsOps[Self <: ProxySettings[_, _, _], M, S, SL] (val x: Self with (ProxySettings[M, S, SL])) extends AnyVal {
+  implicit class ProxySettingsMutableBuilder[Self <: ProxySettings[_, _, _], M, S, SL] (val x: Self with (ProxySettings[M, S, SL])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeDomains(value: SL): Self = StObject.set(x, "ExcludeDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeDomainsUndefined: Self = StObject.set(x, "ExcludeDomains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManual(value: ManualProxySettings[M, ProxyLocation | ManagedProxyLocation]): Self = StObject.set(x, "Manual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ProxySettingsType | ManagedType[ProxySettingsType]): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setManualUndefined: Self = StObject.set(x, "Manual", js.undefined)
     
     @scala.inline
-    def setExcludeDomains(value: SL): Self = this.set("ExcludeDomains", value.asInstanceOf[js.Any])
+    def setPAC(value: S): Self = StObject.set(x, "PAC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludeDomains: Self = this.set("ExcludeDomains", js.undefined)
+    def setPACUndefined: Self = StObject.set(x, "PAC", js.undefined)
     
     @scala.inline
-    def setManual(value: ManualProxySettings[M, ProxyLocation | ManagedProxyLocation]): Self = this.set("Manual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManual: Self = this.set("Manual", js.undefined)
-    
-    @scala.inline
-    def setPAC(value: S): Self = this.set("PAC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePAC: Self = this.set("PAC", js.undefined)
+    def setType(value: ProxySettingsType | ManagedType[ProxySettingsType]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

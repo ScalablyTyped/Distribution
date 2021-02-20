@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeGroupsScopedList extends js.Object {
+trait NodeGroupsScopedList extends StObject {
   
   /** [Output Only] A list of node groups contained in this scope. */
   var nodeGroups: js.UndefOr[js.Array[NodeGroup]] = js.native
@@ -23,33 +24,21 @@ object NodeGroupsScopedList {
   }
   
   @scala.inline
-  implicit class NodeGroupsScopedListOps[Self <: NodeGroupsScopedList] (val x: Self) extends AnyVal {
+  implicit class NodeGroupsScopedListMutableBuilder[Self <: NodeGroupsScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeGroups(value: js.Array[NodeGroup]): Self = StObject.set(x, "nodeGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeGroupsUndefined: Self = StObject.set(x, "nodeGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeGroupsVarargs(value: NodeGroup*): Self = StObject.set(x, "nodeGroups", js.Array(value :_*))
     
     @scala.inline
-    def setNodeGroupsVarargs(value: NodeGroup*): Self = this.set("nodeGroups", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeGroups(value: js.Array[NodeGroup]): Self = this.set("nodeGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeGroups: Self = this.set("nodeGroups", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

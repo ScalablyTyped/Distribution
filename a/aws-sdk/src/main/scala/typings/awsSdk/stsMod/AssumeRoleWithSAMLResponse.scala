@@ -1,11 +1,12 @@
 package typings.awsSdk.stsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssumeRoleWithSAMLResponse extends js.Object {
+trait AssumeRoleWithSAMLResponse extends StObject {
   
   /**
     * The identifiers for the temporary security credentials that the operation returns.
@@ -56,66 +57,54 @@ object AssumeRoleWithSAMLResponse {
   }
   
   @scala.inline
-  implicit class AssumeRoleWithSAMLResponseOps[Self <: AssumeRoleWithSAMLResponse] (val x: Self) extends AnyVal {
+  implicit class AssumeRoleWithSAMLResponseMutableBuilder[Self <: AssumeRoleWithSAMLResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssumedRoleUser(value: AssumedRoleUser): Self = StObject.set(x, "AssumedRoleUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssumedRoleUserUndefined: Self = StObject.set(x, "AssumedRoleUser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudience(value: Audience): Self = StObject.set(x, "Audience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssumedRoleUser(value: AssumedRoleUser): Self = this.set("AssumedRoleUser", value.asInstanceOf[js.Any])
+    def setAudienceUndefined: Self = StObject.set(x, "Audience", js.undefined)
     
     @scala.inline
-    def deleteAssumedRoleUser: Self = this.set("AssumedRoleUser", js.undefined)
+    def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudience(value: Audience): Self = this.set("Audience", value.asInstanceOf[js.Any])
+    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
     @scala.inline
-    def deleteAudience: Self = this.set("Audience", js.undefined)
+    def setIssuer(value: Issuer): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: Credentials): Self = this.set("Credentials", value.asInstanceOf[js.Any])
+    def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("Credentials", js.undefined)
+    def setNameQualifier(value: NameQualifier): Self = StObject.set(x, "NameQualifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: Issuer): Self = this.set("Issuer", value.asInstanceOf[js.Any])
+    def setNameQualifierUndefined: Self = StObject.set(x, "NameQualifier", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("Issuer", js.undefined)
+    def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameQualifier(value: NameQualifier): Self = this.set("NameQualifier", value.asInstanceOf[js.Any])
+    def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
     
     @scala.inline
-    def deleteNameQualifier: Self = this.set("NameQualifier", js.undefined)
+    def setSubject(value: Subject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackedPolicySize(value: nonNegativeIntegerType): Self = this.set("PackedPolicySize", value.asInstanceOf[js.Any])
+    def setSubjectType(value: SubjectType): Self = StObject.set(x, "SubjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePackedPolicySize: Self = this.set("PackedPolicySize", js.undefined)
+    def setSubjectTypeUndefined: Self = StObject.set(x, "SubjectType", js.undefined)
     
     @scala.inline
-    def setSubject(value: Subject): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("Subject", js.undefined)
-    
-    @scala.inline
-    def setSubjectType(value: SubjectType): Self = this.set("SubjectType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectType: Self = this.set("SubjectType", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
   }
 }

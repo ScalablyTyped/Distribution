@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JourneySchedule extends js.Object {
+trait JourneySchedule extends StObject {
   
   /**
     * The scheduled time, in ISO 8601 format, when the journey ended or will end.
@@ -36,36 +37,24 @@ object JourneySchedule {
   }
   
   @scala.inline
-  implicit class JourneyScheduleOps[Self <: JourneySchedule] (val x: Self) extends AnyVal {
+  implicit class JourneyScheduleMutableBuilder[Self <: JourneySchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: timestampIso8601): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setTimezone(value: string): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: timestampIso8601): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
-    
-    @scala.inline
-    def setTimezone(value: string): Self = this.set("Timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+    def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
   }
 }

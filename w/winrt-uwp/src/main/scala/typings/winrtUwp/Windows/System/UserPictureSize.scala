@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserPictureSize extends js.Object
+sealed trait UserPictureSize extends StObject
 /** Represents user picture sizes. */
 @JSGlobal("Windows.System.UserPictureSize")
 @js.native
-object UserPictureSize extends js.Object {
+object UserPictureSize extends StObject {
   
   /** The picture size is 1080x1080. */
   @js.native

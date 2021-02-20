@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaInfo extends js.Object {
+trait MediaInfo extends StObject {
   
   /**
     * Optional. Used to uniquely identity the resource. If passed in, the prompt uri will be cached against this resourceId
@@ -28,33 +29,21 @@ object MediaInfo {
   }
   
   @scala.inline
-  implicit class MediaInfoOps[Self <: MediaInfo] (val x: Self) extends AnyVal {
+  implicit class MediaInfoMutableBuilder[Self <: MediaInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceId(value: NullableOption[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceIdNull: Self = StObject.set(x, "resourceId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
     @scala.inline
-    def setResourceId(value: NullableOption[String]): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceId: Self = this.set("resourceId", js.undefined)
-    
-    @scala.inline
-    def setResourceIdNull: Self = this.set("resourceId", null)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

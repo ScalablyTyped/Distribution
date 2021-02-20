@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientUserInvitation extends js.Object {
+trait ClientUserInvitation extends StObject {
   
   /** Numerical account ID of the client buyer that the invited user is associated with. The value of this field is ignored in create operations. */
   var clientAccountId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object ClientUserInvitation {
   }
   
   @scala.inline
-  implicit class ClientUserInvitationOps[Self <: ClientUserInvitation] (val x: Self) extends AnyVal {
+  implicit class ClientUserInvitationMutableBuilder[Self <: ClientUserInvitation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientAccountId(value: String): Self = StObject.set(x, "clientAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientAccountIdUndefined: Self = StObject.set(x, "clientAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAccountId(value: String): Self = this.set("clientAccountId", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteClientAccountId: Self = this.set("clientAccountId", js.undefined)
+    def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
-    
-    @scala.inline
-    def setInvitationId(value: String): Self = this.set("invitationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvitationId: Self = this.set("invitationId", js.undefined)
+    def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
   }
 }

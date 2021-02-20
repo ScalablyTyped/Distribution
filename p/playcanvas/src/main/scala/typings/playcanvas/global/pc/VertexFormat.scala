@@ -1,6 +1,7 @@
 package typings.playcanvas.global.pc
 
 import typings.playcanvas.anon.Components
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,13 +110,13 @@ class VertexFormat protected ()
     vertexCount: Double
   ) = this()
 }
-/* static members */
-@JSGlobal("pc.VertexFormat")
-@js.native
-object VertexFormat extends js.Object {
+object VertexFormat {
   
   /**
     * Returns {@link pc.VertexFormat} used to store matrices of type {@link pc.Mat4} for hardware instancing.
     */
+  /* static member */
+  @JSGlobal("pc.VertexFormat.defaultInstancingFormat")
+  @js.native
   val defaultInstancingFormat: typings.playcanvas.pc.VertexFormat = js.native
 }

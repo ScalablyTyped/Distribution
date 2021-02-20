@@ -2,12 +2,13 @@ package typings.ariClient.mod
 
 import typings.ariClient.anon.App
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Events extends js.Object {
+trait Events extends StObject {
   
   /**
     * WebSocket connection for events.

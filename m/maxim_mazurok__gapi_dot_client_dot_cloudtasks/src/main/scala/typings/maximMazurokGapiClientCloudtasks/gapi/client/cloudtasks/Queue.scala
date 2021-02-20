@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Queue extends js.Object {
+trait Queue extends StObject {
   
   /**
     * Overrides for task-level app_engine_routing. These settings apply only to App Engine tasks in this queue. Http tasks are not affected. If set, `app_engine_routing_override` is used
@@ -64,60 +65,48 @@ object Queue {
   }
   
   @scala.inline
-  implicit class QueueOps[Self <: Queue] (val x: Self) extends AnyVal {
+  implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppEngineRoutingOverride(value: AppEngineRouting): Self = StObject.set(x, "appEngineRoutingOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppEngineRoutingOverrideUndefined: Self = StObject.set(x, "appEngineRoutingOverride", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppEngineRoutingOverride(value: AppEngineRouting): Self = this.set("appEngineRoutingOverride", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteAppEngineRoutingOverride: Self = this.set("appEngineRoutingOverride", js.undefined)
+    def setPurgeTime(value: String): Self = StObject.set(x, "purgeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPurgeTimeUndefined: Self = StObject.set(x, "purgeTime", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRateLimits(value: RateLimits): Self = StObject.set(x, "rateLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurgeTime(value: String): Self = this.set("purgeTime", value.asInstanceOf[js.Any])
+    def setRateLimitsUndefined: Self = StObject.set(x, "rateLimits", js.undefined)
     
     @scala.inline
-    def deletePurgeTime: Self = this.set("purgeTime", js.undefined)
+    def setRetryConfig(value: RetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateLimits(value: RateLimits): Self = this.set("rateLimits", value.asInstanceOf[js.Any])
+    def setRetryConfigUndefined: Self = StObject.set(x, "retryConfig", js.undefined)
     
     @scala.inline
-    def deleteRateLimits: Self = this.set("rateLimits", js.undefined)
+    def setStackdriverLoggingConfig(value: StackdriverLoggingConfig): Self = StObject.set(x, "stackdriverLoggingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryConfig(value: RetryConfig): Self = this.set("retryConfig", value.asInstanceOf[js.Any])
+    def setStackdriverLoggingConfigUndefined: Self = StObject.set(x, "stackdriverLoggingConfig", js.undefined)
     
     @scala.inline
-    def deleteRetryConfig: Self = this.set("retryConfig", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackdriverLoggingConfig(value: StackdriverLoggingConfig): Self = this.set("stackdriverLoggingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackdriverLoggingConfig: Self = this.set("stackdriverLoggingConfig", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

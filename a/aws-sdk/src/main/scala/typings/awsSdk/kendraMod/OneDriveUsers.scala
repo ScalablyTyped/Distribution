@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OneDriveUsers extends js.Object {
+trait OneDriveUsers extends StObject {
   
   /**
     * A list of users whose documents should be indexed. Specify the user names in email format, for example, username@tenantdomain. If you need to index the documents of more than 100 users, use the OneDriveUserS3Path field to specify the location of a file containing a list of users.
@@ -26,33 +27,21 @@ object OneDriveUsers {
   }
   
   @scala.inline
-  implicit class OneDriveUsersOps[Self <: OneDriveUsers] (val x: Self) extends AnyVal {
+  implicit class OneDriveUsersMutableBuilder[Self <: OneDriveUsers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOneDriveUserList(value: OneDriveUserList): Self = StObject.set(x, "OneDriveUserList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOneDriveUserListUndefined: Self = StObject.set(x, "OneDriveUserList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOneDriveUserListVarargs(value: OneDriveUser*): Self = StObject.set(x, "OneDriveUserList", js.Array(value :_*))
     
     @scala.inline
-    def setOneDriveUserListVarargs(value: OneDriveUser*): Self = this.set("OneDriveUserList", js.Array(value :_*))
+    def setOneDriveUserS3Path(value: S3Path): Self = StObject.set(x, "OneDriveUserS3Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneDriveUserList(value: OneDriveUserList): Self = this.set("OneDriveUserList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOneDriveUserList: Self = this.set("OneDriveUserList", js.undefined)
-    
-    @scala.inline
-    def setOneDriveUserS3Path(value: S3Path): Self = this.set("OneDriveUserS3Path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOneDriveUserS3Path: Self = this.set("OneDriveUserS3Path", js.undefined)
+    def setOneDriveUserS3PathUndefined: Self = StObject.set(x, "OneDriveUserS3Path", js.undefined)
   }
 }

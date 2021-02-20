@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.stepsMod.StepsProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/steps", JSImport.Namespace)
-@js.native
-object primereactStepsMod extends js.Object {
+object primereactStepsMod {
   
+  @JSImport("primereact/steps", "Steps")
   @js.native
-  class Steps ()
-    extends Component[StepsProps, js.Any, js.Any]
+  class Steps protected ()
+    extends typings.primereact.stepsMod.Steps {
+    def this(props: StepsProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: StepsProps, context: js.Any) = this()
+  }
 }

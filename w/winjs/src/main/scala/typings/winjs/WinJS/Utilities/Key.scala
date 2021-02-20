@@ -1,18 +1,19 @@
 package typings.winjs.WinJS.Utilities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Key extends js.Object
+sealed trait Key extends StObject
 //#region Enumerations
 /**
   * Defines a set of keyboard values.
   **/
 @JSGlobal("WinJS.Utilities.Key")
 @js.native
-object Key extends js.Object {
+object Key extends StObject {
   
   /**
     * The F1 key.

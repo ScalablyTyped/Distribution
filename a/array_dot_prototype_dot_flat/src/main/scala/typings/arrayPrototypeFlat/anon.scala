@@ -8,16 +8,15 @@ import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`4`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`5`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`6`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply(receiver: ReadonlyArray[_]): Array[_] = js.native
     def apply(receiver: ReadonlyArray[_], depth: Double): Array[_] = js.native

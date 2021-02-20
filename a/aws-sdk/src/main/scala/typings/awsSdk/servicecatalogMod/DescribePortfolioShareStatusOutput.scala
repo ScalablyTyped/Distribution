@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePortfolioShareStatusOutput extends js.Object {
+trait DescribePortfolioShareStatusOutput extends StObject {
   
   /**
     * Organization node identifier. It can be either account id, organizational unit id or organization id.
@@ -41,48 +42,36 @@ object DescribePortfolioShareStatusOutput {
   }
   
   @scala.inline
-  implicit class DescribePortfolioShareStatusOutputOps[Self <: DescribePortfolioShareStatusOutput] (val x: Self) extends AnyVal {
+  implicit class DescribePortfolioShareStatusOutputMutableBuilder[Self <: DescribePortfolioShareStatusOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrganizationNodeValue(value: OrganizationNodeValue): Self = StObject.set(x, "OrganizationNodeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrganizationNodeValueUndefined: Self = StObject.set(x, "OrganizationNodeValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationNodeValue(value: OrganizationNodeValue): Self = this.set("OrganizationNodeValue", value.asInstanceOf[js.Any])
+    def setPortfolioIdUndefined: Self = StObject.set(x, "PortfolioId", js.undefined)
     
     @scala.inline
-    def deleteOrganizationNodeValue: Self = this.set("OrganizationNodeValue", js.undefined)
+    def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortfolioId(value: Id): Self = this.set("PortfolioId", value.asInstanceOf[js.Any])
+    def setPortfolioShareTokenUndefined: Self = StObject.set(x, "PortfolioShareToken", js.undefined)
     
     @scala.inline
-    def deletePortfolioId: Self = this.set("PortfolioId", js.undefined)
+    def setShareDetails(value: ShareDetails): Self = StObject.set(x, "ShareDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortfolioShareToken(value: Id): Self = this.set("PortfolioShareToken", value.asInstanceOf[js.Any])
+    def setShareDetailsUndefined: Self = StObject.set(x, "ShareDetails", js.undefined)
     
     @scala.inline
-    def deletePortfolioShareToken: Self = this.set("PortfolioShareToken", js.undefined)
+    def setStatus(value: ShareStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareDetails(value: ShareDetails): Self = this.set("ShareDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareDetails: Self = this.set("ShareDetails", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ShareStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

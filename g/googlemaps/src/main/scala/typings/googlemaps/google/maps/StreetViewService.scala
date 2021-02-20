@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreetViewService extends js.Object {
+trait StreetViewService extends StObject {
   
   def getPanorama(
     request: StreetViewLocationRequest,

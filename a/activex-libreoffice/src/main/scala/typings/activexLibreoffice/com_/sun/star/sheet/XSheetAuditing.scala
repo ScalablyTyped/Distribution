@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,39 +73,27 @@ object XSheetAuditing {
   }
   
   @scala.inline
-  implicit class XSheetAuditingOps[Self <: XSheetAuditing] (val x: Self) extends AnyVal {
+  implicit class XSheetAuditingMutableBuilder[Self <: XSheetAuditing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearArrows(value: () => Unit): Self = StObject.set(x, "clearArrows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideDependents(value: CellAddress => Boolean): Self = StObject.set(x, "hideDependents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHidePrecedents(value: CellAddress => Boolean): Self = StObject.set(x, "hidePrecedents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearArrows(value: () => Unit): Self = this.set("clearArrows", js.Any.fromFunction0(value))
+    def setShowDependents(value: CellAddress => Boolean): Self = StObject.set(x, "showDependents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideDependents(value: CellAddress => Boolean): Self = this.set("hideDependents", js.Any.fromFunction1(value))
+    def setShowErrors(value: CellAddress => Boolean): Self = StObject.set(x, "showErrors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHidePrecedents(value: CellAddress => Boolean): Self = this.set("hidePrecedents", js.Any.fromFunction1(value))
+    def setShowInvalid(value: () => Boolean): Self = StObject.set(x, "showInvalid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowDependents(value: CellAddress => Boolean): Self = this.set("showDependents", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowErrors(value: CellAddress => Boolean): Self = this.set("showErrors", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowInvalid(value: () => Boolean): Self = this.set("showInvalid", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowPrecedents(value: CellAddress => Boolean): Self = this.set("showPrecedents", js.Any.fromFunction1(value))
+    def setShowPrecedents(value: CellAddress => Boolean): Self = StObject.set(x, "showPrecedents", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplyKeyboardMarkup extends js.Object {
+trait ReplyKeyboardMarkup extends StObject {
   
   var keyboard: js.Array[js.Array[KeyboardButton]] = js.native
   
@@ -24,42 +25,30 @@ object ReplyKeyboardMarkup {
   }
   
   @scala.inline
-  implicit class ReplyKeyboardMarkupOps[Self <: ReplyKeyboardMarkup] (val x: Self) extends AnyVal {
+  implicit class ReplyKeyboardMarkupMutableBuilder[Self <: ReplyKeyboardMarkup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyboard(value: js.Array[js.Array[KeyboardButton]]): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyboardVarargs(value: js.Array[KeyboardButton]*): Self = StObject.set(x, "keyboard", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOne_time_keyboard(value: Boolean): Self = StObject.set(x, "one_time_keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardVarargs(value: js.Array[KeyboardButton]*): Self = this.set("keyboard", js.Array(value :_*))
+    def setOne_time_keyboardUndefined: Self = StObject.set(x, "one_time_keyboard", js.undefined)
     
     @scala.inline
-    def setKeyboard(value: js.Array[js.Array[KeyboardButton]]): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setResize_keyboard(value: Boolean): Self = StObject.set(x, "resize_keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOne_time_keyboard(value: Boolean): Self = this.set("one_time_keyboard", value.asInstanceOf[js.Any])
+    def setResize_keyboardUndefined: Self = StObject.set(x, "resize_keyboard", js.undefined)
     
     @scala.inline
-    def deleteOne_time_keyboard: Self = this.set("one_time_keyboard", js.undefined)
+    def setSelective(value: Boolean): Self = StObject.set(x, "selective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResize_keyboard(value: Boolean): Self = this.set("resize_keyboard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResize_keyboard: Self = this.set("resize_keyboard", js.undefined)
-    
-    @scala.inline
-    def setSelective(value: Boolean): Self = this.set("selective", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelective: Self = this.set("selective", js.undefined)
+    def setSelectiveUndefined: Self = StObject.set(x, "selective", js.undefined)
   }
 }

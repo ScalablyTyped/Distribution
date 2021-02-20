@@ -1,11 +1,12 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVersion extends js.Object {
+trait IVersion extends StObject {
   
   /** [Method] Create a closure for deprecated code
     * @param packageName String The package name.
@@ -149,146 +150,134 @@ object IVersion {
   }
   
   @scala.inline
-  implicit class IVersionOps[Self <: IVersion] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class IVersionMutableBuilder[Self <: IVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDeprecate(
       value: (/* packageName */ js.UndefOr[java.lang.String], /* since */ js.UndefOr[java.lang.String], /* closure */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("deprecate", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "deprecate", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteDeprecate: Self = this.set("deprecate", js.undefined)
+    def setDeprecateUndefined: Self = StObject.set(x, "deprecate", js.undefined)
     
     @scala.inline
-    def setEquals(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setEquals_(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def setGetBuild(value: () => Double): Self = this.set("getBuild", js.Any.fromFunction0(value))
+    def setGetBuild(value: () => Double): Self = StObject.set(x, "getBuild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetBuild: Self = this.set("getBuild", js.undefined)
+    def setGetBuildUndefined: Self = StObject.set(x, "getBuild", js.undefined)
     
     @scala.inline
-    def setGetMajor(value: () => Double): Self = this.set("getMajor", js.Any.fromFunction0(value))
+    def setGetMajor(value: () => Double): Self = StObject.set(x, "getMajor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetMajor: Self = this.set("getMajor", js.undefined)
+    def setGetMajorUndefined: Self = StObject.set(x, "getMajor", js.undefined)
     
     @scala.inline
-    def setGetMinor(value: () => Double): Self = this.set("getMinor", js.Any.fromFunction0(value))
+    def setGetMinor(value: () => Double): Self = StObject.set(x, "getMinor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetMinor: Self = this.set("getMinor", js.undefined)
+    def setGetMinorUndefined: Self = StObject.set(x, "getMinor", js.undefined)
     
     @scala.inline
-    def setGetPatch(value: () => Double): Self = this.set("getPatch", js.Any.fromFunction0(value))
+    def setGetPatch(value: () => Double): Self = StObject.set(x, "getPatch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetPatch: Self = this.set("getPatch", js.undefined)
+    def setGetPatchUndefined: Self = StObject.set(x, "getPatch", js.undefined)
     
     @scala.inline
-    def setGetRelease(value: () => Double): Self = this.set("getRelease", js.Any.fromFunction0(value))
+    def setGetRelease(value: () => Double): Self = StObject.set(x, "getRelease", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetRelease: Self = this.set("getRelease", js.undefined)
+    def setGetReleaseUndefined: Self = StObject.set(x, "getRelease", js.undefined)
     
     @scala.inline
-    def setGetShortVersion(value: () => java.lang.String): Self = this.set("getShortVersion", js.Any.fromFunction0(value))
+    def setGetShortVersion(value: () => java.lang.String): Self = StObject.set(x, "getShortVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetShortVersion: Self = this.set("getShortVersion", js.undefined)
+    def setGetShortVersionUndefined: Self = StObject.set(x, "getShortVersion", js.undefined)
     
     @scala.inline
-    def setGetVersion(value: /* packageName */ js.UndefOr[java.lang.String] => IVersion): Self = this.set("getVersion", js.Any.fromFunction1(value))
+    def setGetVersion(value: /* packageName */ js.UndefOr[java.lang.String] => IVersion): Self = StObject.set(x, "getVersion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetVersion: Self = this.set("getVersion", js.undefined)
+    def setGetVersionUndefined: Self = StObject.set(x, "getVersion", js.undefined)
     
     @scala.inline
-    def setGt(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("gt", js.Any.fromFunction1(value))
+    def setGt(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGt: Self = this.set("gt", js.undefined)
+    def setGtEq(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "gtEq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGtEq(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("gtEq", js.Any.fromFunction1(value))
+    def setGtEqUndefined: Self = StObject.set(x, "gtEq", js.undefined)
     
     @scala.inline
-    def deleteGtEq: Self = this.set("gtEq", js.undefined)
+    def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
     
     @scala.inline
-    def setIsGreaterThan(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("isGreaterThan", js.Any.fromFunction1(value))
+    def setIsGreaterThan(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isGreaterThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsGreaterThan: Self = this.set("isGreaterThan", js.undefined)
+    def setIsGreaterThanOrEqual(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isGreaterThanOrEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsGreaterThanOrEqual(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("isGreaterThanOrEqual", js.Any.fromFunction1(value))
+    def setIsGreaterThanOrEqualUndefined: Self = StObject.set(x, "isGreaterThanOrEqual", js.undefined)
     
     @scala.inline
-    def deleteIsGreaterThanOrEqual: Self = this.set("isGreaterThanOrEqual", js.undefined)
+    def setIsGreaterThanUndefined: Self = StObject.set(x, "isGreaterThan", js.undefined)
     
     @scala.inline
-    def setIsLessThan(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("isLessThan", js.Any.fromFunction1(value))
+    def setIsLessThan(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLessThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsLessThan: Self = this.set("isLessThan", js.undefined)
+    def setIsLessThanOrEqual(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLessThanOrEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsLessThanOrEqual(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("isLessThanOrEqual", js.Any.fromFunction1(value))
+    def setIsLessThanOrEqualUndefined: Self = StObject.set(x, "isLessThanOrEqual", js.undefined)
     
     @scala.inline
-    def deleteIsLessThanOrEqual: Self = this.set("isLessThanOrEqual", js.undefined)
+    def setIsLessThanUndefined: Self = StObject.set(x, "isLessThan", js.undefined)
     
     @scala.inline
-    def setLt(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("lt", js.Any.fromFunction1(value))
+    def setLt(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLt: Self = this.set("lt", js.undefined)
+    def setLtEq(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "ltEq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLtEq(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("ltEq", js.Any.fromFunction1(value))
+    def setLtEqUndefined: Self = StObject.set(x, "ltEq", js.undefined)
     
     @scala.inline
-    def deleteLtEq: Self = this.set("ltEq", js.undefined)
+    def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
     
     @scala.inline
-    def setMatch(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = this.set("match", js.Any.fromFunction1(value))
+    def setMatch(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def setSetVersion(value: (/* packageName */ js.UndefOr[java.lang.String], /* version */ js.UndefOr[js.Any]) => _): Self = this.set("setVersion", js.Any.fromFunction2(value))
+    def setSetVersion(value: (/* packageName */ js.UndefOr[java.lang.String], /* version */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "setVersion", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSetVersion: Self = this.set("setVersion", js.undefined)
+    def setSetVersionUndefined: Self = StObject.set(x, "setVersion", js.undefined)
     
     @scala.inline
-    def setToArray(value: () => Array): Self = this.set("toArray", js.Any.fromFunction0(value))
+    def setToArray(value: () => Array): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteToArray: Self = this.set("toArray", js.undefined)
+    def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
     
     @scala.inline
-    def setToNumber(value: /* value */ js.UndefOr[Double] => Double): Self = this.set("toNumber", js.Any.fromFunction1(value))
+    def setToNumber(value: /* value */ js.UndefOr[Double] => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteToNumber: Self = this.set("toNumber", js.undefined)
+    def setToNumberUndefined: Self = StObject.set(x, "toNumber", js.undefined)
   }
 }

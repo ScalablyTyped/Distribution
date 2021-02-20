@@ -1,12 +1,13 @@
 package typings.formatjsEcma402Abstract.typesNumberMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberFormatLocaleInternalData extends js.Object {
+trait NumberFormatLocaleInternalData extends StObject {
   
   var currencies: Record[String, CurrencyData] = js.native
   
@@ -30,33 +31,21 @@ object NumberFormatLocaleInternalData {
   }
   
   @scala.inline
-  implicit class NumberFormatLocaleInternalDataOps[Self <: NumberFormatLocaleInternalData] (val x: Self) extends AnyVal {
+  implicit class NumberFormatLocaleInternalDataMutableBuilder[Self <: NumberFormatLocaleInternalData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencies(value: Record[String, CurrencyData]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
     
     @scala.inline
-    def setCurrencies(value: Record[String, CurrencyData]): Self = this.set("currencies", value.asInstanceOf[js.Any])
+    def setNumbers(value: RawNumberData): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNuVarargs(value: String*): Self = this.set("nu", js.Array(value :_*))
-    
-    @scala.inline
-    def setNu(value: js.Array[String]): Self = this.set("nu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumbers(value: RawNumberData): Self = this.set("numbers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnits(value: UnitDataTable): Self = this.set("units", value.asInstanceOf[js.Any])
+    def setUnits(value: UnitDataTable): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
   }
 }

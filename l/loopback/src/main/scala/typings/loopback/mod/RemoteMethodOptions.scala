@@ -1,5 +1,6 @@
 package typings.loopback.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {RemoteMethodArgument} returns Describes the remote method's callback arguments
   */
 @js.native
-trait RemoteMethodOptions extends js.Object {
+trait RemoteMethodOptions extends StObject {
   
   /**
     * Defines arguments that the remote method accepts. These arguments map to the static method you define. For the example above, you can see the function signature:
@@ -73,63 +74,51 @@ object RemoteMethodOptions {
   }
   
   @scala.inline
-  implicit class RemoteMethodOptionsOps[Self <: RemoteMethodOptions] (val x: Self) extends AnyVal {
+  implicit class RemoteMethodOptionsMutableBuilder[Self <: RemoteMethodOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccepts(value: js.Array[RemoteMethodArgument]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptsVarargs(value: RemoteMethodArgument*): Self = StObject.set(x, "accepts", js.Array(value :_*))
     
     @scala.inline
-    def setAcceptsVarargs(value: RemoteMethodArgument*): Self = this.set("accepts", js.Array(value :_*))
+    def setDescription(value: String | js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccepts(value: js.Array[RemoteMethodArgument]): Self = this.set("accepts", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAccepts: Self = this.set("accepts", js.undefined)
+    def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
     
     @scala.inline
-    def setDescriptionVarargs(value: String*): Self = this.set("description", js.Array(value :_*))
+    def setHttp(value: RemoteHttpOptions): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String | js.Array[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp(value: RemoteHttpOptions): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
     
     @scala.inline
-    def deleteHttp: Self = this.set("http", js.undefined)
+    def setNotes(value: String | js.Array[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStatic(value: Boolean): Self = this.set("isStatic", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteIsStatic: Self = this.set("isStatic", js.undefined)
+    def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value :_*))
     
     @scala.inline
-    def setNotesVarargs(value: String*): Self = this.set("notes", js.Array(value :_*))
+    def setReturns(value: RemoteMethodArgument): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String | js.Array[String]): Self = this.set("notes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
-    
-    @scala.inline
-    def setReturns(value: RemoteMethodArgument): Self = this.set("returns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturns: Self = this.set("returns", js.undefined)
+    def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
   }
 }

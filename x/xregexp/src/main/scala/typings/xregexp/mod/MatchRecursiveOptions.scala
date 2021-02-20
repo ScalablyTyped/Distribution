@@ -1,5 +1,6 @@
 package typings.xregexp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options for when doing recursive matching.
   */
 @js.native
-trait MatchRecursiveOptions extends js.Object {
+trait MatchRecursiveOptions extends StObject {
   
   /**
     * The escape character to use.
@@ -34,36 +35,24 @@ object MatchRecursiveOptions {
   }
   
   @scala.inline
-  implicit class MatchRecursiveOptionsOps[Self <: MatchRecursiveOptions] (val x: Self) extends AnyVal {
+  implicit class MatchRecursiveOptionsMutableBuilder[Self <: MatchRecursiveOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEscapeCharNull: Self = StObject.set(x, "escapeChar", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEscapeCharUndefined: Self = StObject.set(x, "escapeChar", js.undefined)
     
     @scala.inline
-    def setEscapeChar(value: String): Self = this.set("escapeChar", value.asInstanceOf[js.Any])
+    def setValueNames(value: MatchRecursiveValueNames): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEscapeChar: Self = this.set("escapeChar", js.undefined)
+    def setValueNamesNull: Self = StObject.set(x, "valueNames", null)
     
     @scala.inline
-    def setEscapeCharNull: Self = this.set("escapeChar", null)
-    
-    @scala.inline
-    def setValueNames(value: MatchRecursiveValueNames): Self = this.set("valueNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueNames: Self = this.set("valueNames", js.undefined)
-    
-    @scala.inline
-    def setValueNamesNull: Self = this.set("valueNames", null)
+    def setValueNamesUndefined: Self = StObject.set(x, "valueNames", js.undefined)
   }
 }

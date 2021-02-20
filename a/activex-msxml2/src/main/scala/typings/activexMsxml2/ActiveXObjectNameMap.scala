@@ -11,12 +11,13 @@ import typings.activexMsxml2.MSXML2.ServerXMLHTTP60
 import typings.activexMsxml2.MSXML2.XMLHTTP60
 import typings.activexMsxml2.MSXML2.XMLSchemaCache60
 import typings.activexMsxml2.MSXML2.XSLTemplate60
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Msxml2.DOMDocument")
   var Msxml2DotDOMDocument: DOMDocument60 = js.native

@@ -3,12 +3,13 @@ package typings.webix.mod.ui
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait filemanagerConfig extends js.Object {
+trait filemanagerConfig extends StObject {
   
   var animate: js.UndefOr[js.Any] = js.native
   
@@ -109,294 +110,282 @@ object filemanagerConfig {
   }
   
   @scala.inline
-  implicit class filemanagerConfigOps[Self <: filemanagerConfig] (val x: Self) extends AnyVal {
+  implicit class filemanagerConfigMutableBuilder[Self <: filemanagerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: js.Any): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderless(value: Boolean): Self = this.set("borderless", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteBorderless: Self = this.set("borderless", js.undefined)
+    def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String | HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: js.Any): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    def setDatathrottle(value: Double): Self = StObject.set(x, "datathrottle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDatathrottleUndefined: Self = StObject.set(x, "datathrottle", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatathrottle(value: Double): Self = this.set("datathrottle", value.asInstanceOf[js.Any])
+    def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
     
     @scala.inline
-    def deleteDatathrottle: Self = this.set("datathrottle", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatatype(value: String): Self = this.set("datatype", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDatatype: Self = this.set("datatype", js.undefined)
+    def setFilterMode(value: js.Any): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterMode(value: js.Any): Self = this.set("filterMode", value.asInstanceOf[js.Any])
+    def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
     @scala.inline
-    def deleteFilterMode: Self = this.set("filterMode", js.undefined)
+    def setHandlers(value: js.Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravity(value: Double): Self = this.set("gravity", value.asInstanceOf[js.Any])
+    def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
     @scala.inline
-    def deleteGravity: Self = this.set("gravity", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandlers(value: js.Any): Self = this.set("handlers", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHandlers: Self = this.set("handlers", js.undefined)
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: js.Any): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setLegacyUploader(value: Boolean): Self = StObject.set(x, "legacyUploader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLegacyUploaderUndefined: Self = StObject.set(x, "legacyUploader", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegacyUploader(value: Boolean): Self = this.set("legacyUploader", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def deleteLegacyUploader: Self = this.set("legacyUploader", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setMenuFilter(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "menuFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setMenuFilterUndefined: Self = StObject.set(x, "menuFilter", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuFilter(value: /* repeated */ js.Any => js.Any): Self = this.set("menuFilter", js.Any.fromFunction1(value))
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def deleteMenuFilter: Self = this.set("menuFilter", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setModes(value: js.Array[_]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModesVarargs(value: js.Any*): Self = StObject.set(x, "modes", js.Array(value :_*))
     
     @scala.inline
-    def setModesVarargs(value: js.Any*): Self = this.set("modes", js.Array(value :_*))
+    def setNoFileCache(value: Boolean): Self = StObject.set(x, "noFileCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModes(value: js.Array[_]): Self = this.set("modes", value.asInstanceOf[js.Any])
+    def setNoFileCacheUndefined: Self = StObject.set(x, "noFileCache", js.undefined)
     
     @scala.inline
-    def deleteModes: Self = this.set("modes", js.undefined)
+    def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoFileCache(value: Boolean): Self = this.set("noFileCache", value.asInstanceOf[js.Any])
+    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
-    def deleteNoFileCache: Self = this.set("noFileCache", js.undefined)
+    def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn(value: EventHash): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteOn: Self = this.set("on", js.undefined)
+    def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: js.Any): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingX(value: Double): Self = this.set("paddingX", value.asInstanceOf[js.Any])
+    def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
     @scala.inline
-    def deletePaddingX: Self = this.set("paddingX", js.undefined)
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingY(value: Double): Self = this.set("paddingY", value.asInstanceOf[js.Any])
+    def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
     @scala.inline
-    def deletePaddingY: Self = this.set("paddingY", js.undefined)
+    def setReady(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
     @scala.inline
-    def deleteReadonly: Self = this.set("readonly", js.undefined)
+    def setRemoveMissed(value: Boolean): Self = StObject.set(x, "removeMissed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReady(value: /* repeated */ js.Any => js.Any): Self = this.set("ready", js.Any.fromFunction1(value))
+    def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
     
     @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setSave(value: js.Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveMissed(value: Boolean): Self = this.set("removeMissed", value.asInstanceOf[js.Any])
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deleteRemoveMissed: Self = this.set("removeMissed", js.undefined)
+    def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: js.Any): Self = this.set("save", value.asInstanceOf[js.Any])
+    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
     @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setStructure(value: js.Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheme(value: js.Any): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    def setStructureUndefined: Self = StObject.set(x, "structure", js.undefined)
     
     @scala.inline
-    def deleteScheme: Self = this.set("scheme", js.undefined)
+    def setTemplateCreate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateCreate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStructure(value: js.Any): Self = this.set("structure", value.asInstanceOf[js.Any])
+    def setTemplateCreateUndefined: Self = StObject.set(x, "templateCreate", js.undefined)
     
     @scala.inline
-    def deleteStructure: Self = this.set("structure", js.undefined)
+    def setTemplateDate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTemplateCreate(value: /* repeated */ js.Any => js.Any): Self = this.set("templateCreate", js.Any.fromFunction1(value))
+    def setTemplateDateUndefined: Self = StObject.set(x, "templateDate", js.undefined)
     
     @scala.inline
-    def deleteTemplateCreate: Self = this.set("templateCreate", js.undefined)
+    def setTemplateIcon(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTemplateDate(value: /* repeated */ js.Any => js.Any): Self = this.set("templateDate", js.Any.fromFunction1(value))
+    def setTemplateIconUndefined: Self = StObject.set(x, "templateIcon", js.undefined)
     
     @scala.inline
-    def deleteTemplateDate: Self = this.set("templateDate", js.undefined)
+    def setTemplateName(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTemplateIcon(value: /* repeated */ js.Any => js.Any): Self = this.set("templateIcon", js.Any.fromFunction1(value))
+    def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
     
     @scala.inline
-    def deleteTemplateIcon: Self = this.set("templateIcon", js.undefined)
+    def setTemplateSize(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTemplateName(value: /* repeated */ js.Any => js.Any): Self = this.set("templateName", js.Any.fromFunction1(value))
+    def setTemplateSizeUndefined: Self = StObject.set(x, "templateSize", js.undefined)
     
     @scala.inline
-    def deleteTemplateName: Self = this.set("templateName", js.undefined)
+    def setTemplateType(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTemplateSize(value: /* repeated */ js.Any => js.Any): Self = this.set("templateSize", js.Any.fromFunction1(value))
+    def setTemplateTypeUndefined: Self = StObject.set(x, "templateType", js.undefined)
     
     @scala.inline
-    def deleteTemplateSize: Self = this.set("templateSize", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateType(value: /* repeated */ js.Any => js.Any): Self = this.set("templateType", js.Any.fromFunction1(value))
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTemplateType: Self = this.set("templateType", js.undefined)
+    def setUploadProgress(value: js.Any): Self = StObject.set(x, "uploadProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUploadProgressUndefined: Self = StObject.set(x, "uploadProgress", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadProgress(value: js.Any): Self = this.set("uploadProgress", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteUploadProgress: Self = this.set("uploadProgress", js.undefined)
+    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: js.Any): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

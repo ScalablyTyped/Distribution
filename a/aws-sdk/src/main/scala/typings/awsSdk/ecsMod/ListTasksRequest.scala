@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTasksRequest extends js.Object {
+trait ListTasksRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the tasks to list. If you do not specify a cluster, the default cluster is assumed.
@@ -61,72 +62,60 @@ object ListTasksRequest {
   }
   
   @scala.inline
-  implicit class ListTasksRequestOps[Self <: ListTasksRequest] (val x: Self) extends AnyVal {
+  implicit class ListTasksRequestMutableBuilder[Self <: ListTasksRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerInstance(value: String): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
     
     @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setDesiredStatus(value: DesiredStatus): Self = StObject.set(x, "desiredStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerInstance(value: String): Self = this.set("containerInstance", value.asInstanceOf[js.Any])
+    def setDesiredStatusUndefined: Self = StObject.set(x, "desiredStatus", js.undefined)
     
     @scala.inline
-    def deleteContainerInstance: Self = this.set("containerInstance", js.undefined)
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredStatus(value: DesiredStatus): Self = this.set("desiredStatus", value.asInstanceOf[js.Any])
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def deleteDesiredStatus: Self = this.set("desiredStatus", js.undefined)
+    def setLaunchType(value: LaunchType): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchType(value: LaunchType): Self = this.set("launchType", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteLaunchType: Self = this.set("launchType", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setStartedBy(value: String): Self = StObject.set(x, "startedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
-    
-    @scala.inline
-    def setStartedBy(value: String): Self = this.set("startedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartedBy: Self = this.set("startedBy", js.undefined)
+    def setStartedByUndefined: Self = StObject.set(x, "startedBy", js.undefined)
   }
 }

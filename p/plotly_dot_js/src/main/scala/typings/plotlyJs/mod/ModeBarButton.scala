@@ -1,12 +1,13 @@
 package typings.plotlyJs.mod
 
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModeBarButton extends js.Object {
+trait ModeBarButton extends StObject {
   
   /**
     * attribute associated with button,

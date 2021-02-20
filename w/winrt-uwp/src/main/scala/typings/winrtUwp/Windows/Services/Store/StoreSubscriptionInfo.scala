@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Services.Store
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides subscription info for a product SKU that represents a subscription with recurring billing. */
 @js.native
-trait StoreSubscriptionInfo extends js.Object {
+trait StoreSubscriptionInfo extends StObject {
   
   /** Gets the duration of the billing period for a subscription, in the units specified by the BillingPeriodUnit property. */
   var billingPeriod: Double = js.native
@@ -38,33 +39,21 @@ object StoreSubscriptionInfo {
   }
   
   @scala.inline
-  implicit class StoreSubscriptionInfoOps[Self <: StoreSubscriptionInfo] (val x: Self) extends AnyVal {
+  implicit class StoreSubscriptionInfoMutableBuilder[Self <: StoreSubscriptionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingPeriod(value: Double): Self = StObject.set(x, "billingPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingPeriodUnit(value: StoreDurationUnit): Self = StObject.set(x, "billingPeriodUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasTrialPeriod(value: Boolean): Self = StObject.set(x, "hasTrialPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingPeriod(value: Double): Self = this.set("billingPeriod", value.asInstanceOf[js.Any])
+    def setTrialPeriod(value: Double): Self = StObject.set(x, "trialPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingPeriodUnit(value: StoreDurationUnit): Self = this.set("billingPeriodUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasTrialPeriod(value: Boolean): Self = this.set("hasTrialPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrialPeriod(value: Double): Self = this.set("trialPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrialPeriodUnit(value: StoreDurationUnit): Self = this.set("trialPeriodUnit", value.asInstanceOf[js.Any])
+    def setTrialPeriodUnit(value: StoreDurationUnit): Self = StObject.set(x, "trialPeriodUnit", value.asInstanceOf[js.Any])
   }
 }

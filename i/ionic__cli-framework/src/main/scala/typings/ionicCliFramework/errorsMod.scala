@@ -2,22 +2,14 @@ package typings.ionicCliFramework
 
 import typings.ionicCliFramework.definitionsMod.ValidationError
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/cli-framework/errors", JSImport.Namespace)
-@js.native
-object errorsMod extends js.Object {
+object errorsMod {
   
-  val ERROR_COMMAND_NOT_FOUND: /* "ERR_ICF_COMMAND_NOT_FOUND" */ String = js.native
-  
-  val ERROR_INPUT_VALIDATION: /* "ERR_ICF_INPUT_VALIDATION" */ String = js.native
-  
-  val ERROR_IPC_MODULE_INACCESSIBLE: /* "ERR_ICF_IPC_MODULE_INACCESSIBLE" */ String = js.native
-  
-  val ERROR_IPC_UNKNOWN_PROCEDURE: /* "ERR_ICF_IPC_UNKNOWN_PROCEDURE" */ String = js.native
-  
+  @JSImport("@ionic/cli-framework/errors", "BaseError")
   @js.native
   abstract class BaseError protected () extends Error {
     def this(message: String) = this()
@@ -34,6 +26,7 @@ object errorsMod extends js.Object {
     var stack_BaseError: String = js.native
   }
   
+  @JSImport("@ionic/cli-framework/errors", "CommandNotFoundError")
   @js.native
   class CommandNotFoundError protected () extends BaseError {
     def this(message: String, args: js.Array[String]) = this()
@@ -44,9 +37,29 @@ object errorsMod extends js.Object {
     var code_CommandNotFoundError: String = js.native
   }
   
+  @JSImport("@ionic/cli-framework/errors", "ERROR_COMMAND_NOT_FOUND")
   @js.native
-  class IPCError () extends BaseError
+  val ERROR_COMMAND_NOT_FOUND: /* "ERR_ICF_COMMAND_NOT_FOUND" */ String = js.native
   
+  @JSImport("@ionic/cli-framework/errors", "ERROR_INPUT_VALIDATION")
+  @js.native
+  val ERROR_INPUT_VALIDATION: /* "ERR_ICF_INPUT_VALIDATION" */ String = js.native
+  
+  @JSImport("@ionic/cli-framework/errors", "ERROR_IPC_MODULE_INACCESSIBLE")
+  @js.native
+  val ERROR_IPC_MODULE_INACCESSIBLE: /* "ERR_ICF_IPC_MODULE_INACCESSIBLE" */ String = js.native
+  
+  @JSImport("@ionic/cli-framework/errors", "ERROR_IPC_UNKNOWN_PROCEDURE")
+  @js.native
+  val ERROR_IPC_UNKNOWN_PROCEDURE: /* "ERR_ICF_IPC_UNKNOWN_PROCEDURE" */ String = js.native
+  
+  @JSImport("@ionic/cli-framework/errors", "IPCError")
+  @js.native
+  class IPCError protected () extends BaseError {
+    def this(message: String) = this()
+  }
+  
+  @JSImport("@ionic/cli-framework/errors", "InputValidationError")
   @js.native
   class InputValidationError protected () extends BaseError {
     def this(message: String, errors: js.Array[ValidationError]) = this()

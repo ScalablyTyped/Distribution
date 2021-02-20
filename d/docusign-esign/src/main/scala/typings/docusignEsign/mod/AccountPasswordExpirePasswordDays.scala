@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountPasswordExpirePasswordDays extends js.Object {
+trait AccountPasswordExpirePasswordDays extends StObject {
   
   var maximumDays: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object AccountPasswordExpirePasswordDays {
   }
   
   @scala.inline
-  implicit class AccountPasswordExpirePasswordDaysOps[Self <: AccountPasswordExpirePasswordDays] (val x: Self) extends AnyVal {
+  implicit class AccountPasswordExpirePasswordDaysMutableBuilder[Self <: AccountPasswordExpirePasswordDays] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumDays(value: String): Self = StObject.set(x, "maximumDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumDaysUndefined: Self = StObject.set(x, "maximumDays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumDays(value: String): Self = StObject.set(x, "minimumDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumDays(value: String): Self = this.set("maximumDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumDays: Self = this.set("maximumDays", js.undefined)
-    
-    @scala.inline
-    def setMinimumDays(value: String): Self = this.set("minimumDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumDays: Self = this.set("minimumDays", js.undefined)
+    def setMinimumDaysUndefined: Self = StObject.set(x, "minimumDays", js.undefined)
   }
 }

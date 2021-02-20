@@ -1,11 +1,12 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaMessageSet extends js.Object {
+trait SchemaMessageSet extends StObject {
   
   var recordMessageSetExt: js.UndefOr[SchemaLivegraphBacktraceRecordInfo] = js.native
 }
@@ -18,24 +19,12 @@ object SchemaMessageSet {
   }
   
   @scala.inline
-  implicit class SchemaMessageSetOps[Self <: SchemaMessageSet] (val x: Self) extends AnyVal {
+  implicit class SchemaMessageSetMutableBuilder[Self <: SchemaMessageSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecordMessageSetExt(value: SchemaLivegraphBacktraceRecordInfo): Self = StObject.set(x, "recordMessageSetExt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecordMessageSetExt(value: SchemaLivegraphBacktraceRecordInfo): Self = this.set("recordMessageSetExt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordMessageSetExt: Self = this.set("recordMessageSetExt", js.undefined)
+    def setRecordMessageSetExtUndefined: Self = StObject.set(x, "recordMessageSetExt", js.undefined)
   }
 }

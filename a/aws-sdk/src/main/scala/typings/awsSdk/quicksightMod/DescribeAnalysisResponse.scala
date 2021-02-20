@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAnalysisResponse extends js.Object {
+trait DescribeAnalysisResponse extends StObject {
   
   /**
     * A metadata structure that contains summary information for the analysis that you're describing.
@@ -31,36 +32,24 @@ object DescribeAnalysisResponse {
   }
   
   @scala.inline
-  implicit class DescribeAnalysisResponseOps[Self <: DescribeAnalysisResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAnalysisResponseMutableBuilder[Self <: DescribeAnalysisResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysis(value: Analysis): Self = StObject.set(x, "Analysis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisUndefined: Self = StObject.set(x, "Analysis", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysis(value: Analysis): Self = this.set("Analysis", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
     @scala.inline
-    def deleteAnalysis: Self = this.set("Analysis", js.undefined)
+    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("RequestId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

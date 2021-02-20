@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPanorama extends js.Object {
+trait IPanorama extends StObject {
   
   def getAngularBBox(): js.Array[Double] = js.native
   
@@ -53,54 +54,42 @@ object IPanorama {
   }
   
   @scala.inline
-  implicit class IPanoramaOps[Self <: IPanorama] (val x: Self) extends AnyVal {
+  implicit class IPanoramaMutableBuilder[Self <: IPanorama] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAngularBBox(value: () => js.Array[Double]): Self = StObject.set(x, "getAngularBBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetConnectionArrows(value: () => js.Array[IPanoramaConnectionArrow]): Self = StObject.set(x, "getConnectionArrows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetConnectionMarkers(value: () => js.Array[IPanoramaConnectionMarker]): Self = StObject.set(x, "getConnectionMarkers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAngularBBox(value: () => js.Array[Double]): Self = this.set("getAngularBBox", js.Any.fromFunction0(value))
+    def setGetCoordSystem(value: () => ICoordSystem): Self = StObject.set(x, "getCoordSystem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConnectionArrows(value: () => js.Array[IPanoramaConnectionArrow]): Self = this.set("getConnectionArrows", js.Any.fromFunction0(value))
+    def setGetDefaultDirection(value: () => js.Array[Double]): Self = StObject.set(x, "getDefaultDirection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConnectionMarkers(value: () => js.Array[IPanoramaConnectionMarker]): Self = this.set("getConnectionMarkers", js.Any.fromFunction0(value))
+    def setGetDefaultSpan(value: () => js.Array[Double]): Self = StObject.set(x, "getDefaultSpan", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCoordSystem(value: () => ICoordSystem): Self = this.set("getCoordSystem", js.Any.fromFunction0(value))
+    def setGetGraph(value: () => IPanoramaGraph | Null): Self = StObject.set(x, "getGraph", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultDirection(value: () => js.Array[Double]): Self = this.set("getDefaultDirection", js.Any.fromFunction0(value))
+    def setGetMarkers(value: () => js.Array[IPanoramaMarker]): Self = StObject.set(x, "getMarkers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultSpan(value: () => js.Array[Double]): Self = this.set("getDefaultSpan", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGraph(value: () => IPanoramaGraph | Null): Self = this.set("getGraph", js.Any.fromFunction0(value))
+    def setGetPosition(value: () => js.Array[Double]): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMarkers(value: () => js.Array[IPanoramaMarker]): Self = this.set("getMarkers", js.Any.fromFunction0(value))
+    def setGetTileLevels(value: () => js.Array[IPanoramaTileLevel]): Self = StObject.set(x, "getTileLevels", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPosition(value: () => js.Array[Double]): Self = this.set("getPosition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTileLevels(value: () => js.Array[IPanoramaTileLevel]): Self = this.set("getTileLevels", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTileSize(value: () => js.Array[Double]): Self = this.set("getTileSize", js.Any.fromFunction0(value))
+    def setGetTileSize(value: () => js.Array[Double]): Self = StObject.set(x, "getTileSize", js.Any.fromFunction0(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.babylonjs.mod
 
 import typings.babylonjs.animatableInterfaceMod.IAnimatable
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,15 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SerializationHelper ()
   extends typings.babylonjs.legacyMod.SerializationHelper
 /* static members */
-@JSImport("babylonjs", "SerializationHelper")
-@js.native
-object SerializationHelper extends js.Object {
+object SerializationHelper {
   
   /**
     * Appends the serialized animations from the source animations
     * @param source Source containing the animations
     * @param destination Target to store the animations
     */
+  @JSImport("babylonjs", "SerializationHelper.AppendSerializedAnimations")
+  @js.native
   def AppendSerializedAnimations(source: IAnimatable, destination: js.Any): Unit = js.native
   
   /**
@@ -28,6 +29,8 @@ object SerializationHelper extends js.Object {
     * @param source defines the source object
     * @returns the cloned object
     */
+  @JSImport("babylonjs", "SerializationHelper.Clone")
+  @js.native
   def Clone[T](creationFunction: js.Function0[T], source: T): T = js.native
   
   /**
@@ -36,6 +39,8 @@ object SerializationHelper extends js.Object {
     * @param source defines the source object
     * @returns the new object
     */
+  @JSImport("babylonjs", "SerializationHelper.Instanciate")
+  @js.native
   def Instanciate[T](creationFunction: js.Function0[T], source: T): T = js.native
   
   /**
@@ -46,11 +51,15 @@ object SerializationHelper extends js.Object {
     * @param rootUrl defines the root url for resources
     * @returns a new entity
     */
+  @JSImport("babylonjs", "SerializationHelper.Parse")
+  @js.native
   def Parse[T](
     creationFunction: js.Function0[T],
     source: js.Any,
     scene: Nullable[typings.babylonjs.sceneMod.Scene]
   ): T = js.native
+  @JSImport("babylonjs", "SerializationHelper.Parse")
+  @js.native
   def Parse[T](
     creationFunction: js.Function0[T],
     source: js.Any,
@@ -64,18 +73,30 @@ object SerializationHelper extends js.Object {
     * @param serializationObject defines the optional target obecjt where serialization data will be stored
     * @returns a JSON compatible object representing the serialization of the entity
     */
+  @JSImport("babylonjs", "SerializationHelper.Serialize")
+  @js.native
   def Serialize[T](entity: T): js.Any = js.native
+  @JSImport("babylonjs", "SerializationHelper.Serialize")
+  @js.native
   def Serialize[T](entity: T, serializationObject: js.Any): js.Any = js.native
   
   /** @hidden */
+  @JSImport("babylonjs", "SerializationHelper._ColorCurvesParser")
+  @js.native
   def _ColorCurvesParser(sourceProperty: js.Any): typings.babylonjs.colorCurvesMod.ColorCurves = js.native
   
   /** @hidden */
+  @JSImport("babylonjs", "SerializationHelper._FresnelParametersParser")
+  @js.native
   def _FresnelParametersParser(sourceProperty: js.Any): typings.babylonjs.fresnelParametersMod.FresnelParameters = js.native
   
   /** @hidden */
+  @JSImport("babylonjs", "SerializationHelper._ImageProcessingConfigurationParser")
+  @js.native
   def _ImageProcessingConfigurationParser(sourceProperty: js.Any): typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration = js.native
   
   /** @hidden */
+  @JSImport("babylonjs", "SerializationHelper._TextureParser")
+  @js.native
   def _TextureParser(sourceProperty: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.baseTextureMod.BaseTexture] = js.native
 }

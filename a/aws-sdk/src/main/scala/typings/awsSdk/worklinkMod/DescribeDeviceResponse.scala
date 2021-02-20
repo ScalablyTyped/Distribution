@@ -1,11 +1,12 @@
 package typings.awsSdk.worklinkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDeviceResponse extends js.Object {
+trait DescribeDeviceResponse extends StObject {
   
   /**
     * The date that the device first signed in to Amazon WorkLink.
@@ -61,72 +62,60 @@ object DescribeDeviceResponse {
   }
   
   @scala.inline
-  implicit class DescribeDeviceResponseOps[Self <: DescribeDeviceResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDeviceResponseMutableBuilder[Self <: DescribeDeviceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstAccessedTime(value: DateTime): Self = StObject.set(x, "FirstAccessedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstAccessedTimeUndefined: Self = StObject.set(x, "FirstAccessedTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastAccessedTime(value: DateTime): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstAccessedTime(value: DateTime): Self = this.set("FirstAccessedTime", value.asInstanceOf[js.Any])
+    def setLastAccessedTimeUndefined: Self = StObject.set(x, "LastAccessedTime", js.undefined)
     
     @scala.inline
-    def deleteFirstAccessedTime: Self = this.set("FirstAccessedTime", js.undefined)
+    def setManufacturer(value: DeviceManufacturer): Self = StObject.set(x, "Manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAccessedTime(value: DateTime): Self = this.set("LastAccessedTime", value.asInstanceOf[js.Any])
+    def setManufacturerUndefined: Self = StObject.set(x, "Manufacturer", js.undefined)
     
     @scala.inline
-    def deleteLastAccessedTime: Self = this.set("LastAccessedTime", js.undefined)
+    def setModel(value: DeviceModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: DeviceManufacturer): Self = this.set("Manufacturer", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
     
     @scala.inline
-    def deleteManufacturer: Self = this.set("Manufacturer", js.undefined)
+    def setOperatingSystem(value: DeviceOperatingSystemName): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: DeviceModel): Self = this.set("Model", value.asInstanceOf[js.Any])
+    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("Model", js.undefined)
+    def setOperatingSystemVersion(value: DeviceOperatingSystemVersion): Self = StObject.set(x, "OperatingSystemVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatingSystem(value: DeviceOperatingSystemName): Self = this.set("OperatingSystem", value.asInstanceOf[js.Any])
+    def setOperatingSystemVersionUndefined: Self = StObject.set(x, "OperatingSystemVersion", js.undefined)
     
     @scala.inline
-    def deleteOperatingSystem: Self = this.set("OperatingSystem", js.undefined)
+    def setPatchLevel(value: DevicePatchLevel): Self = StObject.set(x, "PatchLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatingSystemVersion(value: DeviceOperatingSystemVersion): Self = this.set("OperatingSystemVersion", value.asInstanceOf[js.Any])
+    def setPatchLevelUndefined: Self = StObject.set(x, "PatchLevel", js.undefined)
     
     @scala.inline
-    def deleteOperatingSystemVersion: Self = this.set("OperatingSystemVersion", js.undefined)
+    def setStatus(value: DeviceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatchLevel(value: DevicePatchLevel): Self = this.set("PatchLevel", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deletePatchLevel: Self = this.set("PatchLevel", js.undefined)
+    def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DeviceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: Username): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

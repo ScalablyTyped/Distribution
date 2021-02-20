@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Storage.Streams
 
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IPromiseWithOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reads data from an input stream. */
 @js.native
-trait DataReader extends js.Object {
+trait DataReader extends StObject {
   
   /** Gets or sets the byte order of the data in the input stream. */
   var byteOrder: ByteOrder = js.native
@@ -176,90 +177,78 @@ object DataReader {
   }
   
   @scala.inline
-  implicit class DataReaderOps[Self <: DataReader] (val x: Self) extends AnyVal {
+  implicit class DataReaderMutableBuilder[Self <: DataReader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteOrder(value: ByteOrder): Self = StObject.set(x, "byteOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetachBuffer(value: () => IBuffer): Self = StObject.set(x, "detachBuffer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setByteOrder(value: ByteOrder): Self = this.set("byteOrder", value.asInstanceOf[js.Any])
+    def setDetachStream(value: () => IInputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setInputStreamOptions(value: InputStreamOptions): Self = StObject.set(x, "inputStreamOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetachBuffer(value: () => IBuffer): Self = this.set("detachBuffer", js.Any.fromFunction0(value))
+    def setLoadAsync(value: Double => IPromiseWithOperation[_, DataReaderLoadOperation]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDetachStream(value: () => IInputStream): Self = this.set("detachStream", js.Any.fromFunction0(value))
+    def setReadBoolean(value: () => Boolean): Self = StObject.set(x, "readBoolean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInputStreamOptions(value: InputStreamOptions): Self = this.set("inputStreamOptions", value.asInstanceOf[js.Any])
+    def setReadBuffer(value: Double => IBuffer): Self = StObject.set(x, "readBuffer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadAsync(value: Double => IPromiseWithOperation[_, DataReaderLoadOperation]): Self = this.set("loadAsync", js.Any.fromFunction1(value))
+    def setReadByte(value: () => Double): Self = StObject.set(x, "readByte", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadBoolean(value: () => Boolean): Self = this.set("readBoolean", js.Any.fromFunction0(value))
+    def setReadBytes(value: () => js.Array[Double]): Self = StObject.set(x, "readBytes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadBuffer(value: Double => IBuffer): Self = this.set("readBuffer", js.Any.fromFunction1(value))
+    def setReadDateTime(value: () => Date): Self = StObject.set(x, "readDateTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadByte(value: () => Double): Self = this.set("readByte", js.Any.fromFunction0(value))
+    def setReadDouble(value: () => Double): Self = StObject.set(x, "readDouble", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadBytes(value: () => js.Array[Double]): Self = this.set("readBytes", js.Any.fromFunction0(value))
+    def setReadGuid(value: () => String): Self = StObject.set(x, "readGuid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadDateTime(value: () => Date): Self = this.set("readDateTime", js.Any.fromFunction0(value))
+    def setReadInt16(value: () => Double): Self = StObject.set(x, "readInt16", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadDouble(value: () => Double): Self = this.set("readDouble", js.Any.fromFunction0(value))
+    def setReadInt32(value: () => Double): Self = StObject.set(x, "readInt32", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadGuid(value: () => String): Self = this.set("readGuid", js.Any.fromFunction0(value))
+    def setReadInt64(value: () => Double): Self = StObject.set(x, "readInt64", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadInt16(value: () => Double): Self = this.set("readInt16", js.Any.fromFunction0(value))
+    def setReadSingle(value: () => Double): Self = StObject.set(x, "readSingle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadInt32(value: () => Double): Self = this.set("readInt32", js.Any.fromFunction0(value))
+    def setReadString(value: Double => String): Self = StObject.set(x, "readString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadInt64(value: () => Double): Self = this.set("readInt64", js.Any.fromFunction0(value))
+    def setReadTimeSpan(value: () => Double): Self = StObject.set(x, "readTimeSpan", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadSingle(value: () => Double): Self = this.set("readSingle", js.Any.fromFunction0(value))
+    def setReadUInt16(value: () => Double): Self = StObject.set(x, "readUInt16", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadString(value: Double => String): Self = this.set("readString", js.Any.fromFunction1(value))
+    def setReadUInt32(value: () => Double): Self = StObject.set(x, "readUInt32", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadTimeSpan(value: () => Double): Self = this.set("readTimeSpan", js.Any.fromFunction0(value))
+    def setReadUInt64(value: () => Double): Self = StObject.set(x, "readUInt64", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadUInt16(value: () => Double): Self = this.set("readUInt16", js.Any.fromFunction0(value))
+    def setUnconsumedBufferLength(value: Double): Self = StObject.set(x, "unconsumedBufferLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadUInt32(value: () => Double): Self = this.set("readUInt32", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadUInt64(value: () => Double): Self = this.set("readUInt64", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnconsumedBufferLength(value: Double): Self = this.set("unconsumedBufferLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnicodeEncoding(value: UnicodeEncoding): Self = this.set("unicodeEncoding", value.asInstanceOf[js.Any])
+    def setUnicodeEncoding(value: UnicodeEncoding): Self = StObject.set(x, "unicodeEncoding", value.asInstanceOf[js.Any])
   }
 }

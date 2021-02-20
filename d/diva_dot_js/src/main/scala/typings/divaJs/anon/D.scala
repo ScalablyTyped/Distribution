@@ -1,11 +1,12 @@
 package typings.divaJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait D extends js.Object {
+trait D extends StObject {
   
   var d: H = js.native
   
@@ -24,30 +25,18 @@ object D {
   }
   
   @scala.inline
-  implicit class DOps[Self <: D] (val x: Self) extends AnyVal {
+  implicit class DMutableBuilder[Self <: D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: H): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIl(value: String): Self = StObject.set(x, "il", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: H): Self = this.set("d", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setF(value: String): Self = this.set("f", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIl(value: String): Self = this.set("il", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

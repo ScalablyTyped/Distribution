@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogappregistryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetApplicationResponse extends js.Object {
+trait GetApplicationResponse extends StObject {
   
   /**
     * The Amazon resource name (ARN) that specifies the application across services.
@@ -56,66 +57,54 @@ object GetApplicationResponse {
   }
   
   @scala.inline
-  implicit class GetApplicationResponseOps[Self <: GetApplicationResponse] (val x: Self) extends AnyVal {
+  implicit class GetApplicationResponseMutableBuilder[Self <: GetApplicationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: ApplicationArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociatedResourceCount(value: AssociationCount): Self = StObject.set(x, "associatedResourceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: ApplicationArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setAssociatedResourceCountUndefined: Self = StObject.set(x, "associatedResourceCount", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedResourceCount(value: AssociationCount): Self = this.set("associatedResourceCount", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteAssociatedResourceCount: Self = this.set("associatedResourceCount", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setId(value: ApplicationId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ApplicationId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

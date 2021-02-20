@@ -1,5 +1,6 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Abstract hasher template.
   */
 @js.native
-trait Hasher extends js.Object {
+trait Hasher extends StObject {
   
   /**
     * The number of 32-bit words this hasher operates on. Default: 16 (512 bits)

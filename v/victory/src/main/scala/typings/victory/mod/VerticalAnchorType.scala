@@ -1,5 +1,6 @@
 package typings.victory.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.victory.victoryStrings.middle
   - typings.victory.victoryStrings.end
 */
-trait VerticalAnchorType extends js.Object
+trait VerticalAnchorType extends StObject
 object VerticalAnchorType {
   
   @scala.inline

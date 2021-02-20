@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.lang
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,30 +55,18 @@ object XTypeProvider {
   }
   
   @scala.inline
-  implicit class XTypeProviderOps[Self <: XTypeProvider] (val x: Self) extends AnyVal {
+  implicit class XTypeProviderMutableBuilder[Self <: XTypeProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetImplementationId(value: () => SafeArray[Double]): Self = StObject.set(x, "getImplementationId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImplementationId(value: SafeArray[Double]): Self = StObject.set(x, "ImplementationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplementationId(value: SafeArray[Double]): Self = this.set("ImplementationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypes(value: SafeArray[`type`]): Self = this.set("Types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetImplementationId(value: () => SafeArray[Double]): Self = this.set("getImplementationId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTypes(value: () => SafeArray[`type`]): Self = this.set("getTypes", js.Any.fromFunction0(value))
+    def setTypes(value: SafeArray[`type`]): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
   }
 }

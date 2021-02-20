@@ -2,14 +2,14 @@ package typings.samchon
 
 import typings.samchon.invokeHistoryMod.InvokeHistory
 import typings.samchon.invokeMod.Invoke
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/parallel/PRInvokeHistory", JSImport.Namespace)
-@js.native
-object prinvokehistoryMod extends js.Object {
+object prinvokehistoryMod {
   
+  @JSImport("samchon/templates/parallel/PRInvokeHistory", "PRInvokeHistory")
   @js.native
   /**
     * Default Constructor.

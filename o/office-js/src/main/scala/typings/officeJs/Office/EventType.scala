@@ -1,11 +1,12 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventType extends js.Object
+sealed trait EventType extends StObject
 /**
   * Specifies the kind of event that was raised. Returned by the `type` property of an `*EventArgs` object.
   * 
@@ -21,7 +22,7 @@ sealed trait EventType extends js.Object
   */
 @JSGlobal("Office.EventType")
 @js.native
-object EventType extends js.Object {
+object EventType extends StObject {
   
   /**
     * A Document.ActiveViewChanged event was raised.

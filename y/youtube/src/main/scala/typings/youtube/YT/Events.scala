@@ -1,11 +1,12 @@
 package typings.youtube.YT
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Events extends js.Object {
+trait Events extends StObject {
   
   /**
     * Event fired to indicate thath the player has loaded, or unloaded, a module
@@ -47,54 +48,42 @@ object Events {
   }
   
   @scala.inline
-  implicit class EventsOps[Self <: Events] (val x: Self) extends AnyVal {
+  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnApiChange(value: PlayerEvent => Unit): Self = StObject.set(x, "onApiChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnApiChangeUndefined: Self = StObject.set(x, "onApiChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnError(value: OnErrorEvent => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnApiChange(value: PlayerEvent => Unit): Self = this.set("onApiChange", js.Any.fromFunction1(value))
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteOnApiChange: Self = this.set("onApiChange", js.undefined)
+    def setOnPlaybackQualityChange(value: OnPlaybackQualityChangeEvent => Unit): Self = StObject.set(x, "onPlaybackQualityChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: OnErrorEvent => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnPlaybackQualityChangeUndefined: Self = StObject.set(x, "onPlaybackQualityChange", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnPlaybackRateChange(value: OnPlaybackRateChangeEvent => Unit): Self = StObject.set(x, "onPlaybackRateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPlaybackQualityChange(value: OnPlaybackQualityChangeEvent => Unit): Self = this.set("onPlaybackQualityChange", js.Any.fromFunction1(value))
+    def setOnPlaybackRateChangeUndefined: Self = StObject.set(x, "onPlaybackRateChange", js.undefined)
     
     @scala.inline
-    def deleteOnPlaybackQualityChange: Self = this.set("onPlaybackQualityChange", js.undefined)
+    def setOnReady(value: PlayerEvent => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPlaybackRateChange(value: OnPlaybackRateChangeEvent => Unit): Self = this.set("onPlaybackRateChange", js.Any.fromFunction1(value))
+    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
     @scala.inline
-    def deleteOnPlaybackRateChange: Self = this.set("onPlaybackRateChange", js.undefined)
+    def setOnStateChange(value: OnStateChangeEvent => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReady(value: PlayerEvent => Unit): Self = this.set("onReady", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnReady: Self = this.set("onReady", js.undefined)
-    
-    @scala.inline
-    def setOnStateChange(value: OnStateChangeEvent => Unit): Self = this.set("onStateChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnStateChange: Self = this.set("onStateChange", js.undefined)
+    def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
   }
 }

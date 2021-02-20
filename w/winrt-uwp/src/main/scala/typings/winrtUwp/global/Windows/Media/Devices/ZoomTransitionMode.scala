@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the zoom transition modes. */
 @JSGlobal("Windows.Media.Devices.ZoomTransitionMode")
 @js.native
-object ZoomTransitionMode extends js.Object {
+object ZoomTransitionMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Devices.ZoomTransitionMode with Double] = js.native

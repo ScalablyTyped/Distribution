@@ -1,5 +1,6 @@
 package typings.googleapis.securitycenterV1Mod.securitycenterV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Result containing the Asset and its State.
   */
 @js.native
-trait SchemaListAssetsResult extends js.Object {
+trait SchemaListAssetsResult extends StObject {
   
   /**
     * Asset matching the search request.
@@ -29,30 +30,18 @@ object SchemaListAssetsResult {
   }
   
   @scala.inline
-  implicit class SchemaListAssetsResultOps[Self <: SchemaListAssetsResult] (val x: Self) extends AnyVal {
+  implicit class SchemaListAssetsResultMutableBuilder[Self <: SchemaListAssetsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsset(value: SchemaAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset(value: SchemaAsset): Self = this.set("asset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsset: Self = this.set("asset", js.undefined)
-    
-    @scala.inline
-    def setStateChange(value: String): Self = this.set("stateChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateChange: Self = this.set("stateChange", js.undefined)
+    def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
   }
 }

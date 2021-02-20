@@ -1,28 +1,48 @@
 package typings.googleGax.operationsMod.google.protobuf
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an Any. */
-trait IAny extends js.Object {
+@js.native
+trait IAny extends StObject {
+  
   /** Any type_url */
-  var type_url: js.UndefOr[String | Null] = js.undefined
+  var type_url: js.UndefOr[String | Null] = js.native
+  
   /** Any value */
-  var value: js.UndefOr[Uint8Array | Null] = js.undefined
+  var value: js.UndefOr[Uint8Array | Null] = js.native
 }
-
 object IAny {
+  
   @scala.inline
-  def apply(
-    type_url: js.UndefOr[Null | String] = js.undefined,
-    value: js.UndefOr[Null | Uint8Array] = js.undefined
-  ): IAny = {
+  def apply(): IAny = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(type_url)) __obj.updateDynamic("type_url")(type_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAny]
   }
+  
+  @scala.inline
+  implicit class IAnyMutableBuilder[Self <: IAny] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setType_url(value: String): Self = StObject.set(x, "type_url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType_urlNull: Self = StObject.set(x, "type_url", null)
+    
+    @scala.inline
+    def setType_urlUndefined: Self = StObject.set(x, "type_url", js.undefined)
+    
+    @scala.inline
+    def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueNull: Self = StObject.set(x, "value", null)
+    
+    @scala.inline
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

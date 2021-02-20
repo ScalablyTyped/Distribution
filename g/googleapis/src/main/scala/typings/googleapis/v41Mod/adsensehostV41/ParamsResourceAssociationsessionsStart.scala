@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,51 +46,39 @@ object ParamsResourceAssociationsessionsStart {
   }
   
   @scala.inline
-  implicit class ParamsResourceAssociationsessionsStartOps[Self <: ParamsResourceAssociationsessionsStart] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceAssociationsessionsStartMutableBuilder[Self <: ParamsResourceAssociationsessionsStart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductCode(value: js.Array[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setProductCodeVarargs(value: String*): Self = StObject.set(x, "productCode", js.Array(value :_*))
     
     @scala.inline
-    def setProductCodeVarargs(value: String*): Self = this.set("productCode", js.Array(value :_*))
+    def setUserLocale(value: String): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCode(value: js.Array[String]): Self = this.set("productCode", value.asInstanceOf[js.Any])
+    def setUserLocaleUndefined: Self = StObject.set(x, "userLocale", js.undefined)
     
     @scala.inline
-    def deleteProductCode: Self = this.set("productCode", js.undefined)
+    def setWebsiteLocale(value: String): Self = StObject.set(x, "websiteLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserLocale(value: String): Self = this.set("userLocale", value.asInstanceOf[js.Any])
+    def setWebsiteLocaleUndefined: Self = StObject.set(x, "websiteLocale", js.undefined)
     
     @scala.inline
-    def deleteUserLocale: Self = this.set("userLocale", js.undefined)
+    def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebsiteLocale(value: String): Self = this.set("websiteLocale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteLocale: Self = this.set("websiteLocale", js.undefined)
-    
-    @scala.inline
-    def setWebsiteUrl(value: String): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
+    def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
   }
 }

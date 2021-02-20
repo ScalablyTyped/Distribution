@@ -1,5 +1,6 @@
 package typings.agGrid.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,15 @@ class Component ()
   def this(template: String) = this()
 }
 /* static members */
-@JSImport("ag-grid", "Component")
-@js.native
-object Component extends js.Object {
+object Component {
   
-  var EVENT_VISIBLE_CHANGED: String = js.native
+  @JSImport("ag-grid", "Component")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ag-grid", "Component.EVENT_VISIBLE_CHANGED")
+  @js.native
+  def EVENT_VISIBLE_CHANGED: String = js.native
+  @scala.inline
+  def EVENT_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
 }

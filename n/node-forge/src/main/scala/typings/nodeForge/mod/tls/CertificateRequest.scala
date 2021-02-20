@@ -1,12 +1,13 @@
 package typings.nodeForge.mod.tls
 
 import typings.nodeForge.mod.util.ByteBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateRequest extends js.Object {
+trait CertificateRequest extends StObject {
   
   var certificate_authorities: ByteBuffer = js.native
   
@@ -21,24 +22,12 @@ object CertificateRequest {
   }
   
   @scala.inline
-  implicit class CertificateRequestOps[Self <: CertificateRequest] (val x: Self) extends AnyVal {
+  implicit class CertificateRequestMutableBuilder[Self <: CertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate_authorities(value: ByteBuffer): Self = StObject.set(x, "certificate_authorities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificate_authorities(value: ByteBuffer): Self = this.set("certificate_authorities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCertificate_types(value: ByteBuffer): Self = this.set("certificate_types", value.asInstanceOf[js.Any])
+    def setCertificate_types(value: ByteBuffer): Self = StObject.set(x, "certificate_types", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.babylonjs.legacyMod
 
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,11 +34,11 @@ class PassCubePostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "PassCubePostProcess")
-@js.native
-object PassCubePostProcess extends js.Object {
+object PassCubePostProcess {
   
   /** @hidden */
+  @JSImport("babylonjs/Legacy/legacy", "PassCubePostProcess._Parse")
+  @js.native
   def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,

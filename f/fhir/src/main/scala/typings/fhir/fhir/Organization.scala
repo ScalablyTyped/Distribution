@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,120 +86,108 @@ object Organization {
   }
   
   @scala.inline
-  implicit class OrganizationOps[Self <: Organization] (val x: Self) extends AnyVal {
+  implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddress(value: js.Array[Address]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_active(value: Element): Self = this.set("_active", value.asInstanceOf[js.Any])
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def delete_active: Self = this.set("_active", js.undefined)
+    def setAddressVarargs(value: Address*): Self = StObject.set(x, "address", js.Array(value :_*))
     
     @scala.inline
-    def set_aliasVarargs(value: Element*): Self = this.set("_alias", js.Array(value :_*))
+    def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_alias(value: js.Array[Element]): Self = this.set("_alias", value.asInstanceOf[js.Any])
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def delete_alias: Self = this.set("_alias", js.undefined)
+    def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setContact(value: js.Array[OrganizationContact]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setContactVarargs(value: OrganizationContact*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressVarargs(value: Address*): Self = this.set("address", js.Array(value :_*))
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def setAddress(value: js.Array[Address]): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setEndpointVarargs(value: Reference*): Self = StObject.set(x, "endpoint", js.Array(value :_*))
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasVarargs(value: String*): Self = this.set("alias", js.Array(value :_*))
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setAlias(value: js.Array[String]): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactVarargs(value: OrganizationContact*): Self = this.set("contact", js.Array(value :_*))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setContact(value: js.Array[OrganizationContact]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setPartOf(value: Reference): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
     
     @scala.inline
-    def setEndpointVarargs(value: Reference*): Self = this.set("endpoint", js.Array(value :_*))
+    def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: js.Array[Reference]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def set_active(value: Element): Self = StObject.set(x, "_active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def set_activeUndefined: Self = StObject.set(x, "_active", js.undefined)
     
     @scala.inline
-    def setPartOf(value: Reference): Self = this.set("partOf", value.asInstanceOf[js.Any])
+    def set_alias(value: js.Array[Element]): Self = StObject.set(x, "_alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePartOf: Self = this.set("partOf", js.undefined)
+    def set_aliasUndefined: Self = StObject.set(x, "_alias", js.undefined)
     
     @scala.inline
-    def setTelecomVarargs(value: ContactPoint*): Self = this.set("telecom", js.Array(value :_*))
+    def set_aliasVarargs(value: Element*): Self = StObject.set(x, "_alias", js.Array(value :_*))
     
     @scala.inline
-    def setTelecom(value: js.Array[ContactPoint]): Self = this.set("telecom", value.asInstanceOf[js.Any])
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTelecom: Self = this.set("telecom", js.undefined)
-    
-    @scala.inline
-    def setTypeVarargs(value: CodeableConcept*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: js.Array[CodeableConcept]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
   }
 }

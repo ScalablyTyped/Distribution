@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteSkillAuthorizationRequest extends js.Object {
+trait DeleteSkillAuthorizationRequest extends StObject {
   
   /**
     * The room that the skill is authorized for.
@@ -26,27 +27,15 @@ object DeleteSkillAuthorizationRequest {
   }
   
   @scala.inline
-  implicit class DeleteSkillAuthorizationRequestOps[Self <: DeleteSkillAuthorizationRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteSkillAuthorizationRequestMutableBuilder[Self <: DeleteSkillAuthorizationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSkillId(value: SkillId): Self = this.set("SkillId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoomArn(value: Arn): Self = this.set("RoomArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomArn: Self = this.set("RoomArn", js.undefined)
+    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

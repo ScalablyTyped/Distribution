@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaStreamSourceClosedReason extends js.Object
+sealed trait MediaStreamSourceClosedReason extends StObject
 /** Specifies the reason why a MediaStreamSource was closed. */
 @JSGlobal("Windows.Media.Core.MediaStreamSourceClosedReason")
 @js.native
-object MediaStreamSourceClosedReason extends js.Object {
+object MediaStreamSourceClosedReason extends StObject {
   
   /** The app reported an error by calling the NotifyError method on the MediaStreamSource . */
   @js.native

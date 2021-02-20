@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceTransportReadOptionsData extends js.Object {
+trait DataSourceTransportReadOptionsData extends StObject {
   
   var filter: js.UndefOr[DataSourceFilters] = js.native
   
@@ -26,54 +27,42 @@ object DataSourceTransportReadOptionsData {
   }
   
   @scala.inline
-  implicit class DataSourceTransportReadOptionsDataOps[Self <: DataSourceTransportReadOptionsData] (val x: Self) extends AnyVal {
+  implicit class DataSourceTransportReadOptionsDataMutableBuilder[Self <: DataSourceTransportReadOptionsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: DataSourceFilters): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroup(value: js.Array[DataSourceGroupItem]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: DataSourceFilters): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setGroupVarargs(value: DataSourceGroupItem*): Self = StObject.set(x, "group", js.Array(value :_*))
     
     @scala.inline
-    def setGroupVarargs(value: DataSourceGroupItem*): Self = this.set("group", js.Array(value :_*))
+    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: js.Array[DataSourceGroupItem]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setSort(value: js.Array[DataSourceSortItem]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip(value: Double): Self = this.set("skip", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setSortVarargs(value: DataSourceSortItem*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
     @scala.inline
-    def setSortVarargs(value: DataSourceSortItem*): Self = this.set("sort", js.Array(value :_*))
+    def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: js.Array[DataSourceSortItem]): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
-    
-    @scala.inline
-    def setTake(value: Double): Self = this.set("take", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTake: Self = this.set("take", js.undefined)
+    def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
   }
 }

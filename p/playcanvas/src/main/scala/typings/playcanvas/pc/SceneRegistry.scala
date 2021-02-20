@@ -3,6 +3,7 @@ package typings.playcanvas.pc
 import typings.playcanvas.pc.callbacks.LoadHierarchy
 import typings.playcanvas.pc.callbacks.LoadScene
 import typings.playcanvas.pc.callbacks.LoadSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param app - The application.
   */
 @js.native
-trait SceneRegistry extends js.Object {
+trait SceneRegistry extends StObject {
   
   /**
     * Add a new item to the scene registry.
@@ -111,42 +112,30 @@ object SceneRegistry {
   }
   
   @scala.inline
-  implicit class SceneRegistryOps[Self <: SceneRegistry] (val x: Self) extends AnyVal {
+  implicit class SceneRegistryMutableBuilder[Self <: SceneRegistry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (String, String) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFind(value: String => SceneRegistryItem): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindByUrl(value: String => SceneRegistryItem): Self = StObject.set(x, "findByUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: (String, String) => Boolean): Self = this.set("add", js.Any.fromFunction2(value))
+    def setList(value: () => js.Array[SceneRegistryItem]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFind(value: String => SceneRegistryItem): Self = this.set("find", js.Any.fromFunction1(value))
+    def setLoadScene(value: (String, LoadScene) => Unit): Self = StObject.set(x, "loadScene", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFindByUrl(value: String => SceneRegistryItem): Self = this.set("findByUrl", js.Any.fromFunction1(value))
+    def setLoadSceneHierarchy(value: (String, LoadHierarchy) => Unit): Self = StObject.set(x, "loadSceneHierarchy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setList(value: () => js.Array[SceneRegistryItem]): Self = this.set("list", js.Any.fromFunction0(value))
+    def setLoadSceneSettings(value: (String, LoadSettings) => Unit): Self = StObject.set(x, "loadSceneSettings", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadScene(value: (String, LoadScene) => Unit): Self = this.set("loadScene", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLoadSceneHierarchy(value: (String, LoadHierarchy) => Unit): Self = this.set("loadSceneHierarchy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLoadSceneSettings(value: (String, LoadSettings) => Unit): Self = this.set("loadSceneSettings", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemove(value: String => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

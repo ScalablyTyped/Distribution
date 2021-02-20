@@ -1,6 +1,7 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.TSIndexSignature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,39 +31,27 @@ object TSIndexSignature_ {
   }
   
   @scala.inline
-  implicit class TSIndexSignature_Ops[Self <: TSIndexSignature_] (val x: Self) extends AnyVal {
+  implicit class TSIndexSignature_MutableBuilder[Self <: TSIndexSignature_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: js.Array[Identifier_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParametersVarargs(value: Identifier_ *): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParametersVarargs(value: Identifier_ *): Self = this.set("parameters", js.Array(value :_*))
+    def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     
     @scala.inline
-    def setParameters(value: js.Array[Identifier_]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setType(value: TSIndexSignature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TSIndexSignature): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeAnnotation(value: TSTypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadonlyNull: Self = this.set("readonly", null)
-    
-    @scala.inline
-    def setTypeAnnotation(value: TSTypeAnnotation_): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeAnnotationNull: Self = this.set("typeAnnotation", null)
+    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
   }
 }

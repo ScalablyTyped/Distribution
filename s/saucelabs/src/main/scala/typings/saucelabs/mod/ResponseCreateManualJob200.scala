@@ -2,6 +2,7 @@ package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.saucelabs.anon.Browser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,36 +28,24 @@ object ResponseCreateManualJob200 {
   }
   
   @scala.inline
-  implicit class ResponseCreateManualJob200Ops[Self <: ResponseCreateManualJob200] (val x: Self) extends AnyVal {
+  implicit class ResponseCreateManualJob200MutableBuilder[Self <: ResponseCreateManualJob200] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJob_id(value: Unit): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: Browser): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setJob_idUndefined: Self = StObject.set(x, "job_id", js.undefined)
     
     @scala.inline
-    def setTask_id(value: String): Self = this.set("task_id", value.asInstanceOf[js.Any])
+    def setMetadata(value: Browser): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
-    
-    @scala.inline
-    def setJob_id(value: Unit): Self = this.set("job_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJob_id: Self = this.set("job_id", js.undefined)
+    def setTask_id(value: String): Self = StObject.set(x, "task_id", value.asInstanceOf[js.Any])
   }
 }

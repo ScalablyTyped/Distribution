@@ -1,88 +1,73 @@
 package typings.playable
 
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/constants/media-stream", JSImport.Namespace)
-@js.native
-object mediaStreamMod extends js.Object {
+object mediaStreamMod {
   
   @js.native
-  sealed trait MediaStreamDeliveryPriority extends js.Object
+  sealed trait MediaStreamDeliveryPriority extends StObject
+  @JSImport("playable/dist/src/constants/media-stream", "MediaStreamDeliveryPriority")
   @js.native
-  object MediaStreamDeliveryPriority extends js.Object {
+  object MediaStreamDeliveryPriority extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[MediaStreamDeliveryPriority with Double] = js.native
     
     @js.native
     sealed trait ADAPTIVE_VIA_MSE extends MediaStreamDeliveryPriority
-    /* 1 */ @js.native
-    object ADAPTIVE_VIA_MSE extends TopLevel[ADAPTIVE_VIA_MSE with Double]
+    /* 1 */ val ADAPTIVE_VIA_MSE: typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.ADAPTIVE_VIA_MSE with Double = js.native
     
     @js.native
     sealed trait FORCED extends MediaStreamDeliveryPriority
-    /* 3 */ @js.native
-    object FORCED extends TopLevel[FORCED with Double]
+    /* 3 */ val FORCED: typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.FORCED with Double = js.native
     
     @js.native
     sealed trait NATIVE_ADAPTIVE extends MediaStreamDeliveryPriority
-    /* 2 */ @js.native
-    object NATIVE_ADAPTIVE extends TopLevel[NATIVE_ADAPTIVE with Double]
+    /* 2 */ val NATIVE_ADAPTIVE: typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.NATIVE_ADAPTIVE with Double = js.native
     
     @js.native
     sealed trait NATIVE_PROGRESSIVE extends MediaStreamDeliveryPriority
-    /* 0 */ @js.native
-    object NATIVE_PROGRESSIVE extends TopLevel[NATIVE_PROGRESSIVE with Double]
+    /* 0 */ val NATIVE_PROGRESSIVE: typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.NATIVE_PROGRESSIVE with Double = js.native
   }
   
   @js.native
-  sealed trait MediaStreamType extends js.Object
+  sealed trait MediaStreamType extends StObject
+  @JSImport("playable/dist/src/constants/media-stream", "MediaStreamType")
   @js.native
-  object MediaStreamType extends js.Object {
+  object MediaStreamType extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[MediaStreamType with String] = js.native
     
     @js.native
     sealed trait DASH extends MediaStreamType
-    /* "DASH" */ @js.native
-    object DASH extends TopLevel[DASH with String]
+    /* "DASH" */ val DASH: typings.playable.mediaStreamMod.MediaStreamType.DASH with String = js.native
     
     @js.native
     sealed trait HLS extends MediaStreamType
-    /* "HLS" */ @js.native
-    object HLS extends TopLevel[HLS with String]
+    /* "HLS" */ val HLS: typings.playable.mediaStreamMod.MediaStreamType.HLS with String = js.native
     
     @js.native
     sealed trait MKV extends MediaStreamType
-    /* "MKV" */ @js.native
-    object MKV extends TopLevel[MKV with String]
+    /* "MKV" */ val MKV: typings.playable.mediaStreamMod.MediaStreamType.MKV with String = js.native
     
     @js.native
     sealed trait MOV extends MediaStreamType
-    /* "MOV" */ @js.native
-    object MOV extends TopLevel[MOV with String]
+    /* "MOV" */ val MOV: typings.playable.mediaStreamMod.MediaStreamType.MOV with String = js.native
     
     @js.native
     sealed trait MP4 extends MediaStreamType
-    /* "MP4" */ @js.native
-    object MP4 extends TopLevel[MP4 with String]
+    /* "MP4" */ val MP4: typings.playable.mediaStreamMod.MediaStreamType.MP4 with String = js.native
     
     @js.native
     sealed trait OGG extends MediaStreamType
-    /* "OGG" */ @js.native
-    object OGG extends TopLevel[OGG with String]
+    /* "OGG" */ val OGG: typings.playable.mediaStreamMod.MediaStreamType.OGG with String = js.native
     
     @js.native
     sealed trait WEBM extends MediaStreamType
-    /* "WEBM" */ @js.native
-    object WEBM extends TopLevel[WEBM with String]
+    /* "WEBM" */ val WEBM: typings.playable.mediaStreamMod.MediaStreamType.WEBM with String = js.native
   }
-  
-  @js.native
-  object MimeToStreamTypeMap extends /* mimeType */ StringDictionary[MediaStreamType]
 }

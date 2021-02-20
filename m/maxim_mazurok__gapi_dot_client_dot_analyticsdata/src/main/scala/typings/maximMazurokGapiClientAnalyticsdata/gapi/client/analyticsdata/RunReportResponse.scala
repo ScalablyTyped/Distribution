@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunReportResponse extends js.Object {
+trait RunReportResponse extends StObject {
   
   /** Describes dimension columns. The number of DimensionHeaders and ordering of DimensionHeaders matches the dimensions present in rows. */
   var dimensionHeaders: js.UndefOr[js.Array[DimensionHeader]] = js.native
@@ -47,90 +48,78 @@ object RunReportResponse {
   }
   
   @scala.inline
-  implicit class RunReportResponseOps[Self <: RunReportResponse] (val x: Self) extends AnyVal {
+  implicit class RunReportResponseMutableBuilder[Self <: RunReportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionHeaders(value: js.Array[DimensionHeader]): Self = StObject.set(x, "dimensionHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionHeadersUndefined: Self = StObject.set(x, "dimensionHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionHeadersVarargs(value: DimensionHeader*): Self = StObject.set(x, "dimensionHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionHeadersVarargs(value: DimensionHeader*): Self = this.set("dimensionHeaders", js.Array(value :_*))
+    def setMaximums(value: js.Array[Row]): Self = StObject.set(x, "maximums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionHeaders(value: js.Array[DimensionHeader]): Self = this.set("dimensionHeaders", value.asInstanceOf[js.Any])
+    def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
     
     @scala.inline
-    def deleteDimensionHeaders: Self = this.set("dimensionHeaders", js.undefined)
+    def setMaximumsVarargs(value: Row*): Self = StObject.set(x, "maximums", js.Array(value :_*))
     
     @scala.inline
-    def setMaximumsVarargs(value: Row*): Self = this.set("maximums", js.Array(value :_*))
+    def setMetadata(value: ResponseMetaData): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximums(value: js.Array[Row]): Self = this.set("maximums", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteMaximums: Self = this.set("maximums", js.undefined)
+    def setMetricHeaders(value: js.Array[MetricHeader]): Self = StObject.set(x, "metricHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: ResponseMetaData): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetricHeadersUndefined: Self = StObject.set(x, "metricHeaders", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetricHeadersVarargs(value: MetricHeader*): Self = StObject.set(x, "metricHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setMetricHeadersVarargs(value: MetricHeader*): Self = this.set("metricHeaders", js.Array(value :_*))
+    def setMinimums(value: js.Array[Row]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricHeaders(value: js.Array[MetricHeader]): Self = this.set("metricHeaders", value.asInstanceOf[js.Any])
+    def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
     
     @scala.inline
-    def deleteMetricHeaders: Self = this.set("metricHeaders", js.undefined)
+    def setMinimumsVarargs(value: Row*): Self = StObject.set(x, "minimums", js.Array(value :_*))
     
     @scala.inline
-    def setMinimumsVarargs(value: Row*): Self = this.set("minimums", js.Array(value :_*))
+    def setPropertyQuota(value: PropertyQuota): Self = StObject.set(x, "propertyQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimums(value: js.Array[Row]): Self = this.set("minimums", value.asInstanceOf[js.Any])
+    def setPropertyQuotaUndefined: Self = StObject.set(x, "propertyQuota", js.undefined)
     
     @scala.inline
-    def deleteMinimums: Self = this.set("minimums", js.undefined)
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyQuota(value: PropertyQuota): Self = this.set("propertyQuota", value.asInstanceOf[js.Any])
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def deletePropertyQuota: Self = this.set("propertyQuota", js.undefined)
+    def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: Row*): Self = this.set("rows", js.Array(value :_*))
+    def setTotals(value: js.Array[Row]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[Row]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
-    
-    @scala.inline
-    def setTotalsVarargs(value: Row*): Self = this.set("totals", js.Array(value :_*))
-    
-    @scala.inline
-    def setTotals(value: js.Array[Row]): Self = this.set("totals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotals: Self = this.set("totals", js.undefined)
+    def setTotalsVarargs(value: Row*): Self = StObject.set(x, "totals", js.Array(value :_*))
   }
 }

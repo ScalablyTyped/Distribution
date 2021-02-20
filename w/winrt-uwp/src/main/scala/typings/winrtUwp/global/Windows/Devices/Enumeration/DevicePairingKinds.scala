@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the action the user will need to take in order to complete the pairing or unpairing action. */
 @JSGlobal("Windows.Devices.Enumeration.DevicePairingKinds")
 @js.native
-object DevicePairingKinds extends js.Object {
+object DevicePairingKinds extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Enumeration.DevicePairingKinds with Double] = js.native

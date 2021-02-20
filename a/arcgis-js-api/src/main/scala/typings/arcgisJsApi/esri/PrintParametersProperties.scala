@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintParametersProperties extends js.Object {
+trait PrintParametersProperties extends StObject {
   
   /**
     * Additional parameters for the print service.
@@ -44,42 +45,30 @@ object PrintParametersProperties {
   }
   
   @scala.inline
-  implicit class PrintParametersPropertiesOps[Self <: PrintParametersProperties] (val x: Self) extends AnyVal {
+  implicit class PrintParametersPropertiesMutableBuilder[Self <: PrintParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtraParameters(value: js.Any): Self = StObject.set(x, "extraParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtraParametersUndefined: Self = StObject.set(x, "extraParameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraParameters(value: js.Any): Self = this.set("extraParameters", value.asInstanceOf[js.Any])
+    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
     @scala.inline
-    def deleteExtraParameters: Self = this.set("extraParameters", js.undefined)
+    def setTemplate(value: PrintTemplateProperties): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = this.set("outSpatialReference", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteOutSpatialReference: Self = this.set("outSpatialReference", js.undefined)
+    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: PrintTemplateProperties): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

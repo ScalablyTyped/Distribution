@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StateChangedEventUIParam extends js.Object {
+trait StateChangedEventUIParam extends StObject {
   
   /**
     * Gets the name of the action. That can be one of the following: "open" - the dialog was opened. Note: the event is raised before a possible "openAnimation" started. "close" - the dialog was closed. Note: the event is raised before a possible "closeAnimation" started. "minimize" - the dialog was minimized. "maximize" - the dialog was maximized. "restore" - the dialog was restored from minimized or maximized state. "pin" - the dialog was pinned. "unpin" - the dialog was unpinned.
@@ -41,48 +42,36 @@ object StateChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class StateChangedEventUIParamOps[Self <: StateChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class StateChangedEventUIParamMutableBuilder[Self <: StateChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setOldPinned(value: Boolean): Self = StObject.set(x, "oldPinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: String): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setOldPinnedUndefined: Self = StObject.set(x, "oldPinned", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setOldState(value: String): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldPinned(value: Boolean): Self = this.set("oldPinned", value.asInstanceOf[js.Any])
+    def setOldStateUndefined: Self = StObject.set(x, "oldState", js.undefined)
     
     @scala.inline
-    def deleteOldPinned: Self = this.set("oldPinned", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldState(value: String): Self = this.set("oldState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldState: Self = this.set("oldState", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

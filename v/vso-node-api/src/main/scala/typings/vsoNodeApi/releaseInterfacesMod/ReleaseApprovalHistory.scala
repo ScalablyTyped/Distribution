@@ -2,12 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseApprovalHistory extends js.Object {
+trait ReleaseApprovalHistory extends StObject {
   
   var approver: IdentityRef = js.native
   
@@ -37,36 +38,24 @@ object ReleaseApprovalHistory {
   }
   
   @scala.inline
-  implicit class ReleaseApprovalHistoryOps[Self <: ReleaseApprovalHistory] (val x: Self) extends AnyVal {
+  implicit class ReleaseApprovalHistoryMutableBuilder[Self <: ReleaseApprovalHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprover(value: IdentityRef): Self = this.set("approver", value.asInstanceOf[js.Any])
+    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedBy(value: IdentityRef): Self = this.set("changedBy", value.asInstanceOf[js.Any])
+    def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: String): Self = this.set("comments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreatedOn(value: Date): Self = this.set("createdOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModifiedOn(value: Date): Self = this.set("modifiedOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevision(value: Double): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

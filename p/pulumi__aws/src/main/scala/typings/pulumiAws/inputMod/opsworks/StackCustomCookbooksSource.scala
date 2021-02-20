@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.opsworks
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackCustomCookbooksSource extends js.Object {
+trait StackCustomCookbooksSource extends StObject {
   
   /**
     * Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
@@ -48,48 +49,36 @@ object StackCustomCookbooksSource {
   }
   
   @scala.inline
-  implicit class StackCustomCookbooksSourceOps[Self <: StackCustomCookbooksSource] (val x: Self) extends AnyVal {
+  implicit class StackCustomCookbooksSourceMutableBuilder[Self <: StackCustomCookbooksSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevision(value: Input[String]): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
     @scala.inline
-    def setUrl(value: Input[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setSshKey(value: Input[String]): Self = StObject.set(x, "sshKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: Input[String]): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setSshKeyUndefined: Self = StObject.set(x, "sshKey", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: Input[String]): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRevision: Self = this.set("revision", js.undefined)
+    def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshKey(value: Input[String]): Self = this.set("sshKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSshKey: Self = this.set("sshKey", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: Input[String]): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

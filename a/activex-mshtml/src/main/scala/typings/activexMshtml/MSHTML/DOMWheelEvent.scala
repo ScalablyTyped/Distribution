@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMWheelEvent extends js.Object {
+trait DOMWheelEvent extends StObject {
   
   @JSName("MSHTML.DOMWheelEvent_typekey")
   var MSHTMLDotDOMWheelEvent_typekey: DOMWheelEvent = js.native

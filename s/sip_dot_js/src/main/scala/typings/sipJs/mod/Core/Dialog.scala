@@ -1,6 +1,7 @@
 package typings.sipJs.mod.Core
 
 import typings.sipJs.dialogStateMod.DialogState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,7 @@ class Dialog protected ()
   protected def this(core: typings.sipJs.userAgentCoreMod.UserAgentCore, dialogState: DialogState) = this()
 }
 /* static members */
-@JSImport("sip.js", "Core.Dialog")
-@js.native
-object Dialog extends js.Object {
+object Dialog {
   
   /**
     * When a UAC receives a response that establishes a dialog, it
@@ -29,6 +28,8 @@ object Dialog extends js.Object {
     * @param outgoingRequestMessage - Outgoing request message for dialog.
     * @param incomingResponseMessage - Incoming response message creating dialog.
     */
+  @JSImport("sip.js", "Core.Dialog.initialDialogStateForUserAgentClient")
+  @js.native
   def initialDialogStateForUserAgentClient(
     outgoingRequestMessage: typings.sipJs.messagesMod.OutgoingRequestMessage,
     incomingResponseMessage: typings.sipJs.messagesMod.IncomingResponseMessage
@@ -41,7 +42,11 @@ object Dialog extends js.Object {
     * @param incomingRequestMessage - Incoming request message creating dialog.
     * @param toTag - Tag in the To field in the response to the incoming request.
     */
+  @JSImport("sip.js", "Core.Dialog.initialDialogStateForUserAgentServer")
+  @js.native
   def initialDialogStateForUserAgentServer(incomingRequestMessage: typings.sipJs.messagesMod.IncomingRequestMessage, toTag: String): DialogState = js.native
+  @JSImport("sip.js", "Core.Dialog.initialDialogStateForUserAgentServer")
+  @js.native
   def initialDialogStateForUserAgentServer(
     incomingRequestMessage: typings.sipJs.messagesMod.IncomingRequestMessage,
     toTag: String,

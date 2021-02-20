@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ComponentRef")
 @js.native
-abstract class ComponentRef[C] () extends js.Object {
+abstract class ComponentRef[C] () extends StObject {
   
   /**
     * The change detector for this component instance.
@@ -16,7 +17,7 @@ abstract class ComponentRef[C] () extends js.Object {
   /**
     * The type of this component (as created by a `ComponentFactory` class).
     */
-  def componentType: Type[_] = js.native
+  def componentType: typings.angularCore.mod.Type[_] = js.native
   
   /**
     * Destroys the component instance and all of the data structures associated with it.

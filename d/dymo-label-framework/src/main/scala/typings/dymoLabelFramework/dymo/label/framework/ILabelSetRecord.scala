@@ -1,5 +1,6 @@
 package typings.dymoLabelFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * use dymo.label.framework.LabelSetBuilder.prototype.addRecord method.
   */
 @js.native
-trait ILabelSetRecord extends js.Object {
+trait ILabelSetRecord extends StObject {
   
   /**
     * Adds image data to the record.
@@ -54,27 +55,15 @@ object ILabelSetRecord {
   }
   
   @scala.inline
-  implicit class ILabelSetRecordOps[Self <: ILabelSetRecord] (val x: Self) extends AnyVal {
+  implicit class ILabelSetRecordMutableBuilder[Self <: ILabelSetRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetBase64Image(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setBase64Image", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetText(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetBase64Image(value: (String, String) => ILabelSetRecord): Self = this.set("setBase64Image", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetText(value: (String, String) => ILabelSetRecord): Self = this.set("setText", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetTextMarkup(value: (String, String) => ILabelSetRecord): Self = this.set("setTextMarkup", js.Any.fromFunction2(value))
+    def setSetTextMarkup(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setTextMarkup", js.Any.fromFunction2(value))
   }
 }

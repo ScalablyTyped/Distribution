@@ -1,5 +1,6 @@
 package typings.postcss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides the result of the PostCSS transformations.
   */
 @js.native
-trait Result extends js.Object {
+trait Result extends StObject {
   
   /**
     * Alias for css property to use with syntaxes that generate non-CSS output.

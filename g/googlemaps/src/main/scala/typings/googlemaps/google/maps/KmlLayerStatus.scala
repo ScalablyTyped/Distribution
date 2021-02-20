@@ -1,14 +1,15 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KmlLayerStatus extends js.Object
+sealed trait KmlLayerStatus extends StObject
 @JSGlobal("google.maps.KmlLayerStatus")
 @js.native
-object KmlLayerStatus extends js.Object {
+object KmlLayerStatus extends StObject {
   
   @js.native
   sealed trait DOCUMENT_NOT_FOUND extends KmlLayerStatus

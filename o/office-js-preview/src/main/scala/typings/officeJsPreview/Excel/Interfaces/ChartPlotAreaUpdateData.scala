@@ -3,13 +3,14 @@ package typings.officeJsPreview.Excel.Interfaces
 import typings.officeJsPreview.Excel.ChartPlotAreaPosition
 import typings.officeJsPreview.officeJsPreviewStrings.Automatic
 import typings.officeJsPreview.officeJsPreviewStrings.Custom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartPlotArea object, for use in `chartPlotArea.set({ ... })`. */
 @js.native
-trait ChartPlotAreaUpdateData extends js.Object {
+trait ChartPlotAreaUpdateData extends StObject {
   
   /**
     *
@@ -100,78 +101,66 @@ object ChartPlotAreaUpdateData {
   }
   
   @scala.inline
-  implicit class ChartPlotAreaUpdateDataOps[Self <: ChartPlotAreaUpdateData] (val x: Self) extends AnyVal {
+  implicit class ChartPlotAreaUpdateDataMutableBuilder[Self <: ChartPlotAreaUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: ChartPlotAreaFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ChartPlotAreaFormatUpdateData): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setInsideHeight(value: Double): Self = StObject.set(x, "insideHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setInsideHeightUndefined: Self = StObject.set(x, "insideHeight", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setInsideLeft(value: Double): Self = StObject.set(x, "insideLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideHeight(value: Double): Self = this.set("insideHeight", value.asInstanceOf[js.Any])
+    def setInsideLeftUndefined: Self = StObject.set(x, "insideLeft", js.undefined)
     
     @scala.inline
-    def deleteInsideHeight: Self = this.set("insideHeight", js.undefined)
+    def setInsideTop(value: Double): Self = StObject.set(x, "insideTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideLeft(value: Double): Self = this.set("insideLeft", value.asInstanceOf[js.Any])
+    def setInsideTopUndefined: Self = StObject.set(x, "insideTop", js.undefined)
     
     @scala.inline
-    def deleteInsideLeft: Self = this.set("insideLeft", js.undefined)
+    def setInsideWidth(value: Double): Self = StObject.set(x, "insideWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideTop(value: Double): Self = this.set("insideTop", value.asInstanceOf[js.Any])
+    def setInsideWidthUndefined: Self = StObject.set(x, "insideWidth", js.undefined)
     
     @scala.inline
-    def deleteInsideTop: Self = this.set("insideTop", js.undefined)
+    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideWidth(value: Double): Self = this.set("insideWidth", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteInsideWidth: Self = this.set("insideWidth", js.undefined)
+    def setPosition(value: ChartPlotAreaPosition | Automatic | Custom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: ChartPlotAreaPosition | Automatic | Custom): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

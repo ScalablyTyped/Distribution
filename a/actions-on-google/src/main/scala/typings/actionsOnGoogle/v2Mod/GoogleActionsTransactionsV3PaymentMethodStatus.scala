@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsTransactionsV3PaymentMethodStatus extends js.Object {
+trait GoogleActionsTransactionsV3PaymentMethodStatus extends StObject {
   
   var status: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodStatusStatus] = js.native
   
@@ -24,30 +25,18 @@ object GoogleActionsTransactionsV3PaymentMethodStatus {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3PaymentMethodStatusOps[Self <: GoogleActionsTransactionsV3PaymentMethodStatus] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3PaymentMethodStatusMutableBuilder[Self <: GoogleActionsTransactionsV3PaymentMethodStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatus(value: GoogleActionsTransactionsV3PaymentMethodStatusStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: GoogleActionsTransactionsV3PaymentMethodStatusStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

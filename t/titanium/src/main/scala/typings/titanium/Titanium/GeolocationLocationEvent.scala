@@ -2,6 +2,7 @@ package typings.titanium.Titanium
 
 import typings.titanium.LocationCoordinates
 import typings.titanium.LocationProviderDict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,33 +54,21 @@ object GeolocationLocationEvent {
   }
   
   @scala.inline
-  implicit class GeolocationLocationEventOps[Self <: GeolocationLocationEvent] (val x: Self) extends AnyVal {
+  implicit class GeolocationLocationEventMutableBuilder[Self <: GeolocationLocationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoords(value: LocationCoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setProvider(value: LocationProviderDict): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoords(value: LocationCoordinates): Self = this.set("coords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvider(value: LocationProviderDict): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

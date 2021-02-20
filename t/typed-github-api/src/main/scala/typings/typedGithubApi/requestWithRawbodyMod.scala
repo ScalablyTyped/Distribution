@@ -4,13 +4,12 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-github-api/dist/utils/request-with-rawbody", JSImport.Namespace)
-@js.native
-object requestWithRawbodyMod extends js.Object {
+object requestWithRawbodyMod {
   
   @js.native
   trait RequestWithRawBody

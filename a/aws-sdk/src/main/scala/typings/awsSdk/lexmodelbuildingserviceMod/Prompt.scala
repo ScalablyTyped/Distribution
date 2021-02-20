@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Prompt extends js.Object {
+trait Prompt extends StObject {
   
   /**
     * The number of times to prompt the user for information.
@@ -31,33 +32,21 @@ object Prompt {
   }
   
   @scala.inline
-  implicit class PromptOps[Self <: Prompt] (val x: Self) extends AnyVal {
+  implicit class PromptMutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxAttempts(value: PromptMaxAttempts): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessages(value: MessageList): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setMaxAttempts(value: PromptMaxAttempts): Self = this.set("maxAttempts", value.asInstanceOf[js.Any])
+    def setResponseCard(value: ResponseCard): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesVarargs(value: Message*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: MessageList): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseCard(value: ResponseCard): Self = this.set("responseCard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseCard: Self = this.set("responseCard", js.undefined)
+    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
   }
 }

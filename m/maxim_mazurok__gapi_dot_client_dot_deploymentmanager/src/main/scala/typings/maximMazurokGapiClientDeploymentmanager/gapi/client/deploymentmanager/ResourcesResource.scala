@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientDeploymentmanager.gapi.client.deploymentma
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDeploymentmanager.anon.MaxResults
 import typings.maximMazurokGapiClientDeploymentmanager.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourcesResource extends js.Object {
+trait ResourcesResource extends StObject {
   
   /** Gets information about a single resource. */
   def get(): Request[Resource] = js.native

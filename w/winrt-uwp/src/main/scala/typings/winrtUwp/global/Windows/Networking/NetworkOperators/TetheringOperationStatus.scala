@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the values returned with a NetworkOperatorTetheringOperationResult object to indicate the status of a tethering operation. */
 @JSGlobal("Windows.Networking.NetworkOperators.TetheringOperationStatus")
 @js.native
-object TetheringOperationStatus extends js.Object {
+object TetheringOperationStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientMonitoring.anon.UpdateMask
 import typings.maximMazurokGapiClientMonitoring.anon.UploadType
 import typings.maximMazurokGapiClientMonitoring.anon.Uploadprotocol
 import typings.maximMazurokGapiClientMonitoring.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationChannelsResource extends js.Object {
+trait NotificationChannelsResource extends StObject {
   
   def create(request: Alt, body: NotificationChannel): Request[NotificationChannel] = js.native
   /** Creates a new notification channel, representing a single notification endpoint such as an email address, SMS number, or PagerDuty service. */

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,24 +53,12 @@ object XIsolatedConnection {
   }
   
   @scala.inline
-  implicit class XIsolatedConnectionOps[Self <: XIsolatedConnection] (val x: Self) extends AnyVal {
+  implicit class XIsolatedConnectionMutableBuilder[Self <: XIsolatedConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetIsolatedConnection(value: (String, String) => XConnection): Self = StObject.set(x, "getIsolatedConnection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetIsolatedConnection(value: (String, String) => XConnection): Self = this.set("getIsolatedConnection", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetIsolatedConnectionWithCompletion(value: XInteractionHandler => XConnection): Self = this.set("getIsolatedConnectionWithCompletion", js.Any.fromFunction1(value))
+    def setGetIsolatedConnectionWithCompletion(value: XInteractionHandler => XConnection): Self = StObject.set(x, "getIsolatedConnectionWithCompletion", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The input content for the `ImportProductSets` method.
   */
 @js.native
-trait SchemaImportProductSetsInputConfig extends js.Object {
+trait SchemaImportProductSetsInputConfig extends StObject {
   
   /**
     * The Google Cloud Storage location for a csv file which preserves a list
@@ -25,24 +26,12 @@ object SchemaImportProductSetsInputConfig {
   }
   
   @scala.inline
-  implicit class SchemaImportProductSetsInputConfigOps[Self <: SchemaImportProductSetsInputConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaImportProductSetsInputConfigMutableBuilder[Self <: SchemaImportProductSetsInputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGcsSource(value: SchemaImportProductSetsGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGcsSource(value: SchemaImportProductSetsGcsSource): Self = this.set("gcsSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsSource: Self = this.set("gcsSource", js.undefined)
+    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }
 }

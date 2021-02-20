@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadialLinearScale extends js.Object {
+trait RadialLinearScale extends StObject {
   
   var angleLines: js.UndefOr[AngleLineOptions] = js.native
   
@@ -30,60 +31,48 @@ object RadialLinearScale {
   }
   
   @scala.inline
-  implicit class RadialLinearScaleOps[Self <: RadialLinearScale] (val x: Self) extends AnyVal {
+  implicit class RadialLinearScaleMutableBuilder[Self <: RadialLinearScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngleLines(value: AngleLineOptions): Self = StObject.set(x, "angleLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleLinesUndefined: Self = StObject.set(x, "angleLines", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngleLines(value: AngleLineOptions): Self = this.set("angleLines", value.asInstanceOf[js.Any])
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def deleteAngleLines: Self = this.set("angleLines", js.undefined)
+    def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setGridLines(value: GridLineOptions): Self = StObject.set(x, "gridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: Boolean): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setGridLinesUndefined: Self = StObject.set(x, "gridLines", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setPointLabels(value: PointLabelOptions): Self = StObject.set(x, "pointLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridLines(value: GridLineOptions): Self = this.set("gridLines", value.asInstanceOf[js.Any])
+    def setPointLabelsUndefined: Self = StObject.set(x, "pointLabels", js.undefined)
     
     @scala.inline
-    def deleteGridLines: Self = this.set("gridLines", js.undefined)
+    def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointLabels(value: PointLabelOptions): Self = this.set("pointLabels", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePointLabels: Self = this.set("pointLabels", js.undefined)
+    def setTicks(value: LinearTickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: PositionType): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setTicks(value: LinearTickOptions): Self = this.set("ticks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTicks: Self = this.set("ticks", js.undefined)
+    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
   }
 }

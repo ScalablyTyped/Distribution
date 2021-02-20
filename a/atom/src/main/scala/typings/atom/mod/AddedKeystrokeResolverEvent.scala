@@ -1,12 +1,13 @@
 package typings.atom.mod
 
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddedKeystrokeResolverEvent extends js.Object {
+trait AddedKeystrokeResolverEvent extends StObject {
   
   /**
     *  The raw DOM 3 `KeyboardEvent` being resolved. See the DOM API documentation
@@ -39,30 +40,18 @@ object AddedKeystrokeResolverEvent {
   }
   
   @scala.inline
-  implicit class AddedKeystrokeResolverEventOps[Self <: AddedKeystrokeResolverEvent] (val x: Self) extends AnyVal {
+  implicit class AddedKeystrokeResolverEventMutableBuilder[Self <: AddedKeystrokeResolverEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeymap(value: js.Object): Self = StObject.set(x, "keymap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeystroke(value: String): Self = StObject.set(x, "keystroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: KeyboardEvent): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeymap(value: js.Object): Self = this.set("keymap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeystroke(value: String): Self = this.set("keystroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayoutName(value: String): Self = this.set("layoutName", value.asInstanceOf[js.Any])
+    def setLayoutName(value: String): Self = StObject.set(x, "layoutName", value.asInstanceOf[js.Any])
   }
 }

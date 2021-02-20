@@ -1,11 +1,12 @@
 package typings.es6Shim
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberConstructor extends js.Object {
+trait NumberConstructor extends StObject {
   
   /**
     * The value of Number.EPSILON is the difference between 1 and the smallest value greater than 1

@@ -4,6 +4,7 @@ import typings.jquery.JQueryStatic
 import typings.openui5.anon.TypeofDock
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

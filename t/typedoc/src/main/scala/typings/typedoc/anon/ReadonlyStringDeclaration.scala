@@ -2,13 +2,14 @@ package typings.typedoc.anon
 
 import typings.typedoc.optionsDeclarationMod.ParameterHint
 import typings.typedoc.optionsDeclarationMod.ParameterScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<typedoc.typedoc/dist/lib/utils/options/declaration.StringDeclarationOption> */
 @js.native
-trait ReadonlyStringDeclaration extends js.Object {
+trait ReadonlyStringDeclaration extends StObject {
   
   val defaultValue: js.UndefOr[String] = js.native
   
@@ -33,54 +34,42 @@ object ReadonlyStringDeclaration {
   }
   
   @scala.inline
-  implicit class ReadonlyStringDeclarationOps[Self <: ReadonlyStringDeclaration] (val x: Self) extends AnyVal {
+  implicit class ReadonlyStringDeclarationMutableBuilder[Self <: ReadonlyStringDeclaration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp(value: String): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setHint(value: ParameterHint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setScope(value: ParameterScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: ParameterHint): Self = this.set("hint", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
+    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: ParameterScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setType(value: typings.typedoc.optionsDeclarationMod.ParameterType.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShort: Self = this.set("short", js.undefined)
-    
-    @scala.inline
-    def setType(value: typings.typedoc.optionsDeclarationMod.ParameterType.String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

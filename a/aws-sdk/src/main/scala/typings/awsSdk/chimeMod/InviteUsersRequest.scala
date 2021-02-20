@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InviteUsersRequest extends js.Object {
+trait InviteUsersRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
@@ -31,33 +32,21 @@ object InviteUsersRequest {
   }
   
   @scala.inline
-  implicit class InviteUsersRequestOps[Self <: InviteUsersRequest] (val x: Self) extends AnyVal {
+  implicit class InviteUsersRequestMutableBuilder[Self <: InviteUsersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUserEmailList(value: UserEmailList): Self = StObject.set(x, "UserEmailList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserEmailListVarargs(value: EmailAddress*): Self = StObject.set(x, "UserEmailList", js.Array(value :_*))
     
     @scala.inline
-    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setUserType(value: UserType): Self = StObject.set(x, "UserType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserEmailListVarargs(value: EmailAddress*): Self = this.set("UserEmailList", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserEmailList(value: UserEmailList): Self = this.set("UserEmailList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserType(value: UserType): Self = this.set("UserType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserType: Self = this.set("UserType", js.undefined)
+    def setUserTypeUndefined: Self = StObject.set(x, "UserType", js.undefined)
   }
 }

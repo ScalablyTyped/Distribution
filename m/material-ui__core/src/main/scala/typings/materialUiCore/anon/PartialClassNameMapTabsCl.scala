@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Tabs/Tabs.TabsClassKey>> */
 @js.native
-trait PartialClassNameMapTabsCl extends js.Object {
+trait PartialClassNameMapTabsCl extends StObject {
   
   var centered: js.UndefOr[String] = js.native
   
@@ -35,72 +36,60 @@ object PartialClassNameMapTabsCl {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapTabsClOps[Self <: PartialClassNameMapTabsCl] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapTabsClMutableBuilder[Self <: PartialClassNameMapTabsCl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCentered(value: String): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCentered(value: String): Self = this.set("centered", value.asInstanceOf[js.Any])
+    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
     @scala.inline
-    def deleteCentered: Self = this.set("centered", js.undefined)
+    def setFlexContainer(value: String): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixed(value: String): Self = this.set("fixed", value.asInstanceOf[js.Any])
+    def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
     
     @scala.inline
-    def deleteFixed: Self = this.set("fixed", js.undefined)
+    def setIndicator(value: String): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexContainer(value: String): Self = this.set("flexContainer", value.asInstanceOf[js.Any])
+    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
     @scala.inline
-    def deleteFlexContainer: Self = this.set("flexContainer", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicator(value: String): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteIndicator: Self = this.set("indicator", js.undefined)
+    def setScrollButtons(value: String): Self = StObject.set(x, "scrollButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setScrollButtonsAuto(value: String): Self = StObject.set(x, "scrollButtonsAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setScrollButtonsAutoUndefined: Self = StObject.set(x, "scrollButtonsAuto", js.undefined)
     
     @scala.inline
-    def setScrollButtons(value: String): Self = this.set("scrollButtons", value.asInstanceOf[js.Any])
+    def setScrollButtonsUndefined: Self = StObject.set(x, "scrollButtons", js.undefined)
     
     @scala.inline
-    def deleteScrollButtons: Self = this.set("scrollButtons", js.undefined)
+    def setScrollable(value: String): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollButtonsAuto(value: String): Self = this.set("scrollButtonsAuto", value.asInstanceOf[js.Any])
+    def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
     @scala.inline
-    def deleteScrollButtonsAuto: Self = this.set("scrollButtonsAuto", js.undefined)
+    def setScroller(value: String): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollable(value: String): Self = this.set("scrollable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollable: Self = this.set("scrollable", js.undefined)
-    
-    @scala.inline
-    def setScroller(value: String): Self = this.set("scroller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScroller: Self = this.set("scroller", js.undefined)
+    def setScrollerUndefined: Self = StObject.set(x, "scroller", js.undefined)
   }
 }

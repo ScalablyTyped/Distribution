@@ -2,12 +2,13 @@ package typings.d3pie.anon
 
 import typings.d3pie.d3pieStrings.default
 import typings.d3pie.d3pieStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Effect extends js.Object {
+trait Effect extends StObject {
   
   var effect: js.UndefOr[none | default] = js.native
   
@@ -22,30 +23,18 @@ object Effect {
   }
   
   @scala.inline
-  implicit class EffectOps[Self <: Effect] (val x: Self) extends AnyVal {
+  implicit class EffectMutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffect(value: none | default): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: none | default): Self = this.set("effect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEffect: Self = this.set("effect", js.undefined)
-    
-    @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeed: Self = this.set("speed", js.undefined)
+    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
   }
 }

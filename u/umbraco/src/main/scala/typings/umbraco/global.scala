@@ -1,24 +1,22 @@
 package typings.umbraco
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object umbraco extends js.Object {
+  object umbraco {
     
-    @js.native
-    object resources extends js.Object {
+    object resources {
       
       /**
         * Can be Ascending or Descending - Default: Ascending
         */
+      @JSGlobal("umbraco.resources.Direction")
       @js.native
-      object Direction extends js.Object {
+      object Direction extends StObject {
         
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.resources.Direction with Double] = js.native
@@ -31,8 +29,9 @@ object global extends js.Object {
       /**
         * LogType
         */
+      @JSGlobal("umbraco.resources.LogType")
       @js.native
-      object LogType extends js.Object {
+      object LogType extends StObject {
         
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.resources.LogType with Double] = js.native
@@ -45,8 +44,9 @@ object global extends js.Object {
       /**
         * Property to order items by, default: `SortOrder`
         */
+      @JSGlobal("umbraco.resources.OrderItemsBy")
       @js.native
-      object OrderItemsBy extends js.Object {
+      object OrderItemsBy extends StObject {
         
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.resources.OrderItemsBy with Double] = js.native
@@ -55,14 +55,14 @@ object global extends js.Object {
       }
     }
     
-    @js.native
-    object services extends js.Object {
+    object services {
       
       /**
         * Notification Type
         */
+      @JSGlobal("umbraco.services.NotificationType")
       @js.native
-      object NotificationType extends js.Object {
+      object NotificationType extends StObject {
         
         @JSBracketAccess
         def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.services.NotificationType with Double] = js.native

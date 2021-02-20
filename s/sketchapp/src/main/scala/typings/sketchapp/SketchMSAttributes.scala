@@ -1,11 +1,12 @@
 package typings.sketchapp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSAttributes extends js.Object {
+trait SketchMSAttributes extends StObject {
   
   var MSAttributedStringColorAttribute: SketchMSColor = js.native
   
@@ -29,30 +30,18 @@ object SketchMSAttributes {
   }
   
   @scala.inline
-  implicit class SketchMSAttributesOps[Self <: SketchMSAttributes] (val x: Self) extends AnyVal {
+  implicit class SketchMSAttributesMutableBuilder[Self <: SketchMSAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMSAttributedStringColorAttribute(value: SketchMSColor): Self = StObject.set(x, "MSAttributedStringColorAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSAttributedStringFontAttribute(value: SketchMSFontAttribute): Self = StObject.set(x, "MSAttributedStringFontAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSAttributedStringColorAttribute(value: SketchMSColor): Self = this.set("MSAttributedStringColorAttribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMSAttributedStringFontAttribute(value: SketchMSFontAttribute): Self = this.set("MSAttributedStringFontAttribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKerning(value: Double): Self = this.set("kerning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParagraphStyle(value: SketchMSParagraphStyle): Self = this.set("paragraphStyle", value.asInstanceOf[js.Any])
+    def setParagraphStyle(value: SketchMSParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
   }
 }

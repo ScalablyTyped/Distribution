@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceCreateResponse extends js.Object {
+trait ServiceCreateResponse extends StObject {
   
   var ID: String = js.native
   
@@ -20,30 +21,18 @@ object ServiceCreateResponse {
   }
   
   @scala.inline
-  implicit class ServiceCreateResponseOps[Self <: ServiceCreateResponse] (val x: Self) extends AnyVal {
+  implicit class ServiceCreateResponseMutableBuilder[Self <: ServiceCreateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = this.set("Warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = this.set("Warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("Warnings", js.undefined)
+    def setWarningsVarargs(value: String*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
   }
 }

@@ -3,14 +3,15 @@ package typings.wxServerSdk.mod
 import typings.wxServerSdk.wxServerSdkStrings.i
 import typings.wxServerSdk.wxServerSdkStrings.m
 import typings.wxServerSdk.wxServerSdkStrings.s
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegExpOptions extends js.Object {
+trait RegExpOptions extends StObject {
   
-   // 正则表达式，字符串形式
+  // 正则表达式，字符串形式
   var options: i | m | s = js.native
   
   var regexp: String = js.native
@@ -24,24 +25,12 @@ object RegExpOptions {
   }
   
   @scala.inline
-  implicit class RegExpOptionsOps[Self <: RegExpOptions] (val x: Self) extends AnyVal {
+  implicit class RegExpOptionsMutableBuilder[Self <: RegExpOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptions(value: i | m | s): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOptions(value: i | m | s): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegexp(value: String): Self = this.set("regexp", value.asInstanceOf[js.Any])
+    def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
   }
 }

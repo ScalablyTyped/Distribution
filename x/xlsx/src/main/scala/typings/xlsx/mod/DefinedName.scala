@@ -1,11 +1,12 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefinedName extends js.Object {
+trait DefinedName extends StObject {
   
   /** Name comment */
   var Comment: js.UndefOr[String] = js.native
@@ -28,36 +29,24 @@ object DefinedName {
   }
   
   @scala.inline
-  implicit class DefinedNameOps[Self <: DefinedName] (val x: Self) extends AnyVal {
+  implicit class DefinedNameMutableBuilder[Self <: DefinedName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRef(value: String): Self = StObject.set(x, "Ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: String): Self = this.set("Ref", value.asInstanceOf[js.Any])
+    def setSheet(value: Double): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComment: Self = this.set("Comment", js.undefined)
-    
-    @scala.inline
-    def setSheet(value: Double): Self = this.set("Sheet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheet: Self = this.set("Sheet", js.undefined)
+    def setSheetUndefined: Self = StObject.set(x, "Sheet", js.undefined)
   }
 }

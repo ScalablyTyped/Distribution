@@ -1,5 +1,6 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.invityApi.invityApiStrings.ERROR
   - typings.invityApi.invityApiStrings.KYC
 */
-trait ExchangeTradeStatus extends js.Object
+trait ExchangeTradeStatus extends StObject
 object ExchangeTradeStatus {
   
   @scala.inline

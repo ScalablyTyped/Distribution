@@ -3,6 +3,7 @@ package typings.prettier.mod
 import typings.prettier.anon.ValueArray
 import typings.prettier.prettierBooleans.`true`
 import typings.prettier.prettierStrings.boolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,9 @@ trait BooleanArraySupportOption
   extends BaseSupportOption[boolean]
      with _SupportOption {
   
-  var array: `true` = js.native
-  
   var default: js.Array[ValueArray] = js.native
+  
+  var array: `true` = js.native
 }
 object BooleanArraySupportOption {
   
@@ -26,27 +27,15 @@ object BooleanArraySupportOption {
   }
   
   @scala.inline
-  implicit class BooleanArraySupportOptionOps[Self <: BooleanArraySupportOption] (val x: Self) extends AnyVal {
+  implicit class BooleanArraySupportOptionMutableBuilder[Self <: BooleanArraySupportOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: `true`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefault(value: js.Array[ValueArray]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArray(value: `true`): Self = this.set("array", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultVarargs(value: ValueArray*): Self = this.set("default", js.Array(value :_*))
-    
-    @scala.inline
-    def setDefault(value: js.Array[ValueArray]): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setDefaultVarargs(value: ValueArray*): Self = StObject.set(x, "default", js.Array(value :_*))
   }
 }

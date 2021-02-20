@@ -1,11 +1,12 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoftPhoneOptions extends js.Object {
+trait SoftPhoneOptions extends StObject {
   
   /**
     * Normally, the softphone microphone and speaker components are not allowed to be hosted in an iframe.
@@ -30,36 +31,24 @@ object SoftPhoneOptions {
   }
   
   @scala.inline
-  implicit class SoftPhoneOptionsOps[Self <: SoftPhoneOptions] (val x: Self) extends AnyVal {
+  implicit class SoftPhoneOptionsMutableBuilder[Self <: SoftPhoneOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFramedSoftphone(value: Boolean): Self = StObject.set(x, "allowFramedSoftphone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowFramedSoftphoneUndefined: Self = StObject.set(x, "allowFramedSoftphone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableRingtone(value: Boolean): Self = StObject.set(x, "disableRingtone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFramedSoftphone(value: Boolean): Self = this.set("allowFramedSoftphone", value.asInstanceOf[js.Any])
+    def setDisableRingtoneUndefined: Self = StObject.set(x, "disableRingtone", js.undefined)
     
     @scala.inline
-    def deleteAllowFramedSoftphone: Self = this.set("allowFramedSoftphone", js.undefined)
+    def setRingtoneUrl(value: String): Self = StObject.set(x, "ringtoneUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableRingtone(value: Boolean): Self = this.set("disableRingtone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableRingtone: Self = this.set("disableRingtone", js.undefined)
-    
-    @scala.inline
-    def setRingtoneUrl(value: String): Self = this.set("ringtoneUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRingtoneUrl: Self = this.set("ringtoneUrl", js.undefined)
+    def setRingtoneUrlUndefined: Self = StObject.set(x, "ringtoneUrl", js.undefined)
   }
 }

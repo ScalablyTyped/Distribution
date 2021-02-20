@@ -1,11 +1,12 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawRules extends js.Object {
+trait RawRules extends StObject {
   
   var begin: String = js.native
   
@@ -17,7 +18,7 @@ trait RawRules extends js.Object {
   
   var limitEnd: Double = js.native
   
-   // limit = limitStart  =0 and limitEnd = limit.
+  // limit = limitStart  =0 and limitEnd = limit.
   var limitStart: Double = js.native
   
   var orderBy: String = js.native
@@ -45,45 +46,33 @@ object RawRules {
   }
   
   @scala.inline
-  implicit class RawRulesOps[Self <: RawRules] (val x: Self) extends AnyVal {
+  implicit class RawRulesMutableBuilder[Self <: RawRules] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBegin(value: String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBegin(value: String): Self = this.set("begin", value.asInstanceOf[js.Any])
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setLimitEnd(value: Double): Self = StObject.set(x, "limitEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: String): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    def setLimitStart(value: Double): Self = StObject.set(x, "limitStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitEnd(value: Double): Self = this.set("limitEnd", value.asInstanceOf[js.Any])
+    def setOrderByDesc(value: String): Self = StObject.set(x, "orderByDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitStart(value: Double): Self = this.set("limitStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrderByDesc(value: String): Self = this.set("orderByDesc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
+    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

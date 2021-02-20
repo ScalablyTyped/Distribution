@@ -1,13 +1,13 @@
 package typings.awsSdkClientPinpointBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/model/_DirectMessageConfiguration", JSImport.Namespace)
-@js.native
-object directMessageConfigurationMod extends js.Object {
+object directMessageConfigurationMod {
   
-  @JSName("_DirectMessageConfiguration")
+  @JSImport("@aws-sdk/client-pinpoint-browser/model/_DirectMessageConfiguration", "_DirectMessageConfiguration")
+  @js.native
   val DirectMessageConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

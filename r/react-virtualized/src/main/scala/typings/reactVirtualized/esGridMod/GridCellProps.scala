@@ -3,12 +3,13 @@ package typings.reactVirtualized.esGridMod
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.reactVirtualized.esCellMeasurerMod.MeasuredCellParent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridCellProps extends js.Object {
+trait GridCellProps extends StObject {
   
   var columnIndex: Double = js.native
   
@@ -41,39 +42,27 @@ object GridCellProps {
   }
   
   @scala.inline
-  implicit class GridCellPropsOps[Self <: GridCellProps] (val x: Self) extends AnyVal {
+  implicit class GridCellPropsMutableBuilder[Self <: GridCellProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsScrolling(value: Boolean): Self = this.set("isScrolling", value.asInstanceOf[js.Any])
+    def setParent(value: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("isVisible", value.asInstanceOf[js.Any])
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

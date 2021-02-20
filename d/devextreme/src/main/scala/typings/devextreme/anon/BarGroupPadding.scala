@@ -20,12 +20,13 @@ import typings.devextreme.devextremeStrings.blend
 import typings.devextreme.devextremeStrings.extrapolate
 import typings.devextreme.mod.DevExpress.viz.ChartSeries
 import typings.devextreme.mod.DevExpress.viz.dxChartCommonSeriesSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BarGroupPadding extends js.Object {
+trait BarGroupPadding extends StObject {
   
   var barGroupPadding: js.UndefOr[Double] = js.native
   
@@ -66,110 +67,98 @@ object BarGroupPadding {
   }
   
   @scala.inline
-  implicit class BarGroupPaddingOps[Self <: BarGroupPadding] (val x: Self) extends AnyVal {
+  implicit class BarGroupPaddingMutableBuilder[Self <: BarGroupPadding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarGroupPadding(value: Double): Self = StObject.set(x, "barGroupPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarGroupPaddingUndefined: Self = StObject.set(x, "barGroupPadding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarGroupWidth(value: Double): Self = StObject.set(x, "barGroupWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarGroupPadding(value: Double): Self = this.set("barGroupPadding", value.asInstanceOf[js.Any])
+    def setBarGroupWidthUndefined: Self = StObject.set(x, "barGroupWidth", js.undefined)
     
     @scala.inline
-    def deleteBarGroupPadding: Self = this.set("barGroupPadding", js.undefined)
+    def setBottomIndent(value: Double): Self = StObject.set(x, "bottomIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarGroupWidth(value: Double): Self = this.set("barGroupWidth", value.asInstanceOf[js.Any])
+    def setBottomIndentUndefined: Self = StObject.set(x, "bottomIndent", js.undefined)
     
     @scala.inline
-    def deleteBarGroupWidth: Self = this.set("barGroupWidth", js.undefined)
+    def setCommonSeriesSettings(value: dxChartCommonSeriesSettings): Self = StObject.set(x, "commonSeriesSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomIndent(value: Double): Self = this.set("bottomIndent", value.asInstanceOf[js.Any])
+    def setCommonSeriesSettingsUndefined: Self = StObject.set(x, "commonSeriesSettings", js.undefined)
     
     @scala.inline
-    def deleteBottomIndent: Self = this.set("bottomIndent", js.undefined)
+    def setDataPrepareSettings(value: ConvertToAxisDataType): Self = StObject.set(x, "dataPrepareSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonSeriesSettings(value: dxChartCommonSeriesSettings): Self = this.set("commonSeriesSettings", value.asInstanceOf[js.Any])
+    def setDataPrepareSettingsUndefined: Self = StObject.set(x, "dataPrepareSettings", js.undefined)
     
     @scala.inline
-    def deleteCommonSeriesSettings: Self = this.set("commonSeriesSettings", js.undefined)
+    def setMaxBubbleSize(value: Double): Self = StObject.set(x, "maxBubbleSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataPrepareSettings(value: ConvertToAxisDataType): Self = this.set("dataPrepareSettings", value.asInstanceOf[js.Any])
+    def setMaxBubbleSizeUndefined: Self = StObject.set(x, "maxBubbleSize", js.undefined)
     
     @scala.inline
-    def deleteDataPrepareSettings: Self = this.set("dataPrepareSettings", js.undefined)
+    def setMinBubbleSize(value: Double): Self = StObject.set(x, "minBubbleSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBubbleSize(value: Double): Self = this.set("maxBubbleSize", value.asInstanceOf[js.Any])
+    def setMinBubbleSizeUndefined: Self = StObject.set(x, "minBubbleSize", js.undefined)
     
     @scala.inline
-    def deleteMaxBubbleSize: Self = this.set("maxBubbleSize", js.undefined)
+    def setNegativesAsZeroes(value: Boolean): Self = StObject.set(x, "negativesAsZeroes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBubbleSize(value: Double): Self = this.set("minBubbleSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinBubbleSize: Self = this.set("minBubbleSize", js.undefined)
-    
-    @scala.inline
-    def setNegativesAsZeroes(value: Boolean): Self = this.set("negativesAsZeroes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNegativesAsZeroes: Self = this.set("negativesAsZeroes", js.undefined)
-    
-    @scala.inline
-    def setPaletteVarargs(value: String*): Self = this.set("palette", js.Array(value :_*))
+    def setNegativesAsZeroesUndefined: Self = StObject.set(x, "negativesAsZeroes", js.undefined)
     
     @scala.inline
     def setPalette(
       value: js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-    ): Self = this.set("palette", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePalette: Self = this.set("palette", js.undefined)
+    def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = StObject.set(x, "paletteExtensionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = this.set("paletteExtensionMode", value.asInstanceOf[js.Any])
+    def setPaletteExtensionModeUndefined: Self = StObject.set(x, "paletteExtensionMode", js.undefined)
     
     @scala.inline
-    def deletePaletteExtensionMode: Self = this.set("paletteExtensionMode", js.undefined)
+    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
     @scala.inline
-    def setSeriesVarargs(value: ChartSeries*): Self = this.set("series", js.Array(value :_*))
+    def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value :_*))
     
     @scala.inline
-    def setSeries(value: ChartSeries | js.Array[ChartSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSeries(value: ChartSeries | js.Array[ChartSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSeriesTemplate(value: CustomizeSeries): Self = StObject.set(x, "seriesTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesTemplate(value: CustomizeSeries): Self = this.set("seriesTemplate", value.asInstanceOf[js.Any])
+    def setSeriesTemplateUndefined: Self = StObject.set(x, "seriesTemplate", js.undefined)
     
     @scala.inline
-    def deleteSeriesTemplate: Self = this.set("seriesTemplate", js.undefined)
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def setTopIndent(value: Double): Self = this.set("topIndent", value.asInstanceOf[js.Any])
+    def setSeriesVarargs(value: ChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def deleteTopIndent: Self = this.set("topIndent", js.undefined)
+    def setTopIndent(value: Double): Self = StObject.set(x, "topIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueAxis(value: Inverted): Self = this.set("valueAxis", value.asInstanceOf[js.Any])
+    def setTopIndentUndefined: Self = StObject.set(x, "topIndent", js.undefined)
     
     @scala.inline
-    def deleteValueAxis: Self = this.set("valueAxis", js.undefined)
+    def setValueAxis(value: Inverted): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
   }
 }

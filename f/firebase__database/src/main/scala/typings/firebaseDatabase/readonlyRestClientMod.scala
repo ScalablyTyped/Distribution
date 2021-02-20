@@ -4,14 +4,14 @@ import typings.firebaseDatabase.authTokenProviderMod.AuthTokenProvider
 import typings.firebaseDatabase.queryMod.Query
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.serverActionsMod.ServerActions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/ReadonlyRestClient", JSImport.Namespace)
-@js.native
-object readonlyRestClientMod extends js.Object {
+object readonlyRestClientMod {
   
+  @JSImport("@firebase/database/dist/src/core/ReadonlyRestClient", "ReadonlyRestClient")
   @js.native
   class ReadonlyRestClient protected () extends ServerActions {
     /**
@@ -55,8 +55,7 @@ object readonlyRestClientMod extends js.Object {
     var restRequest_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object ReadonlyRestClient extends js.Object {
+  object ReadonlyRestClient {
     
     /**
       * @param {!Query} query
@@ -64,7 +63,11 @@ object readonlyRestClientMod extends js.Object {
       * @return {string}
       * @private
       */
+    @JSImport("@firebase/database/dist/src/core/ReadonlyRestClient", "ReadonlyRestClient.getListenId_")
+    @js.native
     def getListenId_(query: Query): String = js.native
+    @JSImport("@firebase/database/dist/src/core/ReadonlyRestClient", "ReadonlyRestClient.getListenId_")
+    @js.native
     def getListenId_(query: Query, tag: Double): String = js.native
   }
 }

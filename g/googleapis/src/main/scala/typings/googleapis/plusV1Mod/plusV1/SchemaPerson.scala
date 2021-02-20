@@ -8,12 +8,13 @@ import typings.googleapis.anon.LabelType
 import typings.googleapis.anon.Min
 import typings.googleapis.anon.Primary
 import typings.googleapis.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPerson extends js.Object {
+trait SchemaPerson extends StObject {
   
   /**
     * A short biography for this person.
@@ -197,210 +198,198 @@ object SchemaPerson {
   }
   
   @scala.inline
-  implicit class SchemaPersonOps[Self <: SchemaPerson] (val x: Self) extends AnyVal {
+  implicit class SchemaPersonMutableBuilder[Self <: SchemaPerson] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAboutMe(value: String): Self = StObject.set(x, "aboutMe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAboutMeUndefined: Self = StObject.set(x, "aboutMe", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgeRange(value: Min): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAboutMe(value: String): Self = this.set("aboutMe", value.asInstanceOf[js.Any])
+    def setAgeRangeUndefined: Self = StObject.set(x, "ageRange", js.undefined)
     
     @scala.inline
-    def deleteAboutMe: Self = this.set("aboutMe", js.undefined)
+    def setBirthday(value: String): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgeRange(value: Min): Self = this.set("ageRange", value.asInstanceOf[js.Any])
+    def setBirthdayUndefined: Self = StObject.set(x, "birthday", js.undefined)
     
     @scala.inline
-    def deleteAgeRange: Self = this.set("ageRange", js.undefined)
+    def setBraggingRights(value: String): Self = StObject.set(x, "braggingRights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBirthday(value: String): Self = this.set("birthday", value.asInstanceOf[js.Any])
+    def setBraggingRightsUndefined: Self = StObject.set(x, "braggingRights", js.undefined)
     
     @scala.inline
-    def deleteBirthday: Self = this.set("birthday", js.undefined)
+    def setCircledByCount(value: Double): Self = StObject.set(x, "circledByCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBraggingRights(value: String): Self = this.set("braggingRights", value.asInstanceOf[js.Any])
+    def setCircledByCountUndefined: Self = StObject.set(x, "circledByCount", js.undefined)
     
     @scala.inline
-    def deleteBraggingRights: Self = this.set("braggingRights", js.undefined)
+    def setCover(value: CoverInfo): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircledByCount(value: Double): Self = this.set("circledByCount", value.asInstanceOf[js.Any])
+    def setCoverUndefined: Self = StObject.set(x, "cover", js.undefined)
     
     @scala.inline
-    def deleteCircledByCount: Self = this.set("circledByCount", js.undefined)
+    def setCurrentLocation(value: String): Self = StObject.set(x, "currentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCover(value: CoverInfo): Self = this.set("cover", value.asInstanceOf[js.Any])
+    def setCurrentLocationUndefined: Self = StObject.set(x, "currentLocation", js.undefined)
     
     @scala.inline
-    def deleteCover: Self = this.set("cover", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentLocation(value: String): Self = this.set("currentLocation", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCurrentLocation: Self = this.set("currentLocation", js.undefined)
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEmails(value: js.Array[Value]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setEmailsVarargs(value: Value*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
     @scala.inline
-    def setEmailsVarargs(value: Value*): Self = this.set("emails", js.Array(value :_*))
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmails(value: js.Array[Value]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteEmails: Self = this.set("emails", js.undefined)
+    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGender: Self = this.set("gender", js.undefined)
+    def setImage(value: IsDefault): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsPlusUser(value: Boolean): Self = StObject.set(x, "isPlusUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: IsDefault): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setIsPlusUserUndefined: Self = StObject.set(x, "isPlusUser", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPlusUser(value: Boolean): Self = this.set("isPlusUser", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIsPlusUser: Self = this.set("isPlusUser", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: Formatted): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Formatted): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
     @scala.inline
-    def deleteNickname: Self = this.set("nickname", js.undefined)
+    def setOccupation(value: String): Self = StObject.set(x, "occupation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    def setOccupationUndefined: Self = StObject.set(x, "occupation", js.undefined)
     
     @scala.inline
-    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    def setOrganizations(value: js.Array[Department]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccupation(value: String): Self = this.set("occupation", value.asInstanceOf[js.Any])
+    def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
     
     @scala.inline
-    def deleteOccupation: Self = this.set("occupation", js.undefined)
+    def setOrganizationsVarargs(value: Department*): Self = StObject.set(x, "organizations", js.Array(value :_*))
     
     @scala.inline
-    def setOrganizationsVarargs(value: Department*): Self = this.set("organizations", js.Array(value :_*))
+    def setPlacesLived(value: js.Array[Primary]): Self = StObject.set(x, "placesLived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizations(value: js.Array[Department]): Self = this.set("organizations", value.asInstanceOf[js.Any])
+    def setPlacesLivedUndefined: Self = StObject.set(x, "placesLived", js.undefined)
     
     @scala.inline
-    def deleteOrganizations: Self = this.set("organizations", js.undefined)
+    def setPlacesLivedVarargs(value: Primary*): Self = StObject.set(x, "placesLived", js.Array(value :_*))
     
     @scala.inline
-    def setPlacesLivedVarargs(value: Primary*): Self = this.set("placesLived", js.Array(value :_*))
+    def setPlusOneCount(value: Double): Self = StObject.set(x, "plusOneCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacesLived(value: js.Array[Primary]): Self = this.set("placesLived", value.asInstanceOf[js.Any])
+    def setPlusOneCountUndefined: Self = StObject.set(x, "plusOneCount", js.undefined)
     
     @scala.inline
-    def deletePlacesLived: Self = this.set("placesLived", js.undefined)
+    def setRelationshipStatus(value: String): Self = StObject.set(x, "relationshipStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlusOneCount(value: Double): Self = this.set("plusOneCount", value.asInstanceOf[js.Any])
+    def setRelationshipStatusUndefined: Self = StObject.set(x, "relationshipStatus", js.undefined)
     
     @scala.inline
-    def deletePlusOneCount: Self = this.set("plusOneCount", js.undefined)
+    def setSkills(value: String): Self = StObject.set(x, "skills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationshipStatus(value: String): Self = this.set("relationshipStatus", value.asInstanceOf[js.Any])
+    def setSkillsUndefined: Self = StObject.set(x, "skills", js.undefined)
     
     @scala.inline
-    def deleteRelationshipStatus: Self = this.set("relationshipStatus", js.undefined)
+    def setTagline(value: String): Self = StObject.set(x, "tagline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkills(value: String): Self = this.set("skills", value.asInstanceOf[js.Any])
+    def setTaglineUndefined: Self = StObject.set(x, "tagline", js.undefined)
     
     @scala.inline
-    def deleteSkills: Self = this.set("skills", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagline(value: String): Self = this.set("tagline", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTagline: Self = this.set("tagline", js.undefined)
+    def setUrls(value: js.Array[LabelType]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlsVarargs(value: LabelType*): Self = StObject.set(x, "urls", js.Array(value :_*))
     
     @scala.inline
-    def setUrlsVarargs(value: LabelType*): Self = this.set("urls", js.Array(value :_*))
+    def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrls(value: js.Array[LabelType]): Self = this.set("urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
-    
-    @scala.inline
-    def setVerified(value: Boolean): Self = this.set("verified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerified: Self = this.set("verified", js.undefined)
+    def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
   }
 }

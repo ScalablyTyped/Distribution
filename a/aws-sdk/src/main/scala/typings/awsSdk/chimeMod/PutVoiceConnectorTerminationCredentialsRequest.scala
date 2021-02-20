@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutVoiceConnectorTerminationCredentialsRequest extends js.Object {
+trait PutVoiceConnectorTerminationCredentialsRequest extends StObject {
   
   /**
     * The termination SIP credentials.
@@ -26,30 +27,18 @@ object PutVoiceConnectorTerminationCredentialsRequest {
   }
   
   @scala.inline
-  implicit class PutVoiceConnectorTerminationCredentialsRequestOps[Self <: PutVoiceConnectorTerminationCredentialsRequest] (val x: Self) extends AnyVal {
+  implicit class PutVoiceConnectorTerminationCredentialsRequestMutableBuilder[Self <: PutVoiceConnectorTerminationCredentialsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentials(value: CredentialList): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentialsVarargs(value: Credential*): Self = StObject.set(x, "Credentials", js.Array(value :_*))
     
     @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString): Self = this.set("VoiceConnectorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCredentialsVarargs(value: Credential*): Self = this.set("Credentials", js.Array(value :_*))
-    
-    @scala.inline
-    def setCredentials(value: CredentialList): Self = this.set("Credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentials: Self = this.set("Credentials", js.undefined)
+    def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

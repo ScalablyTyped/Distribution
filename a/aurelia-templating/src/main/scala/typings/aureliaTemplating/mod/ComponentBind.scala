@@ -1,11 +1,12 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentBind extends js.Object {
+trait ComponentBind extends StObject {
   
   /**
     * Implement this hook if you want to perform custom logic when databinding is activated on the view and view-model.
@@ -24,21 +25,9 @@ object ComponentBind {
   }
   
   @scala.inline
-  implicit class ComponentBindOps[Self <: ComponentBind] (val x: Self) extends AnyVal {
+  implicit class ComponentBindMutableBuilder[Self <: ComponentBind] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBind(value: (js.Any, js.Any) => Unit): Self = this.set("bind", js.Any.fromFunction2(value))
+    def setBind(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
   }
 }

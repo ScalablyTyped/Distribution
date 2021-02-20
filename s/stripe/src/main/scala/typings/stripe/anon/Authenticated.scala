@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Authenticated extends js.Object {
+trait Authenticated extends StObject {
   
   /**
     * Whether or not authentication was performed. 3D Secure will succeed without authentication when the
@@ -32,27 +33,15 @@ object Authenticated {
   }
   
   @scala.inline
-  implicit class AuthenticatedOps[Self <: Authenticated] (val x: Self) extends AnyVal {
+  implicit class AuthenticatedMutableBuilder[Self <: Authenticated] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuthenticated(value: Boolean): Self = this.set("authenticated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSucceeded(value: Boolean): Self = this.set("succeeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

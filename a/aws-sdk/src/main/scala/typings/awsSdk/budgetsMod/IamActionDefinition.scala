@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IamActionDefinition extends js.Object {
+trait IamActionDefinition extends StObject {
   
   /**
     *  A list of groups to be attached. There must be at least one group. 
@@ -36,48 +37,36 @@ object IamActionDefinition {
   }
   
   @scala.inline
-  implicit class IamActionDefinitionOps[Self <: IamActionDefinition] (val x: Self) extends AnyVal {
+  implicit class IamActionDefinitionMutableBuilder[Self <: IamActionDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
     @scala.inline
-    def setPolicyArn(value: PolicyArn): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
+    def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: Group*): Self = this.set("Groups", js.Array(value :_*))
+    def setRoles(value: Roles): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: Groups): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("Groups", js.undefined)
+    def setRolesVarargs(value: Role*): Self = StObject.set(x, "Roles", js.Array(value :_*))
     
     @scala.inline
-    def setRolesVarargs(value: Role*): Self = this.set("Roles", js.Array(value :_*))
+    def setUsers(value: Users): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoles(value: Roles): Self = this.set("Roles", value.asInstanceOf[js.Any])
+    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
     @scala.inline
-    def deleteRoles: Self = this.set("Roles", js.undefined)
-    
-    @scala.inline
-    def setUsersVarargs(value: User*): Self = this.set("Users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: Users): Self = this.set("Users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsers: Self = this.set("Users", js.undefined)
+    def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

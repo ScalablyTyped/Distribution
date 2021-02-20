@@ -5,14 +5,14 @@ import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.reflectionBlockMod.ReflectionBlock
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/PBR/subSurfaceBlock", JSImport.Namespace)
-@js.native
-object subSurfaceBlockMod extends js.Object {
+object subSurfaceBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/subSurfaceBlock", "SubSurfaceBlock")
   @js.native
   class SubSurfaceBlock protected () extends NodeMaterialBlock {
     /**
@@ -52,8 +52,7 @@ object subSurfaceBlockMod extends js.Object {
     def translucencyIntensity: NodeMaterialConnectionPoint = js.native
   }
   /* static members */
-  @js.native
-  object SubSurfaceBlock extends js.Object {
+  object SubSurfaceBlock {
     
     /**
       * Gets the main code of the block (fragment side)
@@ -63,6 +62,8 @@ object subSurfaceBlockMod extends js.Object {
       * @param worldPosVarName name of the variable holding the world position
       * @returns the shader code
       */
+    @JSImport("babylonjs/Materials/Node/Blocks/PBR/subSurfaceBlock", "SubSurfaceBlock.GetCode")
+    @js.native
     def GetCode(
       state: NodeMaterialBuildState,
       ssBlock: Nullable[SubSurfaceBlock],

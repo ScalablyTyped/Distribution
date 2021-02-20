@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Manifest extends js.Object {
+trait Manifest extends StObject {
   
   /** The name of the generated file. The default is `"manifest"` with the extension suffix corresponding to the `Manifest.type`. */
   var fileName: js.UndefOr[String] = js.native
@@ -28,39 +29,27 @@ object Manifest {
   }
   
   @scala.inline
-  implicit class ManifestOps[Self <: Manifest] (val x: Self) extends AnyVal {
+  implicit class ManifestMutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMuxStreams(value: js.Array[String]): Self = StObject.set(x, "muxStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setMuxStreamsUndefined: Self = StObject.set(x, "muxStreams", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setMuxStreamsVarargs(value: String*): Self = StObject.set(x, "muxStreams", js.Array(value :_*))
     
     @scala.inline
-    def setMuxStreamsVarargs(value: String*): Self = this.set("muxStreams", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuxStreams(value: js.Array[String]): Self = this.set("muxStreams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMuxStreams: Self = this.set("muxStreams", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

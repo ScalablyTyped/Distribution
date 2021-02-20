@@ -1,12 +1,13 @@
 package typings.nodeMailjet.mod.SMS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // other types
 @js.native
-trait GetResponseDataData extends js.Object {
+trait GetResponseDataData extends StObject {
   
   val Cost: ResponseCost = js.native
   
@@ -42,42 +43,30 @@ object GetResponseDataData {
   }
   
   @scala.inline
-  implicit class GetResponseDataDataOps[Self <: GetResponseDataData] (val x: Self) extends AnyVal {
+  implicit class GetResponseDataDataMutableBuilder[Self <: GetResponseDataData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCost(value: ResponseCost): Self = StObject.set(x, "Cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTS(value: Double): Self = StObject.set(x, "CreationTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCost(value: ResponseCost): Self = this.set("Cost", value.asInstanceOf[js.Any])
+    def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTS(value: Double): Self = this.set("CreationTS", value.asInstanceOf[js.Any])
+    def setSMSCount(value: Double): Self = StObject.set(x, "SMSCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("From", value.asInstanceOf[js.Any])
+    def setSentTS(value: Double): Self = StObject.set(x, "SentTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: String): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    def setStatus(value: ResponseStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMSCount(value: Double): Self = this.set("SMSCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSentTS(value: Double): Self = this.set("SentTS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: ResponseStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("To", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

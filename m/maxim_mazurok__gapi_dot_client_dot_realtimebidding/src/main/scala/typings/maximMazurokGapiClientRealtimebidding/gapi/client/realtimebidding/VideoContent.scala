@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoContent extends js.Object {
+trait VideoContent extends StObject {
   
   /** Output only. Video metadata. */
   var videoMetadata: js.UndefOr[VideoMetadata] = js.native
@@ -25,36 +26,24 @@ object VideoContent {
   }
   
   @scala.inline
-  implicit class VideoContentOps[Self <: VideoContent] (val x: Self) extends AnyVal {
+  implicit class VideoContentMutableBuilder[Self <: VideoContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "videoMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVideoMetadataUndefined: Self = StObject.set(x, "videoMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoMetadata(value: VideoMetadata): Self = this.set("videoMetadata", value.asInstanceOf[js.Any])
+    def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
     
     @scala.inline
-    def deleteVideoMetadata: Self = this.set("videoMetadata", js.undefined)
+    def setVideoVastXml(value: String): Self = StObject.set(x, "videoVastXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoUrl(value: String): Self = this.set("videoUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoUrl: Self = this.set("videoUrl", js.undefined)
-    
-    @scala.inline
-    def setVideoVastXml(value: String): Self = this.set("videoVastXml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoVastXml: Self = this.set("videoVastXml", js.undefined)
+    def setVideoVastXmlUndefined: Self = StObject.set(x, "videoVastXml", js.undefined)
   }
 }

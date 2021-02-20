@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartFontOptions extends js.Object {
+trait ChartFontOptions extends StObject {
   
   var defaultFontColor: js.UndefOr[ChartColor] = js.native
   
@@ -24,45 +25,33 @@ object ChartFontOptions {
   }
   
   @scala.inline
-  implicit class ChartFontOptionsOps[Self <: ChartFontOptions] (val x: Self) extends AnyVal {
+  implicit class ChartFontOptionsMutableBuilder[Self <: ChartFontOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultFontColor(value: ChartColor): Self = StObject.set(x, "defaultFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultFontColorUndefined: Self = StObject.set(x, "defaultFontColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultFontColorVarargs(value: String*): Self = StObject.set(x, "defaultFontColor", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultFontColorVarargs(value: String*): Self = this.set("defaultFontColor", js.Array(value :_*))
+    def setDefaultFontFamily(value: String): Self = StObject.set(x, "defaultFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFontColor(value: ChartColor): Self = this.set("defaultFontColor", value.asInstanceOf[js.Any])
+    def setDefaultFontFamilyUndefined: Self = StObject.set(x, "defaultFontFamily", js.undefined)
     
     @scala.inline
-    def deleteDefaultFontColor: Self = this.set("defaultFontColor", js.undefined)
+    def setDefaultFontSize(value: Double): Self = StObject.set(x, "defaultFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFontFamily(value: String): Self = this.set("defaultFontFamily", value.asInstanceOf[js.Any])
+    def setDefaultFontSizeUndefined: Self = StObject.set(x, "defaultFontSize", js.undefined)
     
     @scala.inline
-    def deleteDefaultFontFamily: Self = this.set("defaultFontFamily", js.undefined)
+    def setDefaultFontStyle(value: String): Self = StObject.set(x, "defaultFontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFontSize(value: Double): Self = this.set("defaultFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultFontSize: Self = this.set("defaultFontSize", js.undefined)
-    
-    @scala.inline
-    def setDefaultFontStyle(value: String): Self = this.set("defaultFontStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultFontStyle: Self = this.set("defaultFontStyle", js.undefined)
+    def setDefaultFontStyleUndefined: Self = StObject.set(x, "defaultFontStyle", js.undefined)
   }
 }

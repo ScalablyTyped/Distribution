@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChainValidationResult extends js.Object
+sealed trait ChainValidationResult extends StObject
 /** Describes the result of a certificate chain verification operation. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.ChainValidationResult")
 @js.native
-object ChainValidationResult extends js.Object {
+object ChainValidationResult extends StObject {
   
   /** The basic constraint extension of a certificate in the chain has not been observed. */
   @js.native

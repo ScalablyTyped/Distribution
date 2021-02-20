@@ -1,5 +1,6 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
 @js.native
-trait IOnInit extends js.Object {
+trait IOnInit extends StObject {
   
   /**
     * Called on each controller after all the controllers on an element have been constructed and had their bindings
@@ -28,21 +29,9 @@ object IOnInit {
   }
   
   @scala.inline
-  implicit class IOnInitOps[Self <: IOnInit] (val x: Self) extends AnyVal {
+  implicit class IOnInitMutableBuilder[Self <: IOnInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$onInit(value: () => Unit): Self = this.set("$onInit", js.Any.fromFunction0(value))
+    def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ApplicationDataCreateDisposition extends js.Object
+sealed trait ApplicationDataCreateDisposition extends StObject
 /** Specifies options for creating application data containers or returning existing containers. This enumeration is used by the ApplicationDataContainer.CreateContainer method. */
 @JSGlobal("Windows.Storage.ApplicationDataCreateDisposition")
 @js.native
-object ApplicationDataCreateDisposition extends js.Object {
+object ApplicationDataCreateDisposition extends StObject {
   
   /** Always returns the specified container. Creates the container if it does not exist. */
   @js.native

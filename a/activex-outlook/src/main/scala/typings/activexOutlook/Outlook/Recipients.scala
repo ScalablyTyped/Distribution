@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Recipients extends js.Object {
+trait Recipients extends StObject {
   
   def Add(Name: String): Recipient = js.native
   
@@ -49,48 +50,36 @@ object Recipients {
   }
   
   @scala.inline
-  implicit class RecipientsOps[Self <: Recipients] (val x: Self) extends AnyVal {
+  implicit class RecipientsMutableBuilder[Self <: Recipients] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: String => Recipient): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: String => Recipient): Self = this.set("Add", js.Any.fromFunction1(value))
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setItem(value: js.Any => Recipient): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setOutlookDotRecipients_typekey(value: Recipients): Self = StObject.set(x, "Outlook.Recipients_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any => Recipient): Self = this.set("Item", js.Any.fromFunction1(value))
+    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOutlookDotRecipients_typekey(value: Recipients): Self = this.set("Outlook.Recipients_typekey", value.asInstanceOf[js.Any])
+    def setResolveAll(value: () => Boolean): Self = StObject.set(x, "ResolveAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResolveAll(value: () => Boolean): Self = this.set("ResolveAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

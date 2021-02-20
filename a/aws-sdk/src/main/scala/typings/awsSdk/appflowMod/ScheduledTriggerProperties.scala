@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduledTriggerProperties extends js.Object {
+trait ScheduledTriggerProperties extends StObject {
   
   /**
     *  Specifies whether a scheduled flow has an incremental data transfer or a complete data transfer for each flow run. 
@@ -41,45 +42,33 @@ object ScheduledTriggerProperties {
   }
   
   @scala.inline
-  implicit class ScheduledTriggerPropertiesOps[Self <: ScheduledTriggerProperties] (val x: Self) extends AnyVal {
+  implicit class ScheduledTriggerPropertiesMutableBuilder[Self <: ScheduledTriggerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataPullMode(value: DataPullMode): Self = StObject.set(x, "dataPullMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataPullModeUndefined: Self = StObject.set(x, "dataPullMode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheduleEndTime(value: Date): Self = StObject.set(x, "scheduleEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleExpression(value: ScheduleExpression): Self = this.set("scheduleExpression", value.asInstanceOf[js.Any])
+    def setScheduleEndTimeUndefined: Self = StObject.set(x, "scheduleEndTime", js.undefined)
     
     @scala.inline
-    def setDataPullMode(value: DataPullMode): Self = this.set("dataPullMode", value.asInstanceOf[js.Any])
+    def setScheduleExpression(value: ScheduleExpression): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataPullMode: Self = this.set("dataPullMode", js.undefined)
+    def setScheduleStartTime(value: Date): Self = StObject.set(x, "scheduleStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleEndTime(value: Date): Self = this.set("scheduleEndTime", value.asInstanceOf[js.Any])
+    def setScheduleStartTimeUndefined: Self = StObject.set(x, "scheduleStartTime", js.undefined)
     
     @scala.inline
-    def deleteScheduleEndTime: Self = this.set("scheduleEndTime", js.undefined)
+    def setTimezone(value: Timezone): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleStartTime(value: Date): Self = this.set("scheduleStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleStartTime: Self = this.set("scheduleStartTime", js.undefined)
-    
-    @scala.inline
-    def setTimezone(value: Timezone): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

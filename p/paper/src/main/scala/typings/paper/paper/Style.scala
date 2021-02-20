@@ -1,5 +1,6 @@
 package typings.paper.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * apply it to a series of items:
   */
 @js.native
-trait Style extends js.Object {
+trait Style extends StObject {
   
   /** 
     * Specifies an array containing the dash and gap lengths of the stroke.
@@ -156,93 +157,81 @@ object Style {
   }
   
   @scala.inline
-  implicit class StyleOps[Self <: Style] (val x: Self) extends AnyVal {
+  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashArray(value: js.Array[Double]): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDashOffset(value: Double): Self = StObject.set(x, "dashOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashArrayVarargs(value: Double*): Self = this.set("dashArray", js.Array(value :_*))
+    def setFillColor(value: Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashArray(value: js.Array[Double]): Self = this.set("dashArray", value.asInstanceOf[js.Any])
+    def setFillColorNull: Self = StObject.set(x, "fillColor", null)
     
     @scala.inline
-    def setDashOffset(value: Double): Self = this.set("dashOffset", value.asInstanceOf[js.Any])
+    def setFillRule(value: String): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillRule(value: String): Self = this.set("fillRule", value.asInstanceOf[js.Any])
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSize(value: Double | String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double | String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontWeight(value: String | Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: String | Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setJustification(value: String): Self = StObject.set(x, "justification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJustification(value: String): Self = this.set("justification", value.asInstanceOf[js.Any])
+    def setLeading(value: Double | String): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeading(value: Double | String): Self = this.set("leading", value.asInstanceOf[js.Any])
+    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiterLimit(value: Double): Self = this.set("miterLimit", value.asInstanceOf[js.Any])
+    def setSelectedColor(value: Color): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    def setSelectedColorNull: Self = StObject.set(x, "selectedColor", null)
     
     @scala.inline
-    def setShadowOffset(value: Point): Self = this.set("shadowOffset", value.asInstanceOf[js.Any])
+    def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeCap(value: String): Self = this.set("strokeCap", value.asInstanceOf[js.Any])
+    def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeJoin(value: String): Self = this.set("strokeJoin", value.asInstanceOf[js.Any])
+    def setShadowColorNull: Self = StObject.set(x, "shadowColor", null)
     
     @scala.inline
-    def setStrokeScaling(value: Boolean): Self = this.set("strokeScaling", value.asInstanceOf[js.Any])
+    def setShadowOffset(value: Point): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    def setStrokeCap(value: String): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setStrokeColor(value: Color): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: Color): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setStrokeColorNull: Self = StObject.set(x, "strokeColor", null)
     
     @scala.inline
-    def setFillColorNull: Self = this.set("fillColor", null)
+    def setStrokeJoin(value: String): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedColor(value: Color): Self = this.set("selectedColor", value.asInstanceOf[js.Any])
+    def setStrokeScaling(value: Boolean): Self = StObject.set(x, "strokeScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedColorNull: Self = this.set("selectedColor", null)
+    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: Color): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowColorNull: Self = this.set("shadowColor", null)
-    
-    @scala.inline
-    def setStrokeColor(value: Color): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrokeColorNull: Self = this.set("strokeColor", null)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

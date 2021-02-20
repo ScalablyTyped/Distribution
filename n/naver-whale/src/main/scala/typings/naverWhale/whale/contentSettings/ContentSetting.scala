@@ -1,11 +1,12 @@
 package typings.naverWhale.whale.contentSettings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentSetting extends js.Object {
+trait ContentSetting extends StObject {
   
   /**
     * Clear all content setting rules set by this extension.

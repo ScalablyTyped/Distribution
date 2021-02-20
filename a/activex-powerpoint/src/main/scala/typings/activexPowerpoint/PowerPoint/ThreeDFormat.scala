@@ -10,12 +10,13 @@ import typings.activexOffice.Office.MsoPresetLightingSoftness
 import typings.activexOffice.Office.MsoPresetMaterial
 import typings.activexOffice.Office.MsoPresetThreeDFormat
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreeDFormat extends js.Object {
+trait ThreeDFormat extends StObject {
   
   val Application: js.Any = js.native
   
@@ -149,138 +150,126 @@ object ThreeDFormat {
   }
   
   @scala.inline
-  implicit class ThreeDFormatOps[Self <: ThreeDFormat] (val x: Self) extends AnyVal {
+  implicit class ThreeDFormatMutableBuilder[Self <: ThreeDFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBevelBottomDepth(value: Double): Self = StObject.set(x, "BevelBottomDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBevelBottomInset(value: Double): Self = StObject.set(x, "BevelBottomInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setBevelBottomType(value: MsoBevelType): Self = StObject.set(x, "BevelBottomType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelBottomDepth(value: Double): Self = this.set("BevelBottomDepth", value.asInstanceOf[js.Any])
+    def setBevelTopDepth(value: Double): Self = StObject.set(x, "BevelTopDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelBottomInset(value: Double): Self = this.set("BevelBottomInset", value.asInstanceOf[js.Any])
+    def setBevelTopInset(value: Double): Self = StObject.set(x, "BevelTopInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelBottomType(value: MsoBevelType): Self = this.set("BevelBottomType", value.asInstanceOf[js.Any])
+    def setBevelTopType(value: MsoBevelType): Self = StObject.set(x, "BevelTopType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelTopDepth(value: Double): Self = this.set("BevelTopDepth", value.asInstanceOf[js.Any])
+    def setContourColor(value: ColorFormat): Self = StObject.set(x, "ContourColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelTopInset(value: Double): Self = this.set("BevelTopInset", value.asInstanceOf[js.Any])
+    def setContourWidth(value: Double): Self = StObject.set(x, "ContourWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelTopType(value: MsoBevelType): Self = this.set("BevelTopType", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContourColor(value: ColorFormat): Self = this.set("ContourColor", value.asInstanceOf[js.Any])
+    def setDepth(value: Double): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContourWidth(value: Double): Self = this.set("ContourWidth", value.asInstanceOf[js.Any])
+    def setExtrusionColor(value: ColorFormat): Self = StObject.set(x, "ExtrusionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setExtrusionColorType(value: MsoExtrusionColorType): Self = StObject.set(x, "ExtrusionColorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("Depth", value.asInstanceOf[js.Any])
+    def setFieldOfView(value: Double): Self = StObject.set(x, "FieldOfView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtrusionColor(value: ColorFormat): Self = this.set("ExtrusionColor", value.asInstanceOf[js.Any])
+    def setIncrementRotationHorizontal(value: Double => Unit): Self = StObject.set(x, "IncrementRotationHorizontal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtrusionColorType(value: MsoExtrusionColorType): Self = this.set("ExtrusionColorType", value.asInstanceOf[js.Any])
+    def setIncrementRotationVertical(value: Double => Unit): Self = StObject.set(x, "IncrementRotationVertical", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFieldOfView(value: Double): Self = this.set("FieldOfView", value.asInstanceOf[js.Any])
+    def setIncrementRotationX(value: Double => Unit): Self = StObject.set(x, "IncrementRotationX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIncrementRotationHorizontal(value: Double => Unit): Self = this.set("IncrementRotationHorizontal", js.Any.fromFunction1(value))
+    def setIncrementRotationY(value: Double => Unit): Self = StObject.set(x, "IncrementRotationY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIncrementRotationVertical(value: Double => Unit): Self = this.set("IncrementRotationVertical", js.Any.fromFunction1(value))
+    def setIncrementRotationZ(value: Double => Unit): Self = StObject.set(x, "IncrementRotationZ", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIncrementRotationX(value: Double => Unit): Self = this.set("IncrementRotationX", js.Any.fromFunction1(value))
+    def setLightAngle(value: Double): Self = StObject.set(x, "LightAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementRotationY(value: Double => Unit): Self = this.set("IncrementRotationY", js.Any.fromFunction1(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementRotationZ(value: Double => Unit): Self = this.set("IncrementRotationZ", js.Any.fromFunction1(value))
+    def setPerspective(value: MsoTriState): Self = StObject.set(x, "Perspective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightAngle(value: Double): Self = this.set("LightAngle", value.asInstanceOf[js.Any])
+    def setPowerPointDotThreeDFormat_typekey(value: ThreeDFormat): Self = StObject.set(x, "PowerPoint.ThreeDFormat_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setPresetCamera(value: MsoPresetCamera): Self = StObject.set(x, "PresetCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerspective(value: MsoTriState): Self = this.set("Perspective", value.asInstanceOf[js.Any])
+    def setPresetExtrusionDirection(value: MsoPresetExtrusionDirection): Self = StObject.set(x, "PresetExtrusionDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotThreeDFormat_typekey(value: ThreeDFormat): Self = this.set("PowerPoint.ThreeDFormat_typekey", value.asInstanceOf[js.Any])
+    def setPresetLighting(value: MsoLightRigType): Self = StObject.set(x, "PresetLighting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresetCamera(value: MsoPresetCamera): Self = this.set("PresetCamera", value.asInstanceOf[js.Any])
+    def setPresetLightingDirection(value: MsoPresetLightingDirection): Self = StObject.set(x, "PresetLightingDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresetExtrusionDirection(value: MsoPresetExtrusionDirection): Self = this.set("PresetExtrusionDirection", value.asInstanceOf[js.Any])
+    def setPresetLightingSoftness(value: MsoPresetLightingSoftness): Self = StObject.set(x, "PresetLightingSoftness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresetLighting(value: MsoLightRigType): Self = this.set("PresetLighting", value.asInstanceOf[js.Any])
+    def setPresetMaterial(value: MsoPresetMaterial): Self = StObject.set(x, "PresetMaterial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresetLightingDirection(value: MsoPresetLightingDirection): Self = this.set("PresetLightingDirection", value.asInstanceOf[js.Any])
+    def setPresetThreeDFormat(value: MsoPresetThreeDFormat): Self = StObject.set(x, "PresetThreeDFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresetLightingSoftness(value: MsoPresetLightingSoftness): Self = this.set("PresetLightingSoftness", value.asInstanceOf[js.Any])
+    def setProjectText(value: MsoTriState): Self = StObject.set(x, "ProjectText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresetMaterial(value: MsoPresetMaterial): Self = this.set("PresetMaterial", value.asInstanceOf[js.Any])
+    def setResetRotation(value: () => Unit): Self = StObject.set(x, "ResetRotation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPresetThreeDFormat(value: MsoPresetThreeDFormat): Self = this.set("PresetThreeDFormat", value.asInstanceOf[js.Any])
+    def setRotationX(value: Double): Self = StObject.set(x, "RotationX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectText(value: MsoTriState): Self = this.set("ProjectText", value.asInstanceOf[js.Any])
+    def setRotationY(value: Double): Self = StObject.set(x, "RotationY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetRotation(value: () => Unit): Self = this.set("ResetRotation", js.Any.fromFunction0(value))
+    def setRotationZ(value: Double): Self = StObject.set(x, "RotationZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationX(value: Double): Self = this.set("RotationX", value.asInstanceOf[js.Any])
+    def setSetExtrusionDirection(value: MsoPresetExtrusionDirection => Unit): Self = StObject.set(x, "SetExtrusionDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRotationY(value: Double): Self = this.set("RotationY", value.asInstanceOf[js.Any])
+    def setSetPresetCamera(value: MsoPresetCamera => Unit): Self = StObject.set(x, "SetPresetCamera", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRotationZ(value: Double): Self = this.set("RotationZ", value.asInstanceOf[js.Any])
+    def setSetThreeDFormat(value: MsoPresetThreeDFormat => Unit): Self = StObject.set(x, "SetThreeDFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetExtrusionDirection(value: MsoPresetExtrusionDirection => Unit): Self = this.set("SetExtrusionDirection", js.Any.fromFunction1(value))
+    def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPresetCamera(value: MsoPresetCamera => Unit): Self = this.set("SetPresetCamera", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetThreeDFormat(value: MsoPresetThreeDFormat => Unit): Self = this.set("SetThreeDFormat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisible(value: MsoTriState): Self = this.set("Visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZ(value: Double): Self = this.set("Z", value.asInstanceOf[js.Any])
+    def setZ(value: Double): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
   }
 }

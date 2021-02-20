@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentifyResultProperties extends js.Object {
+trait IdentifyResultProperties extends StObject {
   
   /**
     * The name of the layer's primary display field.
@@ -44,42 +45,30 @@ object IdentifyResultProperties {
   }
   
   @scala.inline
-  implicit class IdentifyResultPropertiesOps[Self <: IdentifyResultProperties] (val x: Self) extends AnyVal {
+  implicit class IdentifyResultPropertiesMutableBuilder[Self <: IdentifyResultProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayFieldName(value: String): Self = StObject.set(x, "displayFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayFieldNameUndefined: Self = StObject.set(x, "displayFieldName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeature(value: GraphicProperties): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFieldName(value: String): Self = this.set("displayFieldName", value.asInstanceOf[js.Any])
+    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
     @scala.inline
-    def deleteDisplayFieldName: Self = this.set("displayFieldName", js.undefined)
+    def setLayerId(value: Double): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeature(value: GraphicProperties): Self = this.set("feature", value.asInstanceOf[js.Any])
+    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
     @scala.inline
-    def deleteFeature: Self = this.set("feature", js.undefined)
+    def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerId(value: Double): Self = this.set("layerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayerId: Self = this.set("layerId", js.undefined)
-    
-    @scala.inline
-    def setLayerName(value: String): Self = this.set("layerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayerName: Self = this.set("layerName", js.undefined)
+    def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
   }
 }

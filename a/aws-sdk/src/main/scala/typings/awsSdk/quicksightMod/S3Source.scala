@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Source extends js.Object {
+trait S3Source extends StObject {
   
   /**
     * The amazon Resource Name (ARN) for the data source.
@@ -31,33 +32,21 @@ object S3Source {
   }
   
   @scala.inline
-  implicit class S3SourceOps[Self <: S3Source] (val x: Self) extends AnyVal {
+  implicit class S3SourceMutableBuilder[Self <: S3Source] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceArn(value: Arn): Self = StObject.set(x, "DataSourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputColumns(value: InputColumnList): Self = StObject.set(x, "InputColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "InputColumns", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourceArn(value: Arn): Self = this.set("DataSourceArn", value.asInstanceOf[js.Any])
+    def setUploadSettings(value: UploadSettings): Self = StObject.set(x, "UploadSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputColumnsVarargs(value: InputColumn*): Self = this.set("InputColumns", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputColumns(value: InputColumnList): Self = this.set("InputColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadSettings(value: UploadSettings): Self = this.set("UploadSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadSettings: Self = this.set("UploadSettings", js.undefined)
+    def setUploadSettingsUndefined: Self = StObject.set(x, "UploadSettings", js.undefined)
   }
 }

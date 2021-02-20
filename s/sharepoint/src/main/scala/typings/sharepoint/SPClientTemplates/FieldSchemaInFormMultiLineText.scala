@@ -1,5 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,36 +57,24 @@ object FieldSchemaInFormMultiLineText {
   }
   
   @scala.inline
-  implicit class FieldSchemaInFormMultiLineTextOps[Self <: FieldSchemaInFormMultiLineText] (val x: Self) extends AnyVal {
+  implicit class FieldSchemaInFormMultiLineTextMutableBuilder[Self <: FieldSchemaInFormMultiLineText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowHyperlink(value: Boolean): Self = StObject.set(x, "AllowHyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendOnly(value: Boolean): Self = StObject.set(x, "AppendOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfLines(value: Double): Self = StObject.set(x, "NumberOfLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHyperlink(value: Boolean): Self = this.set("AllowHyperlink", value.asInstanceOf[js.Any])
+    def setRichText(value: Boolean): Self = StObject.set(x, "RichText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendOnly(value: Boolean): Self = this.set("AppendOnly", value.asInstanceOf[js.Any])
+    def setRichTextMode(value: RichTextMode): Self = StObject.set(x, "RichTextMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfLines(value: Double): Self = this.set("NumberOfLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRichText(value: Boolean): Self = this.set("RichText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRichTextMode(value: RichTextMode): Self = this.set("RichTextMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptEditorAdderId(value: String): Self = this.set("ScriptEditorAdderId", value.asInstanceOf[js.Any])
+    def setScriptEditorAdderId(value: String): Self = StObject.set(x, "ScriptEditorAdderId", value.asInstanceOf[js.Any])
   }
 }

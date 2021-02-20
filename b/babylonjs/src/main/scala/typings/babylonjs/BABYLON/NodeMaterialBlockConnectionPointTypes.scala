@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeMaterialBlockConnectionPointTypes extends js.Object
+sealed trait NodeMaterialBlockConnectionPointTypes extends StObject
 @JSGlobal("BABYLON.NodeMaterialBlockConnectionPointTypes")
 @js.native
-object NodeMaterialBlockConnectionPointTypes extends js.Object {
+object NodeMaterialBlockConnectionPointTypes extends StObject {
   
   /** Detect type based on connection */
   @js.native

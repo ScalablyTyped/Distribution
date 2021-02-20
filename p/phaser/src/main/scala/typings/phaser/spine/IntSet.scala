@@ -1,11 +1,12 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntSet extends js.Object {
+trait IntSet extends StObject {
   
   def add(value: Double): Boolean = js.native
   
@@ -32,36 +33,24 @@ object IntSet {
   }
   
   @scala.inline
-  implicit class IntSetOps[Self <: IntSet] (val x: Self) extends AnyVal {
+  implicit class IntSetMutableBuilder[Self <: IntSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Double => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value :_*))
     
     @scala.inline
-    def setAdd(value: Double => Boolean): Self = this.set("add", js.Any.fromFunction1(value))
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArrayVarargs(value: Double*): Self = this.set("array", js.Array(value :_*))
+    def setContains(value: Double => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArray(value: js.Array[Double]): Self = this.set("array", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setContains(value: Double => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

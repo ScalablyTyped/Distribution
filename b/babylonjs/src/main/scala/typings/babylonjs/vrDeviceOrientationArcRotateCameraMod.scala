@@ -4,14 +4,14 @@ import typings.babylonjs.arcRotateCameraMod.ArcRotateCamera
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/VR/vrDeviceOrientationArcRotateCamera", JSImport.Namespace)
-@js.native
-object vrDeviceOrientationArcRotateCameraMod extends js.Object {
+object vrDeviceOrientationArcRotateCameraMod {
   
+  @JSImport("babylonjs/Cameras/VR/vrDeviceOrientationArcRotateCamera", "VRDeviceOrientationArcRotateCamera")
   @js.native
   class VRDeviceOrientationArcRotateCamera protected () extends ArcRotateCamera {
     /**

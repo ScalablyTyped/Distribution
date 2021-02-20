@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,96 +107,84 @@ object IgGridTooltips {
   }
   
   @scala.inline
-  implicit class IgGridTooltipsOps[Self <: IgGridTooltips] (val x: Self) extends AnyVal {
+  implicit class IgGridTooltipsMutableBuilder[Self <: IgGridTooltips] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnSettings(value: IgGridTooltipsColumnSettings): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCursorLeftOffset(value: Double): Self = StObject.set(x, "cursorLeftOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSettings(value: IgGridTooltipsColumnSettings): Self = this.set("columnSettings", value.asInstanceOf[js.Any])
+    def setCursorLeftOffsetUndefined: Self = StObject.set(x, "cursorLeftOffset", js.undefined)
     
     @scala.inline
-    def deleteColumnSettings: Self = this.set("columnSettings", js.undefined)
+    def setCursorTopOffset(value: Double): Self = StObject.set(x, "cursorTopOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorLeftOffset(value: Double): Self = this.set("cursorLeftOffset", value.asInstanceOf[js.Any])
+    def setCursorTopOffsetUndefined: Self = StObject.set(x, "cursorTopOffset", js.undefined)
     
     @scala.inline
-    def deleteCursorLeftOffset: Self = this.set("cursorLeftOffset", js.undefined)
+    def setFadeTimespan(value: Double): Self = StObject.set(x, "fadeTimespan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorTopOffset(value: Double): Self = this.set("cursorTopOffset", value.asInstanceOf[js.Any])
+    def setFadeTimespanUndefined: Self = StObject.set(x, "fadeTimespan", js.undefined)
     
     @scala.inline
-    def deleteCursorTopOffset: Self = this.set("cursorTopOffset", js.undefined)
+    def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeTimespan(value: Double): Self = this.set("fadeTimespan", value.asInstanceOf[js.Any])
+    def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
     
     @scala.inline
-    def deleteFadeTimespan: Self = this.set("fadeTimespan", js.undefined)
+    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDelay(value: Double): Self = this.set("hideDelay", value.asInstanceOf[js.Any])
+    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
     @scala.inline
-    def deleteHideDelay: Self = this.set("hideDelay", js.undefined)
+    def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
+    def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
     
     @scala.inline
-    def deleteInherit: Self = this.set("inherit", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDelay(value: Double): Self = this.set("showDelay", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShowDelay: Self = this.set("showDelay", js.undefined)
+    def setTooltipHidden(value: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit): Self = StObject.set(x, "tooltipHidden", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTooltipHiddenUndefined: Self = StObject.set(x, "tooltipHidden", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTooltipHiding(value: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit): Self = StObject.set(x, "tooltipHiding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTooltipHidden(value: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit): Self = this.set("tooltipHidden", js.Any.fromFunction2(value))
+    def setTooltipHidingUndefined: Self = StObject.set(x, "tooltipHiding", js.undefined)
     
     @scala.inline
-    def deleteTooltipHidden: Self = this.set("tooltipHidden", js.undefined)
+    def setTooltipShowing(value: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit): Self = StObject.set(x, "tooltipShowing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTooltipHiding(value: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit): Self = this.set("tooltipHiding", js.Any.fromFunction2(value))
+    def setTooltipShowingUndefined: Self = StObject.set(x, "tooltipShowing", js.undefined)
     
     @scala.inline
-    def deleteTooltipHiding: Self = this.set("tooltipHiding", js.undefined)
+    def setTooltipShown(value: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit): Self = StObject.set(x, "tooltipShown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTooltipShowing(value: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit): Self = this.set("tooltipShowing", js.Any.fromFunction2(value))
+    def setTooltipShownUndefined: Self = StObject.set(x, "tooltipShown", js.undefined)
     
     @scala.inline
-    def deleteTooltipShowing: Self = this.set("tooltipShowing", js.undefined)
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipShown(value: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit): Self = this.set("tooltipShown", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTooltipShown: Self = this.set("tooltipShown", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

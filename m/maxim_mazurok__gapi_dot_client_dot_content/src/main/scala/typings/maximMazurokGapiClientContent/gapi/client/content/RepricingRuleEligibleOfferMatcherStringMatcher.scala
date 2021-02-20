@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepricingRuleEligibleOfferMatcherStringMatcher extends js.Object {
+trait RepricingRuleEligibleOfferMatcherStringMatcher extends StObject {
   
   /**
     * String attributes, as long as such attribute of an offer is one of the string attribute values, the offer is considered as passing the matcher. The string matcher checks an offer
@@ -22,27 +23,15 @@ object RepricingRuleEligibleOfferMatcherStringMatcher {
   }
   
   @scala.inline
-  implicit class RepricingRuleEligibleOfferMatcherStringMatcherOps[Self <: RepricingRuleEligibleOfferMatcherStringMatcher] (val x: Self) extends AnyVal {
+  implicit class RepricingRuleEligibleOfferMatcherStringMatcherMutableBuilder[Self <: RepricingRuleEligibleOfferMatcherStringMatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrAttributes(value: js.Array[String]): Self = StObject.set(x, "strAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStrAttributesUndefined: Self = StObject.set(x, "strAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStrAttributesVarargs(value: String*): Self = this.set("strAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setStrAttributes(value: js.Array[String]): Self = this.set("strAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrAttributes: Self = this.set("strAttributes", js.undefined)
+    def setStrAttributesVarargs(value: String*): Self = StObject.set(x, "strAttributes", js.Array(value :_*))
   }
 }

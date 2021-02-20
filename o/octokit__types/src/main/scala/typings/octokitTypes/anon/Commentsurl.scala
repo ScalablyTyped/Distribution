@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Commentsurl extends js.Object {
+trait Commentsurl extends StObject {
   
   var author: Avatarurl = js.native
   
@@ -44,48 +45,36 @@ object Commentsurl {
   }
   
   @scala.inline
-  implicit class CommentsurlOps[Self <: Commentsurl] (val x: Self) extends AnyVal {
+  implicit class CommentsurlMutableBuilder[Self <: Commentsurl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommit(value: Commentcount): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: Avatarurl): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setCommitter(value: Avatarurl): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments_url(value: String): Self = this.set("comments_url", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit(value: Commentcount): Self = this.set("commit", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitter(value: Avatarurl): Self = this.set("committer", value.asInstanceOf[js.Any])
+    def setParents(value: js.Array[Sha]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setParentsVarargs(value: Sha*): Self = StObject.set(x, "parents", js.Array(value :_*))
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentsVarargs(value: Sha*): Self = this.set("parents", js.Array(value :_*))
-    
-    @scala.inline
-    def setParents(value: js.Array[Sha]): Self = this.set("parents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSha(value: String): Self = this.set("sha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

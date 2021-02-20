@@ -1,5 +1,6 @@
 package typings.officeJs.OneNote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait InkStrokePointer extends js.Object {
+trait InkStrokePointer extends StObject {
   
   /**
     *
@@ -38,24 +39,12 @@ object InkStrokePointer {
   }
   
   @scala.inline
-  implicit class InkStrokePointerOps[Self <: InkStrokePointer] (val x: Self) extends AnyVal {
+  implicit class InkStrokePointerMutableBuilder[Self <: InkStrokePointer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContentId(value: String): Self = this.set("contentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInkStrokeId(value: String): Self = this.set("inkStrokeId", value.asInstanceOf[js.Any])
+    def setInkStrokeId(value: String): Self = StObject.set(x, "inkStrokeId", value.asInstanceOf[js.Any])
   }
 }

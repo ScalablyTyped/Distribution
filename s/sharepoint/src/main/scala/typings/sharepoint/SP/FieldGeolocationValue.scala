@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,42 +47,30 @@ object FieldGeolocationValue {
   }
   
   @scala.inline
-  implicit class FieldGeolocationValueOps[Self <: FieldGeolocationValue] (val x: Self) extends AnyVal {
+  implicit class FieldGeolocationValueMutableBuilder[Self <: FieldGeolocationValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_altitude(value: () => Double): Self = StObject.set(x, "get_altitude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_latitude(value: () => Double): Self = StObject.set(x, "get_latitude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_longitude(value: () => Double): Self = StObject.set(x, "get_longitude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_altitude(value: () => Double): Self = this.set("get_altitude", js.Any.fromFunction0(value))
+    def setGet_measure(value: () => Double): Self = StObject.set(x, "get_measure", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_latitude(value: () => Double): Self = this.set("get_latitude", js.Any.fromFunction0(value))
+    def setSet_altitude(value: Double => Unit): Self = StObject.set(x, "set_altitude", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_longitude(value: () => Double): Self = this.set("get_longitude", js.Any.fromFunction0(value))
+    def setSet_latitude(value: Double => Unit): Self = StObject.set(x, "set_latitude", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_measure(value: () => Double): Self = this.set("get_measure", js.Any.fromFunction0(value))
+    def setSet_longitude(value: Double => Unit): Self = StObject.set(x, "set_longitude", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_altitude(value: Double => Unit): Self = this.set("set_altitude", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_latitude(value: Double => Unit): Self = this.set("set_latitude", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_longitude(value: Double => Unit): Self = this.set("set_longitude", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_measure(value: Double => Unit): Self = this.set("set_measure", js.Any.fromFunction1(value))
+    def setSet_measure(value: Double => Unit): Self = StObject.set(x, "set_measure", js.Any.fromFunction1(value))
   }
 }

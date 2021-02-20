@@ -1,12 +1,13 @@
 package typings.yandexMaps.mod.control
 
 import typings.yandexMaps.mod.IPane
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IManagerOptions extends js.Object {
+trait IManagerOptions extends StObject {
   
   var margin: js.UndefOr[Double] = js.native
   
@@ -23,39 +24,27 @@ object IManagerOptions {
   }
   
   @scala.inline
-  implicit class IManagerOptionsOps[Self <: IManagerOptions] (val x: Self) extends AnyVal {
+  implicit class IManagerOptionsMutableBuilder[Self <: IManagerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPane(value: IPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setStates(value: js.Array[String]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: IPane): Self = this.set("pane", value.asInstanceOf[js.Any])
+    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
     @scala.inline
-    def deletePane: Self = this.set("pane", js.undefined)
-    
-    @scala.inline
-    def setStatesVarargs(value: String*): Self = this.set("states", js.Array(value :_*))
-    
-    @scala.inline
-    def setStates(value: js.Array[String]): Self = this.set("states", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStates: Self = this.set("states", js.undefined)
+    def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Graphics.Printing.OptionDetails
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a custom print task option. */
 @js.native
-trait PrintCustomTextOptionDetails extends js.Object {
+trait PrintCustomTextOptionDetails extends StObject {
   
   /** Gets or sets the display name of the custom print task option. */
   var displayName: String = js.native
@@ -54,42 +55,30 @@ object PrintCustomTextOptionDetails {
   }
   
   @scala.inline
-  implicit class PrintCustomTextOptionDetailsOps[Self <: PrintCustomTextOptionDetails] (val x: Self) extends AnyVal {
+  implicit class PrintCustomTextOptionDetailsMutableBuilder[Self <: PrintCustomTextOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxCharacters(value: Double): Self = StObject.set(x, "maxCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setOptionId(value: String): Self = StObject.set(x, "optionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorText(value: String): Self = this.set("errorText", value.asInstanceOf[js.Any])
+    def setOptionType(value: PrintOptionType): Self = StObject.set(x, "optionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCharacters(value: Double): Self = this.set("maxCharacters", value.asInstanceOf[js.Any])
+    def setState(value: PrintOptionStates): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionId(value: String): Self = this.set("optionId", value.asInstanceOf[js.Any])
+    def setTrySetValue(value: js.Any => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptionType(value: PrintOptionType): Self = this.set("optionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: PrintOptionStates): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrySetValue(value: js.Any => Boolean): Self = this.set("trySetValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

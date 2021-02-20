@@ -4,52 +4,61 @@ import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Connectivity")
-@js.native
-object Connectivity extends js.Object {
+object Connectivity {
   
+  @JSGlobal("Windows.Networking.Connectivity.ConnectionCost")
   @js.native
   class ConnectionCost ()
     extends typings.winrt.Windows.Networking.Connectivity.ConnectionCost
   
+  @JSGlobal("Windows.Networking.Connectivity.ConnectionProfile")
   @js.native
   class ConnectionProfile ()
     extends typings.winrt.Windows.Networking.Connectivity.ConnectionProfile
   
+  @JSGlobal("Windows.Networking.Connectivity.DataPlanStatus")
   @js.native
   class DataPlanStatus ()
     extends typings.winrt.Windows.Networking.Connectivity.DataPlanStatus
   
+  @JSGlobal("Windows.Networking.Connectivity.DataPlanUsage")
   @js.native
   class DataPlanUsage ()
     extends typings.winrt.Windows.Networking.Connectivity.DataPlanUsage
   
+  @JSGlobal("Windows.Networking.Connectivity.DataUsage")
   @js.native
   class DataUsage ()
     extends typings.winrt.Windows.Networking.Connectivity.DataUsage
   
+  @JSGlobal("Windows.Networking.Connectivity.IPInformation")
   @js.native
   class IPInformation ()
     extends typings.winrt.Windows.Networking.Connectivity.IPInformation
   
+  @JSGlobal("Windows.Networking.Connectivity.LanIdentifier")
   @js.native
   class LanIdentifier ()
     extends typings.winrt.Windows.Networking.Connectivity.LanIdentifier
   
+  @JSGlobal("Windows.Networking.Connectivity.LanIdentifierData")
   @js.native
   class LanIdentifierData ()
     extends typings.winrt.Windows.Networking.Connectivity.LanIdentifierData
   
+  @JSGlobal("Windows.Networking.Connectivity.NetworkAdapter")
   @js.native
   class NetworkAdapter ()
     extends typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
   
+  @JSGlobal("Windows.Networking.Connectivity.NetworkAuthenticationType")
   @js.native
-  object NetworkAuthenticationType extends js.Object {
+  object NetworkAuthenticationType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -77,8 +86,9 @@ object Connectivity extends js.Object {
     /* 5 */ val wpaPsk: typings.winrt.Windows.Networking.Connectivity.NetworkAuthenticationType.wpaPsk with Double = js.native
   }
   
+  @JSGlobal("Windows.Networking.Connectivity.NetworkConnectivityLevel")
   @js.native
-  object NetworkConnectivityLevel extends js.Object {
+  object NetworkConnectivityLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -94,8 +104,9 @@ object Connectivity extends js.Object {
     /* 0 */ val none: typings.winrt.Windows.Networking.Connectivity.NetworkConnectivityLevel.none with Double = js.native
   }
   
+  @JSGlobal("Windows.Networking.Connectivity.NetworkCostType")
   @js.native
-  object NetworkCostType extends js.Object {
+  object NetworkCostType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Networking.Connectivity.NetworkCostType with Double] = js.native
@@ -109,8 +120,9 @@ object Connectivity extends js.Object {
     /* 3 */ val variable: typings.winrt.Windows.Networking.Connectivity.NetworkCostType.variable with Double = js.native
   }
   
+  @JSGlobal("Windows.Networking.Connectivity.NetworkEncryptionType")
   @js.native
-  object NetworkEncryptionType extends js.Object {
+  object NetworkEncryptionType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType with Double] = js.native
@@ -136,41 +148,64 @@ object Connectivity extends js.Object {
     /* 7 */ val wpaUseGroup: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wpaUseGroup with Double = js.native
   }
   
+  @JSGlobal("Windows.Networking.Connectivity.NetworkInformation")
   @js.native
   class NetworkInformation ()
     extends typings.winrt.Windows.Networking.Connectivity.NetworkInformation
   /* static members */
-  @js.native
-  object NetworkInformation extends js.Object {
+  object NetworkInformation {
     
+    @JSGlobal("Windows.Networking.Connectivity.NetworkInformation")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.getConnectionProfiles")
+    @js.native
     def getConnectionProfiles(): IVectorView[typings.winrt.Windows.Networking.Connectivity.ConnectionProfile] = js.native
     
+    @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.getHostNames")
+    @js.native
     def getHostNames(): IVectorView[typings.winrt.Windows.Networking.HostName] = js.native
     
+    @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.getInternetConnectionProfile")
+    @js.native
     def getInternetConnectionProfile(): typings.winrt.Windows.Networking.Connectivity.ConnectionProfile = js.native
     
+    @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.getLanIdentifiers")
+    @js.native
     def getLanIdentifiers(): IVectorView[typings.winrt.Windows.Networking.Connectivity.LanIdentifier] = js.native
     
+    @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.getProxyConfigurationAsync")
+    @js.native
     def getProxyConfigurationAsync(uri: Uri): IAsyncOperation[typings.winrt.Windows.Networking.Connectivity.ProxyConfiguration] = js.native
     
+    @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.getSortedEndpointPairs")
+    @js.native
     def getSortedEndpointPairs(
       destinationList: IIterable[typings.winrt.Windows.Networking.EndpointPair],
       sortOptions: typings.winrt.Windows.Networking.HostNameSortOptions
     ): IVectorView[typings.winrt.Windows.Networking.EndpointPair] = js.native
     
-    var onnetworkstatuschanged: js.Any = js.native
+    @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.onnetworkstatuschanged")
+    @js.native
+    def onnetworkstatuschanged: js.Any = js.native
+    @scala.inline
+    def onnetworkstatuschanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnetworkstatuschanged")(x.asInstanceOf[js.Any])
   }
   
+  @JSGlobal("Windows.Networking.Connectivity.NetworkItem")
   @js.native
   class NetworkItem ()
     extends typings.winrt.Windows.Networking.Connectivity.NetworkItem
   
+  @JSGlobal("Windows.Networking.Connectivity.NetworkSecuritySettings")
   @js.native
   class NetworkSecuritySettings ()
     extends typings.winrt.Windows.Networking.Connectivity.NetworkSecuritySettings
   
+  @JSGlobal("Windows.Networking.Connectivity.NetworkTypes")
   @js.native
-  object NetworkTypes extends js.Object {
+  object NetworkTypes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Networking.Connectivity.NetworkTypes with Double] = js.native
@@ -182,12 +217,14 @@ object Connectivity extends js.Object {
     /* 2 */ val privateNetwork: typings.winrt.Windows.Networking.Connectivity.NetworkTypes.privateNetwork with Double = js.native
   }
   
+  @JSGlobal("Windows.Networking.Connectivity.ProxyConfiguration")
   @js.native
   class ProxyConfiguration ()
     extends typings.winrt.Windows.Networking.Connectivity.ProxyConfiguration
   
+  @JSGlobal("Windows.Networking.Connectivity.RoamingStates")
   @js.native
-  object RoamingStates extends js.Object {
+  object RoamingStates extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Networking.Connectivity.RoamingStates with Double] = js.native

@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.FieldsKeyOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientDfareporting.anon.IdKeyOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientDfareporting.anon.RemarketingListId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemarketingListSharesResource extends js.Object {
+trait RemarketingListSharesResource extends StObject {
   
   /** Gets one remarketing list share by remarketing list ID. */
   def get(): Request[RemarketingListShare] = js.native

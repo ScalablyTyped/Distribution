@@ -5,12 +5,13 @@ import typings.lodash.mod.ValueIteratee
 import typings.lodash.mod.ValueIteratorTypeGuard
 import typings.lodash.mod.__
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashPartition extends js.Object {
+trait LodashPartition extends StObject {
   
   def apply[T](callback: ValueIteratee[T]): LodashPartition2x1[T] = js.native
   def apply[T /* <: js.Object */](

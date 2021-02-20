@@ -1,6 +1,7 @@
 package typings.sharepoint.global.SP.JsGrid
 
 import typings.microsoftAjax.Sys.UI.DomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

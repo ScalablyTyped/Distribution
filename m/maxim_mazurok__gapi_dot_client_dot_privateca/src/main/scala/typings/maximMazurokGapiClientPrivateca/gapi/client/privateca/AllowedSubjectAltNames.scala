@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowedSubjectAltNames extends js.Object {
+trait AllowedSubjectAltNames extends StObject {
   
   /** Optional. Specifies if to allow custom X509Extension values. */
   var allowCustomSans: js.UndefOr[Boolean] = js.native
@@ -44,66 +45,54 @@ object AllowedSubjectAltNames {
   }
   
   @scala.inline
-  implicit class AllowedSubjectAltNamesOps[Self <: AllowedSubjectAltNames] (val x: Self) extends AnyVal {
+  implicit class AllowedSubjectAltNamesMutableBuilder[Self <: AllowedSubjectAltNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCustomSans(value: Boolean): Self = StObject.set(x, "allowCustomSans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCustomSansUndefined: Self = StObject.set(x, "allowCustomSans", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowGlobbingDnsWildcards(value: Boolean): Self = StObject.set(x, "allowGlobbingDnsWildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCustomSans(value: Boolean): Self = this.set("allowCustomSans", value.asInstanceOf[js.Any])
+    def setAllowGlobbingDnsWildcardsUndefined: Self = StObject.set(x, "allowGlobbingDnsWildcards", js.undefined)
     
     @scala.inline
-    def deleteAllowCustomSans: Self = this.set("allowCustomSans", js.undefined)
+    def setAllowedDnsNames(value: js.Array[String]): Self = StObject.set(x, "allowedDnsNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowGlobbingDnsWildcards(value: Boolean): Self = this.set("allowGlobbingDnsWildcards", value.asInstanceOf[js.Any])
+    def setAllowedDnsNamesUndefined: Self = StObject.set(x, "allowedDnsNames", js.undefined)
     
     @scala.inline
-    def deleteAllowGlobbingDnsWildcards: Self = this.set("allowGlobbingDnsWildcards", js.undefined)
+    def setAllowedDnsNamesVarargs(value: String*): Self = StObject.set(x, "allowedDnsNames", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedDnsNamesVarargs(value: String*): Self = this.set("allowedDnsNames", js.Array(value :_*))
+    def setAllowedEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "allowedEmailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedDnsNames(value: js.Array[String]): Self = this.set("allowedDnsNames", value.asInstanceOf[js.Any])
+    def setAllowedEmailAddressesUndefined: Self = StObject.set(x, "allowedEmailAddresses", js.undefined)
     
     @scala.inline
-    def deleteAllowedDnsNames: Self = this.set("allowedDnsNames", js.undefined)
+    def setAllowedEmailAddressesVarargs(value: String*): Self = StObject.set(x, "allowedEmailAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedEmailAddressesVarargs(value: String*): Self = this.set("allowedEmailAddresses", js.Array(value :_*))
+    def setAllowedIps(value: js.Array[String]): Self = StObject.set(x, "allowedIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedEmailAddresses(value: js.Array[String]): Self = this.set("allowedEmailAddresses", value.asInstanceOf[js.Any])
+    def setAllowedIpsUndefined: Self = StObject.set(x, "allowedIps", js.undefined)
     
     @scala.inline
-    def deleteAllowedEmailAddresses: Self = this.set("allowedEmailAddresses", js.undefined)
+    def setAllowedIpsVarargs(value: String*): Self = StObject.set(x, "allowedIps", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedIpsVarargs(value: String*): Self = this.set("allowedIps", js.Array(value :_*))
+    def setAllowedUris(value: js.Array[String]): Self = StObject.set(x, "allowedUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedIps(value: js.Array[String]): Self = this.set("allowedIps", value.asInstanceOf[js.Any])
+    def setAllowedUrisUndefined: Self = StObject.set(x, "allowedUris", js.undefined)
     
     @scala.inline
-    def deleteAllowedIps: Self = this.set("allowedIps", js.undefined)
-    
-    @scala.inline
-    def setAllowedUrisVarargs(value: String*): Self = this.set("allowedUris", js.Array(value :_*))
-    
-    @scala.inline
-    def setAllowedUris(value: js.Array[String]): Self = this.set("allowedUris", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowedUris: Self = this.set("allowedUris", js.undefined)
+    def setAllowedUrisVarargs(value: String*): Self = StObject.set(x, "allowedUris", js.Array(value :_*))
   }
 }

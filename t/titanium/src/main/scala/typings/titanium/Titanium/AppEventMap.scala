@@ -1,6 +1,7 @@
 package typings.titanium.Titanium
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,60 +61,48 @@ object AppEventMap {
   }
   
   @scala.inline
-  implicit class AppEventMapOps[Self <: AppEventMap] (val x: Self) extends AnyVal {
+  implicit class AppEventMapMutableBuilder[Self <: AppEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilitychanged(value: AppAccessibilitychangedEvent): Self = StObject.set(x, "accessibilitychanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: AppCloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyboardframechanged(value: AppKeyboardframechangedEvent): Self = StObject.set(x, "keyboardframechanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilitychanged(value: AppAccessibilitychangedEvent): Self = this.set("accessibilitychanged", value.asInstanceOf[js.Any])
+    def setMemorywarning(value: AppMemorywarningEvent): Self = StObject.set(x, "memorywarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: AppCloseEvent): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setPause(value: AppPauseEvent): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardframechanged(value: AppKeyboardframechangedEvent): Self = this.set("keyboardframechanged", value.asInstanceOf[js.Any])
+    def setPaused(value: AppPausedEvent): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemorywarning(value: AppMemorywarningEvent): Self = this.set("memorywarning", value.asInstanceOf[js.Any])
+    def setProximity(value: AppProximityEvent): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPause(value: AppPauseEvent): Self = this.set("pause", value.asInstanceOf[js.Any])
+    def setResume(value: AppResumeEvent): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaused(value: AppPausedEvent): Self = this.set("paused", value.asInstanceOf[js.Any])
+    def setResumed(value: AppResumedEvent): Self = StObject.set(x, "resumed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProximity(value: AppProximityEvent): Self = this.set("proximity", value.asInstanceOf[js.Any])
+    def setShortcutitemclick(value: AppShortcutitemclickEvent): Self = StObject.set(x, "shortcutitemclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResume(value: AppResumeEvent): Self = this.set("resume", value.asInstanceOf[js.Any])
+    def setSignificanttimechange(value: AppSignificanttimechangeEvent): Self = StObject.set(x, "significanttimechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResumed(value: AppResumedEvent): Self = this.set("resumed", value.asInstanceOf[js.Any])
+    def setStarted(value: AppStartedEvent): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortcutitemclick(value: AppShortcutitemclickEvent): Self = this.set("shortcutitemclick", value.asInstanceOf[js.Any])
+    def setUncaughtException(value: AppUncaughtExceptionEvent): Self = StObject.set(x, "uncaughtException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignificanttimechange(value: AppSignificanttimechangeEvent): Self = this.set("significanttimechange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStarted(value: AppStartedEvent): Self = this.set("started", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUncaughtException(value: AppUncaughtExceptionEvent): Self = this.set("uncaughtException", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserinteraction(value: AppUserinteractionEvent): Self = this.set("userinteraction", value.asInstanceOf[js.Any])
+    def setUserinteraction(value: AppUserinteractionEvent): Self = StObject.set(x, "userinteraction", value.asInstanceOf[js.Any])
   }
 }

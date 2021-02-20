@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptionLanguageMapping extends js.Object {
+trait CaptionLanguageMapping extends StObject {
   
   /**
     * The closed caption channel being described by this CaptionLanguageMapping.  Each channel mapping must have a unique channel number (maximum of 4)
@@ -31,27 +32,15 @@ object CaptionLanguageMapping {
   }
   
   @scala.inline
-  implicit class CaptionLanguageMappingOps[Self <: CaptionLanguageMapping] (val x: Self) extends AnyVal {
+  implicit class CaptionLanguageMappingMutableBuilder[Self <: CaptionLanguageMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptionChannel(value: integerMin1Max4): Self = StObject.set(x, "CaptionChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageCode(value: stringMin3Max3): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCaptionChannel(value: integerMin1Max4): Self = this.set("CaptionChannel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguageCode(value: stringMin3Max3): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguageDescription(value: stringMin1): Self = this.set("LanguageDescription", value.asInstanceOf[js.Any])
+    def setLanguageDescription(value: stringMin1): Self = StObject.set(x, "LanguageDescription", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AndroidNotification extends js.Object {
+trait AndroidNotification extends StObject {
   
   /** The notification's body text. If present, it will override google.firebase.fcm.v1.Notification.body. */
   var body: js.UndefOr[String] = js.native
@@ -153,177 +154,165 @@ object AndroidNotification {
   }
   
   @scala.inline
-  implicit class AndroidNotificationOps[Self <: AndroidNotification] (val x: Self) extends AnyVal {
+  implicit class AndroidNotificationMutableBuilder[Self <: AndroidNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyLocArgs(value: js.Array[String]): Self = StObject.set(x, "bodyLocArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyLocArgsUndefined: Self = StObject.set(x, "bodyLocArgs", js.undefined)
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBodyLocArgsVarargs(value: String*): Self = StObject.set(x, "bodyLocArgs", js.Array(value :_*))
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setBodyLocKey(value: String): Self = StObject.set(x, "bodyLocKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyLocArgsVarargs(value: String*): Self = this.set("bodyLocArgs", js.Array(value :_*))
+    def setBodyLocKeyUndefined: Self = StObject.set(x, "bodyLocKey", js.undefined)
     
     @scala.inline
-    def setBodyLocArgs(value: js.Array[String]): Self = this.set("bodyLocArgs", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteBodyLocArgs: Self = this.set("bodyLocArgs", js.undefined)
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyLocKey(value: String): Self = this.set("bodyLocKey", value.asInstanceOf[js.Any])
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def deleteBodyLocKey: Self = this.set("bodyLocKey", js.undefined)
+    def setClickAction(value: String): Self = StObject.set(x, "clickAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setClickActionUndefined: Self = StObject.set(x, "clickAction", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickAction(value: String): Self = this.set("clickAction", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteClickAction: Self = this.set("clickAction", js.undefined)
+    def setDefaultLightSettings(value: Boolean): Self = StObject.set(x, "defaultLightSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDefaultLightSettingsUndefined: Self = StObject.set(x, "defaultLightSettings", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDefaultSound(value: Boolean): Self = StObject.set(x, "defaultSound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLightSettings(value: Boolean): Self = this.set("defaultLightSettings", value.asInstanceOf[js.Any])
+    def setDefaultSoundUndefined: Self = StObject.set(x, "defaultSound", js.undefined)
     
     @scala.inline
-    def deleteDefaultLightSettings: Self = this.set("defaultLightSettings", js.undefined)
+    def setDefaultVibrateTimings(value: Boolean): Self = StObject.set(x, "defaultVibrateTimings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSound(value: Boolean): Self = this.set("defaultSound", value.asInstanceOf[js.Any])
+    def setDefaultVibrateTimingsUndefined: Self = StObject.set(x, "defaultVibrateTimings", js.undefined)
     
     @scala.inline
-    def deleteDefaultSound: Self = this.set("defaultSound", js.undefined)
+    def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVibrateTimings(value: Boolean): Self = this.set("defaultVibrateTimings", value.asInstanceOf[js.Any])
+    def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
     @scala.inline
-    def deleteDefaultVibrateTimings: Self = this.set("defaultVibrateTimings", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTime(value: String): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteEventTime: Self = this.set("eventTime", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setLightSettings(value: LightSettings): Self = StObject.set(x, "lightSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLightSettingsUndefined: Self = StObject.set(x, "lightSettings", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setLocalOnly(value: Boolean): Self = StObject.set(x, "localOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightSettings(value: LightSettings): Self = this.set("lightSettings", value.asInstanceOf[js.Any])
+    def setLocalOnlyUndefined: Self = StObject.set(x, "localOnly", js.undefined)
     
     @scala.inline
-    def deleteLightSettings: Self = this.set("lightSettings", js.undefined)
+    def setNotificationCount(value: Double): Self = StObject.set(x, "notificationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalOnly(value: Boolean): Self = this.set("localOnly", value.asInstanceOf[js.Any])
+    def setNotificationCountUndefined: Self = StObject.set(x, "notificationCount", js.undefined)
     
     @scala.inline
-    def deleteLocalOnly: Self = this.set("localOnly", js.undefined)
+    def setNotificationPriority(value: String): Self = StObject.set(x, "notificationPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationCount(value: Double): Self = this.set("notificationCount", value.asInstanceOf[js.Any])
+    def setNotificationPriorityUndefined: Self = StObject.set(x, "notificationPriority", js.undefined)
     
     @scala.inline
-    def deleteNotificationCount: Self = this.set("notificationCount", js.undefined)
+    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationPriority(value: String): Self = this.set("notificationPriority", value.asInstanceOf[js.Any])
+    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
     @scala.inline
-    def deleteNotificationPriority: Self = this.set("notificationPriority", js.undefined)
+    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSound(value: String): Self = this.set("sound", value.asInstanceOf[js.Any])
+    def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
     
     @scala.inline
-    def deleteSound: Self = this.set("sound", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSticky(value: Boolean): Self = this.set("sticky", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteSticky: Self = this.set("sticky", js.undefined)
+    def setTicker(value: String): Self = StObject.set(x, "ticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTickerUndefined: Self = StObject.set(x, "ticker", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicker(value: String): Self = this.set("ticker", value.asInstanceOf[js.Any])
+    def setTitleLocArgs(value: js.Array[String]): Self = StObject.set(x, "titleLocArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTicker: Self = this.set("ticker", js.undefined)
+    def setTitleLocArgsUndefined: Self = StObject.set(x, "titleLocArgs", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleLocArgsVarargs(value: String*): Self = StObject.set(x, "titleLocArgs", js.Array(value :_*))
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleLocKey(value: String): Self = StObject.set(x, "titleLocKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleLocArgsVarargs(value: String*): Self = this.set("titleLocArgs", js.Array(value :_*))
+    def setTitleLocKeyUndefined: Self = StObject.set(x, "titleLocKey", js.undefined)
     
     @scala.inline
-    def setTitleLocArgs(value: js.Array[String]): Self = this.set("titleLocArgs", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitleLocArgs: Self = this.set("titleLocArgs", js.undefined)
+    def setVibrateTimings(value: js.Array[String]): Self = StObject.set(x, "vibrateTimings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleLocKey(value: String): Self = this.set("titleLocKey", value.asInstanceOf[js.Any])
+    def setVibrateTimingsUndefined: Self = StObject.set(x, "vibrateTimings", js.undefined)
     
     @scala.inline
-    def deleteTitleLocKey: Self = this.set("titleLocKey", js.undefined)
+    def setVibrateTimingsVarargs(value: String*): Self = StObject.set(x, "vibrateTimings", js.Array(value :_*))
     
     @scala.inline
-    def setVibrateTimingsVarargs(value: String*): Self = this.set("vibrateTimings", js.Array(value :_*))
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVibrateTimings(value: js.Array[String]): Self = this.set("vibrateTimings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVibrateTimings: Self = this.set("vibrateTimings", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

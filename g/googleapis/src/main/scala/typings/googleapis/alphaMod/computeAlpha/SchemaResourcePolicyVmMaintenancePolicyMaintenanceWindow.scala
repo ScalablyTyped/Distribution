@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * operations to this window.
   */
 @js.native
-trait SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow extends js.Object {
+trait SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow extends StObject {
   
   var dailyMaintenanceWindow: js.UndefOr[SchemaResourcePolicyDailyCycle] = js.native
 }
@@ -22,24 +23,12 @@ object SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow {
   }
   
   @scala.inline
-  implicit class SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindowOps[Self <: SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow] (val x: Self) extends AnyVal {
+  implicit class SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindowMutableBuilder[Self <: SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDailyMaintenanceWindow(value: SchemaResourcePolicyDailyCycle): Self = StObject.set(x, "dailyMaintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDailyMaintenanceWindow(value: SchemaResourcePolicyDailyCycle): Self = this.set("dailyMaintenanceWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDailyMaintenanceWindow: Self = this.set("dailyMaintenanceWindow", js.undefined)
+    def setDailyMaintenanceWindowUndefined: Self = StObject.set(x, "dailyMaintenanceWindow", js.undefined)
   }
 }

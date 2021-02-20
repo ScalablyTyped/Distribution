@@ -5,16 +5,19 @@ import typings.workerbApi.workerbApiStrings.error
 import typings.workerbApi.workerbApiStrings.off
 import typings.workerbApi.workerbApiStrings.on
 import typings.workerbApi.workerbApiStrings.success
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   // global variables
-  var args: js.Array[String] = js.native
+  @JSGlobal("args")
+  @js.native
+  def args: js.Array[String] = js.native
+  @scala.inline
+  def args_=(x: js.Array[String]): Unit = js.Dynamic.global.updateDynamic("args")(x.asInstanceOf[js.Any])
   
   /**
     * The click function performs a mouse click on a target element. The element can be specified using different query methods.
@@ -24,7 +27,11 @@ object global extends js.Object {
     *
     * @returns undefined
     */
+  @JSGlobal("click")
+  @js.native
   def click(query: String): js.UndefOr[scala.Nothing] = js.native
+  @JSGlobal("click")
+  @js.native
   def click(query: String, options: ClickQueryOptions): js.UndefOr[scala.Nothing] = js.native
   
   /**
@@ -37,6 +44,8 @@ object global extends js.Object {
     *
     * @returns undefined
     */
+  @JSGlobal("download")
+  @js.native
   def download(filename: String, content: String, contentType: String): js.UndefOr[scala.Nothing] = js.native
   
   /**
@@ -48,7 +57,11 @@ object global extends js.Object {
     *
     * @returns undefined
     */
+  @JSGlobal("event")
+  @js.native
   def event(query: String, eventConfig: EventConfig): js.UndefOr[scala.Nothing] = js.native
+  @JSGlobal("event")
+  @js.native
   def event(query: String, eventConfig: EventConfig, options: ClickQueryOptions): js.UndefOr[scala.Nothing] = js.native
   
   /**
@@ -60,9 +73,17 @@ object global extends js.Object {
     *
     * @returns An array of objects. Each object corresponds to each element in the DOM that satisfied the query and it has the attribute name & values as properties for that element.
     */
+  @JSGlobal("getAttribute")
+  @js.native
   def getAttribute(attributes: String, query: String): js.Array[js.Object] = js.native
+  @JSGlobal("getAttribute")
+  @js.native
   def getAttribute(attributes: String, query: String, options: GetAttributeQueryOptions): js.Array[js.Object] = js.native
+  @JSGlobal("getAttribute")
+  @js.native
   def getAttribute(attributes: js.Array[String], query: String): js.Array[js.Object] = js.native
+  @JSGlobal("getAttribute")
+  @js.native
   def getAttribute(attributes: js.Array[String], query: String, options: GetAttributeQueryOptions): js.Array[js.Object] = js.native
   
   /**
@@ -78,9 +99,17 @@ object global extends js.Object {
     *
     * * status: A number that is the Status Code returned by the remote server.
     */
+  @JSGlobal("httpDelete")
+  @js.native
   def httpDelete(url: String): APIResponse = js.native
+  @JSGlobal("httpDelete")
+  @js.native
   def httpDelete(url: String, data: js.UndefOr[scala.Nothing], headers: js.Object): APIResponse = js.native
+  @JSGlobal("httpDelete")
+  @js.native
   def httpDelete(url: String, data: js.Any): APIResponse = js.native
+  @JSGlobal("httpDelete")
+  @js.native
   def httpDelete(url: String, data: js.Any, headers: js.Object): APIResponse = js.native
   
   /**
@@ -95,7 +124,11 @@ object global extends js.Object {
     *
     * * status: A number that is the Status Code returned by the remote server.
     */
+  @JSGlobal("httpGet")
+  @js.native
   def httpGet(url: String): APIResponse = js.native
+  @JSGlobal("httpGet")
+  @js.native
   def httpGet(url: String, headers: js.Object): APIResponse = js.native
   
   /**
@@ -111,9 +144,17 @@ object global extends js.Object {
     *
     * * status: A number that is the Status Code returned by the remote server.
     */
+  @JSGlobal("httpPost")
+  @js.native
   def httpPost(url: String): APIResponse = js.native
+  @JSGlobal("httpPost")
+  @js.native
   def httpPost(url: String, data: js.UndefOr[scala.Nothing], headers: js.Object): APIResponse = js.native
+  @JSGlobal("httpPost")
+  @js.native
   def httpPost(url: String, data: js.Any): APIResponse = js.native
+  @JSGlobal("httpPost")
+  @js.native
   def httpPost(url: String, data: js.Any, headers: js.Object): APIResponse = js.native
   
   /**
@@ -129,9 +170,17 @@ object global extends js.Object {
     *
     * * status: A number that is the Status Code returned by the remote server.
     */
+  @JSGlobal("httpPut")
+  @js.native
   def httpPut(url: String): APIResponse = js.native
+  @JSGlobal("httpPut")
+  @js.native
   def httpPut(url: String, data: js.UndefOr[scala.Nothing], headers: js.Object): APIResponse = js.native
+  @JSGlobal("httpPut")
+  @js.native
   def httpPut(url: String, data: js.Any): APIResponse = js.native
+  @JSGlobal("httpPut")
+  @js.native
   def httpPut(url: String, data: js.Any, headers: js.Object): APIResponse = js.native
   
   /**
@@ -142,10 +191,15 @@ object global extends js.Object {
     *
     * @returns undefined
     */
+  @JSGlobal("log")
+  @js.native
   def log(value: js.Any): js.UndefOr[scala.Nothing] = js.native
+  @JSGlobal("log")
+  @js.native
   def log(value: js.Any, color: String): js.UndefOr[scala.Nothing] = js.native
   
-  @JSName("logging")
+  @JSGlobal("logging")
+  @js.native
   def logging_off(state: off): js.UndefOr[scala.Nothing] = js.native
   /**
     * The logging function is used to enable and disable debug messages logging.
@@ -154,7 +208,8 @@ object global extends js.Object {
     *
     * @returns undefined
     */
-  @JSName("logging")
+  @JSGlobal("logging")
+  @js.native
   def logging_on(state: on): js.UndefOr[scala.Nothing] = js.native
   
   /**
@@ -166,10 +221,12 @@ object global extends js.Object {
     *
     * @returns undefined
     */
-  @JSName("notify")
-  def notify_error(message: String, `type`: error, timeout: Double): js.UndefOr[scala.Nothing] = js.native
-  @JSName("notify")
-  def notify_success(message: String, `type`: success, timeout: Double): js.UndefOr[scala.Nothing] = js.native
+  @JSGlobal("notify")
+  @js.native
+  def notify__error(message: String, `type`: error, timeout: Double): js.UndefOr[scala.Nothing] = js.native
+  @JSGlobal("notify")
+  @js.native
+  def notify__success(message: String, `type`: success, timeout: Double): js.UndefOr[scala.Nothing] = js.native
   
   /**
     * The open function opens a link in the same browser window.
@@ -178,9 +235,15 @@ object global extends js.Object {
     *
     * @returns undefined
     */
+  @JSGlobal("open")
+  @js.native
   def open(url: String): js.UndefOr[scala.Nothing] = js.native
   
-  var options: js.Any = js.native
+  @JSGlobal("options")
+  @js.native
+  def options: js.Any = js.native
+  @scala.inline
+  def options_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("options")(x.asInstanceOf[js.Any])
   
   /**
     * The prompt function opens a prompt to query user for input.
@@ -189,6 +252,8 @@ object global extends js.Object {
     *
     * @returns A string that has the user input.
     */
+  @JSGlobal("prompt")
+  @js.native
   def prompt(label: String): String = js.native
   
   /**
@@ -199,7 +264,11 @@ object global extends js.Object {
     *
     * @returns A string which is either the text inside an element or in case of input the value of the input.
     */
+  @JSGlobal("read")
+  @js.native
   def read(query: String): String = js.native
+  @JSGlobal("read")
+  @js.native
   def read(query: String, options: ClickQueryOptions): String = js.native
   
   /**
@@ -210,7 +279,11 @@ object global extends js.Object {
     *
     * @returns The array of values read.
     */
+  @JSGlobal("readAll")
+  @js.native
   def readAll(query: String): js.Array[_] = js.native
+  @JSGlobal("readAll")
+  @js.native
   def readAll(query: String, options: QueryOptions): js.Array[_] = js.native
   
   /**
@@ -225,7 +298,11 @@ object global extends js.Object {
     *
     * * rows: An array of objects where each key corresponds to a header from the 'header' array. If column header is not identified, the key will be 'column{index}'.
     */
+  @JSGlobal("readTable")
+  @js.native
   def readTable(query: String): Header = js.native
+  @JSGlobal("readTable")
+  @js.native
   def readTable(query: String, options: ClickQueryOptions): Header = js.native
   
   /**
@@ -233,6 +310,8 @@ object global extends js.Object {
     *
     * @returns A string which is the URL of the webpage in the active tab.
     */
+  @JSGlobal("readUrl")
+  @js.native
   def readUrl(): String = js.native
   
   /**
@@ -243,6 +322,8 @@ object global extends js.Object {
     *
     * @returns A string which is stringified version of the value returned by the passed function.
     */
+  @JSGlobal("runInTab")
+  @js.native
   def runInTab(task: js.Function0[_], keepOpen: Boolean): String = js.native
   
   /**
@@ -254,7 +335,11 @@ object global extends js.Object {
     *
     * @returns undefined
     */
+  @JSGlobal("select")
+  @js.native
   def select(value: String, query: String): js.UndefOr[scala.Nothing] = js.native
+  @JSGlobal("select")
+  @js.native
   def select(value: String, query: String, options: SelectQueryOptions): js.UndefOr[scala.Nothing] = js.native
   
   /**
@@ -265,7 +350,11 @@ object global extends js.Object {
     *
     * @returns undefined
     */
+  @JSGlobal("submit")
+  @js.native
   def submit(query: String): js.UndefOr[scala.Nothing] = js.native
+  @JSGlobal("submit")
+  @js.native
   def submit(query: String, options: ClickQueryOptions): js.UndefOr[scala.Nothing] = js.native
   
   /**
@@ -275,6 +364,8 @@ object global extends js.Object {
     *
     * @returns undefined
     */
+  @JSGlobal("tab")
+  @js.native
   def tab(url: String): js.UndefOr[scala.Nothing] = js.native
   
   /**
@@ -286,6 +377,10 @@ object global extends js.Object {
     *
     * @returns undefined
     */
+  @JSGlobal("type")
+  @js.native
   def `type`(text: String, query: String): js.UndefOr[scala.Nothing] = js.native
+  @JSGlobal("type")
+  @js.native
   def `type`(text: String, query: String, options: TypeQueryInterface): js.UndefOr[scala.Nothing] = js.native
 }

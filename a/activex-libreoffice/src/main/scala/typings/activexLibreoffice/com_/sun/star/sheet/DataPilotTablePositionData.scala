@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.0
   */
 @js.native
-trait DataPilotTablePositionData extends js.Object {
+trait DataPilotTablePositionData extends StObject {
   
   /**
     * This member contains a structure of different types depending on the position type specified in {@link PositionType} member.
@@ -46,24 +47,12 @@ object DataPilotTablePositionData {
   }
   
   @scala.inline
-  implicit class DataPilotTablePositionDataOps[Self <: DataPilotTablePositionData] (val x: Self) extends AnyVal {
+  implicit class DataPilotTablePositionDataMutableBuilder[Self <: DataPilotTablePositionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPositionData(value: js.Any): Self = StObject.set(x, "PositionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPositionData(value: js.Any): Self = this.set("PositionData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionType(value: Double): Self = this.set("PositionType", value.asInstanceOf[js.Any])
+    def setPositionType(value: Double): Self = StObject.set(x, "PositionType", value.asInstanceOf[js.Any])
   }
 }

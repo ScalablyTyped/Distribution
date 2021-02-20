@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCopyProductStatusOutput extends js.Object {
+trait DescribeCopyProductStatusOutput extends StObject {
   
   /**
     * The status of the copy product operation.
@@ -31,36 +32,24 @@ object DescribeCopyProductStatusOutput {
   }
   
   @scala.inline
-  implicit class DescribeCopyProductStatusOutputOps[Self <: DescribeCopyProductStatusOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeCopyProductStatusOutputMutableBuilder[Self <: DescribeCopyProductStatusOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyProductStatus(value: CopyProductStatus): Self = StObject.set(x, "CopyProductStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyProductStatusUndefined: Self = StObject.set(x, "CopyProductStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusDetail(value: StatusDetail): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyProductStatus(value: CopyProductStatus): Self = this.set("CopyProductStatus", value.asInstanceOf[js.Any])
+    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
     
     @scala.inline
-    def deleteCopyProductStatus: Self = this.set("CopyProductStatus", js.undefined)
+    def setTargetProductId(value: Id): Self = StObject.set(x, "TargetProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusDetail(value: StatusDetail): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
-    
-    @scala.inline
-    def setTargetProductId(value: Id): Self = this.set("TargetProductId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetProductId: Self = this.set("TargetProductId", js.undefined)
+    def setTargetProductIdUndefined: Self = StObject.set(x, "TargetProductId", js.undefined)
   }
 }

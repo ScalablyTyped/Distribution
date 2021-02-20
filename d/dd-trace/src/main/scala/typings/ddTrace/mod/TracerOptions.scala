@@ -13,12 +13,13 @@ import typings.ddTrace.ddTraceStrings.noop
 import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TracerOptions extends js.Object {
+trait TracerOptions extends StObject {
   
   /**
     * Enable Trace Analytics.
@@ -195,188 +196,176 @@ object TracerOptions {
   }
   
   @scala.inline
-  implicit class TracerOptionsOps[Self <: TracerOptions] (val x: Self) extends AnyVal {
+  implicit class TracerOptionsMutableBuilder[Self <: TracerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalytics(value: Boolean): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalytics(value: Boolean): Self = this.set("analytics", value.asInstanceOf[js.Any])
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def deleteAnalytics: Self = this.set("analytics", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setDogstatsd(value: Hostname): Self = StObject.set(x, "dogstatsd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDogstatsdUndefined: Self = StObject.set(x, "dogstatsd", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDogstatsd(value: Hostname): Self = this.set("dogstatsd", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDogstatsd: Self = this.set("dogstatsd", js.undefined)
+    def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setExperimental(value: Boolean | B3): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: String): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimental(value: Boolean | B3): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
     
     @scala.inline
-    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlushInterval(value: Double): Self = this.set("flushInterval", value.asInstanceOf[js.Any])
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def deleteFlushInterval: Self = this.set("flushInterval", js.undefined)
+    def setIngestion(value: RateLimit): Self = StObject.set(x, "ingestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setIngestionUndefined: Self = StObject.set(x, "ingestion", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setLogInjection(value: Boolean): Self = StObject.set(x, "logInjection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestion(value: RateLimit): Self = this.set("ingestion", value.asInstanceOf[js.Any])
+    def setLogInjectionUndefined: Self = StObject.set(x, "logInjection", js.undefined)
     
     @scala.inline
-    def deleteIngestion: Self = this.set("ingestion", js.undefined)
+    def setLogLevel(value: error | debug): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogInjection(value: Boolean): Self = this.set("logInjection", value.asInstanceOf[js.Any])
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def deleteLogInjection: Self = this.set("logInjection", js.undefined)
+    def setLogger(value: Debug): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: error | debug): Self = this.set("logLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
-    
-    @scala.inline
-    def setLogger(value: Debug): Self = this.set("logger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
     def setLookup(
       value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
-    ): Self = this.set("lookup", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteLookup: Self = this.set("lookup", js.undefined)
+    def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
     
     @scala.inline
-    def setOrphanable(value: Boolean): Self = this.set("orphanable", value.asInstanceOf[js.Any])
+    def setOrphanable(value: Boolean): Self = StObject.set(x, "orphanable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrphanable: Self = this.set("orphanable", js.undefined)
+    def setOrphanableUndefined: Self = StObject.set(x, "orphanable", js.undefined)
     
     @scala.inline
-    def setPlugins(value: Boolean): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setPlugins(value: Boolean): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def setPort(value: Double | String): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setProtocolVersion(value: String): Self = this.set("protocolVersion", value.asInstanceOf[js.Any])
+    def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtocolVersion: Self = this.set("protocolVersion", js.undefined)
+    def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
     
     @scala.inline
-    def setReportHostname(value: Boolean): Self = this.set("reportHostname", value.asInstanceOf[js.Any])
+    def setReportHostname(value: Boolean): Self = StObject.set(x, "reportHostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReportHostname: Self = this.set("reportHostname", js.undefined)
+    def setReportHostnameUndefined: Self = StObject.set(x, "reportHostname", js.undefined)
     
     @scala.inline
-    def setRuntimeMetrics(value: Boolean): Self = this.set("runtimeMetrics", value.asInstanceOf[js.Any])
+    def setRuntimeMetrics(value: Boolean): Self = StObject.set(x, "runtimeMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuntimeMetrics: Self = this.set("runtimeMetrics", js.undefined)
+    def setRuntimeMetricsUndefined: Self = StObject.set(x, "runtimeMetrics", js.undefined)
     
     @scala.inline
-    def setSampleRate(value: Double): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
+    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSampleRate: Self = this.set("sampleRate", js.undefined)
+    def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     
     @scala.inline
-    def setScope(value: async_hooks | async_local_storage | noop): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setScope(value: async_hooks | async_local_storage | noop): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def setStartupLogs(value: Boolean): Self = this.set("startupLogs", value.asInstanceOf[js.Any])
+    def setStartupLogs(value: Boolean): Self = StObject.set(x, "startupLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartupLogs: Self = this.set("startupLogs", js.undefined)
+    def setStartupLogsUndefined: Self = StObject.set(x, "startupLogs", js.undefined)
     
     @scala.inline
-    def setTags(value: StringDictionary[js.Any]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setTrackAsyncScope(value: Boolean): Self = this.set("trackAsyncScope", value.asInstanceOf[js.Any])
+    def setTrackAsyncScope(value: Boolean): Self = StObject.set(x, "trackAsyncScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrackAsyncScope: Self = this.set("trackAsyncScope", js.undefined)
+    def setTrackAsyncScopeUndefined: Self = StObject.set(x, "trackAsyncScope", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

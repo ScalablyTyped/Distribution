@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript.Services.Formatting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RulesBucket extends js.Object {
+trait RulesBucket extends StObject {
   
   def AddRule(
     rule: Rule,
@@ -31,24 +32,12 @@ object RulesBucket {
   }
   
   @scala.inline
-  implicit class RulesBucketOps[Self <: RulesBucket] (val x: Self) extends AnyVal {
+  implicit class RulesBucketMutableBuilder[Self <: RulesBucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRule(value: (Rule, Boolean, js.Array[RulesBucketConstructionState], Double) => Unit): Self = StObject.set(x, "AddRule", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddRule(value: (Rule, Boolean, js.Array[RulesBucketConstructionState], Double) => Unit): Self = this.set("AddRule", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setRules(value: () => js.Array[Rule]): Self = this.set("Rules", js.Any.fromFunction0(value))
+    def setRules(value: () => js.Array[Rule]): Self = StObject.set(x, "Rules", js.Any.fromFunction0(value))
   }
 }

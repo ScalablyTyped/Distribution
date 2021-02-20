@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reasons extends js.Object {
+trait Reasons extends StObject {
   
   var reasons: js.UndefOr[js.Array[String]] = js.native
   
@@ -20,30 +21,18 @@ object Reasons {
   }
   
   @scala.inline
-  implicit class ReasonsOps[Self <: Reasons] (val x: Self) extends AnyVal {
+  implicit class ReasonsMutableBuilder[Self <: Reasons] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReasons(value: js.Array[String]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
     
     @scala.inline
-    def setUnreliable(value: Boolean): Self = this.set("unreliable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReasonsVarargs(value: String*): Self = this.set("reasons", js.Array(value :_*))
-    
-    @scala.inline
-    def setReasons(value: js.Array[String]): Self = this.set("reasons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasons: Self = this.set("reasons", js.undefined)
+    def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
   }
 }

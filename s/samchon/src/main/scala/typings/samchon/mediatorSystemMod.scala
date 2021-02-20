@@ -7,14 +7,14 @@ import typings.samchon.parallelSystemArrayMediatorMod.ParallelSystemArrayMediato
 import typings.samchon.parallelSystemArrayMod.ParallelSystemArray
 import typings.samchon.parallelSystemMod.ParallelSystem
 import typings.samchon.slaveSystemMod.SlaveSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/parallel/MediatorSystem", JSImport.Namespace)
-@js.native
-object mediatorSystemMod extends js.Object {
+object mediatorSystemMod {
   
+  @JSImport("samchon/templates/parallel/MediatorSystem", "MediatorSystem")
   @js.native
   abstract class MediatorSystem protected () extends SlaveSystem {
     /**

@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrationsStartImportResponseData extends js.Object {
+trait MigrationsStartImportResponseData extends StObject {
   
   var authors_count: Double = js.native
   
@@ -65,66 +66,54 @@ object MigrationsStartImportResponseData {
   }
   
   @scala.inline
-  implicit class MigrationsStartImportResponseDataOps[Self <: MigrationsStartImportResponseData] (val x: Self) extends AnyVal {
+  implicit class MigrationsStartImportResponseDataMutableBuilder[Self <: MigrationsStartImportResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthors_count(value: Double): Self = StObject.set(x, "authors_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthors_url(value: String): Self = StObject.set(x, "authors_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommit_count(value: Double): Self = StObject.set(x, "commit_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthors_count(value: Double): Self = this.set("authors_count", value.asInstanceOf[js.Any])
+    def setHas_large_files(value: Boolean): Self = StObject.set(x, "has_large_files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthors_url(value: String): Self = this.set("authors_url", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit_count(value: Double): Self = this.set("commit_count", value.asInstanceOf[js.Any])
+    def setLarge_files_count(value: Double): Self = StObject.set(x, "large_files_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_large_files(value: Boolean): Self = this.set("has_large_files", value.asInstanceOf[js.Any])
+    def setLarge_files_size(value: Double): Self = StObject.set(x, "large_files_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLarge_files_count(value: Double): Self = this.set("large_files_count", value.asInstanceOf[js.Any])
+    def setRepository_url(value: String): Self = StObject.set(x, "repository_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLarge_files_size(value: Double): Self = this.set("large_files_size", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
+    def setStatus_text(value: String): Self = StObject.set(x, "status_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository_url(value: String): Self = this.set("repository_url", value.asInstanceOf[js.Any])
+    def setTfvc_project(value: String): Self = StObject.set(x, "tfvc_project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus_text(value: String): Self = this.set("status_text", value.asInstanceOf[js.Any])
+    def setUse_lfs(value: String): Self = StObject.set(x, "use_lfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTfvc_project(value: String): Self = this.set("tfvc_project", value.asInstanceOf[js.Any])
+    def setVcs(value: String): Self = StObject.set(x, "vcs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUse_lfs(value: String): Self = this.set("use_lfs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVcs(value: String): Self = this.set("vcs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVcs_url(value: String): Self = this.set("vcs_url", value.asInstanceOf[js.Any])
+    def setVcs_url(value: String): Self = StObject.set(x, "vcs_url", value.asInstanceOf[js.Any])
   }
 }

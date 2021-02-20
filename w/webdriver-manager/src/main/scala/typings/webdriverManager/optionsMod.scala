@@ -1,18 +1,16 @@
 package typings.webdriverManager
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriver-manager/built/lib/cli/options", JSImport.Namespace)
-@js.native
-object optionsMod extends js.Object {
+object optionsMod {
   
-  def unparseOptions(options: Options): js.Array[String] = js.native
-  
+  @JSImport("webdriver-manager/built/lib/cli/options", "Option")
   @js.native
-  class Option protected () extends js.Object {
+  class Option protected () extends StObject {
     def this(opt: String, description: String, `type`: String) = this()
     def this(opt: String, description: String, `type`: String, defaultValue: String) = this()
     def this(opt: String, description: String, `type`: String, defaultValue: Boolean) = this()
@@ -36,6 +34,10 @@ object optionsMod extends js.Object {
     
     var value: Double | String | Boolean = js.native
   }
+  
+  @JSImport("webdriver-manager/built/lib/cli/options", "unparseOptions")
+  @js.native
+  def unparseOptions(options: Options): js.Array[String] = js.native
   
   type Args = StringDictionary[Double | String | Boolean]
   

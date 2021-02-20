@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object ExpansionProfileDesignation {
   }
   
   @scala.inline
-  implicit class ExpansionProfileDesignationOps[Self <: ExpansionProfileDesignation] (val x: Self) extends AnyVal {
+  implicit class ExpansionProfileDesignationMutableBuilder[Self <: ExpansionProfileDesignation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclude(value: ExpansionProfileDesignationExclude): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInclude(value: ExpansionProfileDesignationInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: ExpansionProfileDesignationExclude): Self = this.set("exclude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
-    
-    @scala.inline
-    def setInclude(value: ExpansionProfileDesignationInclude): Self = this.set("include", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
   }
 }

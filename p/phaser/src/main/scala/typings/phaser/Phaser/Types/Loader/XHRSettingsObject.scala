@@ -2,12 +2,13 @@ package typings.phaser.Phaser.Types.Loader
 
 import typings.phaser.integer
 import typings.std.XMLHttpRequestResponseType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XHRSettingsObject extends js.Object {
+trait XHRSettingsObject extends StObject {
   
   /**
     * Should the XHR request use async or not?
@@ -73,81 +74,69 @@ object XHRSettingsObject {
   }
   
   @scala.inline
-  implicit class XHRSettingsObjectOps[Self <: XHRSettingsObject] (val x: Self) extends AnyVal {
+  implicit class XHRSettingsObjectMutableBuilder[Self <: XHRSettingsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseType(value: XMLHttpRequestResponseType): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setHeaderValue(value: String): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
     
     @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setHeaderValue(value: String): Self = this.set("headerValue", value.asInstanceOf[js.Any])
+    def setOverrideMimeType(value: String): Self = StObject.set(x, "overrideMimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderValue: Self = this.set("headerValue", js.undefined)
+    def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def setOverrideMimeType(value: String): Self = this.set("overrideMimeType", value.asInstanceOf[js.Any])
+    def setRequestedWith(value: String): Self = StObject.set(x, "requestedWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverrideMimeType: Self = this.set("overrideMimeType", js.undefined)
+    def setRequestedWithUndefined: Self = StObject.set(x, "requestedWith", js.undefined)
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setResponseType(value: XMLHttpRequestResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setTimeout(value: integer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedWith(value: String): Self = this.set("requestedWith", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteRequestedWith: Self = this.set("requestedWith", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: integer): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

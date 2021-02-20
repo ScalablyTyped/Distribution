@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,90 +98,78 @@ object IgGridAppendRowsOnDemand {
   }
   
   @scala.inline
-  implicit class IgGridAppendRowsOnDemandOps[Self <: IgGridAppendRowsOnDemand] (val x: Self) extends AnyVal {
+  implicit class IgGridAppendRowsOnDemandMutableBuilder[Self <: IgGridAppendRowsOnDemand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunkIndexUrlKey(value: String): Self = StObject.set(x, "chunkIndexUrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkIndexUrlKeyUndefined: Self = StObject.set(x, "chunkIndexUrlKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkIndexUrlKey(value: String): Self = this.set("chunkIndexUrlKey", value.asInstanceOf[js.Any])
+    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
     @scala.inline
-    def deleteChunkIndexUrlKey: Self = this.set("chunkIndexUrlKey", js.undefined)
+    def setChunkSizeUrlKey(value: String): Self = StObject.set(x, "chunkSizeUrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    def setChunkSizeUrlKeyUndefined: Self = StObject.set(x, "chunkSizeUrlKey", js.undefined)
     
     @scala.inline
-    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    def setCurrentChunkIndex(value: Double): Self = StObject.set(x, "currentChunkIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkSizeUrlKey(value: String): Self = this.set("chunkSizeUrlKey", value.asInstanceOf[js.Any])
+    def setCurrentChunkIndexUndefined: Self = StObject.set(x, "currentChunkIndex", js.undefined)
     
     @scala.inline
-    def deleteChunkSizeUrlKey: Self = this.set("chunkSizeUrlKey", js.undefined)
+    def setDefaultChunkIndex(value: Double): Self = StObject.set(x, "defaultChunkIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentChunkIndex(value: Double): Self = this.set("currentChunkIndex", value.asInstanceOf[js.Any])
+    def setDefaultChunkIndexUndefined: Self = StObject.set(x, "defaultChunkIndex", js.undefined)
     
     @scala.inline
-    def deleteCurrentChunkIndex: Self = this.set("currentChunkIndex", js.undefined)
+    def setLoadMoreDataButtonText(value: String): Self = StObject.set(x, "loadMoreDataButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultChunkIndex(value: Double): Self = this.set("defaultChunkIndex", value.asInstanceOf[js.Any])
+    def setLoadMoreDataButtonTextUndefined: Self = StObject.set(x, "loadMoreDataButtonText", js.undefined)
     
     @scala.inline
-    def deleteDefaultChunkIndex: Self = this.set("defaultChunkIndex", js.undefined)
+    def setLoadTrigger(value: String): Self = StObject.set(x, "loadTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadMoreDataButtonText(value: String): Self = this.set("loadMoreDataButtonText", value.asInstanceOf[js.Any])
+    def setLoadTriggerUndefined: Self = StObject.set(x, "loadTrigger", js.undefined)
     
     @scala.inline
-    def deleteLoadMoreDataButtonText: Self = this.set("loadMoreDataButtonText", js.undefined)
+    def setLocale(value: IgGridAppendRowsOnDemandLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadTrigger(value: String): Self = this.set("loadTrigger", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLoadTrigger: Self = this.set("loadTrigger", js.undefined)
+    def setRecordCountKey(value: String): Self = StObject.set(x, "recordCountKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: IgGridAppendRowsOnDemandLocale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setRecordCountKeyUndefined: Self = StObject.set(x, "recordCountKey", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setRowsRequested(value: (/* event */ Event, /* ui */ RowsRequestedEventUIParam) => Unit): Self = StObject.set(x, "rowsRequested", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRecordCountKey(value: String): Self = this.set("recordCountKey", value.asInstanceOf[js.Any])
+    def setRowsRequestedUndefined: Self = StObject.set(x, "rowsRequested", js.undefined)
     
     @scala.inline
-    def deleteRecordCountKey: Self = this.set("recordCountKey", js.undefined)
+    def setRowsRequesting(value: (/* event */ Event, /* ui */ RowsRequestingEventUIParam) => Unit): Self = StObject.set(x, "rowsRequesting", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRowsRequested(value: (/* event */ Event, /* ui */ RowsRequestedEventUIParam) => Unit): Self = this.set("rowsRequested", js.Any.fromFunction2(value))
+    def setRowsRequestingUndefined: Self = StObject.set(x, "rowsRequesting", js.undefined)
     
     @scala.inline
-    def deleteRowsRequested: Self = this.set("rowsRequested", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsRequesting(value: (/* event */ Event, /* ui */ RowsRequestingEventUIParam) => Unit): Self = this.set("rowsRequesting", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteRowsRequesting: Self = this.set("rowsRequesting", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

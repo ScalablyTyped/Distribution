@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicPartitions extends js.Object {
+trait TopicPartitions extends StObject {
   
   /** The number of partitions in the topic. */
   var partitionCount: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object TopicPartitions {
   }
   
   @scala.inline
-  implicit class TopicPartitionsOps[Self <: TopicPartitions] (val x: Self) extends AnyVal {
+  implicit class TopicPartitionsMutableBuilder[Self <: TopicPartitions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPartitionCount(value: String): Self = StObject.set(x, "partitionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPartitionCount(value: String): Self = this.set("partitionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionCount: Self = this.set("partitionCount", js.undefined)
+    def setPartitionCountUndefined: Self = StObject.set(x, "partitionCount", js.undefined)
   }
 }

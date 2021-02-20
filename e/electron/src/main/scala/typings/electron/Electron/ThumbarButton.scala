@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThumbarButton extends js.Object {
+trait ThumbarButton extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/thumbar-button
   var click: js.Function = js.native
@@ -35,39 +36,27 @@ object ThumbarButton {
   }
   
   @scala.inline
-  implicit class ThumbarButtonOps[Self <: ThumbarButton] (val x: Self) extends AnyVal {
+  implicit class ThumbarButtonMutableBuilder[Self <: ThumbarButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def setClick(value: js.Function): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
     
     @scala.inline
-    def setIcon(value: NativeImage_): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagsVarargs(value: String*): Self = this.set("flags", js.Array(value :_*))
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: js.Array[String]): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

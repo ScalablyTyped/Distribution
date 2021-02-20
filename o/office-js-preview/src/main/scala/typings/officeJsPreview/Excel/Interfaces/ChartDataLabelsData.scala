@@ -17,13 +17,14 @@ import typings.officeJsPreview.officeJsPreviewStrings.None
 import typings.officeJsPreview.officeJsPreviewStrings.OutsideEnd
 import typings.officeJsPreview.officeJsPreviewStrings.Right
 import typings.officeJsPreview.officeJsPreviewStrings.Top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartDataLabels.toJSON()`. */
 @js.native
-trait ChartDataLabelsData extends js.Object {
+trait ChartDataLabelsData extends StObject {
   
   /**
     *
@@ -158,110 +159,98 @@ object ChartDataLabelsData {
   }
   
   @scala.inline
-  implicit class ChartDataLabelsDataOps[Self <: ChartDataLabelsData] (val x: Self) extends AnyVal {
+  implicit class ChartDataLabelsDataMutableBuilder[Self <: ChartDataLabelsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoText(value: Boolean): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: ChartDataLabelFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoText(value: Boolean): Self = this.set("autoText", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteAutoText: Self = this.set("autoText", js.undefined)
+    def setHorizontalAlignment(value: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ChartDataLabelFormatData): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setLinkNumberFormat(value: Boolean): Self = StObject.set(x, "linkNumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlignment(value: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setLinkNumberFormatUndefined: Self = StObject.set(x, "linkNumberFormat", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkNumberFormat(value: Boolean): Self = this.set("linkNumberFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkNumberFormat: Self = this.set("linkNumberFormat", js.undefined)
-    
-    @scala.inline
-    def setNumberFormat(value: String): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
     def setPosition(
       value: ChartDataLabelPosition | Invalid | None | Center | InsideEnd | InsideBase | OutsideEnd | Left | Right | Top | Bottom | BestFit | Callout
-    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
     @scala.inline
-    def setShowBubbleSize(value: Boolean): Self = this.set("showBubbleSize", value.asInstanceOf[js.Any])
+    def setShowBubbleSize(value: Boolean): Self = StObject.set(x, "showBubbleSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowBubbleSize: Self = this.set("showBubbleSize", js.undefined)
+    def setShowBubbleSizeUndefined: Self = StObject.set(x, "showBubbleSize", js.undefined)
     
     @scala.inline
-    def setShowCategoryName(value: Boolean): Self = this.set("showCategoryName", value.asInstanceOf[js.Any])
+    def setShowCategoryName(value: Boolean): Self = StObject.set(x, "showCategoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowCategoryName: Self = this.set("showCategoryName", js.undefined)
+    def setShowCategoryNameUndefined: Self = StObject.set(x, "showCategoryName", js.undefined)
     
     @scala.inline
-    def setShowLegendKey(value: Boolean): Self = this.set("showLegendKey", value.asInstanceOf[js.Any])
+    def setShowLegendKey(value: Boolean): Self = StObject.set(x, "showLegendKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowLegendKey: Self = this.set("showLegendKey", js.undefined)
+    def setShowLegendKeyUndefined: Self = StObject.set(x, "showLegendKey", js.undefined)
     
     @scala.inline
-    def setShowPercentage(value: Boolean): Self = this.set("showPercentage", value.asInstanceOf[js.Any])
+    def setShowPercentage(value: Boolean): Self = StObject.set(x, "showPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowPercentage: Self = this.set("showPercentage", js.undefined)
+    def setShowPercentageUndefined: Self = StObject.set(x, "showPercentage", js.undefined)
     
     @scala.inline
-    def setShowSeriesName(value: Boolean): Self = this.set("showSeriesName", value.asInstanceOf[js.Any])
+    def setShowSeriesName(value: Boolean): Self = StObject.set(x, "showSeriesName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowSeriesName: Self = this.set("showSeriesName", js.undefined)
+    def setShowSeriesNameUndefined: Self = StObject.set(x, "showSeriesName", js.undefined)
     
     @scala.inline
-    def setShowValue(value: Boolean): Self = this.set("showValue", value.asInstanceOf[js.Any])
+    def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowValue: Self = this.set("showValue", js.undefined)
+    def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
     
     @scala.inline
-    def setTextOrientation(value: Double): Self = this.set("textOrientation", value.asInstanceOf[js.Any])
+    def setTextOrientation(value: Double): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextOrientation: Self = this.set("textOrientation", js.undefined)
+    def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
     
     @scala.inline
-    def setVerticalAlignment(value: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    def setVerticalAlignment(value: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTCEventBehavior extends js.Object {
+trait HTCEventBehavior extends StObject {
   
   @JSName("MSHTML.HTCEventBehavior_typekey")
   var MSHTMLDotHTCEventBehavior_typekey: HTCEventBehavior = js.native
@@ -22,24 +23,12 @@ object HTCEventBehavior {
   }
   
   @scala.inline
-  implicit class HTCEventBehaviorOps[Self <: HTCEventBehavior] (val x: Self) extends AnyVal {
+  implicit class HTCEventBehaviorMutableBuilder[Self <: HTCEventBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFire(value: IHTMLEventObj => Unit): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotHTCEventBehavior_typekey(value: HTCEventBehavior): Self = this.set("MSHTML.HTCEventBehavior_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFire(value: IHTMLEventObj => Unit): Self = this.set("fire", js.Any.fromFunction1(value))
+    def setMSHTMLDotHTCEventBehavior_typekey(value: HTCEventBehavior): Self = StObject.set(x, "MSHTML.HTCEventBehavior_typekey", value.asInstanceOf[js.Any])
   }
 }

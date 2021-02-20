@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MySqlConnectionProfile extends js.Object {
+trait MySqlConnectionProfile extends StObject {
   
   /** If the source is a Cloud SQL database, use this field to provide the Cloud SQL instance ID of the source. */
   var cloudSqlId: js.UndefOr[String] = js.native
@@ -40,60 +41,48 @@ object MySqlConnectionProfile {
   }
   
   @scala.inline
-  implicit class MySqlConnectionProfileOps[Self <: MySqlConnectionProfile] (val x: Self) extends AnyVal {
+  implicit class MySqlConnectionProfileMutableBuilder[Self <: MySqlConnectionProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudSqlId(value: String): Self = StObject.set(x, "cloudSqlId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudSqlIdUndefined: Self = StObject.set(x, "cloudSqlId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudSqlId(value: String): Self = this.set("cloudSqlId", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteCloudSqlId: Self = this.set("cloudSqlId", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPasswordSet(value: Boolean): Self = StObject.set(x, "passwordSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPasswordSetUndefined: Self = StObject.set(x, "passwordSet", js.undefined)
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordSet(value: Boolean): Self = this.set("passwordSet", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePasswordSet: Self = this.set("passwordSet", js.undefined)
+    def setSsl(value: SslConfig): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsl(value: SslConfig): Self = this.set("ssl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

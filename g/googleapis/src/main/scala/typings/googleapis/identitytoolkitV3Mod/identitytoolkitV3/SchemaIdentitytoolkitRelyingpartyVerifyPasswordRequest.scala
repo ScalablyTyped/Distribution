@@ -1,5 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to verify the password.
   */
 @js.native
-trait SchemaIdentitytoolkitRelyingpartyVerifyPasswordRequest extends js.Object {
+trait SchemaIdentitytoolkitRelyingpartyVerifyPasswordRequest extends StObject {
   
   /**
     * The captcha challenge.
@@ -78,84 +79,72 @@ object SchemaIdentitytoolkitRelyingpartyVerifyPasswordRequest {
   }
   
   @scala.inline
-  implicit class SchemaIdentitytoolkitRelyingpartyVerifyPasswordRequestOps[Self <: SchemaIdentitytoolkitRelyingpartyVerifyPasswordRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaIdentitytoolkitRelyingpartyVerifyPasswordRequestMutableBuilder[Self <: SchemaIdentitytoolkitRelyingpartyVerifyPasswordRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptchaChallenge(value: String): Self = StObject.set(x, "captchaChallenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptchaChallengeUndefined: Self = StObject.set(x, "captchaChallenge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptchaResponse(value: String): Self = StObject.set(x, "captchaResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptchaChallenge(value: String): Self = this.set("captchaChallenge", value.asInstanceOf[js.Any])
+    def setCaptchaResponseUndefined: Self = StObject.set(x, "captchaResponse", js.undefined)
     
     @scala.inline
-    def deleteCaptchaChallenge: Self = this.set("captchaChallenge", js.undefined)
+    def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptchaResponse(value: String): Self = this.set("captchaResponse", value.asInstanceOf[js.Any])
+    def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
     
     @scala.inline
-    def deleteCaptchaResponse: Self = this.set("captchaResponse", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegatedProjectNumber(value: String): Self = this.set("delegatedProjectNumber", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDelegatedProjectNumber: Self = this.set("delegatedProjectNumber", js.undefined)
+    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
     @scala.inline
-    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    def setPendingIdToken(value: String): Self = StObject.set(x, "pendingIdToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPendingIdTokenUndefined: Self = StObject.set(x, "pendingIdToken", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setReturnSecureToken(value: Boolean): Self = StObject.set(x, "returnSecureToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingIdToken(value: String): Self = this.set("pendingIdToken", value.asInstanceOf[js.Any])
+    def setReturnSecureTokenUndefined: Self = StObject.set(x, "returnSecureToken", js.undefined)
     
     @scala.inline
-    def deletePendingIdToken: Self = this.set("pendingIdToken", js.undefined)
+    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnSecureToken(value: Boolean): Self = this.set("returnSecureToken", value.asInstanceOf[js.Any])
+    def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
     @scala.inline
-    def deleteReturnSecureToken: Self = this.set("returnSecureToken", js.undefined)
+    def setTenantProjectNumber(value: String): Self = StObject.set(x, "tenantProjectNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTenantId(value: String): Self = this.set("tenantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenantId: Self = this.set("tenantId", js.undefined)
-    
-    @scala.inline
-    def setTenantProjectNumber(value: String): Self = this.set("tenantProjectNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenantProjectNumber: Self = this.set("tenantProjectNumber", js.undefined)
+    def setTenantProjectNumberUndefined: Self = StObject.set(x, "tenantProjectNumber", js.undefined)
   }
 }

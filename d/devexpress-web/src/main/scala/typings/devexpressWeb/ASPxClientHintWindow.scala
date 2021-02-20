@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the client-side equivalent of the ASPxHint's window.
   */
 @js.native
-trait ASPxClientHintWindow extends js.Object {
+trait ASPxClientHintWindow extends StObject {
   
   /**
     * Sets the hint's content.
@@ -40,27 +41,15 @@ object ASPxClientHintWindow {
   }
   
   @scala.inline
-  implicit class ASPxClientHintWindowOps[Self <: ASPxClientHintWindow] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHintWindowMutableBuilder[Self <: ASPxClientHintWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetContent(value: (js.Any, ASPxClientHintOptions) => Unit): Self = StObject.set(x, "SetContent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetContentLoading(value: () => Unit): Self = StObject.set(x, "SetContentLoading", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetContent(value: (js.Any, ASPxClientHintOptions) => Unit): Self = this.set("SetContent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetContentLoading(value: () => Unit): Self = this.set("SetContentLoading", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdatePosition(value: () => Unit): Self = this.set("UpdatePosition", js.Any.fromFunction0(value))
+    def setUpdatePosition(value: () => Unit): Self = StObject.set(x, "UpdatePosition", js.Any.fromFunction0(value))
   }
 }

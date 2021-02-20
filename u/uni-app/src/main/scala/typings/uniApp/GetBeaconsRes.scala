@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBeaconsRes extends js.Object {
+trait GetBeaconsRes extends StObject {
   
   /**
     * 接口调用成功的回调函数
@@ -26,33 +27,21 @@ object GetBeaconsRes {
   }
   
   @scala.inline
-  implicit class GetBeaconsResOps[Self <: GetBeaconsRes] (val x: Self) extends AnyVal {
+  implicit class GetBeaconsResMutableBuilder[Self <: GetBeaconsRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
     
     @scala.inline
-    def setBeaconsVarargs(value: Beacon*): Self = this.set("beacons", js.Array(value :_*))
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeacons(value: js.Array[Beacon]): Self = this.set("beacons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeacons: Self = this.set("beacons", js.undefined)
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrMsg: Self = this.set("errMsg", js.undefined)
+    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

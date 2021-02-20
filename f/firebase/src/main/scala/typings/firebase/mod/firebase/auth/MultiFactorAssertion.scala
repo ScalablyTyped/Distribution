@@ -1,5 +1,6 @@
 package typings.firebase.mod.firebase.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait MultiFactorAssertion extends js.Object {
+trait MultiFactorAssertion extends StObject {
   
   /**
     * The identifier of the second factor.
@@ -27,21 +28,9 @@ object MultiFactorAssertion {
   }
   
   @scala.inline
-  implicit class MultiFactorAssertionOps[Self <: MultiFactorAssertion] (val x: Self) extends AnyVal {
+  implicit class MultiFactorAssertionMutableBuilder[Self <: MultiFactorAssertion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFactorId(value: String): Self = this.set("factorId", value.asInstanceOf[js.Any])
+    def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
   }
 }

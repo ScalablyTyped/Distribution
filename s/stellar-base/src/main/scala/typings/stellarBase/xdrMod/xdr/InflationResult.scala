@@ -4,12 +4,13 @@ import typings.node.Buffer
 import typings.stellarBase.stellarBaseStrings.base64
 import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InflationResult extends js.Object {
+trait InflationResult extends StObject {
   
   def payouts(): js.Array[InflationPayout] = js.native
   def payouts(value: js.Array[InflationPayout]): js.Array[InflationPayout] = js.native

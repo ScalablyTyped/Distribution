@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single tag suggestion with it&#39;s relevance information.
   */
 @js.native
-trait SchemaVideoSuggestionsTagSuggestion extends js.Object {
+trait SchemaVideoSuggestionsTagSuggestion extends StObject {
   
   /**
     * A set of video categories for which the tag is relevant. You can use this
@@ -33,33 +34,21 @@ object SchemaVideoSuggestionsTagSuggestion {
   }
   
   @scala.inline
-  implicit class SchemaVideoSuggestionsTagSuggestionOps[Self <: SchemaVideoSuggestionsTagSuggestion] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoSuggestionsTagSuggestionMutableBuilder[Self <: SchemaVideoSuggestionsTagSuggestion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryRestricts(value: js.Array[String]): Self = StObject.set(x, "categoryRestricts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryRestrictsUndefined: Self = StObject.set(x, "categoryRestricts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryRestrictsVarargs(value: String*): Self = StObject.set(x, "categoryRestricts", js.Array(value :_*))
     
     @scala.inline
-    def setCategoryRestrictsVarargs(value: String*): Self = this.set("categoryRestricts", js.Array(value :_*))
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryRestricts(value: js.Array[String]): Self = this.set("categoryRestricts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategoryRestricts: Self = this.set("categoryRestricts", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

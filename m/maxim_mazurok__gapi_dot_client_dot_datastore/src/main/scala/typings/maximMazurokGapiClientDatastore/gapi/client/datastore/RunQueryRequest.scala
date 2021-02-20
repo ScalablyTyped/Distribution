@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunQueryRequest extends js.Object {
+trait RunQueryRequest extends StObject {
   
   /** The GQL query to run. */
   var gqlQuery: js.UndefOr[GqlQuery] = js.native
@@ -31,42 +32,30 @@ object RunQueryRequest {
   }
   
   @scala.inline
-  implicit class RunQueryRequestOps[Self <: RunQueryRequest] (val x: Self) extends AnyVal {
+  implicit class RunQueryRequestMutableBuilder[Self <: RunQueryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGqlQuery(value: GqlQuery): Self = StObject.set(x, "gqlQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGqlQueryUndefined: Self = StObject.set(x, "gqlQuery", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartitionId(value: PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGqlQuery(value: GqlQuery): Self = this.set("gqlQuery", value.asInstanceOf[js.Any])
+    def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
     
     @scala.inline
-    def deleteGqlQuery: Self = this.set("gqlQuery", js.undefined)
+    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionId(value: PartitionId): Self = this.set("partitionId", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deletePartitionId: Self = this.set("partitionId", js.undefined)
+    def setReadOptions(value: ReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setReadOptions(value: ReadOptions): Self = this.set("readOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOptions: Self = this.set("readOptions", js.undefined)
+    def setReadOptionsUndefined: Self = StObject.set(x, "readOptions", js.undefined)
   }
 }

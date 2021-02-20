@@ -2,12 +2,13 @@ package typings.reveal
 
 import typings.reveal.anon.H
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevealStatic extends js.Object {
+trait RevealStatic extends StObject {
   
   // States
   def addEventListener(`type`: String, listener: js.Function1[/* event */ js.Any, Unit]): Unit = js.native

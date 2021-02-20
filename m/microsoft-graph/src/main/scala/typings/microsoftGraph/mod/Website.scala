@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Website extends js.Object {
+trait Website extends StObject {
   
   // The URL of the website.
   var address: js.UndefOr[NullableOption[String]] = js.native
@@ -25,45 +26,33 @@ object Website {
   }
   
   @scala.inline
-  implicit class WebsiteOps[Self <: Website] (val x: Self) extends AnyVal {
+  implicit class WebsiteMutableBuilder[Self <: Website] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressNull: Self = StObject.set(x, "address", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def setAddress(value: NullableOption[String]): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setAddressNull: Self = this.set("address", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[WebsiteType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
-    
-    @scala.inline
-    def setType(value: NullableOption[WebsiteType]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

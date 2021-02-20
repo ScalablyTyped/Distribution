@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Required extends js.Object {
+trait Required extends StObject {
   
   var required: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object Required {
   }
   
   @scala.inline
-  implicit class RequiredOps[Self <: Required] (val x: Self) extends AnyVal {
+  implicit class RequiredMutableBuilder[Self <: Required] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequired(value: scala.Double): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupported(value: scala.Double): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequired(value: scala.Double): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupported(value: scala.Double): Self = this.set("supported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnsupported(value: scala.Double): Self = this.set("unsupported", value.asInstanceOf[js.Any])
+    def setUnsupported(value: scala.Double): Self = StObject.set(x, "unsupported", value.asInstanceOf[js.Any])
   }
 }

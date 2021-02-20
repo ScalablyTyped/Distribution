@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.anon.ConfigName
 import typings.typeorm.connectionOptionsMod.ConnectionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/connection/ConnectionOptionsReader", JSImport.Namespace)
-@js.native
-object connectionOptionsReaderMod extends js.Object {
+object connectionOptionsReaderMod {
   
+  @JSImport("typeorm/browser/connection/ConnectionOptionsReader", "ConnectionOptionsReader")
   @js.native
-  class ConnectionOptionsReader () extends js.Object {
+  class ConnectionOptionsReader () extends StObject {
     def this(options: ConfigName) = this()
     
     /**

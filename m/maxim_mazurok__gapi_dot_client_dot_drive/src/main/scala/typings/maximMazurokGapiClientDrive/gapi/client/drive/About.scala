@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientDrive.gapi.client.drive
 import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientDrive.anon.BackgroundImageLink
 import typings.maximMazurokGapiClientDrive.anon.Limit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait About extends js.Object {
+trait About extends StObject {
   
   /** Whether the user has installed the requesting app. */
   var appInstalled: js.UndefOr[Boolean] = js.native
@@ -70,117 +71,105 @@ object About {
   }
   
   @scala.inline
-  implicit class AboutOps[Self <: About] (val x: Self) extends AnyVal {
+  implicit class AboutMutableBuilder[Self <: About] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppInstalled(value: Boolean): Self = StObject.set(x, "appInstalled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppInstalledUndefined: Self = StObject.set(x, "appInstalled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanCreateDrives(value: Boolean): Self = StObject.set(x, "canCreateDrives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppInstalled(value: Boolean): Self = this.set("appInstalled", value.asInstanceOf[js.Any])
+    def setCanCreateDrivesUndefined: Self = StObject.set(x, "canCreateDrives", js.undefined)
     
     @scala.inline
-    def deleteAppInstalled: Self = this.set("appInstalled", js.undefined)
+    def setCanCreateTeamDrives(value: Boolean): Self = StObject.set(x, "canCreateTeamDrives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCreateDrives(value: Boolean): Self = this.set("canCreateDrives", value.asInstanceOf[js.Any])
+    def setCanCreateTeamDrivesUndefined: Self = StObject.set(x, "canCreateTeamDrives", js.undefined)
     
     @scala.inline
-    def deleteCanCreateDrives: Self = this.set("canCreateDrives", js.undefined)
+    def setDriveThemes(value: js.Array[BackgroundImageLink]): Self = StObject.set(x, "driveThemes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCreateTeamDrives(value: Boolean): Self = this.set("canCreateTeamDrives", value.asInstanceOf[js.Any])
+    def setDriveThemesUndefined: Self = StObject.set(x, "driveThemes", js.undefined)
     
     @scala.inline
-    def deleteCanCreateTeamDrives: Self = this.set("canCreateTeamDrives", js.undefined)
-    
-    @scala.inline
-    def setDriveThemesVarargs(value: BackgroundImageLink*): Self = this.set("driveThemes", js.Array(value :_*))
-    
-    @scala.inline
-    def setDriveThemes(value: js.Array[BackgroundImageLink]): Self = this.set("driveThemes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriveThemes: Self = this.set("driveThemes", js.undefined)
+    def setDriveThemesVarargs(value: BackgroundImageLink*): Self = StObject.set(x, "driveThemes", js.Array(value :_*))
     
     @scala.inline
     def setExportFormats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: std.Array<string>}
       */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About with TopLevel[js.Any]
-    ): Self = this.set("exportFormats", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExportFormats: Self = this.set("exportFormats", js.undefined)
+    def setExportFormatsUndefined: Self = StObject.set(x, "exportFormats", js.undefined)
     
     @scala.inline
-    def setFolderColorPaletteVarargs(value: String*): Self = this.set("folderColorPalette", js.Array(value :_*))
+    def setFolderColorPalette(value: js.Array[String]): Self = StObject.set(x, "folderColorPalette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderColorPalette(value: js.Array[String]): Self = this.set("folderColorPalette", value.asInstanceOf[js.Any])
+    def setFolderColorPaletteUndefined: Self = StObject.set(x, "folderColorPalette", js.undefined)
     
     @scala.inline
-    def deleteFolderColorPalette: Self = this.set("folderColorPalette", js.undefined)
+    def setFolderColorPaletteVarargs(value: String*): Self = StObject.set(x, "folderColorPalette", js.Array(value :_*))
     
     @scala.inline
     def setImportFormats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: std.Array<string>}
       */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About with TopLevel[js.Any]
-    ): Self = this.set("importFormats", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "importFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImportFormats: Self = this.set("importFormats", js.undefined)
+    def setImportFormatsUndefined: Self = StObject.set(x, "importFormats", js.undefined)
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
     def setMaxImportSizes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About with TopLevel[js.Any]
-    ): Self = this.set("maxImportSizes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maxImportSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxImportSizes: Self = this.set("maxImportSizes", js.undefined)
+    def setMaxImportSizesUndefined: Self = StObject.set(x, "maxImportSizes", js.undefined)
     
     @scala.inline
-    def setMaxUploadSize(value: String): Self = this.set("maxUploadSize", value.asInstanceOf[js.Any])
+    def setMaxUploadSize(value: String): Self = StObject.set(x, "maxUploadSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxUploadSize: Self = this.set("maxUploadSize", js.undefined)
+    def setMaxUploadSizeUndefined: Self = StObject.set(x, "maxUploadSize", js.undefined)
     
     @scala.inline
-    def setStorageQuota(value: Limit): Self = this.set("storageQuota", value.asInstanceOf[js.Any])
+    def setStorageQuota(value: Limit): Self = StObject.set(x, "storageQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStorageQuota: Self = this.set("storageQuota", js.undefined)
+    def setStorageQuotaUndefined: Self = StObject.set(x, "storageQuota", js.undefined)
     
     @scala.inline
-    def setTeamDriveThemesVarargs(value: BackgroundImageLink*): Self = this.set("teamDriveThemes", js.Array(value :_*))
+    def setTeamDriveThemes(value: js.Array[BackgroundImageLink]): Self = StObject.set(x, "teamDriveThemes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamDriveThemes(value: js.Array[BackgroundImageLink]): Self = this.set("teamDriveThemes", value.asInstanceOf[js.Any])
+    def setTeamDriveThemesUndefined: Self = StObject.set(x, "teamDriveThemes", js.undefined)
     
     @scala.inline
-    def deleteTeamDriveThemes: Self = this.set("teamDriveThemes", js.undefined)
+    def setTeamDriveThemesVarargs(value: BackgroundImageLink*): Self = StObject.set(x, "teamDriveThemes", js.Array(value :_*))
     
     @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

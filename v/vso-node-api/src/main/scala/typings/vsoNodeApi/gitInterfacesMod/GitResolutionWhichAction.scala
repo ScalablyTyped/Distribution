@@ -1,31 +1,28 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GitResolutionWhichAction extends js.Object
+sealed trait GitResolutionWhichAction extends StObject
 @JSImport("vso-node-api/interfaces/GitInterfaces", "GitResolutionWhichAction")
 @js.native
-object GitResolutionWhichAction extends js.Object {
+object GitResolutionWhichAction extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitResolutionWhichAction with Double] = js.native
   
   @js.native
   sealed trait PickSourceAction extends GitResolutionWhichAction
-  /* 1 */ @js.native
-  object PickSourceAction extends TopLevel[PickSourceAction with Double]
+  /* 1 */ val PickSourceAction: typings.vsoNodeApi.gitInterfacesMod.GitResolutionWhichAction.PickSourceAction with Double = js.native
   
   @js.native
   sealed trait PickTargetAction extends GitResolutionWhichAction
-  /* 2 */ @js.native
-  object PickTargetAction extends TopLevel[PickTargetAction with Double]
+  /* 2 */ val PickTargetAction: typings.vsoNodeApi.gitInterfacesMod.GitResolutionWhichAction.PickTargetAction with Double = js.native
   
   @js.native
   sealed trait Undecided extends GitResolutionWhichAction
-  /* 0 */ @js.native
-  object Undecided extends TopLevel[Undecided with Double]
+  /* 0 */ val Undecided: typings.vsoNodeApi.gitInterfacesMod.GitResolutionWhichAction.Undecided with Double = js.native
 }

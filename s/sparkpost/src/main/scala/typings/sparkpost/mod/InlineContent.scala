@@ -1,12 +1,13 @@
 package typings.sparkpost.mod
 
 import typings.sparkpost.anon.Email
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InlineContent extends js.Object {
+trait InlineContent extends StObject {
   
   /** JSON array of attachments. */
   var attachments: js.UndefOr[js.Array[Attachment]] = js.native
@@ -44,78 +45,66 @@ object InlineContent {
   }
   
   @scala.inline
-  implicit class InlineContentOps[Self <: InlineContent] (val x: Self) extends AnyVal {
+  implicit class InlineContentMutableBuilder[Self <: InlineContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = this.set("attachments", js.Array(value :_*))
+    def setFrom(value: String | Email): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: js.Array[Attachment]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String | Email): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setInline_images(value: js.Array[Attachment]): Self = StObject.set(x, "inline_images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setInline_imagesUndefined: Self = StObject.set(x, "inline_images", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setInline_imagesVarargs(value: Attachment*): Self = StObject.set(x, "inline_images", js.Array(value :_*))
     
     @scala.inline
-    def setInline_imagesVarargs(value: Attachment*): Self = this.set("inline_images", js.Array(value :_*))
+    def setPush(value: PushData): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline_images(value: js.Array[Attachment]): Self = this.set("inline_images", value.asInstanceOf[js.Any])
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
     @scala.inline
-    def deleteInline_images: Self = this.set("inline_images", js.undefined)
+    def setReply_to(value: String): Self = StObject.set(x, "reply_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPush(value: PushData): Self = this.set("push", value.asInstanceOf[js.Any])
+    def setReply_toUndefined: Self = StObject.set(x, "reply_to", js.undefined)
     
     @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReply_to(value: String): Self = this.set("reply_to", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteReply_to: Self = this.set("reply_to", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

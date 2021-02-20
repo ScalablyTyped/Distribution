@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortProbeAction extends js.Object {
+trait PortProbeAction extends StObject {
   
   /**
     * Indicates whether EC2 blocked the port probe to the instance, such as with an ACL.
@@ -26,33 +27,21 @@ object PortProbeAction {
   }
   
   @scala.inline
-  implicit class PortProbeActionOps[Self <: PortProbeAction] (val x: Self) extends AnyVal {
+  implicit class PortProbeActionMutableBuilder[Self <: PortProbeAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedUndefined: Self = StObject.set(x, "Blocked", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortProbeDetails(value: PortProbeDetails): Self = StObject.set(x, "PortProbeDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocked(value: Boolean): Self = this.set("Blocked", value.asInstanceOf[js.Any])
+    def setPortProbeDetailsUndefined: Self = StObject.set(x, "PortProbeDetails", js.undefined)
     
     @scala.inline
-    def deleteBlocked: Self = this.set("Blocked", js.undefined)
-    
-    @scala.inline
-    def setPortProbeDetailsVarargs(value: PortProbeDetail*): Self = this.set("PortProbeDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setPortProbeDetails(value: PortProbeDetails): Self = this.set("PortProbeDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortProbeDetails: Self = this.set("PortProbeDetails", js.undefined)
+    def setPortProbeDetailsVarargs(value: PortProbeDetail*): Self = StObject.set(x, "PortProbeDetails", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginGroupFailoverCriteria extends js.Object {
+trait OriginGroupFailoverCriteria extends StObject {
   
   /**
     * The status codes that, when returned from the primary origin, will trigger CloudFront to failover to the second origin.
@@ -21,21 +22,9 @@ object OriginGroupFailoverCriteria {
   }
   
   @scala.inline
-  implicit class OriginGroupFailoverCriteriaOps[Self <: OriginGroupFailoverCriteria] (val x: Self) extends AnyVal {
+  implicit class OriginGroupFailoverCriteriaMutableBuilder[Self <: OriginGroupFailoverCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatusCodes(value: StatusCodes): Self = this.set("StatusCodes", value.asInstanceOf[js.Any])
+    def setStatusCodes(value: StatusCodes): Self = StObject.set(x, "StatusCodes", value.asInstanceOf[js.Any])
   }
 }

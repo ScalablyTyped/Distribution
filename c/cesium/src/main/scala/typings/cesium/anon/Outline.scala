@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.MaterialProperty
 import typings.cesium.mod.Property
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Outline extends js.Object {
+trait Outline extends StObject {
   
   var extrudedHeight: js.UndefOr[Property] = js.native
   
@@ -46,102 +47,90 @@ object Outline {
   }
   
   @scala.inline
-  implicit class OutlineOps[Self <: Outline] (val x: Self) extends AnyVal {
+  implicit class OutlineMutableBuilder[Self <: Outline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtrudedHeight(value: Property): Self = StObject.set(x, "extrudedHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtrudedHeightUndefined: Self = StObject.set(x, "extrudedHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtrudedHeight(value: Property): Self = this.set("extrudedHeight", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteExtrudedHeight: Self = this.set("extrudedHeight", js.undefined)
+    def setGranularity(value: Property): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setHeight(value: Property): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGranularity(value: Property): Self = this.set("granularity", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGranularity: Self = this.set("granularity", js.undefined)
+    def setMaterial(value: MaterialProperty | typings.cesium.mod.Color): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Property): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setNumberOfVerticalLines(value: Property): Self = StObject.set(x, "numberOfVerticalLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: MaterialProperty | typings.cesium.mod.Color): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setNumberOfVerticalLinesUndefined: Self = StObject.set(x, "numberOfVerticalLines", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfVerticalLines(value: Property): Self = this.set("numberOfVerticalLines", value.asInstanceOf[js.Any])
+    def setOutlineColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberOfVerticalLines: Self = this.set("numberOfVerticalLines", js.undefined)
+    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
     @scala.inline
-    def setOutline(value: Boolean): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
+    def setOutlineWidth(value: Double): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineColor(value: typings.cesium.mod.Color): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
     
     @scala.inline
-    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    def setRotation(value: Property): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineWidth(value: Double): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    def setSemiMajorAxis(value: Property | Double): Self = StObject.set(x, "semiMajorAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Property): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setSemiMajorAxisUndefined: Self = StObject.set(x, "semiMajorAxis", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setSemiMinorAxis(value: Property | Double): Self = StObject.set(x, "semiMinorAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemiMajorAxis(value: Property | Double): Self = this.set("semiMajorAxis", value.asInstanceOf[js.Any])
+    def setSemiMinorAxisUndefined: Self = StObject.set(x, "semiMinorAxis", js.undefined)
     
     @scala.inline
-    def deleteSemiMajorAxis: Self = this.set("semiMajorAxis", js.undefined)
+    def setShow(value: Property): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemiMinorAxis(value: Property | Double): Self = this.set("semiMinorAxis", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteSemiMinorAxis: Self = this.set("semiMinorAxis", js.undefined)
+    def setStRotation(value: Property): Self = StObject.set(x, "stRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Property): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setStRotation(value: Property): Self = this.set("stRotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStRotation: Self = this.set("stRotation", js.undefined)
+    def setStRotationUndefined: Self = StObject.set(x, "stRotation", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.websocket.mod
 
 import typings.node.httpMod.Server
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,72 +94,60 @@ object IServerConfig {
   }
   
   @scala.inline
-  implicit class IServerConfigOps[Self <: IServerConfig] (val x: Self) extends AnyVal {
+  implicit class IServerConfigMutableBuilder[Self <: IServerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoAcceptConnections(value: Boolean): Self = StObject.set(x, "autoAcceptConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoAcceptConnectionsUndefined: Self = StObject.set(x, "autoAcceptConnections", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableNagleAlgorithm(value: Boolean): Self = StObject.set(x, "disableNagleAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpServerVarargs(value: (Server | typings.node.httpsMod.Server)*): Self = this.set("httpServer", js.Array(value :_*))
+    def setDisableNagleAlgorithmUndefined: Self = StObject.set(x, "disableNagleAlgorithm", js.undefined)
     
     @scala.inline
-    def setHttpServer(value: Server | typings.node.httpsMod.Server | (js.Array[Server | typings.node.httpsMod.Server])): Self = this.set("httpServer", value.asInstanceOf[js.Any])
+    def setDropConnectionOnKeepaliveTimeout(value: Boolean): Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAcceptConnections(value: Boolean): Self = this.set("autoAcceptConnections", value.asInstanceOf[js.Any])
+    def setDropConnectionOnKeepaliveTimeoutUndefined: Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", js.undefined)
     
     @scala.inline
-    def deleteAutoAcceptConnections: Self = this.set("autoAcceptConnections", js.undefined)
+    def setHttpServer(value: Server | typings.node.httpsMod.Server | (js.Array[Server | typings.node.httpsMod.Server])): Self = StObject.set(x, "httpServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableNagleAlgorithm(value: Boolean): Self = this.set("disableNagleAlgorithm", value.asInstanceOf[js.Any])
+    def setHttpServerVarargs(value: (Server | typings.node.httpsMod.Server)*): Self = StObject.set(x, "httpServer", js.Array(value :_*))
     
     @scala.inline
-    def deleteDisableNagleAlgorithm: Self = this.set("disableNagleAlgorithm", js.undefined)
+    def setIgnoreXForwardedFor(value: Boolean): Self = StObject.set(x, "ignoreXForwardedFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropConnectionOnKeepaliveTimeout(value: Boolean): Self = this.set("dropConnectionOnKeepaliveTimeout", value.asInstanceOf[js.Any])
+    def setIgnoreXForwardedForUndefined: Self = StObject.set(x, "ignoreXForwardedFor", js.undefined)
     
     @scala.inline
-    def deleteDropConnectionOnKeepaliveTimeout: Self = this.set("dropConnectionOnKeepaliveTimeout", js.undefined)
+    def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreXForwardedFor(value: Boolean): Self = this.set("ignoreXForwardedFor", value.asInstanceOf[js.Any])
+    def setKeepaliveGracePeriod(value: Double): Self = StObject.set(x, "keepaliveGracePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreXForwardedFor: Self = this.set("ignoreXForwardedFor", js.undefined)
+    def setKeepaliveGracePeriodUndefined: Self = StObject.set(x, "keepaliveGracePeriod", js.undefined)
     
     @scala.inline
-    def setKeepalive(value: Boolean): Self = this.set("keepalive", value.asInstanceOf[js.Any])
+    def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeepalive: Self = this.set("keepalive", js.undefined)
+    def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
     
     @scala.inline
-    def setKeepaliveGracePeriod(value: Double): Self = this.set("keepaliveGracePeriod", value.asInstanceOf[js.Any])
+    def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
     
     @scala.inline
-    def deleteKeepaliveGracePeriod: Self = this.set("keepaliveGracePeriod", js.undefined)
+    def setUseNativeKeepalive(value: Boolean): Self = StObject.set(x, "useNativeKeepalive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepaliveInterval(value: Double): Self = this.set("keepaliveInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepaliveInterval: Self = this.set("keepaliveInterval", js.undefined)
-    
-    @scala.inline
-    def setUseNativeKeepalive(value: Boolean): Self = this.set("useNativeKeepalive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNativeKeepalive: Self = this.set("useNativeKeepalive", js.undefined)
+    def setUseNativeKeepaliveUndefined: Self = StObject.set(x, "useNativeKeepalive", js.undefined)
   }
 }

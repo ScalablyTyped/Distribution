@@ -2,12 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectCollectionReference
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitRepositoryRef extends js.Object {
+trait GitRepositoryRef extends StObject {
   
   /**
     * Team Project Collection where this Fork resides
@@ -49,42 +50,30 @@ object GitRepositoryRef {
   }
   
   @scala.inline
-  implicit class GitRepositoryRefOps[Self <: GitRepositoryRef] (val x: Self) extends AnyVal {
+  implicit class GitRepositoryRefMutableBuilder[Self <: GitRepositoryRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection(value: TeamProjectCollectionReference): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFork(value: Boolean): Self = StObject.set(x, "isFork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection(value: TeamProjectCollectionReference): Self = this.set("collection", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFork(value: Boolean): Self = this.set("isFork", value.asInstanceOf[js.Any])
+    def setRemoteUrl(value: String): Self = StObject.set(x, "remoteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSshUrl(value: String): Self = StObject.set(x, "sshUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: TeamProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteUrl(value: String): Self = this.set("remoteUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSshUrl(value: String): Self = this.set("sshUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,13 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChipProps extends js.Object {
+trait ChipProps extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.native
   
@@ -41,72 +42,60 @@ object ChipProps {
   }
   
   @scala.inline
-  implicit class ChipPropsOps[Self <: ChipProps] (val x: Self) extends AnyVal {
+  implicit class ChipPropsMutableBuilder[Self <: ChipProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setContainerElement(value: ReactNode | String): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setContainerElementUndefined: Self = StObject.set(x, "containerElement", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDeleteIconStyle(value: CSSProperties): Self = StObject.set(x, "deleteIconStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerElement(value: ReactNode | String): Self = this.set("containerElement", value.asInstanceOf[js.Any])
+    def setDeleteIconStyleUndefined: Self = StObject.set(x, "deleteIconStyle", js.undefined)
     
     @scala.inline
-    def deleteContainerElement: Self = this.set("containerElement", js.undefined)
+    def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteIconStyle(value: CSSProperties): Self = this.set("deleteIconStyle", value.asInstanceOf[js.Any])
+    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
     @scala.inline
-    def deleteDeleteIconStyle: Self = this.set("deleteIconStyle", js.undefined)
+    def setLabelStyle(value: CSSProperties): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelColor(value: String): Self = this.set("labelColor", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    def setOnClick(value: MouseEvent[Chip, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabelStyle(value: CSSProperties): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setOnRequestDelete(value: TouchEvent[Chip] => Unit): Self = StObject.set(x, "onRequestDelete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClick(value: MouseEvent[Chip, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOnRequestDeleteUndefined: Self = StObject.set(x, "onRequestDelete", js.undefined)
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRequestDelete(value: TouchEvent[Chip] => Unit): Self = this.set("onRequestDelete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnRequestDelete: Self = this.set("onRequestDelete", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

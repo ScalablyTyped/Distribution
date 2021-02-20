@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudshell.gapi.client.cloudshell
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartEnvironmentRequest extends js.Object {
+trait StartEnvironmentRequest extends StObject {
   
   /**
     * The initial access token passed to the environment. If this is present and valid, the environment will be pre-authenticated with gcloud so that the user can run gcloud commands in
@@ -25,33 +26,21 @@ object StartEnvironmentRequest {
   }
   
   @scala.inline
-  implicit class StartEnvironmentRequestOps[Self <: StartEnvironmentRequest] (val x: Self) extends AnyVal {
+  implicit class StartEnvironmentRequestMutableBuilder[Self <: StartEnvironmentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKeys(value: js.Array[String]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
-    
-    @scala.inline
-    def setPublicKeysVarargs(value: String*): Self = this.set("publicKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setPublicKeys(value: js.Array[String]): Self = this.set("publicKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeys: Self = this.set("publicKeys", js.undefined)
+    def setPublicKeysVarargs(value: String*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
   }
 }

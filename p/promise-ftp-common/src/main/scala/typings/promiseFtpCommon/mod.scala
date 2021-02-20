@@ -1,18 +1,18 @@
 package typings.promiseFtpCommon
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("promise-ftp-common", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("promise-ftp-common", "FtpConnectionError")
   @js.native
   class FtpConnectionError () extends Error
   
+  @JSImport("promise-ftp-common", "FtpReconnectError")
   @js.native
   class FtpReconnectError () extends Error {
     def this(disconnectError: String) = this()
@@ -43,46 +43,40 @@ object mod extends js.Object {
   }
   
   @js.native
-  sealed trait STATUSES extends js.Object
+  sealed trait STATUSES extends StObject
+  @JSImport("promise-ftp-common", "STATUSES")
   @js.native
-  object STATUSES extends js.Object {
+  object STATUSES extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[STATUSES with String] = js.native
     
     @js.native
     sealed trait CONNECTED extends STATUSES
-    /* "connected" */ @js.native
-    object CONNECTED extends TopLevel[CONNECTED with String]
+    /* "connected" */ val CONNECTED: typings.promiseFtpCommon.mod.STATUSES.CONNECTED with String = js.native
     
     @js.native
     sealed trait CONNECTING extends STATUSES
-    /* "connecting" */ @js.native
-    object CONNECTING extends TopLevel[CONNECTING with String]
+    /* "connecting" */ val CONNECTING: typings.promiseFtpCommon.mod.STATUSES.CONNECTING with String = js.native
     
     @js.native
     sealed trait DISCONNECTED extends STATUSES
-    /* "disconnected" */ @js.native
-    object DISCONNECTED extends TopLevel[DISCONNECTED with String]
+    /* "disconnected" */ val DISCONNECTED: typings.promiseFtpCommon.mod.STATUSES.DISCONNECTED with String = js.native
     
     @js.native
     sealed trait DISCONNECTING extends STATUSES
-    /* "disconnecting" */ @js.native
-    object DISCONNECTING extends TopLevel[DISCONNECTING with String]
+    /* "disconnecting" */ val DISCONNECTING: typings.promiseFtpCommon.mod.STATUSES.DISCONNECTING with String = js.native
     
     @js.native
     sealed trait LOGGING_OUT extends STATUSES
-    /* "logging out" */ @js.native
-    object LOGGING_OUT extends TopLevel[LOGGING_OUT with String]
+    /* "logging out" */ val LOGGING_OUT: typings.promiseFtpCommon.mod.STATUSES.LOGGING_OUT with String = js.native
     
     @js.native
     sealed trait NOT_YET_CONNECTED extends STATUSES
-    /* "not yet connected" */ @js.native
-    object NOT_YET_CONNECTED extends TopLevel[NOT_YET_CONNECTED with String]
+    /* "not yet connected" */ val NOT_YET_CONNECTED: typings.promiseFtpCommon.mod.STATUSES.NOT_YET_CONNECTED with String = js.native
     
     @js.native
     sealed trait RECONNECTING extends STATUSES
-    /* "reconnecting" */ @js.native
-    object RECONNECTING extends TopLevel[RECONNECTING with String]
+    /* "reconnecting" */ val RECONNECTING: typings.promiseFtpCommon.mod.STATUSES.RECONNECTING with String = js.native
   }
 }

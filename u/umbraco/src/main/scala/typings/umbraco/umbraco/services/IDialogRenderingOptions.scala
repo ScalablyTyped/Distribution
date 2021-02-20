@@ -1,6 +1,7 @@
 package typings.umbraco.umbraco.services
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Rendering options
   */
 @js.native
-trait IDialogRenderingOptions extends js.Object {
+trait IDialogRenderingOptions extends StObject {
   
   /*animation css class, by default set to "fade"*/
   var animation: js.UndefOr[String] = js.native
@@ -52,69 +53,57 @@ object IDialogRenderingOptions {
   }
   
   @scala.inline
-  implicit class IDialogRenderingOptionsOps[Self <: IDialogRenderingOptions] (val x: Self) extends AnyVal {
+  implicit class IDialogRenderingOptionsMutableBuilder[Self <: IDialogRenderingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: js.Function): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframe(value: Boolean): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setDialogData(value: js.Any): Self = StObject.set(x, "dialogData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setDialogDataUndefined: Self = StObject.set(x, "dialogData", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setIframe(value: Boolean): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
-    def setDialogData(value: js.Any): Self = this.set("dialogData", value.asInstanceOf[js.Any])
+    def setModalClass(value: String): Self = StObject.set(x, "modalClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDialogData: Self = this.set("dialogData", js.undefined)
+    def setModalClassUndefined: Self = StObject.set(x, "modalClass", js.undefined)
     
     @scala.inline
-    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInline: Self = this.set("inline", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def setModalClass(value: String): Self = this.set("modalClass", value.asInstanceOf[js.Any])
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModalClass: Self = this.set("modalClass", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

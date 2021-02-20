@@ -1,5 +1,6 @@
 package typings.babylonjs.miscIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class RetryStrategy ()
   extends typings.babylonjs.retryStrategyMod.RetryStrategy
 /* static members */
-@JSImport("babylonjs/Misc/index", "RetryStrategy")
-@js.native
-object RetryStrategy extends js.Object {
+object RetryStrategy {
   
   /**
     * Function used to defines an exponential back off strategy
@@ -19,24 +18,32 @@ object RetryStrategy extends js.Object {
     * @param baseInterval defines the interval between retries
     * @returns the strategy function to use
     */
+  @JSImport("babylonjs/Misc/index", "RetryStrategy.ExponentialBackoff")
+  @js.native
   def ExponentialBackoff(): js.Function3[
     /* url */ String, 
     /* request */ typings.babylonjs.webRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ] = js.native
+  @JSImport("babylonjs/Misc/index", "RetryStrategy.ExponentialBackoff")
+  @js.native
   def ExponentialBackoff(maxRetries: js.UndefOr[scala.Nothing], baseInterval: Double): js.Function3[
     /* url */ String, 
     /* request */ typings.babylonjs.webRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ] = js.native
+  @JSImport("babylonjs/Misc/index", "RetryStrategy.ExponentialBackoff")
+  @js.native
   def ExponentialBackoff(maxRetries: Double): js.Function3[
     /* url */ String, 
     /* request */ typings.babylonjs.webRequestMod.WebRequest, 
     /* retryIndex */ Double, 
     Double
   ] = js.native
+  @JSImport("babylonjs/Misc/index", "RetryStrategy.ExponentialBackoff")
+  @js.native
   def ExponentialBackoff(maxRetries: Double, baseInterval: Double): js.Function3[
     /* url */ String, 
     /* request */ typings.babylonjs.webRequestMod.WebRequest, 

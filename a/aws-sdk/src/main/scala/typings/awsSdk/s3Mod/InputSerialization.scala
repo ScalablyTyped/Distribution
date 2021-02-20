@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputSerialization extends js.Object {
+trait InputSerialization extends StObject {
   
   /**
     * Describes the serialization of a CSV-encoded object.
@@ -36,42 +37,30 @@ object InputSerialization {
   }
   
   @scala.inline
-  implicit class InputSerializationOps[Self <: InputSerialization] (val x: Self) extends AnyVal {
+  implicit class InputSerializationMutableBuilder[Self <: InputSerialization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCSV(value: CSVInput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCSV(value: CSVInput): Self = this.set("CSV", value.asInstanceOf[js.Any])
+    def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
     
     @scala.inline
-    def deleteCSV: Self = this.set("CSV", js.undefined)
+    def setJSON(value: JSONInput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionType(value: CompressionType): Self = this.set("CompressionType", value.asInstanceOf[js.Any])
+    def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
     
     @scala.inline
-    def deleteCompressionType: Self = this.set("CompressionType", js.undefined)
+    def setParquet(value: ParquetInput): Self = StObject.set(x, "Parquet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJSON(value: JSONInput): Self = this.set("JSON", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJSON: Self = this.set("JSON", js.undefined)
-    
-    @scala.inline
-    def setParquet(value: ParquetInput): Self = this.set("Parquet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParquet: Self = this.set("Parquet", js.undefined)
+    def setParquetUndefined: Self = StObject.set(x, "Parquet", js.undefined)
   }
 }

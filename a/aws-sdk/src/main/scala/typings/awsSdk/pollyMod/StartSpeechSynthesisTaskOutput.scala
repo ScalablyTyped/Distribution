@@ -1,11 +1,12 @@
 package typings.awsSdk.pollyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSpeechSynthesisTaskOutput extends js.Object {
+trait StartSpeechSynthesisTaskOutput extends StObject {
   
   /**
     * SynthesisTask object that provides information and attributes about a newly submitted speech synthesis task.
@@ -21,24 +22,12 @@ object StartSpeechSynthesisTaskOutput {
   }
   
   @scala.inline
-  implicit class StartSpeechSynthesisTaskOutputOps[Self <: StartSpeechSynthesisTaskOutput] (val x: Self) extends AnyVal {
+  implicit class StartSpeechSynthesisTaskOutputMutableBuilder[Self <: StartSpeechSynthesisTaskOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSynthesisTask(value: SynthesisTask): Self = StObject.set(x, "SynthesisTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSynthesisTask(value: SynthesisTask): Self = this.set("SynthesisTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSynthesisTask: Self = this.set("SynthesisTask", js.undefined)
+    def setSynthesisTaskUndefined: Self = StObject.set(x, "SynthesisTask", js.undefined)
   }
 }

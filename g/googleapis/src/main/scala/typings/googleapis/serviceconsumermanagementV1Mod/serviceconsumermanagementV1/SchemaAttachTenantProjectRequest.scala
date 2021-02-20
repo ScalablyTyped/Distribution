@@ -1,5 +1,6 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource.
   */
 @js.native
-trait SchemaAttachTenantProjectRequest extends js.Object {
+trait SchemaAttachTenantProjectRequest extends StObject {
   
   /**
     * When attaching an external project, this is in the format of
@@ -40,36 +41,24 @@ object SchemaAttachTenantProjectRequest {
   }
   
   @scala.inline
-  implicit class SchemaAttachTenantProjectRequestOps[Self <: SchemaAttachTenantProjectRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAttachTenantProjectRequestMutableBuilder[Self <: SchemaAttachTenantProjectRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalResource(value: String): Self = StObject.set(x, "externalResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalResourceUndefined: Self = StObject.set(x, "externalResource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservedResource(value: String): Self = StObject.set(x, "reservedResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalResource(value: String): Self = this.set("externalResource", value.asInstanceOf[js.Any])
+    def setReservedResourceUndefined: Self = StObject.set(x, "reservedResource", js.undefined)
     
     @scala.inline
-    def deleteExternalResource: Self = this.set("externalResource", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedResource(value: String): Self = this.set("reservedResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedResource: Self = this.set("reservedResource", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

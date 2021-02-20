@@ -1,15 +1,15 @@
 package typings.three
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/core/Uniform", JSImport.Namespace)
-@js.native
-object uniformMod extends js.Object {
+object uniformMod {
   
+  @JSImport("three/src/core/Uniform", "Uniform")
   @js.native
-  class Uniform protected () extends js.Object {
+  class Uniform protected () extends StObject {
     def this(value: js.Any) = this()
     /**
     	 * @deprecated

@@ -1,15 +1,15 @@
 package typings.angularCommon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FormatWidth extends js.Object
+sealed trait FormatWidth extends StObject
 @JSImport("@angular/common", "FormatWidth")
 @js.native
-object FormatWidth extends js.Object {
+object FormatWidth extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FormatWidth with Double] = js.native
@@ -20,8 +20,7 @@ object FormatWidth extends js.Object {
     */
   @js.native
   sealed trait Full extends FormatWidth
-  /* 3 */ @js.native
-  object Full extends TopLevel[Full with Double]
+  /* 3 */ val Full: typings.angularCommon.mod.FormatWidth.Full with Double = js.native
   
   /**
     * For `en-US`, `'MMMM d, y, h:mm:ss a z'`
@@ -29,8 +28,7 @@ object FormatWidth extends js.Object {
     */
   @js.native
   sealed trait Long extends FormatWidth
-  /* 2 */ @js.native
-  object Long extends TopLevel[Long with Double]
+  /* 2 */ val Long: typings.angularCommon.mod.FormatWidth.Long with Double = js.native
   
   /**
     * For `en-US`, `'MMM d, y, h:mm:ss a'`
@@ -38,8 +36,7 @@ object FormatWidth extends js.Object {
     */
   @js.native
   sealed trait Medium extends FormatWidth
-  /* 1 */ @js.native
-  object Medium extends TopLevel[Medium with Double]
+  /* 1 */ val Medium: typings.angularCommon.mod.FormatWidth.Medium with Double = js.native
   
   /**
     * For `en-US`, 'M/d/yy, h:mm a'`
@@ -47,6 +44,5 @@ object FormatWidth extends js.Object {
     */
   @js.native
   sealed trait Short extends FormatWidth
-  /* 0 */ @js.native
-  object Short extends TopLevel[Short with Double]
+  /* 0 */ val Short: typings.angularCommon.mod.FormatWidth.Short with Double = js.native
 }

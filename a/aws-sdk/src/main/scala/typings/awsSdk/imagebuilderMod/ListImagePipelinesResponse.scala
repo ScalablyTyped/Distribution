@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListImagePipelinesResponse extends js.Object {
+trait ListImagePipelinesResponse extends StObject {
   
   /**
     * The list of image pipelines. 
@@ -31,39 +32,27 @@ object ListImagePipelinesResponse {
   }
   
   @scala.inline
-  implicit class ListImagePipelinesResponseOps[Self <: ListImagePipelinesResponse] (val x: Self) extends AnyVal {
+  implicit class ListImagePipelinesResponseMutableBuilder[Self <: ListImagePipelinesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImagePipelineList(value: ImagePipelineList): Self = StObject.set(x, "imagePipelineList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagePipelineListUndefined: Self = StObject.set(x, "imagePipelineList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImagePipelineListVarargs(value: ImagePipeline*): Self = StObject.set(x, "imagePipelineList", js.Array(value :_*))
     
     @scala.inline
-    def setImagePipelineListVarargs(value: ImagePipeline*): Self = this.set("imagePipelineList", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePipelineList(value: ImagePipelineList): Self = this.set("imagePipelineList", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteImagePipelineList: Self = this.set("imagePipelineList", js.undefined)
+    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

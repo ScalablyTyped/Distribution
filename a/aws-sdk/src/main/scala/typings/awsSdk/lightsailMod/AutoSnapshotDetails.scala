@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoSnapshotDetails extends js.Object {
+trait AutoSnapshotDetails extends StObject {
   
   /**
     * The timestamp when the automatic snapshot was created.
@@ -36,45 +37,33 @@ object AutoSnapshotDetails {
   }
   
   @scala.inline
-  implicit class AutoSnapshotDetailsOps[Self <: AutoSnapshotDetails] (val x: Self) extends AnyVal {
+  implicit class AutoSnapshotDetailsMutableBuilder[Self <: AutoSnapshotDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setFromAttachedDisks(value: AttachedDiskList): Self = StObject.set(x, "fromAttachedDisks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setFromAttachedDisksUndefined: Self = StObject.set(x, "fromAttachedDisks", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setFromAttachedDisksVarargs(value: AttachedDisk*): Self = StObject.set(x, "fromAttachedDisks", js.Array(value :_*))
     
     @scala.inline
-    def setFromAttachedDisksVarargs(value: AttachedDisk*): Self = this.set("fromAttachedDisks", js.Array(value :_*))
+    def setStatus(value: AutoSnapshotStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromAttachedDisks(value: AttachedDiskList): Self = this.set("fromAttachedDisks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromAttachedDisks: Self = this.set("fromAttachedDisks", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: AutoSnapshotStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

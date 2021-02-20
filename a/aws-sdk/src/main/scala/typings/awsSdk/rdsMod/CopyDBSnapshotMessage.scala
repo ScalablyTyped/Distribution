@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyDBSnapshotMessage extends js.Object {
+trait CopyDBSnapshotMessage extends StObject {
   
   /**
     * A value that indicates whether to copy all tags from the source DB snapshot to the target DB snapshot. By default, tags are not copied.
@@ -58,69 +59,57 @@ object CopyDBSnapshotMessage {
   }
   
   @scala.inline
-  implicit class CopyDBSnapshotMessageOps[Self <: CopyDBSnapshotMessage] (val x: Self) extends AnyVal {
+  implicit class CopyDBSnapshotMessageMutableBuilder[Self <: CopyDBSnapshotMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyTags(value: BooleanOptional): Self = StObject.set(x, "CopyTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyTagsUndefined: Self = StObject.set(x, "CopyTags", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceDBSnapshotIdentifier(value: String): Self = this.set("SourceDBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def setTargetDBSnapshotIdentifier(value: String): Self = this.set("TargetDBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTags(value: BooleanOptional): Self = this.set("CopyTags", value.asInstanceOf[js.Any])
+    def setOptionGroupNameUndefined: Self = StObject.set(x, "OptionGroupName", js.undefined)
     
     @scala.inline
-    def deleteCopyTags: Self = this.set("CopyTags", js.undefined)
+    def setPreSignedUrl(value: String): Self = StObject.set(x, "PreSignedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setPreSignedUrlUndefined: Self = StObject.set(x, "PreSignedUrl", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setSourceDBSnapshotIdentifier(value: String): Self = StObject.set(x, "SourceDBSnapshotIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionGroupName(value: String): Self = this.set("OptionGroupName", value.asInstanceOf[js.Any])
+    def setSourceRegion(value: String): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptionGroupName: Self = this.set("OptionGroupName", js.undefined)
+    def setSourceRegionUndefined: Self = StObject.set(x, "SourceRegion", js.undefined)
     
     @scala.inline
-    def setPreSignedUrl(value: String): Self = this.set("PreSignedUrl", value.asInstanceOf[js.Any])
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreSignedUrl: Self = this.set("PreSignedUrl", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def setSourceRegion(value: String): Self = this.set("SourceRegion", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteSourceRegion: Self = this.set("SourceRegion", js.undefined)
+    def setTargetCustomAvailabilityZone(value: String): Self = StObject.set(x, "TargetCustomAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTargetCustomAvailabilityZoneUndefined: Self = StObject.set(x, "TargetCustomAvailabilityZone", js.undefined)
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setTargetCustomAvailabilityZone(value: String): Self = this.set("TargetCustomAvailabilityZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetCustomAvailabilityZone: Self = this.set("TargetCustomAvailabilityZone", js.undefined)
+    def setTargetDBSnapshotIdentifier(value: String): Self = StObject.set(x, "TargetDBSnapshotIdentifier", value.asInstanceOf[js.Any])
   }
 }

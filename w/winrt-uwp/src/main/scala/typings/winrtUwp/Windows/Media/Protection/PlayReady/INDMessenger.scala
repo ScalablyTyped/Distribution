@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Sends registration, proximity detection, and license fetch messages between PlayReady-ND receivers and transmitters. */
 @js.native
-trait INDMessenger extends js.Object {
+trait INDMessenger extends StObject {
   
   /**
     * Sends the specified data in an asynchronous license fetch request message.
@@ -69,34 +70,22 @@ object INDMessenger {
   }
   
   @scala.inline
-  implicit class INDMessengerOps[Self <: INDMessenger] (val x: Self) extends AnyVal {
+  implicit class INDMessengerMutableBuilder[Self <: INDMessenger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSendLicenseFetchRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = this.set("sendLicenseFetchRequestAsync", js.Any.fromFunction2(value))
+    def setSendLicenseFetchRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = StObject.set(x, "sendLicenseFetchRequestAsync", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSendProximityDetectionResponseAsync(
       value: (NDProximityDetectionType, js.Array[Double], js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]
-    ): Self = this.set("sendProximityDetectionResponseAsync", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "sendProximityDetectionResponseAsync", js.Any.fromFunction4(value))
     
     @scala.inline
     def setSendProximityDetectionStartAsync(
       value: (NDProximityDetectionType, js.Array[Double], js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]
-    ): Self = this.set("sendProximityDetectionStartAsync", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "sendProximityDetectionStartAsync", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSendRegistrationRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = this.set("sendRegistrationRequestAsync", js.Any.fromFunction2(value))
+    def setSendRegistrationRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = StObject.set(x, "sendRegistrationRequestAsync", js.Any.fromFunction2(value))
   }
 }

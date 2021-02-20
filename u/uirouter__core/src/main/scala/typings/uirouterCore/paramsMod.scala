@@ -6,16 +6,16 @@ import typings.uirouterCore.paramMod.DefType
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/params", JSImport.Namespace)
-@js.native
-object paramsMod extends js.Object {
+object paramsMod {
   
+  @JSImport("@uirouter/core/lib/params", "DefType")
   @js.native
-  object DefType extends js.Object {
+  object DefType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.uirouterCore.paramMod.DefType with Double] = js.native
@@ -27,6 +27,7 @@ object paramsMod extends js.Object {
     /* 1 */ val SEARCH: typings.uirouterCore.paramMod.DefType.SEARCH with Double = js.native
   }
   
+  @JSImport("@uirouter/core/lib/params", "Param")
   @js.native
   class Param protected ()
     extends typings.uirouterCore.paramMod.Param {
@@ -39,8 +40,7 @@ object paramsMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object Param extends js.Object {
+  object Param {
     
     /**
       * Finds [[Param]] objects which have different param values
@@ -53,13 +53,21 @@ object paramsMod extends js.Object {
       *
       * @returns any Param objects whose values were different between values1 and values2
       */
+    @JSImport("@uirouter/core/lib/params", "Param.changed")
+    @js.native
     def changed(params: js.Array[typings.uirouterCore.paramMod.Param]): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+    @JSImport("@uirouter/core/lib/params", "Param.changed")
+    @js.native
     def changed(
       params: js.Array[typings.uirouterCore.paramMod.Param],
       values1: js.UndefOr[scala.Nothing],
       values2: RawParams
     ): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+    @JSImport("@uirouter/core/lib/params", "Param.changed")
+    @js.native
     def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+    @JSImport("@uirouter/core/lib/params", "Param.changed")
+    @js.native
     def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
     
     /**
@@ -71,23 +79,40 @@ object paramsMod extends js.Object {
       *
       * @returns true if the param values in values1 and values2 are equal
       */
+    @JSImport("@uirouter/core/lib/params", "Param.equals")
+    @js.native
     def equals(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
+    @JSImport("@uirouter/core/lib/params", "Param.equals")
+    @js.native
     def equals(
       params: js.Array[typings.uirouterCore.paramMod.Param],
       values1: js.UndefOr[scala.Nothing],
       values2: js.Object
     ): Boolean = js.native
+    @JSImport("@uirouter/core/lib/params", "Param.equals")
+    @js.native
     def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = js.native
+    @JSImport("@uirouter/core/lib/params", "Param.equals")
+    @js.native
     def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = js.native
     
     /** Returns true if a the parameter values are valid, according to the Param definitions */
+    @JSImport("@uirouter/core/lib/params", "Param.validates")
+    @js.native
     def validates(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
+    @JSImport("@uirouter/core/lib/params", "Param.validates")
+    @js.native
     def validates(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): Boolean = js.native
     
+    @JSImport("@uirouter/core/lib/params", "Param.values")
+    @js.native
     def values(params: js.Array[typings.uirouterCore.paramMod.Param]): RawParams = js.native
+    @JSImport("@uirouter/core/lib/params", "Param.values")
+    @js.native
     def values(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): RawParams = js.native
   }
   
+  @JSImport("@uirouter/core/lib/params", "ParamType")
   @js.native
   class ParamType protected ()
     extends typings.uirouterCore.paramTypeMod.ParamType {
@@ -99,12 +124,16 @@ object paramsMod extends js.Object {
     def this(`def`: ParamTypeDefinition) = this()
   }
   
+  @JSImport("@uirouter/core/lib/params", "ParamTypes")
   @js.native
   class ParamTypes ()
     extends typings.uirouterCore.paramTypesMod.ParamTypes
   /* static members */
-  @js.native
-  object ParamTypes extends js.Object {
+  object ParamTypes {
+    
+    @JSImport("@uirouter/core/lib/params", "ParamTypes")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Built-in parameter type: `any`
@@ -128,7 +157,11 @@ object paramsMod extends js.Object {
       * $state.go('new', { inreplyto: currentMessage });
       * ```
       */
-    var any: ParamTypeDefinition = js.native
+    @JSImport("@uirouter/core/lib/params", "ParamTypes.any")
+    @js.native
+    def any: ParamTypeDefinition = js.native
+    @scala.inline
+    def any_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `bool`
@@ -150,7 +183,11 @@ object paramsMod extends js.Object {
       *
       * Conversely, if the url is `/inbox?unread=0`, the value of the `unread` parameter will be a `false`.
       */
-    var bool: ParamTypeDefinition = js.native
+    @JSImport("@uirouter/core/lib/params", "ParamTypes.bool")
+    @js.native
+    def bool: ParamTypeDefinition = js.native
+    @scala.inline
+    def bool_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `date`
@@ -176,7 +213,11 @@ object paramsMod extends js.Object {
       * - `date.getMonth() === 11` (month is 0-based)
       * - `date.getDate() === 25`
       */
-    var date: ParamTypeDefinition = js.native
+    @JSImport("@uirouter/core/lib/params", "ParamTypes.date")
+    @js.native
+    def date: ParamTypeDefinition = js.native
+    @scala.inline
+    def date_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("date")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `hash`
@@ -184,7 +225,11 @@ object paramsMod extends js.Object {
       * This parameter type is used for the `#` parameter (the hash)
       * It behaves the same as the [[string]] parameter type.
       */
-    var hash: ParamTypeDefinition = js.native
+    @JSImport("@uirouter/core/lib/params", "ParamTypes.hash")
+    @js.native
+    def hash: ParamTypeDefinition = js.native
+    @scala.inline
+    def hash_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `int`
@@ -206,7 +251,11 @@ object paramsMod extends js.Object {
       *
       * When the parameter value is read, it will be the `number` `1298547`, not the string `"1298547"`.
       */
-    var int: ParamTypeDefinition = js.native
+    @JSImport("@uirouter/core/lib/params", "ParamTypes.int")
+    @js.native
+    def int: ParamTypeDefinition = js.native
+    @scala.inline
+    def int_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `json`
@@ -227,7 +276,11 @@ object paramsMod extends js.Object {
       *
       * The URL will serialize to: `/map/%7B%22x%22%3A10399.2%2C%22y%22%3A49071%7D`
       */
-    var json: ParamTypeDefinition = js.native
+    @JSImport("@uirouter/core/lib/params", "ParamTypes.json")
+    @js.native
+    def json: ParamTypeDefinition = js.native
+    @scala.inline
+    def json_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `path`
@@ -244,7 +297,11 @@ object paramsMod extends js.Object {
       * In ng1, this type is overridden with one that pre-encodes slashes as `~2F` instead of `%2F`.
       * For more details about this angular 1 behavior, see: https://github.com/angular-ui/ui-router/issues/2598
       */
-    var path: ParamTypeDefinition = js.native
+    @JSImport("@uirouter/core/lib/params", "ParamTypes.path")
+    @js.native
+    def path: ParamTypeDefinition = js.native
+    @scala.inline
+    def path_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `query`
@@ -256,7 +313,11 @@ object paramsMod extends js.Object {
       *
       * - `/bar?param2`: a query parameter
       */
-    var query: ParamTypeDefinition = js.native
+    @JSImport("@uirouter/core/lib/params", "ParamTypes.query")
+    @js.native
+    def query: ParamTypeDefinition = js.native
+    @scala.inline
+    def query_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("query")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `string`
@@ -264,9 +325,14 @@ object paramsMod extends js.Object {
       * This parameter type coerces values to strings.
       * It matches anything (`new RegExp(".*")`) in the URL
       */
-    var string: ParamTypeDefinition = js.native
+    @JSImport("@uirouter/core/lib/params", "ParamTypes.string")
+    @js.native
+    def string: ParamTypeDefinition = js.native
+    @scala.inline
+    def string_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@uirouter/core/lib/params", "StateParams")
   @js.native
   class StateParams ()
     extends typings.uirouterCore.stateParamsMod.StateParams {

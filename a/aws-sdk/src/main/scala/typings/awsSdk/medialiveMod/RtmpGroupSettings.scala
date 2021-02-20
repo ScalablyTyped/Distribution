@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RtmpGroupSettings extends js.Object {
+trait RtmpGroupSettings extends StObject {
   
   /**
     * Choose the ad marker type for this output group. MediaLive will create a message based on the content of each SCTE-35 message, format it for that marker type, and insert it in the datastream.
@@ -53,63 +54,51 @@ object RtmpGroupSettings {
   }
   
   @scala.inline
-  implicit class RtmpGroupSettingsOps[Self <: RtmpGroupSettings] (val x: Self) extends AnyVal {
+  implicit class RtmpGroupSettingsMutableBuilder[Self <: RtmpGroupSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdMarkers(value: listOfRtmpAdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdMarkersVarargs(value: RtmpAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value :_*))
     
     @scala.inline
-    def setAdMarkersVarargs(value: RtmpAdMarkers*): Self = this.set("AdMarkers", js.Array(value :_*))
+    def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "AuthenticationScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdMarkers(value: listOfRtmpAdMarkers): Self = this.set("AdMarkers", value.asInstanceOf[js.Any])
+    def setAuthenticationSchemeUndefined: Self = StObject.set(x, "AuthenticationScheme", js.undefined)
     
     @scala.inline
-    def deleteAdMarkers: Self = this.set("AdMarkers", js.undefined)
+    def setCacheFullBehavior(value: RtmpCacheFullBehavior): Self = StObject.set(x, "CacheFullBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationScheme(value: AuthenticationScheme): Self = this.set("AuthenticationScheme", value.asInstanceOf[js.Any])
+    def setCacheFullBehaviorUndefined: Self = StObject.set(x, "CacheFullBehavior", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationScheme: Self = this.set("AuthenticationScheme", js.undefined)
+    def setCacheLength(value: integerMin30): Self = StObject.set(x, "CacheLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheFullBehavior(value: RtmpCacheFullBehavior): Self = this.set("CacheFullBehavior", value.asInstanceOf[js.Any])
+    def setCacheLengthUndefined: Self = StObject.set(x, "CacheLength", js.undefined)
     
     @scala.inline
-    def deleteCacheFullBehavior: Self = this.set("CacheFullBehavior", js.undefined)
+    def setCaptionData(value: RtmpCaptionData): Self = StObject.set(x, "CaptionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheLength(value: integerMin30): Self = this.set("CacheLength", value.asInstanceOf[js.Any])
+    def setCaptionDataUndefined: Self = StObject.set(x, "CaptionData", js.undefined)
     
     @scala.inline
-    def deleteCacheLength: Self = this.set("CacheLength", js.undefined)
+    def setInputLossAction(value: InputLossActionForRtmpOut): Self = StObject.set(x, "InputLossAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptionData(value: RtmpCaptionData): Self = this.set("CaptionData", value.asInstanceOf[js.Any])
+    def setInputLossActionUndefined: Self = StObject.set(x, "InputLossAction", js.undefined)
     
     @scala.inline
-    def deleteCaptionData: Self = this.set("CaptionData", js.undefined)
+    def setRestartDelay(value: integerMin0): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputLossAction(value: InputLossActionForRtmpOut): Self = this.set("InputLossAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputLossAction: Self = this.set("InputLossAction", js.undefined)
-    
-    @scala.inline
-    def setRestartDelay(value: integerMin0): Self = this.set("RestartDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestartDelay: Self = this.set("RestartDelay", js.undefined)
+    def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
   }
 }

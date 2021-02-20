@@ -6,17 +6,19 @@ import typings.materialRipple.foundationMod.MDCRippleFoundation
 import typings.materialRipple.typesMod.MDCRippleAttachOpts
 import typings.materialRipple.typesMod.MDCRippleCapableSurface
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/ripple/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined unbounded, disabled */ @js.native
-  class MDCRipple () extends MDCComponent[MDCRippleFoundation] {
+  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined unbounded, disabled */ @JSImport("@material/ripple/component", "MDCRipple")
+  @js.native
+  class MDCRipple protected () extends MDCComponent[MDCRippleFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCRippleFoundation, args: js.Any*) = this()
     
     def activate(): Unit = js.native
     
@@ -32,12 +34,17 @@ object componentMod extends js.Object {
     var unbounded_FMDCRipple: js.UndefOr[Boolean] = js.native
   }
   /* static members */
-  @js.native
-  object MDCRipple extends js.Object {
+  object MDCRipple {
     
+    @JSImport("@material/ripple/component", "MDCRipple.attachTo")
+    @js.native
     def attachTo(root: Element): MDCRipple = js.native
+    @JSImport("@material/ripple/component", "MDCRipple.attachTo")
+    @js.native
     def attachTo(root: Element, opts: MDCRippleAttachOpts): MDCRipple = js.native
     
+    @JSImport("@material/ripple/component", "MDCRipple.createAdapter")
+    @js.native
     def createAdapter(instance: MDCRippleCapableSurface): MDCRippleAdapter = js.native
   }
   

@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.OauthtokenPrettyPrintProfileIdQuotaUser
 import typings.maximMazurokGapiClientDfareporting.anon.PrettyPrintProfileIdQuotaUserResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SitesResource extends js.Object {
+trait SitesResource extends StObject {
   
   /** Gets one site by ID. */
   def get(): Request[Site] = js.native

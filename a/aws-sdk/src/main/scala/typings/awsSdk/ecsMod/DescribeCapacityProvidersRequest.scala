@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCapacityProvidersRequest extends js.Object {
+trait DescribeCapacityProvidersRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of one or more capacity providers. Up to 100 capacity providers can be described in an action.
@@ -36,48 +37,36 @@ object DescribeCapacityProvidersRequest {
   }
   
   @scala.inline
-  implicit class DescribeCapacityProvidersRequestOps[Self <: DescribeCapacityProvidersRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeCapacityProvidersRequestMutableBuilder[Self <: DescribeCapacityProvidersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityProviders(value: StringList): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityProvidersVarargs(value: String*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
     
     @scala.inline
-    def setCapacityProvidersVarargs(value: String*): Self = this.set("capacityProviders", js.Array(value :_*))
+    def setInclude(value: CapacityProviderFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityProviders(value: StringList): Self = this.set("capacityProviders", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteCapacityProviders: Self = this.set("capacityProviders", js.undefined)
+    def setIncludeVarargs(value: CapacityProviderField*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeVarargs(value: CapacityProviderField*): Self = this.set("include", js.Array(value :_*))
+    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: CapacityProviderFieldList): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

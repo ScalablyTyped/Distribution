@@ -1,11 +1,12 @@
 package typings.fundamentalReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NextMonth extends js.Object {
+trait NextMonth extends StObject {
   
   var nextMonth: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object NextMonth {
   }
   
   @scala.inline
-  implicit class NextMonthOps[Self <: NextMonth] (val x: Self) extends AnyVal {
+  implicit class NextMonthMutableBuilder[Self <: NextMonth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMonth(value: String): Self = StObject.set(x, "nextMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMonthUndefined: Self = StObject.set(x, "nextMonth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousMonth(value: String): Self = StObject.set(x, "previousMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMonth(value: String): Self = this.set("nextMonth", value.asInstanceOf[js.Any])
+    def setPreviousMonthUndefined: Self = StObject.set(x, "previousMonth", js.undefined)
     
     @scala.inline
-    def deleteNextMonth: Self = this.set("nextMonth", js.undefined)
+    def setShow12NextYears(value: String): Self = StObject.set(x, "show12NextYears", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousMonth(value: String): Self = this.set("previousMonth", value.asInstanceOf[js.Any])
+    def setShow12NextYearsUndefined: Self = StObject.set(x, "show12NextYears", js.undefined)
     
     @scala.inline
-    def deletePreviousMonth: Self = this.set("previousMonth", js.undefined)
+    def setShow12PreviousYears(value: String): Self = StObject.set(x, "show12PreviousYears", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow12NextYears(value: String): Self = this.set("show12NextYears", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow12NextYears: Self = this.set("show12NextYears", js.undefined)
-    
-    @scala.inline
-    def setShow12PreviousYears(value: String): Self = this.set("show12PreviousYears", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow12PreviousYears: Self = this.set("show12PreviousYears", js.undefined)
+    def setShow12PreviousYearsUndefined: Self = StObject.set(x, "show12PreviousYears", js.undefined)
   }
 }

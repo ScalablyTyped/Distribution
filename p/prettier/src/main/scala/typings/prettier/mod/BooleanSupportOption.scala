@@ -2,6 +2,7 @@ package typings.prettier.mod
 
 import typings.prettier.prettierBooleans.`false`
 import typings.prettier.prettierStrings.boolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,9 @@ trait BooleanSupportOption
   extends BaseSupportOption[boolean]
      with _SupportOption {
   
-  var array: js.UndefOr[`false`] = js.native
-  
   var default: Boolean = js.native
+  
+  var array: js.UndefOr[`false`] = js.native
   
   @JSName("description")
   var description_BooleanSupportOption: String = js.native
@@ -30,36 +31,24 @@ object BooleanSupportOption {
   }
   
   @scala.inline
-  implicit class BooleanSupportOptionOps[Self <: BooleanSupportOption] (val x: Self) extends AnyVal {
+  implicit class BooleanSupportOptionMutableBuilder[Self <: BooleanSupportOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setOppositeDescription(value: Boolean): Self = StObject.set(x, "oppositeDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: `false`): Self = this.set("array", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
-    
-    @scala.inline
-    def setOppositeDescription(value: Boolean): Self = this.set("oppositeDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOppositeDescription: Self = this.set("oppositeDescription", js.undefined)
+    def setOppositeDescriptionUndefined: Self = StObject.set(x, "oppositeDescription", js.undefined)
   }
 }

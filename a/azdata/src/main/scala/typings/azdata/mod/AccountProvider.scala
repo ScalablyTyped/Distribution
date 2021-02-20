@@ -1,12 +1,13 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountProvider extends js.Object {
+trait AccountProvider extends StObject {
   
   /**
     * Called from the account management service when the user has cancelled an auto OAuth
@@ -73,39 +74,27 @@ object AccountProvider {
   }
   
   @scala.inline
-  implicit class AccountProviderOps[Self <: AccountProvider] (val x: Self) extends AnyVal {
+  implicit class AccountProviderMutableBuilder[Self <: AccountProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoOAuthCancelled(value: () => Thenable[Unit]): Self = StObject.set(x, "autoOAuthCancelled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: AccountKey => Thenable[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearTokenCache(value: () => Thenable[Unit]): Self = StObject.set(x, "clearTokenCache", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAutoOAuthCancelled(value: () => Thenable[Unit]): Self = this.set("autoOAuthCancelled", js.Any.fromFunction0(value))
+    def setGetSecurityToken(value: (Account, AzureResource) => Thenable[js.UndefOr[js.Object]]): Self = StObject.set(x, "getSecurityToken", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClear(value: AccountKey => Thenable[Unit]): Self = this.set("clear", js.Any.fromFunction1(value))
+    def setInitialize(value: js.Array[Account] => Thenable[js.Array[Account]]): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearTokenCache(value: () => Thenable[Unit]): Self = this.set("clearTokenCache", js.Any.fromFunction0(value))
+    def setPrompt(value: () => Thenable[Account | PromptFailedResult]): Self = StObject.set(x, "prompt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSecurityToken(value: (Account, AzureResource) => Thenable[js.UndefOr[js.Object]]): Self = this.set("getSecurityToken", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInitialize(value: js.Array[Account] => Thenable[js.Array[Account]]): Self = this.set("initialize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPrompt(value: () => Thenable[Account | PromptFailedResult]): Self = this.set("prompt", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRefresh(value: Account => Thenable[Account | PromptFailedResult]): Self = this.set("refresh", js.Any.fromFunction1(value))
+    def setRefresh(value: Account => Thenable[Account | PromptFailedResult]): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
   }
 }

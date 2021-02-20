@@ -1,11 +1,12 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAlertsForRepo extends js.Object {
+trait ListAlertsForRepo extends StObject {
   
   var getAlert: `668` = js.native
   
@@ -32,33 +33,21 @@ object ListAlertsForRepo {
   }
   
   @scala.inline
-  implicit class ListAlertsForRepoOps[Self <: ListAlertsForRepo] (val x: Self) extends AnyVal {
+  implicit class ListAlertsForRepoMutableBuilder[Self <: ListAlertsForRepo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAlert(value: `668`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListAlertsForRepo(value: `669`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListRecentAnalyses(value: `670`): Self = StObject.set(x, "listRecentAnalyses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAlert(value: `668`): Self = this.set("getAlert", value.asInstanceOf[js.Any])
+    def setUpdateAlert(value: `671`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListAlertsForRepo(value: `669`): Self = this.set("listAlertsForRepo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListRecentAnalyses(value: `670`): Self = this.set("listRecentAnalyses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateAlert(value: `671`): Self = this.set("updateAlert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadSarif(value: `672`): Self = this.set("uploadSarif", value.asInstanceOf[js.Any])
+    def setUploadSarif(value: `672`): Self = StObject.set(x, "uploadSarif", value.asInstanceOf[js.Any])
   }
 }

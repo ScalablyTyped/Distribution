@@ -3,6 +3,7 @@ package typings.baidumapWebSdk.BMap
 import typings.baidumapWebSdk.anon.Target
 import typings.baidumapWebSdk.anon.Type
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

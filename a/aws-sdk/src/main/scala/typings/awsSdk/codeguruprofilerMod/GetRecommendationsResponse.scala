@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRecommendationsResponse extends js.Object {
+trait GetRecommendationsResponse extends StObject {
   
   /**
     *  The list of anomalies that the analysis has found for this profile. 
@@ -47,39 +48,27 @@ object GetRecommendationsResponse {
   }
   
   @scala.inline
-  implicit class GetRecommendationsResponseOps[Self <: GetRecommendationsResponse] (val x: Self) extends AnyVal {
+  implicit class GetRecommendationsResponseMutableBuilder[Self <: GetRecommendationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnomalies(value: Anomalies): Self = StObject.set(x, "anomalies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnomaliesVarargs(value: Anomaly*): Self = StObject.set(x, "anomalies", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfileEndTime(value: Timestamp): Self = StObject.set(x, "profileEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnomaliesVarargs(value: Anomaly*): Self = this.set("anomalies", js.Array(value :_*))
+    def setProfileStartTime(value: Timestamp): Self = StObject.set(x, "profileStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnomalies(value: Anomalies): Self = this.set("anomalies", value.asInstanceOf[js.Any])
+    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileEndTime(value: Timestamp): Self = this.set("profileEndTime", value.asInstanceOf[js.Any])
+    def setRecommendations(value: Recommendations): Self = StObject.set(x, "recommendations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileStartTime(value: Timestamp): Self = this.set("profileStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecommendationsVarargs(value: Recommendation*): Self = this.set("recommendations", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecommendations(value: Recommendations): Self = this.set("recommendations", value.asInstanceOf[js.Any])
+    def setRecommendationsVarargs(value: Recommendation*): Self = StObject.set(x, "recommendations", js.Array(value :_*))
   }
 }

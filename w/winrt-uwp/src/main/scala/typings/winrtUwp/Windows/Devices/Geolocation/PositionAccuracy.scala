@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PositionAccuracy extends js.Object
+sealed trait PositionAccuracy extends StObject
 /** Indicates the requested accuracy level for the location data that the application uses. */
 @JSGlobal("Windows.Devices.Geolocation.PositionAccuracy")
 @js.native
-object PositionAccuracy extends js.Object {
+object PositionAccuracy extends StObject {
   
   /** Optimize for power, performance, and other cost considerations. */
   @js.native

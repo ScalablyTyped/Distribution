@@ -13,20 +13,23 @@ import typings.poseCore.typesMod.ReadValue
 import typings.poseCore.typesMod.ReadValueFromSource
 import typings.poseCore.typesMod.SetValueNative
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pose-core/lib/factories/values", JSImport.Namespace)
-@js.native
-object valuesMod extends js.Object {
+object valuesMod {
   
-  val DEFAULT_INITIAL_POSE: /* "init" */ String = js.native
-  
+  @JSImport("pose-core/lib/factories/values", JSImport.Default)
+  @js.native
   def default[V, A, TD](props: ValueFactoryProps[V, A, TD]): Map[String, V] = js.native
   
+  @JSImport("pose-core/lib/factories/values", "DEFAULT_INITIAL_POSE")
   @js.native
-  trait ValueFactoryProps[V, A, TD] extends js.Object {
+  val DEFAULT_INITIAL_POSE: /* "init" */ String = js.native
+  
+  @js.native
+  trait ValueFactoryProps[V, A, TD] extends StObject {
     
     var activePoses: ActivePoses = js.native
     

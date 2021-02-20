@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Edge extends js.Object {
+trait Edge extends StObject {
   
   var background: js.UndefOr[Invert] = js.native
   
@@ -20,30 +21,18 @@ object Edge {
   }
   
   @scala.inline
-  implicit class EdgeOps[Self <: Edge] (val x: Self) extends AnyVal {
+  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: Invert): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdge(value: Type): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: Invert): Self = this.set("background", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
-    
-    @scala.inline
-    def setEdge(value: Type): Self = this.set("edge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEdge: Self = this.set("edge", js.undefined)
+    def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
   }
 }

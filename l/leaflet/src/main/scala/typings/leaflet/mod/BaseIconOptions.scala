@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,84 +39,72 @@ object BaseIconOptions {
   }
   
   @scala.inline
-  implicit class BaseIconOptionsOps[Self <: BaseIconOptions] (val x: Self) extends AnyVal {
+  implicit class BaseIconOptionsMutableBuilder[Self <: BaseIconOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconAnchor(value: PointExpression): Self = StObject.set(x, "iconAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setIconAnchorUndefined: Self = StObject.set(x, "iconAnchor", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setIconRetinaUrl(value: String): Self = StObject.set(x, "iconRetinaUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconAnchor(value: PointExpression): Self = this.set("iconAnchor", value.asInstanceOf[js.Any])
+    def setIconRetinaUrlUndefined: Self = StObject.set(x, "iconRetinaUrl", js.undefined)
     
     @scala.inline
-    def deleteIconAnchor: Self = this.set("iconAnchor", js.undefined)
+    def setIconSize(value: PointExpression): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconRetinaUrl(value: String): Self = this.set("iconRetinaUrl", value.asInstanceOf[js.Any])
+    def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
     
     @scala.inline
-    def deleteIconRetinaUrl: Self = this.set("iconRetinaUrl", js.undefined)
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconSize(value: PointExpression): Self = this.set("iconSize", value.asInstanceOf[js.Any])
+    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
     @scala.inline
-    def deleteIconSize: Self = this.set("iconSize", js.undefined)
+    def setPopupAnchor(value: PointExpression): Self = StObject.set(x, "popupAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setPopupAnchorUndefined: Self = StObject.set(x, "popupAnchor", js.undefined)
     
     @scala.inline
-    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    def setShadowAnchor(value: PointExpression): Self = StObject.set(x, "shadowAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupAnchor(value: PointExpression): Self = this.set("popupAnchor", value.asInstanceOf[js.Any])
+    def setShadowAnchorUndefined: Self = StObject.set(x, "shadowAnchor", js.undefined)
     
     @scala.inline
-    def deletePopupAnchor: Self = this.set("popupAnchor", js.undefined)
+    def setShadowRetinaUrl(value: String): Self = StObject.set(x, "shadowRetinaUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowAnchor(value: PointExpression): Self = this.set("shadowAnchor", value.asInstanceOf[js.Any])
+    def setShadowRetinaUrlUndefined: Self = StObject.set(x, "shadowRetinaUrl", js.undefined)
     
     @scala.inline
-    def deleteShadowAnchor: Self = this.set("shadowAnchor", js.undefined)
+    def setShadowSize(value: PointExpression): Self = StObject.set(x, "shadowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowRetinaUrl(value: String): Self = this.set("shadowRetinaUrl", value.asInstanceOf[js.Any])
+    def setShadowSizeUndefined: Self = StObject.set(x, "shadowSize", js.undefined)
     
     @scala.inline
-    def deleteShadowRetinaUrl: Self = this.set("shadowRetinaUrl", js.undefined)
+    def setShadowUrl(value: String): Self = StObject.set(x, "shadowUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowSize(value: PointExpression): Self = this.set("shadowSize", value.asInstanceOf[js.Any])
+    def setShadowUrlUndefined: Self = StObject.set(x, "shadowUrl", js.undefined)
     
     @scala.inline
-    def deleteShadowSize: Self = this.set("shadowSize", js.undefined)
+    def setTooltipAnchor(value: PointExpression): Self = StObject.set(x, "tooltipAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowUrl(value: String): Self = this.set("shadowUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowUrl: Self = this.set("shadowUrl", js.undefined)
-    
-    @scala.inline
-    def setTooltipAnchor(value: PointExpression): Self = this.set("tooltipAnchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipAnchor: Self = this.set("tooltipAnchor", js.undefined)
+    def setTooltipAnchorUndefined: Self = StObject.set(x, "tooltipAnchor", js.undefined)
   }
 }

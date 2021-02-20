@@ -1,12 +1,13 @@
 package typings.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Editor
 @js.native
-trait EditorSettings extends js.Object {
+trait EditorSettings extends StObject {
   
   var changed: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
   
@@ -32,60 +33,48 @@ object EditorSettings {
   }
   
   @scala.inline
-  implicit class EditorSettingsOps[Self <: EditorSettings] (val x: Self) extends AnyVal {
+  implicit class EditorSettingsMutableBuilder[Self <: EditorSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanged(value: /* e */ js.Any => _): Self = StObject.set(x, "changed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChanging(value: /* e */ js.Any => _): Self = StObject.set(x, "changing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChanged(value: /* e */ js.Any => _): Self = this.set("changed", js.Any.fromFunction1(value))
+    def setChangingUndefined: Self = StObject.set(x, "changing", js.undefined)
     
     @scala.inline
-    def deleteChanged: Self = this.set("changed", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanging(value: /* e */ js.Any => _): Self = this.set("changing", js.Any.fromFunction1(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteChanging: Self = this.set("changing", js.undefined)
+    def setIconsLibrary(value: String): Self = StObject.set(x, "iconsLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIconsLibraryUndefined: Self = StObject.set(x, "iconsLibrary", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconsLibrary(value: String): Self = this.set("iconsLibrary", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteIconsLibrary: Self = this.set("iconsLibrary", js.undefined)
+    def setUiLibrary(value: String): Self = StObject.set(x, "uiLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUiLibrary(value: String): Self = this.set("uiLibrary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUiLibrary: Self = this.set("uiLibrary", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

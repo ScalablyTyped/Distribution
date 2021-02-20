@@ -1,14 +1,17 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operators/distinctUntilKeyChanged", JSImport.Namespace)
-@js.native
-object distinctUntilKeyChangedMod extends js.Object {
+object distinctUntilKeyChangedMod {
   
+  @JSImport("rxjs-compat/operators/distinctUntilKeyChanged", "distinctUntilKeyChanged")
+  @js.native
   def distinctUntilKeyChanged[T](key: /* keyof T */ String): js.Any = js.native
+  @JSImport("rxjs-compat/operators/distinctUntilKeyChanged", "distinctUntilKeyChanged")
+  @js.native
   def distinctUntilKeyChanged[T, K /* <: /* keyof T */ String */](
     key: K,
     compare: js.Function2[

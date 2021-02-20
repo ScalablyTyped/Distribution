@@ -3,12 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 import typings.devtoolsProtocol.devtoolsProtocolStrings.horizontal
 import typings.devtoolsProtocol.devtoolsProtocolStrings.vertical
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayFeature extends js.Object {
+trait DisplayFeature extends StObject {
   
   /**
     * A display feature may mask content such that it is not physically
@@ -37,27 +38,15 @@ object DisplayFeature {
   }
   
   @scala.inline
-  implicit class DisplayFeatureOps[Self <: DisplayFeature] (val x: Self) extends AnyVal {
+  implicit class DisplayFeatureMutableBuilder[Self <: DisplayFeature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaskLength(value: integer): Self = StObject.set(x, "maskLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaskLength(value: integer): Self = this.set("maskLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffset(value: integer): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: vertical | horizontal): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
   }
 }

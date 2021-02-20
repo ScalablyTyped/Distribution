@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionInputMod.Stop
 import typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionOutputMod.StopStreamEncryptionOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/StopStreamEncryptionCommand", JSImport.Namespace)
-@js.native
-object stopStreamEncryptionCommandMod extends js.Object {
+object stopStreamEncryptionCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/StopStreamEncryptionCommand", "StopStreamEncryptionCommand")
   @js.native
   class StopStreamEncryptionCommand protected () extends Command[
           InputTypesUnion, 

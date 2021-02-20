@@ -1,20 +1,21 @@
 package typings.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintQuality extends js.Object
+sealed trait PrintQuality extends StObject
 @JSGlobal("Windows.Graphics.Printing.PrintQuality")
 @js.native
-object PrintQuality extends js.Object {
-  
-  @js.native
-  sealed trait automatic extends PrintQuality
+object PrintQuality extends StObject {
   
   @js.native
   sealed trait default extends PrintQuality
+  
+  @js.native
+  sealed trait automatic extends PrintQuality
   
   @js.native
   sealed trait draft extends PrintQuality

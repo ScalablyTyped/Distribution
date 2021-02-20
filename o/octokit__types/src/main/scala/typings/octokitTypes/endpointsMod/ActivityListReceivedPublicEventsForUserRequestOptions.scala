@@ -4,12 +4,13 @@ import typings.octokitTypes.octokitTypesStrings.GET
 import typings.octokitTypes.octokitTypesStrings.SlashusersSlashColonusernameSlashreceived_eventsSlashpublic
 import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityListReceivedPublicEventsForUserRequestOptions extends js.Object {
+trait ActivityListReceivedPublicEventsForUserRequestOptions extends StObject {
   
   var headers: RequestHeaders = js.native
   
@@ -33,30 +34,18 @@ object ActivityListReceivedPublicEventsForUserRequestOptions {
   }
   
   @scala.inline
-  implicit class ActivityListReceivedPublicEventsForUserRequestOptionsOps[Self <: ActivityListReceivedPublicEventsForUserRequestOptions] (val x: Self) extends AnyVal {
+  implicit class ActivityListReceivedPublicEventsForUserRequestOptionsMutableBuilder[Self <: ActivityListReceivedPublicEventsForUserRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: RequestHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMethod(value: GET): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: SlashusersSlashColonusernameSlashreceived_eventsSlashpublic): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: SlashusersSlashColonusernameSlashreceived_eventsSlashpublic): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

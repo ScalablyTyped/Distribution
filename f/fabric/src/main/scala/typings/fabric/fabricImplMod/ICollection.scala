@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Mixins Interfaces
 //////////////////////////////////////////////////////////////////////////////
 @js.native
-trait ICollection[T] extends js.Object {
+trait ICollection[T] extends StObject {
   
   var _objects: js.Array[Object] = js.native
   

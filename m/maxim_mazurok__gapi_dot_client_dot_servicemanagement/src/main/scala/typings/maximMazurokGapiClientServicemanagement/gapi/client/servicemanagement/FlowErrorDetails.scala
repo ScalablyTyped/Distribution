@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlowErrorDetails extends js.Object {
+trait FlowErrorDetails extends StObject {
   
   /** The type of exception (as a class name). */
   var exceptionType: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object FlowErrorDetails {
   }
   
   @scala.inline
-  implicit class FlowErrorDetailsOps[Self <: FlowErrorDetails] (val x: Self) extends AnyVal {
+  implicit class FlowErrorDetailsMutableBuilder[Self <: FlowErrorDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExceptionTypeUndefined: Self = StObject.set(x, "exceptionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowStepId(value: String): Self = StObject.set(x, "flowStepId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExceptionType(value: String): Self = this.set("exceptionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExceptionType: Self = this.set("exceptionType", js.undefined)
-    
-    @scala.inline
-    def setFlowStepId(value: String): Self = this.set("flowStepId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlowStepId: Self = this.set("flowStepId", js.undefined)
+    def setFlowStepIdUndefined: Self = StObject.set(x, "flowStepId", js.undefined)
   }
 }

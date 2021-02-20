@@ -12,14 +12,14 @@ import typings.babylonjs.standardMaterialMod.StandardMaterial
 import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/axisDragGizmo", JSImport.Namespace)
-@js.native
-object axisDragGizmoMod extends js.Object {
+object axisDragGizmoMod {
   
+  @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo")
   @js.native
   class AxisDragGizmo protected () extends Gizmo {
     /**
@@ -125,21 +125,30 @@ object axisDragGizmoMod extends js.Object {
     var snapDistance: Double = js.native
   }
   /* static members */
-  @js.native
-  object AxisDragGizmo extends js.Object {
+  object AxisDragGizmo {
     
     /** @hidden */
+    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrow")
+    @js.native
     def _CreateArrow(scene: Scene, material: StandardMaterial): TransformNode = js.native
+    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrow")
+    @js.native
     def _CreateArrow(
       scene: Scene,
       material: StandardMaterial,
       thickness: js.UndefOr[scala.Nothing],
       isCollider: Boolean
     ): TransformNode = js.native
+    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrow")
+    @js.native
     def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double): TransformNode = js.native
+    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrow")
+    @js.native
     def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double, isCollider: Boolean): TransformNode = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo._CreateArrowInstance")
+    @js.native
     def _CreateArrowInstance(scene: Scene, arrow: TransformNode): TransformNode = js.native
   }
 }

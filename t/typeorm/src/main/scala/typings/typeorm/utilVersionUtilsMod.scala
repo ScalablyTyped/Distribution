@@ -1,19 +1,20 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/util/VersionUtils", JSImport.Namespace)
-@js.native
-object utilVersionUtilsMod extends js.Object {
+object utilVersionUtilsMod {
   
+  @JSImport("typeorm/util/VersionUtils", "VersionUtils")
   @js.native
-  class VersionUtils () extends js.Object
+  class VersionUtils () extends StObject
   /* static members */
-  @js.native
-  object VersionUtils extends js.Object {
+  object VersionUtils {
     
+    @JSImport("typeorm/util/VersionUtils", "VersionUtils.isGreaterOrEqual")
+    @js.native
     def isGreaterOrEqual(version: String, targetVersion: String): Boolean = js.native
   }
   

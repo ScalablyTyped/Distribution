@@ -2,12 +2,13 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNavigation.anon.Params
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationRouter[State, Options] extends js.Object {
+trait NavigationRouter[State, Options] extends StObject {
   
   def getActionCreators(route: NavigationRoute[NavigationParams], key: String): StringDictionary[js.Function0[NavigationAction]] = js.native
   

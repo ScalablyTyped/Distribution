@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsVpcPeeredResult extends js.Object {
+trait IsVpcPeeredResult extends StObject {
   
   /**
     * Returns true if the Lightsail VPC is peered; otherwise, false.
@@ -21,24 +22,12 @@ object IsVpcPeeredResult {
   }
   
   @scala.inline
-  implicit class IsVpcPeeredResultOps[Self <: IsVpcPeeredResult] (val x: Self) extends AnyVal {
+  implicit class IsVpcPeeredResultMutableBuilder[Self <: IsVpcPeeredResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsPeered(value: Boolean): Self = StObject.set(x, "isPeered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsPeered(value: Boolean): Self = this.set("isPeered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsPeered: Self = this.set("isPeered", js.undefined)
+    def setIsPeeredUndefined: Self = StObject.set(x, "isPeered", js.undefined)
   }
 }

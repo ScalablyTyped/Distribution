@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginCustomHeader extends js.Object {
+trait OriginCustomHeader extends StObject {
   
   /**
     * The name of a header that you want CloudFront to send to your origin. For more information, see Adding Custom Headers to Origin Requests in the  Amazon CloudFront Developer Guide.
@@ -26,24 +27,12 @@ object OriginCustomHeader {
   }
   
   @scala.inline
-  implicit class OriginCustomHeaderOps[Self <: OriginCustomHeader] (val x: Self) extends AnyVal {
+  implicit class OriginCustomHeaderMutableBuilder[Self <: OriginCustomHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderName(value: String): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeaderName(value: String): Self = this.set("HeaderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderValue(value: String): Self = this.set("HeaderValue", value.asInstanceOf[js.Any])
+    def setHeaderValue(value: String): Self = StObject.set(x, "HeaderValue", value.asInstanceOf[js.Any])
   }
 }

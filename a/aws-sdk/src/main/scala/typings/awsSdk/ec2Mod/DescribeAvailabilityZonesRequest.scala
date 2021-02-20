@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAvailabilityZonesRequest extends js.Object {
+trait DescribeAvailabilityZonesRequest extends StObject {
   
   /**
     * Include all Availability Zones, Local Zones, and Wavelength Zones regardless of your opt-in status. If you do not use this parameter, the results include only the zones for the Regions where you have chosen the option to opt in.
@@ -41,57 +42,45 @@ object DescribeAvailabilityZonesRequest {
   }
   
   @scala.inline
-  implicit class DescribeAvailabilityZonesRequestOps[Self <: DescribeAvailabilityZonesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeAvailabilityZonesRequestMutableBuilder[Self <: DescribeAvailabilityZonesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllAvailabilityZones(value: Boolean): Self = StObject.set(x, "AllAvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllAvailabilityZonesUndefined: Self = StObject.set(x, "AllAvailabilityZones", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllAvailabilityZones(value: Boolean): Self = this.set("AllAvailabilityZones", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def deleteAllAvailabilityZones: Self = this.set("AllAvailabilityZones", js.undefined)
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setZoneIds(value: ZoneIdStringList): Self = StObject.set(x, "ZoneIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setZoneIdsUndefined: Self = StObject.set(x, "ZoneIds", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setZoneIdsVarargs(value: String*): Self = StObject.set(x, "ZoneIds", js.Array(value :_*))
     
     @scala.inline
-    def setZoneIdsVarargs(value: String*): Self = this.set("ZoneIds", js.Array(value :_*))
+    def setZoneNames(value: ZoneNameStringList): Self = StObject.set(x, "ZoneNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoneIds(value: ZoneIdStringList): Self = this.set("ZoneIds", value.asInstanceOf[js.Any])
+    def setZoneNamesUndefined: Self = StObject.set(x, "ZoneNames", js.undefined)
     
     @scala.inline
-    def deleteZoneIds: Self = this.set("ZoneIds", js.undefined)
-    
-    @scala.inline
-    def setZoneNamesVarargs(value: String*): Self = this.set("ZoneNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setZoneNames(value: ZoneNameStringList): Self = this.set("ZoneNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoneNames: Self = this.set("ZoneNames", js.undefined)
+    def setZoneNamesVarargs(value: String*): Self = StObject.set(x, "ZoneNames", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadiusSettings extends js.Object {
+trait RadiusSettings extends StObject {
   
   /**
     * The protocol specified for your RADIUS endpoints.
@@ -56,69 +57,57 @@ object RadiusSettings {
   }
   
   @scala.inline
-  implicit class RadiusSettingsOps[Self <: RadiusSettings] (val x: Self) extends AnyVal {
+  implicit class RadiusSettingsMutableBuilder[Self <: RadiusSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationProtocol(value: RadiusAuthenticationProtocol): Self = StObject.set(x, "AuthenticationProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationProtocolUndefined: Self = StObject.set(x, "AuthenticationProtocol", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayLabel(value: RadiusDisplayLabel): Self = StObject.set(x, "DisplayLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationProtocol(value: RadiusAuthenticationProtocol): Self = this.set("AuthenticationProtocol", value.asInstanceOf[js.Any])
+    def setDisplayLabelUndefined: Self = StObject.set(x, "DisplayLabel", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationProtocol: Self = this.set("AuthenticationProtocol", js.undefined)
+    def setRadiusPort(value: PortNumber): Self = StObject.set(x, "RadiusPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLabel(value: RadiusDisplayLabel): Self = this.set("DisplayLabel", value.asInstanceOf[js.Any])
+    def setRadiusPortUndefined: Self = StObject.set(x, "RadiusPort", js.undefined)
     
     @scala.inline
-    def deleteDisplayLabel: Self = this.set("DisplayLabel", js.undefined)
+    def setRadiusRetries(value: RadiusRetries): Self = StObject.set(x, "RadiusRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusPort(value: PortNumber): Self = this.set("RadiusPort", value.asInstanceOf[js.Any])
+    def setRadiusRetriesUndefined: Self = StObject.set(x, "RadiusRetries", js.undefined)
     
     @scala.inline
-    def deleteRadiusPort: Self = this.set("RadiusPort", js.undefined)
+    def setRadiusServers(value: Servers): Self = StObject.set(x, "RadiusServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusRetries(value: RadiusRetries): Self = this.set("RadiusRetries", value.asInstanceOf[js.Any])
+    def setRadiusServersUndefined: Self = StObject.set(x, "RadiusServers", js.undefined)
     
     @scala.inline
-    def deleteRadiusRetries: Self = this.set("RadiusRetries", js.undefined)
+    def setRadiusServersVarargs(value: Server*): Self = StObject.set(x, "RadiusServers", js.Array(value :_*))
     
     @scala.inline
-    def setRadiusServersVarargs(value: Server*): Self = this.set("RadiusServers", js.Array(value :_*))
+    def setRadiusTimeout(value: RadiusTimeout): Self = StObject.set(x, "RadiusTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusServers(value: Servers): Self = this.set("RadiusServers", value.asInstanceOf[js.Any])
+    def setRadiusTimeoutUndefined: Self = StObject.set(x, "RadiusTimeout", js.undefined)
     
     @scala.inline
-    def deleteRadiusServers: Self = this.set("RadiusServers", js.undefined)
+    def setSharedSecret(value: RadiusSharedSecret): Self = StObject.set(x, "SharedSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusTimeout(value: RadiusTimeout): Self = this.set("RadiusTimeout", value.asInstanceOf[js.Any])
+    def setSharedSecretUndefined: Self = StObject.set(x, "SharedSecret", js.undefined)
     
     @scala.inline
-    def deleteRadiusTimeout: Self = this.set("RadiusTimeout", js.undefined)
+    def setUseSameUsername(value: UseSameUsername): Self = StObject.set(x, "UseSameUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedSecret(value: RadiusSharedSecret): Self = this.set("SharedSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharedSecret: Self = this.set("SharedSecret", js.undefined)
-    
-    @scala.inline
-    def setUseSameUsername(value: UseSameUsername): Self = this.set("UseSameUsername", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSameUsername: Self = this.set("UseSameUsername", js.undefined)
+    def setUseSameUsernameUndefined: Self = StObject.set(x, "UseSameUsername", js.undefined)
   }
 }

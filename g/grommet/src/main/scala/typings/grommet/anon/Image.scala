@@ -8,12 +8,13 @@ import typings.grommet.grommetStrings.repeat
 import typings.grommet.grommetStrings.strong
 import typings.grommet.grommetStrings.weak
 import typings.grommet.utilsMod.ColorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Image extends js.Object {
+trait Image extends StObject {
   
   var color: js.UndefOr[ColorType] = js.native
   
@@ -40,66 +41,54 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDark(value: Boolean | String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDark(value: Boolean | String): Self = this.set("dark", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteDark: Self = this.set("dark", js.undefined)
+    def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setOpacity(value: weak | medium | strong | Double | Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLight(value: String): Self = this.set("light", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteLight: Self = this.set("light", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: weak | medium | strong | Double | Boolean): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setRepeat(value: `no-repeat` | repeat | String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSize(value: cover | contain | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeat(value: `no-repeat` | repeat | String): Self = this.set("repeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeat: Self = this.set("repeat", js.undefined)
-    
-    @scala.inline
-    def setSize(value: cover | contain | String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

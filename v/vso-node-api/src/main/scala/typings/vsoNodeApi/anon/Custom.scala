@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Custom extends js.Object {
+trait Custom extends StObject {
   
   var custom: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object Custom {
   }
   
   @scala.inline
-  implicit class CustomOps[Self <: Custom] (val x: Self) extends AnyVal {
+  implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatestOnBuild(value: scala.Double): Self = StObject.set(x, "latestOnBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustom(value: scala.Double): Self = this.set("custom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLatestOnBuild(value: scala.Double): Self = this.set("latestOnBuild", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLatestOnQueue(value: scala.Double): Self = this.set("latestOnQueue", value.asInstanceOf[js.Any])
+    def setLatestOnQueue(value: scala.Double): Self = StObject.set(x, "latestOnQueue", value.asInstanceOf[js.Any])
   }
 }

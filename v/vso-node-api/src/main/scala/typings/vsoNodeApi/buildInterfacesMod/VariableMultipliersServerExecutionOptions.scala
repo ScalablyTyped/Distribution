@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object VariableMultipliersServerExecutionOptions {
   }
   
   @scala.inline
-  implicit class VariableMultipliersServerExecutionOptionsOps[Self <: VariableMultipliersServerExecutionOptions] (val x: Self) extends AnyVal {
+  implicit class VariableMultipliersServerExecutionOptionsMutableBuilder[Self <: VariableMultipliersServerExecutionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultipliers(value: js.Array[String]): Self = StObject.set(x, "multipliers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueOnError(value: Boolean): Self = this.set("continueOnError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxConcurrency(value: Double): Self = this.set("maxConcurrency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultipliersVarargs(value: String*): Self = this.set("multipliers", js.Array(value :_*))
-    
-    @scala.inline
-    def setMultipliers(value: js.Array[String]): Self = this.set("multipliers", value.asInstanceOf[js.Any])
+    def setMultipliersVarargs(value: String*): Self = StObject.set(x, "multipliers", js.Array(value :_*))
   }
 }

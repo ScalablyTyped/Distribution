@@ -1,12 +1,13 @@
 package typings.postcssSelectorParser.mod
 
 import typings.postcssSelectorParser.anon.PartialSpaces
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeOptions[Value] extends js.Object {
+trait NodeOptions[Value] extends StObject {
   
   var source: js.UndefOr[NodeSource] = js.native
   
@@ -25,39 +26,27 @@ object NodeOptions {
   }
   
   @scala.inline
-  implicit class NodeOptionsOps[Self <: NodeOptions[_], Value] (val x: Self with NodeOptions[Value]) extends AnyVal {
+  implicit class NodeOptionsMutableBuilder[Self <: NodeOptions[_], Value] (val x: Self with NodeOptions[Value]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceIndexUndefined: Self = StObject.set(x, "sourceIndex", js.undefined)
     
     @scala.inline
-    def setValue(value: Value): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setSource(value: NodeSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSpaces(value: PartialSpaces): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     
     @scala.inline
-    def setSourceIndex(value: Double): Self = this.set("sourceIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceIndex: Self = this.set("sourceIndex", js.undefined)
-    
-    @scala.inline
-    def setSpaces(value: PartialSpaces): Self = this.set("spaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpaces: Self = this.set("spaces", js.undefined)
+    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

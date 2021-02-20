@@ -1,11 +1,12 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureIdentifier extends js.Object {
+trait FeatureIdentifier extends StObject {
   
   var id: js.UndefOr[String | Double] = js.native
   
@@ -22,33 +23,21 @@ object FeatureIdentifier {
   }
   
   @scala.inline
-  implicit class FeatureIdentifierOps[Self <: FeatureIdentifier] (val x: Self) extends AnyVal {
+  implicit class FeatureIdentifierMutableBuilder[Self <: FeatureIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSourceLayer(value: String): Self = StObject.set(x, "sourceLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setSourceLayer(value: String): Self = this.set("sourceLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceLayer: Self = this.set("sourceLayer", js.undefined)
+    def setSourceLayerUndefined: Self = StObject.set(x, "sourceLayer", js.undefined)
   }
 }

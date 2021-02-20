@@ -10,6 +10,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.usng
 import typings.arcgisJsApi.arcgisJsApiStrings.utm
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,54 +83,42 @@ object GeometryServiceToGeoCoordinateStringParams {
   }
   
   @scala.inline
-  implicit class GeometryServiceToGeoCoordinateStringParamsOps[Self <: GeometryServiceToGeoCoordinateStringParams] (val x: Self) extends AnyVal {
+  implicit class GeometryServiceToGeoCoordinateStringParamsMutableBuilder[Self <: GeometryServiceToGeoCoordinateStringParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSpaces(value: Boolean): Self = StObject.set(x, "addSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSpacesUndefined: Self = StObject.set(x, "addSpaces", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversionMode(value: String): Self = StObject.set(x, "conversionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionType(value: mgrs | usng | utm | `geo-ref` | gars | dms | ddm | dd): Self = this.set("conversionType", value.asInstanceOf[js.Any])
+    def setConversionModeUndefined: Self = StObject.set(x, "conversionMode", js.undefined)
     
     @scala.inline
-    def setCoordinatesVarargs(value: js.Array[Double]*): Self = this.set("coordinates", js.Array(value :_*))
+    def setConversionType(value: mgrs | usng | utm | `geo-ref` | gars | dms | ddm | dd): Self = StObject.set(x, "conversionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinates(value: js.Array[js.Array[Double]]): Self = this.set("coordinates", value.asInstanceOf[js.Any])
+    def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSr(value: SpatialReference | String | Double): Self = this.set("sr", value.asInstanceOf[js.Any])
+    def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
     @scala.inline
-    def setAddSpaces(value: Boolean): Self = this.set("addSpaces", value.asInstanceOf[js.Any])
+    def setNumOfDigits(value: Double): Self = StObject.set(x, "numOfDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddSpaces: Self = this.set("addSpaces", js.undefined)
+    def setNumOfDigitsUndefined: Self = StObject.set(x, "numOfDigits", js.undefined)
     
     @scala.inline
-    def setConversionMode(value: String): Self = this.set("conversionMode", value.asInstanceOf[js.Any])
+    def setRounding(value: Boolean): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConversionMode: Self = this.set("conversionMode", js.undefined)
+    def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
     
     @scala.inline
-    def setNumOfDigits(value: Double): Self = this.set("numOfDigits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumOfDigits: Self = this.set("numOfDigits", js.undefined)
-    
-    @scala.inline
-    def setRounding(value: Boolean): Self = this.set("rounding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRounding: Self = this.set("rounding", js.undefined)
+    def setSr(value: SpatialReference | String | Double): Self = StObject.set(x, "sr", value.asInstanceOf[js.Any])
   }
 }

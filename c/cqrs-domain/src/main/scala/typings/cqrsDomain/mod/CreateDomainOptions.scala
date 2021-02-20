@@ -4,12 +4,13 @@ import typings.cqrsDomain.anon.AuthSource
 import typings.cqrsDomain.anon.Db
 import typings.cqrsDomain.anon.Host
 import typings.cqrsDomain.cqrsDomainBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDomainOptions extends js.Object {
+trait CreateDomainOptions extends StObject {
   
   /**
     * optional, default is in-memory
@@ -78,63 +79,51 @@ object CreateDomainOptions {
   }
   
   @scala.inline
-  implicit class CreateDomainOptionsOps[Self <: CreateDomainOptions] (val x: Self) extends AnyVal {
+  implicit class CreateDomainOptionsMutableBuilder[Self <: CreateDomainOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateLock(value: Db): Self = StObject.set(x, "aggregateLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateLockUndefined: Self = StObject.set(x, "aggregateLock", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommandRejectedEventName(value: String): Self = StObject.set(x, "commandRejectedEventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainPath(value: String): Self = this.set("domainPath", value.asInstanceOf[js.Any])
+    def setCommandRejectedEventNameUndefined: Self = StObject.set(x, "commandRejectedEventName", js.undefined)
     
     @scala.inline
-    def setAggregateLock(value: Db): Self = this.set("aggregateLock", value.asInstanceOf[js.Any])
+    def setDeduplication(value: Host): Self = StObject.set(x, "deduplication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAggregateLock: Self = this.set("aggregateLock", js.undefined)
+    def setDeduplicationUndefined: Self = StObject.set(x, "deduplication", js.undefined)
     
     @scala.inline
-    def setCommandRejectedEventName(value: String): Self = this.set("commandRejectedEventName", value.asInstanceOf[js.Any])
+    def setDomainPath(value: String): Self = StObject.set(x, "domainPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommandRejectedEventName: Self = this.set("commandRejectedEventName", js.undefined)
+    def setEventStore(value: AuthSource): Self = StObject.set(x, "eventStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeduplication(value: Host): Self = this.set("deduplication", value.asInstanceOf[js.Any])
+    def setEventStoreUndefined: Self = StObject.set(x, "eventStore", js.undefined)
     
     @scala.inline
-    def deleteDeduplication: Self = this.set("deduplication", js.undefined)
+    def setRetryOnConcurrencyTimeout(value: Double): Self = StObject.set(x, "retryOnConcurrencyTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventStore(value: AuthSource): Self = this.set("eventStore", value.asInstanceOf[js.Any])
+    def setRetryOnConcurrencyTimeoutUndefined: Self = StObject.set(x, "retryOnConcurrencyTimeout", js.undefined)
     
     @scala.inline
-    def deleteEventStore: Self = this.set("eventStore", js.undefined)
+    def setSnapshotThreshold(value: Double): Self = StObject.set(x, "snapshotThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryOnConcurrencyTimeout(value: Double): Self = this.set("retryOnConcurrencyTimeout", value.asInstanceOf[js.Any])
+    def setSnapshotThresholdUndefined: Self = StObject.set(x, "snapshotThreshold", js.undefined)
     
     @scala.inline
-    def deleteRetryOnConcurrencyTimeout: Self = this.set("retryOnConcurrencyTimeout", js.undefined)
+    def setUseLoaderExtensions(value: `true`): Self = StObject.set(x, "useLoaderExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotThreshold(value: Double): Self = this.set("snapshotThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotThreshold: Self = this.set("snapshotThreshold", js.undefined)
-    
-    @scala.inline
-    def setUseLoaderExtensions(value: `true`): Self = this.set("useLoaderExtensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLoaderExtensions: Self = this.set("useLoaderExtensions", js.undefined)
+    def setUseLoaderExtensionsUndefined: Self = StObject.set(x, "useLoaderExtensions", js.undefined)
   }
 }

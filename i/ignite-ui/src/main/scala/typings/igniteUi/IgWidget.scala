@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,36 +40,24 @@ object IgWidget {
   }
   
   @scala.inline
-  implicit class IgWidgetOps[Self <: IgWidget] (val x: Self) extends AnyVal {
+  implicit class IgWidgetMutableBuilder[Self <: IgWidget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
-    
-    @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
   }
 }

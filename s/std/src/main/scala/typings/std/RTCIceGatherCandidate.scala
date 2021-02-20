@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.RTCIceCandidateDictionary
   - typings.std.RTCIceCandidateComplete
 */
-trait RTCIceGatherCandidate extends js.Object
+trait RTCIceGatherCandidate extends StObject
 object RTCIceGatherCandidate {
   
   @scala.inline
-  def RTCIceCandidateDictionary(): RTCIceGatherCandidate = {
+  def RTCIceCandidateDictionary(): typings.std.RTCIceCandidateDictionary = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[RTCIceGatherCandidate]
+    __obj.asInstanceOf[typings.std.RTCIceCandidateDictionary]
   }
 }

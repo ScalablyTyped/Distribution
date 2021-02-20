@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.Debugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepIntoParameterType extends js.Object {
+trait StepIntoParameterType extends StObject {
   
   /**
     * Debugger will issue additional Debugger.paused notification if any async task is scheduled before next pause.
@@ -22,24 +23,12 @@ object StepIntoParameterType {
   }
   
   @scala.inline
-  implicit class StepIntoParameterTypeOps[Self <: StepIntoParameterType] (val x: Self) extends AnyVal {
+  implicit class StepIntoParameterTypeMutableBuilder[Self <: StepIntoParameterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakOnAsyncCall(value: Boolean): Self = StObject.set(x, "breakOnAsyncCall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBreakOnAsyncCall(value: Boolean): Self = this.set("breakOnAsyncCall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBreakOnAsyncCall: Self = this.set("breakOnAsyncCall", js.undefined)
+    def setBreakOnAsyncCallUndefined: Self = StObject.set(x, "breakOnAsyncCall", js.undefined)
   }
 }

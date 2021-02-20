@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * violence).
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p3beta1SafeSearchAnnotation extends js.Object {
+trait SchemaGoogleCloudVisionV1p3beta1SafeSearchAnnotation extends StObject {
   
   /**
     * Represents the adult content likelihood for the image. Adult content may
@@ -52,48 +53,36 @@ object SchemaGoogleCloudVisionV1p3beta1SafeSearchAnnotation {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1SafeSearchAnnotationOps[Self <: SchemaGoogleCloudVisionV1p3beta1SafeSearchAnnotation] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p3beta1SafeSearchAnnotationMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1SafeSearchAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdult(value: String): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdultUndefined: Self = StObject.set(x, "adult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedical(value: String): Self = StObject.set(x, "medical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdult(value: String): Self = this.set("adult", value.asInstanceOf[js.Any])
+    def setMedicalUndefined: Self = StObject.set(x, "medical", js.undefined)
     
     @scala.inline
-    def deleteAdult: Self = this.set("adult", js.undefined)
+    def setRacy(value: String): Self = StObject.set(x, "racy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedical(value: String): Self = this.set("medical", value.asInstanceOf[js.Any])
+    def setRacyUndefined: Self = StObject.set(x, "racy", js.undefined)
     
     @scala.inline
-    def deleteMedical: Self = this.set("medical", js.undefined)
+    def setSpoof(value: String): Self = StObject.set(x, "spoof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRacy(value: String): Self = this.set("racy", value.asInstanceOf[js.Any])
+    def setSpoofUndefined: Self = StObject.set(x, "spoof", js.undefined)
     
     @scala.inline
-    def deleteRacy: Self = this.set("racy", js.undefined)
+    def setViolence(value: String): Self = StObject.set(x, "violence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpoof(value: String): Self = this.set("spoof", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpoof: Self = this.set("spoof", js.undefined)
-    
-    @scala.inline
-    def setViolence(value: String): Self = this.set("violence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolence: Self = this.set("violence", js.undefined)
+    def setViolenceUndefined: Self = StObject.set(x, "violence", js.undefined)
   }
 }

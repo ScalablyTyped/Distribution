@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasPath extends js.Object {
+trait CanvasPath extends StObject {
   
   def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double): Unit = js.native
   def arc(

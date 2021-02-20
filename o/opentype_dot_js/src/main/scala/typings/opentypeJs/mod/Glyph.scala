@@ -1,13 +1,14 @@
 package typings.opentypeJs.mod
 
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("opentype.js", "Glyph")
 @js.native
-class Glyph protected () extends js.Object {
+class Glyph protected () extends StObject {
   def this(options: GlyphOptions) = this()
   
   def addUnicode(unicode: Double): Unit = js.native

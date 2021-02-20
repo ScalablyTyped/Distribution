@@ -1,15 +1,16 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactStateType extends js.Object
+sealed trait ContactStateType extends StObject
 /** An enumeration listing the different high-level states that a contact can have. */
 @JSGlobal("connect.ContactStateType")
 @js.native
-object ContactStateType extends js.Object {
+object ContactStateType extends StObject {
   
   /** Indicates the contact is connected. */
   @js.native

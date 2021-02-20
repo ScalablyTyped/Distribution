@@ -6,12 +6,13 @@ import typings.stripeV3.stripeV3Strings.google_pay
 import typings.stripeV3.stripeV3Strings.masterpass
 import typings.stripeV3.stripeV3Strings.samsung_pay
 import typings.stripeV3.stripeV3Strings.visa_checkout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Amexexpresscheckout extends js.Object {
+trait Amexexpresscheckout extends StObject {
   
   var amex_express_checkout: js.UndefOr[js.Any] = js.native
   
@@ -39,63 +40,51 @@ object Amexexpresscheckout {
   }
   
   @scala.inline
-  implicit class AmexexpresscheckoutOps[Self <: Amexexpresscheckout] (val x: Self) extends AnyVal {
+  implicit class AmexexpresscheckoutMutableBuilder[Self <: Amexexpresscheckout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmex_express_checkout(value: js.Any): Self = StObject.set(x, "amex_express_checkout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmex_express_checkoutUndefined: Self = StObject.set(x, "amex_express_checkout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApple_pay(value: js.Any): Self = StObject.set(x, "apple_pay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: amex_express_checkout | apple_pay | google_pay | masterpass | samsung_pay | visa_checkout): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setApple_payUndefined: Self = StObject.set(x, "apple_pay", js.undefined)
     
     @scala.inline
-    def setAmex_express_checkout(value: js.Any): Self = this.set("amex_express_checkout", value.asInstanceOf[js.Any])
+    def setDynamic_last4(value: js.Any): Self = StObject.set(x, "dynamic_last4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmex_express_checkout: Self = this.set("amex_express_checkout", js.undefined)
+    def setDynamic_last4Undefined: Self = StObject.set(x, "dynamic_last4", js.undefined)
     
     @scala.inline
-    def setApple_pay(value: js.Any): Self = this.set("apple_pay", value.asInstanceOf[js.Any])
+    def setGoogle_pay(value: js.Any): Self = StObject.set(x, "google_pay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApple_pay: Self = this.set("apple_pay", js.undefined)
+    def setGoogle_payUndefined: Self = StObject.set(x, "google_pay", js.undefined)
     
     @scala.inline
-    def setDynamic_last4(value: js.Any): Self = this.set("dynamic_last4", value.asInstanceOf[js.Any])
+    def setMasterpass(value: js.Any): Self = StObject.set(x, "masterpass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDynamic_last4: Self = this.set("dynamic_last4", js.undefined)
+    def setMasterpassUndefined: Self = StObject.set(x, "masterpass", js.undefined)
     
     @scala.inline
-    def setGoogle_pay(value: js.Any): Self = this.set("google_pay", value.asInstanceOf[js.Any])
+    def setSamsung_pay(value: js.Any): Self = StObject.set(x, "samsung_pay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGoogle_pay: Self = this.set("google_pay", js.undefined)
+    def setSamsung_payUndefined: Self = StObject.set(x, "samsung_pay", js.undefined)
     
     @scala.inline
-    def setMasterpass(value: js.Any): Self = this.set("masterpass", value.asInstanceOf[js.Any])
+    def setType(value: amex_express_checkout | apple_pay | google_pay | masterpass | samsung_pay | visa_checkout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMasterpass: Self = this.set("masterpass", js.undefined)
+    def setVisa_checkout(value: js.Any): Self = StObject.set(x, "visa_checkout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamsung_pay(value: js.Any): Self = this.set("samsung_pay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSamsung_pay: Self = this.set("samsung_pay", js.undefined)
-    
-    @scala.inline
-    def setVisa_checkout(value: js.Any): Self = this.set("visa_checkout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisa_checkout: Self = this.set("visa_checkout", js.undefined)
+    def setVisa_checkoutUndefined: Self = StObject.set(x, "visa_checkout", js.undefined)
   }
 }

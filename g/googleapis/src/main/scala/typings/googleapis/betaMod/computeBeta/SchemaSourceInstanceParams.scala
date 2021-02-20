@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * template from a source instance.
   */
 @js.native
-trait SchemaSourceInstanceParams extends js.Object {
+trait SchemaSourceInstanceParams extends StObject {
   
   /**
     * Attached disks configuration. If not provided, defaults are applied: For
@@ -28,27 +29,15 @@ object SchemaSourceInstanceParams {
   }
   
   @scala.inline
-  implicit class SchemaSourceInstanceParamsOps[Self <: SchemaSourceInstanceParams] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceInstanceParamsMutableBuilder[Self <: SchemaSourceInstanceParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiskConfigs(value: js.Array[SchemaDiskInstantiationConfig]): Self = StObject.set(x, "diskConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskConfigsUndefined: Self = StObject.set(x, "diskConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDiskConfigsVarargs(value: SchemaDiskInstantiationConfig*): Self = this.set("diskConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setDiskConfigs(value: js.Array[SchemaDiskInstantiationConfig]): Self = this.set("diskConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiskConfigs: Self = this.set("diskConfigs", js.undefined)
+    def setDiskConfigsVarargs(value: SchemaDiskInstantiationConfig*): Self = StObject.set(x, "diskConfigs", js.Array(value :_*))
   }
 }

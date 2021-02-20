@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeScheduledInstancesResult extends js.Object {
+trait DescribeScheduledInstancesResult extends StObject {
   
   /**
     * The token required to retrieve the next set of results. This value is null when there are no more results to return.
@@ -26,33 +27,21 @@ object DescribeScheduledInstancesResult {
   }
   
   @scala.inline
-  implicit class DescribeScheduledInstancesResultOps[Self <: DescribeScheduledInstancesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeScheduledInstancesResultMutableBuilder[Self <: DescribeScheduledInstancesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheduledInstanceSet(value: ScheduledInstanceSet): Self = StObject.set(x, "ScheduledInstanceSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setScheduledInstanceSetUndefined: Self = StObject.set(x, "ScheduledInstanceSet", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setScheduledInstanceSetVarargs(value: ScheduledInstance*): Self = this.set("ScheduledInstanceSet", js.Array(value :_*))
-    
-    @scala.inline
-    def setScheduledInstanceSet(value: ScheduledInstanceSet): Self = this.set("ScheduledInstanceSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledInstanceSet: Self = this.set("ScheduledInstanceSet", js.undefined)
+    def setScheduledInstanceSetVarargs(value: ScheduledInstance*): Self = StObject.set(x, "ScheduledInstanceSet", js.Array(value :_*))
   }
 }

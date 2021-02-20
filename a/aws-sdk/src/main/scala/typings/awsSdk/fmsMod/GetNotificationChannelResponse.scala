@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNotificationChannelResponse extends js.Object {
+trait GetNotificationChannelResponse extends StObject {
   
   /**
     * The IAM role that is used by AWS Firewall Manager to record activity to SNS.
@@ -26,30 +27,18 @@ object GetNotificationChannelResponse {
   }
   
   @scala.inline
-  implicit class GetNotificationChannelResponseOps[Self <: GetNotificationChannelResponse] (val x: Self) extends AnyVal {
+  implicit class GetNotificationChannelResponseMutableBuilder[Self <: GetNotificationChannelResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSnsRoleName(value: ResourceArn): Self = StObject.set(x, "SnsRoleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSnsRoleNameUndefined: Self = StObject.set(x, "SnsRoleName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnsTopicArn(value: ResourceArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnsRoleName(value: ResourceArn): Self = this.set("SnsRoleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnsRoleName: Self = this.set("SnsRoleName", js.undefined)
-    
-    @scala.inline
-    def setSnsTopicArn(value: ResourceArn): Self = this.set("SnsTopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnsTopicArn: Self = this.set("SnsTopicArn", js.undefined)
+    def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
   }
 }

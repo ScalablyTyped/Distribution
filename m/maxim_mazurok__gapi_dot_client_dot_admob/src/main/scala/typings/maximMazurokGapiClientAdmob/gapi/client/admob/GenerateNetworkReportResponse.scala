@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateNetworkReportResponse extends js.Object {
+trait GenerateNetworkReportResponse extends StObject {
   
   /** Additional information about the generated report, such as warnings about the data. */
   var footer: js.UndefOr[ReportFooter] = js.native
@@ -25,36 +26,24 @@ object GenerateNetworkReportResponse {
   }
   
   @scala.inline
-  implicit class GenerateNetworkReportResponseOps[Self <: GenerateNetworkReportResponse] (val x: Self) extends AnyVal {
+  implicit class GenerateNetworkReportResponseMutableBuilder[Self <: GenerateNetworkReportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFooter(value: ReportFooter): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeader(value: ReportHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: ReportFooter): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setRow(value: ReportRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: ReportHeader): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
-    
-    @scala.inline
-    def setRow(value: ReportRow): Self = this.set("row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

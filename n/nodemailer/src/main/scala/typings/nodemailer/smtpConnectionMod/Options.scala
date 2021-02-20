@@ -3,12 +3,13 @@ package typings.nodemailer.smtpConnectionMod
 import typings.node.netMod.Socket
 import typings.node.tlsMod.ConnectionOptions
 import typings.nodemailer.sharedMod.Logger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /** defines authentication data */
   var auth: js.UndefOr[AuthenticationType] = js.native
@@ -78,138 +79,126 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: AuthenticationType): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthMethod(value: String): Self = StObject.set(x, "authMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthMethodUndefined: Self = StObject.set(x, "authMethod", js.undefined)
     
     @scala.inline
-    def setAuth(value: AuthenticationType): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthMethod(value: String): Self = this.set("authMethod", value.asInstanceOf[js.Any])
+    def setConnectionTimeout(value: ms): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthMethod: Self = this.set("authMethod", js.undefined)
+    def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
     
     @scala.inline
-    def setConnection(value: Socket): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
     @scala.inline
-    def deleteConnection: Self = this.set("connection", js.undefined)
+    def setCustomAuth(value: CustomAuthenticationHandlers): Self = StObject.set(x, "customAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionTimeout(value: ms): Self = this.set("connectionTimeout", value.asInstanceOf[js.Any])
+    def setCustomAuthUndefined: Self = StObject.set(x, "customAuth", js.undefined)
     
     @scala.inline
-    def deleteConnectionTimeout: Self = this.set("connectionTimeout", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAuth(value: CustomAuthenticationHandlers): Self = this.set("customAuth", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteCustomAuth: Self = this.set("customAuth", js.undefined)
+    def setGreetingTimeout(value: ms): Self = StObject.set(x, "greetingTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setGreetingTimeoutUndefined: Self = StObject.set(x, "greetingTimeout", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreetingTimeout(value: ms): Self = this.set("greetingTimeout", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteGreetingTimeout: Self = this.set("greetingTimeout", js.undefined)
+    def setIgnoreTLS(value: Boolean): Self = StObject.set(x, "ignoreTLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setIgnoreTLSUndefined: Self = StObject.set(x, "ignoreTLS", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreTLS(value: Boolean): Self = this.set("ignoreTLS", value.asInstanceOf[js.Any])
+    def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
     
     @scala.inline
-    def deleteIgnoreTLS: Self = this.set("ignoreTLS", js.undefined)
+    def setLogger(value: Logger | Boolean): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAddress(value: String): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def deleteLocalAddress: Self = this.set("localAddress", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogger(value: Logger | Boolean): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setOpportunisticTLS(value: Boolean): Self = StObject.set(x, "opportunisticTLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOpportunisticTLSUndefined: Self = StObject.set(x, "opportunisticTLS", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpportunisticTLS(value: Boolean): Self = this.set("opportunisticTLS", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deleteOpportunisticTLS: Self = this.set("opportunisticTLS", js.undefined)
+    def setRequireTLS(value: Boolean): Self = StObject.set(x, "requireTLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setRequireTLSUndefined: Self = StObject.set(x, "requireTLS", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireTLS(value: Boolean): Self = this.set("requireTLS", value.asInstanceOf[js.Any])
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
     @scala.inline
-    def deleteRequireTLS: Self = this.set("requireTLS", js.undefined)
+    def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    def setSocketTimeout(value: ms): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
+    def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
     
     @scala.inline
-    def setSocket(value: Socket): Self = this.set("socket", value.asInstanceOf[js.Any])
+    def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
     
     @scala.inline
-    def deleteSocket: Self = this.set("socket", js.undefined)
+    def setTls(value: ConnectionOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocketTimeout(value: ms): Self = this.set("socketTimeout", value.asInstanceOf[js.Any])
+    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     
     @scala.inline
-    def deleteSocketTimeout: Self = this.set("socketTimeout", js.undefined)
+    def setTransactionLog(value: Boolean): Self = StObject.set(x, "transactionLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTls(value: ConnectionOptions): Self = this.set("tls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTls: Self = this.set("tls", js.undefined)
-    
-    @scala.inline
-    def setTransactionLog(value: Boolean): Self = this.set("transactionLog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionLog: Self = this.set("transactionLog", js.undefined)
+    def setTransactionLogUndefined: Self = StObject.set(x, "transactionLog", js.undefined)
   }
 }

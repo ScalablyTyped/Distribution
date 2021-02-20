@@ -2,13 +2,12 @@ package typings.angularScroll
 
 import typings.angular.mod.IAugmentedJQuery
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("duScroll")
-@js.native
-object duScroll extends js.Object {
+object duScroll {
   
   /**
     * Extends the angular.element object returned by the $document sercive with a few jQuery like functions.

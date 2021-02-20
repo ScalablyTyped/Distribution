@@ -3,12 +3,13 @@ package typings.devextreme.mod.DevExpress.data
 import typings.devextreme.anon.Filter
 import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Store extends js.Object {
+trait Store extends StObject {
   
   def byKey(key: String): Promise[_] with JQueryPromise[_] = js.native
   /**

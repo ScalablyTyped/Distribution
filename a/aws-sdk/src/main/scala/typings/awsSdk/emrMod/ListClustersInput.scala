@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListClustersInput extends js.Object {
+trait ListClustersInput extends StObject {
   
   /**
     * The cluster state filters to apply when listing clusters.
@@ -36,45 +37,33 @@ object ListClustersInput {
   }
   
   @scala.inline
-  implicit class ListClustersInputOps[Self <: ListClustersInput] (val x: Self) extends AnyVal {
+  implicit class ListClustersInputMutableBuilder[Self <: ListClustersInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterStates(value: ClusterStateList): Self = StObject.set(x, "ClusterStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterStatesUndefined: Self = StObject.set(x, "ClusterStates", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterStatesVarargs(value: ClusterState*): Self = StObject.set(x, "ClusterStates", js.Array(value :_*))
     
     @scala.inline
-    def setClusterStatesVarargs(value: ClusterState*): Self = this.set("ClusterStates", js.Array(value :_*))
+    def setCreatedAfter(value: Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterStates(value: ClusterStateList): Self = this.set("ClusterStates", value.asInstanceOf[js.Any])
+    def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
     
     @scala.inline
-    def deleteClusterStates: Self = this.set("ClusterStates", js.undefined)
+    def setCreatedBefore(value: Date): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAfter(value: Date): Self = this.set("CreatedAfter", value.asInstanceOf[js.Any])
+    def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
     
     @scala.inline
-    def deleteCreatedAfter: Self = this.set("CreatedAfter", js.undefined)
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBefore(value: Date): Self = this.set("CreatedBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatedBefore: Self = this.set("CreatedBefore", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

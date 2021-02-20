@@ -1,30 +1,26 @@
 package typings.sxml
 
-import typings.sxml.xmlMod.XML
-import typings.tstl.vectorMod.Vector
-import typings.tstl.vectorMod.Vector.Iterator
-import typings.tstl.vectorMod.Vector.ReverseIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sxml/lib/module/XMLList", JSImport.Namespace)
-@js.native
-object xmllistMod extends js.Object {
+object xmllistMod {
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vector<XML> * / any */ @JSImport("sxml/lib/module/XMLList", "XMLList")
   @js.native
-  class XMLList () extends Vector[XML] {
+  class XMLList () extends StObject {
     
     def getTag(): String = js.native
     
     def toString(level: Double): String = js.native
   }
-  @js.native
-  object XMLList extends js.Object {
+  object XMLList {
     
-    type Iterator_ = Iterator[XML]
+    type Iterator_ = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vector.Iterator<XML> */ js.Any
     
-    type ReverseIterator_ = ReverseIterator[XML]
+    type ReverseIterator_ = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vector.ReverseIterator<XML> */ js.Any
     
     type iterator = Iterator_
     

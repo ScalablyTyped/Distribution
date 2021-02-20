@@ -2,12 +2,13 @@ package typings.openpgp.mod
 
 import typings.openpgp.anon.Passphrase
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyOptions extends js.Object {
+trait KeyOptions extends StObject {
   
   /**
     * (optional) elliptic curve for ECC keys: elliptic curve for ECC keys:
@@ -56,63 +57,51 @@ object KeyOptions {
   }
   
   @scala.inline
-  implicit class KeyOptionsOps[Self <: KeyOptions] (val x: Self) extends AnyVal {
+  implicit class KeyOptionsMutableBuilder[Self <: KeyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserIdsVarargs(value: UserID*): Self = this.set("userIds", js.Array(value :_*))
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setUserIds(value: js.Array[UserID]): Self = this.set("userIds", value.asInstanceOf[js.Any])
+    def setKeyExpirationTime(value: Double): Self = StObject.set(x, "keyExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurve(value: String): Self = this.set("curve", value.asInstanceOf[js.Any])
+    def setKeyExpirationTimeUndefined: Self = StObject.set(x, "keyExpirationTime", js.undefined)
     
     @scala.inline
-    def deleteCurve: Self = this.set("curve", js.undefined)
+    def setNumBits(value: Double): Self = StObject.set(x, "numBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setNumBitsUndefined: Self = StObject.set(x, "numBits", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyExpirationTime(value: Double): Self = this.set("keyExpirationTime", value.asInstanceOf[js.Any])
+    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
     @scala.inline
-    def deleteKeyExpirationTime: Self = this.set("keyExpirationTime", js.undefined)
+    def setSubkeys(value: js.Array[Passphrase]): Self = StObject.set(x, "subkeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumBits(value: Double): Self = this.set("numBits", value.asInstanceOf[js.Any])
+    def setSubkeysUndefined: Self = StObject.set(x, "subkeys", js.undefined)
     
     @scala.inline
-    def deleteNumBits: Self = this.set("numBits", js.undefined)
+    def setSubkeysVarargs(value: Passphrase*): Self = StObject.set(x, "subkeys", js.Array(value :_*))
     
     @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    def setUserIds(value: js.Array[UserID]): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePassphrase: Self = this.set("passphrase", js.undefined)
-    
-    @scala.inline
-    def setSubkeysVarargs(value: Passphrase*): Self = this.set("subkeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubkeys(value: js.Array[Passphrase]): Self = this.set("subkeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubkeys: Self = this.set("subkeys", js.undefined)
+    def setUserIdsVarargs(value: UserID*): Self = StObject.set(x, "userIds", js.Array(value :_*))
   }
 }

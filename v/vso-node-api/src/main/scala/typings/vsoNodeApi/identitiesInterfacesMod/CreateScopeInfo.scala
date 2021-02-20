@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.identitiesInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateScopeInfo extends js.Object {
+trait CreateScopeInfo extends StObject {
   
   var adminGroupDescription: String = js.native
   
@@ -35,36 +36,24 @@ object CreateScopeInfo {
   }
   
   @scala.inline
-  implicit class CreateScopeInfoOps[Self <: CreateScopeInfo] (val x: Self) extends AnyVal {
+  implicit class CreateScopeInfoMutableBuilder[Self <: CreateScopeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminGroupDescription(value: String): Self = StObject.set(x, "adminGroupDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminGroupName(value: String): Self = StObject.set(x, "adminGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatorId(value: String): Self = StObject.set(x, "creatorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminGroupDescription(value: String): Self = this.set("adminGroupDescription", value.asInstanceOf[js.Any])
+    def setParentScopeId(value: String): Self = StObject.set(x, "parentScopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminGroupName(value: String): Self = this.set("adminGroupName", value.asInstanceOf[js.Any])
+    def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorId(value: String): Self = this.set("creatorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentScopeId(value: String): Self = this.set("parentScopeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeName(value: String): Self = this.set("scopeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeType(value: GroupScopeType): Self = this.set("scopeType", value.asInstanceOf[js.Any])
+    def setScopeType(value: GroupScopeType): Self = StObject.set(x, "scopeType", value.asInstanceOf[js.Any])
   }
 }

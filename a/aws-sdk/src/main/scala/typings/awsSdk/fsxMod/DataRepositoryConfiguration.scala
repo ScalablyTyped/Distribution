@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataRepositoryConfiguration extends js.Object {
+trait DataRepositoryConfiguration extends StObject {
   
   /**
     * Describes the file system's linked S3 data repository's AutoImportPolicy. The AutoImportPolicy configures how Amazon FSx keeps your file and directory listings up to date as you add or modify objects in your linked S3 bucket. AutoImportPolicy can have the following values:    NONE - (Default) AutoImport is off. Amazon FSx only updates file and directory listings from the linked S3 bucket when the file system is created. FSx does not update file and directory listings for any new or changed objects after choosing this option.    NEW - AutoImport is on. Amazon FSx automatically imports directory listings of any new objects added to the linked S3 bucket that do not currently exist in the FSx file system.     NEW_CHANGED - AutoImport is on. Amazon FSx automatically imports file and directory listings of any new objects added to the S3 bucket and any existing objects that are changed in the S3 bucket after you choose this option.    For more information, see Automatically import updates from your S3 bucket.
@@ -43,54 +44,42 @@ object DataRepositoryConfiguration {
   }
   
   @scala.inline
-  implicit class DataRepositoryConfigurationOps[Self <: DataRepositoryConfiguration] (val x: Self) extends AnyVal {
+  implicit class DataRepositoryConfigurationMutableBuilder[Self <: DataRepositoryConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoImportPolicy(value: AutoImportPolicyType): Self = StObject.set(x, "AutoImportPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoImportPolicyUndefined: Self = StObject.set(x, "AutoImportPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportPath(value: ArchivePath): Self = StObject.set(x, "ExportPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoImportPolicy(value: AutoImportPolicyType): Self = this.set("AutoImportPolicy", value.asInstanceOf[js.Any])
+    def setExportPathUndefined: Self = StObject.set(x, "ExportPath", js.undefined)
     
     @scala.inline
-    def deleteAutoImportPolicy: Self = this.set("AutoImportPolicy", js.undefined)
+    def setFailureDetails(value: DataRepositoryFailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportPath(value: ArchivePath): Self = this.set("ExportPath", value.asInstanceOf[js.Any])
+    def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
     
     @scala.inline
-    def deleteExportPath: Self = this.set("ExportPath", js.undefined)
+    def setImportPath(value: ArchivePath): Self = StObject.set(x, "ImportPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureDetails(value: DataRepositoryFailureDetails): Self = this.set("FailureDetails", value.asInstanceOf[js.Any])
+    def setImportPathUndefined: Self = StObject.set(x, "ImportPath", js.undefined)
     
     @scala.inline
-    def deleteFailureDetails: Self = this.set("FailureDetails", js.undefined)
+    def setImportedFileChunkSize(value: Megabytes): Self = StObject.set(x, "ImportedFileChunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportPath(value: ArchivePath): Self = this.set("ImportPath", value.asInstanceOf[js.Any])
+    def setImportedFileChunkSizeUndefined: Self = StObject.set(x, "ImportedFileChunkSize", js.undefined)
     
     @scala.inline
-    def deleteImportPath: Self = this.set("ImportPath", js.undefined)
+    def setLifecycle(value: DataRepositoryLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedFileChunkSize(value: Megabytes): Self = this.set("ImportedFileChunkSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportedFileChunkSize: Self = this.set("ImportedFileChunkSize", js.undefined)
-    
-    @scala.inline
-    def setLifecycle(value: DataRepositoryLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
   }
 }

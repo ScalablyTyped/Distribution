@@ -1,11 +1,12 @@
 package typings.awsSdk.dlmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLifecyclePolicyRequest extends js.Object {
+trait CreateLifecyclePolicyRequest extends StObject {
   
   /**
     * A description of the lifecycle policy. The characters ^[0-9A-Za-z _-]+$ are supported.
@@ -46,36 +47,24 @@ object CreateLifecyclePolicyRequest {
   }
   
   @scala.inline
-  implicit class CreateLifecyclePolicyRequestOps[Self <: CreateLifecyclePolicyRequest] (val x: Self) extends AnyVal {
+  implicit class CreateLifecyclePolicyRequestMutableBuilder[Self <: CreateLifecyclePolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: PolicyDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionRoleArn(value: ExecutionRoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyDetails(value: PolicyDetails): Self = StObject.set(x, "PolicyDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: PolicyDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setState(value: SettablePolicyStateValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionRoleArn(value: ExecutionRoleArn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyDetails(value: PolicyDetails): Self = this.set("PolicyDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: SettablePolicyStateValues): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

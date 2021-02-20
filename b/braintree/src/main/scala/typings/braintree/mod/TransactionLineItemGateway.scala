@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionLineItemGateway extends js.Object {
+trait TransactionLineItemGateway extends StObject {
   
   def findAll(transactionId: String): js.Promise[js.Array[TransactionLineItem]] = js.native
 }
@@ -18,21 +19,9 @@ object TransactionLineItemGateway {
   }
   
   @scala.inline
-  implicit class TransactionLineItemGatewayOps[Self <: TransactionLineItemGateway] (val x: Self) extends AnyVal {
+  implicit class TransactionLineItemGatewayMutableBuilder[Self <: TransactionLineItemGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFindAll(value: String => js.Promise[js.Array[TransactionLineItem]]): Self = this.set("findAll", js.Any.fromFunction1(value))
+    def setFindAll(value: String => js.Promise[js.Array[TransactionLineItem]]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
   }
 }

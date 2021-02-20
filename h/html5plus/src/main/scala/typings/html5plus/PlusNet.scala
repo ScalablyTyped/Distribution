@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
   */
 @js.native
-trait PlusNet extends js.Object {
+trait PlusNet extends StObject {
   
   /**
     * HTTP请求进度事件
@@ -35,30 +36,18 @@ object PlusNet {
   }
   
   @scala.inline
-  implicit class PlusNetOps[Self <: PlusNet] (val x: Self) extends AnyVal {
+  implicit class PlusNetMutableBuilder[Self <: PlusNet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProgressEvent(value: PlusNetProgressEvent): Self = StObject.set(x, "ProgressEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProgressEventUndefined: Self = StObject.set(x, "ProgressEvent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXMLHttpRequest(value: PlusNetXMLHttpRequest): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressEvent(value: PlusNetProgressEvent): Self = this.set("ProgressEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressEvent: Self = this.set("ProgressEvent", js.undefined)
-    
-    @scala.inline
-    def setXMLHttpRequest(value: PlusNetXMLHttpRequest): Self = this.set("XMLHttpRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXMLHttpRequest: Self = this.set("XMLHttpRequest", js.undefined)
+    def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetEffectivePoliciesRequest extends js.Object {
+trait GetEffectivePoliciesRequest extends StObject {
   
   /**
     * The Cognito identity pool ID.
@@ -31,36 +32,24 @@ object GetEffectivePoliciesRequest {
   }
   
   @scala.inline
-  implicit class GetEffectivePoliciesRequestOps[Self <: GetEffectivePoliciesRequest] (val x: Self) extends AnyVal {
+  implicit class GetEffectivePoliciesRequestMutableBuilder[Self <: GetEffectivePoliciesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCognitoIdentityPoolId(value: CognitoIdentityPoolId): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCognitoIdentityPoolIdUndefined: Self = StObject.set(x, "cognitoIdentityPoolId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCognitoIdentityPoolId(value: CognitoIdentityPoolId): Self = this.set("cognitoIdentityPoolId", value.asInstanceOf[js.Any])
+    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
     
     @scala.inline
-    def deleteCognitoIdentityPoolId: Self = this.set("cognitoIdentityPoolId", js.undefined)
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipal(value: Principal): Self = this.set("principal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipal: Self = this.set("principal", js.undefined)
-    
-    @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingName: Self = this.set("thingName", js.undefined)
+    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.nodeTelegramBotApi.mod
 
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.gif
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,66 +39,54 @@ object InlineQueryResultGif {
   }
   
   @scala.inline
-  implicit class InlineQueryResultGifOps[Self <: InlineQueryResultGif] (val x: Self) extends AnyVal {
+  implicit class InlineQueryResultGifMutableBuilder[Self <: InlineQueryResultGif] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGif_duration(value: Double): Self = StObject.set(x, "gif_duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGif_url(value: String): Self = this.set("gif_url", value.asInstanceOf[js.Any])
+    def setGif_durationUndefined: Self = StObject.set(x, "gif_duration", js.undefined)
     
     @scala.inline
-    def setType(value: gif): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setGif_height(value: Double): Self = StObject.set(x, "gif_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setGif_heightUndefined: Self = StObject.set(x, "gif_height", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setGif_url(value: String): Self = StObject.set(x, "gif_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGif_duration(value: Double): Self = this.set("gif_duration", value.asInstanceOf[js.Any])
+    def setGif_width(value: Double): Self = StObject.set(x, "gif_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGif_duration: Self = this.set("gif_duration", js.undefined)
+    def setGif_widthUndefined: Self = StObject.set(x, "gif_width", js.undefined)
     
     @scala.inline
-    def setGif_height(value: Double): Self = this.set("gif_height", value.asInstanceOf[js.Any])
+    def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGif_height: Self = this.set("gif_height", js.undefined)
+    def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
     
     @scala.inline
-    def setGif_width(value: Double): Self = this.set("gif_width", value.asInstanceOf[js.Any])
+    def setThumb_url(value: String): Self = StObject.set(x, "thumb_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGif_width: Self = this.set("gif_width", js.undefined)
+    def setThumb_urlUndefined: Self = StObject.set(x, "thumb_url", js.undefined)
     
     @scala.inline
-    def setInput_message_content(value: InputMessageContent): Self = this.set("input_message_content", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput_message_content: Self = this.set("input_message_content", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setThumb_url(value: String): Self = this.set("thumb_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumb_url: Self = this.set("thumb_url", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setType(value: gif): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

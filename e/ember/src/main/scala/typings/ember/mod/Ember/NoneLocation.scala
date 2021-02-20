@@ -1,6 +1,7 @@
 package typings.ember.mod.Ember
 
-import typings.emberObject.mod.default
+import typings.emberRouting.noneLocationMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

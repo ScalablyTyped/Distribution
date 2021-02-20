@@ -3,6 +3,7 @@ package typings.pixiJs.PIXI
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait Extract extends js.Object {
+trait Extract extends StObject {
   
   /**
     * Will return a a base64 encoded string of this target. It works by calling

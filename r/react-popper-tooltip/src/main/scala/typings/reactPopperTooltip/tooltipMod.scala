@@ -3,13 +3,29 @@ package typings.reactPopperTooltip
 import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.reactPopperTooltip.typesMod.TooltipProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-popper-tooltip/dist/Tooltip", JSImport.Namespace)
-@js.native
-object tooltipMod extends js.Object {
+object tooltipMod {
+  
+  @JSImport("react-popper-tooltip/dist/Tooltip", JSImport.Default)
+  @js.native
+  class default () extends Tooltip
+  object default {
+    
+    @JSImport("react-popper-tooltip/dist/Tooltip", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("react-popper-tooltip/dist/Tooltip", "default.contextType")
+    @js.native
+    def contextType: Context[js.Object] = js.native
+    @scala.inline
+    def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait Tooltip
@@ -49,14 +65,5 @@ object tooltipMod extends js.Object {
     var removeOutsideRightClickHandler: js.Any = js.native
     
     var tooltipRef: js.Any = js.native
-  }
-  
-  @js.native
-  class default () extends Tooltip
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var contextType: Context[js.Object] = js.native
   }
 }

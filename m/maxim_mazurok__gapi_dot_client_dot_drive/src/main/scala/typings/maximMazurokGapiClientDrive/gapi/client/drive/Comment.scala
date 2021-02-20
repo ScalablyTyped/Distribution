@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
 import typings.maximMazurokGapiClientDrive.anon.MimeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comment extends js.Object {
+trait Comment extends StObject {
   
   /** A region of the document represented as a JSON string. See anchor documentation for details on how to define and interpret anchor properties. */
   var anchor: js.UndefOr[String] = js.native
@@ -53,93 +54,81 @@ object Comment {
   }
   
   @scala.inline
-  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor(value: User): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: String): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: User): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setCreatedTime(value: String): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: String): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    def setHtmlContent(value: String): Self = StObject.set(x, "htmlContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlContent(value: String): Self = this.set("htmlContent", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHtmlContent: Self = this.set("htmlContent", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setModifiedTime(value: String): Self = StObject.set(x, "modifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setModifiedTimeUndefined: Self = StObject.set(x, "modifiedTime", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setQuotedFileContent(value: MimeType): Self = StObject.set(x, "quotedFileContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedTime(value: String): Self = this.set("modifiedTime", value.asInstanceOf[js.Any])
+    def setQuotedFileContentUndefined: Self = StObject.set(x, "quotedFileContent", js.undefined)
     
     @scala.inline
-    def deleteModifiedTime: Self = this.set("modifiedTime", js.undefined)
+    def setReplies(value: js.Array[Reply]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotedFileContent(value: MimeType): Self = this.set("quotedFileContent", value.asInstanceOf[js.Any])
+    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
     @scala.inline
-    def deleteQuotedFileContent: Self = this.set("quotedFileContent", js.undefined)
+    def setRepliesVarargs(value: Reply*): Self = StObject.set(x, "replies", js.Array(value :_*))
     
     @scala.inline
-    def setRepliesVarargs(value: Reply*): Self = this.set("replies", js.Array(value :_*))
+    def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplies(value: js.Array[Reply]): Self = this.set("replies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplies: Self = this.set("replies", js.undefined)
-    
-    @scala.inline
-    def setResolved(value: Boolean): Self = this.set("resolved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolved: Self = this.set("resolved", js.undefined)
+    def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
   }
 }

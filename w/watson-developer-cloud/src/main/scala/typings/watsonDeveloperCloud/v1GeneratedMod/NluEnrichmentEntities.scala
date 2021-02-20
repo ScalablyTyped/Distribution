@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object speficying the Entities enrichment and related parameters. */
 @js.native
-trait NluEnrichmentEntities extends js.Object {
+trait NluEnrichmentEntities extends StObject {
   
   /** When `true`, emotion detection of entities will be performed on the specified field. */
   var emotion: js.UndefOr[Boolean] = js.native
@@ -38,60 +39,48 @@ object NluEnrichmentEntities {
   }
   
   @scala.inline
-  implicit class NluEnrichmentEntitiesOps[Self <: NluEnrichmentEntities] (val x: Self) extends AnyVal {
+  implicit class NluEnrichmentEntitiesMutableBuilder[Self <: NluEnrichmentEntities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmotion(value: Boolean): Self = this.set("emotion", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteEmotion: Self = this.set("emotion", js.undefined)
+    def setMention_types(value: Boolean): Self = StObject.set(x, "mention_types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setMention_typesUndefined: Self = StObject.set(x, "mention_types", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setMentions(value: Boolean): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMention_types(value: Boolean): Self = this.set("mention_types", value.asInstanceOf[js.Any])
+    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
     @scala.inline
-    def deleteMention_types: Self = this.set("mention_types", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentions(value: Boolean): Self = this.set("mentions", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteMentions: Self = this.set("mentions", js.undefined)
+    def setSentence_locations(value: Boolean): Self = StObject.set(x, "sentence_locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setSentence_locationsUndefined: Self = StObject.set(x, "sentence_locations", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setSentiment(value: Boolean): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentence_locations(value: Boolean): Self = this.set("sentence_locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentence_locations: Self = this.set("sentence_locations", js.undefined)
-    
-    @scala.inline
-    def setSentiment(value: Boolean): Self = this.set("sentiment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentiment: Self = this.set("sentiment", js.undefined)
+    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
   }
 }

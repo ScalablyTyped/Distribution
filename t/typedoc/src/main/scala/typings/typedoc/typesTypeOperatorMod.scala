@@ -4,14 +4,14 @@ import typings.typedoc.typedocStrings.keyof
 import typings.typedoc.typedocStrings.readonly
 import typings.typedoc.typedocStrings.unique
 import typings.typedoc.typesAbstractMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/types/type-operator", JSImport.Namespace)
-@js.native
-object typesTypeOperatorMod extends js.Object {
+object typesTypeOperatorMod {
   
+  @JSImport("typedoc/dist/lib/models/types/type-operator", "TypeOperatorType")
   @js.native
   class TypeOperatorType protected () extends Type {
     def this(target: Type, operator: keyof) = this()

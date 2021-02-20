@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSchemaVersionsDiffInput extends js.Object {
+trait GetSchemaVersionsDiffInput extends StObject {
   
   /**
     * The first of the two schema versions to be compared.
@@ -41,30 +42,18 @@ object GetSchemaVersionsDiffInput {
   }
   
   @scala.inline
-  implicit class GetSchemaVersionsDiffInputOps[Self <: GetSchemaVersionsDiffInput] (val x: Self) extends AnyVal {
+  implicit class GetSchemaVersionsDiffInputMutableBuilder[Self <: GetSchemaVersionsDiffInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "FirstSchemaVersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSchemaDiffType(value: SchemaDiffType): Self = StObject.set(x, "SchemaDiffType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstSchemaVersionNumber(value: SchemaVersionNumber): Self = this.set("FirstSchemaVersionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemaDiffType(value: SchemaDiffType): Self = this.set("SchemaDiffType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = this.set("SchemaId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondSchemaVersionNumber(value: SchemaVersionNumber): Self = this.set("SecondSchemaVersionNumber", value.asInstanceOf[js.Any])
+    def setSecondSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SecondSchemaVersionNumber", value.asInstanceOf[js.Any])
   }
 }

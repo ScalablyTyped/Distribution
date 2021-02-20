@@ -1,35 +1,63 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an OutputAudioConfig. */
-trait IOutputAudioConfig extends js.Object {
+@js.native
+trait IOutputAudioConfig extends StObject {
+  
   /** OutputAudioConfig audioEncoding */
   var audioEncoding: js.UndefOr[
     OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.OutputAudioEncoding * / any */ String) | Null
-  ] = js.undefined
+  ] = js.native
+  
   /** OutputAudioConfig sampleRateHertz */
-  var sampleRateHertz: js.UndefOr[Double | Null] = js.undefined
+  var sampleRateHertz: js.UndefOr[Double | Null] = js.native
+  
   /** OutputAudioConfig synthesizeSpeechConfig */
-  var synthesizeSpeechConfig: js.UndefOr[ISynthesizeSpeechConfig | Null] = js.undefined
+  var synthesizeSpeechConfig: js.UndefOr[ISynthesizeSpeechConfig | Null] = js.native
 }
-
 object IOutputAudioConfig {
+  
   @scala.inline
-  def apply(
-    audioEncoding: js.UndefOr[
-      Null | OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.OutputAudioEncoding * / any */ String)
-    ] = js.undefined,
-    sampleRateHertz: js.UndefOr[Null | Double] = js.undefined,
-    synthesizeSpeechConfig: js.UndefOr[Null | ISynthesizeSpeechConfig] = js.undefined
-  ): IOutputAudioConfig = {
+  def apply(): IOutputAudioConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(audioEncoding)) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(sampleRateHertz)) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
-    if (!js.isUndefined(synthesizeSpeechConfig)) __obj.updateDynamic("synthesizeSpeechConfig")(synthesizeSpeechConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOutputAudioConfig]
   }
+  
+  @scala.inline
+  implicit class IOutputAudioConfigMutableBuilder[Self <: IOutputAudioConfig] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAudioEncoding(
+      value: OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.OutputAudioEncoding * / any */ String)
+    ): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAudioEncodingNull: Self = StObject.set(x, "audioEncoding", null)
+    
+    @scala.inline
+    def setAudioEncodingUndefined: Self = StObject.set(x, "audioEncoding", js.undefined)
+    
+    @scala.inline
+    def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSampleRateHertzNull: Self = StObject.set(x, "sampleRateHertz", null)
+    
+    @scala.inline
+    def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
+    
+    @scala.inline
+    def setSynthesizeSpeechConfig(value: ISynthesizeSpeechConfig): Self = StObject.set(x, "synthesizeSpeechConfig", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSynthesizeSpeechConfigNull: Self = StObject.set(x, "synthesizeSpeechConfig", null)
+    
+    @scala.inline
+    def setSynthesizeSpeechConfigUndefined: Self = StObject.set(x, "synthesizeSpeechConfig", js.undefined)
+  }
 }
-

@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceCredentialsInfo extends js.Object {
+trait SourceCredentialsInfo extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the token. 
@@ -31,36 +32,24 @@ object SourceCredentialsInfo {
   }
   
   @scala.inline
-  implicit class SourceCredentialsInfoOps[Self <: SourceCredentialsInfo] (val x: Self) extends AnyVal {
+  implicit class SourceCredentialsInfoMutableBuilder[Self <: SourceCredentialsInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthType(value: AuthType): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setServerType(value: ServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthType(value: AuthType): Self = this.set("authType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthType: Self = this.set("authType", js.undefined)
-    
-    @scala.inline
-    def setServerType(value: ServerType): Self = this.set("serverType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerType: Self = this.set("serverType", js.undefined)
+    def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
   }
 }

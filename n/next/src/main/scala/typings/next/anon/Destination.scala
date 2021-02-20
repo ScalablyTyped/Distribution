@@ -6,6 +6,7 @@ import typings.next.nextNumbers.`302`
 import typings.next.nextNumbers.`303`
 import typings.next.nextNumbers.`307`
 import typings.next.nextNumbers.`308`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object Destination {
   }
   
   @scala.inline
-  implicit class DestinationOps[Self <: Destination] (val x: Self) extends AnyVal {
+  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasePath(value: `false`): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: `301` | `302` | `303` | `307` | `308`): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBasePath(value: `false`): Self = this.set("basePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBasePath: Self = this.set("basePath", js.undefined)
+    def setStatusCode(value: `301` | `302` | `303` | `307` | `308`): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

@@ -13,12 +13,13 @@ import typings.bootstrapMultiselect.bootstrapMultiselectStrings.selectAll
 import typings.bootstrapMultiselect.bootstrapMultiselectStrings.setAllSelectedText
 import typings.bootstrapMultiselect.bootstrapMultiselectStrings.setOptions
 import typings.bootstrapMultiselect.bootstrapMultiselectStrings.updateButtonText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def multiselect(): JQuery = js.native
   def multiselect(options: MultiSelectOptions): JQuery = js.native

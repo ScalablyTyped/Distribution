@@ -9,16 +9,16 @@ import typings.typeorm.entitySchemaIndexOptionsMod.EntitySchemaIndexOptions
 import typings.typeorm.entitySchemaUniqueOptionsMod.EntitySchemaUniqueOptions
 import typings.typeorm.orderByConditionMod.OrderByCondition
 import typings.typeorm.tableTypesMod.TableType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/entity-schema/EntitySchemaOptions", JSImport.Namespace)
-@js.native
-object entitySchemaOptionsMod extends js.Object {
+object entitySchemaOptionsMod {
   
+  @JSImport("typeorm/browser/entity-schema/EntitySchemaOptions", "EntitySchemaOptions")
   @js.native
-  class EntitySchemaOptions[T] () extends js.Object {
+  class EntitySchemaOptions[T] () extends StObject {
     
     /**
       * Entity check options.

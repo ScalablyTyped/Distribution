@@ -1,11 +1,12 @@
 package typings.jasmine.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomReporter extends js.Object {
+trait CustomReporter extends StObject {
   
   var jasmineDone: js.UndefOr[js.Function1[/* runDetails */ RunDetails, Unit]] = js.native
   
@@ -28,54 +29,42 @@ object CustomReporter {
   }
   
   @scala.inline
-  implicit class CustomReporterOps[Self <: CustomReporter] (val x: Self) extends AnyVal {
+  implicit class CustomReporterMutableBuilder[Self <: CustomReporter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJasmineDone(value: /* runDetails */ RunDetails => Unit): Self = StObject.set(x, "jasmineDone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJasmineDoneUndefined: Self = StObject.set(x, "jasmineDone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJasmineStarted(value: /* suiteInfo */ SuiteInfo => Unit): Self = StObject.set(x, "jasmineStarted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJasmineDone(value: /* runDetails */ RunDetails => Unit): Self = this.set("jasmineDone", js.Any.fromFunction1(value))
+    def setJasmineStartedUndefined: Self = StObject.set(x, "jasmineStarted", js.undefined)
     
     @scala.inline
-    def deleteJasmineDone: Self = this.set("jasmineDone", js.undefined)
+    def setSpecDone(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "specDone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJasmineStarted(value: /* suiteInfo */ SuiteInfo => Unit): Self = this.set("jasmineStarted", js.Any.fromFunction1(value))
+    def setSpecDoneUndefined: Self = StObject.set(x, "specDone", js.undefined)
     
     @scala.inline
-    def deleteJasmineStarted: Self = this.set("jasmineStarted", js.undefined)
+    def setSpecStarted(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "specStarted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSpecDone(value: /* result */ CustomReporterResult => Unit): Self = this.set("specDone", js.Any.fromFunction1(value))
+    def setSpecStartedUndefined: Self = StObject.set(x, "specStarted", js.undefined)
     
     @scala.inline
-    def deleteSpecDone: Self = this.set("specDone", js.undefined)
+    def setSuiteDone(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "suiteDone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSpecStarted(value: /* result */ CustomReporterResult => Unit): Self = this.set("specStarted", js.Any.fromFunction1(value))
+    def setSuiteDoneUndefined: Self = StObject.set(x, "suiteDone", js.undefined)
     
     @scala.inline
-    def deleteSpecStarted: Self = this.set("specStarted", js.undefined)
+    def setSuiteStarted(value: /* result */ CustomReporterResult => Unit): Self = StObject.set(x, "suiteStarted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSuiteDone(value: /* result */ CustomReporterResult => Unit): Self = this.set("suiteDone", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuiteDone: Self = this.set("suiteDone", js.undefined)
-    
-    @scala.inline
-    def setSuiteStarted(value: /* result */ CustomReporterResult => Unit): Self = this.set("suiteStarted", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuiteStarted: Self = this.set("suiteStarted", js.undefined)
+    def setSuiteStartedUndefined: Self = StObject.set(x, "suiteStarted", js.undefined)
   }
 }

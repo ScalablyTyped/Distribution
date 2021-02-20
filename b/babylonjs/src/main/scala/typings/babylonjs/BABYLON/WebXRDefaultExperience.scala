@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRDefaultExperience extends js.Object {
+trait WebXRDefaultExperience extends StObject {
   
   /**
     * Base experience
@@ -59,39 +60,27 @@ object WebXRDefaultExperience {
   }
   
   @scala.inline
-  implicit class WebXRDefaultExperienceOps[Self <: WebXRDefaultExperience] (val x: Self) extends AnyVal {
+  implicit class WebXRDefaultExperienceMutableBuilder[Self <: WebXRDefaultExperience] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseExperience(value: WebXRExperienceHelper): Self = StObject.set(x, "baseExperience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnterExitUI(value: WebXREnterExitUI): Self = StObject.set(x, "enterExitUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseExperience(value: WebXRExperienceHelper): Self = this.set("baseExperience", value.asInstanceOf[js.Any])
+    def setInput(value: WebXRInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setPointerSelection(value: WebXRControllerPointerSelection): Self = StObject.set(x, "pointerSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterExitUI(value: WebXREnterExitUI): Self = this.set("enterExitUI", value.asInstanceOf[js.Any])
+    def setRenderTarget(value: WebXRRenderTarget): Self = StObject.set(x, "renderTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: WebXRInput): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointerSelection(value: WebXRControllerPointerSelection): Self = this.set("pointerSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderTarget(value: WebXRRenderTarget): Self = this.set("renderTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeleportation(value: WebXRMotionControllerTeleportation): Self = this.set("teleportation", value.asInstanceOf[js.Any])
+    def setTeleportation(value: WebXRMotionControllerTeleportation): Self = StObject.set(x, "teleportation", value.asInstanceOf[js.Any])
   }
 }

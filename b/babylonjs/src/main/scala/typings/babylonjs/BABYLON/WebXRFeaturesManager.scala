@@ -2,6 +2,7 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRSessionInit
 import typings.babylonjs.anon.NameString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

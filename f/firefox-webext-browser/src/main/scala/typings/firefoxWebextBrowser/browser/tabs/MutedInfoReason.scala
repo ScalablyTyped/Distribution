@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.extension
 */
-trait MutedInfoReason extends js.Object
+trait MutedInfoReason extends StObject
 object MutedInfoReason {
   
   @scala.inline

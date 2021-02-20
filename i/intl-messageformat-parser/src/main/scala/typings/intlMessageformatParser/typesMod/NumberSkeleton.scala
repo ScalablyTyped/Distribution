@@ -2,6 +2,7 @@ package typings.intlMessageformatParser.typesMod
 
 import typings.intlMessageformatParser.intlMessageformatParserNumbers.`0`
 import typings.std.Intl.NumberFormatOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,36 +28,24 @@ object NumberSkeleton {
   }
   
   @scala.inline
-  implicit class NumberSkeletonOps[Self <: NumberSkeleton] (val x: Self) extends AnyVal {
+  implicit class NumberSkeletonMutableBuilder[Self <: NumberSkeleton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParsedOptions(value: NumberFormatOptions): Self = StObject.set(x, "parsedOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParsedOptions(value: NumberFormatOptions): Self = this.set("parsedOptions", value.asInstanceOf[js.Any])
+    def setTokens(value: js.Array[NumberSkeletonToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokensVarargs(value: NumberSkeletonToken*): Self = this.set("tokens", js.Array(value :_*))
+    def setTokensVarargs(value: NumberSkeletonToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
     
     @scala.inline
-    def setTokens(value: js.Array[NumberSkeletonToken]): Self = this.set("tokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `0`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setType(value: `0`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

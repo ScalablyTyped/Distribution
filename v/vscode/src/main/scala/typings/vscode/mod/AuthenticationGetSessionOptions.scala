@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationGetSessionOptions extends js.Object {
+trait AuthenticationGetSessionOptions extends StObject {
   
   /**
     * Whether the existing user session preference should be cleared.
@@ -38,30 +39,18 @@ object AuthenticationGetSessionOptions {
   }
   
   @scala.inline
-  implicit class AuthenticationGetSessionOptionsOps[Self <: AuthenticationGetSessionOptions] (val x: Self) extends AnyVal {
+  implicit class AuthenticationGetSessionOptionsMutableBuilder[Self <: AuthenticationGetSessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearSessionPreference(value: Boolean): Self = StObject.set(x, "clearSessionPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearSessionPreferenceUndefined: Self = StObject.set(x, "clearSessionPreference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateIfNone(value: Boolean): Self = StObject.set(x, "createIfNone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearSessionPreference(value: Boolean): Self = this.set("clearSessionPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClearSessionPreference: Self = this.set("clearSessionPreference", js.undefined)
-    
-    @scala.inline
-    def setCreateIfNone(value: Boolean): Self = this.set("createIfNone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateIfNone: Self = this.set("createIfNone", js.undefined)
+    def setCreateIfNoneUndefined: Self = StObject.set(x, "createIfNone", js.undefined)
   }
 }

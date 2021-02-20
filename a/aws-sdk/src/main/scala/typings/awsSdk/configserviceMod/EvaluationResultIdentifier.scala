@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EvaluationResultIdentifier extends js.Object {
+trait EvaluationResultIdentifier extends StObject {
   
   /**
     * Identifies an AWS Config rule used to evaluate an AWS resource, and provides the type and ID of the evaluated resource.
@@ -26,30 +27,18 @@ object EvaluationResultIdentifier {
   }
   
   @scala.inline
-  implicit class EvaluationResultIdentifierOps[Self <: EvaluationResultIdentifier] (val x: Self) extends AnyVal {
+  implicit class EvaluationResultIdentifierMutableBuilder[Self <: EvaluationResultIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluationResultQualifier(value: EvaluationResultQualifier): Self = StObject.set(x, "EvaluationResultQualifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluationResultQualifierUndefined: Self = StObject.set(x, "EvaluationResultQualifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderingTimestamp(value: Date): Self = StObject.set(x, "OrderingTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationResultQualifier(value: EvaluationResultQualifier): Self = this.set("EvaluationResultQualifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvaluationResultQualifier: Self = this.set("EvaluationResultQualifier", js.undefined)
-    
-    @scala.inline
-    def setOrderingTimestamp(value: Date): Self = this.set("OrderingTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderingTimestamp: Self = this.set("OrderingTimestamp", js.undefined)
+    def setOrderingTimestampUndefined: Self = StObject.set(x, "OrderingTimestamp", js.undefined)
   }
 }

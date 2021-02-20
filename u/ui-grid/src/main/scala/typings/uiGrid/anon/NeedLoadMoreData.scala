@@ -1,11 +1,12 @@
 package typings.uiGrid.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NeedLoadMoreData extends js.Object {
+trait NeedLoadMoreData extends StObject {
   
   /**
     * This event fires when scroll reaches bottom percentage of grid and needs to load data
@@ -26,24 +27,12 @@ object NeedLoadMoreData {
   }
   
   @scala.inline
-  implicit class NeedLoadMoreDataOps[Self <: NeedLoadMoreData] (val x: Self) extends AnyVal {
+  implicit class NeedLoadMoreDataMutableBuilder[Self <: NeedLoadMoreData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNeedLoadMoreData(value: js.Function): Self = StObject.set(x, "needLoadMoreData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNeedLoadMoreData(value: js.Function): Self = this.set("needLoadMoreData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNeedLoadMoreDataTop(value: js.Function): Self = this.set("needLoadMoreDataTop", value.asInstanceOf[js.Any])
+    def setNeedLoadMoreDataTop(value: js.Function): Self = StObject.set(x, "needLoadMoreDataTop", value.asInstanceOf[js.Any])
   }
 }

@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Media.Core
 
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Media.Capture.CapturedFrameControlValues
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a video frame that includes the results of the scene analysis operation. */
 @js.native
-trait SceneAnalysisEffectFrame extends js.Object {
+trait SceneAnalysisEffectFrame extends StObject {
   
   /** Disposes of the object and associated resources. */
   def close(): Unit = js.native
@@ -61,48 +62,36 @@ object SceneAnalysisEffectFrame {
   }
   
   @scala.inline
-  implicit class SceneAnalysisEffectFrameOps[Self <: SceneAnalysisEffectFrame] (val x: Self) extends AnyVal {
+  implicit class SceneAnalysisEffectFrameMutableBuilder[Self <: SceneAnalysisEffectFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendedProperties(value: IPropertySet): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setFrameControlValues(value: CapturedFrameControlValues): Self = StObject.set(x, "frameControlValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setHighDynamicRange(value: HighDynamicRangeOutput): Self = StObject.set(x, "highDynamicRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedProperties(value: IPropertySet): Self = this.set("extendedProperties", value.asInstanceOf[js.Any])
+    def setIsDiscontinuous(value: Boolean): Self = StObject.set(x, "isDiscontinuous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameControlValues(value: CapturedFrameControlValues): Self = this.set("frameControlValues", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighDynamicRange(value: HighDynamicRangeOutput): Self = this.set("highDynamicRange", value.asInstanceOf[js.Any])
+    def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDiscontinuous(value: Boolean): Self = this.set("isDiscontinuous", value.asInstanceOf[js.Any])
+    def setSystemRelativeTime(value: Double): Self = StObject.set(x, "systemRelativeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelativeTime(value: Double): Self = this.set("relativeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemRelativeTime(value: Double): Self = this.set("systemRelativeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

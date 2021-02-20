@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lastnote extends js.Object {
+trait Lastnote extends StObject {
   
   var first_indices: js.UndefOr[js.Array[Double]] = js.native
   
@@ -24,42 +25,30 @@ object Lastnote {
   }
   
   @scala.inline
-  implicit class LastnoteOps[Self <: Lastnote] (val x: Self) extends AnyVal {
+  implicit class LastnoteMutableBuilder[Self <: Lastnote] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirst_indices(value: js.Array[Double]): Self = StObject.set(x, "first_indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst_indicesUndefined: Self = StObject.set(x, "first_indices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirst_indicesVarargs(value: Double*): Self = StObject.set(x, "first_indices", js.Array(value :_*))
     
     @scala.inline
-    def setFirst_note(value: typings.vexflow.Vex.Flow.Note): Self = this.set("first_note", value.asInstanceOf[js.Any])
+    def setFirst_note(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "first_note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_note(value: typings.vexflow.Vex.Flow.Note): Self = this.set("last_note", value.asInstanceOf[js.Any])
+    def setLast_indices(value: js.Array[Double]): Self = StObject.set(x, "last_indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_indicesVarargs(value: Double*): Self = this.set("first_indices", js.Array(value :_*))
+    def setLast_indicesUndefined: Self = StObject.set(x, "last_indices", js.undefined)
     
     @scala.inline
-    def setFirst_indices(value: js.Array[Double]): Self = this.set("first_indices", value.asInstanceOf[js.Any])
+    def setLast_indicesVarargs(value: Double*): Self = StObject.set(x, "last_indices", js.Array(value :_*))
     
     @scala.inline
-    def deleteFirst_indices: Self = this.set("first_indices", js.undefined)
-    
-    @scala.inline
-    def setLast_indicesVarargs(value: Double*): Self = this.set("last_indices", js.Array(value :_*))
-    
-    @scala.inline
-    def setLast_indices(value: js.Array[Double]): Self = this.set("last_indices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLast_indices: Self = this.set("last_indices", js.undefined)
+    def setLast_note(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "last_note", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeeDistribution extends js.Object {
+trait FeeDistribution extends StObject {
   
   var max: String = js.native
   
@@ -59,60 +60,48 @@ object FeeDistribution {
   }
   
   @scala.inline
-  implicit class FeeDistributionOps[Self <: FeeDistribution] (val x: Self) extends AnyVal {
+  implicit class FeeDistributionMutableBuilder[Self <: FeeDistribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setP10(value: String): Self = StObject.set(x, "p10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: String): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setP20(value: String): Self = StObject.set(x, "p20", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setP30(value: String): Self = StObject.set(x, "p30", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP10(value: String): Self = this.set("p10", value.asInstanceOf[js.Any])
+    def setP40(value: String): Self = StObject.set(x, "p40", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP20(value: String): Self = this.set("p20", value.asInstanceOf[js.Any])
+    def setP50(value: String): Self = StObject.set(x, "p50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP30(value: String): Self = this.set("p30", value.asInstanceOf[js.Any])
+    def setP60(value: String): Self = StObject.set(x, "p60", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP40(value: String): Self = this.set("p40", value.asInstanceOf[js.Any])
+    def setP70(value: String): Self = StObject.set(x, "p70", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP50(value: String): Self = this.set("p50", value.asInstanceOf[js.Any])
+    def setP80(value: String): Self = StObject.set(x, "p80", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP60(value: String): Self = this.set("p60", value.asInstanceOf[js.Any])
+    def setP90(value: String): Self = StObject.set(x, "p90", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP70(value: String): Self = this.set("p70", value.asInstanceOf[js.Any])
+    def setP95(value: String): Self = StObject.set(x, "p95", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP80(value: String): Self = this.set("p80", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP90(value: String): Self = this.set("p90", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP95(value: String): Self = this.set("p95", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP99(value: String): Self = this.set("p99", value.asInstanceOf[js.Any])
+    def setP99(value: String): Self = StObject.set(x, "p99", value.asInstanceOf[js.Any])
   }
 }

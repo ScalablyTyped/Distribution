@@ -6,6 +6,7 @@ import typings.phaser.spine.Disposable
 import typings.phaser.spine.Skeleton
 import typings.phaser.spine.TextureAtlasRegion
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,12 +1,13 @@
 package typings.forestExpressSequelize.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Params extends js.Object {
+trait Params extends StObject {
   
   var fields: StringDictionary[String] = js.native
   
@@ -39,39 +40,27 @@ object Params {
   }
   
   @scala.inline
-  implicit class ParamsOps[Self <: Params] (val x: Self) extends AnyVal {
+  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilters(value: Filter | AggregatedFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: StringDictionary[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: Filter | AggregatedFilters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setSearchExtended(value: String): Self = StObject.set(x, "searchExtended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Page): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchExtended(value: String): Self = this.set("searchExtended", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSort(value: String): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
   }
 }

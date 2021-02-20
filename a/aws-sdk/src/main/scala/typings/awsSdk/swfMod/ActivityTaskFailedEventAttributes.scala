@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityTaskFailedEventAttributes extends js.Object {
+trait ActivityTaskFailedEventAttributes extends StObject {
   
   /**
     * The details of the failure.
@@ -36,36 +37,24 @@ object ActivityTaskFailedEventAttributes {
   }
   
   @scala.inline
-  implicit class ActivityTaskFailedEventAttributesOps[Self <: ActivityTaskFailedEventAttributes] (val x: Self) extends AnyVal {
+  implicit class ActivityTaskFailedEventAttributesMutableBuilder[Self <: ActivityTaskFailedEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: FailureReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledEventId(value: EventId): Self = this.set("scheduledEventId", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
+    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: Data): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
-    
-    @scala.inline
-    def setReason(value: FailureReason): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
   }
 }

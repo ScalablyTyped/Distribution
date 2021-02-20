@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait State extends js.Object {
+trait State extends StObject {
   
   /**
     * When entering this state, perform these actions if the condition is TRUE.
@@ -36,39 +37,27 @@ object State {
   }
   
   @scala.inline
-  implicit class StateOps[Self <: State] (val x: Self) extends AnyVal {
+  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnEnter(value: OnEnterLifecycle): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnExit(value: OnExitLifecycle): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateName(value: StateName): Self = this.set("stateName", value.asInstanceOf[js.Any])
+    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
     @scala.inline
-    def setOnEnter(value: OnEnterLifecycle): Self = this.set("onEnter", value.asInstanceOf[js.Any])
+    def setOnInput(value: OnInputLifecycle): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
     @scala.inline
-    def setOnExit(value: OnExitLifecycle): Self = this.set("onExit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnExit: Self = this.set("onExit", js.undefined)
-    
-    @scala.inline
-    def setOnInput(value: OnInputLifecycle): Self = this.set("onInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
   }
 }

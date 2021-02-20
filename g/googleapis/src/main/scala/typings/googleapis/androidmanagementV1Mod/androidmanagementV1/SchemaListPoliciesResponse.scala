@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response to a request to list policies for a given enterprise.
   */
 @js.native
-trait SchemaListPoliciesResponse extends js.Object {
+trait SchemaListPoliciesResponse extends StObject {
   
   /**
     * If there are more results, a token to retrieve next page of results.
@@ -29,33 +30,21 @@ object SchemaListPoliciesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListPoliciesResponseOps[Self <: SchemaListPoliciesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListPoliciesResponseMutableBuilder[Self <: SchemaListPoliciesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicies(value: js.Array[SchemaPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setPoliciesVarargs(value: SchemaPolicy*): Self = this.set("policies", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicies(value: js.Array[SchemaPolicy]): Self = this.set("policies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicies: Self = this.set("policies", js.undefined)
+    def setPoliciesVarargs(value: SchemaPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
   }
 }

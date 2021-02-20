@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "TemplateRef")
 @js.native
-abstract class TemplateRef[C] () extends js.Object {
+abstract class TemplateRef[C] () extends StObject {
   
   /**
     * Instantiates an embedded view based on this template,

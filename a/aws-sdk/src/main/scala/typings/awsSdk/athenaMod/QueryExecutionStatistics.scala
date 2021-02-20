@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryExecutionStatistics extends js.Object {
+trait QueryExecutionStatistics extends StObject {
   
   /**
     * The location and file name of a data manifest file. The manifest file is saved to the Athena query results location in Amazon S3. The manifest file tracks files that the query wrote to Amazon S3. If the query fails, the manifest file also tracks files that the query intended to write. The manifest is useful for identifying orphaned files resulting from a failed query. For more information, see Working with Query Results, Output Files, and Query History in the Amazon Athena User Guide.
@@ -51,60 +52,48 @@ object QueryExecutionStatistics {
   }
   
   @scala.inline
-  implicit class QueryExecutionStatisticsOps[Self <: QueryExecutionStatistics] (val x: Self) extends AnyVal {
+  implicit class QueryExecutionStatisticsMutableBuilder[Self <: QueryExecutionStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataManifestLocation(value: String): Self = StObject.set(x, "DataManifestLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataManifestLocationUndefined: Self = StObject.set(x, "DataManifestLocation", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataScannedInBytes(value: Long): Self = StObject.set(x, "DataScannedInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataManifestLocation(value: String): Self = this.set("DataManifestLocation", value.asInstanceOf[js.Any])
+    def setDataScannedInBytesUndefined: Self = StObject.set(x, "DataScannedInBytes", js.undefined)
     
     @scala.inline
-    def deleteDataManifestLocation: Self = this.set("DataManifestLocation", js.undefined)
+    def setEngineExecutionTimeInMillis(value: Long): Self = StObject.set(x, "EngineExecutionTimeInMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataScannedInBytes(value: Long): Self = this.set("DataScannedInBytes", value.asInstanceOf[js.Any])
+    def setEngineExecutionTimeInMillisUndefined: Self = StObject.set(x, "EngineExecutionTimeInMillis", js.undefined)
     
     @scala.inline
-    def deleteDataScannedInBytes: Self = this.set("DataScannedInBytes", js.undefined)
+    def setQueryPlanningTimeInMillis(value: Long): Self = StObject.set(x, "QueryPlanningTimeInMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineExecutionTimeInMillis(value: Long): Self = this.set("EngineExecutionTimeInMillis", value.asInstanceOf[js.Any])
+    def setQueryPlanningTimeInMillisUndefined: Self = StObject.set(x, "QueryPlanningTimeInMillis", js.undefined)
     
     @scala.inline
-    def deleteEngineExecutionTimeInMillis: Self = this.set("EngineExecutionTimeInMillis", js.undefined)
+    def setQueryQueueTimeInMillis(value: Long): Self = StObject.set(x, "QueryQueueTimeInMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryPlanningTimeInMillis(value: Long): Self = this.set("QueryPlanningTimeInMillis", value.asInstanceOf[js.Any])
+    def setQueryQueueTimeInMillisUndefined: Self = StObject.set(x, "QueryQueueTimeInMillis", js.undefined)
     
     @scala.inline
-    def deleteQueryPlanningTimeInMillis: Self = this.set("QueryPlanningTimeInMillis", js.undefined)
+    def setServiceProcessingTimeInMillis(value: Long): Self = StObject.set(x, "ServiceProcessingTimeInMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryQueueTimeInMillis(value: Long): Self = this.set("QueryQueueTimeInMillis", value.asInstanceOf[js.Any])
+    def setServiceProcessingTimeInMillisUndefined: Self = StObject.set(x, "ServiceProcessingTimeInMillis", js.undefined)
     
     @scala.inline
-    def deleteQueryQueueTimeInMillis: Self = this.set("QueryQueueTimeInMillis", js.undefined)
+    def setTotalExecutionTimeInMillis(value: Long): Self = StObject.set(x, "TotalExecutionTimeInMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceProcessingTimeInMillis(value: Long): Self = this.set("ServiceProcessingTimeInMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceProcessingTimeInMillis: Self = this.set("ServiceProcessingTimeInMillis", js.undefined)
-    
-    @scala.inline
-    def setTotalExecutionTimeInMillis(value: Long): Self = this.set("TotalExecutionTimeInMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalExecutionTimeInMillis: Self = this.set("TotalExecutionTimeInMillis", js.undefined)
+    def setTotalExecutionTimeInMillisUndefined: Self = StObject.set(x, "TotalExecutionTimeInMillis", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.typeorm.typeormStrings.database
 import typings.typeorm.typeormStrings.ioredis
 import typings.typeorm.typeormStrings.ioredisSlashcluster
 import typings.typeorm.typeormStrings.redis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Duration extends js.Object {
+trait Duration extends StObject {
   
   /**
     * If set to true then queries (using find methods and QueryBuilder's methods) will always be cached.
@@ -62,54 +63,42 @@ object Duration {
   }
   
   @scala.inline
-  implicit class DurationOps[Self <: Duration] (val x: Self) extends AnyVal {
+  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysEnabled(value: Boolean): Self = StObject.set(x, "alwaysEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysEnabledUndefined: Self = StObject.set(x, "alwaysEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysEnabled(value: Boolean): Self = this.set("alwaysEnabled", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteAlwaysEnabled: Self = this.set("alwaysEnabled", js.undefined)
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setProvider(value: /* connection */ typings.typeorm.connectionConnectionMod.Connection => QueryResultCache): Self = StObject.set(x, "provider", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: /* connection */ typings.typeorm.connectionConnectionMod.Connection => QueryResultCache): Self = this.set("provider", js.Any.fromFunction1(value))
+    def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setType(value: database | redis | ioredis | ioredisSlashcluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("tableName", js.undefined)
-    
-    @scala.inline
-    def setType(value: database | redis | ioredis | ioredisSlashcluster): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

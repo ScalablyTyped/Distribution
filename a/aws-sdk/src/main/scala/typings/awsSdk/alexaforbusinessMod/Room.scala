@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Room extends js.Object {
+trait Room extends StObject {
   
   /**
     * The description of a room.
@@ -41,48 +42,36 @@ object Room {
   }
   
   @scala.inline
-  implicit class RoomOps[Self <: Room] (val x: Self) extends AnyVal {
+  implicit class RoomMutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: RoomDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfileArn(value: Arn): Self = StObject.set(x, "ProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: RoomDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setProfileArnUndefined: Self = StObject.set(x, "ProfileArn", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setProviderCalendarId(value: ProviderCalendarId): Self = StObject.set(x, "ProviderCalendarId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileArn(value: Arn): Self = this.set("ProfileArn", value.asInstanceOf[js.Any])
+    def setProviderCalendarIdUndefined: Self = StObject.set(x, "ProviderCalendarId", js.undefined)
     
     @scala.inline
-    def deleteProfileArn: Self = this.set("ProfileArn", js.undefined)
+    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderCalendarId(value: ProviderCalendarId): Self = this.set("ProviderCalendarId", value.asInstanceOf[js.Any])
+    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
     @scala.inline
-    def deleteProviderCalendarId: Self = this.set("ProviderCalendarId", js.undefined)
+    def setRoomName(value: RoomName): Self = StObject.set(x, "RoomName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoomArn(value: Arn): Self = this.set("RoomArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomArn: Self = this.set("RoomArn", js.undefined)
-    
-    @scala.inline
-    def setRoomName(value: RoomName): Self = this.set("RoomName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomName: Self = this.set("RoomName", js.undefined)
+    def setRoomNameUndefined: Self = StObject.set(x, "RoomName", js.undefined)
   }
 }

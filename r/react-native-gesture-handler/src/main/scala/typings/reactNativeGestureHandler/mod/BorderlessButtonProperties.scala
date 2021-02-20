@@ -1,5 +1,6 @@
 package typings.reactNativeGestureHandler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object BorderlessButtonProperties {
   }
   
   @scala.inline
-  implicit class BorderlessButtonPropertiesOps[Self <: BorderlessButtonProperties] (val x: Self) extends AnyVal {
+  implicit class BorderlessButtonPropertiesMutableBuilder[Self <: BorderlessButtonProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveOpacity(value: Double): Self = this.set("activeOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActiveOpacity: Self = this.set("activeOpacity", js.undefined)
-    
-    @scala.inline
-    def setBorderless(value: Boolean): Self = this.set("borderless", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderless: Self = this.set("borderless", js.undefined)
+    def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
   }
 }

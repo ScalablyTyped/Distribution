@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.security
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.3.1
   */
 @js.native
-trait XCertificateContainer extends js.Object {
+trait XCertificateContainer extends StObject {
   
   /**
     * Store the certificate in memory.
@@ -41,24 +42,12 @@ object XCertificateContainer {
   }
   
   @scala.inline
-  implicit class XCertificateContainerOps[Self <: XCertificateContainer] (val x: Self) extends AnyVal {
+  implicit class XCertificateContainerMutableBuilder[Self <: XCertificateContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCertificate(value: (String, String, Boolean) => Boolean): Self = StObject.set(x, "addCertificate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddCertificate(value: (String, String, Boolean) => Boolean): Self = this.set("addCertificate", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setHasCertificate(value: (String, String) => CertificateContainerStatus): Self = this.set("hasCertificate", js.Any.fromFunction2(value))
+    def setHasCertificate(value: (String, String) => CertificateContainerStatus): Self = StObject.set(x, "hasCertificate", js.Any.fromFunction2(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.relayRuntime.anon
 
 import typings.relayRuntime.relayRuntimeStrings.available
 import typings.relayRuntime.relayStoreTypesMod.OperationAvailability
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object FetchTime {
   }
   
   @scala.inline
-  implicit class FetchTimeOps[Self <: FetchTime] (val x: Self) extends AnyVal {
+  implicit class FetchTimeMutableBuilder[Self <: FetchTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFetchTime(value: Double): Self = StObject.set(x, "fetchTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFetchTimeNull: Self = StObject.set(x, "fetchTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetchTimeUndefined: Self = StObject.set(x, "fetchTime", js.undefined)
     
     @scala.inline
-    def setStatus(value: available): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFetchTime(value: Double): Self = this.set("fetchTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFetchTime: Self = this.set("fetchTime", js.undefined)
-    
-    @scala.inline
-    def setFetchTimeNull: Self = this.set("fetchTime", null)
+    def setStatus(value: available): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

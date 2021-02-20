@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see AssociationForeignKeyOptions
   */
 @js.native
-trait ColumnOptions extends js.Object {
+trait ColumnOptions extends StObject {
   
   /**
     * If false, the column will have a NOT NULL constraint, and a not null validation will be run before an
@@ -44,36 +45,24 @@ object ColumnOptions {
   }
   
   @scala.inline
-  implicit class ColumnOptionsOps[Self <: ColumnOptions] (val x: Self) extends AnyVal {
+  implicit class ColumnOptionsMutableBuilder[Self <: ColumnOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowNull(value: Boolean): Self = this.set("allowNull", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def deleteAllowNull: Self = this.set("allowNull", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
-    
-    @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

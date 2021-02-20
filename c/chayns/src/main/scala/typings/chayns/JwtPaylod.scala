@@ -1,5 +1,6 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 // chayns.utils.getJwtPayload()
 @js.native
-trait JwtPaylod extends js.Object {
+trait JwtPaylod extends StObject {
   
   var FacebookUserID: String = js.native
   
@@ -48,42 +49,30 @@ object JwtPaylod {
   }
   
   @scala.inline
-  implicit class JwtPaylodOps[Self <: JwtPaylod] (val x: Self) extends AnyVal {
+  implicit class JwtPaylodMutableBuilder[Self <: JwtPaylod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFacebookUserID(value: String): Self = StObject.set(x, "FacebookUserID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsAdmin(value: Boolean): Self = StObject.set(x, "isAdmin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacebookUserID(value: String): Self = this.set("FacebookUserID", value.asInstanceOf[js.Any])
+    def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: String): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    def setLocationID(value: Double): Self = StObject.set(x, "LocationID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastName(value: String): Self = this.set("LastName", value.asInstanceOf[js.Any])
+    def setLoginType(value: Double): Self = StObject.set(x, "LoginType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationID(value: Double): Self = this.set("LocationID", value.asInstanceOf[js.Any])
+    def setPersonID(value: String): Self = StObject.set(x, "PersonID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginType(value: Double): Self = this.set("LoginType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPersonID(value: String): Self = this.set("PersonID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTobitUserID(value: Double): Self = this.set("TobitUserID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsAdmin(value: Boolean): Self = this.set("isAdmin", value.asInstanceOf[js.Any])
+    def setTobitUserID(value: Double): Self = StObject.set(x, "TobitUserID", value.asInstanceOf[js.Any])
   }
 }

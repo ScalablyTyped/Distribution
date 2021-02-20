@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Exception
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbstractAssetTask extends js.Object {
+trait AbstractAssetTask extends StObject {
   
   var _errorObject: js.Any = js.native
   

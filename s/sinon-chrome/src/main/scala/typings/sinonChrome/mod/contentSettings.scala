@@ -1,27 +1,54 @@
 package typings.sinonChrome.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "contentSettings")
-@js.native
-object contentSettings extends js.Object {
+object contentSettings {
   
-  var cookies: StubbedContentSetting = js.native
+  @JSImport("sinon-chrome", "contentSettings")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var images: StubbedContentSetting = js.native
+  @JSImport("sinon-chrome", "contentSettings.cookies")
+  @js.native
+  def cookies: StubbedContentSetting = js.native
+  @scala.inline
+  def cookies_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookies")(x.asInstanceOf[js.Any])
   
-  var javascript: StubbedContentSetting = js.native
+  @JSImport("sinon-chrome", "contentSettings.images")
+  @js.native
+  def images: StubbedContentSetting = js.native
+  @scala.inline
+  def images_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("images")(x.asInstanceOf[js.Any])
   
-  var notifications: StubbedContentSetting = js.native
+  @JSImport("sinon-chrome", "contentSettings.javascript")
+  @js.native
+  def javascript: StubbedContentSetting = js.native
+  @scala.inline
+  def javascript_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("javascript")(x.asInstanceOf[js.Any])
   
-  var plugins: StubbedContentSetting = js.native
+  @JSImport("sinon-chrome", "contentSettings.notifications")
+  @js.native
+  def notifications: StubbedContentSetting = js.native
+  @scala.inline
+  def notifications_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notifications")(x.asInstanceOf[js.Any])
   
-  var popups: StubbedContentSetting = js.native
+  @JSImport("sinon-chrome", "contentSettings.plugins")
+  @js.native
+  def plugins: StubbedContentSetting = js.native
+  @scala.inline
+  def plugins_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "contentSettings.popups")
+  @js.native
+  def popups: StubbedContentSetting = js.native
+  @scala.inline
+  def popups_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popups")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait StubbedContentSetting extends js.Object {
+  trait StubbedContentSetting extends StObject {
     
     // Methods
     def clear(

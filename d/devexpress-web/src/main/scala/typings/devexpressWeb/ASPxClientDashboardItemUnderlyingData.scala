@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a list of records from the dashboard data source.
   */
 @js.native
-trait ASPxClientDashboardItemUnderlyingData extends js.Object {
+trait ASPxClientDashboardItemUnderlyingData extends StObject {
   
   /**
     * Returns an array of data members available in a data source.
@@ -52,33 +53,21 @@ object ASPxClientDashboardItemUnderlyingData {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardItemUnderlyingDataOps[Self <: ASPxClientDashboardItemUnderlyingData] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardItemUnderlyingDataMutableBuilder[Self <: ASPxClientDashboardItemUnderlyingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDataMembers(value: () => js.Array[String]): Self = StObject.set(x, "GetDataMembers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRequestDataError(value: () => String): Self = StObject.set(x, "GetRequestDataError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRowCount(value: () => Double): Self = StObject.set(x, "GetRowCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDataMembers(value: () => js.Array[String]): Self = this.set("GetDataMembers", js.Any.fromFunction0(value))
+    def setGetRowValue(value: (Double, String) => js.Any): Self = StObject.set(x, "GetRowValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetRequestDataError(value: () => String): Self = this.set("GetRequestDataError", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRowCount(value: () => Double): Self = this.set("GetRowCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRowValue(value: (Double, String) => js.Any): Self = this.set("GetRowValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setIsDataReceived(value: () => Boolean): Self = this.set("IsDataReceived", js.Any.fromFunction0(value))
+    def setIsDataReceived(value: () => Boolean): Self = StObject.set(x, "IsDataReceived", js.Any.fromFunction0(value))
   }
 }

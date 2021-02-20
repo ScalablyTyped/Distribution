@@ -1,12 +1,13 @@
 package typings.wegameApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  keyList :std.Array<string>} & wegame-api.wx.types.CallbacksWithType2<{  encryptedData :string,   cloudID :string}, {  errMsg :string,   errCode :number}> */
 @js.native
-trait keyListArraystringCallbac extends js.Object {
+trait keyListArraystringCallbac extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -28,42 +29,30 @@ object keyListArraystringCallbac {
   }
   
   @scala.inline
-  implicit class keyListArraystringCallbacOps[Self <: keyListArraystringCallbac] (val x: Self) extends AnyVal {
+  implicit class keyListArraystringCallbacMutableBuilder[Self <: keyListArraystringCallbac] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: /* res */ ErrCode => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyListVarargs(value: String*): Self = this.set("keyList", js.Array(value :_*))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setKeyList(value: js.Array[String]): Self = this.set("keyList", value.asInstanceOf[js.Any])
+    def setKeyList(value: js.Array[String]): Self = StObject.set(x, "keyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setKeyListVarargs(value: String*): Self = StObject.set(x, "keyList", js.Array(value :_*))
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setSuccess(value: /* res */ CloudID => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFail(value: /* res */ ErrCode => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ CloudID => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

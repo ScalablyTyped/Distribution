@@ -3,12 +3,13 @@ package typings.popcorn
 import typings.std.ClientRect
 import typings.std.HTMLMediaElement
 import typings.std.TimeRanges
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopcornImpl extends js.Object {
+trait PopcornImpl extends StObject {
   
   def autoplay(flag: Boolean): js.Any = js.native
   
@@ -87,7 +88,7 @@ trait PopcornImpl extends js.Object {
   
   def seekable(): js.Any = js.native
   
-   // TimeRages?
+  // TimeRages?
   def seeking(): Boolean = js.native
   
   def toggle(pluginName: String): js.Any = js.native

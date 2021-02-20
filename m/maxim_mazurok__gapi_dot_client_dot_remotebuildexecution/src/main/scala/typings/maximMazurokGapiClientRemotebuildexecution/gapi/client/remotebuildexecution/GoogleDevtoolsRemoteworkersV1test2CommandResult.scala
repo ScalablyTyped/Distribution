@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDevtoolsRemoteworkersV1test2CommandResult extends js.Object {
+trait GoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject {
   
   /**
     * The elapsed time between calling Accept and Complete. The server will also have its own idea of what this should be, but this excludes the overhead of the RPCs and the bot response
@@ -54,38 +55,19 @@ object GoogleDevtoolsRemoteworkersV1test2CommandResult {
   }
   
   @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2CommandResultOps[Self <: GoogleDevtoolsRemoteworkersV1test2CommandResult] (val x: Self) extends AnyVal {
+  implicit class GoogleDevtoolsRemoteworkersV1test2CommandResultMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExitCode: Self = this.set("exitCode", js.undefined)
-    
-    @scala.inline
-    def setMetadataVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult with TopLevel[js.Any])*
-    ): Self = this.set("metadata", js.Array(value :_*))
+    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
     @scala.inline
     def setMetadata(
@@ -94,27 +76,34 @@ object GoogleDevtoolsRemoteworkersV1test2CommandResult {
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult with TopLevel[js.Any]
         ]
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setOutputs(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setMetadataVarargs(
+      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: any}
+      */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult with TopLevel[js.Any])*
+    ): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
     @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    def setOutputs(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverhead(value: String): Self = this.set("overhead", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
     @scala.inline
-    def deleteOverhead: Self = this.set("overhead", js.undefined)
+    def setOverhead(value: String): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: GoogleRpcStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

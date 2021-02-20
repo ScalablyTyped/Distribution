@@ -1,12 +1,13 @@
 package typings.node.inspectorMod.Debugger
 
 import typings.node.inspectorMod.Runtime.ScriptId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetScriptSourceParameterType extends js.Object {
+trait GetScriptSourceParameterType extends StObject {
   
   /**
     * Id of the script to get source for.
@@ -22,21 +23,9 @@ object GetScriptSourceParameterType {
   }
   
   @scala.inline
-  implicit class GetScriptSourceParameterTypeOps[Self <: GetScriptSourceParameterType] (val x: Self) extends AnyVal {
+  implicit class GetScriptSourceParameterTypeMutableBuilder[Self <: GetScriptSourceParameterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("scriptId", value.asInstanceOf[js.Any])
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
   }
 }

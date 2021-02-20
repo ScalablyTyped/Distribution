@@ -1,5 +1,6 @@
 package typings.twilioVideo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twilioVideo.twilioVideoStrings.predicted
   - typings.twilioVideo.twilioVideoStrings.disabled
 */
-trait TrackSwitchOffMode extends js.Object
+trait TrackSwitchOffMode extends StObject
 object TrackSwitchOffMode {
   
   @scala.inline

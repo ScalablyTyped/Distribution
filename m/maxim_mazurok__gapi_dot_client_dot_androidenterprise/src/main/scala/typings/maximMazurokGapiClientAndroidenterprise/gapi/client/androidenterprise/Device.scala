@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Device extends js.Object {
+trait Device extends StObject {
   
   /** The Google Play Services Android ID for the device encoded as a lowercase hex string. For example, "123456789abcdef0". */
   var androidId: js.UndefOr[String] = js.native
@@ -33,42 +34,30 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidIdUndefined: Self = StObject.set(x, "androidId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagementType(value: String): Self = StObject.set(x, "managementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidId(value: String): Self = this.set("androidId", value.asInstanceOf[js.Any])
+    def setManagementTypeUndefined: Self = StObject.set(x, "managementType", js.undefined)
     
     @scala.inline
-    def deleteAndroidId: Self = this.set("androidId", js.undefined)
+    def setPolicy(value: Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagementType(value: String): Self = this.set("managementType", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def deleteManagementType: Self = this.set("managementType", js.undefined)
+    def setReport(value: DeviceReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: Policy): Self = this.set("policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
-    
-    @scala.inline
-    def setReport(value: DeviceReport): Self = this.set("report", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReport: Self = this.set("report", js.undefined)
+    def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
   }
 }

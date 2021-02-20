@@ -1,42 +1,43 @@
 package typings.jqueryDynatree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynaTreeDNDOptions extends js.Object {
+trait DynaTreeDNDOptions extends StObject {
   
   var autoExpandMS: js.UndefOr[Double] = js.native
   
-   // Callback(sourceNode)
+  // Callback(sourceNode)
   // Make tree nodes accept draggables
   var onDragEnter: js.UndefOr[js.Function2[/* targetNode */ js.Any, /* sourceNode */ js.Any, Unit]] = js.native
   
-   // Callback(targetNode, sourceNode, hitMode)
+  // Callback(targetNode, sourceNode, hitMode)
   var onDragLeave: js.UndefOr[js.Function2[/* targetNode */ js.Any, /* sourceNode */ js.Any, Unit]] = js.native
   
-   // Callback(targetNode, sourceNode)
+  // Callback(targetNode, sourceNode)
   var onDragOver: js.UndefOr[
     js.Function3[/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String, Unit]
   ] = js.native
   
-   // true: slide helper back to source if drop is rejected
+  // true: slide helper back to source if drop is rejected
   // Make tree nodes draggable:
   var onDragStart: js.UndefOr[js.Function1[/* sourceNode */ js.Any, Unit]] = js.native
   
-   // Callback(sourceNode), return true, to enable dnd
+  // Callback(sourceNode), return true, to enable dnd
   var onDragStop: js.UndefOr[js.Function1[/* sourceNode */ js.Any, Unit]] = js.native
   
-    // Callback(targetNode, sourceNode, hitMode)
+  // Callback(targetNode, sourceNode, hitMode)
   var onDrop: js.UndefOr[
     js.Function3[/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String, Unit]
   ] = js.native
   
-   // Expand nodes after n milliseconds of hovering.
+  // Expand nodes after n milliseconds of hovering.
   var preventVoidMoves: js.UndefOr[Boolean] = js.native
   
-   // Prevent dropping nodes 'before self', etc.
+  // Prevent dropping nodes 'before self', etc.
   var revert: Boolean = js.native
 }
 object DynaTreeDNDOptions {
@@ -48,69 +49,57 @@ object DynaTreeDNDOptions {
   }
   
   @scala.inline
-  implicit class DynaTreeDNDOptionsOps[Self <: DynaTreeDNDOptions] (val x: Self) extends AnyVal {
+  implicit class DynaTreeDNDOptionsMutableBuilder[Self <: DynaTreeDNDOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoExpandMS(value: Double): Self = StObject.set(x, "autoExpandMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoExpandMSUndefined: Self = StObject.set(x, "autoExpandMS", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnDragEnter(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRevert(value: Boolean): Self = this.set("revert", value.asInstanceOf[js.Any])
+    def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
     @scala.inline
-    def setAutoExpandMS(value: Double): Self = this.set("autoExpandMS", value.asInstanceOf[js.Any])
+    def setOnDragLeave(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteAutoExpandMS: Self = this.set("autoExpandMS", js.undefined)
+    def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
     
     @scala.inline
-    def setOnDragEnter(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit): Self = this.set("onDragEnter", js.Any.fromFunction2(value))
+    def setOnDragOver(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
     @scala.inline
-    def setOnDragLeave(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit): Self = this.set("onDragLeave", js.Any.fromFunction2(value))
+    def setOnDragStart(value: /* sourceNode */ js.Any => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDragLeave: Self = this.set("onDragLeave", js.undefined)
+    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     @scala.inline
-    def setOnDragOver(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String) => Unit): Self = this.set("onDragOver", js.Any.fromFunction3(value))
+    def setOnDragStop(value: /* sourceNode */ js.Any => Unit): Self = StObject.set(x, "onDragStop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    def setOnDragStopUndefined: Self = StObject.set(x, "onDragStop", js.undefined)
     
     @scala.inline
-    def setOnDragStart(value: /* sourceNode */ js.Any => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
+    def setOnDrop(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     
     @scala.inline
-    def setOnDragStop(value: /* sourceNode */ js.Any => Unit): Self = this.set("onDragStop", js.Any.fromFunction1(value))
+    def setPreventVoidMoves(value: Boolean): Self = StObject.set(x, "preventVoidMoves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnDragStop: Self = this.set("onDragStop", js.undefined)
+    def setPreventVoidMovesUndefined: Self = StObject.set(x, "preventVoidMoves", js.undefined)
     
     @scala.inline
-    def setOnDrop(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String) => Unit): Self = this.set("onDrop", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteOnDrop: Self = this.set("onDrop", js.undefined)
-    
-    @scala.inline
-    def setPreventVoidMoves(value: Boolean): Self = this.set("preventVoidMoves", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreventVoidMoves: Self = this.set("preventVoidMoves", js.undefined)
+    def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.evernote.mod.Types
 
 import typings.evernote.anon.FileSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.RelatedContentImage")
 @js.native
-class RelatedContentImage () extends js.Object {
+class RelatedContentImage () extends StObject {
   def this(args: FileSize) = this()
   
   var fileSize: js.UndefOr[Double] = js.native

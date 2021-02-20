@@ -5,13 +5,14 @@ import typings.aliOss.anon.Data
 import typings.aliOss.anon.DataRes
 import typings.aliOss.anon.Expires
 import typings.aliOss.anon.Res
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ali-oss", "ImageClient")
 @js.native
-class ImageClient protected () extends js.Object {
+class ImageClient protected () extends StObject {
   def this(options: ImageClientOptions) = this()
   
   /**

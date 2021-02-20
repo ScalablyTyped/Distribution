@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Device extends js.Object {
+trait Device extends StObject {
   
   /**
     * If a device is blocked, connections or requests from this device will fail. Can be used to temporarily prevent the device from connecting if, for example, the sensor is generating
@@ -95,127 +96,115 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocked(value: Boolean): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: DeviceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocked(value: Boolean): Self = this.set("blocked", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteBlocked: Self = this.set("blocked", js.undefined)
+    def setCredentials(value: js.Array[DeviceCredential]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: DeviceConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setCredentialsVarargs(value: DeviceCredential*): Self = StObject.set(x, "credentials", js.Array(value :_*))
     
     @scala.inline
-    def setCredentialsVarargs(value: DeviceCredential*): Self = this.set("credentials", js.Array(value :_*))
+    def setGatewayConfig(value: GatewayConfig): Self = StObject.set(x, "gatewayConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: js.Array[DeviceCredential]): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setGatewayConfigUndefined: Self = StObject.set(x, "gatewayConfig", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayConfig(value: GatewayConfig): Self = this.set("gatewayConfig", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGatewayConfig: Self = this.set("gatewayConfig", js.undefined)
+    def setLastConfigAckTime(value: String): Self = StObject.set(x, "lastConfigAckTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLastConfigAckTimeUndefined: Self = StObject.set(x, "lastConfigAckTime", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLastConfigSendTime(value: String): Self = StObject.set(x, "lastConfigSendTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastConfigAckTime(value: String): Self = this.set("lastConfigAckTime", value.asInstanceOf[js.Any])
+    def setLastConfigSendTimeUndefined: Self = StObject.set(x, "lastConfigSendTime", js.undefined)
     
     @scala.inline
-    def deleteLastConfigAckTime: Self = this.set("lastConfigAckTime", js.undefined)
+    def setLastErrorStatus(value: Status): Self = StObject.set(x, "lastErrorStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastConfigSendTime(value: String): Self = this.set("lastConfigSendTime", value.asInstanceOf[js.Any])
+    def setLastErrorStatusUndefined: Self = StObject.set(x, "lastErrorStatus", js.undefined)
     
     @scala.inline
-    def deleteLastConfigSendTime: Self = this.set("lastConfigSendTime", js.undefined)
+    def setLastErrorTime(value: String): Self = StObject.set(x, "lastErrorTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastErrorStatus(value: Status): Self = this.set("lastErrorStatus", value.asInstanceOf[js.Any])
+    def setLastErrorTimeUndefined: Self = StObject.set(x, "lastErrorTime", js.undefined)
     
     @scala.inline
-    def deleteLastErrorStatus: Self = this.set("lastErrorStatus", js.undefined)
+    def setLastEventTime(value: String): Self = StObject.set(x, "lastEventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastErrorTime(value: String): Self = this.set("lastErrorTime", value.asInstanceOf[js.Any])
+    def setLastEventTimeUndefined: Self = StObject.set(x, "lastEventTime", js.undefined)
     
     @scala.inline
-    def deleteLastErrorTime: Self = this.set("lastErrorTime", js.undefined)
+    def setLastHeartbeatTime(value: String): Self = StObject.set(x, "lastHeartbeatTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEventTime(value: String): Self = this.set("lastEventTime", value.asInstanceOf[js.Any])
+    def setLastHeartbeatTimeUndefined: Self = StObject.set(x, "lastHeartbeatTime", js.undefined)
     
     @scala.inline
-    def deleteLastEventTime: Self = this.set("lastEventTime", js.undefined)
+    def setLastStateTime(value: String): Self = StObject.set(x, "lastStateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastHeartbeatTime(value: String): Self = this.set("lastHeartbeatTime", value.asInstanceOf[js.Any])
+    def setLastStateTimeUndefined: Self = StObject.set(x, "lastStateTime", js.undefined)
     
     @scala.inline
-    def deleteLastHeartbeatTime: Self = this.set("lastHeartbeatTime", js.undefined)
+    def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStateTime(value: String): Self = this.set("lastStateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastStateTime: Self = this.set("lastStateTime", js.undefined)
-    
-    @scala.inline
-    def setLogLevel(value: String): Self = this.set("logLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device with TopLevel[js.Any]
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNumId(value: String): Self = this.set("numId", value.asInstanceOf[js.Any])
+    def setNumId(value: String): Self = StObject.set(x, "numId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumId: Self = this.set("numId", js.undefined)
+    def setNumIdUndefined: Self = StObject.set(x, "numId", js.undefined)
     
     @scala.inline
-    def setState(value: DeviceState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: DeviceState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

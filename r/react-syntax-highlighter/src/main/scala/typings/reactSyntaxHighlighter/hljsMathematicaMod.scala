@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/languages/hljs/mathematica", JSImport.Namespace)
-@js.native
-object hljsMathematicaMod extends js.Object {
+object hljsMathematicaMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/languages/hljs/mathematica", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

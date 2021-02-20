@@ -1,6 +1,7 @@
 package typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * requests.
   */
 @js.native
-trait SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance extends js.Object {
+trait SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance extends StObject {
   
   /**
     * Platform specific contextual information under which the service instance
@@ -89,84 +90,72 @@ object SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1alpha1ServiceInstanceOps[Self <: SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudServicebrokerV1alpha1ServiceInstanceMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: StringDictionary[js.Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: StringDictionary[js.Any]): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setDeploymentName(value: String): Self = StObject.set(x, "deploymentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDeploymentNameUndefined: Self = StObject.set(x, "deploymentName", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setInstance_id(value: String): Self = StObject.set(x, "instance_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentName(value: String): Self = this.set("deploymentName", value.asInstanceOf[js.Any])
+    def setInstance_idUndefined: Self = StObject.set(x, "instance_id", js.undefined)
     
     @scala.inline
-    def deleteDeploymentName: Self = this.set("deploymentName", js.undefined)
+    def setOrganization_guid(value: String): Self = StObject.set(x, "organization_guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance_id(value: String): Self = this.set("instance_id", value.asInstanceOf[js.Any])
+    def setOrganization_guidUndefined: Self = StObject.set(x, "organization_guid", js.undefined)
     
     @scala.inline
-    def deleteInstance_id: Self = this.set("instance_id", js.undefined)
+    def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization_guid(value: String): Self = this.set("organization_guid", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteOrganization_guid: Self = this.set("organization_guid", js.undefined)
+    def setPlan_id(value: String): Self = StObject.set(x, "plan_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: StringDictionary[js.Any]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setPlan_idUndefined: Self = StObject.set(x, "plan_id", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setPrevious_values(value: StringDictionary[js.Any]): Self = StObject.set(x, "previous_values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlan_id(value: String): Self = this.set("plan_id", value.asInstanceOf[js.Any])
+    def setPrevious_valuesUndefined: Self = StObject.set(x, "previous_values", js.undefined)
     
     @scala.inline
-    def deletePlan_id: Self = this.set("plan_id", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevious_values(value: StringDictionary[js.Any]): Self = this.set("previous_values", value.asInstanceOf[js.Any])
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def deletePrevious_values: Self = this.set("previous_values", js.undefined)
+    def setService_id(value: String): Self = StObject.set(x, "service_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setService_idUndefined: Self = StObject.set(x, "service_id", js.undefined)
     
     @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setSpace_guid(value: String): Self = StObject.set(x, "space_guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService_id(value: String): Self = this.set("service_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService_id: Self = this.set("service_id", js.undefined)
-    
-    @scala.inline
-    def setSpace_guid(value: String): Self = this.set("space_guid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpace_guid: Self = this.set("space_guid", js.undefined)
+    def setSpace_guidUndefined: Self = StObject.set(x, "space_guid", js.undefined)
   }
 }

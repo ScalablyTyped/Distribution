@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTpu.gapi.client.tpu
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAcceleratorTypesResponse extends js.Object {
+trait ListAcceleratorTypesResponse extends StObject {
   
   /** The listed nodes. */
   var acceleratorTypes: js.UndefOr[js.Array[AcceleratorType]] = js.native
@@ -25,42 +26,30 @@ object ListAcceleratorTypesResponse {
   }
   
   @scala.inline
-  implicit class ListAcceleratorTypesResponseOps[Self <: ListAcceleratorTypesResponse] (val x: Self) extends AnyVal {
+  implicit class ListAcceleratorTypesResponseMutableBuilder[Self <: ListAcceleratorTypesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorTypes(value: js.Array[AcceleratorType]): Self = StObject.set(x, "acceleratorTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorTypesUndefined: Self = StObject.set(x, "acceleratorTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceleratorTypesVarargs(value: AcceleratorType*): Self = StObject.set(x, "acceleratorTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAcceleratorTypesVarargs(value: AcceleratorType*): Self = this.set("acceleratorTypes", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorTypes(value: js.Array[AcceleratorType]): Self = this.set("acceleratorTypes", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteAcceleratorTypes: Self = this.set("acceleratorTypes", js.undefined)
+    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = this.set("unreachable", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = this.set("unreachable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreachable: Self = this.set("unreachable", js.undefined)
+    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
   }
 }

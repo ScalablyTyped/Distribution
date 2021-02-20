@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDrive.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InheritedFrom extends js.Object {
+trait InheritedFrom extends StObject {
   
   /** Deprecated - use permissionDetails/inherited instead. */
   var inherited: js.UndefOr[Boolean] = js.native
@@ -28,42 +29,30 @@ object InheritedFrom {
   }
   
   @scala.inline
-  implicit class InheritedFromOps[Self <: InheritedFrom] (val x: Self) extends AnyVal {
+  implicit class InheritedFromMutableBuilder[Self <: InheritedFrom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInheritedFrom(value: String): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInheritedFromUndefined: Self = StObject.set(x, "inheritedFrom", js.undefined)
     
     @scala.inline
-    def setInherited(value: Boolean): Self = this.set("inherited", value.asInstanceOf[js.Any])
+    def setInheritedUndefined: Self = StObject.set(x, "inherited", js.undefined)
     
     @scala.inline
-    def deleteInherited: Self = this.set("inherited", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInheritedFrom(value: String): Self = this.set("inheritedFrom", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteInheritedFrom: Self = this.set("inheritedFrom", js.undefined)
+    def setTeamDrivePermissionType(value: String): Self = StObject.set(x, "teamDrivePermissionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
-    
-    @scala.inline
-    def setTeamDrivePermissionType(value: String): Self = this.set("teamDrivePermissionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeamDrivePermissionType: Self = this.set("teamDrivePermissionType", js.undefined)
+    def setTeamDrivePermissionTypeUndefined: Self = StObject.set(x, "teamDrivePermissionType", js.undefined)
   }
 }

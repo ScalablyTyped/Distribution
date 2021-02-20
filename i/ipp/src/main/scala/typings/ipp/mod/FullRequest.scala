@@ -1,12 +1,13 @@
 package typings.ipp.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FullRequest extends js.Object {
+trait FullRequest extends StObject {
   
   var data: js.UndefOr[Buffer] = js.native
   
@@ -23,36 +24,24 @@ object FullRequest {
   }
   
   @scala.inline
-  implicit class FullRequestOps[Self <: FullRequest] (val x: Self) extends AnyVal {
+  implicit class FullRequestMutableBuilder[Self <: FullRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setJob-attributes-tag`(value: JobTemplateAttributes): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Buffer): Self = this.set("data", value.asInstanceOf[js.Any])
+    def `setJob-attributes-tagUndefined`: Self = StObject.set(x, "job-attributes-tag", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def `setOperation-attributes-tag`(value: OperationAttributes): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-attributes-tag`(value: JobTemplateAttributes): Self = this.set("job-attributes-tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteJob-attributes-tag`: Self = this.set("job-attributes-tag", js.undefined)
-    
-    @scala.inline
-    def `setOperation-attributes-tag`(value: OperationAttributes): Self = this.set("operation-attributes-tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteOperation-attributes-tag`: Self = this.set("operation-attributes-tag", js.undefined)
+    def `setOperation-attributes-tagUndefined`: Self = StObject.set(x, "operation-attributes-tag", js.undefined)
   }
 }

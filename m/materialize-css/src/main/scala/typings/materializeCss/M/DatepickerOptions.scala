@@ -3,12 +3,13 @@ package typings.materializeCss.M
 import typings.std.Date
 import typings.std.Element
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatepickerOptions extends js.Object {
+trait DatepickerOptions extends StObject {
   
   /**
     * Automatically close picker when date is selected
@@ -168,94 +169,82 @@ object DatepickerOptions {
   }
   
   @scala.inline
-  implicit class DatepickerOptionsOps[Self <: DatepickerOptions] (val x: Self) extends AnyVal {
+  implicit class DatepickerOptionsMutableBuilder[Self <: DatepickerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultDate(value: Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoClose(value: Boolean): Self = this.set("autoClose", value.asInstanceOf[js.Any])
+    def setDisableDayFn(value: Date => Boolean): Self = StObject.set(x, "disableDayFn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainer(value: Element): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDisableWeekends(value: Boolean): Self = StObject.set(x, "disableWeekends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDate(value: Date): Self = this.set("defaultDate", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDayFn(value: Date => Boolean): Self = this.set("disableDayFn", js.Any.fromFunction1(value))
+    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setDisableWeekends(value: Boolean): Self = this.set("disableWeekends", value.asInstanceOf[js.Any])
+    def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
-    
-    @scala.inline
-    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFirstDay(value: Double): Self = this.set("firstDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setI18n(
       value: Partial[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
         ]
-    ): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRTL(value: Boolean): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDate(value: Date): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDate(value: Date): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnDraw(value: () => Unit): Self = this.set("onDraw", js.Any.fromFunction0(value))
+    def setOnDraw(value: () => Unit): Self = StObject.set(x, "onDraw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnOpen(value: () => Unit): Self = this.set("onOpen", js.Any.fromFunction0(value))
+    def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSelect(value: Date => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    def setOnSelect(value: Date => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParse(value: (String, String) => Date): Self = this.set("parse", js.Any.fromFunction2(value))
+    def setParse(value: (String, String) => Date): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetDefaultDate(value: Boolean): Self = this.set("setDefaultDate", value.asInstanceOf[js.Any])
+    def setSetDefaultDate(value: Boolean): Self = StObject.set(x, "setDefaultDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowClearBtn(value: Boolean): Self = this.set("showClearBtn", value.asInstanceOf[js.Any])
+    def setShowClearBtn(value: Boolean): Self = StObject.set(x, "showClearBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDaysInNextAndPreviousMonths(value: Boolean): Self = this.set("showDaysInNextAndPreviousMonths", value.asInstanceOf[js.Any])
+    def setShowDaysInNextAndPreviousMonths(value: Boolean): Self = StObject.set(x, "showDaysInNextAndPreviousMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMonthAfterYear(value: Boolean): Self = this.set("showMonthAfterYear", value.asInstanceOf[js.Any])
+    def setShowMonthAfterYear(value: Boolean): Self = StObject.set(x, "showMonthAfterYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYearRangeVarargs(value: Double*): Self = this.set("yearRange", js.Array(value :_*))
+    def setYearRange(value: Double | js.Array[Double]): Self = StObject.set(x, "yearRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYearRange(value: Double | js.Array[Double]): Self = this.set("yearRange", value.asInstanceOf[js.Any])
+    def setYearRangeVarargs(value: Double*): Self = StObject.set(x, "yearRange", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Method represents a method of an API interface.
   */
 @js.native
-trait SchemaMethod extends js.Object {
+trait SchemaMethod extends StObject {
   
   /**
     * The simple name of this method.
@@ -54,63 +55,51 @@ object SchemaMethod {
   }
   
   @scala.inline
-  implicit class SchemaMethodOps[Self <: SchemaMethod] (val x: Self) extends AnyVal {
+  implicit class SchemaMethodMutableBuilder[Self <: SchemaMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: js.Array[SchemaOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOptionsVarargs(value: SchemaOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: SchemaOption*): Self = this.set("options", js.Array(value :_*))
+    def setRequestStreaming(value: Boolean): Self = StObject.set(x, "requestStreaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[SchemaOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setRequestStreamingUndefined: Self = StObject.set(x, "requestStreaming", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setRequestTypeUrl(value: String): Self = StObject.set(x, "requestTypeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestStreaming(value: Boolean): Self = this.set("requestStreaming", value.asInstanceOf[js.Any])
+    def setRequestTypeUrlUndefined: Self = StObject.set(x, "requestTypeUrl", js.undefined)
     
     @scala.inline
-    def deleteRequestStreaming: Self = this.set("requestStreaming", js.undefined)
+    def setResponseStreaming(value: Boolean): Self = StObject.set(x, "responseStreaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTypeUrl(value: String): Self = this.set("requestTypeUrl", value.asInstanceOf[js.Any])
+    def setResponseStreamingUndefined: Self = StObject.set(x, "responseStreaming", js.undefined)
     
     @scala.inline
-    def deleteRequestTypeUrl: Self = this.set("requestTypeUrl", js.undefined)
+    def setResponseTypeUrl(value: String): Self = StObject.set(x, "responseTypeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseStreaming(value: Boolean): Self = this.set("responseStreaming", value.asInstanceOf[js.Any])
+    def setResponseTypeUrlUndefined: Self = StObject.set(x, "responseTypeUrl", js.undefined)
     
     @scala.inline
-    def deleteResponseStreaming: Self = this.set("responseStreaming", js.undefined)
+    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseTypeUrl(value: String): Self = this.set("responseTypeUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseTypeUrl: Self = this.set("responseTypeUrl", js.undefined)
-    
-    @scala.inline
-    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyntax: Self = this.set("syntax", js.undefined)
+    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
   }
 }

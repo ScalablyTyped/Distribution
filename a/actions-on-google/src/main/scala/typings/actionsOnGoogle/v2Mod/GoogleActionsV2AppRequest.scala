@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2AppRequest extends js.Object {
+trait GoogleActionsV2AppRequest extends StObject {
   
   /**
     * Surfaces available for cross surface handoff.
@@ -54,66 +55,54 @@ object GoogleActionsV2AppRequest {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2AppRequestOps[Self <: GoogleActionsV2AppRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2AppRequestMutableBuilder[Self <: GoogleActionsV2AppRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableSurfaces(value: js.Array[GoogleActionsV2Surface]): Self = StObject.set(x, "availableSurfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableSurfacesUndefined: Self = StObject.set(x, "availableSurfaces", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailableSurfacesVarargs(value: GoogleActionsV2Surface*): Self = StObject.set(x, "availableSurfaces", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableSurfacesVarargs(value: GoogleActionsV2Surface*): Self = this.set("availableSurfaces", js.Array(value :_*))
+    def setConversation(value: GoogleActionsV2Conversation): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableSurfaces(value: js.Array[GoogleActionsV2Surface]): Self = this.set("availableSurfaces", value.asInstanceOf[js.Any])
+    def setConversationUndefined: Self = StObject.set(x, "conversation", js.undefined)
     
     @scala.inline
-    def deleteAvailableSurfaces: Self = this.set("availableSurfaces", js.undefined)
+    def setDevice(value: GoogleActionsV2Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversation(value: GoogleActionsV2Conversation): Self = this.set("conversation", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def deleteConversation: Self = this.set("conversation", js.undefined)
+    def setInputs(value: js.Array[GoogleActionsV2Input]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: GoogleActionsV2Device): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setInputsVarargs(value: GoogleActionsV2Input*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: GoogleActionsV2Input*): Self = this.set("inputs", js.Array(value :_*))
+    def setIsInSandbox(value: Boolean): Self = StObject.set(x, "isInSandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[GoogleActionsV2Input]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setIsInSandboxUndefined: Self = StObject.set(x, "isInSandbox", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setSurface(value: GoogleActionsV2Surface): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInSandbox(value: Boolean): Self = this.set("isInSandbox", value.asInstanceOf[js.Any])
+    def setSurfaceUndefined: Self = StObject.set(x, "surface", js.undefined)
     
     @scala.inline
-    def deleteIsInSandbox: Self = this.set("isInSandbox", js.undefined)
+    def setUser(value: GoogleActionsV2User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurface(value: GoogleActionsV2Surface): Self = this.set("surface", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSurface: Self = this.set("surface", js.undefined)
-    
-    @scala.inline
-    def setUser(value: GoogleActionsV2User): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

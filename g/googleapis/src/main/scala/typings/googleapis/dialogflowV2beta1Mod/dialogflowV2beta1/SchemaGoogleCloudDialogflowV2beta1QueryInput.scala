@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specifies which intent to trigger.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1QueryInput extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1QueryInput extends StObject {
   
   /**
     * Instructs the speech recognizer how to process the speech audio.
@@ -37,36 +38,24 @@ object SchemaGoogleCloudDialogflowV2beta1QueryInput {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1QueryInputOps[Self <: SchemaGoogleCloudDialogflowV2beta1QueryInput] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1QueryInputMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1QueryInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioConfig(value: SchemaGoogleCloudDialogflowV2beta1InputAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: SchemaGoogleCloudDialogflowV2beta1EventInput): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioConfig(value: SchemaGoogleCloudDialogflowV2beta1InputAudioConfig): Self = this.set("audioConfig", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteAudioConfig: Self = this.set("audioConfig", js.undefined)
+    def setText(value: SchemaGoogleCloudDialogflowV2beta1TextInput): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: SchemaGoogleCloudDialogflowV2beta1EventInput): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
-    
-    @scala.inline
-    def setText(value: SchemaGoogleCloudDialogflowV2beta1TextInput): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

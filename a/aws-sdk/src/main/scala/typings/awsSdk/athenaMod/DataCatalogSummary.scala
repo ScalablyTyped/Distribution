@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataCatalogSummary extends js.Object {
+trait DataCatalogSummary extends StObject {
   
   /**
     * The name of the data catalog.
@@ -26,30 +27,18 @@ object DataCatalogSummary {
   }
   
   @scala.inline
-  implicit class DataCatalogSummaryOps[Self <: DataCatalogSummary] (val x: Self) extends AnyVal {
+  implicit class DataCatalogSummaryMutableBuilder[Self <: DataCatalogSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogNameUndefined: Self = StObject.set(x, "CatalogName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: DataCatalogType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogName(value: CatalogNameString): Self = this.set("CatalogName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCatalogName: Self = this.set("CatalogName", js.undefined)
-    
-    @scala.inline
-    def setType(value: DataCatalogType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

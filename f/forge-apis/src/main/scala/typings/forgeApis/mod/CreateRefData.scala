@@ -1,11 +1,12 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRefData extends js.Object {
+trait CreateRefData extends StObject {
   
   var id: String = js.native
   
@@ -23,30 +24,18 @@ object CreateRefData {
   }
   
   @scala.inline
-  implicit class CreateRefDataOps[Self <: CreateRefData] (val x: Self) extends AnyVal {
+  implicit class CreateRefDataMutableBuilder[Self <: CreateRefData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeta(value: CreateRefDataMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeta(value: CreateRefDataMeta): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

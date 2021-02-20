@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionRiskData extends js.Object {
+trait TransactionRiskData extends StObject {
   
   var decision: String = js.native
   
@@ -24,30 +25,18 @@ object TransactionRiskData {
   }
   
   @scala.inline
-  implicit class TransactionRiskDataOps[Self <: TransactionRiskData] (val x: Self) extends AnyVal {
+  implicit class TransactionRiskDataMutableBuilder[Self <: TransactionRiskData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecision(value: String): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceDataCaptured(value: Boolean): Self = StObject.set(x, "deviceDataCaptured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFraudServiceProvider(value: String): Self = StObject.set(x, "fraudServiceProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecision(value: String): Self = this.set("decision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceDataCaptured(value: Boolean): Self = this.set("deviceDataCaptured", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFraudServiceProvider(value: String): Self = this.set("fraudServiceProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

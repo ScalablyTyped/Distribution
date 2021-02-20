@@ -1,5 +1,6 @@
 package typings.reactVis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ trait LabelSeriesProps extends AbstractSeriesProps[LabelSeriesPoint] {
   
   var allowOffsetToBeReversed: js.UndefOr[Boolean] = js.native
   
-   // default: 0
+  // default: 0
   var labelAnchorX: js.UndefOr[String] = js.native
   
   var labelAnchorY: js.UndefOr[String] = js.native
@@ -29,54 +30,42 @@ object LabelSeriesProps {
   }
   
   @scala.inline
-  implicit class LabelSeriesPropsOps[Self <: LabelSeriesProps] (val x: Self) extends AnyVal {
+  implicit class LabelSeriesPropsMutableBuilder[Self <: LabelSeriesProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowOffsetToBeReversed(value: Boolean): Self = StObject.set(x, "allowOffsetToBeReversed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowOffsetToBeReversedUndefined: Self = StObject.set(x, "allowOffsetToBeReversed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelAnchorX(value: String): Self = StObject.set(x, "labelAnchorX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOffsetToBeReversed(value: Boolean): Self = this.set("allowOffsetToBeReversed", value.asInstanceOf[js.Any])
+    def setLabelAnchorXUndefined: Self = StObject.set(x, "labelAnchorX", js.undefined)
     
     @scala.inline
-    def deleteAllowOffsetToBeReversed: Self = this.set("allowOffsetToBeReversed", js.undefined)
+    def setLabelAnchorY(value: String): Self = StObject.set(x, "labelAnchorY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAnchorX(value: String): Self = this.set("labelAnchorX", value.asInstanceOf[js.Any])
+    def setLabelAnchorYUndefined: Self = StObject.set(x, "labelAnchorY", js.undefined)
     
     @scala.inline
-    def deleteLabelAnchorX: Self = this.set("labelAnchorX", js.undefined)
+    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAnchorY(value: String): Self = this.set("labelAnchorY", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteLabelAnchorY: Self = this.set("labelAnchorY", js.undefined)
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
-    
-    @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
   }
 }

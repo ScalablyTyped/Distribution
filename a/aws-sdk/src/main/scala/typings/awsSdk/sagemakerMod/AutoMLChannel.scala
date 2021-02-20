@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoMLChannel extends js.Object {
+trait AutoMLChannel extends StObject {
   
   /**
     * You can use Gzip or None. The default value is None.
@@ -31,30 +32,18 @@ object AutoMLChannel {
   }
   
   @scala.inline
-  implicit class AutoMLChannelOps[Self <: AutoMLChannel] (val x: Self) extends AnyVal {
+  implicit class AutoMLChannelMutableBuilder[Self <: AutoMLChannel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSource(value: AutoMLDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: AutoMLDataSource): Self = this.set("DataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetAttributeName(value: TargetAttributeName): Self = this.set("TargetAttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompressionType(value: CompressionType): Self = this.set("CompressionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompressionType: Self = this.set("CompressionType", js.undefined)
+    def setTargetAttributeName(value: TargetAttributeName): Self = StObject.set(x, "TargetAttributeName", value.asInstanceOf[js.Any])
   }
 }

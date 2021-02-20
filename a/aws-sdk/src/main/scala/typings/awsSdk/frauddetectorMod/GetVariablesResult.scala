@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetVariablesResult extends js.Object {
+trait GetVariablesResult extends StObject {
   
   /**
     * The next page token to be used in subsequent requests. 
@@ -26,33 +27,21 @@ object GetVariablesResult {
   }
   
   @scala.inline
-  implicit class GetVariablesResultOps[Self <: GetVariablesResult] (val x: Self) extends AnyVal {
+  implicit class GetVariablesResultMutableBuilder[Self <: GetVariablesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVariables(value: VariableList): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setVariablesVarargs(value: Variable*): Self = this.set("variables", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariables(value: VariableList): Self = this.set("variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariables: Self = this.set("variables", js.undefined)
+    def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

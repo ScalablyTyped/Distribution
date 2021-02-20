@@ -1,11 +1,12 @@
 package typings.typeorm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntitiesDir extends js.Object {
+trait EntitiesDir extends StObject {
   
   /**
     * Directory where entities should be created by default.
@@ -31,36 +32,24 @@ object EntitiesDir {
   }
   
   @scala.inline
-  implicit class EntitiesDirOps[Self <: EntitiesDir] (val x: Self) extends AnyVal {
+  implicit class EntitiesDirMutableBuilder[Self <: EntitiesDir] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntitiesDir(value: String): Self = StObject.set(x, "entitiesDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesDirUndefined: Self = StObject.set(x, "entitiesDir", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMigrationsDir(value: String): Self = StObject.set(x, "migrationsDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitiesDir(value: String): Self = this.set("entitiesDir", value.asInstanceOf[js.Any])
+    def setMigrationsDirUndefined: Self = StObject.set(x, "migrationsDir", js.undefined)
     
     @scala.inline
-    def deleteEntitiesDir: Self = this.set("entitiesDir", js.undefined)
+    def setSubscribersDir(value: String): Self = StObject.set(x, "subscribersDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrationsDir(value: String): Self = this.set("migrationsDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMigrationsDir: Self = this.set("migrationsDir", js.undefined)
-    
-    @scala.inline
-    def setSubscribersDir(value: String): Self = this.set("subscribersDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribersDir: Self = this.set("subscribersDir", js.undefined)
+    def setSubscribersDirUndefined: Self = StObject.set(x, "subscribersDir", js.undefined)
   }
 }

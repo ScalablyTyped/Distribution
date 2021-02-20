@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElasticsearchAction extends js.Object {
+trait ElasticsearchAction extends StObject {
   
   /**
     * The endpoint of your Elasticsearch domain.
@@ -48,33 +49,21 @@ object ElasticsearchAction {
   }
   
   @scala.inline
-  implicit class ElasticsearchActionOps[Self <: ElasticsearchAction] (val x: Self) extends AnyVal {
+  implicit class ElasticsearchActionMutableBuilder[Self <: ElasticsearchAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: ElasticsearchEndpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: ElasticsearchId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: ElasticsearchIndex): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: ElasticsearchEndpoint): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ElasticsearchId): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: ElasticsearchIndex): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ElasticsearchType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ElasticsearchType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

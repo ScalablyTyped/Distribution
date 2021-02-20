@@ -2,46 +2,79 @@ package typings.reduxForm
 
 import typings.reduxForm.mod.FormErrors
 import typings.reduxForm.reduxFormMod.GetFormState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-form/lib/selectors", JSImport.Namespace)
-@js.native
-object selectorsMod extends js.Object {
+object selectorsMod {
   
+  @JSImport("redux-form/lib/selectors", "getFormAsyncErrors")
+  @js.native
   val getFormAsyncErrors: ErrorSelector[js.Object, js.Object, String] = js.native
   
+  @JSImport("redux-form/lib/selectors", "getFormError")
+  @js.native
   val getFormError: ErrorSelector[js.Object, js.Object, String] = js.native
   
+  @JSImport("redux-form/lib/selectors", "getFormInitialValues")
+  @js.native
   val getFormInitialValues: DataSelector[js.Object, js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "getFormMeta")
+  @js.native
   val getFormMeta: DataSelector[js.Object, js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "getFormNames")
+  @js.native
   val getFormNames: NamesSelector[js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "getFormSubmitErrors")
+  @js.native
   val getFormSubmitErrors: ErrorSelector[js.Object, js.Object, String] = js.native
   
+  @JSImport("redux-form/lib/selectors", "getFormSyncErrors")
+  @js.native
   val getFormSyncErrors: ErrorSelector[js.Object, js.Object, String] = js.native
   
+  @JSImport("redux-form/lib/selectors", "getFormSyncWarnings")
+  @js.native
   val getFormSyncWarnings: ErrorSelector[js.Object, js.Object, String] = js.native
   
+  @JSImport("redux-form/lib/selectors", "getFormValues")
+  @js.native
   val getFormValues: DataSelector[js.Object, js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "hasSubmitFailed")
+  @js.native
   val hasSubmitFailed: BooleanSelector[js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "hasSubmitSucceeded")
+  @js.native
   val hasSubmitSucceeded: BooleanSelector[js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "isAsyncValidating")
+  @js.native
   val isAsyncValidating: BooleanSelector[js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "isDirty")
+  @js.native
   val isDirty: FormOrFieldsBooleanSelector[js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "isInvalid")
+  @js.native
   val isInvalid: BooleanSelector[js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "isPristine")
+  @js.native
   val isPristine: FormOrFieldsBooleanSelector[js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "isSubmitting")
+  @js.native
   val isSubmitting: BooleanSelector[js.Object] = js.native
   
+  @JSImport("redux-form/lib/selectors", "isValid")
+  @js.native
   val isValid: BooleanSelector[js.Object] = js.native
   
   type BooleanSelector[State] = js.Function2[

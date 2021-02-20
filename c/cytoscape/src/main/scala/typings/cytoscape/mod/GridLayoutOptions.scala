@@ -2,6 +2,7 @@ package typings.cytoscape.mod
 
 import typings.cytoscape.anon.Col
 import typings.cytoscape.cytoscapeStrings.grid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,45 +47,33 @@ object GridLayoutOptions {
   }
   
   @scala.inline
-  implicit class GridLayoutOptionsOps[Self <: GridLayoutOptions] (val x: Self) extends AnyVal {
+  implicit class GridLayoutOptionsMutableBuilder[Self <: GridLayoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvoidOverlapPadding(value: Double): Self = StObject.set(x, "avoidOverlapPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvoidOverlapPaddingUndefined: Self = StObject.set(x, "avoidOverlapPadding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondense(value: Boolean): Self = this.set("condense", value.asInstanceOf[js.Any])
+    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
     @scala.inline
-    def setName(value: grid): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCondense(value: Boolean): Self = StObject.set(x, "condense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: NodeSingular => Col): Self = this.set("position", js.Any.fromFunction1(value))
+    def setName(value: grid): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidOverlapPadding(value: Double): Self = this.set("avoidOverlapPadding", value.asInstanceOf[js.Any])
+    def setPosition(value: NodeSingular => Col): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAvoidOverlapPadding: Self = this.set("avoidOverlapPadding", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCols: Self = this.set("cols", js.undefined)
-    
-    @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
   }
 }

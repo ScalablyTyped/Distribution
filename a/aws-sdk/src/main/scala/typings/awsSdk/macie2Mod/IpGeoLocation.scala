@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpGeoLocation extends js.Object {
+trait IpGeoLocation extends StObject {
   
   /**
     * The latitude coordinate of the location, rounded to four decimal places.
@@ -26,30 +27,18 @@ object IpGeoLocation {
   }
   
   @scala.inline
-  implicit class IpGeoLocationOps[Self <: IpGeoLocation] (val x: Self) extends AnyVal {
+  implicit class IpGeoLocationMutableBuilder[Self <: IpGeoLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLat(value: double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLon(value: double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLat(value: double): Self = this.set("lat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLat: Self = this.set("lat", js.undefined)
-    
-    @scala.inline
-    def setLon(value: double): Self = this.set("lon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLon: Self = this.set("lon", js.undefined)
+    def setLonUndefined: Self = StObject.set(x, "lon", js.undefined)
   }
 }

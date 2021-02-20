@@ -1,11 +1,12 @@
 package typings.webBluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BluetoothRemoteGATTServer extends js.Object {
+trait BluetoothRemoteGATTServer extends StObject {
   
   def connect(): js.Promise[BluetoothRemoteGATTServer] = js.native
   

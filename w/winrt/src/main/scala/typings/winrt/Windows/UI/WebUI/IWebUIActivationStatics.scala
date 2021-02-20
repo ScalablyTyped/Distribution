@@ -1,11 +1,12 @@
 package typings.winrt.Windows.UI.WebUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebUIActivationStatics extends js.Object {
+trait IWebUIActivationStatics extends StObject {
   
   var onactivated: js.Any = js.native
   
@@ -24,30 +25,18 @@ object IWebUIActivationStatics {
   }
   
   @scala.inline
-  implicit class IWebUIActivationStaticsOps[Self <: IWebUIActivationStatics] (val x: Self) extends AnyVal {
+  implicit class IWebUIActivationStaticsMutableBuilder[Self <: IWebUIActivationStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnnavigated(value: js.Any): Self = StObject.set(x, "onnavigated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnresuming(value: js.Any): Self = StObject.set(x, "onresuming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnactivated(value: js.Any): Self = this.set("onactivated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnnavigated(value: js.Any): Self = this.set("onnavigated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnresuming(value: js.Any): Self = this.set("onresuming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnsuspending(value: js.Any): Self = this.set("onsuspending", value.asInstanceOf[js.Any])
+    def setOnsuspending(value: js.Any): Self = StObject.set(x, "onsuspending", value.asInstanceOf[js.Any])
   }
 }

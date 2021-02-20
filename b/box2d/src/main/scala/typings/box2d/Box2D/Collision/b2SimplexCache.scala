@@ -1,11 +1,12 @@
 package typings.box2d.Box2D.Collision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2SimplexCache extends js.Object {
+trait b2SimplexCache extends StObject {
   
   /**
     * Number in cache.
@@ -36,36 +37,24 @@ object b2SimplexCache {
   }
   
   @scala.inline
-  implicit class b2SimplexCacheOps[Self <: b2SimplexCache] (val x: Self) extends AnyVal {
+  implicit class b2SimplexCacheMutableBuilder[Self <: b2SimplexCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexA(value: js.Array[Double]): Self = StObject.set(x, "indexA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexAVarargs(value: Double*): Self = StObject.set(x, "indexA", js.Array(value :_*))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setIndexB(value: js.Array[Double]): Self = StObject.set(x, "indexB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexAVarargs(value: Double*): Self = this.set("indexA", js.Array(value :_*))
+    def setIndexBVarargs(value: Double*): Self = StObject.set(x, "indexB", js.Array(value :_*))
     
     @scala.inline
-    def setIndexA(value: js.Array[Double]): Self = this.set("indexA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndexBVarargs(value: Double*): Self = this.set("indexB", js.Array(value :_*))
-    
-    @scala.inline
-    def setIndexB(value: js.Array[Double]): Self = this.set("indexB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetric(value: Double): Self = this.set("metric", value.asInstanceOf[js.Any])
+    def setMetric(value: Double): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
   }
 }

@@ -16,23 +16,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/imagebuilder", JSImport.Namespace)
-@js.native
-object imagebuilderMod extends js.Object {
+object imagebuilderMod {
   
-  def getComponent(args: GetComponentArgs): js.Promise[GetComponentResult] = js.native
-  def getComponent(args: GetComponentArgs, opts: InvokeOptions): js.Promise[GetComponentResult] = js.native
-  
-  def getDistributionConfiguration(args: GetDistributionConfigurationArgs): js.Promise[GetDistributionConfigurationResult] = js.native
-  def getDistributionConfiguration(args: GetDistributionConfigurationArgs, opts: InvokeOptions): js.Promise[GetDistributionConfigurationResult] = js.native
-  
-  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs): js.Promise[GetInfrastructureConfigurationResult] = js.native
-  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs, opts: InvokeOptions): js.Promise[GetInfrastructureConfigurationResult] = js.native
-  
+  @JSImport("@pulumi/aws/imagebuilder", "Component")
   @js.native
   class Component protected ()
     extends typings.pulumiAws.componentMod.Component {
@@ -47,8 +38,7 @@ object imagebuilderMod extends js.Object {
     def this(name: String, args: ComponentArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Component extends js.Object {
+  object Component {
     
     /**
       * Get an existing Component resource's state with the given name, ID, and optional extra
@@ -59,18 +49,29 @@ object imagebuilderMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/imagebuilder", "Component.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.componentMod.Component = js.native
+    @JSImport("@pulumi/aws/imagebuilder", "Component.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.componentMod.Component = js.native
+    @JSImport("@pulumi/aws/imagebuilder", "Component.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ComponentState): typings.pulumiAws.componentMod.Component = js.native
+    @JSImport("@pulumi/aws/imagebuilder", "Component.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ComponentState, opts: CustomResourceOptions): typings.pulumiAws.componentMod.Component = js.native
     
     /**
       * Returns true if the given object is an instance of Component.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/imagebuilder", "Component.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/component.Component */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/imagebuilder", "DistributionConfiguration")
   @js.native
   class DistributionConfiguration protected ()
     extends typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration {
@@ -85,8 +86,7 @@ object imagebuilderMod extends js.Object {
     def this(name: String, args: DistributionConfigurationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object DistributionConfiguration extends js.Object {
+  object DistributionConfiguration {
     
     /**
       * Get an existing DistributionConfiguration resource's state with the given name, ID, and optional extra
@@ -97,18 +97,29 @@ object imagebuilderMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/imagebuilder", "DistributionConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = js.native
+    @JSImport("@pulumi/aws/imagebuilder", "DistributionConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = js.native
+    @JSImport("@pulumi/aws/imagebuilder", "DistributionConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DistributionConfigurationState): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = js.native
+    @JSImport("@pulumi/aws/imagebuilder", "DistributionConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DistributionConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = js.native
     
     /**
       * Returns true if the given object is an instance of DistributionConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/imagebuilder", "DistributionConfiguration.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/imagebuilder", "InfrastructureConfiguration")
   @js.native
   class InfrastructureConfiguration protected ()
     extends typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration {
@@ -123,8 +134,7 @@ object imagebuilderMod extends js.Object {
     def this(name: String, args: InfrastructureConfigurationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object InfrastructureConfiguration extends js.Object {
+  object InfrastructureConfiguration {
     
     /**
       * Get an existing InfrastructureConfiguration resource's state with the given name, ID, and optional extra
@@ -135,15 +145,46 @@ object imagebuilderMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/imagebuilder", "InfrastructureConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = js.native
+    @JSImport("@pulumi/aws/imagebuilder", "InfrastructureConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = js.native
+    @JSImport("@pulumi/aws/imagebuilder", "InfrastructureConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], state: InfrastructureConfigurationState): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = js.native
+    @JSImport("@pulumi/aws/imagebuilder", "InfrastructureConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], state: InfrastructureConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = js.native
     
     /**
       * Returns true if the given object is an instance of InfrastructureConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/imagebuilder", "InfrastructureConfiguration.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/infrastructureConfiguration.InfrastructureConfiguration */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws/imagebuilder", "getComponent")
+  @js.native
+  def getComponent(args: GetComponentArgs): js.Promise[GetComponentResult] = js.native
+  @JSImport("@pulumi/aws/imagebuilder", "getComponent")
+  @js.native
+  def getComponent(args: GetComponentArgs, opts: InvokeOptions): js.Promise[GetComponentResult] = js.native
+  
+  @JSImport("@pulumi/aws/imagebuilder", "getDistributionConfiguration")
+  @js.native
+  def getDistributionConfiguration(args: GetDistributionConfigurationArgs): js.Promise[GetDistributionConfigurationResult] = js.native
+  @JSImport("@pulumi/aws/imagebuilder", "getDistributionConfiguration")
+  @js.native
+  def getDistributionConfiguration(args: GetDistributionConfigurationArgs, opts: InvokeOptions): js.Promise[GetDistributionConfigurationResult] = js.native
+  
+  @JSImport("@pulumi/aws/imagebuilder", "getInfrastructureConfiguration")
+  @js.native
+  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs): js.Promise[GetInfrastructureConfigurationResult] = js.native
+  @JSImport("@pulumi/aws/imagebuilder", "getInfrastructureConfiguration")
+  @js.native
+  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs, opts: InvokeOptions): js.Promise[GetInfrastructureConfigurationResult] = js.native
 }

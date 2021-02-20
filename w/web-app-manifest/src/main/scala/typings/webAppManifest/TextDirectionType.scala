@@ -1,5 +1,6 @@
 package typings.webAppManifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webAppManifest.webAppManifestStrings.rtl
   - typings.webAppManifest.webAppManifestStrings.auto
 */
-trait TextDirectionType extends js.Object
+trait TextDirectionType extends StObject
 object TextDirectionType {
   
   @scala.inline

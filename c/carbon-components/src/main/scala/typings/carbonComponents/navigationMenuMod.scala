@@ -2,13 +2,37 @@ package typings.carbonComponents
 
 import typings.carbonComponents.anon.BACKWARD
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("carbon-components/components/ui-shell/navigation-menu", JSImport.Namespace)
-@js.native
-object navigationMenuMod extends js.Object {
+object navigationMenuMod {
+  
+  @JSImport("carbon-components/components/ui-shell/navigation-menu", JSImport.Default)
+  @js.native
+  class default protected () extends NavigationMenu {
+    def this(element: js.Any, options: js.Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("carbon-components/components/ui-shell/navigation-menu", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("carbon-components/components/ui-shell/navigation-menu", "default.NAVIGATE")
+    @js.native
+    def NAVIGATE: BACKWARD = js.native
+    @scala.inline
+    def NAVIGATE_=(x: BACKWARD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("carbon-components/components/ui-shell/navigation-menu", "default.components")
+    @js.native
+    def components: WeakMap[js.Object, js.Any] = js.native
+    @scala.inline
+    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait NavigationMenu
@@ -25,20 +49,5 @@ object navigationMenuMod extends js.Object {
     def getCurrentNavigation(): js.Any = js.native
     
     def navigate(direction: js.Any): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends NavigationMenu {
-    def this(element: js.Any, options: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var NAVIGATE: BACKWARD = js.native
-    
-    var components: WeakMap[js.Object, _] = js.native
-    
-    def options: js.Any = js.native
   }
 }

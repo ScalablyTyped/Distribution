@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlertTrigger extends js.Object {
+trait AlertTrigger extends StObject {
   
   // Name of the property serving as a detection trigger.
   var name: js.UndefOr[NullableOption[String]] = js.native
@@ -25,45 +26,33 @@ object AlertTrigger {
   }
   
   @scala.inline
-  implicit class AlertTriggerOps[Self <: AlertTrigger] (val x: Self) extends AnyVal {
+  implicit class AlertTriggerMutableBuilder[Self <: AlertTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setType(value: NullableOption[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def setTypeNull: Self = this.set("type", null)
-    
-    @scala.inline
-    def setValue(value: NullableOption[String]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

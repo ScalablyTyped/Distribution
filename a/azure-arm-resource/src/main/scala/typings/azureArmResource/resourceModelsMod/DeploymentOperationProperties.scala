@@ -1,12 +1,13 @@
 package typings.azureArmResource.resourceModelsMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentOperationProperties extends js.Object {
+trait DeploymentOperationProperties extends StObject {
   
   /**
     * The state of the provisioning.
@@ -57,66 +58,54 @@ object DeploymentOperationProperties {
   }
   
   @scala.inline
-  implicit class DeploymentOperationPropertiesOps[Self <: DeploymentOperationProperties] (val x: Self) extends AnyVal {
+  implicit class DeploymentOperationPropertiesMutableBuilder[Self <: DeploymentOperationProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequest(value: HttpMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningState(value: String): Self = this.set("provisioningState", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteProvisioningState: Self = this.set("provisioningState", js.undefined)
+    def setResponse(value: HttpMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: HttpMessage): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setServiceRequestId(value: String): Self = StObject.set(x, "serviceRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: HttpMessage): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setServiceRequestIdUndefined: Self = StObject.set(x, "serviceRequestId", js.undefined)
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRequestId(value: String): Self = this.set("serviceRequestId", value.asInstanceOf[js.Any])
+    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
     @scala.inline
-    def deleteServiceRequestId: Self = this.set("serviceRequestId", js.undefined)
+    def setStatusMessage(value: js.Any): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: String): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+    def setTargetResource(value: TargetResource): Self = StObject.set(x, "targetResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: js.Any): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    def setTargetResourceUndefined: Self = StObject.set(x, "targetResource", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetResource(value: TargetResource): Self = this.set("targetResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetResource: Self = this.set("targetResource", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

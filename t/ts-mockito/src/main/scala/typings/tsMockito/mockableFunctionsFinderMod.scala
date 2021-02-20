@@ -1,15 +1,15 @@
 package typings.tsMockito
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/utils/MockableFunctionsFinder", JSImport.Namespace)
-@js.native
-object mockableFunctionsFinderMod extends js.Object {
+object mockableFunctionsFinderMod {
   
+  @JSImport("ts-mockito/lib/utils/MockableFunctionsFinder", "MockableFunctionsFinder")
   @js.native
-  class MockableFunctionsFinder () extends js.Object {
+  class MockableFunctionsFinder () extends StObject {
     
     var cleanFunctionNameRegex: js.Any = js.native
     

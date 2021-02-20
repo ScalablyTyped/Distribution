@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaycastResult extends js.Object {
+trait RaycastResult extends StObject {
   
   var body: Body = js.native
   
@@ -55,48 +56,36 @@ object RaycastResult {
   }
   
   @scala.inline
-  implicit class RaycastResultOps[Self <: RaycastResult] (val x: Self) extends AnyVal {
+  implicit class RaycastResultMutableBuilder[Self <: RaycastResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasHit(value: Boolean): Self = StObject.set(x, "hasHit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Body): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setHitNormalWorld(value: Vec3): Self = StObject.set(x, "hitNormalWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setHitPointWorld(value: Vec3): Self = StObject.set(x, "hitPointWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasHit(value: Boolean): Self = this.set("hasHit", value.asInstanceOf[js.Any])
+    def setRayFromWorld(value: Vec3): Self = StObject.set(x, "rayFromWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitNormalWorld(value: Vec3): Self = this.set("hitNormalWorld", value.asInstanceOf[js.Any])
+    def setRayToWorld(value: Vec3): Self = StObject.set(x, "rayToWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitPointWorld(value: Vec3): Self = this.set("hitPointWorld", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRayFromWorld(value: Vec3): Self = this.set("rayFromWorld", value.asInstanceOf[js.Any])
+    def setSet(value: (Vec3, Vec3, Vec3, Vec3, Shape, Body, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setRayToWorld(value: Vec3): Self = this.set("rayToWorld", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: (Vec3, Vec3, Vec3, Vec3, Shape, Body, Double) => Unit): Self = this.set("set", js.Any.fromFunction7(value))
-    
-    @scala.inline
-    def setShape(value: Shape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesDeleteEndpointInputMod.DeleteEnd
 import typings.awsSdkClientPinpointBrowser.typesDeleteEndpointOutputMod.DeleteEndpointOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteEndpointCommand", JSImport.Namespace)
-@js.native
-object deleteEndpointCommandMod extends js.Object {
+object deleteEndpointCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteEndpointCommand", "DeleteEndpointCommand")
   @js.native
   class DeleteEndpointCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.UI.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dictionary of options for showing a menu popup with <Titanium.UI.iOS.MenuPopup.show>.
   */
 @js.native
-trait MenuPopupShowParams extends js.Object {
+trait MenuPopupShowParams extends StObject {
   
   /**
     * Determines whether the menu popup should be opened or closed animated.
@@ -35,33 +36,21 @@ object MenuPopupShowParams {
   }
   
   @scala.inline
-  implicit class MenuPopupShowParamsOps[Self <: MenuPopupShowParams] (val x: Self) extends AnyVal {
+  implicit class MenuPopupShowParamsMutableBuilder[Self <: MenuPopupShowParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrowDirection(value: Double): Self = StObject.set(x, "arrowDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setArrowDirectionUndefined: Self = StObject.set(x, "arrowDirection", js.undefined)
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
-    
-    @scala.inline
-    def setArrowDirection(value: Double): Self = this.set("arrowDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArrowDirection: Self = this.set("arrowDirection", js.undefined)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

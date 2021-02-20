@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMsoCharacters extends js.Object {
+trait IMsoCharacters extends StObject {
   
   val Application: js.Any = js.native
   
@@ -52,51 +53,39 @@ object IMsoCharacters {
   }
   
   @scala.inline
-  implicit class IMsoCharactersOps[Self <: IMsoCharacters] (val x: Self) extends AnyVal {
+  implicit class IMsoCharactersMutableBuilder[Self <: IMsoCharacters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("Caption", value.asInstanceOf[js.Any])
+    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setFont(value: ChartFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setInsert(value: String => js.Any): Self = StObject.set(x, "Insert", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelete(value: () => js.Any): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setOfficeDotIMsoCharacters_typekey(value: IMsoCharacters): Self = StObject.set(x, "Office.IMsoCharacters_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: ChartFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert(value: String => js.Any): Self = this.set("Insert", js.Any.fromFunction1(value))
+    def setPhoneticCharacters(value: String): Self = StObject.set(x, "PhoneticCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficeDotIMsoCharacters_typekey(value: IMsoCharacters): Self = this.set("Office.IMsoCharacters_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhoneticCharacters(value: String): Self = this.set("PhoneticCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

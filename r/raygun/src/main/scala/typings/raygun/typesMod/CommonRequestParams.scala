@@ -1,11 +1,12 @@
 package typings.raygun.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonRequestParams extends js.Object {
+trait CommonRequestParams extends StObject {
   
   var body: js.Object = js.native
   
@@ -28,36 +29,24 @@ object CommonRequestParams {
   }
   
   @scala.inline
-  implicit class CommonRequestParamsOps[Self <: CommonRequestParams] (val x: Self) extends AnyVal {
+  implicit class CommonRequestParamsMutableBuilder[Self <: CommonRequestParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: js.Object): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: js.Object): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

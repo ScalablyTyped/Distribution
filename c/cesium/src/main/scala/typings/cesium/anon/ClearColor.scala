@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.BoundingRectangle
 import typings.cesium.mod.PixelFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearColor extends js.Object {
+trait ClearColor extends StObject {
   
   var clearColor: js.UndefOr[typings.cesium.mod.Color] = js.native
   
@@ -34,63 +35,51 @@ object ClearColor {
   }
   
   @scala.inline
-  implicit class ClearColorOps[Self <: ClearColor] (val x: Self) extends AnyVal {
+  implicit class ClearColorMutableBuilder[Self <: ClearColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "clearColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearColorUndefined: Self = StObject.set(x, "clearColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForcePowerOfTwo(value: Boolean): Self = StObject.set(x, "forcePowerOfTwo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentShader(value: String): Self = this.set("fragmentShader", value.asInstanceOf[js.Any])
+    def setForcePowerOfTwoUndefined: Self = StObject.set(x, "forcePowerOfTwo", js.undefined)
     
     @scala.inline
-    def setClearColor(value: typings.cesium.mod.Color): Self = this.set("clearColor", value.asInstanceOf[js.Any])
+    def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClearColor: Self = this.set("clearColor", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForcePowerOfTwo(value: Boolean): Self = this.set("forcePowerOfTwo", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteForcePowerOfTwo: Self = this.set("forcePowerOfTwo", js.undefined)
+    def setPixelFormat(value: PixelFormat): Self = StObject.set(x, "pixelFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPixelFormatUndefined: Self = StObject.set(x, "pixelFormat", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setScissorRectangle(value: BoundingRectangle): Self = StObject.set(x, "scissorRectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelFormat(value: PixelFormat): Self = this.set("pixelFormat", value.asInstanceOf[js.Any])
+    def setScissorRectangleUndefined: Self = StObject.set(x, "scissorRectangle", js.undefined)
     
     @scala.inline
-    def deletePixelFormat: Self = this.set("pixelFormat", js.undefined)
+    def setTextureScale(value: Double): Self = StObject.set(x, "textureScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScissorRectangle(value: BoundingRectangle): Self = this.set("scissorRectangle", value.asInstanceOf[js.Any])
+    def setTextureScaleUndefined: Self = StObject.set(x, "textureScale", js.undefined)
     
     @scala.inline
-    def deleteScissorRectangle: Self = this.set("scissorRectangle", js.undefined)
+    def setUniforms(value: js.Object): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureScale(value: Double): Self = this.set("textureScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextureScale: Self = this.set("textureScale", js.undefined)
-    
-    @scala.inline
-    def setUniforms(value: js.Object): Self = this.set("uniforms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniforms: Self = this.set("uniforms", js.undefined)
+    def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
   }
 }

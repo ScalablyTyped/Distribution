@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoScalingGroup extends js.Object {
+trait AutoScalingGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Auto Scaling group.
@@ -160,180 +161,168 @@ object AutoScalingGroup {
   }
   
   @scala.inline
-  implicit class AutoScalingGroupOps[Self <: AutoScalingGroup] (val x: Self) extends AnyVal {
+  implicit class AutoScalingGroupMutableBuilder[Self <: AutoScalingGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupARN(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingGroupARNUndefined: Self = StObject.set(x, "AutoScalingGroupARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: XmlStringMaxLen255*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    def setAvailabilityZonesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZones(value: AvailabilityZones): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    def setCapacityRebalance(value: CapacityRebalanceEnabled): Self = StObject.set(x, "CapacityRebalance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: TimestampType): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setCapacityRebalanceUndefined: Self = StObject.set(x, "CapacityRebalance", js.undefined)
     
     @scala.inline
-    def setDefaultCooldown(value: Cooldown): Self = this.set("DefaultCooldown", value.asInstanceOf[js.Any])
+    def setCreatedTime(value: TimestampType): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = this.set("DesiredCapacity", value.asInstanceOf[js.Any])
+    def setDefaultCooldown(value: Cooldown): Self = StObject.set(x, "DefaultCooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckType(value: XmlStringMaxLen32): Self = this.set("HealthCheckType", value.asInstanceOf[js.Any])
+    def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = StObject.set(x, "DesiredCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: AutoScalingGroupMaxSize): Self = this.set("MaxSize", value.asInstanceOf[js.Any])
+    def setEnabledMetrics(value: EnabledMetrics): Self = StObject.set(x, "EnabledMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: AutoScalingGroupMinSize): Self = this.set("MinSize", value.asInstanceOf[js.Any])
+    def setEnabledMetricsUndefined: Self = StObject.set(x, "EnabledMetrics", js.undefined)
     
     @scala.inline
-    def setAutoScalingGroupARN(value: ResourceName): Self = this.set("AutoScalingGroupARN", value.asInstanceOf[js.Any])
+    def setEnabledMetricsVarargs(value: EnabledMetric*): Self = StObject.set(x, "EnabledMetrics", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoScalingGroupARN: Self = this.set("AutoScalingGroupARN", js.undefined)
+    def setHealthCheckGracePeriod(value: HealthCheckGracePeriod): Self = StObject.set(x, "HealthCheckGracePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityRebalance(value: CapacityRebalanceEnabled): Self = this.set("CapacityRebalance", value.asInstanceOf[js.Any])
+    def setHealthCheckGracePeriodUndefined: Self = StObject.set(x, "HealthCheckGracePeriod", js.undefined)
     
     @scala.inline
-    def deleteCapacityRebalance: Self = this.set("CapacityRebalance", js.undefined)
+    def setHealthCheckType(value: XmlStringMaxLen32): Self = StObject.set(x, "HealthCheckType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledMetricsVarargs(value: EnabledMetric*): Self = this.set("EnabledMetrics", js.Array(value :_*))
+    def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledMetrics(value: EnabledMetrics): Self = this.set("EnabledMetrics", value.asInstanceOf[js.Any])
+    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
     @scala.inline
-    def deleteEnabledMetrics: Self = this.set("EnabledMetrics", js.undefined)
+    def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
     @scala.inline
-    def setHealthCheckGracePeriod(value: HealthCheckGracePeriod): Self = this.set("HealthCheckGracePeriod", value.asInstanceOf[js.Any])
+    def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = StObject.set(x, "LaunchConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHealthCheckGracePeriod: Self = this.set("HealthCheckGracePeriod", js.undefined)
+    def setLaunchConfigurationNameUndefined: Self = StObject.set(x, "LaunchConfigurationName", js.undefined)
     
     @scala.inline
-    def setInstancesVarargs(value: Instance*): Self = this.set("Instances", js.Array(value :_*))
+    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstances(value: Instances): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
     
     @scala.inline
-    def deleteInstances: Self = this.set("Instances", js.undefined)
+    def setLoadBalancerNames(value: LoadBalancerNames): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = this.set("LaunchConfigurationName", value.asInstanceOf[js.Any])
+    def setLoadBalancerNamesUndefined: Self = StObject.set(x, "LoadBalancerNames", js.undefined)
     
     @scala.inline
-    def deleteLaunchConfigurationName: Self = this.set("LaunchConfigurationName", js.undefined)
+    def setLoadBalancerNamesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
     
     @scala.inline
-    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = this.set("LaunchTemplate", value.asInstanceOf[js.Any])
+    def setMaxInstanceLifetime(value: MaxInstanceLifetime): Self = StObject.set(x, "MaxInstanceLifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLaunchTemplate: Self = this.set("LaunchTemplate", js.undefined)
+    def setMaxInstanceLifetimeUndefined: Self = StObject.set(x, "MaxInstanceLifetime", js.undefined)
     
     @scala.inline
-    def setLoadBalancerNamesVarargs(value: XmlStringMaxLen255*): Self = this.set("LoadBalancerNames", js.Array(value :_*))
+    def setMaxSize(value: AutoScalingGroupMaxSize): Self = StObject.set(x, "MaxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerNames(value: LoadBalancerNames): Self = this.set("LoadBalancerNames", value.asInstanceOf[js.Any])
+    def setMinSize(value: AutoScalingGroupMinSize): Self = StObject.set(x, "MinSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadBalancerNames: Self = this.set("LoadBalancerNames", js.undefined)
+    def setMixedInstancesPolicy(value: MixedInstancesPolicy): Self = StObject.set(x, "MixedInstancesPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxInstanceLifetime(value: MaxInstanceLifetime): Self = this.set("MaxInstanceLifetime", value.asInstanceOf[js.Any])
+    def setMixedInstancesPolicyUndefined: Self = StObject.set(x, "MixedInstancesPolicy", js.undefined)
     
     @scala.inline
-    def deleteMaxInstanceLifetime: Self = this.set("MaxInstanceLifetime", js.undefined)
+    def setNewInstancesProtectedFromScaleIn(value: InstanceProtected): Self = StObject.set(x, "NewInstancesProtectedFromScaleIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixedInstancesPolicy(value: MixedInstancesPolicy): Self = this.set("MixedInstancesPolicy", value.asInstanceOf[js.Any])
+    def setNewInstancesProtectedFromScaleInUndefined: Self = StObject.set(x, "NewInstancesProtectedFromScaleIn", js.undefined)
     
     @scala.inline
-    def deleteMixedInstancesPolicy: Self = this.set("MixedInstancesPolicy", js.undefined)
+    def setPlacementGroup(value: XmlStringMaxLen255): Self = StObject.set(x, "PlacementGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewInstancesProtectedFromScaleIn(value: InstanceProtected): Self = this.set("NewInstancesProtectedFromScaleIn", value.asInstanceOf[js.Any])
+    def setPlacementGroupUndefined: Self = StObject.set(x, "PlacementGroup", js.undefined)
     
     @scala.inline
-    def deleteNewInstancesProtectedFromScaleIn: Self = this.set("NewInstancesProtectedFromScaleIn", js.undefined)
+    def setServiceLinkedRoleARN(value: ResourceName): Self = StObject.set(x, "ServiceLinkedRoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementGroup(value: XmlStringMaxLen255): Self = this.set("PlacementGroup", value.asInstanceOf[js.Any])
+    def setServiceLinkedRoleARNUndefined: Self = StObject.set(x, "ServiceLinkedRoleARN", js.undefined)
     
     @scala.inline
-    def deletePlacementGroup: Self = this.set("PlacementGroup", js.undefined)
+    def setStatus(value: XmlStringMaxLen255): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceLinkedRoleARN(value: ResourceName): Self = this.set("ServiceLinkedRoleARN", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteServiceLinkedRoleARN: Self = this.set("ServiceLinkedRoleARN", js.undefined)
+    def setSuspendedProcesses(value: SuspendedProcesses): Self = StObject.set(x, "SuspendedProcesses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: XmlStringMaxLen255): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setSuspendedProcessesUndefined: Self = StObject.set(x, "SuspendedProcesses", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setSuspendedProcessesVarargs(value: SuspendedProcess*): Self = StObject.set(x, "SuspendedProcesses", js.Array(value :_*))
     
     @scala.inline
-    def setSuspendedProcessesVarargs(value: SuspendedProcess*): Self = this.set("SuspendedProcesses", js.Array(value :_*))
+    def setTags(value: TagDescriptionList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspendedProcesses(value: SuspendedProcesses): Self = this.set("SuspendedProcesses", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSuspendedProcesses: Self = this.set("SuspendedProcesses", js.undefined)
+    def setTagsVarargs(value: TagDescription*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: TagDescription*): Self = this.set("Tags", js.Array(value :_*))
+    def setTargetGroupARNs(value: TargetGroupARNs): Self = StObject.set(x, "TargetGroupARNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagDescriptionList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTargetGroupARNsUndefined: Self = StObject.set(x, "TargetGroupARNs", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTargetGroupARNsVarargs(value: XmlStringMaxLen511*): Self = StObject.set(x, "TargetGroupARNs", js.Array(value :_*))
     
     @scala.inline
-    def setTargetGroupARNsVarargs(value: XmlStringMaxLen511*): Self = this.set("TargetGroupARNs", js.Array(value :_*))
+    def setTerminationPolicies(value: TerminationPolicies): Self = StObject.set(x, "TerminationPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroupARNs(value: TargetGroupARNs): Self = this.set("TargetGroupARNs", value.asInstanceOf[js.Any])
+    def setTerminationPoliciesUndefined: Self = StObject.set(x, "TerminationPolicies", js.undefined)
     
     @scala.inline
-    def deleteTargetGroupARNs: Self = this.set("TargetGroupARNs", js.undefined)
+    def setTerminationPoliciesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setTerminationPoliciesVarargs(value: XmlStringMaxLen1600*): Self = this.set("TerminationPolicies", js.Array(value :_*))
+    def setVPCZoneIdentifier(value: XmlStringMaxLen2047): Self = StObject.set(x, "VPCZoneIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerminationPolicies(value: TerminationPolicies): Self = this.set("TerminationPolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminationPolicies: Self = this.set("TerminationPolicies", js.undefined)
-    
-    @scala.inline
-    def setVPCZoneIdentifier(value: XmlStringMaxLen2047): Self = this.set("VPCZoneIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVPCZoneIdentifier: Self = this.set("VPCZoneIdentifier", js.undefined)
+    def setVPCZoneIdentifierUndefined: Self = StObject.set(x, "VPCZoneIdentifier", js.undefined)
   }
 }

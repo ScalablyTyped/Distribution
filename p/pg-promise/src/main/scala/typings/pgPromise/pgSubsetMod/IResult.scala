@@ -1,12 +1,13 @@
 package typings.pgPromise.pgSubsetMod
 
 import typings.pgPromise.anon.Binary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IResult extends js.Object {
+trait IResult extends StObject {
   
   var _parsers: js.Array[js.Function] = js.native
   
@@ -40,48 +41,36 @@ object IResult {
   }
   
   @scala.inline
-  implicit class IResultOps[Self <: IResult] (val x: Self) extends AnyVal {
+  implicit class IResultMutableBuilder[Self <: IResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFields(value: js.Array[IColumn]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: IColumn*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def set_parsersVarargs(value: js.Function*): Self = this.set("_parsers", js.Array(value :_*))
+    def setRowAsArray(value: Boolean): Self = StObject.set(x, "rowAsArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_parsers(value: js.Array[js.Function]): Self = this.set("_parsers", value.asInstanceOf[js.Any])
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_types(value: Binary): Self = this.set("_types", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[_]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: IColumn*): Self = this.set("fields", js.Array(value :_*))
+    def set_parsers(value: js.Array[js.Function]): Self = StObject.set(x, "_parsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[IColumn]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def set_parsersVarargs(value: js.Function*): Self = StObject.set(x, "_parsers", js.Array(value :_*))
     
     @scala.inline
-    def setRowAsArray(value: Boolean): Self = this.set("rowAsArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowsVarargs(value: js.Any*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[_]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def set_types(value: Binary): Self = StObject.set(x, "_types", value.asInstanceOf[js.Any])
   }
 }

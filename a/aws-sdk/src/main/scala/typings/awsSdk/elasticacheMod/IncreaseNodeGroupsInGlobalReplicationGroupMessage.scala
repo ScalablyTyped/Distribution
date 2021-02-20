@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncreaseNodeGroupsInGlobalReplicationGroupMessage extends js.Object {
+trait IncreaseNodeGroupsInGlobalReplicationGroupMessage extends StObject {
   
   /**
     * Indicates that the process begins immediately. At present, the only permitted value for this parameter is true.
@@ -36,36 +37,24 @@ object IncreaseNodeGroupsInGlobalReplicationGroupMessage {
   }
   
   @scala.inline
-  implicit class IncreaseNodeGroupsInGlobalReplicationGroupMessageOps[Self <: IncreaseNodeGroupsInGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  implicit class IncreaseNodeGroupsInGlobalReplicationGroupMessageMutableBuilder[Self <: IncreaseNodeGroupsInGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeGroupCount(value: Integer): Self = StObject.set(x, "NodeGroupCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyImmediately(value: Boolean): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    def setRegionalConfigurations(value: RegionalConfigurationList): Self = StObject.set(x, "RegionalConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    def setRegionalConfigurationsUndefined: Self = StObject.set(x, "RegionalConfigurations", js.undefined)
     
     @scala.inline
-    def setNodeGroupCount(value: Integer): Self = this.set("NodeGroupCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegionalConfigurationsVarargs(value: RegionalConfiguration*): Self = this.set("RegionalConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegionalConfigurations(value: RegionalConfigurationList): Self = this.set("RegionalConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionalConfigurations: Self = this.set("RegionalConfigurations", js.undefined)
+    def setRegionalConfigurationsVarargs(value: RegionalConfiguration*): Self = StObject.set(x, "RegionalConfigurations", js.Array(value :_*))
   }
 }

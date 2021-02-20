@@ -1,6 +1,5 @@
 package typings.devexpressUtils
 
-import org.scalablytyped.runtime.TopLevel
 import typings.devexpressUtils.fixedMod.FixedInterval
 import typings.devexpressUtils.flagMod.Flag
 import typings.devexpressUtils.interfacesMod.IOffsets
@@ -13,52 +12,47 @@ import typings.devexpressUtils.typesMod.ICloneable
 import typings.devexpressUtils.typesMod.IEquatable
 import typings.devexpressUtils.typesMod.ISupportCopyFrom
 import typings.devexpressUtils.typesMod.SimpleConverter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/geometry/rectangle", JSImport.Namespace)
-@js.native
-object rectangleMod extends js.Object {
+object rectangleMod {
   
   @js.native
-  sealed trait HitTestDeviation extends js.Object
+  sealed trait HitTestDeviation extends StObject
+  @JSImport("@devexpress/utils/lib/geometry/rectangle", "HitTestDeviation")
   @js.native
-  object HitTestDeviation extends js.Object {
+  object HitTestDeviation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[HitTestDeviation with Double] = js.native
     
     @js.native
     sealed trait Bottom extends HitTestDeviation
-    /* 2 */ @js.native
-    object Bottom extends TopLevel[Bottom with Double]
+    /* 2 */ val Bottom: typings.devexpressUtils.rectangleMod.HitTestDeviation.Bottom with Double = js.native
     
     @js.native
     sealed trait Left extends HitTestDeviation
-    /* 4 */ @js.native
-    object Left extends TopLevel[Left with Double]
+    /* 4 */ val Left: typings.devexpressUtils.rectangleMod.HitTestDeviation.Left with Double = js.native
     
     @js.native
     sealed trait None extends HitTestDeviation
-    /* 0 */ @js.native
-    object None extends TopLevel[None with Double]
+    /* 0 */ val None: typings.devexpressUtils.rectangleMod.HitTestDeviation.None with Double = js.native
     
     @js.native
     sealed trait Right extends HitTestDeviation
-    /* 8 */ @js.native
-    object Right extends TopLevel[Right with Double]
+    /* 8 */ val Right: typings.devexpressUtils.rectangleMod.HitTestDeviation.Right with Double = js.native
     
     @js.native
     sealed trait Top extends HitTestDeviation
-    /* 1 */ @js.native
-    object Top extends TopLevel[Top with Double]
+    /* 1 */ val Top: typings.devexpressUtils.rectangleMod.HitTestDeviation.Top with Double = js.native
   }
   
+  @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle")
   @js.native
   class Rectangle protected ()
-    extends IPoint
-       with ISize
+    extends IRectangle
        with IEquatable[Rectangle]
        with ICloneable[Rectangle]
        with ISupportCopyFrom[Rectangle] {
@@ -120,42 +114,72 @@ object rectangleMod extends js.Object {
     def setSize(size: ISize): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Rectangle extends js.Object {
+  object Rectangle {
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.areIntersected")
+    @js.native
     def areIntersected(rectA: IRectangle, rectB: IRectangle): Boolean = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.center")
+    @js.native
     def center(rect: IRectangle): Point = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.containsPoint")
+    @js.native
     def containsPoint(rect: IRectangle, point: IPoint): Boolean = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.equals")
+    @js.native
     def equals(a: IRectangle, b: IRectangle): Boolean = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.fromCenter")
+    @js.native
     def fromCenter(center: Point, minRadius: Double): Rectangle = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.fromGeometry")
+    @js.native
     def fromGeometry(point: IPoint, size: ISize): Rectangle = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.fromPoints")
+    @js.native
     def fromPoints(pointA: IPoint, pointB: IPoint): Rectangle = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.fromPositions")
+    @js.native
     def fromPositions(x1: Double, y1: Double, x2: Double, y2: Double): Rectangle = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.getHorNonCollapsedIntersection")
+    @js.native
     def getHorNonCollapsedIntersection(objA: Rectangle, objB: Rectangle): FixedInterval | Null = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.getHorizIntersection")
+    @js.native
     def getHorizIntersection(objA: IRectangle, objB: IRectangle): FixedInterval | Null = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.getIntersection")
+    @js.native
     def getIntersection(objA: IRectangle, objB: IRectangle): Rectangle | Null = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.getNonCollapsedIntersection")
+    @js.native
     def getNonCollapsedIntersection(objA: Rectangle, objB: Rectangle): Rectangle | Null = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.getVertIntersection")
+    @js.native
     def getVertIntersection(objA: IRectangle, objB: IRectangle): FixedInterval | Null = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.getVertNonCollapsedIntersection")
+    @js.native
     def getVertNonCollapsedIntersection(objA: Rectangle, objB: Rectangle): FixedInterval | Null = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle.union")
+    @js.native
     def union(rectA: IRectangle, rectB: IRectangle): Rectangle = js.native
   }
   
+  @JSImport("@devexpress/utils/lib/geometry/rectangle", "RectangleDeviation")
   @js.native
-  class RectangleDeviation protected () extends js.Object {
+  class RectangleDeviation protected () extends StObject {
     def this(initRectangle: Rectangle, initPoint: Point) = this()
     
     def calcAdditionalParams(): this.type = js.native

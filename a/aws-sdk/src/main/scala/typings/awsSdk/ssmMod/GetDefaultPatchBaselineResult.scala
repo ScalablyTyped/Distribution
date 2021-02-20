@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDefaultPatchBaselineResult extends js.Object {
+trait GetDefaultPatchBaselineResult extends StObject {
   
   /**
     * The ID of the default patch baseline.
@@ -26,30 +27,18 @@ object GetDefaultPatchBaselineResult {
   }
   
   @scala.inline
-  implicit class GetDefaultPatchBaselineResultOps[Self <: GetDefaultPatchBaselineResult] (val x: Self) extends AnyVal {
+  implicit class GetDefaultPatchBaselineResultMutableBuilder[Self <: GetDefaultPatchBaselineResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaselineIdUndefined: Self = StObject.set(x, "BaselineId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineId(value: BaselineId): Self = this.set("BaselineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaselineId: Self = this.set("BaselineId", js.undefined)
-    
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = this.set("OperatingSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatingSystem: Self = this.set("OperatingSystem", js.undefined)
+    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
   }
 }

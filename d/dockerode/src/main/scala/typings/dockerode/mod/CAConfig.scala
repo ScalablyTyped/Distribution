@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CAConfig extends js.Object {
+trait CAConfig extends StObject {
   
   var ExternalCAs: js.UndefOr[js.Array[ExternalCA]] = js.native
   
@@ -26,51 +27,39 @@ object CAConfig {
   }
   
   @scala.inline
-  implicit class CAConfigOps[Self <: CAConfig] (val x: Self) extends AnyVal {
+  implicit class CAConfigMutableBuilder[Self <: CAConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalCAs(value: js.Array[ExternalCA]): Self = StObject.set(x, "ExternalCAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalCAsUndefined: Self = StObject.set(x, "ExternalCAs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalCAsVarargs(value: ExternalCA*): Self = StObject.set(x, "ExternalCAs", js.Array(value :_*))
     
     @scala.inline
-    def setExternalCAsVarargs(value: ExternalCA*): Self = this.set("ExternalCAs", js.Array(value :_*))
+    def setForceRotate(value: Double): Self = StObject.set(x, "ForceRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalCAs(value: js.Array[ExternalCA]): Self = this.set("ExternalCAs", value.asInstanceOf[js.Any])
+    def setForceRotateUndefined: Self = StObject.set(x, "ForceRotate", js.undefined)
     
     @scala.inline
-    def deleteExternalCAs: Self = this.set("ExternalCAs", js.undefined)
+    def setNodeCertExpiry(value: Duration): Self = StObject.set(x, "NodeCertExpiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceRotate(value: Double): Self = this.set("ForceRotate", value.asInstanceOf[js.Any])
+    def setNodeCertExpiryUndefined: Self = StObject.set(x, "NodeCertExpiry", js.undefined)
     
     @scala.inline
-    def deleteForceRotate: Self = this.set("ForceRotate", js.undefined)
+    def setSigningCACert(value: String): Self = StObject.set(x, "SigningCACert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeCertExpiry(value: Duration): Self = this.set("NodeCertExpiry", value.asInstanceOf[js.Any])
+    def setSigningCACertUndefined: Self = StObject.set(x, "SigningCACert", js.undefined)
     
     @scala.inline
-    def deleteNodeCertExpiry: Self = this.set("NodeCertExpiry", js.undefined)
+    def setSigningCAKey(value: String): Self = StObject.set(x, "SigningCAKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningCACert(value: String): Self = this.set("SigningCACert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigningCACert: Self = this.set("SigningCACert", js.undefined)
-    
-    @scala.inline
-    def setSigningCAKey(value: String): Self = this.set("SigningCAKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigningCAKey: Self = this.set("SigningCAKey", js.undefined)
+    def setSigningCAKeyUndefined: Self = StObject.set(x, "SigningCAKey", js.undefined)
   }
 }

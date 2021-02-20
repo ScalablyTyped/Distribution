@@ -2,6 +2,7 @@ package typings.activexWia.WIA
 
 import typings.activexWia.activexWiaNumbers.`1`
 import typings.activexWia.activexWiaNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWia.activexWiaNumbers.`2`
   - typings.activexWia.activexWiaNumbers.`1`
 */
-trait WiaEventFlag extends js.Object
+trait WiaEventFlag extends StObject
 object WiaEventFlag {
   
   @scala.inline

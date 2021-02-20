@@ -1,5 +1,6 @@
 package typings.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,39 +37,27 @@ object ContractDefinition {
   }
   
   @scala.inline
-  implicit class ContractDefinitionOps[Self <: ContractDefinition] (val x: Self) extends AnyVal {
+  implicit class ContractDefinitionMutableBuilder[Self <: ContractDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseContracts(value: js.Array[InheritanceSpecifier]): Self = StObject.set(x, "baseContracts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseContractsVarargs(value: InheritanceSpecifier*): Self = StObject.set(x, "baseContracts", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseContractsVarargs(value: InheritanceSpecifier*): Self = this.set("baseContracts", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseContracts(value: js.Array[InheritanceSpecifier]): Self = this.set("baseContracts", value.asInstanceOf[js.Any])
+    def setSubNodes(value: js.Array[ASTNode]): Self = StObject.set(x, "subNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSubNodesVarargs(value: ASTNode*): Self = StObject.set(x, "subNodes", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubNodesVarargs(value: ASTNode*): Self = this.set("subNodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubNodes(value: js.Array[ASTNode]): Self = this.set("subNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyBinding extends js.Object {
+trait KeyBinding extends StObject {
   
   def addKeyboardHandler(kb: js.Any, pos: js.Any): Unit = js.native
   
@@ -38,39 +39,27 @@ object KeyBinding {
   }
   
   @scala.inline
-  implicit class KeyBindingOps[Self <: KeyBinding] (val x: Self) extends AnyVal {
+  implicit class KeyBindingMutableBuilder[Self <: KeyBinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddKeyboardHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addKeyboardHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetKeyboardHandler(value: () => js.Any): Self = StObject.set(x, "getKeyboardHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnCommandKey(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "onCommandKey", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddKeyboardHandler(value: (js.Any, js.Any) => Unit): Self = this.set("addKeyboardHandler", js.Any.fromFunction2(value))
+    def setOnTextInput(value: js.Any => Unit): Self = StObject.set(x, "onTextInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetKeyboardHandler(value: () => js.Any): Self = this.set("getKeyboardHandler", js.Any.fromFunction0(value))
+    def setRemoveKeyboardHandler(value: js.Any => Boolean): Self = StObject.set(x, "removeKeyboardHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCommandKey(value: (js.Any, js.Any, js.Any) => Unit): Self = this.set("onCommandKey", js.Any.fromFunction3(value))
+    def setSetDefaultHandler(value: js.Any => Unit): Self = StObject.set(x, "setDefaultHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTextInput(value: js.Any => Unit): Self = this.set("onTextInput", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveKeyboardHandler(value: js.Any => Boolean): Self = this.set("removeKeyboardHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDefaultHandler(value: js.Any => Unit): Self = this.set("setDefaultHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetKeyboardHandler(value: js.Any => Unit): Self = this.set("setKeyboardHandler", js.Any.fromFunction1(value))
+    def setSetKeyboardHandler(value: js.Any => Unit): Self = StObject.set(x, "setKeyboardHandler", js.Any.fromFunction1(value))
   }
 }

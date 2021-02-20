@@ -1,19 +1,25 @@
 package typings.antvScale
 
-import typings.antvScale.continuousBaseMod.Continuous
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/scale/lib/continuous/pow", JSImport.Namespace)
-@js.native
-object powMod extends js.Object {
+object powMod {
+  
+  /**
+    * Pow 度量，处理非均匀分布
+    */
+  @JSImport("@antv/scale/lib/continuous/pow", JSImport.Default)
+  @js.native
+  class default () extends Pow
   
   /**
     * Pow 度量，处理非均匀分布
     */
   @js.native
-  trait Pow extends Continuous {
+  trait Pow
+    extends typings.antvScale.continuousBaseMod.default {
     
     /**
       * 指数
@@ -22,10 +28,4 @@ object powMod extends js.Object {
     
     /* protected */ def getScalePercent(value: Double): Double = js.native
   }
-  
-  /**
-    * Pow 度量，处理非均匀分布
-    */
-  @js.native
-  class default () extends Pow
 }

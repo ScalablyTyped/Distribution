@@ -1,12 +1,13 @@
 package typings.awsSdkClientKmsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/model/DisableKey", JSImport.Namespace)
-@js.native
-object disableKeyMod extends js.Object {
+object disableKeyMod {
   
+  @JSImport("@aws-sdk/client-kms-node/model/DisableKey", "DisableKey")
+  @js.native
   val DisableKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

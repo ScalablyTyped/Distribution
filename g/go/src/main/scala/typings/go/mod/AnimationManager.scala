@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("go", "AnimationManager")
 @js.native
 /**You do not normally need to create an instance of this class because one already exists as the Diagram.animationManager, which you can modify.*/
-class AnimationManager () extends js.Object {
+class AnimationManager () extends StObject {
   
   /**Gets or sets the duration for animations, in milliseconds. The default value is 600 milliseconds.*/
   var duration: Double = js.native

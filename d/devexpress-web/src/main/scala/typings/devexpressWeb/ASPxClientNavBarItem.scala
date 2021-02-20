@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a client-side equivalent of the navbar's NavBarItem object.
   */
 @js.native
-trait ASPxClientNavBarItem extends js.Object {
+trait ASPxClientNavBarItem extends StObject {
   
   /**
     * Returns a value indicating whether an item is enabled.
@@ -109,60 +110,48 @@ object ASPxClientNavBarItem {
   }
   
   @scala.inline
-  implicit class ASPxClientNavBarItemOps[Self <: ASPxClientNavBarItem] (val x: Self) extends AnyVal {
+  implicit class ASPxClientNavBarItemMutableBuilder[Self <: ASPxClientNavBarItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNavigateUrl(value: () => String): Self = StObject.set(x, "GetNavigateUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = this.set("GetEnabled", js.Any.fromFunction0(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetImageUrl(value: () => String): Self = this.set("GetImageUrl", js.Any.fromFunction0(value))
+    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNavigateUrl(value: () => String): Self = this.set("GetNavigateUrl", js.Any.fromFunction0(value))
+    def setGroup(value: ASPxClientNavBarGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("GetText", js.Any.fromFunction0(value))
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVisible(value: () => Boolean): Self = this.set("GetVisible", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = this.set("SetEnabled", js.Any.fromFunction1(value))
+    def setNavBar(value: ASPxClientNavBar): Self = StObject.set(x, "navBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetImageUrl(value: String => Unit): Self = this.set("SetImageUrl", js.Any.fromFunction1(value))
+    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetNavigateUrl(value: String => Unit): Self = this.set("SetNavigateUrl", js.Any.fromFunction1(value))
+    def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "SetImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("SetText", js.Any.fromFunction1(value))
+    def setSetNavigateUrl(value: String => Unit): Self = StObject.set(x, "SetNavigateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("SetVisible", js.Any.fromFunction1(value))
+    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGroup(value: ASPxClientNavBarGroup): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNavBar(value: ASPxClientNavBar): Self = this.set("navBar", value.asInstanceOf[js.Any])
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
   }
 }

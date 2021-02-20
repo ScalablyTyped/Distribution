@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlowExecutionMessage extends js.Object {
+trait FlowExecutionMessage extends StObject {
   
   /**
     * The type of flow event .
@@ -36,42 +37,30 @@ object FlowExecutionMessage {
   }
   
   @scala.inline
-  implicit class FlowExecutionMessageOps[Self <: FlowExecutionMessage] (val x: Self) extends AnyVal {
+  implicit class FlowExecutionMessageMutableBuilder[Self <: FlowExecutionMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventType(value: FlowExecutionEventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageId(value: FlowExecutionMessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: FlowExecutionEventType): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
     @scala.inline
-    def deleteEventType: Self = this.set("eventType", js.undefined)
+    def setPayload(value: FlowExecutionMessagePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: FlowExecutionMessageId): Self = this.set("messageId", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deleteMessageId: Self = this.set("messageId", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: FlowExecutionMessagePayload): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

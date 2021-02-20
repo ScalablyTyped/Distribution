@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/action/view-week", JSImport.Namespace)
-@js.native
-object viewWeekMod extends js.Object {
+object viewWeekMod {
   
+  @JSImport("material-ui/svg-icons/action/view-week", JSImport.Default)
+  @js.native
+  class default () extends ActionViewWeek
+  
+  @JSImport("material-ui/svg-icons/action/view-week", "ActionViewWeek")
   @js.native
   class ActionViewWeek ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

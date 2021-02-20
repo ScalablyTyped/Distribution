@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.integer
   - typings.microsoftGraph.microsoftGraphStrings.version
 */
-trait Win32LobAppRegistryRuleOperationType extends js.Object
+trait Win32LobAppRegistryRuleOperationType extends StObject
 object Win32LobAppRegistryRuleOperationType {
   
   @scala.inline

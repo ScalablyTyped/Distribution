@@ -1,12 +1,13 @@
 package typings.nodeForge.anon
 
 import typings.nodeForge.mod.pki.ed25519.BinaryBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublicKey extends js.Object {
+trait PublicKey extends StObject {
   
   var publicKey: BinaryBuffer = js.native
   
@@ -21,24 +22,12 @@ object PublicKey {
   }
   
   @scala.inline
-  implicit class PublicKeyOps[Self <: PublicKey] (val x: Self) extends AnyVal {
+  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublicKey(value: BinaryBuffer): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPublicKey(value: BinaryBuffer): Self = this.set("publicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignature(value: BinaryBuffer): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setSignature(value: BinaryBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

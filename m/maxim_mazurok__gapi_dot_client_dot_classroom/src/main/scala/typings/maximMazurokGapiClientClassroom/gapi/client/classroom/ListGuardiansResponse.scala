@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGuardiansResponse extends js.Object {
+trait ListGuardiansResponse extends StObject {
   
   /** Guardians on this page of results that met the criteria specified in the request. */
   var guardians: js.UndefOr[js.Array[Guardian]] = js.native
@@ -22,33 +23,21 @@ object ListGuardiansResponse {
   }
   
   @scala.inline
-  implicit class ListGuardiansResponseOps[Self <: ListGuardiansResponse] (val x: Self) extends AnyVal {
+  implicit class ListGuardiansResponseMutableBuilder[Self <: ListGuardiansResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGuardians(value: js.Array[Guardian]): Self = StObject.set(x, "guardians", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGuardiansUndefined: Self = StObject.set(x, "guardians", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGuardiansVarargs(value: Guardian*): Self = StObject.set(x, "guardians", js.Array(value :_*))
     
     @scala.inline
-    def setGuardiansVarargs(value: Guardian*): Self = this.set("guardians", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuardians(value: js.Array[Guardian]): Self = this.set("guardians", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGuardians: Self = this.set("guardians", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

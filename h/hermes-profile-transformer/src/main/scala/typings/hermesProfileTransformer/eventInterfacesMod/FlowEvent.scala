@@ -3,6 +3,7 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.FLOW_EVENTS_END
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.FLOW_EVENTS_START
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.FLOW_EVENTS_STEP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,20 +17,20 @@ trait FlowEvent extends Event
 object FlowEvent {
   
   @scala.inline
-  def FlowEventStart(ph: FLOW_EVENTS_START): FlowEvent = {
+  def FlowEventEnd(ph: FLOW_EVENTS_END): typings.hermesProfileTransformer.eventInterfacesMod.FlowEventEnd = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowEvent]
+    __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.FlowEventEnd]
   }
   
   @scala.inline
-  def FlowEventStep(ph: FLOW_EVENTS_STEP): FlowEvent = {
+  def FlowEventStart(ph: FLOW_EVENTS_START): typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStart = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowEvent]
+    __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStart]
   }
   
   @scala.inline
-  def FlowEventEnd(ph: FLOW_EVENTS_END): FlowEvent = {
+  def FlowEventStep(ph: FLOW_EVENTS_STEP): typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStep = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowEvent]
+    __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStep]
   }
 }

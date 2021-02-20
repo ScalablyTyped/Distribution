@@ -1,11 +1,12 @@
 package typings.awsSdk.globalacceleratorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAcceleratorRequest extends js.Object {
+trait UpdateAcceleratorRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the accelerator to update.
@@ -36,39 +37,27 @@ object UpdateAcceleratorRequest {
   }
   
   @scala.inline
-  implicit class UpdateAcceleratorRequestOps[Self <: UpdateAcceleratorRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAcceleratorRequestMutableBuilder[Self <: UpdateAcceleratorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: GenericBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def setAcceleratorArn(value: GenericString): Self = this.set("AcceleratorArn", value.asInstanceOf[js.Any])
+    def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: GenericBoolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setName(value: GenericString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddressType(value: IpAddressType): Self = this.set("IpAddressType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpAddressType: Self = this.set("IpAddressType", js.undefined)
-    
-    @scala.inline
-    def setName(value: GenericString): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

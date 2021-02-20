@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAppInstanceUserRequest extends js.Object {
+trait UpdateAppInstanceUserRequest extends StObject {
   
   /**
     * The ARN of the app instance user.
@@ -31,30 +32,18 @@ object UpdateAppInstanceUserRequest {
   }
   
   @scala.inline
-  implicit class UpdateAppInstanceUserRequestOps[Self <: UpdateAppInstanceUserRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAppInstanceUserRequestMutableBuilder[Self <: UpdateAppInstanceUserRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
     @scala.inline
-    def setAppInstanceUserArn(value: ChimeArn): Self = this.set("AppInstanceUserArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: UserName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadata(value: Metadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    def setName(value: UserName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

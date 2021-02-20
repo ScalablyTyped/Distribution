@@ -1,7 +1,8 @@
 package typings.awsSdk.opsworkscmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _BackupStatus extends js.Object
+trait _BackupStatus extends StObject

@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.TileDiscardPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnablePickFeatures extends js.Object {
+trait EnablePickFeatures extends StObject {
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
   
@@ -39,81 +40,69 @@ object EnablePickFeatures {
   }
   
   @scala.inline
-  implicit class EnablePickFeaturesOps[Self <: EnablePickFeatures] (val x: Self) extends AnyVal {
+  implicit class EnablePickFeaturesMutableBuilder[Self <: EnablePickFeatures] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnablePickFeatures(value: Boolean): Self = StObject.set(x, "enablePickFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setEnablePickFeaturesUndefined: Self = StObject.set(x, "enablePickFeatures", js.undefined)
     
     @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setMaximumLevel(value: Double): Self = StObject.set(x, "maximumLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setMaximumLevelUndefined: Self = StObject.set(x, "maximumLevel", js.undefined)
     
     @scala.inline
-    def setEnablePickFeatures(value: Boolean): Self = this.set("enablePickFeatures", value.asInstanceOf[js.Any])
+    def setProxy(value: typings.cesium.mod.Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnablePickFeatures: Self = this.set("enablePickFeatures", js.undefined)
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
     @scala.inline
-    def setMaximumLevel(value: Double): Self = this.set("maximumLevel", value.asInstanceOf[js.Any])
+    def setRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumLevel: Self = this.set("maximumLevel", js.undefined)
+    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
     
     @scala.inline
-    def setProxy(value: typings.cesium.mod.Proxy): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
+    def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
     
     @scala.inline
-    def setRectangle(value: typings.cesium.mod.Rectangle): Self = this.set("rectangle", value.asInstanceOf[js.Any])
+    def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
     
     @scala.inline
-    def setTileDiscardPolicy(value: TileDiscardPolicy): Self = this.set("tileDiscardPolicy", value.asInstanceOf[js.Any])
+    def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTileDiscardPolicy: Self = this.set("tileDiscardPolicy", js.undefined)
+    def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
     
     @scala.inline
-    def setTileHeight(value: Double): Self = this.set("tileHeight", value.asInstanceOf[js.Any])
+    def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = StObject.set(x, "tilingScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTileHeight: Self = this.set("tileHeight", js.undefined)
+    def setTilingSchemeUndefined: Self = StObject.set(x, "tilingScheme", js.undefined)
     
     @scala.inline
-    def setTileWidth(value: Double): Self = this.set("tileWidth", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTileWidth: Self = this.set("tileWidth", js.undefined)
+    def setUsePreCachedTilesIfAvailable(value: Boolean): Self = StObject.set(x, "usePreCachedTilesIfAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = this.set("tilingScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTilingScheme: Self = this.set("tilingScheme", js.undefined)
-    
-    @scala.inline
-    def setUsePreCachedTilesIfAvailable(value: Boolean): Self = this.set("usePreCachedTilesIfAvailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePreCachedTilesIfAvailable: Self = this.set("usePreCachedTilesIfAvailable", js.undefined)
+    def setUsePreCachedTilesIfAvailableUndefined: Self = StObject.set(x, "usePreCachedTilesIfAvailable", js.undefined)
   }
 }

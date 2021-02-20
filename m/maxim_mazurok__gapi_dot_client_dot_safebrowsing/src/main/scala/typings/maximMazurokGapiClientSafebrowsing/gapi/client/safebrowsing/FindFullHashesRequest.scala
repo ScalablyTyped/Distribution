@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindFullHashesRequest extends js.Object {
+trait FindFullHashesRequest extends StObject {
   
   /** Client metadata associated with callers of higher-level APIs built on top of the client's implementation. */
   var apiClient: js.UndefOr[ClientInfo] = js.native
@@ -28,45 +29,33 @@ object FindFullHashesRequest {
   }
   
   @scala.inline
-  implicit class FindFullHashesRequestOps[Self <: FindFullHashesRequest] (val x: Self) extends AnyVal {
+  implicit class FindFullHashesRequestMutableBuilder[Self <: FindFullHashesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiClient(value: ClientInfo): Self = StObject.set(x, "apiClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiClientUndefined: Self = StObject.set(x, "apiClient", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClient(value: ClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiClient(value: ClientInfo): Self = this.set("apiClient", value.asInstanceOf[js.Any])
+    def setClientStates(value: js.Array[String]): Self = StObject.set(x, "clientStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApiClient: Self = this.set("apiClient", js.undefined)
+    def setClientStatesUndefined: Self = StObject.set(x, "clientStates", js.undefined)
     
     @scala.inline
-    def setClient(value: ClientInfo): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setClientStatesVarargs(value: String*): Self = StObject.set(x, "clientStates", js.Array(value :_*))
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def setClientStatesVarargs(value: String*): Self = this.set("clientStates", js.Array(value :_*))
+    def setThreatInfo(value: ThreatInfo): Self = StObject.set(x, "threatInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientStates(value: js.Array[String]): Self = this.set("clientStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientStates: Self = this.set("clientStates", js.undefined)
-    
-    @scala.inline
-    def setThreatInfo(value: ThreatInfo): Self = this.set("threatInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatInfo: Self = this.set("threatInfo", js.undefined)
+    def setThreatInfoUndefined: Self = StObject.set(x, "threatInfo", js.undefined)
   }
 }

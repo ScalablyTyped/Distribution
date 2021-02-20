@@ -1,5 +1,6 @@
 package typings.openidClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,84 +41,72 @@ object IdTokenClaims {
   }
   
   @scala.inline
-  implicit class IdTokenClaimsOps[Self <: IdTokenClaims] (val x: Self) extends AnyVal {
+  implicit class IdTokenClaimsMutableBuilder[Self <: IdTokenClaims] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcr(value: String): Self = StObject.set(x, "acr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcrUndefined: Self = StObject.set(x, "acr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmr(value: js.Array[String]): Self = StObject.set(x, "amr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudVarargs(value: String*): Self = this.set("aud", js.Array(value :_*))
+    def setAmrUndefined: Self = StObject.set(x, "amr", js.undefined)
     
     @scala.inline
-    def setAud(value: String | js.Array[String]): Self = this.set("aud", value.asInstanceOf[js.Any])
+    def setAmrVarargs(value: String*): Self = StObject.set(x, "amr", js.Array(value :_*))
     
     @scala.inline
-    def setExp(value: Double): Self = this.set("exp", value.asInstanceOf[js.Any])
+    def setAt_hash(value: String): Self = StObject.set(x, "at_hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIat(value: Double): Self = this.set("iat", value.asInstanceOf[js.Any])
+    def setAt_hashUndefined: Self = StObject.set(x, "at_hash", js.undefined)
     
     @scala.inline
-    def setIss(value: String): Self = this.set("iss", value.asInstanceOf[js.Any])
+    def setAud(value: String | js.Array[String]): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcr(value: String): Self = this.set("acr", value.asInstanceOf[js.Any])
+    def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value :_*))
     
     @scala.inline
-    def deleteAcr: Self = this.set("acr", js.undefined)
+    def setAuth_time(value: Double): Self = StObject.set(x, "auth_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmrVarargs(value: String*): Self = this.set("amr", js.Array(value :_*))
+    def setAuth_timeUndefined: Self = StObject.set(x, "auth_time", js.undefined)
     
     @scala.inline
-    def setAmr(value: js.Array[String]): Self = this.set("amr", value.asInstanceOf[js.Any])
+    def setAzp(value: String): Self = StObject.set(x, "azp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmr: Self = this.set("amr", js.undefined)
+    def setAzpUndefined: Self = StObject.set(x, "azp", js.undefined)
     
     @scala.inline
-    def setAt_hash(value: String): Self = this.set("at_hash", value.asInstanceOf[js.Any])
+    def setC_hash(value: String): Self = StObject.set(x, "c_hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAt_hash: Self = this.set("at_hash", js.undefined)
+    def setC_hashUndefined: Self = StObject.set(x, "c_hash", js.undefined)
     
     @scala.inline
-    def setAuth_time(value: Double): Self = this.set("auth_time", value.asInstanceOf[js.Any])
+    def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuth_time: Self = this.set("auth_time", js.undefined)
+    def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzp(value: String): Self = this.set("azp", value.asInstanceOf[js.Any])
+    def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAzp: Self = this.set("azp", js.undefined)
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC_hash(value: String): Self = this.set("c_hash", value.asInstanceOf[js.Any])
+    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     @scala.inline
-    def deleteC_hash: Self = this.set("c_hash", js.undefined)
+    def setS_hash(value: String): Self = StObject.set(x, "s_hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonce: Self = this.set("nonce", js.undefined)
-    
-    @scala.inline
-    def setS_hash(value: String): Self = this.set("s_hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS_hash: Self = this.set("s_hash", js.undefined)
+    def setS_hashUndefined: Self = StObject.set(x, "s_hash", js.undefined)
   }
 }

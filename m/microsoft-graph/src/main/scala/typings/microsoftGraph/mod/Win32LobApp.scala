@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,138 +56,126 @@ object Win32LobApp {
   }
   
   @scala.inline
-  implicit class Win32LobAppOps[Self <: Win32LobApp] (val x: Self) extends AnyVal {
+  implicit class Win32LobAppMutableBuilder[Self <: Win32LobApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicableArchitectures(value: WindowsArchitecture): Self = StObject.set(x, "applicableArchitectures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicableArchitecturesUndefined: Self = StObject.set(x, "applicableArchitectures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstallCommandLine(value: NullableOption[String]): Self = StObject.set(x, "installCommandLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicableArchitectures(value: WindowsArchitecture): Self = this.set("applicableArchitectures", value.asInstanceOf[js.Any])
+    def setInstallCommandLineNull: Self = StObject.set(x, "installCommandLine", null)
     
     @scala.inline
-    def deleteApplicableArchitectures: Self = this.set("applicableArchitectures", js.undefined)
+    def setInstallCommandLineUndefined: Self = StObject.set(x, "installCommandLine", js.undefined)
     
     @scala.inline
-    def setInstallCommandLine(value: NullableOption[String]): Self = this.set("installCommandLine", value.asInstanceOf[js.Any])
+    def setInstallExperience(value: NullableOption[Win32LobAppInstallExperience]): Self = StObject.set(x, "installExperience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstallCommandLine: Self = this.set("installCommandLine", js.undefined)
+    def setInstallExperienceNull: Self = StObject.set(x, "installExperience", null)
     
     @scala.inline
-    def setInstallCommandLineNull: Self = this.set("installCommandLine", null)
+    def setInstallExperienceUndefined: Self = StObject.set(x, "installExperience", js.undefined)
     
     @scala.inline
-    def setInstallExperience(value: NullableOption[Win32LobAppInstallExperience]): Self = this.set("installExperience", value.asInstanceOf[js.Any])
+    def setMinimumCpuSpeedInMHz(value: NullableOption[Double]): Self = StObject.set(x, "minimumCpuSpeedInMHz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstallExperience: Self = this.set("installExperience", js.undefined)
+    def setMinimumCpuSpeedInMHzNull: Self = StObject.set(x, "minimumCpuSpeedInMHz", null)
     
     @scala.inline
-    def setInstallExperienceNull: Self = this.set("installExperience", null)
+    def setMinimumCpuSpeedInMHzUndefined: Self = StObject.set(x, "minimumCpuSpeedInMHz", js.undefined)
     
     @scala.inline
-    def setMinimumCpuSpeedInMHz(value: NullableOption[Double]): Self = this.set("minimumCpuSpeedInMHz", value.asInstanceOf[js.Any])
+    def setMinimumFreeDiskSpaceInMB(value: NullableOption[Double]): Self = StObject.set(x, "minimumFreeDiskSpaceInMB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumCpuSpeedInMHz: Self = this.set("minimumCpuSpeedInMHz", js.undefined)
+    def setMinimumFreeDiskSpaceInMBNull: Self = StObject.set(x, "minimumFreeDiskSpaceInMB", null)
     
     @scala.inline
-    def setMinimumCpuSpeedInMHzNull: Self = this.set("minimumCpuSpeedInMHz", null)
+    def setMinimumFreeDiskSpaceInMBUndefined: Self = StObject.set(x, "minimumFreeDiskSpaceInMB", js.undefined)
     
     @scala.inline
-    def setMinimumFreeDiskSpaceInMB(value: NullableOption[Double]): Self = this.set("minimumFreeDiskSpaceInMB", value.asInstanceOf[js.Any])
+    def setMinimumMemoryInMB(value: NullableOption[Double]): Self = StObject.set(x, "minimumMemoryInMB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumFreeDiskSpaceInMB: Self = this.set("minimumFreeDiskSpaceInMB", js.undefined)
+    def setMinimumMemoryInMBNull: Self = StObject.set(x, "minimumMemoryInMB", null)
     
     @scala.inline
-    def setMinimumFreeDiskSpaceInMBNull: Self = this.set("minimumFreeDiskSpaceInMB", null)
+    def setMinimumMemoryInMBUndefined: Self = StObject.set(x, "minimumMemoryInMB", js.undefined)
     
     @scala.inline
-    def setMinimumMemoryInMB(value: NullableOption[Double]): Self = this.set("minimumMemoryInMB", value.asInstanceOf[js.Any])
+    def setMinimumNumberOfProcessors(value: NullableOption[Double]): Self = StObject.set(x, "minimumNumberOfProcessors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumMemoryInMB: Self = this.set("minimumMemoryInMB", js.undefined)
+    def setMinimumNumberOfProcessorsNull: Self = StObject.set(x, "minimumNumberOfProcessors", null)
     
     @scala.inline
-    def setMinimumMemoryInMBNull: Self = this.set("minimumMemoryInMB", null)
+    def setMinimumNumberOfProcessorsUndefined: Self = StObject.set(x, "minimumNumberOfProcessors", js.undefined)
     
     @scala.inline
-    def setMinimumNumberOfProcessors(value: NullableOption[Double]): Self = this.set("minimumNumberOfProcessors", value.asInstanceOf[js.Any])
+    def setMinimumSupportedWindowsRelease(value: NullableOption[String]): Self = StObject.set(x, "minimumSupportedWindowsRelease", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumNumberOfProcessors: Self = this.set("minimumNumberOfProcessors", js.undefined)
+    def setMinimumSupportedWindowsReleaseNull: Self = StObject.set(x, "minimumSupportedWindowsRelease", null)
     
     @scala.inline
-    def setMinimumNumberOfProcessorsNull: Self = this.set("minimumNumberOfProcessors", null)
+    def setMinimumSupportedWindowsReleaseUndefined: Self = StObject.set(x, "minimumSupportedWindowsRelease", js.undefined)
     
     @scala.inline
-    def setMinimumSupportedWindowsRelease(value: NullableOption[String]): Self = this.set("minimumSupportedWindowsRelease", value.asInstanceOf[js.Any])
+    def setMsiInformation(value: NullableOption[Win32LobAppMsiInformation]): Self = StObject.set(x, "msiInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumSupportedWindowsRelease: Self = this.set("minimumSupportedWindowsRelease", js.undefined)
+    def setMsiInformationNull: Self = StObject.set(x, "msiInformation", null)
     
     @scala.inline
-    def setMinimumSupportedWindowsReleaseNull: Self = this.set("minimumSupportedWindowsRelease", null)
+    def setMsiInformationUndefined: Self = StObject.set(x, "msiInformation", js.undefined)
     
     @scala.inline
-    def setMsiInformation(value: NullableOption[Win32LobAppMsiInformation]): Self = this.set("msiInformation", value.asInstanceOf[js.Any])
+    def setReturnCodes(value: NullableOption[js.Array[Win32LobAppReturnCode]]): Self = StObject.set(x, "returnCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsiInformation: Self = this.set("msiInformation", js.undefined)
+    def setReturnCodesNull: Self = StObject.set(x, "returnCodes", null)
     
     @scala.inline
-    def setMsiInformationNull: Self = this.set("msiInformation", null)
+    def setReturnCodesUndefined: Self = StObject.set(x, "returnCodes", js.undefined)
     
     @scala.inline
-    def setReturnCodesVarargs(value: Win32LobAppReturnCode*): Self = this.set("returnCodes", js.Array(value :_*))
+    def setReturnCodesVarargs(value: Win32LobAppReturnCode*): Self = StObject.set(x, "returnCodes", js.Array(value :_*))
     
     @scala.inline
-    def setReturnCodes(value: NullableOption[js.Array[Win32LobAppReturnCode]]): Self = this.set("returnCodes", value.asInstanceOf[js.Any])
+    def setRules(value: NullableOption[js.Array[Win32LobAppRule]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnCodes: Self = this.set("returnCodes", js.undefined)
+    def setRulesNull: Self = StObject.set(x, "rules", null)
     
     @scala.inline
-    def setReturnCodesNull: Self = this.set("returnCodes", null)
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def setRulesVarargs(value: Win32LobAppRule*): Self = this.set("rules", js.Array(value :_*))
+    def setRulesVarargs(value: Win32LobAppRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
     @scala.inline
-    def setRules(value: NullableOption[js.Array[Win32LobAppRule]]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setSetupFilePath(value: NullableOption[String]): Self = StObject.set(x, "setupFilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setSetupFilePathNull: Self = StObject.set(x, "setupFilePath", null)
     
     @scala.inline
-    def setRulesNull: Self = this.set("rules", null)
+    def setSetupFilePathUndefined: Self = StObject.set(x, "setupFilePath", js.undefined)
     
     @scala.inline
-    def setSetupFilePath(value: NullableOption[String]): Self = this.set("setupFilePath", value.asInstanceOf[js.Any])
+    def setUninstallCommandLine(value: NullableOption[String]): Self = StObject.set(x, "uninstallCommandLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetupFilePath: Self = this.set("setupFilePath", js.undefined)
+    def setUninstallCommandLineNull: Self = StObject.set(x, "uninstallCommandLine", null)
     
     @scala.inline
-    def setSetupFilePathNull: Self = this.set("setupFilePath", null)
-    
-    @scala.inline
-    def setUninstallCommandLine(value: NullableOption[String]): Self = this.set("uninstallCommandLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUninstallCommandLine: Self = this.set("uninstallCommandLine", js.undefined)
-    
-    @scala.inline
-    def setUninstallCommandLineNull: Self = this.set("uninstallCommandLine", null)
+    def setUninstallCommandLineUndefined: Self = StObject.set(x, "uninstallCommandLine", js.undefined)
   }
 }

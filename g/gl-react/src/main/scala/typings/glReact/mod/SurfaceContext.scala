@@ -1,12 +1,13 @@
 package typings.glReact.mod
 
 import typings.glReact.anon.GetGLSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SurfaceContext extends js.Object {
+trait SurfaceContext extends StObject {
   
   var glParent: Node | Surface[_] | Bus = js.native
   
@@ -23,27 +24,15 @@ object SurfaceContext {
   }
   
   @scala.inline
-  implicit class SurfaceContextOps[Self <: SurfaceContext] (val x: Self) extends AnyVal {
+  implicit class SurfaceContextMutableBuilder[Self <: SurfaceContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlParent(value: Node | Surface[_] | Bus): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlSizable(value: GetGLSize): Self = StObject.set(x, "glSizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGlParent(value: Node | Surface[_] | Bus): Self = this.set("glParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGlSizable(value: GetGLSize): Self = this.set("glSizable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGlSurface(value: Surface[_]): Self = this.set("glSurface", value.asInstanceOf[js.Any])
+    def setGlSurface(value: Surface[_]): Self = StObject.set(x, "glSurface", value.asInstanceOf[js.Any])
   }
 }

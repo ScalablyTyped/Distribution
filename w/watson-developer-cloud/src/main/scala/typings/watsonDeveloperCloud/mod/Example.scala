@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Example. */
 @js.native
-trait Example extends js.Object {
+trait Example extends StObject {
   
   /** The timestamp for creation of the object. */
   var created: js.UndefOr[String] = js.native
@@ -29,42 +30,30 @@ object Example {
   }
   
   @scala.inline
-  implicit class ExampleOps[Self <: Example] (val x: Self) extends AnyVal {
+  implicit class ExampleMutableBuilder[Self <: Example] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMentions(value: js.Array[Mention]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setMentionsVarargs(value: Mention*): Self = StObject.set(x, "mentions", js.Array(value :_*))
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentionsVarargs(value: Mention*): Self = this.set("mentions", js.Array(value :_*))
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentions(value: js.Array[Mention]): Self = this.set("mentions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMentions: Self = this.set("mentions", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

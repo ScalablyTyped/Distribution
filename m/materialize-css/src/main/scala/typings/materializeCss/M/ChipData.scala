@@ -1,11 +1,12 @@
 package typings.materializeCss.M
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChipData extends js.Object {
+trait ChipData extends StObject {
   
   /**
     * Chip image
@@ -26,27 +27,15 @@ object ChipData {
   }
   
   @scala.inline
-  implicit class ChipDataOps[Self <: ChipData] (val x: Self) extends AnyVal {
+  implicit class ChipDataMutableBuilder[Self <: ChipData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImg(value: String): Self = this.set("img", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImg: Self = this.set("img", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

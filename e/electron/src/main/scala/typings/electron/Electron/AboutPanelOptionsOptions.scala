@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AboutPanelOptionsOptions extends js.Object {
+trait AboutPanelOptionsOptions extends StObject {
   
   /**
     * The app's name.
@@ -67,69 +68,57 @@ object AboutPanelOptionsOptions {
   }
   
   @scala.inline
-  implicit class AboutPanelOptionsOptionsOps[Self <: AboutPanelOptionsOptions] (val x: Self) extends AnyVal {
+  implicit class AboutPanelOptionsOptionsMutableBuilder[Self <: AboutPanelOptionsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationVersion(value: String): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: String): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
+    def setAuthors(value: js.Array[String]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationVersion(value: String): Self = this.set("applicationVersion", value.asInstanceOf[js.Any])
+    def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
     @scala.inline
-    def deleteApplicationVersion: Self = this.set("applicationVersion", js.undefined)
+    def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorsVarargs(value: String*): Self = this.set("authors", js.Array(value :_*))
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthors(value: js.Array[String]): Self = this.set("authors", value.asInstanceOf[js.Any])
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def deleteAuthors: Self = this.set("authors", js.undefined)
+    def setCredits(value: String): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setCreditsUndefined: Self = StObject.set(x, "credits", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setIconPath(value: String): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredits(value: String): Self = this.set("credits", value.asInstanceOf[js.Any])
+    def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
     
     @scala.inline
-    def deleteCredits: Self = this.set("credits", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconPath(value: String): Self = this.set("iconPath", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteIconPath: Self = this.set("iconPath", js.undefined)
+    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsite: Self = this.set("website", js.undefined)
+    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

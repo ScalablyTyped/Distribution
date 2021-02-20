@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectdPayload extends js.Object {
+trait CollectdPayload extends StObject {
   
   /** The end time of the interval. */
   var endTime: js.UndefOr[String] = js.native
@@ -45,73 +46,61 @@ object CollectdPayload {
   }
   
   @scala.inline
-  implicit class CollectdPayloadOps[Self <: CollectdPayload] (val x: Self) extends AnyVal {
+  implicit class CollectdPayloadMutableBuilder[Self <: CollectdPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.monitoring.gapi.client.monitoring.TypedValue}
       */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.CollectdPayload with TopLevel[js.Any]
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setPlugin(value: String): Self = this.set("plugin", value.asInstanceOf[js.Any])
+    def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlugin: Self = this.set("plugin", js.undefined)
+    def setPluginInstance(value: String): Self = StObject.set(x, "pluginInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginInstance(value: String): Self = this.set("pluginInstance", value.asInstanceOf[js.Any])
+    def setPluginInstanceUndefined: Self = StObject.set(x, "pluginInstance", js.undefined)
     
     @scala.inline
-    def deletePluginInstance: Self = this.set("pluginInstance", js.undefined)
+    def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeInstance(value: String): Self = StObject.set(x, "typeInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeInstance(value: String): Self = this.set("typeInstance", value.asInstanceOf[js.Any])
+    def setTypeInstanceUndefined: Self = StObject.set(x, "typeInstance", js.undefined)
     
     @scala.inline
-    def deleteTypeInstance: Self = this.set("typeInstance", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setValuesVarargs(value: CollectdValue*): Self = this.set("values", js.Array(value :_*))
+    def setValues(value: js.Array[CollectdValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: js.Array[CollectdValue]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: CollectdValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

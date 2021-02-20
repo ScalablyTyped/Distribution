@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Canonical extends js.Object {
+trait Canonical extends StObject {
   
   var canonical: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object Canonical {
   }
   
   @scala.inline
-  implicit class CanonicalOps[Self <: Canonical] (val x: Self) extends AnyVal {
+  implicit class CanonicalMutableBuilder[Self <: Canonical] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanonicalUndefined: Self = StObject.set(x, "canonical", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndent(value: Boolean | Double | String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanonical(value: Boolean): Self = this.set("canonical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanonical: Self = this.set("canonical", js.undefined)
-    
-    @scala.inline
-    def setIndent(value: Boolean | Double | String): Self = this.set("indent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a user authentication status changing event. */
 @js.native
-trait UserAuthenticationStatusChangingEventArgs extends js.Object {
+trait UserAuthenticationStatusChangingEventArgs extends StObject {
   
   /** Gets the user's current authentication status. */
   var currentStatus: UserAuthenticationStatus = js.native
@@ -37,30 +38,18 @@ object UserAuthenticationStatusChangingEventArgs {
   }
   
   @scala.inline
-  implicit class UserAuthenticationStatusChangingEventArgsOps[Self <: UserAuthenticationStatusChangingEventArgs] (val x: Self) extends AnyVal {
+  implicit class UserAuthenticationStatusChangingEventArgsMutableBuilder[Self <: UserAuthenticationStatusChangingEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDeferral(value: () => UserAuthenticationStatusChangeDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentStatus(value: UserAuthenticationStatus): Self = this.set("currentStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDeferral(value: () => UserAuthenticationStatusChangeDeferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNewStatus(value: UserAuthenticationStatus): Self = this.set("newStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

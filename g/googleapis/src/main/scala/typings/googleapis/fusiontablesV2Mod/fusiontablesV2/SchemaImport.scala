@@ -1,5 +1,6 @@
 package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an import request.
   */
 @js.native
-trait SchemaImport extends js.Object {
+trait SchemaImport extends StObject {
   
   /**
     * The kind of item this is. For an import, this is always
@@ -30,30 +31,18 @@ object SchemaImport {
   }
   
   @scala.inline
-  implicit class SchemaImportOps[Self <: SchemaImport] (val x: Self) extends AnyVal {
+  implicit class SchemaImportMutableBuilder[Self <: SchemaImport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumRowsReceived(value: String): Self = StObject.set(x, "numRowsReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setNumRowsReceived(value: String): Self = this.set("numRowsReceived", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumRowsReceived: Self = this.set("numRowsReceived", js.undefined)
+    def setNumRowsReceivedUndefined: Self = StObject.set(x, "numRowsReceived", js.undefined)
   }
 }

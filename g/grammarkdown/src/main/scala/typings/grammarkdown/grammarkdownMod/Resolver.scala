@@ -1,12 +1,13 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "Resolver")
 @js.native
-class Resolver protected () extends js.Object {
+class Resolver protected () extends StObject {
   def this(bindings: BindingTable) = this()
   
   var bindings: js.Any = js.native

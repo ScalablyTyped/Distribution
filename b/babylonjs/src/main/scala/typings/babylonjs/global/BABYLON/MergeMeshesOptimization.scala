@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,18 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class MergeMeshesOptimization ()
   extends typings.babylonjs.BABYLON.MergeMeshesOptimization
 /* static members */
-@JSGlobal("BABYLON.MergeMeshesOptimization")
-@js.native
-object MergeMeshesOptimization extends js.Object {
+object MergeMeshesOptimization {
   
-  /**
-    * Gets or sets a boolean which defines if optimization octree has to be updated
-    */
-  def UpdateSelectionTree: Boolean = js.native
-  /**
-    * Gets or sets a boolean which defines if optimization octree has to be updated
-    */
-  def UpdateSelectionTree_=(value: Boolean): Unit = js.native
+  @JSGlobal("BABYLON.MergeMeshesOptimization")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var _UpdateSelectionTree: js.Any = js.native
+  @JSGlobal("BABYLON.MergeMeshesOptimization._UpdateSelectionTree")
+  @js.native
+  def _UpdateSelectionTree: js.Any = js.native
+  @scala.inline
+  def _UpdateSelectionTree_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
 }

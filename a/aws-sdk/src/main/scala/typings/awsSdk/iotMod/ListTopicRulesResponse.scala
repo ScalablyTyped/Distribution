@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTopicRulesResponse extends js.Object {
+trait ListTopicRulesResponse extends StObject {
   
   /**
     * The token to use to get the next set of results, or null if there are no additional results.
@@ -26,33 +27,21 @@ object ListTopicRulesResponse {
   }
   
   @scala.inline
-  implicit class ListTopicRulesResponseOps[Self <: ListTopicRulesResponse] (val x: Self) extends AnyVal {
+  implicit class ListTopicRulesResponseMutableBuilder[Self <: ListTopicRulesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRules(value: TopicRuleList): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRulesVarargs(value: TopicRuleListItem*): Self = this.set("rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: TopicRuleList): Self = this.set("rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setRulesVarargs(value: TopicRuleListItem*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

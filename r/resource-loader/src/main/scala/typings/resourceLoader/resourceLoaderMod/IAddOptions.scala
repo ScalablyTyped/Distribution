@@ -4,6 +4,7 @@ import typings.resourceLoader.resourceLoaderMod.Resource.IMetadata
 import typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE
 import typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
 import typings.resourceLoader.resourceLoaderMod.Resource.XHR_RESPONSE_TYPE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {Resource.IMetadata} [metadata] - Extra configuration for middleware and the Resource object.
   */
 @js.native
-trait IAddOptions extends js.Object {
+trait IAddOptions extends StObject {
   
   var callback: js.UndefOr[OnCompleteSignal] = js.native
   
@@ -62,78 +63,66 @@ object IAddOptions {
   }
   
   @scala.inline
-  implicit class IAddOptionsOps[Self <: IAddOptions] (val x: Self) extends AnyVal {
+  implicit class IAddOptionsMutableBuilder[Self <: IAddOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: /* resource */ Resource => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: /* resource */ Resource => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOrigin(value: String | Boolean): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setLoadType(value: LOAD_TYPE): Self = StObject.set(x, "loadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLoadTypeUndefined: Self = StObject.set(x, "loadType", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadType(value: LOAD_TYPE): Self = this.set("loadType", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteLoadType: Self = this.set("loadType", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setOnComplete(value: /* resource */ Resource => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnComplete(value: /* resource */ Resource => Unit): Self = this.set("onComplete", js.Any.fromFunction1(value))
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setXhrType(value: XHR_RESPONSE_TYPE): Self = StObject.set(x, "xhrType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setXhrType(value: XHR_RESPONSE_TYPE): Self = this.set("xhrType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhrType: Self = this.set("xhrType", js.undefined)
+    def setXhrTypeUndefined: Self = StObject.set(x, "xhrType", js.undefined)
   }
 }

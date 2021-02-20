@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,33 +57,21 @@ object Ruin {
   }
   
   @scala.inline
-  implicit class RuinOps[Self <: Ruin] (val x: Self) extends AnyVal {
+  implicit class RuinMutableBuilder[Self <: Ruin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroyTime(value: Double): Self = StObject.set(x, "destroyTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Id[Ruin]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStore(value: StoreDefinitionUnlimited): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroyTime(value: Double): Self = this.set("destroyTime", value.asInstanceOf[js.Any])
+    def setStructure(value: AnyStructure): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id[Ruin]): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStore(value: StoreDefinitionUnlimited): Self = this.set("store", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructure(value: AnyStructure): Self = this.set("structure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = this.set("ticksToDecay", value.asInstanceOf[js.Any])
+    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }
 }

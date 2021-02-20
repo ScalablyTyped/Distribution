@@ -27,6 +27,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.TwoStdDevAboveAverage
 import typings.officeJsPreview.officeJsPreviewStrings.TwoStdDevBelowAverage
 import typings.officeJsPreview.officeJsPreviewStrings.UniqueValues
 import typings.officeJsPreview.officeJsPreviewStrings.Yesterday
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalPresetCriteriaRule extends js.Object {
+trait ConditionalPresetCriteriaRule extends StObject {
   
   /**
     *
@@ -59,23 +60,11 @@ object ConditionalPresetCriteriaRule {
   }
   
   @scala.inline
-  implicit class ConditionalPresetCriteriaRuleOps[Self <: ConditionalPresetCriteriaRule] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ConditionalPresetCriteriaRuleMutableBuilder[Self <: ConditionalPresetCriteriaRule] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCriterion(
       value: ConditionalFormatPresetCriterion | Invalid | Blanks | NonBlanks | Errors | NonErrors | Yesterday | Today | Tomorrow | LastSevenDays | LastWeek | ThisWeek | NextWeek | LastMonth | ThisMonth | NextMonth | AboveAverage | BelowAverage | EqualOrAboveAverage | EqualOrBelowAverage | OneStdDevAboveAverage | OneStdDevBelowAverage | TwoStdDevAboveAverage | TwoStdDevBelowAverage | ThreeStdDevAboveAverage | ThreeStdDevBelowAverage | UniqueValues | DuplicateValues
-    ): Self = this.set("criterion", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "criterion", value.asInstanceOf[js.Any])
   }
 }

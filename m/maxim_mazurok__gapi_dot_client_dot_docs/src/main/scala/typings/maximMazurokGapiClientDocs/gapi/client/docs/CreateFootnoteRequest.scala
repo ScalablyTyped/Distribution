@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFootnoteRequest extends js.Object {
+trait CreateFootnoteRequest extends StObject {
   
   /**
     * Inserts the footnote reference at the end of the document body. Footnote references cannot be inserted inside a header, footer or footnote. Since footnote references can only be
@@ -29,30 +30,18 @@ object CreateFootnoteRequest {
   }
   
   @scala.inline
-  implicit class CreateFootnoteRequestOps[Self <: CreateFootnoteRequest] (val x: Self) extends AnyVal {
+  implicit class CreateFootnoteRequestMutableBuilder[Self <: CreateFootnoteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = this.set("endOfSegmentLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndOfSegmentLocation: Self = this.set("endOfSegmentLocation", js.undefined)
-    
-    @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

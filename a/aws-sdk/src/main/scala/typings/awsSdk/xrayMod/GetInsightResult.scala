@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInsightResult extends js.Object {
+trait GetInsightResult extends StObject {
   
   /**
     * The summary information of an insight.
@@ -21,24 +22,12 @@ object GetInsightResult {
   }
   
   @scala.inline
-  implicit class GetInsightResultOps[Self <: GetInsightResult] (val x: Self) extends AnyVal {
+  implicit class GetInsightResultMutableBuilder[Self <: GetInsightResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsight(value: Insight): Self = StObject.set(x, "Insight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInsight(value: Insight): Self = this.set("Insight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsight: Self = this.set("Insight", js.undefined)
+    def setInsightUndefined: Self = StObject.set(x, "Insight", js.undefined)
   }
 }

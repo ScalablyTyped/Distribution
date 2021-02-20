@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobReference extends js.Object {
+trait JobReference extends StObject {
   
   var jobId: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object JobReference {
   }
   
   @scala.inline
-  implicit class JobReferenceOps[Self <: JobReference] (val x: Self) extends AnyVal {
+  implicit class JobReferenceMutableBuilder[Self <: JobReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

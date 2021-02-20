@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorStatistics extends js.Object {
+trait ErrorStatistics extends StObject {
   
   /**
     * The number of requests that failed with untracked 4xx Client Error status codes.
@@ -31,36 +32,24 @@ object ErrorStatistics {
   }
   
   @scala.inline
-  implicit class ErrorStatisticsOps[Self <: ErrorStatistics] (val x: Self) extends AnyVal {
+  implicit class ErrorStatisticsMutableBuilder[Self <: ErrorStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOtherCount(value: NullableLong): Self = StObject.set(x, "OtherCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOtherCountUndefined: Self = StObject.set(x, "OtherCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThrottleCount(value: NullableLong): Self = StObject.set(x, "ThrottleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherCount(value: NullableLong): Self = this.set("OtherCount", value.asInstanceOf[js.Any])
+    def setThrottleCountUndefined: Self = StObject.set(x, "ThrottleCount", js.undefined)
     
     @scala.inline
-    def deleteOtherCount: Self = this.set("OtherCount", js.undefined)
+    def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrottleCount(value: NullableLong): Self = this.set("ThrottleCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottleCount: Self = this.set("ThrottleCount", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: NullableLong): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

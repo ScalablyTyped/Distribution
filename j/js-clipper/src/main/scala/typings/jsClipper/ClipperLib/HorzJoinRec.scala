@@ -1,11 +1,12 @@
 package typings.jsClipper.ClipperLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HorzJoinRec extends js.Object {
+trait HorzJoinRec extends StObject {
   
   var edge: TEdge = js.native
   
@@ -20,24 +21,12 @@ object HorzJoinRec {
   }
   
   @scala.inline
-  implicit class HorzJoinRecOps[Self <: HorzJoinRec] (val x: Self) extends AnyVal {
+  implicit class HorzJoinRecMutableBuilder[Self <: HorzJoinRec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdge(value: TEdge): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEdge(value: TEdge): Self = this.set("edge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSavedIdx(value: Double): Self = this.set("savedIdx", value.asInstanceOf[js.Any])
+    def setSavedIdx(value: Double): Self = StObject.set(x, "savedIdx", value.asInstanceOf[js.Any])
   }
 }

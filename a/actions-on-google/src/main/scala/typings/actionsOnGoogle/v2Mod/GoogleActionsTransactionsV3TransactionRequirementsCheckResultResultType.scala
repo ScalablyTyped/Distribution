@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.CAN_TRANSACT
   - typings.actionsOnGoogle.actionsOnGoogleStrings.CANNOT_TRANSACT
 */
-trait GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType extends js.Object
+trait GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType extends StObject
 object GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType {
   
   @scala.inline

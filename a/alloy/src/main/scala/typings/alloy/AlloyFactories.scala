@@ -3,12 +3,13 @@ package typings.alloy
 import typings.backbone.mod.Collection
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlloyFactories extends js.Object {
+trait AlloyFactories extends StObject {
   
   /**
     * Factory method for instantiating a Backbone collection of model objects.

@@ -1,56 +1,48 @@
 package typings.ts3NodejsLibrary.enumMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VirtualServerStatus extends js.Object
+sealed trait VirtualServerStatus extends StObject
 @JSImport("ts3-nodejs-library/lib/types/enum", "VirtualServerStatus")
 @js.native
-object VirtualServerStatus extends js.Object {
+object VirtualServerStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[VirtualServerStatus with String] = js.native
   
   @js.native
   sealed trait BOOTING_UP extends VirtualServerStatus
-  /* "booting up" */ @js.native
-  object BOOTING_UP extends TopLevel[BOOTING_UP with String]
+  /* "booting up" */ val BOOTING_UP: typings.ts3NodejsLibrary.enumMod.VirtualServerStatus.BOOTING_UP with String = js.native
   
   @js.native
   sealed trait DEPLOY_RUNNING extends VirtualServerStatus
-  /* "deploy running" */ @js.native
-  object DEPLOY_RUNNING extends TopLevel[DEPLOY_RUNNING with String]
+  /* "deploy running" */ val DEPLOY_RUNNING: typings.ts3NodejsLibrary.enumMod.VirtualServerStatus.DEPLOY_RUNNING with String = js.native
   
   @js.native
   sealed trait OFFLINE extends VirtualServerStatus
-  /* "offline" */ @js.native
-  object OFFLINE extends TopLevel[OFFLINE with String]
+  /* "offline" */ val OFFLINE: typings.ts3NodejsLibrary.enumMod.VirtualServerStatus.OFFLINE with String = js.native
   
   @js.native
   sealed trait ONLINE extends VirtualServerStatus
-  /* "online" */ @js.native
-  object ONLINE extends TopLevel[ONLINE with String]
+  /* "online" */ val ONLINE: typings.ts3NodejsLibrary.enumMod.VirtualServerStatus.ONLINE with String = js.native
   
   @js.native
   sealed trait ONLINE_VIRTUAL extends VirtualServerStatus
-  /* "online virtual" */ @js.native
-  object ONLINE_VIRTUAL extends TopLevel[ONLINE_VIRTUAL with String]
+  /* "online virtual" */ val ONLINE_VIRTUAL: typings.ts3NodejsLibrary.enumMod.VirtualServerStatus.ONLINE_VIRTUAL with String = js.native
   
   @js.native
   sealed trait OTHER_INSTANCE extends VirtualServerStatus
-  /* "other instance" */ @js.native
-  object OTHER_INSTANCE extends TopLevel[OTHER_INSTANCE with String]
+  /* "other instance" */ val OTHER_INSTANCE: typings.ts3NodejsLibrary.enumMod.VirtualServerStatus.OTHER_INSTANCE with String = js.native
   
   @js.native
   sealed trait SHUTTING_DOWN extends VirtualServerStatus
-  /* "shutting down" */ @js.native
-  object SHUTTING_DOWN extends TopLevel[SHUTTING_DOWN with String]
+  /* "shutting down" */ val SHUTTING_DOWN: typings.ts3NodejsLibrary.enumMod.VirtualServerStatus.SHUTTING_DOWN with String = js.native
   
   @js.native
   sealed trait UNKNOWN extends VirtualServerStatus
-  /* "unknown" */ @js.native
-  object UNKNOWN extends TopLevel[UNKNOWN with String]
+  /* "unknown" */ val UNKNOWN: typings.ts3NodejsLibrary.enumMod.VirtualServerStatus.UNKNOWN with String = js.native
 }

@@ -1,11 +1,12 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationContext extends js.Object {
+trait ValidationContext extends StObject {
   
   def getArgument(): GraphQLArgument = js.native
   
@@ -62,63 +63,51 @@ object ValidationContext {
   }
   
   @scala.inline
-  implicit class ValidationContextOps[Self <: ValidationContext] (val x: Self) extends AnyVal {
+  implicit class ValidationContextMutableBuilder[Self <: ValidationContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetArgument(value: () => GraphQLArgument): Self = StObject.set(x, "getArgument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDirective(value: () => GraphQLDirective): Self = StObject.set(x, "getDirective", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDocument(value: () => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetArgument(value: () => GraphQLArgument): Self = this.set("getArgument", js.Any.fromFunction0(value))
+    def setGetErrors(value: () => js.Array[GraphQLError]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDirective(value: () => GraphQLDirective): Self = this.set("getDirective", js.Any.fromFunction0(value))
+    def setGetFieldDef(value: () => GraphQLFieldDefinition): Self = StObject.set(x, "getFieldDef", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDocument(value: () => Document): Self = this.set("getDocument", js.Any.fromFunction0(value))
+    def setGetFragment(value: String => FragmentDefinition): Self = StObject.set(x, "getFragment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetErrors(value: () => js.Array[GraphQLError]): Self = this.set("getErrors", js.Any.fromFunction0(value))
+    def setGetFragmentSpreads(value: SelectionSet => js.Array[FragmentSpread]): Self = StObject.set(x, "getFragmentSpreads", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFieldDef(value: () => GraphQLFieldDefinition): Self = this.set("getFieldDef", js.Any.fromFunction0(value))
+    def setGetInputType(value: () => GraphQLInputType): Self = StObject.set(x, "getInputType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFragment(value: String => FragmentDefinition): Self = this.set("getFragment", js.Any.fromFunction1(value))
+    def setGetParentType(value: () => GraphQLCompositeType): Self = StObject.set(x, "getParentType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFragmentSpreads(value: SelectionSet => js.Array[FragmentSpread]): Self = this.set("getFragmentSpreads", js.Any.fromFunction1(value))
+    def setGetRecursiveVariableUsages(value: OperationDefinition => js.Array[VariableUsage]): Self = StObject.set(x, "getRecursiveVariableUsages", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetInputType(value: () => GraphQLInputType): Self = this.set("getInputType", js.Any.fromFunction0(value))
+    def setGetRecursivelyReferencedFragments(value: OperationDefinition => js.Array[FragmentDefinition]): Self = StObject.set(x, "getRecursivelyReferencedFragments", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetParentType(value: () => GraphQLCompositeType): Self = this.set("getParentType", js.Any.fromFunction0(value))
+    def setGetSchema(value: () => GraphQLSchema): Self = StObject.set(x, "getSchema", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRecursiveVariableUsages(value: OperationDefinition => js.Array[VariableUsage]): Self = this.set("getRecursiveVariableUsages", js.Any.fromFunction1(value))
+    def setGetType(value: () => GraphQLOutputType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRecursivelyReferencedFragments(value: OperationDefinition => js.Array[FragmentDefinition]): Self = this.set("getRecursivelyReferencedFragments", js.Any.fromFunction1(value))
+    def setGetVariableUsages(value: HasSelectionSet => js.Array[VariableUsage]): Self = StObject.set(x, "getVariableUsages", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSchema(value: () => GraphQLSchema): Self = this.set("getSchema", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetType(value: () => GraphQLOutputType): Self = this.set("getType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVariableUsages(value: HasSelectionSet => js.Array[VariableUsage]): Self = this.set("getVariableUsages", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReportError(value: GraphQLError => Unit): Self = this.set("reportError", js.Any.fromFunction1(value))
+    def setReportError(value: GraphQLError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLimitsOutput extends js.Object {
+trait DescribeLimitsOutput extends StObject {
   
   /**
     * The number of open shards.
@@ -26,24 +27,12 @@ object DescribeLimitsOutput {
   }
   
   @scala.inline
-  implicit class DescribeLimitsOutputOps[Self <: DescribeLimitsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeLimitsOutputMutableBuilder[Self <: DescribeLimitsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenShardCount(value: ShardCountObject): Self = StObject.set(x, "OpenShardCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpenShardCount(value: ShardCountObject): Self = this.set("OpenShardCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShardLimit(value: ShardCountObject): Self = this.set("ShardLimit", value.asInstanceOf[js.Any])
+    def setShardLimit(value: ShardCountObject): Self = StObject.set(x, "ShardLimit", value.asInstanceOf[js.Any])
   }
 }

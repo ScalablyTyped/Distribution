@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderCustomer extends js.Object {
+trait OrderCustomer extends StObject {
   
   /** Full name of the customer. */
   var fullName: js.UndefOr[String] = js.native
@@ -34,42 +35,30 @@ object OrderCustomer {
   }
   
   @scala.inline
-  implicit class OrderCustomerOps[Self <: OrderCustomer] (val x: Self) extends AnyVal {
+  implicit class OrderCustomerMutableBuilder[Self <: OrderCustomer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvoiceReceivingEmail(value: String): Self = StObject.set(x, "invoiceReceivingEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    def setInvoiceReceivingEmailUndefined: Self = StObject.set(x, "invoiceReceivingEmail", js.undefined)
     
     @scala.inline
-    def deleteFullName: Self = this.set("fullName", js.undefined)
+    def setLoyaltyInfo(value: OrderCustomerLoyaltyInfo): Self = StObject.set(x, "loyaltyInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoiceReceivingEmail(value: String): Self = this.set("invoiceReceivingEmail", value.asInstanceOf[js.Any])
+    def setLoyaltyInfoUndefined: Self = StObject.set(x, "loyaltyInfo", js.undefined)
     
     @scala.inline
-    def deleteInvoiceReceivingEmail: Self = this.set("invoiceReceivingEmail", js.undefined)
+    def setMarketingRightsInfo(value: OrderCustomerMarketingRightsInfo): Self = StObject.set(x, "marketingRightsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoyaltyInfo(value: OrderCustomerLoyaltyInfo): Self = this.set("loyaltyInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoyaltyInfo: Self = this.set("loyaltyInfo", js.undefined)
-    
-    @scala.inline
-    def setMarketingRightsInfo(value: OrderCustomerMarketingRightsInfo): Self = this.set("marketingRightsInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarketingRightsInfo: Self = this.set("marketingRightsInfo", js.undefined)
+    def setMarketingRightsInfoUndefined: Self = StObject.set(x, "marketingRightsInfo", js.undefined)
   }
 }

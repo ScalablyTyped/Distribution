@@ -2,12 +2,13 @@ package typings.reactNativeNavigation.anon
 
 import typings.reactNativeNavigation.reactNativeNavigationStrings.center
 import typings.reactNativeNavigation.reactNativeNavigationStrings.fill
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alignment extends js.Object {
+trait Alignment extends StObject {
   
   /**
     * Set component alignment
@@ -38,39 +39,27 @@ object Alignment {
   }
   
   @scala.inline
-  implicit class AlignmentOps[Self <: Alignment] (val x: Self) extends AnyVal {
+  implicit class AlignmentMutableBuilder[Self <: Alignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: center | fill): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setAlignment(value: center | fill): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setPassProps(value: js.Object): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setPassProps(value: js.Object): Self = this.set("passProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassProps: Self = this.set("passProps", js.undefined)
+    def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.strongholdPayJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("stronghold-pay-js", "ENVIRONMENT")
 @js.native
-object ENVIRONMENT extends js.Object {
+object ENVIRONMENT extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.strongholdPayJs.mod.global.Stronghold.ENVIRONMENT with String] = js.native

@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * configuration.
   */
 @js.native
-trait SchemaAllocationSpecificSKUReservation extends js.Object {
+trait SchemaAllocationSpecificSKUReservation extends StObject {
   
   /**
     * Specifies number of resources that are allocated.
@@ -35,36 +36,24 @@ object SchemaAllocationSpecificSKUReservation {
   }
   
   @scala.inline
-  implicit class SchemaAllocationSpecificSKUReservationOps[Self <: SchemaAllocationSpecificSKUReservation] (val x: Self) extends AnyVal {
+  implicit class SchemaAllocationSpecificSKUReservationMutableBuilder[Self <: SchemaAllocationSpecificSKUReservation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInUseCount(value: String): Self = StObject.set(x, "inUseCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setInUseCountUndefined: Self = StObject.set(x, "inUseCount", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setInstanceProperties(value: SchemaAllocationSpecificSKUAllocationReservedInstanceProperties): Self = StObject.set(x, "instanceProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInUseCount(value: String): Self = this.set("inUseCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInUseCount: Self = this.set("inUseCount", js.undefined)
-    
-    @scala.inline
-    def setInstanceProperties(value: SchemaAllocationSpecificSKUAllocationReservedInstanceProperties): Self = this.set("instanceProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceProperties: Self = this.set("instanceProperties", js.undefined)
+    def setInstancePropertiesUndefined: Self = StObject.set(x, "instanceProperties", js.undefined)
   }
 }

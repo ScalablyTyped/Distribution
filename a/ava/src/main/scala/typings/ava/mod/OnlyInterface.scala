@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnlyInterface[Context] extends js.Object {
+trait OnlyInterface[Context] extends StObject {
   
   /** Declare a test. Only this test and others declared with `.only()` are run. */
   def apply(title: String, implementation: Implementation[Context]): Unit = js.native

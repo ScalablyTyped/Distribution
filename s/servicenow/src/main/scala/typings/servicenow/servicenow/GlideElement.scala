@@ -1,11 +1,12 @@
 package typings.servicenow.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideElement extends js.Object {
+trait GlideElement extends StObject {
   
   def canCreate(): Boolean = js.native
   

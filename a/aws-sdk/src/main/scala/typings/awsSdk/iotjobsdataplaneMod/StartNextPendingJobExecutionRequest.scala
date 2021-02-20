@@ -1,11 +1,12 @@
 package typings.awsSdk.iotjobsdataplaneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartNextPendingJobExecutionRequest extends js.Object {
+trait StartNextPendingJobExecutionRequest extends StObject {
   
   /**
     * A collection of name/value pairs that describe the status of the job execution. If not specified, the statusDetails are unchanged.
@@ -31,33 +32,21 @@ object StartNextPendingJobExecutionRequest {
   }
   
   @scala.inline
-  implicit class StartNextPendingJobExecutionRequestOps[Self <: StartNextPendingJobExecutionRequest] (val x: Self) extends AnyVal {
+  implicit class StartNextPendingJobExecutionRequestMutableBuilder[Self <: StartNextPendingJobExecutionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatusDetails(value: DetailsMap): Self = StObject.set(x, "statusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatusDetailsUndefined: Self = StObject.set(x, "statusDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStepTimeoutInMinutes(value: StepTimeoutInMinutes): Self = StObject.set(x, "stepTimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    def setStepTimeoutInMinutesUndefined: Self = StObject.set(x, "stepTimeoutInMinutes", js.undefined)
     
     @scala.inline
-    def setStatusDetails(value: DetailsMap): Self = this.set("statusDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusDetails: Self = this.set("statusDetails", js.undefined)
-    
-    @scala.inline
-    def setStepTimeoutInMinutes(value: StepTimeoutInMinutes): Self = this.set("stepTimeoutInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepTimeoutInMinutes: Self = this.set("stepTimeoutInMinutes", js.undefined)
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

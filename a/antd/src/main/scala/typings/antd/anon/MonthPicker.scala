@@ -7,12 +7,13 @@ import typings.rcPicker.pickerMod.PickerTimeProps
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonthPicker[DateType] extends js.Object {
+trait MonthPicker[DateType] extends StObject {
   
   var MonthPicker: ComponentClass[
     Pick[
@@ -102,19 +103,7 @@ object MonthPicker {
   }
   
   @scala.inline
-  implicit class MonthPickerOps[Self <: MonthPicker[_], DateType] (val x: Self with MonthPicker[DateType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class MonthPickerMutableBuilder[Self <: MonthPicker[_], DateType] (val x: Self with MonthPicker[DateType]) extends AnyVal {
     
     @scala.inline
     def setMonthPicker(
@@ -125,7 +114,7 @@ object MonthPicker {
           ], 
           _
         ]
-    ): Self = this.set("MonthPicker", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "MonthPicker", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQuarterPicker(
@@ -136,10 +125,10 @@ object MonthPicker {
           ], 
           _
         ]
-    ): Self = this.set("QuarterPicker", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "QuarterPicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangePicker(value: ComponentClass[RangePickerProps[DateType], ComponentState]): Self = this.set("RangePicker", value.asInstanceOf[js.Any])
+    def setRangePicker(value: ComponentClass[RangePickerProps[DateType], ComponentState]): Self = StObject.set(x, "RangePicker", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTimePicker(
@@ -150,7 +139,7 @@ object MonthPicker {
           ], 
           _
         ]
-    ): Self = this.set("TimePicker", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "TimePicker", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWeekPicker(
@@ -161,7 +150,7 @@ object MonthPicker {
           ], 
           _
         ]
-    ): Self = this.set("WeekPicker", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "WeekPicker", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setYearPicker(
@@ -172,6 +161,6 @@ object MonthPicker {
           ], 
           _
         ]
-    ): Self = this.set("YearPicker", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "YearPicker", value.asInstanceOf[js.Any])
   }
 }

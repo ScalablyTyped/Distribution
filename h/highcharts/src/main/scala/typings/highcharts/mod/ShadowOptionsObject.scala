@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShadowOptionsObject extends js.Object {
+trait ShadowOptionsObject extends StObject {
   
   /**
     * The shadow color.
@@ -41,48 +42,36 @@ object ShadowOptionsObject {
   }
   
   @scala.inline
-  implicit class ShadowOptionsObjectOps[Self <: ShadowOptionsObject] (val x: Self) extends AnyVal {
+  implicit class ShadowOptionsObjectMutableBuilder[Self <: ShadowOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorString): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
     @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

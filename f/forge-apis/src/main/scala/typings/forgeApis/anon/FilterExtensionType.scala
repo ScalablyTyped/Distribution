@@ -1,11 +1,12 @@
 package typings.forgeApis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterExtensionType extends js.Object {
+trait FilterExtensionType extends StObject {
   
   var filterExtensionType: js.UndefOr[js.Array[String]] = js.native
   
@@ -26,57 +27,45 @@ object FilterExtensionType {
   }
   
   @scala.inline
-  implicit class FilterExtensionTypeOps[Self <: FilterExtensionType] (val x: Self) extends AnyVal {
+  implicit class FilterExtensionTypeMutableBuilder[Self <: FilterExtensionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterExtensionType(value: js.Array[String]): Self = StObject.set(x, "filterExtensionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterExtensionTypeUndefined: Self = StObject.set(x, "filterExtensionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterExtensionTypeVarargs(value: String*): Self = StObject.set(x, "filterExtensionType", js.Array(value :_*))
     
     @scala.inline
-    def setFilterExtensionTypeVarargs(value: String*): Self = this.set("filterExtensionType", js.Array(value :_*))
+    def setFilterId(value: js.Array[String]): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterExtensionType(value: js.Array[String]): Self = this.set("filterExtensionType", value.asInstanceOf[js.Any])
+    def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
     
     @scala.inline
-    def deleteFilterExtensionType: Self = this.set("filterExtensionType", js.undefined)
+    def setFilterIdVarargs(value: String*): Self = StObject.set(x, "filterId", js.Array(value :_*))
     
     @scala.inline
-    def setFilterIdVarargs(value: String*): Self = this.set("filterId", js.Array(value :_*))
+    def setFilterType(value: js.Array[String]): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterId(value: js.Array[String]): Self = this.set("filterId", value.asInstanceOf[js.Any])
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def deleteFilterId: Self = this.set("filterId", js.undefined)
+    def setFilterTypeVarargs(value: String*): Self = StObject.set(x, "filterType", js.Array(value :_*))
     
     @scala.inline
-    def setFilterTypeVarargs(value: String*): Self = this.set("filterType", js.Array(value :_*))
+    def setPageLimit(value: Double): Self = StObject.set(x, "pageLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterType(value: js.Array[String]): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    def setPageLimitUndefined: Self = StObject.set(x, "pageLimit", js.undefined)
     
     @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageLimit(value: Double): Self = this.set("pageLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageLimit: Self = this.set("pageLimit", js.undefined)
-    
-    @scala.inline
-    def setPageNumber(value: Double): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageNumber: Self = this.set("pageNumber", js.undefined)
+    def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
   }
 }

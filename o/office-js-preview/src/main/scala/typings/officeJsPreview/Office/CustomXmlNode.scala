@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **Hosts**: Word
   */
 @js.native
-trait CustomXmlNode extends js.Object {
+trait CustomXmlNode extends StObject {
   
   /**
     * Gets the base name of the node without the namespace prefix, if one exists.

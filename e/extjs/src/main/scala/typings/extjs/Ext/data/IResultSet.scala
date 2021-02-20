@@ -2,6 +2,7 @@ package typings.extjs.Ext.data
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,54 +37,42 @@ object IResultSet {
   }
   
   @scala.inline
-  implicit class IResultSetOps[Self <: IResultSet] (val x: Self) extends AnyVal {
+  implicit class IResultSetMutableBuilder[Self <: IResultSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setRecords(value: Array): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaded(value: Boolean): Self = this.set("loaded", value.asInstanceOf[js.Any])
+    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
     @scala.inline
-    def deleteLoaded: Self = this.set("loaded", js.undefined)
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecords(value: Array): Self = this.set("records", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteRecords: Self = this.set("records", js.undefined)
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setTotalRecords(value: Double): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
     
     @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
-    
-    @scala.inline
-    def setTotalRecords(value: Double): Self = this.set("totalRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRecords: Self = this.set("totalRecords", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJsPreview.global.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Excel.ConditionalTopBottomCriterionType")
 @js.native
-object ConditionalTopBottomCriterionType extends js.Object {
+object ConditionalTopBottomCriterionType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ConditionalTopBottomCriterionType with String] = js.native

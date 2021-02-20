@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameServerClusterConnectionInfo extends js.Object {
+trait GameServerClusterConnectionInfo extends StObject {
   
   /** Reference to the GKE cluster where the game servers are installed. */
   var gkeClusterReference: js.UndefOr[GkeClusterReference] = js.native
@@ -22,30 +23,18 @@ object GameServerClusterConnectionInfo {
   }
   
   @scala.inline
-  implicit class GameServerClusterConnectionInfoOps[Self <: GameServerClusterConnectionInfo] (val x: Self) extends AnyVal {
+  implicit class GameServerClusterConnectionInfoMutableBuilder[Self <: GameServerClusterConnectionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGkeClusterReference(value: GkeClusterReference): Self = StObject.set(x, "gkeClusterReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGkeClusterReferenceUndefined: Self = StObject.set(x, "gkeClusterReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGkeClusterReference(value: GkeClusterReference): Self = this.set("gkeClusterReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGkeClusterReference: Self = this.set("gkeClusterReference", js.undefined)
-    
-    @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
   }
 }

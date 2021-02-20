@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetPropertyValue extends js.Object {
+trait AssetPropertyValue extends StObject {
   
   /**
     * The quality of the asset property value. The value must be GOOD, BAD, or UNCERTAIN. You can also specify an expression.
@@ -31,33 +32,21 @@ object AssetPropertyValue {
   }
   
   @scala.inline
-  implicit class AssetPropertyValueOps[Self <: AssetPropertyValue] (val x: Self) extends AnyVal {
+  implicit class AssetPropertyValueMutableBuilder[Self <: AssetPropertyValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuality(value: AssetPropertyQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: AssetPropertyTimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: AssetPropertyVariant): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def setQuality(value: AssetPropertyQuality): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: AssetPropertyTimestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setValue(value: AssetPropertyVariant): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

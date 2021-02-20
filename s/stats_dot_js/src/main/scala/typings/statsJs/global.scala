@@ -1,19 +1,19 @@
 package typings.statsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  @JSGlobal("Stats")
   @js.native
   class Stats ()
     extends typings.statsJs.Stats
-  @js.native
-  object Stats extends js.Object {
+  object Stats {
     
+    @JSGlobal("Stats.Panel")
     @js.native
     class Panel protected ()
       extends typings.statsJs.Stats.Panel {

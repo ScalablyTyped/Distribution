@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transcode extends js.Object {
+trait Transcode extends StObject {
   
   /** The bit rate for the audio stream of the transcoded video, or the bit rate for the transcoded audio, in kilobits per second. */
   var audioBitRateKbps: js.UndefOr[String] = js.native
@@ -43,72 +44,60 @@ object Transcode {
   }
   
   @scala.inline
-  implicit class TranscodeOps[Self <: Transcode] (val x: Self) extends AnyVal {
+  implicit class TranscodeMutableBuilder[Self <: Transcode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioBitRateKbps(value: String): Self = StObject.set(x, "audioBitRateKbps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioBitRateKbpsUndefined: Self = StObject.set(x, "audioBitRateKbps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioSampleRateHz(value: String): Self = StObject.set(x, "audioSampleRateHz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioBitRateKbps(value: String): Self = this.set("audioBitRateKbps", value.asInstanceOf[js.Any])
+    def setAudioSampleRateHzUndefined: Self = StObject.set(x, "audioSampleRateHz", js.undefined)
     
     @scala.inline
-    def deleteAudioBitRateKbps: Self = this.set("audioBitRateKbps", js.undefined)
+    def setBitRateKbps(value: String): Self = StObject.set(x, "bitRateKbps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioSampleRateHz(value: String): Self = this.set("audioSampleRateHz", value.asInstanceOf[js.Any])
+    def setBitRateKbpsUndefined: Self = StObject.set(x, "bitRateKbps", js.undefined)
     
     @scala.inline
-    def deleteAudioSampleRateHz: Self = this.set("audioSampleRateHz", js.undefined)
+    def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitRateKbps(value: String): Self = this.set("bitRateKbps", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def deleteBitRateKbps: Self = this.set("bitRateKbps", js.undefined)
+    def setFileSizeBytes(value: String): Self = StObject.set(x, "fileSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: Dimensions): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setFileSizeBytesUndefined: Self = StObject.set(x, "fileSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSizeBytes(value: String): Self = this.set("fileSizeBytes", value.asInstanceOf[js.Any])
+    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
     @scala.inline
-    def deleteFileSizeBytes: Self = this.set("fileSizeBytes", js.undefined)
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: Double): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setTranscoded(value: Boolean): Self = StObject.set(x, "transcoded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTranscoded(value: Boolean): Self = this.set("transcoded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranscoded: Self = this.set("transcoded", js.undefined)
+    def setTranscodedUndefined: Self = StObject.set(x, "transcoded", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filledseats extends js.Object {
+trait Filledseats extends StObject {
   
   var filled_seats: Double = js.native
   
@@ -26,33 +27,21 @@ object Filledseats {
   }
   
   @scala.inline
-  implicit class FilledseatsOps[Self <: Filledseats] (val x: Self) extends AnyVal {
+  implicit class FilledseatsMutableBuilder[Self <: Filledseats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilled_seats(value: Double): Self = StObject.set(x, "filled_seats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivate_repos(value: Double): Self = StObject.set(x, "private_repos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilled_seats(value: Double): Self = this.set("filled_seats", value.asInstanceOf[js.Any])
+    def setSeats(value: Double): Self = StObject.set(x, "seats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivate_repos(value: Double): Self = this.set("private_repos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeats(value: Double): Self = this.set("seats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpace(value: Double): Self = this.set("space", value.asInstanceOf[js.Any])
+    def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
   }
 }

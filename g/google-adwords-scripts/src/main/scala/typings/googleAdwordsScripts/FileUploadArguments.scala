@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileUploadArguments extends js.Object {
+trait FileUploadArguments extends StObject {
   
   var fileLocale: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object FileUploadArguments {
   }
   
   @scala.inline
-  implicit class FileUploadArgumentsOps[Self <: FileUploadArguments] (val x: Self) extends AnyVal {
+  implicit class FileUploadArgumentsMutableBuilder[Self <: FileUploadArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileLocale(value: String): Self = StObject.set(x, "fileLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileLocaleUndefined: Self = StObject.set(x, "fileLocale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMoneyInMicros(value: Boolean): Self = StObject.set(x, "moneyInMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileLocale(value: String): Self = this.set("fileLocale", value.asInstanceOf[js.Any])
+    def setMoneyInMicrosUndefined: Self = StObject.set(x, "moneyInMicros", js.undefined)
     
     @scala.inline
-    def deleteFileLocale: Self = this.set("fileLocale", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoneyInMicros(value: Boolean): Self = this.set("moneyInMicros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMoneyInMicros: Self = this.set("moneyInMicros", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

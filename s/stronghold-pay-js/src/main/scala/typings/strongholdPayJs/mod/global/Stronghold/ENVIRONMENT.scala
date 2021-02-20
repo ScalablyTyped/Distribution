@@ -1,29 +1,27 @@
 package typings.strongholdPayJs.mod.global.Stronghold
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ENVIRONMENT extends js.Object
+sealed trait ENVIRONMENT extends StObject
 /**
   * Different Stronghold Pay environments
   */
 @JSGlobal("Stronghold.ENVIRONMENT")
 @js.native
-object ENVIRONMENT extends js.Object {
+object ENVIRONMENT extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ENVIRONMENT with String] = js.native
   
   @js.native
   sealed trait live extends ENVIRONMENT
-  /* "live" */ @js.native
-  object live extends TopLevel[live with String]
+  /* "live" */ val live: typings.strongholdPayJs.mod.global.Stronghold.ENVIRONMENT.live with String = js.native
   
   @js.native
   sealed trait sandbox extends ENVIRONMENT
-  /* "sandbox" */ @js.native
-  object sandbox extends TopLevel[sandbox with String]
+  /* "sandbox" */ val sandbox: typings.strongholdPayJs.mod.global.Stronghold.ENVIRONMENT.sandbox with String = js.native
 }

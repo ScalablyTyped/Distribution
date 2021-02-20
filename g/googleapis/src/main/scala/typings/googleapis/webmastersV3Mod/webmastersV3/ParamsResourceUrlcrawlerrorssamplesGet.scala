@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,48 +49,36 @@ object ParamsResourceUrlcrawlerrorssamplesGet {
   }
   
   @scala.inline
-  implicit class ParamsResourceUrlcrawlerrorssamplesGetOps[Self <: ParamsResourceUrlcrawlerrorssamplesGet] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceUrlcrawlerrorssamplesGetMutableBuilder[Self <: ParamsResourceUrlcrawlerrorssamplesGet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteUrl(value: String): Self = this.set("siteUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiteUrl: Self = this.set("siteUrl", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

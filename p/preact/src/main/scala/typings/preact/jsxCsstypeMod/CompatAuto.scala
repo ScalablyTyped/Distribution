@@ -1,5 +1,6 @@
 package typings.preact.jsxCsstypeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.`square-button`
   - typings.preact.preactStrings.textarea
 */
-trait CompatAuto extends js.Object
+trait CompatAuto extends StObject
 object CompatAuto {
   
   @scala.inline

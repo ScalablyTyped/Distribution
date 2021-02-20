@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancePortInfo extends js.Object {
+trait InstancePortInfo extends StObject {
   
   /**
     * The access direction (inbound or outbound).  Lightsail currently supports only inbound access direction. 
@@ -61,78 +62,66 @@ object InstancePortInfo {
   }
   
   @scala.inline
-  implicit class InstancePortInfoOps[Self <: InstancePortInfo] (val x: Self) extends AnyVal {
+  implicit class InstancePortInfoMutableBuilder[Self <: InstancePortInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDirection(value: AccessDirection): Self = StObject.set(x, "accessDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessDirectionUndefined: Self = StObject.set(x, "accessDirection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessFrom(value: String): Self = StObject.set(x, "accessFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessDirection(value: AccessDirection): Self = this.set("accessDirection", value.asInstanceOf[js.Any])
+    def setAccessFromUndefined: Self = StObject.set(x, "accessFrom", js.undefined)
     
     @scala.inline
-    def deleteAccessDirection: Self = this.set("accessDirection", js.undefined)
+    def setAccessType(value: PortAccessType): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessFrom(value: String): Self = this.set("accessFrom", value.asInstanceOf[js.Any])
+    def setAccessTypeUndefined: Self = StObject.set(x, "accessType", js.undefined)
     
     @scala.inline
-    def deleteAccessFrom: Self = this.set("accessFrom", js.undefined)
+    def setCidrListAliases(value: StringList): Self = StObject.set(x, "cidrListAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessType(value: PortAccessType): Self = this.set("accessType", value.asInstanceOf[js.Any])
+    def setCidrListAliasesUndefined: Self = StObject.set(x, "cidrListAliases", js.undefined)
     
     @scala.inline
-    def deleteAccessType: Self = this.set("accessType", js.undefined)
+    def setCidrListAliasesVarargs(value: String*): Self = StObject.set(x, "cidrListAliases", js.Array(value :_*))
     
     @scala.inline
-    def setCidrListAliasesVarargs(value: String*): Self = this.set("cidrListAliases", js.Array(value :_*))
+    def setCidrs(value: StringList): Self = StObject.set(x, "cidrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrListAliases(value: StringList): Self = this.set("cidrListAliases", value.asInstanceOf[js.Any])
+    def setCidrsUndefined: Self = StObject.set(x, "cidrs", js.undefined)
     
     @scala.inline
-    def deleteCidrListAliases: Self = this.set("cidrListAliases", js.undefined)
+    def setCidrsVarargs(value: String*): Self = StObject.set(x, "cidrs", js.Array(value :_*))
     
     @scala.inline
-    def setCidrsVarargs(value: String*): Self = this.set("cidrs", js.Array(value :_*))
+    def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrs(value: StringList): Self = this.set("cidrs", value.asInstanceOf[js.Any])
+    def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
     
     @scala.inline
-    def deleteCidrs: Self = this.set("cidrs", js.undefined)
+    def setFromPort(value: Port): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonName(value: String): Self = this.set("commonName", value.asInstanceOf[js.Any])
+    def setFromPortUndefined: Self = StObject.set(x, "fromPort", js.undefined)
     
     @scala.inline
-    def deleteCommonName: Self = this.set("commonName", js.undefined)
+    def setProtocol(value: NetworkProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPort(value: Port): Self = this.set("fromPort", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteFromPort: Self = this.set("fromPort", js.undefined)
+    def setToPort(value: Port): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: NetworkProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
-    
-    @scala.inline
-    def setToPort(value: Port): Self = this.set("toPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToPort: Self = this.set("toPort", js.undefined)
+    def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
   }
 }

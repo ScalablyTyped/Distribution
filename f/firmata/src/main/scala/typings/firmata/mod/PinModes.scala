@@ -1,11 +1,12 @@
 package typings.firmata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PinModes extends js.Object {
+trait PinModes extends StObject {
   
   var ANALOG: PIN_MODE = js.native
   
@@ -59,60 +60,48 @@ object PinModes {
   }
   
   @scala.inline
-  implicit class PinModesOps[Self <: PinModes] (val x: Self) extends AnyVal {
+  implicit class PinModesMutableBuilder[Self <: PinModes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setANALOG(value: PIN_MODE): Self = StObject.set(x, "ANALOG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setI2C(value: PIN_MODE): Self = StObject.set(x, "I2C", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIGNORE(value: PIN_MODE): Self = StObject.set(x, "IGNORE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setANALOG(value: PIN_MODE): Self = this.set("ANALOG", value.asInstanceOf[js.Any])
+    def setINPUT(value: PIN_MODE): Self = StObject.set(x, "INPUT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI2C(value: PIN_MODE): Self = this.set("I2C", value.asInstanceOf[js.Any])
+    def setONEWIRE(value: PIN_MODE): Self = StObject.set(x, "ONEWIRE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIGNORE(value: PIN_MODE): Self = this.set("IGNORE", value.asInstanceOf[js.Any])
+    def setOUTPUT(value: PIN_MODE): Self = StObject.set(x, "OUTPUT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINPUT(value: PIN_MODE): Self = this.set("INPUT", value.asInstanceOf[js.Any])
+    def setPING_READ(value: PIN_MODE): Self = StObject.set(x, "PING_READ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setONEWIRE(value: PIN_MODE): Self = this.set("ONEWIRE", value.asInstanceOf[js.Any])
+    def setPULLUP(value: PIN_MODE): Self = StObject.set(x, "PULLUP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOUTPUT(value: PIN_MODE): Self = this.set("OUTPUT", value.asInstanceOf[js.Any])
+    def setPWM(value: PIN_MODE): Self = StObject.set(x, "PWM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPING_READ(value: PIN_MODE): Self = this.set("PING_READ", value.asInstanceOf[js.Any])
+    def setSERIAL(value: PIN_MODE): Self = StObject.set(x, "SERIAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPULLUP(value: PIN_MODE): Self = this.set("PULLUP", value.asInstanceOf[js.Any])
+    def setSERVO(value: PIN_MODE): Self = StObject.set(x, "SERVO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPWM(value: PIN_MODE): Self = this.set("PWM", value.asInstanceOf[js.Any])
+    def setSHIFT(value: PIN_MODE): Self = StObject.set(x, "SHIFT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSERIAL(value: PIN_MODE): Self = this.set("SERIAL", value.asInstanceOf[js.Any])
+    def setSTEPPER(value: PIN_MODE): Self = StObject.set(x, "STEPPER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSERVO(value: PIN_MODE): Self = this.set("SERVO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSHIFT(value: PIN_MODE): Self = this.set("SHIFT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTEPPER(value: PIN_MODE): Self = this.set("STEPPER", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUNKOWN(value: PIN_MODE): Self = this.set("UNKOWN", value.asInstanceOf[js.Any])
+    def setUNKOWN(value: PIN_MODE): Self = StObject.set(x, "UNKOWN", value.asInstanceOf[js.Any])
   }
 }

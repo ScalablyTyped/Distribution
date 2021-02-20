@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchSynonymsResponse extends js.Object {
+trait SearchSynonymsResponse extends StObject {
   
   /**
     * The list of synonyms.
@@ -26,27 +27,15 @@ object SearchSynonymsResponse {
   }
   
   @scala.inline
-  implicit class SearchSynonymsResponseOps[Self <: SearchSynonymsResponse] (val x: Self) extends AnyVal {
+  implicit class SearchSynonymsResponseMutableBuilder[Self <: SearchSynonymsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHits(value: js.Array[Synonym]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHitsVarargs(value: Synonym*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHitsVarargs(value: Synonym*): Self = this.set("hits", js.Array(value :_*))
-    
-    @scala.inline
-    def setHits(value: js.Array[Synonym]): Self = this.set("hits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNbHits(value: Double): Self = this.set("nbHits", value.asInstanceOf[js.Any])
+    def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
   }
 }

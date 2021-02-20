@@ -1,13 +1,14 @@
 package typings.reactWeui.mod
 
 import typings.reactWeui.anon.Actions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-weui", "ActionSheet")
 @js.native
-class ActionSheet protected () extends js.Object {
+class ActionSheet protected () extends StObject {
   def this(props: js.Any) = this()
   
   def handleMaskClick(e: js.Any): Unit = js.native
@@ -19,60 +20,83 @@ class ActionSheet protected () extends js.Object {
   def renderMenuItem(): js.Any = js.native
 }
 /* static members */
-@JSImport("react-weui", "ActionSheet")
-@js.native
-object ActionSheet extends js.Object {
+object ActionSheet {
   
-  var defaultProps: Actions = js.native
-  
+  @JSImport("react-weui", "ActionSheet")
   @js.native
-  object propTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-weui", "ActionSheet.defaultProps")
+  @js.native
+  def defaultProps: Actions = js.native
+  @scala.inline
+  def defaultProps_=(x: Actions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  object propTypes {
     
-    @js.native
-    object actions extends js.Object {
+    object actions {
       
+      @JSImport("react-weui", "ActionSheet.propTypes.actions")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "ActionSheet.propTypes.actions.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object autoDectect extends js.Object {
+    object autoDectect {
       
+      @JSImport("react-weui", "ActionSheet.propTypes.autoDectect")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "ActionSheet.propTypes.autoDectect.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object menus extends js.Object {
+    object menus {
       
+      @JSImport("react-weui", "ActionSheet.propTypes.menus")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "ActionSheet.propTypes.menus.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object onRequestClose extends js.Object {
+    object onRequestClose {
       
+      @JSImport("react-weui", "ActionSheet.propTypes.onRequestClose")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "ActionSheet.propTypes.onRequestClose.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object show extends js.Object {
+    object show {
       
+      @JSImport("react-weui", "ActionSheet.propTypes.show")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "ActionSheet.propTypes.show.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
     
-    @js.native
-    object `type` extends js.Object {
+    object `type` {
       
+      @JSImport("react-weui", "ActionSheet.propTypes.type")
+      @js.native
       def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
       
+      @JSImport("react-weui", "ActionSheet.propTypes.type.isRequired")
+      @js.native
       def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
     }
   }

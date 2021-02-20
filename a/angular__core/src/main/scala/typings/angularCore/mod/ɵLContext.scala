@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ɵLContext extends js.Object {
+trait ɵLContext extends StObject {
   
   /**
     * The instance of the Component node.
@@ -48,57 +49,45 @@ object ɵLContext {
   }
   
   @scala.inline
-  implicit class ɵLContextOps[Self <: ɵLContext] (val x: Self) extends AnyVal {
+  implicit class ɵLContextMutableBuilder[Self <: ɵLContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: js.Object): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentNull: Self = StObject.set(x, "component", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def setLView(value: ɵangularPackagesCoreCoreBv): Self = this.set("lView", value.asInstanceOf[js.Any])
+    def setDirectives(value: js.Array[_]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNative(value: RNode): Self = this.set("native", value.asInstanceOf[js.Any])
+    def setDirectivesNull: Self = StObject.set(x, "directives", null)
     
     @scala.inline
-    def setNodeIndex(value: Double): Self = this.set("nodeIndex", value.asInstanceOf[js.Any])
+    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
     @scala.inline
-    def setComponent(value: js.Object): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setDirectivesVarargs(value: js.Any*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setLView(value: ɵangularPackagesCoreCoreBv): Self = StObject.set(x, "lView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentNull: Self = this.set("component", null)
+    def setLocalRefs(value: StringDictionary[js.Any]): Self = StObject.set(x, "localRefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectivesVarargs(value: js.Any*): Self = this.set("directives", js.Array(value :_*))
+    def setLocalRefsNull: Self = StObject.set(x, "localRefs", null)
     
     @scala.inline
-    def setDirectives(value: js.Array[_]): Self = this.set("directives", value.asInstanceOf[js.Any])
+    def setLocalRefsUndefined: Self = StObject.set(x, "localRefs", js.undefined)
     
     @scala.inline
-    def deleteDirectives: Self = this.set("directives", js.undefined)
+    def setNative(value: RNode): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectivesNull: Self = this.set("directives", null)
-    
-    @scala.inline
-    def setLocalRefs(value: StringDictionary[js.Any]): Self = this.set("localRefs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalRefs: Self = this.set("localRefs", js.undefined)
-    
-    @scala.inline
-    def setLocalRefsNull: Self = this.set("localRefs", null)
+    def setNodeIndex(value: Double): Self = StObject.set(x, "nodeIndex", value.asInstanceOf[js.Any])
   }
 }

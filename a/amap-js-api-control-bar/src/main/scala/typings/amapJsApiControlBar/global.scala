@@ -1,17 +1,16 @@
 package typings.amapJsApiControlBar
 
 import typings.amapJsApiControlBar.AMap.ControlBar.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object AMap extends js.Object {
+  object AMap {
     
+    @JSGlobal("AMap.ControlBar")
     @js.native
     /**
       * 组合了旋转、倾斜、复位、缩放在内的地图控件

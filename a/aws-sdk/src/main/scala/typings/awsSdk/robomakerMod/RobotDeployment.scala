@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RobotDeployment extends js.Object {
+trait RobotDeployment extends StObject {
   
   /**
     * The robot deployment Amazon Resource Name (ARN).
@@ -51,60 +52,48 @@ object RobotDeployment {
   }
   
   @scala.inline
-  implicit class RobotDeploymentOps[Self <: RobotDeployment] (val x: Self) extends AnyVal {
+  implicit class RobotDeploymentMutableBuilder[Self <: RobotDeployment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentFinishTime(value: CreatedAt): Self = StObject.set(x, "deploymentFinishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDeploymentFinishTimeUndefined: Self = StObject.set(x, "deploymentFinishTime", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDeploymentStartTime(value: CreatedAt): Self = StObject.set(x, "deploymentStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentFinishTime(value: CreatedAt): Self = this.set("deploymentFinishTime", value.asInstanceOf[js.Any])
+    def setDeploymentStartTimeUndefined: Self = StObject.set(x, "deploymentStartTime", js.undefined)
     
     @scala.inline
-    def deleteDeploymentFinishTime: Self = this.set("deploymentFinishTime", js.undefined)
+    def setFailureCode(value: DeploymentJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentStartTime(value: CreatedAt): Self = this.set("deploymentStartTime", value.asInstanceOf[js.Any])
+    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
     @scala.inline
-    def deleteDeploymentStartTime: Self = this.set("deploymentStartTime", js.undefined)
+    def setFailureReason(value: GenericString): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: DeploymentJobErrorCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    def setProgressDetail(value: ProgressDetail): Self = StObject.set(x, "progressDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: GenericString): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setProgressDetailUndefined: Self = StObject.set(x, "progressDetail", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setStatus(value: RobotStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressDetail(value: ProgressDetail): Self = this.set("progressDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressDetail: Self = this.set("progressDetail", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: RobotStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

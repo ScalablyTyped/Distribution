@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupsListInstancesRequest extends js.Object {
+trait InstanceGroupsListInstancesRequest extends StObject {
   
   /**
     * A filter for the state of the instances in the instance group. Valid options are ALL or RUNNING. If you do not specify this parameter the list includes all instances regardless of
@@ -22,24 +23,12 @@ object InstanceGroupsListInstancesRequest {
   }
   
   @scala.inline
-  implicit class InstanceGroupsListInstancesRequestOps[Self <: InstanceGroupsListInstancesRequest] (val x: Self) extends AnyVal {
+  implicit class InstanceGroupsListInstancesRequestMutableBuilder[Self <: InstanceGroupsListInstancesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceState(value: String): Self = StObject.set(x, "instanceState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceState(value: String): Self = this.set("instanceState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceState: Self = this.set("instanceState", js.undefined)
+    def setInstanceStateUndefined: Self = StObject.set(x, "instanceState", js.undefined)
   }
 }

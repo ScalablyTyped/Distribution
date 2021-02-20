@@ -1,11 +1,12 @@
 package typings.axel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Axel extends js.Object {
+trait Axel extends StObject {
   
   def bg(r: Double, g: Double, b: Double): Unit = js.native
   
@@ -68,69 +69,57 @@ object Axel {
   }
   
   @scala.inline
-  implicit class AxelOps[Self <: Axel] (val x: Self) extends AnyVal {
+  implicit class AxelMutableBuilder[Self <: Axel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBg(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "bg", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBox(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "box", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrush(value: String): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBg(value: (Double, Double, Double) => Unit): Self = this.set("bg", js.Any.fromFunction3(value))
+    def setCirc(value: (Double, Double, Double) => Double): Self = StObject.set(x, "circ", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBox(value: (Double, Double, Double, Double) => Unit): Self = this.set("box", js.Any.fromFunction4(value))
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBrush(value: String): Self = this.set("brush", value.asInstanceOf[js.Any])
+    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCirc(value: (Double, Double, Double) => Double): Self = this.set("circ", js.Any.fromFunction3(value))
+    def setCursor(value: cursorInterface): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setDist(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "dist", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    def setDraw(value: js.Function => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCursor(value: cursorInterface): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setFg(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "fg", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDist(value: (Double, Double, Double, Double) => Double): Self = this.set("dist", js.Any.fromFunction4(value))
+    def setGoto(value: (Double, Double) => Unit): Self = StObject.set(x, "goto", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDraw(value: js.Function => Unit): Self = this.set("draw", js.Any.fromFunction1(value))
+    def setLerp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "lerp", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFg(value: (Double, Double, Double) => Unit): Self = this.set("fg", js.Any.fromFunction3(value))
+    def setLine(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "line", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGoto(value: (Double, Double) => Unit): Self = this.set("goto", js.Any.fromFunction2(value))
+    def setPoint(value: (Double, Double, String) => Unit): Self = StObject.set(x, "point", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setLerp(value: (Double, Double, Double) => Double): Self = this.set("lerp", js.Any.fromFunction3(value))
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: (Double, Double, Double, Double) => Unit): Self = this.set("line", js.Any.fromFunction4(value))
+    def setScrub(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "scrub", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setPoint(value: (Double, Double, String) => Unit): Self = this.set("point", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrub(value: (Double, Double, Double, Double) => Unit): Self = this.set("scrub", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setText(value: (Double, Double, String) => Unit): Self = this.set("text", js.Any.fromFunction3(value))
+    def setText(value: (Double, Double, String) => Unit): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsEc2NetworkInterfaceAttachment extends js.Object {
+trait AwsEc2NetworkInterfaceAttachment extends StObject {
   
   /**
     * Indicates when the attachment initiated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
@@ -51,60 +52,48 @@ object AwsEc2NetworkInterfaceAttachment {
   }
   
   @scala.inline
-  implicit class AwsEc2NetworkInterfaceAttachmentOps[Self <: AwsEc2NetworkInterfaceAttachment] (val x: Self) extends AnyVal {
+  implicit class AwsEc2NetworkInterfaceAttachmentMutableBuilder[Self <: AwsEc2NetworkInterfaceAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachTime(value: NonEmptyString): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachTimeUndefined: Self = StObject.set(x, "AttachTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentId(value: NonEmptyString): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachTime(value: NonEmptyString): Self = this.set("AttachTime", value.asInstanceOf[js.Any])
+    def setAttachmentIdUndefined: Self = StObject.set(x, "AttachmentId", js.undefined)
     
     @scala.inline
-    def deleteAttachTime: Self = this.set("AttachTime", js.undefined)
+    def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentId(value: NonEmptyString): Self = this.set("AttachmentId", value.asInstanceOf[js.Any])
+    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
     
     @scala.inline
-    def deleteAttachmentId: Self = this.set("AttachmentId", js.undefined)
+    def setDeviceIndex(value: Integer): Self = StObject.set(x, "DeviceIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteOnTermination(value: Boolean): Self = this.set("DeleteOnTermination", value.asInstanceOf[js.Any])
+    def setDeviceIndexUndefined: Self = StObject.set(x, "DeviceIndex", js.undefined)
     
     @scala.inline
-    def deleteDeleteOnTermination: Self = this.set("DeleteOnTermination", js.undefined)
+    def setInstanceId(value: NonEmptyString): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceIndex(value: Integer): Self = this.set("DeviceIndex", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteDeviceIndex: Self = this.set("DeviceIndex", js.undefined)
+    def setInstanceOwnerId(value: NonEmptyString): Self = StObject.set(x, "InstanceOwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: NonEmptyString): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setInstanceOwnerIdUndefined: Self = StObject.set(x, "InstanceOwnerId", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceOwnerId(value: NonEmptyString): Self = this.set("InstanceOwnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceOwnerId: Self = this.set("InstanceOwnerId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

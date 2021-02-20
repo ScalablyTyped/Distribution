@@ -3,14 +3,21 @@ package typings.baseui.datepickerMod
 import typings.react.mod.Component
 import typings.std.Date
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baseui/datepicker", "Datepicker")
 @js.native
-class Datepicker ()
+class Datepicker protected ()
   extends Component[DatepickerProps, DatepickerState, js.Any] {
+  def this(props: DatepickerProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: DatepickerProps, context: js.Any) = this()
   
   def close(): Unit = js.native
   

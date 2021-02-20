@@ -6,13 +6,14 @@ import typings.node.NodeJS.ReadableStream
 import typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType
 import typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType
 import typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `compareDocuments` operation. */
 @js.native
-trait CompareDocumentsParams extends js.Object {
+trait CompareDocumentsParams extends StObject {
   
   /** The first document to compare. */
   var file_1: ReadableStream | FileObject | Buffer = js.native
@@ -48,66 +49,54 @@ object CompareDocumentsParams {
   }
   
   @scala.inline
-  implicit class CompareDocumentsParamsOps[Self <: CompareDocumentsParams] (val x: Self) extends AnyVal {
+  implicit class CompareDocumentsParamsMutableBuilder[Self <: CompareDocumentsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile_1(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "file_1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile_1_content_type(value: File1ContentType | String): Self = StObject.set(x, "file_1_content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFile_1_content_typeUndefined: Self = StObject.set(x, "file_1_content_type", js.undefined)
     
     @scala.inline
-    def setFile_1(value: ReadableStream | FileObject | Buffer): Self = this.set("file_1", value.asInstanceOf[js.Any])
+    def setFile_1_label(value: String): Self = StObject.set(x, "file_1_label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile_2(value: ReadableStream | FileObject | Buffer): Self = this.set("file_2", value.asInstanceOf[js.Any])
+    def setFile_1_labelUndefined: Self = StObject.set(x, "file_1_label", js.undefined)
     
     @scala.inline
-    def setFile_1_content_type(value: File1ContentType | String): Self = this.set("file_1_content_type", value.asInstanceOf[js.Any])
+    def setFile_2(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "file_2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile_1_content_type: Self = this.set("file_1_content_type", js.undefined)
+    def setFile_2_content_type(value: File2ContentType | String): Self = StObject.set(x, "file_2_content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile_1_label(value: String): Self = this.set("file_1_label", value.asInstanceOf[js.Any])
+    def setFile_2_content_typeUndefined: Self = StObject.set(x, "file_2_content_type", js.undefined)
     
     @scala.inline
-    def deleteFile_1_label: Self = this.set("file_1_label", js.undefined)
+    def setFile_2_label(value: String): Self = StObject.set(x, "file_2_label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile_2_content_type(value: File2ContentType | String): Self = this.set("file_2_content_type", value.asInstanceOf[js.Any])
+    def setFile_2_labelUndefined: Self = StObject.set(x, "file_2_label", js.undefined)
     
     @scala.inline
-    def deleteFile_2_content_type: Self = this.set("file_2_content_type", js.undefined)
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile_2_label(value: String): Self = this.set("file_2_label", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFile_2_label: Self = this.set("file_2_label", js.undefined)
+    def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: Model | String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

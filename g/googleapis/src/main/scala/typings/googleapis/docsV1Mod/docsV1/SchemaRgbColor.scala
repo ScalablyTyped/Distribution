@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An RGB color.
   */
 @js.native
-trait SchemaRgbColor extends js.Object {
+trait SchemaRgbColor extends StObject {
   
   /**
     * The blue component of the color, from 0.0 to 1.0.
@@ -34,36 +35,24 @@ object SchemaRgbColor {
   }
   
   @scala.inline
-  implicit class SchemaRgbColorOps[Self <: SchemaRgbColor] (val x: Self) extends AnyVal {
+  implicit class SchemaRgbColorMutableBuilder[Self <: SchemaRgbColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue(value: Double): Self = this.set("blue", value.asInstanceOf[js.Any])
+    def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
     
     @scala.inline
-    def deleteBlue: Self = this.set("blue", js.undefined)
+    def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen(value: Double): Self = this.set("green", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGreen: Self = this.set("green", js.undefined)
-    
-    @scala.inline
-    def setRed(value: Double): Self = this.set("red", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRed: Self = this.set("red", js.undefined)
+    def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
   }
 }

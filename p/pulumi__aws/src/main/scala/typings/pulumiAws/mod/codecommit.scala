@@ -10,17 +10,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "codecommit")
-@js.native
-object codecommit extends js.Object {
+object codecommit {
   
-  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
-  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
-  
+  @JSImport("@pulumi/aws", "codecommit.Repository")
   @js.native
   class Repository protected ()
     extends typings.pulumiAws.codecommitMod.Repository {
@@ -35,8 +32,7 @@ object codecommit extends js.Object {
     def this(name: String, args: RepositoryArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Repository extends js.Object {
+  object Repository {
     
     /**
       * Get an existing Repository resource's state with the given name, ID, and optional extra
@@ -47,18 +43,29 @@ object codecommit extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "codecommit.Repository.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.codecommitRepositoryMod.Repository = js.native
+    @JSImport("@pulumi/aws", "codecommit.Repository.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.codecommitRepositoryMod.Repository = js.native
+    @JSImport("@pulumi/aws", "codecommit.Repository.get")
+    @js.native
     def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.codecommitRepositoryMod.Repository = js.native
+    @JSImport("@pulumi/aws", "codecommit.Repository.get")
+    @js.native
     def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.codecommitRepositoryMod.Repository = js.native
     
     /**
       * Returns true if the given object is an instance of Repository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "codecommit.Repository.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/repository.Repository */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "codecommit.Trigger")
   @js.native
   class Trigger protected ()
     extends typings.pulumiAws.codecommitMod.Trigger {
@@ -73,8 +80,7 @@ object codecommit extends js.Object {
     def this(name: String, args: TriggerArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Trigger extends js.Object {
+  object Trigger {
     
     /**
       * Get an existing Trigger resource's state with the given name, ID, and optional extra
@@ -85,15 +91,32 @@ object codecommit extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "codecommit.Trigger.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.triggerMod.Trigger = js.native
+    @JSImport("@pulumi/aws", "codecommit.Trigger.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.triggerMod.Trigger = js.native
+    @JSImport("@pulumi/aws", "codecommit.Trigger.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TriggerState): typings.pulumiAws.triggerMod.Trigger = js.native
+    @JSImport("@pulumi/aws", "codecommit.Trigger.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): typings.pulumiAws.triggerMod.Trigger = js.native
     
     /**
       * Returns true if the given object is an instance of Trigger.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "codecommit.Trigger.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws", "codecommit.getRepository")
+  @js.native
+  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
+  @JSImport("@pulumi/aws", "codecommit.getRepository")
+  @js.native
+  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
 }

@@ -1,12 +1,15 @@
 package typings.milliseconds
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var milliseconds: Milliseconds = js.native
+  @JSGlobal("milliseconds")
+  @js.native
+  def milliseconds: Milliseconds = js.native
+  @scala.inline
+  def milliseconds_=(x: Milliseconds): Unit = js.Dynamic.global.updateDynamic("milliseconds")(x.asInstanceOf[js.Any])
 }

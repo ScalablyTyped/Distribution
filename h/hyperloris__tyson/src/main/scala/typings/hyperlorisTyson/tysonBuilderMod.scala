@@ -4,16 +4,16 @@ import typings.hyperlorisTyson.mod.Tyson
 import typings.hyperlorisTyson.typeAdapterFactoryMod.TypeAdapterFactory
 import typings.hyperlorisTyson.typeAdapterMod.TypeAdapter
 import typings.hyperlorisTyson.typeTokenMod.ClassType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@hyperloris/tyson/dist/types/tysonBuilder", JSImport.Namespace)
-@js.native
-object tysonBuilderMod extends js.Object {
+object tysonBuilderMod {
   
+  @JSImport("@hyperloris/tyson/dist/types/tysonBuilder", "TysonBuilder")
   @js.native
-  class TysonBuilder () extends js.Object {
+  class TysonBuilder () extends StObject {
     
     var _factories: js.Any = js.native
     

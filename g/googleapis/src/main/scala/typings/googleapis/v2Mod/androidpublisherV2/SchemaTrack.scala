@@ -1,11 +1,12 @@
 package typings.googleapis.v2Mod.androidpublisherV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTrack extends js.Object {
+trait SchemaTrack extends StObject {
   
   /**
     * Identifier for this track.
@@ -30,39 +31,27 @@ object SchemaTrack {
   }
   
   @scala.inline
-  implicit class SchemaTrackOps[Self <: SchemaTrack] (val x: Self) extends AnyVal {
+  implicit class SchemaTrackMutableBuilder[Self <: SchemaTrack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserFraction(value: Double): Self = StObject.set(x, "userFraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack(value: String): Self = this.set("track", value.asInstanceOf[js.Any])
+    def setUserFractionUndefined: Self = StObject.set(x, "userFraction", js.undefined)
     
     @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
+    def setVersionCodes(value: js.Array[Double]): Self = StObject.set(x, "versionCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserFraction(value: Double): Self = this.set("userFraction", value.asInstanceOf[js.Any])
+    def setVersionCodesUndefined: Self = StObject.set(x, "versionCodes", js.undefined)
     
     @scala.inline
-    def deleteUserFraction: Self = this.set("userFraction", js.undefined)
-    
-    @scala.inline
-    def setVersionCodesVarargs(value: Double*): Self = this.set("versionCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersionCodes(value: js.Array[Double]): Self = this.set("versionCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionCodes: Self = this.set("versionCodes", js.undefined)
+    def setVersionCodesVarargs(value: Double*): Self = StObject.set(x, "versionCodes", js.Array(value :_*))
   }
 }

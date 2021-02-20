@@ -1,44 +1,45 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExchangeProviderInfo extends js.Object {
+trait ExchangeProviderInfo extends StObject {
   
   var addressFormats: StringMap = js.native
   
   var buyTickers: js.Array[String] = js.native
   
-   // changenow
+  // changenow
   var companyName: String = js.native
   
-   // changenow-icon.jpg
+  // changenow-icon.jpg
   var isActive: Boolean = js.native
   
   var isFixedRate: Boolean = js.native
   
   var isRefundRequired: js.UndefOr[Boolean] = js.native
   
-   // https://support.changenow.io
+  // https://support.changenow.io
   // TODO region of operation
   var kycPolicy: js.UndefOr[String] = js.native
   
-   // https://changenow.io/exchange/txs/{{orderId}}
+  // https://changenow.io/exchange/txs/{{orderId}}
   var kycUrl: String = js.native
   
-   // ChangeNow
+  // ChangeNow
   var logo: String = js.native
   
   var name: String = js.native
   
   var sellTickers: js.Array[String] = js.native
   
-   // specification of formats required by selected exchange
+  // specification of formats required by selected exchange
   var statusUrl: String = js.native
   
-   // https://changenow.io/faq#kyc
+  // https://changenow.io/faq#kyc
   var supportUrl: String = js.native
 }
 object ExchangeProviderInfo {
@@ -62,69 +63,57 @@ object ExchangeProviderInfo {
   }
   
   @scala.inline
-  implicit class ExchangeProviderInfoOps[Self <: ExchangeProviderInfo] (val x: Self) extends AnyVal {
+  implicit class ExchangeProviderInfoMutableBuilder[Self <: ExchangeProviderInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressFormats(value: StringMap): Self = StObject.set(x, "addressFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuyTickers(value: js.Array[String]): Self = StObject.set(x, "buyTickers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuyTickersVarargs(value: String*): Self = StObject.set(x, "buyTickers", js.Array(value :_*))
     
     @scala.inline
-    def setAddressFormats(value: StringMap): Self = this.set("addressFormats", value.asInstanceOf[js.Any])
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyTickersVarargs(value: String*): Self = this.set("buyTickers", js.Array(value :_*))
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyTickers(value: js.Array[String]): Self = this.set("buyTickers", value.asInstanceOf[js.Any])
+    def setIsFixedRate(value: Boolean): Self = StObject.set(x, "isFixedRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setIsRefundRequired(value: Boolean): Self = StObject.set(x, "isRefundRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setIsRefundRequiredUndefined: Self = StObject.set(x, "isRefundRequired", js.undefined)
     
     @scala.inline
-    def setIsFixedRate(value: Boolean): Self = this.set("isFixedRate", value.asInstanceOf[js.Any])
+    def setKycPolicy(value: String): Self = StObject.set(x, "kycPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKycUrl(value: String): Self = this.set("kycUrl", value.asInstanceOf[js.Any])
+    def setKycPolicyUndefined: Self = StObject.set(x, "kycPolicy", js.undefined)
     
     @scala.inline
-    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setKycUrl(value: String): Self = StObject.set(x, "kycUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSellTickersVarargs(value: String*): Self = this.set("sellTickers", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSellTickers(value: js.Array[String]): Self = this.set("sellTickers", value.asInstanceOf[js.Any])
+    def setSellTickers(value: js.Array[String]): Self = StObject.set(x, "sellTickers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusUrl(value: String): Self = this.set("statusUrl", value.asInstanceOf[js.Any])
+    def setSellTickersVarargs(value: String*): Self = StObject.set(x, "sellTickers", js.Array(value :_*))
     
     @scala.inline
-    def setSupportUrl(value: String): Self = this.set("supportUrl", value.asInstanceOf[js.Any])
+    def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRefundRequired(value: Boolean): Self = this.set("isRefundRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsRefundRequired: Self = this.set("isRefundRequired", js.undefined)
-    
-    @scala.inline
-    def setKycPolicy(value: String): Self = this.set("kycPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKycPolicy: Self = this.set("kycPolicy", js.undefined)
+    def setSupportUrl(value: String): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
   }
 }

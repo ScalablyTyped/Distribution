@@ -1,5 +1,6 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.baiduApp.baiduAppStrings.round
   - typings.baiduApp.baiduAppStrings.miter
 */
-trait LineJoinType extends js.Object
+trait LineJoinType extends StObject
 object LineJoinType {
   
   @scala.inline

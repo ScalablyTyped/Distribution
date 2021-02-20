@@ -3,14 +3,15 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/image/non_max_suppression_async", JSImport.Namespace)
-@js.native
-object nonMaxSuppressionAsyncMod extends js.Object {
+object nonMaxSuppressionAsyncMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/image/non_max_suppression_async", "nonMaxSuppressionAsync")
+  @js.native
   val nonMaxSuppressionAsync: js.Function5[
     /* boxes */ Tensor2D | TensorLike, 
     /* scores */ Tensor1D | TensorLike, 

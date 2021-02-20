@@ -4,27 +4,14 @@ import typings.dndCore.interfacesMod.Backend
 import typings.dndCore.interfacesMod.Identifier
 import typings.reactDnd.optionsMod.DragPreviewOptions
 import typings.reactDnd.optionsMod.DragSourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd/lib/common/SourceConnector", JSImport.Namespace)
-@js.native
-object sourceConnectorMod extends js.Object {
+object sourceConnectorMod {
   
-  @js.native
-  trait Connector extends js.Object {
-    
-    var connectTarget: js.Any = js.native
-    
-    var hooks: js.Any = js.native
-    
-    def receiveHandlerId(): Unit = js.native
-    def receiveHandlerId(handlerId: Identifier): Unit = js.native
-    
-    def reconnect(): Unit = js.native
-  }
-  
+  @JSImport("react-dnd/lib/common/SourceConnector", "SourceConnector")
   @js.native
   class SourceConnector protected () extends Connector {
     def this(backend: Backend) = this()
@@ -95,5 +82,18 @@ object sourceConnectorMod extends js.Object {
     var reconnectDragPreview: js.Any = js.native
     
     var reconnectDragSource: js.Any = js.native
+  }
+  
+  @js.native
+  trait Connector extends StObject {
+    
+    var connectTarget: js.Any = js.native
+    
+    var hooks: js.Any = js.native
+    
+    def receiveHandlerId(): Unit = js.native
+    def receiveHandlerId(handlerId: Identifier): Unit = js.native
+    
+    def reconnect(): Unit = js.native
   }
 }

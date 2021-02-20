@@ -3,12 +3,13 @@ package typings.nextServer.anon
 import typings.nextServer.routerMod.RouteInfo
 import typings.nextServer.routerMod.Subscription
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends js.Object {
+trait App extends StObject {
   
   var App: ComponentType[js.Object] = js.native
   
@@ -40,42 +41,30 @@ object App {
   }
   
   @scala.inline
-  implicit class AppOps[Self <: App] (val x: Self) extends AnyVal {
+  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: ComponentType[js.Object]): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErr(value: typings.std.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: ComponentType[js.Object]): Self = this.set("App", value.asInstanceOf[js.Any])
+    def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
     
     @scala.inline
-    def setComponent(value: ComponentType[js.Object]): Self = this.set("Component", value.asInstanceOf[js.Any])
+    def setInitialProps(value: js.Any): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialProps(value: js.Any): Self = this.set("initialProps", value.asInstanceOf[js.Any])
+    def setPageLoader(value: js.Any): Self = StObject.set(x, "pageLoader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageLoader(value: js.Any): Self = this.set("pageLoader", value.asInstanceOf[js.Any])
+    def setSubscription(value: (/* data */ RouteInfo, /* App */ js.UndefOr[ComponentType[js.Object]]) => Unit): Self = StObject.set(x, "subscription", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSubscription(value: (/* data */ RouteInfo, /* App */ js.UndefOr[ComponentType[js.Object]]) => Unit): Self = this.set("subscription", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWrapApp(value: ComponentType[js.Object] => js.Any): Self = this.set("wrapApp", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setErr(value: typings.std.Error): Self = this.set("err", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErr: Self = this.set("err", js.undefined)
+    def setWrapApp(value: ComponentType[js.Object] => js.Any): Self = StObject.set(x, "wrapApp", js.Any.fromFunction1(value))
   }
 }

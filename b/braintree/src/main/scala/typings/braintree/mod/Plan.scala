@@ -1,13 +1,14 @@
 package typings.braintree.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "Plan")
 @js.native
-class Plan () extends js.Object {
+class Plan () extends StObject {
   
   var addOns: js.UndefOr[js.Array[AddOn]] = js.native
   

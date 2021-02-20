@@ -1,12 +1,13 @@
 package typings.jpm.anon
 
 import typings.jpm.FFAddonSDK.Tab
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InBackground extends js.Object {
+trait InBackground extends StObject {
   
   var inBackground: js.UndefOr[Boolean] = js.native
   
@@ -39,81 +40,69 @@ object InBackground {
   }
   
   @scala.inline
-  implicit class InBackgroundOps[Self <: InBackground] (val x: Self) extends AnyVal {
+  implicit class InBackgroundMutableBuilder[Self <: InBackground] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInBackground(value: Boolean): Self = StObject.set(x, "inBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInBackgroundUndefined: Self = StObject.set(x, "inBackground", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInNewWindow(value: Boolean): Self = StObject.set(x, "inNewWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setInNewWindowUndefined: Self = StObject.set(x, "inNewWindow", js.undefined)
     
     @scala.inline
-    def setInBackground(value: Boolean): Self = this.set("inBackground", value.asInstanceOf[js.Any])
+    def setIsPinned(value: Boolean): Self = StObject.set(x, "isPinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInBackground: Self = this.set("inBackground", js.undefined)
+    def setIsPinnedUndefined: Self = StObject.set(x, "isPinned", js.undefined)
     
     @scala.inline
-    def setInNewWindow(value: Boolean): Self = this.set("inNewWindow", value.asInstanceOf[js.Any])
+    def setOnActivate(value: /* tab */ Tab => _): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInNewWindow: Self = this.set("inNewWindow", js.undefined)
+    def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
     
     @scala.inline
-    def setIsPinned(value: Boolean): Self = this.set("isPinned", value.asInstanceOf[js.Any])
+    def setOnClose(value: /* tab */ Tab => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsPinned: Self = this.set("isPinned", js.undefined)
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setOnActivate(value: /* tab */ Tab => _): Self = this.set("onActivate", js.Any.fromFunction1(value))
+    def setOnDeactivate(value: /* tab */ Tab => _): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnActivate: Self = this.set("onActivate", js.undefined)
+    def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
     
     @scala.inline
-    def setOnClose(value: /* tab */ Tab => _): Self = this.set("onClose", js.Any.fromFunction1(value))
+    def setOnLoad(value: /* tab */ Tab => _): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def setOnDeactivate(value: /* tab */ Tab => _): Self = this.set("onDeactivate", js.Any.fromFunction1(value))
+    def setOnOpen(value: /* tab */ Tab => _): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDeactivate: Self = this.set("onDeactivate", js.undefined)
+    def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
     @scala.inline
-    def setOnLoad(value: /* tab */ Tab => _): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    def setOnPageShow(value: /* tab */ Tab => _): Self = StObject.set(x, "onPageShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    def setOnPageShowUndefined: Self = StObject.set(x, "onPageShow", js.undefined)
     
     @scala.inline
-    def setOnOpen(value: /* tab */ Tab => _): Self = this.set("onOpen", js.Any.fromFunction1(value))
+    def setOnReady(value: /* tab */ Tab => _): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
     @scala.inline
-    def setOnPageShow(value: /* tab */ Tab => _): Self = this.set("onPageShow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnPageShow: Self = this.set("onPageShow", js.undefined)
-    
-    @scala.inline
-    def setOnReady(value: /* tab */ Tab => _): Self = this.set("onReady", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnReady: Self = this.set("onReady", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

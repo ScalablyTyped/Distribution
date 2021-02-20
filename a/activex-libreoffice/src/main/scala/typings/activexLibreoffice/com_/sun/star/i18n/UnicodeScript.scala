@@ -88,6 +88,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`86`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`87`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -183,7 +184,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`72`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`71`
 */
-trait UnicodeScript extends js.Object
+trait UnicodeScript extends StObject
 object UnicodeScript {
   
   @scala.inline

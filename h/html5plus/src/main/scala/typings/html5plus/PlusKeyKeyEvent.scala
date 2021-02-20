@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
   */
 @js.native
-trait PlusKeyKeyEvent extends js.Object {
+trait PlusKeyKeyEvent extends StObject {
   
   /**
     * 触发按键事件的键值
@@ -37,30 +38,18 @@ object PlusKeyKeyEvent {
   }
   
   @scala.inline
-  implicit class PlusKeyKeyEventOps[Self <: PlusKeyKeyEvent] (val x: Self) extends AnyVal {
+  implicit class PlusKeyKeyEventMutableBuilder[Self <: PlusKeyKeyEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyType(value: PlusKeyKeyType): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyCode(value: Double): Self = this.set("keyCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyCode: Self = this.set("keyCode", js.undefined)
-    
-    @scala.inline
-    def setKeyType(value: PlusKeyKeyType): Self = this.set("keyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyType: Self = this.set("keyType", js.undefined)
+    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
   }
 }

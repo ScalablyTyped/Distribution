@@ -1,12 +1,13 @@
 package typings.awsSdkClientS3Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/model/DeleteBucketMetricsConfigurationInput", JSImport.Namespace)
-@js.native
-object deleteBucketMetricsConfigurationInputMod extends js.Object {
+object deleteBucketMetricsConfigurationInputMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/model/DeleteBucketMetricsConfigurationInput", "DeleteBucketMetricsConfigurationInput")
+  @js.native
   val DeleteBucketMetricsConfigurationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

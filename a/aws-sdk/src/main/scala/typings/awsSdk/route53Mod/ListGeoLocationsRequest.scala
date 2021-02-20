@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGeoLocationsRequest extends js.Object {
+trait ListGeoLocationsRequest extends StObject {
   
   /**
     * (Optional) The maximum number of geolocations to be included in the response body for this request. If more than maxitems geolocations remain to be listed, then the value of the IsTruncated element in the response is true.
@@ -36,42 +37,30 @@ object ListGeoLocationsRequest {
   }
   
   @scala.inline
-  implicit class ListGeoLocationsRequestOps[Self <: ListGeoLocationsRequest] (val x: Self) extends AnyVal {
+  implicit class ListGeoLocationsRequestMutableBuilder[Self <: ListGeoLocationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartContinentCode(value: GeoLocationContinentCode): Self = StObject.set(x, "StartContinentCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setStartContinentCodeUndefined: Self = StObject.set(x, "StartContinentCode", js.undefined)
     
     @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    def setStartCountryCode(value: GeoLocationCountryCode): Self = StObject.set(x, "StartCountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartContinentCode(value: GeoLocationContinentCode): Self = this.set("StartContinentCode", value.asInstanceOf[js.Any])
+    def setStartCountryCodeUndefined: Self = StObject.set(x, "StartCountryCode", js.undefined)
     
     @scala.inline
-    def deleteStartContinentCode: Self = this.set("StartContinentCode", js.undefined)
+    def setStartSubdivisionCode(value: GeoLocationSubdivisionCode): Self = StObject.set(x, "StartSubdivisionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartCountryCode(value: GeoLocationCountryCode): Self = this.set("StartCountryCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartCountryCode: Self = this.set("StartCountryCode", js.undefined)
-    
-    @scala.inline
-    def setStartSubdivisionCode(value: GeoLocationSubdivisionCode): Self = this.set("StartSubdivisionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartSubdivisionCode: Self = this.set("StartSubdivisionCode", js.undefined)
+    def setStartSubdivisionCodeUndefined: Self = StObject.set(x, "StartSubdivisionCode", js.undefined)
   }
 }

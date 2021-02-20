@@ -2,12 +2,13 @@ package typings.reactSketchapp.propsMod
 
 import typings.reactSketchapp.reactSketchappStrings.evenodd
 import typings.reactSketchapp.reactSketchappStrings.nonzero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FillProps extends js.Object {
+trait FillProps extends StObject {
   
   var fill: js.UndefOr[String] = js.native
   
@@ -24,36 +25,24 @@ object FillProps {
   }
   
   @scala.inline
-  implicit class FillPropsOps[Self <: FillProps] (val x: Self) extends AnyVal {
+  implicit class FillPropsMutableBuilder[Self <: FillProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillOpacity(value: NumberProp): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setFillRule(value: evenodd | nonzero): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
     
     @scala.inline
-    def setFillOpacity(value: NumberProp): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
-    
-    @scala.inline
-    def setFillRule(value: evenodd | nonzero): Self = this.set("fillRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFillRule: Self = this.set("fillRule", js.undefined)
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

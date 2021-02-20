@@ -1,32 +1,50 @@
 package typings.tslint
 
+import typings.tslint.mod.Rules.TypedRule
+import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import typings.tslint.tslintStrings.`null`
 import typings.tslint.tslintStrings.undefined
-import typings.tslint.typedRuleMod.TypedRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/rules/strictTypePredicatesRule", JSImport.Namespace)
-@js.native
-object strictTypePredicatesRuleMod extends js.Object {
+object strictTypePredicatesRuleMod {
   
+  @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule")
   @js.native
-  class Rule () extends TypedRule
+  class Rule protected () extends TypedRule {
+    def this(options: IOptions) = this()
+  }
   /* static members */
-  @js.native
-  object Rule extends js.Object {
+  object Rule {
     
-    @JSName("FAILURE_STRICT_PREFER_STRICT_EQUALS")
+    @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule.FAILURE_STRICT_PREFER_STRICT_EQUALS")
+    @js.native
     def FAILURE_STRICT_PREFER_STRICT_EQUALS_null(value: `null`, isPositive: Boolean): String = js.native
-    @JSName("FAILURE_STRICT_PREFER_STRICT_EQUALS")
+    @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule.FAILURE_STRICT_PREFER_STRICT_EQUALS")
+    @js.native
     def FAILURE_STRICT_PREFER_STRICT_EQUALS_undefined(value: undefined, isPositive: Boolean): String = js.native
     
+    @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule.FAILURE_STRING")
+    @js.native
     def FAILURE_STRING(value: Boolean): String = js.native
     
-    var FAILURE_STRING_BAD_TYPEOF: String = js.native
+    @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule.FAILURE_STRING_BAD_TYPEOF")
+    @js.native
+    def FAILURE_STRING_BAD_TYPEOF: String = js.native
+    @scala.inline
+    def FAILURE_STRING_BAD_TYPEOF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_BAD_TYPEOF")(x.asInstanceOf[js.Any])
     
-    var metadata: IRuleMetadata = js.native
+    @JSImport("tslint/lib/rules/strictTypePredicatesRule", "Rule.metadata")
+    @js.native
+    def metadata: IRuleMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.exceljs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.Color> */
 @js.native
-trait PartialColor extends js.Object {
+trait PartialColor extends StObject {
   
   var argb: js.UndefOr[String] = js.native
   
@@ -21,30 +22,18 @@ object PartialColor {
   }
   
   @scala.inline
-  implicit class PartialColorOps[Self <: PartialColor] (val x: Self) extends AnyVal {
+  implicit class PartialColorMutableBuilder[Self <: PartialColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgb(value: String): Self = StObject.set(x, "argb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgbUndefined: Self = StObject.set(x, "argb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTheme(value: Double): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgb(value: String): Self = this.set("argb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArgb: Self = this.set("argb", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: Double): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

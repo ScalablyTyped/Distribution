@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartTagRecognizer extends js.Object {
+trait SmartTagRecognizer extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -43,42 +44,30 @@ object SmartTagRecognizer {
   }
   
   @scala.inline
-  implicit class SmartTagRecognizerOps[Self <: SmartTagRecognizer] (val x: Self) extends AnyVal {
+  implicit class SmartTagRecognizerMutableBuilder[Self <: SmartTagRecognizer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotSmartTagRecognizer_typekey(value: SmartTagRecognizer): Self = StObject.set(x, "Excel.SmartTagRecognizer_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotSmartTagRecognizer_typekey(value: SmartTagRecognizer): Self = this.set("Excel.SmartTagRecognizer_typekey", value.asInstanceOf[js.Any])
+    def setProgID(value: String): Self = StObject.set(x, "progID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("FullName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_Default(value: String): Self = this.set("_Default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgID(value: String): Self = this.set("progID", value.asInstanceOf[js.Any])
+    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

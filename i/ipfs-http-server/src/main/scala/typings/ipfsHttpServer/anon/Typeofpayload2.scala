@@ -1,11 +1,12 @@
 package typings.ipfsHttpServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofpayload2 extends js.Object {
+trait Typeofpayload2 extends StObject {
   
   val output_2: String = js.native
   
@@ -20,24 +21,12 @@ object Typeofpayload2 {
   }
   
   @scala.inline
-  implicit class Typeofpayload2Ops[Self <: Typeofpayload2] (val x: Self) extends AnyVal {
+  implicit class Typeofpayload2MutableBuilder[Self <: Typeofpayload2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutput_2(value: String): Self = StObject.set(x, "output_2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutput_2(value: String): Self = this.set("output_2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParse_2(value: Boolean): Self = this.set("parse_2", value.asInstanceOf[js.Any])
+    def setParse_2(value: Boolean): Self = StObject.set(x, "parse_2", value.asInstanceOf[js.Any])
   }
 }

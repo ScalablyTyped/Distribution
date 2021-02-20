@@ -1,11 +1,12 @@
 package typings.awsSdk.licensemanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrganizationConfiguration extends js.Object {
+trait OrganizationConfiguration extends StObject {
   
   /**
     * Enables AWS Organization integration.
@@ -21,21 +22,9 @@ object OrganizationConfiguration {
   }
   
   @scala.inline
-  implicit class OrganizationConfigurationOps[Self <: OrganizationConfiguration] (val x: Self) extends AnyVal {
+  implicit class OrganizationConfigurationMutableBuilder[Self <: OrganizationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnableIntegration(value: Boolean): Self = this.set("EnableIntegration", value.asInstanceOf[js.Any])
+    def setEnableIntegration(value: Boolean): Self = StObject.set(x, "EnableIntegration", value.asInstanceOf[js.Any])
   }
 }

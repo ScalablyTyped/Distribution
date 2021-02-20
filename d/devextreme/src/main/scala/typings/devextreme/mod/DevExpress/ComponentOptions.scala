@@ -2,12 +2,13 @@ package typings.devextreme.mod.DevExpress
 
 import typings.devextreme.anon.Element
 import typings.devextreme.anon.FullName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentOptions[T] extends js.Object {
+trait ComponentOptions[T] extends StObject {
   
   /**
     * [descr:Component.Options.onDisposing]
@@ -33,36 +34,24 @@ object ComponentOptions {
   }
   
   @scala.inline
-  implicit class ComponentOptionsOps[Self <: ComponentOptions[_], T] (val x: Self with ComponentOptions[T]) extends AnyVal {
+  implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[_], T] (val x: Self with ComponentOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnDisposing(value: /* e */ typings.devextreme.anon.Component[T] => _): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnInitialized(value: /* e */ Element[T] => _): Self = StObject.set(x, "onInitialized", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDisposing(value: /* e */ typings.devextreme.anon.Component[T] => _): Self = this.set("onDisposing", js.Any.fromFunction1(value))
+    def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
     
     @scala.inline
-    def deleteOnDisposing: Self = this.set("onDisposing", js.undefined)
+    def setOnOptionChanged(value: /* e */ FullName[T] => _): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnInitialized(value: /* e */ Element[T] => _): Self = this.set("onInitialized", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnInitialized: Self = this.set("onInitialized", js.undefined)
-    
-    @scala.inline
-    def setOnOptionChanged(value: /* e */ FullName[T] => _): Self = this.set("onOptionChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnOptionChanged: Self = this.set("onOptionChanged", js.undefined)
+    def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
   }
 }

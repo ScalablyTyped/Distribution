@@ -5,12 +5,13 @@ import typings.minappEnv.minappEnvStrings.album
 import typings.minappEnv.minappEnvStrings.back
 import typings.minappEnv.minappEnvStrings.camera
 import typings.minappEnv.minappEnvStrings.front
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChooseVideoOption extends js.Object {
+trait ChooseVideoOption extends StObject {
   
   /** 默认拉起的是前置或者后置摄像头。部分 Android 手机下由于系统 ROM 不支持无法生效
     *
@@ -52,60 +53,48 @@ object ChooseVideoOption {
   }
   
   @scala.inline
-  implicit class ChooseVideoOptionOps[Self <: ChooseVideoOption] (val x: Self) extends AnyVal {
+  implicit class ChooseVideoOptionMutableBuilder[Self <: ChooseVideoOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCamera(value: back | front): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCamera(value: back | front): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteCamera: Self = this.set("camera", js.undefined)
+    def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setCompressedUndefined: Self = StObject.set(x, "compressed", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompressed(value: Boolean): Self = this.set("compressed", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteCompressed: Self = this.set("compressed", js.undefined)
+    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setSourceType(value: Array[album | camera]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDuration(value: Double): Self = this.set("maxDuration", value.asInstanceOf[js.Any])
+    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
     @scala.inline
-    def deleteMaxDuration: Self = this.set("maxDuration", js.undefined)
+    def setSuccess(value: /* result */ ChooseVideoSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSourceType(value: Array[album | camera]): Self = this.set("sourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("sourceType", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ ChooseVideoSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

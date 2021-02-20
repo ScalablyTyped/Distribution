@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response message for EntityTypes.BatchUpdateEntityTypes.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse extends StObject {
   
   /**
     * The collection of updated or created entity types.
@@ -24,27 +25,15 @@ object SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponseOps[Self <: SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponseMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityTypes(value: js.Array[SchemaGoogleCloudDialogflowV2beta1EntityType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2beta1EntityType*): Self = this.set("entityTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntityTypes(value: js.Array[SchemaGoogleCloudDialogflowV2beta1EntityType]): Self = this.set("entityTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityTypes: Self = this.set("entityTypes", js.undefined)
+    def setEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2beta1EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
   }
 }

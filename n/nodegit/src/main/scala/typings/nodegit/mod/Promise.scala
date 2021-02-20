@@ -1,12 +1,11 @@
 package typings.nodegit.mod
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
-import typings.std.PromiseConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("nodegit", "Promise")
 @js.native
 class Promise[T] protected ()
@@ -23,19 +22,3 @@ class Promise[T] protected ()
         Unit
       ]) = this()
 }
-@JSImport("nodegit", "Promise")
-@js.native
-object Promise
-  extends TopLevel[
-      PromiseConstructor with (Instantiable1[
-        /* executor */ js.Function2[
-          /* resolve */ js.Function1[
-            /* value */ (/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]), 
-            Unit
-          ], 
-          /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-          Unit
-        ], 
-        typings.std.global.Promise[js.Object]
-      ])
-    ]

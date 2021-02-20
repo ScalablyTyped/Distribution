@@ -1,53 +1,68 @@
 package typings.famous
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("famous/core", JSImport.Namespace)
-@js.native
-object coreMod extends js.Object {
+object coreMod {
   
+  @JSImport("famous/core", "Clock")
   @js.native
-  class Clock () extends js.Object {
+  class Clock () extends StObject {
     
     def setTimeout(callback: js.Function): Unit = js.native
     def setTimeout(callback: js.Function, delay: Double): Unit = js.native
   }
   
+  @JSImport("famous/core", "Dispatch")
   @js.native
-  class Dispatch () extends js.Object
+  class Dispatch () extends StObject
   /* static members */
-  @js.native
-  object Dispatch extends js.Object {
+  object Dispatch {
     
+    @JSImport("famous/core", "Dispatch.dispatchUIEvent")
+    @js.native
     def dispatchUIEvent(path: String, event: String, payload: js.Any): Unit = js.native
   }
   
+  @JSImport("famous/core", "FamousEngine")
   @js.native
-  class FamousEngine () extends js.Object {
+  class FamousEngine () extends StObject {
     
     def createScene(): Scene = js.native
   }
   /* static members */
-  @js.native
-  object FamousEngine extends js.Object {
+  object FamousEngine {
     
+    @JSImport("famous/core", "FamousEngine.createScene")
+    @js.native
     def createScene(): Scene = js.native
     
+    @JSImport("famous/core", "FamousEngine.getClock")
+    @js.native
     def getClock(): Clock = js.native
     
+    @JSImport("famous/core", "FamousEngine.getContext")
+    @js.native
     def getContext(selector: String): Scene = js.native
     
+    @JSImport("famous/core", "FamousEngine.init")
+    @js.native
     def init(): FamousEngine = js.native
     
+    @JSImport("famous/core", "FamousEngine.requestUpdate")
+    @js.native
     def requestUpdate(requester: Double): Unit = js.native
     
+    @JSImport("famous/core", "FamousEngine.requestUpdateOnNextTick")
+    @js.native
     def requestUpdateOnNextTick(requester: Double): Unit = js.native
   }
   
+  @JSImport("famous/core", "Node")
   @js.native
-  class Node () extends js.Object {
+  class Node () extends StObject {
     
     def addChild(): Node = js.native
     def addChild(node: Node): Node = js.native
@@ -232,51 +247,95 @@ object coreMod extends js.Object {
     def show(): Node = js.native
   }
   /* static members */
-  @js.native
-  object Node extends js.Object {
+  object Node {
     
-    var ABSOLUTE_SIZE: Double = js.native
+    @JSImport("famous/core", "Node")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var DEFAULT_SIZE: Double = js.native
+    @JSImport("famous/core", "Node.ABSOLUTE_SIZE")
+    @js.native
+    def ABSOLUTE_SIZE: Double = js.native
+    @scala.inline
+    def ABSOLUTE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTE_SIZE")(x.asInstanceOf[js.Any])
     
-    var RELATIVE_SIZE: Double = js.native
+    @JSImport("famous/core", "Node.DEFAULT_SIZE")
+    @js.native
+    def DEFAULT_SIZE: Double = js.native
+    @scala.inline
+    def DEFAULT_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SIZE")(x.asInstanceOf[js.Any])
     
-    var RENDER_SIZE: Double = js.native
+    @JSImport("famous/core", "Node.RELATIVE_SIZE")
+    @js.native
+    def RELATIVE_SIZE: Double = js.native
+    @scala.inline
+    def RELATIVE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RELATIVE_SIZE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("famous/core", "Node.RENDER_SIZE")
+    @js.native
+    def RENDER_SIZE: Double = js.native
+    @scala.inline
+    def RENDER_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RENDER_SIZE")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("famous/core", "Scene")
   @js.native
   class Scene () extends Node
   
+  @JSImport("famous/core", "Size")
   @js.native
-  class Size () extends js.Object
+  class Size () extends StObject
   /* static members */
-  @js.native
-  object Size extends js.Object {
+  object Size {
     
-    var ABSOLUTE: Double = js.native
+    @JSImport("famous/core", "Size")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var DEFAULT: Double = js.native
+    @JSImport("famous/core", "Size.ABSOLUTE")
+    @js.native
+    def ABSOLUTE: Double = js.native
+    @scala.inline
+    def ABSOLUTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTE")(x.asInstanceOf[js.Any])
     
-    var RELATIVE: Double = js.native
+    @JSImport("famous/core", "Size.DEFAULT")
+    @js.native
+    def DEFAULT: Double = js.native
+    @scala.inline
+    def DEFAULT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT")(x.asInstanceOf[js.Any])
     
-    var RENDER: Double = js.native
+    @JSImport("famous/core", "Size.RELATIVE")
+    @js.native
+    def RELATIVE: Double = js.native
+    @scala.inline
+    def RELATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RELATIVE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("famous/core", "Size.RENDER")
+    @js.native
+    def RENDER: Double = js.native
+    @scala.inline
+    def RENDER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RENDER")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("famous/core", "SizeSystem")
   @js.native
-  class SizeSystem () extends js.Object
+  class SizeSystem () extends StObject
   /* static members */
-  @js.native
-  object SizeSystem extends js.Object {
+  object SizeSystem {
     
+    @JSImport("famous/core", "SizeSystem.deregisterSizeAtPath")
+    @js.native
     def deregisterSizeAtPath(path: String): Unit = js.native
   }
   
+  @JSImport("famous/core", "TransformSystem")
   @js.native
-  class TransformSystem () extends js.Object
+  class TransformSystem () extends StObject
   /* static members */
-  @js.native
-  object TransformSystem extends js.Object {
+  object TransformSystem {
     
+    @JSImport("famous/core", "TransformSystem.deregisterTransformAtPath")
+    @js.native
     def deregisterTransformAtPath(path: String): Unit = js.native
   }
 }

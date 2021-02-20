@@ -1,12 +1,13 @@
 package typings.activexShdocvw.SHDocVw
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ShellDispatch Load in Shell Context */
 @js.native
-trait ShellWindows extends js.Object {
+trait ShellWindows extends StObject {
   
   /** Get count of open Shell windows */
   val Count: Double = js.native

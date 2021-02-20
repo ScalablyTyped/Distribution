@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletedMultipartUpload extends js.Object {
+trait CompletedMultipartUpload extends StObject {
   
   /**
     * Array of CompletedPart data types.
@@ -21,27 +22,15 @@ object CompletedMultipartUpload {
   }
   
   @scala.inline
-  implicit class CompletedMultipartUploadOps[Self <: CompletedMultipartUpload] (val x: Self) extends AnyVal {
+  implicit class CompletedMultipartUploadMutableBuilder[Self <: CompletedMultipartUpload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParts(value: CompletedPartList): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPartsVarargs(value: CompletedPart*): Self = this.set("Parts", js.Array(value :_*))
-    
-    @scala.inline
-    def setParts(value: CompletedPartList): Self = this.set("Parts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParts: Self = this.set("Parts", js.undefined)
+    def setPartsVarargs(value: CompletedPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
   }
 }

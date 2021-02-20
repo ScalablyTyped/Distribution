@@ -9,12 +9,13 @@ import typings.baseui.baseuiStrings.moveLeft
 import typings.baseui.baseuiStrings.moveRight
 import typings.baseui.baseuiStrings.moveUp
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatefulContainerProps[T] extends js.Object {
+trait StatefulContainerProps[T] extends StObject {
   
   var children: js.UndefOr[js.Function1[/* args */ T, ReactNode]] = js.native
   
@@ -35,50 +36,38 @@ object StatefulContainerProps {
   }
   
   @scala.inline
-  implicit class StatefulContainerPropsOps[Self <: StatefulContainerProps[_], T] (val x: Self with StatefulContainerProps[T]) extends AnyVal {
+  implicit class StatefulContainerPropsMutableBuilder[Self <: StatefulContainerProps[_], T] (val x: Self with StatefulContainerProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: /* args */ T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialState(value: ContainerState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: /* args */ T => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setOnChange(value: /* args */ Date => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitialState(value: ContainerState): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: /* args */ Date => js.Any): Self = this.set("onChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
-    
-    @scala.inline
-    def setRange(value: Boolean): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
     def setStateReducer(
       value: (/* stateType */ mouseLeave | moveRight | moveDown | moveUp | mouseOver | change_ | moveLeft, /* nextState */ ContainerState, /* currentState */ ContainerState) => ContainerState
-    ): Self = this.set("stateReducer", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteStateReducer: Self = this.set("stateReducer", js.undefined)
+    def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
   }
 }

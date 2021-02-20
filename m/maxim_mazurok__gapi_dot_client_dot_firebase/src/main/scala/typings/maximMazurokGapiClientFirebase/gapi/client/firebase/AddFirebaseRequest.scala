@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddFirebaseRequest extends js.Object {
+trait AddFirebaseRequest extends StObject {
   
   /**
     * Deprecated. Instead, to set a Project's default GCP resource location, call [`FinalizeDefaultLocation`](../projects.defaultLocation/finalize) after you add Firebase resources to the
@@ -35,36 +36,24 @@ object AddFirebaseRequest {
   }
   
   @scala.inline
-  implicit class AddFirebaseRequestOps[Self <: AddFirebaseRequest] (val x: Self) extends AnyVal {
+  implicit class AddFirebaseRequestMutableBuilder[Self <: AddFirebaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
+    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
     
     @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

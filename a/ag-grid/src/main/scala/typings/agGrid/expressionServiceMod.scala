@@ -1,15 +1,15 @@
 package typings.agGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/valueService/expressionService", JSImport.Namespace)
-@js.native
-object expressionServiceMod extends js.Object {
+object expressionServiceMod {
   
+  @JSImport("ag-grid/dist/lib/valueService/expressionService", "ExpressionService")
   @js.native
-  class ExpressionService () extends js.Object {
+  class ExpressionService () extends StObject {
     
     /* private */ def createExpressionFunction(expression: js.Any): js.Any = js.native
     

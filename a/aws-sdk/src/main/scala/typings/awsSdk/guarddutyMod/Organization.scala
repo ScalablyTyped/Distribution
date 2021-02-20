@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Organization extends js.Object {
+trait Organization extends StObject {
   
   /**
     * The Autonomous System Number (ASN) of the internet provider of the remote IP address.
@@ -36,42 +37,30 @@ object Organization {
   }
   
   @scala.inline
-  implicit class OrganizationOps[Self <: Organization] (val x: Self) extends AnyVal {
+  implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsn(value: String): Self = StObject.set(x, "Asn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsnOrg(value: String): Self = StObject.set(x, "AsnOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsnOrgUndefined: Self = StObject.set(x, "AsnOrg", js.undefined)
     
     @scala.inline
-    def setAsn(value: String): Self = this.set("Asn", value.asInstanceOf[js.Any])
+    def setAsnUndefined: Self = StObject.set(x, "Asn", js.undefined)
     
     @scala.inline
-    def deleteAsn: Self = this.set("Asn", js.undefined)
+    def setIsp(value: String): Self = StObject.set(x, "Isp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsnOrg(value: String): Self = this.set("AsnOrg", value.asInstanceOf[js.Any])
+    def setIspUndefined: Self = StObject.set(x, "Isp", js.undefined)
     
     @scala.inline
-    def deleteAsnOrg: Self = this.set("AsnOrg", js.undefined)
+    def setOrg(value: String): Self = StObject.set(x, "Org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsp(value: String): Self = this.set("Isp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsp: Self = this.set("Isp", js.undefined)
-    
-    @scala.inline
-    def setOrg(value: String): Self = this.set("Org", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrg: Self = this.set("Org", js.undefined)
+    def setOrgUndefined: Self = StObject.set(x, "Org", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Definition of what a factory function should look like.
   */
 @js.native
-trait FactoryFn[T] extends js.Object {
+trait FactoryFn[T] extends StObject {
   
   /**
     * If no constructor to instantiate is provided, an instance of type T itself is created.
@@ -18,5 +19,5 @@ trait FactoryFn[T] extends js.Object {
     * Subclasses without an explicit constructor call through to the factory of their base
     * definition, providing it with their own constructor to instantiate.
     */
-  def apply[U /* <: T */](t: Type[U]): U = js.native
+  def apply[U /* <: T */](t: typings.angularCore.mod.Type[U]): U = js.native
 }

@@ -3,12 +3,13 @@ package typings.dwt.anon
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPixelFlavor
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapSupportedSizes
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTUnitType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoBorderDetection extends js.Object {
+trait AutoBorderDetection extends StObject {
   
   /**
     * Whether to enable automatic border detection.
@@ -84,96 +85,84 @@ object AutoBorderDetection {
   }
   
   @scala.inline
-  implicit class AutoBorderDetectionOps[Self <: AutoBorderDetection] (val x: Self) extends AnyVal {
+  implicit class AutoBorderDetectionMutableBuilder[Self <: AutoBorderDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoBorderDetection(value: Boolean): Self = StObject.set(x, "autoBorderDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoBorderDetectionUndefined: Self = StObject.set(x, "autoBorderDetection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoBright(value: Boolean): Self = StObject.set(x, "autoBright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBorderDetection(value: Boolean): Self = this.set("autoBorderDetection", value.asInstanceOf[js.Any])
+    def setAutoBrightUndefined: Self = StObject.set(x, "autoBright", js.undefined)
     
     @scala.inline
-    def deleteAutoBorderDetection: Self = this.set("autoBorderDetection", js.undefined)
+    def setAutoDeskew(value: Boolean): Self = StObject.set(x, "autoDeskew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBright(value: Boolean): Self = this.set("autoBright", value.asInstanceOf[js.Any])
+    def setAutoDeskewUndefined: Self = StObject.set(x, "autoDeskew", js.undefined)
     
     @scala.inline
-    def deleteAutoBright: Self = this.set("autoBright", js.undefined)
+    def setAutoDiscardBlankPages(value: Boolean): Self = StObject.set(x, "autoDiscardBlankPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDeskew(value: Boolean): Self = this.set("autoDeskew", value.asInstanceOf[js.Any])
+    def setAutoDiscardBlankPagesUndefined: Self = StObject.set(x, "autoDiscardBlankPages", js.undefined)
     
     @scala.inline
-    def deleteAutoDeskew: Self = this.set("autoDeskew", js.undefined)
+    def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDiscardBlankPages(value: Boolean): Self = this.set("autoDiscardBlankPages", value.asInstanceOf[js.Any])
+    def setBitDepthUndefined: Self = StObject.set(x, "bitDepth", js.undefined)
     
     @scala.inline
-    def deleteAutoDiscardBlankPages: Self = this.set("autoDiscardBlankPages", js.undefined)
+    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitDepth(value: Double): Self = this.set("bitDepth", value.asInstanceOf[js.Any])
+    def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
     
     @scala.inline
-    def deleteBitDepth: Self = this.set("bitDepth", js.undefined)
+    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Double): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
     
     @scala.inline
-    def deleteBrightness: Self = this.set("brightness", js.undefined)
+    def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: Double): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
     @scala.inline
-    def deleteContrast: Self = this.set("contrast", js.undefined)
+    def setLayout(value: Bottom): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setException(value: String): Self = this.set("exception", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteException: Self = this.set("exception", js.undefined)
+    def setNXferCount(value: Double): Self = StObject.set(x, "nXferCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: Bottom): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setNXferCountUndefined: Self = StObject.set(x, "nXferCount", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setPageSize(value: EnumDWTCapSupportedSizes | Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNXferCount(value: Double): Self = this.set("nXferCount", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteNXferCount: Self = this.set("nXferCount", js.undefined)
+    def setPixelFlavor(value: EnumDWTCapPixelFlavor | Double): Self = StObject.set(x, "pixelFlavor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: EnumDWTCapSupportedSizes | Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPixelFlavorUndefined: Self = StObject.set(x, "pixelFlavor", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setUnit(value: EnumDWTUnitType | Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelFlavor(value: EnumDWTCapPixelFlavor | Double): Self = this.set("pixelFlavor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePixelFlavor: Self = this.set("pixelFlavor", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: EnumDWTUnitType | Double): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

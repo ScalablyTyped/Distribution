@@ -8,16 +8,16 @@ import typings.hermesProfileTransformer.eventInterfacesMod.DurationEvent
 import typings.hermesProfileTransformer.hermesProfileMod.HermesCPUProfile
 import typings.hermesProfileTransformer.hermesProfileMod.HermesSample
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hermes-profile-transformer/dist/profiler/cpuProfilerModel", JSImport.Namespace)
-@js.native
-object cpuProfilerModelMod extends js.Object {
+object cpuProfilerModelMod {
   
+  @JSImport("hermes-profile-transformer/dist/profiler/cpuProfilerModel", "CpuProfilerModel")
   @js.native
-  class CpuProfilerModel protected () extends js.Object {
+  class CpuProfilerModel protected () extends StObject {
     def this(profile: CPUProfileChunk) = this()
     
     var _activeNodeArraysById: Map[Double, js.Array[Double]] = js.native
@@ -71,8 +71,7 @@ object cpuProfilerModelMod extends js.Object {
     def createStartEndEvents(): js.Array[DurationEvent] = js.native
   }
   /* static members */
-  @js.native
-  object CpuProfilerModel extends js.Object {
+  object CpuProfilerModel {
     
     /**
       * Converts the Hermes Sample into a single CpuProfileChunk object for consumption
@@ -82,6 +81,8 @@ object cpuProfilerModelMod extends js.Object {
       * @throws Profile must have at least one sample
       * @return {CPUProfileChunk}
       */
+    @JSImport("hermes-profile-transformer/dist/profiler/cpuProfilerModel", "CpuProfilerModel.collectProfileEvents")
+    @js.native
     def collectProfileEvents(profile: HermesCPUProfile): CPUProfileChunk = js.native
     
     /**
@@ -92,17 +93,21 @@ object cpuProfilerModelMod extends js.Object {
       * @param {<string, HermesStackFrame>} stackFrames
       * @return {CPUProfileChunker}
       */
+    @JSImport("hermes-profile-transformer/dist/profiler/cpuProfilerModel", "CpuProfilerModel.constructNodes")
+    @js.native
     def constructNodes(
       samples: js.Array[HermesSample],
       stackFrames: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: hermes-profile-transformer.hermes-profile-transformer/dist/types/HermesProfile.HermesStackFrame}
-      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.CpuProfilerModel with TopLevel[js.Any]
+      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.constructNodes with TopLevel[js.Any]
     ): CPUProfileChunker = js.native
     
     /**
       * Creates B/E-style trace events from a CpuProfile object created by `collectProfileEvents()`
       * @param {CPUProfileChunk} profile
       */
+    @JSImport("hermes-profile-transformer/dist/profiler/cpuProfilerModel", "CpuProfilerModel.createStartEndEvents")
+    @js.native
     def createStartEndEvents(profile: CPUProfileChunk): js.Array[DurationEvent] = js.native
   }
 }

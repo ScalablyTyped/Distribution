@@ -11,25 +11,22 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/conv1d", JSImport.Namespace)
-@js.native
-object conv1dMod extends js.Object {
+object conv1dMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/conv1d", "conv1d")
   @js.native
-  object conv1d extends js.Object {
-    
-    def apply[T /* <: Tensor2D | Tensor3D */](
-      x: T | TensorLike,
-      filter: Tensor3D | TensorLike,
-      stride: Double,
-      pad: valid_ | same_ | Double | ExplicitPadding,
-      dataFormat: js.UndefOr[NWC | NCW],
-      dilation: js.UndefOr[Double],
-      dimRoundingMode: js.UndefOr[floor | round | ceil]
-    ): T = js.native
-  }
+  def conv1d[T /* <: Tensor2D | Tensor3D */](
+    x: T | TensorLike,
+    filter: Tensor3D | TensorLike,
+    stride: Double,
+    pad: valid_ | same_ | Double | ExplicitPadding,
+    dataFormat: js.UndefOr[NWC | NCW],
+    dilation: js.UndefOr[Double],
+    dimRoundingMode: js.UndefOr[floor | round | ceil]
+  ): T = js.native
 }

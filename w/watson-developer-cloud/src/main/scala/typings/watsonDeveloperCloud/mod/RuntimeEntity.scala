@@ -1,6 +1,7 @@
 package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,51 +39,39 @@ object RuntimeEntity {
   }
   
   @scala.inline
-  implicit class RuntimeEntityOps[Self <: RuntimeEntity] (val x: Self) extends AnyVal {
+  implicit class RuntimeEntityMutableBuilder[Self <: RuntimeEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: String): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setGroups(value: js.Array[CaptureGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationVarargs(value: Double*): Self = this.set("location", js.Array(value :_*))
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def setLocation(value: js.Array[Double]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setGroupsVarargs(value: CaptureGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: CaptureGroup*): Self = this.set("groups", js.Array(value :_*))
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setGroups(value: js.Array[CaptureGroup]): Self = this.set("groups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: js.Object): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

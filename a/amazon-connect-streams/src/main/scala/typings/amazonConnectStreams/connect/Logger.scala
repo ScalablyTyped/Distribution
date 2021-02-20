@@ -1,5 +1,6 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Logs are written to the console log per normal and also kept in memory.
   */
 @js.native
-trait Logger extends js.Object {
+trait Logger extends StObject {
   
   /**
     * Adds a log entry with debug level.
@@ -58,33 +59,21 @@ object Logger {
   }
   
   @scala.inline
-  implicit class LoggerOps[Self <: Logger] (val x: Self) extends AnyVal {
+  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownload(value: () => Unit): Self = StObject.set(x, "download", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDebug(value: (String, /* repeated */ js.Any) => LogEntry): Self = this.set("debug", js.Any.fromFunction2(value))
+    def setInfo(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDownload(value: () => Unit): Self = this.set("download", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setError(value: (String, /* repeated */ js.Any) => LogEntry): Self = this.set("error", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInfo(value: (String, /* repeated */ js.Any) => LogEntry): Self = this.set("info", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWarn(value: (String, /* repeated */ js.Any) => LogEntry): Self = this.set("warn", js.Any.fromFunction2(value))
+    def setWarn(value: (String, /* repeated */ js.Any) => LogEntry): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
   }
 }

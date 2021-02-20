@@ -1,11 +1,12 @@
 package typings.sendcloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendOptions extends js.Object {
+trait SendOptions extends StObject {
   
   var api_key: js.UndefOr[String] = js.native
   
@@ -50,120 +51,108 @@ object SendOptions {
   }
   
   @scala.inline
-  implicit class SendOptionsOps[Self <: SendOptions] (val x: Self) extends AnyVal {
+  implicit class SendOptionsMutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApi_keyUndefined: Self = StObject.set(x, "api_key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApi_user(value: String): Self = StObject.set(x, "api_user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_key(value: String): Self = this.set("api_key", value.asInstanceOf[js.Any])
+    def setApi_userUndefined: Self = StObject.set(x, "api_user", js.undefined)
     
     @scala.inline
-    def deleteApi_key: Self = this.set("api_key", js.undefined)
+    def setBcc(value: String): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_user(value: String): Self = this.set("api_user", value.asInstanceOf[js.Any])
+    def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
     
     @scala.inline
-    def deleteApi_user: Self = this.set("api_user", js.undefined)
+    def setCc(value: String): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBcc(value: String): Self = this.set("bcc", value.asInstanceOf[js.Any])
+    def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
     
     @scala.inline
-    def deleteBcc: Self = this.set("bcc", js.undefined)
+    def setFiles(value: String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCc(value: String): Self = this.set("cc", value.asInstanceOf[js.Any])
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def deleteCc: Self = this.set("cc", js.undefined)
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: String): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setFromname(value: String): Self = StObject.set(x, "fromname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setFromnameUndefined: Self = StObject.set(x, "fromname", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setGzip_compress(value: String): Self = StObject.set(x, "gzip_compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromname(value: String): Self = this.set("fromname", value.asInstanceOf[js.Any])
+    def setGzip_compressUndefined: Self = StObject.set(x, "gzip_compress", js.undefined)
     
     @scala.inline
-    def deleteFromname: Self = this.set("fromname", js.undefined)
+    def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGzip_compress(value: String): Self = this.set("gzip_compress", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteGzip_compress: Self = this.set("gzip_compress", js.undefined)
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: String): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setLabel(value: Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setReplyto(value: String): Self = StObject.set(x, "replyto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Double): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setReplytoUndefined: Self = StObject.set(x, "replyto", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setResp_email_id(value: String): Self = StObject.set(x, "resp_email_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyto(value: String): Self = this.set("replyto", value.asInstanceOf[js.Any])
+    def setResp_email_idUndefined: Self = StObject.set(x, "resp_email_id", js.undefined)
     
     @scala.inline
-    def deleteReplyto: Self = this.set("replyto", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResp_email_id(value: String): Self = this.set("resp_email_id", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteResp_email_id: Self = this.set("resp_email_id", js.undefined)
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setUse_maillist(value: String): Self = StObject.set(x, "use_maillist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setUse_maillistUndefined: Self = StObject.set(x, "use_maillist", js.undefined)
     
     @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setX_smtpapi(value: String): Self = StObject.set(x, "x_smtpapi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse_maillist(value: String): Self = this.set("use_maillist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse_maillist: Self = this.set("use_maillist", js.undefined)
-    
-    @scala.inline
-    def setX_smtpapi(value: String): Self = this.set("x_smtpapi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX_smtpapi: Self = this.set("x_smtpapi", js.undefined)
+    def setX_smtpapiUndefined: Self = StObject.set(x, "x_smtpapi", js.undefined)
   }
 }

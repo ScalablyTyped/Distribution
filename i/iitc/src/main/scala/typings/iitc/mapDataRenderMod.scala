@@ -8,16 +8,16 @@ import typings.iitc.inteltypesMod.Intel.FieldDetails
 import typings.iitc.inteltypesMod.Intel.LinkDetails
 import typings.iitc.inteltypesMod.Intel.PortalDetails
 import typings.leaflet.mod.LatLngBounds_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("iitc/core/map_data_render", JSImport.Namespace)
-@js.native
-object mapDataRenderMod extends js.Object {
+object mapDataRenderMod {
   
+  @JSImport("iitc/core/map_data_render", "Render")
   @js.native
-  class Render () extends js.Object {
+  class Render () extends StObject {
     
     /** add the portal to the visible map layer */
     def addPortalToMapLayer(portal: Portal): Unit = js.native

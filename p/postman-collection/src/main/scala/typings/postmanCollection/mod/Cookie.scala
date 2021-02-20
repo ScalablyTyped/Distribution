@@ -2,6 +2,7 @@ package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Key
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,24 +38,32 @@ class Cookie () extends PropertyBase[CookieDefinition] {
   var value: js.UndefOr[String] = js.native
 }
 /* static members */
-@JSImport("postman-collection", "Cookie")
-@js.native
-object Cookie extends js.Object {
+object Cookie {
   
   /** Check whether an object is an instance of PostmanCookie. */
+  @JSImport("postman-collection", "Cookie.isCookie")
+  @js.native
   def isCookie(obj: js.Any): Boolean = js.native
   
   /** Cookie header parser */
+  @JSImport("postman-collection", "Cookie.parse")
+  @js.native
   def parse(str: String): CookieDefinition = js.native
   
   /**
     * Converts the Cookie to a single Set-Cookie header string.
     */
+  @JSImport("postman-collection", "Cookie.stringify")
+  @js.native
   def stringify(cookie: CookieDefinition): String = js.native
   
   /** Stringifies an Array or {@link PropertyList} of Cookies into a single string. */
+  @JSImport("postman-collection", "Cookie.unparse")
+  @js.native
   def unparse(cookies: js.Array[CookieDefinition]): String = js.native
   
   /** Unparses a single Cookie. */
+  @JSImport("postman-collection", "Cookie.unparseSingle")
+  @js.native
   def unparseSingle(cookie: CookieDefinition): String = js.native
 }

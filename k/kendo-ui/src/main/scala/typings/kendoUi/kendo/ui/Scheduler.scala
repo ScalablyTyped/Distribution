@@ -6,6 +6,7 @@ import typings.kendoUi.kendo.data.DataSource
 import typings.kendoUi.kendo.data.SchedulerDataSource
 import typings.std.Date
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.officeUiFabricReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsSize10 extends js.Object {
+trait IsSize10 extends StObject {
   
   var isSize10: Boolean = js.native
   
@@ -53,54 +54,42 @@ object IsSize10 {
   }
   
   @scala.inline
-  implicit class IsSize10Ops[Self <: IsSize10] (val x: Self) extends AnyVal {
+  implicit class IsSize10MutableBuilder[Self <: IsSize10] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsSize10(value: Boolean): Self = StObject.set(x, "isSize10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsSize100(value: Boolean): Self = StObject.set(x, "isSize100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSize120(value: Boolean): Self = StObject.set(x, "isSize120", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSize10(value: Boolean): Self = this.set("isSize10", value.asInstanceOf[js.Any])
+    def setIsSize16(value: Boolean): Self = StObject.set(x, "isSize16", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSize100(value: Boolean): Self = this.set("isSize100", value.asInstanceOf[js.Any])
+    def setIsSize24(value: Boolean): Self = StObject.set(x, "isSize24", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSize120(value: Boolean): Self = this.set("isSize120", value.asInstanceOf[js.Any])
+    def setIsSize28(value: Boolean): Self = StObject.set(x, "isSize28", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSize16(value: Boolean): Self = this.set("isSize16", value.asInstanceOf[js.Any])
+    def setIsSize32(value: Boolean): Self = StObject.set(x, "isSize32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSize24(value: Boolean): Self = this.set("isSize24", value.asInstanceOf[js.Any])
+    def setIsSize40(value: Boolean): Self = StObject.set(x, "isSize40", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSize28(value: Boolean): Self = this.set("isSize28", value.asInstanceOf[js.Any])
+    def setIsSize48(value: Boolean): Self = StObject.set(x, "isSize48", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSize32(value: Boolean): Self = this.set("isSize32", value.asInstanceOf[js.Any])
+    def setIsSize56(value: Boolean): Self = StObject.set(x, "isSize56", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSize40(value: Boolean): Self = this.set("isSize40", value.asInstanceOf[js.Any])
+    def setIsSize72(value: Boolean): Self = StObject.set(x, "isSize72", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSize48(value: Boolean): Self = this.set("isSize48", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSize56(value: Boolean): Self = this.set("isSize56", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSize72(value: Boolean): Self = this.set("isSize72", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSize8(value: Boolean): Self = this.set("isSize8", value.asInstanceOf[js.Any])
+    def setIsSize8(value: Boolean): Self = StObject.set(x, "isSize8", value.asInstanceOf[js.Any])
   }
 }

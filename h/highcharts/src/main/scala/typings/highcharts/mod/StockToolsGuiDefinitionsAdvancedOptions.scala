@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StockToolsGuiDefinitionsAdvancedOptions extends js.Object {
+trait StockToolsGuiDefinitionsAdvancedOptions extends StObject {
   
   var fibonacci: js.UndefOr[StockToolsGuiDefinitionsAdvancedFibonacciOptions] = js.native
   
@@ -28,45 +29,33 @@ object StockToolsGuiDefinitionsAdvancedOptions {
   }
   
   @scala.inline
-  implicit class StockToolsGuiDefinitionsAdvancedOptionsOps[Self <: StockToolsGuiDefinitionsAdvancedOptions] (val x: Self) extends AnyVal {
+  implicit class StockToolsGuiDefinitionsAdvancedOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsAdvancedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFibonacci(value: StockToolsGuiDefinitionsAdvancedFibonacciOptions): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFibonacci(value: StockToolsGuiDefinitionsAdvancedFibonacciOptions): Self = this.set("fibonacci", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteFibonacci: Self = this.set("fibonacci", js.undefined)
+    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    def setParallelChannel(value: StockToolsGuiDefinitionsAdvancedParallelChannelOptions): Self = StObject.set(x, "parallelChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setParallelChannelUndefined: Self = StObject.set(x, "parallelChannel", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setPitchfork(value: StockToolsGuiDefinitionsAdvancedPitchforkOptions): Self = StObject.set(x, "pitchfork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParallelChannel(value: StockToolsGuiDefinitionsAdvancedParallelChannelOptions): Self = this.set("parallelChannel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParallelChannel: Self = this.set("parallelChannel", js.undefined)
-    
-    @scala.inline
-    def setPitchfork(value: StockToolsGuiDefinitionsAdvancedPitchforkOptions): Self = this.set("pitchfork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePitchfork: Self = this.set("pitchfork", js.undefined)
+    def setPitchforkUndefined: Self = StObject.set(x, "pitchfork", js.undefined)
   }
 }

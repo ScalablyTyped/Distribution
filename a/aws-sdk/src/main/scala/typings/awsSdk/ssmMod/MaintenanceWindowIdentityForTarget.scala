@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenanceWindowIdentityForTarget extends js.Object {
+trait MaintenanceWindowIdentityForTarget extends StObject {
   
   /**
     * The name of the maintenance window.
@@ -26,30 +27,18 @@ object MaintenanceWindowIdentityForTarget {
   }
   
   @scala.inline
-  implicit class MaintenanceWindowIdentityForTargetOps[Self <: MaintenanceWindowIdentityForTarget] (val x: Self) extends AnyVal {
+  implicit class MaintenanceWindowIdentityForTargetMutableBuilder[Self <: MaintenanceWindowIdentityForTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: MaintenanceWindowName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: MaintenanceWindowName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setWindowId(value: MaintenanceWindowId): Self = this.set("WindowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowId: Self = this.set("WindowId", js.undefined)
+    def setWindowIdUndefined: Self = StObject.set(x, "WindowId", js.undefined)
   }
 }

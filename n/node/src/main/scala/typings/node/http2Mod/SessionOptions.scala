@@ -2,12 +2,13 @@ package typings.node.http2Mod
 
 import typings.node.streamMod.Duplex
 import typings.node.urlMod.URL_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionOptions extends js.Object {
+trait SessionOptions extends StObject {
   
   var createConnection: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ this.type, Duplex]] = js.native
   
@@ -38,78 +39,66 @@ object SessionOptions {
   }
   
   @scala.inline
-  implicit class SessionOptionsOps[Self <: SessionOptions] (val x: Self) extends AnyVal {
+  implicit class SessionOptionsMutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateConnection(value: (/* authority */ URL_, SessionOptions) => Duplex): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDeflateDynamicTableSize(value: Double): Self = StObject.set(x, "maxDeflateDynamicTableSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateConnection(value: (/* authority */ URL_, SessionOptions) => Duplex): Self = this.set("createConnection", js.Any.fromFunction2(value))
+    def setMaxDeflateDynamicTableSizeUndefined: Self = StObject.set(x, "maxDeflateDynamicTableSize", js.undefined)
     
     @scala.inline
-    def deleteCreateConnection: Self = this.set("createConnection", js.undefined)
+    def setMaxHeaderListPairs(value: Double): Self = StObject.set(x, "maxHeaderListPairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDeflateDynamicTableSize(value: Double): Self = this.set("maxDeflateDynamicTableSize", value.asInstanceOf[js.Any])
+    def setMaxHeaderListPairsUndefined: Self = StObject.set(x, "maxHeaderListPairs", js.undefined)
     
     @scala.inline
-    def deleteMaxDeflateDynamicTableSize: Self = this.set("maxDeflateDynamicTableSize", js.undefined)
+    def setMaxOutstandingPings(value: Double): Self = StObject.set(x, "maxOutstandingPings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeaderListPairs(value: Double): Self = this.set("maxHeaderListPairs", value.asInstanceOf[js.Any])
+    def setMaxOutstandingPingsUndefined: Self = StObject.set(x, "maxOutstandingPings", js.undefined)
     
     @scala.inline
-    def deleteMaxHeaderListPairs: Self = this.set("maxHeaderListPairs", js.undefined)
+    def setMaxSendHeaderBlockLength(value: Double): Self = StObject.set(x, "maxSendHeaderBlockLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxOutstandingPings(value: Double): Self = this.set("maxOutstandingPings", value.asInstanceOf[js.Any])
+    def setMaxSendHeaderBlockLengthUndefined: Self = StObject.set(x, "maxSendHeaderBlockLength", js.undefined)
     
     @scala.inline
-    def deleteMaxOutstandingPings: Self = this.set("maxOutstandingPings", js.undefined)
+    def setMaxSessionMemory(value: Double): Self = StObject.set(x, "maxSessionMemory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSendHeaderBlockLength(value: Double): Self = this.set("maxSendHeaderBlockLength", value.asInstanceOf[js.Any])
+    def setMaxSessionMemoryUndefined: Self = StObject.set(x, "maxSessionMemory", js.undefined)
     
     @scala.inline
-    def deleteMaxSendHeaderBlockLength: Self = this.set("maxSendHeaderBlockLength", js.undefined)
+    def setPaddingStrategy(value: Double): Self = StObject.set(x, "paddingStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSessionMemory(value: Double): Self = this.set("maxSessionMemory", value.asInstanceOf[js.Any])
+    def setPaddingStrategyUndefined: Self = StObject.set(x, "paddingStrategy", js.undefined)
     
     @scala.inline
-    def deleteMaxSessionMemory: Self = this.set("maxSessionMemory", js.undefined)
+    def setPeerMaxConcurrentStreams(value: Double): Self = StObject.set(x, "peerMaxConcurrentStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingStrategy(value: Double): Self = this.set("paddingStrategy", value.asInstanceOf[js.Any])
+    def setPeerMaxConcurrentStreamsUndefined: Self = StObject.set(x, "peerMaxConcurrentStreams", js.undefined)
     
     @scala.inline
-    def deletePaddingStrategy: Self = this.set("paddingStrategy", js.undefined)
+    def setSelectPadding(value: (/* frameLen */ Double, /* maxFrameLen */ Double) => Double): Self = StObject.set(x, "selectPadding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPeerMaxConcurrentStreams(value: Double): Self = this.set("peerMaxConcurrentStreams", value.asInstanceOf[js.Any])
+    def setSelectPaddingUndefined: Self = StObject.set(x, "selectPadding", js.undefined)
     
     @scala.inline
-    def deletePeerMaxConcurrentStreams: Self = this.set("peerMaxConcurrentStreams", js.undefined)
+    def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectPadding(value: (/* frameLen */ Double, /* maxFrameLen */ Double) => Double): Self = this.set("selectPadding", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSelectPadding: Self = this.set("selectPadding", js.undefined)
-    
-    @scala.inline
-    def setSettings(value: Settings): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
   }
 }

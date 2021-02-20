@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * suggested value.
   */
 @js.native
-trait SchemaNestingLevelSuggestionState extends js.Object {
+trait SchemaNestingLevelSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to bullet_alignment.
@@ -62,66 +63,54 @@ object SchemaNestingLevelSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaNestingLevelSuggestionStateOps[Self <: SchemaNestingLevelSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaNestingLevelSuggestionStateMutableBuilder[Self <: SchemaNestingLevelSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulletAlignmentSuggested(value: Boolean): Self = StObject.set(x, "bulletAlignmentSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulletAlignmentSuggestedUndefined: Self = StObject.set(x, "bulletAlignmentSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlyphFormatSuggested(value: Boolean): Self = StObject.set(x, "glyphFormatSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulletAlignmentSuggested(value: Boolean): Self = this.set("bulletAlignmentSuggested", value.asInstanceOf[js.Any])
+    def setGlyphFormatSuggestedUndefined: Self = StObject.set(x, "glyphFormatSuggested", js.undefined)
     
     @scala.inline
-    def deleteBulletAlignmentSuggested: Self = this.set("bulletAlignmentSuggested", js.undefined)
+    def setGlyphSymbolSuggested(value: Boolean): Self = StObject.set(x, "glyphSymbolSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphFormatSuggested(value: Boolean): Self = this.set("glyphFormatSuggested", value.asInstanceOf[js.Any])
+    def setGlyphSymbolSuggestedUndefined: Self = StObject.set(x, "glyphSymbolSuggested", js.undefined)
     
     @scala.inline
-    def deleteGlyphFormatSuggested: Self = this.set("glyphFormatSuggested", js.undefined)
+    def setGlyphTypeSuggested(value: Boolean): Self = StObject.set(x, "glyphTypeSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphSymbolSuggested(value: Boolean): Self = this.set("glyphSymbolSuggested", value.asInstanceOf[js.Any])
+    def setGlyphTypeSuggestedUndefined: Self = StObject.set(x, "glyphTypeSuggested", js.undefined)
     
     @scala.inline
-    def deleteGlyphSymbolSuggested: Self = this.set("glyphSymbolSuggested", js.undefined)
+    def setIndentFirstLineSuggested(value: Boolean): Self = StObject.set(x, "indentFirstLineSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphTypeSuggested(value: Boolean): Self = this.set("glyphTypeSuggested", value.asInstanceOf[js.Any])
+    def setIndentFirstLineSuggestedUndefined: Self = StObject.set(x, "indentFirstLineSuggested", js.undefined)
     
     @scala.inline
-    def deleteGlyphTypeSuggested: Self = this.set("glyphTypeSuggested", js.undefined)
+    def setIndentStartSuggested(value: Boolean): Self = StObject.set(x, "indentStartSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentFirstLineSuggested(value: Boolean): Self = this.set("indentFirstLineSuggested", value.asInstanceOf[js.Any])
+    def setIndentStartSuggestedUndefined: Self = StObject.set(x, "indentStartSuggested", js.undefined)
     
     @scala.inline
-    def deleteIndentFirstLineSuggested: Self = this.set("indentFirstLineSuggested", js.undefined)
+    def setStartNumberSuggested(value: Boolean): Self = StObject.set(x, "startNumberSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentStartSuggested(value: Boolean): Self = this.set("indentStartSuggested", value.asInstanceOf[js.Any])
+    def setStartNumberSuggestedUndefined: Self = StObject.set(x, "startNumberSuggested", js.undefined)
     
     @scala.inline
-    def deleteIndentStartSuggested: Self = this.set("indentStartSuggested", js.undefined)
+    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartNumberSuggested(value: Boolean): Self = this.set("startNumberSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartNumberSuggested: Self = this.set("startNumberSuggested", js.undefined)
-    
-    @scala.inline
-    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = this.set("textStyleSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyleSuggestionState: Self = this.set("textStyleSuggestionState", js.undefined)
+    def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
   }
 }

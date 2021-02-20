@@ -1,5 +1,6 @@
 package typings.angularAnimations.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object AnimationGroupMetadata {
   }
   
   @scala.inline
-  implicit class AnimationGroupMetadataOps[Self <: AnimationGroupMetadata] (val x: Self) extends AnyVal {
+  implicit class AnimationGroupMetadataMutableBuilder[Self <: AnimationGroupMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptionsNull: Self = StObject.set(x, "options", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSteps(value: js.Array[AnimationMetadata]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepsVarargs(value: AnimationMetadata*): Self = this.set("steps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSteps(value: js.Array[AnimationMetadata]): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: AnimationOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptionsNull: Self = this.set("options", null)
+    def setStepsVarargs(value: AnimationMetadata*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

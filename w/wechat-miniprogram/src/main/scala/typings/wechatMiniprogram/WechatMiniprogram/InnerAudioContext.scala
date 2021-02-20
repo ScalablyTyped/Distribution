@@ -1,5 +1,6 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +41,7 @@ innerAudioContext.onError((res) => {
 })
 ``` */
 @js.native
-trait InnerAudioContext extends js.Object {
+trait InnerAudioContext extends StObject {
   
   /** 是否自动开始播放，默认为 `false` */
   var autoplay: Boolean = js.native

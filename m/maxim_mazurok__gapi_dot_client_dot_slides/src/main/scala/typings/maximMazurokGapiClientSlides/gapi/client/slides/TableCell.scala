@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableCell extends js.Object {
+trait TableCell extends StObject {
   
   /** Column span of the cell. */
   var columnSpan: js.UndefOr[Double] = js.native
@@ -31,48 +32,36 @@ object TableCell {
   }
   
   @scala.inline
-  implicit class TableCellOps[Self <: TableCell] (val x: Self) extends AnyVal {
+  implicit class TableCellMutableBuilder[Self <: TableCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSpan(value: Double): Self = this.set("columnSpan", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteColumnSpan: Self = this.set("columnSpan", js.undefined)
+    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: TableCellLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setTableCellProperties(value: TableCellProperties): Self = StObject.set(x, "tableCellProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
+    def setTableCellPropertiesUndefined: Self = StObject.set(x, "tableCellProperties", js.undefined)
     
     @scala.inline
-    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    def setText(value: TextContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableCellProperties(value: TableCellProperties): Self = this.set("tableCellProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCellProperties: Self = this.set("tableCellProperties", js.undefined)
-    
-    @scala.inline
-    def setText(value: TextContent): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

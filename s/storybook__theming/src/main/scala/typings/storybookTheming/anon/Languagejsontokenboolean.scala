@@ -1,11 +1,12 @@
 package typings.storybookTheming.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Languagejsontokenboolean extends js.Object {
+trait Languagejsontokenboolean extends StObject {
   
   @JSName("language-json .token.boolean")
   var `language-json DottokenDotboolean`: Color = js.native
@@ -38,33 +39,21 @@ object Languagejsontokenboolean {
   }
   
   @scala.inline
-  implicit class LanguagejsontokenbooleanOps[Self <: Languagejsontokenboolean] (val x: Self) extends AnyVal {
+  implicit class LanguagejsontokenbooleanMutableBuilder[Self <: Languagejsontokenboolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setLanguage-json DottokenDotboolean`(value: Color): Self = StObject.set(x, "language-json .token.boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setLanguage-json DottokenDotnumber`(value: Color): Self = StObject.set(x, "language-json .token.number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setLanguage-json DottokenDotproperty`(value: Color): Self = StObject.set(x, "language-json .token.property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLanguage-json DottokenDotboolean`(value: Color): Self = this.set("language-json .token.boolean", value.asInstanceOf[js.Any])
+    def setNamespace(value: Opacity): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLanguage-json DottokenDotnumber`(value: Color): Self = this.set("language-json .token.number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setLanguage-json DottokenDotproperty`(value: Color): Self = this.set("language-json .token.property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamespace(value: Opacity): Self = this.set("namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: Atrule): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setToken(value: Atrule): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

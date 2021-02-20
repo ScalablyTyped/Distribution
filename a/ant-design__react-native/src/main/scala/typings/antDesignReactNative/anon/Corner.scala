@@ -1,11 +1,12 @@
 package typings.antDesignReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Corner extends js.Object {
+trait Corner extends StObject {
   
   var corner: Boolean = js.native
   
@@ -24,30 +25,18 @@ object Corner {
   }
   
   @scala.inline
-  implicit class CornerOps[Self <: Corner] (val x: Self) extends AnyVal {
+  implicit class CornerMutableBuilder[Self <: Corner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorner(value: Boolean): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverflowCount(value: Double): Self = StObject.set(x, "overflowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorner(value: Boolean): Self = this.set("corner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDot(value: Boolean): Self = this.set("dot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverflowCount(value: Double): Self = this.set("overflowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

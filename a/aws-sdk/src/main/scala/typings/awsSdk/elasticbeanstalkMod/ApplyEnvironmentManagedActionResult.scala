@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplyEnvironmentManagedActionResult extends js.Object {
+trait ApplyEnvironmentManagedActionResult extends StObject {
   
   /**
     * A description of the managed action.
@@ -36,42 +37,30 @@ object ApplyEnvironmentManagedActionResult {
   }
   
   @scala.inline
-  implicit class ApplyEnvironmentManagedActionResultOps[Self <: ApplyEnvironmentManagedActionResult] (val x: Self) extends AnyVal {
+  implicit class ApplyEnvironmentManagedActionResultMutableBuilder[Self <: ApplyEnvironmentManagedActionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionDescription(value: String): Self = StObject.set(x, "ActionDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionDescriptionUndefined: Self = StObject.set(x, "ActionDescription", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionId(value: String): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionDescription(value: String): Self = this.set("ActionDescription", value.asInstanceOf[js.Any])
+    def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
     
     @scala.inline
-    def deleteActionDescription: Self = this.set("ActionDescription", js.undefined)
+    def setActionType(value: ActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionId(value: String): Self = this.set("ActionId", value.asInstanceOf[js.Any])
+    def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
     
     @scala.inline
-    def deleteActionId: Self = this.set("ActionId", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionType(value: ActionType): Self = this.set("ActionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionType: Self = this.set("ActionType", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

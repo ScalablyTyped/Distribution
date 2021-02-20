@@ -47,12 +47,13 @@ import typings.firebase.firebaseStrings.view_item_list
 import typings.firebase.firebaseStrings.view_promotion
 import typings.firebase.firebaseStrings.view_search_results
 import typings.firebase.mod.firebase.app.App
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Analytics extends js.Object {
+trait Analytics extends StObject {
   
   /**
     * The {@link firebase.app.App app} associated with the `Analytics` service

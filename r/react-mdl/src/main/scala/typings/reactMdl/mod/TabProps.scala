@@ -1,15 +1,14 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TabProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any]
+  extends HTMLProps[js.Any]
      with CustomRenderedComponent {
   
   var active: js.UndefOr[Boolean] = js.native
@@ -29,42 +28,30 @@ object TabProps {
   }
   
   @scala.inline
-  implicit class TabPropsOps[Self <: TabProps] (val x: Self) extends AnyVal {
+  implicit class TabPropsMutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setOnTabClick(value: /* tabId */ Double => _): Self = StObject.set(x, "onTabClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCssPrefix(value: String): Self = this.set("cssPrefix", value.asInstanceOf[js.Any])
+    def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)
     
     @scala.inline
-    def deleteCssPrefix: Self = this.set("cssPrefix", js.undefined)
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTabClick(value: /* tabId */ Double => _): Self = this.set("onTabClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnTabClick: Self = this.set("onTabClick", js.undefined)
-    
-    @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabId: Self = this.set("tabId", js.undefined)
+    def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
   }
 }

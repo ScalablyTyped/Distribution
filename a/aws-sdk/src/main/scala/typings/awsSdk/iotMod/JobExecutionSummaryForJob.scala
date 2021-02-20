@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobExecutionSummaryForJob extends js.Object {
+trait JobExecutionSummaryForJob extends StObject {
   
   /**
     * Contains a subset of information about a job execution.
@@ -26,30 +27,18 @@ object JobExecutionSummaryForJob {
   }
   
   @scala.inline
-  implicit class JobExecutionSummaryForJobOps[Self <: JobExecutionSummaryForJob] (val x: Self) extends AnyVal {
+  implicit class JobExecutionSummaryForJobMutableBuilder[Self <: JobExecutionSummaryForJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobExecutionSummary(value: JobExecutionSummary): Self = StObject.set(x, "jobExecutionSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobExecutionSummaryUndefined: Self = StObject.set(x, "jobExecutionSummary", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobExecutionSummary(value: JobExecutionSummary): Self = this.set("jobExecutionSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobExecutionSummary: Self = this.set("jobExecutionSummary", js.undefined)
-    
-    @scala.inline
-    def setThingArn(value: ThingArn): Self = this.set("thingArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingArn: Self = this.set("thingArn", js.undefined)
+    def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
   }
 }

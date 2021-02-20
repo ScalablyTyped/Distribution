@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSMBFileShareInput extends js.Object {
+trait CreateSMBFileShareInput extends StObject {
   
   /**
     * The files and folders on this share will only be visible to users with read access.
@@ -131,156 +132,144 @@ object CreateSMBFileShareInput {
   }
   
   @scala.inline
-  implicit class CreateSMBFileShareInputOps[Self <: CreateSMBFileShareInput] (val x: Self) extends AnyVal {
+  implicit class CreateSMBFileShareInputMutableBuilder[Self <: CreateSMBFileShareInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessBasedEnumeration(value: Boolean): Self = StObject.set(x, "AccessBasedEnumeration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessBasedEnumerationUndefined: Self = StObject.set(x, "AccessBasedEnumeration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdminUserList(value: FileShareUserList): Self = StObject.set(x, "AdminUserList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setAdminUserListUndefined: Self = StObject.set(x, "AdminUserList", js.undefined)
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setAdminUserListVarargs(value: FileShareUser*): Self = StObject.set(x, "AdminUserList", js.Array(value :_*))
     
     @scala.inline
-    def setLocationARN(value: LocationARN): Self = this.set("LocationARN", value.asInstanceOf[js.Any])
+    def setAuditDestinationARN(value: AuditDestinationARN): Self = StObject.set(x, "AuditDestinationARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setAuditDestinationARNUndefined: Self = StObject.set(x, "AuditDestinationARN", js.undefined)
     
     @scala.inline
-    def setAccessBasedEnumeration(value: Boolean): Self = this.set("AccessBasedEnumeration", value.asInstanceOf[js.Any])
+    def setAuthentication(value: Authentication): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessBasedEnumeration: Self = this.set("AccessBasedEnumeration", js.undefined)
+    def setAuthenticationUndefined: Self = StObject.set(x, "Authentication", js.undefined)
     
     @scala.inline
-    def setAdminUserListVarargs(value: FileShareUser*): Self = this.set("AdminUserList", js.Array(value :_*))
+    def setCacheAttributes(value: CacheAttributes): Self = StObject.set(x, "CacheAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminUserList(value: FileShareUserList): Self = this.set("AdminUserList", value.asInstanceOf[js.Any])
+    def setCacheAttributesUndefined: Self = StObject.set(x, "CacheAttributes", js.undefined)
     
     @scala.inline
-    def deleteAdminUserList: Self = this.set("AdminUserList", js.undefined)
+    def setCaseSensitivity(value: CaseSensitivity): Self = StObject.set(x, "CaseSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditDestinationARN(value: AuditDestinationARN): Self = this.set("AuditDestinationARN", value.asInstanceOf[js.Any])
+    def setCaseSensitivityUndefined: Self = StObject.set(x, "CaseSensitivity", js.undefined)
     
     @scala.inline
-    def deleteAuditDestinationARN: Self = this.set("AuditDestinationARN", js.undefined)
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthentication(value: Authentication): Self = this.set("Authentication", value.asInstanceOf[js.Any])
+    def setDefaultStorageClass(value: StorageClass): Self = StObject.set(x, "DefaultStorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthentication: Self = this.set("Authentication", js.undefined)
+    def setDefaultStorageClassUndefined: Self = StObject.set(x, "DefaultStorageClass", js.undefined)
     
     @scala.inline
-    def setCacheAttributes(value: CacheAttributes): Self = this.set("CacheAttributes", value.asInstanceOf[js.Any])
+    def setFileShareName(value: FileShareName): Self = StObject.set(x, "FileShareName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheAttributes: Self = this.set("CacheAttributes", js.undefined)
+    def setFileShareNameUndefined: Self = StObject.set(x, "FileShareName", js.undefined)
     
     @scala.inline
-    def setCaseSensitivity(value: CaseSensitivity): Self = this.set("CaseSensitivity", value.asInstanceOf[js.Any])
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaseSensitivity: Self = this.set("CaseSensitivity", js.undefined)
+    def setGuessMIMETypeEnabled(value: Boolean): Self = StObject.set(x, "GuessMIMETypeEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultStorageClass(value: StorageClass): Self = this.set("DefaultStorageClass", value.asInstanceOf[js.Any])
+    def setGuessMIMETypeEnabledUndefined: Self = StObject.set(x, "GuessMIMETypeEnabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultStorageClass: Self = this.set("DefaultStorageClass", js.undefined)
+    def setInvalidUserList(value: FileShareUserList): Self = StObject.set(x, "InvalidUserList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileShareName(value: FileShareName): Self = this.set("FileShareName", value.asInstanceOf[js.Any])
+    def setInvalidUserListUndefined: Self = StObject.set(x, "InvalidUserList", js.undefined)
     
     @scala.inline
-    def deleteFileShareName: Self = this.set("FileShareName", js.undefined)
+    def setInvalidUserListVarargs(value: FileShareUser*): Self = StObject.set(x, "InvalidUserList", js.Array(value :_*))
     
     @scala.inline
-    def setGuessMIMETypeEnabled(value: Boolean): Self = this.set("GuessMIMETypeEnabled", value.asInstanceOf[js.Any])
+    def setKMSEncrypted(value: Boolean): Self = StObject.set(x, "KMSEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGuessMIMETypeEnabled: Self = this.set("GuessMIMETypeEnabled", js.undefined)
+    def setKMSEncryptedUndefined: Self = StObject.set(x, "KMSEncrypted", js.undefined)
     
     @scala.inline
-    def setInvalidUserListVarargs(value: FileShareUser*): Self = this.set("InvalidUserList", js.Array(value :_*))
+    def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidUserList(value: FileShareUserList): Self = this.set("InvalidUserList", value.asInstanceOf[js.Any])
+    def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
     
     @scala.inline
-    def deleteInvalidUserList: Self = this.set("InvalidUserList", js.undefined)
+    def setLocationARN(value: LocationARN): Self = StObject.set(x, "LocationARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSEncrypted(value: Boolean): Self = this.set("KMSEncrypted", value.asInstanceOf[js.Any])
+    def setNotificationPolicy(value: NotificationPolicy): Self = StObject.set(x, "NotificationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKMSEncrypted: Self = this.set("KMSEncrypted", js.undefined)
+    def setNotificationPolicyUndefined: Self = StObject.set(x, "NotificationPolicy", js.undefined)
     
     @scala.inline
-    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    def setObjectACL(value: ObjectACL): Self = StObject.set(x, "ObjectACL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    def setObjectACLUndefined: Self = StObject.set(x, "ObjectACL", js.undefined)
     
     @scala.inline
-    def setNotificationPolicy(value: NotificationPolicy): Self = this.set("NotificationPolicy", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationPolicy: Self = this.set("NotificationPolicy", js.undefined)
+    def setReadOnlyUndefined: Self = StObject.set(x, "ReadOnly", js.undefined)
     
     @scala.inline
-    def setObjectACL(value: ObjectACL): Self = this.set("ObjectACL", value.asInstanceOf[js.Any])
+    def setRequesterPays(value: Boolean): Self = StObject.set(x, "RequesterPays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObjectACL: Self = this.set("ObjectACL", js.undefined)
+    def setRequesterPaysUndefined: Self = StObject.set(x, "RequesterPays", js.undefined)
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("ReadOnly", js.undefined)
+    def setSMBACLEnabled(value: Boolean): Self = StObject.set(x, "SMBACLEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequesterPays(value: Boolean): Self = this.set("RequesterPays", value.asInstanceOf[js.Any])
+    def setSMBACLEnabledUndefined: Self = StObject.set(x, "SMBACLEnabled", js.undefined)
     
     @scala.inline
-    def deleteRequesterPays: Self = this.set("RequesterPays", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMBACLEnabled(value: Boolean): Self = this.set("SMBACLEnabled", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSMBACLEnabled: Self = this.set("SMBACLEnabled", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setValidUserList(value: FileShareUserList): Self = StObject.set(x, "ValidUserList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setValidUserListUndefined: Self = StObject.set(x, "ValidUserList", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setValidUserListVarargs(value: FileShareUser*): Self = this.set("ValidUserList", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidUserList(value: FileShareUserList): Self = this.set("ValidUserList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidUserList: Self = this.set("ValidUserList", js.undefined)
+    def setValidUserListVarargs(value: FileShareUser*): Self = StObject.set(x, "ValidUserList", js.Array(value :_*))
   }
 }

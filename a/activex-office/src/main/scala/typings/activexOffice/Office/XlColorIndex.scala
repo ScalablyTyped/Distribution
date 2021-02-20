@@ -2,6 +2,7 @@ package typings.activexOffice.Office
 
 import typings.activexOffice.activexOfficeNumbers.`-4105`
 import typings.activexOffice.activexOfficeNumbers.`-4142`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`-4105`
   - typings.activexOffice.activexOfficeNumbers.`-4142`
 */
-trait XlColorIndex extends js.Object
+trait XlColorIndex extends StObject
 object XlColorIndex {
   
   @scala.inline

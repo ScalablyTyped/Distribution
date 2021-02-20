@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v1Mod
 
 import typings.actionsOnGoogle.actionsOnGoogleStrings.google
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogflowV1BaseGoogleMessage[TType /* <: String */] extends js.Object {
+trait DialogflowV1BaseGoogleMessage[TType /* <: String */] extends StObject {
   
   var platform: google = js.native
   
@@ -21,27 +22,15 @@ object DialogflowV1BaseGoogleMessage {
   }
   
   @scala.inline
-  implicit class DialogflowV1BaseGoogleMessageOps[Self <: DialogflowV1BaseGoogleMessage[_], TType /* <: String */] (val x: Self with DialogflowV1BaseGoogleMessage[TType]) extends AnyVal {
+  implicit class DialogflowV1BaseGoogleMessageMutableBuilder[Self <: DialogflowV1BaseGoogleMessage[_], TType /* <: String */] (val x: Self with DialogflowV1BaseGoogleMessage[TType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlatform(value: google): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlatform(value: google): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: TType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

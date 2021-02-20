@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint extends js.Object {
+trait ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint extends StObject {
   
   @JSName("org")
   var org_ : String = js.native
@@ -27,27 +28,15 @@ object ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint {
   }
   
   @scala.inline
-  implicit class ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpointOps[Self <: ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpointMutableBuilder[Self <: ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrg_(value: String): Self = this.set("org", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepository_id(value: Double): Self = this.set("repository_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunner_group_id(value: Double): Self = this.set("runner_group_id", value.asInstanceOf[js.Any])
+    def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.calidation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimpleValidatorConfig[T /* <: js.Object */] extends js.Object {
+trait SimpleValidatorConfig[T /* <: js.Object */] extends StObject {
   
   var message: String = js.native
   
@@ -20,30 +21,18 @@ object SimpleValidatorConfig {
   }
   
   @scala.inline
-  implicit class SimpleValidatorConfigOps[Self <: SimpleValidatorConfig[_], T /* <: js.Object */] (val x: Self with SimpleValidatorConfig[T]) extends AnyVal {
+  implicit class SimpleValidatorConfigMutableBuilder[Self <: SimpleValidatorConfig[_], T /* <: js.Object */] (val x: Self with SimpleValidatorConfig[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValidateIf(value: (js.Function1[/* context */ ValidatorContext[T], Boolean]) | Boolean): Self = StObject.set(x, "validateIf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValidateIfFunction1(value: /* context */ ValidatorContext[T] => Boolean): Self = StObject.set(x, "validateIf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidateIfFunction1(value: /* context */ ValidatorContext[T] => Boolean): Self = this.set("validateIf", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidateIf(value: (js.Function1[/* context */ ValidatorContext[T], Boolean]) | Boolean): Self = this.set("validateIf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateIf: Self = this.set("validateIf", js.undefined)
+    def setValidateIfUndefined: Self = StObject.set(x, "validateIf", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,15 +20,18 @@ class ConstructorDeclarationSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.ConstructorDeclarationSyntax")
-@js.native
-object ConstructorDeclarationSyntax extends js.Object {
+object ConstructorDeclarationSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.ConstructorDeclarationSyntax.create")
+  @js.native
   def create(
     constructorKeyword: ISyntaxToken,
     callSignature: typings.typescriptServices.TypeScript.CallSignatureSyntax
   ): typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.ConstructorDeclarationSyntax.create1")
+  @js.native
   def create1(): typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax = js.native
 }

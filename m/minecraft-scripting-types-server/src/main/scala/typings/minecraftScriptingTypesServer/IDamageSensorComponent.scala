@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.MinecraftTrigger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines an array of damages and how the entity reacts to them - including whether the entity ignores that damage or not. Currently Minecraft triggers can't be properly serialized so any existing triggers will be completely replaced when applyComponentChanges().
   */
 @js.native
-trait IDamageSensorComponent extends js.Object {
+trait IDamageSensorComponent extends StObject {
   
   /**
     * Type of damage that triggers this set of events
@@ -36,30 +37,18 @@ object IDamageSensorComponent {
   }
   
   @scala.inline
-  implicit class IDamageSensorComponentOps[Self <: IDamageSensorComponent] (val x: Self) extends AnyVal {
+  implicit class IDamageSensorComponentMutableBuilder[Self <: IDamageSensorComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeals_damage(value: Boolean): Self = StObject.set(x, "deals_damage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOn_damage(value: js.Array[MinecraftTrigger]): Self = StObject.set(x, "on_damage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCause(value: String): Self = this.set("cause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeals_damage(value: Boolean): Self = this.set("deals_damage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOn_damageVarargs(value: MinecraftTrigger*): Self = this.set("on_damage", js.Array(value :_*))
-    
-    @scala.inline
-    def setOn_damage(value: js.Array[MinecraftTrigger]): Self = this.set("on_damage", value.asInstanceOf[js.Any])
+    def setOn_damageVarargs(value: MinecraftTrigger*): Self = StObject.set(x, "on_damage", js.Array(value :_*))
   }
 }

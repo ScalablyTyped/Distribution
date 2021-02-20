@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStackSummaryResult extends js.Object {
+trait DescribeStackSummaryResult extends StObject {
   
   /**
     * A StackSummary object that contains the results.
@@ -21,24 +22,12 @@ object DescribeStackSummaryResult {
   }
   
   @scala.inline
-  implicit class DescribeStackSummaryResultOps[Self <: DescribeStackSummaryResult] (val x: Self) extends AnyVal {
+  implicit class DescribeStackSummaryResultMutableBuilder[Self <: DescribeStackSummaryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStackSummary(value: StackSummary): Self = StObject.set(x, "StackSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStackSummary(value: StackSummary): Self = this.set("StackSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackSummary: Self = this.set("StackSummary", js.undefined)
+    def setStackSummaryUndefined: Self = StObject.set(x, "StackSummary", js.undefined)
   }
 }

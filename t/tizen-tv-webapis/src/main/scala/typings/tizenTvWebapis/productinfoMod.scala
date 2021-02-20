@@ -1,23 +1,22 @@
 package typings.tizenTvWebapis
 
-import org.scalablytyped.runtime.TopLevel
 import typings.tizenTvWebapis.anon.CONFIGKEYDATASERVICE
 import typings.tizenTvWebapis.anon.NOGLASS3DNOTSUPPORTED
 import typings.tizenTvWebapis.anon.SITYPEDEVELOPINGSERVER
 import typings.tizenTvWebapis.webapisMod.ErrorCallback
 import typings.tizenTvWebapis.webapisMod.SuccessCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tizen-tv-webapis/productinfo", JSImport.Namespace)
-@js.native
-object productinfoMod extends js.Object {
+object productinfoMod {
   
   @js.native
-  sealed trait ProductInfoConfigKey extends js.Object
+  sealed trait ProductInfoConfigKey extends StObject
+  @JSImport("tizen-tv-webapis/productinfo", "ProductInfoConfigKey")
   @js.native
-  object ProductInfoConfigKey extends js.Object {
+  object ProductInfoConfigKey extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ProductInfoConfigKey with Double] = js.native
@@ -28,8 +27,7 @@ object productinfoMod extends js.Object {
       */
     @js.native
     sealed trait CONFIG_KEY_DATA_SERVICE extends ProductInfoConfigKey
-    /* 0 */ @js.native
-    object CONFIG_KEY_DATA_SERVICE extends TopLevel[CONFIG_KEY_DATA_SERVICE with Double]
+    /* 0 */ val CONFIG_KEY_DATA_SERVICE: typings.tizenTvWebapis.productinfoMod.ProductInfoConfigKey.CONFIG_KEY_DATA_SERVICE with Double = js.native
     
     /**
       * Service country, readonly
@@ -37,12 +35,73 @@ object productinfoMod extends js.Object {
       */
     @js.native
     sealed trait CONFIG_KEY_SERVICE_COUNTRY extends ProductInfoConfigKey
-    /* 1 */ @js.native
-    object CONFIG_KEY_SERVICE_COUNTRY extends TopLevel[CONFIG_KEY_SERVICE_COUNTRY with Double]
+    /* 1 */ val CONFIG_KEY_SERVICE_COUNTRY: typings.tizenTvWebapis.productinfoMod.ProductInfoConfigKey.CONFIG_KEY_SERVICE_COUNTRY with Double = js.native
   }
   
   @js.native
-  trait ProductInfoManager extends js.Object {
+  sealed trait ProductInfoNoGlass3dSupport extends StObject
+  @JSImport("tizen-tv-webapis/productinfo", "ProductInfoNoGlass3dSupport")
+  @js.native
+  object ProductInfoNoGlass3dSupport extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[ProductInfoNoGlass3dSupport with Double] = js.native
+    
+    /**
+      * Glasses-free 3D is not supported
+      * @since 2.3
+      */
+    @js.native
+    sealed trait NO_GLASS_3D_NOT_SUPPORTED extends ProductInfoNoGlass3dSupport
+    /* 0 */ val NO_GLASS_3D_NOT_SUPPORTED: typings.tizenTvWebapis.productinfoMod.ProductInfoNoGlass3dSupport.NO_GLASS_3D_NOT_SUPPORTED with Double = js.native
+    
+    /**
+      * @descEng Glasses-free 3D is supported
+      * @since 2.3
+      */
+    @js.native
+    sealed trait NO_GLASS_3D_SUPPORTED extends ProductInfoNoGlass3dSupport
+    /* 1 */ val NO_GLASS_3D_SUPPORTED: typings.tizenTvWebapis.productinfoMod.ProductInfoNoGlass3dSupport.NO_GLASS_3D_SUPPORTED with Double = js.native
+  }
+  
+  @js.native
+  sealed trait ProductInfoSiServerType extends StObject
+  @JSImport("tizen-tv-webapis/productinfo", "ProductInfoSiServerType")
+  @js.native
+  object ProductInfoSiServerType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[ProductInfoSiServerType with Double] = js.native
+    
+    /**
+      * Developing server
+      * @since 2.3
+      */
+    @js.native
+    sealed trait SI_TYPE_DEVELOPING_SERVER extends ProductInfoSiServerType
+    /* 2 */ val SI_TYPE_DEVELOPING_SERVER: typings.tizenTvWebapis.productinfoMod.ProductInfoSiServerType.SI_TYPE_DEVELOPING_SERVER with Double = js.native
+    
+    /**
+      * Development server
+      * @since 2.3
+      */
+    @js.native
+    sealed trait SI_TYPE_DEVELOPMENT_SERVER extends ProductInfoSiServerType
+    /* 1 */ val SI_TYPE_DEVELOPMENT_SERVER: typings.tizenTvWebapis.productinfoMod.ProductInfoSiServerType.SI_TYPE_DEVELOPMENT_SERVER with Double = js.native
+    
+    /**
+      * Operating server
+      * @since 2.3
+      */
+    @js.native
+    sealed trait SI_TYPE_OPERATIING_SERVER extends ProductInfoSiServerType
+    /* 0 */ val SI_TYPE_OPERATIING_SERVER: typings.tizenTvWebapis.productinfoMod.ProductInfoSiServerType.SI_TYPE_OPERATIING_SERVER with Double = js.native
+  }
+  
+  type ProductInfoConfigChangeCallback = js.Function1[/* key */ ProductInfoConfigKey, Unit]
+  
+  @js.native
+  trait ProductInfoManager extends StObject {
     
     var ProductInfoConfigKey: CONFIGKEYDATASERVICE = js.native
     
@@ -302,69 +361,4 @@ object productinfoMod extends js.Object {
     def setSystemConfig(key: ProductInfoConfigKey, value: String, onsuccess: SuccessCallback): Unit = js.native
     def setSystemConfig(key: ProductInfoConfigKey, value: String, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
   }
-  
-  @js.native
-  sealed trait ProductInfoNoGlass3dSupport extends js.Object
-  @js.native
-  object ProductInfoNoGlass3dSupport extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ProductInfoNoGlass3dSupport with Double] = js.native
-    
-    /**
-      * Glasses-free 3D is not supported
-      * @since 2.3
-      */
-    @js.native
-    sealed trait NO_GLASS_3D_NOT_SUPPORTED extends ProductInfoNoGlass3dSupport
-    /* 0 */ @js.native
-    object NO_GLASS_3D_NOT_SUPPORTED extends TopLevel[NO_GLASS_3D_NOT_SUPPORTED with Double]
-    
-    /**
-      * @descEng Glasses-free 3D is supported
-      * @since 2.3
-      */
-    @js.native
-    sealed trait NO_GLASS_3D_SUPPORTED extends ProductInfoNoGlass3dSupport
-    /* 1 */ @js.native
-    object NO_GLASS_3D_SUPPORTED extends TopLevel[NO_GLASS_3D_SUPPORTED with Double]
-  }
-  
-  @js.native
-  sealed trait ProductInfoSiServerType extends js.Object
-  @js.native
-  object ProductInfoSiServerType extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ProductInfoSiServerType with Double] = js.native
-    
-    /**
-      * Developing server
-      * @since 2.3
-      */
-    @js.native
-    sealed trait SI_TYPE_DEVELOPING_SERVER extends ProductInfoSiServerType
-    /* 2 */ @js.native
-    object SI_TYPE_DEVELOPING_SERVER extends TopLevel[SI_TYPE_DEVELOPING_SERVER with Double]
-    
-    /**
-      * Development server
-      * @since 2.3
-      */
-    @js.native
-    sealed trait SI_TYPE_DEVELOPMENT_SERVER extends ProductInfoSiServerType
-    /* 1 */ @js.native
-    object SI_TYPE_DEVELOPMENT_SERVER extends TopLevel[SI_TYPE_DEVELOPMENT_SERVER with Double]
-    
-    /**
-      * Operating server
-      * @since 2.3
-      */
-    @js.native
-    sealed trait SI_TYPE_OPERATIING_SERVER extends ProductInfoSiServerType
-    /* 0 */ @js.native
-    object SI_TYPE_OPERATIING_SERVER extends TopLevel[SI_TYPE_OPERATIING_SERVER with Double]
-  }
-  
-  type ProductInfoConfigChangeCallback = js.Function1[/* key */ ProductInfoConfigKey, Unit]
 }

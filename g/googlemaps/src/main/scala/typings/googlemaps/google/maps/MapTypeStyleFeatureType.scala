@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlemaps.googlemapsStrings.transitDotstationDotrail
   - typings.googlemaps.googlemapsStrings.water
 */
-trait MapTypeStyleFeatureType extends js.Object
+trait MapTypeStyleFeatureType extends StObject
 object MapTypeStyleFeatureType {
   
   @scala.inline

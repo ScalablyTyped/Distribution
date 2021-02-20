@@ -1,5 +1,6 @@
 package typings.angularCore.r3SymbolsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @publicApi
   */
 @js.native
-trait ChangeDetectorRef extends js.Object {
+trait ChangeDetectorRef extends StObject {
   
   /**
     * Checks the change detector and its children, and throws if any changes are detected.
@@ -123,33 +124,21 @@ object ChangeDetectorRef {
   }
   
   @scala.inline
-  implicit class ChangeDetectorRefOps[Self <: ChangeDetectorRef] (val x: Self) extends AnyVal {
+  implicit class ChangeDetectorRefMutableBuilder[Self <: ChangeDetectorRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckNoChanges(value: () => Unit): Self = StObject.set(x, "checkNoChanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectChanges(value: () => Unit): Self = StObject.set(x, "detectChanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckNoChanges(value: () => Unit): Self = this.set("checkNoChanges", js.Any.fromFunction0(value))
+    def setMarkForCheck(value: () => Unit): Self = StObject.set(x, "markForCheck", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDetach(value: () => Unit): Self = this.set("detach", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDetectChanges(value: () => Unit): Self = this.set("detectChanges", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMarkForCheck(value: () => Unit): Self = this.set("markForCheck", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReattach(value: () => Unit): Self = this.set("reattach", js.Any.fromFunction0(value))
+    def setReattach(value: () => Unit): Self = StObject.set(x, "reattach", js.Any.fromFunction0(value))
   }
 }

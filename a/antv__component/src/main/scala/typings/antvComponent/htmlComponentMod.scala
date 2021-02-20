@@ -2,13 +2,16 @@ package typings.antvComponent
 
 import typings.antvComponent.typesMod.ComponentCfg
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/abstract/html-component", JSImport.Namespace)
-@js.native
-object htmlComponentMod extends js.Object {
+object htmlComponentMod {
+  
+  @JSImport("@antv/component/lib/abstract/html-component", JSImport.Default)
+  @js.native
+  abstract class default[T /* <: ComponentCfg */] () extends HtmlComponent[T]
   
   @js.native
   trait HtmlComponent[T /* <: ComponentCfg */]
@@ -65,7 +68,4 @@ object htmlComponentMod extends js.Object {
     
     /* protected */ def updateInner(cfg: js.Any): Unit = js.native
   }
-  
-  @js.native
-  abstract class default[T /* <: ComponentCfg */] () extends HtmlComponent[T]
 }

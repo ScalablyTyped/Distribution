@@ -2,12 +2,13 @@ package typings.activexWord.Word
 
 import typings.activexOffice.Office.MsoDiagramType
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Diagram extends js.Object {
+trait Diagram extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -54,51 +55,39 @@ object Diagram {
   }
   
   @scala.inline
-  implicit class DiagramOps[Self <: Diagram] (val x: Self) extends AnyVal {
+  implicit class DiagramMutableBuilder[Self <: Diagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFormat(value: MsoTriState): Self = StObject.set(x, "AutoFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoLayout(value: MsoTriState): Self = StObject.set(x, "AutoLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setConvert(value: MsoDiagramType => Unit): Self = StObject.set(x, "Convert", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoFormat(value: MsoTriState): Self = this.set("AutoFormat", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoLayout(value: MsoTriState): Self = this.set("AutoLayout", value.asInstanceOf[js.Any])
+    def setFitText(value: () => Unit): Self = StObject.set(x, "FitText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConvert(value: MsoDiagramType => Unit): Self = this.set("Convert", js.Any.fromFunction1(value))
+    def setNodes(value: DiagramNodes): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitText(value: () => Unit): Self = this.set("FitText", js.Any.fromFunction0(value))
+    def setReverse(value: MsoTriState): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: DiagramNodes): Self = this.set("Nodes", value.asInstanceOf[js.Any])
+    def setType(value: MsoDiagramType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReverse(value: MsoTriState): Self = this.set("Reverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MsoDiagramType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotDiagram_typekey(value: Diagram): Self = this.set("Word.Diagram_typekey", value.asInstanceOf[js.Any])
+    def setWordDotDiagram_typekey(value: Diagram): Self = StObject.set(x, "Word.Diagram_typekey", value.asInstanceOf[js.Any])
   }
 }

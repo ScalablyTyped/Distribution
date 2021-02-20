@@ -1,5 +1,6 @@
 package typings.tuyaPanelKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,48 +27,36 @@ object DialogCheckbox {
   }
   
   @scala.inline
-  implicit class DialogCheckboxOps[Self <: DialogCheckbox] (val x: Self) extends AnyVal {
+  implicit class DialogCheckboxMutableBuilder[Self <: DialogCheckbox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHideOnUnselect(value: Boolean): Self = StObject.set(x, "hideOnUnselect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideOnUnselectUndefined: Self = StObject.set(x, "hideOnUnselect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcon(value: String): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("Icon", value.asInstanceOf[js.Any])
+    def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("Icon", js.undefined)
+    def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
     
     @scala.inline
-    def setHideOnUnselect(value: Boolean): Self = this.set("hideOnUnselect", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
     
     @scala.inline
-    def deleteHideOnUnselect: Self = this.set("hideOnUnselect", js.undefined)
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconSize(value: Double): Self = this.set("iconSize", value.asInstanceOf[js.Any])
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def deleteIconSize: Self = this.set("iconSize", js.undefined)
+    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String | Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

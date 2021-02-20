@@ -1,6 +1,7 @@
 package typings.spotifyApi.SpotifyApi
 
 import typings.spotifyApi.spotifyApiStrings.playlist
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,54 +85,42 @@ object PlaylistBaseObject {
   }
   
   @scala.inline
-  implicit class PlaylistBaseObjectOps[Self <: PlaylistBaseObject] (val x: Self) extends AnyVal {
+  implicit class PlaylistBaseObjectMutableBuilder[Self <: PlaylistBaseObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollaborative(value: Boolean): Self = StObject.set(x, "collaborative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def setCollaborative(value: Boolean): Self = this.set("collaborative", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: ImageObject*): Self = this.set("images", js.Array(value :_*))
+    def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setImages(value: js.Array[ImageObject]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwner(value: UserObjectPublic): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: UserObjectPublic): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshot_id(value: String): Self = this.set("snapshot_id", value.asInstanceOf[js.Any])
+    def setPublicNull: Self = StObject.set(x, "public", null)
     
     @scala.inline
-    def setType(value: playlist): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSnapshot_id(value: String): Self = StObject.set(x, "snapshot_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
-    
-    @scala.inline
-    def setPublic(value: Boolean): Self = this.set("public", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicNull: Self = this.set("public", null)
+    def setType(value: playlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RiskConfigurationType extends js.Object {
+trait RiskConfigurationType extends StObject {
   
   /**
     * The account takeover risk configuration object including the NotifyConfiguration object and Actions to take in the case of an account takeover.
@@ -46,54 +47,42 @@ object RiskConfigurationType {
   }
   
   @scala.inline
-  implicit class RiskConfigurationTypeOps[Self <: RiskConfigurationType] (val x: Self) extends AnyVal {
+  implicit class RiskConfigurationTypeMutableBuilder[Self <: RiskConfigurationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountTakeoverRiskConfiguration(value: AccountTakeoverRiskConfigurationType): Self = StObject.set(x, "AccountTakeoverRiskConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountTakeoverRiskConfigurationUndefined: Self = StObject.set(x, "AccountTakeoverRiskConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountTakeoverRiskConfiguration(value: AccountTakeoverRiskConfigurationType): Self = this.set("AccountTakeoverRiskConfiguration", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
     @scala.inline
-    def deleteAccountTakeoverRiskConfiguration: Self = this.set("AccountTakeoverRiskConfiguration", js.undefined)
+    def setCompromisedCredentialsRiskConfiguration(value: CompromisedCredentialsRiskConfigurationType): Self = StObject.set(x, "CompromisedCredentialsRiskConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setCompromisedCredentialsRiskConfigurationUndefined: Self = StObject.set(x, "CompromisedCredentialsRiskConfiguration", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompromisedCredentialsRiskConfiguration(value: CompromisedCredentialsRiskConfigurationType): Self = this.set("CompromisedCredentialsRiskConfiguration", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteCompromisedCredentialsRiskConfiguration: Self = this.set("CompromisedCredentialsRiskConfiguration", js.undefined)
+    def setRiskExceptionConfiguration(value: RiskExceptionConfigurationType): Self = StObject.set(x, "RiskExceptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateType): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setRiskExceptionConfigurationUndefined: Self = StObject.set(x, "RiskExceptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiskExceptionConfiguration(value: RiskExceptionConfigurationType): Self = this.set("RiskExceptionConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiskExceptionConfiguration: Self = this.set("RiskExceptionConfiguration", js.undefined)
-    
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
   }
 }

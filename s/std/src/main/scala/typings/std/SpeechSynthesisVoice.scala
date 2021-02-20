@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Web Speech API interface represents a voice that the system supports. Every SpeechSynthesisVoice has its own relative speech service including information about language, name and URI. */
 @js.native
-trait SpeechSynthesisVoice extends js.Object {
+trait SpeechSynthesisVoice extends StObject {
   
   val default: scala.Boolean = js.native
   
@@ -33,33 +34,21 @@ object SpeechSynthesisVoice {
   }
   
   @scala.inline
-  implicit class SpeechSynthesisVoiceOps[Self <: SpeechSynthesisVoice] (val x: Self) extends AnyVal {
+  implicit class SpeechSynthesisVoiceMutableBuilder[Self <: SpeechSynthesisVoice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: scala.Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLang(value: java.lang.String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalService(value: scala.Boolean): Self = StObject.set(x, "localService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: scala.Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: java.lang.String): Self = this.set("lang", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalService(value: scala.Boolean): Self = this.set("localService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoiceURI(value: java.lang.String): Self = this.set("voiceURI", value.asInstanceOf[js.Any])
+    def setVoiceURI(value: java.lang.String): Self = StObject.set(x, "voiceURI", value.asInstanceOf[js.Any])
   }
 }

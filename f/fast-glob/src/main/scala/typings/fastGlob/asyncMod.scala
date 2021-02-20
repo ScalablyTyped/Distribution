@@ -4,13 +4,16 @@ import typings.fastGlob.tasksMod.Task
 import typings.fastGlob.typesMod.EntryItem
 import typings.fastGlob.typesMod.ReaderOptions
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fast-glob/out/providers/async", JSImport.Namespace)
-@js.native
-object asyncMod extends js.Object {
+object asyncMod {
+  
+  @JSImport("fast-glob/out/providers/async", JSImport.Default)
+  @js.native
+  class default () extends ProviderAsync
   
   @js.native
   trait ProviderAsync
@@ -20,7 +23,4 @@ object asyncMod extends js.Object {
     
     def api(root: String, task: Task, options: ReaderOptions): Readable = js.native
   }
-  
-  @js.native
-  class default () extends ProviderAsync
 }

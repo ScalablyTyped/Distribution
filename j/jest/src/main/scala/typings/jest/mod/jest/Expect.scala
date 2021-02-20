@@ -2,6 +2,7 @@ package typings.jest.mod.jest
 
 import typings.std.Record
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You will rarely call `expect` by itself.
   */
 @js.native
-trait Expect extends js.Object {
+trait Expect extends StObject {
   
   /**
     * The `expect` function is used every time you want to test a value.

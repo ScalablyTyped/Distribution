@@ -11,12 +11,13 @@ import typings.reactNative.reactNativeStrings.never
 import typings.reactNative.reactNativeStrings.scrollableAxes
 import typings.reactNative.reactNativeStrings.start
 import typings.reactNative.reactNativeStrings.white
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollViewPropsIOS extends js.Object {
+trait ScrollViewPropsIOS extends StObject {
   
   /**
     * When true the scroll view bounces horizontally when it reaches the end
@@ -38,7 +39,7 @@ trait ScrollViewPropsIOS extends js.Object {
     */
   var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.native
   
-   // true
+  // true
   /**
     * When true the scroll view bounces when it reaches the end of the
     * content if the content is larger then the scroll view along the axis of
@@ -74,14 +75,14 @@ trait ScrollViewPropsIOS extends js.Object {
     */
   var contentInset: js.UndefOr[Insets] = js.native
   
-   // zeros
+  // zeros
   /**
     * This property specifies how the safe area insets are used to modify the content area of the scroll view.
     * The default value of this property must be 'automatic'. But the default value is 'never' until RN@0.51.
     */
   var contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.native
   
-   // zeros
+  // zeros
   /**
     * Used to manually set the starting scroll offset.
     * The default value is {x: 0, y: 0}
@@ -163,7 +164,7 @@ trait ScrollViewPropsIOS extends js.Object {
     */
   var scrollEventThrottle: js.UndefOr[Double] = js.native
   
-   // null
+  // null
   /**
     * The amount by which the scroll view indicators are inset from the edges of the scroll view.
     * This should normally be set to the same value as the contentInset.
@@ -171,7 +172,7 @@ trait ScrollViewPropsIOS extends js.Object {
     */
   var scrollIndicatorInsets: js.UndefOr[Insets] = js.native
   
-   //zeroes
+  //zeroes
   /**
     * When true, the scroll view can be programmatically scrolled beyond its
     * content size. The default value is false.
@@ -207,165 +208,153 @@ object ScrollViewPropsIOS {
   }
   
   @scala.inline
-  implicit class ScrollViewPropsIOSOps[Self <: ScrollViewPropsIOS] (val x: Self) extends AnyVal {
+  implicit class ScrollViewPropsIOSMutableBuilder[Self <: ScrollViewPropsIOS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysBounceHorizontal(value: Boolean): Self = StObject.set(x, "alwaysBounceHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysBounceHorizontalUndefined: Self = StObject.set(x, "alwaysBounceHorizontal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlwaysBounceVertical(value: Boolean): Self = StObject.set(x, "alwaysBounceVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysBounceHorizontal(value: Boolean): Self = this.set("alwaysBounceHorizontal", value.asInstanceOf[js.Any])
+    def setAlwaysBounceVerticalUndefined: Self = StObject.set(x, "alwaysBounceVertical", js.undefined)
     
     @scala.inline
-    def deleteAlwaysBounceHorizontal: Self = this.set("alwaysBounceHorizontal", js.undefined)
+    def setAutomaticallyAdjustContentInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustContentInsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysBounceVertical(value: Boolean): Self = this.set("alwaysBounceVertical", value.asInstanceOf[js.Any])
+    def setAutomaticallyAdjustContentInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustContentInsets", js.undefined)
     
     @scala.inline
-    def deleteAlwaysBounceVertical: Self = this.set("alwaysBounceVertical", js.undefined)
+    def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticallyAdjustContentInsets(value: Boolean): Self = this.set("automaticallyAdjustContentInsets", value.asInstanceOf[js.Any])
+    def setBouncesUndefined: Self = StObject.set(x, "bounces", js.undefined)
     
     @scala.inline
-    def deleteAutomaticallyAdjustContentInsets: Self = this.set("automaticallyAdjustContentInsets", js.undefined)
+    def setBouncesZoom(value: Boolean): Self = StObject.set(x, "bouncesZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounces(value: Boolean): Self = this.set("bounces", value.asInstanceOf[js.Any])
+    def setBouncesZoomUndefined: Self = StObject.set(x, "bouncesZoom", js.undefined)
     
     @scala.inline
-    def deleteBounces: Self = this.set("bounces", js.undefined)
+    def setCanCancelContentTouches(value: Boolean): Self = StObject.set(x, "canCancelContentTouches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBouncesZoom(value: Boolean): Self = this.set("bouncesZoom", value.asInstanceOf[js.Any])
+    def setCanCancelContentTouchesUndefined: Self = StObject.set(x, "canCancelContentTouches", js.undefined)
     
     @scala.inline
-    def deleteBouncesZoom: Self = this.set("bouncesZoom", js.undefined)
+    def setCenterContent(value: Boolean): Self = StObject.set(x, "centerContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCancelContentTouches(value: Boolean): Self = this.set("canCancelContentTouches", value.asInstanceOf[js.Any])
+    def setCenterContentUndefined: Self = StObject.set(x, "centerContent", js.undefined)
     
     @scala.inline
-    def deleteCanCancelContentTouches: Self = this.set("canCancelContentTouches", js.undefined)
+    def setContentInset(value: Insets): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterContent(value: Boolean): Self = this.set("centerContent", value.asInstanceOf[js.Any])
+    def setContentInsetAdjustmentBehavior(value: automatic | scrollableAxes | never | always): Self = StObject.set(x, "contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCenterContent: Self = this.set("centerContent", js.undefined)
+    def setContentInsetAdjustmentBehaviorUndefined: Self = StObject.set(x, "contentInsetAdjustmentBehavior", js.undefined)
     
     @scala.inline
-    def setContentInset(value: Insets): Self = this.set("contentInset", value.asInstanceOf[js.Any])
+    def setContentInsetUndefined: Self = StObject.set(x, "contentInset", js.undefined)
     
     @scala.inline
-    def deleteContentInset: Self = this.set("contentInset", js.undefined)
+    def setContentOffset(value: PointPropType): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentInsetAdjustmentBehavior(value: automatic | scrollableAxes | never | always): Self = this.set("contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
+    def setContentOffsetUndefined: Self = StObject.set(x, "contentOffset", js.undefined)
     
     @scala.inline
-    def deleteContentInsetAdjustmentBehavior: Self = this.set("contentInsetAdjustmentBehavior", js.undefined)
+    def setDirectionalLockEnabled(value: Boolean): Self = StObject.set(x, "directionalLockEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentOffset(value: PointPropType): Self = this.set("contentOffset", value.asInstanceOf[js.Any])
+    def setDirectionalLockEnabledUndefined: Self = StObject.set(x, "directionalLockEnabled", js.undefined)
     
     @scala.inline
-    def deleteContentOffset: Self = this.set("contentOffset", js.undefined)
+    def setIndicatorStyle(value: default | black | white): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionalLockEnabled(value: Boolean): Self = this.set("directionalLockEnabled", value.asInstanceOf[js.Any])
+    def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
     
     @scala.inline
-    def deleteDirectionalLockEnabled: Self = this.set("directionalLockEnabled", js.undefined)
+    def setMaintainVisibleContentPosition(value: AutoscrollToTopThreshold): Self = StObject.set(x, "maintainVisibleContentPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicatorStyle(value: default | black | white): Self = this.set("indicatorStyle", value.asInstanceOf[js.Any])
+    def setMaintainVisibleContentPositionNull: Self = StObject.set(x, "maintainVisibleContentPosition", null)
     
     @scala.inline
-    def deleteIndicatorStyle: Self = this.set("indicatorStyle", js.undefined)
+    def setMaintainVisibleContentPositionUndefined: Self = StObject.set(x, "maintainVisibleContentPosition", js.undefined)
     
     @scala.inline
-    def setMaintainVisibleContentPosition(value: AutoscrollToTopThreshold): Self = this.set("maintainVisibleContentPosition", value.asInstanceOf[js.Any])
+    def setMaximumZoomScale(value: Double): Self = StObject.set(x, "maximumZoomScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaintainVisibleContentPosition: Self = this.set("maintainVisibleContentPosition", js.undefined)
+    def setMaximumZoomScaleUndefined: Self = StObject.set(x, "maximumZoomScale", js.undefined)
     
     @scala.inline
-    def setMaintainVisibleContentPositionNull: Self = this.set("maintainVisibleContentPosition", null)
+    def setMinimumZoomScale(value: Double): Self = StObject.set(x, "minimumZoomScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumZoomScale(value: Double): Self = this.set("maximumZoomScale", value.asInstanceOf[js.Any])
+    def setMinimumZoomScaleUndefined: Self = StObject.set(x, "minimumZoomScale", js.undefined)
     
     @scala.inline
-    def deleteMaximumZoomScale: Self = this.set("maximumZoomScale", js.undefined)
+    def setOnScrollAnimationEnd(value: () => Unit): Self = StObject.set(x, "onScrollAnimationEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinimumZoomScale(value: Double): Self = this.set("minimumZoomScale", value.asInstanceOf[js.Any])
+    def setOnScrollAnimationEndUndefined: Self = StObject.set(x, "onScrollAnimationEnd", js.undefined)
     
     @scala.inline
-    def deleteMinimumZoomScale: Self = this.set("minimumZoomScale", js.undefined)
+    def setOnScrollToTop(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = StObject.set(x, "onScrollToTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnScrollAnimationEnd(value: () => Unit): Self = this.set("onScrollAnimationEnd", js.Any.fromFunction0(value))
+    def setOnScrollToTopUndefined: Self = StObject.set(x, "onScrollToTop", js.undefined)
     
     @scala.inline
-    def deleteOnScrollAnimationEnd: Self = this.set("onScrollAnimationEnd", js.undefined)
+    def setPinchGestureEnabled(value: Boolean): Self = StObject.set(x, "pinchGestureEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnScrollToTop(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = this.set("onScrollToTop", js.Any.fromFunction1(value))
+    def setPinchGestureEnabledUndefined: Self = StObject.set(x, "pinchGestureEnabled", js.undefined)
     
     @scala.inline
-    def deleteOnScrollToTop: Self = this.set("onScrollToTop", js.undefined)
+    def setScrollEventThrottle(value: Double): Self = StObject.set(x, "scrollEventThrottle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinchGestureEnabled(value: Boolean): Self = this.set("pinchGestureEnabled", value.asInstanceOf[js.Any])
+    def setScrollEventThrottleUndefined: Self = StObject.set(x, "scrollEventThrottle", js.undefined)
     
     @scala.inline
-    def deletePinchGestureEnabled: Self = this.set("pinchGestureEnabled", js.undefined)
+    def setScrollIndicatorInsets(value: Insets): Self = StObject.set(x, "scrollIndicatorInsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollEventThrottle(value: Double): Self = this.set("scrollEventThrottle", value.asInstanceOf[js.Any])
+    def setScrollIndicatorInsetsUndefined: Self = StObject.set(x, "scrollIndicatorInsets", js.undefined)
     
     @scala.inline
-    def deleteScrollEventThrottle: Self = this.set("scrollEventThrottle", js.undefined)
+    def setScrollToOverflowEnabled(value: Boolean): Self = StObject.set(x, "scrollToOverflowEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollIndicatorInsets(value: Insets): Self = this.set("scrollIndicatorInsets", value.asInstanceOf[js.Any])
+    def setScrollToOverflowEnabledUndefined: Self = StObject.set(x, "scrollToOverflowEnabled", js.undefined)
     
     @scala.inline
-    def deleteScrollIndicatorInsets: Self = this.set("scrollIndicatorInsets", js.undefined)
+    def setScrollsToTop(value: Boolean): Self = StObject.set(x, "scrollsToTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollToOverflowEnabled(value: Boolean): Self = this.set("scrollToOverflowEnabled", value.asInstanceOf[js.Any])
+    def setScrollsToTopUndefined: Self = StObject.set(x, "scrollsToTop", js.undefined)
     
     @scala.inline
-    def deleteScrollToOverflowEnabled: Self = this.set("scrollToOverflowEnabled", js.undefined)
+    def setSnapToAlignment(value: start | center | end): Self = StObject.set(x, "snapToAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollsToTop(value: Boolean): Self = this.set("scrollsToTop", value.asInstanceOf[js.Any])
+    def setSnapToAlignmentUndefined: Self = StObject.set(x, "snapToAlignment", js.undefined)
     
     @scala.inline
-    def deleteScrollsToTop: Self = this.set("scrollsToTop", js.undefined)
+    def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapToAlignment(value: start | center | end): Self = this.set("snapToAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapToAlignment: Self = this.set("snapToAlignment", js.undefined)
-    
-    @scala.inline
-    def setZoomScale(value: Double): Self = this.set("zoomScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomScale: Self = this.set("zoomScale", js.undefined)
+    def setZoomScaleUndefined: Self = StObject.set(x, "zoomScale", js.undefined)
   }
 }

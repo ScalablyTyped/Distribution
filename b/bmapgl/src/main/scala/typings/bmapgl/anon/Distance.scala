@@ -1,12 +1,13 @@
 package typings.bmapgl.anon
 
 import typings.bmapgl.BMapGL.Polyline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distance extends js.Object {
+trait Distance extends StObject {
   
   var distance: Double = js.native
   
@@ -34,39 +35,27 @@ object Distance {
   }
   
   @scala.inline
-  implicit class DistanceOps[Self <: Distance] (val x: Self) extends AnyVal {
+  implicit class DistanceMutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoints(value: js.Array[typings.bmapgl.BMapGL.Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPointsVarargs(value: typings.bmapgl.BMapGL.Point*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setPolylines(value: js.Array[Polyline]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsVarargs(value: typings.bmapgl.BMapGL.Point*): Self = this.set("points", js.Array(value :_*))
+    def setPolylinesVarargs(value: Polyline*): Self = StObject.set(x, "polylines", js.Array(value :_*))
     
     @scala.inline
-    def setPoints(value: js.Array[typings.bmapgl.BMapGL.Point]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylinesVarargs(value: Polyline*): Self = this.set("polylines", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolylines(value: js.Array[Polyline]): Self = this.set("polylines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

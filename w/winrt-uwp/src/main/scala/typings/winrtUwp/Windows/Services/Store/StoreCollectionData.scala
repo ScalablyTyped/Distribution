@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Services.Store
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides additional data for a product SKU that the user has an entitlement to use. */
 @js.native
-trait StoreCollectionData extends js.Object {
+trait StoreCollectionData extends StObject {
   
   /** Gets the date on which the product SKU was acquired. */
   var acquiredDate: Date = js.native
@@ -51,42 +52,30 @@ object StoreCollectionData {
   }
   
   @scala.inline
-  implicit class StoreCollectionDataOps[Self <: StoreCollectionData] (val x: Self) extends AnyVal {
+  implicit class StoreCollectionDataMutableBuilder[Self <: StoreCollectionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquiredDate(value: Date): Self = StObject.set(x, "acquiredDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeveloperOfferId(value: String): Self = StObject.set(x, "developerOfferId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquiredDate(value: Date): Self = this.set("acquiredDate", value.asInstanceOf[js.Any])
+    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperOfferId(value: String): Self = this.set("developerOfferId", value.asInstanceOf[js.Any])
+    def setIsTrial(value: Boolean): Self = StObject.set(x, "isTrial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: Date): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedJsonData(value: String): Self = this.set("extendedJsonData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsTrial(value: Boolean): Self = this.set("isTrial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartDate(value: Date): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrialTimeRemaining(value: Double): Self = this.set("trialTimeRemaining", value.asInstanceOf[js.Any])
+    def setTrialTimeRemaining(value: Double): Self = StObject.set(x, "trialTimeRemaining", value.asInstanceOf[js.Any])
   }
 }

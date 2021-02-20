@@ -3,27 +3,29 @@ package typings.maximMazurokGapiClientNotebooks
 import typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks.ProjectsResource
 import typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.notebooks
 import typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Notebooks API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: notebooks, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: notebooks, version: v1, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object notebooks extends js.Object {
+      object notebooks {
         
+        @JSGlobal("gapi.client.notebooks.projects")
+        @js.native
         val projects: ProjectsResource = js.native
       }
     }

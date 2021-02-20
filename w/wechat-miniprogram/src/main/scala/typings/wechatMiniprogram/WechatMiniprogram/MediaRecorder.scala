@@ -2,12 +2,13 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.wechatMiniprogram.wechatMiniprogramStrings.start
 import typings.wechatMiniprogram.wechatMiniprogramStrings.stop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaRecorder extends js.Object {
+trait MediaRecorder extends StObject {
   
   /** [MediaRecorder.destroy()](https://developers.weixin.qq.com/miniprogram/dev/api/media/media-recorder/MediaRecorder.destroy.html)
     *

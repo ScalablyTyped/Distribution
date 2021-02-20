@@ -2,6 +2,7 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.postmanCollection.anon.Created
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +29,9 @@ class VariableList protected () extends PropertyList[Variable] {
   def syncToObject(obj: StringDictionary[VariableDefinition]): StringDictionary[VariableDefinition] = js.native
 }
 /* static members */
-@JSImport("postman-collection", "VariableList")
-@js.native
-object VariableList extends js.Object {
+object VariableList {
   
+  @JSImport("postman-collection", "VariableList.isVariableList")
+  @js.native
   def isVariableList(obj: js.Any): Boolean = js.native
 }

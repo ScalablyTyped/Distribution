@@ -1,15 +1,18 @@
 package typings.enhancedResolve
 
 import typings.enhancedResolve.anon.Paths
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("enhanced-resolve/lib/getPaths", JSImport.Namespace)
-@js.native
-object getPathsMod extends js.Object {
+object getPathsMod {
   
-  def basename(path: String): String | Null = js.native
-  
+  @JSImport("enhanced-resolve/lib/getPaths", JSImport.Default)
+  @js.native
   def default(path: String): Paths = js.native
+  
+  @JSImport("enhanced-resolve/lib/getPaths", "basename")
+  @js.native
+  def basename(path: String): String | Null = js.native
 }

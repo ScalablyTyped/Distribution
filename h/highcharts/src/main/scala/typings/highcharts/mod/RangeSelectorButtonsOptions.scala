@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangeSelectorButtonsOptions extends js.Object {
+trait RangeSelectorButtonsOptions extends StObject {
   
   /**
     * (Highstock, Gantt) How many units of the defined type the button should
@@ -61,66 +62,54 @@ object RangeSelectorButtonsOptions {
   }
   
   @scala.inline
-  implicit class RangeSelectorButtonsOptionsOps[Self <: RangeSelectorButtonsOptions] (val x: Self) extends AnyVal {
+  implicit class RangeSelectorButtonsOptionsMutableBuilder[Self <: RangeSelectorButtonsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setEvents(value: RangeSelectorButtonsEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataGrouping(value: DataGroupingOptionsObject): Self = this.set("dataGrouping", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteDataGrouping: Self = this.set("dataGrouping", js.undefined)
+    def setOffsetMax(value: Double): Self = StObject.set(x, "offsetMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: RangeSelectorButtonsEventsOptions): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setOffsetMaxUndefined: Self = StObject.set(x, "offsetMax", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setOffsetMin(value: Double): Self = StObject.set(x, "offsetMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetMax(value: Double): Self = this.set("offsetMax", value.asInstanceOf[js.Any])
+    def setOffsetMinUndefined: Self = StObject.set(x, "offsetMin", js.undefined)
     
     @scala.inline
-    def deleteOffsetMax: Self = this.set("offsetMax", js.undefined)
+    def setPreserveDataGrouping(value: Boolean): Self = StObject.set(x, "preserveDataGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetMin(value: Double): Self = this.set("offsetMin", value.asInstanceOf[js.Any])
+    def setPreserveDataGroupingUndefined: Self = StObject.set(x, "preserveDataGrouping", js.undefined)
     
     @scala.inline
-    def deleteOffsetMin: Self = this.set("offsetMin", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveDataGrouping(value: Boolean): Self = this.set("preserveDataGrouping", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deletePreserveDataGrouping: Self = this.set("preserveDataGrouping", js.undefined)
+    def setType(value: RangeSelectorButtonTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setType(value: RangeSelectorButtonTypeValue): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

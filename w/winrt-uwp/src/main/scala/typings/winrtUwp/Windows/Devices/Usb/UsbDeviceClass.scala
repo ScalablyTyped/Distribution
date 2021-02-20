@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a way for the app to get an Advanced Query Syntax (AQS) string by specifying the class code, subclass code, and the protocol code defined by the device. The properties in this class are passed in the call to GetDeviceClassSelector . */
 @js.native
-trait UsbDeviceClass extends js.Object {
+trait UsbDeviceClass extends StObject {
   
   /** Gets or sets the class code of the device. */
   var classCode: Double = js.native
@@ -26,27 +27,15 @@ object UsbDeviceClass {
   }
   
   @scala.inline
-  implicit class UsbDeviceClassOps[Self <: UsbDeviceClass] (val x: Self) extends AnyVal {
+  implicit class UsbDeviceClassMutableBuilder[Self <: UsbDeviceClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassCode(value: Double): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocolCode(value: Double): Self = StObject.set(x, "protocolCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClassCode(value: Double): Self = this.set("classCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocolCode(value: Double): Self = this.set("protocolCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubclassCode(value: Double): Self = this.set("subclassCode", value.asInstanceOf[js.Any])
+    def setSubclassCode(value: Double): Self = StObject.set(x, "subclassCode", value.asInstanceOf[js.Any])
   }
 }

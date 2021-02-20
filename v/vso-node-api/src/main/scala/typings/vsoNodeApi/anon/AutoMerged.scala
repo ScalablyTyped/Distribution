@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoMerged extends js.Object {
+trait AutoMerged extends StObject {
   
   var autoMerged: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object AutoMerged {
   }
   
   @scala.inline
-  implicit class AutoMergedOps[Self <: AutoMerged] (val x: Self) extends AnyVal {
+  implicit class AutoMergedMutableBuilder[Self <: AutoMerged] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoMerged(value: scala.Double): Self = StObject.set(x, "autoMerged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTakeSourceContent(value: scala.Double): Self = StObject.set(x, "takeSourceContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTakeTargetContent(value: scala.Double): Self = StObject.set(x, "takeTargetContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMerged(value: scala.Double): Self = this.set("autoMerged", value.asInstanceOf[js.Any])
+    def setUndecided(value: scala.Double): Self = StObject.set(x, "undecided", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTakeSourceContent(value: scala.Double): Self = this.set("takeSourceContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTakeTargetContent(value: scala.Double): Self = this.set("takeTargetContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndecided(value: scala.Double): Self = this.set("undecided", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserMerged(value: scala.Double): Self = this.set("userMerged", value.asInstanceOf[js.Any])
+    def setUserMerged(value: scala.Double): Self = StObject.set(x, "userMerged", value.asInstanceOf[js.Any])
   }
 }

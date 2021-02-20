@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeImageVersionResponse extends js.Object {
+trait DescribeImageVersionResponse extends StObject {
   
   /**
     * The registry path of the container image on which this image version is based.
@@ -61,72 +62,60 @@ object DescribeImageVersionResponse {
   }
   
   @scala.inline
-  implicit class DescribeImageVersionResponseOps[Self <: DescribeImageVersionResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeImageVersionResponseMutableBuilder[Self <: DescribeImageVersionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseImage(value: ImageBaseImage): Self = StObject.set(x, "BaseImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseImageUndefined: Self = StObject.set(x, "BaseImage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerImage(value: ImageContainerImage): Self = StObject.set(x, "ContainerImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseImage(value: ImageBaseImage): Self = this.set("BaseImage", value.asInstanceOf[js.Any])
+    def setContainerImageUndefined: Self = StObject.set(x, "ContainerImage", js.undefined)
     
     @scala.inline
-    def deleteBaseImage: Self = this.set("BaseImage", js.undefined)
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerImage(value: ImageContainerImage): Self = this.set("ContainerImage", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteContainerImage: Self = this.set("ContainerImage", js.undefined)
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setImageArn(value: ImageArn): Self = StObject.set(x, "ImageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setImageArnUndefined: Self = StObject.set(x, "ImageArn", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setImageVersionArn(value: ImageVersionArn): Self = StObject.set(x, "ImageVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageArn(value: ImageArn): Self = this.set("ImageArn", value.asInstanceOf[js.Any])
+    def setImageVersionArnUndefined: Self = StObject.set(x, "ImageVersionArn", js.undefined)
     
     @scala.inline
-    def deleteImageArn: Self = this.set("ImageArn", js.undefined)
+    def setImageVersionStatus(value: ImageVersionStatus): Self = StObject.set(x, "ImageVersionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVersionArn(value: ImageVersionArn): Self = this.set("ImageVersionArn", value.asInstanceOf[js.Any])
+    def setImageVersionStatusUndefined: Self = StObject.set(x, "ImageVersionStatus", js.undefined)
     
     @scala.inline
-    def deleteImageVersionArn: Self = this.set("ImageVersionArn", js.undefined)
+    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVersionStatus(value: ImageVersionStatus): Self = this.set("ImageVersionStatus", value.asInstanceOf[js.Any])
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteImageVersionStatus: Self = this.set("ImageVersionStatus", js.undefined)
+    def setVersion(value: ImageVersionNumber): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: ImageVersionNumber): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

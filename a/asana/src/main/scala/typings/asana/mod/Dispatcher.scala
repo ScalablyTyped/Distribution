@@ -1,13 +1,13 @@
 package typings.asana.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.asana.mod.auth.Authenticator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dispatcher extends js.Object {
+trait Dispatcher extends StObject {
   
   /**
     * The base URL for Asana
@@ -135,6 +135,3 @@ trait Dispatcher extends js.Object {
     */
   def url(path: String): String = js.native
 }
-@JSImport("asana", "Dispatcher")
-@js.native
-object Dispatcher extends TopLevel[DispatcherStatic]

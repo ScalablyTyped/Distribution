@@ -1,15 +1,15 @@
 package typings.stormReactDiagrams
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("storm-react-diagrams/dist/src/actions/BaseAction", JSImport.Namespace)
-@js.native
-object baseActionMod extends js.Object {
+object baseActionMod {
   
+  @JSImport("storm-react-diagrams/dist/src/actions/BaseAction", "BaseAction")
   @js.native
-  class BaseAction protected () extends js.Object {
+  class BaseAction protected () extends StObject {
     def this(mouseX: Double, mouseY: Double) = this()
     
     var mouseX: Double = js.native

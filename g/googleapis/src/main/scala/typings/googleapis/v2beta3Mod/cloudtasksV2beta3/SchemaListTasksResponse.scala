@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for listing tasks using ListTasks.
   */
 @js.native
-trait SchemaListTasksResponse extends js.Object {
+trait SchemaListTasksResponse extends StObject {
   
   /**
     * A token to retrieve next page of results.  To return the next page of
@@ -31,33 +32,21 @@ object SchemaListTasksResponse {
   }
   
   @scala.inline
-  implicit class SchemaListTasksResponseOps[Self <: SchemaListTasksResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListTasksResponseMutableBuilder[Self <: SchemaListTasksResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTasks(value: js.Array[SchemaTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTasksVarargs(value: SchemaTask*): Self = this.set("tasks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTasks(value: js.Array[SchemaTask]): Self = this.set("tasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTasks: Self = this.set("tasks", js.undefined)
+    def setTasksVarargs(value: SchemaTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

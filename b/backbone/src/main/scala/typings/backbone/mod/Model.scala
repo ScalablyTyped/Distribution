@@ -2,6 +2,7 @@ package typings.backbone.mod
 
 import typings.jquery.JQueryXHR
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("backbone", "Model")
 @js.native
-class Model[T, S, E] () extends js.Object {
+class Model[T, S, E] () extends StObject {
   def this(attributes: T) = this()
   def this(attributes: T, options: CombinedModelConstructorOptions[E, Model[_, ModelSetOptions, js.Object]]) = this()
   def this(
@@ -190,14 +191,16 @@ class Model[T, S, E] () extends js.Object {
   
   def values(): js.Array[_] = js.native
 }
-/* static members */
-@JSImport("backbone", "Model")
-@js.native
-object Model extends js.Object {
+object Model {
   
   /**
     * Do not use, prefer TypeScript's extend functionality.
     **/
+  /* static member */
+  @JSImport("backbone", "Model.extend")
+  @js.native
   def extend(properties: js.Any): js.Any = js.native
+  @JSImport("backbone", "Model.extend")
+  @js.native
   def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetShardIteratorInput extends js.Object {
+trait GetShardIteratorInput extends StObject {
   
   /**
     * The shard ID of the Kinesis Data Streams shard to get the iterator for.
@@ -41,39 +42,27 @@ object GetShardIteratorInput {
   }
   
   @scala.inline
-  implicit class GetShardIteratorInputOps[Self <: GetShardIteratorInput] (val x: Self) extends AnyVal {
+  implicit class GetShardIteratorInputMutableBuilder[Self <: GetShardIteratorInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShardIteratorType(value: ShardIteratorType): Self = StObject.set(x, "ShardIteratorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartingSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "StartingSequenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShardId(value: ShardId): Self = this.set("ShardId", value.asInstanceOf[js.Any])
+    def setStartingSequenceNumberUndefined: Self = StObject.set(x, "StartingSequenceNumber", js.undefined)
     
     @scala.inline
-    def setShardIteratorType(value: ShardIteratorType): Self = this.set("ShardIteratorType", value.asInstanceOf[js.Any])
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartingSequenceNumber(value: SequenceNumber): Self = this.set("StartingSequenceNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartingSequenceNumber: Self = this.set("StartingSequenceNumber", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

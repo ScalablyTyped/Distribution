@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * by groups, or if we should have different summary messages like this.
   */
 @js.native
-trait SchemaGetVulnzOccurrencesSummaryResponse extends js.Object {
+trait SchemaGetVulnzOccurrencesSummaryResponse extends StObject {
   
   /**
     * A map of how many occurrences were found for each severity.
@@ -25,27 +26,15 @@ object SchemaGetVulnzOccurrencesSummaryResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetVulnzOccurrencesSummaryResponseOps[Self <: SchemaGetVulnzOccurrencesSummaryResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetVulnzOccurrencesSummaryResponseMutableBuilder[Self <: SchemaGetVulnzOccurrencesSummaryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCounts(value: js.Array[SchemaSeverityCount]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountsVarargs(value: SchemaSeverityCount*): Self = this.set("counts", js.Array(value :_*))
-    
-    @scala.inline
-    def setCounts(value: js.Array[SchemaSeverityCount]): Self = this.set("counts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCounts: Self = this.set("counts", js.undefined)
+    def setCountsVarargs(value: SchemaSeverityCount*): Self = StObject.set(x, "counts", js.Array(value :_*))
   }
 }

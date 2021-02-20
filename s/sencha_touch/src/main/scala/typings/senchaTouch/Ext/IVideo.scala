@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,48 +41,36 @@ object IVideo {
   }
   
   @scala.inline
-  implicit class IVideoOps[Self <: IVideo] (val x: Self) extends AnyVal {
+  implicit class IVideoMutableBuilder[Self <: IVideo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPosterUrl(value: () => java.lang.String): Self = StObject.set(x, "getPosterUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPosterUrlUndefined: Self = StObject.set(x, "getPosterUrl", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosterUrl(value: java.lang.String): Self = StObject.set(x, "posterUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPosterUrl(value: () => java.lang.String): Self = this.set("getPosterUrl", js.Any.fromFunction0(value))
+    def setPosterUrlUndefined: Self = StObject.set(x, "posterUrl", js.undefined)
     
     @scala.inline
-    def deleteGetPosterUrl: Self = this.set("getPosterUrl", js.undefined)
+    def setSetPosterUrl(value: /* posterUrl */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setPosterUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPosterUrl(value: java.lang.String): Self = this.set("posterUrl", value.asInstanceOf[js.Any])
+    def setSetPosterUrlUndefined: Self = StObject.set(x, "setPosterUrl", js.undefined)
     
     @scala.inline
-    def deletePosterUrl: Self = this.set("posterUrl", js.undefined)
+    def setSetUrl(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPosterUrl(value: /* posterUrl */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setPosterUrl", js.Any.fromFunction1(value))
+    def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
     @scala.inline
-    def deleteSetPosterUrl: Self = this.set("setPosterUrl", js.undefined)
+    def setUpdatePosterUrl(value: /* newUrl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updatePosterUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetUrl(value: /* url */ js.UndefOr[js.Any] => Unit): Self = this.set("setUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetUrl: Self = this.set("setUrl", js.undefined)
-    
-    @scala.inline
-    def setUpdatePosterUrl(value: /* newUrl */ js.UndefOr[js.Any] => Unit): Self = this.set("updatePosterUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpdatePosterUrl: Self = this.set("updatePosterUrl", js.undefined)
+    def setUpdatePosterUrlUndefined: Self = StObject.set(x, "updatePosterUrl", js.undefined)
   }
 }

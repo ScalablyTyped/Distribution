@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,42 +87,30 @@ object ASPxClientRatingControl {
   }
   
   @scala.inline
-  implicit class ASPxClientRatingControlOps[Self <: ASPxClientRatingControl] (val x: Self) extends AnyVal {
+  implicit class ASPxClientRatingControlMutableBuilder[Self <: ASPxClientRatingControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetReadOnly(value: () => Boolean): Self = StObject.set(x, "GetReadOnly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTitle(value: Double => String): Self = StObject.set(x, "GetTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetValue(value: () => Double): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetReadOnly(value: () => Boolean): Self = this.set("GetReadOnly", js.Any.fromFunction0(value))
+    def setItemClick(value: ASPxClientEvent[ASPxClientRatingControlItemClickEventHandler[ASPxClientRatingControl]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTitle(value: Double => String): Self = this.set("GetTitle", js.Any.fromFunction1(value))
+    def setItemMouseOut(value: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]]): Self = StObject.set(x, "ItemMouseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValue(value: () => Double): Self = this.set("GetValue", js.Any.fromFunction0(value))
+    def setItemMouseOver(value: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]]): Self = StObject.set(x, "ItemMouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemClick(value: ASPxClientEvent[ASPxClientRatingControlItemClickEventHandler[ASPxClientRatingControl]]): Self = this.set("ItemClick", value.asInstanceOf[js.Any])
+    def setSetReadOnly(value: Boolean => Unit): Self = StObject.set(x, "SetReadOnly", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemMouseOut(value: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]]): Self = this.set("ItemMouseOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemMouseOver(value: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]]): Self = this.set("ItemMouseOver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetReadOnly(value: Boolean => Unit): Self = this.set("SetReadOnly", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: Double => Unit): Self = this.set("SetValue", js.Any.fromFunction1(value))
+    def setSetValue(value: Double => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
   }
 }

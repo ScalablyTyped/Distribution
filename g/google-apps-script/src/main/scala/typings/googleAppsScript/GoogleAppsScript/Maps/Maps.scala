@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * images.
   */
 @js.native
-trait Maps extends js.Object {
+trait Maps extends StObject {
   
   var DirectionFinder: DirectionFinderEnums = js.native
   
@@ -42,51 +43,39 @@ object Maps {
     newGeocoder: () => Geocoder,
     newStaticMap: () => StaticMap,
     setAuthentication: (String, String) => Unit
-  ): Maps = {
+  ): typings.googleAppsScript.GoogleAppsScript.Maps.Maps = {
     val __obj = js.Dynamic.literal(DirectionFinder = DirectionFinder.asInstanceOf[js.Any], StaticMap = StaticMap.asInstanceOf[js.Any], decodePolyline = js.Any.fromFunction1(decodePolyline), encodePolyline = js.Any.fromFunction1(encodePolyline), newDirectionFinder = js.Any.fromFunction0(newDirectionFinder), newElevationSampler = js.Any.fromFunction0(newElevationSampler), newGeocoder = js.Any.fromFunction0(newGeocoder), newStaticMap = js.Any.fromFunction0(newStaticMap), setAuthentication = js.Any.fromFunction2(setAuthentication))
-    __obj.asInstanceOf[Maps]
+    __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Maps.Maps]
   }
   
   @scala.inline
-  implicit class MapsOps[Self <: typings.googleAppsScript.GoogleAppsScript.Maps.Maps] (val x: Self) extends AnyVal {
+  implicit class MapsMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Maps.Maps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecodePolyline(value: String => js.Array[Double]): Self = StObject.set(x, "decodePolyline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionFinder(value: DirectionFinderEnums): Self = StObject.set(x, "DirectionFinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodePolyline(value: js.Array[Double] => String): Self = StObject.set(x, "encodePolyline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirectionFinder(value: DirectionFinderEnums): Self = this.set("DirectionFinder", value.asInstanceOf[js.Any])
+    def setNewDirectionFinder(value: () => DirectionFinder): Self = StObject.set(x, "newDirectionFinder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStaticMap(value: StaticMapEnums): Self = this.set("StaticMap", value.asInstanceOf[js.Any])
+    def setNewElevationSampler(value: () => ElevationSampler): Self = StObject.set(x, "newElevationSampler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDecodePolyline(value: String => js.Array[Double]): Self = this.set("decodePolyline", js.Any.fromFunction1(value))
+    def setNewGeocoder(value: () => Geocoder): Self = StObject.set(x, "newGeocoder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEncodePolyline(value: js.Array[Double] => String): Self = this.set("encodePolyline", js.Any.fromFunction1(value))
+    def setNewStaticMap(value: () => StaticMap): Self = StObject.set(x, "newStaticMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewDirectionFinder(value: () => DirectionFinder): Self = this.set("newDirectionFinder", js.Any.fromFunction0(value))
+    def setSetAuthentication(value: (String, String) => Unit): Self = StObject.set(x, "setAuthentication", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNewElevationSampler(value: () => ElevationSampler): Self = this.set("newElevationSampler", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNewGeocoder(value: () => Geocoder): Self = this.set("newGeocoder", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNewStaticMap(value: () => StaticMap): Self = this.set("newStaticMap", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetAuthentication(value: (String, String) => Unit): Self = this.set("setAuthentication", js.Any.fromFunction2(value))
+    def setStaticMap(value: StaticMapEnums): Self = StObject.set(x, "StaticMap", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.iobroker.mod.global.ioBroker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A message being passed between adapter instances */
 @js.native
-trait Message extends js.Object {
+trait Message extends StObject {
   
   /** ID of this message */
   var _id: Double = js.native
@@ -32,33 +33,21 @@ object Message {
   }
   
   @scala.inline
-  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: MessageCallbackInfo): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_id(value: Double): Self = this.set("_id", value.asInstanceOf[js.Any])
+    def setMessage(value: MessagePayload): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: MessageCallbackInfo): Self = this.set("callback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: MessagePayload): Self = this.set("message", value.asInstanceOf[js.Any])
+    def set_id(value: Double): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

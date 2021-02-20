@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A pre-defined grammar constraint (specifed by SpeechRecognitionScenario ) provided through a web service. */
 @js.native
-trait SpeechRecognitionTopicConstraint extends js.Object {
+trait SpeechRecognitionTopicConstraint extends StObject {
   
   /** Gets or sets whether the constraint can be used by the SpeechRecognizer object to perform recognition. */
   var isEnabled: Boolean = js.native
@@ -43,36 +44,24 @@ object SpeechRecognitionTopicConstraint {
   }
   
   @scala.inline
-  implicit class SpeechRecognitionTopicConstraintOps[Self <: SpeechRecognitionTopicConstraint] (val x: Self) extends AnyVal {
+  implicit class SpeechRecognitionTopicConstraintMutableBuilder[Self <: SpeechRecognitionTopicConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProbability(value: SpeechRecognitionConstraintProbability): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScenario(value: SpeechRecognitionScenario): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProbability(value: SpeechRecognitionConstraintProbability): Self = this.set("probability", value.asInstanceOf[js.Any])
+    def setTopicHint(value: String): Self = StObject.set(x, "topicHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScenario(value: SpeechRecognitionScenario): Self = this.set("scenario", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicHint(value: String): Self = this.set("topicHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: SpeechRecognitionConstraintType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: SpeechRecognitionConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

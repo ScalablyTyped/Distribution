@@ -12,16 +12,18 @@ import typings.nodePgMigrate.nodePgMigrateStrings.sql
 import typings.nodePgMigrate.nodePgMigrateStrings.ts
 import typings.nodePgMigrate.pgLiteralMod.default
 import typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-pg-migrate", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("node-pg-migrate", JSImport.Default)
+  @js.native
   def default(options: RunnerOption): js.Promise[js.Array[RunMigration]] = js.native
   
+  @JSImport("node-pg-migrate", "Migration")
   @js.native
   class Migration protected ()
     extends typings.nodePgMigrate.migrationMod.Migration {
@@ -51,10 +53,13 @@ object mod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object Migration extends js.Object {
+  object Migration {
     
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create(name: String, directory: String): js.Promise[String] = js.native
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create(
       name: String,
       directory: String,
@@ -62,7 +67,11 @@ object mod extends js.Object {
       _ignorePattern: js.UndefOr[scala.Nothing],
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = js.native
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create(name: String, directory: String, _language: js.UndefOr[scala.Nothing], _ignorePattern: String): js.Promise[String] = js.native
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create(
       name: String,
       directory: String,
@@ -70,7 +79,11 @@ object mod extends js.Object {
       _ignorePattern: String,
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = js.native
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create(name: String, directory: String, _language: CreateOptions): js.Promise[String] = js.native
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create(
       name: String,
       directory: String,
@@ -78,7 +91,11 @@ object mod extends js.Object {
       _ignorePattern: js.UndefOr[scala.Nothing],
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = js.native
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create(name: String, directory: String, _language: CreateOptions, _ignorePattern: String): js.Promise[String] = js.native
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create(
       name: String,
       directory: String,
@@ -86,9 +103,11 @@ object mod extends js.Object {
       _ignorePattern: String,
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_js(name: String, directory: String, _language: js_): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_js(
       name: String,
       directory: String,
@@ -96,9 +115,11 @@ object mod extends js.Object {
       _ignorePattern: js.UndefOr[scala.Nothing],
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_js(name: String, directory: String, _language: js_, _ignorePattern: String): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_js(
       name: String,
       directory: String,
@@ -106,9 +127,11 @@ object mod extends js.Object {
       _ignorePattern: String,
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_sql(name: String, directory: String, _language: sql): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_sql(
       name: String,
       directory: String,
@@ -116,9 +139,11 @@ object mod extends js.Object {
       _ignorePattern: js.UndefOr[scala.Nothing],
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_sql(name: String, directory: String, _language: sql, _ignorePattern: String): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_sql(
       name: String,
       directory: String,
@@ -126,9 +151,11 @@ object mod extends js.Object {
       _ignorePattern: String,
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_ts(name: String, directory: String, _language: ts): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_ts(
       name: String,
       directory: String,
@@ -136,9 +163,11 @@ object mod extends js.Object {
       _ignorePattern: js.UndefOr[scala.Nothing],
       _filenameFormat: FilenameFormat
     ): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_ts(name: String, directory: String, _language: ts, _ignorePattern: String): js.Promise[String] = js.native
-    @JSName("create")
+    @JSImport("node-pg-migrate", "Migration.create")
+    @js.native
     def create_ts(
       name: String,
       directory: String,
@@ -148,19 +177,22 @@ object mod extends js.Object {
     ): js.Promise[String] = js.native
   }
   
+  @JSImport("node-pg-migrate", "PgLiteral")
   @js.native
   class PgLiteral protected () extends default {
     def this(value: String) = this()
   }
   /* static members */
-  @js.native
-  object PgLiteral extends js.Object {
+  object PgLiteral {
     
+    @JSImport("node-pg-migrate", "PgLiteral.create")
+    @js.native
     def create(str: String): typings.nodePgMigrate.pgLiteralMod.PgLiteral = js.native
   }
   
+  @JSImport("node-pg-migrate", "PgType")
   @js.native
-  object PgType extends js.Object {
+  object PgType extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.nodePgMigrate.distTypesMod.PgType with String] = js.native

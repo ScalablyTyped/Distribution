@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * IP Management configuration.
   */
 @js.native
-trait SchemaIpConfiguration extends js.Object {
+trait SchemaIpConfiguration extends StObject {
   
   /**
     * The list of external networks that are allowed to connect to the instance
@@ -44,45 +45,33 @@ object SchemaIpConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaIpConfigurationOps[Self <: SchemaIpConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaIpConfigurationMutableBuilder[Self <: SchemaIpConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizedNetworks(value: js.Array[SchemaAclEntry]): Self = StObject.set(x, "authorizedNetworks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizedNetworksUndefined: Self = StObject.set(x, "authorizedNetworks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizedNetworksVarargs(value: SchemaAclEntry*): Self = StObject.set(x, "authorizedNetworks", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorizedNetworksVarargs(value: SchemaAclEntry*): Self = this.set("authorizedNetworks", js.Array(value :_*))
+    def setIpv4Enabled(value: Boolean): Self = StObject.set(x, "ipv4Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizedNetworks(value: js.Array[SchemaAclEntry]): Self = this.set("authorizedNetworks", value.asInstanceOf[js.Any])
+    def setIpv4EnabledUndefined: Self = StObject.set(x, "ipv4Enabled", js.undefined)
     
     @scala.inline
-    def deleteAuthorizedNetworks: Self = this.set("authorizedNetworks", js.undefined)
+    def setPrivateNetwork(value: String): Self = StObject.set(x, "privateNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv4Enabled(value: Boolean): Self = this.set("ipv4Enabled", value.asInstanceOf[js.Any])
+    def setPrivateNetworkUndefined: Self = StObject.set(x, "privateNetwork", js.undefined)
     
     @scala.inline
-    def deleteIpv4Enabled: Self = this.set("ipv4Enabled", js.undefined)
+    def setRequireSsl(value: Boolean): Self = StObject.set(x, "requireSsl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateNetwork(value: String): Self = this.set("privateNetwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateNetwork: Self = this.set("privateNetwork", js.undefined)
-    
-    @scala.inline
-    def setRequireSsl(value: Boolean): Self = this.set("requireSsl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireSsl: Self = this.set("requireSsl", js.undefined)
+    def setRequireSslUndefined: Self = StObject.set(x, "requireSsl", js.undefined)
   }
 }

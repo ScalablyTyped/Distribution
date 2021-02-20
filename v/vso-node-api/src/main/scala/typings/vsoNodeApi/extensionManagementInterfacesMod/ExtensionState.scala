@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object ExtensionState {
   }
   
   @scala.inline
-  implicit class ExtensionStateOps[Self <: ExtensionState] (val x: Self) extends AnyVal {
+  implicit class ExtensionStateMutableBuilder[Self <: ExtensionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastVersionCheck(value: Date): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionName(value: String): Self = this.set("extensionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastVersionCheck(value: Date): Self = this.set("lastVersionCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherName(value: String): Self = this.set("publisherName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

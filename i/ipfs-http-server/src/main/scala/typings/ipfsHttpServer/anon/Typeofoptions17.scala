@@ -1,11 +1,12 @@
 package typings.ipfsHttpServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofoptions17 extends js.Object {
+trait Typeofoptions17 extends StObject {
   
   val allowUnknown_8: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Typeofoptions17 {
   }
   
   @scala.inline
-  implicit class Typeofoptions17Ops[Self <: Typeofoptions17] (val x: Self) extends AnyVal {
+  implicit class Typeofoptions17MutableBuilder[Self <: Typeofoptions17] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUnknown_8(value: Boolean): Self = StObject.set(x, "allowUnknown_8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowUnknown_8(value: Boolean): Self = this.set("allowUnknown_8", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStripUnknown_8(value: Boolean): Self = this.set("stripUnknown_8", value.asInstanceOf[js.Any])
+    def setStripUnknown_8(value: Boolean): Self = StObject.set(x, "stripUnknown_8", value.asInstanceOf[js.Any])
   }
 }

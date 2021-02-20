@@ -4,12 +4,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.fall
 import typings.arcgisJsApi.arcgisJsApiStrings.spring
 import typings.arcgisJsApi.arcgisJsApiStrings.summer
 import typings.arcgisJsApi.arcgisJsApiStrings.winter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DaylightViewModelProperties extends js.Object {
+trait DaylightViewModelProperties extends StObject {
   
   /**
     * A season can be set instead of a date.
@@ -76,66 +77,54 @@ object DaylightViewModelProperties {
   }
   
   @scala.inline
-  implicit class DaylightViewModelPropertiesOps[Self <: DaylightViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class DaylightViewModelPropertiesMutableBuilder[Self <: DaylightViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentSeason(value: spring | summer | fall | winter): Self = StObject.set(x, "currentSeason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentSeasonUndefined: Self = StObject.set(x, "currentSeason", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayPlaying(value: Boolean): Self = StObject.set(x, "dayPlaying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSeason(value: spring | summer | fall | winter): Self = this.set("currentSeason", value.asInstanceOf[js.Any])
+    def setDayPlayingUndefined: Self = StObject.set(x, "dayPlaying", js.undefined)
     
     @scala.inline
-    def deleteCurrentSeason: Self = this.set("currentSeason", js.undefined)
+    def setLocalDate(value: DateProperties): Self = StObject.set(x, "localDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayPlaying(value: Boolean): Self = this.set("dayPlaying", value.asInstanceOf[js.Any])
+    def setLocalDateUndefined: Self = StObject.set(x, "localDate", js.undefined)
     
     @scala.inline
-    def deleteDayPlaying: Self = this.set("dayPlaying", js.undefined)
+    def setPlaySpeedMultiplier(value: Double): Self = StObject.set(x, "playSpeedMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalDate(value: DateProperties): Self = this.set("localDate", value.asInstanceOf[js.Any])
+    def setPlaySpeedMultiplierUndefined: Self = StObject.set(x, "playSpeedMultiplier", js.undefined)
     
     @scala.inline
-    def deleteLocalDate: Self = this.set("localDate", js.undefined)
+    def setTimeSliderPosition(value: Double): Self = StObject.set(x, "timeSliderPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaySpeedMultiplier(value: Double): Self = this.set("playSpeedMultiplier", value.asInstanceOf[js.Any])
+    def setTimeSliderPositionUndefined: Self = StObject.set(x, "timeSliderPosition", js.undefined)
     
     @scala.inline
-    def deletePlaySpeedMultiplier: Self = this.set("playSpeedMultiplier", js.undefined)
+    def setUtcOffset(value: Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeSliderPosition(value: Double): Self = this.set("timeSliderPosition", value.asInstanceOf[js.Any])
+    def setUtcOffsetUndefined: Self = StObject.set(x, "utcOffset", js.undefined)
     
     @scala.inline
-    def deleteTimeSliderPosition: Self = this.set("timeSliderPosition", js.undefined)
+    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtcOffset(value: Double): Self = this.set("utcOffset", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteUtcOffset: Self = this.set("utcOffset", js.undefined)
+    def setYearPlaying(value: Boolean): Self = StObject.set(x, "yearPlaying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setYearPlaying(value: Boolean): Self = this.set("yearPlaying", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYearPlaying: Self = this.set("yearPlaying", js.undefined)
+    def setYearPlayingUndefined: Self = StObject.set(x, "yearPlaying", js.undefined)
   }
 }

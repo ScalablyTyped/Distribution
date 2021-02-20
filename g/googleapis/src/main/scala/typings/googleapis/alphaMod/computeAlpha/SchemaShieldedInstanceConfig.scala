@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A set of Shielded Instance options.
   */
 @js.native
-trait SchemaShieldedInstanceConfig extends js.Object {
+trait SchemaShieldedInstanceConfig extends StObject {
   
   /**
     * Defines whether the instance has integrity monitoring enabled.
@@ -34,36 +35,24 @@ object SchemaShieldedInstanceConfig {
   }
   
   @scala.inline
-  implicit class SchemaShieldedInstanceConfigOps[Self <: SchemaShieldedInstanceConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaShieldedInstanceConfigMutableBuilder[Self <: SchemaShieldedInstanceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableIntegrityMonitoring(value: Boolean): Self = StObject.set(x, "enableIntegrityMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableIntegrityMonitoringUndefined: Self = StObject.set(x, "enableIntegrityMonitoring", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableSecureBoot(value: Boolean): Self = StObject.set(x, "enableSecureBoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableIntegrityMonitoring(value: Boolean): Self = this.set("enableIntegrityMonitoring", value.asInstanceOf[js.Any])
+    def setEnableSecureBootUndefined: Self = StObject.set(x, "enableSecureBoot", js.undefined)
     
     @scala.inline
-    def deleteEnableIntegrityMonitoring: Self = this.set("enableIntegrityMonitoring", js.undefined)
+    def setEnableVtpm(value: Boolean): Self = StObject.set(x, "enableVtpm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSecureBoot(value: Boolean): Self = this.set("enableSecureBoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableSecureBoot: Self = this.set("enableSecureBoot", js.undefined)
-    
-    @scala.inline
-    def setEnableVtpm(value: Boolean): Self = this.set("enableVtpm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableVtpm: Self = this.set("enableVtpm", js.undefined)
+    def setEnableVtpmUndefined: Self = StObject.set(x, "enableVtpm", js.undefined)
   }
 }

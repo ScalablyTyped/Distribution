@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaNetworksAddPeeringRequest extends js.Object {
+trait SchemaNetworksAddPeeringRequest extends StObject {
   
   /**
     * This field will be deprecated soon. Prefer using exchange_subnet_routes
@@ -59,54 +60,42 @@ object SchemaNetworksAddPeeringRequest {
   }
   
   @scala.inline
-  implicit class SchemaNetworksAddPeeringRequestOps[Self <: SchemaNetworksAddPeeringRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworksAddPeeringRequestMutableBuilder[Self <: SchemaNetworksAddPeeringRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCreateRoutes(value: Boolean): Self = StObject.set(x, "autoCreateRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCreateRoutesUndefined: Self = StObject.set(x, "autoCreateRoutes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportCustomRoutes(value: Boolean): Self = StObject.set(x, "exportCustomRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCreateRoutes(value: Boolean): Self = this.set("autoCreateRoutes", value.asInstanceOf[js.Any])
+    def setExportCustomRoutesUndefined: Self = StObject.set(x, "exportCustomRoutes", js.undefined)
     
     @scala.inline
-    def deleteAutoCreateRoutes: Self = this.set("autoCreateRoutes", js.undefined)
+    def setImportCustomRoutes(value: Boolean): Self = StObject.set(x, "importCustomRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportCustomRoutes(value: Boolean): Self = this.set("exportCustomRoutes", value.asInstanceOf[js.Any])
+    def setImportCustomRoutesUndefined: Self = StObject.set(x, "importCustomRoutes", js.undefined)
     
     @scala.inline
-    def deleteExportCustomRoutes: Self = this.set("exportCustomRoutes", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportCustomRoutes(value: Boolean): Self = this.set("importCustomRoutes", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteImportCustomRoutes: Self = this.set("importCustomRoutes", js.undefined)
+    def setNetworkPeering(value: SchemaNetworkPeering): Self = StObject.set(x, "networkPeering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworkPeeringUndefined: Self = StObject.set(x, "networkPeering", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPeerNetwork(value: String): Self = StObject.set(x, "peerNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkPeering(value: SchemaNetworkPeering): Self = this.set("networkPeering", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkPeering: Self = this.set("networkPeering", js.undefined)
-    
-    @scala.inline
-    def setPeerNetwork(value: String): Self = this.set("peerNetwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeerNetwork: Self = this.set("peerNetwork", js.undefined)
+    def setPeerNetworkUndefined: Self = StObject.set(x, "peerNetwork", js.undefined)
   }
 }

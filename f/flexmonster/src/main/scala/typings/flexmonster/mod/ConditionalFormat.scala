@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalFormat extends js.Object {
+trait ConditionalFormat extends StObject {
   
   var column: js.UndefOr[Double] = js.native
   
@@ -34,72 +35,60 @@ object ConditionalFormat {
   }
   
   @scala.inline
-  implicit class ConditionalFormatOps[Self <: ConditionalFormat] (val x: Self) extends AnyVal {
+  implicit class ConditionalFormatMutableBuilder[Self <: ConditionalFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: Style): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setFormatCSS(value: String): Self = StObject.set(x, "formatCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setFormatCSSUndefined: Self = StObject.set(x, "formatCSS", js.undefined)
     
     @scala.inline
-    def setFormat(value: Style): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatCSS(value: String): Self = this.set("formatCSS", value.asInstanceOf[js.Any])
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
     @scala.inline
-    def deleteFormatCSS: Self = this.set("formatCSS", js.undefined)
+    def setHierarchy(value: String): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("formula", value.asInstanceOf[js.Any])
+    def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
     
     @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
+    def setIsTotal(value: Double): Self = StObject.set(x, "isTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchy(value: String): Self = this.set("hierarchy", value.asInstanceOf[js.Any])
+    def setIsTotalUndefined: Self = StObject.set(x, "isTotal", js.undefined)
     
     @scala.inline
-    def deleteHierarchy: Self = this.set("hierarchy", js.undefined)
+    def setMeasureName(value: String): Self = StObject.set(x, "measureName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTotal(value: Double): Self = this.set("isTotal", value.asInstanceOf[js.Any])
+    def setMeasureNameUndefined: Self = StObject.set(x, "measureName", js.undefined)
     
     @scala.inline
-    def deleteIsTotal: Self = this.set("isTotal", js.undefined)
+    def setMember(value: String): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasureName(value: String): Self = this.set("measureName", value.asInstanceOf[js.Any])
+    def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
     
     @scala.inline
-    def deleteMeasureName: Self = this.set("measureName", js.undefined)
+    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMember(value: String): Self = this.set("member", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMember: Self = this.set("member", js.undefined)
-    
-    @scala.inline
-    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

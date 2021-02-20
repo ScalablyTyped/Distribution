@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "LoyaltyEventDeleteReward")
 @js.native
-class LoyaltyEventDeleteReward () extends js.Object {
+class LoyaltyEventDeleteReward () extends StObject {
   
   /**
     * The ID of the `loyalty program`.

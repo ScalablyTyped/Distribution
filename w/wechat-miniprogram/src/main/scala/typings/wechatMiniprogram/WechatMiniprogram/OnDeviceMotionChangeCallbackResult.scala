@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnDeviceMotionChangeCallbackResult extends js.Object {
+trait OnDeviceMotionChangeCallbackResult extends StObject {
   
   /** 当 手机坐标 X/Y 和 地球 X/Y 重合时，绕着 Z 轴转动的夹角为 alpha，范围值为 [0, 2*PI)。逆时针转动为正。 */
   var alpha: Double = js.native
@@ -25,27 +26,15 @@ object OnDeviceMotionChangeCallbackResult {
   }
   
   @scala.inline
-  implicit class OnDeviceMotionChangeCallbackResultOps[Self <: OnDeviceMotionChangeCallbackResult] (val x: Self) extends AnyVal {
+  implicit class OnDeviceMotionChangeCallbackResultMutableBuilder[Self <: OnDeviceMotionChangeCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBeta(value: Double): Self = this.set("beta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGamma(value: Double): Self = this.set("gamma", value.asInstanceOf[js.Any])
+    def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
   }
 }

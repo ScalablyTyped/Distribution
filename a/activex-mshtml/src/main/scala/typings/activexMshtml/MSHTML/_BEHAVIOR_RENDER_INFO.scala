@@ -16,6 +16,7 @@ import typings.activexMshtml.activexMshtmlNumbers.`40`
 import typings.activexMshtml.activexMshtmlNumbers.`4`
 import typings.activexMshtml.activexMshtmlNumbers.`512`
 import typings.activexMshtml.activexMshtmlNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMshtml.activexMshtmlNumbers.`4096`
   - typings.activexMshtml.activexMshtmlNumbers.`1048576`
 */
-trait _BEHAVIOR_RENDER_INFO extends js.Object
+trait _BEHAVIOR_RENDER_INFO extends StObject
 object _BEHAVIOR_RENDER_INFO {
   
   @scala.inline

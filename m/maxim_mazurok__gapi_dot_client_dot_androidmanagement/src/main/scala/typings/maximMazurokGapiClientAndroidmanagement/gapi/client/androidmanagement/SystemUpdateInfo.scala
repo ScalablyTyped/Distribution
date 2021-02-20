@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemUpdateInfo extends js.Object {
+trait SystemUpdateInfo extends StObject {
   
   /**
     * The time when the update was first available. A zero value indicates that this field is not set. This field is set only if an update is available (that is, updateStatus is neither
@@ -25,30 +26,18 @@ object SystemUpdateInfo {
   }
   
   @scala.inline
-  implicit class SystemUpdateInfoOps[Self <: SystemUpdateInfo] (val x: Self) extends AnyVal {
+  implicit class SystemUpdateInfoMutableBuilder[Self <: SystemUpdateInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdateReceivedTime(value: String): Self = StObject.set(x, "updateReceivedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpdateReceivedTimeUndefined: Self = StObject.set(x, "updateReceivedTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateStatus(value: String): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateReceivedTime(value: String): Self = this.set("updateReceivedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateReceivedTime: Self = this.set("updateReceivedTime", js.undefined)
-    
-    @scala.inline
-    def setUpdateStatus(value: String): Self = this.set("updateStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateStatus: Self = this.set("updateStatus", js.undefined)
+    def setUpdateStatusUndefined: Self = StObject.set(x, "updateStatus", js.undefined)
   }
 }

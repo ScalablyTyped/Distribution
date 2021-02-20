@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShadowPropTypesIOSStatic extends js.Object {
+trait ShadowPropTypesIOSStatic extends StObject {
   
   /**
     * Sets the drop shadow color
@@ -41,30 +42,18 @@ object ShadowPropTypesIOSStatic {
   }
   
   @scala.inline
-  implicit class ShadowPropTypesIOSStaticOps[Self <: ShadowPropTypesIOSStatic] (val x: Self) extends AnyVal {
+  implicit class ShadowPropTypesIOSStaticMutableBuilder[Self <: ShadowPropTypesIOSStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShadowColor(value: ColorValue): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShadowOffset(value: Height): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShadowOpacity(value: Double): Self = StObject.set(x, "shadowOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: ColorValue): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowOffset(value: Height): Self = this.set("shadowOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowOpacity(value: Double): Self = this.set("shadowOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowRadius(value: Double): Self = this.set("shadowRadius", value.asInstanceOf[js.Any])
+    def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
   }
 }

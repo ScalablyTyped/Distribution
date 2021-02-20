@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegexPatternSet extends js.Object {
+trait RegexPatternSet extends StObject {
   
   /**
     * A friendly name or description of the RegexPatternSet. You can't change Name after you create a RegexPatternSet.
@@ -31,33 +32,21 @@ object RegexPatternSet {
   }
   
   @scala.inline
-  implicit class RegexPatternSetOps[Self <: RegexPatternSet] (val x: Self) extends AnyVal {
+  implicit class RegexPatternSetMutableBuilder[Self <: RegexPatternSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegexPatternSetId(value: ResourceId): Self = StObject.set(x, "RegexPatternSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexPatternSetId(value: ResourceId): Self = this.set("RegexPatternSetId", value.asInstanceOf[js.Any])
+    def setRegexPatternStrings(value: RegexPatternStrings): Self = StObject.set(x, "RegexPatternStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexPatternStringsVarargs(value: RegexPatternString*): Self = this.set("RegexPatternStrings", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegexPatternStrings(value: RegexPatternStrings): Self = this.set("RegexPatternStrings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRegexPatternStringsVarargs(value: RegexPatternString*): Self = StObject.set(x, "RegexPatternStrings", js.Array(value :_*))
   }
 }

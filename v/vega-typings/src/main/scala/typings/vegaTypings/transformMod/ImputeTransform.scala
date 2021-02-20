@@ -2,6 +2,7 @@ package typings.vegaTypings.transformMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.impute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,57 +34,45 @@ object ImputeTransform {
   }
   
   @scala.inline
-  implicit class ImputeTransformOps[Self <: ImputeTransform] (val x: Self) extends AnyVal {
+  implicit class ImputeTransformMutableBuilder[Self <: ImputeTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
     @scala.inline
-    def setField(value: FieldRef): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
     @scala.inline
-    def setKey(value: FieldRef): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: FieldRef): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: impute): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setKeyvals(value: js.Array[_] | SignalRef): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupbyVarargs(value: FieldRef*): Self = this.set("groupby", js.Array(value :_*))
+    def setKeyvalsUndefined: Self = StObject.set(x, "keyvals", js.undefined)
     
     @scala.inline
-    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = this.set("groupby", value.asInstanceOf[js.Any])
+    def setKeyvalsVarargs(value: js.Any*): Self = StObject.set(x, "keyvals", js.Array(value :_*))
     
     @scala.inline
-    def deleteGroupby: Self = this.set("groupby", js.undefined)
+    def setMethod(value: ImputeMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyvalsVarargs(value: js.Any*): Self = this.set("keyvals", js.Array(value :_*))
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setKeyvals(value: js.Array[_] | SignalRef): Self = this.set("keyvals", value.asInstanceOf[js.Any])
+    def setType(value: impute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyvals: Self = this.set("keyvals", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: ImputeMethod | SignalRef): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

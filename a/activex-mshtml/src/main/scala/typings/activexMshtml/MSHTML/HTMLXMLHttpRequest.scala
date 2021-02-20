@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLXMLHttpRequest extends js.Object {
+trait HTMLXMLHttpRequest extends StObject {
   
   @JSName("MSHTML.HTMLXMLHttpRequest_typekey")
   var MSHTMLDotHTMLXMLHttpRequest_typekey: HTMLXMLHttpRequest = js.native

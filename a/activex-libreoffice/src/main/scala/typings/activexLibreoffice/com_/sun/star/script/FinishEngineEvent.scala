@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,27 +40,15 @@ object FinishEngineEvent {
   }
   
   @scala.inline
-  implicit class FinishEngineEventOps[Self <: FinishEngineEvent] (val x: Self) extends AnyVal {
+  implicit class FinishEngineEventMutableBuilder[Self <: FinishEngineEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinish(value: FinishReason): Self = StObject.set(x, "Finish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFinish(value: FinishReason): Self = this.set("Finish", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturn(value: js.Any): Self = this.set("Return", value.asInstanceOf[js.Any])
+    def setReturn(value: js.Any): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
   }
 }

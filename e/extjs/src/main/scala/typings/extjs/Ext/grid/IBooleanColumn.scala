@@ -1,5 +1,6 @@
 package typings.extjs.Ext.grid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,36 +27,24 @@ object IBooleanColumn {
   }
   
   @scala.inline
-  implicit class IBooleanColumnOps[Self <: IBooleanColumn] (val x: Self) extends AnyVal {
+  implicit class IBooleanColumnMutableBuilder[Self <: IBooleanColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFalseText(value: String): Self = StObject.set(x, "falseText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFalseTextUndefined: Self = StObject.set(x, "falseText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrueText(value: String): Self = StObject.set(x, "trueText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFalseText(value: String): Self = this.set("falseText", value.asInstanceOf[js.Any])
+    def setTrueTextUndefined: Self = StObject.set(x, "trueText", js.undefined)
     
     @scala.inline
-    def deleteFalseText: Self = this.set("falseText", js.undefined)
+    def setUndefinedText(value: String): Self = StObject.set(x, "undefinedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrueText(value: String): Self = this.set("trueText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrueText: Self = this.set("trueText", js.undefined)
-    
-    @scala.inline
-    def setUndefinedText(value: String): Self = this.set("undefinedText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUndefinedText: Self = this.set("undefinedText", js.undefined)
+    def setUndefinedTextUndefined: Self = StObject.set(x, "undefinedText", js.undefined)
   }
 }

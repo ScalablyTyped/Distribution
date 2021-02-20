@@ -4,12 +4,13 @@ import typings.qlik.qlikStrings.NX_FREQUENCY_NONE
 import typings.qlik.qlikStrings.NX_FREQUENCY_PERCENT
 import typings.qlik.qlikStrings.NX_FREQUENCY_RELATIVE
 import typings.qlik.qlikStrings.NX_FREQUENCY_VALUE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListobjectDef extends js.Object {
+trait ListobjectDef extends StObject {
   
   var qAutoSortByState: NxAutoSortByStateDef = js.native
   
@@ -45,48 +46,36 @@ object ListobjectDef {
   }
   
   @scala.inline
-  implicit class ListobjectDefOps[Self <: ListobjectDef] (val x: Self) extends AnyVal {
+  implicit class ListobjectDefMutableBuilder[Self <: ListobjectDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAutoSortByState(value: NxAutoSortByStateDef): Self = StObject.set(x, "qAutoSortByState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDef(value: NxInlineDimensionDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQExpressions(value: js.Array[NxListobjectExpressionDef]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAutoSortByState(value: NxAutoSortByStateDef): Self = this.set("qAutoSortByState", value.asInstanceOf[js.Any])
+    def setQExpressionsVarargs(value: NxListobjectExpressionDef*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
     
     @scala.inline
-    def setQDef(value: NxInlineDimensionDef): Self = this.set("qDef", value.asInstanceOf[js.Any])
+    def setQFrequencyMode(value: NX_FREQUENCY_NONE | NX_FREQUENCY_VALUE | NX_FREQUENCY_PERCENT | NX_FREQUENCY_RELATIVE): Self = StObject.set(x, "qFrequencyMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQExpressionsVarargs(value: NxListobjectExpressionDef*): Self = this.set("qExpressions", js.Array(value :_*))
+    def setQInitialDataFetch(value: js.Array[NxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQExpressions(value: js.Array[NxListobjectExpressionDef]): Self = this.set("qExpressions", value.asInstanceOf[js.Any])
+    def setQInitialDataFetchVarargs(value: NxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
     
     @scala.inline
-    def setQFrequencyMode(value: NX_FREQUENCY_NONE | NX_FREQUENCY_VALUE | NX_FREQUENCY_PERCENT | NX_FREQUENCY_RELATIVE): Self = this.set("qFrequencyMode", value.asInstanceOf[js.Any])
+    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQInitialDataFetchVarargs(value: NxPage*): Self = this.set("qInitialDataFetch", js.Array(value :_*))
+    def setQShowAlternatives(value: Boolean): Self = StObject.set(x, "qShowAlternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQInitialDataFetch(value: js.Array[NxPage]): Self = this.set("qInitialDataFetch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQLibraryId(value: String): Self = this.set("qLibraryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQShowAlternatives(value: Boolean): Self = this.set("qShowAlternatives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQStateName(value: String): Self = this.set("qStateName", value.asInstanceOf[js.Any])
+    def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
   }
 }

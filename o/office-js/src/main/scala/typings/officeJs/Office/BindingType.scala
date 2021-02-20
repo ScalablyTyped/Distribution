@@ -1,17 +1,18 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BindingType extends js.Object
+sealed trait BindingType extends StObject
 /**
   * Specifies the type of the binding object that should be returned.
   */
 @JSGlobal("Office.BindingType")
 @js.native
-object BindingType extends js.Object {
+object BindingType extends StObject {
   
   /**
     * Tabular data without a header row. Data is returned as an array of arrays, for example in this form: 

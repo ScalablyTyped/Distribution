@@ -1,5 +1,6 @@
 package typings.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A score entry for an Instant Game leaderboard
   */
 @js.native
-trait LeaderboardEntry extends js.Object {
+trait LeaderboardEntry extends StObject {
   
   /**
     * Gets the developer-specified payload associated with the score, or null if one was not set.
@@ -61,36 +62,24 @@ object LeaderboardEntry {
   }
   
   @scala.inline
-  implicit class LeaderboardEntryOps[Self <: LeaderboardEntry] (val x: Self) extends AnyVal {
+  implicit class LeaderboardEntryMutableBuilder[Self <: LeaderboardEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetExtraData(value: () => String | Null): Self = StObject.set(x, "getExtraData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFormattedScore(value: () => String): Self = StObject.set(x, "getFormattedScore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPlayer(value: () => LeaderboardPlayer): Self = StObject.set(x, "getPlayer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExtraData(value: () => String | Null): Self = this.set("getExtraData", js.Any.fromFunction0(value))
+    def setGetRank(value: () => Double): Self = StObject.set(x, "getRank", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFormattedScore(value: () => String): Self = this.set("getFormattedScore", js.Any.fromFunction0(value))
+    def setGetScore(value: () => Double): Self = StObject.set(x, "getScore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPlayer(value: () => LeaderboardPlayer): Self = this.set("getPlayer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRank(value: () => Double): Self = this.set("getRank", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetScore(value: () => Double): Self = this.set("getScore", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTimestamp(value: () => Double): Self = this.set("getTimestamp", js.Any.fromFunction0(value))
+    def setGetTimestamp(value: () => Double): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction0(value))
   }
 }

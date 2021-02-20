@@ -15,12 +15,13 @@ import typings.uiGrid.mod.rowEdit.IGridRowEditApi
 import typings.uiGrid.mod.saveState.IGridSaveStateApi
 import typings.uiGrid.mod.selection.IGridSelectionApi
 import typings.uiGrid.mod.treeBase.IGridTreeBaseApi
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGridApiOf[TEntity] extends js.Object {
+trait IGridApiOf[TEntity] extends StObject {
   
   /**
     * Cell Nav Api

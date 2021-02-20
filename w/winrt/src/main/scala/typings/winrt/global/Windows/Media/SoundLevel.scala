@@ -1,12 +1,13 @@
 package typings.winrt.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Media.SoundLevel")
 @js.native
-object SoundLevel extends js.Object {
+object SoundLevel extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.SoundLevel with Double] = js.native

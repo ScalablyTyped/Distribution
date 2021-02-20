@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellBuilder extends js.Object {
+trait CellBuilder extends StObject {
   
   def addClass(): Unit = js.native
   def addClass(value: String): Unit = js.native

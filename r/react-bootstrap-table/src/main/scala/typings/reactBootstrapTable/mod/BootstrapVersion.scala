@@ -1,5 +1,6 @@
 package typings.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBootstrapTable.reactBootstrapTableStrings.`3`
   - typings.reactBootstrapTable.reactBootstrapTableStrings.`4`
 */
-trait BootstrapVersion extends js.Object
+trait BootstrapVersion extends StObject
 object BootstrapVersion {
   
   @scala.inline

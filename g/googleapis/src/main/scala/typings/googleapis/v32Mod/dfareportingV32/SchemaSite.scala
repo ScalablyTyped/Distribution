@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains properties of a site.
   */
 @js.native
-trait SchemaSite extends js.Object {
+trait SchemaSite extends StObject {
   
   /**
     * Account ID of this site. This is a read-only field that can be left
@@ -89,93 +90,81 @@ object SchemaSite {
   }
   
   @scala.inline
-  implicit class SchemaSiteOps[Self <: SchemaSite] (val x: Self) extends AnyVal {
+  implicit class SchemaSiteMutableBuilder[Self <: SchemaSite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApproved(value: Boolean): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setDirectorySiteId(value: String): Self = StObject.set(x, "directorySiteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproved(value: Boolean): Self = this.set("approved", value.asInstanceOf[js.Any])
+    def setDirectorySiteIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "directorySiteIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApproved: Self = this.set("approved", js.undefined)
+    def setDirectorySiteIdDimensionValueUndefined: Self = StObject.set(x, "directorySiteIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setDirectorySiteId(value: String): Self = this.set("directorySiteId", value.asInstanceOf[js.Any])
+    def setDirectorySiteIdUndefined: Self = StObject.set(x, "directorySiteId", js.undefined)
     
     @scala.inline
-    def deleteDirectorySiteId: Self = this.set("directorySiteId", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectorySiteIdDimensionValue(value: SchemaDimensionValue): Self = this.set("directorySiteIdDimensionValue", value.asInstanceOf[js.Any])
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "idDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectorySiteIdDimensionValue: Self = this.set("directorySiteIdDimensionValue", js.undefined)
+    def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
     
     @scala.inline
-    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSiteContacts(value: js.Array[SchemaSiteContact]): Self = StObject.set(x, "siteContacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSiteContactsUndefined: Self = StObject.set(x, "siteContacts", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSiteContactsVarargs(value: SchemaSiteContact*): Self = StObject.set(x, "siteContacts", js.Array(value :_*))
     
     @scala.inline
-    def setSiteContactsVarargs(value: SchemaSiteContact*): Self = this.set("siteContacts", js.Array(value :_*))
+    def setSiteSettings(value: SchemaSiteSettings): Self = StObject.set(x, "siteSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteContacts(value: js.Array[SchemaSiteContact]): Self = this.set("siteContacts", value.asInstanceOf[js.Any])
+    def setSiteSettingsUndefined: Self = StObject.set(x, "siteSettings", js.undefined)
     
     @scala.inline
-    def deleteSiteContacts: Self = this.set("siteContacts", js.undefined)
+    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteSettings(value: SchemaSiteSettings): Self = this.set("siteSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiteSettings: Self = this.set("siteSettings", js.undefined)
-    
-    @scala.inline
-    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
   }
 }

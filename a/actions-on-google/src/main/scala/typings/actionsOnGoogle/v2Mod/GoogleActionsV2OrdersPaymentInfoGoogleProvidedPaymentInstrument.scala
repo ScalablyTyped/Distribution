@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument extends js.Object {
+trait GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument extends StObject {
   
   /**
     * If requested by integrator, billing address for the instrument in use
@@ -27,30 +28,18 @@ object GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrumentOps[Self <: GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrumentMutableBuilder[Self <: GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAddress(value: GoogleTypePostalAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstrumentToken(value: String): Self = StObject.set(x, "instrumentToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAddress(value: GoogleTypePostalAddress): Self = this.set("billingAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingAddress: Self = this.set("billingAddress", js.undefined)
-    
-    @scala.inline
-    def setInstrumentToken(value: String): Self = this.set("instrumentToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstrumentToken: Self = this.set("instrumentToken", js.undefined)
+    def setInstrumentTokenUndefined: Self = StObject.set(x, "instrumentToken", js.undefined)
   }
 }

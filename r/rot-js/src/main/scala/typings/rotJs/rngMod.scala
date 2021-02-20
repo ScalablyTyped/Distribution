@@ -1,19 +1,21 @@
 package typings.rotJs
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/rng", JSImport.Namespace)
-@js.native
-object rngMod extends js.Object {
+object rngMod extends Shortcut {
   
+  @JSImport("rot-js/lib/rng", JSImport.Default)
+  @js.native
   val default: RNG = js.native
   
   @js.native
-  trait RNG extends js.Object {
+  trait RNG extends StObject {
     
     var _c: Double = js.native
     
@@ -86,4 +88,9 @@ object rngMod extends js.Object {
       */
     def shuffle[T](array: js.Array[T]): js.Array[T] = js.native
   }
+  
+  type _To = RNG
+  
+  /* This means you don't have to write `default`, but can instead just say `rngMod.foo` */
+  override def _to: RNG = default
 }

@@ -6,6 +6,7 @@ import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.IConsensusPeerInfo
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,16 +22,18 @@ class ConsensusPeerInfo ()
   def this(properties: IConsensusPeerInfo) = this()
 }
 /* static members */
-@JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo")
-@js.native
-object ConsensusPeerInfo extends js.Object {
+object ConsensusPeerInfo {
   
   /**
     * Creates a new ConsensusPeerInfo instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ConsensusPeerInfo instance
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.create")
+  @js.native
   def create(): typings.sawtoothSdk.protobufMod.ConsensusPeerInfo = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.create")
+  @js.native
   def create(properties: IConsensusPeerInfo): typings.sawtoothSdk.protobufMod.ConsensusPeerInfo = js.native
   
   /**
@@ -41,9 +44,17 @@ object ConsensusPeerInfo extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.decode")
+  @js.native
   def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusPeerInfo = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.decode")
+  @js.native
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusPeerInfo = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.decode")
+  @js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusPeerInfo = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusPeerInfo = js.native
   
   /**
@@ -53,7 +64,11 @@ object ConsensusPeerInfo extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusPeerInfo = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusPeerInfo = js.native
   
   /**
@@ -62,7 +77,11 @@ object ConsensusPeerInfo extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.encode")
+  @js.native
   def encode(message: IConsensusPeerInfo): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.encode")
+  @js.native
   def encode(message: IConsensusPeerInfo, writer: Writer): Writer = js.native
   
   /**
@@ -71,7 +90,11 @@ object ConsensusPeerInfo extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusPeerInfo): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusPeerInfo, writer: Writer): Writer = js.native
   
   /**
@@ -79,6 +102,8 @@ object ConsensusPeerInfo extends js.Object {
     * @param object Plain object
     * @returns ConsensusPeerInfo
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusPeerInfo = js.native
   
   /**
@@ -87,7 +112,11 @@ object ConsensusPeerInfo extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.toObject")
+  @js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusPeerInfo): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.toObject")
+  @js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusPeerInfo, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -95,5 +124,7 @@ object ConsensusPeerInfo extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusPeerInfo.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

@@ -1,12 +1,13 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapTimeInterval extends js.Object {
+trait BootstrapTimeInterval extends StObject {
   
   def contains(interval: BootstrapTimeInterval): Boolean = js.native
   
@@ -39,7 +40,7 @@ object BootstrapTimeInterval {
   @scala.inline
   def apply(
     contains: BootstrapTimeInterval => Boolean,
-    equals: BootstrapTimeInterval => Boolean,
+    equals_ : BootstrapTimeInterval => Boolean,
     getAllDay: () => Boolean,
     getDuration: () => Double,
     getEnd: () => Date,
@@ -52,62 +53,51 @@ object BootstrapTimeInterval {
     setEnd: Date => Unit,
     setStart: Date => Unit
   ): BootstrapTimeInterval = {
-    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), equals = js.Any.fromFunction1(equals), getAllDay = js.Any.fromFunction0(getAllDay), getDuration = js.Any.fromFunction0(getDuration), getEnd = js.Any.fromFunction0(getEnd), getStart = js.Any.fromFunction0(getStart), instance = instance.asInstanceOf[js.Any], intersectsWith = js.Any.fromFunction1(intersectsWith), intersectsWithExcludingBounds = js.Any.fromFunction1(intersectsWithExcludingBounds), setAllDay = js.Any.fromFunction1(setAllDay), setDuration = js.Any.fromFunction1(setDuration), setEnd = js.Any.fromFunction1(setEnd), setStart = js.Any.fromFunction1(setStart))
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), getAllDay = js.Any.fromFunction0(getAllDay), getDuration = js.Any.fromFunction0(getDuration), getEnd = js.Any.fromFunction0(getEnd), getStart = js.Any.fromFunction0(getStart), instance = instance.asInstanceOf[js.Any], intersectsWith = js.Any.fromFunction1(intersectsWith), intersectsWithExcludingBounds = js.Any.fromFunction1(intersectsWithExcludingBounds), setAllDay = js.Any.fromFunction1(setAllDay), setDuration = js.Any.fromFunction1(setDuration), setEnd = js.Any.fromFunction1(setEnd), setStart = js.Any.fromFunction1(setStart))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[BootstrapTimeInterval]
   }
   
   @scala.inline
-  implicit class BootstrapTimeIntervalOps[Self <: BootstrapTimeInterval] (val x: Self) extends AnyVal {
+  implicit class BootstrapTimeIntervalMutableBuilder[Self <: BootstrapTimeInterval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: BootstrapTimeInterval => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquals_(value: BootstrapTimeInterval => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAllDay(value: () => Boolean): Self = StObject.set(x, "getAllDay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContains(value: BootstrapTimeInterval => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEquals(value: BootstrapTimeInterval => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setGetEnd(value: () => Date): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllDay(value: () => Boolean): Self = this.set("getAllDay", js.Any.fromFunction0(value))
+    def setGetStart(value: () => Date): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDuration(value: () => Double): Self = this.set("getDuration", js.Any.fromFunction0(value))
+    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetEnd(value: () => Date): Self = this.set("getEnd", js.Any.fromFunction0(value))
+    def setIntersectsWith(value: BootstrapTimeInterval => Boolean): Self = StObject.set(x, "intersectsWith", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStart(value: () => Date): Self = this.set("getStart", js.Any.fromFunction0(value))
+    def setIntersectsWithExcludingBounds(value: BootstrapTimeInterval => Boolean): Self = StObject.set(x, "intersectsWithExcludingBounds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInstance(value: js.Any): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setSetAllDay(value: Boolean => Unit): Self = StObject.set(x, "setAllDay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIntersectsWith(value: BootstrapTimeInterval => Boolean): Self = this.set("intersectsWith", js.Any.fromFunction1(value))
+    def setSetDuration(value: Double => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIntersectsWithExcludingBounds(value: BootstrapTimeInterval => Boolean): Self = this.set("intersectsWithExcludingBounds", js.Any.fromFunction1(value))
+    def setSetEnd(value: Date => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAllDay(value: Boolean => Unit): Self = this.set("setAllDay", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDuration(value: Double => Unit): Self = this.set("setDuration", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetEnd(value: Date => Unit): Self = this.set("setEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStart(value: Date => Unit): Self = this.set("setStart", js.Any.fromFunction1(value))
+    def setSetStart(value: Date => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
   }
 }

@@ -2,12 +2,13 @@ package typings.officeJsPreview.Office
 
 import typings.officeJsPreview.Office.MailboxEnums.AttachmentStatus
 import typings.officeJsPreview.officeJsPreviewStrings.olkAttachmentsChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentsChangedEventArgs extends js.Object {
+trait AttachmentsChangedEventArgs extends StObject {
   
   /**
     * Represents the set of attachments that were added or removed.
@@ -45,30 +46,18 @@ object AttachmentsChangedEventArgs {
   }
   
   @scala.inline
-  implicit class AttachmentsChangedEventArgsOps[Self <: AttachmentsChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class AttachmentsChangedEventArgsMutableBuilder[Self <: AttachmentsChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentDetails(value: js.Array[js.Object]): Self = StObject.set(x, "attachmentDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentDetailsVarargs(value: js.Object*): Self = StObject.set(x, "attachmentDetails", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentStatus(value: AttachmentStatus | String): Self = StObject.set(x, "attachmentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentDetailsVarargs(value: js.Object*): Self = this.set("attachmentDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttachmentDetails(value: js.Array[js.Object]): Self = this.set("attachmentDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttachmentStatus(value: AttachmentStatus | String): Self = this.set("attachmentStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: olkAttachmentsChanged): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: olkAttachmentsChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

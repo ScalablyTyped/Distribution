@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyBackupToRegionResponse extends js.Object {
+trait CopyBackupToRegionResponse extends StObject {
   
   /**
     * Information on the backup that will be copied to the destination region, including CreateTimestamp, SourceBackup, SourceCluster, and Source Region. CreateTimestamp of the destination backup will be the same as that of the source backup. You will need to use the sourceBackupID returned in this operation to use the DescribeBackups operation on the backup that will be copied to the destination region.
@@ -21,24 +22,12 @@ object CopyBackupToRegionResponse {
   }
   
   @scala.inline
-  implicit class CopyBackupToRegionResponseOps[Self <: CopyBackupToRegionResponse] (val x: Self) extends AnyVal {
+  implicit class CopyBackupToRegionResponseMutableBuilder[Self <: CopyBackupToRegionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationBackup(value: DestinationBackup): Self = StObject.set(x, "DestinationBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestinationBackup(value: DestinationBackup): Self = this.set("DestinationBackup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationBackup: Self = this.set("DestinationBackup", js.undefined)
+    def setDestinationBackupUndefined: Self = StObject.set(x, "DestinationBackup", js.undefined)
   }
 }

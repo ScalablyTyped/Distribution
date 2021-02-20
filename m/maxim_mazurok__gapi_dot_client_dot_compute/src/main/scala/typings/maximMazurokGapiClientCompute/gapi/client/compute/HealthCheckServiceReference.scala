@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HealthCheckServiceReference extends js.Object {
+trait HealthCheckServiceReference extends StObject {
   
   var healthCheckService: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object HealthCheckServiceReference {
   }
   
   @scala.inline
-  implicit class HealthCheckServiceReferenceOps[Self <: HealthCheckServiceReference] (val x: Self) extends AnyVal {
+  implicit class HealthCheckServiceReferenceMutableBuilder[Self <: HealthCheckServiceReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthCheckService(value: String): Self = StObject.set(x, "healthCheckService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHealthCheckService(value: String): Self = this.set("healthCheckService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheckService: Self = this.set("healthCheckService", js.undefined)
+    def setHealthCheckServiceUndefined: Self = StObject.set(x, "healthCheckService", js.undefined)
   }
 }

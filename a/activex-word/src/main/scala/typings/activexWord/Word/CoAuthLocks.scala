@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoAuthLocks extends js.Object {
+trait CoAuthLocks extends StObject {
   
   /** @param Word.WdLockType [Type=1] */
   def Add(Range: js.Any): CoAuthLock = js.native

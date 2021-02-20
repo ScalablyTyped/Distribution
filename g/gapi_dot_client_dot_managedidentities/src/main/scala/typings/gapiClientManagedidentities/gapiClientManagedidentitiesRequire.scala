@@ -1,5 +1,6 @@
 package typings.gapiClientManagedidentities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("gapi.client.managedidentities", JSImport.Namespace)
 @js.native
-object gapiClientManagedidentitiesRequire extends js.Object
+object gapiClientManagedidentitiesRequire extends StObject

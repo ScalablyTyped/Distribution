@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideDBFunctionBuilder extends js.Object {
+trait GlideDBFunctionBuilder extends StObject {
   
   /**
     * Adds the values of two or more integer fields.
@@ -207,51 +208,39 @@ object GlideDBFunctionBuilder {
   }
   
   @scala.inline
-  implicit class GlideDBFunctionBuilderOps[Self <: GlideDBFunctionBuilder] (val x: Self) extends AnyVal {
+  implicit class GlideDBFunctionBuilderMutableBuilder[Self <: GlideDBFunctionBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: () => GlideDBFunctionBuilder): Self = StObject.set(x, "add", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuild(value: () => String): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConcat(value: () => GlideDBFunctionBuilder): Self = StObject.set(x, "concat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: () => GlideDBFunctionBuilder): Self = this.set("add", js.Any.fromFunction0(value))
+    def setConstant(value: String => GlideDBFunctionBuilder): Self = StObject.set(x, "constant", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuild(value: () => String): Self = this.set("build", js.Any.fromFunction0(value))
+    def setDatediff(value: () => GlideDBFunctionBuilder): Self = StObject.set(x, "datediff", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConcat(value: () => GlideDBFunctionBuilder): Self = this.set("concat", js.Any.fromFunction0(value))
+    def setDayofweek(value: () => GlideDBFunctionBuilder): Self = StObject.set(x, "dayofweek", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConstant(value: String => GlideDBFunctionBuilder): Self = this.set("constant", js.Any.fromFunction1(value))
+    def setDivide(value: () => GlideDBFunctionBuilder): Self = StObject.set(x, "divide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDatediff(value: () => GlideDBFunctionBuilder): Self = this.set("datediff", js.Any.fromFunction0(value))
+    def setField(value: String => GlideDBFunctionBuilder): Self = StObject.set(x, "field", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDayofweek(value: () => GlideDBFunctionBuilder): Self = this.set("dayofweek", js.Any.fromFunction0(value))
+    def setLength(value: () => GlideDBFunctionBuilder): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDivide(value: () => GlideDBFunctionBuilder): Self = this.set("divide", js.Any.fromFunction0(value))
+    def setMultiply(value: () => GlideDBFunctionBuilder): Self = StObject.set(x, "multiply", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setField(value: String => GlideDBFunctionBuilder): Self = this.set("field", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: () => GlideDBFunctionBuilder): Self = this.set("length", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMultiply(value: () => GlideDBFunctionBuilder): Self = this.set("multiply", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubtract(value: () => GlideDBFunctionBuilder): Self = this.set("subtract", js.Any.fromFunction0(value))
+    def setSubtract(value: () => GlideDBFunctionBuilder): Self = StObject.set(x, "subtract", js.Any.fromFunction0(value))
   }
 }

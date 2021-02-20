@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Artifactsurl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsListWorkflowRunsResponseData extends js.Object {
+trait ActionsListWorkflowRunsResponseData extends StObject {
   
   var total_count: Double = js.native
   
@@ -21,27 +22,15 @@ object ActionsListWorkflowRunsResponseData {
   }
   
   @scala.inline
-  implicit class ActionsListWorkflowRunsResponseDataOps[Self <: ActionsListWorkflowRunsResponseData] (val x: Self) extends AnyVal {
+  implicit class ActionsListWorkflowRunsResponseDataMutableBuilder[Self <: ActionsListWorkflowRunsResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWorkflow_runs(value: js.Array[Artifactsurl]): Self = StObject.set(x, "workflow_runs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkflow_runsVarargs(value: Artifactsurl*): Self = this.set("workflow_runs", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkflow_runs(value: js.Array[Artifactsurl]): Self = this.set("workflow_runs", value.asInstanceOf[js.Any])
+    def setWorkflow_runsVarargs(value: Artifactsurl*): Self = StObject.set(x, "workflow_runs", js.Array(value :_*))
   }
 }

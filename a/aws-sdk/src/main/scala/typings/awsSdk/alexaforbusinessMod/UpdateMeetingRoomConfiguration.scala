@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateMeetingRoomConfiguration extends js.Object {
+trait UpdateMeetingRoomConfiguration extends StObject {
   
   /**
     * Settings for the end of meeting reminder feature that are applied to a room profile. The end of meeting reminder enables Alexa to remind users when a meeting is ending. 
@@ -36,42 +37,30 @@ object UpdateMeetingRoomConfiguration {
   }
   
   @scala.inline
-  implicit class UpdateMeetingRoomConfigurationOps[Self <: UpdateMeetingRoomConfiguration] (val x: Self) extends AnyVal {
+  implicit class UpdateMeetingRoomConfigurationMutableBuilder[Self <: UpdateMeetingRoomConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndOfMeetingReminder(value: UpdateEndOfMeetingReminder): Self = StObject.set(x, "EndOfMeetingReminder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndOfMeetingReminderUndefined: Self = StObject.set(x, "EndOfMeetingReminder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstantBooking(value: UpdateInstantBooking): Self = StObject.set(x, "InstantBooking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOfMeetingReminder(value: UpdateEndOfMeetingReminder): Self = this.set("EndOfMeetingReminder", value.asInstanceOf[js.Any])
+    def setInstantBookingUndefined: Self = StObject.set(x, "InstantBooking", js.undefined)
     
     @scala.inline
-    def deleteEndOfMeetingReminder: Self = this.set("EndOfMeetingReminder", js.undefined)
+    def setRequireCheckIn(value: UpdateRequireCheckIn): Self = StObject.set(x, "RequireCheckIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstantBooking(value: UpdateInstantBooking): Self = this.set("InstantBooking", value.asInstanceOf[js.Any])
+    def setRequireCheckInUndefined: Self = StObject.set(x, "RequireCheckIn", js.undefined)
     
     @scala.inline
-    def deleteInstantBooking: Self = this.set("InstantBooking", js.undefined)
+    def setRoomUtilizationMetricsEnabled(value: Boolean): Self = StObject.set(x, "RoomUtilizationMetricsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireCheckIn(value: UpdateRequireCheckIn): Self = this.set("RequireCheckIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireCheckIn: Self = this.set("RequireCheckIn", js.undefined)
-    
-    @scala.inline
-    def setRoomUtilizationMetricsEnabled(value: Boolean): Self = this.set("RoomUtilizationMetricsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomUtilizationMetricsEnabled: Self = this.set("RoomUtilizationMetricsEnabled", js.undefined)
+    def setRoomUtilizationMetricsEnabledUndefined: Self = StObject.set(x, "RoomUtilizationMetricsEnabled", js.undefined)
   }
 }

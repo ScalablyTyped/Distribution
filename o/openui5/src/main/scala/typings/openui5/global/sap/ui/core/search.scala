@@ -1,13 +1,13 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.search")
-@js.native
-object search extends js.Object {
+object search {
   
+  @JSGlobal("sap.ui.core.search.OpenSearchProvider")
   @js.native
   class OpenSearchProvider protected ()
     extends typings.openui5.sap.ui.core.search.OpenSearchProvider {
@@ -23,6 +23,7 @@ object search extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.search.SearchProvider")
   @js.native
   class SearchProvider protected ()
     extends typings.openui5.sap.ui.core.search.SearchProvider {

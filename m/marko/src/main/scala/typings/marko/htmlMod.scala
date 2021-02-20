@@ -1,15 +1,18 @@
 package typings.marko
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("marko/src/runtime/html", JSImport.Namespace)
-@js.native
-object htmlMod extends js.Object {
+object htmlMod {
   
+  @JSImport("marko/src/runtime/html", "createWriter")
+  @js.native
   def createWriter(writer: js.Any): AsyncStream = js.native
   
+  @JSImport("marko/src/runtime/html", "enableAsyncStackTrace")
+  @js.native
   def enableAsyncStackTrace(): Unit = js.native
   
   type AsyncStream = typings.marko.asyncStreamMod.AsyncStream

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.ssm
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig extends js.Object {
+trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
@@ -32,39 +33,27 @@ object MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotifica
   }
   
   @scala.inline
-  implicit class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOps[Self <: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig] (val x: Self) extends AnyVal {
+  implicit class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigMutableBuilder[Self <: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotificationArn(value: Input[String]): Self = StObject.set(x, "notificationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotificationArnUndefined: Self = StObject.set(x, "notificationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotificationEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "notificationEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationArn(value: Input[String]): Self = this.set("notificationArn", value.asInstanceOf[js.Any])
+    def setNotificationEventsUndefined: Self = StObject.set(x, "notificationEvents", js.undefined)
     
     @scala.inline
-    def deleteNotificationArn: Self = this.set("notificationArn", js.undefined)
+    def setNotificationEventsVarargs(value: Input[String]*): Self = StObject.set(x, "notificationEvents", js.Array(value :_*))
     
     @scala.inline
-    def setNotificationEventsVarargs(value: Input[String]*): Self = this.set("notificationEvents", js.Array(value :_*))
+    def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationEvents(value: Input[js.Array[Input[String]]]): Self = this.set("notificationEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationEvents: Self = this.set("notificationEvents", js.undefined)
-    
-    @scala.inline
-    def setNotificationType(value: Input[String]): Self = this.set("notificationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationType: Self = this.set("notificationType", js.undefined)
+    def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
   }
 }

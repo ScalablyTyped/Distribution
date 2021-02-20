@@ -7,14 +7,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/filterPostProcess", JSImport.Namespace)
-@js.native
-object filterPostProcessMod extends js.Object {
+object filterPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/filterPostProcess", "FilterPostProcess")
   @js.native
   class FilterPostProcess protected () extends PostProcess {
     /**
@@ -152,10 +152,11 @@ object filterPostProcessMod extends js.Object {
     var kernelMatrix: Matrix = js.native
   }
   /* static members */
-  @js.native
-  object FilterPostProcess extends js.Object {
+  object FilterPostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/filterPostProcess", "FilterPostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[FilterPostProcess] = js.native
   }
 }

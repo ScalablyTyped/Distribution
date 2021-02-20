@@ -1,11 +1,12 @@
 package typings.baseui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThemeT1[T1] extends js.Object {
+trait ThemeT1[T1] extends StObject {
   
   @JSName("$theme")
   var $theme: T1 = js.native
@@ -19,21 +20,9 @@ object ThemeT1 {
   }
   
   @scala.inline
-  implicit class ThemeT1Ops[Self <: ThemeT1[_], T1] (val x: Self with ThemeT1[T1]) extends AnyVal {
+  implicit class ThemeT1MutableBuilder[Self <: ThemeT1[_], T1] (val x: Self with ThemeT1[T1]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$theme(value: T1): Self = this.set("$theme", value.asInstanceOf[js.Any])
+    def set$theme(value: T1): Self = StObject.set(x, "$theme", value.asInstanceOf[js.Any])
   }
 }

@@ -2,16 +2,16 @@ package typings.sharepoint.global
 
 import typings.sharepoint.SPAnimation.ID
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SPAnimation")
-@js.native
-object SPAnimation extends js.Object {
+object SPAnimation {
   
+  @JSGlobal("SPAnimation.Attribute")
   @js.native
-  object Attribute extends js.Object {
+  object Attribute extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SPAnimation.Attribute with Double] = js.native
@@ -27,8 +27,9 @@ object SPAnimation extends js.Object {
     /* 3 */ val Width: typings.sharepoint.SPAnimation.Attribute.Width with Double = js.native
   }
   
+  @JSGlobal("SPAnimation.ID")
   @js.native
-  object ID extends js.Object {
+  object ID extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SPAnimation.ID with Double] = js.native
@@ -78,6 +79,7 @@ object SPAnimation extends js.Object {
     /* 12 */ val Test_Instant: typings.sharepoint.SPAnimation.ID.Test_Instant with Double = js.native
   }
   
+  @JSGlobal("SPAnimation.Object")
   @js.native
   class Object protected ()
     extends typings.sharepoint.SPAnimation.Object {
@@ -141,20 +143,29 @@ object SPAnimation extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("SPAnimation.Settings")
   @js.native
   class Settings ()
     extends typings.sharepoint.SPAnimation.Settings
-  /* static members */
-  @js.native
-  object Settings extends js.Object {
+  object Settings {
     
+    /* static member */
+    @JSGlobal("SPAnimation.Settings.DisableAnimation")
+    @js.native
     def DisableAnimation(): Unit = js.native
     
+    /* static member */
+    @JSGlobal("SPAnimation.Settings.DisableSessionAnimation")
+    @js.native
     def DisableSessionAnimation(): Unit = js.native
     
+    /* static member */
+    @JSGlobal("SPAnimation.Settings.IsAnimationEnabled")
+    @js.native
     def IsAnimationEnabled(): Boolean = js.native
   }
   
+  @JSGlobal("SPAnimation.State")
   @js.native
   class State ()
     extends typings.sharepoint.SPAnimation.State

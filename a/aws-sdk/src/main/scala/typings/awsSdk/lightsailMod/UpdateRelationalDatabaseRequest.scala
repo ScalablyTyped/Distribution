@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRelationalDatabaseRequest extends js.Object {
+trait UpdateRelationalDatabaseRequest extends StObject {
   
   /**
     * When true, applies changes immediately. When false, applies changes during the preferred maintenance window. Some changes may cause an outage. Default: false 
@@ -66,75 +67,63 @@ object UpdateRelationalDatabaseRequest {
   }
   
   @scala.inline
-  implicit class UpdateRelationalDatabaseRequestOps[Self <: UpdateRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRelationalDatabaseRequestMutableBuilder[Self <: UpdateRelationalDatabaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaCertificateIdentifier(value: String): Self = StObject.set(x, "caCertificateIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    def setCaCertificateIdentifierUndefined: Self = StObject.set(x, "caCertificateIdentifier", js.undefined)
     
     @scala.inline
-    def setApplyImmediately(value: Boolean): Self = this.set("applyImmediately", value.asInstanceOf[js.Any])
+    def setDisableBackupRetention(value: Boolean): Self = StObject.set(x, "disableBackupRetention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplyImmediately: Self = this.set("applyImmediately", js.undefined)
+    def setDisableBackupRetentionUndefined: Self = StObject.set(x, "disableBackupRetention", js.undefined)
     
     @scala.inline
-    def setCaCertificateIdentifier(value: String): Self = this.set("caCertificateIdentifier", value.asInstanceOf[js.Any])
+    def setEnableBackupRetention(value: Boolean): Self = StObject.set(x, "enableBackupRetention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaCertificateIdentifier: Self = this.set("caCertificateIdentifier", js.undefined)
+    def setEnableBackupRetentionUndefined: Self = StObject.set(x, "enableBackupRetention", js.undefined)
     
     @scala.inline
-    def setDisableBackupRetention(value: Boolean): Self = this.set("disableBackupRetention", value.asInstanceOf[js.Any])
+    def setMasterUserPassword(value: SensitiveString): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableBackupRetention: Self = this.set("disableBackupRetention", js.undefined)
+    def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
     
     @scala.inline
-    def setEnableBackupRetention(value: Boolean): Self = this.set("enableBackupRetention", value.asInstanceOf[js.Any])
+    def setPreferredBackupWindow(value: String): Self = StObject.set(x, "preferredBackupWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableBackupRetention: Self = this.set("enableBackupRetention", js.undefined)
+    def setPreferredBackupWindowUndefined: Self = StObject.set(x, "preferredBackupWindow", js.undefined)
     
     @scala.inline
-    def setMasterUserPassword(value: SensitiveString): Self = this.set("masterUserPassword", value.asInstanceOf[js.Any])
+    def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMasterUserPassword: Self = this.set("masterUserPassword", js.undefined)
+    def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "preferredMaintenanceWindow", js.undefined)
     
     @scala.inline
-    def setPreferredBackupWindow(value: String): Self = this.set("preferredBackupWindow", value.asInstanceOf[js.Any])
+    def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferredBackupWindow: Self = this.set("preferredBackupWindow", js.undefined)
+    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
     
     @scala.inline
-    def setPreferredMaintenanceWindow(value: String): Self = this.set("preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferredMaintenanceWindow: Self = this.set("preferredMaintenanceWindow", js.undefined)
+    def setRotateMasterUserPassword(value: Boolean): Self = StObject.set(x, "rotateMasterUserPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubliclyAccessible(value: Boolean): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
-    
-    @scala.inline
-    def setRotateMasterUserPassword(value: Boolean): Self = this.set("rotateMasterUserPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotateMasterUserPassword: Self = this.set("rotateMasterUserPassword", js.undefined)
+    def setRotateMasterUserPasswordUndefined: Self = StObject.set(x, "rotateMasterUserPassword", js.undefined)
   }
 }

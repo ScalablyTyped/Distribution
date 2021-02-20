@@ -1,12 +1,13 @@
 package typings.ipp.mod
 
 import typings.ipp.anon.Requestedattributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetJobAttributesRequest extends js.Object {
+trait GetJobAttributesRequest extends StObject {
   
   var `operation-attributes-tag`: Requestedattributes = js.native
 }
@@ -20,21 +21,9 @@ object GetJobAttributesRequest {
   }
   
   @scala.inline
-  implicit class GetJobAttributesRequestOps[Self <: GetJobAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class GetJobAttributesRequestMutableBuilder[Self <: GetJobAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Requestedattributes): Self = this.set("operation-attributes-tag", value.asInstanceOf[js.Any])
+    def `setOperation-attributes-tag`(value: Requestedattributes): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }
 }

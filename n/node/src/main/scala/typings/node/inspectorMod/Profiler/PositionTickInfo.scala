@@ -1,5 +1,6 @@
 package typings.node.inspectorMod.Profiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies a number of samples attributed to a certain source position.
   */
 @js.native
-trait PositionTickInfo extends js.Object {
+trait PositionTickInfo extends StObject {
   
   /**
     * Source line number (1-based).
@@ -29,24 +30,12 @@ object PositionTickInfo {
   }
   
   @scala.inline
-  implicit class PositionTickInfoOps[Self <: PositionTickInfo] (val x: Self) extends AnyVal {
+  implicit class PositionTickInfoMutableBuilder[Self <: PositionTickInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicks(value: Double): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    def setTicks(value: Double): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
   }
 }

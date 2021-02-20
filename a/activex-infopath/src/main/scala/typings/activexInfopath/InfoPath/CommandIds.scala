@@ -179,6 +179,7 @@ import typings.activexInfopath.activexInfopathNumbers.`97`
 import typings.activexInfopath.activexInfopathNumbers.`98`
 import typings.activexInfopath.activexInfopathNumbers.`99`
 import typings.activexInfopath.activexInfopathNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -364,7 +365,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexInfopath.activexInfopathNumbers.`56`
   - typings.activexInfopath.activexInfopathNumbers.`3`
 */
-trait CommandIds extends js.Object
+trait CommandIds extends StObject
 object CommandIds {
   
   @scala.inline

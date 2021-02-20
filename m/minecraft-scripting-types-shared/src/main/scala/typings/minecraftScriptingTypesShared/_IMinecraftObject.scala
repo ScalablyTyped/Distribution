@@ -8,52 +8,53 @@ import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedString
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.level
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.level_ticking_area
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _IMinecraftObject extends js.Object
+trait _IMinecraftObject extends StObject
 object _IMinecraftObject {
   
   @scala.inline
-  def ILevelTickingArea(__type__ : level_ticking_area, level_ticking_area_id: String): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], level_ticking_area_id = level_ticking_area_id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_IMinecraftObject]
-  }
-  
-  @scala.inline
-  def IItemStack(__identifier__ : String, __type__ : item_stack, count: Double, item: String): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_IMinecraftObject]
-  }
-  
-  @scala.inline
-  def IEntity(__identifier__ : String, __type__ : entity | item_entity, id: Double): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_IMinecraftObject]
-  }
-  
-  @scala.inline
-  def IEntityTickingArea(__type__ : entity_ticking_area, entity_ticking_area_id: Int64): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], entity_ticking_area_id = entity_ticking_area_id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_IMinecraftObject]
-  }
-  
-  @scala.inline
-  def IQuery(__type__ : query, query_id: Double): _IMinecraftObject = {
-    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], query_id = query_id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_IMinecraftObject]
-  }
-  
-  @scala.inline
-  def IBlock(__identifier__ : String, __type__ : block, block_position: VectorXYZ, ticking_area: ITickingArea): _IMinecraftObject = {
+  def IBlock(__identifier__ : String, __type__ : block, block_position: VectorXYZ, ticking_area: ITickingArea): typings.minecraftScriptingTypesShared.IBlock = {
     val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], block_position = block_position.asInstanceOf[js.Any], ticking_area = ticking_area.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_IMinecraftObject]
+    __obj.asInstanceOf[typings.minecraftScriptingTypesShared.IBlock]
   }
   
   @scala.inline
-  def ILevel(__type__ : level, level_id: Double): _IMinecraftObject = {
+  def IEntity(__identifier__ : String, __type__ : entity | item_entity, id: Double): typings.minecraftScriptingTypesShared.IEntity = {
+    val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.minecraftScriptingTypesShared.IEntity]
+  }
+  
+  @scala.inline
+  def IEntityTickingArea(__type__ : entity_ticking_area, entity_ticking_area_id: Int64): typings.minecraftScriptingTypesShared.IEntityTickingArea = {
+    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], entity_ticking_area_id = entity_ticking_area_id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.minecraftScriptingTypesShared.IEntityTickingArea]
+  }
+  
+  @scala.inline
+  def IItemStack(__identifier__ : String, __type__ : item_stack, count: Double, item: String): typings.minecraftScriptingTypesShared.IItemStack = {
+    val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.minecraftScriptingTypesShared.IItemStack]
+  }
+  
+  @scala.inline
+  def ILevel(__type__ : level, level_id: Double): typings.minecraftScriptingTypesShared.ILevel = {
     val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], level_id = level_id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_IMinecraftObject]
+    __obj.asInstanceOf[typings.minecraftScriptingTypesShared.ILevel]
+  }
+  
+  @scala.inline
+  def ILevelTickingArea(__type__ : level_ticking_area, level_ticking_area_id: String): typings.minecraftScriptingTypesShared.ILevelTickingArea = {
+    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], level_ticking_area_id = level_ticking_area_id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.minecraftScriptingTypesShared.ILevelTickingArea]
+  }
+  
+  @scala.inline
+  def IQuery(__type__ : query, query_id: Double): typings.minecraftScriptingTypesShared.IQuery = {
+    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], query_id = query_id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.minecraftScriptingTypesShared.IQuery]
   }
 }

@@ -1,11 +1,12 @@
 package typings.dbJs.DbJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypedObjectStoreServer[T] extends js.Object {
+trait TypedObjectStoreServer[T] extends StObject {
   
   def add(entities: T*): js.Promise[js.Array[T]] = js.native
   def add(entity: T): js.Promise[T] = js.native

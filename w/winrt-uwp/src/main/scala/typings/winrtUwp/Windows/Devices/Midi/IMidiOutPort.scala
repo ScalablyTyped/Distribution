@@ -2,6 +2,7 @@ package typings.winrtUwp.Windows.Devices.Midi
 
 import typings.winrtUwp.Windows.Foundation.IClosable
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,27 +40,15 @@ object IMidiOutPort {
   }
   
   @scala.inline
-  implicit class IMidiOutPortOps[Self <: IMidiOutPort] (val x: Self) extends AnyVal {
+  implicit class IMidiOutPortMutableBuilder[Self <: IMidiOutPort] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSendBuffer(value: IBuffer => Unit): Self = StObject.set(x, "sendBuffer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSendBuffer(value: IBuffer => Unit): Self = this.set("sendBuffer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSendMessage(value: IMidiMessage => Unit): Self = this.set("sendMessage", js.Any.fromFunction1(value))
+    def setSendMessage(value: IMidiMessage => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
   }
 }

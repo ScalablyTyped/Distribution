@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.themeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PickerTheme extends js.Object {
+trait PickerTheme extends StObject {
   
   var fontColor: String = js.native
   
@@ -24,30 +25,18 @@ object PickerTheme {
   }
   
   @scala.inline
-  implicit class PickerThemeOps[Self <: PickerTheme] (val x: Self) extends AnyVal {
+  implicit class PickerThemeMutableBuilder[Self <: PickerTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnitFontColor(value: String): Self = StObject.set(x, "unitFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnitFontColor(value: String): Self = this.set("unitFontColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnitFontSize(value: Double): Self = this.set("unitFontSize", value.asInstanceOf[js.Any])
+    def setUnitFontSize(value: Double): Self = StObject.set(x, "unitFontSize", value.asInstanceOf[js.Any])
   }
 }

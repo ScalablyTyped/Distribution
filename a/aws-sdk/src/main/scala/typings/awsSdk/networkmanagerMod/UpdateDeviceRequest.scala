@@ -1,11 +1,12 @@
 package typings.awsSdk.networkmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDeviceRequest extends js.Object {
+trait UpdateDeviceRequest extends StObject {
   
   /**
     * A description of the device. Length Constraints: Maximum length of 256 characters.
@@ -58,66 +59,54 @@ object UpdateDeviceRequest {
   }
   
   @scala.inline
-  implicit class UpdateDeviceRequestOps[Self <: UpdateDeviceRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDeviceRequestMutableBuilder[Self <: UpdateDeviceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalNetworkId(value: String): Self = this.set("GlobalNetworkId", value.asInstanceOf[js.Any])
+    def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("Location", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("Location", js.undefined)
+    def setSerialNumber(value: String): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("Model", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("Model", js.undefined)
+    def setSiteId(value: String): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
     
     @scala.inline
-    def deleteSerialNumber: Self = this.set("SerialNumber", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteId(value: String): Self = this.set("SiteId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteSiteId: Self = this.set("SiteId", js.undefined)
+    def setVendor(value: String): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setVendor(value: String): Self = this.set("Vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendor: Self = this.set("Vendor", js.undefined)
+    def setVendorUndefined: Self = StObject.set(x, "Vendor", js.undefined)
   }
 }

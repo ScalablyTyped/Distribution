@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,66 +136,54 @@ object ASPxClientTreeView {
   }
   
   @scala.inline
-  implicit class ASPxClientTreeViewOps[Self <: ASPxClientTreeView] (val x: Self) extends AnyVal {
+  implicit class ASPxClientTreeViewMutableBuilder[Self <: ASPxClientTreeView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTreeView]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTreeView]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckedChanged(value: ASPxClientEvent[ASPxClientTreeViewNodeProcessingModeEventHandler[ASPxClientTreeView]]): Self = StObject.set(x, "CheckedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTreeView]]): Self = this.set("BeginCallback", value.asInstanceOf[js.Any])
+    def setCollapseAll(value: () => Unit): Self = StObject.set(x, "CollapseAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTreeView]]): Self = this.set("CallbackError", value.asInstanceOf[js.Any])
+    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientTreeView]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedChanged(value: ASPxClientEvent[ASPxClientTreeViewNodeProcessingModeEventHandler[ASPxClientTreeView]]): Self = this.set("CheckedChanged", value.asInstanceOf[js.Any])
+    def setExpandAll(value: () => Unit): Self = StObject.set(x, "ExpandAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapseAll(value: () => Unit): Self = this.set("CollapseAll", js.Any.fromFunction0(value))
+    def setExpandedChanged(value: ASPxClientEvent[ASPxClientTreeViewNodeEventHandler[ASPxClientTreeView]]): Self = StObject.set(x, "ExpandedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientTreeView]]): Self = this.set("EndCallback", value.asInstanceOf[js.Any])
+    def setExpandedChanging(value: ASPxClientEvent[ASPxClientTreeViewNodeCancelEventHandler[ASPxClientTreeView]]): Self = StObject.set(x, "ExpandedChanging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandAll(value: () => Unit): Self = this.set("ExpandAll", js.Any.fromFunction0(value))
+    def setGetNode(value: Double => ASPxClientTreeViewNode): Self = StObject.set(x, "GetNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpandedChanged(value: ASPxClientEvent[ASPxClientTreeViewNodeEventHandler[ASPxClientTreeView]]): Self = this.set("ExpandedChanged", value.asInstanceOf[js.Any])
+    def setGetNodeByName(value: String => ASPxClientTreeViewNode): Self = StObject.set(x, "GetNodeByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpandedChanging(value: ASPxClientEvent[ASPxClientTreeViewNodeCancelEventHandler[ASPxClientTreeView]]): Self = this.set("ExpandedChanging", value.asInstanceOf[js.Any])
+    def setGetNodeByText(value: String => ASPxClientTreeViewNode): Self = StObject.set(x, "GetNodeByText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNode(value: Double => ASPxClientTreeViewNode): Self = this.set("GetNode", js.Any.fromFunction1(value))
+    def setGetNodeCount(value: () => Double): Self = StObject.set(x, "GetNodeCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeByName(value: String => ASPxClientTreeViewNode): Self = this.set("GetNodeByName", js.Any.fromFunction1(value))
+    def setGetRootNode(value: () => ASPxClientTreeViewNode): Self = StObject.set(x, "GetRootNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeByText(value: String => ASPxClientTreeViewNode): Self = this.set("GetNodeByText", js.Any.fromFunction1(value))
+    def setGetSelectedNode(value: () => ASPxClientTreeViewNode): Self = StObject.set(x, "GetSelectedNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeCount(value: () => Double): Self = this.set("GetNodeCount", js.Any.fromFunction0(value))
+    def setNodeClick(value: ASPxClientEvent[ASPxClientTreeViewNodeClickEventHandler[ASPxClientTreeView]]): Self = StObject.set(x, "NodeClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRootNode(value: () => ASPxClientTreeViewNode): Self = this.set("GetRootNode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSelectedNode(value: () => ASPxClientTreeViewNode): Self = this.set("GetSelectedNode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNodeClick(value: ASPxClientEvent[ASPxClientTreeViewNodeClickEventHandler[ASPxClientTreeView]]): Self = this.set("NodeClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetSelectedNode(value: ASPxClientTreeViewNode => Unit): Self = this.set("SetSelectedNode", js.Any.fromFunction1(value))
+    def setSetSelectedNode(value: ASPxClientTreeViewNode => Unit): Self = StObject.set(x, "SetSelectedNode", js.Any.fromFunction1(value))
   }
 }

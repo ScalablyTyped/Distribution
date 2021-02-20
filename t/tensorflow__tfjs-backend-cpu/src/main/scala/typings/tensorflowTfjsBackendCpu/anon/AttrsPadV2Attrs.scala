@@ -3,12 +3,13 @@ package typings.tensorflowTfjsBackendCpu.anon
 import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
 import typings.tensorflowTfjsCore.kernelNamesMod.PadV2Attrs
 import typings.tensorflowTfjsCore.kernelNamesMod.PadV2Inputs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttrsPadV2Attrs extends js.Object {
+trait AttrsPadV2Attrs extends StObject {
   
   var attrs: PadV2Attrs = js.native
   
@@ -25,27 +26,15 @@ object AttrsPadV2Attrs {
   }
   
   @scala.inline
-  implicit class AttrsPadV2AttrsOps[Self <: AttrsPadV2Attrs] (val x: Self) extends AnyVal {
+  implicit class AttrsPadV2AttrsMutableBuilder[Self <: AttrsPadV2Attrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs(value: PadV2Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttrs(value: PadV2Attrs): Self = this.set("attrs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = this.set("backend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputs(value: PadV2Inputs): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setInputs(value: PadV2Inputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request used for `CreateWorkerPool`.
   */
 @js.native
-trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest extends js.Object {
+trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest extends StObject {
   
   /**
     * Resource name of the instance in which to create the new worker pool.
@@ -39,36 +40,24 @@ object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolReque
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequestOps[Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequestMutableBuilder[Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setPoolIdUndefined: Self = StObject.set(x, "poolId", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setWorkerPool(value: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool): Self = StObject.set(x, "workerPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolId(value: String): Self = this.set("poolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoolId: Self = this.set("poolId", js.undefined)
-    
-    @scala.inline
-    def setWorkerPool(value: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool): Self = this.set("workerPool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerPool: Self = this.set("workerPool", js.undefined)
+    def setWorkerPoolUndefined: Self = StObject.set(x, "workerPool", js.undefined)
   }
 }

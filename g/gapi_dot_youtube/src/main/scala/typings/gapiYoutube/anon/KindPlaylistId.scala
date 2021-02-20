@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KindPlaylistId extends js.Object {
+trait KindPlaylistId extends StObject {
   
   /**
     * If the id.type propertys value is youtube#channel, then this property will be present and its value will contain the ID that YouTube uses to uniquely identify a channel that matches the search query.
@@ -36,30 +37,18 @@ object KindPlaylistId {
   }
   
   @scala.inline
-  implicit class KindPlaylistIdOps[Self <: KindPlaylistId] (val x: Self) extends AnyVal {
+  implicit class KindPlaylistIdMutableBuilder[Self <: KindPlaylistId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaylistId(value: String): Self = this.set("playlistId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
+    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
   }
 }

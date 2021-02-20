@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.AdvertiserGroupIds
 import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.AltCallback
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdvertisersResource extends js.Object {
+trait AdvertisersResource extends StObject {
   
   /** Gets one advertiser by ID. */
   def get(): Request[Advertiser] = js.native

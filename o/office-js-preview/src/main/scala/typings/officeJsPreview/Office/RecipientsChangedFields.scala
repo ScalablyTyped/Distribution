@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: Mailbox 1.7]
   */
 @js.native
-trait RecipientsChangedFields extends js.Object {
+trait RecipientsChangedFields extends StObject {
   
   /**
     * Gets if recipients in the **bcc** field were changed.
@@ -70,36 +71,24 @@ object RecipientsChangedFields {
   }
   
   @scala.inline
-  implicit class RecipientsChangedFieldsOps[Self <: RecipientsChangedFields] (val x: Self) extends AnyVal {
+  implicit class RecipientsChangedFieldsMutableBuilder[Self <: RecipientsChangedFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBcc(value: Boolean): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCc(value: Boolean): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionalAttendees(value: Boolean): Self = StObject.set(x, "optionalAttendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBcc(value: Boolean): Self = this.set("bcc", value.asInstanceOf[js.Any])
+    def setRequiredAttendees(value: Boolean): Self = StObject.set(x, "requiredAttendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCc(value: Boolean): Self = this.set("cc", value.asInstanceOf[js.Any])
+    def setResources(value: Boolean): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalAttendees(value: Boolean): Self = this.set("optionalAttendees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequiredAttendees(value: Boolean): Self = this.set("requiredAttendees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResources(value: Boolean): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: Boolean): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setTo(value: Boolean): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

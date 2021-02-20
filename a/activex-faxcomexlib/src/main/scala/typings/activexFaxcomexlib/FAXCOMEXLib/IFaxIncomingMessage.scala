@@ -1,13 +1,14 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IFaxIncomingMessage interface */
 @js.native
-trait IFaxIncomingMessage extends js.Object {
+trait IFaxIncomingMessage extends StObject {
   
   /** Called Station ID */
   val CSID: String = js.native
@@ -71,57 +72,45 @@ object IFaxIncomingMessage {
   }
   
   @scala.inline
-  implicit class IFaxIncomingMessageOps[Self <: IFaxIncomingMessage] (val x: Self) extends AnyVal {
+  implicit class IFaxIncomingMessageMutableBuilder[Self <: IFaxIncomingMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyTiff(value: String => Unit): Self = StObject.set(x, "CopyTiff", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCSID(value: String): Self = this.set("CSID", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCallerId(value: String): Self = this.set("CallerId", value.asInstanceOf[js.Any])
+    def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTiff(value: String => Unit): Self = this.set("CopyTiff", js.Any.fromFunction1(value))
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setPages(value: Double): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setRoutingInformation(value: String): Self = StObject.set(x, "RoutingInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: Double): Self = this.set("Pages", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetries(value: Double): Self = this.set("Retries", value.asInstanceOf[js.Any])
+    def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingInformation(value: String): Self = this.set("RoutingInformation", value.asInstanceOf[js.Any])
+    def setTransmissionEnd(value: VarDate): Self = StObject.set(x, "TransmissionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTSID(value: String): Self = this.set("TSID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmissionEnd(value: VarDate): Self = this.set("TransmissionEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmissionStart(value: VarDate): Self = this.set("TransmissionStart", value.asInstanceOf[js.Any])
+    def setTransmissionStart(value: VarDate): Self = StObject.set(x, "TransmissionStart", value.asInstanceOf[js.Any])
   }
 }

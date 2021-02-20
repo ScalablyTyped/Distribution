@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateHsmRequest extends js.Object {
+trait CreateHsmRequest extends StObject {
   
   /**
     * A user-defined token to ensure idempotence. Subsequent calls to this operation with the same token will be ignored.
@@ -53,54 +54,42 @@ object CreateHsmRequest {
   }
   
   @scala.inline
-  implicit class CreateHsmRequestOps[Self <: CreateHsmRequest] (val x: Self) extends AnyVal {
+  implicit class CreateHsmRequestMutableBuilder[Self <: CreateHsmRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEniIp(value: IpAddress): Self = StObject.set(x, "EniIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRoleArn(value: IamRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    def setEniIpUndefined: Self = StObject.set(x, "EniIp", js.undefined)
     
     @scala.inline
-    def setSshKey(value: SshKey): Self = this.set("SshKey", value.asInstanceOf[js.Any])
+    def setExternalId(value: ExternalId): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
     
     @scala.inline
-    def setSubscriptionType(value: SubscriptionType): Self = this.set("SubscriptionType", value.asInstanceOf[js.Any])
+    def setIamRoleArn(value: IamRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setSshKey(value: SshKey): Self = StObject.set(x, "SshKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEniIp(value: IpAddress): Self = this.set("EniIp", value.asInstanceOf[js.Any])
+    def setSubscriptionType(value: SubscriptionType): Self = StObject.set(x, "SubscriptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEniIp: Self = this.set("EniIp", js.undefined)
+    def setSyslogIp(value: IpAddress): Self = StObject.set(x, "SyslogIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: ExternalId): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternalId: Self = this.set("ExternalId", js.undefined)
-    
-    @scala.inline
-    def setSyslogIp(value: IpAddress): Self = this.set("SyslogIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyslogIp: Self = this.set("SyslogIp", js.undefined)
+    def setSyslogIpUndefined: Self = StObject.set(x, "SyslogIp", js.undefined)
   }
 }

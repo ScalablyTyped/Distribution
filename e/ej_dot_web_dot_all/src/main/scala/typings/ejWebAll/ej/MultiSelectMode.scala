@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MultiSelectMode extends js.Object
+sealed trait MultiSelectMode extends StObject
 @JSGlobal("ej.MultiSelectMode")
 @js.native
-object MultiSelectMode extends js.Object {
+object MultiSelectMode extends StObject {
   
   //can select multiple items and it's separated by delimiterChar
   @js.native

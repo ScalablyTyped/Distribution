@@ -1,5 +1,6 @@
 package typings.vexflow.mod.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class StaveModifier ()
   extends typings.vexflow.Vex.Flow.StaveModifier
-@JSImport("vexflow", "Flow.StaveModifier")
-@js.native
-object StaveModifier extends js.Object {
+object StaveModifier {
   
   // @see https://github.com/0xfe/vexflow/blob/master/src/stavemodifier.js#L9
+  @JSImport("vexflow", "Flow.StaveModifier.Position")
   @js.native
-  object Position extends js.Object {
+  object Position extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.StaveModifier.Position with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutocompleteResult extends js.Object {
+trait AutocompleteResult extends StObject {
   
   var count: Double = js.native
   
@@ -22,30 +23,18 @@ object AutocompleteResult {
   }
   
   @scala.inline
-  implicit class AutocompleteResultOps[Self <: AutocompleteResult] (val x: Self) extends AnyVal {
+  implicit class AutocompleteResultMutableBuilder[Self <: AutocompleteResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTips(value: js.Array[Tip]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTipsVarargs(value: Tip*): Self = this.set("tips", js.Array(value :_*))
-    
-    @scala.inline
-    def setTips(value: js.Array[Tip]): Self = this.set("tips", value.asInstanceOf[js.Any])
+    def setTipsVarargs(value: Tip*): Self = StObject.set(x, "tips", js.Array(value :_*))
   }
 }

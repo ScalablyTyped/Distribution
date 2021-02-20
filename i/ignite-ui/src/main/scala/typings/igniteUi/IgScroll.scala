@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -254,252 +255,240 @@ object IgScroll {
   }
   
   @scala.inline
-  implicit class IgScrollOps[Self <: IgScroll] (val x: Self) extends AnyVal {
+  implicit class IgScrollMutableBuilder[Self <: IgScroll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysVisibleUndefined: Self = StObject.set(x, "alwaysVisible", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBigIncrementStep(value: Double): Self = StObject.set(x, "bigIncrementStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysVisible(value: Boolean): Self = this.set("alwaysVisible", value.asInstanceOf[js.Any])
+    def setBigIncrementStepUndefined: Self = StObject.set(x, "bigIncrementStep", js.undefined)
     
     @scala.inline
-    def deleteAlwaysVisible: Self = this.set("alwaysVisible", js.undefined)
+    def setInertiaDeltaX(value: Double): Self = StObject.set(x, "inertiaDeltaX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigIncrementStep(value: Double): Self = this.set("bigIncrementStep", value.asInstanceOf[js.Any])
+    def setInertiaDeltaXUndefined: Self = StObject.set(x, "inertiaDeltaX", js.undefined)
     
     @scala.inline
-    def deleteBigIncrementStep: Self = this.set("bigIncrementStep", js.undefined)
+    def setInertiaDeltaY(value: Double): Self = StObject.set(x, "inertiaDeltaY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInertiaDeltaX(value: Double): Self = this.set("inertiaDeltaX", value.asInstanceOf[js.Any])
+    def setInertiaDeltaYUndefined: Self = StObject.set(x, "inertiaDeltaY", js.undefined)
     
     @scala.inline
-    def deleteInertiaDeltaX: Self = this.set("inertiaDeltaX", js.undefined)
+    def setInertiaDuration(value: Double): Self = StObject.set(x, "inertiaDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInertiaDeltaY(value: Double): Self = this.set("inertiaDeltaY", value.asInstanceOf[js.Any])
+    def setInertiaDurationUndefined: Self = StObject.set(x, "inertiaDuration", js.undefined)
     
     @scala.inline
-    def deleteInertiaDeltaY: Self = this.set("inertiaDeltaY", js.undefined)
+    def setInertiaStep(value: Double): Self = StObject.set(x, "inertiaStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInertiaDuration(value: Double): Self = this.set("inertiaDuration", value.asInstanceOf[js.Any])
+    def setInertiaStepUndefined: Self = StObject.set(x, "inertiaStep", js.undefined)
     
     @scala.inline
-    def deleteInertiaDuration: Self = this.set("inertiaDuration", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInertiaStep(value: Double): Self = this.set("inertiaStep", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteInertiaStep: Self = this.set("inertiaStep", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setMinThumbSize(value: Double | String): Self = StObject.set(x, "minThumbSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMinThumbSizeUndefined: Self = StObject.set(x, "minThumbSize", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setModifyDOM(value: Boolean): Self = StObject.set(x, "modifyDOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinThumbSize(value: Double | String): Self = this.set("minThumbSize", value.asInstanceOf[js.Any])
+    def setModifyDOMUndefined: Self = StObject.set(x, "modifyDOM", js.undefined)
     
     @scala.inline
-    def deleteMinThumbSize: Self = this.set("minThumbSize", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifyDOM(value: Boolean): Self = this.set("modifyDOM", value.asInstanceOf[js.Any])
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deleteModifyDOM: Self = this.set("modifyDOM", js.undefined)
+    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = StObject.set(x, "rendered", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setResized(value: (/* event */ Event, /* ui */ ResizedEventUIParam) => Unit): Self = StObject.set(x, "resized", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = this.set("rendered", js.Any.fromFunction2(value))
+    def setResizedUndefined: Self = StObject.set(x, "resized", js.undefined)
     
     @scala.inline
-    def deleteRendered: Self = this.set("rendered", js.undefined)
+    def setResizing(value: (/* event */ Event, /* ui */ ResizingEventUIParam) => Unit): Self = StObject.set(x, "resizing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setResized(value: (/* event */ Event, /* ui */ ResizedEventUIParam) => Unit): Self = this.set("resized", js.Any.fromFunction2(value))
+    def setResizingUndefined: Self = StObject.set(x, "resizing", js.undefined)
     
     @scala.inline
-    def deleteResized: Self = this.set("resized", js.undefined)
+    def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizing(value: (/* event */ Event, /* ui */ ResizingEventUIParam) => Unit): Self = this.set("resizing", js.Any.fromFunction2(value))
+    def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
     
     @scala.inline
-    def deleteResizing: Self = this.set("resizing", js.undefined)
+    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollHeight(value: Double): Self = this.set("scrollHeight", value.asInstanceOf[js.Any])
+    def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
     
     @scala.inline
-    def deleteScrollHeight: Self = this.set("scrollHeight", js.undefined)
+    def setScrollOnlyHBar(value: Boolean): Self = StObject.set(x, "scrollOnlyHBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollLeft(value: Double): Self = this.set("scrollLeft", value.asInstanceOf[js.Any])
+    def setScrollOnlyHBarUndefined: Self = StObject.set(x, "scrollOnlyHBar", js.undefined)
     
     @scala.inline
-    def deleteScrollLeft: Self = this.set("scrollLeft", js.undefined)
+    def setScrollOnlyVBar(value: Boolean): Self = StObject.set(x, "scrollOnlyVBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollOnlyHBar(value: Boolean): Self = this.set("scrollOnlyHBar", value.asInstanceOf[js.Any])
+    def setScrollOnlyVBarUndefined: Self = StObject.set(x, "scrollOnlyVBar", js.undefined)
     
     @scala.inline
-    def deleteScrollOnlyHBar: Self = this.set("scrollOnlyHBar", js.undefined)
+    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollOnlyVBar(value: Boolean): Self = this.set("scrollOnlyVBar", value.asInstanceOf[js.Any])
+    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
     
     @scala.inline
-    def deleteScrollOnlyVBar: Self = this.set("scrollOnlyVBar", js.undefined)
+    def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollTop(value: Double): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
+    def setScrollWidthUndefined: Self = StObject.set(x, "scrollWidth", js.undefined)
     
     @scala.inline
-    def deleteScrollTop: Self = this.set("scrollTop", js.undefined)
+    def setScrollbarH(value: String): Self = StObject.set(x, "scrollbarH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollWidth(value: Double): Self = this.set("scrollWidth", value.asInstanceOf[js.Any])
+    def setScrollbarHParent(value: String): Self = StObject.set(x, "scrollbarHParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollWidth: Self = this.set("scrollWidth", js.undefined)
+    def setScrollbarHParentUndefined: Self = StObject.set(x, "scrollbarHParent", js.undefined)
     
     @scala.inline
-    def setScrollbarH(value: String): Self = this.set("scrollbarH", value.asInstanceOf[js.Any])
+    def setScrollbarHUndefined: Self = StObject.set(x, "scrollbarH", js.undefined)
     
     @scala.inline
-    def deleteScrollbarH: Self = this.set("scrollbarH", js.undefined)
+    def setScrollbarType(value: String): Self = StObject.set(x, "scrollbarType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarHParent(value: String): Self = this.set("scrollbarHParent", value.asInstanceOf[js.Any])
+    def setScrollbarTypeUndefined: Self = StObject.set(x, "scrollbarType", js.undefined)
     
     @scala.inline
-    def deleteScrollbarHParent: Self = this.set("scrollbarHParent", js.undefined)
+    def setScrollbarV(value: String): Self = StObject.set(x, "scrollbarV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarType(value: String): Self = this.set("scrollbarType", value.asInstanceOf[js.Any])
+    def setScrollbarVParent(value: String): Self = StObject.set(x, "scrollbarVParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollbarType: Self = this.set("scrollbarType", js.undefined)
+    def setScrollbarVParentUndefined: Self = StObject.set(x, "scrollbarVParent", js.undefined)
     
     @scala.inline
-    def setScrollbarV(value: String): Self = this.set("scrollbarV", value.asInstanceOf[js.Any])
+    def setScrollbarVUndefined: Self = StObject.set(x, "scrollbarV", js.undefined)
     
     @scala.inline
-    def deleteScrollbarV: Self = this.set("scrollbarV", js.undefined)
+    def setScrolled(value: (/* event */ Event, /* ui */ ScrolledEventUIParam) => Unit): Self = StObject.set(x, "scrolled", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScrollbarVParent(value: String): Self = this.set("scrollbarVParent", value.asInstanceOf[js.Any])
+    def setScrolledUndefined: Self = StObject.set(x, "scrolled", js.undefined)
     
     @scala.inline
-    def deleteScrollbarVParent: Self = this.set("scrollbarVParent", js.undefined)
+    def setScrolling(value: (/* event */ Event, /* ui */ ScrollingEventUIParam) => Unit): Self = StObject.set(x, "scrolling", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScrolled(value: (/* event */ Event, /* ui */ ScrolledEventUIParam) => Unit): Self = this.set("scrolled", js.Any.fromFunction2(value))
+    def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
     
     @scala.inline
-    def deleteScrolled: Self = this.set("scrolled", js.undefined)
+    def setSmallIncrementStep(value: Double): Self = StObject.set(x, "smallIncrementStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrolling(value: (/* event */ Event, /* ui */ ScrollingEventUIParam) => Unit): Self = this.set("scrolling", js.Any.fromFunction2(value))
+    def setSmallIncrementStepUndefined: Self = StObject.set(x, "smallIncrementStep", js.undefined)
     
     @scala.inline
-    def deleteScrolling: Self = this.set("scrolling", js.undefined)
+    def setSmoothing(value: Boolean): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallIncrementStep(value: Double): Self = this.set("smallIncrementStep", value.asInstanceOf[js.Any])
+    def setSmoothingDuration(value: Double): Self = StObject.set(x, "smoothingDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmallIncrementStep: Self = this.set("smallIncrementStep", js.undefined)
+    def setSmoothingDurationUndefined: Self = StObject.set(x, "smoothingDuration", js.undefined)
     
     @scala.inline
-    def setSmoothing(value: Boolean): Self = this.set("smoothing", value.asInstanceOf[js.Any])
+    def setSmoothingStep(value: Double): Self = StObject.set(x, "smoothingStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmoothing: Self = this.set("smoothing", js.undefined)
+    def setSmoothingStepUndefined: Self = StObject.set(x, "smoothingStep", js.undefined)
     
     @scala.inline
-    def setSmoothingDuration(value: Double): Self = this.set("smoothingDuration", value.asInstanceOf[js.Any])
+    def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
     
     @scala.inline
-    def deleteSmoothingDuration: Self = this.set("smoothingDuration", js.undefined)
+    def setSwipeToleranceX(value: Double): Self = StObject.set(x, "swipeToleranceX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmoothingStep(value: Double): Self = this.set("smoothingStep", value.asInstanceOf[js.Any])
+    def setSwipeToleranceXUndefined: Self = StObject.set(x, "swipeToleranceX", js.undefined)
     
     @scala.inline
-    def deleteSmoothingStep: Self = this.set("smoothingStep", js.undefined)
+    def setSyncedElemsH(value: js.Array[_]): Self = StObject.set(x, "syncedElemsH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeToleranceX(value: Double): Self = this.set("swipeToleranceX", value.asInstanceOf[js.Any])
+    def setSyncedElemsHUndefined: Self = StObject.set(x, "syncedElemsH", js.undefined)
     
     @scala.inline
-    def deleteSwipeToleranceX: Self = this.set("swipeToleranceX", js.undefined)
+    def setSyncedElemsHVarargs(value: js.Any*): Self = StObject.set(x, "syncedElemsH", js.Array(value :_*))
     
     @scala.inline
-    def setSyncedElemsHVarargs(value: js.Any*): Self = this.set("syncedElemsH", js.Array(value :_*))
+    def setSyncedElemsV(value: js.Array[_]): Self = StObject.set(x, "syncedElemsV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncedElemsH(value: js.Array[_]): Self = this.set("syncedElemsH", value.asInstanceOf[js.Any])
+    def setSyncedElemsVUndefined: Self = StObject.set(x, "syncedElemsV", js.undefined)
     
     @scala.inline
-    def deleteSyncedElemsH: Self = this.set("syncedElemsH", js.undefined)
+    def setSyncedElemsVVarargs(value: js.Any*): Self = StObject.set(x, "syncedElemsV", js.Array(value :_*))
     
     @scala.inline
-    def setSyncedElemsVVarargs(value: js.Any*): Self = this.set("syncedElemsV", js.Array(value :_*))
+    def setThumbDragEnd(value: (/* event */ Event, /* ui */ ThumbDragEndEventUIParam) => Unit): Self = StObject.set(x, "thumbDragEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSyncedElemsV(value: js.Array[_]): Self = this.set("syncedElemsV", value.asInstanceOf[js.Any])
+    def setThumbDragEndUndefined: Self = StObject.set(x, "thumbDragEnd", js.undefined)
     
     @scala.inline
-    def deleteSyncedElemsV: Self = this.set("syncedElemsV", js.undefined)
+    def setThumbDragMove(value: (/* event */ Event, /* ui */ ThumbDragMoveEventUIParam) => Unit): Self = StObject.set(x, "thumbDragMove", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setThumbDragEnd(value: (/* event */ Event, /* ui */ ThumbDragEndEventUIParam) => Unit): Self = this.set("thumbDragEnd", js.Any.fromFunction2(value))
+    def setThumbDragMoveUndefined: Self = StObject.set(x, "thumbDragMove", js.undefined)
     
     @scala.inline
-    def deleteThumbDragEnd: Self = this.set("thumbDragEnd", js.undefined)
+    def setThumbDragStart(value: (/* event */ Event, /* ui */ ThumbDragStartEventUIParam) => Unit): Self = StObject.set(x, "thumbDragStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setThumbDragMove(value: (/* event */ Event, /* ui */ ThumbDragMoveEventUIParam) => Unit): Self = this.set("thumbDragMove", js.Any.fromFunction2(value))
+    def setThumbDragStartUndefined: Self = StObject.set(x, "thumbDragStart", js.undefined)
     
     @scala.inline
-    def deleteThumbDragMove: Self = this.set("thumbDragMove", js.undefined)
+    def setWheelStep(value: Double): Self = StObject.set(x, "wheelStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbDragStart(value: (/* event */ Event, /* ui */ ThumbDragStartEventUIParam) => Unit): Self = this.set("thumbDragStart", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteThumbDragStart: Self = this.set("thumbDragStart", js.undefined)
-    
-    @scala.inline
-    def setWheelStep(value: Double): Self = this.set("wheelStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWheelStep: Self = this.set("wheelStep", js.undefined)
+    def setWheelStepUndefined: Self = StObject.set(x, "wheelStep", js.undefined)
   }
 }

@@ -10,13 +10,14 @@ import typings.wechatMiniprogram.WechatMiniprogram.Page.IPageScrollOption
 import typings.wechatMiniprogram.WechatMiniprogram.Page.IResizeOption
 import typings.wechatMiniprogram.WechatMiniprogram.Page.IShareAppMessageOption
 import typings.wechatMiniprogram.WechatMiniprogram.Page.ITabItemTapOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wechat-miniprogram.WechatMiniprogram.OptionalInterface<wechat-miniprogram.WechatMiniprogram.Page.ILifetime> */
 @js.native
-trait OptionalInterfaceILifetim extends js.Object {
+trait OptionalInterfaceILifetim extends StObject {
   
   var onAddToFavorites: Optional[js.Function1[/* options */ IAddToFavoritesOption, IAddToFavoritesContent]] = js.native
   
@@ -69,105 +70,93 @@ object OptionalInterfaceILifetim {
   }
   
   @scala.inline
-  implicit class OptionalInterfaceILifetimOps[Self <: OptionalInterfaceILifetim] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class OptionalInterfaceILifetimMutableBuilder[Self <: OptionalInterfaceILifetim] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setOnAddToFavorites(
       value: js.UndefOr[js.Any | (/* options */ IAddToFavoritesOption)] => js.Any | IAddToFavoritesContent
-    ): Self = this.set("onAddToFavorites", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onAddToFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnHideFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = this.set("onHide", js.Any.fromFunction1(value))
+    def setOnHide(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHideFunction0(value: () => Unit | js.Promise[Unit]): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnHideFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHide(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = this.set("onHide", value.asInstanceOf[js.Any])
+    def setOnHideFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnLoad(
       value: js.UndefOr[js.Any | (/* query */ Record[String, js.UndefOr[String]])] => js.Any | js.Promise[Unit] | Unit
-    ): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPageScroll(value: js.UndefOr[js.Any | (/* options */ IPageScrollOption)] => js.Any | js.Promise[Unit] | Unit): Self = this.set("onPageScroll", js.Any.fromFunction1(value))
+    def setOnPageScroll(value: js.UndefOr[js.Any | (/* options */ IPageScrollOption)] => js.Any | js.Promise[Unit] | Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPullDownRefreshFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = this.set("onPullDownRefresh", js.Any.fromFunction1(value))
+    def setOnPullDownRefresh(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onPullDownRefresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPullDownRefreshFunction0(value: () => Unit | js.Promise[Unit]): Self = this.set("onPullDownRefresh", js.Any.fromFunction0(value))
+    def setOnPullDownRefreshFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnPullDownRefresh(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = this.set("onPullDownRefresh", value.asInstanceOf[js.Any])
+    def setOnPullDownRefreshFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReachBottomFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = this.set("onReachBottom", js.Any.fromFunction1(value))
+    def setOnReachBottom(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onReachBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnReachBottomFunction0(value: () => Unit | js.Promise[Unit]): Self = this.set("onReachBottom", js.Any.fromFunction0(value))
+    def setOnReachBottomFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnReachBottom(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = this.set("onReachBottom", value.asInstanceOf[js.Any])
+    def setOnReachBottomFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReadyFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = this.set("onReady", js.Any.fromFunction1(value))
+    def setOnReady(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnReadyFunction0(value: () => Unit | js.Promise[Unit]): Self = this.set("onReady", js.Any.fromFunction0(value))
+    def setOnReadyFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnReady(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = this.set("onReady", value.asInstanceOf[js.Any])
+    def setOnReadyFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnResize(value: js.UndefOr[js.Any | (/* options */ IResizeOption)] => js.Any | js.Promise[Unit] | Unit): Self = this.set("onResize", js.Any.fromFunction1(value))
+    def setOnResize(value: js.UndefOr[js.Any | (/* options */ IResizeOption)] => js.Any | js.Promise[Unit] | Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnShareAppMessage(
       value: js.UndefOr[js.Any | (/* options */ IShareAppMessageOption)] => js.Any | ICustomShareContent | Unit
-    ): Self = this.set("onShareAppMessage", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnShareTimelineFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = this.set("onShareTimeline", js.Any.fromFunction1(value))
+    def setOnShareTimeline(value: Optional[js.Function0[ICustomTimelineContent | Unit]]): Self = StObject.set(x, "onShareTimeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShareTimelineFunction0(value: () => ICustomTimelineContent | Unit): Self = this.set("onShareTimeline", js.Any.fromFunction0(value))
+    def setOnShareTimelineFunction0(value: () => ICustomTimelineContent | Unit): Self = StObject.set(x, "onShareTimeline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnShareTimeline(value: Optional[js.Function0[ICustomTimelineContent | Unit]]): Self = this.set("onShareTimeline", value.asInstanceOf[js.Any])
+    def setOnShareTimelineFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onShareTimeline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnShowFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = this.set("onShow", js.Any.fromFunction1(value))
+    def setOnShow(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShowFunction0(value: () => Unit | js.Promise[Unit]): Self = this.set("onShow", js.Any.fromFunction0(value))
+    def setOnShowFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnShow(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = this.set("onShow", value.asInstanceOf[js.Any])
+    def setOnShowFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTabItemTap(value: js.UndefOr[js.Any | (/* options */ ITabItemTapOption)] => js.Any | js.Promise[Unit] | Unit): Self = this.set("onTabItemTap", js.Any.fromFunction1(value))
+    def setOnTabItemTap(value: js.UndefOr[js.Any | (/* options */ ITabItemTapOption)] => js.Any | js.Promise[Unit] | Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnUnloadFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = this.set("onUnload", js.Any.fromFunction1(value))
+    def setOnUnload(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onUnload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUnloadFunction0(value: () => Unit | js.Promise[Unit]): Self = this.set("onUnload", js.Any.fromFunction0(value))
+    def setOnUnloadFunction0(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnUnload(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = this.set("onUnload", value.asInstanceOf[js.Any])
+    def setOnUnloadFunction1(value: /* arg */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onUnload", js.Any.fromFunction1(value))
   }
 }

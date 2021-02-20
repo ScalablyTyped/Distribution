@@ -1,6 +1,7 @@
 package typings.phaser.Phaser.Types.GameObjects.Particles
 
 import typings.phaser.Phaser.GameObjects.Particles.Particle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,16 +2,39 @@ package typings.tsInvariant
 
 import typings.node.processMod.global.NodeJS.Process
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-invariant", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var process: Process = js.native
+  @JSImport("ts-invariant", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
+  object default {
+    
+    @JSImport("ts-invariant", JSImport.Default)
+    @js.native
+    def apply(condition: js.Any): Unit = js.native
+    @JSImport("ts-invariant", JSImport.Default)
+    @js.native
+    def apply(condition: js.Any, message: String): Unit = js.native
+    @JSImport("ts-invariant", JSImport.Default)
+    @js.native
+    def apply(condition: js.Any, message: Double): Unit = js.native
+    
+    @JSImport("ts-invariant", "default.error")
+    @js.native
+    def error(args: js.Any*): Unit = js.native
+    
+    @JSImport("ts-invariant", "default.warn")
+    @js.native
+    def warn(args: js.Any*): Unit = js.native
+  }
+  
+  @JSImport("ts-invariant", "InvariantError")
   @js.native
   class InvariantError () extends Error {
     def this(message: String) = this()
@@ -20,27 +43,30 @@ object mod extends js.Object {
     var framesToPop: Double = js.native
   }
   
-  @js.native
-  object default extends js.Object {
+  object invariant {
     
+    @JSImport("ts-invariant", "invariant")
+    @js.native
     def apply(condition: js.Any): Unit = js.native
+    @JSImport("ts-invariant", "invariant")
+    @js.native
     def apply(condition: js.Any, message: String): Unit = js.native
+    @JSImport("ts-invariant", "invariant")
+    @js.native
     def apply(condition: js.Any, message: Double): Unit = js.native
     
+    @JSImport("ts-invariant", "invariant.error")
+    @js.native
     def error(args: js.Any*): Unit = js.native
     
+    @JSImport("ts-invariant", "invariant.warn")
+    @js.native
     def warn(args: js.Any*): Unit = js.native
   }
   
+  @JSImport("ts-invariant", "process")
   @js.native
-  object invariant extends js.Object {
-    
-    def apply(condition: js.Any): Unit = js.native
-    def apply(condition: js.Any, message: String): Unit = js.native
-    def apply(condition: js.Any, message: Double): Unit = js.native
-    
-    def error(args: js.Any*): Unit = js.native
-    
-    def warn(args: js.Any*): Unit = js.native
-  }
+  def process: Process = js.native
+  @scala.inline
+  def process_=(x: Process): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("process")(x.asInstanceOf[js.Any])
 }

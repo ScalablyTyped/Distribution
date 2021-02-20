@@ -4,6 +4,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
-trait PageStyleLayout extends js.Object
+trait PageStyleLayout extends StObject
 object PageStyleLayout {
   
   /** The page style is identically used for left and right pages. */

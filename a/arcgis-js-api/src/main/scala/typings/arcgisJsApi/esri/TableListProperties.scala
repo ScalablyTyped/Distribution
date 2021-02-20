@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,63 +66,51 @@ object TableListProperties {
   }
   
   @scala.inline
-  implicit class TableListPropertiesOps[Self <: TableListProperties] (val x: Self) extends AnyVal {
+  implicit class TableListPropertiesMutableBuilder[Self <: TableListProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setListItemCreatedFunctionUndefined: Self = StObject.set(x, "listItemCreatedFunction", js.undefined)
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setMap(value: WebMapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = this.set("listItemCreatedFunction", js.Any.fromFunction1(value))
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteListItemCreatedFunction: Self = this.set("listItemCreatedFunction", js.undefined)
+    def setMultipleSelectionEnabled(value: Boolean): Self = StObject.set(x, "multipleSelectionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: WebMapProperties): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMultipleSelectionEnabledUndefined: Self = StObject.set(x, "multipleSelectionEnabled", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setSelectedItems(value: CollectionProperties[TableListListItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleSelectionEnabled(value: Boolean): Self = this.set("multipleSelectionEnabled", value.asInstanceOf[js.Any])
+    def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
     @scala.inline
-    def deleteMultipleSelectionEnabled: Self = this.set("multipleSelectionEnabled", js.undefined)
+    def setSelectedItemsVarargs(value: TableListListItem*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedItemsVarargs(value: TableListListItem*): Self = this.set("selectedItems", js.Array(value :_*))
+    def setSelectionEnabled(value: Boolean): Self = StObject.set(x, "selectionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItems(value: CollectionProperties[TableListListItem]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
+    def setSelectionEnabledUndefined: Self = StObject.set(x, "selectionEnabled", js.undefined)
     
     @scala.inline
-    def deleteSelectedItems: Self = this.set("selectedItems", js.undefined)
+    def setViewModel(value: TableListViewModel): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionEnabled(value: Boolean): Self = this.set("selectionEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionEnabled: Self = this.set("selectionEnabled", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: TableListViewModel): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.restartHooks
 
 import typings.std.DOMRectInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMRectReadOnly extends js.Object {
+trait DOMRectReadOnly extends StObject {
   
   val bottom: Double = js.native
   

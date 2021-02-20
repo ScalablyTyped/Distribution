@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFeedRequest extends js.Object {
+trait CreateFeedRequest extends StObject {
   
   /**
     * Required. The feed details. The field `name` must be empty and it will be generated in the format of: projects/project_number/feeds/feed_id folders/folder_number/feeds/feed_id
@@ -25,30 +26,18 @@ object CreateFeedRequest {
   }
   
   @scala.inline
-  implicit class CreateFeedRequestOps[Self <: CreateFeedRequest] (val x: Self) extends AnyVal {
+  implicit class CreateFeedRequestMutableBuilder[Self <: CreateFeedRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeed(value: Feed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedId(value: String): Self = StObject.set(x, "feedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeedIdUndefined: Self = StObject.set(x, "feedId", js.undefined)
     
     @scala.inline
-    def setFeed(value: Feed): Self = this.set("feed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeed: Self = this.set("feed", js.undefined)
-    
-    @scala.inline
-    def setFeedId(value: String): Self = this.set("feedId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeedId: Self = this.set("feedId", js.undefined)
+    def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
   }
 }

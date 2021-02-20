@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThirdPartyJobDetails extends js.Object {
+trait ThirdPartyJobDetails extends StObject {
   
   /**
     * The data to be returned by the third party job worker.
@@ -31,36 +32,24 @@ object ThirdPartyJobDetails {
   }
   
   @scala.inline
-  implicit class ThirdPartyJobDetailsOps[Self <: ThirdPartyJobDetails] (val x: Self) extends AnyVal {
+  implicit class ThirdPartyJobDetailsMutableBuilder[Self <: ThirdPartyJobDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: ThirdPartyJobData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: ThirdPartyJobId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: ThirdPartyJobData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setNonce(value: Nonce): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ThirdPartyJobId): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setNonce(value: Nonce): Self = this.set("nonce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonce: Self = this.set("nonce", js.undefined)
+    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
   }
 }

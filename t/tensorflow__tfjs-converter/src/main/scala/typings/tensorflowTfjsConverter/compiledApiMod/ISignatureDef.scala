@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISignatureDef extends js.Object {
+trait ISignatureDef extends StObject {
   
   /** SignatureDef inputs */
   var inputs: js.UndefOr[StringDictionary[ITensorInfo] | Null] = js.native
@@ -26,45 +27,33 @@ object ISignatureDef {
   }
   
   @scala.inline
-  implicit class ISignatureDefOps[Self <: ISignatureDef] (val x: Self) extends AnyVal {
+  implicit class ISignatureDefMutableBuilder[Self <: ISignatureDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputs(value: StringDictionary[ITensorInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputsNull: Self = StObject.set(x, "inputs", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def setInputs(value: StringDictionary[ITensorInfo]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setMethodNameNull: Self = StObject.set(x, "methodName", null)
     
     @scala.inline
-    def setInputsNull: Self = this.set("inputs", null)
+    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
     @scala.inline
-    def setMethodName(value: String): Self = this.set("methodName", value.asInstanceOf[js.Any])
+    def setOutputs(value: StringDictionary[ITensorInfo]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethodName: Self = this.set("methodName", js.undefined)
+    def setOutputsNull: Self = StObject.set(x, "outputs", null)
     
     @scala.inline
-    def setMethodNameNull: Self = this.set("methodName", null)
-    
-    @scala.inline
-    def setOutputs(value: StringDictionary[ITensorInfo]): Self = this.set("outputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
-    
-    @scala.inline
-    def setOutputsNull: Self = this.set("outputs", null)
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
   }
 }

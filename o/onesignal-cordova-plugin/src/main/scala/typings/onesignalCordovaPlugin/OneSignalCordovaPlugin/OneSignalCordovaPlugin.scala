@@ -10,12 +10,13 @@ import typings.onesignalCordovaPlugin.anon.PartialOSNotification
 import typings.onesignalCordovaPlugin.anon.PushToken
 import typings.onesignalCordovaPlugin.anon.To
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OneSignalCordovaPlugin extends js.Object {
+trait OneSignalCordovaPlugin extends StObject {
   
   var OSInFocusDisplayOption: InAppAlert = js.native
   

@@ -1,13 +1,14 @@
 package typings.expoConfigureSplashScreen
 
 import typings.expoConfigureSplashScreen.splashScreenConfigMod.AndroidSplashScreenConfigJSON
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@expo/configure-splash-screen/build/android", JSImport.Namespace)
-@js.native
-object androidMod extends js.Object {
+object androidMod {
   
+  @JSImport("@expo/configure-splash-screen/build/android", JSImport.Default)
+  @js.native
   def default(projectRootPath: String, configJSON: AndroidSplashScreenConfigJSON): js.Promise[Unit] = js.native
 }

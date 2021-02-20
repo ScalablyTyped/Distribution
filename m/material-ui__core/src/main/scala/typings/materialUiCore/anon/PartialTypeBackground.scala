@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeBackground> */
 @js.native
-trait PartialTypeBackground extends js.Object {
+trait PartialTypeBackground extends StObject {
   
   var default: js.UndefOr[String] = js.native
   
@@ -21,30 +22,18 @@ object PartialTypeBackground {
   }
   
   @scala.inline
-  implicit class PartialTypeBackgroundOps[Self <: PartialTypeBackground] (val x: Self) extends AnyVal {
+  implicit class PartialTypeBackgroundMutableBuilder[Self <: PartialTypeBackground] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
-    
-    @scala.inline
-    def setPaper(value: String): Self = this.set("paper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaper: Self = this.set("paper", js.undefined)
+    def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
   }
 }

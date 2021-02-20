@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,315 +136,303 @@ object Message {
   }
   
   @scala.inline
-  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: NullableOption[js.Array[Attachment]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsNull: Self = StObject.set(x, "attachments", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = this.set("attachments", js.Array(value :_*))
+    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachments(value: NullableOption[js.Array[Attachment]]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setBccRecipients(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "bccRecipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setBccRecipientsNull: Self = StObject.set(x, "bccRecipients", null)
     
     @scala.inline
-    def setAttachmentsNull: Self = this.set("attachments", null)
+    def setBccRecipientsUndefined: Self = StObject.set(x, "bccRecipients", js.undefined)
     
     @scala.inline
-    def setBccRecipientsVarargs(value: Recipient*): Self = this.set("bccRecipients", js.Array(value :_*))
+    def setBccRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "bccRecipients", js.Array(value :_*))
     
     @scala.inline
-    def setBccRecipients(value: NullableOption[js.Array[Recipient]]): Self = this.set("bccRecipients", value.asInstanceOf[js.Any])
+    def setBody(value: NullableOption[ItemBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBccRecipients: Self = this.set("bccRecipients", js.undefined)
+    def setBodyNull: Self = StObject.set(x, "body", null)
     
     @scala.inline
-    def setBccRecipientsNull: Self = this.set("bccRecipients", null)
+    def setBodyPreview(value: NullableOption[String]): Self = StObject.set(x, "bodyPreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: NullableOption[ItemBody]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBodyPreviewNull: Self = StObject.set(x, "bodyPreview", null)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setBodyPreviewUndefined: Self = StObject.set(x, "bodyPreview", js.undefined)
     
     @scala.inline
-    def setBodyNull: Self = this.set("body", null)
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setBodyPreview(value: NullableOption[String]): Self = this.set("bodyPreview", value.asInstanceOf[js.Any])
+    def setCcRecipients(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodyPreview: Self = this.set("bodyPreview", js.undefined)
+    def setCcRecipientsNull: Self = StObject.set(x, "ccRecipients", null)
     
     @scala.inline
-    def setBodyPreviewNull: Self = this.set("bodyPreview", null)
+    def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
     
     @scala.inline
-    def setCcRecipientsVarargs(value: Recipient*): Self = this.set("ccRecipients", js.Array(value :_*))
+    def setCcRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
     
     @scala.inline
-    def setCcRecipients(value: NullableOption[js.Array[Recipient]]): Self = this.set("ccRecipients", value.asInstanceOf[js.Any])
+    def setConversationId(value: NullableOption[String]): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCcRecipients: Self = this.set("ccRecipients", js.undefined)
+    def setConversationIdNull: Self = StObject.set(x, "conversationId", null)
     
     @scala.inline
-    def setCcRecipientsNull: Self = this.set("ccRecipients", null)
+    def setConversationIdUndefined: Self = StObject.set(x, "conversationId", js.undefined)
     
     @scala.inline
-    def setConversationId(value: NullableOption[String]): Self = this.set("conversationId", value.asInstanceOf[js.Any])
+    def setConversationIndex(value: NullableOption[Double]): Self = StObject.set(x, "conversationIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConversationId: Self = this.set("conversationId", js.undefined)
+    def setConversationIndexNull: Self = StObject.set(x, "conversationIndex", null)
     
     @scala.inline
-    def setConversationIdNull: Self = this.set("conversationId", null)
+    def setConversationIndexUndefined: Self = StObject.set(x, "conversationIndex", js.undefined)
     
     @scala.inline
-    def setConversationIndex(value: NullableOption[Double]): Self = this.set("conversationIndex", value.asInstanceOf[js.Any])
+    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConversationIndex: Self = this.set("conversationIndex", js.undefined)
+    def setExtensionsNull: Self = StObject.set(x, "extensions", null)
     
     @scala.inline
-    def setConversationIndexNull: Self = this.set("conversationIndex", null)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = this.set("extensions", js.Array(value :_*))
+    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setFlag(value: NullableOption[FollowupFlag]): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setFlagNull: Self = StObject.set(x, "flag", null)
     
     @scala.inline
-    def setExtensionsNull: Self = this.set("extensions", null)
+    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     
     @scala.inline
-    def setFlag(value: NullableOption[FollowupFlag]): Self = this.set("flag", value.asInstanceOf[js.Any])
+    def setFrom(value: NullableOption[Recipient]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlag: Self = this.set("flag", js.undefined)
+    def setFromNull: Self = StObject.set(x, "from", null)
     
     @scala.inline
-    def setFlagNull: Self = this.set("flag", null)
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def setFrom(value: NullableOption[Recipient]): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setHasAttachments(value: NullableOption[Boolean]): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setHasAttachmentsNull: Self = StObject.set(x, "hasAttachments", null)
     
     @scala.inline
-    def setFromNull: Self = this.set("from", null)
+    def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
     
     @scala.inline
-    def setHasAttachments(value: NullableOption[Boolean]): Self = this.set("hasAttachments", value.asInstanceOf[js.Any])
+    def setImportance(value: NullableOption[Importance]): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasAttachments: Self = this.set("hasAttachments", js.undefined)
+    def setImportanceNull: Self = StObject.set(x, "importance", null)
     
     @scala.inline
-    def setHasAttachmentsNull: Self = this.set("hasAttachments", null)
+    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
     @scala.inline
-    def setImportance(value: NullableOption[Importance]): Self = this.set("importance", value.asInstanceOf[js.Any])
+    def setInferenceClassification(value: NullableOption[InferenceClassificationType]): Self = StObject.set(x, "inferenceClassification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImportance: Self = this.set("importance", js.undefined)
+    def setInferenceClassificationNull: Self = StObject.set(x, "inferenceClassification", null)
     
     @scala.inline
-    def setImportanceNull: Self = this.set("importance", null)
+    def setInferenceClassificationUndefined: Self = StObject.set(x, "inferenceClassification", js.undefined)
     
     @scala.inline
-    def setInferenceClassification(value: NullableOption[InferenceClassificationType]): Self = this.set("inferenceClassification", value.asInstanceOf[js.Any])
+    def setInternetMessageHeaders(value: NullableOption[js.Array[InternetMessageHeader]]): Self = StObject.set(x, "internetMessageHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInferenceClassification: Self = this.set("inferenceClassification", js.undefined)
+    def setInternetMessageHeadersNull: Self = StObject.set(x, "internetMessageHeaders", null)
     
     @scala.inline
-    def setInferenceClassificationNull: Self = this.set("inferenceClassification", null)
+    def setInternetMessageHeadersUndefined: Self = StObject.set(x, "internetMessageHeaders", js.undefined)
     
     @scala.inline
-    def setInternetMessageHeadersVarargs(value: InternetMessageHeader*): Self = this.set("internetMessageHeaders", js.Array(value :_*))
+    def setInternetMessageHeadersVarargs(value: InternetMessageHeader*): Self = StObject.set(x, "internetMessageHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setInternetMessageHeaders(value: NullableOption[js.Array[InternetMessageHeader]]): Self = this.set("internetMessageHeaders", value.asInstanceOf[js.Any])
+    def setInternetMessageId(value: NullableOption[String]): Self = StObject.set(x, "internetMessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInternetMessageHeaders: Self = this.set("internetMessageHeaders", js.undefined)
+    def setInternetMessageIdNull: Self = StObject.set(x, "internetMessageId", null)
     
     @scala.inline
-    def setInternetMessageHeadersNull: Self = this.set("internetMessageHeaders", null)
+    def setInternetMessageIdUndefined: Self = StObject.set(x, "internetMessageId", js.undefined)
     
     @scala.inline
-    def setInternetMessageId(value: NullableOption[String]): Self = this.set("internetMessageId", value.asInstanceOf[js.Any])
+    def setIsDeliveryReceiptRequested(value: NullableOption[Boolean]): Self = StObject.set(x, "isDeliveryReceiptRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInternetMessageId: Self = this.set("internetMessageId", js.undefined)
+    def setIsDeliveryReceiptRequestedNull: Self = StObject.set(x, "isDeliveryReceiptRequested", null)
     
     @scala.inline
-    def setInternetMessageIdNull: Self = this.set("internetMessageId", null)
+    def setIsDeliveryReceiptRequestedUndefined: Self = StObject.set(x, "isDeliveryReceiptRequested", js.undefined)
     
     @scala.inline
-    def setIsDeliveryReceiptRequested(value: NullableOption[Boolean]): Self = this.set("isDeliveryReceiptRequested", value.asInstanceOf[js.Any])
+    def setIsDraft(value: NullableOption[Boolean]): Self = StObject.set(x, "isDraft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDeliveryReceiptRequested: Self = this.set("isDeliveryReceiptRequested", js.undefined)
+    def setIsDraftNull: Self = StObject.set(x, "isDraft", null)
     
     @scala.inline
-    def setIsDeliveryReceiptRequestedNull: Self = this.set("isDeliveryReceiptRequested", null)
+    def setIsDraftUndefined: Self = StObject.set(x, "isDraft", js.undefined)
     
     @scala.inline
-    def setIsDraft(value: NullableOption[Boolean]): Self = this.set("isDraft", value.asInstanceOf[js.Any])
+    def setIsRead(value: NullableOption[Boolean]): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDraft: Self = this.set("isDraft", js.undefined)
+    def setIsReadNull: Self = StObject.set(x, "isRead", null)
     
     @scala.inline
-    def setIsDraftNull: Self = this.set("isDraft", null)
+    def setIsReadReceiptRequested(value: NullableOption[Boolean]): Self = StObject.set(x, "isReadReceiptRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRead(value: NullableOption[Boolean]): Self = this.set("isRead", value.asInstanceOf[js.Any])
+    def setIsReadReceiptRequestedNull: Self = StObject.set(x, "isReadReceiptRequested", null)
     
     @scala.inline
-    def deleteIsRead: Self = this.set("isRead", js.undefined)
+    def setIsReadReceiptRequestedUndefined: Self = StObject.set(x, "isReadReceiptRequested", js.undefined)
     
     @scala.inline
-    def setIsReadNull: Self = this.set("isRead", null)
+    def setIsReadUndefined: Self = StObject.set(x, "isRead", js.undefined)
     
     @scala.inline
-    def setIsReadReceiptRequested(value: NullableOption[Boolean]): Self = this.set("isReadReceiptRequested", value.asInstanceOf[js.Any])
+    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsReadReceiptRequested: Self = this.set("isReadReceiptRequested", js.undefined)
+    def setMultiValueExtendedPropertiesNull: Self = StObject.set(x, "multiValueExtendedProperties", null)
     
     @scala.inline
-    def setIsReadReceiptRequestedNull: Self = this.set("isReadReceiptRequested", null)
+    def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = this.set("multiValueExtendedProperties", js.Array(value :_*))
+    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = this.set("multiValueExtendedProperties", value.asInstanceOf[js.Any])
+    def setParentFolderId(value: NullableOption[String]): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiValueExtendedProperties: Self = this.set("multiValueExtendedProperties", js.undefined)
+    def setParentFolderIdNull: Self = StObject.set(x, "parentFolderId", null)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesNull: Self = this.set("multiValueExtendedProperties", null)
+    def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
     
     @scala.inline
-    def setParentFolderId(value: NullableOption[String]): Self = this.set("parentFolderId", value.asInstanceOf[js.Any])
+    def setReceivedDateTime(value: NullableOption[String]): Self = StObject.set(x, "receivedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentFolderId: Self = this.set("parentFolderId", js.undefined)
+    def setReceivedDateTimeNull: Self = StObject.set(x, "receivedDateTime", null)
     
     @scala.inline
-    def setParentFolderIdNull: Self = this.set("parentFolderId", null)
+    def setReceivedDateTimeUndefined: Self = StObject.set(x, "receivedDateTime", js.undefined)
     
     @scala.inline
-    def setReceivedDateTime(value: NullableOption[String]): Self = this.set("receivedDateTime", value.asInstanceOf[js.Any])
+    def setReplyTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReceivedDateTime: Self = this.set("receivedDateTime", js.undefined)
+    def setReplyToNull: Self = StObject.set(x, "replyTo", null)
     
     @scala.inline
-    def setReceivedDateTimeNull: Self = this.set("receivedDateTime", null)
+    def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
     
     @scala.inline
-    def setReplyToVarargs(value: Recipient*): Self = this.set("replyTo", js.Array(value :_*))
+    def setReplyToVarargs(value: Recipient*): Self = StObject.set(x, "replyTo", js.Array(value :_*))
     
     @scala.inline
-    def setReplyTo(value: NullableOption[js.Array[Recipient]]): Self = this.set("replyTo", value.asInstanceOf[js.Any])
+    def setSender(value: NullableOption[Recipient]): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReplyTo: Self = this.set("replyTo", js.undefined)
+    def setSenderNull: Self = StObject.set(x, "sender", null)
     
     @scala.inline
-    def setReplyToNull: Self = this.set("replyTo", null)
+    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
     
     @scala.inline
-    def setSender(value: NullableOption[Recipient]): Self = this.set("sender", value.asInstanceOf[js.Any])
+    def setSentDateTime(value: NullableOption[String]): Self = StObject.set(x, "sentDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSender: Self = this.set("sender", js.undefined)
+    def setSentDateTimeNull: Self = StObject.set(x, "sentDateTime", null)
     
     @scala.inline
-    def setSenderNull: Self = this.set("sender", null)
+    def setSentDateTimeUndefined: Self = StObject.set(x, "sentDateTime", js.undefined)
     
     @scala.inline
-    def setSentDateTime(value: NullableOption[String]): Self = this.set("sentDateTime", value.asInstanceOf[js.Any])
+    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = StObject.set(x, "singleValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSentDateTime: Self = this.set("sentDateTime", js.undefined)
+    def setSingleValueExtendedPropertiesNull: Self = StObject.set(x, "singleValueExtendedProperties", null)
     
     @scala.inline
-    def setSentDateTimeNull: Self = this.set("sentDateTime", null)
+    def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = this.set("singleValueExtendedProperties", js.Array(value :_*))
+    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = this.set("singleValueExtendedProperties", value.asInstanceOf[js.Any])
+    def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSingleValueExtendedProperties: Self = this.set("singleValueExtendedProperties", js.undefined)
+    def setSubjectNull: Self = StObject.set(x, "subject", null)
     
     @scala.inline
-    def setSingleValueExtendedPropertiesNull: Self = this.set("singleValueExtendedProperties", null)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def setSubject(value: NullableOption[String]): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setToRecipients(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "toRecipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setToRecipientsNull: Self = StObject.set(x, "toRecipients", null)
     
     @scala.inline
-    def setSubjectNull: Self = this.set("subject", null)
+    def setToRecipientsUndefined: Self = StObject.set(x, "toRecipients", js.undefined)
     
     @scala.inline
-    def setToRecipientsVarargs(value: Recipient*): Self = this.set("toRecipients", js.Array(value :_*))
+    def setToRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "toRecipients", js.Array(value :_*))
     
     @scala.inline
-    def setToRecipients(value: NullableOption[js.Array[Recipient]]): Self = this.set("toRecipients", value.asInstanceOf[js.Any])
+    def setUniqueBody(value: NullableOption[ItemBody]): Self = StObject.set(x, "uniqueBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToRecipients: Self = this.set("toRecipients", js.undefined)
+    def setUniqueBodyNull: Self = StObject.set(x, "uniqueBody", null)
     
     @scala.inline
-    def setToRecipientsNull: Self = this.set("toRecipients", null)
+    def setUniqueBodyUndefined: Self = StObject.set(x, "uniqueBody", js.undefined)
     
     @scala.inline
-    def setUniqueBody(value: NullableOption[ItemBody]): Self = this.set("uniqueBody", value.asInstanceOf[js.Any])
+    def setWebLink(value: NullableOption[String]): Self = StObject.set(x, "webLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUniqueBody: Self = this.set("uniqueBody", js.undefined)
+    def setWebLinkNull: Self = StObject.set(x, "webLink", null)
     
     @scala.inline
-    def setUniqueBodyNull: Self = this.set("uniqueBody", null)
-    
-    @scala.inline
-    def setWebLink(value: NullableOption[String]): Self = this.set("webLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebLink: Self = this.set("webLink", js.undefined)
-    
-    @scala.inline
-    def setWebLinkNull: Self = this.set("webLink", null)
+    def setWebLinkUndefined: Self = StObject.set(x, "webLink", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationNotWorkingEvidence extends js.Object {
+trait DestinationNotWorkingEvidence extends StObject {
   
   /** DNS lookup errors. */
   var dnsError: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object DestinationNotWorkingEvidence {
   }
   
   @scala.inline
-  implicit class DestinationNotWorkingEvidenceOps[Self <: DestinationNotWorkingEvidence] (val x: Self) extends AnyVal {
+  implicit class DestinationNotWorkingEvidenceMutableBuilder[Self <: DestinationNotWorkingEvidence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsError(value: String): Self = StObject.set(x, "dnsError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsErrorUndefined: Self = StObject.set(x, "dnsError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandedUrl(value: String): Self = StObject.set(x, "expandedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsError(value: String): Self = this.set("dnsError", value.asInstanceOf[js.Any])
+    def setExpandedUrlUndefined: Self = StObject.set(x, "expandedUrl", js.undefined)
     
     @scala.inline
-    def deleteDnsError: Self = this.set("dnsError", js.undefined)
+    def setHttpError(value: Double): Self = StObject.set(x, "httpError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedUrl(value: String): Self = this.set("expandedUrl", value.asInstanceOf[js.Any])
+    def setHttpErrorUndefined: Self = StObject.set(x, "httpError", js.undefined)
     
     @scala.inline
-    def deleteExpandedUrl: Self = this.set("expandedUrl", js.undefined)
+    def setInvalidPage(value: String): Self = StObject.set(x, "invalidPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpError(value: Double): Self = this.set("httpError", value.asInstanceOf[js.Any])
+    def setInvalidPageUndefined: Self = StObject.set(x, "invalidPage", js.undefined)
     
     @scala.inline
-    def deleteHttpError: Self = this.set("httpError", js.undefined)
+    def setLastCheckTime(value: String): Self = StObject.set(x, "lastCheckTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidPage(value: String): Self = this.set("invalidPage", value.asInstanceOf[js.Any])
+    def setLastCheckTimeUndefined: Self = StObject.set(x, "lastCheckTime", js.undefined)
     
     @scala.inline
-    def deleteInvalidPage: Self = this.set("invalidPage", js.undefined)
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastCheckTime(value: String): Self = this.set("lastCheckTime", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteLastCheckTime: Self = this.set("lastCheckTime", js.undefined)
+    def setRedirectionError(value: String): Self = StObject.set(x, "redirectionError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setRedirectionErrorUndefined: Self = StObject.set(x, "redirectionError", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setUrlRejected(value: String): Self = StObject.set(x, "urlRejected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectionError(value: String): Self = this.set("redirectionError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirectionError: Self = this.set("redirectionError", js.undefined)
-    
-    @scala.inline
-    def setUrlRejected(value: String): Self = this.set("urlRejected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlRejected: Self = this.set("urlRejected", js.undefined)
+    def setUrlRejectedUndefined: Self = StObject.set(x, "urlRejected", js.undefined)
   }
 }

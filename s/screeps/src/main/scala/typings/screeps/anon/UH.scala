@@ -1,11 +1,12 @@
 package typings.screeps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UH extends js.Object {
+trait UH extends StObject {
   
   var UH: Attack = js.native
   
@@ -22,27 +23,15 @@ object UH {
   }
   
   @scala.inline
-  implicit class UHOps[Self <: UH] (val x: Self) extends AnyVal {
+  implicit class UHMutableBuilder[Self <: UH] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUH(value: Attack): Self = StObject.set(x, "UH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUH2O(value: `6`): Self = StObject.set(x, "UH2O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUH(value: Attack): Self = this.set("UH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUH2O(value: `6`): Self = this.set("UH2O", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXUH2O(value: `7`): Self = this.set("XUH2O", value.asInstanceOf[js.Any])
+    def setXUH2O(value: `7`): Self = StObject.set(x, "XUH2O", value.asInstanceOf[js.Any])
   }
 }

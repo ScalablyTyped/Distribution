@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupConfigurationParameter extends js.Object {
+trait GroupConfigurationParameter extends StObject {
   
   /**
     * The name of the group configuration parameter. You can specify the following string values:   For configuration item type AWS::ResourceGroups::Generic:    allowed-resource-types  Specifies the types of resources that you can add to this group by using the GroupResources operation.     For configuration item type AWS::EC2::CapacityReservationPool:   None - This configuration item type doesn't support any parameters.   For more information about EC2 capacity reservation groups, see Working with capacity reservation groups in the EC2 Users Guide.  
@@ -26,30 +27,18 @@ object GroupConfigurationParameter {
   }
   
   @scala.inline
-  implicit class GroupConfigurationParameterOps[Self <: GroupConfigurationParameter] (val x: Self) extends AnyVal {
+  implicit class GroupConfigurationParameterMutableBuilder[Self <: GroupConfigurationParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: GroupConfigurationParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: GroupConfigurationParameterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def setName(value: GroupConfigurationParameterName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: GroupConfigurationParameterValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: GroupConfigurationParameterValueList): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: GroupConfigurationParameterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

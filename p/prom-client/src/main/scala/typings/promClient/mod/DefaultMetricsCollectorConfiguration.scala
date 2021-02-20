@@ -1,11 +1,12 @@
 package typings.promClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultMetricsCollectorConfiguration extends js.Object {
+trait DefaultMetricsCollectorConfiguration extends StObject {
   
   var eventLoopMonitoringPrecision: js.UndefOr[Double] = js.native
   
@@ -24,45 +25,33 @@ object DefaultMetricsCollectorConfiguration {
   }
   
   @scala.inline
-  implicit class DefaultMetricsCollectorConfigurationOps[Self <: DefaultMetricsCollectorConfiguration] (val x: Self) extends AnyVal {
+  implicit class DefaultMetricsCollectorConfigurationMutableBuilder[Self <: DefaultMetricsCollectorConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventLoopMonitoringPrecision(value: Double): Self = StObject.set(x, "eventLoopMonitoringPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventLoopMonitoringPrecisionUndefined: Self = StObject.set(x, "eventLoopMonitoringPrecision", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcDurationBuckets(value: js.Array[Double]): Self = StObject.set(x, "gcDurationBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventLoopMonitoringPrecision(value: Double): Self = this.set("eventLoopMonitoringPrecision", value.asInstanceOf[js.Any])
+    def setGcDurationBucketsUndefined: Self = StObject.set(x, "gcDurationBuckets", js.undefined)
     
     @scala.inline
-    def deleteEventLoopMonitoringPrecision: Self = this.set("eventLoopMonitoringPrecision", js.undefined)
+    def setGcDurationBucketsVarargs(value: Double*): Self = StObject.set(x, "gcDurationBuckets", js.Array(value :_*))
     
     @scala.inline
-    def setGcDurationBucketsVarargs(value: Double*): Self = this.set("gcDurationBuckets", js.Array(value :_*))
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcDurationBuckets(value: js.Array[Double]): Self = this.set("gcDurationBuckets", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def deleteGcDurationBuckets: Self = this.set("gcDurationBuckets", js.undefined)
+    def setRegister(value: Registry): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
-    
-    @scala.inline
-    def setRegister(value: Registry): Self = this.set("register", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegister: Self = this.set("register", js.undefined)
+    def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
   }
 }

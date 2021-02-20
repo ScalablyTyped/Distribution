@@ -1,11 +1,12 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaIndexItemRequest extends js.Object {
+trait SchemaIndexItemRequest extends StObject {
   
   /**
     * Name of connector making this call. &lt;br /&gt;Format:
@@ -39,48 +40,36 @@ object SchemaIndexItemRequest {
   }
   
   @scala.inline
-  implicit class SchemaIndexItemRequestOps[Self <: SchemaIndexItemRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaIndexItemRequestMutableBuilder[Self <: SchemaIndexItemRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorName(value: String): Self = this.set("connectorName", value.asInstanceOf[js.Any])
+    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
     @scala.inline
-    def deleteConnectorName: Self = this.set("connectorName", js.undefined)
+    def setIndexItemOptions(value: SchemaIndexItemOptions): Self = StObject.set(x, "indexItemOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugOptions(value: SchemaDebugOptions): Self = this.set("debugOptions", value.asInstanceOf[js.Any])
+    def setIndexItemOptionsUndefined: Self = StObject.set(x, "indexItemOptions", js.undefined)
     
     @scala.inline
-    def deleteDebugOptions: Self = this.set("debugOptions", js.undefined)
+    def setItem(value: SchemaItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexItemOptions(value: SchemaIndexItemOptions): Self = this.set("indexItemOptions", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteIndexItemOptions: Self = this.set("indexItemOptions", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: SchemaItem): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
-    
-    @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

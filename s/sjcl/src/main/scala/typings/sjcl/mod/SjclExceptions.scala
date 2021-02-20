@@ -1,12 +1,13 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
 @js.native
-trait SjclExceptions extends js.Object {
+trait SjclExceptions extends StObject {
   
   var bug: SjclExceptionFactory = js.native
   
@@ -30,30 +31,18 @@ object SjclExceptions {
   }
   
   @scala.inline
-  implicit class SjclExceptionsOps[Self <: SjclExceptions] (val x: Self) extends AnyVal {
+  implicit class SjclExceptionsMutableBuilder[Self <: SjclExceptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBug(value: SjclExceptionFactory): Self = StObject.set(x, "bug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorrupt(value: SjclExceptionFactory): Self = StObject.set(x, "corrupt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalid(value: SjclExceptionFactory): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBug(value: SjclExceptionFactory): Self = this.set("bug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCorrupt(value: SjclExceptionFactory): Self = this.set("corrupt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInvalid(value: SjclExceptionFactory): Self = this.set("invalid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotReady(value: SjclExceptionFactory): Self = this.set("notReady", value.asInstanceOf[js.Any])
+    def setNotReady(value: SjclExceptionFactory): Self = StObject.set(x, "notReady", value.asInstanceOf[js.Any])
   }
 }

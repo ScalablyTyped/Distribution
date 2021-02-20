@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/fill/ApiFill", JSImport.Namespace)
-@js.native
-object apiFillMod extends js.Object {
+object apiFillMod {
   
+  @JSImport("@ant-design/icons-angular/icons/fill/ApiFill", "ApiFill")
+  @js.native
   val ApiFill: IconDefinition = js.native
 }

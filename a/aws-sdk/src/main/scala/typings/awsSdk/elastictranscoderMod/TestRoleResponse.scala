@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestRoleResponse extends js.Object {
+trait TestRoleResponse extends StObject {
   
   /**
     * If the Success element contains false, this value is an array of one or more error messages that were generated during the test process.
@@ -26,33 +27,21 @@ object TestRoleResponse {
   }
   
   @scala.inline
-  implicit class TestRoleResponseOps[Self <: TestRoleResponse] (val x: Self) extends AnyVal {
+  implicit class TestRoleResponseMutableBuilder[Self <: TestRoleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: ExceptionMessages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessagesVarargs(value: String*): Self = StObject.set(x, "Messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesVarargs(value: String*): Self = this.set("Messages", js.Array(value :_*))
+    def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: ExceptionMessages): Self = this.set("Messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("Messages", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: Success): Self = this.set("Success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("Success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
   }
 }

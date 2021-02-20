@@ -6,35 +6,16 @@ import typings.grammarkdown.nodesMod.CommentTrivia
 import typings.grammarkdown.nodesMod.HtmlTrivia
 import typings.grammarkdown.tokensMod.SyntaxKind
 import typings.prex.mod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown/dist/scanner", JSImport.Namespace)
-@js.native
-object scannerMod extends js.Object {
+object scannerMod {
   
-  def scanHtmlTrivia(text: String, pos: Double, end: Double): js.UndefOr[js.Array[HtmlTrivia]] = js.native
-  
-  def skipTrivia(text: String, pos: Double, end: Double): Double = js.native
-  def skipTrivia(
-    text: String,
-    pos: Double,
-    end: Double,
-    htmlTrivia: js.UndefOr[scala.Nothing],
-    commentTrivia: js.Array[CommentTrivia]
-  ): Double = js.native
-  def skipTrivia(text: String, pos: Double, end: Double, htmlTrivia: js.Array[HtmlTrivia]): Double = js.native
-  def skipTrivia(
-    text: String,
-    pos: Double,
-    end: Double,
-    htmlTrivia: js.Array[HtmlTrivia],
-    commentTrivia: js.Array[CommentTrivia]
-  ): Double = js.native
-  
+  @JSImport("grammarkdown/dist/scanner", "Scanner")
   @js.native
-  class Scanner protected () extends js.Object {
+  class Scanner protected () extends StObject {
     def this(filename: String, text: String, diagnostics: DiagnosticMessages) = this()
     def this(filename: String, text: String, diagnostics: DiagnosticMessages, cancelable: Cancelable) = this()
     def this(filename: String, text: String, diagnostics: DiagnosticMessages, cancelable: CancellationToken) = this()
@@ -161,4 +142,33 @@ object scannerMod extends js.Object {
     
     var tokenValue: js.Any = js.native
   }
+  
+  @JSImport("grammarkdown/dist/scanner", "scanHtmlTrivia")
+  @js.native
+  def scanHtmlTrivia(text: String, pos: Double, end: Double): js.UndefOr[js.Array[HtmlTrivia]] = js.native
+  
+  @JSImport("grammarkdown/dist/scanner", "skipTrivia")
+  @js.native
+  def skipTrivia(text: String, pos: Double, end: Double): Double = js.native
+  @JSImport("grammarkdown/dist/scanner", "skipTrivia")
+  @js.native
+  def skipTrivia(
+    text: String,
+    pos: Double,
+    end: Double,
+    htmlTrivia: js.UndefOr[scala.Nothing],
+    commentTrivia: js.Array[CommentTrivia]
+  ): Double = js.native
+  @JSImport("grammarkdown/dist/scanner", "skipTrivia")
+  @js.native
+  def skipTrivia(text: String, pos: Double, end: Double, htmlTrivia: js.Array[HtmlTrivia]): Double = js.native
+  @JSImport("grammarkdown/dist/scanner", "skipTrivia")
+  @js.native
+  def skipTrivia(
+    text: String,
+    pos: Double,
+    end: Double,
+    htmlTrivia: js.Array[HtmlTrivia],
+    commentTrivia: js.Array[CommentTrivia]
+  ): Double = js.native
 }

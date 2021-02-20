@@ -1,11 +1,12 @@
 package typings.awsSdk.serverlessapplicationrepositoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCloudFormationChangeSetRequest extends js.Object {
+trait CreateCloudFormationChangeSetRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application.
@@ -113,105 +114,93 @@ object CreateCloudFormationChangeSetRequest {
   }
   
   @scala.inline
-  implicit class CreateCloudFormationChangeSetRequestOps[Self <: CreateCloudFormationChangeSetRequest] (val x: Self) extends AnyVal {
+  implicit class CreateCloudFormationChangeSetRequestMutableBuilder[Self <: CreateCloudFormationChangeSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilities(value: listOfString): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
     @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setCapabilitiesVarargs(value: string*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
     
     @scala.inline
-    def setStackName(value: string): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    def setChangeSetName(value: string): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilitiesVarargs(value: string*): Self = this.set("Capabilities", js.Array(value :_*))
+    def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
     
     @scala.inline
-    def setCapabilities(value: listOfString): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    def setClientToken(value: string): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def setChangeSetName(value: string): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChangeSetName: Self = this.set("ChangeSetName", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setClientToken(value: string): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setNotificationArns(value: listOfString): Self = StObject.set(x, "NotificationArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setNotificationArnsUndefined: Self = StObject.set(x, "NotificationArns", js.undefined)
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setNotificationArnsVarargs(value: string*): Self = StObject.set(x, "NotificationArns", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setParameterOverrides(value: listOfParameterValue): Self = StObject.set(x, "ParameterOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationArnsVarargs(value: string*): Self = this.set("NotificationArns", js.Array(value :_*))
+    def setParameterOverridesUndefined: Self = StObject.set(x, "ParameterOverrides", js.undefined)
     
     @scala.inline
-    def setNotificationArns(value: listOfString): Self = this.set("NotificationArns", value.asInstanceOf[js.Any])
+    def setParameterOverridesVarargs(value: ParameterValue*): Self = StObject.set(x, "ParameterOverrides", js.Array(value :_*))
     
     @scala.inline
-    def deleteNotificationArns: Self = this.set("NotificationArns", js.undefined)
+    def setResourceTypes(value: listOfString): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterOverridesVarargs(value: ParameterValue*): Self = this.set("ParameterOverrides", js.Array(value :_*))
+    def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
     @scala.inline
-    def setParameterOverrides(value: listOfParameterValue): Self = this.set("ParameterOverrides", value.asInstanceOf[js.Any])
+    def setResourceTypesVarargs(value: string*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
     
     @scala.inline
-    def deleteParameterOverrides: Self = this.set("ParameterOverrides", js.undefined)
+    def setRollbackConfiguration(value: RollbackConfiguration): Self = StObject.set(x, "RollbackConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTypesVarargs(value: string*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    def setRollbackConfigurationUndefined: Self = StObject.set(x, "RollbackConfiguration", js.undefined)
     
     @scala.inline
-    def setResourceTypes(value: listOfString): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    def setSemanticVersionUndefined: Self = StObject.set(x, "SemanticVersion", js.undefined)
     
     @scala.inline
-    def setRollbackConfiguration(value: RollbackConfiguration): Self = this.set("RollbackConfiguration", value.asInstanceOf[js.Any])
+    def setStackName(value: string): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRollbackConfiguration: Self = this.set("RollbackConfiguration", js.undefined)
+    def setTags(value: listOfTag): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemanticVersion(value: string): Self = this.set("SemanticVersion", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSemanticVersion: Self = this.set("SemanticVersion", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTemplateId(value: string): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: listOfTag): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setTemplateId(value: string): Self = this.set("TemplateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateId: Self = this.set("TemplateId", js.undefined)
+    def setTemplateIdUndefined: Self = StObject.set(x, "TemplateId", js.undefined)
   }
 }

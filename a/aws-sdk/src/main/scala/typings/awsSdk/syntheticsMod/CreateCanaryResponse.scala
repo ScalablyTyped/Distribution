@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCanaryResponse extends js.Object {
+trait CreateCanaryResponse extends StObject {
   
   /**
     * The full details about the canary you have created.
@@ -21,24 +22,12 @@ object CreateCanaryResponse {
   }
   
   @scala.inline
-  implicit class CreateCanaryResponseOps[Self <: CreateCanaryResponse] (val x: Self) extends AnyVal {
+  implicit class CreateCanaryResponseMutableBuilder[Self <: CreateCanaryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanary(value: Canary): Self = StObject.set(x, "Canary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanary(value: Canary): Self = this.set("Canary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanary: Self = this.set("Canary", js.undefined)
+    def setCanaryUndefined: Self = StObject.set(x, "Canary", js.undefined)
   }
 }

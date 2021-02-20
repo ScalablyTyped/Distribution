@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBucketInventoryConfigurationsOutput extends js.Object {
+trait ListBucketInventoryConfigurationsOutput extends StObject {
   
   /**
     * If sent in the request, the marker that is used as a starting point for this inventory configuration list response.
@@ -36,45 +37,33 @@ object ListBucketInventoryConfigurationsOutput {
   }
   
   @scala.inline
-  implicit class ListBucketInventoryConfigurationsOutputOps[Self <: ListBucketInventoryConfigurationsOutput] (val x: Self) extends AnyVal {
+  implicit class ListBucketInventoryConfigurationsOutputMutableBuilder[Self <: ListBucketInventoryConfigurationsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInventoryConfigurationList(value: InventoryConfigurationList): Self = StObject.set(x, "InventoryConfigurationList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: Token): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
+    def setInventoryConfigurationListUndefined: Self = StObject.set(x, "InventoryConfigurationList", js.undefined)
     
     @scala.inline
-    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    def setInventoryConfigurationListVarargs(value: InventoryConfiguration*): Self = StObject.set(x, "InventoryConfigurationList", js.Array(value :_*))
     
     @scala.inline
-    def setInventoryConfigurationListVarargs(value: InventoryConfiguration*): Self = this.set("InventoryConfigurationList", js.Array(value :_*))
+    def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventoryConfigurationList(value: InventoryConfigurationList): Self = this.set("InventoryConfigurationList", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def deleteInventoryConfigurationList: Self = this.set("InventoryConfigurationList", js.undefined)
+    def setNextContinuationToken(value: NextToken): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
-    
-    @scala.inline
-    def setNextContinuationToken(value: NextToken): Self = this.set("NextContinuationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextContinuationToken: Self = this.set("NextContinuationToken", js.undefined)
+    def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
   }
 }

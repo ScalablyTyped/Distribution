@@ -3,14 +3,14 @@ package typings.roadsServer
 import typings.node.httpsMod.ServerOptions
 import typings.roads.mod.Road
 import typings.roadsServer.http2ServerMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("roads-server", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("roads-server", "Http2Server")
   @js.native
   class Http2Server protected () extends default {
     /**
@@ -21,6 +21,7 @@ object mod extends js.Object {
     def this(road: Road) = this()
   }
   
+  @JSImport("roads-server", "Server")
   @js.native
   class Server protected ()
     extends typings.roadsServer.httpServerMod.default {

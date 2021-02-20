@@ -1,19 +1,21 @@
 package typings.atomically
 
 import typings.atomically.typesMod.Disposer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("atomically/dist/utils/scheduler", JSImport.Namespace)
-@js.native
-object schedulerMod extends js.Object {
+object schedulerMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("atomically/dist/utils/scheduler", "default.next")
+    @js.native
     def next(id: String): Unit = js.native
     
+    @JSImport("atomically/dist/utils/scheduler", "default.schedule")
+    @js.native
     def schedule(id: String): js.Promise[Disposer] = js.native
   }
 }

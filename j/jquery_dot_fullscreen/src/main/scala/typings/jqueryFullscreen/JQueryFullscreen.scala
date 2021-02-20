@@ -1,6 +1,7 @@
 package typings.jqueryFullscreen
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for the jquery plugin
   */
 @js.native
-trait JQueryFullscreen extends js.Object {
+trait JQueryFullscreen extends StObject {
   
   /**
     * [close Deactivate fullscreen mode]

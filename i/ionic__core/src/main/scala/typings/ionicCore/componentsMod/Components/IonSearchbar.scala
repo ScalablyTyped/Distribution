@@ -26,12 +26,13 @@ import typings.ionicCore.ionicCoreStrings.url
 import typings.ionicCore.mod.AutocompleteTypes
 import typings.ionicCore.mod.Color
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonSearchbar extends js.Object {
+trait IonSearchbar extends StObject {
   
   /**
     * If `true`, enable searchbar animation.
@@ -157,102 +158,90 @@ object IonSearchbar {
   }
   
   @scala.inline
-  implicit class IonSearchbarOps[Self <: IonSearchbar] (val x: Self) extends AnyVal {
+  implicit class IonSearchbarMutableBuilder[Self <: IonSearchbar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutocomplete(value: AutocompleteTypes): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutocorrect(value: on | off): Self = StObject.set(x, "autocorrect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setCancelButtonIcon(value: String): Self = StObject.set(x, "cancelButtonIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutocomplete(value: AutocompleteTypes): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutocorrect(value: on | off): Self = this.set("autocorrect", value.asInstanceOf[js.Any])
+    def setClearIcon(value: String): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelButtonIcon(value: String): Self = this.set("cancelButtonIcon", value.asInstanceOf[js.Any])
+    def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
     @scala.inline
-    def setCancelButtonText(value: String): Self = this.set("cancelButtonText", value.asInstanceOf[js.Any])
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebounce(value: Double): Self = this.set("debounce", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInputElement(value: () => js.Promise[HTMLInputElement]): Self = this.set("getInputElement", js.Any.fromFunction0(value))
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setEnterkeyhint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterkeyhint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetFocus(value: () => js.Promise[Unit]): Self = this.set("setFocus", js.Any.fromFunction0(value))
+    def setEnterkeyhintUndefined: Self = StObject.set(x, "enterkeyhint", js.undefined)
     
     @scala.inline
-    def setShowCancelButton(value: never | focus | always): Self = this.set("showCancelButton", value.asInstanceOf[js.Any])
+    def setGetInputElement(value: () => js.Promise[HTMLInputElement]): Self = StObject.set(x, "getInputElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSpellcheck(value: Boolean): Self = this.set("spellcheck", value.asInstanceOf[js.Any])
+    def setInputmode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputmode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: text | password | email | number | search | tel | url): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setInputmodeUndefined: Self = StObject.set(x, "inputmode", js.undefined)
     
     @scala.inline
-    def setClearIcon(value: String): Self = this.set("clearIcon", value.asInstanceOf[js.Any])
+    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClearIcon: Self = this.set("clearIcon", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setSearchIcon(value: String): Self = StObject.set(x, "searchIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterkeyhint(value: enter | done | go | next | previous | search | send): Self = this.set("enterkeyhint", value.asInstanceOf[js.Any])
+    def setSearchIconUndefined: Self = StObject.set(x, "searchIcon", js.undefined)
     
     @scala.inline
-    def deleteEnterkeyhint: Self = this.set("enterkeyhint", js.undefined)
+    def setSetFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInputmode(value: none | text | tel | url | email | numeric | decimal | search): Self = this.set("inputmode", value.asInstanceOf[js.Any])
+    def setShowCancelButton(value: never | focus | always): Self = StObject.set(x, "showCancelButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputmode: Self = this.set("inputmode", js.undefined)
+    def setSpellcheck(value: Boolean): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: ios | md): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setType(value: text | password | email | number | search | tel | url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchIcon(value: String): Self = this.set("searchIcon", value.asInstanceOf[js.Any])
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def deleteSearchIcon: Self = this.set("searchIcon", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

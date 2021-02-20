@@ -1,11 +1,12 @@
 package typings.telebot.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheTime extends js.Object {
+trait CacheTime extends StObject {
   
   var cacheTime: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object CacheTime {
   }
   
   @scala.inline
-  implicit class CacheTimeOps[Self <: CacheTime] (val x: Self) extends AnyVal {
+  implicit class CacheTimeMutableBuilder[Self <: CacheTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheTime(value: Double): Self = StObject.set(x, "cacheTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheTimeUndefined: Self = StObject.set(x, "cacheTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowAlert(value: Boolean): Self = StObject.set(x, "showAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheTime(value: Double): Self = this.set("cacheTime", value.asInstanceOf[js.Any])
+    def setShowAlertUndefined: Self = StObject.set(x, "showAlert", js.undefined)
     
     @scala.inline
-    def deleteCacheTime: Self = this.set("cacheTime", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAlert(value: Boolean): Self = this.set("showAlert", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteShowAlert: Self = this.set("showAlert", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

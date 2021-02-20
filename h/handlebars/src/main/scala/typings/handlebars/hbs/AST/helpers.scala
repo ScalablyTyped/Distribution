@@ -1,11 +1,12 @@
 package typings.handlebars.hbs.AST
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait helpers extends js.Object {
+trait helpers extends StObject {
   
   def helperExpression(node: Node): Boolean = js.native
   
@@ -26,27 +27,15 @@ object helpers {
   }
   
   @scala.inline
-  implicit class helpersOps[Self <: helpers] (val x: Self) extends AnyVal {
+  implicit class helpersMutableBuilder[Self <: helpers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHelperExpression(value: Node => Boolean): Self = StObject.set(x, "helperExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScopeId(value: PathExpression => Boolean): Self = StObject.set(x, "scopeId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHelperExpression(value: Node => Boolean): Self = this.set("helperExpression", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScopeId(value: PathExpression => Boolean): Self = this.set("scopeId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSimpleId(value: PathExpression => Boolean): Self = this.set("simpleId", js.Any.fromFunction1(value))
+    def setSimpleId(value: PathExpression => Boolean): Self = StObject.set(x, "simpleId", js.Any.fromFunction1(value))
   }
 }

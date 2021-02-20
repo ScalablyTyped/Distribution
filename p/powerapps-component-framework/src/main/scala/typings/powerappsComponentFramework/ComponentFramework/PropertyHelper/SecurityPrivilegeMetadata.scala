@@ -1,6 +1,7 @@
 package typings.powerappsComponentFramework.ComponentFramework.PropertyHelper
 
 import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.PrivilegeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Entity metadata security privileges.
   */
 @js.native
-trait SecurityPrivilegeMetadata extends js.Object {
+trait SecurityPrivilegeMetadata extends StObject {
   
   var CanBeBasic: Boolean = js.native
   
@@ -48,45 +49,33 @@ object SecurityPrivilegeMetadata {
   }
   
   @scala.inline
-  implicit class SecurityPrivilegeMetadataOps[Self <: SecurityPrivilegeMetadata] (val x: Self) extends AnyVal {
+  implicit class SecurityPrivilegeMetadataMutableBuilder[Self <: SecurityPrivilegeMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanBeBasic(value: Boolean): Self = StObject.set(x, "CanBeBasic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanBeDeep(value: Boolean): Self = StObject.set(x, "CanBeDeep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanBeEntityReference(value: Boolean): Self = StObject.set(x, "CanBeEntityReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeBasic(value: Boolean): Self = this.set("CanBeBasic", value.asInstanceOf[js.Any])
+    def setCanBeGlobal(value: Boolean): Self = StObject.set(x, "CanBeGlobal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeDeep(value: Boolean): Self = this.set("CanBeDeep", value.asInstanceOf[js.Any])
+    def setCanBeLocal(value: Boolean): Self = StObject.set(x, "CanBeLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeEntityReference(value: Boolean): Self = this.set("CanBeEntityReference", value.asInstanceOf[js.Any])
+    def setCanBeParentEntityReference(value: Boolean): Self = StObject.set(x, "CanBeParentEntityReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeGlobal(value: Boolean): Self = this.set("CanBeGlobal", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeLocal(value: Boolean): Self = this.set("CanBeLocal", value.asInstanceOf[js.Any])
+    def setPrivilegeId(value: String): Self = StObject.set(x, "PrivilegeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeParentEntityReference(value: Boolean): Self = this.set("CanBeParentEntityReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivilegeId(value: String): Self = this.set("PrivilegeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivilegeType(value: PrivilegeType): Self = this.set("PrivilegeType", value.asInstanceOf[js.Any])
+    def setPrivilegeType(value: PrivilegeType): Self = StObject.set(x, "PrivilegeType", value.asInstanceOf[js.Any])
   }
 }

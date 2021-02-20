@@ -2,12 +2,13 @@ package typings.sharepoint.SP.JsGrid
 
 import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditActorGridContext extends js.Object {
+trait IEditActorGridContext extends StObject {
   
   def OnKeyDown(domEvent: DomEvent): Unit = js.native
   
@@ -40,39 +41,27 @@ object IEditActorGridContext {
   }
   
   @scala.inline
-  implicit class IEditActorGridContextOps[Self <: IEditActorGridContext] (val x: Self) extends AnyVal {
+  implicit class IEditActorGridContextMutableBuilder[Self <: IEditActorGridContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBLightFocus(value: Boolean): Self = StObject.set(x, "bLightFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmptyValue(value: js.Any): Self = StObject.set(x, "emptyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJsGridObj(value: JsGridControl): Self = StObject.set(x, "jsGridObj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnKeyDown(value: DomEvent => Unit): Self = this.set("OnKeyDown", js.Any.fromFunction1(value))
+    def setOnKeyDown(value: DomEvent => Unit): Self = StObject.set(x, "OnKeyDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRTL(value: js.Any): Self = this.set("RTL", value.asInstanceOf[js.Any])
+    def setParentNode(value: HTMLElement): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBLightFocus(value: Boolean): Self = this.set("bLightFocus", value.asInstanceOf[js.Any])
+    def setRTL(value: js.Any): Self = StObject.set(x, "RTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyValue(value: js.Any): Self = this.set("emptyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJsGridObj(value: JsGridControl): Self = this.set("jsGridObj", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentNode(value: HTMLElement): Self = this.set("parentNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleManager(value: IStyleManager): Self = this.set("styleManager", value.asInstanceOf[js.Any])
+    def setStyleManager(value: IStyleManager): Self = StObject.set(x, "styleManager", value.asInstanceOf[js.Any])
   }
 }

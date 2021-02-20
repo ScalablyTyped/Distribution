@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,9 @@ class ShaderCodeInliner protected ()
   def this(sourceCode: String, numMaxIterations: Double) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "ShaderCodeInliner")
-@js.native
-object ShaderCodeInliner extends js.Object {
+object ShaderCodeInliner {
   
+  @JSImport("babylonjs/Legacy/legacy", "ShaderCodeInliner._RegexpFindFunctionNameAndType")
+  @js.native
   val _RegexpFindFunctionNameAndType: js.Any = js.native
 }

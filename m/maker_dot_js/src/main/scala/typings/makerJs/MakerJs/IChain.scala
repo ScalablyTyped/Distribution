@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A chain of paths which connect end to end.
   */
 @js.native
-trait IChain extends js.Object {
+trait IChain extends StObject {
   
   /**
     * Flag if this chain forms a loop end to end.
@@ -34,33 +35,21 @@ object IChain {
   }
   
   @scala.inline
-  implicit class IChainOps[Self <: IChain] (val x: Self) extends AnyVal {
+  implicit class IChainMutableBuilder[Self <: IChain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndless(value: Boolean): Self = StObject.set(x, "endless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndlessUndefined: Self = StObject.set(x, "endless", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinks(value: js.Array[IChainLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinksVarargs(value: IChainLink*): Self = this.set("links", js.Array(value :_*))
+    def setLinksVarargs(value: IChainLink*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def setLinks(value: js.Array[IChainLink]): Self = this.set("links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathLength(value: Double): Self = this.set("pathLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndless(value: Boolean): Self = this.set("endless", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndless: Self = this.set("endless", js.undefined)
+    def setPathLength(value: Double): Self = StObject.set(x, "pathLength", value.asInstanceOf[js.Any])
   }
 }

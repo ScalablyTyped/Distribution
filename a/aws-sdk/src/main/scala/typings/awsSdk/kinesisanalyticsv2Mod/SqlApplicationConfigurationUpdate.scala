@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlApplicationConfigurationUpdate extends js.Object {
+trait SqlApplicationConfigurationUpdate extends StObject {
   
   /**
     * The array of InputUpdate objects describing the new input streams used by the application.
@@ -31,45 +32,33 @@ object SqlApplicationConfigurationUpdate {
   }
   
   @scala.inline
-  implicit class SqlApplicationConfigurationUpdateOps[Self <: SqlApplicationConfigurationUpdate] (val x: Self) extends AnyVal {
+  implicit class SqlApplicationConfigurationUpdateMutableBuilder[Self <: SqlApplicationConfigurationUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputUpdates(value: InputUpdates): Self = StObject.set(x, "InputUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputUpdatesUndefined: Self = StObject.set(x, "InputUpdates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputUpdatesVarargs(value: InputUpdate*): Self = StObject.set(x, "InputUpdates", js.Array(value :_*))
     
     @scala.inline
-    def setInputUpdatesVarargs(value: InputUpdate*): Self = this.set("InputUpdates", js.Array(value :_*))
+    def setOutputUpdates(value: OutputUpdates): Self = StObject.set(x, "OutputUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputUpdates(value: InputUpdates): Self = this.set("InputUpdates", value.asInstanceOf[js.Any])
+    def setOutputUpdatesUndefined: Self = StObject.set(x, "OutputUpdates", js.undefined)
     
     @scala.inline
-    def deleteInputUpdates: Self = this.set("InputUpdates", js.undefined)
+    def setOutputUpdatesVarargs(value: OutputUpdate*): Self = StObject.set(x, "OutputUpdates", js.Array(value :_*))
     
     @scala.inline
-    def setOutputUpdatesVarargs(value: OutputUpdate*): Self = this.set("OutputUpdates", js.Array(value :_*))
+    def setReferenceDataSourceUpdates(value: ReferenceDataSourceUpdates): Self = StObject.set(x, "ReferenceDataSourceUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputUpdates(value: OutputUpdates): Self = this.set("OutputUpdates", value.asInstanceOf[js.Any])
+    def setReferenceDataSourceUpdatesUndefined: Self = StObject.set(x, "ReferenceDataSourceUpdates", js.undefined)
     
     @scala.inline
-    def deleteOutputUpdates: Self = this.set("OutputUpdates", js.undefined)
-    
-    @scala.inline
-    def setReferenceDataSourceUpdatesVarargs(value: ReferenceDataSourceUpdate*): Self = this.set("ReferenceDataSourceUpdates", js.Array(value :_*))
-    
-    @scala.inline
-    def setReferenceDataSourceUpdates(value: ReferenceDataSourceUpdates): Self = this.set("ReferenceDataSourceUpdates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferenceDataSourceUpdates: Self = this.set("ReferenceDataSourceUpdates", js.undefined)
+    def setReferenceDataSourceUpdatesVarargs(value: ReferenceDataSourceUpdate*): Self = StObject.set(x, "ReferenceDataSourceUpdates", js.Array(value :_*))
   }
 }

@@ -1,23 +1,57 @@
 package typings.reactLeaflet.mod
 
-import typings.leaflet.mod.WMSOptions
-import typings.react.mod.ReactNode
+import typings.leaflet.mod.CRS
+import typings.leaflet.mod.CrossOrigin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
-- typings.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ @js.native
+- typings.leaflet.mod.GridLayerOptions because Already inherited
+- typings.leaflet.mod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined minNativeZoom, zoomOffset, errorTileUrl, maxNativeZoom, zoomReverse, subdomains, id, tms, accessToken, crossOrigin, detectRetina
+- typings.leaflet.mod.WMSOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined layers, transparent, uppercase, format, crs, version, styles */ @js.native
 trait WMSTileLayerProps
-  extends WMSOptions
+  extends GridLayerProps
      with TileLayerEvents {
   
-  var children: js.UndefOr[Children] = js.native
+  var accessToken: js.UndefOr[String] = js.native
   
-  var leaflet: js.UndefOr[LeafletContext] = js.native
+  var crossOrigin: js.UndefOr[CrossOrigin] = js.native
+  
+  var crs: js.UndefOr[CRS] = js.native
+  
+  var detectRetina: js.UndefOr[Boolean] = js.native
+  
+  var errorTileUrl: js.UndefOr[String] = js.native
+  
+  var format: js.UndefOr[String] = js.native
+  
+  var id: js.UndefOr[String] = js.native
+  
+  var layers: js.UndefOr[String] = js.native
+  
+  var maxNativeZoom: js.UndefOr[Double] = js.native
+  
+  var minNativeZoom: js.UndefOr[Double] = js.native
+  
+  var styles: js.UndefOr[String] = js.native
+  
+  var subdomains: js.UndefOr[String | js.Array[String]] = js.native
+  
+  var tms: js.UndefOr[Boolean] = js.native
+  
+  var transparent: js.UndefOr[Boolean] = js.native
+  
+  var uppercase: js.UndefOr[Boolean] = js.native
   
   var url: String = js.native
+  
+  var version: js.UndefOr[String] = js.native
+  
+  var zoomOffset: js.UndefOr[Double] = js.native
+  
+  var zoomReverse: js.UndefOr[Boolean] = js.native
 }
 object WMSTileLayerProps {
   
@@ -28,36 +62,120 @@ object WMSTileLayerProps {
   }
   
   @scala.inline
-  implicit class WMSTileLayerPropsOps[Self <: WMSTileLayerProps] (val x: Self) extends AnyVal {
+  implicit class WMSTileLayerPropsMutableBuilder[Self <: WMSTileLayerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrossOrigin(value: CrossOrigin): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def setChildrenVarargs(value: ReactNode*): Self = this.set("children", js.Array(value :_*))
+    def setCrs(value: CRS): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: Children): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setDetectRetina(value: Boolean): Self = StObject.set(x, "detectRetina", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaflet(value: LeafletContext): Self = this.set("leaflet", value.asInstanceOf[js.Any])
+    def setDetectRetinaUndefined: Self = StObject.set(x, "detectRetina", js.undefined)
     
     @scala.inline
-    def deleteLeaflet: Self = this.set("leaflet", js.undefined)
+    def setErrorTileUrl(value: String): Self = StObject.set(x, "errorTileUrl", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setErrorTileUrlUndefined: Self = StObject.set(x, "errorTileUrl", js.undefined)
+    
+    @scala.inline
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    @scala.inline
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    @scala.inline
+    def setLayers(value: String): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    
+    @scala.inline
+    def setMaxNativeZoom(value: Double): Self = StObject.set(x, "maxNativeZoom", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMaxNativeZoomUndefined: Self = StObject.set(x, "maxNativeZoom", js.undefined)
+    
+    @scala.inline
+    def setMinNativeZoom(value: Double): Self = StObject.set(x, "minNativeZoom", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMinNativeZoomUndefined: Self = StObject.set(x, "minNativeZoom", js.undefined)
+    
+    @scala.inline
+    def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    
+    @scala.inline
+    def setSubdomains(value: String | js.Array[String]): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
+    
+    @scala.inline
+    def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value :_*))
+    
+    @scala.inline
+    def setTms(value: Boolean): Self = StObject.set(x, "tms", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTmsUndefined: Self = StObject.set(x, "tms", js.undefined)
+    
+    @scala.inline
+    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    
+    @scala.inline
+    def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUppercaseUndefined: Self = StObject.set(x, "uppercase", js.undefined)
+    
+    @scala.inline
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    
+    @scala.inline
+    def setZoomOffset(value: Double): Self = StObject.set(x, "zoomOffset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setZoomOffsetUndefined: Self = StObject.set(x, "zoomOffset", js.undefined)
+    
+    @scala.inline
+    def setZoomReverse(value: Boolean): Self = StObject.set(x, "zoomReverse", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setZoomReverseUndefined: Self = StObject.set(x, "zoomReverse", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeAction extends js.Object {
+trait CodeAction extends StObject {
   
   /**
     * A command this code action executes. If a code action
@@ -47,9 +48,13 @@ trait CodeAction extends js.Object {
     */
   var title: String = js.native
 }
-@JSImport("vscode-languageserver-types", "CodeAction")
-@js.native
-object CodeAction extends js.Object {
+object CodeAction {
+  
+  @scala.inline
+  def apply(title: String): CodeAction = {
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CodeAction]
+  }
   
   /**
     * Creates a new code action.
@@ -58,7 +63,11 @@ object CodeAction extends js.Object {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
+  @JSImport("vscode-languageserver-types", "CodeAction.create")
+  @js.native
   def create(title: String, command: Command): CodeAction = js.native
+  @JSImport("vscode-languageserver-types", "CodeAction.create")
+  @js.native
   def create(title: String, command: Command, kind: CodeActionKind): CodeAction = js.native
   /**
     * Creates a new code action.
@@ -67,8 +76,54 @@ object CodeAction extends js.Object {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
+  @JSImport("vscode-languageserver-types", "CodeAction.create")
+  @js.native
   def create(title: String, edit: WorkspaceEdit): CodeAction = js.native
+  @JSImport("vscode-languageserver-types", "CodeAction.create")
+  @js.native
   def create(title: String, edit: WorkspaceEdit, kind: CodeActionKind): CodeAction = js.native
   
+  @JSImport("vscode-languageserver-types", "CodeAction.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = js.native
+  
+  @scala.inline
+  implicit class CodeActionMutableBuilder[Self <: CodeAction] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    
+    @scala.inline
+    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    
+    @scala.inline
+    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    
+    @scala.inline
+    def setEdit(value: WorkspaceEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    
+    @scala.inline
+    def setIsPreferred(value: Boolean): Self = StObject.set(x, "isPreferred", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsPreferredUndefined: Self = StObject.set(x, "isPreferred", js.undefined)
+    
+    @scala.inline
+    def setKind(value: CodeActionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    @scala.inline
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }

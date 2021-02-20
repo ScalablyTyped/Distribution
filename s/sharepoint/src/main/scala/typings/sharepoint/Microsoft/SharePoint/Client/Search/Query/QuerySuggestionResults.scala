@@ -3,6 +3,7 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object QuerySuggestionResults {
   }
   
   @scala.inline
-  implicit class QuerySuggestionResultsOps[Self <: QuerySuggestionResults] (val x: Self) extends AnyVal {
+  implicit class QuerySuggestionResultsMutableBuilder[Self <: QuerySuggestionResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_peopleNames(value: () => js.Array[String]): Self = StObject.set(x, "get_peopleNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_personalResults(value: () => js.Array[PersonalResultSuggestion]): Self = StObject.set(x, "get_personalResults", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_queries(value: () => js.Array[QuerySuggestionQuery]): Self = StObject.set(x, "get_queries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_peopleNames(value: () => js.Array[String]): Self = this.set("get_peopleNames", js.Any.fromFunction0(value))
+    def setSet_peopleNames(value: js.Array[String] => Unit): Self = StObject.set(x, "set_peopleNames", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_personalResults(value: () => js.Array[PersonalResultSuggestion]): Self = this.set("get_personalResults", js.Any.fromFunction0(value))
+    def setSet_personalResults(value: js.Array[PersonalResultSuggestion] => Unit): Self = StObject.set(x, "set_personalResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_queries(value: () => js.Array[QuerySuggestionQuery]): Self = this.set("get_queries", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_peopleNames(value: js.Array[String] => Unit): Self = this.set("set_peopleNames", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_personalResults(value: js.Array[PersonalResultSuggestion] => Unit): Self = this.set("set_personalResults", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_queries(value: js.Array[QuerySuggestionQuery] => Unit): Self = this.set("set_queries", js.Any.fromFunction1(value))
+    def setSet_queries(value: js.Array[QuerySuggestionQuery] => Unit): Self = StObject.set(x, "set_queries", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Fetches your location._
   * @see https://docs.scriptable.app/location
   */
-@JSGlobal("Location")
-@js.native
-object Location extends js.Object {
+object Location {
   
   /**
     * _Fetches your location._
@@ -20,6 +19,8 @@ object Location extends js.Object {
     * vertical accuracy measured in meters.
     * @see https://docs.scriptable.app/location/#current
     */
+  @JSGlobal("Location.current")
+  @js.native
   def current(): js.Promise[_] = js.native
   
   /**
@@ -31,7 +32,11 @@ object Location extends js.Object {
     * @param locale - Optional. Preferred locale to fetch information in. Uses the default locale of the device if null.
     * @see https://docs.scriptable.app/location/#reversegeocode
     */
+  @JSGlobal("Location.reverseGeocode")
+  @js.native
   def reverseGeocode(latitude: Double, longitude: Double): js.Array[StringDictionary[_]] = js.native
+  @JSGlobal("Location.reverseGeocode")
+  @js.native
   def reverseGeocode(latitude: Double, longitude: Double, locale: String): js.Array[StringDictionary[_]] = js.native
   
   /**
@@ -40,29 +45,39 @@ object Location extends js.Object {
     * Set this when you want to achieve the best possible accuracy when retrieving your location. This is the default accuracy.
     * @see https://docs.scriptable.app/location/#setaccuracytobest
     */
+  @JSGlobal("Location.setAccuracyToBest")
+  @js.native
   def setAccuracyToBest(): Unit = js.native
   
   /**
     * _Sets accuracy to within hundred meters._
     * @see https://docs.scriptable.app/location/#setaccuracytohundredmeters
     */
+  @JSGlobal("Location.setAccuracyToHundredMeters")
+  @js.native
   def setAccuracyToHundredMeters(): Unit = js.native
   
   /**
     * _Sets accuracy to within one kilometer._
     * @see https://docs.scriptable.app/location/#setaccuracytokilometer
     */
+  @JSGlobal("Location.setAccuracyToKilometer")
+  @js.native
   def setAccuracyToKilometer(): Unit = js.native
   
   /**
     * _Sets accuracy to within ten meters._
     * @see https://docs.scriptable.app/location/#setaccuracytotenmeters
     */
+  @JSGlobal("Location.setAccuracyToTenMeters")
+  @js.native
   def setAccuracyToTenMeters(): Unit = js.native
   
   /**
     * _Sets accuracy to within three kilometers._
     * @see https://docs.scriptable.app/location/#setaccuracytothreekilometers
     */
+  @JSGlobal("Location.setAccuracyToThreeKilometers")
+  @js.native
   def setAccuracyToThreeKilometers(): Unit = js.native
 }

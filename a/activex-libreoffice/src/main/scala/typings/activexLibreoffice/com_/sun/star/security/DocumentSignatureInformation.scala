@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.security
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This structure has the information about a digital signature in a document, and the status if the signature is valid.
   */
 @js.native
-trait DocumentSignatureInformation extends js.Object {
+trait DocumentSignatureInformation extends StObject {
   
   var CertificateStatus: Double = js.native
   
@@ -40,36 +41,24 @@ object DocumentSignatureInformation {
   }
   
   @scala.inline
-  implicit class DocumentSignatureInformationOps[Self <: DocumentSignatureInformation] (val x: Self) extends AnyVal {
+  implicit class DocumentSignatureInformationMutableBuilder[Self <: DocumentSignatureInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateStatus(value: Double): Self = StObject.set(x, "CertificateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartialDocumentSignature(value: Boolean): Self = StObject.set(x, "PartialDocumentSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignatureDate(value: Double): Self = StObject.set(x, "SignatureDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateStatus(value: Double): Self = this.set("CertificateStatus", value.asInstanceOf[js.Any])
+    def setSignatureIsValid(value: Boolean): Self = StObject.set(x, "SignatureIsValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialDocumentSignature(value: Boolean): Self = this.set("PartialDocumentSignature", value.asInstanceOf[js.Any])
+    def setSignatureTime(value: Double): Self = StObject.set(x, "SignatureTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureDate(value: Double): Self = this.set("SignatureDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureIsValid(value: Boolean): Self = this.set("SignatureIsValid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureTime(value: Double): Self = this.set("SignatureTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigner(value: XCertificate): Self = this.set("Signer", value.asInstanceOf[js.Any])
+    def setSigner(value: XCertificate): Self = StObject.set(x, "Signer", value.asInstanceOf[js.Any])
   }
 }

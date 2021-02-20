@@ -1,11 +1,12 @@
 package typings.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryParserOptions extends js.Object {
+trait QueryParserOptions extends StObject {
   
   /**
     *  Default false. Transform `?foo.bar=baz` to a nested object: `{foo: {bar: 'baz'}}`.
@@ -62,72 +63,60 @@ object QueryParserOptions {
   }
   
   @scala.inline
-  implicit class QueryParserOptionsOps[Self <: QueryParserOptions] (val x: Self) extends AnyVal {
+  implicit class QueryParserOptionsMutableBuilder[Self <: QueryParserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDots(value: Boolean): Self = StObject.set(x, "allowDots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDotsUndefined: Self = StObject.set(x, "allowDots", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayLimit(value: Double): Self = StObject.set(x, "arrayLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDots(value: Boolean): Self = this.set("allowDots", value.asInstanceOf[js.Any])
+    def setArrayLimitUndefined: Self = StObject.set(x, "arrayLimit", js.undefined)
     
     @scala.inline
-    def deleteAllowDots: Self = this.set("allowDots", js.undefined)
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayLimit(value: Double): Self = this.set("arrayLimit", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteArrayLimit: Self = this.set("arrayLimit", js.undefined)
+    def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapParams(value: Boolean): Self = this.set("mapParams", value.asInstanceOf[js.Any])
+    def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
     
     @scala.inline
-    def deleteMapParams: Self = this.set("mapParams", js.undefined)
+    def setParameterLimit(value: Double): Self = StObject.set(x, "parameterLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideParams(value: Boolean): Self = this.set("overrideParams", value.asInstanceOf[js.Any])
+    def setParameterLimitUndefined: Self = StObject.set(x, "parameterLimit", js.undefined)
     
     @scala.inline
-    def deleteOverrideParams: Self = this.set("overrideParams", js.undefined)
+    def setParseArrays(value: Boolean): Self = StObject.set(x, "parseArrays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterLimit(value: Double): Self = this.set("parameterLimit", value.asInstanceOf[js.Any])
+    def setParseArraysUndefined: Self = StObject.set(x, "parseArrays", js.undefined)
     
     @scala.inline
-    def deleteParameterLimit: Self = this.set("parameterLimit", js.undefined)
+    def setPlainObjects(value: Boolean): Self = StObject.set(x, "plainObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseArrays(value: Boolean): Self = this.set("parseArrays", value.asInstanceOf[js.Any])
+    def setPlainObjectsUndefined: Self = StObject.set(x, "plainObjects", js.undefined)
     
     @scala.inline
-    def deleteParseArrays: Self = this.set("parseArrays", js.undefined)
+    def setStrictNullHandling(value: Boolean): Self = StObject.set(x, "strictNullHandling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlainObjects(value: Boolean): Self = this.set("plainObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlainObjects: Self = this.set("plainObjects", js.undefined)
-    
-    @scala.inline
-    def setStrictNullHandling(value: Boolean): Self = this.set("strictNullHandling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictNullHandling: Self = this.set("strictNullHandling", js.undefined)
+    def setStrictNullHandlingUndefined: Self = StObject.set(x, "strictNullHandling", js.undefined)
   }
 }

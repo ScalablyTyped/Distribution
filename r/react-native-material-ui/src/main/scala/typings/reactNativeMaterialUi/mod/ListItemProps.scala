@@ -5,12 +5,13 @@ import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`1`
 import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`2`
 import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`3`
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.dynamic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListItemProps extends js.Object {
+trait ListItemProps extends StObject {
   
   var centerElement: Element | String | ListItemCenterElement = js.native
   
@@ -43,81 +44,69 @@ object ListItemProps {
   }
   
   @scala.inline
-  implicit class ListItemPropsOps[Self <: ListItemProps] (val x: Self) extends AnyVal {
+  implicit class ListItemPropsMutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterElement(value: Element | String | ListItemCenterElement): Self = StObject.set(x, "centerElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
     @scala.inline
-    def setCenterElement(value: Element | String | ListItemCenterElement): Self = this.set("centerElement", value.asInstanceOf[js.Any])
+    def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDense(value: Boolean): Self = this.set("dense", value.asInstanceOf[js.Any])
+    def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
     
     @scala.inline
-    def deleteDense: Self = this.set("dense", js.undefined)
+    def setLeftElement(value: Element | String): Self = StObject.set(x, "leftElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivider(value: Boolean): Self = this.set("divider", value.asInstanceOf[js.Any])
+    def setLeftElementUndefined: Self = StObject.set(x, "leftElement", js.undefined)
     
     @scala.inline
-    def deleteDivider: Self = this.set("divider", js.undefined)
+    def setNumberOfLines(value: `1` | `2` | `3` | dynamic): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftElement(value: Element | String): Self = this.set("leftElement", value.asInstanceOf[js.Any])
+    def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
     
     @scala.inline
-    def deleteLeftElement: Self = this.set("leftElement", js.undefined)
+    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNumberOfLines(value: `1` | `2` | `3` | dynamic): Self = this.set("numberOfLines", value.asInstanceOf[js.Any])
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def deleteNumberOfLines: Self = this.set("numberOfLines", js.undefined)
+    def setOnPressValue(value: js.Any): Self = StObject.set(x, "onPressValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    def setOnPressValueUndefined: Self = StObject.set(x, "onPressValue", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setOnRightElementPress(value: () => Unit): Self = StObject.set(x, "onRightElementPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnPressValue(value: js.Any): Self = this.set("onPressValue", value.asInstanceOf[js.Any])
+    def setOnRightElementPressUndefined: Self = StObject.set(x, "onRightElementPress", js.undefined)
     
     @scala.inline
-    def deleteOnPressValue: Self = this.set("onPressValue", js.undefined)
+    def setRightElement(value: Element | String): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRightElementPress(value: () => Unit): Self = this.set("onRightElementPress", js.Any.fromFunction0(value))
+    def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
     
     @scala.inline
-    def deleteOnRightElementPress: Self = this.set("onRightElementPress", js.undefined)
+    def setStyle(value: ListItemStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightElement(value: Element | String): Self = this.set("rightElement", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteRightElement: Self = this.set("rightElement", js.undefined)
+    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: ListItemStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestID: Self = this.set("testID", js.undefined)
+    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
   }
 }

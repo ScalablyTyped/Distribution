@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersonOrGroupColumn extends js.Object {
+trait PersonOrGroupColumn extends StObject {
   
   // Indicates whether multiple values can be selected from the source.
   var allowMultipleSelection: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -25,45 +26,33 @@ object PersonOrGroupColumn {
   }
   
   @scala.inline
-  implicit class PersonOrGroupColumnOps[Self <: PersonOrGroupColumn] (val x: Self) extends AnyVal {
+  implicit class PersonOrGroupColumnMutableBuilder[Self <: PersonOrGroupColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultipleSelection(value: NullableOption[Boolean]): Self = StObject.set(x, "allowMultipleSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowMultipleSelectionNull: Self = StObject.set(x, "allowMultipleSelection", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowMultipleSelectionUndefined: Self = StObject.set(x, "allowMultipleSelection", js.undefined)
     
     @scala.inline
-    def setAllowMultipleSelection(value: NullableOption[Boolean]): Self = this.set("allowMultipleSelection", value.asInstanceOf[js.Any])
+    def setChooseFromType(value: NullableOption[String]): Self = StObject.set(x, "chooseFromType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowMultipleSelection: Self = this.set("allowMultipleSelection", js.undefined)
+    def setChooseFromTypeNull: Self = StObject.set(x, "chooseFromType", null)
     
     @scala.inline
-    def setAllowMultipleSelectionNull: Self = this.set("allowMultipleSelection", null)
+    def setChooseFromTypeUndefined: Self = StObject.set(x, "chooseFromType", js.undefined)
     
     @scala.inline
-    def setChooseFromType(value: NullableOption[String]): Self = this.set("chooseFromType", value.asInstanceOf[js.Any])
+    def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChooseFromType: Self = this.set("chooseFromType", js.undefined)
+    def setDisplayAsNull: Self = StObject.set(x, "displayAs", null)
     
     @scala.inline
-    def setChooseFromTypeNull: Self = this.set("chooseFromType", null)
-    
-    @scala.inline
-    def setDisplayAs(value: NullableOption[String]): Self = this.set("displayAs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayAs: Self = this.set("displayAs", js.undefined)
-    
-    @scala.inline
-    def setDisplayAsNull: Self = this.set("displayAs", null)
+    def setDisplayAsUndefined: Self = StObject.set(x, "displayAs", js.undefined)
   }
 }

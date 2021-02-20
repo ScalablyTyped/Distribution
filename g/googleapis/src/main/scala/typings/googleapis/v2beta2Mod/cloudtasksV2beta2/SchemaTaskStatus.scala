@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Status of the task.
   */
 @js.native
-trait SchemaTaskStatus extends js.Object {
+trait SchemaTaskStatus extends StObject {
   
   /**
     * Output only. The number of attempts dispatched.  This count includes
@@ -44,42 +45,30 @@ object SchemaTaskStatus {
   }
   
   @scala.inline
-  implicit class SchemaTaskStatusOps[Self <: SchemaTaskStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaTaskStatusMutableBuilder[Self <: SchemaTaskStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttemptDispatchCount(value: Double): Self = StObject.set(x, "attemptDispatchCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttemptDispatchCountUndefined: Self = StObject.set(x, "attemptDispatchCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttemptResponseCount(value: Double): Self = StObject.set(x, "attemptResponseCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttemptDispatchCount(value: Double): Self = this.set("attemptDispatchCount", value.asInstanceOf[js.Any])
+    def setAttemptResponseCountUndefined: Self = StObject.set(x, "attemptResponseCount", js.undefined)
     
     @scala.inline
-    def deleteAttemptDispatchCount: Self = this.set("attemptDispatchCount", js.undefined)
+    def setFirstAttemptStatus(value: SchemaAttemptStatus): Self = StObject.set(x, "firstAttemptStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttemptResponseCount(value: Double): Self = this.set("attemptResponseCount", value.asInstanceOf[js.Any])
+    def setFirstAttemptStatusUndefined: Self = StObject.set(x, "firstAttemptStatus", js.undefined)
     
     @scala.inline
-    def deleteAttemptResponseCount: Self = this.set("attemptResponseCount", js.undefined)
+    def setLastAttemptStatus(value: SchemaAttemptStatus): Self = StObject.set(x, "lastAttemptStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstAttemptStatus(value: SchemaAttemptStatus): Self = this.set("firstAttemptStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirstAttemptStatus: Self = this.set("firstAttemptStatus", js.undefined)
-    
-    @scala.inline
-    def setLastAttemptStatus(value: SchemaAttemptStatus): Self = this.set("lastAttemptStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastAttemptStatus: Self = this.set("lastAttemptStatus", js.undefined)
+    def setLastAttemptStatusUndefined: Self = StObject.set(x, "lastAttemptStatus", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttackProperty extends js.Object {
+trait AttackProperty extends StObject {
   
   /**
     * The type of distributed denial of service (DDoS) event that was observed. NETWORK indicates layer 3 and layer 4 events and APPLICATION indicates layer 7 events.
@@ -41,51 +42,39 @@ object AttackProperty {
   }
   
   @scala.inline
-  implicit class AttackPropertyOps[Self <: AttackProperty] (val x: Self) extends AnyVal {
+  implicit class AttackPropertyMutableBuilder[Self <: AttackProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttackLayer(value: AttackLayer): Self = StObject.set(x, "AttackLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttackLayerUndefined: Self = StObject.set(x, "AttackLayer", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttackPropertyIdentifier(value: AttackPropertyIdentifier): Self = StObject.set(x, "AttackPropertyIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackLayer(value: AttackLayer): Self = this.set("AttackLayer", value.asInstanceOf[js.Any])
+    def setAttackPropertyIdentifierUndefined: Self = StObject.set(x, "AttackPropertyIdentifier", js.undefined)
     
     @scala.inline
-    def deleteAttackLayer: Self = this.set("AttackLayer", js.undefined)
+    def setTopContributors(value: TopContributors): Self = StObject.set(x, "TopContributors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackPropertyIdentifier(value: AttackPropertyIdentifier): Self = this.set("AttackPropertyIdentifier", value.asInstanceOf[js.Any])
+    def setTopContributorsUndefined: Self = StObject.set(x, "TopContributors", js.undefined)
     
     @scala.inline
-    def deleteAttackPropertyIdentifier: Self = this.set("AttackPropertyIdentifier", js.undefined)
+    def setTopContributorsVarargs(value: Contributor*): Self = StObject.set(x, "TopContributors", js.Array(value :_*))
     
     @scala.inline
-    def setTopContributorsVarargs(value: Contributor*): Self = this.set("TopContributors", js.Array(value :_*))
+    def setTotal(value: Long): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopContributors(value: TopContributors): Self = this.set("TopContributors", value.asInstanceOf[js.Any])
+    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
     
     @scala.inline
-    def deleteTopContributors: Self = this.set("TopContributors", js.undefined)
+    def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal(value: Long): Self = this.set("Total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("Total", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: Unit): Self = this.set("Unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

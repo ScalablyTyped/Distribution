@@ -1,5 +1,6 @@
 package typings.sqlQueryIdentifier
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("sql-query-identifier", JSImport.Namespace)
 @js.native
-object sqlQueryIdentifierRequire extends js.Object
+object sqlQueryIdentifierRequire extends StObject

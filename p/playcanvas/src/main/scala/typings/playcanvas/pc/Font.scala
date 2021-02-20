@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param data - The font data.
   */
 @js.native
-trait Font extends js.Object {
+trait Font extends StObject {
   
   /**
     * The font intensity.
@@ -33,27 +34,15 @@ object Font {
   }
   
   @scala.inline
-  implicit class FontOps[Self <: Font] (val x: Self) extends AnyVal {
+  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTextures(value: js.Array[Texture]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIntensity(value: Double): Self = this.set("intensity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTexturesVarargs(value: Texture*): Self = this.set("textures", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextures(value: js.Array[Texture]): Self = this.set("textures", value.asInstanceOf[js.Any])
+    def setTexturesVarargs(value: Texture*): Self = StObject.set(x, "textures", js.Array(value :_*))
   }
 }

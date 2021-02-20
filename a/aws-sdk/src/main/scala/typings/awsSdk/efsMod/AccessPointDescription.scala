@@ -1,11 +1,12 @@
 package typings.awsSdk.efsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessPointDescription extends js.Object {
+trait AccessPointDescription extends StObject {
   
   /**
     * The unique Amazon Resource Name (ARN) associated with the access point.
@@ -66,81 +67,69 @@ object AccessPointDescription {
   }
   
   @scala.inline
-  implicit class AccessPointDescriptionOps[Self <: AccessPointDescription] (val x: Self) extends AnyVal {
+  implicit class AccessPointDescriptionMutableBuilder[Self <: AccessPointDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPointArn(value: AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessPointArnUndefined: Self = StObject.set(x, "AccessPointArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessPointId(value: AccessPointId): Self = StObject.set(x, "AccessPointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPointArn(value: AccessPointArn): Self = this.set("AccessPointArn", value.asInstanceOf[js.Any])
+    def setAccessPointIdUndefined: Self = StObject.set(x, "AccessPointId", js.undefined)
     
     @scala.inline
-    def deleteAccessPointArn: Self = this.set("AccessPointArn", js.undefined)
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPointId(value: AccessPointId): Self = this.set("AccessPointId", value.asInstanceOf[js.Any])
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def deleteAccessPointId: Self = this.set("AccessPointId", js.undefined)
+    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setLifeCycleState(value: LifeCycleState): Self = StObject.set(x, "LifeCycleState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    def setLifeCycleStateUndefined: Self = StObject.set(x, "LifeCycleState", js.undefined)
     
     @scala.inline
-    def deleteFileSystemId: Self = this.set("FileSystemId", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifeCycleState(value: LifeCycleState): Self = this.set("LifeCycleState", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLifeCycleState: Self = this.set("LifeCycleState", js.undefined)
+    def setOwnerId(value: AwsAccountId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setPosixUser(value: PosixUser): Self = StObject.set(x, "PosixUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: AwsAccountId): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setPosixUserUndefined: Self = StObject.set(x, "PosixUser", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setRootDirectory(value: RootDirectory): Self = StObject.set(x, "RootDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosixUser(value: PosixUser): Self = this.set("PosixUser", value.asInstanceOf[js.Any])
+    def setRootDirectoryUndefined: Self = StObject.set(x, "RootDirectory", js.undefined)
     
     @scala.inline
-    def deletePosixUser: Self = this.set("PosixUser", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootDirectory(value: RootDirectory): Self = this.set("RootDirectory", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRootDirectory: Self = this.set("RootDirectory", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

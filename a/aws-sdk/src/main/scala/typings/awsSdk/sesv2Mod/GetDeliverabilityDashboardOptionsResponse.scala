@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDeliverabilityDashboardOptionsResponse extends js.Object {
+trait GetDeliverabilityDashboardOptionsResponse extends StObject {
   
   /**
     * The current status of your Deliverability dashboard subscription. If this value is PENDING_EXPIRATION, your subscription is scheduled to expire at the end of the current calendar month.
@@ -41,51 +42,39 @@ object GetDeliverabilityDashboardOptionsResponse {
   }
   
   @scala.inline
-  implicit class GetDeliverabilityDashboardOptionsResponseOps[Self <: GetDeliverabilityDashboardOptionsResponse] (val x: Self) extends AnyVal {
+  implicit class GetDeliverabilityDashboardOptionsResponseMutableBuilder[Self <: GetDeliverabilityDashboardOptionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountStatus(value: DeliverabilityDashboardAccountStatus): Self = StObject.set(x, "AccountStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountStatusUndefined: Self = StObject.set(x, "AccountStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveSubscribedDomains(value: DomainDeliverabilityTrackingOptions): Self = StObject.set(x, "ActiveSubscribedDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardEnabled(value: Enabled): Self = this.set("DashboardEnabled", value.asInstanceOf[js.Any])
+    def setActiveSubscribedDomainsUndefined: Self = StObject.set(x, "ActiveSubscribedDomains", js.undefined)
     
     @scala.inline
-    def setAccountStatus(value: DeliverabilityDashboardAccountStatus): Self = this.set("AccountStatus", value.asInstanceOf[js.Any])
+    def setActiveSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "ActiveSubscribedDomains", js.Array(value :_*))
     
     @scala.inline
-    def deleteAccountStatus: Self = this.set("AccountStatus", js.undefined)
+    def setDashboardEnabled(value: Enabled): Self = StObject.set(x, "DashboardEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = this.set("ActiveSubscribedDomains", js.Array(value :_*))
+    def setPendingExpirationSubscribedDomains(value: DomainDeliverabilityTrackingOptions): Self = StObject.set(x, "PendingExpirationSubscribedDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveSubscribedDomains(value: DomainDeliverabilityTrackingOptions): Self = this.set("ActiveSubscribedDomains", value.asInstanceOf[js.Any])
+    def setPendingExpirationSubscribedDomainsUndefined: Self = StObject.set(x, "PendingExpirationSubscribedDomains", js.undefined)
     
     @scala.inline
-    def deleteActiveSubscribedDomains: Self = this.set("ActiveSubscribedDomains", js.undefined)
+    def setPendingExpirationSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "PendingExpirationSubscribedDomains", js.Array(value :_*))
     
     @scala.inline
-    def setPendingExpirationSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = this.set("PendingExpirationSubscribedDomains", js.Array(value :_*))
+    def setSubscriptionExpiryDate(value: Timestamp): Self = StObject.set(x, "SubscriptionExpiryDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingExpirationSubscribedDomains(value: DomainDeliverabilityTrackingOptions): Self = this.set("PendingExpirationSubscribedDomains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePendingExpirationSubscribedDomains: Self = this.set("PendingExpirationSubscribedDomains", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionExpiryDate(value: Timestamp): Self = this.set("SubscriptionExpiryDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionExpiryDate: Self = this.set("SubscriptionExpiryDate", js.undefined)
+    def setSubscriptionExpiryDateUndefined: Self = StObject.set(x, "SubscriptionExpiryDate", js.undefined)
   }
 }

@@ -7,13 +7,14 @@ import typings.semanticUiVisibility.SemanticUI.Visibility.ErrorSettings
 import typings.semanticUiVisibility.semanticUiVisibilityBooleans.`false`
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.fixed
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.image
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl, keyof semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImpl extends js.Object {
+trait PartialPickImplkeyofImpl extends StObject {
   
   var checkOnRefresh: js.UndefOr[Boolean] = js.native
   
@@ -108,264 +109,252 @@ object PartialPickImplkeyofImpl {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplOps[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplMutableBuilder[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckOnRefreshUndefined: Self = StObject.set(x, "checkOnRefresh", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckOnRefresh(value: Boolean): Self = this.set("checkOnRefresh", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteCheckOnRefresh: Self = this.set("checkOnRefresh", js.undefined)
+    def setContext(value: String | JQuery): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: ClassNameSettings): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String | JQuery): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuous(value: Boolean): Self = this.set("continuous", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteContinuous: Self = this.set("continuous", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setIncludeMargin(value: Boolean): Self = StObject.set(x, "includeMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ErrorSettings): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setIncludeMarginUndefined: Self = StObject.set(x, "includeMargin", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setInitialCheck(value: Boolean): Self = StObject.set(x, "initialCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeMargin(value: Boolean): Self = this.set("includeMargin", value.asInstanceOf[js.Any])
+    def setInitialCheckUndefined: Self = StObject.set(x, "initialCheck", js.undefined)
     
     @scala.inline
-    def deleteIncludeMargin: Self = this.set("includeMargin", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialCheck(value: Boolean): Self = this.set("initialCheck", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInitialCheck: Self = this.set("initialCheck", js.undefined)
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setObserveChanges(value: Boolean): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setObserveChangesUndefined: Self = StObject.set(x, "observeChanges", js.undefined)
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserveChanges(value: Boolean): Self = this.set("observeChanges", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteObserveChanges: Self = this.set("observeChanges", js.undefined)
+    def setOnAllLoaded(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onAllLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOnAllLoadedUndefined: Self = StObject.set(x, "onAllLoaded", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOnBottomPassed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onBottomPassed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAllLoaded(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onAllLoaded", value.asInstanceOf[js.Any])
+    def setOnBottomPassedReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onBottomPassedReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnAllLoaded: Self = this.set("onAllLoaded", js.undefined)
+    def setOnBottomPassedReverseUndefined: Self = StObject.set(x, "onBottomPassedReverse", js.undefined)
     
     @scala.inline
-    def setOnBottomPassed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onBottomPassed", value.asInstanceOf[js.Any])
+    def setOnBottomPassedUndefined: Self = StObject.set(x, "onBottomPassed", js.undefined)
     
     @scala.inline
-    def deleteOnBottomPassed: Self = this.set("onBottomPassed", js.undefined)
+    def setOnBottomVisible(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onBottomVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBottomPassedReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onBottomPassedReverse", value.asInstanceOf[js.Any])
+    def setOnBottomVisibleReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onBottomVisibleReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnBottomPassedReverse: Self = this.set("onBottomPassedReverse", js.undefined)
+    def setOnBottomVisibleReverseUndefined: Self = StObject.set(x, "onBottomVisibleReverse", js.undefined)
     
     @scala.inline
-    def setOnBottomVisible(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onBottomVisible", value.asInstanceOf[js.Any])
+    def setOnBottomVisibleUndefined: Self = StObject.set(x, "onBottomVisible", js.undefined)
     
     @scala.inline
-    def deleteOnBottomVisible: Self = this.set("onBottomVisible", js.undefined)
+    def setOnFixed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onFixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBottomVisibleReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onBottomVisibleReverse", value.asInstanceOf[js.Any])
+    def setOnFixedUndefined: Self = StObject.set(x, "onFixed", js.undefined)
     
     @scala.inline
-    def deleteOnBottomVisibleReverse: Self = this.set("onBottomVisibleReverse", js.undefined)
+    def setOnLoad(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFixed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onFixed", value.asInstanceOf[js.Any])
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def deleteOnFixed: Self = this.set("onFixed", js.undefined)
+    def setOnOffScreen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onOffScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoad(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onLoad", value.asInstanceOf[js.Any])
+    def setOnOffScreenUndefined: Self = StObject.set(x, "onOffScreen", js.undefined)
     
     @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    def setOnOnScreen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onOnScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOffScreen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onOffScreen", value.asInstanceOf[js.Any])
+    def setOnOnScreenUndefined: Self = StObject.set(x, "onOnScreen", js.undefined)
     
     @scala.inline
-    def deleteOnOffScreen: Self = this.set("onOffScreen", js.undefined)
+    def setOnPassing(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onPassing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOnScreen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onOnScreen", value.asInstanceOf[js.Any])
+    def setOnPassingReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onPassingReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnOnScreen: Self = this.set("onOnScreen", js.undefined)
+    def setOnPassingReverseUndefined: Self = StObject.set(x, "onPassingReverse", js.undefined)
     
     @scala.inline
-    def setOnPassing(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onPassing", value.asInstanceOf[js.Any])
+    def setOnPassingUndefined: Self = StObject.set(x, "onPassing", js.undefined)
     
     @scala.inline
-    def deleteOnPassing: Self = this.set("onPassing", js.undefined)
+    def setOnRefresh(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onRefresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPassingReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onPassingReverse", value.asInstanceOf[js.Any])
+    def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
     
     @scala.inline
-    def deleteOnPassingReverse: Self = this.set("onPassingReverse", js.undefined)
+    def setOnTopPassed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopPassed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRefresh(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onRefresh", value.asInstanceOf[js.Any])
+    def setOnTopPassedReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopPassedReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnRefresh: Self = this.set("onRefresh", js.undefined)
+    def setOnTopPassedReverseUndefined: Self = StObject.set(x, "onTopPassedReverse", js.undefined)
     
     @scala.inline
-    def setOnTopPassed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onTopPassed", value.asInstanceOf[js.Any])
+    def setOnTopPassedUndefined: Self = StObject.set(x, "onTopPassed", js.undefined)
     
     @scala.inline
-    def deleteOnTopPassed: Self = this.set("onTopPassed", js.undefined)
+    def setOnTopVisible(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTopPassedReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onTopPassedReverse", value.asInstanceOf[js.Any])
+    def setOnTopVisibleReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopVisibleReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnTopPassedReverse: Self = this.set("onTopPassedReverse", js.undefined)
+    def setOnTopVisibleReverseUndefined: Self = StObject.set(x, "onTopVisibleReverse", js.undefined)
     
     @scala.inline
-    def setOnTopVisible(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onTopVisible", value.asInstanceOf[js.Any])
+    def setOnTopVisibleUndefined: Self = StObject.set(x, "onTopVisible", js.undefined)
     
     @scala.inline
-    def deleteOnTopVisible: Self = this.set("onTopVisible", js.undefined)
+    def setOnUnfixed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onUnfixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTopVisibleReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onTopVisibleReverse", value.asInstanceOf[js.Any])
+    def setOnUnfixedUndefined: Self = StObject.set(x, "onUnfixed", js.undefined)
     
     @scala.inline
-    def deleteOnTopVisibleReverse: Self = this.set("onTopVisibleReverse", js.undefined)
+    def setOnUpdate(value: js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUnfixed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onUnfixed", value.asInstanceOf[js.Any])
+    def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
     
     @scala.inline
-    def deleteOnUnfixed: Self = this.set("onUnfixed", js.undefined)
+    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUpdate(value: js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]): Self = this.set("onUpdate", value.asInstanceOf[js.Any])
+    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
     @scala.inline
-    def deleteOnUpdate: Self = this.set("onUpdate", js.undefined)
+    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnce(value: Boolean): Self = this.set("once", value.asInstanceOf[js.Any])
+    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
     @scala.inline
-    def deleteOnce: Self = this.set("once", js.undefined)
+    def setRefreshOnLoad(value: Boolean): Self = StObject.set(x, "refreshOnLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformance(value: Boolean): Self = this.set("performance", value.asInstanceOf[js.Any])
+    def setRefreshOnLoadUndefined: Self = StObject.set(x, "refreshOnLoad", js.undefined)
     
     @scala.inline
-    def deletePerformance: Self = this.set("performance", js.undefined)
+    def setRefreshOnResize(value: Boolean): Self = StObject.set(x, "refreshOnResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshOnLoad(value: Boolean): Self = this.set("refreshOnLoad", value.asInstanceOf[js.Any])
+    def setRefreshOnResizeUndefined: Self = StObject.set(x, "refreshOnResize", js.undefined)
     
     @scala.inline
-    def deleteRefreshOnLoad: Self = this.set("refreshOnLoad", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshOnResize(value: Boolean): Self = this.set("refreshOnResize", value.asInstanceOf[js.Any])
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def deleteRefreshOnResize: Self = this.set("refreshOnResize", js.undefined)
+    def setThrottle(value: `false` | Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     
     @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setTransition(value: `false` | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrottle(value: `false` | Double): Self = this.set("throttle", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deleteThrottle: Self = this.set("throttle", js.undefined)
+    def setType(value: `false` | image | fixed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: `false` | String): Self = this.set("transition", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: `false` | image | fixed): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerbose: Self = this.set("verbose", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

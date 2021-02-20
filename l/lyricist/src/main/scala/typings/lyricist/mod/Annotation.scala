@@ -1,12 +1,13 @@
 package typings.lyricist.mod
 
 import typings.lyricist.anon.Interactions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Annotation extends js.Object {
+trait Annotation extends StObject {
   
   var api_path: String = js.native
   
@@ -71,93 +72,81 @@ object Annotation {
   }
   
   @scala.inline
-  implicit class AnnotationOps[Self <: Annotation] (val x: Self) extends AnyVal {
+  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthors(value: js.Array[Author]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorsVarargs(value: Author*): Self = StObject.set(x, "authors", js.Array(value :_*))
     
     @scala.inline
-    def setApi_path(value: String): Self = this.set("api_path", value.asInstanceOf[js.Any])
+    def setBody(value: Description): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorsVarargs(value: Author*): Self = this.set("authors", js.Array(value :_*))
+    def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthors(value: js.Array[Author]): Self = this.set("authors", value.asInstanceOf[js.Any])
+    def setCommunity(value: Boolean): Self = StObject.set(x, "community", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Description): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCosigned_by(value: js.Array[_]): Self = StObject.set(x, "cosigned_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment_count(value: Double): Self = this.set("comment_count", value.asInstanceOf[js.Any])
+    def setCosigned_byVarargs(value: js.Any*): Self = StObject.set(x, "cosigned_by", js.Array(value :_*))
     
     @scala.inline
-    def setCommunity(value: Boolean): Self = this.set("community", value.asInstanceOf[js.Any])
+    def setCurrent_user_metadata(value: Interactions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCosigned_byVarargs(value: js.Any*): Self = this.set("cosigned_by", js.Array(value :_*))
+    def setCustom_preview(value: js.Any): Self = StObject.set(x, "custom_preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCosigned_by(value: js.Array[_]): Self = this.set("cosigned_by", value.asInstanceOf[js.Any])
+    def setCustom_previewUndefined: Self = StObject.set(x, "custom_preview", js.undefined)
     
     @scala.inline
-    def setCurrent_user_metadata(value: Interactions): Self = this.set("current_user_metadata", value.asInstanceOf[js.Any])
+    def setHas_voters(value: Boolean): Self = StObject.set(x, "has_voters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_voters(value: Boolean): Self = this.set("has_voters", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    def setRejection_comment(value: js.Any): Self = StObject.set(x, "rejection_comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShare_url(value: String): Self = this.set("share_url", value.asInstanceOf[js.Any])
+    def setRejection_commentUndefined: Self = StObject.set(x, "rejection_comment", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setShare_url(value: String): Self = StObject.set(x, "share_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerified(value: Boolean): Self = this.set("verified", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setVotes_total(value: Double): Self = this.set("votes_total", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_preview(value: js.Any): Self = this.set("custom_preview", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustom_preview: Self = this.set("custom_preview", js.undefined)
+    def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejection_comment(value: js.Any): Self = this.set("rejection_comment", value.asInstanceOf[js.Any])
+    def setVerified_by(value: js.Any): Self = StObject.set(x, "verified_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRejection_comment: Self = this.set("rejection_comment", js.undefined)
+    def setVerified_byUndefined: Self = StObject.set(x, "verified_by", js.undefined)
     
     @scala.inline
-    def setSource(value: js.Any): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setVerified_by(value: js.Any): Self = this.set("verified_by", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerified_by: Self = this.set("verified_by", js.undefined)
+    def setVotes_total(value: Double): Self = StObject.set(x, "votes_total", value.asInstanceOf[js.Any])
   }
 }

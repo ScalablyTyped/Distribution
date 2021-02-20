@@ -1,5 +1,6 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object CreateBlockOptions {
   }
   
   @scala.inline
-  implicit class CreateBlockOptionsOps[Self <: CreateBlockOptions] (val x: Self) extends AnyVal {
+  implicit class CreateBlockOptionsMutableBuilder[Self <: CreateBlockOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentMD5(value: String): Self = StObject.set(x, "contentMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentMD5Undefined: Self = StObject.set(x, "contentMD5", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseTransactionalMD5(value: Boolean): Self = StObject.set(x, "useTransactionalMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentMD5(value: String): Self = this.set("contentMD5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentMD5: Self = this.set("contentMD5", js.undefined)
-    
-    @scala.inline
-    def setUseTransactionalMD5(value: Boolean): Self = this.set("useTransactionalMD5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseTransactionalMD5: Self = this.set("useTransactionalMD5", js.undefined)
+    def setUseTransactionalMD5Undefined: Self = StObject.set(x, "useTransactionalMD5", js.undefined)
   }
 }

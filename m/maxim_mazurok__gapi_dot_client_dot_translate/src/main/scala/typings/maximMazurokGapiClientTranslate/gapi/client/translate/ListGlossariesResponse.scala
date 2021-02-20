@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGlossariesResponse extends js.Object {
+trait ListGlossariesResponse extends StObject {
   
   /** The list of glossaries for a project. */
   var glossaries: js.UndefOr[js.Array[Glossary]] = js.native
@@ -25,33 +26,21 @@ object ListGlossariesResponse {
   }
   
   @scala.inline
-  implicit class ListGlossariesResponseOps[Self <: ListGlossariesResponse] (val x: Self) extends AnyVal {
+  implicit class ListGlossariesResponseMutableBuilder[Self <: ListGlossariesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlossaries(value: js.Array[Glossary]): Self = StObject.set(x, "glossaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlossariesUndefined: Self = StObject.set(x, "glossaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlossariesVarargs(value: Glossary*): Self = StObject.set(x, "glossaries", js.Array(value :_*))
     
     @scala.inline
-    def setGlossariesVarargs(value: Glossary*): Self = this.set("glossaries", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlossaries(value: js.Array[Glossary]): Self = this.set("glossaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlossaries: Self = this.set("glossaries", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

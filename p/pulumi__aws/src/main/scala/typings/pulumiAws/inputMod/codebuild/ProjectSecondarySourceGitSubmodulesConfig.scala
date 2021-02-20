@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.codebuild
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectSecondarySourceGitSubmodulesConfig extends js.Object {
+trait ProjectSecondarySourceGitSubmodulesConfig extends StObject {
   
   /**
     * If set to true, fetches Git submodules for the AWS CodeBuild build project.
@@ -22,21 +23,9 @@ object ProjectSecondarySourceGitSubmodulesConfig {
   }
   
   @scala.inline
-  implicit class ProjectSecondarySourceGitSubmodulesConfigOps[Self <: ProjectSecondarySourceGitSubmodulesConfig] (val x: Self) extends AnyVal {
+  implicit class ProjectSecondarySourceGitSubmodulesConfigMutableBuilder[Self <: ProjectSecondarySourceGitSubmodulesConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFetchSubmodules(value: Input[Boolean]): Self = this.set("fetchSubmodules", value.asInstanceOf[js.Any])
+    def setFetchSubmodules(value: Input[Boolean]): Self = StObject.set(x, "fetchSubmodules", value.asInstanceOf[js.Any])
   }
 }

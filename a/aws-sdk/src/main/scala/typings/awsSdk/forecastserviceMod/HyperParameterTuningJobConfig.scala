@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HyperParameterTuningJobConfig extends js.Object {
+trait HyperParameterTuningJobConfig extends StObject {
   
   /**
     * Specifies the ranges of valid values for the hyperparameters.
@@ -21,24 +22,12 @@ object HyperParameterTuningJobConfig {
   }
   
   @scala.inline
-  implicit class HyperParameterTuningJobConfigOps[Self <: HyperParameterTuningJobConfig] (val x: Self) extends AnyVal {
+  implicit class HyperParameterTuningJobConfigMutableBuilder[Self <: HyperParameterTuningJobConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterRanges(value: ParameterRanges): Self = StObject.set(x, "ParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameterRanges(value: ParameterRanges): Self = this.set("ParameterRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterRanges: Self = this.set("ParameterRanges", js.undefined)
+    def setParameterRangesUndefined: Self = StObject.set(x, "ParameterRanges", js.undefined)
   }
 }

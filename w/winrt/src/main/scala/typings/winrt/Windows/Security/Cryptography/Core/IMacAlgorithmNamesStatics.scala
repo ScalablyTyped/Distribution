@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMacAlgorithmNamesStatics extends js.Object {
+trait IMacAlgorithmNamesStatics extends StObject {
   
   var aesCmac: String = js.native
   
@@ -35,36 +36,24 @@ object IMacAlgorithmNamesStatics {
   }
   
   @scala.inline
-  implicit class IMacAlgorithmNamesStaticsOps[Self <: IMacAlgorithmNamesStatics] (val x: Self) extends AnyVal {
+  implicit class IMacAlgorithmNamesStaticsMutableBuilder[Self <: IMacAlgorithmNamesStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAesCmac(value: String): Self = StObject.set(x, "aesCmac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHmacMd5(value: String): Self = StObject.set(x, "hmacMd5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHmacSha1(value: String): Self = StObject.set(x, "hmacSha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAesCmac(value: String): Self = this.set("aesCmac", value.asInstanceOf[js.Any])
+    def setHmacSha256(value: String): Self = StObject.set(x, "hmacSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHmacMd5(value: String): Self = this.set("hmacMd5", value.asInstanceOf[js.Any])
+    def setHmacSha384(value: String): Self = StObject.set(x, "hmacSha384", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHmacSha1(value: String): Self = this.set("hmacSha1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHmacSha256(value: String): Self = this.set("hmacSha256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHmacSha384(value: String): Self = this.set("hmacSha384", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHmacSha512(value: String): Self = this.set("hmacSha512", value.asInstanceOf[js.Any])
+    def setHmacSha512(value: String): Self = StObject.set(x, "hmacSha512", value.asInstanceOf[js.Any])
   }
 }

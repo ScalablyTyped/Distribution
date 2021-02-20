@@ -1,12 +1,13 @@
 package typings.hafasClient.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeparturesArrivalsOptions extends js.Object {
+trait DeparturesArrivalsOptions extends StObject {
   
   /**
     * only show departures heading to this station
@@ -83,84 +84,72 @@ object DeparturesArrivalsOptions {
   }
   
   @scala.inline
-  implicit class DeparturesArrivalsOptionsOps[Self <: DeparturesArrivalsOptions] (val x: Self) extends AnyVal {
+  implicit class DeparturesArrivalsOptionsMutableBuilder[Self <: DeparturesArrivalsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setIncludeRelatedStations(value: Boolean): Self = StObject.set(x, "includeRelatedStations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrances(value: Boolean): Self = this.set("entrances", value.asInstanceOf[js.Any])
+    def setIncludeRelatedStationsUndefined: Self = StObject.set(x, "includeRelatedStations", js.undefined)
     
     @scala.inline
-    def deleteEntrances: Self = this.set("entrances", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeRelatedStations(value: Boolean): Self = this.set("includeRelatedStations", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteIncludeRelatedStations: Self = this.set("includeRelatedStations", js.undefined)
+    def setLinesOfStops(value: Boolean): Self = StObject.set(x, "linesOfStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLinesOfStopsUndefined: Self = StObject.set(x, "linesOfStops", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setRemarks(value: Boolean): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesOfStops(value: Boolean): Self = this.set("linesOfStops", value.asInstanceOf[js.Any])
+    def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
     @scala.inline
-    def deleteLinesOfStops: Self = this.set("linesOfStops", js.undefined)
+    def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemarks(value: Boolean): Self = this.set("remarks", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteRemarks: Self = this.set("remarks", js.undefined)
+    def setStopovers(value: Boolean): Self = StObject.set(x, "stopovers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: Double): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setStopoversUndefined: Self = StObject.set(x, "stopovers", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopovers(value: Boolean): Self = this.set("stopovers", value.asInstanceOf[js.Any])
+    def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
     
     @scala.inline
-    def deleteStopovers: Self = this.set("stopovers", js.undefined)
+    def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubStops(value: Boolean): Self = this.set("subStops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubStops: Self = this.set("subStops", js.undefined)
-    
-    @scala.inline
-    def setWhen(value: Date): Self = this.set("when", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhen: Self = this.set("when", js.undefined)
+    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

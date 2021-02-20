@@ -1,15 +1,15 @@
 package typings.firebaseDatabase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/storage/MemoryStorage", JSImport.Namespace)
-@js.native
-object memoryStorageMod extends js.Object {
+object memoryStorageMod {
   
+  @JSImport("@firebase/database/dist/src/core/storage/MemoryStorage", "MemoryStorage")
   @js.native
-  class MemoryStorage () extends js.Object {
+  class MemoryStorage () extends StObject {
     
     var cache_ : js.Any = js.native
     

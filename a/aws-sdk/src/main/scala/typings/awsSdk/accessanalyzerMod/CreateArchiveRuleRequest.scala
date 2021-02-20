@@ -1,11 +1,12 @@
 package typings.awsSdk.accessanalyzerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateArchiveRuleRequest extends js.Object {
+trait CreateArchiveRuleRequest extends StObject {
   
   /**
     * The name of the created analyzer.
@@ -36,33 +37,21 @@ object CreateArchiveRuleRequest {
   }
   
   @scala.inline
-  implicit class CreateArchiveRuleRequestOps[Self <: CreateArchiveRuleRequest] (val x: Self) extends AnyVal {
+  implicit class CreateArchiveRuleRequestMutableBuilder[Self <: CreateArchiveRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def setAnalyzerName(value: Name): Self = this.set("analyzerName", value.asInstanceOf[js.Any])
+    def setFilter(value: FilterCriteriaMap): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: FilterCriteriaMap): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleName(value: Name): Self = this.set("ruleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setRuleName(value: Name): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
   }
 }

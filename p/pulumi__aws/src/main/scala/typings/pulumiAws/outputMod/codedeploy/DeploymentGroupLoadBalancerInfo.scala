@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.codedeploy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentGroupLoadBalancerInfo extends js.Object {
+trait DeploymentGroupLoadBalancerInfo extends StObject {
   
   /**
     * The Classic Elastic Load Balancer to use in a deployment. Conflicts with `targetGroupInfo` and `targetGroupPairInfo`.
@@ -31,42 +32,30 @@ object DeploymentGroupLoadBalancerInfo {
   }
   
   @scala.inline
-  implicit class DeploymentGroupLoadBalancerInfoOps[Self <: DeploymentGroupLoadBalancerInfo] (val x: Self) extends AnyVal {
+  implicit class DeploymentGroupLoadBalancerInfoMutableBuilder[Self <: DeploymentGroupLoadBalancerInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElbInfos(value: js.Array[DeploymentGroupLoadBalancerInfoElbInfo]): Self = StObject.set(x, "elbInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElbInfosUndefined: Self = StObject.set(x, "elbInfos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElbInfosVarargs(value: DeploymentGroupLoadBalancerInfoElbInfo*): Self = StObject.set(x, "elbInfos", js.Array(value :_*))
     
     @scala.inline
-    def setElbInfosVarargs(value: DeploymentGroupLoadBalancerInfoElbInfo*): Self = this.set("elbInfos", js.Array(value :_*))
+    def setTargetGroupInfos(value: js.Array[DeploymentGroupLoadBalancerInfoTargetGroupInfo]): Self = StObject.set(x, "targetGroupInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElbInfos(value: js.Array[DeploymentGroupLoadBalancerInfoElbInfo]): Self = this.set("elbInfos", value.asInstanceOf[js.Any])
+    def setTargetGroupInfosUndefined: Self = StObject.set(x, "targetGroupInfos", js.undefined)
     
     @scala.inline
-    def deleteElbInfos: Self = this.set("elbInfos", js.undefined)
+    def setTargetGroupInfosVarargs(value: DeploymentGroupLoadBalancerInfoTargetGroupInfo*): Self = StObject.set(x, "targetGroupInfos", js.Array(value :_*))
     
     @scala.inline
-    def setTargetGroupInfosVarargs(value: DeploymentGroupLoadBalancerInfoTargetGroupInfo*): Self = this.set("targetGroupInfos", js.Array(value :_*))
+    def setTargetGroupPairInfo(value: DeploymentGroupLoadBalancerInfoTargetGroupPairInfo): Self = StObject.set(x, "targetGroupPairInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroupInfos(value: js.Array[DeploymentGroupLoadBalancerInfoTargetGroupInfo]): Self = this.set("targetGroupInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroupInfos: Self = this.set("targetGroupInfos", js.undefined)
-    
-    @scala.inline
-    def setTargetGroupPairInfo(value: DeploymentGroupLoadBalancerInfoTargetGroupPairInfo): Self = this.set("targetGroupPairInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroupPairInfo: Self = this.set("targetGroupPairInfo", js.undefined)
+    def setTargetGroupPairInfoUndefined: Self = StObject.set(x, "targetGroupPairInfo", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrustedAdvisorCheckResult extends js.Object {
+trait TrustedAdvisorCheckResult extends StObject {
   
   /**
     * Summary information that relates to the category of the check. Cost Optimizing is the only category that is currently supported.
@@ -50,39 +51,27 @@ object TrustedAdvisorCheckResult {
   }
   
   @scala.inline
-  implicit class TrustedAdvisorCheckResultOps[Self <: TrustedAdvisorCheckResult] (val x: Self) extends AnyVal {
+  implicit class TrustedAdvisorCheckResultMutableBuilder[Self <: TrustedAdvisorCheckResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategorySpecificSummary(value: TrustedAdvisorCategorySpecificSummary): Self = StObject.set(x, "categorySpecificSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlaggedResources(value: TrustedAdvisorResourceDetailList): Self = StObject.set(x, "flaggedResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategorySpecificSummary(value: TrustedAdvisorCategorySpecificSummary): Self = this.set("categorySpecificSummary", value.asInstanceOf[js.Any])
+    def setFlaggedResourcesVarargs(value: TrustedAdvisorResourceDetail*): Self = StObject.set(x, "flaggedResources", js.Array(value :_*))
     
     @scala.inline
-    def setCheckId(value: String): Self = this.set("checkId", value.asInstanceOf[js.Any])
+    def setResourcesSummary(value: TrustedAdvisorResourcesSummary): Self = StObject.set(x, "resourcesSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlaggedResourcesVarargs(value: TrustedAdvisorResourceDetail*): Self = this.set("flaggedResources", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlaggedResources(value: TrustedAdvisorResourceDetailList): Self = this.set("flaggedResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourcesSummary(value: TrustedAdvisorResourcesSummary): Self = this.set("resourcesSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

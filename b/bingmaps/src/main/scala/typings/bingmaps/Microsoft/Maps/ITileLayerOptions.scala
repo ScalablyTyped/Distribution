@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITileLayerOptions extends js.Object {
+trait ITileLayerOptions extends StObject {
   
   /**
     * The number of milliseconds allowed for the tile layer image download. If the timeout occurs before the image is fully
@@ -43,60 +44,48 @@ object ITileLayerOptions {
   }
   
   @scala.inline
-  implicit class ITileLayerOptionsOps[Self <: ITileLayerOptions] (val x: Self) extends AnyVal {
+  implicit class ITileLayerOptionsMutableBuilder[Self <: ITileLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadTimeout(value: Double): Self = StObject.set(x, "downloadTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadTimeoutUndefined: Self = StObject.set(x, "downloadTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableCORS(value: Boolean): Self = StObject.set(x, "enableCORS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadTimeout(value: Double): Self = this.set("downloadTimeout", value.asInstanceOf[js.Any])
+    def setEnableCORSUndefined: Self = StObject.set(x, "enableCORS", js.undefined)
     
     @scala.inline
-    def deleteDownloadTimeout: Self = this.set("downloadTimeout", js.undefined)
+    def setMercator(value: TileSource): Self = StObject.set(x, "mercator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCORS(value: Boolean): Self = this.set("enableCORS", value.asInstanceOf[js.Any])
+    def setMercatorUndefined: Self = StObject.set(x, "mercator", js.undefined)
     
     @scala.inline
-    def deleteEnableCORS: Self = this.set("enableCORS", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMercator(value: TileSource): Self = this.set("mercator", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteMercator: Self = this.set("mercator", js.undefined)
+    def setUseCredentialsForCORS(value: Boolean): Self = StObject.set(x, "useCredentialsForCORS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setUseCredentialsForCORSUndefined: Self = StObject.set(x, "useCredentialsForCORS", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCredentialsForCORS(value: Boolean): Self = this.set("useCredentialsForCORS", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteUseCredentialsForCORS: Self = this.set("useCredentialsForCORS", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

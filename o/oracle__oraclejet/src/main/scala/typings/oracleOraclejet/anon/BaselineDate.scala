@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaselineDate extends js.Object {
+trait BaselineDate extends StObject {
   
   var baselineDate: js.UndefOr[ConverterTooltipDisplay] = js.native
   
@@ -34,72 +35,60 @@ object BaselineDate {
   }
   
   @scala.inline
-  implicit class BaselineDateOps[Self <: BaselineDate] (val x: Self) extends AnyVal {
+  implicit class BaselineDateMutableBuilder[Self <: BaselineDate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaselineDate(value: ConverterTooltipDisplay): Self = StObject.set(x, "baselineDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaselineDateUndefined: Self = StObject.set(x, "baselineDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaselineEnd(value: ConverterTooltipDisplay): Self = StObject.set(x, "baselineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineDate(value: ConverterTooltipDisplay): Self = this.set("baselineDate", value.asInstanceOf[js.Any])
+    def setBaselineEndUndefined: Self = StObject.set(x, "baselineEnd", js.undefined)
     
     @scala.inline
-    def deleteBaselineDate: Self = this.set("baselineDate", js.undefined)
+    def setBaselineStart(value: ConverterTooltipDisplay): Self = StObject.set(x, "baselineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineEnd(value: ConverterTooltipDisplay): Self = this.set("baselineEnd", value.asInstanceOf[js.Any])
+    def setBaselineStartUndefined: Self = StObject.set(x, "baselineStart", js.undefined)
     
     @scala.inline
-    def deleteBaselineEnd: Self = this.set("baselineEnd", js.undefined)
+    def setDate(value: ConverterTooltipDisplay): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineStart(value: ConverterTooltipDisplay): Self = this.set("baselineStart", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteBaselineStart: Self = this.set("baselineStart", js.undefined)
+    def setEnd(value: ConverterTooltipDisplay): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: ConverterTooltipDisplay): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setLabel(value: TooltipDisplayTooltipLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: ConverterTooltipDisplay): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setProgress(value: ConverterTooltipDisplayTooltipLabel): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: TooltipDisplayTooltipLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setRow(value: TooltipDisplayTooltipLabel): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: ConverterTooltipDisplayTooltipLabel): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setStart(value: ConverterTooltipDisplay): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRow(value: TooltipDisplayTooltipLabel): Self = this.set("row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
-    
-    @scala.inline
-    def setStart(value: ConverterTooltipDisplay): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

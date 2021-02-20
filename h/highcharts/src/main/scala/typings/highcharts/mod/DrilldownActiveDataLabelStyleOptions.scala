@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrilldownActiveDataLabelStyleOptions extends js.Object {
+trait DrilldownActiveDataLabelStyleOptions extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object DrilldownActiveDataLabelStyleOptions {
   }
   
   @scala.inline
-  implicit class DrilldownActiveDataLabelStyleOptionsOps[Self <: DrilldownActiveDataLabelStyleOptions] (val x: Self) extends AnyVal {
+  implicit class DrilldownActiveDataLabelStyleOptionsMutableBuilder[Self <: DrilldownActiveDataLabelStyleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
-    
-    @scala.inline
-    def setTextDecoration(value: String): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
+    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
   }
 }

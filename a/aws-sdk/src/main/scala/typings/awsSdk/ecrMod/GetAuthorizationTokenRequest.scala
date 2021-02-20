@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAuthorizationTokenRequest extends js.Object {
+trait GetAuthorizationTokenRequest extends StObject {
   
   /**
     * A list of AWS account IDs that are associated with the registries for which to get AuthorizationData objects. If you do not specify a registry, the default registry is assumed.
@@ -21,27 +22,15 @@ object GetAuthorizationTokenRequest {
   }
   
   @scala.inline
-  implicit class GetAuthorizationTokenRequestOps[Self <: GetAuthorizationTokenRequest] (val x: Self) extends AnyVal {
+  implicit class GetAuthorizationTokenRequestMutableBuilder[Self <: GetAuthorizationTokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegistryIds(value: GetAuthorizationTokenRegistryIdList): Self = StObject.set(x, "registryIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegistryIdsUndefined: Self = StObject.set(x, "registryIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRegistryIdsVarargs(value: RegistryId*): Self = this.set("registryIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegistryIds(value: GetAuthorizationTokenRegistryIdList): Self = this.set("registryIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryIds: Self = this.set("registryIds", js.undefined)
+    def setRegistryIdsVarargs(value: RegistryId*): Self = StObject.set(x, "registryIds", js.Array(value :_*))
   }
 }

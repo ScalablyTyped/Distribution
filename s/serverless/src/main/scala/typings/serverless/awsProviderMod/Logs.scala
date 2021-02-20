@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Logs extends js.Object {
+trait Logs extends StObject {
   
   var frameworkLambda: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object Logs {
   }
   
   @scala.inline
-  implicit class LogsOps[Self <: Logs] (val x: Self) extends AnyVal {
+  implicit class LogsMutableBuilder[Self <: Logs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameworkLambda(value: Boolean): Self = StObject.set(x, "frameworkLambda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameworkLambdaUndefined: Self = StObject.set(x, "frameworkLambda", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpApi(value: Boolean | HttpApiLogs): Self = StObject.set(x, "httpApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameworkLambda(value: Boolean): Self = this.set("frameworkLambda", value.asInstanceOf[js.Any])
+    def setHttpApiUndefined: Self = StObject.set(x, "httpApi", js.undefined)
     
     @scala.inline
-    def deleteFrameworkLambda: Self = this.set("frameworkLambda", js.undefined)
+    def setRestApi(value: RestApiLogs): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpApi(value: Boolean | HttpApiLogs): Self = this.set("httpApi", value.asInstanceOf[js.Any])
+    def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
     
     @scala.inline
-    def deleteHttpApi: Self = this.set("httpApi", js.undefined)
+    def setWebsocket(value: WebsocketLogs): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestApi(value: RestApiLogs): Self = this.set("restApi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestApi: Self = this.set("restApi", js.undefined)
-    
-    @scala.inline
-    def setWebsocket(value: WebsocketLogs): Self = this.set("websocket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsocket: Self = this.set("websocket", js.undefined)
+    def setWebsocketUndefined: Self = StObject.set(x, "websocket", js.undefined)
   }
 }

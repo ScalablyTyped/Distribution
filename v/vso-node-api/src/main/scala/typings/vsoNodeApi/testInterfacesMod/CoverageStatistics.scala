@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoverageStatistics extends js.Object {
+trait CoverageStatistics extends StObject {
   
   var blocksCovered: Double = js.native
   
@@ -32,33 +33,21 @@ object CoverageStatistics {
   }
   
   @scala.inline
-  implicit class CoverageStatisticsOps[Self <: CoverageStatistics] (val x: Self) extends AnyVal {
+  implicit class CoverageStatisticsMutableBuilder[Self <: CoverageStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocksCovered(value: Double): Self = StObject.set(x, "blocksCovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlocksNotCovered(value: Double): Self = StObject.set(x, "blocksNotCovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinesCovered(value: Double): Self = StObject.set(x, "linesCovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocksCovered(value: Double): Self = this.set("blocksCovered", value.asInstanceOf[js.Any])
+    def setLinesNotCovered(value: Double): Self = StObject.set(x, "linesNotCovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocksNotCovered(value: Double): Self = this.set("blocksNotCovered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinesCovered(value: Double): Self = this.set("linesCovered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinesNotCovered(value: Double): Self = this.set("linesNotCovered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinesPartiallyCovered(value: Double): Self = this.set("linesPartiallyCovered", value.asInstanceOf[js.Any])
+    def setLinesPartiallyCovered(value: Double): Self = StObject.set(x, "linesPartiallyCovered", value.asInstanceOf[js.Any])
   }
 }

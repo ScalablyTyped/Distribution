@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParentEntityFilter extends js.Object {
+trait ParentEntityFilter extends StObject {
   
   /** Required. File types that will be returned. */
   var fileType: js.UndefOr[js.Array[String]] = js.native
@@ -25,42 +26,30 @@ object ParentEntityFilter {
   }
   
   @scala.inline
-  implicit class ParentEntityFilterOps[Self <: ParentEntityFilter] (val x: Self) extends AnyVal {
+  implicit class ParentEntityFilterMutableBuilder[Self <: ParentEntityFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileType(value: js.Array[String]): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value :_*))
     
     @scala.inline
-    def setFileTypeVarargs(value: String*): Self = this.set("fileType", js.Array(value :_*))
+    def setFilterIds(value: js.Array[String]): Self = StObject.set(x, "filterIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileType(value: js.Array[String]): Self = this.set("fileType", value.asInstanceOf[js.Any])
+    def setFilterIdsUndefined: Self = StObject.set(x, "filterIds", js.undefined)
     
     @scala.inline
-    def deleteFileType: Self = this.set("fileType", js.undefined)
+    def setFilterIdsVarargs(value: String*): Self = StObject.set(x, "filterIds", js.Array(value :_*))
     
     @scala.inline
-    def setFilterIdsVarargs(value: String*): Self = this.set("filterIds", js.Array(value :_*))
+    def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterIds(value: js.Array[String]): Self = this.set("filterIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterIds: Self = this.set("filterIds", js.undefined)
-    
-    @scala.inline
-    def setFilterType(value: String): Self = this.set("filterType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
   }
 }

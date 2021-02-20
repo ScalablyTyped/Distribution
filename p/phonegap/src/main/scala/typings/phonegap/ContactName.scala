@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContactName extends js.Object {
+trait ContactName extends StObject {
   
   var familyName: String = js.native
   
@@ -35,36 +36,24 @@ object ContactName {
   }
   
   @scala.inline
-  implicit class ContactNameOps[Self <: ContactName] (val x: Self) extends AnyVal {
+  implicit class ContactNameMutableBuilder[Self <: ContactName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    def setHonorificPrefix(value: String): Self = StObject.set(x, "honorificPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatted(value: String): Self = this.set("formatted", value.asInstanceOf[js.Any])
+    def setHonorificSuffix(value: String): Self = StObject.set(x, "honorificSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHonorificPrefix(value: String): Self = this.set("honorificPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHonorificSuffix(value: String): Self = this.set("honorificSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMiddleName(value: String): Self = this.set("middleName", value.asInstanceOf[js.Any])
+    def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
   }
 }

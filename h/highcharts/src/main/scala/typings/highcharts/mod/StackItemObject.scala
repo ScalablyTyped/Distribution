@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackItemObject extends js.Object {
+trait StackItemObject extends StObject {
   
   /**
     * Alignment settings
@@ -65,42 +66,30 @@ object StackItemObject {
   }
   
   @scala.inline
-  implicit class StackItemObjectOps[Self <: StackItemObject] (val x: Self) extends AnyVal {
+  implicit class StackItemObjectMutableBuilder[Self <: StackItemObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignOptions(value: AlignObject): Self = StObject.set(x, "alignOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCumulative(value: Double): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignOptions(value: AlignObject): Self = this.set("alignOptions", value.asInstanceOf[js.Any])
+    def setIsNegative(value: Boolean): Self = StObject.set(x, "isNegative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: Axis): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setLabel(value: SVGElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCumulative(value: Double): Self = this.set("cumulative", value.asInstanceOf[js.Any])
+    def setOptions(value: YAxisStackLabelsOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNegative(value: Boolean): Self = this.set("isNegative", value.asInstanceOf[js.Any])
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: SVGElement): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: YAxisStackLabelsOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
   }
 }

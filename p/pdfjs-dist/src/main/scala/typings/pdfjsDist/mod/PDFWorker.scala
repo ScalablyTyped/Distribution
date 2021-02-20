@@ -1,11 +1,12 @@
 package typings.pdfjsDist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFWorker extends js.Object {
+trait PDFWorker extends StObject {
   
   def destroy(): Unit = js.native
   
@@ -24,36 +25,24 @@ object PDFWorker {
   }
   
   @scala.inline
-  implicit class PDFWorkerOps[Self <: PDFWorker] (val x: Self) extends AnyVal {
+  implicit class PDFWorkerMutableBuilder[Self <: PDFWorker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageHandler(value: js.Any): Self = StObject.set(x, "messageHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageHandlerNull: Self = StObject.set(x, "messageHandler", null)
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromise(value: js.Promise[_]): Self = this.set("promise", value.asInstanceOf[js.Any])
+    def setPortNull: Self = StObject.set(x, "port", null)
     
     @scala.inline
-    def setMessageHandler(value: js.Any): Self = this.set("messageHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageHandlerNull: Self = this.set("messageHandler", null)
-    
-    @scala.inline
-    def setPort(value: js.Any): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortNull: Self = this.set("port", null)
+    def setPromise(value: js.Promise[_]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

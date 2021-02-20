@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateLinkAttributesRequest extends js.Object {
+trait UpdateLinkAttributesRequest extends StObject {
   
   /**
     * The attributes update structure.
@@ -35,30 +36,18 @@ object UpdateLinkAttributesRequest {
   }
   
   @scala.inline
-  implicit class UpdateLinkAttributesRequestOps[Self <: UpdateLinkAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateLinkAttributesRequestMutableBuilder[Self <: UpdateLinkAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeUpdates(value: LinkAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeUpdatesVarargs(value: LinkAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeUpdatesVarargs(value: LinkAttributeUpdate*): Self = this.set("AttributeUpdates", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributeUpdates(value: LinkAttributeUpdateList): Self = this.set("AttributeUpdates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypedLinkSpecifier(value: TypedLinkSpecifier): Self = this.set("TypedLinkSpecifier", value.asInstanceOf[js.Any])
+    def setTypedLinkSpecifier(value: TypedLinkSpecifier): Self = StObject.set(x, "TypedLinkSpecifier", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.maildev
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for {@link MailDev} options.
   */
 @js.native
-trait MailDevOptions extends js.Object {
+trait MailDevOptions extends StObject {
   
   /**
     * Do not start web UI
@@ -117,102 +118,90 @@ object MailDevOptions {
   }
   
   @scala.inline
-  implicit class MailDevOptionsOps[Self <: MailDevOptions] (val x: Self) extends AnyVal {
+  implicit class MailDevOptionsMutableBuilder[Self <: MailDevOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableWeb(value: Boolean): Self = StObject.set(x, "disableWeb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableWebUndefined: Self = StObject.set(x, "disableWeb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableWeb(value: Boolean): Self = this.set("disableWeb", value.asInstanceOf[js.Any])
+    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
     
     @scala.inline
-    def deleteDisableWeb: Self = this.set("disableWeb", js.undefined)
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteIp: Self = this.set("ip", js.undefined)
+    def setOutgoingHost(value: String): Self = StObject.set(x, "outgoingHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setOutgoingHostUndefined: Self = StObject.set(x, "outgoingHost", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOutgoingPass(value: String): Self = StObject.set(x, "outgoingPass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoingHost(value: String): Self = this.set("outgoingHost", value.asInstanceOf[js.Any])
+    def setOutgoingPassUndefined: Self = StObject.set(x, "outgoingPass", js.undefined)
     
     @scala.inline
-    def deleteOutgoingHost: Self = this.set("outgoingHost", js.undefined)
+    def setOutgoingPort(value: Double): Self = StObject.set(x, "outgoingPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoingPass(value: String): Self = this.set("outgoingPass", value.asInstanceOf[js.Any])
+    def setOutgoingPortUndefined: Self = StObject.set(x, "outgoingPort", js.undefined)
     
     @scala.inline
-    def deleteOutgoingPass: Self = this.set("outgoingPass", js.undefined)
+    def setOutgoingSecure(value: Boolean): Self = StObject.set(x, "outgoingSecure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoingPort(value: Double): Self = this.set("outgoingPort", value.asInstanceOf[js.Any])
+    def setOutgoingSecureUndefined: Self = StObject.set(x, "outgoingSecure", js.undefined)
     
     @scala.inline
-    def deleteOutgoingPort: Self = this.set("outgoingPort", js.undefined)
+    def setOutgoingUser(value: String): Self = StObject.set(x, "outgoingUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoingSecure(value: Boolean): Self = this.set("outgoingSecure", value.asInstanceOf[js.Any])
+    def setOutgoingUserUndefined: Self = StObject.set(x, "outgoingUser", js.undefined)
     
     @scala.inline
-    def deleteOutgoingSecure: Self = this.set("outgoingSecure", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoingUser(value: String): Self = this.set("outgoingUser", value.asInstanceOf[js.Any])
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def deleteOutgoingUser: Self = this.set("outgoingUser", js.undefined)
+    def setSmtp(value: Double): Self = StObject.set(x, "smtp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    def setSmtpUndefined: Self = StObject.set(x, "smtp", js.undefined)
     
     @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setWeb(value: Double): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmtp(value: Double): Self = this.set("smtp", value.asInstanceOf[js.Any])
+    def setWebIp(value: String): Self = StObject.set(x, "webIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmtp: Self = this.set("smtp", js.undefined)
+    def setWebIpUndefined: Self = StObject.set(x, "webIp", js.undefined)
     
     @scala.inline
-    def setWeb(value: Double): Self = this.set("web", value.asInstanceOf[js.Any])
+    def setWebPass(value: String): Self = StObject.set(x, "webPass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWeb: Self = this.set("web", js.undefined)
+    def setWebPassUndefined: Self = StObject.set(x, "webPass", js.undefined)
     
     @scala.inline
-    def setWebIp(value: String): Self = this.set("webIp", value.asInstanceOf[js.Any])
+    def setWebUndefined: Self = StObject.set(x, "web", js.undefined)
     
     @scala.inline
-    def deleteWebIp: Self = this.set("webIp", js.undefined)
+    def setWebUser(value: String): Self = StObject.set(x, "webUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebPass(value: String): Self = this.set("webPass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebPass: Self = this.set("webPass", js.undefined)
-    
-    @scala.inline
-    def setWebUser(value: String): Self = this.set("webUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebUser: Self = this.set("webUser", js.undefined)
+    def setWebUserUndefined: Self = StObject.set(x, "webUser", js.undefined)
   }
 }

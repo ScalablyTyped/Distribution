@@ -3,18 +3,19 @@ package typings.winrt.global.Windows.ApplicationModel
 import typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldCategory
 import typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldType
 import typings.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Contacts")
-@js.native
-object Contacts extends js.Object {
+object Contacts {
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.Contact")
   @js.native
   class Contact ()
     extends typings.winrt.Windows.ApplicationModel.Contacts.Contact
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.ContactField")
   @js.native
   class ContactField protected ()
     extends typings.winrt.Windows.ApplicationModel.Contacts.ContactField {
@@ -23,8 +24,9 @@ object Contacts extends js.Object {
     def this(name: String, value: String, `type`: ContactFieldType, category: ContactFieldCategory) = this()
   }
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldCategory")
   @js.native
-  object ContactFieldCategory extends js.Object {
+  object ContactFieldCategory extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldCategory with Double] = js.native
@@ -40,12 +42,14 @@ object Contacts extends js.Object {
     /* 2 */ val work: typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldCategory.work with Double = js.native
   }
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldFactory")
   @js.native
   class ContactFieldFactory ()
     extends typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldFactory
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldType")
   @js.native
-  object ContactFieldType extends js.Object {
+  object ContactFieldType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldType with Double] = js.native
@@ -61,10 +65,12 @@ object Contacts extends js.Object {
     /* 1 */ val phoneNumber: typings.winrt.Windows.ApplicationModel.Contacts.ContactFieldType.phoneNumber with Double = js.native
   }
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.ContactInformation")
   @js.native
   class ContactInformation ()
     extends typings.winrt.Windows.ApplicationModel.Contacts.ContactInformation
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.ContactInstantMessageField")
   @js.native
   class ContactInstantMessageField protected ()
     extends typings.winrt.Windows.ApplicationModel.Contacts.ContactInstantMessageField {
@@ -73,6 +79,7 @@ object Contacts extends js.Object {
     def this(userName: String, category: ContactFieldCategory, service: String, displayText: String, verb: Uri) = this()
   }
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.ContactLocationField")
   @js.native
   class ContactLocationField protected ()
     extends typings.winrt.Windows.ApplicationModel.Contacts.ContactLocationField {
@@ -89,12 +96,14 @@ object Contacts extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.ContactPicker")
   @js.native
   class ContactPicker ()
     extends typings.winrt.Windows.ApplicationModel.Contacts.ContactPicker
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.ContactSelectionMode")
   @js.native
-  object ContactSelectionMode extends js.Object {
+  object ContactSelectionMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.ApplicationModel.Contacts.ContactSelectionMode with Double] = js.native
@@ -104,31 +113,55 @@ object Contacts extends js.Object {
     /* 1 */ val fields: typings.winrt.Windows.ApplicationModel.Contacts.ContactSelectionMode.fields with Double = js.native
   }
   
+  @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField")
   @js.native
   class KnownContactField ()
     extends typings.winrt.Windows.ApplicationModel.Contacts.KnownContactField
   /* static members */
-  @js.native
-  object KnownContactField extends js.Object {
+  object KnownContactField {
     
+    @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.convertNameToType")
+    @js.native
     def convertNameToType(name: String): ContactFieldType = js.native
     
+    @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.convertTypeToName")
+    @js.native
     def convertTypeToName(`type`: ContactFieldType): String = js.native
     
-    var email: String = js.native
+    @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.email")
+    @js.native
+    def email: String = js.native
+    @scala.inline
+    def email_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("email")(x.asInstanceOf[js.Any])
     
-    var instantMessage: String = js.native
+    @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.instantMessage")
+    @js.native
+    def instantMessage: String = js.native
+    @scala.inline
+    def instantMessage_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instantMessage")(x.asInstanceOf[js.Any])
     
-    var location: String = js.native
+    @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.location")
+    @js.native
+    def location: String = js.native
+    @scala.inline
+    def location_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("location")(x.asInstanceOf[js.Any])
     
-    var phoneNumber: String = js.native
+    @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.phoneNumber")
+    @js.native
+    def phoneNumber: String = js.native
+    @scala.inline
+    def phoneNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneNumber")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object Provider extends js.Object {
+  object Provider {
     
+    @JSGlobal("Windows.ApplicationModel.Contacts.Provider.AddContactResult")
     @js.native
-    object AddContactResult extends js.Object {
+    object AddContactResult extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
@@ -142,10 +175,12 @@ object Contacts extends js.Object {
       /* 2 */ val unavailable: typings.winrt.Windows.ApplicationModel.Contacts.Provider.AddContactResult.unavailable with Double = js.native
     }
     
+    @JSGlobal("Windows.ApplicationModel.Contacts.Provider.ContactPickerUI")
     @js.native
     class ContactPickerUI ()
       extends typings.winrt.Windows.ApplicationModel.Contacts.Provider.ContactPickerUI
     
+    @JSGlobal("Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs")
     @js.native
     class ContactRemovedEventArgs ()
       extends typings.winrt.Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs

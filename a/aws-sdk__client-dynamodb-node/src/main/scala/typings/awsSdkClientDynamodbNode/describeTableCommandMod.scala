@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbNode.typesDescribeTableInputMod.DescribeTable
 import typings.awsSdkClientDynamodbNode.typesDescribeTableOutputMod.DescribeTableOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-node/commands/DescribeTableCommand", JSImport.Namespace)
-@js.native
-object describeTableCommandMod extends js.Object {
+object describeTableCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-node/commands/DescribeTableCommand", "DescribeTableCommand")
   @js.native
   class DescribeTableCommand protected () extends Command[
           InputTypesUnion, 

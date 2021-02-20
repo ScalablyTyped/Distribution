@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import typings.maximMazurokGapiClientAnalytics.anon.Local
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityUserLink extends js.Object {
+trait EntityUserLink extends StObject {
   
   /** Entity for this link. It can be an account, a web property, or a view (profile). */
   var entity: js.UndefOr[typings.maximMazurokGapiClientAnalytics.anon.AccountRef] = js.native
@@ -35,54 +36,42 @@ object EntityUserLink {
   }
   
   @scala.inline
-  implicit class EntityUserLinkOps[Self <: EntityUserLink] (val x: Self) extends AnyVal {
+  implicit class EntityUserLinkMutableBuilder[Self <: EntityUserLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: typings.maximMazurokGapiClientAnalytics.anon.AccountRef): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: typings.maximMazurokGapiClientAnalytics.anon.AccountRef): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEntity: Self = this.set("entity", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPermissions(value: Local): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: Local): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
+    def setUserRef(value: UserRef): Self = StObject.set(x, "userRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
-    
-    @scala.inline
-    def setUserRef(value: UserRef): Self = this.set("userRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRef: Self = this.set("userRef", js.undefined)
+    def setUserRefUndefined: Self = StObject.set(x, "userRef", js.undefined)
   }
 }

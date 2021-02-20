@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options to create an EffectWrapper
   */
 @js.native
-trait EffectWrapperCreationOptions extends js.Object {
+trait EffectWrapperCreationOptions extends StObject {
   
   /**
     * Attributes to use in the shader
@@ -69,87 +70,75 @@ object EffectWrapperCreationOptions {
   }
   
   @scala.inline
-  implicit class EffectWrapperCreationOptionsOps[Self <: EffectWrapperCreationOptions] (val x: Self) extends AnyVal {
+  implicit class EffectWrapperCreationOptionsMutableBuilder[Self <: EffectWrapperCreationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeNames(value: js.Array[String]): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNamesUndefined: Self = StObject.set(x, "attributeNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value :_*))
     
     @scala.inline
-    def setEngine(value: ThinEngine): Self = this.set("engine", value.asInstanceOf[js.Any])
+    def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentShader(value: String): Self = this.set("fragmentShader", value.asInstanceOf[js.Any])
+    def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
     
     @scala.inline
-    def setAttributeNamesVarargs(value: String*): Self = this.set("attributeNames", js.Array(value :_*))
+    def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
     
     @scala.inline
-    def setAttributeNames(value: js.Array[String]): Self = this.set("attributeNames", value.asInstanceOf[js.Any])
+    def setEngine(value: ThinEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributeNames: Self = this.set("attributeNames", js.undefined)
+    def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinesVarargs(value: String*): Self = this.set("defines", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefines(value: js.Array[String]): Self = this.set("defines", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDefines: Self = this.set("defines", js.undefined)
+    def setOnCompiled(value: /* effect */ Effect => Unit): Self = StObject.set(x, "onCompiled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOnCompiledNull: Self = StObject.set(x, "onCompiled", null)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOnCompiledUndefined: Self = StObject.set(x, "onCompiled", js.undefined)
     
     @scala.inline
-    def setOnCompiled(value: /* effect */ Effect => Unit): Self = this.set("onCompiled", js.Any.fromFunction1(value))
+    def setSamplerNames(value: js.Array[String]): Self = StObject.set(x, "samplerNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnCompiled: Self = this.set("onCompiled", js.undefined)
+    def setSamplerNamesUndefined: Self = StObject.set(x, "samplerNames", js.undefined)
     
     @scala.inline
-    def setOnCompiledNull: Self = this.set("onCompiled", null)
+    def setSamplerNamesVarargs(value: String*): Self = StObject.set(x, "samplerNames", js.Array(value :_*))
     
     @scala.inline
-    def setSamplerNamesVarargs(value: String*): Self = this.set("samplerNames", js.Array(value :_*))
+    def setUniformNames(value: js.Array[String]): Self = StObject.set(x, "uniformNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplerNames(value: js.Array[String]): Self = this.set("samplerNames", value.asInstanceOf[js.Any])
+    def setUniformNamesUndefined: Self = StObject.set(x, "uniformNames", js.undefined)
     
     @scala.inline
-    def deleteSamplerNames: Self = this.set("samplerNames", js.undefined)
+    def setUniformNamesVarargs(value: String*): Self = StObject.set(x, "uniformNames", js.Array(value :_*))
     
     @scala.inline
-    def setUniformNamesVarargs(value: String*): Self = this.set("uniformNames", js.Array(value :_*))
+    def setUseShaderStore(value: Boolean): Self = StObject.set(x, "useShaderStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniformNames(value: js.Array[String]): Self = this.set("uniformNames", value.asInstanceOf[js.Any])
+    def setUseShaderStoreUndefined: Self = StObject.set(x, "useShaderStore", js.undefined)
     
     @scala.inline
-    def deleteUniformNames: Self = this.set("uniformNames", js.undefined)
+    def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseShaderStore(value: Boolean): Self = this.set("useShaderStore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseShaderStore: Self = this.set("useShaderStore", js.undefined)
-    
-    @scala.inline
-    def setVertexShader(value: String): Self = this.set("vertexShader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertexShader: Self = this.set("vertexShader", js.undefined)
+    def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
   }
 }

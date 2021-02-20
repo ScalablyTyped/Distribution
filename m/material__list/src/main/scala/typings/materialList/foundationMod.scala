@@ -2,21 +2,24 @@ package typings.materialList
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialList.adapterMod.MDCListAdapter
-import typings.materialList.anon.ACTIONEVENT
-import typings.materialList.anon.LISTITEMACTIVATEDCLASS
 import typings.materialList.anon.PartialMDCListAdapter
-import typings.materialList.anon.TYPEAHEADBUFFERCLEARTIMEOUTMS
 import typings.materialList.typesMod.MDCListIndex
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/list/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/list/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCListFoundation {
+    def this(adapter: PartialMDCListAdapter) = this()
+  }
+  
+  @JSImport("@material/list/foundation", "MDCListFoundation")
   @js.native
   class MDCListFoundation () extends MDCFoundation[MDCListAdapter] {
     def this(adapter: PartialMDCListAdapter) = this()
@@ -120,34 +123,5 @@ object foundationMod extends js.Object {
     def typeaheadMatchItem(nextChar: String, startingIndex: js.UndefOr[scala.Nothing], skipFocus: Boolean): Double = js.native
     def typeaheadMatchItem(nextChar: String, startingIndex: Double): Double = js.native
     def typeaheadMatchItem(nextChar: String, startingIndex: Double, skipFocus: Boolean): Double = js.native
-  }
-  /* static members */
-  @js.native
-  object MDCListFoundation extends js.Object {
-    
-    def cssClasses: LISTITEMACTIVATEDCLASS = js.native
-    
-    def defaultAdapter: MDCListAdapter = js.native
-    
-    def numbers: TYPEAHEADBUFFERCLEARTIMEOUTMS = js.native
-    
-    def strings: ACTIONEVENT = js.native
-  }
-  
-  @js.native
-  class default () extends MDCListFoundation {
-    def this(adapter: PartialMDCListAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def cssClasses: LISTITEMACTIVATEDCLASS = js.native
-    
-    def defaultAdapter: MDCListAdapter = js.native
-    
-    def numbers: TYPEAHEADBUFFERCLEARTIMEOUTMS = js.native
-    
-    def strings: ACTIONEVENT = js.native
   }
 }

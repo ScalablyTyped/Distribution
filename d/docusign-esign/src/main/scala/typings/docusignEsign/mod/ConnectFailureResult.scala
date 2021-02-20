@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectFailureResult extends js.Object {
+trait ConnectFailureResult extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -42,48 +43,36 @@ object ConnectFailureResult {
   }
   
   @scala.inline
-  implicit class ConnectFailureResultOps[Self <: ConnectFailureResult] (val x: Self) extends AnyVal {
+  implicit class ConnectFailureResultMutableBuilder[Self <: ConnectFailureResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigUrl(value: String): Self = StObject.set(x, "configUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigId(value: String): Self = this.set("configId", value.asInstanceOf[js.Any])
+    def setConfigUrlUndefined: Self = StObject.set(x, "configUrl", js.undefined)
     
     @scala.inline
-    def deleteConfigId: Self = this.set("configId", js.undefined)
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigUrl(value: String): Self = this.set("configUrl", value.asInstanceOf[js.Any])
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def deleteConfigUrl: Self = this.set("configUrl", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

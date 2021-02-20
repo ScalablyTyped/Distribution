@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageRecipeSummary extends js.Object {
+trait ImageRecipeSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image recipe.
@@ -51,60 +52,48 @@ object ImageRecipeSummary {
   }
   
   @scala.inline
-  implicit class ImageRecipeSummaryOps[Self <: ImageRecipeSummary] (val x: Self) extends AnyVal {
+  implicit class ImageRecipeSummaryMutableBuilder[Self <: ImageRecipeSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: ImageBuilderArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCreated(value: DateTime): Self = this.set("dateCreated", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDateCreated: Self = this.set("dateCreated", js.undefined)
+    def setOwner(value: NonEmptyString): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParentImage(value: NonEmptyString): Self = StObject.set(x, "parentImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: NonEmptyString): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setParentImageUndefined: Self = StObject.set(x, "parentImage", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentImage(value: NonEmptyString): Self = this.set("parentImage", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteParentImage: Self = this.set("parentImage", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

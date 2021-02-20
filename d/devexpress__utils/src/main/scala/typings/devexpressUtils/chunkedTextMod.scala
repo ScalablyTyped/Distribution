@@ -1,15 +1,15 @@
 package typings.devexpressUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/class/chunked-text", JSImport.Namespace)
-@js.native
-object chunkedTextMod extends js.Object {
+object chunkedTextMod {
   
+  @JSImport("@devexpress/utils/lib/class/chunked-text", "ChunkedText")
   @js.native
-  class ChunkedText protected () extends js.Object {
+  class ChunkedText protected () extends StObject {
     def this(text: String) = this()
     def this(text: String, maxChunkSize: Double) = this()
     

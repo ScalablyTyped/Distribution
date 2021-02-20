@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientPlayablelocations.anon.Accesstoken
 import typings.maximMazurokGapiClientPlayablelocations.anon.Alt
 import typings.maximMazurokGapiClientPlayablelocations.anon.Callback
 import typings.maximMazurokGapiClientPlayablelocations.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait V3Resource extends js.Object {
+trait V3Resource extends StObject {
   
   /**
     * Logs new events when playable locations are displayed, and when they are interacted with. Impressions are not partially saved; either all impressions are saved and this request

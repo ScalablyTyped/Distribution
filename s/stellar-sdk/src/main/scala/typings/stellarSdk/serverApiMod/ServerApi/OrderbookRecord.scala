@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.stellarBase.mod.Asset
 import typings.stellarSdk.anon.Amount
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,36 +38,24 @@ object OrderbookRecord {
   }
   
   @scala.inline
-  implicit class OrderbookRecordOps[Self <: OrderbookRecord] (val x: Self) extends AnyVal {
+  implicit class OrderbookRecordMutableBuilder[Self <: OrderbookRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsks(value: js.Array[Amount]): Self = StObject.set(x, "asks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsksVarargs(value: Amount*): Self = StObject.set(x, "asks", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBase(value: Asset): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsksVarargs(value: Amount*): Self = this.set("asks", js.Array(value :_*))
+    def setBids(value: js.Array[Amount]): Self = StObject.set(x, "bids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsks(value: js.Array[Amount]): Self = this.set("asks", value.asInstanceOf[js.Any])
+    def setBidsVarargs(value: Amount*): Self = StObject.set(x, "bids", js.Array(value :_*))
     
     @scala.inline
-    def setBase(value: Asset): Self = this.set("base", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBidsVarargs(value: Amount*): Self = this.set("bids", js.Array(value :_*))
-    
-    @scala.inline
-    def setBids(value: js.Array[Amount]): Self = this.set("bids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCounter(value: Asset): Self = this.set("counter", value.asInstanceOf[js.Any])
+    def setCounter(value: Asset): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
   }
 }

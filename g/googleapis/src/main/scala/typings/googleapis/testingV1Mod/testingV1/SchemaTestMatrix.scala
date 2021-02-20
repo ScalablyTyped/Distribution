@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * over a pre-defined set of axes.
   */
 @js.native
-trait SchemaTestMatrix extends js.Object {
+trait SchemaTestMatrix extends StObject {
   
   /**
     * Information about the client which invoked the test.
@@ -80,87 +81,75 @@ object SchemaTestMatrix {
   }
   
   @scala.inline
-  implicit class SchemaTestMatrixOps[Self <: SchemaTestMatrix] (val x: Self) extends AnyVal {
+  implicit class SchemaTestMatrixMutableBuilder[Self <: SchemaTestMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientInfo(value: SchemaClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironmentMatrix(value: SchemaEnvironmentMatrix): Self = StObject.set(x, "environmentMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientInfo(value: SchemaClientInfo): Self = this.set("clientInfo", value.asInstanceOf[js.Any])
+    def setEnvironmentMatrixUndefined: Self = StObject.set(x, "environmentMatrix", js.undefined)
     
     @scala.inline
-    def deleteClientInfo: Self = this.set("clientInfo", js.undefined)
+    def setFlakyTestAttempts(value: Double): Self = StObject.set(x, "flakyTestAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentMatrix(value: SchemaEnvironmentMatrix): Self = this.set("environmentMatrix", value.asInstanceOf[js.Any])
+    def setFlakyTestAttemptsUndefined: Self = StObject.set(x, "flakyTestAttempts", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentMatrix: Self = this.set("environmentMatrix", js.undefined)
+    def setInvalidMatrixDetails(value: String): Self = StObject.set(x, "invalidMatrixDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlakyTestAttempts(value: Double): Self = this.set("flakyTestAttempts", value.asInstanceOf[js.Any])
+    def setInvalidMatrixDetailsUndefined: Self = StObject.set(x, "invalidMatrixDetails", js.undefined)
     
     @scala.inline
-    def deleteFlakyTestAttempts: Self = this.set("flakyTestAttempts", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidMatrixDetails(value: String): Self = this.set("invalidMatrixDetails", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteInvalidMatrixDetails: Self = this.set("invalidMatrixDetails", js.undefined)
+    def setResultStorage(value: SchemaResultStorage): Self = StObject.set(x, "resultStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setResultStorageUndefined: Self = StObject.set(x, "resultStorage", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultStorage(value: SchemaResultStorage): Self = this.set("resultStorage", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteResultStorage: Self = this.set("resultStorage", js.undefined)
+    def setTestExecutions(value: js.Array[SchemaTestExecution]): Self = StObject.set(x, "testExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTestExecutionsUndefined: Self = StObject.set(x, "testExecutions", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTestExecutionsVarargs(value: SchemaTestExecution*): Self = StObject.set(x, "testExecutions", js.Array(value :_*))
     
     @scala.inline
-    def setTestExecutionsVarargs(value: SchemaTestExecution*): Self = this.set("testExecutions", js.Array(value :_*))
+    def setTestMatrixId(value: String): Self = StObject.set(x, "testMatrixId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestExecutions(value: js.Array[SchemaTestExecution]): Self = this.set("testExecutions", value.asInstanceOf[js.Any])
+    def setTestMatrixIdUndefined: Self = StObject.set(x, "testMatrixId", js.undefined)
     
     @scala.inline
-    def deleteTestExecutions: Self = this.set("testExecutions", js.undefined)
+    def setTestSpecification(value: SchemaTestSpecification): Self = StObject.set(x, "testSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestMatrixId(value: String): Self = this.set("testMatrixId", value.asInstanceOf[js.Any])
+    def setTestSpecificationUndefined: Self = StObject.set(x, "testSpecification", js.undefined)
     
     @scala.inline
-    def deleteTestMatrixId: Self = this.set("testMatrixId", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestSpecification(value: SchemaTestSpecification): Self = this.set("testSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestSpecification: Self = this.set("testSpecification", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

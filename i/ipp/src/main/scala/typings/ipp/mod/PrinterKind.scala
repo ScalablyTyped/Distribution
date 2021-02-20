@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.receipt
   - typings.ipp.ippStrings.roll
 */
-trait PrinterKind extends js.Object
+trait PrinterKind extends StObject
 object PrinterKind {
   
   @scala.inline

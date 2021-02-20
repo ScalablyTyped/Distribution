@@ -1,5 +1,6 @@
 package typings.bmapgl.global.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Overlay ()
   extends typings.bmapgl.BMapGL.Overlay
-/* static members */
-@JSGlobal("BMapGL.Overlay")
-@js.native
-object Overlay extends js.Object {
+object Overlay {
   
+  /* static member */
+  @JSGlobal("BMapGL.Overlay.getZIndex")
+  @js.native
   def getZIndex(lat: Double): Double = js.native
+  @JSGlobal("BMapGL.Overlay.getZIndex")
+  @js.native
   def getZIndex(lat: Double, coordTyppe: String): Double = js.native
 }

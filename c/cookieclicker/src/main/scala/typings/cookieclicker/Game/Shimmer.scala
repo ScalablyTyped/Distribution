@@ -2,12 +2,13 @@ package typings.cookieclicker.Game
 
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Shimmer[N /* <: String */, C /* <: js.Object */] extends js.Object {
+trait Shimmer[N /* <: String */, C /* <: js.Object */] extends StObject {
   
   def die(): Unit = js.native
   
@@ -56,54 +57,42 @@ object Shimmer {
   }
   
   @scala.inline
-  implicit class ShimmerOps[Self <: Shimmer[_, _], N /* <: String */, C /* <: js.Object */] (val x: Self with (Shimmer[N, C])) extends AnyVal {
+  implicit class ShimmerMutableBuilder[Self <: Shimmer[_, _], N /* <: String */, C /* <: js.Object */] (val x: Self with (Shimmer[N, C])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDie(value: () => Unit): Self = StObject.set(x, "die", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceObj(value: C): Self = StObject.set(x, "forceObj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDie(value: () => Unit): Self = this.set("die", js.Any.fromFunction0(value))
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceObj(value: C): Self = this.set("forceObj", value.asInstanceOf[js.Any])
+    def setL(value: HTMLElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNoCount(value: Boolean): Self = StObject.set(x, "noCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    def setPop(value: MouseEvent => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setL(value: HTMLElement): Self = this.set("l", value.asInstanceOf[js.Any])
+    def setSpawnLead(value: Double): Self = StObject.set(x, "spawnLead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCount(value: Boolean): Self = this.set("noCount", value.asInstanceOf[js.Any])
+    def setType(value: N): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPop(value: MouseEvent => Unit): Self = this.set("pop", js.Any.fromFunction1(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSpawnLead(value: Double): Self = this.set("spawnLead", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: N): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientGames.anon.SnapshotId
 import typings.maximMazurokGapiClientGames.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotsResource extends js.Object {
+trait SnapshotsResource extends StObject {
   
   /** Retrieves the metadata for a given snapshot ID. */
   def get(): Request[Snapshot] = js.native

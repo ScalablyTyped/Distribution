@@ -5,16 +5,16 @@ import typings.three.sceneMod.Scene
 import typings.three.textureMod.Texture
 import typings.three.webGLRenderTargetMod.WebGLRenderTarget
 import typings.three.webGLRendererMod.WebGLRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/extras/PMREMGenerator", JSImport.Namespace)
-@js.native
-object pmremgeneratorMod extends js.Object {
+object pmremgeneratorMod {
   
+  @JSImport("three/src/extras/PMREMGenerator", "PMREMGenerator")
   @js.native
-  class PMREMGenerator protected () extends js.Object {
+  class PMREMGenerator protected () extends StObject {
     def this(renderer: WebGLRenderer) = this()
     
     def compileCubemapShader(): Unit = js.native

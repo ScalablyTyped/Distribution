@@ -1,13 +1,14 @@
 package typings.glVec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gl-vec2/forEach", JSImport.Namespace)
-@js.native
-object forEachMod extends js.Object {
+object forEachMod {
   
+  @JSImport("gl-vec2/forEach", JSImport.Namespace)
+  @js.native
   def apply(
     a: js.Array[Double],
     stride: Double,

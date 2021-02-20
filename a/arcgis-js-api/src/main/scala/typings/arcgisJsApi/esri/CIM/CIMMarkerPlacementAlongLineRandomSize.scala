@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,35 +35,23 @@ object CIMMarkerPlacementAlongLineRandomSize {
   }
   
   @scala.inline
-  implicit class CIMMarkerPlacementAlongLineRandomSizeOps[Self <: CIMMarkerPlacementAlongLineRandomSize] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineRandomSize): Self = this.set("type", value.asInstanceOf[js.Any])
+  implicit class CIMMarkerPlacementAlongLineRandomSizeMutableBuilder[Self <: CIMMarkerPlacementAlongLineRandomSize] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setRandomization(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementRandomlyAlongLineRandomization * / any */ String
-    ): Self = this.set("randomization", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "randomization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRandomization: Self = this.set("randomization", js.undefined)
+    def setRandomizationUndefined: Self = StObject.set(x, "randomization", js.undefined)
     
     @scala.inline
-    def setSeed(value: Double): Self = this.set("seed", value.asInstanceOf[js.Any])
+    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeed: Self = this.set("seed", js.undefined)
+    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    
+    @scala.inline
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineRandomSize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

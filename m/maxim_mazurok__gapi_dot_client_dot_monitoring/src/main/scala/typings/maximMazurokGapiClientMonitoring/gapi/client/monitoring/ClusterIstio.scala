@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterIstio extends js.Object {
+trait ClusterIstio extends StObject {
   
   /** The name of the Kubernetes cluster in which this Istio service is defined. Corresponds to the cluster_name resource label in k8s_cluster resources. */
   var clusterName: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object ClusterIstio {
   }
   
   @scala.inline
-  implicit class ClusterIstioOps[Self <: ClusterIstio] (val x: Self) extends AnyVal {
+  implicit class ClusterIstioMutableBuilder[Self <: ClusterIstio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setServiceNamespace(value: String): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
-    
-    @scala.inline
-    def setServiceNamespace(value: String): Self = this.set("serviceNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceNamespace: Self = this.set("serviceNamespace", js.undefined)
+    def setServiceNamespaceUndefined: Self = StObject.set(x, "serviceNamespace", js.undefined)
   }
 }

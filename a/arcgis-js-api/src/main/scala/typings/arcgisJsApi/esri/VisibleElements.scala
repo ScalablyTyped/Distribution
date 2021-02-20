@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object VisibleElements {
   }
   
   @scala.inline
-  implicit class VisibleElementsOps[Self <: VisibleElements] (val x: Self) extends AnyVal {
+  implicit class VisibleElementsMutableBuilder[Self <: VisibleElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseLayers(value: Boolean): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferenceLayers(value: Boolean): Self = StObject.set(x, "referenceLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseLayers(value: Boolean): Self = this.set("baseLayers", value.asInstanceOf[js.Any])
+    def setReferenceLayersUndefined: Self = StObject.set(x, "referenceLayers", js.undefined)
     
     @scala.inline
-    def deleteBaseLayers: Self = this.set("baseLayers", js.undefined)
+    def setStatusIndicators(value: Boolean): Self = StObject.set(x, "statusIndicators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceLayers(value: Boolean): Self = this.set("referenceLayers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferenceLayers: Self = this.set("referenceLayers", js.undefined)
-    
-    @scala.inline
-    def setStatusIndicators(value: Boolean): Self = this.set("statusIndicators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusIndicators: Self = this.set("statusIndicators", js.undefined)
+    def setStatusIndicatorsUndefined: Self = StObject.set(x, "statusIndicators", js.undefined)
   }
 }

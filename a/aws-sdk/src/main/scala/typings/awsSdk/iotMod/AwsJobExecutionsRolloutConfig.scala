@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsJobExecutionsRolloutConfig extends js.Object {
+trait AwsJobExecutionsRolloutConfig extends StObject {
   
   /**
     * The rate of increase for a job rollout. This parameter allows you to define an exponential rate increase for a job rollout.
@@ -26,30 +27,18 @@ object AwsJobExecutionsRolloutConfig {
   }
   
   @scala.inline
-  implicit class AwsJobExecutionsRolloutConfigOps[Self <: AwsJobExecutionsRolloutConfig] (val x: Self) extends AnyVal {
+  implicit class AwsJobExecutionsRolloutConfigMutableBuilder[Self <: AwsJobExecutionsRolloutConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExponentialRate(value: AwsJobExponentialRolloutRate): Self = StObject.set(x, "exponentialRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExponentialRateUndefined: Self = StObject.set(x, "exponentialRate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumPerMinute(value: MaximumPerMinute): Self = StObject.set(x, "maximumPerMinute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExponentialRate(value: AwsJobExponentialRolloutRate): Self = this.set("exponentialRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExponentialRate: Self = this.set("exponentialRate", js.undefined)
-    
-    @scala.inline
-    def setMaximumPerMinute(value: MaximumPerMinute): Self = this.set("maximumPerMinute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumPerMinute: Self = this.set("maximumPerMinute", js.undefined)
+    def setMaximumPerMinuteUndefined: Self = StObject.set(x, "maximumPerMinute", js.undefined)
   }
 }

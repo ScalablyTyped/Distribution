@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.sax
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,45 +116,33 @@ object XFastParser {
   }
   
   @scala.inline
-  implicit class XFastParserOps[Self <: XFastParser] (val x: Self) extends AnyVal {
+  implicit class XFastParserMutableBuilder[Self <: XFastParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNamespaceURL(value: String => String): Self = StObject.set(x, "getNamespaceURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParseStream(value: InputSource => Unit): Self = StObject.set(x, "parseStream", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegisterNamespace(value: (String, Double) => Unit): Self = StObject.set(x, "registerNamespace", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetNamespaceURL(value: String => String): Self = this.set("getNamespaceURL", js.Any.fromFunction1(value))
+    def setSetEntityResolver(value: XEntityResolver => Unit): Self = StObject.set(x, "setEntityResolver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseStream(value: InputSource => Unit): Self = this.set("parseStream", js.Any.fromFunction1(value))
+    def setSetErrorHandler(value: XErrorHandler => Unit): Self = StObject.set(x, "setErrorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterNamespace(value: (String, Double) => Unit): Self = this.set("registerNamespace", js.Any.fromFunction2(value))
+    def setSetFastDocumentHandler(value: XFastDocumentHandler => Unit): Self = StObject.set(x, "setFastDocumentHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEntityResolver(value: XEntityResolver => Unit): Self = this.set("setEntityResolver", js.Any.fromFunction1(value))
+    def setSetLocale(value: Locale => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetErrorHandler(value: XErrorHandler => Unit): Self = this.set("setErrorHandler", js.Any.fromFunction1(value))
+    def setSetNamespaceHandler(value: XFastNamespaceHandler => Unit): Self = StObject.set(x, "setNamespaceHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFastDocumentHandler(value: XFastDocumentHandler => Unit): Self = this.set("setFastDocumentHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLocale(value: Locale => Unit): Self = this.set("setLocale", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNamespaceHandler(value: XFastNamespaceHandler => Unit): Self = this.set("setNamespaceHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTokenHandler(value: XFastTokenHandler => Unit): Self = this.set("setTokenHandler", js.Any.fromFunction1(value))
+    def setSetTokenHandler(value: XFastTokenHandler => Unit): Self = StObject.set(x, "setTokenHandler", js.Any.fromFunction1(value))
   }
 }

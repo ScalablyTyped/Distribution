@@ -1,11 +1,12 @@
 package typings.googleFeeds
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaGroup extends js.Object {
+trait MediaGroup extends StObject {
   
   var content: js.Array[MediaContent] = js.native
 }
@@ -18,24 +19,12 @@ object MediaGroup {
   }
   
   @scala.inline
-  implicit class MediaGroupOps[Self <: MediaGroup] (val x: Self) extends AnyVal {
+  implicit class MediaGroupMutableBuilder[Self <: MediaGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: js.Array[MediaContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContentVarargs(value: MediaContent*): Self = this.set("content", js.Array(value :_*))
-    
-    @scala.inline
-    def setContent(value: js.Array[MediaContent]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentVarargs(value: MediaContent*): Self = StObject.set(x, "content", js.Array(value :_*))
   }
 }

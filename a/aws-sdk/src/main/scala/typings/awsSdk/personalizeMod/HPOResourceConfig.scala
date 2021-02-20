@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HPOResourceConfig extends js.Object {
+trait HPOResourceConfig extends StObject {
   
   /**
     * The maximum number of training jobs when you create a solution version. The maximum value for maxNumberOfTrainingJobs is 40.
@@ -26,30 +27,18 @@ object HPOResourceConfig {
   }
   
   @scala.inline
-  implicit class HPOResourceConfigOps[Self <: HPOResourceConfig] (val x: Self) extends AnyVal {
+  implicit class HPOResourceConfigMutableBuilder[Self <: HPOResourceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxNumberOfTrainingJobs(value: HPOResource): Self = StObject.set(x, "maxNumberOfTrainingJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxNumberOfTrainingJobsUndefined: Self = StObject.set(x, "maxNumberOfTrainingJobs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxParallelTrainingJobs(value: HPOResource): Self = StObject.set(x, "maxParallelTrainingJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNumberOfTrainingJobs(value: HPOResource): Self = this.set("maxNumberOfTrainingJobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxNumberOfTrainingJobs: Self = this.set("maxNumberOfTrainingJobs", js.undefined)
-    
-    @scala.inline
-    def setMaxParallelTrainingJobs(value: HPOResource): Self = this.set("maxParallelTrainingJobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxParallelTrainingJobs: Self = this.set("maxParallelTrainingJobs", js.undefined)
+    def setMaxParallelTrainingJobsUndefined: Self = StObject.set(x, "maxParallelTrainingJobs", js.undefined)
   }
 }

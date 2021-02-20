@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMatchmakingRuleSetsOutput extends js.Object {
+trait DescribeMatchmakingRuleSetsOutput extends StObject {
   
   /**
     * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
@@ -26,30 +27,18 @@ object DescribeMatchmakingRuleSetsOutput {
   }
   
   @scala.inline
-  implicit class DescribeMatchmakingRuleSetsOutputOps[Self <: DescribeMatchmakingRuleSetsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeMatchmakingRuleSetsOutputMutableBuilder[Self <: DescribeMatchmakingRuleSetsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleSets(value: MatchmakingRuleSetList): Self = StObject.set(x, "RuleSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleSetsVarargs(value: MatchmakingRuleSet*): Self = this.set("RuleSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setRuleSets(value: MatchmakingRuleSetList): Self = this.set("RuleSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setRuleSetsVarargs(value: MatchmakingRuleSet*): Self = StObject.set(x, "RuleSets", js.Array(value :_*))
   }
 }

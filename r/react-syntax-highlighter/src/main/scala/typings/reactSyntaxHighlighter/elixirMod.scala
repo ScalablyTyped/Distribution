@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/elixir", JSImport.Namespace)
-@js.native
-object elixirMod extends js.Object {
+object elixirMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/elixir", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

@@ -4,12 +4,13 @@ import typings.grommet.baseMod.ExtendProps
 import typings.grommet.baseMod.ExtendType
 import typings.grommet.baseMod.ExtendValue
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Day extends js.Object {
+trait Day extends StObject {
   
   var day: js.UndefOr[`14`] = js.native
   
@@ -34,63 +35,51 @@ object Day {
   }
   
   @scala.inline
-  implicit class DayOps[Self <: Day] (val x: Self) extends AnyVal {
+  implicit class DayMutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDay(value: `14`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: `14`): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDay: Self = this.set("day", js.undefined)
+    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = this.set("extend", js.Any.fromFunction1(value))
+    def setHeading(value: `15`): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = this.set("extend", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteExtend: Self = this.set("extend", js.undefined)
+    def setIcons(value: Previous): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: `15`): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setLarge(value: DaySize): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: Previous): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setMedium(value: DaySize): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLarge(value: DaySize): Self = this.set("large", value.asInstanceOf[js.Any])
+    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
     @scala.inline
-    def deleteLarge: Self = this.set("large", js.undefined)
+    def setSmall(value: DaySize): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: DaySize): Self = this.set("medium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedium: Self = this.set("medium", js.undefined)
-    
-    @scala.inline
-    def setSmall(value: DaySize): Self = this.set("small", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmall: Self = this.set("small", js.undefined)
+    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
   }
 }

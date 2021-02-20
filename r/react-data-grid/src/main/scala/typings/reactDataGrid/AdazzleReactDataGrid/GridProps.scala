@@ -15,12 +15,13 @@ import typings.reactDataGrid.reactDataGridStrings.loopOverRow
 import typings.reactDataGrid.reactDataGridStrings.multi
 import typings.reactDataGrid.reactDataGridStrings.none_
 import typings.reactDataGrid.reactDataGridStrings.single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridProps[T] extends js.Object {
+trait GridProps[T] extends StObject {
   
   /**
     * Controls what happens when the user navigates beyond the first or last cells.
@@ -300,285 +301,273 @@ object GridProps {
   }
   
   @scala.inline
-  implicit class GridPropsOps[Self <: GridProps[_], T] (val x: Self with GridProps[T]) extends AnyVal {
+  implicit class GridPropsMutableBuilder[Self <: GridProps[_], T] (val x: Self with GridProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellNavigationMode(value: none_ | loopOverRow | changeRow): Self = StObject.set(x, "cellNavigationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellNavigationModeUndefined: Self = StObject.set(x, "cellNavigationMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[Column[T]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowGetterVarargs(value: T*): Self = this.set("rowGetter", js.Array(value :_*))
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def setRowGetterFunction1(value: /* rowIdx */ Double => T): Self = this.set("rowGetter", js.Any.fromFunction1(value))
+    def setColumnsVarargs(value: Column[T]*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setRowGetter(value: js.Array[T] | (js.Function1[/* rowIdx */ Double, T])): Self = this.set("rowGetter", value.asInstanceOf[js.Any])
+    def setContextMenu(value: ReactElement): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsCount(value: Double): Self = this.set("rowsCount", value.asInstanceOf[js.Any])
+    def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
     @scala.inline
-    def setCellNavigationMode(value: none_ | loopOverRow | changeRow): Self = this.set("cellNavigationMode", value.asInstanceOf[js.Any])
+    def setEmptyRowsView(value: (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "emptyRowsView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCellNavigationMode: Self = this.set("cellNavigationMode", js.undefined)
+    def setEmptyRowsViewUndefined: Self = StObject.set(x, "emptyRowsView", js.undefined)
     
     @scala.inline
-    def setColumnsVarargs(value: Column[T]*): Self = this.set("columns", js.Array(value :_*))
+    def setEnableCellSelect(value: Boolean): Self = StObject.set(x, "enableCellSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[Column[T]]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setEnableCellSelectUndefined: Self = StObject.set(x, "enableCellSelect", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setEnableDragAndDrop(value: Boolean): Self = StObject.set(x, "enableDragAndDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenu(value: ReactElement): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    def setEnableDragAndDropUndefined: Self = StObject.set(x, "enableDragAndDrop", js.undefined)
     
     @scala.inline
-    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    def setEnableRowSelect(value: Boolean | single | multi): Self = StObject.set(x, "enableRowSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyRowsView(value: (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = this.set("emptyRowsView", value.asInstanceOf[js.Any])
+    def setEnableRowSelectUndefined: Self = StObject.set(x, "enableRowSelect", js.undefined)
     
     @scala.inline
-    def deleteEmptyRowsView: Self = this.set("emptyRowsView", js.undefined)
+    def setGetCellActions(value: (/* column */ Column[T], /* row */ T) => js.Array[ActionButton | ActionMenu]): Self = StObject.set(x, "getCellActions", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEnableCellSelect(value: Boolean): Self = this.set("enableCellSelect", value.asInstanceOf[js.Any])
+    def setGetCellActionsUndefined: Self = StObject.set(x, "getCellActions", js.undefined)
     
     @scala.inline
-    def deleteEnableCellSelect: Self = this.set("enableCellSelect", js.undefined)
+    def setGetSubRowDetails(value: /* row */ T => SubRowDetails[_]): Self = StObject.set(x, "getSubRowDetails", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnableDragAndDrop(value: Boolean): Self = this.set("enableDragAndDrop", value.asInstanceOf[js.Any])
+    def setGetSubRowDetailsUndefined: Self = StObject.set(x, "getSubRowDetails", js.undefined)
     
     @scala.inline
-    def deleteEnableDragAndDrop: Self = this.set("enableDragAndDrop", js.undefined)
+    def setGetValidFilterValues(value: /* columnKey */ String => js.Array[_]): Self = StObject.set(x, "getValidFilterValues", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnableRowSelect(value: Boolean | single | multi): Self = this.set("enableRowSelect", value.asInstanceOf[js.Any])
+    def setGetValidFilterValuesUndefined: Self = StObject.set(x, "getValidFilterValues", js.undefined)
     
     @scala.inline
-    def deleteEnableRowSelect: Self = this.set("enableRowSelect", js.undefined)
+    def setHeaderFiltersHeight(value: Double): Self = StObject.set(x, "headerFiltersHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCellActions(value: (/* column */ Column[T], /* row */ T) => js.Array[ActionButton | ActionMenu]): Self = this.set("getCellActions", js.Any.fromFunction2(value))
+    def setHeaderFiltersHeightUndefined: Self = StObject.set(x, "headerFiltersHeight", js.undefined)
     
     @scala.inline
-    def deleteGetCellActions: Self = this.set("getCellActions", js.undefined)
+    def setHeaderRowHeight(value: Double): Self = StObject.set(x, "headerRowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSubRowDetails(value: /* row */ T => SubRowDetails[_]): Self = this.set("getSubRowDetails", js.Any.fromFunction1(value))
+    def setHeaderRowHeightUndefined: Self = StObject.set(x, "headerRowHeight", js.undefined)
     
     @scala.inline
-    def deleteGetSubRowDetails: Self = this.set("getSubRowDetails", js.undefined)
+    def setMinColumnWidth(value: Double): Self = StObject.set(x, "minColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValidFilterValues(value: /* columnKey */ String => js.Array[_]): Self = this.set("getValidFilterValues", js.Any.fromFunction1(value))
+    def setMinColumnWidthUndefined: Self = StObject.set(x, "minColumnWidth", js.undefined)
     
     @scala.inline
-    def deleteGetValidFilterValues: Self = this.set("getValidFilterValues", js.undefined)
+    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderFiltersHeight(value: Double): Self = this.set("headerFiltersHeight", value.asInstanceOf[js.Any])
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def deleteHeaderFiltersHeight: Self = this.set("headerFiltersHeight", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRowHeight(value: Double): Self = this.set("headerRowHeight", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteHeaderRowHeight: Self = this.set("headerRowHeight", js.undefined)
+    def setOnAddFilter(value: /* filter */ Filter => Unit): Self = StObject.set(x, "onAddFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinColumnWidth(value: Double): Self = this.set("minColumnWidth", value.asInstanceOf[js.Any])
+    def setOnAddFilterUndefined: Self = StObject.set(x, "onAddFilter", js.undefined)
     
     @scala.inline
-    def deleteMinColumnWidth: Self = this.set("minColumnWidth", js.undefined)
+    def setOnCellCopyPaste(value: /* e */ CellCopyPasteEvent => Unit): Self = StObject.set(x, "onCellCopyPaste", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setOnCellCopyPasteUndefined: Self = StObject.set(x, "onCellCopyPaste", js.undefined)
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setOnCellDeSelected(value: /* coordinates */ Idx => Unit): Self = StObject.set(x, "onCellDeSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setOnCellDeSelectedUndefined: Self = StObject.set(x, "onCellDeSelected", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setOnCellExpand(value: /* e */ CellExpandEvent[T] => Unit): Self = StObject.set(x, "onCellExpand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAddFilter(value: /* filter */ Filter => Unit): Self = this.set("onAddFilter", js.Any.fromFunction1(value))
+    def setOnCellExpandUndefined: Self = StObject.set(x, "onCellExpand", js.undefined)
     
     @scala.inline
-    def deleteOnAddFilter: Self = this.set("onAddFilter", js.undefined)
+    def setOnCellSelected(value: /* coordinates */ Idx => Unit): Self = StObject.set(x, "onCellSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCellCopyPaste(value: /* e */ CellCopyPasteEvent => Unit): Self = this.set("onCellCopyPaste", js.Any.fromFunction1(value))
+    def setOnCellSelectedUndefined: Self = StObject.set(x, "onCellSelected", js.undefined)
     
     @scala.inline
-    def deleteOnCellCopyPaste: Self = this.set("onCellCopyPaste", js.undefined)
+    def setOnCellsDragged(value: /* e */ CellDragEvent => Unit): Self = StObject.set(x, "onCellsDragged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCellDeSelected(value: /* coordinates */ Idx => Unit): Self = this.set("onCellDeSelected", js.Any.fromFunction1(value))
+    def setOnCellsDraggedUndefined: Self = StObject.set(x, "onCellsDragged", js.undefined)
     
     @scala.inline
-    def deleteOnCellDeSelected: Self = this.set("onCellDeSelected", js.undefined)
+    def setOnClearFilters(value: () => Unit): Self = StObject.set(x, "onClearFilters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnCellExpand(value: /* e */ CellExpandEvent[T] => Unit): Self = this.set("onCellExpand", js.Any.fromFunction1(value))
+    def setOnClearFiltersUndefined: Self = StObject.set(x, "onClearFilters", js.undefined)
     
     @scala.inline
-    def deleteOnCellExpand: Self = this.set("onCellExpand", js.undefined)
+    def setOnColumnResize(value: (/* index */ Double, /* width */ Double) => Unit): Self = StObject.set(x, "onColumnResize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnCellSelected(value: /* coordinates */ Idx => Unit): Self = this.set("onCellSelected", js.Any.fromFunction1(value))
+    def setOnColumnResizeUndefined: Self = StObject.set(x, "onColumnResize", js.undefined)
     
     @scala.inline
-    def deleteOnCellSelected: Self = this.set("onCellSelected", js.undefined)
+    def setOnDragHandleDoubleClick(value: /* e */ DragHandleDoubleClickEvent[T] => Unit): Self = StObject.set(x, "onDragHandleDoubleClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCellsDragged(value: /* e */ CellDragEvent => Unit): Self = this.set("onCellsDragged", js.Any.fromFunction1(value))
+    def setOnDragHandleDoubleClickUndefined: Self = StObject.set(x, "onDragHandleDoubleClick", js.undefined)
     
     @scala.inline
-    def deleteOnCellsDragged: Self = this.set("onCellsDragged", js.undefined)
+    def setOnGridRowsUpdated(value: /* e */ GridRowsUpdatedEvent[T] => Unit): Self = StObject.set(x, "onGridRowsUpdated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClearFilters(value: () => Unit): Self = this.set("onClearFilters", js.Any.fromFunction0(value))
+    def setOnGridRowsUpdatedUndefined: Self = StObject.set(x, "onGridRowsUpdated", js.undefined)
     
     @scala.inline
-    def deleteOnClearFilters: Self = this.set("onClearFilters", js.undefined)
+    def setOnGridSort(value: (/* sortColumn */ String, /* sortDirection */ ASC | DESC | NONE) => Unit): Self = StObject.set(x, "onGridSort", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnColumnResize(value: (/* index */ Double, /* width */ Double) => Unit): Self = this.set("onColumnResize", js.Any.fromFunction2(value))
+    def setOnGridSortUndefined: Self = StObject.set(x, "onGridSort", js.undefined)
     
     @scala.inline
-    def deleteOnColumnResize: Self = this.set("onColumnResize", js.undefined)
+    def setOnRowClick(value: (/* rowIdx */ Double, /* row */ T) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnDragHandleDoubleClick(value: /* e */ DragHandleDoubleClickEvent[T] => Unit): Self = this.set("onDragHandleDoubleClick", js.Any.fromFunction1(value))
+    def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
     @scala.inline
-    def deleteOnDragHandleDoubleClick: Self = this.set("onDragHandleDoubleClick", js.undefined)
+    def setOnRowExpandToggle(value: /* props */ OnRowExpandToggle => Unit): Self = StObject.set(x, "onRowExpandToggle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGridRowsUpdated(value: /* e */ GridRowsUpdatedEvent[T] => Unit): Self = this.set("onGridRowsUpdated", js.Any.fromFunction1(value))
+    def setOnRowExpandToggleUndefined: Self = StObject.set(x, "onRowExpandToggle", js.undefined)
     
     @scala.inline
-    def deleteOnGridRowsUpdated: Self = this.set("onGridRowsUpdated", js.undefined)
+    def setOnRowSelect(value: /* rows */ js.Array[T] => Unit): Self = StObject.set(x, "onRowSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGridSort(value: (/* sortColumn */ String, /* sortDirection */ ASC | DESC | NONE) => Unit): Self = this.set("onGridSort", js.Any.fromFunction2(value))
+    def setOnRowSelectUndefined: Self = StObject.set(x, "onRowSelect", js.undefined)
     
     @scala.inline
-    def deleteOnGridSort: Self = this.set("onGridSort", js.undefined)
+    def setOnRowUpdated(value: /* e */ RowUpdateEvent[T] => Unit): Self = StObject.set(x, "onRowUpdated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRowClick(value: (/* rowIdx */ Double, /* row */ T) => Unit): Self = this.set("onRowClick", js.Any.fromFunction2(value))
+    def setOnRowUpdatedUndefined: Self = StObject.set(x, "onRowUpdated", js.undefined)
     
     @scala.inline
-    def deleteOnRowClick: Self = this.set("onRowClick", js.undefined)
+    def setOnScroll(value: /* scrollState */ ScrollState => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRowExpandToggle(value: /* props */ OnRowExpandToggle => Unit): Self = this.set("onRowExpandToggle", js.Any.fromFunction1(value))
+    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def deleteOnRowExpandToggle: Self = this.set("onRowExpandToggle", js.undefined)
+    def setRowActionsCell(value: (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "rowActionsCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRowSelect(value: /* rows */ js.Array[T] => Unit): Self = this.set("onRowSelect", js.Any.fromFunction1(value))
+    def setRowActionsCellUndefined: Self = StObject.set(x, "rowActionsCell", js.undefined)
     
     @scala.inline
-    def deleteOnRowSelect: Self = this.set("onRowSelect", js.undefined)
+    def setRowGetter(value: js.Array[T] | (js.Function1[/* rowIdx */ Double, T])): Self = StObject.set(x, "rowGetter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRowUpdated(value: /* e */ RowUpdateEvent[T] => Unit): Self = this.set("onRowUpdated", js.Any.fromFunction1(value))
+    def setRowGetterFunction1(value: /* rowIdx */ Double => T): Self = StObject.set(x, "rowGetter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnRowUpdated: Self = this.set("onRowUpdated", js.undefined)
+    def setRowGetterVarargs(value: T*): Self = StObject.set(x, "rowGetter", js.Array(value :_*))
     
     @scala.inline
-    def setOnScroll(value: /* scrollState */ ScrollState => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    def setRowGroupRenderer(value: ComponentType[js.Object]): Self = StObject.set(x, "rowGroupRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    def setRowGroupRendererUndefined: Self = StObject.set(x, "rowGroupRenderer", js.undefined)
     
     @scala.inline
-    def setRowActionsCell(value: (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = this.set("rowActionsCell", value.asInstanceOf[js.Any])
+    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowActionsCell: Self = this.set("rowActionsCell", js.undefined)
+    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
     @scala.inline
-    def setRowGroupRenderer(value: ComponentType[js.Object]): Self = this.set("rowGroupRenderer", value.asInstanceOf[js.Any])
+    def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowGroupRenderer: Self = this.set("rowGroupRenderer", js.undefined)
+    def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
     
     @scala.inline
-    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    def setRowRenderer(value: ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "rowRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    def setRowRendererUndefined: Self = StObject.set(x, "rowRenderer", js.undefined)
     
     @scala.inline
-    def setRowKey(value: String): Self = this.set("rowKey", value.asInstanceOf[js.Any])
+    def setRowScrollTimeout(value: Double): Self = StObject.set(x, "rowScrollTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowKey: Self = this.set("rowKey", js.undefined)
+    def setRowScrollTimeoutUndefined: Self = StObject.set(x, "rowScrollTimeout", js.undefined)
     
     @scala.inline
-    def setRowRenderer(value: ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = this.set("rowRenderer", value.asInstanceOf[js.Any])
+    def setRowSelection(value: EnableShiftSelect[T]): Self = StObject.set(x, "rowSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowRenderer: Self = this.set("rowRenderer", js.undefined)
+    def setRowSelectionUndefined: Self = StObject.set(x, "rowSelection", js.undefined)
     
     @scala.inline
-    def setRowScrollTimeout(value: Double): Self = this.set("rowScrollTimeout", value.asInstanceOf[js.Any])
+    def setRowsCount(value: Double): Self = StObject.set(x, "rowsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowScrollTimeout: Self = this.set("rowScrollTimeout", js.undefined)
+    def setSelectAllRenderer(value: (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "selectAllRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSelection(value: EnableShiftSelect[T]): Self = this.set("rowSelection", value.asInstanceOf[js.Any])
+    def setSelectAllRendererUndefined: Self = StObject.set(x, "selectAllRenderer", js.undefined)
     
     @scala.inline
-    def deleteRowSelection: Self = this.set("rowSelection", js.undefined)
+    def setSortColumn(value: String): Self = StObject.set(x, "sortColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAllRenderer(value: (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = this.set("selectAllRenderer", value.asInstanceOf[js.Any])
+    def setSortColumnUndefined: Self = StObject.set(x, "sortColumn", js.undefined)
     
     @scala.inline
-    def deleteSelectAllRenderer: Self = this.set("selectAllRenderer", js.undefined)
+    def setSortDirection(value: ASC | DESC | NONE): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortColumn(value: String): Self = this.set("sortColumn", value.asInstanceOf[js.Any])
+    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
     
     @scala.inline
-    def deleteSortColumn: Self = this.set("sortColumn", js.undefined)
+    def setToolbar(value: ReactElement): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortDirection(value: ASC | DESC | NONE): Self = this.set("sortDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortDirection: Self = this.set("sortDirection", js.undefined)
-    
-    @scala.inline
-    def setToolbar(value: ReactElement): Self = this.set("toolbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
   }
 }

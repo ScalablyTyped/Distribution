@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation extends js.Object {
+trait GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation extends StObject {
   
   /** The tracks detected from the input video, including recognized celebrities and other detected faces in the video. */
   var celebrityTracks: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p3beta1CelebrityTrack]] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotationOps[Self <: GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCelebrityTracks(value: js.Array[GoogleCloudVideointelligenceV1p3beta1CelebrityTrack]): Self = StObject.set(x, "celebrityTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCelebrityTracksUndefined: Self = StObject.set(x, "celebrityTracks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCelebrityTracksVarargs(value: GoogleCloudVideointelligenceV1p3beta1CelebrityTrack*): Self = StObject.set(x, "celebrityTracks", js.Array(value :_*))
     
     @scala.inline
-    def setCelebrityTracksVarargs(value: GoogleCloudVideointelligenceV1p3beta1CelebrityTrack*): Self = this.set("celebrityTracks", js.Array(value :_*))
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCelebrityTracks(value: js.Array[GoogleCloudVideointelligenceV1p3beta1CelebrityTrack]): Self = this.set("celebrityTracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCelebrityTracks: Self = this.set("celebrityTracks", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

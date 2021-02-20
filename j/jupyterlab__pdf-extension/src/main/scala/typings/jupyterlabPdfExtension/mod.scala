@@ -1,20 +1,21 @@
 package typings.jupyterlabPdfExtension
 
+import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtension
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/pdf-extension", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("@jupyterlab/pdf-extension", JSImport.Default)
+  @js.native
   val default: IExtension | js.Array[IExtension] = js.native
   
-  val rendererFactory: IRendererFactory = js.native
-  
+  @JSImport("@jupyterlab/pdf-extension", "RenderedPDF")
   @js.native
   class RenderedPDF () extends IRenderer {
     
@@ -31,4 +32,13 @@ object mod extends js.Object {
       */
     /* protected */ def onBeforeHide(): Unit = js.native
   }
+  
+  @JSImport("@jupyterlab/pdf-extension", "rendererFactory")
+  @js.native
+  val rendererFactory: IRendererFactory = js.native
+  
+  type _To = IExtension | js.Array[IExtension]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: IExtension | js.Array[IExtension] = default
 }

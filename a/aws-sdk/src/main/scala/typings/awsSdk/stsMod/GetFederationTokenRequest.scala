@@ -1,11 +1,12 @@
 package typings.awsSdk.stsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetFederationTokenRequest extends js.Object {
+trait GetFederationTokenRequest extends StObject {
   
   /**
     * The duration, in seconds, that the session should last. Acceptable durations for federation sessions range from 900 seconds (15 minutes) to 129,600 seconds (36 hours), with 43,200 seconds (12 hours) as the default. Sessions obtained using AWS account root user credentials are restricted to a maximum of 3,600 seconds (one hour). If the specified duration is longer than one hour, the session obtained by using root user credentials defaults to one hour.
@@ -41,51 +42,39 @@ object GetFederationTokenRequest {
   }
   
   @scala.inline
-  implicit class GetFederationTokenRequestOps[Self <: GetFederationTokenRequest] (val x: Self) extends AnyVal {
+  implicit class GetFederationTokenRequestMutableBuilder[Self <: GetFederationTokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationSeconds(value: durationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: userNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: userNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPolicy(value: sessionPolicyDocumentType): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationSeconds(value: durationSecondsType): Self = this.set("DurationSeconds", value.asInstanceOf[js.Any])
+    def setPolicyArns(value: policyDescriptorListType): Self = StObject.set(x, "PolicyArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDurationSeconds: Self = this.set("DurationSeconds", js.undefined)
+    def setPolicyArnsUndefined: Self = StObject.set(x, "PolicyArns", js.undefined)
     
     @scala.inline
-    def setPolicy(value: sessionPolicyDocumentType): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = StObject.set(x, "PolicyArns", js.Array(value :_*))
     
     @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
     @scala.inline
-    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = this.set("PolicyArns", js.Array(value :_*))
+    def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArns(value: policyDescriptorListType): Self = this.set("PolicyArns", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deletePolicyArns: Self = this.set("PolicyArns", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: tagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

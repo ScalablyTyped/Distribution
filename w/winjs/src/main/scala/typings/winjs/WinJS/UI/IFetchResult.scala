@@ -1,5 +1,6 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains items that were requested from an IListDataAdapter and provides some information about those items.
   **/
 @js.native
-trait IFetchResult[T] extends js.Object {
+trait IFetchResult[T] extends StObject {
   
   //#region Properties
   /**
@@ -57,39 +58,27 @@ object IFetchResult {
   }
   
   @scala.inline
-  implicit class IFetchResultOps[Self <: IFetchResult[_], T] (val x: Self with IFetchResult[T]) extends AnyVal {
+  implicit class IFetchResultMutableBuilder[Self <: IFetchResult[_], T] (val x: Self with IFetchResult[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsoluteIndex(value: Double): Self = StObject.set(x, "absoluteIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtEnd(value: Boolean): Self = StObject.set(x, "atEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAtStart(value: Boolean): Self = StObject.set(x, "atStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsoluteIndex(value: Double): Self = this.set("absoluteIndex", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtEnd(value: Boolean): Self = this.set("atEnd", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setAtStart(value: Boolean): Self = this.set("atStart", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: T*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[T]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalCount(value: Double): Self = this.set("totalCount", value.asInstanceOf[js.Any])
+    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
   }
 }

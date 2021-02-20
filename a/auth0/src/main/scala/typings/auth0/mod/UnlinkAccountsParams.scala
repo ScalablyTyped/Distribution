@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnlinkAccountsParams extends js.Object {
+trait UnlinkAccountsParams extends StObject {
   
   var id: String = js.native
   
@@ -22,27 +23,15 @@ object UnlinkAccountsParams {
   }
   
   @scala.inline
-  implicit class UnlinkAccountsParamsOps[Self <: UnlinkAccountsParams] (val x: Self) extends AnyVal {
+  implicit class UnlinkAccountsParamsMutableBuilder[Self <: UnlinkAccountsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvider(value: UnlinkAccountsParamsProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvider(value: UnlinkAccountsParamsProvider): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

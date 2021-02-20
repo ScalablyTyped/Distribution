@@ -61,12 +61,13 @@ import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.TableSchema
 import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.TimePartitioning
 import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.UserDefinedFunctionResource
 import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.ViewDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bigquery extends js.Object {
+trait Bigquery extends StObject {
   
   var Datasets: js.UndefOr[DatasetsCollection] = js.native
   
@@ -312,216 +313,204 @@ object Bigquery {
   }
   
   @scala.inline
-  implicit class BigqueryOps[Self <: Bigquery] (val x: Self) extends AnyVal {
+  implicit class BigqueryMutableBuilder[Self <: Bigquery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasets(value: DatasetsCollection): Self = StObject.set(x, "Datasets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetsUndefined: Self = StObject.set(x, "Datasets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobs(value: JobsCollection): Self = StObject.set(x, "Jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewBigQueryModelTraining(value: () => BigQueryModelTraining): Self = this.set("newBigQueryModelTraining", js.Any.fromFunction0(value))
+    def setJobsUndefined: Self = StObject.set(x, "Jobs", js.undefined)
     
     @scala.inline
-    def setNewBigtableColumn(value: () => BigtableColumn): Self = this.set("newBigtableColumn", js.Any.fromFunction0(value))
+    def setNewBigQueryModelTraining(value: () => BigQueryModelTraining): Self = StObject.set(x, "newBigQueryModelTraining", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewBigtableColumnFamily(value: () => BigtableColumnFamily): Self = this.set("newBigtableColumnFamily", js.Any.fromFunction0(value))
+    def setNewBigtableColumn(value: () => BigtableColumn): Self = StObject.set(x, "newBigtableColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewBigtableOptions(value: () => BigtableOptions): Self = this.set("newBigtableOptions", js.Any.fromFunction0(value))
+    def setNewBigtableColumnFamily(value: () => BigtableColumnFamily): Self = StObject.set(x, "newBigtableColumnFamily", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewBqmlIterationResult(value: () => BqmlIterationResult): Self = this.set("newBqmlIterationResult", js.Any.fromFunction0(value))
+    def setNewBigtableOptions(value: () => BigtableOptions): Self = StObject.set(x, "newBigtableOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewBqmlTrainingRun(value: () => BqmlTrainingRun): Self = this.set("newBqmlTrainingRun", js.Any.fromFunction0(value))
+    def setNewBqmlIterationResult(value: () => BqmlIterationResult): Self = StObject.set(x, "newBqmlIterationResult", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewBqmlTrainingRunTrainingOptions(value: () => BqmlTrainingRunTrainingOptions): Self = this.set("newBqmlTrainingRunTrainingOptions", js.Any.fromFunction0(value))
+    def setNewBqmlTrainingRun(value: () => BqmlTrainingRun): Self = StObject.set(x, "newBqmlTrainingRun", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewClustering(value: () => Clustering): Self = this.set("newClustering", js.Any.fromFunction0(value))
+    def setNewBqmlTrainingRunTrainingOptions(value: () => BqmlTrainingRunTrainingOptions): Self = StObject.set(x, "newBqmlTrainingRunTrainingOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewCsvOptions(value: () => CsvOptions): Self = this.set("newCsvOptions", js.Any.fromFunction0(value))
+    def setNewClustering(value: () => Clustering): Self = StObject.set(x, "newClustering", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewDataset(value: () => Dataset): Self = this.set("newDataset", js.Any.fromFunction0(value))
+    def setNewCsvOptions(value: () => CsvOptions): Self = StObject.set(x, "newCsvOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewDatasetAccess(value: () => DatasetAccess): Self = this.set("newDatasetAccess", js.Any.fromFunction0(value))
+    def setNewDataset(value: () => Dataset): Self = StObject.set(x, "newDataset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewDatasetReference(value: () => DatasetReference): Self = this.set("newDatasetReference", js.Any.fromFunction0(value))
+    def setNewDatasetAccess(value: () => DatasetAccess): Self = StObject.set(x, "newDatasetAccess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewDestinationTableProperties(value: () => DestinationTableProperties): Self = this.set("newDestinationTableProperties", js.Any.fromFunction0(value))
+    def setNewDatasetReference(value: () => DatasetReference): Self = StObject.set(x, "newDatasetReference", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewEncryptionConfiguration(value: () => EncryptionConfiguration): Self = this.set("newEncryptionConfiguration", js.Any.fromFunction0(value))
+    def setNewDestinationTableProperties(value: () => DestinationTableProperties): Self = StObject.set(x, "newDestinationTableProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewErrorProto(value: () => ErrorProto): Self = this.set("newErrorProto", js.Any.fromFunction0(value))
+    def setNewEncryptionConfiguration(value: () => EncryptionConfiguration): Self = StObject.set(x, "newEncryptionConfiguration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewExplainQueryStage(value: () => ExplainQueryStage): Self = this.set("newExplainQueryStage", js.Any.fromFunction0(value))
+    def setNewErrorProto(value: () => ErrorProto): Self = StObject.set(x, "newErrorProto", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewExplainQueryStep(value: () => ExplainQueryStep): Self = this.set("newExplainQueryStep", js.Any.fromFunction0(value))
+    def setNewExplainQueryStage(value: () => ExplainQueryStage): Self = StObject.set(x, "newExplainQueryStage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewExternalDataConfiguration(value: () => ExternalDataConfiguration): Self = this.set("newExternalDataConfiguration", js.Any.fromFunction0(value))
+    def setNewExplainQueryStep(value: () => ExplainQueryStep): Self = StObject.set(x, "newExplainQueryStep", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewGoogleSheetsOptions(value: () => GoogleSheetsOptions): Self = this.set("newGoogleSheetsOptions", js.Any.fromFunction0(value))
+    def setNewExternalDataConfiguration(value: () => ExternalDataConfiguration): Self = StObject.set(x, "newExternalDataConfiguration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJob(value: () => Job): Self = this.set("newJob", js.Any.fromFunction0(value))
+    def setNewGoogleSheetsOptions(value: () => GoogleSheetsOptions): Self = StObject.set(x, "newGoogleSheetsOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobConfiguration(value: () => JobConfiguration): Self = this.set("newJobConfiguration", js.Any.fromFunction0(value))
+    def setNewJob(value: () => Job): Self = StObject.set(x, "newJob", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobConfigurationExtract(value: () => JobConfigurationExtract): Self = this.set("newJobConfigurationExtract", js.Any.fromFunction0(value))
+    def setNewJobConfiguration(value: () => JobConfiguration): Self = StObject.set(x, "newJobConfiguration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobConfigurationLoad(value: () => JobConfigurationLoad): Self = this.set("newJobConfigurationLoad", js.Any.fromFunction0(value))
+    def setNewJobConfigurationExtract(value: () => JobConfigurationExtract): Self = StObject.set(x, "newJobConfigurationExtract", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobConfigurationQuery(value: () => JobConfigurationQuery): Self = this.set("newJobConfigurationQuery", js.Any.fromFunction0(value))
+    def setNewJobConfigurationLoad(value: () => JobConfigurationLoad): Self = StObject.set(x, "newJobConfigurationLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobConfigurationTableCopy(value: () => JobConfigurationTableCopy): Self = this.set("newJobConfigurationTableCopy", js.Any.fromFunction0(value))
+    def setNewJobConfigurationQuery(value: () => JobConfigurationQuery): Self = StObject.set(x, "newJobConfigurationQuery", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobReference(value: () => JobReference): Self = this.set("newJobReference", js.Any.fromFunction0(value))
+    def setNewJobConfigurationTableCopy(value: () => JobConfigurationTableCopy): Self = StObject.set(x, "newJobConfigurationTableCopy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobStatistics(value: () => JobStatistics): Self = this.set("newJobStatistics", js.Any.fromFunction0(value))
+    def setNewJobReference(value: () => JobReference): Self = StObject.set(x, "newJobReference", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobStatistics2(value: () => JobStatistics2): Self = this.set("newJobStatistics2", js.Any.fromFunction0(value))
+    def setNewJobStatistics(value: () => JobStatistics): Self = StObject.set(x, "newJobStatistics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobStatistics2ReservationUsage(value: () => JobStatistics2ReservationUsage): Self = this.set("newJobStatistics2ReservationUsage", js.Any.fromFunction0(value))
+    def setNewJobStatistics2(value: () => JobStatistics2): Self = StObject.set(x, "newJobStatistics2", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobStatistics3(value: () => JobStatistics3): Self = this.set("newJobStatistics3", js.Any.fromFunction0(value))
+    def setNewJobStatistics2ReservationUsage(value: () => JobStatistics2ReservationUsage): Self = StObject.set(x, "newJobStatistics2ReservationUsage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobStatistics4(value: () => JobStatistics4): Self = this.set("newJobStatistics4", js.Any.fromFunction0(value))
+    def setNewJobStatistics3(value: () => JobStatistics3): Self = StObject.set(x, "newJobStatistics3", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobStatisticsReservationUsage(value: () => JobStatisticsReservationUsage): Self = this.set("newJobStatisticsReservationUsage", js.Any.fromFunction0(value))
+    def setNewJobStatistics4(value: () => JobStatistics4): Self = StObject.set(x, "newJobStatistics4", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewJobStatus(value: () => JobStatus): Self = this.set("newJobStatus", js.Any.fromFunction0(value))
+    def setNewJobStatisticsReservationUsage(value: () => JobStatisticsReservationUsage): Self = StObject.set(x, "newJobStatisticsReservationUsage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewMaterializedViewDefinition(value: () => MaterializedViewDefinition): Self = this.set("newMaterializedViewDefinition", js.Any.fromFunction0(value))
+    def setNewJobStatus(value: () => JobStatus): Self = StObject.set(x, "newJobStatus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewModelDefinition(value: () => ModelDefinition): Self = this.set("newModelDefinition", js.Any.fromFunction0(value))
+    def setNewMaterializedViewDefinition(value: () => MaterializedViewDefinition): Self = StObject.set(x, "newMaterializedViewDefinition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewModelDefinitionModelOptions(value: () => ModelDefinitionModelOptions): Self = this.set("newModelDefinitionModelOptions", js.Any.fromFunction0(value))
+    def setNewModelDefinition(value: () => ModelDefinition): Self = StObject.set(x, "newModelDefinition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewQueryParameter(value: () => QueryParameter): Self = this.set("newQueryParameter", js.Any.fromFunction0(value))
+    def setNewModelDefinitionModelOptions(value: () => ModelDefinitionModelOptions): Self = StObject.set(x, "newModelDefinitionModelOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewQueryParameterType(value: () => QueryParameterType): Self = this.set("newQueryParameterType", js.Any.fromFunction0(value))
+    def setNewQueryParameter(value: () => QueryParameter): Self = StObject.set(x, "newQueryParameter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewQueryParameterTypeStructTypes(value: () => QueryParameterTypeStructTypes): Self = this.set("newQueryParameterTypeStructTypes", js.Any.fromFunction0(value))
+    def setNewQueryParameterType(value: () => QueryParameterType): Self = StObject.set(x, "newQueryParameterType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewQueryParameterValue(value: () => QueryParameterValue): Self = this.set("newQueryParameterValue", js.Any.fromFunction0(value))
+    def setNewQueryParameterTypeStructTypes(value: () => QueryParameterTypeStructTypes): Self = StObject.set(x, "newQueryParameterTypeStructTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewQueryRequest(value: () => QueryRequest): Self = this.set("newQueryRequest", js.Any.fromFunction0(value))
+    def setNewQueryParameterValue(value: () => QueryParameterValue): Self = StObject.set(x, "newQueryParameterValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewQueryTimelineSample(value: () => QueryTimelineSample): Self = this.set("newQueryTimelineSample", js.Any.fromFunction0(value))
+    def setNewQueryRequest(value: () => QueryRequest): Self = StObject.set(x, "newQueryRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewRangePartitioning(value: () => RangePartitioning): Self = this.set("newRangePartitioning", js.Any.fromFunction0(value))
+    def setNewQueryTimelineSample(value: () => QueryTimelineSample): Self = StObject.set(x, "newQueryTimelineSample", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewRangePartitioningRange(value: () => RangePartitioningRange): Self = this.set("newRangePartitioningRange", js.Any.fromFunction0(value))
+    def setNewRangePartitioning(value: () => RangePartitioning): Self = StObject.set(x, "newRangePartitioning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewRoutineReference(value: () => RoutineReference): Self = this.set("newRoutineReference", js.Any.fromFunction0(value))
+    def setNewRangePartitioningRange(value: () => RangePartitioningRange): Self = StObject.set(x, "newRangePartitioningRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewStreamingbuffer(value: () => Streamingbuffer): Self = this.set("newStreamingbuffer", js.Any.fromFunction0(value))
+    def setNewRoutineReference(value: () => RoutineReference): Self = StObject.set(x, "newRoutineReference", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewTable(value: () => Table): Self = this.set("newTable", js.Any.fromFunction0(value))
+    def setNewStreamingbuffer(value: () => Streamingbuffer): Self = StObject.set(x, "newStreamingbuffer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewTableDataInsertAllRequest(value: () => TableDataInsertAllRequest): Self = this.set("newTableDataInsertAllRequest", js.Any.fromFunction0(value))
+    def setNewTable(value: () => Table): Self = StObject.set(x, "newTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewTableDataInsertAllRequestRows(value: () => TableDataInsertAllRequestRows): Self = this.set("newTableDataInsertAllRequestRows", js.Any.fromFunction0(value))
+    def setNewTableDataInsertAllRequest(value: () => TableDataInsertAllRequest): Self = StObject.set(x, "newTableDataInsertAllRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewTableFieldSchema(value: () => TableFieldSchema): Self = this.set("newTableFieldSchema", js.Any.fromFunction0(value))
+    def setNewTableDataInsertAllRequestRows(value: () => TableDataInsertAllRequestRows): Self = StObject.set(x, "newTableDataInsertAllRequestRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewTableFieldSchemaCategories(value: () => TableFieldSchemaCategories): Self = this.set("newTableFieldSchemaCategories", js.Any.fromFunction0(value))
+    def setNewTableFieldSchema(value: () => TableFieldSchema): Self = StObject.set(x, "newTableFieldSchema", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewTableReference(value: () => TableReference): Self = this.set("newTableReference", js.Any.fromFunction0(value))
+    def setNewTableFieldSchemaCategories(value: () => TableFieldSchemaCategories): Self = StObject.set(x, "newTableFieldSchemaCategories", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewTableSchema(value: () => TableSchema): Self = this.set("newTableSchema", js.Any.fromFunction0(value))
+    def setNewTableReference(value: () => TableReference): Self = StObject.set(x, "newTableReference", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewTimePartitioning(value: () => TimePartitioning): Self = this.set("newTimePartitioning", js.Any.fromFunction0(value))
+    def setNewTableSchema(value: () => TableSchema): Self = StObject.set(x, "newTableSchema", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewUserDefinedFunctionResource(value: () => UserDefinedFunctionResource): Self = this.set("newUserDefinedFunctionResource", js.Any.fromFunction0(value))
+    def setNewTimePartitioning(value: () => TimePartitioning): Self = StObject.set(x, "newTimePartitioning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewViewDefinition(value: () => ViewDefinition): Self = this.set("newViewDefinition", js.Any.fromFunction0(value))
+    def setNewUserDefinedFunctionResource(value: () => UserDefinedFunctionResource): Self = StObject.set(x, "newUserDefinedFunctionResource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDatasets(value: DatasetsCollection): Self = this.set("Datasets", value.asInstanceOf[js.Any])
+    def setNewViewDefinition(value: () => ViewDefinition): Self = StObject.set(x, "newViewDefinition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDatasets: Self = this.set("Datasets", js.undefined)
+    def setProjects(value: ProjectsCollection): Self = StObject.set(x, "Projects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobs(value: JobsCollection): Self = this.set("Jobs", value.asInstanceOf[js.Any])
+    def setProjectsUndefined: Self = StObject.set(x, "Projects", js.undefined)
     
     @scala.inline
-    def deleteJobs: Self = this.set("Jobs", js.undefined)
+    def setTabledata(value: TabledataCollection): Self = StObject.set(x, "Tabledata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjects(value: ProjectsCollection): Self = this.set("Projects", value.asInstanceOf[js.Any])
+    def setTabledataUndefined: Self = StObject.set(x, "Tabledata", js.undefined)
     
     @scala.inline
-    def deleteProjects: Self = this.set("Projects", js.undefined)
+    def setTables(value: TablesCollection): Self = StObject.set(x, "Tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabledata(value: TabledataCollection): Self = this.set("Tabledata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabledata: Self = this.set("Tabledata", js.undefined)
-    
-    @scala.inline
-    def setTables(value: TablesCollection): Self = this.set("Tables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTables: Self = this.set("Tables", js.undefined)
+    def setTablesUndefined: Self = StObject.set(x, "Tables", js.undefined)
   }
 }

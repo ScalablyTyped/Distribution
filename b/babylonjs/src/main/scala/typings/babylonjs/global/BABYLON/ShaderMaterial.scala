@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.PartialIShaderMaterialOpt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +34,11 @@ class ShaderMaterial protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.ShaderMaterial")
-@js.native
-object ShaderMaterial extends js.Object {
+object ShaderMaterial {
+  
+  @JSGlobal("BABYLON.ShaderMaterial")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a ShaderMaterial from a snippet saved by the Inspector
@@ -44,7 +47,11 @@ object ShaderMaterial extends js.Object {
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a promise that will resolve to the new ShaderMaterial
     */
+  @JSGlobal("BABYLON.ShaderMaterial.CreateFromSnippetAsync")
+  @js.native
   def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.BABYLON.Scene): js.Promise[typings.babylonjs.BABYLON.ShaderMaterial] = js.native
+  @JSGlobal("BABYLON.ShaderMaterial.CreateFromSnippetAsync")
+  @js.native
   def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): js.Promise[typings.babylonjs.BABYLON.ShaderMaterial] = js.native
   
   /**
@@ -54,6 +61,8 @@ object ShaderMaterial extends js.Object {
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a new material
     */
+  @JSGlobal("BABYLON.ShaderMaterial.Parse")
+  @js.native
   def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.ShaderMaterial = js.native
   
   /**
@@ -64,9 +73,17 @@ object ShaderMaterial extends js.Object {
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a promise that will resolve to the new ShaderMaterial
     */
+  @JSGlobal("BABYLON.ShaderMaterial.ParseFromFileAsync")
+  @js.native
   def ParseFromFileAsync(name: Nullable[String], url: String, scene: typings.babylonjs.BABYLON.Scene): js.Promise[typings.babylonjs.BABYLON.ShaderMaterial] = js.native
+  @JSGlobal("BABYLON.ShaderMaterial.ParseFromFileAsync")
+  @js.native
   def ParseFromFileAsync(name: Nullable[String], url: String, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): js.Promise[typings.babylonjs.BABYLON.ShaderMaterial] = js.native
   
   /** Define the Url to load snippets */
-  var SnippetUrl: String = js.native
+  @JSGlobal("BABYLON.ShaderMaterial.SnippetUrl")
+  @js.native
+  def SnippetUrl: String = js.native
+  @scala.inline
+  def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
 }

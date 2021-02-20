@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyBinding extends js.Object {
+trait KeyBinding extends StObject {
   
   var command: String = js.native
   
@@ -56,51 +57,39 @@ object KeyBinding {
   }
   
   @scala.inline
-  implicit class KeyBindingOps[Self <: KeyBinding] (val x: Self) extends AnyVal {
+  implicit class KeyBindingMutableBuilder[Self <: KeyBinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompare(value: KeyBinding => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setKeystrokeArray(value: js.Array[String]): Self = StObject.set(x, "keystrokeArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompare(value: KeyBinding => Double): Self = this.set("compare", js.Any.fromFunction1(value))
+    def setKeystrokeArrayVarargs(value: String*): Self = StObject.set(x, "keystrokeArray", js.Array(value :_*))
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setKeystrokeCount(value: Double): Self = StObject.set(x, "keystrokeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeystrokeArrayVarargs(value: String*): Self = this.set("keystrokeArray", js.Array(value :_*))
+    def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeystrokeArray(value: js.Array[String]): Self = this.set("keystrokeArray", value.asInstanceOf[js.Any])
+    def setMatches(value: String => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeystrokeCount(value: Double): Self = this.set("keystrokeCount", value.asInstanceOf[js.Any])
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeystrokes(value: String): Self = this.set("keystrokes", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatches(value: String => Boolean): Self = this.set("matches", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecificity(value: Double): Self = this.set("specificity", value.asInstanceOf[js.Any])
+    def setSpecificity(value: Double): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageclient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,28 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait TransportKind extends Transport
 @JSImport("vscode-languageclient", "TransportKind")
 @js.native
-object TransportKind extends js.Object {
+object TransportKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TransportKind with Double] = js.native
   
   @js.native
   sealed trait ipc extends TransportKind
-  /* 1 */ @js.native
-  object ipc extends TopLevel[ipc with Double]
+  /* 1 */ val ipc: typings.vscodeLanguageclient.mod.TransportKind.ipc with Double = js.native
   
   @js.native
   sealed trait pipe extends TransportKind
-  /* 2 */ @js.native
-  object pipe extends TopLevel[pipe with Double]
+  /* 2 */ val pipe: typings.vscodeLanguageclient.mod.TransportKind.pipe with Double = js.native
   
   @js.native
   sealed trait socket extends TransportKind
-  /* 3 */ @js.native
-  object socket extends TopLevel[socket with Double]
+  /* 3 */ val socket: typings.vscodeLanguageclient.mod.TransportKind.socket with Double = js.native
   
   @js.native
   sealed trait stdio extends TransportKind
-  /* 0 */ @js.native
-  object stdio extends TopLevel[stdio with Double]
+  /* 0 */ val stdio: typings.vscodeLanguageclient.mod.TransportKind.stdio with Double = js.native
 }

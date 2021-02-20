@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSigningCertificateResponse extends js.Object {
+trait GetSigningCertificateResponse extends StObject {
   
   /**
     * The signing certificate.
@@ -21,24 +22,12 @@ object GetSigningCertificateResponse {
   }
   
   @scala.inline
-  implicit class GetSigningCertificateResponseOps[Self <: GetSigningCertificateResponse] (val x: Self) extends AnyVal {
+  implicit class GetSigningCertificateResponseMutableBuilder[Self <: GetSigningCertificateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: StringType): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificate(value: StringType): Self = this.set("Certificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
   }
 }

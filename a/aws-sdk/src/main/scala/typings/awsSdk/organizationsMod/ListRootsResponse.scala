@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRootsResponse extends js.Object {
+trait ListRootsResponse extends StObject {
   
   /**
     * If present, indicates that more output is available than is included in the current response. Use this value in the NextToken request parameter in a subsequent call to the operation to get the next part of the output. You should repeat this until the NextToken response element comes back as null.
@@ -26,33 +27,21 @@ object ListRootsResponse {
   }
   
   @scala.inline
-  implicit class ListRootsResponseOps[Self <: ListRootsResponse] (val x: Self) extends AnyVal {
+  implicit class ListRootsResponseMutableBuilder[Self <: ListRootsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoots(value: Roots): Self = StObject.set(x, "Roots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRootsUndefined: Self = StObject.set(x, "Roots", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRootsVarargs(value: Root*): Self = this.set("Roots", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoots(value: Roots): Self = this.set("Roots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoots: Self = this.set("Roots", js.undefined)
+    def setRootsVarargs(value: Root*): Self = StObject.set(x, "Roots", js.Array(value :_*))
   }
 }

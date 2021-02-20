@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NeighborConnectionDetail extends js.Object {
+trait NeighborConnectionDetail extends StObject {
   
   /**
     * The number of open network connections with the neighboring server.
@@ -41,39 +42,27 @@ object NeighborConnectionDetail {
   }
   
   @scala.inline
-  implicit class NeighborConnectionDetailOps[Self <: NeighborConnectionDetail] (val x: Self) extends AnyVal {
+  implicit class NeighborConnectionDetailMutableBuilder[Self <: NeighborConnectionDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionsCount(value: Long): Self = StObject.set(x, "connectionsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationPort(value: BoxedInteger): Self = StObject.set(x, "destinationPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationPortUndefined: Self = StObject.set(x, "destinationPort", js.undefined)
     
     @scala.inline
-    def setConnectionsCount(value: Long): Self = this.set("connectionsCount", value.asInstanceOf[js.Any])
+    def setDestinationServerId(value: ConfigurationId): Self = StObject.set(x, "destinationServerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationServerId(value: ConfigurationId): Self = this.set("destinationServerId", value.asInstanceOf[js.Any])
+    def setSourceServerId(value: ConfigurationId): Self = StObject.set(x, "sourceServerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceServerId(value: ConfigurationId): Self = this.set("sourceServerId", value.asInstanceOf[js.Any])
+    def setTransportProtocol(value: String): Self = StObject.set(x, "transportProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationPort(value: BoxedInteger): Self = this.set("destinationPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationPort: Self = this.set("destinationPort", js.undefined)
-    
-    @scala.inline
-    def setTransportProtocol(value: String): Self = this.set("transportProtocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransportProtocol: Self = this.set("transportProtocol", js.undefined)
+    def setTransportProtocolUndefined: Self = StObject.set(x, "transportProtocol", js.undefined)
   }
 }

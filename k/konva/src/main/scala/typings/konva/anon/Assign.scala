@@ -9,12 +9,13 @@ import typings.konva.typesMod.RGBA
 import typings.konva.typesMod.Vector2d
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Assign extends js.Object {
+trait Assign extends StObject {
   
   def _assign[T, U](target: T, source: U): T with U = js.native
   
@@ -174,165 +175,153 @@ object Assign {
   }
   
   @scala.inline
-  implicit class AssignOps[Self <: Assign] (val x: Self) extends AnyVal {
+  implicit class AssignMutableBuilder[Self <: Assign] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloneArray(value: js.Array[_] => js.Array[_]): Self = StObject.set(x, "cloneArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloneObject(value: js.Any => js.Any): Self = StObject.set(x, "cloneObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorToRGBA(value: String => RGBA): Self = StObject.set(x, "colorToRGBA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_assign(value: (js.Any, js.Any) => js.Any with js.Any): Self = this.set("_assign", js.Any.fromFunction2(value))
+    def setCreateCanvasElement(value: () => HTMLCanvasElement): Self = StObject.set(x, "createCanvasElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_capitalize(value: String => String): Self = this.set("_capitalize", js.Any.fromFunction1(value))
+    def setCreateImageElement(value: () => HTMLImageElement): Self = StObject.set(x, "createImageElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_degToRad(value: Double => Double): Self = this.set("_degToRad", js.Any.fromFunction1(value))
+    def setEach(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_expandPoints(value: (js.Any, js.Any) => js.Array[_]): Self = this.set("_expandPoints", js.Any.fromFunction2(value))
+    def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_getControlPoints(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[_]): Self = this.set("_getControlPoints", js.Any.fromFunction7(value))
+    def setExtend(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_getFirstPointerId(value: js.Any => js.Any): Self = this.set("_getFirstPointerId", js.Any.fromFunction1(value))
+    def setGet(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_getProjectionToLine(value: (Vector2d, js.Any, js.Any) => Vector2d): Self = this.set("_getProjectionToLine", js.Any.fromFunction3(value))
+    def setGetRGB(value: String => RGB): Self = StObject.set(x, "getRGB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_getProjectionToSegment(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[_]): Self = this.set("_getProjectionToSegment", js.Any.fromFunction6(value))
+    def setGetRandomColor(value: () => String): Self = StObject.set(x, "getRandomColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_getRotation(value: js.Any => js.Any): Self = this.set("_getRotation", js.Any.fromFunction1(value))
+    def setHaveIntersection(value: (IRect, IRect) => Boolean): Self = StObject.set(x, "haveIntersection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_hex3ColorToRGBA(value: String => RGBA): Self = this.set("_hex3ColorToRGBA", js.Any.fromFunction1(value))
+    def setIsObject(value: js.Any => /* is std.Object */ Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_hex6ColorToRGBA(value: String => RGBA): Self = this.set("_hex6ColorToRGBA", js.Any.fromFunction1(value))
+    def setIsValidSelector(value: js.Any => Boolean): Self = StObject.set(x, "isValidSelector", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_hexToRgb(value: String => RGB): Self = this.set("_hexToRgb", js.Any.fromFunction1(value))
+    def setRequestAnimFrame(value: js.Function => Unit): Self = StObject.set(x, "requestAnimFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_hslColorToRGBA(value: String => RGBA): Self = this.set("_hslColorToRGBA", js.Any.fromFunction1(value))
+    def setThrow(value: String => scala.Nothing): Self = StObject.set(x, "throw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_inRange(value: (js.Any, js.Any, js.Any) => Boolean): Self = this.set("_inRange", js.Any.fromFunction3(value))
+    def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_isArray(value: js.Any => /* is std.Array<any> */ Boolean): Self = this.set("_isArray", js.Any.fromFunction1(value))
+    def set_assign(value: (js.Any, js.Any) => js.Any with js.Any): Self = StObject.set(x, "_assign", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_isBoolean(value: js.Any => /* is boolean */ Boolean): Self = this.set("_isBoolean", js.Any.fromFunction1(value))
+    def set_capitalize(value: String => String): Self = StObject.set(x, "_capitalize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_isElement(value: js.Any => /* is std.Element */ Boolean): Self = this.set("_isElement", js.Any.fromFunction1(value))
+    def set_degToRad(value: Double => Double): Self = StObject.set(x, "_degToRad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_isFunction(value: js.Any => Boolean): Self = this.set("_isFunction", js.Any.fromFunction1(value))
+    def set_expandPoints(value: (js.Any, js.Any) => js.Array[_]): Self = StObject.set(x, "_expandPoints", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_isInDocument(value: js.Any => Boolean): Self = this.set("_isInDocument", js.Any.fromFunction1(value))
+    def set_getControlPoints(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[_]): Self = StObject.set(x, "_getControlPoints", js.Any.fromFunction7(value))
     
     @scala.inline
-    def set_isNumber(value: js.Any => /* is number */ Boolean): Self = this.set("_isNumber", js.Any.fromFunction1(value))
+    def set_getFirstPointerId(value: js.Any => js.Any): Self = StObject.set(x, "_getFirstPointerId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_isPlainObject(value: js.Any => Boolean): Self = this.set("_isPlainObject", js.Any.fromFunction1(value))
+    def set_getProjectionToLine(value: (Vector2d, js.Any, js.Any) => Vector2d): Self = StObject.set(x, "_getProjectionToLine", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_isString(value: js.Any => /* is string */ Boolean): Self = this.set("_isString", js.Any.fromFunction1(value))
+    def set_getProjectionToSegment(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Array[_]): Self = StObject.set(x, "_getProjectionToSegment", js.Any.fromFunction6(value))
     
     @scala.inline
-    def set_namedColorToRBA(value: String => A): Self = this.set("_namedColorToRBA", js.Any.fromFunction1(value))
+    def set_getRotation(value: js.Any => js.Any): Self = StObject.set(x, "_getRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_prepareArrayForTween(value: (js.Any, js.Any, js.Any) => js.Array[_]): Self = this.set("_prepareArrayForTween", js.Any.fromFunction3(value))
+    def set_hex3ColorToRGBA(value: String => RGBA): Self = StObject.set(x, "_hex3ColorToRGBA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_prepareToStringify(value: js.Any => js.Any): Self = this.set("_prepareToStringify", js.Any.fromFunction1(value))
+    def set_hex6ColorToRGBA(value: String => RGBA): Self = StObject.set(x, "_hex6ColorToRGBA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_radToDeg(value: Double => Double): Self = this.set("_radToDeg", js.Any.fromFunction1(value))
+    def set_hexToRgb(value: String => RGB): Self = StObject.set(x, "_hexToRgb", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_rgbColorToRGBA(value: String => RGBA): Self = this.set("_rgbColorToRGBA", js.Any.fromFunction1(value))
+    def set_hslColorToRGBA(value: String => RGBA): Self = StObject.set(x, "_hslColorToRGBA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_rgbToHex(value: (Double, Double, Double) => String): Self = this.set("_rgbToHex", js.Any.fromFunction3(value))
+    def set_inRange(value: (js.Any, js.Any, js.Any) => Boolean): Self = StObject.set(x, "_inRange", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_rgbaColorToRGBA(value: String => RGBA): Self = this.set("_rgbaColorToRGBA", js.Any.fromFunction1(value))
+    def set_isArray(value: js.Any => /* is std.Array<any> */ Boolean): Self = StObject.set(x, "_isArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_sign(value: Double => `1` | `0` | `-1`): Self = this.set("_sign", js.Any.fromFunction1(value))
+    def set_isBoolean(value: js.Any => /* is boolean */ Boolean): Self = StObject.set(x, "_isBoolean", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_simplifyArray(value: js.Array[_] => js.Array[_]): Self = this.set("_simplifyArray", js.Any.fromFunction1(value))
+    def set_isElement(value: js.Any => /* is std.Element */ Boolean): Self = StObject.set(x, "_isElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_urlToImage(value: (String, js.Function) => Unit): Self = this.set("_urlToImage", js.Any.fromFunction2(value))
+    def set_isFunction(value: js.Any => Boolean): Self = StObject.set(x, "_isFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloneArray(value: js.Array[_] => js.Array[_]): Self = this.set("cloneArray", js.Any.fromFunction1(value))
+    def set_isInDocument(value: js.Any => Boolean): Self = StObject.set(x, "_isInDocument", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloneObject(value: js.Any => js.Any): Self = this.set("cloneObject", js.Any.fromFunction1(value))
+    def set_isNumber(value: js.Any => /* is number */ Boolean): Self = StObject.set(x, "_isNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColorToRGBA(value: String => RGBA): Self = this.set("colorToRGBA", js.Any.fromFunction1(value))
+    def set_isPlainObject(value: js.Any => Boolean): Self = StObject.set(x, "_isPlainObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateCanvasElement(value: () => HTMLCanvasElement): Self = this.set("createCanvasElement", js.Any.fromFunction0(value))
+    def set_isString(value: js.Any => /* is string */ Boolean): Self = StObject.set(x, "_isString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateImageElement(value: () => HTMLImageElement): Self = this.set("createImageElement", js.Any.fromFunction0(value))
+    def set_namedColorToRBA(value: String => A): Self = StObject.set(x, "_namedColorToRBA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEach(value: (js.Any, js.Any) => Unit): Self = this.set("each", js.Any.fromFunction2(value))
+    def set_prepareArrayForTween(value: (js.Any, js.Any, js.Any) => js.Array[_]): Self = StObject.set(x, "_prepareArrayForTween", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setError(value: String => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def set_prepareToStringify(value: js.Any => js.Any): Self = StObject.set(x, "_prepareToStringify", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtend(value: (js.Any, js.Any) => Unit): Self = this.set("extend", js.Any.fromFunction2(value))
+    def set_radToDeg(value: Double => Double): Self = StObject.set(x, "_radToDeg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: (js.Any, js.Any) => js.Any): Self = this.set("get", js.Any.fromFunction2(value))
+    def set_rgbColorToRGBA(value: String => RGBA): Self = StObject.set(x, "_rgbColorToRGBA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRGB(value: String => RGB): Self = this.set("getRGB", js.Any.fromFunction1(value))
+    def set_rgbToHex(value: (Double, Double, Double) => String): Self = StObject.set(x, "_rgbToHex", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetRandomColor(value: () => String): Self = this.set("getRandomColor", js.Any.fromFunction0(value))
+    def set_rgbaColorToRGBA(value: String => RGBA): Self = StObject.set(x, "_rgbaColorToRGBA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHaveIntersection(value: (IRect, IRect) => Boolean): Self = this.set("haveIntersection", js.Any.fromFunction2(value))
+    def set_sign(value: Double => `1` | `0` | `-1`): Self = StObject.set(x, "_sign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsObject(value: js.Any => /* is std.Object */ Boolean): Self = this.set("isObject", js.Any.fromFunction1(value))
+    def set_simplifyArray(value: js.Array[_] => js.Array[_]): Self = StObject.set(x, "_simplifyArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsValidSelector(value: js.Any => Boolean): Self = this.set("isValidSelector", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestAnimFrame(value: js.Function => Unit): Self = this.set("requestAnimFrame", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setThrow(value: String => scala.Nothing): Self = this.set("throw", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWarn(value: String => Unit): Self = this.set("warn", js.Any.fromFunction1(value))
+    def set_urlToImage(value: (String, js.Function) => Unit): Self = StObject.set(x, "_urlToImage", js.Any.fromFunction2(value))
   }
 }

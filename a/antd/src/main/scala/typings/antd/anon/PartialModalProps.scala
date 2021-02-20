@@ -9,13 +9,14 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/modal/Modal.ModalProps> */
 @js.native
-trait PartialModalProps extends js.Object {
+trait PartialModalProps extends StObject {
   
   var afterClose: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -92,222 +93,210 @@ object PartialModalProps {
   }
   
   @scala.inline
-  implicit class PartialModalPropsOps[Self <: PartialModalProps] (val x: Self) extends AnyVal {
+  implicit class PartialModalPropsMutableBuilder[Self <: PartialModalProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterClose(value: () => Unit): Self = this.set("afterClose", js.Any.fromFunction0(value))
+    def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
     
     @scala.inline
-    def deleteAfterClose: Self = this.set("afterClose", js.undefined)
+    def setCancelButtonProps(value: ButtonProps): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyStyle(value: CSSProperties): Self = this.set("bodyStyle", value.asInstanceOf[js.Any])
+    def setCancelButtonPropsUndefined: Self = StObject.set(x, "cancelButtonProps", js.undefined)
     
     @scala.inline
-    def deleteBodyStyle: Self = this.set("bodyStyle", js.undefined)
+    def setCancelText(value: ReactNode): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelButtonProps(value: ButtonProps): Self = this.set("cancelButtonProps", value.asInstanceOf[js.Any])
+    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
     @scala.inline
-    def deleteCancelButtonProps: Self = this.set("cancelButtonProps", js.undefined)
+    def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelText(value: ReactNode): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
     
     @scala.inline
-    def deleteCancelText: Self = this.set("cancelText", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCentered(value: Boolean): Self = this.set("centered", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteCentered: Self = this.set("centered", js.undefined)
+    def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
     
     @scala.inline
-    def deleteClosable: Self = this.set("closable", js.undefined)
+    def setConfirmLoading(value: Boolean): Self = StObject.set(x, "confirmLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseIcon(value: ReactNode): Self = this.set("closeIcon", value.asInstanceOf[js.Any])
+    def setConfirmLoadingUndefined: Self = StObject.set(x, "confirmLoading", js.undefined)
     
     @scala.inline
-    def deleteCloseIcon: Self = this.set("closeIcon", js.undefined)
+    def setDestroyOnClose(value: Boolean): Self = StObject.set(x, "destroyOnClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmLoading(value: Boolean): Self = this.set("confirmLoading", value.asInstanceOf[js.Any])
+    def setDestroyOnCloseUndefined: Self = StObject.set(x, "destroyOnClose", js.undefined)
     
     @scala.inline
-    def deleteConfirmLoading: Self = this.set("confirmLoading", js.undefined)
+    def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroyOnClose(value: Boolean): Self = this.set("destroyOnClose", value.asInstanceOf[js.Any])
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def deleteDestroyOnClose: Self = this.set("destroyOnClose", js.undefined)
+    def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: ReactNode): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setGetContainer(value: String | HTMLElement | getContainerFunc | `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceRender(value: Boolean): Self = this.set("forceRender", value.asInstanceOf[js.Any])
+    def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteForceRender: Self = this.set("forceRender", js.undefined)
+    def setGetContainerNull: Self = StObject.set(x, "getContainer", null)
     
     @scala.inline
-    def setGetContainerFunction0(value: () => HTMLElement): Self = this.set("getContainer", js.Any.fromFunction0(value))
+    def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
     
     @scala.inline
-    def setGetContainer(value: String | HTMLElement | getContainerFunc | `false`): Self = this.set("getContainer", value.asInstanceOf[js.Any])
+    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetContainer: Self = this.set("getContainer", js.undefined)
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def setGetContainerNull: Self = this.set("getContainer", null)
+    def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setMaskClosableUndefined: Self = StObject.set(x, "maskClosable", js.undefined)
     
     @scala.inline
-    def setMask(value: Boolean): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setMaskStyle(value: CSSProperties): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
     
     @scala.inline
-    def setMaskClosable(value: Boolean): Self = this.set("maskClosable", value.asInstanceOf[js.Any])
+    def setMaskTransitionName(value: String): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskClosable: Self = this.set("maskClosable", js.undefined)
+    def setMaskTransitionNameUndefined: Self = StObject.set(x, "maskTransitionName", js.undefined)
     
     @scala.inline
-    def setMaskStyle(value: CSSProperties): Self = this.set("maskStyle", value.asInstanceOf[js.Any])
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def deleteMaskStyle: Self = this.set("maskStyle", js.undefined)
+    def setModalRender(value: /* node */ ReactNode => ReactNode): Self = StObject.set(x, "modalRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskTransitionName(value: String): Self = this.set("maskTransitionName", value.asInstanceOf[js.Any])
+    def setModalRenderUndefined: Self = StObject.set(x, "modalRender", js.undefined)
     
     @scala.inline
-    def deleteMaskTransitionName: Self = this.set("maskTransitionName", js.undefined)
+    def setOkButtonProps(value: ButtonProps): Self = StObject.set(x, "okButtonProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModalRender(value: /* node */ ReactNode => ReactNode): Self = this.set("modalRender", js.Any.fromFunction1(value))
+    def setOkButtonPropsUndefined: Self = StObject.set(x, "okButtonProps", js.undefined)
     
     @scala.inline
-    def deleteModalRender: Self = this.set("modalRender", js.undefined)
+    def setOkText(value: ReactNode): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOkButtonProps(value: ButtonProps): Self = this.set("okButtonProps", value.asInstanceOf[js.Any])
+    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
     
     @scala.inline
-    def deleteOkButtonProps: Self = this.set("okButtonProps", js.undefined)
+    def setOkType(value: LegacyButtonType): Self = StObject.set(x, "okType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOkText(value: ReactNode): Self = this.set("okText", value.asInstanceOf[js.Any])
+    def setOkTypeUndefined: Self = StObject.set(x, "okType", js.undefined)
     
     @scala.inline
-    def deleteOkText: Self = this.set("okText", js.undefined)
+    def setOnCancel(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOkType(value: LegacyButtonType): Self = this.set("okType", value.asInstanceOf[js.Any])
+    def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
     @scala.inline
-    def deleteOkType: Self = this.set("okType", js.undefined)
+    def setOnOk(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCancel(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onCancel", js.Any.fromFunction1(value))
+    def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
     
     @scala.inline
-    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOk(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onOk", js.Any.fromFunction1(value))
+    def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
     @scala.inline
-    def deleteOnOk: Self = this.set("onOk", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    def setTitle(value: ReactNode | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: ReactNode | String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionName(value: String): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setWrapClassName(value: String): Self = StObject.set(x, "wrapClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWrapClassNameUndefined: Self = StObject.set(x, "wrapClassName", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWrapProps(value: js.Any): Self = StObject.set(x, "wrapProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapClassName(value: String): Self = this.set("wrapClassName", value.asInstanceOf[js.Any])
+    def setWrapPropsUndefined: Self = StObject.set(x, "wrapProps", js.undefined)
     
     @scala.inline
-    def deleteWrapClassName: Self = this.set("wrapClassName", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapProps(value: js.Any): Self = this.set("wrapProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapProps: Self = this.set("wrapProps", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

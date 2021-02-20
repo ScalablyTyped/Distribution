@@ -1,5 +1,6 @@
 package typings.kiiCloudSdk.global.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class KiiObject ()
   extends typings.kiiCloudSdk.KiiCloud.KiiObject
-/* static members */
-@JSGlobal("KiiCloud.KiiObject")
-@js.native
-object KiiObject extends js.Object {
+object KiiObject {
   
   /**
     * Check if given ID is valid for object ID.
@@ -24,6 +22,9 @@ object KiiObject extends js.Object {
     *
     * @return true if given ID is valid, false otherwise.
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiObject.isValidObjectID")
+  @js.native
   def isValidObjectID(objectID: String): Boolean = js.native
   
   /**
@@ -38,5 +39,8 @@ object KiiObject extends js.Object {
     * @example
     *     var group = new KiiObject.objectWithURI("kiicloud://myuri");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiObject.objectWithURI")
+  @js.native
   def objectWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiObject = js.native
 }

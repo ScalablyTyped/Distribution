@@ -1,13 +1,14 @@
 package typings.typeorm
 
 import typings.std.ParameterDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/decorator/transaction/TransactionManager", JSImport.Namespace)
-@js.native
-object transactionTransactionManagerMod extends js.Object {
+object transactionTransactionManagerMod {
   
+  @JSImport("typeorm/decorator/transaction/TransactionManager", "TransactionManager")
+  @js.native
   def TransactionManager(): ParameterDecorator = js.native
 }

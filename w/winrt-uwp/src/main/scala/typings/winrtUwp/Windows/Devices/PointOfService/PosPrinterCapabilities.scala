@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the capabilities of the point-of-service printer. */
 @js.native
-trait PosPrinterCapabilities extends js.Object {
+trait PosPrinterCapabilities extends StObject {
   
   /** Gets whether the point-of-service printer can map the characters that the application sends (in the character set that the ClaimedPosPrinter.CharacterSet property defines) to the character sets that the PosPrinter.SupportedCharacterSets property defines. */
   var canMapCharacterSet: Boolean = js.native
@@ -58,48 +59,36 @@ object PosPrinterCapabilities {
   }
   
   @scala.inline
-  implicit class PosPrinterCapabilitiesOps[Self <: PosPrinterCapabilities] (val x: Self) extends AnyVal {
+  implicit class PosPrinterCapabilitiesMutableBuilder[Self <: PosPrinterCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanMapCharacterSet(value: Boolean): Self = StObject.set(x, "canMapCharacterSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultCharacterSet(value: Double): Self = StObject.set(x, "defaultCharacterSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasCoverSensor(value: Boolean): Self = StObject.set(x, "hasCoverSensor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanMapCharacterSet(value: Boolean): Self = this.set("canMapCharacterSet", value.asInstanceOf[js.Any])
+    def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCharacterSet(value: Double): Self = this.set("defaultCharacterSet", value.asInstanceOf[js.Any])
+    def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasCoverSensor(value: Boolean): Self = this.set("hasCoverSensor", value.asInstanceOf[js.Any])
+    def setIsTransactionSupported(value: Boolean): Self = StObject.set(x, "isTransactionSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStatisticsReportingSupported(value: Boolean): Self = this.set("isStatisticsReportingSupported", value.asInstanceOf[js.Any])
+    def setJournal(value: JournalPrinterCapabilities): Self = StObject.set(x, "journal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStatisticsUpdatingSupported(value: Boolean): Self = this.set("isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
+    def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTransactionSupported(value: Boolean): Self = this.set("isTransactionSupported", value.asInstanceOf[js.Any])
+    def setReceipt(value: ReceiptPrinterCapabilities): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJournal(value: JournalPrinterCapabilities): Self = this.set("journal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = this.set("powerReportingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceipt(value: ReceiptPrinterCapabilities): Self = this.set("receipt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlip(value: SlipPrinterCapabilities): Self = this.set("slip", value.asInstanceOf[js.Any])
+    def setSlip(value: SlipPrinterCapabilities): Self = StObject.set(x, "slip", value.asInstanceOf[js.Any])
   }
 }

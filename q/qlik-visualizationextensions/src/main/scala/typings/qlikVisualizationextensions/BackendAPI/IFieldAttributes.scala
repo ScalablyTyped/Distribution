@@ -1,11 +1,12 @@
 package typings.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFieldAttributes extends js.Object {
+trait IFieldAttributes extends StObject {
   
   /**
     * Defines the decimal separator.
@@ -81,42 +82,30 @@ object IFieldAttributes {
   }
   
   @scala.inline
-  implicit class IFieldAttributesOps[Self <: IFieldAttributes] (val x: Self) extends AnyVal {
+  implicit class IFieldAttributesMutableBuilder[Self <: IFieldAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQDec(value: String): Self = StObject.set(x, "qDec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFmt(value: String): Self = StObject.set(x, "qFmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQSAFEARRAY(value: js.Array[_]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDec(value: String): Self = this.set("qDec", value.asInstanceOf[js.Any])
+    def setQSAFEARRAYVarargs(value: js.Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value :_*))
     
     @scala.inline
-    def setQFmt(value: String): Self = this.set("qFmt", value.asInstanceOf[js.Any])
+    def setQThou(value: String): Self = StObject.set(x, "qThou", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSAFEARRAYVarargs(value: js.Any*): Self = this.set("qSAFEARRAY", js.Array(value :_*))
+    def setQType(value: FieldAttributesType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSAFEARRAY(value: js.Array[_]): Self = this.set("qSAFEARRAY", value.asInstanceOf[js.Any])
+    def setQUseThou(value: Boolean): Self = StObject.set(x, "qUseThou", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQThou(value: String): Self = this.set("qThou", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQType(value: FieldAttributesType): Self = this.set("qType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQUseThou(value: Boolean): Self = this.set("qUseThou", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQnDec(value: Double): Self = this.set("qnDec", value.asInstanceOf[js.Any])
+    def setQnDec(value: Double): Self = StObject.set(x, "qnDec", value.asInstanceOf[js.Any])
   }
 }

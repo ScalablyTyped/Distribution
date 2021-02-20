@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateVersionsResponse extends js.Object {
+trait TemplateVersionsResponse extends StObject {
   
   /**
     * An array of responses, one for each version of the message template.
@@ -36,42 +37,30 @@ object TemplateVersionsResponse {
   }
   
   @scala.inline
-  implicit class TemplateVersionsResponseOps[Self <: TemplateVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class TemplateVersionsResponseMutableBuilder[Self <: TemplateVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: ListOfTemplateVersionResponse): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemVarargs(value: TemplateVersionResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemVarargs(value: TemplateVersionResponse*): Self = this.set("Item", js.Array(value :_*))
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def setItem(value: ListOfTemplateVersionResponse): Self = this.set("Item", value.asInstanceOf[js.Any])
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: string): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setRequestID(value: string): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRequestID(value: string): Self = this.set("RequestID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestID: Self = this.set("RequestID", js.undefined)
+    def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
   }
 }

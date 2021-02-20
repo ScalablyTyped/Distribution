@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CssResponseBytes extends js.Object {
+trait CssResponseBytes extends StObject {
   
   var cssResponseBytes: js.UndefOr[String] = js.native
   
@@ -42,96 +43,84 @@ object CssResponseBytes {
   }
   
   @scala.inline
-  implicit class CssResponseBytesOps[Self <: CssResponseBytes] (val x: Self) extends AnyVal {
+  implicit class CssResponseBytesMutableBuilder[Self <: CssResponseBytes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCssResponseBytes(value: String): Self = StObject.set(x, "cssResponseBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssResponseBytesUndefined: Self = StObject.set(x, "cssResponseBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlashResponseBytes(value: String): Self = StObject.set(x, "flashResponseBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssResponseBytes(value: String): Self = this.set("cssResponseBytes", value.asInstanceOf[js.Any])
+    def setFlashResponseBytesUndefined: Self = StObject.set(x, "flashResponseBytes", js.undefined)
     
     @scala.inline
-    def deleteCssResponseBytes: Self = this.set("cssResponseBytes", js.undefined)
+    def setHtmlResponseBytes(value: String): Self = StObject.set(x, "htmlResponseBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashResponseBytes(value: String): Self = this.set("flashResponseBytes", value.asInstanceOf[js.Any])
+    def setHtmlResponseBytesUndefined: Self = StObject.set(x, "htmlResponseBytes", js.undefined)
     
     @scala.inline
-    def deleteFlashResponseBytes: Self = this.set("flashResponseBytes", js.undefined)
+    def setImageResponseBytes(value: String): Self = StObject.set(x, "imageResponseBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlResponseBytes(value: String): Self = this.set("htmlResponseBytes", value.asInstanceOf[js.Any])
+    def setImageResponseBytesUndefined: Self = StObject.set(x, "imageResponseBytes", js.undefined)
     
     @scala.inline
-    def deleteHtmlResponseBytes: Self = this.set("htmlResponseBytes", js.undefined)
+    def setJavascriptResponseBytes(value: String): Self = StObject.set(x, "javascriptResponseBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageResponseBytes(value: String): Self = this.set("imageResponseBytes", value.asInstanceOf[js.Any])
+    def setJavascriptResponseBytesUndefined: Self = StObject.set(x, "javascriptResponseBytes", js.undefined)
     
     @scala.inline
-    def deleteImageResponseBytes: Self = this.set("imageResponseBytes", js.undefined)
+    def setNumberCssResources(value: Double): Self = StObject.set(x, "numberCssResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavascriptResponseBytes(value: String): Self = this.set("javascriptResponseBytes", value.asInstanceOf[js.Any])
+    def setNumberCssResourcesUndefined: Self = StObject.set(x, "numberCssResources", js.undefined)
     
     @scala.inline
-    def deleteJavascriptResponseBytes: Self = this.set("javascriptResponseBytes", js.undefined)
+    def setNumberHosts(value: Double): Self = StObject.set(x, "numberHosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberCssResources(value: Double): Self = this.set("numberCssResources", value.asInstanceOf[js.Any])
+    def setNumberHostsUndefined: Self = StObject.set(x, "numberHosts", js.undefined)
     
     @scala.inline
-    def deleteNumberCssResources: Self = this.set("numberCssResources", js.undefined)
+    def setNumberJsResources(value: Double): Self = StObject.set(x, "numberJsResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberHosts(value: Double): Self = this.set("numberHosts", value.asInstanceOf[js.Any])
+    def setNumberJsResourcesUndefined: Self = StObject.set(x, "numberJsResources", js.undefined)
     
     @scala.inline
-    def deleteNumberHosts: Self = this.set("numberHosts", js.undefined)
+    def setNumberResources(value: Double): Self = StObject.set(x, "numberResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberJsResources(value: Double): Self = this.set("numberJsResources", value.asInstanceOf[js.Any])
+    def setNumberResourcesUndefined: Self = StObject.set(x, "numberResources", js.undefined)
     
     @scala.inline
-    def deleteNumberJsResources: Self = this.set("numberJsResources", js.undefined)
+    def setNumberStaticResources(value: Double): Self = StObject.set(x, "numberStaticResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberResources(value: Double): Self = this.set("numberResources", value.asInstanceOf[js.Any])
+    def setNumberStaticResourcesUndefined: Self = StObject.set(x, "numberStaticResources", js.undefined)
     
     @scala.inline
-    def deleteNumberResources: Self = this.set("numberResources", js.undefined)
+    def setOtherResponseBytes(value: String): Self = StObject.set(x, "otherResponseBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberStaticResources(value: Double): Self = this.set("numberStaticResources", value.asInstanceOf[js.Any])
+    def setOtherResponseBytesUndefined: Self = StObject.set(x, "otherResponseBytes", js.undefined)
     
     @scala.inline
-    def deleteNumberStaticResources: Self = this.set("numberStaticResources", js.undefined)
+    def setTextResponseBytes(value: String): Self = StObject.set(x, "textResponseBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherResponseBytes(value: String): Self = this.set("otherResponseBytes", value.asInstanceOf[js.Any])
+    def setTextResponseBytesUndefined: Self = StObject.set(x, "textResponseBytes", js.undefined)
     
     @scala.inline
-    def deleteOtherResponseBytes: Self = this.set("otherResponseBytes", js.undefined)
+    def setTotalRequestBytes(value: String): Self = StObject.set(x, "totalRequestBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextResponseBytes(value: String): Self = this.set("textResponseBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextResponseBytes: Self = this.set("textResponseBytes", js.undefined)
-    
-    @scala.inline
-    def setTotalRequestBytes(value: String): Self = this.set("totalRequestBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRequestBytes: Self = this.set("totalRequestBytes", js.undefined)
+    def setTotalRequestBytesUndefined: Self = StObject.set(x, "totalRequestBytes", js.undefined)
   }
 }

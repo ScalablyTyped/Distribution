@@ -1,11 +1,12 @@
 package typings.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnlayerOptions extends js.Object {
+trait UnlayerOptions extends StObject {
   
   val appearance: js.UndefOr[AppearanceConfig] = js.native
   
@@ -50,132 +51,120 @@ object UnlayerOptions {
   }
   
   @scala.inline
-  implicit class UnlayerOptionsOps[Self <: UnlayerOptions] (val x: Self) extends AnyVal {
+  implicit class UnlayerOptionsMutableBuilder[Self <: UnlayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppearance(value: AppearanceConfig): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlocks(value: js.Array[js.Object]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearance(value: AppearanceConfig): Self = this.set("appearance", value.asInstanceOf[js.Any])
+    def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
     
     @scala.inline
-    def deleteAppearance: Self = this.set("appearance", js.undefined)
+    def setBlocksVarargs(value: js.Object*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
     @scala.inline
-    def setBlocksVarargs(value: js.Object*): Self = this.set("blocks", js.Array(value :_*))
+    def setCustomCSS(value: js.Array[String]): Self = StObject.set(x, "customCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocks(value: js.Array[js.Object]): Self = this.set("blocks", value.asInstanceOf[js.Any])
+    def setCustomCSSUndefined: Self = StObject.set(x, "customCSS", js.undefined)
     
     @scala.inline
-    def deleteBlocks: Self = this.set("blocks", js.undefined)
+    def setCustomCSSVarargs(value: String*): Self = StObject.set(x, "customCSS", js.Array(value :_*))
     
     @scala.inline
-    def setCustomCSSVarargs(value: String*): Self = this.set("customCSS", js.Array(value :_*))
+    def setCustomJS(value: js.Array[String]): Self = StObject.set(x, "customJS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomCSS(value: js.Array[String]): Self = this.set("customCSS", value.asInstanceOf[js.Any])
+    def setCustomJSUndefined: Self = StObject.set(x, "customJS", js.undefined)
     
     @scala.inline
-    def deleteCustomCSS: Self = this.set("customCSS", js.undefined)
+    def setCustomJSVarargs(value: String*): Self = StObject.set(x, "customJS", js.Array(value :_*))
     
     @scala.inline
-    def setCustomJSVarargs(value: String*): Self = this.set("customJS", js.Array(value :_*))
+    def setDesignTags(value: StringList): Self = StObject.set(x, "designTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomJS(value: js.Array[String]): Self = this.set("customJS", value.asInstanceOf[js.Any])
+    def setDesignTagsConfig(value: DesignTagConfig): Self = StObject.set(x, "designTagsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomJS: Self = this.set("customJS", js.undefined)
+    def setDesignTagsConfigUndefined: Self = StObject.set(x, "designTagsConfig", js.undefined)
     
     @scala.inline
-    def setDesignTags(value: StringList): Self = this.set("designTags", value.asInstanceOf[js.Any])
+    def setDesignTagsUndefined: Self = StObject.set(x, "designTags", js.undefined)
     
     @scala.inline
-    def deleteDesignTags: Self = this.set("designTags", js.undefined)
+    def setDisplayMode(value: DisplayMode): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesignTagsConfig(value: DesignTagConfig): Self = this.set("designTagsConfig", value.asInstanceOf[js.Any])
+    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
     @scala.inline
-    def deleteDesignTagsConfig: Self = this.set("designTagsConfig", js.undefined)
+    def setEditor(value: EditorConfig): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMode(value: DisplayMode): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
     @scala.inline
-    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditor(value: EditorConfig): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteEditor: Self = this.set("editor", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: Features): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMergeTags(value: js.Array[MergeTag]): Self = StObject.set(x, "mergeTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMergeTagsUndefined: Self = StObject.set(x, "mergeTags", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setMergeTagsVarargs(value: MergeTag*): Self = StObject.set(x, "mergeTags", js.Array(value :_*))
     
     @scala.inline
-    def setMergeTagsVarargs(value: MergeTag*): Self = this.set("mergeTags", js.Array(value :_*))
+    def setProjectId(value: Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeTags(value: js.Array[MergeTag]): Self = this.set("mergeTags", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteMergeTags: Self = this.set("mergeTags", js.undefined)
+    def setSafeHtml(value: Boolean): Self = StObject.set(x, "safeHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: Double): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setSafeHtmlUndefined: Self = StObject.set(x, "safeHtml", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setTools(value: ToolsConfig): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeHtml(value: Boolean): Self = this.set("safeHtml", value.asInstanceOf[js.Any])
+    def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
     
     @scala.inline
-    def deleteSafeHtml: Self = this.set("safeHtml", js.undefined)
+    def setTranslations(value: Translations): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTools(value: ToolsConfig): Self = this.set("tools", value.asInstanceOf[js.Any])
+    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
     @scala.inline
-    def deleteTools: Self = this.set("tools", js.undefined)
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslations(value: Translations): Self = this.set("translations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslations: Self = this.set("translations", js.undefined)
-    
-    @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

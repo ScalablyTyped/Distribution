@@ -6,14 +6,14 @@ import typings.three.colorMod.Color
 import typings.three.geometryMod.Geometry
 import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/helpers/Box3Helper", JSImport.Namespace)
-@js.native
-object box3HelperMod extends js.Object {
+object box3HelperMod {
   
+  @JSImport("three/src/helpers/Box3Helper", "Box3Helper")
   @js.native
   class Box3Helper protected ()
     extends LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]] {

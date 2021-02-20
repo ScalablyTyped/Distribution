@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLaunchTemplateInstanceMarketOptionSpotOption extends js.Object {
+trait GetLaunchTemplateInstanceMarketOptionSpotOption extends StObject {
   
   var blockDurationMinutes: Double = js.native
   
@@ -32,33 +33,21 @@ object GetLaunchTemplateInstanceMarketOptionSpotOption {
   }
   
   @scala.inline
-  implicit class GetLaunchTemplateInstanceMarketOptionSpotOptionOps[Self <: GetLaunchTemplateInstanceMarketOptionSpotOption] (val x: Self) extends AnyVal {
+  implicit class GetLaunchTemplateInstanceMarketOptionSpotOptionMutableBuilder[Self <: GetLaunchTemplateInstanceMarketOptionSpotOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockDurationMinutes(value: Double): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceInterruptionBehavior(value: String): Self = StObject.set(x, "instanceInterruptionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxPrice(value: String): Self = StObject.set(x, "maxPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDurationMinutes(value: Double): Self = this.set("blockDurationMinutes", value.asInstanceOf[js.Any])
+    def setSpotInstanceType(value: String): Self = StObject.set(x, "spotInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceInterruptionBehavior(value: String): Self = this.set("instanceInterruptionBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxPrice(value: String): Self = this.set("maxPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpotInstanceType(value: String): Self = this.set("spotInstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidUntil(value: String): Self = this.set("validUntil", value.asInstanceOf[js.Any])
+    def setValidUntil(value: String): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
   }
 }

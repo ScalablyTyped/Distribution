@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyValueFormat extends js.Object {
+trait KeyValueFormat extends StObject {
   
   /** Specifies the horizontal text positioning of key value. This field is optional. If not specified, default positioning is used. */
   var position: js.UndefOr[TextPosition] = js.native
@@ -22,30 +23,18 @@ object KeyValueFormat {
   }
   
   @scala.inline
-  implicit class KeyValueFormatOps[Self <: KeyValueFormat] (val x: Self) extends AnyVal {
+  implicit class KeyValueFormatMutableBuilder[Self <: KeyValueFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPosition(value: TextPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextFormat(value: TextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: TextPosition): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setTextFormat(value: TextFormat): Self = this.set("textFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

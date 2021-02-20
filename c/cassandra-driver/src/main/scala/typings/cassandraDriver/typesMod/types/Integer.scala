@@ -1,13 +1,14 @@
 package typings.cassandraDriver.typesMod.types
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.Integer")
 @js.native
-class Integer protected () extends js.Object {
+class Integer protected () extends StObject {
   def this(bits: js.Array[Double], sign: Double) = this()
   
   def abs(): Integer = js.native
@@ -70,25 +71,56 @@ class Integer protected () extends js.Object {
   
   def xor(other: Integer): Integer = js.native
 }
-/* static members */
-@JSImport("cassandra-driver/lib/types", "types.Integer")
-@js.native
-object Integer extends js.Object {
+object Integer {
   
-  var ONE: Integer = js.native
+  @JSImport("cassandra-driver/lib/types", "types.Integer")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var ZERO: Integer = js.native
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.Integer.ONE")
+  @js.native
+  def ONE: Integer = js.native
+  @scala.inline
+  def ONE_=(x: Integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.Integer.ZERO")
+  @js.native
+  def ZERO: Integer = js.native
+  @scala.inline
+  def ZERO_=(x: Integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.Integer.fromBits")
+  @js.native
   def fromBits(bits: js.Array[Double]): Integer = js.native
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.Integer.fromBuffer")
+  @js.native
   def fromBuffer(bits: Buffer): Integer = js.native
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.Integer.fromInt")
+  @js.native
   def fromInt(value: Double): Integer = js.native
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.Integer.fromNumber")
+  @js.native
   def fromNumber(value: Double): Integer = js.native
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.Integer.fromString")
+  @js.native
   def fromString(str: String): Integer = js.native
+  @JSImport("cassandra-driver/lib/types", "types.Integer.fromString")
+  @js.native
   def fromString(str: String, opt_radix: Double): Integer = js.native
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.Integer.toBuffer")
+  @js.native
   def toBuffer(value: Integer): Buffer = js.native
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstallationTarget extends js.Object {
+trait InstallationTarget extends StObject {
   
   var target: String = js.native
   
@@ -20,24 +21,12 @@ object InstallationTarget {
   }
   
   @scala.inline
-  implicit class InstallationTargetOps[Self <: InstallationTarget] (val x: Self) extends AnyVal {
+  implicit class InstallationTargetMutableBuilder[Self <: InstallationTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetVersion(value: String): Self = this.set("targetVersion", value.asInstanceOf[js.Any])
+    def setTargetVersion(value: String): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2UiElementsTableCard extends js.Object {
+trait GoogleActionsV2UiElementsTableCard extends StObject {
   
   /**
     * Buttons.
@@ -52,63 +53,51 @@ object GoogleActionsV2UiElementsTableCard {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2UiElementsTableCardOps[Self <: GoogleActionsV2UiElementsTableCard] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2UiElementsTableCardMutableBuilder[Self <: GoogleActionsV2UiElementsTableCard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[GoogleActionsV2UiElementsButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonsVarargs(value: GoogleActionsV2UiElementsButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setButtonsVarargs(value: GoogleActionsV2UiElementsButton*): Self = this.set("buttons", js.Array(value :_*))
+    def setColumnProperties(value: js.Array[GoogleActionsV2UiElementsTableCardColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[GoogleActionsV2UiElementsButton]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setColumnPropertiesVarargs(value: GoogleActionsV2UiElementsTableCardColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
     
     @scala.inline
-    def setColumnPropertiesVarargs(value: GoogleActionsV2UiElementsTableCardColumnProperties*): Self = this.set("columnProperties", js.Array(value :_*))
+    def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnProperties(value: js.Array[GoogleActionsV2UiElementsTableCardColumnProperties]): Self = this.set("columnProperties", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteColumnProperties: Self = this.set("columnProperties", js.undefined)
+    def setRows(value: js.Array[GoogleActionsV2UiElementsTableCardRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: GoogleActionsV2UiElementsImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setRowsVarargs(value: GoogleActionsV2UiElementsTableCardRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: GoogleActionsV2UiElementsTableCardRow*): Self = this.set("rows", js.Array(value :_*))
+    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[GoogleActionsV2UiElementsTableCardRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

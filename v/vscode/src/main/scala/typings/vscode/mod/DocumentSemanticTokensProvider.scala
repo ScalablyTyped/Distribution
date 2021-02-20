@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentSemanticTokensProvider extends js.Object {
+trait DocumentSemanticTokensProvider extends StObject {
   
   /**
     * An optional event to signal that the semantic tokens from this provider have changed.
@@ -120,37 +121,25 @@ object DocumentSemanticTokensProvider {
   }
   
   @scala.inline
-  implicit class DocumentSemanticTokensProviderOps[Self <: DocumentSemanticTokensProvider] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvideDocumentSemanticTokens(value: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): Self = this.set("provideDocumentSemanticTokens", js.Any.fromFunction2(value))
+  implicit class DocumentSemanticTokensProviderMutableBuilder[Self <: DocumentSemanticTokensProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setOnDidChangeSemanticTokens(
       value: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
-    ): Self = this.set("onDidChangeSemanticTokens", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onDidChangeSemanticTokens", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnDidChangeSemanticTokens: Self = this.set("onDidChangeSemanticTokens", js.undefined)
+    def setOnDidChangeSemanticTokensUndefined: Self = StObject.set(x, "onDidChangeSemanticTokens", js.undefined)
+    
+    @scala.inline
+    def setProvideDocumentSemanticTokens(value: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): Self = StObject.set(x, "provideDocumentSemanticTokens", js.Any.fromFunction2(value))
     
     @scala.inline
     def setProvideDocumentSemanticTokensEdits(
       value: (/* document */ TextDocument, /* previousResultId */ String, /* token */ CancellationToken) => ProviderResult[SemanticTokens | SemanticTokensEdits]
-    ): Self = this.set("provideDocumentSemanticTokensEdits", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "provideDocumentSemanticTokensEdits", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteProvideDocumentSemanticTokensEdits: Self = this.set("provideDocumentSemanticTokensEdits", js.undefined)
+    def setProvideDocumentSemanticTokensEditsUndefined: Self = StObject.set(x, "provideDocumentSemanticTokensEdits", js.undefined)
   }
 }

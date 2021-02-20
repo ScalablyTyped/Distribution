@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LivenessCheck extends js.Object {
+trait LivenessCheck extends StObject {
   
   /** Interval between health checks. */
   var checkInterval: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object LivenessCheck {
   }
   
   @scala.inline
-  implicit class LivenessCheckOps[Self <: LivenessCheck] (val x: Self) extends AnyVal {
+  implicit class LivenessCheckMutableBuilder[Self <: LivenessCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckInterval(value: String): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckInterval(value: String): Self = this.set("checkInterval", value.asInstanceOf[js.Any])
+    def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
     
     @scala.inline
-    def deleteCheckInterval: Self = this.set("checkInterval", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureThreshold(value: Double): Self = this.set("failureThreshold", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteFailureThreshold: Self = this.set("failureThreshold", js.undefined)
+    def setInitialDelay(value: String): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDelay(value: String): Self = this.set("initialDelay", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteInitialDelay: Self = this.set("initialDelay", js.undefined)
+    def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessThreshold(value: Double): Self = this.set("successThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessThreshold: Self = this.set("successThreshold", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

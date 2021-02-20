@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCreateAccountStatusResponse extends js.Object {
+trait ListCreateAccountStatusResponse extends StObject {
   
   /**
     * A list of objects with details about the requests. Certain elements, such as the accountId number, are present in the output only after the account has been successfully created.
@@ -26,33 +27,21 @@ object ListCreateAccountStatusResponse {
   }
   
   @scala.inline
-  implicit class ListCreateAccountStatusResponseOps[Self <: ListCreateAccountStatusResponse] (val x: Self) extends AnyVal {
+  implicit class ListCreateAccountStatusResponseMutableBuilder[Self <: ListCreateAccountStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateAccountStatuses(value: CreateAccountStatuses): Self = StObject.set(x, "CreateAccountStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateAccountStatusesUndefined: Self = StObject.set(x, "CreateAccountStatuses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateAccountStatusesVarargs(value: CreateAccountStatus*): Self = StObject.set(x, "CreateAccountStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setCreateAccountStatusesVarargs(value: CreateAccountStatus*): Self = this.set("CreateAccountStatuses", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateAccountStatuses(value: CreateAccountStatuses): Self = this.set("CreateAccountStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateAccountStatuses: Self = this.set("CreateAccountStatuses", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.BucketMetadataExt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LedgerVersion extends js.Object {
+trait LedgerVersion extends StObject {
   
   var ext: BucketMetadataExt = js.native
   
@@ -21,24 +22,12 @@ object LedgerVersion {
   }
   
   @scala.inline
-  implicit class LedgerVersionOps[Self <: LedgerVersion] (val x: Self) extends AnyVal {
+  implicit class LedgerVersionMutableBuilder[Self <: LedgerVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExt(value: BucketMetadataExt): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExt(value: BucketMetadataExt): Self = this.set("ext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLedgerVersion(value: Double): Self = this.set("ledgerVersion", value.asInstanceOf[js.Any])
+    def setLedgerVersion(value: Double): Self = StObject.set(x, "ledgerVersion", value.asInstanceOf[js.Any])
   }
 }

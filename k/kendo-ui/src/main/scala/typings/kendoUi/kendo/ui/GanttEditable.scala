@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttEditable extends js.Object {
+trait GanttEditable extends StObject {
   
   var confirmation: js.UndefOr[Boolean] = js.native
   
@@ -40,90 +41,78 @@ object GanttEditable {
   }
   
   @scala.inline
-  implicit class GanttEditableOps[Self <: GanttEditable] (val x: Self) extends AnyVal {
+  implicit class GanttEditableMutableBuilder[Self <: GanttEditable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmation(value: Boolean): Self = StObject.set(x, "confirmation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirmationUndefined: Self = StObject.set(x, "confirmation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmation(value: Boolean): Self = this.set("confirmation", value.asInstanceOf[js.Any])
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def deleteConfirmation: Self = this.set("confirmation", js.undefined)
+    def setDependencyCreate(value: Boolean): Self = StObject.set(x, "dependencyCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: Boolean): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setDependencyCreateUndefined: Self = StObject.set(x, "dependencyCreate", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setDependencyDestroy(value: Boolean): Self = StObject.set(x, "dependencyDestroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencyCreate(value: Boolean): Self = this.set("dependencyCreate", value.asInstanceOf[js.Any])
+    def setDependencyDestroyUndefined: Self = StObject.set(x, "dependencyDestroy", js.undefined)
     
     @scala.inline
-    def deleteDependencyCreate: Self = this.set("dependencyCreate", js.undefined)
+    def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencyDestroy(value: Boolean): Self = this.set("dependencyDestroy", value.asInstanceOf[js.Any])
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteDependencyDestroy: Self = this.set("dependencyDestroy", js.undefined)
+    def setDragPercentComplete(value: Boolean): Self = StObject.set(x, "dragPercentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: Boolean): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    def setDragPercentCompleteUndefined: Self = StObject.set(x, "dragPercentComplete", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragPercentComplete(value: Boolean): Self = this.set("dragPercentComplete", value.asInstanceOf[js.Any])
+    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
     @scala.inline
-    def deleteDragPercentComplete: Self = this.set("dragPercentComplete", js.undefined)
+    def setPlannedTasks(value: Boolean): Self = StObject.set(x, "plannedTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: Boolean): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setPlannedTasksUndefined: Self = StObject.set(x, "plannedTasks", js.undefined)
     
     @scala.inline
-    def deleteMove: Self = this.set("move", js.undefined)
+    def setReorder(value: Boolean): Self = StObject.set(x, "reorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlannedTasks(value: Boolean): Self = this.set("plannedTasks", value.asInstanceOf[js.Any])
+    def setReorderUndefined: Self = StObject.set(x, "reorder", js.undefined)
     
     @scala.inline
-    def deletePlannedTasks: Self = this.set("plannedTasks", js.undefined)
+    def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReorder(value: Boolean): Self = this.set("reorder", value.asInstanceOf[js.Any])
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def deleteReorder: Self = this.set("reorder", js.undefined)
+    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResize(value: Boolean): Self = this.set("resize", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

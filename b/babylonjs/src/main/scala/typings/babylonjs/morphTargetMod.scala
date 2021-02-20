@@ -8,14 +8,14 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Morph/morphTarget", JSImport.Namespace)
-@js.native
-object morphTargetMod extends js.Object {
+object morphTargetMod {
   
+  @JSImport("babylonjs/Morph/morphTarget", "MorphTarget")
   @js.native
   class MorphTarget protected () extends IAnimatable {
     /**
@@ -173,8 +173,7 @@ object morphTargetMod extends js.Object {
     def uniqueId: Double = js.native
   }
   /* static members */
-  @js.native
-  object MorphTarget extends js.Object {
+  object MorphTarget {
     
     /**
       * Creates a MorphTarget from mesh data
@@ -183,9 +182,17 @@ object morphTargetMod extends js.Object {
       * @param influence defines the influence to attach to the target
       * @returns a new MorphTarget
       */
+    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.FromMesh")
+    @js.native
     def FromMesh(mesh: AbstractMesh): MorphTarget = js.native
+    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.FromMesh")
+    @js.native
     def FromMesh(mesh: AbstractMesh, name: js.UndefOr[scala.Nothing], influence: Double): MorphTarget = js.native
+    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.FromMesh")
+    @js.native
     def FromMesh(mesh: AbstractMesh, name: String): MorphTarget = js.native
+    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.FromMesh")
+    @js.native
     def FromMesh(mesh: AbstractMesh, name: String, influence: Double): MorphTarget = js.native
     
     /**
@@ -193,6 +200,8 @@ object morphTargetMod extends js.Object {
       * @param serializationObject defines the serialized data to use
       * @returns a new MorphTarget
       */
+    @JSImport("babylonjs/Morph/morphTarget", "MorphTarget.Parse")
+    @js.native
     def Parse(serializationObject: js.Any): MorphTarget = js.native
   }
 }

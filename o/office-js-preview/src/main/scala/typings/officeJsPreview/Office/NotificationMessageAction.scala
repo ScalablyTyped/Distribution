@@ -1,6 +1,7 @@
 package typings.officeJsPreview.Office
 
 import typings.officeJsPreview.Office.MailboxEnums.ActionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait NotificationMessageAction extends js.Object {
+trait NotificationMessageAction extends StObject {
   
   /**
     * The text of the action link.
@@ -51,30 +52,18 @@ object NotificationMessageAction {
   }
   
   @scala.inline
-  implicit class NotificationMessageActionOps[Self <: NotificationMessageAction] (val x: Self) extends AnyVal {
+  implicit class NotificationMessageActionMutableBuilder[Self <: NotificationMessageAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionType(value: String | ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionText(value: String): Self = this.set("actionText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActionType(value: String | ActionType): Self = this.set("actionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommandId(value: String): Self = this.set("commandId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContextData(value: js.Any): Self = this.set("contextData", value.asInstanceOf[js.Any])
+    def setContextData(value: js.Any): Self = StObject.set(x, "contextData", value.asInstanceOf[js.Any])
   }
 }

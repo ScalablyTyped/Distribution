@@ -1,5 +1,6 @@
 package typings.loginWithAmazonSdkBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options that may be passed to `authorize`.
   */
 @js.native
-trait AuthorizeOptions extends js.Object {
+trait AuthorizeOptions extends StObject {
   
   /**
     * Specifies when to show a login screen to the user.
@@ -53,54 +54,42 @@ object AuthorizeOptions {
   }
   
   @scala.inline
-  implicit class AuthorizeOptionsOps[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
+  implicit class AuthorizeOptionsMutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInteractive(value: AuthorizeInteractiveOption): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPopup(value: Boolean): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeVarargs(value: AuthorizationScopeOptions*): Self = this.set("scope", js.Array(value :_*))
+    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
     @scala.inline
-    def setScope(value: AuthorizeScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setResponse_type(value: AuthorizeResponseType): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractive(value: AuthorizeInteractiveOption): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
     @scala.inline
-    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    def setScope(value: AuthorizeScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopup(value: Boolean): Self = this.set("popup", value.asInstanceOf[js.Any])
+    def setScopeVarargs(value: AuthorizationScopeOptions*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
     @scala.inline
-    def deletePopup: Self = this.set("popup", js.undefined)
+    def setScope_data(value: AuthorizeScopeData): Self = StObject.set(x, "scope_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse_type(value: AuthorizeResponseType): Self = this.set("response_type", value.asInstanceOf[js.Any])
+    def setScope_dataUndefined: Self = StObject.set(x, "scope_data", js.undefined)
     
     @scala.inline
-    def deleteResponse_type: Self = this.set("response_type", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope_data(value: AuthorizeScopeData): Self = this.set("scope_data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope_data: Self = this.set("scope_data", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

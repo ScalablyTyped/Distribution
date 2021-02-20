@@ -8,6 +8,7 @@ import typings.simperium.simperiumStrings.Plussign
 import typings.simperium.simperiumStrings.`-_`
 import typings.simperium.simperiumStrings.d
 import typings.simperium.simperiumStrings.r
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,48 +22,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.simperium.anon.VJSONDiff[T]
   - typings.simperium.anon.VDMPDiff
 */
-trait DiffOp[T] extends js.Object
+trait DiffOp[T] extends StObject
 object DiffOp {
   
   @scala.inline
-  def O[T](o: Plussign, v: T): DiffOp[T] = {
-    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DiffOp[T]]
-  }
-  
-  @scala.inline
-  def OV[T](o: I, v: Double): DiffOp[T] = {
-    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DiffOp[T]]
-  }
-  
-  @scala.inline
-  def VJSONDiff[T](o: O, v: JSONDiff[T]): DiffOp[T] = {
-    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DiffOp[T]]
-  }
-  
-  @scala.inline
-  def VDMPDiff[T](o: d, v: DMPDiff): DiffOp[T] = {
-    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DiffOp[T]]
-  }
-  
-  @scala.inline
-  def V[T](o: r, v: T): DiffOp[T] = {
-    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DiffOp[T]]
-  }
-  
-  @scala.inline
-  def `1`[T](o: L, v: NumberDictionary[js.Any]): DiffOp[T] = {
-    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DiffOp[T]]
-  }
-  
-  @scala.inline
-  def `0`[T](o: `-_`): DiffOp[T] = {
+  def `0`(o: `-_`): typings.simperium.anon.`0` = {
     val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DiffOp[T]]
+    __obj.asInstanceOf[typings.simperium.anon.`0`]
+  }
+  
+  @scala.inline
+  def `1`[T](o: L, v: NumberDictionary[js.Any]): typings.simperium.anon.`1`[T] = {
+    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.simperium.anon.`1`[T]]
+  }
+  
+  @scala.inline
+  def O[T](o: Plussign, v: T): typings.simperium.anon.O[T] = {
+    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.simperium.anon.O[T]]
+  }
+  
+  @scala.inline
+  def OV(o: I, v: Double): typings.simperium.anon.OV = {
+    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.simperium.anon.OV]
+  }
+  
+  @scala.inline
+  def V[T](o: r, v: T): typings.simperium.anon.V[T] = {
+    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.simperium.anon.V[T]]
+  }
+  
+  @scala.inline
+  def VDMPDiff(o: d, v: DMPDiff): typings.simperium.anon.VDMPDiff = {
+    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.simperium.anon.VDMPDiff]
+  }
+  
+  @scala.inline
+  def VJSONDiff[T](o: O, v: JSONDiff[T]): typings.simperium.anon.VJSONDiff[T] = {
+    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.simperium.anon.VJSONDiff[T]]
   }
 }

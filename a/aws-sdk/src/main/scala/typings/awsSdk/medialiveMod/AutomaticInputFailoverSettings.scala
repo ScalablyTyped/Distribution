@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomaticInputFailoverSettings extends js.Object {
+trait AutomaticInputFailoverSettings extends StObject {
   
   /**
     * This clear time defines the requirement a recovered input must meet to be considered healthy. The input must have no failover conditions for this length of time. Enter a time in milliseconds. This value is particularly important if the input_preference for the failover pair is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive will switch back to the primary input.
@@ -36,42 +37,30 @@ object AutomaticInputFailoverSettings {
   }
   
   @scala.inline
-  implicit class AutomaticInputFailoverSettingsOps[Self <: AutomaticInputFailoverSettings] (val x: Self) extends AnyVal {
+  implicit class AutomaticInputFailoverSettingsMutableBuilder[Self <: AutomaticInputFailoverSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorClearTimeMsec(value: integerMin1): Self = StObject.set(x, "ErrorClearTimeMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorClearTimeMsecUndefined: Self = StObject.set(x, "ErrorClearTimeMsec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailoverConditions(value: listOfFailoverCondition): Self = StObject.set(x, "FailoverConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryInputId(value: string): Self = this.set("SecondaryInputId", value.asInstanceOf[js.Any])
+    def setFailoverConditionsUndefined: Self = StObject.set(x, "FailoverConditions", js.undefined)
     
     @scala.inline
-    def setErrorClearTimeMsec(value: integerMin1): Self = this.set("ErrorClearTimeMsec", value.asInstanceOf[js.Any])
+    def setFailoverConditionsVarargs(value: FailoverCondition*): Self = StObject.set(x, "FailoverConditions", js.Array(value :_*))
     
     @scala.inline
-    def deleteErrorClearTimeMsec: Self = this.set("ErrorClearTimeMsec", js.undefined)
+    def setInputPreference(value: InputPreference): Self = StObject.set(x, "InputPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailoverConditionsVarargs(value: FailoverCondition*): Self = this.set("FailoverConditions", js.Array(value :_*))
+    def setInputPreferenceUndefined: Self = StObject.set(x, "InputPreference", js.undefined)
     
     @scala.inline
-    def setFailoverConditions(value: listOfFailoverCondition): Self = this.set("FailoverConditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailoverConditions: Self = this.set("FailoverConditions", js.undefined)
-    
-    @scala.inline
-    def setInputPreference(value: InputPreference): Self = this.set("InputPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputPreference: Self = this.set("InputPreference", js.undefined)
+    def setSecondaryInputId(value: string): Self = StObject.set(x, "SecondaryInputId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.outpostsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Outpost extends js.Object {
+trait Outpost extends StObject {
   
   var AvailabilityZone: js.UndefOr[typings.awsSdk.outpostsMod.AvailabilityZone] = js.native
   
@@ -34,72 +35,60 @@ object Outpost {
   }
   
   @scala.inline
-  implicit class OutpostOps[Self <: Outpost] (val x: Self) extends AnyVal {
+  implicit class OutpostMutableBuilder[Self <: Outpost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneId(value: AvailabilityZoneId): Self = StObject.set(x, "AvailabilityZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZoneIdUndefined: Self = StObject.set(x, "AvailabilityZoneId", js.undefined)
     
     @scala.inline
-    def setAvailabilityZone(value: AvailabilityZone): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setDescription(value: OutpostDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZoneId(value: AvailabilityZoneId): Self = this.set("AvailabilityZoneId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZoneId: Self = this.set("AvailabilityZoneId", js.undefined)
+    def setLifeCycleStatus(value: LifeCycleStatus): Self = StObject.set(x, "LifeCycleStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: OutpostDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setLifeCycleStatusUndefined: Self = StObject.set(x, "LifeCycleStatus", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setName(value: OutpostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifeCycleStatus(value: LifeCycleStatus): Self = this.set("LifeCycleStatus", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLifeCycleStatus: Self = this.set("LifeCycleStatus", js.undefined)
+    def setOutpostArn(value: OutpostArn): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: OutpostName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutpostArn(value: OutpostArn): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
+    def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
     
     @scala.inline
-    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
+    def setOwnerId(value: OwnerId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutpostId(value: OutpostId): Self = this.set("OutpostId", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteOutpostId: Self = this.set("OutpostId", js.undefined)
+    def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: OwnerId): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
-    
-    @scala.inline
-    def setSiteId(value: SiteId): Self = this.set("SiteId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiteId: Self = this.set("SiteId", js.undefined)
+    def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
   }
 }

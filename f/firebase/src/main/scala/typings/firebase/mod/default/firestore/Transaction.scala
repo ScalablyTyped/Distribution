@@ -1,13 +1,14 @@
 package typings.firebase.mod.default.firestore
 
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "firestore.Transaction")
+@JSImport("firebase", "default.firestore.Transaction")
 @js.native
-class Transaction protected () extends js.Object {
+class Transaction protected () extends StObject {
   
   /**
     * Deletes the document referred to by the provided `DocumentReference`.

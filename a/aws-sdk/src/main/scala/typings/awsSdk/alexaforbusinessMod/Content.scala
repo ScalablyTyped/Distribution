@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Content extends js.Object {
+trait Content extends StObject {
   
   /**
     * The list of audio messages.
@@ -31,45 +32,33 @@ object Content {
   }
   
   @scala.inline
-  implicit class ContentOps[Self <: Content] (val x: Self) extends AnyVal {
+  implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioList(value: AudioList): Self = StObject.set(x, "AudioList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioListUndefined: Self = StObject.set(x, "AudioList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioListVarargs(value: Audio*): Self = StObject.set(x, "AudioList", js.Array(value :_*))
     
     @scala.inline
-    def setAudioListVarargs(value: Audio*): Self = this.set("AudioList", js.Array(value :_*))
+    def setSsmlList(value: SsmlList): Self = StObject.set(x, "SsmlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioList(value: AudioList): Self = this.set("AudioList", value.asInstanceOf[js.Any])
+    def setSsmlListUndefined: Self = StObject.set(x, "SsmlList", js.undefined)
     
     @scala.inline
-    def deleteAudioList: Self = this.set("AudioList", js.undefined)
+    def setSsmlListVarargs(value: Ssml*): Self = StObject.set(x, "SsmlList", js.Array(value :_*))
     
     @scala.inline
-    def setSsmlListVarargs(value: Ssml*): Self = this.set("SsmlList", js.Array(value :_*))
+    def setTextList(value: TextList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsmlList(value: SsmlList): Self = this.set("SsmlList", value.asInstanceOf[js.Any])
+    def setTextListUndefined: Self = StObject.set(x, "TextList", js.undefined)
     
     @scala.inline
-    def deleteSsmlList: Self = this.set("SsmlList", js.undefined)
-    
-    @scala.inline
-    def setTextListVarargs(value: Text*): Self = this.set("TextList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextList(value: TextList): Self = this.set("TextList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextList: Self = this.set("TextList", js.undefined)
+    def setTextListVarargs(value: Text*): Self = StObject.set(x, "TextList", js.Array(value :_*))
   }
 }

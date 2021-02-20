@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminateClientVpnConnectionsRequest extends js.Object {
+trait TerminateClientVpnConnectionsRequest extends StObject {
   
   /**
     * The ID of the Client VPN endpoint to which the client is connected.
@@ -36,39 +37,27 @@ object TerminateClientVpnConnectionsRequest {
   }
   
   @scala.inline
-  implicit class TerminateClientVpnConnectionsRequestOps[Self <: TerminateClientVpnConnectionsRequest] (val x: Self) extends AnyVal {
+  implicit class TerminateClientVpnConnectionsRequestMutableBuilder[Self <: TerminateClientVpnConnectionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionId(value: VpnConnectionId): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
     
     @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionId(value: VpnConnectionId): Self = this.set("ConnectionId", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def deleteConnectionId: Self = this.set("ConnectionId", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

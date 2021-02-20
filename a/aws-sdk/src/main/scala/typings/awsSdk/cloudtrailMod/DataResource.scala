@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataResource extends js.Object {
+trait DataResource extends StObject {
   
   /**
     * The resource type in which you want to log data events. You can specify AWS::S3::Object or AWS::Lambda::Function resources.
@@ -26,33 +27,21 @@ object DataResource {
   }
   
   @scala.inline
-  implicit class DataResourceOps[Self <: DataResource] (val x: Self) extends AnyVal {
+  implicit class DataResourceMutableBuilder[Self <: DataResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: DataResourceValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: DataResourceValues): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

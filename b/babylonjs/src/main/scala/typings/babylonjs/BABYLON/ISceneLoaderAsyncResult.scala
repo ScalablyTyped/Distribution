@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISceneLoaderAsyncResult extends js.Object {
+trait ISceneLoaderAsyncResult extends StObject {
   
   /**
     * The array of loaded animation groups
@@ -59,60 +60,48 @@ object ISceneLoaderAsyncResult {
   }
   
   @scala.inline
-  implicit class ISceneLoaderAsyncResultOps[Self <: ISceneLoaderAsyncResult] (val x: Self) extends AnyVal {
+  implicit class ISceneLoaderAsyncResultMutableBuilder[Self <: ISceneLoaderAsyncResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationGroups(value: js.Array[AnimationGroup]): Self = StObject.set(x, "animationGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationGroupsVarargs(value: AnimationGroup*): Self = StObject.set(x, "animationGroups", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometries(value: js.Array[Geometry]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationGroupsVarargs(value: AnimationGroup*): Self = this.set("animationGroups", js.Array(value :_*))
+    def setGeometriesVarargs(value: Geometry*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
     @scala.inline
-    def setAnimationGroups(value: js.Array[AnimationGroup]): Self = this.set("animationGroups", value.asInstanceOf[js.Any])
+    def setLights(value: js.Array[Light]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometriesVarargs(value: Geometry*): Self = this.set("geometries", js.Array(value :_*))
+    def setLightsVarargs(value: Light*): Self = StObject.set(x, "lights", js.Array(value :_*))
     
     @scala.inline
-    def setGeometries(value: js.Array[Geometry]): Self = this.set("geometries", value.asInstanceOf[js.Any])
+    def setMeshes(value: js.Array[AbstractMesh]): Self = StObject.set(x, "meshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightsVarargs(value: Light*): Self = this.set("lights", js.Array(value :_*))
+    def setMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "meshes", js.Array(value :_*))
     
     @scala.inline
-    def setLights(value: js.Array[Light]): Self = this.set("lights", value.asInstanceOf[js.Any])
+    def setParticleSystems(value: js.Array[IParticleSystem]): Self = StObject.set(x, "particleSystems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshesVarargs(value: AbstractMesh*): Self = this.set("meshes", js.Array(value :_*))
+    def setParticleSystemsVarargs(value: IParticleSystem*): Self = StObject.set(x, "particleSystems", js.Array(value :_*))
     
     @scala.inline
-    def setMeshes(value: js.Array[AbstractMesh]): Self = this.set("meshes", value.asInstanceOf[js.Any])
+    def setSkeletons(value: js.Array[Skeleton]): Self = StObject.set(x, "skeletons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticleSystemsVarargs(value: IParticleSystem*): Self = this.set("particleSystems", js.Array(value :_*))
+    def setSkeletonsVarargs(value: Skeleton*): Self = StObject.set(x, "skeletons", js.Array(value :_*))
     
     @scala.inline
-    def setParticleSystems(value: js.Array[IParticleSystem]): Self = this.set("particleSystems", value.asInstanceOf[js.Any])
+    def setTransformNodes(value: js.Array[TransformNode]): Self = StObject.set(x, "transformNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkeletonsVarargs(value: Skeleton*): Self = this.set("skeletons", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkeletons(value: js.Array[Skeleton]): Self = this.set("skeletons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransformNodesVarargs(value: TransformNode*): Self = this.set("transformNodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransformNodes(value: js.Array[TransformNode]): Self = this.set("transformNodes", value.asInstanceOf[js.Any])
+    def setTransformNodesVarargs(value: TransformNode*): Self = StObject.set(x, "transformNodes", js.Array(value :_*))
   }
 }

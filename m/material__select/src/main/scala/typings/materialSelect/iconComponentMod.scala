@@ -3,23 +3,26 @@ package typings.materialSelect
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialSelect.iconFoundationMod.MDCSelectIconFoundation
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/select/icon/component", JSImport.Namespace)
-@js.native
-object iconComponentMod extends js.Object {
+object iconComponentMod {
   
+  @JSImport("@material/select/icon/component", "MDCSelectIcon")
   @js.native
-  class MDCSelectIcon () extends MDCComponent[MDCSelectIconFoundation] {
+  class MDCSelectIcon protected () extends MDCComponent[MDCSelectIconFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCSelectIconFoundation, args: js.Any*) = this()
     
     def foundationForSelect: MDCSelectIconFoundation = js.native
   }
   /* static members */
-  @js.native
-  object MDCSelectIcon extends js.Object {
+  object MDCSelectIcon {
     
+    @JSImport("@material/select/icon/component", "MDCSelectIcon.attachTo")
+    @js.native
     def attachTo(root: Element): MDCSelectIcon = js.native
   }
   

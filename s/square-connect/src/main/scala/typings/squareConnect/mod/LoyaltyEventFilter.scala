@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "LoyaltyEventFilter")
 @js.native
-class LoyaltyEventFilter () extends js.Object {
+class LoyaltyEventFilter () extends StObject {
   
   /**
     * Filter events by date time range.  For each range, the start time is inclusive and the end time  is exclusive.

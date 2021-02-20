@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchMatMulAttrs extends js.Object {
+trait BatchMatMulAttrs extends StObject {
   
   var transposeA: Boolean = js.native
   
@@ -20,24 +21,12 @@ object BatchMatMulAttrs {
   }
   
   @scala.inline
-  implicit class BatchMatMulAttrsOps[Self <: BatchMatMulAttrs] (val x: Self) extends AnyVal {
+  implicit class BatchMatMulAttrsMutableBuilder[Self <: BatchMatMulAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransposeA(value: Boolean): Self = this.set("transposeA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransposeB(value: Boolean): Self = this.set("transposeB", value.asInstanceOf[js.Any])
+    def setTransposeB(value: Boolean): Self = StObject.set(x, "transposeB", value.asInstanceOf[js.Any])
   }
 }

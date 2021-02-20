@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMapElements extends js.Object {
+trait IMapElements extends StObject {
   
   /** Admin1, state, province, etc. */
   var adminDistrict: js.UndefOr[IBorderedMapElementStyle] = js.native
@@ -201,384 +202,372 @@ object IMapElements {
   }
   
   @scala.inline
-  implicit class IMapElementsOps[Self <: IMapElements] (val x: Self) extends AnyVal {
+  implicit class IMapElementsMutableBuilder[Self <: IMapElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminDistrict(value: IBorderedMapElementStyle): Self = StObject.set(x, "adminDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminDistrictCapital(value: IMapElementStyle): Self = StObject.set(x, "adminDistrictCapital", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdminDistrictCapitalUndefined: Self = StObject.set(x, "adminDistrictCapital", js.undefined)
     
     @scala.inline
-    def setAdminDistrict(value: IBorderedMapElementStyle): Self = this.set("adminDistrict", value.asInstanceOf[js.Any])
+    def setAdminDistrictUndefined: Self = StObject.set(x, "adminDistrict", js.undefined)
     
     @scala.inline
-    def deleteAdminDistrict: Self = this.set("adminDistrict", js.undefined)
+    def setAirport(value: IMapElementStyle): Self = StObject.set(x, "airport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminDistrictCapital(value: IMapElementStyle): Self = this.set("adminDistrictCapital", value.asInstanceOf[js.Any])
+    def setAirportUndefined: Self = StObject.set(x, "airport", js.undefined)
     
     @scala.inline
-    def deleteAdminDistrictCapital: Self = this.set("adminDistrictCapital", js.undefined)
+    def setArea(value: IMapElementStyle): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAirport(value: IMapElementStyle): Self = this.set("airport", value.asInstanceOf[js.Any])
+    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
     @scala.inline
-    def deleteAirport: Self = this.set("airport", js.undefined)
+    def setArterialRoad(value: IMapElementStyle): Self = StObject.set(x, "arterialRoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: IMapElementStyle): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setArterialRoadUndefined: Self = StObject.set(x, "arterialRoad", js.undefined)
     
     @scala.inline
-    def deleteArea: Self = this.set("area", js.undefined)
+    def setBuilding(value: IMapElementStyle): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArterialRoad(value: IMapElementStyle): Self = this.set("arterialRoad", value.asInstanceOf[js.Any])
+    def setBuildingUndefined: Self = StObject.set(x, "building", js.undefined)
     
     @scala.inline
-    def deleteArterialRoad: Self = this.set("arterialRoad", js.undefined)
+    def setBusiness(value: IMapElementStyle): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuilding(value: IMapElementStyle): Self = this.set("building", value.asInstanceOf[js.Any])
+    def setBusinessUndefined: Self = StObject.set(x, "business", js.undefined)
     
     @scala.inline
-    def deleteBuilding: Self = this.set("building", js.undefined)
+    def setCapital(value: IMapElementStyle): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusiness(value: IMapElementStyle): Self = this.set("business", value.asInstanceOf[js.Any])
+    def setCapitalUndefined: Self = StObject.set(x, "capital", js.undefined)
     
     @scala.inline
-    def deleteBusiness: Self = this.set("business", js.undefined)
+    def setCemetery(value: IMapElementStyle): Self = StObject.set(x, "cemetery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapital(value: IMapElementStyle): Self = this.set("capital", value.asInstanceOf[js.Any])
+    def setCemeteryUndefined: Self = StObject.set(x, "cemetery", js.undefined)
     
     @scala.inline
-    def deleteCapital: Self = this.set("capital", js.undefined)
+    def setContinent(value: IMapElementStyle): Self = StObject.set(x, "continent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCemetery(value: IMapElementStyle): Self = this.set("cemetery", value.asInstanceOf[js.Any])
+    def setContinentUndefined: Self = StObject.set(x, "continent", js.undefined)
     
     @scala.inline
-    def deleteCemetery: Self = this.set("cemetery", js.undefined)
+    def setControlledAccessHighway(value: IMapElementStyle): Self = StObject.set(x, "controlledAccessHighway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinent(value: IMapElementStyle): Self = this.set("continent", value.asInstanceOf[js.Any])
+    def setControlledAccessHighwayUndefined: Self = StObject.set(x, "controlledAccessHighway", js.undefined)
     
     @scala.inline
-    def deleteContinent: Self = this.set("continent", js.undefined)
+    def setCountryRegion(value: IBorderedMapElementStyle): Self = StObject.set(x, "countryRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlledAccessHighway(value: IMapElementStyle): Self = this.set("controlledAccessHighway", value.asInstanceOf[js.Any])
+    def setCountryRegionCapital(value: IMapElementStyle): Self = StObject.set(x, "countryRegionCapital", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControlledAccessHighway: Self = this.set("controlledAccessHighway", js.undefined)
+    def setCountryRegionCapitalUndefined: Self = StObject.set(x, "countryRegionCapital", js.undefined)
     
     @scala.inline
-    def setCountryRegion(value: IBorderedMapElementStyle): Self = this.set("countryRegion", value.asInstanceOf[js.Any])
+    def setCountryRegionUndefined: Self = StObject.set(x, "countryRegion", js.undefined)
     
     @scala.inline
-    def deleteCountryRegion: Self = this.set("countryRegion", js.undefined)
+    def setDistrict(value: IBorderedMapElementStyle): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryRegionCapital(value: IMapElementStyle): Self = this.set("countryRegionCapital", value.asInstanceOf[js.Any])
+    def setDistrictUndefined: Self = StObject.set(x, "district", js.undefined)
     
     @scala.inline
-    def deleteCountryRegionCapital: Self = this.set("countryRegionCapital", js.undefined)
+    def setEducation(value: IMapElementStyle): Self = StObject.set(x, "education", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistrict(value: IBorderedMapElementStyle): Self = this.set("district", value.asInstanceOf[js.Any])
+    def setEducationBuilding(value: IMapElementStyle): Self = StObject.set(x, "educationBuilding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDistrict: Self = this.set("district", js.undefined)
+    def setEducationBuildingUndefined: Self = StObject.set(x, "educationBuilding", js.undefined)
     
     @scala.inline
-    def setEducation(value: IMapElementStyle): Self = this.set("education", value.asInstanceOf[js.Any])
+    def setEducationUndefined: Self = StObject.set(x, "education", js.undefined)
     
     @scala.inline
-    def deleteEducation: Self = this.set("education", js.undefined)
+    def setFoodPoint(value: IMapElementStyle): Self = StObject.set(x, "foodPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEducationBuilding(value: IMapElementStyle): Self = this.set("educationBuilding", value.asInstanceOf[js.Any])
+    def setFoodPointUndefined: Self = StObject.set(x, "foodPoint", js.undefined)
     
     @scala.inline
-    def deleteEducationBuilding: Self = this.set("educationBuilding", js.undefined)
+    def setForest(value: IMapElementStyle): Self = StObject.set(x, "forest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoodPoint(value: IMapElementStyle): Self = this.set("foodPoint", value.asInstanceOf[js.Any])
+    def setForestUndefined: Self = StObject.set(x, "forest", js.undefined)
     
     @scala.inline
-    def deleteFoodPoint: Self = this.set("foodPoint", js.undefined)
+    def setGolfCourse(value: IMapElementStyle): Self = StObject.set(x, "golfCourse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForest(value: IMapElementStyle): Self = this.set("forest", value.asInstanceOf[js.Any])
+    def setGolfCourseUndefined: Self = StObject.set(x, "golfCourse", js.undefined)
     
     @scala.inline
-    def deleteForest: Self = this.set("forest", js.undefined)
+    def setHighSpeedRamp(value: IMapElementStyle): Self = StObject.set(x, "highSpeedRamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGolfCourse(value: IMapElementStyle): Self = this.set("golfCourse", value.asInstanceOf[js.Any])
+    def setHighSpeedRampUndefined: Self = StObject.set(x, "highSpeedRamp", js.undefined)
     
     @scala.inline
-    def deleteGolfCourse: Self = this.set("golfCourse", js.undefined)
+    def setHighway(value: IMapElementStyle): Self = StObject.set(x, "highway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighSpeedRamp(value: IMapElementStyle): Self = this.set("highSpeedRamp", value.asInstanceOf[js.Any])
+    def setHighwayUndefined: Self = StObject.set(x, "highway", js.undefined)
     
     @scala.inline
-    def deleteHighSpeedRamp: Self = this.set("highSpeedRamp", js.undefined)
+    def setIndigenousPeoplesReserve(value: IMapElementStyle): Self = StObject.set(x, "indigenousPeoplesReserve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighway(value: IMapElementStyle): Self = this.set("highway", value.asInstanceOf[js.Any])
+    def setIndigenousPeoplesReserveUndefined: Self = StObject.set(x, "indigenousPeoplesReserve", js.undefined)
     
     @scala.inline
-    def deleteHighway: Self = this.set("highway", js.undefined)
+    def setIsland(value: IMapElementStyle): Self = StObject.set(x, "island", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndigenousPeoplesReserve(value: IMapElementStyle): Self = this.set("indigenousPeoplesReserve", value.asInstanceOf[js.Any])
+    def setIslandUndefined: Self = StObject.set(x, "island", js.undefined)
     
     @scala.inline
-    def deleteIndigenousPeoplesReserve: Self = this.set("indigenousPeoplesReserve", js.undefined)
+    def setMajorRoad(value: IMapElementStyle): Self = StObject.set(x, "majorRoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsland(value: IMapElementStyle): Self = this.set("island", value.asInstanceOf[js.Any])
+    def setMajorRoadUndefined: Self = StObject.set(x, "majorRoad", js.undefined)
     
     @scala.inline
-    def deleteIsland: Self = this.set("island", js.undefined)
+    def setMapElement(value: IMapElementStyle): Self = StObject.set(x, "mapElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorRoad(value: IMapElementStyle): Self = this.set("majorRoad", value.asInstanceOf[js.Any])
+    def setMapElementUndefined: Self = StObject.set(x, "mapElement", js.undefined)
     
     @scala.inline
-    def deleteMajorRoad: Self = this.set("majorRoad", js.undefined)
+    def setMedical(value: IMapElementStyle): Self = StObject.set(x, "medical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapElement(value: IMapElementStyle): Self = this.set("mapElement", value.asInstanceOf[js.Any])
+    def setMedicalBuilding(value: IMapElementStyle): Self = StObject.set(x, "medicalBuilding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapElement: Self = this.set("mapElement", js.undefined)
+    def setMedicalBuildingUndefined: Self = StObject.set(x, "medicalBuilding", js.undefined)
     
     @scala.inline
-    def setMedical(value: IMapElementStyle): Self = this.set("medical", value.asInstanceOf[js.Any])
+    def setMedicalUndefined: Self = StObject.set(x, "medical", js.undefined)
     
     @scala.inline
-    def deleteMedical: Self = this.set("medical", js.undefined)
+    def setMilitary(value: IMapElementStyle): Self = StObject.set(x, "military", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedicalBuilding(value: IMapElementStyle): Self = this.set("medicalBuilding", value.asInstanceOf[js.Any])
+    def setMilitaryUndefined: Self = StObject.set(x, "military", js.undefined)
     
     @scala.inline
-    def deleteMedicalBuilding: Self = this.set("medicalBuilding", js.undefined)
+    def setNaturalPoint(value: IMapElementStyle): Self = StObject.set(x, "naturalPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMilitary(value: IMapElementStyle): Self = this.set("military", value.asInstanceOf[js.Any])
+    def setNaturalPointUndefined: Self = StObject.set(x, "naturalPoint", js.undefined)
     
     @scala.inline
-    def deleteMilitary: Self = this.set("military", js.undefined)
+    def setNautical(value: IMapElementStyle): Self = StObject.set(x, "nautical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNaturalPoint(value: IMapElementStyle): Self = this.set("naturalPoint", value.asInstanceOf[js.Any])
+    def setNauticalUndefined: Self = StObject.set(x, "nautical", js.undefined)
     
     @scala.inline
-    def deleteNaturalPoint: Self = this.set("naturalPoint", js.undefined)
+    def setNeighborhood(value: IMapElementStyle): Self = StObject.set(x, "neighborhood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNautical(value: IMapElementStyle): Self = this.set("nautical", value.asInstanceOf[js.Any])
+    def setNeighborhoodUndefined: Self = StObject.set(x, "neighborhood", js.undefined)
     
     @scala.inline
-    def deleteNautical: Self = this.set("nautical", js.undefined)
+    def setPark(value: IMapElementStyle): Self = StObject.set(x, "park", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeighborhood(value: IMapElementStyle): Self = this.set("neighborhood", value.asInstanceOf[js.Any])
+    def setParkUndefined: Self = StObject.set(x, "park", js.undefined)
     
     @scala.inline
-    def deleteNeighborhood: Self = this.set("neighborhood", js.undefined)
+    def setPeak(value: IMapElementStyle): Self = StObject.set(x, "peak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPark(value: IMapElementStyle): Self = this.set("park", value.asInstanceOf[js.Any])
+    def setPeakUndefined: Self = StObject.set(x, "peak", js.undefined)
     
     @scala.inline
-    def deletePark: Self = this.set("park", js.undefined)
+    def setPlayingField(value: IMapElementStyle): Self = StObject.set(x, "playingField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeak(value: IMapElementStyle): Self = this.set("peak", value.asInstanceOf[js.Any])
+    def setPlayingFieldUndefined: Self = StObject.set(x, "playingField", js.undefined)
     
     @scala.inline
-    def deletePeak: Self = this.set("peak", js.undefined)
+    def setPoint(value: IMapElementStyle): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayingField(value: IMapElementStyle): Self = this.set("playingField", value.asInstanceOf[js.Any])
+    def setPointOfInterest(value: IMapElementStyle): Self = StObject.set(x, "pointOfInterest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlayingField: Self = this.set("playingField", js.undefined)
+    def setPointOfInterestUndefined: Self = StObject.set(x, "pointOfInterest", js.undefined)
     
     @scala.inline
-    def setPoint(value: IMapElementStyle): Self = this.set("point", value.asInstanceOf[js.Any])
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
     @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
+    def setPolitical(value: IBorderedMapElementStyle): Self = StObject.set(x, "political", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointOfInterest(value: IMapElementStyle): Self = this.set("pointOfInterest", value.asInstanceOf[js.Any])
+    def setPoliticalUndefined: Self = StObject.set(x, "political", js.undefined)
     
     @scala.inline
-    def deletePointOfInterest: Self = this.set("pointOfInterest", js.undefined)
+    def setPopulatedPlace(value: IMapElementStyle): Self = StObject.set(x, "populatedPlace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolitical(value: IBorderedMapElementStyle): Self = this.set("political", value.asInstanceOf[js.Any])
+    def setPopulatedPlaceUndefined: Self = StObject.set(x, "populatedPlace", js.undefined)
     
     @scala.inline
-    def deletePolitical: Self = this.set("political", js.undefined)
+    def setRailway(value: IMapElementStyle): Self = StObject.set(x, "railway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopulatedPlace(value: IMapElementStyle): Self = this.set("populatedPlace", value.asInstanceOf[js.Any])
+    def setRailwayUndefined: Self = StObject.set(x, "railway", js.undefined)
     
     @scala.inline
-    def deletePopulatedPlace: Self = this.set("populatedPlace", js.undefined)
+    def setRamp(value: IMapElementStyle): Self = StObject.set(x, "ramp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRailway(value: IMapElementStyle): Self = this.set("railway", value.asInstanceOf[js.Any])
+    def setRampUndefined: Self = StObject.set(x, "ramp", js.undefined)
     
     @scala.inline
-    def deleteRailway: Self = this.set("railway", js.undefined)
+    def setReserve(value: IMapElementStyle): Self = StObject.set(x, "reserve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRamp(value: IMapElementStyle): Self = this.set("ramp", value.asInstanceOf[js.Any])
+    def setReserveUndefined: Self = StObject.set(x, "reserve", js.undefined)
     
     @scala.inline
-    def deleteRamp: Self = this.set("ramp", js.undefined)
+    def setRiver(value: IMapElementStyle): Self = StObject.set(x, "river", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReserve(value: IMapElementStyle): Self = this.set("reserve", value.asInstanceOf[js.Any])
+    def setRiverUndefined: Self = StObject.set(x, "river", js.undefined)
     
     @scala.inline
-    def deleteReserve: Self = this.set("reserve", js.undefined)
+    def setRoad(value: IMapElementStyle): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiver(value: IMapElementStyle): Self = this.set("river", value.asInstanceOf[js.Any])
+    def setRoadExit(value: IMapElementStyle): Self = StObject.set(x, "roadExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRiver: Self = this.set("river", js.undefined)
+    def setRoadExitUndefined: Self = StObject.set(x, "roadExit", js.undefined)
     
     @scala.inline
-    def setRoad(value: IMapElementStyle): Self = this.set("road", value.asInstanceOf[js.Any])
+    def setRoadUndefined: Self = StObject.set(x, "road", js.undefined)
     
     @scala.inline
-    def deleteRoad: Self = this.set("road", js.undefined)
+    def setRunway(value: IMapElementStyle): Self = StObject.set(x, "runway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoadExit(value: IMapElementStyle): Self = this.set("roadExit", value.asInstanceOf[js.Any])
+    def setRunwayUndefined: Self = StObject.set(x, "runway", js.undefined)
     
     @scala.inline
-    def deleteRoadExit: Self = this.set("roadExit", js.undefined)
+    def setSand(value: IMapElementStyle): Self = StObject.set(x, "sand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunway(value: IMapElementStyle): Self = this.set("runway", value.asInstanceOf[js.Any])
+    def setSandUndefined: Self = StObject.set(x, "sand", js.undefined)
     
     @scala.inline
-    def deleteRunway: Self = this.set("runway", js.undefined)
+    def setShoppingCenter(value: IMapElementStyle): Self = StObject.set(x, "shoppingCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSand(value: IMapElementStyle): Self = this.set("sand", value.asInstanceOf[js.Any])
+    def setShoppingCenterUndefined: Self = StObject.set(x, "shoppingCenter", js.undefined)
     
     @scala.inline
-    def deleteSand: Self = this.set("sand", js.undefined)
+    def setStadium(value: IMapElementStyle): Self = StObject.set(x, "stadium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShoppingCenter(value: IMapElementStyle): Self = this.set("shoppingCenter", value.asInstanceOf[js.Any])
+    def setStadiumUndefined: Self = StObject.set(x, "stadium", js.undefined)
     
     @scala.inline
-    def deleteShoppingCenter: Self = this.set("shoppingCenter", js.undefined)
+    def setStreet(value: IMapElementStyle): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStadium(value: IMapElementStyle): Self = this.set("stadium", value.asInstanceOf[js.Any])
+    def setStreetUndefined: Self = StObject.set(x, "street", js.undefined)
     
     @scala.inline
-    def deleteStadium: Self = this.set("stadium", js.undefined)
+    def setStructure(value: IMapElementStyle): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreet(value: IMapElementStyle): Self = this.set("street", value.asInstanceOf[js.Any])
+    def setStructureUndefined: Self = StObject.set(x, "structure", js.undefined)
     
     @scala.inline
-    def deleteStreet: Self = this.set("street", js.undefined)
+    def setTollRoad(value: IMapElementStyle): Self = StObject.set(x, "tollRoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStructure(value: IMapElementStyle): Self = this.set("structure", value.asInstanceOf[js.Any])
+    def setTollRoadUndefined: Self = StObject.set(x, "tollRoad", js.undefined)
     
     @scala.inline
-    def deleteStructure: Self = this.set("structure", js.undefined)
+    def setTrail(value: IMapElementStyle): Self = StObject.set(x, "trail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTollRoad(value: IMapElementStyle): Self = this.set("tollRoad", value.asInstanceOf[js.Any])
+    def setTrailUndefined: Self = StObject.set(x, "trail", js.undefined)
     
     @scala.inline
-    def deleteTollRoad: Self = this.set("tollRoad", js.undefined)
+    def setTransit(value: IMapElementStyle): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrail(value: IMapElementStyle): Self = this.set("trail", value.asInstanceOf[js.Any])
+    def setTransitBuilding(value: IMapElementStyle): Self = StObject.set(x, "transitBuilding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrail: Self = this.set("trail", js.undefined)
+    def setTransitBuildingUndefined: Self = StObject.set(x, "transitBuilding", js.undefined)
     
     @scala.inline
-    def setTransit(value: IMapElementStyle): Self = this.set("transit", value.asInstanceOf[js.Any])
+    def setTransitUndefined: Self = StObject.set(x, "transit", js.undefined)
     
     @scala.inline
-    def deleteTransit: Self = this.set("transit", js.undefined)
+    def setTransportation(value: IMapElementStyle): Self = StObject.set(x, "transportation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitBuilding(value: IMapElementStyle): Self = this.set("transitBuilding", value.asInstanceOf[js.Any])
+    def setTransportationUndefined: Self = StObject.set(x, "transportation", js.undefined)
     
     @scala.inline
-    def deleteTransitBuilding: Self = this.set("transitBuilding", js.undefined)
+    def setUnpavedStreet(value: IMapElementStyle): Self = StObject.set(x, "unpavedStreet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportation(value: IMapElementStyle): Self = this.set("transportation", value.asInstanceOf[js.Any])
+    def setUnpavedStreetUndefined: Self = StObject.set(x, "unpavedStreet", js.undefined)
     
     @scala.inline
-    def deleteTransportation: Self = this.set("transportation", js.undefined)
+    def setVegetation(value: IMapElementStyle): Self = StObject.set(x, "vegetation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnpavedStreet(value: IMapElementStyle): Self = this.set("unpavedStreet", value.asInstanceOf[js.Any])
+    def setVegetationUndefined: Self = StObject.set(x, "vegetation", js.undefined)
     
     @scala.inline
-    def deleteUnpavedStreet: Self = this.set("unpavedStreet", js.undefined)
+    def setVolcanicPeak(value: IMapElementStyle): Self = StObject.set(x, "volcanicPeak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVegetation(value: IMapElementStyle): Self = this.set("vegetation", value.asInstanceOf[js.Any])
+    def setVolcanicPeakUndefined: Self = StObject.set(x, "volcanicPeak", js.undefined)
     
     @scala.inline
-    def deleteVegetation: Self = this.set("vegetation", js.undefined)
+    def setWater(value: IMapElementStyle): Self = StObject.set(x, "water", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolcanicPeak(value: IMapElementStyle): Self = this.set("volcanicPeak", value.asInstanceOf[js.Any])
+    def setWaterPoint(value: IMapElementStyle): Self = StObject.set(x, "waterPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVolcanicPeak: Self = this.set("volcanicPeak", js.undefined)
+    def setWaterPointUndefined: Self = StObject.set(x, "waterPoint", js.undefined)
     
     @scala.inline
-    def setWater(value: IMapElementStyle): Self = this.set("water", value.asInstanceOf[js.Any])
+    def setWaterRoute(value: IMapElementStyle): Self = StObject.set(x, "waterRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWater: Self = this.set("water", js.undefined)
+    def setWaterRouteUndefined: Self = StObject.set(x, "waterRoute", js.undefined)
     
     @scala.inline
-    def setWaterPoint(value: IMapElementStyle): Self = this.set("waterPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaterPoint: Self = this.set("waterPoint", js.undefined)
-    
-    @scala.inline
-    def setWaterRoute(value: IMapElementStyle): Self = this.set("waterRoute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaterRoute: Self = this.set("waterRoute", js.undefined)
+    def setWaterUndefined: Self = StObject.set(x, "water", js.undefined)
   }
 }

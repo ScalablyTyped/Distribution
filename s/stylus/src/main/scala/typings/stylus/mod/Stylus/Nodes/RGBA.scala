@@ -1,6 +1,7 @@
 package typings.stylus.mod.Stylus.Nodes
 
 import typings.stylus.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,48 +74,36 @@ object RGBA {
   }
   
   @scala.inline
-  implicit class RGBAOps[Self <: RGBA] (val x: Self) extends AnyVal {
+  implicit class RGBAMutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdd(value: (Double, Double, Double, Double) => RGBA): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA(value: Double): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setDivide(value: Double => RGBA): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: (Double, Double, Double, Double) => RGBA): Self = this.set("add", js.Any.fromFunction4(value))
+    def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: Double): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setHsla(value: HSLA): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivide(value: Double => RGBA): Self = this.set("divide", js.Any.fromFunction1(value))
+    def setMultiply(value: Double => RGBA): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setG(value: Double): Self = this.set("g", value.asInstanceOf[js.Any])
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsla(value: HSLA): Self = this.set("hsla", value.asInstanceOf[js.Any])
+    def setRgba(value: RGBA): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiply(value: Double => RGBA): Self = this.set("multiply", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRgba(value: RGBA): Self = this.set("rgba", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubstract(value: (Double, Double, Double, Double) => RGBA): Self = this.set("substract", js.Any.fromFunction4(value))
+    def setSubstract(value: (Double, Double, Double, Double) => RGBA): Self = StObject.set(x, "substract", js.Any.fromFunction4(value))
   }
 }

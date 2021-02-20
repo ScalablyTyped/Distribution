@@ -1,76 +1,64 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AttachmentType extends js.Object
+sealed trait AttachmentType extends StObject
 @JSImport("vso-node-api/interfaces/TestInterfaces", "AttachmentType")
 @js.native
-object AttachmentType extends js.Object {
+object AttachmentType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AttachmentType with Double] = js.native
   
   @js.native
   sealed trait AfnStrip extends AttachmentType
-  /* 1 */ @js.native
-  object AfnStrip extends TopLevel[AfnStrip with Double]
+  /* 1 */ val AfnStrip: typings.vsoNodeApi.testInterfacesMod.AttachmentType.AfnStrip with Double = js.native
   
   @js.native
   sealed trait BugFilingData extends AttachmentType
-  /* 2 */ @js.native
-  object BugFilingData extends TopLevel[BugFilingData with Double]
+  /* 2 */ val BugFilingData: typings.vsoNodeApi.testInterfacesMod.AttachmentType.BugFilingData with Double = js.native
   
   @js.native
   sealed trait CodeCoverage extends AttachmentType
-  /* 3 */ @js.native
-  object CodeCoverage extends TopLevel[CodeCoverage with Double]
+  /* 3 */ val CodeCoverage: typings.vsoNodeApi.testInterfacesMod.AttachmentType.CodeCoverage with Double = js.native
   
   @js.native
   sealed trait ConsoleLog extends AttachmentType
-  /* 11 */ @js.native
-  object ConsoleLog extends TopLevel[ConsoleLog with Double]
+  /* 11 */ val ConsoleLog: typings.vsoNodeApi.testInterfacesMod.AttachmentType.ConsoleLog with Double = js.native
   
   @js.native
   sealed trait GeneralAttachment extends AttachmentType
-  /* 0 */ @js.native
-  object GeneralAttachment extends TopLevel[GeneralAttachment with Double]
+  /* 0 */ val GeneralAttachment: typings.vsoNodeApi.testInterfacesMod.AttachmentType.GeneralAttachment with Double = js.native
   
   @js.native
   sealed trait IntermediateCollectorData extends AttachmentType
-  /* 4 */ @js.native
-  object IntermediateCollectorData extends TopLevel[IntermediateCollectorData with Double]
+  /* 4 */ val IntermediateCollectorData: typings.vsoNodeApi.testInterfacesMod.AttachmentType.IntermediateCollectorData with Double = js.native
   
   @js.native
   sealed trait RunConfig extends AttachmentType
-  /* 5 */ @js.native
-  object RunConfig extends TopLevel[RunConfig with Double]
+  /* 5 */ val RunConfig: typings.vsoNodeApi.testInterfacesMod.AttachmentType.RunConfig with Double = js.native
   
   @js.native
   sealed trait TestImpactDetails extends AttachmentType
-  /* 6 */ @js.native
-  object TestImpactDetails extends TopLevel[TestImpactDetails with Double]
+  /* 6 */ val TestImpactDetails: typings.vsoNodeApi.testInterfacesMod.AttachmentType.TestImpactDetails with Double = js.native
   
   @js.native
   sealed trait TmiTestResultDetail extends AttachmentType
-  /* 9 */ @js.native
-  object TmiTestResultDetail extends TopLevel[TmiTestResultDetail with Double]
+  /* 9 */ val TmiTestResultDetail: typings.vsoNodeApi.testInterfacesMod.AttachmentType.TmiTestResultDetail with Double = js.native
   
   @js.native
   sealed trait TmiTestRunDeploymentFiles extends AttachmentType
-  /* 7 */ @js.native
-  object TmiTestRunDeploymentFiles extends TopLevel[TmiTestRunDeploymentFiles with Double]
+  /* 7 */ val TmiTestRunDeploymentFiles: typings.vsoNodeApi.testInterfacesMod.AttachmentType.TmiTestRunDeploymentFiles with Double = js.native
   
   @js.native
   sealed trait TmiTestRunReverseDeploymentFiles extends AttachmentType
-  /* 8 */ @js.native
-  object TmiTestRunReverseDeploymentFiles extends TopLevel[TmiTestRunReverseDeploymentFiles with Double]
+  /* 8 */ val TmiTestRunReverseDeploymentFiles: typings.vsoNodeApi.testInterfacesMod.AttachmentType.TmiTestRunReverseDeploymentFiles with Double = js.native
   
   @js.native
   sealed trait TmiTestRunSummary extends AttachmentType
-  /* 10 */ @js.native
-  object TmiTestRunSummary extends TopLevel[TmiTestRunSummary with Double]
+  /* 10 */ val TmiTestRunSummary: typings.vsoNodeApi.testInterfacesMod.AttachmentType.TmiTestRunSummary with Double = js.native
 }

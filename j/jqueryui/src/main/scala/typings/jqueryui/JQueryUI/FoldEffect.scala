@@ -1,11 +1,12 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FoldEffect extends js.Object {
+trait FoldEffect extends StObject {
   
   var horizFirst: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object FoldEffect {
   }
   
   @scala.inline
-  implicit class FoldEffectOps[Self <: FoldEffect] (val x: Self) extends AnyVal {
+  implicit class FoldEffectMutableBuilder[Self <: FoldEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizFirst(value: Boolean): Self = StObject.set(x, "horizFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizFirstUndefined: Self = StObject.set(x, "horizFirst", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizFirst(value: Boolean): Self = this.set("horizFirst", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHorizFirst: Self = this.set("horizFirst", js.undefined)
-    
-    @scala.inline
-    def setSize(value: js.Any): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Group extends js.Object {
+trait Group extends StObject {
   
   def addToGroup(group: js.Object, nodes: js.Array[js.Object]): Unit = js.native
   def addToGroup(group: js.Object, nodes: js.Object): Unit = js.native

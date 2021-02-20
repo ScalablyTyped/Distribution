@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1RouteMap extends js.Object {
+trait GoogleCloudMlV1RouteMap extends StObject {
   
   /**
     * HTTP path on the container to send health checkss to. AI Platform Prediction intermittently sends GET requests to this path on the container's IP address and port to check that the
@@ -38,30 +39,18 @@ object GoogleCloudMlV1RouteMap {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1RouteMapOps[Self <: GoogleCloudMlV1RouteMap] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1RouteMapMutableBuilder[Self <: GoogleCloudMlV1RouteMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealth(value: String): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredict(value: String): Self = StObject.set(x, "predict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealth(value: String): Self = this.set("health", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealth: Self = this.set("health", js.undefined)
-    
-    @scala.inline
-    def setPredict(value: String): Self = this.set("predict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePredict: Self = this.set("predict", js.undefined)
+    def setPredictUndefined: Self = StObject.set(x, "predict", js.undefined)
   }
 }

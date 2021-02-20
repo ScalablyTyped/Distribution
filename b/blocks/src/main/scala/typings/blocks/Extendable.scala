@@ -1,11 +1,12 @@
 package typings.blocks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Extendable[T] extends js.Object {
+trait Extendable[T] extends StObject {
   
   def extend(arg: js.Any): T = js.native
   def extend(name: js.UndefOr[scala.Nothing], options: js.Any*): T = js.native

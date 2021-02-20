@@ -1,31 +1,62 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a BatchDeleteEntitiesRequest. */
-trait IBatchDeleteEntitiesRequest extends js.Object {
+@js.native
+trait IBatchDeleteEntitiesRequest extends StObject {
+  
   /** BatchDeleteEntitiesRequest entityValues */
-  var entityValues: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var entityValues: js.UndefOr[js.Array[String] | Null] = js.native
+  
   /** BatchDeleteEntitiesRequest languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.undefined
+  var languageCode: js.UndefOr[String | Null] = js.native
+  
   /** BatchDeleteEntitiesRequest parent */
-  var parent: js.UndefOr[String | Null] = js.undefined
+  var parent: js.UndefOr[String | Null] = js.native
 }
-
 object IBatchDeleteEntitiesRequest {
+  
   @scala.inline
-  def apply(
-    entityValues: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    languageCode: js.UndefOr[Null | String] = js.undefined,
-    parent: js.UndefOr[Null | String] = js.undefined
-  ): IBatchDeleteEntitiesRequest = {
+  def apply(): IBatchDeleteEntitiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(entityValues)) __obj.updateDynamic("entityValues")(entityValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchDeleteEntitiesRequest]
   }
+  
+  @scala.inline
+  implicit class IBatchDeleteEntitiesRequestMutableBuilder[Self <: IBatchDeleteEntitiesRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setEntityValues(value: js.Array[String]): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEntityValuesNull: Self = StObject.set(x, "entityValues", null)
+    
+    @scala.inline
+    def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
+    
+    @scala.inline
+    def setEntityValuesVarargs(value: String*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
+    
+    @scala.inline
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    
+    @scala.inline
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    
+    @scala.inline
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParentNull: Self = StObject.set(x, "parent", null)
+    
+    @scala.inline
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+  }
 }
-

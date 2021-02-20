@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterSet extends js.Object {
+trait FilterSet extends StObject {
   
   /** An absolute date range, defined by a start date and an end date. Interpreted relative to Pacific time zone. */
   var absoluteDateRange: js.UndefOr[AbsoluteDateRange] = js.native
@@ -80,117 +81,105 @@ object FilterSet {
   }
   
   @scala.inline
-  implicit class FilterSetOps[Self <: FilterSet] (val x: Self) extends AnyVal {
+  implicit class FilterSetMutableBuilder[Self <: FilterSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsoluteDateRange(value: AbsoluteDateRange): Self = StObject.set(x, "absoluteDateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsoluteDateRangeUndefined: Self = StObject.set(x, "absoluteDateRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreakdownDimensions(value: js.Array[String]): Self = StObject.set(x, "breakdownDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsoluteDateRange(value: AbsoluteDateRange): Self = this.set("absoluteDateRange", value.asInstanceOf[js.Any])
+    def setBreakdownDimensionsUndefined: Self = StObject.set(x, "breakdownDimensions", js.undefined)
     
     @scala.inline
-    def deleteAbsoluteDateRange: Self = this.set("absoluteDateRange", js.undefined)
+    def setBreakdownDimensionsVarargs(value: String*): Self = StObject.set(x, "breakdownDimensions", js.Array(value :_*))
     
     @scala.inline
-    def setBreakdownDimensionsVarargs(value: String*): Self = this.set("breakdownDimensions", js.Array(value :_*))
+    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakdownDimensions(value: js.Array[String]): Self = this.set("breakdownDimensions", value.asInstanceOf[js.Any])
+    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
     @scala.inline
-    def deleteBreakdownDimensions: Self = this.set("breakdownDimensions", js.undefined)
+    def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeId(value: String): Self = this.set("creativeId", value.asInstanceOf[js.Any])
+    def setDealIdUndefined: Self = StObject.set(x, "dealId", js.undefined)
     
     @scala.inline
-    def deleteCreativeId: Self = this.set("creativeId", js.undefined)
+    def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDealId(value: String): Self = this.set("dealId", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def deleteDealId: Self = this.set("dealId", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: String): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setFormats(value: js.Array[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
     
     @scala.inline
-    def setFormatsVarargs(value: String*): Self = this.set("formats", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormats(value: js.Array[String]): Self = this.set("formats", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFormats: Self = this.set("formats", js.undefined)
+    def setPlatforms(value: js.Array[String]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value :_*))
     
     @scala.inline
-    def setPlatformsVarargs(value: String*): Self = this.set("platforms", js.Array(value :_*))
+    def setPublisherIdentifiers(value: js.Array[String]): Self = StObject.set(x, "publisherIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatforms(value: js.Array[String]): Self = this.set("platforms", value.asInstanceOf[js.Any])
+    def setPublisherIdentifiersUndefined: Self = StObject.set(x, "publisherIdentifiers", js.undefined)
     
     @scala.inline
-    def deletePlatforms: Self = this.set("platforms", js.undefined)
+    def setPublisherIdentifiersVarargs(value: String*): Self = StObject.set(x, "publisherIdentifiers", js.Array(value :_*))
     
     @scala.inline
-    def setPublisherIdentifiersVarargs(value: String*): Self = this.set("publisherIdentifiers", js.Array(value :_*))
+    def setRealtimeTimeRange(value: RealtimeTimeRange): Self = StObject.set(x, "realtimeTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherIdentifiers(value: js.Array[String]): Self = this.set("publisherIdentifiers", value.asInstanceOf[js.Any])
+    def setRealtimeTimeRangeUndefined: Self = StObject.set(x, "realtimeTimeRange", js.undefined)
     
     @scala.inline
-    def deletePublisherIdentifiers: Self = this.set("publisherIdentifiers", js.undefined)
+    def setRelativeDateRange(value: RelativeDateRange): Self = StObject.set(x, "relativeDateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealtimeTimeRange(value: RealtimeTimeRange): Self = this.set("realtimeTimeRange", value.asInstanceOf[js.Any])
+    def setRelativeDateRangeUndefined: Self = StObject.set(x, "relativeDateRange", js.undefined)
     
     @scala.inline
-    def deleteRealtimeTimeRange: Self = this.set("realtimeTimeRange", js.undefined)
+    def setSellerNetworkIds(value: js.Array[Double]): Self = StObject.set(x, "sellerNetworkIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeDateRange(value: RelativeDateRange): Self = this.set("relativeDateRange", value.asInstanceOf[js.Any])
+    def setSellerNetworkIdsUndefined: Self = StObject.set(x, "sellerNetworkIds", js.undefined)
     
     @scala.inline
-    def deleteRelativeDateRange: Self = this.set("relativeDateRange", js.undefined)
+    def setSellerNetworkIdsVarargs(value: Double*): Self = StObject.set(x, "sellerNetworkIds", js.Array(value :_*))
     
     @scala.inline
-    def setSellerNetworkIdsVarargs(value: Double*): Self = this.set("sellerNetworkIds", js.Array(value :_*))
+    def setTimeSeriesGranularity(value: String): Self = StObject.set(x, "timeSeriesGranularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSellerNetworkIds(value: js.Array[Double]): Self = this.set("sellerNetworkIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSellerNetworkIds: Self = this.set("sellerNetworkIds", js.undefined)
-    
-    @scala.inline
-    def setTimeSeriesGranularity(value: String): Self = this.set("timeSeriesGranularity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSeriesGranularity: Self = this.set("timeSeriesGranularity", js.undefined)
+    def setTimeSeriesGranularityUndefined: Self = StObject.set(x, "timeSeriesGranularity", js.undefined)
   }
 }

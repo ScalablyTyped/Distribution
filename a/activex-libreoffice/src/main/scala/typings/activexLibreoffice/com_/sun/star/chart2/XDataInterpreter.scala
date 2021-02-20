@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,30 +55,18 @@ object XDataInterpreter {
   }
   
   @scala.inline
-  implicit class XDataInterpreterOps[Self <: XDataInterpreter] (val x: Self) extends AnyVal {
+  implicit class XDataInterpreterMutableBuilder[Self <: XDataInterpreter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterpretDataSource(value: (XDataSource, SeqEquiv[PropertyValue], SeqEquiv[XDataSeries]) => InterpretedData): Self = StObject.set(x, "interpretDataSource", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDataCompatible(value: InterpretedData => Boolean): Self = StObject.set(x, "isDataCompatible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMergeInterpretedData(value: InterpretedData => XDataSource): Self = StObject.set(x, "mergeInterpretedData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInterpretDataSource(value: (XDataSource, SeqEquiv[PropertyValue], SeqEquiv[XDataSeries]) => InterpretedData): Self = this.set("interpretDataSource", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setIsDataCompatible(value: InterpretedData => Boolean): Self = this.set("isDataCompatible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMergeInterpretedData(value: InterpretedData => XDataSource): Self = this.set("mergeInterpretedData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReinterpretDataSeries(value: InterpretedData => InterpretedData): Self = this.set("reinterpretDataSeries", js.Any.fromFunction1(value))
+    def setReinterpretDataSeries(value: InterpretedData => InterpretedData): Self = StObject.set(x, "reinterpretDataSeries", js.Any.fromFunction1(value))
   }
 }

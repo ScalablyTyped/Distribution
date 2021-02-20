@@ -4,12 +4,13 @@ import typings.algoliaClientSearch.algoliaClientSearchStrings.contains
 import typings.algoliaClientSearch.algoliaClientSearchStrings.endsWith
 import typings.algoliaClientSearch.algoliaClientSearchStrings.is
 import typings.algoliaClientSearch.algoliaClientSearchStrings.startsWith
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Condition extends js.Object {
+trait Condition extends StObject {
   
   /**
     * If set to true, alternatives make the rule to trigger on synonyms, typos and plurals.
@@ -42,42 +43,30 @@ object Condition {
   }
   
   @scala.inline
-  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternatives(value: Boolean): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchoring(value: is | startsWith | endsWith | contains): Self = StObject.set(x, "anchoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternatives(value: Boolean): Self = this.set("alternatives", value.asInstanceOf[js.Any])
+    def setAnchoringUndefined: Self = StObject.set(x, "anchoring", js.undefined)
     
     @scala.inline
-    def deleteAlternatives: Self = this.set("alternatives", js.undefined)
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchoring(value: is | startsWith | endsWith | contains): Self = this.set("anchoring", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteAnchoring: Self = this.set("anchoring", js.undefined)
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
-    
-    @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }
 }

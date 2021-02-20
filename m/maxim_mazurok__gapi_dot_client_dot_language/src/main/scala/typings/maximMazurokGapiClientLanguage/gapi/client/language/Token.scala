@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Token extends js.Object {
+trait Token extends StObject {
   
   /** Dependency tree parse for this token. */
   var dependencyEdge: js.UndefOr[DependencyEdge] = js.native
@@ -28,42 +29,30 @@ object Token {
   }
   
   @scala.inline
-  implicit class TokenOps[Self <: Token] (val x: Self) extends AnyVal {
+  implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependencyEdge(value: DependencyEdge): Self = StObject.set(x, "dependencyEdge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependencyEdgeUndefined: Self = StObject.set(x, "dependencyEdge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencyEdge(value: DependencyEdge): Self = this.set("dependencyEdge", value.asInstanceOf[js.Any])
+    def setLemmaUndefined: Self = StObject.set(x, "lemma", js.undefined)
     
     @scala.inline
-    def deleteDependencyEdge: Self = this.set("dependencyEdge", js.undefined)
+    def setPartOfSpeech(value: PartOfSpeech): Self = StObject.set(x, "partOfSpeech", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLemma(value: String): Self = this.set("lemma", value.asInstanceOf[js.Any])
+    def setPartOfSpeechUndefined: Self = StObject.set(x, "partOfSpeech", js.undefined)
     
     @scala.inline
-    def deleteLemma: Self = this.set("lemma", js.undefined)
+    def setText(value: TextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartOfSpeech(value: PartOfSpeech): Self = this.set("partOfSpeech", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartOfSpeech: Self = this.set("partOfSpeech", js.undefined)
-    
-    @scala.inline
-    def setText(value: TextSpan): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

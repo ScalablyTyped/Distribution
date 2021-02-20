@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventNotificationConfig extends js.Object {
+trait EventNotificationConfig extends StObject {
   
   /** A Cloud Pub/Sub topic name. For example, `projects/myProject/topics/deviceEvents`. */
   var pubsubTopicName: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object EventNotificationConfig {
   }
   
   @scala.inline
-  implicit class EventNotificationConfigOps[Self <: EventNotificationConfig] (val x: Self) extends AnyVal {
+  implicit class EventNotificationConfigMutableBuilder[Self <: EventNotificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPubsubTopicName(value: String): Self = StObject.set(x, "pubsubTopicName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPubsubTopicNameUndefined: Self = StObject.set(x, "pubsubTopicName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubfolderMatches(value: String): Self = StObject.set(x, "subfolderMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubsubTopicName(value: String): Self = this.set("pubsubTopicName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubsubTopicName: Self = this.set("pubsubTopicName", js.undefined)
-    
-    @scala.inline
-    def setSubfolderMatches(value: String): Self = this.set("subfolderMatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubfolderMatches: Self = this.set("subfolderMatches", js.undefined)
+    def setSubfolderMatchesUndefined: Self = StObject.set(x, "subfolderMatches", js.undefined)
   }
 }

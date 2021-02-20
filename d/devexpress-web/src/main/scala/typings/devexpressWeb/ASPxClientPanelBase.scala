@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,30 +62,18 @@ object ASPxClientPanelBase {
   }
   
   @scala.inline
-  implicit class ASPxClientPanelBaseOps[Self <: ASPxClientPanelBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientPanelBaseMutableBuilder[Self <: ASPxClientPanelBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetContentHtml(value: () => String): Self = StObject.set(x, "GetContentHtml", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetContentHtml(value: String => Unit): Self = StObject.set(x, "SetContentHtml", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetContentHtml(value: () => String): Self = this.set("GetContentHtml", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = this.set("GetEnabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetContentHtml(value: String => Unit): Self = this.set("SetContentHtml", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = this.set("SetEnabled", js.Any.fromFunction1(value))
+    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
   }
 }

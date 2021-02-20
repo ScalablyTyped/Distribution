@@ -1,11 +1,12 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TableauEventName extends js.Object
+sealed trait TableauEventName extends StObject
 //#endregion
 //#region Viz Event Classes
 /**
@@ -16,7 +17,7 @@ sealed trait TableauEventName extends js.Object
   */
 @JSGlobal("tableau.TableauEventName")
 @js.native
-object TableauEventName extends js.Object {
+object TableauEventName extends StObject {
   
   /**
     * Raised when a custom view has finished loading.

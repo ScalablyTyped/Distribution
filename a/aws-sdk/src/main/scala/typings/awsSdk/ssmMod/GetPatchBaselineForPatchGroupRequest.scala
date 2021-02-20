@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPatchBaselineForPatchGroupRequest extends js.Object {
+trait GetPatchBaselineForPatchGroupRequest extends StObject {
   
   /**
     * Returns he operating system rule specified for patch groups using the patch baseline.
@@ -26,27 +27,15 @@ object GetPatchBaselineForPatchGroupRequest {
   }
   
   @scala.inline
-  implicit class GetPatchBaselineForPatchGroupRequestOps[Self <: GetPatchBaselineForPatchGroupRequest] (val x: Self) extends AnyVal {
+  implicit class GetPatchBaselineForPatchGroupRequestMutableBuilder[Self <: GetPatchBaselineForPatchGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPatchGroup(value: PatchGroup): Self = this.set("PatchGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = this.set("OperatingSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatingSystem: Self = this.set("OperatingSystem", js.undefined)
+    def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
   }
 }

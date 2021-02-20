@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TtmlDestinationSettings extends js.Object {
+trait TtmlDestinationSettings extends StObject {
   
   /**
     * Pass through style and position information from a TTML-like input source (TTML, SMPTE-TT) to the TTML output.
@@ -21,24 +22,12 @@ object TtmlDestinationSettings {
   }
   
   @scala.inline
-  implicit class TtmlDestinationSettingsOps[Self <: TtmlDestinationSettings] (val x: Self) extends AnyVal {
+  implicit class TtmlDestinationSettingsMutableBuilder[Self <: TtmlDestinationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStylePassthrough(value: TtmlStylePassthrough): Self = StObject.set(x, "StylePassthrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStylePassthrough(value: TtmlStylePassthrough): Self = this.set("StylePassthrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStylePassthrough: Self = this.set("StylePassthrough", js.undefined)
+    def setStylePassthroughUndefined: Self = StObject.set(x, "StylePassthrough", js.undefined)
   }
 }

@@ -3,12 +3,13 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.drawing.RectanglePoint
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XLabeled extends js.Object {
+trait XLabeled extends StObject {
   
   var Label: XTitle = js.native
   
@@ -56,54 +57,42 @@ object XLabeled {
   }
   
   @scala.inline
-  implicit class XLabeledOps[Self <: XLabeled] (val x: Self) extends AnyVal {
+  implicit class XLabeledMutableBuilder[Self <: XLabeled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLabel(value: () => XTitle): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLabelAnchor(value: () => RectanglePoint): Self = StObject.set(x, "getLabelAnchor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOffset(value: () => SafeArray[Double]): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLabel(value: XTitle): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setGetOwnAnchor(value: () => RectanglePoint): Self = StObject.set(x, "getOwnAnchor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLabelAnchor(value: RectanglePoint): Self = this.set("LabelAnchor", value.asInstanceOf[js.Any])
+    def setLabel(value: XTitle): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: SafeArray[Double]): Self = this.set("Offset", value.asInstanceOf[js.Any])
+    def setLabelAnchor(value: RectanglePoint): Self = StObject.set(x, "LabelAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnAnchor(value: RectanglePoint): Self = this.set("OwnAnchor", value.asInstanceOf[js.Any])
+    def setOffset(value: SafeArray[Double]): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLabel(value: () => XTitle): Self = this.set("getLabel", js.Any.fromFunction0(value))
+    def setOwnAnchor(value: RectanglePoint): Self = StObject.set(x, "OwnAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLabelAnchor(value: () => RectanglePoint): Self = this.set("getLabelAnchor", js.Any.fromFunction0(value))
+    def setSetLabel(value: XTitle => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOffset(value: () => SafeArray[Double]): Self = this.set("getOffset", js.Any.fromFunction0(value))
+    def setSetLabelAnchor(value: RectanglePoint => Unit): Self = StObject.set(x, "setLabelAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOwnAnchor(value: () => RectanglePoint): Self = this.set("getOwnAnchor", js.Any.fromFunction0(value))
+    def setSetOffset(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLabel(value: XTitle => Unit): Self = this.set("setLabel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLabelAnchor(value: RectanglePoint => Unit): Self = this.set("setLabelAnchor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOffset(value: SeqEquiv[Double] => Unit): Self = this.set("setOffset", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOwnAnchor(value: RectanglePoint => Unit): Self = this.set("setOwnAnchor", js.Any.fromFunction1(value))
+    def setSetOwnAnchor(value: RectanglePoint => Unit): Self = StObject.set(x, "setOwnAnchor", js.Any.fromFunction1(value))
   }
 }

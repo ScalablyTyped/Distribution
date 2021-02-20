@@ -7,18 +7,19 @@ import typings.reactVis.anon.Color
 import typings.reactVis.reactVisStrings.horizontal
 import typings.reactVis.reactVisStrings.vertical
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchableDiscreteColorLegendProps extends js.Object {
+trait SearchableDiscreteColorLegendProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
   var height: js.UndefOr[Double] = js.native
   
-   // default: ''
+  // default: ''
   var items: js.Array[Color | String | ReactChild] = js.native
   
   var onItemClick: js.UndefOr[RVMouseEventHandler] = js.native
@@ -27,7 +28,7 @@ trait SearchableDiscreteColorLegendProps extends js.Object {
   
   var onItemMouseLeave: js.UndefOr[RVItemEventHandler] = js.native
   
-   // default: ''
+  // default: ''
   var onSearchChange: js.UndefOr[js.Function1[/* x */ js.Any, _]] = js.native
   
   var orientation: js.UndefOr[vertical | horizontal] = js.native
@@ -49,94 +50,82 @@ object SearchableDiscreteColorLegendProps {
   }
   
   @scala.inline
-  implicit class SearchableDiscreteColorLegendPropsOps[Self <: SearchableDiscreteColorLegendProps] (val x: Self) extends AnyVal {
+  implicit class SearchableDiscreteColorLegendPropsMutableBuilder[Self <: SearchableDiscreteColorLegendProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: (Color | String | ReactChild)*): Self = this.set("items", js.Array(value :_*))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[Color | String | ReactChild]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[Color | String | ReactChild]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: (Color | String | ReactChild)*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setOnItemClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
-    
-    @scala.inline
-    def setOnItemClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onItemClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnItemClick: Self = this.set("onItemClick", js.undefined)
+    def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
     
     @scala.inline
     def setOnItemMouseEnter(
       value: (/* item */ js.Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
-    ): Self = this.set("onItemMouseEnter", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onItemMouseEnter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnItemMouseEnter: Self = this.set("onItemMouseEnter", js.undefined)
+    def setOnItemMouseEnterUndefined: Self = StObject.set(x, "onItemMouseEnter", js.undefined)
     
     @scala.inline
     def setOnItemMouseLeave(
       value: (/* item */ js.Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
-    ): Self = this.set("onItemMouseLeave", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onItemMouseLeave", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnItemMouseLeave: Self = this.set("onItemMouseLeave", js.undefined)
+    def setOnItemMouseLeaveUndefined: Self = StObject.set(x, "onItemMouseLeave", js.undefined)
     
     @scala.inline
-    def setOnSearchChange(value: /* x */ js.Any => _): Self = this.set("onSearchChange", js.Any.fromFunction1(value))
+    def setOnSearchChange(value: /* x */ js.Any => _): Self = StObject.set(x, "onSearchChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnSearchChange: Self = this.set("onSearchChange", js.undefined)
+    def setOnSearchChangeUndefined: Self = StObject.set(x, "onSearchChange", js.undefined)
     
     @scala.inline
-    def setOrientation(value: vertical | horizontal): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def setSearchFn(value: (/* items */ js.Array[_], /* s */ String) => js.Array[_]): Self = this.set("searchFn", js.Any.fromFunction2(value))
+    def setSearchFn(value: (/* items */ js.Array[_], /* s */ String) => js.Array[_]): Self = StObject.set(x, "searchFn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSearchFn: Self = this.set("searchFn", js.undefined)
+    def setSearchFnUndefined: Self = StObject.set(x, "searchFn", js.undefined)
     
     @scala.inline
-    def setSearchPlaceholder(value: String): Self = this.set("searchPlaceholder", value.asInstanceOf[js.Any])
+    def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchPlaceholder: Self = this.set("searchPlaceholder", js.undefined)
+    def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
     
     @scala.inline
-    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
+    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

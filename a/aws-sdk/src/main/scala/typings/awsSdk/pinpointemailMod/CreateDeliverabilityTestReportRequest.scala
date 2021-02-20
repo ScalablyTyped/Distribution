@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDeliverabilityTestReportRequest extends js.Object {
+trait CreateDeliverabilityTestReportRequest extends StObject {
   
   /**
     * The HTML body of the message that you sent when you performed the predictive inbox placement test.
@@ -36,39 +37,27 @@ object CreateDeliverabilityTestReportRequest {
   }
   
   @scala.inline
-  implicit class CreateDeliverabilityTestReportRequestOps[Self <: CreateDeliverabilityTestReportRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDeliverabilityTestReportRequestMutableBuilder[Self <: CreateDeliverabilityTestReportRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: EmailContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromEmailAddress(value: EmailAddress): Self = StObject.set(x, "FromEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportName(value: ReportName): Self = StObject.set(x, "ReportName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: EmailContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setReportNameUndefined: Self = StObject.set(x, "ReportName", js.undefined)
     
     @scala.inline
-    def setFromEmailAddress(value: EmailAddress): Self = this.set("FromEmailAddress", value.asInstanceOf[js.Any])
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportName(value: ReportName): Self = this.set("ReportName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteReportName: Self = this.set("ReportName", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

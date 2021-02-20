@@ -22,6 +22,7 @@ import typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x041ESemic
 import typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
 import typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x0424SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
 import typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x0804SemicolonCPEqualssign936SemicolonCOUNTRYEqualssign0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x041ESemicolonCPEqualssign874SemicolonCOUNTRYEqualssign0
   - typings.activexDao.activexDaoStrings.SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
 */
-trait LanguageConstants extends js.Object
+trait LanguageConstants extends StObject
 object LanguageConstants {
   
   @scala.inline

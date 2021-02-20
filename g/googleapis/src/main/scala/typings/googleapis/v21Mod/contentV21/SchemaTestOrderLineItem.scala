@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTestOrderLineItem extends js.Object {
+trait SchemaTestOrderLineItem extends StObject {
   
   /**
     * Product data from the time of the order placement.
@@ -36,42 +37,30 @@ object SchemaTestOrderLineItem {
   }
   
   @scala.inline
-  implicit class SchemaTestOrderLineItemOps[Self <: SchemaTestOrderLineItem] (val x: Self) extends AnyVal {
+  implicit class SchemaTestOrderLineItemMutableBuilder[Self <: SchemaTestOrderLineItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProduct(value: SchemaTestOrderLineItemProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuantityOrdered(value: Double): Self = StObject.set(x, "quantityOrdered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: SchemaTestOrderLineItemProduct): Self = this.set("product", value.asInstanceOf[js.Any])
+    def setQuantityOrderedUndefined: Self = StObject.set(x, "quantityOrdered", js.undefined)
     
     @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
+    def setReturnInfo(value: SchemaOrderLineItemReturnInfo): Self = StObject.set(x, "returnInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantityOrdered(value: Double): Self = this.set("quantityOrdered", value.asInstanceOf[js.Any])
+    def setReturnInfoUndefined: Self = StObject.set(x, "returnInfo", js.undefined)
     
     @scala.inline
-    def deleteQuantityOrdered: Self = this.set("quantityOrdered", js.undefined)
+    def setShippingDetails(value: SchemaOrderLineItemShippingDetails): Self = StObject.set(x, "shippingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnInfo(value: SchemaOrderLineItemReturnInfo): Self = this.set("returnInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnInfo: Self = this.set("returnInfo", js.undefined)
-    
-    @scala.inline
-    def setShippingDetails(value: SchemaOrderLineItemShippingDetails): Self = this.set("shippingDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingDetails: Self = this.set("shippingDetails", js.undefined)
+    def setShippingDetailsUndefined: Self = StObject.set(x, "shippingDetails", js.undefined)
   }
 }

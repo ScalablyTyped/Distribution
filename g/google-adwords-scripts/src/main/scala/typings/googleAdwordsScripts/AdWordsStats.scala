@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdWordsStats extends js.Object {
+trait AdWordsStats extends StObject {
   
   def getAverageCpc(): Double = js.native
   
@@ -62,63 +63,51 @@ object AdWordsStats {
   }
   
   @scala.inline
-  implicit class AdWordsStatsOps[Self <: AdWordsStats] (val x: Self) extends AnyVal {
+  implicit class AdWordsStatsMutableBuilder[Self <: AdWordsStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAverageCpc(value: () => Double): Self = StObject.set(x, "getAverageCpc", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAverageCpm(value: () => Double): Self = StObject.set(x, "getAverageCpm", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAverageCpv(value: () => Double): Self = StObject.set(x, "getAverageCpv", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAverageCpc(value: () => Double): Self = this.set("getAverageCpc", js.Any.fromFunction0(value))
+    def setGetAveragePageviews(value: () => Double): Self = StObject.set(x, "getAveragePageviews", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAverageCpm(value: () => Double): Self = this.set("getAverageCpm", js.Any.fromFunction0(value))
+    def setGetAveragePosition(value: () => Double): Self = StObject.set(x, "getAveragePosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAverageCpv(value: () => Double): Self = this.set("getAverageCpv", js.Any.fromFunction0(value))
+    def setGetAverageTimeOnSite(value: () => Double): Self = StObject.set(x, "getAverageTimeOnSite", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAveragePageviews(value: () => Double): Self = this.set("getAveragePageviews", js.Any.fromFunction0(value))
+    def setGetBounceRage(value: () => Double): Self = StObject.set(x, "getBounceRage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAveragePosition(value: () => Double): Self = this.set("getAveragePosition", js.Any.fromFunction0(value))
+    def setGetClicks(value: () => Double): Self = StObject.set(x, "getClicks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAverageTimeOnSite(value: () => Double): Self = this.set("getAverageTimeOnSite", js.Any.fromFunction0(value))
+    def setGetConversionRate(value: () => Double): Self = StObject.set(x, "getConversionRate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBounceRage(value: () => Double): Self = this.set("getBounceRage", js.Any.fromFunction0(value))
+    def setGetConversions(value: () => Double): Self = StObject.set(x, "getConversions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClicks(value: () => Double): Self = this.set("getClicks", js.Any.fromFunction0(value))
+    def setGetCost(value: () => Double): Self = StObject.set(x, "getCost", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConversionRate(value: () => Double): Self = this.set("getConversionRate", js.Any.fromFunction0(value))
+    def setGetCtr(value: () => Double): Self = StObject.set(x, "getCtr", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConversions(value: () => Double): Self = this.set("getConversions", js.Any.fromFunction0(value))
+    def setGetImpressions(value: () => Double): Self = StObject.set(x, "getImpressions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCost(value: () => Double): Self = this.set("getCost", js.Any.fromFunction0(value))
+    def setGetViewRate(value: () => Double): Self = StObject.set(x, "getViewRate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCtr(value: () => Double): Self = this.set("getCtr", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetImpressions(value: () => Double): Self = this.set("getImpressions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetViewRate(value: () => Double): Self = this.set("getViewRate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetViews(value: () => Double): Self = this.set("getViews", js.Any.fromFunction0(value))
+    def setGetViews(value: () => Double): Self = StObject.set(x, "getViews", js.Any.fromFunction0(value))
   }
 }

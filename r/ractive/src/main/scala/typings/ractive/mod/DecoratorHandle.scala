@@ -1,11 +1,12 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecoratorHandle extends js.Object {
+trait DecoratorHandle extends StObject {
   
   /**
   	 * Called when any downstream template from the element will be updated.
@@ -31,33 +32,21 @@ object DecoratorHandle {
   }
   
   @scala.inline
-  implicit class DecoratorHandleOps[Self <: DecoratorHandle] (val x: Self) extends AnyVal {
+  implicit class DecoratorHandleMutableBuilder[Self <: DecoratorHandle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTeardown(value: () => Unit): Self = this.set("teardown", js.Any.fromFunction0(value))
+    def setUpdate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInvalidate(value: () => Unit): Self = this.set("invalidate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteInvalidate: Self = this.set("invalidate", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: /* repeated */ js.Any => Unit): Self = this.set("update", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

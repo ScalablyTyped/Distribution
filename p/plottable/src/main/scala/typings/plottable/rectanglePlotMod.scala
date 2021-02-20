@@ -5,14 +5,14 @@ import typings.plottable.drawersMod.ProxyDrawer
 import typings.plottable.interfacesMod.IAccessor
 import typings.plottable.interfacesMod.IRangeProjector
 import typings.plottable.xyPlotMod.XYPlot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/rectanglePlot", JSImport.Namespace)
-@js.native
-object rectanglePlotMod extends js.Object {
+object rectanglePlotMod {
   
+  @JSImport("plottable/build/src/plots/rectanglePlot", "Rectangle")
   @js.native
   /**
     * A Rectangle Plot displays rectangles based on the data.
@@ -115,11 +115,22 @@ object rectanglePlotMod extends js.Object {
     def y2(y2: IAccessor[Double | Y], postScale: IRangeProjector[Double]): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Rectangle extends js.Object {
+  object Rectangle {
     
-    var _X2_KEY: js.Any = js.native
+    @JSImport("plottable/build/src/plots/rectanglePlot", "Rectangle")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _Y2_KEY: js.Any = js.native
+    @JSImport("plottable/build/src/plots/rectanglePlot", "Rectangle._X2_KEY")
+    @js.native
+    def _X2_KEY: js.Any = js.native
+    @scala.inline
+    def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/plots/rectanglePlot", "Rectangle._Y2_KEY")
+    @js.native
+    def _Y2_KEY: js.Any = js.native
+    @scala.inline
+    def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
   }
 }

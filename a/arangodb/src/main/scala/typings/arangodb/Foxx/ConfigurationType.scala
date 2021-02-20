@@ -1,5 +1,6 @@
 package typings.arangodb.Foxx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arangodb.arangodbStrings.int
   - typings.arangodb.arangodbStrings.bool
 */
-trait ConfigurationType extends js.Object
+trait ConfigurationType extends StObject
 object ConfigurationType {
   
   @scala.inline

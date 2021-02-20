@@ -1,12 +1,13 @@
 package typings.nodeTelegramBotApi.mod
 
 import typings.node.httpsMod.ServerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebHookOptions extends js.Object {
+trait WebHookOptions extends StObject {
   
   var autoOpen: js.UndefOr[Boolean] = js.native
   
@@ -33,66 +34,54 @@ object WebHookOptions {
   }
   
   @scala.inline
-  implicit class WebHookOptionsOps[Self <: WebHookOptions] (val x: Self) extends AnyVal {
+  implicit class WebHookOptionsMutableBuilder[Self <: WebHookOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoOpen(value: Boolean): Self = this.set("autoOpen", value.asInstanceOf[js.Any])
+    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
     @scala.inline
-    def deleteAutoOpen: Self = this.set("autoOpen", js.undefined)
+    def setHealthEndpoint(value: String): Self = StObject.set(x, "healthEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCert(value: String): Self = this.set("cert", value.asInstanceOf[js.Any])
+    def setHealthEndpointUndefined: Self = StObject.set(x, "healthEndpoint", js.undefined)
     
     @scala.inline
-    def deleteCert: Self = this.set("cert", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthEndpoint(value: String): Self = this.set("healthEndpoint", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteHealthEndpoint: Self = this.set("healthEndpoint", js.undefined)
+    def setHttps(value: ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttps(value: ServerOptions): Self = this.set("https", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteHttps: Self = this.set("https", js.undefined)
+    def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPfx(value: String): Self = this.set("pfx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePfx: Self = this.set("pfx", js.undefined)
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

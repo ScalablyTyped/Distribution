@@ -12,13 +12,41 @@ import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.node.Buffer
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("browserfs/dist/node/backend/MountableFileSystem", JSImport.Namespace)
-@js.native
-object mountableFileSystemMod extends js.Object {
+object mountableFileSystemMod {
+  
+  @JSImport("browserfs/dist/node/backend/MountableFileSystem", JSImport.Default)
+  @js.native
+  /**
+    * Creates a new, empty MountableFileSystem.
+    */
+  class default () extends MountableFileSystem
+  /* static members */
+  object default {
+    
+    /**
+      * Creates a MountableFileSystem instance with the given options.
+      */
+    @JSImport("browserfs/dist/node/backend/MountableFileSystem", "default.Create")
+    @js.native
+    def Create(opts: MountableFileSystemOptions, cb: BFSCallback[MountableFileSystem]): Unit = js.native
+    
+    @JSImport("browserfs/dist/node/backend/MountableFileSystem", "default.Name")
+    @js.native
+    val Name: String = js.native
+    
+    @JSImport("browserfs/dist/node/backend/MountableFileSystem", "default.Options")
+    @js.native
+    val Options: FileSystemOptions = js.native
+    
+    @JSImport("browserfs/dist/node/backend/MountableFileSystem", "default.isAvailable")
+    @js.native
+    def isAvailable(): Boolean = js.native
+  }
   
   @js.native
   trait MountableFileSystem
@@ -172,27 +200,6 @@ object mountableFileSystemMod extends js.Object {
     override def writeFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     /* InferMemberOverrides */
     override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
-  }
-  
-  @js.native
-  /**
-    * Creates a new, empty MountableFileSystem.
-    */
-  class default () extends MountableFileSystem
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    /**
-      * Creates a MountableFileSystem instance with the given options.
-      */
-    def Create(opts: MountableFileSystemOptions, cb: BFSCallback[MountableFileSystem]): Unit = js.native
-    
-    val Name: String = js.native
-    
-    val Options: FileSystemOptions = js.native
-    
-    def isAvailable(): Boolean = js.native
   }
   
   type MountableFileSystemOptions = StringDictionary[FileSystem]

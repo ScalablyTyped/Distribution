@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpHeaderConditionConfig extends js.Object {
+trait HttpHeaderConditionConfig extends StObject {
   
   /**
     * The name of the HTTP header field. The maximum size is 40 characters. The header name is case insensitive. The allowed characters are specified by RFC 7230. Wildcards are not supported. You can't use an HTTP header condition to specify the host header. Use HostHeaderConditionConfig to specify a host header condition.
@@ -26,33 +27,21 @@ object HttpHeaderConditionConfig {
   }
   
   @scala.inline
-  implicit class HttpHeaderConditionConfigOps[Self <: HttpHeaderConditionConfig] (val x: Self) extends AnyVal {
+  implicit class HttpHeaderConditionConfigMutableBuilder[Self <: HttpHeaderConditionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpHeaderName(value: HttpHeaderConditionName): Self = StObject.set(x, "HttpHeaderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpHeaderNameUndefined: Self = StObject.set(x, "HttpHeaderName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpHeaderName(value: HttpHeaderConditionName): Self = this.set("HttpHeaderName", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteHttpHeaderName: Self = this.set("HttpHeaderName", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: StringValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: ListOfString): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

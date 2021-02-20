@@ -1,12 +1,13 @@
 package typings.officeJsPreview.Office
 
 import typings.officeJsPreview.officeJsPreviewStrings.olkRecipientsChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientsChangedEventArgs extends js.Object {
+trait RecipientsChangedEventArgs extends StObject {
   
   /**
     * Gets an object that indicates change state of recipients fields.
@@ -32,24 +33,12 @@ object RecipientsChangedEventArgs {
   }
   
   @scala.inline
-  implicit class RecipientsChangedEventArgsOps[Self <: RecipientsChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class RecipientsChangedEventArgsMutableBuilder[Self <: RecipientsChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangedRecipientFields(value: RecipientsChangedFields): Self = StObject.set(x, "changedRecipientFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChangedRecipientFields(value: RecipientsChangedFields): Self = this.set("changedRecipientFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: olkRecipientsChanged): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: olkRecipientsChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

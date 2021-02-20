@@ -1,12 +1,13 @@
 package typings.sharepoint.global.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.PaneId")
 @js.native
-object PaneId extends js.Object {
+object PaneId extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.SP.JsGrid.PaneId with Double] = js.native

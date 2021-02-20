@@ -1,12 +1,13 @@
 package typings.jsforce.describeResultMod
 
 import typings.jsforce.jsforceBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Field extends js.Object {
+trait Field extends StObject {
   
   var aggregatable: Boolean = js.native
   
@@ -162,321 +163,309 @@ object Field {
   }
   
   @scala.inline
-  implicit class FieldOps[Self <: Field] (val x: Self) extends AnyVal {
+  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregatable(value: Boolean): Self = StObject.set(x, "aggregatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutonumber(value: Boolean): Self = StObject.set(x, "autonumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregatable(value: Boolean): Self = this.set("aggregatable", value.asInstanceOf[js.Any])
+    def setCalculated(value: Boolean): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutonumber(value: Boolean): Self = this.set("autonumber", value.asInstanceOf[js.Any])
+    def setCalculatedFormula(value: maybe[String]): Self = StObject.set(x, "calculatedFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteLength(value: Double): Self = this.set("byteLength", value.asInstanceOf[js.Any])
+    def setCalculatedFormulaNull: Self = StObject.set(x, "calculatedFormula", null)
     
     @scala.inline
-    def setCalculated(value: Boolean): Self = this.set("calculated", value.asInstanceOf[js.Any])
+    def setCalculatedFormulaUndefined: Self = StObject.set(x, "calculatedFormula", js.undefined)
     
     @scala.inline
-    def setCascadeDelete(value: Boolean): Self = this.set("cascadeDelete", value.asInstanceOf[js.Any])
+    def setCascadeDelete(value: Boolean): Self = StObject.set(x, "cascadeDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateable(value: Boolean): Self = this.set("createable", value.asInstanceOf[js.Any])
+    def setCompoundFieldName(value: maybe[String]): Self = StObject.set(x, "compoundFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: Boolean): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setCompoundFieldNameNull: Self = StObject.set(x, "compoundFieldName", null)
     
     @scala.inline
-    def setDefaultedOnCreate(value: Boolean): Self = this.set("defaultedOnCreate", value.asInstanceOf[js.Any])
+    def setCompoundFieldNameUndefined: Self = StObject.set(x, "compoundFieldName", js.undefined)
     
     @scala.inline
-    def setDependentPicklist(value: Boolean): Self = this.set("dependentPicklist", value.asInstanceOf[js.Any])
+    def setControllerName(value: maybe[String]): Self = StObject.set(x, "controllerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedAndHidden(value: Boolean): Self = this.set("deprecatedAndHidden", value.asInstanceOf[js.Any])
+    def setControllerNameNull: Self = StObject.set(x, "controllerName", null)
     
     @scala.inline
-    def setExternalId(value: Boolean): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setControllerNameUndefined: Self = StObject.set(x, "controllerName", js.undefined)
     
     @scala.inline
-    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    def setCreateable(value: Boolean): Self = StObject.set(x, "createable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupable(value: Boolean): Self = this.set("groupable", value.asInstanceOf[js.Any])
+    def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlFormatted(value: Boolean): Self = this.set("htmlFormatted", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: maybe[String | Boolean]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdLookup(value: Boolean): Self = this.set("idLookup", value.asInstanceOf[js.Any])
+    def setDefaultValueFormula(value: maybe[String]): Self = StObject.set(x, "defaultValueFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setDefaultValueFormulaNull: Self = StObject.set(x, "defaultValueFormula", null)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setDefaultValueFormulaUndefined: Self = StObject.set(x, "defaultValueFormula", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
     
     @scala.inline
-    def setNameField(value: Boolean): Self = this.set("nameField", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setNamePointing(value: Boolean): Self = this.set("namePointing", value.asInstanceOf[js.Any])
+    def setDefaultedOnCreate(value: Boolean): Self = StObject.set(x, "defaultedOnCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNillable(value: Boolean): Self = this.set("nillable", value.asInstanceOf[js.Any])
+    def setDependentPicklist(value: Boolean): Self = StObject.set(x, "dependentPicklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionable(value: Boolean): Self = this.set("permissionable", value.asInstanceOf[js.Any])
+    def setDeprecatedAndHidden(value: Boolean): Self = StObject.set(x, "deprecatedAndHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolymorphicForeignKey(value: Boolean): Self = this.set("polymorphicForeignKey", value.asInstanceOf[js.Any])
+    def setDigits(value: maybe[Double]): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryByDistance(value: Boolean): Self = this.set("queryByDistance", value.asInstanceOf[js.Any])
+    def setDigitsNull: Self = StObject.set(x, "digits", null)
     
     @scala.inline
-    def setRestrictedPicklist(value: Boolean): Self = this.set("restrictedPicklist", value.asInstanceOf[js.Any])
+    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setDisplayLocationInDecimal(value: maybe[Boolean]): Self = StObject.set(x, "displayLocationInDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchPrefilterable(value: Boolean): Self = this.set("searchPrefilterable", value.asInstanceOf[js.Any])
+    def setDisplayLocationInDecimalNull: Self = StObject.set(x, "displayLocationInDecimal", null)
     
     @scala.inline
-    def setSoapType(value: SOAPType): Self = this.set("soapType", value.asInstanceOf[js.Any])
+    def setDisplayLocationInDecimalUndefined: Self = StObject.set(x, "displayLocationInDecimal", js.undefined)
     
     @scala.inline
-    def setSortable(value: Boolean): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    def setEncrypted(value: maybe[`true`]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: FieldType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEncryptedNull: Self = StObject.set(x, "encrypted", null)
     
     @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
+    def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
     
     @scala.inline
-    def setUpdateable(value: Boolean): Self = this.set("updateable", value.asInstanceOf[js.Any])
+    def setExternalId(value: Boolean): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculatedFormula(value: maybe[String]): Self = this.set("calculatedFormula", value.asInstanceOf[js.Any])
+    def setExtraTypeInfo(value: maybe[ExtraTypeInfo]): Self = StObject.set(x, "extraTypeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalculatedFormula: Self = this.set("calculatedFormula", js.undefined)
+    def setExtraTypeInfoNull: Self = StObject.set(x, "extraTypeInfo", null)
     
     @scala.inline
-    def setCalculatedFormulaNull: Self = this.set("calculatedFormula", null)
+    def setExtraTypeInfoUndefined: Self = StObject.set(x, "extraTypeInfo", js.undefined)
     
     @scala.inline
-    def setCompoundFieldName(value: maybe[String]): Self = this.set("compoundFieldName", value.asInstanceOf[js.Any])
+    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompoundFieldName: Self = this.set("compoundFieldName", js.undefined)
+    def setFilteredLookupInfo(value: maybe[FilteredLookupInfo]): Self = StObject.set(x, "filteredLookupInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompoundFieldNameNull: Self = this.set("compoundFieldName", null)
+    def setFilteredLookupInfoNull: Self = StObject.set(x, "filteredLookupInfo", null)
     
     @scala.inline
-    def setControllerName(value: maybe[String]): Self = this.set("controllerName", value.asInstanceOf[js.Any])
+    def setFilteredLookupInfoUndefined: Self = StObject.set(x, "filteredLookupInfo", js.undefined)
     
     @scala.inline
-    def deleteControllerName: Self = this.set("controllerName", js.undefined)
+    def setFormula(value: maybe[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerNameNull: Self = this.set("controllerName", null)
+    def setFormulaNull: Self = StObject.set(x, "formula", null)
     
     @scala.inline
-    def setDefaultValue(value: maybe[String | Boolean]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setGroupable(value: Boolean): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueNull: Self = this.set("defaultValue", null)
+    def setHighScaleNumber(value: maybe[Boolean]): Self = StObject.set(x, "highScaleNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueFormula(value: maybe[String]): Self = this.set("defaultValueFormula", value.asInstanceOf[js.Any])
+    def setHighScaleNumberNull: Self = StObject.set(x, "highScaleNumber", null)
     
     @scala.inline
-    def deleteDefaultValueFormula: Self = this.set("defaultValueFormula", js.undefined)
+    def setHighScaleNumberUndefined: Self = StObject.set(x, "highScaleNumber", js.undefined)
     
     @scala.inline
-    def setDefaultValueFormulaNull: Self = this.set("defaultValueFormula", null)
+    def setHtmlFormatted(value: Boolean): Self = StObject.set(x, "htmlFormatted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigits(value: maybe[Double]): Self = this.set("digits", value.asInstanceOf[js.Any])
+    def setIdLookup(value: Boolean): Self = StObject.set(x, "idLookup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDigits: Self = this.set("digits", js.undefined)
+    def setInlineHelpText(value: maybe[String]): Self = StObject.set(x, "inlineHelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigitsNull: Self = this.set("digits", null)
+    def setInlineHelpTextNull: Self = StObject.set(x, "inlineHelpText", null)
     
     @scala.inline
-    def setDisplayLocationInDecimal(value: maybe[Boolean]): Self = this.set("displayLocationInDecimal", value.asInstanceOf[js.Any])
+    def setInlineHelpTextUndefined: Self = StObject.set(x, "inlineHelpText", js.undefined)
     
     @scala.inline
-    def deleteDisplayLocationInDecimal: Self = this.set("displayLocationInDecimal", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLocationInDecimalNull: Self = this.set("displayLocationInDecimal", null)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: maybe[`true`]): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    def setMask(value: maybe[String]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    def setMaskNull: Self = StObject.set(x, "mask", null)
     
     @scala.inline
-    def setEncryptedNull: Self = this.set("encrypted", null)
+    def setMaskType(value: maybe[String]): Self = StObject.set(x, "maskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraTypeInfo(value: maybe[ExtraTypeInfo]): Self = this.set("extraTypeInfo", value.asInstanceOf[js.Any])
+    def setMaskTypeNull: Self = StObject.set(x, "maskType", null)
     
     @scala.inline
-    def deleteExtraTypeInfo: Self = this.set("extraTypeInfo", js.undefined)
+    def setMaskTypeUndefined: Self = StObject.set(x, "maskType", js.undefined)
     
     @scala.inline
-    def setExtraTypeInfoNull: Self = this.set("extraTypeInfo", null)
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def setFilteredLookupInfo(value: maybe[FilteredLookupInfo]): Self = this.set("filteredLookupInfo", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilteredLookupInfo: Self = this.set("filteredLookupInfo", js.undefined)
+    def setNameField(value: Boolean): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilteredLookupInfoNull: Self = this.set("filteredLookupInfo", null)
+    def setNamePointing(value: Boolean): Self = StObject.set(x, "namePointing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: maybe[String]): Self = this.set("formula", value.asInstanceOf[js.Any])
+    def setNillable(value: Boolean): Self = StObject.set(x, "nillable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
+    def setPermissionable(value: Boolean): Self = StObject.set(x, "permissionable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulaNull: Self = this.set("formula", null)
+    def setPicklistValues(value: maybe[js.Array[PicklistEntry]]): Self = StObject.set(x, "picklistValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighScaleNumber(value: maybe[Boolean]): Self = this.set("highScaleNumber", value.asInstanceOf[js.Any])
+    def setPicklistValuesNull: Self = StObject.set(x, "picklistValues", null)
     
     @scala.inline
-    def deleteHighScaleNumber: Self = this.set("highScaleNumber", js.undefined)
+    def setPicklistValuesUndefined: Self = StObject.set(x, "picklistValues", js.undefined)
     
     @scala.inline
-    def setHighScaleNumberNull: Self = this.set("highScaleNumber", null)
+    def setPicklistValuesVarargs(value: PicklistEntry*): Self = StObject.set(x, "picklistValues", js.Array(value :_*))
     
     @scala.inline
-    def setInlineHelpText(value: maybe[String]): Self = this.set("inlineHelpText", value.asInstanceOf[js.Any])
+    def setPolymorphicForeignKey(value: Boolean): Self = StObject.set(x, "polymorphicForeignKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInlineHelpText: Self = this.set("inlineHelpText", js.undefined)
+    def setPrecision(value: maybe[Double]): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineHelpTextNull: Self = this.set("inlineHelpText", null)
+    def setPrecisionNull: Self = StObject.set(x, "precision", null)
     
     @scala.inline
-    def setMask(value: maybe[String]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setQueryByDistance(value: Boolean): Self = StObject.set(x, "queryByDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskNull: Self = this.set("mask", null)
+    def setReferenceTargetField(value: maybe[String]): Self = StObject.set(x, "referenceTargetField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskType(value: maybe[String]): Self = this.set("maskType", value.asInstanceOf[js.Any])
+    def setReferenceTargetFieldNull: Self = StObject.set(x, "referenceTargetField", null)
     
     @scala.inline
-    def deleteMaskType: Self = this.set("maskType", js.undefined)
+    def setReferenceTargetFieldUndefined: Self = StObject.set(x, "referenceTargetField", js.undefined)
     
     @scala.inline
-    def setMaskTypeNull: Self = this.set("maskType", null)
+    def setReferenceTo(value: maybe[js.Array[String]]): Self = StObject.set(x, "referenceTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicklistValuesVarargs(value: PicklistEntry*): Self = this.set("picklistValues", js.Array(value :_*))
+    def setReferenceToNull: Self = StObject.set(x, "referenceTo", null)
     
     @scala.inline
-    def setPicklistValues(value: maybe[js.Array[PicklistEntry]]): Self = this.set("picklistValues", value.asInstanceOf[js.Any])
+    def setReferenceToUndefined: Self = StObject.set(x, "referenceTo", js.undefined)
     
     @scala.inline
-    def deletePicklistValues: Self = this.set("picklistValues", js.undefined)
+    def setReferenceToVarargs(value: String*): Self = StObject.set(x, "referenceTo", js.Array(value :_*))
     
     @scala.inline
-    def setPicklistValuesNull: Self = this.set("picklistValues", null)
+    def setRelationshipName(value: maybe[String]): Self = StObject.set(x, "relationshipName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: maybe[Double]): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setRelationshipNameNull: Self = StObject.set(x, "relationshipName", null)
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setRelationshipNameUndefined: Self = StObject.set(x, "relationshipName", js.undefined)
     
     @scala.inline
-    def setPrecisionNull: Self = this.set("precision", null)
+    def setRelationshipOrder(value: maybe[Double]): Self = StObject.set(x, "relationshipOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceTargetField(value: maybe[String]): Self = this.set("referenceTargetField", value.asInstanceOf[js.Any])
+    def setRelationshipOrderNull: Self = StObject.set(x, "relationshipOrder", null)
     
     @scala.inline
-    def deleteReferenceTargetField: Self = this.set("referenceTargetField", js.undefined)
+    def setRelationshipOrderUndefined: Self = StObject.set(x, "relationshipOrder", js.undefined)
     
     @scala.inline
-    def setReferenceTargetFieldNull: Self = this.set("referenceTargetField", null)
+    def setRestrictedPicklist(value: Boolean): Self = StObject.set(x, "restrictedPicklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceToVarargs(value: String*): Self = this.set("referenceTo", js.Array(value :_*))
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceTo(value: maybe[js.Array[String]]): Self = this.set("referenceTo", value.asInstanceOf[js.Any])
+    def setSearchPrefilterable(value: Boolean): Self = StObject.set(x, "searchPrefilterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReferenceTo: Self = this.set("referenceTo", js.undefined)
+    def setSoapType(value: SOAPType): Self = StObject.set(x, "soapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceToNull: Self = this.set("referenceTo", null)
+    def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationshipName(value: maybe[String]): Self = this.set("relationshipName", value.asInstanceOf[js.Any])
+    def setType(value: FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelationshipName: Self = this.set("relationshipName", js.undefined)
+    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationshipNameNull: Self = this.set("relationshipName", null)
+    def setUpdateable(value: Boolean): Self = StObject.set(x, "updateable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationshipOrder(value: maybe[Double]): Self = this.set("relationshipOrder", value.asInstanceOf[js.Any])
+    def setWriteRequiresMasterRead(value: maybe[Boolean]): Self = StObject.set(x, "writeRequiresMasterRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelationshipOrder: Self = this.set("relationshipOrder", js.undefined)
+    def setWriteRequiresMasterReadNull: Self = StObject.set(x, "writeRequiresMasterRead", null)
     
     @scala.inline
-    def setRelationshipOrderNull: Self = this.set("relationshipOrder", null)
-    
-    @scala.inline
-    def setWriteRequiresMasterRead(value: maybe[Boolean]): Self = this.set("writeRequiresMasterRead", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteRequiresMasterRead: Self = this.set("writeRequiresMasterRead", js.undefined)
-    
-    @scala.inline
-    def setWriteRequiresMasterReadNull: Self = this.set("writeRequiresMasterRead", null)
+    def setWriteRequiresMasterReadUndefined: Self = StObject.set(x, "writeRequiresMasterRead", js.undefined)
   }
 }

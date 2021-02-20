@@ -1,5 +1,6 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The difference delta between two policies.
   */
 @js.native
-trait SchemaPolicyDelta extends js.Object {
+trait SchemaPolicyDelta extends StObject {
   
   /**
     * The delta for Bindings between two policies.
@@ -24,27 +25,15 @@ object SchemaPolicyDelta {
   }
   
   @scala.inline
-  implicit class SchemaPolicyDeltaOps[Self <: SchemaPolicyDelta] (val x: Self) extends AnyVal {
+  implicit class SchemaPolicyDeltaMutableBuilder[Self <: SchemaPolicyDelta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindingDeltas(value: js.Array[SchemaBindingDelta]): Self = StObject.set(x, "bindingDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingDeltasUndefined: Self = StObject.set(x, "bindingDeltas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBindingDeltasVarargs(value: SchemaBindingDelta*): Self = this.set("bindingDeltas", js.Array(value :_*))
-    
-    @scala.inline
-    def setBindingDeltas(value: js.Array[SchemaBindingDelta]): Self = this.set("bindingDeltas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBindingDeltas: Self = this.set("bindingDeltas", js.undefined)
+    def setBindingDeltasVarargs(value: SchemaBindingDelta*): Self = StObject.set(x, "bindingDeltas", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.chromeApps.WebView
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /** A set of data types. Missing properties are interpreted as false. */
 @js.native
-trait ClearDataTypeSet extends js.Object {
+trait ClearDataTypeSet extends StObject {
   
   /** Websites' appcaches. */
   var appcache: js.UndefOr[Boolean] = js.native
@@ -50,72 +51,60 @@ object ClearDataTypeSet {
   }
   
   @scala.inline
-  implicit class ClearDataTypeSetOps[Self <: ClearDataTypeSet] (val x: Self) extends AnyVal {
+  implicit class ClearDataTypeSetMutableBuilder[Self <: ClearDataTypeSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppcache(value: Boolean): Self = StObject.set(x, "appcache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppcacheUndefined: Self = StObject.set(x, "appcache", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppcache(value: Boolean): Self = this.set("appcache", value.asInstanceOf[js.Any])
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def deleteAppcache: Self = this.set("appcache", js.undefined)
+    def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setFileSystems(value: Boolean): Self = StObject.set(x, "fileSystems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookies(value: Boolean): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    def setFileSystemsUndefined: Self = StObject.set(x, "fileSystems", js.undefined)
     
     @scala.inline
-    def deleteCookies: Self = this.set("cookies", js.undefined)
+    def setIndexedDB(value: Boolean): Self = StObject.set(x, "indexedDB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystems(value: Boolean): Self = this.set("fileSystems", value.asInstanceOf[js.Any])
+    def setIndexedDBUndefined: Self = StObject.set(x, "indexedDB", js.undefined)
     
     @scala.inline
-    def deleteFileSystems: Self = this.set("fileSystems", js.undefined)
+    def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexedDB(value: Boolean): Self = this.set("indexedDB", value.asInstanceOf[js.Any])
+    def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
     
     @scala.inline
-    def deleteIndexedDB: Self = this.set("indexedDB", js.undefined)
+    def setPersistentCookies(value: Boolean): Self = StObject.set(x, "persistentCookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalStorage(value: Boolean): Self = this.set("localStorage", value.asInstanceOf[js.Any])
+    def setPersistentCookiesUndefined: Self = StObject.set(x, "persistentCookies", js.undefined)
     
     @scala.inline
-    def deleteLocalStorage: Self = this.set("localStorage", js.undefined)
+    def setSessionCookies(value: Boolean): Self = StObject.set(x, "sessionCookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentCookies(value: Boolean): Self = this.set("persistentCookies", value.asInstanceOf[js.Any])
+    def setSessionCookiesUndefined: Self = StObject.set(x, "sessionCookies", js.undefined)
     
     @scala.inline
-    def deletePersistentCookies: Self = this.set("persistentCookies", js.undefined)
+    def setWebSQL(value: Boolean): Self = StObject.set(x, "webSQL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionCookies(value: Boolean): Self = this.set("sessionCookies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionCookies: Self = this.set("sessionCookies", js.undefined)
-    
-    @scala.inline
-    def setWebSQL(value: Boolean): Self = this.set("webSQL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebSQL: Self = this.set("webSQL", js.undefined)
+    def setWebSQLUndefined: Self = StObject.set(x, "webSQL", js.undefined)
   }
 }

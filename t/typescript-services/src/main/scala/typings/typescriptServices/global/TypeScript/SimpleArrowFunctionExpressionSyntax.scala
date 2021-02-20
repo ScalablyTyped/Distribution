@@ -2,6 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.IExpressionSyntax
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,12 +19,15 @@ class SimpleArrowFunctionExpressionSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.SimpleArrowFunctionExpressionSyntax")
-@js.native
-object SimpleArrowFunctionExpressionSyntax extends js.Object {
+object SimpleArrowFunctionExpressionSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.SimpleArrowFunctionExpressionSyntax.create")
+  @js.native
   def create(identifier: ISyntaxToken, equalsGreaterThanToken: ISyntaxToken): typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.SimpleArrowFunctionExpressionSyntax.create1")
+  @js.native
   def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax = js.native
 }

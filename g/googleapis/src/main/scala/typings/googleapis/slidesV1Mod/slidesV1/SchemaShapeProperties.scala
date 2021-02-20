@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * property depends on the corresponding property_state field value.
   */
 @js.native
-trait SchemaShapeProperties extends js.Object {
+trait SchemaShapeProperties extends StObject {
   
   /**
     * The alignment of the content in the shape. If unspecified, the alignment
@@ -60,48 +61,36 @@ object SchemaShapeProperties {
   }
   
   @scala.inline
-  implicit class SchemaShapePropertiesOps[Self <: SchemaShapeProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaShapePropertiesMutableBuilder[Self <: SchemaShapeProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLink(value: SchemaLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentAlignment(value: String): Self = this.set("contentAlignment", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteContentAlignment: Self = this.set("contentAlignment", js.undefined)
+    def setOutline(value: SchemaOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: SchemaLink): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setShadow(value: SchemaShadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: SchemaOutline): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
+    def setShapeBackgroundFill(value: SchemaShapeBackgroundFill): Self = StObject.set(x, "shapeBackgroundFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: SchemaShadow): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
-    
-    @scala.inline
-    def setShapeBackgroundFill(value: SchemaShapeBackgroundFill): Self = this.set("shapeBackgroundFill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShapeBackgroundFill: Self = this.set("shapeBackgroundFill", js.undefined)
+    def setShapeBackgroundFillUndefined: Self = StObject.set(x, "shapeBackgroundFill", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoginItemSettings extends js.Object {
+trait LoginItemSettings extends StObject {
   
   /**
     * `true` if app is set to open at login and its run key is not deactivated. This
@@ -76,42 +77,30 @@ object LoginItemSettings {
   }
   
   @scala.inline
-  implicit class LoginItemSettingsOps[Self <: LoginItemSettings] (val x: Self) extends AnyVal {
+  implicit class LoginItemSettingsMutableBuilder[Self <: LoginItemSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutableWillLaunchAtLogin(value: Boolean): Self = StObject.set(x, "executableWillLaunchAtLogin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLaunchItems(value: js.Array[LaunchItems]): Self = StObject.set(x, "launchItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaunchItemsVarargs(value: LaunchItems*): Self = StObject.set(x, "launchItems", js.Array(value :_*))
     
     @scala.inline
-    def setExecutableWillLaunchAtLogin(value: Boolean): Self = this.set("executableWillLaunchAtLogin", value.asInstanceOf[js.Any])
+    def setOpenAsHidden(value: Boolean): Self = StObject.set(x, "openAsHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchItemsVarargs(value: LaunchItems*): Self = this.set("launchItems", js.Array(value :_*))
+    def setOpenAtLogin(value: Boolean): Self = StObject.set(x, "openAtLogin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchItems(value: js.Array[LaunchItems]): Self = this.set("launchItems", value.asInstanceOf[js.Any])
+    def setRestoreState(value: Boolean): Self = StObject.set(x, "restoreState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenAsHidden(value: Boolean): Self = this.set("openAsHidden", value.asInstanceOf[js.Any])
+    def setWasOpenedAsHidden(value: Boolean): Self = StObject.set(x, "wasOpenedAsHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenAtLogin(value: Boolean): Self = this.set("openAtLogin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestoreState(value: Boolean): Self = this.set("restoreState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWasOpenedAsHidden(value: Boolean): Self = this.set("wasOpenedAsHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWasOpenedAtLogin(value: Boolean): Self = this.set("wasOpenedAtLogin", value.asInstanceOf[js.Any])
+    def setWasOpenedAtLogin(value: Boolean): Self = StObject.set(x, "wasOpenedAtLogin", value.asInstanceOf[js.Any])
   }
 }

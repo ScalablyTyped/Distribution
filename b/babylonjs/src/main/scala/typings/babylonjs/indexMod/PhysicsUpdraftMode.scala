@@ -1,12 +1,13 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "PhysicsUpdraftMode")
 @js.native
-object PhysicsUpdraftMode extends js.Object {
+object PhysicsUpdraftMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.physicsHelperMod.PhysicsUpdraftMode with Double] = js.native

@@ -2,12 +2,13 @@ package typings.reactNativeModals.mod
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalFooterProps extends js.Object {
+trait ModalFooterProps extends StObject {
   
   var bordered: js.UndefOr[Boolean] = js.native
   
@@ -22,33 +23,21 @@ object ModalFooterProps {
   }
   
   @scala.inline
-  implicit class ModalFooterPropsOps[Self <: ModalFooterProps] (val x: Self) extends AnyVal {
+  implicit class ModalFooterPropsMutableBuilder[Self <: ModalFooterProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBordered(value: Boolean): Self = this.set("bordered", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteBordered: Self = this.set("bordered", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -1,14 +1,15 @@
 package typings.kiiCloudSdk.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KiiSocialNetworkName extends js.Object
+sealed trait KiiSocialNetworkName extends StObject
 @JSGlobal("KiiCloud.KiiSocialNetworkName")
 @js.native
-object KiiSocialNetworkName extends js.Object {
+object KiiSocialNetworkName extends StObject {
   
   @js.native
   sealed trait FACEBOOK extends KiiSocialNetworkName

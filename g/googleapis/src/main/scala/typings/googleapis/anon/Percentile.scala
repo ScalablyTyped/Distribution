@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Percentile extends js.Object {
+trait Percentile extends StObject {
   
   var category: js.UndefOr[String] = js.native
   
@@ -22,39 +23,27 @@ object Percentile {
   }
   
   @scala.inline
-  implicit class PercentileOps[Self <: Percentile] (val x: Self) extends AnyVal {
+  implicit class PercentileMutableBuilder[Self <: Percentile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistributions(value: js.Array[Max]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setDistributionsVarargs(value: Max*): Self = StObject.set(x, "distributions", js.Array(value :_*))
     
     @scala.inline
-    def setDistributionsVarargs(value: Max*): Self = this.set("distributions", js.Array(value :_*))
+    def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributions(value: js.Array[Max]): Self = this.set("distributions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistributions: Self = this.set("distributions", js.undefined)
-    
-    @scala.inline
-    def setPercentile(value: Double): Self = this.set("percentile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercentile: Self = this.set("percentile", js.undefined)
+    def setPercentileUndefined: Self = StObject.set(x, "percentile", js.undefined)
   }
 }

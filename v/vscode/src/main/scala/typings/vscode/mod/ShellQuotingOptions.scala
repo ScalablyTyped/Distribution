@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.vscode.anon.CharsToEscape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShellQuotingOptions extends js.Object {
+trait ShellQuotingOptions extends StObject {
   
   /**
     * The character used to do character escaping. If a string is provided only spaces
@@ -34,36 +35,24 @@ object ShellQuotingOptions {
   }
   
   @scala.inline
-  implicit class ShellQuotingOptionsOps[Self <: ShellQuotingOptions] (val x: Self) extends AnyVal {
+  implicit class ShellQuotingOptionsMutableBuilder[Self <: ShellQuotingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEscape(value: String | CharsToEscape): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrong(value: String): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscape(value: String | CharsToEscape): Self = this.set("escape", value.asInstanceOf[js.Any])
+    def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
     
     @scala.inline
-    def deleteEscape: Self = this.set("escape", js.undefined)
+    def setWeak(value: String): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrong(value: String): Self = this.set("strong", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrong: Self = this.set("strong", js.undefined)
-    
-    @scala.inline
-    def setWeak(value: String): Self = this.set("weak", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeak: Self = this.set("weak", js.undefined)
+    def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
   }
 }

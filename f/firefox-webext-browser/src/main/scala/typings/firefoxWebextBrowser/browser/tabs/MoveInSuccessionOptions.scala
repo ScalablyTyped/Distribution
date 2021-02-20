@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MoveInSuccessionOptions extends js.Object {
+trait MoveInSuccessionOptions extends StObject {
   
   /** Whether to move the tabs before (false) or after (true) tabId in the succession. Defaults to false. */
   var append: js.UndefOr[Boolean] = js.native
@@ -24,30 +25,18 @@ object MoveInSuccessionOptions {
   }
   
   @scala.inline
-  implicit class MoveInSuccessionOptionsOps[Self <: MoveInSuccessionOptions] (val x: Self) extends AnyVal {
+  implicit class MoveInSuccessionOptionsMutableBuilder[Self <: MoveInSuccessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppend(value: Boolean): Self = this.set("append", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
-    
-    @scala.inline
-    def setInsert(value: Boolean): Self = this.set("insert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsert: Self = this.set("insert", js.undefined)
+    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
   }
 }

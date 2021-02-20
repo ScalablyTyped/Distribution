@@ -1,12 +1,13 @@
 package typings.sharepoint.global.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.HierarchyMode")
 @js.native
-object HierarchyMode extends js.Object {
+object HierarchyMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.SP.JsGrid.HierarchyMode with Double] = js.native

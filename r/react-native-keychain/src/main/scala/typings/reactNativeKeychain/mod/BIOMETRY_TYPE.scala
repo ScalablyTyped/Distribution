@@ -1,41 +1,36 @@
 package typings.reactNativeKeychain.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BIOMETRY_TYPE extends js.Object
+sealed trait BIOMETRY_TYPE extends StObject
 @JSImport("react-native-keychain", "BIOMETRY_TYPE")
 @js.native
-object BIOMETRY_TYPE extends js.Object {
+object BIOMETRY_TYPE extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BIOMETRY_TYPE with String] = js.native
   
   @js.native
   sealed trait FACE extends BIOMETRY_TYPE
-  /* "Face" */ @js.native
-  object FACE extends TopLevel[FACE with String]
+  /* "Face" */ val FACE: typings.reactNativeKeychain.mod.BIOMETRY_TYPE.FACE with String = js.native
   
   @js.native
   sealed trait FACE_ID extends BIOMETRY_TYPE
-  /* "FaceID" */ @js.native
-  object FACE_ID extends TopLevel[FACE_ID with String]
+  /* "FaceID" */ val FACE_ID: typings.reactNativeKeychain.mod.BIOMETRY_TYPE.FACE_ID with String = js.native
   
   @js.native
   sealed trait FINGERPRINT extends BIOMETRY_TYPE
-  /* "Fingerprint" */ @js.native
-  object FINGERPRINT extends TopLevel[FINGERPRINT with String]
+  /* "Fingerprint" */ val FINGERPRINT: typings.reactNativeKeychain.mod.BIOMETRY_TYPE.FINGERPRINT with String = js.native
   
   @js.native
   sealed trait IRIS extends BIOMETRY_TYPE
-  /* "Iris" */ @js.native
-  object IRIS extends TopLevel[IRIS with String]
+  /* "Iris" */ val IRIS: typings.reactNativeKeychain.mod.BIOMETRY_TYPE.IRIS with String = js.native
   
   @js.native
   sealed trait TOUCH_ID extends BIOMETRY_TYPE
-  /* "TouchID" */ @js.native
-  object TOUCH_ID extends TopLevel[TOUCH_ID with String]
+  /* "TouchID" */ val TOUCH_ID: typings.reactNativeKeychain.mod.BIOMETRY_TYPE.TOUCH_ID with String = js.native
 }

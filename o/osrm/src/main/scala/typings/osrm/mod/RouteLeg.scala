@@ -1,5 +1,6 @@
 package typings.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md#routeleg-object
   */
 @js.native
-trait RouteLeg extends js.Object {
+trait RouteLeg extends StObject {
   
   /**
     * Additional details about each coordinate along the route geometry:
@@ -64,39 +65,27 @@ object RouteLeg {
   }
   
   @scala.inline
-  implicit class RouteLegOps[Self <: RouteLeg] (val x: Self) extends AnyVal {
+  implicit class RouteLegMutableBuilder[Self <: RouteLeg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotation(value: Annotation): Self = this.set("annotation", value.asInstanceOf[js.Any])
+    def setSteps(value: js.Array[RouteStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setStepsVarargs(value: RouteStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepsVarargs(value: RouteStep*): Self = this.set("steps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSteps(value: js.Array[RouteStep]): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

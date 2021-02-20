@@ -1,11 +1,12 @@
 package typings.awsSdk.dataexchangeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobError extends js.Object {
+trait JobError extends StObject {
   
   /**
     * The code for the job error.
@@ -48,54 +49,42 @@ object JobError {
   }
   
   @scala.inline
-  implicit class JobErrorOps[Self <: JobError] (val x: Self) extends AnyVal {
+  implicit class JobErrorMutableBuilder[Self <: JobError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Code): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetails(value: Details): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
     @scala.inline
-    def setCode(value: Code): Self = this.set("Code", value.asInstanceOf[js.Any])
+    def setLimitName(value: JobErrorLimitName): Self = StObject.set(x, "LimitName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: string): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setLimitNameUndefined: Self = StObject.set(x, "LimitName", js.undefined)
     
     @scala.inline
-    def setDetails(value: Details): Self = this.set("Details", value.asInstanceOf[js.Any])
+    def setLimitValue(value: double): Self = StObject.set(x, "LimitValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetails: Self = this.set("Details", js.undefined)
+    def setLimitValueUndefined: Self = StObject.set(x, "LimitValue", js.undefined)
     
     @scala.inline
-    def setLimitName(value: JobErrorLimitName): Self = this.set("LimitName", value.asInstanceOf[js.Any])
+    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimitName: Self = this.set("LimitName", js.undefined)
+    def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitValue(value: double): Self = this.set("LimitValue", value.asInstanceOf[js.Any])
+    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
     @scala.inline
-    def deleteLimitValue: Self = this.set("LimitValue", js.undefined)
+    def setResourceType(value: JobErrorResourceTypes): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: string): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: JobErrorResourceTypes): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

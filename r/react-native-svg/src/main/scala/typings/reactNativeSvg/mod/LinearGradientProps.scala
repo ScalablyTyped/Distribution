@@ -1,11 +1,12 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinearGradientProps extends js.Object {
+trait LinearGradientProps extends StObject {
   
   var gradientTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.native
   
@@ -30,60 +31,48 @@ object LinearGradientProps {
   }
   
   @scala.inline
-  implicit class LinearGradientPropsOps[Self <: LinearGradientProps] (val x: Self) extends AnyVal {
+  implicit class LinearGradientPropsMutableBuilder[Self <: LinearGradientProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGradientTransform(value: ColumnMajorTransformMatrix | String): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGradientUnits(value: Units): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientTransform(value: ColumnMajorTransformMatrix | String): Self = this.set("gradientTransform", value.asInstanceOf[js.Any])
+    def setGradientUnitsUndefined: Self = StObject.set(x, "gradientUnits", js.undefined)
     
     @scala.inline
-    def deleteGradientTransform: Self = this.set("gradientTransform", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientUnits(value: Units): Self = this.set("gradientUnits", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGradientUnits: Self = this.set("gradientUnits", js.undefined)
+    def setX1(value: NumberProp): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setX2(value: NumberProp): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX1(value: NumberProp): Self = this.set("x1", value.asInstanceOf[js.Any])
+    def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
     
     @scala.inline
-    def deleteX1: Self = this.set("x1", js.undefined)
+    def setY1(value: NumberProp): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX2(value: NumberProp): Self = this.set("x2", value.asInstanceOf[js.Any])
+    def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     
     @scala.inline
-    def deleteX2: Self = this.set("x2", js.undefined)
+    def setY2(value: NumberProp): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY1(value: NumberProp): Self = this.set("y1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY1: Self = this.set("y1", js.undefined)
-    
-    @scala.inline
-    def setY2(value: NumberProp): Self = this.set("y2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY2: Self = this.set("y2", js.undefined)
+    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
   }
 }

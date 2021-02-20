@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoImportSubfolderCreationMode extends js.Object
+sealed trait PhotoImportSubfolderCreationMode extends StObject
 /** Specifies the method used for naming subfolders within the destination folder. */
 @JSGlobal("Windows.Media.Import.PhotoImportSubfolderCreationMode")
 @js.native
-object PhotoImportSubfolderCreationMode extends js.Object {
+object PhotoImportSubfolderCreationMode extends StObject {
   
   /** Subfolders are created based on the EXIF date of the imported files. */
   @js.native

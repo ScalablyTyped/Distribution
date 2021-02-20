@@ -1,11 +1,12 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefObject[T] extends js.Object {
+trait RefObject[T] extends StObject {
   
   val current: T | Null = js.native
 }
@@ -18,24 +19,12 @@ object RefObject {
   }
   
   @scala.inline
-  implicit class RefObjectOps[Self <: RefObject[_], T] (val x: Self with RefObject[T]) extends AnyVal {
+  implicit class RefObjectMutableBuilder[Self <: RefObject[_], T] (val x: Self with RefObject[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrent(value: T): Self = this.set("current", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentNull: Self = this.set("current", null)
+    def setCurrentNull: Self = StObject.set(x, "current", null)
   }
 }

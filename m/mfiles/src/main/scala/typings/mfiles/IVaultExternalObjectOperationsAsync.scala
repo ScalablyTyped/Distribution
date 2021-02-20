@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFACLEnforcingMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultExternalObjectOperationsAsync extends js.Object {
+trait IVaultExternalObjectOperationsAsync extends StObject {
   
   def PromoteObject(
     ObjVer: IObjVer,

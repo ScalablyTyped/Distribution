@@ -2,16 +2,16 @@ package typings.firebaseDatabase
 
 import typings.firebaseDatabase.eventMod.Event
 import typings.firebaseDatabase.pathMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/view/EventQueue", JSImport.Namespace)
-@js.native
-object eventQueueMod extends js.Object {
+object eventQueueMod {
   
+  @JSImport("@firebase/database/dist/src/core/view/EventQueue", "EventList")
   @js.native
-  class EventList protected () extends js.Object {
+  class EventList protected () extends StObject {
     def this(path_ : Path) = this()
     
     /**
@@ -38,8 +38,9 @@ object eventQueueMod extends js.Object {
     def raise(): Unit = js.native
   }
   
+  @JSImport("@firebase/database/dist/src/core/view/EventQueue", "EventQueue")
   @js.native
-  class EventQueue () extends js.Object {
+  class EventQueue () extends StObject {
     
     /**
       * @private

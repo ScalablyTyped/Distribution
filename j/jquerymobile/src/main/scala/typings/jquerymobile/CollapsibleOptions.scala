@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollapsibleOptions extends js.Object {
+trait CollapsibleOptions extends StObject {
   
   var collapseCueText: js.UndefOr[String] = js.native
   
@@ -40,90 +41,78 @@ object CollapsibleOptions {
   }
   
   @scala.inline
-  implicit class CollapsibleOptionsOps[Self <: CollapsibleOptions] (val x: Self) extends AnyVal {
+  implicit class CollapsibleOptionsMutableBuilder[Self <: CollapsibleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapseCueText(value: String): Self = StObject.set(x, "collapseCueText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseCueTextUndefined: Self = StObject.set(x, "collapseCueText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseCueText(value: String): Self = this.set("collapseCueText", value.asInstanceOf[js.Any])
+    def setCollapsedIcon(value: String): Self = StObject.set(x, "collapsedIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollapseCueText: Self = this.set("collapseCueText", js.undefined)
+    def setCollapsedIconUndefined: Self = StObject.set(x, "collapsedIcon", js.undefined)
     
     @scala.inline
-    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
     @scala.inline
-    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    def setContentTheme(value: String): Self = StObject.set(x, "contentTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsedIcon(value: String): Self = this.set("collapsedIcon", value.asInstanceOf[js.Any])
+    def setContentThemeUndefined: Self = StObject.set(x, "contentTheme", js.undefined)
     
     @scala.inline
-    def deleteCollapsedIcon: Self = this.set("collapsedIcon", js.undefined)
+    def setExpandCueText(value: String): Self = StObject.set(x, "expandCueText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentTheme(value: String): Self = this.set("contentTheme", value.asInstanceOf[js.Any])
+    def setExpandCueTextUndefined: Self = StObject.set(x, "expandCueText", js.undefined)
     
     @scala.inline
-    def deleteContentTheme: Self = this.set("contentTheme", js.undefined)
+    def setExpandedIcon(value: String): Self = StObject.set(x, "expandedIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandCueText(value: String): Self = this.set("expandCueText", value.asInstanceOf[js.Any])
+    def setExpandedIconUndefined: Self = StObject.set(x, "expandedIcon", js.undefined)
     
     @scala.inline
-    def deleteExpandCueText: Self = this.set("expandCueText", js.undefined)
+    def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedIcon(value: String): Self = this.set("expandedIcon", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteExpandedIcon: Self = this.set("expandedIcon", js.undefined)
+    def setIconpos(value: String): Self = StObject.set(x, "iconpos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: String): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setIconposUndefined: Self = StObject.set(x, "iconpos", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconpos(value: String): Self = this.set("iconpos", value.asInstanceOf[js.Any])
+    def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
     
     @scala.inline
-    def deleteIconpos: Self = this.set("iconpos", js.undefined)
+    def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitSelector(value: String): Self = this.set("initSelector", value.asInstanceOf[js.Any])
+    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
     @scala.inline
-    def deleteInitSelector: Self = this.set("initSelector", js.undefined)
+    def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInset(value: Boolean): Self = this.set("inset", value.asInstanceOf[js.Any])
+    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
     @scala.inline
-    def deleteInset: Self = this.set("inset", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMini(value: Boolean): Self = this.set("mini", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMini: Self = this.set("mini", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

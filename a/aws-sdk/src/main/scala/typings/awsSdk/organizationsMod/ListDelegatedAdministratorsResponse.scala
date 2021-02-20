@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDelegatedAdministratorsResponse extends js.Object {
+trait ListDelegatedAdministratorsResponse extends StObject {
   
   /**
     * The list of delegated administrators in your organization.
@@ -26,33 +27,21 @@ object ListDelegatedAdministratorsResponse {
   }
   
   @scala.inline
-  implicit class ListDelegatedAdministratorsResponseOps[Self <: ListDelegatedAdministratorsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDelegatedAdministratorsResponseMutableBuilder[Self <: ListDelegatedAdministratorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegatedAdministrators(value: DelegatedAdministrators): Self = StObject.set(x, "DelegatedAdministrators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelegatedAdministratorsUndefined: Self = StObject.set(x, "DelegatedAdministrators", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelegatedAdministratorsVarargs(value: DelegatedAdministrator*): Self = StObject.set(x, "DelegatedAdministrators", js.Array(value :_*))
     
     @scala.inline
-    def setDelegatedAdministratorsVarargs(value: DelegatedAdministrator*): Self = this.set("DelegatedAdministrators", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegatedAdministrators(value: DelegatedAdministrators): Self = this.set("DelegatedAdministrators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelegatedAdministrators: Self = this.set("DelegatedAdministrators", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

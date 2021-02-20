@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.dataviz.ui
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SparklineValueAxisItem extends js.Object {
+trait SparklineValueAxisItem extends StObject {
   
   var axisCrossingValue: js.UndefOr[js.Any | Date] = js.native
   
@@ -57,141 +58,129 @@ object SparklineValueAxisItem {
   }
   
   @scala.inline
-  implicit class SparklineValueAxisItemOps[Self <: SparklineValueAxisItem] (val x: Self) extends AnyVal {
+  implicit class SparklineValueAxisItemMutableBuilder[Self <: SparklineValueAxisItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisCrossingValue(value: js.Any | Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisCrossingValueUndefined: Self = StObject.set(x, "axisCrossingValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisCrossingValue(value: js.Any | Date): Self = this.set("axisCrossingValue", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteAxisCrossingValue: Self = this.set("axisCrossingValue", js.undefined)
+    def setCrosshair(value: SparklineValueAxisItemCrosshair): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLabels(value: SparklineValueAxisItemLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshair(value: SparklineValueAxisItemCrosshair): Self = this.set("crosshair", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteCrosshair: Self = this.set("crosshair", js.undefined)
+    def setLine(value: SparklineValueAxisItemLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: SparklineValueAxisItemLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setMajorGridLines(value: SparklineValueAxisItemMajorGridLines): Self = StObject.set(x, "majorGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: SparklineValueAxisItemLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setMajorGridLinesUndefined: Self = StObject.set(x, "majorGridLines", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setMajorTicks(value: SparklineValueAxisItemMajorTicks): Self = StObject.set(x, "majorTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorGridLines(value: SparklineValueAxisItemMajorGridLines): Self = this.set("majorGridLines", value.asInstanceOf[js.Any])
+    def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
     
     @scala.inline
-    def deleteMajorGridLines: Self = this.set("majorGridLines", js.undefined)
+    def setMajorUnit(value: Double): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorTicks(value: SparklineValueAxisItemMajorTicks): Self = this.set("majorTicks", value.asInstanceOf[js.Any])
+    def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
     
     @scala.inline
-    def deleteMajorTicks: Self = this.set("majorTicks", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorUnit(value: Double): Self = this.set("majorUnit", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteMajorUnit: Self = this.set("majorUnit", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMinorGridLines(value: SparklineValueAxisItemMinorGridLines): Self = StObject.set(x, "minorGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMinorGridLinesUndefined: Self = StObject.set(x, "minorGridLines", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinorTicks(value: SparklineValueAxisItemMinorTicks): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorGridLines(value: SparklineValueAxisItemMinorGridLines): Self = this.set("minorGridLines", value.asInstanceOf[js.Any])
+    def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
     
     @scala.inline
-    def deleteMinorGridLines: Self = this.set("minorGridLines", js.undefined)
+    def setMinorUnit(value: Double): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTicks(value: SparklineValueAxisItemMinorTicks): Self = this.set("minorTicks", value.asInstanceOf[js.Any])
+    def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
     
     @scala.inline
-    def deleteMinorTicks: Self = this.set("minorTicks", js.undefined)
+    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorUnit(value: Double): Self = this.set("minorUnit", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinorUnit: Self = this.set("minorUnit", js.undefined)
+    def setNarrowRange(value: Boolean): Self = StObject.set(x, "narrowRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: js.Any): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNarrowRangeUndefined: Self = StObject.set(x, "narrowRange", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNotes(value: SparklineValueAxisItemNotes): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNarrowRange(value: Boolean): Self = this.set("narrowRange", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteNarrowRange: Self = this.set("narrowRange", js.undefined)
+    def setPlotBands(value: js.Array[SparklineValueAxisItemPlotBand]): Self = StObject.set(x, "plotBands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: SparklineValueAxisItemNotes): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setPlotBandsVarargs(value: SparklineValueAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value :_*))
     
     @scala.inline
-    def setPlotBandsVarargs(value: SparklineValueAxisItemPlotBand*): Self = this.set("plotBands", js.Array(value :_*))
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlotBands(value: js.Array[SparklineValueAxisItemPlotBand]): Self = this.set("plotBands", value.asInstanceOf[js.Any])
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def deletePlotBands: Self = this.set("plotBands", js.undefined)
+    def setTitle(value: SparklineValueAxisItemTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: SparklineValueAxisItemTitle): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

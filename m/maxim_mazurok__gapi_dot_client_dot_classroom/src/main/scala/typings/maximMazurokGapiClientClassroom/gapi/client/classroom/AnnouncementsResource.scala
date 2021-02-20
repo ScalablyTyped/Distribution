@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientClassroom.anon.Fields
 import typings.maximMazurokGapiClientClassroom.anon.Id
 import typings.maximMazurokGapiClientClassroom.anon.Key
 import typings.maximMazurokGapiClientClassroom.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnouncementsResource extends js.Object {
+trait AnnouncementsResource extends StObject {
   
   def create(request: Alt, body: Announcement): Request[Announcement] = js.native
   /**

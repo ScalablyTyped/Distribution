@@ -1,16 +1,15 @@
 package typings.materialTab
 
 import typings.std.ClientRect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab/adapter", JSImport.Namespace)
-@js.native
-object adapterMod extends js.Object {
+object adapterMod {
   
   @js.native
-  trait MDCTabAdapter extends js.Object {
+  trait MDCTabAdapter extends StObject {
     
     /**
       * Activates the indicator element.

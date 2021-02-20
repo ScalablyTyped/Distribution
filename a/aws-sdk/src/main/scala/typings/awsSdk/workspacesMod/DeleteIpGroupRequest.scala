@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteIpGroupRequest extends js.Object {
+trait DeleteIpGroupRequest extends StObject {
   
   /**
     * The identifier of the IP access control group.
@@ -21,21 +22,9 @@ object DeleteIpGroupRequest {
   }
   
   @scala.inline
-  implicit class DeleteIpGroupRequestOps[Self <: DeleteIpGroupRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteIpGroupRequestMutableBuilder[Self <: DeleteIpGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroupId(value: IpGroupId): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    def setGroupId(value: IpGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }
 }

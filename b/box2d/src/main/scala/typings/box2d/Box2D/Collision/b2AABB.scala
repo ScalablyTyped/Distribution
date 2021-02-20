@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2AABB extends js.Object {
+trait b2AABB extends StObject {
   
   /**
     * Combines two AABBs into one with max values for upper bound and min values for lower bound.  The result is stored in this AABB.
@@ -84,45 +85,33 @@ object b2AABB {
   }
   
   @scala.inline
-  implicit class b2AABBOps[Self <: b2AABB] (val x: Self) extends AnyVal {
+  implicit class b2AABBMutableBuilder[Self <: b2AABB] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCombine(value: (b2AABB, b2AABB) => Unit): Self = StObject.set(x, "Combine", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContains(value: b2AABB => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCenter(value: () => b2Vec2): Self = StObject.set(x, "GetCenter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCombine(value: (b2AABB, b2AABB) => Unit): Self = this.set("Combine", js.Any.fromFunction2(value))
+    def setGetExtents(value: () => b2Vec2): Self = StObject.set(x, "GetExtents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContains(value: b2AABB => Boolean): Self = this.set("Contains", js.Any.fromFunction1(value))
+    def setIsValid(value: () => Boolean): Self = StObject.set(x, "IsValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCenter(value: () => b2Vec2): Self = this.set("GetCenter", js.Any.fromFunction0(value))
+    def setLowerBound(value: b2Vec2): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetExtents(value: () => b2Vec2): Self = this.set("GetExtents", js.Any.fromFunction0(value))
+    def setRayCast(value: (b2RayCastOutput, b2RayCastInput) => Boolean): Self = StObject.set(x, "RayCast", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsValid(value: () => Boolean): Self = this.set("IsValid", js.Any.fromFunction0(value))
+    def setTestOverlap(value: b2AABB => Boolean): Self = StObject.set(x, "TestOverlap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRayCast(value: (b2RayCastOutput, b2RayCastInput) => Boolean): Self = this.set("RayCast", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTestOverlap(value: b2AABB => Boolean): Self = this.set("TestOverlap", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLowerBound(value: b2Vec2): Self = this.set("lowerBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpperBound(value: b2Vec2): Self = this.set("upperBound", value.asInstanceOf[js.Any])
+    def setUpperBound(value: b2Vec2): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
   }
 }

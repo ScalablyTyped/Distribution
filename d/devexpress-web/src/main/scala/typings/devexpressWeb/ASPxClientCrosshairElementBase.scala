@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The base class for all Crosshair Cursor's elements.
   */
 @js.native
-trait ASPxClientCrosshairElementBase extends js.Object {
+trait ASPxClientCrosshairElementBase extends StObject {
   
   /**
     * Returns the Crosshair Cursor's axis label element that belongs to the Crosshair element.
@@ -50,33 +51,21 @@ object ASPxClientCrosshairElementBase {
   }
   
   @scala.inline
-  implicit class ASPxClientCrosshairElementBaseOps[Self <: ASPxClientCrosshairElementBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientCrosshairElementBaseMutableBuilder[Self <: ASPxClientCrosshairElementBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisLabelElement(value: ASPxClientCrosshairAxisLabelElement): Self = StObject.set(x, "AxisLabelElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelElement(value: ASPxClientCrosshairSeriesLabelElement): Self = StObject.set(x, "LabelElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineElement(value: ASPxClientCrosshairLineElement): Self = StObject.set(x, "LineElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisLabelElement(value: ASPxClientCrosshairAxisLabelElement): Self = this.set("AxisLabelElement", value.asInstanceOf[js.Any])
+    def setPoint(value: ASPxClientSeriesPoint): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelElement(value: ASPxClientCrosshairSeriesLabelElement): Self = this.set("LabelElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineElement(value: ASPxClientCrosshairLineElement): Self = this.set("LineElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoint(value: ASPxClientSeriesPoint): Self = this.set("Point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

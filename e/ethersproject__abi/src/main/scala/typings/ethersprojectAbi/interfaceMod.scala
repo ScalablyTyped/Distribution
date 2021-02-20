@@ -1,6 +1,7 @@
 package typings.ethersprojectAbi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.ethersprojectAbi.abiCoderMod.AbiCoder
 import typings.ethersprojectAbi.abstractCoderMod.Result
 import typings.ethersprojectAbi.anon.Data
@@ -16,32 +17,35 @@ import typings.ethersprojectAbi.fragmentsMod.ParamType
 import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectProperties.mod.Description
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/abi/lib/interface", JSImport.Namespace)
-@js.native
-object interfaceMod extends js.Object {
+object interfaceMod {
   
-  def checkResultErrors(result: Result): js.Array[Error] = js.native
-  
+  @JSImport("@ethersproject/abi/lib/interface", "Indexed")
   @js.native
-  class Indexed () extends Description[Indexed] {
+  class Indexed protected () extends Description[Indexed] {
+    def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed ]: @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed[K]}
+      */ typings.ethersprojectAbi.ethersprojectAbiStrings.Indexed with TopLevel[Indexed]) = this()
     
     val _isIndexed: Boolean = js.native
     
     val hash: String = js.native
   }
   /* static members */
-  @js.native
-  object Indexed extends js.Object {
+  object Indexed {
     
+    @JSImport("@ethersproject/abi/lib/interface", "Indexed.isIndexed")
+    @js.native
     def isIndexed(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Indexed */ Boolean = js.native
   }
   
+  @JSImport("@ethersproject/abi/lib/interface", "Interface")
   @js.native
-  class Interface protected () extends js.Object {
+  class Interface protected () extends StObject {
     def this(fragments: String) = this()
     def this(fragments: js.Array[Fragment | JsonFragment | String]) = this()
     
@@ -111,22 +115,35 @@ object interfaceMod extends js.Object {
     val structs: StringDictionary[js.Any] = js.native
   }
   /* static members */
-  @js.native
-  object Interface extends js.Object {
+  object Interface {
     
+    @JSImport("@ethersproject/abi/lib/interface", "Interface.getAbiCoder")
+    @js.native
     def getAbiCoder(): AbiCoder = js.native
     
+    @JSImport("@ethersproject/abi/lib/interface", "Interface.getAddress")
+    @js.native
     def getAddress(address: String): String = js.native
     
+    @JSImport("@ethersproject/abi/lib/interface", "Interface.getEventTopic")
+    @js.native
     def getEventTopic(eventFragment: EventFragment): String = js.native
     
+    @JSImport("@ethersproject/abi/lib/interface", "Interface.getSighash")
+    @js.native
     def getSighash(functionFragment: FunctionFragment): String = js.native
     
+    @JSImport("@ethersproject/abi/lib/interface", "Interface.isInterface")
+    @js.native
     def isInterface(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Interface */ Boolean = js.native
   }
   
+  @JSImport("@ethersproject/abi/lib/interface", "LogDescription")
   @js.native
-  class LogDescription () extends Description[LogDescription] {
+  class LogDescription protected () extends Description[LogDescription] {
+    def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof @ethersproject/abi.@ethersproject/abi/lib/interface.LogDescription ]: @ethersproject/abi.@ethersproject/abi/lib/interface.LogDescription[K]}
+      */ typings.ethersprojectAbi.ethersprojectAbiStrings.LogDescription with TopLevel[LogDescription]) = this()
     
     val args: Result = js.native
     
@@ -139,8 +156,12 @@ object interfaceMod extends js.Object {
     val topic: String = js.native
   }
   
+  @JSImport("@ethersproject/abi/lib/interface", "TransactionDescription")
   @js.native
-  class TransactionDescription () extends Description[TransactionDescription] {
+  class TransactionDescription protected () extends Description[TransactionDescription] {
+    def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof @ethersproject/abi.@ethersproject/abi/lib/interface.TransactionDescription ]: @ethersproject/abi.@ethersproject/abi/lib/interface.TransactionDescription[K]}
+      */ typings.ethersprojectAbi.ethersprojectAbiStrings.TransactionDescription with TopLevel[TransactionDescription]) = this()
     
     val args: Result = js.native
     
@@ -154,4 +175,8 @@ object interfaceMod extends js.Object {
     
     val value: BigNumber = js.native
   }
+  
+  @JSImport("@ethersproject/abi/lib/interface", "checkResultErrors")
+  @js.native
+  def checkResultErrors(result: Result): js.Array[Error] = js.native
 }

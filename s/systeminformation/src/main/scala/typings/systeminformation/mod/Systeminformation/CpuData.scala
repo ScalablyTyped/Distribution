@@ -1,12 +1,13 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3. CPU, Memory, Disks, Battery, Graphics
 @js.native
-trait CpuData extends js.Object {
+trait CpuData extends StObject {
   
   var brand: String = js.native
   
@@ -69,69 +70,57 @@ object CpuData {
   }
   
   @scala.inline
-  implicit class CpuDataOps[Self <: CpuData] (val x: Self) extends AnyVal {
+  implicit class CpuDataMutableBuilder[Self <: CpuData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCache(value: CpuCacheData): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCores(value: Double): Self = StObject.set(x, "cores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: CpuCacheData): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setGovernor(value: String): Self = StObject.set(x, "governor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCores(value: Double): Self = this.set("cores", value.asInstanceOf[js.Any])
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGovernor(value: String): Self = this.set("governor", value.asInstanceOf[js.Any])
+    def setPhysicalCores(value: Double): Self = StObject.set(x, "physicalCores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setProcessors(value: Double): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalCores(value: Double): Self = this.set("physicalCores", value.asInstanceOf[js.Any])
+    def setSocket(value: String): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessors(value: Double): Self = this.set("processors", value.asInstanceOf[js.Any])
+    def setSpeed(value: String): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: String): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setSpeedmax(value: String): Self = StObject.set(x, "speedmax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocket(value: String): Self = this.set("socket", value.asInstanceOf[js.Any])
+    def setSpeedmin(value: String): Self = StObject.set(x, "speedmin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeed(value: String): Self = this.set("speed", value.asInstanceOf[js.Any])
+    def setStepping(value: String): Self = StObject.set(x, "stepping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeedmax(value: String): Self = this.set("speedmax", value.asInstanceOf[js.Any])
+    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeedmin(value: String): Self = this.set("speedmin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepping(value: String): Self = this.set("stepping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendor(value: String): Self = this.set("vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoltage(value: String): Self = this.set("voltage", value.asInstanceOf[js.Any])
+    def setVoltage(value: String): Self = StObject.set(x, "voltage", value.asInstanceOf[js.Any])
   }
 }

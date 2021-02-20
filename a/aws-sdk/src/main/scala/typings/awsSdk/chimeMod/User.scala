@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   /**
     * The Amazon Chime account ID.
@@ -81,93 +82,81 @@ object User {
   }
   
   @scala.inline
-  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlexaForBusinessMetadata(value: AlexaForBusinessMetadata): Self = StObject.set(x, "AlexaForBusinessMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: String): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    def setAlexaForBusinessMetadataUndefined: Self = StObject.set(x, "AlexaForBusinessMetadata", js.undefined)
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setDisplayName(value: SensitiveString): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def setAlexaForBusinessMetadata(value: AlexaForBusinessMetadata): Self = this.set("AlexaForBusinessMetadata", value.asInstanceOf[js.Any])
+    def setInvitedOn(value: Iso8601Timestamp): Self = StObject.set(x, "InvitedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlexaForBusinessMetadata: Self = this.set("AlexaForBusinessMetadata", js.undefined)
+    def setInvitedOnUndefined: Self = StObject.set(x, "InvitedOn", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: SensitiveString): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setLicenseType(value: License): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setLicenseTypeUndefined: Self = StObject.set(x, "LicenseType", js.undefined)
     
     @scala.inline
-    def setInvitedOn(value: Iso8601Timestamp): Self = this.set("InvitedOn", value.asInstanceOf[js.Any])
+    def setPersonalPIN(value: String): Self = StObject.set(x, "PersonalPIN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvitedOn: Self = this.set("InvitedOn", js.undefined)
+    def setPersonalPINUndefined: Self = StObject.set(x, "PersonalPIN", js.undefined)
     
     @scala.inline
-    def setLicenseType(value: License): Self = this.set("LicenseType", value.asInstanceOf[js.Any])
+    def setPrimaryEmail(value: EmailAddress): Self = StObject.set(x, "PrimaryEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLicenseType: Self = this.set("LicenseType", js.undefined)
+    def setPrimaryEmailUndefined: Self = StObject.set(x, "PrimaryEmail", js.undefined)
     
     @scala.inline
-    def setPersonalPIN(value: String): Self = this.set("PersonalPIN", value.asInstanceOf[js.Any])
+    def setPrimaryProvisionedNumber(value: SensitiveString): Self = StObject.set(x, "PrimaryProvisionedNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersonalPIN: Self = this.set("PersonalPIN", js.undefined)
+    def setPrimaryProvisionedNumberUndefined: Self = StObject.set(x, "PrimaryProvisionedNumber", js.undefined)
     
     @scala.inline
-    def setPrimaryEmail(value: EmailAddress): Self = this.set("PrimaryEmail", value.asInstanceOf[js.Any])
+    def setRegisteredOn(value: Iso8601Timestamp): Self = StObject.set(x, "RegisteredOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimaryEmail: Self = this.set("PrimaryEmail", js.undefined)
+    def setRegisteredOnUndefined: Self = StObject.set(x, "RegisteredOn", js.undefined)
     
     @scala.inline
-    def setPrimaryProvisionedNumber(value: SensitiveString): Self = this.set("PrimaryProvisionedNumber", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimaryProvisionedNumber: Self = this.set("PrimaryProvisionedNumber", js.undefined)
+    def setUserInvitationStatus(value: InviteStatus): Self = StObject.set(x, "UserInvitationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredOn(value: Iso8601Timestamp): Self = this.set("RegisteredOn", value.asInstanceOf[js.Any])
+    def setUserInvitationStatusUndefined: Self = StObject.set(x, "UserInvitationStatus", js.undefined)
     
     @scala.inline
-    def deleteRegisteredOn: Self = this.set("RegisteredOn", js.undefined)
+    def setUserRegistrationStatus(value: RegistrationStatus): Self = StObject.set(x, "UserRegistrationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserInvitationStatus(value: InviteStatus): Self = this.set("UserInvitationStatus", value.asInstanceOf[js.Any])
+    def setUserRegistrationStatusUndefined: Self = StObject.set(x, "UserRegistrationStatus", js.undefined)
     
     @scala.inline
-    def deleteUserInvitationStatus: Self = this.set("UserInvitationStatus", js.undefined)
+    def setUserType(value: UserType): Self = StObject.set(x, "UserType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserRegistrationStatus(value: RegistrationStatus): Self = this.set("UserRegistrationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRegistrationStatus: Self = this.set("UserRegistrationStatus", js.undefined)
-    
-    @scala.inline
-    def setUserType(value: UserType): Self = this.set("UserType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserType: Self = this.set("UserType", js.undefined)
+    def setUserTypeUndefined: Self = StObject.set(x, "UserType", js.undefined)
   }
 }

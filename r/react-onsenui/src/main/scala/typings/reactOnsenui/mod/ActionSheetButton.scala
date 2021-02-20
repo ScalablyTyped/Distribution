@@ -1,11 +1,19 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.anon.HTMLAttributesidclassNameIcon
+import typings.reactOnsenui.anon.HTMLAttributesidclassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "ActionSheetButton")
 @js.native
-class ActionSheetButton ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNameIcon, js.Any, js.Any]
+class ActionSheetButton protected ()
+  extends Component[typings.reactOnsenui.anon.Icon, js.Any] {
+  def this(props: HTMLAttributesidclassName with typings.reactOnsenui.anon.Icon) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName with typings.reactOnsenui.anon.Icon, context: js.Any) = this()
+}

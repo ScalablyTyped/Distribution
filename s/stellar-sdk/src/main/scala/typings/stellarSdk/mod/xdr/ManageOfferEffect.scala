@@ -1,5 +1,6 @@
 package typings.stellarSdk.mod.xdr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ManageOfferEffect ()
   extends typings.stellarBase.mod.xdr.ManageOfferEffect
-/* static members */
-@JSImport("stellar-sdk", "xdr.ManageOfferEffect")
-@js.native
-object ManageOfferEffect extends js.Object {
+object ManageOfferEffect {
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.ManageOfferEffect.manageOfferCreated")
+  @js.native
   def manageOfferCreated(): typings.stellarBase.xdrMod.xdr.ManageOfferEffect = js.native
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.ManageOfferEffect.manageOfferDeleted")
+  @js.native
   def manageOfferDeleted(): typings.stellarBase.xdrMod.xdr.ManageOfferEffect = js.native
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.ManageOfferEffect.manageOfferUpdated")
+  @js.native
   def manageOfferUpdated(): typings.stellarBase.xdrMod.xdr.ManageOfferEffect = js.native
 }

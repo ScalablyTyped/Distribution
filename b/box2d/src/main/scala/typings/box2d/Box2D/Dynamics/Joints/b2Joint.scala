@@ -2,12 +2,13 @@ package typings.box2d.Box2D.Dynamics.Joints
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2Joint extends js.Object {
+trait b2Joint extends StObject {
   
   /**
     * Get the anchor point on bodyA in world coordinates.
@@ -98,51 +99,39 @@ object b2Joint {
   }
   
   @scala.inline
-  implicit class b2JointOps[Self <: b2Joint] (val x: Self) extends AnyVal {
+  implicit class b2JointMutableBuilder[Self <: b2Joint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAnchorA(value: () => b2Vec2): Self = StObject.set(x, "GetAnchorA", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAnchorB(value: () => b2Vec2): Self = StObject.set(x, "GetAnchorB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBodyA(value: () => b2Body): Self = StObject.set(x, "GetBodyA", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAnchorA(value: () => b2Vec2): Self = this.set("GetAnchorA", js.Any.fromFunction0(value))
+    def setGetBodyB(value: () => b2Body): Self = StObject.set(x, "GetBodyB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAnchorB(value: () => b2Vec2): Self = this.set("GetAnchorB", js.Any.fromFunction0(value))
+    def setGetNext(value: () => b2Joint): Self = StObject.set(x, "GetNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBodyA(value: () => b2Body): Self = this.set("GetBodyA", js.Any.fromFunction0(value))
+    def setGetReactionForce(value: Double => b2Vec2): Self = StObject.set(x, "GetReactionForce", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBodyB(value: () => b2Body): Self = this.set("GetBodyB", js.Any.fromFunction0(value))
+    def setGetReactionTorque(value: Double => Double): Self = StObject.set(x, "GetReactionTorque", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNext(value: () => b2Joint): Self = this.set("GetNext", js.Any.fromFunction0(value))
+    def setGetType(value: () => Double): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetReactionForce(value: Double => b2Vec2): Self = this.set("GetReactionForce", js.Any.fromFunction1(value))
+    def setGetUserData(value: () => js.Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetReactionTorque(value: Double => Double): Self = this.set("GetReactionTorque", js.Any.fromFunction1(value))
+    def setIsActive(value: () => Boolean): Self = StObject.set(x, "IsActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetType(value: () => Double): Self = this.set("GetType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUserData(value: () => js.Any): Self = this.set("GetUserData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = this.set("IsActive", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetUserData(value: js.Any => Unit): Self = this.set("SetUserData", js.Any.fromFunction1(value))
+    def setSetUserData(value: js.Any => Unit): Self = StObject.set(x, "SetUserData", js.Any.fromFunction1(value))
   }
 }

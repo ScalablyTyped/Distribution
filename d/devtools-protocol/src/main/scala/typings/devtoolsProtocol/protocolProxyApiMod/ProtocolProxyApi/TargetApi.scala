@@ -35,12 +35,13 @@ import typings.devtoolsProtocol.mod.Protocol.Target.TargetCrashedEvent
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetCreatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetDestroyedEvent
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfoChangedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetApi extends js.Object {
+trait TargetApi extends StObject {
   
   /**
     * Activates (focuses) the target.

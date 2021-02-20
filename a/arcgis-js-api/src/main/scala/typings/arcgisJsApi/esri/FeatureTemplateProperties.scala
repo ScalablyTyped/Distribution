@@ -15,12 +15,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.rectangle
 import typings.arcgisJsApi.arcgisJsApiStrings.triangle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureTemplateProperties extends js.Object {
+trait FeatureTemplateProperties extends StObject {
   
   /**
     * Description of the feature template.
@@ -61,44 +62,32 @@ object FeatureTemplateProperties {
   }
   
   @scala.inline
-  implicit class FeatureTemplatePropertiesOps[Self <: FeatureTemplateProperties] (val x: Self) extends AnyVal {
+  implicit class FeatureTemplatePropertiesMutableBuilder[Self <: FeatureTemplateProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
     def setDrawingTool(
       value: `auto-complete-polygon` | circle | ellipse | freehand | line | none | point | polygon | rectangle | arrow | triangle | `left-arrow` | `right-arrow` | `up-arrow` | `down-arrow`
-    ): Self = this.set("drawingTool", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "drawingTool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrawingTool: Self = this.set("drawingTool", js.undefined)
+    def setDrawingToolUndefined: Self = StObject.set(x, "drawingTool", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setThumbnail(value: FeatureTemplateThumbnail): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    def setThumbnail(value: FeatureTemplateThumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

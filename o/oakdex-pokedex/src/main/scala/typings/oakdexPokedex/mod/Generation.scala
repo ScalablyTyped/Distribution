@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Generation extends js.Object {
+trait Generation extends StObject {
   
   var dex_name: String = js.native
   
@@ -24,33 +25,21 @@ object Generation {
   }
   
   @scala.inline
-  implicit class GenerationOps[Self <: Generation] (val x: Self) extends AnyVal {
+  implicit class GenerationMutableBuilder[Self <: Generation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDex_name(value: String): Self = StObject.set(x, "dex_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGames(value: js.Array[Translations]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGamesVarargs(value: Translations*): Self = StObject.set(x, "games", js.Array(value :_*))
     
     @scala.inline
-    def setDex_name(value: String): Self = this.set("dex_name", value.asInstanceOf[js.Any])
+    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGamesVarargs(value: Translations*): Self = this.set("games", js.Array(value :_*))
-    
-    @scala.inline
-    def setGames(value: js.Array[Translations]): Self = this.set("games", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNames(value: Translations): Self = this.set("names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

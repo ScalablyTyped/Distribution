@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiscoverInputSchemaResponse extends js.Object {
+trait DiscoverInputSchemaResponse extends StObject {
   
   /**
     * Schema inferred from the streaming source. It identifies the format of the data in the streaming source and how each data element maps to corresponding columns in the in-application stream that you can create.
@@ -36,51 +37,39 @@ object DiscoverInputSchemaResponse {
   }
   
   @scala.inline
-  implicit class DiscoverInputSchemaResponseOps[Self <: DiscoverInputSchemaResponse] (val x: Self) extends AnyVal {
+  implicit class DiscoverInputSchemaResponseMutableBuilder[Self <: DiscoverInputSchemaResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputSchema(value: SourceSchema): Self = StObject.set(x, "InputSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputSchemaUndefined: Self = StObject.set(x, "InputSchema", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParsedInputRecords(value: ParsedInputRecords): Self = StObject.set(x, "ParsedInputRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSchema(value: SourceSchema): Self = this.set("InputSchema", value.asInstanceOf[js.Any])
+    def setParsedInputRecordsUndefined: Self = StObject.set(x, "ParsedInputRecords", js.undefined)
     
     @scala.inline
-    def deleteInputSchema: Self = this.set("InputSchema", js.undefined)
+    def setParsedInputRecordsVarargs(value: ParsedInputRecord*): Self = StObject.set(x, "ParsedInputRecords", js.Array(value :_*))
     
     @scala.inline
-    def setParsedInputRecordsVarargs(value: ParsedInputRecord*): Self = this.set("ParsedInputRecords", js.Array(value :_*))
+    def setProcessedInputRecords(value: ProcessedInputRecords): Self = StObject.set(x, "ProcessedInputRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParsedInputRecords(value: ParsedInputRecords): Self = this.set("ParsedInputRecords", value.asInstanceOf[js.Any])
+    def setProcessedInputRecordsUndefined: Self = StObject.set(x, "ProcessedInputRecords", js.undefined)
     
     @scala.inline
-    def deleteParsedInputRecords: Self = this.set("ParsedInputRecords", js.undefined)
+    def setProcessedInputRecordsVarargs(value: ProcessedInputRecord*): Self = StObject.set(x, "ProcessedInputRecords", js.Array(value :_*))
     
     @scala.inline
-    def setProcessedInputRecordsVarargs(value: ProcessedInputRecord*): Self = this.set("ProcessedInputRecords", js.Array(value :_*))
+    def setRawInputRecords(value: RawInputRecords): Self = StObject.set(x, "RawInputRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessedInputRecords(value: ProcessedInputRecords): Self = this.set("ProcessedInputRecords", value.asInstanceOf[js.Any])
+    def setRawInputRecordsUndefined: Self = StObject.set(x, "RawInputRecords", js.undefined)
     
     @scala.inline
-    def deleteProcessedInputRecords: Self = this.set("ProcessedInputRecords", js.undefined)
-    
-    @scala.inline
-    def setRawInputRecordsVarargs(value: RawInputRecord*): Self = this.set("RawInputRecords", js.Array(value :_*))
-    
-    @scala.inline
-    def setRawInputRecords(value: RawInputRecords): Self = this.set("RawInputRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRawInputRecords: Self = this.set("RawInputRecords", js.undefined)
+    def setRawInputRecordsVarargs(value: RawInputRecord*): Self = StObject.set(x, "RawInputRecords", js.Array(value :_*))
   }
 }

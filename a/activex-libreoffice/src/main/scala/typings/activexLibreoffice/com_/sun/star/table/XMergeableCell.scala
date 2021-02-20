@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.table
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,33 +56,21 @@ object XMergeableCell {
   }
   
   @scala.inline
-  implicit class XMergeableCellOps[Self <: XMergeableCell] (val x: Self) extends AnyVal {
+  implicit class XMergeableCellMutableBuilder[Self <: XMergeableCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnSpan(value: Double): Self = StObject.set(x, "ColumnSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetColumnSpan(value: () => Double): Self = StObject.set(x, "getColumnSpan", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRowSpan(value: () => Double): Self = StObject.set(x, "getRowSpan", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnSpan(value: Double): Self = this.set("ColumnSpan", value.asInstanceOf[js.Any])
+    def setIsMerged(value: () => Boolean): Self = StObject.set(x, "isMerged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRowSpan(value: Double): Self = this.set("RowSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetColumnSpan(value: () => Double): Self = this.set("getColumnSpan", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRowSpan(value: () => Double): Self = this.set("getRowSpan", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsMerged(value: () => Boolean): Self = this.set("isMerged", js.Any.fromFunction0(value))
+    def setRowSpan(value: Double): Self = StObject.set(x, "RowSpan", value.asInstanceOf[js.Any])
   }
 }

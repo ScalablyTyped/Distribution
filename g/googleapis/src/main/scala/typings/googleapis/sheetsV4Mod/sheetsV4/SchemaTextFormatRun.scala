@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * index of the next run. When updating, all fields must be set.
   */
 @js.native
-trait SchemaTextFormatRun extends js.Object {
+trait SchemaTextFormatRun extends StObject {
   
   /**
     * The format of this run.  Absent values inherit the cell&#39;s format.
@@ -30,30 +31,18 @@ object SchemaTextFormatRun {
   }
   
   @scala.inline
-  implicit class SchemaTextFormatRunOps[Self <: SchemaTextFormatRun] (val x: Self) extends AnyVal {
+  implicit class SchemaTextFormatRunMutableBuilder[Self <: SchemaTextFormatRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: SchemaTextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: SchemaTextFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

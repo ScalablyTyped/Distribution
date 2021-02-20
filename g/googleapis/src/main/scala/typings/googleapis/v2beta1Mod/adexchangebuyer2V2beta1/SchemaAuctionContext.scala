@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @OutputOnly The auction type the restriction applies to.
   */
 @js.native
-trait SchemaAuctionContext extends js.Object {
+trait SchemaAuctionContext extends StObject {
   
   /**
     * The auction types this restriction applies to.
@@ -24,27 +25,15 @@ object SchemaAuctionContext {
   }
   
   @scala.inline
-  implicit class SchemaAuctionContextOps[Self <: SchemaAuctionContext] (val x: Self) extends AnyVal {
+  implicit class SchemaAuctionContextMutableBuilder[Self <: SchemaAuctionContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuctionTypes(value: js.Array[String]): Self = StObject.set(x, "auctionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuctionTypesUndefined: Self = StObject.set(x, "auctionTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuctionTypesVarargs(value: String*): Self = this.set("auctionTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAuctionTypes(value: js.Array[String]): Self = this.set("auctionTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuctionTypes: Self = this.set("auctionTypes", js.undefined)
+    def setAuctionTypesVarargs(value: String*): Self = StObject.set(x, "auctionTypes", js.Array(value :_*))
   }
 }

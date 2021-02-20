@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouterNatSubnetworkToNat extends js.Object {
+trait RouterNatSubnetworkToNat extends StObject {
   
   /** URL for the subnetwork resource that will use NAT. */
   var name: js.UndefOr[String] = js.native
@@ -31,42 +32,30 @@ object RouterNatSubnetworkToNat {
   }
   
   @scala.inline
-  implicit class RouterNatSubnetworkToNatOps[Self <: RouterNatSubnetworkToNat] (val x: Self) extends AnyVal {
+  implicit class RouterNatSubnetworkToNatMutableBuilder[Self <: RouterNatSubnetworkToNat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecondaryIpRangeNames(value: js.Array[String]): Self = StObject.set(x, "secondaryIpRangeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSecondaryIpRangeNamesUndefined: Self = StObject.set(x, "secondaryIpRangeNames", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSecondaryIpRangeNamesVarargs(value: String*): Self = StObject.set(x, "secondaryIpRangeNames", js.Array(value :_*))
     
     @scala.inline
-    def setSecondaryIpRangeNamesVarargs(value: String*): Self = this.set("secondaryIpRangeNames", js.Array(value :_*))
+    def setSourceIpRangesToNat(value: js.Array[String]): Self = StObject.set(x, "sourceIpRangesToNat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryIpRangeNames(value: js.Array[String]): Self = this.set("secondaryIpRangeNames", value.asInstanceOf[js.Any])
+    def setSourceIpRangesToNatUndefined: Self = StObject.set(x, "sourceIpRangesToNat", js.undefined)
     
     @scala.inline
-    def deleteSecondaryIpRangeNames: Self = this.set("secondaryIpRangeNames", js.undefined)
-    
-    @scala.inline
-    def setSourceIpRangesToNatVarargs(value: String*): Self = this.set("sourceIpRangesToNat", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceIpRangesToNat(value: js.Array[String]): Self = this.set("sourceIpRangesToNat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceIpRangesToNat: Self = this.set("sourceIpRangesToNat", js.undefined)
+    def setSourceIpRangesToNatVarargs(value: String*): Self = StObject.set(x, "sourceIpRangesToNat", js.Array(value :_*))
   }
 }

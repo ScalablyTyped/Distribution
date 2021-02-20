@@ -1,6 +1,7 @@
 package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,57 +36,45 @@ object OutputData {
   }
   
   @scala.inline
-  implicit class OutputDataOps[Self <: OutputData] (val x: Self) extends AnyVal {
+  implicit class OutputDataMutableBuilder[Self <: OutputData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeneric(value: js.Array[DialogRuntimeResponseGeneric]): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenericVarargs(value: DialogRuntimeResponseGeneric*): Self = StObject.set(x, "generic", js.Array(value :_*))
     
     @scala.inline
-    def setLog_messagesVarargs(value: LogMessage*): Self = this.set("log_messages", js.Array(value :_*))
+    def setLog_messages(value: js.Array[LogMessage]): Self = StObject.set(x, "log_messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog_messages(value: js.Array[LogMessage]): Self = this.set("log_messages", value.asInstanceOf[js.Any])
+    def setLog_messagesVarargs(value: LogMessage*): Self = StObject.set(x, "log_messages", js.Array(value :_*))
     
     @scala.inline
-    def setTextVarargs(value: String*): Self = this.set("text", js.Array(value :_*))
+    def setNodes_visited(value: js.Array[String]): Self = StObject.set(x, "nodes_visited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: js.Array[String]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setNodes_visitedUndefined: Self = StObject.set(x, "nodes_visited", js.undefined)
     
     @scala.inline
-    def setGenericVarargs(value: DialogRuntimeResponseGeneric*): Self = this.set("generic", js.Array(value :_*))
+    def setNodes_visitedVarargs(value: String*): Self = StObject.set(x, "nodes_visited", js.Array(value :_*))
     
     @scala.inline
-    def setGeneric(value: js.Array[DialogRuntimeResponseGeneric]): Self = this.set("generic", value.asInstanceOf[js.Any])
+    def setNodes_visited_details(value: js.Array[DialogNodeVisitedDetails]): Self = StObject.set(x, "nodes_visited_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeneric: Self = this.set("generic", js.undefined)
+    def setNodes_visited_detailsUndefined: Self = StObject.set(x, "nodes_visited_details", js.undefined)
     
     @scala.inline
-    def setNodes_visitedVarargs(value: String*): Self = this.set("nodes_visited", js.Array(value :_*))
+    def setNodes_visited_detailsVarargs(value: DialogNodeVisitedDetails*): Self = StObject.set(x, "nodes_visited_details", js.Array(value :_*))
     
     @scala.inline
-    def setNodes_visited(value: js.Array[String]): Self = this.set("nodes_visited", value.asInstanceOf[js.Any])
+    def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodes_visited: Self = this.set("nodes_visited", js.undefined)
-    
-    @scala.inline
-    def setNodes_visited_detailsVarargs(value: DialogNodeVisitedDetails*): Self = this.set("nodes_visited_details", js.Array(value :_*))
-    
-    @scala.inline
-    def setNodes_visited_details(value: js.Array[DialogNodeVisitedDetails]): Self = this.set("nodes_visited_details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodes_visited_details: Self = this.set("nodes_visited_details", js.undefined)
+    def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

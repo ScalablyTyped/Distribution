@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposListCommitsEndpoint extends js.Object {
+trait ReposListCommitsEndpoint extends StObject {
   
   /**
     * GitHub login or email address by which to filter by commit author.
@@ -55,66 +56,54 @@ object ReposListCommitsEndpoint {
   }
   
   @scala.inline
-  implicit class ReposListCommitsEndpointOps[Self <: ReposListCommitsEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposListCommitsEndpointMutableBuilder[Self <: ReposListCommitsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
+    def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
     
     @scala.inline
-    def deletePer_page: Self = this.set("per_page", js.undefined)
+    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha(value: String): Self = this.set("sha", value.asInstanceOf[js.Any])
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
     @scala.inline
-    def deleteSha: Self = this.set("sha", js.undefined)
+    def setUntil(value: String): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince(value: String): Self = this.set("since", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
-    
-    @scala.inline
-    def setUntil(value: String): Self = this.set("until", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUntil: Self = this.set("until", js.undefined)
+    def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
   }
 }

@@ -1,13 +1,12 @@
 package typings.runJxa
 
 import typings.typeFest.basicMod.JsonValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("run-jxa", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Run [JXA](https://github.com/dtinth/JXA-Cookbook) code and get the result.
@@ -36,9 +35,17 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("run-jxa", JSImport.Namespace)
+  @js.native
   def apply[ReturnType /* <: JsonValue */](input: String): js.Promise[ReturnType] = js.native
+  @JSImport("run-jxa", JSImport.Namespace)
+  @js.native
   def apply[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): js.Promise[ReturnType] = js.native
+  @JSImport("run-jxa", JSImport.Namespace)
+  @js.native
   def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): js.Promise[ReturnType] = js.native
+  @JSImport("run-jxa", JSImport.Namespace)
+  @js.native
   def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): js.Promise[ReturnType] = js.native
   
   /**
@@ -50,8 +57,16 @@ object mod extends js.Object {
   	@param arguments - Arguments to pass to the JXA context. Items should be serializable (`JSON.stringify`'able).
   	@returns The value returned from `input`.
   	*/
+  @JSImport("run-jxa", "sync")
+  @js.native
   def sync[ReturnType /* <: JsonValue */](input: String): ReturnType = js.native
+  @JSImport("run-jxa", "sync")
+  @js.native
   def sync[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): ReturnType = js.native
+  @JSImport("run-jxa", "sync")
+  @js.native
   def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): ReturnType = js.native
+  @JSImport("run-jxa", "sync")
+  @js.native
   def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): ReturnType = js.native
 }

@@ -1,13 +1,14 @@
 package typings.athenajs.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Display")
 @js.native
-class Display protected () extends js.Object {
+class Display protected () extends StObject {
   /**
     * Creates a new Display instance
     *

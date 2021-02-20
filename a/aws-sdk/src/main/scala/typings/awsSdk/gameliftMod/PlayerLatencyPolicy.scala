@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlayerLatencyPolicy extends js.Object {
+trait PlayerLatencyPolicy extends StObject {
   
   /**
     * The maximum latency value that is allowed for any player, in milliseconds. All policies must have a value set for this property.
@@ -26,30 +27,18 @@ object PlayerLatencyPolicy {
   }
   
   @scala.inline
-  implicit class PlayerLatencyPolicyOps[Self <: PlayerLatencyPolicy] (val x: Self) extends AnyVal {
+  implicit class PlayerLatencyPolicyMutableBuilder[Self <: PlayerLatencyPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumIndividualPlayerLatencyMilliseconds(value: WholeNumber): Self = StObject.set(x, "MaximumIndividualPlayerLatencyMilliseconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumIndividualPlayerLatencyMillisecondsUndefined: Self = StObject.set(x, "MaximumIndividualPlayerLatencyMilliseconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyDurationSeconds(value: WholeNumber): Self = StObject.set(x, "PolicyDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumIndividualPlayerLatencyMilliseconds(value: WholeNumber): Self = this.set("MaximumIndividualPlayerLatencyMilliseconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumIndividualPlayerLatencyMilliseconds: Self = this.set("MaximumIndividualPlayerLatencyMilliseconds", js.undefined)
-    
-    @scala.inline
-    def setPolicyDurationSeconds(value: WholeNumber): Self = this.set("PolicyDurationSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyDurationSeconds: Self = this.set("PolicyDurationSeconds", js.undefined)
+    def setPolicyDurationSecondsUndefined: Self = StObject.set(x, "PolicyDurationSeconds", js.undefined)
   }
 }

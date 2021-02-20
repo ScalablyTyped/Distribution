@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Printers
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs to access a 3D printer's capabilities and print tickets. */
 @js.native
-trait PrintSchema extends js.Object {
+trait PrintSchema extends StObject {
   
   /**
     * Gets the 3D printer capabilities.
@@ -43,31 +44,19 @@ object PrintSchema {
   }
   
   @scala.inline
-  implicit class PrintSchemaOps[Self <: PrintSchema] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class PrintSchemaMutableBuilder[Self <: PrintSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setGetCapabilitiesAsync(
       value: IRandomAccessStreamWithContentType => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]
-    ): Self = this.set("getCapabilitiesAsync", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "getCapabilitiesAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDefaultPrintTicketAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]): Self = this.set("getDefaultPrintTicketAsync", js.Any.fromFunction0(value))
+    def setGetDefaultPrintTicketAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "getDefaultPrintTicketAsync", js.Any.fromFunction0(value))
     
     @scala.inline
     def setMergeAndValidateWithDefaultPrintTicketAsync(
       value: IRandomAccessStreamWithContentType => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]
-    ): Self = this.set("mergeAndValidateWithDefaultPrintTicketAsync", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "mergeAndValidateWithDefaultPrintTicketAsync", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.semanticUiNag.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-nag.SemanticUI.NagSettings._Impl, 'detachable'> */
 @js.native
-trait PickImpldetachable extends js.Object {
+trait PickImpldetachable extends StObject {
   
   var detachable: Boolean = js.native
 }
@@ -19,21 +20,9 @@ object PickImpldetachable {
   }
   
   @scala.inline
-  implicit class PickImpldetachableOps[Self <: PickImpldetachable] (val x: Self) extends AnyVal {
+  implicit class PickImpldetachableMutableBuilder[Self <: PickImpldetachable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDetachable(value: Boolean): Self = this.set("detachable", value.asInstanceOf[js.Any])
+    def setDetachable(value: Boolean): Self = StObject.set(x, "detachable", value.asInstanceOf[js.Any])
   }
 }

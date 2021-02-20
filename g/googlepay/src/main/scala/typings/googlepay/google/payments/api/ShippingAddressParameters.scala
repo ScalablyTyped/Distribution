@@ -2,6 +2,7 @@ package typings.googlepay.google.payments.api
 
 import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Optional shipping address parameters for the returned shipping address.
   */
 @js.native
-trait ShippingAddressParameters extends js.Object {
+trait ShippingAddressParameters extends StObject {
   
   /**
     * Allowed country codes for the shipping address.
@@ -43,30 +44,18 @@ object ShippingAddressParameters {
   }
   
   @scala.inline
-  implicit class ShippingAddressParametersOps[Self <: ShippingAddressParameters] (val x: Self) extends AnyVal {
+  implicit class ShippingAddressParametersMutableBuilder[Self <: ShippingAddressParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedCountryCodes(value: js.Array[String]): Self = StObject.set(x, "allowedCountryCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedCountryCodesVarargs(value: String*): Self = StObject.set(x, "allowedCountryCodes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhoneNumberRequired(value: `false` | `true`): Self = StObject.set(x, "phoneNumberRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedCountryCodesVarargs(value: String*): Self = this.set("allowedCountryCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAllowedCountryCodes(value: js.Array[String]): Self = this.set("allowedCountryCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhoneNumberRequired(value: `false` | `true`): Self = this.set("phoneNumberRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumberRequired: Self = this.set("phoneNumberRequired", js.undefined)
+    def setPhoneNumberRequiredUndefined: Self = StObject.set(x, "phoneNumberRequired", js.undefined)
   }
 }

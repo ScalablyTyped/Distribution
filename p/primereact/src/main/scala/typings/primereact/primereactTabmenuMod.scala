@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.tabMenuMod.TabMenuProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/tabmenu", JSImport.Namespace)
-@js.native
-object primereactTabmenuMod extends js.Object {
+object primereactTabmenuMod {
   
+  @JSImport("primereact/tabmenu", "TabMenu")
   @js.native
-  class TabMenu ()
-    extends Component[TabMenuProps, js.Any, js.Any]
+  class TabMenu protected ()
+    extends typings.primereact.tabMenuMod.TabMenu {
+    def this(props: TabMenuProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TabMenuProps, context: js.Any) = this()
+  }
 }

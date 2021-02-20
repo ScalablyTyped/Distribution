@@ -2,6 +2,7 @@ package typings.vegaTypings.transformMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.mixture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object DistributionMixture {
   }
   
   @scala.inline
-  implicit class DistributionMixtureOps[Self <: DistributionMixture] (val x: Self) extends AnyVal {
+  implicit class DistributionMixtureMutableBuilder[Self <: DistributionMixture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistributions(value: (js.Array[Distribution | SignalRef]) | SignalRef): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistributionsVarargs(value: (Distribution | SignalRef)*): Self = StObject.set(x, "distributions", js.Array(value :_*))
     
     @scala.inline
-    def setField(value: String | TransformField): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: mixture): Self = this.set("function", value.asInstanceOf[js.Any])
+    def setFunction(value: mixture): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionsVarargs(value: (Distribution | SignalRef)*): Self = this.set("distributions", js.Array(value :_*))
+    def setWeights(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributions(value: (js.Array[Distribution | SignalRef]) | SignalRef): Self = this.set("distributions", value.asInstanceOf[js.Any])
+    def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
     
     @scala.inline
-    def deleteDistributions: Self = this.set("distributions", js.undefined)
-    
-    @scala.inline
-    def setWeightsVarargs(value: (Double | SignalRef)*): Self = this.set("weights", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeights(value: (js.Array[Double | SignalRef]) | SignalRef): Self = this.set("weights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeights: Self = this.set("weights", js.undefined)
+    def setWeightsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "weights", js.Array(value :_*))
   }
 }

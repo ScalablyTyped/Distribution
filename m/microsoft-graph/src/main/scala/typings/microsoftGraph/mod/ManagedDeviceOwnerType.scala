@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.company
   - typings.microsoftGraph.microsoftGraphStrings.personal
 */
-trait ManagedDeviceOwnerType extends js.Object
+trait ManagedDeviceOwnerType extends StObject
 object ManagedDeviceOwnerType {
   
   @scala.inline

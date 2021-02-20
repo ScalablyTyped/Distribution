@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,42 +111,30 @@ object DesktopTask {
   }
   
   @scala.inline
-  implicit class DesktopTaskOps[Self <: DesktopTask] (val x: Self) extends AnyVal {
+  implicit class DesktopTaskMutableBuilder[Self <: DesktopTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialize(value: XWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAlwaysVisible(value: Boolean): Self = StObject.set(x, "IsAlwaysVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDesktop(value: Boolean): Self = StObject.set(x, "IsDesktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAlwaysVisible(value: Boolean): Self = this.set("IsAlwaysVisible", value.asInstanceOf[js.Any])
+    def setIsFloating(value: Boolean): Self = StObject.set(x, "IsFloating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDesktop(value: Boolean): Self = this.set("IsDesktop", value.asInstanceOf[js.Any])
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFloating(value: Boolean): Self = this.set("IsFloating", value.asInstanceOf[js.Any])
+    def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("IsVisible", value.asInstanceOf[js.Any])
+    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Point): Self = this.set("Position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialize(value: XWindow => Unit): Self = this.set("initialize", js.Any.fromFunction1(value))
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

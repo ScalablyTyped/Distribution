@@ -2,12 +2,13 @@ package typings.log4js.mod
 
 import typings.log4js.anon.Worker
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggingEvent extends js.Object {
+trait LoggingEvent extends StObject {
   
   var categoryName: String = js.native
   
@@ -15,15 +16,15 @@ trait LoggingEvent extends js.Object {
   
   var context: js.Any = js.native
   
-    // level of message
+  // level of message
   var data: js.Array[_] = js.native
   
-    // name of category
+  // name of category
   var level: Level = js.native
   
   var pid: Double = js.native
   
-    // objects to log
+  // objects to log
   var startTime: Date = js.native
 }
 object LoggingEvent {
@@ -42,45 +43,33 @@ object LoggingEvent {
   }
   
   @scala.inline
-  implicit class LoggingEventOps[Self <: LoggingEvent] (val x: Self) extends AnyVal {
+  implicit class LoggingEventMutableBuilder[Self <: LoggingEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCluster(value: Worker): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def setCategoryName(value: String): Self = this.set("categoryName", value.asInstanceOf[js.Any])
+    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Level): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCluster(value: Worker): Self = this.set("cluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

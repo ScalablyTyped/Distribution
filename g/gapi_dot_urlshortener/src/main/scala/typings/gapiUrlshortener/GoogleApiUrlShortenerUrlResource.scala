@@ -1,12 +1,13 @@
 package typings.gapiUrlshortener
 
 import typings.gapiUrlshortener.anon.AllTime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiUrlShortenerUrlResource extends js.Object {
+trait GoogleApiUrlShortenerUrlResource extends StObject {
   
   /**
     * A summary of the click analytics for the short and long URL. Might not be present if not requested or currently unavailable.
@@ -47,36 +48,24 @@ object GoogleApiUrlShortenerUrlResource {
   }
   
   @scala.inline
-  implicit class GoogleApiUrlShortenerUrlResourceOps[Self <: GoogleApiUrlShortenerUrlResource] (val x: Self) extends AnyVal {
+  implicit class GoogleApiUrlShortenerUrlResourceMutableBuilder[Self <: GoogleApiUrlShortenerUrlResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalytics(value: AllTime): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalytics(value: AllTime): Self = this.set("analytics", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setLongUrl(value: String): Self = StObject.set(x, "longUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLongUrl(value: String): Self = this.set("longUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,13 @@ import typings.plottable.plottableStrings.month
 import typings.plottable.plottableStrings.second
 import typings.plottable.plottableStrings.week
 import typings.plottable.plottableStrings.year
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Day extends js.Object {
+trait Day extends StObject {
   
   var day: typings.plottable.plottableStrings.day = js.native
   
@@ -37,39 +38,27 @@ object Day {
   }
   
   @scala.inline
-  implicit class DayOps[Self <: Day] (val x: Self) extends AnyVal {
+  implicit class DayMutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDay(value: day): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHour(value: hour): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinute(value: minute): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: day): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setMonth(value: month): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHour(value: hour): Self = this.set("hour", value.asInstanceOf[js.Any])
+    def setSecond(value: second): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinute(value: minute): Self = this.set("minute", value.asInstanceOf[js.Any])
+    def setWeek(value: week): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: month): Self = this.set("month", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecond(value: second): Self = this.set("second", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeek(value: week): Self = this.set("week", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYear(value: year): Self = this.set("year", value.asInstanceOf[js.Any])
+    def setYear(value: year): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

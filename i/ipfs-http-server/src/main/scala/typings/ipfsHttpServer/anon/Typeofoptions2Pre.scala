@@ -1,11 +1,12 @@
 package typings.ipfsHttpServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofoptions2Pre extends js.Object {
+trait Typeofoptions2Pre extends StObject {
   
   val payload: Typeofpayload = js.native
   
@@ -22,30 +23,18 @@ object Typeofoptions2Pre {
   }
   
   @scala.inline
-  implicit class Typeofoptions2PreOps[Self <: Typeofoptions2Pre] (val x: Self) extends AnyVal {
+  implicit class Typeofoptions2PreMutableBuilder[Self <: Typeofoptions2Pre] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayload(value: Typeofpayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPre(value: js.Array[AssignString]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreVarargs(value: AssignString*): Self = StObject.set(x, "pre", js.Array(value :_*))
     
     @scala.inline
-    def setPayload(value: Typeofpayload): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreVarargs(value: AssignString*): Self = this.set("pre", js.Array(value :_*))
-    
-    @scala.inline
-    def setPre(value: js.Array[AssignString]): Self = this.set("pre", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidate_1(value: Typeofvalidate1): Self = this.set("validate_1", value.asInstanceOf[js.Any])
+    def setValidate_1(value: Typeofvalidate1): Self = StObject.set(x, "validate_1", value.asInstanceOf[js.Any])
   }
 }

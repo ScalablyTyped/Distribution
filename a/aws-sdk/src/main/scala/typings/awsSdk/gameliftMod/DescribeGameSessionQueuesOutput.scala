@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeGameSessionQueuesOutput extends js.Object {
+trait DescribeGameSessionQueuesOutput extends StObject {
   
   /**
     * A collection of objects that describe the requested game session queues.
@@ -26,33 +27,21 @@ object DescribeGameSessionQueuesOutput {
   }
   
   @scala.inline
-  implicit class DescribeGameSessionQueuesOutputOps[Self <: DescribeGameSessionQueuesOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeGameSessionQueuesOutputMutableBuilder[Self <: DescribeGameSessionQueuesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameSessionQueues(value: GameSessionQueueList): Self = StObject.set(x, "GameSessionQueues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGameSessionQueuesUndefined: Self = StObject.set(x, "GameSessionQueues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGameSessionQueuesVarargs(value: GameSessionQueue*): Self = StObject.set(x, "GameSessionQueues", js.Array(value :_*))
     
     @scala.inline
-    def setGameSessionQueuesVarargs(value: GameSessionQueue*): Self = this.set("GameSessionQueues", js.Array(value :_*))
+    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionQueues(value: GameSessionQueueList): Self = this.set("GameSessionQueues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameSessionQueues: Self = this.set("GameSessionQueues", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

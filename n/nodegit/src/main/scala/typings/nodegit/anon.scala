@@ -1,16 +1,15 @@
 package typings.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   /* Inlined node.events.<global>.NodeJS.EventEmitter & {start (): void} */
   @js.native
-  trait EventEmitterstartvoid extends js.Object {
+  trait EventEmitterstartvoid extends StObject {
     
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native

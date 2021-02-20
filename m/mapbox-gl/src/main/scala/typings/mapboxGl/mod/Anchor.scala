@@ -1,5 +1,6 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mapboxGl.mapboxGlStrings.`bottom-left`
   - typings.mapboxGl.mapboxGlStrings.`bottom-right`
 */
-trait Anchor extends js.Object
+trait Anchor extends StObject
 object Anchor {
   
   @scala.inline

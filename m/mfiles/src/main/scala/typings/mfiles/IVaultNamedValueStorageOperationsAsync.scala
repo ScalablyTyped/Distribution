@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFNamedValueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultNamedValueStorageOperationsAsync extends js.Object {
+trait IVaultNamedValueStorageOperationsAsync extends StObject {
   
   def GetNamedValues(NamedValueType: MFNamedValueType, Namespace: String): Unit = js.native
   def GetNamedValues(

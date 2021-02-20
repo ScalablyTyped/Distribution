@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 
 import typings.devtoolsProtocol.mod.Protocol.DeviceOrientation.SetDeviceOrientationOverrideRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceOrientationApi extends js.Object {
+trait DeviceOrientationApi extends StObject {
   
   /**
     * Clears the overridden Device Orientation.
@@ -30,24 +31,12 @@ object DeviceOrientationApi {
   }
   
   @scala.inline
-  implicit class DeviceOrientationApiOps[Self <: DeviceOrientationApi] (val x: Self) extends AnyVal {
+  implicit class DeviceOrientationApiMutableBuilder[Self <: DeviceOrientationApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearDeviceOrientationOverride(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearDeviceOrientationOverride", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClearDeviceOrientationOverride(value: () => js.Promise[Unit]): Self = this.set("clearDeviceOrientationOverride", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDeviceOrientationOverride(value: SetDeviceOrientationOverrideRequest => js.Promise[Unit]): Self = this.set("setDeviceOrientationOverride", js.Any.fromFunction1(value))
+    def setSetDeviceOrientationOverride(value: SetDeviceOrientationOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setDeviceOrientationOverride", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Account extends js.Object {
+trait Account extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the account. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
@@ -51,60 +52,48 @@ object Account {
   }
   
   @scala.inline
-  implicit class AccountOps[Self <: Account] (val x: Self) extends AnyVal {
+  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AccountArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: AccountArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setId(value: AccountId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("Email", js.undefined)
+    def setJoinedMethod(value: AccountJoinedMethod): Self = StObject.set(x, "JoinedMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: AccountId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setJoinedMethodUndefined: Self = StObject.set(x, "JoinedMethod", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setJoinedTimestamp(value: Timestamp): Self = StObject.set(x, "JoinedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoinedMethod(value: AccountJoinedMethod): Self = this.set("JoinedMethod", value.asInstanceOf[js.Any])
+    def setJoinedTimestampUndefined: Self = StObject.set(x, "JoinedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteJoinedMethod: Self = this.set("JoinedMethod", js.undefined)
+    def setName(value: AccountName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoinedTimestamp(value: Timestamp): Self = this.set("JoinedTimestamp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteJoinedTimestamp: Self = this.set("JoinedTimestamp", js.undefined)
+    def setStatus(value: AccountStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AccountName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: AccountStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

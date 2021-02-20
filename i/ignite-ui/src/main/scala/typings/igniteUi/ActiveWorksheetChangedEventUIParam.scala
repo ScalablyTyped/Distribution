@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveWorksheetChangedEventUIParam extends js.Object {
+trait ActiveWorksheetChangedEventUIParam extends StObject {
   
   /**
     * Gets the current active [worksheet](ig.excel.Worksheet).
@@ -41,48 +42,36 @@ object ActiveWorksheetChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class ActiveWorksheetChangedEventUIParamOps[Self <: ActiveWorksheetChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ActiveWorksheetChangedEventUIParamMutableBuilder[Self <: ActiveWorksheetChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewActiveWorksheet(value: js.Any): Self = StObject.set(x, "newActiveWorksheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewActiveWorksheetName(value: String): Self = StObject.set(x, "newActiveWorksheetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewActiveWorksheetNameUndefined: Self = StObject.set(x, "newActiveWorksheetName", js.undefined)
     
     @scala.inline
-    def setNewActiveWorksheet(value: js.Any): Self = this.set("newActiveWorksheet", value.asInstanceOf[js.Any])
+    def setNewActiveWorksheetUndefined: Self = StObject.set(x, "newActiveWorksheet", js.undefined)
     
     @scala.inline
-    def deleteNewActiveWorksheet: Self = this.set("newActiveWorksheet", js.undefined)
+    def setOldActiveWorksheet(value: js.Any): Self = StObject.set(x, "oldActiveWorksheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewActiveWorksheetName(value: String): Self = this.set("newActiveWorksheetName", value.asInstanceOf[js.Any])
+    def setOldActiveWorksheetName(value: String): Self = StObject.set(x, "oldActiveWorksheetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNewActiveWorksheetName: Self = this.set("newActiveWorksheetName", js.undefined)
+    def setOldActiveWorksheetNameUndefined: Self = StObject.set(x, "oldActiveWorksheetName", js.undefined)
     
     @scala.inline
-    def setOldActiveWorksheet(value: js.Any): Self = this.set("oldActiveWorksheet", value.asInstanceOf[js.Any])
+    def setOldActiveWorksheetUndefined: Self = StObject.set(x, "oldActiveWorksheet", js.undefined)
     
     @scala.inline
-    def deleteOldActiveWorksheet: Self = this.set("oldActiveWorksheet", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldActiveWorksheetName(value: String): Self = this.set("oldActiveWorksheetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldActiveWorksheetName: Self = this.set("oldActiveWorksheetName", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

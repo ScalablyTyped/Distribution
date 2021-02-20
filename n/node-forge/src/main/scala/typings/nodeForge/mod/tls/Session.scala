@@ -3,12 +3,13 @@ package typings.nodeForge.mod.tls
 import org.scalablytyped.runtime.StringDictionary
 import typings.nodeForge.mod.md.MessageDigest
 import typings.nodeForge.mod.pki.Certificate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Session extends js.Object {
+trait Session extends StObject {
   
   var cipherSuite: CipherSuite | Null = js.native
   
@@ -35,57 +36,45 @@ object Session {
   }
   
   @scala.inline
-  implicit class SessionOps[Self <: Session] (val x: Self) extends AnyVal {
+  implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCipherSuite(value: CipherSuite): Self = StObject.set(x, "cipherSuite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCipherSuiteNull: Self = StObject.set(x, "cipherSuite", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientCertificate(value: Certificate): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: StringDictionary[js.Object]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setClientCertificateNull: Self = StObject.set(x, "clientCertificate", null)
     
     @scala.inline
-    def setMd5(value: MessageDigest): Self = this.set("md5", value.asInstanceOf[js.Any])
+    def setCompressionMethod(value: CompressionMethod): Self = StObject.set(x, "compressionMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha1(value: MessageDigest): Self = this.set("sha1", value.asInstanceOf[js.Any])
+    def setCompressionMethodNull: Self = StObject.set(x, "compressionMethod", null)
     
     @scala.inline
-    def setCipherSuite(value: CipherSuite): Self = this.set("cipherSuite", value.asInstanceOf[js.Any])
+    def setExtensions(value: StringDictionary[js.Object]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCipherSuiteNull: Self = this.set("cipherSuite", null)
+    def setMd5(value: MessageDigest): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCertificate(value: Certificate): Self = this.set("clientCertificate", value.asInstanceOf[js.Any])
+    def setServerCertificate(value: Certificate): Self = StObject.set(x, "serverCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCertificateNull: Self = this.set("clientCertificate", null)
+    def setServerCertificateNull: Self = StObject.set(x, "serverCertificate", null)
     
     @scala.inline
-    def setCompressionMethod(value: CompressionMethod): Self = this.set("compressionMethod", value.asInstanceOf[js.Any])
+    def setSha1(value: MessageDigest): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionMethodNull: Self = this.set("compressionMethod", null)
+    def setVersion(value: ProtocolVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertificate(value: Certificate): Self = this.set("serverCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerCertificateNull: Self = this.set("serverCertificate", null)
-    
-    @scala.inline
-    def setVersion(value: ProtocolVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionNull: Self = this.set("version", null)
+    def setVersionNull: Self = StObject.set(x, "version", null)
   }
 }

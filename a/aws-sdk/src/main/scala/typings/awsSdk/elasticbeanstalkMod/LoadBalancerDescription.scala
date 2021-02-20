@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadBalancerDescription extends js.Object {
+trait LoadBalancerDescription extends StObject {
   
   /**
     * The domain name of the LoadBalancer.
@@ -31,39 +32,27 @@ object LoadBalancerDescription {
   }
   
   @scala.inline
-  implicit class LoadBalancerDescriptionOps[Self <: LoadBalancerDescription] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerDescriptionMutableBuilder[Self <: LoadBalancerDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListeners(value: LoadBalancerListenersDescription): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
     
     @scala.inline
-    def setListenersVarargs(value: Listener*): Self = this.set("Listeners", js.Array(value :_*))
+    def setLoadBalancerName(value: String): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListeners(value: LoadBalancerListenersDescription): Self = this.set("Listeners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListeners: Self = this.set("Listeners", js.undefined)
-    
-    @scala.inline
-    def setLoadBalancerName(value: String): Self = this.set("LoadBalancerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadBalancerName: Self = this.set("LoadBalancerName", js.undefined)
+    def setLoadBalancerNameUndefined: Self = StObject.set(x, "LoadBalancerName", js.undefined)
   }
 }

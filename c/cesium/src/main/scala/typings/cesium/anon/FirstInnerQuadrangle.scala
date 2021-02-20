@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Quaternion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirstInnerQuadrangle extends js.Object {
+trait FirstInnerQuadrangle extends StObject {
   
   var firstInnerQuadrangle: js.UndefOr[Quaternion] = js.native
   
@@ -25,42 +26,30 @@ object FirstInnerQuadrangle {
   }
   
   @scala.inline
-  implicit class FirstInnerQuadrangleOps[Self <: FirstInnerQuadrangle] (val x: Self) extends AnyVal {
+  implicit class FirstInnerQuadrangleMutableBuilder[Self <: FirstInnerQuadrangle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstInnerQuadrangle(value: Quaternion): Self = StObject.set(x, "firstInnerQuadrangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstInnerQuadrangleUndefined: Self = StObject.set(x, "firstInnerQuadrangle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastInnerQuadrangle(value: Quaternion): Self = StObject.set(x, "lastInnerQuadrangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsVarargs(value: Quaternion*): Self = this.set("points", js.Array(value :_*))
+    def setLastInnerQuadrangleUndefined: Self = StObject.set(x, "lastInnerQuadrangle", js.undefined)
     
     @scala.inline
-    def setPoints(value: js.Array[Quaternion]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setPoints(value: js.Array[Quaternion]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimesVarargs(value: Double*): Self = this.set("times", js.Array(value :_*))
+    def setPointsVarargs(value: Quaternion*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setTimes(value: js.Array[Double]): Self = this.set("times", value.asInstanceOf[js.Any])
+    def setTimes(value: js.Array[Double]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstInnerQuadrangle(value: Quaternion): Self = this.set("firstInnerQuadrangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirstInnerQuadrangle: Self = this.set("firstInnerQuadrangle", js.undefined)
-    
-    @scala.inline
-    def setLastInnerQuadrangle(value: Quaternion): Self = this.set("lastInnerQuadrangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastInnerQuadrangle: Self = this.set("lastInnerQuadrangle", js.undefined)
+    def setTimesVarargs(value: Double*): Self = StObject.set(x, "times", js.Array(value :_*))
   }
 }

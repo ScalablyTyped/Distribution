@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exact extends js.Object {
+trait Exact extends StObject {
   
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
@@ -90,108 +91,96 @@ object Exact {
   }
   
   @scala.inline
-  implicit class ExactOps[Self <: Exact] (val x: Self) extends AnyVal {
+  implicit class ExactMutableBuilder[Self <: Exact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExact(value: Boolean): Self = this.set("exact", value.asInstanceOf[js.Any])
+    def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
     
     @scala.inline
-    def deleteExact: Self = this.set("exact", js.undefined)
+    def `setLine-gap-size`(value: js.Any): Self = StObject.set(x, "line-gap-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-color`(value: String): Self = this.set("line-color", value.asInstanceOf[js.Any])
+    def `setLine-gap-sizeUndefined`: Self = StObject.set(x, "line-gap-size", js.undefined)
     
     @scala.inline
-    def `deleteLine-color`: Self = this.set("line-color", js.undefined)
+    def `setLine-segment-size`(value: js.Any): Self = StObject.set(x, "line-segment-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-gap-size`(value: js.Any): Self = this.set("line-gap-size", value.asInstanceOf[js.Any])
+    def `setLine-segment-sizeUndefined`: Self = StObject.set(x, "line-segment-size", js.undefined)
     
     @scala.inline
-    def `deleteLine-gap-size`: Self = this.set("line-gap-size", js.undefined)
+    def `setLine-style`(value: String): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-segment-size`(value: js.Any): Self = this.set("line-segment-size", value.asInstanceOf[js.Any])
+    def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
     @scala.inline
-    def `deleteLine-segment-size`: Self = this.set("line-segment-size", js.undefined)
+    def `setLine-width`(value: js.Any): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-style`(value: String): Self = this.set("line-style", value.asInstanceOf[js.Any])
+    def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
     
     @scala.inline
-    def `deleteLine-style`: Self = this.set("line-style", js.undefined)
+    def setMarker(value: Backgroundcolor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-width`(value: js.Any): Self = this.set("line-width", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def `deleteLine-width`: Self = this.set("line-width", js.undefined)
+    def `setPlot-label`(value: Backgroundcolor1): Self = StObject.set(x, "plot-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Backgroundcolor): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def `setPlot-labelUndefined`: Self = StObject.set(x, "plot-label", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def `setReverse-series`(value: Boolean): Self = StObject.set(x, "reverse-series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPlot-label`(value: Backgroundcolor1): Self = this.set("plot-label", value.asInstanceOf[js.Any])
+    def `setReverse-seriesUndefined`: Self = StObject.set(x, "reverse-series", js.undefined)
     
     @scala.inline
-    def `deletePlot-label`: Self = this.set("plot-label", js.undefined)
+    def `setScale-label`(value: Backgroundcolor2): Self = StObject.set(x, "scale-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setReverse-series`(value: Boolean): Self = this.set("reverse-series", value.asInstanceOf[js.Any])
+    def `setScale-labelUndefined`: Self = StObject.set(x, "scale-label", js.undefined)
     
     @scala.inline
-    def `deleteReverse-series`: Self = this.set("reverse-series", js.undefined)
+    def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setScale-label`(value: Backgroundcolor2): Self = this.set("scale-label", value.asInstanceOf[js.Any])
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
     @scala.inline
-    def `deleteScale-label`: Self = this.set("scale-label", js.undefined)
+    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
     @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

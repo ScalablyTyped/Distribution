@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddCustomAttributesRequest extends js.Object {
+trait AddCustomAttributesRequest extends StObject {
   
   /**
     * An array of custom attributes, such as Mutable and Name.
@@ -26,27 +27,15 @@ object AddCustomAttributesRequest {
   }
   
   @scala.inline
-  implicit class AddCustomAttributesRequestOps[Self <: AddCustomAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class AddCustomAttributesRequestMutableBuilder[Self <: AddCustomAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomAttributes(value: CustomAttributesListType): Self = StObject.set(x, "CustomAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomAttributesVarargs(value: SchemaAttributeType*): Self = StObject.set(x, "CustomAttributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomAttributesVarargs(value: SchemaAttributeType*): Self = this.set("CustomAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setCustomAttributes(value: CustomAttributesListType): Self = this.set("CustomAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

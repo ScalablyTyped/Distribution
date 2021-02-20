@@ -13,13 +13,14 @@ import typings.winrtUwp.winrtUwpStrings.selectionrequested
 import typings.winrtUwp.winrtUwpStrings.selectionupdating
 import typings.winrtUwp.winrtUwpStrings.textrequested
 import typings.winrtUwp.winrtUwpStrings.textupdating
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The primary object used by text input controls to communicate with the text input server. */
 @js.native
-trait CoreTextEditContext extends js.Object {
+trait CoreTextEditContext extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TfvcItemRequestData extends js.Object {
+trait TfvcItemRequestData extends StObject {
   
   /**
     * If true, include metadata about the file type
@@ -32,30 +33,18 @@ object TfvcItemRequestData {
   }
   
   @scala.inline
-  implicit class TfvcItemRequestDataOps[Self <: TfvcItemRequestData] (val x: Self) extends AnyVal {
+  implicit class TfvcItemRequestDataMutableBuilder[Self <: TfvcItemRequestData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemDescriptors(value: js.Array[TfvcItemDescriptor]): Self = StObject.set(x, "itemDescriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeContentMetadata(value: Boolean): Self = this.set("includeContentMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeLinks(value: Boolean): Self = this.set("includeLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemDescriptorsVarargs(value: TfvcItemDescriptor*): Self = this.set("itemDescriptors", js.Array(value :_*))
-    
-    @scala.inline
-    def setItemDescriptors(value: js.Array[TfvcItemDescriptor]): Self = this.set("itemDescriptors", value.asInstanceOf[js.Any])
+    def setItemDescriptorsVarargs(value: TfvcItemDescriptor*): Self = StObject.set(x, "itemDescriptors", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryRequest extends js.Object {
+trait QueryRequest extends StObject {
   
   /**
     * Enables filtered searches based on document attributes. You can only provide one attribute filter; however, the AndAllFilters, NotFilter, and OrAllFilters parameters contain a list of other filters. The AttributeFilter parameter enables you to create a set of filtering rules that a document must satisfy to be included in the query results.
@@ -66,78 +67,66 @@ object QueryRequest {
   }
   
   @scala.inline
-  implicit class QueryRequestOps[Self <: QueryRequest] (val x: Self) extends AnyVal {
+  implicit class QueryRequestMutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeFilter(value: AttributeFilter): Self = StObject.set(x, "AttributeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeFilterUndefined: Self = StObject.set(x, "AttributeFilter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacets(value: FacetList): Self = StObject.set(x, "Facets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexId(value: IndexId): Self = this.set("IndexId", value.asInstanceOf[js.Any])
+    def setFacetsUndefined: Self = StObject.set(x, "Facets", js.undefined)
     
     @scala.inline
-    def setQueryText(value: QueryText): Self = this.set("QueryText", value.asInstanceOf[js.Any])
+    def setFacetsVarargs(value: Facet*): Self = StObject.set(x, "Facets", js.Array(value :_*))
     
     @scala.inline
-    def setAttributeFilter(value: AttributeFilter): Self = this.set("AttributeFilter", value.asInstanceOf[js.Any])
+    def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributeFilter: Self = this.set("AttributeFilter", js.undefined)
+    def setPageNumber(value: Integer): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetsVarargs(value: Facet*): Self = this.set("Facets", js.Array(value :_*))
+    def setPageNumberUndefined: Self = StObject.set(x, "PageNumber", js.undefined)
     
     @scala.inline
-    def setFacets(value: FacetList): Self = this.set("Facets", value.asInstanceOf[js.Any])
+    def setPageSize(value: Integer): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFacets: Self = this.set("Facets", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
     @scala.inline
-    def setPageNumber(value: Integer): Self = this.set("PageNumber", value.asInstanceOf[js.Any])
+    def setQueryResultTypeFilter(value: QueryResultType): Self = StObject.set(x, "QueryResultTypeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageNumber: Self = this.set("PageNumber", js.undefined)
+    def setQueryResultTypeFilterUndefined: Self = StObject.set(x, "QueryResultTypeFilter", js.undefined)
     
     @scala.inline
-    def setPageSize(value: Integer): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    def setQueryText(value: QueryText): Self = StObject.set(x, "QueryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    def setRequestedDocumentAttributes(value: DocumentAttributeKeyList): Self = StObject.set(x, "RequestedDocumentAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryResultTypeFilter(value: QueryResultType): Self = this.set("QueryResultTypeFilter", value.asInstanceOf[js.Any])
+    def setRequestedDocumentAttributesUndefined: Self = StObject.set(x, "RequestedDocumentAttributes", js.undefined)
     
     @scala.inline
-    def deleteQueryResultTypeFilter: Self = this.set("QueryResultTypeFilter", js.undefined)
+    def setRequestedDocumentAttributesVarargs(value: DocumentAttributeKey*): Self = StObject.set(x, "RequestedDocumentAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setRequestedDocumentAttributesVarargs(value: DocumentAttributeKey*): Self = this.set("RequestedDocumentAttributes", js.Array(value :_*))
+    def setSortingConfiguration(value: SortingConfiguration): Self = StObject.set(x, "SortingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedDocumentAttributes(value: DocumentAttributeKeyList): Self = this.set("RequestedDocumentAttributes", value.asInstanceOf[js.Any])
+    def setSortingConfigurationUndefined: Self = StObject.set(x, "SortingConfiguration", js.undefined)
     
     @scala.inline
-    def deleteRequestedDocumentAttributes: Self = this.set("RequestedDocumentAttributes", js.undefined)
+    def setUserContext(value: UserContext): Self = StObject.set(x, "UserContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortingConfiguration(value: SortingConfiguration): Self = this.set("SortingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortingConfiguration: Self = this.set("SortingConfiguration", js.undefined)
-    
-    @scala.inline
-    def setUserContext(value: UserContext): Self = this.set("UserContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserContext: Self = this.set("UserContext", js.undefined)
+    def setUserContextUndefined: Self = StObject.set(x, "UserContext", js.undefined)
   }
 }

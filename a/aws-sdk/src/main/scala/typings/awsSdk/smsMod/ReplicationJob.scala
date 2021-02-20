@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationJob extends js.Object {
+trait ReplicationJob extends StObject {
   
   /**
     * The description of the replication job.
@@ -106,129 +107,117 @@ object ReplicationJob {
   }
   
   @scala.inline
-  implicit class ReplicationJobOps[Self <: ReplicationJob] (val x: Self) extends AnyVal {
+  implicit class ReplicationJobMutableBuilder[Self <: ReplicationJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncrypted(value: Encrypted): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFrequency(value: Frequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: Encrypted): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
     @scala.inline
-    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: Frequency): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setLatestAmiId(value: AmiId): Self = StObject.set(x, "latestAmiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    def setLatestAmiIdUndefined: Self = StObject.set(x, "latestAmiId", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    def setLicenseType(value: LicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestAmiId(value: AmiId): Self = this.set("latestAmiId", value.asInstanceOf[js.Any])
+    def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
     
     @scala.inline
-    def deleteLatestAmiId: Self = this.set("latestAmiId", js.undefined)
+    def setNextReplicationRunStartTime(value: Timestamp): Self = StObject.set(x, "nextReplicationRunStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseType(value: LicenseType): Self = this.set("licenseType", value.asInstanceOf[js.Any])
+    def setNextReplicationRunStartTimeUndefined: Self = StObject.set(x, "nextReplicationRunStartTime", js.undefined)
     
     @scala.inline
-    def deleteLicenseType: Self = this.set("licenseType", js.undefined)
+    def setNumberOfRecentAmisToKeep(value: NumberOfRecentAmisToKeep): Self = StObject.set(x, "numberOfRecentAmisToKeep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextReplicationRunStartTime(value: Timestamp): Self = this.set("nextReplicationRunStartTime", value.asInstanceOf[js.Any])
+    def setNumberOfRecentAmisToKeepUndefined: Self = StObject.set(x, "numberOfRecentAmisToKeep", js.undefined)
     
     @scala.inline
-    def deleteNextReplicationRunStartTime: Self = this.set("nextReplicationRunStartTime", js.undefined)
+    def setReplicationJobId(value: ReplicationJobId): Self = StObject.set(x, "replicationJobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfRecentAmisToKeep(value: NumberOfRecentAmisToKeep): Self = this.set("numberOfRecentAmisToKeep", value.asInstanceOf[js.Any])
+    def setReplicationJobIdUndefined: Self = StObject.set(x, "replicationJobId", js.undefined)
     
     @scala.inline
-    def deleteNumberOfRecentAmisToKeep: Self = this.set("numberOfRecentAmisToKeep", js.undefined)
+    def setReplicationRunList(value: ReplicationRunList): Self = StObject.set(x, "replicationRunList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationJobId(value: ReplicationJobId): Self = this.set("replicationJobId", value.asInstanceOf[js.Any])
+    def setReplicationRunListUndefined: Self = StObject.set(x, "replicationRunList", js.undefined)
     
     @scala.inline
-    def deleteReplicationJobId: Self = this.set("replicationJobId", js.undefined)
+    def setReplicationRunListVarargs(value: ReplicationRun*): Self = StObject.set(x, "replicationRunList", js.Array(value :_*))
     
     @scala.inline
-    def setReplicationRunListVarargs(value: ReplicationRun*): Self = this.set("replicationRunList", js.Array(value :_*))
+    def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationRunList(value: ReplicationRunList): Self = this.set("replicationRunList", value.asInstanceOf[js.Any])
+    def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     
     @scala.inline
-    def deleteReplicationRunList: Self = this.set("replicationRunList", js.undefined)
+    def setRunOnce(value: RunOnce): Self = StObject.set(x, "runOnce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleName(value: RoleName): Self = this.set("roleName", value.asInstanceOf[js.Any])
+    def setRunOnceUndefined: Self = StObject.set(x, "runOnce", js.undefined)
     
     @scala.inline
-    def deleteRoleName: Self = this.set("roleName", js.undefined)
+    def setSeedReplicationTime(value: Timestamp): Self = StObject.set(x, "seedReplicationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunOnce(value: RunOnce): Self = this.set("runOnce", value.asInstanceOf[js.Any])
+    def setSeedReplicationTimeUndefined: Self = StObject.set(x, "seedReplicationTime", js.undefined)
     
     @scala.inline
-    def deleteRunOnce: Self = this.set("runOnce", js.undefined)
+    def setServerId(value: ServerId): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeedReplicationTime(value: Timestamp): Self = this.set("seedReplicationTime", value.asInstanceOf[js.Any])
+    def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
     
     @scala.inline
-    def deleteSeedReplicationTime: Self = this.set("seedReplicationTime", js.undefined)
+    def setServerType(value: ServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerId(value: ServerId): Self = this.set("serverId", value.asInstanceOf[js.Any])
+    def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
     
     @scala.inline
-    def deleteServerId: Self = this.set("serverId", js.undefined)
+    def setState(value: ReplicationJobState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerType(value: ServerType): Self = this.set("serverType", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteServerType: Self = this.set("serverType", js.undefined)
+    def setStatusMessage(value: ReplicationJobStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: ReplicationJobState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setVmServer(value: VmServer): Self = StObject.set(x, "vmServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: ReplicationJobStatusMessage): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
-    
-    @scala.inline
-    def setVmServer(value: VmServer): Self = this.set("vmServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmServer: Self = this.set("vmServer", js.undefined)
+    def setVmServerUndefined: Self = StObject.set(x, "vmServer", js.undefined)
   }
 }

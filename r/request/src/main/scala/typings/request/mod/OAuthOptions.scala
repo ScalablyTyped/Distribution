@@ -4,12 +4,13 @@ import typings.request.requestBooleans.`true`
 import typings.request.requestStrings.body
 import typings.request.requestStrings.header
 import typings.request.requestStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OAuthOptions extends js.Object {
+trait OAuthOptions extends StObject {
   
   var body_hash: js.UndefOr[`true` | String] = js.native
   
@@ -36,66 +37,54 @@ object OAuthOptions {
   }
   
   @scala.inline
-  implicit class OAuthOptionsOps[Self <: OAuthOptions] (val x: Self) extends AnyVal {
+  implicit class OAuthOptionsMutableBuilder[Self <: OAuthOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody_hash(value: `true` | String): Self = StObject.set(x, "body_hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBody_hashUndefined: Self = StObject.set(x, "body_hash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody_hash(value: `true` | String): Self = this.set("body_hash", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteBody_hash: Self = this.set("body_hash", js.undefined)
+    def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: String): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setConsumer_keyUndefined: Self = StObject.set(x, "consumer_key", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setConsumer_secret(value: String): Self = StObject.set(x, "consumer_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumer_key(value: String): Self = this.set("consumer_key", value.asInstanceOf[js.Any])
+    def setConsumer_secretUndefined: Self = StObject.set(x, "consumer_secret", js.undefined)
     
     @scala.inline
-    def deleteConsumer_key: Self = this.set("consumer_key", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumer_secret(value: String): Self = this.set("consumer_secret", value.asInstanceOf[js.Any])
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def deleteConsumer_secret: Self = this.set("consumer_secret", js.undefined)
+    def setToken_secret(value: String): Self = StObject.set(x, "token_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setToken_secretUndefined: Self = StObject.set(x, "token_secret", js.undefined)
     
     @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTransport_method(value: body | header | query): Self = StObject.set(x, "transport_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken_secret(value: String): Self = this.set("token_secret", value.asInstanceOf[js.Any])
+    def setTransport_methodUndefined: Self = StObject.set(x, "transport_method", js.undefined)
     
     @scala.inline
-    def deleteToken_secret: Self = this.set("token_secret", js.undefined)
+    def setVerifier(value: String): Self = StObject.set(x, "verifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransport_method(value: body | header | query): Self = this.set("transport_method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport_method: Self = this.set("transport_method", js.undefined)
-    
-    @scala.inline
-    def setVerifier(value: String): Self = this.set("verifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifier: Self = this.set("verifier", js.undefined)
+    def setVerifierUndefined: Self = StObject.set(x, "verifier", js.undefined)
   }
 }

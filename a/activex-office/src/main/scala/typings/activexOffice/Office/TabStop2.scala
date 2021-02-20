@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabStop2 extends js.Object {
+trait TabStop2 extends StObject {
   
   val Application: js.Any = js.native
   
@@ -40,39 +41,27 @@ object TabStop2 {
   }
   
   @scala.inline
-  implicit class TabStop2Ops[Self <: TabStop2] (val x: Self) extends AnyVal {
+  implicit class TabStop2MutableBuilder[Self <: TabStop2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setOfficeDotTabStop2_typekey(value: TabStop2): Self = StObject.set(x, "Office.TabStop2_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("Clear", js.Any.fromFunction0(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficeDotTabStop2_typekey(value: TabStop2): Self = this.set("Office.TabStop2_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("Position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MsoTabStopType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: MsoTabStopType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

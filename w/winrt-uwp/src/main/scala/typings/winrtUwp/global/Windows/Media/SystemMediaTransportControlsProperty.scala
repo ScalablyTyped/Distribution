@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines values for the properties on the SystemMediaTransportControls . */
 @JSGlobal("Windows.Media.SystemMediaTransportControlsProperty")
 @js.native
-object SystemMediaTransportControlsProperty extends js.Object {
+object SystemMediaTransportControlsProperty extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.SystemMediaTransportControlsProperty with Double] = js.native

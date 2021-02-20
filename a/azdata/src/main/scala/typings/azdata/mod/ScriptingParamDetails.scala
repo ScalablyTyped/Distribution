@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScriptingParamDetails extends js.Object {
+trait ScriptingParamDetails extends StObject {
   
   var filePath: String = js.native
   
@@ -29,30 +30,18 @@ object ScriptingParamDetails {
   }
   
   @scala.inline
-  implicit class ScriptingParamDetailsOps[Self <: ScriptingParamDetails] (val x: Self) extends AnyVal {
+  implicit class ScriptingParamDetailsMutableBuilder[Self <: ScriptingParamDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScriptCompatibilityOption(value: String): Self = StObject.set(x, "scriptCompatibilityOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetDatabaseEngineEdition(value: String): Self = StObject.set(x, "targetDatabaseEngineEdition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptCompatibilityOption(value: String): Self = this.set("scriptCompatibilityOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetDatabaseEngineEdition(value: String): Self = this.set("targetDatabaseEngineEdition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetDatabaseEngineType(value: String): Self = this.set("targetDatabaseEngineType", value.asInstanceOf[js.Any])
+    def setTargetDatabaseEngineType(value: String): Self = StObject.set(x, "targetDatabaseEngineType", value.asInstanceOf[js.Any])
   }
 }

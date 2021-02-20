@@ -1,11 +1,12 @@
 package typings.reactJoyride.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FloaterProps extends js.Object {
+trait FloaterProps extends StObject {
   
   var disableAnimation: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object FloaterProps {
   }
   
   @scala.inline
-  implicit class FloaterPropsOps[Self <: FloaterProps] (val x: Self) extends AnyVal {
+  implicit class FloaterPropsMutableBuilder[Self <: FloaterProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: GenericObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAnimation(value: Boolean): Self = this.set("disableAnimation", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteDisableAnimation: Self = this.set("disableAnimation", js.undefined)
+    def setStyles(value: GenericObject): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: GenericObject): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setWrapperOptions(value: GenericObject): Self = StObject.set(x, "wrapperOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: GenericObject): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
-    
-    @scala.inline
-    def setWrapperOptions(value: GenericObject): Self = this.set("wrapperOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperOptions: Self = this.set("wrapperOptions", js.undefined)
+    def setWrapperOptionsUndefined: Self = StObject.set(x, "wrapperOptions", js.undefined)
   }
 }

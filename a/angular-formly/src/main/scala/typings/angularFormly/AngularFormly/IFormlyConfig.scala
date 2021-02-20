@@ -1,11 +1,12 @@
 package typings.angularFormly.AngularFormly
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFormlyConfig extends js.Object {
+trait IFormlyConfig extends StObject {
   
   var disableWarnings: Boolean = js.native
   

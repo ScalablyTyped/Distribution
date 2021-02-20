@@ -18,13 +18,14 @@ import typings.officeJs.officeJsStrings.MonochromaticPalette6
 import typings.officeJs.officeJsStrings.MonochromaticPalette7
 import typings.officeJs.officeJsStrings.MonochromaticPalette8
 import typings.officeJs.officeJsStrings.MonochromaticPalette9
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartAreaFormat.toJSON()`. */
 @js.native
-trait ChartAreaFormatData extends js.Object {
+trait ChartAreaFormatData extends StObject {
   
   /**
     *
@@ -69,44 +70,32 @@ object ChartAreaFormatData {
   }
   
   @scala.inline
-  implicit class ChartAreaFormatDataOps[Self <: ChartAreaFormatData] (val x: Self) extends AnyVal {
+  implicit class ChartAreaFormatDataMutableBuilder[Self <: ChartAreaFormatData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: ChartBorderData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBorder(value: ChartBorderData): Self = this.set("border", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
     def setColorScheme(
       value: ChartColorScheme | ColorfulPalette1 | ColorfulPalette2 | ColorfulPalette3 | ColorfulPalette4 | MonochromaticPalette1 | MonochromaticPalette2 | MonochromaticPalette3 | MonochromaticPalette4 | MonochromaticPalette5 | MonochromaticPalette6 | MonochromaticPalette7 | MonochromaticPalette8 | MonochromaticPalette9 | MonochromaticPalette10 | MonochromaticPalette11 | MonochromaticPalette12 | MonochromaticPalette13
-    ): Self = this.set("colorScheme", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorScheme: Self = this.set("colorScheme", js.undefined)
+    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
     @scala.inline
-    def setFont(value: ChartFontData): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFont(value: ChartFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def setRoundedCorners(value: Boolean): Self = this.set("roundedCorners", value.asInstanceOf[js.Any])
+    def setRoundedCorners(value: Boolean): Self = StObject.set(x, "roundedCorners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoundedCorners: Self = this.set("roundedCorners", js.undefined)
+    def setRoundedCornersUndefined: Self = StObject.set(x, "roundedCorners", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.natural.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WordNetLookupResults extends js.Object {
+trait WordNetLookupResults extends StObject {
   
   var gloss: String = js.native
   
@@ -26,36 +27,24 @@ object WordNetLookupResults {
   }
   
   @scala.inline
-  implicit class WordNetLookupResultsOps[Self <: WordNetLookupResults] (val x: Self) extends AnyVal {
+  implicit class WordNetLookupResultsMutableBuilder[Self <: WordNetLookupResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGloss(value: String): Self = StObject.set(x, "gloss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGloss(value: String): Self = this.set("gloss", value.asInstanceOf[js.Any])
+    def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLemma(value: String): Self = this.set("lemma", value.asInstanceOf[js.Any])
+    def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
     
     @scala.inline
-    def setPos(value: String): Self = this.set("pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSynonymsVarargs(value: String*): Self = this.set("synonyms", js.Array(value :_*))
-    
-    @scala.inline
-    def setSynonyms(value: js.Array[String]): Self = this.set("synonyms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSynsetOffset(value: Double): Self = this.set("synsetOffset", value.asInstanceOf[js.Any])
+    def setSynsetOffset(value: Double): Self = StObject.set(x, "synsetOffset", value.asInstanceOf[js.Any])
   }
 }

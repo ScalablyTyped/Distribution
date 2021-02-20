@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,48 +78,36 @@ object XSpellAlternatives {
   }
   
   @scala.inline
-  implicit class XSpellAlternativesOps[Self <: XSpellAlternatives] (val x: Self) extends AnyVal {
+  implicit class XSpellAlternativesMutableBuilder[Self <: XSpellAlternatives] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternatives(value: SafeArray[String]): Self = StObject.set(x, "Alternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativesCount(value: Double): Self = StObject.set(x, "AlternativesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureType(value: Double): Self = StObject.set(x, "FailureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternatives(value: SafeArray[String]): Self = this.set("Alternatives", value.asInstanceOf[js.Any])
+    def setGetAlternatives(value: () => SafeArray[String]): Self = StObject.set(x, "getAlternatives", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAlternativesCount(value: Double): Self = this.set("AlternativesCount", value.asInstanceOf[js.Any])
+    def setGetAlternativesCount(value: () => Double): Self = StObject.set(x, "getAlternativesCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFailureType(value: Double): Self = this.set("FailureType", value.asInstanceOf[js.Any])
+    def setGetFailureType(value: () => Double): Self = StObject.set(x, "getFailureType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setWord(value: String): Self = this.set("Word", value.asInstanceOf[js.Any])
+    def setGetWord(value: () => String): Self = StObject.set(x, "getWord", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAlternatives(value: () => SafeArray[String]): Self = this.set("getAlternatives", js.Any.fromFunction0(value))
+    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAlternativesCount(value: () => Double): Self = this.set("getAlternativesCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFailureType(value: () => Double): Self = this.set("getFailureType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLocale(value: () => Locale): Self = this.set("getLocale", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWord(value: () => String): Self = this.set("getWord", js.Any.fromFunction0(value))
+    def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
   }
 }

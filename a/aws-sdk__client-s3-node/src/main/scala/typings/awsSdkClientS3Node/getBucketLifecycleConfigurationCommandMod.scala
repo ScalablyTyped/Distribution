@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesGetBucketLifecycleConfigurationInputMod.G
 import typings.awsSdkClientS3Node.typesGetBucketLifecycleConfigurationOutputMod.GetBucketLifecycleConfigurationOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/GetBucketLifecycleConfigurationCommand", JSImport.Namespace)
-@js.native
-object getBucketLifecycleConfigurationCommandMod extends js.Object {
+object getBucketLifecycleConfigurationCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/GetBucketLifecycleConfigurationCommand", "GetBucketLifecycleConfigurationCommand")
   @js.native
   class GetBucketLifecycleConfigurationCommand protected () extends Command[
           InputTypesUnion, 

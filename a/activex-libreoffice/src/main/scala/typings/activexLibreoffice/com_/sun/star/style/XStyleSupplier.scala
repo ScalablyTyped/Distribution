@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,27 +41,15 @@ object XStyleSupplier {
   }
   
   @scala.inline
-  implicit class XStyleSupplierOps[Self <: XStyleSupplier] (val x: Self) extends AnyVal {
+  implicit class XStyleSupplierMutableBuilder[Self <: XStyleSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetStyle(value: () => XStyle): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetStyle(value: XStyle => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStyle(value: XStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetStyle(value: () => XStyle): Self = this.set("getStyle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetStyle(value: XStyle => Unit): Self = this.set("setStyle", js.Any.fromFunction1(value))
+    def setStyle(value: XStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
   }
 }

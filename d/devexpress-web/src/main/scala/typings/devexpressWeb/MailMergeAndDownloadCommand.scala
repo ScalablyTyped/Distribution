@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A command to start the mail merge process and download the resulting document containing the merged information.
   */
 @js.native
-trait MailMergeAndDownloadCommand extends js.Object {
+trait MailMergeAndDownloadCommand extends StObject {
   
   /**
     * Executes the MailMergeAndDownloadCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.

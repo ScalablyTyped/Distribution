@@ -1,5 +1,6 @@
 package typings.googleapis.scriptV1Mod.scriptV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Representation of a single script deployment.
   */
 @js.native
-trait SchemaDeployment extends js.Object {
+trait SchemaDeployment extends StObject {
   
   /**
     * The deployment configuration.
@@ -39,45 +40,33 @@ object SchemaDeployment {
   }
   
   @scala.inline
-  implicit class SchemaDeploymentOps[Self <: SchemaDeployment] (val x: Self) extends AnyVal {
+  implicit class SchemaDeploymentMutableBuilder[Self <: SchemaDeployment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentConfig(value: SchemaDeploymentConfig): Self = StObject.set(x, "deploymentConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentConfigUndefined: Self = StObject.set(x, "deploymentConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentConfig(value: SchemaDeploymentConfig): Self = this.set("deploymentConfig", value.asInstanceOf[js.Any])
+    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
     @scala.inline
-    def deleteDeploymentConfig: Self = this.set("deploymentConfig", js.undefined)
+    def setEntryPoints(value: js.Array[SchemaEntryPoint]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: String): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
     
     @scala.inline
-    def deleteDeploymentId: Self = this.set("deploymentId", js.undefined)
+    def setEntryPointsVarargs(value: SchemaEntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value :_*))
     
     @scala.inline
-    def setEntryPointsVarargs(value: SchemaEntryPoint*): Self = this.set("entryPoints", js.Array(value :_*))
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryPoints(value: js.Array[SchemaEntryPoint]): Self = this.set("entryPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntryPoints: Self = this.set("entryPoints", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

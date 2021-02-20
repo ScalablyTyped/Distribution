@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateChannelMembershipRequest extends js.Object {
+trait CreateChannelMembershipRequest extends StObject {
   
   /**
     * The ARN of the channel to which you're adding users.
@@ -31,27 +32,15 @@ object CreateChannelMembershipRequest {
   }
   
   @scala.inline
-  implicit class CreateChannelMembershipRequestOps[Self <: CreateChannelMembershipRequest] (val x: Self) extends AnyVal {
+  implicit class CreateChannelMembershipRequestMutableBuilder[Self <: CreateChannelMembershipRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMemberArn(value: ChimeArn): Self = StObject.set(x, "MemberArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = this.set("ChannelArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemberArn(value: ChimeArn): Self = this.set("MemberArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ChannelMembershipType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: ChannelMembershipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

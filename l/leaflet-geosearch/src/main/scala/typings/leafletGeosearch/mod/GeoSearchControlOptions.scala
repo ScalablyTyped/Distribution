@@ -5,6 +5,7 @@ import typings.leafletGeosearch.anon.Button
 import typings.leafletGeosearch.anon.Query
 import typings.leafletGeosearch.leafletGeosearchStrings.bar
 import typings.leafletGeosearch.leafletGeosearchStrings.button
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GeoSearchControl
   */
 @js.native
-trait GeoSearchControlOptions extends js.Object {
+trait GeoSearchControlOptions extends StObject {
   
   /** @default true */
   var animateZoom: js.UndefOr[Boolean] = js.native
@@ -94,129 +95,117 @@ object GeoSearchControlOptions {
   }
   
   @scala.inline
-  implicit class GeoSearchControlOptionsOps[Self <: GeoSearchControlOptions] (val x: Self) extends AnyVal {
+  implicit class GeoSearchControlOptionsMutableBuilder[Self <: GeoSearchControlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimateZoom(value: Boolean): Self = StObject.set(x, "animateZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateZoomUndefined: Self = StObject.set(x, "animateZoom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: BaseProvider[js.Object, js.Object]): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
     
     @scala.inline
-    def setAnimateZoom(value: Boolean): Self = this.set("animateZoom", value.asInstanceOf[js.Any])
+    def setAutoComplete(value: Boolean): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimateZoom: Self = this.set("animateZoom", js.undefined)
+    def setAutoCompleteDelay(value: Double): Self = StObject.set(x, "autoCompleteDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoClose(value: Boolean): Self = this.set("autoClose", value.asInstanceOf[js.Any])
+    def setAutoCompleteDelayUndefined: Self = StObject.set(x, "autoCompleteDelay", js.undefined)
     
     @scala.inline
-    def deleteAutoClose: Self = this.set("autoClose", js.undefined)
+    def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
     @scala.inline
-    def setAutoComplete(value: Boolean): Self = this.set("autoComplete", value.asInstanceOf[js.Any])
+    def setClassNames(value: Button): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoComplete: Self = this.set("autoComplete", js.undefined)
+    def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
     
     @scala.inline
-    def setAutoCompleteDelay(value: Double): Self = this.set("autoCompleteDelay", value.asInstanceOf[js.Any])
+    def setKeepResult(value: Boolean): Self = StObject.set(x, "keepResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoCompleteDelay: Self = this.set("autoCompleteDelay", js.undefined)
+    def setKeepResultUndefined: Self = StObject.set(x, "keepResult", js.undefined)
     
     @scala.inline
-    def setClassNames(value: Button): Self = this.set("classNames", value.asInstanceOf[js.Any])
+    def setMarker(value: MarkerOptions): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassNames: Self = this.set("classNames", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def setKeepResult(value: Boolean): Self = this.set("keepResult", value.asInstanceOf[js.Any])
+    def setMaxMarkers(value: Double): Self = StObject.set(x, "maxMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeepResult: Self = this.set("keepResult", js.undefined)
+    def setMaxMarkersUndefined: Self = StObject.set(x, "maxMarkers", js.undefined)
     
     @scala.inline
-    def setMarker(value: MarkerOptions): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setMessageHideDelay(value: Double): Self = StObject.set(x, "messageHideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setMessageHideDelayUndefined: Self = StObject.set(x, "messageHideDelay", js.undefined)
     
     @scala.inline
-    def setMaxMarkers(value: Double): Self = this.set("maxMarkers", value.asInstanceOf[js.Any])
+    def setNotFoundMessage(value: String): Self = StObject.set(x, "notFoundMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxMarkers: Self = this.set("maxMarkers", js.undefined)
+    def setNotFoundMessageUndefined: Self = StObject.set(x, "notFoundMessage", js.undefined)
     
     @scala.inline
-    def setMessageHideDelay(value: Double): Self = this.set("messageHideDelay", value.asInstanceOf[js.Any])
+    def setPopupFormat(value: /* hasQueryResult */ Query => String): Self = StObject.set(x, "popupFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMessageHideDelay: Self = this.set("messageHideDelay", js.undefined)
+    def setPopupFormatUndefined: Self = StObject.set(x, "popupFormat", js.undefined)
     
     @scala.inline
-    def setNotFoundMessage(value: String): Self = this.set("notFoundMessage", value.asInstanceOf[js.Any])
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotFoundMessage: Self = this.set("notFoundMessage", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setPopupFormat(value: /* hasQueryResult */ Query => String): Self = this.set("popupFormat", js.Any.fromFunction1(value))
+    def setProvider(value: BaseProvider[js.Object, js.Object]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopupFormat: Self = this.set("popupFormat", js.undefined)
+    def setRetainZoomLevel(value: Boolean): Self = StObject.set(x, "retainZoomLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRetainZoomLevelUndefined: Self = StObject.set(x, "retainZoomLevel", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSearchLabel(value: String): Self = StObject.set(x, "searchLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetainZoomLevel(value: Boolean): Self = this.set("retainZoomLevel", value.asInstanceOf[js.Any])
+    def setSearchLabelUndefined: Self = StObject.set(x, "searchLabel", js.undefined)
     
     @scala.inline
-    def deleteRetainZoomLevel: Self = this.set("retainZoomLevel", js.undefined)
+    def setShowMarker(value: Boolean): Self = StObject.set(x, "showMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchLabel(value: String): Self = this.set("searchLabel", value.asInstanceOf[js.Any])
+    def setShowMarkerUndefined: Self = StObject.set(x, "showMarker", js.undefined)
     
     @scala.inline
-    def deleteSearchLabel: Self = this.set("searchLabel", js.undefined)
+    def setShowPopup(value: Boolean): Self = StObject.set(x, "showPopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMarker(value: Boolean): Self = this.set("showMarker", value.asInstanceOf[js.Any])
+    def setShowPopupUndefined: Self = StObject.set(x, "showPopup", js.undefined)
     
     @scala.inline
-    def deleteShowMarker: Self = this.set("showMarker", js.undefined)
+    def setStyle(value: button | bar): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPopup(value: Boolean): Self = this.set("showPopup", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShowPopup: Self = this.set("showPopup", js.undefined)
+    def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: button | bar): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setZoomLevel(value: Double): Self = this.set("zoomLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomLevel: Self = this.set("zoomLevel", js.undefined)
+    def setZoomLevelUndefined: Self = StObject.set(x, "zoomLevel", js.undefined)
   }
 }

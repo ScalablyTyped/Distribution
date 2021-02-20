@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentOperatorInfo extends js.Object {
+trait AgentOperatorInfo extends StObject {
   
   var categoryName: String = js.native
   
@@ -68,69 +69,57 @@ object AgentOperatorInfo {
   }
   
   @scala.inline
-  implicit class AgentOperatorInfoOps[Self <: AgentOperatorInfo] (val x: Self) extends AnyVal {
+  implicit class AgentOperatorInfoMutableBuilder[Self <: AgentOperatorInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryName(value: String): Self = this.set("categoryName", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    def setLastEmailDate(value: String): Self = StObject.set(x, "lastEmailDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setLastNetSendDate(value: String): Self = StObject.set(x, "lastNetSendDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLastPagerDate(value: String): Self = StObject.set(x, "lastPagerDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEmailDate(value: String): Self = this.set("lastEmailDate", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastNetSendDate(value: String): Self = this.set("lastNetSendDate", value.asInstanceOf[js.Any])
+    def setNetSendAddress(value: String): Self = StObject.set(x, "netSendAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPagerDate(value: String): Self = this.set("lastPagerDate", value.asInstanceOf[js.Any])
+    def setPagerAddress(value: String): Self = StObject.set(x, "pagerAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPagerDays(value: WeekDays): Self = StObject.set(x, "pagerDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetSendAddress(value: String): Self = this.set("netSendAddress", value.asInstanceOf[js.Any])
+    def setSaturdayPagerEndTime(value: String): Self = StObject.set(x, "saturdayPagerEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagerAddress(value: String): Self = this.set("pagerAddress", value.asInstanceOf[js.Any])
+    def setSaturdayPagerStartTime(value: String): Self = StObject.set(x, "saturdayPagerStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagerDays(value: WeekDays): Self = this.set("pagerDays", value.asInstanceOf[js.Any])
+    def setSundayPagerEndTime(value: String): Self = StObject.set(x, "sundayPagerEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturdayPagerEndTime(value: String): Self = this.set("saturdayPagerEndTime", value.asInstanceOf[js.Any])
+    def setSundayPagerStartTime(value: String): Self = StObject.set(x, "sundayPagerStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturdayPagerStartTime(value: String): Self = this.set("saturdayPagerStartTime", value.asInstanceOf[js.Any])
+    def setWeekdayPagerEndTime(value: String): Self = StObject.set(x, "weekdayPagerEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSundayPagerEndTime(value: String): Self = this.set("sundayPagerEndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSundayPagerStartTime(value: String): Self = this.set("sundayPagerStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeekdayPagerEndTime(value: String): Self = this.set("weekdayPagerEndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeekdayPagerStartTime(value: String): Self = this.set("weekdayPagerStartTime", value.asInstanceOf[js.Any])
+    def setWeekdayPagerStartTime(value: String): Self = StObject.set(x, "weekdayPagerStartTime", value.asInstanceOf[js.Any])
   }
 }

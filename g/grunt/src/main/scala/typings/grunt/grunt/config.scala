@@ -1,19 +1,18 @@
 package typings.grunt.grunt
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("grunt.config")
-@js.native
-object config extends js.Object {
+object config {
   
   /**
     * {@link http://gruntjs.com/api/grunt.config}
     */
   @js.native
-  trait ConfigModule extends js.Object {
+  trait ConfigModule extends StObject {
     
     def apply(prop: String): js.Any = js.native
     /**

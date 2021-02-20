@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLDataTransfer extends js.Object {
+trait IHTMLDataTransfer extends StObject {
   
   @JSName("MSHTML.IHTMLDataTransfer_typekey")
   var MSHTMLDotIHTMLDataTransfer_typekey: IHTMLDataTransfer = js.native
@@ -37,36 +38,24 @@ object IHTMLDataTransfer {
   }
   
   @scala.inline
-  implicit class IHTMLDataTransferOps[Self <: IHTMLDataTransfer] (val x: Self) extends AnyVal {
+  implicit class IHTMLDataTransferMutableBuilder[Self <: IHTMLDataTransfer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearData(value: String => Boolean): Self = StObject.set(x, "clearData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropEffect(value: String): Self = StObject.set(x, "dropEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffectAllowed(value: String): Self = StObject.set(x, "effectAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotIHTMLDataTransfer_typekey(value: IHTMLDataTransfer): Self = this.set("MSHTML.IHTMLDataTransfer_typekey", value.asInstanceOf[js.Any])
+    def setGetData(value: String => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearData(value: String => Boolean): Self = this.set("clearData", js.Any.fromFunction1(value))
+    def setMSHTMLDotIHTMLDataTransfer_typekey(value: IHTMLDataTransfer): Self = StObject.set(x, "MSHTML.IHTMLDataTransfer_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropEffect(value: String): Self = this.set("dropEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEffectAllowed(value: String): Self = this.set("effectAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetData(value: String => js.Any): Self = this.set("getData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetData(value: (String, js.Any) => Boolean): Self = this.set("setData", js.Any.fromFunction2(value))
+    def setSetData(value: (String, js.Any) => Boolean): Self = StObject.set(x, "setData", js.Any.fromFunction2(value))
   }
 }

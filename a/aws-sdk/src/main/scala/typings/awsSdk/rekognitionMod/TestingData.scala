@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestingData extends js.Object {
+trait TestingData extends StObject {
   
   /**
     * The assets used for testing.
@@ -26,33 +27,21 @@ object TestingData {
   }
   
   @scala.inline
-  implicit class TestingDataOps[Self <: TestingData] (val x: Self) extends AnyVal {
+  implicit class TestingDataMutableBuilder[Self <: TestingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssets(value: Assets): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value :_*))
     
     @scala.inline
-    def setAssetsVarargs(value: Asset*): Self = this.set("Assets", js.Array(value :_*))
+    def setAutoCreate(value: Boolean): Self = StObject.set(x, "AutoCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssets(value: Assets): Self = this.set("Assets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssets: Self = this.set("Assets", js.undefined)
-    
-    @scala.inline
-    def setAutoCreate(value: Boolean): Self = this.set("AutoCreate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoCreate: Self = this.set("AutoCreate", js.undefined)
+    def setAutoCreateUndefined: Self = StObject.set(x, "AutoCreate", js.undefined)
   }
 }

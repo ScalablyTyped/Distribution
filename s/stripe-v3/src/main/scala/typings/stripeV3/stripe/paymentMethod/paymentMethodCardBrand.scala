@@ -5,6 +5,7 @@ import typings.stripeV3.stripeV3Strings.jcb_
 import typings.stripeV3.stripeV3Strings.mastercard_
 import typings.stripeV3.stripeV3Strings.unknown_
 import typings.stripeV3.stripeV3Strings.visa_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripeV3.stripeV3Strings.visa_
   - typings.stripeV3.stripeV3Strings.unknown_
 */
-trait paymentMethodCardBrand extends js.Object
+trait paymentMethodCardBrand extends StObject
 object paymentMethodCardBrand {
   
   @scala.inline

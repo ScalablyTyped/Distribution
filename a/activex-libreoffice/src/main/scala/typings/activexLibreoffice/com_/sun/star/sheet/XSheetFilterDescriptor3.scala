@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,27 +45,15 @@ object XSheetFilterDescriptor3 {
   }
   
   @scala.inline
-  implicit class XSheetFilterDescriptor3Ops[Self <: XSheetFilterDescriptor3] (val x: Self) extends AnyVal {
+  implicit class XSheetFilterDescriptor3MutableBuilder[Self <: XSheetFilterDescriptor3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterFields3(value: SafeArray[TableFilterField3]): Self = StObject.set(x, "FilterFields3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFilterFields3(value: () => SafeArray[TableFilterField3]): Self = StObject.set(x, "getFilterFields3", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilterFields3(value: SafeArray[TableFilterField3]): Self = this.set("FilterFields3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetFilterFields3(value: () => SafeArray[TableFilterField3]): Self = this.set("getFilterFields3", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetFilterFields3(value: SeqEquiv[TableFilterField3] => Unit): Self = this.set("setFilterFields3", js.Any.fromFunction1(value))
+    def setSetFilterFields3(value: SeqEquiv[TableFilterField3] => Unit): Self = StObject.set(x, "setFilterFields3", js.Any.fromFunction1(value))
   }
 }

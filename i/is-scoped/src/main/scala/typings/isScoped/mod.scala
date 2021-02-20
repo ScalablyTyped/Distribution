@@ -1,13 +1,12 @@
 package typings.isScoped
 
 import typings.isScoped.anon.Call
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-scoped", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Check if a string is a [scoped npm package name](https://docs.npmjs.com/misc/scope).
@@ -20,8 +19,20 @@ object mod extends js.Object {
   	//=> false
   	```
   	*/
+  @JSImport("is-scoped", JSImport.Namespace)
+  @js.native
   def apply(input: String): Boolean = js.native
   
+  @JSImport("is-scoped", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function isScoped(input: string): boolean;
+  // export = isScoped;
+  @JSImport("is-scoped", "default")
+  @js.native
+  def default: Call = js.native
   /**
   	Check if a string is a [scoped npm package name](https://docs.npmjs.com/misc/scope).
   	@example
@@ -36,10 +47,9 @@ object mod extends js.Object {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function isScoped(input: string): boolean;
   // export = isScoped;
+  @JSImport("is-scoped", "default")
+  @js.native
   def default(input: String): Boolean = js.native
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function isScoped(input: string): boolean;
-  // export = isScoped;
-  @JSName("default")
-  var default_Original: Call = js.native
+  @scala.inline
+  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

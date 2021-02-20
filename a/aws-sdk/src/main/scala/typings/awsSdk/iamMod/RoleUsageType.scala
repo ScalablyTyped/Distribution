@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoleUsageType extends js.Object {
+trait RoleUsageType extends StObject {
   
   /**
     * The name of the Region where the service-linked role is being used.
@@ -26,33 +27,21 @@ object RoleUsageType {
   }
   
   @scala.inline
-  implicit class RoleUsageTypeOps[Self <: RoleUsageType] (val x: Self) extends AnyVal {
+  implicit class RoleUsageTypeMutableBuilder[Self <: RoleUsageType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegion(value: RegionNameType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResources(value: ArnListType): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: RegionNameType): Self = this.set("Region", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
-    
-    @scala.inline
-    def setResourcesVarargs(value: arnType*): Self = this.set("Resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setResources(value: ArnListType): Self = this.set("Resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setResourcesVarargs(value: arnType*): Self = StObject.set(x, "Resources", js.Array(value :_*))
   }
 }

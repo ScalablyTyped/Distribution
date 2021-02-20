@@ -2,6 +2,7 @@ package typings.babylonjs.indexMod
 
 import typings.babylonjs.XRInputSource
 import typings.babylonjs.webXRMotionControllerManagerMod.MotionControllerConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,24 +12,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class WebXRMotionControllerManager ()
   extends typings.babylonjs.xRIndexMod.WebXRMotionControllerManager
 /* static members */
-@JSImport("babylonjs/index", "WebXRMotionControllerManager")
-@js.native
-object WebXRMotionControllerManager extends js.Object {
+object WebXRMotionControllerManager {
+  
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The base URL of the online controller repository. Can be changed at any time.
     */
-  var BaseRepositoryUrl: String = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.BaseRepositoryUrl")
+  @js.native
+  def BaseRepositoryUrl: String = js.native
+  @scala.inline
+  def BaseRepositoryUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseRepositoryUrl")(x.asInstanceOf[js.Any])
   
   /**
     * Clear the cache used for profile loading and reload when requested again
     */
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.ClearProfilesCache")
+  @js.native
   def ClearProfilesCache(): Unit = js.native
   
   /**
     * Register the default fallbacks.
     * This function is called automatically when this file is imported.
     */
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.DefaultFallbacks")
+  @js.native
   def DefaultFallbacks(): Unit = js.native
   
   /**
@@ -36,6 +47,8 @@ object WebXRMotionControllerManager extends js.Object {
     * @param profileId the profile to which a fallback needs to be found
     * @return an array with corresponding fallback profiles
     */
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.FindFallbackWithProfileId")
+  @js.native
   def FindFallbackWithProfileId(profileId: String): js.Array[String] = js.native
   
   /**
@@ -52,13 +65,21 @@ object WebXRMotionControllerManager extends js.Object {
     * @param forceProfile force a certain profile for this controller
     * @return A promise that fulfils with the motion controller class for this profile id or the generic standard class if none was found
     */
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.GetMotionControllerWithXRInput")
+  @js.native
   def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: typings.babylonjs.sceneMod.Scene): js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController] = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.GetMotionControllerWithXRInput")
+  @js.native
   def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: typings.babylonjs.sceneMod.Scene, forceProfile: String): js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController] = js.native
   
   /**
     * Which repository gets priority - local or online
     */
-  var PrioritizeOnlineRepository: Boolean = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.PrioritizeOnlineRepository")
+  @js.native
+  def PrioritizeOnlineRepository: Boolean = js.native
+  @scala.inline
+  def PrioritizeOnlineRepository_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PrioritizeOnlineRepository")(x.asInstanceOf[js.Any])
   
   /**
     * Register a new controller based on its profile. This function will be called by the controller classes themselves.
@@ -68,6 +89,8 @@ object WebXRMotionControllerManager extends js.Object {
     * @param type the profile type to register
     * @param constructFunction the function to be called when loading this profile
     */
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.RegisterController")
+  @js.native
   def RegisterController(`type`: String, constructFunction: MotionControllerConstructor): Unit = js.native
   
   /**
@@ -75,28 +98,60 @@ object WebXRMotionControllerManager extends js.Object {
     * @param profileId the profileId that will receive the fallbacks
     * @param fallbacks A list of fallback profiles
     */
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.RegisterFallbacksForProfileId")
+  @js.native
   def RegisterFallbacksForProfileId(profileId: String, fallbacks: js.Array[String]): Unit = js.native
   
   /**
     * Will update the list of profiles available in the repository
     * @return a promise that resolves to a map of profiles available online
     */
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.UpdateProfilesList")
+  @js.native
   def UpdateProfilesList(): js.Promise[org.scalablytyped.runtime.StringDictionary[String]] = js.native
   
   /**
     * Use the online repository, or use only locally-defined controllers
     */
-  var UseOnlineRepository: Boolean = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager.UseOnlineRepository")
+  @js.native
+  def UseOnlineRepository: Boolean = js.native
+  @scala.inline
+  def UseOnlineRepository_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UseOnlineRepository")(x.asInstanceOf[js.Any])
   
-  var _AvailableControllers: js.Any = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager._AvailableControllers")
+  @js.native
+  def _AvailableControllers: js.Any = js.native
+  @scala.inline
+  def _AvailableControllers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AvailableControllers")(x.asInstanceOf[js.Any])
   
-  var _Fallbacks: js.Any = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager._Fallbacks")
+  @js.native
+  def _Fallbacks: js.Any = js.native
+  @scala.inline
+  def _Fallbacks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fallbacks")(x.asInstanceOf[js.Any])
   
-  var _LoadProfileFromRepository: js.Any = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager._LoadProfileFromRepository")
+  @js.native
+  def _LoadProfileFromRepository: js.Any = js.native
+  @scala.inline
+  def _LoadProfileFromRepository_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfileFromRepository")(x.asInstanceOf[js.Any])
   
-  var _LoadProfilesFromAvailableControllers: js.Any = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager._LoadProfilesFromAvailableControllers")
+  @js.native
+  def _LoadProfilesFromAvailableControllers: js.Any = js.native
+  @scala.inline
+  def _LoadProfilesFromAvailableControllers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfilesFromAvailableControllers")(x.asInstanceOf[js.Any])
   
-  var _ProfileLoadingPromises: js.Any = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager._ProfileLoadingPromises")
+  @js.native
+  def _ProfileLoadingPromises: js.Any = js.native
+  @scala.inline
+  def _ProfileLoadingPromises_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfileLoadingPromises")(x.asInstanceOf[js.Any])
   
-  var _ProfilesList: js.Any = js.native
+  @JSImport("babylonjs/index", "WebXRMotionControllerManager._ProfilesList")
+  @js.native
+  def _ProfilesList: js.Any = js.native
+  @scala.inline
+  def _ProfilesList_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfilesList")(x.asInstanceOf[js.Any])
 }

@@ -5,12 +5,13 @@ import typings.dockerode.anon.Bridge
 import typings.dockerode.anon.Data
 import typings.dockerode.anon.Dead
 import typings.dockerode.anon.Mode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerInspectInfo extends js.Object {
+trait ContainerInspectInfo extends StObject {
   
   var AppArmorProfile: String = js.native
   
@@ -90,99 +91,87 @@ object ContainerInspectInfo {
   }
   
   @scala.inline
-  implicit class ContainerInspectInfoOps[Self <: ContainerInspectInfo] (val x: Self) extends AnyVal {
+  implicit class ContainerInspectInfoMutableBuilder[Self <: ContainerInspectInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppArmorProfile(value: String): Self = StObject.set(x, "AppArmorProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
     @scala.inline
-    def setAppArmorProfile(value: String): Self = this.set("AppArmorProfile", value.asInstanceOf[js.Any])
+    def setConfig(value: AttachStderr): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("Args", js.Array(value :_*))
+    def setCreated(value: String): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("Args", value.asInstanceOf[js.Any])
+    def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: AttachStderr): Self = this.set("Config", value.asInstanceOf[js.Any])
+    def setExecIDs(value: js.Array[String]): Self = StObject.set(x, "ExecIDs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("Created", value.asInstanceOf[js.Any])
+    def setExecIDsUndefined: Self = StObject.set(x, "ExecIDs", js.undefined)
     
     @scala.inline
-    def setDriver(value: String): Self = this.set("Driver", value.asInstanceOf[js.Any])
+    def setExecIDsVarargs(value: String*): Self = StObject.set(x, "ExecIDs", js.Array(value :_*))
     
     @scala.inline
-    def setGraphDriver(value: Data): Self = this.set("GraphDriver", value.asInstanceOf[js.Any])
+    def setGraphDriver(value: Data): Self = StObject.set(x, "GraphDriver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostConfig(value: HostConfig): Self = this.set("HostConfig", value.asInstanceOf[js.Any])
+    def setHostConfig(value: HostConfig): Self = StObject.set(x, "HostConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostnamePath(value: String): Self = this.set("HostnamePath", value.asInstanceOf[js.Any])
+    def setHostnamePath(value: String): Self = StObject.set(x, "HostnamePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostsPath(value: String): Self = this.set("HostsPath", value.asInstanceOf[js.Any])
+    def setHostsPath(value: String): Self = StObject.set(x, "HostsPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setImage(value: String): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogPath(value: String): Self = this.set("LogPath", value.asInstanceOf[js.Any])
+    def setLogPath(value: String): Self = StObject.set(x, "LogPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountLabel(value: String): Self = this.set("MountLabel", value.asInstanceOf[js.Any])
+    def setMountLabel(value: String): Self = StObject.set(x, "MountLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountsVarargs(value: Mode*): Self = this.set("Mounts", js.Array(value :_*))
+    def setMounts(value: js.Array[Mode]): Self = StObject.set(x, "Mounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMounts(value: js.Array[Mode]): Self = this.set("Mounts", value.asInstanceOf[js.Any])
+    def setMountsVarargs(value: Mode*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkSettings(value: Bridge): Self = this.set("NetworkSettings", value.asInstanceOf[js.Any])
+    def setNetworkSettings(value: Bridge): Self = StObject.set(x, "NetworkSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessLabel(value: String): Self = this.set("ProcessLabel", value.asInstanceOf[js.Any])
+    def setProcessLabel(value: String): Self = StObject.set(x, "ProcessLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvConfPath(value: String): Self = this.set("ResolvConfPath", value.asInstanceOf[js.Any])
+    def setResolvConfPath(value: String): Self = StObject.set(x, "ResolvConfPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestartCount(value: Double): Self = this.set("RestartCount", value.asInstanceOf[js.Any])
+    def setRestartCount(value: Double): Self = StObject.set(x, "RestartCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: Dead): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecIDsVarargs(value: String*): Self = this.set("ExecIDs", js.Array(value :_*))
-    
-    @scala.inline
-    def setExecIDs(value: js.Array[String]): Self = this.set("ExecIDs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecIDs: Self = this.set("ExecIDs", js.undefined)
+    def setState(value: Dead): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

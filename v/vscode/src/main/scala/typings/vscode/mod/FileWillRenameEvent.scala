@@ -2,12 +2,13 @@ package typings.vscode.mod
 
 import typings.vscode.Thenable
 import typings.vscode.anon.NewUri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileWillRenameEvent extends js.Object {
+trait FileWillRenameEvent extends StObject {
   
   /**
     * The files that are going to be renamed.

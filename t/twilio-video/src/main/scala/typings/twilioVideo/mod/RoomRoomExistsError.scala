@@ -2,6 +2,7 @@ package typings.twilioVideo.mod
 
 import typings.twilioVideo.twilioVideoNumbers.`53113`
 import typings.twilioVideo.twilioVideoStrings.`Room exists`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

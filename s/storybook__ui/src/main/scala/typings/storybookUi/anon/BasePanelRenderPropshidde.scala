@@ -1,13 +1,14 @@
 package typings.storybookUi.anon
 
 import typings.storybookUi.containerMod.Bounds
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @storybook/ui.@storybook/ui/dist/components/layout/container.BasePanelRenderProps & {  hidden :boolean} */
 @js.native
-trait BasePanelRenderPropshidde extends js.Object {
+trait BasePanelRenderPropshidde extends StObject {
   
   var animate: Boolean = js.native
   
@@ -30,41 +31,29 @@ object BasePanelRenderPropshidde {
   }
   
   @scala.inline
-  implicit class BasePanelRenderPropshiddeOps[Self <: BasePanelRenderPropshidde] (val x: Self) extends AnyVal {
+  implicit class BasePanelRenderPropshiddeMutableBuilder[Self <: BasePanelRenderPropshidde] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Bounds): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFullscreen(value: Boolean): Self = this.set("isFullscreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsFullscreen: Self = this.set("isFullscreen", js.undefined)
+    def setPosition(value: Bounds): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setViewMode(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-    ): Self = this.set("viewMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewMode: Self = this.set("viewMode", js.undefined)
+    def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }
 }

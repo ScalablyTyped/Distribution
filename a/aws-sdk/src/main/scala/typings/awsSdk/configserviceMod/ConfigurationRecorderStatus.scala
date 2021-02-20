@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationRecorderStatus extends js.Object {
+trait ConfigurationRecorderStatus extends StObject {
   
   /**
     * The error code indicating that the recording failed.
@@ -56,66 +57,54 @@ object ConfigurationRecorderStatus {
   }
   
   @scala.inline
-  implicit class ConfigurationRecorderStatusOps[Self <: ConfigurationRecorderStatus] (val x: Self) extends AnyVal {
+  implicit class ConfigurationRecorderStatusMutableBuilder[Self <: ConfigurationRecorderStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastErrorCodeUndefined: Self = StObject.set(x, "lastErrorCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastErrorMessage(value: String): Self = StObject.set(x, "lastErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastErrorCode(value: String): Self = this.set("lastErrorCode", value.asInstanceOf[js.Any])
+    def setLastErrorMessageUndefined: Self = StObject.set(x, "lastErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteLastErrorCode: Self = this.set("lastErrorCode", js.undefined)
+    def setLastStartTime(value: Date): Self = StObject.set(x, "lastStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastErrorMessage(value: String): Self = this.set("lastErrorMessage", value.asInstanceOf[js.Any])
+    def setLastStartTimeUndefined: Self = StObject.set(x, "lastStartTime", js.undefined)
     
     @scala.inline
-    def deleteLastErrorMessage: Self = this.set("lastErrorMessage", js.undefined)
+    def setLastStatus(value: RecorderStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStartTime(value: Date): Self = this.set("lastStartTime", value.asInstanceOf[js.Any])
+    def setLastStatusChangeTime(value: Date): Self = StObject.set(x, "lastStatusChangeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastStartTime: Self = this.set("lastStartTime", js.undefined)
+    def setLastStatusChangeTimeUndefined: Self = StObject.set(x, "lastStatusChangeTime", js.undefined)
     
     @scala.inline
-    def setLastStatus(value: RecorderStatus): Self = this.set("lastStatus", value.asInstanceOf[js.Any])
+    def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
     
     @scala.inline
-    def deleteLastStatus: Self = this.set("lastStatus", js.undefined)
+    def setLastStopTime(value: Date): Self = StObject.set(x, "lastStopTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatusChangeTime(value: Date): Self = this.set("lastStatusChangeTime", value.asInstanceOf[js.Any])
+    def setLastStopTimeUndefined: Self = StObject.set(x, "lastStopTime", js.undefined)
     
     @scala.inline
-    def deleteLastStatusChangeTime: Self = this.set("lastStatusChangeTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStopTime(value: Date): Self = this.set("lastStopTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastStopTime: Self = this.set("lastStopTime", js.undefined)
+    def setRecording(value: Boolean): Self = StObject.set(x, "recording", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRecording(value: Boolean): Self = this.set("recording", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecording: Self = this.set("recording", js.undefined)
+    def setRecordingUndefined: Self = StObject.set(x, "recording", js.undefined)
   }
 }

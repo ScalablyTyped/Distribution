@@ -1,16 +1,16 @@
 package typings.typeorm
 
 import typings.typeorm.persistenceSubjectMod.Subject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/persistence/SubjectChangedColumnsComputer", JSImport.Namespace)
-@js.native
-object persistenceSubjectChangedColumnsComputerMod extends js.Object {
+object persistenceSubjectChangedColumnsComputerMod {
   
+  @JSImport("typeorm/persistence/SubjectChangedColumnsComputer", "SubjectChangedColumnsComputer")
   @js.native
-  class SubjectChangedColumnsComputer () extends js.Object {
+  class SubjectChangedColumnsComputer () extends StObject {
     
     /**
       * Finds what columns are changed in the subject entities.

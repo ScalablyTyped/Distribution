@@ -1,5 +1,6 @@
 package typings.algoliaCacheCommon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@algolia/cache-common", JSImport.Namespace)
 @js.native
-object algoliaCacheCommonRequire extends js.Object
+object algoliaCacheCommonRequire extends StObject

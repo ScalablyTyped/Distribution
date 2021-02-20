@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesisanalyticsv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationApplicationConfiguration extends js.Object {
+trait ApplicationApplicationConfiguration extends StObject {
   
   /**
     * The code location and type parameters for the application.
@@ -49,51 +50,39 @@ object ApplicationApplicationConfiguration {
   }
   
   @scala.inline
-  implicit class ApplicationApplicationConfigurationOps[Self <: ApplicationApplicationConfiguration] (val x: Self) extends AnyVal {
+  implicit class ApplicationApplicationConfigurationMutableBuilder[Self <: ApplicationApplicationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationCodeConfiguration(value: Input[ApplicationApplicationConfigurationApplicationCodeConfiguration]): Self = StObject.set(x, "applicationCodeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationSnapshotConfiguration(value: Input[ApplicationApplicationConfigurationApplicationSnapshotConfiguration]): Self = StObject.set(x, "applicationSnapshotConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationSnapshotConfigurationUndefined: Self = StObject.set(x, "applicationSnapshotConfiguration", js.undefined)
     
     @scala.inline
-    def setApplicationCodeConfiguration(value: Input[ApplicationApplicationConfigurationApplicationCodeConfiguration]): Self = this.set("applicationCodeConfiguration", value.asInstanceOf[js.Any])
+    def setEnvironmentProperties(value: Input[ApplicationApplicationConfigurationEnvironmentProperties]): Self = StObject.set(x, "environmentProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationSnapshotConfiguration(value: Input[ApplicationApplicationConfigurationApplicationSnapshotConfiguration]): Self = this.set("applicationSnapshotConfiguration", value.asInstanceOf[js.Any])
+    def setEnvironmentPropertiesUndefined: Self = StObject.set(x, "environmentProperties", js.undefined)
     
     @scala.inline
-    def deleteApplicationSnapshotConfiguration: Self = this.set("applicationSnapshotConfiguration", js.undefined)
+    def setFlinkApplicationConfiguration(value: Input[ApplicationApplicationConfigurationFlinkApplicationConfiguration]): Self = StObject.set(x, "flinkApplicationConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentProperties(value: Input[ApplicationApplicationConfigurationEnvironmentProperties]): Self = this.set("environmentProperties", value.asInstanceOf[js.Any])
+    def setFlinkApplicationConfigurationUndefined: Self = StObject.set(x, "flinkApplicationConfiguration", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentProperties: Self = this.set("environmentProperties", js.undefined)
+    def setSqlApplicationConfiguration(value: Input[ApplicationApplicationConfigurationSqlApplicationConfiguration]): Self = StObject.set(x, "sqlApplicationConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlinkApplicationConfiguration(value: Input[ApplicationApplicationConfigurationFlinkApplicationConfiguration]): Self = this.set("flinkApplicationConfiguration", value.asInstanceOf[js.Any])
+    def setSqlApplicationConfigurationUndefined: Self = StObject.set(x, "sqlApplicationConfiguration", js.undefined)
     
     @scala.inline
-    def deleteFlinkApplicationConfiguration: Self = this.set("flinkApplicationConfiguration", js.undefined)
+    def setVpcConfiguration(value: Input[ApplicationApplicationConfigurationVpcConfiguration]): Self = StObject.set(x, "vpcConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlApplicationConfiguration(value: Input[ApplicationApplicationConfigurationSqlApplicationConfiguration]): Self = this.set("sqlApplicationConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqlApplicationConfiguration: Self = this.set("sqlApplicationConfiguration", js.undefined)
-    
-    @scala.inline
-    def setVpcConfiguration(value: Input[ApplicationApplicationConfigurationVpcConfiguration]): Self = this.set("vpcConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfiguration: Self = this.set("vpcConfiguration", js.undefined)
+    def setVpcConfigurationUndefined: Self = StObject.set(x, "vpcConfiguration", js.undefined)
   }
 }

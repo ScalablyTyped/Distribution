@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TenantProjectConfig extends js.Object {
+trait TenantProjectConfig extends StObject {
   
   /** Billing account properties. The billing account must be specified. */
   var billingConfig: js.UndefOr[BillingConfig] = js.native
@@ -45,61 +46,49 @@ object TenantProjectConfig {
   }
   
   @scala.inline
-  implicit class TenantProjectConfigOps[Self <: TenantProjectConfig] (val x: Self) extends AnyVal {
+  implicit class TenantProjectConfigMutableBuilder[Self <: TenantProjectConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingConfig(value: BillingConfig): Self = StObject.set(x, "billingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingConfigUndefined: Self = StObject.set(x, "billingConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingConfig(value: BillingConfig): Self = this.set("billingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingConfig: Self = this.set("billingConfig", js.undefined)
-    
-    @scala.inline
-    def setFolder(value: String): Self = this.set("folder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFolder: Self = this.set("folder", js.undefined)
+    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.TenantProjectConfig with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setServiceAccountConfig(value: ServiceAccountConfig): Self = this.set("serviceAccountConfig", value.asInstanceOf[js.Any])
+    def setServiceAccountConfig(value: ServiceAccountConfig): Self = StObject.set(x, "serviceAccountConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServiceAccountConfig: Self = this.set("serviceAccountConfig", js.undefined)
+    def setServiceAccountConfigUndefined: Self = StObject.set(x, "serviceAccountConfig", js.undefined)
     
     @scala.inline
-    def setServicesVarargs(value: String*): Self = this.set("services", js.Array(value :_*))
+    def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServices(value: js.Array[String]): Self = this.set("services", value.asInstanceOf[js.Any])
+    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
     @scala.inline
-    def deleteServices: Self = this.set("services", js.undefined)
+    def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
     
     @scala.inline
-    def setTenantProjectPolicy(value: TenantProjectPolicy): Self = this.set("tenantProjectPolicy", value.asInstanceOf[js.Any])
+    def setTenantProjectPolicy(value: TenantProjectPolicy): Self = StObject.set(x, "tenantProjectPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTenantProjectPolicy: Self = this.set("tenantProjectPolicy", js.undefined)
+    def setTenantProjectPolicyUndefined: Self = StObject.set(x, "tenantProjectPolicy", js.undefined)
   }
 }

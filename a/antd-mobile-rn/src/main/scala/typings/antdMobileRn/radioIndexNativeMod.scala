@@ -1,26 +1,37 @@
 package typings.antdMobileRn
 
-import typings.antdMobileRn.anon.`0`
+import typings.antdMobileRn.anon.Styles
 import typings.antdMobileRn.radioNativeMod.RadioNativeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/radio/index.native", JSImport.Namespace)
-@js.native
-object radioIndexNativeMod extends js.Object {
+object radioIndexNativeMod {
   
+  @JSImport("antd-mobile-rn/lib/radio/index.native", JSImport.Default)
   @js.native
   class default protected ()
     extends typings.antdMobileRn.radioNativeMod.default {
     def this(props: RadioNativeProps, context: js.Any) = this()
   }
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var RadioItem: js.Any = js.native
+    @JSImport("antd-mobile-rn/lib/radio/index.native", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var defaultProps: `0` = js.native
+    @JSImport("antd-mobile-rn/lib/radio/index.native", "default.RadioItem")
+    @js.native
+    def RadioItem: js.Any = js.native
+    @scala.inline
+    def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile-rn/lib/radio/index.native", "default.defaultProps")
+    @js.native
+    def defaultProps: Styles = js.native
+    @scala.inline
+    def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

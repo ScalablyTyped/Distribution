@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.styleBorder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSStyleBorder extends js.Object {
+trait SketchMSStyleBorder extends StObject {
   
   var _class: styleBorder = js.native
   
@@ -42,42 +43,30 @@ object SketchMSStyleBorder {
   }
   
   @scala.inline
-  implicit class SketchMSStyleBorderOps[Self <: SketchMSStyleBorder] (val x: Self) extends AnyVal {
+  implicit class SketchMSStyleBorderMutableBuilder[Self <: SketchMSStyleBorder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillType(value: Double): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: styleBorder): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setGradient(value: SketchMSGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: SketchMSColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = this.set("contextSettings", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillType(value: Double): Self = this.set("fillType", value.asInstanceOf[js.Any])
+    def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradient(value: SketchMSGradient): Self = this.set("gradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEnabled(value: Double): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThickness(value: Double): Self = this.set("thickness", value.asInstanceOf[js.Any])
+    def set_class(value: styleBorder): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

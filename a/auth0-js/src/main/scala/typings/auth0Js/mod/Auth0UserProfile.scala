@@ -1,11 +1,12 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth0UserProfile extends js.Object {
+trait Auth0UserProfile extends StObject {
   
   var app_metadata: js.UndefOr[js.Any] = js.native
   
@@ -62,102 +63,90 @@ object Auth0UserProfile {
   }
   
   @scala.inline
-  implicit class Auth0UserProfileOps[Self <: Auth0UserProfile] (val x: Self) extends AnyVal {
+  implicit class Auth0UserProfileMutableBuilder[Self <: Auth0UserProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp_metadata(value: js.Any): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApp_metadataUndefined: Self = StObject.set(x, "app_metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientID(value: String): Self = this.set("clientID", value.asInstanceOf[js.Any])
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentitiesVarargs(value: Auth0Identity*): Self = this.set("identities", js.Array(value :_*))
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setIdentities(value: js.Array[Auth0Identity]): Self = this.set("identities", value.asInstanceOf[js.Any])
+    def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
     
     @scala.inline
-    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: String): Self = this.set("picture", value.asInstanceOf[js.Any])
+    def setFamily_nameUndefined: Self = StObject.set(x, "family_name", js.undefined)
     
     @scala.inline
-    def setSub(value: String): Self = this.set("sub", value.asInstanceOf[js.Any])
+    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
     @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp_metadata(value: js.Any): Self = this.set("app_metadata", value.asInstanceOf[js.Any])
+    def setGiven_nameUndefined: Self = StObject.set(x, "given_name", js.undefined)
     
     @scala.inline
-    def deleteApp_metadata: Self = this.set("app_metadata", js.undefined)
+    def setIdentities(value: js.Array[Auth0Identity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setIdentitiesVarargs(value: Auth0Identity*): Self = StObject.set(x, "identities", js.Array(value :_*))
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail_verified(value: Boolean): Self = this.set("email_verified", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteEmail_verified: Self = this.set("email_verified", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily_name(value: String): Self = this.set("family_name", value.asInstanceOf[js.Any])
+    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFamily_name: Self = this.set("family_name", js.undefined)
+    def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGender: Self = this.set("gender", js.undefined)
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGiven_name(value: String): Self = this.set("given_name", value.asInstanceOf[js.Any])
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGiven_name: Self = this.set("given_name", js.undefined)
+    def setUser_metadata(value: js.Any): Self = StObject.set(x, "user_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setUser_metadataUndefined: Self = StObject.set(x, "user_metadata", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_metadata(value: js.Any): Self = this.set("user_metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_metadata: Self = this.set("user_metadata", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.Pickers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PickerLocationId extends js.Object
+sealed trait PickerLocationId extends StObject
 /** Identifies the storage location that the file picker presents to the user. */
 @JSGlobal("Windows.Storage.Pickers.PickerLocationId")
 @js.native
-object PickerLocationId extends js.Object {
+object PickerLocationId extends StObject {
   
   /** The Computer folder. */
   @js.native

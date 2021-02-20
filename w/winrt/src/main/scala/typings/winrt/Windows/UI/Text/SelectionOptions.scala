@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SelectionOptions extends js.Object
+sealed trait SelectionOptions extends StObject
 @JSGlobal("Windows.UI.Text.SelectionOptions")
 @js.native
-object SelectionOptions extends js.Object {
+object SelectionOptions extends StObject {
   
   @js.native
   sealed trait active extends SelectionOptions

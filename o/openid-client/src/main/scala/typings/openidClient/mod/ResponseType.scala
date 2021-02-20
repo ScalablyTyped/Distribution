@@ -1,5 +1,6 @@
 package typings.openidClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.openidClient.openidClientStrings.`code id_token token`
   - typings.openidClient.openidClientStrings.none
 */
-trait ResponseType extends js.Object
+trait ResponseType extends StObject
 object ResponseType {
   
   @scala.inline

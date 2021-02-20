@@ -1,30 +1,28 @@
 package typings.milkcocoa
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object milkcocoa extends js.Object {
+  object milkcocoa {
     
+    @JSGlobal("milkcocoa.MilkCocoa")
     @js.native
     class MilkCocoa protected ()
       extends typings.milkcocoa.milkcocoa.MilkCocoa {
       def this(host: String) = this()
       def this(host: String, callback: js.Function) = this()
     }
-    @js.native
-    object MilkCocoa extends js.Object {
+    object MilkCocoa {
       
-      @js.native
-      object Error extends js.Object {
+      object Error {
         
+        @JSGlobal("milkcocoa.MilkCocoa.Error.AddAccount")
         @js.native
-        object AddAccount extends js.Object {
+        object AddAccount extends StObject {
           
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount with Double] = js.native
@@ -34,8 +32,9 @@ object global extends js.Object {
           /* 0 */ val FormatError: typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount.FormatError with Double = js.native
         }
         
+        @JSGlobal("milkcocoa.MilkCocoa.Error.GetCurrentUser")
         @js.native
-        object GetCurrentUser extends js.Object {
+        object GetCurrentUser extends StObject {
           
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[typings.milkcocoa.milkcocoa.MilkCocoa.Error.GetCurrentUser with Double] = js.native
@@ -43,8 +42,9 @@ object global extends js.Object {
           /* 0 */ val NotLoggedIn: typings.milkcocoa.milkcocoa.MilkCocoa.Error.GetCurrentUser.NotLoggedIn with Double = js.native
         }
         
+        @JSGlobal("milkcocoa.MilkCocoa.Error.Login")
         @js.native
-        object Login extends js.Object {
+        object Login extends StObject {
           
           @JSBracketAccess
           def apply(value: Double): js.UndefOr[typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.web3CoreHelpers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsonRpcPayload extends js.Object {
+trait JsonRpcPayload extends StObject {
   
   var id: js.UndefOr[String | Double] = js.native
   
@@ -24,36 +25,24 @@ object JsonRpcPayload {
   }
   
   @scala.inline
-  implicit class JsonRpcPayloadOps[Self <: JsonRpcPayload] (val x: Self) extends AnyVal {
+  implicit class JsonRpcPayloadMutableBuilder[Self <: JsonRpcPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonrpc(value: String): Self = this.set("jsonrpc", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: js.Any*): Self = this.set("params", js.Array(value :_*))
-    
-    @scala.inline
-    def setParams(value: js.Array[_]): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
   }
 }

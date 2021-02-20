@@ -1,17 +1,32 @@
 package typings.angularCommon
 
+import org.scalablytyped.runtime.Shortcut
 import typings.angularCommon.anon.BBDJPY
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common/locales/en-BB", JSImport.Namespace)
-@js.native
-object enBBMod extends js.Object {
+object enBBMod extends Shortcut {
   
+  @JSImport("@angular/common/locales/en-BB", JSImport.Default)
+  @js.native
   val default: js.Array[
     js.UndefOr[
       String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | BBDJPY
     ]
   ] = js.native
+  
+  type _To = js.Array[
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | BBDJPY
+    ]
+  ]
+  
+  /* This means you don't have to write `default`, but can instead just say `enBBMod.foo` */
+  override def _to: js.Array[
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | BBDJPY
+    ]
+  ] = default
 }

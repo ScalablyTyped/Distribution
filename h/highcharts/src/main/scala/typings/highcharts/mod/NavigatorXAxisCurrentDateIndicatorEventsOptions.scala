@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigatorXAxisCurrentDateIndicatorEventsOptions extends js.Object {
+trait NavigatorXAxisCurrentDateIndicatorEventsOptions extends StObject {
   
   /**
     * (Gantt) Click event on a plot band.
@@ -36,42 +37,30 @@ object NavigatorXAxisCurrentDateIndicatorEventsOptions {
   }
   
   @scala.inline
-  implicit class NavigatorXAxisCurrentDateIndicatorEventsOptionsOps[Self <: NavigatorXAxisCurrentDateIndicatorEventsOptions] (val x: Self) extends AnyVal {
+  implicit class NavigatorXAxisCurrentDateIndicatorEventsOptionsMutableBuilder[Self <: NavigatorXAxisCurrentDateIndicatorEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMousemove(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setMouseout(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousemove(value: EventCallbackFunction[PlotLineOrBand]): Self = this.set("mousemove", value.asInstanceOf[js.Any])
+    def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
     
     @scala.inline
-    def deleteMousemove: Self = this.set("mousemove", js.undefined)
+    def setMouseover(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseout(value: EventCallbackFunction[PlotLineOrBand]): Self = this.set("mouseout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMouseout: Self = this.set("mouseout", js.undefined)
-    
-    @scala.inline
-    def setMouseover(value: EventCallbackFunction[PlotLineOrBand]): Self = this.set("mouseover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMouseover: Self = this.set("mouseover", js.undefined)
+    def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
   }
 }

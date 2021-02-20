@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Allowrebasemerge
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppsListReposAccessibleToInstallationResponseData extends js.Object {
+trait AppsListReposAccessibleToInstallationResponseData extends StObject {
   
   var repositories: js.Array[Allowrebasemerge] = js.native
   
@@ -21,27 +22,15 @@ object AppsListReposAccessibleToInstallationResponseData {
   }
   
   @scala.inline
-  implicit class AppsListReposAccessibleToInstallationResponseDataOps[Self <: AppsListReposAccessibleToInstallationResponseData] (val x: Self) extends AnyVal {
+  implicit class AppsListReposAccessibleToInstallationResponseDataMutableBuilder[Self <: AppsListReposAccessibleToInstallationResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepositories(value: js.Array[Allowrebasemerge]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepositoriesVarargs(value: Allowrebasemerge*): Self = StObject.set(x, "repositories", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRepositoriesVarargs(value: Allowrebasemerge*): Self = this.set("repositories", js.Array(value :_*))
-    
-    @scala.inline
-    def setRepositories(value: js.Array[Allowrebasemerge]): Self = this.set("repositories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateRoutingProfileQueuesRequest extends js.Object {
+trait DisassociateRoutingProfileQueuesRequest extends StObject {
   
   /**
     * The identifier of the Amazon Connect instance.
@@ -35,30 +36,18 @@ object DisassociateRoutingProfileQueuesRequest {
   }
   
   @scala.inline
-  implicit class DisassociateRoutingProfileQueuesRequestOps[Self <: DisassociateRoutingProfileQueuesRequest] (val x: Self) extends AnyVal {
+  implicit class DisassociateRoutingProfileQueuesRequestMutableBuilder[Self <: DisassociateRoutingProfileQueuesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueueReferences(value: RoutingProfileQueueReferenceList): Self = StObject.set(x, "QueueReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueueReferencesVarargs(value: RoutingProfileQueueReference*): Self = StObject.set(x, "QueueReferences", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueReferencesVarargs(value: RoutingProfileQueueReference*): Self = this.set("QueueReferences", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueueReferences(value: RoutingProfileQueueReferenceList): Self = this.set("QueueReferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = this.set("RoutingProfileId", value.asInstanceOf[js.Any])
+    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }
 }

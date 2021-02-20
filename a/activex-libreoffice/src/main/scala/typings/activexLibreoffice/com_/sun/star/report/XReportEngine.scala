@@ -12,6 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.sdbc.XConnection
 import typings.activexLibreoffice.com_.sun.star.task.XStatusIndicator
 import typings.activexLibreoffice.com_.sun.star.util.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,42 +106,30 @@ object XReportEngine {
   }
   
   @scala.inline
-  implicit class XReportEngineOps[Self <: XReportEngine] (val x: Self) extends AnyVal {
+  implicit class XReportEngineMutableBuilder[Self <: XReportEngine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDocument(value: () => URL): Self = StObject.set(x, "createDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateDocumentAlive(value: XFrame => XModel): Self = StObject.set(x, "createDocumentAlive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActiveConnection(value: XConnection): Self = this.set("ActiveConnection", value.asInstanceOf[js.Any])
+    def setCreateDocumentModel(value: () => XModel): Self = StObject.set(x, "createDocumentModel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("MaxRows", value.asInstanceOf[js.Any])
+    def setInterrupt(value: () => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReportDefinition(value: XReportDefinition): Self = this.set("ReportDefinition", value.asInstanceOf[js.Any])
+    def setMaxRows(value: Double): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusIndicator(value: XStatusIndicator): Self = this.set("StatusIndicator", value.asInstanceOf[js.Any])
+    def setReportDefinition(value: XReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDocument(value: () => URL): Self = this.set("createDocument", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCreateDocumentAlive(value: XFrame => XModel): Self = this.set("createDocumentAlive", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateDocumentModel(value: () => XModel): Self = this.set("createDocumentModel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInterrupt(value: () => Unit): Self = this.set("interrupt", js.Any.fromFunction0(value))
+    def setStatusIndicator(value: XStatusIndicator): Self = StObject.set(x, "StatusIndicator", value.asInstanceOf[js.Any])
   }
 }

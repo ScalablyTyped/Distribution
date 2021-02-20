@@ -1,5 +1,6 @@
 package typings.naverWhale.global.whale
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Permissions:  "tabCapture"
   * @since Chrome 31.
   */
-@JSGlobal("chrome.tabCapture")
-@js.native
-object tabCapture extends js.Object
+object tabCapture

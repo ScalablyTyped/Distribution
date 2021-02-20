@@ -4,13 +4,14 @@ import typings.officeJsPreview.Excel.LinkedDataTypeState
 import typings.officeJsPreview.Excel.NumberFormatCategory
 import typings.officeJsPreview.Excel.RangeHyperlink
 import typings.officeJsPreview.Excel.RangeValueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `range.toJSON()`. */
 @js.native
-trait RangeData extends js.Object {
+trait RangeData extends StObject {
   
   /**
     *
@@ -293,249 +294,237 @@ object RangeData {
   }
   
   @scala.inline
-  implicit class RangeDataOps[Self <: RangeData] (val x: Self) extends AnyVal {
+  implicit class RangeDataMutableBuilder[Self <: RangeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressLocal(value: String): Self = this.set("addressLocal", value.asInstanceOf[js.Any])
+    def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
     
     @scala.inline
-    def deleteAddressLocal: Self = this.set("addressLocal", js.undefined)
+    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellCount(value: Double): Self = this.set("cellCount", value.asInstanceOf[js.Any])
+    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
     @scala.inline
-    def deleteCellCount: Self = this.set("cellCount", js.undefined)
+    def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
     
     @scala.inline
-    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHidden(value: Boolean): Self = this.set("columnHidden", value.asInstanceOf[js.Any])
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def deleteColumnHidden: Self = this.set("columnHidden", js.undefined)
+    def setConditionalFormats(value: js.Array[ConditionalFormatData]): Self = StObject.set(x, "conditionalFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setConditionalFormatsUndefined: Self = StObject.set(x, "conditionalFormats", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setConditionalFormatsVarargs(value: ConditionalFormatData*): Self = StObject.set(x, "conditionalFormats", js.Array(value :_*))
     
     @scala.inline
-    def setConditionalFormatsVarargs(value: ConditionalFormatData*): Self = this.set("conditionalFormats", js.Array(value :_*))
+    def setDataValidation(value: DataValidationData): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionalFormats(value: js.Array[ConditionalFormatData]): Self = this.set("conditionalFormats", value.asInstanceOf[js.Any])
+    def setDataValidationUndefined: Self = StObject.set(x, "dataValidation", js.undefined)
     
     @scala.inline
-    def deleteConditionalFormats: Self = this.set("conditionalFormats", js.undefined)
+    def setFormat(value: RangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataValidation(value: DataValidationData): Self = this.set("dataValidation", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteDataValidation: Self = this.set("dataValidation", js.undefined)
+    def setFormulas(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: RangeFormatData): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormulasLocal(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
     
     @scala.inline
-    def setFormulasVarargs(value: js.Array[js.Any]*): Self = this.set("formulas", js.Array(value :_*))
+    def setFormulasLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasLocal", js.Array(value :_*))
     
     @scala.inline
-    def setFormulas(value: js.Array[js.Array[_]]): Self = this.set("formulas", value.asInstanceOf[js.Any])
+    def setFormulasR1C1(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormulas: Self = this.set("formulas", js.undefined)
+    def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
     
     @scala.inline
-    def setFormulasLocalVarargs(value: js.Array[js.Any]*): Self = this.set("formulasLocal", js.Array(value :_*))
+    def setFormulasR1C1Varargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasR1C1", js.Array(value :_*))
     
     @scala.inline
-    def setFormulasLocal(value: js.Array[js.Array[_]]): Self = this.set("formulasLocal", value.asInstanceOf[js.Any])
+    def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
     
     @scala.inline
-    def deleteFormulasLocal: Self = this.set("formulasLocal", js.undefined)
+    def setFormulasVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulas", js.Array(value :_*))
     
     @scala.inline
-    def setFormulasR1C1Varargs(value: js.Array[js.Any]*): Self = this.set("formulasR1C1", js.Array(value :_*))
+    def setHasSpill(value: Boolean): Self = StObject.set(x, "hasSpill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulasR1C1(value: js.Array[js.Array[_]]): Self = this.set("formulasR1C1", value.asInstanceOf[js.Any])
+    def setHasSpillUndefined: Self = StObject.set(x, "hasSpill", js.undefined)
     
     @scala.inline
-    def deleteFormulasR1C1: Self = this.set("formulasR1C1", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSpill(value: Boolean): Self = this.set("hasSpill", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHasSpill: Self = this.set("hasSpill", js.undefined)
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHyperlink(value: RangeHyperlink): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setIsEntireColumn(value: Boolean): Self = StObject.set(x, "isEntireColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlink(value: RangeHyperlink): Self = this.set("hyperlink", value.asInstanceOf[js.Any])
+    def setIsEntireColumnUndefined: Self = StObject.set(x, "isEntireColumn", js.undefined)
     
     @scala.inline
-    def deleteHyperlink: Self = this.set("hyperlink", js.undefined)
+    def setIsEntireRow(value: Boolean): Self = StObject.set(x, "isEntireRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEntireColumn(value: Boolean): Self = this.set("isEntireColumn", value.asInstanceOf[js.Any])
+    def setIsEntireRowUndefined: Self = StObject.set(x, "isEntireRow", js.undefined)
     
     @scala.inline
-    def deleteIsEntireColumn: Self = this.set("isEntireColumn", js.undefined)
+    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEntireRow(value: Boolean): Self = this.set("isEntireRow", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteIsEntireRow: Self = this.set("isEntireRow", js.undefined)
+    def setLinkedDataTypeState(value: js.Array[js.Array[LinkedDataTypeState]]): Self = StObject.set(x, "linkedDataTypeState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setLinkedDataTypeStateUndefined: Self = StObject.set(x, "linkedDataTypeState", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setLinkedDataTypeStateVarargs(value: js.Array[LinkedDataTypeState]*): Self = StObject.set(x, "linkedDataTypeState", js.Array(value :_*))
     
     @scala.inline
-    def setLinkedDataTypeStateVarargs(value: js.Array[LinkedDataTypeState]*): Self = this.set("linkedDataTypeState", js.Array(value :_*))
+    def setNumberFormat(value: js.Array[js.Array[_]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedDataTypeState(value: js.Array[js.Array[LinkedDataTypeState]]): Self = this.set("linkedDataTypeState", value.asInstanceOf[js.Any])
+    def setNumberFormatCategories(value: js.Array[js.Array[NumberFormatCategory]]): Self = StObject.set(x, "numberFormatCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinkedDataTypeState: Self = this.set("linkedDataTypeState", js.undefined)
+    def setNumberFormatCategoriesUndefined: Self = StObject.set(x, "numberFormatCategories", js.undefined)
     
     @scala.inline
-    def setNumberFormatVarargs(value: js.Array[js.Any]*): Self = this.set("numberFormat", js.Array(value :_*))
+    def setNumberFormatCategoriesVarargs(value: js.Array[NumberFormatCategory]*): Self = StObject.set(x, "numberFormatCategories", js.Array(value :_*))
     
     @scala.inline
-    def setNumberFormat(value: js.Array[js.Array[_]]): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormatLocal(value: js.Array[js.Array[_]]): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setNumberFormatLocalUndefined: Self = StObject.set(x, "numberFormatLocal", js.undefined)
     
     @scala.inline
-    def setNumberFormatCategoriesVarargs(value: js.Array[NumberFormatCategory]*): Self = this.set("numberFormatCategories", js.Array(value :_*))
+    def setNumberFormatLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "numberFormatLocal", js.Array(value :_*))
     
     @scala.inline
-    def setNumberFormatCategories(value: js.Array[js.Array[NumberFormatCategory]]): Self = this.set("numberFormatCategories", value.asInstanceOf[js.Any])
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
-    def deleteNumberFormatCategories: Self = this.set("numberFormatCategories", js.undefined)
+    def setNumberFormatVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "numberFormat", js.Array(value :_*))
     
     @scala.inline
-    def setNumberFormatLocalVarargs(value: js.Array[js.Any]*): Self = this.set("numberFormatLocal", js.Array(value :_*))
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormatLocal(value: js.Array[js.Array[_]]): Self = this.set("numberFormatLocal", value.asInstanceOf[js.Any])
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def deleteNumberFormatLocal: Self = this.set("numberFormatLocal", js.undefined)
+    def setRowHidden(value: Boolean): Self = StObject.set(x, "rowHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setRowHiddenUndefined: Self = StObject.set(x, "rowHidden", js.undefined)
     
     @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHidden(value: Boolean): Self = this.set("rowHidden", value.asInstanceOf[js.Any])
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def deleteRowHidden: Self = this.set("rowHidden", js.undefined)
+    def setSavedAsArray(value: Boolean): Self = StObject.set(x, "savedAsArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    def setSavedAsArrayUndefined: Self = StObject.set(x, "savedAsArray", js.undefined)
     
     @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavedAsArray(value: Boolean): Self = this.set("savedAsArray", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSavedAsArray: Self = this.set("savedAsArray", js.undefined)
+    def setText(value: js.Array[js.Array[String]]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTextVarargs(value: js.Array[String]*): Self = StObject.set(x, "text", js.Array(value :_*))
     
     @scala.inline
-    def setTextVarargs(value: js.Array[String]*): Self = this.set("text", js.Array(value :_*))
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: js.Array[js.Array[String]]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setValueTypes(value: js.Array[js.Array[RangeValueType]]): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setValueTypesVarargs(value: js.Array[RangeValueType]*): Self = StObject.set(x, "valueTypes", js.Array(value :_*))
     
     @scala.inline
-    def setValueTypesVarargs(value: js.Array[RangeValueType]*): Self = this.set("valueTypes", js.Array(value :_*))
+    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueTypes(value: js.Array[js.Array[RangeValueType]]): Self = this.set("valueTypes", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteValueTypes: Self = this.set("valueTypes", js.undefined)
+    def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
     
     @scala.inline
-    def setValuesVarargs(value: js.Array[js.Any]*): Self = this.set("values", js.Array(value :_*))
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

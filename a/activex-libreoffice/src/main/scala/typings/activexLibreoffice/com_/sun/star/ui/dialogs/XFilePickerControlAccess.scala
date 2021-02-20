@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ui.dialogs
 
 import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,33 +93,21 @@ object XFilePickerControlAccess {
   }
   
   @scala.inline
-  implicit class XFilePickerControlAccessOps[Self <: XFilePickerControlAccess] (val x: Self) extends AnyVal {
+  implicit class XFilePickerControlAccessMutableBuilder[Self <: XFilePickerControlAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableControl(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enableControl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLabel(value: Double => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetValue(value: (Double, Double) => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEnableControl(value: (Double, Boolean) => Unit): Self = this.set("enableControl", js.Any.fromFunction2(value))
+    def setSetLabel(value: (Double, String) => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetLabel(value: Double => String): Self = this.set("getLabel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetValue(value: (Double, Double) => js.Any): Self = this.set("getValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetLabel(value: (Double, String) => Unit): Self = this.set("setLabel", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetValue(value: (Double, Double, js.Any) => Unit): Self = this.set("setValue", js.Any.fromFunction3(value))
+    def setSetValue(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
   }
 }

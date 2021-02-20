@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyDBSnapshotMessage extends js.Object {
+trait ModifyDBSnapshotMessage extends StObject {
   
   /**
     * The identifier of the DB snapshot to modify.
@@ -31,33 +32,21 @@ object ModifyDBSnapshotMessage {
   }
   
   @scala.inline
-  implicit class ModifyDBSnapshotMessageOps[Self <: ModifyDBSnapshotMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyDBSnapshotMessageMutableBuilder[Self <: ModifyDBSnapshotMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBSnapshotIdentifier(value: String): Self = StObject.set(x, "DBSnapshotIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def setDBSnapshotIdentifier(value: String): Self = this.set("DBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
-    
-    @scala.inline
-    def setOptionGroupName(value: String): Self = this.set("OptionGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionGroupName: Self = this.set("OptionGroupName", js.undefined)
+    def setOptionGroupNameUndefined: Self = StObject.set(x, "OptionGroupName", js.undefined)
   }
 }

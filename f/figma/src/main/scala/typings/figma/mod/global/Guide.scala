@@ -2,12 +2,13 @@ package typings.figma.mod.global
 
 import typings.figma.figmaStrings.X
 import typings.figma.figmaStrings.Y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Guide extends js.Object {
+trait Guide extends StObject {
   
   val axis: X | Y = js.native
   
@@ -22,24 +23,12 @@ object Guide {
   }
   
   @scala.inline
-  implicit class GuideOps[Self <: Guide] (val x: Self) extends AnyVal {
+  implicit class GuideMutableBuilder[Self <: Guide] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: X | Y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAxis(value: X | Y): Self = this.set("axis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

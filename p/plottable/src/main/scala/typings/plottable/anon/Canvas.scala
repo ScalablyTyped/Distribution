@@ -2,12 +2,13 @@ package typings.plottable.anon
 
 import typings.plottable.plottableStrings.canvas
 import typings.plottable.plottableStrings.svg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Canvas extends js.Object {
+trait Canvas extends StObject {
   
   var canvas: typings.plottable.plottableStrings.canvas = js.native
   
@@ -22,24 +23,12 @@ object Canvas {
   }
   
   @scala.inline
-  implicit class CanvasOps[Self <: Canvas] (val x: Self) extends AnyVal {
+  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvas(value: canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanvas(value: canvas): Self = this.set("canvas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSvg(value: svg): Self = this.set("svg", value.asInstanceOf[js.Any])
+    def setSvg(value: svg): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SelectionType extends js.Object
+sealed trait SelectionType extends StObject
 /** Specifies the type of a selection. */
 @JSGlobal("Windows.UI.Text.SelectionType")
 @js.native
-object SelectionType extends js.Object {
+object SelectionType extends StObject {
   
   /** An image (see ITextRange.InsertImage ). */
   @js.native

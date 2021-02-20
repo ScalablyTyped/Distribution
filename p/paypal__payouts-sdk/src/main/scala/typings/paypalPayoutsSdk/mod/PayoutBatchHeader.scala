@@ -6,6 +6,7 @@ import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.DENIED
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PENDING
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PROCESSING
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.SUCCESS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,48 +37,36 @@ object PayoutBatchHeader {
   }
   
   @scala.inline
-  implicit class PayoutBatchHeaderOps[Self <: PayoutBatchHeader] (val x: Self) extends AnyVal {
+  implicit class PayoutBatchHeaderMutableBuilder[Self <: PayoutBatchHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFees(value: Currency): Self = StObject.set(x, "fees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Currency): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setFeesUndefined: Self = StObject.set(x, "fees", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setFunding_source(value: BALANCE): Self = StObject.set(x, "funding_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFees(value: Currency): Self = this.set("fees", value.asInstanceOf[js.Any])
+    def setFunding_sourceUndefined: Self = StObject.set(x, "funding_source", js.undefined)
     
     @scala.inline
-    def deleteFees: Self = this.set("fees", js.undefined)
+    def setTime_closed(value: String): Self = StObject.set(x, "time_closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunding_source(value: BALANCE): Self = this.set("funding_source", value.asInstanceOf[js.Any])
+    def setTime_closedUndefined: Self = StObject.set(x, "time_closed", js.undefined)
     
     @scala.inline
-    def deleteFunding_source: Self = this.set("funding_source", js.undefined)
+    def setTime_completed(value: String): Self = StObject.set(x, "time_completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime_closed(value: String): Self = this.set("time_closed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime_closed: Self = this.set("time_closed", js.undefined)
-    
-    @scala.inline
-    def setTime_completed(value: String): Self = this.set("time_completed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime_completed: Self = this.set("time_completed", js.undefined)
+    def setTime_completedUndefined: Self = StObject.set(x, "time_completed", js.undefined)
   }
 }

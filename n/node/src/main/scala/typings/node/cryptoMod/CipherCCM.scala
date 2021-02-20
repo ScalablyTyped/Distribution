@@ -3,6 +3,7 @@ package typings.node.cryptoMod
 import typings.node.Buffer
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.anon.PlaintextLength
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

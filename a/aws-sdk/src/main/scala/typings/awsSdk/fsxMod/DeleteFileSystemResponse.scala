@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteFileSystemResponse extends js.Object {
+trait DeleteFileSystemResponse extends StObject {
   
   /**
     * The ID of the file system being deleted.
@@ -30,42 +31,30 @@ object DeleteFileSystemResponse {
   }
   
   @scala.inline
-  implicit class DeleteFileSystemResponseOps[Self <: DeleteFileSystemResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteFileSystemResponseMutableBuilder[Self <: DeleteFileSystemResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLifecycle(value: FileSystemLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
     @scala.inline
-    def deleteFileSystemId: Self = this.set("FileSystemId", js.undefined)
+    def setLustreResponse(value: DeleteFileSystemLustreResponse): Self = StObject.set(x, "LustreResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycle(value: FileSystemLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    def setLustreResponseUndefined: Self = StObject.set(x, "LustreResponse", js.undefined)
     
     @scala.inline
-    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+    def setWindowsResponse(value: DeleteFileSystemWindowsResponse): Self = StObject.set(x, "WindowsResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLustreResponse(value: DeleteFileSystemLustreResponse): Self = this.set("LustreResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLustreResponse: Self = this.set("LustreResponse", js.undefined)
-    
-    @scala.inline
-    def setWindowsResponse(value: DeleteFileSystemWindowsResponse): Self = this.set("WindowsResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsResponse: Self = this.set("WindowsResponse", js.undefined)
+    def setWindowsResponseUndefined: Self = StObject.set(x, "WindowsResponse", js.undefined)
   }
 }

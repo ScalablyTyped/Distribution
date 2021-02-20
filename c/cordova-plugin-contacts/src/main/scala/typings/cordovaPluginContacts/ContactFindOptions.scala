@@ -1,12 +1,13 @@
 package typings.cordovaPluginContacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Search options to filter navigator.contacts.  */
 @js.native
-trait ContactFindOptions extends js.Object {
+trait ContactFindOptions extends StObject {
   
   /* Contact fields to be returned back. If specified, the resulting Contact object only features values for these fields. */
   var desiredFields: js.UndefOr[js.Array[ContactFieldType]] = js.native
@@ -26,39 +27,27 @@ object ContactFindOptions {
   }
   
   @scala.inline
-  implicit class ContactFindOptionsOps[Self <: ContactFindOptions] (val x: Self) extends AnyVal {
+  implicit class ContactFindOptionsMutableBuilder[Self <: ContactFindOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredFields(value: js.Array[ContactFieldType]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredFieldsUndefined: Self = StObject.set(x, "desiredFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesiredFieldsVarargs(value: ContactFieldType*): Self = StObject.set(x, "desiredFields", js.Array(value :_*))
     
     @scala.inline
-    def setDesiredFieldsVarargs(value: ContactFieldType*): Self = this.set("desiredFields", js.Array(value :_*))
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredFields(value: js.Array[ContactFieldType]): Self = this.set("desiredFields", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteDesiredFields: Self = this.set("desiredFields", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

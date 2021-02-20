@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```
   */
 @js.native
-trait PaymentOptions extends js.Object {
+trait PaymentOptions extends StObject {
   
   /**
     * This value specifies which Google Pay environment to target
@@ -58,36 +59,24 @@ object PaymentOptions {
   }
   
   @scala.inline
-  implicit class PaymentOptionsOps[Self <: PaymentOptions] (val x: Self) extends AnyVal {
+  implicit class PaymentOptionsMutableBuilder[Self <: PaymentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMerchantInfo(value: MerchantInfo): Self = StObject.set(x, "merchantInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: Environment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setMerchantInfoUndefined: Self = StObject.set(x, "merchantInfo", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setPaymentDataCallbacks(value: PaymentDataCallbacks): Self = StObject.set(x, "paymentDataCallbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantInfo(value: MerchantInfo): Self = this.set("merchantInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMerchantInfo: Self = this.set("merchantInfo", js.undefined)
-    
-    @scala.inline
-    def setPaymentDataCallbacks(value: PaymentDataCallbacks): Self = this.set("paymentDataCallbacks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentDataCallbacks: Self = this.set("paymentDataCallbacks", js.undefined)
+    def setPaymentDataCallbacksUndefined: Self = StObject.set(x, "paymentDataCallbacks", js.undefined)
   }
 }

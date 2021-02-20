@@ -1,6 +1,7 @@
 package typings.typescript.mod
 
 import typings.typescript.mod.SyntaxKind.FalseKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,30 +60,18 @@ object ASPxClientTitleIndex {
   }
   
   @scala.inline
-  implicit class ASPxClientTitleIndexOps[Self <: ASPxClientTitleIndex] (val x: Self) extends AnyVal {
+  implicit class ASPxClientTitleIndexMutableBuilder[Self <: ASPxClientTitleIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTitleIndex]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTitleIndex]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientTitleIndex]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTitleIndex]]): Self = this.set("BeginCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTitleIndex]]): Self = this.set("CallbackError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientTitleIndex]]): Self = this.set("EndCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemClick(value: ASPxClientEvent[ASPxClientTitleIndexItemEventHandler[ASPxClientTitleIndex]]): Self = this.set("ItemClick", value.asInstanceOf[js.Any])
+    def setItemClick(value: ASPxClientEvent[ASPxClientTitleIndexItemEventHandler[ASPxClientTitleIndex]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * RevisionSpec holds the desired state of the Revision (from the client).
   */
 @js.native
-trait SchemaRevisionSpec extends js.Object {
+trait SchemaRevisionSpec extends StObject {
   
   /**
     * ConcurrencyModel specifies the desired concurrency model (Single or
@@ -70,60 +71,48 @@ object SchemaRevisionSpec {
   }
   
   @scala.inline
-  implicit class SchemaRevisionSpecOps[Self <: SchemaRevisionSpec] (val x: Self) extends AnyVal {
+  implicit class SchemaRevisionSpecMutableBuilder[Self <: SchemaRevisionSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcurrencyModel(value: String): Self = StObject.set(x, "concurrencyModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcurrencyModelUndefined: Self = StObject.set(x, "concurrencyModel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: SchemaContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrencyModel(value: String): Self = this.set("concurrencyModel", value.asInstanceOf[js.Any])
+    def setContainerConcurrency(value: Double): Self = StObject.set(x, "containerConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConcurrencyModel: Self = this.set("concurrencyModel", js.undefined)
+    def setContainerConcurrencyUndefined: Self = StObject.set(x, "containerConcurrency", js.undefined)
     
     @scala.inline
-    def setContainer(value: SchemaContainer): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerConcurrency(value: Double): Self = this.set("containerConcurrency", value.asInstanceOf[js.Any])
+    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
     @scala.inline
-    def deleteContainerConcurrency: Self = this.set("containerConcurrency", js.undefined)
+    def setServiceAccountName(value: String): Self = StObject.set(x, "serviceAccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneration(value: Double): Self = this.set("generation", value.asInstanceOf[js.Any])
+    def setServiceAccountNameUndefined: Self = StObject.set(x, "serviceAccountName", js.undefined)
     
     @scala.inline
-    def deleteGeneration: Self = this.set("generation", js.undefined)
+    def setServingState(value: String): Self = StObject.set(x, "servingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccountName(value: String): Self = this.set("serviceAccountName", value.asInstanceOf[js.Any])
+    def setServingStateUndefined: Self = StObject.set(x, "servingState", js.undefined)
     
     @scala.inline
-    def deleteServiceAccountName: Self = this.set("serviceAccountName", js.undefined)
+    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServingState(value: String): Self = this.set("servingState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServingState: Self = this.set("servingState", js.undefined)
-    
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = this.set("timeoutSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutSeconds: Self = this.set("timeoutSeconds", js.undefined)
+    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
   }
 }

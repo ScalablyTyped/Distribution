@@ -1,6 +1,7 @@
 package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the deadline is a failed attempt.
   */
 @js.native
-trait SchemaAppEngineHttpRequest extends js.Object {
+trait SchemaAppEngineHttpRequest extends StObject {
   
   /**
     * Task-level setting for App Engine routing.  If set,
@@ -118,48 +119,36 @@ object SchemaAppEngineHttpRequest {
   }
   
   @scala.inline
-  implicit class SchemaAppEngineHttpRequestOps[Self <: SchemaAppEngineHttpRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAppEngineHttpRequestMutableBuilder[Self <: SchemaAppEngineHttpRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppEngineRouting(value: SchemaAppEngineRouting): Self = StObject.set(x, "appEngineRouting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppEngineRoutingUndefined: Self = StObject.set(x, "appEngineRouting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppEngineRouting(value: SchemaAppEngineRouting): Self = this.set("appEngineRouting", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteAppEngineRouting: Self = this.set("appEngineRouting", js.undefined)
+    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    def setRelativeUrl(value: String): Self = StObject.set(x, "relativeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: String): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
-    
-    @scala.inline
-    def setRelativeUrl(value: String): Self = this.set("relativeUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativeUrl: Self = this.set("relativeUrl", js.undefined)
+    def setRelativeUrlUndefined: Self = StObject.set(x, "relativeUrl", js.undefined)
   }
 }

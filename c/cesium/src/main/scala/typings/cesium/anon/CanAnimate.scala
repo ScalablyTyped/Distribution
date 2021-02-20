@@ -3,12 +3,13 @@ package typings.cesium.anon
 import typings.cesium.mod.ClockRange
 import typings.cesium.mod.ClockStep
 import typings.cesium.mod.JulianDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanAnimate extends js.Object {
+trait CanAnimate extends StObject {
   
   var canAnimate: js.UndefOr[Boolean] = js.native
   
@@ -35,66 +36,54 @@ object CanAnimate {
   }
   
   @scala.inline
-  implicit class CanAnimateOps[Self <: CanAnimate] (val x: Self) extends AnyVal {
+  implicit class CanAnimateMutableBuilder[Self <: CanAnimate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanAnimate(value: Boolean): Self = StObject.set(x, "canAnimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanAnimateUndefined: Self = StObject.set(x, "canAnimate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClockRange(value: ClockRange): Self = StObject.set(x, "clockRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanAnimate(value: Boolean): Self = this.set("canAnimate", value.asInstanceOf[js.Any])
+    def setClockRangeUndefined: Self = StObject.set(x, "clockRange", js.undefined)
     
     @scala.inline
-    def deleteCanAnimate: Self = this.set("canAnimate", js.undefined)
+    def setClockStep(value: ClockStep): Self = StObject.set(x, "clockStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockRange(value: ClockRange): Self = this.set("clockRange", value.asInstanceOf[js.Any])
+    def setClockStepUndefined: Self = StObject.set(x, "clockStep", js.undefined)
     
     @scala.inline
-    def deleteClockRange: Self = this.set("clockRange", js.undefined)
+    def setCurrentTime(value: JulianDate): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockStep(value: ClockStep): Self = this.set("clockStep", value.asInstanceOf[js.Any])
+    def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
     
     @scala.inline
-    def deleteClockStep: Self = this.set("clockStep", js.undefined)
+    def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: JulianDate): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
     
     @scala.inline
-    def deleteCurrentTime: Self = this.set("currentTime", js.undefined)
+    def setShouldAnimate(value: Boolean): Self = StObject.set(x, "shouldAnimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplier(value: Double): Self = this.set("multiplier", value.asInstanceOf[js.Any])
+    def setShouldAnimateUndefined: Self = StObject.set(x, "shouldAnimate", js.undefined)
     
     @scala.inline
-    def deleteMultiplier: Self = this.set("multiplier", js.undefined)
+    def setStartTime(value: JulianDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldAnimate(value: Boolean): Self = this.set("shouldAnimate", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteShouldAnimate: Self = this.set("shouldAnimate", js.undefined)
+    def setStopTime(value: JulianDate): Self = StObject.set(x, "stopTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: JulianDate): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setStopTime(value: JulianDate): Self = this.set("stopTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopTime: Self = this.set("stopTime", js.undefined)
+    def setStopTimeUndefined: Self = StObject.set(x, "stopTime", js.undefined)
   }
 }

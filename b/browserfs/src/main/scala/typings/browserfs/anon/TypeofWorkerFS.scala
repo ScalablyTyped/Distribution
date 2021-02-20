@@ -8,6 +8,7 @@ import typings.browserfs.workerFSMod.WorkerFS
 import typings.browserfs.workerFSMod.WorkerFSOptions
 import typings.browserfs.workerFSMod.default
 import typings.std.Worker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

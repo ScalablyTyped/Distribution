@@ -1,11 +1,12 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IValidatorOwner extends js.Object {
+trait IValidatorOwner extends StObject {
   
   def getDataFilteredProperties(): js.Any = js.native
   
@@ -32,33 +33,21 @@ object IValidatorOwner {
   }
   
   @scala.inline
-  implicit class IValidatorOwnerOps[Self <: IValidatorOwner] (val x: Self) extends AnyVal {
+  implicit class IValidatorOwnerMutableBuilder[Self <: IValidatorOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDataFilteredProperties(value: () => js.Any): Self = StObject.set(x, "getDataFilteredProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDataFilteredValues(value: () => js.Any): Self = StObject.set(x, "getDataFilteredValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetValidatorTitle(value: () => String): Self = StObject.set(x, "getValidatorTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDataFilteredProperties(value: () => js.Any): Self = this.set("getDataFilteredProperties", js.Any.fromFunction0(value))
+    def setGetValidators(value: () => js.Array[SurveyValidator]): Self = StObject.set(x, "getValidators", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDataFilteredValues(value: () => js.Any): Self = this.set("getDataFilteredValues", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetValidatorTitle(value: () => String): Self = this.set("getValidatorTitle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetValidators(value: () => js.Array[SurveyValidator]): Self = this.set("getValidators", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValidatedValue(value: js.Any): Self = this.set("validatedValue", value.asInstanceOf[js.Any])
+    def setValidatedValue(value: js.Any): Self = StObject.set(x, "validatedValue", value.asInstanceOf[js.Any])
   }
 }

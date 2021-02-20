@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserObject extends js.Object {
+trait UserObject extends StObject {
   
   @JSName("InfoPath.UserObject_typekey")
   var InfoPathDotUserObject_typekey: UserObject = js.native
@@ -28,27 +29,15 @@ object UserObject {
   }
   
   @scala.inline
-  implicit class UserObjectOps[Self <: UserObject] (val x: Self) extends AnyVal {
+  implicit class UserObjectMutableBuilder[Self <: UserObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfoPathDotUserObject_typekey(value: UserObject): Self = StObject.set(x, "InfoPath.UserObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCurrentUser(value: String => Boolean): Self = StObject.set(x, "IsCurrentUser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfoPathDotUserObject_typekey(value: UserObject): Self = this.set("InfoPath.UserObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsCurrentUser(value: String => Boolean): Self = this.set("IsCurrentUser", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsUserMemberOf(value: String => Boolean): Self = this.set("IsUserMemberOf", js.Any.fromFunction1(value))
+    def setIsUserMemberOf(value: String => Boolean): Self = StObject.set(x, "IsUserMemberOf", js.Any.fromFunction1(value))
   }
 }

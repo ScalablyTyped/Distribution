@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangeOverflow extends js.Object {
+trait RangeOverflow extends StObject {
   
   var rangeOverflow: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object RangeOverflow {
   }
   
   @scala.inline
-  implicit class RangeOverflowOps[Self <: RangeOverflow] (val x: Self) extends AnyVal {
+  implicit class RangeOverflowMutableBuilder[Self <: RangeOverflow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRangeOverflow(value: String): Self = StObject.set(x, "rangeOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangeOverflowUndefined: Self = StObject.set(x, "rangeOverflow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRangeUnderflow(value: String): Self = StObject.set(x, "rangeUnderflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeOverflow(value: String): Self = this.set("rangeOverflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeOverflow: Self = this.set("rangeOverflow", js.undefined)
-    
-    @scala.inline
-    def setRangeUnderflow(value: String): Self = this.set("rangeUnderflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeUnderflow: Self = this.set("rangeUnderflow", js.undefined)
+    def setRangeUnderflowUndefined: Self = StObject.set(x, "rangeUnderflow", js.undefined)
   }
 }

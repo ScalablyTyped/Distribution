@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreemapChartSpec extends js.Object {
+trait TreemapChartSpec extends StObject {
   
   /**
     * The data that determines the background color of each treemap data cell. This field is optional. If not specified, size_data is used to determine background colors. If specified,
@@ -75,96 +76,84 @@ object TreemapChartSpec {
   }
   
   @scala.inline
-  implicit class TreemapChartSpecOps[Self <: TreemapChartSpec] (val x: Self) extends AnyVal {
+  implicit class TreemapChartSpecMutableBuilder[Self <: TreemapChartSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorData(value: ChartData): Self = StObject.set(x, "colorData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorDataUndefined: Self = StObject.set(x, "colorData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorScale(value: TreemapChartColorScale): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorData(value: ChartData): Self = this.set("colorData", value.asInstanceOf[js.Any])
+    def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
     
     @scala.inline
-    def deleteColorData: Self = this.set("colorData", js.undefined)
+    def setHeaderColor(value: Color): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScale(value: TreemapChartColorScale): Self = this.set("colorScale", value.asInstanceOf[js.Any])
+    def setHeaderColorStyle(value: ColorStyle): Self = StObject.set(x, "headerColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorScale: Self = this.set("colorScale", js.undefined)
+    def setHeaderColorStyleUndefined: Self = StObject.set(x, "headerColorStyle", js.undefined)
     
     @scala.inline
-    def setHeaderColor(value: Color): Self = this.set("headerColor", value.asInstanceOf[js.Any])
+    def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
     
     @scala.inline
-    def deleteHeaderColor: Self = this.set("headerColor", js.undefined)
+    def setHideTooltips(value: Boolean): Self = StObject.set(x, "hideTooltips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderColorStyle(value: ColorStyle): Self = this.set("headerColorStyle", value.asInstanceOf[js.Any])
+    def setHideTooltipsUndefined: Self = StObject.set(x, "hideTooltips", js.undefined)
     
     @scala.inline
-    def deleteHeaderColorStyle: Self = this.set("headerColorStyle", js.undefined)
+    def setHintedLevels(value: Double): Self = StObject.set(x, "hintedLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideTooltips(value: Boolean): Self = this.set("hideTooltips", value.asInstanceOf[js.Any])
+    def setHintedLevelsUndefined: Self = StObject.set(x, "hintedLevels", js.undefined)
     
     @scala.inline
-    def deleteHideTooltips: Self = this.set("hideTooltips", js.undefined)
+    def setLabels(value: ChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHintedLevels(value: Double): Self = this.set("hintedLevels", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteHintedLevels: Self = this.set("hintedLevels", js.undefined)
+    def setLevels(value: Double): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: ChartData): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevels(value: Double): Self = this.set("levels", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteLevels: Self = this.set("levels", js.undefined)
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setParentLabels(value: ChartData): Self = StObject.set(x, "parentLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setParentLabelsUndefined: Self = StObject.set(x, "parentLabels", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setSizeData(value: ChartData): Self = StObject.set(x, "sizeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentLabels(value: ChartData): Self = this.set("parentLabels", value.asInstanceOf[js.Any])
+    def setSizeDataUndefined: Self = StObject.set(x, "sizeData", js.undefined)
     
     @scala.inline
-    def deleteParentLabels: Self = this.set("parentLabels", js.undefined)
+    def setTextFormat(value: TextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeData(value: ChartData): Self = this.set("sizeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeData: Self = this.set("sizeData", js.undefined)
-    
-    @scala.inline
-    def setTextFormat(value: TextFormat): Self = this.set("textFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

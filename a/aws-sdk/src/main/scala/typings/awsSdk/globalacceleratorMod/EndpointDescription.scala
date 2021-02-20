@@ -1,11 +1,12 @@
 package typings.awsSdk.globalacceleratorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointDescription extends js.Object {
+trait EndpointDescription extends StObject {
   
   /**
     * Indicates whether client IP address preservation is enabled for an Application Load Balancer endpoint. The value is true or false. The default value is true for new accelerators.  If the value is set to true, the client's IP address is preserved in the X-Forwarded-For request header as traffic travels to applications on the Application Load Balancer endpoint fronted by the accelerator. For more information, see  Viewing Client IP Addresses in AWS Global Accelerator in the AWS Global Accelerator Developer Guide.
@@ -41,48 +42,36 @@ object EndpointDescription {
   }
   
   @scala.inline
-  implicit class EndpointDescriptionOps[Self <: EndpointDescription] (val x: Self) extends AnyVal {
+  implicit class EndpointDescriptionMutableBuilder[Self <: EndpointDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientIPPreservationEnabled(value: GenericBoolean): Self = StObject.set(x, "ClientIPPreservationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIPPreservationEnabledUndefined: Self = StObject.set(x, "ClientIPPreservationEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointId(value: GenericString): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientIPPreservationEnabled(value: GenericBoolean): Self = this.set("ClientIPPreservationEnabled", value.asInstanceOf[js.Any])
+    def setEndpointIdUndefined: Self = StObject.set(x, "EndpointId", js.undefined)
     
     @scala.inline
-    def deleteClientIPPreservationEnabled: Self = this.set("ClientIPPreservationEnabled", js.undefined)
+    def setHealthReason(value: GenericString): Self = StObject.set(x, "HealthReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointId(value: GenericString): Self = this.set("EndpointId", value.asInstanceOf[js.Any])
+    def setHealthReasonUndefined: Self = StObject.set(x, "HealthReason", js.undefined)
     
     @scala.inline
-    def deleteEndpointId: Self = this.set("EndpointId", js.undefined)
+    def setHealthState(value: HealthState): Self = StObject.set(x, "HealthState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthReason(value: GenericString): Self = this.set("HealthReason", value.asInstanceOf[js.Any])
+    def setHealthStateUndefined: Self = StObject.set(x, "HealthState", js.undefined)
     
     @scala.inline
-    def deleteHealthReason: Self = this.set("HealthReason", js.undefined)
+    def setWeight(value: EndpointWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthState(value: HealthState): Self = this.set("HealthState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthState: Self = this.set("HealthState", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: EndpointWeight): Self = this.set("Weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("Weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
   }
 }

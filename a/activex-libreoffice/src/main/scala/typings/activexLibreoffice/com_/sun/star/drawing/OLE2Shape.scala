@@ -17,6 +17,7 @@ import typings.activexLibreoffice.com_.sun.star.frame.XModel
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.style.XStyle
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,30 +104,18 @@ object OLE2Shape {
   }
   
   @scala.inline
-  implicit class OLE2ShapeOps[Self <: OLE2Shape] (val x: Self) extends AnyVal {
+  implicit class OLE2ShapeMutableBuilder[Self <: OLE2Shape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCLSID(value: String): Self = StObject.set(x, "CLSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsInternal(value: Boolean): Self = StObject.set(x, "IsInternal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLSID(value: String): Self = this.set("CLSID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsInternal(value: Boolean): Self = this.set("IsInternal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModel(value: XModel): Self = this.set("Model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPersistName(value: String): Self = this.set("PersistName", value.asInstanceOf[js.Any])
+    def setPersistName(value: String): Self = StObject.set(x, "PersistName", value.asInstanceOf[js.Any])
   }
 }

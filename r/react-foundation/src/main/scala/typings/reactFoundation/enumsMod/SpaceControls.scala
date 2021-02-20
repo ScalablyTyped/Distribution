@@ -1,5 +1,6 @@
 package typings.reactFoundation.enumsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactFoundation.reactFoundationStrings.grow
   - typings.reactFoundation.reactFoundationStrings.shrink
 */
-trait SpaceControls extends js.Object
-@JSImport("react-foundation/enums", "SpaceControls")
-@js.native
-object SpaceControls extends js.Object {
+trait SpaceControls extends StObject
+object SpaceControls {
   
-  var AUTO: SpaceControls = js.native
+  @JSImport("react-foundation/enums", "SpaceControls")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var GROW: SpaceControls = js.native
+  @JSImport("react-foundation/enums", "SpaceControls.AUTO")
+  @js.native
+  def AUTO: SpaceControls = js.native
+  @scala.inline
+  def AUTO_=(x: SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTO")(x.asInstanceOf[js.Any])
   
-  var SHRINK: SpaceControls = js.native
+  @JSImport("react-foundation/enums", "SpaceControls.GROW")
+  @js.native
+  def GROW: SpaceControls = js.native
+  @scala.inline
+  def GROW_=(x: SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROW")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-foundation/enums", "SpaceControls.SHRINK")
+  @js.native
+  def SHRINK: SpaceControls = js.native
+  @scala.inline
+  def SHRINK_=(x: SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHRINK")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.procfsStats.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiskStat extends js.Object {
+trait DiskStat extends StObject {
   
   var device: String = js.native
   
@@ -59,60 +60,48 @@ object DiskStat {
   }
   
   @scala.inline
-  implicit class DiskStatOps[Self <: DiskStat] (val x: Self) extends AnyVal {
+  implicit class DiskStatMutableBuilder[Self <: DiskStat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevice_number(value: String): Self = StObject.set(x, "device_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice_number_minor(value: String): Self = StObject.set(x, "device_number_minor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setIos_pending(value: String): Self = StObject.set(x, "ios_pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice_number(value: String): Self = this.set("device_number", value.asInstanceOf[js.Any])
+    def setMs_io(value: String): Self = StObject.set(x, "ms_io", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice_number_minor(value: String): Self = this.set("device_number_minor", value.asInstanceOf[js.Any])
+    def setMs_reading(value: String): Self = StObject.set(x, "ms_reading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIos_pending(value: String): Self = this.set("ios_pending", value.asInstanceOf[js.Any])
+    def setMs_weighted_io(value: String): Self = StObject.set(x, "ms_weighted_io", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMs_io(value: String): Self = this.set("ms_io", value.asInstanceOf[js.Any])
+    def setMs_writing(value: String): Self = StObject.set(x, "ms_writing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMs_reading(value: String): Self = this.set("ms_reading", value.asInstanceOf[js.Any])
+    def setReads_completed(value: String): Self = StObject.set(x, "reads_completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMs_weighted_io(value: String): Self = this.set("ms_weighted_io", value.asInstanceOf[js.Any])
+    def setReads_merged(value: String): Self = StObject.set(x, "reads_merged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMs_writing(value: String): Self = this.set("ms_writing", value.asInstanceOf[js.Any])
+    def setSectors_read(value: String): Self = StObject.set(x, "sectors_read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReads_completed(value: String): Self = this.set("reads_completed", value.asInstanceOf[js.Any])
+    def setSectors_written(value: String): Self = StObject.set(x, "sectors_written", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReads_merged(value: String): Self = this.set("reads_merged", value.asInstanceOf[js.Any])
+    def setWrites_completed(value: String): Self = StObject.set(x, "writes_completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSectors_read(value: String): Self = this.set("sectors_read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSectors_written(value: String): Self = this.set("sectors_written", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrites_completed(value: String): Self = this.set("writes_completed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrites_merged(value: String): Self = this.set("writes_merged", value.asInstanceOf[js.Any])
+    def setWrites_merged(value: String): Self = StObject.set(x, "writes_merged", value.asInstanceOf[js.Any])
   }
 }

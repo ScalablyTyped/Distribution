@@ -2,12 +2,13 @@ package typings.rsocketTypes.reactiveSocketTypesMod
 
 import typings.rsocketFlowable.mod.Flowable
 import typings.rsocketFlowable.mod.Single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Responder[D, M] extends js.Object {
+trait Responder[D, M] extends StObject {
   
   /**
     * Fire and Forget interaction model of `ReactiveSocket`. The returned
@@ -54,33 +55,21 @@ object Responder {
   }
   
   @scala.inline
-  implicit class ResponderOps[Self <: Responder[_, _], D, M] (val x: Self with (Responder[D, M])) extends AnyVal {
+  implicit class ResponderMutableBuilder[Self <: Responder[_, _], D, M] (val x: Self with (Responder[D, M])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFireAndForget(value: Payload[D, M] => Unit): Self = StObject.set(x, "fireAndForget", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataPush(value: Payload[D, M] => Single[Unit]): Self = StObject.set(x, "metadataPush", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestChannel(value: Flowable[Payload[D, M]] => Flowable[Payload[D, M]]): Self = StObject.set(x, "requestChannel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFireAndForget(value: Payload[D, M] => Unit): Self = this.set("fireAndForget", js.Any.fromFunction1(value))
+    def setRequestResponse(value: Payload[D, M] => Single[Payload[D, M]]): Self = StObject.set(x, "requestResponse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMetadataPush(value: Payload[D, M] => Single[Unit]): Self = this.set("metadataPush", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestChannel(value: Flowable[Payload[D, M]] => Flowable[Payload[D, M]]): Self = this.set("requestChannel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestResponse(value: Payload[D, M] => Single[Payload[D, M]]): Self = this.set("requestResponse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestStream(value: Payload[D, M] => Flowable[Payload[D, M]]): Self = this.set("requestStream", js.Any.fromFunction1(value))
+    def setRequestStream(value: Payload[D, M] => Flowable[Payload[D, M]]): Self = StObject.set(x, "requestStream", js.Any.fromFunction1(value))
   }
 }

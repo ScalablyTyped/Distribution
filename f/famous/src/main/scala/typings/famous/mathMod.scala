@@ -1,21 +1,22 @@
 package typings.famous
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("famous/math", JSImport.Namespace)
-@js.native
-object mathMod extends js.Object {
+object mathMod {
   
+  @JSImport("famous/math", "Mat33")
   @js.native
-  class Mat33 () extends js.Object {
+  class Mat33 () extends StObject {
     
     var values: js.Array[Double] = js.native
   }
   
+  @JSImport("famous/math", "Quaternion")
   @js.native
-  class Quaternion () extends js.Object {
+  class Quaternion () extends StObject {
     
     def fromEuler(x: Double, y: Double, z: Double): Quaternion = js.native
     
@@ -30,8 +31,9 @@ object mathMod extends js.Object {
     var z: Double = js.native
   }
   
+  @JSImport("famous/math", "Vec2")
   @js.native
-  class Vec2 () extends js.Object {
+  class Vec2 () extends StObject {
     def this(x: Double) = this()
     def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
@@ -72,26 +74,40 @@ object mathMod extends js.Object {
     var y: Double = js.native
   }
   /* static members */
-  @js.native
-  object Vec2 extends js.Object {
+  object Vec2 {
     
+    @JSImport("famous/math", "Vec2.add")
+    @js.native
     def add(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = js.native
     
+    @JSImport("famous/math", "Vec2.clone")
+    @js.native
     def clone(v: Vec2): Vec2 = js.native
     
+    @JSImport("famous/math", "Vec2.cross")
+    @js.native
     def cross(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = js.native
     
+    @JSImport("famous/math", "Vec2.dot")
+    @js.native
     def dot(v1: Vec2, v2: Vec2): Double = js.native
     
+    @JSImport("famous/math", "Vec2.normalize")
+    @js.native
     def normalize(v: Vec2, output: Vec2): Vec2 = js.native
     
+    @JSImport("famous/math", "Vec2.scale")
+    @js.native
     def scale(v: Vec2, s: Vec2, output: Vec2): Vec2 = js.native
     
+    @JSImport("famous/math", "Vec2.subtract")
+    @js.native
     def subtract(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = js.native
   }
   
+  @JSImport("famous/math", "Vec3")
   @js.native
-  class Vec3 () extends js.Object {
+  class Vec3 () extends StObject {
     def this(x: Double) = this()
     def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
@@ -154,25 +170,42 @@ object mathMod extends js.Object {
     var z: Double = js.native
   }
   /* static members */
-  @js.native
-  object Vec3 extends js.Object {
+  object Vec3 {
     
+    @JSImport("famous/math", "Vec3.add")
+    @js.native
     def add(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = js.native
     
+    @JSImport("famous/math", "Vec3.applyRotation")
+    @js.native
     def applyRotation(v: Vec3, q: Quaternion, output: Vec3): Vec3 = js.native
     
+    @JSImport("famous/math", "Vec3.clone")
+    @js.native
     def clone(v: Vec3): Vec3 = js.native
     
+    @JSImport("famous/math", "Vec3.cross")
+    @js.native
     def cross(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = js.native
     
+    @JSImport("famous/math", "Vec3.dot")
+    @js.native
     def dot(v1: Vec3, v2: Vec3): Double = js.native
     
+    @JSImport("famous/math", "Vec3.normalize")
+    @js.native
     def normalize(v: Vec3, output: Vec3): Vec3 = js.native
     
+    @JSImport("famous/math", "Vec3.project")
+    @js.native
     def project(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = js.native
     
+    @JSImport("famous/math", "Vec3.scale")
+    @js.native
     def scale(v: Vec3, s: Vec3, output: Vec3): Vec3 = js.native
     
+    @JSImport("famous/math", "Vec3.subtract")
+    @js.native
     def subtract(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = js.native
   }
 }

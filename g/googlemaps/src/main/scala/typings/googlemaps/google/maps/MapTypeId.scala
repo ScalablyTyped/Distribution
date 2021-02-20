@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MapTypeId extends js.Object
+sealed trait MapTypeId extends StObject
 /**
   * Identifiers for common MapTypes. Specify these by value, or by using the
   * constant's name. For example, 'satellite' or
@@ -13,7 +14,7 @@ sealed trait MapTypeId extends js.Object
   */
 @JSGlobal("google.maps.MapTypeId")
 @js.native
-object MapTypeId extends js.Object {
+object MapTypeId extends StObject {
   
   /** This map type displays a transparent layer of major streets on satellite images. */
   @js.native

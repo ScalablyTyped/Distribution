@@ -1,11 +1,12 @@
 package typings.mathjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MathNode extends js.Object {
+trait MathNode extends StObject {
   
   var args: js.UndefOr[js.Array[MathNode]] = js.native
   

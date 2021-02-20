@@ -7,14 +7,14 @@ import typings.awsSdkClientGlacierNode.typesAddTagsToVaultInputMod.AddTagsToVaul
 import typings.awsSdkClientGlacierNode.typesAddTagsToVaultOutputMod.AddTagsToVaultOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/commands/AddTagsToVaultCommand", JSImport.Namespace)
-@js.native
-object addTagsToVaultCommandMod extends js.Object {
+object addTagsToVaultCommandMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/commands/AddTagsToVaultCommand", "AddTagsToVaultCommand")
   @js.native
   class AddTagsToVaultCommand protected () extends Command[
           InputTypesUnion, 

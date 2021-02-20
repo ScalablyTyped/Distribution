@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Target
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetAutoAttachRequest extends js.Object {
+trait SetAutoAttachRequest extends StObject {
   
   /**
     * Whether to auto-attach to related targets.
@@ -34,30 +35,18 @@ object SetAutoAttachRequest {
   }
   
   @scala.inline
-  implicit class SetAutoAttachRequestOps[Self <: SetAutoAttachRequest] (val x: Self) extends AnyVal {
+  implicit class SetAutoAttachRequestMutableBuilder[Self <: SetAutoAttachRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoAttach(value: Boolean): Self = StObject.set(x, "autoAttach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
     
     @scala.inline
-    def setAutoAttach(value: Boolean): Self = this.set("autoAttach", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaitForDebuggerOnStart(value: Boolean): Self = this.set("waitForDebuggerOnStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlatten(value: Boolean): Self = this.set("flatten", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlatten: Self = this.set("flatten", js.undefined)
+    def setWaitForDebuggerOnStart(value: Boolean): Self = StObject.set(x, "waitForDebuggerOnStart", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,11 @@
 package typings.openui5.global.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.m.MessageToast")
-@js.native
-object MessageToast extends js.Object {
+object MessageToast {
   
   /**
     * Creates and displays a simple message toast notification message with the given text, and optionally
@@ -15,6 +14,10 @@ object MessageToast extends js.Object {
     * @param mOptions Object which can contain all other options. Not all entries in this object are
     * required. This property is optional.
     */
+  @JSGlobal("sap.m.MessageToast.show")
+  @js.native
   def show(sMessage: String): Unit = js.native
+  @JSGlobal("sap.m.MessageToast.show")
+  @js.native
   def show(sMessage: String, mOptions: js.Any): Unit = js.native
 }

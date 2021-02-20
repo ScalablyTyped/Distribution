@@ -3,14 +3,14 @@ package typings.plottable
 import typings.plottable.componentMod.Component
 import typings.plottable.formattersMod.Formatter
 import typings.plottable.scalesMod.InterpolatedColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/interpolatedColorLegend", JSImport.Namespace)
-@js.native
-object interpolatedColorLegendMod extends js.Object {
+object interpolatedColorLegendMod {
   
+  @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend")
   @js.native
   class InterpolatedColorLegend protected () extends Component {
     /**
@@ -94,16 +94,29 @@ object interpolatedColorLegendMod extends js.Object {
     def orientation(orientation: String): this.type = js.native
   }
   /* static members */
-  @js.native
-  object InterpolatedColorLegend extends js.Object {
+  object InterpolatedColorLegend {
+    
+    @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The css class applied to the legend labels.
       */
-    var LEGEND_LABEL_CLASS: String = js.native
+    @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend.LEGEND_LABEL_CLASS")
+    @js.native
+    def LEGEND_LABEL_CLASS: String = js.native
+    @scala.inline
+    def LEGEND_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_LABEL_CLASS")(x.asInstanceOf[js.Any])
     
-    var _DEFAULT_NUM_SWATCHES: js.Any = js.native
+    @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend._DEFAULT_NUM_SWATCHES")
+    @js.native
+    def _DEFAULT_NUM_SWATCHES: js.Any = js.native
+    @scala.inline
+    def _DEFAULT_NUM_SWATCHES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
     
-    /* private */ def _ensureOrientation(orientation: js.Any): js.Any = js.native
+    @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend._ensureOrientation")
+    @js.native
+    def _ensureOrientation(orientation: js.Any): js.Any = js.native
   }
 }

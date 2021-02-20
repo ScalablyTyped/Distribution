@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewportOptions extends js.Object {
+trait ViewportOptions extends StObject {
   
   var delay: js.UndefOr[Double] = js.native
   
@@ -24,45 +25,33 @@ object ViewportOptions {
   }
   
   @scala.inline
-  implicit class ViewportOptionsOps[Self <: ViewportOptions] (val x: Self) extends AnyVal {
+  implicit class ViewportOptionsMutableBuilder[Self <: ViewportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableAnimation(value: Boolean): Self = StObject.set(x, "enableAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setEnableAnimationUndefined: Self = StObject.set(x, "enableAnimation", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setMargins(value: js.Array[Double]): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAnimation(value: Boolean): Self = this.set("enableAnimation", value.asInstanceOf[js.Any])
+    def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
     
     @scala.inline
-    def deleteEnableAnimation: Self = this.set("enableAnimation", js.undefined)
+    def setMarginsVarargs(value: Double*): Self = StObject.set(x, "margins", js.Array(value :_*))
     
     @scala.inline
-    def setMarginsVarargs(value: Double*): Self = this.set("margins", js.Array(value :_*))
+    def setZoomFactor(value: Double): Self = StObject.set(x, "zoomFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargins(value: js.Array[Double]): Self = this.set("margins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMargins: Self = this.set("margins", js.undefined)
-    
-    @scala.inline
-    def setZoomFactor(value: Double): Self = this.set("zoomFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomFactor: Self = this.set("zoomFactor", js.undefined)
+    def setZoomFactorUndefined: Self = StObject.set(x, "zoomFactor", js.undefined)
   }
 }

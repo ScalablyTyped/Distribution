@@ -1,14 +1,14 @@
 package typings.agGrid
 
 import typings.agGrid.iRowNodeStageMod.IRowNodeStage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/clientSide/flattenStage", JSImport.Namespace)
-@js.native
-object flattenStageMod extends js.Object {
+object flattenStageMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/clientSide/flattenStage", "FlattenStage")
   @js.native
   class FlattenStage () extends IRowNodeStage {
     

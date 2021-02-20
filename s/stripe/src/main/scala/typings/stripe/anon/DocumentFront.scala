@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentFront extends js.Object {
+trait DocumentFront extends StObject {
   
   /**
     * An identifying document, either a passport or local ID card.
@@ -21,21 +22,9 @@ object DocumentFront {
   }
   
   @scala.inline
-  implicit class DocumentFrontOps[Self <: DocumentFront] (val x: Self) extends AnyVal {
+  implicit class DocumentFrontMutableBuilder[Self <: DocumentFront] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocument(value: Front): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setDocument(value: Front): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }
 }

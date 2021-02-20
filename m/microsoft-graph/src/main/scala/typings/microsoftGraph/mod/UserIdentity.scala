@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserIdentity extends js.Object {
+trait UserIdentity extends StObject {
   
   // The identity's display name. Note that this may not always be available or up-to-date.
   var displayName: js.UndefOr[NullableOption[String]] = js.native
@@ -28,54 +29,42 @@ object UserIdentity {
   }
   
   @scala.inline
-  implicit class UserIdentityOps[Self <: UserIdentity] (val x: Self) extends AnyVal {
+  implicit class UserIdentityMutableBuilder[Self <: UserIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: NullableOption[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIpAddress(value: NullableOption[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIpAddressNull: Self = StObject.set(x, "ipAddress", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
-    def setIpAddress(value: NullableOption[String]): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
     @scala.inline
-    def setIpAddressNull: Self = this.set("ipAddress", null)
-    
-    @scala.inline
-    def setUserPrincipalName(value: NullableOption[String]): Self = this.set("userPrincipalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPrincipalName: Self = this.set("userPrincipalName", js.undefined)
-    
-    @scala.inline
-    def setUserPrincipalNameNull: Self = this.set("userPrincipalName", null)
+    def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
   }
 }

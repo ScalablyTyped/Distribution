@@ -1,11 +1,12 @@
 package typings.autobahn.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInvocation extends js.Object {
+trait IInvocation extends StObject {
   
   var caller: js.UndefOr[Double] = js.native
   
@@ -22,33 +23,21 @@ object IInvocation {
   }
   
   @scala.inline
-  implicit class IInvocationOps[Self <: IInvocation] (val x: Self) extends AnyVal {
+  implicit class IInvocationMutableBuilder[Self <: IInvocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaller(value: Double): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcedure(value: String): Self = this.set("procedure", value.asInstanceOf[js.Any])
+    def setProgress(value: (/* args */ js.Array[_], /* kwargs */ js.Any) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCaller(value: Double): Self = this.set("caller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaller: Self = this.set("caller", js.undefined)
-    
-    @scala.inline
-    def setProgress(value: (/* args */ js.Array[_], /* kwargs */ js.Any) => Unit): Self = this.set("progress", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

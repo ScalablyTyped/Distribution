@@ -6,14 +6,29 @@ import typings.reduxOrm.databaseMod.DatabaseCreator
 import typings.reduxOrm.databaseMod.SchemaSpec
 import typings.reduxOrm.sessionMod.OrmSession
 import typings.std.Extract
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-orm/ORM", JSImport.Namespace)
-@js.native
-object ormMod extends js.Object {
+object ormMod {
   
+  @JSImport("redux-orm/ORM", JSImport.Default)
+  @js.native
+  /**
+    * Creates a new ORM instance.
+    */
+  class default[I /* <: IndexedModelClasses[
+    _, 
+    Extract[
+      /* keyof any */ String, 
+      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
+    ]
+  ] */, ModelNames /* <: /* keyof I */ String */] () extends ORM[I, ModelNames] {
+    def this(opts: ORMOpts) = this()
+  }
+  
+  @JSImport("redux-orm/ORM", "ORM")
   @js.native
   /**
     * Creates a new ORM instance.
@@ -24,7 +39,7 @@ object ormMod extends js.Object {
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
     ]
-  ] */, ModelNames /* <: /* keyof I */ String */] () extends js.Object {
+  ] */, ModelNames /* <: /* keyof I */ String */] () extends StObject {
     def this(opts: ORMOpts) = this()
     
     /**
@@ -100,8 +115,14 @@ object ormMod extends js.Object {
     def session(state: OrmState[I]): OrmSession[I] = js.native
   }
   
+  type IndexedModelClasses[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ k in keyof T ]: new (): redux-orm.redux-orm/Model.AnyModel}
+    */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses with TopLevel[js.Any] */, K /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ k in K ]: T[K]}
+    */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses with TopLevel[T]
+  
   @js.native
-  trait ORMOpts extends js.Object {
+  trait ORMOpts extends StObject {
     
     def createDatabase[I /* <: IndexedModelClasses[
         _, 
@@ -118,26 +139,6 @@ object ormMod extends js.Object {
     @JSName("createDatabase")
     var createDatabase_Original: DatabaseCreator = js.native
   }
-  
-  @js.native
-  /**
-    * Creates a new ORM instance.
-    */
-  class default[I /* <: IndexedModelClasses[
-    _, 
-    Extract[
-      /* keyof any */ String, 
-      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
-    ]
-  ] */, ModelNames /* <: /* keyof I */ String */] () extends ORM[I, ModelNames] {
-    def this(opts: ORMOpts) = this()
-  }
-  
-  type IndexedModelClasses[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof T ]: new (): redux-orm.redux-orm/Model.AnyModel}
-    */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses with TopLevel[js.Any] */, K /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in K ]: T[K]}
-    */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses with TopLevel[T]
   
   type OrmState[MClassMap /* <: IndexedModelClasses[
     _, 

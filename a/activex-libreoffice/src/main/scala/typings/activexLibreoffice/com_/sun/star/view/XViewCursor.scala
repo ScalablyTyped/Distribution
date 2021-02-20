@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.view
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,30 +65,18 @@ object XViewCursor {
   }
   
   @scala.inline
-  implicit class XViewCursorOps[Self <: XViewCursor] (val x: Self) extends AnyVal {
+  implicit class XViewCursorMutableBuilder[Self <: XViewCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoDown(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goDown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGoDown(value: (Double, Boolean) => Boolean): Self = this.set("goDown", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGoLeft(value: (Double, Boolean) => Boolean): Self = this.set("goLeft", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGoRight(value: (Double, Boolean) => Boolean): Self = this.set("goRight", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGoUp(value: (Double, Boolean) => Boolean): Self = this.set("goUp", js.Any.fromFunction2(value))
+    def setGoUp(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goUp", js.Any.fromFunction2(value))
   }
 }

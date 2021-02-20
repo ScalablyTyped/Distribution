@@ -1,11 +1,12 @@
 package typings.angularCompiler.astMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateBindingIdentifier extends js.Object {
+trait TemplateBindingIdentifier extends StObject {
   
   var source: String = js.native
   
@@ -20,24 +21,12 @@ object TemplateBindingIdentifier {
   }
   
   @scala.inline
-  implicit class TemplateBindingIdentifierOps[Self <: TemplateBindingIdentifier] (val x: Self) extends AnyVal {
+  implicit class TemplateBindingIdentifierMutableBuilder[Self <: TemplateBindingIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpan(value: AbsoluteSourceSpan): Self = this.set("span", value.asInstanceOf[js.Any])
+    def setSpan(value: AbsoluteSourceSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.transferMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribedSecurityPolicy extends js.Object {
+trait DescribedSecurityPolicy extends StObject {
   
   /**
     * Specifies whether this policy enables Federal Information Processing Standards (FIPS).
@@ -46,63 +47,51 @@ object DescribedSecurityPolicy {
   }
   
   @scala.inline
-  implicit class DescribedSecurityPolicyOps[Self <: DescribedSecurityPolicy] (val x: Self) extends AnyVal {
+  implicit class DescribedSecurityPolicyMutableBuilder[Self <: DescribedSecurityPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFips(value: Fips): Self = StObject.set(x, "Fips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFipsUndefined: Self = StObject.set(x, "Fips", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityPolicyName(value: SecurityPolicyName): Self = StObject.set(x, "SecurityPolicyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityPolicyName(value: SecurityPolicyName): Self = this.set("SecurityPolicyName", value.asInstanceOf[js.Any])
+    def setSshCiphers(value: SecurityPolicyOptions): Self = StObject.set(x, "SshCiphers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFips(value: Fips): Self = this.set("Fips", value.asInstanceOf[js.Any])
+    def setSshCiphersUndefined: Self = StObject.set(x, "SshCiphers", js.undefined)
     
     @scala.inline
-    def deleteFips: Self = this.set("Fips", js.undefined)
+    def setSshCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshCiphers", js.Array(value :_*))
     
     @scala.inline
-    def setSshCiphersVarargs(value: SecurityPolicyOption*): Self = this.set("SshCiphers", js.Array(value :_*))
+    def setSshKexs(value: SecurityPolicyOptions): Self = StObject.set(x, "SshKexs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshCiphers(value: SecurityPolicyOptions): Self = this.set("SshCiphers", value.asInstanceOf[js.Any])
+    def setSshKexsUndefined: Self = StObject.set(x, "SshKexs", js.undefined)
     
     @scala.inline
-    def deleteSshCiphers: Self = this.set("SshCiphers", js.undefined)
+    def setSshKexsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshKexs", js.Array(value :_*))
     
     @scala.inline
-    def setSshKexsVarargs(value: SecurityPolicyOption*): Self = this.set("SshKexs", js.Array(value :_*))
+    def setSshMacs(value: SecurityPolicyOptions): Self = StObject.set(x, "SshMacs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshKexs(value: SecurityPolicyOptions): Self = this.set("SshKexs", value.asInstanceOf[js.Any])
+    def setSshMacsUndefined: Self = StObject.set(x, "SshMacs", js.undefined)
     
     @scala.inline
-    def deleteSshKexs: Self = this.set("SshKexs", js.undefined)
+    def setSshMacsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshMacs", js.Array(value :_*))
     
     @scala.inline
-    def setSshMacsVarargs(value: SecurityPolicyOption*): Self = this.set("SshMacs", js.Array(value :_*))
+    def setTlsCiphers(value: SecurityPolicyOptions): Self = StObject.set(x, "TlsCiphers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshMacs(value: SecurityPolicyOptions): Self = this.set("SshMacs", value.asInstanceOf[js.Any])
+    def setTlsCiphersUndefined: Self = StObject.set(x, "TlsCiphers", js.undefined)
     
     @scala.inline
-    def deleteSshMacs: Self = this.set("SshMacs", js.undefined)
-    
-    @scala.inline
-    def setTlsCiphersVarargs(value: SecurityPolicyOption*): Self = this.set("TlsCiphers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTlsCiphers(value: SecurityPolicyOptions): Self = this.set("TlsCiphers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTlsCiphers: Self = this.set("TlsCiphers", js.undefined)
+    def setTlsCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "TlsCiphers", js.Array(value :_*))
   }
 }

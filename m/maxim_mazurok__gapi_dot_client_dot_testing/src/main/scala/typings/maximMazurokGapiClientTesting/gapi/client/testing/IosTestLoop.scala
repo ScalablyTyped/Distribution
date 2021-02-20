@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosTestLoop extends js.Object {
+trait IosTestLoop extends StObject {
   
   /** Output only. The bundle id for the application under test. */
   var appBundleId: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object IosTestLoop {
   }
   
   @scala.inline
-  implicit class IosTestLoopOps[Self <: IosTestLoop] (val x: Self) extends AnyVal {
+  implicit class IosTestLoopMutableBuilder[Self <: IosTestLoop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppBundleIdUndefined: Self = StObject.set(x, "appBundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppIpa(value: FileReference): Self = StObject.set(x, "appIpa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppBundleId(value: String): Self = this.set("appBundleId", value.asInstanceOf[js.Any])
+    def setAppIpaUndefined: Self = StObject.set(x, "appIpa", js.undefined)
     
     @scala.inline
-    def deleteAppBundleId: Self = this.set("appBundleId", js.undefined)
+    def setScenarios(value: js.Array[Double]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppIpa(value: FileReference): Self = this.set("appIpa", value.asInstanceOf[js.Any])
+    def setScenariosUndefined: Self = StObject.set(x, "scenarios", js.undefined)
     
     @scala.inline
-    def deleteAppIpa: Self = this.set("appIpa", js.undefined)
-    
-    @scala.inline
-    def setScenariosVarargs(value: Double*): Self = this.set("scenarios", js.Array(value :_*))
-    
-    @scala.inline
-    def setScenarios(value: js.Array[Double]): Self = this.set("scenarios", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScenarios: Self = this.set("scenarios", js.undefined)
+    def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrt.Windows.UI.Notifications
 
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITileNotificationFactory extends js.Object {
+trait ITileNotificationFactory extends StObject {
   
   def createTileNotification(content: XmlDocument): TileNotification = js.native
 }
@@ -19,21 +20,9 @@ object ITileNotificationFactory {
   }
   
   @scala.inline
-  implicit class ITileNotificationFactoryOps[Self <: ITileNotificationFactory] (val x: Self) extends AnyVal {
+  implicit class ITileNotificationFactoryMutableBuilder[Self <: ITileNotificationFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateTileNotification(value: XmlDocument => TileNotification): Self = this.set("createTileNotification", js.Any.fromFunction1(value))
+    def setCreateTileNotification(value: XmlDocument => TileNotification): Self = StObject.set(x, "createTileNotification", js.Any.fromFunction1(value))
   }
 }

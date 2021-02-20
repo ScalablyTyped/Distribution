@@ -1,11 +1,12 @@
 package typings.reactVirtualized.esGridMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverscanIndicesGetterParams extends js.Object {
+trait OverscanIndicesGetterParams extends StObject {
   
   var cellCount: Double = js.native
   
@@ -34,39 +35,27 @@ object OverscanIndicesGetterParams {
   }
   
   @scala.inline
-  implicit class OverscanIndicesGetterParamsOps[Self <: OverscanIndicesGetterParams] (val x: Self) extends AnyVal {
+  implicit class OverscanIndicesGetterParamsMutableBuilder[Self <: OverscanIndicesGetterParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirection(value: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setCellCount(value: Double): Self = this.set("cellCount", value.asInstanceOf[js.Any])
+    def setOverscanCellsCount(value: Double): Self = StObject.set(x, "overscanCellsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanCellsCount(value: Double): Self = this.set("overscanCellsCount", value.asInstanceOf[js.Any])
+    def setScrollDirection(value: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollDirection(value: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL): Self = this.set("scrollDirection", value.asInstanceOf[js.Any])
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopIndex(value: Double): Self = this.set("stopIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDirection(value: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setStopIndex(value: Double): Self = StObject.set(x, "stopIndex", value.asInstanceOf[js.Any])
   }
 }

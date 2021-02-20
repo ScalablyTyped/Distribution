@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.activexExcel.activexExcelNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UniqueValues extends js.Object {
+trait UniqueValues extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   

@@ -1,12 +1,13 @@
 package typings.postmark.anon
 
 import typings.postmark.messageSupportingTypesMod.LinkClickLocation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClickLocation extends js.Object {
+trait ClickLocation extends StObject {
   
   var ClickLocation: LinkClickLocation = js.native
   
@@ -23,27 +24,15 @@ object ClickLocation {
   }
   
   @scala.inline
-  implicit class ClickLocationOps[Self <: ClickLocation] (val x: Self) extends AnyVal {
+  implicit class ClickLocationMutableBuilder[Self <: ClickLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickLocation(value: LinkClickLocation): Self = StObject.set(x, "ClickLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLink(value: String): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClickLocation(value: LinkClickLocation): Self = this.set("ClickLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLink(value: String): Self = this.set("Link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummary(value: String): Self = this.set("Summary", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
   }
 }

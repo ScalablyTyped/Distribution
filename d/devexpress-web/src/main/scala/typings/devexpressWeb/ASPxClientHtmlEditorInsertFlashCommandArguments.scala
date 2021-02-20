@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,33 +57,21 @@ object ASPxClientHtmlEditorInsertFlashCommandArguments {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorInsertFlashCommandArgumentsOps[Self <: ASPxClientHtmlEditorInsertFlashCommandArguments] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorInsertFlashCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorInsertFlashCommandArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableFlashMenu(value: Boolean): Self = StObject.set(x, "enableFlashMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFullscreen(value: Boolean): Self = this.set("allowFullscreen", value.asInstanceOf[js.Any])
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnableFlashMenu(value: Boolean): Self = this.set("enableFlashMenu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuality(value: String): Self = this.set("quality", value.asInstanceOf[js.Any])
+    def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
   }
 }

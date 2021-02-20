@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeConfigurationOption extends js.Object {
+trait NodeConfigurationOption extends StObject {
   
   /**
     * The estimated disk utilizaton percentage.
@@ -36,42 +37,30 @@ object NodeConfigurationOption {
   }
   
   @scala.inline
-  implicit class NodeConfigurationOptionOps[Self <: NodeConfigurationOption] (val x: Self) extends AnyVal {
+  implicit class NodeConfigurationOptionMutableBuilder[Self <: NodeConfigurationOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEstimatedDiskUtilizationPercent(value: DoubleOptional): Self = StObject.set(x, "EstimatedDiskUtilizationPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedDiskUtilizationPercentUndefined: Self = StObject.set(x, "EstimatedDiskUtilizationPercent", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: Mode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedDiskUtilizationPercent(value: DoubleOptional): Self = this.set("EstimatedDiskUtilizationPercent", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
     @scala.inline
-    def deleteEstimatedDiskUtilizationPercent: Self = this.set("EstimatedDiskUtilizationPercent", js.undefined)
+    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: Mode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("Mode", js.undefined)
+    def setNumberOfNodes(value: Integer): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: String): Self = this.set("NodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeType: Self = this.set("NodeType", js.undefined)
-    
-    @scala.inline
-    def setNumberOfNodes(value: Integer): Self = this.set("NumberOfNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfNodes: Self = this.set("NumberOfNodes", js.undefined)
+    def setNumberOfNodesUndefined: Self = StObject.set(x, "NumberOfNodes", js.undefined)
   }
 }

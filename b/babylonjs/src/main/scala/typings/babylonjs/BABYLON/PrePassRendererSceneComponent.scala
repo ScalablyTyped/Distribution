@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,33 +38,21 @@ object PrePassRendererSceneComponent {
   }
   
   @scala.inline
-  implicit class PrePassRendererSceneComponentOps[Self <: PrePassRendererSceneComponent] (val x: Self) extends AnyVal {
+  implicit class PrePassRendererSceneComponentMutableBuilder[Self <: PrePassRendererSceneComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_afterCameraDraw(value: js.Any): Self = StObject.set(x, "_afterCameraDraw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_afterRenderingMeshStage(value: js.Any): Self = StObject.set(x, "_afterRenderingMeshStage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_beforeCameraDraw(value: js.Any): Self = StObject.set(x, "_beforeCameraDraw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_afterCameraDraw(value: js.Any): Self = this.set("_afterCameraDraw", value.asInstanceOf[js.Any])
+    def set_beforeClearStage(value: js.Any): Self = StObject.set(x, "_beforeClearStage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_afterRenderingMeshStage(value: js.Any): Self = this.set("_afterRenderingMeshStage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_beforeCameraDraw(value: js.Any): Self = this.set("_beforeCameraDraw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_beforeClearStage(value: js.Any): Self = this.set("_beforeClearStage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_beforeRenderingMeshStage(value: js.Any): Self = this.set("_beforeRenderingMeshStage", value.asInstanceOf[js.Any])
+    def set_beforeRenderingMeshStage(value: js.Any): Self = StObject.set(x, "_beforeRenderingMeshStage", value.asInstanceOf[js.Any])
   }
 }

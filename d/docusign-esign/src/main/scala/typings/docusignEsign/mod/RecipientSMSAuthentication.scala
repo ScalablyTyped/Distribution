@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientSMSAuthentication extends js.Object {
+trait RecipientSMSAuthentication extends StObject {
   
   /**
     * An array containing a list of phone numbers that the recipient can use for SMS text authentication.
@@ -26,33 +27,21 @@ object RecipientSMSAuthentication {
   }
   
   @scala.inline
-  implicit class RecipientSMSAuthenticationOps[Self <: RecipientSMSAuthentication] (val x: Self) extends AnyVal {
+  implicit class RecipientSMSAuthenticationMutableBuilder[Self <: RecipientSMSAuthentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSenderProvidedNumbers(value: js.Array[String]): Self = StObject.set(x, "senderProvidedNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSenderProvidedNumbersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "senderProvidedNumbersMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSenderProvidedNumbersMetadataUndefined: Self = StObject.set(x, "senderProvidedNumbersMetadata", js.undefined)
     
     @scala.inline
-    def setSenderProvidedNumbersVarargs(value: String*): Self = this.set("senderProvidedNumbers", js.Array(value :_*))
+    def setSenderProvidedNumbersUndefined: Self = StObject.set(x, "senderProvidedNumbers", js.undefined)
     
     @scala.inline
-    def setSenderProvidedNumbers(value: js.Array[String]): Self = this.set("senderProvidedNumbers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSenderProvidedNumbers: Self = this.set("senderProvidedNumbers", js.undefined)
-    
-    @scala.inline
-    def setSenderProvidedNumbersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("senderProvidedNumbersMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSenderProvidedNumbersMetadata: Self = this.set("senderProvidedNumbersMetadata", js.undefined)
+    def setSenderProvidedNumbersVarargs(value: String*): Self = StObject.set(x, "senderProvidedNumbers", js.Array(value :_*))
   }
 }

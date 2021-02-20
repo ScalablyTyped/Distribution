@@ -2,13 +2,12 @@ package typings.syntaxError
 
 import typings.acorn.mod.Options
 import typings.syntaxError.anon.SyntaxErrorlinenumbercolu
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("syntax-error", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Check the source code string 'src' for syntax errors. Optionally you can specify a filename
@@ -18,8 +17,16 @@ object mod extends js.Object {
     * Options will be passed through to acorn-node. acorn-node defaults to options
     * that match the most recent Node versions.
     */
+  @JSImport("syntax-error", JSImport.Namespace)
+  @js.native
   def apply(src: js.Any): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
+  @JSImport("syntax-error", JSImport.Namespace)
+  @js.native
   def apply(src: js.Any, file: js.UndefOr[scala.Nothing], opts: Options): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
+  @JSImport("syntax-error", JSImport.Namespace)
+  @js.native
   def apply(src: js.Any, file: String): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
+  @JSImport("syntax-error", JSImport.Namespace)
+  @js.native
   def apply(src: js.Any, file: String, opts: Options): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
 }

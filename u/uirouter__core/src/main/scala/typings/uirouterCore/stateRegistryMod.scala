@@ -10,16 +10,16 @@ import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.stateQueueManagerMod.StateQueueManager
 import typings.uirouterCore.uirouterCoreStrings.deregistered
 import typings.uirouterCore.uirouterCoreStrings.registered
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/state/stateRegistry", JSImport.Namespace)
-@js.native
-object stateRegistryMod extends js.Object {
+object stateRegistryMod {
   
+  @JSImport("@uirouter/core/lib/state/stateRegistry", "StateRegistry")
   @js.native
-  class StateRegistry protected () extends js.Object {
+  class StateRegistry protected () extends StObject {
     /** @internal */
     def this(router: UIRouter) = this()
     

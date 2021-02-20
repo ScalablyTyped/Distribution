@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
   */
 @js.native
-trait PlusVideoVideoPlayerStyles extends js.Object {
+trait PlusVideoVideoPlayerStyles extends StObject {
   
   /**
     * 是否自动播放
@@ -230,159 +231,147 @@ object PlusVideoVideoPlayerStyles {
   }
   
   @scala.inline
-  implicit class PlusVideoVideoPlayerStylesOps[Self <: PlusVideoVideoPlayerStyles] (val x: Self) extends AnyVal {
+  implicit class PlusVideoVideoPlayerStylesMutableBuilder[Self <: PlusVideoVideoPlayerStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
     @scala.inline
-    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    def `setDanmu-btn`(value: Boolean): Self = StObject.set(x, "danmu-btn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    def `setDanmu-btnUndefined`: Self = StObject.set(x, "danmu-btn", js.undefined)
     
     @scala.inline
-    def deleteControls: Self = this.set("controls", js.undefined)
+    def `setDanmu-list`(value: js.Array[_]): Self = StObject.set(x, "danmu-list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDanmu-btn`(value: Boolean): Self = this.set("danmu-btn", value.asInstanceOf[js.Any])
+    def `setDanmu-listUndefined`: Self = StObject.set(x, "danmu-list", js.undefined)
     
     @scala.inline
-    def `deleteDanmu-btn`: Self = this.set("danmu-btn", js.undefined)
+    def `setDanmu-listVarargs`(value: js.Any*): Self = StObject.set(x, "danmu-list", js.Array(value :_*))
     
     @scala.inline
-    def `setDanmu-listVarargs`(value: js.Any*): Self = this.set("danmu-list", js.Array(value :_*))
+    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDanmu-list`(value: js.Array[_]): Self = this.set("danmu-list", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def `deleteDanmu-list`: Self = this.set("danmu-list", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def `setEnable-danmu`(value: Boolean): Self = StObject.set(x, "enable-danmu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def `setEnable-danmuUndefined`: Self = StObject.set(x, "enable-danmu", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def `setEnable-progress-gesture`(value: Boolean): Self = StObject.set(x, "enable-progress-gesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setEnable-danmu`(value: Boolean): Self = this.set("enable-danmu", value.asInstanceOf[js.Any])
+    def `setEnable-progress-gestureUndefined`: Self = StObject.set(x, "enable-progress-gesture", js.undefined)
     
     @scala.inline
-    def `deleteEnable-danmu`: Self = this.set("enable-danmu", js.undefined)
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setEnable-progress-gesture`(value: Boolean): Self = this.set("enable-progress-gesture", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def `deleteEnable-progress-gesture`: Self = this.set("enable-progress-gesture", js.undefined)
+    def `setInitial-time`(value: Double): Self = StObject.set(x, "initial-time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def `setInitial-timeUndefined`: Self = StObject.set(x, "initial-time", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInitial-time`(value: Double): Self = this.set("initial-time", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def `deleteInitial-time`: Self = this.set("initial-time", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setObjectFit(value: String): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
     @scala.inline
-    def deleteMuted: Self = this.set("muted", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectFit(value: String): Self = this.set("objectFit", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteObjectFit: Self = this.set("objectFit", js.undefined)
+    def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def `setShow-center-play-btn`(value: Boolean): Self = StObject.set(x, "show-center-play-btn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoster(value: String): Self = this.set("poster", value.asInstanceOf[js.Any])
+    def `setShow-center-play-btnUndefined`: Self = StObject.set(x, "show-center-play-btn", js.undefined)
     
     @scala.inline
-    def deletePoster: Self = this.set("poster", js.undefined)
+    def `setShow-fullscreen-btn`(value: Boolean): Self = StObject.set(x, "show-fullscreen-btn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setShow-center-play-btn`(value: Boolean): Self = this.set("show-center-play-btn", value.asInstanceOf[js.Any])
+    def `setShow-fullscreen-btnUndefined`: Self = StObject.set(x, "show-fullscreen-btn", js.undefined)
     
     @scala.inline
-    def `deleteShow-center-play-btn`: Self = this.set("show-center-play-btn", js.undefined)
+    def `setShow-play-btn`(value: Boolean): Self = StObject.set(x, "show-play-btn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setShow-fullscreen-btn`(value: Boolean): Self = this.set("show-fullscreen-btn", value.asInstanceOf[js.Any])
+    def `setShow-play-btnUndefined`: Self = StObject.set(x, "show-play-btn", js.undefined)
     
     @scala.inline
-    def `deleteShow-fullscreen-btn`: Self = this.set("show-fullscreen-btn", js.undefined)
+    def `setShow-progress`(value: Boolean): Self = StObject.set(x, "show-progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setShow-play-btn`(value: Boolean): Self = this.set("show-play-btn", value.asInstanceOf[js.Any])
+    def `setShow-progressUndefined`: Self = StObject.set(x, "show-progress", js.undefined)
     
     @scala.inline
-    def `deleteShow-play-btn`: Self = this.set("show-play-btn", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setShow-progress`(value: Boolean): Self = this.set("show-progress", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def `deleteShow-progress`: Self = this.set("show-progress", js.undefined)
+    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: String): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

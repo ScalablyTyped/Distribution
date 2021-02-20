@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelingJobSummary extends js.Object {
+trait LabelingJobSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Lambda function used to consolidate the annotations from individual workers into a label for a data object. For more information, see Annotation Consolidation.
@@ -85,66 +86,54 @@ object LabelingJobSummary {
   }
   
   @scala.inline
-  implicit class LabelingJobSummaryOps[Self <: LabelingJobSummary] (val x: Self) extends AnyVal {
+  implicit class LabelingJobSummaryMutableBuilder[Self <: LabelingJobSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationConsolidationLambdaArn(value: LambdaFunctionArn): Self = StObject.set(x, "AnnotationConsolidationLambdaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationConsolidationLambdaArnUndefined: Self = StObject.set(x, "AnnotationConsolidationLambdaArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCounters(value: LabelCounters): Self = this.set("LabelCounters", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def setLabelingJobArn(value: LabelingJobArn): Self = this.set("LabelingJobArn", value.asInstanceOf[js.Any])
+    def setInputConfig(value: LabelingJobInputConfig): Self = StObject.set(x, "InputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingJobName(value: LabelingJobName): Self = this.set("LabelingJobName", value.asInstanceOf[js.Any])
+    def setInputConfigUndefined: Self = StObject.set(x, "InputConfig", js.undefined)
     
     @scala.inline
-    def setLabelingJobStatus(value: LabelingJobStatus): Self = this.set("LabelingJobStatus", value.asInstanceOf[js.Any])
+    def setLabelCounters(value: LabelCounters): Self = StObject.set(x, "LabelCounters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setLabelingJobArn(value: LabelingJobArn): Self = StObject.set(x, "LabelingJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreHumanTaskLambdaArn(value: LambdaFunctionArn): Self = this.set("PreHumanTaskLambdaArn", value.asInstanceOf[js.Any])
+    def setLabelingJobName(value: LabelingJobName): Self = StObject.set(x, "LabelingJobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = this.set("WorkteamArn", value.asInstanceOf[js.Any])
+    def setLabelingJobOutput(value: LabelingJobOutput): Self = StObject.set(x, "LabelingJobOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationConsolidationLambdaArn(value: LambdaFunctionArn): Self = this.set("AnnotationConsolidationLambdaArn", value.asInstanceOf[js.Any])
+    def setLabelingJobOutputUndefined: Self = StObject.set(x, "LabelingJobOutput", js.undefined)
     
     @scala.inline
-    def deleteAnnotationConsolidationLambdaArn: Self = this.set("AnnotationConsolidationLambdaArn", js.undefined)
+    def setLabelingJobStatus(value: LabelingJobStatus): Self = StObject.set(x, "LabelingJobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setPreHumanTaskLambdaArn(value: LambdaFunctionArn): Self = StObject.set(x, "PreHumanTaskLambdaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfig(value: LabelingJobInputConfig): Self = this.set("InputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputConfig: Self = this.set("InputConfig", js.undefined)
-    
-    @scala.inline
-    def setLabelingJobOutput(value: LabelingJobOutput): Self = this.set("LabelingJobOutput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelingJobOutput: Self = this.set("LabelingJobOutput", js.undefined)
+    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
   }
 }

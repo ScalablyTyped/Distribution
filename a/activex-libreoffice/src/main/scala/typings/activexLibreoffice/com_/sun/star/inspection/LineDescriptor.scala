@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.inspection
 
 import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0.3
   */
 @js.native
-trait LineDescriptor extends js.Object {
+trait LineDescriptor extends StObject {
   
   /**
     * describes the category into which the property should be sorted by the {@link ObjectInspector} .
@@ -159,57 +160,45 @@ object LineDescriptor {
   }
   
   @scala.inline
-  implicit class LineDescriptorOps[Self <: LineDescriptor] (val x: Self) extends AnyVal {
+  implicit class LineDescriptorMutableBuilder[Self <: LineDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControl(value: XPropertyControl): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setHasPrimaryButton(value: Boolean): Self = StObject.set(x, "HasPrimaryButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: XPropertyControl): Self = this.set("Control", value.asInstanceOf[js.Any])
+    def setHasSecondaryButton(value: Boolean): Self = StObject.set(x, "HasSecondaryButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPrimaryButton(value: Boolean): Self = this.set("HasPrimaryButton", value.asInstanceOf[js.Any])
+    def setIndentLevel(value: Double): Self = StObject.set(x, "IndentLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSecondaryButton(value: Boolean): Self = this.set("HasSecondaryButton", value.asInstanceOf[js.Any])
+    def setPrimaryButtonId(value: String): Self = StObject.set(x, "PrimaryButtonId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    def setPrimaryButtonImage(value: XGraphic): Self = StObject.set(x, "PrimaryButtonImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentLevel(value: Double): Self = this.set("IndentLevel", value.asInstanceOf[js.Any])
+    def setPrimaryButtonImageURL(value: String): Self = StObject.set(x, "PrimaryButtonImageURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryButtonId(value: String): Self = this.set("PrimaryButtonId", value.asInstanceOf[js.Any])
+    def setSecondaryButtonId(value: String): Self = StObject.set(x, "SecondaryButtonId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryButtonImage(value: XGraphic): Self = this.set("PrimaryButtonImage", value.asInstanceOf[js.Any])
+    def setSecondaryButtonImage(value: XGraphic): Self = StObject.set(x, "SecondaryButtonImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryButtonImageURL(value: String): Self = this.set("PrimaryButtonImageURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondaryButtonId(value: String): Self = this.set("SecondaryButtonId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondaryButtonImage(value: XGraphic): Self = this.set("SecondaryButtonImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondaryButtonImageURL(value: String): Self = this.set("SecondaryButtonImageURL", value.asInstanceOf[js.Any])
+    def setSecondaryButtonImageURL(value: String): Self = StObject.set(x, "SecondaryButtonImageURL", value.asInstanceOf[js.Any])
   }
 }

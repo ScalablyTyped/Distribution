@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response that contains list beacon results and pagination help.
   */
 @js.native
-trait SchemaListBeaconsResponse extends js.Object {
+trait SchemaListBeaconsResponse extends StObject {
   
   /**
     * The beacons that matched the search criteria.
@@ -36,39 +37,27 @@ object SchemaListBeaconsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListBeaconsResponseOps[Self <: SchemaListBeaconsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListBeaconsResponseMutableBuilder[Self <: SchemaListBeaconsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeacons(value: js.Array[SchemaBeacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeaconsVarargs(value: SchemaBeacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
     
     @scala.inline
-    def setBeaconsVarargs(value: SchemaBeacon*): Self = this.set("beacons", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeacons(value: js.Array[SchemaBeacon]): Self = this.set("beacons", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteBeacons: Self = this.set("beacons", js.undefined)
+    def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: String): Self = this.set("totalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSecurityProfilesForTargetResponse extends js.Object {
+trait ListSecurityProfilesForTargetResponse extends StObject {
   
   /**
     * A token that can be used to retrieve the next set of results, or null if there are no additional results.
@@ -26,33 +27,21 @@ object ListSecurityProfilesForTargetResponse {
   }
   
   @scala.inline
-  implicit class ListSecurityProfilesForTargetResponseOps[Self <: ListSecurityProfilesForTargetResponse] (val x: Self) extends AnyVal {
+  implicit class ListSecurityProfilesForTargetResponseMutableBuilder[Self <: ListSecurityProfilesForTargetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityProfileTargetMappings(value: SecurityProfileTargetMappings): Self = StObject.set(x, "securityProfileTargetMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setSecurityProfileTargetMappingsUndefined: Self = StObject.set(x, "securityProfileTargetMappings", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setSecurityProfileTargetMappingsVarargs(value: SecurityProfileTargetMapping*): Self = this.set("securityProfileTargetMappings", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurityProfileTargetMappings(value: SecurityProfileTargetMappings): Self = this.set("securityProfileTargetMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityProfileTargetMappings: Self = this.set("securityProfileTargetMappings", js.undefined)
+    def setSecurityProfileTargetMappingsVarargs(value: SecurityProfileTargetMapping*): Self = StObject.set(x, "securityProfileTargetMappings", js.Array(value :_*))
   }
 }

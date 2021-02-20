@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the time first and value second).
   */
 @js.native
-trait CurveSet extends js.Object {
+trait CurveSet extends StObject {
   
   /**
     * Return a specific curve in the curve set.

@@ -2,13 +2,14 @@ package typings.vscodeLanguageserverProtocol.mod
 
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
 import typings.vscodeLanguageserverProtocol.protocolMod.LogMessageParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "LogMessageNotification")
-@js.native
-object LogMessageNotification extends js.Object {
+object LogMessageNotification {
   
+  @JSImport("vscode-languageserver-protocol", "LogMessageNotification.type")
+  @js.native
   val `type`: ProtocolNotificationType[LogMessageParams, Unit] = js.native
 }

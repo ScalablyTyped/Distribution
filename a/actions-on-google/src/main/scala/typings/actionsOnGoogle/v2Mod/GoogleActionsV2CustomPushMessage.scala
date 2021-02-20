@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2CustomPushMessage extends js.Object {
+trait GoogleActionsV2CustomPushMessage extends StObject {
   
   /**
     * An order update updating orders placed through transaction APIs.
@@ -32,36 +33,24 @@ object GoogleActionsV2CustomPushMessage {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2CustomPushMessageOps[Self <: GoogleActionsV2CustomPushMessage] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2CustomPushMessageMutableBuilder[Self <: GoogleActionsV2CustomPushMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrderUpdate(value: GoogleActionsV2OrdersOrderUpdate): Self = StObject.set(x, "orderUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderUpdateUndefined: Self = StObject.set(x, "orderUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: GoogleActionsV2CustomPushMessageTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderUpdate(value: GoogleActionsV2OrdersOrderUpdate): Self = this.set("orderUpdate", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteOrderUpdate: Self = this.set("orderUpdate", js.undefined)
+    def setUserNotification(value: GoogleActionsV2UserNotification): Self = StObject.set(x, "userNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: GoogleActionsV2CustomPushMessageTarget): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setUserNotification(value: GoogleActionsV2UserNotification): Self = this.set("userNotification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserNotification: Self = this.set("userNotification", js.undefined)
+    def setUserNotificationUndefined: Self = StObject.set(x, "userNotification", js.undefined)
   }
 }

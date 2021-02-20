@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientStorage.anon
 
 import typings.maximMazurokGapiClientStorage.gapi.client.storage.ComposeRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationBucket extends js.Object {
+trait DestinationBucket extends StObject {
   
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.native
@@ -71,105 +72,93 @@ object DestinationBucket {
   }
   
   @scala.inline
-  implicit class DestinationBucketOps[Self <: DestinationBucket] (val x: Self) extends AnyVal {
+  implicit class DestinationBucketMutableBuilder[Self <: DestinationBucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationBucket(value: String): Self = StObject.set(x, "destinationBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationBucket(value: String): Self = this.set("destinationBucket", value.asInstanceOf[js.Any])
+    def setDestinationObject(value: String): Self = StObject.set(x, "destinationObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationObject(value: String): Self = this.set("destinationObject", value.asInstanceOf[js.Any])
+    def setDestinationPredefinedAcl(value: String): Self = StObject.set(x, "destinationPredefinedAcl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: ComposeRequest): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setDestinationPredefinedAclUndefined: Self = StObject.set(x, "destinationPredefinedAcl", js.undefined)
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setDestinationPredefinedAcl(value: String): Self = this.set("destinationPredefinedAcl", value.asInstanceOf[js.Any])
+    def setIfGenerationMatch(value: String): Self = StObject.set(x, "ifGenerationMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinationPredefinedAcl: Self = this.set("destinationPredefinedAcl", js.undefined)
+    def setIfGenerationMatchUndefined: Self = StObject.set(x, "ifGenerationMatch", js.undefined)
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setIfMetagenerationMatch(value: String): Self = StObject.set(x, "ifMetagenerationMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setIfMetagenerationMatchUndefined: Self = StObject.set(x, "ifMetagenerationMatch", js.undefined)
     
     @scala.inline
-    def setIfGenerationMatch(value: String): Self = this.set("ifGenerationMatch", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIfGenerationMatch: Self = this.set("ifGenerationMatch", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setIfMetagenerationMatch(value: String): Self = this.set("ifMetagenerationMatch", value.asInstanceOf[js.Any])
+    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIfMetagenerationMatch: Self = this.set("ifMetagenerationMatch", js.undefined)
+    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
     @scala.inline
-    def setKmsKeyName(value: String): Self = this.set("kmsKeyName", value.asInstanceOf[js.Any])
+    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKmsKeyName: Self = this.set("kmsKeyName", js.undefined)
+    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     @scala.inline
-    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    def setProvisionalUserProject(value: String): Self = StObject.set(x, "provisionalUserProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    def setProvisionalUserProjectUndefined: Self = StObject.set(x, "provisionalUserProject", js.undefined)
     
     @scala.inline
-    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     @scala.inline
-    def setProvisionalUserProject(value: String): Self = this.set("provisionalUserProject", value.asInstanceOf[js.Any])
+    def setResource(value: ComposeRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProvisionalUserProject: Self = this.set("provisionalUserProject", js.undefined)
+    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
     
     @scala.inline
-    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIp: Self = this.set("userIp", js.undefined)
-    
-    @scala.inline
-    def setUserProject(value: String): Self = this.set("userProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProject: Self = this.set("userProject", js.undefined)
+    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

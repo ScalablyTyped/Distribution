@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionDraftPatch extends js.Object {
+trait ExtensionDraftPatch extends StObject {
   
   var extensionData: UnpackagedExtensionData = js.native
   
@@ -20,24 +21,12 @@ object ExtensionDraftPatch {
   }
   
   @scala.inline
-  implicit class ExtensionDraftPatchOps[Self <: ExtensionDraftPatch] (val x: Self) extends AnyVal {
+  implicit class ExtensionDraftPatchMutableBuilder[Self <: ExtensionDraftPatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensionData(value: UnpackagedExtensionData): Self = StObject.set(x, "extensionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtensionData(value: UnpackagedExtensionData): Self = this.set("extensionData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperation(value: DraftPatchOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setOperation(value: DraftPatchOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

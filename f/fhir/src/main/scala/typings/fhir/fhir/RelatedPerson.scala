@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,114 +91,102 @@ object RelatedPerson {
   }
   
   @scala.inline
-  implicit class RelatedPersonOps[Self <: RelatedPerson] (val x: Self) extends AnyVal {
+  implicit class RelatedPersonMutableBuilder[Self <: RelatedPerson] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddress(value: js.Array[Address]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set_active(value: Element): Self = this.set("_active", value.asInstanceOf[js.Any])
+    def setAddressVarargs(value: Address*): Self = StObject.set(x, "address", js.Array(value :_*))
     
     @scala.inline
-    def delete_active: Self = this.set("_active", js.undefined)
+    def setBirthDate(value: date): Self = StObject.set(x, "birthDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_birthDate(value: Element): Self = this.set("_birthDate", value.asInstanceOf[js.Any])
+    def setBirthDateUndefined: Self = StObject.set(x, "birthDate", js.undefined)
     
     @scala.inline
-    def delete_birthDate: Self = this.set("_birthDate", js.undefined)
+    def setGender(value: code): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_gender(value: Element): Self = this.set("_gender", value.asInstanceOf[js.Any])
+    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
     @scala.inline
-    def delete_gender: Self = this.set("_gender", js.undefined)
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def setAddressVarargs(value: Address*): Self = this.set("address", js.Array(value :_*))
+    def setName(value: js.Array[HumanName]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: js.Array[Address]): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setNameVarargs(value: HumanName*): Self = StObject.set(x, "name", js.Array(value :_*))
     
     @scala.inline
-    def setBirthDate(value: date): Self = this.set("birthDate", value.asInstanceOf[js.Any])
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBirthDate: Self = this.set("birthDate", js.undefined)
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: code): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteGender: Self = this.set("gender", js.undefined)
+    def setPhoto(value: js.Array[Attachment]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setPhotoVarargs(value: Attachment*): Self = StObject.set(x, "photo", js.Array(value :_*))
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setRelationship(value: CodeableConcept): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameVarargs(value: HumanName*): Self = this.set("name", js.Array(value :_*))
+    def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
     
     @scala.inline
-    def setName(value: js.Array[HumanName]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def set_active(value: Element): Self = StObject.set(x, "_active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoVarargs(value: Attachment*): Self = this.set("photo", js.Array(value :_*))
+    def set_activeUndefined: Self = StObject.set(x, "_active", js.undefined)
     
     @scala.inline
-    def setPhoto(value: js.Array[Attachment]): Self = this.set("photo", value.asInstanceOf[js.Any])
+    def set_birthDate(value: Element): Self = StObject.set(x, "_birthDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhoto: Self = this.set("photo", js.undefined)
+    def set_birthDateUndefined: Self = StObject.set(x, "_birthDate", js.undefined)
     
     @scala.inline
-    def setRelationship(value: CodeableConcept): Self = this.set("relationship", value.asInstanceOf[js.Any])
+    def set_gender(value: Element): Self = StObject.set(x, "_gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelationship: Self = this.set("relationship", js.undefined)
-    
-    @scala.inline
-    def setTelecomVarargs(value: ContactPoint*): Self = this.set("telecom", js.Array(value :_*))
-    
-    @scala.inline
-    def setTelecom(value: js.Array[ContactPoint]): Self = this.set("telecom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTelecom: Self = this.set("telecom", js.undefined)
+    def set_genderUndefined: Self = StObject.set(x, "_gender", js.undefined)
   }
 }

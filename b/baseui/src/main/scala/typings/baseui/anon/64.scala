@@ -3,12 +3,13 @@ package typings.baseui.anon
 import typings.baseui.baseuiStrings.FO
 import typings.baseui.baseuiStrings.Plussign298
 import typings.baseui.baseuiStrings.`Faroe Islands LeftparenthesisFøroyarRightparenthesis`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `64` extends js.Object {
+trait `64` extends StObject {
   
   var dialCode: Plussign298 = js.native
   
@@ -25,27 +26,15 @@ object `64` {
   }
   
   @scala.inline
-  implicit class `64Ops`[Self <: `64`] (val x: Self) extends AnyVal {
+  implicit class `64MutableBuilder`[Self <: `64`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDialCode(value: Plussign298): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: FO): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDialCode(value: Plussign298): Self = this.set("dialCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: FO): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: `Faroe Islands LeftparenthesisFøroyarRightparenthesis`): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: `Faroe Islands LeftparenthesisFøroyarRightparenthesis`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,15 @@
 package typings.numeral
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var numeral: Numeral = js.native
+  @JSGlobal("numeral")
+  @js.native
+  def numeral: Numeral = js.native
+  @scala.inline
+  def numeral_=(x: Numeral): Unit = js.Dynamic.global.updateDynamic("numeral")(x.asInstanceOf[js.Any])
 }

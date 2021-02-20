@@ -1,11 +1,12 @@
 package typings.googleAuthLibrary.oauth2clientMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTokenOptions extends js.Object {
+trait GetTokenOptions extends StObject {
   
   /**
     * The client ID for your application. The value passed into the constructor
@@ -35,39 +36,27 @@ object GetTokenOptions {
   }
   
   @scala.inline
-  implicit class GetTokenOptionsOps[Self <: GetTokenOptions] (val x: Self) extends AnyVal {
+  implicit class GetTokenOptionsMutableBuilder[Self <: GetTokenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setCodeVerifier(value: String): Self = StObject.set(x, "codeVerifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setCodeVerifierUndefined: Self = StObject.set(x, "codeVerifier", js.undefined)
     
     @scala.inline
-    def deleteClient_id: Self = this.set("client_id", js.undefined)
+    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeVerifier(value: String): Self = this.set("codeVerifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeVerifier: Self = this.set("codeVerifier", js.undefined)
-    
-    @scala.inline
-    def setRedirect_uri(value: String): Self = this.set("redirect_uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirect_uri: Self = this.set("redirect_uri", js.undefined)
+    def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
   }
 }

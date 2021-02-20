@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Details about an environment. */
 @js.native
-trait Environment extends js.Object {
+trait Environment extends StObject {
   
   /** Creation date of the environment, in the format `yyyy-MM-dd'T'HH:mm:ss.SSS'Z'`. */
   var created: js.UndefOr[String] = js.native
@@ -50,84 +51,72 @@ object Environment {
   }
   
   @scala.inline
-  implicit class EnvironmentOps[Self <: Environment] (val x: Self) extends AnyVal {
+  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnvironment_idUndefined: Self = StObject.set(x, "environment_id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIndex_capacity(value: IndexCapacity): Self = StObject.set(x, "index_capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment_id(value: String): Self = this.set("environment_id", value.asInstanceOf[js.Any])
+    def setIndex_capacityUndefined: Self = StObject.set(x, "index_capacity", js.undefined)
     
     @scala.inline
-    def deleteEnvironment_id: Self = this.set("environment_id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex_capacity(value: IndexCapacity): Self = this.set("index_capacity", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIndex_capacity: Self = this.set("index_capacity", js.undefined)
+    def setRead_only(value: Boolean): Self = StObject.set(x, "read_only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRead_onlyUndefined: Self = StObject.set(x, "read_only", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRequested_size(value: String): Self = StObject.set(x, "requested_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead_only(value: Boolean): Self = this.set("read_only", value.asInstanceOf[js.Any])
+    def setRequested_sizeUndefined: Self = StObject.set(x, "requested_size", js.undefined)
     
     @scala.inline
-    def deleteRead_only: Self = this.set("read_only", js.undefined)
+    def setSearch_status(value: SearchStatus): Self = StObject.set(x, "search_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequested_size(value: String): Self = this.set("requested_size", value.asInstanceOf[js.Any])
+    def setSearch_statusUndefined: Self = StObject.set(x, "search_status", js.undefined)
     
     @scala.inline
-    def deleteRequested_size: Self = this.set("requested_size", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_status(value: SearchStatus): Self = this.set("search_status", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSearch_status: Self = this.set("search_status", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

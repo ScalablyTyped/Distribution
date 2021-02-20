@@ -1,12 +1,13 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.setSubTapp()
 @js.native
-trait SubTappConfig extends js.Object {
+trait SubTappConfig extends StObject {
   
   var boldText: js.UndefOr[Boolean] = js.native
   
@@ -49,69 +50,57 @@ object SubTappConfig {
   }
   
   @scala.inline
-  implicit class SubTappConfigOps[Self <: SubTappConfig] (val x: Self) extends AnyVal {
+  implicit class SubTappConfigMutableBuilder[Self <: SubTappConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoldText(value: Boolean): Self = StObject.set(x, "boldText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoldTextUndefined: Self = StObject.set(x, "boldText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonName(value: String): Self = StObject.set(x, "buttonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonName(value: String): Self = this.set("buttonName", value.asInstanceOf[js.Any])
+    def setCallbackURL(value: /* result */ js.Any => _): Self = StObject.set(x, "callbackURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setColorText(value: String): Self = StObject.set(x, "colorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortID(value: Double): Self = this.set("sortID", value.asInstanceOf[js.Any])
+    def setColorTextUndefined: Self = StObject.set(x, "colorText", js.undefined)
     
     @scala.inline
-    def setTappID(value: Double): Self = this.set("tappID", value.asInstanceOf[js.Any])
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setIsExclusiveView(value: Boolean): Self = StObject.set(x, "isExclusiveView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoldText(value: Boolean): Self = this.set("boldText", value.asInstanceOf[js.Any])
+    def setIsExclusiveViewUndefined: Self = StObject.set(x, "isExclusiveView", js.undefined)
     
     @scala.inline
-    def deleteBoldText: Self = this.set("boldText", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackURL(value: /* result */ js.Any => _): Self = this.set("callbackURL", js.Any.fromFunction1(value))
+    def setReplaceParent(value: Boolean): Self = StObject.set(x, "replaceParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallbackURL: Self = this.set("callbackURL", js.undefined)
+    def setReplaceParentUndefined: Self = StObject.set(x, "replaceParent", js.undefined)
     
     @scala.inline
-    def setColorText(value: String): Self = this.set("colorText", value.asInstanceOf[js.Any])
+    def setSortID(value: Double): Self = StObject.set(x, "sortID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorText: Self = this.set("colorText", js.undefined)
+    def setTappID(value: Double): Self = StObject.set(x, "tappID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExclusiveView(value: Boolean): Self = this.set("isExclusiveView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsExclusiveView: Self = this.set("isExclusiveView", js.undefined)
-    
-    @scala.inline
-    def setReplaceParent(value: Boolean): Self = this.set("replaceParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceParent: Self = this.set("replaceParent", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

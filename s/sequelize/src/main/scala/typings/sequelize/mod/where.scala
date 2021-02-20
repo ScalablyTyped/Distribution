@@ -1,11 +1,12 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait where extends js.Object {
+trait where extends StObject {
   
   var attribute: js.Object = js.native
   
@@ -22,30 +23,18 @@ object where {
   }
   
   @scala.inline
-  implicit class whereOps[Self <: where] (val x: Self) extends AnyVal {
+  implicit class whereMutableBuilder[Self <: where] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: js.Object): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComparator(value: String): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
     @scala.inline
-    def setAttribute(value: js.Object): Self = this.set("attribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogic(value: String | js.Object): Self = this.set("logic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComparator(value: String): Self = this.set("comparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComparator: Self = this.set("comparator", js.undefined)
+    def setLogic(value: String | js.Object): Self = StObject.set(x, "logic", value.asInstanceOf[js.Any])
   }
 }

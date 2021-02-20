@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Incoming extends js.Object {
+trait Incoming extends StObject {
   
   var inProgress: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object Incoming {
   }
   
   @scala.inline
-  implicit class IncomingOps[Self <: Incoming] (val x: Self) extends AnyVal {
+  implicit class IncomingMutableBuilder[Self <: Incoming] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncoming(value: scala.Double): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = this.set("inProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncoming(value: scala.Double): Self = this.set("incoming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutgoing(value: scala.Double): Self = this.set("outgoing", value.asInstanceOf[js.Any])
+    def setOutgoing(value: scala.Double): Self = StObject.set(x, "outgoing", value.asInstanceOf[js.Any])
   }
 }

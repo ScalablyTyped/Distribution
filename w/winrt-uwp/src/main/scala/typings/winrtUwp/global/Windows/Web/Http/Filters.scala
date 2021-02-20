@@ -1,28 +1,30 @@
 package typings.winrtUwp.global.Windows.Web.Http
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes to send HTTP requests and an interface to create filters to target HTTP and REST services in Windows Store apps. */
-@JSGlobal("Windows.Web.Http.Filters")
-@js.native
-object Filters extends js.Object {
+object Filters {
   
   /** The base protocol filter for an HttpClient instance. */
+  @JSGlobal("Windows.Web.Http.Filters.HttpBaseProtocolFilter")
   @js.native
   /** Initializes a new instance of the HttpBaseProtocolFilter class. */
   class HttpBaseProtocolFilter ()
     extends typings.winrtUwp.Windows.Web.Http.Filters.HttpBaseProtocolFilter
   
   /** Provides control of the local HTTP cache for responses to HTTP requests by methods in the Windows.Web.Http and Windows.Web.Http.Filters namespaces. */
+  @JSGlobal("Windows.Web.Http.Filters.HttpCacheControl")
   @js.native
   abstract class HttpCacheControl ()
     extends typings.winrtUwp.Windows.Web.Http.Filters.HttpCacheControl
   
   /** Indicates if read requests by class methods in the Windows.Web.Http and Windows.Web.Http.Filters namespaces use the local HTTP cache for the response. */
+  @JSGlobal("Windows.Web.Http.Filters.HttpCacheReadBehavior")
   @js.native
-  object HttpCacheReadBehavior extends js.Object {
+  object HttpCacheReadBehavior extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Web.Http.Filters.HttpCacheReadBehavior with Double] = js.native
@@ -35,8 +37,9 @@ object Filters extends js.Object {
   }
   
   /** Indicates if content returned by requests used by class methods in the Windows.Web.Http and Windows.Web.Http.Filters namespaces is written to the local HTTP cache. */
+  @JSGlobal("Windows.Web.Http.Filters.HttpCacheWriteBehavior")
   @js.native
-  object HttpCacheWriteBehavior extends js.Object {
+  object HttpCacheWriteBehavior extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Web.Http.Filters.HttpCacheWriteBehavior with Double] = js.native
@@ -47,8 +50,9 @@ object Filters extends js.Object {
   }
   
   /** Defines the cookie usage behavior that is used in the CookieUsageBehavior property. */
+  @JSGlobal("Windows.Web.Http.Filters.HttpCookieUsageBehavior")
   @js.native
-  object HttpCookieUsageBehavior extends js.Object {
+  object HttpCookieUsageBehavior extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Web.Http.Filters.HttpCookieUsageBehavior with Double] = js.native

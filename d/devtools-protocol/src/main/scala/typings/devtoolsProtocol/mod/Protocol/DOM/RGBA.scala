@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RGBA extends js.Object {
+trait RGBA extends StObject {
   
   /**
     * The alpha component, in the [0-1] range (default: 1).
@@ -37,33 +38,21 @@ object RGBA {
   }
   
   @scala.inline
-  implicit class RGBAOps[Self <: RGBA] (val x: Self) extends AnyVal {
+  implicit class RGBAMutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setB(value: integer): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: integer): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setG(value: integer): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setG(value: integer): Self = this.set("g", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setR(value: integer): Self = this.set("r", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setA(value: Double): Self = this.set("a", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteA: Self = this.set("a", js.undefined)
+    def setR(value: integer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

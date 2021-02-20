@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //    constructor();
 // }
 @js.native
-trait ClientResult[T] extends js.Object {
+trait ClientResult[T] extends StObject {
   
   def get_value(): T = js.native
   
@@ -25,24 +26,12 @@ object ClientResult {
   }
   
   @scala.inline
-  implicit class ClientResultOps[Self <: ClientResult[_], T] (val x: Self with ClientResult[T]) extends AnyVal {
+  implicit class ClientResultMutableBuilder[Self <: ClientResult[_], T] (val x: Self with ClientResult[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_value(value: () => T): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet_value(value: () => T): Self = this.set("get_value", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetValue(value: T => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    def setSetValue(value: T => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

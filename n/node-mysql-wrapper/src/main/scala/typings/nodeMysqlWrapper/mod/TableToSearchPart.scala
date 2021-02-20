@@ -1,11 +1,12 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableToSearchPart extends js.Object {
+trait TableToSearchPart extends StObject {
   
   var propertyName: String = js.native
   
@@ -20,24 +21,12 @@ object TableToSearchPart {
   }
   
   @scala.inline
-  implicit class TableToSearchPartOps[Self <: TableToSearchPart] (val x: Self) extends AnyVal {
+  implicit class TableToSearchPartMutableBuilder[Self <: TableToSearchPart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

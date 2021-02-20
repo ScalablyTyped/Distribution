@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Viewport extends js.Object {
+trait Viewport extends StObject {
   
   /** viewport height */
   var height: Double = js.native
@@ -52,36 +53,24 @@ object Viewport {
   }
   
   @scala.inline
-  implicit class ViewportOps[Self <: Viewport] (val x: Self) extends AnyVal {
+  implicit class ViewportMutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setToGlobal(value: (Double, Double) => Viewport): Self = StObject.set(x, "toGlobal", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToGlobalToRef(value: (Double, Double, Viewport) => Viewport): Self = StObject.set(x, "toGlobalToRef", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToGlobal(value: (Double, Double) => Viewport): Self = this.set("toGlobal", js.Any.fromFunction2(value))
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToGlobalToRef(value: (Double, Double, Viewport) => Viewport): Self = this.set("toGlobalToRef", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

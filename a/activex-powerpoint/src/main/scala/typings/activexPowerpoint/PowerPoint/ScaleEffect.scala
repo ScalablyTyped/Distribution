@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleEffect extends js.Object {
+trait ScaleEffect extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -46,45 +47,33 @@ object ScaleEffect {
   }
   
   @scala.inline
-  implicit class ScaleEffectOps[Self <: ScaleEffect] (val x: Self) extends AnyVal {
+  implicit class ScaleEffectMutableBuilder[Self <: ScaleEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByX(value: Double): Self = StObject.set(x, "ByX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByY(value: Double): Self = StObject.set(x, "ByY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFromX(value: Double): Self = StObject.set(x, "FromX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByX(value: Double): Self = this.set("ByX", value.asInstanceOf[js.Any])
+    def setFromY(value: Double): Self = StObject.set(x, "FromY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByY(value: Double): Self = this.set("ByY", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromX(value: Double): Self = this.set("FromX", value.asInstanceOf[js.Any])
+    def setPowerPointDotScaleEffect_typekey(value: ScaleEffect): Self = StObject.set(x, "PowerPoint.ScaleEffect_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromY(value: Double): Self = this.set("FromY", value.asInstanceOf[js.Any])
+    def setToX(value: Double): Self = StObject.set(x, "ToX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotScaleEffect_typekey(value: ScaleEffect): Self = this.set("PowerPoint.ScaleEffect_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToX(value: Double): Self = this.set("ToX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToY(value: Double): Self = this.set("ToY", value.asInstanceOf[js.Any])
+    def setToY(value: Double): Self = StObject.set(x, "ToY", value.asInstanceOf[js.Any])
   }
 }

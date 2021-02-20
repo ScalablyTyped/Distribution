@@ -3,12 +3,13 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.always
 import typings.reactNative.reactNativeStrings.auto
 import typings.reactNative.reactNativeStrings.never
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollViewPropsAndroid extends js.Object {
+trait ScrollViewPropsAndroid extends StObject {
   
   /**
     * Sometimes a scrollview takes up more space than its content fills.
@@ -68,54 +69,42 @@ object ScrollViewPropsAndroid {
   }
   
   @scala.inline
-  implicit class ScrollViewPropsAndroidOps[Self <: ScrollViewPropsAndroid] (val x: Self) extends AnyVal {
+  implicit class ScrollViewPropsAndroidMutableBuilder[Self <: ScrollViewPropsAndroid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndFillColor(value: ColorValue): Self = StObject.set(x, "endFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndFillColorUndefined: Self = StObject.set(x, "endFillColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFadingEdgeLength(value: Double): Self = StObject.set(x, "fadingEdgeLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndFillColor(value: ColorValue): Self = this.set("endFillColor", value.asInstanceOf[js.Any])
+    def setFadingEdgeLengthUndefined: Self = StObject.set(x, "fadingEdgeLength", js.undefined)
     
     @scala.inline
-    def deleteEndFillColor: Self = this.set("endFillColor", js.undefined)
+    def setNestedScrollEnabled(value: Boolean): Self = StObject.set(x, "nestedScrollEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadingEdgeLength(value: Double): Self = this.set("fadingEdgeLength", value.asInstanceOf[js.Any])
+    def setNestedScrollEnabledUndefined: Self = StObject.set(x, "nestedScrollEnabled", js.undefined)
     
     @scala.inline
-    def deleteFadingEdgeLength: Self = this.set("fadingEdgeLength", js.undefined)
+    def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedScrollEnabled(value: Boolean): Self = this.set("nestedScrollEnabled", value.asInstanceOf[js.Any])
+    def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
     
     @scala.inline
-    def deleteNestedScrollEnabled: Self = this.set("nestedScrollEnabled", js.undefined)
+    def setPersistentScrollbar(value: Boolean): Self = StObject.set(x, "persistentScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverScrollMode(value: auto | always | never): Self = this.set("overScrollMode", value.asInstanceOf[js.Any])
+    def setPersistentScrollbarUndefined: Self = StObject.set(x, "persistentScrollbar", js.undefined)
     
     @scala.inline
-    def deleteOverScrollMode: Self = this.set("overScrollMode", js.undefined)
+    def setScrollPerfTag(value: String): Self = StObject.set(x, "scrollPerfTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentScrollbar(value: Boolean): Self = this.set("persistentScrollbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersistentScrollbar: Self = this.set("persistentScrollbar", js.undefined)
-    
-    @scala.inline
-    def setScrollPerfTag(value: String): Self = this.set("scrollPerfTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollPerfTag: Self = this.set("scrollPerfTag", js.undefined)
+    def setScrollPerfTagUndefined: Self = StObject.set(x, "scrollPerfTag", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.fridaGum
 
 import typings.fridaGum.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArmBaseOperand extends js.Object {
+trait ArmBaseOperand extends StObject {
   
   var shift: js.UndefOr[Type] = js.native
   
@@ -23,33 +24,21 @@ object ArmBaseOperand {
   }
   
   @scala.inline
-  implicit class ArmBaseOperandOps[Self <: ArmBaseOperand] (val x: Self) extends AnyVal {
+  implicit class ArmBaseOperandMutableBuilder[Self <: ArmBaseOperand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShift(value: Type): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubtracted(value: Boolean): Self = StObject.set(x, "subtracted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtracted(value: Boolean): Self = this.set("subtracted", value.asInstanceOf[js.Any])
+    def setVectorIndex(value: Double): Self = StObject.set(x, "vectorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShift(value: Type): Self = this.set("shift", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShift: Self = this.set("shift", js.undefined)
-    
-    @scala.inline
-    def setVectorIndex(value: Double): Self = this.set("vectorIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVectorIndex: Self = this.set("vectorIndex", js.undefined)
+    def setVectorIndexUndefined: Self = StObject.set(x, "vectorIndex", js.undefined)
   }
 }

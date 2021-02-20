@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Screen extends js.Object {
+trait Screen extends StObject {
   
   @JSName("Access.Screen_typekey")
   var AccessDotScreen_typekey: Screen = js.native
@@ -52,51 +53,39 @@ object Screen {
   }
   
   @scala.inline
-  implicit class ScreenOps[Self <: Screen] (val x: Self) extends AnyVal {
+  implicit class ScreenMutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDotScreen_typekey(value: Screen): Self = StObject.set(x, "Access.Screen_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveControl(value: Control): Self = StObject.set(x, "ActiveControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveDataAccessPage(value: DataAccessPage): Self = StObject.set(x, "ActiveDataAccessPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessDotScreen_typekey(value: Screen): Self = this.set("Access.Screen_typekey", value.asInstanceOf[js.Any])
+    def setActiveDatasheet(value: Form): Self = StObject.set(x, "ActiveDatasheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveControl(value: Control): Self = this.set("ActiveControl", value.asInstanceOf[js.Any])
+    def setActiveForm(value: Form): Self = StObject.set(x, "ActiveForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDataAccessPage(value: DataAccessPage): Self = this.set("ActiveDataAccessPage", value.asInstanceOf[js.Any])
+    def setActiveReport(value: Report): Self = StObject.set(x, "ActiveReport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDatasheet(value: Form): Self = this.set("ActiveDatasheet", value.asInstanceOf[js.Any])
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveForm(value: Form): Self = this.set("ActiveForm", value.asInstanceOf[js.Any])
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActiveReport(value: Report): Self = this.set("ActiveReport", value.asInstanceOf[js.Any])
+    def setMousePointer(value: Double): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = this.set("IsMemberSafe", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMousePointer(value: Double): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousControl(value: Control): Self = this.set("PreviousControl", value.asInstanceOf[js.Any])
+    def setPreviousControl(value: Control): Self = StObject.set(x, "PreviousControl", value.asInstanceOf[js.Any])
   }
 }

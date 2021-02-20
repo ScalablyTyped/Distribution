@@ -1,12 +1,13 @@
 package typings.googleapis.anon
 
 import typings.googleapis.v3Mod.analyticsV3.SchemaIncludeConditions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExcludeConditions extends js.Object {
+trait ExcludeConditions extends StObject {
   
   var excludeConditions: js.UndefOr[ExclusionDuration] = js.native
   
@@ -21,30 +22,18 @@ object ExcludeConditions {
   }
   
   @scala.inline
-  implicit class ExcludeConditionsOps[Self <: ExcludeConditions] (val x: Self) extends AnyVal {
+  implicit class ExcludeConditionsMutableBuilder[Self <: ExcludeConditions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeConditions(value: ExclusionDuration): Self = StObject.set(x, "excludeConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeConditionsUndefined: Self = StObject.set(x, "excludeConditions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeConditions(value: SchemaIncludeConditions): Self = StObject.set(x, "includeConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeConditions(value: ExclusionDuration): Self = this.set("excludeConditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludeConditions: Self = this.set("excludeConditions", js.undefined)
-    
-    @scala.inline
-    def setIncludeConditions(value: SchemaIncludeConditions): Self = this.set("includeConditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeConditions: Self = this.set("includeConditions", js.undefined)
+    def setIncludeConditionsUndefined: Self = StObject.set(x, "includeConditions", js.undefined)
   }
 }

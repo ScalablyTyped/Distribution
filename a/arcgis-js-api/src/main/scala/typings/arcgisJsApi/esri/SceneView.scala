@@ -7,6 +7,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.local
 import typings.arcgisJsApi.arcgisJsApiStrings.low
 import typings.arcgisJsApi.arcgisJsApiStrings.medium
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

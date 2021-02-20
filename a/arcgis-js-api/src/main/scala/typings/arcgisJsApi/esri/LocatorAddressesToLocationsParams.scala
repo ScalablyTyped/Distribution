@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,45 +52,33 @@ object LocatorAddressesToLocationsParams {
   }
   
   @scala.inline
-  implicit class LocatorAddressesToLocationsParamsOps[Self <: LocatorAddressesToLocationsParams] (val x: Self) extends AnyVal {
+  implicit class LocatorAddressesToLocationsParamsMutableBuilder[Self <: LocatorAddressesToLocationsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[_]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesVarargs(value: js.Any*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressesVarargs(value: js.Any*): Self = this.set("addresses", js.Array(value :_*))
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def setAddresses(value: js.Array[_]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
-    
-    @scala.inline
-    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationType: Self = this.set("locationType", js.undefined)
+    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
   }
 }

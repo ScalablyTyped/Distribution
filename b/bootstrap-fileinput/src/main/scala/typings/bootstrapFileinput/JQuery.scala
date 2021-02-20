@@ -27,13 +27,14 @@ import typings.bootstrapFileinput.bootstrapFileinputStrings.upload
 import typings.bootstrapFileinput.bootstrapFileinputStrings.zoom
 import typings.std.File
 import typings.std.FileList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable:unified-signatures self-documenting code and JSDoc require non-unified signatures
 @js.native
-trait JQuery[TElement] extends js.Object {
+trait JQuery[TElement] extends StObject {
   
   def fileinput(): this.type = js.native
   def fileinput(options: FileInputOptions): this.type = js.native

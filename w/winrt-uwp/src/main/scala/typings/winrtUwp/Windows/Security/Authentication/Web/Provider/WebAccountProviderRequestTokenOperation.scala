@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a request token operation. */
 @js.native
-trait WebAccountProviderRequestTokenOperation extends js.Object {
+trait WebAccountProviderRequestTokenOperation extends StObject {
   
   /** Gets or sets the cache expiration time. */
   var cacheExpirationTime: Date = js.native
@@ -52,39 +53,27 @@ object WebAccountProviderRequestTokenOperation {
   }
   
   @scala.inline
-  implicit class WebAccountProviderRequestTokenOperationOps[Self <: WebAccountProviderRequestTokenOperation] (val x: Self) extends AnyVal {
+  implicit class WebAccountProviderRequestTokenOperationMutableBuilder[Self <: WebAccountProviderRequestTokenOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheExpirationTime(value: Date): Self = StObject.set(x, "cacheExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviderRequest(value: WebProviderTokenRequest): Self = StObject.set(x, "providerRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheExpirationTime(value: Date): Self = this.set("cacheExpirationTime", value.asInstanceOf[js.Any])
+    def setProviderResponses(value: IVector[WebProviderTokenResponse]): Self = StObject.set(x, "providerResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: WebAccountProviderOperationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProviderRequest(value: WebProviderTokenRequest): Self = this.set("providerRequest", value.asInstanceOf[js.Any])
+    def setReportError(value: WebProviderError => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProviderResponses(value: IVector[WebProviderTokenResponse]): Self = this.set("providerResponses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReportCompleted(value: () => Unit): Self = this.set("reportCompleted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReportError(value: WebProviderError => Unit): Self = this.set("reportError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReportUserCanceled(value: () => Unit): Self = this.set("reportUserCanceled", js.Any.fromFunction0(value))
+    def setReportUserCanceled(value: () => Unit): Self = StObject.set(x, "reportUserCanceled", js.Any.fromFunction0(value))
   }
 }

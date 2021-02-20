@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointStatesHoverOptionsObject extends js.Object {
+trait PointStatesHoverOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock) Animation when hovering over the marker.
@@ -85,90 +86,78 @@ object PointStatesHoverOptionsObject {
   }
   
   @scala.inline
-  implicit class PointStatesHoverOptionsObjectOps[Self <: PointStatesHoverOptionsObject] (val x: Self) extends AnyVal {
+  implicit class PointStatesHoverOptionsObjectMutableBuilder[Self <: PointStatesHoverOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setFillColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setHeightPlus(value: Double): Self = StObject.set(x, "heightPlus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    def setHeightPlusUndefined: Self = StObject.set(x, "heightPlus", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLineColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightPlus(value: Double): Self = this.set("heightPlus", value.asInstanceOf[js.Any])
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def deleteHeightPlus: Self = this.set("heightPlus", js.undefined)
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineWidthPlus(value: Double): Self = StObject.set(x, "lineWidthPlus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setLineWidthPlusUndefined: Self = StObject.set(x, "lineWidthPlus", js.undefined)
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidthPlus(value: Double): Self = this.set("lineWidthPlus", value.asInstanceOf[js.Any])
+    def setRadiusPlus(value: Double): Self = StObject.set(x, "radiusPlus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineWidthPlus: Self = this.set("lineWidthPlus", js.undefined)
+    def setRadiusPlusUndefined: Self = StObject.set(x, "radiusPlus", js.undefined)
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusPlus(value: Double): Self = this.set("radiusPlus", value.asInstanceOf[js.Any])
+    def setWidthPlus(value: Double): Self = StObject.set(x, "widthPlus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadiusPlus: Self = this.set("radiusPlus", js.undefined)
+    def setWidthPlusUndefined: Self = StObject.set(x, "widthPlus", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWidthPlus(value: Double): Self = this.set("widthPlus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthPlus: Self = this.set("widthPlus", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

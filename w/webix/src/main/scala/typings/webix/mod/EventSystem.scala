@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventSystem extends js.Object {
+trait EventSystem extends StObject {
   
   def attachEvent(`type`: String, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: String, functor: WebixCallback, id: String): String | Double = js.native
@@ -23,6 +23,3 @@ trait EventSystem extends js.Object {
   
   def unblockEvent(): Unit = js.native
 }
-@JSImport("webix", "EventSystem")
-@js.native
-object EventSystem extends TopLevel[EventSystem]

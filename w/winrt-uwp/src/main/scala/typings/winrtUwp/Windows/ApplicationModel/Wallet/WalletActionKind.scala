@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WalletActionKind extends js.Object
+sealed trait WalletActionKind extends StObject
 /** Represents the action that was taken on the item that caused your app to launch. */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletActionKind")
 @js.native
-object WalletActionKind extends js.Object {
+object WalletActionKind extends StObject {
   
   /** A message was tapped. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.reactWeui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Groups extends js.Object {
+trait Groups extends StObject {
   
   var actions: js.Array[_] = js.native
   
@@ -24,36 +25,24 @@ object Groups {
   }
   
   @scala.inline
-  implicit class GroupsOps[Self <: Groups] (val x: Self) extends AnyVal {
+  implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[_]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroups(value: js.Array[_]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: js.Any*): Self = this.set("actions", js.Array(value :_*))
+    def setGroupsVarargs(value: js.Any*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setActions(value: js.Array[_]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setLang(value: LeftBtn): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: js.Any*): Self = this.set("groups", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroups(value: js.Array[_]): Self = this.set("groups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLang(value: LeftBtn): Self = this.set("lang", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

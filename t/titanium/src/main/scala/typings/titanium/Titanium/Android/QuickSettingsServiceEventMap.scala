@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.Android
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,60 +61,48 @@ object QuickSettingsServiceEventMap {
   }
   
   @scala.inline
-  implicit class QuickSettingsServiceEventMapOps[Self <: QuickSettingsServiceEventMap] (val x: Self) extends AnyVal {
+  implicit class QuickSettingsServiceEventMapMutableBuilder[Self <: QuickSettingsServiceEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPause(value: QuickSettingsServicePauseEvent): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResume(value: QuickSettingsServiceResumeEvent): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: QuickSettingsServiceStartEvent): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPause(value: QuickSettingsServicePauseEvent): Self = this.set("pause", value.asInstanceOf[js.Any])
+    def setStartlistening(value: QuickSettingsServiceStartlisteningEvent): Self = StObject.set(x, "startlistening", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResume(value: QuickSettingsServiceResumeEvent): Self = this.set("resume", value.asInstanceOf[js.Any])
+    def setStop(value: QuickSettingsServiceStopEvent): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: QuickSettingsServiceStartEvent): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStoplistening(value: QuickSettingsServiceStoplisteningEvent): Self = StObject.set(x, "stoplistening", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartlistening(value: QuickSettingsServiceStartlisteningEvent): Self = this.set("startlistening", value.asInstanceOf[js.Any])
+    def setTaskremoved(value: QuickSettingsServiceTaskremovedEvent): Self = StObject.set(x, "taskremoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop(value: QuickSettingsServiceStopEvent): Self = this.set("stop", value.asInstanceOf[js.Any])
+    def setTileadded(value: QuickSettingsServiceTileaddedEvent): Self = StObject.set(x, "tileadded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoplistening(value: QuickSettingsServiceStoplisteningEvent): Self = this.set("stoplistening", value.asInstanceOf[js.Any])
+    def setTiledialogcancelled(value: QuickSettingsServiceTiledialogcancelledEvent): Self = StObject.set(x, "tiledialogcancelled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskremoved(value: QuickSettingsServiceTaskremovedEvent): Self = this.set("taskremoved", value.asInstanceOf[js.Any])
+    def setTiledialognegative(value: QuickSettingsServiceTiledialognegativeEvent): Self = StObject.set(x, "tiledialognegative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileadded(value: QuickSettingsServiceTileaddedEvent): Self = this.set("tileadded", value.asInstanceOf[js.Any])
+    def setTiledialogneutral(value: QuickSettingsServiceTiledialogneutralEvent): Self = StObject.set(x, "tiledialogneutral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiledialogcancelled(value: QuickSettingsServiceTiledialogcancelledEvent): Self = this.set("tiledialogcancelled", value.asInstanceOf[js.Any])
+    def setTiledialogoptionselected(value: QuickSettingsServiceTiledialogoptionselectedEvent): Self = StObject.set(x, "tiledialogoptionselected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiledialognegative(value: QuickSettingsServiceTiledialognegativeEvent): Self = this.set("tiledialognegative", value.asInstanceOf[js.Any])
+    def setTiledialogpositive(value: QuickSettingsServiceTiledialogpositiveEvent): Self = StObject.set(x, "tiledialogpositive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiledialogneutral(value: QuickSettingsServiceTiledialogneutralEvent): Self = this.set("tiledialogneutral", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiledialogoptionselected(value: QuickSettingsServiceTiledialogoptionselectedEvent): Self = this.set("tiledialogoptionselected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiledialogpositive(value: QuickSettingsServiceTiledialogpositiveEvent): Self = this.set("tiledialogpositive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTileremoved(value: QuickSettingsServiceTileremovedEvent): Self = this.set("tileremoved", value.asInstanceOf[js.Any])
+    def setTileremoved(value: QuickSettingsServiceTileremovedEvent): Self = StObject.set(x, "tileremoved", value.asInstanceOf[js.Any])
   }
 }

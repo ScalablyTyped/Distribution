@@ -3,16 +3,14 @@ package typings.antvGMath
 import typings.antvGMath.anon.X
 import typings.antvGMath.typesMod.BBox
 import typings.antvGMath.typesMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-math/lib/arc", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
     /**
       * 计算包围盒
@@ -25,6 +23,8 @@ object mod extends js.Object {
       * @param {number} endAngle   结束角度
       * @return {object} 包围盒对象
       */
+    @JSImport("@antv/g-math/lib/arc", "default.box")
+    @js.native
     def box(
       cx: Double,
       cy: Double,
@@ -46,6 +46,8 @@ object mod extends js.Object {
       * @param {number} startAngle 起始角度
       * @param {number} endAngle   结束角度
       */
+    @JSImport("@antv/g-math/lib/arc", "default.length")
+    @js.native
     def length(
       cx: Double,
       cy: Double,
@@ -69,6 +71,8 @@ object mod extends js.Object {
       * @param {number} y0         指定点的 y
       * @return {object} 到指定点最近距离的点
       */
+    @JSImport("@antv/g-math/lib/arc", "default.nearestPoint")
+    @js.native
     def nearestPoint(
       cx: Double,
       cy: Double,
@@ -81,6 +85,8 @@ object mod extends js.Object {
       y0: Double
     ): X = js.native
     
+    @JSImport("@antv/g-math/lib/arc", "default.pointAt")
+    @js.native
     def pointAt(
       cx: Double,
       cy: Double,
@@ -92,6 +98,8 @@ object mod extends js.Object {
       t: Double
     ): Point = js.native
     
+    @JSImport("@antv/g-math/lib/arc", "default.pointDistance")
+    @js.native
     def pointDistance(
       cx: Double,
       cy: Double,
@@ -104,6 +112,8 @@ object mod extends js.Object {
       y0: Double
     ): Double = js.native
     
+    @JSImport("@antv/g-math/lib/arc", "default.tangentAngle")
+    @js.native
     def tangentAngle(
       cx: Double,
       cy: Double,

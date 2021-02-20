@@ -3,6 +3,7 @@ package typings.googleapis.betaMod.computeBeta
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,48 +54,36 @@ object ParamsResourceSecuritypoliciesInsert {
   }
   
   @scala.inline
-  implicit class ParamsResourceSecuritypoliciesInsertOps[Self <: ParamsResourceSecuritypoliciesInsert] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceSecuritypoliciesInsertMutableBuilder[Self <: ParamsResourceSecuritypoliciesInsert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setRequestBody(value: SchemaSecurityPolicy): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaSecurityPolicy): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
     @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
-    
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
+    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

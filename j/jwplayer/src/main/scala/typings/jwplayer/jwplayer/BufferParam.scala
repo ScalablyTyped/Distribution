@@ -4,12 +4,13 @@ import typings.jwplayer.jwplayerStrings.complete
 import typings.jwplayer.jwplayerStrings.error
 import typings.jwplayer.jwplayerStrings.loading
 import typings.jwplayer.jwplayerStrings.stalled
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BufferParam extends js.Object {
+trait BufferParam extends StObject {
   
   var newstate: String = js.native
   
@@ -26,27 +27,15 @@ object BufferParam {
   }
   
   @scala.inline
-  implicit class BufferParamOps[Self <: BufferParam] (val x: Self) extends AnyVal {
+  implicit class BufferParamMutableBuilder[Self <: BufferParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewstate(value: String): Self = StObject.set(x, "newstate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOldstate(value: String): Self = StObject.set(x, "oldstate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewstate(value: String): Self = this.set("newstate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldstate(value: String): Self = this.set("oldstate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: loading | complete | stalled | error): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReason(value: loading | complete | stalled | error): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

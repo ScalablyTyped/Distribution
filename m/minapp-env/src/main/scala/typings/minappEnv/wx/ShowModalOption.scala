@@ -1,11 +1,12 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShowModalOption extends js.Object {
+trait ShowModalOption extends StObject {
   
   /** 取消按钮的文字颜色，必须是 16 进制格式的颜色字符串 */
   var cancelColor: js.UndefOr[String] = js.native
@@ -46,72 +47,60 @@ object ShowModalOption {
   }
   
   @scala.inline
-  implicit class ShowModalOptionOps[Self <: ShowModalOption] (val x: Self) extends AnyVal {
+  implicit class ShowModalOptionMutableBuilder[Self <: ShowModalOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelColor(value: String): Self = StObject.set(x, "cancelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelColorUndefined: Self = StObject.set(x, "cancelColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancelColor(value: String): Self = this.set("cancelColor", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteCancelColor: Self = this.set("cancelColor", js.undefined)
+    def setConfirmColor(value: String): Self = StObject.set(x, "confirmColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelText(value: String): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    def setConfirmColorUndefined: Self = StObject.set(x, "confirmColor", js.undefined)
     
     @scala.inline
-    def deleteCancelText: Self = this.set("cancelText", js.undefined)
+    def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmColor(value: String): Self = this.set("confirmColor", value.asInstanceOf[js.Any])
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteConfirmColor: Self = this.set("confirmColor", js.undefined)
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setConfirmText(value: String): Self = this.set("confirmText", value.asInstanceOf[js.Any])
+    def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfirmText: Self = this.set("confirmText", js.undefined)
+    def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setSuccess(value: /* result */ ShowModalSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setShowCancel(value: Boolean): Self = this.set("showCancel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowCancel: Self = this.set("showCancel", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ ShowModalSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

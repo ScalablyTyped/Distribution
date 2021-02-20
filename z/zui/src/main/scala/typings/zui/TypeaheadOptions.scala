@@ -1,11 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeaheadOptions extends js.Object {
+trait TypeaheadOptions extends StObject {
   
   var highlighter: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.native
   
@@ -30,60 +31,48 @@ object TypeaheadOptions {
   }
   
   @scala.inline
-  implicit class TypeaheadOptionsOps[Self <: TypeaheadOptions] (val x: Self) extends AnyVal {
+  implicit class TypeaheadOptionsMutableBuilder[Self <: TypeaheadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlighter(value: /* item */ js.Any => String): Self = StObject.set(x, "highlighter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlighterUndefined: Self = StObject.set(x, "highlighter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlighter(value: /* item */ js.Any => String): Self = this.set("highlighter", js.Any.fromFunction1(value))
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteHighlighter: Self = this.set("highlighter", js.undefined)
+    def setMatcher(value: /* item */ js.Any => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItems(value: Double): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatcher(value: /* item */ js.Any => Boolean): Self = this.set("matcher", js.Any.fromFunction1(value))
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     @scala.inline
-    def deleteMatcher: Self = this.set("matcher", js.undefined)
+    def setSorter(value: /* items */ js.Array[_] => js.Array[_]): Self = StObject.set(x, "sorter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
     
     @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSorter(value: /* items */ js.Array[_] => js.Array[_]): Self = this.set("sorter", js.Any.fromFunction1(value))
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteSorter: Self = this.set("sorter", js.undefined)
+    def setUpdater(value: /* item */ js.Any => _): Self = StObject.set(x, "updater", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSource(value: js.Any): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setUpdater(value: /* item */ js.Any => _): Self = this.set("updater", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpdater: Self = this.set("updater", js.undefined)
+    def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
   }
 }

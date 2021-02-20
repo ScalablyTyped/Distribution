@@ -1,11 +1,12 @@
 package typings.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Object extends js.Object {
+trait Object extends StObject {
   
   /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
   var constructor: Function = js.native

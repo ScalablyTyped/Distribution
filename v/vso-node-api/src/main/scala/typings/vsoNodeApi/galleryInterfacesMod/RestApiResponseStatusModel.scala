@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestApiResponseStatusModel extends js.Object {
+trait RestApiResponseStatusModel extends StObject {
   
   /**
     * Gets or sets the operation details
@@ -47,33 +48,21 @@ object RestApiResponseStatusModel {
   }
   
   @scala.inline
-  implicit class RestApiResponseStatusModelOps[Self <: RestApiResponseStatusModel] (val x: Self) extends AnyVal {
+  implicit class RestApiResponseStatusModelMutableBuilder[Self <: RestApiResponseStatusModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperationDetails(value: js.Any): Self = StObject.set(x, "operationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPercentageCompleted(value: Double): Self = StObject.set(x, "percentageCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationDetails(value: js.Any): Self = this.set("operationDetails", value.asInstanceOf[js.Any])
+    def setStatus(value: RestApiResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPercentageCompleted(value: Double): Self = this.set("percentageCompleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: RestApiResponseStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

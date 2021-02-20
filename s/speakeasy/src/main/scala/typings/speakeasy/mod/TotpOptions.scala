@@ -1,6 +1,7 @@
 package typings.speakeasy.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,75 +70,63 @@ object TotpOptions {
   }
   
   @scala.inline
-  implicit class TotpOptionsOps[Self <: TotpOptions] (val x: Self) extends AnyVal {
+  implicit class TotpOptionsMutableBuilder[Self <: TotpOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDigest(value: Buffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecret(value: String): Self = this.set("secret", value.asInstanceOf[js.Any])
+    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
     @scala.inline
-    def setCounter(value: Double): Self = this.set("counter", value.asInstanceOf[js.Any])
+    def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCounter: Self = this.set("counter", js.undefined)
+    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
     
     @scala.inline
-    def setDigest(value: Buffer): Self = this.set("digest", value.asInstanceOf[js.Any])
+    def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDigest: Self = this.set("digest", js.undefined)
+    def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
     
     @scala.inline
-    def setDigits(value: Double): Self = this.set("digits", value.asInstanceOf[js.Any])
+    def setInitial_time(value: Double): Self = StObject.set(x, "initial_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDigits: Self = this.set("digits", js.undefined)
+    def setInitial_timeUndefined: Self = StObject.set(x, "initial_time", js.undefined)
     
     @scala.inline
-    def setEpoch(value: Double): Self = this.set("epoch", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEpoch: Self = this.set("epoch", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setInitial_time(value: Double): Self = this.set("initial_time", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitial_time: Self = this.set("initial_time", js.undefined)
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
-    
-    @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

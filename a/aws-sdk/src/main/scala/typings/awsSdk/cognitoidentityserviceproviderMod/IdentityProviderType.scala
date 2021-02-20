@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityProviderType extends js.Object {
+trait IdentityProviderType extends StObject {
   
   /**
     * A mapping of identity provider attributes to standard and custom user pool attributes.
@@ -56,69 +57,57 @@ object IdentityProviderType {
   }
   
   @scala.inline
-  implicit class IdentityProviderTypeOps[Self <: IdentityProviderType] (val x: Self) extends AnyVal {
+  implicit class IdentityProviderTypeMutableBuilder[Self <: IdentityProviderType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeMapping(value: AttributeMappingType): Self = StObject.set(x, "AttributeMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeMappingUndefined: Self = StObject.set(x, "AttributeMapping", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeMapping(value: AttributeMappingType): Self = this.set("AttributeMapping", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteAttributeMapping: Self = this.set("AttributeMapping", js.undefined)
+    def setIdpIdentifiers(value: IdpIdentifiersListType): Self = StObject.set(x, "IdpIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setIdpIdentifiersUndefined: Self = StObject.set(x, "IdpIdentifiers", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setIdpIdentifiersVarargs(value: IdpIdentifierType*): Self = StObject.set(x, "IdpIdentifiers", js.Array(value :_*))
     
     @scala.inline
-    def setIdpIdentifiersVarargs(value: IdpIdentifierType*): Self = this.set("IdpIdentifiers", js.Array(value :_*))
+    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdpIdentifiers(value: IdpIdentifiersListType): Self = this.set("IdpIdentifiers", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteIdpIdentifiers: Self = this.set("IdpIdentifiers", js.undefined)
+    def setProviderDetails(value: ProviderDetailsType): Self = StObject.set(x, "ProviderDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateType): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setProviderDetailsUndefined: Self = StObject.set(x, "ProviderDetails", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setProviderName(value: ProviderNameType): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderDetails(value: ProviderDetailsType): Self = this.set("ProviderDetails", value.asInstanceOf[js.Any])
+    def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
     
     @scala.inline
-    def deleteProviderDetails: Self = this.set("ProviderDetails", js.undefined)
+    def setProviderType(value: IdentityProviderTypeType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderName(value: ProviderNameType): Self = this.set("ProviderName", value.asInstanceOf[js.Any])
+    def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
     
     @scala.inline
-    def deleteProviderName: Self = this.set("ProviderName", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderType(value: IdentityProviderTypeType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderType: Self = this.set("ProviderType", js.undefined)
-    
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
   }
 }

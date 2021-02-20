@@ -2,12 +2,13 @@ package typings.electron.Electron
 
 import typings.electron.electronStrings.`menu-will-close`
 import typings.electron.electronStrings.`menu-will-show`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Menu extends js.Object {
+trait Menu extends StObject {
   
   @JSName("addListener")
   def addListener_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native

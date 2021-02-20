@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListMultipartUploadsRequest extends js.Object {
+trait ListMultipartUploadsRequest extends StObject {
   
   /**
     * The name of the bucket to which the multipart upload was initiated.  When using this API with an access point, you must direct requests to the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com. When using this operation with an access point through the AWS SDKs, you provide the access point ARN in place of the bucket name. For more information about access point ARNs, see Using Access Points in the Amazon Simple Storage Service Developer Guide. When using this API with Amazon S3 on Outposts, you must direct requests to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When using this operation using S3 on Outposts through the AWS SDKs, you provide the Outposts bucket ARN in place of the bucket name. For more information about S3 on Outposts ARNs, see Using S3 on Outposts in the Amazon Simple Storage Service Developer Guide.
@@ -53,63 +54,51 @@ object ListMultipartUploadsRequest {
   }
   
   @scala.inline
-  implicit class ListMultipartUploadsRequestOps[Self <: ListMultipartUploadsRequest] (val x: Self) extends AnyVal {
+  implicit class ListMultipartUploadsRequestMutableBuilder[Self <: ListMultipartUploadsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setEncodingType(value: EncodingType): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: Delimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingType(value: EncodingType): Self = this.set("EncodingType", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     @scala.inline
-    def deleteEncodingType: Self = this.set("EncodingType", js.undefined)
+    def setKeyMarker(value: KeyMarker): Self = StObject.set(x, "KeyMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = this.set("ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    def setKeyMarkerUndefined: Self = StObject.set(x, "KeyMarker", js.undefined)
     
     @scala.inline
-    def deleteExpectedBucketOwner: Self = this.set("ExpectedBucketOwner", js.undefined)
+    def setMaxUploads(value: MaxUploads): Self = StObject.set(x, "MaxUploads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyMarker(value: KeyMarker): Self = this.set("KeyMarker", value.asInstanceOf[js.Any])
+    def setMaxUploadsUndefined: Self = StObject.set(x, "MaxUploads", js.undefined)
     
     @scala.inline
-    def deleteKeyMarker: Self = this.set("KeyMarker", js.undefined)
+    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxUploads(value: MaxUploads): Self = this.set("MaxUploads", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deleteMaxUploads: Self = this.set("MaxUploads", js.undefined)
+    def setUploadIdMarker(value: UploadIdMarker): Self = StObject.set(x, "UploadIdMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
-    
-    @scala.inline
-    def setUploadIdMarker(value: UploadIdMarker): Self = this.set("UploadIdMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadIdMarker: Self = this.set("UploadIdMarker", js.undefined)
+    def setUploadIdMarkerUndefined: Self = StObject.set(x, "UploadIdMarker", js.undefined)
   }
 }

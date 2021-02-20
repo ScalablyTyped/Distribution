@@ -1,6 +1,7 @@
 package typings.umbraco.umbraco.services
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait INavigationService extends js.Object {
+trait INavigationService extends StObject {
   
   /**
     Internal method that should ONLY be used by the legacy API wrapper, the legacy API used to
@@ -262,84 +263,72 @@ object INavigationService {
   }
   
   @scala.inline
-  implicit class INavigationServiceOps[Self <: INavigationService] (val x: Self) extends AnyVal {
+  implicit class INavigationServiceMutableBuilder[Self <: INavigationService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeSection(value: (String, Boolean) => Unit): Self = StObject.set(x, "changeSection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecuteMenuAction(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "executeMenuAction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideDialog(value: Boolean => Unit): Self = StObject.set(x, "hideDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_setActiveTreeType(value: (String, Boolean) => Unit): Self = this.set("_setActiveTreeType", js.Any.fromFunction2(value))
+    def setHideMenu(value: () => Unit): Self = StObject.set(x, "hideMenu", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_syncPath(value: (js.Array[String], Boolean) => Unit): Self = this.set("_syncPath", js.Any.fromFunction2(value))
+    def setHideNavigation(value: () => Unit): Self = StObject.set(x, "hideNavigation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeSection(value: (String, Boolean) => Unit): Self = this.set("changeSection", js.Any.fromFunction2(value))
+    def setHideSearch(value: () => Unit): Self = StObject.set(x, "hideSearch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExecuteMenuAction(value: (js.Any, js.Any, js.Any) => Unit): Self = this.set("executeMenuAction", js.Any.fromFunction3(value))
+    def setHideTray(value: () => Unit): Self = StObject.set(x, "hideTray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHideDialog(value: Boolean => Unit): Self = this.set("hideDialog", js.Any.fromFunction1(value))
+    def setHideTree(value: () => Unit): Self = StObject.set(x, "hideTree", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHideMenu(value: () => Unit): Self = this.set("hideMenu", js.Any.fromFunction0(value))
+    def setLoadLegacyIFrame(value: String => Unit): Self = StObject.set(x, "loadLegacyIFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideNavigation(value: () => Unit): Self = this.set("hideNavigation", js.Any.fromFunction0(value))
+    def setReloadNode(value: js.Any => Unit): Self = StObject.set(x, "reloadNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideSearch(value: () => Unit): Self = this.set("hideSearch", js.Any.fromFunction0(value))
+    def setReloadSection(value: String => Unit): Self = StObject.set(x, "reloadSection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideTray(value: () => Unit): Self = this.set("hideTray", js.Any.fromFunction0(value))
+    def setSetupTreeEvents(value: js.Any => Unit): Self = StObject.set(x, "setupTreeEvents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideTree(value: () => Unit): Self = this.set("hideTree", js.Any.fromFunction0(value))
+    def setShowDialog(value: IShowDialogArgs => Unit): Self = StObject.set(x, "showDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadLegacyIFrame(value: String => Unit): Self = this.set("loadLegacyIFrame", js.Any.fromFunction1(value))
+    def setShowHelpDialog(value: () => Unit): Self = StObject.set(x, "showHelpDialog", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReloadNode(value: js.Any => Unit): Self = this.set("reloadNode", js.Any.fromFunction1(value))
+    def setShowMenu(value: (Event, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "showMenu", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReloadSection(value: String => Unit): Self = this.set("reloadSection", js.Any.fromFunction1(value))
+    def setShowSearch(value: () => Unit): Self = StObject.set(x, "showSearch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetupTreeEvents(value: js.Any => Unit): Self = this.set("setupTreeEvents", js.Any.fromFunction1(value))
+    def setShowTray(value: () => Unit): Self = StObject.set(x, "showTray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowDialog(value: IShowDialogArgs => Unit): Self = this.set("showDialog", js.Any.fromFunction1(value))
+    def setShowTree(value: (String, ISyncTreeArgs) => Unit): Self = StObject.set(x, "showTree", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setShowHelpDialog(value: () => Unit): Self = this.set("showHelpDialog", js.Any.fromFunction0(value))
+    def setShowUserDialog(value: () => Unit): Self = StObject.set(x, "showUserDialog", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowMenu(value: (Event, /* repeated */ js.Any) => Unit): Self = this.set("showMenu", js.Any.fromFunction2(value))
+    def setSyncTree(value: ISyncTreeArgs => js.Any): Self = StObject.set(x, "syncTree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowSearch(value: () => Unit): Self = this.set("showSearch", js.Any.fromFunction0(value))
+    def set_setActiveTreeType(value: (String, Boolean) => Unit): Self = StObject.set(x, "_setActiveTreeType", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setShowTray(value: () => Unit): Self = this.set("showTray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowTree(value: (String, ISyncTreeArgs) => Unit): Self = this.set("showTree", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setShowUserDialog(value: () => Unit): Self = this.set("showUserDialog", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSyncTree(value: ISyncTreeArgs => js.Any): Self = this.set("syncTree", js.Any.fromFunction1(value))
+    def set_syncPath(value: (js.Array[String], Boolean) => Unit): Self = StObject.set(x, "_syncPath", js.Any.fromFunction2(value))
   }
 }

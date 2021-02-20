@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnableRequest extends js.Object {
+trait EnableRequest extends StObject {
   
   /**
     * Longest post body size (in bytes) that would be included in requestWillBeSent notification
@@ -32,36 +33,24 @@ object EnableRequest {
   }
   
   @scala.inline
-  implicit class EnableRequestOps[Self <: EnableRequest] (val x: Self) extends AnyVal {
+  implicit class EnableRequestMutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxPostDataSize(value: integer): Self = StObject.set(x, "maxPostDataSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxPostDataSizeUndefined: Self = StObject.set(x, "maxPostDataSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResourceBufferSize(value: integer): Self = StObject.set(x, "maxResourceBufferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPostDataSize(value: integer): Self = this.set("maxPostDataSize", value.asInstanceOf[js.Any])
+    def setMaxResourceBufferSizeUndefined: Self = StObject.set(x, "maxResourceBufferSize", js.undefined)
     
     @scala.inline
-    def deleteMaxPostDataSize: Self = this.set("maxPostDataSize", js.undefined)
+    def setMaxTotalBufferSize(value: integer): Self = StObject.set(x, "maxTotalBufferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResourceBufferSize(value: integer): Self = this.set("maxResourceBufferSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResourceBufferSize: Self = this.set("maxResourceBufferSize", js.undefined)
-    
-    @scala.inline
-    def setMaxTotalBufferSize(value: integer): Self = this.set("maxTotalBufferSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTotalBufferSize: Self = this.set("maxTotalBufferSize", js.undefined)
+    def setMaxTotalBufferSizeUndefined: Self = StObject.set(x, "maxTotalBufferSize", js.undefined)
   }
 }

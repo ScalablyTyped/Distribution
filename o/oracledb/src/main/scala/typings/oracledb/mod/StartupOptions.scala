@@ -1,11 +1,12 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartupOptions extends js.Object {
+trait StartupOptions extends StObject {
   
   /**
     * Shuts down a running database using oracledb.SHUTDOWN_MODE_ABORT before restarting the database. The database start up may require instance recovery. The default for force is false.
@@ -35,36 +36,24 @@ object StartupOptions {
   }
   
   @scala.inline
-  implicit class StartupOptionsOps[Self <: StartupOptions] (val x: Self) extends AnyVal {
+  implicit class StartupOptionsMutableBuilder[Self <: StartupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPfile(value: String): Self = StObject.set(x, "pfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setPfileUndefined: Self = StObject.set(x, "pfile", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setRestrict(value: Boolean): Self = StObject.set(x, "restrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPfile(value: String): Self = this.set("pfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePfile: Self = this.set("pfile", js.undefined)
-    
-    @scala.inline
-    def setRestrict(value: Boolean): Self = this.set("restrict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrict: Self = this.set("restrict", js.undefined)
+    def setRestrictUndefined: Self = StObject.set(x, "restrict", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CmafGroupSettings extends js.Object {
+trait CmafGroupSettings extends StObject {
   
   /**
     * By default, the service creates one top-level .m3u8 HLS manifest and one top -level .mpd DASH manifest for each CMAF output group in your job. These default manifests reference every output in the output group. To create additional top-level manifests that reference a subset of the outputs in the output group, specify a list of them here. For each additional manifest that you specify, the service creates one HLS manifest and one DASH manifest.
@@ -111,135 +112,123 @@ object CmafGroupSettings {
   }
   
   @scala.inline
-  implicit class CmafGroupSettingsOps[Self <: CmafGroupSettings] (val x: Self) extends AnyVal {
+  implicit class CmafGroupSettingsMutableBuilder[Self <: CmafGroupSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalManifests(value: listOfCmafAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalManifestsUndefined: Self = StObject.set(x, "AdditionalManifests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalManifestsVarargs(value: CmafAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalManifestsVarargs(value: CmafAdditionalManifest*): Self = this.set("AdditionalManifests", js.Array(value :_*))
+    def setBaseUrl(value: string): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalManifests(value: listOfCmafAdditionalManifest): Self = this.set("AdditionalManifests", value.asInstanceOf[js.Any])
+    def setBaseUrlUndefined: Self = StObject.set(x, "BaseUrl", js.undefined)
     
     @scala.inline
-    def deleteAdditionalManifests: Self = this.set("AdditionalManifests", js.undefined)
+    def setClientCache(value: CmafClientCache): Self = StObject.set(x, "ClientCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: string): Self = this.set("BaseUrl", value.asInstanceOf[js.Any])
+    def setClientCacheUndefined: Self = StObject.set(x, "ClientCache", js.undefined)
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("BaseUrl", js.undefined)
+    def setCodecSpecification(value: CmafCodecSpecification): Self = StObject.set(x, "CodecSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCache(value: CmafClientCache): Self = this.set("ClientCache", value.asInstanceOf[js.Any])
+    def setCodecSpecificationUndefined: Self = StObject.set(x, "CodecSpecification", js.undefined)
     
     @scala.inline
-    def deleteClientCache: Self = this.set("ClientCache", js.undefined)
+    def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecSpecification(value: CmafCodecSpecification): Self = this.set("CodecSpecification", value.asInstanceOf[js.Any])
+    def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodecSpecification: Self = this.set("CodecSpecification", js.undefined)
+    def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
     
     @scala.inline
-    def setDestination(value: stringPatternS3): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("Destination", js.undefined)
+    def setEncryption(value: CmafEncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationSettings(value: DestinationSettings): Self = this.set("DestinationSettings", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def deleteDestinationSettings: Self = this.set("DestinationSettings", js.undefined)
+    def setFragmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "FragmentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: CmafEncryptionSettings): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setFragmentLengthUndefined: Self = StObject.set(x, "FragmentLength", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setManifestCompression(value: CmafManifestCompression): Self = StObject.set(x, "ManifestCompression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentLength(value: integerMin1Max2147483647): Self = this.set("FragmentLength", value.asInstanceOf[js.Any])
+    def setManifestCompressionUndefined: Self = StObject.set(x, "ManifestCompression", js.undefined)
     
     @scala.inline
-    def deleteFragmentLength: Self = this.set("FragmentLength", js.undefined)
+    def setManifestDurationFormat(value: CmafManifestDurationFormat): Self = StObject.set(x, "ManifestDurationFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestCompression(value: CmafManifestCompression): Self = this.set("ManifestCompression", value.asInstanceOf[js.Any])
+    def setManifestDurationFormatUndefined: Self = StObject.set(x, "ManifestDurationFormat", js.undefined)
     
     @scala.inline
-    def deleteManifestCompression: Self = this.set("ManifestCompression", js.undefined)
+    def setMinBufferTime(value: integerMin0Max2147483647): Self = StObject.set(x, "MinBufferTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestDurationFormat(value: CmafManifestDurationFormat): Self = this.set("ManifestDurationFormat", value.asInstanceOf[js.Any])
+    def setMinBufferTimeUndefined: Self = StObject.set(x, "MinBufferTime", js.undefined)
     
     @scala.inline
-    def deleteManifestDurationFormat: Self = this.set("ManifestDurationFormat", js.undefined)
+    def setMinFinalSegmentLength(value: doubleMin0Max2147483647): Self = StObject.set(x, "MinFinalSegmentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBufferTime(value: integerMin0Max2147483647): Self = this.set("MinBufferTime", value.asInstanceOf[js.Any])
+    def setMinFinalSegmentLengthUndefined: Self = StObject.set(x, "MinFinalSegmentLength", js.undefined)
     
     @scala.inline
-    def deleteMinBufferTime: Self = this.set("MinBufferTime", js.undefined)
+    def setMpdProfile(value: CmafMpdProfile): Self = StObject.set(x, "MpdProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinFinalSegmentLength(value: doubleMin0Max2147483647): Self = this.set("MinFinalSegmentLength", value.asInstanceOf[js.Any])
+    def setMpdProfileUndefined: Self = StObject.set(x, "MpdProfile", js.undefined)
     
     @scala.inline
-    def deleteMinFinalSegmentLength: Self = this.set("MinFinalSegmentLength", js.undefined)
+    def setSegmentControl(value: CmafSegmentControl): Self = StObject.set(x, "SegmentControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpdProfile(value: CmafMpdProfile): Self = this.set("MpdProfile", value.asInstanceOf[js.Any])
+    def setSegmentControlUndefined: Self = StObject.set(x, "SegmentControl", js.undefined)
     
     @scala.inline
-    def deleteMpdProfile: Self = this.set("MpdProfile", js.undefined)
+    def setSegmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "SegmentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentControl(value: CmafSegmentControl): Self = this.set("SegmentControl", value.asInstanceOf[js.Any])
+    def setSegmentLengthUndefined: Self = StObject.set(x, "SegmentLength", js.undefined)
     
     @scala.inline
-    def deleteSegmentControl: Self = this.set("SegmentControl", js.undefined)
+    def setStreamInfResolution(value: CmafStreamInfResolution): Self = StObject.set(x, "StreamInfResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentLength(value: integerMin1Max2147483647): Self = this.set("SegmentLength", value.asInstanceOf[js.Any])
+    def setStreamInfResolutionUndefined: Self = StObject.set(x, "StreamInfResolution", js.undefined)
     
     @scala.inline
-    def deleteSegmentLength: Self = this.set("SegmentLength", js.undefined)
+    def setWriteDashManifest(value: CmafWriteDASHManifest): Self = StObject.set(x, "WriteDashManifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamInfResolution(value: CmafStreamInfResolution): Self = this.set("StreamInfResolution", value.asInstanceOf[js.Any])
+    def setWriteDashManifestUndefined: Self = StObject.set(x, "WriteDashManifest", js.undefined)
     
     @scala.inline
-    def deleteStreamInfResolution: Self = this.set("StreamInfResolution", js.undefined)
+    def setWriteHlsManifest(value: CmafWriteHLSManifest): Self = StObject.set(x, "WriteHlsManifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWriteDashManifest(value: CmafWriteDASHManifest): Self = this.set("WriteDashManifest", value.asInstanceOf[js.Any])
+    def setWriteHlsManifestUndefined: Self = StObject.set(x, "WriteHlsManifest", js.undefined)
     
     @scala.inline
-    def deleteWriteDashManifest: Self = this.set("WriteDashManifest", js.undefined)
+    def setWriteSegmentTimelineInRepresentation(value: CmafWriteSegmentTimelineInRepresentation): Self = StObject.set(x, "WriteSegmentTimelineInRepresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWriteHlsManifest(value: CmafWriteHLSManifest): Self = this.set("WriteHlsManifest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteHlsManifest: Self = this.set("WriteHlsManifest", js.undefined)
-    
-    @scala.inline
-    def setWriteSegmentTimelineInRepresentation(value: CmafWriteSegmentTimelineInRepresentation): Self = this.set("WriteSegmentTimelineInRepresentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteSegmentTimelineInRepresentation: Self = this.set("WriteSegmentTimelineInRepresentation", js.undefined)
+    def setWriteSegmentTimelineInRepresentationUndefined: Self = StObject.set(x, "WriteSegmentTimelineInRepresentation", js.undefined)
   }
 }

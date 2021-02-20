@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetApplicationRevisionOutput extends js.Object {
+trait GetApplicationRevisionOutput extends StObject {
   
   /**
     * The name of the application that corresponds to the revision.
@@ -31,36 +32,24 @@ object GetApplicationRevisionOutput {
   }
   
   @scala.inline
-  implicit class GetApplicationRevisionOutputOps[Self <: GetApplicationRevisionOutput] (val x: Self) extends AnyVal {
+  implicit class GetApplicationRevisionOutputMutableBuilder[Self <: GetApplicationRevisionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevision(value: RevisionLocation): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setRevisionInfo(value: GenericRevisionInfo): Self = StObject.set(x, "revisionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
+    def setRevisionInfoUndefined: Self = StObject.set(x, "revisionInfo", js.undefined)
     
     @scala.inline
-    def setRevision(value: RevisionLocation): Self = this.set("revision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevision: Self = this.set("revision", js.undefined)
-    
-    @scala.inline
-    def setRevisionInfo(value: GenericRevisionInfo): Self = this.set("revisionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionInfo: Self = this.set("revisionInfo", js.undefined)
+    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
   }
 }

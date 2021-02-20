@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.createBreakpointsMod.Breakpoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/withWidth.WithWidthOptions> */
 @js.native
-trait PartialWithWidthOptions extends js.Object {
+trait PartialWithWidthOptions extends StObject {
   
   var initialWidth: js.UndefOr[Breakpoint] = js.native
   
@@ -26,42 +27,30 @@ object PartialWithWidthOptions {
   }
   
   @scala.inline
-  implicit class PartialWithWidthOptionsOps[Self <: PartialWithWidthOptions] (val x: Self) extends AnyVal {
+  implicit class PartialWithWidthOptionsMutableBuilder[Self <: PartialWithWidthOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialWidth(value: Breakpoint): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialWidthUndefined: Self = StObject.set(x, "initialWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoSSR(value: Boolean): Self = StObject.set(x, "noSSR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialWidth(value: Breakpoint): Self = this.set("initialWidth", value.asInstanceOf[js.Any])
+    def setNoSSRUndefined: Self = StObject.set(x, "noSSR", js.undefined)
     
     @scala.inline
-    def deleteInitialWidth: Self = this.set("initialWidth", js.undefined)
+    def setResizeInterval(value: Double): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSSR(value: Boolean): Self = this.set("noSSR", value.asInstanceOf[js.Any])
+    def setResizeIntervalUndefined: Self = StObject.set(x, "resizeInterval", js.undefined)
     
     @scala.inline
-    def deleteNoSSR: Self = this.set("noSSR", js.undefined)
+    def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeInterval(value: Double): Self = this.set("resizeInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResizeInterval: Self = this.set("resizeInterval", js.undefined)
-    
-    @scala.inline
-    def setWithTheme(value: Boolean): Self = this.set("withTheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithTheme: Self = this.set("withTheme", js.undefined)
+    def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
   }
 }

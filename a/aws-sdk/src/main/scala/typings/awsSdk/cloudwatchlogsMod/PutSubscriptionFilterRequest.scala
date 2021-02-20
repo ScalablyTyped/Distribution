@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutSubscriptionFilterRequest extends js.Object {
+trait PutSubscriptionFilterRequest extends StObject {
   
   /**
     * The ARN of the destination to deliver matching log events to. Currently, the supported destinations are:   An Amazon Kinesis stream belonging to the same account as the subscription filter, for same-account delivery.   A logical destination (specified using an ARN) belonging to a different account, for cross-account delivery.   An Amazon Kinesis Firehose delivery stream belonging to the same account as the subscription filter, for same-account delivery.   An AWS Lambda function belonging to the same account as the subscription filter, for same-account delivery.  
@@ -51,42 +52,30 @@ object PutSubscriptionFilterRequest {
   }
   
   @scala.inline
-  implicit class PutSubscriptionFilterRequestOps[Self <: PutSubscriptionFilterRequest] (val x: Self) extends AnyVal {
+  implicit class PutSubscriptionFilterRequestMutableBuilder[Self <: PutSubscriptionFilterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationArn(value: DestinationArn): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
     @scala.inline
-    def setDestinationArn(value: DestinationArn): Self = this.set("destinationArn", value.asInstanceOf[js.Any])
+    def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterName(value: FilterName): Self = this.set("filterName", value.asInstanceOf[js.Any])
+    def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterPattern(value: FilterPattern): Self = this.set("filterPattern", value.asInstanceOf[js.Any])
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistribution(value: Distribution): Self = this.set("distribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistribution: Self = this.set("distribution", js.undefined)
-    
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

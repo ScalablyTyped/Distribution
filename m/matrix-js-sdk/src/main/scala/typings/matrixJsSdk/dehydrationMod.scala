@@ -2,18 +2,20 @@ package typings.matrixJsSdk
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("matrix-js-sdk/lib/crypto/dehydration", JSImport.Namespace)
-@js.native
-object dehydrationMod extends js.Object {
+object dehydrationMod {
   
+  @JSImport("matrix-js-sdk/lib/crypto/dehydration", "DEHYDRATION_ALGORITHM")
+  @js.native
   val DEHYDRATION_ALGORITHM: /* "org.matrix.msc2697.v1.olm.libolm_pickle" */ String = js.native
   
+  @JSImport("matrix-js-sdk/lib/crypto/dehydration", "DehydrationManager")
   @js.native
-  class DehydrationManager protected () extends js.Object {
+  class DehydrationManager protected () extends StObject {
     def this(crypto: js.Any) = this()
     
     var crypto: js.Any = js.native

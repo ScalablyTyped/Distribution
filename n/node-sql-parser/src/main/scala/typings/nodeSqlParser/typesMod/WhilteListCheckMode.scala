@@ -1,5 +1,6 @@
 package typings.nodeSqlParser.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeSqlParser.nodeSqlParserStrings.table
   - typings.nodeSqlParser.nodeSqlParserStrings.column
 */
-trait WhilteListCheckMode extends js.Object
+trait WhilteListCheckMode extends StObject
 object WhilteListCheckMode {
   
   @scala.inline

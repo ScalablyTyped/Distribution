@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetGameScoreOptions extends js.Object {
+trait SetGameScoreOptions extends StObject {
   
   var chat_id: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object SetGameScoreOptions {
   }
   
   @scala.inline
-  implicit class SetGameScoreOptionsOps[Self <: SetGameScoreOptions] (val x: Self) extends AnyVal {
+  implicit class SetGameScoreOptionsMutableBuilder[Self <: SetGameScoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChat_id(value: Double): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChat_idUndefined: Self = StObject.set(x, "chat_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisable_edit_message(value: Boolean): Self = StObject.set(x, "disable_edit_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChat_id(value: Double): Self = this.set("chat_id", value.asInstanceOf[js.Any])
+    def setDisable_edit_messageUndefined: Self = StObject.set(x, "disable_edit_message", js.undefined)
     
     @scala.inline
-    def deleteChat_id: Self = this.set("chat_id", js.undefined)
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_edit_message(value: Boolean): Self = this.set("disable_edit_message", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteDisable_edit_message: Self = this.set("disable_edit_message", js.undefined)
+    def setInline_message_id(value: String): Self = StObject.set(x, "inline_message_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setInline_message_idUndefined: Self = StObject.set(x, "inline_message_id", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setMessage_id(value: Double): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline_message_id(value: String): Self = this.set("inline_message_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInline_message_id: Self = this.set("inline_message_id", js.undefined)
-    
-    @scala.inline
-    def setMessage_id(value: Double): Self = this.set("message_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage_id: Self = this.set("message_id", js.undefined)
+    def setMessage_idUndefined: Self = StObject.set(x, "message_id", js.undefined)
   }
 }

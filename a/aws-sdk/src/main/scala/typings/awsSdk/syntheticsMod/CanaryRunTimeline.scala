@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanaryRunTimeline extends js.Object {
+trait CanaryRunTimeline extends StObject {
   
   /**
     * The end time of the run.
@@ -26,30 +27,18 @@ object CanaryRunTimeline {
   }
   
   @scala.inline
-  implicit class CanaryRunTimelineOps[Self <: CanaryRunTimeline] (val x: Self) extends AnyVal {
+  implicit class CanaryRunTimelineMutableBuilder[Self <: CanaryRunTimeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleted(value: Timestamp): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedUndefined: Self = StObject.set(x, "Completed", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStarted(value: Timestamp): Self = StObject.set(x, "Started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: Timestamp): Self = this.set("Completed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompleted: Self = this.set("Completed", js.undefined)
-    
-    @scala.inline
-    def setStarted(value: Timestamp): Self = this.set("Started", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarted: Self = this.set("Started", js.undefined)
+    def setStartedUndefined: Self = StObject.set(x, "Started", js.undefined)
   }
 }

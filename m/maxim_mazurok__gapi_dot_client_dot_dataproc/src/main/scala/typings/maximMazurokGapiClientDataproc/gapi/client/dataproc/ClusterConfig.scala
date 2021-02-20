@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterConfig extends js.Object {
+trait ClusterConfig extends StObject {
   
   /** Optional. Autoscaling config for the policy associated with the cluster. Cluster does not autoscale if this field is unset. */
   var autoscalingConfig: js.UndefOr[AutoscalingConfig] = js.native
@@ -67,99 +68,87 @@ object ClusterConfig {
   }
   
   @scala.inline
-  implicit class ClusterConfigOps[Self <: ClusterConfig] (val x: Self) extends AnyVal {
+  implicit class ClusterConfigMutableBuilder[Self <: ClusterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoscalingConfig(value: AutoscalingConfig): Self = StObject.set(x, "autoscalingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoscalingConfigUndefined: Self = StObject.set(x, "autoscalingConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigBucket(value: String): Self = StObject.set(x, "configBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoscalingConfig(value: AutoscalingConfig): Self = this.set("autoscalingConfig", value.asInstanceOf[js.Any])
+    def setConfigBucketUndefined: Self = StObject.set(x, "configBucket", js.undefined)
     
     @scala.inline
-    def deleteAutoscalingConfig: Self = this.set("autoscalingConfig", js.undefined)
+    def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigBucket(value: String): Self = this.set("configBucket", value.asInstanceOf[js.Any])
+    def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
     
     @scala.inline
-    def deleteConfigBucket: Self = this.set("configBucket", js.undefined)
+    def setEndpointConfig(value: EndpointConfig): Self = StObject.set(x, "endpointConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionConfig(value: EncryptionConfig): Self = this.set("encryptionConfig", value.asInstanceOf[js.Any])
+    def setEndpointConfigUndefined: Self = StObject.set(x, "endpointConfig", js.undefined)
     
     @scala.inline
-    def deleteEncryptionConfig: Self = this.set("encryptionConfig", js.undefined)
+    def setGceClusterConfig(value: GceClusterConfig): Self = StObject.set(x, "gceClusterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointConfig(value: EndpointConfig): Self = this.set("endpointConfig", value.asInstanceOf[js.Any])
+    def setGceClusterConfigUndefined: Self = StObject.set(x, "gceClusterConfig", js.undefined)
     
     @scala.inline
-    def deleteEndpointConfig: Self = this.set("endpointConfig", js.undefined)
+    def setInitializationActions(value: js.Array[NodeInitializationAction]): Self = StObject.set(x, "initializationActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGceClusterConfig(value: GceClusterConfig): Self = this.set("gceClusterConfig", value.asInstanceOf[js.Any])
+    def setInitializationActionsUndefined: Self = StObject.set(x, "initializationActions", js.undefined)
     
     @scala.inline
-    def deleteGceClusterConfig: Self = this.set("gceClusterConfig", js.undefined)
+    def setInitializationActionsVarargs(value: NodeInitializationAction*): Self = StObject.set(x, "initializationActions", js.Array(value :_*))
     
     @scala.inline
-    def setInitializationActionsVarargs(value: NodeInitializationAction*): Self = this.set("initializationActions", js.Array(value :_*))
+    def setLifecycleConfig(value: LifecycleConfig): Self = StObject.set(x, "lifecycleConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializationActions(value: js.Array[NodeInitializationAction]): Self = this.set("initializationActions", value.asInstanceOf[js.Any])
+    def setLifecycleConfigUndefined: Self = StObject.set(x, "lifecycleConfig", js.undefined)
     
     @scala.inline
-    def deleteInitializationActions: Self = this.set("initializationActions", js.undefined)
+    def setMasterConfig(value: InstanceGroupConfig): Self = StObject.set(x, "masterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycleConfig(value: LifecycleConfig): Self = this.set("lifecycleConfig", value.asInstanceOf[js.Any])
+    def setMasterConfigUndefined: Self = StObject.set(x, "masterConfig", js.undefined)
     
     @scala.inline
-    def deleteLifecycleConfig: Self = this.set("lifecycleConfig", js.undefined)
+    def setSecondaryWorkerConfig(value: InstanceGroupConfig): Self = StObject.set(x, "secondaryWorkerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterConfig(value: InstanceGroupConfig): Self = this.set("masterConfig", value.asInstanceOf[js.Any])
+    def setSecondaryWorkerConfigUndefined: Self = StObject.set(x, "secondaryWorkerConfig", js.undefined)
     
     @scala.inline
-    def deleteMasterConfig: Self = this.set("masterConfig", js.undefined)
+    def setSecurityConfig(value: SecurityConfig): Self = StObject.set(x, "securityConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryWorkerConfig(value: InstanceGroupConfig): Self = this.set("secondaryWorkerConfig", value.asInstanceOf[js.Any])
+    def setSecurityConfigUndefined: Self = StObject.set(x, "securityConfig", js.undefined)
     
     @scala.inline
-    def deleteSecondaryWorkerConfig: Self = this.set("secondaryWorkerConfig", js.undefined)
+    def setSoftwareConfig(value: SoftwareConfig): Self = StObject.set(x, "softwareConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityConfig(value: SecurityConfig): Self = this.set("securityConfig", value.asInstanceOf[js.Any])
+    def setSoftwareConfigUndefined: Self = StObject.set(x, "softwareConfig", js.undefined)
     
     @scala.inline
-    def deleteSecurityConfig: Self = this.set("securityConfig", js.undefined)
+    def setTempBucket(value: String): Self = StObject.set(x, "tempBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftwareConfig(value: SoftwareConfig): Self = this.set("softwareConfig", value.asInstanceOf[js.Any])
+    def setTempBucketUndefined: Self = StObject.set(x, "tempBucket", js.undefined)
     
     @scala.inline
-    def deleteSoftwareConfig: Self = this.set("softwareConfig", js.undefined)
+    def setWorkerConfig(value: InstanceGroupConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTempBucket(value: String): Self = this.set("tempBucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTempBucket: Self = this.set("tempBucket", js.undefined)
-    
-    @scala.inline
-    def setWorkerConfig(value: InstanceGroupConfig): Self = this.set("workerConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerConfig: Self = this.set("workerConfig", js.undefined)
+    def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
   }
 }

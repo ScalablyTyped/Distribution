@@ -1,11 +1,12 @@
 package typings.hafasClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alternative extends js.Object {
+trait Alternative extends StObject {
   
   var cancelled: js.UndefOr[Boolean] = js.native
   
@@ -50,126 +51,114 @@ object Alternative {
   }
   
   @scala.inline
-  implicit class AlternativeOps[Self <: Alternative] (val x: Self) extends AnyVal {
+  implicit class AlternativeMutableBuilder[Self <: Alternative] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTripId(value: String): Self = this.set("tripId", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def setCancelled(value: Boolean): Self = this.set("cancelled", value.asInstanceOf[js.Any])
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCancelled: Self = this.set("cancelled", js.undefined)
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setLoadFactor(value: String): Self = StObject.set(x, "loadFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setLoadFactorUndefined: Self = StObject.set(x, "loadFactor", js.undefined)
     
     @scala.inline
-    def setLine(value: Line): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setNextStopovers(value: js.Array[StopOver]): Self = StObject.set(x, "nextStopovers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setNextStopoversUndefined: Self = StObject.set(x, "nextStopovers", js.undefined)
     
     @scala.inline
-    def setLoadFactor(value: String): Self = this.set("loadFactor", value.asInstanceOf[js.Any])
+    def setNextStopoversVarargs(value: StopOver*): Self = StObject.set(x, "nextStopovers", js.Array(value :_*))
     
     @scala.inline
-    def deleteLoadFactor: Self = this.set("loadFactor", js.undefined)
+    def setPlannedPlatform(value: String): Self = StObject.set(x, "plannedPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextStopoversVarargs(value: StopOver*): Self = this.set("nextStopovers", js.Array(value :_*))
+    def setPlannedPlatformUndefined: Self = StObject.set(x, "plannedPlatform", js.undefined)
     
     @scala.inline
-    def setNextStopovers(value: js.Array[StopOver]): Self = this.set("nextStopovers", value.asInstanceOf[js.Any])
+    def setPlannedWhen(value: String): Self = StObject.set(x, "plannedWhen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNextStopovers: Self = this.set("nextStopovers", js.undefined)
+    def setPlannedWhenUndefined: Self = StObject.set(x, "plannedWhen", js.undefined)
     
     @scala.inline
-    def setPlannedPlatform(value: String): Self = this.set("plannedPlatform", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlannedPlatform: Self = this.set("plannedPlatform", js.undefined)
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def setPlannedWhen(value: String): Self = this.set("plannedWhen", value.asInstanceOf[js.Any])
+    def setPreviousStopovers(value: js.Array[StopOver]): Self = StObject.set(x, "previousStopovers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlannedWhen: Self = this.set("plannedWhen", js.undefined)
+    def setPreviousStopoversUndefined: Self = StObject.set(x, "previousStopovers", js.undefined)
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setPreviousStopoversVarargs(value: StopOver*): Self = StObject.set(x, "previousStopovers", js.Array(value :_*))
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setPrognosedPlatform(value: String): Self = StObject.set(x, "prognosedPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousStopoversVarargs(value: StopOver*): Self = this.set("previousStopovers", js.Array(value :_*))
+    def setPrognosedPlatformUndefined: Self = StObject.set(x, "prognosedPlatform", js.undefined)
     
     @scala.inline
-    def setPreviousStopovers(value: js.Array[StopOver]): Self = this.set("previousStopovers", value.asInstanceOf[js.Any])
+    def setPrognosedWhen(value: String): Self = StObject.set(x, "prognosedWhen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreviousStopovers: Self = this.set("previousStopovers", js.undefined)
+    def setPrognosedWhenUndefined: Self = StObject.set(x, "prognosedWhen", js.undefined)
     
     @scala.inline
-    def setPrognosedPlatform(value: String): Self = this.set("prognosedPlatform", value.asInstanceOf[js.Any])
+    def setProvenance(value: String): Self = StObject.set(x, "provenance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrognosedPlatform: Self = this.set("prognosedPlatform", js.undefined)
+    def setProvenanceUndefined: Self = StObject.set(x, "provenance", js.undefined)
     
     @scala.inline
-    def setPrognosedWhen(value: String): Self = this.set("prognosedWhen", value.asInstanceOf[js.Any])
+    def setRemarks(value: js.Array[Hint | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrognosedWhen: Self = this.set("prognosedWhen", js.undefined)
+    def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
     @scala.inline
-    def setProvenance(value: String): Self = this.set("provenance", value.asInstanceOf[js.Any])
+    def setRemarksVarargs(value: (Hint | Warning)*): Self = StObject.set(x, "remarks", js.Array(value :_*))
     
     @scala.inline
-    def deleteProvenance: Self = this.set("provenance", js.undefined)
+    def setStop(value: Station | Stop): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemarksVarargs(value: (Hint | Warning)*): Self = this.set("remarks", js.Array(value :_*))
+    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
     @scala.inline
-    def setRemarks(value: js.Array[Hint | Warning]): Self = this.set("remarks", value.asInstanceOf[js.Any])
+    def setTripId(value: String): Self = StObject.set(x, "tripId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemarks: Self = this.set("remarks", js.undefined)
+    def setWhen(value: String): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop(value: Station | Stop): Self = this.set("stop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStop: Self = this.set("stop", js.undefined)
-    
-    @scala.inline
-    def setWhen(value: String): Self = this.set("when", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhen: Self = this.set("when", js.undefined)
+    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

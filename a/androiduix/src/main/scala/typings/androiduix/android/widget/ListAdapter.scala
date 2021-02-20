@@ -3,6 +3,7 @@ package typings.androiduix.android.widget
 import typings.androiduix.android.database.DataSetObserver
 import typings.androiduix.android.view.View
 import typings.androiduix.android.view.ViewGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,24 +37,12 @@ object ListAdapter {
   }
   
   @scala.inline
-  implicit class ListAdapterOps[Self <: ListAdapter] (val x: Self) extends AnyVal {
+  implicit class ListAdapterMutableBuilder[Self <: ListAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreAllItemsEnabled(value: () => Boolean): Self = StObject.set(x, "areAllItemsEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAreAllItemsEnabled(value: () => Boolean): Self = this.set("areAllItemsEnabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsEnabled(value: Double => Boolean): Self = this.set("isEnabled", js.Any.fromFunction1(value))
+    def setIsEnabled(value: Double => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
   }
 }

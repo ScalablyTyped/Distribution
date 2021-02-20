@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.igtvChannelFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgtvChannelFeedResponseUserDict extends js.Object {
+trait IgtvChannelFeedResponseUserDict extends StObject {
   
   var biography: String = js.native
   
@@ -80,81 +81,69 @@ object IgtvChannelFeedResponseUserDict {
   }
   
   @scala.inline
-  implicit class IgtvChannelFeedResponseUserDictOps[Self <: IgtvChannelFeedResponseUserDict] (val x: Self) extends AnyVal {
+  implicit class IgtvChannelFeedResponseUserDictMutableBuilder[Self <: IgtvChannelFeedResponseUserDict] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBiography_with_entities(value: IgtvChannelFeedResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternal_lynx_url(value: String): Self = StObject.set(x, "external_lynx_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBiography(value: String): Self = this.set("biography", value.asInstanceOf[js.Any])
+    def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBiography_with_entities(value: IgtvChannelFeedResponseBiographyWithEntities): Self = this.set("biography_with_entities", value.asInstanceOf[js.Any])
+    def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_lynx_url(value: String): Self = this.set("external_lynx_url", value.asInstanceOf[js.Any])
+    def setFollowing_count(value: Double): Self = StObject.set(x, "following_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_url(value: String): Self = this.set("external_url", value.asInstanceOf[js.Any])
+    def setFollowing_tag_count(value: Double): Self = StObject.set(x, "following_tag_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollower_count(value: Double): Self = this.set("follower_count", value.asInstanceOf[js.Any])
+    def setFriendship_status(value: IgtvChannelFeedResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing_count(value: Double): Self = this.set("following_count", value.asInstanceOf[js.Any])
+    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing_tag_count(value: Double): Self = this.set("following_tag_count", value.asInstanceOf[js.Any])
+    def setGeo_media_count(value: Double): Self = StObject.set(x, "geo_media_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendship_status(value: IgtvChannelFeedResponseFriendshipStatus): Self = this.set("friendship_status", value.asInstanceOf[js.Any])
+    def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull_name(value: String): Self = this.set("full_name", value.asInstanceOf[js.Any])
+    def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeo_media_count(value: Double): Self = this.set("geo_media_count", value.asInstanceOf[js.Any])
+    def setHas_igtv_series(value: Boolean): Self = StObject.set(x, "has_igtv_series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_anonymous_profile_picture(value: Boolean): Self = this.set("has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_biography_translation(value: Boolean): Self = this.set("has_biography_translation", value.asInstanceOf[js.Any])
+    def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_igtv_series(value: Boolean): Self = this.set("has_igtv_series", value.asInstanceOf[js.Any])
+    def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
+    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_verified(value: Boolean): Self = this.set("is_verified", value.asInstanceOf[js.Any])
+    def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_count(value: Double): Self = this.set("media_count", value.asInstanceOf[js.Any])
+    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setTotal_igtv_videos(value: Double): Self = StObject.set(x, "total_igtv_videos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_pic_id(value: String): Self = this.set("profile_pic_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_igtv_videos(value: Double): Self = this.set("total_igtv_videos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

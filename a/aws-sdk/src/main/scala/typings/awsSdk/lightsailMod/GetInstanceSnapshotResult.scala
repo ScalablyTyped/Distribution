@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInstanceSnapshotResult extends js.Object {
+trait GetInstanceSnapshotResult extends StObject {
   
   /**
     * An array of key-value pairs containing information about the results of your get instance snapshot request.
@@ -21,24 +22,12 @@ object GetInstanceSnapshotResult {
   }
   
   @scala.inline
-  implicit class GetInstanceSnapshotResultOps[Self <: GetInstanceSnapshotResult] (val x: Self) extends AnyVal {
+  implicit class GetInstanceSnapshotResultMutableBuilder[Self <: GetInstanceSnapshotResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceSnapshot(value: InstanceSnapshot): Self = StObject.set(x, "instanceSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceSnapshot(value: InstanceSnapshot): Self = this.set("instanceSnapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceSnapshot: Self = this.set("instanceSnapshot", js.undefined)
+    def setInstanceSnapshotUndefined: Self = StObject.set(x, "instanceSnapshot", js.undefined)
   }
 }

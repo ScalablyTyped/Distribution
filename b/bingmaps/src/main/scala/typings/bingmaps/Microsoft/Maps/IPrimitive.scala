@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPrimitive extends js.Object {
+trait IPrimitive extends StObject {
   
   /**
     * Gets the css cursor value when the primitive has events on it.
@@ -37,33 +38,21 @@ object IPrimitive {
   }
   
   @scala.inline
-  implicit class IPrimitiveOps[Self <: IPrimitive] (val x: Self) extends AnyVal {
+  implicit class IPrimitiveMutableBuilder[Self <: IPrimitive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCursor(value: () => String): Self = StObject.set(x, "getCursor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCursor(value: () => String): Self = this.set("getCursor", js.Any.fromFunction0(value))
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setGetVisible(value: () => Boolean): Self = this.set("getVisible", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetOptions(value: IPrimitiveOptions => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setSetOptions(value: IPrimitiveOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

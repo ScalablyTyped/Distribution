@@ -3,12 +3,13 @@ package typings.lodash.fpMod
 import typings.lodash.mod.NumericDictionary
 import typings.lodash.mod.PropertyPath
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashPath extends js.Object {
+trait LodashPath extends StObject {
   
   def apply(path: Double): LodashPath9x1 = js.native
   def apply(path: PropertyPath): js.UndefOr[scala.Nothing] = js.native

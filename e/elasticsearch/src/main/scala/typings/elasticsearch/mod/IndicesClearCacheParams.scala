@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ trait IndicesClearCacheParams extends GenericParams {
   
   var fielddata: js.UndefOr[Boolean] = js.native
   
-      // yes the docs really have both
+  // yes the docs really have both
   var fields: js.UndefOr[NameList] = js.native
   
   var ignoreUnavailable: js.UndefOr[Boolean] = js.native
@@ -37,78 +38,66 @@ object IndicesClearCacheParams {
   }
   
   @scala.inline
-  implicit class IndicesClearCacheParamsOps[Self <: IndicesClearCacheParams] (val x: Self) extends AnyVal {
+  implicit class IndicesClearCacheParamsMutableBuilder[Self <: IndicesClearCacheParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowNoIndices(value: Boolean): Self = this.set("allowNoIndices", value.asInstanceOf[js.Any])
+    def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
     
     @scala.inline
-    def deleteAllowNoIndices: Self = this.set("allowNoIndices", js.undefined)
+    def setFieldData(value: Boolean): Self = StObject.set(x, "fieldData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandWildcards(value: ExpandWildcards): Self = this.set("expandWildcards", value.asInstanceOf[js.Any])
+    def setFieldDataUndefined: Self = StObject.set(x, "fieldData", js.undefined)
     
     @scala.inline
-    def deleteExpandWildcards: Self = this.set("expandWildcards", js.undefined)
+    def setFields(value: NameList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldData(value: Boolean): Self = this.set("fieldData", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteFieldData: Self = this.set("fieldData", js.undefined)
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: NameList): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreUnavailable(value: Boolean): Self = this.set("ignoreUnavailable", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteIgnoreUnavailable: Self = this.set("ignoreUnavailable", js.undefined)
+    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
     @scala.inline
-    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    def setQuery(value: Boolean): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setRecycler(value: Boolean): Self = StObject.set(x, "recycler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: Boolean): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setRecyclerUndefined: Self = StObject.set(x, "recycler", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setRequest(value: Boolean): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecycler(value: Boolean): Self = this.set("recycler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecycler: Self = this.set("recycler", js.undefined)
-    
-    @scala.inline
-    def setRequest(value: Boolean): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
   }
 }

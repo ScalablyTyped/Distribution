@@ -1,12 +1,13 @@
 package typings.tuyaPanelKit.anon
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateFormat extends js.Object {
+trait DateFormat extends StObject {
   
   def dateFormat(fmt: String, date: Date): Double = js.native
   
@@ -42,42 +43,30 @@ object DateFormat {
   }
   
   @scala.inline
-  implicit class DateFormatOps[Self <: DateFormat] (val x: Self) extends AnyVal {
+  implicit class DateFormatMutableBuilder[Self <: DateFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormat(value: (String, Date) => Double): Self = StObject.set(x, "dateFormat", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateToTimer(value: String => Double): Self = StObject.set(x, "dateToTimer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParseHour12(value: Double => String): Self = StObject.set(x, "parseHour12", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateFormat(value: (String, Date) => Double): Self = this.set("dateFormat", js.Any.fromFunction2(value))
+    def setParseSecond(value: (Double, Double) => js.Array[String]): Self = StObject.set(x, "parseSecond", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDateToTimer(value: String => Double): Self = this.set("dateToTimer", js.Any.fromFunction1(value))
+    def setParseTimer(value: Double => String): Self = StObject.set(x, "parseTimer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseHour12(value: Double => String): Self = this.set("parseHour12", js.Any.fromFunction1(value))
+    def setParseTimers(value: Double => String): Self = StObject.set(x, "parseTimers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseSecond(value: (Double, Double) => js.Array[String]): Self = this.set("parseSecond", js.Any.fromFunction2(value))
+    def setStringToSecond(value: String => Double): Self = StObject.set(x, "stringToSecond", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseTimer(value: Double => String): Self = this.set("parseTimer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParseTimers(value: Double => String): Self = this.set("parseTimers", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStringToSecond(value: String => Double): Self = this.set("stringToSecond", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTimezone(value: () => String): Self = this.set("timezone", js.Any.fromFunction0(value))
+    def setTimezone(value: () => String): Self = StObject.set(x, "timezone", js.Any.fromFunction0(value))
   }
 }

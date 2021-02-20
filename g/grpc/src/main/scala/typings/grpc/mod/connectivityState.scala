@@ -1,41 +1,36 @@
 package typings.grpc.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait connectivityState extends js.Object
+sealed trait connectivityState extends StObject
 @JSImport("grpc", "connectivityState")
 @js.native
-object connectivityState extends js.Object {
+object connectivityState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[connectivityState with Double] = js.native
   
   @js.native
   sealed trait CONNECTING extends connectivityState
-  /* 1 */ @js.native
-  object CONNECTING extends TopLevel[CONNECTING with Double]
+  /* 1 */ val CONNECTING: typings.grpc.mod.connectivityState.CONNECTING with Double = js.native
   
   @js.native
   sealed trait IDLE extends connectivityState
-  /* 0 */ @js.native
-  object IDLE extends TopLevel[IDLE with Double]
+  /* 0 */ val IDLE: typings.grpc.mod.connectivityState.IDLE with Double = js.native
   
   @js.native
   sealed trait READY extends connectivityState
-  /* 2 */ @js.native
-  object READY extends TopLevel[READY with Double]
+  /* 2 */ val READY: typings.grpc.mod.connectivityState.READY with Double = js.native
   
   @js.native
   sealed trait SHUTDOWN extends connectivityState
-  /* 4 */ @js.native
-  object SHUTDOWN extends TopLevel[SHUTDOWN with Double]
+  /* 4 */ val SHUTDOWN: typings.grpc.mod.connectivityState.SHUTDOWN with Double = js.native
   
   @js.native
   sealed trait TRANSIENT_FAILURE extends connectivityState
-  /* 3 */ @js.native
-  object TRANSIENT_FAILURE extends TopLevel[TRANSIENT_FAILURE with Double]
+  /* 3 */ val TRANSIENT_FAILURE: typings.grpc.mod.connectivityState.TRANSIENT_FAILURE with Double = js.native
 }

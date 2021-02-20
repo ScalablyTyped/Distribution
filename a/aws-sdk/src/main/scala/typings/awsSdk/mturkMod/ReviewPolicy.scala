@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReviewPolicy extends js.Object {
+trait ReviewPolicy extends StObject {
   
   /**
     * Name of the parameter from the Review policy.
@@ -26,30 +27,18 @@ object ReviewPolicy {
   }
   
   @scala.inline
-  implicit class ReviewPolicyOps[Self <: ReviewPolicy] (val x: Self) extends AnyVal {
+  implicit class ReviewPolicyMutableBuilder[Self <: ReviewPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: PolicyParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParametersVarargs(value: PolicyParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
     @scala.inline
-    def setPolicyName(value: String): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParametersVarargs(value: PolicyParameter*): Self = this.set("Parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: PolicyParameterList): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setPolicyName(value: String): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

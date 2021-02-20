@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedirectActionConfig extends js.Object {
+trait RedirectActionConfig extends StObject {
   
   /**
     * The hostname. This component is not percent-encoded. The hostname can contain #{host}.
@@ -46,51 +47,39 @@ object RedirectActionConfig {
   }
   
   @scala.inline
-  implicit class RedirectActionConfigOps[Self <: RedirectActionConfig] (val x: Self) extends AnyVal {
+  implicit class RedirectActionConfigMutableBuilder[Self <: RedirectActionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: RedirectActionHost): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: RedirectActionPath): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: RedirectActionStatusCodeEnum): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
     @scala.inline
-    def setHost(value: RedirectActionHost): Self = this.set("Host", value.asInstanceOf[js.Any])
+    def setPort(value: RedirectActionPort): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHost: Self = this.set("Host", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def setPath(value: RedirectActionPath): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setProtocol(value: RedirectActionProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("Path", js.undefined)
+    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
     @scala.inline
-    def setPort(value: RedirectActionPort): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setQuery(value: RedirectActionQuery): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "Query", js.undefined)
     
     @scala.inline
-    def setProtocol(value: RedirectActionProtocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("Protocol", js.undefined)
-    
-    @scala.inline
-    def setQuery(value: RedirectActionQuery): Self = this.set("Query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("Query", js.undefined)
+    def setStatusCode(value: RedirectActionStatusCodeEnum): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
   }
 }

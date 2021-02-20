@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,33 +63,21 @@ object CSVLayerCapabilities {
   }
   
   @scala.inline
-  implicit class CSVLayerCapabilitiesOps[Self <: CSVLayerCapabilities] (val x: Self) extends AnyVal {
+  implicit class CSVLayerCapabilitiesMutableBuilder[Self <: CSVLayerCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: CSVLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditing(value: CSVLayerCapabilitiesEditing): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperations(value: CSVLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: CSVLayerCapabilitiesData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setQuery(value: CSVLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditing(value: CSVLayerCapabilitiesEditing): Self = this.set("editing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperations(value: CSVLayerCapabilitiesOperations): Self = this.set("operations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: CSVLayerCapabilitiesQuery): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryRelated(value: CSVLayerCapabilitiesQueryRelated): Self = this.set("queryRelated", value.asInstanceOf[js.Any])
+    def setQueryRelated(value: CSVLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
   }
 }

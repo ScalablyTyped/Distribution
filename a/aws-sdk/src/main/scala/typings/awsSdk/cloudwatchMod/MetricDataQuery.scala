@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricDataQuery extends js.Object {
+trait MetricDataQuery extends StObject {
   
   /**
     * The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the Id of the other metrics to refer to those metrics, and can also use the Id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the Amazon CloudWatch User Guide. Within each MetricDataQuery object, you must specify either Expression or MetricStat but not both.
@@ -46,51 +47,39 @@ object MetricDataQuery {
   }
   
   @scala.inline
-  implicit class MetricDataQueryOps[Self <: MetricDataQuery] (val x: Self) extends AnyVal {
+  implicit class MetricDataQueryMutableBuilder[Self <: MetricDataQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: MetricExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: MetricId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: MetricId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLabel(value: MetricLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: MetricExpression): Self = this.set("Expression", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
     @scala.inline
-    def deleteExpression: Self = this.set("Expression", js.undefined)
+    def setMetricStat(value: MetricStat): Self = StObject.set(x, "MetricStat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: MetricLabel): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setMetricStatUndefined: Self = StObject.set(x, "MetricStat", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
+    def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricStat(value: MetricStat): Self = this.set("MetricStat", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
     
     @scala.inline
-    def deleteMetricStat: Self = this.set("MetricStat", js.undefined)
+    def setReturnData(value: ReturnData): Self = StObject.set(x, "ReturnData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("Period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("Period", js.undefined)
-    
-    @scala.inline
-    def setReturnData(value: ReturnData): Self = this.set("ReturnData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnData: Self = this.set("ReturnData", js.undefined)
+    def setReturnDataUndefined: Self = StObject.set(x, "ReturnData", js.undefined)
   }
 }

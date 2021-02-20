@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFViewerOptions extends js.Object {
+trait PDFViewerOptions extends StObject {
   
   var defaultPageSize: js.UndefOr[PDFViewerDefaultPageSize] = js.native
   
@@ -42,96 +43,84 @@ object PDFViewerOptions {
   }
   
   @scala.inline
-  implicit class PDFViewerOptionsOps[Self <: PDFViewerOptions] (val x: Self) extends AnyVal {
+  implicit class PDFViewerOptionsMutableBuilder[Self <: PDFViewerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultPageSize(value: PDFViewerDefaultPageSize): Self = StObject.set(x, "defaultPageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultPageSizeUndefined: Self = StObject.set(x, "defaultPageSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDplProcessing(value: PDFViewerDplProcessing): Self = StObject.set(x, "dplProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPageSize(value: PDFViewerDefaultPageSize): Self = this.set("defaultPageSize", value.asInstanceOf[js.Any])
+    def setDplProcessingUndefined: Self = StObject.set(x, "dplProcessing", js.undefined)
     
     @scala.inline
-    def deleteDefaultPageSize: Self = this.set("defaultPageSize", js.undefined)
+    def setError(value: /* e */ PDFViewerErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDplProcessing(value: PDFViewerDplProcessing): Self = this.set("dplProcessing", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDplProcessing: Self = this.set("dplProcessing", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* e */ PDFViewerErrorEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setMessages(value: PDFViewerMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: PDFViewerMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setOpen(value: /* e */ PDFViewerOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: /* e */ PDFViewerOpenEvent => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setPdfjsProcessing(value: PDFViewerPdfjsProcessing): Self = StObject.set(x, "pdfjsProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPdfjsProcessingUndefined: Self = StObject.set(x, "pdfjsProcessing", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setRender(value: /* e */ PDFViewerRenderEvent => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPdfjsProcessing(value: PDFViewerPdfjsProcessing): Self = this.set("pdfjsProcessing", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deletePdfjsProcessing: Self = this.set("pdfjsProcessing", js.undefined)
+    def setToolbar(value: Boolean | PDFViewerToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: /* e */ PDFViewerRenderEvent => Unit): Self = this.set("render", js.Any.fromFunction1(value))
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setView(value: PDFViewerView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolbar(value: Boolean | PDFViewerToolbar): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: PDFViewerView): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFViewerMessagesErrorMessages extends js.Object {
+trait PDFViewerMessagesErrorMessages extends StObject {
   
   var notFound: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object PDFViewerMessagesErrorMessages {
   }
   
   @scala.inline
-  implicit class PDFViewerMessagesErrorMessagesOps[Self <: PDFViewerMessagesErrorMessages] (val x: Self) extends AnyVal {
+  implicit class PDFViewerMessagesErrorMessagesMutableBuilder[Self <: PDFViewerMessagesErrorMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotSupported(value: String): Self = StObject.set(x, "notSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotFound(value: String): Self = this.set("notFound", value.asInstanceOf[js.Any])
+    def setNotSupportedUndefined: Self = StObject.set(x, "notSupported", js.undefined)
     
     @scala.inline
-    def deleteNotFound: Self = this.set("notFound", js.undefined)
+    def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotSupported(value: String): Self = this.set("notSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotSupported: Self = this.set("notSupported", js.undefined)
-    
-    @scala.inline
-    def setParseError(value: String): Self = this.set("parseError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParseError: Self = this.set("parseError", js.undefined)
+    def setParseErrorUndefined: Self = StObject.set(x, "parseError", js.undefined)
   }
 }

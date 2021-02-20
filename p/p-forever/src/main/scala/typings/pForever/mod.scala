@@ -1,13 +1,12 @@
 package typings.pForever
 
 import typings.pForever.anon.Call
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-forever", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Run promise-returning & async functions until you end it.
@@ -36,21 +35,35 @@ object mod extends js.Object {
   	});
   	```
   	*/
+  @JSImport("p-forever", JSImport.Namespace)
+  @js.native
   def apply[ValueType](
     fn: js.Function1[
       /* previousValue */ js.UndefOr[ValueType], 
       ValueType | js.Thenable[ValueType] | js.Symbol
     ]
   ): js.Promise[Unit] = js.native
+  @JSImport("p-forever", JSImport.Namespace)
+  @js.native
   def apply[ValueType](
     fn: js.Function1[/* previousValue */ ValueType, ValueType | js.Thenable[ValueType] | js.Symbol],
     initialValue: ValueType
   ): js.Promise[Unit] = js.native
+  @JSImport("p-forever", JSImport.Namespace)
+  @js.native
   def apply[ValueType](
     fn: js.Function1[/* previousValue */ ValueType, ValueType | js.Thenable[ValueType] | js.Symbol],
     initialValue: js.Thenable[ValueType]
   ): js.Promise[Unit] = js.native
   
+  @JSImport("p-forever", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  // TODO: Remove this for the next major release
+  @JSImport("p-forever", "default")
+  @js.native
+  def default: Call = js.native
   /**
   	Run promise-returning & async functions until you end it.
   	@param fn - Receives the previously returned value. If a `Promise` is returned, it's awaited before calling `fn` again.
@@ -79,6 +92,8 @@ object mod extends js.Object {
   	```
   	*/
   // TODO: Remove this for the next major release
+  @JSImport("p-forever", "default")
+  @js.native
   def default[ValueType](
     fn: js.Function1[
       /* previousValue */ js.UndefOr[ValueType], 
@@ -86,6 +101,8 @@ object mod extends js.Object {
     ]
   ): js.Promise[Unit] = js.native
   // TODO: Remove this for the next major release
+  @JSImport("p-forever", "default")
+  @js.native
   def default[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
@@ -93,6 +110,8 @@ object mod extends js.Object {
     ],
     initialValue: ValueType
   ): js.Promise[Unit] = js.native
+  @JSImport("p-forever", "default")
+  @js.native
   def default[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
@@ -100,12 +119,13 @@ object mod extends js.Object {
     ],
     initialValue: js.Thenable[ValueType]
   ): js.Promise[Unit] = js.native
-  // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: Call = js.native
+  @scala.inline
+  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Symbol used to end the loop.
   	*/
+  @JSImport("p-forever", "end")
+  @js.native
   val end: js.Symbol = js.native
 }

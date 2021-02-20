@@ -1,11 +1,12 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Behavior[Data, Props, Methods] extends js.Object {
+trait Behavior[Data, Props, Methods] extends StObject {
   
   var __DO_NOT_USE_INTERNAL_FIELD_DATA: Data = js.native
   
@@ -26,27 +27,15 @@ object Behavior {
   }
   
   @scala.inline
-  implicit class BehaviorOps[Self <: Behavior[_, _, _], Data, Props, Methods] (val x: Self with (Behavior[Data, Props, Methods])) extends AnyVal {
+  implicit class BehaviorMutableBuilder[Self <: Behavior[_, _, _], Data, Props, Methods] (val x: Self with (Behavior[Data, Props, Methods])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set__DO_NOT_USE_INTERNAL_FIELD_DATA(value: Data): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_DATA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set__DO_NOT_USE_INTERNAL_FIELD_METHODS(value: Methods): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_METHODS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__DO_NOT_USE_INTERNAL_FIELD_DATA(value: Data): Self = this.set("__DO_NOT_USE_INTERNAL_FIELD_DATA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set__DO_NOT_USE_INTERNAL_FIELD_METHODS(value: Methods): Self = this.set("__DO_NOT_USE_INTERNAL_FIELD_METHODS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set__DO_NOT_USE_INTERNAL_FIELD_PROPS(value: Props): Self = this.set("__DO_NOT_USE_INTERNAL_FIELD_PROPS", value.asInstanceOf[js.Any])
+    def set__DO_NOT_USE_INTERNAL_FIELD_PROPS(value: Props): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_PROPS", value.asInstanceOf[js.Any])
   }
 }

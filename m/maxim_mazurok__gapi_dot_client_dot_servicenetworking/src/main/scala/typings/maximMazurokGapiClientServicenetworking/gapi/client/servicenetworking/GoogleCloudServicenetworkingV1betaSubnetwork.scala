@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudServicenetworkingV1betaSubnetwork extends js.Object {
+trait GoogleCloudServicenetworkingV1betaSubnetwork extends StObject {
   
   /** Subnetwork CIDR range in `10.x.x.x/y` format. */
   var ipCidrRange: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object GoogleCloudServicenetworkingV1betaSubnetwork {
   }
   
   @scala.inline
-  implicit class GoogleCloudServicenetworkingV1betaSubnetworkOps[Self <: GoogleCloudServicenetworkingV1betaSubnetwork] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudServicenetworkingV1betaSubnetworkMutableBuilder[Self <: GoogleCloudServicenetworkingV1betaSubnetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpCidrRange(value: String): Self = this.set("ipCidrRange", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIpCidrRange: Self = this.set("ipCidrRange", js.undefined)
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOutsideAllocation(value: Boolean): Self = StObject.set(x, "outsideAllocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
-    
-    @scala.inline
-    def setOutsideAllocation(value: Boolean): Self = this.set("outsideAllocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutsideAllocation: Self = this.set("outsideAllocation", js.undefined)
+    def setOutsideAllocationUndefined: Self = StObject.set(x, "outsideAllocation", js.undefined)
   }
 }

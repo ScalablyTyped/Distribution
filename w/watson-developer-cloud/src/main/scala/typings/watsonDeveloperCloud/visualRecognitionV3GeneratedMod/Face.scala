@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about the face. */
 @js.native
-trait Face extends js.Object {
+trait Face extends StObject {
   
   /** Age information about a face. */
   var age: js.UndefOr[FaceAge] = js.native
@@ -26,36 +27,24 @@ object Face {
   }
   
   @scala.inline
-  implicit class FaceOps[Self <: Face] (val x: Self) extends AnyVal {
+  implicit class FaceMutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAge(value: FaceAge): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFace_location(value: FaceLocation): Self = StObject.set(x, "face_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAge(value: FaceAge): Self = this.set("age", value.asInstanceOf[js.Any])
+    def setFace_locationUndefined: Self = StObject.set(x, "face_location", js.undefined)
     
     @scala.inline
-    def deleteAge: Self = this.set("age", js.undefined)
+    def setGender(value: FaceGender): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFace_location(value: FaceLocation): Self = this.set("face_location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFace_location: Self = this.set("face_location", js.undefined)
-    
-    @scala.inline
-    def setGender(value: FaceGender): Self = this.set("gender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGender: Self = this.set("gender", js.undefined)
+    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
   }
 }

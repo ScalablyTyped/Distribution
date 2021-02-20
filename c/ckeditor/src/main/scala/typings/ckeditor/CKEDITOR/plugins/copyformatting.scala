@@ -2,13 +2,12 @@ package typings.ckeditor.CKEDITOR.plugins
 
 import typings.ckeditor.CKEDITOR.event
 import typings.ckeditor.CKEDITOR.style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CKEDITOR.plugins.copyformatting")
-@js.native
-object copyformatting extends js.Object {
+object copyformatting {
   
   @js.native
   trait state extends event {

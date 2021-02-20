@@ -1,12 +1,13 @@
 package typings.three.anon
 
 import typings.three.uniformsLibMod.IUniform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AmbientLightColor extends js.Object {
+trait AmbientLightColor extends StObject {
   
   var ambientLightColor: IUniform = js.native
   
@@ -63,63 +64,51 @@ object AmbientLightColor {
   }
   
   @scala.inline
-  implicit class AmbientLightColorOps[Self <: AmbientLightColor] (val x: Self) extends AnyVal {
+  implicit class AmbientLightColorMutableBuilder[Self <: AmbientLightColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmbientLightColor(value: IUniform): Self = StObject.set(x, "ambientLightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionalLightShadows(value: Value): Self = StObject.set(x, "directionalLightShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectionalLights(value: Properties): Self = StObject.set(x, "directionalLights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmbientLightColor(value: IUniform): Self = this.set("ambientLightColor", value.asInstanceOf[js.Any])
+    def setDirectionalShadowMap(value: IUniform): Self = StObject.set(x, "directionalShadowMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionalLightShadows(value: Value): Self = this.set("directionalLightShadows", value.asInstanceOf[js.Any])
+    def setDirectionalShadowMatrix(value: IUniform): Self = StObject.set(x, "directionalShadowMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionalLights(value: Properties): Self = this.set("directionalLights", value.asInstanceOf[js.Any])
+    def setHemisphereLights(value: PropertiesDirection): Self = StObject.set(x, "hemisphereLights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionalShadowMap(value: IUniform): Self = this.set("directionalShadowMap", value.asInstanceOf[js.Any])
+    def setPointLightShadows(value: Value): Self = StObject.set(x, "pointLightShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionalShadowMatrix(value: IUniform): Self = this.set("directionalShadowMatrix", value.asInstanceOf[js.Any])
+    def setPointLights(value: PropertiesDecay): Self = StObject.set(x, "pointLights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHemisphereLights(value: PropertiesDirection): Self = this.set("hemisphereLights", value.asInstanceOf[js.Any])
+    def setPointShadowMap(value: IUniform): Self = StObject.set(x, "pointShadowMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointLightShadows(value: Value): Self = this.set("pointLightShadows", value.asInstanceOf[js.Any])
+    def setPointShadowMatrix(value: IUniform): Self = StObject.set(x, "pointShadowMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointLights(value: PropertiesDecay): Self = this.set("pointLights", value.asInstanceOf[js.Any])
+    def setRectAreaLights(value: PropertiesHeight): Self = StObject.set(x, "rectAreaLights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointShadowMap(value: IUniform): Self = this.set("pointShadowMap", value.asInstanceOf[js.Any])
+    def setSpotLightShadows(value: Value): Self = StObject.set(x, "spotLightShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointShadowMatrix(value: IUniform): Self = this.set("pointShadowMatrix", value.asInstanceOf[js.Any])
+    def setSpotLights(value: PropertiesValue): Self = StObject.set(x, "spotLights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRectAreaLights(value: PropertiesHeight): Self = this.set("rectAreaLights", value.asInstanceOf[js.Any])
+    def setSpotShadowMap(value: IUniform): Self = StObject.set(x, "spotShadowMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotLightShadows(value: Value): Self = this.set("spotLightShadows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpotLights(value: PropertiesValue): Self = this.set("spotLights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpotShadowMap(value: IUniform): Self = this.set("spotShadowMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpotShadowMatrix(value: IUniform): Self = this.set("spotShadowMatrix", value.asInstanceOf[js.Any])
+    def setSpotShadowMatrix(value: IUniform): Self = StObject.set(x, "spotShadowMatrix", value.asInstanceOf[js.Any])
   }
 }

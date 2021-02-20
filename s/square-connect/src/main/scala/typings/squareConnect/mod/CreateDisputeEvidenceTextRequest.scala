@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateDisputeEvidenceTextRequest")
 @js.native
-class CreateDisputeEvidenceTextRequest () extends js.Object {
+class CreateDisputeEvidenceTextRequest () extends StObject {
   
   /**
     * The evidence string.

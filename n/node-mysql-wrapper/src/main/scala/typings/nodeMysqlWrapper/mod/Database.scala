@@ -1,13 +1,14 @@
 package typings.nodeMysqlWrapper.mod
 
 import typings.mysql.mod.MysqlError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "Database")
 @js.native
-class Database () extends js.Object {
+class Database () extends StObject {
   def this(connection: Connection) = this()
   
   def buildRules(): SelectQueryRules = js.native
@@ -70,10 +71,10 @@ class Database () extends js.Object {
     */
   def useOnly(useTables: js.Any*): Unit = js.native
 }
-/* static members */
-@JSImport("node-mysql-wrapper", "Database")
-@js.native
-object Database extends js.Object {
+object Database {
   
+  /* static member */
+  @JSImport("node-mysql-wrapper", "Database.when")
+  @js.native
   def when(_promises: typings.bluebird.mod.^[_]*): typings.bluebird.mod.^[_] = js.native
 }

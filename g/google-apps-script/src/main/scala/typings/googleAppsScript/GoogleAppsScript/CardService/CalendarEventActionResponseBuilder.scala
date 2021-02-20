@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A builder for CalendarEventActionResponse objects.
   */
 @js.native
-trait CalendarEventActionResponseBuilder extends js.Object {
+trait CalendarEventActionResponseBuilder extends StObject {
   
   def addAttendees(emails: js.Array[String]): CalendarEventActionResponseBuilder = js.native
   
@@ -30,27 +31,15 @@ object CalendarEventActionResponseBuilder {
   }
   
   @scala.inline
-  implicit class CalendarEventActionResponseBuilderOps[Self <: CalendarEventActionResponseBuilder] (val x: Self) extends AnyVal {
+  implicit class CalendarEventActionResponseBuilderMutableBuilder[Self <: CalendarEventActionResponseBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAttendees(value: js.Array[String] => CalendarEventActionResponseBuilder): Self = StObject.set(x, "addAttendees", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuild(value: () => CalendarEventActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddAttendees(value: js.Array[String] => CalendarEventActionResponseBuilder): Self = this.set("addAttendees", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setBuild(value: () => CalendarEventActionResponse): Self = this.set("build", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetConferenceData(value: ConferenceData => CalendarEventActionResponseBuilder): Self = this.set("setConferenceData", js.Any.fromFunction1(value))
+    def setSetConferenceData(value: ConferenceData => CalendarEventActionResponseBuilder): Self = StObject.set(x, "setConferenceData", js.Any.fromFunction1(value))
   }
 }

@@ -5,16 +5,16 @@ import typings.three.anon.Buffer
 import typings.three.anon.Count
 import typings.three.constantsMod.Usage
 import typings.three.interleavedBufferAttributeMod.InterleavedBufferAttribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/core/InterleavedBuffer", JSImport.Namespace)
-@js.native
-object interleavedBufferMod extends js.Object {
+object interleavedBufferMod {
   
+  @JSImport("three/src/core/InterleavedBuffer", "InterleavedBuffer")
   @js.native
-  class InterleavedBuffer protected () extends js.Object {
+  class InterleavedBuffer protected () extends StObject {
     def this(array: ArrayLike[Double], stride: Double) = this()
     
     var array: ArrayLike[Double] = js.native

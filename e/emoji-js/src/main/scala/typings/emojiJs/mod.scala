@@ -2,16 +2,16 @@ package typings.emojiJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.emojiJs.anon.Mask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("emoji-js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("emoji-js", "EmojiConvertor")
   @js.native
-  class EmojiConvertor () extends js.Object {
+  class EmojiConvertor () extends StObject {
     
     def addAliases(aliases: StringDictionary[String]): Unit = js.native
     

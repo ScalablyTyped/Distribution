@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.msk
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterLoggingInfo extends js.Object {
+trait ClusterLoggingInfo extends StObject {
   
   /**
     * Configuration block for Broker Logs settings for logging info. See below.
@@ -22,21 +23,9 @@ object ClusterLoggingInfo {
   }
   
   @scala.inline
-  implicit class ClusterLoggingInfoOps[Self <: ClusterLoggingInfo] (val x: Self) extends AnyVal {
+  implicit class ClusterLoggingInfoMutableBuilder[Self <: ClusterLoggingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBrokerLogs(value: Input[ClusterLoggingInfoBrokerLogs]): Self = this.set("brokerLogs", value.asInstanceOf[js.Any])
+    def setBrokerLogs(value: Input[ClusterLoggingInfoBrokerLogs]): Self = StObject.set(x, "brokerLogs", value.asInstanceOf[js.Any])
   }
 }

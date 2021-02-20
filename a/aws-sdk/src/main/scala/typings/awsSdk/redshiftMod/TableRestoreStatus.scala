@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableRestoreStatus extends js.Object {
+trait TableRestoreStatus extends StObject {
   
   /**
     * The identifier of the Amazon Redshift cluster that the table is being restored to.
@@ -86,102 +87,90 @@ object TableRestoreStatus {
   }
   
   @scala.inline
-  implicit class TableRestoreStatusOps[Self <: TableRestoreStatus] (val x: Self) extends AnyVal {
+  implicit class TableRestoreStatusMutableBuilder[Self <: TableRestoreStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    def setNewTableName(value: String): Self = StObject.set(x, "NewTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setNewTableNameUndefined: Self = StObject.set(x, "NewTableName", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setProgressInMegaBytes(value: LongOptional): Self = StObject.set(x, "ProgressInMegaBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewTableName(value: String): Self = this.set("NewTableName", value.asInstanceOf[js.Any])
+    def setProgressInMegaBytesUndefined: Self = StObject.set(x, "ProgressInMegaBytes", js.undefined)
     
     @scala.inline
-    def deleteNewTableName: Self = this.set("NewTableName", js.undefined)
+    def setRequestTime(value: TStamp): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressInMegaBytes(value: LongOptional): Self = this.set("ProgressInMegaBytes", value.asInstanceOf[js.Any])
+    def setRequestTimeUndefined: Self = StObject.set(x, "RequestTime", js.undefined)
     
     @scala.inline
-    def deleteProgressInMegaBytes: Self = this.set("ProgressInMegaBytes", js.undefined)
+    def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTime(value: TStamp): Self = this.set("RequestTime", value.asInstanceOf[js.Any])
+    def setSnapshotIdentifierUndefined: Self = StObject.set(x, "SnapshotIdentifier", js.undefined)
     
     @scala.inline
-    def deleteRequestTime: Self = this.set("RequestTime", js.undefined)
+    def setSourceDatabaseName(value: String): Self = StObject.set(x, "SourceDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotIdentifier(value: String): Self = this.set("SnapshotIdentifier", value.asInstanceOf[js.Any])
+    def setSourceDatabaseNameUndefined: Self = StObject.set(x, "SourceDatabaseName", js.undefined)
     
     @scala.inline
-    def deleteSnapshotIdentifier: Self = this.set("SnapshotIdentifier", js.undefined)
+    def setSourceSchemaName(value: String): Self = StObject.set(x, "SourceSchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceDatabaseName(value: String): Self = this.set("SourceDatabaseName", value.asInstanceOf[js.Any])
+    def setSourceSchemaNameUndefined: Self = StObject.set(x, "SourceSchemaName", js.undefined)
     
     @scala.inline
-    def deleteSourceDatabaseName: Self = this.set("SourceDatabaseName", js.undefined)
+    def setSourceTableName(value: String): Self = StObject.set(x, "SourceTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSchemaName(value: String): Self = this.set("SourceSchemaName", value.asInstanceOf[js.Any])
+    def setSourceTableNameUndefined: Self = StObject.set(x, "SourceTableName", js.undefined)
     
     @scala.inline
-    def deleteSourceSchemaName: Self = this.set("SourceSchemaName", js.undefined)
+    def setStatus(value: TableRestoreStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceTableName(value: String): Self = this.set("SourceTableName", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSourceTableName: Self = this.set("SourceTableName", js.undefined)
+    def setTableRestoreRequestId(value: String): Self = StObject.set(x, "TableRestoreRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TableRestoreStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTableRestoreRequestIdUndefined: Self = StObject.set(x, "TableRestoreRequestId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTargetDatabaseName(value: String): Self = StObject.set(x, "TargetDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableRestoreRequestId(value: String): Self = this.set("TableRestoreRequestId", value.asInstanceOf[js.Any])
+    def setTargetDatabaseNameUndefined: Self = StObject.set(x, "TargetDatabaseName", js.undefined)
     
     @scala.inline
-    def deleteTableRestoreRequestId: Self = this.set("TableRestoreRequestId", js.undefined)
+    def setTargetSchemaName(value: String): Self = StObject.set(x, "TargetSchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetDatabaseName(value: String): Self = this.set("TargetDatabaseName", value.asInstanceOf[js.Any])
+    def setTargetSchemaNameUndefined: Self = StObject.set(x, "TargetSchemaName", js.undefined)
     
     @scala.inline
-    def deleteTargetDatabaseName: Self = this.set("TargetDatabaseName", js.undefined)
+    def setTotalDataInMegaBytes(value: LongOptional): Self = StObject.set(x, "TotalDataInMegaBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetSchemaName(value: String): Self = this.set("TargetSchemaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetSchemaName: Self = this.set("TargetSchemaName", js.undefined)
-    
-    @scala.inline
-    def setTotalDataInMegaBytes(value: LongOptional): Self = this.set("TotalDataInMegaBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalDataInMegaBytes: Self = this.set("TotalDataInMegaBytes", js.undefined)
+    def setTotalDataInMegaBytesUndefined: Self = StObject.set(x, "TotalDataInMegaBytes", js.undefined)
   }
 }

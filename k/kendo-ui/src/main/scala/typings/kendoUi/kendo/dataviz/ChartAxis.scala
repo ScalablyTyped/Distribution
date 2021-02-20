@@ -4,6 +4,7 @@ import typings.kendoUi.kendo.Observable
 import typings.kendoUi.kendo.geometry.Point
 import typings.kendoUi.kendo.geometry.Rect
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

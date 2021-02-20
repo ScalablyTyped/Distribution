@@ -1,5 +1,6 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("grammarkdown/dist/grammarkdown", "Production")
 @js.native
 class Production protected ()
-  extends Node2[typings.grammarkdown.grammarkdownMod.SyntaxKind.Production] {
+  extends SourceElementBase[typings.grammarkdown.grammarkdownMod.SyntaxKind.Production] {
   def this(name: Identifier) = this()
   def this(name: Identifier, parameterList: ParameterList) = this()
   def this(

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CrossSlidingState extends js.Object
+sealed trait CrossSlidingState extends StObject
 /** Specifies the possible states of the CrossSliding event. */
 @JSGlobal("Windows.UI.Input.CrossSlidingState")
 @js.native
-object CrossSlidingState extends js.Object {
+object CrossSlidingState extends StObject {
   
   /** The swipe or slide gesture has stopped, the CrossSliding interaction has been completed, and the touch contact lifted. */
   @js.native

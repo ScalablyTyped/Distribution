@@ -1,11 +1,12 @@
 package typings.googleMapReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NESWBounds extends js.Object {
+trait NESWBounds extends StObject {
   
   @JSName("ne")
   var ne_FNESWBounds: Coords = js.native
@@ -19,42 +20,31 @@ trait NESWBounds extends js.Object {
 object NESWBounds {
   
   @scala.inline
-  def apply(ne: Coords, sw: Coords): NESWBounds = {
-    val __obj = js.Dynamic.literal(ne = ne.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any])
+  def apply(ne_ : Coords, sw: Coords): NESWBounds = {
+    val __obj = js.Dynamic.literal(sw = sw.asInstanceOf[js.Any])
+    __obj.updateDynamic("ne")(ne_.asInstanceOf[js.Any])
     __obj.asInstanceOf[NESWBounds]
   }
   
   @scala.inline
-  implicit class NESWBoundsOps[Self <: NESWBounds] (val x: Self) extends AnyVal {
+  implicit class NESWBoundsMutableBuilder[Self <: NESWBounds] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNe_(value: Coords): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNw(value: Coords): Self = StObject.set(x, "nw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNwUndefined: Self = StObject.set(x, "nw", js.undefined)
     
     @scala.inline
-    def setNe(value: Coords): Self = this.set("ne", value.asInstanceOf[js.Any])
+    def setSe(value: Coords): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSw(value: Coords): Self = this.set("sw", value.asInstanceOf[js.Any])
+    def setSeUndefined: Self = StObject.set(x, "se", js.undefined)
     
     @scala.inline
-    def setNw(value: Coords): Self = this.set("nw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNw: Self = this.set("nw", js.undefined)
-    
-    @scala.inline
-    def setSe(value: Coords): Self = this.set("se", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSe: Self = this.set("se", js.undefined)
+    def setSw(value: Coords): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
   }
 }

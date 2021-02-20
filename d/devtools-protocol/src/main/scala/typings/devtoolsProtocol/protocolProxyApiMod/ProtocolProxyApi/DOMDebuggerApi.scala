@@ -10,12 +10,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetDOMBreakpointRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetEventListenerBreakpointRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetInstrumentationBreakpointRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetXHRBreakpointRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMDebuggerApi extends js.Object {
+trait DOMDebuggerApi extends StObject {
   
   /**
     * Returns event listeners of the given object.
@@ -81,45 +82,33 @@ object DOMDebuggerApi {
   }
   
   @scala.inline
-  implicit class DOMDebuggerApiOps[Self <: DOMDebuggerApi] (val x: Self) extends AnyVal {
+  implicit class DOMDebuggerApiMutableBuilder[Self <: DOMDebuggerApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEventListeners(value: GetEventListenersRequest => js.Promise[GetEventListenersResponse]): Self = StObject.set(x, "getEventListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoveDOMBreakpoint(value: RemoveDOMBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeDOMBreakpoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveEventListenerBreakpoint(value: RemoveEventListenerBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeEventListenerBreakpoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEventListeners(value: GetEventListenersRequest => js.Promise[GetEventListenersResponse]): Self = this.set("getEventListeners", js.Any.fromFunction1(value))
+    def setRemoveInstrumentationBreakpoint(value: RemoveInstrumentationBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeInstrumentationBreakpoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveDOMBreakpoint(value: RemoveDOMBreakpointRequest => js.Promise[Unit]): Self = this.set("removeDOMBreakpoint", js.Any.fromFunction1(value))
+    def setRemoveXHRBreakpoint(value: RemoveXHRBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "removeXHRBreakpoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveEventListenerBreakpoint(value: RemoveEventListenerBreakpointRequest => js.Promise[Unit]): Self = this.set("removeEventListenerBreakpoint", js.Any.fromFunction1(value))
+    def setSetDOMBreakpoint(value: SetDOMBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setDOMBreakpoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveInstrumentationBreakpoint(value: RemoveInstrumentationBreakpointRequest => js.Promise[Unit]): Self = this.set("removeInstrumentationBreakpoint", js.Any.fromFunction1(value))
+    def setSetEventListenerBreakpoint(value: SetEventListenerBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setEventListenerBreakpoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveXHRBreakpoint(value: RemoveXHRBreakpointRequest => js.Promise[Unit]): Self = this.set("removeXHRBreakpoint", js.Any.fromFunction1(value))
+    def setSetInstrumentationBreakpoint(value: SetInstrumentationBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setInstrumentationBreakpoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDOMBreakpoint(value: SetDOMBreakpointRequest => js.Promise[Unit]): Self = this.set("setDOMBreakpoint", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetEventListenerBreakpoint(value: SetEventListenerBreakpointRequest => js.Promise[Unit]): Self = this.set("setEventListenerBreakpoint", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetInstrumentationBreakpoint(value: SetInstrumentationBreakpointRequest => js.Promise[Unit]): Self = this.set("setInstrumentationBreakpoint", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetXHRBreakpoint(value: SetXHRBreakpointRequest => js.Promise[Unit]): Self = this.set("setXHRBreakpoint", js.Any.fromFunction1(value))
+    def setSetXHRBreakpoint(value: SetXHRBreakpointRequest => js.Promise[Unit]): Self = StObject.set(x, "setXHRBreakpoint", js.Any.fromFunction1(value))
   }
 }

@@ -2,12 +2,13 @@ package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.MSImmutablePage
 import typings.sketchapp.sketchappStrings.MSJSONFileReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSPageReference extends js.Object {
+trait SketchMSPageReference extends StObject {
   
   var _class: MSJSONFileReference = js.native
   
@@ -24,27 +25,15 @@ object SketchMSPageReference {
   }
   
   @scala.inline
-  implicit class SketchMSPageReferenceOps[Self <: SketchMSPageReference] (val x: Self) extends AnyVal {
+  implicit class SketchMSPageReferenceMutableBuilder[Self <: SketchMSPageReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_class(value: MSJSONFileReference): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_ref(value: String): Self = StObject.set(x, "_ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_class(value: MSJSONFileReference): Self = this.set("_class", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_ref(value: String): Self = this.set("_ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_ref_class(value: MSImmutablePage): Self = this.set("_ref_class", value.asInstanceOf[js.Any])
+    def set_ref_class(value: MSImmutablePage): Self = StObject.set(x, "_ref_class", value.asInstanceOf[js.Any])
   }
 }

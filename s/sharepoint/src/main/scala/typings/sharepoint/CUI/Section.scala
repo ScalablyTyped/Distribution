@@ -1,6 +1,7 @@
 package typings.sharepoint.CUI
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,27 +69,15 @@ object Section {
   }
   
   @scala.inline
-  implicit class SectionOps[Self <: Section] (val x: Self) extends AnyVal {
+  implicit class SectionMutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetRow(value: Double => Row): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_alignment(value: () => Double): Self = StObject.set(x, "get_alignment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetRow(value: Double => Row): Self = this.set("getRow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGet_alignment(value: () => Double): Self = this.set("get_alignment", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_type(value: () => Double): Self = this.set("get_type", js.Any.fromFunction0(value))
+    def setGet_type(value: () => Double): Self = StObject.set(x, "get_type", js.Any.fromFunction0(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAny extends js.Object {
+trait IAny extends StObject {
   
   /** Any typeUrl */
   var typeUrl: js.UndefOr[String | Null] = js.native
@@ -23,36 +24,24 @@ object IAny {
   }
   
   @scala.inline
-  implicit class IAnyOps[Self <: IAny] (val x: Self) extends AnyVal {
+  implicit class IAnyMutableBuilder[Self <: IAny] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTypeUrl(value: String): Self = StObject.set(x, "typeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTypeUrlNull: Self = StObject.set(x, "typeUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeUrlUndefined: Self = StObject.set(x, "typeUrl", js.undefined)
     
     @scala.inline
-    def setTypeUrl(value: String): Self = this.set("typeUrl", value.asInstanceOf[js.Any])
+    def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTypeUrl: Self = this.set("typeUrl", js.undefined)
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def setTypeUrlNull: Self = this.set("typeUrl", null)
-    
-    @scala.inline
-    def setValue(value: Uint8Array): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -2,18 +2,20 @@ package typings.dateFns
 
 import typings.dateFns.anon.Step
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/eachDayOfInterval", JSImport.Namespace)
-@js.native
-object eachDayOfIntervalMod extends js.Object {
+object eachDayOfIntervalMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/eachDayOfInterval", JSImport.Default)
+    @js.native
     def apply(interval: typings.dateFns.mod.Interval): js.Array[Date] = js.native
+    @JSImport("date-fns/eachDayOfInterval", JSImport.Default)
+    @js.native
     def apply(interval: typings.dateFns.mod.Interval, options: Step): js.Array[Date] = js.native
   }
 }

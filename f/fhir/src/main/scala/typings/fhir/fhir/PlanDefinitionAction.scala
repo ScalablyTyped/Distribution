@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -219,297 +220,285 @@ object PlanDefinitionAction {
   }
   
   @scala.inline
-  implicit class PlanDefinitionActionOps[Self <: PlanDefinitionAction] (val x: Self) extends AnyVal {
+  implicit class PlanDefinitionActionMutableBuilder[Self <: PlanDefinitionAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: js.Array[PlanDefinitionAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionVarargs(value: PlanDefinitionAction*): Self = StObject.set(x, "action", js.Array(value :_*))
     
     @scala.inline
-    def set_cardinalityBehavior(value: Element): Self = this.set("_cardinalityBehavior", value.asInstanceOf[js.Any])
+    def setCardinalityBehavior(value: code): Self = StObject.set(x, "cardinalityBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_cardinalityBehavior: Self = this.set("_cardinalityBehavior", js.undefined)
+    def setCardinalityBehaviorUndefined: Self = StObject.set(x, "cardinalityBehavior", js.undefined)
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set_goalIdVarargs(value: Element*): Self = this.set("_goalId", js.Array(value :_*))
+    def setCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "code", js.Array(value :_*))
     
     @scala.inline
-    def set_goalId(value: js.Array[Element]): Self = this.set("_goalId", value.asInstanceOf[js.Any])
+    def setCondition(value: js.Array[PlanDefinitionActionCondition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_goalId: Self = this.set("_goalId", js.undefined)
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set_groupingBehavior(value: Element): Self = this.set("_groupingBehavior", value.asInstanceOf[js.Any])
+    def setConditionVarargs(value: PlanDefinitionActionCondition*): Self = StObject.set(x, "condition", js.Array(value :_*))
     
     @scala.inline
-    def delete_groupingBehavior: Self = this.set("_groupingBehavior", js.undefined)
+    def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_label(value: Element): Self = this.set("_label", value.asInstanceOf[js.Any])
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def delete_label: Self = this.set("_label", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_precheckBehavior(value: Element): Self = this.set("_precheckBehavior", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def delete_precheckBehavior: Self = this.set("_precheckBehavior", js.undefined)
+    def setDocumentation(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_requiredBehavior(value: Element): Self = this.set("_requiredBehavior", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def delete_requiredBehavior: Self = this.set("_requiredBehavior", js.undefined)
+    def setDocumentationVarargs(value: RelatedArtifact*): Self = StObject.set(x, "documentation", js.Array(value :_*))
     
     @scala.inline
-    def set_selectionBehavior(value: Element): Self = this.set("_selectionBehavior", value.asInstanceOf[js.Any])
+    def setDynamicValue(value: js.Array[PlanDefinitionActionDynamicValue]): Self = StObject.set(x, "dynamicValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_selectionBehavior: Self = this.set("_selectionBehavior", js.undefined)
+    def setDynamicValueUndefined: Self = StObject.set(x, "dynamicValue", js.undefined)
     
     @scala.inline
-    def set_textEquivalent(value: Element): Self = this.set("_textEquivalent", value.asInstanceOf[js.Any])
+    def setDynamicValueVarargs(value: PlanDefinitionActionDynamicValue*): Self = StObject.set(x, "dynamicValue", js.Array(value :_*))
     
     @scala.inline
-    def delete_textEquivalent: Self = this.set("_textEquivalent", js.undefined)
+    def setGoalId(value: js.Array[id]): Self = StObject.set(x, "goalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_timingDateTime(value: Element): Self = this.set("_timingDateTime", value.asInstanceOf[js.Any])
+    def setGoalIdUndefined: Self = StObject.set(x, "goalId", js.undefined)
     
     @scala.inline
-    def delete_timingDateTime: Self = this.set("_timingDateTime", js.undefined)
+    def setGoalIdVarargs(value: id*): Self = StObject.set(x, "goalId", js.Array(value :_*))
     
     @scala.inline
-    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def setGroupingBehavior(value: code): Self = StObject.set(x, "groupingBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def setGroupingBehaviorUndefined: Self = StObject.set(x, "groupingBehavior", js.undefined)
     
     @scala.inline
-    def setActionVarargs(value: PlanDefinitionAction*): Self = this.set("action", js.Array(value :_*))
+    def setInput(value: js.Array[DataRequirement]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: js.Array[PlanDefinitionAction]): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setInputVarargs(value: DataRequirement*): Self = StObject.set(x, "input", js.Array(value :_*))
     
     @scala.inline
-    def setCardinalityBehavior(value: code): Self = this.set("cardinalityBehavior", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCardinalityBehavior: Self = this.set("cardinalityBehavior", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setCodeVarargs(value: CodeableConcept*): Self = this.set("code", js.Array(value :_*))
+    def setOutput(value: js.Array[DataRequirement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: js.Array[CodeableConcept]): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setOutputVarargs(value: DataRequirement*): Self = StObject.set(x, "output", js.Array(value :_*))
     
     @scala.inline
-    def setConditionVarargs(value: PlanDefinitionActionCondition*): Self = this.set("condition", js.Array(value :_*))
+    def setParticipant(value: js.Array[PlanDefinitionActionParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: js.Array[PlanDefinitionActionCondition]): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setParticipantVarargs(value: PlanDefinitionActionParticipant*): Self = StObject.set(x, "participant", js.Array(value :_*))
     
     @scala.inline
-    def setDefinition(value: Reference): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setPrecheckBehavior(value: code): Self = StObject.set(x, "precheckBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setPrecheckBehaviorUndefined: Self = StObject.set(x, "precheckBehavior", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def setDocumentationVarargs(value: RelatedArtifact*): Self = this.set("documentation", js.Array(value :_*))
+    def setReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "reason", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentation(value: js.Array[RelatedArtifact]): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setRelatedAction(value: js.Array[PlanDefinitionActionRelatedAction]): Self = StObject.set(x, "relatedAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setRelatedActionUndefined: Self = StObject.set(x, "relatedAction", js.undefined)
     
     @scala.inline
-    def setDynamicValueVarargs(value: PlanDefinitionActionDynamicValue*): Self = this.set("dynamicValue", js.Array(value :_*))
+    def setRelatedActionVarargs(value: PlanDefinitionActionRelatedAction*): Self = StObject.set(x, "relatedAction", js.Array(value :_*))
     
     @scala.inline
-    def setDynamicValue(value: js.Array[PlanDefinitionActionDynamicValue]): Self = this.set("dynamicValue", value.asInstanceOf[js.Any])
+    def setRequiredBehavior(value: code): Self = StObject.set(x, "requiredBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDynamicValue: Self = this.set("dynamicValue", js.undefined)
+    def setRequiredBehaviorUndefined: Self = StObject.set(x, "requiredBehavior", js.undefined)
     
     @scala.inline
-    def setGoalIdVarargs(value: id*): Self = this.set("goalId", js.Array(value :_*))
+    def setSelectionBehavior(value: code): Self = StObject.set(x, "selectionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoalId(value: js.Array[id]): Self = this.set("goalId", value.asInstanceOf[js.Any])
+    def setSelectionBehaviorUndefined: Self = StObject.set(x, "selectionBehavior", js.undefined)
     
     @scala.inline
-    def deleteGoalId: Self = this.set("goalId", js.undefined)
+    def setTextEquivalent(value: String): Self = StObject.set(x, "textEquivalent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupingBehavior(value: code): Self = this.set("groupingBehavior", value.asInstanceOf[js.Any])
+    def setTextEquivalentUndefined: Self = StObject.set(x, "textEquivalent", js.undefined)
     
     @scala.inline
-    def deleteGroupingBehavior: Self = this.set("groupingBehavior", js.undefined)
+    def setTimingDateTime(value: dateTime): Self = StObject.set(x, "timingDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputVarargs(value: DataRequirement*): Self = this.set("input", js.Array(value :_*))
+    def setTimingDateTimeUndefined: Self = StObject.set(x, "timingDateTime", js.undefined)
     
     @scala.inline
-    def setInput(value: js.Array[DataRequirement]): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setTimingDuration(value: Duration): Self = StObject.set(x, "timingDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setTimingDurationUndefined: Self = StObject.set(x, "timingDuration", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setTimingPeriod(value: Period): Self = StObject.set(x, "timingPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setTimingPeriodUndefined: Self = StObject.set(x, "timingPeriod", js.undefined)
     
     @scala.inline
-    def setOutputVarargs(value: DataRequirement*): Self = this.set("output", js.Array(value :_*))
+    def setTimingRange(value: Range): Self = StObject.set(x, "timingRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: js.Array[DataRequirement]): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setTimingRangeUndefined: Self = StObject.set(x, "timingRange", js.undefined)
     
     @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
+    def setTimingTiming(value: Timing): Self = StObject.set(x, "timingTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipantVarargs(value: PlanDefinitionActionParticipant*): Self = this.set("participant", js.Array(value :_*))
+    def setTimingTimingUndefined: Self = StObject.set(x, "timingTiming", js.undefined)
     
     @scala.inline
-    def setParticipant(value: js.Array[PlanDefinitionActionParticipant]): Self = this.set("participant", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParticipant: Self = this.set("participant", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setPrecheckBehavior(value: code): Self = this.set("precheckBehavior", value.asInstanceOf[js.Any])
+    def setTransform(value: Reference): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrecheckBehavior: Self = this.set("precheckBehavior", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def setReasonVarargs(value: CodeableConcept*): Self = this.set("reason", js.Array(value :_*))
+    def setTriggerDefinition(value: js.Array[TriggerDefinition]): Self = StObject.set(x, "triggerDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: js.Array[CodeableConcept]): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setTriggerDefinitionUndefined: Self = StObject.set(x, "triggerDefinition", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setTriggerDefinitionVarargs(value: TriggerDefinition*): Self = StObject.set(x, "triggerDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedActionVarargs(value: PlanDefinitionActionRelatedAction*): Self = this.set("relatedAction", js.Array(value :_*))
+    def setType(value: Coding): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedAction(value: js.Array[PlanDefinitionActionRelatedAction]): Self = this.set("relatedAction", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteRelatedAction: Self = this.set("relatedAction", js.undefined)
+    def set_cardinalityBehavior(value: Element): Self = StObject.set(x, "_cardinalityBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredBehavior(value: code): Self = this.set("requiredBehavior", value.asInstanceOf[js.Any])
+    def set_cardinalityBehaviorUndefined: Self = StObject.set(x, "_cardinalityBehavior", js.undefined)
     
     @scala.inline
-    def deleteRequiredBehavior: Self = this.set("requiredBehavior", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionBehavior(value: code): Self = this.set("selectionBehavior", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def deleteSelectionBehavior: Self = this.set("selectionBehavior", js.undefined)
+    def set_goalId(value: js.Array[Element]): Self = StObject.set(x, "_goalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEquivalent(value: String): Self = this.set("textEquivalent", value.asInstanceOf[js.Any])
+    def set_goalIdUndefined: Self = StObject.set(x, "_goalId", js.undefined)
     
     @scala.inline
-    def deleteTextEquivalent: Self = this.set("textEquivalent", js.undefined)
+    def set_goalIdVarargs(value: Element*): Self = StObject.set(x, "_goalId", js.Array(value :_*))
     
     @scala.inline
-    def setTimingDateTime(value: dateTime): Self = this.set("timingDateTime", value.asInstanceOf[js.Any])
+    def set_groupingBehavior(value: Element): Self = StObject.set(x, "_groupingBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimingDateTime: Self = this.set("timingDateTime", js.undefined)
+    def set_groupingBehaviorUndefined: Self = StObject.set(x, "_groupingBehavior", js.undefined)
     
     @scala.inline
-    def setTimingDuration(value: Duration): Self = this.set("timingDuration", value.asInstanceOf[js.Any])
+    def set_label(value: Element): Self = StObject.set(x, "_label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimingDuration: Self = this.set("timingDuration", js.undefined)
+    def set_labelUndefined: Self = StObject.set(x, "_label", js.undefined)
     
     @scala.inline
-    def setTimingPeriod(value: Period): Self = this.set("timingPeriod", value.asInstanceOf[js.Any])
+    def set_precheckBehavior(value: Element): Self = StObject.set(x, "_precheckBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimingPeriod: Self = this.set("timingPeriod", js.undefined)
+    def set_precheckBehaviorUndefined: Self = StObject.set(x, "_precheckBehavior", js.undefined)
     
     @scala.inline
-    def setTimingRange(value: Range): Self = this.set("timingRange", value.asInstanceOf[js.Any])
+    def set_requiredBehavior(value: Element): Self = StObject.set(x, "_requiredBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimingRange: Self = this.set("timingRange", js.undefined)
+    def set_requiredBehaviorUndefined: Self = StObject.set(x, "_requiredBehavior", js.undefined)
     
     @scala.inline
-    def setTimingTiming(value: Timing): Self = this.set("timingTiming", value.asInstanceOf[js.Any])
+    def set_selectionBehavior(value: Element): Self = StObject.set(x, "_selectionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimingTiming: Self = this.set("timingTiming", js.undefined)
+    def set_selectionBehaviorUndefined: Self = StObject.set(x, "_selectionBehavior", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def set_textEquivalent(value: Element): Self = StObject.set(x, "_textEquivalent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def set_textEquivalentUndefined: Self = StObject.set(x, "_textEquivalent", js.undefined)
     
     @scala.inline
-    def setTransform(value: Reference): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def set_timingDateTime(value: Element): Self = StObject.set(x, "_timingDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def set_timingDateTimeUndefined: Self = StObject.set(x, "_timingDateTime", js.undefined)
     
     @scala.inline
-    def setTriggerDefinitionVarargs(value: TriggerDefinition*): Self = this.set("triggerDefinition", js.Array(value :_*))
+    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerDefinition(value: js.Array[TriggerDefinition]): Self = this.set("triggerDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerDefinition: Self = this.set("triggerDefinition", js.undefined)
-    
-    @scala.inline
-    def setType(value: Coding): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
   }
 }

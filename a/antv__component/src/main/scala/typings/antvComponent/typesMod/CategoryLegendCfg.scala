@@ -1,6 +1,7 @@
 package typings.antvComponent.typesMod
 
 import typings.antvGBase.interfacesMod.IGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,78 +77,66 @@ object CategoryLegendCfg {
   }
   
   @scala.inline
-  implicit class CategoryLegendCfgOps[Self <: CategoryLegendCfg] (val x: Self) extends AnyVal {
+  implicit class CategoryLegendCfgMutableBuilder[Self <: CategoryLegendCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemName(value: LegendItemNameCfg): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: ListItem*): Self = this.set("items", js.Array(value :_*))
+    def setItemNameUndefined: Self = StObject.set(x, "itemName", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[ListItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItemSpacing(value: Double): Self = StObject.set(x, "itemSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemHeight(value: Double): Self = this.set("itemHeight", value.asInstanceOf[js.Any])
+    def setItemSpacingUndefined: Self = StObject.set(x, "itemSpacing", js.undefined)
     
     @scala.inline
-    def deleteItemHeight: Self = this.set("itemHeight", js.undefined)
+    def setItemValue(value: LegendItemValueCfg): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemName(value: LegendItemNameCfg): Self = this.set("itemName", value.asInstanceOf[js.Any])
+    def setItemValueUndefined: Self = StObject.set(x, "itemValue", js.undefined)
     
     @scala.inline
-    def deleteItemName: Self = this.set("itemName", js.undefined)
+    def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemSpacing(value: Double): Self = this.set("itemSpacing", value.asInstanceOf[js.Any])
+    def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
     
     @scala.inline
-    def deleteItemSpacing: Self = this.set("itemSpacing", js.undefined)
+    def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemValue(value: LegendItemValueCfg): Self = this.set("itemValue", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def deleteItemValue: Self = this.set("itemValue", js.undefined)
+    def setMarker(value: LegendMarkerCfg): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemWidth(value: Double): Self = this.set("itemWidth", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def deleteItemWidth: Self = this.set("itemWidth", js.undefined)
+    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: LegendMarkerCfg): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setMaxItemWidth(value: Double): Self = StObject.set(x, "maxItemWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setMaxItemWidthUndefined: Self = StObject.set(x, "maxItemWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItemWidth(value: Double): Self = this.set("maxItemWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxItemWidth: Self = this.set("maxItemWidth", js.undefined)
-    
-    @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
   }
 }

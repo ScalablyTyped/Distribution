@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alias extends js.Object {
+trait Alias extends StObject {
   
   /**
     * Describes the state of the DNS alias.   AVAILABLE - The DNS alias is associated with an Amazon FSx file system.   CREATING - Amazon FSx is creating the DNS alias and associating it with the file system.   CREATE_FAILED - Amazon FSx was unable to associate the DNS alias with the file system.   DELETING - Amazon FSx is disassociating the DNS alias from the file system and deleting it.   DELETE_FAILED - Amazon FSx was unable to disassocate the DNS alias from the file system.  
@@ -26,30 +27,18 @@ object Alias {
   }
   
   @scala.inline
-  implicit class AliasOps[Self <: Alias] (val x: Self) extends AnyVal {
+  implicit class AliasMutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLifecycle(value: AliasLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: AlternateDNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycle(value: AliasLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
-    
-    @scala.inline
-    def setName(value: AlternateDNSName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

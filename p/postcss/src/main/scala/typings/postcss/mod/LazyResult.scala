@@ -2,6 +2,7 @@ package typings.postcss.mod
 
 import typings.postcss.anon.FnCall
 import typings.postcss.anon.FnCallOnrejected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A promise proxy for the result of PostCSS transformations.
   */
 @js.native
-trait LazyResult extends js.Object {
+trait LazyResult extends StObject {
   
   /**
     * Processes input CSS through synchronous and asynchronous plugins.

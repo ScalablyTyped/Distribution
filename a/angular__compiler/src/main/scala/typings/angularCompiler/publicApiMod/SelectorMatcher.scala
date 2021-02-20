@@ -1,5 +1,6 @@
 package typings.angularCompiler.publicApiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SelectorMatcher[T] ()
   extends typings.angularCompiler.srcCompilerMod.SelectorMatcher[T]
 /* static members */
-@JSImport("@angular/compiler/public_api", "SelectorMatcher")
-@js.native
-object SelectorMatcher extends js.Object {
+object SelectorMatcher {
   
+  @JSImport("@angular/compiler/public_api", "SelectorMatcher.createNotMatcher")
+  @js.native
   def createNotMatcher(notSelectors: js.Array[typings.angularCompiler.selectorMod.CssSelector]): typings.angularCompiler.selectorMod.SelectorMatcher[Null] = js.native
 }

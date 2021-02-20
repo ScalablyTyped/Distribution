@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains information about a specific test point within a chart control, on the client side.
   */
 @js.native
-trait ASPxClientWebChartHitInfo extends js.Object {
+trait ASPxClientWebChartHitInfo extends StObject {
   
   /**
     * Gets the client-side annotation instance from under the test point.
@@ -278,144 +279,132 @@ object ASPxClientWebChartHitInfo {
   }
   
   @scala.inline
-  implicit class ASPxClientWebChartHitInfoOps[Self <: ASPxClientWebChartHitInfo] (val x: Self) extends AnyVal {
+  implicit class ASPxClientWebChartHitInfoMutableBuilder[Self <: ASPxClientWebChartHitInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation(value: ASPxClientAnnotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisLabelItem(value: ASPxClientAxisLabelItem): Self = StObject.set(x, "axisLabelItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotation(value: ASPxClientAnnotation): Self = this.set("annotation", value.asInstanceOf[js.Any])
+    def setAxisTitle(value: ASPxClientAxisTitle): Self = StObject.set(x, "axisTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: ASPxClientAxisBase): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setChart(value: ASPxClientWebChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisLabelItem(value: ASPxClientAxisLabelItem): Self = this.set("axisLabelItem", value.asInstanceOf[js.Any])
+    def setChartTitle(value: ASPxClientChartTitle): Self = StObject.set(x, "chartTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisTitle(value: ASPxClientAxisTitle): Self = this.set("axisTitle", value.asInstanceOf[js.Any])
+    def setConstantLine(value: ASPxClientConstantLine): Self = StObject.set(x, "constantLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: ASPxClientWebChart): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setCustomLegendItem(value: ASPxClientCustomLegendItem): Self = StObject.set(x, "customLegendItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartTitle(value: ASPxClientChartTitle): Self = this.set("chartTitle", value.asInstanceOf[js.Any])
+    def setDiagram(value: ASPxClientXYDiagramBase): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstantLine(value: ASPxClientConstantLine): Self = this.set("constantLine", value.asInstanceOf[js.Any])
+    def setFibonacciIndicator(value: ASPxClientFibonacciIndicator): Self = StObject.set(x, "fibonacciIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomLegendItem(value: ASPxClientCustomLegendItem): Self = this.set("customLegendItem", value.asInstanceOf[js.Any])
+    def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagram(value: ASPxClientXYDiagramBase): Self = this.set("diagram", value.asInstanceOf[js.Any])
+    def setInAnnotation(value: Boolean): Self = StObject.set(x, "inAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFibonacciIndicator(value: ASPxClientFibonacciIndicator): Self = this.set("fibonacciIndicator", value.asInstanceOf[js.Any])
+    def setInAxis(value: Boolean): Self = StObject.set(x, "inAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlink(value: String): Self = this.set("hyperlink", value.asInstanceOf[js.Any])
+    def setInAxisLabelItem(value: Boolean): Self = StObject.set(x, "inAxisLabelItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInAnnotation(value: Boolean): Self = this.set("inAnnotation", value.asInstanceOf[js.Any])
+    def setInAxisTitle(value: Boolean): Self = StObject.set(x, "inAxisTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInAxis(value: Boolean): Self = this.set("inAxis", value.asInstanceOf[js.Any])
+    def setInChart(value: Boolean): Self = StObject.set(x, "inChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInAxisLabelItem(value: Boolean): Self = this.set("inAxisLabelItem", value.asInstanceOf[js.Any])
+    def setInChartTitle(value: Boolean): Self = StObject.set(x, "inChartTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInAxisTitle(value: Boolean): Self = this.set("inAxisTitle", value.asInstanceOf[js.Any])
+    def setInConstantLine(value: Boolean): Self = StObject.set(x, "inConstantLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInChart(value: Boolean): Self = this.set("inChart", value.asInstanceOf[js.Any])
+    def setInCustomLegendItem(value: Boolean): Self = StObject.set(x, "inCustomLegendItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInChartTitle(value: Boolean): Self = this.set("inChartTitle", value.asInstanceOf[js.Any])
+    def setInDiagram(value: Boolean): Self = StObject.set(x, "inDiagram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInConstantLine(value: Boolean): Self = this.set("inConstantLine", value.asInstanceOf[js.Any])
+    def setInFibonacciIndicator(value: Boolean): Self = StObject.set(x, "inFibonacciIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInCustomLegendItem(value: Boolean): Self = this.set("inCustomLegendItem", value.asInstanceOf[js.Any])
+    def setInHyperlink(value: Boolean): Self = StObject.set(x, "inHyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInDiagram(value: Boolean): Self = this.set("inDiagram", value.asInstanceOf[js.Any])
+    def setInIndicator(value: Boolean): Self = StObject.set(x, "inIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInFibonacciIndicator(value: Boolean): Self = this.set("inFibonacciIndicator", value.asInstanceOf[js.Any])
+    def setInLegend(value: Boolean): Self = StObject.set(x, "inLegend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInHyperlink(value: Boolean): Self = this.set("inHyperlink", value.asInstanceOf[js.Any])
+    def setInNonDefaultPane(value: Boolean): Self = StObject.set(x, "inNonDefaultPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInIndicator(value: Boolean): Self = this.set("inIndicator", value.asInstanceOf[js.Any])
+    def setInPaneTitle(value: Boolean): Self = StObject.set(x, "inPaneTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInLegend(value: Boolean): Self = this.set("inLegend", value.asInstanceOf[js.Any])
+    def setInRegressionLine(value: Boolean): Self = StObject.set(x, "inRegressionLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInNonDefaultPane(value: Boolean): Self = this.set("inNonDefaultPane", value.asInstanceOf[js.Any])
+    def setInSeries(value: Boolean): Self = StObject.set(x, "inSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInPaneTitle(value: Boolean): Self = this.set("inPaneTitle", value.asInstanceOf[js.Any])
+    def setInSeriesLabel(value: Boolean): Self = StObject.set(x, "inSeriesLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInRegressionLine(value: Boolean): Self = this.set("inRegressionLine", value.asInstanceOf[js.Any])
+    def setInSeriesPoint(value: Boolean): Self = StObject.set(x, "inSeriesPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInSeries(value: Boolean): Self = this.set("inSeries", value.asInstanceOf[js.Any])
+    def setInSeriesTitle(value: Boolean): Self = StObject.set(x, "inSeriesTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInSeriesLabel(value: Boolean): Self = this.set("inSeriesLabel", value.asInstanceOf[js.Any])
+    def setInTrendLine(value: Boolean): Self = StObject.set(x, "inTrendLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInSeriesPoint(value: Boolean): Self = this.set("inSeriesPoint", value.asInstanceOf[js.Any])
+    def setIndicator(value: ASPxClientIndicator): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInSeriesTitle(value: Boolean): Self = this.set("inSeriesTitle", value.asInstanceOf[js.Any])
+    def setLegend(value: ASPxClientLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInTrendLine(value: Boolean): Self = this.set("inTrendLine", value.asInstanceOf[js.Any])
+    def setNonDefaultPane(value: ASPxClientXYDiagramPane): Self = StObject.set(x, "nonDefaultPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicator(value: ASPxClientIndicator): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    def setPaneTitle(value: ASPxClientPaneTitle): Self = StObject.set(x, "paneTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: ASPxClientLegend): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setRegressionLine(value: ASPxClientRegressionLine): Self = StObject.set(x, "regressionLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonDefaultPane(value: ASPxClientXYDiagramPane): Self = this.set("nonDefaultPane", value.asInstanceOf[js.Any])
+    def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaneTitle(value: ASPxClientPaneTitle): Self = this.set("paneTitle", value.asInstanceOf[js.Any])
+    def setSeriesLabel(value: ASPxClientSeriesLabel): Self = StObject.set(x, "seriesLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegressionLine(value: ASPxClientRegressionLine): Self = this.set("regressionLine", value.asInstanceOf[js.Any])
+    def setSeriesPoint(value: ASPxClientSeriesPoint): Self = StObject.set(x, "seriesPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: ASPxClientSeries): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSeriesTitle(value: ASPxClientSeriesTitle): Self = StObject.set(x, "seriesTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesLabel(value: ASPxClientSeriesLabel): Self = this.set("seriesLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeriesPoint(value: ASPxClientSeriesPoint): Self = this.set("seriesPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeriesTitle(value: ASPxClientSeriesTitle): Self = this.set("seriesTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrendLine(value: ASPxClientTrendLine): Self = this.set("trendLine", value.asInstanceOf[js.Any])
+    def setTrendLine(value: ASPxClientTrendLine): Self = StObject.set(x, "trendLine", value.asInstanceOf[js.Any])
   }
 }

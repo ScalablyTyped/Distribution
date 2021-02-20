@@ -1,11 +1,12 @@
 package typings.cordovaPluginKeyboard
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Keyboard extends js.Object {
+trait Keyboard extends StObject {
   
   /**
     * Specifies whenether content of page would be autoamtically scrolled to the top of the page when keyboard is hiding.

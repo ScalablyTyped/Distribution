@@ -1,14 +1,14 @@
 package typings.yandexMaps.mod
 
 import typings.yandexMaps.anon.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "event")
-@js.native
-object event extends js.Object {
+object event {
   
+  @JSImport("yandex-maps", "event.Manager")
   @js.native
   class Manager[TargetGeometry] () extends IEventManager[TargetGeometry] {
     def this(params: Context) = this()

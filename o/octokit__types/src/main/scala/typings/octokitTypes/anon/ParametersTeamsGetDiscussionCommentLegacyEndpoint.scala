@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.TeamsGetDiscussionCommentLegacyEndpoint
 import typings.octokitTypes.endpointsMod.TeamsGetDiscussionCommentLegacyRequestOptions
 import typings.octokitTypes.endpointsMod.TeamsGetDiscussionCommentLegacyResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersTeamsGetDiscussionCommentLegacyEndpoint extends js.Object {
+trait ParametersTeamsGetDiscussionCommentLegacyEndpoint extends StObject {
   
   var parameters: TeamsGetDiscussionCommentLegacyEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersTeamsGetDiscussionCommentLegacyEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersTeamsGetDiscussionCommentLegacyEndpointOps[Self <: ParametersTeamsGetDiscussionCommentLegacyEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersTeamsGetDiscussionCommentLegacyEndpointMutableBuilder[Self <: ParametersTeamsGetDiscussionCommentLegacyEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: TeamsGetDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: TeamsGetDiscussionCommentLegacyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: TeamsGetDiscussionCommentLegacyEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: TeamsGetDiscussionCommentLegacyRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[TeamsGetDiscussionCommentLegacyResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[TeamsGetDiscussionCommentLegacyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

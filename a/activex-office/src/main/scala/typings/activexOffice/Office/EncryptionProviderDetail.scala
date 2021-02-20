@@ -5,6 +5,7 @@ import typings.activexOffice.activexOfficeNumbers.`1`
 import typings.activexOffice.activexOfficeNumbers.`2`
 import typings.activexOffice.activexOfficeNumbers.`3`
 import typings.activexOffice.activexOfficeNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`4`
   - typings.activexOffice.activexOfficeNumbers.`0`
 */
-trait EncryptionProviderDetail extends js.Object
+trait EncryptionProviderDetail extends StObject
 object EncryptionProviderDetail {
   
   @scala.inline

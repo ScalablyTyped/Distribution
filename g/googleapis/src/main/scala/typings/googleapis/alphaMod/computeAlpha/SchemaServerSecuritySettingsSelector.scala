@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * authentication and authorization settings are applied to the Envoy.
   */
 @js.native
-trait SchemaServerSecuritySettingsSelector extends js.Object {
+trait SchemaServerSecuritySettingsSelector extends StObject {
   
   /**
     * The labels associated with the XDS client.
@@ -31,33 +32,21 @@ object SchemaServerSecuritySettingsSelector {
   }
   
   @scala.inline
-  implicit class SchemaServerSecuritySettingsSelectorOps[Self <: SchemaServerSecuritySettingsSelector] (val x: Self) extends AnyVal {
+  implicit class SchemaServerSecuritySettingsSelectorMutableBuilder[Self <: SchemaServerSecuritySettingsSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelMatches(value: js.Array[SchemaMetadataFilterLabelMatch]): Self = StObject.set(x, "labelMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelMatchesUndefined: Self = StObject.set(x, "labelMatches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelMatchesVarargs(value: SchemaMetadataFilterLabelMatch*): Self = StObject.set(x, "labelMatches", js.Array(value :_*))
     
     @scala.inline
-    def setLabelMatchesVarargs(value: SchemaMetadataFilterLabelMatch*): Self = this.set("labelMatches", js.Array(value :_*))
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMatches(value: js.Array[SchemaMetadataFilterLabelMatch]): Self = this.set("labelMatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelMatches: Self = this.set("labelMatches", js.undefined)
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

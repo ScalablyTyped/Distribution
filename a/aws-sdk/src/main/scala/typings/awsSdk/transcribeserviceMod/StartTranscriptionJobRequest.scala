@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartTranscriptionJobRequest extends js.Object {
+trait StartTranscriptionJobRequest extends StObject {
   
   /**
     * An object that contains the request parameters for content redaction.
@@ -86,99 +87,87 @@ object StartTranscriptionJobRequest {
   }
   
   @scala.inline
-  implicit class StartTranscriptionJobRequestOps[Self <: StartTranscriptionJobRequest] (val x: Self) extends AnyVal {
+  implicit class StartTranscriptionJobRequestMutableBuilder[Self <: StartTranscriptionJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentRedaction(value: ContentRedaction): Self = StObject.set(x, "ContentRedaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentRedactionUndefined: Self = StObject.set(x, "ContentRedaction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifyLanguage(value: Boolean): Self = StObject.set(x, "IdentifyLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: Media): Self = this.set("Media", value.asInstanceOf[js.Any])
+    def setIdentifyLanguageUndefined: Self = StObject.set(x, "IdentifyLanguage", js.undefined)
     
     @scala.inline
-    def setTranscriptionJobName(value: TranscriptionJobName): Self = this.set("TranscriptionJobName", value.asInstanceOf[js.Any])
+    def setJobExecutionSettings(value: JobExecutionSettings): Self = StObject.set(x, "JobExecutionSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentRedaction(value: ContentRedaction): Self = this.set("ContentRedaction", value.asInstanceOf[js.Any])
+    def setJobExecutionSettingsUndefined: Self = StObject.set(x, "JobExecutionSettings", js.undefined)
     
     @scala.inline
-    def deleteContentRedaction: Self = this.set("ContentRedaction", js.undefined)
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifyLanguage(value: Boolean): Self = this.set("IdentifyLanguage", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def deleteIdentifyLanguage: Self = this.set("IdentifyLanguage", js.undefined)
+    def setLanguageOptions(value: LanguageOptions): Self = StObject.set(x, "LanguageOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobExecutionSettings(value: JobExecutionSettings): Self = this.set("JobExecutionSettings", value.asInstanceOf[js.Any])
+    def setLanguageOptionsUndefined: Self = StObject.set(x, "LanguageOptions", js.undefined)
     
     @scala.inline
-    def deleteJobExecutionSettings: Self = this.set("JobExecutionSettings", js.undefined)
+    def setLanguageOptionsVarargs(value: LanguageCode*): Self = StObject.set(x, "LanguageOptions", js.Array(value :_*))
     
     @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    def setMedia(value: Media): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    def setMediaFormat(value: MediaFormat): Self = StObject.set(x, "MediaFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageOptionsVarargs(value: LanguageCode*): Self = this.set("LanguageOptions", js.Array(value :_*))
+    def setMediaFormatUndefined: Self = StObject.set(x, "MediaFormat", js.undefined)
     
     @scala.inline
-    def setLanguageOptions(value: LanguageOptions): Self = this.set("LanguageOptions", value.asInstanceOf[js.Any])
+    def setMediaSampleRateHertz(value: MediaSampleRateHertz): Self = StObject.set(x, "MediaSampleRateHertz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguageOptions: Self = this.set("LanguageOptions", js.undefined)
+    def setMediaSampleRateHertzUndefined: Self = StObject.set(x, "MediaSampleRateHertz", js.undefined)
     
     @scala.inline
-    def setMediaFormat(value: MediaFormat): Self = this.set("MediaFormat", value.asInstanceOf[js.Any])
+    def setModelSettings(value: ModelSettings): Self = StObject.set(x, "ModelSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMediaFormat: Self = this.set("MediaFormat", js.undefined)
+    def setModelSettingsUndefined: Self = StObject.set(x, "ModelSettings", js.undefined)
     
     @scala.inline
-    def setMediaSampleRateHertz(value: MediaSampleRateHertz): Self = this.set("MediaSampleRateHertz", value.asInstanceOf[js.Any])
+    def setOutputBucketName(value: OutputBucketName): Self = StObject.set(x, "OutputBucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMediaSampleRateHertz: Self = this.set("MediaSampleRateHertz", js.undefined)
+    def setOutputBucketNameUndefined: Self = StObject.set(x, "OutputBucketName", js.undefined)
     
     @scala.inline
-    def setModelSettings(value: ModelSettings): Self = this.set("ModelSettings", value.asInstanceOf[js.Any])
+    def setOutputEncryptionKMSKeyId(value: KMSKeyId): Self = StObject.set(x, "OutputEncryptionKMSKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModelSettings: Self = this.set("ModelSettings", js.undefined)
+    def setOutputEncryptionKMSKeyIdUndefined: Self = StObject.set(x, "OutputEncryptionKMSKeyId", js.undefined)
     
     @scala.inline
-    def setOutputBucketName(value: OutputBucketName): Self = this.set("OutputBucketName", value.asInstanceOf[js.Any])
+    def setOutputKey(value: OutputKey): Self = StObject.set(x, "OutputKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputBucketName: Self = this.set("OutputBucketName", js.undefined)
+    def setOutputKeyUndefined: Self = StObject.set(x, "OutputKey", js.undefined)
     
     @scala.inline
-    def setOutputEncryptionKMSKeyId(value: KMSKeyId): Self = this.set("OutputEncryptionKMSKeyId", value.asInstanceOf[js.Any])
+    def setSettings(value: Settings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputEncryptionKMSKeyId: Self = this.set("OutputEncryptionKMSKeyId", js.undefined)
+    def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
     @scala.inline
-    def setOutputKey(value: OutputKey): Self = this.set("OutputKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputKey: Self = this.set("OutputKey", js.undefined)
-    
-    @scala.inline
-    def setSettings(value: Settings): Self = this.set("Settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("Settings", js.undefined)
+    def setTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "TranscriptionJobName", value.asInstanceOf[js.Any])
   }
 }

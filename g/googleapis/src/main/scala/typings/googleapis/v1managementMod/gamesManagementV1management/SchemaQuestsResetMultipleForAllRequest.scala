@@ -1,5 +1,6 @@
 package typings.googleapis.v1managementMod.gamesManagementV1management
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for multiple quests reset all request.
   */
 @js.native
-trait SchemaQuestsResetMultipleForAllRequest extends js.Object {
+trait SchemaQuestsResetMultipleForAllRequest extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
@@ -30,33 +31,21 @@ object SchemaQuestsResetMultipleForAllRequest {
   }
   
   @scala.inline
-  implicit class SchemaQuestsResetMultipleForAllRequestOps[Self <: SchemaQuestsResetMultipleForAllRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaQuestsResetMultipleForAllRequestMutableBuilder[Self <: SchemaQuestsResetMultipleForAllRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuest_ids(value: js.Array[String]): Self = StObject.set(x, "quest_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setQuest_idsUndefined: Self = StObject.set(x, "quest_ids", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setQuest_idsVarargs(value: String*): Self = this.set("quest_ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuest_ids(value: js.Array[String]): Self = this.set("quest_ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuest_ids: Self = this.set("quest_ids", js.undefined)
+    def setQuest_idsVarargs(value: String*): Self = StObject.set(x, "quest_ids", js.Array(value :_*))
   }
 }

@@ -4,12 +4,13 @@ import typings.activexOffice.Office.MsoEncoding
 import typings.activexOffice.Office.MsoScreenSize
 import typings.activexOffice.Office.MsoTargetBrowser
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebOptions extends js.Object {
+trait WebOptions extends StObject {
   
   var AllowPNG: MsoTriState = js.native
   
@@ -68,63 +69,51 @@ object WebOptions {
   }
   
   @scala.inline
-  implicit class WebOptionsOps[Self <: WebOptions] (val x: Self) extends AnyVal {
+  implicit class WebOptionsMutableBuilder[Self <: WebOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPNG(value: MsoTriState): Self = StObject.set(x, "AllowPNG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncoding(value: MsoEncoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFolderSuffix(value: String): Self = StObject.set(x, "FolderSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPNG(value: MsoTriState): Self = this.set("AllowPNG", value.asInstanceOf[js.Any])
+    def setFrameColors(value: PpFrameColors): Self = StObject.set(x, "FrameColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: MsoEncoding): Self = this.set("Encoding", value.asInstanceOf[js.Any])
+    def setHTMLVersion(value: PpHTMLVersion): Self = StObject.set(x, "HTMLVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderSuffix(value: String): Self = this.set("FolderSuffix", value.asInstanceOf[js.Any])
+    def setIncludeNavigation(value: MsoTriState): Self = StObject.set(x, "IncludeNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameColors(value: PpFrameColors): Self = this.set("FrameColors", value.asInstanceOf[js.Any])
+    def setOrganizeInFolder(value: MsoTriState): Self = StObject.set(x, "OrganizeInFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTMLVersion(value: PpHTMLVersion): Self = this.set("HTMLVersion", value.asInstanceOf[js.Any])
+    def setPowerPointDotWebOptions_typekey(value: WebOptions): Self = StObject.set(x, "PowerPoint.WebOptions_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNavigation(value: MsoTriState): Self = this.set("IncludeNavigation", value.asInstanceOf[js.Any])
+    def setRelyOnVML(value: MsoTriState): Self = StObject.set(x, "RelyOnVML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizeInFolder(value: MsoTriState): Self = this.set("OrganizeInFolder", value.asInstanceOf[js.Any])
+    def setResizeGraphics(value: MsoTriState): Self = StObject.set(x, "ResizeGraphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotWebOptions_typekey(value: WebOptions): Self = this.set("PowerPoint.WebOptions_typekey", value.asInstanceOf[js.Any])
+    def setScreenSize(value: MsoScreenSize): Self = StObject.set(x, "ScreenSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelyOnVML(value: MsoTriState): Self = this.set("RelyOnVML", value.asInstanceOf[js.Any])
+    def setShowSlideAnimation(value: MsoTriState): Self = StObject.set(x, "ShowSlideAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeGraphics(value: MsoTriState): Self = this.set("ResizeGraphics", value.asInstanceOf[js.Any])
+    def setTargetBrowser(value: MsoTargetBrowser): Self = StObject.set(x, "TargetBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenSize(value: MsoScreenSize): Self = this.set("ScreenSize", value.asInstanceOf[js.Any])
+    def setUseDefaultFolderSuffix(value: () => Unit): Self = StObject.set(x, "UseDefaultFolderSuffix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowSlideAnimation(value: MsoTriState): Self = this.set("ShowSlideAnimation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetBrowser(value: MsoTargetBrowser): Self = this.set("TargetBrowser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseDefaultFolderSuffix(value: () => Unit): Self = this.set("UseDefaultFolderSuffix", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUseLongFileNames(value: MsoTriState): Self = this.set("UseLongFileNames", value.asInstanceOf[js.Any])
+    def setUseLongFileNames(value: MsoTriState): Self = StObject.set(x, "UseLongFileNames", value.asInstanceOf[js.Any])
   }
 }

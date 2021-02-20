@@ -28,6 +28,7 @@ import typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -315,48 +316,36 @@ object RedlinePortion {
   }
   
   @scala.inline
-  implicit class RedlinePortionOps[Self <: RedlinePortion] (val x: Self) extends AnyVal {
+  implicit class RedlinePortionMutableBuilder[Self <: RedlinePortion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsInHeaderFooter(value: Boolean): Self = StObject.set(x, "IsInHeaderFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMergeLastPara(value: Boolean): Self = StObject.set(x, "MergeLastPara", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedlineAuthor(value: String): Self = StObject.set(x, "RedlineAuthor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInHeaderFooter(value: Boolean): Self = this.set("IsInHeaderFooter", value.asInstanceOf[js.Any])
+    def setRedlineComment(value: String): Self = StObject.set(x, "RedlineComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeLastPara(value: Boolean): Self = this.set("MergeLastPara", value.asInstanceOf[js.Any])
+    def setRedlineDateTime(value: DateTime): Self = StObject.set(x, "RedlineDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedlineAuthor(value: String): Self = this.set("RedlineAuthor", value.asInstanceOf[js.Any])
+    def setRedlineIdentifier(value: String): Self = StObject.set(x, "RedlineIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedlineComment(value: String): Self = this.set("RedlineComment", value.asInstanceOf[js.Any])
+    def setRedlineSuccessorData(value: PropertyValues): Self = StObject.set(x, "RedlineSuccessorData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedlineDateTime(value: DateTime): Self = this.set("RedlineDateTime", value.asInstanceOf[js.Any])
+    def setRedlineSuccessorDataVarargs(value: PropertyValue*): Self = StObject.set(x, "RedlineSuccessorData", js.Array(value :_*))
     
     @scala.inline
-    def setRedlineIdentifier(value: String): Self = this.set("RedlineIdentifier", value.asInstanceOf[js.Any])
+    def setRedlineText(value: XText): Self = StObject.set(x, "RedlineText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedlineSuccessorDataVarargs(value: PropertyValue*): Self = this.set("RedlineSuccessorData", js.Array(value :_*))
-    
-    @scala.inline
-    def setRedlineSuccessorData(value: PropertyValues): Self = this.set("RedlineSuccessorData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedlineText(value: XText): Self = this.set("RedlineText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedlineType(value: String): Self = this.set("RedlineType", value.asInstanceOf[js.Any])
+    def setRedlineType(value: String): Self = StObject.set(x, "RedlineType", value.asInstanceOf[js.Any])
   }
 }

@@ -5,26 +5,14 @@ import typings.ky.mod.Input
 import typings.ky.mod.Options
 import typings.ky.mod.ResponsePromise
 import typings.std.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ky/umd", JSImport.Namespace)
-@js.native
-object umdMod extends js.Object {
+object umdMod {
   
-  @js.native
-  class HTTPError protected ()
-    extends typings.ky.mod.HTTPError {
-    def this(response: Response) = this()
-  }
-  
-  @js.native
-  class TimeoutError ()
-    extends typings.ky.mod.TimeoutError
-  
-  @js.native
-  object default extends js.Object {
+  object default {
     
     /**
     	Fetch the given `url`.
@@ -40,13 +28,19 @@ object umdMod extends js.Object {
     	})();
     	```
     	*/
+    @JSImport("ky/umd", JSImport.Default)
+    @js.native
     def apply(url: Input): ResponsePromise = js.native
+    @JSImport("ky/umd", JSImport.Default)
+    @js.native
     def apply(url: Input, options: Options): ResponsePromise = js.native
     
     /**
     	Create a new Ky instance with complete new defaults.
     	@returns A new Ky instance.
     	*/
+    @JSImport("ky/umd", "default.create")
+    @js.native
     def create(defaultOptions: Options): Call = js.native
     
     /**
@@ -54,7 +48,11 @@ object umdMod extends js.Object {
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
+    @JSImport("ky/umd", "default.delete")
+    @js.native
     def delete(url: Input): ResponsePromise = js.native
+    @JSImport("ky/umd", "default.delete")
+    @js.native
     def delete(url: Input, options: Options): ResponsePromise = js.native
     
     /**
@@ -62,6 +60,8 @@ object umdMod extends js.Object {
     	In contrast to `ky.create()`, `ky.extend()` inherits defaults from its parent.
     	@returns A new Ky instance.
     	*/
+    @JSImport("ky/umd", "default.extend")
+    @js.native
     def extend(defaultOptions: Options): Call = js.native
     
     /**
@@ -69,7 +69,11 @@ object umdMod extends js.Object {
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
+    @JSImport("ky/umd", "default.get")
+    @js.native
     def get(url: Input): ResponsePromise = js.native
+    @JSImport("ky/umd", "default.get")
+    @js.native
     def get(url: Input, options: Options): ResponsePromise = js.native
     
     /**
@@ -77,7 +81,11 @@ object umdMod extends js.Object {
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
+    @JSImport("ky/umd", "default.head")
+    @js.native
     def head(url: Input): ResponsePromise = js.native
+    @JSImport("ky/umd", "default.head")
+    @js.native
     def head(url: Input, options: Options): ResponsePromise = js.native
     
     /**
@@ -85,7 +93,11 @@ object umdMod extends js.Object {
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
+    @JSImport("ky/umd", "default.patch")
+    @js.native
     def patch(url: Input): ResponsePromise = js.native
+    @JSImport("ky/umd", "default.patch")
+    @js.native
     def patch(url: Input, options: Options): ResponsePromise = js.native
     
     /**
@@ -93,7 +105,11 @@ object umdMod extends js.Object {
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
+    @JSImport("ky/umd", "default.post")
+    @js.native
     def post(url: Input): ResponsePromise = js.native
+    @JSImport("ky/umd", "default.post")
+    @js.native
     def post(url: Input, options: Options): ResponsePromise = js.native
     
     /**
@@ -101,7 +117,11 @@ object umdMod extends js.Object {
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
+    @JSImport("ky/umd", "default.put")
+    @js.native
     def put(url: Input): ResponsePromise = js.native
+    @JSImport("ky/umd", "default.put")
+    @js.native
     def put(url: Input, options: Options): ResponsePromise = js.native
     
     /**
@@ -126,6 +146,20 @@ object umdMod extends js.Object {
     	})();
     	```
     	*/
+    @JSImport("ky/umd", "default.stop")
+    @js.native
     val stop: js.Symbol = js.native
   }
+  
+  @JSImport("ky/umd", "HTTPError")
+  @js.native
+  class HTTPError protected ()
+    extends typings.ky.mod.HTTPError {
+    def this(response: Response) = this()
+  }
+  
+  @JSImport("ky/umd", "TimeoutError")
+  @js.native
+  class TimeoutError ()
+    extends typings.ky.mod.TimeoutError
 }

@@ -1,162 +1,132 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmitFlags extends js.Object
+sealed trait EmitFlags extends StObject
 @JSImport("typescript", "EmitFlags")
 @js.native
-object EmitFlags extends js.Object {
+object EmitFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmitFlags with Double] = js.native
   
   @js.native
   sealed trait AdviseOnEmitNode extends EmitFlags
-  /* 2 */ @js.native
-  object AdviseOnEmitNode extends TopLevel[AdviseOnEmitNode with Double]
+  /* 2 */ val AdviseOnEmitNode: typings.typescript.mod.EmitFlags.AdviseOnEmitNode with Double = js.native
   
   @js.native
   sealed trait AsyncFunctionBody extends EmitFlags
-  /* 262144 */ @js.native
-  object AsyncFunctionBody extends TopLevel[AsyncFunctionBody with Double]
+  /* 262144 */ val AsyncFunctionBody: typings.typescript.mod.EmitFlags.AsyncFunctionBody with Double = js.native
   
   @js.native
   sealed trait CapturesThis extends EmitFlags
-  /* 8 */ @js.native
-  object CapturesThis extends TopLevel[CapturesThis with Double]
+  /* 8 */ val CapturesThis: typings.typescript.mod.EmitFlags.CapturesThis with Double = js.native
   
   @js.native
   sealed trait CustomPrologue extends EmitFlags
-  /* 1048576 */ @js.native
-  object CustomPrologue extends TopLevel[CustomPrologue with Double]
+  /* 1048576 */ val CustomPrologue: typings.typescript.mod.EmitFlags.CustomPrologue with Double = js.native
   
   @js.native
   sealed trait ExportName extends EmitFlags
-  /* 8192 */ @js.native
-  object ExportName extends TopLevel[ExportName with Double]
+  /* 8192 */ val ExportName: typings.typescript.mod.EmitFlags.ExportName with Double = js.native
   
   @js.native
   sealed trait HasEndOfDeclarationMarker extends EmitFlags
-  /* 4194304 */ @js.native
-  object HasEndOfDeclarationMarker extends TopLevel[HasEndOfDeclarationMarker with Double]
+  /* 4194304 */ val HasEndOfDeclarationMarker: typings.typescript.mod.EmitFlags.HasEndOfDeclarationMarker with Double = js.native
   
   @js.native
   sealed trait HelperName extends EmitFlags
-  /* 4096 */ @js.native
-  object HelperName extends TopLevel[HelperName with Double]
+  /* 4096 */ val HelperName: typings.typescript.mod.EmitFlags.HelperName with Double = js.native
   
   @js.native
   sealed trait Indented extends EmitFlags
-  /* 65536 */ @js.native
-  object Indented extends TopLevel[Indented with Double]
+  /* 65536 */ val Indented: typings.typescript.mod.EmitFlags.Indented with Double = js.native
   
   @js.native
   sealed trait InternalName extends EmitFlags
-  /* 32768 */ @js.native
-  object InternalName extends TopLevel[InternalName with Double]
+  /* 32768 */ val InternalName: typings.typescript.mod.EmitFlags.InternalName with Double = js.native
   
   @js.native
   sealed trait Iterator extends EmitFlags
-  /* 8388608 */ @js.native
-  object Iterator
-    extends TopLevel[typings.typescript.mod.EmitFlags.Iterator with Double]
+  /* 8388608 */ val Iterator: typings.typescript.mod.EmitFlags.Iterator with Double = js.native
   
   @js.native
   sealed trait LocalName extends EmitFlags
-  /* 16384 */ @js.native
-  object LocalName extends TopLevel[LocalName with Double]
+  /* 16384 */ val LocalName: typings.typescript.mod.EmitFlags.LocalName with Double = js.native
   
   @js.native
   sealed trait NoAsciiEscaping extends EmitFlags
-  /* 16777216 */ @js.native
-  object NoAsciiEscaping extends TopLevel[NoAsciiEscaping with Double]
+  /* 16777216 */ val NoAsciiEscaping: typings.typescript.mod.EmitFlags.NoAsciiEscaping with Double = js.native
   
   @js.native
   sealed trait NoComments extends EmitFlags
-  /* 1536 */ @js.native
-  object NoComments extends TopLevel[NoComments with Double]
+  /* 1536 */ val NoComments: typings.typescript.mod.EmitFlags.NoComments with Double = js.native
   
   @js.native
   sealed trait NoHoisting extends EmitFlags
-  /* 2097152 */ @js.native
-  object NoHoisting extends TopLevel[NoHoisting with Double]
+  /* 2097152 */ val NoHoisting: typings.typescript.mod.EmitFlags.NoHoisting with Double = js.native
   
   @js.native
   sealed trait NoIndentation extends EmitFlags
-  /* 131072 */ @js.native
-  object NoIndentation extends TopLevel[NoIndentation with Double]
+  /* 131072 */ val NoIndentation: typings.typescript.mod.EmitFlags.NoIndentation with Double = js.native
   
   @js.native
   sealed trait NoLeadingComments extends EmitFlags
-  /* 512 */ @js.native
-  object NoLeadingComments extends TopLevel[NoLeadingComments with Double]
+  /* 512 */ val NoLeadingComments: typings.typescript.mod.EmitFlags.NoLeadingComments with Double = js.native
   
   @js.native
   sealed trait NoLeadingSourceMap extends EmitFlags
-  /* 16 */ @js.native
-  object NoLeadingSourceMap extends TopLevel[NoLeadingSourceMap with Double]
+  /* 16 */ val NoLeadingSourceMap: typings.typescript.mod.EmitFlags.NoLeadingSourceMap with Double = js.native
   
   @js.native
   sealed trait NoNestedComments extends EmitFlags
-  /* 2048 */ @js.native
-  object NoNestedComments extends TopLevel[NoNestedComments with Double]
+  /* 2048 */ val NoNestedComments: typings.typescript.mod.EmitFlags.NoNestedComments with Double = js.native
   
   @js.native
   sealed trait NoNestedSourceMaps extends EmitFlags
-  /* 64 */ @js.native
-  object NoNestedSourceMaps extends TopLevel[NoNestedSourceMaps with Double]
+  /* 64 */ val NoNestedSourceMaps: typings.typescript.mod.EmitFlags.NoNestedSourceMaps with Double = js.native
   
   @js.native
   sealed trait NoSourceMap extends EmitFlags
-  /* 48 */ @js.native
-  object NoSourceMap extends TopLevel[NoSourceMap with Double]
+  /* 48 */ val NoSourceMap: typings.typescript.mod.EmitFlags.NoSourceMap with Double = js.native
   
   @js.native
   sealed trait NoSubstitution extends EmitFlags
-  /* 4 */ @js.native
-  object NoSubstitution extends TopLevel[NoSubstitution with Double]
+  /* 4 */ val NoSubstitution: typings.typescript.mod.EmitFlags.NoSubstitution with Double = js.native
   
   @js.native
   sealed trait NoTokenLeadingSourceMaps extends EmitFlags
-  /* 128 */ @js.native
-  object NoTokenLeadingSourceMaps extends TopLevel[NoTokenLeadingSourceMaps with Double]
+  /* 128 */ val NoTokenLeadingSourceMaps: typings.typescript.mod.EmitFlags.NoTokenLeadingSourceMaps with Double = js.native
   
   @js.native
   sealed trait NoTokenSourceMaps extends EmitFlags
-  /* 384 */ @js.native
-  object NoTokenSourceMaps extends TopLevel[NoTokenSourceMaps with Double]
+  /* 384 */ val NoTokenSourceMaps: typings.typescript.mod.EmitFlags.NoTokenSourceMaps with Double = js.native
   
   @js.native
   sealed trait NoTokenTrailingSourceMaps extends EmitFlags
-  /* 256 */ @js.native
-  object NoTokenTrailingSourceMaps extends TopLevel[NoTokenTrailingSourceMaps with Double]
+  /* 256 */ val NoTokenTrailingSourceMaps: typings.typescript.mod.EmitFlags.NoTokenTrailingSourceMaps with Double = js.native
   
   @js.native
   sealed trait NoTrailingComments extends EmitFlags
-  /* 1024 */ @js.native
-  object NoTrailingComments extends TopLevel[NoTrailingComments with Double]
+  /* 1024 */ val NoTrailingComments: typings.typescript.mod.EmitFlags.NoTrailingComments with Double = js.native
   
   @js.native
   sealed trait NoTrailingSourceMap extends EmitFlags
-  /* 32 */ @js.native
-  object NoTrailingSourceMap extends TopLevel[NoTrailingSourceMap with Double]
+  /* 32 */ val NoTrailingSourceMap: typings.typescript.mod.EmitFlags.NoTrailingSourceMap with Double = js.native
   
   @js.native
   sealed trait None extends EmitFlags
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.typescript.mod.EmitFlags.None with Double = js.native
   
   @js.native
   sealed trait ReuseTempVariableScope extends EmitFlags
-  /* 524288 */ @js.native
-  object ReuseTempVariableScope extends TopLevel[ReuseTempVariableScope with Double]
+  /* 524288 */ val ReuseTempVariableScope: typings.typescript.mod.EmitFlags.ReuseTempVariableScope with Double = js.native
   
   @js.native
   sealed trait SingleLine extends EmitFlags
-  /* 1 */ @js.native
-  object SingleLine extends TopLevel[SingleLine with Double]
+  /* 1 */ val SingleLine: typings.typescript.mod.EmitFlags.SingleLine with Double = js.native
 }

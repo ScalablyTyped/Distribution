@@ -1,11 +1,12 @@
 package typings.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DSGenerateOptions extends js.Object {
+trait DSGenerateOptions extends StObject {
   
   var compact: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object DSGenerateOptions {
   }
   
   @scala.inline
-  implicit class DSGenerateOptionsOps[Self <: DSGenerateOptions] (val x: Self) extends AnyVal {
+  implicit class DSGenerateOptionsMutableBuilder[Self <: DSGenerateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecorate(value: (/* result */ String, /* node */ DSNode) => Unit): Self = StObject.set(x, "decorate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    def setDecorateUndefined: Self = StObject.set(x, "decorate", js.undefined)
     
     @scala.inline
-    def deleteCompact: Self = this.set("compact", js.undefined)
+    def setForceBraces(value: Boolean): Self = StObject.set(x, "forceBraces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorate(value: (/* result */ String, /* node */ DSNode) => Unit): Self = this.set("decorate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteDecorate: Self = this.set("decorate", js.undefined)
-    
-    @scala.inline
-    def setForceBraces(value: Boolean): Self = this.set("forceBraces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceBraces: Self = this.set("forceBraces", js.undefined)
+    def setForceBracesUndefined: Self = StObject.set(x, "forceBraces", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,117 +107,105 @@ object ClientEntry {
   }
   
   @scala.inline
-  implicit class ClientEntryOps[Self <: ClientEntry] (val x: Self) extends AnyVal {
+  implicit class ClientEntryMutableBuilder[Self <: ClientEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClid(value: String): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientAway(value: Double): Self = StObject.set(x, "clientAway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCid(value: String): Self = this.set("cid", value.asInstanceOf[js.Any])
+    def setClientAwayMessage(value: String): Self = StObject.set(x, "clientAwayMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClid(value: String): Self = this.set("clid", value.asInstanceOf[js.Any])
+    def setClientBadges(value: String): Self = StObject.set(x, "clientBadges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAway(value: Double): Self = this.set("clientAway", value.asInstanceOf[js.Any])
+    def setClientChannelGroupId(value: String): Self = StObject.set(x, "clientChannelGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAwayMessage(value: String): Self = this.set("clientAwayMessage", value.asInstanceOf[js.Any])
+    def setClientChannelGroupInheritedChannelId(value: Double): Self = StObject.set(x, "clientChannelGroupInheritedChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientBadges(value: String): Self = this.set("clientBadges", value.asInstanceOf[js.Any])
+    def setClientCountry(value: String): Self = StObject.set(x, "clientCountry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientChannelGroupId(value: String): Self = this.set("clientChannelGroupId", value.asInstanceOf[js.Any])
+    def setClientCountryUndefined: Self = StObject.set(x, "clientCountry", js.undefined)
     
     @scala.inline
-    def setClientChannelGroupInheritedChannelId(value: Double): Self = this.set("clientChannelGroupInheritedChannelId", value.asInstanceOf[js.Any])
+    def setClientCreated(value: Double): Self = StObject.set(x, "clientCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCreated(value: Double): Self = this.set("clientCreated", value.asInstanceOf[js.Any])
+    def setClientDatabaseId(value: String): Self = StObject.set(x, "clientDatabaseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientDatabaseId(value: String): Self = this.set("clientDatabaseId", value.asInstanceOf[js.Any])
+    def setClientEstimatedLocation(value: String): Self = StObject.set(x, "clientEstimatedLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientFlagTalking(value: Boolean): Self = this.set("clientFlagTalking", value.asInstanceOf[js.Any])
+    def setClientEstimatedLocationUndefined: Self = StObject.set(x, "clientEstimatedLocation", js.undefined)
     
     @scala.inline
-    def setClientIdleTime(value: Double): Self = this.set("clientIdleTime", value.asInstanceOf[js.Any])
+    def setClientFlagTalking(value: Boolean): Self = StObject.set(x, "clientFlagTalking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientInputHardware(value: Boolean): Self = this.set("clientInputHardware", value.asInstanceOf[js.Any])
+    def setClientIdleTime(value: Double): Self = StObject.set(x, "clientIdleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientInputMuted(value: Boolean): Self = this.set("clientInputMuted", value.asInstanceOf[js.Any])
+    def setClientInputHardware(value: Boolean): Self = StObject.set(x, "clientInputHardware", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientIsChannelCommander(value: Double): Self = this.set("clientIsChannelCommander", value.asInstanceOf[js.Any])
+    def setClientInputMuted(value: Boolean): Self = StObject.set(x, "clientInputMuted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientIsPrioritySpeaker(value: Boolean): Self = this.set("clientIsPrioritySpeaker", value.asInstanceOf[js.Any])
+    def setClientIsChannelCommander(value: Double): Self = StObject.set(x, "clientIsChannelCommander", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientIsRecording(value: Boolean): Self = this.set("clientIsRecording", value.asInstanceOf[js.Any])
+    def setClientIsPrioritySpeaker(value: Boolean): Self = StObject.set(x, "clientIsPrioritySpeaker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientIsTalker(value: Boolean): Self = this.set("clientIsTalker", value.asInstanceOf[js.Any])
+    def setClientIsRecording(value: Boolean): Self = StObject.set(x, "clientIsRecording", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientLastconnected(value: Double): Self = this.set("clientLastconnected", value.asInstanceOf[js.Any])
+    def setClientIsTalker(value: Boolean): Self = StObject.set(x, "clientIsTalker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientNickname(value: String): Self = this.set("clientNickname", value.asInstanceOf[js.Any])
+    def setClientLastconnected(value: Double): Self = StObject.set(x, "clientLastconnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientOutputHardware(value: Boolean): Self = this.set("clientOutputHardware", value.asInstanceOf[js.Any])
+    def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientOutputMuted(value: Boolean): Self = this.set("clientOutputMuted", value.asInstanceOf[js.Any])
+    def setClientOutputHardware(value: Boolean): Self = StObject.set(x, "clientOutputHardware", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientPlatform(value: String): Self = this.set("clientPlatform", value.asInstanceOf[js.Any])
+    def setClientOutputMuted(value: Boolean): Self = StObject.set(x, "clientOutputMuted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientServergroupsVarargs(value: String*): Self = this.set("clientServergroups", js.Array(value :_*))
+    def setClientPlatform(value: String): Self = StObject.set(x, "clientPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientServergroups(value: js.Array[String]): Self = this.set("clientServergroups", value.asInstanceOf[js.Any])
+    def setClientServergroups(value: js.Array[String]): Self = StObject.set(x, "clientServergroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientTalkPower(value: Double): Self = this.set("clientTalkPower", value.asInstanceOf[js.Any])
+    def setClientServergroupsVarargs(value: String*): Self = StObject.set(x, "clientServergroups", js.Array(value :_*))
     
     @scala.inline
-    def setClientType(value: Double): Self = this.set("clientType", value.asInstanceOf[js.Any])
+    def setClientTalkPower(value: Double): Self = StObject.set(x, "clientTalkPower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientUniqueIdentifier(value: String): Self = this.set("clientUniqueIdentifier", value.asInstanceOf[js.Any])
+    def setClientType(value: Double): Self = StObject.set(x, "clientType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientVersion(value: String): Self = this.set("clientVersion", value.asInstanceOf[js.Any])
+    def setClientUniqueIdentifier(value: String): Self = StObject.set(x, "clientUniqueIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionClientIp(value: String): Self = this.set("connectionClientIp", value.asInstanceOf[js.Any])
+    def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCountry(value: String): Self = this.set("clientCountry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientCountry: Self = this.set("clientCountry", js.undefined)
-    
-    @scala.inline
-    def setClientEstimatedLocation(value: String): Self = this.set("clientEstimatedLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientEstimatedLocation: Self = this.set("clientEstimatedLocation", js.undefined)
+    def setConnectionClientIp(value: String): Self = StObject.set(x, "connectionClientIp", value.asInstanceOf[js.Any])
   }
 }

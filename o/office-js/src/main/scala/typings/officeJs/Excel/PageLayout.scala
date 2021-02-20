@@ -62,6 +62,7 @@ import typings.officeJs.officeJsStrings.Quatro
 import typings.officeJs.officeJsStrings.Statement
 import typings.officeJs.officeJsStrings.Tabloid
 import typings.officeJs.officeJsStrings._empty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

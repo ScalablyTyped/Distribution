@@ -1,6 +1,7 @@
 package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,56 +31,44 @@ object Initialize {
   }
   
   @scala.inline
-  implicit class InitializeOps[Self <: Initialize] (val x: Self) extends AnyVal {
+  implicit class InitializeMutableBuilder[Self <: Initialize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialize(value: (/* models */ js.Array[Initialize], /* options */ js.Object) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParse(value: /* data */ js.Any => _): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitialize(value: (/* models */ js.Array[Initialize], /* options */ js.Object) => Unit): Self = this.set("initialize", js.Any.fromFunction2(value))
+    def setParseSave(value: /* data */ js.Any => _): Self = StObject.set(x, "parseSave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInitialize: Self = this.set("initialize", js.undefined)
+    def setParseSaveUndefined: Self = StObject.set(x, "parseSave", js.undefined)
     
     @scala.inline
-    def setParse(value: /* data */ js.Any => _): Self = this.set("parse", js.Any.fromFunction1(value))
+    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
     @scala.inline
-    def deleteParse: Self = this.set("parse", js.undefined)
+    def setUrlRoot(value: String): Self = StObject.set(x, "urlRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseSave(value: /* data */ js.Any => _): Self = this.set("parseSave", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteParseSave: Self = this.set("parseSave", js.undefined)
-    
-    @scala.inline
-    def setUrlRoot(value: String): Self = this.set("urlRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlRoot: Self = this.set("urlRoot", js.undefined)
-    
-    @scala.inline
-    def setValidateFunction2(value: (/* attributes */ js.Object, /* options */ js.UndefOr[Initialize]) => Double): Self = this.set("validate", js.Any.fromFunction2(value))
+    def setUrlRootUndefined: Self = StObject.set(x, "urlRoot", js.undefined)
     
     @scala.inline
     def setValidate(
       value: js.Object | String | (js.Function2[/* attributes */ js.Object, /* options */ js.UndefOr[Initialize], Double])
-    ): Self = this.set("validate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValidateFunction2(value: (/* attributes */ js.Object, /* options */ js.UndefOr[Initialize]) => Double): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setValidateNull: Self = this.set("validate", null)
+    def setValidateNull: Self = StObject.set(x, "validate", null)
+    
+    @scala.inline
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

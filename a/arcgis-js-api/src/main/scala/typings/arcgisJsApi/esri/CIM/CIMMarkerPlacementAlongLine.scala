@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,55 +47,43 @@ object CIMMarkerPlacementAlongLine {
   }
   
   @scala.inline
-  implicit class CIMMarkerPlacementAlongLineOps[Self <: CIMMarkerPlacementAlongLine] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class CIMMarkerPlacementAlongLineMutableBuilder[Self <: CIMMarkerPlacementAlongLine] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setControlPointPlacement(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementEndings * / any */ String
-    ): Self = this.set("controlPointPlacement", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "controlPointPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControlPointPlacement: Self = this.set("controlPointPlacement", js.undefined)
+    def setControlPointPlacementUndefined: Self = StObject.set(x, "controlPointPlacement", js.undefined)
     
     @scala.inline
-    def setCustomEndingOffset(value: Double): Self = this.set("customEndingOffset", value.asInstanceOf[js.Any])
+    def setCustomEndingOffset(value: Double): Self = StObject.set(x, "customEndingOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomEndingOffset: Self = this.set("customEndingOffset", js.undefined)
+    def setCustomEndingOffsetUndefined: Self = StObject.set(x, "customEndingOffset", js.undefined)
     
     @scala.inline
     def setEndings(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementEndings * / any */ String
-    ): Self = this.set("endings", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndings: Self = this.set("endings", js.undefined)
+    def setEndingsUndefined: Self = StObject.set(x, "endings", js.undefined)
     
     @scala.inline
-    def setOffsetAlongLine(value: Double): Self = this.set("offsetAlongLine", value.asInstanceOf[js.Any])
+    def setOffsetAlongLine(value: Double): Self = StObject.set(x, "offsetAlongLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetAlongLine: Self = this.set("offsetAlongLine", js.undefined)
+    def setOffsetAlongLineUndefined: Self = StObject.set(x, "offsetAlongLine", js.undefined)
     
     @scala.inline
-    def setPlacementTemplateVarargs(value: Double*): Self = this.set("placementTemplate", js.Array(value :_*))
+    def setPlacementTemplate(value: js.Array[Double]): Self = StObject.set(x, "placementTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementTemplate(value: js.Array[Double]): Self = this.set("placementTemplate", value.asInstanceOf[js.Any])
+    def setPlacementTemplateUndefined: Self = StObject.set(x, "placementTemplate", js.undefined)
     
     @scala.inline
-    def deletePlacementTemplate: Self = this.set("placementTemplate", js.undefined)
+    def setPlacementTemplateVarargs(value: Double*): Self = StObject.set(x, "placementTemplate", js.Array(value :_*))
   }
 }

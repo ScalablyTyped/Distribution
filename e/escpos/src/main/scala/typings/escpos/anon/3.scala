@@ -5,12 +5,13 @@ import typings.escpos.escposStrings.InformationseparatorthreewEndoftext
 import typings.escpos.escposStrings.InformationseparatorthreewEndoftransmission
 import typings.escpos.escposStrings.InformationseparatorthreewEnquiry
 import typings.escpos.escposStrings.InformationseparatorthreewStartoftext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `3` extends js.Object {
+trait `3` extends StObject {
   
   var `1`: InformationseparatorthreewStartoftext = js.native
   
@@ -42,33 +43,21 @@ object `3` {
   }
   
   @scala.inline
-  implicit class `3Ops`[Self <: `3`] (val x: Self) extends AnyVal {
+  implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set1(value: InformationseparatorthreewStartoftext): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set2(value: InformationseparatorthreewEndoftext): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set3(value: InformationseparatorthreewEndoftransmission): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1(value: InformationseparatorthreewStartoftext): Self = this.set("1", value.asInstanceOf[js.Any])
+    def set4(value: InformationseparatorthreewEnquiry): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set2(value: InformationseparatorthreewEndoftext): Self = this.set("2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set3(value: InformationseparatorthreewEndoftransmission): Self = this.set("3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set4(value: InformationseparatorthreewEnquiry): Self = this.set("4", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set5(value: InformationseparatorthreewAcknowledge): Self = this.set("5", value.asInstanceOf[js.Any])
+    def set5(value: InformationseparatorthreewAcknowledge): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
   }
 }

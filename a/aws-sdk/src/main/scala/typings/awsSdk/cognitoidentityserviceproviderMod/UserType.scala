@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserType extends js.Object {
+trait UserType extends StObject {
   
   /**
     * A container with information about the user type attributes.
@@ -51,66 +52,54 @@ object UserType {
   }
   
   @scala.inline
-  implicit class UserTypeOps[Self <: UserType] (val x: Self) extends AnyVal {
+  implicit class UserTypeMutableBuilder[Self <: UserType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: AttributeListType): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: AttributeType*): Self = this.set("Attributes", js.Array(value :_*))
+    def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: AttributeListType): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setMFAOptions(value: MFAOptionListType): Self = StObject.set(x, "MFAOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: BooleanType): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setMFAOptionsUndefined: Self = StObject.set(x, "MFAOptions", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
     
     @scala.inline
-    def setMFAOptionsVarargs(value: MFAOptionType*): Self = this.set("MFAOptions", js.Array(value :_*))
+    def setUserCreateDate(value: DateType): Self = StObject.set(x, "UserCreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMFAOptions(value: MFAOptionListType): Self = this.set("MFAOptions", value.asInstanceOf[js.Any])
+    def setUserCreateDateUndefined: Self = StObject.set(x, "UserCreateDate", js.undefined)
     
     @scala.inline
-    def deleteMFAOptions: Self = this.set("MFAOptions", js.undefined)
+    def setUserLastModifiedDate(value: DateType): Self = StObject.set(x, "UserLastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserCreateDate(value: DateType): Self = this.set("UserCreateDate", value.asInstanceOf[js.Any])
+    def setUserLastModifiedDateUndefined: Self = StObject.set(x, "UserLastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteUserCreateDate: Self = this.set("UserCreateDate", js.undefined)
+    def setUserStatus(value: UserStatusType): Self = StObject.set(x, "UserStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserLastModifiedDate(value: DateType): Self = this.set("UserLastModifiedDate", value.asInstanceOf[js.Any])
+    def setUserStatusUndefined: Self = StObject.set(x, "UserStatus", js.undefined)
     
     @scala.inline
-    def deleteUserLastModifiedDate: Self = this.set("UserLastModifiedDate", js.undefined)
+    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserStatus(value: UserStatusType): Self = this.set("UserStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserStatus: Self = this.set("UserStatus", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VCpuInfo extends js.Object {
+trait VCpuInfo extends StObject {
   
   /**
     * The default number of cores for the instance type.
@@ -41,54 +42,42 @@ object VCpuInfo {
   }
   
   @scala.inline
-  implicit class VCpuInfoOps[Self <: VCpuInfo] (val x: Self) extends AnyVal {
+  implicit class VCpuInfoMutableBuilder[Self <: VCpuInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultCores(value: CoreCount): Self = StObject.set(x, "DefaultCores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultCoresUndefined: Self = StObject.set(x, "DefaultCores", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultThreadsPerCore(value: ThreadsPerCore): Self = StObject.set(x, "DefaultThreadsPerCore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCores(value: CoreCount): Self = this.set("DefaultCores", value.asInstanceOf[js.Any])
+    def setDefaultThreadsPerCoreUndefined: Self = StObject.set(x, "DefaultThreadsPerCore", js.undefined)
     
     @scala.inline
-    def deleteDefaultCores: Self = this.set("DefaultCores", js.undefined)
+    def setDefaultVCpus(value: VCpuCount): Self = StObject.set(x, "DefaultVCpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultThreadsPerCore(value: ThreadsPerCore): Self = this.set("DefaultThreadsPerCore", value.asInstanceOf[js.Any])
+    def setDefaultVCpusUndefined: Self = StObject.set(x, "DefaultVCpus", js.undefined)
     
     @scala.inline
-    def deleteDefaultThreadsPerCore: Self = this.set("DefaultThreadsPerCore", js.undefined)
+    def setValidCores(value: CoreCountList): Self = StObject.set(x, "ValidCores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVCpus(value: VCpuCount): Self = this.set("DefaultVCpus", value.asInstanceOf[js.Any])
+    def setValidCoresUndefined: Self = StObject.set(x, "ValidCores", js.undefined)
     
     @scala.inline
-    def deleteDefaultVCpus: Self = this.set("DefaultVCpus", js.undefined)
+    def setValidCoresVarargs(value: CoreCount*): Self = StObject.set(x, "ValidCores", js.Array(value :_*))
     
     @scala.inline
-    def setValidCoresVarargs(value: CoreCount*): Self = this.set("ValidCores", js.Array(value :_*))
+    def setValidThreadsPerCore(value: ThreadsPerCoreList): Self = StObject.set(x, "ValidThreadsPerCore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidCores(value: CoreCountList): Self = this.set("ValidCores", value.asInstanceOf[js.Any])
+    def setValidThreadsPerCoreUndefined: Self = StObject.set(x, "ValidThreadsPerCore", js.undefined)
     
     @scala.inline
-    def deleteValidCores: Self = this.set("ValidCores", js.undefined)
-    
-    @scala.inline
-    def setValidThreadsPerCoreVarargs(value: ThreadsPerCore*): Self = this.set("ValidThreadsPerCore", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidThreadsPerCore(value: ThreadsPerCoreList): Self = this.set("ValidThreadsPerCore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidThreadsPerCore: Self = this.set("ValidThreadsPerCore", js.undefined)
+    def setValidThreadsPerCoreVarargs(value: ThreadsPerCore*): Self = StObject.set(x, "ValidThreadsPerCore", js.Array(value :_*))
   }
 }

@@ -16,13 +16,14 @@ import typings.reactNavigationStack.reactNavigationStackStrings.center
 import typings.reactNavigationStack.reactNavigationStackStrings.left
 import typings.reactNavigationStack.reactNavigationStackStrings.pop
 import typings.reactNavigationStack.reactNavigationStackStrings.push
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderOptions & std.Partial<react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionPreset> & {  title :string | undefined,   header :(props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderProps): react.react.ReactNode | undefined,   headerShown :boolean | undefined,   cardShadowEnabled :boolean | undefined,   cardOverlayEnabled :boolean | undefined,   cardOverlay :(props : {  style :react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.ViewStyle>>}): react.react.ReactNode | undefined,   cardStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   animationEnabled :boolean | undefined,   animationTypeForReplace :'push' | 'pop' | undefined,   gestureEnabled :boolean | undefined,   gestureResponseDistance :{  vertical :number | undefined,   horizontal :number | undefined} | undefined,   gestureVelocityImpact :number | undefined,   safeAreaInsets :{  top :number | undefined,   right :number | undefined,   bottom :number | undefined,   left :number | undefined} | undefined,   detachPreviousScreen :boolean | undefined,   onTransitionStart :(props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionCallbackProps): void | undefined,   onTransitionEnd :(props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionCallbackProps): void | undefined} */
 @js.native
-trait StackNavigationOptions extends js.Object {
+trait StackNavigationOptions extends StObject {
   
   /**
     * Whether transition animation should be enabled the screen.
@@ -262,294 +263,282 @@ object StackNavigationOptions {
   }
   
   @scala.inline
-  implicit class StackNavigationOptionsOps[Self <: StackNavigationOptions] (val x: Self) extends AnyVal {
+  implicit class StackNavigationOptionsMutableBuilder[Self <: StackNavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationEnabledUndefined: Self = StObject.set(x, "animationEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationTypeForReplace(value: push | pop): Self = StObject.set(x, "animationTypeForReplace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationEnabled(value: Boolean): Self = this.set("animationEnabled", value.asInstanceOf[js.Any])
+    def setAnimationTypeForReplaceUndefined: Self = StObject.set(x, "animationTypeForReplace", js.undefined)
     
     @scala.inline
-    def deleteAnimationEnabled: Self = this.set("animationEnabled", js.undefined)
+    def setCardOverlay(value: /* props */ StyleWithAnimatedValue => ReactNode): Self = StObject.set(x, "cardOverlay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimationTypeForReplace(value: push | pop): Self = this.set("animationTypeForReplace", value.asInstanceOf[js.Any])
+    def setCardOverlayEnabled(value: Boolean): Self = StObject.set(x, "cardOverlayEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationTypeForReplace: Self = this.set("animationTypeForReplace", js.undefined)
+    def setCardOverlayEnabledUndefined: Self = StObject.set(x, "cardOverlayEnabled", js.undefined)
     
     @scala.inline
-    def setCardOverlay(value: /* props */ StyleWithAnimatedValue => ReactNode): Self = this.set("cardOverlay", js.Any.fromFunction1(value))
+    def setCardOverlayUndefined: Self = StObject.set(x, "cardOverlay", js.undefined)
     
     @scala.inline
-    def deleteCardOverlay: Self = this.set("cardOverlay", js.undefined)
+    def setCardShadowEnabled(value: Boolean): Self = StObject.set(x, "cardShadowEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardOverlayEnabled(value: Boolean): Self = this.set("cardOverlayEnabled", value.asInstanceOf[js.Any])
+    def setCardShadowEnabledUndefined: Self = StObject.set(x, "cardShadowEnabled", js.undefined)
     
     @scala.inline
-    def deleteCardOverlayEnabled: Self = this.set("cardOverlayEnabled", js.undefined)
+    def setCardStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardShadowEnabled(value: Boolean): Self = this.set("cardShadowEnabled", value.asInstanceOf[js.Any])
+    def setCardStyleInterpolator(value: /* props */ StackCardInterpolationProps => StackCardInterpolatedStyle): Self = StObject.set(x, "cardStyleInterpolator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCardShadowEnabled: Self = this.set("cardShadowEnabled", js.undefined)
+    def setCardStyleInterpolatorUndefined: Self = StObject.set(x, "cardStyleInterpolator", js.undefined)
     
     @scala.inline
-    def setCardStyle(value: StyleProp[ViewStyle]): Self = this.set("cardStyle", value.asInstanceOf[js.Any])
+    def setCardStyleNull: Self = StObject.set(x, "cardStyle", null)
     
     @scala.inline
-    def deleteCardStyle: Self = this.set("cardStyle", js.undefined)
+    def setCardStyleUndefined: Self = StObject.set(x, "cardStyle", js.undefined)
     
     @scala.inline
-    def setCardStyleNull: Self = this.set("cardStyle", null)
+    def setDetachPreviousScreen(value: Boolean): Self = StObject.set(x, "detachPreviousScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardStyleInterpolator(value: /* props */ StackCardInterpolationProps => StackCardInterpolatedStyle): Self = this.set("cardStyleInterpolator", js.Any.fromFunction1(value))
+    def setDetachPreviousScreenUndefined: Self = StObject.set(x, "detachPreviousScreen", js.undefined)
     
     @scala.inline
-    def deleteCardStyleInterpolator: Self = this.set("cardStyleInterpolator", js.undefined)
+    def setGestureDirection(value: GestureDirection): Self = StObject.set(x, "gestureDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetachPreviousScreen(value: Boolean): Self = this.set("detachPreviousScreen", value.asInstanceOf[js.Any])
+    def setGestureDirectionUndefined: Self = StObject.set(x, "gestureDirection", js.undefined)
     
     @scala.inline
-    def deleteDetachPreviousScreen: Self = this.set("detachPreviousScreen", js.undefined)
+    def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGestureDirection(value: GestureDirection): Self = this.set("gestureDirection", value.asInstanceOf[js.Any])
+    def setGestureEnabledUndefined: Self = StObject.set(x, "gestureEnabled", js.undefined)
     
     @scala.inline
-    def deleteGestureDirection: Self = this.set("gestureDirection", js.undefined)
+    def setGestureResponseDistance(value: Horizontal): Self = StObject.set(x, "gestureResponseDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGestureEnabled(value: Boolean): Self = this.set("gestureEnabled", value.asInstanceOf[js.Any])
+    def setGestureResponseDistanceUndefined: Self = StObject.set(x, "gestureResponseDistance", js.undefined)
     
     @scala.inline
-    def deleteGestureEnabled: Self = this.set("gestureEnabled", js.undefined)
+    def setGestureVelocityImpact(value: Double): Self = StObject.set(x, "gestureVelocityImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGestureResponseDistance(value: Horizontal): Self = this.set("gestureResponseDistance", value.asInstanceOf[js.Any])
+    def setGestureVelocityImpactUndefined: Self = StObject.set(x, "gestureVelocityImpact", js.undefined)
     
     @scala.inline
-    def deleteGestureResponseDistance: Self = this.set("gestureResponseDistance", js.undefined)
+    def setHeader(value: /* props */ StackHeaderProps => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGestureVelocityImpact(value: Double): Self = this.set("gestureVelocityImpact", value.asInstanceOf[js.Any])
+    def setHeaderBackAccessibilityLabel(value: String): Self = StObject.set(x, "headerBackAccessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGestureVelocityImpact: Self = this.set("gestureVelocityImpact", js.undefined)
+    def setHeaderBackAccessibilityLabelUndefined: Self = StObject.set(x, "headerBackAccessibilityLabel", js.undefined)
     
     @scala.inline
-    def setHeader(value: /* props */ StackHeaderProps => ReactNode): Self = this.set("header", js.Any.fromFunction1(value))
+    def setHeaderBackAllowFontScaling(value: Boolean): Self = StObject.set(x, "headerBackAllowFontScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setHeaderBackAllowFontScalingUndefined: Self = StObject.set(x, "headerBackAllowFontScaling", js.undefined)
     
     @scala.inline
-    def setHeaderBackAccessibilityLabel(value: String): Self = this.set("headerBackAccessibilityLabel", value.asInstanceOf[js.Any])
+    def setHeaderBackImage(value: /* props */ TintColorString => ReactNode): Self = StObject.set(x, "headerBackImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHeaderBackAccessibilityLabel: Self = this.set("headerBackAccessibilityLabel", js.undefined)
+    def setHeaderBackImageUndefined: Self = StObject.set(x, "headerBackImage", js.undefined)
     
     @scala.inline
-    def setHeaderBackAllowFontScaling(value: Boolean): Self = this.set("headerBackAllowFontScaling", value.asInstanceOf[js.Any])
+    def setHeaderBackTitle(value: String): Self = StObject.set(x, "headerBackTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderBackAllowFontScaling: Self = this.set("headerBackAllowFontScaling", js.undefined)
+    def setHeaderBackTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "headerBackTitleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderBackImage(value: /* props */ TintColorString => ReactNode): Self = this.set("headerBackImage", js.Any.fromFunction1(value))
+    def setHeaderBackTitleStyleNull: Self = StObject.set(x, "headerBackTitleStyle", null)
     
     @scala.inline
-    def deleteHeaderBackImage: Self = this.set("headerBackImage", js.undefined)
+    def setHeaderBackTitleStyleUndefined: Self = StObject.set(x, "headerBackTitleStyle", js.undefined)
     
     @scala.inline
-    def setHeaderBackTitle(value: String): Self = this.set("headerBackTitle", value.asInstanceOf[js.Any])
+    def setHeaderBackTitleUndefined: Self = StObject.set(x, "headerBackTitle", js.undefined)
     
     @scala.inline
-    def deleteHeaderBackTitle: Self = this.set("headerBackTitle", js.undefined)
+    def setHeaderBackTitleVisible(value: Boolean): Self = StObject.set(x, "headerBackTitleVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderBackTitleStyle(value: StyleProp[TextStyle]): Self = this.set("headerBackTitleStyle", value.asInstanceOf[js.Any])
+    def setHeaderBackTitleVisibleUndefined: Self = StObject.set(x, "headerBackTitleVisible", js.undefined)
     
     @scala.inline
-    def deleteHeaderBackTitleStyle: Self = this.set("headerBackTitleStyle", js.undefined)
+    def setHeaderBackground(value: /* props */ Style => ReactNode): Self = StObject.set(x, "headerBackground", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeaderBackTitleStyleNull: Self = this.set("headerBackTitleStyle", null)
+    def setHeaderBackgroundUndefined: Self = StObject.set(x, "headerBackground", js.undefined)
     
     @scala.inline
-    def setHeaderBackTitleVisible(value: Boolean): Self = this.set("headerBackTitleVisible", value.asInstanceOf[js.Any])
+    def setHeaderLeft(value: /* props */ StackHeaderLeftButtonProps => ReactNode): Self = StObject.set(x, "headerLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHeaderBackTitleVisible: Self = this.set("headerBackTitleVisible", js.undefined)
+    def setHeaderLeftContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerLeftContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderBackground(value: /* props */ Style => ReactNode): Self = this.set("headerBackground", js.Any.fromFunction1(value))
+    def setHeaderLeftContainerStyleNull: Self = StObject.set(x, "headerLeftContainerStyle", null)
     
     @scala.inline
-    def deleteHeaderBackground: Self = this.set("headerBackground", js.undefined)
+    def setHeaderLeftContainerStyleUndefined: Self = StObject.set(x, "headerLeftContainerStyle", js.undefined)
     
     @scala.inline
-    def setHeaderLeft(value: /* props */ StackHeaderLeftButtonProps => ReactNode): Self = this.set("headerLeft", js.Any.fromFunction1(value))
+    def setHeaderLeftUndefined: Self = StObject.set(x, "headerLeft", js.undefined)
     
     @scala.inline
-    def deleteHeaderLeft: Self = this.set("headerLeft", js.undefined)
+    def setHeaderPressColorAndroid(value: String): Self = StObject.set(x, "headerPressColorAndroid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderLeftContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = this.set("headerLeftContainerStyle", value.asInstanceOf[js.Any])
+    def setHeaderPressColorAndroidUndefined: Self = StObject.set(x, "headerPressColorAndroid", js.undefined)
     
     @scala.inline
-    def deleteHeaderLeftContainerStyle: Self = this.set("headerLeftContainerStyle", js.undefined)
+    def setHeaderRight(value: /* props */ TintColor => ReactNode): Self = StObject.set(x, "headerRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeaderLeftContainerStyleNull: Self = this.set("headerLeftContainerStyle", null)
+    def setHeaderRightContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerRightContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderPressColorAndroid(value: String): Self = this.set("headerPressColorAndroid", value.asInstanceOf[js.Any])
+    def setHeaderRightContainerStyleNull: Self = StObject.set(x, "headerRightContainerStyle", null)
     
     @scala.inline
-    def deleteHeaderPressColorAndroid: Self = this.set("headerPressColorAndroid", js.undefined)
+    def setHeaderRightContainerStyleUndefined: Self = StObject.set(x, "headerRightContainerStyle", js.undefined)
     
     @scala.inline
-    def setHeaderRight(value: /* props */ TintColor => ReactNode): Self = this.set("headerRight", js.Any.fromFunction1(value))
+    def setHeaderRightUndefined: Self = StObject.set(x, "headerRight", js.undefined)
     
     @scala.inline
-    def deleteHeaderRight: Self = this.set("headerRight", js.undefined)
+    def setHeaderShown(value: Boolean): Self = StObject.set(x, "headerShown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRightContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = this.set("headerRightContainerStyle", value.asInstanceOf[js.Any])
+    def setHeaderShownUndefined: Self = StObject.set(x, "headerShown", js.undefined)
     
     @scala.inline
-    def deleteHeaderRightContainerStyle: Self = this.set("headerRightContainerStyle", js.undefined)
+    def setHeaderStatusBarHeight(value: Double): Self = StObject.set(x, "headerStatusBarHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRightContainerStyleNull: Self = this.set("headerRightContainerStyle", null)
+    def setHeaderStatusBarHeightUndefined: Self = StObject.set(x, "headerStatusBarHeight", js.undefined)
     
     @scala.inline
-    def setHeaderShown(value: Boolean): Self = this.set("headerShown", value.asInstanceOf[js.Any])
+    def setHeaderStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderShown: Self = this.set("headerShown", js.undefined)
+    def setHeaderStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = StObject.set(x, "headerStyleInterpolator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeaderStatusBarHeight(value: Double): Self = this.set("headerStatusBarHeight", value.asInstanceOf[js.Any])
+    def setHeaderStyleInterpolatorUndefined: Self = StObject.set(x, "headerStyleInterpolator", js.undefined)
     
     @scala.inline
-    def deleteHeaderStatusBarHeight: Self = this.set("headerStatusBarHeight", js.undefined)
+    def setHeaderStyleNull: Self = StObject.set(x, "headerStyle", null)
     
     @scala.inline
-    def setHeaderStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = this.set("headerStyle", value.asInstanceOf[js.Any])
+    def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
     @scala.inline
-    def deleteHeaderStyle: Self = this.set("headerStyle", js.undefined)
+    def setHeaderTintColor(value: String): Self = StObject.set(x, "headerTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderStyleNull: Self = this.set("headerStyle", null)
+    def setHeaderTintColorUndefined: Self = StObject.set(x, "headerTintColor", js.undefined)
     
     @scala.inline
-    def setHeaderStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = this.set("headerStyleInterpolator", js.Any.fromFunction1(value))
+    def setHeaderTitle(value: String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode])): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderStyleInterpolator: Self = this.set("headerStyleInterpolator", js.undefined)
+    def setHeaderTitleAlign(value: left | center): Self = StObject.set(x, "headerTitleAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTintColor(value: String): Self = this.set("headerTintColor", value.asInstanceOf[js.Any])
+    def setHeaderTitleAlignUndefined: Self = StObject.set(x, "headerTitleAlign", js.undefined)
     
     @scala.inline
-    def deleteHeaderTintColor: Self = this.set("headerTintColor", js.undefined)
+    def setHeaderTitleAllowFontScaling(value: Boolean): Self = StObject.set(x, "headerTitleAllowFontScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTitleFunction1(value: /* props */ StackHeaderTitleProps => ReactNode): Self = this.set("headerTitle", js.Any.fromFunction1(value))
+    def setHeaderTitleAllowFontScalingUndefined: Self = StObject.set(x, "headerTitleAllowFontScaling", js.undefined)
     
     @scala.inline
-    def setHeaderTitle(value: String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode])): Self = this.set("headerTitle", value.asInstanceOf[js.Any])
+    def setHeaderTitleContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerTitleContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderTitle: Self = this.set("headerTitle", js.undefined)
+    def setHeaderTitleContainerStyleNull: Self = StObject.set(x, "headerTitleContainerStyle", null)
     
     @scala.inline
-    def setHeaderTitleAlign(value: left | center): Self = this.set("headerTitleAlign", value.asInstanceOf[js.Any])
+    def setHeaderTitleContainerStyleUndefined: Self = StObject.set(x, "headerTitleContainerStyle", js.undefined)
     
     @scala.inline
-    def deleteHeaderTitleAlign: Self = this.set("headerTitleAlign", js.undefined)
+    def setHeaderTitleFunction1(value: /* props */ StackHeaderTitleProps => ReactNode): Self = StObject.set(x, "headerTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeaderTitleAllowFontScaling(value: Boolean): Self = this.set("headerTitleAllowFontScaling", value.asInstanceOf[js.Any])
+    def setHeaderTitleStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = StObject.set(x, "headerTitleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderTitleAllowFontScaling: Self = this.set("headerTitleAllowFontScaling", js.undefined)
+    def setHeaderTitleStyleNull: Self = StObject.set(x, "headerTitleStyle", null)
     
     @scala.inline
-    def setHeaderTitleContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = this.set("headerTitleContainerStyle", value.asInstanceOf[js.Any])
+    def setHeaderTitleStyleUndefined: Self = StObject.set(x, "headerTitleStyle", js.undefined)
     
     @scala.inline
-    def deleteHeaderTitleContainerStyle: Self = this.set("headerTitleContainerStyle", js.undefined)
+    def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
     
     @scala.inline
-    def setHeaderTitleContainerStyleNull: Self = this.set("headerTitleContainerStyle", null)
+    def setHeaderTransparent(value: Boolean): Self = StObject.set(x, "headerTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTitleStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = this.set("headerTitleStyle", value.asInstanceOf[js.Any])
+    def setHeaderTransparentUndefined: Self = StObject.set(x, "headerTransparent", js.undefined)
     
     @scala.inline
-    def deleteHeaderTitleStyle: Self = this.set("headerTitleStyle", js.undefined)
+    def setHeaderTruncatedBackTitle(value: String): Self = StObject.set(x, "headerTruncatedBackTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTitleStyleNull: Self = this.set("headerTitleStyle", null)
+    def setHeaderTruncatedBackTitleUndefined: Self = StObject.set(x, "headerTruncatedBackTitle", js.undefined)
     
     @scala.inline
-    def setHeaderTransparent(value: Boolean): Self = this.set("headerTransparent", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteHeaderTransparent: Self = this.set("headerTransparent", js.undefined)
+    def setOnTransitionEnd(value: /* props */ TransitionCallbackProps => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeaderTruncatedBackTitle(value: String): Self = this.set("headerTruncatedBackTitle", value.asInstanceOf[js.Any])
+    def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
     @scala.inline
-    def deleteHeaderTruncatedBackTitle: Self = this.set("headerTruncatedBackTitle", js.undefined)
+    def setOnTransitionStart(value: /* props */ TransitionCallbackProps => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTransitionEnd(value: /* props */ TransitionCallbackProps => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
+    def setOnTransitionStartUndefined: Self = StObject.set(x, "onTransitionStart", js.undefined)
     
     @scala.inline
-    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    def setSafeAreaInsets(value: Bottom): Self = StObject.set(x, "safeAreaInsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTransitionStart(value: /* props */ TransitionCallbackProps => Unit): Self = this.set("onTransitionStart", js.Any.fromFunction1(value))
+    def setSafeAreaInsetsUndefined: Self = StObject.set(x, "safeAreaInsets", js.undefined)
     
     @scala.inline
-    def deleteOnTransitionStart: Self = this.set("onTransitionStart", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeAreaInsets(value: Bottom): Self = this.set("safeAreaInsets", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSafeAreaInsets: Self = this.set("safeAreaInsets", js.undefined)
+    def setTransitionSpec(value: Close): Self = StObject.set(x, "transitionSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTransitionSpec(value: Close): Self = this.set("transitionSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionSpec: Self = this.set("transitionSpec", js.undefined)
+    def setTransitionSpecUndefined: Self = StObject.set(x, "transitionSpec", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.TransactionHistoryEntryExt
 import typings.stellarBase.xdrMod.xdr.TransactionSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LedgerSeq extends js.Object {
+trait LedgerSeq extends StObject {
   
   var ext: TransactionHistoryEntryExt = js.native
   
@@ -24,27 +25,15 @@ object LedgerSeq {
   }
   
   @scala.inline
-  implicit class LedgerSeqOps[Self <: LedgerSeq] (val x: Self) extends AnyVal {
+  implicit class LedgerSeqMutableBuilder[Self <: LedgerSeq] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExt(value: TransactionHistoryEntryExt): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLedgerSeq(value: Double): Self = StObject.set(x, "ledgerSeq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExt(value: TransactionHistoryEntryExt): Self = this.set("ext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLedgerSeq(value: Double): Self = this.set("ledgerSeq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTxSet(value: TransactionSet): Self = this.set("txSet", value.asInstanceOf[js.Any])
+    def setTxSet(value: TransactionSet): Self = StObject.set(x, "txSet", value.asInstanceOf[js.Any])
   }
 }

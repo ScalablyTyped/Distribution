@@ -1,6 +1,7 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.solidgauge
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,81 +123,69 @@ object SeriesSolidgaugeOptions {
   }
   
   @scala.inline
-  implicit class SeriesSolidgaugeOptionsOps[Self <: SeriesSolidgaugeOptions] (val x: Self) extends AnyVal {
+  implicit class SeriesSolidgaugeOptionsMutableBuilder[Self <: SeriesSolidgaugeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: (Double | Null | PointOptionsObject)*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: String | solidgauge): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: (Double | Null | PointOptionsObject)*): Self = this.set("data", js.Array(value :_*))
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLegendIndex(value: Double): Self = StObject.set(x, "legendIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLegendIndexUndefined: Self = StObject.set(x, "legendIndex", js.undefined)
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setMapData(value: js.Array[SeriesMapDataOptions] | js.Any): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setMapDataUndefined: Self = StObject.set(x, "mapData", js.undefined)
     
     @scala.inline
-    def setLegendIndex(value: Double): Self = this.set("legendIndex", value.asInstanceOf[js.Any])
+    def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value :_*))
     
     @scala.inline
-    def deleteLegendIndex: Self = this.set("legendIndex", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapDataVarargs(value: SeriesMapDataOptions*): Self = this.set("mapData", js.Array(value :_*))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMapData(value: js.Array[SeriesMapDataOptions] | js.Any): Self = this.set("mapData", value.asInstanceOf[js.Any])
+    def setStack(value: Double | scala.Nothing | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapData: Self = this.set("mapData", js.undefined)
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setType(value: String | solidgauge): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: Double | scala.Nothing | String): Self = this.set("stack", value.asInstanceOf[js.Any])
+    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
     @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
+    def setYAxis(value: Double | String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxis(value: Double | String): Self = this.set("xAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAxis: Self = this.set("xAxis", js.undefined)
-    
-    @scala.inline
-    def setYAxis(value: Double | String): Self = this.set("yAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxis: Self = this.set("yAxis", js.undefined)
+    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

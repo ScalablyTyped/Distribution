@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeParametersRequest extends js.Object {
+trait DescribeParametersRequest extends StObject {
   
   /**
     * This data type is deprecated. Instead, use ParameterFilters.
@@ -36,48 +37,36 @@ object DescribeParametersRequest {
   }
   
   @scala.inline
-  implicit class DescribeParametersRequestOps[Self <: DescribeParametersRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeParametersRequestMutableBuilder[Self <: DescribeParametersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: ParametersFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: ParametersFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: ParametersFilter*): Self = this.set("Filters", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: ParametersFilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setParameterFilters(value: ParameterStringFilterList): Self = StObject.set(x, "ParameterFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setParameterFiltersUndefined: Self = StObject.set(x, "ParameterFilters", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = this.set("ParameterFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameterFilters(value: ParameterStringFilterList): Self = this.set("ParameterFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterFilters: Self = this.set("ParameterFilters", js.undefined)
+    def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = StObject.set(x, "ParameterFilters", js.Array(value :_*))
   }
 }

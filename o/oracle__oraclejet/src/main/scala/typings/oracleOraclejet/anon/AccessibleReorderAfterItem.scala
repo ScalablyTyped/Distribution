@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibleReorderAfterItem extends js.Object {
+trait AccessibleReorderAfterItem extends StObject {
   
   var accessibleReorderAfterItem: js.UndefOr[String] = js.native
   
@@ -40,90 +41,78 @@ object AccessibleReorderAfterItem {
   }
   
   @scala.inline
-  implicit class AccessibleReorderAfterItemOps[Self <: AccessibleReorderAfterItem] (val x: Self) extends AnyVal {
+  implicit class AccessibleReorderAfterItemMutableBuilder[Self <: AccessibleReorderAfterItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleReorderAfterItem(value: String): Self = StObject.set(x, "accessibleReorderAfterItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleReorderAfterItemUndefined: Self = StObject.set(x, "accessibleReorderAfterItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibleReorderBeforeItem(value: String): Self = StObject.set(x, "accessibleReorderBeforeItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleReorderAfterItem(value: String): Self = this.set("accessibleReorderAfterItem", value.asInstanceOf[js.Any])
+    def setAccessibleReorderBeforeItemUndefined: Self = StObject.set(x, "accessibleReorderBeforeItem", js.undefined)
     
     @scala.inline
-    def deleteAccessibleReorderAfterItem: Self = this.set("accessibleReorderAfterItem", js.undefined)
+    def setAccessibleReorderTouchInstructionText(value: String): Self = StObject.set(x, "accessibleReorderTouchInstructionText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleReorderBeforeItem(value: String): Self = this.set("accessibleReorderBeforeItem", value.asInstanceOf[js.Any])
+    def setAccessibleReorderTouchInstructionTextUndefined: Self = StObject.set(x, "accessibleReorderTouchInstructionText", js.undefined)
     
     @scala.inline
-    def deleteAccessibleReorderBeforeItem: Self = this.set("accessibleReorderBeforeItem", js.undefined)
+    def setLabelCut(value: String): Self = StObject.set(x, "labelCut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleReorderTouchInstructionText(value: String): Self = this.set("accessibleReorderTouchInstructionText", value.asInstanceOf[js.Any])
+    def setLabelCutUndefined: Self = StObject.set(x, "labelCut", js.undefined)
     
     @scala.inline
-    def deleteAccessibleReorderTouchInstructionText: Self = this.set("accessibleReorderTouchInstructionText", js.undefined)
+    def setLabelPasteAfter(value: String): Self = StObject.set(x, "labelPasteAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCut(value: String): Self = this.set("labelCut", value.asInstanceOf[js.Any])
+    def setLabelPasteAfterUndefined: Self = StObject.set(x, "labelPasteAfter", js.undefined)
     
     @scala.inline
-    def deleteLabelCut: Self = this.set("labelCut", js.undefined)
+    def setLabelPasteBefore(value: String): Self = StObject.set(x, "labelPasteBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPasteAfter(value: String): Self = this.set("labelPasteAfter", value.asInstanceOf[js.Any])
+    def setLabelPasteBeforeUndefined: Self = StObject.set(x, "labelPasteBefore", js.undefined)
     
     @scala.inline
-    def deleteLabelPasteAfter: Self = this.set("labelPasteAfter", js.undefined)
+    def setLabelRemove(value: String): Self = StObject.set(x, "labelRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPasteBefore(value: String): Self = this.set("labelPasteBefore", value.asInstanceOf[js.Any])
+    def setLabelRemoveUndefined: Self = StObject.set(x, "labelRemove", js.undefined)
     
     @scala.inline
-    def deleteLabelPasteBefore: Self = this.set("labelPasteBefore", js.undefined)
+    def setMsgFetchingData(value: String): Self = StObject.set(x, "msgFetchingData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelRemove(value: String): Self = this.set("labelRemove", value.asInstanceOf[js.Any])
+    def setMsgFetchingDataUndefined: Self = StObject.set(x, "msgFetchingData", js.undefined)
     
     @scala.inline
-    def deleteLabelRemove: Self = this.set("labelRemove", js.undefined)
+    def setMsgNoData(value: String): Self = StObject.set(x, "msgNoData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsgFetchingData(value: String): Self = this.set("msgFetchingData", value.asInstanceOf[js.Any])
+    def setMsgNoDataUndefined: Self = StObject.set(x, "msgNoData", js.undefined)
     
     @scala.inline
-    def deleteMsgFetchingData: Self = this.set("msgFetchingData", js.undefined)
+    def setOverflowItemLabel(value: String): Self = StObject.set(x, "overflowItemLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsgNoData(value: String): Self = this.set("msgNoData", value.asInstanceOf[js.Any])
+    def setOverflowItemLabelUndefined: Self = StObject.set(x, "overflowItemLabel", js.undefined)
     
     @scala.inline
-    def deleteMsgNoData: Self = this.set("msgNoData", js.undefined)
+    def setRemoveCueText(value: String): Self = StObject.set(x, "removeCueText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowItemLabel(value: String): Self = this.set("overflowItemLabel", value.asInstanceOf[js.Any])
+    def setRemoveCueTextUndefined: Self = StObject.set(x, "removeCueText", js.undefined)
     
     @scala.inline
-    def deleteOverflowItemLabel: Self = this.set("overflowItemLabel", js.undefined)
+    def setSelectedLabel(value: String): Self = StObject.set(x, "selectedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveCueText(value: String): Self = this.set("removeCueText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveCueText: Self = this.set("removeCueText", js.undefined)
-    
-    @scala.inline
-    def setSelectedLabel(value: String): Self = this.set("selectedLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedLabel: Self = this.set("selectedLabel", js.undefined)
+    def setSelectedLabelUndefined: Self = StObject.set(x, "selectedLabel", js.undefined)
   }
 }

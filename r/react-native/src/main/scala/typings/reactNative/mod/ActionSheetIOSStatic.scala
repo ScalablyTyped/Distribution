@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionSheetIOSStatic extends js.Object {
+trait ActionSheetIOSStatic extends StObject {
   
   /**
     * Display an iOS action sheet. The `options` object must contain one or more
@@ -51,26 +52,14 @@ object ActionSheetIOSStatic {
   }
   
   @scala.inline
-  implicit class ActionSheetIOSStaticOps[Self <: ActionSheetIOSStatic] (val x: Self) extends AnyVal {
+  implicit class ActionSheetIOSStaticMutableBuilder[Self <: ActionSheetIOSStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShowActionSheetWithOptions(value: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Unit): Self = this.set("showActionSheetWithOptions", js.Any.fromFunction2(value))
+    def setShowActionSheetWithOptions(value: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Unit): Self = StObject.set(x, "showActionSheetWithOptions", js.Any.fromFunction2(value))
     
     @scala.inline
     def setShowShareActionSheetWithOptions(
       value: (ShareActionSheetIOSOptions, js.Function1[/* error */ Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Unit
-    ): Self = this.set("showShareActionSheetWithOptions", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "showShareActionSheetWithOptions", js.Any.fromFunction3(value))
   }
 }

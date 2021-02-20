@@ -1,12 +1,13 @@
 package typings.k6.htmlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k6/html", "Attribute")
 @js.native
-abstract class Attribute () extends js.Object {
+abstract class Attribute () extends StObject {
   
   /** Local part of qualified name. */
   def localName(): String = js.native

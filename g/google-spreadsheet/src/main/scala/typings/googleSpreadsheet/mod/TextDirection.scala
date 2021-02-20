@@ -1,5 +1,6 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleSpreadsheet.googleSpreadsheetStrings.LEFT_TO_RIGHT
   - typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT_TO_LEFT
 */
-trait TextDirection extends js.Object
+trait TextDirection extends StObject
 object TextDirection {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Volume extends js.Object {
+trait Volume extends StObject {
   
   /**
     * The volume Availability Zone. For more information, see Regions and Endpoints.
@@ -86,102 +87,90 @@ object Volume {
   }
   
   @scala.inline
-  implicit class VolumeOps[Self <: Volume] (val x: Self) extends AnyVal {
+  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "Device", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setEc2VolumeId(value: String): Self = StObject.set(x, "Ec2VolumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: String): Self = this.set("Device", value.asInstanceOf[js.Any])
+    def setEc2VolumeIdUndefined: Self = StObject.set(x, "Ec2VolumeId", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("Device", js.undefined)
+    def setEncrypted(value: Boolean): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2VolumeId(value: String): Self = this.set("Ec2VolumeId", value.asInstanceOf[js.Any])
+    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
     @scala.inline
-    def deleteEc2VolumeId: Self = this.set("Ec2VolumeId", js.undefined)
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setMountPoint(value: String): Self = StObject.set(x, "MountPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIops(value: Integer): Self = this.set("Iops", value.asInstanceOf[js.Any])
+    def setMountPointUndefined: Self = StObject.set(x, "MountPoint", js.undefined)
     
     @scala.inline
-    def deleteIops: Self = this.set("Iops", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountPoint(value: String): Self = this.set("MountPoint", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMountPoint: Self = this.set("MountPoint", js.undefined)
+    def setRaidArrayId(value: String): Self = StObject.set(x, "RaidArrayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRaidArrayIdUndefined: Self = StObject.set(x, "RaidArrayId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaidArrayId(value: String): Self = this.set("RaidArrayId", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def deleteRaidArrayId: Self = this.set("RaidArrayId", js.undefined)
+    def setSize(value: Integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("Region", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Integer): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("Size", js.undefined)
+    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setVolumeType(value: String): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
-    
-    @scala.inline
-    def setVolumeType(value: String): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+    def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
   }
 }

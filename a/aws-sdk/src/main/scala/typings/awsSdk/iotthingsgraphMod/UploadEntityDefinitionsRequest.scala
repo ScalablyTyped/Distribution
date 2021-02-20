@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadEntityDefinitionsRequest extends js.Object {
+trait UploadEntityDefinitionsRequest extends StObject {
   
   /**
     * A Boolean that specifies whether to deprecate all entities in the latest version before uploading the new DefinitionDocument. If set to true, the upload will create a new namespace version.
@@ -31,36 +32,24 @@ object UploadEntityDefinitionsRequest {
   }
   
   @scala.inline
-  implicit class UploadEntityDefinitionsRequestOps[Self <: UploadEntityDefinitionsRequest] (val x: Self) extends AnyVal {
+  implicit class UploadEntityDefinitionsRequestMutableBuilder[Self <: UploadEntityDefinitionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeprecateExistingEntities(value: DeprecateExistingEntities): Self = StObject.set(x, "deprecateExistingEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeprecateExistingEntitiesUndefined: Self = StObject.set(x, "deprecateExistingEntities", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocument(value: DefinitionDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecateExistingEntities(value: DeprecateExistingEntities): Self = this.set("deprecateExistingEntities", value.asInstanceOf[js.Any])
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def deleteDeprecateExistingEntities: Self = this.set("deprecateExistingEntities", js.undefined)
+    def setSyncWithPublicNamespace(value: SyncWithPublicNamespace): Self = StObject.set(x, "syncWithPublicNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: DefinitionDocument): Self = this.set("document", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
-    
-    @scala.inline
-    def setSyncWithPublicNamespace(value: SyncWithPublicNamespace): Self = this.set("syncWithPublicNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncWithPublicNamespace: Self = this.set("syncWithPublicNamespace", js.undefined)
+    def setSyncWithPublicNamespaceUndefined: Self = StObject.set(x, "syncWithPublicNamespace", js.undefined)
   }
 }

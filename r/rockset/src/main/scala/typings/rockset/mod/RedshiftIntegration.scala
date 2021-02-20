@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedshiftIntegration extends js.Object {
+trait RedshiftIntegration extends StObject {
   
   // AWS access key credentials
   var aws_access_key: js.UndefOr[AwsAccessKey] = js.native
@@ -34,39 +35,27 @@ object RedshiftIntegration {
   }
   
   @scala.inline
-  implicit class RedshiftIntegrationOps[Self <: RedshiftIntegration] (val x: Self) extends AnyVal {
+  implicit class RedshiftIntegrationMutableBuilder[Self <: RedshiftIntegration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAws_access_key(value: AwsAccessKey): Self = StObject.set(x, "aws_access_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAws_access_keyUndefined: Self = StObject.set(x, "aws_access_key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setS3_bucket_path(value: String): Self = StObject.set(x, "s3_bucket_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3_bucket_path(value: String): Self = this.set("s3_bucket_path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAws_access_key(value: AwsAccessKey): Self = this.set("aws_access_key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAws_access_key: Self = this.set("aws_access_key", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

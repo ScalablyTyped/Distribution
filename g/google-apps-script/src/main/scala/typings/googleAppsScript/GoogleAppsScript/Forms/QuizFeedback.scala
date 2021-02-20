@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     textItem.setFeedbackForIncorrect(feedback);
   */
 @js.native
-trait QuizFeedback extends js.Object {
+trait QuizFeedback extends StObject {
   
   def getLinkUrls(): js.Array[String] = js.native
   
@@ -35,24 +36,12 @@ object QuizFeedback {
   }
   
   @scala.inline
-  implicit class QuizFeedbackOps[Self <: QuizFeedback] (val x: Self) extends AnyVal {
+  implicit class QuizFeedbackMutableBuilder[Self <: QuizFeedback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLinkUrls(value: () => js.Array[String]): Self = StObject.set(x, "getLinkUrls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetLinkUrls(value: () => js.Array[String]): Self = this.set("getLinkUrls", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
   }
 }

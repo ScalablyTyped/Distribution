@@ -1,11 +1,12 @@
 package typings.qiniuJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Observable extends js.Object {
+trait Observable extends StObject {
   
   /**
     * 订阅

@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientBlogger.anon.CommentId
 import typings.maximMazurokGapiClientBlogger.anon.EndDate
 import typings.maximMazurokGapiClientBlogger.anon.FetchBodies
 import typings.maximMazurokGapiClientBlogger.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentsResource extends js.Object {
+trait CommentsResource extends StObject {
   
   /** Marks a comment as not spam by blog id, post id and comment id. */
   def approve(): Request[Comment] = js.native

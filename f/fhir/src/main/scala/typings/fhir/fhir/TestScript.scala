@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -205,264 +206,252 @@ object TestScript {
   }
   
   @scala.inline
-  implicit class TestScriptOps[Self <: TestScript] (val x: Self) extends AnyVal {
+  implicit class TestScriptMutableBuilder[Self <: TestScript] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCopyright(value: markdown): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_copyright(value: Element): Self = this.set("_copyright", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def delete_copyright: Self = this.set("_copyright", js.undefined)
+    def setDescription(value: markdown): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setDestination(value: js.Array[TestScriptDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setDestinationVarargs(value: TestScriptDestination*): Self = StObject.set(x, "destination", js.Array(value :_*))
     
     @scala.inline
-    def set_experimental(value: Element): Self = this.set("_experimental", value.asInstanceOf[js.Any])
+    def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_experimental: Self = this.set("_experimental", js.undefined)
+    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setFixture(value: js.Array[TestScriptFixture]): Self = StObject.set(x, "fixture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setFixtureUndefined: Self = StObject.set(x, "fixture", js.undefined)
     
     @scala.inline
-    def set_publisher(value: Element): Self = this.set("_publisher", value.asInstanceOf[js.Any])
+    def setFixtureVarargs(value: TestScriptFixture*): Self = StObject.set(x, "fixture", js.Array(value :_*))
     
     @scala.inline
-    def delete_publisher: Self = this.set("_publisher", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_purpose(value: Element): Self = this.set("_purpose", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def delete_purpose: Self = this.set("_purpose", js.undefined)
+    def setJurisdiction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value :_*))
     
     @scala.inline
-    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def setMetadata(value: TestScriptMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def setOrigin(value: js.Array[TestScriptOrigin]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def delete_version: Self = this.set("_version", js.undefined)
+    def setOriginVarargs(value: TestScriptOrigin*): Self = StObject.set(x, "origin", js.Array(value :_*))
     
     @scala.inline
-    def setContactVarargs(value: ContactDetail*): Self = this.set("contact", js.Array(value :_*))
+    def setProfile(value: js.Array[Reference]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContact(value: js.Array[ContactDetail]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setProfileVarargs(value: Reference*): Self = StObject.set(x, "profile", js.Array(value :_*))
     
     @scala.inline
-    def setCopyright(value: markdown): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     @scala.inline
-    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setPurpose(value: markdown): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
     @scala.inline
-    def setDescription(value: markdown): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setRule(value: js.Array[TestScriptRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     @scala.inline
-    def setDestinationVarargs(value: TestScriptDestination*): Self = this.set("destination", js.Array(value :_*))
+    def setRuleVarargs(value: TestScriptRule*): Self = StObject.set(x, "rule", js.Array(value :_*))
     
     @scala.inline
-    def setDestination(value: js.Array[TestScriptDestination]): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setRuleset(value: js.Array[TestScriptRuleset]): Self = StObject.set(x, "ruleset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setRulesetUndefined: Self = StObject.set(x, "ruleset", js.undefined)
     
     @scala.inline
-    def setExperimental(value: Boolean): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    def setRulesetVarargs(value: TestScriptRuleset*): Self = StObject.set(x, "ruleset", js.Array(value :_*))
     
     @scala.inline
-    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    def setSetup(value: TestScriptSetup): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixtureVarargs(value: TestScriptFixture*): Self = this.set("fixture", js.Array(value :_*))
+    def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     
     @scala.inline
-    def setFixture(value: js.Array[TestScriptFixture]): Self = this.set("fixture", value.asInstanceOf[js.Any])
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFixture: Self = this.set("fixture", js.undefined)
+    def setTeardown(value: TestScriptTeardown): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setTest(value: js.Array[TestScriptTest]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdictionVarargs(value: CodeableConcept*): Self = this.set("jurisdiction", js.Array(value :_*))
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
     @scala.inline
-    def setJurisdiction(value: js.Array[CodeableConcept]): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
+    def setTestVarargs(value: TestScriptTest*): Self = StObject.set(x, "test", js.Array(value :_*))
     
     @scala.inline
-    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: TestScriptMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginVarargs(value: TestScriptOrigin*): Self = this.set("origin", js.Array(value :_*))
+    def setUseContext(value: js.Array[UsageContext]): Self = StObject.set(x, "useContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: js.Array[TestScriptOrigin]): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setUseContextUndefined: Self = StObject.set(x, "useContext", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setUseContextVarargs(value: UsageContext*): Self = StObject.set(x, "useContext", js.Array(value :_*))
     
     @scala.inline
-    def setProfileVarargs(value: Reference*): Self = this.set("profile", js.Array(value :_*))
+    def setVariable(value: js.Array[TestScriptVariable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: js.Array[Reference]): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setVariableVarargs(value: TestScriptVariable*): Self = StObject.set(x, "variable", js.Array(value :_*))
     
     @scala.inline
-    def setPublisher(value: String): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def setPurpose(value: markdown): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePurpose: Self = this.set("purpose", js.undefined)
+    def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
     @scala.inline
-    def setRuleVarargs(value: TestScriptRule*): Self = this.set("rule", js.Array(value :_*))
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: js.Array[TestScriptRule]): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesetVarargs(value: TestScriptRuleset*): Self = this.set("ruleset", js.Array(value :_*))
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def setRuleset(value: js.Array[TestScriptRuleset]): Self = this.set("ruleset", value.asInstanceOf[js.Any])
+    def set_experimental(value: Element): Self = StObject.set(x, "_experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuleset: Self = this.set("ruleset", js.undefined)
+    def set_experimentalUndefined: Self = StObject.set(x, "_experimental", js.undefined)
     
     @scala.inline
-    def setSetup(value: TestScriptSetup): Self = this.set("setup", value.asInstanceOf[js.Any])
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetup: Self = this.set("setup", js.undefined)
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def setTeardown(value: TestScriptTeardown): Self = this.set("teardown", value.asInstanceOf[js.Any])
+    def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTeardown: Self = this.set("teardown", js.undefined)
+    def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
     
     @scala.inline
-    def setTestVarargs(value: TestScriptTest*): Self = this.set("test", js.Array(value :_*))
+    def set_purpose(value: Element): Self = StObject.set(x, "_purpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTest(value: js.Array[TestScriptTest]): Self = this.set("test", value.asInstanceOf[js.Any])
+    def set_purposeUndefined: Self = StObject.set(x, "_purpose", js.undefined)
     
     @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseContextVarargs(value: UsageContext*): Self = this.set("useContext", js.Array(value :_*))
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
     
     @scala.inline
-    def setUseContext(value: js.Array[UsageContext]): Self = this.set("useContext", value.asInstanceOf[js.Any])
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseContext: Self = this.set("useContext", js.undefined)
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     @scala.inline
-    def setVariableVarargs(value: TestScriptVariable*): Self = this.set("variable", js.Array(value :_*))
+    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariable(value: js.Array[TestScriptVariable]): Self = this.set("variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariable: Self = this.set("variable", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

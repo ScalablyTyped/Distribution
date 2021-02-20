@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiskInstantiationConfig extends js.Object {
+trait DiskInstantiationConfig extends StObject {
   
   /** Specifies whether the disk will be auto-deleted when the instance is deleted (but not when the disk is detached from the instance). */
   var autoDelete: js.UndefOr[Boolean] = js.native
@@ -35,42 +36,30 @@ object DiskInstantiationConfig {
   }
   
   @scala.inline
-  implicit class DiskInstantiationConfigOps[Self <: DiskInstantiationConfig] (val x: Self) extends AnyVal {
+  implicit class DiskInstantiationConfigMutableBuilder[Self <: DiskInstantiationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomImage(value: String): Self = StObject.set(x, "customImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDelete(value: Boolean): Self = this.set("autoDelete", value.asInstanceOf[js.Any])
+    def setCustomImageUndefined: Self = StObject.set(x, "customImage", js.undefined)
     
     @scala.inline
-    def deleteAutoDelete: Self = this.set("autoDelete", js.undefined)
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomImage(value: String): Self = this.set("customImage", value.asInstanceOf[js.Any])
+    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
     @scala.inline
-    def deleteCustomImage: Self = this.set("customImage", js.undefined)
+    def setInstantiateFrom(value: String): Self = StObject.set(x, "instantiateFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
-    
-    @scala.inline
-    def setInstantiateFrom(value: String): Self = this.set("instantiateFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstantiateFrom: Self = this.set("instantiateFrom", js.undefined)
+    def setInstantiateFromUndefined: Self = StObject.set(x, "instantiateFrom", js.undefined)
   }
 }

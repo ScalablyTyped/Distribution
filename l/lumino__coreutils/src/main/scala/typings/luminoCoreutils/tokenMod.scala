@@ -1,15 +1,15 @@
 package typings.luminoCoreutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/coreutils/types/token", JSImport.Namespace)
-@js.native
-object tokenMod extends js.Object {
+object tokenMod {
   
+  @JSImport("@lumino/coreutils/types/token", "Token")
   @js.native
-  class Token[T] protected () extends js.Object {
+  class Token[T] protected () extends StObject {
     /**
       * Construct a new token.
       *

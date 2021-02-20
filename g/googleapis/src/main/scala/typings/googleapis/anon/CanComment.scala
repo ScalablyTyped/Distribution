@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanComment extends js.Object {
+trait CanComment extends StObject {
   
   var canComment: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object CanComment {
   }
   
   @scala.inline
-  implicit class CanCommentOps[Self <: CanComment] (val x: Self) extends AnyVal {
+  implicit class CanCommentMutableBuilder[Self <: CanComment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanComment(value: Boolean): Self = StObject.set(x, "canComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanCommentUndefined: Self = StObject.set(x, "canComment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanPlusone(value: Boolean): Self = StObject.set(x, "canPlusone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanComment(value: Boolean): Self = this.set("canComment", value.asInstanceOf[js.Any])
+    def setCanPlusoneUndefined: Self = StObject.set(x, "canPlusone", js.undefined)
     
     @scala.inline
-    def deleteCanComment: Self = this.set("canComment", js.undefined)
+    def setCanUpdate(value: Boolean): Self = StObject.set(x, "canUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPlusone(value: Boolean): Self = this.set("canPlusone", value.asInstanceOf[js.Any])
+    def setCanUpdateUndefined: Self = StObject.set(x, "canUpdate", js.undefined)
     
     @scala.inline
-    def deleteCanPlusone: Self = this.set("canPlusone", js.undefined)
+    def setIsPlusOned(value: Boolean): Self = StObject.set(x, "isPlusOned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanUpdate(value: Boolean): Self = this.set("canUpdate", value.asInstanceOf[js.Any])
+    def setIsPlusOnedUndefined: Self = StObject.set(x, "isPlusOned", js.undefined)
     
     @scala.inline
-    def deleteCanUpdate: Self = this.set("canUpdate", js.undefined)
+    def setResharingDisabled(value: Boolean): Self = StObject.set(x, "resharingDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPlusOned(value: Boolean): Self = this.set("isPlusOned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsPlusOned: Self = this.set("isPlusOned", js.undefined)
-    
-    @scala.inline
-    def setResharingDisabled(value: Boolean): Self = this.set("resharingDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResharingDisabled: Self = this.set("resharingDisabled", js.undefined)
+    def setResharingDisabledUndefined: Self = StObject.set(x, "resharingDisabled", js.undefined)
   }
 }

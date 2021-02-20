@@ -1,11 +1,12 @@
 package typings.nextServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Error extends js.Object {
+trait Error extends StObject {
   
   var error: js.UndefOr[typings.std.Error | Null] = js.native
   
@@ -24,45 +25,33 @@ object Error {
   }
   
   @scala.inline
-  implicit class ErrorOps[Self <: Error] (val x: Self) extends AnyVal {
+  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setError(value: typings.std.Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
     
     @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setPastDelay(value: Boolean): Self = StObject.set(x, "pastDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLoading(value: Boolean): Self = this.set("isLoading", value.asInstanceOf[js.Any])
+    def setPastDelayUndefined: Self = StObject.set(x, "pastDelay", js.undefined)
     
     @scala.inline
-    def deleteIsLoading: Self = this.set("isLoading", js.undefined)
+    def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPastDelay(value: Boolean): Self = this.set("pastDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePastDelay: Self = this.set("pastDelay", js.undefined)
-    
-    @scala.inline
-    def setTimedOut(value: Boolean): Self = this.set("timedOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimedOut: Self = this.set("timedOut", js.undefined)
+    def setTimedOutUndefined: Self = StObject.set(x, "timedOut", js.undefined)
   }
 }

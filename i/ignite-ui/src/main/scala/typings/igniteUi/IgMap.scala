@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -480,363 +481,351 @@ object IgMap {
   }
   
   @scala.inline
-  implicit class IgMapOps[Self <: IgMap] (val x: Self) extends AnyVal {
+  implicit class IgMapMutableBuilder[Self <: IgMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoMarginHeight(value: Double): Self = StObject.set(x, "autoMarginHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoMarginHeightUndefined: Self = StObject.set(x, "autoMarginHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoMarginWidth(value: Double): Self = StObject.set(x, "autoMarginWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMarginHeight(value: Double): Self = this.set("autoMarginHeight", value.asInstanceOf[js.Any])
+    def setAutoMarginWidthUndefined: Self = StObject.set(x, "autoMarginWidth", js.undefined)
     
     @scala.inline
-    def deleteAutoMarginHeight: Self = this.set("autoMarginHeight", js.undefined)
+    def setBackgroundContent(value: IgMapBackgroundContent): Self = StObject.set(x, "backgroundContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMarginWidth(value: Double): Self = this.set("autoMarginWidth", value.asInstanceOf[js.Any])
+    def setBackgroundContentUndefined: Self = StObject.set(x, "backgroundContent", js.undefined)
     
     @scala.inline
-    def deleteAutoMarginWidth: Self = this.set("autoMarginWidth", js.undefined)
+    def setBrowserNotSupported(value: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit): Self = StObject.set(x, "browserNotSupported", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBackgroundContent(value: IgMapBackgroundContent): Self = this.set("backgroundContent", value.asInstanceOf[js.Any])
+    def setBrowserNotSupportedUndefined: Self = StObject.set(x, "browserNotSupported", js.undefined)
     
     @scala.inline
-    def deleteBackgroundContent: Self = this.set("backgroundContent", js.undefined)
+    def setCircleMarkerTemplate(value: js.Any): Self = StObject.set(x, "circleMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserNotSupported(value: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit): Self = this.set("browserNotSupported", js.Any.fromFunction2(value))
+    def setCircleMarkerTemplateUndefined: Self = StObject.set(x, "circleMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deleteBrowserNotSupported: Self = this.set("browserNotSupported", js.undefined)
+    def setCrosshairPoint(value: IgMapCrosshairPoint): Self = StObject.set(x, "crosshairPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircleMarkerTemplate(value: js.Any): Self = this.set("circleMarkerTemplate", value.asInstanceOf[js.Any])
+    def setCrosshairPointUndefined: Self = StObject.set(x, "crosshairPoint", js.undefined)
     
     @scala.inline
-    def deleteCircleMarkerTemplate: Self = this.set("circleMarkerTemplate", js.undefined)
+    def setCrosshairVisibility(value: String): Self = StObject.set(x, "crosshairVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairPoint(value: IgMapCrosshairPoint): Self = this.set("crosshairPoint", value.asInstanceOf[js.Any])
+    def setCrosshairVisibilityUndefined: Self = StObject.set(x, "crosshairVisibility", js.undefined)
     
     @scala.inline
-    def deleteCrosshairPoint: Self = this.set("crosshairPoint", js.undefined)
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairVisibility(value: String): Self = this.set("crosshairVisibility", value.asInstanceOf[js.Any])
+    def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCrosshairVisibility: Self = this.set("crosshairVisibility", js.undefined)
+    def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataSourceUrl(value: String): Self = StObject.set(x, "dataSourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
     @scala.inline
-    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    def setDefaultInteraction(value: String): Self = StObject.set(x, "defaultInteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceUrl(value: String): Self = this.set("dataSourceUrl", value.asInstanceOf[js.Any])
+    def setDefaultInteractionUndefined: Self = StObject.set(x, "defaultInteraction", js.undefined)
     
     @scala.inline
-    def deleteDataSourceUrl: Self = this.set("dataSourceUrl", js.undefined)
+    def setDiamondMarkerTemplate(value: js.Any): Self = StObject.set(x, "diamondMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultInteraction(value: String): Self = this.set("defaultInteraction", value.asInstanceOf[js.Any])
+    def setDiamondMarkerTemplateUndefined: Self = StObject.set(x, "diamondMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deleteDefaultInteraction: Self = this.set("defaultInteraction", js.undefined)
+    def setDragModifier(value: String): Self = StObject.set(x, "dragModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiamondMarkerTemplate(value: js.Any): Self = this.set("diamondMarkerTemplate", value.asInstanceOf[js.Any])
+    def setDragModifierUndefined: Self = StObject.set(x, "dragModifier", js.undefined)
     
     @scala.inline
-    def deleteDiamondMarkerTemplate: Self = this.set("diamondMarkerTemplate", js.undefined)
+    def setGridAreaRectChanged(value: (/* event */ Event, /* ui */ GridAreaRectChangedEventUIParam) => Unit): Self = StObject.set(x, "gridAreaRectChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDragModifier(value: String): Self = this.set("dragModifier", value.asInstanceOf[js.Any])
+    def setGridAreaRectChangedUndefined: Self = StObject.set(x, "gridAreaRectChanged", js.undefined)
     
     @scala.inline
-    def deleteDragModifier: Self = this.set("dragModifier", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridAreaRectChanged(value: (/* event */ Event, /* ui */ GridAreaRectChangedEventUIParam) => Unit): Self = this.set("gridAreaRectChanged", js.Any.fromFunction2(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGridAreaRectChanged: Self = this.set("gridAreaRectChanged", js.undefined)
+    def setHexagonMarkerTemplate(value: js.Any): Self = StObject.set(x, "hexagonMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHexagonMarkerTemplateUndefined: Self = StObject.set(x, "hexagonMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHexagramMarkerTemplate(value: js.Any): Self = StObject.set(x, "hexagramMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHexagonMarkerTemplate(value: js.Any): Self = this.set("hexagonMarkerTemplate", value.asInstanceOf[js.Any])
+    def setHexagramMarkerTemplateUndefined: Self = StObject.set(x, "hexagramMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deleteHexagonMarkerTemplate: Self = this.set("hexagonMarkerTemplate", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHexagramMarkerTemplate(value: js.Any): Self = this.set("hexagramMarkerTemplate", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteHexagramMarkerTemplate: Self = this.set("hexagramMarkerTemplate", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setOverviewPlusDetailPaneBackgroundImageUri(value: String): Self = StObject.set(x, "overviewPlusDetailPaneBackgroundImageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setOverviewPlusDetailPaneBackgroundImageUriUndefined: Self = StObject.set(x, "overviewPlusDetailPaneBackgroundImageUri", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setPanModifier(value: String): Self = StObject.set(x, "panModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverviewPlusDetailPaneBackgroundImageUri(value: String): Self = this.set("overviewPlusDetailPaneBackgroundImageUri", value.asInstanceOf[js.Any])
+    def setPanModifierUndefined: Self = StObject.set(x, "panModifier", js.undefined)
     
     @scala.inline
-    def deleteOverviewPlusDetailPaneBackgroundImageUri: Self = this.set("overviewPlusDetailPaneBackgroundImageUri", js.undefined)
+    def setPentagonMarkerTemplate(value: js.Any): Self = StObject.set(x, "pentagonMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanModifier(value: String): Self = this.set("panModifier", value.asInstanceOf[js.Any])
+    def setPentagonMarkerTemplateUndefined: Self = StObject.set(x, "pentagonMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deletePanModifier: Self = this.set("panModifier", js.undefined)
+    def setPentagramMarkerTemplate(value: js.Any): Self = StObject.set(x, "pentagramMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPentagonMarkerTemplate(value: js.Any): Self = this.set("pentagonMarkerTemplate", value.asInstanceOf[js.Any])
+    def setPentagramMarkerTemplateUndefined: Self = StObject.set(x, "pentagramMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deletePentagonMarkerTemplate: Self = this.set("pentagonMarkerTemplate", js.undefined)
+    def setPlotAreaBackground(value: String): Self = StObject.set(x, "plotAreaBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPentagramMarkerTemplate(value: js.Any): Self = this.set("pentagramMarkerTemplate", value.asInstanceOf[js.Any])
+    def setPlotAreaBackgroundUndefined: Self = StObject.set(x, "plotAreaBackground", js.undefined)
     
     @scala.inline
-    def deletePentagramMarkerTemplate: Self = this.set("pentagramMarkerTemplate", js.undefined)
+    def setPreferHigherResolutionTiles(value: Boolean): Self = StObject.set(x, "preferHigherResolutionTiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlotAreaBackground(value: String): Self = this.set("plotAreaBackground", value.asInstanceOf[js.Any])
+    def setPreferHigherResolutionTilesUndefined: Self = StObject.set(x, "preferHigherResolutionTiles", js.undefined)
     
     @scala.inline
-    def deletePlotAreaBackground: Self = this.set("plotAreaBackground", js.undefined)
+    def setPreviewRect(value: js.Any): Self = StObject.set(x, "previewRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferHigherResolutionTiles(value: Boolean): Self = this.set("preferHigherResolutionTiles", value.asInstanceOf[js.Any])
+    def setPreviewRectUndefined: Self = StObject.set(x, "previewRect", js.undefined)
     
     @scala.inline
-    def deletePreferHigherResolutionTiles: Self = this.set("preferHigherResolutionTiles", js.undefined)
+    def setPyramidMarkerTemplate(value: js.Any): Self = StObject.set(x, "pyramidMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewRect(value: js.Any): Self = this.set("previewRect", value.asInstanceOf[js.Any])
+    def setPyramidMarkerTemplateUndefined: Self = StObject.set(x, "pyramidMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deletePreviewRect: Self = this.set("previewRect", js.undefined)
+    def setRefreshCompleted(value: (/* event */ Event, /* ui */ RefreshCompletedEventUIParam) => Unit): Self = StObject.set(x, "refreshCompleted", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPyramidMarkerTemplate(value: js.Any): Self = this.set("pyramidMarkerTemplate", value.asInstanceOf[js.Any])
+    def setRefreshCompletedUndefined: Self = StObject.set(x, "refreshCompleted", js.undefined)
     
     @scala.inline
-    def deletePyramidMarkerTemplate: Self = this.set("pyramidMarkerTemplate", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshCompleted(value: (/* event */ Event, /* ui */ RefreshCompletedEventUIParam) => Unit): Self = this.set("refreshCompleted", js.Any.fromFunction2(value))
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deleteRefreshCompleted: Self = this.set("refreshCompleted", js.undefined)
+    def setResponseDataKey(value: String): Self = StObject.set(x, "responseDataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setResponseDataKeyUndefined: Self = StObject.set(x, "responseDataKey", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setSeries(value: js.Array[IgMapSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDataKey(value: String): Self = this.set("responseDataKey", value.asInstanceOf[js.Any])
+    def setSeriesCursorMouseMove(value: (/* event */ Event, /* ui */ SeriesCursorMouseMoveEventUIParam) => Unit): Self = StObject.set(x, "seriesCursorMouseMove", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteResponseDataKey: Self = this.set("responseDataKey", js.undefined)
+    def setSeriesCursorMouseMoveUndefined: Self = StObject.set(x, "seriesCursorMouseMove", js.undefined)
     
     @scala.inline
-    def setSeriesVarargs(value: IgMapSeries*): Self = this.set("series", js.Array(value :_*))
+    def setSeriesMouseEnter(value: (/* event */ Event, /* ui */ SeriesMouseEnterEventUIParam) => Unit): Self = StObject.set(x, "seriesMouseEnter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSeries(value: js.Array[IgMapSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSeriesMouseEnterUndefined: Self = StObject.set(x, "seriesMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSeriesMouseLeave(value: (/* event */ Event, /* ui */ SeriesMouseLeaveEventUIParam) => Unit): Self = StObject.set(x, "seriesMouseLeave", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSeriesCursorMouseMove(value: (/* event */ Event, /* ui */ SeriesCursorMouseMoveEventUIParam) => Unit): Self = this.set("seriesCursorMouseMove", js.Any.fromFunction2(value))
+    def setSeriesMouseLeaveUndefined: Self = StObject.set(x, "seriesMouseLeave", js.undefined)
     
     @scala.inline
-    def deleteSeriesCursorMouseMove: Self = this.set("seriesCursorMouseMove", js.undefined)
+    def setSeriesMouseLeftButtonDown(value: (/* event */ Event, /* ui */ SeriesMouseLeftButtonDownEventUIParam) => Unit): Self = StObject.set(x, "seriesMouseLeftButtonDown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSeriesMouseEnter(value: (/* event */ Event, /* ui */ SeriesMouseEnterEventUIParam) => Unit): Self = this.set("seriesMouseEnter", js.Any.fromFunction2(value))
+    def setSeriesMouseLeftButtonDownUndefined: Self = StObject.set(x, "seriesMouseLeftButtonDown", js.undefined)
     
     @scala.inline
-    def deleteSeriesMouseEnter: Self = this.set("seriesMouseEnter", js.undefined)
+    def setSeriesMouseLeftButtonUp(value: (/* event */ Event, /* ui */ SeriesMouseLeftButtonUpEventUIParam) => Unit): Self = StObject.set(x, "seriesMouseLeftButtonUp", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSeriesMouseLeave(value: (/* event */ Event, /* ui */ SeriesMouseLeaveEventUIParam) => Unit): Self = this.set("seriesMouseLeave", js.Any.fromFunction2(value))
+    def setSeriesMouseLeftButtonUpUndefined: Self = StObject.set(x, "seriesMouseLeftButtonUp", js.undefined)
     
     @scala.inline
-    def deleteSeriesMouseLeave: Self = this.set("seriesMouseLeave", js.undefined)
+    def setSeriesMouseMove(value: (/* event */ Event, /* ui */ SeriesMouseMoveEventUIParam) => Unit): Self = StObject.set(x, "seriesMouseMove", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSeriesMouseLeftButtonDown(value: (/* event */ Event, /* ui */ SeriesMouseLeftButtonDownEventUIParam) => Unit): Self = this.set("seriesMouseLeftButtonDown", js.Any.fromFunction2(value))
+    def setSeriesMouseMoveUndefined: Self = StObject.set(x, "seriesMouseMove", js.undefined)
     
     @scala.inline
-    def deleteSeriesMouseLeftButtonDown: Self = this.set("seriesMouseLeftButtonDown", js.undefined)
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def setSeriesMouseLeftButtonUp(value: (/* event */ Event, /* ui */ SeriesMouseLeftButtonUpEventUIParam) => Unit): Self = this.set("seriesMouseLeftButtonUp", js.Any.fromFunction2(value))
+    def setSeriesVarargs(value: IgMapSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def deleteSeriesMouseLeftButtonUp: Self = this.set("seriesMouseLeftButtonUp", js.undefined)
+    def setSquareMarkerTemplate(value: js.Any): Self = StObject.set(x, "squareMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesMouseMove(value: (/* event */ Event, /* ui */ SeriesMouseMoveEventUIParam) => Unit): Self = this.set("seriesMouseMove", js.Any.fromFunction2(value))
+    def setSquareMarkerTemplateUndefined: Self = StObject.set(x, "squareMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deleteSeriesMouseMove: Self = this.set("seriesMouseMove", js.undefined)
+    def setTetragramMarkerTemplate(value: js.Any): Self = StObject.set(x, "tetragramMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSquareMarkerTemplate(value: js.Any): Self = this.set("squareMarkerTemplate", value.asInstanceOf[js.Any])
+    def setTetragramMarkerTemplateUndefined: Self = StObject.set(x, "tetragramMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deleteSquareMarkerTemplate: Self = this.set("squareMarkerTemplate", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTetragramMarkerTemplate(value: js.Any): Self = this.set("tetragramMarkerTemplate", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteTetragramMarkerTemplate: Self = this.set("tetragramMarkerTemplate", js.undefined)
+    def setTooltipHidden(value: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit): Self = StObject.set(x, "tooltipHidden", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTooltipHiddenUndefined: Self = StObject.set(x, "tooltipHidden", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setTooltipHiding(value: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit): Self = StObject.set(x, "tooltipHiding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTooltipHidden(value: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit): Self = this.set("tooltipHidden", js.Any.fromFunction2(value))
+    def setTooltipHidingUndefined: Self = StObject.set(x, "tooltipHiding", js.undefined)
     
     @scala.inline
-    def deleteTooltipHidden: Self = this.set("tooltipHidden", js.undefined)
+    def setTooltipShowing(value: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit): Self = StObject.set(x, "tooltipShowing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTooltipHiding(value: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit): Self = this.set("tooltipHiding", js.Any.fromFunction2(value))
+    def setTooltipShowingUndefined: Self = StObject.set(x, "tooltipShowing", js.undefined)
     
     @scala.inline
-    def deleteTooltipHiding: Self = this.set("tooltipHiding", js.undefined)
+    def setTooltipShown(value: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit): Self = StObject.set(x, "tooltipShown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTooltipShowing(value: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit): Self = this.set("tooltipShowing", js.Any.fromFunction2(value))
+    def setTooltipShownUndefined: Self = StObject.set(x, "tooltipShown", js.undefined)
     
     @scala.inline
-    def deleteTooltipShowing: Self = this.set("tooltipShowing", js.undefined)
+    def setTriangleMarkerTemplate(value: js.Any): Self = StObject.set(x, "triangleMarkerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipShown(value: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit): Self = this.set("tooltipShown", js.Any.fromFunction2(value))
+    def setTriangleMarkerTemplateUndefined: Self = StObject.set(x, "triangleMarkerTemplate", js.undefined)
     
     @scala.inline
-    def deleteTooltipShown: Self = this.set("tooltipShown", js.undefined)
+    def setTriangulationStatusChanged(value: (/* event */ Event, /* ui */ TriangulationStatusChangedEventUIParam) => Unit): Self = StObject.set(x, "triangulationStatusChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTriangleMarkerTemplate(value: js.Any): Self = this.set("triangleMarkerTemplate", value.asInstanceOf[js.Any])
+    def setTriangulationStatusChangedUndefined: Self = StObject.set(x, "triangulationStatusChanged", js.undefined)
     
     @scala.inline
-    def deleteTriangleMarkerTemplate: Self = this.set("triangleMarkerTemplate", js.undefined)
+    def setUseTiledZooming(value: Boolean): Self = StObject.set(x, "useTiledZooming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriangulationStatusChanged(value: (/* event */ Event, /* ui */ TriangulationStatusChangedEventUIParam) => Unit): Self = this.set("triangulationStatusChanged", js.Any.fromFunction2(value))
+    def setUseTiledZoomingUndefined: Self = StObject.set(x, "useTiledZooming", js.undefined)
     
     @scala.inline
-    def deleteTriangulationStatusChanged: Self = this.set("triangulationStatusChanged", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseTiledZooming(value: Boolean): Self = this.set("useTiledZooming", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteUseTiledZooming: Self = this.set("useTiledZooming", js.undefined)
+    def setWindowPositionHorizontal(value: Double): Self = StObject.set(x, "windowPositionHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWindowPositionHorizontalUndefined: Self = StObject.set(x, "windowPositionHorizontal", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWindowPositionVertical(value: Double): Self = StObject.set(x, "windowPositionVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowPositionHorizontal(value: Double): Self = this.set("windowPositionHorizontal", value.asInstanceOf[js.Any])
+    def setWindowPositionVerticalUndefined: Self = StObject.set(x, "windowPositionVertical", js.undefined)
     
     @scala.inline
-    def deleteWindowPositionHorizontal: Self = this.set("windowPositionHorizontal", js.undefined)
+    def setWindowRect(value: js.Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowPositionVertical(value: Double): Self = this.set("windowPositionVertical", value.asInstanceOf[js.Any])
+    def setWindowRectChanged(value: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit): Self = StObject.set(x, "windowRectChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteWindowPositionVertical: Self = this.set("windowPositionVertical", js.undefined)
+    def setWindowRectChangedUndefined: Self = StObject.set(x, "windowRectChanged", js.undefined)
     
     @scala.inline
-    def setWindowRect(value: js.Any): Self = this.set("windowRect", value.asInstanceOf[js.Any])
+    def setWindowRectMinWidth(value: Double): Self = StObject.set(x, "windowRectMinWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWindowRect: Self = this.set("windowRect", js.undefined)
+    def setWindowRectMinWidthUndefined: Self = StObject.set(x, "windowRectMinWidth", js.undefined)
     
     @scala.inline
-    def setWindowRectChanged(value: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit): Self = this.set("windowRectChanged", js.Any.fromFunction2(value))
+    def setWindowRectUndefined: Self = StObject.set(x, "windowRect", js.undefined)
     
     @scala.inline
-    def deleteWindowRectChanged: Self = this.set("windowRectChanged", js.undefined)
+    def setWindowResponse(value: String): Self = StObject.set(x, "windowResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowRectMinWidth(value: Double): Self = this.set("windowRectMinWidth", value.asInstanceOf[js.Any])
+    def setWindowResponseUndefined: Self = StObject.set(x, "windowResponse", js.undefined)
     
     @scala.inline
-    def deleteWindowRectMinWidth: Self = this.set("windowRectMinWidth", js.undefined)
+    def setWindowScale(value: Double): Self = StObject.set(x, "windowScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowResponse(value: String): Self = this.set("windowResponse", value.asInstanceOf[js.Any])
+    def setWindowScaleUndefined: Self = StObject.set(x, "windowScale", js.undefined)
     
     @scala.inline
-    def deleteWindowResponse: Self = this.set("windowResponse", js.undefined)
+    def setZoomTileCacheSize(value: Double): Self = StObject.set(x, "zoomTileCacheSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowScale(value: Double): Self = this.set("windowScale", value.asInstanceOf[js.Any])
+    def setZoomTileCacheSizeUndefined: Self = StObject.set(x, "zoomTileCacheSize", js.undefined)
     
     @scala.inline
-    def deleteWindowScale: Self = this.set("windowScale", js.undefined)
+    def setZoomable(value: Boolean): Self = StObject.set(x, "zoomable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomTileCacheSize(value: Double): Self = this.set("zoomTileCacheSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomTileCacheSize: Self = this.set("zoomTileCacheSize", js.undefined)
-    
-    @scala.inline
-    def setZoomable(value: Boolean): Self = this.set("zoomable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomable: Self = this.set("zoomable", js.undefined)
+    def setZoomableUndefined: Self = StObject.set(x, "zoomable", js.undefined)
   }
 }

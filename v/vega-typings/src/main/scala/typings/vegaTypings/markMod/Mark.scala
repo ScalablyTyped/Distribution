@@ -12,6 +12,7 @@ import typings.vegaTypings.vegaTypingsStrings.shape
 import typings.vegaTypings.vegaTypingsStrings.symbol
 import typings.vegaTypings.vegaTypingsStrings.text
 import typings.vegaTypings.vegaTypingsStrings.trail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,90 +31,90 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.markMod.TextMark
   - typings.vegaTypings.markMod.TrailMark
 */
-trait Mark extends js.Object
+trait Mark extends StObject
 object Mark {
   
   @scala.inline
-  def TrailMark(`type`: trail): Mark = {
+  def ArcMark(`type`: arc): typings.vegaTypings.markMod.ArcMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.ArcMark]
   }
   
   @scala.inline
-  def GroupMark(`type`: group): Mark = {
+  def AreaMark(`type`: area): typings.vegaTypings.markMod.AreaMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.AreaMark]
   }
   
   @scala.inline
-  def RectMark(`type`: rect): Mark = {
+  def GroupMark(`type`: group): typings.vegaTypings.markMod.GroupMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.GroupMark]
   }
   
   @scala.inline
-  def TextMark(`type`: text): Mark = {
+  def ImageMark(`type`: image): typings.vegaTypings.markMod.ImageMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.ImageMark]
   }
   
   @scala.inline
-  def ImageMark(`type`: image): Mark = {
+  def LineMark(`type`: line): typings.vegaTypings.markMod.LineMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.LineMark]
   }
   
   @scala.inline
-  def LineMark(`type`: line): Mark = {
+  def PathMark(`type`: path): typings.vegaTypings.markMod.PathMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.PathMark]
   }
   
   @scala.inline
-  def PathMark(`type`: path): Mark = {
+  def RectMark(`type`: rect): typings.vegaTypings.markMod.RectMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.RectMark]
   }
   
   @scala.inline
-  def SymbolMark(`type`: symbol): Mark = {
+  def RuleMark(`type`: rule): typings.vegaTypings.markMod.RuleMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.RuleMark]
   }
   
   @scala.inline
-  def AreaMark(`type`: area): Mark = {
+  def ShapeMark(`type`: shape): typings.vegaTypings.markMod.ShapeMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.ShapeMark]
   }
   
   @scala.inline
-  def ArcMark(`type`: arc): Mark = {
+  def SymbolMark(`type`: symbol): typings.vegaTypings.markMod.SymbolMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.SymbolMark]
   }
   
   @scala.inline
-  def RuleMark(`type`: rule): Mark = {
+  def TextMark(`type`: text): typings.vegaTypings.markMod.TextMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.TextMark]
   }
   
   @scala.inline
-  def ShapeMark(`type`: shape): Mark = {
+  def TrailMark(`type`: trail): typings.vegaTypings.markMod.TrailMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mark]
+    __obj.asInstanceOf[typings.vegaTypings.markMod.TrailMark]
   }
 }

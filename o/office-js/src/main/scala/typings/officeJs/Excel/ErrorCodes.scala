@@ -1,14 +1,15 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ErrorCodes extends js.Object
+sealed trait ErrorCodes extends StObject
 @JSGlobal("Excel.ErrorCodes")
 @js.native
-object ErrorCodes extends js.Object {
+object ErrorCodes extends StObject {
   
   @js.native
   sealed trait accessDenied extends ErrorCodes

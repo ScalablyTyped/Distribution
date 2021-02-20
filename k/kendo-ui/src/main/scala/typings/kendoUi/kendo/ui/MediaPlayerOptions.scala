@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaPlayerOptions extends js.Object {
+trait MediaPlayerOptions extends StObject {
   
   var autoPlay: js.UndefOr[Boolean] = js.native
   
@@ -48,114 +49,102 @@ object MediaPlayerOptions {
   }
   
   @scala.inline
-  implicit class MediaPlayerOptionsOps[Self <: MediaPlayerOptions] (val x: Self) extends AnyVal {
+  implicit class MediaPlayerOptionsMutableBuilder[Self <: MediaPlayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoRepeat(value: Boolean): Self = StObject.set(x, "autoRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    def setAutoRepeatUndefined: Self = StObject.set(x, "autoRepeat", js.undefined)
     
     @scala.inline
-    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    def setEnd(value: /* e */ MediaPlayerEvent => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoRepeat(value: Boolean): Self = this.set("autoRepeat", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteAutoRepeat: Self = this.set("autoRepeat", js.undefined)
+    def setForwardSeek(value: Boolean): Self = StObject.set(x, "forwardSeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: /* e */ MediaPlayerEvent => Unit): Self = this.set("end", js.Any.fromFunction1(value))
+    def setForwardSeekUndefined: Self = StObject.set(x, "forwardSeek", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardSeek(value: Boolean): Self = this.set("forwardSeek", value.asInstanceOf[js.Any])
+    def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
     @scala.inline
-    def deleteForwardSeek: Self = this.set("forwardSeek", js.undefined)
+    def setMedia(value: MediaPlayerMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullScreen(value: Boolean): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def deleteFullScreen: Self = this.set("fullScreen", js.undefined)
+    def setMessages(value: MediaPlayerMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: MediaPlayerMedia): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: MediaPlayerMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMute(value: Boolean): Self = this.set("mute", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMute: Self = this.set("mute", js.undefined)
+    def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPause(value: /* e */ MediaPlayerEvent => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNavigatable(value: Boolean): Self = this.set("navigatable", value.asInstanceOf[js.Any])
+    def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
     @scala.inline
-    def deleteNavigatable: Self = this.set("navigatable", js.undefined)
+    def setPlay(value: /* e */ MediaPlayerEvent => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPause(value: /* e */ MediaPlayerEvent => Unit): Self = this.set("pause", js.Any.fromFunction1(value))
+    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
     @scala.inline
-    def deletePause: Self = this.set("pause", js.undefined)
+    def setReady(value: /* e */ MediaPlayerEvent => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlay(value: /* e */ MediaPlayerEvent => Unit): Self = this.set("play", js.Any.fromFunction1(value))
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
     @scala.inline
-    def deletePlay: Self = this.set("play", js.undefined)
+    def setTimeChange(value: /* e */ MediaPlayerEvent => Unit): Self = StObject.set(x, "timeChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReady(value: /* e */ MediaPlayerEvent => Unit): Self = this.set("ready", js.Any.fromFunction1(value))
+    def setTimeChangeUndefined: Self = StObject.set(x, "timeChange", js.undefined)
     
     @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeChange(value: /* e */ MediaPlayerEvent => Unit): Self = this.set("timeChange", js.Any.fromFunction1(value))
+    def setVolumeChange(value: /* e */ MediaPlayerEvent => Unit): Self = StObject.set(x, "volumeChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTimeChange: Self = this.set("timeChange", js.undefined)
+    def setVolumeChangeUndefined: Self = StObject.set(x, "volumeChange", js.undefined)
     
     @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
-    
-    @scala.inline
-    def setVolumeChange(value: /* e */ MediaPlayerEvent => Unit): Self = this.set("volumeChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteVolumeChange: Self = this.set("volumeChange", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

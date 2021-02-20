@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEditNegativeKeywordsResponse extends js.Object {
+trait BulkEditNegativeKeywordsResponse extends StObject {
   
   /** The list of negative keywords that have been successfully created. This list will be absent if empty. */
   var negativeKeywords: js.UndefOr[js.Array[NegativeKeyword]] = js.native
@@ -19,27 +20,15 @@ object BulkEditNegativeKeywordsResponse {
   }
   
   @scala.inline
-  implicit class BulkEditNegativeKeywordsResponseOps[Self <: BulkEditNegativeKeywordsResponse] (val x: Self) extends AnyVal {
+  implicit class BulkEditNegativeKeywordsResponseMutableBuilder[Self <: BulkEditNegativeKeywordsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNegativeKeywords(value: js.Array[NegativeKeyword]): Self = StObject.set(x, "negativeKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNegativeKeywordsUndefined: Self = StObject.set(x, "negativeKeywords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNegativeKeywordsVarargs(value: NegativeKeyword*): Self = this.set("negativeKeywords", js.Array(value :_*))
-    
-    @scala.inline
-    def setNegativeKeywords(value: js.Array[NegativeKeyword]): Self = this.set("negativeKeywords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNegativeKeywords: Self = this.set("negativeKeywords", js.undefined)
+    def setNegativeKeywordsVarargs(value: NegativeKeyword*): Self = StObject.set(x, "negativeKeywords", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.firmata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SerialPortIds extends js.Object {
+trait SerialPortIds extends StObject {
   
   var DEFAULT: SERIAL_PORT_ID = js.native
   
@@ -44,45 +45,33 @@ object SerialPortIds {
   }
   
   @scala.inline
-  implicit class SerialPortIdsOps[Self <: SerialPortIds] (val x: Self) extends AnyVal {
+  implicit class SerialPortIdsMutableBuilder[Self <: SerialPortIds] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDEFAULT(value: SERIAL_PORT_ID): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHW_SERIAL0(value: SERIAL_PORT_ID): Self = StObject.set(x, "HW_SERIAL0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHW_SERIAL1(value: SERIAL_PORT_ID): Self = StObject.set(x, "HW_SERIAL1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDEFAULT(value: SERIAL_PORT_ID): Self = this.set("DEFAULT", value.asInstanceOf[js.Any])
+    def setHW_SERIAL2(value: SERIAL_PORT_ID): Self = StObject.set(x, "HW_SERIAL2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHW_SERIAL0(value: SERIAL_PORT_ID): Self = this.set("HW_SERIAL0", value.asInstanceOf[js.Any])
+    def setHW_SERIAL3(value: SERIAL_PORT_ID): Self = StObject.set(x, "HW_SERIAL3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHW_SERIAL1(value: SERIAL_PORT_ID): Self = this.set("HW_SERIAL1", value.asInstanceOf[js.Any])
+    def setSW_SERIAL0(value: SERIAL_PORT_ID): Self = StObject.set(x, "SW_SERIAL0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHW_SERIAL2(value: SERIAL_PORT_ID): Self = this.set("HW_SERIAL2", value.asInstanceOf[js.Any])
+    def setSW_SERIAL1(value: SERIAL_PORT_ID): Self = StObject.set(x, "SW_SERIAL1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHW_SERIAL3(value: SERIAL_PORT_ID): Self = this.set("HW_SERIAL3", value.asInstanceOf[js.Any])
+    def setSW_SERIAL2(value: SERIAL_PORT_ID): Self = StObject.set(x, "SW_SERIAL2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSW_SERIAL0(value: SERIAL_PORT_ID): Self = this.set("SW_SERIAL0", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSW_SERIAL1(value: SERIAL_PORT_ID): Self = this.set("SW_SERIAL1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSW_SERIAL2(value: SERIAL_PORT_ID): Self = this.set("SW_SERIAL2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSW_SERIAL3(value: SERIAL_PORT_ID): Self = this.set("SW_SERIAL3", value.asInstanceOf[js.Any])
+    def setSW_SERIAL3(value: SERIAL_PORT_ID): Self = StObject.set(x, "SW_SERIAL3", value.asInstanceOf[js.Any])
   }
 }

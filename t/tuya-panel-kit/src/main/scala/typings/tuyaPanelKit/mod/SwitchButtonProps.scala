@@ -6,12 +6,13 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.ActiveSize
 import typings.tuyaPanelKit.anon.Margin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwitchButtonProps extends js.Object {
+trait SwitchButtonProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.native
   
@@ -60,141 +61,129 @@ object SwitchButtonProps {
   }
   
   @scala.inline
-  implicit class SwitchButtonPropsOps[Self <: SwitchButtonProps] (val x: Self) extends AnyVal {
+  implicit class SwitchButtonPropsMutableBuilder[Self <: SwitchButtonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChange(value: Boolean => Unit): Self = this.set("onValueChange", js.Any.fromFunction1(value))
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: Boolean): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setOffText(value: String): Self = StObject.set(x, "offText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setOffTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "offTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setOffTextStyleNull: Self = StObject.set(x, "offTextStyle", null)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setOffTextStyleUndefined: Self = StObject.set(x, "offTextStyle", js.undefined)
     
     @scala.inline
-    def setOffText(value: String): Self = this.set("offText", value.asInstanceOf[js.Any])
+    def setOffTextUndefined: Self = StObject.set(x, "offText", js.undefined)
     
     @scala.inline
-    def deleteOffText: Self = this.set("offText", js.undefined)
+    def setOnText(value: String): Self = StObject.set(x, "onText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffTextStyle(value: StyleProp[TextStyle]): Self = this.set("offTextStyle", value.asInstanceOf[js.Any])
+    def setOnTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "onTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffTextStyle: Self = this.set("offTextStyle", js.undefined)
+    def setOnTextStyleNull: Self = StObject.set(x, "onTextStyle", null)
     
     @scala.inline
-    def setOffTextStyleNull: Self = this.set("offTextStyle", null)
+    def setOnTextStyleUndefined: Self = StObject.set(x, "onTextStyle", js.undefined)
     
     @scala.inline
-    def setOnText(value: String): Self = this.set("onText", value.asInstanceOf[js.Any])
+    def setOnTextUndefined: Self = StObject.set(x, "onText", js.undefined)
     
     @scala.inline
-    def deleteOnText: Self = this.set("onText", js.undefined)
+    def setOnThumbTintColor(value: String): Self = StObject.set(x, "onThumbTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTextStyle(value: StyleProp[TextStyle]): Self = this.set("onTextStyle", value.asInstanceOf[js.Any])
+    def setOnThumbTintColorUndefined: Self = StObject.set(x, "onThumbTintColor", js.undefined)
     
     @scala.inline
-    def deleteOnTextStyle: Self = this.set("onTextStyle", js.undefined)
+    def setOnTintColor(value: String | StringDictionary[String]): Self = StObject.set(x, "onTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTextStyleNull: Self = this.set("onTextStyle", null)
+    def setOnTintColorUndefined: Self = StObject.set(x, "onTintColor", js.undefined)
     
     @scala.inline
-    def setOnThumbTintColor(value: String): Self = this.set("onThumbTintColor", value.asInstanceOf[js.Any])
+    def setOnValueChange(value: Boolean => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnThumbTintColor: Self = this.set("onThumbTintColor", js.undefined)
+    def setSize(value: ActiveSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTintColor(value: String | StringDictionary[String]): Self = this.set("onTintColor", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteOnTintColor: Self = this.set("onTintColor", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: ActiveSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTheme(value: Margin): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setThumbStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "thumbStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: Margin): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setThumbStyleNull: Self = StObject.set(x, "thumbStyle", null)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThumbStyleUndefined: Self = StObject.set(x, "thumbStyle", js.undefined)
     
     @scala.inline
-    def setThumbStyle(value: StyleProp[ViewStyle]): Self = this.set("thumbStyle", value.asInstanceOf[js.Any])
+    def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThumbStyle: Self = this.set("thumbStyle", js.undefined)
+    def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     
     @scala.inline
-    def setThumbStyleNull: Self = this.set("thumbStyle", null)
+    def setTintColor(value: String | StringDictionary[String]): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbTintColor(value: String): Self = this.set("thumbTintColor", value.asInstanceOf[js.Any])
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def deleteThumbTintColor: Self = this.set("thumbTintColor", js.undefined)
+    def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: String | StringDictionary[String]): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
     
     @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseNativeDriver(value: Boolean): Self = this.set("useNativeDriver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNativeDriver: Self = this.set("useNativeDriver", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Boolean): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

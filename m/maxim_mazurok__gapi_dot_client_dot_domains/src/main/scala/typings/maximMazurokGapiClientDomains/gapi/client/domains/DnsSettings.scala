@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DnsSettings extends js.Object {
+trait DnsSettings extends StObject {
   
   /** An arbitrary DNS provider identified by its name servers. */
   var customDns: js.UndefOr[CustomDns] = js.native
@@ -25,39 +26,27 @@ object DnsSettings {
   }
   
   @scala.inline
-  implicit class DnsSettingsOps[Self <: DnsSettings] (val x: Self) extends AnyVal {
+  implicit class DnsSettingsMutableBuilder[Self <: DnsSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomDns(value: CustomDns): Self = StObject.set(x, "customDns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomDnsUndefined: Self = StObject.set(x, "customDns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlueRecords(value: js.Array[GlueRecord]): Self = StObject.set(x, "glueRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDns(value: CustomDns): Self = this.set("customDns", value.asInstanceOf[js.Any])
+    def setGlueRecordsUndefined: Self = StObject.set(x, "glueRecords", js.undefined)
     
     @scala.inline
-    def deleteCustomDns: Self = this.set("customDns", js.undefined)
+    def setGlueRecordsVarargs(value: GlueRecord*): Self = StObject.set(x, "glueRecords", js.Array(value :_*))
     
     @scala.inline
-    def setGlueRecordsVarargs(value: GlueRecord*): Self = this.set("glueRecords", js.Array(value :_*))
+    def setGoogleDomainsDns(value: GoogleDomainsDns): Self = StObject.set(x, "googleDomainsDns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlueRecords(value: js.Array[GlueRecord]): Self = this.set("glueRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlueRecords: Self = this.set("glueRecords", js.undefined)
-    
-    @scala.inline
-    def setGoogleDomainsDns(value: GoogleDomainsDns): Self = this.set("googleDomainsDns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoogleDomainsDns: Self = this.set("googleDomainsDns", js.undefined)
+    def setGoogleDomainsDnsUndefined: Self = StObject.set(x, "googleDomainsDns", js.undefined)
   }
 }

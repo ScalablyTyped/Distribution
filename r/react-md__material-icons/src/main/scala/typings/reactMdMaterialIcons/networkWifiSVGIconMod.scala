@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/NetworkWifiSVGIcon", JSImport.Namespace)
-@js.native
-object networkWifiSVGIconMod extends js.Object {
+object networkWifiSVGIconMod {
   
+  @JSImport("@react-md/material-icons/types/NetworkWifiSVGIcon", "NetworkWifiSVGIcon")
+  @js.native
   val NetworkWifiSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
 }

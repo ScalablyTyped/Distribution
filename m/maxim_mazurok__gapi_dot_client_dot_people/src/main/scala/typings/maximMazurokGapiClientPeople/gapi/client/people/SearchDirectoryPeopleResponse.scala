@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchDirectoryPeopleResponse extends js.Object {
+trait SearchDirectoryPeopleResponse extends StObject {
   
   /** A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object SearchDirectoryPeopleResponse {
   }
   
   @scala.inline
-  implicit class SearchDirectoryPeopleResponseOps[Self <: SearchDirectoryPeopleResponse] (val x: Self) extends AnyVal {
+  implicit class SearchDirectoryPeopleResponseMutableBuilder[Self <: SearchDirectoryPeopleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeople(value: js.Array[Person]): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setPeopleUndefined: Self = StObject.set(x, "people", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setPeopleVarargs(value: Person*): Self = StObject.set(x, "people", js.Array(value :_*))
     
     @scala.inline
-    def setPeopleVarargs(value: Person*): Self = this.set("people", js.Array(value :_*))
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeople(value: js.Array[Person]): Self = this.set("people", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeople: Self = this.set("people", js.undefined)
-    
-    @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.wafv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatement extends js.Object {
+trait WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatement extends StObject {
   
   /**
     * The operator to use to compare the request part to the size setting. Valid values include: `EQ`, `NE`, `LE`, `LT`, `GE`, or `GT`.
@@ -46,44 +47,32 @@ object WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementSt
   }
   
   @scala.inline
-  implicit class WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatementOps[Self <: WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatement] (val x: Self) extends AnyVal {
+  implicit class WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatementMutableBuilder[Self <: WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparisonOperator(value: String): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldToMatch(
+      value: WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatch
+    ): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
     @scala.inline
-    def setComparisonOperator(value: String): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextTransformationsVarargs(
-      value: WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatementTextTransformation*
-    ): Self = this.set("textTransformations", js.Array(value :_*))
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTextTransformations(
       value: js.Array[
           WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatementTextTransformation
         ]
-    ): Self = this.set("textTransformations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldToMatch(
-      value: WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatch
-    ): Self = this.set("fieldToMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldToMatch: Self = this.set("fieldToMatch", js.undefined)
+    def setTextTransformationsVarargs(
+      value: WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementSizeConstraintStatementTextTransformation*
+    ): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }
 }

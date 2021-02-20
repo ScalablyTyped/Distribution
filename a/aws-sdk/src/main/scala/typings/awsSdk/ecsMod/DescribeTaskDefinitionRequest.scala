@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTaskDefinitionRequest extends js.Object {
+trait DescribeTaskDefinitionRequest extends StObject {
   
   /**
     * Specifies whether to see the resource tags for the task definition. If TAGS is specified, the tags are included in the response. If this field is omitted, tags are not included in the response.
@@ -26,30 +27,18 @@ object DescribeTaskDefinitionRequest {
   }
   
   @scala.inline
-  implicit class DescribeTaskDefinitionRequestOps[Self <: DescribeTaskDefinitionRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeTaskDefinitionRequestMutableBuilder[Self <: DescribeTaskDefinitionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInclude(value: TaskDefinitionFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeVarargs(value: TaskDefinitionField*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeVarargs(value: TaskDefinitionField*): Self = this.set("include", js.Array(value :_*))
-    
-    @scala.inline
-    def setInclude(value: TaskDefinitionFieldList): Self = this.set("include", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
   }
 }

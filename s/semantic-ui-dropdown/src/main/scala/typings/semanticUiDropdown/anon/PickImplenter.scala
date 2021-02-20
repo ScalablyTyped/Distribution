@@ -1,12 +1,13 @@
 package typings.semanticUiDropdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.KeySettings._Impl, 'enter'> */
 @js.native
-trait PickImplenter extends js.Object {
+trait PickImplenter extends StObject {
   
   var enter: Double = js.native
 }
@@ -19,21 +20,9 @@ object PickImplenter {
   }
   
   @scala.inline
-  implicit class PickImplenterOps[Self <: PickImplenter] (val x: Self) extends AnyVal {
+  implicit class PickImplenterMutableBuilder[Self <: PickImplenter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnter(value: Double): Self = this.set("enter", value.asInstanceOf[js.Any])
+    def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
   }
 }

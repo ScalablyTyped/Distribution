@@ -1,6 +1,7 @@
 package typings.nodeForge.mod.pki
 
 import typings.nodeForge.mod.asn1.Class
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,48 +26,36 @@ object CertificateField {
   }
   
   @scala.inline
-  implicit class CertificateFieldOps[Self <: CertificateField] (val x: Self) extends AnyVal {
+  implicit class CertificateFieldMutableBuilder[Self <: CertificateField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensions(value: js.Array[_]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionsVarargs(value: js.Any*): Self = this.set("extensions", js.Array(value :_*))
+    def setValue(value: js.Array[_] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[_]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setValueConstructed(value: Boolean): Self = StObject.set(x, "valueConstructed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setValueConstructedUndefined: Self = StObject.set(x, "valueConstructed", js.undefined)
     
     @scala.inline
-    def setValueVarargs(value: js.Any*): Self = this.set("value", js.Array(value :_*))
+    def setValueTagClass(value: Class): Self = StObject.set(x, "valueTagClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Array[_] | String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValueTagClassUndefined: Self = StObject.set(x, "valueTagClass", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def setValueConstructed(value: Boolean): Self = this.set("valueConstructed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueConstructed: Self = this.set("valueConstructed", js.undefined)
-    
-    @scala.inline
-    def setValueTagClass(value: Class): Self = this.set("valueTagClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueTagClass: Self = this.set("valueTagClass", js.undefined)
+    def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

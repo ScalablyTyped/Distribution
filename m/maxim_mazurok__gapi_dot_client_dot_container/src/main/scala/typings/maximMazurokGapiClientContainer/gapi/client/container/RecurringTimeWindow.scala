@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecurringTimeWindow extends js.Object {
+trait RecurringTimeWindow extends StObject {
   
   /**
     * An RRULE (https://tools.ietf.org/html/rfc5545#section-3.8.5.3) for how this window reccurs. They go on for the span of time between the start and end time. For example, to have
@@ -30,30 +31,18 @@ object RecurringTimeWindow {
   }
   
   @scala.inline
-  implicit class RecurringTimeWindowOps[Self <: RecurringTimeWindow] (val x: Self) extends AnyVal {
+  implicit class RecurringTimeWindowMutableBuilder[Self <: RecurringTimeWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecurrence(value: String): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWindow(value: TimeWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrence(value: String): Self = this.set("recurrence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecurrence: Self = this.set("recurrence", js.undefined)
-    
-    @scala.inline
-    def setWindow(value: TimeWindow): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

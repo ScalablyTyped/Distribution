@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateStreamInput extends js.Object {
+trait CreateStreamInput extends StObject {
   
   /**
     * The number of shards that the stream will use. The throughput of the stream is a function of the number of shards; more shards are required for greater provisioned throughput.
@@ -26,24 +27,12 @@ object CreateStreamInput {
   }
   
   @scala.inline
-  implicit class CreateStreamInputOps[Self <: CreateStreamInput] (val x: Self) extends AnyVal {
+  implicit class CreateStreamInputMutableBuilder[Self <: CreateStreamInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "ShardCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShardCount(value: PositiveIntegerObject): Self = this.set("ShardCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

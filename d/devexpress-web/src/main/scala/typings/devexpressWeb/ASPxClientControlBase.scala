@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Serves as the base type for all the objects included in the client-side object model.
   */
 @js.native
-trait ASPxClientControlBase extends js.Object {
+trait ASPxClientControlBase extends StObject {
   
   /** @deprecated Use the GetVisible method instead. */
   /**
@@ -84,48 +85,36 @@ object ASPxClientControlBase {
   }
   
   @scala.inline
-  implicit class ASPxClientControlBaseOps[Self <: ASPxClientControlBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientControlBaseMutableBuilder[Self <: ASPxClientControlBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetClientVisible(value: () => Boolean): Self = StObject.set(x, "GetClientVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMainElement(value: () => js.Any): Self = StObject.set(x, "GetMainElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetParentControl(value: () => js.Any): Self = StObject.set(x, "GetParentControl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClientVisible(value: () => Boolean): Self = this.set("GetClientVisible", js.Any.fromFunction0(value))
+    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMainElement(value: () => js.Any): Self = this.set("GetMainElement", js.Any.fromFunction0(value))
+    def setInCallback(value: () => Boolean): Self = StObject.set(x, "InCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParentControl(value: () => js.Any): Self = this.set("GetParentControl", js.Any.fromFunction0(value))
+    def setInit(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]]): Self = StObject.set(x, "Init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVisible(value: () => Boolean): Self = this.set("GetVisible", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInCallback(value: () => Boolean): Self = this.set("InCallback", js.Any.fromFunction0(value))
+    def setSendMessageToAssistiveTechnology(value: String => Unit): Self = StObject.set(x, "SendMessageToAssistiveTechnology", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInit(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]]): Self = this.set("Init", value.asInstanceOf[js.Any])
+    def setSetClientVisible(value: Boolean => Unit): Self = StObject.set(x, "SetClientVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSendMessageToAssistiveTechnology(value: String => Unit): Self = this.set("SendMessageToAssistiveTechnology", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetClientVisible(value: Boolean => Unit): Self = this.set("SetClientVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("SetVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
   }
 }

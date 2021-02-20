@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryRetrievalJobInput extends js.Object {
+trait InventoryRetrievalJobInput extends StObject {
   
   /**
     * The end of the date range in UTC for vault inventory retrieval that includes archives created before this date. This value should be a string in the ISO 8601 date format, for example 2013-03-20T17:03:43Z.
@@ -36,42 +37,30 @@ object InventoryRetrievalJobInput {
   }
   
   @scala.inline
-  implicit class InventoryRetrievalJobInputOps[Self <: InventoryRetrievalJobInput] (val x: Self) extends AnyVal {
+  implicit class InventoryRetrievalJobInputMutableBuilder[Self <: InventoryRetrievalJobInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDate(value: String): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: String): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: String): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: String): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setStartDate(value: String): Self = this.set("StartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
   }
 }

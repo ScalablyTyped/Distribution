@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRulesPackagesRequest extends js.Object {
+trait DescribeRulesPackagesRequest extends StObject {
   
   /**
     * The locale that you want to translate a rules package description into.
@@ -26,30 +27,18 @@ object DescribeRulesPackagesRequest {
   }
   
   @scala.inline
-  implicit class DescribeRulesPackagesRequestOps[Self <: DescribeRulesPackagesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeRulesPackagesRequestMutableBuilder[Self <: DescribeRulesPackagesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRulesPackageArns(value: BatchDescribeArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesPackageArnsVarargs(value: Arn*): Self = this.set("rulesPackageArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setRulesPackageArns(value: BatchDescribeArnList): Self = this.set("rulesPackageArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocale(value: Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
   }
 }

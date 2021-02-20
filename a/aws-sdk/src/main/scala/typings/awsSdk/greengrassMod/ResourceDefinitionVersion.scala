@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceDefinitionVersion extends js.Object {
+trait ResourceDefinitionVersion extends StObject {
   
   /**
     * A list of resources.
@@ -21,27 +22,15 @@ object ResourceDefinitionVersion {
   }
   
   @scala.inline
-  implicit class ResourceDefinitionVersionOps[Self <: ResourceDefinitionVersion] (val x: Self) extends AnyVal {
+  implicit class ResourceDefinitionVersionMutableBuilder[Self <: ResourceDefinitionVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResources(value: listOfResource): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourcesVarargs(value: Resource*): Self = this.set("Resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setResources(value: listOfResource): Self = this.set("Resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
   }
 }

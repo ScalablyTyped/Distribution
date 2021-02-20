@@ -1,11 +1,12 @@
 package typings.aureliaBinding.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Binding extends js.Object {
+trait Binding extends StObject {
   
   /**
     * Connects the binding to a scope.
@@ -61,60 +62,48 @@ object Binding {
   }
   
   @scala.inline
-  implicit class BindingOps[Self <: Binding] (val x: Self) extends AnyVal {
+  implicit class BindingMutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBind(value: Scope => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallSource(value: /* event */ js.Any => _): Self = StObject.set(x, "callSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallSourceUndefined: Self = StObject.set(x, "callSource", js.undefined)
     
     @scala.inline
-    def setBind(value: Scope => Unit): Self = this.set("bind", js.Any.fromFunction1(value))
+    def setIsBound(value: Boolean): Self = StObject.set(x, "isBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBound(value: Boolean): Self = this.set("isBound", value.asInstanceOf[js.Any])
+    def setMode(value: bindingMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Scope): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setUnbind(value: () => Unit): Self = this.set("unbind", js.Any.fromFunction0(value))
+    def setSource(value: Scope): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallSource(value: /* event */ js.Any => _): Self = this.set("callSource", js.Any.fromFunction1(value))
+    def setSourceExpression(value: Expression): Self = StObject.set(x, "sourceExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallSource: Self = this.set("callSource", js.undefined)
+    def setSourceExpressionUndefined: Self = StObject.set(x, "sourceExpression", js.undefined)
     
     @scala.inline
-    def setMode(value: bindingMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setUpdateSource(value: /* value */ js.Any => Unit): Self = StObject.set(x, "updateSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSourceExpression(value: Expression): Self = this.set("sourceExpression", value.asInstanceOf[js.Any])
+    def setUpdateSourceUndefined: Self = StObject.set(x, "updateSource", js.undefined)
     
     @scala.inline
-    def deleteSourceExpression: Self = this.set("sourceExpression", js.undefined)
+    def setUpdateTarget(value: /* value */ js.Any => Unit): Self = StObject.set(x, "updateTarget", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdateSource(value: /* value */ js.Any => Unit): Self = this.set("updateSource", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpdateSource: Self = this.set("updateSource", js.undefined)
-    
-    @scala.inline
-    def setUpdateTarget(value: /* value */ js.Any => Unit): Self = this.set("updateTarget", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpdateTarget: Self = this.set("updateTarget", js.undefined)
+    def setUpdateTargetUndefined: Self = StObject.set(x, "updateTarget", js.undefined)
   }
 }

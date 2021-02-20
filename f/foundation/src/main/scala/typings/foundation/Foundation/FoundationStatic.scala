@@ -4,12 +4,13 @@ import typings.foundation.JQuery
 import typings.foundation.anon.Addcustomrule
 import typings.foundation.anon.Namespace
 import typings.std.CSSStyleSheet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FoundationStatic extends js.Object {
+trait FoundationStatic extends StObject {
   
   var global: Namespace = js.native
   

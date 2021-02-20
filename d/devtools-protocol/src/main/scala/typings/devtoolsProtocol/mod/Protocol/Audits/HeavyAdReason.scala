@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Audits
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.CpuTotalLimit
   - typings.devtoolsProtocol.devtoolsProtocolStrings.CpuPeakLimit
 */
-trait HeavyAdReason extends js.Object
+trait HeavyAdReason extends StObject
 object HeavyAdReason {
   
   @scala.inline

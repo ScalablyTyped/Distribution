@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BodyColor extends js.Object {
+trait BodyColor extends StObject {
   
   var bodyColor: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object BodyColor {
   }
   
   @scala.inline
-  implicit class BodyColorOps[Self <: BodyColor] (val x: Self) extends AnyVal {
+  implicit class BodyColorMutableBuilder[Self <: BodyColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyColor(value: String): Self = StObject.set(x, "bodyColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyColorUndefined: Self = StObject.set(x, "bodyColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyFontSize(value: Double): Self = StObject.set(x, "bodyFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyColor(value: String): Self = this.set("bodyColor", value.asInstanceOf[js.Any])
+    def setBodyFontSizeUndefined: Self = StObject.set(x, "bodyFontSize", js.undefined)
     
     @scala.inline
-    def deleteBodyColor: Self = this.set("bodyColor", js.undefined)
+    def setTitleFontSize(value: Double): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyFontSize(value: Double): Self = this.set("bodyFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBodyFontSize: Self = this.set("bodyFontSize", js.undefined)
-    
-    @scala.inline
-    def setTitleFontSize(value: Double): Self = this.set("titleFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleFontSize: Self = this.set("titleFontSize", js.undefined)
+    def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
   }
 }

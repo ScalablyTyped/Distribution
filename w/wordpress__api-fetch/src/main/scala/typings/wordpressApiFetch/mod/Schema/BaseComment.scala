@@ -6,6 +6,7 @@ import typings.wordpressApiFetch.wordpressApiFetchStrings.approved
 import typings.wordpressApiFetch.wordpressApiFetchStrings.hold
 import typings.wordpressApiFetch.wordpressApiFetchStrings.spam
 import typings.wordpressApiFetch.wordpressApiFetchStrings.trash
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,72 +77,60 @@ object BaseComment {
   }
   
   @scala.inline
-  implicit class BaseCommentOps[Self <: BaseComment[_], T /* <: Context */] (val x: Self with BaseComment[T]) extends AnyVal {
+  implicit class BaseCommentMutableBuilder[Self <: BaseComment[_], T /* <: Context */] (val x: Self with BaseComment[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthor_avatar_urls(value: Record[Double, String]): Self = StObject.set(x, "author_avatar_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor_email(value: String): Self = StObject.set(x, "author_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: Double): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setAuthor_ip(value: String): Self = StObject.set(x, "author_ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor_avatar_urls(value: Record[Double, String]): Self = this.set("author_avatar_urls", value.asInstanceOf[js.Any])
+    def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor_email(value: String): Self = this.set("author_email", value.asInstanceOf[js.Any])
+    def setAuthor_url(value: String): Self = StObject.set(x, "author_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor_ip(value: String): Self = this.set("author_ip", value.asInstanceOf[js.Any])
+    def setAuthor_user_agent(value: String): Self = StObject.set(x, "author_user_agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor_name(value: String): Self = this.set("author_name", value.asInstanceOf[js.Any])
+    def setContent(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor_url(value: String): Self = this.set("author_url", value.asInstanceOf[js.Any])
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor_user_agent(value: String): Self = this.set("author_user_agent", value.asInstanceOf[js.Any])
+    def setDate_gmt(value: String): Self = StObject.set(x, "date_gmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Contextual[T, js.Object, js.Object]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate_gmt(value: String): Self = this.set("date_gmt", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMetaVarargs(value: js.Any*): Self = StObject.set(x, "meta", js.Array(value :_*))
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaVarargs(value: js.Any*): Self = this.set("meta", js.Array(value :_*))
+    def setPost(value: Double): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setStatus(value: approved | hold | spam | trash): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Double): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPost(value: Double): Self = this.set("post", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: approved | hold | spam | trash): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

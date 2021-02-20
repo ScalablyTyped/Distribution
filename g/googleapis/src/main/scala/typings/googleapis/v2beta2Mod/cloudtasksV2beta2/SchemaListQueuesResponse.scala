@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for ListQueues.
   */
 @js.native
-trait SchemaListQueuesResponse extends js.Object {
+trait SchemaListQueuesResponse extends StObject {
   
   /**
     * A token to retrieve next page of results.  To return the next page of
@@ -32,33 +33,21 @@ object SchemaListQueuesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListQueuesResponseOps[Self <: SchemaListQueuesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListQueuesResponseMutableBuilder[Self <: SchemaListQueuesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueues(value: js.Array[SchemaQueue]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setQueuesVarargs(value: SchemaQueue*): Self = this.set("queues", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueues(value: js.Array[SchemaQueue]): Self = this.set("queues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueues: Self = this.set("queues", js.undefined)
+    def setQueuesVarargs(value: SchemaQueue*): Self = StObject.set(x, "queues", js.Array(value :_*))
   }
 }

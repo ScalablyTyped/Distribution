@@ -1,12 +1,13 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VictoryPortalProps extends js.Object {
+trait VictoryPortalProps extends StObject {
   
   /**
     * The children of this component define the content of the label.
@@ -28,30 +29,18 @@ object VictoryPortalProps {
   }
   
   @scala.inline
-  implicit class VictoryPortalPropsOps[Self <: VictoryPortalProps] (val x: Self) extends AnyVal {
+  implicit class VictoryPortalPropsMutableBuilder[Self <: VictoryPortalProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactElement): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
-    
-    @scala.inline
-    def setGroupComponent(value: ReactElement): Self = this.set("groupComponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupComponent: Self = this.set("groupComponent", js.undefined)
+    def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
   }
 }

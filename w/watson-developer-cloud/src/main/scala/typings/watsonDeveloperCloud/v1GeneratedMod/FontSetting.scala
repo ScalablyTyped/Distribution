@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FontSetting. */
 @js.native
-trait FontSetting extends js.Object {
+trait FontSetting extends StObject {
   
   /** When `true`, the font is matched if it is bold. */
   var bold: js.UndefOr[Boolean] = js.native
@@ -35,54 +36,42 @@ object FontSetting {
   }
   
   @scala.inline
-  implicit class FontSettingOps[Self <: FontSetting] (val x: Self) extends AnyVal {
+  implicit class FontSettingMutableBuilder[Self <: FontSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
     @scala.inline
-    def deleteBold: Self = this.set("bold", js.undefined)
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteItalic: Self = this.set("italic", js.undefined)
+    def setMax_size(value: Double): Self = StObject.set(x, "max_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMax_sizeUndefined: Self = StObject.set(x, "max_size", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setMin_size(value: Double): Self = StObject.set(x, "min_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_size(value: Double): Self = this.set("max_size", value.asInstanceOf[js.Any])
+    def setMin_sizeUndefined: Self = StObject.set(x, "min_size", js.undefined)
     
     @scala.inline
-    def deleteMax_size: Self = this.set("max_size", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_size(value: Double): Self = this.set("min_size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin_size: Self = this.set("min_size", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

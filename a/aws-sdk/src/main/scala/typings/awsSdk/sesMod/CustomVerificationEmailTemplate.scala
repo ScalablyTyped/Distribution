@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomVerificationEmailTemplate extends js.Object {
+trait CustomVerificationEmailTemplate extends StObject {
   
   /**
     * The URL that the recipient of the verification email is sent to if his or her address is not successfully verified.
@@ -41,48 +42,36 @@ object CustomVerificationEmailTemplate {
   }
   
   @scala.inline
-  implicit class CustomVerificationEmailTemplateOps[Self <: CustomVerificationEmailTemplate] (val x: Self) extends AnyVal {
+  implicit class CustomVerificationEmailTemplateMutableBuilder[Self <: CustomVerificationEmailTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureRedirectionURL(value: FailureRedirectionURL): Self = StObject.set(x, "FailureRedirectionURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureRedirectionURLUndefined: Self = StObject.set(x, "FailureRedirectionURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromEmailAddress(value: FromAddress): Self = StObject.set(x, "FromEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureRedirectionURL(value: FailureRedirectionURL): Self = this.set("FailureRedirectionURL", value.asInstanceOf[js.Any])
+    def setFromEmailAddressUndefined: Self = StObject.set(x, "FromEmailAddress", js.undefined)
     
     @scala.inline
-    def deleteFailureRedirectionURL: Self = this.set("FailureRedirectionURL", js.undefined)
+    def setSuccessRedirectionURL(value: SuccessRedirectionURL): Self = StObject.set(x, "SuccessRedirectionURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromEmailAddress(value: FromAddress): Self = this.set("FromEmailAddress", value.asInstanceOf[js.Any])
+    def setSuccessRedirectionURLUndefined: Self = StObject.set(x, "SuccessRedirectionURL", js.undefined)
     
     @scala.inline
-    def deleteFromEmailAddress: Self = this.set("FromEmailAddress", js.undefined)
+    def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessRedirectionURL(value: SuccessRedirectionURL): Self = this.set("SuccessRedirectionURL", value.asInstanceOf[js.Any])
+    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
     @scala.inline
-    def deleteSuccessRedirectionURL: Self = this.set("SuccessRedirectionURL", js.undefined)
+    def setTemplateSubject(value: Subject): Self = StObject.set(x, "TemplateSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: TemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
-    
-    @scala.inline
-    def setTemplateSubject(value: Subject): Self = this.set("TemplateSubject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateSubject: Self = this.set("TemplateSubject", js.undefined)
+    def setTemplateSubjectUndefined: Self = StObject.set(x, "TemplateSubject", js.undefined)
   }
 }

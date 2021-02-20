@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsIamConfig extends js.Object {
+trait AwsIamConfig extends StObject {
   
   /**
     * The signing region for AWS IAM authorization.
@@ -26,30 +27,18 @@ object AwsIamConfig {
   }
   
   @scala.inline
-  implicit class AwsIamConfigOps[Self <: AwsIamConfig] (val x: Self) extends AnyVal {
+  implicit class AwsIamConfigMutableBuilder[Self <: AwsIamConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSigningServiceName(value: String): Self = StObject.set(x, "signingServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningRegion(value: String): Self = this.set("signingRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigningRegion: Self = this.set("signingRegion", js.undefined)
-    
-    @scala.inline
-    def setSigningServiceName(value: String): Self = this.set("signingServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigningServiceName: Self = this.set("signingServiceName", js.undefined)
+    def setSigningServiceNameUndefined: Self = StObject.set(x, "signingServiceName", js.undefined)
   }
 }

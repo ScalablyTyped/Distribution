@@ -1,11 +1,12 @@
 package typings.jqueryFileupload
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JqueryFileUploadConvenienceObject extends js.Object {
+trait JqueryFileUploadConvenienceObject extends StObject {
   
   def abort(): JqueryFileUploadEnhancedPromise[_] = js.native
   

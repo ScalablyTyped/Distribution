@@ -1,18 +1,22 @@
 package typings.fullcalendarVue
 
+import org.scalablytyped.runtime.Shortcut
 import typings.fullcalendarVue.optionsMod.CalendarProps
 import typings.vue.optionsMod.Component
 import typings.vue.vueMod.Vue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fullcalendar/vue", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("@fullcalendar/vue", JSImport.Default)
+  @js.native
   val default: Component[js.Any, js.Any, js.Any, CalendarProps] = js.native
   
+  @JSImport("@fullcalendar/vue", "install")
+  @js.native
   def install(Vue: js.Function0[_]): Unit = js.native
   
   @js.native
@@ -26,4 +30,9 @@ object mod extends js.Object {
     
     def renderDirty(): Unit = js.native
   }
+  
+  type _To = Component[js.Any, js.Any, js.Any, CalendarProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: Component[js.Any, js.Any, js.Any, CalendarProps] = default
 }

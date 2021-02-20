@@ -2,6 +2,7 @@ package typings.carbonComponents.componentsMod
 
 import typings.carbonComponents.productSwitcherMod.default
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ProductSwitcher protected () extends default {
   def this(element: js.Any, options: js.Any) = this()
 }
-/* static members */
-@JSImport("carbon-components/globals/js/components", "ProductSwitcher")
-@js.native
-object ProductSwitcher extends js.Object {
+object ProductSwitcher {
   
-  var SELECT_NONE: String = js.native
+  @JSImport("carbon-components/globals/js/components", "ProductSwitcher")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var components: WeakMap[js.Object, _] = js.native
+  /* static member */
+  @JSImport("carbon-components/globals/js/components", "ProductSwitcher.SELECT_NONE")
+  @js.native
+  def SELECT_NONE: String = js.native
+  @scala.inline
+  def SELECT_NONE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECT_NONE")(x.asInstanceOf[js.Any])
   
-  def options: js.Any = js.native
+  /* static member */
+  @JSImport("carbon-components/globals/js/components", "ProductSwitcher.components")
+  @js.native
+  def components: WeakMap[js.Object, js.Any] = js.native
+  @scala.inline
+  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

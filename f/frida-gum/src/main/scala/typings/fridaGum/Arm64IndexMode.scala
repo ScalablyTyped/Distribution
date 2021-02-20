@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.fridaGumStrings.`signed-offset`
   - typings.fridaGum.fridaGumStrings.`pre-adjust`
 */
-trait Arm64IndexMode extends js.Object
+trait Arm64IndexMode extends StObject
 object Arm64IndexMode {
   
   @scala.inline

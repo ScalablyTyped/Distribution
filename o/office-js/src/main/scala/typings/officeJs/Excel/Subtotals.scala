@@ -1,5 +1,6 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait Subtotals extends js.Object {
+trait Subtotals extends StObject {
   
   /**
     *
@@ -52,90 +53,78 @@ object Subtotals {
   }
   
   @scala.inline
-  implicit class SubtotalsOps[Self <: Subtotals] (val x: Self) extends AnyVal {
+  implicit class SubtotalsMutableBuilder[Self <: Subtotals] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAverage(value: Boolean): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatic(value: Boolean): Self = this.set("automatic", value.asInstanceOf[js.Any])
+    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
     @scala.inline
-    def deleteAutomatic: Self = this.set("automatic", js.undefined)
+    def setCount(value: Boolean): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverage(value: Boolean): Self = this.set("average", value.asInstanceOf[js.Any])
+    def setCountNumbers(value: Boolean): Self = StObject.set(x, "countNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverage: Self = this.set("average", js.undefined)
+    def setCountNumbersUndefined: Self = StObject.set(x, "countNumbers", js.undefined)
     
     @scala.inline
-    def setCount(value: Boolean): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountNumbers(value: Boolean): Self = this.set("countNumbers", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteCountNumbers: Self = this.set("countNumbers", js.undefined)
+    def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Boolean): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setProduct(value: Boolean): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Boolean): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setStandardDeviation(value: Boolean): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: Boolean): Self = this.set("product", value.asInstanceOf[js.Any])
+    def setStandardDeviationP(value: Boolean): Self = StObject.set(x, "standardDeviationP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
+    def setStandardDeviationPUndefined: Self = StObject.set(x, "standardDeviationP", js.undefined)
     
     @scala.inline
-    def setStandardDeviation(value: Boolean): Self = this.set("standardDeviation", value.asInstanceOf[js.Any])
+    def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
     
     @scala.inline
-    def deleteStandardDeviation: Self = this.set("standardDeviation", js.undefined)
+    def setSum(value: Boolean): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardDeviationP(value: Boolean): Self = this.set("standardDeviationP", value.asInstanceOf[js.Any])
+    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
     
     @scala.inline
-    def deleteStandardDeviationP: Self = this.set("standardDeviationP", js.undefined)
+    def setVariance(value: Boolean): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSum(value: Boolean): Self = this.set("sum", value.asInstanceOf[js.Any])
+    def setVarianceP(value: Boolean): Self = StObject.set(x, "varianceP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSum: Self = this.set("sum", js.undefined)
+    def setVariancePUndefined: Self = StObject.set(x, "varianceP", js.undefined)
     
     @scala.inline
-    def setVariance(value: Boolean): Self = this.set("variance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariance: Self = this.set("variance", js.undefined)
-    
-    @scala.inline
-    def setVarianceP(value: Boolean): Self = this.set("varianceP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVarianceP: Self = this.set("varianceP", js.undefined)
+    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
   }
 }

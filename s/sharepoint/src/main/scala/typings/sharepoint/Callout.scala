@@ -1,12 +1,13 @@
 package typings.sharepoint
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Callout extends js.Object {
+trait Callout extends StObject {
   
   /** Adds a link to the actions panel in the bottom part of the callout window */
   def addAction(action: CalloutAction): Unit = js.native
@@ -115,90 +116,78 @@ object Callout {
   }
   
   @scala.inline
-  implicit class CalloutOps[Self <: Callout] (val x: Self) extends AnyVal {
+  implicit class CalloutMutableBuilder[Self <: Callout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAction(value: CalloutAction => Unit): Self = StObject.set(x, "addAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddEventCallback(value: (String, js.Function1[Callout, Unit]) => Unit): Self = StObject.set(x, "addEventCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: Boolean => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddAction(value: CalloutAction => Unit): Self = this.set("addAction", js.Any.fromFunction1(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddEventCallback(value: (String, js.Function1[Callout, Unit]) => Unit): Self = this.set("addEventCallback", js.Any.fromFunction2(value))
+    def setGetActionMenu(value: () => CalloutActionMenu): Self = StObject.set(x, "getActionMenu", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: Boolean => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    def setGetBeakOrientation(value: () => String): Self = StObject.set(x, "getBeakOrientation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setGetBoundingBox(value: () => HTMLElement): Self = StObject.set(x, "getBoundingBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActionMenu(value: () => CalloutActionMenu): Self = this.set("getActionMenu", js.Any.fromFunction0(value))
+    def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBeakOrientation(value: () => String): Self = this.set("getBeakOrientation", js.Any.fromFunction0(value))
+    def setGetContentElement(value: () => HTMLElement): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBoundingBox(value: () => HTMLElement): Self = this.set("getBoundingBox", js.Any.fromFunction0(value))
+    def setGetContentWidth(value: () => Double): Self = StObject.set(x, "getContentWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContent(value: () => String): Self = this.set("getContent", js.Any.fromFunction0(value))
+    def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContentElement(value: () => HTMLElement): Self = this.set("getContentElement", js.Any.fromFunction0(value))
+    def setGetLaunchPoint(value: () => HTMLElement): Self = StObject.set(x, "getLaunchPoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContentWidth(value: () => Double): Self = this.set("getContentWidth", js.Any.fromFunction0(value))
+    def setGetOpenOptions(value: () => CalloutOpenOptions): Self = StObject.set(x, "getOpenOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetID(value: () => String): Self = this.set("getID", js.Any.fromFunction0(value))
+    def setGetPositionAlgorithm(value: () => js.Any): Self = StObject.set(x, "getPositionAlgorithm", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLaunchPoint(value: () => HTMLElement): Self = this.set("getLaunchPoint", js.Any.fromFunction0(value))
+    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOpenOptions(value: () => CalloutOpenOptions): Self = this.set("getOpenOptions", js.Any.fromFunction0(value))
+    def setIsClosed(value: () => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPositionAlgorithm(value: () => js.Any): Self = this.set("getPositionAlgorithm", js.Any.fromFunction0(value))
+    def setIsClosing(value: () => Boolean): Self = StObject.set(x, "isClosing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsClosed(value: () => Boolean): Self = this.set("isClosed", js.Any.fromFunction0(value))
+    def setIsOpenOrOpening(value: () => Boolean): Self = StObject.set(x, "isOpenOrOpening", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsClosing(value: () => Boolean): Self = this.set("isClosing", js.Any.fromFunction0(value))
+    def setIsOpening(value: () => Boolean): Self = StObject.set(x, "isOpening", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsOpen(value: () => Boolean): Self = this.set("isOpen", js.Any.fromFunction0(value))
+    def setOpen(value: Boolean => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsOpenOrOpening(value: () => Boolean): Self = this.set("isOpenOrOpening", js.Any.fromFunction0(value))
+    def setRefreshActions(value: () => Unit): Self = StObject.set(x, "refreshActions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsOpening(value: () => Boolean): Self = this.set("isOpening", js.Any.fromFunction0(value))
+    def setSet(value: CalloutOptions => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpen(value: Boolean => Unit): Self = this.set("open", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRefreshActions(value: () => Unit): Self = this.set("refreshActions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: CalloutOptions => js.Any): Self = this.set("set", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
+    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

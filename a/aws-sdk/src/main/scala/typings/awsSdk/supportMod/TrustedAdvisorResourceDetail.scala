@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrustedAdvisorResourceDetail extends js.Object {
+trait TrustedAdvisorResourceDetail extends StObject {
   
   /**
     * Specifies whether the AWS resource was ignored by Trusted Advisor because it was marked as suppressed by the user.
@@ -41,42 +42,30 @@ object TrustedAdvisorResourceDetail {
   }
   
   @scala.inline
-  implicit class TrustedAdvisorResourceDetailOps[Self <: TrustedAdvisorResourceDetail] (val x: Self) extends AnyVal {
+  implicit class TrustedAdvisorResourceDetailMutableBuilder[Self <: TrustedAdvisorResourceDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsSuppressed(value: Boolean): Self = StObject.set(x, "isSuppressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsSuppressedUndefined: Self = StObject.set(x, "isSuppressed", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: StringList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataVarargs(value: String*): Self = this.set("metadata", js.Array(value :_*))
+    def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
     @scala.inline
-    def setMetadata(value: StringList): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSuppressed(value: Boolean): Self = this.set("isSuppressed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSuppressed: Self = this.set("isSuppressed", js.undefined)
-    
-    @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

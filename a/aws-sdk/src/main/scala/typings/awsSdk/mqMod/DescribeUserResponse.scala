@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeUserResponse extends js.Object {
+trait DescribeUserResponse extends StObject {
   
   /**
     * Required. The unique ID that Amazon MQ generates for the broker.
@@ -41,51 +42,39 @@ object DescribeUserResponse {
   }
   
   @scala.inline
-  implicit class DescribeUserResponseOps[Self <: DescribeUserResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeUserResponseMutableBuilder[Self <: DescribeUserResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrokerIdUndefined: Self = StObject.set(x, "BrokerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsoleAccess(value: boolean): Self = StObject.set(x, "ConsoleAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    def setConsoleAccessUndefined: Self = StObject.set(x, "ConsoleAccess", js.undefined)
     
     @scala.inline
-    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+    def setGroups(value: listOfString): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsoleAccess(value: boolean): Self = this.set("ConsoleAccess", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
     @scala.inline
-    def deleteConsoleAccess: Self = this.set("ConsoleAccess", js.undefined)
+    def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: string*): Self = this.set("Groups", js.Array(value :_*))
+    def setPending(value: UserPendingChanges): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: listOfString): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("Groups", js.undefined)
+    def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: UserPendingChanges): Self = this.set("Pending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePending: Self = this.set("Pending", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: string): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

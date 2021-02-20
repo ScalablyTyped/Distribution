@@ -1,11 +1,12 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignedTransaction extends js.Object {
+trait SignedTransaction extends StObject {
   
   var serializedTx: String = js.native
   
@@ -22,33 +23,21 @@ object SignedTransaction {
   }
   
   @scala.inline
-  implicit class SignedTransactionOps[Self <: SignedTransaction] (val x: Self) extends AnyVal {
+  implicit class SignedTransactionMutableBuilder[Self <: SignedTransaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSerializedTx(value: String): Self = StObject.set(x, "serializedTx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignatures(value: js.Array[String]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignaturesVarargs(value: String*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
     @scala.inline
-    def setSerializedTx(value: String): Self = this.set("serializedTx", value.asInstanceOf[js.Any])
+    def setTxId(value: String): Self = StObject.set(x, "txId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignaturesVarargs(value: String*): Self = this.set("signatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignatures(value: js.Array[String]): Self = this.set("signatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTxId(value: String): Self = this.set("txId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTxId: Self = this.set("txId", js.undefined)
+    def setTxIdUndefined: Self = StObject.set(x, "txId", js.undefined)
   }
 }

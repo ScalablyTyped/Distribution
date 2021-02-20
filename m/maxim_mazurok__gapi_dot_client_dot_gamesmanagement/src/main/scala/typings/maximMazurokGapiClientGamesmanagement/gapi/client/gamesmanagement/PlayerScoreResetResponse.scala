@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlayerScoreResetResponse extends js.Object {
+trait PlayerScoreResetResponse extends StObject {
   
   /** The ID of an leaderboard for which player state has been updated. */
   var definitionId: js.UndefOr[String] = js.native
@@ -28,39 +29,27 @@ object PlayerScoreResetResponse {
   }
   
   @scala.inline
-  implicit class PlayerScoreResetResponseOps[Self <: PlayerScoreResetResponse] (val x: Self) extends AnyVal {
+  implicit class PlayerScoreResetResponseMutableBuilder[Self <: PlayerScoreResetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionId(value: String): Self = this.set("definitionId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDefinitionId: Self = this.set("definitionId", js.undefined)
+    def setResetScoreTimeSpans(value: js.Array[String]): Self = StObject.set(x, "resetScoreTimeSpans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setResetScoreTimeSpansUndefined: Self = StObject.set(x, "resetScoreTimeSpans", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setResetScoreTimeSpansVarargs(value: String*): Self = this.set("resetScoreTimeSpans", js.Array(value :_*))
-    
-    @scala.inline
-    def setResetScoreTimeSpans(value: js.Array[String]): Self = this.set("resetScoreTimeSpans", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResetScoreTimeSpans: Self = this.set("resetScoreTimeSpans", js.undefined)
+    def setResetScoreTimeSpansVarargs(value: String*): Self = StObject.set(x, "resetScoreTimeSpans", js.Array(value :_*))
   }
 }

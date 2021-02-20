@@ -1,12 +1,13 @@
 package typings.igniteUi
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotGridHeadersRenderedEventUIParam extends js.Object {
+trait PivotGridHeadersRenderedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the igGrid widget, which holds the headers.
@@ -32,36 +33,24 @@ object PivotGridHeadersRenderedEventUIParam {
   }
   
   @scala.inline
-  implicit class PivotGridHeadersRenderedEventUIParamOps[Self <: PivotGridHeadersRenderedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class PivotGridHeadersRenderedEventUIParamMutableBuilder[Self <: PivotGridHeadersRenderedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: js.Any): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setTable(value: Element): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setTable(value: Element): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

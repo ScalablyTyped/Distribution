@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegexMatchSet extends js.Object {
+trait RegexMatchSet extends StObject {
   
   /**
     * A friendly name or description of the RegexMatchSet. You can't change Name after you create a RegexMatchSet.
@@ -31,39 +32,27 @@ object RegexMatchSet {
   }
   
   @scala.inline
-  implicit class RegexMatchSetOps[Self <: RegexMatchSet] (val x: Self) extends AnyVal {
+  implicit class RegexMatchSetMutableBuilder[Self <: RegexMatchSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRegexMatchSetIdUndefined: Self = StObject.set(x, "RegexMatchSetId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRegexMatchTuples(value: RegexMatchTuples): Self = StObject.set(x, "RegexMatchTuples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexMatchSetId(value: ResourceId): Self = this.set("RegexMatchSetId", value.asInstanceOf[js.Any])
+    def setRegexMatchTuplesUndefined: Self = StObject.set(x, "RegexMatchTuples", js.undefined)
     
     @scala.inline
-    def deleteRegexMatchSetId: Self = this.set("RegexMatchSetId", js.undefined)
-    
-    @scala.inline
-    def setRegexMatchTuplesVarargs(value: RegexMatchTuple*): Self = this.set("RegexMatchTuples", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegexMatchTuples(value: RegexMatchTuples): Self = this.set("RegexMatchTuples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexMatchTuples: Self = this.set("RegexMatchTuples", js.undefined)
+    def setRegexMatchTuplesVarargs(value: RegexMatchTuple*): Self = StObject.set(x, "RegexMatchTuples", js.Array(value :_*))
   }
 }

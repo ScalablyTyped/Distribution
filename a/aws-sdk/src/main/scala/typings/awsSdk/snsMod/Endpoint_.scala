@@ -1,11 +1,12 @@
 package typings.awsSdk.snsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Endpoint_ extends js.Object {
+trait Endpoint_ extends StObject {
   
   /**
     * Attributes for endpoint.
@@ -26,30 +27,18 @@ object Endpoint_ {
   }
   
   @scala.inline
-  implicit class Endpoint_Ops[Self <: Endpoint_] (val x: Self) extends AnyVal {
+  implicit class Endpoint_MutableBuilder[Self <: Endpoint_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: MapStringToString): Self = this.set("Attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
-    
-    @scala.inline
-    def setEndpointArn(value: String): Self = this.set("EndpointArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpointArn: Self = this.set("EndpointArn", js.undefined)
+    def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
   }
 }

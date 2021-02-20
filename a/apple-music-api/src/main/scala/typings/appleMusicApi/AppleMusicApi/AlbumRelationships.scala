@@ -1,12 +1,13 @@
 package typings.appleMusicApi.AppleMusicApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/album/relationships
 @js.native
-trait AlbumRelationships extends js.Object {
+trait AlbumRelationships extends StObject {
   
   var artists: Relationship[Artist] = js.native
   
@@ -23,30 +24,18 @@ object AlbumRelationships {
   }
   
   @scala.inline
-  implicit class AlbumRelationshipsOps[Self <: AlbumRelationships] (val x: Self) extends AnyVal {
+  implicit class AlbumRelationshipsMutableBuilder[Self <: AlbumRelationships] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtists(value: Relationship[Artist]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenres(value: Relationship[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
     @scala.inline
-    def setArtists(value: Relationship[Artist]): Self = this.set("artists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTracks(value: Relationship[Song]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGenres(value: Relationship[Genre]): Self = this.set("genres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenres: Self = this.set("genres", js.undefined)
+    def setTracks(value: Relationship[Song]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }
 }

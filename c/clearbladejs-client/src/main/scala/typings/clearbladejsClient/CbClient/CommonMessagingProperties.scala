@@ -1,11 +1,12 @@
 package typings.clearbladejsClient.CbClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonMessagingProperties extends js.Object {
+trait CommonMessagingProperties extends StObject {
   
   var cleanSession: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object CommonMessagingProperties {
   }
   
   @scala.inline
-  implicit class CommonMessagingPropertiesOps[Self <: CommonMessagingProperties] (val x: Self) extends AnyVal {
+  implicit class CommonMessagingPropertiesMutableBuilder[Self <: CommonMessagingProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCleanSession(value: Boolean): Self = StObject.set(x, "cleanSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCleanSessionUndefined: Self = StObject.set(x, "cleanSession", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHosts(value: String): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCleanSession(value: Boolean): Self = this.set("cleanSession", value.asInstanceOf[js.Any])
+    def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
     
     @scala.inline
-    def deleteCleanSession: Self = this.set("cleanSession", js.undefined)
+    def setOnFailure(value: js.Function): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHosts(value: String): Self = this.set("hosts", value.asInstanceOf[js.Any])
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def deleteHosts: Self = this.set("hosts", js.undefined)
+    def setOnSuccess(value: js.Function): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFailure(value: js.Function): Self = this.set("onFailure", value.asInstanceOf[js.Any])
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
     @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
+    def setPorts(value: String): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSuccess(value: js.Function): Self = this.set("onSuccess", value.asInstanceOf[js.Any])
+    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
     @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    def setUseSSL(value: Boolean): Self = StObject.set(x, "useSSL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPorts(value: String): Self = this.set("ports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePorts: Self = this.set("ports", js.undefined)
-    
-    @scala.inline
-    def setUseSSL(value: Boolean): Self = this.set("useSSL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSSL: Self = this.set("useSSL", js.undefined)
+    def setUseSSLUndefined: Self = StObject.set(x, "useSSL", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.oracleOraclejet.anon
 
 import typings.oracleOraclejet.ojtableMod.ojTable.DragRowContext
 import typings.std.DragEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTypesDrag[K, D] extends js.Object {
+trait DataTypesDrag[K, D] extends StObject {
   
   var dataTypes: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -26,45 +27,33 @@ object DataTypesDrag {
   }
   
   @scala.inline
-  implicit class DataTypesDragOps[Self <: DataTypesDrag[_, _], K, D] (val x: Self with (DataTypesDrag[K, D])) extends AnyVal {
+  implicit class DataTypesDragMutableBuilder[Self <: DataTypesDrag[_, _], K, D] (val x: Self with (DataTypesDrag[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataTypes(value: String | js.Array[String]): Self = StObject.set(x, "dataTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTypesUndefined: Self = StObject.set(x, "dataTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataTypesVarargs(value: String*): Self = StObject.set(x, "dataTypes", js.Array(value :_*))
     
     @scala.inline
-    def setDataTypesVarargs(value: String*): Self = this.set("dataTypes", js.Array(value :_*))
+    def setDrag(value: /* param0 */ DragEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataTypes(value: String | js.Array[String]): Self = this.set("dataTypes", value.asInstanceOf[js.Any])
+    def setDragEnd(value: /* param0 */ DragEvent => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDataTypes: Self = this.set("dataTypes", js.undefined)
+    def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
     
     @scala.inline
-    def setDrag(value: /* param0 */ DragEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setDragStart(value: (/* param0 */ DragEvent, /* param1 */ DragRowContext[K, D]) => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
     
     @scala.inline
-    def setDragEnd(value: /* param0 */ DragEvent => Unit): Self = this.set("dragEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteDragEnd: Self = this.set("dragEnd", js.undefined)
-    
-    @scala.inline
-    def setDragStart(value: (/* param0 */ DragEvent, /* param1 */ DragRowContext[K, D]) => Unit): Self = this.set("dragStart", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteDragStart: Self = this.set("dragStart", js.undefined)
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
   }
 }

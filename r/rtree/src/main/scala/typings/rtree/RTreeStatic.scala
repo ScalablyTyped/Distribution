@@ -1,11 +1,12 @@
 package typings.rtree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTreeStatic extends js.Object {
+trait RTreeStatic extends StObject {
   
   def bbox(arg1: js.Any): js.Array[_] = js.native
   def bbox(arg1: js.Any, arg2: js.UndefOr[scala.Nothing], arg3: js.UndefOr[scala.Nothing], arg4: Double): js.Array[_] = js.native

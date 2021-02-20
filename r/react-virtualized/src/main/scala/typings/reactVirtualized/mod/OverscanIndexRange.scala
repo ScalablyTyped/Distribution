@@ -1,11 +1,12 @@
 package typings.reactVirtualized.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverscanIndexRange extends js.Object {
+trait OverscanIndexRange extends StObject {
   
   var overscanStartIndex: Double = js.native
   
@@ -20,24 +21,12 @@ object OverscanIndexRange {
   }
   
   @scala.inline
-  implicit class OverscanIndexRangeOps[Self <: OverscanIndexRange] (val x: Self) extends AnyVal {
+  implicit class OverscanIndexRangeMutableBuilder[Self <: OverscanIndexRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverscanStartIndex(value: Double): Self = StObject.set(x, "overscanStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOverscanStartIndex(value: Double): Self = this.set("overscanStartIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverscanStopIndex(value: Double): Self = this.set("overscanStopIndex", value.asInstanceOf[js.Any])
+    def setOverscanStopIndex(value: Double): Self = StObject.set(x, "overscanStopIndex", value.asInstanceOf[js.Any])
   }
 }

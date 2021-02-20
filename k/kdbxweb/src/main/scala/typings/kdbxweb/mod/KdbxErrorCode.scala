@@ -1,5 +1,6 @@
 package typings.kdbxweb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.kdbxweb.kdbxwebStrings.MergeError
   - typings.kdbxweb.kdbxwebStrings.FileCorrupt
 */
-trait KdbxErrorCode extends js.Object
+trait KdbxErrorCode extends StObject
 object KdbxErrorCode {
   
   @scala.inline

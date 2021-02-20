@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplaceRouteTableAssociationResult extends js.Object {
+trait ReplaceRouteTableAssociationResult extends StObject {
   
   /**
     * The state of the association.
@@ -26,30 +27,18 @@ object ReplaceRouteTableAssociationResult {
   }
   
   @scala.inline
-  implicit class ReplaceRouteTableAssociationResultOps[Self <: ReplaceRouteTableAssociationResult] (val x: Self) extends AnyVal {
+  implicit class ReplaceRouteTableAssociationResultMutableBuilder[Self <: ReplaceRouteTableAssociationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationState(value: RouteTableAssociationState): Self = StObject.set(x, "AssociationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationStateUndefined: Self = StObject.set(x, "AssociationState", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewAssociationId(value: String): Self = StObject.set(x, "NewAssociationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationState(value: RouteTableAssociationState): Self = this.set("AssociationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssociationState: Self = this.set("AssociationState", js.undefined)
-    
-    @scala.inline
-    def setNewAssociationId(value: String): Self = this.set("NewAssociationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewAssociationId: Self = this.set("NewAssociationId", js.undefined)
+    def setNewAssociationIdUndefined: Self = StObject.set(x, "NewAssociationId", js.undefined)
   }
 }

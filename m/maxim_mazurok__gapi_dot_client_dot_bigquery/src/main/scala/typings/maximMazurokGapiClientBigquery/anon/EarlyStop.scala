@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EarlyStop extends js.Object {
+trait EarlyStop extends StObject {
   
   var earlyStop: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object EarlyStop {
   }
   
   @scala.inline
-  implicit class EarlyStopOps[Self <: EarlyStop] (val x: Self) extends AnyVal {
+  implicit class EarlyStopMutableBuilder[Self <: EarlyStop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEarlyStop(value: Boolean): Self = StObject.set(x, "earlyStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEarlyStopUndefined: Self = StObject.set(x, "earlyStop", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setL1Reg(value: Double): Self = StObject.set(x, "l1Reg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEarlyStop(value: Boolean): Self = this.set("earlyStop", value.asInstanceOf[js.Any])
+    def setL1RegUndefined: Self = StObject.set(x, "l1Reg", js.undefined)
     
     @scala.inline
-    def deleteEarlyStop: Self = this.set("earlyStop", js.undefined)
+    def setL2Reg(value: Double): Self = StObject.set(x, "l2Reg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL1Reg(value: Double): Self = this.set("l1Reg", value.asInstanceOf[js.Any])
+    def setL2RegUndefined: Self = StObject.set(x, "l2Reg", js.undefined)
     
     @scala.inline
-    def deleteL1Reg: Self = this.set("l1Reg", js.undefined)
+    def setLearnRate(value: Double): Self = StObject.set(x, "learnRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL2Reg(value: Double): Self = this.set("l2Reg", value.asInstanceOf[js.Any])
+    def setLearnRateStrategy(value: String): Self = StObject.set(x, "learnRateStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteL2Reg: Self = this.set("l2Reg", js.undefined)
+    def setLearnRateStrategyUndefined: Self = StObject.set(x, "learnRateStrategy", js.undefined)
     
     @scala.inline
-    def setLearnRate(value: Double): Self = this.set("learnRate", value.asInstanceOf[js.Any])
+    def setLearnRateUndefined: Self = StObject.set(x, "learnRate", js.undefined)
     
     @scala.inline
-    def deleteLearnRate: Self = this.set("learnRate", js.undefined)
+    def setLineSearchInitLearnRate(value: Double): Self = StObject.set(x, "lineSearchInitLearnRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLearnRateStrategy(value: String): Self = this.set("learnRateStrategy", value.asInstanceOf[js.Any])
+    def setLineSearchInitLearnRateUndefined: Self = StObject.set(x, "lineSearchInitLearnRate", js.undefined)
     
     @scala.inline
-    def deleteLearnRateStrategy: Self = this.set("learnRateStrategy", js.undefined)
+    def setMaxIteration(value: String): Self = StObject.set(x, "maxIteration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSearchInitLearnRate(value: Double): Self = this.set("lineSearchInitLearnRate", value.asInstanceOf[js.Any])
+    def setMaxIterationUndefined: Self = StObject.set(x, "maxIteration", js.undefined)
     
     @scala.inline
-    def deleteLineSearchInitLearnRate: Self = this.set("lineSearchInitLearnRate", js.undefined)
+    def setMinRelProgress(value: Double): Self = StObject.set(x, "minRelProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxIteration(value: String): Self = this.set("maxIteration", value.asInstanceOf[js.Any])
+    def setMinRelProgressUndefined: Self = StObject.set(x, "minRelProgress", js.undefined)
     
     @scala.inline
-    def deleteMaxIteration: Self = this.set("maxIteration", js.undefined)
+    def setWarmStart(value: Boolean): Self = StObject.set(x, "warmStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinRelProgress(value: Double): Self = this.set("minRelProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinRelProgress: Self = this.set("minRelProgress", js.undefined)
-    
-    @scala.inline
-    def setWarmStart(value: Boolean): Self = this.set("warmStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarmStart: Self = this.set("warmStart", js.undefined)
+    def setWarmStartUndefined: Self = StObject.set(x, "warmStart", js.undefined)
   }
 }

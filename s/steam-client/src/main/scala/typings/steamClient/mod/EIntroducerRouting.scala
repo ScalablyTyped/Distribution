@@ -1,32 +1,29 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EIntroducerRouting extends js.Object
+sealed trait EIntroducerRouting extends StObject
 @JSImport("steam-client", "EIntroducerRouting")
 @js.native
-object EIntroducerRouting extends js.Object {
+object EIntroducerRouting extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EIntroducerRouting with Double] = js.native
   
-   // removed
   @js.native
   sealed trait FileShare extends EIntroducerRouting
-  /* 0 */ @js.native
-  object FileShare extends TopLevel[FileShare with Double]
+  /* 0 */ val FileShare: typings.steamClient.mod.EIntroducerRouting.FileShare with Double = js.native
   
   @js.native
   sealed trait P2PNetworking extends EIntroducerRouting
-  /* 2 */ @js.native
-  object P2PNetworking extends TopLevel[P2PNetworking with Double]
+  /* 2 */ val P2PNetworking: typings.steamClient.mod.EIntroducerRouting.P2PNetworking with Double = js.native
   
+  // removed
   @js.native
   sealed trait P2PVoiceChat extends EIntroducerRouting
-  /* 1 */ @js.native
-  object P2PVoiceChat extends TopLevel[P2PVoiceChat with Double]
+  /* 1 */ val P2PVoiceChat: typings.steamClient.mod.EIntroducerRouting.P2PVoiceChat with Double = js.native
 }

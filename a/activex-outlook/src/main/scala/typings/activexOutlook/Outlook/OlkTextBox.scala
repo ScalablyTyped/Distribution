@@ -3,13 +3,14 @@ package typings.activexOutlook.Outlook
 import typings.activexStdole.stdole.OLE_COLOR
 import typings.activexStdole.stdole.StdFont
 import typings.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Outlook TextBox */
 @js.native
-trait OlkTextBox extends js.Object {
+trait OlkTextBox extends StObject {
   
   var AutoSize: Boolean = js.native
   
@@ -128,123 +129,111 @@ object OlkTextBox {
   }
   
   @scala.inline
-  implicit class OlkTextBoxOps[Self <: OlkTextBox] (val x: Self) extends AnyVal {
+  implicit class OlkTextBoxMutableBuilder[Self <: OlkTextBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoTab(value: Boolean): Self = StObject.set(x, "AutoTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoWordSelect(value: Boolean): Self = StObject.set(x, "AutoWordSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSize(value: Boolean): Self = this.set("AutoSize", value.asInstanceOf[js.Any])
+    def setBackColor(value: OLE_COLOR): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoTab(value: Boolean): Self = this.set("AutoTab", value.asInstanceOf[js.Any])
+    def setBorderStyle(value: OlBorderStyle): Self = StObject.set(x, "BorderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWordSelect(value: Boolean): Self = this.set("AutoWordSelect", value.asInstanceOf[js.Any])
+    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBackColor(value: OLE_COLOR): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBorderStyle(value: OlBorderStyle): Self = this.set("BorderStyle", value.asInstanceOf[js.Any])
+    def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("Clear", js.Any.fromFunction0(value))
+    def setDragBehavior(value: OlDragBehavior): Self = StObject.set(x, "DragBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => Unit): Self = this.set("Copy", js.Any.fromFunction0(value))
+    def setEnableRichText(value: Boolean): Self = StObject.set(x, "EnableRichText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCut(value: () => Unit): Self = this.set("Cut", js.Any.fromFunction0(value))
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragBehavior(value: OlDragBehavior): Self = this.set("DragBehavior", value.asInstanceOf[js.Any])
+    def setEnterFieldBehavior(value: OlEnterFieldBehavior): Self = StObject.set(x, "EnterFieldBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRichText(value: Boolean): Self = this.set("EnableRichText", value.asInstanceOf[js.Any])
+    def setEnterKeyBehavior(value: Boolean): Self = StObject.set(x, "EnterKeyBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterFieldBehavior(value: OlEnterFieldBehavior): Self = this.set("EnterFieldBehavior", value.asInstanceOf[js.Any])
+    def setForeColor(value: OLE_COLOR): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterKeyBehavior(value: Boolean): Self = this.set("EnterKeyBehavior", value.asInstanceOf[js.Any])
+    def setHideSelection(value: Boolean): Self = StObject.set(x, "HideSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: StdFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setIntegralHeight(value: Boolean): Self = StObject.set(x, "IntegralHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeColor(value: OLE_COLOR): Self = this.set("ForeColor", value.asInstanceOf[js.Any])
+    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideSelection(value: Boolean): Self = this.set("HideSelection", value.asInstanceOf[js.Any])
+    def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegralHeight(value: Boolean): Self = this.set("IntegralHeight", value.asInstanceOf[js.Any])
+    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: Boolean): Self = this.set("Locked", value.asInstanceOf[js.Any])
+    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("MaxLength", value.asInstanceOf[js.Any])
+    def setMultiLine(value: Boolean): Self = StObject.set(x, "MultiLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseIcon(value: StdPicture): Self = this.set("MouseIcon", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkTextBox_typekey(value: OlkTextBox): Self = StObject.set(x, "Outlook.OlkTextBox_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
+    def setPasswordChar(value: String): Self = StObject.set(x, "PasswordChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiLine(value: Boolean): Self = this.set("MultiLine", value.asInstanceOf[js.Any])
+    def setPaste(value: () => Unit): Self = StObject.set(x, "Paste", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOutlookDotOlkTextBox_typekey(value: OlkTextBox): Self = this.set("Outlook.OlkTextBox_typekey", value.asInstanceOf[js.Any])
+    def setScrollbars(value: OlScrollBars): Self = StObject.set(x, "Scrollbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordChar(value: String): Self = this.set("PasswordChar", value.asInstanceOf[js.Any])
+    def setSelLength(value: Double): Self = StObject.set(x, "SelLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaste(value: () => Unit): Self = this.set("Paste", js.Any.fromFunction0(value))
+    def setSelStart(value: Double): Self = StObject.set(x, "SelStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbars(value: OlScrollBars): Self = this.set("Scrollbars", value.asInstanceOf[js.Any])
+    def setSelText(value: String): Self = StObject.set(x, "SelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelLength(value: Double): Self = this.set("SelLength", value.asInstanceOf[js.Any])
+    def setSelectionMargin(value: Boolean): Self = StObject.set(x, "SelectionMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelStart(value: Double): Self = this.set("SelStart", value.asInstanceOf[js.Any])
+    def setTabKeyBehavior(value: Boolean): Self = StObject.set(x, "TabKeyBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelText(value: String): Self = this.set("SelText", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionMargin(value: Boolean): Self = this.set("SelectionMargin", value.asInstanceOf[js.Any])
+    def setTextAlign(value: OlTextAlign): Self = StObject.set(x, "TextAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabKeyBehavior(value: Boolean): Self = this.set("TabKeyBehavior", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextAlign(value: OlTextAlign): Self = this.set("TextAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordWrap(value: Boolean): Self = this.set("WordWrap", value.asInstanceOf[js.Any])
+    def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDatafeedTarget extends js.Object {
+trait SchemaDatafeedTarget extends StObject {
   
   /**
     * The country where the items in the feed will be included in the search
@@ -41,48 +42,36 @@ object SchemaDatafeedTarget {
   }
   
   @scala.inline
-  implicit class SchemaDatafeedTargetOps[Self <: SchemaDatafeedTarget] (val x: Self) extends AnyVal {
+  implicit class SchemaDatafeedTargetMutableBuilder[Self <: SchemaDatafeedTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedDestinations(value: js.Array[String]): Self = StObject.set(x, "excludedDestinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setExcludedDestinationsUndefined: Self = StObject.set(x, "excludedDestinations", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setExcludedDestinationsVarargs(value: String*): Self = StObject.set(x, "excludedDestinations", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedDestinationsVarargs(value: String*): Self = this.set("excludedDestinations", js.Array(value :_*))
+    def setIncludedDestinations(value: js.Array[String]): Self = StObject.set(x, "includedDestinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedDestinations(value: js.Array[String]): Self = this.set("excludedDestinations", value.asInstanceOf[js.Any])
+    def setIncludedDestinationsUndefined: Self = StObject.set(x, "includedDestinations", js.undefined)
     
     @scala.inline
-    def deleteExcludedDestinations: Self = this.set("excludedDestinations", js.undefined)
+    def setIncludedDestinationsVarargs(value: String*): Self = StObject.set(x, "includedDestinations", js.Array(value :_*))
     
     @scala.inline
-    def setIncludedDestinationsVarargs(value: String*): Self = this.set("includedDestinations", js.Array(value :_*))
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedDestinations(value: js.Array[String]): Self = this.set("includedDestinations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludedDestinations: Self = this.set("includedDestinations", js.undefined)
-    
-    @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

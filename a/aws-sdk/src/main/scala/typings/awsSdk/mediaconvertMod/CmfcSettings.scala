@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CmfcSettings extends js.Object {
+trait CmfcSettings extends StObject {
   
   /**
     * Use this setting only when you specify SCTE-35 markers from ESAM. Choose INSERT to put SCTE-35 markers in this output at the insertion points that you specify in an ESAM XML document. Provide the document in the setting SCC XML (sccXml).
@@ -26,30 +27,18 @@ object CmfcSettings {
   }
   
   @scala.inline
-  implicit class CmfcSettingsOps[Self <: CmfcSettings] (val x: Self) extends AnyVal {
+  implicit class CmfcSettingsMutableBuilder[Self <: CmfcSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScte35Esam(value: CmfcScte35Esam): Self = StObject.set(x, "Scte35Esam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScte35EsamUndefined: Self = StObject.set(x, "Scte35Esam", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScte35Source(value: CmfcScte35Source): Self = StObject.set(x, "Scte35Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScte35Esam(value: CmfcScte35Esam): Self = this.set("Scte35Esam", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScte35Esam: Self = this.set("Scte35Esam", js.undefined)
-    
-    @scala.inline
-    def setScte35Source(value: CmfcScte35Source): Self = this.set("Scte35Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScte35Source: Self = this.set("Scte35Source", js.undefined)
+    def setScte35SourceUndefined: Self = StObject.set(x, "Scte35Source", js.undefined)
   }
 }

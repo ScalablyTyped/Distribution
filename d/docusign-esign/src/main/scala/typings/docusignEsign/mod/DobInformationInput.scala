@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DobInformationInput extends js.Object {
+trait DobInformationInput extends StObject {
   
   /**
     * Specifies the recipient's date, month, and year of birth.
@@ -34,36 +35,24 @@ object DobInformationInput {
   }
   
   @scala.inline
-  implicit class DobInformationInputOps[Self <: DobInformationInput] (val x: Self) extends AnyVal {
+  implicit class DobInformationInputMutableBuilder[Self <: DobInformationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateOfBirth(value: String): Self = StObject.set(x, "dateOfBirth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateOfBirthUndefined: Self = StObject.set(x, "dateOfBirth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateOfBirth(value: String): Self = this.set("dateOfBirth", value.asInstanceOf[js.Any])
+    def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
     
     @scala.inline
-    def deleteDateOfBirth: Self = this.set("dateOfBirth", js.undefined)
+    def setReceiveInResponse(value: String): Self = StObject.set(x, "receiveInResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLevelCode(value: String): Self = this.set("displayLevelCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayLevelCode: Self = this.set("displayLevelCode", js.undefined)
-    
-    @scala.inline
-    def setReceiveInResponse(value: String): Self = this.set("receiveInResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReceiveInResponse: Self = this.set("receiveInResponse", js.undefined)
+    def setReceiveInResponseUndefined: Self = StObject.set(x, "receiveInResponse", js.undefined)
   }
 }

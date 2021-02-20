@@ -5,14 +5,14 @@ import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnect
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/PBR/refractionBlock", JSImport.Namespace)
-@js.native
-object refractionBlockMod extends js.Object {
+object refractionBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/refractionBlock", "RefractionBlock")
   @js.native
   class RefractionBlock protected () extends NodeMaterialBlock {
     /**

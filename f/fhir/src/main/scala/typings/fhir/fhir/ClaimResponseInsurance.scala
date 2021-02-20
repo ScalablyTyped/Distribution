@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,75 +70,63 @@ object ClaimResponseInsurance {
   }
   
   @scala.inline
-  implicit class ClaimResponseInsuranceOps[Self <: ClaimResponseInsurance] (val x: Self) extends AnyVal {
+  implicit class ClaimResponseInsuranceMutableBuilder[Self <: ClaimResponseInsurance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusinessArrangement(value: String): Self = StObject.set(x, "businessArrangement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBusinessArrangementUndefined: Self = StObject.set(x, "businessArrangement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClaimResponse(value: Reference): Self = StObject.set(x, "claimResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverage(value: Reference): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    def setClaimResponseUndefined: Self = StObject.set(x, "claimResponse", js.undefined)
     
     @scala.inline
-    def setFocal(value: Boolean): Self = this.set("focal", value.asInstanceOf[js.Any])
+    def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: positiveInt): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setFocal(value: Boolean): Self = StObject.set(x, "focal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_businessArrangement(value: Element): Self = this.set("_businessArrangement", value.asInstanceOf[js.Any])
+    def setPreAuthRef(value: js.Array[String]): Self = StObject.set(x, "preAuthRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_businessArrangement: Self = this.set("_businessArrangement", js.undefined)
+    def setPreAuthRefUndefined: Self = StObject.set(x, "preAuthRef", js.undefined)
     
     @scala.inline
-    def set_focal(value: Element): Self = this.set("_focal", value.asInstanceOf[js.Any])
+    def setPreAuthRefVarargs(value: String*): Self = StObject.set(x, "preAuthRef", js.Array(value :_*))
     
     @scala.inline
-    def delete_focal: Self = this.set("_focal", js.undefined)
+    def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_preAuthRefVarargs(value: Element*): Self = this.set("_preAuthRef", js.Array(value :_*))
+    def set_businessArrangement(value: Element): Self = StObject.set(x, "_businessArrangement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_preAuthRef(value: js.Array[Element]): Self = this.set("_preAuthRef", value.asInstanceOf[js.Any])
+    def set_businessArrangementUndefined: Self = StObject.set(x, "_businessArrangement", js.undefined)
     
     @scala.inline
-    def delete_preAuthRef: Self = this.set("_preAuthRef", js.undefined)
+    def set_focal(value: Element): Self = StObject.set(x, "_focal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sequence(value: Element): Self = this.set("_sequence", value.asInstanceOf[js.Any])
+    def set_focalUndefined: Self = StObject.set(x, "_focal", js.undefined)
     
     @scala.inline
-    def delete_sequence: Self = this.set("_sequence", js.undefined)
+    def set_preAuthRef(value: js.Array[Element]): Self = StObject.set(x, "_preAuthRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessArrangement(value: String): Self = this.set("businessArrangement", value.asInstanceOf[js.Any])
+    def set_preAuthRefUndefined: Self = StObject.set(x, "_preAuthRef", js.undefined)
     
     @scala.inline
-    def deleteBusinessArrangement: Self = this.set("businessArrangement", js.undefined)
+    def set_preAuthRefVarargs(value: Element*): Self = StObject.set(x, "_preAuthRef", js.Array(value :_*))
     
     @scala.inline
-    def setClaimResponse(value: Reference): Self = this.set("claimResponse", value.asInstanceOf[js.Any])
+    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClaimResponse: Self = this.set("claimResponse", js.undefined)
-    
-    @scala.inline
-    def setPreAuthRefVarargs(value: String*): Self = this.set("preAuthRef", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreAuthRef(value: js.Array[String]): Self = this.set("preAuthRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreAuthRef: Self = this.set("preAuthRef", js.undefined)
+    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
   }
 }

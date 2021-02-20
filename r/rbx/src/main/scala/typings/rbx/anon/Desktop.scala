@@ -2,12 +2,13 @@ package typings.rbx.anon
 
 import typings.rbx.columnMod.ColumnBreakpointOptions
 import typings.react.mod.ElementType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Desktop[TAsComponent /* <: ElementType[_] */] extends js.Object {
+trait Desktop[TAsComponent /* <: ElementType[_] */] extends StObject {
   
   var as: js.UndefOr[TAsComponent] = js.native
   
@@ -32,60 +33,48 @@ object Desktop {
   }
   
   @scala.inline
-  implicit class DesktopOps[Self <: Desktop[_], TAsComponent /* <: ElementType[_] */] (val x: Self with Desktop[TAsComponent]) extends AnyVal {
+  implicit class DesktopMutableBuilder[Self <: Desktop[_], TAsComponent /* <: ElementType[_] */] (val x: Self with Desktop[TAsComponent]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesktop(value: ColumnBreakpointOptions): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: TAsComponent): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setFullhd(value: ColumnBreakpointOptions): Self = StObject.set(x, "fullhd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesktop(value: ColumnBreakpointOptions): Self = this.set("desktop", value.asInstanceOf[js.Any])
+    def setFullhdUndefined: Self = StObject.set(x, "fullhd", js.undefined)
     
     @scala.inline
-    def deleteDesktop: Self = this.set("desktop", js.undefined)
+    def setMobile(value: ColumnBreakpointOptions): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullhd(value: ColumnBreakpointOptions): Self = this.set("fullhd", value.asInstanceOf[js.Any])
+    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
     
     @scala.inline
-    def deleteFullhd: Self = this.set("fullhd", js.undefined)
+    def setTablet(value: ColumnBreakpointOptions): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobile(value: ColumnBreakpointOptions): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
     
     @scala.inline
-    def deleteMobile: Self = this.set("mobile", js.undefined)
+    def setTouch(value: ColumnBreakpointOptions): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTablet(value: ColumnBreakpointOptions): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
     
     @scala.inline
-    def deleteTablet: Self = this.set("tablet", js.undefined)
+    def setWidescreen(value: ColumnBreakpointOptions): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouch(value: ColumnBreakpointOptions): Self = this.set("touch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouch: Self = this.set("touch", js.undefined)
-    
-    @scala.inline
-    def setWidescreen(value: ColumnBreakpointOptions): Self = this.set("widescreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidescreen: Self = this.set("widescreen", js.undefined)
+    def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
   }
 }

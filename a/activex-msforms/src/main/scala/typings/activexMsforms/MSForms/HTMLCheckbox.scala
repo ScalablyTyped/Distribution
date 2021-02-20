@@ -1,11 +1,12 @@
 package typings.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLCheckbox extends js.Object {
+trait HTMLCheckbox extends StObject {
   
   var Checked: Boolean = js.native
   
@@ -34,33 +35,21 @@ object HTMLCheckbox {
   }
   
   @scala.inline
-  implicit class HTMLCheckboxOps[Self <: HTMLCheckbox] (val x: Self) extends AnyVal {
+  implicit class HTMLCheckboxMutableBuilder[Self <: HTMLCheckbox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("Checked", value.asInstanceOf[js.Any])
+    def setMSFormsDotHTMLCheckbox_typekey(value: HTMLCheckbox): Self = StObject.set(x, "MSForms.HTMLCheckbox_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTMLName(value: String): Self = this.set("HTMLName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHTMLType(value: String): Self = this.set("HTMLType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMSFormsDotHTMLCheckbox_typekey(value: HTMLCheckbox): Self = this.set("MSForms.HTMLCheckbox_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

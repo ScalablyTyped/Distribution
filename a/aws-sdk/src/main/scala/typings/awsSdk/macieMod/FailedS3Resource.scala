@@ -1,11 +1,12 @@
 package typings.awsSdk.macieMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailedS3Resource extends js.Object {
+trait FailedS3Resource extends StObject {
   
   /**
     * The status code of a failed item.
@@ -31,36 +32,24 @@ object FailedS3Resource {
   }
   
   @scala.inline
-  implicit class FailedS3ResourceOps[Self <: FailedS3Resource] (val x: Self) extends AnyVal {
+  implicit class FailedS3ResourceMutableBuilder[Self <: FailedS3Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: ExceptionMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: ErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setFailedItem(value: S3Resource): Self = StObject.set(x, "failedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: ExceptionMessage): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
-    
-    @scala.inline
-    def setFailedItem(value: S3Resource): Self = this.set("failedItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedItem: Self = this.set("failedItem", js.undefined)
+    def setFailedItemUndefined: Self = StObject.set(x, "failedItem", js.undefined)
   }
 }

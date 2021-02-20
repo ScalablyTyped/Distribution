@@ -1,12 +1,13 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetIdInput extends js.Object {
+trait GetIdInput extends StObject {
   
   /**
     * <p>A standard AWS account ID (9+ digits).</p>
@@ -52,9 +53,37 @@ trait GetIdInput extends js.Object {
     */
   var Logins: js.UndefOr[StringDictionary[String]] = js.native
 }
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetIdInput")
-@js.native
-object GetIdInput extends js.Object {
+object GetIdInput {
   
+  @scala.inline
+  def apply(): GetIdInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GetIdInput]
+  }
+  
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetIdInput.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: GetIdInput): js.Any = js.native
+  
+  @scala.inline
+  implicit class GetIdInputMutableBuilder[Self <: GetIdInput] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    
+    @scala.inline
+    def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    
+    @scala.inline
+    def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+  }
 }
